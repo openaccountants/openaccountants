@@ -1,0 +1,56 @@
+{
+  "before_sha256": "d61ef8fe971f677f85fc080e5ecaac69dbe71c055a4a7f43284ce62a6c8a4ea9",
+  "current_sha256": "be47136e91e27d9e14a8b07e22f5c2e2a4bb4fb3e601c491a4daf22b1d50b98a",
+  "six_declared_operations": 6,
+  "edits": [
+    {
+      "old_start": 3,
+      "old_end": 4,
+      "new_start": 3,
+      "new_end": 4,
+      "before": "version: 1.6\n",
+      "after": "version: 1.7\n"
+    },
+    {
+      "old_start": 6,
+      "old_end": 7,
+      "new_start": 6,
+      "new_end": 7,
+      "before": "last_updated: 2026-10-27\n",
+      "after": "last_updated: 2026-10-29\n"
+    },
+    {
+      "old_start": 16,
+      "old_end": 17,
+      "new_start": 16,
+      "new_end": 17,
+      "before": "# Slovakia: personal income tax for employees and the self-employed (2026) v1.6\n",
+      "after": "# Slovakia: personal income tax for employees and the self-employed (2026) v1.7\n"
+    },
+    {
+      "old_start": 33,
+      "old_end": 34,
+      "new_start": 33,
+      "new_end": 34,
+      "before": "- **Employees** (§5). The employer withholds monthly advances. An employee with only §5 income from Slovak employers can ask an employer for the annual settlement (ročné zúčtovanie) by 15 February 2027 instead of filing (§38(1)). Otherwise they file DPFO type A.\n",
+      "after": "- **Employees** (§5). The employer withholds monthly advances. An employee with only §5 income from Slovak employers can ask an employer for the annual settlement (ročné zúčtovanie) by 15 February 2027 if they are not required to increase the tax base under §11(11) for earlier DDS deductions (§38(1)). Otherwise they file DPFO type A.\n"
+    },
+    {
+      "old_start": 124,
+      "old_end": 125,
+      "new_start": 124,
+      "new_end": 125,
+      "before": "| Ask the employer for the annual settlement (employment income only) | 15 February 2027 | §38(1) |\n",
+      "after": "| Ask the employer for the annual settlement (employment income only; no §11(11) DDS addback required) | 15 February 2027 | §38(1) |\n"
+    },
+    {
+      "old_start": 321,
+      "old_end": 321,
+      "new_start": 321,
+      "new_end": 322,
+      "before": "",
+      "after": "| ITA §§32(2)(d),38(1): employment-only return and annual-settlement exclusion when a §11(11) DDS addback is required | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html#paragraf-38 | 2026-10-29 |\n"
+    }
+  ],
+  "inverse_exact": true
+}

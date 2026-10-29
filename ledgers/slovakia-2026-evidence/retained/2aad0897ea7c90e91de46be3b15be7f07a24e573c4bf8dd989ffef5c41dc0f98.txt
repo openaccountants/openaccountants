@@ -1,0 +1,105 @@
+§ 80
+Súhrnný výkaz
+(1)
+ Platiteľ je povinný podať súhrnný výkaz za kalendárny mesiac, ak
+a)
+ dodal tovar oslobodený od dane podľa § 43 ods. 1 z tuzemska do iného členského štátu osobe, ktorá je identifikovaná pre daň v inom
+ členskom štáte,
+b)
+ premiestnil tovar oslobodený od dane podľa § 43 ods. 4,
+c)
+ sa zúčastnil na trojstrannom obchode ako prvý odberateľ podľa § 45,
+d)
+ dodal službu s miestom dodania v inom členskom štáte podľa § 15 ods. 1 zdaniteľnej osobe alebo právnickej osobe, ktorá nie je zdaniteľnou osobou a je identifikovaná
+ pre daň, a táto osoba je povinná platiť daň,
+e)
+ odoslal alebo prepravil tovar v režime call-off stock,
+f)
+ zdaniteľná osoba, pre ktorú bol tovar odoslaný alebo prepravený v režime call-off
+ stock, bola nahradená inou zdaniteľnou osobou podľa § 8a ods. 5,
+g)
+ tovar, ktorý bol odoslaný alebo prepravený v režime call-off stock, bol vrátený do
+ tuzemska.
+(2)
+ Platiteľ môže podať súhrnný výkaz za kalendárny štvrťrok, ak hodnota tovarov podľa
+ odseku 1 písm. a) až c) nepresiahne v príslušnom kalendárnom štvrťroku a súčasne v
+ predchádzajúcich štyroch kalendárnych štvrťrokoch hodnotu 50 000 eur; možnosť podať
+ súhrnný výkaz za kalendárny štvrťrok prestáva platiť od skončenia kalendárneho mesiaca,
+ v ktorom hodnota tovarov podľa odseku 1 písm. a) až c) presiahne v príslušnom kalendárnom
+ štvrťroku hodnotu 50 000 eur, a platiteľ je povinný podať súhrnný výkaz osobitne za
+ každý kalendárny mesiac príslušného kalendárneho štvrťroka.
+(3)
+ Súhrnný výkaz je povinná podať aj zdaniteľná osoba registrovaná pre daň podľa § 7 alebo § 7a za každý kalendárny štvrťrok, v ktorom dodala službu podľa odseku 1 písm. d). Ak
+ sa táto zdaniteľná osoba zúčastňuje na trojstrannom obchode ako prvý odberateľ podľa
+ § 45 ods. 1, na podávanie súhrnného výkazu sa vzťahuje odsek 2.
+(4)
+ Súhrnný výkaz musí obsahovať
+a)
+ identifikačné číslo pre daň osoby, ktorá podáva súhrnný výkaz,
+b)
+ pri dodaní tovaru podľa odseku 1 písm. a) identifikačné číslo pre daň nadobúdateľa,
+ pod ktorým mu bol tovar dodaný, a celkovú hodnotu dodaného tovaru pre každého nadobúdateľa
+ osobitne,
+c)
+ pri dodaní tovaru podľa odseku 1 písm. b) identifikačné číslo pre daň, ktoré má platiteľ
+ pridelené v členskom štáte, v ktorom sa skončí odoslanie alebo preprava tovaru, a
+ hodnotu tovaru zodpovedajúcu základu dane určeného podľa § 22 ods. 6,
+d)
+ pri trojstrannom obchode podľa odseku 1 písm. c) identifikačné číslo pre daň druhého
+ odberateľa pridelené v členskom štáte, v ktorom sa skončí odoslanie alebo preprava
+ tovaru, a hodnotu tovaru dodaného druhému odberateľovi,
+e)
+ pri dodaní služby identifikačné číslo pre daň príjemcu služby, pod ktorým mu bola
+ služba dodaná, a celkovú hodnotu dodaných služieb pre každého príjemcu služieb,
+f)
+ pri odoslaní alebo preprave tovaru v režime call-off stock identifikačné číslo pre
+ daň zdaniteľnej osoby, ktorej sa má tovar dodať, a ak túto zdaniteľnú osobu nahradila
+ iná zdaniteľná osoba podľa § 8a ods. 5, identifikačné číslo pre daň tejto zdaniteľnej osoby.
+(5)
+ V súhrnnom výkaze sa neuvádzajú služby oslobodené od dane podľa zákona platného v
+ členskom štáte, v ktorom je miesto dodania služby.
+(6)
+ Hodnota dodaných tovarov a dodaných služieb podľa odseku 4 sa uvádza v súhrnnom výkaze
+ za obdobie, v ktorom vznikla daňová povinnosť. Údaje v súhrnnom výkaze sa uvádzajú
+ v eurách a zaokrúhľujú sa na celé eurá do 0,5 eura nadol a od 0,5 eura vrátane nahor.
+ Ak dodávateľ služby do uplynutia lehoty na podanie súhrnného výkazu nemá identifikačné
+ číslo pre daň príjemcu služby a príjemca služby ho informoval o tom, že požiadal o
+ pridelenie identifikačného čísla pre daň, uvedie dodávateľ služby dodanie služby do
+ súhrnného výkazu za obdobie, v ktorom bolo identifikačné číslo pre daň príjemcovi
+ služby pridelené.
+(7)
+ Pri oprave základu dane podľa § 25 sa v súhrnnom výkaze uvádza suma, o ktorú sa základ dane opravil, a to za obdobie,
+ v ktorom bola oprava základu dane oznámená nadobúdateľovi tovaru alebo príjemcovi
+ služby.
+(8)
+ Ak osoba, ktorá podala súhrnný výkaz, zistí pred uplynutím lehoty na podanie súhrnného
+ výkazu, že údaje uvedené v súhrnnom výkaze sú neúplné alebo nesprávne, podá opravný
+ súhrnný výkaz. Ak osoba, ktorá podala súhrnný výkaz, zistí po uplynutí lehoty na podanie
+ súhrnného výkazu, že údaje v súhrnnom výkaze sú neúplné alebo nesprávne, podá dodatočný
+ súhrnný výkaz, v ktorom uvedie len doplnené alebo opravené údaje.
+(9)
+ Osoby podľa odsekov 1 až 3 sú povinné podať súhrnný výkaz elektronickými prostriedkami
+ najneskôr do 25 dní po skončení obdobia, za ktoré sú povinné podať súhrnný výkaz.
+ Súhrnný výkaz musí byť podpísaný zaručeným elektronickým podpisom. Súhrnný výkaz podaný
+ elektronickými prostriedkami nemusí byť podpísaný zaručeným elektronickým podpisom,
+ ak osoba, ktorá podáva súhrnný výkaz, má s daňovým úradom uzavretú písomnú dohodu,
+ ktorá obsahuje najmä náležitosti elektronického doručovania, spôsob overovania podania
+ urobeného elektronickými prostriedkami a spôsob preukazovania doručenia a ak osoba,
+ ktorá podáva súhrnný výkaz, písomne oznámi daňovému úradu údaje potrebné na doručovanie
+ na tlačive podľa vzoru uverejneného na webovom sídle finančného riaditeľstva. Ak platiteľ,
+ ktorý splnil registračnú povinnosť, nemá do uplynutia lehoty na podanie súhrnného
+ výkazu podľa prvej vety za prvé obdobie pridelené identifikačné číslo pre daň podľa
+ § 4 alebo § 5, je povinný podať súhrnný výkaz do piatich pracovných dní odo dňa doručenia rozhodnutia
+ o registrácii pre daň podľa § 4 ods. 4 alebo podľa § 5 ods. 3 alebo ods. 5.
+(10)
+ Súhrnný výkaz sa podáva na tlačive, ktorého vzor ustanoví opatrenie, ktoré vydá Ministerstvo
+ financií Slovenskej republiky a ktoré sa vyhlasuje v Zbierke zákonov Slovenskej republiky
+ uverejnením jeho úplného znenia.
+(11)
+ Ak vzniknú pochybnosti o správnosti, pravdivosti alebo úplnosti podaného súhrnného
+ výkazu alebo o pravdivosti údajov v ňom uvedených, oznámi daňový úrad tieto pochybnosti
+ osobe, ktorá súhrnný výkaz podala, a vyzve ju, aby sa k nim vyjadrila, neúplné údaje
+ doplnila, nejasnosti vysvetlila a nepravdivé údaje opravila alebo pravdivosť údajov
+ riadne preukázala. Na základe tejto výzvy je osoba, ktorá súhrnný výkaz podala, povinná
+ do piatich dní od doručenia výzvy nedostatky podaného súhrnného výkazu odstrániť.
+Zrušenie registrácie

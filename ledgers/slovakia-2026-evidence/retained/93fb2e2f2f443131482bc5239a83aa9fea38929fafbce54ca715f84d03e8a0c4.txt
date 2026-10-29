@@ -1,0 +1,266 @@
+                                    Finančné riaditeľstvo SR
+
+                                           14/DZPaU/2026/I
+                                        Informácia
+                o vydaní vzorov tlačív daňových priznaní k dani z príjmov
+               [oznámenie Ministerstva financií SR č. MF/014310/2026-721]
+
+
+Vo Finančnom spravodajcovi bolo uverejnené oznámenie Ministerstva financií SR č. MF/014310/2026-721
+o vydaní vzorov tlačív daňových priznaní k dani z príjmov. Oznámenie je uverejnené pod poradovým číslom
+16/2026 Finančného spravodajcu, ktorý je prístupný v elektronickej podobe na webovom sídle Ministerstva financií
+SR, a možno doň nazrieť na Ministerstve financií SR.
+
+Ministerstvo financií SR podľa § 15 ods. 5 zákona č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene
+a doplnení niektorých zákonov v znení neskorších predpisov (ďalej len „daňový poriadok“) na zabezpečenie
+jednotného postupu pri podávaní daňových priznaní podľa zákona č. 595/2003 Z. z. o dani z príjmov v znení
+neskorších predpisov (ďalej len „zákon“) oznamuje, že vydalo nasledovné vzory tlačív daňových priznaní k:
+
+    •   dani z príjmov fyzickej osoby pre daňovníka, ktorý má príjmy podľa § 5 až 8 zákona č. 595/2003 Z. z.
+        o dani z príjmov v znení neskorších predpisov (ďalej len „zákon“) – MF/014308/2026-721 (ďalej
+        len „DP FO typ B“),
+    •   dani z príjmov právnickej osoby podľa zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších
+        predpisov (ďalej len „zákon“) – MF/014309/2026-721 (ďalej len „DP PO“).
+
+Vzor tlačiva daňového priznania k dani z príjmov fyzickej osoby pre daňovníka, ktorý má príjmy len zo závislej
+činnosti podľa § 5 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov (ďalej len „zákon“) –
+MF/012185/2025-721 z roku 2025 (ďalej len „DP FO typ A“) zostáva naďalej v platnosti.
+
+Uvedené vzory tlačív sú súčasťou oznámenia Ministerstva financií SR č. MF/014310/2026-721 a použijú
+sa pri podávaní daňových priznaní u daňovníkov, ktorým posledný deň lehoty na podanie daňového priznania
+uplynie najskôr po 31.12.2026.
+
+Vzor tlačiva daňového priznania k dani z príjmov fyzickej osoby typ B (MF/012186/2025-721) a daňového priznania
+k dani z príjmov právnickej osoby (MF/012187/2025-721) vydaný oznámením č. MF/014489/2025-721 sa použije
+pri podávaní daňových priznaní u daňovníkov, ktorým posledný deň lehoty na podanie daňového priznania uplynul
+najneskôr 31.12.2026.
+
+Na zabezpečenie jednotného postupu pri uplatňovaní § 13 ods. 4 daňového poriadku Ministerstvo financií SR
+odporúča daňovníkom dane z príjmov pri podávaní daňového priznania využiť odporúčaný vzor tlačiva potvrdenia
+o podaní DP FO typ A alebo DP FO typ B, alebo DP PO. Odporúčané vzory potvrdení o podaní DP FO typ A,
+DP FO typ B a DP PO sú prílohou oznámenia Ministerstva financií SR č. MF/014311/2026-721 o vydaní vzorov
+potvrdení o podaní daňového priznania k dani z príjmov, ktoré je uverejnené vo Finančnom spravodajcovi
+pod poradovým číslom 17/2026.
+
+Poučenia na vyplnenie DP FO typ A, DP FO typ B a DP PO sú vydané oznámením Ministerstva financií SR
+č. MF/014312/2026-721 o vydaní poučení na vyplnenie daňových priznaní k dani z príjmov, ktoré je uverejnené
+vo Finančnom spravodajcovi pod poradovým číslom 18/2026.
+Najzávažnejšie zmeny v tlačivách daňových priznaní
+
+DP FO typ B
+
+I. ODDIEL – ÚDAJE O DAŇOVNÍKOVI
+
+Upravil sa text prislúchajúci k riadku 13 z pôvodného „Ekonomické, personálne alebo iné prepojenie podľa § 2
+písm. n) zákona“ na nové znenie „Daňovník realizoval kontrolované transakcie alebo skupinu
+kontrolovaných transakcií podľa § 2 písm. ab) zákona“. Riadok 13 zaškrtáva daňovník, ktorý je prepojenou
+osobou podľa § 2 písm. n) zákona, ak v príslušnom zdaňovacom období vykonal vzájomnú obchodnú transakciu
+s osobou, voči ktorej je podľa zákona považovaný za závislú osobu. V takomto prípade daňovník v XIII. ODDIELe
+uvedie aj druh prepojenia a identifikáciu osôb, s ktorými je prepojený.
+
+VI. ODDIEL – VÝPOČET ZÁKLADU DANE (čiastkového základu dane) Z PRÍJMOV Z PODNIKANIA, Z INEJ
+SAMOSTATNEJ ZÁROBKOVEJ ČINNOSTI, Z PRENÁJMU A Z POUŽITIA DIELA A UMELECKÉHO VÝKONU
+(§ 6 zákona) – v eurách
+
+Pod tabuľkou č. 1 sa doplnil nový riadok „Zdaniteľné príjmy z podnikania podľa § 6 ods. 1 zákona“. Na tomto
+riadku sa uvádzajú všetky zdaniteľné príjmy z podnikania podľa § 6 ods. 1 zákona bez ohľadu na to, či daňovník
+účtuje v sústave jednoduchého alebo podvojného účtovníctva, vedie daňovú evidenciu podľa § 6 ods. 11 zákona
+alebo uplatňuje výdavky podľa § 6 ods. 10 zákona. Tento riadok vypĺňa len daňovník, ktorý je štátnym príslušníkom
+tretej krajiny a podáva žiadosť o obnovenie prechodného pobytu podľa zákona č. 404/2011 Z. z. o pobyte
+cudzincov v znení neskorších predpisov.
+
+Nadväzne na posun rokov v súvislosti s uplatňovaním daňovej straty (v DP FO typ B možno umorovať daňovú
+stratu vykázanú za rok 2021 až 2025) prišlo k úprave rokov vykázania daňovej straty na riadku 1 stĺpcov 47 až
+50a. Rovnako prišlo k úprave rokov vykázania daňovej straty na riadkoch 51 až 54a. Zároveň sa v tejto súvislosti
+upravil text odkazu 13.
+
+V súvislosti s odpočtom výdavkov (nákladov) na podporu športu podľa § 30ca zákona sa upravil text odkazu 12.
+V zmysle § 17 ods. 19 písm. l) zákona, ak daňovník za zdaňovacie obdobie nevykáže kladný základ dane na riadku
+41 alebo nie je splnená podmienka zaplatenia výdavkov (nákladov) na podporu športu, daňovník je povinný
+výdavky (náklady) na podporu športu zahrnuté do daňových výdavkov pripočítať k základu dane na riadku 43.
+Zároveň platí, že v takomto prípade daňovník neuplatňuje odpočet výdavkov (nákladov) na podporu športu podľa
+§ 30ca zákona, teda nevypĺňa prílohu č. 1c.
+
+VIII. ODDIEL – VÝPOČET ZÁKLADU DANE (čiastkového základu dane) Z OSTATNÝCH PRÍJMOV (§ 8
+zákona) - v eurách
+
+Nadväzne na legislatívnu úpravu zákona platnú od 01.01.2026, podľa ktorej príjmami podľa § 8 ods. 1 písm. p)
+zákona sú príjmy dosiahnuté na základe zmluvy o sponzorstve v športe (s odkazom na § 50 a 51 zákona č.
+440/2015 Z. z. v znení neskorších predpisov), prijaté športovcom [s odkazom na § 4 ods. 3 písm. a) a b) a ods. 4
+písm. c) zákona č. 440/2015 Z. z. v znení neskorších predpisov] alebo športovým odborníkom [s odkazom § 6
+ods. 1 písm. a) a ods. 3 písm. b) a c) zákona č. 440/2015 Z. z. v znení neskorších predpisov] prišlo k úprave textu
+na riadku 13 v stĺpci „Druh príjmov podľa § 8 zákona“ tabuľky č. 3.
+
+XI. ODDIEL – ĎALŠIE ÚDAJE O DAŇOVNÍKOVI
+
+K riadku 145 sa dopĺňa nový odkaz 35, ktorý spresňuje, že predmetný riadok vypĺňa iba daňovník s obmedzenou
+daňovou povinnosťou.
+
+V súvislosti s doplnením nového odkazu 35 prišlo k prečíslovaniu pôvodného odkazu 35 na odkaz 35a bez zmeny
+textu tohto odkazu.
+XIII. ODDIEL – MIESTO NA OSOBITNÉ ZÁZNAMY DAŇOVNÍKA
+
+Upravil sa text prislúchajúci k riadku 154. Na riadku 154 sa uvádza počet všetkých príloh, ktoré sú súčasťou DP
+FO typ B vrátane prílohy č. 1, prílohy č. 1b, prílohy č. 1c, prílohy č. 2, prílohy č. 3 a prílohy č. 4, ale len ak sa
+vypĺňajú.
+
+PRÍLOHA č. 1c – Odpočet výdavkov (nákladov) na podporu športu podľa § 30ca zákona
+
+V prílohe 1c sa upravil sa text odkazu 43. V zmysle tohto odkazu sa v riadku 8 sa uvádza suma súčtu odpočtu
+výdavkov (nákladov) na podporu športu podľa § 30ca ods. 1 zákona z riadku 6 a suma odpočtu výdavkov (nákladov)
+na podporu športu podľa § 30ca ods. 2 zákona z riadku 7, pričom suma v riadku 8 sa uvádza najviac do výšky
+základu dane uvedeného v riadku 55 zníženého o odpočet výdavkov (nákladov) podľa § 30c a 30e zákona, ale
+zároveň v úhrnnej sume najviac do výšky 250 000 eur a údaj z riadku 8 sa prenáša do riadku 56.
+
+Zároveň sa doplnila nová časť, v ktorej sa uvádzajú údaje o športovej organizácii, ktorej bolo poskytnuté plnenie
+podľa § 30ca ods. 7 zákona. Daňovník na príslušných riadkoch uvádza dátum začiatku realizácie podpory športu,
+IČO, názov a adresu sídla športovej organizácie, ktorej bolo poskytnutá podpora športu na účely zostavenia
+zoznamu daňových subjektov podľa § 30ca ods. 8 zákona.
+Ak daňovník poskytol podporu športu viacerým športovým organizáciám, uvedie údaje o každej športovej
+organizácii v samostatnej tabuľke tejto prílohy.
+
+DP PO
+
+II. časť – VÝPOČET ZÁKLADU DANE A DANE
+
+V časti Položky zvyšujúce výsledok hospodárenia alebo rozdiel medzi príjmami a výdavkami sa z riadku
+130 vypúšťa úprava základu dane alebo daňovej straty podľa § 17k zákona z dôvodu jej uvedenia v samostatnom
+riadku 310.
+
+V časti Položky upravujúce základ dane alebo daňovú stratu dochádza k zmene obsahovej náplne riadku 306,
+v ktorom daňovník uvádza sumu výdavkov (nákladov) na podporu športu podľa § 30ca zákona, ktoré sú daňovým
+výdavkom po zaplatení podľa § 17 ods. 19 písm. l) zákona, ak boli zaplatené, ale daňovník vykázal v riadku 301
+DP PO daňovú stratu a tiež sumu výdavkov (nákladov) na podporu športu podľa § 30ca zákona, ktoré nie sú
+daňovým výdavkom z dôvodu ich nezaplatenia do konca príslušného zdaňovacieho obdobia.
+Ak daňovníkovi nevznikne nárok na odpočet výdavkov (nákladov) na podporu športu z dôvodu ich nezaplatenia,
+daňovník takéto výdavky (náklady) neuvádza v riadku 140 DP PO, ale v riadku 306 DP PO.
+
+V nadväznosti na uvedenú zmenu dochádza k prečíslovaniu pôvodných riadkov 306 až 308 na riadky 307 až
+309.
+
+Ďalej sa do časti Položky upravujúce základ dane alebo daňovú stratu presúva riadok 310, pričom zároveň
+dochádza k zmene jeho obsahovej náplne. V tomto riadku sa uvádza v úhrne suma výdavkov (nákladov) podľa
+§ 17k zákona, o ktoré daňovník v príslušnom zdaňovacom období zvyšuje základ dane alebo znižuje daňovú stratu.
+
+V časti Základ dane alebo daňová strata v nadväznosti na vyššie uvedené zmeny dochádza k prečíslovaniu
+pôvodného súčtového riadku 310 na riadok 315, v ktorom sa zároveň upravuje výpočtový vzorec.
+
+Z dôvodu zavedenia novej tabuľky pomocných výpočtov a doplňujúcich údajov Tabuľky L – Výpočet úhrnu
+zdaniteľných príjmov (k r. 560 v II. časti), v ktorej daňovník upravuje zaúčtované príjmy (výnosy) na zdaniteľné
+príjmy, sa mení textový popis v riadku 560, v ktorom sa dopĺňa odkaz na údaj z riadku 99 tabuľky L z III. časti.
+
+V novej doplnenej Tabuľke L – Výpočet úhrnu zdaniteľných príjmov (k r. 560 v II. časti) daňovník upravuje
+zaúčtované príjmy (výnosy) uvedené v riadku 1 (z r. 6 tabuľky C1, z r. 6 tabuľky C2, z r. 1 tabuľky F, z r. 1 tabuľky
+G1 upravené o položky z riadku 2 a 3 tabuľky G3, z riadku 1 tabuľky G2 alebo príjmy z tabuľky H) na zdaniteľné
+príjmy.
+Daňovník v riadkoch 2 až 98 uvádza popis a sumu úprav zvyšujúcich alebo znižujúcich zaúčtované príjmy (výnosy)
+uvedené v riadku 1 vrátane uvedenia riadku DP PO, na ktorom je suma uvedená (napr. r. 110 DP PO).
+Vyčíslený úhrn zdaniteľných príjmov uvedený v riadku 99 tabuľky L – Výpočet úhrnu zdaniteľných príjmov (k r. 560
+v II. časti) sa uvádza v riadku 560 DP PO.
+
+Z dôvodu obsolentnosti právnej úpravy v § 52zzz ods. 7 zákona (platenie minimálnej dane pri zmene zdaňovacieho
+obdobia z kalendárneho roka na hospodársky rok vykonanej v kalendárnom roku 2024) sa vypúšťa riadok 840,
+v ktorom daňovník uvádzal minimálnu daň alebo kladný rozdiel medzi minimálnou daňou a daňovou povinnosťou
+za zdaňovacie obdobie ukončené dňom predchádzajúcim dňu zmeny, ktorú platil spolu s minimálnou daňou za
+bezprostredne nasledujúce zdaňovacie obdobie.
+
+V nadväznosti na uvedenú zmenu bol primerane upravený výpočtový vzorec v riadku 900.
+
+Do časti Daň upravená o preddavky na daň a minimálnu daň DP PO sa dopĺňa nový riadok 1072, v ktorom
+daňovník uvádza sumu dane z osobitného základu dane z výnosov (príjmov) z poplatkov za vykonanie platobnej
+operácie prostredníctvom platobnej karty v prospech hráčskeho účtu uvedenú v riadku 3 v VII. časti.
+V nadväznosti na uvedenú zmenu bol primerane upravený výpočtový vzorec v riadku 1080.
+
+V doplnenej novej VII. časti – Výnosy (príjmy) z poplatkov za vykonanie platobnej operácie prostredníctvom
+platobnej karty v prospech hráčskeho účtu, ktoré sú súčasťou osobitného základu dane podľa § 51eb
+zákona daňovník uvádza sumu výnosov (príjmov) z poplatkov za vykonanie platobnej operácie prostredníctvom
+platobnej karty v prospech hráčskeho účtu, pričom suma výnosov (príjmov) sa uvádza neznížená o výdavky.
+Takéto výnosy sú súčasťou osobitného základu dane podľa § 51eb zákona, ktorý podlieha zdaneniu pri použití
+osobitnej sadzby dane podľa § 15 písm. b) piateho bodu zákona vo výške 54 %.
+Vyčíslená daň uvedená v riadku 3 VII. časti DP PO sa uvádza v riadku 1072 DP PO.
+
+III. časť – Tabuľky pomocných výpočtov a doplňujúcich údajov
+
+V tabuľke D – evidencia a odpočet daňovej straty (k r. 410 II. časti) sa v stĺpcoch 1 až 9 dopĺňa nový riadok 4,
+v ktorom sa uvádza časť daňovej straty vykázanej v jednotlivých zdaňovacích obdobiach, ktorá bola odpočítaná
+od základu dane v predchádzajúcich zdaňovacích obdobiach.
+
+V súčtovom stĺpci 9 tabuľky D sa vypĺňa len riadok 2 časť odpočítavaná v príslušnom zdaňovacom období, ostatné
+riadky stĺpca 9 sa nevypĺňajú.
+
+Dochádza k úprave názvu a zmene štruktúry Tabuľky I. Názov Tabuľky I sa mení z pôvodného názvu „Transakcie
+závislých osôb podľa § 2 písm. n) zákona (k r. 100 alebo k r. 301 II. časti)“ na nový upravený názov „Transakcie
+závislých osôb podľa § 2 písm. n) zákona“.
+
+Tabuľku I vypĺňa daňovník, ktorý uskutočňuje kontrolované transakcie so závislými osobami v tuzemsku
+aj v zahraničí v členení na jednotlivé kontrolované transakcie alebo skupiny kontrolovaných transakcií (v zmysle
+čl. 2 bodu 4 Usmernenia MF SR č. MF/012879/2025-724 o určení obsahu dokumentácie, ďalej „Usmernenie
+MF SR“) so závislými osobami. Tabuľku I vypĺňa aj daňovník, ktorý vykonáva činnosť na území SR prostredníctvom
+stálej prevádzkarne.
+
+V Tabuľke I sa uvádzajú všetky významné kontrolované transakcie alebo skupiny kontrolovaných transakcií
+(v zmysle § 17 ods. 5 zákona) so závislými osobami bez ohľadu na typ dokumentácie, ktorá sa vedie o týchto
+transakciách. V Tabuľke I sa uvádzajú aj vnútropodnikové kontrolované transakcie medzi zriaďovateľom a jeho
+stálou prevádzkarňou. Nová Tabuľka I pozostáva z 3 častí.
+V prvej časti Tabuľky I sa uvádzajú významné kontrolované transakcie alebo skupiny kontrolovaných transakcií
+v nasledujúcej štruktúre:
+
+    •   V stĺpci 1 je uvedené poradové číslo kontrolovanej transakcie alebo skupiny kontrolovaných transakcií;
+    •   V stĺpci 2 sa vyberie kód druhu transakcie;
+    •   V stĺpci 3 (Agregácia) sa vyznačí skutočnosť, že ide o skupinu kontrolovaných transakcií v zmysle čl. 2
+        bodu 4 Usmernenia MF SR;
+    •   V stĺpci 4 sa vyznačí skutočnosť, že ide o prepojenosť podľa § 2 písm. r) zákona, a to vzťah medzi
+        zriaďovateľom a stálou prevádzkarňou alebo stálymi prevádzkarňami toho istého daňovníka alebo
+        prepojených daňovníkov;
+    •   V stĺpci 5 sa po zmene uvedie vplyv na základ dane (riadok 400 daňového priznania) namiesto
+        pôvodného vplyvu kontrolovanej transakcie/skupiny kontrolovaných transakcií na výsledok hospodárenia
+        (riadok 100 daňového priznania) alebo vplyvu na základ dane (riadok 301 daňového priznania);
+    •   V stĺpci 6 sa vyberie kód štátu, v ktorom je protistrana kontrolovanej transakcie daňovým rezidentom;
+    •   V stĺpci 7 sa uvedie názov závislej osoby (v prípade fyzickej osoby meno a priezvisko), s ktorou sa daná
+        kontrolovaná transakcia alebo skupina kontrolovaných transakcií uskutočnila v danom zdaňovacom
+        období.
+
+V druhej časti Tabuľky I sa uvedú úvery a pôžičky, ktoré daňovník evidoval voči závislým osobám v rámci
+zdaňovacieho obdobia v nasledujúcej štruktúre:
+    • V stĺpci 1 je uvedené poradové číslo kontrolovanej transakcie alebo skupiny kontrolovaných transakcií;
+    • V stĺpci 2 sa vyberie kód druhu transakcie;
+    • V stĺpci 3 sa uvedie najvyššia suma úveru a pôžičky počas zdaňovacieho obdobia;
+    • V stĺpci 4 sa uvedie stav úveru alebo pôžičky ku koncu zdaňovacieho obdobia;
+    • V stĺpci 5 sa vyberie kód štátu, v ktorom je príslušná závislá osoba (protistrana kontrolovanej transakcie)
+        daňovým rezidentom;
+    • V stĺpci 6 sa uvedie názov závislej osoby (v prípade fyzickej osoby meno a priezvisko), s ktorou sa daná
+        kontrolovaná transakcia alebo skupina kontrolovaných transakcií uskutočnila v danom zdaňovacom
+        období.
+
+V tretej časti Tabuľky I sa vyznačí skutočnosť, že sa v zdaňovacom období realizovali kontrolované transakcie
+v hodnote nižšej ako je uvedená v § 17 ods. 5 písm. a) zákona a zároveň platí, že tieto kontrolované transakcie
+nie sú uvedené v prvej časti Tabuľky I v rámci agregovaných, resp. skupiny kontrolovaných transakcií.
+
+Významné kontrolované transakcie alebo skupiny kontrolovaných transakcií, ktoré sa neuviedli v Tabuľke I
+z dôvodu nedostatočného počtu riadkov, sa uvedú v skrátenej transferovej dokumentácii. Daňovníci, ktorí majú
+významné kontrolované transakcie alebo skupinu kontrolovaných transakcií spadajúcich do rozsahu úplnej alebo
+základnej transferovej dokumentácie, sú naďalej povinní viesť príslušnú transferovú dokumentáciu a zároveň
+riadne vyplniť tlačivo DPPO vrátane Tabuľky I. Tí daňovníci, ktorí majú významné kontrolované transakcie alebo
+skupinu kontrolovaných transakcií, ktoré spadajú do rozsahu skrátenej dokumentácie si svoju povinnosť splnia
+riadnym vyplnením tlačiva DPPO vrátane Tabuľky I.
+
+Príloha k § 30ca zákona – Odpočet výdavkov (nákladov) na podporu športu podľa § 30ca zákona
+
+V Prílohe k § 30ca zákona – Odpočet výdavkov (nákladov) na podporu športu podľa § 30ca zákona sa
+spresňuje znenie poznámky pod čiarou k odkazu 20), podľa ktorej si daňovník môže uplatniť odpočet výdavkov
+(nákladov) na podporu športu podľa § 30ca ods. 1 a 2 zákona najviac do výšky základu dane uvedeného v riadku
+500 po znížení o odpočet výdavkov (nákladov) podľa § 30c a § 30e zákona, ale zároveň v úhrnnej sume najviac
+do výšky 250 000 eur.
+
+V Prílohe k § 30ca zákona – Odpočet výdavkov (nákladov) na podporu športu podľa § 30ca zákona sa dopĺňa nová
+časť Údaje o športovej organizácii, ktorej bolo poskytnuté plnenie podľa § 30ca ods. 7 zákona, v ktorej
+daňovník uvádza údaje o športovej organizácii a dátume začiatku realizácie podpory športu na účely zostavenia
+zoznamu daňových subjektov podľa § 30ca ods. 8 zákona.
+Ak daňovník poskytne podporu športu viacerým športovým organizáciám, údaje o každej športovej organizácii
+uvádza v samostatnej tabuľke tejto prílohy.
+
+
+
+ Vypracoval:     Odbor daňovej metodiky I FR SR
+                 Október 2026
+

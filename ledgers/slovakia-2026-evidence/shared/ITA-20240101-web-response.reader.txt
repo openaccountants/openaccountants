@@ -1,0 +1,156 @@
+Základ dane daňovníka, ktorý je verejnou obchodnou spoločnosťou, sa zisťuje za spoločnosť ako celok podľa § 17 až 29, ak § 17j ods. 1 neustanovuje inak. Tento základ dane sa medzi jednotlivých spoločníkov delí v takom pomere, v akom sa medzi nich rozdeľuje zisk^{31}) podľa spoločenskej zmluvy. Ak v spoločenskej zmluve nie je rozdelenie zisku určené, základ dane sa delí medzi jednotlivých spoločníkov rovným dielom.
+Daňová strata sa delí rovnako ako základ dane vypočítaný podľa § 17 až 29.
+(5)
+Základ dane daňovníka, ktorý je komanditnou spoločnosťou, sa zisťuje za spoločnosť ako celok podľa § 17 až 29. Od takto zisteného základu dane sa odpočíta podiel pripadajúci na komplementárov, ktorý sa určí v rovnakom pomere, v akom sa delí zisk pred zdanením medzi komanditistov a komplementárov.^{32}) Zostávajúci základ dane je základom dane komanditnej spoločnosti. Daňová strata sa delí rovnako ako základ dane vypočítaný podľa § 17 až 29.
+Základ dane alebo daňová strata v časti pripadajúcej na komplementára, ktorý považuje komanditnú spoločnosť za reverzný hybridný subjekt, je základom dane alebo daňovou stratou komanditnej spoločnosti.
+(6)
+
+Súčasťou základu dane daňovníka, ktorý je spoločníkom verejnej obchodnej spoločnosti, je aj časť základu dane alebo časť daňovej straty verejnej obchodnej spoločnosti pripadajúca na spoločníka podľa odseku 4. Táto časť základu dane alebo časť daňovej straty sa zahrnuje do základu dane v tom zdaňovacom období, za ktoré verejná obchodná spoločnosť podala daňové priznanie.
+
+(7)
+Súčasťou základu dane daňovníka, ktorý je komplementárom komanditnej spoločnosti, je aj časť základu dane alebo daňovej straty komanditnej spoločnosti pripadajúca na jednotlivého komplementára; pritom táto časť základu dane alebo časť daňovej straty sa určí v rovnakom pomere, v akom sa rozdeľuje časť zisku pred zdanením pripadajúca na komplementárov medzi jednotlivých komplementárov.^{32})
+
+ŠTVRTÁ ČASŤ
+
+SPOLOČNÉ USTANOVENIA
+
+§ 15
+
+Sadzba dane
+Sadzba dane je, okrem § 15a, § 43 a 44, pre
+
+a)
+
+fyzickú osobu
+
+1.
+
+zo základu dane zisteného podľa § 4 ods. 1 písm. a)
+
+1a.
+
+19 % z tej časti základu dane, ktorá nepresiahne 176,8-násobok sumy platného životného minima vrátane,
+
+1b.
+
+25 % z tej časti základu dane, ktorá presiahne 176,8-násobok platného životného minima,
+
+2.
+15 % zo základu dane zisteného podľa § 4 ods. 1 písm. b) zníženého o daňovú stratu pre daňovníka, ktorý dosiahol za zdaňovacie obdobie zdaniteľné príjmy (výnosy) podľa § 6 ods. 1 a 2 neprevyšujúce sumu 60 000 eur,
+
+3.
+
+zo základu dane zisteného podľa § 4 ods. 1 písm. b) zníženého o daňovú stratu pre daňovníka, ktorý dosiahol za zdaňovacie obdobie zdaniteľné príjmy (výnosy) podľa § 6 ods. 1 a 2 prevyšujúce sumu 60 000 eur
+
+3a.
+19 % z tej časti základu dane, ktorá nepresiahne 176,8-násobok sumy platného životného minima vrátane,
+
+3b.
+
+25 % z tej časti základu dane, ktorá presiahne 176,8-násobok platného životného minima,
+
+4.
+
+19 % z osobitného základu dane zisteného podľa § 7,
+
+5.
+
+10 % z osobitného základu dane zisteného podľa § 51e ods. 3 písm. a),
+
+6.
+
+35 % z osobitného základu dane zisteného podľa § 51e ods. 3 písm. b),
+
+b)
+
+právnickú osobu
+
+1.
+
+zo základu dane zníženého o daňovú stratu
+
+1a.
+15 % pre daňovníka, ktorý dosiahol za zdaňovacie obdobie zdaniteľné príjmy (výnosy) neprevyšujúce sumu 60 000 eur,
+
+1b.
+
+21 % pre daňovníka neuvedeného v bode 1a.,
+
+2.
+
+35 % z osobitného základu dane zisteného podľa § 51e ods. 4,
+
+3.
+
+21 % z osobitného základu dane zisteného podľa § 17f ods. 1 a 2.
+
+§ 15a
+
+Osobitná sadzba dane
+
+(1)
+Zdaniteľný príjem zo závislej činnosti plynúci prezidentovi Slovenskej republiky, poslancovi Národnej rady Slovenskej republiky, členovi vlády Slovenskej republiky, predsedovi a podpredsedovi Najvyššieho kontrolného úradu Slovenskej republiky (ďalej len „vybraný ústavný činiteľ“) podľa osobitného predpisu^{75a}) vrátane príjmu uvedeného v § 5 ods. 1 písm. f) a 【397†ods. 3 písm.
+c)】 od zamestnávateľa, ktorý je platiteľom dane a vypláca vybranému ústavnému činiteľovi príjmy podľa osobitného predpisu^{75a}) okrem sadzby dane podľa § 15 písm. a), podlieha zdaneniu aj osobitnou sadzbou dane vo výške 5 % (ďalej len „osobitná daň“).
+(2)
+
+Suma osobitnej dane vybraného ústavného činiteľa, vypočítaná zo zdaniteľného príjmu zo závislej činnosti uvedeného v odseku 1 sadzbou podľa odseku 1, zaokrúhlená podľa § 47, pri výpočte základu dane neznižuje úhrn zdaniteľných príjmov zo závislej činnosti vybraného ústavného činiteľa.
+
+(3)
+Zamestnávateľ, ktorý je platiteľom dane, zodpovedá za správnosť výpočtu, zrazenia a odvedenia osobitnej dane. Osobitnú daň vybraného ústavného činiteľa odvedie zamestnávateľ, ktorý je platiteľom dane, správcovi dane v lehote podľa § 35 ods. 6 a jej odvedením je osobitná daň vysporiadaná, pričom ak platiteľ dane nevykoná zrážku, nezrazí daň v správnej výške alebo zrazenú daň neodvedie, použije sa postup uvedený v § 43 ods. 12.
+
+(4)
+Mzdový list podľa § 39 ods. 2 vybraného ústavného činiteľa obsahuje aj údaj o sume osobitnej dane z príjmu uvedeného v odseku 1.
+
+(5)
+
+Zamestnávateľ, ktorý je platiteľom dane, je povinný oznámiť správcovi dane výšku sumy osobitnej dane vybraného ústavného činiteľa z príjmu zo závislej činnosti uvedeného v odseku 1 v lehote podľa § 49 ods. 2 ustanovenej pre podávanie prehľadu na tlačive, ktorého vzor určí finančné riaditeľstvo.
+
+(6)
+Uplatnením osobitnej dane z príjmu zo závislej činnosti uvedeného v odseku 1 plynúceho vybranému ústavnému činiteľovi nie sú dotknuté ostatné ustanovenia tohto zákona o príjmoch zo závislej činnosti.
+
+§ 16
+
+Zdroj príjmov daňovníka s obmedzenou daňovou povinnosťou
+
+(1)
+
+Príjmom zo zdrojov na území Slovenskej republiky daňovníka s obmedzenou daňovou povinnosťou je príjem
+
+a)
+z činností vykonávaných prostredníctvom jeho stálej prevádzkarne umiestnenej na území Slovenskej republiky a z akéhokoľvek nakladania s majetkom tejto stálej prevádzkarne, pričom za príjem (výnos) z nakladania s majetkom stálej prevádzkarne sa považuje aj príjem zahrňovaný do osobitného základu dane podľa § 17f ods. 1 písm. b) a ods. 2 písm. b),
+
+b)
+zo závislej činnosti vykonávanej na území Slovenskej republiky alebo na palubách lietadiel alebo lodí, ktoré sú prevádzkované daňovníkom s neobmedzenou daňovou povinnosťou,
+
+c)
+
+zo služieb vrátane obchodného, technického alebo iného poradenstva, z riadiacej a sprostredkovateľskej činnosti, zo stavebných a montážnych činností a projektov a podobných činností poskytovaných na území Slovenskej republiky, aj keď nie sú vykonávané prostredníctvom stálej prevádzkarne,
+
+d)
+z činnosti umelca, športovca, artistu alebo spoluúčinkujúcich osôb a z ďalšej podobnej činnosti osobne vykonávanej alebo zhodnocovanej na území Slovenskej republiky bez ohľadu na to, či príjmy plynú týmto osobám priamo alebo cez sprostredkujúcu osobu; ak v úhrade sprostredkujúcej osobe nie je preukázaná skutočná výška príjmu umelca, športovca, artistu alebo spoluúčinkujúcich osôb, považuje sa za príjem týchto osôb celá úhrada,
+
+e)
+z úhrad od daňovníkov s neobmedzenou daňovou povinnosťou a od stálych prevádzkarní daňovníkov s obmedzenou daňovou povinnosťou, ktorými sú
+
+1.
+
+odplaty za poskytnutie práva na použitie alebo za použitie predmetu priemyselného vlastníctva, počítačových programov (softvér), návrhov alebo modelov, plánov, výrobno-technických a iných hospodársky využiteľných poznatkov (know-how),
+
+2.
+
+odplaty za poskytnutie práva na použitie alebo za použitie autorského práva alebo práva príbuzného autorskému právu,
+
+3.
+úroky a iné výnosy z poskytnutých úverov a pôžičiek a z vkladov na vkladných knižkách, z vkladov peňažných prostriedkov na bežných účtoch a vkladových účtoch, z výnosov z majetku v podielovom fonde,^{74b}) z príjmov z podielových listov dosiahnutých z ich vyplatenia (vrátenia), z výnosov z vkladových certifikátov, depozitných certifikátov, vkladových listov a z iných cenných papierov im na roveň postavených a z derivátov podľa osobitného predpisu,^{76}) okrem výnosov z dlhopisov a pokladničných poukážok,
+4.
+
+nájomné alebo príjmy plynúce z iného využitia hnuteľných vecí umiestnených na území Slovenskej republiky; hnuteľnou vecou umiestnenou na území Slovenskej republiky sú aj motorové vozidlá a ostatné dopravné zariadenia uvedené v prílohe č. 1 využívané daňovníkom podľa § 2 písm. d) alebo stálou prevádzkarňou daňovníka podľa § 2 písm. e) v medzinárodnej doprave,
+
+5.
+príjmy z prevodu hnuteľných vecí umiestnených na území Slovenskej republiky, z prevodu majetkových práv registrovaných na území Slovenskej republiky a z prevodu cenných papierov emitovaných daňovníkmi so sídlom na území Slovenskej republiky okrem príjmov z prevodu štátnych dlhopisov a štátnych pokladničných poukážok,
+
+6.
+
+odmeny členov štatutárnych orgánov a ďalších orgánov právnických osôb za výkon funkcie,
+
+7.

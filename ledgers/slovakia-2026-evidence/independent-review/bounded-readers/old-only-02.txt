@@ -1,0 +1,159 @@
+
+sk-payroll-social earliest unit5 LF[28, 28]
+Slovak payroll funds two systems: social insurance (Sociálna poisťovňa) and public health insurance. Employers withhold income tax and the employee's contributions monthly and remit them with their own employer contributions. Most social-insurance contributions are capped at a maximum monthly assessment base; health insurance is uncapped.
+DEST Current LF19,25,77–96
+Three-body administration, deductions and ceilings preserved.
+
+sk-payroll-social earliest unit6 LF[30, 30]
+<!-- openaccountants-cta-block -->
+DEST Current LF285
+Original CTA/reference text retained byte-exact.
+
+sk-cross-border main unit24 LF[93, 96]
+- A one-off activity creates a permanent establishment only after more than six months in any 12 months. A building site or construction or assembly project is one only if the activity of the non-resident or its related persons there lasts more than six months.
+- Services provided in Slovakia by the non-resident or its staff create one after more than 183 days in any 12 months.
+- Repeated intermediation of transport or accommodation, including through a digital platform, counts as a fixed place.
+- A dependent agent is one: a person acting on the non-resident's instructions who habitually negotiates, concludes or arranges contracts, or plays the principal role leading to contracts the non-resident concludes without material change, in the non-resident's name or for its property or services.
+DEST [95, 98]
+Exact retained unit; all embedded topics preserved.
+
+sk-cross-border main unit32 LF[116, 116]
+**Withholding as final tax or as an advance.** Withholding settles the tax (§ 43(6)). A non-resident from an EU or EEA state may instead treat tax withheld on services, royalties, rent of movables, advisory fees and interest as an advance, file a Slovak return, and claim back any excess. A non-resident artist or sportsperson from any state may do the same for § 16(1)(d) income (§ 43(6)(a) and (b), § 43(7)).
+DEST [118, 118]
+Exact retained unit; all embedded topics preserved.
+
+sk-cross-border main unit42 LF[142, 142]
+Interest and royalties paid by a Slovak company (or an EU company's Slovak permanent establishment) to an EU company are exempt if the recipient is the beneficial owner and, for at least 24 months in a row up to the payment date, one of these holds:
+DEST [150, 150]
+Exact retained unit; all embedded topics preserved.
+
+sk-cross-border main unit51 LF[166, 166]
+The total special base cannot be negative (§ 17f(3)). Temporary transfers for securities financing, collateral, prudential capital or liquidity that return within 12 months are excluded (§ 17f(4)). On a move to an EU or EEA state with a recovery assistance agreement, the tax can be paid in instalments over five years, with interest, on request in the return (§ 17g). A company arriving in Slovakia takes a step-up to the value taxed on exit abroad, capped at fair value (§ 17f(8)).
+DEST [174, 174]
+Exact retained unit; all embedded topics preserved.
+
+sk-transfer-pricing main unit14 LF[47, 47]
+**Micro-taxpayers.** A micro-taxpayer (mikrodaňovník, revenue up to EUR 60,000) loses that status if it is a dependent person with a controlled transaction in the period (ITA § 2(w)(1)).
+DEST [47, 47]
+Exact retained unit; all embedded topics preserved.
+
+sk-transfer-pricing main unit20 LF[79, 79]
+**Shared costs.** A dependent person may deduct its share of costs that a related person incurred, but only if all four tests are met (§ 17(5)(b)):
+DEST [79, 79]
+Exact retained unit; all embedded topics preserved.
+
+sk-transfer-pricing main unit34 LF[116, 120]
+| Tier | Who keeps it (art. 3) | Content |
+|---|---|---|
+| **Full** (úplná) | (a) a cross-border significant transaction material under Accounting Act § 17(9) for a taxpayer that reports under IFRS; (b) a cross-border transaction or group above EUR 10,000,000; (c) a material cross-border transaction with a resident of a non-cooperative state; (d) a material cross-border transaction where the taxpayer claims regional investment aid relief; (e) a transaction covered by an APA request; (f) a transaction covered by a request for a corresponding adjustment, except domestic ones; (g) a transaction covered by a dispute resolution request | Group file (structure, business, profit drivers, supply chains, services, intangibles, financing, consolidated accounts, APAs and rulings) and local file (taxpayer, each transaction with value by counterparty, contract, functional analysis, method and why, tested party, comparables and adjustments, reconciliation to the accounts) (art. 4) |
+| **Basic** (základná) | where full does not apply: (a) a material cross-border transaction where the taxpayer's total revenue from operating and financial activity exceeds EUR 8,000,000; (b) a cross-border transaction or group above EUR 1,000,000; (c) a material domestic transaction where the taxpayer claims regional investment aid relief; (d) any cross-border transaction with a resident of a non-cooperative state | Short group file (members, structure, functions, risks, financing) and local file (taxpayer, each transaction with value, contract, functional analysis, description of the TP system) (art. 5) |
+| **Shortened** (skrátená) | everyone else | Met by a properly completed return including Table I. A taxpayer that does not meet it that way, for example for lack of rows, keeps the shortened file in the form annexed to the guideline (art. 3(3), art. 6) |
+DEST [121, 125]
+Exact retained unit; all embedded topics preserved.
+
+sk-transfer-pricing main unit53 LF[206, 211]
+1. Documentation tier for 2025: the royalty is cross-border and above EUR 1,000,000, so basic documentation is needed. It is not above EUR 10,000,000, the company does not report under IFRS, and the sister company is not in a non-cooperative state, so full documentation is not (guideline art. 3(1) and (2)).
+2. The Slovak loan has principal above EUR 50,000, so it is significant. It is domestic and the company claims no investment aid, so the interest goes in Table I and no separate file is needed.
+3. Excess royalty: EUR 1,200,000 less EUR 1,080,000 = EUR 120,000, added back (ITA § 17(5)(a)).
+4. Extra tax at 24%: EUR 28,800, paid by the end of the month after the month the company found the error (TC § 16(2)).
+5. Penalty: the ECB rate used is the one on the day the supplementary return is filed (TC § 155(7)). On 30 November 2026 it is 2.65% (in force from 16 September 2026), below 3%, so the 3% floor applies (§ 155(5)). It runs from 1 April 2026, the day after the 31 March 2026 deadline, to 30 November 2026: 244 days. On a 365-day year: 28,800 x 3% x 244 / 365 = EUR 577.58.
+6. Had the office found it on audit instead, the 10% floor would apply over a longer period (TC § 155(1)(f)).
+DEST [225, 231]
+Rechecked current destination; prior 423-unit review disposition: F02/F20 corrected577.50/118.30;newincome-ratecliffvariantsidentified
+
+slovakia-vat-return main unit11 LF[59, 64]
+- **Output tax.** Tax is charged on domestic supplies at the rate in force on the day the liability arises. The return also carries the tax the payer self-assesses as customer: intra-EU acquisitions of goods, services from foreign persons under § 69(3), and domestic reverse-charge supplies under § 69(12).
+- **Domestic reverse charge (§ 69(12)).** Applies only when both supplier and customer are payers registered under § 4, § 4b, § 4c or § 5. It covers metal waste and scrap; greenhouse gas emission allowances; real estate the supplier has opted to tax under § 38(8); real estate sold in a forced sale; goods supplied when a security is enforced; cereals and oilseeds in chapters 10 and 12 not normally sold for final consumption; iron and steel in chapter 72 and headings 7301, 7308 and 7314; mobile phones and integrated circuits where the invoice tax base is EUR 5,000 or more; and construction work in section F of the classification, including goods supplied with installation in section F. The supplier invoices without VAT. The customer declares the tax and, if entitled, deducts it.
+- **Input tax.** A payer deducts tax on purchases used for taxable supplies. There is no deduction for hospitality and entertainment (§ 49(7)(a)). Where purchases serve both taxable and exempt supplies, the deductible share follows the coefficient in § 50.
+- **Passenger cars from 1 January 2026 (§ 85n).** For an M1 car, or an L1e or L3e motorcycle, acquired as a long-term asset, leased on a contract that is not short-term, or for goods and services bought to run one, from 1 January 2026 to 30 June 2028, the payer deducts 50%. Private use then counts as neither a supply of services nor a supply of goods. The cap does not apply to vehicles used only for car rental, paid passenger transport including taxis, driving schools, or as demonstration or courtesy cars (§ 85n(4)). It also does not apply where the vehicle is used only for business and the payer keeps electronic records for each vehicle: VIN, registration number, odometer readings at the start, at each period end and at the end, and a log of every trip with the driver, date and time, business purpose, start and end place and kilometres (§ 85n(5) and (6)). The payer must notify the tax office of a § 85n(4) or (5) use by the return deadline for the period of the first deduction. That notice is not needed for vehicles acquired by 31 December 2025 (§ 85n(9)).
+- **Excess deduction (nadmerny odpocet).** If deductible tax is more than tax due, the excess is first set against the next period's liability. Any part not used is refunded within 30 days of filing the next period's return (§ 79(1)). A monthly payer registered at least 12 months, with arrears of not more than EUR 1,000 in the last 6 months, can mark the return and be refunded within 30 days of the return deadline for the period itself (§ 79(2) and (3)). The refund clock stops while a request to fix the return or control statement is open (§ 79(4)).
+- **Rounding.** Figures in the return are rounded to the nearest euro cent, with 0.005 rounded up (§ 78(7)).
+DEST [63, 95]
+All six old base topics retained; added coefficient/direct attribution, capital assets/property/credit-note methods; old refund scope clarified.
+
+slovakia-vat-return main unit13 LF[68, 79]
+| Obligation | Deadline | Source |
+|---|---|---|
+| Tax period | Calendar month. A calendar quarter if § 77(2) is met and the change is notified within 25 days after the end of the month the conditions were met; it takes effect from the next calendar quarter | VAT Act § 77 |
+| VAT return and payment, Slovak payer | 25 days after the end of each tax period; tax paid in the same time | VAT Act § 78(1), (2)(a) |
+| Deadline falling on a Saturday, Sunday or public holiday | Moves to the next working day | Tax Procedure Code § 27(4) |
+| First return when the VAT number arrives after that deadline | Five working days from delivery of the registration decision | VAT Act § 78(2)(a)(1) |
+| VAT return and payment, foreign payer | 25 days after the end of a period in which tax was due, exempt intra-EU or export supplies were made, exempt goods were acquired, or a deduction is claimed | VAT Act § 78(2)(b) |
+| Non-payer liable under § 69 | 25 days after the end of the month the liability arose; no payment if EUR 5 or less | VAT Act § 78(3) |
+| Control statement (kontrolny vykaz) | Electronically, in XML, for every period with a return, 25 days after the period. Not due if the return reports no supplies, or only exempt § 43 or § 47 supplies with no deduction (or only a § 49(2)(d) deduction) | VAT Act § 78a(1), (16) |
+| Answer to a tax office request on the control statement | Five working days from delivery of the request | VAT Act § 78a(13) |
+| EC sales list (suhrnny vykaz) | Monthly, 25 days after the period; quarterly if § 80(2) is met; a § 7 or § 7a registrant supplying § 15(1) services files for each quarter in which it supplied them | VAT Act § 80 |
+| EU SME scheme quarterly report (Slovak business using the scheme abroad) | End of the month after the quarter | VAT Act § 68g(8) |
+DEST [99, 110]
+Exact retained unit; all embedded topics preserved.
+
+slovakia-vat-return main unit17 LF[87, 97]
+| Breach | Consequence | Source |
+|---|---|---|
+| Return not filed on time | Fine EUR 100 to 30,000; EUR 100 to 60,000 if not filed by the date in a tax office request (only one of the two is imposed) | Tax Procedure Code § 154(1)(a), § 155(1)(a), (b), (3) |
+| Registration not made on time | Fine EUR 100 to 30,000 | § 155(1)(c) |
+| First breach, fines set within a range | The tax office does not impose a fine set within a range for a first breach | § 155(4) |
+| Tax under-declared, found by the tax office | 3 times the ECB base rate a year (at least 10% a year) on the extra tax, counted daily from the deadline; at least 1% of the assessed sum and at most the sum itself. Two thirds of that fine if the assessment is paid within 15 days | § 155(1)(f), (2), (5), (17) |
+| Supplementary return raising tax | ECB base rate a year (at least 3%); twice the ECB rate (at least 7%) if filed after an audit has started | § 155(1)(g), (h), (5) |
+| Control statement missing, late, incomplete or wrong, or defects not fixed by the requested date | Fine up to EUR 10,000; up to EUR 100,000 for repeated breaches | VAT Act § 78a(15) |
+| Fast refund obtained on false data | Fine up to 1.3% of the refund | VAT Act § 79(8) |
+| Late payment | Interest at 4 times the ECB base rate, at least 15% a year, counted daily from the day after the due date, for at most four years; not charged if EUR 5 or less | Tax Procedure Code § 156(2), (6)(b) |
+| Fines of EUR 5 or less | Not imposed | § 155(11) |
+DEST [146, 156]
+Exact retained unit; all embedded topics preserved.
+
+slovakia-vat-return main unit29 LF[173, 173]
+Not yet confirmed: the row numbers of the 2026 VAT return form and the control statement layout (the official forms were not read, so this skill names no boxes); the ECB base rate on any given date, which sets the fine and interest percentages above the floors; whether the first-breach rule in Tax Procedure Code § 155(4) also covers the control statement fine in VAT Act § 78a(15); the detail of the § 50 coefficient (rounding and de minimis), which was not re-read for this version.
+DEST [250, 250]
+Oldform/coefficientdetail gaps partly resolved by actualforms/positiveD method; ECBdate needs actualdate and specialfirstchance/annualD0 remain precise.
+
+slovakia-vat-return earliest unit79 LF[293, 298]
+| Registration Type | Input VAT Recovery | Legislation |
+| --- | --- | --- |
+| Section 4 registered (standard) | Full recovery (subject to blocks) | Sec. 49 |
+| Section 4a (voluntary) | Full recovery once registered | Sec. 49 |
+| Section 7/7a (EU purposes only) | NO input VAT recovery | Sec. 7 |
+| Non-registered | NO recovery | -- |
+DEST Current LF27–32;65;165; companionregistration70–76
+All4 registration/recoverypopulations retained. Voluntary4 not4a; registerednumberalone7/7a no inputcredit. Nonregistered liabilities remain; specificpreinput55companionroute retained.
+
+slovakia-vat-return earliest unit100 LF[381, 389]
+| Violation | Penalty | Legislation |
+| --- | --- | --- |
+| Late filing of DPH return | EUR 30 - EUR 16,000 | Tax Administration Act Sec. 155 |
+| Late payment of DPH | Interest at ECB rate + 10% p.a., from day after due date | Tax Administration Act Sec. 156 |
+| Tax shortfall (additional assessment) | 10% of additional tax (if voluntary disclosure) / 20% (if audit) | Tax Administration Act Sec. 154 |
+| Control Statement non-filing | Up to EUR 10,000 | Sec. 78a |
+| EC Sales List non-filing | Up to EUR 10,000 | Sec. 80 |
+| Failure to register | Back-assessment + penalty | Sec. 4 |
+| Repeated non-compliance | Double penalties | Tax Administration Act Sec. 155(3) |
+DEST Current LF148–161
+Alllatefiling/payment/shortfall/KV/EC/registration/repeatfine topics retained with actual2026ranges/dailyECBfloorbranches. Old30–16000/ECB+10/fixed10vs20/doublepenalty not currentlaw; persistentbranch repeatedsameamount, specialKVup10k/100k separatelyreserved.
+
+slovakia-vat-return earliest unit181 LF[646, 654]
+| Feature | Detail | Legislation |
+| --- | --- | --- |
+| Automatic refund | If excess DPH (Row 33 > 0) and no outstanding tax liabilities | Sec. 79 |
+| Refund threshold | Minimum EUR 10 | Sec. 79(2) |
+| Refund timeline | Within 30 days of filing deadline (standard) | Sec. 79(1) |
+| Extended timeline | If tax authority initiates verification, up to 60 days | Sec. 79(3) |
+| Carry forward | Credit can be carried forward to next period | Sec. 79 |
+| Offset | Tax authority may offset against other tax liabilities | Tax Administration Act |
+| New registrations | First 12 months: refund within 60 days (extended verification possible) | Sec. 79(4) |
+DEST Current LF67;95;130
+Refundcarry/offset/ordinaryandfastrefund retained. Old10minimum/blanket30deadline/60verification/new12month60dayrule not supported by actual79; exactnextperiod/qualifyingfastclock/audit10dayroute supplied.
+
+slovakia-vat-return earliest unit184 LF[660, 665]
+| Feature | Detail | Legislation |
+| --- | --- | --- |
+| Additional return | Can file amended return within 4 years | Tax Administration Act Sec. 16 |
+| Reduced penalty | 10% of additional tax (vs 20% if found by audit) | Tax Administration Act Sec. 154(1) |
+| Late payment interest | Still applies on any additional amount due | Tax Administration Act Sec. 156 |
+| Deadline | Before tax authority starts audit proceedings | Tax Administration Act Sec. 16(2) |
+DEST Current LF142;151–155
+Correction/timelimit/voluntaryfine/interest retained; no4yearuniversalamendment/fixed10vs20/auditimmediatestop orpenaltyfreeassumption. Actual16/69fiveyear/restart/audit15days andECBbranch apply.
+
+slovakia-vat-registration-4-7-7a main unit16 LF[51, 51]
+The old threshold was 49 790 eur measured over **up to 12 preceding consecutive calendar months**. It is now 50 000 / 62 500 eur measured over the **calendar year**, resetting every 1 January. A transitional rule (§85kn) keeps the old regime alive for anyone who hit 49 790 eur by 31 December 2024.
+DEST [44, 58]
+Old49790rolling and85kntransition retained historicalonly.

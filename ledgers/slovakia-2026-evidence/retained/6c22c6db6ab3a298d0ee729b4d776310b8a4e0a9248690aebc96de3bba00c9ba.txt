@@ -1,0 +1,234 @@
+
+ VAT numbers issued by different EU countries - vero.fi
+ />
+Scam messages have been sent out in the Tax Administration’s name. Read more about scams.
+ Start a chatbot discussion
+ Individuals
+ Businesses
+ MyTax
+ Take care of your tax matters in MyTax.
+ Log in to MyTax
+ Information on MyTax
+MyTax may run slow. We apologise for any inconvenience.
+ Businesses
+Frontpage 
+ Taxes and charges
+ Value added tax
+ Being an employer
+ Tax prepayment
+ Payments
+ Excise taxes
+ Real estate tax
+ Car taxation
+ Self-assessed taxes
+ Income tax returns
+ Limited liability companies and cooperative societies
+ Self-employed individuals
+ General and limited partnerships
+ Agricultural operators
+ Associations and foundations
+ Annual information returns
+ Construction work reports
+ Taxes and the construction sector
+ Business operations
+ New business enterprise
+ Changes in business
+ Going out of business
+ Foreign business in Finland
+ Finnish companies operating abroad
+ Transfer pricing
+ Registers
+ Financial sector
+ Cooperation and services
+ Pre-emptive discussion
+ Advance ruling
+ Appeals
+ Tax auditing and shadow economy
+ Businesses
+ Taxes and charges
+ Value added tax
+ International commerce
+ VAT number
+VAT numbers issued by different EU countries
+VAT numbers issued by different EU countries 
+You need the VAT number of your customers, suppliers or other counterparts when you prepare invoices for them. Contact the party you do business with and ask them to give you their VAT number. More information on VAT number checking. 
+The first two characters of the VAT number are the country code, which is followed by a varying number of other characters.
+Used abbreviations: 
+9 = number, X = number or letter, L = letter, S = letter, number or other character
+VAT numbers issued by different EU countries
+Country
+Structure
+Number of characters after the country code
+Notes
+Austria
+AT U99999999
+9
+The first character following the country code is always “U".
+Belgium
+BE 9999999999
+10
+Bulgaria
+BG 999999999
+BG 9999999999
+9 or 10
+Croatia
+HR 99999999999
+11
+Cyprus
+CY 99999999L
+9
+Czech
+CZ 99999999
+CZ 999999999
+CZ 9999999999
+8, 9 or 10
+Denmark
+DK 99999999
+8
+Estonia
+EE 999999999
+9
+Finland
+FI 99999999
+8
+France
+FR XX999999999
+11
+Germany
+DE 999999999
+9
+Greece
+EL 999999999 
+9
+Hungary
+HU 99999999
+8
+Ireland
+IE 9S99999L or
+IE 9999999LL
+8
+9
+Italy
+IT 99999999999
+11
+Latvia
+LV 99999999999
+11
+Lithuania
+LT 999999999
+LT 999999999999
+9 or 12
+Luxembourg
+LU 99999999
+8
+Malta
+MT 99999999
+8
+Netherlands
+NL 999999999B99
+12
+The 10th character following the country code is always "B".
+Portugal
+PT 999999999
+9
+Poland
+PL 9999999999
+10
+Romania
+RO 99
+RO 999
+RO 9999
+RO 99999
+RO 999999
+RO 9999999
+RO 99999999
+RO 999999999
+RO 9999999999
+2 to 10
+Sweden
+SE 999999999901
+12
+The last two characters are always the numbers “01”.
+Slovakia
+SK 9999999999
+10
+Slovenia
+SI 99999999
+8
+Spain
+ES X9999999X
+9
+The first and the last character can be either a letter or a number, but both cannot be numbers.
+United Kingdom
+Northern-Ireland
+GB 999999999
+or
+GB 999999999999
+or
+GB GD999
+or
+GB HA999 
+9
+12
+5 
+5
+Identifies branch entities.
+GD identifies Government Departments.
+HA identifies Health Authorities
+GB-prefixed identifiers are in effect up to 31 December 2020.
+Northern-Irish VAT payers’ XI-prefixed identifiers in EU goods trade 1 Jan. 2021–31 Dec. 2028. The same structure as in GB identifiers.
+ Value added tax
+ The liability for paying VAT and registration for VAT
+ Termination of VAT-liable activities
+ Instructions for filing
+ Payment instructions
+ VAT relief scheme
+ VAT calculator
+ Rates of VAT
+ Deducting VAT on purchases
+ Goods or services diverted to private use
+ International commerce
+ VAT on vehicles
+ VAT in different lines of business
+ What is value added tax (VAT)?
+ The liability for paying VAT and registration for VAT
+ Termination of VAT-liable activities
+ Instructions for filing
+ Payment instructions
+ VAT relief scheme
+ VAT calculator
+ Rates of VAT
+ Deducting VAT on purchases
+ Goods or services diverted to private use
+ International commerce
+ VAT on vehicles
+ VAT in different lines of business
+ What is value added tax (VAT)?
+ Page last updated 1/17/2025
+Electronic tax mail
+You will automatically activate Suomi.fi Messages or electronic tax mail when you log in to MyTax.
+ Suomi.fi messages and electronic tax mail
+E-file
+MyTax
+Calculators
+Other e-filing resources
+The Positive credit register
+Incomes Register
+Contact
+Chat
+Contact us
+Social media
+Forms
+Processing times
+Detailed guidance
+ Detailed guidance
+The Tax Administration's detailed guidance is especially for tax professionals.
+ Detailed guidance
+About us
+ About us
+Facts about the Tax Administration plus jobs, news and statistics.
+ About us
+© Tax Administration
+Data Protection
+Feedback
+Print

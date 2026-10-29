@@ -1,0 +1,250 @@
+§ 2
+Základné pojmy
+Na účely tohto zákona sa rozumie
+a)
+ daňovníkom fyzická osoba alebo právnická osoba,
+b)
+ predmetom dane príjem (výnos) z činnosti daňovníka a z nakladania s majetkom daňovníka
+ okrem osobitne vymedzeného predmetu dane podľa § 12,
+c)
+ príjmom peňažné plnenie a nepeňažné plnenie dosiahnuté aj zámenou, ocenené cenami
+ bežne používanými v mieste a v čase plnenia alebo spotreby, a to podľa druhu, kvality,
+ prípadne miery opotrebenia predmetného plnenia, ak tento zákon neustanovuje inak;
+ za nepeňažné plnenie fyzickej osoby, ktorá účtuje v sústave jednoduchého účtovníctva
+ alebo vedie evidenciu podľa § 6 ods. 10 alebo 11, sa považuje aj prijatie zmenky ako platobného prostriedku, ktorou dlžník uhradil
+ pohľadávku veriteľovi, ktorý je fyzickou osobou,
+d)
+ daňovníkom s neobmedzenou daňovou povinnosťou
+1.
+ fyzická osoba, ktorá má na území Slovenskej republiky trvalý pobyt,1a) bydlisko alebo sa tu obvykle zdržiava, pričom
+1a.
+ fyzická osoba má na území Slovenskej republiky bydlisko, ak má možnosť ubytovania,
+ ktoré neslúži len na príležitostné ubytovanie, a so zreteľom na všetky súvisiace skutočnosti
+ a okolnosti vrátane osobných väzieb a ekonomických väzieb fyzickej osoby k územiu
+ Slovenskej republiky je zrejmý zámer fyzickej osoby sa v tomto bydlisku trvale zdržiavať,
+1b.
+ fyzická osoba sa obvykle zdržiava na území Slovenskej republiky, ak sa tu zdržiava
+ aspoň 183 dní v príslušnom kalendárnom roku, a to súvisle alebo v niekoľkých obdobiach;
+ do tohto obdobia sa započítava každý, aj začatý deň pobytu,
+2.
+ právnická osoba, ktorá má na území Slovenskej republiky sídlo1b) alebo miesto skutočného vedenia; miestom skutočného vedenia je miesto, kde sa vytvárajú
+ alebo prijímajú zásadné riadiace rozhodnutia a obchodné rozhodnutia pre právnickú
+ osobu ako celok, aj ak adresa tohto miesta nie je zapísaná v obchodnom registri,
+e)
+ daňovníkom s obmedzenou daňovou povinnosťou
+1.
+ fyzická osoba neuvedená v písmene d) prvom bode alebo fyzická osoba uvedená v písmene
+ d) prvom bode, ktorá sa v dôsledku uplatnenia medzinárodnej zmluvy považuje za daňovníka
+ s neobmedzenou daňovou povinnosťou v inom zmluvnom štáte,
+2.
+ fyzická osoba uvedená v písmene d) prvom bode, ktorá sa na území Slovenskej republiky
+ obvykle zdržiava len na účely štúdia alebo liečenia,
+3.
+ právnická osoba neuvedená v písmene d) druhom bode alebo právnická osoba uvedená
+ v písmene d) druhom bode, ktorá sa v dôsledku uplatnenia medzinárodnej zmluvy považuje
+ za daňovníka s neobmedzenou daňovou povinnosťou v inom zmluvnom štáte,
+f)
+ predmetom dane daňovníka s neobmedzenou daňovou povinnosťou príjem (výnos) plynúci
+ zo zdrojov na území Slovenskej republiky a zo zdrojov v zahraničí,
+g)
+ predmetom dane daňovníka s obmedzenou daňovou povinnosťou príjem (výnos) plynúci
+ zo zdrojov na území Slovenskej republiky (§ 16),
+h)
+ zdaniteľným príjmom príjem, ktorý je predmetom dane a nie je oslobodený od dane podľa
+ tohto zákona ani medzinárodnej zmluvy,
+i)
+ daňovým výdavkom výdavok (náklad) na dosiahnutie, zabezpečenie a udržanie zdaniteľných
+ príjmov preukázateľne vynaložený daňovníkom, zaúčtovaný v účtovníctve1) daňovníka alebo zaevidovaný v evidencii daňovníka podľa § 6 ods. 11, pričom pri využívaní majetku, ktorý môže mať charakter osobnej potreby a s ním súvisiacich
+ výdavkov (nákladov), je daňový výdavok uznaný len v pomernej časti podľa § 19 ods. 2 písm. t), v akej sa používa na dosiahnutie, zabezpečenie a udržanie zdaniteľných príjmov,
+ ak tento zákon neustanovuje inak,
+j)
+ základom dane rozdiel, o ktorý zdaniteľné príjmy prevyšujú daňové výdavky (§ 19) pri rešpektovaní vecnej a časovej súvislosti1) zdaniteľných príjmov a daňových výdavkov v príslušnom zdaňovacom období, ak tento
+ zákon neustanovuje inak,
+k)
+ daňovou stratou rozdiel, o ktorý daňové výdavky prevyšujú zdaniteľné príjmy pri rešpektovaní
+ vecnej a časovej súvislosti1) zdaniteľných príjmov a daňových výdavkov v príslušnom zdaňovacom období,
+l)
+ zdaňovacím obdobím kalendárny rok, ak tento zákon neustanovuje inak,
+m)
+ obchodným majetkom súhrn majetkových hodnôt, a to vecí, pohľadávok a iných práv a
+ peniazmi oceniteľných iných hodnôt, ktoré má fyzická osoba s príjmami podľa § 6 vo vlastníctve a ktoré sa využívajú na dosiahnutie, zabezpečenie a udržanie týchto
+ príjmov, o ktorých táto fyzická osoba účtuje alebo účtovala,1) eviduje alebo evidovala podľa § 6 ods. 11; obchodným majetkom podľa tohto ustanovenia je aj hmotný majetok obstarávaný formou
+ finančného prenájmu,
+n)
+ závislou osobou
+1.
+ blízka osoba,2)
+2.
+ ekonomicky, personálne alebo inak prepojená osoba alebo subjekt,
+3.
+ osoba alebo subjekt, ktorý je na účely konsolidácie2aa) súčasťou konsolidovaného celku,
+o)
+ ekonomickým prepojením alebo personálnym prepojením účasť osoby alebo subjektu na
+ majetku, kontrole alebo vedení inej osoby alebo subjektu alebo vzájomný vzťah medzi
+ osobami alebo subjektmi, ktoré sú pod kontrolou alebo vedením tej istej osoby, jej
+ blízkej osoby2) alebo subjektu alebo v ktorých má táto osoba, jej blízka osoba2) alebo subjekt priamy majetkový podiel alebo nepriamy majetkový podiel, pričom účasťou
+ na
+1.
+ majetku alebo kontrole sa rozumie priamy podiel, nepriamy podiel alebo nepriamy odvodený
+ podiel vo výške najmenej 25 % na základnom imaní, priamy podiel, nepriamy podiel alebo
+ nepriamy odvodený podiel vo výške najmenej 25 % na hlasovacích právach alebo podiel
+ vo výške najmenej 25 % na zisku, pričom nepriamy podiel sa vypočíta súčinom percentuálnej
+ výšky priamych podielov vydelených stomi a takto vypočítaný výsledok sa vynásobí stomi
+ a nepriamy odvodený podiel sa vypočíta súčtom nepriamych podielov, pričom nepriamy
+ odvodený podiel sa použije len na výpočet výšky účasti jednej osoby alebo subjektu
+ na majetku alebo kontrole inej osoby alebo subjektu, ak táto osoba alebo subjekt má
+ účasť na majetku alebo kontrole niekoľkých osôb alebo subjektov, z ktorých každý má
+ účasť na majetku alebo kontrole tej istej inej osoby alebo subjektu; ak výška nepriameho
+ odvodeného podielu presahuje 50 % a viac, všetky osoby alebo subjekty, prostredníctvom
+ ktorých sa jeho výška počítala, sú ekonomicky prepojené bez ohľadu na skutočnú výšku
+ ich podielu, pričom na účely tohto bodu osoba alebo subjekt, ktorý koná spoločne s
+ inou osobou alebo subjektom, ak ide o hlasovacie práva alebo podiel na základnom imaní,
+ sa považuje za osobu alebo subjekt, ktorý má účasť na všetkých hlasovacích právach
+ alebo je vlastníkom tohto podielu na základnom imaní, ktoré má v držbe táto iná osoba
+ alebo subjekt, pričom na účely počítania priameho podielu, nepriameho podielu alebo
+ nepriameho odvodeného podielu sa podiely blízkych osôb spočítavajú a ak ich súčet
+ je najmenej 25 %, príslušné osoby alebo subjekty sa považujú za ekonomicky prepojené,
+2.
+ vedení sa rozumie vzťah členov štatutárnych orgánov, dozorných orgánov alebo ďalších
+ obdobných orgánov právnickej osoby alebo subjektu k tejto právnickej osobe alebo k
+ subjektu,
+p)
+ iným prepojením právny vzťah alebo iný obdobný vzťah vytvorený predovšetkým na účel
+ zníženia základu dane alebo zvýšenia daňovej straty,
+r)
+ ekonomickým prepojením je aj vzťah medzi daňovníkom s neobmedzenou daňovou povinnosťou
+ a jeho stálymi prevádzkarňami v zahraničí, vzťah medzi daňovníkom s obmedzenou daňovou
+ povinnosťou a jeho stálymi prevádzkarňami na území Slovenskej republiky, vzťah medzi
+ jednotlivými stálymi prevádzkarňami daňovníka, vzťah medzi stálymi prevádzkarňami
+ daňovníkov, ktorí sú vzájomne prepojení podľa písmena n), ako aj vzájomný vzťah medzi
+ týmito stálymi prevádzkarňami a týmito daňovníkmi,
+s)
+ finančným prenájmom obstaranie hmotného majetku na základe nájomnej zmluvy s dojednaným
+ právom kúpy prenajatej veci, pri ktorom cena, za ktorú prechádza vlastnícke právo
+ k prenajatému majetku z prenajímateľa na daňovníka, ktorý obstaráva hmotný majetok
+ formou finančného prenájmu, je súčasťou celkovej sumy dohodnutých platieb, ak
+1.
+ vlastnícke právo má prejsť bez zbytočného odkladu po skončení nájmu na daňovníka,
+ ktorý obstaráva hmotný majetok formou finančného prenájmu a
+2.
+ doba trvania nájmu je najmenej 60 % doby odpisovania podľa § 26 ods. 1,
+3.
+ doba trvania nájmu pozemku, na ktorom je umiestnená budova alebo stavba zaradená
+ do odpisovej skupiny 5, je najmenej 60 % doby odpisovania takéhoto majetku; ak predmetom
+ prenájmu je budova spolu s pozemkom, cena, za ktorú prechádza vlastnícke právo k prenajatému
+ pozemku z prenajímateľa na daňovníka, ktorý obstaráva hmotný majetok formou finančného
+ prenájmu, musí byť vyčíslená osobitne,
+4.
+ doba trvania nájmu pozemku, na ktorom je umiestnená budova alebo stavba zaradená
+ do odpisovej skupiny 6, je najmenej 60 % doby odpisovania takéhoto majetku; ak predmetom
+ prenájmu je budova spolu s pozemkom, cena, za ktorú prechádza vlastnícke právo k prenajatému
+ pozemku z prenajímateľa na daňovníka, ktorý obstaráva hmotný majetok formou finančného
+ prenájmu, musí byť vyčíslená osobitne,
+5.
+ doba trvania nájmu pozemku, na ktorom nie je umiestnená budova alebo stavba, je najmenej
+ 60 % doby odpisovania hmotného majetku zaradeného do odpisovej skupiny 6,
+t)
+ daňovníkom členského štátu Európskej únie fyzická osoba alebo právnická osoba, ktorá
+ podlieha zdaneniu na území tohto členského štátu Európskej únie z príjmov plynúcich
+ zo zdrojov na území tohto členského štátu Európskej únie, ako aj zo zdrojov mimo územia
+ tohto členského štátu Európskej únie a ktorá na území Slovenskej republiky nie je
+ daňovníkom s neobmedzenou daňovou povinnosťou,
+u)
+ preddavkom na daň povinná platba na daň, ktorá sa platí v priebehu zdaňovacieho obdobia,
+ ak skutočná výška dane za toto obdobie nie je ešte známa,
+v)
+ platiteľom dane fyzická osoba alebo právnická osoba, ktorá je povinná zraziť alebo
+ vybrať daň alebo preddavok na daň od daňovníka, a ktorá je povinná daň alebo preddavok
+ na daň vybrané od daňovníka alebo zrazené daňovníkovi odvádzať správcovi dane a majetkovo
+ za ne zodpovedá,
+w)
+ mikrodaňovníkom daňovník, ktorý je fyzickou osobou, ktorého zdaniteľné príjmy (výnosy)
+ podľa § 6 ods. 1 a 2 za zdaňovacie obdobie neprevyšujú sumu 60 000 eur, a daňovník, ktorý je právnickou
+ osobou, ktorého zdaniteľné príjmy (výnosy) za zdaňovacie obdobie neprevyšujú sumu
+ 60 000 eur; mikrodaňovníkom nie je daňovník,
+1.
+ ktorý je závislou osobou podľa písmen n) až r) a realizuje kontrolovanú transakciu
+ za toto zdaňovacie obdobie,
+2.
+ na ktorého bol vyhlásený konkurz, vstúpil do likvidácie alebo mu bol povolený splátkový
+ kalendár,
+3.
+ ktorého zdaňovacie obdobie je kratšie ako 12 po sebe nasledujúcich kalendárnych mesiacov,
+ okrem daňovníka, ktorý má kratšie zdaňovacie obdobie z dôvodu úmrtia,
+x)
+ daňovníkom nespolupracujúceho štátu fyzická osoba, ktorá nemá trvalý pobyt alebo
+ právnická osoba, ktorá nemá sídlo v štáte uvedenom v zozname štátov uverejnenom na
+ webovom sídle Ministerstva financií Slovenskej republiky (ďalej len „ministerstvo“);
+ ministerstvo zaradí do tohto zoznamu štát, s ktorým má Slovenská republika uzatvorenú
+ medzinárodnú zmluvu o zamedzení dvojitého zdanenia (ďalej len „zmluva o zamedzení
+ dvojitého zdanenia“) alebo medzinárodnú zmluvu o výmene informácií týkajúcich sa daní
+ alebo štát, ktorý je zmluvným štátom medzinárodnej zmluvy obsahujúcej ustanovenia
+ o výmene informácií pre daňové účely v obdobnom rozsahu, ktorou je tento štát a Slovenská
+ republika viazaná a bez toho, aby bolo pri zdanení dotknuté uplatnenie zmluvy o zamedzení
+ dvojitého zdanenia, ministerstvo vyradí z tohto zoznamu štát, ktorý:
+1.
+ je uvedený v zozname Európskej únie obsahujúcom štáty, ktoré nespolupracujú na daňové
+ účely, uverejnenom v Úradnom vestníku Európskej únie k 1. januáru kalendárneho roka,
+ alebo
+2.
+ neuplatňuje daň z príjmov právnických osôb, alebo
+3.
+ uplatňuje nulovú sadzbu dane z príjmov právnických osôb,
+y)
+ držiteľom držiteľ registrácie lieku, držiteľ povolenia na veľkodistribúciu liekov,
+ držiteľ povolenia na výrobu liekov, farmaceutická spoločnosť,37ab) držiteľ povolenia na poskytovanie lekárenskej starostlivosti,37aba) výrobca a distribútor zdravotníckej pomôcky, výrobca a distribútor dietetickej potraviny37ac) alebo tretia osoba, ktorá sprostredkuje poskytnutie plnenia od týchto osôb,
+z)
+ poskytovateľom zdravotnej starostlivosti poskytovateľ zdravotnej starostlivosti,37aa) jeho zamestnanec alebo zdravotnícky pracovník,37aa)
+aa)
+ zamestnancom daňovník s príjmami podľa § 5 prijatými od platiteľa týchto príjmov (ďalej len „zamestnávateľ“),
+ab)
+ kontrolovanou transakciou právny vzťah alebo iný obdobný vzťah medzi dvomi alebo
+ viacerými závislými osobami podľa písmena n), pričom aspoň jedna z osôb je daňovník
+ s príjmami podľa § 6 alebo právnická osoba, ktorá dosahuje zdaniteľný príjem (výnos) z činnosti alebo
+ z nakladania s majetkom, pričom za kontrolovanú transakciu sa nepovažuje prenájom,
+ z ktorého plynú príjmy podľa § 6 ods. 3, ak ide o nehnuteľnosť nezaradenú do obchodného majetku podľa písmena m), a nájomcom
+ je fyzická osoba, ktorá túto nehnuteľnosť využíva na osobné účely, a ani právny vzťah
+ alebo iný obdobný vzťah, z ktorého plynú príjmy podľa § 5; pri posudzovaní kontrolovanej transakcie sa berie do úvahy skutočný obsah právneho
+ vzťahu alebo iného obdobného vzťahu,
+ac)
+ vkladom
+1.
+ peňažný vklad a nepeňažný vklad do základného imania,1) pričom za splatený vklad sa považuje aj zvýšenie základného imania obchodnej spoločnosti
+ alebo družstva na základe rozhodnutia valného zhromaždenia2b) obchodnej spoločnosti alebo predstavenstva družstva2c) zo zisku po zdanení vykázaného za zdaňovacie obdobia, za ktoré vykázaný podiel na
+ zisku (dividenda) nebol predmetom dane; za obchodnú spoločnosť alebo družstvo sa považuje
+ aj obdobná obchodná spoločnosť alebo družstvo so sídlom v zahraničí,
+2.
+ príspevok do kapitálového fondu z príspevkov2d) obchodnej spoločnosti splatený daňovníkom; za obchodnú spoločnosť sa považuje aj
+ obdobná obchodná spoločnosť so sídlom v zahraničí,
+3.
+ povinný príplatok do rezervného fondu, nedeliteľného fondu družstva2e) splatený akcionárom, spoločníkom alebo členom družstva a emisné ážio2e) splatené akcionárom,
+ad)
+ subjektom právne usporiadanie majetku alebo právne usporiadanie osôb, ktoré nemá
+ právnu subjektivitu, alebo iné právne usporiadanie, ktoré vlastní majetok alebo spravuje
+ majetok,
+ae)
+ ústredím právnická osoba, ktorá je zriaďovateľom stálej prevádzkarne,
+af)
+ konečným príjemcom príjmu osoba, ktorej plynie príjem v jej vlastný prospech a má
+ právo využívať tento príjem neobmedzene bez zmluvnej alebo inej právnej povinnosti
+ previesť príjem na inú osobu alebo stála prevádzkareň tejto osoby, ak činnosť spojená
+ s týmto príjmom je vykonávaná touto stálou prevádzkarňou, alebo majetok, s ktorým
+ tento príjem súvisí, je funkčne spojený s touto stálou prevádzkarňou; za konečného
+ príjemcu príjmu sa nepovažuje osoba, ktorá koná ako sprostredkovateľ za inú osobu,
+ag)
+ digitálnou platformou hardvérová platforma alebo softvérová platforma potrebná na
+ vytvorenie aplikácií a správu aplikácií,
+ah)
+ sídlom sídlo zapísané v obchodnom registri alebo obdobnom registri v zahraničí; ak
+ spoločnosť nemá sídlo zapísané v obchodnom registri alebo obdobnom registri v zahraničí,
+ sídlom sa rozumie územie štátu, podľa ktorého právnych predpisov bola spoločnosť založená
+ alebo zriadená, a u subjektu, ktorý nemá sídlo zapísané v obchodnom registri alebo
+ obdobnom registri v zahraničí, sa sídlom rozumie územie štátu, v ktorom má subjekt
+ miesto skutočného vedenia, a ak nie je možné určiť sídlo podľa predchádzajúcich spôsobov,
+ sídlom sa rozumie územie štátu, podľa ktorého právnych predpisov je subjekt založený
+ alebo zriadený,
+ai)
+ predajom kryptoaktíva2f) výmena kryptoaktíva za majetok, výmena kryptoaktíva za iné kryptoaktívum, výmena
+ kryptoaktíva za poskytnutie služby alebo odplatný prevod kryptoaktíva.
+DRUHÁ ČASŤ
+DAŇ FYZICKEJ OSOBY

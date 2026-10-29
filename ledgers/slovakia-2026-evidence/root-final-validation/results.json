@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-29",
+  "scope": "Root technical checks; not independent legal review",
+  "repository_tests": {
+    "total": 129,
+    "result": "PASS",
+    "environment": "TMPDIR=/private/tmp RUNNER_TEMP=/private/tmp/sk-final-runner-temp",
+    "first_run": "1 failure and 7 errors from missing RUNNER_TEMP and /var vs /private/var temporary paths; original output retained"
+  },
+  "country_oa_check": {
+    "files": 11,
+    "blocks": 14,
+    "failures": 0,
+    "missing": 0
+  },
+  "country_schema": {
+    "files": 10,
+    "errors": 0,
+    "warnings": 0
+  },
+  "published_artifact_identities": {
+    "references": 541,
+    "mismatches": 0
+  },
+  "whitespace": "Live Guide/test/new README check passed. Full retained-evidence check reports original source whitespace; exact reviewed evidence bytes preserved.",
+  "country_coverage": "VAT remains partial; no completed-country claim."
+}

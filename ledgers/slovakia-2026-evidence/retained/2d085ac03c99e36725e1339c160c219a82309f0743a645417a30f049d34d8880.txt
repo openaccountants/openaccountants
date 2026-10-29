@@ -1,0 +1,512 @@
+                                                                         VZOR                                                                 Príloha č. 1
+     DPFOAv25_1
+                                                   DAŇOVÉ PRIZNANIE
+       FO
+       typ: A
+                                         K DANI Z PRÍJMOV FYZICKEJ OSOBY
+                                           pre daňovníka, ktorý má príjmy len zo závislej činnosti
+                                              podľa § 5 zákona č. 595/2003 Z. z. o dani z príjmov
+                                                v znení neskorších predpisov (ďalej len „zákon”)
+Číselné údaje sa zarovnávajú vpravo, ostatné údaje sa píšu zľava. Nevyplnené riadky sa ponechávajú prázdne.
+Údaje sa vypĺňajú paličkovým písmom (podľa tohto vzoru), písacím strojom alebo tlačiarňou, a to čiernou alebo tmavomodrou farbou.
+
+
+
+01 - DIČ (ak nie je pridelené, uvádza sa rodné číslo)                    Druh daňového priznania
+                                                                                                                           Za rok
+                                                                             daňové priznanie
+                                                                                                                 Dátum zistenia skutočnosti na podanie
+                                        Riadok 02 sa vypĺňa, len             opravné daňové priznanie              dodatočného daňového priznania
+02 - Dátum narodenia
+                                        ak ide o daňovníka, ktorý                                          1)
+                                                                             dodatočné daňové priznanie
+       .          .                     nemá pridelené DIČ ani
+                                        rodné číslo                           (vyznačí sa x)
+                                                                                                                            .         .
+I. ODDIEL - ÚDAJE O DAŇOVNÍKOVI
+03 - Priezvisko                                                         04 - Meno                                    05 -Titul pred menom / za priezviskom
+
+                                                                                                                                          /
+Adresa trvalého pobytu v deň podania daňového priznania na území Slovenskej republiky alebo v zahraničí
+06 - Ulica                                                                                                               07 - Súpisné/orientačné číslo
+
+
+08 - PSČ               09 - Obec                                                                             10 - Štát
+
+
+
+11 - Daňový nerezident2)          áno                                                    Identifikačné číslo na daňové účely (TIN), pridelené v štáte
+                                                                                         daňovej rezidencie
+
+od           .         .                   do           .           .
+Adresa bydliska alebo adresa pobytu na území Slovenskej republiky, kde sa daňovník zdržiaval v zdaňovacom období 3)
+12 - Ulica                                                                                                               13 - Súpisné/orientačné číslo
+
+
+14 - PSČ               15 - Obec
+
+
+
+II. ODDIEL - ÚDAJE O ZÁKONNOM ZÁSTUPCOVI ALEBO DEDIČOVI ALEBO ZÁSTUPCOVI, KTORÝ
+                      PODÁVA DAŇOVÉ PRIZNANIE (ďalej len “zástupca”)
+16 - Priezvisko                                                         17 - Meno                                    18 -Titul pred menom / za priezviskom
+
+                                                                                                                                          /
+19 - Rodné číslo                                  20 - Ulica                                                             21 - Súpisné/orientačné číslo
+
+                            /
+22 - PSČ               23 - Obec                                                                             24 - Štát
+
+
+                       4)                                                           4)
+25 - Telefónne číslo                                        26 - Emailová adresa
+
+
+
+       Záznamy daňového úradu
+
+
+
+
+                            Miesto pre evidenčné číslo                               Odtlačok prezentačnej pečiatky daňového úradu
+
+     MF/012185/2025-721                                                                                                                   Strana 1
+      DPFOAv25_2
+                                        DIČ (Rodné číslo)
+
+1) Ak sa podáva dodatočné daňové priznanie z dôvodov uvedených v § 32 ods. 8, 9 a 11 alebo § 40 ods. 7 zákona, uvádzajú sa tieto dôvody v IX. oddiele.
+2) Vyznačí sa, ak ide o daňovníka s obmedzenou daňovou povinnosťou (nerezidenta) na území Slovenskej republiky podľa § 2 písm. e) bod 1 a 2 zákona a
+   príslušného článku zmluvy o zamedzení dvojitého zdanenia; vypĺňa sa aj X. oddiel. Ako dátum od - do sa uvedie tá časť zdaňovacieho obdobia, počas ktorej bol
+   daňovník na území Slovenskej republiky daňovníkom s obmedzenou daňovou povinnosťou.
+3) Vypĺňa sa, len ak daňovník nemá trvalý pobyt na území Slovenskej republiky.
+4) Ak daňové priznanie podáva daňovník sám, uvádza sa v tomto riadku jeho telefónne číslo a emailová adresa. Ak za daňovníka podáva daňové priznanie
+   zástupca, v tomto riadku sa uvádza telefónne číslo a emailová adresa tohto zástupcu, ak sa s daňovníkom nedohodli inak. Údaje v r. 25 a 26 nie sú podľa § 32
+   ods. 7 zákona povinné.
+
+III. ODDIEL - ÚDAJE NA UPLATNENIE ZNÍŽENIA ZÁKLADU DANE (§ 11 zákona) A DAŇOVÉHO
+                     BONUSU (§ 33 zákona)
+Údaje o poberaní dôchodkov uvedených v § 11 ods. 6 zákona
+Poberal (a) som na začiatku zdaňovacieho obdobia dôchodok (ky) uvedený (é) v § 11
+ods. 6 zákona alebo mi bol (i) tento (tieto) dôchodok (ky) priznaný (é) spätne k začiatku                    27                áno
+príslušného zdaňovacieho obdobia
+Úhrnná suma dôchodku (ov) uvedeného (ných) v § 11 ods. 6 zákona                                              28
+za zdaňovacie obdobie v eurách (vypĺňa sa, len ak sa uplatňuje zníženie základu dane)                                                , ,
+                                                                                             5)
+Údaje o manželke (manželovi), ktorá (ý) žije s daňovníkom v domácnosti na uplatnenie nezdaniteľnej časti základu dane
+29 - Priezvisko a meno                                                             Rodné číslo
+
+                                                                                                                                               /
+           uplatňujem nezdaniteľnú časť základu dane                         Vlastné                                                     Počet
+30
+           na manželku (manžela) podľa § 11 ods. 3 zákona                    príjmy (v eurách)
+                                                                                               6)                         ,              mesiacov
+                                                                                                                                                  6)
+
+
+
+Údaje o vyživovaných deťoch žijúcich s daňovníkom v domácnosti na uplatnenie daňového zvýhodnenia na vyživované
+                                                                7)
+dieťa podľa § 33 zákona (ďalej len „daňový bonus podľa zákona“)
+31 - Priezvisko a meno                         Rodné číslo                                        Daňový bonus podľa zákona uplatňujem v mesiacoch
+                                                                                                  1-12   1    2   3   4    5   6     7     8       9   10 11 12
+                                                                         /
+                                                                                                  1-12   1    2   3   4    5   6     7     8       9   10 11 12
+                                                                         /
+                                                                                                  1-12   1    2   3   4    5   6     7     8       9   10 11 12
+                                                                         /
+                                                                                                  1-12   1    2   3   4    5   6     7     8       9   10 11 12
+                                                                         /
+31a          Údaje o ďalších vyživovaných deťoch uvádzam v IX. oddiele v členení podľa r. 31
+Údaje druhej oprávnenej osoby vyživujúcej dieťa (deti) v domácnosti uvedené na r. 31
+      Uplatňujem postup podľa § 33 ods. 8 zákona
+32 - Priezvisko a meno
+                           7a)
+                                               Rodné číslo                                        Mesiace, na začiatku ktorých druhá oprávnená osoba splnila
+                                                                                                  podmienky na uplatnenie daňového bonusu podľa zákona
+                                                                                                  1-12  1 2 3 4 5 6 7 8 9 10 11 12
+                                                                         /
+                                                                                                                               7b)
+      Oznamujem, že druhá oprávnená osoba uvedená na r. 32 podala daňové priznanie na území Slovenskej republiky
+Druhá oprávnená osoba uvedená na r. 32 na území Slovenskej republiky nepodala daňové priznanie, preto k daňovému priznaniu prikladám:
+      kópiu dokladu o vykonanom ročnom zúčtovaní preddavkov na daň z príjmov zo závislej činnosti podľa zákona (ďalej len „ročné zúčtovanie“)
+                              7c)
+      druhej oprávnenej osoby
+      kópiu dokladu preukazujúceho výšku základu dane z príjmov podľa § 5 zákona druhej oprávnenej osoby, ktorej ročné zúčtovanie nebolo
+                                                          7c)
+      vykonané, a nemala povinnosť podať daňové priznanie
+Základ dane (čiastkový základ dane) z príjmov zo závislej činnosti alebo z príjmov
+                                                                                                          32a
+z podnikania alebo z inej samostatnej zárobkovej činnosti alebo ich úhrn druhej
+oprávnenej osoby z r. 32, pre uplatnenie daňového bonusu podľa zákona
+                                                                         7d)                                                                           ,
+5) Vypĺňa sa, len ak si daňovník uplatňuje nezdaniteľnú časť základu dane na manželku (manžela) podľa § 11 ods. 3 zákona.
+6) Uvádzajú sa vlastné príjmy manželky (manžela) za celé zdaňovacie obdobie, za ktoré sa podáva daňové priznanie, t. j. príjmy znížené o zaplatené poistné a
+   príspevky, ktoré manželka (manžel) v tomto zdaňovacom období bola (bol) povinná (povinný) zaplatiť z týchto príjmov a v stĺpci počet mesiacov sa uvádza počet
+   kalendárnych mesiacov v zdaňovacom období (kalendárnom roku), počas ktorých manželka (manžel) splnila podmienky uvedené v § 11 ods. 4 zákona, pričom
+   do počtu mesiacov sa započítava každý kalendárny mesiac, na začiatku ktorého boli splnené ustanovené podmienky. Ak sú súčasne splnené dve a viac
+   podmienok v tom istom kalendárnom mesiaci, do počtu mesiacov sa započíta takýto mesiac len jedenkrát.
+7) Uvádzajú sa údaje o vyživovanom dieťati (deťoch), na ktoré za rovnaké obdobie kalendárneho roka neuplatnil iný daňovník nárok na daňový bonus podľa zákona.
+   Prílohou daňového priznania sú aj doklady preukazujúce nárok na daňový bonus podľa zákona (§ 32 ods. 10 zákona). To neplatí, ak už boli predložené správcovi
+   dane a nedošlo k zmene údajov v nich uvedených. Ak daňovník v zdaňovacom období, za ktoré podáva daňové priznanie, takéto doklady predložil svojmu
+   zamestnávateľovi a neuplatňuje si daňový bonus podľa zákona ani jeho pomernú časť podaním daňového priznania, uvedené doklady nie sú prílohou daňového
+   priznania.
+7a) Prílohou daňového priznania je aj doklad preukazujúci oprávnenosť nároku na priznanie daňového bonusu podľa zákona druhou oprávnenou osobou, okrem
+   rodného listu dieťaťa, ktorý bol vydaný na území SR.
+7b) Daňovník zaškrtne políčko v prípade, ak druhá oprávnená osoba podala daňové priznanie, v ktorom vykázala základ dane na účely výpočtu daňového bonusu
+   podľa zákona, a to bez ohľadu na skutočnosť, či mala povinnosť podať daňové priznanie podľa § 32 zákona alebo nie, okrem prípadov uvedených v odkaze 7c.
+
+
+      MF/012185/2025-721                                                                                                                           Strana 2
+         DPFOAv25_3
+                                         DIČ (Rodné číslo)
+
+7c) Ak daňovník uplatňuje postup podľa § 33 ods. 8 zákona, t.j. navyšuje svoj základ dane o základ dane druhej oprávnenej osoby, môže tak v čase podania
+  daňového priznania spraviť len v prípade, ak môže preukázať základ dane druhej oprávnenej osoby pre účely uplatnenia daňového bonusu, v súlade s citovaným
+  znením zákona. Uvedené znamená, že ak druhá oprávnená osoba nepodala daňové priznanie na území Slovenskej republiky, potom daňovník k daňovému
+  priznaniu priloží kópiu dokladu o ročnom zúčtovaní alebo kópiu dokladu preukazujúceho výšku základu dane z príjmov zo závislej činnosti podľa § 5 zákona druhej
+  oprávnenej osoby, ktorej ročné zúčtovanie nebolo vykonané a nemala povinnosť podať daňové priznanie.
+7d) Vypĺňa sa na základe dokladov uvedených v odkaze 7b alebo 7c preukazujúcich výšku základu dane druhej oprávnenej osoby, pričom doklady uvedené
+  v odkaze 7c sú prílohou daňového priznania.
+
+IV. ODDIEL - ÚDAJE NA UPLATNENIE DAŇOVÉHO BONUSU NA ZAPLATENÉ ÚROKY (§ 33a zákona)
+             uplatňujem daňový bonus                                Zaplatené úroky za zdaňovacie                                             Počet
+33
+             na zaplatené úroky podľa § 33a zákona
+                                                   8)
+                                                                    obdobie (v eurách)                                          ,             mesiacov
+                                                                                         Dátum uzavretia
+Dátum začatia úročenia úveru                     .              .                        zmluvy o úvere na bývanie                    .          .
+8) R. 33 sa vypĺňa, ak si daňovník uplatňuje nárok na daňové zvýhodnenie na zaplatené úroky pri úveroch na bývanie podľa § 33a zákona (ďalej len „daňový bonus
+   na zaplatené úroky podľa § 33a zákona“). Suma zaplatených úrokov za zdaňovacie obdobie, dátum uzavretia zmluvy o úvere a dátum začatia úročenia úveru sa
+   uvádza podľa potvrdenia vydaného veriteľom podľa § 26a zákona č. 90/2016 Z. z. o úveroch na bývanie a o zmene a doplnení niektorých zákonov v znení
+   neskorších predpisov, kópia potvrdenia je prílohou daňového priznania. V stĺpci počet mesiacov sa uvádza počet kalendárnych mesiacov v zdaňovacom období
+   (kalendárnom roku), v ktorých má daňovník nárok na uplatnenie daňového bonusu na zaplatené úroky podľa § 33a zákona.
+
+V. ODDIEL - VÝPOČET ZÁKLADU DANE Z PRÍJMOV ZO ZÁVISLEJ ČINNOSTI (§ 5 zákona) - v eurách
+                                                                            34
+Úhrn príjmov od všetkých zamestnávateľov
+                                                      9)
+                                                                                                                         ,
+z toho
+         úhrn príjmov plynúcich na základe dohôd o prácach                  35
+         vykonávaných mimo pracovného pomeru                                                                             ,
+                                                                            36
+Úhrn povinného poistného (§ 5 ods. 8 zákona)
+                                                           9)
+                                                                                                                         ,
+                                                                            37
+         úhrn poistného na sociálne poistenie (zabezpečenie)                                                             ,
+z toho
+                                                                            38
+         úhrn poistného na zdravotné poistenie                                                                           ,
+                                                                            39
+Základ dane podľa § 5 ods. 8 zákona (r. 34 - r. 36)                                                                      ,
+9) Vypĺňa sa na základe všetkých potvrdení (dokladov) o príjmoch zo závislej činnosti plynúcich zo zdrojov na území Slovenskej republiky a zo zdrojov v zahraničí a
+   o zaplatenom povinnom poistnom preukazujúcich uvádzané skutočnosti vrátane dostatočnej identifikácie daňovníka. Údaje o príjmoch zo zdrojov v zahraničí sa
+   uvádzajú v IX. oddiele. Súčasťou príjmov v r. 34 sú aj príjmy podľa § 5 ods. 7 zákona, pri ktorých nie sú v príslušnom zdaňovacom období splnené podmienky pre ich
+   oslobodenie od dane. Kópie potvrdení (dokladov) sú prílohami daňového priznania.
+
+VI. ODDIEL - VÝPOČET DANE podľa § 15 zákona - v eurách
+Zníženie ods. 2 - na daňovníka                                              40
+základu                                                                                                                ,
+dane
+                                                                            41
+podľa
+§ 11
+         ods. 3 - na manželku (manžela)                                                                                ,
+zákona   ods. 8 - na preukázateľne zaplatené príspevky
+         na celoeurópsky osobný dôchodkový produkt a                        42
+         príspevky na doplnkové dôchodkové sporenie                                                                    ,
+         maximálne v úhrnnej výške 180 eur
+               Spolu (r. 40 + r. 41 + r. 42)                                43
+               maximálne do výšky základu dane v r. 39                                                                 ,
+Základ dane z r. 39 znížený o sumu z r. 43 a zvýšený o sumu
+                                                            44
+príspevkov, o ktorú sa zvyšuje základ dane
+podľa § 11 ods. 11 a § 52zza ods. 2 zákona
+                                                                                                                       ,
+                                                                            45
+Daň podľa § 15 zákona zo základu dane z r. 44                                                                          ,
+                                                                            46
+Zamestnanecká prémia                                                                                                   ,
+Suma zamestnaneckej prémie nesprávne vyplatenej                             47
+zamestnávateľom alebo správcom dane                                                                                    ,
+Výpočet dane              Úhrn vyňatých príjmov (základov dane) 48
+po vyňatí príjmov                                                                                                      ,
+zo zdrojov                Základ dane znížený o úhrn vyňatých
+v zahraničí               príjmov (základov dane) (r. 44 - r. 48) 49
+                          (ak je rozdiel r. 44 a r. 48 záporný, uvádza                                                 ,
+                          sa v r. 49 nula)
+Daň podľa § 15 zákona po vyňatí príjmov zo zdrojov                          50
+v zahraničí zo základu dane z r. 49                                                                                    ,
+          MF/012185/2025-721                                                                                                                         Strana 3
+     DPFOAv25_4
+                                              DIČ (Rodné číslo)
+
+Výpočet dane       Úhrn príjmov (základov dane)                51
+uznanej na zápočet zo zdrojov v zahraničí                                                                               ,
+na tuzemskú
+daňovú povinnosť Daň zaplatená v zahraničí                     52
+                                                                                                                        ,
+zo zaplatenej dane z príjmov z r. 51
+v zahraničí        Výpočet percenta dane na účely zápočtu 53
+                   r. 51 : [(r. 39 - r. 48) alebo r. 39] x 100                                                          ,
+                            Z dane zaplatenej v zahraničí možno            54
+                            započítať [(r. 50 alebo r. 45) x r. 53) : 100]                                              ,
+                            Daň uznaná na zápočet                                   55
+                            (r. 54 maximálne do sumy v r. 52)                                                           ,
+Daň (daňová povinnosť)                                                              56
+(r. 45 alebo r. 50 alebo r. 45 - r. 55 alebo r. 50 - r. 55)
+                                                            10)                                                         ,
+Navýšený základ dane na účely výpočtu daňového bonusu
+                                                                                    56a
+podľa zákona (r. 32a / 12 × počet zaškrtnutých mesiacov
+                 10a)
+                                                                                                                        ,
+v r. 32 + r. 39)
+Nárok na daňový bonus podľa zákona (na jedno dieťa                                  57
+alebo úhrn na viac vyživovaných detí)
+                                      11)                                                                               ,
+Daň (daňová povinnosť) znížená o daňový bonus                                       58
+podľa zákona (r. 56 - r. 57)
+                             12)                                                                                        ,
+Suma daňového bonusu podľa zákona priznaného a                                      59
+vyplateného zamestnávateľom                                                                                             ,
+                                                                                    60
+Rozdiel r. 57 - r. 59 > 0                                                                                               ,
+Suma daňového bonusu podľa zákona na poukázanie                                     61
+správcom dane
+              13)
+                  r. 60 - r. 56 > 0                                                                                     ,
+Suma daňového bonusu podľa zákona vyplatená zamestná- 62
+vateľom nesprávne alebo vo vyššej sume r. 59 - r. 57 > 0                                                                ,
+Nárok na daňový bonus na zaplatené úroky
+podľa § 33a zákona
+                   14)                              63
+                                                                                                                        ,
+Daň (daňová povinnosť) znížená o daňový bonus podľa
+                                                    64
+zákona a o daňový bonus na zaplatené úroky
+podľa § 33a zákona (r. 58 - r. 63)
+                                   15)                                                                                  ,
+Suma daňového bonusu na zaplatené úroky podľa § 33a
+zákona priznaného a vyplateného zamestnávateľom
+                                                16)
+                                                    65
+                                                                                                                        ,
+Rozdiel r. 63 - r. 65 > 0                                                           66
+                                                                                                                        ,
+Suma daňového bonusu na zaplatené úroky podľa § 33a
+zákona na poukázanie správcom dane
+                                   17)
+                                       r. 66 - r. 58 > 0
+                                                                                    67
+                                                                                                                        ,
+Úhrn                                                  68
+preddavkov
+           zaplatených podľa § 34 zákona                                                                                ,
+na daň                                 18)
+           zrazených podľa § 35 zákona (neuvádzajú sa 69
+           preddavky podľa § 35 ods. 10 a 11 zákona)                                                                    ,
+                                                                                    70
+                 zaplatených podľa § 35 ods. 10 a 11 zákona                                                             ,
+Daň na úhradu vrátane zamestnávateľom nesprávne vyplatených 71
+daňových bonusov alebo zamestnaneckej prémie
++ r. 59 + r. 61 - r. 63 + r. 65 + r. 67 - r. 68 - r. 69 - r. 70 + r. 47 (+)
+                                                                             r. 56 - r. 57
+                                                                            19)            +                            ,
+Daňový preplatok znížený o zamestnávateľom nesprávne                                72
+vyplatené daňové bonusy alebo zamestnaneckú prémiu r. 56 - r. 57
++ r. 59 + r. 61 - r. 63 + r. 65 + r. 67 - r. 68 - r. 69 - r. 70 + r. 47 (-)
+                                                                                          -                             ,
+10) Ak daňovník neuplatňuje nárok na daňový bonus podľa zákona alebo daňový bonus na zaplatené úroky podľa § 33a zákona a suma v r. 56 nepresiahne 17 eur alebo
+    ak daňovník neuplatňuje nárok na daňový bonus podľa zákona alebo daňový bonus na zaplatené úroky podľa § 33a zákona a jeho celkové zdaniteľné príjmy
+    nepresiahnu 50 % sumy podľa § 11 ods. 2 písm. a) zákona alebo ide o daňovníka uvedeného v § 11 ods. 6 zákona, ktorý uplatňuje postup podľa § 46a zákona, v r. 56
+    sa uvádza nula.
+10a) Vypĺňa sa, len ak daňovník postupuje podľa § 33 ods. 8 zákona.
+11) Ak sa uplatňuje daňový bonus podľa zákona, uvádza sa suma daňového bonusu na jedno dieťa alebo úhrn súm na viac detí (podľa údajov uvedených v III. a IX.
+    oddiele).
+12) Ak je suma v r. 57 vyššia ako suma v r. 56, uvádza sa nula.
+13) Ak je v r. 61 suma daňového bonusu podľa zákona na vyplatenie správcom dane alebo v r. 78 dodatočného daňového priznania kladné číslo, vypĺňa sa žiadosť o jej
+    vyplatenie v XI. oddiele.
+14) Ak daňovník uplatňuje daňový bonus na zaplatené úroky a zmluvu o úvere na bývanie uzavrel najneskôr do 31.12.2023, daňovým bonusom na zaplatené úroky je
+    suma vo výške 50% zo zaplatených úrokov v príslušnom zdaňovacom období, najviac však do výšky 400 eur za rok. Ak daňovník uplatňuje daňový bonus
+    na zaplatené úroky a zmluvu o úvere na bývanie uzavrel najskôr po 31. 12. 2023, daňovým bonusom na zaplatené úroky je suma vo výške 50% zo zaplatených
+    úrokov v príslušnom zdaňovacom období, najviac však do výšky 1 200 eur za rok. Ak obdobie úročenia úveru na bývanie, počas ktorého má daňovník nárok na tento
+    daňový bonus, začalo alebo skončilo v priebehu zdaňovacieho obdobia, uvádza sa v r. 63 suma zodpovedajúca pomernej časti daňového bonusu na zaplatené úroky
+    podľa § 33a zákona z maximálnej sumy určenej zákonom pripadajúca na počet kalendárnych mesiacov, v ktorých vznikol nárok na jeho uplatnenie.
+
+      MF/012185/2025-721                                                                                                                          Strana 4
+        DPFOAv25_5
+                                            DIČ (Rodné číslo)
+
+15) Ak je suma v r. 63 vyššia ako suma v r. 58, uvádza sa nula.
+16) Vypĺňa sa, ak bolo podané daňové priznanie po vykonaní ročného zúčtovania.
+17) Ak je v r. 67 suma daňového bonusu na zaplatené úroky podľa § 33a zákona na vyplatenie správcom dane alebo v r. 82 dodatočného daňového priznania kladné
+    číslo, vypĺňa sa žiadosť o jej vyplatenie v XI. oddiele.
+18) Preddavok (preddavky) z potvrdení (dokladov) o zdaniteľných príjmoch zo závislej činnosti, ktoré sú prílohami daňového priznania. V r. 69 sa neuvádzajú
+     preddavky zrazené podľa daňových právnych predpisov platných v zahraničí, a tiež preddavky, ktoré nie sú zrazené v súlade s § 35 zákona.
+19) Daň na úhradu sa neplatí, ak nepresiahne 5 eur, a to aj vtedy, ak daňovník použije postup podľa § 50 alebo § 50aa zákona, pričom v tomto riadku sa uvádza nula.
+
+    VII. ODDIEL - ROZDIELY Z DODATOČNÉHO DAŇOVÉHO PRIZNANIA - v eurách
+                                                                 20)
+    Daň (daňová povinnosť) z r. 56 daňového priznania alebo
+    r. 116 daňového priznania fyzickej osoby typ B20) alebo
+    r. 06 ročného zúčtovania
+                                                                                         73
+                                                                                                                                    ,
+                                                                                         74
+    Zvýšenie (+) alebo zníženie (-) dane (r. 56 - r. 73)                                                                            ,
+    Daň na úhradu alebo daňový preplatok z r. 71 alebo r. 72 daňového
+                                                                                         75
+               20)
+    priznania alebo r. 135 alebo r. 136 daňového priznania fyzickej
+    osoby typ B alebo r. 21 ročného zúčtovania
+                                                                                                                                    ,
+    Daň na úhradu (+) alebo daňový preplatok (-)
+                                                             20)
+    (r. 71 alebo r. 72) - r. 75 + [(r. 82 daňového priznania - 2% alebo
+                       21)
+    3% z r. 64) > 0] alebo (r. 71 alebo r. 72) - r. 75 + [(r. 13 vyhlásenia              76
+    o poukázaní sumy podielu zaplatenej dane - 2 % alebo 3 %                                                                        ,
+                   21)
+    z r. 64) > 0] alebo (r. 71 alebo r. 72) - r. 75 + [(r. 152 daňového
+    priznania fyzickej osoby typ B20) - 2 % alebo 3 % z r. 64) > 0]21)
+    Suma daňového bonusu podľa zákona na poukázanie správcom
+                                                                                         77
+                                          20)
+    dane z r. 61 daňového priznania alebo r. 121 daňového priznania
+                           20)
+    fyzickej osoby typ B alebo r. 12 ročného zúčtovania
+                                                                                                                                    ,
+    Rozdiel súm daňového bonusu podľa zákona na poukázanie                               78
+    správcom dane (+), na vrátenie správcovi dane (-) (r. 61 - r. 77)
+                                                                         13)
+                                                                                                                                    ,
+    Suma daňového bonusu na zaplatené úroky podľa § 33a zákona
+                                                             20)
+    na poukázanie správcom dane z r. 67 daňového priznania                               79
+    alebo r. 127 daňového priznania fyzickej osoby typ B
+                                                         20)                                                                        ,
+    alebo r. 16 ročného zúčtovania preddavkov
+    Rozdiel súm daňového bonusu na zaplatené úroky podľa § 33a
+                                                                                         80
+    zákona na poukázanie správcom dane (+), na vrátenie správcovi
+    dane (-) (r. 67 - r. 79)
+                             17)
+                                                                                                                                    ,
+20) Daňové priznanie podané v lehote na podanie daňového priznania podľa § 49 zákona alebo bezprostredne predchádzajúce dodatočné daňové priznanie, ak
+    daňovník podal ďalšie dodatočné daňové priznanie.
+21) Ak daňovník uplatňoval postup podľa § 50aa zákona, daňový preplatok je potrebné upraviť v súlade s § 50aa ods. 8 zákona.
+
+    VIII. ODDIEL - VYHLÁSENIE o poukázaní podielu zaplatenej dane z príjmov fyzickej osoby podľa § 50 a § 50aa zákona
+81 - ÚDAJE O PRIJÍMATEĽOVI                                      neuplatňujem postup podľa § 50 zákona (vyznačí sa x)
+IČO
+        22)
+                                                                spĺňam podmienky           2 % alebo 3 % 23)
+                                                                na poukázanie 3 %          zo zaplatenej dane       82
+                                                                z dane
+                                                                       23)
+                                                                                           (minimálne 3 eurá)                                           ,
+                                                                (vyznačí sa x)             z r. 64
+Obchodné meno (názov)
+
+
+
+
+         súhlasím so zaslaním údajov (meno, priezvisko a trvalý pobyt) mnou určenému prijímateľovi podielu zaplatenej dane
+         uvedenému v r. 81 podľa § 50 ods. 8 zákona (vyznačí sa x)
+83 - ÚDAJE O RODIČOVI / RODIČOCH                                neuplatňujem postup podľa § 50aa zákona (vyznačí sa x)
+     Rodné číslo                                       Priezvisko                                               Meno
+
+a
+                                /
+b
+                                /
+                                                                                                                                               24)
+         bol som zverený do starostlivosti nahrádzajúcej starostlivosť rodičov na základe rozhodnutia príslušného orgánu                             (vyznačí sa x)
+    22) IČO sa zarovnáva sprava a ak obsahuje menej ako 12 čísiel, nepoužité polia zostávajú prázdne.
+    23) Podiel do výšky 3 % dane podľa § 50 ods. 1 písm. a) zákona môže prijímateľovi poukázať fyzická
+         osoba, ktorá v zdaňovacom období vykonávala dobrovoľnícku činnosť podľa zákona
+         č. 406/2011 Z. z. o dobrovoľníctve a o zmene a doplnení niektorých zákonov v znení neskorších
+         predpisov počas najmenej 40 hodín, pričom písomné potvrdenie o výkone tejto činnosti je
+         prílohou daňového priznania.
+    24) Kópia rozhodnutia príslušného orgánu o zverení do starostlivosti nahrádzajúcej starostlivosť              podpis daňovníka (zástupcu)
+         rodičov je prílohou daňového priznania.                                                                 podpisuje sa len pri uplatňovaní postupu
+                                                                                                                       podľa § 50 a § 50aa zákona
+
+
+         MF/012185/2025-721                                                                                                                          Strana 5
+         DPFOAv25_6
+                                         DIČ (Rodné číslo)
+
+IX. ODDIEL - MIESTO NA OSOBITNÉ ZÁZNAMY DAŇOVNÍKA
+          Uvádzam osobitné záznamy
+Údaje o príjmoch zo závislej činnosti z r. 34 daňovníka s neobmedzenou daňovou povinnosťou plynúcich zo zdrojov v zahraničí, ktoré sú súčasťou
+základu dane, pričom sa uvádza číselný kód štátu podľa vyhlášky Štatistického úradu Slovenskej republiky č. 112/2012 Z. z., ktorou sa vydáva
+Štatistický číselník krajín v znení vyhlášky č. 108/2014 Z. z.
+                                                                                      25)                                       26)
+Kód štátu                           Príjmy                                 Výdavky                          z toho výdavky
+
+                                                   ,                                    ,                                   ,
+                                                   ,                                    ,                                   ,
+                                                   ,                                    ,                                   ,
+25) Výdavky na povinné poistné a príspevky preukázateľne zaplatené v Slovenskej republike a v zahraničí, ktoré je povinný platiť zamestnanec.
+26) Výdavky na povinné poistné a príspevky preukázateľne zaplatené v zahraničí, ktoré je povinný platiť zamestnanec.
+
+
+
+
+           Ak nepostačuje miesto na osobitné záznamy, uvádzajú sa v tomto členení v osobitnej prílohe, ktorá je súčasťou daňového priznania.
+
+X. ODDIEL - ĎALŠIE ÚDAJE O DAŇOVNÍKOVI
+84 - Štát daňovej rezidencie27)
+
+
+
+Úhrn všetkých zdaniteľných príjmov plynúcich zo zdrojov na území                                             85
+Slovenskej republiky a zo zdrojov v zahraničí v eurách
+                                                      28)
+                                                                                                                                                          ,
+z toho
+         úhrn všetkých zdaniteľných príjmov plynúcich zo zdrojov na území                                    85a
+         Slovenskej republiky
+                              28)
+                                                                                                                                                          ,
+27) Vypĺňa sa, ak ide o daňovníka s obmedzenou daňovou povinnosťou.
+28) Vypĺňa sa, ak ide o daňovníka s neobmedzenou daňovou povinnosťou (rezidenta), ktorý uplatňuje postup podľa § 33 ods. 9 zákona a ak ide o daňovníka
+    s obmedzenou daňovou povinnosťou (nerezidenta), ktorý uplatňuje postup podľa § 11 ods. 7, § 33 ods. 9, § 33a ods. 10 a § 46a zákona a ak ide o daňovníka
+    (rezidenta aj nerezidenta), ktorý je druhou oprávnenou osobou pre účely uplatnenia § 33 ods. 8 zákona. V riadku sa uvádzajú aj zdaniteľné príjmy, z ktorých sa daň
+    vyberá zrážkou.
+
+                      86            Uvádza sa počet všetkých príloh, ktoré
+ Počet príloh
+                                    sú súčasťou daňového priznania.
+Vyhlasujem, že všetky údaje uvedené v daňovom priznaní
+sú správne a úplné.
+                       Dátum                        .          .                                           podpis daňovníka (zástupcu)
+
+XI. ODDIEL - ŽIADOSŤ O VYPLATENIE DAŇOVÉHO BONUSU, O VRÁTENIE DAŇOVÉHO
+            PREPLATKU ALEBO VYPLATENIE ZAMESTNANECKEJ PRÉMIE
+          Žiadam o vyplatenie daňového bonusu alebo rozdielu daňového bonusu podľa zákona
+          (r. 61 alebo rozdiel z r. 78, ak je kladný)
+          Žiadam o vyplatenie zamestnaneckej prémie podľa § 32a zákona (z r. 46)
+          Žiadam o vyplatenie daňového bonusu na zaplatené úroky alebo rozdielu daňového bonusu na zaplatené úroky
+          podľa § 33a zákona (r. 67 alebo rozdiel z r. 80, ak je kladný)
+          Žiadam o vrátenie daňového preplatku podľa § 79 zákona č. 563/2009 Z. z. o správe daní (daňový poriadok) a
+          o zmene a doplnení niektorých zákonov v znení neskorších predpisov (z r. 72 alebo rozdiel z r. 76, ak je záporný)
+                   poštovou poukážkou                    na účet         na účet v zahraničí, ktorého nie som majiteľom
+                   (do výšky 15 000 eur vrátane)
+
+  IBAN
+
+U daňovníka, ktorý žiada vyplatenie daňového bonusu podľa zákona, vyplatenie zamestnaneckej prémie, vyplatenie daňového bonusu na zaplatené úroky podľa
+§ 33a zákona alebo vrátenie daňového preplatku na bankový účet vedený v zahraničí (cezhraničný prevod finančných prostriedkov) v inom formáte ako IBAN,
+uvádza sa v IX. oddiele číslo účtu, SWIFT/BIC kód, názov banky, mesto a štát banky alebo pobočky banky daňovníka. Ak daňovník nie je majiteľom bankového účtu,
+uvádza sa v IX. oddiele názov bankového účtu príjemcu.
+
+                                                            podpis daňovníka
+Dátum                  .        .                              (zástupcu)
+
+         MF/012185/2025-721                                                                                                                         Strana 6
+

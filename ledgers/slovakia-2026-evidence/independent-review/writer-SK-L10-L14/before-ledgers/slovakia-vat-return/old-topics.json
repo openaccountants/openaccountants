@@ -1,0 +1,2497 @@
+{
+  "guide_sha256": "09a343035c30983ce93e776f81bbe1469021b3525aaf26e0a907867536f52886",
+  "main_revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "main_bytes": 23484,
+  "main_sha256": "cb21ae475f7bf28d1e02ad30419c41512e100b8a6c5b2b9038bc34af1eb04d80",
+  "earliest_preimage": {
+    "revision": "c9c520db^",
+    "present": true,
+    "bytes": 37813,
+    "sha256": "20fb3aabb198b7ebc98b559691d7cdc6fe1982a2bc00e8c80863b3b22d048c1a",
+    "complete_old_units": 201,
+    "rows": [
+      {
+        "comparator": "c9c520db^",
+        "unit": 1,
+        "old_LF_start": 1,
+        "old_LF_end": 11,
+        "old_text": "---\nname: slovakia-vat-return\ndescription: Use this skill whenever asked to prepare, review, or create a Slovak VAT return (DPH form / DPHv25) for any client. Trigger on phrases like \"prepare VAT return\", \"do the DPH\", \"fill in DPH\", \"create the return\", \"Slovak VAT\", or any request involving Slovakia VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Slovak VAT classification rules, box mappings, deductibility rules, reverse charge treatment, import VAT reverse charge, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any VAT-related work for Slovakia.\njurisdiction: SK\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+        "old_unit_sha256": "f8b51ffecd984497fe41050fde67b450c72838ef5f425614ce99c03e73f7172d",
+        "current_destination": "Current LF1–19 and271",
+        "disposition": "Original metadata/confidence tiers are archived, not evidence of accountant verification. Source-cited draft replaces unsupported validated/deepresearch assertions; all three former confidence populations remain visible in the archived original."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 2,
+        "old_LF_start": 13,
+        "old_LF_end": 13,
+        "old_text": "# Slovakia VAT Return",
+        "old_unit_sha256": "6a35f40a37d1aa203ad3c853a8141d1dbadafa0548e5f4a1cf7507284849c155",
+        "current_destination": "Current LF1–19 and271",
+        "disposition": "Original metadata/confidence tiers are archived, not evidence of accountant verification. Source-cited draft replaces unsupported validated/deepresearch assertions; all three former confidence populations remain visible in the archived original."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 3,
+        "old_LF_start": 15,
+        "old_LF_end": 15,
+        "old_text": "## Skill Metadata",
+        "old_unit_sha256": "b5bc377f0acaba6c1c753f788898f195f811850f7c55fead309084e4ed81c612",
+        "current_destination": "Current LF1–19 and271",
+        "disposition": "Original metadata/confidence tiers are archived, not evidence of accountant verification. Source-cited draft replaces unsupported validated/deepresearch assertions; all three former confidence populations remain visible in the archived original."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 4,
+        "old_LF_start": 17,
+        "old_LF_end": 28,
+        "old_text": "- **Jurisdiction** — Slovakia\n- **Jurisdiction Code** — SK\n- **Primary Legislation** — Zakon c. 222/2004 Z.z. o dani z pridanej hodnoty (VAT Act No. 222/2004 Coll., as amended by Consolidation Act 2025)\n- **Supporting Legislation** — EU VAT Directive 2006/112/EC; Act No. 563/2009 Coll. (Tax Administration Act); Act No. 595/2003 Coll. (Income Tax Act)\n- **Tax Authority** — Financna sprava Slovenskej republiky (Financial Administration of the Slovak Republic)\n- **Filing Portal** — https://www.financnasprava.sk (eDane / eTax portal)\n- **Contributor** — Auto-generated draft -- requires validation\n- **Validated By** — Deep research verification, April 2026\n- **Validation Date** — 2026-04-10\n- **Skill Version** — 1.0\n- **Status** — validated\n- **Confidence Coverage** — Tier 1: box assignment, reverse charge, deductibility blocks, derived calculations. Tier 2: partial exemption coefficient, vehicle use documentation, import VAT reverse charge. Tier 3: complex group structures, non-standard supplies, triangulation, SOPARFI-like structures.",
+        "old_unit_sha256": "88f795c232437cfb031aebc7ad4d689c4e81c3c08d0f340eadff676d94a6190f",
+        "current_destination": "Current LF1–19 and271",
+        "disposition": "Original metadata/confidence tiers are archived, not evidence of accountant verification. Source-cited draft replaces unsupported validated/deepresearch assertions; all three former confidence populations remain visible in the archived original."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 5,
+        "old_LF_start": 30,
+        "old_LF_end": 30,
+        "old_text": "## Confidence Tier Definitions",
+        "old_unit_sha256": "2dfca09c3aea477434bb8726733e7865a42637757c9c341783b471fa5f53be9c",
+        "current_destination": "Current LF1–19 and271",
+        "disposition": "Original metadata/confidence tiers are archived, not evidence of accountant verification. Source-cited draft replaces unsupported validated/deepresearch assertions; all three former confidence populations remain visible in the archived original."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 6,
+        "old_LF_start": 32,
+        "old_LF_end": 32,
+        "old_text": "Every rule in this skill is tagged with a confidence tier:",
+        "old_unit_sha256": "b01704faf94294825de811b99824811c3fe72fb1dfec13fc35dace65e91e51a3",
+        "current_destination": "Current LF1–19 and271",
+        "disposition": "Original metadata/confidence tiers are archived, not evidence of accountant verification. Source-cited draft replaces unsupported validated/deepresearch assertions; all three former confidence populations remain visible in the archived original."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 7,
+        "old_LF_start": 34,
+        "old_LF_end": 36,
+        "old_text": "- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.\n- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified danovy poradca must confirm before filing.\n- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified adviser.",
+        "old_unit_sha256": "0d8f0f388465f612a361dde53dbbdabc922a4621634b685afd68eab1fed2967a",
+        "current_destination": "Current LF1–19 and271",
+        "disposition": "Original metadata/confidence tiers are archived, not evidence of accountant verification. Source-cited draft replaces unsupported validated/deepresearch assertions; all three former confidence populations remain visible in the archived original."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 8,
+        "old_LF_start": 38,
+        "old_LF_end": 38,
+        "old_text": "## Step 0: Client Onboarding Questions",
+        "old_unit_sha256": "a0671a175c9d3271f44fd05048e0d7e1a4003ab3b2fdcbeb80823158a98f7cca",
+        "current_destination": "Current LF224–229;27–32;49;67;167",
+        "disposition": "All9 intake topics: VAT ID, standard/voluntary/group/7/7a/nonpayer status, period, sector/rate, exemption, resale, prior excess, import/AEO, vehicle facts retained. Former4a-voluntary label corrected:4a/bgroup, voluntary4; quarter gate >12months and<100000."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 9,
+        "old_LF_start": 40,
+        "old_LF_end": 40,
+        "old_text": "Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:",
+        "old_unit_sha256": "aad00d5f5e81c7f01cc8e1965e9fa96bc909430d730b11fbf0e92ef9cbab83b3",
+        "current_destination": "Current LF224–229;27–32;49;67;167",
+        "disposition": "All9 intake topics: VAT ID, standard/voluntary/group/7/7a/nonpayer status, period, sector/rate, exemption, resale, prior excess, import/AEO, vehicle facts retained. Former4a-voluntary label corrected:4a/bgroup, voluntary4; quarter gate >12months and<100000."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 10,
+        "old_LF_start": 42,
+        "old_LF_end": 50,
+        "old_text": "1. **Entity name and IC DPH (VAT ID)** [T1] -- SK + 10 digits\n2. **VAT registration type** [T1] -- Standard (Section 4), Voluntary (Section 4a), Group registration (Section 4b), Registered for EU purposes only (Section 7/7a), or non-registered\n3. **Filing frequency** [T1] -- Monthly (default for turnover >= EUR 100,000) or quarterly (turnover < EUR 100,000, after first year of registration)\n4. **Industry/sector** [T2] -- impacts deductibility and rate classification\n5. **Does the business make exempt supplies?** [T2] -- If yes, partial attribution required (koeficient); reviewer must confirm\n6. **Does the business trade goods for resale?** [T1] -- impacts classification\n7. **Excess credit brought forward** [T1] -- from prior period (nadmerny odpocet)\n8. **Does the business use import VAT reverse charge?** [T2] -- new from July 2025 (DPHv25 form)\n9. **Is the client subject to the vehicle restriction (from 2026)?** [T1] -- M1 vehicles, motorcycles",
+        "old_unit_sha256": "1561819017fbe2c619492674cd61e439b137b0fa4479bf50d63452b26bb81a44",
+        "current_destination": "Current LF224–229;27–32;49;67;167",
+        "disposition": "All9 intake topics: VAT ID, standard/voluntary/group/7/7a/nonpayer status, period, sector/rate, exemption, resale, prior excess, import/AEO, vehicle facts retained. Former4a-voluntary label corrected:4a/bgroup, voluntary4; quarter gate >12months and<100000."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 11,
+        "old_LF_start": 52,
+        "old_LF_end": 52,
+        "old_text": "**If any of items 1-3 are unknown, STOP. Do not classify any transactions until confirmed.**",
+        "old_unit_sha256": "9c3832429f1285506440240df8426b1ffb5d5c410d6a8b08eba5598509ce0117",
+        "current_destination": "Current LF224–229;27–32;49;67;167",
+        "disposition": "All9 intake topics: VAT ID, standard/voluntary/group/7/7a/nonpayer status, period, sector/rate, exemption, resale, prior excess, import/AEO, vehicle facts retained. Former4a-voluntary label corrected:4a/bgroup, voluntary4; quarter gate >12months and<100000."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 12,
+        "old_LF_start": 54,
+        "old_LF_end": 54,
+        "old_text": "## Step 1: Transaction Classification Rules",
+        "old_unit_sha256": "a24e40db5b7a6f16ca89f6b3560ebfeab5047e735fa7ca5306d321e54b099bde",
+        "current_destination": "Current LF63–65;79;165–172",
+        "disposition": "Sale/purchase and substantive place/supply classifications retained. Former blanket bankcharge/out-of-scope/foreignVATcharged rules are not universal legal tests; underlying finance exemption and actual place determine treatment, not suppliercountry alone. EU/thirdcountry route in companion registration133–135."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 13,
+        "old_LF_start": 56,
+        "old_LF_end": 56,
+        "old_text": "### 1a. Determine Transaction Type [T1]",
+        "old_unit_sha256": "cefa9fcbdab688051cb9b2153d221bf63f75573b9ed3b8b52091b8918ab76e3b",
+        "current_destination": "Current LF63–65;79;165–172",
+        "disposition": "Sale/purchase and substantive place/supply classifications retained. Former blanket bankcharge/out-of-scope/foreignVATcharged rules are not universal legal tests; underlying finance exemption and actual place determine treatment, not suppliercountry alone. EU/thirdcountry route in companion registration133–135."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 14,
+        "old_LF_start": 58,
+        "old_LF_end": 58,
+        "old_text": "- **Transaction type classification** — Sale (output DPH / dan na vystupe) or Purchase (input DPH / dan na vstupe / odpocitanie dane); Salaries, social contributions (Socialna poistovna, zdravotne poistenie), tax payments, loan repayments, dividends, bank charges = OUT OF SCOPE  _(VAT Act Sec. 2-3 (scope of tax), Sec. 8-10 (supply of goods), Sec. 9 (supply of services))_",
+        "old_unit_sha256": "66ebf9afb1970ac8079fd2d3f80986e31fc5d788e2579db11f57b5aaed698e7c",
+        "current_destination": "Current LF63–65;79;165–172",
+        "disposition": "Sale/purchase and substantive place/supply classifications retained. Former blanket bankcharge/out-of-scope/foreignVATcharged rules are not universal legal tests; underlying finance exemption and actual place determine treatment, not suppliercountry alone. EU/thirdcountry route in companion registration133–135."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 15,
+        "old_LF_start": 60,
+        "old_LF_end": 60,
+        "old_text": "### 1b. Determine Counterparty Location [T1]",
+        "old_unit_sha256": "2b720857691beb1b2278137e968ea532a3d2836f25862cbd4f1608a19a9f295e",
+        "current_destination": "Current LF63–65;79;165–172",
+        "disposition": "Sale/purchase and substantive place/supply classifications retained. Former blanket bankcharge/out-of-scope/foreignVATcharged rules are not universal legal tests; underlying finance exemption and actual place determine treatment, not suppliercountry alone. EU/thirdcountry route in companion registration133–135."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 16,
+        "old_LF_start": 62,
+        "old_LF_end": 62,
+        "old_text": "- **Counterparty location classification** — Slovakia (domestic): supplier/customer country is SK; EU: AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT, RO, SI, ES, SE; Non-EU: everything else. Note: UK is Non-EU post-Brexit. Ukraine is Non-EU. Czech Republic is a separate EU member.",
+        "old_unit_sha256": "a0cfac770c36a6c440963a2e3c04b3d244c3ff364dfd554a0e36f4e551eabbc2",
+        "current_destination": "Current LF63–65;79;165–172",
+        "disposition": "Sale/purchase and substantive place/supply classifications retained. Former blanket bankcharge/out-of-scope/foreignVATcharged rules are not universal legal tests; underlying finance exemption and actual place determine treatment, not suppliercountry alone. EU/thirdcountry route in companion registration133–135."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 17,
+        "old_LF_start": 64,
+        "old_LF_end": 64,
+        "old_text": "### 1c. Determine VAT Rate [T1]",
+        "old_unit_sha256": "6595da73cbe67b6715372aa765b85de9a7998aed8a65c1bd2600b62082827df0",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 18,
+        "old_LF_start": 66,
+        "old_LF_end": 66,
+        "old_text": "**Rates from 1 January 2025 (Consolidation Act amendments)**",
+        "old_unit_sha256": "a878acafd42648ebb7c1501f16f2ffc42c223c652a3705c62aa6738cc0247cd8",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 19,
+        "old_LF_start": 68,
+        "old_LF_end": 68,
+        "old_text": "**Rates from 1 January 2025 (Consolidation Act amendments)**  _(VAT Act Sec. 27)_",
+        "old_unit_sha256": "90713594e4cf66805771114af6a08d81ed6bebf6d986af3349e2453b11a980f2",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 20,
+        "old_LF_start": 70,
+        "old_LF_end": 77,
+        "old_text": "| Rate | Category | Legislation |\n| --- | --- | --- |\n| 23% | Standard rate -- most goods and services | VAT Act Sec. 27(1) |\n| 19% | Reduced rate -- foodstuffs, non-alcoholic beverages, medicines, certain construction/renovation of residential housing, sporting events entrance, accommodation, newspapers | VAT Act Sec. 27(2), Annex 7 |\n| 5% | Super-reduced rate -- basic foodstuffs (bread, butter, milk, meat, fish, fruit, vegetables, eggs), books and periodicals | VAT Act Sec. 27(3), Annex 7a |\n| 0% | Zero-rated -- intra-EU supplies of goods (Sec. 43), exports (Sec. 47) | VAT Act Sec. 43-47 |\n| Exempt with credit | International transport, supplies connected with international trade | VAT Act Sec. 47 |\n| Exempt without credit | Financial services (Sec. 39), insurance (Sec. 37), healthcare (Sec. 29), education (Sec. 31), postal services (Sec. 28), residential rental (Sec. 38(3)), gambling, transfer of going concern | VAT Act Sec. 28-42 |",
+        "old_unit_sha256": "24a9ff7f46ba2afa64947152a89c14429e9a643e32a69e19319154e9573cca1d",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 21,
+        "old_LF_start": 79,
+        "old_LF_end": 79,
+        "old_text": "Pre-2025 rates (for historical periods): Standard 20%, Reduced 10%",
+        "old_unit_sha256": "aee2662afdb8eb7707dfdb4e0f4681dd1eca22aa8bc0120185fe82ca28efe02a",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 22,
+        "old_LF_start": 81,
+        "old_LF_end": 81,
+        "old_text": "### 1d. Determine Expense Category [T1]",
+        "old_unit_sha256": "a0dc24a5be6f27df5809c3a8678eeae2e88c9c7080609aac287176162f4da8a7",
+        "current_destination": "Current LF65;70–76;87;93",
+        "disposition": "Capital/resale/overheads retained; >1700 movable cutoff and5/20year periods with firstuse and transition gates. N1/pre2026 not automaticallyfull deduction."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 23,
+        "old_LF_start": 83,
+        "old_LF_end": 83,
+        "old_text": "- **Expense category classification** — Capital goods: investment property and tangible assets used for business; adjustment applies on change of use. Immovable property: 20-year adjustment period. Movable capital goods: 5-year adjustment period. Resale: goods bought to resell. Overhead/services: everything else.  _(VAT Act Sec. 54-54a (adjustment of deduction for capital goods))_",
+        "old_unit_sha256": "6f941cfd4b554618e1326fd4e90c95adce64f868e7cab2a1ecd532913f7b6fab",
+        "current_destination": "Current LF65;70–76;87;93",
+        "disposition": "Capital/resale/overheads retained; >1700 movable cutoff and5/20year periods with firstuse and transition gates. N1/pre2026 not automaticallyfull deduction."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 24,
+        "old_LF_start": 85,
+        "old_LF_end": 85,
+        "old_text": "## Step 2: VAT Return Form Structure (DPHv25 -- from July 2025) [T1]",
+        "old_unit_sha256": "1888425a638be824f4ebfae7d4885af76cdcd96b8bd9c38f5665a81c281bab71",
+        "current_destination": "Current LF116–132",
+        "disposition": "Entire old output/input/summary box tables replaced by actually prescribed DPHv25 fields and pairings. Old invented01/01a,20domestic23,30output,31input,34coefficient are historical errors, not legalfigures. Each underlying supply/deduction/correction/result topic retained; actual totaloutput17/input18/payable32/excess33/35carry/difference36–37."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 25,
+        "old_LF_start": 87,
+        "old_LF_end": 87,
+        "old_text": "Legislation: VAT Act Sec. 78; form DPHv25 prescribed by Financial Administration.",
+        "old_unit_sha256": "3f4e9288075c3d5dbcce569c6c0c636d8cf9c4785cb45e5179ffa07d7cebfcf1",
+        "current_destination": "Current LF116–132",
+        "disposition": "Entire old output/input/summary box tables replaced by actually prescribed DPHv25 fields and pairings. Old invented01/01a,20domestic23,30output,31input,34coefficient are historical errors, not legalfigures. Each underlying supply/deduction/correction/result topic retained; actual totaloutput17/input18/payable32/excess33/35carry/difference36–37."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 26,
+        "old_LF_start": 89,
+        "old_LF_end": 89,
+        "old_text": "### Output DPH Section",
+        "old_unit_sha256": "ab47bd012c72eb0d19fbddde91dc78b65750ae3f08f8d95908c01917c093459b",
+        "current_destination": "Current LF116–132",
+        "disposition": "Entire old output/input/summary box tables replaced by actually prescribed DPHv25 fields and pairings. Old invented01/01a,20domestic23,30output,31input,34coefficient are historical errors, not legalfigures. Each underlying supply/deduction/correction/result topic retained; actual totaloutput17/input18/payable32/excess33/35carry/difference36–37."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 27,
+        "old_LF_start": 91,
+        "old_LF_end": 91,
+        "old_text": "**Output DPH Section**  _(VAT Act Sec. 78)_",
+        "old_unit_sha256": "628c9b1721a23d13a75a48924fb390dc0badeef135d7dadbacf699210c57bf31",
+        "current_destination": "Current LF116–132",
+        "disposition": "Entire old output/input/summary box tables replaced by actually prescribed DPHv25 fields and pairings. Old invented01/01a,20domestic23,30output,31input,34coefficient are historical errors, not legalfigures. Each underlying supply/deduction/correction/result topic retained; actual totaloutput17/input18/payable32/excess33/35carry/difference36–37."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 28,
+        "old_LF_start": 93,
+        "old_LF_end": 114,
+        "old_text": "| Row | Description | Rate | Notes |\n| --- | --- | --- | --- |\n| 01 | Domestic supplies at 23% -- taxable base | 23% | Standard-rated sales |\n| 01a | Output DPH at 23% | -- | Calculated |\n| 02 | Domestic supplies at 19% -- taxable base | 19% | Food, accommodation, etc. |\n| 02a | Output DPH at 19% | -- | Calculated |\n| 03 | Domestic supplies at 5% -- taxable base | 5% | Basic food, books |\n| 03a | Output DPH at 5% | -- | Calculated |\n| 04 | Intra-Community supply of goods (exempt with credit) | 0% | Report on EC Sales List |\n| 05 | Export of goods outside EU | 0% | Customs documentation |\n| 06 | Exempt supplies without right of deduction | -- | Financial, insurance, healthcare |\n| 07 | Intra-Community acquisition of goods -- taxable base | RC | Self-assessed |\n| 07a | Self-assessed output DPH on IC acquisition | -- | At applicable SK rate |\n| 08 | Services received from EU (reverse charge) -- taxable base | RC | B2B services from EU |\n| 08a | Self-assessed output DPH on EU services | -- | At applicable SK rate |\n| 09 | Services/goods received from non-EU (reverse charge) -- taxable base | RC | B2B from non-EU |\n| 09a | Self-assessed output DPH on non-EU | -- | At applicable SK rate |\n| 10 | Domestic reverse charge supplies received -- taxable base | RC | Construction, waste, etc. |\n| 10a | Self-assessed output DPH on domestic RC | -- | At applicable rate |\n| 11 | Import VAT -- output side (reverse charge, from July 2025) | RC | New DPHv25 feature |\n| 11a | Self-assessed output DPH on imports | -- | At applicable rate |\n| 12 | Self-supply / deemed supply | applicable | Private use, free gifts |",
+        "old_unit_sha256": "81c4ccfe28d00a8019a69a3c4bafbff14f2633d1f72f910beb43c98ac61f712b",
+        "current_destination": "Current LF116–132",
+        "disposition": "Entire old output/input/summary box tables replaced by actually prescribed DPHv25 fields and pairings. Old invented01/01a,20domestic23,30output,31input,34coefficient are historical errors, not legalfigures. Each underlying supply/deduction/correction/result topic retained; actual totaloutput17/input18/payable32/excess33/35carry/difference36–37."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 29,
+        "old_LF_start": 116,
+        "old_LF_end": 116,
+        "old_text": "### Input DPH Section",
+        "old_unit_sha256": "fa10a85945078ffc2f071d96ca30e15222182f2dc88bbafa8add77631a9cacc9",
+        "current_destination": "Current LF116–132",
+        "disposition": "Entire old output/input/summary box tables replaced by actually prescribed DPHv25 fields and pairings. Old invented01/01a,20domestic23,30output,31input,34coefficient are historical errors, not legalfigures. Each underlying supply/deduction/correction/result topic retained; actual totaloutput17/input18/payable32/excess33/35carry/difference36–37."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 30,
+        "old_LF_start": 118,
+        "old_LF_end": 118,
+        "old_text": "**Input DPH Section**  _(VAT Act Sec. 78)_",
+        "old_unit_sha256": "05b17f545582068ea8dcffeb8a1a6adcdf7c9a7364a5b284b6e6e285acadc030",
+        "current_destination": "Current LF116–132",
+        "disposition": "Entire old output/input/summary box tables replaced by actually prescribed DPHv25 fields and pairings. Old invented01/01a,20domestic23,30output,31input,34coefficient are historical errors, not legalfigures. Each underlying supply/deduction/correction/result topic retained; actual totaloutput17/input18/payable32/excess33/35carry/difference36–37."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 31,
+        "old_LF_start": 120,
+        "old_LF_end": 131,
+        "old_text": "| Row | Description | Notes |\n| --- | --- | --- |\n| 20 | Input DPH on domestic purchases at 23% | Standard-rated input |\n| 21 | Input DPH on domestic purchases at 19% | Reduced-rated input |\n| 22 | Input DPH on domestic purchases at 5% | Super-reduced input |\n| 23 | Input DPH on intra-Community acquisitions | Mirrors Row 07a |\n| 23a | Input DPH on imports (reverse charge, from July 2025) | New DPHv25 feature |\n| 24 | Input DPH on services from EU (reverse charge) | Mirrors Row 08a |\n| 25 | Input DPH on services from non-EU (reverse charge) | Mirrors Row 09a |\n| 26 | Input DPH on domestic reverse charge | Mirrors Row 10a |\n| 27 | Adjustments to input DPH | Corrections, pro-rata, capital goods |\n| 28 | Total input DPH deductible | Sum |",
+        "old_unit_sha256": "fa3943c2317fe0a5551783c1f6aa646628d4a6918c615f4487b4661df588e1c7",
+        "current_destination": "Current LF116–132",
+        "disposition": "Entire old output/input/summary box tables replaced by actually prescribed DPHv25 fields and pairings. Old invented01/01a,20domestic23,30output,31input,34coefficient are historical errors, not legalfigures. Each underlying supply/deduction/correction/result topic retained; actual totaloutput17/input18/payable32/excess33/35carry/difference36–37."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 32,
+        "old_LF_start": 133,
+        "old_LF_end": 133,
+        "old_text": "### Summary Section",
+        "old_unit_sha256": "bf06d7b17db51e3398b170bd281b933b9c13453b5a3c2501f2f4bc278cdeb43b",
+        "current_destination": "Current LF116–132",
+        "disposition": "Entire old output/input/summary box tables replaced by actually prescribed DPHv25 fields and pairings. Old invented01/01a,20domestic23,30output,31input,34coefficient are historical errors, not legalfigures. Each underlying supply/deduction/correction/result topic retained; actual totaloutput17/input18/payable32/excess33/35carry/difference36–37."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 33,
+        "old_LF_start": 135,
+        "old_LF_end": 135,
+        "old_text": "**Summary Section**  _(VAT Act Sec. 78)_",
+        "old_unit_sha256": "bd59cba9a77d159ed3c7e3326ecbfbcde66122546be9a635b932debdbde177ce",
+        "current_destination": "Current LF116–132",
+        "disposition": "Entire old output/input/summary box tables replaced by actually prescribed DPHv25 fields and pairings. Old invented01/01a,20domestic23,30output,31input,34coefficient are historical errors, not legalfigures. Each underlying supply/deduction/correction/result topic retained; actual totaloutput17/input18/payable32/excess33/35carry/difference36–37."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 34,
+        "old_LF_start": 137,
+        "old_LF_end": 143,
+        "old_text": "| Row | Description | Notes |\n| --- | --- | --- |\n| 30 | Total output DPH | Sum of all output rows |\n| 31 | Total input DPH | Row 28 |\n| 32 | DPH liability (Row 30 - Row 31) -- if positive | TO PAY |\n| 33 | Excess DPH (Row 31 - Row 30) -- if positive | TO REFUND |\n| 34 | Coefficient of proportional deduction (%) | For mixed businesses |",
+        "old_unit_sha256": "330eeed831848f5e5f85a5618a519b1a5794abdf103e9a834336f6c2e4b50284",
+        "current_destination": "Current LF116–132",
+        "disposition": "Entire old output/input/summary box tables replaced by actually prescribed DPHv25 fields and pairings. Old invented01/01a,20domestic23,30output,31input,34coefficient are historical errors, not legalfigures. Each underlying supply/deduction/correction/result topic retained; actual totaloutput17/input18/payable32/excess33/35carry/difference36–37."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 35,
+        "old_LF_start": 145,
+        "old_LF_end": 145,
+        "old_text": "## Step 3: Transaction Classification Matrix [T1]",
+        "old_unit_sha256": "26ef7b8327ee022a230b9516622a61e8b9c9e2359ef5cf228c29f1c5fc4c0f8b",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 36,
+        "old_LF_start": 147,
+        "old_LF_end": 147,
+        "old_text": "### Purchases -- Domestic (Slovak Supplier)",
+        "old_unit_sha256": "3703bb4dccc7cc746f333ff6b57bf437de730dbe8ccc924f8414cd7c1388c443",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 37,
+        "old_LF_start": 149,
+        "old_LF_end": 149,
+        "old_text": "**Purchases -- Domestic (Slovak Supplier)**",
+        "old_unit_sha256": "ce73367a56d6ad5d408dc96c03b0a85960527f3b2b8d4cee0c778077f1d0ce19",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 38,
+        "old_LF_start": 151,
+        "old_LF_end": 159,
+        "old_text": "| VAT Rate | Category | Input Row | Notes |\n| --- | --- | --- | --- |\n| 23% | Overhead/services | Row 20 | Standard domestic |\n| 19% | Overhead/services | Row 21 | Food, accommodation |\n| 5% | Overhead/services | Row 22 | Basic food, books |\n| 0% | Any | -- | No DPH to claim |\n| Any | Capital goods | Row 20/21/22 | Track for 5/20-year adjustment |\n| Any | Entertainment (blocked) | -- | No deduction (Sec. 49(7)) |\n| Any | Vehicle (50% from 2026) | Row 20 at 50% | M1, L1e, L3e restriction |",
+        "old_unit_sha256": "48c91556dc012de300832b84fb934ea96fdf2abd1524207abf2504d0803e07ec",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 39,
+        "old_LF_start": 161,
+        "old_LF_end": 161,
+        "old_text": "### Purchases -- EU Supplier (Reverse Charge)",
+        "old_unit_sha256": "34c304ed837ae9399086116003019eb57e5080186cab781423a10ec20af04125",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 40,
+        "old_LF_start": 163,
+        "old_LF_end": 163,
+        "old_text": "**Purchases -- EU Supplier (Reverse Charge)**",
+        "old_unit_sha256": "6a827424c867132b91a9fa7138c3ee3957b242b0e93f5ac0e7a4618a4fc54575",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 41,
+        "old_LF_start": 165,
+        "old_LF_end": 170,
+        "old_text": "| Type | Output Row | Input Row | Notes |\n| --- | --- | --- | --- |\n| Physical goods | Row 07/07a | Row 23 | Intra-EU acquisition |\n| Services (B2B) | Row 08/08a | Row 24 | EU service RC |\n| Out-of-scope | -- | -- | NEVER reverse charge |\n| Local consumption abroad | -- | -- | Foreign VAT at source |",
+        "old_unit_sha256": "bc1b23ba3bdd574bce92262eafbdd357548c5f79c79d066812b5a77a7fbcef4b",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 42,
+        "old_LF_start": 172,
+        "old_LF_end": 172,
+        "old_text": "### Purchases -- Non-EU Supplier",
+        "old_unit_sha256": "1fa89d922838b482380aeb11bb5b99f8b28e950daee603e9208fe9b0dc6762cd",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 43,
+        "old_LF_start": 174,
+        "old_LF_end": 174,
+        "old_text": "**Purchases -- Non-EU Supplier**",
+        "old_unit_sha256": "ad49c4ee91f07672902c1890b1f510021804a88cc8f05de24db4aa32e94f1727",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 44,
+        "old_LF_start": 176,
+        "old_LF_end": 181,
+        "old_text": "| Type | Output Row | Input Row | Notes |\n| --- | --- | --- | --- |\n| Services (B2B) | Row 09/09a | Row 25 | Non-EU service import |\n| Physical goods (customs, traditional) | -- | Row 20 | VAT paid at customs border |\n| Physical goods (import RC from July 2025) | Row 11/11a | Row 23a | New self-assessment |\n| Out-of-scope | -- | -- | NEVER reverse charge |",
+        "old_unit_sha256": "17d26c633ba8dd34e0c8a92006979bcd71368361e04e2354f9b167d6031cb547",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 45,
+        "old_LF_start": 183,
+        "old_LF_end": 183,
+        "old_text": "### Sales -- Domestic",
+        "old_unit_sha256": "c6398663e833294239d0f66982d373645c492fd7522a8ba7176800e24495d9bc",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 46,
+        "old_LF_start": 185,
+        "old_LF_end": 185,
+        "old_text": "**Sales -- Domestic**",
+        "old_unit_sha256": "4fa2edadda0903dcc4a6ecd083b99da5a01c2a59c196b7b102f463d2816c4d8e",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 47,
+        "old_LF_start": 187,
+        "old_LF_end": 193,
+        "old_text": "| Rate | Row | Notes |\n| --- | --- | --- |\n| 23% | Row 01/01a | Standard-rated |\n| 19% | Row 02/02a | Food, accommodation, etc. |\n| 5% | Row 03/03a | Basic food, books |\n| Exempt with credit | Row 04/05 | IC supply, exports |\n| Exempt without credit | Row 06 | Financial, insurance, healthcare |",
+        "old_unit_sha256": "71e89a86efae057c33bfe96ea99a9b059e504691018c4ed4ff93178955ecb7f5",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 48,
+        "old_LF_start": 195,
+        "old_LF_end": 195,
+        "old_text": "### Sales -- EU / Non-EU",
+        "old_unit_sha256": "429c4a370ea620b3a3f96018e76a98a3c31daa483be7fc0629909d3c8dfc9df9",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 49,
+        "old_LF_start": 197,
+        "old_LF_end": 197,
+        "old_text": "**Sales -- EU / Non-EU**",
+        "old_unit_sha256": "c068229abac12e9163ee4a813596cd97fb9198557d8853619d23da8cb9b1a69f",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 50,
+        "old_LF_start": 199,
+        "old_LF_end": 203,
+        "old_text": "| Location | Type | Row | Notes |\n| --- | --- | --- | --- |\n| EU B2B goods | Intra-EU supply | Row 04 | Zero-rated, EC Sales List |\n| EU B2B services | Place of supply in customer MS | Reported separately | VIES |\n| Non-EU | Export | Row 05 | Zero-rated, customs docs |",
+        "old_unit_sha256": "952448d36e96fe31c6a5ee5b40308d00d72ddf693f9b5ff66d64ad2ba3917cac",
+        "current_destination": "Current LF63–66;116–132;165–167",
+        "disposition": "All domestic/EU/nonEU purchase and domestic/EU/export sales matrices retained in substantive categories and current formfields. Imports distinguish customs from84aAEO self-assessment. Old boxnumbers and categorical netzero/foreignVAT assumptions not adopted; input entitlement49/51 required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 51,
+        "old_LF_start": 205,
+        "old_LF_end": 205,
+        "old_text": "## Step 4: Reverse Charge Mechanics [T1]",
+        "old_unit_sha256": "1a3ddd7e2410ac4c00ab8acc13e5b7920f02c78467dab033ab0f7a89be411395",
+        "current_destination": "Current LF63–64;120–128;165",
+        "disposition": "Goods acquisitions and EU/nonEU service reversecharge retained. Buyer goods acquisition does not itself go on the buyers ECsaleslist; current80onlyoutgoing prescribedsupplies. Output/input currentactualformfields replace guessedold07a/08a/09a/23/24/25."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 52,
+        "old_LF_start": 207,
+        "old_LF_end": 207,
+        "old_text": "Legislation: VAT Act Sec. 69 (reverse charge); Sec. 11 (intra-EU acquisition).",
+        "old_unit_sha256": "dd847d1f9b9456ae422a87935b06cb587df60ebc8c16a4252b136c375c08365f",
+        "current_destination": "Current LF63–64;120–128;165",
+        "disposition": "Goods acquisitions and EU/nonEU service reversecharge retained. Buyer goods acquisition does not itself go on the buyers ECsaleslist; current80onlyoutgoing prescribedsupplies. Output/input currentactualformfields replace guessedold07a/08a/09a/23/24/25."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 53,
+        "old_LF_start": 209,
+        "old_LF_end": 209,
+        "old_text": "### Intra-EU Acquisitions of Goods (Sec. 11)",
+        "old_unit_sha256": "39c29ff21e47ec8a002aa5e203aeab3a180185695234dd357a6e89faeb55636c",
+        "current_destination": "Current LF63–64;120–128;165",
+        "disposition": "Goods acquisitions and EU/nonEU service reversecharge retained. Buyer goods acquisition does not itself go on the buyers ECsaleslist; current80onlyoutgoing prescribedsupplies. Output/input currentactualformfields replace guessedold07a/08a/09a/23/24/25."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 54,
+        "old_LF_start": 211,
+        "old_LF_end": 211,
+        "old_text": "- **Intra-EU acquisition procedure** — 1. Report taxable base in Row 07 and self-assessed output DPH in Row 07a. 2. Claim input DPH in Row 23. 3. Net effect: zero for fully taxable businesses. 4. Report on EC Sales List.  _(VAT Act Sec. 11)_",
+        "old_unit_sha256": "30693999532867bba16a3540d2c4d192afd3e2547ab0c9af27f0e714c84a7dca",
+        "current_destination": "Current LF63–64;120–128;165",
+        "disposition": "Goods acquisitions and EU/nonEU service reversecharge retained. Buyer goods acquisition does not itself go on the buyers ECsaleslist; current80onlyoutgoing prescribedsupplies. Output/input currentactualformfields replace guessedold07a/08a/09a/23/24/25."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 55,
+        "old_LF_start": 213,
+        "old_LF_end": 213,
+        "old_text": "### EU Services Received -- B2B (Sec. 15(1))",
+        "old_unit_sha256": "69da7969a6673f737d4439c369211959161b4b7b2a9b0588141d3d390ce65d46",
+        "current_destination": "Current LF63–64;120–128;165",
+        "disposition": "Goods acquisitions and EU/nonEU service reversecharge retained. Buyer goods acquisition does not itself go on the buyers ECsaleslist; current80onlyoutgoing prescribedsupplies. Output/input currentactualformfields replace guessedold07a/08a/09a/23/24/25."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 56,
+        "old_LF_start": 215,
+        "old_LF_end": 215,
+        "old_text": "- **EU services received procedure** — 1. Report in Row 08 (base) / Row 08a (output DPH). 2. Claim in Row 24. 3. Net effect: zero.  _(VAT Act Sec. 15(1))_",
+        "old_unit_sha256": "63a180e70742683a4e4b232bb376c3562b16b3df020063ec6c79e431da68697f",
+        "current_destination": "Current LF63–64;120–128;165",
+        "disposition": "Goods acquisitions and EU/nonEU service reversecharge retained. Buyer goods acquisition does not itself go on the buyers ECsaleslist; current80onlyoutgoing prescribedsupplies. Output/input currentactualformfields replace guessedold07a/08a/09a/23/24/25."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 57,
+        "old_LF_start": 217,
+        "old_LF_end": 217,
+        "old_text": "### Non-EU Services Received (Sec. 69(2)-(3))",
+        "old_unit_sha256": "47afe30dc079b819407554134be99919d547720a77f33eef286c196f9b43bfd9",
+        "current_destination": "Current LF63–64;120–128;165",
+        "disposition": "Goods acquisitions and EU/nonEU service reversecharge retained. Buyer goods acquisition does not itself go on the buyers ECsaleslist; current80onlyoutgoing prescribedsupplies. Output/input currentactualformfields replace guessedold07a/08a/09a/23/24/25."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 58,
+        "old_LF_start": 219,
+        "old_LF_end": 219,
+        "old_text": "- **Non-EU services received procedure** — 1. Report in Row 09 (base) / Row 09a (output DPH). 2. Claim in Row 25. 3. Net effect: zero.  _(VAT Act Sec. 69(2)-(3))_",
+        "old_unit_sha256": "0659a5c79d5a85227ea13687a3999a8c49e73f5cf76239549fdfd5c20877e86f",
+        "current_destination": "Current LF63–64;120–128;165",
+        "disposition": "Goods acquisitions and EU/nonEU service reversecharge retained. Buyer goods acquisition does not itself go on the buyers ECsaleslist; current80onlyoutgoing prescribedsupplies. Output/input currentactualformfields replace guessedold07a/08a/09a/23/24/25."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 59,
+        "old_LF_start": 221,
+        "old_LF_end": 221,
+        "old_text": "### Import VAT Reverse Charge (from July 2025) [T2]",
+        "old_unit_sha256": "6a26fb654eec4fea776440b75140a88b1a5a6a25291b5c618bd0d656a58ce00f",
+        "current_destination": "Current LF167;124;128",
+        "disposition": "Import selfassessment retained with actual own84aestablishment/VATnumber/AEO predicates and complete24importbase, not everyregisteredimporter or generic election. Old69(6–8)charging citation/11aoutput box corrected; customsdeclaration retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 60,
+        "old_LF_start": 223,
+        "old_LF_end": 223,
+        "old_text": "**Import VAT Reverse Charge features**  _(VAT Act Sec. 69(6)-(8) (new); DPHv25 form)_",
+        "old_unit_sha256": "3c8690a85fe5c94ddfcf8b886df938fc7610c0cca39c49ca81e582942cf9c8c2",
+        "current_destination": "Current LF167;124;128",
+        "disposition": "Import selfassessment retained with actual own84aestablishment/VATnumber/AEO predicates and complete24importbase, not everyregisteredimporter or generic election. Old69(6–8)charging citation/11aoutput box corrected; customsdeclaration retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 61,
+        "old_LF_start": 225,
+        "old_LF_end": 232,
+        "old_text": "| Feature | Detail |\n| --- | --- |\n| Eligibility | Registered businesses importing goods into Slovakia |\n| How it works | Instead of paying import DPH at customs, self-assess on DPH return |\n| Output side | Row 11 (base) / Row 11a (output DPH at applicable rate) |\n| Input side | Row 23a (input DPH) |\n| Net effect | Zero for fully taxable businesses |\n| Documentation | Must have customs declaration and proper authorization |",
+        "old_unit_sha256": "bb2013a60127f4ee3d3c4220b8cb13b4b90cb8f4b0ebadeb6bbe8a101af54fb8",
+        "current_destination": "Current LF167;124;128",
+        "disposition": "Import selfassessment retained with actual own84aestablishment/VATnumber/AEO predicates and complete24importbase, not everyregisteredimporter or generic election. Old69(6–8)charging citation/11aoutput box corrected; customsdeclaration retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 62,
+        "old_LF_start": 234,
+        "old_LF_end": 234,
+        "old_text": "Flag for reviewer: confirm client is eligible for import reverse charge and has proper customs documentation.",
+        "old_unit_sha256": "652d16ca95dceb801528dd03098976d8dedcd04861f7f46e9427346f6d1f1888",
+        "current_destination": "Current LF167;124;128",
+        "disposition": "Import selfassessment retained with actual own84aestablishment/VATnumber/AEO predicates and complete24importbase, not everyregisteredimporter or generic election. Old69(6–8)charging citation/11aoutput box corrected; customsdeclaration retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 63,
+        "old_LF_start": 236,
+        "old_LF_end": 236,
+        "old_text": "### Domestic Reverse Charge [T1]",
+        "old_unit_sha256": "3fb967450a40edd0747e5ea17e399468304ed38b38110e4dbd6775485d3a39f9",
+        "current_destination": "Current LF64;51;120–124",
+        "disposition": "Every domesticRCcategory retained, exact own69(12)letters and invoicebase>=5000 electronics replace oldwrongletter/>transaction claims. Supplier/customerpayer gates, sectionFconstruction and actualtaxability override blanket country/invoice assumptions."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 64,
+        "old_LF_start": 238,
+        "old_LF_end": 238,
+        "old_text": "**Domestic Reverse Charge supply types**  _(VAT Act Sec. 69(12))_",
+        "old_unit_sha256": "4fcbe3f0450882b705dae66b6eb618da67bdfc43df9b261c0b0086146b8ac84c",
+        "current_destination": "Current LF64;51;120–124",
+        "disposition": "Every domesticRCcategory retained, exact own69(12)letters and invoicebase>=5000 electronics replace oldwrongletter/>transaction claims. Supplier/customerpayer gates, sectionFconstruction and actualtaxability override blanket country/invoice assumptions."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 65,
+        "old_LF_start": 240,
+        "old_LF_end": 247,
+        "old_text": "| Supply Type | Legislation | Threshold |\n| --- | --- | --- |\n| Construction services | Sec. 69(12)(a) | No threshold |\n| Supply of waste and scrap metals | Sec. 69(12)(b) | No threshold |\n| Supply of certain agricultural products | Sec. 69(12)(c) | As specified |\n| Supply of mobile phones and integrated circuits | Sec. 69(12)(d) | > EUR 5,000 per transaction |\n| CO2 emission allowances | Sec. 69(12)(e) | No threshold |\n| Supply of immovable property (when seller opts to tax) | Sec. 69(12)(f) | No threshold |",
+        "old_unit_sha256": "3c8a5b367464d2cee6227cc674427f6b0dab14686729b6f5661d0d7a07ec99c5",
+        "current_destination": "Current LF64;51;120–124",
+        "disposition": "Every domesticRCcategory retained, exact own69(12)letters and invoicebase>=5000 electronics replace oldwrongletter/>transaction claims. Supplier/customerpayer gates, sectionFconstruction and actualtaxability override blanket country/invoice assumptions."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 66,
+        "old_LF_start": 249,
+        "old_LF_end": 249,
+        "old_text": "- **Domestic reverse charge procedure** — 1. Report in Row 10 (base) / Row 10a (output DPH). 2. Claim in Row 26. 3. Net effect: zero.  _(VAT Act Sec. 69(12))_",
+        "old_unit_sha256": "35848d2c4be8b4d84bd12d8d9b14b461bec2cda447140490c216969e2f8b9d71",
+        "current_destination": "Current LF64;51;120–124",
+        "disposition": "Every domesticRCcategory retained, exact own69(12)letters and invoicebase>=5000 electronics replace oldwrongletter/>transaction claims. Supplier/customerpayer gates, sectionFconstruction and actualtaxability override blanket country/invoice assumptions."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 67,
+        "old_LF_start": 251,
+        "old_LF_end": 251,
+        "old_text": "### Exceptions to Reverse Charge [T1]",
+        "old_unit_sha256": "1b040b6ee9bd1c5ab13a58a589f5f1612ab18eadcb00aa2fe9552eaabb59c042",
+        "current_destination": "Current LF64;51;120–124",
+        "disposition": "Every domesticRCcategory retained, exact own69(12)letters and invoicebase>=5000 electronics replace oldwrongletter/>transaction claims. Supplier/customerpayer gates, sectionFconstruction and actualtaxability override blanket country/invoice assumptions."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 68,
+        "old_LF_start": 253,
+        "old_LF_end": 253,
+        "old_text": "- **Exceptions to reverse charge** — Out-of-scope categories: NEVER reverse charge. Local consumption abroad: NOT reverse charge. EU supplier charged local VAT > 0%: NOT reverse charge. Mobile phones/circuits below EUR 5,000: normal DPH applies.",
+        "old_unit_sha256": "602fe2a7ee9075bd6bb9668e660a99d9cdc0e42577cbce9f102efb66ff9ae723",
+        "current_destination": "Current LF64;51;120–124",
+        "disposition": "Every domesticRCcategory retained, exact own69(12)letters and invoicebase>=5000 electronics replace oldwrongletter/>transaction claims. Supplier/customerpayer gates, sectionFconstruction and actualtaxability override blanket country/invoice assumptions."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 69,
+        "old_LF_start": 255,
+        "old_LF_end": 255,
+        "old_text": "## Step 5: Deductibility Check",
+        "old_unit_sha256": "c970bb235588fbe83996d4ae51956c031e6a44b9ea98fb91f909325f0e7ef408",
+        "current_destination": "Current LF65–66;85;93;50",
+        "disposition": "Blockedhospitality/private/exempt, gifts, mixedvehicles/fuel/repairs, exclusivelog/taxi/rental/N1 remain. Gifts not categoricallyblocked; 17persample/specifiedselfsupply. 85nreplaces mistaken49(7)b source; notice actualreturndeadline, not genericadvance; privateuseconsequence retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 70,
+        "old_LF_start": 257,
+        "old_LF_end": 257,
+        "old_text": "### Blocked / Restricted Categories [T1]",
+        "old_unit_sha256": "14c1889e0cc844bafc02b4da6c1f90e550dd8efd194c8c589b9ab709934f89be",
+        "current_destination": "Current LF65–66;85;93;50",
+        "disposition": "Blockedhospitality/private/exempt, gifts, mixedvehicles/fuel/repairs, exclusivelog/taxi/rental/N1 remain. Gifts not categoricallyblocked; 17persample/specifiedselfsupply. 85nreplaces mistaken49(7)b source; notice actualreturndeadline, not genericadvance; privateuseconsequence retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 71,
+        "old_LF_start": 259,
+        "old_LF_end": 259,
+        "old_text": "**Blocked / Restricted Categories**  _(VAT Act Sec. 49(7))_",
+        "old_unit_sha256": "285a999739eb5c15c8d686be490c887924751f471161236241c960315f44e505",
+        "current_destination": "Current LF65–66;85;93;50",
+        "disposition": "Blockedhospitality/private/exempt, gifts, mixedvehicles/fuel/repairs, exclusivelog/taxi/rental/N1 remain. Gifts not categoricallyblocked; 17persample/specifiedselfsupply. 85nreplaces mistaken49(7)b source; notice actualreturndeadline, not genericadvance; privateuseconsequence retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 72,
+        "old_LF_start": 261,
+        "old_LF_end": 270,
+        "old_text": "| Category | DPH Recovery | Legislation | Notes |\n| --- | --- | --- | --- |\n| Hospitality and entertainment (pohostenie a zabava) | 0% | Sec. 49(7)(a) | Always blocked, no exceptions |\n| Business gifts | 0% | Sec. 49(7)(a) | Part of entertainment |\n| Passenger vehicles M1 (from 2026) | 50% | Sec. 49(7)(b) (new) | Unless proven 100% business |\n| Motorcycles L1e/L3e (from 2026) | 50% | Sec. 49(7)(b) (new) | Unless proven 100% business |\n| Fuel for 50%-restricted vehicles | 50% | Sec. 49(7)(b) | Follows vehicle rule |\n| Maintenance/repairs for restricted vehicles | 50% | Sec. 49(7)(b) | Follows vehicle rule |\n| Personal use items | 0% | Sec. 49(2) | No deduction |\n| Supplies for exempt-without-credit activities | 0% | Sec. 49(2) | Financial, insurance inputs |",
+        "old_unit_sha256": "aaa8078fda23eb7fbf970d77bb0ad118aadf88d0d43b41d3a1acafba86fc1e2d",
+        "current_destination": "Current LF65–66;85;93;50",
+        "disposition": "Blockedhospitality/private/exempt, gifts, mixedvehicles/fuel/repairs, exclusivelog/taxi/rental/N1 remain. Gifts not categoricallyblocked; 17persample/specifiedselfsupply. 85nreplaces mistaken49(7)b source; notice actualreturndeadline, not genericadvance; privateuseconsequence retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 73,
+        "old_LF_start": 272,
+        "old_LF_end": 272,
+        "old_text": "### Vehicle Restriction Rules (from 1 January 2026) [T1]",
+        "old_unit_sha256": "3cbd00d44fb521752235e9027b45b4e1a9d8a9e7030a5445b438e0724398ed4b",
+        "current_destination": "Current LF65–66;85;93;50",
+        "disposition": "Blockedhospitality/private/exempt, gifts, mixedvehicles/fuel/repairs, exclusivelog/taxi/rental/N1 remain. Gifts not categoricallyblocked; 17persample/specifiedselfsupply. 85nreplaces mistaken49(7)b source; notice actualreturndeadline, not genericadvance; privateuseconsequence retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 74,
+        "old_LF_start": 274,
+        "old_LF_end": 274,
+        "old_text": "**Vehicle Restriction Rules**  _(VAT Act Sec. 49(7)(b) (Consolidation Act 2025 amendment))_",
+        "old_unit_sha256": "dc332069f38f86bd0fa2a0c9b17a5b8ba97f5e74f00bafb68a513d8f78597d79",
+        "current_destination": "Current LF65–66;85;93;50",
+        "disposition": "Blockedhospitality/private/exempt, gifts, mixedvehicles/fuel/repairs, exclusivelog/taxi/rental/N1 remain. Gifts not categoricallyblocked; 17persample/specifiedselfsupply. 85nreplaces mistaken49(7)b source; notice actualreturndeadline, not genericadvance; privateuseconsequence retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 75,
+        "old_LF_start": 276,
+        "old_LF_end": 285,
+        "old_text": "| Scenario | DPH Deduction | Evidence Required |\n| --- | --- | --- |\n| M1 passenger car, mixed use | 50% | Default assumption |\n| M1 passenger car, exclusively business | 100% | Electronic records + notification to tax authority [T2] |\n| L1e/L3e motorcycle, mixed use | 50% | Default assumption |\n| L1e/L3e motorcycle, exclusively business | 100% | Electronic records + notification to tax authority [T2] |\n| N1 van / N2+ truck | 100% | No restriction (commercial vehicles) |\n| Taxi / car rental vehicle | 100% | Qualifying business activity |\n| Fuel for 50% vehicle | 50% | Follows vehicle classification |\n| Fuel for 100% vehicle | 100% | Follows vehicle classification |",
+        "old_unit_sha256": "d44e8e9f86e707eedcad3138a5f99f8622adbafa1a2d8c38544bf8c078c3e416",
+        "current_destination": "Current LF65–66;85;93;50",
+        "disposition": "Blockedhospitality/private/exempt, gifts, mixedvehicles/fuel/repairs, exclusivelog/taxi/rental/N1 remain. Gifts not categoricallyblocked; 17persample/specifiedselfsupply. 85nreplaces mistaken49(7)b source; notice actualreturndeadline, not genericadvance; privateuseconsequence retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 76,
+        "old_LF_start": 287,
+        "old_LF_end": 287,
+        "old_text": "- **To claim 100% deduction** — Taxpayer must (1) maintain electronic records of vehicle usage, (2) notify the tax authority in advance, and (3) demonstrate exclusive business use. Flag for reviewer.  _(VAT Act Sec. 49(7)(b))_",
+        "old_unit_sha256": "220c87b040d4f962f83276cb8040414149650a89f8ce927b0fe7f73c90276b1d",
+        "current_destination": "Current LF65–66;85;93;50",
+        "disposition": "Blockedhospitality/private/exempt, gifts, mixedvehicles/fuel/repairs, exclusivelog/taxi/rental/N1 remain. Gifts not categoricallyblocked; 17persample/specifiedselfsupply. 85nreplaces mistaken49(7)b source; notice actualreturndeadline, not genericadvance; privateuseconsequence retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 77,
+        "old_LF_start": 289,
+        "old_LF_end": 289,
+        "old_text": "### Registration-Based Recovery [T1]",
+        "old_unit_sha256": "abc929ca63ef42311819a69efccea8ac4ba9f789e343887e522ff586e502f5e9",
+        "current_destination": "Current LF27–32;65;165; companionregistration70–76",
+        "disposition": "All4 registration/recoverypopulations retained. Voluntary4 not4a; registerednumberalone7/7a no inputcredit. Nonregistered liabilities remain; specificpreinput55companionroute retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 78,
+        "old_LF_start": 291,
+        "old_LF_end": 291,
+        "old_text": "**Registration-Based Recovery**",
+        "old_unit_sha256": "158edec37fc3c4bcee3cd22a9289cb2d7933d2f68b784734222589ad151acd0c",
+        "current_destination": "Current LF27–32;65;165; companionregistration70–76",
+        "disposition": "All4 registration/recoverypopulations retained. Voluntary4 not4a; registerednumberalone7/7a no inputcredit. Nonregistered liabilities remain; specificpreinput55companionroute retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 79,
+        "old_LF_start": 293,
+        "old_LF_end": 298,
+        "old_text": "| Registration Type | Input VAT Recovery | Legislation |\n| --- | --- | --- |\n| Section 4 registered (standard) | Full recovery (subject to blocks) | Sec. 49 |\n| Section 4a (voluntary) | Full recovery once registered | Sec. 49 |\n| Section 7/7a (EU purposes only) | NO input VAT recovery | Sec. 7 |\n| Non-registered | NO recovery | -- |",
+        "old_unit_sha256": "592bb701a5dbbb81c6fe54a67782eb2ca4441054613a5081eaea384cb53c890f",
+        "current_destination": "Current LF27–32;65;165; companionregistration70–76",
+        "disposition": "All4 registration/recoverypopulations retained. Voluntary4 not4a; registerednumberalone7/7a no inputcredit. Nonregistered liabilities remain; specificpreinput55companionroute retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 80,
+        "old_LF_start": 300,
+        "old_LF_end": 300,
+        "old_text": "### Partial Exemption -- Coefficient [T2]",
+        "old_unit_sha256": "62c54910a621d1033f167a9a4a60b342ad77f5a7bdcaa8ea0322db4f8d2fa600",
+        "current_destination": "Current LF70–76;250",
+        "disposition": "Coefficient/directattribution/provisional/annualexclusions retained under actual50. Roundup2decimals, not genericwholepercent. Old95%de-minimis is unsupported and explicitly rejected by actualformula; annual0/0 unresolved, no arbitraryfallback. Priorparagraphnumbers corrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 81,
+        "old_LF_start": 302,
+        "old_LF_end": 302,
+        "old_text": "- **Coefficient of proportional deduction** — Coefficient = Taxable Supplies / (Taxable Supplies + Exempt Supplies)  _(VAT Act Sec. 50)_",
+        "old_unit_sha256": "138fd8664e7ecab044095d2f4a7c72d55dc0807d17cd032080ae007de05d2e18",
+        "current_destination": "Current LF70–76;250",
+        "disposition": "Coefficient/directattribution/provisional/annualexclusions retained under actual50. Roundup2decimals, not genericwholepercent. Old95%de-minimis is unsupported and explicitly rejected by actualformula; annual0/0 unresolved, no arbitraryfallback. Priorparagraphnumbers corrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 82,
+        "old_LF_start": 304,
+        "old_LF_end": 304,
+        "old_text": "**Coefficient rules**  _(VAT Act Sec. 50)_",
+        "old_unit_sha256": "a2a3c1da777d24b68687f67157347c81020acdb4411636a25e0beb8f0f880d2b",
+        "current_destination": "Current LF70–76;250",
+        "disposition": "Coefficient/directattribution/provisional/annualexclusions retained under actual50. Roundup2decimals, not genericwholepercent. Old95%de-minimis is unsupported and explicitly rejected by actualformula; annual0/0 unresolved, no arbitraryfallback. Priorparagraphnumbers corrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 83,
+        "old_LF_start": 306,
+        "old_LF_end": 312,
+        "old_text": "| Rule | Detail | Legislation |\n| --- | --- | --- |\n| Rounding | Round UP to nearest whole percent | Sec. 50(4) |\n| De minimis | If >= 95%, treated as 100% | Sec. 50(4) |\n| Provisional | Use prior year coefficient during year | Sec. 50(5) |\n| Annual adjustment | True-up at year-end | Sec. 50(6) |\n| Excluded | Incidental financial/property transactions, sale of capital goods | Sec. 50(3) |",
+        "old_unit_sha256": "b46c671decf89ce2a3de9c67726b176704dde6fccbf446564bda6de704eafdfe",
+        "current_destination": "Current LF70–76;250",
+        "disposition": "Coefficient/directattribution/provisional/annualexclusions retained under actual50. Roundup2decimals, not genericwholepercent. Old95%de-minimis is unsupported and explicitly rejected by actualformula; annual0/0 unresolved, no arbitraryfallback. Priorparagraphnumbers corrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 84,
+        "old_LF_start": 314,
+        "old_LF_end": 314,
+        "old_text": "Flag for reviewer: coefficient must be confirmed by qualified accountant. Annual adjustment applies.",
+        "old_unit_sha256": "f5b8df84fe68b139dacf44d30991bc2e899798c17450eb4c25e91b2681f33629",
+        "current_destination": "Current LF70–76;250",
+        "disposition": "Coefficient/directattribution/provisional/annualexclusions retained under actual50. Roundup2decimals, not genericwholepercent. Old95%de-minimis is unsupported and explicitly rejected by actualformula; annual0/0 unresolved, no arbitraryfallback. Priorparagraphnumbers corrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 85,
+        "old_LF_start": 316,
+        "old_LF_end": 316,
+        "old_text": "## Step 6: Control Statement (Kontrolny vykaz) [T1]",
+        "old_unit_sha256": "cf26e2ca7e1cfc866af268bc6e9fec91a5d66e3d679dc4d7cc1ffdb79132ddaf",
+        "current_destination": "Current LF107–112;134;153",
+        "disposition": "Controlstatement content/filing/section/correction/penalty retained; actualA1/A2/B1/B2/B31/B32/C1/C2/D1/D2. Old5000invoiceaggregation replaced by actual3000simplifieddeductedVATsupplierthreshold, not everyinvoiceaggregation."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 86,
+        "old_LF_start": 318,
+        "old_LF_end": 318,
+        "old_text": "**Control Statement features**  _(VAT Act Sec. 78a)_",
+        "old_unit_sha256": "5c19f9cbacf5b8e157756c14470059bc26bd0fbad549632afce3088fbbf00516",
+        "current_destination": "Current LF107–112;134;153",
+        "disposition": "Controlstatement content/filing/section/correction/penalty retained; actualA1/A2/B1/B2/B31/B32/C1/C2/D1/D2. Old5000invoiceaggregation replaced by actual3000simplifieddeductedVATsupplierthreshold, not everyinvoiceaggregation."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 87,
+        "old_LF_start": 320,
+        "old_LF_end": 328,
+        "old_text": "| Feature | Detail |\n| --- | --- |\n| Filing obligation | Mandatory for all VAT payers alongside DPH return |\n| Filing deadline | Same as VAT return (25th of following month/quarter) |\n| Content | Transaction-level detail for cross-checking with trading partners |\n| Structure | Sections A (supplies made) and B (supplies received) |\n| Threshold for detail | Invoices > EUR 5,000 require individual reporting |\n| Aggregation | Invoices <= EUR 5,000 may be aggregated |\n| Penalty for non-filing | Up to EUR 10,000 |",
+        "old_unit_sha256": "dabce02c69c65a8642b69fc3f1a2b610c6a4e37cd448a0a914f6d08ac3be556e",
+        "current_destination": "Current LF107–112;134;153",
+        "disposition": "Controlstatement content/filing/section/correction/penalty retained; actualA1/A2/B1/B2/B31/B32/C1/C2/D1/D2. Old5000invoiceaggregation replaced by actual3000simplifieddeductedVATsupplierthreshold, not everyinvoiceaggregation."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 88,
+        "old_LF_start": 330,
+        "old_LF_end": 330,
+        "old_text": "## Step 7: Key Thresholds",
+        "old_unit_sha256": "650366ea48cd5dfce3805a0f124680afdfb2e95ee9ac9bdf3cf31a134c41c952",
+        "current_destination": "Current LF47–57;87;224;32;174;companionregistration82–102",
+        "disposition": "All thresholds/status topics mapped:50/62.5kcalendar,100kquarter,5000electronics,5/20capital,SMEown62.5/50/100k. Proposed85000July2026 neverestablished, rejectedascurrentlaw; generic10000distance-salesthreshold belongs EUroutingLF23 and is not a supplied localcalculation. Refundminimum10unsupported replaced by own79 and TaxCode79>5. Group4a/b, voluntary4, fiveworkingdayapplication, conditionaldereg and optional69arepresentative replace oldcategorical claims."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 89,
+        "old_LF_start": 332,
+        "old_LF_end": 332,
+        "old_text": "**Key Thresholds**",
+        "old_unit_sha256": "da14f1aeb1786cef3b75337a4ffcd31f87d3cf9ff9ea27cfe215a0a2bbd61f23",
+        "current_destination": "Current LF47–57;87;224;32;174;companionregistration82–102",
+        "disposition": "All thresholds/status topics mapped:50/62.5kcalendar,100kquarter,5000electronics,5/20capital,SMEown62.5/50/100k. Proposed85000July2026 neverestablished, rejectedascurrentlaw; generic10000distance-salesthreshold belongs EUroutingLF23 and is not a supplied localcalculation. Refundminimum10unsupported replaced by own79 and TaxCode79>5. Group4a/b, voluntary4, fiveworkingdayapplication, conditionaldereg and optional69arepresentative replace oldcategorical claims."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 90,
+        "old_LF_start": 334,
+        "old_LF_end": 345,
+        "old_text": "| Threshold | Value | Legislation |\n| --- | --- | --- |\n| Mandatory VAT registration | EUR 50,000 prior year turnover OR EUR 62,500 current year turnover (from 2025); proposed increase to EUR 85,000 from July 2026 | Sec. 4(1) |\n| Quarterly filing eligibility | Annual turnover < EUR 100,000 (after first year) | Sec. 78(2) |\n| EU distance selling threshold | EUR 10,000/calendar year | EU Directive 2017/2455 |\n| EU SME scheme (from 2025) | EUR 85,000 domestic + EUR 100,000 EU-wide | EU Directive 2020/285 |\n| Domestic RC (electronics) | > EUR 5,000 per transaction | Sec. 69(12)(d) |\n| Vehicle 50% restriction (from 2026) | All M1, L1e, L3e unless proven 100% business | Sec. 49(7)(b) |\n| Control Statement detail | > EUR 5,000 per invoice | Sec. 78a |\n| Capital goods -- movable | 5-year adjustment | Sec. 54 |\n| Capital goods -- immovable | 20-year adjustment | Sec. 54a |\n| Refund minimum | EUR 10 | Sec. 79(2) |",
+        "old_unit_sha256": "30c38232ee4b191ab3711b38dc5fa3169d714fc4a796771db6e1497e27b30b59",
+        "current_destination": "Current LF47–57;87;224;32;174;companionregistration82–102",
+        "disposition": "All thresholds/status topics mapped:50/62.5kcalendar,100kquarter,5000electronics,5/20capital,SMEown62.5/50/100k. Proposed85000July2026 neverestablished, rejectedascurrentlaw; generic10000distance-salesthreshold belongs EUroutingLF23 and is not a supplied localcalculation. Refundminimum10unsupported replaced by own79 and TaxCode79>5. Group4a/b, voluntary4, fiveworkingdayapplication, conditionaldereg and optional69arepresentative replace oldcategorical claims."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 91,
+        "old_LF_start": 347,
+        "old_LF_end": 347,
+        "old_text": "## Step 8: VAT Registration [T1]",
+        "old_unit_sha256": "d17c105b1a886cf31d838a18bdff130d23a605c372f0552b040b46ca5cbd830f",
+        "current_destination": "Current LF47–57;87;224;32;174;companionregistration82–102",
+        "disposition": "All thresholds/status topics mapped:50/62.5kcalendar,100kquarter,5000electronics,5/20capital,SMEown62.5/50/100k. Proposed85000July2026 neverestablished, rejectedascurrentlaw; generic10000distance-salesthreshold belongs EUroutingLF23 and is not a supplied localcalculation. Refundminimum10unsupported replaced by own79 and TaxCode79>5. Group4a/b, voluntary4, fiveworkingdayapplication, conditionaldereg and optional69arepresentative replace oldcategorical claims."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 92,
+        "old_LF_start": 349,
+        "old_LF_end": 349,
+        "old_text": "**VAT Registration**",
+        "old_unit_sha256": "55fc147b7d02b3fe9c01d5ea25d5dad29df29a9a4798bd01e013c3b9576405a0",
+        "current_destination": "Current LF47–57;87;224;32;174;companionregistration82–102",
+        "disposition": "All thresholds/status topics mapped:50/62.5kcalendar,100kquarter,5000electronics,5/20capital,SMEown62.5/50/100k. Proposed85000July2026 neverestablished, rejectedascurrentlaw; generic10000distance-salesthreshold belongs EUroutingLF23 and is not a supplied localcalculation. Refundminimum10unsupported replaced by own79 and TaxCode79>5. Group4a/b, voluntary4, fiveworkingdayapplication, conditionaldereg and optional69arepresentative replace oldcategorical claims."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 93,
+        "old_LF_start": 351,
+        "old_LF_end": 360,
+        "old_text": "| Feature | Detail | Legislation |\n| --- | --- | --- |\n| VAT number format | SK + 10 digits | Sec. 4 |\n| Mandatory registration | Turnover > EUR 50,000 prior calendar year OR > EUR 62,500 in current calendar year (from 2025); proposed increase to EUR 85,000 from July 2026 | Sec. 4(1) |\n| Registration deadline | Immediate if EUR 62,500 exceeded in current year; by 20th of month following calendar year if EUR 50,000 prior-year threshold exceeded | Sec. 4(2) |\n| Voluntary registration | May register below threshold | Sec. 4a |\n| Group registration | Available for related entities | Sec. 4b |\n| Section 7/7a registration | For EU acquisition/service purposes only, no input recovery | Sec. 7 |\n| Deregistration | After 1 year, if no longer obligated | Sec. 81 |\n| Fiscal representative | Required for non-EU businesses | Sec. 69a |",
+        "old_unit_sha256": "f9dee497d7b8ae007b923f064f0f0a532ca4180a5fa6f0e36370fe352578396b",
+        "current_destination": "Current LF47–57;87;224;32;174;companionregistration82–102",
+        "disposition": "All thresholds/status topics mapped:50/62.5kcalendar,100kquarter,5000electronics,5/20capital,SMEown62.5/50/100k. Proposed85000July2026 neverestablished, rejectedascurrentlaw; generic10000distance-salesthreshold belongs EUroutingLF23 and is not a supplied localcalculation. Refundminimum10unsupported replaced by own79 and TaxCode79>5. Group4a/b, voluntary4, fiveworkingdayapplication, conditionaldereg and optional69arepresentative replace oldcategorical claims."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 94,
+        "old_LF_start": 362,
+        "old_LF_end": 362,
+        "old_text": "## Step 9: Filing Deadlines and Penalties",
+        "old_unit_sha256": "c40c8740cb596f136020494ce1ecc377d9cd3c25022e29c2e15a2eaa3488bbc2",
+        "current_destination": "Current LF99–110;140",
+        "disposition": "Allmonthly/quarter/return/KV/ECsales/payment/INTRASTATtiming retained; exactstatus/exception/late-number/weekendandmonthlystatisticsgates supplied."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 95,
+        "old_LF_start": 364,
+        "old_LF_end": 364,
+        "old_text": "### Filing Deadlines [T1]",
+        "old_unit_sha256": "b0e441fbead1975076560e7452ee31a2fc4d2eabee8aa7ee647a1ef835e8fbed",
+        "current_destination": "Current LF99–110;140",
+        "disposition": "Allmonthly/quarter/return/KV/ECsales/payment/INTRASTATtiming retained; exactstatus/exception/late-number/weekendandmonthlystatisticsgates supplied."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 96,
+        "old_LF_start": 366,
+        "old_LF_end": 366,
+        "old_text": "**Filing Deadlines**",
+        "old_unit_sha256": "c18a75a10036e3451f27d129850690333e7fb4b3ff14d62a240d40c29bfad4a8",
+        "current_destination": "Current LF99–110;140",
+        "disposition": "Allmonthly/quarter/return/KV/ECsales/payment/INTRASTATtiming retained; exactstatus/exception/late-number/weekendandmonthlystatisticsgates supplied."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 97,
+        "old_LF_start": 368,
+        "old_LF_end": 375,
+        "old_text": "| Filing | Period | Deadline | Legislation |\n| --- | --- | --- | --- |\n| DPH return (monthly) | Monthly | 25th of following month | Sec. 78(1) |\n| DPH return (quarterly) | Quarterly | 25th of month following quarter end | Sec. 78(2) |\n| Control Statement (Kontrolny vykaz) | Same as VAT return | 25th of following month/quarter | Sec. 78a |\n| EC Sales List (Suhrny vykaz) | Monthly | 25th of following month | Sec. 80 |\n| DPH payment | Same as return | 25th of following month/quarter | Sec. 78 |\n| Intrastat | Monthly | 15th of following month | Statistical Office regulation |",
+        "old_unit_sha256": "eb5be799914e5b41c38836493b4675b10ebbcf4168a0f1be01031a55242bca1d",
+        "current_destination": "Current LF99–110;140",
+        "disposition": "Allmonthly/quarter/return/KV/ECsales/payment/INTRASTATtiming retained; exactstatus/exception/late-number/weekendandmonthlystatisticsgates supplied."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 98,
+        "old_LF_start": 377,
+        "old_LF_end": 377,
+        "old_text": "### Penalties [T1]",
+        "old_unit_sha256": "d3d4c227be010a30fa068f359312a4b22a7bd4904081af00c4edfd6bf00718b1",
+        "current_destination": "Current LF148–161",
+        "disposition": "Alllatefiling/payment/shortfall/KV/EC/registration/repeatfine topics retained with actual2026ranges/dailyECBfloorbranches. Old30–16000/ECB+10/fixed10vs20/doublepenalty not currentlaw; persistentbranch repeatedsameamount, specialKVup10k/100k separatelyreserved."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 99,
+        "old_LF_start": 379,
+        "old_LF_end": 379,
+        "old_text": "**Penalties**",
+        "old_unit_sha256": "7e4533fe2325ef8586ea2d6a3bd96bec52a667dfd1008494169bf933ec1286c4",
+        "current_destination": "Current LF148–161",
+        "disposition": "Alllatefiling/payment/shortfall/KV/EC/registration/repeatfine topics retained with actual2026ranges/dailyECBfloorbranches. Old30–16000/ECB+10/fixed10vs20/doublepenalty not currentlaw; persistentbranch repeatedsameamount, specialKVup10k/100k separatelyreserved."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 100,
+        "old_LF_start": 381,
+        "old_LF_end": 389,
+        "old_text": "| Violation | Penalty | Legislation |\n| --- | --- | --- |\n| Late filing of DPH return | EUR 30 - EUR 16,000 | Tax Administration Act Sec. 155 |\n| Late payment of DPH | Interest at ECB rate + 10% p.a., from day after due date | Tax Administration Act Sec. 156 |\n| Tax shortfall (additional assessment) | 10% of additional tax (if voluntary disclosure) / 20% (if audit) | Tax Administration Act Sec. 154 |\n| Control Statement non-filing | Up to EUR 10,000 | Sec. 78a |\n| EC Sales List non-filing | Up to EUR 10,000 | Sec. 80 |\n| Failure to register | Back-assessment + penalty | Sec. 4 |\n| Repeated non-compliance | Double penalties | Tax Administration Act Sec. 155(3) |",
+        "old_unit_sha256": "f9c512e26c45c9ddc42a3b2f7c78bf35dbafcb66e8eed7ac64f0ac87d748b23e",
+        "current_destination": "Current LF148–161",
+        "disposition": "Alllatefiling/payment/shortfall/KV/EC/registration/repeatfine topics retained with actual2026ranges/dailyECBfloorbranches. Old30–16000/ECB+10/fixed10vs20/doublepenalty not currentlaw; persistentbranch repeatedsameamount, specialKVup10k/100k separatelyreserved."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 101,
+        "old_LF_start": 391,
+        "old_LF_end": 391,
+        "old_text": "## Step 10: Derived Box Calculations [T1]",
+        "old_unit_sha256": "f8bbcf970a6e3ff09db51e78e32e3f945313d48af4399b1f7537d5505402b303",
+        "current_destination": "Current LF126–132",
+        "disposition": "Derived totaloutput/input/payable/excess method retained with actualfields; coefficient not a return34box. Originalforminventedcoordinates archived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 102,
+        "old_LF_start": 393,
+        "old_LF_end": 393,
+        "old_text": "- **Derived box calculations** — Row 30 = Sum of all output DPH rows (01a + 02a + 03a + 07a + 08a + 09a + 10a + 11a + ...) Row 31 = Row 28 = Sum of all input DPH rows (20 + 21 + 22 + 23 + 23a + 24 + 25 + 26 + 27) IF Row 30 > Row 31 THEN Row 32 = Row 30 - Row 31  -- Tax Payable Row 33 = 0 ELSE Row 32 = 0 Row 33 = Row 31 - Row 30  -- Excess Credit (Refund) END",
+        "old_unit_sha256": "7188a636a04a681bd854124a39e1b114619e2408ae6aba9b65a89f07da08ff92",
+        "current_destination": "Current LF126–132",
+        "disposition": "Derived totaloutput/input/payable/excess method retained with actualfields; coefficient not a return34box. Originalforminventedcoordinates archived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 103,
+        "old_LF_start": 395,
+        "old_LF_end": 395,
+        "old_text": "## Step 11: Edge Case Registry",
+        "old_unit_sha256": "b7e15dd469c6af315a2e4a7959d312ba5553fb970e172d4fa4c9cdeabb7fea10",
+        "current_destination": "Current LF63;65;165; companionregistration133–135",
+        "disposition": "Foreignhotel/localconsumption question retained through actualplace/non-Slovakdeduction; old assertion foreignVATalwaysirrecoverable notestablished, not imported. Foreignrefundroute is beyondthisSlovakreturn, not automaticdenial."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 104,
+        "old_LF_start": 397,
+        "old_LF_end": 397,
+        "old_text": "### EC1 -- EU hotel / restaurant / taxi booked abroad [T1]",
+        "old_unit_sha256": "07c645f166e4e6dca49bb1ed1b16be652e0e7d0887fde040d38e1bb06479f123",
+        "current_destination": "Current LF63;65;165; companionregistration133–135",
+        "disposition": "Foreignhotel/localconsumption question retained through actualplace/non-Slovakdeduction; old assertion foreignVATalwaysirrecoverable notestablished, not imported. Foreignrefundroute is beyondthisSlovakreturn, not automaticdenial."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 105,
+        "old_LF_start": 399,
+        "old_LF_end": 401,
+        "old_text": "Situation: Slovak DPH-registered client pays for hotel in Austria. Invoice shows Austrian 13% VAT.\nResolution: NOT reverse charge. Foreign VAT was charged at source. No DPH boxes. Austrian VAT is irrecoverable.\nLegislation: VAT Act Sec. 16 -- place of supply for accommodation is where property is located.",
+        "old_unit_sha256": "6f37206ba713c634783608b0d6534efd4078c1de8f461fbb9e45a42e088ea28e",
+        "current_destination": "Current LF63;65;165; companionregistration133–135",
+        "disposition": "Foreignhotel/localconsumption question retained through actualplace/non-Slovakdeduction; old assertion foreignVATalwaysirrecoverable notestablished, not imported. Foreignrefundroute is beyondthisSlovakreturn, not automaticdenial."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 106,
+        "old_LF_start": 403,
+        "old_LF_end": 403,
+        "old_text": "### EC2 -- SaaS subscription from non-EU provider (AWS, Notion) [T1]",
+        "old_unit_sha256": "97cf8575cd057186b36ef4e926c103fa7be49606ed76c3467780dd2876f2e483",
+        "current_destination": "Current LF63;165;198;124/128",
+        "disposition": "NonEU SaaSRC retained; netzero onlyeligibleinput. OriginalUSD20test recomputed in supplementary controls, old09a/25boxes not adopted."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 107,
+        "old_LF_start": 405,
+        "old_LF_end": 407,
+        "old_text": "Situation: Monthly charge from US company, no VAT on invoice.\nResolution: Reverse charge. Row 09 (base) / Row 09a (output DPH at 23%). Row 25 (input DPH at 23%). Net effect zero.\nLegislation: VAT Act Sec. 15(1) -- place of supply for B2B services is customer's establishment.",
+        "old_unit_sha256": "2f306f151ce89bf27e6f7f1a20d51a0a41fb5e492e6a5b595169a7e65e3208f1",
+        "current_destination": "Current LF63;165;198;124/128",
+        "disposition": "NonEU SaaSRC retained; netzero onlyeligibleinput. OriginalUSD20test recomputed in supplementary controls, old09a/25boxes not adopted."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 108,
+        "old_LF_start": 409,
+        "old_LF_end": 409,
+        "old_text": "### EC3 -- Construction services (domestic reverse charge) [T1]",
+        "old_unit_sha256": "441979f25bbd37511994179baddea4ff326ba9afcbaa5065e9f0e7e41e5a0c2e",
+        "current_destination": "Current LF64;124/128",
+        "disposition": "ConstructionRC retained;30000/6900and15000/3450 suppliedascomputedretainedcasecontrols; old10a/26coordinates corrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 109,
+        "old_LF_start": 411,
+        "old_LF_end": 413,
+        "old_text": "Situation: Slovak construction company provides services to another Slovak VAT-registered business. EUR 30,000.\nResolution: Domestic reverse charge. Supplier invoices without DPH. Recipient: Row 10 = EUR 30,000, Row 10a = EUR 6,900 (23%). Row 26 = EUR 6,900. Net zero.\nLegislation: VAT Act Sec. 69(12)(a).",
+        "old_unit_sha256": "fe6621742108150123325769a97844649cec96967ccdfa9ab02a40a902712e88",
+        "current_destination": "Current LF64;124/128",
+        "disposition": "ConstructionRC retained;30000/6900and15000/3450 suppliedascomputedretainedcasecontrols; old10a/26coordinates corrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 110,
+        "old_LF_start": 415,
+        "old_LF_end": 415,
+        "old_text": "### EC4 -- Passenger vehicle purchase (from 2026, 50% restriction) [T2]",
+        "old_unit_sha256": "da906d2800708740a038b1be750a35cd4c5d699578bedab217f5a2ff7dda6fc1",
+        "current_destination": "Current LF50;66;198;93",
+        "disposition": "25000/5750/2875mixedM1fixture retained; actual85nexception/log/noticeconditions. Fullinputnotsimplybefore2026."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 111,
+        "old_LF_start": 417,
+        "old_LF_end": 419,
+        "old_text": "Situation: Client purchases M1 car EUR 25,000 + DPH EUR 5,750 (23%). Mixed business/private.\nResolution: From 1 January 2026, input DPH limited to 50% = EUR 2,875. Unless taxpayer proves 100% business use with electronic records and tax authority notification. Flag for reviewer.\nLegislation: VAT Act Sec. 49(7)(b).",
+        "old_unit_sha256": "06fa014465b9e37f81c02fbc661f747a1363d3d4d5ce9eedc95dfaeaa55c0aac",
+        "current_destination": "Current LF50;66;198;93",
+        "disposition": "25000/5750/2875mixedM1fixture retained; actual85nexception/log/noticeconditions. Fullinputnotsimplybefore2026."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 112,
+        "old_LF_start": 421,
+        "old_LF_end": 421,
+        "old_text": "### EC5 -- Business dinner / entertainment (blocked) [T1]",
+        "old_unit_sha256": "7fd6b0dff0d23f3163070ca9de5d8105bc2990d971940a3667a4e2ef9e2a739d",
+        "current_destination": "Current LF65;198",
+        "disposition": "Hospitalityblocked retained;300/69/369computedoriginalscenario and500gross scenario retained in supplementarycontrols, nooldrateassumption."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 113,
+        "old_LF_start": 423,
+        "old_LF_end": 425,
+        "old_text": "Situation: Client hosts business dinner at restaurant. EUR 300 + DPH EUR 69 (23%).\nResolution: Input DPH is NOT deductible. 0% recovery on entertainment/hospitality under Sec. 49(7)(a). Full EUR 369 is cost.\nLegislation: VAT Act Sec. 49(7)(a).",
+        "old_unit_sha256": "5861addb0a4bc4818988b0f0cc8c733212c9ded699e4d73ec179c4e4ec82d43c",
+        "current_destination": "Current LF65;198",
+        "disposition": "Hospitalityblocked retained;300/69/369computedoriginalscenario and500gross scenario retained in supplementarycontrols, nooldrateassumption."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 114,
+        "old_LF_start": 427,
+        "old_LF_end": 427,
+        "old_text": "### EC6 -- Import VAT reverse charge (from July 2025) [T2]",
+        "old_unit_sha256": "20fb8975810fd6ba2bbeab53da21318d0b40e3d258ab80b4e159c570f6d1c426",
+        "current_destination": "Current LF167;124;128",
+        "disposition": "Chinaimportroute retained with actual84apredicates, not genericopt-in; correctformoutputbase/tax11b/12b and input23c."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 115,
+        "old_LF_start": 429,
+        "old_LF_end": 431,
+        "old_text": "Situation: Client imports goods from China and opts for import VAT reverse charge on DPHv25 form.\nResolution: Output side in Row 11/11a, input side in Row 23a. Net effect zero. Flag for reviewer: confirm eligibility and customs documentation.\nLegislation: VAT Act Sec. 69(6)-(8).",
+        "old_unit_sha256": "cf65e1025fd13340cfd9766e73a89344a5efae44faf0d92c5355aef058b863ea",
+        "current_destination": "Current LF167;124;128",
+        "disposition": "Chinaimportroute retained with actual84apredicates, not genericopt-in; correctformoutputbase/tax11b/12b and input23c."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 116,
+        "old_LF_start": 433,
+        "old_LF_end": 433,
+        "old_text": "### EC7 -- Credit notes [T1]",
+        "old_unit_sha256": "df67fbabc494865316ea5ceb69fb1019399835b7344e60a2b496dc73c0946054",
+        "current_destination": "Current LF89;128",
+        "disposition": "Creditnotereversal retained with25originalrate/53receiptand30dayconditions; not unconditionalcalendaroffset."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 117,
+        "old_LF_start": 435,
+        "old_LF_end": 437,
+        "old_text": "Situation: Client receives a credit note from supplier.\nResolution: Reverse the original entry. Reduce applicable input DPH row by credit note amount.\nLegislation: VAT Act Sec. 25 (correction of tax base).",
+        "old_unit_sha256": "ad66d761c84bfc774383d8ba218b403bdcf09fbf188cf4b9d1c7c707c5bcdaf8",
+        "current_destination": "Current LF89;128",
+        "disposition": "Creditnotereversal retained with25originalrate/53receiptand30dayconditions; not unconditionalcalendaroffset."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 118,
+        "old_LF_start": 439,
+        "old_LF_end": 439,
+        "old_text": "### EC8 -- EU B2B sale (intra-EU supply) [T1]",
+        "old_unit_sha256": "f81d4d469aab36209f80a52d12d21ed58b0316494b4da44b2197f05839ec3e27",
+        "current_destination": "Current LF166;126;109",
+        "disposition": "CzechgoodsICsupplies/ECsalesretained with43exemptionproof; actual14 subsetof13, not old04."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 119,
+        "old_LF_start": 441,
+        "old_LF_end": 443,
+        "old_text": "Situation: Registered client sells goods to Czech company at 0% DPH.\nResolution: Row 04 (intra-Community supply). No output DPH. Report on EC Sales List (Suhrny vykaz).\nLegislation: VAT Act Sec. 43.",
+        "old_unit_sha256": "34718e1f7174304ec3de5bbe49ce046b49887a8e6278b43d883e75629586e21c",
+        "current_destination": "Current LF166;126;109",
+        "disposition": "CzechgoodsICsupplies/ECsalesretained with43exemptionproof; actual14 subsetof13, not old04."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 120,
+        "old_LF_start": 445,
+        "old_LF_end": 445,
+        "old_text": "### EC9 -- Mobile phones above EUR 5,000 (domestic RC) [T1]",
+        "old_unit_sha256": "a8a16fb46c605be6bcdc07d5a2581c5334591e6ccd156359e18bcb1ab4b5de55",
+        "current_destination": "Current LF51;64;124/128",
+        "disposition": "8000electronicsRC/3000normaltax preservedascomputedcontrols; actualinvoicebase>=5000and69(12)h/i, not wrongold(d)orstrict>5000."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 121,
+        "old_LF_start": 447,
+        "old_LF_end": 449,
+        "old_text": "Situation: Slovak company buys mobile phones worth EUR 8,000 from another Slovak company.\nResolution: Domestic reverse charge applies (above EUR 5,000). Buyer: Row 10/10a (output), Row 26 (input). Net zero.\nLegislation: VAT Act Sec. 69(12)(d).",
+        "old_unit_sha256": "85c42e1d22c6ea1e032347b3f56708f690a88c265da1c60885417033fd63106e",
+        "current_destination": "Current LF51;64;124/128",
+        "disposition": "8000electronicsRC/3000normaltax preservedascomputedcontrols; actualinvoicebase>=5000and69(12)h/i, not wrongold(d)orstrict>5000."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 122,
+        "old_LF_start": 451,
+        "old_LF_end": 451,
+        "old_text": "### EC10 -- Mobile phones below EUR 5,000 (normal DPH) [T1]",
+        "old_unit_sha256": "10e42854120ef45dee99c8b1a0590eede47bd8a63dbe3efc5fc9059785dcc9a9",
+        "current_destination": "Current LF51;64;124/128",
+        "disposition": "8000electronicsRC/3000normaltax preservedascomputedcontrols; actualinvoicebase>=5000and69(12)h/i, not wrongold(d)orstrict>5000."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 123,
+        "old_LF_start": 453,
+        "old_LF_end": 455,
+        "old_text": "Situation: Slovak company buys phones worth EUR 3,000 from another Slovak company.\nResolution: Normal DPH applies. Domestic RC threshold not met. Seller charges DPH at 23%.\nLegislation: VAT Act Sec. 69(12)(d) -- threshold not met.",
+        "old_unit_sha256": "d4d74c3a748fe6d36311d923eebb4cc5e1fe825b6245b3d28f0804d537314d6e",
+        "current_destination": "Current LF51;64;124/128",
+        "disposition": "8000electronicsRC/3000normaltax preservedascomputedcontrols; actualinvoicebase>=5000and69(12)h/i, not wrongold(d)orstrict>5000."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 124,
+        "old_LF_start": 457,
+        "old_LF_end": 457,
+        "old_text": "### EC11 -- Section 7/7a registered entity receives EU services [T1]",
+        "old_unit_sha256": "973de5195cc5f38999e1d5b983d306b096667eeb11407194c59bd026ffe5d687",
+        "current_destination": "Current LF29;165;companionregistration143/145",
+        "disposition": "Existing7foreignserviceRC/noinput retained withoutduplicate7aregistration.500/115computedcontrolretained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 125,
+        "old_LF_start": 459,
+        "old_LF_end": 461,
+        "old_text": "Situation: Entity registered under Section 7 (EU purposes only) receives consulting from German supplier.\nResolution: Must self-assess output DPH (Row 08/08a). But CANNOT claim input DPH (no deduction rights). Must pay the DPH.\nLegislation: VAT Act Sec. 7, Sec. 49(1).",
+        "old_unit_sha256": "56edc5c23b070c8b9732a085a5815f43853e1c290dc0c69b44b91726bd852f07",
+        "current_destination": "Current LF29;165;companionregistration143/145",
+        "disposition": "Existing7foreignserviceRC/noinput retained withoutduplicate7aregistration.500/115computedcontrolretained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 126,
+        "old_LF_start": 463,
+        "old_LF_end": 463,
+        "old_text": "### EC12 -- Intra-EU goods acquisition [T1]",
+        "old_unit_sha256": "ff1811e35b2ce0bcaf64172af3b43ea5928c7898300765413fe52ce805dc7241",
+        "current_destination": "Current LF63;120–128",
+        "disposition": "PolishgoodsacquisitionRC/input retained subject49/51; oldbuyersECsaleslistclaim corrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 127,
+        "old_LF_start": 465,
+        "old_LF_end": 467,
+        "old_text": "Situation: Slovak company buys goods from Polish supplier at 0% with PL VAT number.\nResolution: Row 07 = EUR value, Row 07a = DPH at 23%, Row 23 = same. Net zero. EC Sales List.\nLegislation: VAT Act Sec. 11.",
+        "old_unit_sha256": "04cbba8245c1fb52e56455ccab9153539b795552851e9e8b5665193c6e66130e",
+        "current_destination": "Current LF63;120–128",
+        "disposition": "PolishgoodsacquisitionRC/input retained subject49/51; oldbuyersECsaleslistclaim corrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 128,
+        "old_LF_start": 469,
+        "old_LF_end": 469,
+        "old_text": "### EC13 -- Export of goods [T1]",
+        "old_unit_sha256": "b26ced353717b5afffcced0b16f2029fb33c8210469036cde528413e79d7dd49",
+        "current_destination": "Current LF166;126",
+        "disposition": "USexport10000case retained in sourcebasedmethod and computedcontrols; actual15subset13with47proof, not invented05."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 129,
+        "old_LF_start": 471,
+        "old_LF_end": 473,
+        "old_text": "Situation: Slovak company exports goods to US customer. EUR 10,000.\nResolution: Row 05 = EUR 10,000. No output DPH. Zero-rated. Customs documentation required.\nLegislation: VAT Act Sec. 47.",
+        "old_unit_sha256": "dcf89820abaa0fc766fa699a52ba7f90557e1d6f0c0aef5c164fd90daa5a2734",
+        "current_destination": "Current LF166;126",
+        "disposition": "USexport10000case retained in sourcebasedmethod and computedcontrols; actual15subset13with47proof, not invented05."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 130,
+        "old_LF_start": 475,
+        "old_LF_end": 475,
+        "old_text": "### EC14 -- Immovable property sale (option to tax) [T2]",
+        "old_unit_sha256": "80b6dbad5c4f25d78bbe8e09dc3aa9ef685e339b13177eff3cf401d4eaaad01f",
+        "current_destination": "Current LF91;64",
+        "disposition": "Sixyearofficeexemption/option/RC retained; exactearlieroccupation40%substantialworkreset/residentiallimits andown69payergates supplied, nofictionalbuyeragreementgate."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 131,
+        "old_LF_start": 477,
+        "old_LF_end": 479,
+        "old_text": "Situation: Company sells an office building 6 years after first occupation (default exempt).\nResolution: Seller may opt to tax under Sec. 38(8), in which case domestic reverse charge applies (Sec. 69(12)(f)). Buyer self-assesses. Flag for reviewer: confirm option-to-tax election and buyer's agreement.\nLegislation: VAT Act Sec. 38(8) and Sec. 69(12)(f).",
+        "old_unit_sha256": "3897284ac4900ec2a70454b08e35e7b3ed13c30d3b491a3dcd3e0f147ee35a40",
+        "current_destination": "Current LF91;64",
+        "disposition": "Sixyearofficeexemption/option/RC retained; exactearlieroccupation40%substantialworkreset/residentiallimits andown69payergates supplied, nofictionalbuyeragreementgate."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 132,
+        "old_LF_start": 481,
+        "old_LF_end": 481,
+        "old_text": "### EC15 -- Fuel for unrestricted vehicle (100%) [T1]",
+        "old_unit_sha256": "7b03023c371efb01bdae0ebbb685e993a31c840107ebce5e9833fc0ed6517ea5",
+        "current_destination": "Current LF93;65;128",
+        "disposition": "N1diesel200/46 retainedcomputedcontrol, noautomatic100%; actualexclusiveeligibleuse required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 133,
+        "old_LF_start": 483,
+        "old_LF_end": 485,
+        "old_text": "Situation: Client buys diesel for N1 delivery van. EUR 200 + DPH EUR 46 (23%).\nResolution: Row 20 += EUR 46. Fully deductible (N1 category, no restriction).\nLegislation: VAT Act Sec. 49 -- no restriction on commercial vehicles.",
+        "old_unit_sha256": "82144f0e3ff68f5390ec4b019e23c31c1e4a39ed97f31695f8245fc67f4f8622",
+        "current_destination": "Current LF93;65;128",
+        "disposition": "N1diesel200/46 retainedcomputedcontrol, noautomatic100%; actualexclusiveeligibleuse required."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 134,
+        "old_LF_start": 487,
+        "old_LF_end": 487,
+        "old_text": "### EC16 -- Passenger vehicle before 2026 (full deduction) [T1]",
+        "old_unit_sha256": "329ca7e29e46dd7c553dcbaca4f1d1b92a066164ca88eb39d969ef457a88eae5",
+        "current_destination": "Current LF93;66",
+        "disposition": "December2025M1acquisition distinguishesnew85nacquisitioncutofffrom2026runningcosts; priorfullrecoveryonlyactual49use, not categorically3450."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 135,
+        "old_LF_start": 489,
+        "old_LF_end": 491,
+        "old_text": "Situation: M1 car purchased in December 2025, EUR 15,000 + DPH EUR 3,450.\nResolution: Full deduction: Row 20 += EUR 3,450. The 50% restriction only applies from 1 January 2026. Pre-2026 purchases have full deduction rights.\nLegislation: VAT Act Sec. 49(7)(b) -- effective date 1 January 2026.",
+        "old_unit_sha256": "2ce8985994eefe96c24067f5d50284a696aa861700f6ca584e077d801c55a4f2",
+        "current_destination": "Current LF93;66",
+        "disposition": "December2025M1acquisition distinguishesnew85nacquisitioncutofffrom2026runningcosts; priorfullrecoveryonlyactual49use, not categorically3450."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 136,
+        "old_LF_start": 493,
+        "old_LF_end": 493,
+        "old_text": "## Step 12: VAT Rates -- Detailed Supply Classification [T1]",
+        "old_unit_sha256": "237903464830e75eb21f5bde2d47ea46363f18d69192c5b26a4a8c9677632ff1",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 137,
+        "old_LF_start": 495,
+        "old_LF_end": 495,
+        "old_text": "### 23% Standard Rate (Sec. 27(1))",
+        "old_unit_sha256": "952f6dccfafba8f234ab9dfe2d511e64daad4bcd5cfc0c8885c4a4d346a8b58a",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 138,
+        "old_LF_start": 497,
+        "old_LF_end": 497,
+        "old_text": "**23% Standard Rate examples**",
+        "old_unit_sha256": "2ff00f834e22d876851811756114b3eca49246223598ed7af6965469bac94c9c",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 139,
+        "old_LF_start": 499,
+        "old_LF_end": 507,
+        "old_text": "| Supply Category | Examples |\n| --- | --- |\n| General goods | Electronics, furniture, clothing, motor vehicles, household items |\n| Professional services | Legal, accounting, consulting, IT, advertising |\n| Telecommunications | Mobile, fixed-line, internet |\n| Alcohol | Beer, wine, spirits |\n| Tobacco | Cigarettes, cigars |\n| Construction materials | Cement, steel, timber |\n| Energy | Electricity, gas (non-residential) |",
+        "old_unit_sha256": "5f0132405c5269d0721b04a5a1850852149c2d5e7807512be5889e58989063ba",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 140,
+        "old_LF_start": 509,
+        "old_LF_end": 509,
+        "old_text": "### 19% Reduced Rate (Sec. 27(2), Annex 7)",
+        "old_unit_sha256": "0c879301cf7d10b6582cad9967813e8f237bb515662258b33b0b2f4565709271",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 141,
+        "old_LF_start": 511,
+        "old_LF_end": 511,
+        "old_text": "**19% Reduced Rate examples**",
+        "old_unit_sha256": "32cb47a8c641865d17f5ce4f9c1493f1caf3991837166bd95db0e528deef6df7",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 142,
+        "old_LF_start": 513,
+        "old_LF_end": 521,
+        "old_text": "| Supply Category | Examples |\n| --- | --- |\n| Foodstuffs (general) | Processed foods, confectionery, non-basic items |\n| Non-alcoholic beverages | Soft drinks, juice, coffee, tea |\n| Medicines | Prescription and OTC pharmaceuticals |\n| Accommodation | Hotels, guesthouses, camping |\n| Construction/renovation of residential housing | Certain qualifying residential works |\n| Sporting events | Admission to sports matches, gyms |\n| Newspapers | Daily and weekly newspapers, periodicals |",
+        "old_unit_sha256": "112d8f3d00d7c1e9c480eba6ab958092c8e3e9e664181491431e8e428c66dac3",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 143,
+        "old_LF_start": 523,
+        "old_LF_end": 523,
+        "old_text": "### 5% Super-Reduced Rate (Sec. 27(3), Annex 7a)",
+        "old_unit_sha256": "4e59883ad4886539cea5b2be0a2ba4844e327023861505c19979e52601ff5fe6",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 144,
+        "old_LF_start": 525,
+        "old_LF_end": 525,
+        "old_text": "**5% Super-Reduced Rate examples**",
+        "old_unit_sha256": "d4c19198f4cd6b227b9ce637693f5b92a020fa9d10034c0a010a69bdaa069dfb",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 145,
+        "old_LF_start": 527,
+        "old_LF_end": 531,
+        "old_text": "| Supply Category | Examples |\n| --- | --- |\n| Basic foodstuffs | Bread, butter, milk, meat, fish, fruit, vegetables, eggs |\n| Books | Printed and electronic books |\n| Periodicals | Magazines, journals |",
+        "old_unit_sha256": "c037262996854179ad4238ed9db19d76ca0948c2fec4233426cd65f59b666525",
+        "current_destination": "Current LF38–46;59;81;172",
+        "disposition": "All rate categories retained with own statutory corrections: electricity19; medicines/accommodation/qualifyingmeals/sports/books5; exact food CN/CPA and 2026exclusions. Historical20/10/5 is historical only. Transfergoingconcern is§10 no supply, not blanket28–42 exemption. Old generic allenergy23/allfood19/allbooks5 claims are not revived."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 146,
+        "old_LF_start": 533,
+        "old_LF_end": 533,
+        "old_text": "## Step 13: Comparison with Malta",
+        "old_unit_sha256": "a01cd7eb46890570471b820c04889f62ad6caf2049a572d7cead8e11f10a9532",
+        "current_destination": "Archived E146–E148 complete old comparison in old-topics.json; current LF21–23 and companion PIT/CIT/payroll",
+        "disposition": "Historical Malta comparison retained in exactarchive, not asserted currentMalta law or Slovaklaw. Slovakia-side rates/periods/deadlines/capital/blocks/import/RC/currentauthority explicitlymapped above. Malta amounts/formcounts/annualArt11/nodomesticRC/immovableperiod lack verifiedcurrentprimarybasis here; no reinstatement aslaw."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 147,
+        "old_LF_start": 535,
+        "old_LF_end": 535,
+        "old_text": "**Comparison with Malta**",
+        "old_unit_sha256": "536b019c322a5b3a2dbfe2b82db22bcf270bf245d955aa4931b21a1a0fa48f0f",
+        "current_destination": "Archived E146–E148 complete old comparison in old-topics.json; current LF21–23 and companion PIT/CIT/payroll",
+        "disposition": "Historical Malta comparison retained in exactarchive, not asserted currentMalta law or Slovaklaw. Slovakia-side rates/periods/deadlines/capital/blocks/import/RC/currentauthority explicitlymapped above. Malta amounts/formcounts/annualArt11/nodomesticRC/immovableperiod lack verifiedcurrentprimarybasis here; no reinstatement aslaw."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 148,
+        "old_LF_start": 537,
+        "old_LF_end": 554,
+        "old_text": "| Feature | Slovakia (SK) | Malta (MT) |\n| --- | --- | --- |\n| Standard rate | 23% (from 2025; previously 20%) | 18% |\n| Reduced rates | 19%, 5% (from 2025; previously 10%) | 12%, 7%, 5% |\n| Return form | DPHv25 (~34 rows from July 2025) | Malta periodic VAT return (~45 boxes) |\n| Control Statement | Kontrolny vykaz (mandatory) | No equivalent |\n| Filing frequency | Monthly / Quarterly | Quarterly (Art. 10), Annual (Art. 11) |\n| Filing deadline | 25th of following month | 21st of month after quarter |\n| Payment deadline | 25th | Same as filing |\n| Small enterprise threshold | EUR 49,790 | EUR 35,000 |\n| Capital goods movable | 5-year adjustment | > EUR 1,160 gross |\n| Capital goods immovable | 20-year adjustment | No specific adjustment period |\n| Blocked: entertainment | Yes (fully blocked, Sec. 49(7)(a)) | Yes (10th Schedule) |\n| Blocked: passenger cars | 50% from 2026 (M1/L1e/L3e) | Fully blocked (10th Schedule) |\n| Import VAT reverse charge | Available from July 2025 | Not available |\n| Domestic reverse charge | Construction, waste, electronics > EUR 5K, emissions | No domestic reverse charge |\n| Currency | EUR | EUR |\n| Tax authority | Financna sprava | CFR |",
+        "old_unit_sha256": "f90390d150dfa3023536c3930508df1a7d0ed3eb259b3ef92beec7712bf01dd8",
+        "current_destination": "Archived E146–E148 complete old comparison in old-topics.json; current LF21–23 and companion PIT/CIT/payroll",
+        "disposition": "Historical Malta comparison retained in exactarchive, not asserted currentMalta law or Slovaklaw. Slovakia-side rates/periods/deadlines/capital/blocks/import/RC/currentauthority explicitlymapped above. Malta amounts/formcounts/annualArt11/nodomesticRC/immovableperiod lack verifiedcurrentprimarybasis here; no reinstatement aslaw."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 149,
+        "old_LF_start": 556,
+        "old_LF_end": 556,
+        "old_text": "## Step 14: Reviewer Escalation Protocol",
+        "old_unit_sha256": "8ca2ebe0fd9526780248e3e19d47132674c31daeffcc7bd685592ef4fd704000",
+        "current_destination": "Current LF19;250;269–271",
+        "disposition": "Oldreviewflag/escalationtemplates archived; precise knownlegalquestions andsource-citeddraft/humanfilingreference retained, noinventedaccountantsignoffclaimed."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 150,
+        "old_LF_start": 558,
+        "old_LF_end": 558,
+        "old_text": "When a [T2] situation is identified, output:",
+        "old_unit_sha256": "bb4b9b668a66d0f10638a6199fb6a29375470b5ee8c1253045c2c7a6e09b0d31",
+        "current_destination": "Current LF19;250;269–271",
+        "disposition": "Oldreviewflag/escalationtemplates archived; precise knownlegalquestions andsource-citeddraft/humanfilingreference retained, noinventedaccountantsignoffclaimed."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 151,
+        "old_LF_start": 560,
+        "old_LF_end": 568,
+        "old_text": "```\nREVIEWER FLAG\nTier: T2\nTransaction: [description]\nIssue: [what is ambiguous]\nOptions: [list the possible treatments]\nRecommended: [which treatment is most likely correct and why]\nAction Required: Danovy poradca must confirm before filing.\n```",
+        "old_unit_sha256": "072491c8495ab5ceeeb8060e4f7b04fc0002fc9e6c598f2a1ee1bfd78f389c10",
+        "current_destination": "Current LF19;250;269–271",
+        "disposition": "Oldreviewflag/escalationtemplates archived; precise knownlegalquestions andsource-citeddraft/humanfilingreference retained, noinventedaccountantsignoffclaimed."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 152,
+        "old_LF_start": 570,
+        "old_LF_end": 570,
+        "old_text": "When a [T3] situation is identified, output:",
+        "old_unit_sha256": "5610cec20d02e73057328f24d807b9c6518ec77a7b47e119600ef5ff786b6117",
+        "current_destination": "Current LF19;250;269–271",
+        "disposition": "Oldreviewflag/escalationtemplates archived; precise knownlegalquestions andsource-citeddraft/humanfilingreference retained, noinventedaccountantsignoffclaimed."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 153,
+        "old_LF_start": 572,
+        "old_LF_end": 578,
+        "old_text": "```\nESCALATION REQUIRED\nTier: T3\nTransaction: [description]\nIssue: [what is outside skill scope]\nAction Required: Do not classify. Refer to danovy poradca. Document gap.\n```",
+        "old_unit_sha256": "9d5c7caf276b1a3839c9ffa24c13f1d21c5bfd637a1e080fba0550635b87a66c",
+        "current_destination": "Current LF19;250;269–271",
+        "disposition": "Oldreviewflag/escalationtemplates archived; precise knownlegalquestions andsource-citeddraft/humanfilingreference retained, noinventedaccountantsignoffclaimed."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 154,
+        "old_LF_start": 580,
+        "old_LF_end": 580,
+        "old_text": "## Step 15: Test Suite",
+        "old_unit_sha256": "760698a2dfb124ca06e4a8f754e3632cd73c35f9f45d791b336a11a48ec6669a",
+        "current_destination": "Current LF65;128; supplementarycasecontrols",
+        "disposition": "Original200net/46VAT/246grossdomesticpurchasecontrol retained, actualdeductionconditions andformcorrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 155,
+        "old_LF_start": 582,
+        "old_LF_end": 582,
+        "old_text": "### Test 1 -- Standard domestic purchase, 23% DPH [T1]",
+        "old_unit_sha256": "ccf2d07eaa2c9262b07ab430b61041a191f078b20f9b159edbf689ec14dd424a",
+        "current_destination": "Current LF65;128; supplementarycasecontrols",
+        "disposition": "Original200net/46VAT/246grossdomesticpurchasecontrol retained, actualdeductionconditions andformcorrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 156,
+        "old_LF_start": 584,
+        "old_LF_end": 585,
+        "old_text": "Input: Slovak supplier, office supplies, gross EUR 246, DPH EUR 46, net EUR 200. Registered taxpayer.\nExpected output: Row 20 += EUR 46. Fully recoverable.",
+        "old_unit_sha256": "a298f1e05fc46575099d282361bf524c7f43c19513c5ed566793aebcc8f2945c",
+        "current_destination": "Current LF65;128; supplementarycasecontrols",
+        "disposition": "Original200net/46VAT/246grossdomesticpurchasecontrol retained, actualdeductionconditions andformcorrected."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 157,
+        "old_LF_start": 587,
+        "old_LF_end": 587,
+        "old_text": "### Test 2 -- EU service, reverse charge [T1]",
+        "old_unit_sha256": "df52dc2ae2af6f1b2b374633d967fe3436acc87a3adf29e529c25c496e2b498c",
+        "current_destination": "Current LF63;165; supplementarycasecontrols",
+        "disposition": "Original1000EUservice230RC/inputcontrol retained; actualfields and entitlementgates."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 158,
+        "old_LF_start": 589,
+        "old_LF_end": 590,
+        "old_text": "Input: German supplier, consulting EUR 1,000, no VAT. Registered taxpayer.\nExpected output: Row 08 = EUR 1,000. Row 08a = EUR 230 (23%). Row 24 = EUR 230. Net = zero.",
+        "old_unit_sha256": "3ead1d22c47bad25911c03ba68e4b856551aeb47fdfed5ea06838899daf8472a",
+        "current_destination": "Current LF63;165; supplementarycasecontrols",
+        "disposition": "Original1000EUservice230RC/inputcontrol retained; actualfields and entitlementgates."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 159,
+        "old_LF_start": 592,
+        "old_LF_end": 592,
+        "old_text": "### Test 3 -- Entertainment expense (blocked) [T1]",
+        "old_unit_sha256": "5a772cb0f9e02fbacae60f67931c1c0c321d2875f58f5d357d6f56c9332eda27",
+        "current_destination": "Current LF65; supplementarycasecontrols",
+        "disposition": "Original500grossentertainment input0 retained; incorrectold94VAT/406net is historicalroundingerror, actual23%grosscalculation93.50/406.50."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 160,
+        "old_LF_start": 594,
+        "old_LF_end": 595,
+        "old_text": "Input: Slovak restaurant, business dinner EUR 500 gross, DPH EUR 94 (23%), net EUR 406.\nExpected output: Input DPH = EUR 0. Entertainment fully blocked (Sec. 49(7)(a)). No recovery.",
+        "old_unit_sha256": "f2b40a0401b5bdae06557862cad5f064ae229f25122d4385b06553885889a605",
+        "current_destination": "Current LF65; supplementarycasecontrols",
+        "disposition": "Original500grossentertainment input0 retained; incorrectold94VAT/406net is historicalroundingerror, actual23%grosscalculation93.50/406.50."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 161,
+        "old_LF_start": 597,
+        "old_LF_end": 597,
+        "old_text": "### Test 4 -- EU B2B sale [T1]",
+        "old_unit_sha256": "626ccf07184e32c15e326b50ac1b70c4ea58f5452fae7d0daa6a429e67a5d637",
+        "current_destination": "Current LF166;126; supplementarycasecontrols",
+        "disposition": "Original5000Polishsaleexempt/ECsalescontrol retained subject43evidence."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 162,
+        "old_LF_start": 599,
+        "old_LF_end": 600,
+        "old_text": "Input: Registered client sells goods to Polish company EUR 5,000, 0% DPH.\nExpected output: Row 04 = EUR 5,000. No output DPH. EC Sales List.",
+        "old_unit_sha256": "48aab95b48ca6f7ef01d55781942eb5ef95cf8d38731f10ad2382bb5efa783e1",
+        "current_destination": "Current LF166;126; supplementarycasecontrols",
+        "disposition": "Original5000Polishsaleexempt/ECsalescontrol retained subject43evidence."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 163,
+        "old_LF_start": 602,
+        "old_LF_end": 602,
+        "old_text": "### Test 5 -- Non-EU software subscription [T1]",
+        "old_unit_sha256": "32ab65db58c4c94d1da530785fd212e7c0c79601eea7eb9e364008372e0f2c69",
+        "current_destination": "Current LF165; supplementarycasecontrols",
+        "disposition": "Original20nonEUsoftware4.60control retained; wrongoldboxnames not adopted."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 164,
+        "old_LF_start": 604,
+        "old_LF_end": 605,
+        "old_text": "Input: US supplier (Notion), EUR 20/month, no VAT. Registered taxpayer.\nExpected output: Row 09 = EUR 20. Row 09a = EUR 4.60 (23%). Row 25 = EUR 4.60. Net = zero.",
+        "old_unit_sha256": "19346383036209288cabff84074d51bcf6f0d333965c0b4d823a358c18a46144",
+        "current_destination": "Current LF165; supplementarycasecontrols",
+        "disposition": "Original20nonEUsoftware4.60control retained; wrongoldboxnames not adopted."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 165,
+        "old_LF_start": 607,
+        "old_LF_end": 607,
+        "old_text": "### Test 6 -- Reduced rate domestic purchase (5%) [T1]",
+        "old_unit_sha256": "2f3edb7837bb0492af2f3ed4cf2bcf4ef4fa6932a7720011d6d7b498029a576d",
+        "current_destination": "Current LF41;128; supplementarycasecontrols",
+        "disposition": "Original100bread/milk5VAT105grosscontrol retained onlylistedeligiblegoods."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 166,
+        "old_LF_start": 609,
+        "old_LF_end": 610,
+        "old_text": "Input: Slovak supplier, bread and milk at 5%, gross EUR 105, DPH EUR 5, net EUR 100.\nExpected output: Row 22 += EUR 5. Fully recoverable.",
+        "old_unit_sha256": "48a21eb7a4c10a710bac04aedc5c80dd622bbcb9321b6eec0ca9f89e1d92a3f8",
+        "current_destination": "Current LF41;128; supplementarycasecontrols",
+        "disposition": "Original100bread/milk5VAT105grosscontrol retained onlylistedeligiblegoods."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 167,
+        "old_LF_start": 612,
+        "old_LF_end": 612,
+        "old_text": "### Test 7 -- Import VAT reverse charge (from July 2025) [T2]",
+        "old_unit_sha256": "7e1cf2546469c8f05b3fd34e30b10c2be16f958d080c65da7521c5daa03cea31",
+        "current_destination": "Current LF167; supplementarycasecontrols",
+        "disposition": "Original50000import11500fixture retained; complete24statutorybasenotcustomsvaluealone; actualAEOeligibilitynotgenericoption."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 168,
+        "old_LF_start": 614,
+        "old_LF_end": 615,
+        "old_text": "Input: Client imports machinery from US, customs value EUR 50,000. Opts for import RC.\nExpected output: Row 11 = EUR 50,000. Row 11a = EUR 11,500 (23%). Row 23a = EUR 11,500. Net = zero. Flag for reviewer: confirm eligibility.",
+        "old_unit_sha256": "6881ef804250968224ee9f0e6b6eceef15d10919e4d431a11e0e46a628415233",
+        "current_destination": "Current LF167; supplementarycasecontrols",
+        "disposition": "Original50000import11500fixture retained; complete24statutorybasenotcustomsvaluealone; actualAEOeligibilitynotgenericoption."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 169,
+        "old_LF_start": 617,
+        "old_LF_end": 617,
+        "old_text": "### Test 8 -- Passenger vehicle (from 2026, 50%) [T2]",
+        "old_unit_sha256": "33e892275f521f2137fff33f827d786050706777c3e1488b03c5687014e89603",
+        "current_destination": "Current LF66; supplementarycasecontrols",
+        "disposition": "Original20000M1/4600/2300control retained; originalcostwordingnotnewincome-taxrule."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 170,
+        "old_LF_start": 619,
+        "old_LF_end": 620,
+        "old_text": "Input: M1 car EUR 20,000 + DPH EUR 4,600 (23%). Mixed business/private use. No electronic records.\nExpected output: Row 20 += EUR 2,300 (50%). Remaining EUR 2,300 is cost. Flag for reviewer.",
+        "old_unit_sha256": "a94f5ef02958a7ef1c247278c6e0e193cd473ea4cec1a6b32a1da93e4f0d5eee",
+        "current_destination": "Current LF66; supplementarycasecontrols",
+        "disposition": "Original20000M1/4600/2300control retained; originalcostwordingnotnewincome-taxrule."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 171,
+        "old_LF_start": 622,
+        "old_LF_end": 622,
+        "old_text": "### Test 9 -- Construction services (domestic RC) [T1]",
+        "old_unit_sha256": "515a770cc7fca83fcd447dda92903846133ae1d4742dfc00547b727b4c1b9858",
+        "current_destination": "Current LF64; supplementarycasecontrols",
+        "disposition": "Original15000construction3450pairedcontrol retained withbothpayergates."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 172,
+        "old_LF_start": 624,
+        "old_LF_end": 625,
+        "old_text": "Input: Slovak subcontractor, construction EUR 15,000. Both parties registered.\nExpected output: Buyer: Row 10 = EUR 15,000, Row 10a = EUR 3,450 (23%). Row 26 = EUR 3,450. Net = zero.",
+        "old_unit_sha256": "b36d868c52988ca11415fff0c68635906280d5c0507813b5170965fce9316032",
+        "current_destination": "Current LF64; supplementarycasecontrols",
+        "disposition": "Original15000construction3450pairedcontrol retained withbothpayergates."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 173,
+        "old_LF_start": 627,
+        "old_LF_end": 627,
+        "old_text": "### Test 10 -- Export of goods [T1]",
+        "old_unit_sha256": "cd5b57495502a55198725e0fa80d6a8b898f1689856c77dba5846f76a2d58e7c",
+        "current_destination": "Current LF166;126; supplementarycasecontrols",
+        "disposition": "Original8000USexportcontrol retained with47proof."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 174,
+        "old_LF_start": 629,
+        "old_LF_end": 630,
+        "old_text": "Input: Slovak company exports to US client, EUR 8,000.\nExpected output: Row 05 = EUR 8,000. No output DPH. Zero-rated.",
+        "old_unit_sha256": "b9b5cc065ca7b92e324fdd4f005bc688fa233a2eef75cb22811de02c2241806e",
+        "current_destination": "Current LF166;126; supplementarycasecontrols",
+        "disposition": "Original8000USexportcontrol retained with47proof."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 175,
+        "old_LF_start": 632,
+        "old_LF_end": 632,
+        "old_text": "### Test 11 -- Intra-EU goods acquisition [T1]",
+        "old_unit_sha256": "e9743da98e9eeeaef50f01367cb64a9259f3a304e4a34a628261fed0562e59c0",
+        "current_destination": "Current LF63; supplementarycasecontrols",
+        "disposition": "Original3000Austrianacquisition690control retained; notbuyersECsaleslist."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 176,
+        "old_LF_start": 634,
+        "old_LF_end": 635,
+        "old_text": "Input: Austrian supplier, goods EUR 3,000, 0% with AT VAT number.\nExpected output: Row 07 = EUR 3,000. Row 07a = EUR 690 (23%). Row 23 = EUR 690. Net = zero.",
+        "old_unit_sha256": "b9f7a0acdf0ed862d57f0dbeb87b70df839dba53697811ca46897a92f8d92225",
+        "current_destination": "Current LF63; supplementarycasecontrols",
+        "disposition": "Original3000Austrianacquisition690control retained; notbuyersECsaleslist."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 177,
+        "old_LF_start": 637,
+        "old_LF_end": 637,
+        "old_text": "### Test 12 -- Section 7 entity receives EU services (no deduction) [T1]",
+        "old_unit_sha256": "1d91d8c5813b2419fb92977036f5d2b33766048f112ffcf21b3a290ad8457fd8",
+        "current_destination": "Current LF29;165; supplementarycasecontrols",
+        "disposition": "Original500Germanservice115nonpayerpaymentcontrol retained, noinput."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 178,
+        "old_LF_start": 639,
+        "old_LF_end": 640,
+        "old_text": "Input: Section 7 registered entity receives German consulting EUR 500.\nExpected output: Row 08 = EUR 500. Row 08a = EUR 115 (23%). NO input deduction. Must pay EUR 115.",
+        "old_unit_sha256": "fa244b6ea678fe2a8a0f8719ccb6fcf44c022294d68b2056fc4c3a60c5e6f5f6",
+        "current_destination": "Current LF29;165; supplementarycasecontrols",
+        "disposition": "Original500Germanservice115nonpayerpaymentcontrol retained, noinput."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 179,
+        "old_LF_start": 642,
+        "old_LF_end": 642,
+        "old_text": "## Step 16: Refund Process [T1]",
+        "old_unit_sha256": "aa8402dda715876241661d61d29d9f38ebc15226e8cb75e2dfc55d31bfc3ceef",
+        "current_destination": "Current LF67;95;130",
+        "disposition": "Refundcarry/offset/ordinaryandfastrefund retained. Old10minimum/blanket30deadline/60verification/new12month60dayrule not supported by actual79; exactnextperiod/qualifyingfastclock/audit10dayroute supplied."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 180,
+        "old_LF_start": 644,
+        "old_LF_end": 644,
+        "old_text": "**Refund Process**",
+        "old_unit_sha256": "2993464ec1a07ee210766add63c9ea7ea59f4fe47c3ef7bf7c2726474b293ef5",
+        "current_destination": "Current LF67;95;130",
+        "disposition": "Refundcarry/offset/ordinaryandfastrefund retained. Old10minimum/blanket30deadline/60verification/new12month60dayrule not supported by actual79; exactnextperiod/qualifyingfastclock/audit10dayroute supplied."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 181,
+        "old_LF_start": 646,
+        "old_LF_end": 654,
+        "old_text": "| Feature | Detail | Legislation |\n| --- | --- | --- |\n| Automatic refund | If excess DPH (Row 33 > 0) and no outstanding tax liabilities | Sec. 79 |\n| Refund threshold | Minimum EUR 10 | Sec. 79(2) |\n| Refund timeline | Within 30 days of filing deadline (standard) | Sec. 79(1) |\n| Extended timeline | If tax authority initiates verification, up to 60 days | Sec. 79(3) |\n| Carry forward | Credit can be carried forward to next period | Sec. 79 |\n| Offset | Tax authority may offset against other tax liabilities | Tax Administration Act |\n| New registrations | First 12 months: refund within 60 days (extended verification possible) | Sec. 79(4) |",
+        "old_unit_sha256": "180924d109852e88a7c8b820acfab1dbdd54eb7eb2a09d05a2d2ecfda9f5adb7",
+        "current_destination": "Current LF67;95;130",
+        "disposition": "Refundcarry/offset/ordinaryandfastrefund retained. Old10minimum/blanket30deadline/60verification/new12month60dayrule not supported by actual79; exactnextperiod/qualifyingfastclock/audit10dayroute supplied."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 182,
+        "old_LF_start": 656,
+        "old_LF_end": 656,
+        "old_text": "## Step 17: Penalty-Free Voluntary Disclosure [T1]",
+        "old_unit_sha256": "237dbd16253afcb7da74623d51cf5f68244376d5da1e83ef636939227b28ee6a",
+        "current_destination": "Current LF142;151–155",
+        "disposition": "Correction/timelimit/voluntaryfine/interest retained; no4yearuniversalamendment/fixed10vs20/auditimmediatestop orpenaltyfreeassumption. Actual16/69fiveyear/restart/audit15days andECBbranch apply."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 183,
+        "old_LF_start": 658,
+        "old_LF_end": 658,
+        "old_text": "**Penalty-Free Voluntary Disclosure**",
+        "old_unit_sha256": "d09ccf1cf8d8a875b34854df2f174e6ff133e6ccab70390f1fe27aaf64a3dd21",
+        "current_destination": "Current LF142;151–155",
+        "disposition": "Correction/timelimit/voluntaryfine/interest retained; no4yearuniversalamendment/fixed10vs20/auditimmediatestop orpenaltyfreeassumption. Actual16/69fiveyear/restart/audit15days andECBbranch apply."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 184,
+        "old_LF_start": 660,
+        "old_LF_end": 665,
+        "old_text": "| Feature | Detail | Legislation |\n| --- | --- | --- |\n| Additional return | Can file amended return within 4 years | Tax Administration Act Sec. 16 |\n| Reduced penalty | 10% of additional tax (vs 20% if found by audit) | Tax Administration Act Sec. 154(1) |\n| Late payment interest | Still applies on any additional amount due | Tax Administration Act Sec. 156 |\n| Deadline | Before tax authority starts audit proceedings | Tax Administration Act Sec. 16(2) |",
+        "old_unit_sha256": "9707d52e4b824e8316ea94a566f46c916d38590cd949858901b828eba21cfd9b",
+        "current_destination": "Current LF142;151–155",
+        "disposition": "Correction/timelimit/voluntaryfine/interest retained; no4yearuniversalamendment/fixed10vs20/auditimmediatestop orpenaltyfreeassumption. Actual16/69fiveyear/restart/audit15days andECBbranch apply."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 185,
+        "old_LF_start": 667,
+        "old_LF_end": 667,
+        "old_text": "## Step 18: Out of Scope -- Direct Tax (Reference Only) [T3]",
+        "old_unit_sha256": "cb5077095f9e9bf980f2d8bf5be7a75ae9091bbc48d2e903d9458c3e3ea213f2",
+        "current_destination": "Current LF21–23 and companion PIT/CIT/payroll/XB; archivedE187",
+        "disposition": "All12oldadjacenttopics explicitlyarchived: CIT21/small10revenue60k/PIT19–25band47537.98/dividend7/social35.2–13.4/health10–4/vehicletax/localproperty/minimum340–3840/industrylevies/WHT19/OSS. Currentcompanions ownordinaryratesandmethods replace oldwrongyears; motor/localproperty/specialindustrynotreinstatedwithoutauthority; OSSgenericEUrouting remains. No VATclaim silentlydrawnfromoldsummary."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 186,
+        "old_LF_start": 669,
+        "old_LF_end": 669,
+        "old_text": "This skill does not compute income tax. The following is reference information only. Escalate to qualified adviser.",
+        "old_unit_sha256": "648260a2dc93134539f6f22ce7ae1bc773dbf25befe10ec112d07f72ecac1552",
+        "current_destination": "Current LF21–23 and companion PIT/CIT/payroll/XB; archivedE187",
+        "disposition": "All12oldadjacenttopics explicitlyarchived: CIT21/small10revenue60k/PIT19–25band47537.98/dividend7/social35.2–13.4/health10–4/vehicletax/localproperty/minimum340–3840/industrylevies/WHT19/OSS. Currentcompanions ownordinaryratesandmethods replace oldwrongyears; motor/localproperty/specialindustrynotreinstatedwithoutauthority; OSSgenericEUrouting remains. No VATclaim silentlydrawnfromoldsummary."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 187,
+        "old_LF_start": 671,
+        "old_LF_end": 682,
+        "old_text": "- **Corporate income tax (dan z prijmov pravnickych osob):** 21% (from 2025) on adjusted profit\n- **Small business CIT:** 10% for companies with revenue up to EUR 60,000 (from 2025)\n- **Personal income tax:** 19% (up to EUR 47,537.98) / 25% above\n- **Dividend tax:** 7% withholding (from 2025)\n- **Social contributions:** employer ~35.2%, employee ~13.4%\n- **Health insurance:** employer 10%, employee 4%\n- **Motor vehicle tax (dan z motorovych vozidiel):** Based on engine power, for business vehicles\n- **Local taxes:** Property tax (administered by municipalities)\n- **Minimum tax (from 2025):** EUR 340 - EUR 3,840 depending on revenue tier\n- **Special industry levies:** Banking levy, insurance levy, regulated industry contributions\n- **Withholding tax:** 19% on royalties, interest, and management fees paid to non-residents (reduced by DTTs)\n- **MOSS/OSS:** One-stop shop for B2C digital services and distance sales to EU consumers",
+        "old_unit_sha256": "752e0b234300a4513c8e0f07a2ac0456a405c32bc94985c5f462b2ac9fd94df4",
+        "current_destination": "Current LF21–23 and companion PIT/CIT/payroll/XB; archivedE187",
+        "disposition": "All12oldadjacenttopics explicitlyarchived: CIT21/small10revenue60k/PIT19–25band47537.98/dividend7/social35.2–13.4/health10–4/vehicletax/localproperty/minimum340–3840/industrylevies/WHT19/OSS. Currentcompanions ownordinaryratesandmethods replace oldwrongyears; motor/localproperty/specialindustrynotreinstatedwithoutauthority; OSSgenericEUrouting remains. No VATclaim silentlydrawnfromoldsummary."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 188,
+        "old_LF_start": 684,
+        "old_LF_end": 684,
+        "old_text": "## PROHIBITIONS [T1]",
+        "old_unit_sha256": "b850854d6859430540afe60b09e048638fef0782b0b288fd88f13cebb977341b",
+        "current_destination": "Current LF63–95;107–134;165–174;250",
+        "disposition": "Allprohibitions retained aslegallyboundedmethods, notoldabsoluteengine/foreignVAT/outofscopeassumptions. No guessedformboxes or blanketKVwithout1exceptions; exactdeduction/85n/RCthreshold/currentrate gates."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 189,
+        "old_LF_start": 686,
+        "old_LF_end": 686,
+        "old_text": "- **Prohibitions** — NEVER let AI guess VAT box -- it is 100% deterministic from facts. NEVER apply reverse charge to out-of-scope categories (wages, dividends, bank charges). NEVER apply reverse charge to local consumption services abroad (hotel, restaurant, taxi). NEVER allow non-registered or Section 7/7a entities to claim input DPH. NEVER confuse zero-rated (exports/intra-EU) with exempt without credit (financial, insurance). NEVER apply reverse charge when EU supplier charged local VAT > 0%. NEVER apply 100% input deduction on entertainment/hospitality expenses (Sec. 49(7)(a)). NEVER apply 100% vehicle deduction without confirmed exclusive business use documentation (from 2026, Sec. 49(7)(b)). NEVER apply domestic RC to mobile phones/circuits below EUR 5,000 (Sec. 69(12)(d)). NEVER apply old rates (20%/10%) to transactions from 2025 onward without checking transitional rules. NEVER omit Control Statement -- it is mandatory alongside the DPH return. NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude.",
+        "old_unit_sha256": "a97076295d6f8232fde190bf75856313b7f120a33bff1fd0cdaadb1c855b9771",
+        "current_destination": "Current LF63–95;107–134;165–174;250",
+        "disposition": "Allprohibitions retained aslegallyboundedmethods, notoldabsoluteengine/foreignVAT/outofscopeassumptions. No guessedformboxes or blanketKVwithout1exceptions; exactdeduction/85n/RCthreshold/currentrate gates."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 190,
+        "old_LF_start": 688,
+        "old_LF_end": 688,
+        "old_text": "## Contribution Notes",
+        "old_unit_sha256": "64ee1de71861aed5d681af02324cb7b15e7e560253cd86d6ff398599ce12d0ce",
+        "current_destination": "Current LF17–19;269–271",
+        "disposition": "Originalcontribution/trust/disclaimer preservedinhistory; currentsource-citeddraftnotaccountantverified. Oldautomaticvalidated/publishsignoffclaims arenotattestations; liveCTAretained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 191,
+        "old_LF_start": 690,
+        "old_LF_end": 690,
+        "old_text": "This skill covers Slovakia's VAT system based on Act No. 222/2004 Coll. as amended by the Consolidation Act 2025. Key distinctive features include: the 2025 rate restructuring (20% to 23%, new 19%/5% tiers), the import VAT reverse charge from July 2025 (DPHv25 form), the vehicle 50% restriction from 2026, the mandatory Control Statement, entertainment fully blocked, and domestic reverse charge for construction/waste/electronics. Validation by a qualified Slovak danovy poradca is required before production use.",
+        "old_unit_sha256": "4143faecf672655b2eb3ad724f8e7f7307992121b076f602936aaa8fa79123ee",
+        "current_destination": "Current LF17–19;269–271",
+        "disposition": "Originalcontribution/trust/disclaimer preservedinhistory; currentsource-citeddraftnotaccountantverified. Oldautomaticvalidated/publishsignoffclaims arenotattestations; liveCTAretained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 192,
+        "old_LF_start": 692,
+        "old_LF_end": 692,
+        "old_text": "**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**",
+        "old_unit_sha256": "36a64799d1f2cbc4074aa34dc52f0479dd6b180ba0ec19c992bb78b4d678873c",
+        "current_destination": "Current LF17–19;269–271",
+        "disposition": "Originalcontribution/trust/disclaimer preservedinhistory; currentsource-citeddraftnotaccountantverified. Oldautomaticvalidated/publishsignoffclaims arenotattestations; liveCTAretained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 193,
+        "old_LF_start": 694,
+        "old_LF_end": 694,
+        "old_text": "## Disclaimer",
+        "old_unit_sha256": "694d80a0c515e397a6f7fffe8d899d7eff3724673440d179a00c2995d439b15a",
+        "current_destination": "Current LF17–19;269–271",
+        "disposition": "Originalcontribution/trust/disclaimer preservedinhistory; currentsource-citeddraftnotaccountantverified. Oldautomaticvalidated/publishsignoffclaims arenotattestations; liveCTAretained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 194,
+        "old_LF_start": 696,
+        "old_LF_end": 696,
+        "old_text": "This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.",
+        "old_unit_sha256": "d0f85d745adbbb6fa4bb2d9cefdcb70239bcb511f1aca8d3e8d5ec0749150e79",
+        "current_destination": "Current LF17–19;269–271",
+        "disposition": "Originalcontribution/trust/disclaimer preservedinhistory; currentsource-citeddraftnotaccountantverified. Oldautomaticvalidated/publishsignoffclaims arenotattestations; liveCTAretained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 195,
+        "old_LF_start": 698,
+        "old_LF_end": 698,
+        "old_text": "The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.",
+        "old_unit_sha256": "e6097dc710d0439015cb49bab66f9aeaa3e744a0ac917c019e5a84fc9abd2ddb",
+        "current_destination": "Current LF17–19;269–271",
+        "disposition": "Originalcontribution/trust/disclaimer preservedinhistory; currentsource-citeddraftnotaccountantverified. Oldautomaticvalidated/publishsignoffclaims arenotattestations; liveCTAretained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 196,
+        "old_LF_start": 700,
+        "old_LF_end": 700,
+        "old_text": "<!-- openaccountants-cta-block -->",
+        "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+        "current_destination": "Current LF255–271",
+        "disposition": "OriginalCTA/comment/separator/header/networklinks/disclaimer retained byte-exact."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 197,
+        "old_LF_start": 702,
+        "old_LF_end": 702,
+        "old_text": "---",
+        "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "current_destination": "Current LF255–271",
+        "disposition": "OriginalCTA/comment/separator/header/networklinks/disclaimer retained byte-exact."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 198,
+        "old_LF_start": 704,
+        "old_LF_end": 704,
+        "old_text": "## Talk to a verified accountant",
+        "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+        "current_destination": "Current LF255–271",
+        "disposition": "OriginalCTA/comment/separator/header/networklinks/disclaimer retained byte-exact."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 199,
+        "old_LF_start": 706,
+        "old_LF_end": 709,
+        "old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+        "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+        "current_destination": "Current LF255–271",
+        "disposition": "OriginalCTA/comment/separator/header/networklinks/disclaimer retained byte-exact."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 200,
+        "old_LF_start": 711,
+        "old_LF_end": 712,
+        "old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+        "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+        "current_destination": "Current LF255–271",
+        "disposition": "OriginalCTA/comment/separator/header/networklinks/disclaimer retained byte-exact."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 201,
+        "old_LF_start": 714,
+        "old_LF_end": 716,
+        "old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+        "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+        "current_destination": "Current LF255–271",
+        "disposition": "OriginalCTA/comment/separator/header/networklinks/disclaimer retained byte-exact."
+      }
+    ]
+  },
+  "prior_423_unit_map_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/full-no-loss-unit-ledger.json",
+  "prior_map_sha256": "7c0210e5320a6687950cfee3ae3df747a622eff5928e6bc0d21767e7eade94c5",
+  "rows": [
+    {
+      "comparator": "origin/main",
+      "unit": 1,
+      "old_LF_start": 1,
+      "old_LF_end": 13,
+      "old_text": "---\nname: slovakia-vat-return\ndescription: \"Slovak VAT (DPH) for tax year 2026 under Act No. 222/2004 Coll. as in force from 1 January 2026: the 23% standard rate, the 19% rate (most food, electricity, non-alcoholic drinks served in restaurants), the 5% rate (basic food, medicines, books, restaurant meals, accommodation, sports and fitness entry), the foods moved from 19% to 23% in 2026, the monthly or quarterly return and control statement due 25 days after the period, refunds, domestic reverse charge, the 50% cap on passenger car input VAT, the EU SME scheme, fines and late-payment interest. Trigger on: Slovak VAT return, DPH priznanie, kontrolny vykaz, suhrnny vykaz, nadmerny odpocet, prenesenie danovej povinnosti, Slovakia 23% VAT. Out of scope: which registration a client needs (slovakia-vat-registration-4-7-7a), income tax (slovakia-pit, sk-corporate-income-tax), payroll (sk-payroll-social).\"\nversion: 2.0\njurisdiction: SK\ntax_year: 2026\nlast_updated: 2026-10-23\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ncategory: international\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+      "old_unit_sha256": "f34d6c1fd211c5b2ef03461d95b14d128426a9cc65dd967915bf9365385879d6",
+      "current_LF": [
+        1,
+        13
+      ],
+      "disposition": "Metadata version/source-date expansion; trust/slug unchanged."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 2,
+      "old_LF_start": 15,
+      "old_LF_end": 15,
+      "old_text": "# Slovakia VAT return (2026)",
+      "old_unit_sha256": "4c4ef36b748e8c1b89775330bb978f6ba7cec74908019c4771158a093077003a",
+      "current_LF": [
+        15,
+        15
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 3,
+      "old_LF_start": 17,
+      "old_LF_end": 17,
+      "old_text": "Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.",
+      "old_unit_sha256": "06cd529001c466740d2fc1bf29d4553b37c8984da5bb74ac41c3c5f35ab27a58",
+      "current_LF": [
+        17,
+        17
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 4,
+      "old_LF_start": 19,
+      "old_LF_end": 19,
+      "old_text": "This skill covers the Slovak VAT return for a business registered in Slovakia for 2026: rates, what goes into the return, the control statement, the EC sales list, refunds, penalties and interest. Every figure is taken from Act No. 222/2004 Coll. on VAT (the \"VAT Act\") in the version in force from 1 January 2026 to 31 December 2026, and from Act No. 563/2009 Coll. (the Tax Procedure Code). It links to the other Slovakia skills and does not repeat them:",
+      "old_unit_sha256": "50753bf466bb2c3bb810d82e11f7207fad24f32352893f006138c26fbb2f919c",
+      "current_LF": [
+        19,
+        19
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 5,
+      "old_LF_start": 21,
+      "old_LF_end": 23,
+      "old_text": "- [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md): whether a client must register under § 4, § 7 or § 7a, the EUR 50,000 and EUR 62,500 turnover tests, and what a § 7 or § 7a registrant may not deduct.\n- [slovakia-pit](slovakia-pit.md) and [sk-corporate-income-tax](sk-corporate-income-tax.md): income tax of individuals and companies.\n- EU rules on place of supply, intra-EU supplies and OSS are in [eu-vat-directive](../eu/eu-vat-directive.md); the general return workflow is in [vat-workflow-base](../../foundation/vat-workflow-base.md).",
+      "old_unit_sha256": "045ceaf331e3e2d959e86bbd3d57594d5a9480c4c837a9cf0d60259a0156ac15",
+      "current_LF": [
+        21,
+        23
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 6,
+      "old_LF_start": 25,
+      "old_LF_end": 25,
+      "old_text": "## Who this applies to",
+      "old_unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "current_LF": [
+        25,
+        25
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 7,
+      "old_LF_start": 27,
+      "old_LF_end": 30,
+      "old_text": "- **VAT payers (platitel) under § 4.** A taxable person with its seat, place of business or fixed establishment in Slovakia (or, failing that, its residence or usual abode there) becomes a payer from 1 January of the year after its turnover passed EUR 50,000, or at the supply that takes turnover in the current year past EUR 62,500 (VAT Act § 4(1)(a) and (b)). Voluntary registration is allowed (§ 4(6) and (7)). The registration tests sit in the sibling skill.\n- **Foreign persons registered under § 5.** A business with no seat, place of business, establishment or residence in Slovakia becomes a payer from its first taxable supply in Slovakia, unless all its Slovak supplies fall in the § 5(2) list (for example supplies where the customer accounts for the tax, or supplies covered by OSS). It applies to the Bratislava Tax Office within five working days (§ 5(1) to (3)).\n- **Persons who are not payers but owe tax under § 69.** Someone registered only under § 7 or § 7a, or not registered at all, who receives a reverse-charge supply files a return only for the month the liability arose, and does not pay if the tax is EUR 5 or less (§ 78(3)).\n- **Out:** a business below the § 4 thresholds that is not a payer charges no VAT and files no periodic VAT return. It must still check § 7 and § 7a.",
+      "old_unit_sha256": "891bccd2183963f00c6f842a4798352e7f9f944dadaaa827dbdb0fe5259cfc0a",
+      "current_LF": [
+        27,
+        30
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 8,
+      "old_LF_start": 32,
+      "old_LF_end": 32,
+      "old_text": "## Rates, bands and thresholds",
+      "old_unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "current_LF": [
+        34,
+        34
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 9,
+      "old_LF_start": 34,
+      "old_LF_end": 55,
+      "old_text": "| Item | Rate or amount | Year | Source URL |\n|---|---|---|---|\n| Standard rate | 23% (since 1 January 2025) | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 27(1)) |\n| Reduced rate, goods in Annex 7 point 1: food for human consumption not in point 2, bottled drinking water without sugar or flavouring (not mains water), salt, electricity | 19% | 2026 | https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5815198-2.pdf (§ 27(2)(a)) |\n| Reduced rate, Annex 7a point 1: drinks served as restaurant and catering services (CPA 56), except alcoholic drinks over 0.5% alcohol | 19% | 2026 | https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5747469-2.pdf (§ 27(2)(b)) |\n| Reduced rate, Annex 7 points 2 and 3: listed fresh meat, freshwater fish, milk, yoghurt, butter, honey, fresh vegetables, apples and pears, fresh bread and rolls, juices with at most 5 g added sugar per 100 ml, medicines (chapter 30), listed medical aids, printed books, newspapers and periodicals (advertising at most 50%) | 5% | 2026 | https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5815198-2.pdf (§ 27(3)(a)) |\n| Reduced rate, Annex 7a point 2: accommodation (CPA 55), food served as restaurant and catering services (CPA 56), online books and audio books, entry to theatre, opera, ballet and similar events, museums, sports events, fitness centres | 5% | 2026 | https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5747469-2.pdf (§ 27(3)(b)) |\n| Reduced rate, registered social enterprises using 100% of after-tax profit for their main aim; state-supported rental housing | 5% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 27(3)(c) to (e)) |\n| Foods moved from 19% to 23% on 1 January 2026 (Acts 261/2025 and 385/2025): mainly sweets, cakes, jams, ice cream, muesli, sweetened soft drinks, salty snacks; listed dietetic foods stay at 19% | 23% | 2026 | https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/sadzby-dane |\n| Imported goods declared under the § 68cb low-value scheme | Not covered by § 27(2)(a) or (3)(a), so 23% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 27(2)(a), (3)(a)) |\n| Rate used when rates change | Rate in force on the day the tax liability arises | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 27(5)) |\n| Registration turnover, payer from 1 January of the next year | Over EUR 50,000 in the calendar year | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 4(1)(a)) |\n| Registration turnover, payer at the supply that crosses it | Over EUR 62,500 in the current calendar year | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 4(1)(b)) |\n| Quarterly tax period allowed | More than 12 months since the end of the month of registration, and turnover under EUR 100,000 in the preceding 12 months | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 77(2)) |\n| Passenger cars (M1, L1e, L3e) acquired, leased long term or run from 1 January 2026 to 30 June 2028 | 50% of input VAT deductible, unless an exception applies | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 85n(1) to (5)) |\n| Domestic reverse charge on mobile phones and integrated circuits | Invoice tax base EUR 5,000 or more | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 69(12)(h), (i)) |\n| Control statement, simplified invoices listed by supplier | When deducted VAT on simplified invoices in the period is EUR 3,000 or more | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 78a(6)) |\n| EC sales list may be quarterly | Goods in § 80(1)(a) to (c) at or under EUR 50,000 in the quarter and in the four previous quarters | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 80(2)) |\n| Fast refund condition: tax, customs and insurance arrears in the last 6 months | Not more than EUR 1,000 in total | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 79(2)(c)) |\n| Non-payer owing reverse-charge tax: no payment due | Tax of EUR 5 or less | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 78(3)) |\n| EU SME scheme, Slovak business exempt in other member states | EU turnover not over EUR 100,000 in the current and the previous calendar year | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 68g(1)) |\n| EU SME scheme, business from another member state exempt in Slovakia | Slovak turnover not over EUR 62,500 this year and EUR 50,000 last year; EU turnover not over EUR 100,000 in both years | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html (§ 68f(1)) |",
+      "old_unit_sha256": "4f1531e982747ab1bdc6a01ae24eea0d558fd4ac3ee692edb8a2c895acc51842",
+      "current_LF": [
+        34,
+        59
+      ],
+      "disposition": "Entire old rate/threshold table retained; commodity restrictions clarified and2024 historical-rate block restored."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 10,
+      "old_LF_start": 57,
+      "old_LF_end": 57,
+      "old_text": "## The taxable base",
+      "old_unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "current_LF": [
+        61,
+        61
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 11,
+      "old_LF_start": 59,
+      "old_LF_end": 64,
+      "old_text": "- **Output tax.** Tax is charged on domestic supplies at the rate in force on the day the liability arises. The return also carries the tax the payer self-assesses as customer: intra-EU acquisitions of goods, services from foreign persons under § 69(3), and domestic reverse-charge supplies under § 69(12).\n- **Domestic reverse charge (§ 69(12)).** Applies only when both supplier and customer are payers registered under § 4, § 4b, § 4c or § 5. It covers metal waste and scrap; greenhouse gas emission allowances; real estate the supplier has opted to tax under § 38(8); real estate sold in a forced sale; goods supplied when a security is enforced; cereals and oilseeds in chapters 10 and 12 not normally sold for final consumption; iron and steel in chapter 72 and headings 7301, 7308 and 7314; mobile phones and integrated circuits where the invoice tax base is EUR 5,000 or more; and construction work in section F of the classification, including goods supplied with installation in section F. The supplier invoices without VAT. The customer declares the tax and, if entitled, deducts it.\n- **Input tax.** A payer deducts tax on purchases used for taxable supplies. There is no deduction for hospitality and entertainment (§ 49(7)(a)). Where purchases serve both taxable and exempt supplies, the deductible share follows the coefficient in § 50.\n- **Passenger cars from 1 January 2026 (§ 85n).** For an M1 car, or an L1e or L3e motorcycle, acquired as a long-term asset, leased on a contract that is not short-term, or for goods and services bought to run one, from 1 January 2026 to 30 June 2028, the payer deducts 50%. Private use then counts as neither a supply of services nor a supply of goods. The cap does not apply to vehicles used only for car rental, paid passenger transport including taxis, driving schools, or as demonstration or courtesy cars (§ 85n(4)). It also does not apply where the vehicle is used only for business and the payer keeps electronic records for each vehicle: VIN, registration number, odometer readings at the start, at each period end and at the end, and a log of every trip with the driver, date and time, business purpose, start and end place and kilometres (§ 85n(5) and (6)). The payer must notify the tax office of a § 85n(4) or (5) use by the return deadline for the period of the first deduction. That notice is not needed for vehicles acquired by 31 December 2025 (§ 85n(9)).\n- **Excess deduction (nadmerny odpocet).** If deductible tax is more than tax due, the excess is first set against the next period's liability. Any part not used is refunded within 30 days of filing the next period's return (§ 79(1)). A monthly payer registered at least 12 months, with arrears of not more than EUR 1,000 in the last 6 months, can mark the return and be refunded within 30 days of the return deadline for the period itself (§ 79(2) and (3)). The refund clock stops while a request to fix the return or control statement is open (§ 79(4)).\n- **Rounding.** Figures in the return are rounded to the nearest euro cent, with 0.005 rounded up (§ 78(7)).",
+      "old_unit_sha256": "1cd4a3a272ee5912494db25912d07253a57f643afbb04d7eb28037adb90f6afc",
+      "current_LF": [
+        63,
+        95
+      ],
+      "disposition": "All six old base topics retained; added coefficient/direct attribution, capital assets/property/credit-note methods; old refund scope clarified."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 12,
+      "old_LF_start": 66,
+      "old_LF_end": 66,
+      "old_text": "## Deadlines and filing",
+      "old_unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "current_LF": [
+        97,
+        97
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 13,
+      "old_LF_start": 68,
+      "old_LF_end": 79,
+      "old_text": "| Obligation | Deadline | Source |\n|---|---|---|\n| Tax period | Calendar month. A calendar quarter if § 77(2) is met and the change is notified within 25 days after the end of the month the conditions were met; it takes effect from the next calendar quarter | VAT Act § 77 |\n| VAT return and payment, Slovak payer | 25 days after the end of each tax period; tax paid in the same time | VAT Act § 78(1), (2)(a) |\n| Deadline falling on a Saturday, Sunday or public holiday | Moves to the next working day | Tax Procedure Code § 27(4) |\n| First return when the VAT number arrives after that deadline | Five working days from delivery of the registration decision | VAT Act § 78(2)(a)(1) |\n| VAT return and payment, foreign payer | 25 days after the end of a period in which tax was due, exempt intra-EU or export supplies were made, exempt goods were acquired, or a deduction is claimed | VAT Act § 78(2)(b) |\n| Non-payer liable under § 69 | 25 days after the end of the month the liability arose; no payment if EUR 5 or less | VAT Act § 78(3) |\n| Control statement (kontrolny vykaz) | Electronically, in XML, for every period with a return, 25 days after the period. Not due if the return reports no supplies, or only exempt § 43 or § 47 supplies with no deduction (or only a § 49(2)(d) deduction) | VAT Act § 78a(1), (16) |\n| Answer to a tax office request on the control statement | Five working days from delivery of the request | VAT Act § 78a(13) |\n| EC sales list (suhrnny vykaz) | Monthly, 25 days after the period; quarterly if § 80(2) is met; a § 7 or § 7a registrant supplying § 15(1) services files for each quarter in which it supplied them | VAT Act § 80 |\n| EU SME scheme quarterly report (Slovak business using the scheme abroad) | End of the month after the quarter | VAT Act § 68g(8) |",
+      "old_unit_sha256": "019bc82efddf6dea817346e7ee206d4829507dfe4eda5091c7d26f740f553b5b",
+      "current_LF": [
+        99,
+        110
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 14,
+      "old_LF_start": 81,
+      "old_LF_end": 81,
+      "old_text": "The control statement lists, invoice by invoice, every invoice issued for domestic taxable supplies or for domestic reverse-charge supplies under § 69(12)(f) to (j) (not simplified invoices) and every invoice received where the payer is the customer liable under § 69(2), (3), (6), (7) and (9) to (12), or deducts tax charged by another payer. Each line shows the counterparty's VAT number, invoice number, date of supply, tax base, tax, rate and deducted tax (§ 78a(2) and (4)). Simplified invoices received are given as totals, split by supplier once deducted VAT on them reaches EUR 3,000 in the period (§ 78a(6)). Retail sales are given as eKasa totals by rate (§ 78a(8)). A corrective statement replaces the original before the deadline; after the deadline, a supplementary statement carries only the changed lines (§ 78a(12)).",
+      "old_unit_sha256": "41faaa6dc68ab8e7e42700182766142400837ee51658c731e997b864d8e53ee6",
+      "current_LF": [
+        112,
+        112
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 15,
+      "old_LF_start": 83,
+      "old_LF_end": 83,
+      "old_text": "A payer that failed to register must file every missed return and control statement in date order, starting from the first period (§ 78(9), § 78a(14)).",
+      "old_unit_sha256": "c745a70d6dfdab3c0e227cb6ba1299d4678a963fe15ebfde98a325726959e088",
+      "current_LF": [
+        136,
+        136
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 16,
+      "old_LF_start": 85,
+      "old_LF_end": 85,
+      "old_text": "## Penalties and interest",
+      "old_unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "current_LF": [
+        144,
+        144
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 17,
+      "old_LF_start": 87,
+      "old_LF_end": 97,
+      "old_text": "| Breach | Consequence | Source |\n|---|---|---|\n| Return not filed on time | Fine EUR 100 to 30,000; EUR 100 to 60,000 if not filed by the date in a tax office request (only one of the two is imposed) | Tax Procedure Code § 154(1)(a), § 155(1)(a), (b), (3) |\n| Registration not made on time | Fine EUR 100 to 30,000 | § 155(1)(c) |\n| First breach, fines set within a range | The tax office does not impose a fine set within a range for a first breach | § 155(4) |\n| Tax under-declared, found by the tax office | 3 times the ECB base rate a year (at least 10% a year) on the extra tax, counted daily from the deadline; at least 1% of the assessed sum and at most the sum itself. Two thirds of that fine if the assessment is paid within 15 days | § 155(1)(f), (2), (5), (17) |\n| Supplementary return raising tax | ECB base rate a year (at least 3%); twice the ECB rate (at least 7%) if filed after an audit has started | § 155(1)(g), (h), (5) |\n| Control statement missing, late, incomplete or wrong, or defects not fixed by the requested date | Fine up to EUR 10,000; up to EUR 100,000 for repeated breaches | VAT Act § 78a(15) |\n| Fast refund obtained on false data | Fine up to 1.3% of the refund | VAT Act § 79(8) |\n| Late payment | Interest at 4 times the ECB base rate, at least 15% a year, counted daily from the day after the due date, for at most four years; not charged if EUR 5 or less | Tax Procedure Code § 156(2), (6)(b) |\n| Fines of EUR 5 or less | Not imposed | § 155(11) |",
+      "old_unit_sha256": "9a9200c80966e4b7dab2915ac6be61d84aa8f5ca7c0cc0539de1a444a7f0bbcd",
+      "current_LF": [
+        146,
+        156
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 18,
+      "old_LF_start": 99,
+      "old_LF_end": 99,
+      "old_text": "## Cross-border points",
+      "old_unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "current_LF": [
+        163,
+        163
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 19,
+      "old_LF_start": 101,
+      "old_LF_end": 106,
+      "old_text": "- **Services from abroad.** A Slovak business receiving a § 15(1) service from a foreign supplier accounts for the tax as customer (§ 69(3)). A non-payer receiving such a service from a supplier in another member state must first register under § 7a and then has no right to deduct; see the registration skill.\n- **Intra-EU supplies of goods** are exempt under § 43 and go on the EC sales list. Exports are exempt under § 47.\n- **Imports.** Import VAT assessed by customs is due on the customs timetable and is not part of the return's own tax liability (§ 78(1)). The § 68cb scheme for consignments of EUR 150 or less is a customs procedure for the person presenting the goods.\n- **Foreign businesses** register under § 5 at the Bratislava Tax Office within five working days of becoming a payer. EU sellers to Slovak consumers can use OSS (§ 68a to 68c) instead.\n- **EU SME scheme (from 1 January 2025).** A Slovak small business whose EU turnover stays at or under EUR 100,000 in the current and previous year can notify the Slovak tax office in advance and use small-business exemptions in other member states with an EX number (§ 68g). It files a quarterly report by the end of the following month. A business from another member state is exempt in Slovakia if its Slovak turnover stays at or under EUR 62,500 this year and EUR 50,000 last year and its EU turnover at or under EUR 100,000 (§ 68f). It loses the exemption from the supply that takes Slovak turnover past EUR 62,500 or EU turnover past EUR 100,000 (§ 68f(6)).\n- **E-invoicing.** The version of the VAT Act in force from 1 January 2027 (Act 385/2025) changes invoicing and reporting. It is outside this 2026 skill.",
+      "old_unit_sha256": "3fe6bc927e6d334784a32637716664d52b3afd054a30c8b14652fa2848dfeaac",
+      "current_LF": [
+        165,
+        174
+      ],
+      "disposition": "Services/goods/export/import/foreign/SME/2027 topics all retained; AEO import and tax representative routes restored."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 20,
+      "old_LF_start": 108,
+      "old_LF_end": 108,
+      "old_text": "## Worked examples",
+      "old_unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "current_LF": [
+        176,
+        176
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 21,
+      "old_LF_start": 110,
+      "old_LF_end": 110,
+      "old_text": "**Example 1: a restaurant company, monthly return, March 2026.** Cafe Dunaj s.r.o. is a monthly payer. In March 2026 it sells EUR 40,000 net of goods and services at 23% (alcoholic drinks and takeaway sweets), EUR 10,000 net of restaurant meals at 5%, and EUR 2,000 net of non-alcoholic drinks served at the tables at 19%. Its domestic purchase invoices carry EUR 4,600 of deductible VAT. Output tax is 40,000 x 23% = 9,200, plus 10,000 x 5% = 500, plus 2,000 x 19% = 380, a total of 10,080. It deducts 4,600 and pays 5,480. The 25-day deadline ends on Saturday 25 April 2026, so the return, the control statement and the payment are due on Monday 27 April 2026 (Tax Procedure Code § 27(4)). Every invoice it issued (other than simplified invoices) and every full purchase invoice it deducts goes into the control statement line by line; simplified purchase invoices go in as totals and till sales as eKasa totals by rate.",
+      "old_unit_sha256": "735f1e2b85f5b2ba6bfc8f03077856db30a3314fef201685b55f4da3e7b55573",
+      "current_LF": [
+        178,
+        178
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 22,
+      "old_LF_start": 112,
+      "old_LF_end": 128,
+      "old_text": "```oa-check\nname: Cafe Dunaj s.r.o., March 2026 return\ninputs:\n  sales_23: 40000\n  meals_5: 10000\n  drinks_19: 2000\n  input_vat: 4600\nsteps:\n  - out_23: sales_23 * 0.23\n  - out_5: meals_5 * 0.05\n  - out_19: drinks_19 * 0.19\n  - output_vat: out_23 + out_5 + out_19\n  - payable: output_vat - input_vat\nexpected:\n  output_vat: 10080\n  payable: 5480\n```",
+      "old_unit_sha256": "d7e6f939586e677e7af4fe280e7779aa61d0f5b0445b2ad93042d77b5a79f1d4",
+      "current_LF": [
+        180,
+        196
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 23,
+      "old_LF_start": 130,
+      "old_LF_end": 130,
+      "old_text": "**Example 2: a consultancy with a reverse charge and a new car, April 2026.** Tatra Consulting s.r.o., a monthly payer, invoices Slovak clients EUR 30,000 net at 23%. It buys EUR 2,000 of advertising from an Irish company (a § 15(1) service), with no VAT on the invoice. In April it also buys an M1 passenger car for EUR 25,000 plus EUR 5,750 VAT. The car is used for business and private trips and no trip log is kept, so § 85n(1) limits the deduction to 50%. A client lunch carries EUR 69 VAT, which is not deductible (§ 49(7)(a)). Other purchases carry EUR 1,150 of deductible VAT. Output tax is 30,000 x 23% = 6,900 plus the self-assessed 2,000 x 23% = 460, a total of 7,360. Input tax is the 460 reverse charge, plus 5,750 x 50% = 2,875 on the car, plus 1,150, a total of 4,485. The lunch VAT is left out. The company pays 2,875. The Irish invoice goes into the control statement as a received invoice where the company is the customer liable for the tax.",
+      "old_unit_sha256": "25fd108a1edffaba2a9de60109e2f816322556d6c386e921bf2b4183c3442a39",
+      "current_LF": [
+        198,
+        198
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 24,
+      "old_LF_start": 132,
+      "old_LF_end": 152,
+      "old_text": "```oa-check\nname: Tatra Consulting s.r.o., April 2026 return\ninputs:\n  sales_23: 30000\n  eu_ads: 2000\n  car_vat: 5750\n  lunch_vat: 69\n  other_input: 1150\nsteps:\n  - out_sales: sales_23 * 0.23\n  - rc: eu_ads * 0.23\n  - car_input: car_vat * 0.5\n  - lunch_input: lunch_vat * 0\n  - output_vat: out_sales + rc\n  - input_vat: rc + car_input + lunch_input + other_input\n  - payable: output_vat - input_vat\nexpected:\n  output_vat: 7360\n  input_vat: 4485\n  payable: 2875\n```",
+      "old_unit_sha256": "2521f63ad6d915cde78898872373fc3ac06336d61621676e5b11bfec82fa0452",
+      "current_LF": [
+        200,
+        220
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 25,
+      "old_LF_start": 154,
+      "old_LF_end": 154,
+      "old_text": "## Ask the client first",
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "current_LF": [
+        222,
+        222
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 26,
+      "old_LF_start": 156,
+      "old_LF_end": 161,
+      "old_text": "1. Which registration do you hold (§ 4, § 5, § 7 or § 7a), and since when? This decides whether you file every period and whether you can deduct at all.\n2. Are you on monthly or quarterly periods, and did turnover in any 12-month run reach EUR 100,000?\n3. What do you sell, and at which rate? Food and restaurant clients need the 2026 split between 23%, 19% and 5%.\n4. Did you buy, lease or run an M1 car or an L1e or L3e motorcycle in 2026, and do you keep the § 85n trip log?\n5. Did you receive services from foreign suppliers, or buy construction work, scrap, steel, cereals, or phones and chips at EUR 5,000 or more from Slovak payers?\n6. Do you make exempt supplies (financial, insurance, housing rental) as well as taxable ones?",
+      "old_unit_sha256": "8dd01807df29b3082664e7a26109c75adfa7fd1216c1ebdc1d2588dcf38df7ba",
+      "current_LF": [
+        224,
+        229
+      ],
+      "disposition": "Allsixintake topics retained, with exact status/period/rates/vehicle/RC/exempt gates."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 27,
+      "old_LF_start": 163,
+      "old_LF_end": 163,
+      "old_text": "## Sources",
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "current_LF": [
+        231,
+        231
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 28,
+      "old_LF_start": 165,
+      "old_LF_end": 171,
+      "old_text": "| Source | URL | Read on |\n|---|---|---|\n| Act No. 222/2004 Coll. on VAT, version in force 1 January 2026 to 31 December 2026 (§ 4, 5, 7a, 27, 49, 68cb, 68f, 68g, 69, 77, 78, 78a, 79, 80, 85n, 85o) | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html | 2026-10-23 |\n| VAT Act Annex 7, goods at reduced rates (version from 1 January 2026) | https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5815198-2.pdf | 2026-10-23 |\n| VAT Act Annex 7a, services at reduced rates (version from 1 January 2026) | https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5747469-2.pdf | 2026-10-23 |\n| Act No. 563/2009 Coll., Tax Procedure Code, version in force from 1 September 2026 (§ 27, 154, 155, 156; same text of § 154 to 156 in the version from 1 January 2026) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-23 |\n| Financna sprava, Sadzby dane (VAT rates and the 1 January 2026 changes) | https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/sadzby-dane | 2026-10-23 |",
+      "old_unit_sha256": "b16c2be26a84a763b9a5f147b26269f32f13a4e402334e3a60bc16179e820324",
+      "current_LF": [
+        233,
+        239
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 29,
+      "old_LF_start": 173,
+      "old_LF_end": 173,
+      "old_text": "Not yet confirmed: the row numbers of the 2026 VAT return form and the control statement layout (the official forms were not read, so this skill names no boxes); the ECB base rate on any given date, which sets the fine and interest percentages above the floors; whether the first-breach rule in Tax Procedure Code § 155(4) also covers the control statement fine in VAT Act § 78a(15); the detail of the § 50 coefficient (rounding and de minimis), which was not re-read for this version.",
+      "old_unit_sha256": "bd0ff8ff3e34dc0447f3cab44c0846967cfd699b6a15b7e188f2cd1bc2c801d6",
+      "current_LF": [
+        250,
+        250
+      ],
+      "disposition": "Oldform/coefficientdetail gaps partly resolved by actualforms/positiveD method; ECBdate needs actualdate and specialfirstchance/annualD0 remain precise."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 30,
+      "old_LF_start": 175,
+      "old_LF_end": 175,
+      "old_text": "> Contributed by Michael Cutajar.",
+      "old_unit_sha256": "cd6e492917c1a8ee9a5db69e092a96a573d0755ba0fdfeb3d0e3c92e4bd0e0c7",
+      "current_LF": [
+        252,
+        252
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 31,
+      "old_LF_start": 177,
+      "old_LF_end": 177,
+      "old_text": "<!-- openaccountants-cta-block -->",
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "current_LF": [
+        254,
+        254
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 32,
+      "old_LF_start": 179,
+      "old_LF_end": 179,
+      "old_text": "---",
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "current_LF": [
+        1,
+        1
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 33,
+      "old_LF_start": 181,
+      "old_LF_end": 181,
+      "old_text": "## Talk to a verified accountant",
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "current_LF": [
+        258,
+        258
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 34,
+      "old_LF_start": 183,
+      "old_LF_end": 186,
+      "old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "current_LF": [
+        260,
+        263
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 35,
+      "old_LF_start": 188,
+      "old_LF_end": 189,
+      "old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "current_LF": [
+        265,
+        266
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 36,
+      "old_LF_start": 191,
+      "old_LF_end": 193,
+      "old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "current_LF": [
+        268,
+        270
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    }
+  ]
+}

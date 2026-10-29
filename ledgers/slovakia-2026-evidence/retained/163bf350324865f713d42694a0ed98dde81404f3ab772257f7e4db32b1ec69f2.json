@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/report.md",
+    "sha256": "fb1225798662d361943c092fbb8cb495032ef9a282b64f1e334276109f876040",
+    "role": "Prior evidence/reference only, not independent review of these ledgers"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/post-F22-exact-VAT-gap-search.json",
+    "sha256": "724646d771ad70ba47311c51bf0021fb22d100cc0be304075afadbb27914ec20",
+    "role": "Prior evidence/reference only, not independent review of these ledgers"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/report.md",
+    "sha256": "23df1886b3635c16e2239de2938db9e8d7e8374d9acd0541b2ee21e8444a33dc",
+    "role": "Prior evidence/reference only, not independent review of these ledgers"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/full-no-loss-unit-ledger.json",
+    "sha256": "7c0210e5320a6687950cfee3ae3df747a622eff5928e6bc0d21767e7eade94c5",
+    "role": "Prior evidence/reference only, not independent review of these ledgers"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-final-three-vat-source-questions-2026-10-28/report.md",
+    "sha256": "a4e3e2d632d68b3ff87de74bf13b8c6775356f5ef5065ad87455ccc8234caee6",
+    "role": "Prior evidence/reference only, not independent review of these ledgers"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/root-check-results.json",
+    "sha256": "bb2d1975df33591db826e4b1591f6fd96ebfcc126e38d4e418a1e987958a2397",
+    "role": "Prior evidence/reference only, not independent review of these ledgers"
+  }
+]

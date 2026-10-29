@@ -1,0 +1,1082 @@
+[
+  {
+    "slug": "slovakia-pit",
+    "population": "main",
+    "unit": 17,
+    "old_range": [
+      83,
+      83
+    ],
+    "old_text": "The result is the business partial base. A tax loss can be carried forward five years. A micro-taxpayer (business revenue up to EUR 60,000, §2(w)) can use it in full; others only up to 50% of the business base (§30(1)).",
+    "destination": [
+      86,
+      86
+    ],
+    "disposition": "Rechecked current destination; prior 423-unit review disposition: F13 full microtaxpayer gates and5period expiry preserved",
+    "destination_texts": [
+      {
+        "range": [
+          86,
+          86
+        ],
+        "text": "The result is the business partial base. A tax loss can be carried forward for the five immediately following tax periods. Full-base loss relief requires micro-taxpayer status **in the deduction period**, not just revenue up to EUR 60,000. Under §2(w), the individual's taxable §6(1),(2) revenue must not exceed EUR 60,000; exclude a dependent person who carries out a controlled transaction in that period, a person declared bankrupt, entering liquidation or granted a payment plan, and a period shorter than twelve consecutive months except one shortened by death. Others can deduct at most 50% of the business base (§30(1)). Thus a EUR 10,000 base and EUR 8,000 unexpired loss allow EUR 8,000 relief for a qualifying micro-taxpayer, but only EUR 5,000 for the same-revenue trader with a controlled transaction; EUR 3,000 remains subject to the original expiry date. Exactly EUR 60,000 passes the revenue condition; EUR 60,000.01 does not ([ITA §§2(w),30](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html))."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-pit",
+    "population": "main",
+    "unit": 19,
+    "old_range": [
+      87,
+      90
+    ],
+    "old_text": "**Allowances (nezdaniteľné časti, §11).** They reduce only the employment and business bases, never rental, capital or other income (§11(1)).\n- The personal allowance and the spouse allowance are tested on the tax base from §5 and §6(1),(2) income. A taxpayer who at the start of 2026 receives an old-age, early, service or similar foreign pension gets no personal allowance if the pension for the year, including the 13th pension, exceeds the allowance; otherwise the allowance is cut to the difference (§11(6)).\n- The spouse allowance needs a spouse living with the taxpayer who cared for a minor child, received a care allowance, was a registered jobseeker, or is disabled (§11(4)). The spouse's own income is net of their contributions. Months count only if the conditions held at the start of the month (§11(5)).\n- Allowances come off the employment base first, and only the rest comes off the business base (§11(12)).",
+    "destination": [
+      90,
+      94
+    ],
+    "disposition": "Allowance sequence retained and source-backed DDS/PEPP contract/cap/recapture conditions supplied.",
+    "destination_texts": [
+      {
+        "range": [
+          90,
+          94
+        ],
+        "text": "**Allowances (nezdaniteľné časti, §11).** They reduce only the employment and business bases, never rental, capital or other income (§11(1)).\n- The personal allowance and the spouse allowance are tested on the tax base from §5 and §6(1),(2) income. A taxpayer who at the start of 2026 receives an old-age, early, service or similar foreign pension gets no personal allowance if the pension for the year, including the 13th pension, exceeds the allowance; otherwise the allowance is cut to the difference (§11(6)).\n- The spouse allowance needs a spouse living with the taxpayer who cared for a minor child, received a care allowance, was a registered jobseeker, or is disabled (§11(4)). The spouse's own income is net of their contributions. Months count only if the conditions held at the start of the month (§11(5)).\n- **DDS/PEPP pension contributions:** deduct the taxpayer's own contributions demonstrably paid in the year, with one EUR 180 annual cap across the qualifying products, including qualifying equivalent foreign products (§11(8)/(9)). For DDS, the participant contract must have been concluded after 31 December 2013, or amended to cancel its benefit plan; a qualifying PEPP contract is the alternative. The taxpayer must also have no other DDS participant contract that fails that condition (§11(10)). Thus EUR 240 eligible DDS payments plus EUR 60 eligible PEPP payments give a combined EUR 180 deduction, rather than EUR 180 for each product; retaining another non-qualifying DDS contract prevents the claim. If a statutory early withdrawal is paid after earlier DDS deductions, add back the previously deducted DDS contributions to the tax base within the three tax periods after the withdrawal year (§11(11)). A 2026 early withdrawal with EUR 360 previously deducted therefore requires EUR 360 added back by the end of tax year 2029. Keep the payment records, every DDS contract/amendment, PEPP contract and past deduction/withdrawal history ([ITA §11(8)–(11)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html#paragraf-11)).\n- Allowances come off the employment base first, and only the rest comes off the business base (§11(12))."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-pit",
+    "population": "main",
+    "unit": 22,
+    "old_range": [
+      96,
+      98
+    ],
+    "old_text": "**Credits.** From the tax computed:\n- **Child tax bonus (§33).** EUR 100 a month for each child under 15 and EUR 50 a month for each child aged 15 to 18, for each month at whose start the conditions were met (§33(1),(5)). The child lives in the taxpayer's household, and the taxpayer needs employment or business income. The total is capped at a percentage of the employment or business partial base, or their sum, taken before allowances (§33(6)); the Financial Administration's worked return uses that base. If that base exceeds EUR 27,432, the bonus for each child falls by one tenth of the excess (§33(11)). Only one parent claims (§33(4)). If the bonus exceeds the tax, the difference is paid out (§33(7)). The taxpayer must have at least 90% of income from Slovak sources (§33(9)).\n- **Mortgage interest bonus** for borrowers aged 18 to 35 at application (§33a). The conditions differ for loan contracts made up to 31 December 2023 and after; check them in the law before claiming it.",
+    "destination": [
+      100,
+      117
+    ],
+    "disposition": "Full child-credit method and old/new mortgage branches supply the former pointer.",
+    "destination_texts": [
+      {
+        "range": [
+          100,
+          117
+        ],
+        "text": "**Child tax bonus (§33).** Start from the eligible dependent child living in the taxpayer's household and taxable §5 or §6(1),(2) income. Temporary absence from the household does not end eligibility. For each eligible month, the maximum is EUR 100 through the **month of the 15th birthday**, then EUR 50 through the **month of the 18th birthday**, and zero afterwards (§33(1),(2)). Ordinarily the conditions must hold at the month's start, but the birth, adoption, court-ordered substitute-care and commencement-of-continuous-vocational-preparation months count immediately (§33(5)). Only one eligible person claims for a month; parents can divide the year, with mother, father, then another eligible person taking priority if they do not agree (§33(4)).\n\nUse the §5 and §6(1),(2) partial bases before allowances, or their sum B, for the 29%/36%/43%/50%/57%/64% cap for one/two/three/four/five/six-or-more children. If the eligible child count changes, split the cap by the number of months at each child count and sum those proportional entitlements (§33(6),(10)). Above B = EUR 27,432 in 2026, reduce each child's entitlement by one tenth of the excess; for part-year eligibility apply the corresponding eligible-month share, without creating a negative bonus (§33(5),(11)). The tax return can augment B by the other eligible household person's §5/§6(1),(2) base when the claimant lacks the base for the full bonus, using only the proportional months at whose start the other person qualified if they qualified for only part of the year. This is a credit calculation, not a transfer of taxable income; test **both the percentage cap and the high-base taper on augmented B** (§33(8)). The claimant must have at least 90% of all income from Slovak taxable sources, and so must the other person if their base is added (§33(9)). Claim the excess bonus over tax as a payout (§33(7)).\n\nFor a separate low-base case with one eligible under-15 child all year, claimant B = EUR 2,000 gives a EUR 580 cap. An eligible second parent's EUR 4,000 base raises B to EUR 6,000 and the cap to EUR 1,740, allowing the full EUR 1,200 nominal bonus; both parents must pass the 90% test. If that parent qualified for only six start-of-months, add EUR 2,000, not EUR 4,000: cap EUR 1,160. If B is EUR 4,000, one under-15 child qualifies all year and a second is born in July, the nominal total is EUR 1,800 but the changing-count cap is `4,000 × (29% × 6/12 + 36% × 6/12) = EUR 1,300`. For month boundaries with sufficient base below the taper threshold, a June 15th birthday gives `6 × 100 + 6 × 50 = EUR 900`; a June 18th birthday gives `6 × 50 = EUR 300`; a child born or adopted in June gives seven eligible months, or EUR 700 if under 15 ([ITA §33(1),(4)–(11)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).\n\n**Mortgage interest bonus (§33a): select the contract date first.** It concerns one housing-loan contract and one domestic flat or family house. Obtain the lender's eligible-interest certificate; a contract amendment is the same contract (§33a(2)). Section 52zzy(1),(2) preserves the following two branches.\n\n| Contract date | Eligible interest and annual maximum | Income test at contract conclusion |\n|---|---|---|\n| By 31 December 2023 | 50% of interest attributable to at most EUR 50,000 of loan principal; maximum EUR 400 per full year. Use the lender-certified eligible portion, not automatically all interest on a larger loan. | Borrower's prior-calendar-year taxable income under the historical §33a(1)(b), divided by 12, at most 1.3 times that same year's official average monthly wage. |\n| After 31 December 2023 | 50% of interest on the housing loan; maximum EUR 1,200 per full year, without the former EUR 50,000 principal restriction. The flat/house must serve exclusively the borrower's own permanent housing, alone or with close persons. | Borrower's prior-calendar-year taxable income under current §33a(1)(b), divided by 12, at most 1.6 times that same year's official average monthly wage. |\n\nIn both branches, the borrower and every co-borrower must be aged **18 through 35 inclusive at the loan application date**. The income test is fixed at contract conclusion, using the calendar year before that conclusion, not the current claim year. With co-borrowers, also test their combined average monthly income against `number of borrowers × 1.3 or 1.6 × reference wage`; only the claimant borrower receives the credit, not each co-borrower (§33a(4),(5)). Use the income categories specified in the applicable version: §§5,6,8 and special §§7,51e in the historical branch; the current branch also includes §51ea. The new branch's own-permanent-housing restriction must not be retrospectively added to the old branch. Do not claim as borrower while also co-borrower on another credited contract; the old/new-contract overlap exclusion in §52zzy(15) also applies. Pre-2018 state mortgage support prevents simultaneous interest-bonus claims until the month after that support last applied (§52zzy(14)).\n\nThe window is **60 consecutive months from the first month of interest charging**. In the first and last calendar years, cap the credit at `annual maximum × eligible months / 12`, and take the lower of that cap and 50% of eligible interest actually paid for the eligible period (§33a(3),(7)). For example, interest beginning in October 2023 gives the old branch a EUR 100 cap for October–December 2023, EUR 400 for full eligible years including 2026, and EUR 300 for January–September 2028. An otherwise eligible new-branch loan starting interest in October 2026 instead has caps of EUR 300 for October–December 2026, EUR 1,200 for each full eligible year and EUR 900 for January–September 2031. An eligible old-contract 2026 interest certificate of EUR 1,000 gives `min(500,400) = EUR 400`; a new-contract certificate of EUR 3,000 gives `min(1,500,1,200) = EUR 1,200` for a full eligible year. For a new loan starting interest in July with EUR 2,000 eligible interest paid, the first-year result is `min(1,000,1,200 × 6/12) = EUR 600`. These examples assume the age, income, property and other eligibility tests are met; no assumed figure is represented as an official reference wage.\n\nApply the mortgage bonus **after** the child bonus. Request payout of any amount exceeding the remaining tax in the return, or claim through the employer's annual settlement (§33a(8),(9)). A non-resident must satisfy the 90%-Slovak-income test (§33a(10)). On the borrower's death, §33a(11) transfers only the unexpired window to the person taking over the debt, with its stated age/income/co-borrower exceptions; the deceased claims through the death month and the successor from the following month ([current ITA §§33a,52zzy](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html); [historical §33a](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20230801.html))."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-pit",
+    "population": "main",
+    "unit": 25,
+    "old_range": [
+      104,
+      110
+    ],
+    "old_text": "| What | When | Rule |\n|---|---|---|\n| Ask the employer for the annual settlement (employment income only) | 15 February 2027 | §38(1) |\n| DPFO type A (employment only) or type B (all other cases) for 2026, and payment | 31 March 2027 | §49(2) |\n| Extension by notice to the tax office before 31 March 2027 | up to 3 full months, to 30 June 2027 | §49(3)(a) |\n| Extension where foreign-source income is included | up to 6 full months, to 30 September 2027 | §49(3)(b) |\n| Advances in the period after the 2026 return if the last known tax was over EUR 5,000 | quarterly by the end of each quarter; monthly by month end if over EUR 16,600 | §34(1)-(3) |",
+    "destination": [
+      123,
+      129
+    ],
+    "disposition": "Filing table retained with SK-L01 settlement qualification.",
+    "destination_texts": [
+      {
+        "range": [
+          123,
+          129
+        ],
+        "text": "| What | When | Rule |\n|---|---|---|\n| Ask the employer for the annual settlement (employment income only; no §11(11) DDS addback required) | 15 February 2027 | §38(1) |\n| DPFO type A (employment only) or type B (all other cases) for 2026, and payment | 31 March 2027 | §49(2) |\n| Extension by notice to the tax office before 31 March 2027 | up to 3 full months, to 30 June 2027 | §49(3)(a) |\n| Extension where foreign-source income is included | up to 6 full months, to 30 September 2027 | §49(3)(b) |\n| Advances in the period after the 2026 return if the last known tax was over EUR 5,000 | quarterly by the end of each quarter; monthly by month end if over EUR 16,600 | §34(1)-(3) |"
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-pit",
+    "population": "earliest",
+    "unit": 8,
+    "old_range": [
+      43,
+      47
+    ],
+    "old_text": "| Taxable base (základ dane) | Rate | Notes |\n| --- | --- | --- |\n| Up to €100,000 | **15%** | Znížená sadzba (reduced rate) |\n| €100,001 – €176,800 (92.8× životné minimum) | **19%** | Základná sadzba |\n| Over €176,800 | **25%** | Zvýšená sadzba |",
+    "destination": "Current LF47–55,74–76,88",
+    "disposition": "Old universal15%/profit-band claims corrected to separate bases and taxable-business-revenue test under current§15; unsupported176800band not revived.",
+    "destination_texts": [
+      {
+        "range": [
+          47,
+          55
+        ],
+        "text": "| Band 1: base up to 154.8 x subsistence minimum (EUR 43,983.32) | 19% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§15(a)(1a)) |\n| Band 2: EUR 43,983.32 to 212.4 x (EUR 60,349.21) | 25% | 2026 | same, §15(a)(1b) |\n| Band 3: EUR 60,349.21 to 264 x (EUR 75,010.32) | 30% | 2026 | same, §15(a)(1c) |\n| Band 4: above EUR 75,010.32 | 35% | 2026 | same, §15(a)(1d) |\n| Business base (§6(1),(2)) when that business revenue is EUR 100,000 or less | 15% | 2026 | same, §15(a)(2) |\n| Business base when that business revenue exceeds EUR 100,000 | 19% / 25% / 30% / 35% bands as above | 2026 | same, §15(a)(3) |\n| Ordinary capital income special base (§7), for example foreign bank interest; government-bond exception below | 19% | 2026 | same, §15(a)(4) |\n| Non-exempt Slovak/EU/EEA government-bond and treasury-bill yields, gross special base (§51ea) | 13%; qualifying retail-government-bond yields and sales exempt under §9(1)(r), unless the bonds are or were business assets | 2026 | [ITA §15(a)(7), §51ea, §9(1)(r), §52zzzc](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) |\n| Foreign dividends special base (§51e) | 7% for profit periods beginning in 2017–2023 or from 1 January 2025; 10% for periods beginning in 2024; 35% non-cooperating-state rule separately applies | Paid in 2026; rate follows profit period | [ITA §15(a)(5),(6), §52zi(5), §52zzz(4), §52zzzb(5)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) |"
+      },
+      {
+        "range": [
+          74,
+          76
+        ],
+        "text": "**How the bands work.** The law sets two separate bases (§4(1)). Base (a) is employment income after allowances, plus rental and other income. Base (b) is business income after allowances and losses. Each base is taxed on its own scale in §15(a): base (a) always on the 19% to 35% bands, base (b) at 15% if business revenue is EUR 100,000 or less, otherwise on the same bands.\n\nTax on a base B above EUR 75,010.32 is 19% x 43,983.32 + 25% x 16,365.89 + 30% x 14,661.11 + 35% x (B - 75,010.32), which is EUR 16,846.64 plus 35% of the excess."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-pit",
+    "population": "earliest",
+    "unit": 28,
+    "old_range": [
+      111,
+      111
+    ],
+    "old_text": "- **Computation method steps** — Step 1: Total income (príjmy) per §5–§8 Step 2: − Expenses (výdavky) — flat-rate or actual Step 3: = Partial base per income type (čiastkový základ dane) Step 4: Sum all partial bases = Total base (základ dane) Step 5: − Non-taxable amount on self (§11 ods.2) Step 6: − Non-taxable amount on spouse (§11 ods.3) Step 7: − Pension savings (max €180) Step 8: = Adjusted taxable base Step 9: Apply rates: 15% on first €100,000; 19% on remainder to €176,800; 25% above Step 10: = Calculated tax (vypočítaná daň) Step 11: − Child bonus (daňový bonus na dieťa) Step 12: − Mortgage interest bonus (daňový bonus na zaplatené úroky) Step 13: − Advance payments / withholding already paid Step 14: = Tax payable or refund (daň na úhradu / preplatok)",
+    "destination": "Current LF74–119,141–151",
+    "disposition": "All computation stages retained with correct separate bases, allowance allocation, credit ordering and return reconciliation; old merged-base15%first100k method corrected.",
+    "destination_texts": [
+      {
+        "range": [
+          74,
+          119
+        ],
+        "text": "**How the bands work.** The law sets two separate bases (§4(1)). Base (a) is employment income after allowances, plus rental and other income. Base (b) is business income after allowances and losses. Each base is taxed on its own scale in §15(a): base (a) always on the 19% to 35% bands, base (b) at 15% if business revenue is EUR 100,000 or less, otherwise on the same bands.\n\nTax on a base B above EUR 75,010.32 is 19% x 43,983.32 + 25% x 16,365.89 + 30% x 14,661.11 + 35% x (B - 75,010.32), which is EUR 16,846.64 plus 35% of the excess.\n\n## The taxable base\n\n**Employment (§5).** Gross pay including benefits in kind, minus the employee's compulsory social and health contributions (§5(8)). Pay for 2026 received by 31 January 2027 belongs to 2026 (§4(3)). Withholding and contributions are in [sk-payroll-social](sk-payroll-social.md).\n\n**Self-employed (§6(1),(2)).** Revenue minus either:\n- **actual expenses** (preukázateľné výdavky), with tax records or double-entry accounts (§6(11)); or\n- **flat-rate expenses** of 60% of revenue, capped at EUR 20,000, if the person is not a VAT payer, or was one for only part of the year (§6(10)). The flat rate covers all expenses except the compulsory social and health contributions, which are deducted on top in the amount paid. The person still keeps a record of income and of inventory and receivables (§6(10), §6(11)(a),(d)).\n\nThe result is the business partial base. A tax loss can be carried forward for the five immediately following tax periods. Full-base loss relief requires micro-taxpayer status **in the deduction period**, not just revenue up to EUR 60,000. Under §2(w), the individual's taxable §6(1),(2) revenue must not exceed EUR 60,000; exclude a dependent person who carries out a controlled transaction in that period, a person declared bankrupt, entering liquidation or granted a payment plan, and a period shorter than twelve consecutive months except one shortened by death. Others can deduct at most 50% of the business base (§30(1)). Thus a EUR 10,000 base and EUR 8,000 unexpired loss allow EUR 8,000 relief for a qualifying micro-taxpayer, but only EUR 5,000 for the same-revenue trader with a controlled transaction; EUR 3,000 remains subject to the original expiry date. Exactly EUR 60,000 passes the revenue condition; EUR 60,000.01 does not ([ITA §§2(w),30](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).\n\n**The 15% rate.** It turns on business revenue under §6(1) and (2), not on profit. Revenue of EUR 100,000 or less gives 15% on the whole business base. Above EUR 100,000 the whole business base goes on the bands (§15(a)(2),(3)).\n\n**Allowances (nezdaniteľné časti, §11).** They reduce only the employment and business bases, never rental, capital or other income (§11(1)).\n- The personal allowance and the spouse allowance are tested on the tax base from §5 and §6(1),(2) income. A taxpayer who at the start of 2026 receives an old-age, early, service or similar foreign pension gets no personal allowance if the pension for the year, including the 13th pension, exceeds the allowance; otherwise the allowance is cut to the difference (§11(6)).\n- The spouse allowance needs a spouse living with the taxpayer who cared for a minor child, received a care allowance, was a registered jobseeker, or is disabled (§11(4)). The spouse's own income is net of their contributions. Months count only if the conditions held at the start of the month (§11(5)).\n- **DDS/PEPP pension contributions:** deduct the taxpayer's own contributions demonstrably paid in the year, with one EUR 180 annual cap across the qualifying products, including qualifying equivalent foreign products (§11(8)/(9)). For DDS, the participant contract must have been concluded after 31 December 2013, or amended to cancel its benefit plan; a qualifying PEPP contract is the alternative. The taxpayer must also have no other DDS participant contract that fails that condition (§11(10)). Thus EUR 240 eligible DDS payments plus EUR 60 eligible PEPP payments give a combined EUR 180 deduction, rather than EUR 180 for each product; retaining another non-qualifying DDS contract prevents the claim. If a statutory early withdrawal is paid after earlier DDS deductions, add back the previously deducted DDS contributions to the tax base within the three tax periods after the withdrawal year (§11(11)). A 2026 early withdrawal with EUR 360 previously deducted therefore requires EUR 360 added back by the end of tax year 2029. Keep the payment records, every DDS contract/amendment, PEPP contract and past deduction/withdrawal history ([ITA §11(8)–(11)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html#paragraf-11)).\n- Allowances come off the employment base first, and only the rest comes off the business base (§11(12)).\n\n**Rental (§6(3)) and other income (§8).** Start with the actual income and supported category-specific expenses. Under §9(1)(g), rental and §8(1)(a) occasional income share EUR 500 of annual income exemption. If they exceed that amount, include only the excess and reduce related expenses in the same taxable-income/total-income proportion. For a rental-only case with EUR 6,000 receipts, EUR 2,000 expenses and the whole EUR 500 available, taxable receipts are EUR 5,500; allowable expenses are `2,000 × 5,500 / 6,000`, approximately EUR 1,833.33, leaving approximately EUR 3,666.67 before the applicable filing-rounding steps. Full EUR 2,000 expenses cannot be deducted against the reduced receipts, and rental expenses cannot create a rental loss (§6(6)). Where qualifying §8(1)(d)–(f) option/security/share disposals also occur, §9(1)(i) applies to their proceeds less statutory disposal costs, with its business-asset and specified noncash-share exclusions; the exemptions under (g) and (i) together cannot exceed EUR 500. Do not give each category another EUR 500. Sales of property, movable things, options, securities, shares in an s.r.o. and crypto-assets (§8(1)(b)–(f),(t)) retain their actual gain/exemption rules; a loss on one type is ignored (§8(2)). The §9(1)(k) securities exemption requires more than one year since acquisition **and** more than one year between regulated-market admission and sale, excluding business assets and the specified §9(1)(p)/§5(7)(q) noncash-share cases, subject to §52zzz(3)'s acquisition-after-2023 transition. These taxable gains enter base (a) on the bands ([ITA §§6, 8, 9 and 52zzz](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).\n\n**Capital income (§7).** Ordinary Slovak bank interest is taxed finally by withholding under §43 and stays out of the return (§7(3)); ordinary foreign bank interest enters the §7 special base at 19% (§15(a)(4)). Identify the instrument before applying that rule. Non-exempt yields on Slovak government bonds/treasury bills and bonds/bills issued by another EU/EEA state enter the **gross, no-expense-deduction §51ea special base at 13%** in 2026 (§15(a)(7)); the temporary 16% rate was for 2025 payments only (§52zzzc(3)). Section 43(3)(v)'s separate 13% withholding route concerns recipients not established or created for business; it is not a blanket withholding rule for individual bondholders. Qualifying Slovak retail government bonds (štátne dlhopisy pre občanov) and equivalent EU/EEA-state retail bonds have exempt yields **and sale income**, unless they are or were the taxpayer's business assets (§9(1)(r)). A non-exempt government-bond coupon of EUR 1,000 therefore gives EUR 130 tax before foreign-tax relief, ordinary foreign bank interest of EUR 1,000 gives EUR 190, and a qualifying non-business retail-bond coupon of EUR 1,000 gives zero. Do not extend the coupon special base to every bond sale ([ITA §§9,15,43,51ea,52zzzc](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)). Dividends from a Slovak company are taxed by withholding. For ordinary foreign profit dividends, select the profit period before the rate: 7% for periods beginning in 2017–2023 and from 1 January 2025, but 10% for periods beginning in 2024, even when all are received in 2026. The 35% non-cooperating-state rule is separate (§51e, §15(a)(5),(6), §52zi(5), §52zzz(4), §52zzzb(5)). For EUR 10,000 gross, those ordinary domestic-law rates give EUR 700 or EUR 1,000 before applicable foreign-tax relief. Pre-2017 profit distributions need their historical regime and are not assigned either rate here.\n\n**Child tax bonus (§33).** Start from the eligible dependent child living in the taxpayer's household and taxable §5 or §6(1),(2) income. Temporary absence from the household does not end eligibility. For each eligible month, the maximum is EUR 100 through the **month of the 15th birthday**, then EUR 50 through the **month of the 18th birthday**, and zero afterwards (§33(1),(2)). Ordinarily the conditions must hold at the month's start, but the birth, adoption, court-ordered substitute-care and commencement-of-continuous-vocational-preparation months count immediately (§33(5)). Only one eligible person claims for a month; parents can divide the year, with mother, father, then another eligible person taking priority if they do not agree (§33(4)).\n\nUse the §5 and §6(1),(2) partial bases before allowances, or their sum B, for the 29%/36%/43%/50%/57%/64% cap for one/two/three/four/five/six-or-more children. If the eligible child count changes, split the cap by the number of months at each child count and sum those proportional entitlements (§33(6),(10)). Above B = EUR 27,432 in 2026, reduce each child's entitlement by one tenth of the excess; for part-year eligibility apply the corresponding eligible-month share, without creating a negative bonus (§33(5),(11)). The tax return can augment B by the other eligible household person's §5/§6(1),(2) base when the claimant lacks the base for the full bonus, using only the proportional months at whose start the other person qualified if they qualified for only part of the year. This is a credit calculation, not a transfer of taxable income; test **both the percentage cap and the high-base taper on augmented B** (§33(8)). The claimant must have at least 90% of all income from Slovak taxable sources, and so must the other person if their base is added (§33(9)). Claim the excess bonus over tax as a payout (§33(7)).\n\nFor a separate low-base case with one eligible under-15 child all year, claimant B = EUR 2,000 gives a EUR 580 cap. An eligible second parent's EUR 4,000 base raises B to EUR 6,000 and the cap to EUR 1,740, allowing the full EUR 1,200 nominal bonus; both parents must pass the 90% test. If that parent qualified for only six start-of-months, add EUR 2,000, not EUR 4,000: cap EUR 1,160. If B is EUR 4,000, one under-15 child qualifies all year and a second is born in July, the nominal total is EUR 1,800 but the changing-count cap is `4,000 × (29% × 6/12 + 36% × 6/12) = EUR 1,300`. For month boundaries with sufficient base below the taper threshold, a June 15th birthday gives `6 × 100 + 6 × 50 = EUR 900`; a June 18th birthday gives `6 × 50 = EUR 300`; a child born or adopted in June gives seven eligible months, or EUR 700 if under 15 ([ITA §33(1),(4)–(11)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).\n\n**Mortgage interest bonus (§33a): select the contract date first.** It concerns one housing-loan contract and one domestic flat or family house. Obtain the lender's eligible-interest certificate; a contract amendment is the same contract (§33a(2)). Section 52zzy(1),(2) preserves the following two branches.\n\n| Contract date | Eligible interest and annual maximum | Income test at contract conclusion |\n|---|---|---|\n| By 31 December 2023 | 50% of interest attributable to at most EUR 50,000 of loan principal; maximum EUR 400 per full year. Use the lender-certified eligible portion, not automatically all interest on a larger loan. | Borrower's prior-calendar-year taxable income under the historical §33a(1)(b), divided by 12, at most 1.3 times that same year's official average monthly wage. |\n| After 31 December 2023 | 50% of interest on the housing loan; maximum EUR 1,200 per full year, without the former EUR 50,000 principal restriction. The flat/house must serve exclusively the borrower's own permanent housing, alone or with close persons. | Borrower's prior-calendar-year taxable income under current §33a(1)(b), divided by 12, at most 1.6 times that same year's official average monthly wage. |\n\nIn both branches, the borrower and every co-borrower must be aged **18 through 35 inclusive at the loan application date**. The income test is fixed at contract conclusion, using the calendar year before that conclusion, not the current claim year. With co-borrowers, also test their combined average monthly income against `number of borrowers × 1.3 or 1.6 × reference wage`; only the claimant borrower receives the credit, not each co-borrower (§33a(4),(5)). Use the income categories specified in the applicable version: §§5,6,8 and special §§7,51e in the historical branch; the current branch also includes §51ea. The new branch's own-permanent-housing restriction must not be retrospectively added to the old branch. Do not claim as borrower while also co-borrower on another credited contract; the old/new-contract overlap exclusion in §52zzy(15) also applies. Pre-2018 state mortgage support prevents simultaneous interest-bonus claims until the month after that support last applied (§52zzy(14)).\n\nThe window is **60 consecutive months from the first month of interest charging**. In the first and last calendar years, cap the credit at `annual maximum × eligible months / 12`, and take the lower of that cap and 50% of eligible interest actually paid for the eligible period (§33a(3),(7)). For example, interest beginning in October 2023 gives the old branch a EUR 100 cap for October–December 2023, EUR 400 for full eligible years including 2026, and EUR 300 for January–September 2028. An otherwise eligible new-branch loan starting interest in October 2026 instead has caps of EUR 300 for October–December 2026, EUR 1,200 for each full eligible year and EUR 900 for January–September 2031. An eligible old-contract 2026 interest certificate of EUR 1,000 gives `min(500,400) = EUR 400`; a new-contract certificate of EUR 3,000 gives `min(1,500,1,200) = EUR 1,200` for a full eligible year. For a new loan starting interest in July with EUR 2,000 eligible interest paid, the first-year result is `min(1,000,1,200 × 6/12) = EUR 600`. These examples assume the age, income, property and other eligibility tests are met; no assumed figure is represented as an official reference wage.\n\nApply the mortgage bonus **after** the child bonus. Request payout of any amount exceeding the remaining tax in the return, or claim through the employer's annual settlement (§33a(8),(9)). A non-resident must satisfy the 90%-Slovak-income test (§33a(10)). On the borrower's death, §33a(11) transfers only the unexpired window to the person taking over the debt, with its stated age/income/co-borrower exceptions; the deceased claims through the death month and the successor from the following month ([current ITA §§33a,52zzy](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html); [historical §33a](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20230801.html)).\n\n**Rounding.** Every calculation is to two decimal places, with 5 and above rounded up (§47)."
+      },
+      {
+        "range": [
+          141,
+          151
+        ],
+        "text": "| Employment income and contributions | Gross taxable income 34; compulsory contributions 36; partial base 39 = 34 − 36 | Gross 36; contributions 37; partial base 38 |\n| Business, expenses and losses | Use type B if business income is present | Table 1 by income category, totals to 39/40, adjusted positive base 45 or loss 46. Loss history in columns 47–50a, current deductions 51–54a; reduced base 55, then 57 after any separately supported deductions. Apply the statutory loss limits above; the printed fields do not create extra relief. |\n| Allowances and separate taxable bases | Personal/spouse/pension allowances 40/41/42, total 43; reduced base 44, tax 45 | Allowances 73/74/75, total 77. Employment uses them first (78); unused allowance 91 reduces business base in 92/94. Non-business base 80 and business base 94 remain separate; taxable business revenue 95 chooses the rate for tax 96. |\n| Foreign relief and tax total | Exemption/credit calculation 48–55; resulting tax 56 | Non-business relief 82–90; business relief 97–105; ordinary §7 relief 107–115. Tax total 116 combines 90,105,115 and the separately computed dividend/bond taxes below. Use the treaty method and supported foreign tax, not a guessed rate. |\n| Child and mortgage credits | Child details 31, annual entitlement 57; mortgage details 33, entitlement 63. Other-parent augmentation, if used, is 56a. | Child details 33, entitlement 117; mortgage details 35, entitlement 123. Other-parent augmentation, if used, is 116a. |\n| Already paid credits and advances | Employer-paid child/mortgage bonuses 59/65; listed advances 68–70; final amount due 71 or overpayment 72 | Employer-paid bonuses 119/125; listed advance/security categories 129–134; final amount due 135 or overpayment 136 |\n| Refund or bonus payout request | Section XI; bonus payout fields 61/67 | Section XIV; bonus payout fields 121/127 |\n\nFor flat-rate business expenses, put the total expense **including contributions** in Table 1 row 10 column 2 and mark the flat-rate choice; repeat the contribution information below the table and in Annex 4 without deducting it twice. Complete Table 1b for the retained inventory/receivables records. Rental uses Table 1 row 11 and flows through 58–65; taxable §8 gains use Table 3 and 69–71. Both join base 80, without consuming the business allowance again. Ordinary §7 income uses Table 2 and 66–68, tax 106 and, after any relief,115. The §51e dividend calculation is in Annex 2 (tax total row 28); §51ea government-bond yields use Annex 3 (tax total row 14); both feed 116. Keep exempt retail-bond receipts out of these taxable-yield fields.\n\nFollow each form's printed settlement formula. It adds back child or mortgage bonuses already paid by the employer, then subtracts the permitted advances; mortgage-bonus amounts in A65/B125 concern a return after the employer's annual settlement. Subtracting the full annual bonus again without that reconciliation would duplicate it. Apply the EUR 17 assessment rule and EUR 5 payment rule only on their stated conditions. Retain employer income/advance certificates, the lender certificate and any other-parent evidence supporting the fields. Count the actual attachments: the type B built-in annexes count only when completed (row 154), whereas type A counts all attached documents (row 86). Sources: actual forms, type A pp.2–6, type B pp.3–13,17–20; matching 2026 instructions."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-pit",
+    "population": "earliest",
+    "unit": 36,
+    "old_range": [
+      138,
+      138
+    ],
+    "old_text": "- **Conditions for child bonus** — Taxpayer's income must be at least €3,876 (6× minimum wage); Child must live in household; For high-income taxpayers (base > €25,740): bonus may be limited",
+    "destination": "Current LF62–65,100–104",
+    "disposition": "Child credit ages, month endpoints, household/base caps and high-base taper retained/corrected; obsolete3876minimum is not revived.",
+    "destination_texts": [
+      {
+        "range": [
+          62,
+          65
+        ],
+        "text": "| Child tax bonus, through the month of the 15th birthday | EUR 100 a month | 2026 | same, §33(1)(b) |\n| Child tax bonus, after the 15th-birthday month through the 18th-birthday month | EUR 50 a month | 2026 | same, §33(1)(a) |\n| Child tax bonus cap, as % of the employment or business base | 29% (1 child), 36% (2), 43% (3), 50% (4), 57% (5), 64% (6 or more) | 2026 | same, §33(6) |\n| Child tax bonus taper threshold: 1.5 x 12 x average monthly wage of 2024 (EUR 1,524) | EUR 27,432; above it the bonus per child falls by 1/10 of the excess | 2026 | same, §33(11); wage: https://www.employment.gov.sk/files/slovensky/ministerstvo/analyticke-centrum/2025/sprava_sossr_2024_pub.pdf |"
+      },
+      {
+        "range": [
+          100,
+          104
+        ],
+        "text": "**Child tax bonus (§33).** Start from the eligible dependent child living in the taxpayer's household and taxable §5 or §6(1),(2) income. Temporary absence from the household does not end eligibility. For each eligible month, the maximum is EUR 100 through the **month of the 15th birthday**, then EUR 50 through the **month of the 18th birthday**, and zero afterwards (§33(1),(2)). Ordinarily the conditions must hold at the month's start, but the birth, adoption, court-ordered substitute-care and commencement-of-continuous-vocational-preparation months count immediately (§33(5)). Only one eligible person claims for a month; parents can divide the year, with mother, father, then another eligible person taking priority if they do not agree (§33(4)).\n\nUse the §5 and §6(1),(2) partial bases before allowances, or their sum B, for the 29%/36%/43%/50%/57%/64% cap for one/two/three/four/five/six-or-more children. If the eligible child count changes, split the cap by the number of months at each child count and sum those proportional entitlements (§33(6),(10)). Above B = EUR 27,432 in 2026, reduce each child's entitlement by one tenth of the excess; for part-year eligibility apply the corresponding eligible-month share, without creating a negative bonus (§33(5),(11)). The tax return can augment B by the other eligible household person's §5/§6(1),(2) base when the claimant lacks the base for the full bonus, using only the proportional months at whose start the other person qualified if they qualified for only part of the year. This is a credit calculation, not a transfer of taxable income; test **both the percentage cap and the high-base taper on augmented B** (§33(8)). The claimant must have at least 90% of all income from Slovak taxable sources, and so must the other person if their base is added (§33(9)). Claim the excess bonus over tax as a payout (§33(7)).\n\nFor a separate low-base case with one eligible under-15 child all year, claimant B = EUR 2,000 gives a EUR 580 cap. An eligible second parent's EUR 4,000 base raises B to EUR 6,000 and the cap to EUR 1,740, allowing the full EUR 1,200 nominal bonus; both parents must pass the 90% test. If that parent qualified for only six start-of-months, add EUR 2,000, not EUR 4,000: cap EUR 1,160. If B is EUR 4,000, one under-15 child qualifies all year and a second is born in July, the nominal total is EUR 1,800 but the changing-count cap is `4,000 × (29% × 6/12 + 36% × 6/12) = EUR 1,300`. For month boundaries with sufficient base below the taper threshold, a June 15th birthday gives `6 × 100 + 6 × 50 = EUR 900`; a June 18th birthday gives `6 × 50 = EUR 300`; a child born or adopted in June gives seven eligible months, or EUR 700 if under 15 ([ITA §33(1),(4)–(11)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html))."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-pit",
+    "population": "earliest",
+    "unit": 47,
+    "old_range": [
+      169,
+      169
+    ],
+    "old_text": "**Advance payments (Preddavky na daň)**",
+    "destination": "Current LF72,129,133",
+    "disposition": "Advance thresholds/frequencies preserved with exactstrict5000boundary and19%last-known-tax calculation; exactly5000does not triggerquarterly.",
+    "destination_texts": []
+  },
+  {
+    "slug": "sk-corporate-income-tax",
+    "population": "main",
+    "unit": 15,
+    "old_range": [
+      71,
+      71
+    ],
+    "old_text": "**Depreciation (§ 26 and § 27).** Tangible assets go into one of seven groups. Straight-line annual depreciation (§ 27) is entry price divided by the period. In the first year only the months from the month the asset is put into use count. Assets in groups 2 and 3 may instead be depreciated by the accelerated method (§ 28); the method is chosen per new asset and cannot be changed (§ 26(3)). A micro-taxpayer may depreciate assets placed in use in a micro-taxpayer period in groups 0 to 4 in any amount it chooses within the group period, except cars with an entry price of EUR 48,000 or more (§ 26(12)).",
+    "destination": [
+      71,
+      71
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          71,
+          71
+        ],
+        "text": "**Depreciation (§ 26 and § 27).** Tangible assets go into one of seven groups. Straight-line annual depreciation (§ 27) is entry price divided by the period. In the first year only the months from the month the asset is put into use count. Assets in groups 2 and 3 may instead be depreciated by the accelerated method (§ 28); the method is chosen per new asset and cannot be changed (§ 26(3)). A micro-taxpayer may depreciate assets placed in use in a micro-taxpayer period in groups 0 to 4 in any amount it chooses within the group period, except cars with an entry price of EUR 48,000 or more (§ 26(12))."
+      }
+    ]
+  },
+  {
+    "slug": "sk-corporate-income-tax",
+    "population": "main",
+    "unit": 18,
+    "old_range": [
+      85,
+      87
+    ],
+    "old_text": "**Interest: two separate limits.**\n- **§ 21a (thin capitalisation).** Interest and related costs on loans from a related person (závislá osoba) are not deductible to the extent they exceed 25% of EBITDA. EBITDA here is accounting profit before tax plus the depreciation and interest expense in it. Banks, insurers and leasing companies are out. § 21a does not apply where the company has already added back interest under § 17k.\n- **§ 17k (ATAD rule).** If net interest expense is above EUR 3,000,000, the excess over 30% of the tax base (increased by net interest and tax depreciation) is added back. Most owner-managed companies never reach the EUR 3,000,000 floor.",
+    "destination": [
+      103,
+      111
+    ],
+    "disposition": "Both interest limits retained, corrected sequencing/denominators/capitalisation and carry boundaries.",
+    "destination_texts": [
+      {
+        "range": [
+          103,
+          111
+        ],
+        "text": "**Interest: apply the two limits in order.** Both concern double-entry/IFRS corporate borrowers and relevant Slovak permanent establishments. First test §17k; §21a is switched off **only if the base was increased under §17k**, not merely because §17k was considered (§21a(4)).\n\n1. **§17k scope and exceptions.** It covers net borrowing costs under contracts concluded after 31 December 2023, including later amendments to older contracts (§52zzr). It is not limited to related-party debt. Paragraph (8) excludes banks/foreign-bank branches; the specified insurers/reinsurers and branches; the financial entities identified in footnote 105b; and a borrower whose dependent persons under §2(n) are **only individuals**. Check that last exception before imposing a corporate-group calculation on an owner-managed business. The footnote identifies the statutory pension, supplementary-pension, financial-intermediation and collective-investment entities; this Guide's financial-sector exclusion remains.\n2. **Find net borrowing costs N.** From borrowing expenses that otherwise are tax expenses in the period, subtract taxable interest income/economically equivalent returns, including interest finally taxed by withholding under §17k(5) (§17k(3)–(5)). Include debt interest, bond/bill yields, finance-lease interest, debt-related derivatives, financing foreign-exchange differences, guarantees, contractual financing fees, arm's-length financing amounts and equivalent payments. Capitalised interest is included in the proportion in which it enters tax cost through the asset/technical-improvement cost or residual value (§17k(4)(e)); it is not automatically all deducted or blocked when paid.\n3. **Build the statutory denominator.** The sum S in §17k(6) is the §§17–29 ordinary base less foreign-taxed income/bases removed by exemption, **plus** the §17f exit-tax base, §51e special base and bases taxed by final withholding. Remove the v.o.s./k.s. partnership base shares specified in §17k(9),(10). Use the pre-adjustment base defined by §17(38), excluding its listed circular adjustments (§17(19)(h),(l), §17(34),(35),(37), §17k, §19(3)(n), §21(1)(h)); do not use taxable revenue, accounting EBITDA or the base after tax losses. Add N and tax depreciation actually included under §19(3)(a)/§22(12): `tax EBITDA = S + N + D`.\n4. **Current-period adjustment and carry.** Only if N **exceeds EUR 3,000,000**, increase the base by the amount by which N exceeds `30% × tax EBITDA` (§17k(2)). Exactly EUR 3,000,000 does not trigger that adjustment. The EUR 3,000,000 test is not a deductible allowance to subtract from the excess and is not an alternative floor for the 30% cap. Track blocked N by origin period. It can be deducted in the next **five immediately following periods**, only to the extent current N plus the older amounts deducted does not exceed that period's §17k(2) calculated capacity (§17k(7)); unused capacity itself is not a carried tax asset. For a positive-capacity case with current N = EUR 3,200,000 and 30% capacity EUR 3,600,000, at most EUR 400,000 of still-live blocked costs can be deducted. A EUR 1,900,000 balance becomes EUR 1,500,000; a 2026 blocked amount expires after the fifth following period, 2031 for consecutive calendar years. Paragraph (7) permits qualifying legal-successor carryover only on its stated anti-avoidance conditions, apportioned by transferred equity where there are several successors; reorganisations remain specialist work.\n5. **§21a if no §17k increase.** For a related lender, covered interest and borrowing costs above **25% of accounting profit before tax plus the depreciation and interest expense included in that profit** are disallowed. Exclude loans/loan portions whose interest forms asset acquisition/own cost (§21a(1)); that capitalisation exclusion differs from §17k's later tax-cost inclusion. An apparently independent lender is treated as related for the relevant loan if lending is conditional on a directly connected loan, borrowing or deposit supplied to that lender by a related person: the back-to-back rule (§21a(2)). Banks/foreign-bank branches, the specified insurers/reinsurers/branches, footnote-105b financial entities and leasing companies are excluded borrowers (§21a(3)). The deduction is `min(covered costs, max(0, 25% × accounting EBITDA))`; disallow only the covered costs less that deduction. If accounting EBITDA is zero or negative, disallow the covered costs in full, never more than those costs ([Financial Administration, low-capitalisation FAQ5](https://podpora.financnasprava.sk/663968-Pravidl%C3%A1-n%C3%ADzkej-kapitaliz%C3%A1cie-)). Section 21a provides no five-period carry-forward; do not transfer §17k(7)'s carry to it.\n\nFor example, a non-excluded borrower has ordinary pre-adjustment base EUR 2,000,000, exempted foreign base EUR 500,000, exit base EUR 200,000, §51e base EUR 100,000 and final-withholding base EUR 200,000: S = EUR 2,000,000. With N = EUR 4,000,000 and D = EUR 1,000,000, tax EBITDA is EUR 7,000,000, capacity EUR 2,100,000 and §17k add-back EUR 1,900,000. There is no additional §21a adjustment. Separately, where §17k makes no increase, EUR 120,000 debt costs including EUR 20,000 capitalised interest leave EUR 100,000 covered expense; accounting EBITDA EUR 300,000 gives a EUR 75,000 cap and EUR 25,000 §21a disallowance. The same result applies to a qualifying back-to-back loan, even with an independent lender ([ITA §§17(38),17k,21a,52zzr](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html))."
+      }
+    ]
+  },
+  {
+    "slug": "sk-corporate-income-tax",
+    "population": "main",
+    "unit": 21,
+    "old_range": [
+      93,
+      100
+    ],
+    "old_text": "**Minimum tax (§ 46b).** A company pays the minimum tax for its revenue band (table above) if its tax after reliefs and foreign tax credit is lower than that figure, or if it has a tax loss. A shorter period is pro-rated by months (§ 46b(6)). It is halved for a company whose staff are at least 20% disabled employees (§ 46b(3)). It does not apply to:\n- a company filing for the first time, for the period in which it was set up (unless it is a successor of a company dissolved without liquidation);\n- non-profit taxpayers under § 12(3) and (4);\n- a company running a sheltered workshop;\n- the special periods in liquidation or bankruptcy;\n- a land community (pozemkové spoločenstvo) with only its own activities and taxable revenue up to EUR 10,000;\n- a company from the period in which it receives notice of proceedings to dissolve it;\n- a registered social enterprise (§ 46b(7)).",
+    "destination": [
+      117,
+      124
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          117,
+          124
+        ],
+        "text": "**Minimum tax (§ 46b).** A company pays the minimum tax for its revenue band (table above) if its tax after reliefs and foreign tax credit is lower than that figure, or if it has a tax loss. A shorter period is pro-rated by months (§ 46b(6)). It is halved for a company whose staff are at least 20% disabled employees (§ 46b(3)). It does not apply to:\n- a company filing for the first time, for the period in which it was set up (unless it is a successor of a company dissolved without liquidation);\n- non-profit taxpayers under § 12(3) and (4);\n- a company running a sheltered workshop;\n- the special periods in liquidation or bankruptcy;\n- a land community (pozemkové spoločenstvo) with only its own activities and taxable revenue up to EUR 10,000;\n- a company from the period in which it receives notice of proceedings to dissolve it;\n- a registered social enterprise (§ 46b(7))."
+      }
+    ]
+  },
+  {
+    "slug": "sk-corporate-income-tax",
+    "population": "main",
+    "unit": 22,
+    "old_range": [
+      102,
+      102
+    ],
+    "old_text": "The excess of minimum tax over the computed tax can be credited against tax in the next three periods. Only the part of that later tax above the minimum tax can absorb it (§ 46b(5)). The credit is lost on dissolution without liquidation, liquidation or bankruptcy (§ 46b(8)).",
+    "destination": [
+      126,
+      126
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          126,
+          126
+        ],
+        "text": "The excess of minimum tax over the computed tax can be credited against tax in the next three periods. Only the part of that later tax above the minimum tax can absorb it (§ 46b(5)). The credit is lost on dissolution without liquidation, liquidation or bankruptcy (§ 46b(8))."
+      }
+    ]
+  },
+  {
+    "slug": "sk-corporate-income-tax",
+    "population": "earliest",
+    "unit": 4,
+    "old_range": [
+      17,
+      27
+    ],
+    "old_text": "- **Overview of CIT structure** — Slovak corporate income tax (daň z príjmov právnických osôb) moved to a three-tier rate structure from 1 January 2025, with a reduced 10% rate for small companies and a new top 24% rate for the largest taxpayers. Resident companies are taxed on worldwide income; non-residents on Slovak-source income.  _(Income Tax Act (Act No. 595/2003 Coll.))_\n- **Reduced CIT rate (small companies)** — 10% percent (where taxable income does not exceed EUR 100,000 in the tax period)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_\n- **Standard CIT rate** — 21% percent (where taxable income is between EUR 100,000 and EUR 5,000,000)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_\n- **Top CIT rate (large taxpayers)** — 24% percent (where taxable income exceeds EUR 5,000,000)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_\n- **Tax base** — Accounting profit adjusted for tax purposes (non-deductible items added back, exempt items removed)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/income-determination)_\n- **Minimum tax (tax licence)** — EUR 340 up to EUR 1,540+ EUR (Minimum corporate tax reintroduced from 2024, scaled by taxable revenue (approx bands — confirm exact 2025 revenue tiers))  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_\n- **WHT on dividends to companies/non-residents** — 0% / 35% percent (Generally 0% to corporate shareholders in cooperating states; 35% to non-cooperating jurisdictions)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_\n- **WHT on interest** — 19% / 35% percent (19% standard; 35% to non-cooperating jurisdictions; reduced/0% under EU Interest-Royalty Directive or treaty)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_\n- **WHT on royalties** — 19% / 35% percent (19% standard; 35% to non-cooperating jurisdictions; reduced/0% under EU Interest-Royalty Directive or treaty)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_\n- **CIT return filing deadline** — Within 3 months after the end of the tax period (31 March for a calendar year); extendable by 3 months (6 for foreign income)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/tax-administration)_\n- **CIT payment deadline** — Tax due payable by the filing deadline; advance payments quarterly or monthly depending on prior-year tax  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/tax-administration)_",
+    "destination": "Current LF21–22,31–56,60–69,115,130–140,168–169",
+    "disposition": "All11 original bullets retained as topics: residence;10/21/24rates;accountingbase;minimum tax corrected from unsupported1540+;corporate dividends;interest;royalties;return;payment/advances. Old secondary-source URLs remain in complete archived text, not adopted as primary law.",
+    "destination_texts": [
+      {
+        "range": [
+          21,
+          22
+        ],
+        "text": "- **Slovak-resident legal persons**: a company with its seat or place of effective management in Slovakia (§ 2(d) second point). Typical clients: s.r.o., a.s., cooperatives. They are taxed on worldwide income.\n- **Non-resident legal persons** with Slovak-source income (§ 16), in particular a permanent establishment in Slovakia. A registered permanent establishment files a DPPO return like a resident. Slovak income with no permanent establishment is mostly taxed by withholding (§ 43); see \"Cross-border points\"."
+      },
+      {
+        "range": [
+          31,
+          56
+        ],
+        "text": "\"Taxable revenue\" below is zdaniteľné príjmy (výnosy): the company's taxable income in the revenue sense, before expenses. It is not the tax base. The rate band is chosen by revenue, then the single rate applies to the whole tax base after losses. There is no slicing: a company with EUR 100,001 of taxable revenue pays 21% on all of its base.\n\n| Item | Rate or amount | Year | Source |\n|---|---|---|---|\n| CIT rate, taxable revenue up to EUR 100,000 (§ 15(b)(1a)) | 10% of the base after losses | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| CIT rate, taxable revenue above EUR 100,000 and up to EUR 5,000,000 (§ 15(b)(1b)) | 21% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| CIT rate, taxable revenue above EUR 5,000,000 (§ 15(b)(1c)) | 24% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Exit tax special base (§ 17f, rate in § 15(b)(3)) | 21% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Dividends received from a non-cooperating state, special base (§ 51e(4), rate in § 15(b)(2)) | 35% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Yield on Slovak, EU or EEA state bonds and treasury bills, special base (§ 51ea, rate in § 15(b)(4)) | 13% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Minimum tax, taxable revenue up to EUR 50,000 (§ 46b(2)(a)) | EUR 340 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Minimum tax, above EUR 50,000 up to EUR 250,000 (§ 46b(2)(b)) | EUR 960 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Minimum tax, above EUR 250,000 up to EUR 500,000 (§ 46b(2)(c)) | EUR 1,920 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Minimum tax, above EUR 500,000 up to EUR 5,000,000 (§ 46b(2)(d)) | EUR 3,840 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Minimum tax, above EUR 5,000,000 (§ 46b(2)(e), new: Act No. 261/2025, periods starting on or after 1 January 2026) | EUR 11,520 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2025/261/20260101.html |\n| Micro-taxpayer (mikrodaňovník): revenue up to EUR 60,000 **and all §2(w) conditions below** | Full loss offset, no 50% cap | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Loss carry-forward (§ 30) | 5 periods; capped at 50% of the base unless a micro-taxpayer | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Related-party interest limit (§21a), subject to lender/borrower and capitalised-interest boundaries below | Covered interest above 25% of accounting EBITDA is not deductible; no §21a adjustment if §17k increased the base | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Interest limitation rule (§17k), subject to exceptions and contract-date transition below | If covered net borrowing costs exceed EUR 3,000,000, add back their excess over 30% of statutory tax EBITDA; blocked costs have a five-period carry-forward | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Depreciable tangible movable asset (§ 22(2)(a)) | Entry price above EUR 1,700 and useful life over one year | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Advances, prior-year tax above EUR 16,600 (§ 42(1)) | Monthly, 1/12 of prior-year tax | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Advances, prior-year tax above EUR 5,000 up to EUR 16,600 (§ 42(2)) | Quarterly, 1/4 of prior-year tax | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| No advances, prior-year tax up to EUR 5,000 (§ 42(3)(a)) | None, unless the tax office orders them | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Withholding tax, standard (§ 43(1)(b)) | 19% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Withholding tax, payee in a non-cooperating state (§ 43(1)(c)) | 35% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Late payment interest (Tax Procedure Code § 156(2)) | 4 times the ECB main rate a year, at least 15% a year, for at most 4 years. At the ECB main refinancing rate of 2.65% (from 16 September 2026) the 15% floor applies | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html |"
+      },
+      {
+        "range": [
+          60,
+          69
+        ],
+        "text": "**Start from accounting profit.** A company that keeps double-entry books starts from the profit or loss in its statutory accounts (Slovak GAAP or IFRS), then adds back and deducts the items the Act lists (§ 17). The result, less tax losses, is the base the rate applies to.\n\n**Common add-backs.**\n- Expenses that are not tax expenses under § 21, such as representation (entertainment) costs, and fines and penalties imposed by public bodies.\n- Expenses deductible only when paid (§ 17(19)). Among them: rent and royalties; marketing and market studies; commissions; legal and advisory services under CPA codes 69.1, 69.2, 70.1 and 70.22; contractual penalties and late payment interest owed by the company; payments to a person in a non-cooperating state once withholding duties are met. If they are booked in 2026 and paid in 2027, they come into the 2027 base.\n- From 1 January 2026, the nondeductible-VAT rule in § 52zzzk applies specifically to VAT restricted under [VAT Act § 85n](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-85n), as its footnote 161 states. That restricted vehicle-related VAT is not a tax expense and, for the specified tangible vehicle, is not part of its tax entry price; the linked later business/private-use VAT change is outside the income-tax base. This is not a general disallowance of all VAT that an exempt or mixed business cannot recover. Ordinary nondeductible VAT and coefficient VAT follow § 19(3)(k): eligible expense VAT can be a tax expense; VAT included in tangible/intangible asset entry price under § 25(5)(b)/(c) instead follows the asset treatment. For example, outside the § 85n restriction, a qualifying machine costing EUR 10,000 plus EUR 2,300 VAT, with 60% VAT recovery, has EUR 920 nondeductible VAT and tax entry price EUR 10,920, not an automatic EUR 920 add-back ([ITA §§ 19, 25 and 52zzzk](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).\n- Accounting depreciation above tax depreciation.\n- Interest caught by § 21a or § 17k (see below).\n\n**Common deductions.** Income not subject to tax, such as most dividends (§ 12(7)(c), below); tax depreciation above accounting depreciation; the R&D super-deduction (§ 30c: 100% of R&D costs, plus 100% of the increase in the two-year average of R&D costs over the average of the two prior periods) and the investment deduction (§ 30e) where the conditions are met."
+      },
+      {
+        "range": [
+          130,
+          140
+        ],
+        "text": "- **Return.** The DPPO return is due within three calendar months after the end of the tax period: 31 March 2027 for calendar 2026 (§ 49(2)). Tax is payable by the same date.\n- **Extension by notice.** A notice filed with the tax office before the deadline moves it by up to three whole calendar months, to 30 June 2027 for calendar 2026. The new date is the end of the month the company names. If the company has foreign-source income, the move is up to six months, to 30 September 2027 (§ 49(3)(a) and (b)). Tax is due on the new date. Companies in liquidation or bankruptcy apply instead, at least 15 days before the deadline (§ 49(3)(c)).\n- **Verified current form.** The [actual Ministry forms package](https://www.mfsr.sk/files/archiv/66/prispevok_16.zip), notice MF/014310/2026-721, supplies **MF/014309/2026-721, DPPOv26 v1.13**, a 21-page sample including the annex templates. It applies where the filing deadline falls **after 31 December 2026**, including a calendar-2026 return due in March 2027. The earlier 15-page MF/012187/2025-721 referenced in the prior Guide belongs to deadlines from 1 January through 31 December 2026; it is retained here as historical form information. Choose by the return's deadline rather than the year in the filename. The matching [2026 instructions, MF/014312/2026-721](https://www.mfsr.sk/files/archiv/36/prispevok_18.zip), identify the same current form.\n- **Electronic filing and annexes.** A legal person entered in the commercial register, and any VAT payer, must file electronically (Tax Procedure Code §14(1)(a)). Some supporting documents can be supplied separately, but the current form's five annex categories remain part of the return even if blank: the combined §13a/§13b annex, §30c, §30ca, §30e, and the **part VIII** additional-recipient annex. The earlier part VII recipient-annex reference belonged to the prior form. Count additional projects, recipient sheets and other documents as the instructions require (current form p.16; instructions p.28).\n- **Minimum tax** is payable by the return deadline (§ 46b(4)).\n- **Advances in 2026 (§ 42).** The tax that sets them (§ 42(6)) is the tax on the base after losses, at the § 15 rate shown in the previous period's return, less reliefs under the Act. It is the computed tax, not the minimum tax. Based on the 2025 tax:\n  - above EUR 16,600: monthly, 1/12 of that tax, by the end of each month;\n  - above EUR 5,000 up to EUR 16,600: quarterly, 1/4, by the end of each calendar quarter (or quarter of the fiscal year);\n  - up to EUR 5,000: none, unless the tax office orders them.\n  Until the deadline for the 2025 return, advances follow the last known tax, from the 2024 return (§ 42(7)). A company formed during the year (other than by merger or division) pays no advances in its first period (§ 42(4)). A company filing its first return pays no advances until that return is due, then makes up the advances that fell due by the end of the following month (§ 42(8)).\n- **Financial transaction tax.** Separate from CIT, Act No. 279/2024 Coll. taxes financial transactions. Its § 6 rates from 1 January 2026: 0.4%, at most EUR 40 per transaction; 0.8% on cash withdrawals; EUR 2 per payment card. This skill does not cover it beyond this pointer."
+      },
+      {
+        "range": [
+          168,
+          169
+        ],
+        "text": "- **Withholding on payments abroad (§ 43).** Tax is withheld at 19% on Slovak-source income of a non-resident without a registered permanent establishment, such as royalties, interest and certain services. The rate is 35% where the payee is in a non-cooperating state. A treaty or the EU Interest and Royalties Directive can reduce or remove it. For the detailed rules see [sk-cross-border](sk-cross-border.md).\n- **Dividends paid abroad.** A dividend paid by a Slovak company to a company is not subject to tax (§ 12(7)(c)). The exception is a recipient company that is a taxpayer of a non-cooperating state (§ 12(7)(c)(1)). That dividend is withheld under § 43(2) (§ 16(1)(e) point 9) at 35% (§ 43(1)(c))."
+      }
+    ]
+  },
+  {
+    "slug": "sk-corporate-income-tax",
+    "population": "earliest",
+    "unit": 5,
+    "old_range": [
+      29,
+      29
+    ],
+    "old_text": "<!-- openaccountants-cta-block -->",
+    "destination": "Current LF371",
+    "disposition": "Original CTA/trust/reference block retained byte-exact.",
+    "destination_texts": []
+  },
+  {
+    "slug": "sk-corporate-income-tax",
+    "population": "earliest",
+    "unit": 6,
+    "old_range": [
+      31,
+      31
+    ],
+    "old_text": "---",
+    "destination": "Current LF373",
+    "disposition": "Original CTA/trust/reference block retained byte-exact.",
+    "destination_texts": []
+  },
+  {
+    "slug": "sk-payroll-social",
+    "population": "main",
+    "unit": 9,
+    "old_range": [
+      29,
+      33
+    ],
+    "old_text": "**Self-employed (SZČO).** From 1 January 2026 a person aged 18 or over is an SZČO for social insurance if they hold a licence to do business or, by an honest declaration, carry on self-employed work that needs no licence (for example an artist or author). Income no longer decides this status (Sociálna poisťovňa, changes from 1 January 2026, item 22).\n- **New entrants** (no licence in the last 60 months) become compulsorily insured from the first day of the sixth calendar month after the month the licence starts.\n- **Returning entrants** (a licence ended less than 60 months ago) are insured from the day the licence starts.\n- Insurance now lasts until the licence ends. The old income test at 1 July no longer ends it.\n- **Transition:** to 30 June 2026 an SZČO who held a licence before 1 January 2026 stays under the old rules. Under those rules insurance started on 1 July 2025 (1 October 2025 with an extended tax deadline) if 2024 income was above EUR 8,580 (Sociálna poisťovňa, 2026 tables, note 3).",
+    "destination": [
+      29,
+      37
+    ],
+    "disposition": "SZCO definition and start/end/Julytransition method retained with ownAct122/current21; former Januaryoverview coverage superseded precisely.",
+    "destination_texts": [
+      {
+        "range": [
+          29,
+          37
+        ],
+        "text": "**Self-employed (SZČO): status and compulsory coverage are separate.** A person aged 18 or over has SZČO status under §5 through the relevant business authorisation or, for work needing no authorisation such as an artist/author, the statutory declaration. Status alone does not establish compulsory insurance. The January 2026 SP overview's account of income-independent coverage was superseded from 1 July 2026 by [Act 122/2026, Art.I points 1–3/9 and Art.II](https://static.slov-lex.sk/pdf/SK/ZZ/2026/122/ZZ_2026_122_20260701.pdf), which amended §21 and added §293gnb. Apply the current [binding Act 461/2003, §§21/293gma/293gnb](https://static.slov-lex.sk/pdf/SK/ZZ/2003/461/ZZ_2003_461_20260901.pdf), not the superseded overview, to coverage:\n\n- **First entry or return after more than 60 months.** Section 21(1)/(3) normally starts compulsory sickness/pension insurance on the first day of the sixth calendar month after the authorisation month. For licence-free work, count from the declared start month, but no earlier than the sixth following month after SP receives the declaration. A first authorisation on 15 January 2026 therefore starts coverage 1 July 2026; one on 15 February starts 1 August. Exactly 60 months since the last activity ended belongs to the returning branch below, not the exception for a gap longer than 60 months.\n- **Return within 60 months, including exactly 60, or resumption after interruption.** Section 21(3) starts on renewed authorisation or the declared activity start, no earlier than declaration delivery; interruption resumes the day after it ends. First apply §21(4)'s exception: use the 1 July assessment, or 1 October for an extended return deadline, preceding the relevant return/resumption and the preceding calendar year's business income. Coverage does not start under this returning rule if that income does not exceed 10.5 times the adult subsistence amount at 1 January of the income year, including the specified low-income non-filer. For 2025 income assessed in 2026 that threshold is EUR 2876.90: EUR 2876.90 does not exceed it; EUR 2876.91 does. Non-filing because there was no SZČO activity in that prior year is a different fact and does not itself qualify for this low-income exception. SP's current worked case of activity in January–June 2026, none in 2025, then a return 1 August 2026 starts coverage on that August return.\n- **Annual starts and ends.** Under §21(5), coverage also starts 1 July following a year above the 10.5-times income threshold, or 1 October with an extended filing deadline. A July start also applies where the person was not SZČO in the prior year, except while §21(1)'s initial waiting period is still running. Conversely, coverage ends 30 June, or 30 September for the extended deadline, where prior-year income does not exceed the threshold, including the statutory low-income non-filer. Ending the authorisation/declared activity remains a separate end route under §21(2). A supplementary return or tax assessment changes coverage under §21(6) only if it affects current insurance, from the first day of the following calendar month. Compute each income year's 10.5-times threshold using its own 1 January adult subsistence amount and income-tax rounding (§21(7)); EUR 2876.90 is the 2025-income threshold, not a permanent annual amount.\n- **January–June 2026 transition.** For §293gma(1)'s defined pre 2026 population, the old law applies through 30 June 2026, except where more than 60 months elapsed since the last activity ended. Under that old assessment,2024 income above EUR 8580 started insurance 1 July 2025, or 1 October 2025 with an extended deadline. This does not preserve the old EUR 8580 coverage threshold for the July 2026 assessment.\n- **July/October 2026 transition.** Section 293gnb, rather than superseded §293gma(2)/(3)/(5), governs from 1 July. For the defined transition population uninsured on 30 June and still SZČO on 1 July, coverage starts 1 July if 2025 income exceeds EUR 2876.90 or there was no 2025 SZČO activity. With an extended 2025 return deadline, an uninsured person still SZČO on 1 October starts then if 2025 income exceeds that threshold. For someone insured on 30 June, a non-extended case continues after June only if 2025 income exceeds the threshold; an extended case continues July–September while still SZČO, retains the June base for those months, and continues after September if still SZČO on 1 October and 2025 income exceeds the threshold. The annual low-income end rule also applies. Do not automatically charge the special base to every low-income licence holder.\n\nThe [current SP July 2026 calculator instructions and returning/new-entrant cases](https://www.socpoist.sk/nastroje-sluzby/kalkulacky/kalkulacky-pre-szco/kalkulacka-na-informativny-vypocet-poistneho-pre-5) and [SP's 8 October 2026 assessment notice](https://www.socpoist.sk/news/v-oktobri-2026-dostane-takmer-92-tisic-zivnostnikov-szco-od-socialnej-poistovne-oznamenia-o) confirm the distinction. First decide whether and from when insurance exists; only then compute its base. For an ordinary continuing insured person assessed on 2025 income, EUR 2876.91–9144 inclusive takes the 2026 special base; EUR 9144.01 and above takes the income-derived route with its applicable floor/ceiling. Initial new-entrant coverage under §21(1) uses the special base when the income-derived route does not apply, subject to subsequent annual reassessment."
+      }
+    ]
+  },
+  {
+    "slug": "sk-payroll-social",
+    "population": "main",
+    "unit": 16,
+    "old_range": [
+      73,
+      73
+    ],
+    "old_text": "**Employee social base.** Pay from the work, except income that is not taxable or is exempt from income tax, and except employer contributions to supplementary pension saving (Act 461/2003 §138(1)). A profit share paid to an employee who holds no capital is included. The base is capped at EUR 16,764 a month; employer accident insurance runs on the full pay (§138(10)). From 2026 the employee and employer pay social insurance on any pay accounted during sickness, maternity or care leave. The old exclusion periods are gone for employees (Sociálna poisťovňa, changes from 1 January 2026, item 26). Where someone has several jobs, social contributions run from the highest base down (§138(12)).",
+    "destination": [
+      77,
+      77
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          77,
+          77
+        ],
+        "text": "**Employee social base.** Pay from the work, except income that is not taxable or is exempt from income tax, and except employer contributions to supplementary pension saving (Act 461/2003 §138(1)). The income-tax exemption does not remove qualifying registered-trainer income from the social base: that income is included before its separate trainer deduction. For an employee's qualifying legal relationship as a trainer entered in the register of natural persons in sport, §138c gives a EUR 300 monthly deduction, limited to that relationship's assessment base if lower. Employer accident and guarantee insurance use the employee base before that deduction (§138(6)); do not reduce those two employer bases by the trainer deduction. A profit share paid to an employee who holds no capital is included. The base is capped at EUR 16,764 a month; employer accident insurance runs on the full pay (§138(10)). For remuneration for 2026 periods, the employee and employer pay social insurance on assessment-base income accounted during sickness, maternity or care leave: the old employee exclusion periods are abolished. If pay is accounted after 31 December 2025 for a period before 1 January 2026 containing the then-excluded days, adjust the base under the law effective through 31 December 2025, as the authority's transition instruction requires (Sociálna poisťovňa, changes from 1 January 2026, item 26). Where someone has several jobs, social contributions run from the highest base down (§138(12))."
+      }
+    ]
+  },
+  {
+    "slug": "sk-payroll-social",
+    "population": "main",
+    "unit": 23,
+    "old_range": [
+      89,
+      89
+    ],
+    "old_text": "**SZČO health advance.** 16% of the business tax base from two years earlier (2024 for 2026), taken before contributions paid, divided by the months of business in that year and by 1.486. The advance is at least EUR 121.92 (Act 580/2004 §16(2)(b), (3), (8)(a)). The insurer states the amount in the annual reconciliation. An SZČO who is also an employee pays their own SZČO advance, with no minimum (§16(6), (8)(e)).",
+    "destination": [
+      96,
+      96
+    ],
+    "disposition": "Rechecked current destination; prior 423-unit review disposition: F07 concurrentstateinsurance/below3advance",
+    "destination_texts": [
+      {
+        "range": [
+          96,
+          96
+        ],
+        "text": "**SZČO health advance.** 16% of the business tax base from two years earlier (2024 for 2026), taken before contributions paid, divided by the months of business in that year and by 1.486. The ordinary minimum is EUR 121.92, or EUR 60.96 with a disability, where §16(8)(a) applies. The insurer states the advance in the annual reconciliation. For an SZČO who is concurrently an employee or state-insured under §11(7), use the calculated §16(2)(b) advance without the ordinary minimum (§16(6), (8)(e)); that concurrent person need not remit an advance below EUR 3 (§16(9)). Exactly EUR 3 does not meet the below-EUR-3 exception. This concerns advances, not an assumed zero annual reconciliation."
+      }
+    ]
+  },
+  {
+    "slug": "sk-payroll-social",
+    "population": "main",
+    "unit": 41,
+    "old_range": [
+      186,
+      186
+    ],
+    "old_text": "The edge case: if his 2025 income had been EUR 9,144 or less, he would pay on the EUR 396.24 special base, EUR 131.34 a month, not on the EUR 914.40 minimum.",
+    "destination": [
+      203,
+      203
+    ],
+    "disposition": "Old9144orless edge narrowed to actualcoveragepredicate; <=2876.90ends annualcoverage rather than automaticallyspecialbase.",
+    "destination_texts": [
+      {
+        "range": [
+          203,
+          203
+        ],
+        "text": "The edge case: with the same continuing activity and ordinary filing deadline, if his 2025 business income had been EUR 2876.91–9144 inclusive, including exactly EUR 9144, he would pay on the EUR 396.24 special base during July–December 2026, EUR 131.34 a full month, rather than the EUR 914.40 ordinary minimum. At EUR 2876.90 or below, his annual coverage ends 30 June under §21(5), rather than automatically charging that special base; a genuinely new entrant or a person with no prior-year SZČO status must instead follow the separate start rules above. The special base itself resets in January 2027."
+      }
+    ]
+  },
+  {
+    "slug": "sk-payroll-social",
+    "population": "earliest",
+    "unit": 4,
+    "old_range": [
+      17,
+      26
+    ],
+    "old_text": "- **Employee social-insurance contributions** — 9.4% of gross remuneration (pension, sickness, disability, unemployment) percent  _(Social Insurance Act (Act No. 461/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_\n- **Employee health-insurance contribution** — 4% of remuneration in 2025 (no maximum assessment base); reduced rates apply for persons with disabilities percent (Rises to 5% from 2026 — 2025 rate is 4%; confirm)  _(Act on Health Insurance (Act No. 580/2004 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_\n- **Employer social-insurance contributions** — 24.4% of gross remuneration (excluding accident insurance) percent  _(Social Insurance Act (Act No. 461/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_\n- **Employer accident insurance** — 0.8% of total payroll, with no maximum assessment base percent  _(Social Insurance Act (Act No. 461/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_\n- **Employer health-insurance contribution** — 11% of remuneration, with no maximum assessment base percent  _(Act on Health Insurance (Act No. 580/2004 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_\n- **Maximum monthly assessment base (social insurance)** — EUR 15,730 per month for 2025 (11x the average wage of two years prior) EUR (Applies to social insurance only; health insurance is uncapped)  _(Social Insurance Act (Act No. 461/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_\n- **Maximum monthly employee social contribution** — Approx. EUR 1,478.62 per month (9.4% of the EUR 15,730 cap) EUR ((approx — derived from 2025 cap; confirm))  _(Social Insurance Act (Act No. 461/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_\n- **Income tax withholding on wages (PAYE-equivalent)** — Employer withholds monthly advance income tax at 19% (and 25% above the monthly equivalent of the band), reconciled in the annual return or employer annual reconciliation  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/taxes-on-personal-income)_\n- **Contribution remittance deadline** — Social and health contributions are due on the employer's regular payday for the relevant month  _(Social Insurance Act (Act No. 461/2003 Coll.); Act on Health Insurance (Act No. 580/2004 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_\n- **Withheld wage tax remittance deadline** — By the 5th day after the wages are paid ((confirm exact statutory day))  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/tax-administration)_",
+    "destination": "Current LF47–73,77–96,105–111",
+    "disposition": "All10originalbullets retained: social9.4/24.4, employeehealth4→5, employerhealth11, accident.8uncapped, cap15730→16764, roundedmax1478.62→1575.81, wagebandsnow19/25/30/35, payday and5dayremittance. Exact obsolete figures/secondaryURLs archived, not revived as2026law.",
+    "destination_texts": [
+      {
+        "range": [
+          47,
+          73
+        ],
+        "text": "| Employee social insurance: sickness 1.4%, old age 4%, disability 3%, unemployment 1% | 9.4% of gross pay | 2026 | [Sociálna poisťovňa, 2026 tables](https://www.socpoist.sk/socialne-poistenie/platenie-poistneho/tabulky-platenia-poistneho/tabulky-platenia-poistneho-od-1-6?ref=2435); Act 461/2003 §§ 130 to 136 |\n| Employer social insurance: sickness 1.4%, old age 14%, disability 3%, unemployment 0.5%, short-time support 0.5%, guarantee 0.25%, solidarity reserve 4.75% | 24.4% of gross pay, capped | 2026 | Sociálna poisťovňa, 2026 tables; Act 461/2003 §§ 130 to 137 |\n| Employer accident insurance | 0.8%, no cap | 2026 | Act 461/2003 § 133, §138(10) |\n| Employer unemployment rate where it pays no short-time support contribution (work agreements) | 1% instead of 0.5% + 0.5% | 2026 | Act 461/2003 §128(1)(g), §136(b) |\n| Second pillar (II. pilier) saver | 4% of the employer's 14% old-age rate goes to the saver's pension fund; the total rate is unchanged | 2026 | Act 461/2003 §131(2); Sociálna poisťovňa, changes from 1 January 2026, item 13 |\n| Maximum monthly social assessment base (11 x EUR 1,524 average monthly wage for 2024) | EUR 16,764 | 2026 | Sociálna poisťovňa, 2026 tables, note 2; Act 461/2003 §138(9), (10) |\n| Maximum monthly social insurance | Employee EUR 1,575.81; employer EUR 4,090.41 plus 0.8% accident on the full pay | 2026 | Sociálna poisťovňa, 2026 tables |\n| Health insurance, employee | 5% (2.5% for a person with a disability), no cap | 2026 | [Act 580/2004](https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html) §12(1)(a); [VšZP, changes from 1 January 2026](https://www.vszp.sk/platitelia/platenie-poistneho/oznamenia-zmeny/zmeny-od-01-01.2026/) |\n| Health insurance, employer | 11% (5.5% for an employee with a disability), no cap, for 2026 and 2027 | 2026 | Act 580/2004 §38ezk(c) |\n| Health insurance, SZČO | 16% (8% with a disability), for 2026 and 2027 | 2026 | Act 580/2004 §38ezk(b); VšZP, changes from 1 January 2026 |\n| Minimum monthly health advance, SZČO (16% of 50% of EUR 1,524) | EUR 121.92 (EUR 60.96 with a disability) where the statutory minimum applies; concurrent employment/state-insured exceptions below | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §13(10), §16(8)(a) |\n| Minimum monthly health advance per employee (5% + 11% of the subsistence minimum of EUR 284.13, each rounded down) | EUR 45.45 (employee EUR 14.20 + employer EUR 31.25) for a full month without §16a(2) excluded days; concurrent-employer election below | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §16a, §16(1) |\n| Health deductible amount for a low-paid employee who claims it | Up to EUR 380 a month, zero from EUR 570 of pay; up to EUR 4,560 a year in the reconciliation | 2026 | Act 580/2004 §16(16) to (18), §13a; [VšZP, odpočítateľná položka](https://www.vszp.sk/platitelia/platenie-poistneho/odpocitatelna-polozka/) |\n| SZČO social insurance: sickness 4.4%, old age 18%, disability 6%, solidarity reserve 4.75% | 33.15% of the assessment base | 2026 | Sociálna poisťovňa, 2026 tables; Act 461/2003 §§ 130 to 132, 137 |\n| SZČO minimum social base (60% of EUR 1,524) and payment | EUR 914.40; EUR 303.11 a month | 2026 | Sociálna poisťovňa, 2026 tables, note 1; Act 461/2003 §138(8) |\n| SZČO special base (26% of EUR 1,524) and payment, for insured new entrants and other SZČO with no income-derived base; ordinary continuing 2025-income cases require EUR2876.91–9144 inclusive | EUR 396.24; EUR 131.34 a month | 2026 | [Sociálna poisťovňa, changes from 1 January 2026, item 22](https://www.socpoist.sk/socialne-poistenie/zmeny-v-socialnom-poisteni/najdolezitejsie-zmeny-v-socialnom-poisteni-od-1-1?ref=2441); Act 461/2003 §138(2)(b) |\n| SZČO maximum social payment | EUR 5,557.26 a month | 2026 | Sociálna poisťovňa, 2026 tables |\n| SZČO income test for the 1.486 base | Income (not profit) above EUR 9,144 (50% of the 2024 general assessment base) | 2026 | Sociálna poisťovňa, changes from 1 January 2026, item 22; Act 461/2003 §138(2)(a) |\n| Work agreement deduction (dohoda) for a student or pensioner who claims it | EUR 200 a month off the social base | 2026 | Act 461/2003 §138a |\n| Personal allowance (NČZD), annual and monthly | EUR 5,966.73 and EUR 497.23 (21 x EUR 284.13); tapers above an annual tax base of EUR 26,083.13 | 2026 | [Financial Directorate, 31/DZPaU/2025/I](https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.10.17_031_DZPaU_2025_I.pdf); [Act 595/2003](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) §11(2), §35(1)(b) |\n| Annual tax bands on employment income | 19% to EUR 43,983.32; 25% to EUR 60,349.21; 30% to EUR 75,010.32; 35% above | 2026 | Financial Directorate, 31/DZPaU/2025/I; Act 595/2003 §15(a)(1) |\n| Monthly advance bands | 19% to EUR 3,665.28; 25% to EUR 5,029.10; 30% to EUR 6,250.86; 35% above | 2026 | Financial Directorate, 31/DZPaU/2025/I; Act 595/2003 §35(2) |\n| Child tax bonus | EUR 100 monthly through the child’s 15th-birthday month; EUR 50 from the next month through the 18th-birthday month; zero thereafter | 2026 | Financial Directorate, 31/DZPaU/2025/I; Act 595/2003 §33(1) |\n| Tax bonus cap as a share of the employment tax base | 29% (1 child), 36% (2), 43% (3), 50% (4), 57% (5), 64% (6 or more) | 2026 | Act 595/2003 §33(6) |\n| Tax bonus taper | Each child's bonus falls by 1/10 of the tax base above EUR 27,432 a year (1.5 x 12 x EUR 1,524, the 2024 average wage). In payroll the employer applies it to the month's base above EUR 2,286 (1/12) | 2026 | Act 595/2003 §33(11), §35(5); [Financial Directorate, tax bonus in 2026, question 5](https://podpora.financnasprava.sk/549090-Da%C5%88ov%C3%BD-bonus-na-vy%C5%BEivovan%C3%A9-die%C5%A5a-v-roku-2026) |\n\n**Rounding.** Social insurance: each assessment base and each separate contribution is rounded down to the cent (Act 461/2003 §138(14); 2026 tables, closing note). Health: bases and advances are rounded down to the cent (Act 580/2004 §13(17), §16(1)). Income tax: amounts are rounded half up to two decimals (Act 595/2003 §47)."
+      },
+      {
+        "range": [
+          77,
+          96
+        ],
+        "text": "**Employee social base.** Pay from the work, except income that is not taxable or is exempt from income tax, and except employer contributions to supplementary pension saving (Act 461/2003 §138(1)). The income-tax exemption does not remove qualifying registered-trainer income from the social base: that income is included before its separate trainer deduction. For an employee's qualifying legal relationship as a trainer entered in the register of natural persons in sport, §138c gives a EUR 300 monthly deduction, limited to that relationship's assessment base if lower. Employer accident and guarantee insurance use the employee base before that deduction (§138(6)); do not reduce those two employer bases by the trainer deduction. A profit share paid to an employee who holds no capital is included. The base is capped at EUR 16,764 a month; employer accident insurance runs on the full pay (§138(10)). For remuneration for 2026 periods, the employee and employer pay social insurance on assessment-base income accounted during sickness, maternity or care leave: the old employee exclusion periods are abolished. If pay is accounted after 31 December 2025 for a period before 1 January 2026 containing the then-excluded days, adjust the base under the law effective through 31 December 2025, as the authority's transition instruction requires (Sociálna poisťovňa, changes from 1 January 2026, item 26). Where someone has several jobs, social contributions run from the highest base down (§138(12)).\n\n**Partial-month social insurance.** The monthly figures above assume a full contribution month. If an employee's sickness, pension and unemployment insurance lasts only part of the calendar month, adjust the §138(9) ceiling for the contribution days. For a compulsorily insured SZČO, adjust the applicable income-derived or special base and its applicable minimum/maximum under §138(2), (3), (8), (9) when insurance lasts only part of the month or §140 excludes contribution days. Divide the applicable monthly base by the actual calendar days in that month, round the daily base down to cents, then multiply by the days for which contributions are payable; round each separate fund contribution down to cents. This does not create an employee social minimum or restore the employee sickness/maternity exclusion abolished in 2026. The employer base follows §138(5)/(6), with the separate §138(10) ceiling and uncapped accident insurance. For concurrent activities, §138(12) gives employee income priority over compulsory SZČO income; among employee bases, take the highest first and, if equal, the insurance that started earlier, subject to the aggregate §138(9) ceiling. For example, the authority's May 2026 SZČO case uses EUR 1200 ÷31 → EUR 38.70 daily, then ×20 payable days = EUR 774 base and EUR 256.57 across the four funds, rather than prorating the final monthly payment ([Act 461/2003 §138(12)–(14)](https://static.slov-lex.sk/static/SK/ZZ/2003/461/20260901.html#paragraf-138); [SP partial-month instructions and worked case](https://www.socpoist.sk/socialne-poistenie/platenie-poistneho/poistne-szco-dpo-po-prerusenom-poisteni), read 2026-10-27).\n\n**Employee health base.** Employment income under the health law's own §10b and §13(1), with no ceiling (Act 580/2004; VšZP, employer page). The employer's 11% runs on the gross before any deductible amount (§13(4), §16(2)(c)). Start with the EUR 45.45 combined minimum only for a full month without excluded days. Under §16a(2), reduce that minimum proportionately for calendar days when the person is self-employed, state-insured under §11(7)/(8), disabled, declared missing, or not an employee. Count each excluded calendar day once. Compare the reduced minimum with the actual employee-plus-employer advance, after the applicable deductible amount; only a positive shortfall increases the employee share (§16a(3)/(4)). An employee with concurrent employers can elect not to apply that shortfall increase and must notify the employer within eight days of the employment/concurrency starting, and within eight days of a change. The employee also communicates excluded-day status where another body is not required to notify it; retain the prescribed written notice (§16a(5)). With EUR 200 pay, no deductible amount and no excluded days, ordinary advances are EUR 10 employee plus EUR 22 employer; the EUR 13.45 shortfall increases the employee advance to EUR 23.45. If the same person is state-insured for the entire month, the minimum reduces to zero: actual advances remain EUR 10 and EUR 22, with no minimum shortfall. State-insured status does not itself erase the contributions on employment ([Health Act §16a](https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html#paragraf-16a)).\n\n**Wage tax advance.** Taxable wage = gross taxable pay less the employee's social and health contributions, less EUR 497.23 if the employee has signed the declaration (vyhlásenie) with this employer (Act 595/2003 §35(1), (4), §36(6)). Only one employer may hold that declaration. The spouse allowance and pension savings deductions wait for the annual reconciliation (§35(1)(b)). Apply the monthly bands to the taxable wage, then reduce the advance by the child tax bonus (§35(2), (5)).\n\n**Child tax bonus in payroll.** Granted only by the employer holding the declaration. It is capped at the §33(6) share of the month's employment tax base (gross less employee contributions), and the §33(11) taper applies to that monthly base (§35(5)). If the bonus exceeds the advance, the employer pays the difference from the tax it withheld for all staff. If that is not enough, it pays from its own money and claims the balance from the tax office after the quarter (§35(7)).\n\n**Net pay** = gross − employee social − employee health − tax advance after bonus. **Employer cost** = gross + employer social (with accident) + employer health.\n\n**SZČO social base** (Act 461/2003 §138(2), (3), (8), (9) and (14)). First establish coverage under §21 and the 2026 transition above; income at or below EUR 9144 alone does not establish insurance. Keep the income-derived cycle separate from the calendar-year limits:\n1. For the cycle beginning July 2026, or October 2026 with an extended filing deadline, test 2025 business income (not profit) against EUR 9,144: 50% of the 2024 general assessment base of EUR 18,288. Exactly EUR 9,144 takes the special-base route; income above it takes the 1.486 route. For that route, take the business tax base before social and health contributions, make the statutory adjustments for income and expenses excluded from the assessment base, divide by 12 and by 1.486, and round down to the cent. This income-derived figure runs July to June, or October to September. With an extended return deadline, July–September retains the base used through June (§138(3)).\n2. Apply the minimum and maximum valid for the month being paid. During 2026 the ordinary minimum is EUR 914.40 and the ceiling EUR 16,764. Those amounts reset on 1 January using the general assessment base from two years before the contribution year; the income-derived July/October figure continues until its cycle ends. Do not carry the 2026 floor or ceiling into January 2027, or retest the cycle's income threshold merely because January arrives.\n3. If the income-derived route does not apply, including a new entrant once compulsory insurance starts, use the special base: 26% of one twelfth of the general assessment base from two years before the contribution year. It is EUR 396.24 in 2026 and also resets in January. The 2026 annual reference wage is EUR 1,524: `1,524 × 60% = 914.40`, `1,524 × 11 = 16,764`, and `1,524 × 26% = 396.24`. Future-year amounts require that year's reference wage and law, not reuse of these figures.\n\nEach component (4.4%, 18%, 6%, 4.75%) is rounded down separately. Apply the partial-month social method above where relevant. The existing transition through June 2026 above still applies.\n\n**SZČO health advance.** 16% of the business tax base from two years earlier (2024 for 2026), taken before contributions paid, divided by the months of business in that year and by 1.486. The ordinary minimum is EUR 121.92, or EUR 60.96 with a disability, where §16(8)(a) applies. The insurer states the advance in the annual reconciliation. For an SZČO who is concurrently an employee or state-insured under §11(7), use the calculated §16(2)(b) advance without the ordinary minimum (§16(6), (8)(e)); that concurrent person need not remit an advance below EUR 3 (§16(9)). Exactly EUR 3 does not meet the below-EUR-3 exception. This concerns advances, not an assumed zero annual reconciliation."
+      },
+      {
+        "range": [
+          105,
+          111
+        ],
+        "text": "| Employer social insurance payment and monthly report (výkaz poistného) | On the payday set for the month's pay; if none is set, the last day of the next month; a weekend or holiday moves it to the next working day | Act 461/2003 §143(2), §231(1)(g) |\n| Employer health advances | On the payday for the month's pay; if none is set, the last day of the next month | Act 580/2004 §17(1) |\n| Employer health monthly report (dávka 514), electronic | Within 3 days of the advance due date | Act 580/2004 §20(1), (6); Ministry of Health Decree 159/2018 §2(2); VšZP, employer page |\n| Wage tax advance remitted | Within 5 days after the payday | Act 595/2003 §35(6) |\n| Monthly tax summary (Prehľad) | By the end of the next month | Act 595/2003 §39(9)(a), §49(2) |\n| SZČO social insurance | By the 8th of the next month (January 2026 was due 9 February 2026) | Act 461/2003 §143(1); Sociálna poisťovňa, changes from 1 January 2026, item 23 |\n| SZČO health advance | By the 8th day after the month ends | Act 580/2004 §17(2) |"
+      }
+    ]
+  },
+  {
+    "slug": "sk-payroll-social",
+    "population": "earliest",
+    "unit": 5,
+    "old_range": [
+      28,
+      28
+    ],
+    "old_text": "Slovak payroll funds two systems: social insurance (Sociálna poisťovňa) and public health insurance. Employers withhold income tax and the employee's contributions monthly and remit them with their own employer contributions. Most social-insurance contributions are capped at a maximum monthly assessment base; health insurance is uncapped.",
+    "destination": "Current LF19,25,77–96",
+    "disposition": "Three-body administration, deductions and ceilings preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          77,
+          96
+        ],
+        "text": "**Employee social base.** Pay from the work, except income that is not taxable or is exempt from income tax, and except employer contributions to supplementary pension saving (Act 461/2003 §138(1)). The income-tax exemption does not remove qualifying registered-trainer income from the social base: that income is included before its separate trainer deduction. For an employee's qualifying legal relationship as a trainer entered in the register of natural persons in sport, §138c gives a EUR 300 monthly deduction, limited to that relationship's assessment base if lower. Employer accident and guarantee insurance use the employee base before that deduction (§138(6)); do not reduce those two employer bases by the trainer deduction. A profit share paid to an employee who holds no capital is included. The base is capped at EUR 16,764 a month; employer accident insurance runs on the full pay (§138(10)). For remuneration for 2026 periods, the employee and employer pay social insurance on assessment-base income accounted during sickness, maternity or care leave: the old employee exclusion periods are abolished. If pay is accounted after 31 December 2025 for a period before 1 January 2026 containing the then-excluded days, adjust the base under the law effective through 31 December 2025, as the authority's transition instruction requires (Sociálna poisťovňa, changes from 1 January 2026, item 26). Where someone has several jobs, social contributions run from the highest base down (§138(12)).\n\n**Partial-month social insurance.** The monthly figures above assume a full contribution month. If an employee's sickness, pension and unemployment insurance lasts only part of the calendar month, adjust the §138(9) ceiling for the contribution days. For a compulsorily insured SZČO, adjust the applicable income-derived or special base and its applicable minimum/maximum under §138(2), (3), (8), (9) when insurance lasts only part of the month or §140 excludes contribution days. Divide the applicable monthly base by the actual calendar days in that month, round the daily base down to cents, then multiply by the days for which contributions are payable; round each separate fund contribution down to cents. This does not create an employee social minimum or restore the employee sickness/maternity exclusion abolished in 2026. The employer base follows §138(5)/(6), with the separate §138(10) ceiling and uncapped accident insurance. For concurrent activities, §138(12) gives employee income priority over compulsory SZČO income; among employee bases, take the highest first and, if equal, the insurance that started earlier, subject to the aggregate §138(9) ceiling. For example, the authority's May 2026 SZČO case uses EUR 1200 ÷31 → EUR 38.70 daily, then ×20 payable days = EUR 774 base and EUR 256.57 across the four funds, rather than prorating the final monthly payment ([Act 461/2003 §138(12)–(14)](https://static.slov-lex.sk/static/SK/ZZ/2003/461/20260901.html#paragraf-138); [SP partial-month instructions and worked case](https://www.socpoist.sk/socialne-poistenie/platenie-poistneho/poistne-szco-dpo-po-prerusenom-poisteni), read 2026-10-27).\n\n**Employee health base.** Employment income under the health law's own §10b and §13(1), with no ceiling (Act 580/2004; VšZP, employer page). The employer's 11% runs on the gross before any deductible amount (§13(4), §16(2)(c)). Start with the EUR 45.45 combined minimum only for a full month without excluded days. Under §16a(2), reduce that minimum proportionately for calendar days when the person is self-employed, state-insured under §11(7)/(8), disabled, declared missing, or not an employee. Count each excluded calendar day once. Compare the reduced minimum with the actual employee-plus-employer advance, after the applicable deductible amount; only a positive shortfall increases the employee share (§16a(3)/(4)). An employee with concurrent employers can elect not to apply that shortfall increase and must notify the employer within eight days of the employment/concurrency starting, and within eight days of a change. The employee also communicates excluded-day status where another body is not required to notify it; retain the prescribed written notice (§16a(5)). With EUR 200 pay, no deductible amount and no excluded days, ordinary advances are EUR 10 employee plus EUR 22 employer; the EUR 13.45 shortfall increases the employee advance to EUR 23.45. If the same person is state-insured for the entire month, the minimum reduces to zero: actual advances remain EUR 10 and EUR 22, with no minimum shortfall. State-insured status does not itself erase the contributions on employment ([Health Act §16a](https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html#paragraf-16a)).\n\n**Wage tax advance.** Taxable wage = gross taxable pay less the employee's social and health contributions, less EUR 497.23 if the employee has signed the declaration (vyhlásenie) with this employer (Act 595/2003 §35(1), (4), §36(6)). Only one employer may hold that declaration. The spouse allowance and pension savings deductions wait for the annual reconciliation (§35(1)(b)). Apply the monthly bands to the taxable wage, then reduce the advance by the child tax bonus (§35(2), (5)).\n\n**Child tax bonus in payroll.** Granted only by the employer holding the declaration. It is capped at the §33(6) share of the month's employment tax base (gross less employee contributions), and the §33(11) taper applies to that monthly base (§35(5)). If the bonus exceeds the advance, the employer pays the difference from the tax it withheld for all staff. If that is not enough, it pays from its own money and claims the balance from the tax office after the quarter (§35(7)).\n\n**Net pay** = gross − employee social − employee health − tax advance after bonus. **Employer cost** = gross + employer social (with accident) + employer health.\n\n**SZČO social base** (Act 461/2003 §138(2), (3), (8), (9) and (14)). First establish coverage under §21 and the 2026 transition above; income at or below EUR 9144 alone does not establish insurance. Keep the income-derived cycle separate from the calendar-year limits:\n1. For the cycle beginning July 2026, or October 2026 with an extended filing deadline, test 2025 business income (not profit) against EUR 9,144: 50% of the 2024 general assessment base of EUR 18,288. Exactly EUR 9,144 takes the special-base route; income above it takes the 1.486 route. For that route, take the business tax base before social and health contributions, make the statutory adjustments for income and expenses excluded from the assessment base, divide by 12 and by 1.486, and round down to the cent. This income-derived figure runs July to June, or October to September. With an extended return deadline, July–September retains the base used through June (§138(3)).\n2. Apply the minimum and maximum valid for the month being paid. During 2026 the ordinary minimum is EUR 914.40 and the ceiling EUR 16,764. Those amounts reset on 1 January using the general assessment base from two years before the contribution year; the income-derived July/October figure continues until its cycle ends. Do not carry the 2026 floor or ceiling into January 2027, or retest the cycle's income threshold merely because January arrives.\n3. If the income-derived route does not apply, including a new entrant once compulsory insurance starts, use the special base: 26% of one twelfth of the general assessment base from two years before the contribution year. It is EUR 396.24 in 2026 and also resets in January. The 2026 annual reference wage is EUR 1,524: `1,524 × 60% = 914.40`, `1,524 × 11 = 16,764`, and `1,524 × 26% = 396.24`. Future-year amounts require that year's reference wage and law, not reuse of these figures.\n\nEach component (4.4%, 18%, 6%, 4.75%) is rounded down separately. Apply the partial-month social method above where relevant. The existing transition through June 2026 above still applies.\n\n**SZČO health advance.** 16% of the business tax base from two years earlier (2024 for 2026), taken before contributions paid, divided by the months of business in that year and by 1.486. The ordinary minimum is EUR 121.92, or EUR 60.96 with a disability, where §16(8)(a) applies. The insurer states the advance in the annual reconciliation. For an SZČO who is concurrently an employee or state-insured under §11(7), use the calculated §16(2)(b) advance without the ordinary minimum (§16(6), (8)(e)); that concurrent person need not remit an advance below EUR 3 (§16(9)). Exactly EUR 3 does not meet the below-EUR-3 exception. This concerns advances, not an assumed zero annual reconciliation."
+      }
+    ]
+  },
+  {
+    "slug": "sk-payroll-social",
+    "population": "earliest",
+    "unit": 6,
+    "old_range": [
+      30,
+      30
+    ],
+    "old_text": "<!-- openaccountants-cta-block -->",
+    "destination": "Current LF285",
+    "disposition": "Original CTA/reference text retained byte-exact.",
+    "destination_texts": []
+  },
+  {
+    "slug": "sk-cross-border",
+    "population": "main",
+    "unit": 24,
+    "old_range": [
+      93,
+      96
+    ],
+    "old_text": "- A one-off activity creates a permanent establishment only after more than six months in any 12 months. A building site or construction or assembly project is one only if the activity of the non-resident or its related persons there lasts more than six months.\n- Services provided in Slovakia by the non-resident or its staff create one after more than 183 days in any 12 months.\n- Repeated intermediation of transport or accommodation, including through a digital platform, counts as a fixed place.\n- A dependent agent is one: a person acting on the non-resident's instructions who habitually negotiates, concludes or arranges contracts, or plays the principal role leading to contracts the non-resident concludes without material change, in the non-resident's name or for its property or services.",
+    "destination": [
+      95,
+      98
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          95,
+          98
+        ],
+        "text": "- A one-off activity creates a permanent establishment only after more than six months in any 12 months. A building site or construction or assembly project is one only if the activity of the non-resident or its related persons there lasts more than six months.\n- Services provided in Slovakia by the non-resident or its staff create one after more than 183 days in any 12 months.\n- Repeated intermediation of transport or accommodation, including through a digital platform, counts as a fixed place.\n- A dependent agent is one: a person acting on the non-resident's instructions who habitually negotiates, concludes or arranges contracts, or plays the principal role leading to contracts the non-resident concludes without material change, in the non-resident's name or for its property or services."
+      }
+    ]
+  },
+  {
+    "slug": "sk-cross-border",
+    "population": "main",
+    "unit": 32,
+    "old_range": [
+      116,
+      116
+    ],
+    "old_text": "**Withholding as final tax or as an advance.** Withholding settles the tax (§ 43(6)). A non-resident from an EU or EEA state may instead treat tax withheld on services, royalties, rent of movables, advisory fees and interest as an advance, file a Slovak return, and claim back any excess. A non-resident artist or sportsperson from any state may do the same for § 16(1)(d) income (§ 43(6)(a) and (b), § 43(7)).",
+    "destination": [
+      118,
+      118
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          118,
+          118
+        ],
+        "text": "**Withholding as final tax or as an advance.** Withholding settles the tax (§ 43(6)). A non-resident from an EU or EEA state may instead treat tax withheld on services, royalties, rent of movables, advisory fees and interest as an advance, file a Slovak return, and claim back any excess. A non-resident artist or sportsperson from any state may do the same for § 16(1)(d) income (§ 43(6)(a) and (b), § 43(7))."
+      }
+    ]
+  },
+  {
+    "slug": "sk-cross-border",
+    "population": "main",
+    "unit": 42,
+    "old_range": [
+      142,
+      142
+    ],
+    "old_text": "Interest and royalties paid by a Slovak company (or an EU company's Slovak permanent establishment) to an EU company are exempt if the recipient is the beneficial owner and, for at least 24 months in a row up to the payment date, one of these holds:",
+    "destination": [
+      150,
+      150
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          150,
+          150
+        ],
+        "text": "Interest and royalties paid by a Slovak company (or an EU company's Slovak permanent establishment) to an EU company are exempt if the recipient is the beneficial owner and, for at least 24 months in a row up to the payment date, one of these holds:"
+      }
+    ]
+  },
+  {
+    "slug": "sk-cross-border",
+    "population": "main",
+    "unit": 51,
+    "old_range": [
+      166,
+      166
+    ],
+    "old_text": "The total special base cannot be negative (§ 17f(3)). Temporary transfers for securities financing, collateral, prudential capital or liquidity that return within 12 months are excluded (§ 17f(4)). On a move to an EU or EEA state with a recovery assistance agreement, the tax can be paid in instalments over five years, with interest, on request in the return (§ 17g). A company arriving in Slovakia takes a step-up to the value taxed on exit abroad, capped at fair value (§ 17f(8)).",
+    "destination": [
+      174,
+      174
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          174,
+          174
+        ],
+        "text": "The total special base cannot be negative (§ 17f(3)). Temporary transfers for securities financing, collateral, prudential capital or liquidity that return within 12 months are excluded (§ 17f(4)). On a move to an EU or EEA state with a recovery assistance agreement, the tax can be paid in instalments over five years, with interest, on request in the return (§ 17g). A company arriving in Slovakia takes a step-up to the value taxed on exit abroad, capped at fair value (§ 17f(8))."
+      }
+    ]
+  },
+  {
+    "slug": "sk-transfer-pricing",
+    "population": "main",
+    "unit": 14,
+    "old_range": [
+      47,
+      47
+    ],
+    "old_text": "**Micro-taxpayers.** A micro-taxpayer (mikrodaňovník, revenue up to EUR 60,000) loses that status if it is a dependent person with a controlled transaction in the period (ITA § 2(w)(1)).",
+    "destination": [
+      47,
+      47
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          47,
+          47
+        ],
+        "text": "**Micro-taxpayers.** A micro-taxpayer (mikrodaňovník, revenue up to EUR 60,000) loses that status if it is a dependent person with a controlled transaction in the period (ITA § 2(w)(1))."
+      }
+    ]
+  },
+  {
+    "slug": "sk-transfer-pricing",
+    "population": "main",
+    "unit": 20,
+    "old_range": [
+      79,
+      79
+    ],
+    "old_text": "**Shared costs.** A dependent person may deduct its share of costs that a related person incurred, but only if all four tests are met (§ 17(5)(b)):",
+    "destination": [
+      79,
+      79
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          79,
+          79
+        ],
+        "text": "**Shared costs.** A dependent person may deduct its share of costs that a related person incurred, but only if all four tests are met (§ 17(5)(b)):"
+      }
+    ]
+  },
+  {
+    "slug": "sk-transfer-pricing",
+    "population": "main",
+    "unit": 34,
+    "old_range": [
+      116,
+      120
+    ],
+    "old_text": "| Tier | Who keeps it (art. 3) | Content |\n|---|---|---|\n| **Full** (úplná) | (a) a cross-border significant transaction material under Accounting Act § 17(9) for a taxpayer that reports under IFRS; (b) a cross-border transaction or group above EUR 10,000,000; (c) a material cross-border transaction with a resident of a non-cooperative state; (d) a material cross-border transaction where the taxpayer claims regional investment aid relief; (e) a transaction covered by an APA request; (f) a transaction covered by a request for a corresponding adjustment, except domestic ones; (g) a transaction covered by a dispute resolution request | Group file (structure, business, profit drivers, supply chains, services, intangibles, financing, consolidated accounts, APAs and rulings) and local file (taxpayer, each transaction with value by counterparty, contract, functional analysis, method and why, tested party, comparables and adjustments, reconciliation to the accounts) (art. 4) |\n| **Basic** (základná) | where full does not apply: (a) a material cross-border transaction where the taxpayer's total revenue from operating and financial activity exceeds EUR 8,000,000; (b) a cross-border transaction or group above EUR 1,000,000; (c) a material domestic transaction where the taxpayer claims regional investment aid relief; (d) any cross-border transaction with a resident of a non-cooperative state | Short group file (members, structure, functions, risks, financing) and local file (taxpayer, each transaction with value, contract, functional analysis, description of the TP system) (art. 5) |\n| **Shortened** (skrátená) | everyone else | Met by a properly completed return including Table I. A taxpayer that does not meet it that way, for example for lack of rows, keeps the shortened file in the form annexed to the guideline (art. 3(3), art. 6) |",
+    "destination": [
+      121,
+      125
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          121,
+          125
+        ],
+        "text": "| Tier | Who keeps it (art. 3) | Content |\n|---|---|---|\n| **Full** (úplná) | (a) a cross-border significant transaction material under Accounting Act § 17(9) for a taxpayer that reports under IFRS; (b) a cross-border transaction or group above EUR 10,000,000; (c) a material cross-border transaction with a resident of a non-cooperative state; (d) a material cross-border transaction where the taxpayer claims regional investment aid relief; (e) a transaction covered by an APA request; (f) a transaction covered by a request for a corresponding adjustment, except domestic ones; (g) a transaction covered by a dispute resolution request | Group file (structure, business, profit drivers, supply chains, services, intangibles, financing, consolidated accounts, APAs and rulings) and local file (taxpayer, each transaction with value by counterparty, contract, functional analysis, method and why, tested party, comparables and adjustments, reconciliation to the accounts) (art. 4) |\n| **Basic** (základná) | where full does not apply: (a) a material cross-border transaction where the taxpayer's total revenue from operating and financial activity exceeds EUR 8,000,000; (b) a cross-border transaction or group above EUR 1,000,000; (c) a material domestic transaction where the taxpayer claims regional investment aid relief; (d) any cross-border transaction with a resident of a non-cooperative state | Short group file (members, structure, functions, risks, financing) and local file (taxpayer, each transaction with value, contract, functional analysis, description of the TP system) (art. 5) |\n| **Shortened** (skrátená) | everyone else | Met by a properly completed return including Table I. A taxpayer that does not meet it that way, for example for lack of rows, keeps the shortened file in the form annexed to the guideline (art. 3(3), art. 6) |"
+      }
+    ]
+  },
+  {
+    "slug": "sk-transfer-pricing",
+    "population": "main",
+    "unit": 53,
+    "old_range": [
+      206,
+      211
+    ],
+    "old_text": "1. Documentation tier for 2025: the royalty is cross-border and above EUR 1,000,000, so basic documentation is needed. It is not above EUR 10,000,000, the company does not report under IFRS, and the sister company is not in a non-cooperative state, so full documentation is not (guideline art. 3(1) and (2)).\n2. The Slovak loan has principal above EUR 50,000, so it is significant. It is domestic and the company claims no investment aid, so the interest goes in Table I and no separate file is needed.\n3. Excess royalty: EUR 1,200,000 less EUR 1,080,000 = EUR 120,000, added back (ITA § 17(5)(a)).\n4. Extra tax at 24%: EUR 28,800, paid by the end of the month after the month the company found the error (TC § 16(2)).\n5. Penalty: the ECB rate used is the one on the day the supplementary return is filed (TC § 155(7)). On 30 November 2026 it is 2.65% (in force from 16 September 2026), below 3%, so the 3% floor applies (§ 155(5)). It runs from 1 April 2026, the day after the 31 March 2026 deadline, to 30 November 2026: 244 days. On a 365-day year: 28,800 x 3% x 244 / 365 = EUR 577.58.\n6. Had the office found it on audit instead, the 10% floor would apply over a longer period (TC § 155(1)(f)).",
+    "destination": [
+      225,
+      231
+    ],
+    "disposition": "Rechecked current destination; prior 423-unit review disposition: F02/F20 corrected577.50/118.30;newincome-ratecliffvariantsidentified",
+    "destination_texts": [
+      {
+        "range": [
+          225,
+          231
+        ],
+        "text": "1. Documentation tier for 2025: the royalty is cross-border and above EUR 1,000,000, so basic documentation is needed. It is not above EUR 10,000,000, the company does not report under IFRS, and the sister company is not in a non-cooperative state, so full documentation is not (guideline art. 3(1) and (2)).\n2. The Slovak loan has principal above EUR 50,000, so it is significant. It is domestic and the company claims no investment aid, so the interest goes in Table I and no separate file is needed.\n3. Excess royalty: EUR 1,200,000 less EUR 1,080,000 = EUR 120,000, added back (ITA § 17(5)(a)).\n4. Extra tax at 24%: EUR 28,800, paid by the end of the month after the month the company found the error (TC § 16(2)).\n5. Penalty: the ECB rate used is the one on the day the supplementary return is filed (TC § 155(7)). Assume it is 2.65% on the future 30 November 2026 filing date; this is a scenario input, not a rate observed at the 27 October read date. It is below 3%, so the 3% floor applies (§155(5)). It runs from 1 April 2026, the day after the 31 March 2026 deadline, to 30 November 2026: 244 days. Raw penalty is `28,800 × 3% × 244 / 365 = 577.578082…`; §161 downward rounding to tens of eurocents gives EUR 577.50.\n6. Assume the original declared tax was paid on time and the additional EUR 28,800 is paid by 30 November 2026. Late-payment interest is zero: that is the §16(2) due date for this newly declared difference. If it is instead paid on 10 December, interest runs 1–10 December inclusive, ten days. Assuming the ECB rate when arrears arise remains low enough for the 15% floor, `28,800 × 15% × 10 / 365 = 118.356164…`, rounded down under §161 to EUR 118.30. That future rate is an explicit scenario assumption, not an observed December rate.\n7. Had the office found it on audit instead, the 10% floor would apply over the applicable audit period in the endpoint table (TC §155(1)(f), (2)); count the actual dates rather than assume a fixed duration."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "population": "main",
+    "unit": 11,
+    "old_range": [
+      59,
+      64
+    ],
+    "old_text": "- **Output tax.** Tax is charged on domestic supplies at the rate in force on the day the liability arises. The return also carries the tax the payer self-assesses as customer: intra-EU acquisitions of goods, services from foreign persons under § 69(3), and domestic reverse-charge supplies under § 69(12).\n- **Domestic reverse charge (§ 69(12)).** Applies only when both supplier and customer are payers registered under § 4, § 4b, § 4c or § 5. It covers metal waste and scrap; greenhouse gas emission allowances; real estate the supplier has opted to tax under § 38(8); real estate sold in a forced sale; goods supplied when a security is enforced; cereals and oilseeds in chapters 10 and 12 not normally sold for final consumption; iron and steel in chapter 72 and headings 7301, 7308 and 7314; mobile phones and integrated circuits where the invoice tax base is EUR 5,000 or more; and construction work in section F of the classification, including goods supplied with installation in section F. The supplier invoices without VAT. The customer declares the tax and, if entitled, deducts it.\n- **Input tax.** A payer deducts tax on purchases used for taxable supplies. There is no deduction for hospitality and entertainment (§ 49(7)(a)). Where purchases serve both taxable and exempt supplies, the deductible share follows the coefficient in § 50.\n- **Passenger cars from 1 January 2026 (§ 85n).** For an M1 car, or an L1e or L3e motorcycle, acquired as a long-term asset, leased on a contract that is not short-term, or for goods and services bought to run one, from 1 January 2026 to 30 June 2028, the payer deducts 50%. Private use then counts as neither a supply of services nor a supply of goods. The cap does not apply to vehicles used only for car rental, paid passenger transport including taxis, driving schools, or as demonstration or courtesy cars (§ 85n(4)). It also does not apply where the vehicle is used only for business and the payer keeps electronic records for each vehicle: VIN, registration number, odometer readings at the start, at each period end and at the end, and a log of every trip with the driver, date and time, business purpose, start and end place and kilometres (§ 85n(5) and (6)). The payer must notify the tax office of a § 85n(4) or (5) use by the return deadline for the period of the first deduction. That notice is not needed for vehicles acquired by 31 December 2025 (§ 85n(9)).\n- **Excess deduction (nadmerny odpocet).** If deductible tax is more than tax due, the excess is first set against the next period's liability. Any part not used is refunded within 30 days of filing the next period's return (§ 79(1)). A monthly payer registered at least 12 months, with arrears of not more than EUR 1,000 in the last 6 months, can mark the return and be refunded within 30 days of the return deadline for the period itself (§ 79(2) and (3)). The refund clock stops while a request to fix the return or control statement is open (§ 79(4)).\n- **Rounding.** Figures in the return are rounded to the nearest euro cent, with 0.005 rounded up (§ 78(7)).",
+    "destination": [
+      63,
+      95
+    ],
+    "disposition": "All six old base topics retained; added coefficient/direct attribution, capital assets/property/credit-note methods; old refund scope clarified.",
+    "destination_texts": [
+      {
+        "range": [
+          63,
+          95
+        ],
+        "text": "- **Output tax.** Tax is charged on domestic supplies at the rate in force on the day the liability arises. The return also carries the tax the payer self-assesses as customer: intra-EU acquisitions of goods, services from foreign persons under § 69(3), and domestic reverse-charge supplies under § 69(12).\n- **Domestic reverse charge (§ 69(12)).** Applies only when both supplier and customer are payers registered under § 4, § 4b, § 4c or § 5. It covers metal waste and scrap; greenhouse gas emission allowances; real estate the supplier has opted to tax under § 38(8); real estate sold in a forced sale; goods supplied when a security is enforced; cereals and oilseeds in chapters 10 and 12 not normally sold for final consumption; iron and steel in chapter 72 and headings 7301, 7308 and 7314; mobile phones and integrated circuits where the invoice tax base is EUR 5,000 or more; and construction work in section F of the classification, including goods supplied with installation in section F. The supplier invoices without VAT. The customer declares the tax and, if entitled, deducts it.\n- **Input tax.** A payer deducts tax on purchases used for taxable supplies. There is no deduction for hospitality and entertainment (§ 49(7)(a)). Where purchases serve both taxable and exempt supplies, the deductible share follows the coefficient in § 50.\n- **Passenger cars from 1 January 2026 (§ 85n).** For an M1 car, or an L1e or L3e motorcycle, acquired as a long-term asset, leased on a contract that is not short-term, or for goods and services bought to run one, from 1 January 2026 to 30 June 2028, the payer deducts 50%. Private use is not a deemed supply of services under the stated rule. The goods self-supply exclusion applies only to the extent that input VAT on the goods was not deducted (§85n(1)). The cap does not apply to vehicles used only for car rental, paid passenger transport including taxis, driving schools, or as demonstration or courtesy cars (§ 85n(4)). It also does not apply where the vehicle is used only for business and the payer keeps electronic records for each vehicle: VIN, registration number, odometer readings at the start, at each period end and at the end, and a log of every trip with the driver, date and time, business purpose, start and end place and kilometres (§ 85n(5) and (6)). The payer must notify the tax office of a § 85n(4) or (5) use by the return deadline for the period of the first deduction. That notice is not needed for vehicles acquired by 31 December 2025 (§ 85n(9)).\n- **Excess deduction (nadmerny odpocet).** If deductible tax is more than tax due, the excess is first set against the next period's liability. Any part not used is refunded within 30 days of filing the next period's return (§ 79(1)). A monthly payer that has been a payer with an assigned §4/4b/4c/5 VAT number for at least 12 calendar months before the end of the month in which the excess arose can mark the return for the faster refund. In the six calendar months before that month end, aggregate tax/customs arrears and mandatory contribution arrears must not have exceeded EUR 1,000. The refund is then due within 30 days of that period’s return deadline (§79(2) and (3)). Earlier registration or advance allocation of a number without payer status does not start the payer-tenure clock. The refund clock stops while a request to fix the return or control statement is open (§ 79(4)).\n- **Rounding.** Figures in the return are rounded to the nearest euro cent, with 0.005 rounded up (§ 78(7)).\n\n**Mixed taxable/exempt inputs: § 50 coefficient.** First attribute each purchase to its actual use: eligible inputs exclusively serving supplies with a deduction right are deductible under the ordinary rules; inputs exclusively serving no-credit exempt supplies are not. Apply the coefficient only to common inputs serving both, after the applicable business/private-use and statutory deduction restrictions. Do not reduce every input merely because the business also makes an exempt supply ([§ 49(3)–(6)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-49); [Financial Administration, direct attribution and proportional deduction](https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/odpocitanie-dane)).\n\nFor a positive denominator, let `N` be the VAT-exclusive value of annual supplies carrying a deduction right and `D` the VAT-exclusive value of all annual supplies, after the following exclusions. Include supplies whose place is outside Slovakia, classifying them by their actual deduction entitlement under § 49(6); overseas location alone neither excludes them nor creates a deduction right. Exclude from **both N and D** a business/independent-business-part transfer, sales of assets used in the business other than inventory, occasional exempt financial services under § 39, and occasional property transfers/lettings. Ordinary recurring financial services/property letting are not excluded merely because of their category. Compute `k=ceil(100×N/D)/100`, rounding the **coefficient upward to two decimals**, then multiply eligible common input VAT by k. An exact0.95 stays0.95;0.9501 gives0.96;0.9901 gives1.00 through the ordinary rounding rule. Do not substitute the old unsupported95%-means-full-deduction shortcut ([§ 50(1)–(2)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-50)).\n\nDuring the year use the previous year's coefficient. If it cannot be used, estimate a coefficient from the activity's nature **with the tax administrator's consent**. After year end calculate the coefficient from the completed year's actual values, recompute the annual deductible common-input VAT, and settle the difference from deductions already taken in the **last tax period of that year**, increasing or decreasing deduction as appropriate. Apply the same reconciliation for the part of a year during which a business became or ceased to be a payer. Where the accounting period is a financial year, that financial year replaces calendar year for these calculations ([§ 50(3)–(5)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-50)).\n\nFor example, suppose the prior coefficient is0.60, the year's eligible common input VAT is23,000, and the year's included supplies are240,000 with deduction rights and120,000 without. A separate50,000 disposal of a used business asset is excluded from both values. `N=240,000`, `D=360,000`, so the final coefficient is0.67 and annual common deduction15,410. If13,800 was deducted using0.60, increase deduction by1,610 in the last period. Separately attributable eligible input VAT is added in full; blocked/exclusively no-credit input is not added. In a separate case, suppose the provisional coefficient was0.67 and15,410 was actually deducted during the year on23,000 common VAT. If that case's supported final coefficient is0.61, the annual deduction is14,030: reduce the provisional15,410 deduction by1,380. These are illustrative exact-cent inputs, not a return-row mapping.\n\n\n**Classify the underlying supply.** Salary payments for dependent employment and ordinary remittances of tax/social contributions, loan principal and profit distributions are not, merely because money moves, consideration for the business's taxable supply. Identify any underlying goods or service before entering output or input tax. A bank charge requires classification of the actual bank service under § 39; do not label every bank fee outside VAT ([§§ 2–3](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-2), [§ 39](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-39)).\n\n**Domestic exemption catalogue.** In addition to insurance/financial services and the property rules, check the actual statutory exemption before treating a supply as exempt without input recovery: universal postal services and related goods under § 28; qualifying healthcare under § 29, which expressly does not exempt sales of medicines/medical aids; education meeting § 31's provider/legal conditions; and licensed lotteries/gambling under § 41. Not every courier, training course or health-related sale qualifies. Apply § 49(3) to the associated inputs rather than importing the deduction rights of exports or intra-EU supplies ([§§ 28–41/49](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-28)).\n\n**Transfer of a business.** A transfer or contribution of an enterprise, or a part forming an independent organisational unit, is outside the goods/services supply rules under § 10(1) if the acquirer is or becomes a payer under § 4(1)(d), subject to § 10(2)'s predominantly exempt acquirer exception and its exception for a predominantly exempt transferor. Do not enter it as an ordinary exempt sale without checking those conditions ([§ 10](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-10)).\n\n**Private use and business gifts.** Subject to the specific § 85n vehicle treatment already described, withdrawal of goods for private use or free disposal can be a deemed taxable supply where input tax on the goods or their components was wholly or partly deducted. Business-purpose gifts with a value no greater than 17 euros excluding VAT per item, and business samples, are excluded from that deemed-goods-supply rule. Private use/free services have the separate § 9(2)–(3) rules. Business gifts are not a separate blanket deduction block in § 49(7): establish business use, apply the hospitality/entertainment block where it actually applies, and then check any deemed output tax ([§§ 8(3)/9](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-8), [§ 49](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-49)).\n\n**Capital-goods register.** Separate resale inventory from long-term business assets. Under § 52a/54, the adjustment period includes the first-use year and is five calendar years for qualifying movable assets, and 20 calendar years for the listed property/building categories. The statutory investment-asset definition includes individually functioning movable items costing more than 1,700 euros excluding VAT, and the property categories in § 54(2)(b)–(c). Record original input VAT, initial deduction, first-use year and changes between taxable/exempt or business/private use. Apply § 54 for changed deduction entitlement and § 54a/54d for changed business/private use; perform the applicable adjustment in the final tax period of the year using Annex 1. For a non-calendar accounting year, § 52a(3) substitutes that accounting year. For assets whose adjustment period began by 31 December 2024, § 85kp(2) preserves the pre-2025 § 54/54a/54d and Annex 1 rules; check that transition before applying the current first-use method. The specific § 85n vehicle override still applies ([§ 52a](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-52a), [§§ 54–54d/85kp](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-54)).\n\n**Credit notes.** Cancellation, returned goods and later price decreases/increases require the § 25 tax-base correction, subject to its specific exceptions. Under § 25(6), a post-liability price reduction to another payer can be left uncorrected for tax-base/tax purposes if both parties agree in writing; do not extend this exception to cancellations or price increases generally. A supplier reports the difference in the period the correction document is issued; a reverse-charge customer reports in the period it receives that document, subject to the statutory no-document rule. A customer that previously deducted input tax must reduce it when the base falls under § 53(1)(a); use the period of receipt or, if no document arrives within 30 days of the relevant event, the period in which those 30 days expire under § 53(2)(a). Correct the linked self-assessed output tax where the recipient was liable. Use the original transaction's rate under § 25(7), not a blanket reversal in the original return ([§ 25](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-25), [§ 53(1)–(2)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-53)).\n\n**Older office/property sale.** A sale of a building or qualifying part with its building land is exempt after the five-year test in § 38(1)/(7). That clock refers to first permitted/actual use, whichever is earlier, and can restart after the specified substantial works, including the 40% cost tests. An office sold six years after its relevant first-use event, without an intervening event restarting that clock, therefore meets the age condition. A payer can elect to tax an otherwise exempt qualifying non-residential sale under § 38(8); the election is barred for the listed residential categories. If the taxable sale falls under § 69(12)(c) between the prescribed registered payers, the buyer accounts for VAT. Do not invent a general buyer-consent condition absent from those provisions ([§ 38](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-38), [§ 69(12)(c)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-69)).\n\n**Vehicle boundaries.** N1 vans and N2+ trucks are outside § 85n's defined M1/L1e/L3e class. That removes the special 50% rule, but does not establish unrestricted deduction for private use or exempt activities: apply § 49's ordinary business-use and deduction conditions. For diesel 200 euros plus 46 euros VAT used wholly for taxable business in an N1 delivery van, 46 euros is deductible. The § 85n(1) acquisition cap concerns assets acquired from 1 January 2026; do not retrospectively halve an acquisition deduction merely because a pre-2026 car remains in use. Equally, pre-2026 acquisition did not itself guarantee 100% recovery. For mixed-use running goods/services bought during 1 January 2026–30 June 2028, § 85n(3) applies even when the car was acquired earlier; the notification exception for pre-2026 vehicles in § 85n(9) does not exempt those running costs from the substantive rule ([§ 49](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-49), [§ 85n(1)/(3)/(9)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-85n)).\n\n**Refund offsets and audited refunds.** Refunds remain subject to application against tax arrears under Tax Procedure Code § 79(1)/(7) and § 55(6)–(7); the old 10 euro minimum was not the statutory VAT rule. The Code's refund provision applies appropriately to excess VAT and uses a greater-than 5 euro cash-refund threshold under § 79(2)/(7). If an audit begins within the statutory refund window, VAT Act § 79(6) returns the amount established by the audit within 10 days after the audit ends, with the further final-decision/partial-protocol rules in § 79(6)–(7). There is no blanket 60-day audit or new-registration refund guarantee. A new payer that does not meet the 12-month fast-refund test follows the ordinary § 79(1) route already described. Statutory offsets count as a refund for these purposes ([VAT Act § 79](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-79); [Tax Procedure Code § 79(1)/(2)/(7)/(11)](https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html#paragraf-79))."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "population": "main",
+    "unit": 13,
+    "old_range": [
+      68,
+      79
+    ],
+    "old_text": "| Obligation | Deadline | Source |\n|---|---|---|\n| Tax period | Calendar month. A calendar quarter if § 77(2) is met and the change is notified within 25 days after the end of the month the conditions were met; it takes effect from the next calendar quarter | VAT Act § 77 |\n| VAT return and payment, Slovak payer | 25 days after the end of each tax period; tax paid in the same time | VAT Act § 78(1), (2)(a) |\n| Deadline falling on a Saturday, Sunday or public holiday | Moves to the next working day | Tax Procedure Code § 27(4) |\n| First return when the VAT number arrives after that deadline | Five working days from delivery of the registration decision | VAT Act § 78(2)(a)(1) |\n| VAT return and payment, foreign payer | 25 days after the end of a period in which tax was due, exempt intra-EU or export supplies were made, exempt goods were acquired, or a deduction is claimed | VAT Act § 78(2)(b) |\n| Non-payer liable under § 69 | 25 days after the end of the month the liability arose; no payment if EUR 5 or less | VAT Act § 78(3) |\n| Control statement (kontrolny vykaz) | Electronically, in XML, for every period with a return, 25 days after the period. Not due if the return reports no supplies, or only exempt § 43 or § 47 supplies with no deduction (or only a § 49(2)(d) deduction) | VAT Act § 78a(1), (16) |\n| Answer to a tax office request on the control statement | Five working days from delivery of the request | VAT Act § 78a(13) |\n| EC sales list (suhrnny vykaz) | Monthly, 25 days after the period; quarterly if § 80(2) is met; a § 7 or § 7a registrant supplying § 15(1) services files for each quarter in which it supplied them | VAT Act § 80 |\n| EU SME scheme quarterly report (Slovak business using the scheme abroad) | End of the month after the quarter | VAT Act § 68g(8) |",
+    "destination": [
+      99,
+      110
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          99,
+          110
+        ],
+        "text": "| Obligation | Deadline | Source |\n|---|---|---|\n| Tax period | Calendar month. A calendar quarter if § 77(2) is met and the change is notified within 25 days after the end of the month the conditions were met; it takes effect from the next calendar quarter | VAT Act § 77 |\n| VAT return and payment, Slovak payer | 25 days after the end of each tax period; tax paid in the same time | VAT Act § 78(1), (2)(a) |\n| Deadline falling on a Saturday, Sunday or public holiday | Moves to the next working day | Tax Procedure Code § 27(4) |\n| First return when the VAT number arrives after that deadline | Five working days from delivery of the registration decision | VAT Act § 78(2)(a)(1) |\n| VAT return and payment, foreign payer | 25 days after the end of a period in which tax was due, exempt intra-EU or export supplies were made, exempt goods were acquired, or a deduction is claimed | VAT Act § 78(2)(b) |\n| Non-payer liable under § 69 | 25 days after the end of the month the liability arose; no payment if EUR 5 or less | VAT Act § 78(3) |\n| Control statement (kontrolny vykaz) | Electronically, in XML, for every period with a return, 25 days after the period. Not due if the return reports no supplies, or only exempt § 43 or § 47 supplies with no deduction (or only a § 49(2)(d) deduction) | VAT Act § 78a(1), (16) |\n| Answer to a tax office request on the control statement | Five working days from delivery of the request | VAT Act § 78a(13) |\n| EC sales list (suhrnny vykaz) | Monthly, 25 days after the period; quarterly if § 80(2) is met; a § 7 or § 7a registrant supplying § 15(1) services files for each quarter in which it supplied them | VAT Act § 80 |\n| EU SME scheme quarterly report (Slovak business using the scheme abroad) | End of the month after the quarter | VAT Act § 68g(8) |"
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "population": "main",
+    "unit": 17,
+    "old_range": [
+      87,
+      97
+    ],
+    "old_text": "| Breach | Consequence | Source |\n|---|---|---|\n| Return not filed on time | Fine EUR 100 to 30,000; EUR 100 to 60,000 if not filed by the date in a tax office request (only one of the two is imposed) | Tax Procedure Code § 154(1)(a), § 155(1)(a), (b), (3) |\n| Registration not made on time | Fine EUR 100 to 30,000 | § 155(1)(c) |\n| First breach, fines set within a range | The tax office does not impose a fine set within a range for a first breach | § 155(4) |\n| Tax under-declared, found by the tax office | 3 times the ECB base rate a year (at least 10% a year) on the extra tax, counted daily from the deadline; at least 1% of the assessed sum and at most the sum itself. Two thirds of that fine if the assessment is paid within 15 days | § 155(1)(f), (2), (5), (17) |\n| Supplementary return raising tax | ECB base rate a year (at least 3%); twice the ECB rate (at least 7%) if filed after an audit has started | § 155(1)(g), (h), (5) |\n| Control statement missing, late, incomplete or wrong, or defects not fixed by the requested date | Fine up to EUR 10,000; up to EUR 100,000 for repeated breaches | VAT Act § 78a(15) |\n| Fast refund obtained on false data | Fine up to 1.3% of the refund | VAT Act § 79(8) |\n| Late payment | Interest at 4 times the ECB base rate, at least 15% a year, counted daily from the day after the due date, for at most four years; not charged if EUR 5 or less | Tax Procedure Code § 156(2), (6)(b) |\n| Fines of EUR 5 or less | Not imposed | § 155(11) |",
+    "destination": [
+      146,
+      156
+    ],
+    "disposition": "Exact retained unit; all embedded topics preserved.",
+    "destination_texts": [
+      {
+        "range": [
+          146,
+          156
+        ],
+        "text": "| Breach | Consequence | Source |\n|---|---|---|\n| Return not filed on time | Fine EUR 100 to 30,000; EUR 100 to 60,000 if not filed by the date in a tax office request (only one of the two is imposed) | Tax Procedure Code § 154(1)(a), § 155(1)(a), (b), (3) |\n| Registration not made on time | Fine EUR 100 to 30,000 | § 155(1)(c) |\n| First breach, fines set within a range | The tax office does not impose a fine set within a range for a first breach | § 155(4) |\n| Tax under-declared, found by the tax office | 3 times the ECB base rate a year (at least 10% a year) on the extra tax, counted daily from the deadline; at least 1% of the assessed sum and at most the sum itself. Two thirds of that fine if the assessment is paid within 15 days | § 155(1)(f), (2), (5), (17) |\n| Supplementary return raising tax | ECB base rate a year (at least 3%); twice the ECB rate (at least 7%) if filed after an audit has started | § 155(1)(g), (h), (5) |\n| Control statement missing, late, incomplete or wrong, or defects not fixed by the requested date | Fine up to EUR 10,000; up to EUR 100,000 for repeated breaches | VAT Act § 78a(15) |\n| Fast refund obtained on false data | Fine up to 1.3% of the refund | VAT Act § 79(8) |\n| Late payment | Interest at 4 times the ECB base rate, at least 15% a year, counted daily from the day after the due date, for at most four years; not charged if EUR 5 or less | Tax Procedure Code § 156(2), (6)(b) |\n| Fines of EUR 5 or less | Not imposed | § 155(11) |"
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "population": "main",
+    "unit": 29,
+    "old_range": [
+      173,
+      173
+    ],
+    "old_text": "Not yet confirmed: the row numbers of the 2026 VAT return form and the control statement layout (the official forms were not read, so this skill names no boxes); the ECB base rate on any given date, which sets the fine and interest percentages above the floors; whether the first-breach rule in Tax Procedure Code § 155(4) also covers the control statement fine in VAT Act § 78a(15); the detail of the § 50 coefficient (rounding and de minimis), which was not re-read for this version.",
+    "destination": [
+      250,
+      250
+    ],
+    "disposition": "Oldform/coefficientdetail gaps partly resolved by actualforms/positiveD method; ECBdate needs actualdate and specialfirstchance/annualD0 remain precise.",
+    "destination_texts": [
+      {
+        "range": [
+          250,
+          250
+        ],
+        "text": "Not yet confirmed: the ECB base rate on any given date, which sets the fine and interest percentages above the floors; whether the first-breach rule in Tax Procedure Code § 155(4) also covers the control statement fine in VAT Act § 78a(15); the annual § 50 method where the actual annual included-supplies denominator is zero."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "population": "earliest",
+    "unit": 79,
+    "old_range": [
+      293,
+      298
+    ],
+    "old_text": "| Registration Type | Input VAT Recovery | Legislation |\n| --- | --- | --- |\n| Section 4 registered (standard) | Full recovery (subject to blocks) | Sec. 49 |\n| Section 4a (voluntary) | Full recovery once registered | Sec. 49 |\n| Section 7/7a (EU purposes only) | NO input VAT recovery | Sec. 7 |\n| Non-registered | NO recovery | -- |",
+    "destination": "Current LF27–32;65;165; companionregistration70–76",
+    "disposition": "All4 registration/recoverypopulations retained. Voluntary4 not4a; registerednumberalone7/7a no inputcredit. Nonregistered liabilities remain; specificpreinput55companionroute retained.",
+    "destination_texts": [
+      {
+        "range": [
+          27,
+          32
+        ],
+        "text": "- **VAT payers (platitel) under § 4.** A taxable person with its seat, place of business or fixed establishment in Slovakia (or, failing that, its residence or usual abode there) becomes a payer from 1 January of the year after its turnover passed EUR 50,000, or at the supply that takes turnover in the current year past EUR 62,500 (VAT Act § 4(1)(a) and (b)). Voluntary registration is allowed (§ 4(6) and (7)). The registration tests sit in the sibling skill.\n- **Foreign persons registered under § 5.** A business with no seat, place of business, establishment or residence in Slovakia becomes a payer from its first taxable supply in Slovakia, unless all its Slovak supplies fall in the § 5(2) list (for example supplies where the customer accounts for the tax, or supplies covered by OSS). It applies to the Bratislava Tax Office within five working days (§ 5(1) to (3)).\n- **Persons who are not payers but owe tax under § 69.** Someone registered only under § 7 or § 7a, or not registered at all, who receives a reverse-charge supply files a return only for the month the liability arose, and does not pay if the tax is EUR 5 or less (§ 78(3)).\n- **Out:** a business below the § 4 thresholds that is not a payer charges no VAT and files no periodic VAT return. It must still check § 7 and § 7a.\n\n**Group payer.** A qualifying Slovak VAT group is one taxable person: members must be financially, economically and organisationally linked under § 4a, and the group becomes a payer on registration under § 4b. Its representative acts for the group and members have joint and several liability. Use the group's VAT number and registration decision for the return; a voluntary ordinary registration is under § 4, not § 4a ([VAT Act §§ 4a–4b](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-4a))."
+      },
+      {
+        "range": [
+          70,
+          76
+        ],
+        "text": "**Mixed taxable/exempt inputs: § 50 coefficient.** First attribute each purchase to its actual use: eligible inputs exclusively serving supplies with a deduction right are deductible under the ordinary rules; inputs exclusively serving no-credit exempt supplies are not. Apply the coefficient only to common inputs serving both, after the applicable business/private-use and statutory deduction restrictions. Do not reduce every input merely because the business also makes an exempt supply ([§ 49(3)–(6)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-49); [Financial Administration, direct attribution and proportional deduction](https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/odpocitanie-dane)).\n\nFor a positive denominator, let `N` be the VAT-exclusive value of annual supplies carrying a deduction right and `D` the VAT-exclusive value of all annual supplies, after the following exclusions. Include supplies whose place is outside Slovakia, classifying them by their actual deduction entitlement under § 49(6); overseas location alone neither excludes them nor creates a deduction right. Exclude from **both N and D** a business/independent-business-part transfer, sales of assets used in the business other than inventory, occasional exempt financial services under § 39, and occasional property transfers/lettings. Ordinary recurring financial services/property letting are not excluded merely because of their category. Compute `k=ceil(100×N/D)/100`, rounding the **coefficient upward to two decimals**, then multiply eligible common input VAT by k. An exact0.95 stays0.95;0.9501 gives0.96;0.9901 gives1.00 through the ordinary rounding rule. Do not substitute the old unsupported95%-means-full-deduction shortcut ([§ 50(1)–(2)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-50)).\n\nDuring the year use the previous year's coefficient. If it cannot be used, estimate a coefficient from the activity's nature **with the tax administrator's consent**. After year end calculate the coefficient from the completed year's actual values, recompute the annual deductible common-input VAT, and settle the difference from deductions already taken in the **last tax period of that year**, increasing or decreasing deduction as appropriate. Apply the same reconciliation for the part of a year during which a business became or ceased to be a payer. Where the accounting period is a financial year, that financial year replaces calendar year for these calculations ([§ 50(3)–(5)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-50)).\n\nFor example, suppose the prior coefficient is0.60, the year's eligible common input VAT is23,000, and the year's included supplies are240,000 with deduction rights and120,000 without. A separate50,000 disposal of a used business asset is excluded from both values. `N=240,000`, `D=360,000`, so the final coefficient is0.67 and annual common deduction15,410. If13,800 was deducted using0.60, increase deduction by1,610 in the last period. Separately attributable eligible input VAT is added in full; blocked/exclusively no-credit input is not added. In a separate case, suppose the provisional coefficient was0.67 and15,410 was actually deducted during the year on23,000 common VAT. If that case's supported final coefficient is0.61, the annual deduction is14,030: reduce the provisional15,410 deduction by1,380. These are illustrative exact-cent inputs, not a return-row mapping."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "population": "earliest",
+    "unit": 100,
+    "old_range": [
+      381,
+      389
+    ],
+    "old_text": "| Violation | Penalty | Legislation |\n| --- | --- | --- |\n| Late filing of DPH return | EUR 30 - EUR 16,000 | Tax Administration Act Sec. 155 |\n| Late payment of DPH | Interest at ECB rate + 10% p.a., from day after due date | Tax Administration Act Sec. 156 |\n| Tax shortfall (additional assessment) | 10% of additional tax (if voluntary disclosure) / 20% (if audit) | Tax Administration Act Sec. 154 |\n| Control Statement non-filing | Up to EUR 10,000 | Sec. 78a |\n| EC Sales List non-filing | Up to EUR 10,000 | Sec. 80 |\n| Failure to register | Back-assessment + penalty | Sec. 4 |\n| Repeated non-compliance | Double penalties | Tax Administration Act Sec. 155(3) |",
+    "destination": "Current LF148–161",
+    "disposition": "Alllatefiling/payment/shortfall/KV/EC/registration/repeatfine topics retained with actual2026ranges/dailyECBfloorbranches. Old30–16000/ECB+10/fixed10vs20/doublepenalty not currentlaw; persistentbranch repeatedsameamount, specialKVup10k/100k separatelyreserved.",
+    "destination_texts": [
+      {
+        "range": [
+          148,
+          161
+        ],
+        "text": "| Return not filed on time | Fine EUR 100 to 30,000; EUR 100 to 60,000 if not filed by the date in a tax office request (only one of the two is imposed) | Tax Procedure Code § 154(1)(a), § 155(1)(a), (b), (3) |\n| Registration not made on time | Fine EUR 100 to 30,000 | § 155(1)(c) |\n| First breach, fines set within a range | The tax office does not impose a fine set within a range for a first breach | § 155(4) |\n| Tax under-declared, found by the tax office | 3 times the ECB base rate a year (at least 10% a year) on the extra tax, counted daily from the deadline; at least 1% of the assessed sum and at most the sum itself. Two thirds of that fine if the assessment is paid within 15 days | § 155(1)(f), (2), (5), (17) |\n| Supplementary return raising tax | ECB base rate a year (at least 3%); twice the ECB rate (at least 7%) if filed after an audit has started | § 155(1)(g), (h), (5) |\n| Control statement missing, late, incomplete or wrong, or defects not fixed by the requested date | Fine up to EUR 10,000; up to EUR 100,000 for repeated breaches | VAT Act § 78a(15) |\n| Fast refund obtained on false data | Fine up to 1.3% of the refund | VAT Act § 79(8) |\n| Late payment | Interest at 4 times the ECB base rate, at least 15% a year, counted daily from the day after the due date, for at most four years; not charged if EUR 5 or less | Tax Procedure Code § 156(2), (6)(b) |\n| Fines of EUR 5 or less | Not imposed | § 155(11) |\n\n| Breach | Consequence | Source |\n|---|---|---|\n| Failure to meet the EC sales list's non-monetary filing duty |100 to 10,000 euros under the 2026 range; apply the first-breach rule in § 155(4) |[Tax Procedure Code § 154(1)(j)/155(1)(e)](https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html#paragraf-155); [FS methodology identifies the statutory sanction classification](https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Metodicke_pokyny/Nepriame_dane/2018/2018.01.04_MP_vykazov.pdf), section 6/p 8 |\n| Persistent non-monetary breach after an unsuccessful fine |The specified § 155(1)(d)/(e) fine can be imposed repeatedly at the same amount while the breach persists; there is no general automatic doubling rule |[Tax Procedure Code § 155(16)](https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html#paragraf-155) |"
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "population": "earliest",
+    "unit": 181,
+    "old_range": [
+      646,
+      654
+    ],
+    "old_text": "| Feature | Detail | Legislation |\n| --- | --- | --- |\n| Automatic refund | If excess DPH (Row 33 > 0) and no outstanding tax liabilities | Sec. 79 |\n| Refund threshold | Minimum EUR 10 | Sec. 79(2) |\n| Refund timeline | Within 30 days of filing deadline (standard) | Sec. 79(1) |\n| Extended timeline | If tax authority initiates verification, up to 60 days | Sec. 79(3) |\n| Carry forward | Credit can be carried forward to next period | Sec. 79 |\n| Offset | Tax authority may offset against other tax liabilities | Tax Administration Act |\n| New registrations | First 12 months: refund within 60 days (extended verification possible) | Sec. 79(4) |",
+    "destination": "Current LF67;95;130",
+    "disposition": "Refundcarry/offset/ordinaryandfastrefund retained. Old10minimum/blanket30deadline/60verification/new12month60dayrule not supported by actual79; exactnextperiod/qualifyingfastclock/audit10dayroute supplied.",
+    "destination_texts": []
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "population": "earliest",
+    "unit": 184,
+    "old_range": [
+      660,
+      665
+    ],
+    "old_text": "| Feature | Detail | Legislation |\n| --- | --- | --- |\n| Additional return | Can file amended return within 4 years | Tax Administration Act Sec. 16 |\n| Reduced penalty | 10% of additional tax (vs 20% if found by audit) | Tax Administration Act Sec. 154(1) |\n| Late payment interest | Still applies on any additional amount due | Tax Administration Act Sec. 156 |\n| Deadline | Before tax authority starts audit proceedings | Tax Administration Act Sec. 16(2) |",
+    "destination": "Current LF142;151–155",
+    "disposition": "Correction/timelimit/voluntaryfine/interest retained; no4yearuniversalamendment/fixed10vs20/auditimmediatestop orpenaltyfreeassumption. Actual16/69fiveyear/restart/audit15days andECBbranch apply.",
+    "destination_texts": [
+      {
+        "range": [
+          151,
+          155
+        ],
+        "text": "| Tax under-declared, found by the tax office | 3 times the ECB base rate a year (at least 10% a year) on the extra tax, counted daily from the deadline; at least 1% of the assessed sum and at most the sum itself. Two thirds of that fine if the assessment is paid within 15 days | § 155(1)(f), (2), (5), (17) |\n| Supplementary return raising tax | ECB base rate a year (at least 3%); twice the ECB rate (at least 7%) if filed after an audit has started | § 155(1)(g), (h), (5) |\n| Control statement missing, late, incomplete or wrong, or defects not fixed by the requested date | Fine up to EUR 10,000; up to EUR 100,000 for repeated breaches | VAT Act § 78a(15) |\n| Fast refund obtained on false data | Fine up to 1.3% of the refund | VAT Act § 79(8) |\n| Late payment | Interest at 4 times the ECB base rate, at least 15% a year, counted daily from the day after the due date, for at most four years; not charged if EUR 5 or less | Tax Procedure Code § 156(2), (6)(b) |"
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "population": "main",
+    "unit": 16,
+    "old_range": [
+      51,
+      51
+    ],
+    "old_text": "The old threshold was 49 790 eur measured over **up to 12 preceding consecutive calendar months**. It is now 50 000 / 62 500 eur measured over the **calendar year**, resetting every 1 January. A transitional rule (§85kn) keeps the old regime alive for anyone who hit 49 790 eur by 31 December 2024.",
+    "destination": [
+      44,
+      58
+    ],
+    "disposition": "Old49790rolling and85kntransition retained historicalonly.",
+    "destination_texts": [
+      {
+        "range": [
+          44,
+          58
+        ],
+        "text": "| Quarterly period for a §4 payer | More than 12 calendar months since the end of the month of becoming a payer, with prior-12-month turnover **below EUR 100,000** | 2026 | §77(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Historical domestic registration threshold | EUR 49,790 over up to 12 preceding consecutive calendar months; transitional cases preserved by §85kn | To 2024 | Historical §4(1), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html; current §85kn, https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Historical standard rate and registration decisions | 20%; §7/§7a decision within seven days | To 2024 | Historical §27(1), §7(3), §7a(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html |\n\nThe words matter: exactly EUR 50,000 or EUR 62,500 does not exceed the respective §4 threshold, while exactly EUR 14,000 reaches the §7 threshold. A §7/§7a registrant does not add Slovak VAT to ordinary domestic sales merely because it has an IČ DPH. If a supplier wrongly states VAT on an invoice, §69(5) separately makes that VAT payable.\n\n## The taxable base\n\n**The §4 turnover calculation.** Start with the value excluding VAT of goods and services supplied with their place of supply in Slovakia (§4(15)). Exclude supplies exempt under §28 to §36 and §40 to §42. Insurance (§37), property (§38) and financial services (§39) are generally included, but ancillary insurance and financial services supplied with another supply are excluded. Also exclude occasional disposals of tangible assets other than stock and occasional disposals of intangible assets. If the threshold is crossed exclusively through §37 to §39 exempt supplies, state that on the application (§4(3)); do not assume exemption eliminates registration.\n\nAdvance payments are not turnover until the supply occurs; supplies placed abroad and free supplies are outside the ordinary turnover count (FS method §1.5). The method's reverse-charge exclusion concerns supplies **received as buyer**, not a blanket exclusion for the business's own domestic sales. Purchases on which the business self-accounts are not its sales turnover. The supplier's own domestic supplies remain subject to §4(15). The property-specific advance-payment trigger in §4(1)(f), (g) must still be checked: an advance for a building, part of a building or building land can create payer status before delivery where the statutory condition is met.\n\n**The two domestic turnover triggers.** Above EUR 50,000, payer status ordinarily starts on 1 January of the following year (§4(1)(a)); above EUR 62,500 it starts with the supply causing the excess (§4(1)(b)). That entire supply is taxed at its applicable rate, not merely the excess above the threshold (FS method §2.1). Legal succession, acquiring a payer's business or an independent business part, demergers and the other events in §4(1)(c) to (i) have their own status dates. Test those facts before applying the ordinary next-year rule.\n\n**Historical transition.** Before 2025 the threshold was EUR 49,790 measured over up to twelve preceding consecutive calendar months. Section 85kn(1) preserves the former application/authority procedure for persons who reached that old threshold by 31 December 2024. The modern test uses a calendar year; historical 20% rates and seven-day §7/§7a decisions must not be applied to 2026 transactions."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "population": "main",
+    "unit": 23,
+    "old_range": [
+      65,
+      68
+    ],
+    "old_text": "- **You must be a \"zdaniteľná osoba\"** (a taxable person carrying on economic activity). The tax office will test this. Preparatory acts before your first sale are enough on settled CJEU authority (C-110/94 INZO, C-268/83 Rompelman, C-527/11 Ablessio), but you carry the burden of proof.\n- **The decision takes up to 21 days.**\n- **There is no backdating.** Registration cannot take effect before the application date.\n- **The tax office can refuse on fraud-risk grounds**, but only on an overall assessment of the evidence.",
+    "destination": [
+      60,
+      60
+    ],
+    "disposition": "Preparatoryacts/CJEU/21days/nobackdate/fraudassessment retained.",
+    "destination_texts": [
+      {
+        "range": [
+          60,
+          60
+        ],
+        "text": "**Voluntary §4 registration.** Before exceeding EUR 50,000, a person can apply under §4(6)(a), (7). It must be a taxable person carrying on economic activity. The authority's method recognises preparatory acts before the first sale, supported by evidence and the CJEU authorities C-110/94 INZO, C-268/83 Rompelman and C-527/11 Ablessio. Registration is effective on the date in the decision, with a 21-day decision limit; this ordinary voluntary route is not backdated before the application/decision (FS method §2.5). A fraud-based refusal requires objective evidence and an overall assessment, as explained in that method, rather than an unsupported assumption about the applicant."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "population": "main",
+    "unit": 34,
+    "old_range": [
+      97,
+      97
+    ],
+    "old_text": "The §4 application is due within five working days of the day the turnover was exceeded, or the day payer status was acquired. Decision timing: 10 days for a compulsory §4 registration, 21 days for a voluntary one, 10 days for §7 and §7a. Note that §7(3) and §7a(3) were amended with effect from 1 January 2025 to replace seven days with ten. Several of the tax authority's own information sheets still say seven. The statute says ten.",
+    "destination": [
+      82,
+      96
+    ],
+    "disposition": "Allregistration/decision10vs7/deadlines retained.",
+    "destination_texts": [
+      {
+        "range": [
+          82,
+          96
+        ],
+        "text": "| §4 application after the relevant threshold/status trigger | Five working days; identify the event and date | §4(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Mandatory §4 decision and number | Within ten days of receipt; for §4(4)(b)(2), the application and required evidence govern the start | §4(4), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html; FS method §2.3 |\n| Ordinary voluntary §4 decision | Within 21 days | §4(7), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| §7 application | Before the threshold acquisition | §7(1), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| §7a application | Before receiving/supplying the qualifying service | §7a(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| §7/§7a decision/number | Within ten days of receipt | §7(3), §7a(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Non-payer's reverse-charge return and payment | Within 25 days after the month of liability; no nil returns; payment exception up to EUR 5 | §78(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| New §4 payer's period and ordinary return/payment | Calendar month; return/payment within 25 days after period end | §77(1), §78(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Qualifying quarterly payer election | Notify within 25 days after the month conditions are met; quarter starts under §77(3) | §77(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| §7/§7a EC Sales List for reportable services supplied | Quarterly, within 25 days after quarter end; no nil list | §80(3), (5), (9), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Invoice for §15(1) service placed in another member state | Within 15 days after month-end of supply or advance; reverse-charge wording where customer is liable | §72(2), §73(1)(d), §74(1)(k), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Ordinary non-payer invoice retention | Ten years following the year concerned | §76(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Deadline ends on Saturday, Sunday or public holiday | Next working day | Tax Procedure Code §27(4), https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html |\n\nAfter an application following EUR 50,000 turnover, a later immediate-payer event before year-end must be notified **without delay**, giving its date (§4(5)). If EUR 62,500 is exceeded within the initial five-working-day application window before the first application was filed, the special application rule in §4(2)(c) applies. Do not submit an application on the assumption that status can wait until next January."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "population": "main",
+    "unit": 44,
+    "old_range": [
+      160,
+      160
+    ],
+    "old_text": "Had she bought the same ads from a **US** entity, no §7a registration would be required, but the 46 eur of self-assessed VAT and the return would still be due.",
+    "destination": [
+      145,
+      145
+    ],
+    "disposition": "USsameRC/no7a retained.",
+    "destination_texts": [
+      {
+        "range": [
+          145,
+          145
+        ],
+        "text": "If the actual supplier were a US business, the same facts produce EUR 46 tax and a return, but no §7a registration trigger. Once Jana is a §4 payer with the number and documentation required by §51, an equivalent later EUR 200 service used wholly for deductible activity produces EUR 46 output and EUR 46 input VAT, a zero net effect and EUR 200 cost. This later-service credit does not automatically reopen the January return. Any claim for pre-registration inputs must separately satisfy §55(1), (2), including its first-period, expense-year and general deduction conditions (§49(2)(b), §51)."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "population": "earliest",
+    "unit": 15,
+    "old_range": [
+      47,
+      47
+    ],
+    "old_text": "The old threshold was 49 790 eur measured over **up to 12 preceding consecutive calendar months**. It is now 50 000 / 62 500 eur measured over the **calendar year**, resetting every 1 January. A transitional rule (§85kn) keeps the old regime alive for anyone who hit 49 790 eur by 31 December 2024.",
+    "destination": "Current LF44–58",
+    "disposition": "Exactsameoldtopic asmainunitM16: Old49790rolling and85kntransition retained historicalonly.",
+    "destination_texts": [
+      {
+        "range": [
+          44,
+          58
+        ],
+        "text": "| Quarterly period for a §4 payer | More than 12 calendar months since the end of the month of becoming a payer, with prior-12-month turnover **below EUR 100,000** | 2026 | §77(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Historical domestic registration threshold | EUR 49,790 over up to 12 preceding consecutive calendar months; transitional cases preserved by §85kn | To 2024 | Historical §4(1), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html; current §85kn, https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Historical standard rate and registration decisions | 20%; §7/§7a decision within seven days | To 2024 | Historical §27(1), §7(3), §7a(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html |\n\nThe words matter: exactly EUR 50,000 or EUR 62,500 does not exceed the respective §4 threshold, while exactly EUR 14,000 reaches the §7 threshold. A §7/§7a registrant does not add Slovak VAT to ordinary domestic sales merely because it has an IČ DPH. If a supplier wrongly states VAT on an invoice, §69(5) separately makes that VAT payable.\n\n## The taxable base\n\n**The §4 turnover calculation.** Start with the value excluding VAT of goods and services supplied with their place of supply in Slovakia (§4(15)). Exclude supplies exempt under §28 to §36 and §40 to §42. Insurance (§37), property (§38) and financial services (§39) are generally included, but ancillary insurance and financial services supplied with another supply are excluded. Also exclude occasional disposals of tangible assets other than stock and occasional disposals of intangible assets. If the threshold is crossed exclusively through §37 to §39 exempt supplies, state that on the application (§4(3)); do not assume exemption eliminates registration.\n\nAdvance payments are not turnover until the supply occurs; supplies placed abroad and free supplies are outside the ordinary turnover count (FS method §1.5). The method's reverse-charge exclusion concerns supplies **received as buyer**, not a blanket exclusion for the business's own domestic sales. Purchases on which the business self-accounts are not its sales turnover. The supplier's own domestic supplies remain subject to §4(15). The property-specific advance-payment trigger in §4(1)(f), (g) must still be checked: an advance for a building, part of a building or building land can create payer status before delivery where the statutory condition is met.\n\n**The two domestic turnover triggers.** Above EUR 50,000, payer status ordinarily starts on 1 January of the following year (§4(1)(a)); above EUR 62,500 it starts with the supply causing the excess (§4(1)(b)). That entire supply is taxed at its applicable rate, not merely the excess above the threshold (FS method §2.1). Legal succession, acquiring a payer's business or an independent business part, demergers and the other events in §4(1)(c) to (i) have their own status dates. Test those facts before applying the ordinary next-year rule.\n\n**Historical transition.** Before 2025 the threshold was EUR 49,790 measured over up to twelve preceding consecutive calendar months. Section 85kn(1) preserves the former application/authority procedure for persons who reached that old threshold by 31 December 2024. The modern test uses a calendar year; historical 20% rates and seven-day §7/§7a decisions must not be applied to 2026 transactions."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "population": "earliest",
+    "unit": 25,
+    "old_range": [
+      70,
+      70
+    ],
+    "old_text": "The application goes in **before** the acquisition that reaches 14 000 eur, not after. Voluntary §7 registration below the threshold is allowed but commits you to taxing acquisitions for at least two calendar years. New means of transport and excise goods are excluded from the count. Non-taxable legal persons (a sports club, a foundation) are caught too.",
+    "destination": "Current LF64–64",
+    "disposition": "Exactsameoldtopic asmainunitM26: Goods14000before/2years/newmeans/excise/non-taxablelegalpersons retained.",
+    "destination_texts": [
+      {
+        "range": [
+          64,
+          64
+        ],
+        "text": "**Goods acquisitions under §7.** Apply before the acquisition taking the calendar-year net total to EUR 14,000 (§7(1)). The §11(4)(b) below-threshold exemption requires the threshold not to have been reached in the preceding year or the current year. New means of transport and excise goods are excluded from that count (§11(6)), but have their separate tax rules, so excluded from the count does not mean tax-free. Voluntary acquisition taxation below EUR 14,000 is allowed but binds the acquirer for at least two calendar years (§7(2), §11(7)). Section 7(4) avoids a duplicate application where the person is already registered under §7a or §4(7); it does not replace the acquisition-tax test."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "population": "earliest",
+    "unit": 33,
+    "old_range": [
+      93,
+      93
+    ],
+    "old_text": "The §4 application is due within five working days of the day the turnover was exceeded, or the day payer status was acquired. Decision timing: 10 days for a compulsory §4 registration, 21 days for a voluntary one, 10 days for §7 and §7a. Note that §7(3) and §7a(3) were amended with effect from 1 January 2025 to replace seven days with ten. Several of the tax authority's own information sheets still say seven. The statute says ten.",
+    "destination": "Current LF82–96",
+    "disposition": "Exactsameoldtopic asmainunitM34: Allregistration/decision10vs7/deadlines retained.",
+    "destination_texts": [
+      {
+        "range": [
+          82,
+          96
+        ],
+        "text": "| §4 application after the relevant threshold/status trigger | Five working days; identify the event and date | §4(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Mandatory §4 decision and number | Within ten days of receipt; for §4(4)(b)(2), the application and required evidence govern the start | §4(4), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html; FS method §2.3 |\n| Ordinary voluntary §4 decision | Within 21 days | §4(7), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| §7 application | Before the threshold acquisition | §7(1), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| §7a application | Before receiving/supplying the qualifying service | §7a(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| §7/§7a decision/number | Within ten days of receipt | §7(3), §7a(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Non-payer's reverse-charge return and payment | Within 25 days after the month of liability; no nil returns; payment exception up to EUR 5 | §78(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| New §4 payer's period and ordinary return/payment | Calendar month; return/payment within 25 days after period end | §77(1), §78(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Qualifying quarterly payer election | Notify within 25 days after the month conditions are met; quarter starts under §77(3) | §77(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| §7/§7a EC Sales List for reportable services supplied | Quarterly, within 25 days after quarter end; no nil list | §80(3), (5), (9), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Invoice for §15(1) service placed in another member state | Within 15 days after month-end of supply or advance; reverse-charge wording where customer is liable | §72(2), §73(1)(d), §74(1)(k), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Ordinary non-payer invoice retention | Ten years following the year concerned | §76(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |\n| Deadline ends on Saturday, Sunday or public holiday | Next working day | Tax Procedure Code §27(4), https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html |\n\nAfter an application following EUR 50,000 turnover, a later immediate-payer event before year-end must be notified **without delay**, giving its date (§4(5)). If EUR 62,500 is exceeded within the initial five-working-day application window before the first application was filed, the special application rule in §4(2)(c) applies. Do not submit an application on the assumption that status can wait until next January."
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "population": "earliest",
+    "unit": 43,
+    "old_range": [
+      155,
+      155
+    ],
+    "old_text": "Had she bought the same ads from a **US** entity, no §7a registration would be required, but the 46 eur of self-assessed VAT and the return would still be due.",
+    "destination": "Current LF145–145",
+    "disposition": "Exactsameoldtopic asmainunitM44: USsameRC/no7a retained.",
+    "destination_texts": [
+      {
+        "range": [
+          145,
+          145
+        ],
+        "text": "If the actual supplier were a US business, the same facts produce EUR 46 tax and a return, but no §7a registration trigger. Once Jana is a §4 payer with the number and documentation required by §51, an equivalent later EUR 200 service used wholly for deductible activity produces EUR 46 output and EUR 46 input VAT, a zero net effect and EUR 200 cost. This later-service credit does not automatically reopen the January return. Any claim for pre-registration inputs must separately satisfy §55(1), (2), including its first-period, expense-year and general deduction conditions (§49(2)(b), §51)."
+      }
+    ]
+  }
+]

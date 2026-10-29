@@ -1,0 +1,29 @@
+[
+  {
+    "scope": "Payroll Regulation883/2004 Art11(1)/13 exact law excerpt",
+    "retained_actual_quote_scope": "SP.A1: actual pages6–9, native281–506; work-state Art11(3)(a),24monthArt12 and Art16exception; no literal Art11(1)/13 quotation asserted.",
+    "attempts": [
+      "Retained sources/03.html is JS robot challenge",
+      "Official EN consolidated EUR-Lex TXT route web result3lines JS robot challenge,29October2026",
+      "Normal urllib exact TXT route failed DNS29October2026",
+      "Hidden IAB creation returned Browser is not available: iab; no tab/body created"
+    ],
+    "status": "Narrow direct-regulation quotation-evidence limitation, not an inferred contrary legal rule. Parent separately attempted two PDF routes, also challenge bodies; those are not reused as regulation text."
+  },
+  {
+    "scope": "Intrastat derived reader",
+    "failure": "Initial utf8 decode rejected; initial ISO8859-2 candidate rejected before citation; actual declared windows-1250 used. Raw unchanged."
+  },
+  {
+    "scope": "Derivative line bounds",
+    "failure": "Initial xb16PE bound178 beyond154 and CIT30 bound55 beyond50 asserted before invalid scope persisted; corrected exact bounds."
+  },
+  {
+    "scope": "Earliest VAT derivative extraction",
+    "failure": "16historical85kn exact header absent; script stopped beforeTC27 extract. Existing current85kntransition is separately read; TC27 exact current extracted subsequently."
+  },
+  {
+    "scope": "Semantic old-topic locator selfcheck",
+    "failure": "Prior-review fallback selected six irrelevant payroll destinations. Exact previous row identities retained privately, replaced by explicit current methods. No Guide change."
+  }
+]

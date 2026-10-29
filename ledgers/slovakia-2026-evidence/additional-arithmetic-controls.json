@@ -1,0 +1,721 @@
+{
+  "role": "Meaningful writer arithmetic only, not legal proof or independent review. All facts stipulated; positive-D coefficient only; no chosen fixed-gross status; old fixture numbers labelled computed.",
+  "date": "2026-10-29",
+  "count": 119,
+  "checks": [
+    {
+      "name": "XB royalty19",
+      "actual": "1520.00",
+      "expected": "1520",
+      "pass": true
+    },
+    {
+      "name": "XB royalty35",
+      "actual": "2800.00",
+      "expected": "2800",
+      "pass": true
+    },
+    {
+      "name": "XB net6480",
+      "actual": "6480",
+      "expected": "6480",
+      "pass": true
+    },
+    {
+      "name": "XB creditlimit",
+      "actual": "10500.00",
+      "expected": "10500",
+      "pass": true
+    },
+    {
+      "name": "XB treatymax",
+      "actual": "5000.0",
+      "expected": "5000",
+      "pass": true
+    },
+    {
+      "name": "XB finaltax",
+      "actual": "79000",
+      "expected": "79000",
+      "pass": true
+    },
+    {
+      "name": "XB excessforeignnotcredit",
+      "actual": "2500",
+      "expected": "2500",
+      "pass": true
+    },
+    {
+      "name": "XB exitasset200000less120000",
+      "actual": "80000",
+      "expected": "80000",
+      "pass": true
+    },
+    {
+      "name": "XB positiveexit21",
+      "actual": "16800.00",
+      "expected": "16800",
+      "pass": true
+    },
+    {
+      "name": "XB 25%holding meetsminimum",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "XB24monthsmeetsminimum",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "XB23monthsnotmet",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "CITAlfabase",
+      "actual": "21500",
+      "expected": "21500",
+      "pass": true
+    },
+    {
+      "name": "CITlossceiling",
+      "actual": "10750.0",
+      "expected": "10750",
+      "pass": true
+    },
+    {
+      "name": "CITAlfaafterloss",
+      "actual": "17500",
+      "expected": "17500",
+      "pass": true
+    },
+    {
+      "name": "CITAlfatax",
+      "actual": "1750.0",
+      "expected": "1750",
+      "pass": true
+    },
+    {
+      "name": "CITAlfaminimum",
+      "actual": "1750",
+      "expected": "1750",
+      "pass": true
+    },
+    {
+      "name": "CITAlfacliff",
+      "actual": "1925.00",
+      "expected": "1925",
+      "pass": true
+    },
+    {
+      "name": "CITcreditroom",
+      "actual": "790",
+      "expected": "790",
+      "pass": true
+    },
+    {
+      "name": "CITcash250",
+      "actual": "250",
+      "expected": "250",
+      "pass": true
+    },
+    {
+      "name": "CITcomputerJuly",
+      "actual": "600",
+      "expected": "600",
+      "pass": true
+    },
+    {
+      "name": "CITordinarycarJuly",
+      "actual": "3750",
+      "expected": "3750",
+      "pass": true
+    },
+    {
+      "name": "CITBEVJuly",
+      "actual": "7500",
+      "expected": "7500",
+      "pass": true
+    },
+    {
+      "name": "CITfurnitureJuly",
+      "actual": "500",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "CITbuildinggroup6",
+      "actual": "20000",
+      "expected": "20000",
+      "pass": true
+    },
+    {
+      "name": "CIThotelgroup5",
+      "actual": "40000",
+      "expected": "40000",
+      "pass": true
+    },
+    {
+      "name": "CITimprovementexact10%",
+      "actual": "0.1",
+      "expected": "0.1",
+      "pass": true
+    },
+    {
+      "name": "CITimprovementbelow10%",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "CITordinaryloss50%",
+      "actual": "5000.0",
+      "expected": "5000",
+      "pass": true
+    },
+    {
+      "name": "CITmicrofullbase",
+      "actual": "8000",
+      "expected": "8000",
+      "pass": true
+    },
+    {
+      "name": "CITexact100000revenue",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "CIT100000.01cliff",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "CITexact5000000middle",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "CIT5000000.01upper",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "CITthinnegativecoveredall",
+      "actual": "30000",
+      "expected": "30000",
+      "pass": true
+    },
+    {
+      "name": "CITunrecoverableVATordinary",
+      "actual": "10920",
+      "expected": "10920",
+      "pass": true
+    },
+    {
+      "name": "Payroll JanaEE",
+      "actual": "235.00",
+      "expected": "235",
+      "pass": true
+    },
+    {
+      "name": "Payroll JanaER",
+      "actual": "610.00",
+      "expected": "610",
+      "pass": true
+    },
+    {
+      "name": "Payroll JanahealthEE",
+      "actual": "125.00",
+      "expected": "125",
+      "pass": true
+    },
+    {
+      "name": "Payroll Janataxbase",
+      "actual": "2140.00",
+      "expected": "2140",
+      "pass": true
+    },
+    {
+      "name": "Payroll Janawage",
+      "actual": "1642.77",
+      "expected": "1642.77",
+      "pass": true
+    },
+    {
+      "name": "Payroll Janaadvance",
+      "actual": "312.13",
+      "expected": "312.13",
+      "pass": true
+    },
+    {
+      "name": "Payroll Janabonusrange",
+      "actual": "620.60",
+      "expected": "620.60",
+      "pass": true
+    },
+    {
+      "name": "Payroll Jananet",
+      "actual": "1927.87",
+      "expected": "1927.87",
+      "pass": true
+    },
+    {
+      "name": "Payroll Janacost",
+      "actual": "3405.00",
+      "expected": "3405",
+      "pass": true
+    },
+    {
+      "name": "Payroll socialauthority",
+      "actual": "865.00",
+      "expected": "865",
+      "pass": true
+    },
+    {
+      "name": "Payroll healthauthority",
+      "actual": "400.00",
+      "expected": "400",
+      "pass": true
+    },
+    {
+      "name": "Payroll socialceiling",
+      "actual": "16764",
+      "expected": "16764",
+      "pass": true
+    },
+    {
+      "name": "Payroll healthnoceiling",
+      "actual": "1000.00",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "Payroll fullminbase",
+      "actual": "914.40",
+      "expected": "914.4",
+      "pass": true
+    },
+    {
+      "name": "Payroll specialbase",
+      "actual": "396.24",
+      "expected": "396.24",
+      "pass": true
+    },
+    {
+      "name": "Payroll specialaggregate",
+      "actual": "131.34",
+      "expected": "131.34",
+      "pass": true
+    },
+    {
+      "name": "Payroll income9144exact special",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Payroll income2876.90coverageends",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Payroll income2876.91notends",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "Payroll Peterbase",
+      "actual": "1598.25",
+      "expected": "1598.25",
+      "pass": true
+    },
+    {
+      "name": "Payroll Petersocial",
+      "actual": "529.80",
+      "expected": "529.80",
+      "pass": true
+    },
+    {
+      "name": "Payroll Peterhealthbase",
+      "actual": "1345.89",
+      "expected": "1345.89",
+      "pass": true
+    },
+    {
+      "name": "Payroll Peterhealthadvance",
+      "actual": "215.34",
+      "expected": "215.34",
+      "pass": true
+    },
+    {
+      "name": "Payroll partialdaily",
+      "actual": "38.70",
+      "expected": "38.70",
+      "pass": true
+    },
+    {
+      "name": "Payroll partialMay20days",
+      "actual": "774.00",
+      "expected": "774",
+      "pass": true
+    },
+    {
+      "name": "Payroll partialsocial",
+      "actual": "256.57",
+      "expected": "256.57",
+      "pass": true
+    },
+    {
+      "name": "Payroll healthlowgrossEE",
+      "actual": "10.00",
+      "expected": "10",
+      "pass": true
+    },
+    {
+      "name": "Payroll healthlowgrossER",
+      "actual": "22.00",
+      "expected": "22",
+      "pass": true
+    },
+    {
+      "name": "Payroll healthminadd",
+      "actual": "13.45",
+      "expected": "13.45",
+      "pass": true
+    },
+    {
+      "name": "Payroll healthEEafteradd",
+      "actual": "23.45",
+      "expected": "23.45",
+      "pass": true
+    },
+    {
+      "name": "VAT coefficient2dpup",
+      "actual": "0.67",
+      "expected": "0.67",
+      "pass": true
+    },
+    {
+      "name": "VAT deduction15410",
+      "actual": "15410.00",
+      "expected": "15410",
+      "pass": true
+    },
+    {
+      "name": "VAT annualpositiveadjustment",
+      "actual": "1610",
+      "expected": "1610",
+      "pass": true
+    },
+    {
+      "name": "VAT separate14030",
+      "actual": "14030.00",
+      "expected": "14030",
+      "pass": true
+    },
+    {
+      "name": "VAT separateannualnegative",
+      "actual": "-1380",
+      "expected": "-1380",
+      "pass": true
+    },
+    {
+      "name": "VAT zerooverpositive",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "VAT registrationexact50000notexceeds",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "VAT registrationexact62500notexceeds",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "VAT goods14000reaches",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "VAT phones5000included",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "VAT KVsimplified3000included",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "VAT EC50000eligibleboundary",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "VAT standardCafe",
+      "actual": "9200.00",
+      "expected": "9200",
+      "pass": true
+    },
+    {
+      "name": "VAT mealsCafe",
+      "actual": "500.00",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "VAT drinksCafe",
+      "actual": "380.00",
+      "expected": "380",
+      "pass": true
+    },
+    {
+      "name": "VAT Cafeoutput",
+      "actual": "10080",
+      "expected": "10080",
+      "pass": true
+    },
+    {
+      "name": "VAT Cafecash",
+      "actual": "5480",
+      "expected": "5480",
+      "pass": true
+    },
+    {
+      "name": "VAT AprilRC",
+      "actual": "460.00",
+      "expected": "460",
+      "pass": true
+    },
+    {
+      "name": "VAT Aprilcarinput",
+      "actual": "2875.0",
+      "expected": "2875",
+      "pass": true
+    },
+    {
+      "name": "VAT Apriloutput",
+      "actual": "7360.00",
+      "expected": "7360",
+      "pass": true
+    },
+    {
+      "name": "VAT Aprilinput",
+      "actual": "4485",
+      "expected": "4485",
+      "pass": true
+    },
+    {
+      "name": "VAT Aprilcash",
+      "actual": "2875",
+      "expected": "2875",
+      "pass": true
+    },
+    {
+      "name": "VAT importcompletebase",
+      "actual": "11500.00",
+      "expected": "11500",
+      "pass": true
+    },
+    {
+      "name": "VAT Janaservice",
+      "actual": "46.00",
+      "expected": "46",
+      "pass": true
+    },
+    {
+      "name": "VAT servicecost",
+      "actual": "246",
+      "expected": "246",
+      "pass": true
+    },
+    {
+      "name": "VAT adsmall30",
+      "actual": "6.90",
+      "expected": "6.90",
+      "pass": true
+    },
+    {
+      "name": "VAT exactly5notpayable",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "VAT 5.01payable",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "VAT turnover11months",
+      "actual": "49500",
+      "expected": "49500",
+      "pass": true
+    },
+    {
+      "name": "VAT turnoverregularDecember",
+      "actual": "54000",
+      "expected": "54000",
+      "pass": true
+    },
+    {
+      "name": "VAT expressnetcrossing",
+      "actual": "63500",
+      "expected": "63500",
+      "pass": true
+    },
+    {
+      "name": "VAT expressnetVAT",
+      "actual": "3220.00",
+      "expected": "3220",
+      "pass": true
+    },
+    {
+      "name": "VAT expressnetgross",
+      "actual": "17220.00",
+      "expected": "17220",
+      "pass": true
+    },
+    {
+      "name": "VAT fixedgrossconditionalnet",
+      "actual": "11382.11",
+      "expected": "11382.11",
+      "pass": true
+    },
+    {
+      "name": "VAT fixedgrossconditionalVAT",
+      "actual": "2617.89",
+      "expected": "2617.89",
+      "pass": true
+    },
+    {
+      "name": "VAT conditionalturnover",
+      "actual": "60882.11",
+      "expected": "60882.11",
+      "pass": true
+    },
+    {
+      "name": "VAT conditionalbelow62500",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "VAT April25Saturday",
+      "actual": "5",
+      "expected": "5",
+      "pass": true
+    },
+    {
+      "name": "VAT April27Monday",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Olddomestic200VAT",
+      "actual": "46.00",
+      "expected": "46",
+      "pass": true
+    },
+    {
+      "name": "OldEU1000RC",
+      "actual": "230.00",
+      "expected": "230",
+      "pass": true
+    },
+    {
+      "name": "Oldentertainment500grossnet",
+      "actual": "406.50",
+      "expected": "406.50",
+      "pass": true
+    },
+    {
+      "name": "Oldentertainment500grossVAT",
+      "actual": "93.50",
+      "expected": "93.50",
+      "pass": true
+    },
+    {
+      "name": "OldUSsoftware20RC",
+      "actual": "4.60",
+      "expected": "4.60",
+      "pass": true
+    },
+    {
+      "name": "Oldbread100VAT",
+      "actual": "5.00",
+      "expected": "5",
+      "pass": true
+    },
+    {
+      "name": "OldM120000halfVAT",
+      "actual": "2300.00",
+      "expected": "2300",
+      "pass": true
+    },
+    {
+      "name": "Oldconstruction15000RC",
+      "actual": "3450.00",
+      "expected": "3450",
+      "pass": true
+    },
+    {
+      "name": "Oldgoods3000RC",
+      "actual": "690.00",
+      "expected": "690",
+      "pass": true
+    },
+    {
+      "name": "Oldnonpayer500service",
+      "actual": "115.00",
+      "expected": "115",
+      "pass": true
+    },
+    {
+      "name": "Oldphones8000RC",
+      "actual": "1840.00",
+      "expected": "1840",
+      "pass": true
+    },
+    {
+      "name": "Oldphones3000normal",
+      "actual": "690.00",
+      "expected": "690",
+      "pass": true
+    },
+    {
+      "name": "OldN1fuel200VATconditional",
+      "actual": "46.00",
+      "expected": "46",
+      "pass": true
+    },
+    {
+      "name": "OldM1December2025VATconditional",
+      "actual": "3450.00",
+      "expected": "3450",
+      "pass": true
+    }
+  ]
+}

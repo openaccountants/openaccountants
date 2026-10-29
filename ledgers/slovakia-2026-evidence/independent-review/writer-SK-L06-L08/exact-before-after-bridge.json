@@ -1,0 +1,302 @@
+{
+  "ITA45.relief": {
+    "before": {
+      "source_id": "13",
+      "article": "§ 45",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.html",
+      "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-45.txt",
+      "reader_sha256": "c5c21b4929e354d4fe871695ee79e275128a607bd615e18108fa761ac2aa1fae",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 42,
+      "quotations": [
+        {
+          "LF_start": 4,
+          "LF_end": 21,
+          "quote": "Ak plynú daňovníkovi s neobmedzenou daňovou povinnosťou príjmy zo štátu, s ktorým Slovenská republika má uzavretú zmluvu o zamedzení dvojitého zdanenia, postupuje sa pri zamedzení dvojitého zdanenia podľa tejto zmluvy o zamedzení dvojitého zdanenia s výnimkou uvedenou v odseku 3 písm. c). Ak sa podľa zmluvy o zamedzení dvojitého zdanenia uplatňuje metóda zápočtu dane, daň zaplatená v druhom zmluvnom štáte sa započíta na úhradu dane podľa tohto zákona najviac sumou, ktorá môže byť v druhom zmluvnom štáte vyberaná v súlade s touto zmluvou o zamedzení dvojitého zdanenia, pričom zápočet dane sa vykoná najviac v sume dane pripadajúcej na príjmy plynúce zo zdrojov v zahraničí. Úhrn príjmov (základov dane) podliehajúcich zdaneniu v zahraničí, pri ktorých je uplatňovaný zápočet dane podľa zmluvy o zamedzení dvojitého zdanenia, sa zaokrúhľuje podľa § 47. Základom dane z príjmov podliehajúcich zdaneniu v zahraničí sa na účely zápočtu dane rozumie základ dane vyčíslený z príjmov podľa § 5, § 6 ods. 3 a 4, § 8 a základ dane vyčíslený podľa § 17 ods. 14 a osobitný základ dane podľa § 7, 51e a 51ea. Percentuálny podiel príjmov zo zdrojov v zahraničí k celkovému základu dane v zdaňovacom období sa zaokrúhľuje podľa § 47, pričom u daňovníka, ktorý je fyzickou osobou, sa rozumie celkovým základom dane (na účely zápočtu dane) základ dane neznížený o nezdaniteľné časti základu dane podľa § 11. Maximálna výška dane zaplatenej v zahraničí, ktorú je možné započítať, sa zaokrúhli podľa § 47. Započítať možno iba daň vzťahujúcu sa na príjmy zahrnuté do základu dane za príslušné zdaňovacie obdobie. Ak sa podľa zmluvy o zamedzení dvojitého zdanenia uplatňuje metóda vyňatia príjmov, základom dane alebo daňovou stratou z príjmov podliehajúcich zdaneniu v zahraničí na účely vyňatia príjmov je základ dane vyčíslený z príjmov podľa § 5, § 6 ods. 3 a 4, § 8, základ dane alebo daňová strata vyčíslená podľa § 17 ods. 14 a osobitný základ dane podľa § 7, 51e a 51ea."
+        },
+        {
+          "LF_start": 28,
+          "LF_end": 42,
+          "quote": "Metóda vyňatia príjmov podľa odseku 1 sa uplatní, ak daňovníkovi s neobmedzenou daňovou povinnosťou plynú príjmy zo závislej činnosti a) za prácu vykonávanú pre Európsku úniu a jej orgány, ktoré boli preukázateľne zdanené v prospech všeobecného rozpočtu Európskej únie, alebo b) zo zdrojov v zahraničí, zo štátu, s ktorým Slovenská republika nemá uzavretú zmluvu o zamedzení dvojitého zdanenia, a tieto príjmy boli v zahraničí preukázateľne zdanené, c) zo zdrojov v zahraničí zo štátu, s ktorým Slovenská republika má uzavretú zmluvu o zamedzení dvojitého zdanenia a tieto príjmy boli v zahraničí preukázateľné zdanené, ak je tento postup pre daňovníka výhodnejší. (4) Podrobnejšie postupy uplatňovania zmluvy o zamedzení dvojitého zdanenia vo vzťahu k daňovníkovi podľa § 2 písm. d) a e) určí ministerstvo."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    },
+    "after": {
+      "source_id": "13",
+      "article": "§ 45",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.html",
+      "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-45.txt",
+      "reader_sha256": "c5c21b4929e354d4fe871695ee79e275128a607bd615e18108fa761ac2aa1fae",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 42,
+      "quotations": [
+        {
+          "LF_start": 4,
+          "LF_end": 21,
+          "quote": "Ak plynú daňovníkovi s neobmedzenou daňovou povinnosťou príjmy zo štátu, s ktorým Slovenská republika má uzavretú zmluvu o zamedzení dvojitého zdanenia, postupuje sa pri zamedzení dvojitého zdanenia podľa tejto zmluvy o zamedzení dvojitého zdanenia s výnimkou uvedenou v odseku 3 písm. c). Ak sa podľa zmluvy o zamedzení dvojitého zdanenia uplatňuje metóda zápočtu dane, daň zaplatená v druhom zmluvnom štáte sa započíta na úhradu dane podľa tohto zákona najviac sumou, ktorá môže byť v druhom zmluvnom štáte vyberaná v súlade s touto zmluvou o zamedzení dvojitého zdanenia, pričom zápočet dane sa vykoná najviac v sume dane pripadajúcej na príjmy plynúce zo zdrojov v zahraničí. Úhrn príjmov (základov dane) podliehajúcich zdaneniu v zahraničí, pri ktorých je uplatňovaný zápočet dane podľa zmluvy o zamedzení dvojitého zdanenia, sa zaokrúhľuje podľa § 47. Základom dane z príjmov podliehajúcich zdaneniu v zahraničí sa na účely zápočtu dane rozumie základ dane vyčíslený z príjmov podľa § 5, § 6 ods. 3 a 4, § 8 a základ dane vyčíslený podľa § 17 ods. 14 a osobitný základ dane podľa § 7, 51e a 51ea. Percentuálny podiel príjmov zo zdrojov v zahraničí k celkovému základu dane v zdaňovacom období sa zaokrúhľuje podľa § 47, pričom u daňovníka, ktorý je fyzickou osobou, sa rozumie celkovým základom dane (na účely zápočtu dane) základ dane neznížený o nezdaniteľné časti základu dane podľa § 11. Maximálna výška dane zaplatenej v zahraničí, ktorú je možné započítať, sa zaokrúhli podľa § 47. Započítať možno iba daň vzťahujúcu sa na príjmy zahrnuté do základu dane za príslušné zdaňovacie obdobie. Ak sa podľa zmluvy o zamedzení dvojitého zdanenia uplatňuje metóda vyňatia príjmov, základom dane alebo daňovou stratou z príjmov podliehajúcich zdaneniu v zahraničí na účely vyňatia príjmov je základ dane vyčíslený z príjmov podľa § 5, § 6 ods. 3 a 4, § 8, základ dane alebo daňová strata vyčíslená podľa § 17 ods. 14 a osobitný základ dane podľa § 7, 51e a 51ea."
+        },
+        {
+          "LF_start": 22,
+          "LF_end": 26,
+          "quote": "(2) Ak plynú daňovníkovi príjmy zo zdrojov v zahraničí, ktorého zdaňovacie obdobie je iné ako v Slovenskej republike, a v lehote na podanie daňového priznania podľa § 49 nemá doklad o zaplatení dane od správcu dane v zahraničí, uvedie v daňovom priznaní predpokladanú výšku príjmov plynúcich zo zdrojov v zahraničí a daň pripadajúcu na tieto príjmy za zdaňovacie obdobie, za ktoré podáva daňové priznanie."
+        },
+        {
+          "LF_start": 28,
+          "LF_end": 42,
+          "quote": "Metóda vyňatia príjmov podľa odseku 1 sa uplatní, ak daňovníkovi s neobmedzenou daňovou povinnosťou plynú príjmy zo závislej činnosti a) za prácu vykonávanú pre Európsku úniu a jej orgány, ktoré boli preukázateľne zdanené v prospech všeobecného rozpočtu Európskej únie, alebo b) zo zdrojov v zahraničí, zo štátu, s ktorým Slovenská republika nemá uzavretú zmluvu o zamedzení dvojitého zdanenia, a tieto príjmy boli v zahraničí preukázateľne zdanené, c) zo zdrojov v zahraničí zo štátu, s ktorým Slovenská republika má uzavretú zmluvu o zamedzení dvojitého zdanenia a tieto príjmy boli v zahraničí preukázateľné zdanené, ak je tento postup pre daňovníka výhodnejší. (4) Podrobnejšie postupy uplatňovania zmluvy o zamedzení dvojitého zdanenia vo vzťahu k daňovníkovi podľa § 2 písm. d) a e) určí ministerstvo."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    }
+  },
+  "ITA17f.exit": {
+    "before": {
+      "source_id": "13",
+      "article": "§17f",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.html",
+      "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17f.txt",
+      "reader_sha256": "0f2f4d7fd0c123ca49abda775b6982b364f3708e9a11506364760b86454e83ba",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 84,
+      "quotations": [
+        {
+          "LF_start": 4,
+          "LF_end": 17,
+          "quote": "(1) Súčasťou osobitného základu dane u daňovníka podľa § 2 písm. d) druhého bodu a písm. e) tretieho bodu so stálou prevádzkarňou (§ 16 ods. 2) je rozdiel medzi reálnou hodnotou80ca) presunutého majetku v čase presunu majetku do zahraničia a daňovými výdavkami podľa § 19 ods. 2 písm. f) alebo písm. g), § 19 ods. 3 písm. b), e) a h), § 21 ods. 2 písm. k) a hodnotou zásob v zdaňovacom období, v ktorom a) daňovník podľa § 2 písm. d) druhého bodu presúva majetok z ústredia na území Slovenskej republiky do stálej prevádzkarne v zahraničí, alebo b) daňovník podľa § 2 písm. e) tretieho bodu presúva majetok zo stálej prevádzkarne na území Slovenskej republiky do svojho ústredia v zahraničí alebo do svojej stálej prevádzkarne v zahraničí. (2) Súčasťou osobitného základu dane u daňovníka podľa § 2 písm. d) druhého bodu a písm. e) tretieho bodu so stálou prevádzkarňou (§ 16 ods. 2) je reálna hodnota80ca) presunutého majetku a záväzkov v čase presunu podnikateľskej činnosti alebo odchodu daňovníka do zahraničia, pričom pri vyčíslení osobitného základu dane sa postupuje primerane podľa § 17a a § 17 ods. 13 písm. a), ak daňovník podľa § 2 písm. d) druhého bodu a)"
+        },
+        {
+          "LF_start": 36,
+          "LF_end": 59,
+          "quote": "v ktorom bola zistená povinnosť podať dodatočné daňové priznanie; v rovnakej lehote je daň splatná. (5) Z osobitného základu dane podľa odsekov 1 a 2 sa daň vypočíta pri podaní daňového priznania podľa § 41 pri použití sadzby dane podľa § 15 písm. b) tretieho bodu. (6) Pri presune majetku podľa odseku 1 písm. a) sa a) finančný majetok, neodpisovaný majetok, pohľadávky a zásoby ocenia reálnou hodnotou80ca) podľa odseku 1, b) odpisovaný hmotný majetok ocení reálnou hodnotou80ca) podľa odseku 1, pričom daňovník podľa § 2 písm. d) druhého bodu 1. odpisuje hmotný majetok podľa § 26 z reálnej hodnoty80ca) ako novoobstaraný majetok alebo 2. môže pokračovať v odpisovaní hmotného majetku z reálnej hodnoty,80ca) pričom pri 2a. rovnomernom odpisovaní sa doba odpisovania predĺži o dobu vyplývajúcu zo spôsobu výpočtu podľa § 27, 2b. zrýchlenom odpisovaní sa postupuje podľa § 28 ako v ďalších rokoch odpisovania, a to počas zostávajúcej doby odpisovania podľa § 26. (7) Ak ide o majetok presunutý podľa odseku 1 písm. a), pri uplatnení daňových výdavkov sa na účely tohto zákona vychádza z reálnej hodnoty80ca) podľa odseku 1. Pri postúpení pohľadávky alebo odpise pohľadávky sa postupuje primerane"
+        },
+        {
+          "LF_start": 61,
+          "LF_end": 84,
+          "quote": "(8) Ak sa daňovník s neobmedzenou daňovou povinnosťou v zahraničí stáva daňovníkom podľa § 2 písm. d) druhého bodu na území Slovenskej republiky a pri presune majetku a záväzkov podľa odsekov 1 a 2 na územie Slovenskej republiky, sa majetok a záväzky ocenia reálnou hodnotou, za ktorú sa považuje a) hodnota, ktorou boli majetok a záväzky ocenené na účely zdanenia pri presune majetku daňovníka, odchode daňovníka alebo presune podnikateľskej činnosti daňovníka do zahraničia v zahraničí najviac však do výšky reálnej hodnoty80ca) a daňovník postupuje podľa odseku 6, pričom pri zúčtovaní rezerv, ktorých tvorba bola daňovým výdavkom v inom štáte, sa postupuje primerane podľa § 17a ods. 6; daňovník podľa § 2 písm. d) druhého bodu odpisovaný hmotný majetok, ktorý ocení podľa prvej vety, odpisuje podľa § 26 ako novoobstaraný majetok alebo b) hodnota na daňové účely, ktorou boli majetok a záväzky ocenené v zahraničí, ak tento iný štát neuplatňuje zdanenie pri presune majetku daňovníka, odchode daňovníka alebo presune podnikateľskej činnosti daňovníka do zahraničia najviac však do výšky reálnej hodnoty;80ca) daňovník podľa § 2 písm. d) druhého bodu odpisovaný hmotný majetok, ktorý ocení podľa prvej vety, odpisuje podľa § 26 ako novoobstaraný majetok. (9) Ak sa daňovník s neobmedzenou daňovou povinnosťou v zahraničí stáva daňovníkom podľa § 2 písm. d) druhého bodu na území Slovenskej republiky, majetok a záväzky, ktoré sú funkčne spojené so stálou prevádzkarňou tohto daňovníka umiestnenou v zahraničí, sa ocenia podľa odseku 8 písm. b). Pri odpisovaní hmotného majetku sa postupuje podľa odseku 8 písm. b). (10) Ak ide o majetok a záväzky presunuté na územie Slovenskej republiky podľa odseku 8, pri uplatnení daňových výdavkov sa vychádza z ocenenia podľa odseku 8. Pri postúpení pohľadávky alebo odpise pohľadávky sa postupuje primerane podľa § 17a ods. 7, pričom lehota sa počíta odo dňa presunu pohľadávky na územie Slovenskej republiky."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    },
+    "after": {
+      "source_id": "13",
+      "article": "§17f",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.html",
+      "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17f.txt",
+      "reader_sha256": "0f2f4d7fd0c123ca49abda775b6982b364f3708e9a11506364760b86454e83ba",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 84,
+      "quotations": [
+        {
+          "LF_start": 4,
+          "LF_end": 17,
+          "quote": "(1) Súčasťou osobitného základu dane u daňovníka podľa § 2 písm. d) druhého bodu a písm. e) tretieho bodu so stálou prevádzkarňou (§ 16 ods. 2) je rozdiel medzi reálnou hodnotou80ca) presunutého majetku v čase presunu majetku do zahraničia a daňovými výdavkami podľa § 19 ods. 2 písm. f) alebo písm. g), § 19 ods. 3 písm. b), e) a h), § 21 ods. 2 písm. k) a hodnotou zásob v zdaňovacom období, v ktorom a) daňovník podľa § 2 písm. d) druhého bodu presúva majetok z ústredia na území Slovenskej republiky do stálej prevádzkarne v zahraničí, alebo b) daňovník podľa § 2 písm. e) tretieho bodu presúva majetok zo stálej prevádzkarne na území Slovenskej republiky do svojho ústredia v zahraničí alebo do svojej stálej prevádzkarne v zahraničí. (2) Súčasťou osobitného základu dane u daňovníka podľa § 2 písm. d) druhého bodu a písm. e) tretieho bodu so stálou prevádzkarňou (§ 16 ods. 2) je reálna hodnota80ca) presunutého majetku a záväzkov v čase presunu podnikateľskej činnosti alebo odchodu daňovníka do zahraničia, pričom pri vyčíslení osobitného základu dane sa postupuje primerane podľa § 17a a § 17 ods. 13 písm. a), ak daňovník podľa § 2 písm. d) druhého bodu a)"
+        },
+        {
+          "LF_start": 18,
+          "LF_end": 35,
+          "quote": "prestane byť daňovníkom podľa § 2 písm. d) druhého bodu na území Slovenskej republiky okrem toho majetku a záväzkov, ktoré zostávajú funkčne spojené so stálou prevádzkarňou umiestnenou na území Slovenskej republiky, alebo b) presúva podnikateľskú činnosť alebo jej časť do zahraničia alebo daňovník podľa § 2 písm. e) tretieho bodu presúva podnikateľskú činnosť alebo jej časť vykonávanú stálou prevádzkarňou na území Slovenskej republiky do zahraničia okrem toho majetku a záväzkov, ktoré zostávajú funkčne spojené s ústredím alebo so stálou prevádzkarňou umiestnenou na území Slovenskej republiky. (3) Celkový osobitný základ dane podľa odsekov 1 a 2 nesmie mať zápornú hodnotu. (4) Odseky 1 až 3 sa neuplatnia na presuny majetku spojené s financovaním cenných papierov, majetku poskytnutého ako zábezpeka, presun majetku s cieľom splniť prudenciálne kapitálové požiadavky, presun majetku na účely riadenia likvidity, ktorý bol presunutý do zahraničia a súčasne sa očakáva jeho návrat do 12 mesiacov od presunu. Ak majetok podľa prvej vety nebude presunutý na územie Slovenskej republiky do 12 mesiacov odo dňa presunu, daňovník je povinný podať dodatočné daňové priznanie za zdaňovacie obdobie, v ktorom došlo k presunu tohto majetku a uplatniť postup podľa odsekov 1 a 2. Daňovník je povinný podať dodatočné daňové priznanie do konca kalendárneho mesiaca nasledujúceho po mesiaci,"
+        },
+        {
+          "LF_start": 36,
+          "LF_end": 59,
+          "quote": "v ktorom bola zistená povinnosť podať dodatočné daňové priznanie; v rovnakej lehote je daň splatná. (5) Z osobitného základu dane podľa odsekov 1 a 2 sa daň vypočíta pri podaní daňového priznania podľa § 41 pri použití sadzby dane podľa § 15 písm. b) tretieho bodu. (6) Pri presune majetku podľa odseku 1 písm. a) sa a) finančný majetok, neodpisovaný majetok, pohľadávky a zásoby ocenia reálnou hodnotou80ca) podľa odseku 1, b) odpisovaný hmotný majetok ocení reálnou hodnotou80ca) podľa odseku 1, pričom daňovník podľa § 2 písm. d) druhého bodu 1. odpisuje hmotný majetok podľa § 26 z reálnej hodnoty80ca) ako novoobstaraný majetok alebo 2. môže pokračovať v odpisovaní hmotného majetku z reálnej hodnoty,80ca) pričom pri 2a. rovnomernom odpisovaní sa doba odpisovania predĺži o dobu vyplývajúcu zo spôsobu výpočtu podľa § 27, 2b. zrýchlenom odpisovaní sa postupuje podľa § 28 ako v ďalších rokoch odpisovania, a to počas zostávajúcej doby odpisovania podľa § 26. (7) Ak ide o majetok presunutý podľa odseku 1 písm. a), pri uplatnení daňových výdavkov sa na účely tohto zákona vychádza z reálnej hodnoty80ca) podľa odseku 1. Pri postúpení pohľadávky alebo odpise pohľadávky sa postupuje primerane"
+        },
+        {
+          "LF_start": 61,
+          "LF_end": 84,
+          "quote": "(8) Ak sa daňovník s neobmedzenou daňovou povinnosťou v zahraničí stáva daňovníkom podľa § 2 písm. d) druhého bodu na území Slovenskej republiky a pri presune majetku a záväzkov podľa odsekov 1 a 2 na územie Slovenskej republiky, sa majetok a záväzky ocenia reálnou hodnotou, za ktorú sa považuje a) hodnota, ktorou boli majetok a záväzky ocenené na účely zdanenia pri presune majetku daňovníka, odchode daňovníka alebo presune podnikateľskej činnosti daňovníka do zahraničia v zahraničí najviac však do výšky reálnej hodnoty80ca) a daňovník postupuje podľa odseku 6, pričom pri zúčtovaní rezerv, ktorých tvorba bola daňovým výdavkom v inom štáte, sa postupuje primerane podľa § 17a ods. 6; daňovník podľa § 2 písm. d) druhého bodu odpisovaný hmotný majetok, ktorý ocení podľa prvej vety, odpisuje podľa § 26 ako novoobstaraný majetok alebo b) hodnota na daňové účely, ktorou boli majetok a záväzky ocenené v zahraničí, ak tento iný štát neuplatňuje zdanenie pri presune majetku daňovníka, odchode daňovníka alebo presune podnikateľskej činnosti daňovníka do zahraničia najviac však do výšky reálnej hodnoty;80ca) daňovník podľa § 2 písm. d) druhého bodu odpisovaný hmotný majetok, ktorý ocení podľa prvej vety, odpisuje podľa § 26 ako novoobstaraný majetok. (9) Ak sa daňovník s neobmedzenou daňovou povinnosťou v zahraničí stáva daňovníkom podľa § 2 písm. d) druhého bodu na území Slovenskej republiky, majetok a záväzky, ktoré sú funkčne spojené so stálou prevádzkarňou tohto daňovníka umiestnenou v zahraničí, sa ocenia podľa odseku 8 písm. b). Pri odpisovaní hmotného majetku sa postupuje podľa odseku 8 písm. b). (10) Ak ide o majetok a záväzky presunuté na územie Slovenskej republiky podľa odseku 8, pri uplatnení daňových výdavkov sa vychádza z ocenenia podľa odseku 8. Pri postúpení pohľadávky alebo odpise pohľadávky sa postupuje primerane podľa § 17a ods. 7, pričom lehota sa počíta odo dňa presunu pohľadávky na územie Slovenskej republiky."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    }
+  },
+  "TPG3.full": {
+    "before": {
+      "source_id": "57",
+      "article": "MF/012879/2025-724 TPG3.full",
+      "official_url": "https://www.mfsr.sk/files/archiv/49/Usmernenie-2025.pdf",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.pdf",
+      "raw_sha256": "7aa68a9d1d1273777ea01dba75a76d647ae523c71f39da5bdd54375ceda2e24b",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+      "reader_sha256": "9c281c5ad0e92f981da8af5ce96e88bd78e8a174e4154a15268deb9c7d3badcf",
+      "actual_read_LF_start": 111,
+      "actual_read_LF_end": 152,
+      "quotations": [
+        {
+          "LF_start": 116,
+          "LF_end": 139,
+          "quote": "kontrolovaných transakcií u daňovníka, ktorý vykazuje výsledok hospodárenia v individuálnej účtovnej závierke podľa medzinárodných štandardov pre finančné výkazníctvo5), ktorá spĺňa charakteristiky významnosti podľa § 17 ods. 9 zákona č. 431/2002 Z. z. o účtovníctve v znení neskorších predpisov (ďalej len „zákon o účtovníctve“) alebo podľa nariadenia Komisie (ES) č. 2023/1803 z 13. augusta 2023, ktorým sa v súlade s nariadením Európskeho parlamentu a Rady (ES) č. 1606/2002 prijímajú určité medzinárodné účtovné štandardy (ďalej len „nariadenie“). b) cezhraničnej kontrolovanej transakcii alebo skupine cezhraničných kontrolovaných transakcií, ak hodnota takejto kontrolovanej transakcie alebo skupiny kontrolovaných transakcií za zdaňovacie obdobie presiahla 10 000 000 eur, c) cezhraničnej významnej kontrolovanej transakcii alebo skupine cezhraničných kontrolovaných transakcií, ktorá spĺňa charakteristiky významnosti podľa § 17 ods. 9 zákona o účtovníctve alebo podľa nariadenia so závislou osobou, ktorá je daňovníkom nespolupracujúceho štátu,6) d) cezhraničnej významnej kontrolovanej transakcii alebo skupine cezhraničných kontrolovaných transakcií, ktorá spĺňa charakteristiky významnosti podľa § 17 ods. 9 zákona o účtovníctve alebo podľa nariadenia u daňovníka, ktorý v zdaňovacom období uplatňuje úľavu na dani.7) e) kontrolovanej transakcii alebo skupine kontrolovaných transakcií, pri ktorej daňovník žiada správcu dane o vydanie rozhodnutia o odsúhlasení použitia metódy ocenenia,8) f) kontrolovanej transakcii alebo skupine kontrolovaných transakcií, pri ktorej daňovník žiada o úpravu základu dane9), okrem úpravy základu dane z príjmov (ďalej len „základ dane“) vo vzťahu k tuzemským kontrolovaným transakciám,"
+        },
+        {
+          "LF_start": 140,
+          "LF_end": 152,
+          "quote": "2) § 2 písm. n) zákona č. 595/2003 Z. z. v znení neskorších predpisov. 3) § 2 písm. d) zákona č. 595/2003 Z. z. v znení neskorších predpisov. 4) § 16 ods. 2 zákona č. 595/2003 Z. z. v znení neskorších predpisov. 5) § 17a ods. 1 až 3 zákona č. 431/2002 Z. z. o účtovníctve v znení neskorších predpisov. 6) § 2 písm. x) zákona č. 595/2003 Z. z. v znení neskorších predpisov. 7) Zákon č. 57/2018 Z. z. o regionálnej investičnej pomoci a o zmene a doplnení niektorých zákonov. 8) § 18 ods. 4 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. 9) § 17 ods. 6 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. 4 g) kontrolovanej transakcii alebo skupine kontrolovaných transakcií, pri ktorej za príslušné zdaňovacie obdobie bola podaná žiadosť o začatie mechanizmu riešenia sporov týkajúcich sa zdanenia.10)"
+        }
+      ],
+      "read_date": "2026-10-28",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    },
+    "after": {
+      "source_id": "57",
+      "article": "MF/012879/2025-724 TPG3.full",
+      "official_url": "https://www.mfsr.sk/files/archiv/49/Usmernenie-2025.pdf",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.pdf",
+      "raw_sha256": "7aa68a9d1d1273777ea01dba75a76d647ae523c71f39da5bdd54375ceda2e24b",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+      "reader_sha256": "9c281c5ad0e92f981da8af5ce96e88bd78e8a174e4154a15268deb9c7d3badcf",
+      "actual_read_LF_start": 111,
+      "actual_read_LF_end": 152,
+      "quotations": [
+        {
+          "LF_start": 114,
+          "LF_end": 139,
+          "quote": "1. Úplná dokumentácia v rozsahu uvedenom v článku 4 sa vedie o a) cezhraničnej významnej kontrolovanej transakcii alebo skupine cezhraničných kontrolovaných transakcií u daňovníka, ktorý vykazuje výsledok hospodárenia v individuálnej účtovnej závierke podľa medzinárodných štandardov pre finančné výkazníctvo5), ktorá spĺňa charakteristiky významnosti podľa § 17 ods. 9 zákona č. 431/2002 Z. z. o účtovníctve v znení neskorších predpisov (ďalej len „zákon o účtovníctve“) alebo podľa nariadenia Komisie (ES) č. 2023/1803 z 13. augusta 2023, ktorým sa v súlade s nariadením Európskeho parlamentu a Rady (ES) č. 1606/2002 prijímajú určité medzinárodné účtovné štandardy (ďalej len „nariadenie“). b) cezhraničnej kontrolovanej transakcii alebo skupine cezhraničných kontrolovaných transakcií, ak hodnota takejto kontrolovanej transakcie alebo skupiny kontrolovaných transakcií za zdaňovacie obdobie presiahla 10 000 000 eur, c) cezhraničnej významnej kontrolovanej transakcii alebo skupine cezhraničných kontrolovaných transakcií, ktorá spĺňa charakteristiky významnosti podľa § 17 ods. 9 zákona o účtovníctve alebo podľa nariadenia so závislou osobou, ktorá je daňovníkom nespolupracujúceho štátu,6) d) cezhraničnej významnej kontrolovanej transakcii alebo skupine cezhraničných kontrolovaných transakcií, ktorá spĺňa charakteristiky významnosti podľa § 17 ods. 9 zákona o účtovníctve alebo podľa nariadenia u daňovníka, ktorý v zdaňovacom období uplatňuje úľavu na dani.7) e) kontrolovanej transakcii alebo skupine kontrolovaných transakcií, pri ktorej daňovník žiada správcu dane o vydanie rozhodnutia o odsúhlasení použitia metódy ocenenia,8) f) kontrolovanej transakcii alebo skupine kontrolovaných transakcií, pri ktorej daňovník žiada o úpravu základu dane9), okrem úpravy základu dane z príjmov (ďalej len „základ dane“) vo vzťahu k tuzemským kontrolovaným transakciám,"
+        },
+        {
+          "LF_start": 140,
+          "LF_end": 152,
+          "quote": "2) § 2 písm. n) zákona č. 595/2003 Z. z. v znení neskorších predpisov. 3) § 2 písm. d) zákona č. 595/2003 Z. z. v znení neskorších predpisov. 4) § 16 ods. 2 zákona č. 595/2003 Z. z. v znení neskorších predpisov. 5) § 17a ods. 1 až 3 zákona č. 431/2002 Z. z. o účtovníctve v znení neskorších predpisov. 6) § 2 písm. x) zákona č. 595/2003 Z. z. v znení neskorších predpisov. 7) Zákon č. 57/2018 Z. z. o regionálnej investičnej pomoci a o zmene a doplnení niektorých zákonov. 8) § 18 ods. 4 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. 9) § 17 ods. 6 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. 4 g) kontrolovanej transakcii alebo skupine kontrolovaných transakcií, pri ktorej za príslušné zdaňovacie obdobie bola podaná žiadosť o začatie mechanizmu riešenia sporov týkajúcich sa zdanenia.10)"
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    }
+  },
+  "Social138": {
+    "before": {
+      "source_id": "10",
+      "article": "§ 138",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2003/461/20260901.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/10.html",
+      "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138.txt",
+      "reader_sha256": "0712ef53a347bcd04f55da44fe9c9d89641875cc1746e593b0ca4448ea0d1a11",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 151,
+      "quotations": [
+        {
+          "LF_start": 4,
+          "LF_end": 16,
+          "quote": "Vymeriavací základ zamestnanca, ktorý vykonáva zárobkovú činnosť uvedenú v § 3 ods. 1 písm. a), je príjem plynúci z tejto zárobkovej činnosti okrem príjmov, ktoré nie sú predmetom dane alebo sú od dane oslobodené podľa osobitného predpisu7) s výnimkou príjmu z právneho vzťahu trénera zapísaného do registra fyzických osôb v športe (ďalej len „príjem z trénerskej činnosti“) oslobodeného od dane podľa osobitného predpisu,69d) a okrem príspevkov na doplnkové dôchodkové sporenie, ktoré platí zamestnávateľ za zamestnanca. Vymeriavací základ zamestnanca je aj podiel na zisku vyplatený obchodnou spoločnosťou alebo družstvom zamestnancovi bez účasti na základnom imaní tejto spoločnosti alebo družstva. Vymeriavací základ zamestnanca, ktorý vykonáva zárobkovú činnosť uvedenú v § 3 ods. 2 a 3, je príjem plynúci z tejto zárobkovej činnosti okrem príjmov, ktoré nie sú predmetom dane alebo sú od dane oslobodené podľa právnych predpisov štátu, podľa ktorých sa tento príjem zdaňuje. Vymeriavací základ zamestnanca v a) právnom vzťahu na základe dohody určenej podľa § 227a sa znižuje o odvodovú odpočítateľnú položku; to neplatí ak sa vymeriavací základ znižuje o odvodovú odpočítateľnú položku z príjmu z trénerskej činnosti,"
+        },
+        {
+          "LF_start": 24,
+          "LF_end": 53,
+          "quote": "Vymeriavací základ povinne nemocensky poistenej a povinne dôchodkovo poistenej samostatne zárobkovo činnej osoby je a) podiel jednej dvanástiny základu dane z príjmov samostatne zárobkovo činnej osoby uvedených v § 3 ods. 1 písm. b) a ods. 2 a 3 nezníženého o zaplatené poistné na povinné verejné zdravotné poistenie, poistné na povinné nemocenské poistenie, poistné na povinné dôchodkové poistenie a príspevky na starobné dôchodkové sporenie, ktoré sa platia spolu s poistným na starobné poistenie z povinného dôchodkového poistenia, poistné do rezervného fondu solidarity povinne dôchodkovo poistenej samostatne zárobkovo činnej osoby a upraveného o príjmy a výdavky, ktoré sa nezahŕňajú do vymeriavacieho základu, a koeficientu 1,486, ak jej príjem uvedený v § 3 ods. 1 písm. b) a ods. 2 a 3 je vyšší ako 50 % všeobecného vymeriavacieho základu platného v kalendárnom roku, ktorý dva roky predchádza kalendárnemu roku, od ktorého sa takto určený vymeriavací základ použije; takto určený vymeriavací základ sa použije 1. od 1. júla kalendárneho roka nasledujúceho po kalendárnom roku, za ktorý tento príjem dosiahla, do 30. júna nasledujúceho kalendárneho roka, 2. od 1. októbra kalendárneho roka nasledujúceho po kalendárnom roku, za ktorý tento príjem dosiahla, do 30. septembra nasledujúceho kalendárneho roka, ak má predĺženú lehotu na podanie daňového priznania podľa osobitného predpisu, alebo b) 26 % z jednej dvanástiny všeobecného vymeriavacieho základu platného v kalendárnom roku, ktorý dva roky predchádza kalendárnemu roku, za ktorý sa platí poistné, ak nemá vymeriavací základ podľa písmena a). (3) Vymeriavací základ povinne nemocensky poistenej a povinne dôchodkovo poistenej samostatne zárobkovo činnej osoby, ktorá má predĺženú lehotu na podanie daňového priznania podľa osobitného predpisu, je v období od 1. júla do 30. septembra kalendárneho roka vymeriavací základ, z ktorého platila poistné na nemocenské poistenie a poistné na dôchodkové poistenie do 30. júna kalendárneho roka."
+        },
+        {
+          "LF_start": 69,
+          "LF_end": 75,
+          "quote": "Vymeriavací základ zamestnávateľa je vymeriavací základ jeho zamestnanca, ak odsek 6 neustanovuje inak. (6) Vymeriavací základ zamestnávateľa na platenie poistného na úrazové poistenie a poistného na garančné poistenie je vymeriavací základ jeho zamestnanca neznížený o odvodovú odpočítateľnú položku, odvodovú odpočítateľnú položku pri sezónnej práci a o odvodovú odpočítateľnú položku z príjmu z trénerskej činnosti."
+        },
+        {
+          "LF_start": 80,
+          "LF_end": 104,
+          "quote": "Minimálny mesačný vymeriavací základ je 60 % jednej dvanástiny všeobecného vymeriavacieho základu platného v kalendárnom roku, ktorý dva roky predchádza kalendárnemu roku, za ktorý a) povinne nemocensky poistená a povinne dôchodkovo poistená samostatne zárobkovo činná osoba, ktorá má vymeriavací základ podľa odseku 2 písm. a), a dobrovoľne nemocensky poistená osoba, dobrovoľne dôchodkovo poistená osoba alebo dobrovoľne poistená osoba v nezamestnanosti platí poistné, b) sa poistné na dôchodkové poistenie dodatočne dopláca. (9) Maximálny mesačný vymeriavací základ v úhrne je 11-násobok jednej dvanástiny všeobecného vymeriavacieho základu platného v kalendárnom roku, ktorý dva roky predchádza kalendárnemu roku, za ktorý zamestnanec, povinne nemocensky poistená a povinne dôchodkovo poistená samostatne zárobkovo činná osoba a dobrovoľne nemocensky poistená osoba, dobrovoľne dôchodkovo poistená osoba alebo dobrovoľne poistená osoba v nezamestnanosti platí poistné. (10) Maximálny mesačný vymeriavací základ zamestnávateľa na platenie poistného na nemocenské poistenie, poistného na dôchodkové poistenie, poistného na garančné poistenie, poistného na poistenie v nezamestnanosti, poistného na financovanie podpory a poistného do rezervného fondu solidarity za každého zamestnanca je 11-násobok jednej dvanástiny všeobecného vymeriavacieho základu platného v kalendárnom roku, ktorý dva roky predchádza kalendárnemu roku, za ktorý zamestnávateľ platí poistné. Vymeriavací základ zamestnávateľa na platenie poistného na úrazové poistenie je neobmedzený."
+        },
+        {
+          "LF_start": 114,
+          "LF_end": 149,
+          "quote": "Ak poistenec vykonáva viacero činností zamestnanca, poradie povinnosti platiť poistné na nemocenské poistenie, poistné na dôchodkové poistenie a poistné na poistenie v nezamestnanosti pre zamestnanca sa určuje výškou jeho vymeriavacieho základu, pričom sa postupuje od najvyššieho vymeriavacieho základu k najnižšiemu vymeriavaciemu základu. Ak je výška vymeriavacích základov zamestnanca rovnaká, prednostná povinnosť platiť poistné na nemocenské poistenie, poistné na dôchodkové poistenie a poistné na poistenie v nezamestnanosti pre zamestnanca sa viaže na vymeriavací základ dosiahnutý u toho zamestnávateľa, u ktorého poistenie zamestnanca vzniklo skôr. Ak zamestnanec je súčasne povinne nemocensky poistená a povinne dôchodkovo poistená samostatne zárobkovo činná osoba, poistné na nemocenské poistenie a poistné na dôchodkové poistenie sa platí prednostne z vymeriavacieho základu dosiahnutého z výkonu činnosti zamestnanca. Ak poistenec vykonáva zárobkovú činnosť a súčasne je dobrovoľne nemocensky poistená osoba, dobrovoľne dôchodkovo poistená osoba alebo dobrovoľne poistená osoba v nezamestnanosti, poistné na nemocenské poistenie, poistné na dôchodkové poistenie a poistné na poistenie v nezamestnanosti sa platí prednostne z vymeriavacieho základu dosiahnutého z výkonu zárobkovej činnosti. Ak poistenec vykonáva viacero zárobkových činností a súčasne je dobrovoľne nemocensky poistená osoba, dobrovoľne dôchodkovo poistená osoba alebo dobrovoľne poistená osoba v nezamestnanosti, poistné na nemocenské poistenie, poistné na dôchodkové poistenie a poistné na poistenie v nezamestnanosti sa platí prednostne z výkonu viacerých zárobkových činností; na poradie povinnosti platiť poistné na nemocenské poistenie, poistné na dôchodkové poistenie a poistné na poistenie v nezamestnanosti z výkonu viacerých zárobkových činností prvá veta až tretia veta platia rovnako. (13) Ak nemocenské poistenie, dôchodkové poistenie a poistenie v nezamestnanosti zamestnanca trvalo len časť kalendárneho mesiaca, vymeriavací základ na platenie poistného podľa odseku 9 sa upraví podľa počtu dní, za ktoré sa platí poistné. Ak nemocenské poistenie a dôchodkové poistenie povinne nemocensky poistenej a povinne dôchodkovo poistenej samostatne zárobkovo činnej osoby trvalo len časť kalendárneho mesiaca alebo v kalendárnom mesiaci sú obdobia podľa § 140, vymeriavací základ na platenie poistného podľa odsekov 2, 3, 8 a 9 sa upraví podľa počtu dní, za ktoré sa platí poistné. Ak dobrovoľné poistenie trvalo len časť kalendárneho mesiaca alebo v kalendárnom mesiaci sú obdobia podľa § 140, vymeriavací základ podľa odsekov 4, 8 a 9 sa upraví podľa počtu dní, za ktoré sa platí poistné. Ak dôchodkové poistenie fyzickej osoby uvedenej v § 15 ods. 1 písm. f) trvalo len časť kalendárneho mesiaca, vymeriavací základ na platenie poistného podľa odsekov 7 a 11 sa upraví podľa počtu dní trvania dôchodkového poistenia. Ak sa poistné na dôchodkové poistenie dodatočne dopláca len za časť kalendárneho mesiaca, vymeriavací základ podľa odsekov 8 a 11 sa upraví podľa počtu dní, za ktoré sa poistné dopláca. Vymeriavací základ pripadajúci na jeden deň sa zaokrúhľuje na najbližší eurocent nadol."
+        },
+        {
+          "LF_start": 150,
+          "LF_end": 151,
+          "quote": "(14) Vymeriavací základ sa zaokrúhľuje na najbližší eurocent nadol."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    },
+    "after": {
+      "source_id": "10",
+      "article": "§ 138",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2003/461/20260901.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/10.html",
+      "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138.txt",
+      "reader_sha256": "0712ef53a347bcd04f55da44fe9c9d89641875cc1746e593b0ca4448ea0d1a11",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 151,
+      "quotations": [
+        {
+          "LF_start": 4,
+          "LF_end": 22,
+          "quote": "Vymeriavací základ zamestnanca, ktorý vykonáva zárobkovú činnosť uvedenú v § 3 ods. 1 písm. a), je príjem plynúci z tejto zárobkovej činnosti okrem príjmov, ktoré nie sú predmetom dane alebo sú od dane oslobodené podľa osobitného predpisu7) s výnimkou príjmu z právneho vzťahu trénera zapísaného do registra fyzických osôb v športe (ďalej len „príjem z trénerskej činnosti“) oslobodeného od dane podľa osobitného predpisu,69d) a okrem príspevkov na doplnkové dôchodkové sporenie, ktoré platí zamestnávateľ za zamestnanca. Vymeriavací základ zamestnanca je aj podiel na zisku vyplatený obchodnou spoločnosťou alebo družstvom zamestnancovi bez účasti na základnom imaní tejto spoločnosti alebo družstva. Vymeriavací základ zamestnanca, ktorý vykonáva zárobkovú činnosť uvedenú v § 3 ods. 2 a 3, je príjem plynúci z tejto zárobkovej činnosti okrem príjmov, ktoré nie sú predmetom dane alebo sú od dane oslobodené podľa právnych predpisov štátu, podľa ktorých sa tento príjem zdaňuje. Vymeriavací základ zamestnanca v a) právnom vzťahu na základe dohody určenej podľa § 227a sa znižuje o odvodovú odpočítateľnú položku; to neplatí ak sa vymeriavací základ znižuje o odvodovú odpočítateľnú položku z príjmu z trénerskej činnosti, b) právnom vzťahu na základe dohody o pracovnej činnosti na výkon sezónnej práce sa znižuje o odvodovú odpočítateľnú položku pri sezónnej práci, c) právnom vzťahu trénera zapísaného do registra fyzických osôb v športe sa znižuje o odvodovú odpočítateľnú položku z príjmu z trénerskej činnosti."
+        },
+        {
+          "LF_start": 24,
+          "LF_end": 53,
+          "quote": "Vymeriavací základ povinne nemocensky poistenej a povinne dôchodkovo poistenej samostatne zárobkovo činnej osoby je a) podiel jednej dvanástiny základu dane z príjmov samostatne zárobkovo činnej osoby uvedených v § 3 ods. 1 písm. b) a ods. 2 a 3 nezníženého o zaplatené poistné na povinné verejné zdravotné poistenie, poistné na povinné nemocenské poistenie, poistné na povinné dôchodkové poistenie a príspevky na starobné dôchodkové sporenie, ktoré sa platia spolu s poistným na starobné poistenie z povinného dôchodkového poistenia, poistné do rezervného fondu solidarity povinne dôchodkovo poistenej samostatne zárobkovo činnej osoby a upraveného o príjmy a výdavky, ktoré sa nezahŕňajú do vymeriavacieho základu, a koeficientu 1,486, ak jej príjem uvedený v § 3 ods. 1 písm. b) a ods. 2 a 3 je vyšší ako 50 % všeobecného vymeriavacieho základu platného v kalendárnom roku, ktorý dva roky predchádza kalendárnemu roku, od ktorého sa takto určený vymeriavací základ použije; takto určený vymeriavací základ sa použije 1. od 1. júla kalendárneho roka nasledujúceho po kalendárnom roku, za ktorý tento príjem dosiahla, do 30. júna nasledujúceho kalendárneho roka, 2. od 1. októbra kalendárneho roka nasledujúceho po kalendárnom roku, za ktorý tento príjem dosiahla, do 30. septembra nasledujúceho kalendárneho roka, ak má predĺženú lehotu na podanie daňového priznania podľa osobitného predpisu, alebo b) 26 % z jednej dvanástiny všeobecného vymeriavacieho základu platného v kalendárnom roku, ktorý dva roky predchádza kalendárnemu roku, za ktorý sa platí poistné, ak nemá vymeriavací základ podľa písmena a). (3) Vymeriavací základ povinne nemocensky poistenej a povinne dôchodkovo poistenej samostatne zárobkovo činnej osoby, ktorá má predĺženú lehotu na podanie daňového priznania podľa osobitného predpisu, je v období od 1. júla do 30. septembra kalendárneho roka vymeriavací základ, z ktorého platila poistné na nemocenské poistenie a poistné na dôchodkové poistenie do 30. júna kalendárneho roka."
+        },
+        {
+          "LF_start": 69,
+          "LF_end": 75,
+          "quote": "Vymeriavací základ zamestnávateľa je vymeriavací základ jeho zamestnanca, ak odsek 6 neustanovuje inak. (6) Vymeriavací základ zamestnávateľa na platenie poistného na úrazové poistenie a poistného na garančné poistenie je vymeriavací základ jeho zamestnanca neznížený o odvodovú odpočítateľnú položku, odvodovú odpočítateľnú položku pri sezónnej práci a o odvodovú odpočítateľnú položku z príjmu z trénerskej činnosti."
+        },
+        {
+          "LF_start": 80,
+          "LF_end": 104,
+          "quote": "Minimálny mesačný vymeriavací základ je 60 % jednej dvanástiny všeobecného vymeriavacieho základu platného v kalendárnom roku, ktorý dva roky predchádza kalendárnemu roku, za ktorý a) povinne nemocensky poistená a povinne dôchodkovo poistená samostatne zárobkovo činná osoba, ktorá má vymeriavací základ podľa odseku 2 písm. a), a dobrovoľne nemocensky poistená osoba, dobrovoľne dôchodkovo poistená osoba alebo dobrovoľne poistená osoba v nezamestnanosti platí poistné, b) sa poistné na dôchodkové poistenie dodatočne dopláca. (9) Maximálny mesačný vymeriavací základ v úhrne je 11-násobok jednej dvanástiny všeobecného vymeriavacieho základu platného v kalendárnom roku, ktorý dva roky predchádza kalendárnemu roku, za ktorý zamestnanec, povinne nemocensky poistená a povinne dôchodkovo poistená samostatne zárobkovo činná osoba a dobrovoľne nemocensky poistená osoba, dobrovoľne dôchodkovo poistená osoba alebo dobrovoľne poistená osoba v nezamestnanosti platí poistné. (10) Maximálny mesačný vymeriavací základ zamestnávateľa na platenie poistného na nemocenské poistenie, poistného na dôchodkové poistenie, poistného na garančné poistenie, poistného na poistenie v nezamestnanosti, poistného na financovanie podpory a poistného do rezervného fondu solidarity za každého zamestnanca je 11-násobok jednej dvanástiny všeobecného vymeriavacieho základu platného v kalendárnom roku, ktorý dva roky predchádza kalendárnemu roku, za ktorý zamestnávateľ platí poistné. Vymeriavací základ zamestnávateľa na platenie poistného na úrazové poistenie je neobmedzený."
+        },
+        {
+          "LF_start": 114,
+          "LF_end": 149,
+          "quote": "Ak poistenec vykonáva viacero činností zamestnanca, poradie povinnosti platiť poistné na nemocenské poistenie, poistné na dôchodkové poistenie a poistné na poistenie v nezamestnanosti pre zamestnanca sa určuje výškou jeho vymeriavacieho základu, pričom sa postupuje od najvyššieho vymeriavacieho základu k najnižšiemu vymeriavaciemu základu. Ak je výška vymeriavacích základov zamestnanca rovnaká, prednostná povinnosť platiť poistné na nemocenské poistenie, poistné na dôchodkové poistenie a poistné na poistenie v nezamestnanosti pre zamestnanca sa viaže na vymeriavací základ dosiahnutý u toho zamestnávateľa, u ktorého poistenie zamestnanca vzniklo skôr. Ak zamestnanec je súčasne povinne nemocensky poistená a povinne dôchodkovo poistená samostatne zárobkovo činná osoba, poistné na nemocenské poistenie a poistné na dôchodkové poistenie sa platí prednostne z vymeriavacieho základu dosiahnutého z výkonu činnosti zamestnanca. Ak poistenec vykonáva zárobkovú činnosť a súčasne je dobrovoľne nemocensky poistená osoba, dobrovoľne dôchodkovo poistená osoba alebo dobrovoľne poistená osoba v nezamestnanosti, poistné na nemocenské poistenie, poistné na dôchodkové poistenie a poistné na poistenie v nezamestnanosti sa platí prednostne z vymeriavacieho základu dosiahnutého z výkonu zárobkovej činnosti. Ak poistenec vykonáva viacero zárobkových činností a súčasne je dobrovoľne nemocensky poistená osoba, dobrovoľne dôchodkovo poistená osoba alebo dobrovoľne poistená osoba v nezamestnanosti, poistné na nemocenské poistenie, poistné na dôchodkové poistenie a poistné na poistenie v nezamestnanosti sa platí prednostne z výkonu viacerých zárobkových činností; na poradie povinnosti platiť poistné na nemocenské poistenie, poistné na dôchodkové poistenie a poistné na poistenie v nezamestnanosti z výkonu viacerých zárobkových činností prvá veta až tretia veta platia rovnako. (13) Ak nemocenské poistenie, dôchodkové poistenie a poistenie v nezamestnanosti zamestnanca trvalo len časť kalendárneho mesiaca, vymeriavací základ na platenie poistného podľa odseku 9 sa upraví podľa počtu dní, za ktoré sa platí poistné. Ak nemocenské poistenie a dôchodkové poistenie povinne nemocensky poistenej a povinne dôchodkovo poistenej samostatne zárobkovo činnej osoby trvalo len časť kalendárneho mesiaca alebo v kalendárnom mesiaci sú obdobia podľa § 140, vymeriavací základ na platenie poistného podľa odsekov 2, 3, 8 a 9 sa upraví podľa počtu dní, za ktoré sa platí poistné. Ak dobrovoľné poistenie trvalo len časť kalendárneho mesiaca alebo v kalendárnom mesiaci sú obdobia podľa § 140, vymeriavací základ podľa odsekov 4, 8 a 9 sa upraví podľa počtu dní, za ktoré sa platí poistné. Ak dôchodkové poistenie fyzickej osoby uvedenej v § 15 ods. 1 písm. f) trvalo len časť kalendárneho mesiaca, vymeriavací základ na platenie poistného podľa odsekov 7 a 11 sa upraví podľa počtu dní trvania dôchodkového poistenia. Ak sa poistné na dôchodkové poistenie dodatočne dopláca len za časť kalendárneho mesiaca, vymeriavací základ podľa odsekov 8 a 11 sa upraví podľa počtu dní, za ktoré sa poistné dopláca. Vymeriavací základ pripadajúci na jeden deň sa zaokrúhľuje na najbližší eurocent nadol."
+        },
+        {
+          "LF_start": 150,
+          "LF_end": 151,
+          "quote": "(14) Vymeriavací základ sa zaokrúhľuje na najbližší eurocent nadol."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    }
+  },
+  "Social138c": {
+    "before": null,
+    "after": {
+      "source_id": "10",
+      "article": "§ 138c",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2003/461/20260901.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/10.html",
+      "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/10.txt",
+      "reader_sha256": "76276b05952fb47b2f0ba6119d9dacaa6ecf08957c0ee56f419147ae04e93404",
+      "actual_read_LF_start": 9219,
+      "actual_read_LF_end": 9224,
+      "quotations": [
+        {
+          "LF_start": 9219,
+          "LF_end": 9224,
+          "quote": "§ 138c Odvodová odpočítateľná položka z príjmu z trénerskej činnosti Odvodová odpočítateľná položka z príjmu z trénerskej činnosti je 300 eur za kalendárny mesiac. Ak vymeriavací základ zamestnanca v právnom vzťahu trénera zapísaného do registra fyzických osôb v športe je za kalendárny mesiac nižší ako 300 eur, odvodová odpočítateľná položka z príjmu z trénerskej činnosti je v sume tohto vymeriavacieho základu."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": "Actual retained current provision read 2026-10-29; €300 monthly deduction limited to the lower assessment base."
+    }
+  }
+}

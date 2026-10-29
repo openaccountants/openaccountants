@@ -1,0 +1,27 @@
+{
+  "code": "SK",
+  "name": "Slovakia",
+  "region": "europe",
+  "owner": "michael",
+  "dir": "skills/international/slovakia",
+  "skills": 10,
+  "reviewed": 0,
+  "stale": 0,
+  "present": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "missing": [
+    "VAT"
+  ],
+  "not_applicable": {},
+  "partial": {
+    "VAT": "The annual \u00a750 common-input method where actual included-supplies turnover is zero, the exact fixed-gross crossing-supply circularity and control-statement first-breach sanction remain unconfirmed. The positive-denominator coefficient, ordinary registration computations and period-valid DPHv25/KVDPHv25/REGDPv24 form mappings are supplied and independently reviewed."
+  },
+  "has_readme": true,
+  "complete": false
+}

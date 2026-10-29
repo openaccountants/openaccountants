@@ -1,0 +1,369 @@
+{
+  "VAT4.status": {
+    "before": {
+      "source_id": "17",
+      "article": "§ 4",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+      "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4.txt",
+      "reader_sha256": "f83af38a63caa6e950a5215b1331150de94d9d44872ff822d5b04aae4e4de974",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 187,
+      "quotations": [
+        {
+          "LF_start": 3,
+          "LF_end": 38,
+          "quote": "Zdaniteľná osoba, ktorá má sídlo, miesto podnikania alebo prevádzkareň v tuzemsku, a ak nemá takéto miesto, ale má bydlisko v tuzemsku alebo sa v tuzemsku obvykle zdržiava, sa stáva platiteľom dane (ďalej len „platiteľ“) a) prvým dňom kalendárneho roka nasledujúceho po kalendárnom roku, za ktorý hodnota bez dane dodaných tovarov alebo služieb touto osobou, ktoré sa zahŕňajú do obratu podľa odseku 15, presiahla 50 000 eur, ak písmená b) až i), odsek 8 alebo § 48c ods. 5 neustanovujú inak, b) dodaním tovaru alebo služby, ktorým hodnota bez dane dodaných tovarov alebo služieb touto osobou, ktoré sa zahŕňajú do obratu podľa odseku 15, v prebiehajúcom kalendárnom roku presiahne 62 500 eur, c) dňom, v ktorom sa táto osoba stala právnym nástupcom platiteľa, ktorý zanikol bez likvidácie, d) dňom nadobudnutia podniku alebo jeho časti, ak táto osoba nadobudne v tuzemsku hmotný majetok a nehmotný majetok v rámci nadobudnutého podniku platiteľa alebo časti podniku platiteľa, ktorá tvorí samostatnú organizačnú zložku, e) dňom účinnosti premeny pri odštiepení3) alebo dňom účinnosti premeny pri odštiepení podľa zákona platného v inom členskom štáte alebo zmluvnom štáte Dohody o Európskom hospodárskom priestore alebo dňom účinnosti premeny pri cezhraničnom odštiepení,4) ak na túto osobu v tuzemsku prechádza hmotný majetok alebo nehmotný majetok platiteľa, ktorý sa rozdelil odštiepením4a) alebo cezhraničným odštiepením,4b) f) dňom, v ktorom táto osoba dodá stavbu, časť stavby alebo stavebný pozemok, ak sa z dodania má presiahnuť obrat podľa písmena b), g) dňom, v ktorom táto osoba prijme platbu pred dodaním tovaru podľa písmena f), h) dňom dodania tovaru s miestom dodania v tuzemsku, ak ide o zdaniteľnú osobu podľa § 8 ods. 7 prvej vety, alebo i) dodaním tovaru alebo služby, alebo nadobudnutím tovaru v tuzemsku z iného členského štátu, ktoré je predmetom dane podľa § 2, uskutočneným zdaniteľnou osobou, ktorá má v tuzemsku výlučne prevádzkareň, ak nejde o malý podnik zahraničnej osoby, ktorý uplatňuje oslobodenie od dane podľa § 68f ods. 2. (2)"
+        },
+        {
+          "LF_start": 40,
+          "LF_end": 60,
+          "quote": "pre daň do piatich pracovných dní a) odo dňa, v ktorom bol presiahnutý obrat podľa odseku 1 písm. a), b) odo dňa, v ktorom bol presiahnutý obrat podľa odseku 1 písm. b), ak nebola povinná podať žiadosť o registráciu pre daň podľa písmena a), c) odo dňa, v ktorom bol presiahnutý obrat podľa odseku 1 písm. b), ak bol tento obrat presiahnutý po presiahnutí obratu podľa odseku 1 písm. a) do uplynutia lehoty na podanie žiadosti o registráciu pre daň podľa písmena a) a žiadosť o registráciu pre daň podľa písmena a) nebola ešte podaná, d) odo dňa, keď sa stala platiteľom podľa odseku 1 písm. c) až i) alebo e) odo dňa, keď sa stala platiteľom podľa odseku 1 písm. c) až i), ak táto skutočnosť nastala po presiahnutí obratu podľa odseku 1 písm. a) do uplynutia lehoty na podanie žiadosti o registráciu pre daň podľa písmena a) a žiadosť o registráciu pre daň podľa písmena a) nebola ešte podaná. (3) Zdaniteľná osoba, ktorá je povinná podať žiadosť o registráciu pre daň podľa odseku 2, v tejto žiadosti uvedie skutočnosť, na základe ktorej je povinná túto žiadosť podať,"
+        },
+        {
+          "LF_start": 96,
+          "LF_end": 118,
+          "quote": "2. zdaniteľná osoba sa stala platiteľom podľa odseku 1 písm. c) až h) a doručenia dokladov podľa odseku 3, pričom identifikačné číslo pre daň nadobúda platnosť dňom, keď sa zdaniteľná osoba stala platiteľom. (5) Zdaniteľná osoba, ktorá podala žiadosť o registráciu pre daň podľa odseku 2 písm. a), je povinná bezodkladne oznámiť daňovému úradu skutočnosť, že sa stala platiteľom podľa odseku 1 písm. b) až i) alebo podľa § 48c ods. 5 do 31. decembra prebiehajúceho kalendárneho roka; v oznámení uvedie deň, keď k tejto skutočnosti došlo. Ak daňový úrad ku dňu oznámenia podľa prvej vety ešte nevydal rozhodnutie podľa odseku 4 písm. a), vydá rozhodnutie o registrácii pre daň podľa odseku 4 písm. b). (6) Platiteľom sa môže stať aj zdaniteľná osoba, ktorá má v tuzemsku sídlo, miesto podnikania, a ak nemá takéto miesto, ale má bydlisko v tuzemsku alebo sa v tuzemsku obvykle zdržiava, pred a) presiahnutím obratu podľa odseku 1 písm. a) alebo b) presiahnutím obratu podľa odseku 1 písm. b). (7) Zdaniteľná osoba podľa odseku 6 písm. a) môže podať žiadosť o registráciu pre daň. Ak nie je v odseku 10 písm. b) ustanovené inak, daňový úrad zaregistruje túto osobu, pridelí jej identifikačné číslo pre daň a vydá rozhodnutie o registrácii pre daň najneskôr"
+        },
+        {
+          "LF_start": 119,
+          "LF_end": 151,
+          "quote": "do 21 dní odo dňa doručenia žiadosti o registráciu pre daň. Zdaniteľná osoba sa stáva platiteľom dňom uvedeným v rozhodnutí o registrácii pre daň a týmto dňom nadobúda platnosť identifikačné číslo pre daň; to neplatí, ak sa zdaniteľná osoba stane platiteľom podľa odseku 1 písm. a) až h) alebo podľa § 48c ods. 5 pred týmto dňom, pričom túto skutočnosť je povinná bezodkladne oznámiť daňovému úradu. Ak nastane skutočnosť podľa tretej vety v časti za bodkočiarkou a daňový úrad už vydal rozhodnutie o registrácii pre daň, toto rozhodnutie sa zrušuje vydaním nového rozhodnutia; na postup zdaniteľnej osoby sa primerane vzťahuje odsek 3 a na postup daňového úradu v registračnom konaní sa primerane vzťahujú odseky 4 a 10. (8) Ak sa zdaniteľná osoba, ktorej obrat v prebiehajúcom kalendárnom roku presiahol 50 000 eur, chce stať platiteľom podľa odseku 6 písm. b) a) dodaním tovaru alebo služby, ktorým hodnota bez dane dodaných tovarov alebo služieb touto osobou, ktoré sa zahŕňajú do obratu podľa odseku 15, v prebiehajúcom kalendárnom roku presiahne 50 000 eur, uvedie túto skutočnosť v žiadosti o registráciu pre daň podľa odseku 2 a zdaniteľná osoba sa stáva platiteľom počnúc týmto dodaním, b) pred presiahnutím obratu podľa odseku 1 písm. b), oznámi túto skutočnosť daňovému úradu najskôr po doručení rozhodnutia o registrácii pre daň podľa odseku 4 písm. a) a zdaniteľná osoba sa stáva platiteľom dňom nasledujúcom po dni, v ktorom túto skutočnosť oznámila. (9) Proti rozhodnutiu o registrácii pre daň podľa odseku 4 alebo odseku 7 nemožno podať odvolanie. (10) Ak daňový úrad v registračnom konaní zistí, že neboli splnené podmienky pre registráciu pre daň osoby, ktorá podala žiadosť o registráciu pre daň a) podľa odseku 2, túto osobu nezaregistruje z dôvodu, že sa nestane alebo nestala platiteľom a vydá o tom rozhodnutie proti ktorému nemožno podať odvolanie alebo b) podľa odseku 7, túto osobu nezaregistruje z dôvodu, že nie je zdaniteľnou osobou. (11)"
+        },
+        {
+          "LF_start": 183,
+          "LF_end": 187,
+          "quote": "(15) Na účely tohto zákona sa obratom rozumie hodnota bez dane dodaných tovarov a služieb v tuzemsku okrem hodnoty tovarov a služieb, ktoré sú oslobodené od dane podľa § 28 až 36 a podľa § 40 až 42. Hodnota dodaných poisťovacích služieb, ktoré sú oslobodené od dane podľa § 37, a finančných služieb, ktoré sú oslobodené od dane podľa § 39, sa nezahŕňa do obratu, ak tieto služby sú dodané pri dodaní tovaru alebo služby ako doplnkové služby. Do obratu sa nezahŕňa hodnota príležitostne dodaného hmotného majetku okrem zásob a hodnota príležitostne dodaného nehmotného majetku."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    },
+    "after": {
+      "source_id": "17",
+      "article": "§ 4",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+      "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4.txt",
+      "reader_sha256": "f83af38a63caa6e950a5215b1331150de94d9d44872ff822d5b04aae4e4de974",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 187,
+      "quotations": [
+        {
+          "LF_start": 3,
+          "LF_end": 38,
+          "quote": "Zdaniteľná osoba, ktorá má sídlo, miesto podnikania alebo prevádzkareň v tuzemsku, a ak nemá takéto miesto, ale má bydlisko v tuzemsku alebo sa v tuzemsku obvykle zdržiava, sa stáva platiteľom dane (ďalej len „platiteľ“) a) prvým dňom kalendárneho roka nasledujúceho po kalendárnom roku, za ktorý hodnota bez dane dodaných tovarov alebo služieb touto osobou, ktoré sa zahŕňajú do obratu podľa odseku 15, presiahla 50 000 eur, ak písmená b) až i), odsek 8 alebo § 48c ods. 5 neustanovujú inak, b) dodaním tovaru alebo služby, ktorým hodnota bez dane dodaných tovarov alebo služieb touto osobou, ktoré sa zahŕňajú do obratu podľa odseku 15, v prebiehajúcom kalendárnom roku presiahne 62 500 eur, c) dňom, v ktorom sa táto osoba stala právnym nástupcom platiteľa, ktorý zanikol bez likvidácie, d) dňom nadobudnutia podniku alebo jeho časti, ak táto osoba nadobudne v tuzemsku hmotný majetok a nehmotný majetok v rámci nadobudnutého podniku platiteľa alebo časti podniku platiteľa, ktorá tvorí samostatnú organizačnú zložku, e) dňom účinnosti premeny pri odštiepení3) alebo dňom účinnosti premeny pri odštiepení podľa zákona platného v inom členskom štáte alebo zmluvnom štáte Dohody o Európskom hospodárskom priestore alebo dňom účinnosti premeny pri cezhraničnom odštiepení,4) ak na túto osobu v tuzemsku prechádza hmotný majetok alebo nehmotný majetok platiteľa, ktorý sa rozdelil odštiepením4a) alebo cezhraničným odštiepením,4b) f) dňom, v ktorom táto osoba dodá stavbu, časť stavby alebo stavebný pozemok, ak sa z dodania má presiahnuť obrat podľa písmena b), g) dňom, v ktorom táto osoba prijme platbu pred dodaním tovaru podľa písmena f), h) dňom dodania tovaru s miestom dodania v tuzemsku, ak ide o zdaniteľnú osobu podľa § 8 ods. 7 prvej vety, alebo i) dodaním tovaru alebo služby, alebo nadobudnutím tovaru v tuzemsku z iného členského štátu, ktoré je predmetom dane podľa § 2, uskutočneným zdaniteľnou osobou, ktorá má v tuzemsku výlučne prevádzkareň, ak nejde o malý podnik zahraničnej osoby, ktorý uplatňuje oslobodenie od dane podľa § 68f ods. 2. (2)"
+        },
+        {
+          "LF_start": 40,
+          "LF_end": 60,
+          "quote": "pre daň do piatich pracovných dní a) odo dňa, v ktorom bol presiahnutý obrat podľa odseku 1 písm. a), b) odo dňa, v ktorom bol presiahnutý obrat podľa odseku 1 písm. b), ak nebola povinná podať žiadosť o registráciu pre daň podľa písmena a), c) odo dňa, v ktorom bol presiahnutý obrat podľa odseku 1 písm. b), ak bol tento obrat presiahnutý po presiahnutí obratu podľa odseku 1 písm. a) do uplynutia lehoty na podanie žiadosti o registráciu pre daň podľa písmena a) a žiadosť o registráciu pre daň podľa písmena a) nebola ešte podaná, d) odo dňa, keď sa stala platiteľom podľa odseku 1 písm. c) až i) alebo e) odo dňa, keď sa stala platiteľom podľa odseku 1 písm. c) až i), ak táto skutočnosť nastala po presiahnutí obratu podľa odseku 1 písm. a) do uplynutia lehoty na podanie žiadosti o registráciu pre daň podľa písmena a) a žiadosť o registráciu pre daň podľa písmena a) nebola ešte podaná. (3) Zdaniteľná osoba, ktorá je povinná podať žiadosť o registráciu pre daň podľa odseku 2, v tejto žiadosti uvedie skutočnosť, na základe ktorej je povinná túto žiadosť podať,"
+        },
+        {
+          "LF_start": 69,
+          "LF_end": 99,
+          "quote": "Ak nie je v odseku 10 písm. a) ustanovené inak, daňový úrad zaregistruje a) zdaniteľnú osobu, ktorá bola povinná podať žiadosť o registráciu pre daň podľa odseku 2 písm. a), pridelí jej identifikačné číslo pre daň a vydá rozhodnutie o registrácii pre daň najneskôr do desiatich dní odo dňa doručenia žiadosti o registráciu pre daň, pričom identifikačné číslo pre daň nadobúda platnosť 1. prvým dňom kalendárneho roka nasledujúceho po kalendárnom roku, v ktorom bol presiahnutý obrat podľa odseku 1 písm. a), ak nie je v druhom až štvrtom bode alebo v odseku 11 ustanovené inak, 2. dodaním tovaru alebo služby, ktorým bol presiahnutý obrat podľa odseku 1 písm. b), ak k tomuto dodaniu došlo pred 1. januárom kalendárneho roka nasledujúceho po kalendárnom roku, v ktorom bol presiahnutý obrat podľa odseku 1 písm. a), 3. v deň, keď nastane skutočnosť podľa odseku 1 písm. c) až i) alebo 4. nasledujúci deň po dni oznámenia skutočnosti podľa odseku 8 písm. b), b) platiteľa, ktorý bol povinný podať žiadosť o registráciu pre daň podľa odseku 2 písm. b) až e), alebo platiteľa podľa odseku 8 písm. a), pridelí mu identifikačné číslo pre daň a vydá rozhodnutie o registrácii pre daň najneskôr do desiatich dní odo dňa doručenia žiadosti o registráciu pre daň z dôvodu, že 1. zdaniteľná osoba sa stala platiteľom podľa odseku 1 písm. b) alebo písm. i) alebo podľa odseku 8 písm. a), pričom identifikačné číslo pre daň nadobúda platnosť dňom, keď sa zdaniteľná osoba stala platiteľom, 2. zdaniteľná osoba sa stala platiteľom podľa odseku 1 písm. c) až h) a doručenia dokladov podľa odseku 3, pričom identifikačné číslo pre daň nadobúda platnosť dňom, keď sa zdaniteľná osoba stala platiteľom."
+        },
+        {
+          "LF_start": 96,
+          "LF_end": 118,
+          "quote": "2. zdaniteľná osoba sa stala platiteľom podľa odseku 1 písm. c) až h) a doručenia dokladov podľa odseku 3, pričom identifikačné číslo pre daň nadobúda platnosť dňom, keď sa zdaniteľná osoba stala platiteľom. (5) Zdaniteľná osoba, ktorá podala žiadosť o registráciu pre daň podľa odseku 2 písm. a), je povinná bezodkladne oznámiť daňovému úradu skutočnosť, že sa stala platiteľom podľa odseku 1 písm. b) až i) alebo podľa § 48c ods. 5 do 31. decembra prebiehajúceho kalendárneho roka; v oznámení uvedie deň, keď k tejto skutočnosti došlo. Ak daňový úrad ku dňu oznámenia podľa prvej vety ešte nevydal rozhodnutie podľa odseku 4 písm. a), vydá rozhodnutie o registrácii pre daň podľa odseku 4 písm. b). (6) Platiteľom sa môže stať aj zdaniteľná osoba, ktorá má v tuzemsku sídlo, miesto podnikania, a ak nemá takéto miesto, ale má bydlisko v tuzemsku alebo sa v tuzemsku obvykle zdržiava, pred a) presiahnutím obratu podľa odseku 1 písm. a) alebo b) presiahnutím obratu podľa odseku 1 písm. b). (7) Zdaniteľná osoba podľa odseku 6 písm. a) môže podať žiadosť o registráciu pre daň. Ak nie je v odseku 10 písm. b) ustanovené inak, daňový úrad zaregistruje túto osobu, pridelí jej identifikačné číslo pre daň a vydá rozhodnutie o registrácii pre daň najneskôr"
+        },
+        {
+          "LF_start": 119,
+          "LF_end": 151,
+          "quote": "do 21 dní odo dňa doručenia žiadosti o registráciu pre daň. Zdaniteľná osoba sa stáva platiteľom dňom uvedeným v rozhodnutí o registrácii pre daň a týmto dňom nadobúda platnosť identifikačné číslo pre daň; to neplatí, ak sa zdaniteľná osoba stane platiteľom podľa odseku 1 písm. a) až h) alebo podľa § 48c ods. 5 pred týmto dňom, pričom túto skutočnosť je povinná bezodkladne oznámiť daňovému úradu. Ak nastane skutočnosť podľa tretej vety v časti za bodkočiarkou a daňový úrad už vydal rozhodnutie o registrácii pre daň, toto rozhodnutie sa zrušuje vydaním nového rozhodnutia; na postup zdaniteľnej osoby sa primerane vzťahuje odsek 3 a na postup daňového úradu v registračnom konaní sa primerane vzťahujú odseky 4 a 10. (8) Ak sa zdaniteľná osoba, ktorej obrat v prebiehajúcom kalendárnom roku presiahol 50 000 eur, chce stať platiteľom podľa odseku 6 písm. b) a) dodaním tovaru alebo služby, ktorým hodnota bez dane dodaných tovarov alebo služieb touto osobou, ktoré sa zahŕňajú do obratu podľa odseku 15, v prebiehajúcom kalendárnom roku presiahne 50 000 eur, uvedie túto skutočnosť v žiadosti o registráciu pre daň podľa odseku 2 a zdaniteľná osoba sa stáva platiteľom počnúc týmto dodaním, b) pred presiahnutím obratu podľa odseku 1 písm. b), oznámi túto skutočnosť daňovému úradu najskôr po doručení rozhodnutia o registrácii pre daň podľa odseku 4 písm. a) a zdaniteľná osoba sa stáva platiteľom dňom nasledujúcom po dni, v ktorom túto skutočnosť oznámila. (9) Proti rozhodnutiu o registrácii pre daň podľa odseku 4 alebo odseku 7 nemožno podať odvolanie. (10) Ak daňový úrad v registračnom konaní zistí, že neboli splnené podmienky pre registráciu pre daň osoby, ktorá podala žiadosť o registráciu pre daň a) podľa odseku 2, túto osobu nezaregistruje z dôvodu, že sa nestane alebo nestala platiteľom a vydá o tom rozhodnutie proti ktorému nemožno podať odvolanie alebo b) podľa odseku 7, túto osobu nezaregistruje z dôvodu, že nie je zdaniteľnou osobou. (11)"
+        },
+        {
+          "LF_start": 151,
+          "LF_end": 170,
+          "quote": "(11) Ak v prebiehajúcom kalendárnom roku nastane skutočnosť, v dôsledku ktorej by zdaniteľná osoba, ktorá podala žiadosť o registráciu pre daň podľa odseku 2 písm. a) a ktorá nemá pridelené identifikačné číslo pre daň podľa § 7 alebo § 7a, bola povinná podať žiadosť o registráciu pre daň podľa § 7 alebo § 7a, je zdaniteľná osoba povinná túto skutočnosť oznámiť daňovému úradu pred tým, ako táto skutočnosť nastane. Zdaniteľná osoba, ktorej ku dňu oznámenia skutočnosti podľa prvej vety a) bolo doručené rozhodnutie o registrácii pre daň podľa odseku 4 písm. a), sa odo dňa nasledujúceho po dni, v ktorom oznámila túto skutočnosť, do 31. decembra prebiehajúceho kalendárneho roka alebo do dňa, keď sa v prebiehajúcom kalendárnom roku stane platiteľom podľa odseku 1 písm. b) až i), odseku 8 písm. b) alebo podľa § 48c ods. 5, považuje na účely tohto zákona za osobu registrovanú pre daň podľa § 7 alebo § 7a; daňový úrad rozhodnutie nevydáva, b) ešte nebolo doručené rozhodnutie o registrácii pre daň podľa odseku 4 písm. a), sa odo dňa doručenia tohto rozhodnutia do 31. decembra prebiehajúceho kalendárneho roka alebo do dňa, keď sa v prebiehajúcom kalendárnom roku stane platiteľom podľa odseku 1 písm. b) až i), odseku 8 písm. b) alebo podľa § 48c ods. 5, považuje na účely tohto zákona za osobu registrovanú pre daň podľa § 7 alebo § 7a. (12) Ak platiteľ, ktorý podal žiadosť o registráciu pre daň podľa odseku 2 alebo odseku 7, alebo ak zdaniteľná osoba, ktorá oznámila skutočnosť podľa odseku 8, má pridelené identifikačné číslo pre daň podľa § 7, § 7a alebo na účely uplatňovania osobitnej úpravy podľa § 68b ods. 2, daňový úrad pridelí tejto osobe to isté identifikačné číslo pre daň."
+        },
+        {
+          "LF_start": 183,
+          "LF_end": 187,
+          "quote": "(15) Na účely tohto zákona sa obratom rozumie hodnota bez dane dodaných tovarov a služieb v tuzemsku okrem hodnoty tovarov a služieb, ktoré sú oslobodené od dane podľa § 28 až 36 a podľa § 40 až 42. Hodnota dodaných poisťovacích služieb, ktoré sú oslobodené od dane podľa § 37, a finančných služieb, ktoré sú oslobodené od dane podľa § 39, sa nezahŕňa do obratu, ak tieto služby sú dodané pri dodaní tovaru alebo služby ako doplnkové služby. Do obratu sa nezahŕňa hodnota príležitostne dodaného hmotného majetku okrem zásob a hodnota príležitostne dodaného nehmotného majetku."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    }
+  },
+  "VAT4b.group": {
+    "before": {
+      "source_id": "17",
+      "article": "§ 4b",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+      "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4b.txt",
+      "reader_sha256": "480639cc4521ac24f67a8dea0606f0953212ba4cb2152f7d8349f4fd8fd7aca5",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 78,
+      "quotations": [
+        {
+          "LF_start": 3,
+          "LF_end": 18,
+          "quote": "Členovia skupiny môžu požiadať o registráciu skupiny pre daň (ďalej len „registrácia skupiny“). Žiadosť o registráciu skupiny musí obsahovať a) obchodné meno a adresu sídla, miesta podnikania alebo prevádzkarne každého člena skupiny, b) identifikačné číslo pre daň každého člena skupiny, ak je mu pridelené v tuzemsku, c) miestne príslušný daňový úrad každého člena skupiny, d) obchodné meno a adresu sídla, miesta podnikania alebo prevádzkarne člena skupiny, ktorý bol určený členmi skupiny na zastupovanie skupiny na účely uplatňovania tejto dane (ďalej len „zástupca skupiny“), e) podpisy štatutárnych zástupcov všetkých členov skupiny. (2)"
+        },
+        {
+          "LF_start": 39,
+          "LF_end": 52,
+          "quote": "Členom skupiny sa môže stať aj ďalšia zdaniteľná osoba, ak spĺňa podmienky podľa § 4a. Žiadosť o zmenu registrácie skupiny z dôvodu pristúpenia ďalšieho člena do skupiny podáva zástupca skupiny. Ak zdaniteľná osoba spĺňa podmienky podľa § 4a, daňový úrad vydá bezodkladne rozhodnutie o zmene registrácie skupiny, proti ktorému nemožno podať odvolanie; účinky zmeny registrácie skupiny nastávajú k prvému dňu tretieho kalendárneho mesiaca nasledujúceho po kalendárnom mesiaci, v ktorom bola žiadosť o zmenu registrácie skupiny podaná. Platnosť identifikačného čísla pre daň člena skupiny, ktorý pristúpil do skupiny, zaniká dňom, ktorý predchádza dňu, keď nastali účinky zmeny registrácie skupiny. Práva a povinnosti zdaniteľnej osoby, ktorá pristúpila do skupiny, vyplývajúce z tohto zákona prechádzajú na skupinu dňom, keď nastali účinky zmeny registrácie skupiny. (6) Ak sa člen skupiny rozhodne vystúpiť zo skupiny alebo musí vystúpiť zo skupiny z dôvodu neplnenia podmienok podľa § 4a, zástupca skupiny je povinný bezodkladne podať žiadosť o zmenu registrácie skupiny; ak je vystupujúcim členom skupiny zástupca skupiny, žiadosť musí obsahovať aj označenie"
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    },
+    "after": {
+      "source_id": "17",
+      "article": "§ 4b",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+      "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4b.txt",
+      "reader_sha256": "480639cc4521ac24f67a8dea0606f0953212ba4cb2152f7d8349f4fd8fd7aca5",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 78,
+      "quotations": [
+        {
+          "LF_start": 3,
+          "LF_end": 18,
+          "quote": "Členovia skupiny môžu požiadať o registráciu skupiny pre daň (ďalej len „registrácia skupiny“). Žiadosť o registráciu skupiny musí obsahovať a) obchodné meno a adresu sídla, miesta podnikania alebo prevádzkarne každého člena skupiny, b) identifikačné číslo pre daň každého člena skupiny, ak je mu pridelené v tuzemsku, c) miestne príslušný daňový úrad každého člena skupiny, d) obchodné meno a adresu sídla, miesta podnikania alebo prevádzkarne člena skupiny, ktorý bol určený členmi skupiny na zastupovanie skupiny na účely uplatňovania tejto dane (ďalej len „zástupca skupiny“), e) podpisy štatutárnych zástupcov všetkých členov skupiny. (2)"
+        },
+        {
+          "LF_start": 18,
+          "LF_end": 37,
+          "quote": "(2) Žiadosť o registráciu skupiny sa podáva daňovému úradu, ktorý je miestne príslušný pre zástupcu skupiny. Ak zdaniteľné osoby preukážu splnenie podmienok podľa § 4a, daňový úrad zaregistruje skupinu a pridelí jej identifikačné číslo pre daň; proti tomuto rozhodnutiu nemožno podať odvolanie. Dňom registrácie skupiny sa skupina stáva platiteľom a zaniká platnosť identifikačných čísel pre daň jednotlivých členov skupiny. Pre skupinu je miestne príslušný daňový úrad, v ktorého územnom obvode má zástupca skupiny sídlo, miesto podnikania alebo prevádzkareň. (3) Registráciu skupiny vykoná daňový úrad k 1. januáru kalendárneho roka nasledujúceho po podaní žiadosti o registráciu skupiny. Ak je žiadosť o registráciu skupiny podaná po 31. októbri kalendárneho roka, daňový úrad vykoná registráciu skupiny k 1. januáru druhého kalendárneho roka nasledujúceho po podaní žiadosti. (4) Za skupinu koná zástupca skupiny. Práva a povinnosti jednotlivých členov skupiny vyplývajúce z tohto zákona prechádzajú na skupinu dňom registrácie skupiny. Členovia skupiny zodpovedajú spoločne a nerozdielne za povinnosti skupiny vyplývajúce z tohto zákona a osobitného predpisu,33) a to aj po zrušení skupiny alebo po vystúpení člena skupiny zo skupiny, za obdobie, v ktorom boli členmi skupiny. Daňový úrad môže požadovať platenie dlžnej sumy dane a sankcií týkajúcich sa porušenia povinností skupiny vyplývajúcich z tohto zákona a osobitného predpisu33) od ktoréhokoľvek člena skupiny."
+        },
+        {
+          "LF_start": 39,
+          "LF_end": 52,
+          "quote": "Členom skupiny sa môže stať aj ďalšia zdaniteľná osoba, ak spĺňa podmienky podľa § 4a. Žiadosť o zmenu registrácie skupiny z dôvodu pristúpenia ďalšieho člena do skupiny podáva zástupca skupiny. Ak zdaniteľná osoba spĺňa podmienky podľa § 4a, daňový úrad vydá bezodkladne rozhodnutie o zmene registrácie skupiny, proti ktorému nemožno podať odvolanie; účinky zmeny registrácie skupiny nastávajú k prvému dňu tretieho kalendárneho mesiaca nasledujúceho po kalendárnom mesiaci, v ktorom bola žiadosť o zmenu registrácie skupiny podaná. Platnosť identifikačného čísla pre daň člena skupiny, ktorý pristúpil do skupiny, zaniká dňom, ktorý predchádza dňu, keď nastali účinky zmeny registrácie skupiny. Práva a povinnosti zdaniteľnej osoby, ktorá pristúpila do skupiny, vyplývajúce z tohto zákona prechádzajú na skupinu dňom, keď nastali účinky zmeny registrácie skupiny. (6) Ak sa člen skupiny rozhodne vystúpiť zo skupiny alebo musí vystúpiť zo skupiny z dôvodu neplnenia podmienok podľa § 4a, zástupca skupiny je povinný bezodkladne podať žiadosť o zmenu registrácie skupiny; ak je vystupujúcim členom skupiny zástupca skupiny, žiadosť musí obsahovať aj označenie"
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    }
+  },
+  "VAT49.deduction": {
+    "before": {
+      "source_id": "17",
+      "article": "§ 49",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+      "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-49.txt",
+      "reader_sha256": "e9695400f9f588a7cdedc63d6d9166b4c08a6dbec9de4e3e016cf184a46d2b6a",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 74,
+      "quotations": [
+        {
+          "LF_start": 3,
+          "LF_end": 10,
+          "quote": "(1) Právo odpočítať daň z tovaru alebo zo služby vzniká platiteľovi v deň, keď pri tomto tovare alebo službe vznikla daňová povinnosť. (2) Platiteľ môže odpočítať od dane, ktorú je povinný platiť, daň z tovarov a služieb, ktoré použije na dodávky tovarov a služieb ako platiteľ s výnimkou podľa odsekov 3 a 7. Platiteľ môže odpočítať daň, ak je daň a)"
+        },
+        {
+          "LF_start": 25,
+          "LF_end": 74,
+          "quote": "od dane podľa § 67 ods. 3, a platiteľ, ktorý sprostredkováva dodanie investičného zlata oslobodené od dane podľa § 67 ods. 3, nemôže odpočítať daň z tovarov a služieb podľa odseku 2, ktoré použije na túto činnosť, s výnimkou dane z tovarov a služieb podľa § 67 ods. 5 a 6. (4) Ak platiteľ použije tovary a služby pre dodávky tovarov a služieb, pri ktorých môže odpočítať daň, a súčasne pre dodávky tovarov a služieb, pri ktorých nemôže odpočítať daň podľa odseku 3 alebo odseku 6, je povinný postupovať pri výpočte pomernej výšky dane, ktorú môže odpočítať, podľa § 50. (5) Platiteľ, ktorý nadobudne investičný majetok podľa § 54 ods. 2 písm. a) alebo písm. d) a pri nadobudnutí tohto majetku predpokladá jeho použitie na účely svojho podnikania, ako aj na iný účel ako na podnikanie, sa môže rozhodnúť, že neodpočíta časť dane, ktorá zodpovedá rozsahu použitia tohto investičného majetku na iný účel ako na podnikanie. Ak sa platiteľ rozhodne, že neodpočíta časť dane, ktorá zodpovedá rozsahu použitia majetku podľa prvej vety na iný účel ako na podnikanie, nepovažuje sa použitie tohto majetku na iný účel ako na podnikanie v tomto rozsahu za dodanie tovaru za protihodnotu (§ 8 ods. 3) alebo dodanie služby za protihodnotu (§ 9 ods. 2 alebo ods. 3); ak platiteľ použije investičný majetok na iný účel ako na podnikanie v inom rozsahu, na postup platiteľa sa vzťahuje § 54d. Ak platiteľ použije prijaté služby, ktoré nie sú investičným majetkom podľa § 54 ods. 2 písm. d), a nadobudnutý tovar, ktorý nie je investičným majetkom podľa § 54 ods. 2 písm. a), b) alebo písm. c), na účely svojho podnikania, ako aj na iný účel ako na podnikanie, odpočíta daň len v pomere zodpovedajúcom rozsahu použitia na podnikanie k celkovému rozsahu použitia. Pomer použitia tovaru a služieb na podnikanie a na iný účel ako na podnikanie platiteľ určí podľa výšky príjmu z podnikania a iného príjmu ako je príjem z podnikania, doby používania tovaru a služieb na podnikanie a na iný účel ako na podnikanie alebo podľa iného kritéria, použitie ktorého objektívne odráža rozsah použitia tovaru a služieb na podnikanie a na iný účel ako na podnikanie. Odsek 4 týmto nie je dotknutý. (6) Platiteľ môže odpočítať daň aj v prípade, ak tovary a služby použije na podnikanie v zahraničí, ak by táto daň bola odpočítateľná, keby táto činnosť bola vykonávaná v tuzemsku; to neplatí, ak platiteľ použije tovary a služby na dodanie tovarov a služieb v inom členskom štáte, v ktorom uplatňuje osobitnú úpravu podľa § 68g. (7) Platiteľ nemôže odpočítať daň pri a) kúpe tovarov a služieb na účely pohostenia a zábavy, b) prechodných položkách podľa § 22 ods. 3. (8) Pri prevádzkovaní podniku po vyhlásení konkurzu môže platiteľ odpočítať daň len z tovarov a služieb, ktoré použije na prevádzkovanie podniku; platiteľ nemôže odpočítať daň z tovarov a služieb, ktoré použije na udržiavanie a správu konkurznej podstaty, a z tovarov a služieb, ktoré sú hotovým výdavkom správcu konkurznej podstaty a sú pohľadávkou proti konkurznej podstate. (9) Platiteľ, ktorý je zahraničnou osobou a spĺňa podmienky na vrátenie dane podľa § 55a alebo § 56, nemôže uplatňovať odpočítanie dane z tovarov a služieb prostredníctvom daňového priznania okrem odpočítania dane z tovarov a služieb, ktoré použije na dodávky tovarov a služieb, pri ktorých je osobou povinnou platiť daň podľa § 69 ods. 1 a okrem odpočítania ním uplatnenej dane na tovary a služby, pri ktorých je osobou povinnou platiť daň. (10) Ak zahraničná osoba uplatňuje osobitnú úpravu podľa § 68a až 68c alebo osobitnú úpravu podľa ustanovení zákona platného v inom členskom štáte zodpovedajúcich § 68a až 68c a súčasne vykonáva v tuzemsku aj činnosti, na ktoré sa tieto osobitné úpravy nevzťahujú a v súvislosti s ktorými je registrovaná ako platiteľ podľa § 5, má právo na odpočítanie dane uplatnenej pri tovaroch a službách, ktoré súvisia s dodaním tovarov a služieb uvedených v § 68 ods. 1."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    },
+    "after": {
+      "source_id": "17",
+      "article": "§ 49",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+      "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-49.txt",
+      "reader_sha256": "e9695400f9f588a7cdedc63d6d9166b4c08a6dbec9de4e3e016cf184a46d2b6a",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 74,
+      "quotations": [
+        {
+          "LF_start": 3,
+          "LF_end": 10,
+          "quote": "(1) Právo odpočítať daň z tovaru alebo zo služby vzniká platiteľovi v deň, keď pri tomto tovare alebo službe vznikla daňová povinnosť. (2) Platiteľ môže odpočítať od dane, ktorú je povinný platiť, daň z tovarov a služieb, ktoré použije na dodávky tovarov a služieb ako platiteľ s výnimkou podľa odsekov 3 a 7. Platiteľ môže odpočítať daň, ak je daň a)"
+        },
+        {
+          "LF_start": 11,
+          "LF_end": 24,
+          "quote": "voči nemu uplatnená iným platiteľom v tuzemsku z tovarov a služieb, ktoré sú alebo majú byť platiteľovi dodané, b) ním uplatnená z tovarov a služieb, pri ktorých je povinný platiť daň podľa § 48c ods. 5 a § 69 ods. 2 až 4, 7 a 9 až 12, c) ním uplatnená pri nadobudnutí tovaru v tuzemsku z iného členského štátu podľa § 11 a § 11a, d) ním uplatnená pri dovoze tovaru alebo zaplatená colnému orgánu v tuzemsku pri dovoze tovaru. (3) Platiteľ nemôže odpočítať daň z tovarov a služieb podľa odseku 2, ktoré použije na dodávky tovarov a služieb, ktoré sú oslobodené od dane podľa § 28 až 42, s výnimkou poisťovacích služieb podľa § 37 a finančných služieb podľa § 39, ak sú poskytnuté zákazníkovi, ktorý nemá sídlo, miesto podnikania, prevádzkareň ani bydlisko na území Európskej únie, alebo ak sú tieto služby priamo spojené s vývozom tovaru mimo územia Európskej únie. Platiteľ, ktorý dodáva investičné zlato oslobodené"
+        },
+        {
+          "LF_start": 25,
+          "LF_end": 74,
+          "quote": "od dane podľa § 67 ods. 3, a platiteľ, ktorý sprostredkováva dodanie investičného zlata oslobodené od dane podľa § 67 ods. 3, nemôže odpočítať daň z tovarov a služieb podľa odseku 2, ktoré použije na túto činnosť, s výnimkou dane z tovarov a služieb podľa § 67 ods. 5 a 6. (4) Ak platiteľ použije tovary a služby pre dodávky tovarov a služieb, pri ktorých môže odpočítať daň, a súčasne pre dodávky tovarov a služieb, pri ktorých nemôže odpočítať daň podľa odseku 3 alebo odseku 6, je povinný postupovať pri výpočte pomernej výšky dane, ktorú môže odpočítať, podľa § 50. (5) Platiteľ, ktorý nadobudne investičný majetok podľa § 54 ods. 2 písm. a) alebo písm. d) a pri nadobudnutí tohto majetku predpokladá jeho použitie na účely svojho podnikania, ako aj na iný účel ako na podnikanie, sa môže rozhodnúť, že neodpočíta časť dane, ktorá zodpovedá rozsahu použitia tohto investičného majetku na iný účel ako na podnikanie. Ak sa platiteľ rozhodne, že neodpočíta časť dane, ktorá zodpovedá rozsahu použitia majetku podľa prvej vety na iný účel ako na podnikanie, nepovažuje sa použitie tohto majetku na iný účel ako na podnikanie v tomto rozsahu za dodanie tovaru za protihodnotu (§ 8 ods. 3) alebo dodanie služby za protihodnotu (§ 9 ods. 2 alebo ods. 3); ak platiteľ použije investičný majetok na iný účel ako na podnikanie v inom rozsahu, na postup platiteľa sa vzťahuje § 54d. Ak platiteľ použije prijaté služby, ktoré nie sú investičným majetkom podľa § 54 ods. 2 písm. d), a nadobudnutý tovar, ktorý nie je investičným majetkom podľa § 54 ods. 2 písm. a), b) alebo písm. c), na účely svojho podnikania, ako aj na iný účel ako na podnikanie, odpočíta daň len v pomere zodpovedajúcom rozsahu použitia na podnikanie k celkovému rozsahu použitia. Pomer použitia tovaru a služieb na podnikanie a na iný účel ako na podnikanie platiteľ určí podľa výšky príjmu z podnikania a iného príjmu ako je príjem z podnikania, doby používania tovaru a služieb na podnikanie a na iný účel ako na podnikanie alebo podľa iného kritéria, použitie ktorého objektívne odráža rozsah použitia tovaru a služieb na podnikanie a na iný účel ako na podnikanie. Odsek 4 týmto nie je dotknutý. (6) Platiteľ môže odpočítať daň aj v prípade, ak tovary a služby použije na podnikanie v zahraničí, ak by táto daň bola odpočítateľná, keby táto činnosť bola vykonávaná v tuzemsku; to neplatí, ak platiteľ použije tovary a služby na dodanie tovarov a služieb v inom členskom štáte, v ktorom uplatňuje osobitnú úpravu podľa § 68g. (7) Platiteľ nemôže odpočítať daň pri a) kúpe tovarov a služieb na účely pohostenia a zábavy, b) prechodných položkách podľa § 22 ods. 3. (8) Pri prevádzkovaní podniku po vyhlásení konkurzu môže platiteľ odpočítať daň len z tovarov a služieb, ktoré použije na prevádzkovanie podniku; platiteľ nemôže odpočítať daň z tovarov a služieb, ktoré použije na udržiavanie a správu konkurznej podstaty, a z tovarov a služieb, ktoré sú hotovým výdavkom správcu konkurznej podstaty a sú pohľadávkou proti konkurznej podstate. (9) Platiteľ, ktorý je zahraničnou osobou a spĺňa podmienky na vrátenie dane podľa § 55a alebo § 56, nemôže uplatňovať odpočítanie dane z tovarov a služieb prostredníctvom daňového priznania okrem odpočítania dane z tovarov a služieb, ktoré použije na dodávky tovarov a služieb, pri ktorých je osobou povinnou platiť daň podľa § 69 ods. 1 a okrem odpočítania ním uplatnenej dane na tovary a služby, pri ktorých je osobou povinnou platiť daň. (10) Ak zahraničná osoba uplatňuje osobitnú úpravu podľa § 68a až 68c alebo osobitnú úpravu podľa ustanovení zákona platného v inom členskom štáte zodpovedajúcich § 68a až 68c a súčasne vykonáva v tuzemsku aj činnosti, na ktoré sa tieto osobitné úpravy nevzťahujú a v súvislosti s ktorými je registrovaná ako platiteľ podľa § 5, má právo na odpočítanie dane uplatnenej pri tovaroch a službách, ktoré súvisia s dodaním tovarov a služieb uvedených v § 68 ods. 1."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    }
+  },
+  "VAT78.return": {
+    "before": {
+      "source_id": "17",
+      "article": "§ 78",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+      "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-78.txt",
+      "reader_sha256": "a5cf422daf617e0be9ba97d7e9527cda4f8e913c4af60ddc1b693ddbe8db3052",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 70,
+      "quotations": [
+        {
+          "LF_start": 3,
+          "LF_end": 49,
+          "quote": "(1) Daň, ktorú je povinný platiť platiteľ, je splatná do 25 dní po skončení zdaňovacieho obdobia, v ktorom vznikla daňová povinnosť zo zdaniteľného obchodu okrem dane vyrubenej colným orgánom pri dovoze tovaru, ktorá je splatná v lehote pre splatnosť cla podľa colných predpisov. Ak platiteľ uplatňuje odpočítanie dane, od celkovej splatnej dane okrem dane vyrubenej colným orgánom pri dovoze tovaru odpočíta odpočítateľnú daň a tento kladný rozdiel (ďalej len „vlastná daňová povinnosť“) uvedie do daňového priznania. (2) Platiteľ, ktorý a) má sídlo, miesto podnikania alebo prevádzkareň v tuzemsku, a ak nemá takéto miesto, ale má bydlisko v tuzemsku alebo sa v tuzemsku obvykle zdržiava, je povinný podať daňové priznanie do 25 dní po skončení každého zdaňovacieho obdobia a v tej istej lehote je povinný zaplatiť vlastnú daňovú povinnosť, okrem platiteľa, ktorý 1. splnil registračnú povinnosť podľa § 4, a ktorému nebolo do uplynutia lehoty na podanie daňového priznania za prvé zdaňovacie obdobie pridelené identifikačné číslo pre daň podľa § 4, ktorý je povinný podať daňové priznanie a zaplatiť vlastnú daňovú povinnosť do piatich pracovných dní odo dňa doručenia rozhodnutia o registrácii pre daň podľa § 4 ods. 4, 2. uskutočňuje v tuzemsku výlučne plnenia oslobodené od dane podľa § 28 až 42, na ktorého sa povinnosť podávať daňové priznanie vzťahuje počnúc zdaňovacím obdobím, v ktorom mu vznikne povinnosť platiť daň zo zdaniteľného obchodu, ktorý nie je oslobodený od dane podľa § 28 až 42, alebo počnúc prvým zdaňovacím obdobím, ak sa stal platiteľom 1. januára kalendárneho roka nasledujúceho po kalendárnom roku, za ktorý presiahol obrat podľa § 4 ods. 1 písm. a) výlučne z dodaní tovarov a služieb, ktoré sú oslobodené od dane podľa § 37 až 39, a od tohto presiahnutia obratu do 31. decembra prebiehajúceho kalendárneho roka dodal v tuzemsku tovar alebo službu, ktorá nie je oslobodená od dane podľa § 28 až 42, b) je zahraničnou osobou, je povinný, ak odsek 9 neustanovuje inak, podať daňové priznanie do 25 dní po skončení zdaňovacieho obdobia, v ktorom mu vznikla povinnosť platiť daň, dodal tovar oslobodený od dane podľa § 43 alebo § 47, nadobudol tovar s oslobodením od dane podľa § 44 alebo uplatňuje odpočítanie dane, a v tej istej lehote je povinný zaplatiť vlastnú daňovú povinnosť; ak platiteľovi, ktorý splnil registračnú povinnosť podľa § 5, nebolo do uplynutia lehoty na podanie daňového priznania za prvé zdaňovacie obdobie pridelené identifikačné číslo pre daň podľa § 5, je povinný podať daňové priznanie a zaplatiť vlastnú daňovú povinnosť do piatich pracovných dní odo dňa doručenia rozhodnutia o registrácii pre daň podľa § 5 ods. 3 alebo ods. 5. (3) Ak osobe, ktorá nie je platiteľom, vznikne povinnosť platiť daň (§ 69), je táto osoba povinná podať daňové priznanie do 25 dní po skončení kalendárneho mesiaca, v ktorom vznikla daňová povinnosť, a v tej istej lehote zaplatiť daň s výnimkou podľa odseku 4. Osoba, ktorá nie je platiteľom, nie je povinná zaplatiť daň, ak daň na zaplatenie nie je viac ako 5 eur. (4) Osoba, ktorá nie je registrovaná pre daň, pri nadobudnutí nového dopravného prostriedku z iného členského štátu je povinná podať daňové priznanie do siedmich dní od nadobudnutia nového dopravného prostriedku a v tej istej lehote zaplatiť daň. Ak osobe podľa prvej vety nebolo oznámené číslo účtu správcu dane vedeného pre túto osobu, je povinná zaplatiť daň do siedmich dní odo dňa doručenia tohto oznámenia. (5) Každá osoba, ktorá príležitostne nadobudne nový dopravný prostriedok z iného členského štátu, je povinná priložiť k daňovému priznaniu aj úradne overenú kópiu dokladu o kúpe nového dopravného prostriedku a na požiadanie daňového úradu poskytnúť ďalšie informácie potrebné na správne určenie dane."
+        },
+        {
+          "LF_start": 67,
+          "LF_end": 70,
+          "quote": "za každé zdaňovacie obdobie, za ktoré v dôsledku nesplnenia tejto povinnosti nepodal daňové priznanie v lehote podľa odseku 2, v chronologickom poradí počnúc prvým zdaňovacím obdobím; ak je platiteľ zahraničnou osobou, je povinný podať daňové priznanie aj za zdaňovacie obdobie, za ktoré by ho nebol povinný podať podľa odseku 2 písm. b)."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    },
+    "after": {
+      "source_id": "17",
+      "article": "§ 78",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+      "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-78.txt",
+      "reader_sha256": "a5cf422daf617e0be9ba97d7e9527cda4f8e913c4af60ddc1b693ddbe8db3052",
+      "actual_read_LF_start": 1,
+      "actual_read_LF_end": 70,
+      "quotations": [
+        {
+          "LF_start": 3,
+          "LF_end": 49,
+          "quote": "(1) Daň, ktorú je povinný platiť platiteľ, je splatná do 25 dní po skončení zdaňovacieho obdobia, v ktorom vznikla daňová povinnosť zo zdaniteľného obchodu okrem dane vyrubenej colným orgánom pri dovoze tovaru, ktorá je splatná v lehote pre splatnosť cla podľa colných predpisov. Ak platiteľ uplatňuje odpočítanie dane, od celkovej splatnej dane okrem dane vyrubenej colným orgánom pri dovoze tovaru odpočíta odpočítateľnú daň a tento kladný rozdiel (ďalej len „vlastná daňová povinnosť“) uvedie do daňového priznania. (2) Platiteľ, ktorý a) má sídlo, miesto podnikania alebo prevádzkareň v tuzemsku, a ak nemá takéto miesto, ale má bydlisko v tuzemsku alebo sa v tuzemsku obvykle zdržiava, je povinný podať daňové priznanie do 25 dní po skončení každého zdaňovacieho obdobia a v tej istej lehote je povinný zaplatiť vlastnú daňovú povinnosť, okrem platiteľa, ktorý 1. splnil registračnú povinnosť podľa § 4, a ktorému nebolo do uplynutia lehoty na podanie daňového priznania za prvé zdaňovacie obdobie pridelené identifikačné číslo pre daň podľa § 4, ktorý je povinný podať daňové priznanie a zaplatiť vlastnú daňovú povinnosť do piatich pracovných dní odo dňa doručenia rozhodnutia o registrácii pre daň podľa § 4 ods. 4, 2. uskutočňuje v tuzemsku výlučne plnenia oslobodené od dane podľa § 28 až 42, na ktorého sa povinnosť podávať daňové priznanie vzťahuje počnúc zdaňovacím obdobím, v ktorom mu vznikne povinnosť platiť daň zo zdaniteľného obchodu, ktorý nie je oslobodený od dane podľa § 28 až 42, alebo počnúc prvým zdaňovacím obdobím, ak sa stal platiteľom 1. januára kalendárneho roka nasledujúceho po kalendárnom roku, za ktorý presiahol obrat podľa § 4 ods. 1 písm. a) výlučne z dodaní tovarov a služieb, ktoré sú oslobodené od dane podľa § 37 až 39, a od tohto presiahnutia obratu do 31. decembra prebiehajúceho kalendárneho roka dodal v tuzemsku tovar alebo službu, ktorá nie je oslobodená od dane podľa § 28 až 42, b) je zahraničnou osobou, je povinný, ak odsek 9 neustanovuje inak, podať daňové priznanie do 25 dní po skončení zdaňovacieho obdobia, v ktorom mu vznikla povinnosť platiť daň, dodal tovar oslobodený od dane podľa § 43 alebo § 47, nadobudol tovar s oslobodením od dane podľa § 44 alebo uplatňuje odpočítanie dane, a v tej istej lehote je povinný zaplatiť vlastnú daňovú povinnosť; ak platiteľovi, ktorý splnil registračnú povinnosť podľa § 5, nebolo do uplynutia lehoty na podanie daňového priznania za prvé zdaňovacie obdobie pridelené identifikačné číslo pre daň podľa § 5, je povinný podať daňové priznanie a zaplatiť vlastnú daňovú povinnosť do piatich pracovných dní odo dňa doručenia rozhodnutia o registrácii pre daň podľa § 5 ods. 3 alebo ods. 5. (3) Ak osobe, ktorá nie je platiteľom, vznikne povinnosť platiť daň (§ 69), je táto osoba povinná podať daňové priznanie do 25 dní po skončení kalendárneho mesiaca, v ktorom vznikla daňová povinnosť, a v tej istej lehote zaplatiť daň s výnimkou podľa odseku 4. Osoba, ktorá nie je platiteľom, nie je povinná zaplatiť daň, ak daň na zaplatenie nie je viac ako 5 eur. (4) Osoba, ktorá nie je registrovaná pre daň, pri nadobudnutí nového dopravného prostriedku z iného členského štátu je povinná podať daňové priznanie do siedmich dní od nadobudnutia nového dopravného prostriedku a v tej istej lehote zaplatiť daň. Ak osobe podľa prvej vety nebolo oznámené číslo účtu správcu dane vedeného pre túto osobu, je povinná zaplatiť daň do siedmich dní odo dňa doručenia tohto oznámenia. (5) Každá osoba, ktorá príležitostne nadobudne nový dopravný prostriedok z iného členského štátu, je povinná priložiť k daňovému priznaniu aj úradne overenú kópiu dokladu o kúpe nového dopravného prostriedku a na požiadanie daňového úradu poskytnúť ďalšie informácie potrebné na správne určenie dane."
+        },
+        {
+          "LF_start": 65,
+          "LF_end": 70,
+          "quote": "(9) Platiteľ, ktorý nesplnil registračnú povinnosť, je povinný podať daňové priznanie za každé zdaňovacie obdobie, za ktoré v dôsledku nesplnenia tejto povinnosti nepodal daňové priznanie v lehote podľa odseku 2, v chronologickom poradí počnúc prvým zdaňovacím obdobím; ak je platiteľ zahraničnou osobou, je povinný podať daňové priznanie aj za zdaňovacie obdobie, za ktoré by ho nebol povinný podať podľa odseku 2 písm. b)."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    }
+  },
+  "TC154.registration": {
+    "before": null,
+    "after": {
+      "source_id": "20",
+      "article": "TaxCode §154(1)(b)",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/20.html",
+      "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-154.txt",
+      "reader_sha256": "1722095de409cbe7fabb6e351349adeb93897e57fda1c22bc8149e5b14e4838d",
+      "actual_read_LF_start": 13,
+      "actual_read_LF_end": 14,
+      "quotations": [
+        {
+          "LF_start": 13,
+          "LF_end": 14,
+          "quote": "b) nesplní registračnú povinnosť v ustanovenej lehote,"
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": ""
+    }
+  },
+  "VAT2024.goods-decision": {
+    "before": null,
+    "after": {
+      "source_id": "16",
+      "article": "Historical 2024 VAT §7(3)",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/16.html",
+      "raw_sha256": "6caf8d8068919024640b25c8cb874381990ba048151b0a376e62958596fc6596",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/16.txt",
+      "reader_sha256": "607dfd9276ef9f734d16cfaa553bf31b366cb6f4db90811d469bebe05c9c3620",
+      "actual_read_LF_start": 2446,
+      "actual_read_LF_end": 2451,
+      "quotations": [
+        {
+          "LF_start": 2446,
+          "LF_end": 2451,
+          "quote": "(3) Daňový úrad je povinný osobu podľa odsekov 1 a 2 registrovať pre daň a prideliť jej identifikačné číslo pre daň bezodkladne, najneskôr do siedmich dní odo dňa doručenia žiadosti o registráciu pre daň; ak zdaniteľná osoba má identifikačné číslo pre daň na účely uplatňovania osobitnej úpravy podľa § 68b ods. 2, daňový úrad jej pridelí to isté identifikačné číslo pre daň. Proti rozhodnutiu podľa prvej vety nemožno podať odvolanie."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": "Historical seven-day decision only, not the 2026 rule."
+    }
+  },
+  "VAT2024.services-decision": {
+    "before": null,
+    "after": {
+      "source_id": "16",
+      "article": "Historical 2024 VAT §7a(3)",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/16.html",
+      "raw_sha256": "6caf8d8068919024640b25c8cb874381990ba048151b0a376e62958596fc6596",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/16.txt",
+      "reader_sha256": "607dfd9276ef9f734d16cfaa553bf31b366cb6f4db90811d469bebe05c9c3620",
+      "actual_read_LF_start": 2468,
+      "actual_read_LF_end": 2473,
+      "quotations": [
+        {
+          "LF_start": 2468,
+          "LF_end": 2473,
+          "quote": "(3) Daňový úrad je povinný osobu podľa odseku 1 alebo 2 registrovať pre daň a prideliť jej identifikačné číslo pre daň najneskôr do siedmich dní odo dňa doručenia žiadosti o registráciu pre daň; ak zdaniteľná osoba má identifikačné číslo pre daň na účely uplatňovania osobitnej úpravy podľa § 68b ods. 2, daňový úrad jej pridelí to isté identifikačné číslo pre daň. Proti rozhodnutiu podľa prvej vety nemožno podať odvolanie."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": "Historical seven-day decision only, not the 2026 rule."
+    }
+  },
+  "Health10b": {
+    "before": null,
+    "after": {
+      "source_id": "18",
+      "article": "Health Act §10b(1)(a), (2)–(4)",
+      "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/18.html",
+      "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/18.txt",
+      "reader_sha256": "3e6b69d089e9ec21a1364d951be116482bd6e8fb010932dfc7250ac391611061",
+      "actual_read_LF_start": 3435,
+      "actual_read_LF_end": 3494,
+      "quotations": [
+        {
+          "LF_start": 3435,
+          "LF_end": 3466,
+          "quote": "§ 10b Zárobková činnosť (1) Zárobková činnosť podľa tohto zákona je, ak osobitný predpis16h) alebo medzinárodná zmluva, ktorá má prednosť pred zákonmi Slovenskej republiky, neustanovuje inak, činnosť vyplývajúca z právneho vzťahu, ktorý zakladá a) právo na príjem zo závislej činnosti podľa osobitného predpisu18) okrem príjmov 1. z dohody o brigádnickej práci študentov, 2. zo zmluvy o výkone činnosti športového odborníka fyzickej osoby, ktorá má štatút žiaka strednej školy alebo štatút študenta dennej formy vysokoškolského štúdia podľa osobitného predpisu a ktorá nedovŕšila 26 rokov veku, 3. z dohody o vykonaní práce poberateľov výsluhového dôchodku z výsluhového zabezpečenia policajtov a vojakov, ak dovŕšili dôchodkový vek podľa osobitného predpisu,8ab) poberateľov invalidného výsluhového dôchodku z výsluhového zabezpečenia policajtov a vojakov,19a) poberateľov starobného dôchodku, poberateľov predčasného starobného dôchodku alebo poberateľov invalidného dôchodku, 4. z dohody o pracovnej činnosti poberateľov výsluhového dôchodku z výsluhového zabezpečenia policajtov a vojakov, ak dovŕšili dôchodkový vek podľa osobitného predpisu,8ab) poberateľov invalidného výsluhového dôchodku z výsluhového zabezpečenia policajtov a vojakov,19a) poberateľov starobného dôchodku, poberateľov predčasného starobného dôchodku alebo poberateľov invalidného dôchodku, 5. zo zmluvy o výkone činnosti športového odborníka poberateľov výsluhového dôchodku z výsluhového zabezpečenia policajtov a vojakov, ak dovŕšili dôchodkový vek podľa osobitného predpisu,8ab) poberateľov invalidného výsluhového dôchodku z výsluhového zabezpečenia policajtov a vojakov,19a) poberateľov starobného dôchodku, poberateľov predčasného starobného dôchodku alebo poberateľov invalidného dôchodku, 6. z odchodného, výsluhového príspevku alebo príjmov z rekreačnej starostlivosti podľa osobitného predpisu,19a)"
+        },
+        {
+          "LF_start": 3480,
+          "LF_end": 3494,
+          "quote": "(2) Zárobková činnosť je aj činnosť podľa odseku 1, z ktorej príjem nepodlieha dani z príjmov podľa osobitného predpisu25) z dôvodu, že tak ustanovujú predpisy o zamedzení dvojitého zdanenia. Ak je príjem z tejto činnosti uvedený v cudzej mene, na prepočet cudzej meny na eurá sa použije referenčný výmenný kurz určený a vyhlásený Európskou centrálnou bankou, platný k poslednému dňu kalendárneho roka, ktorého sa príjem podľa prvej vety týka. (3) Zárobková činnosť je aj činnosť podľa odseku 1, z ktorej príjem nepodlieha dani z príjmov podľa osobitného predpisu,25) ktorú vykonáva fyzická osoba na území Slovenskej republiky, a na ktorú sa v právnych vzťahoch povinného verejného zdravotného poistenia uplatňujú predpisy Slovenskej republiky podľa osobitného predpisu16h) alebo podľa medzinárodnej zmluvy, ktorá má prednosť pred zákonmi Slovenskej republiky. (4) Zárobkovou činnosťou nie je činnosť, na základe ktorej plynú príjmy, z ktorých sa daň vyberá zrážkou podľa osobitného predpisu,26) a príjmy, ktoré nie sú predmetom dane alebo sú oslobodené od dane podľa osobitného predpisu,25) ak v odseku 1 písm. e) nie je uvedené inak."
+        }
+      ],
+      "read_date": "2026-10-29",
+      "read_mode": "Selected retained primary reader actually read by this writer; full body not asserted read. Whitespace joined only in quotations.",
+      "note": "Employee health scope read separately from social insurance; intervening other-income categories3467–3479 read but not quoted."
+    }
+  }
+}

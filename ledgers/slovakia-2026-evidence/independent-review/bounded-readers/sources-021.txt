@@ -1,0 +1,63 @@
+
+ITA105b.entities q1 Footnote105b, incorporated by §§17k/21a [15524–15528]
+105b) § 47 zákona č. 43/2004 Z. z. v znení neskorších predpisov. § 22 zákona č. 650/2004 Z. z. v znení neskorších predpisov. § 4 písm. b) a § 6 až 12 zákona č. 186/2009 Z. z. § 4, § 27, § 128 zákona č. 203/2011 Z. z. v znení zákona č. 206/2013 Z. z.
+
+FS.thin-negative q1 Financial Administration low-capitalisation FAQ5 [48–51]
+Otázka č.5 – Záporný ukazovateľ EBITDA Ak nám ukazovateľ EBITDA vyšiel záporný, akú výšku úrokov z pôžičky od závislej osoby si môžeme uplatniť do nákladov? Odpoveď V tomto prípade u dlžníka úroky z pôžičky voči závislej osobe nie sú daňovým výdavkom a v plnej výške budú uvedené na r.13 tabuľky A (súčasne r.130) tlačiva daňového priznania právnických osôb.
+
+ITA2.noncoop q1 § 2 [174–192]
+x) daňovníkom nespolupracujúceho štátu fyzická osoba, ktorá nemá trvalý pobyt alebo právnická osoba, ktorá nemá sídlo v štáte uvedenom v zozname štátov uverejnenom na webovom sídle Ministerstva financií Slovenskej republiky (ďalej len „ministerstvo“); ministerstvo zaradí do tohto zoznamu štát, s ktorým má Slovenská republika uzatvorenú medzinárodnú zmluvu o zamedzení dvojitého zdanenia (ďalej len „zmluva o zamedzení dvojitého zdanenia“) alebo medzinárodnú zmluvu o výmene informácií týkajúcich sa daní alebo štát, ktorý je zmluvným štátom medzinárodnej zmluvy obsahujúcej ustanovenia o výmene informácií pre daňové účely v obdobnom rozsahu, ktorou je tento štát a Slovenská republika viazaná a bez toho, aby bolo pri zdanení dotknuté uplatnenie zmluvy o zamedzení dvojitého zdanenia, ministerstvo vyradí z tohto zoznamu štát, ktorý: 1. je uvedený v zozname Európskej únie obsahujúcom štáty, ktoré nespolupracujú na daňové účely, uverejnenom v Úradnom vestníku Európskej únie k 1. januáru kalendárneho roka, alebo 2. neuplatňuje daň z príjmov právnických osôb, alebo 3. uplatňuje nulovú sadzbu dane z príjmov právnických osôb,
+
+MF.cooperation2026 q1 Official §2(x) cooperating-state list, effective1January2026 [3–15]
+Zoznam spolupracujúcich štátov podľa § 2 písm. x) zákona č. 595/2003 Z. z. v znení neskorších predpisov Platí od 01.01.2026 Ministerstvo financií Slovenskej republiky podľa § 2 písm. x) zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov vydáva zoznam štátov, s ktorými má Slovenská republika uzatvorenú medzinárodnú zmluvu o zamedzení dvojitého zdanenia alebo medzinárodnú zmluvu o výmene informácií týkajúcich sa daní, alebo štátov, ktoré sú zmluvnými partnermi medzináro dnej zmluvy obsahujúcej ustanovenia o výmene informácií pre daňové účely v obdobnom rozsahu, ktorou je tento štát a Slovenská republika viazaná. Zo zoznamu sú vyradené štáty, ktoré: - sú uvedené v zozname Európskej únie obsahujúcom štáty, ktoré nespolupracujú na daňové účely, uverejnenom v Úradnom vestníku Európskej únie k 1. januáru kalendárneho roka1), alebo - neuplatňujú daň z príjmov právnických osôb, alebo - uplatňujú nulovú sadzbu dane z príjmov právnických osôb2).
+
+MF.cooperation2026 q2 Official §2(x) cooperating-state list, effective1January2026 [407–410]
+64. Kirgizská republika Zmluva o zamedzení dvojitého zdanenia 12/2025 01.01.2026
+
+MF.cooperation2026 q3 Official §2(x) cooperating-state list, effective1January2026 [800–807]
+138. Vietnam Zmluva o zamedzení dvojitého zdanenia 296/2009 01.01.2010 i) Podľa Oznámenia č. 15851/2001 -75 na uplatňovanie Zmluvy medzi vládou ČSSR a vládou Čínskej ľudovej republiky o zamedzení dvojakého zdanenia a zabránení daňovému úniku v odbore daní z príjmu č. 41/1998 Zb., ktoré bolo uverejnené vo Finančnom spravodajcovi č. 17/2001, sa táto zmluva neuplatňuje na území osobitných administratívnych oblastí Hongkong, Macao a provincie Taiwan, zmluva sa vzťahuje len na „pevninskú Čínu“.
+
+C.instructions-vintage q1 Actual DPPOv26 C.instructions-vintage [1–14]
+Poučenie na vyplnenie daňového priznania k dani z príjmov právnickej osoby podľa zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov (ďalej len „zákon“) platné pri podávaní daňového priznania u daňovníka, ktorému posledný deň lehoty na podanie daňového priznania uplynul po 31.12.2026 (MF/014309/2026-721) • Zdaňovacím obdobím je kalendárny rok, hospodársky rok alebo iné obdobie uvedené v zákone. • Daňovník je povinný podať daňové priznanie k dani z príjmov právnickej osoby (ďalej len „priznanie“) do troch kalendárnych mesiacov od skončenia zdaňovacieho obdobia, ak zákon neurčuje inak. Ak pripadne posledný deň lehoty na sobotu alebo deň pracovného pokoja (nedeľa, sviatok, štátny sviatok), posledným dňom lehoty je najbližší nasledujúci pracovný deň. • Číselné údaje, vyjadrujúce peňažné sumy, sa uvádzajú v eurách, s presnosťou na eurocenty, so zaokrúhlením podľa § 47 zákona.
+
+C.instructions-vintage q2 Actual DPPOv26 C.instructions-vintage [25–30]
+• Správca dane môže na žiadosť daňovníka podanú najneskôr 15 dní pred uplynutím lehoty na podanie priznania predĺžiť lehotu na podanie priznania najviac o tri kalendárne mesiace u daňovníka v konkurze a likvidácii. U ostatných daňovníkov sa predĺži lehota na podanie priznania na základe oznámenia podaného správcovi dane najneskôr do uplynutia lehoty na podanie priznania najviac o tri kalendárne mesiace, resp. o šesť kalendárnych mesiacov pri dosiahnutí zdaniteľných príjmov zo zdrojov v zahraničí.
+
+C.attachments q1 Actual DPPOv26 C.attachments [1121–1124]
+Uvádza sa počet všetkých príloh, ktoré sú Počet príloh súčasťou daňového priznania (vrátane prílohy k § 13a a 13b, 30c, 30ca, 30e zákona a prílohy k VIII. časti, aj keď sa nevypĺňajú)
+
+FTT6.pointer q1 Act279/2024 §6–7 [534–543]
+Sadzba dane je a) 0,4 % zo základu dane podľa § 5 ods. 1 za finančnú transakciu podľa § 4 ods. 1 písm. a) a zo základu dane podľa § 5 ods. 2 písm. b), najviac 40 eur za finančnú transakciu; to neplatí pre výber finančných prostriedkov v hotovosti, b) 0,8 % zo základu dane podľa § 5 ods. 1 za finančnú transakciu podľa § 4 ods. 1 písm. a), ktorou je výber finančných prostriedkov v hotovosti, c) 2 eurá za platobnú kartu podľa § 4 ods. 1. písm. b), d) 0,4 % zo základu dane podľa § 5 ods. 2 písm. a).
+
+C.adjustments q1 Actual DPPOv26 C.adjustments [73–88]
+Výsledok hospodárenia pred zdanením [§ 17 ods. 1 zákona (zisk +, strata -)] 100 alebo rozdiel medzi príjmami a výdavkami (III. časť - r. 3 tabuľky F alebo r. 1 tabuľky C1 alebo r. 1 tabuľky C2 alebo r. 3 tabuľky G2) alebo upravený výsledok hospodárenia (III. časť - r. 4 tabuľky G3) , Položky zvyšujúce výsledok hospodárenia alebo rozdiel medzi príjmami a výdavkami Sumy, ktoré neoprávnene znížili príjmy vrátane rozdielu podľa § 17 ods. 5 110 zákona a sumy nepeňažných plnení, ak nie sú súčasťou sumy v r. 100 , Výdavky (náklady), ktoré nie sú daňovými výdavkami podľa § 21 alebo 130 § 21a zákona alebo ktoré boli vynaložené v rozpore s § 19 zákona, okrem súm uvedených v r. 140, 150 a 180 (tabuľka A – III. časť) , Sumy podľa § 17 ods. 19 zákona, ktoré neboli zaplatené do konca 140 zdaňovacieho obdobia , Rozdiel, o ktorý odpisy hmotného majetku uplatnené v účtovníctve 150 prevyšujú daňové odpisy tohto majetku (tabuľka B – III. Časť) ,
+
+C.adjustments q2 Actual DPPOv26 C.adjustments [110–115]
+Rozdiel, o ktorý daňové odpisy hmotného majetku prevyšujú odpisy tohto 250 majetku uplatnené v účtovníctve (tabuľka B – III. časť) , Príjmy oslobodené od dane podľa § 13c zákona, ak sú súčasťou 260 sumy v r. 100 , Sumy podľa § 17 ods. 19 zákona, ktoré boli zaplatené v zdaňovacom 270 období, ak nie sú súčasťou sumy v r. 100 ,
+
+C.adjustments q3 Actual DPPOv26 C.adjustments [159–178]
+3 10 Suma úpravy základu dane alebo daňovej straty podľa § 17k zákona , Základ dane alebo daňová strata Základ dane (+) alebo daňová strata (-) po úprave o položky uvedené 315 v r. 302 až 310 (r. 301 + r. 302 + r. 303 + r. 304 + r. 305 + r. 306 + r. 307 - r. 308 + r. 309 + r. 310) , Časť základu dane alebo daňovej straty vykázanej obchodnou 3 20 spoločnosťou, pripadajúca na komplementárov komanditnej spoločnosti alebo na spoločníkov verejnej obchodnej spoločnosti, ak nejde o reverzný , hybridný subjekt podľa § 17j zákona Úhrn vyňatých príjmov (základov dane) podliehajúcich zdaneniu v zahraničí 330 a daňových strát , Základ dane (+) alebo daňová strata (-) po úprave o položky uvedené 400 v r. 320 a 330 (r. 315 - r. 320 - r. 330) , Položky odpočítateľné od základu dane uvedeného v r. 400 Odpočet daňovej straty najviac do výšky základu dane uvedeného v r. 400 410 (z r. 2 stĺ. 9 tabuľky D – III. časť) , Základ dane znížený o odpočet daňovej straty 500 (r. 400 - r. 410) + ,
+
+C.adjustments q4 Actual DPPOv26 C.adjustments [186–205]
+Základ dane znížený o odpočet výdavkov (nákladov) na výskum a 510 vývoj, investície a na podporu športu (r. 500 - r. 501 - r. 502 - r. 503) + , Sadzba dane a daň pred uplatnením úľav na dani a uplatnením zápočtu dane zaplatenej v zahraničí 550 Sadzba dane (v %) Úhrn zdaniteľných príjmov 560 (z r. 99 tabuľky L – III. časť) , Daň pred uplatnením úľav na dani 600 (r. 510 x r. 550) : 100 , Úľavy na dani Úľava na dani podľa 610 , Daň znížená o úľavu na dani 700 (r. 600 - r. 610) + , Daň po uplatnení zápočtu dane zaplatenej v zahraničí Zápočet dane zaplatenej v zahraničí 710 (z r. 10 tabuľky E - III. časť) , Daň po úľavách a po zápočte dane uvedenej v r. 710 800 (r. 700 - r. 710) + ,
+
+C.tableA-B q1 Actual DPPOv26 C.tableA-B [341–343]
+Výdavky na reprezentáciu a reklamné predmety podľa § 21 ods. 1 písm. h) 6 zákona okrem alkoholických nápojov podľa § 4 ods. 3 zákona č. 530/2011 Z. z. o spotrebnej dani z alkoholických nápojov
+
+C.tableA-B q2 Actual DPPOv26 C.tableA-B [357–358]
+Úroky platené z úverov a pôžičiek a súvisiace výdavky (náklady) neuznané 13 za daňové výdavky podľa § 21a zákona ,
+
+C.tableA-B q3 Actual DPPOv26 C.tableA-B [369–375]
+Úhrn r. 1 až 16 17 (k r. 130 – II. časti) , B - Odpisy hmotného majetku 1 Účtovné odpisy dlhodobého hmotného majetku , 2 Daňové odpisy hmotného majetku ,
+
+C.tableK-L q1 Actual DPPOv26 C.tableK-L [709–734]
+K – Evidencia a zápočet minimálnej dane podľa § 46b zákona Zdaňovacie obdobie Výška kladného rozdielu Priebeh zápočtu sumy zo stl. 2 medzi minimálnou daňou a daňovou povinnosťou, započítaná započítaná v danom zostávajúca časť ktorú možno započítať v predchádzajúcich zdaňovacom období na zápočet v nasledujúcich zdaňovacích obdobiach v nasledujúcich zdaňovacích obdobiach zdaňovacích obdobiach 1 2 3 4 5 . . , , , , 1 . . . . , , , , 2 . . . . , , , , 3 . . . . , , , , 4 . . 5 SPOLU 12) , , 12) Časť započítaná v príslušnom zdaňovacom období uvedená na r. 5 v stĺ. 4 sa uvedie najviac do výšky uvedenej v r. 910 a údaj z r. 5 stĺ. 4 sa prenáša do r. 920.
+
+C.tableK-L q2 Actual DPPOv26 C.tableK-L [741–747]
+L – Výpočet úhrnu zdaniteľných príjmov (k r. 560 v II. časti) Zaúčtované príjmy (výnosy) (r. 6 tabuľka C1, r. 6 tabuľka C2, 1 r. 1 tabuľka F, r. 1 tabuľka G1, r. 1 tabuľka G2, príjmy z tabuľky H) + , Riadok Riadok, na ktorom Popis úprav (znížení a zvýšení) na zdaniteľné príjmy Suma je suma uvedená Znamienko 1 2 3
+
+C.tableK-L q3 Actual DPPOv26 C.tableK-L [800–801]
+Úhrn zdaniteľných príjmov (r. 1 až r. 98) 99 (údaj z r. 99 sa prenáša do r. 560) ,
+
+FS14.tables q1 FS 14/DZPaU/2026/I, Tables L and I [148–159]
+Z dôvodu zavedenia novej tabuľky pomocných výpočtov a doplňujúcich údajov Tabuľky L – Výpočet úhrnu zdaniteľných príjmov (k r. 560 v II. časti), v ktorej daňovník upravuje zaúčtované príjmy (výnosy) na zdaniteľné príjmy, sa mení textový popis v riadku 560, v ktorom sa dopĺňa odkaz na údaj z riadku 99 tabuľky L z III. časti. V novej doplnenej Tabuľke L – Výpočet úhrnu zdaniteľných príjmov (k r. 560 v II. časti) daňovník upravuje zaúčtované príjmy (výnosy) uvedené v riadku 1 (z r. 6 tabuľky C1, z r. 6 tabuľky C2, z r. 1 tabuľky F, z r. 1 tabuľky G1 upravené o položky z riadku 2 a 3 tabuľky G3, z riadku 1 tabuľky G2 alebo príjmy z tabuľky H) na zdaniteľné príjmy. Daňovník v riadkoch 2 až 98 uvádza popis a sumu úprav zvyšujúcich alebo znižujúcich zaúčtované príjmy (výnosy) uvedené v riadku 1 vrátane uvedenia riadku DP PO, na ktorom je suma uvedená (napr. r. 110 DP PO). Vyčíslený úhrn zdaniteľných príjmov uvedený v riadku 99 tabuľky L – Výpočet úhrnu zdaniteľných príjmov (k r. 560 v II. časti) sa uvádza v riadku 560 DP PO.

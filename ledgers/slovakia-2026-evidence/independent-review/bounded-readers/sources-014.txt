@@ -1,0 +1,78 @@
+
+A.payout-attachments q6 Official Ministry2026 return A.payout-attachments [467–480]
+Úhrn všetkých zdaniteľných príjmov plynúcich zo zdrojov na území 85 Slovenskej republiky a zo zdrojov v zahraničí v eurách 28) , z toho úhrn všetkých zdaniteľných príjmov plynúcich zo zdrojov na území 85a Slovenskej republiky 28) , 27) Vypĺňa sa, ak ide o daňovníka s obmedzenou daňovou povinnosťou. 28) Vypĺňa sa, ak ide o daňovníka s neobmedzenou daňovou povinnosťou (rezidenta), ktorý uplatňuje postup podľa § 33 ods. 9 zákona a ak ide o daňovníka s obmedzenou daňovou povinnosťou (nerezidenta), ktorý uplatňuje postup podľa § 11 ods. 7, § 33 ods. 9, § 33a ods. 10 a § 46a zákona a ak ide o daňovníka (rezidenta aj nerezidenta), ktorý je druhou oprávnenou osobou pre účely uplatnenia § 33 ods. 8 zákona. V riadku sa uvádzajú aj zdaniteľné príjmy, z ktorých sa daň vyberá zrážkou.
+
+A.payout-attachments q7 Official Ministry2026 return A.payout-attachments [482–487]
+86 Uvádza sa počet všetkých príloh, ktoré Počet príloh sú súčasťou daňového priznania. Vyhlasujem, že všetky údaje uvedené v daňovom priznaní sú správne a úplné. Dátum . . podpis daňovníka (zástupcu)
+
+A.payout-attachments q8 Official Ministry2026 return A.payout-attachments [489–499]
+XI. ODDIEL - ŽIADOSŤ O VYPLATENIE DAŇOVÉHO BONUSU, O VRÁTENIE DAŇOVÉHO PREPLATKU ALEBO VYPLATENIE ZAMESTNANECKEJ PRÉMIE Žiadam o vyplatenie daňového bonusu alebo rozdielu daňového bonusu podľa zákona (r. 61 alebo rozdiel z r. 78, ak je kladný) Žiadam o vyplatenie zamestnaneckej prémie podľa § 32a zákona (z r. 46) Žiadam o vyplatenie daňového bonusu na zaplatené úroky alebo rozdielu daňového bonusu na zaplatené úroky podľa § 33a zákona (r. 67 alebo rozdiel z r. 80, ak je kladný) Žiadam o vrátenie daňového preplatku podľa § 79 zákona č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (z r. 72 alebo rozdiel z r. 76, ak je záporný) poštovou poukážkou na účet na účet v zahraničí, ktorého nie som majiteľom (do výšky 15 000 eur vrátane)
+
+A.payout-attachments q9 Official Ministry2026 return A.payout-attachments [501–501]
+IBAN
+
+A.payout-attachments q10 Official Ministry2026 return A.payout-attachments [503–506]
+U daňovníka, ktorý žiada vyplatenie daňového bonusu podľa zákona, vyplatenie zamestnaneckej prémie, vyplatenie daňového bonusu na zaplatené úroky podľa § 33a zákona alebo vrátenie daňového preplatku na bankový účet vedený v zahraničí (cezhraničný prevod finančných prostriedkov) v inom formáte ako IBAN, uvádza sa v IX. oddiele číslo účtu, SWIFT/BIC kód, názov banky, mesto a štát banky alebo pobočky banky daňovníka. Ak daňovník nie je majiteľom bankového účtu, uvádza sa v IX. oddiele názov bankového účtu príjemcu.
+
+A.payout-attachments q11 Official Ministry2026 return A.payout-attachments [508–509]
+podpis daňovníka Dátum . . (zástupcu)
+
+A.payout-attachments q12 Official Ministry2026 return A.payout-attachments [511–511]
+MF/012185/2025-721 Strana 6
+
+B.payout-attachments q1 Official Ministry2026 return B.payout-attachments [1057–1058]
+DPFOBv26_13 DIČ (Rodné číslo)
+
+B.payout-attachments q2 Official Ministry2026 return B.payout-attachments [1060–1062]
+Druh príjmu 40) Kód štátu Príjmy Výdavky z toho výdavky § ods. písm.
+
+B.payout-attachments q3 Official Ministry2026 return B.payout-attachments [1064–1067]
+, , , , , , , , , 40) Z toho výdavky na povinné zahraničné poistenie preukázateľne zaplatené z príjmov podľa § 5 a § 6 ods. 1 a 2 zákona.
+
+B.payout-attachments q4 Official Ministry2026 return B.payout-attachments [1069–1069]
+Uplatňujem príspevok na rekreáciu podľa § 19 ods. 2 písm. w) zákona
+
+B.payout-attachments q5 Official Ministry2026 return B.payout-attachments [1071–1078]
+Výška príspevku na rekreáciu , Údaje požadované v jednotlivých oddieloch pod tabuľkami č. 1, 2 a 3 sa uvádzajú v členení: druh a výška príjmov dosiahnutých zo zdrojov v zahraničí (vypíše sa jednotlivo pre každý druh príjmov podľa § 5 až 8 zákona), pričom sa uvádza číselný kód štátu podľa vyhlášky Štatistického úradu Slovenskej republiky č. 112/2012 Z. z., ktorou sa vydáva Štatistický číselník krajín v znení vyhlášky č. 108/2014 Z.z.; ak má daňovník viac druhov príjmov dosiahnutých v zahraničí podľa § 5 až 8 zákona, uvádzajú sa v tabuľke najskôr príjmy podľa § 5 a § 6 ods. 1 a 2 zákona, pričom ďalšie druhy príjmov sa uvádzajú v mieste na osobitné záznamy pod tabuľkou; ak ide o spoločne dosiahnuté príjmy, uvádza sa meno, priezvisko, adresa trvalého pobytu, DIČ alebo rodné číslo a celkové spoločne dosiahnuté príjmy a výdavky; ak ide o účastníkov združenia, uvádza sa aj percentuálny podiel pripadajúci na každého účastníka združenia.
+
+B.payout-attachments q6 Official Ministry2026 return B.payout-attachments [1083–1083]
+Ak nepostačuje miesto na osobitné záznamy, uvádzajú sa v tomto členení v osobitnej prílohe tohto daňového priznania.
+
+B.payout-attachments q7 Official Ministry2026 return B.payout-attachments [1085–1090]
+154 Uvádza sa počet všetkých príloh, ktoré Počet príloh sú súčasťou daňového priznania (vrátane príloh č. 1 až 4, len ak sa vypĺňajú) Vyhlasujem, že všetky údaje uvedené v daňovom priznaní sú správne a úplné. Dátum . . podpis daňovníka (zástupcu)
+
+B.payout-attachments q8 Official Ministry2026 return B.payout-attachments [1092–1100]
+XIV. ODDIEL - ŽIADOSŤ O VRÁTENIE DAŇOVÉHO PREPLATKU ALEBO O VYPLATENIE DAŇOVÉHO BONUSU Žiadam o vyplatenie daňového bonusu alebo rozdielu daňového bonusu podľa zákona (r. 121 alebo rozdiel z r. 142, ak je kladný) Žiadam o vyplatenie daňového bonusu na zaplatené úroky alebo rozdielu daňového bonusu na zaplatené úroky podľa § 33a zákona (r. 127 alebo rozdiel z r. 144, ak je kladný) Žiadam o vrátenie daňového preplatku podľa § 79 zákona č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (z r. 136 alebo rozdiel z r. 140, ak je záporný) poštovou poukážkou na účet na účet v zahraničí, ktorého nie som majiteľom (do výšky 15 000 eur vrátane)
+
+B.payout-attachments q9 Official Ministry2026 return B.payout-attachments [1102–1105]
+IBAN U daňovníka, ktorý žiada vrátenie daňového preplatku alebo vyplatenie daňového bonusu na bankový účet vedený v zahraničí (cezhraničný prevod finančných prostriedkov) v inom formáte ako IBAN, sa uvádza v XIII. oddiele číslo bankového účtu, SWIFT/BIC kód, názov banky, mesto a štát banky alebo pobočky banky daňovníka. Ak daňovník nie je majiteľom bankového účtu, uvádza sa v XIII. oddiele názov bankového účtu príjemcu.
+
+B.payout-attachments q10 Official Ministry2026 return B.payout-attachments [1108–1109]
+Dátum . . podpis daňovníka (zástupcu)
+
+B.payout-attachments q11 Official Ministry2026 return B.payout-attachments [1113–1113]
+MF/014308/2026-721 Strana 13
+
+B.contribution-annex q1 Official Ministry2026 return B.contribution-annex [1473–1474]
+DPFOBv26_20 DIČ (Rodné číslo)
+
+B.contribution-annex q2 Official Ministry2026 return B.contribution-annex [1477–1478]
+PRÍLOHA č. 4 - Údaje na účely sociálneho poistenia a zdravotného poistenia Na účely sociálneho poistenia a zdravotného poistenia
+
+B.contribution-annex q3 Official Ministry2026 return B.contribution-annex [1480–1512]
+1 Príjmy (výnosy) 2 Výdavky (náklady) Príjmy (výnosy) z výkonu osobnej asistencie uvádzané v VI. oddiele ako súčasť základu dane 01 (čiastkového základu dane) z príjmov podľa § 6 , , ods. 1 a 2 zákona /§ 6 ods. 2 písm. b) zákona Základ dane z príjmov z výkonu osobného asistenta 02 (kladný rozdiel medzi príjmami a výdavkami); výsledok hospodárenia (zisk) + , Strata z príjmov z výkonu osobného asistenta (záporný rozdiel); 03 výsledok hospodárenia (strata) - , Položky zvyšujúce základ dane (znižujúce stratu) 04 (§ 17 až 17b, § 17d, § 19 ods. 3 písm. n) a § 21 ods. 1 písm. h) tretí bod zákona) , Položky znižujúce základ dane (zvyšujúce stratu) 05 (§ 17 až 17b a § 17d zákona) , Základ dane (čiastkový základ dane) z príjmov z výkonu osobného asistenta po úprave o položky zvyšujúce základ dane 06 alebo znižujúce základ dane + , (r. 02 + r. 04 - r. 05) > 0 alebo (r. 03 + r. 04 - r. 05) > 0 Daňová strata z príjmov z výkonu osobného asistenta 07 po úprave o položky znižujúce stratu alebo zvyšujúce stratu (r. 02 + r. 04 - r. 05) < 0 alebo (r. 03 + r. 04 - r. 05) < 0 - , Ak daňovník dosahuje príjmy za výkon osobnej asistencie podľa zákona č. 447/2008 Z. z. o peňažných príspevkoch na kompenzáciu ťažkého zdravotného postihnutia a o zmene a doplnení niektorých zákonov v znení neskorších predpisov, uvádzajú sa v tejto tabuľke príjmy a výdavky, základ dane, strata z týchto príjmov a ak vedie podvojné účtovníctvo aj základ dane a daňová strata po uplatnení pripočítateľných položiek a odpočítateľných položiek upravujúcich základ dane alebo daňová strata daňovníka z príjmov týkajúca sa tejto činnosti, ktoré daňovník zahrnul do základu dane (čiastkového základu dane) z príjmov podľa § 6 ods. 1 a 2 zákona uvedeného v VI. oddiele.
+
+B.contribution-annex q4 Official Ministry2026 return B.contribution-annex [1514–1535]
+Na účely sociálneho poistenia a zdravotného poistenia 08 Úhrn povinného poistného (§ 5 ods. 8 zákona) , 09 úhrn poistného na sociálne poistenie (zabezpečenie) , z toho 10 úhrn poistného na zdravotné poistenie , Preukázateľne zaplatené poistné na sociálne poistenie 11 z príjmov podľa § 6 ods. 1 a 2 zákona , z toho preukázateľne zaplatené poistné na dobrovoľné sociálne 12 poistenie , Preukázateľne zaplatené poistné na zdravotné poistenie 13 z príjmov podľa § 6 ods. 1 a 2 zákona , preukázateľne zaplatené preddavky na zdravotné poistenie z toho z príjmov podľa § 6 ods. 1 a 2 zákona príslušné k zdaňovaciemu 14 , obdobiu, za ktoré sa podáva daňové priznanie Ak daňovník vypĺňa riadok preukázateľne zaplateného poistného z príjmov podľa § 6 ods. 1 a 2 zákona uvedeného pod tabuľkou č. 1 priznania, vypĺňa sa aj r. 11 a r. 14 bez ohľadu na spôsob uplatňovania výdavkov (podvojné účtovníctvo, jednoduché účtovníctvo, daňová evidencia podľa § 6 ods. 11 zákona, výdavky percentom z príjmov podľa § 6 ods. 10 zákona).
+
+B.contribution-annex q5 Official Ministry2026 return B.contribution-annex [1537–1542]
+Pri príjmoch podľa § 6 ods. 1 a 2 zákona vediem podvojné účtovníctvo Výnosy podľa § 6 ods. 1 a 2 zákona 15 (vypĺňa sa, len ak daňovník vedie podvojné účtovníctvo a nevypĺňa r. 1 až 3 a r. 5 až 9 v tabuľke č. 1) ,
+
+B.contribution-annex q6 Official Ministry2026 return B.contribution-annex [1544–1545]
+Dátum . . podpis daňovníka (zástupcu)
+
+B.contribution-annex q7 Official Ministry2026 return B.contribution-annex [1550–1550]
+MF/014308/2026-721 Príloha
+
+B.instructions-flat q1 Official Ministry2026 return B.instructions-flat [543–549]
+vo výške svojho podielu na riadku 11 tabuľky č. 1. Ak príjmy z prenájmu plynú manželom z bezpodielového spoluvlastníctva, zdaňuje sa tento príjem v rovnakom pomere u každého z nich, ak sa nedohodli inak. V takomto pomere sa delia aj výdavky. Každý z manželov podáva priznanie, kde zahrnie dohodnutý podiel. Ak sú výdavky spojené s príjmom z prenájmu vyššie, na tento rozdiel sa neprihliada a daňovník uvedie na riadku 11 v stĺ. 2 výdavky len do výšky príjmov z prenájmu. Rovnako postupuje pri vypĺňaní riadku 12 aj daňovník, ktorý dosahuje príjmy z použitia diela a umeleckého výkonu podľa § 6 ods. 4 zákona.

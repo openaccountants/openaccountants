@@ -1,0 +1,148 @@
+
+ Podávanie mesačných prehľadov 
+ Titulná stránka
+ Finančná správa
+ Pre médiá
+ Praktické príklady
+ Formuláre
+ Kontakty
+Finančná správa Slovenská republika
+ Úvod
+ > 
+ Daň z príjmov
+ > 
+ Daň z príjmov zo závislej činnosti
+ > 
+ Povinnosti zamestnávateľa voči správcovi dane
+ > 
+ Podávanie tlačív
+ > 
+ Podávanie mesačných prehľadov
+ Podávanie mesačných prehľadov
+Zamestnávateľ - platiteľ dane, ktorý vypláca zdaniteľné príjmy zo závislej činnosti, je povinný v zmysle § 39 ods. 9 zákona o dani z príjmov podávať správcovi dane (ktorémukoľvek) prehľad o príjmoch zo závislej činnosti, ktoré zamestnancom vyplatil, o zrazených a odvedených preddavkoch na daň, a o daňovom bonuse a to v lehote do konca kalendárneho mesiaca za predchádzajúci kalendárny mesiac (§ 49 zákona). V prehľade sa uvádzajú iba zamestnávateľom skutočne zúčtované a vyplatené mzdy.
+Prehľad podľa  § 39 ods.9  zákona o dani z príjmov sa predkladá na tlačive, ktorého vzor určuje ministerstvo.
+Vzor tlačiva pre rok 2026 a rok 2027: PREHLADv26 (nové tlačivo od 1.1.2026 - PREHLADv26 - Prehľad o zrazených a odvedených preddavkoch na daň za zdaňovacie obdobie 2026 (platný od 1.1.2026))
+S účinnosťou od 1.1.2022 platí novelizované znenie § 39 ods.11 zákona č.595/2003 Z.z. o dani z príjmov v znení neskorších predpisov - na hlásenie sa vzťahujú ustanovenia tohto zákona a ustanovenia osobitného predpisu vzťahujúce sa na daňové priznanie, pričom hlásenie sa považuje za daňové priznanie, opravné hlásenie sa považuje za opravné daňové priznanie a dodatočné hlásenie sa považuje za dodatočné daňové priznanie podľa osobitného predpisu. Ak bol zamestnávateľ, ktorý je platiteľom dane, povinný podať prehľad a tento nepodal do piatich dní po uplynutí lehoty uvedenej v § 49 ods. 2 na podanie prehľadu, správca dane použije postup podľa osobitného predpisu, ak zamestnávateľovi, ktorý je platiteľom dane, za tento kalendárny mesiac vznikla povinnosť odviesť preddavky na daň z príjmov zo závislej činnosti alebo žiadal správcu dane o vyplatenie daňového bonusu, daňového bonusu na zaplatené úroky alebo zamestnaneckej prémie.
+Tzn., že zamestnávateľ môže podať prehľad ešte do 5 kalendárnych dní po uplynutí lehoty (napr. za 7/2026 do 7. septembra  2026 - 5. september je sobota, termín sa posúva na najbližší pracovný deň, a to bez pokuty. 
+FAQ
+Otázka č.1  – Daňový bonus z vlastných prostriedkov v Prehľade
+Ako máme postupovať v prípade ak sme zamestnancovi vyplatili daňový bonus, pretože požiadal o vykonanie ročného zúčtovania. Dotyčný zamestnanec vo firme nepracuje od júla predchádzajúceho roka. Problém nastal vtedy, keď sme kontrolovali rekapituláciu daňovej povinnosti a zistili sme, že sme v prehľade za mesiac marec 2025 nepožiadali o vrátenie daňového bonusu, ktorý bol uhradený zo zdrojov zamestnávateľa. Je potrebné podať opravné prehľady za marec? A následne aj opravné prehľady za mesiace apríl a máj? Alebo môžem si odpočítať vyplatený daňový bonus od nasledujúcej daňovej povinnosti?
+Odpoveď
+Ak suma daňového bonusu je vyššia ako výška zrazených preddavkov, zamestnávateľ rozdiel daňového bonusu vyplatený z vlastných prostriedkov žiada prostredníctvom prehľadu za posledný mesiac kalendárneho štvrťroka podaného do konca mesiaca nasledujúceho po skončení štvrťroka (bez ohľadu na to, že už napr. nevypláca príjmy). Tzn., že vo Vami uvedenom prípade podáte opravný prehľad za 3/2025, v ktorom požiadate o vrátenie sumy daňového bonusu vyplateného z vlastných prostriedkov. Ak prehľady za 4,5/2025 obsahujú správne údaje, nezasielate opravné prehľady. 
+Otázka č. 2 – Lehota na podanie tlačiva Prehľad
+Dokedy je zamestnávateľ povinný podať Prehľad?
+Odpoveď
+Prehľad o zrazených a odvedených preddavkoch na daň z príjmov zo závislej činnosti, ktoré zamestnancom vyplatil, o zamestnaneckej prémii a o daňovom bonuse za uplynulý kalendárny mesiac (ďalej len „prehľad“) sa podáva mesačne - do konca kalendárneho mesiaca za predchádzajúci kalendárny mesiac.
+Otázka č. 3 – Náležitosti tlačiva Prehľad
+Čo obsahuje Prehľad? Aké údaje sa v ňom uvádzajú ?
+Odpoveď
+Okrem  identifikačných údajov o platiteľovi na prvej strane tlačiva, na ďalších stranách v časti I. až IV. tlačiva Prehľad za príslušný kalendárny mesiac sa uvádzajú :
+I. časť -  údaje o :
+výške zúčtovaných a vyplatených zdaniteľných príjmoch zo závislej činnosti (peňažných aj nepeňažných)
+zrazených preddavkoch z týchto príjmov
+suma preddavkov na daň z príjmov podľa § 5 ods. 4 zákona - v tlačivách platných od 1.1.2024
+Suma poukázaného podielu zaplatenej dane pre rodičov, o ktorú sa znižuje úhrnná suma preddavkov na daň - v tlačive platnom od 1.1.2026
+odvedených preddavkoch
+zrazených  nedoplatkoch alebo vrátených daňových preplatkoch za predchádzajúce zdaňovacie obdobie
+zrazené daňové nedoplatky a vrátené preplatky za zdaňovacie obdobia podľa § 40 zákona
+daňový bonus – priznaný a vyplatený, ako aj daňový bonus (DB) od zamestnancov vybratý (ktorý bol neoprávnene uplatnený, priznaný aj vyplatený zo ŠR), DB z ročných zúčtovaní (vyplatený  alebo vrátený), DB z vykonaných opráv;
+Zamestnanecká prémia (ZP) - obdobné údaje ako v prípade daňového bonusu
+II. časť – Rekapitulácia –daňový bonus a zamestnanecká prémia
+Nachádzajú sa tu údaje o celkovej vyplatenej sume DB a ZP pre zamestnancov, zvlášť sa rozlišujú tieto  údaje (o  sumách DB a ZP) vyplatených:
+z úhrnu zrazených preddavkov na daň/resp. dane –tzv.  zníženie odvodovej povinnosti
+z vlastných prostriedkov zamestnávateľa;
+III. časť  a IV. časť - Žiadosť o poukázanie sumy daňového bonusu a ZP, a to  vyplateného z vlastných prostriedkov zamestnávateľa – vyplňuje sa a uplatňuje sa voči správcovi dane iba  štvrťročne – v príslušnom mesiaci každého štvrťroka.
+Otázka  č. 4 - „Nulové“ prehľady
+Musí firma, keď už nemá zamestnancov, posielať mesačné prehľady na daň zo závislej činnosti s nulovými hodnotami? Poznámka: doteraz mala 1 zamestnanca, teraz už nikoho nezamestnáva.
+Odpoveď
+Podľa § 39 ods. 12 zákona  o dani z príjmov prehľad a hlásenie podľa odseku 9 uvedeného ustanovenia nie je povinný podať len ten zamestnávateľ, ktorý je platiteľom dane alebo zahraničným platiteľom dane podľa § 48, ktorý v príslušnom období nevyplácal príjmy zo závislej činnosti.
+Vzhľadom na uvedené, povinnosť predkladať tlačivá Prehľad a Hlásenie má podľa zákona aj zamestnávateľ - platiteľ dane, ktorý nezamestnával zamestnancov v zdaňovacom období/mesiaci, ale iba ak vyplatil príjmy zo závislej činnosti, napríklad nejaké dodatky/doplatky mzdy, odmeny a podobne, a tiež je to aj v prípade, keď mu z vyplatených miezd nevznikla povinnosť odvodu preddavkov na daň.
+Otázka  č. 5 – Nulové prehľady, registrácia a oznamovacia povinnosť
+Je povinná posielať nulové prehľady o zrazených a odvedených preddavkov na daň? Takáto firma sa odhlasuje ako zamestnávateľ na daňovom úrade tak ako v sociálnej poisťovni?
+Odpoveď
+Zamestnávateľ, ktorý je platiteľom dane, je podľa zákona o dani z príjmov povinný predkladať miestne príslušnému správcovi dane prehľad o zrazených a odvedených preddavkoch na daň z príjmov zo závislej činnosti, ktoré zamestnancom vyplatil a o daňovom bonuse za uplynulý kalendárny mesiac.
+O zrušenie registrácie k dani z príjmov zo závislej činnosti sa v uvedenom prípade nežiada (od 1.1.2023), ani nie je potrebné oznamovať túto skutočnosť správcovi dane.
+Otázka  č.6  – Podanie prehľadu  a „nulové“ preddavky
+Ak nevznikla povinnosť odviesť preddavky z vyplatených miezd, je povinnosť podať tlačivo Prehľad?
+Odpoveď
+Povinnosť predkladať tlačivá Prehľad a Hlásenie má o.i. aj zamestnávateľ – platiteľ dane, ktorý nezamestnával zamestnancov v určenom období/mesiaci a pod., ale napríklad vyplatil nejaké zdaniteľné príjmy, príp. dodatky mzdy, odmeny a podobne, aj v prípade, keď mu napríklad nevznikla povinnosť odvodu preddavkov na daň z týchto príjmov.
+Otázka  č. 7 – Ukončenie zamestnávania 
+Od mája 2026 nemám už žiadneho zamestnanca a zrejme už ani nebudem mať. Chcela by som sa opýtať, či mám podávať nulový Prehľad o zrazených preddavkoch na daň zo závislej činnosti alebo sa mám nejakým spôsobom odhlásiť ako zamestnávateľ.
+Odpoveď
+Ak už nevyplácate príjmy zo závislej činnosti, nemáte povinnosť podávať mesačné prehľady. Vo Vašom prípade však ešte máte povinnosť podať Hlásenie za rok 2026 (do 30. apríla 2027). O zrušenie registrácie k dani z príjmov zo závislej činnosti sa v uvedenom prípade nežiada (od 1.1.2023), ani nie je potrebné oznamovať túto skutočnosť správcovi dane.
+Otázka  č. 8 – Nepeňažný príjem a prehľad 
+Zamestnancovi, ktorý je starobný dôchodca (spoločníkovi a zároveň konateľovi) plynie iba nepeňažný príjem z dôvodu poskytnutia auta na služobné a súkromné účely. Iný príjem zamestnanec (spoločník, konateľ) nemal a ani do konca roka nebude mať. Spoločnosť nemá iných zamestnancov. Má spoločnosť povinnosť podávať mesačné prehľady o zrazených a odvedených preddavkoch na daň? Ak áno, uvedie na mesačnom prehľade riadok č. 0 (výšku nepeňažného príjmu), riadok č.1 nevyplňuje (podľa poučenia sa suma vyčísleného preddavku na daň z príjmov zo závislej činnosti neuvádza lebo sa v skutočnosti nezrazila) a riadok 8 ostane tiež prázdny, lebo zamestnancovi nie je z čoho zraziť preddavok?
+Odpoveď
+V uvedenom prípade sa na r. 0 mesačného prehľadu uvedie výška nepeňažného príjmu a na riadky 1, 7 a 8 sa uvedie nula. V Poučení na vyplnenie prehľadu...  je k časti I. uvedené  Riadok 0 ► uvádza sa úhrn zúčtovaných a vyplatených príjmov zo závislej činnosti za príslušný kalendárny mesiac, ktoré zamestnávateľ zamestnancom vyplatil v peňažnej aj v nepeňažnej forme  (do tohto riadku sa neuvádzajú príjmy zo závislej činnosti, z ktorých sa daň vyberá zrážkou podľa § 43 zákona). 
+Otázka  č. 9 – Opravný prehľad
+Ak zamestnávateľ zistí, že v nesprávnej výške odvádzal preddavky na daň zo závislej činnosti, mala byť nižšia, hrubá mzda je počas roka rovnaká (opravujeme mesačné výkazy dohodárov, kde boli v nesprávnej výške vypočítané odvody a z toho dôvodu vzniká rozdiel v preddavkoch na daň zo závislej činnosti), musím podať najprv opravné prehľady a následne dodatočné hlásenie? Pretože aj hlásenie už bolo odoslané .
+Odpoveď
+V uvedenom prípade, ak opravujete výšku preddavkov zle vypočítanú v predchádzajúcom období, táto oprava sa vykonáva v čase zistenia. Prehľady za predchádzajúce kalendárne mesiace boli podané zo skutočnosti, ktorá vtedy bola, to isté platí pre hlásenie. Oprava sa prejaví v mesiaci, v ktorom ju vykonáte. 
+Otázka č. 10 - Výsledky z vykonaných ročných zúčtovaní  zdravotného poistenia (RZZP) zamestnancov v Prehľade
+Uvádzajú sa tlačive Prehľadu výsledky ročného zúčtovania zdravotného poistenia, vykonaného zamestnancovi a zaslaného prostredníctvom zamestnávateľa?
+Odpoveď :
+Vzhľadom na znenie § 5 ods. 1 písm. i) a § 5 ods. 8  ZDP, nedoplatky aj preplatky z vykonaných RZZP ovplyvňujú základ dane daňovníka – zamestnanca, a tiež sú súčasťou údajov, zdaniteľných príjmoch a preddavkoch týchto daňovníkov. Konkrétne ide o riadky 0 a 1 v I. časti prehľadu.
+Otázka č. 11 - Vrátené poistné z RZZP za  predchádzajúce roky a údaje v Prehľade
+V prehľade má byt preplatok  z RZZP na  r. 0 a daň v r.1, správne tomu rozumiem?
+Odpoveď :
+V prípade preplatkov z RZZP ide o zdaniteľný príjem podľa ustanovenia § 5 ods. 1 písm. i) zákona  o dani z príjmov. 
+Zahŕňa sa do Prehľadu - časti I. v riadku 0 v mesiaci skutočného vyplatenia – vrátenia preplatku  z RZZP zamestnancovi. Vypočítaný a zrazený preddavok (§ 35 ZDP)z tohto príjmu sa uvedie v riadku 1.
+Otázka č. 12 - Vysvetlivky k vyplňovaniu Prehľadu
+Chcem sa opýtať vysvetliť mi dátumy v tlačive Prehľad: na riadku 1, ak má spoločnosť výplatný termín v pracovných zmluvách uvedený 18. dňa v mesiaci, avšak mzdy sú odoslané už napríklad 13.06.2026 a aj odvedené preddavky v tento istý deň, čo mám napísať do riadku 1 (všetkým zamestnancom sa vyplácajú mzdy naraz v 1 deň)?
+Odpoveď
+Podľa Poučenia na vyplnenie prehľadu o zrazených a odvedených preddavkoch na daň  sa do riadku 1 v časti I – PREDDAVKY NA DAŇ, uvádzajú údaje : 
+ ►dátum ►uvádza sa - dátum výplaty príjmov zo závislej činnosti za príslušný (vykazovaný) kalendárny mesiac.
+Napríklad, ak sa vykonáva výplata alebo pripísanie alebo poukázanie týchto príjmov zamestnancom k dobru za mesiac február dňa 9. marca roku 2026, uvedie sa v prehľade za mesiac február dátum 09. 03. 2026
+Ak sa vykonáva výplata alebo pripísanie alebo poukázanie príjmov zamestnancom k dobru vo viacerých výplatných termínoch, uvedie sa dátum posledného výplatného termínu za príslušné obdobie.
+Neuvádza sa dátum poskytnutia preddavku na príjem zo závislej činnosti (záloha) v termíne dohodnutom v pracovnej zmluve alebo v kolektívnej zmluve (§ 130 ods. 3 Zákonníka práce).
+► suma ►uvádza sa:
+- úhrn zrazených preddavkov na daň (bez vplyvu daňového bonusu), ktoré zamestnávateľ zrazil za príslušný kalendárny mesiac zo zúčtovaných a skutočne vyplatených príjmov zo závislej činnosti (vrátane príjmov zo sociálneho fondu) v peňažnej a v nepeňažnej forme,
+- úhrn zrazených preddavkov na daň z príjmov zo závislej činnosti, ak takéto príjmy zamestnávateľ doplatil zamestnancovi za predchádzajúce kalendárne mesiace bežného zdaňovacieho obdobia alebo za predchádzajúce zdaňovacie obdobia v príslušnom kalendárnom mesiaci (napr. doplatky za mesiac november 2025, vyplatené po 31. januári roku 2026),
+- oprava už zrazených preddavkov na daň, ktoré sa týkajú bežného zdaňovacieho obdobia,
+neuvádza sa:
+- úhrn súm nedoplatkov dane za predchádzajúce zdaňovacie obdobia, ktoré zamestnávateľ zrazil a neodviedol správcovi dane, o ktorý zvýšil odvod preddavkov na daň v príslušnom kalendárnom mesiaci. Tieto nedoplatky dane boli vyčíslené v časti I hlásenia o vyúčtovaní dane (riadok 10) pri výpočte splnenia odvodovej povinnosti zamestnávateľa voči správcovi dane za predchádzajúce zdaňovacie obdobia,
+- úhrnná suma, o ktorú boli naviac odvedené preddavky na daň a daň (preplatok dane) za predchádzajúce zdaňovacie obdobia, o ktorú bol znížený odvod preddavkov za príslušný kalendárny mesiac.
+Tieto preplatky dane už boli vyčíslené v časti I hlásenia o vyúčtovaní dane (riadok 9) pri výpočte splnenia odvodovej povinnosti zamestnávateľa voči správcovi dane za predchádzajúce zdaňovacie obdobia,
+- suma vyčísleného preddavku na daň z príjmov zo závislej činnosti, ktoré sa v skutočnosti nevyplatili,
+- oprava zrazených preddavkov na daň, resp. dane u zamestnanca, ktoré sa týkajú príjmov vyplatených v predchádzajúcich zdaňovacích obdobiach podľa § 40 zákona. Tieto opravy vykonané u jednotlivých zamestnancoch sa uvedú v riadku 3,
+- nedoplatky, ktoré predpísal pri kontrole správca dane, vyrubený úrok z omeškania, správne delikty a pod.
+Riadok 8 ►suma ►uvádza sa skutočne odvedená suma preddavkov na daň za príslušný kalendárny mesiac.
+Otázka č. 13 - Prehľad podaný po lehote
+Novela zákona o dani z príjmov od roku 2022 stanovila možnosť dodatočne si splniť povinnosť podania prehľadu k dani to závislej činnosti najneskôr do 5 dní po uplynutí zákonnej lehoty bez uloženia sankcie. Je toto stále platné? Vedeli by ste mi prosím napísať, kde v zákone toto nájdem? Ak piaty deň pripadne na víkend a prehľad podám v pondelok (t.j. napr. 7 dní po lehote), bude mi uložená pokuta?
+Odpoveď :
+Áno, uvedené stále platí a to v zmysle § 39 ods. 11 zákona o dani z príjmov. Ak piaty deň pripadne na víkend, termín sa posúva na najbližší pracovný deň, a to bez pokuty. 
+Otázka č. 14 - Nevyplatené mzdy a podanie prehľadu
+V prípade, že zamestnávateľ spracoval/zúčtoval mzdy za mesiac jún 2026, ale z dôvodu platobnej neschopnosti mzdy zamestnancom nevyplatí do 31.7.2026 , aký dátum je potrebné uviesť v Prehľade v riadku 1? Podáva sa vôbec prehľad za 06/2026?
+Odpoveď :
+Ak zamestnávateľ zúčtoval a nevyplatil zamestnancom zdaniteľné príjmy zo závislej činnosti za jún 2026, v tom prípade tieto nevyplatené príjmy ani zrazené preddavky na daň z nevyplatených príjmov v prehľade za jún 2026 neuvádza a nulový prehľad nepodáva. Ak zamestnávateľ zdaniteľnú mzdu za mesiac jún 2026 vyplatí zamestnancom napr. vo výplatnom termíne za júl 2026 - v auguste, tieto vyplatené príjmy uvedie v prehľade za júl 2026.
+Otázka č. 15 - Riadok 1b v prehľade platnom od 1.1.2026
+V novom Prehľade platnom od 1.1.2026 je doplnený riadok 1b - Suma poukázaného podielu zaplatenej dane pre rodičov, o ktorú sa znižuje úhrnná suma preddavkov na daň. Kto tento riadok vypĺňa?
+Odpoveď :
+Riadok 1b môžu vyplniť len zamestnávatelia podľa osobitného predpisu, ktorými sú Ministerstvo obrany SR; Slovenská informačná služba; Vojenský a skúšobný ústav Záhorie; Úrad pre obrannú štandardizáciu, kodifikáciu a štátne overenie kvality; Vojenský historický ústav; Centrum výcviku Lešť; Vojenské športové centrum Dukla Banská Bystrica; Akadémia ozbrojených síl generála M. R. Štefánika; Vojenský úrad sociálneho zabezpečenia; Ústredná vojenská nemocnica SNP Ružomberok; Ordinariát ozbrojených síl a ozbrojených zborov SR a Ústredie ekumenickej a pastoračnej služby v OS SR a OZ SR.
+V odkaze 3) prehľadu ako aj v poučení na vyplnenie prehľadu je chybne uvedené, že riadok vyplní len zamestnávateľ podľa osobitného predpisu, ktorým je SIS a MO SR.
+Aktuálne: dane a clá
+eSlužby
+Prihlásenie - LiveAgent
+Moje tikety
+Vytvoriť tiket
+ Iné Články
+»Podávanie ročného Hlásenia
+ Úvod
+ Finančná správa
+ Legislatíva
+ Infoservis
+ Pre médiá
+ Praktické príklady
+ Kontakty
+Copyright © 2013 Finančné riaditeľstvo SR
+Prevádzku stránky www.financnasprava.sk a správu jej obsahu zabezpečuje Finančné riaditeľstvo SR
+RSS
+Facebook
+O portáli FS
+Ministerstvo financií SR
+Poskytovanie informácií podľa zákona č.211/2000 Z.z.
+RSS pre novinky a aktuality
+Kariéra
+Vyhlásenie o prístupnosti
+Mapa stránok
+Powered by LiveAgent

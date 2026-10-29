@@ -1,0 +1,136 @@
+  Usmernenie č. 18/DZPaU/2021/MU k vymedzeniu zdaniteľných príjmov
+    (výnosov) na účely uplatňovania 15 % sadzby dane u daňovníka,
+     ktorý pri zisťovaní základu dane alebo daňovej straty vychádza
+           z § 17 ods. 1 písm. b) až d) zákona č. 595/2003 Z. z.
+              o dani z príjmov v znení neskorších predpisov
+
+Finančné riaditeľstvo SR vydáva na základe požiadavky Ministerstva financií SR usmernenie k vymedzeniu
+zdaniteľných príjmov (výnosov) na účely uplatňovania správnej sadzby dane (15 % alebo 21 %) pri podávaní
+daňového priznania k dani z príjmov právnickej osoby (ďalej len „daňové priznanie“) za zdaňovacie obdobie
+kalendárny rok 2020, resp. príslušný hospodársky rok, vrátane využitia na účely definície mikrodaňovníka
+od 01.01.2021.
+
+S účinnosťou od 01.01.2020 je pre právnickú osobu podľa § 15 písm. b) prvého bodu zákona č. 595/2003 Z. z.
+o dani z príjmov v znení neskorších predpisov (ďalej len „ZDP“) sadzba dane zo základu dane zníženého o daňovú
+stratu
+      podľa podbodu 1a. 15 % pre daňovníka, ktorý dosiahol za zdaňovacie obdobie príjmy (výnosy)
+         neprevyšujúce sumu 100 000 eur,
+      podľa podbodu 1b. 21 % pre ostatných daňovníkov, na ktorých sa nevzťahuje sadzba dane 15 %.
+V súlade s prechodným ustanovením § 52zzd ods. 1 ZDP sa znížená sadzba dane prvýkrát uplatní za zdaňovacie
+obdobie začínajúce najskôr 01.01.2020.
+
+Zákonom č. 416/2020 Z. z., ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. v znení neskorších predpisov (ďalej
+len „zákon č. 416/2020 Z. z.“) došlo v § 15 písm. b) prvý bod podbod 1a. k spresneniu vymedzenia príjmov na účely
+uplatnenia 15 % sadzby dane tak, že do príjmov (výnosov) sa budú zahrňovať len zdaniteľné príjmy (výnosy).
+Z prechodného ustanovenia § 52zzi ods. 1 ZDP vyplýva, že § 15 písm. b) prvého bodu podbodu 1a. v časti, ktorá
+ustanovuje rozsah zdaniteľných príjmov (výnosov), v znení účinnom od 01.01.2021 sa použije už pri podaní
+daňového priznania po 31.12.2020.
+
+V uvedenom ustanovení suma 100 000 eur bola nahradená sumou podľa osobitného predpisu, ktorým je § 4 ods. 1
+zákona č. 222/2004 Z. z. o dani z pridanej hodnoty v znení neskorších predpisov, tzn. že 15 % sadzbu dane môže
+využiť daňovník, ktorý za zdaňovacie obdobie dosiahol zdaniteľné príjmy (výnosy) neprevyšujúce 49 790 eur.
+Z prechodného ustanovenia § 52zzi ods. 20 ZDP vyplýva, že znížená sadzba dane 15 % pri zdaniteľných príjmoch
+(výnosoch) neprevyšujúcich 49 790 eur sa prvýkrát použije v zdaňovacom období, ktoré začína najskôr
+01.01.2021.
+
+Nárok na zníženú sadzbu dane 15 % bude mať daňovník spĺňajúci podmienku dosiahnutia zdaniteľných
+príjmov (výnosov) nepresahujúcich 49 790 eur pre rok 2021, a to bez ohľadu na skutočnosť, či zároveň
+využije status mikrodaňovníka podľa § 2 písm. w) ZDP, a rovnako bez ohľadu na skutočnosť, že sa ním
+nestal nesplnením iných podmienok uvedených v § 2 písm. w) ZDP (napr. z dôvodu realizácie kontrolovanej
+transakcie so závislou osobou).
+
+V tlačive daňového priznania je z uvedeného dôvodu doplnený nový riadok 560, v ktorom sa uvádza úhrn
+zdaniteľných príjmov.
+
+Pri vyplnení riadku 560 sa vychádza z tabuľky C1 (riadok 6) alebo tabuľky C2 (riadok 6) alebo tabuľky F (riadok 1),
+alebo tabuľky G1 (riadok 1) upraveného o položky vzťahujúce sa k výnosom z tabuľky G3 (riadok 2 a 3) alebo
+tabuľky G2 (riadok 1) alebo tabuľky H (riadok 1 a riadok 2 až 10 stĺpca 1).
+
+Zdaniteľný príjem je vymedzený v § 2 písm. h) ZDP, ktorým sa rozumie príjem, ktorý je predmetom dane a nie
+je oslobodený od dane podľa ZDP ani medzinárodnej zmluvy.
+
+V súvislosti s vymedzením zdaniteľného príjmu vznikajú viaceré otázky, ktoré príjmy (výnosy) sa za príslušné
+zdaňovacie obdobie posudzujú ako zdaniteľné príjmy (výnosy) na účely 15 % sadzby dane predovšetkým
+                                                        1
+u daňovníkov účtujúcich v sústave podvojného účtovníctva (ďalej len „PÚ“) pri vypĺňaní riadku 560 tlačiva daňového
+priznania.
+
+Z uvedeného dôvodu, ako aj vzhľadom na to, že sadzba dane sa uplatňuje predovšetkým na zdaniteľné príjmy
+vstupujúce do základu dane v príslušnom zdaňovacom období, uvádzame nasledovný okruh najčastejších
+prípadov vo vzťahu k zdaniteľným príjmom (výnosom):
+
+1. Výnosy účtované v triede 6 u daňovníka účtujúceho v sústave PÚ alebo IFRS upravené o výnosy,
+   ktoré:
+    nie sú predmetom dane podľa § 12 ods. 7 ZDP – napr. príjmy získané darovaním okrem darov, ktoré
+        boli poskytnuté poskytovateľovi zdravotnej starostlivostí od držiteľa alebo dedením, podiely na zisku
+        (dividendy) u právnickej osoby okrem dividend z nespolupracujúcich štátov podľa § 2 písm. x) ZDP
+        [riadok 210 daňového priznania okrem sumy prislúchajúcej k príjmom nezahrňovaným do základu dane
+        podľa § 17 ods. 3 písm. a) ZDP, resp. riadok 220 u daňovníkov nezaložených alebo nezriadených
+        na podnikanie],
+    sú od dane oslobodené – napr. príjmy podľa § 13 až § 13c ZDP (riadky 230, 240 a 260 daňového
+        priznania),
+    podľa § 17 ods. 3 písm. c) ZDP predstavujú výnosy, ktoré už boli v minulosti zdanené podľa ZDP alebo
+        doterajších predpisov a preto sa do základu dane nezahŕňajú,
+    predstavujú rozdiel medzi uznanou hodnotou a účtovnou hodnotou majetku pri nepeňažnom
+        vklade v časti, v akej sa nezahrnuje do základu dane v príslušnom zdaňovacom období podľa § 17b
+        ods. 1 písm. b) ZDP.
+
+2. Výnosy, ktoré do základu dane nevstupujú, ale napriek tomu sa zahrnujú medzi zdaniteľné príjmy (výnosy)
+   uvedené v riadku 560 daňového priznania
+    výnosy zdanené daňou vyberanou zrážkou – sú zdaniteľným príjmom, aj keď sa zdaňujú iným
+       spôsobom a zo základu dane sú vylúčené podľa § 17 ods. 3 písm. a) ZDP,
+    výnosy podľa § 17i ods. 5 písm. e) ZDP – hybridné nesúlady, v prípade, ak ide o príjmy, ktoré nie sú
+       predmetom dane alebo sú od dane oslobodené a uplatnením pravidiel podľa § 17i ZDP vstúpia
+       do zdaniteľných príjmov.
+
+3. Príjmy, ktoré nie sú zaúčtované vo výnosoch, ale sú zdaniteľným príjmom
+    nepeňažný príjem – napr. § 17 ods. 20 a 21 ZDP (riadok 110 daňového priznania),
+    úpravy základu dane o pripočítateľné položky, ktoré súvisia s výnosmi resp. príjmami – napr. úpravy
+        z dôvodu transferového oceňovania (iba v časti týkajúcej sa výnosov, príjmov, t. j. nie výdavkov) –
+        napr. § 17 ods. 5 ZDP,
+    marketingové štúdie u príjemcu vykázané vo výnosoch v minulosti, ktoré sú zdaniteľným príjmom až
+        v zdaňovacom období prijatia úhrady podľa § 17 ods. 19 písm. c) ZDP účinného do 31.12.2019,
+    oceňovacie rozdiely (účtované na účte 416) vykázané pri zlúčení, splynutí alebo rozdelení obchodných
+        spoločností alebo družstiev zahrňované do základu dane podľa § 17c ZDP.
+
+4. Príjmy, ktoré sa z pohľadu účtovníctva alebo ZDP časovo rozlišujú
+    dotácie – v časti v akej sa účtujú do výnosov a zároveň zdaniteľných príjmov v príslušnom zdaňovacom
+        období podľa § 17 ods. 3 písm. f) ZDP,
+    rozdiel medzi uznanou hodnotou a účtovnou hodnotou majetku pri nepeňažnom vklade v časti,
+        v akej sa zahrnuje do základu dane v príslušnom zdaňovacom období podľa § 17b ods. 1 písm. b) ZDP.
+
+
+Do zdaniteľných príjmov sa nezahŕňajú predovšetkým úpravy základu dane, ktoré sa vzťahujú k výdavkom
+(nákladom) a sú položkami zvyšujúcimi výsledok hospodárenia, napr.:
+      výdavky (náklady), ktoré nie sú daňovými výdavkami § 21 (riadok 130 daňového priznania),
+      výdavky (náklady) po zaplatení – 17 ods. 19 ZDP (riadok 140 daňového priznania),
+      záväzky po splatnosti, ktoré súvisia s daňovými výdavkami - § 17 ods. 27 ZDP,
+      rozdiel medzi účtovnými odpismi a daňovými odpismi a ďalšie.
+
+                                                        2
+Obdobne postupuje pri vymedzení zdaniteľných príjmov (výnosov) aj fyzická osoba účtujúca v sústave podvojného
+účtovníctva.
+
+Rovnaké kritérium zdaniteľných príjmov (výnosov) sa uplatňuje aj pri určení definície mikrodaňovníka podľa § 2
+písm. w) ZDP od 01.01.2021.
+
+Poznámka: Dávame do pozornosti, že vo Finančnom spravodajcovi r. 2021 je ako príspevok č. 1 uverejnené
+Oznámenie Ministerstva financií Slovenskej republiky č. MF/005681/2021-721 o vydaní doplnenia k poučeniu
+na vyplnenie daňového priznania k dani z príjmov fyzickej osoby – typ A, k poučeniu na vyplnenie daňového
+priznania k dani z príjmov fyzickej osoby – typ B a k poučeniu na vyplnenie daňového priznania k dani z príjmov
+právnickej osoby. V zmysle predmetného oznámenia v poučení na vyplnenie daňového priznania k dani z príjmov
+právnickej osoby (MF/015675/2020-721) dochádza k zmene textu k vyplneniu riadku 560 tlačiva daňového
+priznania. Oznámenie je uverejnené na webovom sídle Ministerstva financií SR.
+
+
+
+
+Vypracoval: Finančné riaditeľstvo SR Banská Bystrica
+            Odbor daňovej metodiky
+            Február 2021
+
+
+
+
+                                                       3
+

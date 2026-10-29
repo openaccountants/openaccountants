@@ -1,0 +1,299 @@
+{
+  "ITA45.relief": {
+    "native_LF_ranges": [
+      [
+        18,
+        28
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-45.txt",
+    "reader_sha256": "c5c21b4929e354d4fe871695ee79e275128a607bd615e18108fa761ac2aa1fae",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.html",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "ITA17f.exit": {
+    "native_LF_ranges": [
+      [
+        15,
+        38
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17f.txt",
+    "reader_sha256": "0f2f4d7fd0c123ca49abda775b6982b364f3708e9a11506364760b86454e83ba",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.html",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "TPG3.full": {
+    "native_LF_ranges": [
+      [
+        111,
+        120
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "reader_sha256": "9c281c5ad0e92f981da8af5ce96e88bd78e8a174e4154a15268deb9c7d3badcf",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.pdf",
+    "raw_sha256": "7aa68a9d1d1273777ea01dba75a76d647ae523c71f39da5bdd54375ceda2e24b",
+    "official_url": "https://www.mfsr.sk/files/archiv/49/Usmernenie-2025.pdf",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "Social138": {
+    "native_LF_ranges": [
+      [
+        4,
+        22
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138.txt",
+    "reader_sha256": "0712ef53a347bcd04f55da44fe9c9d89641875cc1746e593b0ca4448ea0d1a11",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/10.html",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2003/461/20260901.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "Social138c": {
+    "native_LF_ranges": [
+      [
+        9215,
+        9228
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/10.txt",
+    "reader_sha256": "76276b05952fb47b2f0ba6119d9dacaa6ecf08957c0ee56f419147ae04e93404",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/10.html",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2003/461/20260901.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "VAT78.return": {
+    "native_LF_ranges": [
+      [
+        3,
+        49
+      ],
+      [
+        63,
+        70
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-78.txt",
+    "reader_sha256": "a5cf422daf617e0be9ba97d7e9527cda4f8e913c4af60ddc1b693ddbe8db3052",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "VAT4.status": {
+    "native_LF_ranges": [
+      [
+        65,
+        100
+      ],
+      [
+        149,
+        187
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4.txt",
+    "reader_sha256": "f83af38a63caa6e950a5215b1331150de94d9d44872ff822d5b04aae4e4de974",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "VAT49.deduction": {
+    "native_LF_ranges": [
+      [
+        9,
+        25
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-49.txt",
+    "reader_sha256": "e9695400f9f588a7cdedc63d6d9166b4c08a6dbec9de4e3e016cf184a46d2b6a",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "VAT4b.group": {
+    "native_LF_ranges": [
+      [
+        16,
+        38
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4b.txt",
+    "reader_sha256": "480639cc4521ac24f67a8dea0606f0953212ba4cb2152f7d8349f4fd8fd7aca5",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "VAT11.acquisitions": {
+    "native_LF_ranges": [
+      [
+        20,
+        57
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-11.txt",
+    "reader_sha256": "860c02de388db2a86180089b395b53729442240d336adbd6ae2742e665141a50",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "TC154.registration": {
+    "native_LF_ranges": [
+      [
+        1,
+        46
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-154.txt",
+    "reader_sha256": "1722095de409cbe7fabb6e351349adeb93897e57fda1c22bc8149e5b14e4838d",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/20.html",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "VAT2024.goods-decision": {
+    "native_LF_ranges": [
+      [
+        2435,
+        2454
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/16.txt",
+    "reader_sha256": "607dfd9276ef9f734d16cfaa553bf31b366cb6f4db90811d469bebe05c9c3620",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/16.html",
+    "raw_sha256": "6caf8d8068919024640b25c8cb874381990ba048151b0a376e62958596fc6596",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "VAT2024.services-decision": {
+    "native_LF_ranges": [
+      [
+        2455,
+        2473
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/16.txt",
+    "reader_sha256": "607dfd9276ef9f734d16cfaa553bf31b366cb6f4db90811d469bebe05c9c3620",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/16.html",
+    "raw_sha256": "6caf8d8068919024640b25c8cb874381990ba048151b0a376e62958596fc6596",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "Health10b": {
+    "native_LF_ranges": [
+      [
+        3435,
+        3494
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/18.txt",
+    "reader_sha256": "3e6b69d089e9ec21a1364d951be116482bd6e8fb010932dfc7250ac391611061",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/18.html",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "SP.A1.current-admin": {
+    "native_LF_ranges": [
+      [
+        51,
+        52
+      ],
+      [
+        119,
+        126
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/root-SK-A1-current-source/official-selected-reader.txt",
+    "reader_sha256": "d587b9a5932523a42b17b15e747e51b36d73cc8886fe6be92567ff75865fe72e",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/root-SK-A1-current-source/official-tool-response.json",
+    "raw_sha256": "a15690aea189ce92cbc70f5436a2b44717ca036e2f961a3ed146f684aff632ef",
+    "official_url": "https://www.socpoist.sk/zivotne-situacie/praca-v-zahranici/praca-v-eu-ehp-vo-svajciarsku-v-spojenom-kralovstve-velkej",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "SP.employee-2026": {
+    "native_LF_ranges": [
+      [
+        375,
+        392
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/61.txt",
+    "reader_sha256": "649ddb7ba44a200e204294dafe2edd2013f9a6c165776ed9c96118b70d851e6b",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/61.html",
+    "raw_sha256": "cfde414f1c165c4f1317a9377bff09d06f2fdabf8bc54fb4bf09fcb25e7fefc0",
+    "official_url": "https://www.socpoist.sk/socialne-poistenie/zmeny-v-socialnom-poisteni/najdolezitejsie-zmeny-v-socialnom-poisteni-od-1-1?ref=2441",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "Health13": {
+    "native_LF_ranges": [
+      [
+        4,
+        18
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-13.txt",
+    "reader_sha256": "e74cbe6c9395256c95f1db08ce036c1c8ea6dfc9f785c63e67db90ec8882206e",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/18.html",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "VAT7.goods": {
+    "native_LF_ranges": [
+      [
+        3,
+        21
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-7.txt",
+    "reader_sha256": "a617fdd0ff540002f14103ba1fb1b0588db5deb0db786b4f820c8e463a09973b",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  },
+  "VAT7a.services": {
+    "native_LF_ranges": [
+      [
+        3,
+        22
+      ]
+    ],
+    "read_date": "2026-10-29",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-7a.txt",
+    "reader_sha256": "02ead7fe5c074971ea785c927d81518e2d0868bdbfbd99a02f2d3919205dc053",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/17.html",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "official_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "note": "New actual bounded reads in this repair; prior other completed reads retained without repetition."
+  }
+}

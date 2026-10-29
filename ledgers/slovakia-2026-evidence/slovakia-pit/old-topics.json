@@ -1,0 +1,1341 @@
+{
+  "guide_sha256": "be47136e91e27d9e14a8b07e22f5c2e2a4bb4fb3e601c491a4daf22b1d50b98a",
+  "main_revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "main_bytes": 22641,
+  "main_sha256": "6b23be1b6980652e10f7cd202806a289f6f2445f4ee70f6149136733229a3a07",
+  "earliest_preimage": {
+    "revision": "92fb47e3^",
+    "present": true,
+    "bytes": 9370,
+    "sha256": "d4c0c10d6b693512407a43614e6a8807e509119b47c897a828b4be57a964665f",
+    "complete_old_units": 62,
+    "rows": [
+      {
+        "comparator": "92fb47e3^",
+        "unit": 1,
+        "old_LF_start": 1,
+        "old_LF_end": 15,
+        "old_text": "---\nname: slovakia-pit\ndescription: Use this skill whenever asked to prepare, review, or classify transactions for Slovakia Personal Income Tax (Daň z príjmov fyzickej osoby — DPFO), annual return filing, or advise on Slovak PIT deductions and credits. Trigger on phrases like \"daň z príjmov\", \"DPFO\", \"Slovak income tax\", \"SZČO\", \"živnosť\", \"paušálne výdavky\", or any Slovakia personal tax request. ALWAYS read this skill before touching any Slovakia PIT work.\nversion: 1.0\njurisdiction: SK\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ndepends_on:\n  - foundation\ncategory: international\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+        "old_unit_sha256": "99a7f9a6acd5542c6b084e5794003fec431eb36aad6505b68cdd4e27d35996f5",
+        "current_destination": "Current LF1–38,125–151,326–328",
+        "disposition": "Identity, annual tax and form-routing topics retained; tax year advanced. Historical portal/tool and contributor claims are not treated as primary law; original credit remainsLF326."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 2,
+        "old_LF_start": 17,
+        "old_LF_end": 17,
+        "old_text": "# Slovakia Pit",
+        "old_unit_sha256": "3c635f483b76ab08d9d6cf3dbfc9b2831c376ac37fe3a21abb053fff256a15d7",
+        "current_destination": "Current LF1–38,125–151,326–328",
+        "disposition": "Identity, annual tax and form-routing topics retained; tax year advanced. Historical portal/tool and contributor claims are not treated as primary law; original credit remainsLF326."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 3,
+        "old_LF_start": 19,
+        "old_LF_end": 19,
+        "old_text": "## Section 1 — Quick reference",
+        "old_unit_sha256": "26bcfb5098006c22354d21377e3b78eb3d05f98ae87a19e63af8bd5951700d6b",
+        "current_destination": "Current LF1–38,125–151,326–328",
+        "disposition": "Identity, annual tax and form-routing topics retained; tax year advanced. Historical portal/tool and contributor claims are not treated as primary law; original credit remainsLF326."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 4,
+        "old_LF_start": 21,
+        "old_LF_end": 21,
+        "old_text": "**Quick reference**",
+        "old_unit_sha256": "62f2dcad4a686a62f1f3fe1a1931ba15a18981d086e033b7b370b336bf41ee86",
+        "current_destination": "Current LF1–38,125–151,326–328",
+        "disposition": "Identity, annual tax and form-routing topics retained; tax year advanced. Historical portal/tool and contributor claims are not treated as primary law; original credit remainsLF326."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 5,
+        "old_LF_start": 23,
+        "old_LF_end": 37,
+        "old_text": "| Field | Value |\n| --- | --- |\n| Country | Slovenská republika (Slovak Republic) |\n| Tax | Daň z príjmov fyzickej osoby (DPFO — Personal Income Tax) |\n| Currency | EUR (€) |\n| Tax year | Calendar year (1 Jan – 31 Dec) |\n| Current tax year | 2025 |\n| Tax authority | Finančná správa SR (Financial Administration) |\n| Return form | DPFO typ A (employment only) / DPFO typ B (all income, self-employed) |\n| Filing portal | https://www.slovensko.sk |\n| Filing deadline | 31 March of following year (extendable to 30 June / 30 September) |\n| Source credit | `priznanie-digital/priznanie-digital` (MIT, 40 contributors) |\n| Contributor | Open Accountants Community |\n| Validated by | Pending — requires sign-off by a Slovak daňový poradca |\n| Skill version | 1.0 |",
+        "old_unit_sha256": "a8e7869e2ae133931fe94e99506506ccafdc1da082b1dc0799e8284ac77949be",
+        "current_destination": "Current LF1–38,125–151,326–328",
+        "disposition": "Identity, annual tax and form-routing topics retained; tax year advanced. Historical portal/tool and contributor claims are not treated as primary law; original credit remainsLF326."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 6,
+        "old_LF_start": 39,
+        "old_LF_end": 39,
+        "old_text": "## Section 2 — Tax rates (Sadzby dane) — 2025",
+        "old_unit_sha256": "eadc37e2866d4c63a5dabc7229a77280960963b9b53785d0d6723ea6da56f1f6",
+        "current_destination": "Current LF47–55,74–76,88",
+        "disposition": "Old universal15%/profit-band claims corrected to separate bases and taxable-business-revenue test under current§15; unsupported176800band not revived."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 7,
+        "old_LF_start": 41,
+        "old_LF_end": 41,
+        "old_text": "**Tax rates (Sadzby dane) — 2025**",
+        "old_unit_sha256": "bf00c74b7993f6262e6fb4755a9905ec9d865fa66b4ff5315d0fae1b1e745f36",
+        "current_destination": "Current LF47–55,74–76,88",
+        "disposition": "Old universal15%/profit-band claims corrected to separate bases and taxable-business-revenue test under current§15; unsupported176800band not revived."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 8,
+        "old_LF_start": 43,
+        "old_LF_end": 47,
+        "old_text": "| Taxable base (základ dane) | Rate | Notes |\n| --- | --- | --- |\n| Up to €100,000 | **15%** | Znížená sadzba (reduced rate) |\n| €100,001 – €176,800 (92.8× životné minimum) | **19%** | Základná sadzba |\n| Over €176,800 | **25%** | Zvýšená sadzba |",
+        "old_unit_sha256": "ced593a76c40c5ac537aa9267dc96e9f35fa9af59138fd51160bf4761721687b",
+        "current_destination": "Current LF47–55,74–76,88",
+        "disposition": "Old universal15%/profit-band claims corrected to separate bases and taxable-business-revenue test under current§15; unsupported176800band not revived."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 9,
+        "old_LF_start": 49,
+        "old_LF_end": 49,
+        "old_text": "The 15% reduced rate applies to the first €100,000 of taxable base for all taxpayers.",
+        "old_unit_sha256": "ff9868af6afd7d169d703e128ac95b0223839fc312a330009af22efe0cdd2e39",
+        "current_destination": "Current LF47–55,74–76,88",
+        "disposition": "Old universal15%/profit-band claims corrected to separate bases and taxable-business-revenue test under current§15; unsupported176800band not revived."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 10,
+        "old_LF_start": 51,
+        "old_LF_end": 51,
+        "old_text": "## Section 3 — Key constants (2025)",
+        "old_unit_sha256": "3fac75252894089305f5f10fea4a024d3d6b2b32126deb993535f18473055bbc",
+        "current_destination": "Current LF42–72,90–117",
+        "disposition": "All named constants/topics mapped to current statutory amounts and conditions. Old2025figures,3876income gate and birthday inequalities are not adopted for2026."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 11,
+        "old_LF_start": 53,
+        "old_LF_end": 53,
+        "old_text": "**Key constants (2025)**",
+        "old_unit_sha256": "0c42095b9881ff671adcd1dbf9482cf068e64965eb7f902b1701a98e78095aed",
+        "current_destination": "Current LF42–72,90–117",
+        "disposition": "All named constants/topics mapped to current statutory amounts and conditions. Old2025figures,3876income gate and birthday inequalities are not adopted for2026."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 12,
+        "old_LF_start": 55,
+        "old_LF_end": 68,
+        "old_text": "| Constant | Value | Slovak term |\n| --- | --- | --- |\n| Non-taxable amount (self) | €5,753.79 | Nezdaniteľná časť základu dane |\n| Non-taxable amount (partner) max | €5,260.61 | Na manžela/manželku |\n| Flat-rate expenses cap | €20,000 | Paušálne výdavky (60% of income, max €20,000) |\n| Flat-rate expense percentage | 60% | — |\n| Child bonus (≤15 years) | €100/month | Daňový bonus na dieťa |\n| Child bonus (>15, ≤18 years) | €50/month | Daňový bonus na dieťa |\n| Max child bonus age | 18 | — |\n| Minimum income for child bonus | €3,876 | 6× minimum wage |\n| Pension savings deduction cap | €180/year | Príspevky na doplnkové dôchodkové sporenie |\n| Rental/supplementary income exemption | €500 | Oslobodenie prenájom |\n| Minimum tax payable | €5 | Under €5 = no payment required |\n| Životné minimum (subsistence minimum) | €268.88/month | Used for various thresholds |",
+        "old_unit_sha256": "b9d6003d908ad62c87f4de62b76b4539aedda9b4aa08afe2186620f5564484b8",
+        "current_destination": "Current LF42–72,90–117",
+        "disposition": "All named constants/topics mapped to current statutory amounts and conditions. Old2025figures,3876income gate and birthday inequalities are not adopted for2026."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 13,
+        "old_LF_start": 70,
+        "old_LF_end": 70,
+        "old_text": "## Section 4 — Non-taxable amounts (Nezdaniteľné časti)",
+        "old_unit_sha256": "29a2247808e4635ec56ef2028400f126192a95c26b8bab003de19c9995aa83bf",
+        "current_destination": "Current LF56–57,90–94",
+        "disposition": "Personal allowance and phaseout preserved as topic, updated to current§11 formula; prior malformed482441-style formula is historical only."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 14,
+        "old_LF_start": 72,
+        "old_LF_end": 72,
+        "old_text": "- **Non-taxable amounts (Nezdaniteľné časti)** — Overview of non-taxable amounts on taxpayer and spouse, detailed in subsections below.",
+        "old_unit_sha256": "81de567404bca43664891c896cc1f7604f74564639a2a1a82ddb14e8cf704ade",
+        "current_destination": "Current LF56–57,90–94",
+        "disposition": "Personal allowance and phaseout preserved as topic, updated to current§11 formula; prior malformed482441-style formula is historical only."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 15,
+        "old_LF_start": 74,
+        "old_LF_end": 74,
+        "old_text": "### On taxpayer (na daňovníka)",
+        "old_unit_sha256": "c38a031509c75de1372a0f2a17f57c7fe08698dd557f7a359b3e5bee4bb5c37a",
+        "current_destination": "Current LF56–57,90–94",
+        "disposition": "Personal allowance and phaseout preserved as topic, updated to current§11 formula; prior malformed482441-style formula is historical only."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 16,
+        "old_LF_start": 76,
+        "old_LF_end": 78,
+        "old_text": "- **Annual non-taxable amount on taxpayer** — €5,753.79 EUR\n- **Reduced non-taxable amount when taxable base > €25,426.27** — KONSTANTA(€48,441.43) − taxable base × 0.25\n- **Non-taxable amount when taxable base > €48,441.43** — 0",
+        "old_unit_sha256": "ea80f651c5acc9ded6b5087ee5ad0afa79d36a8f51c2efa00b3feb7b96f66443",
+        "current_destination": "Current LF56–57,90–94",
+        "disposition": "Personal allowance and phaseout preserved as topic, updated to current§11 formula; prior malformed482441-style formula is historical only."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 17,
+        "old_LF_start": 80,
+        "old_LF_end": 80,
+        "old_text": "### On spouse (na manžela/manželku)",
+        "old_unit_sha256": "700f6fded884c8c7f6690eeee009ed8ddc95f691f6dcbd7a0ca7e6e3ba0ca913",
+        "current_destination": "Current LF58–59,92",
+        "disposition": "Spouse allowance retained with actual household, substantive eligibility, own-income and monthly gates; prior incomplete spouse formula corrected."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 18,
+        "old_LF_start": 82,
+        "old_LF_end": 85,
+        "old_text": "- **Max non-taxable amount on spouse** — €5,260.61 per year (prorated by months)\n- **Conditions** — Spouse lived with taxpayer, had own income below threshold\n- **Spouse non-taxable amount calculation** — €17,370.97 − spouse's own income (max €5,260.61)\n- **Reduced formula condition** — If taxpayer's base > €25,426.27 → reduced formula applies",
+        "old_unit_sha256": "c18532dc998776012528cd772b496a025ad7316f52759bb3afc6f363495f876d",
+        "current_destination": "Current LF58–59,92",
+        "disposition": "Spouse allowance retained with actual household, substantive eligibility, own-income and monthly gates; prior incomplete spouse formula corrected."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 19,
+        "old_LF_start": 87,
+        "old_LF_end": 87,
+        "old_text": "## Section 5 — Self-employed (SZČO / Živnostník)",
+        "old_unit_sha256": "ee54aa55dea414e877c0422c4be55853e7d87b69563fc6abd08076012cce87d2",
+        "current_destination": "Current LF82–88",
+        "disposition": "Actual/flat expense options and records retained; contribution deduction adds to capped flat expenses."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 20,
+        "old_LF_start": 89,
+        "old_LF_end": 89,
+        "old_text": "### Expense options",
+        "old_unit_sha256": "783debe6d776e05f2a22f8503951cba4d184e3f69e563f3a503f901a6f29b050",
+        "current_destination": "Current LF82–88",
+        "disposition": "Actual/flat expense options and records retained; contribution deduction adds to capped flat expenses."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 21,
+        "old_LF_start": 91,
+        "old_LF_end": 91,
+        "old_text": "**Expense options**",
+        "old_unit_sha256": "c2840c28e4fad6f0d956f6148a1ca9d5c9102a122e59623f949f462bf37b5f0f",
+        "current_destination": "Current LF82–88",
+        "disposition": "Actual/flat expense options and records retained; contribution deduction adds to capped flat expenses."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 22,
+        "old_LF_start": 93,
+        "old_LF_end": 96,
+        "old_text": "| Method | Rule |\n| --- | --- |\n| Paušálne výdavky (flat-rate) | 60% of income, max **€20,000** + social/health insurance paid |\n| Skutočné výdavky (actual) | Documented expenses per accounting records |",
+        "old_unit_sha256": "2a625663f271d686ac8181469f869544d60ea5922d924c90dcc2184a8ec3ac68",
+        "current_destination": "Current LF82–88",
+        "disposition": "Actual/flat expense options and records retained; contribution deduction adds to capped flat expenses."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 23,
+        "old_LF_start": 98,
+        "old_LF_end": 98,
+        "old_text": "### Social & health insurance (Odvody)",
+        "old_unit_sha256": "a82eb910be3ec6f56c3f387a86d5641131a577eef5d0e2bc302ec929138cf3b3",
+        "current_destination": "Current LF23,80,84; sk-payroll-social companion, SZČO section",
+        "disposition": "Contribution calculation routed to own payroll/social Guide; old50%-base and14%health statements not represented as current. Companion exact destination is checked in that ledger."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 24,
+        "old_LF_start": 100,
+        "old_LF_end": 100,
+        "old_text": "**Social & health insurance (Odvody)**",
+        "old_unit_sha256": "b338994d31b42533b94f4a1c16b7bd5cad33401f6da255f68a627e7d96f6cf15",
+        "current_destination": "Current LF23,80,84; sk-payroll-social companion, SZČO section",
+        "disposition": "Contribution calculation routed to own payroll/social Guide; old50%-base and14%health statements not represented as current. Companion exact destination is checked in that ledger."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 25,
+        "old_LF_start": 102,
+        "old_LF_end": 105,
+        "old_text": "| Fund | Rate (self-employed) | Assessment base |\n| --- | --- | --- |\n| Social insurance (Sociálna poisťovňa) | 33.15% | 50% of taxable base (min/max caps apply) |\n| Health insurance (zdravotné) | 14% | 50% of taxable base (min/max caps apply) |",
+        "old_unit_sha256": "d8b270a94b46a928a0f55ca36204217c1300687e5c438c209de7cec84d291fb1",
+        "current_destination": "Current LF23,80,84; sk-payroll-social companion, SZČO section",
+        "disposition": "Contribution calculation routed to own payroll/social Guide; old50%-base and14%health statements not represented as current. Companion exact destination is checked in that ledger."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 26,
+        "old_LF_start": 107,
+        "old_LF_end": 107,
+        "old_text": "- **Deductibility of insurance** — These are deductible from income before applying flat-rate or actual expenses.",
+        "old_unit_sha256": "79859bf5161de8691640f74792e51cd12ddb1484cce50fa50f50e51cb2a0072f",
+        "current_destination": "Current LF80,84",
+        "disposition": "Actual compulsory contributions deducted under correct category; no deduction before computing60%revenue flat amount."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 27,
+        "old_LF_start": 109,
+        "old_LF_end": 109,
+        "old_text": "## Section 6 — Computation method",
+        "old_unit_sha256": "caf365c7b701d2d2cc41bfd62e7c210446bd33b0e4302efbfe5be8d37512f993",
+        "current_destination": "Current LF74–119,141–151",
+        "disposition": "All computation stages retained with correct separate bases, allowance allocation, credit ordering and return reconciliation; old merged-base15%first100k method corrected."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 28,
+        "old_LF_start": 111,
+        "old_LF_end": 111,
+        "old_text": "- **Computation method steps** — Step 1: Total income (príjmy) per §5–§8 Step 2: − Expenses (výdavky) — flat-rate or actual Step 3: = Partial base per income type (čiastkový základ dane) Step 4: Sum all partial bases = Total base (základ dane) Step 5: − Non-taxable amount on self (§11 ods.2) Step 6: − Non-taxable amount on spouse (§11 ods.3) Step 7: − Pension savings (max €180) Step 8: = Adjusted taxable base Step 9: Apply rates: 15% on first €100,000; 19% on remainder to €176,800; 25% above Step 10: = Calculated tax (vypočítaná daň) Step 11: − Child bonus (daňový bonus na dieťa) Step 12: − Mortgage interest bonus (daňový bonus na zaplatené úroky) Step 13: − Advance payments / withholding already paid Step 14: = Tax payable or refund (daň na úhradu / preplatok)",
+        "old_unit_sha256": "443c6dc4fd0bf5c853c1214d5b99556d20e9092cf92f92a0439dd7a5eb0c9907",
+        "current_destination": "Current LF74–119,141–151",
+        "disposition": "All computation stages retained with correct separate bases, allowance allocation, credit ordering and return reconciliation; old merged-base15%first100k method corrected."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 29,
+        "old_LF_start": 113,
+        "old_LF_end": 113,
+        "old_text": "## Section 7 — Worked example",
+        "old_unit_sha256": "5d2150bb025bca9551c749ca2668ea949c80bd8f35716f4f431b1e61e1b0ba85",
+        "current_destination": "Current LF174–178; historical comparison in writer controls",
+        "disposition": "Self-employed capped-flat/6000contribution example method retained. Earliest45000receipt fixture is archived verbatim; currentJana uses48000, and old5753.79allowance/1986.93tax are not current2026figures."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 30,
+        "old_LF_start": 115,
+        "old_LF_end": 115,
+        "old_text": "Freelance developer (SZČO, živnosť), annual income €45,000, uses flat-rate expenses, single, no children, paid social insurance €4,200 and health insurance €1,800.",
+        "old_unit_sha256": "8067b1827193f9711914cfac3799a57a42f34795d043c73d15ddca2556625c2e",
+        "current_destination": "Current LF174–178; historical comparison in writer controls",
+        "disposition": "Self-employed capped-flat/6000contribution example method retained. Earliest45000receipt fixture is archived verbatim; currentJana uses48000, and old5753.79allowance/1986.93tax are not current2026figures."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 31,
+        "old_LF_start": 117,
+        "old_LF_end": 117,
+        "old_text": "**Worked example computation**",
+        "old_unit_sha256": "9563e6fbddfeb8456101cabee29b38c46799a95b234f34daff9f26753971ffee",
+        "current_destination": "Current LF174–178; historical comparison in writer controls",
+        "disposition": "Self-employed capped-flat/6000contribution example method retained. Earliest45000receipt fixture is archived verbatim; currentJana uses48000, and old5753.79allowance/1986.93tax are not current2026figures."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 32,
+        "old_LF_start": 119,
+        "old_LF_end": 127,
+        "old_text": "| Step | Description | Amount (€) |\n| --- | --- | --- |\n| Gross income | Príjmy z podnikania §6 | 45,000 |\n| − Flat-rate expenses | 60% × 45,000 = 27,000 → capped at 20,000 | (20,000) |\n| − Social/health insurance | Actually paid (added to flat-rate) | (6,000) |\n| **Partial base** |  | **19,000** |\n| − Non-taxable (self) | Nezdaniteľná časť | (5,753.79) |\n| **Taxable base** |  | **13,246.21** |\n| Tax at 15% | 13,246.21 × 0.15 | **1,986.93** |",
+        "old_unit_sha256": "cf5542e601027f5f4f88b1354b3e7990c7de15f0a34dae5c35a26dc1c8b0f7c6",
+        "current_destination": "Current LF174–178; historical comparison in writer controls",
+        "disposition": "Self-employed capped-flat/6000contribution example method retained. Earliest45000receipt fixture is archived verbatim; currentJana uses48000, and old5753.79allowance/1986.93tax are not current2026figures."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 33,
+        "old_LF_start": 129,
+        "old_LF_end": 129,
+        "old_text": "## Section 8 — Child bonus (Daňový bonus na dieťa)",
+        "old_unit_sha256": "5030e3a2db95b0007b7962a0b679ebc6bdd19b8e7f137486e7db58f2fbeb91b0",
+        "current_destination": "Current LF62–65,100–104",
+        "disposition": "Child credit ages, month endpoints, household/base caps and high-base taper retained/corrected; obsolete3876minimum is not revived."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 34,
+        "old_LF_start": 131,
+        "old_LF_end": 131,
+        "old_text": "**Child bonus amounts**",
+        "old_unit_sha256": "aa66276420444c15a379ab3aedb93cb4042940eaea621a0ee4bcfc06071784e2",
+        "current_destination": "Current LF62–65,100–104",
+        "disposition": "Child credit ages, month endpoints, household/base caps and high-base taper retained/corrected; obsolete3876minimum is not revived."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 35,
+        "old_LF_start": 133,
+        "old_LF_end": 136,
+        "old_text": "| Child age | Monthly amount | Annual max |\n| --- | --- | --- |\n| ≤ 15 years | €100 | €1,200 |\n| 16–18 years | €50 | €600 |",
+        "old_unit_sha256": "925a7a3872bf62e174b59c734b3c39136596b8437cacfff02c0500d86dbad131",
+        "current_destination": "Current LF62–65,100–104",
+        "disposition": "Child credit ages, month endpoints, household/base caps and high-base taper retained/corrected; obsolete3876minimum is not revived."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 36,
+        "old_LF_start": 138,
+        "old_LF_end": 138,
+        "old_text": "- **Conditions for child bonus** — Taxpayer's income must be at least €3,876 (6× minimum wage); Child must live in household; For high-income taxpayers (base > €25,740): bonus may be limited",
+        "old_unit_sha256": "af2f4a24b548069cf9788cec91785019565cb18a1130aea5ba76f50b03781cf6",
+        "current_destination": "Current LF62–65,100–104",
+        "disposition": "Child credit ages, month endpoints, household/base caps and high-base taper retained/corrected; obsolete3876minimum is not revived."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 37,
+        "old_LF_start": 140,
+        "old_LF_end": 140,
+        "old_text": "## Section 9 — Filing guidance",
+        "old_unit_sha256": "d87c226cf026c58939430bed7d4e01607864ec427bb8e9d5093ad457c90298e9",
+        "current_destination": "Current LF34–36,125–151",
+        "disposition": "TypeA/B and annual-settlement routing retained with actual current Ministry forms; SK-L01 exception included."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 38,
+        "old_LF_start": 142,
+        "old_LF_end": 142,
+        "old_text": "### Which form?",
+        "old_unit_sha256": "af5be29b584d2d5bd54a837bd4a957843db52817c91bba5ea9a9888918d0f975",
+        "current_destination": "Current LF34–36,125–151",
+        "disposition": "TypeA/B and annual-settlement routing retained with actual current Ministry forms; SK-L01 exception included."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 39,
+        "old_LF_start": 144,
+        "old_LF_end": 144,
+        "old_text": "**Which form?**",
+        "old_unit_sha256": "c00665ef5ccc25643de4b89242cac8499fbc0d64b6121f4c4c28a3ec8a3a8cc2",
+        "current_destination": "Current LF34–36,125–151",
+        "disposition": "TypeA/B and annual-settlement routing retained with actual current Ministry forms; SK-L01 exception included."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 40,
+        "old_LF_start": 146,
+        "old_LF_end": 149,
+        "old_text": "| Form | Who |\n| --- | --- |\n| DPFO typ A | Employment income only (§5) |\n| DPFO typ B | Self-employed, rental, capital gains, multiple income types |",
+        "old_unit_sha256": "0d5aeaa48f7aff1e34b62d00f87ed869d2832c4f8acf36ab4d0cbd936d7c85aa",
+        "current_destination": "Current LF34–36,125–151",
+        "disposition": "TypeA/B and annual-settlement routing retained with actual current Ministry forms; SK-L01 exception included."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 41,
+        "old_LF_start": 151,
+        "old_LF_end": 151,
+        "old_text": "### Key dates",
+        "old_unit_sha256": "4d2e0f6e7878e20ccb6957fe1ad25e524ac657944ca4be8521d87f1915ccfe17",
+        "current_destination": "Current LF125–131",
+        "disposition": "Deadline and extension topics retained; extension depends on foreign-source income, not oldEU/nonEU geography distinction."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 42,
+        "old_LF_start": 153,
+        "old_LF_end": 153,
+        "old_text": "**Key dates**",
+        "old_unit_sha256": "7ef6573a854a73e9243d4d70cc7f956638707a2df59db006666f86485c0731f5",
+        "current_destination": "Current LF125–131",
+        "disposition": "Deadline and extension topics retained; extension depends on foreign-source income, not oldEU/nonEU geography distinction."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 43,
+        "old_LF_start": 155,
+        "old_LF_end": 161,
+        "old_text": "| Event | Deadline |\n| --- | --- |\n| Tax year end | 31 December |\n| Standard filing deadline | 31 March |\n| Extended (EU/EEA income) | 30 June |\n| Extended (foreign non-EU income) | 30 September |\n| Payment due | Same as filing deadline |",
+        "old_unit_sha256": "27f13736c0e85ee6f090662eaa5419e61de0de358f80bbcc03afcace1590c76d",
+        "current_destination": "Current LF125–131",
+        "disposition": "Deadline and extension topics retained; extension depends on foreign-source income, not oldEU/nonEU geography distinction."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 44,
+        "old_LF_start": 163,
+        "old_LF_end": 163,
+        "old_text": "### Electronic filing",
+        "old_unit_sha256": "7494fa8678a18a8f5c338461c9e798f380f0251f54ee04be9a4a44b6afa2abed",
+        "current_destination": "Current LF133,135; historical URL/claim archived in old-topics.json",
+        "disposition": "Electronic statutory obligation retained. Specific eID/third-party XML compatibility is historical/unverified, not asserted as current primary law."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 45,
+        "old_LF_start": 165,
+        "old_LF_end": 165,
+        "old_text": "All DPFO typ B returns can be filed via **slovensko.sk** (requires eID with chip). The `priznanie-digital` tool generates compatible XML.",
+        "old_unit_sha256": "d083f8fd68fdf6ce143861d2a5e1a9a544d9e34264a68ed92c7c0007a1154584",
+        "current_destination": "Current LF133,135; historical URL/claim archived in old-topics.json",
+        "disposition": "Electronic statutory obligation retained. Specific eID/third-party XML compatibility is historical/unverified, not asserted as current primary law."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 46,
+        "old_LF_start": 167,
+        "old_LF_end": 167,
+        "old_text": "## Section 10 — Advance payments (Preddavky na daň)",
+        "old_unit_sha256": "11bf9b405013467b26c6b9d4bb8f4855bae673f79c6915cb48d6e021d6541f75",
+        "current_destination": "Current LF72,129,133",
+        "disposition": "Advance thresholds/frequencies preserved with exactstrict5000boundary and19%last-known-tax calculation; exactly5000does not triggerquarterly."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 47,
+        "old_LF_start": 169,
+        "old_LF_end": 169,
+        "old_text": "**Advance payments (Preddavky na daň)**",
+        "old_unit_sha256": "8d270e8d5988005eea5bc33af462305180f6501f755d41ddbea1fcfd3b3722aa",
+        "current_destination": "Current LF72,129,133",
+        "disposition": "Advance thresholds/frequencies preserved with exactstrict5000boundary and19%last-known-tax calculation; exactly5000does not triggerquarterly."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 48,
+        "old_LF_start": 171,
+        "old_LF_end": 175,
+        "old_text": "| Last year's tax liability | Advance frequency | Amount |\n| --- | --- | --- |\n| < €5,000 | None required | — |\n| €5,000 – €16,600 | Quarterly | 25% of last year's tax |\n| > €16,600 | Monthly | 1/12 of last year's tax |",
+        "old_unit_sha256": "3ed82f2c160232bab24626f1c85086a9df21f6d4781836e785694dff590d7ce9",
+        "current_destination": "Current LF72,129,133",
+        "disposition": "Advance thresholds/frequencies preserved with exactstrict5000boundary and19%last-known-tax calculation; exactly5000does not triggerquarterly."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 49,
+        "old_LF_start": 177,
+        "old_LF_end": 177,
+        "old_text": "## Section 11 — Conservative defaults",
+        "old_unit_sha256": "51864d4614020aa5baa115736cbee2f4a457c5b52c0898a4836394fe10e76e56",
+        "current_destination": "Current LF297–302,82–117,165–168",
+        "disposition": "Required facts and uncertainty controls retained as intake/method conditions. No unsupported default automatically awards relief; crypto remains§8and treaty route supplied in companion."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 50,
+        "old_LF_start": 179,
+        "old_LF_end": 179,
+        "old_text": "**Conservative defaults**",
+        "old_unit_sha256": "46bfdad640b74e5fc480b205a5adb268222ff2bc65d073ea0c639d255b92322e",
+        "current_destination": "Current LF297–302,82–117,165–168",
+        "disposition": "Required facts and uncertainty controls retained as intake/method conditions. No unsupported default automatically awards relief; crypto remains§8and treaty route supplied in companion."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 51,
+        "old_LF_start": 181,
+        "old_LF_end": 187,
+        "old_text": "| Situation | Conservative position |\n| --- | --- |\n| Expense documentation unclear | Use flat-rate (paušálne výdavky); do NOT claim actuals without proof |\n| Child eligibility uncertain | Do not claim bonus; flag for reviewer |\n| Partner income unknown | Do not claim non-taxable on spouse; flag |\n| Foreign income | Include; flag treaty applicability |\n| Crypto gains | Classify as §8 (ostatné príjmy); flag |",
+        "old_unit_sha256": "82e5d8a8bd369f56fb020e18c43ed4deefe80e45e1d0ff76e7708a2488780268",
+        "current_destination": "Current LF297–302,82–117,165–168",
+        "disposition": "Required facts and uncertainty controls retained as intake/method conditions. No unsupported default automatically awards relief; crypto remains§8and treaty route supplied in companion."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 52,
+        "old_LF_start": 189,
+        "old_LF_end": 189,
+        "old_text": "## Section 12 — Sources",
+        "old_unit_sha256": "c609192f6e2a3f0cbc4ae4f3cade1a5a53cc199135cd371559d0bc0b4419e493",
+        "current_destination": "Current LF306–322,326; complete original sources archived",
+        "disposition": "Legal authorities upgraded to exact operative versions and official forms. Historical third-party/source portal credit remains attributable without claiming official tax authority."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 53,
+        "old_LF_start": 191,
+        "old_LF_end": 191,
+        "old_text": "**Sources**",
+        "old_unit_sha256": "daa50325aded89878df211cf29231dbdbb9145ecc71db72f931d3fcbd5c4d5cc",
+        "current_destination": "Current LF306–322,326; complete original sources archived",
+        "disposition": "Legal authorities upgraded to exact operative versions and official forms. Historical third-party/source portal credit remains attributable without claiming official tax authority."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 54,
+        "old_LF_start": 193,
+        "old_LF_end": 198,
+        "old_text": "| Source | URL |\n| --- | --- |\n| Finančná správa SR | https://www.financnasprava.sk |\n| slovensko.sk (e-filing) | https://www.slovensko.sk |\n| `priznanie-digital/priznanie-digital` (MIT) | https://github.com/priznanie-digital/priznanie-digital |\n| Zákon č. 595/2003 Z. z. o dani z príjmov | — |",
+        "old_unit_sha256": "c531bb61cafa448845ced2d78055da771e83f1c00b9358798877cfedbe614012",
+        "current_destination": "Current LF306–322,326; complete original sources archived",
+        "disposition": "Legal authorities upgraded to exact operative versions and official forms. Historical third-party/source portal credit remains attributable without claiming official tax authority."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 55,
+        "old_LF_start": 200,
+        "old_LF_end": 200,
+        "old_text": "## Footer disclaimer",
+        "old_unit_sha256": "48d7803676136dbf28426743e76f84c1097dc299094628274c959fe1a1bf9cac",
+        "current_destination": "Current LF19,328,344–346",
+        "disposition": "Reference-only disclaimer and source-cited draft state retained; no accountant attestation inferred."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 56,
+        "old_LF_start": 202,
+        "old_LF_end": 203,
+        "old_text": "*OpenAccountants — open-source accounting skills for AI*\n*This is not tax advice. All outputs must be reviewed by a qualified professional before filing.*",
+        "old_unit_sha256": "53e84a65cf9a97953a96b3e670ce0609e43037e486e83c960dd36091835ad6f1",
+        "current_destination": "Current LF19,328,344–346",
+        "disposition": "Reference-only disclaimer and source-cited draft state retained; no accountant attestation inferred."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 57,
+        "old_LF_start": 205,
+        "old_LF_end": 205,
+        "old_text": "<!-- openaccountants-cta-block -->",
+        "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+        "current_destination": "Current LF330–346",
+        "disposition": "Original CTA/control disclaimer/topic blocks retained; unit text supplies exact comparison."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 58,
+        "old_LF_start": 207,
+        "old_LF_end": 207,
+        "old_text": "---",
+        "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "current_destination": "Current LF330–346",
+        "disposition": "Original CTA/control disclaimer/topic blocks retained; unit text supplies exact comparison."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 59,
+        "old_LF_start": 209,
+        "old_LF_end": 209,
+        "old_text": "## Talk to a verified accountant",
+        "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+        "current_destination": "Current LF330–346",
+        "disposition": "Original CTA/control disclaimer/topic blocks retained; unit text supplies exact comparison."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 60,
+        "old_LF_start": 211,
+        "old_LF_end": 214,
+        "old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+        "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+        "current_destination": "Current LF330–346",
+        "disposition": "Original CTA/control disclaimer/topic blocks retained; unit text supplies exact comparison."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 61,
+        "old_LF_start": 216,
+        "old_LF_end": 217,
+        "old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+        "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+        "current_destination": "Current LF330–346",
+        "disposition": "Original CTA/control disclaimer/topic blocks retained; unit text supplies exact comparison."
+      },
+      {
+        "comparator": "92fb47e3^",
+        "unit": 62,
+        "old_LF_start": 219,
+        "old_LF_end": 221,
+        "old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+        "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+        "current_destination": "Current LF330–346",
+        "disposition": "Original CTA/control disclaimer/topic blocks retained; unit text supplies exact comparison."
+      }
+    ]
+  },
+  "prior_423_unit_map_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/full-no-loss-unit-ledger.json",
+  "prior_map_sha256": "7c0210e5320a6687950cfee3ae3df747a622eff5928e6bc0d21767e7eade94c5",
+  "rows": [
+    {
+      "comparator": "origin/main",
+      "unit": 1,
+      "old_LF_start": 1,
+      "old_LF_end": 15,
+      "old_text": "---\nname: slovakia-pit\ndescription: \"Slovak personal income tax (daň z príjmov fyzickej osoby, DPFO) for tax year 2026 under Act 595/2003 as amended by Act 261/2025. Covers residents and non-residents in outline, employment income (§5), self-employed SZČO business income (§6) with the 60% flat-rate expenses capped at EUR 20,000, the 15% rate for business revenue up to EUR 100,000, the new 19%, 25%, 30% and 35% bands set as multiples of the subsistence minimum (EUR 284.13), the 2026 personal allowance of EUR 5,966.73 and its phase-out, the spouse allowance, the child tax bonus and its taper above EUR 27,432, the EUR 17 minimum tax rule, capital income, the 31 March 2027 deadline and extensions, advances and penalties. Trigger on: daň z príjmov 2026, DPFO typ A, DPFO typ B, SZČO, živnostník, paušálne výdavky, nezdaniteľná časť, daňový bonus, Slovak income tax 2026. Out of scope: payroll withholding and contributions in sk-payroll-social, companies in sk-corporate-income-tax, non-residents and treaties in sk-cross-border.\"\nversion: 1.1\njurisdiction: SK\ntax_year: 2026\nlast_updated: 2026-10-24\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ndepends_on:\n  - foundation\ncategory: international\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+      "old_unit_sha256": "08c1990c6bd3482b8cc2582f4c5fe79d0c352fd2de03c7897d71a972fab210b2",
+      "current_LF": [
+        1,
+        15
+      ],
+      "disposition": "Metadata version/date advanced only; prior source-cited draft state retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 2,
+      "old_LF_start": 17,
+      "old_LF_end": 17,
+      "old_text": "# Slovakia: personal income tax for employees and the self-employed (2026) v1.1",
+      "old_unit_sha256": "8e369d9fb63c0da0dc606dbe1588deeb41de82ed80729afa93df5af58949dc20",
+      "current_LF": [
+        17,
+        17
+      ],
+      "disposition": "H1 version aligned with metadata."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 3,
+      "old_LF_start": 19,
+      "old_LF_end": 19,
+      "old_text": "Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.",
+      "old_unit_sha256": "e5b88b8c4bb762bcc84852f917e7185587d2a29b69218e61b91135dd0346b505",
+      "current_LF": [
+        19,
+        19
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 4,
+      "old_LF_start": 21,
+      "old_LF_end": 21,
+      "old_text": "This skill covers the annual income tax of an individual for the 2026 calendar year: employees, the self-employed (SZČO, živnostník) and people with rental, capital or other income. It links to the other Slovakia skills and does not repeat them:",
+      "old_unit_sha256": "d20259f9c0150b3164213aa14df1bb38f65938fe950502c8575f8f96f1f4ce5e",
+      "current_LF": [
+        21,
+        21
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 5,
+      "old_LF_start": 23,
+      "old_LF_end": 26,
+      "old_text": "- [sk-payroll-social](sk-payroll-social.md): the employer's monthly withholding and social and health contributions.\n- [sk-corporate-income-tax](sk-corporate-income-tax.md): companies, including the minimum tax for legal persons.\n- [sk-tax-overview](sk-tax-overview.md): the system at a glance.\n- [sk-cross-border](sk-cross-border.md): residence in detail, non-residents, withholding tax and treaties.",
+      "old_unit_sha256": "c61a06193ffb89827c4087c17ac63b0c5e671b80f429d4a2eb2c13c46cf5d0bf",
+      "current_LF": [
+        23,
+        26
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 6,
+      "old_LF_start": 28,
+      "old_LF_end": 28,
+      "old_text": "**Which text of the law.** Act No. 595/2003 Coll. on income tax (zákon o dani z príjmov), version in force from 1 January 2026 to 30 December 2026. Act No. 261/2025 Coll. made the 2026 changes to §11 and §15; under §52zzzj(1) they apply first for the 2026 tax year. A further version in force from 31 December 2026 adds an exemption for informal carers (§9(1)(t)) and amends §11(4), but §52zzzm says those apply first for 2027. Penalties come from Act No. 563/2009 Coll., the Tax Procedure Code (daňový poriadok).",
+      "old_unit_sha256": "d5437863b896bff9649fb5860f5eb635a5bb58468b9a0e76c3925374ac07fd58",
+      "current_LF": [
+        28,
+        28
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 7,
+      "old_LF_start": 30,
+      "old_LF_end": 30,
+      "old_text": "## Who this applies to",
+      "old_unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "current_LF": [
+        30,
+        30
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 8,
+      "old_LF_start": 32,
+      "old_LF_end": 38,
+      "old_text": "- **Residents.** A person with permanent residence (trvalý pobyt) or a home (bydlisko) in Slovakia, or who usually stays there, is taxed on worldwide income (§2(d)(1)). Staying at least 183 days in a calendar year, counting every started day, is usually staying. The tax year is the calendar year (§2(l)).\n- **Non-residents.** They are taxed only on Slovak-source income (§2(e), §16). They get the spouse allowance and the child bonus only if Slovak income is at least 90% of their total income (§11(7), §33(9)). The detail is in sk-cross-border.\n- **Employees** (§5). The employer withholds monthly advances. An employee with only §5 income from Slovak employers can ask an employer for the annual settlement (ročné zúčtovanie) by 15 February 2027 instead of filing (§38(1)). Otherwise they file DPFO type A.\n- **Self-employed** (§6(1) and (2)): trades (živnosť), liberal professions, farmers and other independent activity. They file DPFO type B.\n- **Rental income** (§6(3)), **capital income** (§7) and **other income** (§8), such as sale of property, securities or crypto-assets. These go on DPFO type B.\n- **Who must file.** Anyone whose taxable income in 2026 exceeds 50% of the personal allowance, so EUR 2,983.37, or who has a tax loss (§32(1)). Income taxed finally by withholding is left out of that test.\n- **Out of scope.** Companies, and the special tax on top state officials (§15a).",
+      "old_unit_sha256": "f9464719e092a2a120f4b6593a7ba4f5b3bea21b7638ca7c1abe03909a5f0f16",
+      "current_LF": [
+        32,
+        38
+      ],
+      "disposition": "Residence/employment/filing routes retained; SK-L01 adds actual DDS settlement exception."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 9,
+      "old_LF_start": 40,
+      "old_LF_end": 40,
+      "old_text": "## Rates, bands and thresholds",
+      "old_unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "current_LF": [
+        40,
+        40
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 10,
+      "old_LF_start": 42,
+      "old_LF_end": 42,
+      "old_text": "The bands and allowances are multiples of the subsistence minimum (životné minimum) in force on 1 January of the tax year (§11(2)(a)). For 2026 that is EUR 284.13 a month, set from 1 July 2025 by Measure No. 168/2025 Coll. Amounts below are that figure times the multiple, rounded to the cent (§47).",
+      "old_unit_sha256": "82abde8372866fea0b793cd4c3d1749fd4b9679bef9fdb69b0a5972a3e6ee1cc",
+      "current_LF": [
+        42,
+        42
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 11,
+      "old_LF_start": 44,
+      "old_LF_end": 69,
+      "old_text": "| Item | Rate or amount | Year | Source URL |\n|---|---|---|---|\n| Subsistence minimum, one adult, used for 2026 | EUR 284.13 a month | 2026 | https://employment.gov.sk/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/vyska-zivotneho-minima-od-1-jula-2025.html |\n| Band 1: base up to 154.8 x subsistence minimum (EUR 43,983.32) | 19% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§15(a)(1a)) |\n| Band 2: EUR 43,983.32 to 212.4 x (EUR 60,349.21) | 25% | 2026 | same, §15(a)(1b) |\n| Band 3: EUR 60,349.21 to 264 x (EUR 75,010.32) | 30% | 2026 | same, §15(a)(1c) |\n| Band 4: above EUR 75,010.32 | 35% | 2026 | same, §15(a)(1d) |\n| Business base (§6(1),(2)) when that business revenue is EUR 100,000 or less | 15% | 2026 | same, §15(a)(2) |\n| Business base when that business revenue exceeds EUR 100,000 | 19% / 25% / 30% / 35% bands as above | 2026 | same, §15(a)(3) |\n| Capital income special base (§7), for example foreign interest | 19% | 2026 | same, §15(a)(4) |\n| Foreign dividends special base (§51e(3)(a)) | 7% (35% from a non-cooperating state) | 2026 | same, §15(a)(5),(6) |\n| Personal allowance (21.0 x), base up to 91.8 x (EUR 26,083.13) | EUR 5,966.73 | 2026 | same, §11(2)(a) |\n| Personal allowance, base above EUR 26,083.13 | EUR 14,661.11 (51.6 x) minus one third of the base; zero from a base of EUR 43,983.32 | 2026 | same, §11(2)(b) |\n| Spouse allowance (19.2 x), taxpayer base up to EUR 43,983.32 | up to EUR 5,455.30, less the spouse's own income | 2026 | same, §11(3)(a) |\n| Spouse allowance, taxpayer base above EUR 43,983.32 | EUR 20,116.40 (70.8 x) minus one third of the base, less the spouse's own income | 2026 | same, §11(3)(b) |\n| Supplementary pension (DDS) and PEPP contributions | up to EUR 180 a year | 2026 | same, §11(9) |\n| Flat-rate expenses for a non-VAT payer (paušálne výdavky) | 60% of business revenue, cap EUR 20,000, plus compulsory contributions paid | 2026 | same, §6(10) |\n| Child tax bonus, child under 15 | EUR 100 a month | 2026 | same, §33(1)(b) |\n| Child tax bonus, child aged 15 to 18 | EUR 50 a month | 2026 | same, §33(1)(a) |\n| Child tax bonus cap, as % of the employment or business base | 29% (1 child), 36% (2), 43% (3), 50% (4), 57% (5), 64% (6 or more) | 2026 | same, §33(6) |\n| Child tax bonus taper threshold: 1.5 x 12 x average monthly wage of 2024 (EUR 1,524) | EUR 27,432; above it the bonus per child falls by 1/10 of the excess | 2026 | same, §33(11); wage: https://www.employment.gov.sk/files/slovensky/ministerstvo/analyticke-centrum/2025/sprava_sossr_2024_pub.pdf |\n| Minimum tax of an individual | no tax assessed if the tax is EUR 17 or less, or total income is EUR 2,983.37 or less; not where a child or mortgage bonus is claimed or tax was withheld | 2026 | same, §46a |\n| Tax due in the return not paid | if EUR 5 or less | 2026 | same, §46 |\n| Exempt: rental plus occasional income | first EUR 500 a year | 2026 | same, §9(1)(g) |\n| Exempt: listed securities held over one year (not business assets) | fully exempt | 2026 | same, §9(1)(k) |\n| Advances: last known tax over EUR 5,000 up to EUR 16,600 / over EUR 16,600 | quarterly 1/4 / monthly 1/12 | 2026 | same, §34(1)-(3) |",
+      "old_unit_sha256": "222a6aa78ed873899ca7da4fbfee5d0ec60d97a55b155e4070067b8c9eef9ce6",
+      "current_LF": [
+        44,
+        72
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: Rates now qualify profit-period dividends, securities dualclocks/bondpopulation and fully computed credits;180pension eligibility added R06"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 12,
+      "old_LF_start": 71,
+      "old_LF_end": 71,
+      "old_text": "**How the bands work.** The law sets two separate bases (§4(1)). Base (a) is employment income after allowances, plus rental and other income. Base (b) is business income after allowances and losses. Each base is taxed on its own scale in §15(a): base (a) always on the 19% to 35% bands, base (b) at 15% if business revenue is EUR 100,000 or less, otherwise on the same bands.",
+      "old_unit_sha256": "2834a136635ed12783c60d8239a0ded96a5209984c5e15a54249260d78fc139a",
+      "current_LF": [
+        74,
+        74
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 13,
+      "old_LF_start": 73,
+      "old_LF_end": 73,
+      "old_text": "Tax on a base B above EUR 75,010.32 is 19% x 43,983.32 + 25% x 16,365.89 + 30% x 14,661.11 + 35% x (B - 75,010.32), which is EUR 16,846.64 plus 35% of the excess.",
+      "old_unit_sha256": "10169542c1fc4731e1b7d3ed7e40ccd0f41f838dfd886718d220cba5d8e18dd2",
+      "current_LF": [
+        76,
+        76
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 14,
+      "old_LF_start": 75,
+      "old_LF_end": 75,
+      "old_text": "## The taxable base",
+      "old_unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "current_LF": [
+        78,
+        78
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 15,
+      "old_LF_start": 77,
+      "old_LF_end": 77,
+      "old_text": "**Employment (§5).** Gross pay including benefits in kind, minus the employee's compulsory social and health contributions (§5(8)). Pay for 2026 received by 31 January 2027 belongs to 2026 (§4(3)). Withholding and contributions are in [sk-payroll-social](sk-payroll-social.md).",
+      "old_unit_sha256": "59e96a7dbccc8c25f85d30e4b4fcf26d1895e113508af769f38d885e5385a033",
+      "current_LF": [
+        80,
+        80
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 16,
+      "old_LF_start": 79,
+      "old_LF_end": 81,
+      "old_text": "**Self-employed (§6(1),(2)).** Revenue minus either:\n- **actual expenses** (preukázateľné výdavky), with tax records or double-entry accounts (§6(11)); or\n- **flat-rate expenses** of 60% of revenue, capped at EUR 20,000, if the person is not a VAT payer, or was one for only part of the year (§6(10)). The flat rate covers all expenses except the compulsory social and health contributions, which are deducted on top in the amount paid. The person still keeps a record of income and of inventory and receivables (§6(10), §6(11)(a),(d)).",
+      "old_unit_sha256": "eb7e6fae5dcd32fbad834444610abc665bebed59dfa4ce629bcf3e4754b73ce0",
+      "current_LF": [
+        82,
+        84
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 17,
+      "old_LF_start": 83,
+      "old_LF_end": 83,
+      "old_text": "The result is the business partial base. A tax loss can be carried forward five years. A micro-taxpayer (business revenue up to EUR 60,000, §2(w)) can use it in full; others only up to 50% of the business base (§30(1)).",
+      "old_unit_sha256": "10ec10bbf91dc28f03ffeeb217a32db95549e2c10739f2e79483585929458e68",
+      "current_LF": [
+        86,
+        86
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F13 full microtaxpayer gates and5period expiry preserved"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 18,
+      "old_LF_start": 85,
+      "old_LF_end": 85,
+      "old_text": "**The 15% rate.** It turns on business revenue under §6(1) and (2), not on profit. Revenue of EUR 100,000 or less gives 15% on the whole business base. Above EUR 100,000 the whole business base goes on the bands (§15(a)(2),(3)).",
+      "old_unit_sha256": "32ccf8ec926cf8cbbc3ebcf0087fabee5ddd274ae98a11e8eb49a5c146ec08cd",
+      "current_LF": [
+        88,
+        88
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 19,
+      "old_LF_start": 87,
+      "old_LF_end": 90,
+      "old_text": "**Allowances (nezdaniteľné časti, §11).** They reduce only the employment and business bases, never rental, capital or other income (§11(1)).\n- The personal allowance and the spouse allowance are tested on the tax base from §5 and §6(1),(2) income. A taxpayer who at the start of 2026 receives an old-age, early, service or similar foreign pension gets no personal allowance if the pension for the year, including the 13th pension, exceeds the allowance; otherwise the allowance is cut to the difference (§11(6)).\n- The spouse allowance needs a spouse living with the taxpayer who cared for a minor child, received a care allowance, was a registered jobseeker, or is disabled (§11(4)). The spouse's own income is net of their contributions. Months count only if the conditions held at the start of the month (§11(5)).\n- Allowances come off the employment base first, and only the rest comes off the business base (§11(12)).",
+      "old_unit_sha256": "aa193d09d4479bc6dabb0297ab4ae91e4df0ec011a9015787fd6cc611d45304c",
+      "current_LF": [
+        90,
+        94
+      ],
+      "disposition": "Allowance sequence retained and source-backed DDS/PEPP contract/cap/recapture conditions supplied."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 20,
+      "old_LF_start": 92,
+      "old_LF_end": 92,
+      "old_text": "**Rental (§6(3)) and other income (§8).** Income minus proven expenses. Rental income and occasional income are exempt up to EUR 500 in total (§9(1)(g)). Sales of property, movable things, options, securities, shares in an s.r.o. and crypto-assets (§8(1)(b)-(f),(t)) are taxed on the gain. A loss on one type is ignored (§8(2)). Several sales are exempt if held long enough, for example listed securities held over a year (§9(1)(k)). These gains are taxed in base (a) on the bands.",
+      "old_unit_sha256": "f4c8e6ca0b47c7c3c9b155b5f15dff2eb8999f2c1ef199a0c51f693a9d01933a",
+      "current_LF": [
+        96,
+        96
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F04/F05 securities exclusions/proportionalrental/shared500 computation"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 21,
+      "old_LF_start": 94,
+      "old_LF_end": 94,
+      "old_text": "**Capital income (§7).** Slovak interest is taxed by withholding under §43 and stays out of the return (§7(3)). Foreign interest and similar income go in a special base taxed at 19% (§15(a)(4)). Dividends from a Slovak company are taxed by withholding. Foreign dividends go in a special base at 7%, or 35% from a non-cooperating state (§51e, §15(a)(5),(6)).",
+      "old_unit_sha256": "88cdd28721c0a7934ab89f553f8f13a41e664bcd0f4b41549095c69da6a962fe",
+      "current_LF": [
+        98,
+        98
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F03/F14 distinguish governmentbonds/bankinterest/profit-period dividends"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 22,
+      "old_LF_start": 96,
+      "old_LF_end": 98,
+      "old_text": "**Credits.** From the tax computed:\n- **Child tax bonus (§33).** EUR 100 a month for each child under 15 and EUR 50 a month for each child aged 15 to 18, for each month at whose start the conditions were met (§33(1),(5)). The child lives in the taxpayer's household, and the taxpayer needs employment or business income. The total is capped at a percentage of the employment or business partial base, or their sum, taken before allowances (§33(6)); the Financial Administration's worked return uses that base. If that base exceeds EUR 27,432, the bonus for each child falls by one tenth of the excess (§33(11)). Only one parent claims (§33(4)). If the bonus exceeds the tax, the difference is paid out (§33(7)). The taxpayer must have at least 90% of income from Slovak sources (§33(9)).\n- **Mortgage interest bonus** for borrowers aged 18 to 35 at application (§33a). The conditions differ for loan contracts made up to 31 December 2023 and after; check them in the law before claiming it.",
+      "old_unit_sha256": "f7586747da23bfad165aa0e22e0eba4556f7b4dbb20e5c83ed0a09ce628837d8",
+      "current_LF": [
+        100,
+        117
+      ],
+      "disposition": "Full child-credit method and old/new mortgage branches supply the former pointer."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 23,
+      "old_LF_start": 100,
+      "old_LF_end": 100,
+      "old_text": "**Rounding.** Every calculation is to two decimal places, with 5 and above rounded up (§47).",
+      "old_unit_sha256": "aa6e7f438f90659de83b53996205f1e025bc79417deb9cac6f9ee7e68b861cc0",
+      "current_LF": [
+        119,
+        119
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 24,
+      "old_LF_start": 102,
+      "old_LF_end": 102,
+      "old_text": "## Deadlines and filing",
+      "old_unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "current_LF": [
+        121,
+        121
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 25,
+      "old_LF_start": 104,
+      "old_LF_end": 110,
+      "old_text": "| What | When | Rule |\n|---|---|---|\n| Ask the employer for the annual settlement (employment income only) | 15 February 2027 | §38(1) |\n| DPFO type A (employment only) or type B (all other cases) for 2026, and payment | 31 March 2027 | §49(2) |\n| Extension by notice to the tax office before 31 March 2027 | up to 3 full months, to 30 June 2027 | §49(3)(a) |\n| Extension where foreign-source income is included | up to 6 full months, to 30 September 2027 | §49(3)(b) |\n| Advances in the period after the 2026 return if the last known tax was over EUR 5,000 | quarterly by the end of each quarter; monthly by month end if over EUR 16,600 | §34(1)-(3) |",
+      "old_unit_sha256": "594ea46dc70d17093843231a538a0e0fbf5806181a2a93292297031526a6fd1d",
+      "current_LF": [
+        123,
+        129
+      ],
+      "disposition": "Filing table retained with SK-L01 settlement qualification."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 26,
+      "old_LF_start": 112,
+      "old_LF_end": 112,
+      "old_text": "The extension notice names the new deadline: the end of the month in which the return will be filed. The tax is then due by that new date (§49(3)). The notice is on the Financial Directorate's form.",
+      "old_unit_sha256": "4cb2780bb9289e1d4b599e1b16508693a265597cd14873ad839f9571947c0e11",
+      "current_LF": [
+        131,
+        131
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 27,
+      "old_LF_start": 114,
+      "old_LF_end": 114,
+      "old_text": "A self-employed person registered for income tax, a VAT payer, and any tax adviser or lawyer acting for a client must file electronically (Tax Procedure Code §14(1)). The last known tax for advances is the tax on the business base at 19%, after losses (§34(5)).",
+      "old_unit_sha256": "0db0d6fff99c45b0f81374f3e0a8d9ab20f8f753ab448ed2644e4f3f5e3f7c63",
+      "current_LF": [
+        133,
+        133
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 28,
+      "old_LF_start": 116,
+      "old_LF_end": 116,
+      "old_text": "## Penalties and interest",
+      "old_unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "current_LF": [
+        153,
+        153
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 29,
+      "old_LF_start": 118,
+      "old_LF_end": 118,
+      "old_text": "All under the Tax Procedure Code, Act 563/2009, version in force from 1 September 2026. The 1 January 2027 version has the same text for §154 to §156.",
+      "old_unit_sha256": "eff1fd895b1aa566647638a847acf29309fa0e69d31bc4cba455505c506c6a42",
+      "current_LF": [
+        155,
+        155
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 30,
+      "old_LF_start": 120,
+      "old_LF_end": 124,
+      "old_text": "- **Late or missing return.** A fine of EUR 100 to EUR 30,000 (§154(1)(a), §155(1)(a)). For a fine within a range, the tax office does not impose one for a first breach (§155(4)). It weighs severity, duration, consequences and the taxpayer's reliability index.\n- **Tax understated, found by the tax office.** 3 x the ECB base rate a year, at least 10% a year, on the extra tax, counted daily from the day after the filing deadline. It is at least 1% and at most 100% of the extra tax (§155(1)(f), (2), (5)). Paying within 15 days of the decision cuts it to two thirds (§155(17)).\n- **Own correction (dodatočné daňové priznanie).** The ECB base rate a year, at least 3%, on the difference. If filed after a tax audit is announced, within the time allowed, it is 2 x the ECB base rate, at least 7% (§155(1)(g),(h), (5)).\n- **Late payment interest (úrok z omeškania).** 4 x the ECB base rate on the day the arrears arose, at least 15% a year, for each day late, for at most four years (§156(2)). It is not charged if it is EUR 5 or less (§156(6)(b)).\n- Fines of EUR 5 or less are not imposed (§155(11)).",
+      "old_unit_sha256": "f04a89314b3efc69ddbd5defb78bd03df954b57e93b221778c1d0113cc581981",
+      "current_LF": [
+        157,
+        161
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 31,
+      "old_LF_start": 126,
+      "old_LF_end": 126,
+      "old_text": "## Cross-border points",
+      "old_unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "current_LF": [
+        163,
+        163
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 32,
+      "old_LF_start": 128,
+      "old_LF_end": 131,
+      "old_text": "- **Foreign income of a resident.** Include it. Relief follows the treaty: a credit capped at the Slovak tax on that income, or exemption (§45). Including foreign income gives the six-month extension (§49(3)(b)).\n- **Non-residents.** Slovak-source income only (§16). The spouse allowance and the child bonus need at least 90% of total income from Slovak sources (§11(7), §33(9)).\n- **Withholding** on payments to non-residents, the security deduction and treaty lists are in sk-cross-border.\n- **Contributions abroad.** Which country insures a cross-border worker decides which contributions are deducted (§5(8)). See [sk-payroll-social](sk-payroll-social.md).",
+      "old_unit_sha256": "4f6578c362fbdb2025519158f83514200c79adbab41b955d27b9e1f63108660a",
+      "current_LF": [
+        165,
+        168
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 33,
+      "old_LF_start": 133,
+      "old_LF_end": 133,
+      "old_text": "## Worked examples",
+      "old_unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "current_LF": [
+        170,
+        170
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 34,
+      "old_LF_start": 135,
+      "old_LF_end": 135,
+      "old_text": "### Example 1: self-employed on flat-rate expenses",
+      "old_unit_sha256": "969aa9c32f6733d5e4e94213fdb26ab6a6155f93e65fa546560a8e1955a2ef33",
+      "current_LF": [
+        172,
+        172
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 35,
+      "old_LF_start": 137,
+      "old_LF_end": 137,
+      "old_text": "Jana is a web designer with a trade licence. She is not a VAT payer. In 2026 her revenue is EUR 48,000. She uses flat-rate expenses and paid EUR 6,000 of compulsory social and health contributions. She has no other income.",
+      "old_unit_sha256": "cfe5b2ae6353c70cdfab955070450774e274c980037f4e3eb7f0b1cf38fa49ce",
+      "current_LF": [
+        174,
+        174
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 36,
+      "old_LF_start": 139,
+      "old_LF_end": 139,
+      "old_text": "Flat-rate expenses are 60% of EUR 48,000, which is EUR 28,800, capped at EUR 20,000. With the contributions on top, her business partial base is 48,000 - 20,000 - 6,000 = EUR 22,000. That is below EUR 26,083.13, so she gets the full personal allowance of EUR 5,966.73 (21 x 284.13). Her tax base is EUR 16,033.27. Revenue is under EUR 100,000, so the rate is 15%: tax EUR 2,404.99, due with DPFO type B by 31 March 2027. Her last known tax is under EUR 5,000, so she pays no advances in the next period.",
+      "old_unit_sha256": "ecac9b95da2ee147a030fe085e70b952e01601c4e5e9cc6224553e9de4bfea05",
+      "current_LF": [
+        176,
+        176
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 37,
+      "old_LF_start": 141,
+      "old_LF_end": 159,
+      "old_text": "```oa-check\nname: SK PIT 2026, SZCO flat-rate expenses, revenue EUR 48,000, 15% rate\ninputs:\n  revenue: 48000\n  contributions: 6000\n  subsistence_min: 284.13\nsteps:\n  - flat_expenses: min(revenue * 0.60, 20000)\n  - partial_base: revenue - flat_expenses - contributions\n  - allowance: round(subsistence_min * 21, 2)\n  - base: partial_base - allowance\n  - tax: round(base * 0.15, 2)\nexpected:\n  flat_expenses: 20000\n  partial_base: 22000\n  allowance: 5966.73\n  base: 16033.27\n  tax: 2404.99\n```",
+      "old_unit_sha256": "d721746641b2968dc951926a81183ae97379b74ef3e1fa988859afaf96fab48a",
+      "current_LF": [
+        182,
+        215
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: Originalbusinessinputs/steps/expectedretained;independentvariantsappended,exceptF02explicitdaybasis/finecorrection"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 38,
+      "old_LF_start": 161,
+      "old_LF_end": 161,
+      "old_text": "### Example 2: employee with both phase-outs",
+      "old_unit_sha256": "9e0f59d32caf4e6e09d43f1a42ec3893e09e33a806365f2199ab3b63aeec819b",
+      "current_LF": [
+        217,
+        217
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 39,
+      "old_LF_start": 163,
+      "old_LF_end": 163,
+      "old_text": "Peter is an employee. His 2026 gross pay is EUR 42,000 and his payslips show EUR 6,000 of employee contributions, so his employment partial base is EUR 36,000. He has one child aged 10 living with him all year. His wife works and does not meet the §11(4) conditions, so there is no spouse allowance. He files DPFO type A.",
+      "old_unit_sha256": "cc8bdd3515275ff19c6cccf83938681cc90a1b659a774f749fa63e5416ea3752",
+      "current_LF": [
+        219,
+        219
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 40,
+      "old_LF_start": 165,
+      "old_LF_end": 165,
+      "old_text": "The base is above EUR 26,083.13, so the personal allowance phases down: 14,661.11 - 36,000 / 3 = EUR 2,661.11. His tax base is EUR 33,338.89, all in the 19% band: tax EUR 6,334.39.",
+      "old_unit_sha256": "19e230545ca84ece42ce5ca4eab81573a852cd32405674b02b48cb698dab9ec6",
+      "current_LF": [
+        221,
+        221
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 41,
+      "old_LF_start": 167,
+      "old_LF_end": 167,
+      "old_text": "The child bonus would be 12 x EUR 100 = EUR 1,200. His base of EUR 36,000 is above EUR 27,432 (1.5 x 12 x 1,524), so the bonus falls by one tenth of the EUR 8,568 excess, EUR 856.80. The bonus is EUR 343.20, well under the 29% cap. Tax after the bonus is EUR 5,991.19, before the advances his employer withheld.",
+      "old_unit_sha256": "f47eb2db4eff2ea165378b75f32a6a177f59f42ac83e70798ee6a9da61b75c20",
+      "current_LF": [
+        223,
+        223
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 42,
+      "old_LF_start": 169,
+      "old_LF_end": 196,
+      "old_text": "```oa-check\nname: SK PIT 2026, employee, allowance phase-out and child bonus taper\ninputs:\n  gross: 42000\n  contributions: 6000\n  subsistence_min: 284.13\n  avg_wage_2024: 1524\n  months_child_under_15: 12\nsteps:\n  - partial_base: gross - contributions\n  - allowance_cap: round(subsistence_min * 51.6, 2)\n  - allowance: max(0, round(allowance_cap - partial_base / 3, 2))\n  - base: partial_base - allowance\n  - tax: round(base * 0.19, 2)\n  - taper_threshold: 1.5 * 12 * avg_wage_2024\n  - bonus_full: months_child_under_15 * 100\n  - bonus_cut: round((partial_base - taper_threshold) / 10, 2)\n  - bonus: min(max(0, bonus_full - bonus_cut), round(partial_base * 0.29, 2))\n  - tax_after_bonus: tax - bonus\nexpected:\n  allowance_cap: 14661.11\n  allowance: 2661.11\n  base: 33338.89\n  tax: 6334.39\n  taper_threshold: 27432\n  bonus: 343.20\n  tax_after_bonus: 5991.19\n```",
+      "old_unit_sha256": "c0e108a57cd4ba30d497d0cb51af6ccb9ffd5442ad205d79235d28ec31c7afb4",
+      "current_LF": [
+        229,
+        293
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: Originalbusinessinputs/steps/expectedretained;independentvariantsappended,exceptF02explicitdaybasis/finecorrection"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 43,
+      "old_LF_start": 198,
+      "old_LF_end": 198,
+      "old_text": "## Ask the client first",
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "current_LF": [
+        295,
+        295
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 44,
+      "old_LF_start": 200,
+      "old_LF_end": 205,
+      "old_text": "1. Where was the client's home and permanent residence in 2026, and how many days were they in Slovakia? Did they have any foreign income?\n2. What kinds of income did they have: employment, business, rental, sale of property, shares or crypto, interest, dividends?\n3. If self-employed: what was the business revenue (EUR 100,000 test, EUR 60,000 micro-taxpayer test), were they a VAT payer at any time in 2026, and do they want actual or flat-rate expenses? What contributions did they actually pay?\n4. Children: dates of birth, months living in the household, and which parent claims the bonus.\n5. Spouse: did they live together, which condition in §11(4) applies, and what was the spouse's own income?\n6. Did they receive a pension at the start of 2026, pay into supplementary pension (DDS) or PEPP, or have a young person's mortgage?",
+      "old_unit_sha256": "4e175baebf06a5ef0fa94bfdd41534c191d0e22a5880e430911b807f1260a17d",
+      "current_LF": [
+        297,
+        302
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: Existing six intake topics retained,child andmortgage/pension evidenceexpanded"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 45,
+      "old_LF_start": 207,
+      "old_LF_end": 207,
+      "old_text": "## Sources",
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "current_LF": [
+        304,
+        304
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 46,
+      "old_LF_start": 209,
+      "old_LF_end": 220,
+      "old_text": "| Source | URL | Read on |\n|---|---|---|\n| Act No. 595/2003 Coll. on income tax, version in force 1 January 2026 to 30 December 2026 (§2, §4-§9, §11, §15, §30, §32-§34, §38, §45, §46, §46a, §47, §49, §51e, §52zzzj) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-23 |\n| Act No. 595/2003 Coll., version in force from 31 December 2026 (§52zzzm) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html | 2026-10-23 |\n| Act No. 261/2025 Coll., consolidation package amending §11 and §15 | https://static.slov-lex.sk/static/SK/ZZ/2025/261/vyhlasene_znenie.html | 2026-10-23 |\n| Act No. 563/2009 Coll., Tax Procedure Code, version in force from 1 September 2026 (§14, §154-§156) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-23 |\n| Act No. 563/2009 Coll., version in force from 1 January 2027 (same §154-§156) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20270101.html | 2026-10-23 |\n| Ministry of Labour, subsistence minimum from 1 July 2025 (EUR 284.13) | https://employment.gov.sk/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/vyska-zivotneho-minima-od-1-jula-2025.html | 2026-10-23 |\n| Ministry of Labour, Report on the social situation 2024 (average wage 2024, EUR 1,524, Statistical Office figure) | https://www.employment.gov.sk/files/slovensky/ministerstvo/analyticke-centrum/2025/sprava_sossr_2024_pub.pdf | 2026-10-23 |\n| Financial Administration, income tax for citizens: allowance EUR 5,966.73, phase-out from EUR 26,083.13, EUR 14,661.11, spouse EUR 5,455.30 / EUR 20,116.40 / EUR 43,983.32, child bonus 2026 and its taper | https://www.financnasprava.sk/sk/obcania/dane/dan-z-prijmov/informovanie-dan-prijem | 2026-10-24 |\n| Financial Administration, employees: filing threshold EUR 2,983.37 and the 2026 allowance figures | https://www.financnasprava.sk/sk/obcania/dane/dan-z-prijmov/zamestnanci | 2026-10-24 |\n| Financial Administration, worked DPFO type A example with the child bonus (tax year 2025, same §33 text): the bonus cap is tested on the §5 partial base before allowances (row 39 / 56a, not row 44) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Obcania/Dan_z_prijmov/2026/2026.01.15_prilad_BONUS.pdf | 2026-10-24 |",
+      "old_unit_sha256": "1867001f05b991306bf69f2a4e3a01ea5f481354de0ec76d3dd2ee07fcb8623a",
+      "current_LF": [
+        306,
+        322
+      ],
+      "disposition": "Original current-source URLs retained; sourced methods and SK-L01 read row added."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 47,
+      "old_LF_start": 222,
+      "old_LF_end": 222,
+      "old_text": "Not yet confirmed: the current ECB base rate behind the penalty and interest floors; the 2026 DPFO form versions; the young person's mortgage bonus conditions in §33a.",
+      "old_unit_sha256": "136d7688249d7b35412e3cdf6df1c27ef0684e28438b8d67eb058351f23e9f4a",
+      "current_LF": [
+        98,
+        151
+      ],
+      "disposition": "Old unread-bond/mortgage/form pointers replaced by sourced dated methods; ECB facts atLF324 remain explicitly dated."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 48,
+      "old_LF_start": 224,
+      "old_LF_end": 224,
+      "old_text": "> Contributed by Michael Cutajar.",
+      "old_unit_sha256": "cd6e492917c1a8ee9a5db69e092a96a573d0755ba0fdfeb3d0e3c92e4bd0e0c7",
+      "current_LF": [
+        328,
+        328
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 49,
+      "old_LF_start": 226,
+      "old_LF_end": 226,
+      "old_text": "<!-- openaccountants-cta-block -->",
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "current_LF": [
+        330,
+        330
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 50,
+      "old_LF_start": 228,
+      "old_LF_end": 228,
+      "old_text": "---",
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "current_LF": [
+        1,
+        1
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 51,
+      "old_LF_start": 230,
+      "old_LF_end": 230,
+      "old_text": "## Talk to a verified accountant",
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "current_LF": [
+        334,
+        334
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 52,
+      "old_LF_start": 232,
+      "old_LF_end": 235,
+      "old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "current_LF": [
+        336,
+        339
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 53,
+      "old_LF_start": 237,
+      "old_LF_end": 238,
+      "old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "current_LF": [
+        341,
+        342
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 54,
+      "old_LF_start": 240,
+      "old_LF_end": 242,
+      "old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "current_LF": [
+        344,
+        346
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    }
+  ]
+}

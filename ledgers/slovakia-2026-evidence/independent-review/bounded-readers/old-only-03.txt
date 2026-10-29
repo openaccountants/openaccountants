@@ -1,0 +1,38 @@
+
+slovakia-vat-registration-4-7-7a main unit23 LF[65, 68]
+- **You must be a "zdaniteľná osoba"** (a taxable person carrying on economic activity). The tax office will test this. Preparatory acts before your first sale are enough on settled CJEU authority (C-110/94 INZO, C-268/83 Rompelman, C-527/11 Ablessio), but you carry the burden of proof.
+- **The decision takes up to 21 days.**
+- **There is no backdating.** Registration cannot take effect before the application date.
+- **The tax office can refuse on fraud-risk grounds**, but only on an overall assessment of the evidence.
+DEST [60, 60]
+Preparatoryacts/CJEU/21days/nobackdate/fraudassessment retained.
+
+slovakia-vat-registration-4-7-7a main unit34 LF[97, 97]
+The §4 application is due within five working days of the day the turnover was exceeded, or the day payer status was acquired. Decision timing: 10 days for a compulsory §4 registration, 21 days for a voluntary one, 10 days for §7 and §7a. Note that §7(3) and §7a(3) were amended with effect from 1 January 2025 to replace seven days with ten. Several of the tax authority's own information sheets still say seven. The statute says ten.
+DEST [82, 96]
+Allregistration/decision10vs7/deadlines retained.
+
+slovakia-vat-registration-4-7-7a main unit44 LF[160, 160]
+Had she bought the same ads from a **US** entity, no §7a registration would be required, but the 46 eur of self-assessed VAT and the return would still be due.
+DEST [145, 145]
+USsameRC/no7a retained.
+
+slovakia-vat-registration-4-7-7a earliest unit15 LF[47, 47]
+The old threshold was 49 790 eur measured over **up to 12 preceding consecutive calendar months**. It is now 50 000 / 62 500 eur measured over the **calendar year**, resetting every 1 January. A transitional rule (§85kn) keeps the old regime alive for anyone who hit 49 790 eur by 31 December 2024.
+DEST Current LF44–58
+Exactsameoldtopic asmainunitM16: Old49790rolling and85kntransition retained historicalonly.
+
+slovakia-vat-registration-4-7-7a earliest unit25 LF[70, 70]
+The application goes in **before** the acquisition that reaches 14 000 eur, not after. Voluntary §7 registration below the threshold is allowed but commits you to taxing acquisitions for at least two calendar years. New means of transport and excise goods are excluded from the count. Non-taxable legal persons (a sports club, a foundation) are caught too.
+DEST Current LF64–64
+Exactsameoldtopic asmainunitM26: Goods14000before/2years/newmeans/excise/non-taxablelegalpersons retained.
+
+slovakia-vat-registration-4-7-7a earliest unit33 LF[93, 93]
+The §4 application is due within five working days of the day the turnover was exceeded, or the day payer status was acquired. Decision timing: 10 days for a compulsory §4 registration, 21 days for a voluntary one, 10 days for §7 and §7a. Note that §7(3) and §7a(3) were amended with effect from 1 January 2025 to replace seven days with ten. Several of the tax authority's own information sheets still say seven. The statute says ten.
+DEST Current LF82–96
+Exactsameoldtopic asmainunitM34: Allregistration/decision10vs7/deadlines retained.
+
+slovakia-vat-registration-4-7-7a earliest unit43 LF[155, 155]
+Had she bought the same ads from a **US** entity, no §7a registration would be required, but the 46 eur of self-assessed VAT and the return would still be due.
+DEST Current LF145–145
+Exactsameoldtopic asmainunitM44: USsameRC/no7a retained.

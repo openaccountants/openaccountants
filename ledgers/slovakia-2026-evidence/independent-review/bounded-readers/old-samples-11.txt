@@ -1,0 +1,110 @@
+
+slovakia-vat-return earliest unit181 oldLF[646, 654]
+OLD:| Feature | Detail | Legislation |
+| --- | --- | --- |
+| Automatic refund | If excess DPH (Row 33 > 0) and no outstanding tax liabilities | Sec. 79 |
+| Refund threshold | Minimum EUR 10 | Sec. 79(2) |
+| Refund timeline | Within 30 days of filing deadline (standard) | Sec. 79(1) |
+| Extended timeline | If tax authority initiates verification, up to 60 days | Sec. 79(3) |
+| Carry forward | Credit can be carried forward to next period | Sec. 79 |
+| Offset | Tax authority may offset against other tax liabilities | Tax Administration Act |
+| New registrations | First 12 months: refund within 60 days (extended verification possible) | Sec. 79(4) |
+DEST:Current LF67;95;130
+DISPOSITION:Refundcarry/offset/ordinaryandfastrefund retained. Old10minimum/blanket30deadline/60verification/new12month60dayrule not supported by actual79; exactnextperiod/qualifyingfastclock/audit10dayroute supplied.
+
+
+slovakia-vat-return earliest unit184 oldLF[660, 665]
+OLD:| Feature | Detail | Legislation |
+| --- | --- | --- |
+| Additional return | Can file amended return within 4 years | Tax Administration Act Sec. 16 |
+| Reduced penalty | 10% of additional tax (vs 20% if found by audit) | Tax Administration Act Sec. 154(1) |
+| Late payment interest | Still applies on any additional amount due | Tax Administration Act Sec. 156 |
+| Deadline | Before tax authority starts audit proceedings | Tax Administration Act Sec. 16(2) |
+DEST:Current LF142;151–155
+DISPOSITION:Correction/timelimit/voluntaryfine/interest retained; no4yearuniversalamendment/fixed10vs20/auditimmediatestop orpenaltyfreeassumption. Actual16/69fiveyear/restart/audit15days andECBbranch apply.
+CURRENT [151, 155] | Tax under-declared, found by the tax office | 3 times the ECB base rate a year (at least 10% a year) on the extra tax, counted daily from the deadline; at least 1% of the assessed sum and at most the sum itself. Two thirds of that fine if the assessment is paid within 15 days | § 155(1)(f), (2), (5), (17) |
+| Supplementary return raising tax | ECB base rate a year (at least 3%); twice the ECB rate (at least 7%) if filed after an audit has started | § 155(1)(g), (h), (5) |
+| Control statement missing, late, incomplete or wrong, or defects not fixed by the requested date | Fine up to EUR 10,000; up to EUR 100,000 for repeated breaches | VAT Act § 78a(15) |
+| Fast refund obtained on false data | Fine up to 1.3% of the refund | VAT Act § 79(8) |
+| Late payment | Interest at 4 times the ECB base rate, at least 15% a year, counted daily from the day after the due date, for at most four years; not charged if EUR 5 or less | Tax Procedure Code § 156(2), (6)(b) |
+
+slovakia-vat-registration-4-7-7a main unit16 oldLF[51, 51]
+OLD:The old threshold was 49 790 eur measured over **up to 12 preceding consecutive calendar months**. It is now 50 000 / 62 500 eur measured over the **calendar year**, resetting every 1 January. A transitional rule (§85kn) keeps the old regime alive for anyone who hit 49 790 eur by 31 December 2024.
+DEST:[44, 58]
+DISPOSITION:Old49790rolling and85kntransition retained historicalonly.
+CURRENT [44, 58] | Quarterly period for a §4 payer | More than 12 calendar months since the end of the month of becoming a payer, with prior-12-month turnover **below EUR 100,000** | 2026 | §77(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Historical domestic registration threshold | EUR 49,790 over up to 12 preceding consecutive calendar months; transitional cases preserved by §85kn | To 2024 | Historical §4(1), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html; current §85kn, https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Historical standard rate and registration decisions | 20%; §7/§7a decision within seven days | To 2024 | Historical §27(1), §7(3), §7a(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html |
+
+The words matter: exactly EUR 50,000 or EUR 62,500 does not exceed the respective §4 threshold, while exactly EUR 14,000 reaches the §7 threshold. A §7/§7a registrant does not add Slovak VAT to ordinary domestic sales merely because it has an IČ DPH. If a supplier wrongly states VAT on an invoice, §69(5) separately makes that VAT payable.
+
+## The taxable base
+
+**The §4 turnover calculation.** Start with the value excluding VAT of goods and services supplied with their place of supply in Slovakia (§4(15)). Exclude supplies exempt under §28 to §36 and §40 to §42. Insurance (§37), property (§38) and financial services (§39) are generally included, but ancillary insurance and financial services supplied with another supply are excluded. Also exclude occasional disposals of tangible assets other than stock and occasional disposals of intangible assets. If the threshold is crossed exclusively through §37 to §39 exempt supplies, state that on the application (§4(3)); do not assume exemption eliminates registration.
+
+Advance payments are not turnover until the supply occurs; supplies placed abroad and free supplies are outside the ordinary turnover count (FS method §1.5). The method's reverse-charge exclusion concerns supplies **received as buyer**, not a blanket exclusion for the business's own domestic sales. Purchases on which the business self-accounts are not its sales turnover. The supplier's own domestic supplies remain subject to §4(15). The property-specific advance-payment trigger in §4(1)(f), (g) must still be checked: an advance for a building, part of a building or building land can create payer status before delivery where the statutory condition is met.
+
+**The two domestic turnover triggers.** Above EUR 50,000, payer status ordinarily starts on 1 January of the following year (§4(1)(a)); above EUR 62,500 it starts with the supply causing the excess (§4(1)(b)). That entire supply is taxed at its applicable rate, not merely the excess above the threshold (FS method §2.1). Legal succession, acquiring a payer's business or an independent business part, demergers and the other events in §4(1)(c) to (i) have their own status dates. Test those facts before applying the ordinary next-year rule.
+
+**Historical transition.** Before 2025 the threshold was EUR 49,790 measured over up to twelve preceding consecutive calendar months. Section 85kn(1) preserves the former application/authority procedure for persons who reached that old threshold by 31 December 2024. The modern test uses a calendar year; historical 20% rates and seven-day §7/§7a decisions must not be applied to 2026 transactions.
+
+slovakia-vat-registration-4-7-7a main unit23 oldLF[65, 68]
+OLD:- **You must be a "zdaniteľná osoba"** (a taxable person carrying on economic activity). The tax office will test this. Preparatory acts before your first sale are enough on settled CJEU authority (C-110/94 INZO, C-268/83 Rompelman, C-527/11 Ablessio), but you carry the burden of proof.
+- **The decision takes up to 21 days.**
+- **There is no backdating.** Registration cannot take effect before the application date.
+- **The tax office can refuse on fraud-risk grounds**, but only on an overall assessment of the evidence.
+DEST:[60, 60]
+DISPOSITION:Preparatoryacts/CJEU/21days/nobackdate/fraudassessment retained.
+CURRENT [60, 60] **Voluntary §4 registration.** Before exceeding EUR 50,000, a person can apply under §4(6)(a), (7). It must be a taxable person carrying on economic activity. The authority's method recognises preparatory acts before the first sale, supported by evidence and the CJEU authorities C-110/94 INZO, C-268/83 Rompelman and C-527/11 Ablessio. Registration is effective on the date in the decision, with a 21-day decision limit; this ordinary voluntary route is not backdated before the application/decision (FS method §2.5). A fraud-based refusal requires objective evidence and an overall assessment, as explained in that method, rather than an unsupported assumption about the applicant.
+
+slovakia-vat-registration-4-7-7a main unit34 oldLF[97, 97]
+OLD:The §4 application is due within five working days of the day the turnover was exceeded, or the day payer status was acquired. Decision timing: 10 days for a compulsory §4 registration, 21 days for a voluntary one, 10 days for §7 and §7a. Note that §7(3) and §7a(3) were amended with effect from 1 January 2025 to replace seven days with ten. Several of the tax authority's own information sheets still say seven. The statute says ten.
+DEST:[82, 96]
+DISPOSITION:Allregistration/decision10vs7/deadlines retained.
+CURRENT [82, 96] | §4 application after the relevant threshold/status trigger | Five working days; identify the event and date | §4(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Mandatory §4 decision and number | Within ten days of receipt; for §4(4)(b)(2), the application and required evidence govern the start | §4(4), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html; FS method §2.3 |
+| Ordinary voluntary §4 decision | Within 21 days | §4(7), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| §7 application | Before the threshold acquisition | §7(1), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| §7a application | Before receiving/supplying the qualifying service | §7a(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| §7/§7a decision/number | Within ten days of receipt | §7(3), §7a(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Non-payer's reverse-charge return and payment | Within 25 days after the month of liability; no nil returns; payment exception up to EUR 5 | §78(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| New §4 payer's period and ordinary return/payment | Calendar month; return/payment within 25 days after period end | §77(1), §78(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Qualifying quarterly payer election | Notify within 25 days after the month conditions are met; quarter starts under §77(3) | §77(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| §7/§7a EC Sales List for reportable services supplied | Quarterly, within 25 days after quarter end; no nil list | §80(3), (5), (9), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Invoice for §15(1) service placed in another member state | Within 15 days after month-end of supply or advance; reverse-charge wording where customer is liable | §72(2), §73(1)(d), §74(1)(k), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Ordinary non-payer invoice retention | Ten years following the year concerned | §76(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Deadline ends on Saturday, Sunday or public holiday | Next working day | Tax Procedure Code §27(4), https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html |
+
+After an application following EUR 50,000 turnover, a later immediate-payer event before year-end must be notified **without delay**, giving its date (§4(5)). If EUR 62,500 is exceeded within the initial five-working-day application window before the first application was filed, the special application rule in §4(2)(c) applies. Do not submit an application on the assumption that status can wait until next January.
+
+slovakia-vat-registration-4-7-7a main unit44 oldLF[160, 160]
+OLD:Had she bought the same ads from a **US** entity, no §7a registration would be required, but the 46 eur of self-assessed VAT and the return would still be due.
+DEST:[145, 145]
+DISPOSITION:USsameRC/no7a retained.
+CURRENT [145, 145] If the actual supplier were a US business, the same facts produce EUR 46 tax and a return, but no §7a registration trigger. Once Jana is a §4 payer with the number and documentation required by §51, an equivalent later EUR 200 service used wholly for deductible activity produces EUR 46 output and EUR 46 input VAT, a zero net effect and EUR 200 cost. This later-service credit does not automatically reopen the January return. Any claim for pre-registration inputs must separately satisfy §55(1), (2), including its first-period, expense-year and general deduction conditions (§49(2)(b), §51).
+
+slovakia-vat-registration-4-7-7a earliest unit15 oldLF[47, 47]
+OLD:The old threshold was 49 790 eur measured over **up to 12 preceding consecutive calendar months**. It is now 50 000 / 62 500 eur measured over the **calendar year**, resetting every 1 January. A transitional rule (§85kn) keeps the old regime alive for anyone who hit 49 790 eur by 31 December 2024.
+DEST:Current LF44–58
+DISPOSITION:Exactsameoldtopic asmainunitM16: Old49790rolling and85kntransition retained historicalonly.
+CURRENT [44, 58] | Quarterly period for a §4 payer | More than 12 calendar months since the end of the month of becoming a payer, with prior-12-month turnover **below EUR 100,000** | 2026 | §77(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Historical domestic registration threshold | EUR 49,790 over up to 12 preceding consecutive calendar months; transitional cases preserved by §85kn | To 2024 | Historical §4(1), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html; current §85kn, https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Historical standard rate and registration decisions | 20%; §7/§7a decision within seven days | To 2024 | Historical §27(1), §7(3), §7a(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html |
+
+The words matter: exactly EUR 50,000 or EUR 62,500 does not exceed the respective §4 threshold, while exactly EUR 14,000 reaches the §7 threshold. A §7/§7a registrant does not add Slovak VAT to ordinary domestic sales merely because it has an IČ DPH. If a supplier wrongly states VAT on an invoice, §69(5) separately makes that VAT payable.
+
+## The taxable base
+
+**The §4 turnover calculation.** Start with the value excluding VAT of goods and services supplied with their place of supply in Slovakia (§4(15)). Exclude supplies exempt under §28 to §36 and §40 to §42. Insurance (§37), property (§38) and financial services (§39) are generally included, but ancillary insurance and financial services supplied with another supply are excluded. Also exclude occasional disposals of tangible assets other than stock and occasional disposals of intangible assets. If the threshold is crossed exclusively through §37 to §39 exempt supplies, state that on the application (§4(3)); do not assume exemption eliminates registration.
+
+Advance payments are not turnover until the supply occurs; supplies placed abroad and free supplies are outside the ordinary turnover count (FS method §1.5). The method's reverse-charge exclusion concerns supplies **received as buyer**, not a blanket exclusion for the business's own domestic sales. Purchases on which the business self-accounts are not its sales turnover. The supplier's own domestic supplies remain subject to §4(15). The property-specific advance-payment trigger in §4(1)(f), (g) must still be checked: an advance for a building, part of a building or building land can create payer status before delivery where the statutory condition is met.
+
+**The two domestic turnover triggers.** Above EUR 50,000, payer status ordinarily starts on 1 January of the following year (§4(1)(a)); above EUR 62,500 it starts with the supply causing the excess (§4(1)(b)). That entire supply is taxed at its applicable rate, not merely the excess above the threshold (FS method §2.1). Legal succession, acquiring a payer's business or an independent business part, demergers and the other events in §4(1)(c) to (i) have their own status dates. Test those facts before applying the ordinary next-year rule.
+
+**Historical transition.** Before 2025 the threshold was EUR 49,790 measured over up to twelve preceding consecutive calendar months. Section 85kn(1) preserves the former application/authority procedure for persons who reached that old threshold by 31 December 2024. The modern test uses a calendar year; historical 20% rates and seven-day §7/§7a decisions must not be applied to 2026 transactions.
+
+slovakia-vat-registration-4-7-7a earliest unit25 oldLF[70, 70]
+OLD:The application goes in **before** the acquisition that reaches 14 000 eur, not after. Voluntary §7 registration below the threshold is allowed but commits you to taxing acquisitions for at least two calendar years. New means of transport and excise goods are excluded from the count. Non-taxable legal persons (a sports club, a foundation) are caught too.
+DEST:Current LF64–64
+DISPOSITION:Exactsameoldtopic asmainunitM26: Goods14000before/2years/newmeans/excise/non-taxablelegalpersons retained.
+CURRENT [64, 64] **Goods acquisitions under §7.** Apply before the acquisition taking the calendar-year net total to EUR 14,000 (§7(1)). The §11(4)(b) below-threshold exemption requires the threshold not to have been reached in the preceding year or the current year. New means of transport and excise goods are excluded from that count (§11(6)), but have their separate tax rules, so excluded from the count does not mean tax-free. Voluntary acquisition taxation below EUR 14,000 is allowed but binds the acquirer for at least two calendar years (§7(2), §11(7)). Section 7(4) avoids a duplicate application where the person is already registered under §7a or §4(7); it does not replace the acquisition-tax test.

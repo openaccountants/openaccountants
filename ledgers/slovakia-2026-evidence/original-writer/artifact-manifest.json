@@ -1,0 +1,787 @@
+{
+  "role": "Writer evidence manifest; official raw/reader references are separately pinned in source-scopes.json and not redundantly copied. No independent review or country readiness claim.",
+  "date": "2026-10-29",
+  "count": 156,
+  "artifacts": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/sk-corporate-income-tax.md",
+      "bytes": 83129,
+      "sha256": "ca917df28f9efd9ffaf6c8091f61a4226d382f9761a8a125cd46fb72cb8f546e"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/sk-cross-border.md",
+      "bytes": 65652,
+      "sha256": "5ac2496461062ab1053240024ac922962aace8585165663b67975f7275e16f39"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/sk-payroll-social.md",
+      "bytes": 88133,
+      "sha256": "260890d206f3e28428a05834f6dc7e0cadc818f8bad695d6c1e98288207250f2"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/sk-transfer-pricing.md",
+      "bytes": 78158,
+      "sha256": "870b440c80bbd5a812c7e77ba6110e91e2200c1159f749663a65c4258363a40f"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/additional-arithmetic-controls.json",
+      "bytes": 14666,
+      "sha256": "0b2a1d9275bb223b223b5f633ce9272c042dcda2c25dfae9f1db9f5abb0cbb01"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/additional-controls.py",
+      "bytes": 7378,
+      "sha256": "fde75947768f08df4bc9fe2a69ed0aef04d4fa4661ececd1f9d008f87f05096e"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/checks.py",
+      "bytes": 6000,
+      "sha256": "ac00fd83275dc28889c263e1873c1550e10ab35a5f075466f8d8fc5bd205f747"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/cit-ledger.py",
+      "bytes": 7633,
+      "sha256": "703c5b923f536d1d804453413ece6f9aae2517fe43682905a82594fe869c105a"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/cit-sources.py",
+      "bytes": 4030,
+      "sha256": "7b30f1023eb479f0b61ca41829fb293795a4dfcd8c93fb99c26834571a95118d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/current-guide-identities.json",
+      "bytes": 2033,
+      "sha256": "060e9388a735f6f5f47285f57396635d565fafc7465e3929bbc4f63848787213"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/dated-comparisons.py",
+      "bytes": 1584,
+      "sha256": "918d643b950ed8d384c518761132088c2c622ac1191f681a06aff1dd050d847e"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/dated-operative-comparisons.json",
+      "bytes": 35865,
+      "sha256": "66ccfba4616ab44c8d74ce3255b6a5893fe8154466870ffad12100ef32170691"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/derived-article-provenance.json",
+      "bytes": 61209,
+      "sha256": "310c47a4de2d8facc0e3349baa1835f3a3117603284b23999c5a4e0bb1bcb386"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/final-precision.py",
+      "bytes": 1782,
+      "sha256": "8385c24e642bbacfb3563012f200ee97d272b8258c36781034ff83131c0aac3f"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/final-writer-checks.json",
+      "bytes": 302467,
+      "sha256": "16d19a1b7bc2607e5cc4fc734f2a8e86ce05324163301441ca2af35988b957f8"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/finalize.py",
+      "bytes": 6882,
+      "sha256": "dbcab4e30302090de73696bc85e45e4b604899b26c1c3ba7944987edec355891"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/future-article-comparisons.json",
+      "bytes": 3243,
+      "sha256": "1e139dbd2a66c74246976d8b92aa872124baa518e038e6f84ae7213612fcb4be"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/guide-successors.json",
+      "bytes": 508,
+      "sha256": "6a281724b775811172256c3b15f09fe2a807703217254bbe4b83ed6b9f7672e8"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/old_topics.py",
+      "bytes": 5360,
+      "sha256": "734ab6bd7f64a14c8d85901c90f69a475efa2de5d669d324abb4217bfc928803"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/payroll-ledger.py",
+      "bytes": 7553,
+      "sha256": "1197beb0889a1adec63a561dabdadf04dd62f11bcc65434e2b89365d81898c52"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/payroll-sources.py",
+      "bytes": 4312,
+      "sha256": "f7031ff275c80853d2d9c01c52c9b68de29e8ab7667ff6f2349aa65a96d8f2ac"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/pit-ledger.py",
+      "bytes": 12867,
+      "sha256": "576b48465cb13c59b025efcc8055c00b736c0eaa0cf4a889ac49a0d722973e4b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/pit-sources.py",
+      "bytes": 9129,
+      "sha256": "94f0aa952b9a3e96ca0ffbaaa26edeafbdf12777113a1fdb4304376f433bd666"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/selected-extraction-map.json",
+      "bytes": 4566,
+      "sha256": "17a9b0cd5f759f0eba4d5599ab13b20643e78941b733c9528e3e34fed9ab2f2b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-136a.txt",
+      "bytes": 150,
+      "sha256": "e70a93acc5631693ef740953fc14c7e9963884439eb33a5aa33388dabdfdbb82"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-19.txt",
+      "bytes": 1305,
+      "sha256": "92057c53c9d8ac04686dc983fe2b6e1a148401f4794cff4949dc8a5ee20c49b5"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-21.txt",
+      "bytes": 8292,
+      "sha256": "79b350c89f6fb5edfe5d1437f33048135a78ca5246f3a96a0c7f8e3ae18b3458"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-231.txt",
+      "bytes": 7832,
+      "sha256": "b738fe7f4f0acd8a406cf41c2694e6f4cb9b5a1b3394329b33ba27653964c748"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-293gma.txt",
+      "bytes": 3542,
+      "sha256": "ae746b3c0bf4c70c15666eb1f6c690c0b05ca42f255eaf965063f156de6e1217"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-5.txt",
+      "bytes": 675,
+      "sha256": "aa26222b9222c6bb91ae16ce22ae66ae9d29c9925a79b0cd1e988ae2e1a8f1a3"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/12-article-43.txt",
+      "bytes": 26878,
+      "sha256": "ec0f1b74906469f62aba09360254ebcc6957f84573f4b4d94fbfc4ab55b0192c"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-1.txt",
+      "bytes": 612,
+      "sha256": "4bf9cc10f6d7d30169560c798b446ead7f145b2aa783037dcf20505b85cc352d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17.txt",
+      "bytes": 50861,
+      "sha256": "b1a4e13e36c85b1be4725c4297a15752edf412b1ac5dd58c96be6bd73ba2d801"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17f.txt",
+      "bytes": 6480,
+      "sha256": "0f2f4d7fd0c123ca49abda775b6982b364f3708e9a11506364760b86454e83ba"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17g.txt",
+      "bytes": 3911,
+      "sha256": "88890797b1d490b7c42f413ab029b557e68fe81c7c9c5f249a3a5bb8d44e7665"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-19.txt",
+      "bytes": 25951,
+      "sha256": "905721898af88cb28b32d6d705cf8fdedd5cd1740bb07ef3eb5933c8e0ac510a"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-21.txt",
+      "bytes": 6911,
+      "sha256": "1fb47c2e638c405314771708ee8560edfc6477b446afb34af2214a146568a704"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-22.txt",
+      "bytes": 10530,
+      "sha256": "a4a30aec05d3b89e3b6633c61193a032d1aa262a41bc2f52f809f7e5900abbc1"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-25.txt",
+      "bytes": 5442,
+      "sha256": "e1d2fcab6fdd111d422e66c81ef0be0bfbb5461a32385f7cc82073c9b32aff44"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-30c.txt",
+      "bytes": 6632,
+      "sha256": "6d4f05f6a893a1556c25f13b305de1f920c5d67f6bba54dc2b0d4925f7ea679c"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-36.txt",
+      "bytes": 5845,
+      "sha256": "39ad7d77ce1bf191c31f9bc502289176bb02d0251bf12eb31eb7e454d1f8e567"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-43a-TOC-rejected.txt",
+      "bytes": 159,
+      "sha256": "a497cbe9e73d282d6b3e9207a2f8f7160f8fc95667c877b4d1260c3697ee62b3"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-43a.txt",
+      "bytes": 1777,
+      "sha256": "a217d6f9415572a2ed192027202a7b7099fdd29ee07c86937f8a5ac80a5815f0"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-51eb.txt",
+      "bytes": 695,
+      "sha256": "a8f0f301048bb45880a0a276d807a9f0844d6979c0b07ef7f11b68f8941cad10"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-52zzr.txt",
+      "bytes": 360,
+      "sha256": "e60d37b8d6e0ba0fe21cfac4eba1c4413b73556fa9edfd45dc8aa46bdf838218"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-52zzzf.txt",
+      "bytes": 996,
+      "sha256": "c988ef06183d8afcfd549dbff053ce9445c468501fa45d08c28a39369ef2ada3"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/14-article-11.txt",
+      "bytes": 8789,
+      "sha256": "c8df7a47173871329e1643014217412f54f986441a22f9668a75d9e558a45fba"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/14-article-52zzzm.txt",
+      "bytes": 262,
+      "sha256": "b56adc915d4773c3f774ecea62bc53904acadeea3c1b52e65a506aa4b4afbe1b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/16-article-27.txt",
+      "bytes": 2343,
+      "sha256": "4671256ae4c06478fb95305b2bc1322ebc5cff829f9fff1919dd0c602b8167a1"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/16-article-4.txt",
+      "bytes": 4318,
+      "sha256": "efc39b86553904b11d8200b35e45b74bcbaecbb38e3319e91b7a1d7bcc9a79ca"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-10.txt",
+      "bytes": 1881,
+      "sha256": "f6991f71ee5aaf20ef1be66354962a2706cab376a0cd5ca7f9401bf4bef60368"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-28.txt",
+      "bytes": 190,
+      "sha256": "577be22ec8345f5f514af3cc4600fb847d8df985c94019fb364466f482523e9f"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-29.txt",
+      "bytes": 1089,
+      "sha256": "f649a7144a79fa89a56e566e90520c7e5b7556d27e899a0fb7b5432319b2eb84"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-31.txt",
+      "bytes": 617,
+      "sha256": "107527a73c16fedcec7d95067ee4d0b1a063d7da4ab576da77ca380e0a569185"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-39.txt",
+      "bytes": 1809,
+      "sha256": "7749a4b9b0806fa9699368fba4d7c1d52ae5065eab585570d8d0985479601674"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-41.txt",
+      "bytes": 663,
+      "sha256": "aed601e11acb4d2470c5e227d197cfe69ef89a425fe74608e51307af0dff296c"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-43.txt",
+      "bytes": 6753,
+      "sha256": "98c12314cd3b8ba3f354ee65e65f94114acfce1f226af91caab1360dcdc25c1f"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-46.txt",
+      "bytes": 760,
+      "sha256": "6e8398247776d862befecfa22cf48b1ea7c6e0c5d4e74230d94f1b5db3794d98"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-47.txt",
+      "bytes": 5414,
+      "sha256": "3938ea89f1fd8f87a6dc9789cfd3d03c7d61af6005d9ac13b9556e4d8aa65af8"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-54a.txt",
+      "bytes": 2896,
+      "sha256": "1285bbe39e3135b20dd865172716c5fb7de17a984fedcd7c92d17667ca8cf735"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-54d.txt",
+      "bytes": 2633,
+      "sha256": "0a76cdb7f2319cf16dbf61a9b783b2ea879683017e09b7644c45bb0062331f3b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-55.txt",
+      "bytes": 3326,
+      "sha256": "36f2ff3908b3fcc42b4197be98b5bd77e97d9b865a1b93a6aadd206aae5961d2"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-5a.txt",
+      "bytes": 755,
+      "sha256": "8db6b2b9a71d312e7da253186d7738271bed3d9e421eef4a2d39438d28811fb9"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-68cb.txt",
+      "bytes": 4220,
+      "sha256": "9c5a8dc6d81a6bd7bb69082db5fe368470f8f9204c1fc4d8507913b86ddefbbe"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-68f.txt",
+      "bytes": 5692,
+      "sha256": "762799829006c032279f226e01106397fd34c791fd6d28b3e82819a31687e5d0"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-68g.txt",
+      "bytes": 15639,
+      "sha256": "817b66dcfd2838080af0e415ed9a863405c1a64052b230aeafa0ebe05599885f"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-69a.txt",
+      "bytes": 3542,
+      "sha256": "f6475975f48c9d56678977cc2111c932ac062374f9a10db58fbd7c1134ca380c"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-70.txt",
+      "bytes": 7212,
+      "sha256": "fa43016c29ad9ebe34ea0f226bf7cce36a7eaa3f070c0e04a58ba5f94b633909"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-72.txt",
+      "bytes": 3242,
+      "sha256": "7216ec63b20f596b2b1f683ecb24e2832b3cc28793329ae97f953a56ab645ae3"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-73.txt",
+      "bytes": 1360,
+      "sha256": "bdf6ee0403b4931b8f08ae6b7acde6dd8bc4fdd19338037bcf3517a5a16c462c"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-74.txt",
+      "bytes": 5172,
+      "sha256": "2ff82cc27c64870028f7580914798cf29a358abc3b89a8139afa0c4847931481"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-76.txt",
+      "bytes": 2553,
+      "sha256": "4bdb59299a0e230d8cf717b60a798fc63e1de062e4def838e4be980e1cd2a4df"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-8.txt",
+      "bytes": 5417,
+      "sha256": "111c8e71f0f06ebeb4430d255684e7917b6304c2ffc3e5e2bf0679ff82e3dda8"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-81.txt",
+      "bytes": 5706,
+      "sha256": "7b4d6d2644479d8636625beff7b4d1799306e0a24334d481cabe9f09b655e73d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-82.txt",
+      "bytes": 1467,
+      "sha256": "29a528dc77b42cccb252bb8f44b6cfbdfca4c7094c157abfaf7e76f110d4d6e0"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-85kn.txt",
+      "bytes": 2584,
+      "sha256": "06960130941cd01501957febbfb2e84ea8068dc7c0cb5c61539797f3b5f24d68"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-85kp.txt",
+      "bytes": 1394,
+      "sha256": "37f566c705317389819264b07dfc7bf5d794fa3b2b9c1379f08665908d06bd31"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-9.txt",
+      "bytes": 1569,
+      "sha256": "3083e3d9b62b5767e4c487d784a5928f6eff670440c432e084411ec351789ead"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-12.txt",
+      "bytes": 2097,
+      "sha256": "53a29e12e25fc345627299a59b378bee72e8f7fba8f353de2add9971b01b9d9d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-13.txt",
+      "bytes": 7007,
+      "sha256": "e74cbe6c9395256c95f1db08ce036c1c8ea6dfc9f785c63e67db90ec8882206e"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-13a.txt",
+      "bytes": 2502,
+      "sha256": "bebed623470f16e99f523fe0766173772f7c8085cfcd9d7080eb8a3c0a311a01"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-16.txt",
+      "bytes": 7723,
+      "sha256": "49b643329f02a523f1a4817a12bfa405f15750e50e17a95c64ad7f1b5c6b1810"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-16a.txt",
+      "bytes": 2051,
+      "sha256": "a0d082786ba531804e0a57960f624c1fe56c4a3803586463c0dcd88fc66a8a02"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-17.txt",
+      "bytes": 3008,
+      "sha256": "e6f28900fc14b8c04f1439f11b8d61b51c8bc27014ddca3458eb74bc0e505633"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-18.txt",
+      "bytes": 2441,
+      "sha256": "fcfba7df6b4605b47b47d4a2da06f0dd6044a66091492a7458c0af974d2378a9"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-19.txt",
+      "bytes": 17611,
+      "sha256": "fbb4bfc80acbc1fd0e9e1929e3c261320acf097553479060d8f01ceff01037a6"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-20.txt",
+      "bytes": 3764,
+      "sha256": "e08877891c3a4d7f119d2287468fcb168c32f043e3c48455f624c8327edbeeb4"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-26.txt",
+      "bytes": 1507,
+      "sha256": "332506cc4d0891f15efe4ec500321a6bbe647fad6c060ef96244c7601cc69ade"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-38ezk.txt",
+      "bytes": 1207,
+      "sha256": "5a75a9d330b12fea05cfa9967fffd373b343640f6c473b8644a52726b9cb18ac"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-38ezl.txt",
+      "bytes": 1376,
+      "sha256": "1737434ccbe45b98de4b93cbf18a4a424e56898195026ffdbb0fa704d7baf9e6"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/20-article-27.txt",
+      "bytes": 1546,
+      "sha256": "5fb127b445323d5e9c90064da251f0ae62f5eda29d6f8f49d47d7d4b588604cc"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/20-article-79.txt",
+      "bytes": 4991,
+      "sha256": "fd03a71f7c9c743ccd00b3bd5f9d61f988be0196a89cd22061f9fa952124fb83"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/ITA-20240101-web-line-map.json",
+      "bytes": 8007,
+      "sha256": "caa6445278649ce56149223da124e85b31ea9d80b0f037ee72aaed75049b7112"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/ITA-20240101-web-response.json",
+      "bytes": 11627,
+      "sha256": "fda7e70985ae15040b31a149e9a5f5e461e807abc728716f6444909721d54189"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/ITA-20240101-web-response.reader.txt",
+      "bytes": 9568,
+      "sha256": "d0b8d7bd0a003e4196f61046d1bb1c547a29d48e24047ed26daa5f1c2277df20"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/ITA-20240101.failed.json",
+      "bytes": 307,
+      "sha256": "7c0a55d660d775d00887af2c99b2157775b16057a86e2aefbe00292c3e7ce79d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/fs-thin-cap.txt",
+      "bytes": 12698,
+      "sha256": "6f6e546382e71e89f89d15d1a5b7c686d53cbb7910c34c513969f4b0a07538e1"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/intrastat.txt",
+      "bytes": 46638,
+      "sha256": "274630c931fa6b4c511fa465775ee773c4c8aa52add8d27e3f74ff7b6922342b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-corporate-income-tax/coverage.json",
+      "bytes": 4026,
+      "sha256": "63dc8eb0cbf1eb9f80ff2953f2baeb91ad69d6b5c085517f6e2a3dde526013a3"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-corporate-income-tax/old-topics.json",
+      "bytes": 54717,
+      "sha256": "e3f481a372e44b59545c36905ade9660e16586f5eb56040bf6b169ad76799d4b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-corporate-income-tax/rows.json",
+      "bytes": 61550,
+      "sha256": "b03ec8f1033e95ed674f14c6bd9cc9d767231878b661e2b0bafb931b96c0ca2b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-cross-border/coverage.json",
+      "bytes": 2571,
+      "sha256": "bfe9c9ab3cecd08169be4d3cb6045daee9fb6c4d949e213468237be1d759e642"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-cross-border/old-topics.json",
+      "bytes": 58359,
+      "sha256": "489383494ede344694ae30ea256cb6a5638605f46b3577bdf452925724fa1834"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-cross-border/rows.json",
+      "bytes": 43386,
+      "sha256": "052e6f63fe60e4d447fa23b365e33d36033520d79c4751020c13453d2bbc706d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-payroll-social/coverage.json",
+      "bytes": 3148,
+      "sha256": "3bf1d13c38097fdec8f00219270b40fb33bb17ade3c917d507fbd0d8a7365fe7"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-payroll-social/old-topics.json",
+      "bytes": 59471,
+      "sha256": "47de47b26fc6f50d11fa8db626239e387b60472c61161d980947f3c29693aa4a"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-payroll-social/rows.json",
+      "bytes": 63265,
+      "sha256": "be8432272d68678c1b14635d7f8fd4271898a05efa5df727c23926fb27ad4d80"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-transfer-pricing/coverage.json",
+      "bytes": 2840,
+      "sha256": "e8a3dde44f2aedf1920f20ef08375503d61e13e01377c444c2b1fc8e19f29233"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-transfer-pricing/old-topics.json",
+      "bytes": 59659,
+      "sha256": "69a0e2edf615c30e1af8a82b079bda802ec02cb8f56c18f17b2cfb80454bd66d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-transfer-pricing/rows.json",
+      "bytes": 56203,
+      "sha256": "1033bf98ae45094ee3618e1181375a8f203bfef0fe3e22dbca4f27de888fab60"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-pit/coverage.json",
+      "bytes": 3983,
+      "sha256": "f745b81c019bf1f16d5133e7647aaecaf7ca0e6e31d3990e459aed7865da9512"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-pit/old-topics.json",
+      "bytes": 83322,
+      "sha256": "654b8bc9315742695aa754c328db8ef34df7997e14104fad0c9424ab205d4797"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-pit/rows.json",
+      "bytes": 62241,
+      "sha256": "24384bf8ad234fcd130671f208c4fa7a183c698116cf59ec3b72930a07adaf36"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-registration-4-7-7a/coverage.json",
+      "bytes": 2208,
+      "sha256": "2afe235c6589f2cd67d24f29210acfb4c149abf1f14cef4b9a2b771de28806b5"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-registration-4-7-7a/old-topics.json",
+      "bytes": 85742,
+      "sha256": "c61589979dd64ae2a6fe186ff64106d99fbb60ef1bdcf6700c00e857227529dd"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-registration-4-7-7a/rows.json",
+      "bytes": 46157,
+      "sha256": "98d5f20e0f3890858613c5aa5f471cfb3c55209fded5803b221887b6950ca29d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-return/coverage.json",
+      "bytes": 2909,
+      "sha256": "806c07398d5406fb144594575174962868d2b26afe9a4cef2f9192507ec8966c"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-return/old-topics.json",
+      "bytes": 188361,
+      "sha256": "bd8bfa998a9717ca00613af73002a20f1071d6234c621804338be2444e6e70c5"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-return/rows.json",
+      "bytes": 68884,
+      "sha256": "3727a2a1d692f6619761fcd353f20969c870d2934f7c2261c79bd84508e57bed"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/source-quotes.md",
+      "bytes": 773408,
+      "sha256": "e7745f2cacf5edd87f1d125745780d395c103461cb77fde4894c4a17d50bdcee"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/source-scopes.json",
+      "bytes": 987498,
+      "sha256": "8ea14c129b5c6ff948b4b8f30dc8f9bd59daeadacc285fc842a41be5f925985b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/tp-ledger.py",
+      "bytes": 4965,
+      "sha256": "cb349789bfb47c9cc9e51a13f5f250d7e3a290e5799c17f4e40b31b557d30126"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/tp-sources.py",
+      "bytes": 4245,
+      "sha256": "bd4ee0af0808fcf5b371cab5419ff54464e77de24dcc49dce94ac5c53a84a528"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/vat-earliest.py",
+      "bytes": 13777,
+      "sha256": "d65542967177f1c0364d0f55704b2cb35f193670dcd55cd8eb25e0a4a527e00a"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/vat-ledgers.py",
+      "bytes": 15482,
+      "sha256": "481ae77b650ae605e6bac090780f39751413d99508918a55e235951cdd5826b7"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/vat-sources.py",
+      "bytes": 5117,
+      "sha256": "2431ac737a64040582189faecf7e9edda7e4240fd74ad7e18a153776bb1ec3e0"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/writer-checks.json",
+      "bytes": 1507062,
+      "sha256": "ed55f09b56bf41e0a28813e6ea6cf2ef25ff35d107281dc592b76989e5f40b43"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/writer-progress.json",
+      "bytes": 18360,
+      "sha256": "2116471aa0f756e7dfe6c8726d5bb3c281ee838e542f8f6a5b916a6bf431da70"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/writer.py",
+      "bytes": 5906,
+      "sha256": "248701046b54ea7144c0cb2f751e67e39586660f2e0f0338ba570d785d42b00f"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/xb-ledger.py",
+      "bytes": 5147,
+      "sha256": "86986459f71927ed4b8cf4d72d2dd911a6749a549516d1a906bf74b28dad57bf"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/xb-sources.py",
+      "bytes": 1528,
+      "sha256": "0cd4dd4f6a1b6d131690ce77e49ca6ce4a0bb250079baebbb114281b034bae1b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-pit.md",
+      "bytes": 105454,
+      "sha256": "36fe4cd112988b7bda900e4ac9b956cccb60a6a6af688c1648821728592df46b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-vat-registration-4-7-7a.md",
+      "bytes": 80138,
+      "sha256": "4e34d11151db8982566a0437b06363cb8924a9a75b0ec51a69e3a8b8007c2818"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-vat-return.md",
+      "bytes": 157921,
+      "sha256": "970986b28ffcefa4ad67f3015b7752700e47c09cfa419e3644eaf1311fcda0c9"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/EU883-route-receipt.json",
+      "bytes": 203,
+      "sha256": "722e6bc87ed30ed9dbb3d85a8f97533f29b41d59e043a8cd4d50bc0c89e3cb3f"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/EU883-web-failed-body.txt",
+      "bytes": 409,
+      "sha256": "5d3306c0933ef0d140902f1a714dc667f5abbe5abf9fee63e466971e54f60a6b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/actual-read-sources.json",
+      "bytes": 6192,
+      "sha256": "4e0867f199f0aaef4cd00404c6dda543fba882805e8636a389badcb7bcb25f0a"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/exact-before.json",
+      "bytes": 639,
+      "sha256": "75e6c174774dcd7e632b81fbaaf0c362c881cc66b76c42ee166433e1a8107a03"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/filing.txt",
+      "bytes": 921,
+      "sha256": "29f6bb52202dbe03a2cee8da7914fb16ec11221f9c3e4f4d00e6e4eac958eb26"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/options.md",
+      "bytes": 2413,
+      "sha256": "7277b749b45e7bdc6551dee73a1ba9b8af72c2a651c8d83a1e666d482a6aa13b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/root-after-guide.md",
+      "bytes": 46033,
+      "sha256": "be47136e91e27d9e14a8b07e22f5c2e2a4bb4fb3e601c491a4daf22b1d50b98a"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/root-before-guide.md",
+      "bytes": 45712,
+      "sha256": "d61ef8fe971f677f85fc080e5ecaac69dbe71c055a4a7f43284ce62a6c8a4ea9"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/root-check-results.json",
+      "bytes": 1863,
+      "sha256": "bb2d1975df33591db826e4b1591f6fd96ebfcc126e38d4e418a1e987958a2397"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/root-guide.diff",
+      "bytes": 5789,
+      "sha256": "7aebff2f1352ba2655d511e9f6daab1c8169972c33da1afd140bcc7d65dc8088"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/root-repair-proof.json",
+      "bytes": 703,
+      "sha256": "99a2bf55947ffe69607ce8f5974fdef5d7a85c6743e99cc1b24971b819b13f75"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/root-selected-option-before-edit.md",
+      "bytes": 512,
+      "sha256": "8b8a20eaf9037c5c98e7c4b80aa4db81b0eeef71062d6fe0397bcf777e71ccd0"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/settlement.txt",
+      "bytes": 1387,
+      "sha256": "e29351c69deeabf6ff3c1cec22dba08df19a17efe7e7c5cd74073d05cc62632f"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/typeA.txt",
+      "bytes": 2512,
+      "sha256": "37dad459a983df996db19d333c0906143f04fa9d073aa3fc5f1f5d234a01be67"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01/writer-successor-binding.json",
+      "bytes": 457,
+      "sha256": "693e2efaaffe7418236b1ef987abc05100889271f40e1926475205253d71f620"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/VAT-form-visual-read.json",
+      "bytes": 702,
+      "sha256": "cc31640c65b4e92edc2f1c190faaf18fd5a9f402566916735ea18815c4621568"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/original-example-checks.txt",
+      "bytes": 59,
+      "sha256": "6d2a4e790b7fedaa49fecc8a3272495596735ea1897349dd6ecc5a8fd1cfc648"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/payroll-map-precision-predecessor-rows.json",
+      "bytes": 5240,
+      "sha256": "274136d0e8d0afe63ed6d8b103b572d603e9301b87ebe3c67a5841773ad6c9fc"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/report.md",
+      "bytes": 4309,
+      "sha256": "6e499540305b9aec014aaa303a41407392486ece1445f41856ad03a18d12dc4e"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/retained-review-references.json",
+      "bytes": 1942,
+      "sha256": "163bf350324865f713d42694a0ed98dde81404f3ab772257f7e4db32b1ec69f2"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/seven-guide-ledger-inventory.json",
+      "bytes": 16710,
+      "sha256": "234267d958747778852717bfa1b73427e4038e765f9634def00ade8d4853cfd8"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/writer-failure-history.json",
+      "bytes": 1704,
+      "sha256": "9832a11758613f08857f73953570cd48c32f98ff122e319148d8e0420e1a6a18"
+    }
+  ]
+}

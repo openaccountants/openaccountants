@@ -1,0 +1,122 @@
+[
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-vat-registration-4-7-7a.md",
+    "sha256": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30",
+    "bytes": 32474
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-vat-registration-4-7-7a.md",
+    "sha256": "4ee70196b6bd6429a5ed8446f806ea5e724ab53130e218e290208392cb04bb7a",
+    "bytes": 82705
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-registration-4-7-7a/rows.json",
+    "sha256": "208765f92c207f276405a7fdd2b53ba3bacec51280c8fc1eb46e14d9c5124d72",
+    "bytes": 46968
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-registration-4-7-7a/coverage.json",
+    "sha256": "7273a3c61a8841b28e7da3c41e1c9121fcb3c20183c5231b766c7e48e4df7a0c",
+    "bytes": 2371
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-registration-4-7-7a/old-topics.json",
+    "sha256": "c61589979dd64ae2a6fe186ff64106d99fbb60ef1bdcf6700c00e857227529dd",
+    "bytes": 85742
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-payroll-social.md",
+    "sha256": "62143a36b7cb4be6637db6b163b1cd727b1a8ee272bcc8cb750b55d3cb103f38",
+    "bytes": 49917
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/sk-payroll-social.md",
+    "sha256": "06fa28262f6b43bf0e729c7ce7e4712db6b1cae806e205be89c6cfdb2a49f680",
+    "bytes": 89186
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-payroll-social/rows.json",
+    "sha256": "0e1c8ef6ba7bd62e25ac1331d552b8770cdbcb8cebc3e1225ac14d4dea351c4e",
+    "bytes": 64122
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-payroll-social/coverage.json",
+    "sha256": "2b85720dbaacf23b8f2ca14ee818135b06894b0a9542401f10ad1638b1e5db2f",
+    "bytes": 3210
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/sk-payroll-social/old-topics.json",
+    "sha256": "9bc15f80e022da00c620123df6cf70b585f37533af7e9c54c64ae1cac86cdded",
+    "bytes": 59765
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-vat-return.md",
+    "sha256": "32fe5026c3adc40bfc5d96e824b7b0093d484c7f879fd7607ab573ddc43cdf77",
+    "bytes": 50351
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-vat-return.md",
+    "sha256": "41e30b273a37986c6993d6d1531ed84689237c2a78f9c9fba8e5e58826ec6aa1",
+    "bytes": 158084
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-return/rows.json",
+    "sha256": "30a2f9a4db3f3431708047954c7ffb005aa516ff0b9f16d0072a0ad5ef2c43f7",
+    "bytes": 69047
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-return/coverage.json",
+    "sha256": "8a9dd1d8f5d19473ddd3c6079b458d9b59876f76855ec6d7cd9d4f976c66cefb",
+    "bytes": 2909
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/slovakia-vat-return/old-topics.json",
+    "sha256": "4a57f9215bdce1358d53752a301993aae2c51a26ca8eb05c84394a20e526e184",
+    "bytes": 188540
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/source-scopes.json",
+    "sha256": "af082a12f5afe33b81432094f61454676cb631516f14a6dfe62ded4ff49f0ef8",
+    "bytes": 1013520
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/source-quotes.md",
+    "sha256": "7e8590f812a292d763df7ceaf28b51e8b95a39c5a66633198d2ec73981d4441a",
+    "bytes": 794853
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/pit-sources.py",
+    "sha256": "1d4d604aaa727b6cbe1131f15cc0cd6e11cb863a916e77fe9b353362fcc53be3",
+    "bytes": 9137
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/xb-sources.py",
+    "sha256": "1e9dd6fa9f4e19158e3c6d0097088a7417439cb88cc96a0e899aca95726de8d6",
+    "bytes": 1536
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/tp-sources.py",
+    "sha256": "6c8792019da8782a9a6e7133ff60975c2cbe4a13ec8bd492f8441d630ff61ecd",
+    "bytes": 4245
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/payroll-sources.py",
+    "sha256": "a578a830e92663d66c7fa3ef69ca60030c11a13eaf71ff1fb9fa0602090395ce",
+    "bytes": 5956
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/vat-sources.py",
+    "sha256": "14254587f3a3215ffc015d76168efb15f36bb77681679f4a5516527d0a087033",
+    "bytes": 5617
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/payroll-ledger.py",
+    "sha256": "97fa9d1ac7c4d013fafb67c7887a2497802f0e466ada72051f673c7cb849d619",
+    "bytes": 7551
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/vat-ledgers.py",
+    "sha256": "f56df124477af8dd735eacdb874519451250ce4695f8a3d1185b69645584a90b",
+    "bytes": 20102
+  }
+]

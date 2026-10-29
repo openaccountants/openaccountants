@@ -1,0 +1,594 @@
+Finančné riaditeľstvo SR 
+1 
+ 
+2/DPH/2025/MP 
+Metodický pokyn k registrácii platiteľa dane z pridanej hodnoty podľa § 4 a § 5 
+zákona č. 222/2004 Z. z. o dani z pridanej hodnoty v znení neskorších predpisov 
+Finančné riaditeľstvo SR vydáva metodický pokyn k registrácii platiteľa dane z  pridanej hodnoty podľa § 4 a § 5 
+zákona č. 222/2004 Z. z. o dani z pridanej hodnoty v znení neskorších predpisov (ďalej len „zákon o DPH“, prípadne 
+ak sa za ustanovením neuvádza označenie právneho predpisu, myslí sa zákon o DPH). 
+Zmenami a  doplnením zákona č. 222/2004 Z. z. o  dani z  pridanej hodnoty v  znení neskorších dochádza 
+s účinnosťou od 1. januára 2025 k  zmenám pravidiel pri registrácii zdaniteľných osôb za platiteľa dane z  pridanej 
+hodnoty (ďalej len „platiteľ“). Tento metod ický pokyn sa zaoberá východiskami pre posúdenie vzniku registračnej 
+povinnosti, postupmi zdaniteľnej osoby a správcu dane v rámci procesu registrácie platiteľa podľa § 4 a § 5 zákona 
+o DPH. 
+Zákon o DPH v § 4 upravuje, za akých podmienok sa tuzemské zdaniteľné osoby stanú platiteľom, kedy a  akým 
+spôsobom tieto osoby majú povinnosť podať žiadosť o registráciu, alebo oznámiť, že sa stali platiteľom. Citované 
+ustanovenie obsahuje tiež úpravu pre dobrovoľnú registráciu za platiteľa a pravidlá pre oznamovanie zmien, ktorých 
+výsledkom môže byť aktualizácia dňa, od ktorého zdaniteľná osoba získava status platiteľa, alebo zmena dátumu 
+začiatku platnosti prideleného identifikačného čísla pre daň z pridanej hodnoty (ďalej len „IČ DPH“). 
+V § 5 sú upravené podmienky a  pravidlá pre registráciu zahraničných osôb, ktoré v  postavení zdaniteľných osôb 
+vykonávajú činnosti, ktoré sú predmetom dane z pridanej hodnoty (ďalej „DPH“ alebo „daň“) v tuzemsku. 
+Ustanoveniami § 4 a § 5 sú vymedzené tiež východiskové pojmy pre korektné uplatnenie nastavených 
+registračných pravidiel, základné procesné pravidlá a zákonné lehoty. 
+1. diel - Vymedzenie východiskových pojmov pre registráciu platiteľa 
+1.1. Zdaniteľná osoba 
+Platiteľom sa môže stať iba zdaniteľná osoba. 
+Zdaniteľnou osobou pre účely zákona o DPH je podľa § 3  každá osoba, ktorá vykonáva nezávisle akúkoľvek  
+ekonomickú činnosť (ďalej aj „podnikanie“), bez ohľadu na účel alebo výsledky tejto činnosti. Zdaniteľné osoby 
+zahŕňajú širší okruh osôb, ktoré sú považované na účely zákona o DPH za podnikateľa v porovnaní s vymedzením 
+podnikateľa v ustanovení § 2 Obchodného zákonníka. 
+2 
+Za zdaniteľnú osobu sa pre účely zákona o DPH považuje/ú aj: 
+• štátne orgány a ich rozpočtové organizácie, štátne fondy, orgány územnej samosprávy a ich rozpočtové 
+organizácie a iné právnické osoby, ktoré sú orgánom verejnej moci, ak: 
+- konajú v rozsahu svojej hlavnej činnosti, prijímajú v súvislosti s touto činnosťou platby a táto činnosť 
+výrazne narušuje alebo môže výrazne narušiť hospodársku súťaž – vtedy sa hodnota dodaných tovarov 
+alebo služieb z takejto činnosti započítava do obratu na účely registrácie podľa § 4, 
+- konajú nad rámec rozsahu svojej hlavnej činnosti, za účelom ktorej boli zriadené a táto činnosť je 
+predmetom dane podľa zákona o  DPH - ak tieto subjekty konajú v rozsahu vedľajšej činnosti 
+(podnikateľskej), z ktorej dosahujú príjem (nie v rozsahu hlavnej č innosti, na ktorú boli zriadené), 
+považujú sa v rozsahu tejto činnosti za zdaniteľné osoby v zmysle § 3 ods. 1 a 2 a hodnota dodaných 
+tovarov alebo služieb z tejto činnosti sa započítava do obratu na účely registrácie podľa § 4, 
+- vykonávajú činnosti uvedené v prílohe č. 8 zákona o DPH (napr. telekomunikačné služby, dodanie vody, 
+plynu, elektriny a tepla, preprava tovaru a osôb, prístavné a letiskové služby, dodanie nového tovaru 
+vyrobeného na predaj, skladovanie, reklamné služby, s lužby cestovného ruchu, prevádzkovanie 
+predajní pre zamestnancov, prevádzkovanie jedální pre zamestnancov) v nezanedbateľnom rozsahu. 
+Ustanovenie § 3 ods. 4 je transpozíciou čl. 13 ods. 1 smernice Rady 2006/112/ES z  28. novembra 2006 
+o spoločnom systéme DPH v  platnom znení. Súdny dvor EÚ sa interpretáciou tohto ustanovenia (napr. 
+problematikou, kedy je možné považovať orgány riadiace sa verejným právom za nezdaniteľné, resp. zdaniteľné 
+osoby pri činnostiach, ktoré vykonávajú ako orgán verejnej moci, výkladom pojmu „výrazné narušovanie 
+hospodárskej súťaže“, atď.) zaoberal napr. v rozhodnutí C- 102/08, C- 288/07, C- 235/85. 
+• Správa štátnych hmotných rezerv SR v rozsahu nákupu a predaja štátnych hmotných rezerv v zmysle  
+zákona č. 372/2012 Z. z. o štátnych hmotných rezervách a o doplnení zákona č. 25/2007 Z. z. o elektronickom 
+výbere mýta za užívanie vymedzených úsekov pozemných komunikácií a o zmene a doplnení niektorých zákonov 
+v znení neskorších predpisov, 
+• každá osoba (napr. fyzická osoba - občan, právnická osoba, ktorá nie je zriadená za účelom podnikania, 
+tzv. nezisková organizácia, rozpočtová organizácia, atď.) , ktorá príležitostne dodá nový dopravný prostriedok z 
+tuzemska do iného členského štátu EÚ (ďalej aj „IČŠ“), a tento nový dopravný prostriedok je ňou alebo kupujúcim 
+alebo na ich účet odoslaný alebo prepravený kupujúcemu. Novým dopravným prostriedkom sa pre účely zákona o 
+DPH rozumie pozemné motorové vozidlo, plavidlo a lietadlo, ktoré spĺňajú definíciu nového dopravného prostriedku 
+podľa § 11 ods. 12. 
+K problematike dodania nových dopravných prostriedkov v rámci EÚ je vydaný samostatný metodický pokyn. 
+1.2. Ekonomická činnosť 
+Ekonomickou činnosťou (podnikaním) sa podľa § 3 ods. 2 rozumie každá činnosť, z ktorej sa dosahuje príjem. Pre 
+účely zákona o DPH podnikanie zahŕňa: 
+- činnosť výrobcov, obchodníkov a dodávateľov služieb vrátane ťažobnej, stavebnej a  poľnohospodárskej 
+činnosti, 
+- činnosť vykonávanú ako slobodné povolanie podľa osobitných predpisov (napr. činnosť znalcov, tlmočníkov, 
+advokátov, súdnych exekútorov, notárov, súkromných veterinárnych lekárov a iných slobodných povolaní), 
+duševnú tvorivú činnosť a športovú činnosť, 
+- využívanie hmotného a nehmotného majetku za účelom dosahovania príjmov z tohto majetku. Každá osoba, 
+ktorá dosahuje príjem z využívania hmotného a nehmotného majetku, sa považuje za zdaniteľnú osobu. 
+3 
+Napríklad fyzická osoba (občan), ak prenajíma nehnuteľnosť (chata, rodinný dom, atď.) na pokračujúcej báze a z 
+tohto prenájmu dosahuje pravidelný príjem, na účely zákona o DPH sa stáva zdaniteľnou osobou. 
+Ak je majetok, ktorý sa využíva na dosahovanie pravidelného príjmu, v bezpodielovom spoluvlastníctve manželov, 
+považuje sa jeho využívanie na účel dosahovania príjmu za podnikanie v rovnakom pomere u každého z manželov, 
+ak sa manželia nedohodnú inak. Pokia ľ sa teda manželia nedohodnú inak, príjmy z využívania tohto majetku sa 
+započítavajú do obratu pre účely registrácie u každého z manželov v polovičnej výške. Ak sa manželia dohodnú, 
+že využívanie majetku sa bude napr. považovať za podnikanie len u jedného z manželov, potom za zdaniteľnú 
+osobu pre účely DPH sa z titulu využívania majetku bude považovať len jeden z manželov. V tomto prípade sa celý 
+príjem z využívania majetku, resp. hodnota dodaných služieb započítava do obratu na účely registrácie len u toho 
+z manželov, u ktorého sa využívanie tohto majetku považuje za podnikanie. 
+Príklad 1: 
+Manželia vlastnia nehnuteľnosť (garáž), ktorá je v bezpodielovom spoluvlastníctve. Túto nehnuteľnosť sa rozhodli 
+prenajímať. Z prenájmu nehnuteľnosti dosahujú mesačne príjem vo výške 1 000 eur. Manželia sa dohodli, že 
+prenájom nehnuteľnosti sa bude považovať za podnikanie u každého z nich v rovnakom pomere. Každý z manželov 
+sa považuje za zdaniteľnú osobu a obrat pre účely registrácie sleduje každý z nich samostatne. Z titulu prenájmu 
+nehnuteľnosti sa u každého z manželov mesačne započítava do obratu hodnot a dodaných služieb vo výške 500 
+eur. 
+Príklad 2: 
+Manželia prenajímajú nehnuteľnosť, ktorá je v ich bezpodielovom spoluvlastníctve, viacerým podnikateľom. Manžel 
+vykonáva aj inú podnikateľskú činnosť na základe živnostenského oprávnenia. Manželia sa dohodli, že prenájom 
+nehnuteľnosti sa bude považovať za podnikanie len u manželky. Manželka sa z titulu využívania hmotného majetku, 
+z ktorého dosahuje príjmy na pravidelnej báze, považuje za zdaniteľnú osobu a bude povinná podať žiadosť o 
+registráciu, ak z prenájmu nehnuteľnosti v kalendárnom roku presiahne obrat 50 000 eur. 
+Na účely registrácie sa za vykonávanie ekonomickej, t. j. podnikateľskej činnosti považujú aj prípravné práce pred 
+samotným začatím uskutočňovania zdaniteľných plnení. Zdaniteľnou osobou sa na účely DPH rozumie každá 
+právnická alebo fyzická osoba, ktorá vykonáva nezávisle akúkoľvek ekonomickú činnosť bez ohľadu na účel a 
+výsledky tejto činnosti. Ekonomickou činnosťou sa na účely DPH rozumie činnosť, ktorá sa vykonáva na 
+pokračujúcej báze. Podľa judikatúry Súdneho dvora EÚ však môže postavenie platiteľa získať aj zdaniteľná osoba, 
+ktorá v čase podania žiadosti o registráciu ešte nevykonáva ekonomickú činnosť, ale prehlási zámer vykonávania 
+ekonomickej činnosti a jej registrácia je nevyhnutná z dôvodu prípravy na vykonávanie budúcich zdaniteľných 
+obchodov (napr.  rozhodnutie Súdneho dvora EÚ vo veci C - 110/94 INZO, C - 268/83 Rompelman, C - 527/11 
+Ablessio SIA). 
+Za nezávislé vykonávanie činnosti,  t. j. za podnikanie sa nepovažuje  vykonávanie činnosti na základe 
+pracovnoprávneho vzťahu, štátnozamestnaneckého pomeru, služobného pomeru alebo iného obdobného vzťahu, 
+keď fyzická osoba je povinná dodržiavať pokyny alebo príkazy, čím sa vytvára stav podriadenosti a nadriadenosti 
+z hľadiska podmienok vykonávanej činnosti a jej odmeňovania. 
+1.3. Tuzemská zdaniteľná osoba 
+Za tuzemskú zdaniteľnú osobu sa považuje podľa § 4 ods. 1 zdaniteľná osoba, ktorá má sídlo, miesto podnikania 
+alebo prevádzkareň v tuzemsku, alebo má v tuzemsku bydlisko alebo sa v tuzemsku obvykle zdržiava. 
+Na účely zákona o DPH sa pod pojmom: 
+- bydlisko rozumie adresa trvalého pobytu fyzickej osoby v  tuzemsku a u fyzickej osoby, ktorá nemá trvalý 
+pobyt v tuzemsku, sa bydliskom rozumie trvalé miesto pobytu v zahraničí (§ 4 ods. 14 písm. a)); 
+4 
+- prevádzkareň rozumie stále miesto podnikania, ktoré má personálne a materiálne vybavenie potrebné  na 
+výkon podnikania (§ 4 ods. 14 písm. b)). 
+Problematika prevádzkarne na účely DPH je riešená vo viacerých rozhodnutiach Súdneho dvora EÚ, napr.  
+C- 168/84 Gunter Berkholz, C - 190/95 ARO Lease, C - 390/96 Lease Plan Luxembourg, C - 73/06 Planzer 
+Luxembourg. Prevádzkareň na účely DPH je upravená aj v článku 11 vykonávacieho  nariadenia Rady (EÚ) č. 
+282/2011 z 15. marca 2011, ktorým sa ustanovujú vykonávacie opatrenia smernice 2006/112/ES o  spoločnom 
+systéme DPH v  platnom znení . Toto vykonávacie n ariadenie Rady č. 282/2011 definuje v článku 11 ods. 1 
+prevádzkareň, ktorá je schopná prijímať a využívať služby, ktoré sa jej poskytujú, na účely miesta dodania služby 
+poskytovanej medzi zdaniteľnými osobami, a zároveň v ods. 2 predmetného článku ustanovuje, čo sa rozumie 
+prevádzkarňou na účely poskytovania služby. 
+Z judikatúry Súdneho dvora EÚ vyplýva, že na to, aby sa prevádzkareň mohla považovať za miesto, z ktorého 
+sa  poskytujú služby, musí na dostatočnej úrovni zabezpečovať stálosť a organizáciu (dostatočný stupeň trvalosti), 
+ktorá z hľadiska ľudského a materiálneho vybavenia je schopná poskytovať predmetné služby samostatne 
+za  protihodnotu (tzn. schopnosť, resp. možnosť z uvedeného miesta uzatvárať a vyhotovovať zmluvy v závislosti 
+od charakteru ekonomickej činnosti, uskutočňovať manažérske rozhodnutia týkajúc e sa činnosti prevádzkarne, 
+dojednávať obchody, prijímať platby, vykonávať konkrétnu ekonomickú činnosť voči tretím osobám). Pritom musí 
+ísť o ekonomickú činnosť, z ktorej sa dosahuje príjem, teda nie činnosť vykonávanú napr. pre svojho zriaďovateľa 
+so sídlom v zahraničí. Ak zahraničná osoba má v tuzemsku zriadenú prevádzkareň, ktorá je schopná len prijímať 
+a využívať služby, ktoré sú jej dodané, a nevykonáva na území SR ekonomickú činnosť za protihodnotu, nie je 
+možné takúto zdaniteľnú osobou registrovať z a platiteľa podľa § 4. Samotná skutočnosť, že organizačná zložka 
+zahraničnej osoby je zapísaná v Obchodnom registri SR, ešte neznamená, že spĺňa kritériá prevádzkarne na účely 
+registrácie podľa § 4. 
+1.4. Zahraničná zdaniteľná osoba 
+Podľa § 5 sa za zahraničnú osobu považuje zdaniteľná osoba, ktorá nemá v  tuzemsku sídlo, miesto podnikania, 
+prevádzkareň, bydlisko, ani sa v  tuzemsku obvykle nezdržiava.  Ak fyzická osoba má v  SR výlučne len trvalé 
+bydlisko, ale miesto svojej ekonomickej činnosti (miesto podnikania) má v IČŠ je považovaná za usadenú v tomto 
+IČŠ – t. j. na účely registrácie sa považuje za zahraničnú osobu. 
+Problematikou posúdenia pojmu zdaniteľná osoba usadená v zahraničí sa zaoberal Súdny dvor EÚ napríklad aj pri 
+rozhodovaní vo veci  C- 421/10 Markus Stoppelkamp. V situácii, ktorá je charakteristická skutočnosťou, že sídlo 
+hospodárskej činnosti zdaniteľnej osoby je známe a nachádza sa mimo krajiny príjemcu, a okolnosťou, že ide o 
+reálne a skutočné sídlo , a nie fiktívne sídlo alebo fiktívne usadenie, sa nemôže zohľadniť prípadné bydlisko 
+zdaniteľnej osoby na území tejto krajiny. Iné faktory, ako napr. bydlisko riadiacich osôb a  miesto konania valného 
+zhromaždenia, sa môžu v  druhej fáze taktiež zohľadniť, pokiaľ ide o  určenie skutočného sídla spoločnosti 
+s  fiktívnym usadením, ktoré charakterizuje spoločnosť typu „poštová schránka“ alebo „webová stránka“. Výklad, 
+podľa ktorého sa v rámci určenia miesta usadenia poskytovateľa služieb môže miesto bydliska zohľadniť, iba pokiaľ 
+chýbajú spájajúce prvky priamo spojené s  vykonávanou hospodárskou činnosťou týmito poskytovateľmi, ako je 
+sídlo hospodárskej činnosti alebo existencia prevádzkarne, prostredníctvom ktorej  sa vykonávajú obchodné 
+transakcie, je tiež v súlade s logikou podloženou článkom 4(1) šiestej smernice, lebo toto ustanovenie sa týka iba 
+hospodárskej činnosti vykonanej zdaniteľnými osobami. Čl. 21(1)(b) šiestej smernice sa musí vykladať v  tom 
+zmysle, že na to, aby sporná zdaniteľná osoba bola považovaná za „platiteľa, ktorý nemá sídlo na území štátu“, 
+postačuje, aby mala sídlo svojej hospodárskej činnosti v zahraničí. 
+Zmena pravidiel v  oblasti registrácie bola uskutočnená aj z  dôvodu umožnenia uplatňovania oslobodenia 
+v tuzemsku pre zahraničné osoby, ktoré spĺňajú podmienky na to, aby boli oslobodeným podnikom zahraničnej 
+5 
+osoby. Toto oslobodenie v tuzemsku je však použiteľné len pre zahraničné osoby, ktoré sú usadené v  Európskej 
+únii. Nie je možné pre zahraničné osoby usadené v treťom štáte. 
+1.5. Obrat 
+Podľa znenia zákona o DPH účinného od 1. januára 2025 sa pre povinnú registráciu tuzemského platiteľa sleduje 
+výška obratu dosiahnutého v príslušnom kalendárnom roku. Pri sledovaní obratu na pokračujúcej báze sa hodnota 
+dosiahnutého obratu za kalendárny rok začína počítať nanovo vždy od 1. januára. 
+Na účely zákona o  DPH sa podľa § 4 ods. 15 pod pojmom obrat rozumie hodnota bez dane dodaných tovarov 
+a služieb v tuzemsku okrem hodnoty tovarov a  služieb, ktoré sú oslobodené od dane podľa  § 28 až 36 a   podľa 
+§ 40 až 42. Hodnota dodaných poisťovacích služieb, ktoré sú oslobodené od dane podľa § 37, a finančných služieb, 
+ktoré sú oslobodené od dane podľa § 39, sa nezahŕňa do obratu, ak tieto služby sú dodané pri dodaní tovaru alebo 
+služby ako doplnkové služby. Do obratu sa nezahŕňa hodnota príležitostne dodaného hmotného majetku okrem 
+zásob a hodnota príležitostne dodaného nehmotného majetku. 
+Do obratu na účely zákona o DPH sa ďalej nezahŕňa napr.: 
+- platba, ktorá bola prijatá pred dodaním tovaru alebo služby. Tzv. „preddavkové/zálohové platby“ predstavujú 
+súčasť hodnoty tovaru alebo služby a zahrnú sa do obratu až momentom dodania tovaru alebo služby, 
+- hodnota z dodaní tovarov a služieb s miestom dodania v zahraničí, 
+- hodnota bezodplatne dodaných tovarov a služieb, 
+- hodnota dodaní tovarov a  služieb v tuzemsku, ktoré kupujúci kúpil alebo prijal a pri ktorých je osobou 
+povinnou platiť daň kupujúci (mechanizmus prenosu daňovej povinnosti). 
+Obrat na účely zákona o DPH sa sleduje len v nadväznosti na predmet DPH podľa § 2 ods. 1 písm. a) a b) zákona 
+o DPH s miestom dodania v tuzemsku. 
+Každá zdaniteľná osoba, ktorá na základe komisionárskej zmluvy alebo inej obdobnej zmluvy, podľa ktorej koná 
+vo svojom mene na účet inej osoby, obstaráva kúpu/predaj tovaru alebo obstaráva prijatie/dodanie služby, kedy 
+pre účely zákona o DPH platí, že táto zdaniteľná osoba tovar alebo službu sama kúpila (prijala) a sama predala 
+(dodala), zahŕňa do obratu celú hodnotu dodaných tovarov alebo služieb vrátane svojej provízie. 
+1.6. Platiteľ, ktorý má pridelené identifikačné číslo pre daň z pridanej hodnoty 
+Pre jednoznačné vymedzenie zákonných povinností a  práv vyplývajúcich zo zákona o DPH je v §  5a zavedená 
+definícia pojmu „platiteľ, ktorý má pridelené identifikačné číslo pre daň podľa § 4, § 4b a § 5“ (ďalej len „platiteľ, 
+ktorý má pridelené IČ DPH“). Za takúto osobu sa považuje platiteľ, ktorému bolo doručené rozhodnutie 
+o registrácii, ktorým správca dane pridelil IČ DPH. 
+Deň, od ktorého sa platiteľ považuje za platiteľa s  prideleným IČ DPH, sa určí v  závislosti od skutočnosti, či deň, 
+od ktorého osoba získava status platiteľa nastal pred alebo po dni doručenia rozhodnutia, alebo bol tento deň 
+priamo určený v rozhodnutí o registrácii. 
+6 
+2. diel - Platiteľ a povinná registrácia podľa § 4 zákona o DPH 
+2.1. Nadobudnutie statusu platiteľa 
+Právne skutočnosti, na základe ktorých sa tuzemská zdaniteľná osoba stáva zo zákona o DPH platiteľom, taxatívne 
+vymedzuje § 4 ods. 1. Týmito skutočnosťami sú: 
+- prekročenie zákonom stanovenej hranice obratu 
+Vo všeobecnosti do obratu vstupuje hodnota dodaných tovarov a  služieb v  tuzemsku. S  účinnosťou od 
+1. januára 2025 sa upravila hodnota bez dane dodaných tovarov a služieb započítavaných do obratu pre 
+účely povinnej registrácie na sumu 50 000 eur. Zdaniteľná osoba sa pri prekročení obratu 50 000 eur stane 
+platiteľom od 1.januára nasledujúceho kalendárneho roka po kalendárnom roku, v ktorom presiahla uvedený 
+obrat (§ 4 ods. 1 písm. a). 
+Ak zdaniteľná osoba presiahne v  prebiehajúcom kalendárnom roku obrat 62  500 eur, stáva sa platiteľom 
+momentom dodania tovaru alebo služby, ktorým presiahla hranicu 62  500 eur a od tohto momentu je 
+povinná uplatňovať pri zdaniteľných plneniach DPH (§ 4 ods. 1 písm. b). Inými slovami, je povinná uplatniť 
+DPH aj na dodanie tovaru alebo služby, ktorým presiahla hranicu obratu 62 500 eur. 
+- právne nástupníctvo po platiteľovi, ktorý zanikol bez likvidácie - zdaniteľná osoba, ak je právnym nástupcom 
+platiteľa, ktorý zanikol bez likvidácie, sa stáva platiteľom odo dňa, kedy sa stala právnym nástupcom. Osobe, 
+ktorá zanikla bez likvidácie (má povinnosť túto skutočnosť oznámiť daňovému úradu pred svojím zánikom) 
+s právnym nástupcom, nevzniká daňová povinnosť podľa § 81 ods. 5, ak právny nástupca je platiteľom 
+alebo sa stáva platiteľom (§ 4 ods. 1 písm. c). 
+- nadobudnutie podniku alebo časti podniku platiteľa, ktorá tvorí samostatnú organizačnú zložku platiteľa  - 
+právnická alebo fyzická osoba, ktorá nadobudne v tuzemsku hmotný majetok a nehmotný majetok v rámci 
+nadobudnutého podniku alebo časti podniku platiteľa tvoriacej samostatnú organizačnú zložku sa stáva 
+platiteľom dňom nadobudnutia podniku alebo jeho časti (§ 4 ods. 1 písm. d). 
+Nadobudnúť podnik alebo jeho časť možno viacerými spôsobmi, napr. kúpou podniku alebo jeho časti, 
+vložením podniku alebo časti podniku platiteľa tvoriacej samostatnú organizačnú zložku do základného 
+imania ako nepeňažný vklad. Súdny dvor EÚ sa interpretáciou pojmu „prevod všetkých aktív alebo ich časti“ 
+zaoberal napr. v rozhodnutí C-444/10 Christel Schriever, C-497/01 Zita Modes.  
+- premena pri odštiepení alebo cezhraničnom odštiepení, ak na zdaniteľnú osobu v tuzemsku prechádza 
+majetok platiteľa – zdaniteľná osoba sa stane platiteľom dňom účinnosti premeny pri odštiepení alebo dňom 
+účinnosti premeny pri odštiepení podľa zákona platného v IČŠ alebo zmluvnom štáte Dohody o Európskom 
+hospodárskom priestore alebo dňom účinnosti premeny pri cezhraničn om odštiepení, ak na túto osobu 
+v tuzemsku prechádza hmotný majetok alebo nehmotný majetok platiteľa, ktorý sa rozdelil odštiepením 
+alebo cezhraničným odštiepením (§ 4 ods. 1 písm. e); 
+- dodanie stavby, časti stavby alebo stavebného pozemku  - zdaniteľná osoba, ktorá dodá stavbu, jej časť 
+alebo stavebný pozemok, sa stane platiteľom, ak sa z dodania má presiahnuť obrat 62 500 eur (§ 4 ods. 1 
+písm. f);  
+Zdaniteľná osoba sa nestáva platiteľom zo zákona o DPH v prípade, ak ide o príležitostný predaj stavby 
+alebo jej časti alebo stavebného pozemku. Hodnota z príležitostného dodania, resp. predaja stavby, jej časti 
+alebo stavebného pozemku sa nezapočítava ani do obratu definovaného v § 4 ods.15. 
+7 
+- prijatie platby pred dodaním stavby, časti stavby alebo stavebného pozemku – zdaniteľná osoba sa stane 
+platiteľom dňom, v ktorom prijme platbu pred dodaním stavby, časti stavby alebo stavebného pozemku, ak 
+sa má z dodania presiahnuť obrat 62 500 eur (§ 4 ods. 1 písm. g); 
+- dodanie tovaru s miestom dodania v tuzemsku, ak ide o zdaniteľnú osobu, ktorá uľahčuje dodanie tovaru 
+na území Európskej únie uskutočnené zdaniteľnou osobou neusadenou na území EÚ inej osobe ako 
+zdaniteľnej osobe prostredníctvom využitia elektronického kom unikačného rozhrania, ako je elektronické 
+trhovisko, elektronická platforma, elektronický portál alebo podobný elektronický prostriedok – zdaniteľná 
+osoba sa stane platiteľom dňom dodania tovaru (§ 4 ods. 1 písm. h); 
+- dodanie tovaru alebo služby, alebo nadobudnutie tovaru v tuzemsku z IČŠ, ktoré je predmetom DPH podľa 
+zákona o DPH, zahraničnou zdaniteľnou osobou, ktorá má v tuzemsku výlučne prevádzkareň a neuplatňuje 
+v tuzemsku oslobodenie od dane pre malý podnik zahraničnej osoby podľa § 68f ods. 2 (§ 4 ods. 1 písm. i). 
+2.2. Vznik registračnej povinnosti platiteľa 
+Ak nastane niektorá z vyššie uvedených skutočností, na základe ktorej zdaniteľná osoba nadobudne status 
+platiteľa, vzniká podľa § 4 ods. 2 zdaniteľnej osobe povinnosť podať daňovému úradu žiadosť o registráciu do 
+piatich pracovných dní odo dňa, kedy daná skutočnosť nastala. 
+Povinnosť podať žiadosť o  registráciu sa vzťahuje aj na zdaniteľnú osobu, ktorá hranicu obratu pre registráciu 
+dosiahla výlučne z plnení, ktoré sú oslobodené od dane podľa § 37 až 39, t. j. registračnú povinnosť má aj osoba, 
+ktorá poskytuje výlučne: 
+- poisťovacie služby, na ktoré sa vzťahuje oslobodenie od dane podľa § 37, 
+- transakcie s nehnuteľnosťami, na ktoré sa vzťahujú podmienky oslobodenia od dane podľa § 38, 
+- finančné služby, na ktoré sa vzťahuje oslobodenie od dane podľa § 39. 
+Zdaniteľná osoba, ktorá je povinná podať žiadosť o registráciu, je povinná v zmysle § 4 ods. 3 v žiadosti uviesť, na 
+základe ktorej právnej skutočnosti jej vznikla povinnosť podať žiadosť a tiež deň, kedy táto skutočnosť nastala. 
+V prípade, ak zdaniteľná osoba podáva žiadosť o registráciu z dôvodu presiahnutia obratu pre povinnú registráciu, 
+ktorý dosiahla len z  oslobodených dodaní podľa § 37 až 39, zdaniteľná osoba je povinná uviesť v  žiadosti 
+o registráciu aj túto informáciu. 
+Ak v lehote na podanie žiadosti o  registráciu nastanú nové skutočnosti, ktoré majú vplyv na registráciu a žiadosť 
+o registráciu ešte nebola podaná, potom žiadateľ vo svojej žiadosti uvedie už iba nové skutočnosti a od týchto 
+skutočností začína nanovo plynúť lehota na podanie žiadosti o registráciu. 
+Príklad 3: 
+Zdaniteľná osoba presiahla obrat 50  000 eur 29.9.2025, čím jej vznikla povinnosť podať žiadosť o  registráciu do 
+6.10.2025. Dňa 3.10.2025 v  čase, kedy ešte nepodala žiadosť o  registráciu, dodala v  tuzemsku tovar v sume 
+20 000 eur. Dňom dodania tovaru sa zdaniteľná osoba stala platiteľom. Lehota na podanie žiadosti o registráciu sa 
+odvodí od novej zákonnej skutočnosti, to znamená, že zdaniteľná osoba musí podať žiadosť o  registráciu spolu 
+s dokladmi preukazujúcimi uvedenú skutočnosť do 10.10.2025. 
+Z § 4 ods. 3 vyplýva, že a k žiadosť o registráciu podáva zdaniteľná osoba, ktorá nadobudla postavenie platiteľa 
+z dôvodu, že: 
+- sa stala právnym nástupcom platiteľa, ktorý zanikol bez likvidácie, alebo 
+- nadobudla podnik alebo časť podniku platiteľa, ktorá tvorí samostatnú organizačnú zložku, alebo 
+8 
+- v dôsledku premeny pri odštiepení alebo premeny pri cezhraničnom odštiepení na ňu v tuzemsku prechádza 
+majetok platiteľa, alebo 
+- dodala stavbu, časť stavby alebo stavebného pozemku alebo prijala platbu pred takýmto dodaním, alebo 
+- dodala tovar s miestom dodania v  tuzemsku a uľahčuje dodanie tovaru na území EÚ  uskutočnené 
+zdaniteľnou osobou neusadenou na území EÚ  osobe inej ako zdaniteľnej osobe prostredníctvom využitia 
+elektronického komunikačného rozhrania, ako je elektronické trhovisko, elektronická platforma, elektronický 
+portál alebo podobný elektronický prostriedok, 
+tak je povinná spolu so žiadosťou o registráciu predložiť aj doklady preukazujúce príslušnú právnu skutočnosť, ak 
+sa uvedené právne skutočnosti nezapisujú do Obchodného registra SR. Týmito dokladmi sú napr. zmluva o predaji 
+podniku alebo jeho časti, doklady preukazujúce, aký hmotný majetok a nehmotný majetok v rámci nadobudnutého 
+podniku alebo jeho časti nadobudla (napr. zápisnica o odovzdaní a prevzatí vecí zahrnutých do predaja), ak ide o 
+vklad podniku do obchodnej spoločnosti spoločenská zmluva, zmluva o  zlúčení alebo splynutí spoločnosti, 
+schválený projekt rozdelenia spoločnosti; protokol o prevzatí stavby alebo jej časti alebo stavebného pozemku, 
+alebo iný adekvátny doklad preukazujúci skutočnosti, ktoré nastali. 
+Ak právnická osoba, ktorá sa stala právnym nástupcom platiteľa, ktorý zanikol bez likvidácie, alebo ktorá nadobudla 
+podnik alebo časť podniku platiteľa, ktorá tvorí samostatnú organizačnú zložku, alebo sa stala platiteľom v dôsledku 
+premeny pri odštiepení ale bo premeny pri cezhraničnom odštiepení, má sídlo v  zahraničí, predložené doklady 
+musia byť úradne overené. 
+2.3. Povinná registrácia platiteľa 
+Žiadosť o registráciu je zdaniteľná osoba povinná podať na predpísanom tlačive d o piatich pracovných dní odo 
+dňa, v ktorom bol presiahnutý obrat 50 000 eur, alebo odo dňa, kedy nadobudla postavenie platiteľa. 
+Zákon o DPH ukladá daňovému úradu povinnosť preskúmať súlad skutkového stavu so stavom formálnym . 
+Základným východiskom pre overenie oprávnenosti registrácie sú údaje uvedené v žiadosti o  registráciu, 
+predložených dokladoch, údaje o  zdaniteľnej osobe pochádzajúce z  vlastnej činnosti správcu dane a  dostupné 
+údaje z iných záväzných zdrojov (napr. referenčné registre). Zákon o DPH neupravuje postup preverovania podanej 
+žiadosti o registráciu, preto v zmysle § 84 sa na správu dane použijú ustanovenia zákona č. 563/2009 Z. z. o správe 
+daní (daňový poriadok) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov. 
+Ak daňový úrad po preverení a porovnaní skutkového stavu zistí, že údaje uvedené v žiadosti o registráciu sú 
+pravdivé a správne, podľa § 4 ods. 4 zaregistruje platiteľa, vydá mu rozhodnutie o registrácii a pridelí mu IČ DPH. 
+Vydaním rozhodnutia o povinnej registrácii správca dane potvrdí (deklaruje) stav, že zdaniteľná osoba na základe 
+zákonom ustanovenej právnej skutočnosti nadobudla postavenie platiteľa. Okrem situácie, kedy zdaniteľná osoba 
+nadobudne postavenie platiteľa až k  1. januáru nasledujúceho kalendárneho r oka, sa doručením rozhodnutia 
+o registrácii platiteľ považuje v zmysle § 5a za platiteľa, ktorý má pridelené IČ DPH. 
+Príklad 4: 
+Zdaniteľná osoba 28.5.2025 presiahla v prebiehajúcom kalendárnom roku obrat 50 000 eur. Dňa 29.5.2025 podala 
+žiadosť o registráciu, v ktorej vyznačila dôvod registrácie (§ 4 ods. 1 písm. a)) a uviedla deň, kedy táto skutočnosť 
+nastala. Správca dane 6.6.2025 vydal rozhodnutie o registrácii a pridelil zdaniteľnej osobe IČ DPH . Zdaniteľná 
+osoba sa stáva platiteľom 1.1.2026 a k tomu istému dňu nadobúda platnosť aj pridelené IČ DPH. 
+Dátum 1.1.2026 bude podľa § 5a dňom, od ktorého sa osoba považuje za platiteľa, ktorý má pridelené IČ DPH. 
+Ak zdaniteľná osoba už podala žiadosť o registráciu z dôvodu, že v kalendárnom roku presiahla obrat 50 000 eur 
+a do 31. decembra tohto kalendárneho roka nastala iná zo skutočností (§ 4 ods. 1 písm. b) až i), na základe ktorej 
+sa zdaniteľná osoba stáva platiteľom, je povinná túto skutočnosť daňovému úradu bezodkladne oznámiť. Súčasne 
+je povinná uviesť aj deň, kedy daná skutočnosť nastala. Uvedená povinnosť vyplýva z § 4 ods. 5. 
+9 
+Príklad 5: 
+Zdaniteľná osoba z príkladu 4 dňa 22.9.2025 dodá v tuzemsku tovar, ktorým presiahne obrat 62 500 eur. V tomto 
+prípade je povinná túto skutočnosť bezodkladne oznámiť daňovému úradu vrátane dňa, kedy k presiahnutiu obratu 
+došlo. Urobí tak na rovnakom tlačive ako v prípade podania žiadosti o registráciu. Keďže daňový úrad už 
+rozhodnutie o registrácii zdaniteľnej osobe vydal (uvedené v príklade 4 ), nové rozhodnutie nevydáva. Zdaniteľná 
+osoba sa stáva platiteľom dodaním, ktorým presiahla 62 500 eur a rovnako týmto dňom nadobúda platnosť IČ DPH, 
+ktoré už bolo daňovým úradom pridelené. To znamená, že v uvedenom prípade sa „posúva“ získanie statusu 
+platiteľa aj platnosť IČ DPH z 1.1.2026, nakoľko do 31.12.2025 nastala skutočnosť (v tomto prípade presiahnutie 
+obratu 62 500 eur v kalendárnom roku), na základe ktorej sa stáva platiteľom pred 1.1.2026. Od tohto momentu je 
+zdaniteľná osoba platiteľom a je povinná k svojim dodaniam tovarov a služieb v tuzemsku uplatňovať DPH. Od 
+22.9.2025 sa zdaniteľná osoba stáva platiteľom s prideleným IČ DPH. 
+V prípadoch, kedy zákon ukladá, že spolu so žiadosťou o registráciu majú byť predložené aj doklady osvedčujúce 
+vznik príslušnej právnej skutočnosti, sa môže stať, že zdaniteľná osoba žiadosť o registráciu a doklady nepredloží 
+naraz, ale postupne v rámci vymedzenej zákonnej lehoty piatich pracovných dní. Lehota 10 dní, v ktorej je správca 
+dane povinný vydať rozhodnutie o registrácii, sa v takom prípade začína počítať odo dňa, kedy sú mu doručené 
+úplné podklady, t. j. žiadosť o registráciu aj osvedčujúce doklady. 
+Podľa § 4 ods. 10 písm. a) a k daňový úrad zistí, že osoba, ktorá v  žiadosti o registráciu uviedla, že sa stala 
+platiteľom, v  skutočnosti nespĺňa podmienky pre registráciu, vydá rozhodnutie o  nezaregistrovaní a zdaniteľnej 
+osobe nepridelí IČ DPH. Proti tomuto rozhodnutiu nie je možné podať odvolanie. 
+Ak osobe bol rozhodnutím potvrdený status platiteľa, tak následne oznámené zmeny alebo vykonané opravy, ktoré 
+by viedli k  zreálneniu výšky obratu na úroveň pod zákonom stanovenú hranicu pre povinnú registráciu , nie sú 
+dôvodom na zrušenie rozhodnutia o  registrácii, ktorým správca dane deklaroval, že zdaniteľná osoba nadobudla 
+status platiteľa. 
+Príklad 6: 
+Zdaniteľná osoba 23.5.2025 presiahla obrat 62 500  eur. Dňa 28.5.2025 pod ala žiadosť o  registráciu, v  ktorej 
+vyznačila, že nastala skutočnosť podľa § 4 ods. 1 písm. b) zákona o  DPH a  uviedla dátum dodania , ktorým 
+prekročila obrat 62 500 eur. Správca dane 5.6.2025 vydal rozhodnutie o registrácii a pridelil jej IČ DPH. Správca 
+dane rozhodnutím o registrácii doručeným 6.6.2025 potvrdil zdaniteľnej osobe, že nadobudla status platiteľa 
+23.5.2025 a k tomuto dňu nadobudlo platnosť aj IČ DPH. Následne 20.6.2025 registrovaný platiteľ oznámil, že 
+opravou nesprávne vystavenej f aktúry sa hodno ta dosiahnutého obratu v  kalendárnom roku znížila pod hranicu 
+62 500 eur, v dôsledku čoho mal byť pri registrácii aplikovaný § 4 ods. 1 písm. a). 
+Keďže postavenie platiteľa už bolo zdaniteľnej osobe rozhodnutím o registrácii doručeným 6.6.2025 oznámené, na 
+následnú opravu dosiahnutého obratu sa neprihliada. Zdaniteľnej osobe zostáva status platiteľa nadobudnutý 
+23.5.2025 a podľa § 5a sa od 6.6.2025 považuje za platiteľa, ktorý má pridelené IČ DPH. 
+2.4. Registrácia platiteľa z úradnej moci 
+Ak správca dane má dôkazy o  tom, že zdaniteľnej osobe vznikla povinnosť podať žiadosť o  registráciu, a túto 
+povinnosť si nesplnila, vyzve ju na jej splnenie. Ak zdaniteľná osoba výzve nevyhovie v plnom rozsahu a v určenej 
+lehote, správca dane osobu zaregistruje z úradnej moci. 
+Proti rozhodnutiu o registrácii z úradnej moci je možné podať odvolanie. 
+Nadobudnutím právoplatnosti rozhodnutia o registrácii z úradnej moci sa platiteľ považuje za platiteľa s prideleným 
+IČ DPH. 
+Príklad 7: 
+Zdaniteľná osoba 7.3.2025 prekročila obrat 62 500 eur a týmto dňom sa stala platiteľom. Zdaniteľnej osobe vznikla 
+povinnosť podať žiadosť o  registráciu do 14.3.2025. Zdaniteľná osoba žiadosť o  registráciu nepodala v zákonnej 
+lehote a ani po výzve správcu dane. Správca dane na základe prevereného skutkového stavu vydal rozhodnutie o 
+registrácii z úradnej moci, ktoré bolo doručené zdaniteľnej osobe 28.5.2025 a nadobudlo právoplatnosť 12.6.2025. 
+Od 12.6.2025 sa táto osoba podľa § 5a považuje za platiteľa, ktorý má pridelené IČ DPH podľa § 4. 
+10 
+2.5. Dobrovoľná registrácia zdaniteľnej osoby 
+Zákon o DPH umožňuje zdaniteľnej osobe stať sa platiteľom aj pred presiahnutím obratu 50  000 eur. Uvedené 
+vyplýva z § 4 ods. 6 písm. a). Podľa § 4 ods. 7 tak urobí podaním žiadosti o registráciu. 
+Žiadosť o dobrovoľnú registráciu  predkladá zdaniteľná osoba prostredníctvom formulára Žiadosť o  registráciu, 
+oznámenie zmien a žiadosť o zrušenie registrácie, t. j. na rovnakom tlačive ako osoba, ktorá má zákonnú povinnosť 
+podať žiadosť o registráciu. 
+Ak o registráciu žiada osoba, ktorá nedosiahla obrat 50 000 eur, správca dane v registračnom konaní o dobrovoľnej 
+registrácii preverí, či sú splnené podmienky pre registráciu. Daňový úrad preveruje najmä, či osoba, ktorá žiada o 
+registráciu, má status zdaniteľnej osoby podľa § 3 zákona o DPH. Postavenie platiteľa  podľa § 4 môže získať len 
+zdaniteľná osoba, preto je na osobe, ktorá požaduje registráciu pre daň podľa § 4 ods. 7, aby preukázala splnenie 
+kritérií zdaniteľnej osoby. 
+Ak sú podmienky pre dobrovoľnú registráciu splnené, správca dane vydá rozhodnutie o  registrácii, v ktorom určí 
+deň, ktorým sa zdaniteľná osoba stáva platiteľom a od ktorého nadobúda platnosť aj pridelené IČ DPH. Na rozdiel 
+od taxatívne vymedzených situácií , kedy sa zdaniteľná osoba stáva zo zákona o DPH povinne platiteľom, pri 
+dobrovoľne podanej žiadosti o registráciu zdaniteľná osoba získava status platiteľa až dňom, ktorý stanoví správca 
+dane v rozhodnutí o registrácii. Správca dane pri stanovení uvedeného dátumu koná tak, aby sa zdaniteľná osoba 
+dozvedela včas o tom, ktorým dňom sa stáva platiteľom a mohla si od tohto dňa plniť svoje povinnosti a uplatňovať 
+práva vyplývajúce zo získania statusu platiteľa. 
+Daňový úrad zdaniteľnú osobu neregistruje so spätným dátumom, t. j. registrácia  na základe dobrovoľne podanej 
+žiadosti nemôže byť vykonaná ku dňu, ktorý predchádza dátumu podania žiadosti o registráciu, alebo predchádza 
+dátumu vydania rozhodnutia o registrácii. Inými slovami, pri dobrovoľnej registrácii nemôže byť dátum, ku ktorému 
+sa zdaniteľná osoba stáva platiteľom, určený dňom, ktorý už uplynul. Spätná registrácia nie je možná ani v prípade, 
+ak zdaniteľná osoba o registráciu so spätným dátumom výslovne požiada (uvedené sa nevzťahuje na osoby - 
+dedičov, ktoré požiadajú o registráciu za platiteľa bezodkladne po skončení konania o dedičstve podľa § 83 ods. 2; 
+daňový úrad zaregistruje tohto dediča za platiteľa ku dňu nadobudnutia majetku dedičstvom). 
+Daňový úrad rozhodne o dobrovoľne podanej žiadosti a vykoná registráciu pre daň najneskôr do 21 dní odo dňa 
+doručenia žiadosti o dobrovoľnú registráciu. 
+Ak nastane iná skutočnosť uvedená v § 4 ods. 1 písm. b) až i) pred dňom, ktorý správca dane určil v  rozhodnutí 
+o registrácii ako deň, od ktorého sa zdaniteľná osoba stáva platiteľom, zdaniteľná osoba je povinná túto skutočnosť 
+bezodkladne oznámiť. Správca dane vydá nové rozhodnutie, ktorého vydaním sa už vydané rozhodnutie 
+o dobrovoľnej registrácii zrušuje. 
+Príklad 8: 
+Zdaniteľná osoba 22.4.2025 podala žiadosť o  dobrovoľnú registráciu. Správca dane 5.5.2025 vydá rozhodnutie 
+o registrácii, v ktorom určí, že zdaniteľná osoba sa stáva platiteľom dňom 1.6.2025. Zdaniteľná osoba 19.5.2025 
+presiahne obrat 62  500 eur, preto v  súlade s § 4 ods. 7 správcovi  dane 21.5.2025 oznámi, že sa v  dôsledku 
+zákonnej skutočnosti podľa § 4 ods. 1 písm. b) stala platiteľom pred dňom určeným v  rozhodnutí o registrácii. 
+Správca dane na základe oznámenia vydá nové rozhodnutie o  registrácii, ktorým  sa pôvodné rozhodnutie 
+o registrácii zruší. Zdaniteľná osoba sa vydaním nového rozhodnutia stáva platiteľom od 19.5.2025 a podľa § 5a 
+písm. b) sa považuje za platiteľa, ktorý ma pridelené IČ DPH, počnúc dňom doručenia nového rozhodnutia. 
+Zdaniteľná osoba, ktorej obrat presiahol hodnotu 50 000 eur, avšak je nižší ako 62 500 eur, sa stáva platiteľom od 
+1. januára nasledujúceho kalendárneho roka. Takáto zdaniteľná osoba má však možnosť stať sa platiteľom aj pred 
+týmto dňom, a to dvoma spôsobmi. 
+11 
+Prvý spôsob v zmysle § 4 ods. 8 písm. a) je, ak priamo pri podaní žiadosti o  registráciu vyznačí, že sa chce stať 
+platiteľom dňom dodania tovaru alebo služby, ktorým prekročila hodnotu 50  000 eur. S právca dane uvedené 
+zohľadní už pri vydaní rozhodnutia o registrácii. 
+Príklad 9: 
+Zdaniteľná osoba 30.9.2025 presiahla obrat 50 000 eur. Dňa 3.10.2025 podá žiadosť o registráciu, na predpísanom 
+formulári, v ktorom vyznačí, že sa chce stať platiteľom presiahnutím obratu 50  000 eur. (§ 4 ods. 8 písm. a)) . 
+Zdaniteľnej osobe je 9.10.2025 doručené rozhodnutie o registrácii, v ktorom je zdaniteľnej osobe pridelené IČ DPH 
+a vo výrokovej časti rozhodnutia je uvedené, že zdaniteľná osoba sa stáva platiteľom od 30.9.2025 a týmto dňom 
+nadobúda platnosť aj pridelené IČ DPH. Za platiteľa s prideleným IČ DPH sa považuje od 9.10.2025. 
+Druhý spôsob sa uplatní v  prípade, ak zdaniteľnej osobe už bolo vydané rozhodnutie o  registrácii a  pridelení 
+IČ DPH s účinnosťou od 1. januára nasledujúceho kalendárneho roka. Zdaniteľná osoba môže ešte pred týmto 
+dátumom zaslať správcovi dane na predpísanom tlačive oznámenie, v ktorom vyznačí skutočnosť, že sa v súlade 
+s § 4 ods. 8 písm. b) rozhodla stať platiteľom  pred dňom uvedeným v  rozhodnutí (t.j. pred 1. januárom 
+nasledujúceho kalendárneho roka). V tomto prípade sa zdaniteľná osoba stane platiteľom d ňom nasledujúcim po 
+dni, v ktorom túto skutočnosť správcovi dane oznámila. 
+Príklad 10: 
+Zdaniteľná osoba 18.7.2025 presiahla obrat 50  000 eur. Dňa 24.7.2025 podá žiadosť o  registráciu. Zdaniteľnej 
+osobe je 3.8.2025 doručené rozhodnutie o  registrácii, v  ktorom je zdaniteľnej osobe pridelené IČ DPH a vo 
+výrokovej časti rozhodnutia je uvedené, že zdaniteľná osoba sa stáva platiteľom od 1. 1.2026. Zdaniteľná osoba 
+následne 30.9.2025 elektronicky zašle správcovi dane oznámenie, že sa rozhodla stať platiteľom pred  1.1.2026, 
+hoci nepresiahla obrat 62 500 eur (§ 4 ods. 8 písm. b)). Zdaniteľná osoba sa stane platiteľom nasledujúcim dňom 
+po dni oznámenia, t.  j. dňom  1.10.2025 a týmto dňom nadobúda platnosť aj pridelené IČ DPH. Platiteľom 
+s prideleným IČ DPH podľa § 5a je od 1.10.2025. 
+V prípade, že správca dane zistí, že žiadateľ o  registráciu nemá postavenie zdaniteľnej osoby, tak v  súlade 
+s § 4 ods. 10 písm. b) žiadosť o registráciu rozhodnutím zamietne. 
+Naďalej platí, že a k žiadateľ o dobrovoľnú registráciu aj postavenie zdaniteľnej osoby  má, avšak daňový úrad 
+disponuje dôkazmi, ktoré umožňujú objektívne konštatovať, že existuje pravdepodobnosť, že IČ DPH pridelené 
+žiadateľovi bude použité s cieľom dopustiť sa podvodu, táto skutočnosť predstavuje dostatočný dôvod na 
+zamietnutie žiadosti o registráciu (rozhodnutie Súdneho dvora EÚ C- 527/11 Ablessio SIA). Zamietnutie žiadosti o 
+registráciu sa však musí zakladať na celkovom posúdení všetkých okolnost í danej veci a na dôkazoch, ktoré boli 
+získané v rámci overovania informácii poskytnutých dotknutým subjektom.  
+Proti rozhodnutiu o zamietnutí registrácie je prípustné odvolanie. 
+2.6. Povinnosť registrácie podľa § 7 a § 7a zákona o DPH pred nadobudnutím statusu platiteľa 
+Ak zdaniteľnej osobe, ktorej už bolo doručené rozhodnutie o  registrácii, avšak status platiteľa ešte nenadobudla, 
+vznikne povinnosť registrovať sa pre daň podľa § 7 alebo § 7a, je povinná v súlade s § 4 ods. 11 písm. a) oznámiť 
+túto skutočnosť správcovi dane predtým, ako táto skutočnosť nastane. Správca dane na základe oznámenia vykoná 
+zmeny zápisu postavenia zdaniteľnej osoby v  daňovom registri, avšak nové rozhodnutie o  registrácii podľa § 7 
+alebo § 7a nevydáva. Zdaniteľná osoba sa odo dňa nasledujúceho po dni doručenia oznámenia až do 31.decembra 
+prebiehajúceho kalendárneho roka alebo do dňa, keď sa stane platiteľom v  prebiehajúcom kalendárnom roku 
+z iného dôvodu, považuje za osobu registrovanú podľa § 7 alebo § 7a zákona o DPH. Od tohto dňa je oprávnená 
+používať IČ DPH na vymedzený účel, ktoré jej bolo pridelené pri registrácii. 
+12 
+Príklad 11: 
+Zdaniteľná osoba podala 6.6.2025 žiadosť o registráciu z dôvodu, že prekročila obrat 50 000 eur. Zdaniteľná osoba 
+sa stáva platiteľom od 1. januára nasledujúceho  kalendárneho roka. Správca dane na základe podanej žiadosti 
+o registráciu vydal 16.6.2025 rozhodnutie  o registrácii od 1.1.2026 a  pridelil zdaniteľnej osobe IČ DPH takisto 
+s platnosťou od 1.1.2026. Rozhodnutie o registrácii bolo zdaniteľnej osobe doručené 20.6.2025. 
+V októbri 2025 zdaniteľná osoba zistila, že ďalším nákupom tovaru z  IČŠ hodnota ňou nadobudnutých tovarov 
+v roku 2025 z IČŠ presiahne 14 000 eur, v dôsledku čoho jej vzniká registračná povinnosť podľa § 7 zákona o DPH. 
+Zdaniteľná osoba preto ešte pred samotným nadobudnutím tovaru 28.10.2025 o tejto skutočnosti elektronicky zašle 
+správcovi dane oznámenie. Nasledujúcim dňom, t.  j. od 29.10.2025 sa zdaniteľná osoba považuje za osobu 
+registrovanú podľa § 7 a  od tohto dňa je pre tento účel oprávnená používať IČ DPH, ktoré jej bolo pridelené 
+rozhodnutím správcu dane doručeným 20.6.2025. Zdaniteľná osoba dňom 31.12.2025 stratí postavenie osoby 
+registrovanej podľa § 7 a v súlade s § 5a od 1.1.2026 nadobudne postavenie platiteľa s prideleným IČ DPH podľa 
+§ 4. 
+Ak zdaniteľná osoba, ktorá podala žiadosť o registráciu v dôsledku prekročenia obratu 50 000 eur a ešte jej nebolo 
+doručené rozhodnutie o registrácii, zistí, že jej vznikla povinnosť registrácie podľa § 7 alebo § 7a, je povinná túto 
+skutočnosť oznámiť správcovi dane. 
+V súlade s § 4 ods. 11 písm. b) sa odo dňa doručenia rozhodnutia o  registrácii až do dňa, ktorým sa zdaniteľná 
+osoba stáva platiteľom, zdaniteľná osoba bude považovať za registrovanú podľa § 7 alebo § 7a. Správca dane ani 
+v tomto prípade rozhodnutie o registrácii podľa § 7 alebo § 7a nevydáva. 
+2.7. Prechodné ustanovenie § 85kn ods. 1 a 2 zákona o DPH 
+V súlade s prechodným ustanovením § 85kn ods. 1 a 2, ak zdaniteľná osoba dosiahla do 31. decembra 2024 obrat 
+49 790 eur, alebo sa stala platiteľom podľa § 4 ods. 4 účinného do 31. decembra 2024, pri plnení registračnej 
+povinnosti postupuje podľa zákona o DPH účinného do 31. decembra 2024 a rovnako aj  daňový úrad v 
+registračnom konaní postupuje podľa pravidiel účinných do 31. decembra 2024. 
+Príklad 12: 
+Zdaniteľná osoba 27.12.2024 presiahla obrat 49 790 eur vyhodnocovaný za najviac 12 predchádzajúcich po sebe 
+nasledujúcich kalendárnych mesiacov. V súlade s prechodným ustanovením § 85kn ods. 1 účinným od 1.1.2025 
+má zdaniteľná osoba povinnosť podať žiadosť o  registráciu do 20.1.2025. Správca dane pri procese registrácie 
+postupuje tiež podľa znenia účinného do 31.12.2024, t. j. zdaniteľná osoba sa stane platiteľom dňom uvedeným 
+v rozhodnutí o registrácii. 
+3. diel Zahraničný platiteľ a registrácia podľa § 5 zákona o DPH 
+Podľa § 5 zákona o DPH sa na zahraničnú zdaniteľnú osobu, ktorá nadobudne na Slovensku postavenie platiteľa, 
+vzťahuje registračná a oznamovacia povinnosť obdobne ako na tuzemskú zdaniteľnú osobu. 
+3.1. Nadobudnutie statusu platiteľa zahraničnou zdaniteľnou osobou 
+Zahraničná zdaniteľná osoba sa v  súlade s § 5 ods. 1 stáva platiteľom dodaním tovaru alebo služby, ktoré je 
+predmetom DPH, alebo prijatím platby pred ich dodaním, okrem dodania tovaru a  služieb, ktoré sú taxatívne 
+vymedzené v § 5 ods. 2. Zákonnými v ýnimkami, kedy sa zahraničná osoba nestáva platiteľom v  tuzemsku, sú 
+situácie, ak zahraničná osoba v tuzemsku dodáva len: 
+- prepravné služby a s nimi súvisiace doplnkové služby, ktoré sú oslobodené od dane podľa § 47 ods. 6, 8, 
+10, a 12 a § 48 ods. 8 (§ 5 ods. 2 písm. a), 
+- služby alebo tovar, pri ktorých je osobou povinnou platiť daň príjemca tovaru alebo služby (§ 5 ods. 2 písm. 
+b), 
+13 
+- tovar podľa § 13 ods. 1 písm. e) a  f) a osobou povinnou platiť daň je platiteľ, ktorý má pridelené IČ DPH 
+podľa § 4, § 4b alebo § 5, alebo osoba registrovaná pre daň podľa § 7 alebo 7a (§ 5 ods. 2 písm. c), 
+- tovar do IČŠ, ktorý bol dovezený z tretieho štátu a zahraničná osoba bola zastúpená daňovým zástupcom 
+podľa § 69a, alebo ak dodáva tovar z  tuzemska do IČŠ alebo tretieho štátu, ktorý bol nadobudnutý 
+v tuzemsku z IČ ĎPH, a zahraničná osoba bola zastúpená daňovým zástupcom podľa § 69aa (§ 5 ods. 2 
+písm. d), 
+- tovar v rámci trojstranného obchodu podľa § 45, na ktorom je zúčastnená ako prvý odberateľ (§ 5 ods. 2 
+písm. e), 
+- tovar alebo služby, na ktoré uplatňuje osobitné úpravy podľa § 68a až § 68c alebo podľa ustanovení zákona 
+platného v IČŠ, ktoré zodpovedajú cit. ustanoveniam pre osobitnú úpravu OSS / iOSS, a členským štátom 
+spotreby je Slovenská republika (§ 5 ods. 2 písm. f), 
+- tovar alebo služby oslobodené od dane podľa § 28 až § 42 (§ 5 ods. 2 písm. g), 
+- tovar alebo služby oslobodené od dane podľa § 48c ods. 1 a 2 (§ 5 ods. 2 písm. h), 
+- tovar alebo služby oslobodené od dane podľa § 68f ods.  2, t. j. ak zahraničná osoba uplatňuje osobitnú 
+úpravu oslobodenia od dane pre malé podniky (§ 5 ods. 2 písm. i). 
+Pre posúdenie, či sa zahraničná osoba dodaním tovaru alebo služby do tuzemska stáva platiteľom , je potrebné 
+vyhodnotiť, či príslušné dodanie nezodpovedá niektorej z vymedzených výnimiek. 
+Príklad 13: 
+Zahraničná zdaniteľná osoba z  ČR predala 15.7.2025 nehnuteľnosť – rekreačnú chalupu na Liptove , občanovi. 
+Uvedená zahraničná zdaniteľná osoba v  tuzemsku neuplatňuje osobitnú úpravu oslobodenia od dane pre malý 
+podnik zahraničnej osoby podľa § 68f zákona o DPH. Keďže uvedené dodanie nehnuteľnosti (tovaru) v tuzemsku 
+je predmetom DPH a nenachádza sa vo výnimkách vymedzených v § 5 ods. 2,  táto osoba sa  stáva platiteľom 
+okamihom dodania v  tuzemsku – 15.7.2025. Zahraničná osoba je povinná do 22.7.2025 podať žiadosť 
+o registráciu. Správca dane zahraničnú osobu zaregistruje, vydá rozhodnutie  o registrácii a pridelí jej IČ DPH . 
+V súlade s § 5a sa od doručenia rozhodnutia o registrácii zahraničná osoba stáva platiteľom, ktorý má pridelené IČ 
+DPH. 
+Príklad 14: 
+Zahraničná zdaniteľná osoba so sídlom v  Dánsku dodala konzultačnú službu podnikateľovi z  Trnavy. Uvedená 
+zahraničná zdaniteľná osoba v tuzemsku neuplatňuje oslobodenie pre malý podnik zahraničnej osoby podľa § 68f 
+zákona o DPH. Nakoľko sa jedná o službu s miestom dodania podľa § 15 ods. 1 v tuzemsku, odberateľ - podnikateľ 
+z Trnavy, je povinný platiť DPH z tohto dodania. Keď uvedené dodanie je službou, pri ktorej je odberateľ povinný 
+platiť DPH v zmysle § 69 ods. 3, ide o  dodanie uvedené vo výnimke z  registrácie podľa § 5 ods. 2 písm. b).  
+Zahraničnej osobe nevzniká povinnosť registrácie v tuzemsku. 
+Ak by zahraničná zdaniteľná osoba bola malým podnikom zahraničnej osoby podľa § 68f ods. 2 zákona o DPH, tak 
+uvedená transakcia by bola oslobodená od DPH a neuplatní sa prenos daňovej povinnosti na odberateľa. V súlade 
+s § 5 ods.2 písm. i) by sa uplatnila výnimka, podľa ktorej sa zahraničná osoba nestáva platiteľom, ak v tuzemsku 
+dodáva len tovar alebo služby oslobodené od DPH podľa § 68f ods. 2. 
+Príklad 15: 
+Zahraničná osoba so sídlom v Gruzínsku nakúpi od platiteľa DPH v tuzemsku herné konzoly, ktoré následne predá 
+nezdaniteľným osobám v tuzemsku. Miestom dodania herných konzol je tuzemsko. Nakoľko dodávateľom tovaru 
+je zahraničná osoba z tretieho štátu, pre zahraničnú osobu neprichádza do úvahy uplatnenie osobitnej úpravy na 
+oslobodenie od dane pre malé podniky. Uvedená zahraničná osoba sa bez ohľadu na výšku dosiahnutého obratu 
+z predaja stáva platiteľom prvým dodaním hernej konzoly a  do piatich pracovných dní je povinná podať žiadosť 
+o registráciu Daňovému úradu Bratislava. 
+Príklad 16: 
+Zahraničná zdaniteľná osoba z Poľska je malým podnikom zahraničnej osoby, ktorý uplatňuje úpravu podľa § 68f, 
+t. j. v členskom štáte usadenia (PL) je identifikovaná pre osobitnú úpravu uplatňovania oslobodenia od dane a má 
+pridelené individuálne identifikačné číslo s  príponou EX (ďalej len „IČ EX“)  pre tuzemsko. Táto zdaniteľná osoba 
+14 
+dodala bezpečnostné dvere s  montážou slovenskému platiteľovi na nehnuteľnosti v  Trstenej. Nakoľko je toto 
+dodanie oslobodené od dane podľa § 68f ods. 2, zahraničnému dodávateľovi z  PL nevzniká povinnosť registrácie 
+v tuzemsku. Dodanie je výnimkou uvedenou v § 5 ods. 2 písm. i).  Neuplatní sa prenos daňovej povinnosti na 
+odberateľa. 
+Ak zahraničná osoba nie je malým podnikom zahraničnej osoby, ktorý uplatňuje osobitnú úpravu oslobodenia od 
+dane podľa § 68f  ods. 2, tak sa stáva platiteľom nielen dodaním tovaru alebo služby, ktoré sú predmetom dane 
+v tuzemsku, ale aj prijatím platby pred takýmto dodaním, alebo pri nadobudnutí tovaru v tuzemsku z IČŠ, ktoré je 
+predmetom DPH. 
+Zahraničná osoba, ktorá je malým podnikom zahraničnej osoby a ktorá uplatňuje osobitnú úpravu oslobodenia od 
+dane v tuzemsku podľa § 68f ods. 2, môže uplatňovať oslobodenie od dane iba do dosiahnutia legislatívne určenej 
+hranice obratu. Podľa § 68f ods. 6 zákona o DPH pri pre siahnutí obratu 62 500 eur (ročný tuzemský obrat) alebo 
+100 000 eur (ročný obrat v Únii) oslobodenie od dane nie je možné uplatňovať počnúc dodaním, ktorým bol obrat 
+prekročený. Týmto dodaním sa zahraničná osoba stáva platiteľom podľa § 5. 
+Ak zahraničná osoba, ktorá je malým podnikom zahraničnej osoby uplatňujúcim oslobodenie od dane v tuzemsku 
+podľa § 68f ods. 2, presiahne ročný obrat v tuzemsku 50 000 eur, zaniká jej právo uplatňovať oslobodenie od dane 
+prvým dňom nasledujúceho kalendárneho roka. Registračná povinnosť podľa § 5 takejto zahraničnej osobe 
+následne vzniká buď presiahnutím obratu 62  500 eur (ak aj k  presiahnutiu tejto hranice obratu dôjde v  rovnakom 
+kalendárnom roku), alebo prvým dodaním uskutočneným od 1. januára nasledujúceho  kalendárneho roka (bez 
+ohľadu na hodnotu dodania). 
+Ak zahraničná osoba s prideleným IČ EX pre tuzemsko prestane uplatňovať osobitnú úpravu podľa § 68f, resp. jej 
+bolo pre porušenie podmienok odňaté IČ EX pre tuzemsko, stáva sa platiteľom podľa § 5 ods. 1 prvým dodaním 
+tovaru alebo služby do tuzemska uskutočneným po dátume odňatia IČ EX a  vzťahuje sa na ňu registračná 
+povinnosť podľa § 5 ods. 3. 
+Príklad 17: 
+Zahraničnej zdaniteľnej osobe so sídlom v  Maďarsku a prideleným IČ EX pre uplatňovanie oslobodenia od dane 
+podľa § 68f bolo pre porušovanie podmienok od 1.10.2026 zrušené IČ EX pre tuzemsko. Naďalej má IČ EX 
+pridelené pre členské štáty Poľsko a Rakúsko. Dňa 25.11.2026 dodá stavebné práce na rodinnom dome občanovi 
+v Lučenci. Keďže predmetné dodanie služby v  tuzemsku je predmetom DPH v tuzemsku a od 1.10.2026 nie je 
+možné uplatniť výnimku uvedenú v § 5 ods. 2 písm. i), zahraničná osoba sa týmto dodaním služby  25.11.2026 
+stáva platiteľom podľa § 5 ods. 1. 
+Podľa § 5 ods. 4 sa platiteľom stáva aj zahraničná osoba, na ktorú v  tuzemsku prechádza hmotný majetok alebo 
+nehmotný majetok platiteľa, ktorý: 
+- zanikol bez likvidácie, 
+- sa rozdelil odštiepením,  
+- sa rozdelil cezhraničným odštiepením. 
+3.2. Registračná povinnosť 
+Zahraničná osoba je povinná podať žiadosť o  registráciu Daňovému úradu Bratislava do piatich pracovných dní 
+odo dňa, kedy sa stala platiteľom. Daňový úrad Bratislava zaregistruje platiteľa, pridelí mu IČ DPH a  vydá 
+rozhodnutie o registrácii najneskôr do de siatich dní odo dňa doručenia žiadosti o  registráciu. IČ DPH nadobúda 
+platnosť dňom, kedy sa zahraničná osoba stala platiteľom. 
+Zákon o DPH upravuje, že ak zahraničná osoba má pridelené IČ DPH podľa § 7 alebo na účely uplatňovania 
+osobitnej úpravy podľa § 68b ods. 2, daňový úrad jej pridelí to isté IČ DPH. Ak daňový úrad Bratislava zahraničnú 
+15 
+osobu nezaregistruje z dôvodu, že sa nestala platiteľom, vydá rozhodnutie o zamietnutí žiadosti o registráciu. Proti 
+rozhodnutiu o registrácii, ani proti rozhodnutiu o zamietnutí registrácie nie je možné podať odvolanie. 
+3.3. Prechodné ustanovenie § 85kn ods. 3 zákona o DPH 
+Ak zahraničná osoba podala žiadosť o registráciu podľa § 5 ods. 1 v znení účinnom do 31. decembra 2024, Daňový 
+úrad Bratislava rovnako uplatní postup podľa § 5 ods. 2 v znení účinnom do 31. decembra 2024. 
+Vypracoval: Finančné riaditeľstvo SR, Banská Bystrica 
+Odbor daňovej metodiky II 
+September 2025 

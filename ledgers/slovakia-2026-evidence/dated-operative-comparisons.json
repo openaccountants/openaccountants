@@ -1,0 +1,802 @@
+{
+  "method": "Last exact statutory article header, to next exact article header; whitespace joined only. Mechanical comparison, not a claim that whole future bodies were read. Actual present quotation reads are separately catalogued.",
+  "comparisons": [
+    {
+      "article": "2",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        3213,
+        3462
+      ],
+      "after_nativeLF": [
+        3216,
+        3465
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "adc64c930acd8176e66a87a2426dad81bad6a126441bc6c03c9e89ae9a521812",
+      "after_selected_sha256": "adc64c930acd8176e66a87a2426dad81bad6a126441bc6c03c9e89ae9a521812",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "11",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        4511,
+        4625
+      ],
+      "after_nativeLF": [
+        4531,
+        4648
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "75dd1b22ae5ca51f12b52ea7baf3d5a51c059c488c8ab8cf1f793fb48b545afd",
+      "after_selected_sha256": "ef20f272b5cf00bb3d7eb2d5aaabb0a42e665de36c922cfa9ae48ffadd21c9e0",
+      "whitespace_joined_equal": false,
+      "word_diff": "--- \n +++ \n @@ -419,21 +419,39 @@\n  v  domácnosti,  alebo  ktorá  v  príslušnom  zdaňovacom  období -poberala -peňažný -príspevok -na -opatrovanie63b) +poskytovala +neformálnu +starostlivosť +fyzickej +osobe +odkázanej +na +pomoc +inej +fyzickej +osoby, +ak +tejto +fyzickej +osobe +nebola +neformálna +starostlivosť +poskytovaná +aj +iným +neformálnym +opatrovateľom,  alebo  bola  zaradená  do  evidencie  uchádzačov  o  zamestnanie63c) @@ -502,17 +520,39 @@\n  §  33,  zvýšenie  dôchodku  pre  bezvládnosť,  štátne  sociálne -dávky64) +dávky,64) +príjem +neformálneho +opatrovateľa +za +poskytovanú +neformálnu +starostlivosť +v +časti, +v +ktorej +je +oslobodený +od +dane +podľa +§ +9 +ods. +1 +písm. +t)  a  štipendium  poskytované  študentovi,  ktorý  sa  sústavne  pripravuje"
+    },
+    {
+      "article": "12",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        4626,
+        4684
+      ],
+      "after_nativeLF": [
+        4649,
+        4707
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "de87a9c519bc6db59b8000ab3a70cbeff8888f89ab5ba44260ce429dc669bb41",
+      "after_selected_sha256": "de87a9c519bc6db59b8000ab3a70cbeff8888f89ab5ba44260ce429dc669bb41",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "13",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        4685,
+        4797
+      ],
+      "after_nativeLF": [
+        4708,
+        4820
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "db408c06ea34ef3ecd63f6cf64d7dde7c1a0331094e2d6eb4473c87ec5923471",
+      "after_selected_sha256": "db408c06ea34ef3ecd63f6cf64d7dde7c1a0331094e2d6eb4473c87ec5923471",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "15",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        5159,
+        5223
+      ],
+      "after_nativeLF": [
+        5182,
+        5246
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "c151868c1e996195bc26e25793020b76d2383245211d611b5092c8bb90259753",
+      "after_selected_sha256": "c151868c1e996195bc26e25793020b76d2383245211d611b5092c8bb90259753",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "16",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        5254,
+        5407
+      ],
+      "after_nativeLF": [
+        5277,
+        5430
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "c3ede78a78c7d0fbb6eb8608569f182193040bce1ca4b73e8cbcf16dcf21fefd",
+      "after_selected_sha256": "c3ede78a78c7d0fbb6eb8608569f182193040bce1ca4b73e8cbcf16dcf21fefd",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "17",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        5408,
+        6065
+      ],
+      "after_nativeLF": [
+        5431,
+        6088
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "fde68bd4ddbb337e4382d909228c3dfa6f1b1d7e886a419d511dbd666c70275d",
+      "after_selected_sha256": "fde68bd4ddbb337e4382d909228c3dfa6f1b1d7e886a419d511dbd666c70275d",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "17f",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        7052,
+        7135
+      ],
+      "after_nativeLF": [
+        7075,
+        7158
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "22043928325bf984c63cd9eabc46cd5c0e66d760f1c34319c08ba6b6066b38f8",
+      "after_selected_sha256": "22043928325bf984c63cd9eabc46cd5c0e66d760f1c34319c08ba6b6066b38f8",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "17g",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        7136,
+        7192
+      ],
+      "after_nativeLF": [
+        7159,
+        7215
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "e1b9e8c791e24ffd4a408e49b82d3f4d40855d7fa0aa5415889a6c67cab9d5bf",
+      "after_selected_sha256": "e1b9e8c791e24ffd4a408e49b82d3f4d40855d7fa0aa5415889a6c67cab9d5bf",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "17k",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        7504,
+        7597
+      ],
+      "after_nativeLF": [
+        7527,
+        7620
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "7f1da989239f282aa2c7a6fc4ff3bf2207016b20942d0f52b87f38b6c8b27f8c",
+      "after_selected_sha256": "7f1da989239f282aa2c7a6fc4ff3bf2207016b20942d0f52b87f38b6c8b27f8c",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "19",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        7787,
+        8144
+      ],
+      "after_nativeLF": [
+        7810,
+        8167
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "32652325a9e8e4fb715c7b172c3f49276f76f01042db1db38cabbe0812606041",
+      "after_selected_sha256": "32652325a9e8e4fb715c7b172c3f49276f76f01042db1db38cabbe0812606041",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "21",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        8338,
+        8441
+      ],
+      "after_nativeLF": [
+        8361,
+        8464
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "f43d637c4fb9b300f9f2b92cda54baf23c2a9dbe2d90ac59d23d7174edb172e7",
+      "after_selected_sha256": "f43d637c4fb9b300f9f2b92cda54baf23c2a9dbe2d90ac59d23d7174edb172e7",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "21a",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        8442,
+        8464
+      ],
+      "after_nativeLF": [
+        8465,
+        8487
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "e0de105339065f25eedd8b491ce7ea026e1ced114d242b37a4ac0e9dd1f78ee1",
+      "after_selected_sha256": "e0de105339065f25eedd8b491ce7ea026e1ced114d242b37a4ac0e9dd1f78ee1",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "22",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        8465,
+        8607
+      ],
+      "after_nativeLF": [
+        8488,
+        8630
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "043855d62ebabdb3a30348f8585384e1795c0fa763e179ac4e9b680f8d6fffbe",
+      "after_selected_sha256": "043855d62ebabdb3a30348f8585384e1795c0fa763e179ac4e9b680f8d6fffbe",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "25",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        8702,
+        8781
+      ],
+      "after_nativeLF": [
+        8725,
+        8804
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "13202d2d0da3754c89cbcf4625f28539260d2c78b7d862acf7d7a90c3ac6ba69",
+      "after_selected_sha256": "13202d2d0da3754c89cbcf4625f28539260d2c78b7d862acf7d7a90c3ac6ba69",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "26",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        8855,
+        8937
+      ],
+      "after_nativeLF": [
+        8878,
+        8960
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "65235e7a9b41a364f05f09e8e6600d01137d1915c8888115eae79796d573b80f",
+      "after_selected_sha256": "65235e7a9b41a364f05f09e8e6600d01137d1915c8888115eae79796d573b80f",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "27",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        8938,
+        8973
+      ],
+      "after_nativeLF": [
+        8961,
+        8996
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "2adb51da8114cdd1cf023322eb029012ee412e7c9aaf909dfa7209f874cf27a6",
+      "after_selected_sha256": "2adb51da8114cdd1cf023322eb029012ee412e7c9aaf909dfa7209f874cf27a6",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "30",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        9067,
+        9115
+      ],
+      "after_nativeLF": [
+        9090,
+        9138
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "8c14b12a491d1cffb8ac60cafd0a99bbbe7d4b0c88186d8dde0ca6f70b72997d",
+      "after_selected_sha256": "8c14b12a491d1cffb8ac60cafd0a99bbbe7d4b0c88186d8dde0ca6f70b72997d",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "30c",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        9327,
+        9418
+      ],
+      "after_nativeLF": [
+        9350,
+        9441
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "bf51b94415f7e7983c3fa0d6c090a816c404452136f19bfa89d9ec73224b9742",
+      "after_selected_sha256": "bf51b94415f7e7983c3fa0d6c090a816c404452136f19bfa89d9ec73224b9742",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "42",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        10909,
+        11013
+      ],
+      "after_nativeLF": [
+        10932,
+        11036
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "d986b31653de7ebe3807afc6caa4867a71916889fb0354f196c8f860fa865e8d",
+      "after_selected_sha256": "d986b31653de7ebe3807afc6caa4867a71916889fb0354f196c8f860fa865e8d",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "43",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        11014,
+        11384
+      ],
+      "after_nativeLF": [
+        11037,
+        11407
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "4a58e44f00f2941d1003e8d4bda13a1e5605b9cff61feedec12cbf22f9fedc93",
+      "after_selected_sha256": "4a58e44f00f2941d1003e8d4bda13a1e5605b9cff61feedec12cbf22f9fedc93",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "44",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        11409,
+        11467
+      ],
+      "after_nativeLF": [
+        11432,
+        11490
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "de1cc464a1fc7b3ee0725c86df7ed80dd70324c6a2244e11eb34482328654f7d",
+      "after_selected_sha256": "de1cc464a1fc7b3ee0725c86df7ed80dd70324c6a2244e11eb34482328654f7d",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "45",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        11468,
+        11516
+      ],
+      "after_nativeLF": [
+        11491,
+        11539
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "0e40e2b2c593257f21ef998399c3ee46d314d30af22f03109e8ea5e37f8d8e8e",
+      "after_selected_sha256": "0e40e2b2c593257f21ef998399c3ee46d314d30af22f03109e8ea5e37f8d8e8e",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "46b",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        11527,
+        11618
+      ],
+      "after_nativeLF": [
+        11550,
+        11641
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "66871adda074f6813ce8e8f3b9d41e4f63de6ce23fa237be8274d7e15fa59f2d",
+      "after_selected_sha256": "66871adda074f6813ce8e8f3b9d41e4f63de6ce23fa237be8274d7e15fa59f2d",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "49",
+      "before_source": 13,
+      "after_source": 14,
+      "before_nativeLF": [
+        11651,
+        11762
+      ],
+      "after_nativeLF": [
+        11674,
+        11785
+      ],
+      "before_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "after_raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "before_selected_sha256": "ec3737cb059026e3586b6081052aa659315abb08e32f417c948f3c1cb7905550",
+      "after_selected_sha256": "ec3737cb059026e3586b6081052aa659315abb08e32f417c948f3c1cb7905550",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "2",
+      "before_source": 12,
+      "after_source": 13,
+      "before_nativeLF": [
+        3160,
+        3409
+      ],
+      "after_nativeLF": [
+        3213,
+        3462
+      ],
+      "before_raw_sha256": "3276807bc798c5704e75cc464111ae486a3c31d73c2f578637c5497cd3eb0d7c",
+      "after_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "before_selected_sha256": "adc64c930acd8176e66a87a2426dad81bad6a126441bc6c03c9e89ae9a521812",
+      "after_selected_sha256": "adc64c930acd8176e66a87a2426dad81bad6a126441bc6c03c9e89ae9a521812",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "11",
+      "before_source": 12,
+      "after_source": 13,
+      "before_nativeLF": [
+        4452,
+        4566
+      ],
+      "after_nativeLF": [
+        4511,
+        4625
+      ],
+      "before_raw_sha256": "3276807bc798c5704e75cc464111ae486a3c31d73c2f578637c5497cd3eb0d7c",
+      "after_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "before_selected_sha256": "23f3098427499fa76d60824a59ed87c52d6219852c07dcb9e517ee605cccacd3",
+      "after_selected_sha256": "75dd1b22ae5ca51f12b52ea7baf3d5a51c059c488c8ab8cf1f793fb48b545afd",
+      "whitespace_joined_equal": false,
+      "word_diff": "--- \n +++ \n @@ -58,17 +58,17 @@\n  ktorý  a)  sa  rovná  alebo  je  nižší  ako -92,8-násobok +91,8-násobok  sumy  životného  minima39a)  platného  k  1.  januáru  príslušného @@ -104,38 +104,38 @@\n  len  \"platné  životné  minimum\"),  b)  je  vyšší  ako -92,8-násobok +91,8-násobok  platného  životného  minima,  nezdaniteľná  časť  základu  dane  ročne  na  daňovníka  je  suma  zodpovedajúca  rozdielu -44,2-násobku +51,6-násobku  platného  životného  minima  a  jednej -štvrtiny +tretiny  základu  dane;  ak  táto  suma  je  nižšia  ako @@ -161,17 +161,17 @@\n  základ  dane  a)  rovnajúci  sa  alebo  nižší  ako -176,8-násobok +154,8-násobok  platného  životného  minima  a  jeho  manželka  (manžel)  žijúca @@ -254,17 +254,17 @@\n  manželku  (manžela)  sa  rovná  nule,  b)  vyšší  ako -176,8-násobok +154,8-násobok  platného  životného  minima  a  jeho  manželka  (manžel)  žijúca @@ -287,23 +287,23 @@\n  ročne  na  manželku  (manžela)  je  suma  zodpovedajúca  rozdielu -63,4-násobku +70,8-násobku  platného  životného  minima  a  jednej -štvrtiny +tretiny  základu  dane  tohto  daňovníka;  ak  táto  suma  je"
+    },
+    {
+      "article": "13",
+      "before_source": 12,
+      "after_source": 13,
+      "before_nativeLF": [
+        4626,
+        4738
+      ],
+      "after_nativeLF": [
+        4685,
+        4797
+      ],
+      "before_raw_sha256": "3276807bc798c5704e75cc464111ae486a3c31d73c2f578637c5497cd3eb0d7c",
+      "after_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "before_selected_sha256": "db408c06ea34ef3ecd63f6cf64d7dde7c1a0331094e2d6eb4473c87ec5923471",
+      "after_selected_sha256": "db408c06ea34ef3ecd63f6cf64d7dde7c1a0331094e2d6eb4473c87ec5923471",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "15",
+      "before_source": 12,
+      "after_source": 13,
+      "before_nativeLF": [
+        5100,
+        5148
+      ],
+      "after_nativeLF": [
+        5159,
+        5223
+      ],
+      "before_raw_sha256": "3276807bc798c5704e75cc464111ae486a3c31d73c2f578637c5497cd3eb0d7c",
+      "after_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "before_selected_sha256": "af39349e03a3acf2d20bd2765c0e0c214e580b7d7b656961ff4591ee3773c9ea",
+      "after_selected_sha256": "c151868c1e996195bc26e25793020b76d2383245211d611b5092c8bb90259753",
+      "whitespace_joined_equal": false,
+      "word_diff": "--- \n +++ \n @@ -33,33 +33,80 @@\n  %  z  tej  časti  základu  dane,  ktorá  nepresiahne -176,8-násobok +154,8-násobok  sumy  platného  životného  minima  vrátane,  1b.  25  %  z  tej  časti  základu  dane,  ktorá  presiahne -176,8-násobok +154,8-násobok +sumy +platného +životného +minima +a +nepresiahne +212,4-násobok +sumy +platného +životného +minima +vrátane, +1c. +30 +% +z +tej +časti +základu +dane, +ktorá +presiahne +212,4-násobok +sumy +platného +životného +minima +a +nepresiahne +264-násobok +sumy +platného +životného +minima +vrátane, +1d. +35 +% +z +tej +časti +základu +dane, +ktorá +presiahne +264-násobok +sumy  platného  životného  minima,  2.  15  %  zo  základu @@ -141,33 +188,80 @@\n  %  z  tej  časti  základu  dane,  ktorá  nepresiahne -176,8-násobok +154,8-násobok  sumy  platného  životného  minima  vrátane,  3b.  25  %  z  tej  časti  základu  dane,  ktorá  presiahne -176,8-násobok +154,8-násobok +sumy +platného +životného +minima +a +nepresiahne +212,4-násobok +sumy +platného +životného +minima +vrátane, +3c. +30 +% +z +tej +časti +základu +dane, +ktorá +presiahne +212,4-násobok +sumy +platného +životného +minima +a +nepresiahne +264-násobok +sumy +platného +životného +minima +vrátane, +3d. +35 +% +z +tej +časti +základu +dane, +ktorá +presiahne +264-násobok +sumy  platného  životného  minima,  4.  19  %  z  osobitného @@ -315,9 +409,20 @@\n  osobitného  základu  dane  zisteného  podľa  §  51ea  ods. -2. +2, +5. +54 +% +z +osobitného +základu +dane +zisteného +podľa +§ +51eb."
+    },
+    {
+      "article": "16",
+      "before_source": 12,
+      "after_source": 13,
+      "before_nativeLF": [
+        5179,
+        5332
+      ],
+      "after_nativeLF": [
+        5254,
+        5407
+      ],
+      "before_raw_sha256": "3276807bc798c5704e75cc464111ae486a3c31d73c2f578637c5497cd3eb0d7c",
+      "after_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "before_selected_sha256": "c3ede78a78c7d0fbb6eb8608569f182193040bce1ca4b73e8cbcf16dcf21fefd",
+      "after_selected_sha256": "c3ede78a78c7d0fbb6eb8608569f182193040bce1ca4b73e8cbcf16dcf21fefd",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "17f",
+      "before_source": 12,
+      "after_source": 13,
+      "before_nativeLF": [
+        6972,
+        7055
+      ],
+      "after_nativeLF": [
+        7052,
+        7135
+      ],
+      "before_raw_sha256": "3276807bc798c5704e75cc464111ae486a3c31d73c2f578637c5497cd3eb0d7c",
+      "after_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "before_selected_sha256": "22043928325bf984c63cd9eabc46cd5c0e66d760f1c34319c08ba6b6066b38f8",
+      "after_selected_sha256": "22043928325bf984c63cd9eabc46cd5c0e66d760f1c34319c08ba6b6066b38f8",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "17g",
+      "before_source": 12,
+      "after_source": 13,
+      "before_nativeLF": [
+        7056,
+        7112
+      ],
+      "after_nativeLF": [
+        7136,
+        7192
+      ],
+      "before_raw_sha256": "3276807bc798c5704e75cc464111ae486a3c31d73c2f578637c5497cd3eb0d7c",
+      "after_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "before_selected_sha256": "e1b9e8c791e24ffd4a408e49b82d3f4d40855d7fa0aa5415889a6c67cab9d5bf",
+      "after_selected_sha256": "e1b9e8c791e24ffd4a408e49b82d3f4d40855d7fa0aa5415889a6c67cab9d5bf",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "43",
+      "before_source": 12,
+      "after_source": 13,
+      "before_nativeLF": [
+        10849,
+        11203
+      ],
+      "after_nativeLF": [
+        11014,
+        11384
+      ],
+      "before_raw_sha256": "3276807bc798c5704e75cc464111ae486a3c31d73c2f578637c5497cd3eb0d7c",
+      "after_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "before_selected_sha256": "58d857df74621201c999eb14531cb12824cb5a22356eb49cacb17d1863298716",
+      "after_selected_sha256": "4a58e44f00f2941d1003e8d4bda13a1e5605b9cff61feedec12cbf22f9fedc93",
+      "whitespace_joined_equal": false,
+      "word_diff": "--- \n +++ \n @@ -2033,127 +2033,343 @@\n  písm.  d),  okrem  daňovníka  podľa  §  2  písm. -x), -b) +x); +pre +daňovníka +podľa  §  2  písm. +d) +prvého +bodu, +ktorý +dosiahol +príjmy +podľa +§ +3 +ods. +1 +písm.  e), -okrem -daňovníka -podľa -§ -2 -písm. -x); -ak -tento -daňovník -požiada -správcu -dane -o -vydanie -potvrdenia -o -zaplatení -dane -z -príjmu, +toto  tlačivo  obsahuje  aj  údaje +týkajúce +sa +zrazenej +dane +z +týchto +príjmov  v  členení -podľa -písmena -c), -c) +na +meno, +priezvisko, +rodné +číslo +alebo +dátum +narodenia, +ak +ide +o +daňovníka, +ktorý +nemá +pridelené +rodné +číslo +v +Slovenskej +republike, +adresu +trvalého +pobytu, +sumu +zdaniteľného +príjmu +(základu +dane), +dátum +úhrady +zdaniteľného +príjmu, +sadzbu +dane, +sumu +zrazenej +dane +a +dátum +odvedenia +zrazenej +dane, +b)  §  2  písm. +e), +okrem +daňovníka +podľa +§ +2 +písm.  x); -pre -tohto -daňovníka +toto  tlačivo  obsahuje  aj  údaje -o +týkajúce +sa  zrazenej -dani +dane  v  členení  na  jednotlivé  druhy +zdaniteľných  príjmov  podľa  §  16  ods. -1, +1 +písm. +e) +prvého +bodu, +druhého +bodu, +štvrtého +bodu, +deviateho +bodu +a +jedenásteho +bodu +pri +príjmoch +podľa +§ +3 +ods. +1 +písm. +f) +vyplácaných +verejnou +obchodnou +spoločnosťou +alebo +komanditnou +spoločnosťou, +ktorej +uvedený +príjem +plynul +z +dôvodu, +že +sa +podieľa +na +základnom +imaní +obchodnej +spoločnosti +alebo +družstva,  sumu +zdaniteľného +príjmu +(základu +dane), +dátum +úhrady  zdaniteľného  príjmu,  sadzbu  dane,  sumu  zrazenej  dane,  dátum -úhrady -zdaniteľného -príjmu -a -dátum  odvedenia  zrazenej  dane, -pričom, +pričom  ak  ide  o  1.  fyzickú  osobu,  tlačivo  obsahuje  tiež  meno,  priezvisko, +dátum +narodenia,  adresu  trvalého  pobytu  a -dátum  jej -narodenia, +identifikačné +číslo +na +daňové +účely +pridelené +v +zahraničí,  2.  právnickú  osobu,  tlačivo  obsahuje  tiež  názov,  adresu  sídla  a  jej  identifikačné -číslo. +číslo +na +daňové +účely +pridelené +v +zahraničí, +c) +§ +2 +písm. +e), +ktorý +požiada +správcu +dane +o +vydanie +potvrdenia +o +zaplatení +dane +z +príjmov +a +daňovník +podľa +§ +2 +písm. +x); +toto +tlačivo +obsahuje +aj +údaje +týkajúce +sa +zrazenej +dane +v +členení +na +jednotlivé +druhy +zdaniteľných +príjmov +podľa +§ +16 +ods. +1, +sumu +zdaniteľného +príjmu +(základu +dane), +dátum +úhrady +zdaniteľného +príjmu, +sadzbu +dane, +sumu +zrazenej +dane, +dátum +odvedenia +zrazenej +dane, +pričom +ak +ide +o +1. +fyzickú +osobu, +tlačivo +obsahuje +tiež +meno, +priezvisko, +dátum +narodenia, +adresu +trvalého +pobytu +a +jej +identifikačné +číslo +na +daňové +účely +pridelené +v +zahraničí, +2. +právnickú +osobu, +tlačivo +obsahuje +tiež +názov, +adresu +sídla +a +jej +identifikačné +číslo +na +daňové +účely +pridelené +v +zahraničí.  (12)  Ak  platiteľ  dane  nevykoná  zrážku  dane  alebo"
+    },
+    {
+      "article": "44",
+      "before_source": 12,
+      "after_source": 13,
+      "before_nativeLF": [
+        11228,
+        11286
+      ],
+      "after_nativeLF": [
+        11409,
+        11467
+      ],
+      "before_raw_sha256": "3276807bc798c5704e75cc464111ae486a3c31d73c2f578637c5497cd3eb0d7c",
+      "after_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "before_selected_sha256": "de1cc464a1fc7b3ee0725c86df7ed80dd70324c6a2244e11eb34482328654f7d",
+      "after_selected_sha256": "de1cc464a1fc7b3ee0725c86df7ed80dd70324c6a2244e11eb34482328654f7d",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "45",
+      "before_source": 12,
+      "after_source": 13,
+      "before_nativeLF": [
+        11287,
+        11335
+      ],
+      "after_nativeLF": [
+        11468,
+        11516
+      ],
+      "before_raw_sha256": "3276807bc798c5704e75cc464111ae486a3c31d73c2f578637c5497cd3eb0d7c",
+      "after_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "before_selected_sha256": "0e40e2b2c593257f21ef998399c3ee46d314d30af22f03109e8ea5e37f8d8e8e",
+      "after_selected_sha256": "0e40e2b2c593257f21ef998399c3ee46d314d30af22f03109e8ea5e37f8d8e8e",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "46b",
+      "before_source": 12,
+      "after_source": 13,
+      "before_nativeLF": [
+        11346,
+        11435
+      ],
+      "after_nativeLF": [
+        11527,
+        11618
+      ],
+      "before_raw_sha256": "3276807bc798c5704e75cc464111ae486a3c31d73c2f578637c5497cd3eb0d7c",
+      "after_raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "before_selected_sha256": "b494c63e6ecb4e4181e49225b5e4d4e4f5e12ea5e0be16f255f5138c66f249ff",
+      "after_selected_sha256": "66871adda074f6813ce8e8f3b9d41e4f63de6ce23fa237be8274d7e15fa59f2d",
+      "whitespace_joined_equal": false,
+      "word_diff": "--- \n +++ \n @@ -71,16 +71,18 @@\n  daňovník,  ktorý  vykázal  daňovú  stratu.  (2)  Minimálnu  daň +právnickej +osoby  platí  daňovník,  ktorý  dosiahol  za  zdaňovacie  obdobie  zdaniteľné @@ -135,23 +137,44 @@\n  1  920  eur,  d)  prevyšujúce  sumu  500  000 +eur +a +neprevyšujúce +sumu +5 +000 +000  eur,  a  to  vo  výške  3  840 +eur, +e) +prevyšujúce +sumu +5 +000 +000 +eur, +a +to +vo +výške +11 +520  eur.  (3)  U  daňovníka,  ktorého  priemerný  evidenčný  počet"
+    },
+    {
+      "article": "16",
+      "before_source": 19,
+      "after_source": 20,
+      "before_nativeLF": [
+        2380,
+        2442
+      ],
+      "after_nativeLF": [
+        2384,
+        2446
+      ],
+      "before_raw_sha256": "9d8f390be6342c56a9d9ca903ee827010ac11dedf6d2bd51d572bc3f24167810",
+      "after_raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+      "before_selected_sha256": "f20e9e5139a9b37b87fc801ec963b573a875195ae44cf751d174d548638a8ec3",
+      "after_selected_sha256": "f20e9e5139a9b37b87fc801ec963b573a875195ae44cf751d174d548638a8ec3",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "27",
+      "before_source": 19,
+      "after_source": 20,
+      "before_nativeLF": [
+        2724,
+        2748
+      ],
+      "after_nativeLF": [
+        2728,
+        2752
+      ],
+      "before_raw_sha256": "9d8f390be6342c56a9d9ca903ee827010ac11dedf6d2bd51d572bc3f24167810",
+      "after_raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+      "before_selected_sha256": "c2a5e5b9c2a965fd70935fbe4817867dc4de7425f265f95716589969215eff13",
+      "after_selected_sha256": "c2a5e5b9c2a965fd70935fbe4817867dc4de7425f265f95716589969215eff13",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "69",
+      "before_source": 19,
+      "after_source": 20,
+      "before_nativeLF": [
+        4457,
+        4491
+      ],
+      "after_nativeLF": [
+        4461,
+        4495
+      ],
+      "before_raw_sha256": "9d8f390be6342c56a9d9ca903ee827010ac11dedf6d2bd51d572bc3f24167810",
+      "after_raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+      "before_selected_sha256": "a8af0403c4356c6d902e643f742cc5299de96dbf04ac6ed62f74620faa4a53f9",
+      "after_selected_sha256": "a8af0403c4356c6d902e643f742cc5299de96dbf04ac6ed62f74620faa4a53f9",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "79",
+      "before_source": 19,
+      "after_source": 20,
+      "before_nativeLF": [
+        4792,
+        4857
+      ],
+      "after_nativeLF": [
+        4796,
+        4861
+      ],
+      "before_raw_sha256": "9d8f390be6342c56a9d9ca903ee827010ac11dedf6d2bd51d572bc3f24167810",
+      "after_raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+      "before_selected_sha256": "f6c728a358ef95680cafd72d8247a0d91b578ccd290ffd8cfbe42490b972cee0",
+      "after_selected_sha256": "f6c728a358ef95680cafd72d8247a0d91b578ccd290ffd8cfbe42490b972cee0",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "154",
+      "before_source": 19,
+      "after_source": 20,
+      "before_nativeLF": [
+        7042,
+        7093
+      ],
+      "after_nativeLF": [
+        7066,
+        7117
+      ],
+      "before_raw_sha256": "9d8f390be6342c56a9d9ca903ee827010ac11dedf6d2bd51d572bc3f24167810",
+      "after_raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+      "before_selected_sha256": "36909b2899c6abf5a5850e10e882c2f054db143c035e3a0bf80a9c60306f260c",
+      "after_selected_sha256": "36909b2899c6abf5a5850e10e882c2f054db143c035e3a0bf80a9c60306f260c",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "155",
+      "before_source": 19,
+      "after_source": 20,
+      "before_nativeLF": [
+        7094,
+        7236
+      ],
+      "after_nativeLF": [
+        7118,
+        7260
+      ],
+      "before_raw_sha256": "9d8f390be6342c56a9d9ca903ee827010ac11dedf6d2bd51d572bc3f24167810",
+      "after_raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+      "before_selected_sha256": "b4521e412b257b72cd0bb52f8d31f9671dd3e4e120a4e88a723bf56621f7b65d",
+      "after_selected_sha256": "b4521e412b257b72cd0bb52f8d31f9671dd3e4e120a4e88a723bf56621f7b65d",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "156",
+      "before_source": 19,
+      "after_source": 20,
+      "before_nativeLF": [
+        7252,
+        7346
+      ],
+      "after_nativeLF": [
+        7276,
+        7370
+      ],
+      "before_raw_sha256": "9d8f390be6342c56a9d9ca903ee827010ac11dedf6d2bd51d572bc3f24167810",
+      "after_raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+      "before_selected_sha256": "d28e403ba2cb8bbdb701c227205a6ae9394d2f6f0d0d30c2036486fabf06d530",
+      "after_selected_sha256": "d28e403ba2cb8bbdb701c227205a6ae9394d2f6f0d0d30c2036486fabf06d530",
+      "whitespace_joined_equal": true
+    },
+    {
+      "article": "161",
+      "before_source": 19,
+      "after_source": 20,
+      "before_nativeLF": [
+        7519,
+        7522
+      ],
+      "after_nativeLF": [
+        7543,
+        7546
+      ],
+      "before_raw_sha256": "9d8f390be6342c56a9d9ca903ee827010ac11dedf6d2bd51d572bc3f24167810",
+      "after_raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+      "before_selected_sha256": "a07bf8034ee3d45a85a84527121b14a1fdb58534f1d2625b7ccc86a5b946a3f8",
+      "after_selected_sha256": "a07bf8034ee3d45a85a84527121b14a1fdb58534f1d2625b7ccc86a5b946a3f8",
+      "whitespace_joined_equal": true
+    }
+  ]
+}

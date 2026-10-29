@@ -1,0 +1,188 @@
+Kalkulačka na informatívny výpočet poistného pre SZČO od 1. 7. 2026 | Sociálna poisťovňa
+Skočiť na hlavný obsah
+Cookies na stránke Sociálnej poisťovne
+Aby táto stránka fungovala, používame nevyhnutné súbory cookie.
+Používame aj analytické cookies – ich prijatím súhlasíte s ich používaním.
+Nastavenia cookies
+Prijať všetky cookies
+Odmietnuť všetky cookies
+Header navigation
+Formuláre
+Pobočky
+Rezervačný systém
+Zoznam dlžníkov
+Menu
+Vyhľadávanie
+Elektronické služby
+Kto som
+Životné situácie
+Sociálne poistenie
+Nástroje a služby
+Kontakty
+English
+Breadcrumb
+Domov
+Nástroje a služby
+Kalkulačky
+Kalkulačky pre SZČO
+Page title
+Kalkulačka na informatívny výpočet poistného pre SZČO od 1. 7. 2026
+Od 1. júla 2026 platia nové pravidlá pre povinné poistenie SZČO
+(podľa novely zákona č. 461/2003 Z. z. o sociálnom poistení). Zmeny sa týkajú posudzovania vzniku a zániku povinného poistenia SZČO i samotného výpočtu vymeriavacieho základu.
+Pre informatívny výpočet vyberte situáciu, ktorá sa na vás vzťahuje:
+Ako SZČO som v súvislosti s príjmami z podnikania a z inej samostatnej zárobkovej činnosti podal(a) daňové priznanie za rok 2025.
+Ako SZČO som v súvislosti s príjmami z podnikania a z inej samostatnej zárobkovej činnosti nepodal(a) a ani nepodám daňové priznanie za rok 2025, keďže som ho ani na základe týchto príjmov nemal(a) povinnosť podať.
+Daňové priznanie za rok 2025 som nepodal(a), pretože som počas roka 2025 nebol(a) SZČO, v období od 1. 1. 2026 do 1. 7. 2026 mi vzniklo oprávnenie vykonávať činnosť SZČO, alebo som začal(a) činnosť SZČO vykonávať na základe čestného vyhlásenia a v období 60 mesiacov predchádzajúcich vzniku tohto oprávnenia/začatia vykonávania činnosti na základe čestného vyhlásenia som bol(a) SZČO.
+Daňové priznanie za rok 2025 som nepodal(a), pretože som počas roka 2025 nebol(a) SZČO, oprávnenie vykonávať činnosť SZČO mi vzniklo v januári 2026 alebo som činnosť SZČO začal(a) vykonávať na základe čestného vyhlásenia od januára 2026 a v období 60 mesiacov predchádzajúcich vzniku tohto oprávnenia/začatia vykonávania činnosti na základe čestného vyhlásenia som nebol(a) SZČO.
+Daňové priznanie za rok 2025 som nepodal(a), pretože som počas roka 2025 nebol(a) SZČO, oprávnenie vykonávať činnosť SZČO mi vzniklo v období od 1. 2. 2026 do 30. 6. 2026 alebo som v tomto období činnosť SZČO začal(a) vykonávať na základe čestného vyhlásenia a v období 60 mesiacov predchádzajúcich vzniku tohto oprávnenia/začatia vykonávania činnosti na základe čestného vyhlásenia som nebol(a) SZČO.
+Zadajte príjmy z podnikania a z inej samostatnej zárobkovej činnosti
+(podľa § 6 ods. 1 a ods. 2 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov – podľa Daňového priznania k dani z príjmov fyzickej osoby za rok 2025),
+výnos súvisiaci s podnikaním a s inou samostatnou zárobkovou činnosťou.
+Príjem v eurách
+SZČO bol priznaný starobný dôchodok alebo predčasný starobný dôchodok alebo je poberateľom výsluhového dôchodku (podľa zákona č. 328/2002 Z. z. o sociálnom zabezpečení policajtov a vojakov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov) a dovŕšila dôchodkový vek (podľa zákona č. 461/2003 Z. z.).
+V prípade, ak spĺňate aspoň jednu podmienku počas celého kalendárneho mesiaca, označte túto skutočnosť.
+Poznámka: Kalkulačka nepočíta poistné z tzv. „alikvotného" vymeriavacieho základu, preto ak spĺňate niektorú z uvedených podmienok len za časť kalendárneho mesiaca, kalkulačka sa nedá použiť.
+Váš vymeriavací základ na platenie poistného na sociálne poistenie je v sume osobitného vymeriavacieho základu 396,24 eur za obdobie od 1. júla 2026 do 31. decembra 2026 a za obdobie od 1. januára 2027 do 30. júna 2027 v sume 421,20 eur (z toho poistné v sume 139,61 eur).
+Ktoré fyzické osoby majú postavenie SZČO v sociálnom poistení
+SZČO na účely sociálneho poistenia je fyzická osoba, ktorá dovŕšila 18 rokov veku a:
+je oprávnená
+na výkon alebo prevádzkovanie zárobkovej činnosti zakladajúcej dosahovanie príjmov z podnikania a z inej samostatnej zárobkovej činnosti podľa § 6 ods. 1 a 2 zákona o dani z príjmov v znení neskorších predpisov, alebo
+podľa čestného vyhlásenia vykonáva
+samostatnú zárobkovú činnosť zakladajúcu dosahovanie príjmov z podnikania a z inej samostatnej zárobkovej činnosti podľa § 6 ods. 1 a 2 zákona o dani z príjmov v znení neskorších predpisov, na výkon ktorej sa nevyžaduje oprávnenie alebo postup podľa osobitného predpisu (tzv. SZČO bez oprávnenia – napr. umelec, autor).
+Z okruhu SZČO je vylúčená osoba, ktorá na základe zmluvy vykonáva osobnú asistenciu fyzickej osobe s ťažkým zdravotným postihnutím.
+Kedy vzniká a zaniká povinné nemocenské poistenie a povinné dôchodkové poistenie SZČO v roku 2026
+Povinné nemocenské poistenie a povinné dôchodkové poistenie SZČO vzniká
+od prvého dňa šiesteho kalendárneho mesiaca nasledujúceho po mesiaci
+:
+od ktorého je oprávnená na výkon alebo na prevádzkovanie podnikania a inej samostatnej zárobkovej činnosti, alebo
+od ktorého podľa svojho čestného vyhlásenia vykonáva samostatnú zárobkovú činnosť, avšak najskôr od prvého dňa šiesteho kalendárneho mesiaca nasledujúceho po mesiaci, v ktorom bolo vyhlásenie doručené Sociálnej poisťovni.
+Uvedené pravidlo sa uplatňuje vtedy, ak ide o začínajúcich podnikateľov, resp. ak od zániku posledného oprávnenia/skončenia vykonávania poslednej samostatnej zárobkovej činnosti, na výkon ktorej sa nevyžaduje oprávnenie alebo postup podľa osobitého predpisu (tzv. SZČO bez oprávnenia) uplynulo
+viac ako 60 mesiacov
+.
+Príklad č. 1:
+Fyzickej osobe vzniklo živnostenské oprávnenie 15. januára 2026. Nikdy predtým nebola SZČO. Dňom vzniku živnostenského oprávnenia začnú SZČO plynúť odvodové prázdniny. Povinné poistenie SZČO vznikne po ich uplynutí 1. júla 2026 a bude platiť poistné z osobitného vymeriavacieho základu, ktoré bude v sume 131,34 eura.
+Príklad č. 2:
+Fyzickej osobe vzniklo živnostenské oprávnenie 15. januára 2026. Predtým mala živnostenské oprávnenie, ktoré zaniklo v roku 2020 (uplynulo viac ako 60 mesiacov). Dňom vzniku živnostenského oprávnenia začnú SZČO plynúť odvodové prázdniny. Povinné poistenie SZČO vznikne po ich uplynutí 1. júla 2026 a bude platiť poistné z osobitného vymeriavacieho základu, ktoré bude v sume 131,34 eura.
+Ak od zániku posledného oprávnenia/ukončenia vykonávania poslednej samostatnej zárobkovej činnosti bez oprávnenia uplynulo
+menej ako 60 mesiacov,
+povinné poistenie SZČO, ktorá je opätovne v postavení SZČO,
+vznikne
+:
+odo dňa, od ktorého je SZČO oprávnená na výkon alebo na prevádzkovanie podnikania a inej samostatnej zárobkovej činnosti,
+odo dňa, od ktorého SZČO podľa svojho čestného vyhlásenia vykonáva samostatnú zárobkovú činnosť, avšak najskôr odo dňa doručenia vyhlásenia Sociálnej poisťovni.
+Povinné poistenie SZČO, ktorá mala prerušené povinné poistenie podľa § 26, vzniká odo dňa nasledujúceho po dni skončenia prerušenia povinného poistenia SZČO.
+Podmienkou vzniku povinného poistenia na základe podaného daňového priznania za relevantné obdobie je dosiahnutie príjmu z podnikania a z inej samostatnej zárobkovej činnosti vyššieho ako 10,5 násobku sumy životného minima pre jednu plnoletú fyzickú osobu platného k 1. januáru kalendárneho roka, za ktorý bolo podané toto daňové priznanie. Pre rok 2026 to predstavuje sumu vyššiu ako 2 876,90 eura. Príjem sa posudzuje k 1. júlu alebo k 1. októbru, ak má SZČO predĺženú lehotu na podanie daňového priznania, ktorý predchádza dňu,
+od ktorého je oprávnená na výkon alebo prevádzkovanie samostatnej zárobkovej činnosti,
+od ktorého podľa svojho čestného vyhlásenia začala vykonávať samostatnú zárobkovú činnosť bez oprávnenia, najskôr dňu doručenia vyhlásenia Sociálnej poisťovni,
+skončenia prerušenia povinného poistenia.
+Ak SZČO na základe daňového priznania za relevantné obdobie nedosiahla príjem vyšší ako 10,5 násobku sumy životného minima pre jednu plnoletú fyzickú osobu (t. j. 2 876,91 a viac), alebo daňové priznanie nepodala z dôvodu, že ho nebola povinná podať, keďže jej príjmy nepresiahli 50 % nezdaniteľnej časti základu dane na daňovníka (t. j. sumu 2 876,90 eura), tak jej povinné poistenie nevznikne. Pokiaľ však ako SZČO nepodala daňové priznanie za relevantné obdobie z dôvodu, že nemala postavenie SZČO, tak podmienky na nevznik povinného poistenia SZČO nespĺňa.
+Príklad č. 1:
+Fyzická osoba mala živnostenské oprávnenie od 1. januára 2026 do 30. júna 2026. Od 1. augusta 2026 má nové živnostenské oprávnenie. K 1. augustu 2026 sa posúdi vznik povinného poistenia na základe príjmu z podnikania a z inej samostatnej zárobkovej činnosti za rok 2025 (tento kalendárny rok predchádza 1. júlu 2026). V roku 2025 osoba nebola SZČO, a teda ako SZČO nepodala daňové priznanie. Povinné poistenie jej vznikne od 1. augusta 2026, t. j. odkedy jej opätovne vzniklo živnostenské oprávnenie – od zániku posledného oprávnenia uplynulo menej ako 60 mesiacov a nespĺňa podmienku na nevznik povinného poistenia, keďže daňové priznanie nepodala z dôvodu, že v roku 2025 nebola SZČO. Platí poistné z osobitného vymeriavacieho základu, ktoré je v sume 131,34 eura.
+Príklad č. 2:
+Fyzická osoba mala živnostenské oprávnenie od 1. júna 2025 do 31. októbra 2025. Od 1. decembra 2026 má nové živnostenské oprávnenie. K 1. decembru 2026 sa posúdi vznik povinného poistenia na základe príjmu z podnikania a z inej samostatnej zárobkovej činnosti za rok 2025 (tento kalendárny rok predchádza 1. júlu 2026). Povinné poistenie SZČO vznikne v závislosti od výšky príjmu v roku 2025, kedy mala osoba postavenie SZČO. Ak jej príjem z podnikania a z inej samostatnej zárobkovej činnosti na základe podaného daňového priznania za rok 2025 (resp. nepodania daňového priznania z dôvodu, že nemala povinnosť podať ho, keďže príjmy nepresiahli 50 % nezdaniteľnej časti základu dane na daňovníka) nebol vyšší ako 2 876,90 eura, tak jej od 1. decembra 2026 povinné poistenie nevznikne. Ak jej príjem bol vyšší ako 2 876,90 eura, tak jej 1. decembra 2026 vznikne povinné poistenie.
+Povinné nemocenské poistenie a povinné dôchodkové poistenie SZČO vzniká aj
+od 1. júla kalendárneho roka, resp. 1. októbra kalendárneho roka, ak má SZČO predĺženú lehotu na podanie daňového priznania, nasledujúceho po kalendárnom roku, za ktorý jej príjem z podnikania a z inej samostatnej zárobkovej činnosti podľa § 6 ods. 1 a 2 zákona o dani z príjmov v znení neskorších predpisov alebo výnos súvisiaci s podnikaním a s inou samostatnou zárobkovou činnosťou (okrem príjmov dosiahnutých na základe zmluvy o výkone osobnej asistencie fyzickej osobe s ťažkým zdravotným postihnutím) bol na základe daňového priznania vyšší ako 10,5 násobku sumy životného minima pre jednu plnoletú fyzickú osobu platného k 1. januáru kalendárneho roka, za ktorý bolo podané toto daňové priznanie,
+od 1. júla kalendárneho roka nasledujúceho po kalendárnom roku, počas ktorého osoba nebola SZČO. To platí len vtedy, keď SZČO neplynie lehota na vznik povinného poistenia od prvého dňa šiesteho kalendárneho mesiaca nasledujúceho po mesiaci od ktorého je oprávnená na výkon alebo na prevádzkovanie podnikania a inej samostatnej zárobkovej činnosti, alebo od ktorého podľa jej čestného vyhlásenia vykonáva samostatnú zárobkovú činnosť, avšak najskôr od prvého dňa šiesteho kalendárneho mesiaca nasledujúceho po mesiaci, v ktorom bolo vyhlásenie doručené Sociálnej poisťovni.
+Povinné nemocenské poistenie a povinné dôchodkové poistenie SZČO, ktorá nie je k 30. júnu 2026 povinne poistená, vzniká povinné poistenie
+1. júla 2026, resp. 1. októbra 2026, ak má predĺženú lehotu na podanie daňového priznania za rok 2025, ktorá za rok 2025 dosiahla príjem z podnikania a z inej samostatnej zárobkovej činnosti alebo výnos súvisiaci s podnikaním a s inou samostatnou zárobkovou činnosťou vyšší ako 2 876,90 eura (vyšší ako 10,5 násobku sumy životného minima pre jednu plnoletú fyzickú osobu platného k 1. januáru 2025).
+1. júla 2026, ktorá v roku 2025 nebola oprávnená na výkon alebo prevádzkovanie samostatnej zárobkovej činnosti alebo nevykonávala samostatnú zárobkovú činnosť bez oprávnenia.
+Príklad č. 1:
+Fyzická osoba má živnostenské oprávnenie od roku 2024, k 30. júnu 2026 nie je povinne poistená. Povinné poistenie jej 1. júla 2026, resp. 1. októbra 2026, ak má predĺženú lehotu na podanie daňového priznania, vznikne v prípade, že za rok 2025 dosiahla príjem z podnikania a z inej samostatnej zárobkovej činnosti vyšší ako 2 876,90 eura. V prípade nepresiahnutia zákonom stanovenej výšky príjmu jej povinné poistenie 1. júla/1. októbra 2026 nevznikne.
+Príklad č. 2:
+Fyzická osoba má živnostenské oprávnenie od 1. marca 2026. Povinné poistenie jej nevzniklo. Predtým mala živnostenské oprávnenie od 1. mája 2023 do 30. novembra 2024. Keďže v roku 2025 nemala postavenie SZČO a ako SZČO nepodala daňové priznanie za rok 2025, tak jej povinné poistenie vznikne 1. júla 2026 a platí poistné z osobitného vymeriavacieho základu, ktoré je v sume 131,34 eura.
+SZČO, ktorej povinné poistenie k 30. júnu 2026 trvá, nemá predĺženú lehotu na podanie daňového priznania za rok 2025 a za rok 2025 dosiahla príjem z podnikania a z inej samostatnej zárobkovej činnosti alebo výnos súvisiaci s podnikaním alebo s inou samostatnou zárobkovou činnosťou vyšší ako 10,5 násobku sumy životného minima pre jednu plnoletú fyzickú osobu platného k 1. januáru 2025, t. j. príjem vyšší ako 2 876,90 eura, jej povinné poistenie pokračuje aj po 30. júni 2026.
+SZČO, ktorej povinné poistenie k 30. júnu 2026 trvá a má predĺženú lehotu na podanie daňového priznania za rok 2025, povinné poistenie jej pokračuje aj od 1. júla 2026 do 30. septembra 2026. Tejto SZČO, ktorá za rok 2025 dosiahla príjem z podnikania a z inej samostatnej zárobkovej činnosti alebo výnos súvisiaci s podnikaním alebo s inou samostatnou zárobkovou činnosťou vyšší ako 10,5 násobku sumy životného minima pre jednu plnoletú fyzickú osobu platného k 1. januáru 2025, t. j. príjem vyšší ako 2 876,90 eura, povinné poistenie trvá aj po 30. septembri 2026.
+Povinné nemocenské poistenie a povinné dôchodkové poistenie SZČO zaniká
+odo dňa, od ktorého nie je oprávnená na výkon alebo na prevádzkovanie podnikania a inej samostatnej zárobkovej činnosti,
+odo dňa, od ktorého podľa jej čestného vyhlásenia nevykonáva samostatnú zárobkovú činnosť bez oprávnenia, najskôr odo dňa doručenia vyhlásenia Sociálnej poisťovni,
+30. júna kalendárneho roka, resp. 30. septembra kalendárneho roka, ak má SZČO predĺženú lehotu na podanie daňového priznania, nasledujúceho po kalendárnom roku, za ktorý jej príjem z podnikania a z inej samostatnej zárobkovej činnosti na základe daňového priznania alebo výnos súvisiaci s podnikaním a s inou samostatnou zárobkovou činnosťou nebol vyšší ako 10,5 násobku sumy životného minima pre jednu plnoletú fyzickú osobu platného k 1. januáru kalendárneho roka, za ktorý bolo podané toto daňové priznanie. Rovnako to platí aj pre SZČO, ktorá daňové priznanie nepodala z dôvodu, že ho nebola povinná podať, keďže jej príjmy za zdaňovacie obdobie nepresiahli 50 % nezdaniteľnej časti základu dane na daňovníka.
+Pri posudzovaní vzniku povinného nemocenského poistenia a povinného dôchodkového poistenia SZČO a vzniku povinnosti platiť poistné na základe dosiahnutých príjmov z podnikania a z inej samostatnej zárobkovej činnosti sa do úvahy berú dosiahnuté príjmy z podnikania a z inej samostatnej zárobkovej činnosti
+podľa § 6 ods. 1 a 2 zákona o dani z príjmov alebo výnos súvisiaci s podnikaním a s inou samostatnou zárobkovou činnosťou za rok 2025
+bez odpočítania výdavkov
+.
+Ak SZČO vznikne, resp. jej zanikne povinné nemocenské poistenie a povinné dôchodkové poistenie, vznik, resp. zánik tohto poistenia SZČO oznamuje Sociálna poisťovňa
+. Pri vzniku poistenia oznamuje Sociálna poisťovňa SZČO aj vymeriavací základ, výšku poistného, dátum splatnosti poistného a údaje týkajúce sa úhrady poistného. Tieto údaje je Sociálna poisťovňa povinná oznámiť SZČO v lehote 20 dní od vzniku, resp. zániku povinného poistenia. Pokiaľ o vzniku, resp. zániku povinného poistenia neinformovala Sociálna poisťovňa SZČO do 20 dní od vzniku, resp. zániku tohto poistenia, odporúčame, aby SZČO kontaktovala Sociálnu poisťovňu a oznámila jej skutočnosti potrebné pre posúdenie vzniku, resp. zániku poistenia.
+Tzv. zahraničné SZČO, na ktoré sa vzťahujú slovenské právne predpisy na základe nariadenia EÚ alebo medzinárodnej zmluvy, majú povinnosť oznamovať výšku príjmov a výdavkov SZČO do ôsmich dní od právoplatného určenia príslušnosti k právnym predpisom Slovenskej republiky a v bežnom roku najneskôr do 31. mája kalendárneho roka za predchádzajúci kalendárny rok. Taktiež tzv. zahraničné SZČO majú naďalej povinnosť oznamovať vznik alebo zánik oprávnenia na výkon činnosti SZČO, v lehote do ôsmich dní od vzniku alebo zániku oprávnenia, resp. čestne vyhlásiť začatie alebo skončenie výkonu zárobkovej činnosti, ktorá sa vykonáva bez oprávnenia.
+Vymeriavací základ na platenie poistného
+Pre povinne poistenú SZČO, ktorá dosiahla za rok 2025
+príjem
+z podnikania a z inej samostatnej zárobkovej činnosti alebo výnos súvisiaci s podnikaním a s inou samostatnou zárobkovou činnosťou
+vyšší ako 50 % všeobecného vymeriavacieho základu
+, t. j. príjem
+9 144, 01 eura a viac, od 1. júla 2026, resp. od 1. októbra 2026, ak mala predĺženú lehotu na podanie daňového priznania za rok 2025, je vymeriavací základ podiel jednej dvanástiny základu dane z príjmov fyzických osôb dosiahnutý vykonávaním podnikania a inej samostatnej zárobkovej činnosti za rok 2025 okrem príjmov dosiahnutých na základe zmluvy o výkone osobnej asistencie fyzickej osobe s ťažkým zdravotným postihnutím (ďalej len „ČZD“), ktorý nie je znížený o zaplatené poistné na povinné verejné zdravotné poistenie, poistné na povinné nemocenské poistenie, poistné na povinné dôchodkové poistenie a príspevky na starobné dôchodkové sporenie, ktoré sa platia spolu s poistným na starobné poistenie z povinného dôchodkového poistenia (ak je SZČO sporiteľ), poistné do rezervného fondu solidarity povinne dôchodkovo poistenej SZČO a upraveného o príjmy a výdavky, ktoré sa nezahŕňajú do vymeriavacieho základu a koeficientu 1,486. Vymeriavací základ sa zaokrúhľuje na najbližší eurocent nadol.
+Vymeriavací základ na platenie poistného povinne poistenej SZČO, ktorá za rok 2025 dosiahla príjem vyšší ako 9 144 eur, sa vypočíta od 1. júla 2026/1. októbra 2026, ak mala predĺženú lehotu na podanie daňového priznania za rok 2025, nasledovne:
+Vymeriavací základ = (ČZD + zaplatené poistné na povinné verejné zdravotné poistenie, poistné na povinné sociálne poistenie a príspevky na starobné dôchodkové sporenie SZČO v roku 2025) : 1,486 : 12
+Takto určený vymeriavací základ sa použije
+od 1. júla 2026/1. októbra
+2026
+(ak mala SZČO predĺženú lehotu na podanie daňového priznania)
+do 30. júna 2027/30. septembra 2027
+(ak mala SZČO predĺženú lehotu na podanie daňového priznania).
+Pre povinne poistenú SZČO, ktorá nemá vymeriavací základ podľa bodu 1, sa zavádza
+„osobitný“ vymeriavací základ, ktorý je 26 % z jednej dvanástiny všeobecného vymeriavacieho základu
+platného v kalendárnom roku, ktorý dva roky predchádza kalendárnemu roku, za ktorý sa platí poistné
+(t. j. 26 % priemernej mesačnej mzdy v hospodárstve Slovenskej republiky spred dvoch rokov).
+Za obdobie od 1. júla 2026 do 31. decembra 2026 je osobitný vymeriavací základ v
+sume 396,24 eura
+, z ktorého platí SZČO
+poistné vo výške 131,34 eura
+. Za obdobie od 1. januára 2027 do 30. júna 2027 je osobitný vymeriavací základ v sume 421,20 eura, z ktorého platí SZČO poistné v sume 139,61 eura.
+Z osobitného vymeriavacieho základu platí poistné na sociálne poistenie povinne poistená SZČO, ktorej povinné poistenie vznikne:
+1. júla/1. októbra (ak mala predĺženú lehotu na podanie daňového priznania) kalendárneho roka nasledujúceho po kalendárnom roku, za ktorý jej príjem z podnikania a z inej samostatnej zárobkovej činnosti alebo výnos súvisiaci s podnikaním a s inou samostatnou zárobkovou činnosťou bol vyšší ako 10,5 násobku sumy životného minima pre jednu plnoletú fyzickú osobu platného k 1. januáru kalendárneho roka, za ktorý bolo podané toto daňové priznanie a rovný alebo nižší ako 50 % všeobecného vymeriavacieho základu. Za rok 2025 je to príjem vyšší ako 2 876,90 eura a rovný alebo nižší ako 9 144 eur,
+od prvého dňa šiesteho kalendárneho mesiaca nasledujúceho po mesiaci, od ktorého je oprávnená na výkon alebo na prevádzkovanie podnikania a inej samostatnej zárobkovej činnosti/od prvého dňa šiesteho kalendárneho mesiaca nasledujúceho po mesiaci, od ktorého SZČO bez oprávnenia podľa svojho čestného vyhlásenia vykonáva túto zárobkovú činnosť, ale najskôr od prvého dňa šiesteho kalendárneho mesiaca nasledujúceho po mesiaci, v ktorom bolo vyhlásenie doručené Sociálnej poisťovni,
+od 1. júla kalendárneho roka nasledujúceho po kalendárnom roku, počas ktorého nebola SZČO,
+odo dňa, od ktorého opätovne nadobudne postavenie SZČO, ak v relevantnom období nemala postavenie SZČO,
+odo dňa, od ktorého opätovne nadobudne postavenie SZČO, ak v relevantnom období dosiahla príjem z podnikania a z inej samostatnej zárobkovej činnosti alebo výnos súvisiaci s podnikaním a s inou samostatnou zárobkovou činnosťou vyšší ako 10,5 násobku sumy životného minima pre jednu plnoletú fyzickú osobu platného k 1. januáru kalendárneho roka, za ktorý bolo podané toto daňové priznanie a rovný alebo nižší ako 50 % všeobecného vymeriavacieho základu. Za rok 2025 je to príjem vyšší ako 2 876,90 eura a rovný alebo nižší ako 9 144 eur.
+Minimálny vymeriavací základ pre povinne nemocensky poistenú a povinne dôchodkovo poistenú SZČO je za obdobie od 1. januára 2026 do 31. decembra 2026 v sume 914,40 eura.
+Maximálny vymeriavací základ pre povinne poistenú SZČO za obdobie od 1. januára 2026 do 31. decembra 2026 na platenie poistného na nemocenské poistenie, poistného na dôchodkové poistenie a poistného do rezervného fondu solidarity je v sume 16 764,00 eur.
+Text
+Sadzby poistného pre SZČO pozri v tabuľke:
+SZČO – poistné od 1. 1. 2026
+facebook
+instagram
+youtube
+linkedin
+O nás
+Sídlo
+Charakteristika
+O Sociálnej poisťovni
+Čísla účtov
+Zákon o sociálnom poistení
+Ochrana osobných údajov (GDPR)
+Medzinárodné zmluvy
+Voľné pracovné miesta
+SP transparentne
+Štatistiky
+Hospodárenie
+Zoznam dlžníkov
+Zmluvy a objednávky
+Kybernetická bezpečnosť
+Vyhlásenie o prístupnosti
+Pravidlá cookies
+Kontakty
+Informačno-poradenské centrum
+Formulár pre otázky
+Technická podpora eSlužieb
+Rezervačný systém
+Pobočky
+Ústredie
+Médiá
+Top témy
+Dôchodková prognóza
+Dôchodkový vek
+Zmeny v roku 2026
+Elektronický účet poistenca
+Starostlivosť o dieťa - dôchodok
+Mobilná aplikácia
+PD A1 elektronicky
+Asignácia dane
+Tabuľky platenia poistného
+Práva pri pohybe v EÚ
+Sledujte nás
+Odber noviniek
+Facebook
+Instagram
+LinkedIn
+YouTube
+Copyright
+Copyright © Sociálna poisťovňa, ústredie, Ul. 29. augusta č. 8 a 10, 813 63 Bratislava 1

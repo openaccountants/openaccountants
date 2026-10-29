@@ -1,0 +1,13 @@
+--- 
++++ 
+@@ -1701,8 +1701,8 @@
+ LF 32–53:
+ > osobu ako celok, aj ak adresa tohto miesta nie je zapísaná v obchodnom registri, e) daňovníkom s obmedzenou daňovou povinnosťou 1. fyzická osoba neuvedená v písmene d) prvom bode alebo fyzická osoba uvedená v písmene d) prvom bode, ktorá sa v dôsledku uplatnenia medzinárodnej zmluvy považuje za daňovníka s neobmedzenou daňovou povinnosťou v inom zmluvnom štáte, 2. fyzická osoba uvedená v písmene d) prvom bode, ktorá sa na území Slovenskej republiky obvykle zdržiava len na účely štúdia alebo liečenia, 3. právnická osoba neuvedená v písmene d) druhom bode alebo právnická osoba uvedená v písmene d) druhom bode, ktorá sa v dôsledku uplatnenia medzinárodnej zmluvy považuje za daňovníka s neobmedzenou daňovou povinnosťou v inom zmluvnom štáte, f) predmetom dane daňovníka s neobmedzenou daňovou povinnosťou príjem (výnos) plynúci zo zdrojov na území Slovenskej republiky a zo zdrojov v zahraničí, g) predmetom dane daňovníka s obmedzenou daňovou povinnosťou príjem (výnos) plynúci zo zdrojov na území Slovenskej republiky (§ 16), h) zdaniteľným príjmom príjem, ktorý je predmetom dane a nie je oslobodený od dane podľa
+ 
+-LF 64–66:
+-> daňovou stratou rozdiel, o ktorý daňové výdavky prevyšujú zdaniteľné príjmy pri rešpektovaní vecnej a časovej súvislosti1) zdaniteľných príjmov a daňových výdavkov v príslušnom zdaňovacom období, l)
++LF 64–67:
++> daňovou stratou rozdiel, o ktorý daňové výdavky prevyšujú zdaniteľné príjmy pri rešpektovaní vecnej a časovej súvislosti1) zdaniteľných príjmov a daňových výdavkov v príslušnom zdaňovacom období, l) zdaňovacím obdobím kalendárny rok, ak tento zákon neustanovuje inak,
+ 
+ <a id="ita2-transaction"></a>
+ 

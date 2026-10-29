@@ -1,0 +1,1054 @@
+{
+  "guide_sha256": "bd57065a15ce1f58a8fe316ff6786d24c073d6b542fd38822ce5629e554e081e",
+  "main_revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "main_bytes": 28515,
+  "main_sha256": "5a88fc351ce01784c781c8953c3f02e6272f79cf5a727d5dea381279bfb926bd",
+  "earliest_preimage": {
+    "revision": "74ac9cd1^",
+    "present": false
+  },
+  "prior_423_unit_map_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/full-no-loss-unit-ledger.json",
+  "prior_map_sha256": "7c0210e5320a6687950cfee3ae3df747a622eff5928e6bc0d21767e7eade94c5",
+  "rows": [
+    {
+      "comparator": "origin/main",
+      "unit": 1,
+      "old_LF_start": 1,
+      "old_LF_end": 13,
+      "old_text": "---\nname: sk-cross-border\ndescription: \"Use this skill for Slovak cross-border income tax in 2026 (calendar year). It covers who is a Slovak tax resident (home, 183 days, seat or place of effective management), what Slovak-source income a non-resident is taxed on, when a permanent establishment exists (six months, 183 days of services, dependent agents, repeat platform letting), withholding tax at 19%, 7% on dividends to individuals and 35% for non-cooperating states, the 19% / 35% security deduction (zabezpečenie dane) on payments to non-EU/EEA non-residents, the EU interest and royalty exemption, dividends paid abroad, the treaty credit and exemption methods, and the company exit tax at 21%. Trigger on: zrážková daň, zabezpečenie dane, nerezident, stála prevádzkareň, Slovak withholding tax, paying a foreign supplier from Slovakia, moving to or leaving Slovakia, foreign tax credit Slovakia, exit tax Slovakia. Out of scope: slovakia-pit (individual return), sk-corporate-income-tax, sk-payroll-social, slovakia-vat-registration-4-7-7a and slovakia-vat-return (VAT), transfer pricing.\"\nversion: 0.1\njurisdiction: SK\ntax_year: 2026\nlast_updated: 2026-10-23\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ncategory: international\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+      "old_unit_sha256": "ad244941b306b46d368aa85536cc431fd976e03696ef4dab0d9d25c24a642344",
+      "current_LF": [
+        1,
+        13
+      ],
+      "disposition": "Metadata expanded; substantive scope mapped below."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 2,
+      "old_LF_start": 15,
+      "old_LF_end": 15,
+      "old_text": "# Slovakia: cross-border income tax (2026)",
+      "old_unit_sha256": "ad3a0caba82cf82b63d7918d6da19ca7397cdfde50ce70b57f3fddb0a280a698",
+      "current_LF": [
+        15,
+        15
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 3,
+      "old_LF_start": 17,
+      "old_LF_end": 17,
+      "old_text": "This skill covers what happens in Slovak income tax when income, people or companies cross the border. The law is the Income Tax Act, Act No. 595/2003 Coll. (zákon o dani z príjmov, \"ZDP\"), in the version in force from 1 January 2026 to 30 December 2026. Procedure, penalties and interest come from the Tax Procedure Code, Act No. 563/2009 Coll. (daňový poriadok). The authority is the Financial Administration (Finančná správa SR). The currency is the euro.",
+      "old_unit_sha256": "8d93650ba6092dc29a2446c60fc9fa5b818bca966b831bab2bde7efa480cfa7c",
+      "current_LF": [
+        17,
+        17
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 4,
+      "old_LF_start": 19,
+      "old_LF_end": 19,
+      "old_text": "Detail lives in the sibling skills. Read [slovakia-pit](slovakia-pit.md) for the individual return, [sk-corporate-income-tax](sk-corporate-income-tax.md) for companies, [sk-payroll-social](sk-payroll-social.md) for payroll and social contributions, and [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md) for VAT on cross-border services. Those four skills still carry 2025 figures.",
+      "old_unit_sha256": "b86c08f35f301ba908a179bc463c74eb1516549112f1503689398d726a2e2ff6",
+      "current_LF": [
+        19,
+        19
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F21 falseold-sibling-yearclaimremoved"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 5,
+      "old_LF_start": 21,
+      "old_LF_end": 21,
+      "old_text": "**What changed for 2026.** The 2025 consolidation package, Act No. 261/2025 Coll. of 24 September 2025, did not change the withholding rules (§ 43) or the security rules (§ 44). It did change the individual rate bands to 19%, 25%, 30% and 35% for 2026 (§ 15 letter a), § 52zzzj), cut the personal allowance bands, and replaced the company minimum tax scale (§ 46b(2)). The 7% dividend rate and the 10% / 21% / 24% company rates were already in force from 2025. Set against the version in force from 1 December 2025, the 2026 text of § 2, § 13, § 16, § 17f, § 17g, § 44 and § 45 is unchanged. In § 43 only the content of the withholding notice changed (§ 43(11)): for each non-resident recipient it now gives the income type (for § 16(1)(e) points 1, 2, 4, 9 and 11), the amount, the rate, the recipient's address and its foreign tax number.",
+      "old_unit_sha256": "2b9bfee53d1a83385ec704e0192cd2ba454935b2467cfa59b53635b77abe9c8b",
+      "current_LF": [
+        21,
+        21
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 6,
+      "old_LF_start": 23,
+      "old_LF_end": 23,
+      "old_text": "## Who this applies to",
+      "old_unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "current_LF": [
+        23,
+        23
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 7,
+      "old_LF_start": 25,
+      "old_LF_end": 25,
+      "old_text": "### Individuals",
+      "old_unit_sha256": "da6e259f898d2a9d013f32258b750afc6bbfe05272a8be5ce52a7ca6c941e67a",
+      "current_LF": [
+        25,
+        25
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 8,
+      "old_LF_start": 27,
+      "old_LF_end": 27,
+      "old_text": "An individual has unlimited tax liability in Slovakia (is resident) if they have permanent residence (trvalý pobyt), a home (bydlisko), or habitually stay here (§ 2 letter d) point 1 ZDP).",
+      "old_unit_sha256": "0a450610db3024f47fbd4f259fdb3cb942107ef114c9473e4b793e0daa4f7e96",
+      "current_LF": [
+        27,
+        27
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 9,
+      "old_LF_start": 29,
+      "old_LF_end": 32,
+      "old_text": "- **Home.** A person has a home here if they have accommodation that is not only occasional, and their personal and economic ties show an intention to stay there permanently (§ 2 letter d) point 1a).\n- **183 days.** A person habitually stays here if present for at least 183 days in the calendar year, in one stretch or several. Every day started counts (§ 2 letter d) point 1b).\n- **Study or medical treatment only.** A person here only to study or for medical treatment is not resident (§ 2 letter e) point 2).\n- **Treaty tie-breaker.** A person who is resident under Slovak law but resident in the other state under a tax treaty has limited liability (§ 2 letter e) point 1).",
+      "old_unit_sha256": "645be1f7d2c5a01b83ca993b02c28c9a0c030c8ce88f6b1cb3a8f0b28767e88f",
+      "current_LF": [
+        29,
+        32
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 10,
+      "old_LF_start": 34,
+      "old_LF_end": 34,
+      "old_text": "### Companies",
+      "old_unit_sha256": "7eaf255f2e636c07f2ec7ebb5bc6bdc60094482320440577710448dc267f4f01",
+      "current_LF": [
+        34,
+        34
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 11,
+      "old_LF_start": 36,
+      "old_LF_end": 36,
+      "old_text": "A legal person is resident if its seat or its place of effective management is in Slovakia. The place of effective management is where the key management and business decisions for the entity as a whole are made, even if that address is not in the commercial register (§ 2 letter d) point 2). A company that a treaty treats as resident in the other state has limited liability (§ 2 letter e) point 3).",
+      "old_unit_sha256": "b11ff8e57ae7ce5d7c44fb2e8b0d9e69e2e33423c39b4493533df904c57ff8c5",
+      "current_LF": [
+        36,
+        36
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 12,
+      "old_LF_start": 38,
+      "old_LF_end": 38,
+      "old_text": "### Scope of tax",
+      "old_unit_sha256": "429ccce44571c2cefb6f4c0ed240764565824b3e3476417201ed19ce01975a72",
+      "current_LF": [
+        38,
+        38
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 13,
+      "old_LF_start": 40,
+      "old_LF_end": 41,
+      "old_text": "- Residents are taxed on Slovak and foreign income (§ 2 letter f)).\n- Non-residents are taxed only on Slovak-source income listed in § 16 (§ 2 letter g)).",
+      "old_unit_sha256": "e2b4114daf8b66f9dce74461c3679d9a6820a63998947625bebbaeceac72b182",
+      "current_LF": [
+        40,
+        41
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 14,
+      "old_LF_start": 43,
+      "old_LF_end": 43,
+      "old_text": "### Who acts",
+      "old_unit_sha256": "8d6dfefd6c8db760f16616107950805ce0d7ea71f624e0c0fe3375af7c3163b9",
+      "current_LF": [
+        43,
+        43
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 15,
+      "old_LF_start": 45,
+      "old_LF_end": 48,
+      "old_text": "- **Slovak payers** (companies, sole traders, permanent establishments) paying non-residents. They withhold tax (§ 43) or a security deduction (§ 44) and they are liable if they do not (§ 43(12), § 44(6)).\n- **Non-residents** with Slovak income: employees, service providers, sellers of Slovak property or shares, and foreign companies with a Slovak permanent establishment.\n- **Residents** with foreign income who need double tax relief (§ 45).\n- **Companies** moving assets, business or their residence out of Slovakia (§ 17f, exit tax).",
+      "old_unit_sha256": "d200046e9169ca25b8c0075091b52d8693bca5b079755a5340fc40a2fc0919b2",
+      "current_LF": [
+        45,
+        48
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 16,
+      "old_LF_start": 50,
+      "old_LF_end": 50,
+      "old_text": "## Rates, bands and thresholds",
+      "old_unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "current_LF": [
+        50,
+        50
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 17,
+      "old_LF_start": 52,
+      "old_LF_end": 73,
+      "old_text": "| Item | Rate or amount | Year | Source |\n|---|---|---|---|\n| Residence: days of presence that make an individual resident | 183 days in the calendar year, any day started counts | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 2 d) 1b) |\n| Withholding tax, general rate | 19% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 43(1)(b)) |\n| Withholding tax on dividends and similar profit shares paid to individuals | 7% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 43(1)(a), § 43(3)(r)) |\n| Withholding tax on any withheld income paid to a taxpayer of a non-cooperating state | 35% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 43(1)(c), § 2 x)) |\n| Withholding on yields from Slovak and EU/EEA government bonds paid to non-business entities | 13% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 43(1)(d), § 43(3)(v)) |\n| Security deduction on payments to non-residents outside the EU/EEA | 19% of the payment | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 44(2)) |\n| Security deduction on payments to a taxpayer of a non-cooperating state, or where the beneficial owner is not shown | 35% of the payment | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 44(2), § 44(7)) |\n| Security deduction ordered by a tax office decision | 9.5% of the payment | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 44(1)) |\n| EU interest and royalty exemption: holding | at least 25% direct holding, for at least 24 months in a row | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 13(2)(f), (h)) |\n| Permanent establishment: one-off activity; building site or construction or assembly project | one-off activity: more than 6 months in any 12-month period; site or project: activity of the non-resident or its related persons over 6 months | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 16(2)) |\n| Permanent establishment: services performed in Slovakia | more than 183 days in any 12-month period | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 16(2)) |\n| Non-resident share sale: real-estate-rich company test | Slovak real estate over 50% of equity | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 16(1)(h)) |\n| Non-resident individual: spouse allowance and PEPP and supplementary pension contributions deductible | Slovak income at least 90% of worldwide income | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 11(7)) |\n| Individual rates (resident and non-resident) | 19% up to 154.8 x subsistence minimum; 25% to 212.4 x; 30% to 264 x; 35% above. A sole trader with business revenue up to EUR 100,000 pays 15% on that base | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15 a) 1 to 3) |\n| Company rates | 10% (taxable revenue up to EUR 100,000); 21%; 24% (taxable revenue over EUR 5,000,000) | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15 b) 1) |\n| Exit tax on a company's special tax base | 21% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15 b) 3, § 17f(5)) |\n| Exit tax instalments (move to EU/EEA state with recovery agreement) | up to 5 years | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 17g(1)) |\n| Exit tax instalments: no lien needed | tax up to EUR 3,000 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 17g(5)) |\n| Cooperating states (§ 2 x)): Ministry of Finance list valid from 1 January 2026 | 138 states and jurisdictions, 71 of them through a tax treaty; Russia is not on it | 2026 | https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf |\n| Late payment interest (also on unremitted withholding and security) | 4 x ECB base rate a year, at least 15% a year, at most 4 years | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 156(1)-(2)) |",
+      "old_unit_sha256": "10951c9a9d7284e2db0b2533e5b6ec804fda80bc18d944d6767dd85c79d898b7",
+      "current_LF": [
+        52,
+        75
+      ],
+      "disposition": "Complete rates table with profit-period/transitional corrections and sourced dated ECB rates."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 18,
+      "old_LF_start": 75,
+      "old_LF_end": 75,
+      "old_text": "## The taxable base",
+      "old_unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "current_LF": [
+        77,
+        77
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 19,
+      "old_LF_start": 77,
+      "old_LF_end": 77,
+      "old_text": "### Slovak-source income of a non-resident (§ 16(1))",
+      "old_unit_sha256": "f2fb725a6bcb6d620dea3f2242216ffac1095c356bbcd95c232fb819c84a7b35",
+      "current_LF": [
+        79,
+        79
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 20,
+      "old_LF_start": 79,
+      "old_LF_end": 79,
+      "old_text": "A non-resident is taxed on income from:",
+      "old_unit_sha256": "cf4295a8dec45a3332f1c2e31212e3f8d27f9cc3adce0aaeffb5ff05e072328e",
+      "current_LF": [
+        81,
+        81
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 21,
+      "old_LF_start": 81,
+      "old_LF_end": 87,
+      "old_text": "- activity through a Slovak permanent establishment, and disposals of its property (letter a));\n- employment carried out in Slovakia, or on aircraft or ships run by a Slovak resident (letter b));\n- services provided in Slovakia, including commercial, technical or other advice, management, intermediation, construction and assembly, even without a permanent establishment (letter c));\n- artists and sportspeople performing in Slovakia, paid directly or through an intermediary (letter d));\n- payments by Slovak residents or Slovak permanent establishments of: royalties for industrial property, software, designs, plans and know-how; copyright royalties; interest on loans, deposits and similar yields (not bonds); rent for movables in Slovakia; disposals of Slovak movables, registered rights and Slovak-issued securities; directors' and board fees; prizes; pensions and annuities; dividends and liquidation shares; fees for commercial, technical or other advice, data processing, management, intermediation and marketing to the extent the payer deducts them; capital fund distributions; and crypto-asset sales (letter e) points 1 to 13);\n- sale, rent or other use of Slovak real estate (letter f));\n- sale of shares in a Slovak company or cooperative (letter g)), or in any company whose Slovak real estate is more than 50% of its equity (letter h)).",
+      "old_unit_sha256": "9a49cd082379396507d343d864de99f0cddb9c91ffb8f9cfe02b3f35ec54f0db",
+      "current_LF": [
+        83,
+        89
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 22,
+      "old_LF_start": 89,
+      "old_LF_end": 89,
+      "old_text": "### Permanent establishment (stála prevádzkareň, § 16(2))",
+      "old_unit_sha256": "67071a03e9b25bcc0eaabbdeca8d5414822dfe1963b115514d3dd7add8eb0948",
+      "current_LF": [
+        91,
+        91
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 23,
+      "old_LF_start": 91,
+      "old_LF_end": 91,
+      "old_text": "A permanent establishment is a fixed place through which the non-resident carries on its activity in Slovakia: a branch, office, workshop, worksite, point of sale, technical equipment, or a place of extraction. A place is fixed if it is used continuously or repeatedly.",
+      "old_unit_sha256": "9688f89f3958bd14e091afb4e7163d68057195982ef719bc7f7c9d60e4227f0d",
+      "current_LF": [
+        93,
+        93
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 24,
+      "old_LF_start": 93,
+      "old_LF_end": 96,
+      "old_text": "- A one-off activity creates a permanent establishment only after more than six months in any 12 months. A building site or construction or assembly project is one only if the activity of the non-resident or its related persons there lasts more than six months.\n- Services provided in Slovakia by the non-resident or its staff create one after more than 183 days in any 12 months.\n- Repeated intermediation of transport or accommodation, including through a digital platform, counts as a fixed place.\n- A dependent agent is one: a person acting on the non-resident's instructions who habitually negotiates, concludes or arranges contracts, or plays the principal role leading to contracts the non-resident concludes without material change, in the non-resident's name or for its property or services.",
+      "old_unit_sha256": "e3be2a05c69bf3b5ea4498f50dfe158f3e6f495694a1f42ac5ad222e7a3e7421",
+      "current_LF": [
+        95,
+        98
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 25,
+      "old_LF_start": 98,
+      "old_LF_end": 98,
+      "old_text": "Income of a registered permanent establishment is not withheld at source (§ 43(2)). It is declared in a return and taxed at the normal rates.",
+      "old_unit_sha256": "a5eb79b811a9a56c02b461221b960bf1f46532c4bc49703c1ef3ea69635caa9a",
+      "current_LF": [
+        100,
+        100
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 26,
+      "old_LF_start": 100,
+      "old_LF_end": 100,
+      "old_text": "### Withholding tax (zrážková daň, § 43)",
+      "old_unit_sha256": "0821c991f7b10dd92d5d014c9c5d3959cc1a7e96bfdf29e1e0675858411af63f",
+      "current_LF": [
+        102,
+        102
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 27,
+      "old_LF_start": 102,
+      "old_LF_end": 102,
+      "old_text": "The payer withholds tax from the gross amount (§ 43(4)) when it pays, remits or credits the income. Setting off mutual claims counts as payment (§ 43(10)).",
+      "old_unit_sha256": "89a90d36f7775f94592c5e0b01382fe2a655d0c9de5545f5d62083fa788eab3d",
+      "current_LF": [
+        104,
+        104
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 28,
+      "old_LF_start": 104,
+      "old_LF_end": 104,
+      "old_text": "Paid to a non-resident (§ 43(2)), withholding applies to:",
+      "old_unit_sha256": "bb0b413cfea993d3722dbb706eb28c3cc447c58f83417d44c941bfbd74c3c9a6",
+      "current_LF": [
+        106,
+        106
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 29,
+      "old_LF_start": 106,
+      "old_LF_end": 110,
+      "old_text": "- services in Slovakia and artists or sportspeople (§ 16(1)(c) and (d));\n- royalties, rent of movables, advisory, management, data processing and marketing fees, and capital fund distributions (§ 16(1)(e) points 1, 2, 4, 10 and 12);\n- interest and other yields on loans, and derivative income;\n- paid-out revaluation differences on a company conversion (§ 16(1)(k));\n- dividends only when the recipient is a taxpayer of a non-cooperating state.",
+      "old_unit_sha256": "566065e5323f09189bbe40f0f8c61ff06d1c192f15a8a3f53e1affa262e916db",
+      "current_LF": [
+        108,
+        112
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 30,
+      "old_LF_start": 112,
+      "old_LF_end": 112,
+      "old_text": "Paid to anyone (§ 43(3)), withholding also applies to bank interest, fund yields, lottery winnings, and dividends paid to individuals (point r), among others.",
+      "old_unit_sha256": "ea58639bfa78942e530462af4430d7ddbf86c3a98fc1c6d23271582cdadbc59b",
+      "current_LF": [
+        114,
+        114
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 31,
+      "old_LF_start": 114,
+      "old_LF_end": 114,
+      "old_text": "The rates are 19% as the rule, 7% for dividends to individuals, and 35% for any of this income paid to a taxpayer of a non-cooperating state (§ 43(1)). If the payer cannot show who the beneficial owner of a non-resident's Slovak-source income is, it withholds 35% (§ 43(25)).",
+      "old_unit_sha256": "2a2ff718f6e6fec17f19ee44527b9411058a3dbd62560feb37cca1d954138347",
+      "current_LF": [
+        116,
+        116
+      ],
+      "disposition": "Rates retained with actual profit-period transitions at144."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 32,
+      "old_LF_start": 116,
+      "old_LF_end": 116,
+      "old_text": "**Withholding as final tax or as an advance.** Withholding settles the tax (§ 43(6)). A non-resident from an EU or EEA state may instead treat tax withheld on services, royalties, rent of movables, advisory fees and interest as an advance, file a Slovak return, and claim back any excess. A non-resident artist or sportsperson from any state may do the same for § 16(1)(d) income (§ 43(6)(a) and (b), § 43(7)).",
+      "old_unit_sha256": "43d7691d1e5f7ed814aa0ce948d993cbe9bf12c96e38118568df7220674663c9",
+      "current_LF": [
+        118,
+        118
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 33,
+      "old_LF_start": 118,
+      "old_LF_end": 118,
+      "old_text": "### Security deduction (zabezpečenie dane, § 44)",
+      "old_unit_sha256": "79304c8ae79343d9ca1166fbff6507f3ea137843e04ebf0ebb3e78a420af48a2",
+      "current_LF": [
+        120,
+        120
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 34,
+      "old_LF_start": 120,
+      "old_LF_end": 120,
+      "old_text": "This catches Slovak-source income of a non-resident that is not withheld under § 43 and is not employment income. Examples are the sale of Slovak shares, real estate or movables, income of a Slovak permanent establishment, and a non-resident partner's share in a Slovak v.o.s. or k.s. (§ 16(3)).",
+      "old_unit_sha256": "590d869db94148d00a6a8bd37ae98f7f326d93ac0d80cce4c58110e5f07ba09d",
+      "current_LF": [
+        122,
+        122
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 35,
+      "old_LF_start": 122,
+      "old_LF_end": 126,
+      "old_text": "- It applies only where the recipient is outside the EU and EEA (§ 44(2)). Payments to EU and EEA residents are not subject to it.\n- The payer deducts 19% of the gross payment, or 35% if the recipient is a taxpayer of a non-cooperating state (§ 44(2)) or the beneficial owner is not shown (§ 44(7)).\n- The deduction is a prepayment, not the final tax. The non-resident files a return and credits it. If the non-resident files no return, the tax office may treat the security as settling the tax (§ 44(5)).\n- If the non-resident shows a tax office certificate that it pays Slovak tax advances (§ 34 or § 42), the payer does not deduct (§ 44(4)).\n- Separately, a tax office may order any payer by decision to deduct 9.5% from payments to a named taxpayer (§ 44(1)).",
+      "old_unit_sha256": "b32ee830e536961a37f0aefb79e2afbe56f7d914dd2417d753d126e61c052af0",
+      "current_LF": [
+        124,
+        128
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 36,
+      "old_LF_start": 128,
+      "old_LF_end": 128,
+      "old_text": "### Non-cooperating states (§ 2 letter x))",
+      "old_unit_sha256": "8dafaa6f97bcd2ec64e149b505ff469d4b07fa84439652e485d798f46987d1ee",
+      "current_LF": [
+        130,
+        130
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 37,
+      "old_LF_start": 130,
+      "old_LF_end": 130,
+      "old_text": "A taxpayer of a non-cooperating state is one whose permanent residence or seat is not in a state on the list published by the Ministry of Finance. The Ministry lists states with a tax treaty, a tax information exchange agreement, or a multilateral exchange agreement with Slovakia. It removes states on the EU list of non-cooperative jurisdictions as at 1 January, and states with no corporate income tax or a zero rate.",
+      "old_unit_sha256": "031831d3a0a23128485af5d5ca260526645bb3379bac52f00805fb1cfe024514",
+      "current_LF": [
+        132,
+        132
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 38,
+      "old_LF_start": 132,
+      "old_LF_end": 132,
+      "old_text": "The list valid from 1 January 2026 was built from the EU list published in the Official Journal on 17 October 2025 (C/2025/5613). It has 138 entries. A state with a Slovak tax treaty can still be non-cooperating: Russia has a treaty with Slovakia but is not on the list, so a payment to a Russian resident carries 35%. Check the list in force on the day of payment (https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf).",
+      "old_unit_sha256": "d4a3221a17a339758b15a85ab01126a7c071c06cc01b69daf2578896cafc2fc8",
+      "current_LF": [
+        134,
+        134
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F15 taxable-source/category/treatygates replaceRussianresidencealone35percent"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 39,
+      "old_LF_start": 134,
+      "old_LF_end": 134,
+      "old_text": "### Dividends paid abroad",
+      "old_unit_sha256": "8aa4d0ac1f16e9b524c3f384534da22dcde735340350a1b1998939e2bba7b517",
+      "current_LF": [
+        142,
+        142
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 40,
+      "old_LF_start": 136,
+      "old_LF_end": 138,
+      "old_text": "- **To a non-resident individual:** 7% withholding (§ 43(1)(a), § 43(3)(r)), unless a lower treaty rate applies.\n- **To a non-resident company:** not subject to Slovak tax, to the extent the dividend was not a deductible expense of the payer (§ 12(7)(c)).\n- **To a taxpayer of a non-cooperating state:** 35% (§ 12(7)(c) point 1, § 16(1)(e) point 9, § 43(1)(c)).",
+      "old_unit_sha256": "874eb00ac477f11fecd52dae0abf36934addb60560e1e326a1654f3bc085bb96",
+      "current_LF": [
+        144,
+        146
+      ],
+      "disposition": "Current dividend profit-period and company deductibility/non-cooperation qualifications."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 41,
+      "old_LF_start": 140,
+      "old_LF_end": 140,
+      "old_text": "### EU interest and royalty exemption (§ 13(2)(f) and (h))",
+      "old_unit_sha256": "1f405e547ef5370a1f795cfb579d110755f561da170c7d195ee54a125079c8df",
+      "current_LF": [
+        148,
+        148
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 42,
+      "old_LF_start": 142,
+      "old_LF_end": 142,
+      "old_text": "Interest and royalties paid by a Slovak company (or an EU company's Slovak permanent establishment) to an EU company are exempt if the recipient is the beneficial owner and, for at least 24 months in a row up to the payment date, one of these holds:",
+      "old_unit_sha256": "81d3b322c536acef23c424937203a3e636ba6158c29b965909665e61f5991ca1",
+      "current_LF": [
+        150,
+        150
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 43,
+      "old_LF_start": 144,
+      "old_LF_end": 146,
+      "old_text": "1. the payer holds at least 25% of the recipient directly;\n2. the recipient holds at least 25% of the payer directly; or\n3. a third EU company holds at least 25% of both directly.",
+      "old_unit_sha256": "d6026354601866f74c3b9055c08471a95f446befb7d810114ed0853bb6099d92",
+      "current_LF": [
+        152,
+        154
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 44,
+      "old_LF_start": 148,
+      "old_LF_end": 148,
+      "old_text": "If the 24 months are completed after the payment, the payer withholds, and the recipient may claim the tax back from the first day after the 24 months end (§ 43(21)).",
+      "old_unit_sha256": "dc5e402f981934761ee9ad1aeb0d7e641435bde83b9e4e1f206e297518ee6919",
+      "current_LF": [
+        156,
+        156
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 45,
+      "old_LF_start": 150,
+      "old_LF_end": 150,
+      "old_text": "### Double tax relief for residents (§ 45)",
+      "old_unit_sha256": "890755e44809209972e80cc42d0213c7bc96fc7e6072ed6ca8bb400504f4dcce",
+      "current_LF": [
+        158,
+        158
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 46,
+      "old_LF_start": 152,
+      "old_LF_end": 155,
+      "old_text": "- **Treaty state, credit method.** Foreign tax is credited up to the lower of (a) the tax the treaty allows the other state to charge and (b) the Slovak tax on the foreign income. The limit is Slovak tax times the foreign base as a percentage of the total base. For an individual the total base is taken before the § 11 personal allowances. Only tax on income included in this year's base can be credited (§ 45(1)).\n- **Treaty state, exemption method.** The foreign base is left out of the Slovak base (§ 45(1)).\n- **Employment income.** It is exempt if taxed abroad and it comes from a non-treaty state, from EU institutions, or from a treaty state where exemption gives a better result than the treaty method (§ 45(3)).\n- **Different foreign tax year.** If the foreign tax receipt is not available by the filing deadline, the return shows the expected foreign income and tax (§ 45(2)).",
+      "old_unit_sha256": "4d679b6c34b999e7b8e6a377a6f479182e004f94514979321c2f77f3dfccef19",
+      "current_LF": [
+        160,
+        163
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 47,
+      "old_LF_start": 157,
+      "old_LF_end": 157,
+      "old_text": "§ 45 gives no other unilateral relief. Foreign income from a non-treaty state that is not employment income gets no credit under § 45.",
+      "old_unit_sha256": "502bc7b2baed0395db542b628f7a123837a0a8711583f020f92765f0a136e528",
+      "current_LF": [
+        165,
+        165
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 48,
+      "old_LF_start": 159,
+      "old_LF_end": 159,
+      "old_text": "### Exit tax (§ 17f and § 17g)",
+      "old_unit_sha256": "45373262d15cec8cb7b8bfe814f5e500843389ef60dcbd42b25d35cceeb90965",
+      "current_LF": [
+        167,
+        167
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 49,
+      "old_LF_start": 161,
+      "old_LF_end": 161,
+      "old_text": "This applies to companies only (§ 2 letter d) point 2, and non-resident companies with a Slovak permanent establishment). The special tax base, taxed at 21%, is:",
+      "old_unit_sha256": "d451ee22aee78093a528fcff193377081c5362132d82ef29cbfc7ae9d228fcdc",
+      "current_LF": [
+        169,
+        169
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 50,
+      "old_LF_start": 163,
+      "old_LF_end": 164,
+      "old_text": "- **Transfer of assets** from Slovak head office to a foreign permanent establishment, or from a Slovak permanent establishment abroad: fair value at the time of transfer minus the tax value (§ 17f(1)).\n- **Move of residence or business:** fair value of the assets and liabilities that are no longer connected with a Slovak permanent establishment, worked out as § 17a sets out (§ 17f(2)).",
+      "old_unit_sha256": "38c8fa4b940b1f39307b9890b4d00578426be53b591fdac8238946dd0a357aaa",
+      "current_LF": [
+        171,
+        172
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 51,
+      "old_LF_start": 166,
+      "old_LF_end": 166,
+      "old_text": "The total special base cannot be negative (§ 17f(3)). Temporary transfers for securities financing, collateral, prudential capital or liquidity that return within 12 months are excluded (§ 17f(4)). On a move to an EU or EEA state with a recovery assistance agreement, the tax can be paid in instalments over five years, with interest, on request in the return (§ 17g). A company arriving in Slovakia takes a step-up to the value taxed on exit abroad, capped at fair value (§ 17f(8)).",
+      "old_unit_sha256": "9b0ad3638cdf18ff5ba753bce11db4d832e80e7fc893ea613453758c70a10399",
+      "current_LF": [
+        174,
+        174
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 52,
+      "old_LF_start": 168,
+      "old_LF_end": 168,
+      "old_text": "There is no exit tax for individuals in the ZDP.",
+      "old_unit_sha256": "dea01bf935e9cb5347693cef871f25f411e7e3135338494e823168e7d997431d",
+      "current_LF": [
+        176,
+        176
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 53,
+      "old_LF_start": 170,
+      "old_LF_end": 170,
+      "old_text": "## Deadlines and filing",
+      "old_unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "current_LF": [
+        178,
+        178
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 54,
+      "old_LF_start": 172,
+      "old_LF_end": 177,
+      "old_text": "- **Withholding tax:** the payer pays it to the tax office by the 15th of each month for the previous month, and files the notice of withholding (oznámenie o zrazení a odvedení dane) by the same date (§ 43(11)).\n- **Security deduction:** paid by the 15th of each month for the previous month, with the notice on the official form (§ 44(3)).\n- **Income tax return:** within three months after the end of the tax period, so 31 March 2027 for 2026. The tax is due by the same date (§ 49(2)).\n- **Extension:** a notice filed before the deadline extends it by up to three whole months, or up to six whole months if the income includes foreign-source income. The tax is then due by the new date (§ 49(3)(a) and (b)).\n- **Exit tax:** due with the return, or in instalments if allowed (§ 17g(1) to (3)).\n- **Recipient's challenge:** a recipient who doubts a withholding may ask the payer for an explanation within 12 months; the payer has 30 days to reply and correct it (§ 43a(1)).",
+      "old_unit_sha256": "1d5a1b01f148ebb8f752d189e1dc806c661186e2860542642f8b29cd4cbce8ad",
+      "current_LF": [
+        180,
+        185
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 55,
+      "old_LF_start": 179,
+      "old_LF_end": 179,
+      "old_text": "## Penalties and interest",
+      "old_unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "current_LF": [
+        187,
+        187
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 56,
+      "old_LF_start": 181,
+      "old_LF_end": 181,
+      "old_text": "All from the Tax Procedure Code, Act No. 563/2009 Coll.",
+      "old_unit_sha256": "1c0ff48bf955d6f6e5ccb7c312a666bda239e96329ca7c2881d9824260c476ab",
+      "current_LF": [
+        189,
+        189
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 57,
+      "old_LF_start": 183,
+      "old_LF_end": 188,
+      "old_text": "- **Late return:** a fine of EUR 100 to EUR 30,000 (§ 155(1)(a)). A tax office does not impose a fine set within a range for the first breach (§ 155(4)).\n- **Late notice or other reporting duty:** EUR 100 to EUR 10,000 (§ 155(1)(d) and (e)).\n- **Under-declared tax found by the tax office:** a fine of 3 x the ECB base rate a year, at least 10% a year, on the extra tax, counted per day from the original deadline, at least 1% of the extra tax and at most the extra tax (§ 155(1)(f), (2) and (5)). Paid within 15 days, it drops to two thirds (§ 155(17)).\n- **Own correction by supplementary return:** 1 x the ECB base rate a year, at least 3% a year; 2 x, at least 7%, if filed after a tax audit is announced (§ 155(1)(g), (h) and (5)).\n- **Late payment interest:** 4 x the ECB base rate a year, at least 15% a year, for each day late, for at most four years (§ 156(2)). It applies to unremitted withholding tax and unremitted security (§ 156(1)(e) and (f)).\n- **Payer liability:** a payer that does not withhold, withholds too little or pays late is pursued for the tax as if it were its own (§ 43(12), § 44(6)).",
+      "old_unit_sha256": "1935e669668d1e0f64e6b65c1c46a4fd2b8f67bc89a5caf2098238f5241beae6",
+      "current_LF": [
+        191,
+        196
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 58,
+      "old_LF_start": 190,
+      "old_LF_end": 190,
+      "old_text": "## Cross-border points",
+      "old_unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "current_LF": [
+        198,
+        198
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 59,
+      "old_LF_start": 192,
+      "old_LF_end": 196,
+      "old_text": "- **Treaties override domestic rates.** A treaty can lower or remove Slovak withholding (§ 1(2)). The Ministry of Finance list valid from 1 January 2026 names 71 states with a Slovak tax treaty, including Kyrgyzstan, whose treaty applies from 1 January 2026. Read the treaty in force for the year of payment for the rate.\n- **Beneficial owner.** The beneficial owner is the person who receives the income for its own benefit and can use it freely, or its permanent establishment. An intermediary is not (§ 2 letter af)). A payer that cannot show the beneficial owner applies 35% (§ 43(25), § 44(7)).\n- **Reporting the recipient.** The withholding notice names each non-resident recipient, with its address and foreign tax number, and splits royalties, rent of movables, dividends and similar income by type (§ 43(11)(b)).\n- **Social security, payroll and VAT** are not in this skill. Posted workers and A1 certificates go with [sk-payroll-social](sk-payroll-social.md). VAT on services bought from abroad goes with [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md).\n- **Transfer pricing** between related parties, including a head office and its permanent establishment (§ 2 letter r)), is out of scope here.",
+      "old_unit_sha256": "1383b1205288c80fd9a081c385970f41fca394f03019a3e5e7716765903e420b",
+      "current_LF": [
+        200,
+        204
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 60,
+      "old_LF_start": 198,
+      "old_LF_end": 198,
+      "old_text": "## Worked examples",
+      "old_unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "current_LF": [
+        206,
+        206
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 61,
+      "old_LF_start": 200,
+      "old_LF_end": 200,
+      "old_text": "### Example 1: royalty paid by a Slovak s.r.o. to a foreign company",
+      "old_unit_sha256": "31784d98c012dc13a28a0d899a6d82a4cb16dffa19987e37ef540830367cd501",
+      "current_LF": [
+        208,
+        208
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 62,
+      "old_LF_start": 202,
+      "old_LF_end": 202,
+      "old_text": "A Slovak s.r.o. pays a software licence fee of EUR 8,000 in March 2026 to a non-EU company resident in a state on the Ministry's list. The company has no Slovak permanent establishment. The client has no residence certificate from the recipient, so no treaty rate is applied at payment. Software licence fees are § 16(1)(e) point 1 income, so the payer withholds 19% (§ 43(1)(b), § 43(2)). It withholds EUR 1,520, pays EUR 6,480 to the recipient, and pays the EUR 1,520 to the tax office with the notice by 15 April 2026.",
+      "old_unit_sha256": "5901825793ef9ca2e387e080d1f8bdecd05215f9d7e0c8e1f11b2ec0cb3fa7f5",
+      "current_LF": [
+        210,
+        210
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 63,
+      "old_LF_start": 204,
+      "old_LF_end": 204,
+      "old_text": "If the recipient were a taxpayer of a non-cooperating state, the rate would be 35%: EUR 2,800 withheld. If the recipient were an EU company that had held 25% of the payer directly for 24 months and was the beneficial owner, the fee would be exempt (§ 13(2)(h)).",
+      "old_unit_sha256": "b9f3b7b5eda8857df2f9424760b3a022da2fa7ad49b02548acf8eaff35d80ab4",
+      "current_LF": [
+        212,
+        212
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 64,
+      "old_LF_start": 206,
+      "old_LF_end": 218,
+      "old_text": "```oa-check\nname: SK royalty to a foreign company, 19% and 35% withholding (2026)\ninputs:\n  royalty: 8000\nsteps:\n  - wht_19: pct(royalty, 19)\n  - net_paid: royalty - wht_19\n  - wht_35_noncooperating: pct(royalty, 35)\nexpected:\n  wht_19: 1520.00\n  net_paid: 6480.00\n  wht_35_noncooperating: 2800.00\n```",
+      "old_unit_sha256": "63234dc17ebfcdd9bab0866bba1ad12858caa8996646e68fb25b39dc4cbf78a0",
+      "current_LF": [
+        214,
+        226
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 65,
+      "old_LF_start": 220,
+      "old_LF_end": 220,
+      "old_text": "### Example 2: foreign tax credit capped at the treaty rate",
+      "old_unit_sha256": "453e120aec4fdc3c5c62328387542c56573a202623927d0cf46f085653ef7df2",
+      "current_LF": [
+        228,
+        228
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 66,
+      "old_LF_start": 222,
+      "old_LF_end": 222,
+      "old_text": "A Slovak company has taxable revenue of EUR 3,000,000 in 2026, so its rate is 21% (§ 15 letter b) point 1b). Its tax base is EUR 400,000. That includes EUR 50,000 of royalties from a treaty state with no related expenses. The other state withheld 15% (EUR 7,500), but the treaty lets it charge only 10% (EUR 5,000) and uses the credit method.",
+      "old_unit_sha256": "8eef6da429c6cf51a7ef8c36b92db8d7d3e306251be500cce7ef57f0fb78df5d",
+      "current_LF": [
+        230,
+        230
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 67,
+      "old_LF_start": 224,
+      "old_LF_end": 224,
+      "old_text": "Slovak tax is EUR 84,000. The foreign share of the base is 12.5%, so the credit limit is EUR 10,500. The credit is the lowest of the tax paid (EUR 7,500), the treaty maximum (EUR 5,000) and the limit (EUR 10,500): EUR 5,000 (§ 45(1)). Tax payable is EUR 79,000. The extra EUR 2,500 is not credited in Slovakia; the company must claim it back from the other state.",
+      "old_unit_sha256": "237dce4c95a96cbef32b1dbd57e1e0c803441d6489361de8890c3260bcbf851c",
+      "current_LF": [
+        232,
+        232
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 68,
+      "old_LF_start": 226,
+      "old_LF_end": 247,
+      "old_text": "```oa-check\nname: SK company, credit for foreign royalty tax capped at treaty rate (2026)\ninputs:\n  tax_base: 400000\n  foreign_base: 50000\n  foreign_tax_paid: 7500\nsteps:\n  - sk_tax: pct(tax_base, 21)\n  - foreign_share_pct: foreign_base / tax_base * 100\n  - credit_limit: sk_tax * foreign_share_pct / 100\n  - treaty_max: pct(foreign_base, 10)\n  - credit: min(foreign_tax_paid, treaty_max, credit_limit)\n  - tax_payable: sk_tax - credit\n  - not_creditable: foreign_tax_paid - credit\nexpected:\n  sk_tax: 84000.00\n  foreign_share_pct: 12.50\n  credit_limit: 10500.00\n  credit: 5000.00\n  tax_payable: 79000.00\n  not_creditable: 2500.00\n```",
+      "old_unit_sha256": "292d9a2fd958316df04e442e5fb9c910a8c974759c7a500bd70a5f60c51858d1",
+      "current_LF": [
+        234,
+        255
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 69,
+      "old_LF_start": 249,
+      "old_LF_end": 249,
+      "old_text": "## Ask the client first",
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "current_LF": [
+        257,
+        257
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 70,
+      "old_LF_start": 251,
+      "old_LF_end": 256,
+      "old_text": "1. Where does the recipient (or the client) have its home, seat and place of effective management, and how many days was the person in Slovakia in 2026?\n2. What exactly is the payment for (service done in Slovakia or abroad, royalty, interest, dividend, sale of shares or property), and when is it paid or credited?\n3. Is the recipient in the EU or EEA, in a state on the Ministry of Finance's list, or in a non-cooperating state, and do you hold its residence certificate and beneficial owner evidence?\n4. Does the recipient have a registered Slovak permanent establishment, or staff or a site in Slovakia for more than six months or 183 days?\n5. For related-party interest or royalties within the EU: what are the direct holdings, and since when?\n6. For a company: is it moving assets, business or its seat abroad in 2026?",
+      "old_unit_sha256": "e00ece149c2ed7cbaa5f48582340316bf8bec3b4f27ad8e6b08f643bd80affe4",
+      "current_LF": [
+        259,
+        264
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 71,
+      "old_LF_start": 258,
+      "old_LF_end": 258,
+      "old_text": "## Sources",
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "current_LF": [
+        266,
+        266
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 72,
+      "old_LF_start": 260,
+      "old_LF_end": 267,
+      "old_text": "| Source | URL | Read on |\n|---|---|---|\n| Act No. 595/2003 Coll. on income tax, version in force 1 Jan 2026 to 30 Dec 2026 (§ 1, § 2, § 11, § 12, § 13, § 15, § 16, § 17f, § 17g, § 43, § 43a, § 44, § 45, § 49, § 52zzzj) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-23 |\n| Act No. 261/2025 Coll. (2025 consolidation package), as published | https://static.slov-lex.sk/static/SK/ZZ/2025/261/vyhlasene_znenie.html | 2026-10-23 |\n| Act No. 563/2009 Coll., Tax Procedure Code, version in force from 1 Sep 2026 (§ 154, § 155, § 156) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-23 |\n| Financial Administration, international taxation legislation page | https://www.financnasprava.sk/sk/financna-sprava/legislativa/dane/priame-dane/dan-z-prijmov/medzinarodne-zdanenie | 2026-10-23 |\n| Ministry of Finance, list of cooperating states under § 2 x), valid from 1 Jan 2026 (with the treaty or agreement for each state) | https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf | 2026-10-23 |\n| Financial Directorate, list of Slovak tax treaties in force (1/MZ/2022/IM, as at 1 Jan 2022; shows the Russia treaty) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/Medzinarodne_zdanovanie/2022/2021.01.05_1_MZ_2022_IM.pdf | 2026-10-23 |",
+      "old_unit_sha256": "22a08ddf66b33a46c957b146f3993470b6406cbdaf20b799cc0217e4339be8d3",
+      "current_LF": [
+        268,
+        279
+      ],
+      "disposition": "Sources retained/expanded."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 73,
+      "old_LF_start": 269,
+      "old_LF_end": 269,
+      "old_text": "Not yet confirmed: treaty withholding rates for individual states; the subsistence minimum (životné minimum) at 1 January 2026, so the 2026 individual bands are given here as multiples only; the ECB base rate used for interest and fines on a given date; the text of a later version of Act No. 595/2003 in force from 31 December 2026 (Act No. 406/2025 Coll.), which is not covered here.",
+      "old_unit_sha256": "08d7f69a50e401076b46609444a3c81966def589c8f7a4cc97ac9d0feacb3d4f",
+      "current_LF": [
+        284,
+        284
+      ],
+      "disposition": "Minimum now established; bilateral/Russia actual-operation limitation retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 74,
+      "old_LF_start": 271,
+      "old_LF_end": 271,
+      "old_text": "> Contributed by Michael Cutajar.",
+      "old_unit_sha256": "cd6e492917c1a8ee9a5db69e092a96a573d0755ba0fdfeb3d0e3c92e4bd0e0c7",
+      "current_LF": [
+        286,
+        286
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 75,
+      "old_LF_start": 273,
+      "old_LF_end": 273,
+      "old_text": "<!-- openaccountants-cta-block -->",
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "current_LF": [
+        288,
+        288
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 76,
+      "old_LF_start": 275,
+      "old_LF_end": 275,
+      "old_text": "---",
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "current_LF": [
+        1,
+        1
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 77,
+      "old_LF_start": 277,
+      "old_LF_end": 277,
+      "old_text": "## Talk to a verified accountant",
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "current_LF": [
+        292,
+        292
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 78,
+      "old_LF_start": 279,
+      "old_LF_end": 282,
+      "old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "current_LF": [
+        294,
+        297
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 79,
+      "old_LF_start": 284,
+      "old_LF_end": 285,
+      "old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "current_LF": [
+        299,
+        300
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 80,
+      "old_LF_start": 287,
+      "old_LF_end": 289,
+      "old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "current_LF": [
+        302,
+        304
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    }
+  ]
+}

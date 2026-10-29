@@ -1,0 +1,94 @@
+§ 22
+Základ dane pri dodaní tovaru a služby
+(1)
+ Základom dane pri dodaní tovaru alebo služby je všetko, čo tvorí protihodnotu, ktorú
+ dodávateľ prijal alebo má prijať od príjemcu plnenia alebo inej osoby za dodanie tovaru
+ alebo služby, zníženú o daň. Do základu dane sa zahŕňa aj dotácia alebo príspevok,
+ ktorý dodávateľ prijal alebo má prijať k cene tovaru alebo služby.
+(2)
+ Do základu dane podľa odseku 1 sa zahŕňajú aj
+a)
+ iné dane, clá a poplatky vzťahujúce sa na tovar alebo službu,
+b)
+ súvisiace náklady (výdavky), ako napríklad provízia, náklady na balenie, náklady
+ na prepravu a náklady poistenia požadované dodávateľom od kupujúceho alebo zákazníka.
+(3)
+ Do základu dane podľa odseku 1 sa nezahŕňajú výdavky platené v mene a na účet kupujúceho
+ alebo zákazníka, ktoré dodávateľ požaduje od kupujúceho alebo zákazníka (ďalej len
+ „prechodné položky“). Pri dodaní tovaru v zálohovaných obaloch sa do základu dane
+ podľa odseku 1 nezahŕňa záloha na zálohované obaly, ktoré sú dodané spolu s tovarom.
+ Pri dodaní nápoja v zálohovanom jednorazovom obale na nápoje6abd) sa do základu dane podľa odseku 1 nezahŕňa záloh na tento obal.
+(4)
+ Ak je v čase dodania tovaru alebo služby poskytnutá zľava z ceny alebo ak je poskytnutá
+ zľava za skoršiu úhradu ceny, základ dane sa zníži o sumu zľavy.
+(5)
+ Pri dodaní tovaru podľa § 8 ods. 3 je základom dane kúpna cena príslušného tovaru v čase jeho dodania alebo ak takúto
+ kúpnu cenu nie je možné zistiť, kúpna cena podobného tovaru v čase jeho dodania; ak
+ kúpna cena neexistuje, sú základom dane náklady na vytvorenie tohto tovaru v čase
+ jeho dodania. Pri dodaní služby podľa § 9 ods. 2 a 3 sú základom dane náklady na službu. Ak platiteľ odpočítal daň pomerne alebo vykonal
+ opravu odpočítanej dane alebo úpravu odpočítanej dane, zohľadní tieto skutočnosti
+ pri výpočte dane.
+(6)
+ Základom dane pri premiestnení tovaru podľa § 8 ods. 4 je cena, za ktorú bol tovar nadobudnutý vrátane nákladov súvisiacich s nadobudnutím,
+ a ak bol tovar vytvorený vlastnou činnosťou, základom dane sú náklady na vytvorenie
+ tovaru vlastnou činnosťou, pričom pri určení základu dane sa primerane uplatnia odseky
+ 2 a 3.
+(7)
+ Pri dodaní tovarov a dodaní služieb v rámci predaja podniku alebo časti podniku tvoriacej
+ samostatnú organizačnú zložku sa základ dane určí na základe dohodnutej ceny vzťahujúcej
+ sa na jednotlivý prevádzaný hmotný majetok a nehmotný majetok a jednotlivé iné majetkovo
+ využiteľné hodnoty. Základ dane sa nemôže znížiť o záväzky, ktoré prechádzajú na kupujúceho.
+(8)
+ Ak pri dodaní tovaru alebo dodaní služby osobám, ktoré majú osobitný vzťah k platiteľovi,
+ ktorý dodáva tovar alebo službu, je protihodnota nižšia ako trhová hodnota na voľnom
+ trhu a príjemca plnenia nie je platiteľom alebo je platiteľom, ktorý pri tomto tovare
+ alebo službe nemá právo na odpočítanie dane v plnom rozsahu, základom dane je trhová
+ hodnota na voľnom trhu. Trhovou hodnotou na voľnom trhu je suma, ktorú by príjemca
+ plnenia musel zaplatiť pri obstaraní príslušného tovaru alebo služby v tuzemsku na
+ rovnakom obchodnom stupni ako na tom, na ktorom sa dodanie tovaru alebo dodanie služby
+ uskutočňuje, nezávislému dodávateľovi tovaru alebo služby v čase tohto dodania za
+ podmienok spravodlivej hospodárskej súťaže. Ak nie je možné zistiť porovnateľné dodanie
+ tovaru alebo služby, trhová hodnota na voľnom trhu je
+a)
+ pri dodaní tovaru suma, ktorá nie je nižšia ako kúpna cena príslušného tovaru alebo
+ podobného tovaru, a ak kúpna cena neexistuje, náklady na vytvorenie tovaru vlastnou
+ činnosťou príslušného tovaru v čase jeho dodania,
+b)
+ pri dodaní služby suma, ktorá nie je nižšia ako náklady na túto službu.
+(9)
+ Na účely odseku 8 osobami, ktoré majú osobitný vzťah k platiteľovi, sú
+a)
+ fyzické osoby, ktoré sú štatutárnym orgánom platiteľa, ktorý dodáva tovar alebo službu,
+ alebo členom štatutárneho orgánu platiteľa, ktorý dodáva tovar alebo službu, ako aj
+ fyzické osoby, ktoré sú im priamo podriadené,
+b)
+ fyzické osoby, ktoré sú členom dozornej rady platiteľa, ktorý dodáva tovar alebo
+ službu,
+c)
+ osoby, ktoré priamo alebo nepriamo vlastnia alebo kontrolujú 10 % alebo viac akcií
+ alebo podielov platiteľa, ktorý dodáva tovar alebo službu, a fyzické osoby, ktoré
+ sú ich štatutárnym orgánom alebo členom ich štatutárneho orgánu,
+d)
+ osoby, v ktorých priamo alebo nepriamo vlastní alebo kontroluje 10 % alebo viac akcií
+ alebo podielov platiteľ, ktorý dodáva tovar alebo službu, a fyzické osoby, ktoré sú
+ ich štatutárnym orgánom alebo členom ich štatutárneho orgánu,
+e)
+ osoby, ktoré sú členom platiteľa, ktorý dodáva tovar alebo službu,
+f)
+ fyzické osoby, ktoré sú v pracovnoprávnom vzťahu voči platiteľovi, ktorý dodáva tovar
+ alebo službu,
+g)
+ fyzické osoby, ktoré sú osobou blízkou6ac) fyzickej osobe uvedenej v písmene a), b), c), d) alebo f),
+h)
+ právnické osoby, ktorých štatutárny orgán, spoločník alebo člen je aj štatutárnym
+ orgánom alebo spoločníkom platiteľa, ktorý dodáva tovar alebo službu,
+i)
+ fyzické osoby, ktoré žijú s platiteľom, ktorý dodáva tovar alebo službu, v domácnosti,24a)
+j)
+ osoby blízke6ac) platiteľovi, ktorý je fyzickou osobou a ktorý dodáva tovar alebo službu.
+(10)
+ Základom dane pri dodaní tovaru alebo dodaní služby pri použití viacúčelového poukazu
+ je protihodnota zaplatená za poukaz znížená o daň; ak dodávateľ nemá informáciu o
+ tejto protihodnote, základom dane je peňažná hodnota, ktorá je uvedená na viacúčelovom
+ poukaze alebo v súvisiacej dokumentácii, znížená o daň vzťahujúcu sa na dodaný tovar
+ alebo službu. Ustanovenie odseku 1 týmto nie je dotknuté.

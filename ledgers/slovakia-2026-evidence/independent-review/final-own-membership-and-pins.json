@@ -1,0 +1,96 @@
+{
+  "scope": "Own exact successor mechanical binding and quote-range check; source-to-claim adequacy and actual reading separately documented",
+  "rows": 493,
+  "source_entries": 316,
+  "quotes": 643,
+  "raw_distinct": 57,
+  "sources_sha256": "af082a12f5afe33b81432094f61454676cb631516f14a6dfe62ded4ff49f0ef8",
+  "quotes_md_sha256": "7e8590f812a292d763df7ceaf28b51e8b95a39c5a66633198d2ec73981d4441a",
+  "failures": [],
+  "pairs": [
+    {
+      "slug": "sk-corporate-income-tax",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-corporate-income-tax.md",
+      "Guide_sha256": "0b2a88c6b7a8ab0518340cb07e0a636cf1200642edd2af42f495b6179051b70a",
+      "Guide_bytes": 49192,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/sk-corporate-income-tax.md",
+      "ledger_sha256": "ca917df28f9efd9ffaf6c8091f61a4226d382f9761a8a125cd46fb72cb8f546e",
+      "ledger_bytes": 83129,
+      "rows": 66,
+      "rows_sha256": "b03ec8f1033e95ed674f14c6bd9cc9d767231878b661e2b0bafb931b96c0ca2b",
+      "old_topics_sha256": "e3f481a372e44b59545c36905ade9660e16586f5eb56040bf6b169ad76799d4b"
+    },
+    {
+      "slug": "sk-cross-border",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-cross-border.md",
+      "Guide_sha256": "bd57065a15ce1f58a8fe316ff6786d24c073d6b542fd38822ce5629e554e081e",
+      "Guide_bytes": 33606,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/sk-cross-border.md",
+      "ledger_sha256": "5ac2496461062ab1053240024ac922962aace8585165663b67975f7275e16f39",
+      "ledger_bytes": 65652,
+      "rows": 58,
+      "rows_sha256": "052e6f63fe60e4d447fa23b365e33d36033520d79c4751020c13453d2bbc706d",
+      "old_topics_sha256": "489383494ede344694ae30ea256cb6a5638605f46b3577bdf452925724fa1834"
+    },
+    {
+      "slug": "sk-payroll-social",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-payroll-social.md",
+      "Guide_sha256": "62143a36b7cb4be6637db6b163b1cd727b1a8ee272bcc8cb750b55d3cb103f38",
+      "Guide_bytes": 49917,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/sk-payroll-social.md",
+      "ledger_sha256": "5e3709aca0a5484c40b34d0c71497230ea9e9ca32d2c12875ae33c69150ac4b4",
+      "ledger_bytes": 89186,
+      "rows": 67,
+      "rows_sha256": "0e1c8ef6ba7bd62e25ac1331d552b8770cdbcb8cebc3e1225ac14d4dea351c4e",
+      "old_topics_sha256": "9bc15f80e022da00c620123df6cf70b585f37533af7e9c54c64ae1cac86cdded"
+    },
+    {
+      "slug": "sk-transfer-pricing",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-transfer-pricing.md",
+      "Guide_sha256": "06932ed5dd86be07371da3d893f06677e4fc9165551014179750c098003ce598",
+      "Guide_bytes": 45099,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/sk-transfer-pricing.md",
+      "ledger_sha256": "870b440c80bbd5a812c7e77ba6110e91e2200c1159f749663a65c4258363a40f",
+      "ledger_bytes": 78158,
+      "rows": 70,
+      "rows_sha256": "1033bf98ae45094ee3618e1181375a8f203bfef0fe3e22dbca4f27de888fab60",
+      "old_topics_sha256": "69a0e2edf615c30e1af8a82b079bda802ec02cb8f56c18f17b2cfb80454bd66d"
+    },
+    {
+      "slug": "slovakia-pit",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-pit.md",
+      "Guide_sha256": "be47136e91e27d9e14a8b07e22f5c2e2a4bb4fb3e601c491a4daf22b1d50b98a",
+      "Guide_bytes": 46033,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-pit.md",
+      "ledger_sha256": "36fe4cd112988b7bda900e4ac9b956cccb60a6a6af688c1648821728592df46b",
+      "ledger_bytes": 105454,
+      "rows": 74,
+      "rows_sha256": "24384bf8ad234fcd130671f208c4fa7a183c698116cf59ec3b72930a07adaf36",
+      "old_topics_sha256": "654b8bc9315742695aa754c328db8ef34df7997e14104fad0c9424ab205d4797"
+    },
+    {
+      "slug": "slovakia-vat-registration-4-7-7a",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-vat-registration-4-7-7a.md",
+      "Guide_sha256": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30",
+      "Guide_bytes": 32474,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-vat-registration-4-7-7a.md",
+      "ledger_sha256": "4ee70196b6bd6429a5ed8446f806ea5e724ab53130e218e290208392cb04bb7a",
+      "ledger_bytes": 82705,
+      "rows": 66,
+      "rows_sha256": "208765f92c207f276405a7fdd2b53ba3bacec51280c8fc1eb46e14d9c5124d72",
+      "old_topics_sha256": "c61589979dd64ae2a6fe186ff64106d99fbb60ef1bdcf6700c00e857227529dd"
+    },
+    {
+      "slug": "slovakia-vat-return",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-vat-return.md",
+      "Guide_sha256": "32fe5026c3adc40bfc5d96e824b7b0093d484c7f879fd7607ab573ddc43cdf77",
+      "Guide_bytes": 50351,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-vat-return.md",
+      "ledger_sha256": "158fdf8133cabb015dfcb5042a904f510eb1e11b57d6b21d17f1f583466ee0b8",
+      "ledger_bytes": 158084,
+      "rows": 92,
+      "rows_sha256": "30a2f9a4db3f3431708047954c7ffb005aa516ff0b9f16d0072a0ad5ef2c43f7",
+      "old_topics_sha256": "4a57f9215bdce1358d53752a301993aae2c51a26ca8eb05c84394a20e526e184"
+    }
+  ]
+}

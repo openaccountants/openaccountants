@@ -1,0 +1,1126 @@
+         Poučenie na vyplnenie daňového priznania k dani z príjmov fyzickej osoby
+         podľa zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov
+                                     (ďalej len „zákon“)
+
+                                Typ: A (MF/012185/2025-721)
+
+Vzor tlačiva daňového priznania k dani z príjmov fyzickej osoby - typ A (MF/012185/2025-721)
+z roku 2025 zostáva v platnosti aj pre zdaňovacie obdobie 2026.
+
+       Daňové priznanie k dani z príjmov fyzickej osoby zo závislej činnosti - typ A (ďalej
+len „daňové priznanie typ A“) podáva daňovník, ktorý má príjmy, ktoré sú predmetom
+dane z príjmov fyzickej osoby len zo závislej činnosti (§ 5 zákona) a nie sú od dane
+oslobodené.
+Pre daňovníka, ktorý má príjmy, ktoré sú predmetom dane podľa § 3 ods. 1 písm. e) až g), § 5 až
+8 zákona a nie sú oslobodené od dane, je určené daňové priznanie k dani z príjmov fyzickej
+osoby typ B.
+
+1. Daňové priznanie typ A je povinný podľa § 32 zákona podať každý daňovník, ktorý dosiahol
+príjmy len zo závislej činnosti (§ 5 zákona), ktoré sú predmetom dane, presahujúce 50 % sumy
+nezdaniteľnej časti základu dane na daňovníka, t. j. za zdaňovacie obdobie roku 2026 presahujúce
+sumu 2 983,37 eura [§ 11 ods. 2 písm. a) zákona], okrem príjmov, ktoré sú od dane z príjmov
+oslobodené, ak
+    - plynuli od zamestnávateľa, ktorý nie je platiteľom dane ani zahraničným platiteľom dane,
+    - plynuli zo zdrojov v zahraničí,
+    - nebolo možné z týchto príjmov zraziť preddavok na daň [§ 35 ods. 3 písm. a) zákona],
+    - daňovník nepožiadal zamestnávateľa, ktorý je platiteľom dane (ďalej len
+       „zamestnávateľ“) o vykonanie ročného zúčtovania preddavkov na daň z príjmov podľa
+       § 38 zákona (ďalej len „ročné zúčtovanie“),
+    - ide o daňovníka, ktorý je príslušníkom Slovenskej informačnej služby, profesionálnym
+       vojakom alebo zamestnancom Ministerstva obrany Slovenskej republiky, ktorého
+       pracovnoprávne vzťahy alebo obdobné pracovné vzťahy upravujú osobitné predpisy, a
+       tento nepožiadal o vykonanie ročného zúčtovania zamestnávateľa, ktorý je platiteľom
+       dane a zamestnáva tohto zamestnanca podľa osobitného predpisu,
+    - požiadal zamestnávateľa o vykonanie ročného zúčtovania, ale nepredložil v ustanovenom
+       termíne zamestnávateľovi požadované doklady (§ 38 ods. 5 zákona),
+    - je povinný zvýšiť základ dane podľa § 11 ods. 11 a § 52zza ods. 2 zákona,
+    - došlo k zániku zamestnávateľa bez právneho nástupcu (§ 38 ods. 8 zákona).
+Daňové priznanie typ A sa podáva správcovi dane v lehote na podanie daňového priznania podľa
+§ 49 zákona do troch kalendárnych mesiacov po uplynutí zdaňovacieho obdobia, ak cit. zákon
+neustanovuje inak. Ak posledný deň lehoty pripadne na sobotu, nedeľu alebo deň pracovného
+pokoja, posledným dňom lehoty je najbližší nasledujúci pracovný deň. V daňovom priznaní typ
+A daňovník vypočíta daň z príjmov zo závislej činnosti, ktorá je splatná v lehote na podanie
+daňového priznania alebo v lehote do ôsmich dní od doručenia oznámenia čísla účtu správcom
+dane vedeného pre daňovníka, ak mu toto oznámenie bolo doručené po lehote na podanie
+daňového priznania. Ak v tejto lehote daň nezaplatí, správca dane pri ukladaní sankcií postupuje
+podľa zákona č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení niektorých
+zákonov v znení neskorších predpisov (ďalej len „daňový poriadok“). Daň sa nevyrubí a neplatí,
+ak za zdaňovacie obdobie 2026 nepresiahne 17 eur alebo celkové zdaniteľné príjmy
+za zdaňovacie obdobie nepresiahnu 50 % sumy podľa § 11 ods. 2 písm. a) zákona, s výnimkou,
+ak daňovník uplatňuje daňové zvýhodnenie na vyživované dieťa podľa § 33 zákona (ďalej len
+„daňový bonus podľa zákona“) alebo daňové zvýhodnenie na zaplatené úroky pri úveroch
+na bývanie (ďalej len „daňový bonus na zaplatené úroky podľa § 33a zákona“).
+Tento postup použije aj daňovník s obmedzenou daňovou povinnosťou uvedený v § 11 ods. 6
+zákona, ak úhrn jeho zdaniteľných príjmov zo zdrojov na území Slovenskej republiky (§ 16
+zákona) v príslušnom zdaňovacom období tvorí najmenej 90 % zo všetkých príjmov tohto
+daňovníka, ktoré mu plynú zo zdrojov na území Slovenskej republiky a zo zdrojov v zahraničí.
+Daň na úhradu sa neplatí, ak nepresiahne 5 eur a to aj v prípade, ak daňovník využije postup
+podľa § 50 zákona a § 50aa zákona.
+Daňové priznanie typ A je povinný podať aj daňovník, ktorému podľa zákona nevznikla
+povinnosť daňové priznanie typ A podať, ak ho správca dane vyzve na podanie daňového
+priznania (§ 15 daňového poriadku).
+
+2. Pred uplynutím lehoty na podanie daňového priznania (v tomto prípade daňového priznania
+typ A) môže daňovník podať opravné daňové priznanie (typ A alebo typ B, ak zistí, že mal
+podať tento typ daňového priznania) podľa § 16 ods. 1 daňového poriadku, v ktorom vyznačí, že
+ide o opravné daňové priznanie.
+
+3. Po uplynutí lehoty na podanie daňového priznania typ A je povinný daňovník podať do konca
+mesiaca nasledujúceho po tomto zistení dodatočné daňové priznanie [typ A alebo typ B, ak mal
+podať tento typ daňového priznania], ak zistí, že jeho daň je vyššia, ako bola uvedená v daňovom
+priznaní typ A alebo vyrubená správcom dane a v rovnakej lehote je dodatočne priznaná daň
+splatná. Ak daňovník, ktorý podal daňové priznanie typ A zistí po uplynutí lehoty na podanie
+daňového priznania, že mal okrem príjmov zo závislej činnosti (§ 5 zákona) za príslušné
+zdaňovacie obdobie aj iný druh zdaniteľných príjmov podľa zákona, je povinný podať dodatočné
+daňové priznanie k dani z príjmov fyzickej osoby typ B. Dodatočné daňové priznanie typ A alebo
+typ B môže podať aj daňovník, ktorý zistí, že jeho daň má byť nižšia, ako ju uviedol v daňovom
+priznaní alebo ako bola správcom dane vyrubená, alebo daňové priznanie neobsahuje správne
+údaje. Ak daňový subjekt podá dodatočné daňové priznanie v posledný rok lehoty podľa § 69 ods.
+1, 2 a 5 daňového poriadku, táto lehota sa predĺži a uplynie v nasledujúcom kalendárnom roku
+posledným dňom mesiaca, ktorý sa svojím označením zhoduje s mesiacom, v ktorom bolo podané
+posledné dodatočné daňové priznanie. V tejto predĺženej lehote daňový subjekt nemôže podať
+dodatočné daňové priznanie (§ 16 daňového poriadku). Podľa § 32 ods. 8 zákona, osoba uvedená
+v § 35 zákona č. 311/2001 Z. z. Zákonník práce v znení neskorších predpisov (ďalej len
+„Zákonník práce“) a osoba uvedená v § 49 ods. 4 zákona zahrnie do úhrnu zdaniteľných príjmov
+zo závislej činnosti zomrelého daňovníka, za ktorého podáva daňové priznanie aj tie zdaniteľné
+príjmy zo závislej činnosti, ktoré zamestnávateľ zomrelého daňovníka vyplatil osobe, na ktorú
+prešlo právo na tieto príjmy. Ak budú tejto osobe vyplatené príjmy zo závislej činnosti
+za zomrelého daňovníka po podaní daňového priznania, táto osoba je povinná podať za zomrelého
+daňovníka dodatočné daňové priznanie, pričom správca dane v tomto prípade neuplatní postup
+podľa § 154 až 156 daňového poriadku. V súlade s § 32 ods. 11 zákona, podáva dodatočné daňové
+priznanie aj daňovník, ktorému bol spätne priznaný dôchodok (§ 11 ods. 6 zákona) k začiatku
+bezprostredne predchádzajúceho zdaňovacieho obdobia alebo k začiatku zdaňovacích období
+predchádzajúcich tomuto zdaňovaciemu obdobiu, ak si za tieto zdaňovacie obdobia uplatňoval
+nezdaniteľnú časť základu dane na daňovníka. Ak daňovník podá dodatočné daňové priznanie len
+z tohto dôvodu, neuplatní sa postup podľa § 154 až 156 daňového poriadku.
+V dodatočnom daňovom priznaní (typ A alebo typ B) sa na prvej strane vyznačí, že ide
+o dodatočné daňové priznanie a zároveň vyznačí aj deň, v ktorom daňovník zistil skutočnosti
+na podanie dodatočného daňového priznania. Daňovník vypĺňa v dodatočnom daňovom priznaní
+všetky potrebné riadky a rozdiely oproti pôvodne podanému daňovému priznaniu alebo
+bezprostredne predchádzajúcemu podanému daňovému priznaniu, ak daňovník podal dodatočné
+                                                                                              2
+daňové priznanie, alebo ročnému zúčtovaniu. Uvedené daňovník vyznačí v VII. ODDIELe
+dodatočného daňového priznania na riadkoch 73 až 80.
+
+4. Daň z príjmov fyzickej osoby sa vypočíta zo základu dane zisteného podľa § 4 ods. 1 písm. a)
+zákona zníženého o nezdaniteľné časti základu dane podľa § 11 zákona, zaokrúhleného podľa § 47
+zákona, sadzbou podľa § 15 písm. a) bod 1 zákona:
+    ➢ 19 % z tej časti základu dane, ktorá nepresiahne 154,8-násobok sumy životného minima
+       platného k 1. januáru príslušného zdaňovacieho obdobia (ďalej len „platné životné
+       minimum“), t. j. pre zdaňovacie obdobie 2026 sumu 43 983,32 eura vrátane, resp.
+    ➢ 25 % z tej časti základu dane, ktorá presiahne 154,8-násobok a nepresiahne 212,4-násobok
+       sumy platného životného minima, t. j. pre zdaňovacie obdobie 2026 sumu 60 349,21 eura
+       vrátane, resp.
+    ➢ 30 % z tej časti základu dane, ktorý presiahne 212,4-násobok a nepresiahne 264-násobok
+       sumy platného životného minima, t. j. pre zdaňovacie obdobie 2026 sumu 75 010,32 eura
+       vrátane, resp.
+    ➢ 35 % z tej časti základu dane, ktorá presiahne 264-násobok sumy platného životného
+       minima.
+Vypočítaná daň sa zaokrúhľuje podľa § 47 zákona.
+
+5. Takto vypočítaná daň sa zníži o daňový bonus podľa zákona a o daňový bonus
+na zaplatené úroky podľa § 33a zákona, ak daňovníkovi vznikne nárok na ich uplatnenie.
+
+
+6. Prílohou daňového priznania typ A sú všetky kópie dokladov preukazujúce výšku príjmov
+zo závislej činnosti daňovníka, zaplateného povinného poistného, ktoré bol zamestnanec povinný
+zaplatiť vrátane zahraničného povinného poistného, ktoré je rovnakého druhu ako povinné poistné
+na území Slovenskej republiky a ktoré je povinný platiť zamestnanec podľa osobitných predpisov
+(napr. zdravotné poistenie, sociálne poistenie § 5 ods. 8 zákona), výšku zrazených preddavkov
+na daň z týchto príjmov, príp. výšku nepeňažných príjmov zo závislej činnosti (§ 5 zákona),
+z ktorých nebolo možné podľa § 35 ods. 3 písm. a) zákona zraziť preddavok na daň, plynúcich
+zo zdrojov na území Slovenskej republiky ako aj zo zdrojov v zahraničí v zdaňovacom období,
+za ktoré sa podáva daňové priznanie typ A, nárok na daňový bonus podľa zákona a daňový bonus
+na zaplatené úroky podľa § 33a zákona. Ak podá daňové priznanie typ A daňovník, ktorému
+zamestnávateľ, ktorý je platiteľom dane, vykonal ročné zúčtovanie podľa § 38 zákona, prílohou
+daňového priznania typ A je doklad o vykonanom ročnom zúčtovaní vrátane III. časti tohto
+dokladu – t. j. doplnený doklad o vykonanom ročnom zúčtovaní (§ 39 ods. 6 zákona). Ak si
+daňovník uplatňuje v daňovom priznaní typu A daňový bonus podľa zákona, alebo jeho časť,
+prílohou daňového priznania sú aj kópie dokladov preukazujúcich nárok na jeho priznanie (§ 37
+zákona – napr. potvrdenie o návšteve školy, kópia rodného listu dieťaťa...). Daňovník, ktorý si
+uplatňuje nárok na daňový bonus podľa zákona, nemá povinnosť predkladať potvrdenie o návšteve
+školy alebo potvrdenie príslušného úradu o poberaní prídavku na vyživované dieťa, ak dieťa
+študuje na škole so sídlom na území SR.
+Ak daňovník uplatňuje postup podľa § 33 ods. 8 zákona, prílohou daňového priznania typ A je aj
+kópia:
+   -   dokladu preukazujúceho oprávnenosť nároku na priznanie daňového bonusu podľa
+       zákona druhou oprávnenou osobou (napr. rodný list dieťaťa, ak ide o vlastné dieťa
+       druhej oprávnenej osoby; sobášny list a rodný list dieťaťa, ak ide o dieťa druhého
+       z manželov; rozhodnutie príslušného orgánu, ak ide o dieťa prevzaté do starostlivosti
+
+
+                                                                                             3
+       nahrádzajúcej starostlivosť rodičov), okrem rodného listu dieťaťa, ktorý bol vydaný
+       na území SR,
+   -   dokladu o vykonanom ročnom zúčtovaní druhej oprávnenej osoby, ak na území
+       Slovenskej republiky nepodala daňové priznanie, resp. dokladu preukazujúceho výšku
+       základu dane z príjmov podľa § 5 zákona druhej oprávnenej osoby, ktorej ročné
+       zúčtovanie nebolo vykonané, a táto osoba nemala povinnosť podať daňové priznanie.
+Daňovník nemusí (opätovne) predkladať správcovi dane doklady, v ktorých nedošlo k zmene
+údajov v nich uvedených. To platí nielen pre rodný list, ale aj pre ďalšie doklady, napr. potvrdenie
+zo školy, ak ide o dieťa študujúce v zahraničí, sobášny list, ak preukazuje nárok na dieťa druhého
+z manželov, rozhodnutie súdu atď.
+U daňovníka, ktorý si uplatňuje nárok na daňový bonus na zaplatené úroky podľa § 33a zákona,
+prílohou daňového priznania typ A je potvrdenie vydané veriteľom podľa § 26a zákona č. 90/2016
+Z. z. o úveroch na bývanie a o zmene a doplnení niektorých zákonov v znení neskorších predpisov.
+Prílohou daňového priznania typ A je aj písomné potvrdenie (potvrdenia) o výkone činnosti
+dobrovoľníka, ak túto činnosť vykonával najmenej 40 hodín a ak sa rozhodol poukázať sumu
+do výšky 3 % zaplatenej dane. [Podľa § 50 ods. 1 zákona, výkon dobrovoľníckej činnosti sa
+preukazuje písomným potvrdením a podľa § 4 ods. 9 zákona č. 406/2011 Z. z. o dobrovoľníctve
+a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (ďalej len „zákon
+č. 406/2011 Z. z.“), ak o to dobrovoľník požiada, vysielajúca organizácia je povinná mu vydať
+písomné potvrdenie o trvaní, rozsahu a obsahu dobrovoľníckej činnosti a písomné hodnotenie jeho
+dobrovoľníckej činnosti].
+Na účely uplatnenia § 50aa zákona je prílohou daňového priznania typ A aj kópia rozhodnutia
+príslušného orgánu o zverení do starostlivosti nahrádzajúcej starostlivosť rodičov, ak bol daňovník
+zverený do starostlivosti nahrádzajúcej starostlivosť rodičov na základe rozhodnutia príslušného
+orgánu a poukazuje podiel zaplatenej dane tejto osobe. Doklad daňovník neprikladá, ak už bol
+predložený správcovi dane. To neplatí, ak došlo k zmene skutočností uvedených v tomto doklade.
+
+Číselné údaje, vyjadrujúce peňažné sumy, sa v daňovom priznaní typ A uvádzajú v eurách,
+s presnosťou na eurocenty, so zaokrúhlením podľa § 47 zákona, t. j. s presnosťou na dve
+desatinné miesta, pričom druhá číslica za desatinnou čiarkou sa upraví podľa číslic, ktoré
+nasledujú po nej, tak, že
+a) zaokrúhľovaná číslica, po ktorej nasleduje číslica menšia ako päť, zostáva bez zmeny,
+b) zaokrúhľovaná číslica, po ktorej nasleduje číslica päť alebo číslica väčšia ako päť, sa
+zväčšuje o jednu.
+
+
+               POSTUP PRI VYPĹŇANÍ DAŇOVÉHO PRIZNANIA TYP A
+
+Pred vyplnením každého riadku daňového priznania typ A je potrebné si pozorne prečítať s ním
+súvisiacu predtlač. Daňové priznanie typ A sa vypĺňa čitateľne písacím strojom alebo paličkovým
+písmom. Riadky daňového priznania typ A sa vyplnia podľa predtlače, nevyplnené riadky sa
+neprečiarkujú.
+
+Nevyplnené riadky v celom daňovom priznaní typ A, daňovník ponechá prázdne.
+
+Riadky 01 a 02 vyplní daňovník podľa predtlače. Na riadku 01 uvádza daňovník daňové
+identifikačné číslo (DIČ), ak ho má pridelené, v ostatných prípadoch uvádza rodné číslo.
+
+                                                                                                 4
+Na riadku 02 sa uvádza dátum narodenia v prípade, ak ide o daňovníka, ktorý nemá pridelené
+DIČ ani rodné číslo.
+
+I. ODDIEL – ÚDAJE O DAŇOVNÍKOVI
+Riadky 03 až 05 vypĺňa daňovník s neobmedzenou daňovou povinnosťou aj s obmedzenou
+daňovou povinnosťou podľa predtlače.
+Na riadkoch 06 až 10 vypĺňa daňovník adresu miesta svojho trvalého pobytu na území
+Slovenskej republiky alebo v zahraničí v deň podania daňového priznania typ A.
+Riadok 11 zaškrtáva daňovník, ktorý počas zdaňovacieho obdobia, za ktoré podáva daňové
+priznanie typ A, bol daňovníkom s obmedzenou daňovou povinnosťou (daňový nerezident) podľa
+§ 2 písm. e) prvého a druhého bodu zákona. Na riadku daňovník vypĺňa obdobie, od kedy
+do kedy počas zdaňovacieho obdobia bol daňovníkom s obmedzenou daňovou povinnosťou. Ak
+počas celého zdaňovacieho obdobia je daňovníkom s obmedzenou daňovou povinnosťou, uvedie
+sa dátum od 01. 01. 2026 do 31. 12. 2026. U daňovníka, u ktorého došlo k zmene daňovej
+rezidencie v priebehu zdaňovacieho obdobia, uvedie sa tá časť zdaňovacieho obdobia, počas
+ktorej bol na území Slovenskej republiky daňovníkom s obmedzenou daňovou povinnosťou,
+napr. od 01. 07. 2026 do 31. 12. 2026. Daňovník s obmedzenou daňovou povinnosťou na území
+SR vypĺňa aj identifikačné číslo na daňové účely (TIN), ak mu bolo pridelené v štáte daňovej
+rezidencie. Ak ide o daňovníka s obmedzenou daňovou povinnosťou na území SR, vypĺňa sa aj
+ODDIEL X. Podľa § 7 ods. 1 písm. a) zákona č. 442/2012 Z. z. o medzinárodnej pomoci a
+spolupráci pri správe daní v znení neskorších predpisov Finančná správa SR nahlasuje v rámci
+automatickej výmeny informácií príjmy nerezidentov zo závislej činnosti plynúce zo zdrojov na
+území SR príslušným úradom štátu rezidencie týchto daňovníkov.
+Riadky 12 až 15 vypĺňa len ten daňovník, ktorý nemá trvalý pobyt na území Slovenskej
+republiky.
+
+II. ODDIEL – ÚDAJE O ZÁKONNOM ZÁSTUPCOVI ALEBO DEDIČOVI ALEBO
+ZÁSTUPCOVI, KTORÝ PODÁVA DAŇOVÉ PRIZNANIE
+Riadky 16 až 24 vyplní len zákonný zástupca, dedič alebo osoba, na ktorú podľa § 35 Zákonníka
+práce prešli peňažné nároky po smrti zamestnanca alebo zástupca podľa § 9 daňového poriadku,
+ktorý podáva daňové priznanie typ A za daňovníka. Ak je dedič daňovníka fyzická osoba, ktorá
+nemôže v daňovom konaní vystupovať samostatne a musí byť zastúpená zákonným zástupcom,
+alebo opatrovníkom, uvádzajú sa na riadkoch 16 až 24 údaje o zákonnom zástupcovi
+(opatrovníkovi), ktorý podáva priznanie a údaje o dedičovi v členení riadkov 16 až 24, sa
+uvádzajú v IX. ODDIELe ako osobitný záznam. Ak je dedičom daňovníka právnická osoba,
+údaje o tejto právnickej osobe sa uvádzajú v IX. ODDIELe.
+Riadky 25 a 26 vyplní daňovník ak podáva daňové priznanie typ A sám, pričom uvádza na
+týchto riadkoch svoje číslo telefónu a emailovú adresu. Ak za daňovníka podáva daňové
+priznanie typ A zákonný zástupca alebo dedič alebo zástupca, potom na týchto riadkoch uvedie
+číslo telefónu a emailovú adresu zástupca (dedič), ak sa nedohodnú inak. Tieto údaje nie je
+daňovník povinný vyplniť v súlade s § 32 zákona.
+
+III. ODDIEL – ÚDAJE NA UPLATNENIE ZNÍŽENIA ZÁKLADU DANE (§ 11 zákona)
+A DAŇOVÉHO BONUSU (§ 33 zákona)
+Riadok 27 vypĺňa podľa predtlače daňovník, ktorý je na začiatku zdaňovacieho obdobia
+(1. januára), za ktoré sa podáva daňové priznanie (dodatočné daňové priznanie) poberateľom
+dôchodku (ov) uvedených v § 11 ods. 6 zákona, alebo daňovník, ktorému bol tento dôchodok
+(ky) priznaný spätne k začiatku zdaňovacieho obdobia (k 1. januáru), za ktoré sa podáva daňové
+priznanie (dodatočné daňové priznanie).
+
+                                                                                            5
+Riadok 28 vyplní sa, ak si daňovník, ktorý vyplnil riadok 27, uplatňuje nezdaniteľnú časť
+základu dane na daňovníka v ustanovenej výške - ak suma dôchodku (ov) v úhrne nepresahuje
+sumu, o ktorú sa znižuje základ dane u daňovníka, zníži sa základ dane len vo výške rozdielu
+medzi vypočítanou sumou nezdaniteľnej časti základu dane na daňovníka a vyplatenou sumou
+dôchodku (ov) vrátane 13. dôchodku - § 11 ods. 6 zákona.
+Riadky 29 a 30 vypĺňa podľa predtlače daňovník, ak si uplatňuje nezdaniteľnú časť základu dane
+na manželku (manžela) podľa § 11 ods. 3 zákona. Nezdaniteľnú časť základu dane na manželku
+(manžela) podľa § 11 ods. 3 zákona žijúcu s daňovníkom v domácnosti si môže daňovník
+uplatniť v príslušnej výške podľa tohto ustanovenia, ak sú splnené podmienky podľa § 11 ods. 4
+zákona.
+Na účely uplatnenia nezdaniteľnej časti základu dane sa podľa § 11 ods. 4 písm. a) zákona
+považuje za manželku (manžela), na ktorú si môže daňovník uplatniť nezdaniteľnú časť základu
+dane, manželka (manžel) žijúca s daňovníkom v domácnosti, ktorá
+    - sa v príslušnom zdaňovacom období starala o vyživované (§ 33 ods. 2 zákona) maloleté
+        dieťa podľa § 3 ods. 2 zákona č. 571/2009 Z. z. o rodičovskom príspevku v znení
+        neskorších predpisov žijúce s daňovníkom v domácnosti, alebo ktorá
+    - v príslušnom zdaňovacom období poberala peňažný príspevok na opatrovanie podľa § 40
+        zákona č. 447/2008 Z. z. o peňažných príspevkoch na kompenzáciu ťažkého zdravotného
+        postihnutia a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (ďalej
+        len „zákon č. 447/2008 Z. z.“), alebo
+    - bola zaradená do evidencie uchádzačov o zamestnanie podľa § 33 zákona č. 5/2004 Z. z.
+        o službách zamestnanosti v znení neskorších predpisov, alebo
+    - sa považuje za občana so zdravotným postihnutím podľa § 9 zákona č. 5/2004 Z. z.
+        o službách zamestnanosti v znení neskorších predpisov alebo sa považuje za občana
+        s ťažkým zdravotným postihnutím podľa osobitného predpisu.
+Do vlastného príjmu manželky (manžela) sa nezahŕňa zamestnanecká prémia podľa § 32a
+zákona, daňový bonus podľa zákona, zvýšenie dôchodku pre bezvládnosť, štátne sociálne dávky
+a štipendium poskytované študujúcim sústavne sa pripravujúcim na budúce povolanie, pričom
+príjem manželky (manžela) sa znižuje o zaplatené poistné a príspevky, ktoré manželka (manžel)
+v príslušnom zdaňovacom období bola (bol) povinná z tohto príjmu zaplatiť [§ 11 ods. 4 písm. b)
+zákona]. Do vlastného príjmu manželky (manžela) patria okrem zdaniteľných príjmov aj
+daňový bonus na zaplatené úroky podľa § 33a zákona, nemocenské dávky (napr. materské),
+dôchodkové dávky (napr. starobný dôchodok), dávka v nezamestnanosti, peňažný
+príspevok na opatrovanie, dávka v hmotnej núdzi, rôzne ďalšie sociálne dávky a pod.
+V stĺpci počet mesiacov sa uvádza počet kalendárnych mesiacov v zdaňovacom období
+(kalendárnom roku), počas ktorých manželka (manžel) splnila podmienky uvedené v § 11 ods. 4
+zákona (už za kalendárny mesiac, na ktorého začiatku boli splnené ustanovené podmienky; ak sú
+súčasne splnené dve a viac podmienok v tom istom kalendárnom mesiaci, do počtu mesiacov sa
+započíta takýto mesiac len jedenkrát). Daňovník, ktorý si môže uplatniť nezdaniteľnú časť
+základu dane na manželku (manžela) len niekoľko kalendárnych mesiacov v zdaňovacom období,
+môže znížiť základ dane o nezdaniteľnú časť základu dane zodpovedajúcu jednej dvanástine
+nezdaniteľnej časti základu dane na manželku (manžela) za každý kalendárny mesiac, na začiatku
+ktorého boli splnené podmienky t.j. ak uplatňujúci daňovník spĺňa podmienku výšky základu
+dane, môže si ju uplatniť len počas obdobia, kedy bol zosobášený s manželkou (manželom) a
+zároveň aj spĺňal niektorú ďalšiu zo zákonom stanovených podmienok ako napr. ak sa manželka
+(manžel) stará o vyživované maloleté dieťa [napr. daňovník v máji 2026 uzavrel sobáš a dňa 15.
+septembra 2026 sa im narodilo dieťa, má nárok uplatniť si nezdaniteľnú časť na manželku
+(manžela) až za mesiace október až december 2026].
+Riadok 31 vypĺňa daňovník, ktorému vznikol nárok na daňový bonus podľa zákona.
+
+                                                                                             6
+Daňovník si môže uplatniť daňový bonus podľa zákona na každé vyživované dieťa žijúce s ním
+v domácnosti (prechodný pobyt dieťaťa mimo domácnosti nemá vplyv na uplatnenie daňového
+bonusu na vyživované dieťa). Ak dieťa (deti) vyživujú v domácnosti viacerí daňovníci, môže si
+daňový bonus podľa zákona uplatniť len jeden z nich. Nárok na daňový bonus podľa zákona si
+daňovník môže uplatniť pomernou časťou po časť zdaňovacieho obdobia (t. j. len niektoré
+kalendárne mesiace, na začiatku ktorých boli splnené podmienky na jeho uplatnenie) na všetky
+vyživované deti, po zostávajúcu časť zdaňovacieho obdobia druhý z daňovníkov. Ak podmienky
+na uplatnenie daňového bonusu spĺňa viac daňovníkov a ak sa nedohodnú inak, daňový bonus
+podľa zákona na všetky vyživované deti sa uplatní v poradí matka, otec, iná oprávnená osoba. Ak
+v priebehu zdaňovacieho obdobia dôjde k zmene počtu vyživovaných detí, na ktoré sa uplatňuje
+daňový bonus podľa zákona, výška nároku sa uplatní ako úhrn nárokov na daňový bonus
+podľa zákona vypočítaných podľa § 33 ods. 6 zákona v pomernej výške zodpovedajúcej počtu
+mesiacov, v ktorých daňovník vyživoval príslušný počet detí. Pri výpočte nároku na daňový
+bonus podľa zákona za zdaňovacie obdobie 2026 sa prihliadne aj na § 33 ods. 11 zákona.
+Na daňový bonus podľa zákona má nárok daňovník, ktorý mal v zdaňovacom období 2026
+zdaniteľné príjmy zo závislej činnosti (§ 5 zákona), ak
+    - poberal zdaniteľné príjmy zo závislej činnosti a zamestnávateľ mu priznal a vyplatil
+       daňový bonus podľa zákona len v niektorých mesiacoch, alebo daňovník v niektorých
+       mesiacoch nemal základ dane (čiastkový základ dane) na uplatnenie celého nároku
+       daňového bonusu podľa zákona; v tomto prípade si daňovník môže v daňovom priznaní
+       typ A uplatniť len zostávajúcu časť daňového bonusu podľa zákona, na ktorú mu
+       za zdaňovacie obdobie vznikol nárok, nepriznanú a nevyplatenú zamestnávateľom, alebo
+    - nepoberal za niektorý kalendárny mesiac zdaniteľný príjem zo závislej činnosti
+       v peňažnej alebo nepeňažnej forme u zamestnávateľa, u ktorého si uplatňoval daňový
+       bonus podľa zákona, v tomto prípade si môže uplatniť v daňovom priznaní typ A
+       zostávajúcu časť daňového bonusu podľa zákona, na ktorú mu za zdaňovacie obdobie
+       vznikol nárok, nepriznanú a nevyplatenú zamestnávateľom, alebo
+    - poberal len zdaniteľné príjmy zo závislej činnosti a neuplatňoval daňový bonus
+       podľa zákona u žiadneho zamestnávateľa.
+Pri uplatnení nároku na daňový bonus podľa zákona sa suma daňového bonusu obmedzuje
+výškou ustanoveného percentuálneho limitu základu dane (čiastkového základu dane) v závislosti
+od počtu vyživovaných detí podľa § 33 ods. 6 zákona a znižovaním nároku podľa § 33 ods. 11
+zákona.
+Ak základ dane (čiastkový základ dane) daňovníka z príjmov zo závislej činnosti (§ 5) uvedený
+na r. 39 alebo navýšený základ dane (čiastkový základ dane) podľa § 33 ods. 8 zákona uvedený
+na r. 56a je vyšší ako 1,5 násobok 12-násobku priemernej mesačnej mzdy* zamestnanca
+v hospodárstve SR (zistenej Štatistickým úradom SR) za kalendárny rok, ktorý dva roky
+predchádza roku, v ktorom sa uplatňuje nárok na daňový bonus, potom sa nárok na daňový
+bonus na každé vyživované dieťa daňovníka znižuje o 1/10 rozdielu medzi základom dane
+(čiastkovým základom dane) z r. 39 alebo navýšeným základom dane (čiastkovým základom
+dane) podľa § 33 ods. 8 zákona z r. 56a daňovníka a sumou zodpovedajúcou 1,5 násobku 12
+násobku priemernej mesačnej mzdy zamestnanca spred dvoch rokov (v prípade daňového bonusu
+podľa zákona uplatneného za rok 2026 sa sleduje priemerná mesačná mzda v hospodárstve SR
+vyhlásená Štatistickým úradom SR za rok 2024).
+
+* Priemerná mesačná mzda v hospodárstve SR vyhlásená Štatistickým úradom SR za rok 2024 je
+1 524 eur, t. j. hranica pre vyklesávanie sumy daňového bonusu v roku 2026 je vo výške 1,5
+násobku sumy 1 524 eur, t. j. 2 286 eur („limit mesačne“), resp. 27 432 eur („limit ročne“).
+
+
+                                                                                             7
+Na riadku 31 sa uvádzajú údaje o vyživovanom dieťati (deťoch), na ktoré za rovnaké obdobie
+kalendárneho roka neuplatnil nárok na daňový bonus podľa zákona iný daňovník. Ak dieťa nemá
+rodné číslo vydané na území SR, uvedie sa dátum narodenia dieťaťa v tvare DDMM/RRRR tak,
+že pred lomítkom sa uvedie DDMM sprava (t. j. prvé dve políčka ostanú prázdne) a za lomítkom
+sa uvedie RRRR. Ak sa uplatňuje nárok na daňový bonus podľa zákona za 12 kalendárnych
+mesiacov, vyznačí sa krížikom políčko 1-12. Ak sa nárok uplatňuje len za niektoré kalendárne
+mesiace, vyznačí sa krížikom len políčko príslušného mesiaca.
+Riadok 31a sa vyznačí krížikom vtedy, ak daňovník uplatňuje daňový bonus podľa zákona
+za viac ako štyri deti, nárok sa uplatní v IX. ODDIELe v členení údajov podľa riadku 31
+daňového priznania typ A.
+
+Údaje druhej oprávnenej osoby vyživujúcej dieťa (deti) v domácnosti uvedené na r. 31
+Túto časť vypĺňa daňovník vtedy, ak si na účely výpočtu daňového bonusu podľa zákona navýši
+základ dane o základ dane druhej oprávnenej osoby. V tomto prípade daňovník zaškrtne aj pole
+„Uplatňujem postup podľa § 33 ods. 8 zákona“.
+
+Riadok 32 sa vyplní, ak daňovník, uplatňujúci si nárok na daňový bonus podľa zákona nemá
+základ dane (čiastkový základ dane) z príjmov podľa § 5 zákona na uplatnenie celého nároku
+daňového bonusu na dieťa (deti) a podmienky na uplatnenie daňového bonusu spĺňa aj druhá
+oprávnená osoba, vyživujúca dieťa (deti) v domácnosti. Na riadku sa uvádza priezvisko, meno
+a rodné číslo druhej oprávnenej osoby. Ak druhá oprávnená osoba nemá pridelené rodné číslo,
+uvádza sa len dátum narodenia vo formáte DDMM/RRRR, tak, že pred lomítkom sa uvedie
+DDMM sprava (t. j. prvé dve políčka zostanú prázdne) a za lomítkom sa uvedie RRRR.
+
+Ak dieťa, na ktoré si daňovník uplatňuje daňový bonus podľa zákona, je vo vzťahu k druhej
+oprávnenej osobe vlastné dieťa, ktorému bol rodný list vydaný na území SR, daňovník
+podávajúci daňové priznanie typ A nemá povinnosť preukazovať oprávnenosť nároku druhej
+oprávnenej osoby; ak vo vzťahu k druhej oprávnenej osobe ide o dieťa síce vlastné, ale rodný list
+by bol vydaný v zahraničí alebo ide o dieťa druhého z manželov alebo dieťa prevzaté
+do starostlivosti nahrádzajúcej starostlivosť rodičov, potom túto skutočnosť je daňovník povinný
+preukázať, t. j. k daňovému priznaniu typ A je povinný priložiť preukazujúci doklad (viď bližšie
+na str. 3).
+
+V zaškrtávacích poliach na r. 32 sa vyznačujú krížikom tie polia, na začiatku ktorých mesiacov
+druhá oprávnená osoba splnila podmienky na uplatnenie daňového bonusu podľa zákona,
+napr. ak druhá oprávnená osoba splnila podmienky od 15.09.2026, daňovník vyznačí krížikom
+polia označené číslicami 10, 11, 12; ak by splnila podmienky celý rok, vyznačí krížikom políčko
+1-12.
+
+Daňovník uplatňujúci postup podľa § 33 ods. 8 zákona je povinný pod r. 32 zaškrtnúť aspoň
+jedno z polí, a to podľa toho, na základe akého dokladu vypĺňa základ dane druhej oprávnenej
+osoby na r. 32a, napr. druhá oprávnená osoba podala daňové priznanie, potom zaškrtne krížikom
+prvé pole; ak druhej oprávnenej osobe bolo vykonané ročné zúčtovanie (nepodala daňové
+priznanie), potom daňovník zaškrtne druhé zaškrtávacie pole, pričom k daňovému priznaniu typ
+A priloží prvú stranu ročného zúčtovania (povinná príloha); ak druhá oprávnená osoba poberala
+len príjmy zo závislej činnosti a nemala povinnosť podať daňové priznanie, a ani nepožiadala o
+ročné zúčtovanie, potom daňovník zaškrtne tretie zaškrtávacie pole a k daňovému priznaniu typ
+A priloží napr. potvrdenie o zdaniteľných príjmoch (povinná príloha).
+Na riadku 32a uvádza daňovník vždy celý základ dane vypočítaný z ustanovených príjmov
+druhej oprávnenej osoby (nie pomernú časť).
+                                                                                               8
+Daňový bonus podľa zákona si môže uplatniť daňovník, ak úhrn jeho zdaniteľných príjmov zo
+zdrojov na území Slovenskej republiky (§ 16 zákona) v príslušnom zdaňovacom období tvorí
+najmenej 90 % zo všetkých príjmov tohto daňovníka, ktoré mu plynú zo zdrojov na území
+Slovenskej republiky a zo zdrojov v zahraničí (§ 33 ods. 9 zákona). Táto podmienka platí
+rovnako pre daňovníka s neobmedzenou daňovou povinnosťou ako aj pre daňovníka
+s obmedzenou daňovou povinnosťou. Ak daňovník, ktorý uplatňuje nárok na daňový bonus
+podľa zákona použije postup podľa § 33 ods. 8 zákona, t. j. na účely výpočtu výšky nároku na
+daňový bonus si navýši základ dane (čiastkový základ dane) z príjmov aj o základ dane
+(čiastkový základ dane) z príjmov podľa § 5 alebo § 6 ods. 1 a 2 alebo ich úhrnu druhej
+oprávnenej osoby, musí aj druhá oprávnená osoba, ktorá s daňovníkom vyživuje dieťa (deti)
+v domácnosti dosahovať v príslušnom zdaňovacom období úhrn zdaniteľných príjmov zo zdrojov
+na území Slovenskej republiky (§ 16 zákona) najmenej 90 % zo všetkých jej príjmov, ktoré jej
+plynú zo zdrojov na území Slovenskej republiky a zo zdrojov v zahraničí. Takýto daňovník
+vypĺňa aj X. ODDIEL riadok 85 a 85a.
+
+IV. ODDIEL – ÚDAJE NA UPLATNENIE DAŇOVÉHO BONUSU NA ZAPLATENÉ
+ÚROKY (§ 33a zákona)
+Riadok 33 – vypĺňa podľa predtlače daňovník, ktorý si uplatňuje daňový bonus na zaplatené
+úroky podľa § 33a zákona. Suma zaplatených úrokov za zdaňovacie obdobie, dátum začatia
+úročenia úveru a dátum uzavretia zmluvy o úvere na bývanie sa vypĺňa podľa potvrdenia
+vydaného veriteľom podľa § 26a zákona č. 90/2016 Z. z. o úveroch na bývanie a o zmene a
+doplnení niektorých zákonov v znení neskorších predpisov na priznanie sumy daňového bonusu
+na zaplatené úroky podľa § 33a zákona, ktorého kópia je prílohou daňového priznania.
+V stĺpci počet mesiacov sa uvádza počet kalendárnych mesiacov v zdaňovacom období
+(kalendárnom roku), v ktorých má daňovník nárok na uplatnenie daňového bonusu na zaplatené
+úroky podľa § 33a zákona (napr. ak dátum začatia úročenia úveru je 15.02.2021, potom daňovník
+do daňového priznania typ A za rok 2026 do počtu mesiacov uvedie 1 mesiac, nakoľko päťročná
+lehota, počas ktorej mal nárok uplatniť si daňový bonus na zaplatené úroky podľa § 33a zákona
+uplynula 31.1.2026).
+
+Daňovník – žiadateľ o úver, ktorý si chce uplatniť daňový bonus na zaplatené úroky podľa § 33a
+zákona, musí spĺňať nasledovné podmienky uvedené v § 33a zákona:
+-      ku dňu podania žiadosti o úver na bývanie má najmenej 18 rokov, ale najviac 35 rokov,
+-      jeho priemerný mesačný príjem je v maximálnej výške 1,6 násobku priemernej mesačnej
+       mzdy zamestnanca v hospodárstve SR za kalendárny rok predchádzajúci kalendárnemu
+       roku, v ktorom bola uzavretá zmluva o úvere na bývanie, to platí, ak daňovník zmluvu
+       o úvere na bývanie uzavrel najskôr po 31.12.2023 (za rok 2026 sa posudzuje priemerný
+       mesačný príjem v hospodárstve SR za rok 2025, ktorého 1,6 násobok predstavuje sumu
+       max. 2 592 €).
+Nárok na daňový bonus na zaplatené úroky podľa § 33a zákona vzniká len jednému žiadateľovi,
+ak spĺňa zákonom stanovené podmienky a to aj v prípade, ak by o úver žiadal spolu s iným
+spoludlžníkom. Tento spoludlžník musí rovnako spĺňať podmienky veku a aj podmienku
+dosiahnutia maximálneho príjmu.
+
+Ak daňovník uplatňuje daňový bonus na zaplatené úroky a zmluvu o úvere na bývanie uzavrel
+najneskôr do 31.12.2023, daňovým bonusom na zaplatené úroky je suma vo výške 50 %
+zo zaplatených úrokov vypočítaných z výšky poskytnutého úveru na bývanie na základe jednej
+zmluvy o úvere na bývanie, najviac zo sumy 50 000 eur v príslušnom zdaňovacom období,
+najviac však do výšky 400 eur za rok.
+                                                                                            9
+Ak daňovník uplatňuje daňový bonus na zaplatené úroky a zmluvu o úvere na bývanie uzavrel
+najskôr po 31.12.2023, daňovým bonusom na zaplatené úroky je suma vo výške 50 %
+zo zaplatených úrokov v príslušnom zdaňovacom období, najviac však do výšky 1 200 eur
+za rok.
+
+Nárok na daňový bonus na zaplatené úroky podľa § 33a zákona vzniká počas piatich
+bezprostredne po sebe nasledujúcich rokov počnúc mesiacom, v ktorom sa začalo úročenie úveru
+na bývanie, poskytnutého na základe jednej a tej istej zmluvy o úvere na bývanie. Ak úročenie
+úveru začalo v priebehu roka, v r. 63 sa musí zohľadniť len pomerná časť daňového bonusu
+na zaplatené úroky podľa § 33a zákona pripadajúca na počet kalendárnych mesiacov
+v zdaňovacom období. Rovnako sa postupuje v roku, kedy uplynula päťročná lehota, počas ktorej
+má nárok uplatniť si daňový bonus na zaplatené úroky podľa § 33a zákona.
+
+Daňový bonus na zaplatené úroky podľa § 33a zákona sa prvýkrát použije pri zmluvách o úvere
+na bývanie uzatvorených po 31. decembri 2017; ak bol daňovníkovi poskytnutý hypotekárny
+úver na základe zmluvy o hypotekárnom úvere uzatvorenej pred 1. januárom 2018, na ktorý sa
+uplatňuje štátny príspevok alebo štátny príspevok pre mladých podľa osobitného predpisu, nárok
+na daňový bonus na zaplatené úroky mu prvýkrát vzniká až v kalendárnom mesiaci nasledujúcom
+po kalendárnom mesiaci, za ktorý mu poslednýkrát vznikol nárok na štátny príspevok alebo
+štátny príspevok pre mladých (§ 52zm ods. 1 zákona).
+
+Daňový bonus na zaplatené úroky podľa § 33a zákona si môže daňovník s neobmedzenou
+daňovou povinnosťou na území Slovenskej republiky, ale aj daňovník s obmedzenou daňovou
+povinnosťou, ak úhrn zdaniteľných príjmov daňovníka s obmedzenou daňovou povinnosťou zo
+zdrojov na území Slovenskej republiky (§ 16 zákona) v príslušnom zdaňovacom období tvorí
+najmenej 90 % zo všetkých príjmov tohto daňovníka, ktoré mu plynú zo zdrojov na území
+Slovenskej republiky a zo zdrojov v zahraničí (§ 33a ods. 10 zákona).
+
+V. ODDIEL - VÝPOČET ZÁKLADU DANE Z PRÍJMOV ZO ZÁVISLEJ ČINNOSTI
+Riadky 34 až 39 vypĺňa daňovník, ktorý dosiahol v predchádzajúcom zdaňovacom období,
+za ktoré sa vyrovnáva daň (daňová povinnosť), zdaniteľné príjmy zo závislej činnosti podľa § 5
+zákona od jedného zamestnávateľa alebo od viacerých zamestnávateľov podľa údajov uvedených
+vo všetkých potvrdeniach (dokladoch) o príjmoch zo závislej činnosti plynúce zo zdrojov
+na území Slovenskej republiky ako aj zo zdrojov v zahraničí, o zaplatenom povinnom poistnom
+(na zdravotné poistenie, na sociálne poistenie) za zdaňovacie obdobie, za ktoré sa podáva daňové
+priznanie typ A. Do úhrnu zdaniteľných príjmov v riadku 34 sa uvedú aj nepeňažné zdaniteľné
+príjmy daňovníka podľa § 5 zákona, z ktorých nebolo možné v zdaňovacom období zraziť
+preddavok na daň [§ 35 ods. 3 písm. a) zákona]. Súčasťou zdaniteľných príjmov na riadku 34 sú
+aj príjmy, pri ktorých neboli splnené podmienky pre ich oslobodenie od dane. [Túto skutočnosť
+na účely správneho vyplnenia daňového priznania typ A daňovník zistí z riadkov 05 až 10
+potvrdenia o zdaniteľných príjmoch (§ 39 ods. 5 zákona)]. K takýmto príjmom patrí napr.
+    - nepeňažné plnenie formou produktov vlastnej výroby poskytnuté od zamestnávateľa,
+        ktorého predmetom činnosti je poľnohospodárska výroba, presahujúce v úhrne 200 eur
+        ročne od všetkých zamestnávateľov [§ 5 ods. 7 písm. k) zákona];
+    - sociálna výpomoc poskytovaná z prostriedkov sociálneho fondu, pri ktorej nie sú
+        v príslušnom zdaňovacom období splnené podmienky pre jej oslobodenie od dane, ak
+        presahuje sumu 2 000 eur za zdaňovacie obdobie len od jedného zamestnávateľa.
+        Ak by sociálna výpomoc nepresiahla v úhrne 2 000 eur, ale bola by vyplatená
+        od viacerých zamestnávateľov, od dane je oslobodená suma len od jedného
+        zamestnávateľa a sociálna výpomoc vyplatená ďalšími zamestnávateľmi je zdaniteľným
+                                                                                             10
+        príjmom daňovníka a uvádza sa ako súčasť zdaniteľných príjmov zo závislej činnosti
+        na r. 34 [§ 5 ods. 7 písm. l) zákona];
+    - príspevok na rekreáciu poskytnutý zamestnávateľom zamestnancovi podľa osobitného
+        predpisu (§ 152a Zákonníka práce), ak presahuje sumu 275 eur za zdaňovacie obdobie
+        [§ 5 ods. 7 písm. b) zákona];
+    - príspevok na športovú činnosť dieťaťa poskytnutý zamestnávateľom zamestnancovi
+        podľa osobitného predpisu (§ 152b Zákonníka práce), ak presahuje sumu 275 eur
+        za zdaňovacie obdobie [§ 5 ods. 7 písm. b) zákona];
+    - nepeňažné plnenie poskytnuté zamestnancovi, ak presahuje sumu 500 eur za zdaňovacie
+        obdobie od všetkých zamestnávateľov [§ 5 ods. 7 písm. o) zákona];
+    - príjem podľa § 5 ods. 1 písm. a) a m) zákona, ktorý zamestnancovi plynie za výkon
+        činnosti trénera (§ 83 ods. 1 zákona č. 440/2015 Z. z. o športe) zapísaného do registra
+        fyzických osôb v športe, ak za príslušný kalendárny mesiac zdaňovacieho obdobia
+        presahuje sumu 300 eur od všetkých zamestnávateľov. To znamená, že pri výpočte sa
+        vychádza zo súčtu súm, presahujúcich 300 eur jednotlivo za každý kalendárny mesiac. [§
+        5 ods. 7 písm. r) zákona].
+Do riadku 35 sa vyplní úhrn zdaniteľných príjmov zo závislej činnosti, ktoré sú zahrnuté
+v riadku 34, ale plynuli daňovníkovi na základe dohôd o prácach vykonávaných mimo
+pracovného pomeru. Zdaniteľné príjmy zo závislej činnosti plynúce zo zdrojov v zahraničí
+v brutto výške, bez odpočítateľných položiek, resp. nezdaniteľných častí základu dane
+podľa zákonov platných v zahraničí (uvedené v úhrne príjmov na riadku 34) a poistné, charakteru
+povinného poistného a príspevkov, preukázateľne zaplatené v zahraničí (uvedené v úhrne
+povinného poistného na riadku 36), sa uvedú v prepočte na eurá podľa § 31 ods. 2 zákona. Ak
+z predloženého potvrdenia o zahraničnom povinnom poistnom nie je možné rozdelenie tohto
+poistného podľa riadkov 37 a 38, vyplní sa len riadok 36.
+Poznámka (prepočítací kurz podľa § 31 ods. 2 zákona) - pri príjmoch zo závislej činnosti,
+plynúcich zo zdrojov v zahraničí na prepočet cudzej meny na eurá sa použije kurz:
+    - priemerný, za kalendárny mesiac, v ktorom bol poskytnutý príjem, alebo
+    - platný v deň, v ktorom bol prijatý príjem v cudzej mene alebo bol pripísaný bankou alebo
+        pobočkou zahraničnej banky, alebo
+    - priemerný ročný za zdaňovacie obdobie, za ktoré sa podáva daňové priznanie, alebo aj
+    - priemer z priemerných mesačných kurzov za kalendárne mesiace, za ktoré podáva daňové
+        priznanie, v ktorých daňovník poberal príjmy.
+
+VI. ODDIEL - VÝPOČET DANE podľa § 15 zákona
+Na riadku 40 sa uvádza suma nezdaniteľnej časti základu dane na daňovníka s výnimkou
+prípadov, keď daňovník vypĺňal III. ODDIEL riadok 27. Nezdaniteľná časť základu dane na
+daňovníka v roku 2026 je v sume 5 966,73 eura, ak daňovník spĺňa podmienky podľa § 11 ods.
+2 písm. a) zákona, t. j. jeho základ dane z príjmov podľa § 5 zákona sa rovná alebo je nižší ako
+91,8-násobok sumy platného životného minima, čo je pre rok 2026 suma vo výške 26 083,13
+eura, inak sa táto nezdaniteľná časť základu dane upravuje podľa § 11 ods. 2 písm. b) zákona.
+Riadok 41 vypĺňa daňovník, ktorý uviedol údaje v III. ODDIELe na riadkoch 29 a 30 daňového
+priznania typ A. Nezdaniteľná časť základu dane na manželku (manžela) v roku 2026 je v sume
+5 455,30 eura, ak daňovník spĺňa ustanovené podmienky podľa § 11 ods. 3 písm. a) prvý bod a
+ods. 4 zákona, t. j. jeho základ dane z príjmov podľa § 5 zákona sa rovná alebo je nižší ako
+154,8-násobok sumy platného životného minima čo je pre rok 2026 suma vo výške 43 983,32
+eura a manželka (manžel) nemala žiadne vlastné príjmy, inak sa táto nezdaniteľná časť základu
+dane upravuje podľa § 11 ods. 3 písm. a) druhého a tretieho bodu a písm. b) zákona.
+O nezdaniteľnú časť základu dane na manželku/manžela sa znižuje základ dane daňovníka
+- s neobmedzenou daňovou povinnosťou, alebo
+                                                                                             11
+- s obmedzenou daňovou povinnosťou, ak úhrn jeho zdaniteľných príjmov zo zdrojov na území
+Slovenskej republiky (§ 16 zákona) v príslušnom zdaňovacom období tvorí najmenej 90 %
+zo všetkých príjmov, ktoré mu plynú zo zdrojov na území Slovenskej republiky a zo zdrojov
+v zahraničí (§ 11 ods. 7 zákona). Takýto daňovník vypĺňa aj X. oddiel riadok 85 a 85a.
+Na riadku 42 sa uvedie nezdaniteľná časť základu dane podľa § 11 ods. 8 zákona, ktorou sú
+príspevky na celoeurópsky osobný dôchodkový produkt podľa osobitného predpisu, príspevky
+na celoeurópsky osobný dôchodkový produkt v zahraničí rovnakého alebo porovnateľného druhu,
+príspevky na doplnkové dôchodkové sporenie podľa osobitného predpisu a príspevky
+na doplnkové dôchodkové sporenie v zahraničí rovnakého alebo porovnateľného druhu a to
+v preukázateľne zaplatenej výške v úhrne najviac do výšky 180 eur ročne. Na to, aby mohla byť
+táto nezdaniteľná časť uplatnená, musia byť splnené zákonom stanovené podmienky podľa § 11
+ods. 10 zákona a to:
+a)      príspevky na doplnkové dôchodkové sporenie podľa § 11 ods. 8 zákona zaplatil daňovník
+        na základe účastníckej zmluvy uzatvorenej po 31. decembri 2013 alebo na základe zmeny
+        účastníckej zmluvy, ktorej súčasťou je zrušenie dávkového plánu, alebo na základe
+        zmluvy o celoeurópskom osobnom dôchodkovom produkte podľa Čl. 4 nariadenia
+        Európskeho parlamentu a Rady (EÚ) 2019/1238 z 20. júna 2019 o celoeurópskom
+        osobnom dôchodkovom produkte (PEPP) v platnom znení.
+b)      daňovník nemá uzatvorenú inú účastnícku zmluvu podľa zákona č. 650/2004 Z.z.
+        o doplnkovom dôchodkovom sporení a o zmene a doplnení niektorých zákonov v znení
+        neskorších predpisov (ďalej len „zákon o doplnkovom dôchodkovom sporení“), ktorá
+        nespĺňa podmienky uvedené v § 11 ods. 10 písm. a) zákona.
+O nezdaniteľnú časť základu dane podľa § 11 ods. 8 zákona sa znižuje základ dane daňovníka
+- s neobmedzenou daňovou povinnosťou, alebo
+- s obmedzenou daňovou povinnosťou, ak úhrn jeho zdaniteľných príjmov zo zdrojov na území
+Slovenskej republiky (§ 16 zákona) v príslušnom zdaňovacom období tvorí najmenej 90 %
+zo všetkých príjmov, ktoré mu plynú zo zdrojov na území Slovenskej republiky a zo zdrojov
+v zahraničí (§ 11 ods. 7 zákona) – v tomto prípade sa vypĺňa aj X. oddiel riadok 85 a 85a.
+Daňovník, ktorý si nezdaniteľnú časť základu dane podľa § 11 ods. 8 zákona uplatňuje
+prostredníctvom daňového priznania, nemá povinnosť priložiť k daňovému priznaniu doklad,
+ktorým by nárok na uplatnenie tejto nezdaniteľnej časti základu dane preukázal. Správca dane je
+oprávnený daňovníka na jeho preukázanie vyzvať.
+Na riadku 43 sa uvedie súčet riadkov r. 40 + r. 41 + r. 42.
+Na riadku 44 sa uvedie základ dane z riadku 39, znížený o nezdaniteľné časti základu dane
+podľa § 11 zákona a zvýšený o sumu príspevkov, o ktorú sa zvyšuje základ dane podľa § 11 ods.
+11 a § 52zza ods. 2 zákona.
+Podľa § 11 ods. 11 zákona, ak bol daňovníkovi vyplatený predčasný výber podľa zákona
+o doplnkovom dôchodkovom sporení a v predchádzajúcich zdaňovacích obdobiach si uplatnil
+nezdaniteľnú časť základu dane na doplnkové dôchodkové sporenie, je povinný zvýšiť základ
+dane do troch zdaňovacích období od skončenia zdaňovacieho obdobia, v ktorom bola táto suma
+vyplatená o sumu zaplatených príspevkov na doplnkové dôchodkové sporenie, o ktorú si
+v predchádzajúcich zdaňovacích obdobiach znížil základ dane.
+Podľa § 11 ods. 9 zákona účinného do 31.12.2019 v nadväznosti na § 52zza ods. 2 zákona, ak
+bola daňovníkovi vyplatená suma podľa § 64a ods. 13 a § 123ae písm. b) zákona č. 43/2004 Z. z.
+o starobnom dôchodkovom sporení a o zmene a doplnení niektorých zákonov v znení neskorších
+predpisov a tento daňovník si v predchádzajúcich zdaňovacích obdobiach uplatnil nezdaniteľnú
+časť základu dane na dobrovoľne platené príspevky na starobné dôchodkové sporenie podľa § 11
+ods. 8 zákona v znení účinnom do 31.12.2019, je povinný zvýšiť si základ dane do troch
+zdaňovacích období od skončenia zdaňovacieho obdobia, v ktorom bola táto suma vyplatená,
+
+                                                                                            12
+o sumu zaplatených dobrovoľných príspevkov na starobné dôchodkové sporenie, o ktorú si
+v predchádzajúcich zdaňovacích obdobiach znížil základ dane.
+Na riadku 45 sa vypočíta daň zo základu dane uvedeného na riadku 44, a to sadzbou dane 19 %
+zo sumy nepresahujúcej 43 983,32 eura vrátane, sadzbou dane 25 % zo sumy presahujúcej
+43 983,32 eura a nepresahujúcej 60 349,21 eura, sadzbou dane 30 % zo sumy presahujúcej
+60 349,21 eura a nepresahujúcej 75 010,32 eura a sadzbou dane 35 % zo sumy presahujúcej 75
+010,32 eura. Vypočítané sumy dane sa zaokrúhlia podľa § 47 zákona jednotlivo a až následne sa
+vykoná ich súčet.
+Na riadku 46 sa vyplní suma zamestnaneckej prémie, o ktorú daňovník žiada prostredníctvom
+žiadosti o poukázanie zamestnaneckej prémie v XI. ODDIELe, vypočítaná podľa § 32a ods. 3 a 4
+zákona.
+Riadok 47 sa vyplní len v prípade, ak daňovník podáva opravné alebo dodatočné daňové
+priznanie typ A a mení sumu zamestnaneckej prémie. Do tohto riadku sa uvedie suma nesprávne
+vyplatenej zamestnaneckej prémie na základe vykonaného ročného zúčtovania (vyplatil
+zamestnávateľ) alebo podaného daňového priznania (vyplatil správca dane).
+Riadky 48 až 50 sa vyplnia, ak v zdaňovacom období, za ktoré sa podáva daňové priznanie typ
+A, plynuli daňovníkovi aj príjmy zo závislej činnosti zo zdrojov v zahraničí, ktoré sa
+podľa príslušnej zmluvy o zamedzení dvojitého zdanenia alebo zákona vynímajú zo zdanenia na
+území Slovenskej republiky (§ 45 zákona), v prepočte na eurá podľa § 31 ods. 2 zákona. Na účely
+výpočtu dane sa úhrn týchto príjmov zníži o zaplatené poistné a príspevky, ktoré je povinný
+platiť zamestnanec (vzťahujúce sa k týmto príjmom) a o zahraničné poistenie zamestnanca,
+na ktorého sa vzťahuje povinné zahraničné poistenie rovnakého druhu ako povinné poistenie
+na území Slovenskej republiky (§ 5 ods. 8 zákona).
+Riadky 51 až 55 sa vyplnia, ak v zdaňovacom období, za ktoré sa podáva daňové priznanie typ
+A, plynuli daňovníkovi aj príjmy zo závislej činnosti zo zdrojov v zahraničí, z ktorých sa
+podľa zmlúv o zamedzení dvojitého zdanenia na území Slovenskej republiky započítava daň
+zaplatená v zahraničí, v prepočte na eurá podľa § 31 ods. 2 zákona. Na účely výpočtu dane
+uznanej na zápočet na tuzemskú daňovú povinnosť zo zaplatenej dane v zahraničí, sa môže úhrn
+týchto príjmov znížiť o zaplatené poistné a príspevky, ktoré je povinný platiť zamestnanec
+(vzťahujúce sa k týmto príjmom) a o zahraničné poistenie zamestnanca, na ktorého sa vzťahuje
+povinné zahraničné poistenie rovnakého druhu ako povinné poistenie (§ 5 ods. 8 zákona)
+na území Slovenskej republiky. Výpočet percenta dane na účely zápočtu sa vykonáva
+s presnosťou na dve desatinné miesta (§ 47 zákona).
+
+Poznámka k riadkom 48 až 55: Podľa § 45 ods. 3 zákona sa metóda vyňatia príjmov uplatní, ak
+daňovníkovi s neobmedzenou daňovou povinnosťou plynú príjmy zo závislej činnosti
+   a) za prácu vykonávanú pre Európsku úniu a jej orgány, ktoré boli preukázateľne zdanené
+      v prospech všeobecného rozpočtu Európskej únie, alebo
+   b) zo zdrojov v zahraničí, zo štátu, s ktorým Slovenská republika nemá uzavretú zmluvu
+      o zamedzení dvojitého zdanenia, a tieto príjmy boli v zahraničí preukázateľne zdanené,
+      alebo
+   c) zo zdrojov v zahraničí zo štátu, s ktorým Slovenská republika má uzavretú zmluvu
+      o zamedzení dvojitého zdanenia a tieto príjmy boli v zahraničí preukázateľné zdanené, ak
+      je tento postup pre daňovníka výhodnejší.
+
+Na riadku 56 sa uvádza daň (daňová povinnosť). Ak daňovník neuplatňuje nárok na daňový
+bonus podľa zákona (riadok 57) alebo daňový bonus na zaplatené úroky podľa § 33a zákona
+(riadok 63) a výsledná suma uvedená na riadku 56 nepresiahne 17 eur alebo ak daňovník
+neuplatňuje nárok na daňový bonus podľa zákona (riadok 57) alebo daňový bonus na zaplatené
+
+                                                                                            13
+úroky podľa § 33a zákona (riadok 63) a jeho celkové zdaniteľné príjmy nepresiahnu 50 % sumy
+podľa § 11 ods. 2 písm. a) zákona, na riadku 56 sa uvádza nula.
+Daňovník s obmedzenou daňovou povinnosťou uvedený v § 11 ods. 6 zákona uplatní postup
+podľa § 46a zákona, ak úhrn jeho zdaniteľných príjmov zo zdrojov na území Slovenskej
+republiky (§ 16 zákona) v príslušnom zdaňovacom období tvorí najmenej 90 % zo všetkých
+príjmov tohto daňovníka, ktoré plynú zo zdrojov na území Slovenskej republiky a zo zdrojov
+v zahraničí. Takýto daňovník vypĺňa aj X. ODDIEL.
+Riadok 56a sa vyplní, ak sú vyplnené riadky 32 a 32a, t. j. daňovník uplatňuje postup podľa § 33
+ods. 8 zákona. Základ dane z r. 39 daňovník navýši o základ dane druhej oprávnenej osoby
+uvedený na riadku 32a v plnej sume vtedy, ak druhá oprávnená osoba splnila podmienky
+na uplatnenie daňového bonusu podľa zákona za 12 mesiacov. Ak druhá oprávnená osoba splnila
+podmienky len časť roka, potom daňovník svoj základ dane z r. 39 navýši o pomernú časť
+základu dane uvedeného na r. 32a len za mesiace, na začiatku ktorých podmienky boli splnené,
+napr. ak daňovník na r. 32 zaškrtol mesiace január až október a na r. 32a uviedol sumu 12 000 €,
+potom svoj základ dane z r. 39 navýši o sumu 10 000 € (12 000 / 12 mesiacov × 10 mesiacov)
+a takto navýšený základ uvedie na riadku 56a.
+Na riadku 57 sa uvádza úhrnná suma daňového bonusu podľa zákona na všetky vyživované deti
+žijúce v (spoločnej) domácnosti s daňovníkom, na ktoré vznikol nárok na daňový bonus
+podľa zákona za celé zdaňovacie obdobie. Ak bol daňovníkovi v priebehu zdaňovacieho obdobia
+zamestnávateľom priznaný vyšší nárok na daňový bonus podľa zákona ako mu vznikne
+pri prepočítaní po skončení zdaňovacieho obdobia, daňovník stráca nárok na vypočítaný rozdiel
+daňového bonusu podľa zákona za rok 2026, tento rozdiel sa uvedie na r. 62.
+Na riadku 58 sa uvádza rozdiel riadkov 56 a 57.
+Na riadku 59 sa uvádza suma vyplateného daňového bonusu podľa zákona z kópií potvrdení
+od všetkých zamestnávateľov so sídlom alebo bydliskom na území Slovenskej republiky, ktoré sú
+prílohou daňového priznania typ A.
+Na riadku 60 sa uvádza rozdiel riadkov 57 a 59. Ak zamestnávateľ nevyplatil celú sumu
+daňového bonusu podľa zákona a daňovník si uplatňuje nárok na zostávajúcu pomernú časť
+daňového bonusu podľa zákona, na ktorú mu za zdaňovacie obdobie 2026 vznikol nárok, tento
+rozdiel je vždy väčší ako 0.
+Na riadku 61 sa uvádza rozdiel riadkov 60 a 56. Vypĺňa sa v prípade, ak je suma uplatneného
+daňového bonusu podľa zákona z riadku 60 vyššia ako suma daňovej povinnosti z riadku 56.
+Daňový bonus podľa zákona možno uplatniť najviac do výšky dane vypočítanej za príslušné
+zdaňovacie obdobie podľa zákona. Ak suma dane vypočítaná za príslušné zdaňovacie obdobie je
+nižšia ako suma uplatňovaného daňového bonusu podľa zákona, požiada daňovník miestne
+príslušného správcu dane v XI. ODDIELe daňového priznania typ A o vyplatenie sumy vo výške
+rozdielu medzi sumou daňového bonusu podľa zákona a sumou dane vypočítanej za príslušné
+zdaňovacie obdobie. Správca dane postupuje pri vrátení uvedenej sumy ako pri vrátení daňového
+preplatku podľa § 79 daňového poriadku (§ 33 ods. 7 zákona).
+Na riadku 62 sa uvádza rozdiel riadkov 59 a 57 ak je väčší ako 0.
+Na riadku 63 vypĺňa daňovník, ktorý vyplnil IV. ODDIEL. Ak daňovník uplatňuje daňový bonus
+na zaplatené úroky podľa § 33a zákona, daňovým bonusom na zaplatené úroky podľa § 33a
+zákona je suma vo výške 50 % zo zaplatených úrokov v príslušnom zdaňovacom období
+z riadku 33, najviac do výšky 1 200 eur za rok, ak ide o zmluvu o úvere na bývanie, uzatvorenú
+najskôr po 31.12.2023, alebo do výšky 400 eur za rok, ak ide o zmluvu o úvere na bývanie,
+uzatvorenú najneskôr do 31.12.2023. Ak obdobie úročenia úveru na bývanie, počas ktorého má
+daňovník nárok na tento daňový bonus, začalo v priebehu zdaňovacieho obdobia, uvádza sa
+v riadku 63 suma zodpovedajúca pomernej časti daňového bonusu na zaplatené úroky
+z maximálnej sumy pripadajúca na počet kalendárnych mesiacov, v ktorých vznikol nárok na jeho
+uplatnenie.
+                                                                                             14
+Napr. ak daňovník uzatvoril zmluvu o úvere na bývanie dňa 20. septembra 2026, úročenie sa
+začalo v októbri 2026 a daňovník zaplatil:
+   1. úrok 510 eur, uplatní sumu 255 eur (50% zo zaplatených úrokov)
+   2. úrok 720 eur, uplatní sumu 300 eur (50 % zo zaplatených úrokov max. však 1200 : 12 x 3)
+Na riadku 64 sa uvádza rozdiel riadkov 58 a 63.
+Na riadku 65 sa uvádza suma zamestnávateľom vyplateného daňového bonusu na zaplatené
+úroky podľa § 33a zákona, ak daňové priznanie bolo podané po vykonaní ročného zúčtovania.
+Na riadku 66 sa uvádza rozdiel riadkov 63 a 65, ak je väčší ako 0.
+Na riadku 67 sa uvádza rozdiel riadkov 66 a 58. Vypĺňa sa v prípade, ak je suma uplatneného
+bonusu na zaplatené úroky podľa § 33a zákona z riadku 66 vyššia ako suma daňovej povinnosti
+zníženej o sumu daňového bonusu podľa zákona z riadku 58. Daňový bonus na zaplatené úroky
+podľa § 33a zákona možno uplatniť najviac do výšky dane vypočítanej za príslušné zdaňovacie
+obdobie podľa zákona zníženej o daňový bonus podľa zákona. Ak suma dane zníženej o daňový
+bonus podľa zákona vypočítaná za príslušné zdaňovacie obdobie je nižšia ako suma
+uplatňovaného daňového bonusu na zaplatené úroky podľa § 33a zákona, požiada daňovník
+miestne príslušného správcu dane v XI. ODDIELe daňového priznania typ A o vyplatenie sumy
+vo výške rozdielu medzi sumou daňového bonusu na zaplatené úroky podľa § 33a zákona a sumou
+dane vypočítanej za príslušné zdaňovacie obdobie zníženej o daňový bonus podľa zákona.
+Správca dane postupuje pri vrátení uvedenej sumy ako pri vrátení daňového preplatku podľa § 79
+daňového poriadku (§ 33a ods. 9 zákona).
+Na riadku 68 sa uvádza úhrn zaplatených preddavkov na daň podľa § 34 zákona.
+Na riadku 69 sa uvádza úhrn zrazených preddavkov na daň podľa § 35 zákona z príjmov
+plynúcich zo zdrojov na území Slovenskej republiky a zo zdrojov v zahraničí z kópií potvrdení
+(dokladov) od všetkých zamestnávateľov, ktoré sú prílohou daňového priznania typ A.
+Neuvádzajú sa preddavky na daň zrazené podľa daňových právnych predpisov platných
+v zahraničí, preddavky, ktoré nie sú zrazené v súlade s § 35 zákona, a tiež preddavky na daň
+podľa § 35 ods. 10 a 11 zákona.
+Na riadku 70 sa uvádza úhrn zaplatených preddavkov na daň podľa § 35 ods. 10 a 11 zákona.
+(vyplní daňovník, ktorý vykonáva závislú činnosť pre zamestnávateľa, ktorý nie je platiteľom
+dane a preddavky na daň si platil daňovník sám).
+Riadky 71 a 72 sa vypĺňajú podľa predtlače, pričom na týchto riadkoch vznikne buď daň
+na úhradu (riadok 71) alebo daňový preplatok (riadok 72).
+
+VII. ODDIEL – ROZDIELY Z DODATOČNÉHO DAŇOVÉHO PRIZNANIA
+Riadky 73 až 80 sa vypĺňajú len v prípade, ak daňovník podáva dodatočné daňové priznanie typ
+A (bližšie v bode 3 tohto poučenia). Na riadku 73 dodatočného daňového priznania sa uvádza
+suma daňovej povinnosti, ktorú daňovník uviedol v riadku 56 „riadneho“ daňového priznania typ
+A, prípadne bezprostredne predchádzajúceho podaného daňového priznania, alebo riadok 116
+daňového priznania typ B alebo riadku 06 ročného zúčtovania. Podobný postup sa uvádza aj
+na riadkoch 74 až 80 dodatočného daňového priznania typ A.
+
+VIII. ODDIEL - VYHLÁSENIE O POUKÁZANÍ PODIELU ZAPLATENEJ DANE Z
+PRÍJMOV FYZICKEJ OSOBY PODĽA § 50 A § 50aa ZÁKONA
+Riadky 81 a 82 sa vyplnia, ak daňovník uplatňuje postup vyplývajúci z § 50 zákona, t. j. využije
+inštitút o použití podielu zaplatenej dane na osobitné účely. Údaje o prijímateľovi, ktoré sa
+uvádzajú na riadku 81, daňovník zistí zo zoznamu prijímateľov, ktorý každoročne zverejňuje
+Notárska komora Slovenskej republiky do 15. januára kalendárneho roka, v ktorom možno
+prijímateľovi poskytnúť 2 % resp. 3 % podiel zaplatenej dane. IČO sa zarovnáva sprava a ak
+obsahuje menej ako 12 čísiel, nepoužité polia zostávajú prázdne.
+
+                                                                                             15
+Podiel do výšky 3 % zo zaplatenej dane podľa § 50 ods. 1 písm. a) zákona môže prijímateľovi
+poukázať fyzická osoba, ktorá v zdaňovacom období vykonávala dobrovoľnícku činnosť podľa
+zákona č. 406/2011 Z. z. počas najmenej 40 hodín a predloží o tom písomné potvrdenie, ktoré je
+prílohou daňového priznania. Podľa § 50 ods. 1 zákona, výkon dobrovoľníckej činnosti sa
+preukazuje písomným potvrdením a podľa § 4 ods. 9 zákona č. 406/2011 Z. z., ak o to
+dobrovoľník požiada, vysielajúca organizácia je povinná mu vydať písomné potvrdenie o trvaní,
+rozsahu a obsahu dobrovoľníckej činnosti a písomné hodnotenie jeho dobrovoľníckej činnosti.
+Daňovník, ktorý uplatňuje podiel do výšky 3 % zo zaplatenej dane podľa § 50 ods. 1 písm. a)
+zákona, zaškrtáva príslušné zaškrtávacie pole.
+V prípade, ak daňovník vyjadrí súhlas zaškrtnutím políčka v tomto oddiele, správca dane je
+povinný v súlade s § 50 ods. 8 zákona oznámiť prijímateľovi označenie daňovníka, ktorý
+poukazuje podiel zaplatenej dane, a to jeho meno, priezvisko a trvalý pobyt.
+V daňovom priznaní typ A sa na riadku 82 uvádzajú 2 % alebo 3 % zo zaplatenej dane z riadku
+64 minimálne však 3 eurá. Suma zodpovedajúca podielu zaplatenej dane sa zaokrúhľuje podľa §
+47 zákona.
+Ak daňovník neuplatňuje postup podľa § 50 zákona, vyznačí krížikom príslušné zaškrtávacie
+pole.
+Na riadku 83 sa uvádzajú údaje o rodičovi (rodičoch) daňovníka v rozsahu rodné číslo,
+priezvisko a meno, ak daňovník uplatňuje postup podľa § 50aa zákona a využije možnosť
+poukázať podiel zaplatenej dane pre svojho rodiča (obidvoch rodičov). Ak rodič nemá rodné
+číslo vydané na území SR, v okienku rodného čísla sa uvedie dátum narodenia rodiča v tvare
+DDMM/RRRR tak, že pred lomítkom sa uvedie DDMM sprava (t. j. prvé dve políčka ostanú
+prázdne) a za lomítkom sa uvedie RRRR.
+Za rodiča daňovníka sa považuje fyzická osoba, ktorá je k 31. decembru kalendárneho roka, za
+ktorý sa poukazuje podiel zaplatenej dane:
+    - poberateľom starobného dôchodku,
+    - poberateľom invalidného dôchodku vyplácaného po dovŕšení dôchodkového veku,
+    - poberateľom výsluhového dôchodku vyplácaného po dovŕšení dôchodkového veku a
+    - poberateľom invalidného výsluhového dôchodku vyplácaného po dovŕšení
+        dôchodkového veku,
+        ak táto osoba je rodičom daňovníka a daňovník je vlastným alebo osvojeným dieťaťom
+   tohto rodiča, alebo fyzickou osobou, ktorej bol daňovník zverený do starostlivosti
+   nahrádzajúcej starostlivosť rodičov na základe rozhodnutia príslušného orgánu.
+Ak rodič, ktorému daňovník poukazuje podiel zaplatenej dane, je fyzickou osobou, ktorej bol
+daňovník zverený do starostlivosti nahrádzajúcej starostlivosť rodičov na základe rozhodnutia
+príslušného orgánu, potom k vyhláseniu daňovník priloží aj kópiu rozhodnutia príslušného
+orgánu o tejto skutočnosti.
+Podiel zaplatenej dane, poukázaný správcom dane prijímateľovi alebo prevedený správcom dane
+Sociálnej poisťovni, nemožno upravovať, ak sa dodatočne zistí, že daňová povinnosť daňovníka
+bola iná (§ 50 ods. 10 zákona a § 50aa ods. 8 zákona). Ak daňovníkovi vznikne preplatok na
+dani, o rozdiel medzi sumou poukázanou prijímateľovi a sumou zodpovedajúcou podielu
+zaplatenej dane z upravenej daňovej povinnosti a o rozdiel medzi sumou poukázanou rodičovi a
+sumou zodpovedajúcou podielu zaplatenej dane z upravenej dane sa daňovníkovi zníži preplatok
+na dani. (toto sa uvádza na riadku 76 dodatočného daňového priznania).
+Ak daňovník neuplatňuje postup podľa § 50aa zákona, vyznačí krížikom príslušné zaškrtávacie
+pole.
+
+IX. ODDIEL – MIESTO NA OSOBITNÉ ZÁZNAMY DAŇOVNÍKA
+Uvádzajú sa osobitné záznamy daňovníka (napr. k riadku 31).
+
+                                                                                            16
+Ak daňovník podáva dodatočné daňové priznanie len z dôvodov uvedených v § 32 ods. 8, 11 a 12
+alebo § 40 ods. 7 zákona, uvedú sa v tomto oddiele aj konkrétne dôvody, pre ktoré sa podáva. Ak
+súčasťou základu dane daňovníka s neobmedzenou daňovou povinnosťou sú aj príjmy, ktoré
+dosiahol zo zdrojov v zahraničí, ich výška a výdavky na poistné a príspevky, ktoré je povinný
+platiť zamestnanec a boli preukázateľne zaplatené v zahraničí a v Slovenskej republike, sa uvedú
+do tabuľky aj s číselným kódom príslušného štátu.
+Daňovník s neobmedzenou daňovou povinnosťou a daňovník s obmedzenou daňovou
+povinnosťou v IX. ODDIELE identifikuje zdaniteľné príjmy (podľa druhu, výšky a spôsobu
+zdanenia príjmu) plynúce zo zdrojov na území Slovenskej republiky, ktoré uvádza na riadku 85a
+okrem identifikovaných príjmov na riadku 34.
+
+X. ODDIEL – ĎALŠIE ÚDAJE O DAŇOVNÍKOVI
+Na riadku 84 sa uvádza štát daňovej rezidencie daňovníka s obmedzenou daňovou povinnosťou
+na území Slovenskej republiky, t. j. štát, v ktorom sú predmetom dane jeho „celosvetové“ príjmy.
+Tento riadok vypĺňa každý daňovník s obmedzenou daňovou povinnosťou.
+Riadky 85 a 85a vypĺňa daňovník s neobmedzenou daňovou povinnosťou, uplatňujúci postup
+podľa § 33 ods. 9 zákona a daňovník s obmedzenou daňovou povinnosťou, ktorý uplatňuje
+postup podľa § 11 ods. 7, § 33 ods. 9, § 33a ods. 10 a § 46a zákona, t. j. daňovník, ktorý dosahuje
+najmenej 90 % z celosvetových príjmov zo zdrojov na území Slovenskej republiky a má nárok na
+uplatnenie nezdaniteľných častí podľa § 11 ods. 3 a 8 zákona, daňového bonusu podľa zákona,
+daňového bonusu na zaplatené úroky podľa § 33a zákona alebo nevyrubenie a neplatenie dane,
+ktorá za zdaňovacie obdobie nepresiahne 17 eur, alebo ak celkové zdaniteľné príjmy daňovníka
+nepresiahli 50 % nezdaniteľnej časti na daňovníka [§ 11 ods. 2 písm. a) zákona]. Riadok 85 a 85a
+vypĺňa aj daňovník (rezident aj nerezident), ktorý je druhou oprávnenou osobou pre účely
+uplatnenia § 33 ods. 8 zákona.
+Na riadku 85 sa uvádzajú (celosvetové) zdaniteľné príjmy daňovníka s neobmedzenou daňovou
+povinnosťou a daňovníka s obmedzenou daňovou povinnosťou, plynúce zo zdrojov na území
+Slovenskej republiky a zo zdrojov v zahraničí, ktoré sú zdaňované nielen prostredníctvom
+daňového priznania, ale tiež prostredníctvom platiteľa dane zrážkou.
+Na riadku 85a sa uvádzajú zdaniteľné príjmy daňovníka uvedené na riadku 85, ktoré plynú len
+zo zdrojov na území Slovenskej republiky (vrátane príjmov, ktoré sú zdaňované daňou
+vyberanou zrážkou).
+Na riadku 86 sa uvádza počet všetkých príloh, ktoré sa prikladajú k daňovému priznaniu typ A.
+
+XI. ODDIEL – ŽIADOSŤ O VYPLATENIE DAŇOVÉHO BONUSU, O VRÁTENIE
+DAŇOVÉHO PREPLATKU ALEBO VYPLATENIE ZAMESTNANECKEJ PRÉMIE
+Daňovník, ktorý vyplnil III. a IV. ODDIEL a aj riadok 61 a 67, v tomto oddiele vyplní žiadosť
+o vyplatenie daňového bonusu na vyživované dieťa podľa § 33 ods. 7 zákona a žiadosť
+o vyplatenie daňového bonusu na zaplatené úroky podľa § 33a ods. 9 zákona, na základe čoho
+mu suma (rozdiel) daňového bonusu podľa zákona a daňového bonusu na zaplatené úroky podľa
+§ 33a zákona bude správcom dane poukázaná. Ak sa podáva dodatočné priznanie typ A, v tomto
+prípade sa v XI. ODDIELe zaškrtne žiadosť vtedy, ak je na riadkoch 78 a 80 dodatočného
+daňového priznania typ A kladná suma. Ak je rozdiel záporný, tak tento rozdiel sa vráti správcovi
+dane.
+Ak daňovníkovi vznikne preplatok na dani (riadok 72 alebo rozdiel z riadku 76, ak je záporný),
+ktorý žiada aj podľa § 79 daňového poriadku vrátiť, vyplní sa podľa predtlače tento oddiel. Ak
+daňovník žiada vrátiť inú sumu daňového preplatku, žiadosť o vrátenie inej sumy daňového
+preplatku žiada vrátiť osobitnou žiadosťou.
+
+
+
+                                                                                                17
+V súlade s nariadením EÚ č. 260/2012 je IBAN identifikátor platobného účtu, je to medzinárodne
+štandardizovaná forma čísla bankového účtu, používaná pre bankové operácie. Tento sa
+od 1.2.2014 musí používať pre vnútroštátne aj cezhraničné transakcie v rámci bankového styku.
+
+Daňovníkovi, ktorý žiada o vrátenie daňového preplatku formou poštovej poukážky, je možné
+podľa § 79 ods. 6 daňového poriadku poukázať daňový preplatok do výšky 15 000 eur vrátane.
+
+U daňovníka, ktorý žiada vrátenie daňového preplatku alebo vyplatenie daňového bonusu podľa
+zákona alebo daňového bonusu na zaplatené úroky podľa § 33a zákona na bankový účet vedený
+v zahraničí (cezhraničný prevod finančných prostriedkov) v inom formáte ako IBAN, sa uvádza
+v IX. oddiele číslo účtu, SWIFT/BIC kód, názov banky, mesto a štát banky alebo pobočky banky
+daňovníka. Pokiaľ daňovník nie je majiteľom bankového účtu, uvádza sa v IX. oddiele názov
+bankového účtu príjemcu. Pri vrátení sumy daňového bonusu podľa zákona a daňového bonusu
+na zaplatené úroky podľa § 33a ods. 9 zákona správca dane postupuje ako pri vrátení daňového
+preplatku.
+
+Upozornenie k medzinárodnej výmene informácií:
+Finančná správa na základe osobitného predpisu alebo medzinárodných zmlúv prijíma alebo
+poskytuje informácie o príjmoch plynúcich zo zdrojov alebo majetku umiestneného v zahraničí
+alebo na území Slovenskej republiky.
+
+
+        Pomôcka na vyplnenie daňového priznania fyzickej osoby typ A za rok 2026
+   pri uplatňovaní nezdaniteľných častí základu dane a daňového bonusu podľa zákona
+
+         Číselné údaje sa uvádzajú v eurách (€), s presnosťou na dve desatinné miesta.
+
+                                Základné údaje na rok 2026
+
+Sadzba dane podľa § 15 písm. a) bod 1 zákona zo základu dane fyzickej osoby zisteného podľa
+§ 4 ods. 1 písm. a) zákona je bližšie uvedená na str. 2 v bode 4 tohto poučenia.
+Daňový bonus podľa zákona
+    1. na dieťa do 15 rokov veku vrátane (poslednýkrát za kalendárny mesiac, v ktorom
+       vyživované dieťa dovŕšilo 15 rokov veku) je vo výške 100 € mesačne,
+    2. na dieťa, ktoré dovŕšilo 15 rokov veku a nedovŕšilo 18 rokov veku (poslednýkrát za
+       kalendárny mesiac, v ktorom vyživované dieťa dovŕšilo 18 rokov veku) je vo výške 50 €
+       mesačne.
+Uvedené sumy daňového bonusu podľa zákona si daňovník uplatňuje najviac do výšky
+ustanoveného percenta zo základu dane v závislosti od počtu vyživovaných detí (tabuľka).
+
+                Počet                        Percentuálny limit
+          vyživovaných detí*       základu dane (čiastkového základu dane)
+                  1                                  29 %
+                  2                                  36 %
+                  3                                  43 %
+                  4                                  50 %
+                  5                                  57 %
+               6 a viac                              64 %
+* počet vyživovaných detí, na ktoré vzniká nárok na daňový bonus
+                                                                                            18
+Príklad 1:
+Vyživované deti vo veku 10, 14 a 17 rokov po rozvode rodičov boli od roku 2024 zverené do
+osobnej starostlivosti obidvoch rodičov. Matka detí sa v roku 2024 znovu vydala. Podmienky na
+uplatnenie daňového bonusu podľa zákona v roku 2026 spĺňajú tri osoby - matka, otec a matkin
+manžel.
+   -   matka na r. 39 daňového priznania typ A uviedla základ dane v sume 6 000 €;
+   -   otec v daňovom priznaní typ B za zdaňovacie obdobie 2026 vykázal (čiastkový) základ
+       dane z príjmov podľa § 6 ods. 1 zákona v sume 6 000 €;
+   -   matkin manžel požiadal svojho zamestnávateľa o ročné zúčtovanie, v ktorom mu
+       zamestnávateľ vypočítal základ dane z príjmov podľa § 5 zákona v sume 1 200 €.
+Daňový bonus podľa zákona si uplatňuje matka, ktorá v daňovom priznaní typ A postupuje podľa
+§ 33 ods. 8 zákona. Matka v daňovom priznaní typ A navýši (čiastkový) základ dane o čiastkový
+základ dane druhej oprávnenej osoby, v tomto prípade je výhodnejšie navýšiť (čiastkový) základ
+dane matky o čiastkový základ dane otca dieťaťa.
+Pri výpočte (čiastkového) základu dane nie je rozhodujúce, v ktorých mesiacoch druhá oprávnená
+osoba poberala príjmy, preto pomerná časť sa vypočíta ako súčin jednej dvanástiny (čiastkového)
+základu dane za zdaňovacie obdobie a počtu mesiacov, na začiatku ktorých boli splnené
+podmienky na uplatnenie daňového bonusu podľa zákona. V priebehu roka došlo k zmene v
+počte vyživovaných detí, nakoľko 17-ročné dieťa dosiahlo dňa 10. októbra 2026 vek 18 rokov.
+Matka pri výpočte daňového bonusu podľa zákona uplatní postup uvedený v § 33 ods. 10 zákona.
+Matka v daňovom priznaní typ A, v III. Oddiele zaškrtne pole „Uplatňujem postup podľa § 33
+ods. 8 zákona“, na r. 32 vyplní priezvisko, meno a rodné číslo otca dieťaťa a zaškrtne krížikom
+mesiace január až december. Keďže otec dieťaťa podal daňové priznanie typ B, matka
+v daňovom priznaní typ A pod r. 32 zaškrtne pole „Oznamujem, že druhá oprávnená osoba
+uvedená na r. 32 podala daňové priznanie na území Slovenskej republiky“. Na r. 32a uvedie celý
+(čiastkový) základ dane otca 6 000 €. Navýšený základ dane na účely výpočtu daňového bonusu
+podľa zákona v sume 12 000 € uvedie na r. 56a.
+
+   ➢ Postup výpočtu nároku na daňový bonus, ak matka neuplatní postup podľa § 33 ods. 8
+     zákona
+Mesiace január až október 2026:
+2 deti x 10 mesiacov x suma daňového bonusu na vyživované dieťa vo veku do 15 rokov (100 €)
++ 1 dieťa x 10 mesiacov x suma daňového bonusu na vyživované dieťa vo veku nad 15 rokov do
+18 rokov (50 €)
+= 2 500 € [(2 x 10 x 100 €) + (1 x 10 x 50 €)], max. do výšky 43 % zo základu dane (ČZD)
+z príjmov podľa § 5 ZDP, (6 000 € * 0,43 = 2 580 €) a po zohľadnení počtu kalendárnych
+mesiacov, na začiatku ktorých boli splnené podmienky na uplatnenie nároku (2 580 € / 12
+mesiacov = 215 €; 215 € x10 mesiacov = 2 150 €). Nárok na daňový bonus za mesiace január až
+október 2026 je 2 150 €.
+Mesiace november a december 2026:
+2 deti x 2 mesiace x suma daňového bonusu na vyživované dieťa vo veku do 15 rokov (100 €)
+
+
+                                                                                            19
+= 400 € (2 x 2 x 100 €), max. do výšky 36 % zo základu dane (ČZD) z príjmov podľa § 5 ZDP,
+(6 000 € * 0,36 = 2 160 €) a po zohľadnení počtu kalendárnych mesiacov na začiatku ktorých
+boli splnené podmienky na uplatnenie nároku (2 160 € / 12 mesiacov = 180 €; 180 € x 2 mesiace
+= 360 €). Nárok na daňový bonus za mesiace november a december 2026 je 360 €.
+Nárok na daňový bonus za celý rok 2026, ak by matka neuplatnila postup podľa § 33 ods. 8
+zákona, je 2 510 € (2 150 € + 360 €).
+
+   ➢ Postup výpočtu nároku na daňový bonus, ak matka uplatní postup podľa § 33 ods. 8
+     zákona, t. j. svoj základ dane navýši o základ dane druhej oprávnenej osoby – otca detí.
+     Navýšený základ dane je 12 000 € (6 000 € + 6 000 €)
+Mesiace január až október 2026:
+2 deti x 10 mesiacov x suma daňového bonusu na vyživované dieťa vo veku do 15 rokov (100 €)
++ 1 dieťa x 10 mesiacov x suma daňového bonusu na vyživované dieťa vo veku nad 15 rokov do
+18 rokov (50 €),
+= 2 500 € [(2 x 10 x 100 €) + (1 x 10 x 50 €)], max. do výšky 43 % z navýšeného základu dane
+(ČZD) z príjmov podľa § 5 ZDP, (12 000 € * 0,43 = 5 160 €) a po zohľadnení počtu
+kalendárnych mesiacov, na začiatku ktorých boli splnené podmienky na uplatnenie nároku
+(5 160 € / 12 mesiacov = 430 €; 430 € x 10 mesiacov = 4 300 €). Nárok na daňový bonus za
+mesiace január až október 2026 je v tomto prípade vo výške 2 500.
+Mesiace november a december 2026:
+2 deti x 2 mesiace x suma daňového bonusu na vyživované dieťa vo veku do 15 rokov (100 €)
+= 400 € (2 x 2 x 100 €), max. do výšky 36 % zo základu dane (ČZD) z príjmov podľa § 5 ZDP,
+(12 000 € * 0,36 = 4 320 €) a po zohľadnení počtu kalendárnych mesiacov, na začiatku ktorých
+boli splnené podmienky na uplatnenie nároku (4 320 € / 12 mesiacov = 360 €; 360 € x 2 mesiace
+= 720 €). Nárok na daňový bonus za mesiace november a december 2026 je v tomto prípade
+400 €.
+Nárok na daňový bonus za celý rok 2026, ak matka uplatní postup podľa § 33 ods. 8 zákona a
+svoj základ dane navýši o základ dane druhej oprávnenej osoby – otca detí je 2 900 € (2 500 € +
+400 €).
+V daňovom priznaní typ A na r. 57 sa uvedie nárok na daňový bonus podľa zákona 2 900 €.
+
+Príklad 2 :
+Daňovník dosiahol v roku 2026 zdaniteľný príjem zo závislej činnosti v sume 32 500 €.
+Má dve deti, na ktoré si uplatňuje daňový bonus podľa zákona, na jedno dieťa vo veku do 15
+rokov počas celého roka a na druhé dieťa, ktoré v septembri dovŕšilo 18 rokov veku deväť
+mesiacov. Zamestnávateľ mu v priebehu roka 2026 priznal a vyplatil daňový bonus podľa zákona
+v sume 1 312,88 €.
+Základ dane daňovníka za zdaňovacie obdobie 2026 predstavuje sumu 27 820 €, čo je viac ako
+27 432 €, preto sa aplikuje ustanovenie § 33 ods. 11 zákona a suma daňového bonusu podľa
+zákona sa znižuje nasledovne: (27 820 – 27 432) / 10 = 388 / 10 = 38,80 €
+Suma daňového bonusu podľa zákona na dieťa do 15 rokov, ktoré vyživuje celý rok sa vypočíta
+takto: 1 200 € - 38,80 € = 1 161,20 €.
+Ak zamestnanec dieťa vyživuje len časť roka, potom sa suma 38,80 prepočíta na príslušné
+mesiace, v tomto prípade na 9 mesiacov (38,80 € / 12 = 3,23 €; 3,23 € x 9 = 29,07 €)
+
+
+                                                                                               20
+Suma daňového bonusu podľa zákona na dieťa, ktoré vyživuje 9 mesiacov sa vypočíta takto:
+450 – 29,07 € = 420,93 €
+Celkovú sumu nároku na daňový bonus na obidve deti vo výške 1 582,13 € (1 161,20 + 420,93)
+uvedie daňovník na r. 57 daňového priznania. Zamestnávateľom priznaný a vyplatený daňový
+bonus vo výške 1 312,88 € uvedie na riadku 59 daňového priznania.
+
+
+Výpočet nezdaniteľnej časti základu dane na daňovníka
+podľa § 11 ods. 2 zákona (v eurách)
+Na účely § 35 ods. 1 písm. b) zákona sa 1/12 nezdaniteľnej časti základu dane na daňovníka
+vypočíta takto: 5 966,73 : 12 = 497,23
+
+ písm.     Ak základ dane daňovníka               Nezdaniteľná časť ZD na daňovníka
+    a)    - sa rovná alebo je nižší ako 26 083,13                  5 966,73
+    b)    - je vyšší ako 26 083,13                        14 661,11 – (základ dane : 3)
+
+Príklad 3:
+Základ dane = 15 000,00
+Nezdaniteľná časť základu dane = 5 966,73
+
+Príklad 4:
+Základ dane = 30 000,00
+Nezdaniteľná časť základu dane = 14 661,11 – (30 000 : 3) = 14 661,11 – 10 000 = 4 661,11
+
+Príklad 5:
+Základ dane = 45 000,00
+Nezdaniteľná časť základu dane = 14 661,11 – (45 000 : 3) = 14 661,11 – 15 000 = 0
+
+Výpočet nezdaniteľnej časti základu dane na manželku (manžela)
+podľa § 11 ods. 3 písm. a) zákona (v eurách)
+   Ak základ dane daňovníka            Vlastné príjmy
+                                                            Nezdaniteľná časť ZD na manželku
+                                         manželky
+    - sa rovná alebo je nižší ako
+                                               0                           5 455,30
+             43 983,32
+                                      menej ako 5 455,30     5 455,30 – vlastné príjmy manželky
+                                       5 455,30 a viac                       0,00
+
+Príklad 6:
+Základ dane daňovníka, ktorý si uplatňuje nezdaniteľnú časť základu dane na manželku =
+40 000,00. Manželka sa celý rok 2026 stará o vlastné dvojročné dieťa.
+
+1. Vlastné príjmy manželky znížené o zaplatené povinné poistné a príspevky = 0,00
+   Nezdaniteľná časť základu dane na manželku = 5 455,30
+2. Vlastné príjmy manželky znížené o zaplatené povinné poistné a príspevky = 1 500,00
+   Nezdaniteľná časť základu dane na manželku = 5 455,30 – 1 500,00 = 3 955,30
+3. Vlastné príjmy manželky znížené o zaplatené povinné poistné a príspevky = 5 500
+   Nezdaniteľná časť základu dane na manželku = 0,00
+                                                                                             21
+Príklad 7:
+Základ dane daňovníka, ktorý si uplatňuje nezdaniteľnú časť základu dane na manželku =
+40 000,00. Manželka sa stará o dieťa, ktoré sa narodilo 15. augusta 2026, t. j. podmienky
+na uplatnenie tejto nezdaniteľnej časti základu dane boli splnené v mesiacoch september až
+december 2026 (§ 11 ods. 4 a 5 zákona).
+
+1. Vlastné príjmy manželky znížené o zaplatené povinné poistné a príspevky = 0,00
+   Nezdaniteľná časť základu dane na manželku =
+   5 455,30 : 12 = 454,61 (pomerná mesačná výška NČ) x 4 (počet mesiacov, počas ktorých
+   spĺňa podmienky pre uplatnenie NČ) = 1 818,44
+2. Vlastné príjmy manželky znížené o zaplatené povinné poistné a príspevky = 1 500,00
+   Nezdaniteľná časť základu dane na manželku =
+   5 455,30 – 1 500,00 = 3 955,30 : 12 = 329,61 x 4 (počet mesiacov, počas ktorých spĺňa
+   podmienky pre uplatnenie NČ) = 1 318,44
+3. Vlastné príjmy manželky znížené o zaplatené povinné poistné a príspevky = 5 455,30
+   Nezdaniteľná časť základu dane na manželku = 0,00
+
+podľa § 11 ods. 3 písm. b) zákona (v eurách)
+       Ak základ dane           Vlastné príjmy
+                                                      Nezdaniteľná časť ZD na manželku
+         daňovníka                manželky
+    - je vyšší ako 43 983,32      Nepoberala         20 116,40 – (základ dane daňovníka : 3)
+                                                    20 116,40 – (základ dane daňovníka : 3) –
+                                   Poberala
+                                                            vlastné príjmy manželky
+
+Príklad 8:
+Základ dane daňovníka, ktorý si uplatňuje nezdaniteľnú časť základu dane na manželku =
+48 000,00. Manželka je celý rok 2026 zaradená do evidencie uchádzačov o zamestnanie.
+
+1. Vlastné príjmy manželky znížené o zaplatené povinné poistné a príspevky = 0
+   Nezdaniteľná časť základu dane na manželku =
+   20 116,40 – (48 000,00 : 3) = 20 116,40 – 16 000 = 4 116,40
+2. Vlastné príjmy manželky znížené o zaplatené povinné poistné a príspevky = 1 500,00
+   Nezdaniteľná časť základu dane na manželku =
+   20 116,40 – (48 000,00 : 3) – 1500 = 20 116,40 – 16 000 – 1 500 = 2 616,40
+3. Vlastné príjmy manželky znížené o zaplatené povinné poistné a príspevky = 5 500,00
+   Nezdaniteľná časť základu dane na manželku = 0,00
+
+Príklad 9:
+Základ dane daňovníka, ktorý si uplatňuje nezdaniteľnú časť základu dane na manželku =
+48 000,00. Manželka je od 1. mája 2026 zaradená do evidencie uchádzačov o zamestnanie
+
+1. Vlastné príjmy manželky znížené o zaplatené povinné poistné a príspevky = 0
+  Nezdaniteľná časť základu dane na manželku =
+   20 116,40 – (48 000,00 : 3) = 20 116,40 – 16 000 = 4 116,40 : 12 = 343,03 x 8 = 2 744,24
+2. Vlastné príjmy manželky znížené o zaplatené povinné poistné a príspevky = 1 500,00
+  Nezdaniteľná časť základu dane na manželku =
+   20 116,40 – (48 000,00 : 3) -1 500 = 20 116,40 – 16 000 – 1 500 = 2 616,40 : 12 = 218,03 x 8
+   = 1 744,24
+                                                                                               22
+Upozornenie
+Ak by manželia uzavreli sobáš napr. 3. apríla 2026 a narodilo by sa im dieťa 10. septembra 2026,
+potom nezdaniteľná časť základu dane daňovníka na manželku (manžela) zodpovedá pomernej
+výške nezdaniteľnej časti vypočítanej podľa § 11 ods. 3 zákona až počnúc mesiacom október,
+kedy sú splnené nielen podmienky pre to, že sú manželia ale aj ďalšie podmienky upravené
+v § 11 ods. 4 písm. a) zákona a to v tomto prípade, že sa stará o vyživované maloleté dieťa.
+Rovnako by sa uvedené posudzovalo aj ak by sa im dieťa narodilo 3. apríla 2026, ale sobáš by
+bol 10. septembra 2026.
+
+Poučenie dopĺňa predtlač jednotlivých riadkov priznania a nenahrádza znalosť zákona!
+Poučenie má slúžiť ako pomôcka na vyplnenie tlačiva priznania a upozorniť na hlavné
+zásady, ktoré je potrebné dodržať pri správnom výpočte daňovej povinnosti, sumy dane
+na úhradu, resp. daňového preplatku, daňového bonusu podľa zákona, daňového bonusu
+na zaplatené úroky podľa § 33a zákona a zamestnaneckej prémie.
+
+
+
+
+                                                                                             23
+

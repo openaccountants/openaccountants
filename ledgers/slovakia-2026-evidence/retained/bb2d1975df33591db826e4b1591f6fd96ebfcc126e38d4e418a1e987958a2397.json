@@ -1,0 +1,40 @@
+{
+  "examples": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "fa9709",
+      "wall_time_seconds": 0.000009583,
+      "exit_code": 0,
+      "original_token_count": 15,
+      "output": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n"
+    }
+  },
+  "schema_initial_helper_failure": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "1ea7c2",
+      "wall_time_seconds": 0.000010333,
+      "exit_code": 1,
+      "original_token_count": 122,
+      "output": "Traceback (most recent call last):\n  File \"<stdin>\", line 2, in <module>\n  File \"<frozen importlib._bootstrap_external>\", line 759, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 491, in _call_with_frames_removed\n  File \"/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/validate-guides.py\", line 43, in <module>\n    from frontmatter_yaml import FrontmatterError, load_frontmatter\nModuleNotFoundError: No module named 'frontmatter_yaml'\n"
+    }
+  },
+  "schema_corrected_import_path": {
+    "chunk_id": "b84ed0",
+    "wall_time_seconds": 0.04408725,
+    "exit_code": 0,
+    "original_token_count": 24,
+    "output": "checked 1 guides (0 non-guide .md files skipped)\n{\"errors\": [], \"warnings\": [], \"result\": null}\n"
+  },
+  "scoped_diff_check": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "367e0f",
+      "wall_time_seconds": 0.000009083,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  "note": "Initial manual module loading omitted the repository scripts import path, producing ModuleNotFoundError: frontmatter_yaml. Corrected PYTHONPATH uses the repository's existing validator; one Guide passes with zero errors/warnings. Both existing oa examples and the scoped diff check pass. No new independent review or country completion claimed."
+}

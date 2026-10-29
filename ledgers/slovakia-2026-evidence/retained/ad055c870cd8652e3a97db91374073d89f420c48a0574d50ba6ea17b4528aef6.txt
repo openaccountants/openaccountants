@@ -1,0 +1,7 @@
+§ 46a
+Minimálna výška dane fyzickej osoby
+Daň fyzickej osoby sa nevyrubí a neplatí, ak za zdaňovacie obdobie nepresiahne 17
+ eur alebo celkové zdaniteľné príjmy tohto daňovníka za zdaňovacie obdobie nepresiahnu
+ 50 % sumy podľa § 11 ods. 2 písm. a). To neplatí, ak daňovník uplatňuje daňový bonus podľa § 33 alebo ak daňovník uplatňuje daňový bonus na zaplatené úroky podľa § 33a alebo ak sa daň vyberá podľa § 43, alebo ak sa zrážajú preddavky na daň podľa § 35, alebo preddavky na zabezpečenie dane podľa § 44. Daňovník s obmedzenou daňovou povinnosťou uvedený v § 11 ods. 6, postup podľa prvej a druhej vety použije, ak úhrn jeho zdaniteľných príjmov zo zdrojov
+ na území Slovenskej republiky (§ 16) v príslušnom zdaňovacom období tvorí najmenej 90 % zo všetkých príjmov tohto daňovníka,
+ ktoré mu plynú zo zdrojov na území Slovenskej republiky a zo zdrojov v zahraničí.

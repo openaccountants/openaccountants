@@ -1,0 +1,8 @@
+{
+  "all_staged_check_exit": 2,
+  "all_staged_output_bytes": 38312754,
+  "all_staged_output_sha256": "f817ad803bc24c7a1c69779cd248af40aa023ddced91961beac2c6cd5fc7db3e",
+  "cause": "Exact retained official bodies and historical readers contain whitespace. Their reviewed hashes are preserved.",
+  "live_Guide_test_and_new_README_check_exit": 0,
+  "live_output": ""
+}

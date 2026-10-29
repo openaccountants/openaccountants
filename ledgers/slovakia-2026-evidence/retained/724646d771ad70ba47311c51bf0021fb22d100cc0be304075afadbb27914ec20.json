@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-27",
+  "purpose": "Recheck three still-open Slovakia VAT questions after F22 checkpoint",
+  "result": "No new basis to close any of the three findings. Primary second-chance FAQ enumerates Tax Code delicts; it does not expressly resolve the separate VAT78a(15) fine. Registration page reiterates net turnover but does not settle fixed-gross payer-status circularity. No annual zero-denominator method found in this search.",
+  "primary_urls": [
+    "https://podpora.financnasprava.sk/989535-Druh%C3%A1-%C5%A1anca",
+    "https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/registracna-povinnost-pre-dph"
+  ],
+  "secondary_discovery": "Two secondary KV articles conflict on second-chance applicability; neither used as legal authority.",
+  "no_Guide_changes": true
+}

@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -1,6 +1,6 @@
+ from writer import *
+ # Exact retained scopes read during this writer pass on 28/29 October.
+-section('ITA2.residence',13,'2',1,72,[(15,28),(32,53),(64,67)])
++section('ITA2.residence',13,'2',1,72,[(15,32),(32,53),(64,67)])
+ section('ITA4.PIT',13,'4',1,33,[(4,14),(30,33)])
+ section('ITA5.pay',13,'5',1,30,[(4,16)])
+ section('ITA5.contributions',13,'5',245,249,[(245,249)])

@@ -1,0 +1,192 @@
+[
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/SK-L10-acquisition-quote-extension.json",
+    "sha256": "a472b18f10fed41fdbb3cd5cb4b97e7469252030de7d3da929244ee5355ae134",
+    "bytes": 11850
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/SK-L10-all-66-row-route-review.json",
+    "sha256": "0e796aa32eb97fd01494c9ded0cb33a34fa422105da2df34ac7ee8ac4bf9ac95",
+    "bytes": 58658
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/actual-additional-read-scopes.json",
+    "sha256": "e035402b01fd4dd345f7574e6035ce8eb341e0967b828974530afb7e796077a5",
+    "bytes": 15323
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/sk-payroll-social/coverage.json",
+    "sha256": "3bf1d13c38097fdec8f00219270b40fb33bb17ade3c917d507fbd0d8a7365fe7",
+    "bytes": 3148
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/sk-payroll-social/old-topics.json",
+    "sha256": "47de47b26fc6f50d11fa8db626239e387b60472c61161d980947f3c29693aa4a",
+    "bytes": 59471
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/sk-payroll-social/rows.json",
+    "sha256": "be8432272d68678c1b14635d7f8fd4271898a05efa5df727c23926fb27ad4d80",
+    "bytes": 63265
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/sk-payroll-social/sk-payroll-social.md",
+    "sha256": "260890d206f3e28428a05834f6dc7e0cadc818f8bad695d6c1e98288207250f2",
+    "bytes": 88133
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/slovakia-vat-registration-4-7-7a/coverage.json",
+    "sha256": "2afe235c6589f2cd67d24f29210acfb4c149abf1f14cef4b9a2b771de28806b5",
+    "bytes": 2208
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/slovakia-vat-registration-4-7-7a/old-topics.json",
+    "sha256": "c61589979dd64ae2a6fe186ff64106d99fbb60ef1bdcf6700c00e857227529dd",
+    "bytes": 85742
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/slovakia-vat-registration-4-7-7a/rows.json",
+    "sha256": "98d5f20e0f3890858613c5aa5f471cfb3c55209fded5803b221887b6950ca29d",
+    "bytes": 46157
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/slovakia-vat-registration-4-7-7a/slovakia-vat-registration-4-7-7a.md",
+    "sha256": "4e34d11151db8982566a0437b06363cb8924a9a75b0ec51a69e3a8b8007c2818",
+    "bytes": 80138
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/slovakia-vat-return/coverage.json",
+    "sha256": "806c07398d5406fb144594575174962868d2b26afe9a4cef2f9192507ec8966c",
+    "bytes": 2909
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/slovakia-vat-return/old-topics.json",
+    "sha256": "bd8bfa998a9717ca00613af73002a20f1071d6234c621804338be2444e6e70c5",
+    "bytes": 188361
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/slovakia-vat-return/rows.json",
+    "sha256": "3727a2a1d692f6619761fcd353f20969c870d2934f7c2261c79bd84508e57bed",
+    "bytes": 68884
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-ledgers/slovakia-vat-return/slovakia-vat-return.md",
+    "sha256": "970986b28ffcefa4ad67f3015b7752700e47c09cfa419e3644eaf1311fcda0c9",
+    "bytes": 157921
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-payroll-ledger.py",
+    "sha256": "1197beb0889a1adec63a561dabdadf04dd62f11bcc65434e2b89365d81898c52",
+    "bytes": 7553
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-payroll-sources.py",
+    "sha256": "59101c585807a2ce5235bc0b5fc62076a1b5053c9d209dbc513a14b85fbb5382",
+    "bytes": 4503
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-source-quotes.md",
+    "sha256": "171439fc9fc849ba7c4badda297e7be70bd8669e302018c177d5f957b8036525",
+    "bytes": 777227
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-source-scopes.json",
+    "sha256": "3c210f3e6061d0e4c632d82943474dd6b4ac10283b68516b96836941b6c78f89",
+    "bytes": 992047
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-vat-ledgers.py",
+    "sha256": "481ae77b650ae605e6bac090780f39751413d99508918a55e235951cdd5826b7",
+    "bytes": 15482
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/before-vat-sources.py",
+    "sha256": "2431ac737a64040582189faecf7e9edda7e4240fd74ad7e18a153776bb1ec3e0",
+    "bytes": 5117
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/canonical-successor-inventory.json",
+    "sha256": "785db9b7b4cc8bcb634a83bac3b4b6f99b1cd2c0e0495dfe4a8b7aa97dc67d85",
+    "bytes": 6158
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/exact-ledger-before-after-rows.json",
+    "sha256": "234b58dd5a8f2dab982a8fa3271a97cc2a7ff5ffa684f0bc9e8f234a057d4770",
+    "bytes": 70593
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/final-checks.json",
+    "sha256": "62f0e2da90553d0b5695efc2a53ca72ec2782b69508a05fc951cb1daf4ece8de",
+    "bytes": 2031
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/final-checks.py",
+    "sha256": "967702d54d61795bbca373f354b18dd94e51ee8abae3ad4d0dd8d23416ec43e4",
+    "bytes": 4559
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/ledger-repair.py",
+    "sha256": "7313c1bf6cb8cb60eed74a03611ae3e9a5ffc0d7ce5be3ed65db082f54e3bcce",
+    "bytes": 10827
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/source-exact-before-after.json",
+    "sha256": "38c5207a6767384a3bb7f4b94659fce8d5d29ee74cf320eb771a5c9fea5f7488",
+    "bytes": 62627
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/source-repair.py",
+    "sha256": "0e288b26ea3545c0e088a3395d45886e0bf249b6bfdf52417fb1f616d3eab72d",
+    "bytes": 3560
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L10-L14/writer-handover.md",
+    "sha256": "970757c2b38b6bb57635e12000f869af0999f87f344a77daeb68dbadcd12648f",
+    "bytes": 2813
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L06-L08/before-payroll-sources.py",
+    "sha256": "f7031ff275c80853d2d9c01c52c9b68de29e8ab7667ff6f2349aa65a96d8f2ac",
+    "bytes": 4312
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L06-L08/before-pit-sources.py",
+    "sha256": "ccf16e5178788d96803806adce947a523eec9c4ad834ca5570e2dcc463af95b9",
+    "bytes": 9129
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L06-L08/before-source-quotes.md",
+    "sha256": "a9a03e4654aca17071e715bb7a09cade65204e27942a883f74860170327280f9",
+    "bytes": 773823
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L06-L08/before-source-scopes.json",
+    "sha256": "caf650c3b8cee0a812cc48c84cd1b61db4835450d181690e223ebdcb6bc6a18e",
+    "bytes": 987913
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L06-L08/before-tp-sources.py",
+    "sha256": "bd4ee0af0808fcf5b371cab5419ff54464e77de24dcc49dce94ac5c53a84a528",
+    "bytes": 4245
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L06-L08/before-xb-sources.py",
+    "sha256": "0cd4dd4f6a1b6d131690ce77e49ca6ce4a0bb250079baebbb114281b034bae1b",
+    "bytes": 1528
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L06-L08/checks.json",
+    "sha256": "832ae130768d4cb9d893988e41ae8060b7d7887c49e3a12a2fa1b3cabf547d76",
+    "bytes": 900
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L06-L08/exact-before-after-bridge.json",
+    "sha256": "c3783c10f8f3b423ce455be30df91c0c04535055cf42bb1b6a54ac30b04482d7",
+    "bytes": 53547
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-L06-L08/repair.py",
+    "sha256": "ea710063dfa4b77a2e7544fe322c3ac8cfb84016125b76dee46f004d38d6e927",
+    "bytes": 2980
+  }
+]

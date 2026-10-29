@@ -1,0 +1,872 @@
+{
+  "guide_sha256": "06932ed5dd86be07371da3d893f06677e4fc9165551014179750c098003ce598",
+  "main_revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "main_bytes": 33795,
+  "main_sha256": "26c52e39c771681ecfe24300819346344b9b1c050b8cf563eeecb20b0df02c23",
+  "earliest_preimage": {
+    "revision": "298bb516^",
+    "present": false
+  },
+  "prior_423_unit_map_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/full-no-loss-unit-ledger.json",
+  "prior_map_sha256": "7c0210e5320a6687950cfee3ae3df747a622eff5928e6bc0d21767e7eade94c5",
+  "rows": [
+    {
+      "comparator": "origin/main",
+      "unit": 1,
+      "old_LF_start": 1,
+      "old_LF_end": 13,
+      "old_text": "---\nname: sk-transfer-pricing\ndescription: \"Use this skill for Slovak transfer pricing (transferové oceňovanie) in tax year 2026. It covers dependent persons (závislá osoba, Income Tax Act § 2(n) to (r), the 25% test), significant controlled transactions (over EUR 10,000, or loans over EUR 50,000 principal), the arm's length adjustment in § 17(5), corresponding adjustments in § 17(6), methods and the median rule in § 18(1), full, basic and shortened documentation under Ministry of Finance guideline MF/012879/2025-724 and who keeps which, Table I of the corporate return, the 15-day deadline to hand documentation over, penalties and late payment interest under the Tax Code, country-by-country reporting (EUR 750 million) and APAs under § 18(4) to (10). Trigger on: transfer pricing Slovakia, transferové oceňovanie, závislá osoba, kontrolovaná transakcia, transferová dokumentácia, APA Slovakia. Out of scope: corporate tax in general (sk-corporate-income-tax), individual income tax (slovakia-pit), VAT (slovakia-vat-return).\"\nversion: 0.1\njurisdiction: SK\ntax_year: 2026\nlast_updated: 2026-10-23\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ncategory: international\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+      "old_unit_sha256": "7b58403a6a54af301df6d3334a3884a881d241199ca7266b4c0c6d40f48718f2",
+      "current_LF": [
+        1,
+        13
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: Only author-owned content metadata expanded/versionadvanced;protectedplatformfieldsidentical"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 2,
+      "old_LF_start": 15,
+      "old_LF_end": 15,
+      "old_text": "# Slovakia: transfer pricing (2026) v0.1",
+      "old_unit_sha256": "b6d71912039a457b5a0fd109d9c96b158e0e6fc39769f3de62ca1b03962d9b9e",
+      "current_LF": [
+        15,
+        15
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: H1versionadvanced inalignmentwithfrontmatter"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 3,
+      "old_LF_start": 17,
+      "old_LF_end": 17,
+      "old_text": "> **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts on Slov-Lex, the guideline from the Ministry of Finance (mfsr.sk) and the return guidance from the Financial Directorate (financnasprava.sk), all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.",
+      "old_unit_sha256": "a71d7a26c1b1ad17c2ea2d1839e99f1ece26fdfeb4157622ab965ee0f50046af",
+      "current_LF": [
+        17,
+        17
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: Originaldraftbyline retained;sourceversion/scopesupplement"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 4,
+      "old_LF_start": 19,
+      "old_LF_end": 19,
+      "old_text": "This is the transfer pricing (TP) skill for the Slovak pack. It links rather than repeats:",
+      "old_unit_sha256": "7621d7130b00cfa844938de2c53b248f000f132fb2fba75e2a5a40947abba446",
+      "current_LF": [
+        19,
+        19
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 5,
+      "old_LF_start": 21,
+      "old_LF_end": 23,
+      "old_text": "- Corporate income tax, the base, the return and its deadlines: [sk-corporate-income-tax](sk-corporate-income-tax.md) (still on 2025 figures).\n- Individual income tax, including sole traders with § 6 income: [slovakia-pit](slovakia-pit.md).\n- VAT: [slovakia-vat-return](slovakia-vat-return.md). Overview: [sk-tax-overview](sk-tax-overview.md).",
+      "old_unit_sha256": "583cc41b96d53b1aed1e7c738bb993605abe57a6144e091f8e511bcdbb829ea8",
+      "current_LF": [
+        21,
+        23
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F21 falseold-sibling-yearclaimremoved"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 6,
+      "old_LF_start": 25,
+      "old_LF_end": 25,
+      "old_text": "The law is Act No. 595/2003 Z. z. on Income Tax (\"ITA\", version in force from 1 January 2026) and Act No. 563/2009 Z. z. on Tax Administration, the Tax Code (daňový poriadok, \"TC\", version in force from 1 September 2026). Currency: euro (EUR).",
+      "old_unit_sha256": "afebd39bcc18425d31cde5c3b0fad4d303e114b651cbd06a5e40d675c3631f56",
+      "current_LF": [
+        25,
+        25
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 7,
+      "old_LF_start": 27,
+      "old_LF_end": 27,
+      "old_text": "## Who this applies to",
+      "old_unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "current_LF": [
+        27,
+        27
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 8,
+      "old_LF_start": 29,
+      "old_LF_end": 29,
+      "old_text": "**Any taxpayer that is a dependent person and has a significant controlled transaction.** The rule in ITA § 17(5) applies to companies and to individuals with business income under § 6, residents and non-residents.",
+      "old_unit_sha256": "5ea029d5c090a6ebb200efcbf488f33917fccde425e53cccae03e3c401d5b01c",
+      "current_LF": [
+        29,
+        29
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 9,
+      "old_LF_start": 31,
+      "old_LF_end": 31,
+      "old_text": "**Dependent persons (závislé osoby), ITA § 2(n) to (r):**",
+      "old_unit_sha256": "154d0e503079955e6faae7d15be58035eda55102a638f4b31a30da0cbc261068",
+      "current_LF": [
+        31,
+        31
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 10,
+      "old_LF_start": 33,
+      "old_LF_end": 39,
+      "old_text": "- **Close persons** (blízke osoby, Civil Code §§ 116 and 117) (§ 2(n)(1)).\n- **Economically, personally or otherwise linked persons** (§ 2(n)(2)):\n  - **Economic link** (§ 2(o)(1)): a direct, indirect or derived indirect share of at least 25% of the registered capital, of the voting rights or of the profit. An indirect share is the product of the direct shares. A derived indirect share is the sum of indirect shares; above 50%, every person in the chain counts as economically linked whatever its own share. Persons acting together on votes or capital count as holding all of it. Shares of close persons are added together, and 25% in total makes them linked.\n  - **Personal link** (§ 2(o)(2)): members of the statutory, supervisory or similar bodies of a legal person, in relation to that legal person. Persons under the control or management of the same person, or of its close person, are linked to each other (§ 2(o)).\n  - **Other link** (§ 2(p)): a legal or similar relationship set up mainly to reduce the tax base or increase a tax loss.\n- **Members of a consolidated group** for consolidation purposes under Accounting Act § 22 (§ 2(n)(3)).\n- **Permanent establishments** (§ 2(r)): a resident and its foreign PEs, a non-resident and its Slovak PE, PEs of the same taxpayer, and PEs of linked taxpayers all count as economically linked.",
+      "old_unit_sha256": "6667a003c744dbe11e779db1a245d06ccb62452dcdfff5943ace69d3fa6fb3ce",
+      "current_LF": [
+        33,
+        39
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 11,
+      "old_LF_start": 41,
+      "old_LF_end": 41,
+      "old_text": "**Controlled transaction** (kontrolovaná transakcia, § 2(ab)): a legal or similar relationship between two or more dependent persons where at least one is an individual with § 6 business income or a legal person with taxable income from activity or from its assets. Two things are not controlled transactions: employment income under § 5, and the rent of a property outside business assets let to an individual for personal use. The real substance of the relationship counts.",
+      "old_unit_sha256": "e6bda4fa1db54836de7eeac6a6cb7f3cdb8339d999cb4af4ad1420895aa3aba5",
+      "current_LF": [
+        41,
+        41
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 12,
+      "old_LF_start": 43,
+      "old_LF_end": 43,
+      "old_text": "**Significant controlled transaction** (§ 17(5)(a)): a transaction or group of transactions on which one or more dependent persons book taxable income or a tax expense above EUR 10,000 in the period, and any loan with principal above EUR 50,000. A loan above EUR 50,000 stays significant for its whole life, even after repayments take the balance below that (Financial Directorate, 12/PO/2026/IM, example 2). Transactions that are not significant are outside § 17(5) and are not reported in Table I.",
+      "old_unit_sha256": "664775705295999ee153261a26517c6887d89141ebaf1927fc780865fa8ee7a8",
+      "current_LF": [
+        43,
+        43
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F20 income/expenserevenue distinctionadded withoutchangingsignificance"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 13,
+      "old_LF_start": 45,
+      "old_LF_end": 45,
+      "old_text": "**Domestic deals count too.** The guideline has separate rules for cross-border and domestic significant controlled transactions (MF/012879/2025-724, art. 2(8) and (9)), and Table I takes both (12/PO/2026/IM).",
+      "old_unit_sha256": "024b369aa1d71f2848b2acf3811c1e037e7a8efa74af8f69c39e8d8373a96954",
+      "current_LF": [
+        45,
+        45
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 14,
+      "old_LF_start": 47,
+      "old_LF_end": 47,
+      "old_text": "**Micro-taxpayers.** A micro-taxpayer (mikrodaňovník, revenue up to EUR 60,000) loses that status if it is a dependent person with a controlled transaction in the period (ITA § 2(w)(1)).",
+      "old_unit_sha256": "4cba14051589d06a17dd4fa07c279d352d798282cfb83dfecf3bc239162d7c67",
+      "current_LF": [
+        47,
+        47
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 15,
+      "old_LF_start": 49,
+      "old_LF_end": 49,
+      "old_text": "## Rates, bands and thresholds",
+      "old_unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "current_LF": [
+        49,
+        49
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 16,
+      "old_LF_start": 51,
+      "old_LF_end": 71,
+      "old_text": "| Item | Rate or amount | Year | Source URL |\n|---|---|---|---|\n| Corporate income tax rate (applies to any TP adjustment of a company) | 10% if taxable revenue is up to EUR 100,000; 24% if taxable revenue is above EUR 5,000,000; 21% otherwise | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15(b)(1)) |\n| Dependent person: economic link | at least 25% of capital, voting rights or profit, direct, indirect or derived indirect | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 2(o)(1)) |\n| Significant controlled transaction | income or expense above EUR 10,000 in the period; any loan with principal above EUR 50,000 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 17(5)(a)) |\n| Full documentation: cross-border transaction value | above EUR 10,000,000 in the period | periods whose return deadline falls after 31 Dec 2025 | https://www.mfsr.sk/files/archiv/49/Usmernenie-2025.pdf (art. 3(1)(b)) |\n| Basic documentation: cross-border transaction value | above EUR 1,000,000 in the period | same | https://www.mfsr.sk/files/archiv/49/Usmernenie-2025.pdf (art. 3(2)(b)) |\n| Basic documentation: taxpayer's total revenue from operating and financial activity | above EUR 8,000,000 (with a material cross-border transaction) | same | https://www.mfsr.sk/files/archiv/49/Usmernenie-2025.pdf (art. 3(2)(a)) |\n| Table I of the corporate return | up to 99 rows electronically (18 on paper) | returns due from 1 Jan 2026 (DPPOv25) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/DPPO/2026/2026.03.26_012_PO_2026_IM.pdf |\n| Deadline to hand over documentation on request | 15 days from delivery of the request | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 18(11)) |\n| APA fee: unilateral | EUR 10,000 (half for a taxpayer rated highly reliable) | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 18(7)) |\n| APA fee: bilateral or multilateral | EUR 30,000 (half for a taxpayer rated highly reliable) | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 18(7)) |\n| APA term | up to 5 periods, renewable for up to 5 more; longer if the competent authorities agree it | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 18(4) and (5)) |\n| Penalty on tax increased by the tax office | 3 times the ECB base rate a year, at least 10% a year; at least 1% of the amount, at most 100% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 155(1)(f), (2), (5)) |\n| Penalty on tax disclosed in a supplementary return | the ECB base rate a year, at least 3% a year (2 times, at least 7%, if filed within 15 days after an audit starts) | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 155(1)(g), (h), (5)) |\n| Penalty for a missed non-monetary duty (for example documentation not handed over) | EUR 100 to EUR 10,000; a fine for a breach under § 154(1)(j) can be repeated while it lasts | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 154(1)(d), (j); § 155(1)(e), (16)) |\n| Late payment interest | 4 times the ECB base rate a year, at least 15% a year, for at most 4 years | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 156(2)) |\n| ECB base rate (main refinancing operations) | 2.15% from 11 June 2025; 2.40% from 17 June 2026; 2.65% from 16 September 2026 | 2026 | https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/ |\n| Country-by-country report: group consolidated revenue in the prior year | EUR 750,000,000 or more | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2012/442/20260101.html (§ 22a(h)) |\n| Country-by-country report: fines | up to EUR 10,000 for not filing the report; up to EUR 3,000 for a missed notice; both can be repeated | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2012/442/20260101.html (§ 22g(2)) |\n| Time limit to assess tax | 5 years from the end of the year the return was due; restarts on an audit report, 10 years at most; 10 years where a tax treaty is applied | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 69) |",
+      "old_unit_sha256": "4acd7e5162ea3eddcd9085425394904a52142744f70ea0bc161eb8bda428db7e",
+      "current_LF": [
+        51,
+        71
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F20 revenuecliffretest notadjustmenttimesoldrate"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 17,
+      "old_LF_start": 73,
+      "old_LF_end": 73,
+      "old_text": "At the ECB base rate of 2.65%: 3 times is 7.95%, so the 10% floor applies to an audit penalty. 1 times is 2.65%, so the 3% floor applies to a supplementary return penalty. 4 times is 10.6%, so the 15% floor applies to late payment interest.",
+      "old_unit_sha256": "cf3ae3153e3b6b733cb34b7d9ae5fbf0022da50981e2bd15a076b710960e5f94",
+      "current_LF": [
+        73,
+        73
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 18,
+      "old_LF_start": 75,
+      "old_LF_end": 75,
+      "old_text": "## The taxable base",
+      "old_unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "current_LF": [
+        75,
+        75
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 19,
+      "old_LF_start": 77,
+      "old_LF_end": 77,
+      "old_text": "**The adjustment is one-way.** The base of a dependent person includes the difference by which prices or terms in significant controlled transactions depart from those between independent persons in comparable transactions. This applies only where the difference reduces the base or increases a tax loss (ITA § 17(5)(a)). The tax then follows at the taxpayer's own rate (§ 15).",
+      "old_unit_sha256": "06e550c2d3ac276be7d66b44724d9bd9928ea0d89fd9d18b5cd1b41eb2c940cd",
+      "current_LF": [
+        77,
+        77
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F20 income-sideeffectonrevenue separatedfromexpenseaddback"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 20,
+      "old_LF_start": 79,
+      "old_LF_end": 79,
+      "old_text": "**Shared costs.** A dependent person may deduct its share of costs that a related person incurred, but only if all four tests are met (§ 17(5)(b)):",
+      "old_unit_sha256": "de218ed16edb57623b23b6a82ac0aaa829d7c5445d396ae38b8487191075455f",
+      "current_LF": [
+        79,
+        79
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 21,
+      "old_LF_start": 81,
+      "old_LF_end": 84,
+      "old_text": "1. the costs demonstrably relate to its business;\n2. it would pay for the service if an independent person supplied it, or it would do the work itself;\n3. it can show the total costs and how they are split among those who benefit;\n4. its share is booked in its accounts or tax records.",
+      "old_unit_sha256": "4f223800d5d2ca6457f61c6f65491475c2807a0618059c90bf45eddd69ac2988",
+      "current_LF": [
+        81,
+        84
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 22,
+      "old_LF_start": 86,
+      "old_LF_end": 86,
+      "old_text": "**Methods** (§ 18(1) to (3)). The law names five methods:",
+      "old_unit_sha256": "df48a3c675e604b97f330b74e13273dfd6f352cc9600630780880ce2b6316503",
+      "current_LF": [
+        88,
+        88
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 23,
+      "old_LF_start": 88,
+      "old_LF_end": 89,
+      "old_text": "- price methods: comparable uncontrolled price, resale price and cost plus;\n- profit methods: profit split and transactional net margin.",
+      "old_unit_sha256": "d784fe016c5e570dc1ed5af541573d341caa2a677840da4a51aa5dd84526eaee",
+      "current_LF": [
+        90,
+        91
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 24,
+      "old_LF_start": 91,
+      "old_LF_end": 91,
+      "old_text": "A taxpayer may combine them or use another method, but only one that respects the arm's length principle. The OECD Transfer Pricing Guidelines also apply. The comparison looks at functions, risks, the asset or service, contract terms, the market and business strategy.",
+      "old_unit_sha256": "2a9363d8fc89c51e67f07cab833fdc8d148eb741b3ca5884637bbef656f6519e",
+      "current_LF": [
+        93,
+        93
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 25,
+      "old_LF_start": 93,
+      "old_LF_end": 93,
+      "old_text": "**The median rule** (§ 18(1)). Where the tax office compares against several independent values and the taxpayer's value is outside arm's length, an audit adjusts to the median of those values. The base goes to another point in the range only if the taxpayer shows that point fits the facts better.",
+      "old_unit_sha256": "f765b2bf0f999dc0a00f260fa9467b936c6408c1156fc1415724133d60470419",
+      "current_LF": [
+        95,
+        95
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 26,
+      "old_LF_start": 95,
+      "old_LF_end": 95,
+      "old_text": "**Corresponding adjustment** (§ 17(6)). Where a treaty partner's tax authority adjusts a related person's base in line with arm's length, the tax office that the Financial Directorate names on its website may allow a matching downward adjustment in Slovakia. Where one Slovak dependent person adjusts its base upward under § 17(5), the other Slovak dependent person may adjust its base the other way. It must adjust where it claims investment aid or incentive relief under § 30a or § 30b. It must also file a notice of the adjustment with its return or supplementary return.",
+      "old_unit_sha256": "b8b3e19d4c5a86e23ea3b239f55555217f4119c15dc993e8a5ac7e64601c7e01",
+      "current_LF": [
+        97,
+        97
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 27,
+      "old_LF_start": 97,
+      "old_LF_end": 97,
+      "old_text": "**Permanent establishments** (§ 17(7)). A Slovak PE of a non-resident may not show a lower base, or a higher loss, than an independent enterprise doing the same work. § 18 applies to it, and the non-resident must keep documentation on the method.",
+      "old_unit_sha256": "fce3469e6bc6361be9337354cd8159e6ca06a3a98b0b34c6c9fe748a3aec4293",
+      "current_LF": [
+        99,
+        99
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 28,
+      "old_LF_start": 99,
+      "old_LF_end": 99,
+      "old_text": "**Interest on related-party loans.** Besides the arm's length test, interest on loans from dependent persons is not deductible above 25% of profit before tax plus depreciation and interest expense (§ 21a(1)). Banks, insurers and leasing companies are outside this rule (§ 21a(3)). § 21a does not apply where the taxpayer already increased its base under the interest limitation rule in § 17k, which adds back net interest costs above 30% of the adjusted base once they exceed EUR 3,000,000 (§ 17k(2), § 21a(4)). The corporate skill covers the base around it.",
+      "old_unit_sha256": "a0faf0f120670e465172d21d861eaf00afc397ead133c61a3032c4d00ce47fa8",
+      "current_LF": [
+        101,
+        101
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 29,
+      "old_LF_start": 101,
+      "old_LF_end": 101,
+      "old_text": "## Deadlines and filing",
+      "old_unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "current_LF": [
+        103,
+        103
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 30,
+      "old_LF_start": 103,
+      "old_LF_end": 103,
+      "old_text": "**Corporate return.** Due within 3 calendar months after the end of the tax period, with the tax paid by the same date (ITA § 49(2)). A notice filed by the deadline extends it by up to 3 full months, or up to 6 months if the taxpayer has foreign-source income (§ 49(3)).",
+      "old_unit_sha256": "25ac5e8126e4943988cb0ae4af6e53b7577db906bd1bd30d604613f931733680",
+      "current_LF": [
+        105,
+        105
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 31,
+      "old_LF_start": 105,
+      "old_LF_end": 105,
+      "old_text": "**Table I of the corporate return** (DPPOv25, for periods whose return deadline falls on or after 1 January 2026). Every taxpayer with significant controlled transactions fills Table I, domestic and foreign, whatever documentation tier applies. A Slovak PE fills it too, including dealings with its head office (12/PO/2026/IM).",
+      "old_unit_sha256": "0814614b8680385b434942c01d24b9fb1eeba4bd531e608eec30a4796ab973df",
+      "current_LF": [
+        107,
+        115
+      ],
+      "disposition": "Current three-part Table I and filing-deadline vintage; former form retained at LF117."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 32,
+      "old_LF_start": 107,
+      "old_LF_end": 112,
+      "old_text": "- One row per transaction or group of transactions, split by related person and by transaction code.\n- Column 3 shows the total effect on the accounting result (line 100), in euros and cents, with a minus sign for costs. It counts effects in this period and future periods. Example: buying a building from a related person for EUR 2,000,000 is shown as EUR 2,000,000 in the year of purchase, not as the year's depreciation.\n- For a loan, report the interest under code 22. The principal does not affect the result and is not reported.\n- An interest-free loan therefore puts nothing in Table I. The Financial Directorate points to guideline art. 3(3): where the return does not meet the documentation duty, the shortened file is kept. § 17(5) still applies to the loan.\n- A taxpayer with only transactions that are not significant reports none of them, but ticks the box in part I for a link under § 2(n).\n- The form allows 99 rows electronically. If that is not enough, the transactions with the lowest values are left out, and those go into the documentation.",
+      "old_unit_sha256": "3eb54b8dd167db4e59e8da001d143b7d76c64924efd8a333594897a4d7a2170d",
+      "current_LF": [
+        117,
+        117
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: Old2025TableI acquisitionprice/interestcontrols retainedhistorically;new3partmap current"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 33,
+      "old_LF_start": 114,
+      "old_LF_end": 114,
+      "old_text": "**Documentation** (ITA § 18(1) and § 17(7); Ministry of Finance guideline MF/012879/2025-724). A taxpayer must keep documentation on its controlled transactions and the method used. The guideline sets the minimum content, and the tax office may ask for more (art. 2(2)). It applies to documentation for periods whose return deadline falls after 31 December 2025, so to 2025 and 2026 (art. 9). The tests are applied period by period (art. 2(1)). For a loan or other financial transaction, the value is the highest principal during the period (art. 2(7)).",
+      "old_unit_sha256": "f98393f77bc2adbde648f5ff53c94dd657c85f79f028f617a984e7fbcbb6d246",
+      "current_LF": [
+        119,
+        119
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 34,
+      "old_LF_start": 116,
+      "old_LF_end": 120,
+      "old_text": "| Tier | Who keeps it (art. 3) | Content |\n|---|---|---|\n| **Full** (úplná) | (a) a cross-border significant transaction material under Accounting Act § 17(9) for a taxpayer that reports under IFRS; (b) a cross-border transaction or group above EUR 10,000,000; (c) a material cross-border transaction with a resident of a non-cooperative state; (d) a material cross-border transaction where the taxpayer claims regional investment aid relief; (e) a transaction covered by an APA request; (f) a transaction covered by a request for a corresponding adjustment, except domestic ones; (g) a transaction covered by a dispute resolution request | Group file (structure, business, profit drivers, supply chains, services, intangibles, financing, consolidated accounts, APAs and rulings) and local file (taxpayer, each transaction with value by counterparty, contract, functional analysis, method and why, tested party, comparables and adjustments, reconciliation to the accounts) (art. 4) |\n| **Basic** (základná) | where full does not apply: (a) a material cross-border transaction where the taxpayer's total revenue from operating and financial activity exceeds EUR 8,000,000; (b) a cross-border transaction or group above EUR 1,000,000; (c) a material domestic transaction where the taxpayer claims regional investment aid relief; (d) any cross-border transaction with a resident of a non-cooperative state | Short group file (members, structure, functions, risks, financing) and local file (taxpayer, each transaction with value, contract, functional analysis, description of the TP system) (art. 5) |\n| **Shortened** (skrátená) | everyone else | Met by a properly completed return including Table I. A taxpayer that does not meet it that way, for example for lack of rows, keeps the shortened file in the form annexed to the guideline (art. 3(3), art. 6) |",
+      "old_unit_sha256": "09321ad144bb83efbd8c977caf74542f1c1ef505711a32fa3ee3674f35944e97",
+      "current_LF": [
+        121,
+        125
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 35,
+      "old_LF_start": 122,
+      "old_LF_end": 125,
+      "old_text": "- A Slovak PE also describes how capital and funding costs are attributed to it if it deducts funding costs (art. 7).\n- No documentation under full or basic is needed for transactions with no effect on the base in the period, except loans (art. 3(4)).\n- Documentation may roll forward from earlier periods if nothing that affects pricing has changed (art. 2(5)).\n- Taxpayers linked only through the state or a municipality document only their dealings with that public owner and its bodies (art. 8).",
+      "old_unit_sha256": "5ba0285aecc28b8b9372c9aad9b3c9a8fa28b3f38636da067214520652d1590e",
+      "current_LF": [
+        127,
+        130
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 36,
+      "old_LF_start": 127,
+      "old_LF_end": 127,
+      "old_text": "**Handing documentation over.** The tax office or the Financial Directorate may ask for it. The taxpayer must hand it over within 15 days from delivery of the request. The request for a period cannot be sent before the day after that period's return deadline. Documentation may be in another language, but on request a Slovak version is due within 15 days of delivery (ITA § 18(11)). Documentation goes in with any request for a corresponding adjustment or a mutual agreement procedure (§ 18(13)). Keep it for as long as tax can be assessed (§ 18(12); TC § 69).",
+      "old_unit_sha256": "5d3465b148aaf52f76fe91e4674f6ece4396794c38227e3560e5a3b0447deb4f",
+      "current_LF": [
+        132,
+        132
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 37,
+      "old_LF_start": 129,
+      "old_LF_end": 129,
+      "old_text": "**APA** (rozhodnutie o odsúhlasení použitia metódy ocenenia, ITA § 18(4) to (10)):",
+      "old_unit_sha256": "10614b0b43d9126fa11fb6f0f5d5f98ef24a08b4aff590a2d29efe95706fed7e",
+      "current_LF": [
+        134,
+        134
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 38,
+      "old_LF_start": 131,
+      "old_LF_end": 136,
+      "old_text": "- Apply in writing to the tax office the Financial Directorate names, at least 60 days before the start of the first period the method is to cover. A late application counts as not filed and the fee is refunded (§ 18(4), (8)).\n- The application includes the documentation and: the parties, the periods, a description of the transaction, its expected value and the proposed method (§ 18(6)). Full documentation applies to the transaction (guideline art. 3(1)(e)).\n- The fee is paid with the application: EUR 10,000 unilateral, EUR 30,000 bilateral or multilateral, halved for a taxpayer rated highly reliable under the tax reliability index (§ 18(7)). If the request is rejected, the fee is not refunded.\n- The APA covers up to 5 periods. A renewal for up to 5 more can be requested at least 60 days before it expires, if the conditions have not changed (§ 18(4)). A bilateral APA can cover more periods, including periods not in the request, if the competent authorities agree (§ 18(5)).\n- No appeal lies against the decision (§ 18(9)). The office revokes it if it rests on wrong data, and revokes or changes it if material conditions change (§ 18(10)).\n- A Slovak PE can get an APA on attributing its base too (§ 17(7)).",
+      "old_unit_sha256": "3c167bbab989a687565e3fb81ff02615964c683240b2c03c120056b989464965",
+      "current_LF": [
+        136,
+        141
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 39,
+      "old_LF_start": 138,
+      "old_LF_end": 138,
+      "old_text": "**Supplementary return.** A taxpayer that finds its tax should be higher must file a supplementary return by the end of the month after the month it found out, and pay by the same date (TC § 16(2)). Once a tax audit starts, a supplementary return for that period is possible only within 15 days of the start (TC § 16(9)).",
+      "old_unit_sha256": "fbaf7fc8dd3cee72eaa2ffba37f35ccbc90dced3dd890b784e8478efb0611fc8",
+      "current_LF": [
+        143,
+        143
+      ],
+      "disposition": "Supplementary-return duty retained and all notice/window/estimation gates now explicit."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 40,
+      "old_LF_start": 140,
+      "old_LF_end": 140,
+      "old_text": "**Country-by-country reporting** (Act No. 442/2012 Z. z., §§ 22a to 22g). It applies to multinational groups with consolidated revenue of EUR 750,000,000 or more in the prior year (§ 22a(h)).",
+      "old_unit_sha256": "736f2db5605efa65eac1eee3b25a0f0d5dbc9efea619ea3d2bc5e456d1f1e7a2",
+      "current_LF": [
+        145,
+        145
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 41,
+      "old_LF_start": 142,
+      "old_LF_end": 144,
+      "old_text": "- A Slovak ultimate parent files the report within 12 months after the end of the reporting year (§ 22b(1)). A Slovak constituent entity files it instead only in the cases in § 22c (the parent's state does not require it, has no exchange agreement, or has failed).\n- Every Slovak constituent entity notifies who files and names the group and its parent, by the last day of its own return deadline for that year. The notice is needed again only when the facts change (§ 22e).\n- The tax office may not adjust the base on the report's data alone (§ 22f(3)).",
+      "old_unit_sha256": "ddcacdc10cc8b2dc63d6949267bc853ac514233218c767364c52f1b89f3c695c",
+      "current_LF": [
+        147,
+        149
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 42,
+      "old_LF_start": 146,
+      "old_LF_end": 146,
+      "old_text": "## Penalties and interest",
+      "old_unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "current_LF": [
+        151,
+        151
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 43,
+      "old_LF_start": 148,
+      "old_LF_end": 155,
+      "old_text": "- **Audit adjustment.** When the tax office raises tax in an assessment, the penalty is 3 times the ECB base rate a year, at least 10% a year, on the increase (TC § 155(1)(f), (5)). It runs for each day from the day after the return deadline until the 15-day window under § 16(9) after the audit starts closes. It is at least 1% of the amount and at most the amount (§ 155(2)). The ECB rate used is the one on the day the assessment is delivered (§ 155(7)). Paying the assessed amount within 15 days of delivery cuts the penalty to two thirds (§ 155(17)).\n- **Doubled penalty for abuse.** Where the office adjusts under § 17(5)(a) and also applies the anti-abuse rule (ITA § 50a or TC § 3(6)), the penalty is doubled (ITA § 18a(1)). The doubling falls away if the taxpayer does not appeal and pays within the appeal period (§ 18a(2)).\n- **APA requested.** Where the taxpayer asked for an APA and the office audits the period of the request or the two periods before it, an adjustment without abuse carries the lower penalty under TC § 155(1)(g) (ITA § 18a(3)).\n- **Self-correction.** Tax disclosed in a supplementary return carries a penalty of the ECB base rate a year, at least 3% a year, on the difference (TC § 155(1)(g), (5)). It runs from the day after the return deadline until the supplementary return is filed (§ 155(2)). The rate is twice the ECB rate, at least 7%, if filed within 15 days after an audit starts (§ 155(1)(h)).\n- **Documentation not handed over, or another non-monetary duty missed.** EUR 100 to EUR 10,000 (TC § 154(1)(j), § 155(1)(e)). The fine can be imposed again in the same amount if it did not lead to a remedy and the breach lasts (§ 155(16)). A tax office does not impose a fine set within a range for a first breach (§ 155(4)).\n- **Late payment interest.** 4 times the ECB base rate on the day the arrears arose, at least 15% a year, for each day until payment, for at most 4 years (TC § 156(2)). Interest under EUR 5 is not charged (§ 156(6)(b)).\n- **Country-by-country reporting.** Up to EUR 10,000 for not filing the report, and up to EUR 3,000 for a missed notice, both repeatable (Act 442/2012, § 22g(2)).\n- **Time limit.** Tax can be assessed for 5 years from the end of the year in which the return was due. An audit report restarts the period, but never beyond 10 years (TC § 69(1) to (3)). Where a tax treaty is applied, the limit is 10 years (§ 69(5)).",
+      "old_unit_sha256": "737b217751468eacbfc1951b46df3a244146c9d6502316ab662dc5b3932f1509",
+      "current_LF": [
+        153,
+        160
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F02/F20 calendar-year/dime rounding/endpointandinterestscope resolved"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 44,
+      "old_LF_start": 157,
+      "old_LF_end": 157,
+      "old_text": "## Cross-border points",
+      "old_unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "current_LF": [
+        173,
+        173
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 45,
+      "old_LF_start": 159,
+      "old_LF_end": 163,
+      "old_text": "- **Treaties and MAP.** A double taxation case from a TP adjustment can go to the mutual agreement procedure under the treaty's associated enterprises article, or to the EU Arbitration Convention 90/436/EEC. The documentation goes in with the request (ITA § 18(13)). EU disputes can also go under Act No. 11/2019 Z. z. on tax dispute resolution, and full documentation then applies to the transaction (guideline art. 3(1)(g)).\n- **Corresponding adjustment after a foreign adjustment.** Allowed only where the other state has a tax treaty with Slovakia and its adjustment is arm's length (ITA § 17(6)). Full documentation applies (guideline art. 3(1)(f)).\n- **Non-cooperative states.** A cross-border transaction with a resident of a non-cooperative state needs at least basic documentation whatever its size, and full documentation if it is material (guideline art. 3(1)(c), 3(2)(d)). The list of cooperating states is on the Ministry of Finance website (ITA § 2(x)).\n- **Permanent establishments.** Head office dealings with a Slovak PE are controlled transactions (§ 2(r)) and go in Table I. Attribution of profit follows § 17(7).\n- **Withholding.** Whether an adjusted amount paid abroad is treated as a dividend or other payment subject to withholding is not covered by this skill (see Not yet confirmed).",
+      "old_unit_sha256": "2c499ae4f6ddb9e81c4cf607bb8dae2c0a8116b0fe5e531c2df6871abd952e32",
+      "current_LF": [
+        175,
+        179
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 46,
+      "old_LF_start": 165,
+      "old_LF_end": 165,
+      "old_text": "## Worked examples",
+      "old_unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "current_LF": [
+        181,
+        181
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 47,
+      "old_LF_start": 167,
+      "old_LF_end": 167,
+      "old_text": "### Example 1: the tax office cuts a management fee paid to a foreign parent",
+      "old_unit_sha256": "1d14631d6932eb35fb342b47ab26673decfcacfcf72494aabbc7b6406bcff9e4",
+      "current_LF": [
+        183,
+        183
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 48,
+      "old_LF_start": 169,
+      "old_LF_end": 169,
+      "old_text": "A Slovak s.r.o. has taxable revenue of EUR 3,000,000 in 2026, so its rate is 21%. It pays its Austrian parent a management fee of EUR 250,000 and deducts it in full. Its benchmark gives a range of independent fees with a median of EUR 180,000, and the fee sits above the range. In an audit that starts in June 2028, the office adjusts to the median.",
+      "old_unit_sha256": "890b96c195fcd257e065034d71119bb03ba240e0d45ef8622b683d1691fff4b7",
+      "current_LF": [
+        185,
+        185
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 49,
+      "old_LF_start": 171,
+      "old_LF_end": 177,
+      "old_text": "1. Documentation check: the fee is cross-border and above EUR 10,000, so it is significant. The company does not report under IFRS, claims no regional investment aid and Austria is not a non-cooperative state. The fee is below EUR 1,000,000 and the company's revenue is below EUR 8,000,000, so neither full nor basic documentation applies (guideline art. 3(1) and (2)). Table I in the 2026 return meets the duty (guideline art. 3(3)).\n2. Adjustment to the median: EUR 250,000 less EUR 180,000 = EUR 70,000 (ITA § 17(5)(a), § 18(1)).\n3. Extra tax at 21%: EUR 14,700.\n4. Penalty: the ECB rate used is the one on the day the assessment is delivered (TC § 155(7)). The example assumes it is still 2.65%: 3 times is 7.95%, so the 10% floor applies (§ 155(5)). The floor stops applying only if the ECB rate rises above 3.33%. It runs from 1 April 2027 (the day after the 31 March 2027 deadline) to 30 June 2028, the date the § 16(9) window is assumed to close: 457 days. On a 365-day year: 14,700 x 10% x 457 / 365 = EUR 1,840.52. That is above the 1% minimum of EUR 147.\n5. Paying within 15 days of the assessment cuts the penalty to two thirds: EUR 1,227.01 (§ 155(17)).\n6. Late payment interest is extra and is not computed here, because the ECB rate on the day the arrears arose is not yet known.\n7. To relieve the double tax, the parent asks Austria for a corresponding adjustment through the treaty's mutual agreement procedure or the EU Arbitration Convention.",
+      "old_unit_sha256": "aa26e7499940676803c04aa23c0185a5b6b721f50efa54d750054a85d3fd6255",
+      "current_LF": [
+        187,
+        193
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F02 correctedleapyearfine;paymentinterestdue distinguished;businessfactspreserved"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 50,
+      "old_LF_start": 179,
+      "old_LF_end": 200,
+      "old_text": "```oa-check\nname: Management fee cut to the median, audit penalty at the 10% floor (2026)\ninputs:\n  fee_paid: 250000\n  median_fee: 180000\n  cit_rate: 21\n  penalty_rate: 10\n  days: 457\n  days_in_year: 365\nsteps:\n  - adjustment: fee_paid - median_fee\n  - extra_tax: adjustment * cit_rate / 100\n  - penalty: round(extra_tax * penalty_rate / 100 * days / days_in_year, 2)\n  - penalty_paid_early: round(penalty * 2 / 3, 2)\n  - minimum_penalty: extra_tax / 100\nexpected:\n  adjustment: 70000\n  extra_tax: 14700\n  penalty: 1840.52\n  penalty_paid_early: 1227.01\n  minimum_penalty: 147\n```",
+      "old_unit_sha256": "dc0f0b18c66b0a5577927a3b0790ac01f29f50df4ed2ea2635c0f9be291c7a4c",
+      "current_LF": [
+        195,
+        219
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: Originalbusinessinputs/steps/expectedretained;independentvariantsappended,exceptF02explicitdaybasis/finecorrection"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 51,
+      "old_LF_start": 202,
+      "old_LF_end": 202,
+      "old_text": "### Example 2: a large company corrects a royalty itself and checks its documentation tier",
+      "old_unit_sha256": "50ae9fe157bfff8f43c3d3076604f30db29e5f3b78ce3119908b92a27e3cae08",
+      "current_LF": [
+        221,
+        221
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 52,
+      "old_LF_start": 204,
+      "old_LF_end": 204,
+      "old_text": "A Slovak a.s. has taxable revenue of EUR 9,000,000, so its rate is 24%. In 2025 it paid its Dutch sister company royalties of EUR 1,200,000 for a licence. It also borrowed EUR 60,000 at a market rate from a Slovak sister company. In October 2026 its new benchmark shows the arm's length royalty for 2025 was EUR 1,080,000. It files a supplementary return on 30 November 2026, before any audit.",
+      "old_unit_sha256": "b3d0f37266453967bba293e4610bcaffefa0bb79f733d0f2da5952c47c79012e",
+      "current_LF": [
+        223,
+        223
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 53,
+      "old_LF_start": 206,
+      "old_LF_end": 211,
+      "old_text": "1. Documentation tier for 2025: the royalty is cross-border and above EUR 1,000,000, so basic documentation is needed. It is not above EUR 10,000,000, the company does not report under IFRS, and the sister company is not in a non-cooperative state, so full documentation is not (guideline art. 3(1) and (2)).\n2. The Slovak loan has principal above EUR 50,000, so it is significant. It is domestic and the company claims no investment aid, so the interest goes in Table I and no separate file is needed.\n3. Excess royalty: EUR 1,200,000 less EUR 1,080,000 = EUR 120,000, added back (ITA § 17(5)(a)).\n4. Extra tax at 24%: EUR 28,800, paid by the end of the month after the month the company found the error (TC § 16(2)).\n5. Penalty: the ECB rate used is the one on the day the supplementary return is filed (TC § 155(7)). On 30 November 2026 it is 2.65% (in force from 16 September 2026), below 3%, so the 3% floor applies (§ 155(5)). It runs from 1 April 2026, the day after the 31 March 2026 deadline, to 30 November 2026: 244 days. On a 365-day year: 28,800 x 3% x 244 / 365 = EUR 577.58.\n6. Had the office found it on audit instead, the 10% floor would apply over a longer period (TC § 155(1)(f)).",
+      "old_unit_sha256": "63bc4b6181bf6d0fc9a482333cb2ff30bc796f2f0019aadebf9fb2a30b59fdf5",
+      "current_LF": [
+        225,
+        231
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: F02/F20 corrected577.50/118.30;newincome-ratecliffvariantsidentified"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 54,
+      "old_LF_start": 213,
+      "old_LF_end": 233,
+      "old_text": "```oa-check\nname: Royalty self-correction at 24%, supplementary return penalty at the 3% floor (2025 return, corrected 2026)\ninputs:\n  royalty_paid: 1200000\n  royalty_alp: 1080000\n  basic_doc_threshold: 1000000\n  cit_rate: 24\n  penalty_rate: 3\n  days: 244\n  days_in_year: 365\nsteps:\n  - add_back: royalty_paid - royalty_alp\n  - over_basic_threshold: royalty_paid - basic_doc_threshold\n  - extra_tax: add_back * cit_rate / 100\n  - penalty: round(extra_tax * penalty_rate / 100 * days / days_in_year, 2)\nexpected:\n  add_back: 120000\n  over_basic_threshold: 200000\n  extra_tax: 28800\n  penalty: 577.58\n```",
+      "old_unit_sha256": "84a3439e834a4ea5650c50bdfc96338d7df481a45519e54c946705ed59a38945",
+      "current_LF": [
+        235,
+        277
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: Originalbusinessinputs/steps/expectedretained;independentvariantsappended,exceptF02explicitdaybasis/finecorrection"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 55,
+      "old_LF_start": 235,
+      "old_LF_end": 235,
+      "old_text": "## Ask the client first",
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "current_LF": [
+        279,
+        279
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 56,
+      "old_LF_start": 237,
+      "old_LF_end": 242,
+      "old_text": "1. Who the dependent persons are: the ownership chain with percentages of capital, votes and profit (direct, indirect and derived), shared board members, close persons, and the consolidated group.\n2. Which transactions there were with each one in the period, by type, amount and country, and which pass EUR 10,000, or are loans above EUR 50,000 principal.\n3. The company's total revenue from operating and financial activity, whether it reports under IFRS, and whether it claims regional investment aid. These set the documentation tier.\n4. Whether any counterparty is a resident of a non-cooperative state.\n5. How each price was set: the method, any benchmark and the median, and whether a group master file and local file exist.\n6. Whether the group's consolidated revenue reached EUR 750 million, and whether any APA, MAP or tax audit is open.",
+      "old_unit_sha256": "2b003438ec09c9c0f85286dafb3d09e7d6a70954d69811ffdb78dedb8f8950d8",
+      "current_LF": [
+        281,
+        286
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 57,
+      "old_LF_start": 244,
+      "old_LF_end": 244,
+      "old_text": "## Sources",
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "current_LF": [
+        288,
+        288
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 58,
+      "old_LF_start": 246,
+      "old_LF_end": 258,
+      "old_text": "| Source | URL | Read on |\n|---|---|---|\n| Act No. 595/2003 Z. z. on Income Tax, version in force 1 January 2026 to 30 December 2026: §§ 2(n) to (r), (w), (x), (ab), 15, 17(5) to (7), 17k, 18, 18a, 21a, 49, 50a | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-23 |\n| Act No. 595/2003 Z. z., version in force 1 January 2025 to 14 March 2025: § 15 (rates for tax year 2025, used in example 2) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20250101.html | 2026-10-23 |\n| Act No. 595/2003 Z. z., version in force from 1 January 2027 (§§ 17(5) and 18 unchanged) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20270101.html | 2026-10-23 |\n| Act No. 563/2009 Z. z., Tax Code, version in force 1 September 2026 to 31 December 2026: §§ 16, 69, 154, 155, 156 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-23 |\n| Act No. 563/2009 Z. z., version in force from 1 January 2027 (§§ 16, 69, 154 to 156 unchanged) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20270101.html | 2026-10-23 |\n| Act No. 442/2012 Z. z. on international assistance and cooperation in tax administration, version in force from 1 January 2026: §§ 22a to 22g | https://static.slov-lex.sk/static/SK/ZZ/2012/442/20260101.html | 2026-10-23 |\n| Ministry of Finance, guideline MF/012879/2025-724 on documentation content | https://www.mfsr.sk/files/archiv/49/Usmernenie-2025.pdf | 2026-10-23 |\n| Ministry of Finance, annex to the guideline (shortened documentation form) | https://www.mfsr.sk/files/archiv/73/Usmernenie-2025_priloha.docx | 2026-10-23 |\n| Ministry of Finance, transfer pricing page | https://www.mfsr.sk/sk/dane-cla-uctovnictvo/priame-dane/dane-z-prijmu/transferove-ocenovanie/ | 2026-10-23 |\n| Financial Directorate, 12/PO/2026/IM, filling Table I of the 2025 corporate return | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/DPPO/2026/2026.03.26_012_PO_2026_IM.pdf | 2026-10-23 |\n| Národná banka Slovenska, ECB key interest rates | https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/ | 2026-10-23 |",
+      "old_unit_sha256": "c7c3e536e18c7d14fc2db63b1096d6bc59c508e1a9feef88ff9cfb5180b95336",
+      "current_LF": [
+        290,
+        302
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 59,
+      "old_LF_start": 260,
+      "old_LF_end": 260,
+      "old_text": "Not yet confirmed: the day-count basis the tax office uses for per-day penalties and interest (the examples assume 365 days); whether interest also runs on tax disclosed in a timely supplementary return, alongside the § 155(1)(g) penalty; the end date of the audit penalty where no § 16(9) window applies; whether a TP adjustment that raises income counts towards the EUR 100,000 and EUR 5,000,000 revenue tests in § 15; whether a TP adjustment paid abroad is treated as a deemed distribution for withholding; the materiality test in Accounting Act § 17(9) that the guideline uses (not read); the name of the tax office that handles APAs and corresponding adjustments (the law points to the Financial Directorate's website, which was not read); the Financial Directorate's support pages on TP documentation (podpora.financnasprava.sk returned an error); and the public country-by-country reporting rules in the Accounting Act, not covered here.",
+      "old_unit_sha256": "1979770b5895c0576d6cd789e964805c0949abccae9afc23d0b3de0548ffd51c",
+      "current_LF": [
+        311,
+        311
+      ],
+      "disposition": "Rechecked current destination; prior 423-unit review disposition: Ordinarysourcegapsresolved;remainingAPA/MAP/deemeddistribution/publicCbCRexplicitlylimited"
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 60,
+      "old_LF_start": 262,
+      "old_LF_end": 262,
+      "old_text": "> Contributed by Michael Cutajar.",
+      "old_unit_sha256": "cd6e492917c1a8ee9a5db69e092a96a573d0755ba0fdfeb3d0e3c92e4bd0e0c7",
+      "current_LF": [
+        313,
+        313
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 61,
+      "old_LF_start": 264,
+      "old_LF_end": 264,
+      "old_text": "<!-- openaccountants-cta-block -->",
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "current_LF": [
+        315,
+        315
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 62,
+      "old_LF_start": 266,
+      "old_LF_end": 266,
+      "old_text": "---",
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "current_LF": [
+        1,
+        1
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 63,
+      "old_LF_start": 268,
+      "old_LF_end": 268,
+      "old_text": "## Talk to a verified accountant",
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "current_LF": [
+        319,
+        319
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 64,
+      "old_LF_start": 270,
+      "old_LF_end": 273,
+      "old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "current_LF": [
+        321,
+        324
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 65,
+      "old_LF_start": 275,
+      "old_LF_end": 276,
+      "old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "current_LF": [
+        326,
+        327
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 66,
+      "old_LF_start": 278,
+      "old_LF_end": 280,
+      "old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "current_LF": [
+        329,
+        331
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    }
+  ]
+}

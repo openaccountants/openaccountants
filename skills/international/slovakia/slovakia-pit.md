@@ -1,10 +1,10 @@
 ---
 name: slovakia-pit
 description: "Slovak personal income tax (daň z príjmov fyzickej osoby, DPFO) for tax year 2026 under Act 595/2003 as amended by Act 261/2025. Covers residents and non-residents in outline, employment income (§5), self-employed SZČO business income (§6) with the 60% flat-rate expenses capped at EUR 20,000, the 15% rate for business revenue up to EUR 100,000, the new 19%, 25%, 30% and 35% bands set as multiples of the subsistence minimum (EUR 284.13), the 2026 personal allowance of EUR 5,966.73 and its phase-out, the spouse allowance, the child tax bonus and its taper above EUR 27,432, the EUR 17 minimum tax rule, capital income, the 31 March 2027 deadline and extensions, advances and penalties. Trigger on: daň z príjmov 2026, DPFO typ A, DPFO typ B, SZČO, živnostník, paušálne výdavky, nezdaniteľná časť, daňový bonus, Slovak income tax 2026. Out of scope: payroll withholding and contributions in sk-payroll-social, companies in sk-corporate-income-tax, non-residents and treaties in sk-cross-border."
-version: 1.6
+version: 1.7
 jurisdiction: SK
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Slovakia: personal income tax for employees and the self-employed (2026) v1.6
+# Slovakia: personal income tax for employees and the self-employed (2026) v1.7
 
 Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
 
@@ -31,7 +31,7 @@ This skill covers the annual income tax of an individual for the 2026 calendar y
 
 - **Residents.** A person with permanent residence (trvalý pobyt) or a home (bydlisko) in Slovakia, or who usually stays there, is taxed on worldwide income (§2(d)(1)). Staying at least 183 days in a calendar year, counting every started day, is usually staying. The tax year is the calendar year (§2(l)).
 - **Non-residents.** They are taxed only on Slovak-source income (§2(e), §16). They get the spouse allowance and the child bonus only if Slovak income is at least 90% of their total income (§11(7), §33(9)). The detail is in sk-cross-border.
-- **Employees** (§5). The employer withholds monthly advances. An employee with only §5 income from Slovak employers can ask an employer for the annual settlement (ročné zúčtovanie) by 15 February 2027 instead of filing (§38(1)). Otherwise they file DPFO type A.
+- **Employees** (§5). The employer withholds monthly advances. An employee with only §5 income from Slovak employers can ask an employer for the annual settlement (ročné zúčtovanie) by 15 February 2027 if they are not required to increase the tax base under §11(11) for earlier DDS deductions (§38(1)). Otherwise they file DPFO type A.
 - **Self-employed** (§6(1) and (2)): trades (živnosť), liberal professions, farmers and other independent activity. They file DPFO type B.
 - **Rental income** (§6(3)), **capital income** (§7) and **other income** (§8), such as sale of property, securities or crypto-assets. These go on DPFO type B.
 - **Who must file.** Anyone whose taxable income in 2026 exceeds 50% of the personal allowance, so EUR 2,983.37, or who has a tax loss (§32(1)). Income taxed finally by withholding is left out of that test.
@@ -122,7 +122,7 @@ Apply the mortgage bonus **after** the child bonus. Request payout of any amount
 
 | What | When | Rule |
 |---|---|---|
-| Ask the employer for the annual settlement (employment income only) | 15 February 2027 | §38(1) |
+| Ask the employer for the annual settlement (employment income only; no §11(11) DDS addback required) | 15 February 2027 | §38(1) |
 | DPFO type A (employment only) or type B (all other cases) for 2026, and payment | 31 March 2027 | §49(2) |
 | Extension by notice to the tax office before 31 March 2027 | up to 3 full months, to 30 June 2027 | §49(3)(a) |
 | Extension where foreign-source income is included | up to 6 full months, to 30 September 2027 | §49(3)(b) |
@@ -319,6 +319,7 @@ expected:
 | Ministry of Finance, notice MF/014310/2026-721 and actual type A/type B/DPPO sample forms, actual package | https://www.mfsr.sk/files/archiv/66/prispevok_16.zip | 2026-10-27 |
 | Ministry of Finance, notice MF/014312/2026-721 and actual 2026 type A/type B/DPPO instructions, actual package | https://www.mfsr.sk/files/archiv/36/prispevok_18.zip | 2026-10-27 |
 | ECB and NBS, actual historical main-refinancing rates | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html; https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/ | 2026-10-27 |
+| ITA §§32(2)(d),38(1): employment-only return and annual-settlement exclusion when a §11(11) DDS addback is required | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html#paragraf-38 | 2026-10-29 |
 
 **Rate reference dates.** The [ECB history](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html), also published by [NBS](https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/), records main-refinancing rates of 2.15% from 11 June 2025, 2.40% from 17 June 2026 and 2.65% from 16 September 2026, observed through this 27 October read. At 2.65% the 10%/7%/3% penalty floors and 15% interest floor apply. Select the actual rate on delivery of the assessment or supplementary filing for §155 (§155(7)), and when arrears arise for §156(2). A future reference date needs the rate in force then; no future ECB rate is asserted. The form versions are verified by the actual Ministry packages above; the 31 December law transition remains governed by §52zzzm as explained at the start.
 

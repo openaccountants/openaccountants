@@ -1,0 +1,83 @@
+§ 26
+Postup pri odpisovaní hmotného majetku
+(1)
+ V prvom roku odpisovania zaradí daňovník hmotný majetok v triedení podľa Klasifikácie
+ produkcie a klasifikácie stavieb120) do odpisových skupín uvedených v prílohe č. 1. Doba odpisovania
+ Odpisová skupina
+ Doba odpisovania
+ 0
+ 2 roky
+ 1
+ 4 roky
+ 2
+ 6 rokov
+ 3
+ 8 rokov
+ 4
+ 12 rokov
+ 5
+ 20 rokov
+ 6
+ 40 rokov.
+(2)
+ Hmotný majetok, ktorý nemožno zaradiť do odpisových skupín podľa prílohy a ktorého
+ doba použiteľnosti nevyplýva z iných predpisov, sa na účely odpisovania zaradí do
+ odpisovej skupiny 2; to neplatí pre hmotný majetok podľa odsekov 6 a 7. Pri používaní
+ budovy na niekoľko účelov je na zaradenie tejto budovy do odpisovej skupiny rozhodujúce
+ jej hlavné využitie určené z celkovej úžitkovej plochy.106) Súbor hnuteľných vecí sa zaraďuje do odpisovej skupiny podľa hlavného funkčného celku.
+ Pri postupe uplatnenom podľa § 22 ods. 15 sa jednotlivé oddeliteľné súčasti zaradia do rovnakej odpisovej skupiny, v ktorej
+ je zaradený tento hmotný majetok s výnimkou jednotlivých oddeliteľných súčastí budov
+ a stavieb, ktoré sú zaradené v prílohe č. 1.
+(3)
+ Daňovník odpisuje hmotný majetok metódou rovnomerného odpisovania (§ 27). Metódou zrýchleného odpisovania (§ 28) môže daňovník odpisovať hmotný majetok zaradený podľa prílohy č. 1 do odpisovej skupiny 2 a 3. Spôsob odpisovania určí daňovník pre každý novoobstaraný
+ hmotný majetok a nemožno ho zmeniť po celú dobu jeho odpisovania.
+(4)
+ Hmotný majetok sa odpisuje najviac do výšky vstupnej ceny, prípadne zvýšenej o vykonané
+ technické zhodnotenie alebo pri zrýchlenom odpisovaní do výšky zvýšenej zostatkovej
+ ceny.
+(5)
+ Pri vykonaní technického zhodnotenia alebo skrátení doby odpisovania sa hmotný majetok
+ doodpisuje do výšky vstupnej ceny, prípadne zvýšenej o vykonané technické zhodnotenie
+ platnou ročnou odpisovou sadzbou alebo do výšky zostatkovej ceny alebo zvýšenej zostatkovej
+ ceny koeficientom pre príslušnú odpisovú skupinu. Vykonaním technického zhodnotenia
+ sa doba odpisovania predĺži o dobu vyplývajúcu zo spôsobu výpočtu podľa § 27 alebo § 28.
+(6)
+ Ročný odpis otvárok nových lomov, pieskovní, hlinísk a technickej rekultivácie, ak
+ nie sú súčasťou hmotného majetku, do ktorého vstupnej ceny sú zahrnuté, dočasných
+ stavieb120aaa) a banských diel sa určí ako podiel vstupnej ceny a určenej doby trvania.
+(7)
+ Pri formách, modeloch a šablónach zatriedených do kódov Klasifikácie produktov 25.73.6,
+ 28.92.4, ak ide o stroje na tvarovanie odlievacích foriem z piesku, a kódov 28.96.1
+ a 25.73.5 sa ročný odpis určí ako podiel vstupnej ceny a ustanovenej doby použiteľnosti
+ alebo určeného počtu vyrobených odliatkov alebo výliskov. Na hmotný majetok uvedený
+ v prvej vete poskytnutý na základe zmluvy o výpožičke110) sa neuplatňuje limit výšky odpisov podľa § 19 ods. 3 písm. a).
+(8)
+ Hmotný majetok prenajatý formou finančného prenájmu, okrem pozemkov, odpíše daňovník
+ počas doby odpisovania tohto majetku podľa odseku 1 do výšky vstupnej ceny ustanovenej
+ v § 25 spôsobom podľa § 27 alebo § 28 pri zohľadnení postupu podľa § 17 ods. 34.
+(9)
+ Ročný odpis podľa odsekov 6 a 7 sa určuje s presnosťou na celé kalendárne mesiace,
+ počnúc mesiacom, v ktorom boli splnené podmienky na začatie odpisovania. Mesiacom,
+ v ktorom boli splnené podmienky na začatie odpisovania, je mesiac, v ktorom sa majetok
+ začal účtovať alebo evidovať podľa § 6 ods. 11.
+(10)
+ Mesačný odpis vypočítaný podľa odsekov 6 a 7 sa zaokrúhľuje podľa § 47.
+(11)
+ Prerušenie odpisovania a zmenu prerušenia odpisovania podľa § 22 ods. 9 nemožno uplatniť pri výkone daňovej kontroly a vo vyrubovacom konaní podľa osobitného
+ predpisu128) a v dodatočnom daňovom priznaní za zdaňovacie obdobie, za ktoré bola vykonaná daňová
+ kontrola.
+(12)
+ Mikrodaňovník môže odpisovať hmotný majetok zaradený do odpisových skupín 0 až 4
+ okrem osobného automobilu zatriedeného do kódu Klasifikácie produktov 29.10.2 so vstupnou
+ cenou (§ 25) 48 000 eur a viac, najviac počas doby odpisovania podľa odsekov 1 a 5 v ním určenej
+ výške najviac do výšky vstupnej ceny podľa § 25 ods. 1. Rovnako sa postupuje aj pri inom majetku uvedenom v § 22 ods. 6 písm. e). Tento spôsob odpisovania použije daňovník, ktorým je
+a)
+ právnická osoba, na hmotný majetok zaradený do užívania v zdaňovacom období, v ktorom
+ bol daňovník považovaný za mikrodaňovníka,
+b)
+ fyzická osoba, na hmotný majetok zaradený do obchodného majetku [§ 2 písm. m)] v súvislosti s dosahovaním príjmov podľa § 6 ods. 1 a 2, v zdaňovacom období, v ktorom bol daňovník považovaný za mikrodaňovníka.
+(13)
+ Každá stavba, ktorá je súčasťou súboru stavieb tvoriacich funkčný celok,120aaaa) sa zaradí do odpisovej skupiny podľa odseku 1 samostatne.
+(14)
+ Ročný odpis budovy podľa § 22 ods. 6 písm. f) a ročný odpis budovy alebo stavby podľa § 22 ods. 6 písm. g) sa určí najviac počas doby odpisovania podľa odseku 1 a najmenej počas polovice doby
+ odpisovania ustanovenej pre odpisovú skupinu 6 podľa § 27.

@@ -1,0 +1,35 @@
+{
+  "finding": "SK-L03 resident legal-person source quote omitted operative LF29–32",
+  "Guide_changes": false,
+  "Guide_or_ledger_pair_bytes_changed": false,
+  "source_reader_unchanged": "06918a159527d4a29ea05dc7b723f9d72de5d0f14f7f1d39dfeffe61e60ea615",
+  "actual_root_read_native_LF": [
+    15,
+    35
+  ],
+  "original_writer_read_scope_retained": [
+    1,
+    72
+  ],
+  "old_quote": "pohľadávku veriteľovi, ktorý je fyzickou osobou, d) daňovníkom s neobmedzenou daňovou povinnosťou 1. fyzická osoba, ktorá má na území Slovenskej republiky trvalý pobyt,1a) bydlisko alebo sa tu obvykle zdržiava, pričom 1a. fyzická osoba má na území Slovenskej republiky bydlisko, ak má možnosť ubytovania, ktoré neslúži len na príležitostné ubytovanie, a so zreteľom na všetky súvisiace skutočnosti a okolnosti vrátane osobných väzieb a ekonomických väzieb fyzickej osoby k územiu Slovenskej republiky je zrejmý zámer fyzickej osoby sa v tomto bydlisku trvale zdržiavať, 1b. fyzická osoba sa obvykle zdržiava na území Slovenskej republiky, ak sa tu zdržiava aspoň 183 dní v príslušnom kalendárnom roku, a to súvisle alebo v niekoľkých obdobiach; do tohto obdobia sa započítava každý, aj začatý deň pobytu,",
+  "successor_quote": "pohľadávku veriteľovi, ktorý je fyzickou osobou, d) daňovníkom s neobmedzenou daňovou povinnosťou 1. fyzická osoba, ktorá má na území Slovenskej republiky trvalý pobyt,1a) bydlisko alebo sa tu obvykle zdržiava, pričom 1a. fyzická osoba má na území Slovenskej republiky bydlisko, ak má možnosť ubytovania, ktoré neslúži len na príležitostné ubytovanie, a so zreteľom na všetky súvisiace skutočnosti a okolnosti vrátane osobných väzieb a ekonomických väzieb fyzickej osoby k územiu Slovenskej republiky je zrejmý zámer fyzickej osoby sa v tomto bydlisku trvale zdržiavať, 1b. fyzická osoba sa obvykle zdržiava na území Slovenskej republiky, ak sa tu zdržiava aspoň 183 dní v príslušnom kalendárnom roku, a to súvisle alebo v niekoľkých obdobiach; do tohto obdobia sa započítava každý, aj začatý deň pobytu, 2. právnická osoba, ktorá má na území Slovenskej republiky sídlo1b) alebo miesto skutočného vedenia; miestom skutočného vedenia je miesto, kde sa vytvárajú alebo prijímajú zásadné riadiace rozhodnutia a obchodné rozhodnutia pre právnickú osobu ako celok, aj ak adresa tohto miesta nie je zapísaná v obchodnom registri,",
+  "prior_SK_L02_endpoint67_preserved": true,
+  "changes": [
+    {
+      "path": ".claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/source-scopes.json",
+      "before_sha256": "f0b5d55b0fc7dc4d5989344c9fc22da71ed113eb39080f03ea2ac9204916ee28",
+      "after_sha256": "caf650c3b8cee0a812cc48c84cd1b61db4835450d181690e223ebdcb6bc6a18e"
+    },
+    {
+      "path": ".claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/source-quotes.md",
+      "before_sha256": "db634339db80309a066f11cbf3fa71a35378ebf2a66bbf42626f6b516485fcd7",
+      "after_sha256": "a9a03e4654aca17071e715bb7a09cade65204e27942a883f74860170327280f9"
+    },
+    {
+      "path": ".claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/pit-sources.py",
+      "before_sha256": "576c6d0e63a564cf493e05b95aadd0a7b5426d0f97f21071ea5b6cfdb109de7e",
+      "after_sha256": "ccf16e5178788d96803806adce947a523eec9c4ad834ca5570e2dcc463af95b9"
+    }
+  ],
+  "status": "Writer evidence repair; independent closure pending. Original writer freeze and SK-L02 bridge preserved."
+}

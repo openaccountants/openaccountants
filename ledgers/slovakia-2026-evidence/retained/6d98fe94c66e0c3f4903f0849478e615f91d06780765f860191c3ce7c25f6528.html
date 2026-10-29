@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk">
+<head>
+<title>Intrastat SK</title>
+<meta name="Description" content="Intrastat SK systém na strane finančnej správy" />
+<meta name="Keywords" content="Intrastat, Intrastat SK, Intrastat-SK, Intrastat-CS, finančná správa" />
+<meta http-equiv="Content-Language" content="sk" />
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=windows-1250" />
+<script type="text/javascript" src="./lang/sk/script/common.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="./css/styles.css" type="text/css" />
+</head>
+<body>
+<!-- Google tag (gtag.js) -->
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-Q8HT40WZWY"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q8HT40WZWY', { cookie_flags: 'max-age=7200;secure;SameSite=Strict' });
+</script>
+<div id="page">
+	<div id="header">
+		<div id="top"><a href="./index.php"><span id="homepage"></span></a><img src="images/graph4.jpg" alt="Intrastat-SK" title="Intrastat-SK" /></div>
+	</div>
+	<div id="pfsheader">
+  <div id="navigationSection">
+    <div id="navigationContainer">
+            <ul id="langNavigation">
+        <li class="selected" id="lang_sk"><a href="/index.php?page=vsinfo" title="Slovensky">SK</a></li>
+		<li id="lang_en"><a href="/en/index.php?page=vsinfo" title="English">EN</a></li>
+      </ul>
+      	  <ul id="mainNavigation">
+	  			<li><a href="./index.php?page=new" title="Novinky"><span>Novinky</span></a></li>
+		<li><a href="./index.php?page=ako" title="Ako to celé funguje"><span>Ako to celé funguje</span></a></li>
+			    <li><a href="./index.php?page=cs" title="Colný sadzobník"><span>Colný sadzobník</span></a></li>
+	  		    <li><a href="./index.php?page=helpdesk" title="Helpdesk"><span>Helpdesk</span></a></li>
+	    	    	  </ul>
+	</div>
+	<div id="navclear"></div>
+  </div>
+</div>	<div id="left">
+		<div class="shadowbox">
+			<div class="box loginbox">
+				<h1 class="loginh1">Prihlásenie</h1>
+				<div class="inside">
+					<form class="table table2" action="./index.php?page=vstup" method="post" enctype="multipart/form-data" name="loginform" id="loginform">
+		<fieldset>
+			<div class="required">				<label for="meno">Meno:</label>
+				<input id="meno" type="text" class="text inputText" size="20" maxlength="30" name="meno" tabindex="1" />
+			</div>
+			<div class="required">				<label for="heslo">Heslo:</label>
+				<input id="heslo" type="password" class="text inputText" size="20" maxlength="64" name="heslo" tabindex="2" />				
+			</div>
+			<div class="required">
+				<a href="./index.php?page=pass" title="Zabudli ste heslo ?">Zabudli ste heslo ?</a>
+			</div>
+		</fieldset>
+		<fieldset class="submit">
+			<div class="submit">
+				<input type="submit" value="Prihlásiť" name="B1" class="menu_login" tabindex="3" />
+			</div>
+	     			</fieldset>
+		<input name="topage" type="hidden" value="" />
+				<input type="hidden" name="login_submit" value="1" />
+		<input type="hidden" name="transid" value="6ae0ec43134063.23871367" />
+	</form>
+	<script type="text/javascript">
+	/* <![CDATA[ */
+		document.loginform.meno.focus();
+	/* ]]> */
+	</script>
+				</div>
+			</div>
+		</div>
+		<div class="shadowbox">
+	<div class="box">
+		<h1>Informácie</h1>
+		<div class="inside">
+<div id="ftitlesel">
+<form class="noborder" action="./index.php" method="get" name="rokform">
+<input type="hidden" name="page" value="vsinfo" />
+ <select name="zrok" onchange="document.rokform.submit()" size="1">
+<option value="2004">rok 2004</option>
+<option value="2005">rok 2005</option>
+<option value="2006">rok 2006</option>
+<option value="2007">rok 2007</option>
+<option value="2008">rok 2008</option>
+<option value="2009">rok 2009</option>
+<option value="2010">rok 2010</option>
+<option value="2011">rok 2011</option>
+<option value="2012">rok 2012</option>
+<option value="2013">rok 2013</option>
+<option value="2014">rok 2014</option>
+<option value="2015">rok 2015</option>
+<option value="2016">rok 2016</option>
+<option value="2017">rok 2017</option>
+<option value="2018">rok 2018</option>
+<option value="2019">rok 2019</option>
+<option value="2020">rok 2020</option>
+<option value="2021">rok 2021</option>
+<option value="2022">rok 2022</option>
+<option value="2023">rok 2023</option>
+<option value="2024">rok 2024</option>
+<option value="2025">rok 2025</option>
+<option selected="selected" value="2026">rok 2026</option>
+</select>
+</form>
+</div>
+		</div>
+	</div>
+</div>
+<div class="shadowbox">
+	<div class="box boxmenu">
+		<h1>Intrastat-SK</h1>
+		<div class="inside">
+			<h2>Informácie</h2><ul class="mainNavi"><li><a href="./index.php?page=uvod" title="Úvodné informácie">Úvodné informácie</a></li><li><a href="./index.php?page=eleg" title="Európska legislatíva">Európska legislatíva</a></li><li><a href="./index.php?page=sleg" title="Slovenská legislatíva">Slovenská legislatíva</a></li><li class="sel"><a href="./index.php?page=vsinfo" title="Všeobecné informácie">Všeobecné informácie</a></li><li><a href="./index.php?page=vypln" title="Vyplňovanie hlásení">Vyplňovanie hlásení</a></li><li><a href="./index.php?page=spect" title="Špecifické transakcie">Špecifické transakcie</a></li><li><a href="./index.php?page=osobp" title="Osobitné prípady">Osobitné prípady</a></li></ul><h2>Ostatné</h2><ul class="mainNavi"><li><a href="./index.php?page=home" title="Domovská stránka">Domovská stránka</a></li><li><a href="./index.php?page=new" title="Novinky">Novinky</a></li><li><a href="./index.php?page=ako" title="Ako to celé funguje">Ako to celé funguje</a></li><li><a href="./index.php?page=soft" title="Software Intrastat-CS">Software Intrastat-CS</a></li><li><a href="./index.php?page=xml" title="Formát XML správy">Formát XML správy</a></li><li><a href="./index.php?page=webservice" title="Webservis">Webservis</a></li><li><a href="./index.php?page=xmlmap" title="XLSM => XML">XLSM => XML</a></li><!--<li><a href="./index.php?page=cert" title="Certifikáty">Certifikáty</a></li>--><li><a href="./index.php?page=cs" title="Colný sadzobník">Colný sadzobník</a></li><li><a href="./index.php?page=brexit" title="BREXIT">BREXIT</a></li></ul><h2>Linky</h2><ul class="mainNavi"><li><a href="https://slovak.statistics.sk/wps/portal/ext/surveys/intrastat/" target="_blank" title="Štatistický úrad SR">Štatistický úrad SR</a></li><li><a href="https://intrastat.statistics.sk/Intrastat/" target="_blank" title="INTRASTAT-SK (ŠZO)">INTRASTAT-SK (ŠZO)</a></li><li><a href="http://www.financnasprava.sk" target="_blank" title="Finančná správa SR">Finančná správa SR</a></li></ul><h2>Pomoc</h2><ul class="mainNavi"><li><a href="https://slovak.statistics.sk/wps/portal/ext/surveys/intrastat/" target="_blank" title="FAQ">FAQ</a></li><li><a href="./index.php?page=helpdesk" title="Helpdesk">Helpdesk</a></li></ul>
+		</div>
+	</div>
+</div>
+<div class="shadowbox">
+	<div class="box">
+		<h1>Vyhľadávanie</h1>
+		<div class="inside">
+			<div id="googlesearch">
+				<form class="noborder" id="search-form" action="index.php" accept-charset="UTF-8">
+					<input type="hidden" name="cx" value="008919548553627521849:n62mn--jnji" />
+					<input class="text" name="q" type="text" size="17" />
+					<input type="hidden" name="page" value="find" />
+					<div id="googlesubmit">
+						<input class="submit" type="submit" name="sa" value="Hľadať" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="shadowbox">
+	<div class="box">
+		<h1>Validita</h1>
+		<div class="inside">
+			<div id="valid">
+			<a href="http://validator.w3.org/check?uri=http://intrastat.financnasprava.sk/index.php?page=vsinfo" rel="nofollow"><img src="./images/validxhtml1.png" alt="Valid XHTML 1.0 Transitional" class="validxhtml" /></a><br /><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://intrastat.financnasprava.sk/css/styles.css&amp;warning=0&amp;profile=css3" rel="nofollow"><img src="./images/validcss3.png" alt="Valid CSS!" class="validcss" /></a>
+			</div>
+		</div>
+	</div>
+</div>	</div>
+	<div id="content">
+		<div id="contentinside">
+		<div class="shadowbox">
+	<div class="box">
+		<h1>Všeobecné informácie</h1>
+		<div class="inside">
+<br />
+<div class="pagetext">
+<a name="c1"></a>
+		<h2>Čo je predmetom vykazovania na INTRASTAT-SK hláseniach</h2>
+<p class="pp">
+Súčasťou štatistiky obchodu s tovarom medzi členskými štátmi, teda aj predmetom vykazovania v rámci štatistických zisťovaní INTRASTAT-SK, sú informácie o tovare, ktorý sa fyzicky pohybuje (okrem špecifických tovarov alebo pohybov) medzi Slovenskom a členskými štátmi EÚ a medzi Slovenskom a územím Severného Írska, okrem tovaru v tranzite.
+</p>
+<p class="pp">
+Tovar v tranzite je tovar, ktorý na svojej ceste do iného členského štátu EÚ cez Slovensko len prechádza. Ak sa na Slovensku zastaví, potom len z dôvodov súvisiacich s prepravou napr. kvôli prekládke na iný dopravný prostriedok.
+</p>
+<p class="pp">
+Na hláseniach sa vykazuje aj tovar, ktorý prekročí vonkajšiu hranicu EÚ pri pohybe na Slovensko z iného členského štátu a zo Slovenska do iného členského štátu (<a href="#priklad_1" title="Príklad 1.a">Príklad 1.a</a>).
+</p>
+<p class="pp">
+Tovarom je všetok hnuteľný majetok vrátane elektrickej energie a zemného plynu. Inak povedané sú to fyzické predmety, ktoré možno vlastniť, a vlastníctvo ktorých je možné previesť na iný subjekt. Aj určité typy takzvaných produktov zachytávajúcich znalosti uložené na fyzických nosičoch (napr. CD, DVD a pod.), ktoré môžu fyzicky prekračovať hranice, sú považované tiež za tovar.
+</p>
+<p class="pp">
+Pod <strong>dovozom tovaru v rámci EÚ</strong> sa rozumie vstup tovaru na územie Slovenskej republiky, ktorý bol pôvodne vyvezený z iného členského štátu, pričom ide o:
+</p>
+<ul class="pp">
+<li>tovar Únie, okrem tovaru, ktorý je v tranzite medzi členskými štátmi;</li>
+<li>tovar, ktorý nie je tovarom Únie, pôvodne prepustený v členskom štáte vývozu do colného režimu aktívny zušľachťovací styk, ktorý v Slovenskej republike zotrvá v colnom režime aktívny zušľachťovací styk alebo je v Slovenskej republike prepustený do voľného obehu.</li>
+</ul>
+
+<p class="pp">
+<strong>Vývoz tovaru v rámci EÚ</strong> je definovaný ako výstup tovaru z územia Slovenskej republiky na miesto určenia v inom členskom štáte, pričom ide o:
+</p>
+<ul class="pp">
+<li>tovar Únie, okrem tovaru, ktorý je v tranzite medzi členskými štátmi;</li>
+<li>tovar, ktorý nie je tovarom Únie, prepustený v členskom štáte vývozu alebo v Slovenskej republike do colného režimu aktívny zušľachťovací styk.</li>
+</ul>
+<p class="pp">
+Na hláseniach INTRASTAT-SK sa vykazuje <strong>tovar Únie</strong>, ktorý vstupuje na alebo opúšťa územie Slovenska. Tovarom Únie je:
+</p>
+<ul class="pp">
+<li>a) tovar úplne získaný alebo vyrobený na colnom území EÚ (<a href="#priklad_1" title="Príklad 1.b">Príklad 1.b</a>),</li>
+<li>b) tovar z krajín a území, ktoré nie sú súčasťou colného územia EÚ, prepustený do voľného obehu v niektorom členom štáte (<a href="#priklad_1" title="Príklad 1.c">Príklad 1.c</a>),</li>
+<li>c) tovar získaný alebo vyrobený z tovarov uvedených v bode a) a/alebo b).</li>
+</ul>
+<p class="pp">
+Vo všeobecnosti možno konštatovať, že akýkoľvek tovar, ktorý je v pohybe medzi členskými štátmi, a ktorý nie je pod colnou kontrolou, je tovarom Únie.
+</p>
+<p class="pp">
+Aj <strong>tovar, ktorý nie je tovarom Únie</strong>, a je v pohybe medzi Slovenskom a inými členským štátmi EÚ, sa uvádza na hláseniach INTRASTAT-SK, ale len za podmienky, že sa nachádza v colnom režime <strong>aktívny zušľachťovací styk</strong>. Ide o aktívny zušľachťovací styk zvyčajne vykonávaný v rámci Jednotného povolenia, keď sa spracovateľské operácie vykonávajú vo viacerých členských štátoch EÚ. Ak sa spracovateľská operácia vykonáva aj na Slovensku, príslušná operácia sa vykáže na hlásení INTRASTAT-SK na toku, na ktorom nebolo predložené colné vyhlásenie (<a href="#priklad_1" title="Príklad 1.f">Príklad 1.f</a>).
+</p>
+<a name="priklad_1"></a>
+<p class="ppb">
+Príklad 1.
+</p>
+<ul class="priklad">
+<li>a. Slovenská spoločnosť dodala tovar do Francúzska, pričom tovar je prepravovaný cez územie Švajčiarska ako nečlenskej krajiny. Takýto tovar bude vykázaný na Hlásení o vývoze tovaru v rámci EÚ aj napriek tomu, že tovar sa dostal mimo colného územia EÚ.</li>
+<li>b. Tovar vyrobený z komponentov a materiálov získaných alebo vyprodukovaných na Slovensku a dodaný do ktoréhokoľvek členského štátu sa vykazuje na hlásení INTRASTAT-SK. To isté platí aj o tovare vyrobenom z komponentov a materiálov získaných alebo vyprodukovaných v ktoromkoľvek členskom štáte a dodanom zákazníkovi na Slovensku.</li>
+<li>c. Slovenská spoločnosť nakúpi komponenty od nórskej firmy. Tieto komponenty budú dodané z Nórska, ktoré je nečlenskou krajinou, a budú prepravované cez Nemecko, kde budú prepustené do voľného obehu. Tieto komponenty budú následne dodané slovenskému odberateľovi, ktorý v Hlásení o dovoze tovaru v rámci EÚ uvedie Nemecko ako členský štát zaslania a Nórsko ako krajinu pôvodu.</li>
+<li>d. Slovenská spoločnosť predá tovar zákazníkovi do Spojených štátov. Odošle tovar do Hamburgu, kde bude naložený na loď. V Nemecku bude predložené colné vyhlásenie, ktorým bude tovar prepustený do colného režimu vývoz. Slovenská spoločnosť predloží Hlásenie o vývoze tovaru v rámci EÚ, pričom uvedie Nemecko ako členský štát určenia.</li>
+<li>e. Slovenská spoločnosť nakúpi materiál na Ukrajine. Dovezie ho na Slovensko, kde ho prepustí do colného režimu aktívny zušľachťovací styk. Po vykonaní časti spracovateľských operácií na Slovensku, odošle tento materiál na dokončenie spracovania v Česku. V Česku budú výsledné zušľachtené produkty prepustené do voľného obehu. Slovenská spoločnosť predloží Hlásenie o vývoze tovaru rámci EÚ, na ktorom uvedie Česko ako členský štát určenia.</li>
+<li>f. Česká spoločnosť nakúpi materiál v Nórsku. Dovezie ho do Česka, kde ho prepustí do colného režimu aktívny zušľachťovací styk. Po vykonaní časti spracovateľských operácií v Česku, odošle česká spoločnosť tento materiál na vykonanie určitých spracovateľských operácií na Slovensku. Po ich vykonaní sa materiál vráti späť do Česka. Slovenská spoločnosť predloží Hlásenie o dovoze tovaru v rámci EÚ, na ktorom uvedie Česko ako členský štát zaslania. Po spracovaní predloží Hlásenie o vývoze tovaru v rámci EÚ, na ktorom uvedie Česko ako členský štát určenia.</li>
+</ul>
+<p class="pp">
+Transakcie, ktoré sa vykazujú na hláseniach INTRASTAT-SK, nemusia mať výhradne obchodný charakter; ide aj o iné transakcie ako len nákup a predaj tovaru. Bez toho, aby boli dotknuté presne špecifikované prípady (viac v časti <a href="#c2" title="Čo nie je predmetom vykazovania na INTRASTAT-SK hláseniach">Čo nie je predmetom vykazovania na INTRASTAT-SK hláseniach</a>), tovar je predmetom vykazovania na hláseniach INTRASTAT-SK bez ohľadu na to, či je operácia spojená s peňažnou transakciou alebo nie. Môže to byť tovar:
+</p>
+<ul class="pp">
+<li>dovezený alebo vyvezený na spracovanie a po spracovaní (<a href="./index.php?page=osobp#e2" title="Spracovanie na základe zmluvy">Spracovanie na základe zmluvy</a>),</li>
+<li>dovezený alebo vyvezený v rámci finančného lízingu (<a href="./index.php?page=osobp#e6" title="Cezhraničný lízing a prenájom tovaru">Cezhraničný lízing a prenájom tovaru</a>),</li>
+<li>dovezený alebo vyvezený zdarma (okrem reklamných materiálov a obchodných vzoriek, ktoré nie sú predmetom obchodnej operácie),</li>
+<li>dodávaný v rámci stavebných a konštrukčných prác,</li>
+<li>dodávaný s inštaláciou alebo montážou (<a href="./index.php?page=osobp#e5" title="Dodanie tovaru s inštaláciou alebo montážou">Dodanie tovaru s inštaláciou alebo montážou</a>),</li>
+<li>dodávaný do alebo zo skladov aj bez zmeny vlastníctva (centrálnych, distribučných, konsignačných, „Call-off stock“ skladov) (<a href="./index.php?page=osobp#e4" title="Komisionárske a konsignačné operácie a režim call-off stock">Komisionárske a konsignačné operácie a režim call-off stock</a>),</li>
+<li>určený na predaj na diaľku (<a href="./index.php?page=osobp#e11" title="Predaj tovaru na diaľku">Predaj tovaru na diaľku</a>),</li>
+<li>premiestňovaný ako obchodný majetok.</li>
+</ul>
+<a name="c2"></a>
+		<h2>Čo nie je predmetom vykazovania na INTRASTAT-SK hláseniach</h2>
+<p class="pp">
+Tovar v <strong>tranzite</strong>, teda tovar, ktorý je cez Slovensko iba prepravovaný, alebo sa na území Slovenska zdrží len z prepravných dôvodov, je vo všeobecnosti vyňatý zo štatistiky zahraničného obchodu, a tým aj z vykazovania na hláseniach INTRASTAT-SK.
+</p>
+<p class="pp">
+Na INTRASTAT-SK hláseniach sa nevykazuje tovar, ku ktorému existuje colné vyhlásenie, aj keď je tovar v pohybe medzi členskými štátmi.
+</p>
+<p class="ppb">
+Príklad 2.
+</p>
+<p class="priklad">
+Slovenská spoločnosť dovezie komponenty a materiál z Južnej Kórey za účelom jeho ďalšieho spracovania. Tovar je na Slovensku prepustený do režimu aktívny zušľachťovací styk. Keďže slovenská spoločnosť nemá všetky potrebné technologické zariadenia, aby mohla spracovanie dokončiť, dohodne sa s českým partnerom o vykonaní spracovateľských operácií. Tovar bude odoslaný do Česka ako členského štátu, avšak stále bude v režime aktívny zušľachťovací styk. Bude vykázaný na Hlásení o vývoze tovaru v rámci EÚ. Po skončení spracovania v Česku sa hotové produkty vrátia späť na Slovensko, pričom slovenská spoločnosť predloží dovozné colné vyhlásenie, ktorým prepustí tieto produkty do voľného obehu. Na colnom vyhlásení uvedie v Ú. P. 1/10 ako predchádzajúci colný režim kód 54 - Aktívny zušľachťovací styk v inom členskom štáte. V takomto prípade slovenská spoločnosť na dovoz tovaru z Česka nepredkladá Hlásenie o dovoze tovaru v rámci EÚ.
+</p>
+<p class="pp">
+Na INTRASTAT-SK hláseniach nie je vykazovaný ani tovar dovážaný zo štatistických území alebo vyvážaný do štatistických území členských štátov, na ktorých sa neuplatňuje systém DPH v zmysle smernice Rady 2006/112/ES o spoločnom systéme DPH (ďalej len „smernica o DPH“). Zdrojom údajov pre štatistiku zahraničného obchodu sú colné vyhlásenia, ktoré sú predkladané pre tieto dovozy a vývozy. Tento postup sa týka nasledujúcich území:
+</p>
+<ul class="pp">
+<li>francúzske zámorské departementy Réunion, Guadeloupe, Martinik, Francúzska Guyana, Mayotte a severná francúzska časť ostrova Svätý Martin (Francúzsko);</li>
+<li>Kanárske ostrovy (Španielsko);</li>
+<li>Hora Athos (Grécko);</li>
+<li>Campione d’Italia, talianske vody jazera Lugano (Taliansko);</li>
+<li>ostrovy Alandy (Fínsko).</li>
+</ul>
+<p class="pp">
+Rovnaký postup je aj pri dovozoch z území, resp. vývozoch na územia, ktoré patria (sú pridružené) členským štátom, avšak nie sú súčasťou colných území týchto štátov. Napríklad:
+</p>
+<ul class="pp">
+<li>Francúzska Polynézia, Nová Kaledónia atď. (Francúzsko);</li>
+<li>ostrov Helgoland, územie Büsingen (Nemecko);</li>
+<li>Ceuta, Melilla (Španielsko);</li>
+<li>Faerské ostrovy, Grónsko (Dánsko);</li>
+<li>Holandské Antily, Aruba (Holandsko);</li>
+</ul>
+<p class="pp">
+Osobitné postavenie má <strong>Monacké kniežatstvo</strong>, ktoré nie je súčasťou územia EÚ, ale je colným územím EÚ a uplatňuje sa na ňom systém DPH podľa smernice o DPH. Z toho dôvodu aj obchody s Monakom <strong>sú vykazované</strong> na hláseniach INTRASTAT-SK ako obchod s Francúzskom.
+</p>
+<p class="pp">
+<strong>San Marino</strong> nie je súčasťou EÚ, ani jej colného územia, takže sa na tomto území neuplatňuje spoločný systém DPH podľa smernice o DPH. Obchody podliehajú colnému konaniu, a teda sa nevykazujú na hláseniach INTRASTAT-SK.
+</p>
+<p class="ppb">
+Príklad 3.
+</p>
+<p class="priklad">
+Slovenská spoločnosť nakúpi tovar na Martiniku, ktorý je súčasťou štatistického územia Francúzska, ale nie je súčasťou územia EÚ vzhľadom na uplatňovanie DPH. Tento tovar musí byť vybavený colným vyhlásením, preto ho slovenská spoločnosť nevykazuje na Hlásení o dovoze tovaru v rámci EÚ.
+</p>
+		<h3>Tovary a pohyby vyňaté zo štatistiky zahraničného obchodu s tovarom</h3>
+<p class="pp">
+Vykonávacie nariadenie Komisie (EÚ) 2020/1197 v Dodatku k prílohe V špecifikuje Zoznam tovarov a pohybov vyňatých z európskej štatistiky medzinárodného obchodu s tovarom. Tým, že sa tieto tovary do štatistiky nezhŕňajú, nie je nutné, aby sa vykazovali na INTRASTAT-SK hláseniach.
+</p>
+<p class="pp">
+Za <strong>menové zlato</strong> (tiež monetárne zlato - KN kód 7108 20 00) vyňaté z vykazovania sa považuje zlato vo vlastníctve štátu používané ako štátne rezervné aktíva. Menové zlato nie je rovnaký pojem ako investičné zlato v terminológii DPH. Všetky ostatné transakcie, vrátane transakcií s investičným zlatom (napr. medzibankové obchody so zlatom, či už vo vlastnom mene alebo v mene svojich klientov) sú predmetom vykazovania na hláseniach INTRASTAT-SK, ak je takéto zlato v pohybe medzi Slovenskom a iným členským štátom.
+</p>
+<p class="pp">
+Vykazovaniu na INTRASTAT-SK hláseniach nepodliehajú <strong>platobné prostriedky, ktoré sú zákonnými platidlami</strong>, a cenné papiere vrátane platobných prostriedkov za služby ako napríklad poštovné, dane, používateľské poplatky. Ide o bankovky a mince v obehu, ktoré, keď prekračujú hranicu Slovenska, budú použité ako platidlo. To platí aj pre ceniny v obehu (napr. poštové známky, diaľničné nálepky atď.), ktoré sú určené na distribúciu ako doklady o platbe za službu.
+</p>
+<p class="pp">
+Ak ide o zásielku platidiel, ktoré nie sú v obehu, alebo o platidlá, ktoré síce v obehu sú, ale sú zároveň zberateľskými predmetmi (napr. súbor euromincí vydávaný v niektorom členskom štáte), sú tieto platidlá predmetom vykazovania na INTRASTAT-SK hláseniach. Aj ceniny, ak sú predmetom zberateľstva, alebo sú použité na podobný účel, sa vykazujú na INTRASTAT-SK hláseniach.
+</p>
+<p class="pp">
+Z vykazovania na INTRASTAT-SK hláseniach je vyňatý tovar určený na <strong>dočasné použitie</strong> a tovar po dočasnom použití (napr. prenájom, pôžička, prevádzkový lízing), za predpokladu, že sú splnené všetky tieto podmienky:
+</p>
+<ul class="pp">
+<li>žiadne spracovanie nie je plánované, ani sa neuskutočnilo,</li>
+<li>predpokladané trvanie dočasného použitia nie je, ani nemá byť dlhšie ako 24 mesiacov,</li>
+<li>vývoz/dovoz tovaru v rámci EÚ nebol deklarovaný ako dodanie/nadobudnutie tovaru v rámci EÚ na účely DPH.</li>
+</ul>
+<p class="pp">
+Aby bol tovar vyňatý, musia byť splnené všetky tri uvedené podmienky súčasne. Ak niektorá z podmienok prestane platiť, tovar musí byť zahrnutý do INTRASTAT-SK hlásenia v mesiaci, v ktorom niektorá z podmienok prestala platiť. Pre podrobnosti týkajúce sa definície spracovania pozri odseky <a href="./index.php?page=osobp#ods_240" title="odsek 240">240</a> až <a href="./index.php?page=osobp#ods_242" title="odsek 242">242</a>.
+</p>
+<p class="ppb">
+Príklad 4.
+</p>
+<ul class="priklad">
+<li>a. Vrtná súprava je v marci 2023 prepravená zo Slovenska do Poľska na základe zmluvy, ktorá má charakter operatívneho lízingu s trvaním 24 mesiacov. V priebehu tohto obdobia sa obchodný partneri rozhodli zmluvu zmeniť. Vrtná súprava bola v dvanástom mesiaci lízingu predaná partnerovi v Poľsku. Súprava bude vykázaná na Hlásení o vývoze tovaru v rámci EÚ v mesiaci, v ktorom bol predaj pre účely DPH vykázaný ako dodanie tovaru z tuzemska do iného členského štátu, t. j. v marci 2024, kedy došlo k predaju.</li>
+<li>b. Česká stavebná spoločnosť zapožičala slovenskému partnerovi žeriav, ktorý mu dodala v júni 2022. Zmluva o výpožičke, ktorá bola pôvodne uzatvorená na 24 mesiacov (do 30.6.2024), bola predĺžená o ďalších 5 mesiacov. Žeriav bude zahrnutý do Hlásenia o dovoze tovaru v rámci EÚ hneď v mesiaci nasledujúcom po 24. mesiaci, kedy by skončila pôvodná doba výpožičky, t. j. v júli 2024.</li>
+</ul>
+<p class="pp">
+Príkladom tovarov, ktoré sú predmetom dočasných transakcií sú predmety operačného lízingu, tovar na výstavy, veľtrhy a podobné podujatia, prístrojové vybavenie/zariadenie na výkon povolania, kontajnery, palety a iné druhy vratných obalov. Ak však obalový materiál síce cirkuluje medzi dodávateľom a odberateľom, ale jeho pohyb je sprevádzaný faktúrou a platbou, musí byť zahrnutý do hlásení INTRASTAT-SK.
+</p>
+<p class="pp">
+Predmetom dočasných transakcií vyňatých z vykazovania môžu byť tiež tovary na kultúrne, športové, vzdelávacie a vedecké účely, ktoré sú v pohybe medzi Slovenskom a členskými štátmi.
+</p>
+<p class="pp">
+Na INTRASTAT-SK hláseniach sa neuvádza tovar, ktorý je v pohybe medzi:
+</p>
+<ul class="pp">
+<li>Slovenskom a jeho územnými enklávami v inom členskom štáte a</li>
+<li>Slovenskom a územnými enklávami iných členských štátov alebo medzinárodných organizácií.</li>
+</ul>
+<p class="pp">
+Územné enklávy zahŕňajú veľvyslanectvá a národné ozbrojené sily umiestnené mimo územia materskej krajiny.
+</p>
+<p class="ppb">
+Príklad 5.
+</p>
+<ul class="priklad">
+<li>a. Pri príležitosti štátneho sviatku organizuje slovenské veľvyslanectvo vo Francúzsku recepciu, na ktorú víno dodá slovenský producent priamo zo Slovenska. Slovenský producent toto víno nevykáže na Hlásení o vývoze tovaru v rámci EÚ.</li>
+<li>b. Rakúske veľvyslanectvo na Slovensku nakúpi od slovenského dodávateľa kancelársky nábytok. Ten ho dodá do priestorov veľvyslanectva v Bratislave priamo zo svojho skladu v Košiciach. Slovenský dodávateľ nevykáže tento nábytok na Hlásení o vývoze tovaru v rámci EÚ.</li>
+</ul>
+<p class="pp">
+Tovar používaný ako <strong>nosič informácií upravených na mieru</strong> vrátane softvéru nie je predmetom vykazovania na INTRASTAT-SK hláseniach. Informácie a softvér, ktoré sú vyrobené alebo upravené na objednávku konkrétneho zákazníka sa považujú za službu. Z vykazovania je vyňatý aj softvér, ktorý vznikol úpravou štandardne predávaného balíka podľa požiadaviek zákazníka.
+</p>
+<p class="pp">
+Predmetom transakcií, ktoré sa na hláseniach INTRASTAT-SK nevykazujú, môžu byť tiež projekty, rôzne autorské audio alebo videonahrávky, rukopisy kníh, ale tiež média obsahujúce podnikové účtovníctvo a pod.
+</p>
+<p class="pp">
+Sériovo vyrábané nahrávky, projekty, softvér a pod. (nevytvorené alebo neupravené na objednávku zákazníka), ktoré sú predmetom obchodnej transakcie alebo dodávané zdarma sú predmetom vykazovania na INTRASTAT-SK hláseniach, keďže sú považované za tovar (viac v časti Softvér).
+</p>
+<p class="pp">
+Z vykazovania je vyňatý akýkoľvek softvér, ktorý je získaný stiahnutím z internetu, keďže stiahnutie softvéru nie je sprevádzané fyzickým pohybom jeho nosiča. Vyňatie sa týka tak užívateľsky upraveného, ako aj sériovo vyrábaného softvéru. Vyňatie sa vzťahuje aj na licencie a ich predĺženia, ktoré sa vzťahujú na takto obchodovaný softvér.
+</p>
+<p class="pp">
+Na hláseniach INTRASTAT-SK sa nevykazuje bezplatne dodaný tovar, ktorý sám osebe nie je predmetom obchodnej transakcie, za predpokladu, že jediným účelom dovozu/vývozu v rámci EÚ je príprava alebo podpora plánovanej následnej obchodnej transakcie prostredníctvom demonštrácie tovaru alebo služby, ako napríklad:
+</p>
+<ul class="pp">
+<li><strong>reklamný materiál;</strong></li>
+<li><strong>obchodné vzorky</strong></li>
+</ul>
+<p class="pp">
+Reklamný materiál sú predmety ako napr. brožúry, letáky, odznaky, perá, a pod., ktorých účelom je príprava predaja (prezentácia vlastností, účelu použitia alebo konkurenčných výhod a pod.) alebo podpora predaja. Obchodné vzorky sa používajú na ilustráciu funkcie tovaru alebo na umožnenie potenciálnym zákazníkom vyskúšať si tovar pred zakúpením. Predmety nie sú obmedzené cenou jedného kusa, ani požiadavkou na znefunkčnenie alebo požiadavkou na firemné označenie.
+</p>
+<p class="pp">
+Ale ak boli reklamné predmety alebo obchodné vzorky v inom členskom štáte zakúpené alebo vyrobené na objednávku slovenského subjektu, sú predmetom obchodnej transakcie, a preto musia byť vykázané na Hlásení o dovoze tovaru v rámci EÚ.
+</p>
+<a name="ods_57"></a>
+<p class="pp">
+Tovar, ktorý je v pohybe medzi Slovenskom a iným členským štátom na účely <strong>opravy alebo údržby</strong>, a jeho následný dovoz/vývoz po oprave či údržbe, náhradné diely použité v rámci opravy alebo údržby a vymenené nefunkčné diely nie sú premetom vykazovania na hláseniach INTRASTAT-SK.
+</p>
+<p class="pp">
+Oprava predstavuje činnosť, ktorá je spojená s obnovením pôvodnej funkcie alebo stavu tovaru. Cieľom údržby je udržať funkčný tovar v prevádzkyschopnom stave. Oprava alebo údržba môže zahrňovať určitú prestavbu alebo zlepšenia, ale nijako nemení charakter tovaru, ktorý je predmetom opravy alebo údržby.
+</p>
+<p class="pp">
+Opravou môže byť jednoduchá výmena častí, nabíjanie batérií, oprava poškodenia tovaru vzniknutého počas prepravy, prelakovanie, premaľovanie, atď.
+</p>
+<p class="pp">
+Podobne aj technické činnosti, ktoré sa vykonávajú na základe právnych požiadaviek (napr. kontroly, povinné pravidelné výmeny), testovanie, nastavenie, regulácia alebo certifikácia tovaru (napr. lietadiel, strojov, prístrojov, vozidiel) sú považované za údržbu a preto tovar, na ktorom sa uvedené činnosti vykonávajú, nie je predmetom vykazovania na INTRASTAT-SK hláseniach.
+</p>
+<p class="pp">
+Pridružené náhradné diely, ktoré sú integrované do opravenej komodity ako súčasť opravy (napr. nové brzdy v aute) v členskom štáte, v ktorom sa oprava vykonáva, sú vylúčené z vykazovania. Platí to aj v prípade, ak sú vymenené náhradné diely fakturované osobitne.
+</p>
+<a name="ods_62"></a>
+<p class="pp">
+Tovar, ktorý je dovezený na Slovensko z iného členského štátu alebo vyvezený zo Slovenska do iného členského štátu, aby sa použil ako náhradný diel, sa vykazuje štandardným spôsobom.
+</p>
+<p class="ppb">
+Príklad 6.
+</p>
+<ul class="priklad">
+<li>a. Slovenská spoločnosť pošle pokazený počítač na opravu do Rakúska. Rakúska spoločnosť nahradí pevný disk a pošle opravený počítač späť spolu s poškodeným pevným diskom. Slovenská spoločnosť nevykazuje tento počítač na Hlásení o vývoze tovaru v rámci EÚ, ani opravený počítač, nový pevný disk (pridružený náhradný diel) a ani chybný pevný disk (vymenené chybné časti) na Hlásení o dovoze tovaru v rámci EÚ.</li>
+<li>b. Opravovňa počítačov na Slovensku nakupuje náhradné diely - pevné disky v Maďarsku, odkadiaľ sú dodané na Slovensko. Opravovňa vykáže tieto disky na Hlásení o dovoze tovaru v rámci EÚ, pričom Maďarsko uvedie ako členský štát zaslania.</li>
+</ul>
+<p class="pp">
+Z vykazovania v štatistických zisťovaniach INTRASTAT-SK sú vyňaté <strong>dopravné prostriedky</strong>, ktoré sú <strong>v pohybe pri výkone svojej činnosti</strong>. Za dopravné prostriedky pri výkone činnosti sú považované všetky druhy dopravných prostriedkov, t. j. autá, cestné súpravy, lode, remorkéry vrátane pripojených plavidiel, lietadlá, železničné vagóny/vlakové súpravy a pod.
+</p>
+<p class="ppb">
+Príklad 7.
+</p>
+<p class="priklad">
+Francúzsky ťahač s návesom prepravujú náklad z Francúzska na Slovensko slovenskému odberateľovi. Naložený tovar bude zahrnutý do Hlásenia o dovoze tovaru v rámci EÚ. Samotný ťahač ani náves, keďže nie sú predmetom žiadnej transakcie, ani zmeny vlastníctva, nebudú vykázané na Hlásení o dovoze tovaru v rámci EÚ.
+</p>
+<p class="pp">
+Aj neaktívne dopravné prostriedky používané na uľahčenie prepravy komodít (napr. kontajnery, palety, klzné plošiny a pod.) sú vylúčené z vykazovania na hláseniach INTRASTAT-SK , ak samy o sebe nie sú predmetom obchodnej transakcie. V tomto prípade ide v podstate o dočasné použitie dopravných prostriedkov. Je potrebné uplatniť všetky podmienky definujúce dočasné použitie pre ich vyňatie z vykazovania.
+</p>
+<p class="pp">
+Kamiónová súprava prepravujúca tovar zo Slovenska do iného členského štátu môže byť po jeho vyložení v tomto členskom štáte predmetom obchodnej transakcie (napr. predaj). Táto obchodná transakcia bude zahrnutá do Hlásenia o vývoze tovaru v rámci EÚ v mesiaci, v ktorom prestala platiť jedna z podmienok oslobodenia od vykazovania z dôvodu dočasného použitia (prechod vlastníctva je dodaním a nadobudnutím z pohľadu DPH).
+</p>
+		<h2>Spravodajská povinnosť v štatistických zisťovaniach INTRASTAT-SK</h2>
+		<h3>Spravodajská jednotka</h3>
+<p class="pp">
+Spravodajskou jednotkou pre štatistické zisťovania INTRASTAT-SK je každá zdaniteľná osoba a právnická osoba, ktorá nie je zdaniteľnou osobou, registrované pre DPH v Slovenskej republike, teda právnické, fyzické osoby, skupiny registrované pre DPH v Slovenskej republike, ako aj zástupcovia pre DPH (podľa § 69aa platného zákona o dani z pridanej hodnoty), ktorí spĺňajú súčasne nasledovné podmienky:
+</p>
+<ul class="pp">
+<li>1/ vykazujú nadobudnutie tovaru v tuzemsku alebo dodanie tovaru z tuzemska podľa platného zákona o DPH, alebo ak transakcia nie je nadobudnutím tovaru v tuzemsku alebo dodaním tovaru z tuzemska, tak:
+<ul class="pp">
+<li>uzavreli zmluvu, na základe ktorej sa tovar dováža na Slovensko alebo vyváža zo Slovenska,</li>
+<li>prepravia tovar na Slovensko/zo Slovenska alebo zabezpečia jeho dovoz na Slovensko/vývoz zo Slovenska,</li>
+<li>majú v držbe tovar, ktorý je predmetom dovozu na Slovensko/vývozu zo Slovenska,</li>
+</ul>
+</li>
+<li>2/ v období od 1. októbra roka, ktorý dva roky predchádza <strong>sledovanému roku</strong>, do 30. septembra roka, ktorý bezprostredne predchádza sledovanému roku, alebo ktorí od začiatku sledovaného roka doviezli alebo vyviezli v rámci Európskej únie tovar v súhrnnej hodnote vyššej ako prah oslobodenia.</li>
+</ul>
+<p class="pp">
+<strong>Prah oslobodenia na rok 2026</strong> (sledovaný rok) je rovnaký pre dovoz aj vývoz tovaru v rámci EÚ a je stanovený vo výške <strong>1 000 000 eur</strong>. Avšak pre subjekty, ktoré pôsobia <strong>v odvetviach pôdohospodárstva a potravinárstva</strong>, boli zachované prahy oslobodenia <strong>200 000 eur</strong> pre dovoz tovaru v rámci EÚ a <strong>400 000 eur</strong> pre vývoz tovaru v rámci EÚ. Nižšie prahy oslobodenia sa vzťahujú na subjekty, ktoré sú vedené v registri organizácií Štatistického úradu Slovenskej republiky s hlavnou činnosťou podľa SK NACE:
+</p>
+<ul class="pp">
+<li>01 Pestovanie plodín a chov zvierat, poľovníctvo a služby s tým súvisiace</li>
+<li>02 Lesníctvo a ťažba dreva</li>
+<li>03 Rybolov a akvakultúra</li>
+<li>10 Výroba potravín</li>
+<li>11 Výroba nápojov</li>
+<li>12 Výroba tabakových výrobkov</li>
+</ul>
+<p class="pp">
+Na určenie spravodajskej povinnosti pre rok 2026 sa berie do úvahy hodnota tovaru dovezeného a/alebo vyvezeného v rámci EÚ za obdobie 1. október 2024 až 30. september 2025. Spravodajská povinnosť môže vzniknúť aj počas roka 2026, a to na základe kumulatívnej hodnoty tovaru dovezeného a/alebo vyvezeného v rámci EÚ od začiatku roka 2026.
+</p>
+<p class="pp">
+Do hodnoty tovaru, na základe ktorej sa určuje spravodajská povinnosť, sa započítavajú všetky dovozy a/alebo vývozy tovaru v rámci EÚ, ktoré sú predmetom vykazovania v rámci štatistických zisťovaní INTRASTAT-SK (pozri <a href="#c1" title="Čo je predmetom vykazovania na INTRASTAT-SK hláseniach">Čo je predmetom vykazovania na INTRASTAT-SK hláseniach</a>). Teda aj tie transakcie, ktoré nie sú nadobudnutím tovaru v tuzemsku a dodaním tovaru z tuzemska podľa platného zákona o DPH, sú zahrnuté do hodnoty tovaru pre určenie spravodajskej povinnosti.
+</p>
+<p class="pp">
+Spravodajské jednotky, ktoré prekročili prah oslobodenia  majú povinnosť predkladať hlásenie INTRASTAT-SK. Prekročenie prahu oslobodenia sa sleduje zvlášť pre dovoz a zvlášť pre vývoz tovaru v rámci EÚ.
+</p>
+<p class="pp">
+Spravodajská povinnosť môže vzniknúť aj verejnoprávnym inštitúciám, štátnym orgánom, orgánom samosprávy, ak im vznikla povinnosť registrovať sa pre DPH z titulu nadobudnutia tovaru v tuzemsku z iného členského štátu.
+</p>
+<p class="pp">
+Slovenské právnické a fyzické osoby (vrátane súkromných osôb), ktoré nemajú povinnosť predkladať daňové priznania k DPH, sú oslobodené od povinnosti poskytovať informácie v rámci štatistických zisťovaní INTRASTAT-SK.
+</p>
+		<h3>Kedy vzniká spravodajská povinnosť</h3>
+<a name="ods_73"></a>
+<p class="pp">Keď subjekt nedoviezol alebo nevyviezol v rámci EÚ tovar v súhrnnej hodnote vyššej ako prahy oslobodenia, ale od začiatku sledovaného roka prekročil stanovené prahy pre rok 2026, predkladá hlásenia INTRASTAT-SK od mesiaca, v ktorom prekročil tieto hodnoty, vrátane daného mesiaca.
+</p>
+<a name="ods_74"></a>
+<p class="pp">
+Keď spravodajská jednotka za obdobie 1. október 2024 až 30. september 2025 doviezla alebo vyviezla v rámci EÚ tovar v súhrnnej hodnote vyššej ako prahy oslobodenia, spravodajská jednotka má povinnosť predkladať hlásenia INTRASTAT-SK aj v roku 2026, hneď za január 2026.
+</p>
+<a name="ods_75"></a>
+<p class="pp">
+Na určenie spravodajskej povinnosti sa do súhrnnej hodnoty tovaru dovezeného a vyvezeného v rámci EÚ za dané obdobie započítavajú všetky transakcie, vrátane bezodplatných dodaní, spracovania na základe zmluvy, vrátenia tovaru atď.
+</p>
+<p class="pp">
+Subjekt si sleduje vznik spravodajskej povinnosti. Ak zistí, že prekročil prahy oslobodenia na príslušnom toku, oznámi túto skutočnosť Štatistickému úradu SR najneskôr do desiatich dní odo dňa jej vzniku vyplnením a zaslaním tlačiva „REGISTRAČNÝ DOTAZNÍK“. Tlačivo nájdete na webovej stránke <a href="https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/" title="ŠÚSR Intrastat-SK">https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/</a>. Registračný dotazník môžete tiež priamo vyplniť a zaslať prostredníctvom elektronického formulára cez Ústredný portál Finančnej správy slovensko.sk.
+</p>
+<p class="pp">
+Na základe registračného dotazníka oznámia pracovníci Štatistického úradu SR spravodajskej jednotke prihlasovacie údaje na portál finančnej správy pre štatistické zisťovania INTRASTAT-SK: <a href="https://intrastat.financnasprava.sk" title="FRSR Intrastat-SK">https://intrastat.financnasprava.sk</a>, cez ktorý sa posielajú hlásenia v elektronickej forme.
+</p>
+<p class="pp">
+Ak má spravodajská jednotka aktivovanú elektronickú schránku, sú jej prihlasovacie údaje (meno a heslo) doručené do tejto elektronickej schránky. V opačnom prípade jej budú prihlasovacie údaje doručené doporučeným listom, alebo splnomocnená osoba si ich môže prevziať osobne na Štatistickom úrade SR po predložení plnomocenstva, ktorého vzor nájde na webovej stránke <a href="https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/" title="ŠÚSR Intrastat-SK">https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/</a>.
+</p>
+<p class="pp">
+Ak nastali zmeny v údajoch uvedených pri registrácii pre štatistické zisťovania INTRASTAT-SK (napr. zmena názvu, sídla, zástupcu, organizačných jednotiek, kontaktných údajov a pod.), spravodajská jednotka o nich informuje Štatistický úrad SR vyplnením príslušného tlačiva. Vyplnené tlačivo môže zaslať na emailovú adresu <a href="mailto:intrastat-sk@statistics.sk" title="email ŠÚSR Intrastat-SK">intrastat-sk@statistics.sk</a>.
+</p>
+<p class="pp">
+Štatistický úrad SR vyhodnocuje dostupné údaje z INTRASTAT-SK hlásení a daňových priznaní DPH a následne upozorňuje spravodajské jednotky na nesplnenie si oznamovacej povinnosti. Ak Štatistický úrad SR zistí, že spravodajská povinnosť vznikla nezaregistrovanej spravodajskej jednotke, táto povinnosť sa jej určí od mesiaca, v ktorom prekročila prah oslobodenia (štvrťročným platiteľom DPH je základ dane z daňových priznaní DPH rozpočítaný rovnomerne na jednotlivé mesiace štvrťroka).
+</p>
+<p class="pp">
+Ak je spravodajská povinnosť určená na základe prijatej alebo poskytnutej platby vykázanej v daňovom priznaní k DPH bez fyzického dovozu/vývozu tovaru v rámci EÚ (zálohová platba), spravodajská jednotka informuje o tejto skutočnosti Štatistický úrad SR. Po vzájomnej dohode určí Štatistický úrad SR sledované obdobie. Vo všeobecnosti platí, že takéto transakcie sú vykazované na INTRASTAT-SK hláseniach po prijatí/odoslaní vyúčtovacej faktúry.
+</p>
+		<h3>Kedy zaniká spravodajská povinnosť</h3>
+<p class="pp">
+Spravodajskej jednotke, ktorá v období od 1. októbra 2024 do 30. septembra 2025, nedoviezla ani nevyviezla v rámci EÚ tovar v súhrnnej hodnote vyššej ako prahy oslobodenia, zaniká spravodajská povinnosť v roku 2026, a teda spravodajská jednotka už nepredloží INTRASTAT-SK hlásenia za január 2026.
+</p>
+<p class="pp">
+Štatistický úrad SR každý rok prehodnocuje spravodajskú povinnosť jednotlivým spravodajským jednotkám v štatistických zisťovaniach INTRASTAT-SK a iba v prípade vzniku spravodajskej povinnosti oznámi túto skutočnosť spravodajskej jednotke. Ak spravodajská jednotka na konci roka zistí, že súhrnná hodnota tovaru dovezeného a/alebo vyvezeného v rámci EÚ za stanovené obdobie neprekročila prahy oslobodenia na danom toku, môže si túto skutočnosť telefonicky alebo prostredníctvom elektronickej pošty overiť u pracovníkov konzultačného pracoviska pre štatistické zisťovania INTRASTAT-SK.
+</p>
+<p class="ppb">
+Príklad 8.
+</p>
+<ul class="priklad">
+<li>a. Spravodajská jednotka od 1. októbra 2024 do 30. septembra 2025 doviezla v rámci EÚ tovar sumárne za 1 350 000 eur, čím prekročila stanovený prah oslobodenia 1 000 000 eur. Spravodajskej jednotke ostáva aj v roku 2026 spravodajská povinnosť pre dovoz tovaru v rámci EÚ.</li>
+<li>b. Spravodajská jednotka sumárne od 1. októbra 2024 do 30. septembra 2025 vyviezla v rámci EÚ tovar za 520 000 eur. Neprekročila stanovený prah oslobodenia 1 000 000 eur. Od 01/2026 nebude mať povinnosť predkladať Hlásenie o vývoze tovaru v rámci EÚ. Následne od 1.1.2026 musí tento subjekt sledovať kumulatívnu hodnotu vývozu tovaru v rámci EÚ za jednotlivé mesiace. V prípade dosiahnutia hodnoty vyššej ako 1 000 000 eur, vzniká subjektu spravodajská povinnosť na tomto toku od mesiaca prekročenia tejto hodnoty.</li>
+<li>c. Nový podnikateľský subjekt sa zaregistroval pre DPH od 1.3.2026. V mesiaci 03/2026 doviezol v rámci EÚ tovar v hodnote 300 000 eur, v 04/2026 v hodnote 600 000 eur a v 05/2026 v hodnote 250 000 eur. Za uvedené 3 mesiace je súhrnná hodnota tovaru dovezeného v rámci EÚ 1 150 000 eur, čím sa prekročil stanovený prah oslobodenia 1 000 000 eur. Podnikateľskému subjektu vznikne spravodajská povinnosť na dovoze, a to od mesiaca prekročenia hodnoty 1 000 000 eur, to znamená od 05/2026.</li>
+<li>d. Spravodajská jednotka od 1. októbra 2024 do 30. septembra 2025 doviezla v rámci EÚ tovar sumárne za <strong>350 000 eur</strong>, čím neprekročila stanovený prah oslobodenia 1 000 000 eur. Avšak spravodajská jednotka je spracovateľom mlieka a výrobcom mliečnych produktov, takže má v registri organizácií Štatistického úradu SR vedenú ako hlavnú ekonomickú činnosť „Prevádzku mliekarní a výrobu syrov“, čiže <strong>SK NACE = 10.51</strong>. Keďže súhrnná hodnota dovozov za dané obdobie prevyšuje prah oslobodenia pre pôdohospodárstvo a potravinárstvo 200 000 eur, spravodajskej jednotke ostáva aj v roku 2026 spravodajská povinnosť pre dovoz tovaru v rámci EÚ.</li>
+<li>e. Spravodajská jednotka, ktorá je spracovateľom hydinového mäsa, sumárne od 1. októbra 2024 do 30. septembra 2025 vyviezla v rámci EÚ tovar za <strong>320 000 eur</strong>. Neprekročila stanovený prah oslobodenia 1 000 000 eur. Aj keď má v registri organizácií Štatistického úradu SR vedenú ako hlavnú ekonomickú činnosť „Spracovanie a konzervovanie hydinového mäsa“, čiže <strong>SK NACE = 10.12</strong>, od 01/2026 nebude mať povinnosť predkladať Hlásenie o vývoze tovaru v rámci EÚ, keďže neprekročila prah oslobodenia pre pôdohospodárstvo a potravinárstvo 400 000 eur. Následne od 1.1.2026 musí tento subjekt sledovať kumulatívnu hodnotu vývozu tovaru v rámci EÚ za jednotlivé mesiace. V prípade dosiahnutia hodnoty vyššej ako 400 000 eur, vzniká subjektu spravodajská povinnosť na tomto toku od mesiaca prekročenia tejto hodnoty.</li>
+<li>f. Poľnohospodárske družstvo sa zaregistrovalo pre DPH od 1.3.2026. V mesiaci 03/2026 doviezlo v rámci EÚ tovar v hodnote 50 000 eur, v 04/2026 v hodnote 100 000 eur a v 05/2026 v hodnote 150 000 eur. Za uvedené 3 mesiace je súhrnná hodnota tovaru dovezeného v rámci EÚ <strong>350 000 eur</strong>, čím sa prekročil stanovený prah oslobodenia pre pôdohospodárstvo a potravinárstvo 200 000 eur. Keďže družstvo má v registri organizácií Štatistického úradu SR vedenú ako hlavnú ekonomickú činnosť „Zmiešané hospodárstvo“, čiže <strong>SK NACE = 01.50</strong>, družstvu vznikne spravodajská povinnosť na dovoze, a to od mesiaca prekročenia hodnoty 200 000 eur, to znamená od 05/2026.</li>
+</ul>
+<p class="pp">
+V prípade zlúčenia alebo splynutia viacerých spravodajských jednotiek (vrátane osôb registrovaných pre DPH, ktoré spravodajskú povinnosť v štatistických zisťovaniach INTRASTAT-SK nemajú) prechádza spravodajská povinnosť na nástupcu. Ak dôjde k rozdeleniu spravodajskej jednotky na viacero subjektov a tieto sú registrované pre DPH, potom tieto subjekty preberajú spravodajskú povinnosť v rozsahu, v akom ju mala pôvodná spravodajská jednotka.
+</p>
+<a name="ods_85"></a>
+<p class="pp">
+Ak nové subjekty nevykonávajú zahranično-obchodnú činnosť alebo nie sú registrované pre DPH, môžu požiadať o zrušenie spravodajskej povinnosti vyplnením tlačiva „Zrušenie spravodajskej povinnosti“. Tlačivo bude zverejnené na webovej stránke <a href="https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/" title="ŠÚSR Intrastat-SK">https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/</a>. Subjekt zašle vyplnené tlačivo do elektronickej schránky Štatistického úradu SR alebo doporučene na adresu sídla úradu. Štatistický úrad SR žiadosť posúdi a buď zruší spravodajskú povinnosť alebo so spravodajskou jednotkou dohodne osobitný postup pre predkladanie nulových hlásení.
+</p>
+<p class="pp">
+Postup uvedený v odseku <a href="#ods_85" title="odsek 85">85</a> sa uplatňuje aj na skupinovú registráciu pre DPH pri jej vzniku a zániku, ako aj pri pristúpení a vystúpení člena zo skupiny.
+</p>
+<p class="pp">
+Ak nastali závažné okolnosti (napr. zánik, likvidácia a pod.), ktoré môžu mať za následok zrušenie spravodajskej povinnosti pre štatistické zisťovania INTRASTAT-SK, spravodajská jednotka požiada Štatistický úrad SR o zrušenie povinnosti predkladať hlásenia INTRASTAT-SK. Vyplní príslušné tlačivo, ktoré zašle do elektronickej schránky Štatistického úradu SR alebo doporučene na adresu sídla úradu.
+</p>
+<p class="pp">
+Ak spravodajská jednotka uskutoční počas roka jednorazový dovoz a/alebo vývoz tovaru v rámci EÚ, ktorého hodnota prekročí prahy oslobodenia, podá INTRASTAT-SK hlásenie za daný mesiac. Následne, po dohode so Štatistickým úradom SR, nemusí predkladať nulové hlásenia v nasledujúcich mesiacoch v prípade, že nerealizuje žiadne ďalšie dovozy a/alebo vývozy tovaru v rámci EÚ. Hlásenie INTRASTAT-SK podá pri prípadnej ďalšej jednorazovej transakcii. Spravodajská povinnosť takejto spravodajskej jednotky bude prehodnotená na konci roku.
+</p>
+<p class="ppb">
+
+Príklad 9.
+</p>
+<ul class="priklad">
+<li>a. Spoločnosť Matice, s.r.o. má povinnosť predkladať Hlásenie o dovoze tovaru v rámci EÚ. Spoločnosť Skrutky, s.r.o. nemá spravodajskú povinnosť v štatistických zisťovaniach INTRASTAT-SK. Tieto dve spoločnosti sa zlúčia a vytvoria spoločnosť Matice a skrutky, s.r.o., ktorá bude predkladať Hlásenie o dovoze tovaru v rámci EÚ.</li>
+<li>b. Spoločnosť Matice, s.r.o. má povinnosť predkladať Hlásenie o dovoze tovaru v rámci EÚ. Spoločnosť Skrutky, s.r.o. má povinnosť predkladať Hlásenie o vývoze tovaru v rámci EÚ. Spoločnosť Skrutky, s.r.o. prevezme spoločnosť Matice, s.r.o., preto spoločnosť Skrutky, s.r.o. bude okrem Hlásenia o vývoze tovaru v rámci EÚ predkladať aj Hlásenie o dovoze tovaru v rámci EÚ od mesiaca, v ktorom došlo k prevzatiu spoločnosti.</li>
+<li>c. Spoločnosť Matice a skrutky, s.r.o. má povinnosť predkladať Hlásenie o dovoze tovaru v rámci EÚ. Zo spoločnosti sa vyčlení spoločnosť Skrutky, s.r.o., ktorá bude taktiež predkladať Hlásenie o dovoze tovaru v rámci EÚ. Ak spoločnosť Skrutky, s.r.o. nebude dovážať tovar z členských štátov EÚ, môže požiadať o zrušenie spravodajskej povinnosti. V takomto prípade bude so spravodajskou jednotkou dohodnutý osobitný postup predkladania nulových hlásení.</li>
+</ul>
+		<h3>Spôsob plnenia spravodajskej povinnosti</h3>
+<p class="pp">
+Spravodajská jednotka predloží INTRASTAT-SK hlásenie do <strong>pätnásteho kalendárneho dňa</strong> po skončení sledovaného obdobia <strong>v elektronickej forme</strong> prostredníctvom portálu finančnej správy (viac v časti <a href="./index.php?page=vypln#d2" title="Všeobecné pravidlá pre podávanie elektronických hlásení">Všeobecné pravidlá pre podávanie elektronických hlásení</a>).
+</p>
+<p class="pp">
+Ak pripadne posledný deň lehoty na predloženie INTRASTAT-SK hlásenia na sobotu, nedeľu alebo štátny sviatok, za posledný deň lehoty sa v tomto prípade považuje najbližší nasledujúci pracovný deň.
+</p>
+<p class="pp">
+Dovoz tovaru v rámci EÚ, ktorý je nadobudnutím tovaru v tuzemsku z iného členského štátu a vývoz tovaru v rámci EÚ, ktorý je dodaním tovaru z tuzemska do iného členského štátu podľa platného zákona o DPH, sa uvádza na INTRASTAT-SK hlásení v mesiaci, v ktorom vznikla daňová povinnosť podľa tohto zákona. To znamená, že pre uvedené prípady sa tieto na INTRASTAT-SK hlásení vykážu v rovnakom kalendárnom mesiaci ako na daňovom priznaní k DPH. Spravodajská jednotka, ktorá je štvrťročným platiteľom DPH, predkladá INTRASTAT-SK hlásenia <strong>mesačne</strong>.
+</p>
+<p class="pp">
+Ak medzi vznikom daňovej povinnosti a dovozom/vývozom tovaru uplynú viac ako 2 kalendárne mesiace, sledovaným obdobím je kalendárny mesiac, v ktorom bol tovar dovezený alebo vyvezený.
+</p>
+<p class="pp">
+Ostatné intra-EÚ dovozy a intra-EÚ vývozy (napr. spracovanie na základe zmluvy, dodanie tovaru s inštaláciu a montážou), ktoré nie sú nadobudnutím tovaru v tuzemsku alebo dodaním tovaru z tuzemska, uvádza spravodajská jednotka v mesiaci, v ktorom bol tovar fyzicky dovezený alebo vyvezený.
+</p>
+<a name="ods_94"></a>
+<p class="pp">
+Spravodajská jednotka môže za daný mesiac podať viacero <strong>čiastkových</strong> INTRASTAT-SK hlásení, napr. za každý týždeň, prípadne za určitú komoditu. V takom prípade sa vyššie uvedený termín vzťahuje na posledné čiastkové hlásenie za sledované obdobie. Ak k termínu predloženia hlásenia nemá spravodajská jednotka všetky informácie o intra-EÚ dovozoch a/alebo intra-EÚ vývozoch v sledovanom období, vypracuje a odošle hlásenia za obchodné transakcie, o ktorých má k dispozícii informácie. Ďalšie transakcie zašle formou čiastkového hlásenia <strong>ihneď</strong>, ako sú informácie dostupné tak, aby došlo k úplnému splneniu spravodajskej povinnosti za daný kalendárny mesiac v najkratšom možnom čase.
+</p>
+<p class="pp">
+Spravodajská jednotka predkladá zvyčajne jedno hlásenie za všetky organizačné jednotky, ktoré sú registrované pre DPH spoločným identifikačným číslom pre DPH. Po <strong>dohode</strong> so Štatistickým úradom SR môže spravodajská jednotka predkladať INTRASTAT-SK hlásenie zvlášť za každú organizačnú jednotku. V takom prípade predloží úradu zoznam týchto jednotiek spolu s úplnou adresou a kontaktnými údajmi (kontaktná osoba, telefón, e-mail) na tlačive, ktoré je zverejnené na webovej stránke <a href="https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/" title="ŠÚSR Intrastat-SK">https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/</a>. Vyplnené tlačivo zašle na emailovú adresu <a href="mailto:intrastat-sk@statistics.sk" title="email ŠÚSR Intrastat-SK">intrastat-sk@statistics.sk</a>.
+</p>
+<p class="pp">
+Úrad každej organizačnej jednotke pridelí <strong>číslo organizačnej jednotky</strong>, ktoré je potom táto jednotka povinná vždy uvádzať v pododseku <i>Číslo organizačnej jednotky</i> na INTRASTAT-SK hlásení. Ak niektorá z organizačných jednotiek zanikne, spravodajská jednotka bezodkladne informuje o tejto skutočnosti Štatistický úrad SR. Novej organizačnej jednotke bude pridelené vždy nové číslo. Ak spravodajská jednotka nepredkladá hlásenie podľa organizačných jednotiek, ale predkladá hlásenie za organizáciu ako celok, uvádza na INTRASTAT-SK hlásení ako číslo organizačnej jednotky „000“.
+</p>
+<p class="pp">
+Spravodajská jednotka môže poveriť tretiu stranu - <strong>zástupcu</strong>, aby za ňu predložil INTRASTAT-SK hlásenie. Spravodajská jednotka <strong>oboznámi</strong> s touto skutočnosťou Štatistický úrad SR, pričom uvedie svoje identifikačné údaje (identifikačné číslo pre DPH, obchodné meno, adresu sídla) a identifikačné údaje zástupcu. Rovnako oznámi zmenu zástupcu alebo zrušenie poverenia.
+</p>
+<p class="pp">
+Tlačivo na oznámenie poverenia zástupcu predkladať INTRASTAT-SK hlásenia (prípadne na oznámenie zmeny zástupcu alebo zániku poverenia) je zverejnené na webovej stránke <a href="https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/" title="ŠÚSR Intrastat-SK">https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/</a>. Vyplnené tlačivo zašle spravodajská jednotka resp. poverený zástupca na emailovú adresu <a href="mailto:intrastat-sk@statistics.sk" title="email ŠÚSR Intrastat-SK">intrastat-sk@statistics.sk</a>.
+</p>
+<p class="pp">
+Ak spravodajská jednotka poverila tretiu stranu na zastupovanie a predkladanie INTRASTAT-SK hlásení, je potrebné, aby spolu s oznámením o zástupcovi predložila aj plnomocenstvo, ktoré je nutnosťou najmä v prípade preberania prihlasovacích údajov na portál finančnej správy pre štatistické zisťovania INTRASTAT-SK. Zástupca ich môže prevziať len vtedy, ak ho k tomu splnomocní spravodajská jednotka v písomnej podobe. Povinnými náležitosťami plnomocenstva sú identifikačné údaje o splnomocniteľovi a splnomocnencovi, doba trvania splnomocnenia, dátum podpísania, čitateľné meno, funkcia a podpis oboch zúčastnených strán. Vzor plnomocenstva zverejnený na webovej stránke <a href="https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/" title="ŠÚSR Intrastat-SK">https://intrastat.statistics.sk/Intrastat/spravodajska-povinnost-tlaciva/</a> zároveň ponúka možnosti splnomocniť zástupcu pre viaceré právne úkony, z ktorých sa preškrtnú tie, ktoré nebude zástupca vykonávať.
+</p>
+<p class="pp">
+Spravodajská jednotka poskytne zástupcovi všetky potrebné informácie, aby mohol splniť spravodajskú povinnosť. Avšak poverenie zástupcu podať hlásenie <strong>nezbavuje</strong> spravodajskú jednotku zodpovednosti za včasné, presné a úplné splnenie zákonnej povinnosti predložiť INTRASTAT-SK hlásenie.
+</p>
+<p class="pp">
+Pokiaľ je spravodajská jednotka povinná predkladať INTRASTAT-SK hlásenie, ale v sledovanom období neuskutočnila žiadnu transakciu, ktorá je predmetom vykazovania na INTRASTAT-SK hláseniach, predloží <strong>nulové hlásenie</strong>. Ak spravodajská jednotka predkladá INTRASTAT-SK hlásenie osobitne za organizačné jednotky, táto povinnosť sa vzťahuje na všetky organizačné jednotky.
+</p>
+<p class="pp">
+Za nulové hlásenie sa považuje formulár ZO 1-12 resp. ZO 2-12, ktorý je vyplnený v odseku 1 <i>Spravodajská jednotka</i> a v odseku 3 <i>Obdobie</i>, pričom v odseku 4 <i>Celkový počet položiek</i> je uvedený počet rovný „0“. Ak spravodajská jednotka poverila tretiu stranu, aby predložila hlásenie, je vyplnený aj odsek 2 <i>Zástupca</i>. Odseky <i>A</i> a <i>B</i> sú vyplnené štandardným spôsobom. Ostatné odseky nie sú vyplnené.
+</p>
+<p class="pp">
+<strong>Spravodajská jednotka</strong>, ktorá uskutoční počas roka jednorazový dovoz a/alebo vývoz tovaru v rámci EÚ môže byť, po dohode so Štatistickým úradom SR, označená ako <strong>príležitostná</strong>. Príležitostná spravodajská jednotka si splní zákonnú povinnosť vtedy, keď po príležitostne zrealizovanom dovoze alebo vývoze tovaru v rámci EÚ podá INTRASTAT-SK hlásenie do 15. kalendárneho dňa mesiaca nasledujúceho po dovoze a/alebo vývoze tovaru. Za mesiace, v ktorých spravodajská jednotka neuskutočnila žiadnu transakciu, nepredkladá nulové hlásenie.
+</p>
+<p class="pp">
+Spravodajská jednotka si sleduje stav zaslaného INTRASTAT-SK hlásenia na portáli <a href="https://intrastat.financnasprava.sk" title="FRSR Intrastat-SK">https://intrastat.financnasprava.sk</a>. Po prihlásení sa menom a heslom, ktoré je jej pridelené, si môže tento stav skontrolovať vo „Výpise o doručení“. Po odoslaní sa zobrazí v stĺpci stav informácia „odoslané“. Stav „odoslané“ sa zmení na „prijaté“. <strong>Spravodajská povinnosť sa považuje za splnenú</strong>, ak v stĺpci stav je informácia „schválené“. Ak hlásenie nie je schválené, spravodajská jednotka rieši príčinu neschválenia s konzultačným pracoviskom Colnej sekcie FR SR.
+</p>
+
+
+<p class="pp">
+</p>
+</div>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="copyright"><a href="mailto:helpdesk.intrastat@financnasprava.sk" title="Email">2004-2026 &copy; Finančné riaditeľstvo SR</a></div>
+	</div>
+</div>
+
+</body>
+</html>

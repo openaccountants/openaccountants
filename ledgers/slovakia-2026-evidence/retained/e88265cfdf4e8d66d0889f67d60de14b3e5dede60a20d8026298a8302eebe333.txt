@@ -1,0 +1,170 @@
+§ 18
+Úprava základu dane závislých osôb
+(1)
+ Pri zisťovaní spôsobu určenia cien a podmienok na účely § 17 ods. 5, ktoré by sa použili medzi nezávislými osobami v porovnateľných transakciách, sa
+ použije metóda podľa odseku 2 alebo odseku 3, alebo ich vzájomná kombinácia, alebo iné metódy, ktoré nie sú uvedené v odsekoch
+ 2 a 3. Použiť možno len takú metódu, ktorej použitie je v súlade s princípom nezávislého
+ vzťahu. Princíp nezávislého vzťahu je založený na porovnávaní podmienok dohodnutých
+ v kontrolovaných transakciách medzi závislými osobami s podmienkami, ktoré by medzi
+ sebou dohodli nezávislé osoby v porovnateľných transakciách za porovnateľných okolností
+ v príslušných obdobiach. Pri porovnávaní sa zohľadňujú činnosti vykonávané porovnávanými
+ osobami, a to najmä výroba, montážne práce, výskum a vývoj, nákup a predaj a podobne,
+ ako aj rozsah podnikateľských rizík, vlastnosti porovnávaného majetku alebo služby,
+ dohodnuté zmluvné podmienky, ekonomické prostredie trhu a obchodná stratégia. Podmienky
+ sú vzájomne porovnateľné, ak medzi nimi nie je zásadný rozdiel alebo ak možno vplyv
+ týchto rozdielov odstrániť. Pri určení základu dane podľa § 17 ods. 5 sa použije aj metodika Organizácie pre hospodársku spoluprácu a rozvoj pre transferové
+ oceňovanie uvedená v smernici o transferovom oceňovaní pre nadnárodné spoločnosti
+ a správu daní. Ak sa rozdiel podľa § 17 ods. 5 písm. a) zisťuje porovnaním s viacerými nezávislými porovnateľnými hodnotami a hodnota použitá
+ daňovníkom nie je v súlade s princípom nezávislého vzťahu, rozdiel podľa § 17 ods. 5 písm. a) sa pri daňovej kontrole určí podľa strednej hodnoty (mediánu) zistených nezávislých
+ porovnateľných hodnôt. Ak daňovník preukáže, že vzhľadom na okolnosti je vhodnejšia
+ úprava na inú hodnotu v rámci rozpätia nezávislých hodnôt, základ dane sa upraví podľa
+ tejto hodnoty. O kontrolovaných transakciách a použitej metóde na účely zistenia spôsobu
+ určenia cien a podmienok, ktoré by sa použili medzi nezávislými osobami v porovnateľných
+ transakciách, je daňovník povinný viesť dokumentáciu. Obsah a rozsah dokumentácie
+ o kontrolovaných transakciách a použitej metóde určí ministerstvo.
+(2)
+ Metódy, ktoré vychádzajú z porovnávania ceny, sú:
+a)
+ metóda nezávislej trhovej ceny, pri ktorej sa porovnáva cena prevodu majetku alebo
+ služby dohodnutá medzi závislými osobami s porovnateľnou nezávislou trhovou cenou
+ dohodnutou medzi nezávislými osobami; ak je medzi týmito cenami rozdiel, cena dohodnutá
+ medzi závislými osobami sa nahradí nezávislou trhovou cenou, ktorú by použili nezávislé
+ osoby v porovnateľných právnych vzťahoch alebo iných obdobných vzťahoch za porovnateľných
+ podmienok,
+b)
+ metóda následného predaja, pri ktorej sa cena prevodu majetku nakúpeného závislou
+ osobou prepočíta na nezávislú trhovú cenu z ceny, za ktorú táto závislá osoba majetok
+ opätovne predáva nezávislej osobe, zníženej o obvyklú výšku hrubej ziskovej marže
+ porovnateľných nezávislých predajcov,
+c)
+ metóda zvýšených nákladov, pri ktorej sa nezávislá trhová cena vypočíta zo skutočných
+ priamych a nepriamych nákladov majetku alebo služby prevádzanej medzi závislými osobami,
+ zvýšených o sumu hrubej ziskovej prirážky uplatňovanej tým istým dodávateľom vo vzťahu
+ k nezávislým osobám alebo o sumu hrubej ziskovej prirážky, ktorú by uplatňovala nezávislá
+ osoba v porovnateľnom obchode za porovnateľných podmienok.
+(3)
+ Metódy, ktoré vychádzajú z porovnávania zisku, sú:
+a)
+ metóda delenia zisku, ktorá vychádza z takého delenia zisku dosiahnutého závislými
+ osobami, aké by uplatnili nezávislé osoby pri spoločnom podnikaní pri dodržaní princípu
+ nezávislého vzťahu,
+b)
+ metóda čistého obchodného rozpätia, ktorá zisťuje výšku čistej ziskovej prirážky
+ alebo čistej ziskovej marže z právneho vzťahu alebo obdobného vzťahu medzi závislými
+ osobami vo vzťahu k nákladom, tržbám alebo inej základni, ktorú porovnáva s čistou
+ ziskovou prirážkou alebo čistou ziskovou maržou používanou vo vzťahu k nezávislým
+ osobám.
+(4)
+ Daňovník môže písomne požiadať správcu dane, ktorého zverejní na svojom webovom sídle
+ finančné riaditeľstvo o vydanie rozhodnutia128) o odsúhlasení použitia konkrétnej metódy podľa odseku 2 alebo odseku 3, alebo inej
+ metódy a spôsobu určenia ceny (ďalej len „rozhodnutie o odsúhlasení použitia metódy
+ ocenenia“) najneskôr 60 dní pred začiatkom zdaňovacieho obdobia, počas ktorého by
+ sa mala odsúhlasená metóda ocenenia uplatňovať. Rozhodnutie o odsúhlasení použitia
+ metódy ocenenia, v ktorom správca dane, ktorého zverejní na svojom webovom sídle finančné
+ riaditeľstvo vyhovie žiadosti daňovníka, sa vydáva najviac na päť zdaňovacích období.
+ Na žiadosť daňovníka, podanú najmenej 60 dní pred uplynutím lehoty uvedenej v rozhodnutí
+ o odsúhlasení použitia metódy ocenenia, správca dane, ktorého zverejní na svojom webovom
+ sídle finančné riaditeľstvo môže vydať rozhodnutie o odsúhlasení použitia metódy ocenenia
+ najviac na päť ďalších zdaňovacích období, ak daňovník preukáže, že nedošlo k zmene
+ podmienok, na základe ktorých bolo predchádzajúce rozhodnutie o odsúhlasení použitia
+ metódy ocenenia vydané.
+(5)
+ Daňovník môže požiadať správcu dane, ktorého zverejní na svojom webovom sídle finančné
+ riaditeľstvo o vydanie rozhodnutia o jednostrannom odsúhlasení použitia metódy ocenenia.
+ Daňovník tiež môže požiadať o vydanie rozhodnutia o odsúhlasení použitia metódy ocenenia
+ na základe uplatnenia zmluvy o zamedzení dvojitého zdanenia, ktoré je odsúhlasené
+ príslušnými orgánmi dvoch zmluvných štátov alebo viacerých zmluvných štátov. Príslušné
+ orgány podľa druhej vety sa môžu dohodnúť na použití metódy ocenenia aj za zdaňovacie
+ obdobia, ktoré nie sú uvedené v žiadosti daňovníka, pričom, ak sa dohoda týchto príslušných
+ orgánov vzťahuje na viac ako päť zdaňovacích období, správca dane, ktorého finančné
+ riaditeľstvo zverejní na svojom webovom sídle, vydá rozhodnutie na viac ako päť zdaňovacích
+ období. Ak v dôsledku vydania rozhodnutia o odsúhlasení použitia metódy ocenenia na
+ základe uplatnenia zmluvy o zamedzení dvojitého zdanenia dôjde k úprave základu dane,
+ taká úprava sa nepovažuje za porušenie princípu nezávislého vzťahu, a podaním dodatočného
+ daňového priznania sa daňovník nedopustí správneho deliktu podľa osobitného predpisu.80d) Ak daňovník požiada o vydanie rozhodnutia o odsúhlasení použitia metódy ocenenia
+ na základe uplatnenia zmluvy o zamedzení dvojitého zdanenia a príslušné štáty sa nedohodnú,
+ správca dane, ktorého zverejní na svojom webovom sídle finančné riaditeľstvo môže
+ vydať rozhodnutie o jednostrannom odsúhlasení použitia metódy ocenenia.
+(6)
+ Žiadosť o vydanie rozhodnutia o odsúhlasení použitia metódy ocenenia musí okrem dokumentácie
+ podľa odseku 1 obsahovať aj tieto náležitosti:
+a)
+ identifikáciu osôb v posudzovanej kontrolovanej transakcii, a to meno, priezvisko,
+ obchodné meno, bydlisko alebo sídlo, miesto podnikania, daňové identifikačné číslo,
+ identifikačné číslo organizácie, ak boli pridelené,
+b)
+ zdaňovacie obdobie, na ktoré sa má rozhodnutie o odsúhlasení použitia metódy ocenenia
+ vzťahovať,
+c)
+ popis kontrolovanej transakcie,
+d)
+ predpokladanú hodnotu posudzovanej kontrolovanej transakcie,
+e)
+ navrhnutú metódu ocenenia.
+(7)
+ Daňovník zaplatí spolu so žiadosťou o vydanie rozhodnutia o odsúhlasení použitia
+ metódy ocenenia úhradu vo výške 10 000 eur, ak ide o poplatok za vydanie rozhodnutia
+ o jednostrannom odsúhlasení použitia metódy ocenenia správcom dane, ktorého zverejní
+ na svojom webovom sídle finančné riaditeľstvo, a vo výške 30 000 eur, ak ide o odsúhlasenie
+ použitia metódy ocenenia na základe uplatnenia zmluvy o zamedzení dvojitého zdanenia;
+ úhrada sa u daňovníka, ktorý je v čase podania žiadosti na základe indexu daňovej
+ spoľahlivosti podľa osobitného predpisu81) považovaný za vysoko spoľahlivého, znižuje na polovicu. Úhrada podľa prvej vety sa
+ platí bez výzvy a je splatná pri podaní žiadosti o vydanie rozhodnutia o odsúhlasení
+ použitia metódy ocenenia. Ak nebola úhrada zaplatená pri podaní žiadosti a v určenej
+ výške, je splatná do 15 dní odo dňa doručenia písomnej výzvy správcu dane, ktorého
+ zverejní na svojom webovom sídle finančné riaditeľstvo na jej zaplatenie. Ak úhrada
+ nebude zaplatená v lehote alebo vo výške určenej vo výzve, považuje sa žiadosť za
+ nepodanú. Túto skutočnosť oznámi správca dane, ktorého zverejní na svojom webovom
+ sídle finančné riaditeľstvo daňovníkovi a zaplatenú úhradu vráti daňovníkovi. Ak správca
+ dane, ktorého zverejní na svojom webovom sídle finančné riaditeľstvo vydá oznámenie
+ o nevyhovení žiadosti, zaplatená úhrada sa daňovníkovi nevráti.
+(8)
+ Ak daňovník nedodrží lehotu na podanie žiadosti o vydanie rozhodnutia o odsúhlasení
+ použitia metódy ocenenia, považuje sa žiadosť za nepodanú; túto skutočnosť oznámi
+ správca dane, ktorého zverejní na svojom webovom sídle finančné riaditeľstvo daňovníkovi
+ a zaplatená úhrada sa daňovníkovi vráti.
+(9)
+ Proti rozhodnutiu o odsúhlasení použitia metódy ocenenia nemožno podať odvolanie.
+ O nevyhovení žiadosti daňovníka správca dane, ktorého zverejní na svojom webovom sídle
+ finančné riaditeľstvo zašle daňovníkovi písomné oznámenie, pričom rozhodnutie sa nevydáva.
+(10)
+Správca dane, ktorého zverejní na svojom webovom sídle finančné riaditeľstvo
+a)
+ zruší rozhodnutie o odsúhlasení použitia metódy ocenenia, ak bolo vydané na základe
+ nepresných alebo nepravdivých údajov poskytnutých daňovníkom,
+b)
+ zruší alebo zmení rozhodnutie o odsúhlasení použitia metódy ocenenia, ak došlo k
+ zmene podstatných podmienok, na základe ktorých bolo rozhodnutie o odsúhlasení použitia
+ metódy ocenenia vydané a daňovník nepožiada o jeho zmenu,
+c)
+ môže zrušiť alebo zmeniť rozhodnutie o odsúhlasení použitia metódy ocenenia, ak o
+ to požiada daňovník, pričom preukáže, že došlo k zmene podstatných podmienok, na základe
+ ktorých bolo rozhodnutie o odsúhlasení použitia metódy ocenenia vydané.
+(11)
+ Správnosť použitia metódy a vyčíslenia rozdielu podľa § 17 ods. 5 písm. a) preveruje správca dane alebo finančné riaditeľstvo pri daňovej kontrole,82) pričom vychádzajú z princípu nezávislého vzťahu, z použitej metódy a z analýzy porovnateľnosti
+ ocenenia. Správca dane alebo finančné riaditeľstvo je oprávnené vyzvať daňovníka na
+ predloženie dokumentácie podľa odseku 1. Daňovník je povinný predložiť dokumentáciu
+ podľa odseku 1 v lehote do 15 dní odo dňa doručenia výzvy správcu dane alebo finančného
+ riaditeľstva; túto výzvu pri dokumentácii pre príslušné zdaňovanie obdobie možno zaslať
+ najskôr prvý deň nasledujúci po uplynutí lehoty na podanie daňového priznania podľa
+ § 49 za toto zdaňovacie obdobie. Dokumentáciu daňovník môže predložiť v inom ako štátnom
+ jazyku,
+82a) pričom na výzvu správcu dane alebo finančného riaditeľstva predloží dokumentáciu
+ do 15 dní od doručenia výzvy aj v štátnom jazyku.
+82a)
+(12)
+ Dokumentáciu podľa odseku 1 je daňovník povinný uchovávať počas obdobia podľa osobitného
+ predpisu.34)
+(13)
+ Daňovník dokumentáciu podľa odseku 1 predkladá správcovi dane, finančnému riaditeľstvu
+ alebo ministerstvu spolu so žiadosťou, ak žiada o
+a)
+ úpravu základu dane podľa § 17 ods. 6,
+b)
+ začatie procedúry vzájomných dohôd na základe
+1.
+ príslušného článku zmluvy o zamedzení dvojitého zdanenia v súvislosti so zamedzením
+ dvojitého zdanenia zisku závislých osôb,
+2.
+ Dohovoru 90/436/EHS z 23. júla 1990 o zamedzení dvojitého zdanenia v súvislosti s
+ úpravou zisku združených podnikov.

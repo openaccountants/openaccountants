@@ -1,0 +1,227 @@
+Strana 1 z 7 
+ Finančné riaditeľstvo Slovenskej republiky 
+12/PO/2026/IM 
+Informácia k vypĺňaniu Tabuľky I daňového priznania k dani z príjmov právnickej 
+osoby za rok 2025  
+V Tabuľke I tlačiva DPPOv25 D aňové priznanie k dani z príjmov právnickej osoby  za zdaňovacie obdobie, 
+ktorého posledný deň lehoty na podanie daňového priznania uplynie od 1. januára 2026  (ďalej len „daňové 
+priznanie“) sa uvádzajú transakcie závislých osôb podľa § 2 písm. n) zákona o  dani z príjmov (k r. 100 alebo k  r. 
+301 II. časti daňového priznania). Vypĺňa ju daňovník, ktorý uskutočňuje kontrolované transakcie so závislými 
+osobami v tuzemsku aj v zahraničí v členení na jednotlivé kontrolované transakcie alebo skupiny kontrolovaných 
+transakcií v zmysle článku 2 bodu 4 Usmernenia MF SR č. MF/012879/2025-724 o určení obsahu dokumentácie 
+podľa § 17 ods. 7 a § 18 ods. 1 zákona o dani z príjmov (ďalej len „Usmernenie MF SR“).  
+Tabuľku I vypĺňa aj daňovník, ktorý vykonáva činnosť na území SR prostredníctvom stálej prevádzkarne a uvádzajú 
+sa tu aj vnútropodnikové kontrolované transakcie medzi zriaďovateľom a jeho stálou prevádzkarňou. 
+Daňovníci, ktorí sú závislými osobami z dôvodu prepojenia na základe priamej alebo nepriamej účasti štátu, obce 
+alebo vyššieho územného celku na majetku, kontrole alebo vedení, uvádzajú v  Tabuľke I  len kontrolované 
+transakcie s  príslušným správcom kapitoly  štátneho rozpočtu, s  obcou alebo vyšším územným celkom, s  nimi 
+zriadenými rozpočtovými organizáciami, príspevkovými organizáciami, ako aj s  právnickými osoba, v ktorých má 
+daňovník majetkovú účasť alebo v ktorých má majetkovú účasť príslušný správca kapitoly štátneho rozpočtu, obec 
+alebo vyšší územný celok a nimi zriadené rozpočtové organizácie, príspevkové organizácie a iné právnické osoby, 
+v ktorých majú majetkovú účasť a súčasne spĺňajú podmienky podľa § 2 písm. n) zákona o dani z príjmov. 
+V súlade s  článkom 2 bodom 4. Usmernenia MF SR s kupina kontrolovaných transakcií je viacero 
+kontrolovaných transakcií, ktoré môžu byť uskutočnené aj s rôznymi protistranami a sú: 
+a) rovnakého druhu a uzatvorené za porovnateľných podmienok, 
+b) vzájomne úzko prepojené a vzájomne podmienené, alebo 
+c) porovnateľné z hľadiska využívaného majetku, funkcií a rizík. 
+V Tabuľke I sa uvádzajú všetky významné kontrolované transakcie  so závislými osobami bez ohľadu na typ 
+dokumentácie. Za významnú kontrolovanú transakciu alebo skupinu kontrolovaných transakcií sa na účely určenia 
+základu dane závislej osoby považuje právny vzťah alebo iný obdobný vzťah, na základe ktorého v  príslušnom 
+zdaňovacom období jedna alebo viac závislých osôb dosiahne zdaniteľný príjem (výnos) alebo daňový výdavok 
+(náklad) v hodnote prevyšujúcej 10 000 eur, pričom za významnú kontrolovanú transakciu  sa považuje aj úver 
+alebo pôžička s istinou nad 50 000 eur.  
+
+Strana 2 z 7 
+Príklad č. 1 – nevýznamná kontrolovaná transakcia 
+Právnická osoba v priebehu roka 2025 zrealizovala nevýznamnú kontrolovanú transakciu so závislou osobou. Je 
+povinná ju v daňovom priznaní uvádzať? 
+Kontrolované transakcie, ktoré nie sú významné podľa § 17 ods. 5 zákona o dani z príjmov,  daňovník nie je 
+povinný v Tabuľke I ani v iných častiach daňového priznania uvádzať.  
+Poznámka: Daňovník v  I. časti daňového priznania zaškrtne zaškrtávacie políčko „Ekonomické, personálne alebo iné 
+prepojenie podľa § 2 písm. n) zákona zo závislými osobami“. 
+Upozornenie:  
+V Tabuľke I  tlačiva daňového priznania k  dani z  príjmov právnických osôb  za zdaňovacie obdobia, ktorých 
+posledný deň lehoty na podanie daňového priznania uplynul do 31.12.2025 (napr. DPPOv22 a DPPOv24) sa 
+uvádzali všetky transakcie so závislými osobami bez ohľadu na ich významnosť podľa § 17 ods. 5 zákona o  dani 
+z príjmov. Zároveň sa Tabuľka I  v týchto tlačivách neviazala na kontrolovanú transakciu, ale na transakcie so 
+závislými osobami v tuzemsku aj v zahraničí. Z tohto dôvodu sa v nej uvádzali aj transakcie, ktoré sa v nadväznosti 
+na § 2 písm. ab) zákona o dani z príjmov nepovažovali za kontrolované transakcie – napr. ak spoločnosť poskytla 
+pôžičku svojmu spoločníkovi. 
+Príklad č. 2 – postupné splácanie pôžičky s istinou nad 50 tis. eur 
+Závislé právnické osoby medzi sebou realizujú kontrolovanú transakciu vo forme úročenej pôžičky, ktorá bola 
+poskytnutá v roku 2024 s istinou vo výške 70 000 EUR . V roku 2024 bola časť istiny vo výške 28 000 EUR 
+splatená. V roku 2025 ostala zostatková cena istiny vo výške 42 000 EUR.  Považuje sa táto transakcia za 
+významnú kontrolovanú transakciu a má sa uviesť v daňovom priznaní právnických osôb za rok 2025? 
+Úver alebo pôžička  s istinou nad 50 000 EUR sa na účely určenia základu dane  považuje za významnú 
+kontrolovanú transakciu v celom období splácania bez ohľadu na skutočnosť, že zostatok istiny v 
+príslušných zdaňovacích obdobiach klesá z titulu splácania pôžičky a zostatok istiny sa dostane pod 
+stanovenú hranicu významnosti. 
+Podľa poučenia k daňovému priznaniu sa v jednotlivých stĺpcoch Tabuľky I uvádzajú nasledovné údaje: 
+V stĺpci 1 sa uvedie poradové číslo kontrolovanej transakcie alebo skupiny kontrolovaných transakcií. 
+V stĺpci 2 sa vyberie kód druhu transakcie z číselníka. 
+V stĺpci 3 sa uvedie vplyv na výsledok hospodárenia – t. j. na riadok 100 daňového priznania s presnosťou na 
+eurocenty. Daňovníci, ktorí nevykazujú výsledok hospodárenia – napr. niektoré stále prevádzkarne, uvedú vplyv 
+na základ dane na riadku 301 daňového priznania. Kladný vplyv kontrolovanej transakcie sa označuje kladným 
+číslom, záporný vplyv záporným číslom  – je potrebné uviesť znamienko mínus. Tento údaj zohľadňuje 
+celkový vplyv kontrolovanej transakcie na výsledok hospodárenia resp. základ dane v  príslušnom 
+zdaňovacom období a v budúcich zdaňovacích obdobiach. 
+V stĺpci 4 sa uvedie názov závislej osoby alebo v  prípade fyzickej osoby meno a  priezvisko, s ktorou sa daná 
+kontrolovaná transakcia alebo skupina kontrolovaných transakcií uskutočnila v  danom zdaňovacom období. 
+V prípade skupiny kontrolovaných transakcií, ktorá sa uskutočňuje s  rôznymi závislými osobami, sa skupina 
+kontrolovaných transakcií rozdelí podľa jednotlivých závislých osôb. 
+V stĺpci 5 sa vyberie kód štátu, v ktorom je príslušná závislá osoba daňovým rezidentom. 
+Strana 3 z 7 
+Príklad č. 3 – významná skupina kontrolovaných transakcií 
+Právnická osoba v  roku 2025 uskutočnila významnú skupinu kontrolovaných transakcií, v  rámci ktorej boli 
+zrealizované jednotlivé nevýznamné kontrolované transakcie prenájmu nehnuteľnosti s  rôznymi protistranami 
+nasledovne: 
+- výnos z prenájmu voči subjektu A je 7 000 eur,  
+- výnos z prenájmu voči subjektu B je 5 000 eur, 
+- výnos z prenájmu voči subjektu C je 12 000 eur. 
+Je potrebné vyplniť do Tabuľky I len tie jednotlivé transakcie, ktoré presahujú významnosť alebo je potrebné na 
+transakciu nájmu pozerať ako na skupinu kontrolovaných transakcií, ktorá prekročila 10  000 eur a z toho dôvodu 
+daňovník uvedie v Tabuľke I všetky jednotlivé transakcie voči subjektu A, B aj C? 
+Ak v predmetnom prípade kontrolované transakcie spĺňajú podmienky článku 2 bodu 4. Usmernenia MF 
+SR , ide o  skupinu kontrolovaných transakcií, pričom ak ide o  významnú kontrolovanú transakciu alebo 
+skupinu kontrolovaných transakcií podľa § 17 ods. 5 zákona o dani z príjmov, t. j. v úhrne tieto transakcie 
+presiahnu hranicu zdaniteľných príjmov alebo daňových výdavkov vo výške 10 000 eur, daňovník ju bude 
+uvádzať v Tabuľke I.  
+Keďže v  rámci skupiny kontrolovaných transakcií sú realizované jednotlivé kontrolované transakcie 
+s rôznymi protistranami, v  Tabuľke I  sa budú uvádzať všetky jednotlivé kontrolované transakcie, ktoré 
+tvoria skupinu kontrolovaných transakcií, aj keď samostatne nepresiahnu hranicu 10 000 eur, t. j. daňovník 
+v Tabuľke I uvedie všetky tri transakcie voči subjektu A, B aj C. 
+ 
+Príklad č. 4 – predaj tovaru závislej osobe 
+Právnická osoba v roku 2025 predala tovar závislej osobe Alfa s. r. o. so sídlom v Českej republike v obvyklej cene 
+150 000 eur. Ako vyplní Tabuľku I daňového priznania? 
+ 
+
+Strana 4 z 7 
+Príklad č. 5 – kúpa tovaru od závislej osoby 
+Právnická osoba v roku 2025 kúpila tovar od závislej osoby Beta GmbH so sídlom v Nemecku v hodnote 300 000 
+Eur, ktorý v roku 2025 aj predala nezávislej osobe. Ako vyplní Tabuľku I daňového priznania? 
+ 
+Poznámka: 
+Daňovník by rovnako vyplnil Tabuľku I daňového priznania aj v prípade, ak by v roku 2025 uvedený tovar nepredal a zostal by 
+k 31.12.2025 na sklade. 
+Príklad č. 6 – nákup nehnuteľnosti od závislej osoby 
+Právnická osoba v  júli roku 2025 kúpila nehnuteľnosť od závislej osoby Gama a.  s. so sídlom v  SR za cenu 
+2 000 000 eur. V roku 2025 jej výsledok hospodárenia ovplyvnili účtovné odpisy tejto nehnuteľnosti vo výške 25 000 
+eur. Ako vyplní Tabuľku I daňového priznania? 
+Údaj v stĺpci 3 zohľadňuje celkový vplyv kontrolovanej transakcie na výsledok hospodárenia resp. základ 
+dane v príslušnom zdaňovacom období a v budúcich zdaňovacích obdobiach. V nadväznosti na uvedené, 
+v prípade nákupu odpisovaného hmotného majetku sa táto významná kontrolovaná transakcia uvádza 
+v daňovom priznaní za zdaňovacie obdobie, v ktorom dôjde k  nákupu a v stĺpci 3 sa uvedie obstarávacia 
+cena tohto hmotného majetku, aj keď vplyv na výsledok hospodárenia v roku 2025 bol vo výške 25 000 eur. 
+ 
+Príklad č. 7 – obstaranie rôznych služieb od závislej osoby a úroky z úveru účtovaných na 
+majetok v obstarávaní 
+Právnická osoba v  priebehu roka 2025 realizovala  významné kontrolované transakcie – obstarala rôzne služby 
+(poradenské a inžinierske služby, geologický dozor) vo výške 48  000 eur od spoločnosti Beta s. r. o. so sídlom 
+v tuzemsku a úver od závislej osoby s istinou 200 000 eur od spoločnosti Delta s. r. o. so sídlom na Slovensku za 
+účelom vytvorenia dlhodobého hmotného majetku. Faktúry za služby a úroky z  úveru vo výške 10  000 eur boli 
+v priebehu roka 2025 účtované na účte 042 – obstaranie dlhodobého hmotného majetku a neovplyvnili riadok 100 
+daňového priznania, keďže neboli účtované do nákladov. Majetok bude zaradený do používania a  odpisovaný až 
+v nasledujúcich zdaňovacích obdobiach. Má právnická osoba takéto kapitalizované služby a  úroky uviesť 
+v Tabuľke I pod kódom 04 – nákup hmotného majetku?  
+Pokiaľ daňovník vytvára dlhodobý hmotný majetok vo vlastnej réžii, prípadne ho obstaráva od nezávislých 
+osôb a  spolu s  takýmto nadobudnutím dlhodobého majetku realizuje daňovník aj spojené významné 
+kontrolované transakcie so závislými osobami, tak v  zmysle poučenia k  vypĺňaniu Tabuľky I  daňovník 
+
+Strana 5 z 7 
+uvedie v Tabuľke I významné kontrolované transakcie v členení podľa druhu transakcie voči každej závislej 
+osobe samostatne tzn. jednotlivé transakcie zahŕňajúce služby pod samostatným kódom druhu transakcie 
+pre konkrétnu službu. V  stĺpci 3 sa uvedie cena služby v  sume, v ktorej vstupuje do obstarávacej ceny 
+predmetného majetku. Rovnako daňovník uvedie aj úroky z úveru pod príslušný kód transakcie 22 – Úroky 
+z úverov.  
+ 
+Príklad č. 8 – stavebné práce a materiál obstaraný od závislej osoby účtované na majetok 
+v obstarávaní 
+Spoločnosť A so sídlom v SR vykonávala v roku 2025 stavebné práce vo výške 400  000 eur a dodávala materiál 
+vo výške 1200 000 eur pre spoločnosť B (závislé osoby). Výstavba tejto nehnuteľnosti v  roku 2025 ešte nebola 
+ukončená, spoločnosť B ju nemá zaradenú v  majetku a  neodpisuje. A ko má spoločnosť B vyplniť Tabuľku 
+I v prípade, že nehnuteľnosť je v obstarávaní a nie je ešte vyčíslená konečná obstarávacia cena nehnuteľnosti? 
+V prípade postupného obstarávania nehnuteľnosti sa významné kontrolované transakcie uvedú v Tabuľke 
+I v tom zdaňovacom období, v ktorom boli dodané. Dodané služby sa uvedú do Tabuľky I pod kódom 16 – 
+služby ostatné, materiál pod kódom 03 – predaj/nákup materiálu. 
+ 
+Príklad č. 9 –  úročená pôžička medzi závislými osobami 
+Spoločnosť Alfa s. r. o. so sídlom v  SR poskytla v roku 2025 spoločnosti Beta s. r. o  so sídlom v SR pôžičku vo 
+výške 70 000 eur, ktorá bola úročená obvyklým úrokom . Bežný úrok za rok 2025 predstavoval sumu 7  000 eur. 
+Akým spôsobom ju obidve spoločnosti zachytia v tabuľke I daňového priznania za rok 2025? 
+V Tabuľke I sa uvádzajú významné kontrolované transakcie v zmysle § 17 ods. 5 zákona o dani z príjmov, 
+pričom pri každej uvedenej transakcii sa uvádza aj jej vplyv na výsledok hospodárenia. 
+Ak ide o významnú kontrolovanú transakciu vo forme úročenej pôžičky, v  Tabuľke I bude táto významná 
+kontrolovaná transakcia zachytená prostredníctvom vykázania úrokov. Spoločnosť Alfa s. r. o. uvedie 
+výnosové úroky so znamienkom „plus“ a s poločnosť Beta s. r. o. nákladové úroky so znamienkom  
+„mínus“, pod číselným kódom transakcie 22 – úroky z  úverov. Keďže istina nemá vplyv na výsledok 
+hospodárenia ani základ dane, v Tabuľke I sa neuvádza. 
+
+Strana 6 z 7 
+Spoločnosť Alfa s.r.o. 
+  
+Spoločnosť Beta s.r.o. 
+ 
+Príklad č. 10 – bezúročná pôžička medzi závislými osobami 
+Spoločnosť A  a. s. poskytla v  roku 2025 Spoločnosti B a. s. bezúročnú pôžičku vo výške 120  000 eur. Akým 
+spôsobom ju spoločnosť A zachytí v Tabuľke I daňového priznania? 
+Keďže istina nemá vplyv na výsledok hospodárenia ani základ dane, v Tabuľke I sa neuvádza. 
+Podľa článku 3 bodu 3 Usmernenia MF SR je pri kontrolovaných transakciách, pri ktorých sa 
+nevypracováva úplná alebo základná dokumentácia povinnosť podľa § 17 ods. 7 alebo § 18 ods. 1 zákona 
+o dani z príjmov splnená podaním riadne vyplneného daňového priznania k  dani z príjmov za príslušné 
+zdaňovacie obdobie. Ak daňovník nesplní povinnosť podľa prvej vety článku 3 bodu 3 Usmernenia MF SR, 
+vedie skrátenú dokumentáciu o významných kontrolovaných transakciách podľa článku 6 Usmernenia MF 
+SR. 
+Poznámka: Uvedené nemá vplyv na povinnosť úpravy základu dane Spoločnosti A v súlade s § 17 ods. 5 zákona 
+o dani z príjmov. 
+Príklad č. 11 – alokácia výnosov a nákladov stálej prevádzkarni 
+Česká spoločnosť má na Slovensku agentskú stálu prevádzkareň. Zdaniteľné príjmy stálej prevádzkarni alokovala 
+česká spoločnosť na základe činnosti, ktorú vykonáva stála prevádzkareň. Súčasne do daňových výdavkov stálej 
+prevádzkarne sú zahrnuté aj pomerná č asť výdavkov vynaložených zriaďovateľom na vedenie a všeobecných 
+správnych výdavkov (nákladov), ktoré sú priraditeľné stálej prevádzkarni.  
+Akým spôsobom sa vykáže v Tabuľke I alokácia výnosov stálej prevádzkarni od zriaďovateľa,  alokácia pomernej 
+časti nákladov na vedenie a  všeobecných administratívnych nákladov od zriaďovateľa stálej prevádzkarni? Budú 
+tieto transakcie deklarované pod kódom 34 ako Ostatné transakcie alebo sa posudzujú podľa charakteru? 
+Tabuľku I vypĺňa aj daňovník, ktorý vykonáva činnosť na území SR prostredníctvom stálej prevádzkarne. 
+V Tabuľke I sa uvádzajú aj vnútropodnikové kontrolované transakcie medzi zriaďovateľom a jeho stálou 
+prevádzkarňou.  
+V prípade ak má daňovník významné kontrolované transakcie s rozdielnym kódom druhu transakcie (napr. 
+služby marketingové – kód 12, služby manažérske – kód 10, a pod.), voči rovnakej závislej osobe a súčasne 
+s rovnakým kódom štátu, uvádza každú takúto trans akciu v Tabuľke I samostatne. Ak ide o skupinu  
+
+Strana 7 z 7 
+kontrolovaných transakcií s tým istým kódom druhu transakcie, voči jednej a tej istej závislej osobe s 
+rovnakým kódom štátu, v takom prípade daňovník uvádza túto skupinu kontrolovaných transakcií do 
+jedného riadku Tabuľky I.  
+Z uvedeného vyplýva, že aj v prípade stálej prevádzkarne daňovník uvedie jednotlivé transakcie pod 
+jednotlivými kódmi podľa druhu resp. charakteru transakcie. Pokiaľ daňovník nenájde v definovaných 
+druhoch transakcie inú vhodnú položku, tak predmetnú trans akciu uvedie pod kódom transakcie 34 – 
+Ostatné transakcie. 
+Pokiaľ daňovník uvedie transakcie so stálou prevádzkarňou pod kódom 34 – Ostatné transakcie, 
+odporúčame uviesť doplňujúce informácie a zdôvodnenie v časti VIII. DPPO – Miesto na osobitné záznamy 
+daňovníka. 
+Daňovník má povinnosť riadne a  správne vyplniť daňové priznanie a  taktiež má povinnosť viesť 
+dokumentáciu k transferovému oceňovaniu pre významné kontrolované transakcie v  zmysle Usmernenia 
+MF SR. V článku 3 v bode 3 Usmernenia MF SR  je uvedené, že pri kontrolovaných transakciách, pri ktorých sa 
+nevypracováva dokumentácia podľa bodu 1 článku 3 (úplná dokumentácia) a  bodu 2 článku 3 (základná 
+dokumentácia), je povinnosť podľa § 17 ods. 7 alebo § 18 ods. 1 zákona o dani z príjmov splnená podaním riadne 
+vyplneného daňového priznania za príslušné zdaňovacie obdobie vrátane časti týkajúcej sa transakcií závislých 
+osôb podľa § 2 písm. n) zákona o dani z príjmov, teda Tabuľky I. 
+To znamená, že v prípade kontrolovaných transakcií spadajúcich do rozsahu úplnej a základnej dokumentácie je 
+potrebné, aby daňovník vyplnil Tabuľku I  daňového priznania , ale zároveň má stále povinnosť viesť 
+príslušnú dokumentáciu.  Rozdiel je pri významných kontrolovaných transakciách spadajúcich do rozsahu 
+skrátenej dokumentácie, kde daňovník si svoju povinnosť splní riadnym vyplnením daňového priznania vrátane 
+Tabuľky I a o takto uvedených významných kontrolovaných transakciách už dokumentáciu nevedie. Ak si však 
+daňovník túto povinnosť nesplní , vedie skrátenú dokumentáciu o  významných kontrolovaných transakciách 
+podľa článku 6 Usmernenia MF SR. To môže nastať napr. z  dôvodu obmedzeného počtu riadkov v  Tabuľke 
+I daňového priznania. 
+Maximálny počet riadkov, ktoré je možné v  Tabuľke I vyplniť je 99. Ak maximálny počet riadkov nepostačuje na 
+uvedenie všetkých významných kontrolovaných transakcií, z  tabuľky I  sa vynechajú kontrolované transakcie 
+s najnižšou hodnotou. Významné kontrolované transakcie, ktoré sa neuviedli v daňovom priznaní z dôvodu 
+nedostatočného počtu riadkov sa uvedú v príslušnej dokumentácii podľa Usmernenia MF SR. 
+Upozornenie: 
+Bez ohľadu na to, koľko riadkov daňovník vyplní v  Tabuľke I  elektronického formulára daňového priznania, 
+v tlačenej verzii bude podľa oficiálneho vzoru len 18 riadkov. 
+Vypracovalo:  Finančné riaditeľstvo SR  
+Centrum podpory pre dane  
+Marec 2026 

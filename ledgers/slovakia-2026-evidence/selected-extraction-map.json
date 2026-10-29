@@ -1,0 +1,82 @@
+[
+  {
+    "source_id": "13",
+    "section": "1",
+    "native_reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "native_LF_start": 3199,
+    "native_LF_end": 3212,
+    "output": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-1.txt",
+    "output_sha256": "4bf9cc10f6d7d30169560c798b446ead7f145b2aa783037dcf20505b85cc352d",
+    "status": "Extracted only; actual read is separately recorded, not inferred."
+  },
+  {
+    "source_id": "13",
+    "section": "17f",
+    "native_reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "native_LF_start": 7052,
+    "native_LF_end": 7135,
+    "output": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17f.txt",
+    "output_sha256": "0f2f4d7fd0c123ca49abda775b6982b364f3708e9a11506364760b86454e83ba",
+    "status": "Extracted only; actual read is separately recorded, not inferred."
+  },
+  {
+    "source_id": "13",
+    "section": "17g",
+    "native_reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "native_LF_start": 7136,
+    "native_LF_end": 7192,
+    "output": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17g.txt",
+    "output_sha256": "88890797b1d490b7c42f413ab029b557e68fe81c7c9c5f249a3a5bb8d44e7665",
+    "status": "Extracted only; actual read is separately recorded, not inferred."
+  },
+  {
+    "source_id": "13",
+    "section": "43a",
+    "native_reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "native_LF_start": 2046,
+    "native_LF_end": 2073,
+    "output": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-43a-TOC-rejected.txt",
+    "output_sha256": "a497cbe9e73d282d6b3e9207a2f8f7160f8fc95667c877b4d1260c3697ee62b3",
+    "status": "Rejected TOC selection; never quoted as operative law"
+  },
+  {
+    "source_id": "12",
+    "section": "43",
+    "native_reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/12.txt",
+    "native_LF_start": 10849,
+    "native_LF_end": 11203,
+    "output": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/12-article-43.txt",
+    "output_sha256": "ec0f1b74906469f62aba09360254ebcc6957f84573f4b4d94fbfc4ab55b0192c",
+    "status": "Extracted only; actual read is separately recorded, not inferred."
+  },
+  {
+    "source_id": "14",
+    "section": "11",
+    "native_reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/14.txt",
+    "native_LF_start": 4531,
+    "native_LF_end": 4648,
+    "output": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/14-article-11.txt",
+    "output_sha256": "c8df7a47173871329e1643014217412f54f986441a22f9668a75d9e558a45fba",
+    "status": "Extracted only; actual read is separately recorded, not inferred."
+  },
+  {
+    "source_id": "14",
+    "section": "52zzzm",
+    "native_reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/14.txt",
+    "native_LF_start": 14823,
+    "native_LF_end": 14826,
+    "output": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/14-article-52zzzm.txt",
+    "output_sha256": "b56adc915d4773c3f774ecea62bc53904acadeea3c1b52e65a506aa4b4afbe1b",
+    "status": "Extracted only; actual read is separately recorded, not inferred."
+  },
+  {
+    "source_id": "13",
+    "section": "43a",
+    "native_reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "native_LF_start": 11385,
+    "native_LF_end": 11408,
+    "output": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-43a.txt",
+    "output_sha256": "a217d6f9415572a2ed192027202a7b7099fdd29ee07c86937f8a5ac80a5815f0",
+    "status": "Actual operative last header selected; actual read separately recorded."
+  }
+]

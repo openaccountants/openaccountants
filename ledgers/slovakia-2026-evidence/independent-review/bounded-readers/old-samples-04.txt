@@ -1,0 +1,78 @@
+
+sk-corporate-income-tax earliest unit4 oldLF[17, 27]
+OLD:- **Overview of CIT structure** — Slovak corporate income tax (daň z príjmov právnických osôb) moved to a three-tier rate structure from 1 January 2025, with a reduced 10% rate for small companies and a new top 24% rate for the largest taxpayers. Resident companies are taxed on worldwide income; non-residents on Slovak-source income.  _(Income Tax Act (Act No. 595/2003 Coll.))_
+- **Reduced CIT rate (small companies)** — 10% percent (where taxable income does not exceed EUR 100,000 in the tax period)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_
+- **Standard CIT rate** — 21% percent (where taxable income is between EUR 100,000 and EUR 5,000,000)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_
+- **Top CIT rate (large taxpayers)** — 24% percent (where taxable income exceeds EUR 5,000,000)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_
+- **Tax base** — Accounting profit adjusted for tax purposes (non-deductible items added back, exempt items removed)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/income-determination)_
+- **Minimum tax (tax licence)** — EUR 340 up to EUR 1,540+ EUR (Minimum corporate tax reintroduced from 2024, scaled by taxable revenue (approx bands — confirm exact 2025 revenue tiers))  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_
+- **WHT on dividends to companies/non-residents** — 0% / 35% percent (Generally 0% to corporate shareholders in cooperating states; 35% to non-cooperating jurisdictions)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_
+- **WHT on interest** — 19% / 35% percent (19% standard; 35% to non-cooperating jurisdictions; reduced/0% under EU Interest-Royalty Directive or treaty)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_
+- **WHT on royalties** — 19% / 35% percent (19% standard; 35% to non-cooperating jurisdictions; reduced/0% under EU Interest-Royalty Directive or treaty)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_
+- **CIT return filing deadline** — Within 3 months after the end of the tax period (31 March for a calendar year); extendable by 3 months (6 for foreign income)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/tax-administration)_
+- **CIT payment deadline** — Tax due payable by the filing deadline; advance payments quarterly or monthly depending on prior-year tax  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/tax-administration)_
+DEST:Current LF21–22,31–56,60–69,115,130–140,168–169
+DISPOSITION:All11 original bullets retained as topics: residence;10/21/24rates;accountingbase;minimum tax corrected from unsupported1540+;corporate dividends;interest;royalties;return;payment/advances. Old secondary-source URLs remain in complete archived text, not adopted as primary law.
+CURRENT [21, 22] - **Slovak-resident legal persons**: a company with its seat or place of effective management in Slovakia (§ 2(d) second point). Typical clients: s.r.o., a.s., cooperatives. They are taxed on worldwide income.
+- **Non-resident legal persons** with Slovak-source income (§ 16), in particular a permanent establishment in Slovakia. A registered permanent establishment files a DPPO return like a resident. Slovak income with no permanent establishment is mostly taxed by withholding (§ 43); see "Cross-border points".
+CURRENT [31, 56] "Taxable revenue" below is zdaniteľné príjmy (výnosy): the company's taxable income in the revenue sense, before expenses. It is not the tax base. The rate band is chosen by revenue, then the single rate applies to the whole tax base after losses. There is no slicing: a company with EUR 100,001 of taxable revenue pays 21% on all of its base.
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| CIT rate, taxable revenue up to EUR 100,000 (§ 15(b)(1a)) | 10% of the base after losses | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| CIT rate, taxable revenue above EUR 100,000 and up to EUR 5,000,000 (§ 15(b)(1b)) | 21% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| CIT rate, taxable revenue above EUR 5,000,000 (§ 15(b)(1c)) | 24% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Exit tax special base (§ 17f, rate in § 15(b)(3)) | 21% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Dividends received from a non-cooperating state, special base (§ 51e(4), rate in § 15(b)(2)) | 35% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Yield on Slovak, EU or EEA state bonds and treasury bills, special base (§ 51ea, rate in § 15(b)(4)) | 13% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Minimum tax, taxable revenue up to EUR 50,000 (§ 46b(2)(a)) | EUR 340 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Minimum tax, above EUR 50,000 up to EUR 250,000 (§ 46b(2)(b)) | EUR 960 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Minimum tax, above EUR 250,000 up to EUR 500,000 (§ 46b(2)(c)) | EUR 1,920 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Minimum tax, above EUR 500,000 up to EUR 5,000,000 (§ 46b(2)(d)) | EUR 3,840 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Minimum tax, above EUR 5,000,000 (§ 46b(2)(e), new: Act No. 261/2025, periods starting on or after 1 January 2026) | EUR 11,520 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2025/261/20260101.html |
+| Micro-taxpayer (mikrodaňovník): revenue up to EUR 60,000 **and all §2(w) conditions below** | Full loss offset, no 50% cap | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Loss carry-forward (§ 30) | 5 periods; capped at 50% of the base unless a micro-taxpayer | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Related-party interest limit (§21a), subject to lender/borrower and capitalised-interest boundaries below | Covered interest above 25% of accounting EBITDA is not deductible; no §21a adjustment if §17k increased the base | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Interest limitation rule (§17k), subject to exceptions and contract-date transition below | If covered net borrowing costs exceed EUR 3,000,000, add back their excess over 30% of statutory tax EBITDA; blocked costs have a five-period carry-forward | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Depreciable tangible movable asset (§ 22(2)(a)) | Entry price above EUR 1,700 and useful life over one year | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Advances, prior-year tax above EUR 16,600 (§ 42(1)) | Monthly, 1/12 of prior-year tax | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Advances, prior-year tax above EUR 5,000 up to EUR 16,600 (§ 42(2)) | Quarterly, 1/4 of prior-year tax | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| No advances, prior-year tax up to EUR 5,000 (§ 42(3)(a)) | None, unless the tax office orders them | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Withholding tax, standard (§ 43(1)(b)) | 19% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Withholding tax, payee in a non-cooperating state (§ 43(1)(c)) | 35% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Late payment interest (Tax Procedure Code § 156(2)) | 4 times the ECB main rate a year, at least 15% a year, for at most 4 years. At the ECB main refinancing rate of 2.65% (from 16 September 2026) the 15% floor applies | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html |
+CURRENT [60, 69] **Start from accounting profit.** A company that keeps double-entry books starts from the profit or loss in its statutory accounts (Slovak GAAP or IFRS), then adds back and deducts the items the Act lists (§ 17). The result, less tax losses, is the base the rate applies to.
+
+**Common add-backs.**
+- Expenses that are not tax expenses under § 21, such as representation (entertainment) costs, and fines and penalties imposed by public bodies.
+- Expenses deductible only when paid (§ 17(19)). Among them: rent and royalties; marketing and market studies; commissions; legal and advisory services under CPA codes 69.1, 69.2, 70.1 and 70.22; contractual penalties and late payment interest owed by the company; payments to a person in a non-cooperating state once withholding duties are met. If they are booked in 2026 and paid in 2027, they come into the 2027 base.
+- From 1 January 2026, the nondeductible-VAT rule in § 52zzzk applies specifically to VAT restricted under [VAT Act § 85n](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-85n), as its footnote 161 states. That restricted vehicle-related VAT is not a tax expense and, for the specified tangible vehicle, is not part of its tax entry price; the linked later business/private-use VAT change is outside the income-tax base. This is not a general disallowance of all VAT that an exempt or mixed business cannot recover. Ordinary nondeductible VAT and coefficient VAT follow § 19(3)(k): eligible expense VAT can be a tax expense; VAT included in tangible/intangible asset entry price under § 25(5)(b)/(c) instead follows the asset treatment. For example, outside the § 85n restriction, a qualifying machine costing EUR 10,000 plus EUR 2,300 VAT, with 60% VAT recovery, has EUR 920 nondeductible VAT and tax entry price EUR 10,920, not an automatic EUR 920 add-back ([ITA §§ 19, 25 and 52zzzk](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).
+- Accounting depreciation above tax depreciation.
+- Interest caught by § 21a or § 17k (see below).
+
+**Common deductions.** Income not subject to tax, such as most dividends (§ 12(7)(c), below); tax depreciation above accounting depreciation; the R&D super-deduction (§ 30c: 100% of R&D costs, plus 100% of the increase in the two-year average of R&D costs over the average of the two prior periods) and the investment deduction (§ 30e) where the conditions are met.
+CURRENT [130, 140] - **Return.** The DPPO return is due within three calendar months after the end of the tax period: 31 March 2027 for calendar 2026 (§ 49(2)). Tax is payable by the same date.
+- **Extension by notice.** A notice filed with the tax office before the deadline moves it by up to three whole calendar months, to 30 June 2027 for calendar 2026. The new date is the end of the month the company names. If the company has foreign-source income, the move is up to six months, to 30 September 2027 (§ 49(3)(a) and (b)). Tax is due on the new date. Companies in liquidation or bankruptcy apply instead, at least 15 days before the deadline (§ 49(3)(c)).
+- **Verified current form.** The [actual Ministry forms package](https://www.mfsr.sk/files/archiv/66/prispevok_16.zip), notice MF/014310/2026-721, supplies **MF/014309/2026-721, DPPOv26 v1.13**, a 21-page sample including the annex templates. It applies where the filing deadline falls **after 31 December 2026**, including a calendar-2026 return due in March 2027. The earlier 15-page MF/012187/2025-721 referenced in the prior Guide belongs to deadlines from 1 January through 31 December 2026; it is retained here as historical form information. Choose by the return's deadline rather than the year in the filename. The matching [2026 instructions, MF/014312/2026-721](https://www.mfsr.sk/files/archiv/36/prispevok_18.zip), identify the same current form.
+- **Electronic filing and annexes.** A legal person entered in the commercial register, and any VAT payer, must file electronically (Tax Procedure Code §14(1)(a)). Some supporting documents can be supplied separately, but the current form's five annex categories remain part of the return even if blank: the combined §13a/§13b annex, §30c, §30ca, §30e, and the **part VIII** additional-recipient annex. The earlier part VII recipient-annex reference belonged to the prior form. Count additional projects, recipient sheets and other documents as the instructions require (current form p.16; instructions p.28).
+- **Minimum tax** is payable by the return deadline (§ 46b(4)).
+- **Advances in 2026 (§ 42).** The tax that sets them (§ 42(6)) is the tax on the base after losses, at the § 15 rate shown in the previous period's return, less reliefs under the Act. It is the computed tax, not the minimum tax. Based on the 2025 tax:
+  - above EUR 16,600: monthly, 1/12 of that tax, by the end of each month;
+  - above EUR 5,000 up to EUR 16,600: quarterly, 1/4, by the end of each calendar quarter (or quarter of the fiscal year);
+  - up to EUR 5,000: none, unless the tax office orders them.
+  Until the deadline for the 2025 return, advances follow the last known tax, from the 2024 return (§ 42(7)). A company formed during the year (other than by merger or division) pays no advances in its first period (§ 42(4)). A company filing its first return pays no advances until that return is due, then makes up the advances that fell due by the end of the following month (§ 42(8)).
+- **Financial transaction tax.** Separate from CIT, Act No. 279/2024 Coll. taxes financial transactions. Its § 6 rates from 1 January 2026: 0.4%, at most EUR 40 per transaction; 0.8% on cash withdrawals; EUR 2 per payment card. This skill does not cover it beyond this pointer.
+CURRENT [168, 169] - **Withholding on payments abroad (§ 43).** Tax is withheld at 19% on Slovak-source income of a non-resident without a registered permanent establishment, such as royalties, interest and certain services. The rate is 35% where the payee is in a non-cooperating state. A treaty or the EU Interest and Royalties Directive can reduce or remove it. For the detailed rules see [sk-cross-border](sk-cross-border.md).
+- **Dividends paid abroad.** A dividend paid by a Slovak company to a company is not subject to tax (§ 12(7)(c)). The exception is a recipient company that is a taxpayer of a non-cooperating state (§ 12(7)(c)(1)). That dividend is withheld under § 43(2) (§ 16(1)(e) point 9) at 35% (§ 43(1)(c)).
+
+sk-corporate-income-tax earliest unit5 oldLF[29, 29]
+OLD:<!-- openaccountants-cta-block -->
+DEST:Current LF371
+DISPOSITION:Original CTA/trust/reference block retained byte-exact.
+
+
+sk-corporate-income-tax earliest unit6 oldLF[31, 31]
+OLD:---
+DEST:Current LF373
+DISPOSITION:Original CTA/trust/reference block retained byte-exact.
+

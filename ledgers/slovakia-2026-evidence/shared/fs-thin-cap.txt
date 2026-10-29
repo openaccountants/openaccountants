@@ -1,0 +1,124 @@
+Pravidlá nízkej kapitalizácie
+(function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.async=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
+'//podpora.financnasprava.sk/scripts/track.js',
+function(e){});
+Titulná stránka
+Finančná správa
+Pre médiá
+Praktické príklady
+Formuláre
+Kontakty
+Finančná správa Slovenská republika
+Úvod
+>
+Daň z príjmov
+>
+Daň z príjmov právnickej osoby
+>
+Nízka kapitalizácia
+> 
+    	 	 
+		Pravidlá nízkej kapitalizácie
+Pravidlá nízkej kapitalizácie
+Od 1.1.2015 sa pravidlá „nízkej kapitalizácie“ podľa §21a zákona o dani z príjmov  vzťahujú na daňovníka – právnickú osobu (dlžníka) účtujúcu v ústave podvojného účtovníctva alebo podľa medzinárodných štandardov pre finančné výkazníctvo, ktorý je daňovníkom s neobmedzenou daňovou povinnosťou  alebo daňovníkom s obmedzenou daňovou  povinnosťou so stálou prevádzkarňou na území SR. Pri poskytnutí  pôžičky alebo úveru závislou osobou  dlžník  zahrnie do daňových výdavkov
+úroky a súvisiace náklady  na prijaté úvery a pôžičky maximálne do výšky 25 % ukazovateľa EBITDA, pričom do stavu úverov a pôžičiek sa nezahŕňajú úvery a pôžičky alebo ich časti, z ktorých úroky sú súčasťou obstarávacej ceny  alebo vlastných nákladov majetku podľa osobitného predpisu.
+S účinnosťou od 1.1.2024
+bol § 21a zákona o dani z príjmov doplnený o nový odsek 4 v nadväznosti na nové ustanovenie §17k Pravidlo o obmedzení úrokových nákladov, ktorým sa odstraňuje kolízia uplatnenia dotknutých ustanovení tak, že sa prednostne skúma  aplikovateľnosť §17k a ak daňovník zvýši základ dane podľa §17k, následne sa už neuplatní §21a.
+FAQ
+Otázka č.1 – Výpočet ukazovateľa EBITDA
+Z akých údajov sa vychádza pri výpočte  25 %  ukazovateľa  EBITDA ?
+Odpoveď
+Ukazovateľ EBITDA sa vypočíta z výsledku hospodárenia za príslušné zdaňovacie obdobie (ktorého súčasťou sú aj úroky a súvisiace náklady na prijaté úvery  a pôžičky), ku ktorému sa pripočítajú účtovné odpisy (účet 551) a náklady na prijaté úvery a pôžičky (účet 562), z výslednej sumy sa vypočíta 25 %.  Tie náklady na prijaté úvery  a pôžičky od závislých osôb, ktoré prekročia 25 % ukazovateľa EBITDA sú nedaňovým výdavkom podľa § 21a zákona o dani z príjmov.
+Napríklad  obchodná spoločnosť dosiahla za rok 2026 výsledok hospodárenia  zisk vo výške 3 820 €, účtovné odpisy na účte 551 vo výške 20 000 €, náklady na účte 562  vo výške 30 000 €.
+Úroky a súvisiace náklady spojené s pôžičkou od tuzemskej závislej osoby zaúčtovala vo výške 16 000 €. Výpočet ukazovateľa
+EBITDA
+= 3 820+20 000+30 000=53 820 €*25%=13 455 €. Suma 2 545 € (16 000-13 455) je nedaňovým výdavkom na r. 130 (a súčasne r.13 tabuľky A) tlačiva daňového priznania právnických osôb za rok 2026.
+Otázka č.2 – Náklady súvisiace s prijatými pôžičkami
+Čo sa považuje za náklady súvisiace  s prijatými pôžičkami alebo úvermi pre účely nízkej kapitalizácie?
+Odpoveď
+Súvisiacimi nákladmi pre účely nízkej kapitalizácie sú napríklad výdavky na znalecké posudky, poplatky za bankové záruky, provízie za sprostredkovanie pôžičky  a pod.
+Otázka č.3 – Úroky ako súčasť obstarávacej ceny majetku a nízka kapitalizácia
+Pre účely výpočtu  ukazovateľa EBITDA  sa počítajú všetky úroky z úverov a pôžičiek, teda aj úroky súvisiace  s obstaraním hmotného majetku ?
+Odpoveď
+Nie, do stavu úverov a pôžičiek pre účely nízkej kapitalizácie sa nezahŕňajú úvery  a pôžičky alebo ich časti, z ktorých úroky sú súčasťou obstarávacej ceny  alebo vlastných nákladov majetku podľa účtovníctva. Podľa § 35 ods. 2 písm. h)  Postupov účtovania pre podnikateľov účtujúcich v sústave podvojného účtovníctva sa na účte 042- Obstaranie dlhodobého hmotného majetku neúčtujú úroky z úverov, ak sa do času jeho uvedenia do užívania nerozhodne, že budú tvoriť súčasť obstarávacej ceny. Teda úroky, ktoré budú na základe rozhodnutia účtovnej jednotky účtované na účet 042 sa do stavu úverov a pôžičiek pre účely nízkej kapitalizácie nezapočítajú.
+Otázka č.4 – Vzťah závislosti vzniknutý v priebehu roka a nízka kapitalizácia
+V prípade, ak sa  právnická osoba ako veriteľ  stala voči dlžníkovi spriaznenou osobou počas roka, posudzuje sa  závislosť medzi veriteľom a dlžníkom  k poslednému dňu zdaňovacieho obdobia? Počítajú sa pre účely nízkej kapitalizácie aj úroky, ktoré časovo spadajú do obdobia, kedy právnická osoba ešte nebola spriaznenou voči dlžníkovi, tzn. všetky úroky za celé zdaňovacie obdobie, keďže k poslednému dňu zdaňovacieho obdobia už vzťah spriaznenosti existuje?
+Odpoveď
+V prípade, ak vzťah závislosti vznikne v priebehu zdaňovacieho obdobia (k 1.1. zdaňovacieho obdobia veriteľ a dlžník nie sú spriaznenými osobami), do porovnania výšky nákladových úrokov od závislých osôb voči 25 % ukazovateľa EBITDA vstupujú len nákladové úroky voči spriaznenej osobe, účtované od okamihu, kedy sa veriteľ a dlžník na účely § 21a zákona o dani z príjmov stali závislými osobami, tzn. úroky účtované v období, kedy právnická osoba ešte nebola  spriaznenou osobou voči dlžníkovi nepodliehajú testovaniu podľa § 21a zákona o dani z príjmov.
+Otázka č.5 – Záporný ukazovateľ EBITDA
+Ak nám ukazovateľ EBITDA vyšiel záporný, akú výšku úrokov z pôžičky od závislej osoby si môžeme uplatniť do nákladov?
+Odpoveď
+V tomto prípade u dlžníka úroky  z pôžičky voči závislej osobe nie sú  daňovým výdavkom a v plnej výške budú  uvedené na r.13 tabuľky A (súčasne r.130) tlačiva daňového priznania právnických osôb.
+Otázka č.6 – Zmenky, dlhopisy a iné CP a nízka kapitalizácia
+Vzťahuje sa úprava základu dane v rámci nízkej kapitalizácie aj na vystavené zmenky, resp. dlhopisy a iné cenné papiere?
+Odpoveď
+Podľa znenia  §21a zákona o dani z príjmov sa pravidlá nízkej kapitalizácie vzťahujú len
+na úroky z poskytnutých úverov a pôžičiek.
+Otázka č.7 – Daňovníci, u ktorých sa neuplatňuje  nízka kapitalizácia
+Existujú zo zákona aj výnimky pri ktorých sa pravidlá nízkej kapitalizácie neuplatňujú?
+Odpoveď
+Áno, podľa § 21a ods.3 zákona od ani z príjmov sa pravidlá nízkej kapitalizácie nevzťahujú na týchto daňovníkov:
+- banky a pobočky zahraničnej banky
+- poisťovne, od 1.1.2016 pobočky poisťovne z iného členského štátu EÚ , pobočky zahraničnej poisťovne
+- zaisťovne, od 1.1.2016 pobočky zaisťovne z iného členského štátu EÚ
+,
+pobočky zahraničnej zaisťovne
+- subjekt podľa osobitného predpisu (napr. dôchodcovské správcovské spoločnosti, doplnkové dôchodkové spoločnosti, obchodníci s cennými papiermi, finanční agenti  a finanční poradcovia, subjekty kolektívneho investovania, správcovská spoločnosť )
+- lízingové spoločnosti, ktoré sú povinné predkladať Národnej banke Slovenska výkazy v súlade s Opatrením NBS č.19/2014 o predkladaní výkazu faktoringovou spoločnosťou, spoločnosťou splátkového financovania alebo lízingovou spoločnosťou na štatistické účely.
+Otázka č.8 – Osoba veriteľa a nízka kapitalizácia
+Našej  spoločnosti s ručením obmedzeným  poskytol pôžičku spoločník  ako fyzická osoba. Postupujeme pri uplatňovaní úrokov do daňových výdavkov podľa pravidiel nízkej kapitalizácie, napriek tomu, že veriteľom je fyzická osoba?
+Odpoveď
+Áno, pretože ustanovenie §21a zákona o dani z príjmov ukladá zvýšiť  základ dane o výšku úrokov a súvisiacich nákladov presahujúcich 25 % ukazovateľa EBITDA  dlžníkovi - právnickej osobe.  Osoba veriteľa môže byť aj fyzická aj právnická závislá  (tuzemská aj zahraničná) osoba. Len osoba dlžníka je v ustanovení definovaná ako  právnická osoba - daňovník  s neobmedzenou daňovou povinnosťou alebo daňovník s obmedzenou daňovou  povinnosťou so stálou prevádzkarňou na území SR.
+Otázka č.9 – Poskytnutie pôžičky  veriteľovi od závislej osoby dlžníka a nízka kapitalizácia
+Spoločnosť A (dlžník) prijala pôžičku od spoločnosti B (veriteľa), ktorej poskytla pôžičku spoločnosť C, ktorá je voči spoločnosti A závislou osobou. Predpokladáme, že pravidlá nízkej kapitalizácie sa v tomto prípade neuplatnia.
+Odpoveď
+Podľa § 21a ods.2 zákona o dani z príjmov  ak podmienkou pre poskytnutie pôžičky dlžníkovi (spoločnosť A) veriteľom (spoločnosť B) je poskytnutie priamo súvisiacej pôžičky tomuto veriteľovi závislou osobou voči spoločnosti A (spoločnosť C), považuje sa na účely nízkej kapitalizácie vzhľadom k tejto pôžičke veriteľ (spoločnosť B) za závislú osobu vo vzťahu k dlžníkovi (spoločnosť A) a aj na túto situáciu sa uplatnia  pravidlá nízkej kapitalizácie.
+Otázka č.10 – Úroky z viacerých pôžičiek a výpočet ukazovateľa EBITDA
+Ak spoločnosť prijala pôžičky od viacerých závislých osôb, porovnáva každý úrok z jednotlivých pôžičiek samostatne, alebo porovnáva úroky zo všetkých pôžičiek kumulatívne k ukazovateľu EBITDA?
+Odpoveď
+Ak daňovník prijal úvery a pôžičky od viacerých závislých osôb, je povinný upraviť základ dane o úhrnnú sumu úrokov z týchto úverov a pôžičiek, ktoré počas zdaňovacieho obdobia presahujú 25 % ukazovateľa EBITDA. Daňovník teda na účely ustanovenia  § 21a  zákona o dani z príjmov  neporovnáva úroky z jednotlivých úverov a pôžičiek voči 25 % ukazovateľa EBITDA , ale úroky zo všetkých úverov a pôžičiek od závislých osôb v úhrne. Presahujúca suma úrokov nie je daňovým výdavkom a uvedie sa na riadku 130 daňového priznania(riadok 13 tabuľky A).
+Otázka č.11 – Úroky aktivované do ocenenia zásob vlastnej výroby a  ukazovateľ EBITDA
+Spoločnosť so sídlom v SR (rezident) prijala úver od závislej osoby. Úroky z tohto úveru  sú účtované do nákladov a následne sú aktivované do ocenenia zásob vlastnej výroby (účtovným zápisom 121/611), keďže  ide o priame náklady vynaložené na výrobu. Budú sa úroky z tohto úveru zahŕňať do celkového stavu úverov pre účely uplatnenia §21a zákona o dani z príjmov v súvislosti s pravidlami nízkej kapitalizácie ?
+Odpoveď
+Zákon o dani z príjmov v §21a striktne vymedzuje výnimku z pravidiel nízkej kapitalizácie na úroky z úverov poskytnuté na obstaranie hmotného a nehmotného majetku oceňované obstarávacou cenou a od 1.1.2023 aj na úroky z úverov na vlastné zásoby, ktorých súčasťou ocenenia sú aj úroky z úverov od závislých osôb  oceňované  vlastnými nákladmi podľa zákona o účtovníctve. t.j. na úroky z úverov a pôžičiek použitých na vytvorenie majetku vlastnou činnosťou.
+Aktuálne: dane a clá
+eSlužby
+Prihlásenie - LiveAgent
+Moje tikety
+Vytvoriť tiket
+var searchId = document.location.hash.replace('#', '');
+    var headTag = document.getElementsByTagName("head").item(0);
+    var scriptTag = document.createElement("script");
+    scriptTag.setAttribute("type", "text/javascript");
+    scriptTag.setAttribute("src", "/track.php?id=3753&searchId="+searchId);
+    headTag.appendChild(scriptTag);
+Úvod
+Finančná správa
+Legislatíva
+Infoservis
+Pre médiá
+Praktické príklady
+Kontakty
+Copyright © 2013
+Finančné riaditeľstvo SR
+Prevádzku stránky www.financnasprava.sk a správu jej obsahu zabezpečuje Finančné riaditeľstvo SR
+RSS
+Facebook
+O portáli FS
+Ministerstvo financií SR
+Poskytovanie informácií podľa zákona č.211/2000 Z.z.
+RSS pre novinky a aktuality
+Kariéra
+Vyhlásenie o prístupnosti
+Mapa stránok
+Powered by
+LiveAgent
+// <![CDATA[
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45948170-1', 'financnasprava.sk');
+  ga('send', 'pageview');
+// ]]>

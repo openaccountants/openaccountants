@@ -1,0 +1,147 @@
+
+slovakia-pit main unit17 LF[83, 83]
+The result is the business partial base. A tax loss can be carried forward five years. A micro-taxpayer (business revenue up to EUR 60,000, §2(w)) can use it in full; others only up to 50% of the business base (§30(1)).
+DEST [86, 86]
+Rechecked current destination; prior 423-unit review disposition: F13 full microtaxpayer gates and5period expiry preserved
+
+slovakia-pit main unit19 LF[87, 90]
+**Allowances (nezdaniteľné časti, §11).** They reduce only the employment and business bases, never rental, capital or other income (§11(1)).
+- The personal allowance and the spouse allowance are tested on the tax base from §5 and §6(1),(2) income. A taxpayer who at the start of 2026 receives an old-age, early, service or similar foreign pension gets no personal allowance if the pension for the year, including the 13th pension, exceeds the allowance; otherwise the allowance is cut to the difference (§11(6)).
+- The spouse allowance needs a spouse living with the taxpayer who cared for a minor child, received a care allowance, was a registered jobseeker, or is disabled (§11(4)). The spouse's own income is net of their contributions. Months count only if the conditions held at the start of the month (§11(5)).
+- Allowances come off the employment base first, and only the rest comes off the business base (§11(12)).
+DEST [90, 94]
+Allowance sequence retained and source-backed DDS/PEPP contract/cap/recapture conditions supplied.
+
+slovakia-pit main unit22 LF[96, 98]
+**Credits.** From the tax computed:
+- **Child tax bonus (§33).** EUR 100 a month for each child under 15 and EUR 50 a month for each child aged 15 to 18, for each month at whose start the conditions were met (§33(1),(5)). The child lives in the taxpayer's household, and the taxpayer needs employment or business income. The total is capped at a percentage of the employment or business partial base, or their sum, taken before allowances (§33(6)); the Financial Administration's worked return uses that base. If that base exceeds EUR 27,432, the bonus for each child falls by one tenth of the excess (§33(11)). Only one parent claims (§33(4)). If the bonus exceeds the tax, the difference is paid out (§33(7)). The taxpayer must have at least 90% of income from Slovak sources (§33(9)).
+- **Mortgage interest bonus** for borrowers aged 18 to 35 at application (§33a). The conditions differ for loan contracts made up to 31 December 2023 and after; check them in the law before claiming it.
+DEST [100, 117]
+Full child-credit method and old/new mortgage branches supply the former pointer.
+
+slovakia-pit main unit25 LF[104, 110]
+| What | When | Rule |
+|---|---|---|
+| Ask the employer for the annual settlement (employment income only) | 15 February 2027 | §38(1) |
+| DPFO type A (employment only) or type B (all other cases) for 2026, and payment | 31 March 2027 | §49(2) |
+| Extension by notice to the tax office before 31 March 2027 | up to 3 full months, to 30 June 2027 | §49(3)(a) |
+| Extension where foreign-source income is included | up to 6 full months, to 30 September 2027 | §49(3)(b) |
+| Advances in the period after the 2026 return if the last known tax was over EUR 5,000 | quarterly by the end of each quarter; monthly by month end if over EUR 16,600 | §34(1)-(3) |
+DEST [123, 129]
+Filing table retained with SK-L01 settlement qualification.
+
+slovakia-pit earliest unit8 LF[43, 47]
+| Taxable base (základ dane) | Rate | Notes |
+| --- | --- | --- |
+| Up to €100,000 | **15%** | Znížená sadzba (reduced rate) |
+| €100,001 – €176,800 (92.8× životné minimum) | **19%** | Základná sadzba |
+| Over €176,800 | **25%** | Zvýšená sadzba |
+DEST Current LF47–55,74–76,88
+Old universal15%/profit-band claims corrected to separate bases and taxable-business-revenue test under current§15; unsupported176800band not revived.
+
+slovakia-pit earliest unit28 LF[111, 111]
+- **Computation method steps** — Step 1: Total income (príjmy) per §5–§8 Step 2: − Expenses (výdavky) — flat-rate or actual Step 3: = Partial base per income type (čiastkový základ dane) Step 4: Sum all partial bases = Total base (základ dane) Step 5: − Non-taxable amount on self (§11 ods.2) Step 6: − Non-taxable amount on spouse (§11 ods.3) Step 7: − Pension savings (max €180) Step 8: = Adjusted taxable base Step 9: Apply rates: 15% on first €100,000; 19% on remainder to €176,800; 25% above Step 10: = Calculated tax (vypočítaná daň) Step 11: − Child bonus (daňový bonus na dieťa) Step 12: − Mortgage interest bonus (daňový bonus na zaplatené úroky) Step 13: − Advance payments / withholding already paid Step 14: = Tax payable or refund (daň na úhradu / preplatok)
+DEST Current LF74–119,141–151
+All computation stages retained with correct separate bases, allowance allocation, credit ordering and return reconciliation; old merged-base15%first100k method corrected.
+
+slovakia-pit earliest unit36 LF[138, 138]
+- **Conditions for child bonus** — Taxpayer's income must be at least €3,876 (6× minimum wage); Child must live in household; For high-income taxpayers (base > €25,740): bonus may be limited
+DEST Current LF62–65,100–104
+Child credit ages, month endpoints, household/base caps and high-base taper retained/corrected; obsolete3876minimum is not revived.
+
+slovakia-pit earliest unit47 LF[169, 169]
+**Advance payments (Preddavky na daň)**
+DEST Current LF72,129,133
+Advance thresholds/frequencies preserved with exactstrict5000boundary and19%last-known-tax calculation; exactly5000does not triggerquarterly.
+
+sk-corporate-income-tax main unit15 LF[71, 71]
+**Depreciation (§ 26 and § 27).** Tangible assets go into one of seven groups. Straight-line annual depreciation (§ 27) is entry price divided by the period. In the first year only the months from the month the asset is put into use count. Assets in groups 2 and 3 may instead be depreciated by the accelerated method (§ 28); the method is chosen per new asset and cannot be changed (§ 26(3)). A micro-taxpayer may depreciate assets placed in use in a micro-taxpayer period in groups 0 to 4 in any amount it chooses within the group period, except cars with an entry price of EUR 48,000 or more (§ 26(12)).
+DEST [71, 71]
+Exact retained unit; all embedded topics preserved.
+
+sk-corporate-income-tax main unit18 LF[85, 87]
+**Interest: two separate limits.**
+- **§ 21a (thin capitalisation).** Interest and related costs on loans from a related person (závislá osoba) are not deductible to the extent they exceed 25% of EBITDA. EBITDA here is accounting profit before tax plus the depreciation and interest expense in it. Banks, insurers and leasing companies are out. § 21a does not apply where the company has already added back interest under § 17k.
+- **§ 17k (ATAD rule).** If net interest expense is above EUR 3,000,000, the excess over 30% of the tax base (increased by net interest and tax depreciation) is added back. Most owner-managed companies never reach the EUR 3,000,000 floor.
+DEST [103, 111]
+Both interest limits retained, corrected sequencing/denominators/capitalisation and carry boundaries.
+
+sk-corporate-income-tax main unit21 LF[93, 100]
+**Minimum tax (§ 46b).** A company pays the minimum tax for its revenue band (table above) if its tax after reliefs and foreign tax credit is lower than that figure, or if it has a tax loss. A shorter period is pro-rated by months (§ 46b(6)). It is halved for a company whose staff are at least 20% disabled employees (§ 46b(3)). It does not apply to:
+- a company filing for the first time, for the period in which it was set up (unless it is a successor of a company dissolved without liquidation);
+- non-profit taxpayers under § 12(3) and (4);
+- a company running a sheltered workshop;
+- the special periods in liquidation or bankruptcy;
+- a land community (pozemkové spoločenstvo) with only its own activities and taxable revenue up to EUR 10,000;
+- a company from the period in which it receives notice of proceedings to dissolve it;
+- a registered social enterprise (§ 46b(7)).
+DEST [117, 124]
+Exact retained unit; all embedded topics preserved.
+
+sk-corporate-income-tax main unit22 LF[102, 102]
+The excess of minimum tax over the computed tax can be credited against tax in the next three periods. Only the part of that later tax above the minimum tax can absorb it (§ 46b(5)). The credit is lost on dissolution without liquidation, liquidation or bankruptcy (§ 46b(8)).
+DEST [126, 126]
+Exact retained unit; all embedded topics preserved.
+
+sk-corporate-income-tax earliest unit4 LF[17, 27]
+- **Overview of CIT structure** — Slovak corporate income tax (daň z príjmov právnických osôb) moved to a three-tier rate structure from 1 January 2025, with a reduced 10% rate for small companies and a new top 24% rate for the largest taxpayers. Resident companies are taxed on worldwide income; non-residents on Slovak-source income.  _(Income Tax Act (Act No. 595/2003 Coll.))_
+- **Reduced CIT rate (small companies)** — 10% percent (where taxable income does not exceed EUR 100,000 in the tax period)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_
+- **Standard CIT rate** — 21% percent (where taxable income is between EUR 100,000 and EUR 5,000,000)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_
+- **Top CIT rate (large taxpayers)** — 24% percent (where taxable income exceeds EUR 5,000,000)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_
+- **Tax base** — Accounting profit adjusted for tax purposes (non-deductible items added back, exempt items removed)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/income-determination)_
+- **Minimum tax (tax licence)** — EUR 340 up to EUR 1,540+ EUR (Minimum corporate tax reintroduced from 2024, scaled by taxable revenue (approx bands — confirm exact 2025 revenue tiers))  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_
+- **WHT on dividends to companies/non-residents** — 0% / 35% percent (Generally 0% to corporate shareholders in cooperating states; 35% to non-cooperating jurisdictions)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_
+- **WHT on interest** — 19% / 35% percent (19% standard; 35% to non-cooperating jurisdictions; reduced/0% under EU Interest-Royalty Directive or treaty)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_
+- **WHT on royalties** — 19% / 35% percent (19% standard; 35% to non-cooperating jurisdictions; reduced/0% under EU Interest-Royalty Directive or treaty)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_
+- **CIT return filing deadline** — Within 3 months after the end of the tax period (31 March for a calendar year); extendable by 3 months (6 for foreign income)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/tax-administration)_
+- **CIT payment deadline** — Tax due payable by the filing deadline; advance payments quarterly or monthly depending on prior-year tax  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/tax-administration)_
+DEST Current LF21–22,31–56,60–69,115,130–140,168–169
+All11 original bullets retained as topics: residence;10/21/24rates;accountingbase;minimum tax corrected from unsupported1540+;corporate dividends;interest;royalties;return;payment/advances. Old secondary-source URLs remain in complete archived text, not adopted as primary law.
+
+sk-corporate-income-tax earliest unit5 LF[29, 29]
+<!-- openaccountants-cta-block -->
+DEST Current LF371
+Original CTA/trust/reference block retained byte-exact.
+
+sk-corporate-income-tax earliest unit6 LF[31, 31]
+---
+DEST Current LF373
+Original CTA/trust/reference block retained byte-exact.
+
+sk-payroll-social main unit9 LF[29, 33]
+**Self-employed (SZČO).** From 1 January 2026 a person aged 18 or over is an SZČO for social insurance if they hold a licence to do business or, by an honest declaration, carry on self-employed work that needs no licence (for example an artist or author). Income no longer decides this status (Sociálna poisťovňa, changes from 1 January 2026, item 22).
+- **New entrants** (no licence in the last 60 months) become compulsorily insured from the first day of the sixth calendar month after the month the licence starts.
+- **Returning entrants** (a licence ended less than 60 months ago) are insured from the day the licence starts.
+- Insurance now lasts until the licence ends. The old income test at 1 July no longer ends it.
+- **Transition:** to 30 June 2026 an SZČO who held a licence before 1 January 2026 stays under the old rules. Under those rules insurance started on 1 July 2025 (1 October 2025 with an extended tax deadline) if 2024 income was above EUR 8,580 (Sociálna poisťovňa, 2026 tables, note 3).
+DEST [29, 37]
+SZCO definition and start/end/Julytransition method retained with ownAct122/current21; former Januaryoverview coverage superseded precisely.
+
+sk-payroll-social main unit16 LF[73, 73]
+**Employee social base.** Pay from the work, except income that is not taxable or is exempt from income tax, and except employer contributions to supplementary pension saving (Act 461/2003 §138(1)). A profit share paid to an employee who holds no capital is included. The base is capped at EUR 16,764 a month; employer accident insurance runs on the full pay (§138(10)). From 2026 the employee and employer pay social insurance on any pay accounted during sickness, maternity or care leave. The old exclusion periods are gone for employees (Sociálna poisťovňa, changes from 1 January 2026, item 26). Where someone has several jobs, social contributions run from the highest base down (§138(12)).
+DEST [77, 77]
+Exact retained unit; all embedded topics preserved.
+
+sk-payroll-social main unit23 LF[89, 89]
+**SZČO health advance.** 16% of the business tax base from two years earlier (2024 for 2026), taken before contributions paid, divided by the months of business in that year and by 1.486. The advance is at least EUR 121.92 (Act 580/2004 §16(2)(b), (3), (8)(a)). The insurer states the amount in the annual reconciliation. An SZČO who is also an employee pays their own SZČO advance, with no minimum (§16(6), (8)(e)).
+DEST [96, 96]
+Rechecked current destination; prior 423-unit review disposition: F07 concurrentstateinsurance/below3advance
+
+sk-payroll-social main unit41 LF[186, 186]
+The edge case: if his 2025 income had been EUR 9,144 or less, he would pay on the EUR 396.24 special base, EUR 131.34 a month, not on the EUR 914.40 minimum.
+DEST [203, 203]
+Old9144orless edge narrowed to actualcoveragepredicate; <=2876.90ends annualcoverage rather than automaticallyspecialbase.
+
+sk-payroll-social earliest unit4 LF[17, 26]
+- **Employee social-insurance contributions** — 9.4% of gross remuneration (pension, sickness, disability, unemployment) percent  _(Social Insurance Act (Act No. 461/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_
+- **Employee health-insurance contribution** — 4% of remuneration in 2025 (no maximum assessment base); reduced rates apply for persons with disabilities percent (Rises to 5% from 2026 — 2025 rate is 4%; confirm)  _(Act on Health Insurance (Act No. 580/2004 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_
+- **Employer social-insurance contributions** — 24.4% of gross remuneration (excluding accident insurance) percent  _(Social Insurance Act (Act No. 461/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_
+- **Employer accident insurance** — 0.8% of total payroll, with no maximum assessment base percent  _(Social Insurance Act (Act No. 461/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_
+- **Employer health-insurance contribution** — 11% of remuneration, with no maximum assessment base percent  _(Act on Health Insurance (Act No. 580/2004 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_
+- **Maximum monthly assessment base (social insurance)** — EUR 15,730 per month for 2025 (11x the average wage of two years prior) EUR (Applies to social insurance only; health insurance is uncapped)  _(Social Insurance Act (Act No. 461/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_
+- **Maximum monthly employee social contribution** — Approx. EUR 1,478.62 per month (9.4% of the EUR 15,730 cap) EUR ((approx — derived from 2025 cap; confirm))  _(Social Insurance Act (Act No. 461/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_
+- **Income tax withholding on wages (PAYE-equivalent)** — Employer withholds monthly advance income tax at 19% (and 25% above the monthly equivalent of the band), reconciled in the annual return or employer annual reconciliation  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/taxes-on-personal-income)_
+- **Contribution remittance deadline** — Social and health contributions are due on the employer's regular payday for the relevant month  _(Social Insurance Act (Act No. 461/2003 Coll.); Act on Health Insurance (Act No. 580/2004 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes)_
+- **Withheld wage tax remittance deadline** — By the 5th day after the wages are paid ((confirm exact statutory day))  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/individual/tax-administration)_
+DEST Current LF47–73,77–96,105–111
+All10originalbullets retained: social9.4/24.4, employeehealth4→5, employerhealth11, accident.8uncapped, cap15730→16764, roundedmax1478.62→1575.81, wagebandsnow19/25/30/35, payday and5dayremittance. Exact obsolete figures/secondaryURLs archived, not revived as2026law.

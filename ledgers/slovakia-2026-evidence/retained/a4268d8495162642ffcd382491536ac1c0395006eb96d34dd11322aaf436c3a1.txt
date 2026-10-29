@@ -1,0 +1,36 @@
+§ 27
+Rovnomerné odpisovanie hmotného majetku
+(1)
+ Pri rovnomernom odpisovaní sa ročný odpis určí ako podiel vstupnej ceny hmotného
+ majetku a doby odpisovania ustanovenej pre príslušnú odpisovú skupinu v § 26 ods. 1 takto:
+ Odpisová skupina
+ Ročný odpis 
+ 0
+ 1/2
+ 1
+ 1/4
+ 2
+ 1/6
+ 3
+ 1/8
+ 4
+ 1/12
+ 5
+ 1/20
+ 6
+ 1/40.
+(2)
+ V prvom roku odpisovania hmotného majetku sa uplatní len pomerná časť z ročného odpisu
+ vypočítaného podľa odseku 1 v závislosti od počtu mesiacov, počnúc mesiacom jeho zaradenia
+ do užívania do konca tohto zdaňovacieho obdobia. Ak počas doby odpisovania hmotného
+ majetku podľa § 26 ods. 1
+a)
+ nebolo vykonané technické zhodnotenie hmotného majetku, neuplatnená pomerná časť
+ tohto ročného odpisu sa uplatní v roku nasledujúcom po roku uplynutia doby odpisovania
+ hmotného majetku podľa § 26 ods. 1,
+b)
+ bolo vykonané technické zhodnotenie hmotného majetku, neuplatnená pomerná časť tohto
+ ročného odpisu sa uplatní podľa § 26 ods. 5.
+(3)
+ Ročný odpis vypočítaný podľa odseku 1, pomerná časť z ročného odpisu podľa odseku
+ 2 a pomerná časť ročného odpisu podľa § 22 ods. 12 druhej vety sa zaokrúhľujú podľa § 47.

@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "slovakia-pit",
+    "population": "main",
+    "revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "body_sha256": "6b23be1b6980652e10f7cd202806a289f6f2445f4ee70f6149136733229a3a07",
+    "expected": "6b23be1b6980652e10f7cd202806a289f6f2445f4ee70f6149136733229a3a07",
+    "body_exact": true,
+    "units": 54,
+    "origin_mismatches": []
+  },
+  {
+    "slug": "slovakia-pit",
+    "population": "earliest",
+    "revision": "92fb47e3^",
+    "body_sha256": "d4c0c10d6b693512407a43614e6a8807e509119b47c897a828b4be57a964665f",
+    "expected": "d4c0c10d6b693512407a43614e6a8807e509119b47c897a828b4be57a964665f",
+    "body_exact": true,
+    "units": 62,
+    "origin_mismatches": []
+  },
+  {
+    "slug": "sk-corporate-income-tax",
+    "population": "main",
+    "revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "body_sha256": "8afaf9371dd5bee6cf560f17ff303aac94fd35b976ed0c6f280adb9332507f1f",
+    "expected": "8afaf9371dd5bee6cf560f17ff303aac94fd35b976ed0c6f280adb9332507f1f",
+    "body_exact": true,
+    "units": 50,
+    "origin_mismatches": []
+  },
+  {
+    "slug": "sk-corporate-income-tax",
+    "population": "earliest",
+    "revision": "513ef7cb^",
+    "body_sha256": "4bdec05c19ab21b8a4226e83098c4b5eeaf34a84b07bd98a7653a44477e62eaf",
+    "expected": "4bdec05c19ab21b8a4226e83098c4b5eeaf34a84b07bd98a7653a44477e62eaf",
+    "body_exact": true,
+    "units": 10,
+    "origin_mismatches": []
+  },
+  {
+    "slug": "sk-payroll-social",
+    "population": "main",
+    "revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "body_sha256": "1f63ecfa92278560ee779b0013d1357cfdb190b075f43e993de2be9fd687f527",
+    "expected": "1f63ecfa92278560ee779b0013d1357cfdb190b075f43e993de2be9fd687f527",
+    "body_exact": true,
+    "units": 54,
+    "origin_mismatches": []
+  },
+  {
+    "slug": "sk-payroll-social",
+    "population": "earliest",
+    "revision": "b01d09d0^",
+    "body_sha256": "acbfbf7b90b1a0ff45092e6712528152d97b049ce59113cc9cee6cbd21ca712d",
+    "expected": "acbfbf7b90b1a0ff45092e6712528152d97b049ce59113cc9cee6cbd21ca712d",
+    "body_exact": true,
+    "units": 11,
+    "origin_mismatches": []
+  },
+  {
+    "slug": "sk-cross-border",
+    "population": "main",
+    "revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "body_sha256": "5a88fc351ce01784c781c8953c3f02e6272f79cf5a727d5dea381279bfb926bd",
+    "expected": "5a88fc351ce01784c781c8953c3f02e6272f79cf5a727d5dea381279bfb926bd",
+    "body_exact": true,
+    "units": 80,
+    "origin_mismatches": []
+  },
+  {
+    "slug": "sk-transfer-pricing",
+    "population": "main",
+    "revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "body_sha256": "26c52e39c771681ecfe24300819346344b9b1c050b8cf563eeecb20b0df02c23",
+    "expected": "26c52e39c771681ecfe24300819346344b9b1c050b8cf563eeecb20b0df02c23",
+    "body_exact": true,
+    "units": 66,
+    "origin_mismatches": []
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "population": "main",
+    "revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "body_sha256": "cb21ae475f7bf28d1e02ad30419c41512e100b8a6c5b2b9038bc34af1eb04d80",
+    "expected": "cb21ae475f7bf28d1e02ad30419c41512e100b8a6c5b2b9038bc34af1eb04d80",
+    "body_exact": true,
+    "units": 36,
+    "origin_mismatches": []
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "population": "earliest",
+    "revision": "c9c520db^",
+    "body_sha256": "20fb3aabb198b7ebc98b559691d7cdc6fe1982a2bc00e8c80863b3b22d048c1a",
+    "expected": "20fb3aabb198b7ebc98b559691d7cdc6fe1982a2bc00e8c80863b3b22d048c1a",
+    "body_exact": true,
+    "units": 201,
+    "origin_mismatches": []
+  },
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "population": "main",
+    "revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "body_sha256": "e7f4f45b9a85d4ebdfb52a1ee51fe6581be3acfe8b787916a70f4836e52c906c",
+    "expected": "e7f4f45b9a85d4ebdfb52a1ee51fe6581be3acfe8b787916a70f4836e52c906c",
+    "body_exact": true,
+    "units": 61,
+    "origin_mismatches": []
+  },
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "population": "earliest",
+    "revision": "c9c520db^",
+    "body_sha256": "6e0901c419b4d99a7a2ddf7dfdf30f0830662b849dfdc8e17b553ece223c30d2",
+    "expected": "6e0901c419b4d99a7a2ddf7dfdf30f0830662b849dfdc8e17b553ece223c30d2",
+    "body_exact": true,
+    "units": 58,
+    "origin_mismatches": []
+  }
+]

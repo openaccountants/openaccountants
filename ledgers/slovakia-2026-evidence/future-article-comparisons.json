@@ -1,0 +1,77 @@
+{
+  "scope": "Exact retained-body text comparison of these sections only; current quotation scopes are actually read; no whole future law read or future rates inferred.",
+  "comparisons": [
+    {
+      "article": "18",
+      "current_reader": "13",
+      "future_reader": "15",
+      "current_selected_sha256": "ced4959282dbd177dbb63ed038ce9d2985861ee0cb3d43bf0e9cfa83561c0a7d",
+      "future_selected_sha256": "ced4959282dbd177dbb63ed038ce9d2985861ee0cb3d43bf0e9cfa83561c0a7d",
+      "identical_whitespace_joined": true
+    },
+    {
+      "article": "18a",
+      "current_reader": "13",
+      "future_reader": "15",
+      "current_selected_sha256": "f7379c4e3ba6011498de6a5b9ff02e1790f60d6c1d3de64e0ef130a4101c896c",
+      "future_selected_sha256": "f7379c4e3ba6011498de6a5b9ff02e1790f60d6c1d3de64e0ef130a4101c896c",
+      "identical_whitespace_joined": true
+    },
+    {
+      "article": "21a",
+      "current_reader": "13",
+      "future_reader": "15",
+      "current_selected_sha256": "e0de105339065f25eedd8b491ce7ea026e1ced114d242b37a4ac0e9dd1f78ee1",
+      "future_selected_sha256": "e0de105339065f25eedd8b491ce7ea026e1ced114d242b37a4ac0e9dd1f78ee1",
+      "identical_whitespace_joined": true
+    },
+    {
+      "article": "16",
+      "current_reader": "20",
+      "future_reader": "21",
+      "current_selected_sha256": "f20e9e5139a9b37b87fc801ec963b573a875195ae44cf751d174d548638a8ec3",
+      "future_selected_sha256": "f20e9e5139a9b37b87fc801ec963b573a875195ae44cf751d174d548638a8ec3",
+      "identical_whitespace_joined": true
+    },
+    {
+      "article": "69",
+      "current_reader": "20",
+      "future_reader": "21",
+      "current_selected_sha256": "a8af0403c4356c6d902e643f742cc5299de96dbf04ac6ed62f74620faa4a53f9",
+      "future_selected_sha256": "a8af0403c4356c6d902e643f742cc5299de96dbf04ac6ed62f74620faa4a53f9",
+      "identical_whitespace_joined": true
+    },
+    {
+      "article": "154",
+      "current_reader": "20",
+      "future_reader": "21",
+      "current_selected_sha256": "36909b2899c6abf5a5850e10e882c2f054db143c035e3a0bf80a9c60306f260c",
+      "future_selected_sha256": "36909b2899c6abf5a5850e10e882c2f054db143c035e3a0bf80a9c60306f260c",
+      "identical_whitespace_joined": true
+    },
+    {
+      "article": "155",
+      "current_reader": "20",
+      "future_reader": "21",
+      "current_selected_sha256": "b4521e412b257b72cd0bb52f8d31f9671dd3e4e120a4e88a723bf56621f7b65d",
+      "future_selected_sha256": "b4521e412b257b72cd0bb52f8d31f9671dd3e4e120a4e88a723bf56621f7b65d",
+      "identical_whitespace_joined": true
+    },
+    {
+      "article": "156",
+      "current_reader": "20",
+      "future_reader": "21",
+      "current_selected_sha256": "d28e403ba2cb8bbdb701c227205a6ae9394d2f6f0d0d30c2036486fabf06d530",
+      "future_selected_sha256": "d28e403ba2cb8bbdb701c227205a6ae9394d2f6f0d0d30c2036486fabf06d530",
+      "identical_whitespace_joined": true
+    },
+    {
+      "article": "161",
+      "current_reader": "20",
+      "future_reader": "21",
+      "current_selected_sha256": "b7646b5671dc012fa06a1b9b93dd0ba270e9e92ebdc6c4582f0a93d8706f65ec",
+      "future_selected_sha256": "b7646b5671dc012fa06a1b9b93dd0ba270e9e92ebdc6c4582f0a93d8706f65ec",
+      "identical_whitespace_joined": true
+    }
+  ]
+}
