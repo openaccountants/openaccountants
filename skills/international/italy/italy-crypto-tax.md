@@ -46,15 +46,15 @@ Figures apply to **2026** unless explicitly labelled as historical election/retu
 
 | What | Value | Note | Official source |
 | --- | --- | --- | --- |
-| Ordinary substitute tax on crypto gains and other crypto income realised from 1 January 2026 | 33% | "in luogo di quella ordinaria del 33 per cento" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-29 |
-| Rate kept for euro-denominated e-money tokens (held, sold or used) | 26% | "si applicano con l'aliquota del 26 per cento" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-29 |
+| Ordinary substitute tax on crypto gains and other crypto income realised from 1 January 2026 | 33% | "in luogo di quella ordinaria del 33 per cento" | [Law 199/2025 art. 1(28)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-29) |
+| Rate kept for euro-denominated e-money tokens (held, sold or used) | 26% | "si applicano con l'aliquota del 26 per cento" | [Law 199/2025 art. 1(28)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-29) |
 
 | What | Value | Note | Official source |
 | --- | --- | --- | --- |
-| General substitute tax on financial "redditi diversi" (it applied to crypto until 2025, and still applies to other financial gains) | 26% | "è pari al 26 per cento" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29 |
-| Old yearly minimum below which crypto gains were not taxed. Deleted from 2025: there is no threshold in 2026 | EUR 2,000 | "non inferiori complessivamente a 2.000 euro nel periodo d'imposta" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29 |
-| One-off substitute tax to step up the cost of crypto held on 1 January 2025 | 18% | "nella misura del 18 per cento" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29 |
-| Interest on the second and third instalments of that step-up tax | 3% | "nella misura del 3 per cento annuo" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29 |
+| General substitute tax on financial "redditi diversi" (it applied to crypto until 2025, and still applies to other financial gains) | 26% | "è pari al 26 per cento" | [Law 207/2024 art. 1(23)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29) |
+| Old yearly minimum below which crypto gains were not taxed. Deleted from 2025: there is no threshold in 2026 | EUR 2,000 | "non inferiori complessivamente a 2.000 euro nel periodo d'imposta" | [Law 207/2024 art. 1(25)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29) |
+| One-off substitute tax to step up the cost of crypto held on 1 January 2025 | 18% | "nella misura del 18 per cento" | [Law 207/2024 art. 1(26)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29) |
+| Interest on the second and third instalments of that step-up tax | 3% | "nella misura del 3 per cento annuo" | [Law 207/2024 art. 1(28)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29) |
 
 The **33%** ordinary rate applies to income realised from **1 January 2026**. The **26%** exception requires a token stably pegged to the euro with reserves entirely in euro-denominated assets at EU-authorised entities. Mere conversion between euro and such tokens, and redemption in euro at face value, is not a gain/loss. This does not exempt a crypto-to-e-money-token disposal ([Law 207/2024 art.1(24), as amended by Law 199/2025 art.1(28)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29)). The old **EUR 2,000** threshold was deleted from 2025; it is not a 2026 allowance. For 2023–2024 disposals or loss origins, retain the historical-year evidence rather than applying 2026 rules retrospectively.
 
@@ -62,23 +62,23 @@ The **33%** ordinary rate applies to income realised from **1 January 2026**. Th
 
 | Parameter | Value | Note | Official source |
 | --- | --- | --- | --- |
-| Rate | 2 per mille a year of the value | "nella medesima misura (prevista per l’imposta di bollo) del 2 per mille" | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 |
-| Taxable base | Value at 31 December on the exchange where the crypto was bought; else a comparable platform or specialist price site; failing that, cost. If sold during the year, the value at the end of the holding | "La base imponibile è costituita dal valore delle cripto-attività al termine di ciascun anno solare" | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 |
-| Part-year or joint holding | In proportion to days held and to the share owned | "in proporzione ai giorni di detenzione e alla quota di possesso" | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 |
-| Who pays | Every resident holding crypto on which stamp duty was not applied, not only those with Quadro RW monitoring duties | "sulle quali non è stata applicata l’imposta di bollo" | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 |
-| Foreign wealth tax | Credit for a wealth tax paid finally abroad on the same crypto | "versata a titolo definitivo nello Stato estero" | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 |
-| Not paid if the amount due is not above | EUR 12 | "non supera 12 euro" | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 |
-| Payment | Modello F24, code 1727 (balance); acconti with codes 1728 (first) and 1729 (second), on the IRPEF dates | "codici tributo 1728 (primo acconto) e 1729 (secondo acconto)" | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 |
+| Rate | 2 per mille a year of the value | "nella medesima misura (prevista per l’imposta di bollo) del 2 per mille" | [PF2 Quadro RW](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026) |
+| Taxable base | Value at 31 December on the exchange where the crypto was bought; else a comparable platform or specialist price site; failing that, cost. If sold during the year, the value at the end of the holding | "La base imponibile è costituita dal valore delle cripto-attività al termine di ciascun anno solare" | [PF2 Quadro RW](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026) |
+| Part-year or joint holding | In proportion to days held and to the share owned | "in proporzione ai giorni di detenzione e alla quota di possesso" | [PF2 Quadro RW](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026) |
+| Who pays | Every resident holding crypto on which stamp duty was not applied, not only those with Quadro RW monitoring duties | "sulle quali non è stata applicata l’imposta di bollo" | [PF2 Quadro RW](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026) |
+| Foreign wealth tax | Credit for a wealth tax paid finally abroad on the same crypto | "versata a titolo definitivo nello Stato estero" | [PF2 Quadro RW](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026) |
+| Not paid if the amount due is not above | EUR 12 | "non supera 12 euro" | [PF2 Quadro RW](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026) |
+| Payment | Modello F24, code 1727 (balance); acconti with codes 1728 (first) and 1729 (second), on the IRPEF dates | "codici tributo 1728 (primo acconto) e 1729 (secondo acconto)" | [PF2 Quadro RW](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026) |
 
 **Closed 2025 step-up election** (Law 207/2024 art.1(26)–(29))
 
 | Parameter | Value | Note | Official source |
 | --- | --- | --- | --- |
-| Reference date | 1 January 2025 | "alla data del 1° gennaio 2025" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29 |
-| Substitute tax | 18% of the value at that date | "nella misura del 18 per cento" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29 |
-| Payment | 30 November 2025, or up to three equal yearly instalments from that date | "entro il 30 novembre 2025" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29 |
-| Interest on later instalments | 3% a year | "nella misura del 3 per cento annuo" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29 |
-| Effect | The value at 1 January 2025 becomes the cost. It does NOT allow usable losses | "non consente il realizzo di minusvalenze utilizzabili" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29 |
+| Reference date | 1 January 2025 | "alla data del 1° gennaio 2025" | [Law 207/2024 art. 1(26)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29) |
+| Substitute tax | 18% of the value at that date | "nella misura del 18 per cento" | [Law 207/2024 art. 1(26)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29) |
+| Payment | 30 November 2025, or up to three equal yearly instalments from that date | "entro il 30 novembre 2025" | [Law 207/2024 art. 1(27)–(28)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29) |
+| Interest on later instalments | 3% a year | "nella misura del 3 per cento annuo" | [Law 207/2024 art. 1(28)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29) |
+| Effect | The value at 1 January 2025 becomes the cost. It does NOT allow usable losses | "non consente il realizzo di minusvalenze utilizzabili" | [Law 207/2024 art. 1(29)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29) |
 
 ## The base
 
@@ -106,13 +106,19 @@ Apply TUIR article 67(1)(c-sexies) and Circolare 30/E sections 3–3.1. Unresolv
 | Cost of 20 BTC held; 5 of them are swapped for 10 ETH | EUR 2,000 | "valore di acquisto di euro 2.000" |
 | Cost given to the 10 ETH (equal to the cost of the 5 BTC given up); no tax on the swap | EUR 500 | "un valore di acquisto di euro 500" |
 
-Gain is proceeds received (or the normal value of crypto received in a taxable swap) less documented acquisition cost. Net current-year crypto gains and relative losses; a net loss carries forward for at most **four** subsequent periods only if declared for its origin year. For pre 2025 losses, distinguish the old threshold/eligible carried amount under the historical instructions. The carry-forward rule does not establish cross-asset offsetting or carry-back. Inherited cost is the succession-tax value; gifted cost is the donor's cost. Undocumented cost is **zero**, so request records first ([TUIR art.68(9-bis)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art68!vig=2026-10-29); [PF2 section V-A](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026)).
+Gain is proceeds received (or the normal value of crypto received in a taxable swap) less documented acquisition cost. For the current year, add **crypto gains and other crypto proceeds**, including holding income measured gross, and algebraically net the relative crypto losses. Measuring staking gross prevents a deduction for platform fees/retention; it does not prohibit this current-year category-level loss netting. Excess losses carry forward for at most **four** subsequent periods, against subsequent crypto gains, only if declared for their origin year. **Do not offset c-sexies crypto income against the financial-income categories c through c-quinquies** (Circolare 30/E section 3.2.1, pp. 54–55). No carry-back is established here. Inherited cost is the succession-tax value; gifted cost is the donor's cost. Undocumented cost is **zero**, so request records first ([TUIR art.68(9-bis)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art68!vig=2026-10-29); [PF2 section V-A](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026)).
+
+### Historical losses: keep three periods separate
+
+- **2023–2024 c-sexies origins:** the historical EUR 2,000 excess limit applies to the eligible carried loss, as described in PF2 section V-A. Do not apply it to a 2025 or 2026 origin.
+- **From 2025:** the EUR 2,000 gain/loss threshold is removed by Law 207/2024 article 1(25); the current crypto loss/carry-forward conditions above apply.
+- **Operations before 1 January 2023:** Circolare 30/E's transitional section 3.2, printed pages 51–52, applies article 68(5)/(6) and its separate financial-income loss bucket, with the stated four-year carry and origin-return condition. This Guide does not compute those transitional balances. Obtain the origin records and refer the classification; do not treat a 2022 transitional loss as a 2023–2024 c-sexies loss subject to the EUR 2,000 excess rule.
 
 ### Acquisition-cost records and fees
 
 Do **not** add exchange fees, gas fees or other acquisition/disposal costs to the statutory crypto basis. AdE expressly distinguishes article 68(9-bis) from the financial-asset rule allowing incidental costs. It also taxes income from holding, including staking, **gross**, without deductions, including amounts retained by the platform ([Circolare 30/E pp.50–51](https://www.agenziaentrate.gov.it/portale/documents/20143/5589638/Circolare+criptoattivita+del+27+ottobre+2023.pdf)).
 
-Lot matching in the private **declarative** regime is not settled here: do not silently select LIFO, FIFO, specific identification or weighted average. Article67(1-bis) is a foreign-currency rule, not authority for a universal crypto LIFO rule. Circolare 30/E's administered-regime weighted-average discussion concerns the intermediary's regime, not all private declarative holdings. Record the regime and obtain a supported matching determination before a multi-lot calculation. The official swap illustration above supplies proportional cost for that illustration only.
+For multiple crypto-assets **of the same denomination in the private declarative regime**, use **LIFO**: the most recently acquired units are disposed of first. This is the express instruction in Circolare 30/E section 3.2.1, printed pages 54–55. It is not an assumption imported from the financial-asset wording of article 67(1-bis). The **administered regime** has a separate weighted-average rule in section 3.2.2. Confirm the actual regime, denomination, acquisition dates and quantities before assigning cost. The official swap illustration above preserves the transferred cost; later disposals follow the applicable regime's matching rule.
 
 ### Staking, NFTs and excluded activities
 
@@ -188,24 +194,24 @@ Non-residents, residence changes, entities, CFC attribution, tax-treaty treatmen
 
 ### Example 1: ordinary private disposal
 
-Assume a resident privately sells an ordinary crypto-asset for **EUR 10,000** in 2026, with an evidenced acquisition cost of **EUR 6,000**, no eligible losses and no step-up. The gain is **EUR 4,000** and the 33% substitute tax is **EUR 1,320**. Assume exchange fees are EUR 100; they are not deducted from the gain. The sale requires a separate monitoring/value-tax check for the holding period.
+Assume a resident in the **private declarative regime** owns two same-denomination units: one older unit with documented cost **EUR 6,000**, and one newer unit costing **EUR 7,000**. The resident sells **one unit for EUR 10,000** in 2026, with no eligible losses or step-up. LIFO assigns the newer EUR 7,000 cost, giving **EUR 3,000 gain** and **EUR 990** tax at 33%. Assume exchange fees are EUR 100; they are not deducted from the gain. The retained older unit keeps its own cost. Check monitoring/value tax separately for the actual holdings.
 
 ```oa-check
-name: Italy2026 ordinary crypto gain, no fee deduction
+name: Italy 2026 declarative crypto LIFO, no fee deduction
 inputs:
   proceeds: 10000
-  documented_cost: 6000
+  newest_lot_documented_cost: 7000
 steps:
-  gain: proceeds - documented_cost
+  gain: proceeds - newest_lot_documented_cost
   substitute_tax: gain * 0.33
 expected:
-  gain: 4000
-  substitute_tax: 1320
+  gain: 3000
+  substitute_tax: 990
 ```
 
 ### Example 2: part-year joint holding and foreign wealth-tax credit
 
-Assume the relevant platform value is **EUR 40,000**, the resident owns **50%** for **183 days of 2026**, no stamp duty was applied, and **EUR 5** final foreign wealth tax on these same assets qualifies for credit. Gross value tax is EUR 40,000×0.002×183/365×50%=EUR 20.05479. The credit is capped at that amount; net tax rounded to cents is **EUR 15.05**, above theEUR12 non-payment amount. This example excludes prior payments/credits and tests time, share and credit; the eventual F24 balance must also account for actual advances and return credits.
+Assume the relevant platform value is **EUR 40,000**, the resident owns **50%** for **183 days of 2026**, no stamp duty was applied, and **EUR 5** final foreign wealth tax on these same assets qualifies for credit. Gross value tax is EUR 40,000×0.002×183/365×50%=EUR 20.05479. The credit is capped at that amount; net tax rounded to cents is **EUR 15.05**, above the EUR 12 non-payment amount. This example excludes prior payments/credits and tests time, share and credit; the eventual F24 balance must also account for actual advances and return credits.
 
 ```oa-check
 name: Italy2026 crypto-value tax, part-year share and capped foreign credit
@@ -233,7 +239,7 @@ A resident buys 1 BTC in February 2026 and sells it for euro in September 2026.
 1. Gain = sale price less the documented purchase price. Do NOT add exchange fees (Acquisition-cost records and fees).
 2. There is no threshold, so the whole gain is taxed.
 3. Apply the ordinary 2026 rate in the Legge 199/2025 table (Rates, bands and thresholds).
-4. Report in the applicable2026-income return fields; PF 2026/2025-income uses Quadro RT section V-A. Nothing is held at 31 December, but the BTC was held during the year: the value tax is due for the days held unless stamp duty was applied, and Quadro RW monitoring applies unless it was kept with an Italian intermediary that taxed the income (Deadlines and filing).
+4. Report in the applicable 2026-income return fields; PF 2026/2025-income uses Quadro RT section V-A. Nothing is held at 31 December, but the BTC was held during the year: the value tax is due for the days held unless stamp duty was applied, and Quadro RW monitoring applies unless it was kept with an Italian intermediary that taxed the income (Deadlines and filing).
 
 #### Legacy scenario 2: Multiple Trades with Loss Carry-Forward
 
@@ -242,7 +248,7 @@ In 2026 a resident sells some ETH at a loss in April and more ETH at a gain in N
 1. The June BTC to ETH swap is not taxed; the ETH takes the BTC's cost (the Circolare 30/E example in Taxable events and gains).
 2. Net the April loss and the November gain.
 3. If the result is a gain, apply the 2026 rate. If a loss, report it in Quadro RT for 2026 to carry it forward up to the fourth later year.
-4. The matching method for which ETH was sold is not settled (Acquisition-cost records and fees). Record the method used.
+4. In the private declarative regime, assign the cost of same-denomination ETH disposed of using LIFO under Circolare 30/E section 3.2.1. If an intermediary applies the administered regime, use that regime's separate matching rule.
 
 #### Legacy scenario 3: IVCA Calculation
 
@@ -251,7 +257,7 @@ A resident holds 2 BTC on a foreign exchange all year.
 1. Base: value at 31 December on the exchange where the BTC was bought (Annual crypto-value tax and stamp duty).
 2. Tax = base times 2 per mille, times the days held over the year, times the share owned.
 3. Less any foreign wealth tax paid finally on the same crypto.
-4. Report in the applicable2026-income return fields; PF 2026/2025-income uses Quadro RW code 21,row RW8. Pay by F24 with code 1727 if the amount due is above the minimum in the Annual crypto-value tax and stamp duty table.
+4. Report in the applicable 2026-income return fields; PF 2026/2025-income uses Quadro RW code 21,row RW8. Pay by F24 with code 1727 if the amount due is above the minimum in the Annual crypto-value tax and stamp duty table.
 
 ## Ask the client first
 
@@ -278,14 +284,14 @@ Before finalising any Italy crypto tax computation:
 
 - [ ] Confirmed taxpayer is an Italian tax resident
 - [ ] All taxable events identified, and same-characteristics swaps left out
-- [ ] Cost documented for each disposal; no fees added
+- [ ] Cost documented for each disposal; no fees added; private declarative same-denomination lots matched by LIFO
 - [ ] No threshold applied for 2025 or 2026
 - [ ] 2026 rate from the Legge 199/2025 table; euro e-money tokens separated
-- [ ] Staking income taxed gross
+- [ ] Staking measured gross; current-year c-sexies gains/proceeds/losses netted without financial-category offset
 - [ ] Value tax computed for crypto without stamp duty, by days held
 - [ ] Quadro RW completed where monitoring applies
 - [ ] Correct income-year return fields used for gains, losses and holding income; PF 2026 coordinates are for 2025 only
-- [ ] Carried-forward losses applied, within four years
+- [ ] Loss origins separated: pre-2023 transition, 2023–2024 threshold, and from-2025 crypto losses; eligible carry applied within four years
 - [ ] Step-up at 1 January 2025 checked if the client elected it
 
 ## Sources
@@ -300,14 +306,14 @@ Before finalising any Italy crypto tax computation:
 | DL 167/1990 art.4, monitoring | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1990-06-28;167~art4!vig=2026-10-29 | 2026-10-29 |
 | DL 167/1990 art.5(2), monitoring penalties | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1990-06-28;167~art5!vig=2026-10-29 | 2026-10-29 |
 | DPR 322/1998 art.2, filing/90 days | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art2!vig=2026-10-29 | 2026-10-29 |
-| AdE Circolare 30/E/2023 pp.44–51, administered-regime discussion, monitoring/value-tax andNFTVAT sections; historical rates overridden | https://www.agenziaentrate.gov.it/portale/documents/20143/5589638/Circolare+criptoattivita+del+27+ottobre+2023.pdf | 2026-10-29 |
+| AdE Circolare 30/E/2023 pp.44–51, administered-regime discussion, monitoring/value-tax and NFT VAT sections; historical rates overridden | https://www.agenziaentrate.gov.it/portale/documents/20143/5589638/Circolare+criptoattivita+del+27+ottobre+2023.pdf | 2026-10-29 |
 | AdE Redditi PF 2026 Fascicolo 2,RTV-A,XI,RW (2025-income form only) | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 | 2026-10-29 |
 | D.Lgs. 117/2026 annex art.377 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377!vig=2026-10-29 | 2026-10-29 |
 | D.Lgs. 173/2024 annex art.102 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-11-05;173:1~art102!vig=2026-10-29 | 2026-10-29 |
 | D.Lgs. 471/1997 art.1 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-29 | 2026-10-29 |
 | D.Lgs. 471/1997 art.13 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-29 | 2026-10-29 |
 
-**Not yet confirmed:** a universal lot-matching method for private declarative holdings (legacy LIFO/FIFO/specific-identification/average-cost alternatives remain unresolved); transfers between own wallets, wrapping/unwrapping, hard-fork receipt/disposal, private/business mining income classification, DeFi lending, liquidity provision/LP tokens, airdrops and yield farming (their former proposed timing/treatments are not applied); NFT smart-contract royalties and current creator/VAT computations; exact application of the increased tax-haven value-tax rate to crypto; cross-asset loss offsets and carry-back; crypto-specific application of general abuse-of-law, CFC, transfer-pricing, private-holder exit and wash-sale rules; Italian DAC8/CARF implementing provisions/operational dates; successor 2027 form fields, penalty provisions, interest and income-code cross-references. Prior undeclared holdings and the closed 2022 regularisation need specialist correction advice. These are explicit referrals, not default tax assumptions.
+**Not yet confirmed:** transfers between own wallets, wrapping/unwrapping, hard-fork receipt/disposal, private/business mining income classification, DeFi lending, liquidity provision/LP tokens, airdrops and yield farming (their former proposed timing/treatments are not applied); NFT smart-contract royalties and current creator/VAT computations; exact application of the increased tax-haven value-tax rate to crypto; carry-back and computation of the separate pre-2023 transitional financial-loss bucket; crypto-specific application of general abuse-of-law, CFC, transfer-pricing, private-holder exit and wash-sale rules; Italian DAC8/CARF implementing provisions/operational dates; successor 2027 form fields, penalty provisions, interest and income-code cross-references. Prior undeclared holdings and the closed 2022 regularisation need specialist correction advice. These are explicit referrals, not default tax assumptions.
 
 ## Disclaimer
 

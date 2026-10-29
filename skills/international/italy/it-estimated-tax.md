@@ -30,12 +30,12 @@ This computation excludes non-resident payment procedures, foreign-tax-credit ti
 
 | Rule | Value | Note (verbatim) | Period | Official source |
 | --- | --- | --- | --- | --- |
-| No acconto unless last year's tax, after detrazioni, credits, withholdings and surpluses, is above | EUR 51.65 | "superiore a 51,65 euro" | 2026 | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef |
-| Acconto as a share of last year's tax, or of the lower tax expected for this year | 100% | "L’acconto è pari al 100%" | 2026 | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef |
-| One payment by 30 November if the acconto is below; two instalments if at or above | EUR 257.52 | "inferiore a 257,52 euro" | 2026 | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef |
-| First instalment, by 30 June with last year's balance | 40% | "la prima è pari al 40%" | 2026 | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef |
-| Second instalment, by 30 November | 60% | "restante 60%" | 2026 | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef |
-| ISA taxpayers and forfettari: one payment by 30 November if the total is not above; otherwise two equal instalments on the same dates | EUR 206 | "non supera 206 euro" | 2026 | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef |
+| No acconto unless last year's tax, after detrazioni, credits, withholdings and surpluses, is above | EUR 51.65 | "superiore a 51,65 euro" | 2026 | [AdE IRPEF payment guidance](https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef) |
+| Acconto as a share of last year's tax, or of the lower tax expected for this year | 100% | "L’acconto è pari al 100%" | 2026 | [AdE IRPEF payment guidance](https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef) |
+| One payment by 30 November if the acconto is below; two instalments if at or above | EUR 257.52 | "inferiore a 257,52 euro" | 2026 | [AdE IRPEF payment guidance](https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef) |
+| First instalment, by 30 June with last year's balance | 40% | "la prima è pari al 40%" | 2026 | [AdE IRPEF payment guidance](https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef) |
+| Second instalment, by 30 November | 60% | "restante 60%" | 2026 | [AdE IRPEF payment guidance](https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef) |
+| ISA taxpayers and forfettari: one payment by 30 November if the total is not above; otherwise two equal instalments on the same dates | EUR 206 | "non supera 206 euro" | 2026 | [AdE IRPEF payment guidance](https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef) |
 
 
 **Return rules, surcharge, instalment interest and offsets (Redditi PF 2026, Fascicolo 1)**
@@ -44,12 +44,12 @@ This computation excludes non-resident payment procedures, foreign-tax-credit ti
 
 | Rule | Value | Note (verbatim) | Period | Official source |
 | --- | --- | --- | --- | --- |
-| The return works in whole euro: no acconto if RN34 (or RN61 column 4) is below | EUR 52 | "è inferiore ad euro 52,00 l’acconto non è dovuto" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026 |
-| Single payment when the first instalment would not exceed | EUR 103 | "non superi euro 103,00 nel qual caso" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026 |
-| Surcharge for paying balance and first acconto by 30 July (Deferral and monthly instalments) | 0.40% | "maggiorazione dello 0,40 per cento a titolo di interesse corrispettivo" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026 |
-| Interest on instalments, yearly rate (commercial method) | 4% | "interessi nella misura del 4 per cento annuo" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026 |
-| Interest added for each further monthly instalment, whatever the payment day; it builds up month by month, and Fascicolo 1 prints the running total for each instalment | 0.33% | "0,33 per cento in misura forfetaria" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026 |
-| Credit offset needing a visto di conformità, above | EUR 5,000 | "credito di importo superiore a 5.000 è necessario" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026 |
+| The return works in whole euro: no acconto if RN34 (or RN61 column 4) is below | EUR 52 | "è inferiore ad euro 52,00 l’acconto non è dovuto" | 2026 | [PF1 RN62 (2026 advances)](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026) |
+| Single payment when the first instalment would not exceed | EUR 103 | "non superi euro 103,00 nel qual caso" | 2026 | [PF1 RN62 (2026 advances)](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026) |
+| Surcharge for paying balance and first acconto by 30 July (Deferral and monthly instalments) | 0.40% | "maggiorazione dello 0,40 per cento a titolo di interesse corrispettivo" | 2026 | [PF1 section 7 (payments/instalments)](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026) |
+| Interest on instalments, yearly rate (commercial method) | 4% | "interessi nella misura del 4 per cento annuo" | 2026 | [PF1 section 7 (payments/instalments)](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026) |
+| Interest added for each further monthly instalment, whatever the payment day; it builds up month by month, and Fascicolo 1 prints the running total for each instalment | 0.33% | "0,33 per cento in misura forfetaria" | 2026 | [PF1 section 7 (payments/instalments)](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026) |
+| Credit offset needing a visto di conformità, above | EUR 5,000 | "credito di importo superiore a 5.000 è necessario" | 2026 | [PF1 section 8 (credit offsets)](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026) |
 
 **IRAP acconti (2026 IRAP instructions)**
 
@@ -57,12 +57,12 @@ This computation excludes non-resident payment procedures, foreign-tax-credit ti
 
 | Rule | Value | Note (verbatim) | Period | Official source |
 | --- | --- | --- | --- | --- |
-| Acconto on the historical method, share of last year's IRAP | 100% | "nella misura pari al 100 per cento" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
-| Partnerships: acconto due only if last year's IRAP is above | EUR 51.65 | "sempreché tale importo sia superiore a euro 51,65" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
-| Companies and other taxpayers: acconto due only if last year's IRAP is above | EUR 20.66 | "sempreché tale importo sia superiore a euro 20,66" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
-| First instalment, with the balance | 40% | "la prima, pari al 40 per cento" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
-| Second instalment, by 30 November 2026 (partnerships) | 60% | "la seconda, pari al residuo 60 per cento, entro il 30 novembre 2026" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
-| ISA taxpayers: two instalments of | 50% | "in due rate ciascuna nella misura del 50 per cento" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
+| Acconto on the historical method, share of last year's IRAP | 100% | "nella misura pari al 100 per cento" | 2026 | [IRAP 2026 instructions, Acconti / DPR 435 art. 17](https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414) |
+| Partnerships: acconto due only if last year's IRAP is above | EUR 51.65 | "sempreché tale importo sia superiore a euro 51,65" | 2026 | [IRAP 2026 instructions, Acconti / DPR 435 art. 17](https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414) |
+| Companies and other taxpayers: acconto due only if last year's IRAP is above | EUR 20.66 | "sempreché tale importo sia superiore a euro 20,66" | 2026 | [IRAP 2026 instructions, Acconti / DPR 435 art. 17](https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414) |
+| First instalment, with the balance | 40% | "la prima, pari al 40 per cento" | 2026 | [IRAP 2026 instructions, Acconti / DPR 435 art. 17](https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414) |
+| Second instalment, by 30 November 2026 (partnerships) | 60% | "la seconda, pari al residuo 60 per cento, entro il 30 novembre 2026" | 2026 | [IRAP 2026 instructions, Acconti / DPR 435 art. 17](https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414) |
+| ISA taxpayers: two instalments of | 50% | "in due rate ciascuna nella misura del 50 per cento" | 2026 | [IRAP 2026 instructions, Acconti / DPR 435 art. 17](https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414) |
 
 Companies ordinarily pay the balance and first IRAP advance by the last day of the sixth month after year end, with the second in the eleventh month. Late statutory accounts-approval cases have the distinct first-payment rules of DPR 435/2001 art. 17(1). Check the IRAP recomputations and specialist exclusions before using the ordinary historical base (`it-irap`).
 
@@ -73,7 +73,7 @@ Companies ordinarily pay the balance and first IRAP advance by the last day of t
 
 | Rule | Value | Note (verbatim) | Period | Official source |
 | --- | --- | --- | --- | --- |
-| Share of 2025 professional income on which the 2026 acconti total is worked out, at 2026 rates | 80% | "sull’80% del reddito di lavoro" | 2026 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 |
+| Share of 2025 professional income on which the 2026 acconti total is worked out, at 2026 rates | 80% | "sull’80% del reddito di lavoro" | 2026 | [PF2 Appendice, INPS acconti](https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026) |
 
 | Item | Rate and conditions | Period | Official source |
 | --- | --- | --- | --- |
@@ -95,7 +95,7 @@ Companies ordinarily pay the balance and first IRAP advance by the last day of t
 
 ### Regime forfettario
 
-- **Regime forfettario computation.** Base = last year's substitute tax, NOT IRPEF. Same minimum and dates as IRPEF, but two EQUAL instalments, and a single payment by 30 November when the total is not above the forfettario threshold in the Rates, bands and thresholds table. Codes 1790 and 1791.
+- **Regime forfettario computation.** Base = last year's substitute tax, NOT IRPEF. Same minimum and dates as IRPEF, but two EQUAL instalments, and a single payment by 30 November when the total is not above the forfettario threshold in the Rates, bands and thresholds table. Codes 1790 and 1791. The substitute tax and application of IRPEF payment provisions are set by [Law 190/2014 art. 1(64)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-29).
 
 ### Other advances kept separate
 
@@ -408,6 +408,7 @@ Before delivering output, verify:
 | D.Lgs. 241/1997 art. 20 (2026 instalment rule) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-07-09;241~art20!vig=2026-10-29 | 2026-10-29 |
 | DL 223/2006 art. 37(11-bis) (August postponement) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig=2026-10-29 | 2026-10-29 |
 | D.Lgs. 33/2025 annex art. 243 (application from 2027) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2025-03-24;33:1~art243!vig=2026-10-29 | 2026-10-29 |
+| Law 190/2014 art. 1(64), forfettario substitute tax and IRPEF payment rules | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-29 | 2026-10-29 |
 
 **Not yet confirmed:** taxpayer-specific extensions; detailed addizionale computations/local rates; foreign-credit timing and non-resident payment mechanics; regime-transition bases; post-notice/audit-stage voluntary-correction fractions and successor rules for regularisation in 2027; any 2027 interest rate. The bank matching windows are heuristic cues only. No prior executable check was removed: the earlier Guide had none; all six prose examples and seven qualitative scenario checks are retained.
 
