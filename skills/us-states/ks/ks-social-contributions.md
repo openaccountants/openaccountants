@@ -2,7 +2,7 @@
 name: ks-social-contributions
 description: >
   Use this skill whenever asked about Kansas employer social contributions
-  for tax year 2026 — state unemployment insurance (UI) contributions, the
+  for tax year 2026, state unemployment insurance (UI) contributions, the
   UI-only nature of Kansas employer social cost (no state disability, no
   paid-family-leave, no state health mandate), and the interaction with
   federal FUTA. Trigger on "Kansas unemployment insurance", "Kansas UI
@@ -13,8 +13,8 @@ jurisdiction: US-KS
 category: payroll
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: 0.1
+last_updated: 2026-10-29
+version: 0.2
 depends_on:
   - ks-income-tax
 ---
@@ -30,7 +30,7 @@ See also: `ks-payroll`, `ks-income-tax`.
 ## Who this applies to
 
 - **Covered employers:** employers paying Kansas wages must register and pay Kansas UI contributions, with quarterly wage reporting (the coverage threshold is listed under Not yet confirmed).
-- **Federal layer:** FUTA applies at 6.0% of FUTA wages, with credit for state contributions capped at 90% of that tax, i.e. 5.4% (26 U.S.C. §§ 3301, 3302(c)(1)).
+- **Federal layer:** FUTA applies at 6.0% of FUTA wages, with credit for state contributions capped at 90% of that tax, i.e. 5.4% (26 U.S.C. §§ 3301, 3302(c)(1)). FUTA wages stop at **$7,000 per employee per calendar year** (26 U.S.C. § 3306(b)(1)).
 
 ## Rates, bands and thresholds
 
@@ -38,8 +38,9 @@ See also: `ks-payroll`, `ks-income-tax`.
 |---|---|---|---|
 | FUTA gross rate | 6.0% | 2026 | [26 U.S.C. § 3301](https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleC-chap23-sec3301.htm) |
 | Maximum credit for state contributions | 90% of the FUTA tax (5.4% of FUTA wages) | 2026 | [26 U.S.C. § 3302(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleC-chap23-sec3302.htm) |
+| FUTA wage base | First $7,000 paid to each employee in the calendar year | 2026 | [26 U.S.C. § 3306(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleC-chap23-sec3306.htm) |
 
-No Kansas UI figure for 2026 — taxable wage base, experience-rated schedule, new-employer rate, any employee share or any surcharge — is confirmed yet; each is listed on the Not yet confirmed line.
+No Kansas UI figure for 2026, taxable wage base, experience-rated schedule, new-employer rate, any employee share or any surcharge, is confirmed yet; each is listed on the Not yet confirmed line.
 
 ## The taxable base
 
@@ -56,47 +57,59 @@ No Kansas UI filing calendar is confirmed in this skill. The quarterly report an
 
 ## Cross-border points
 
-- Multi-state employers: Kansas base and rate apply to Kansas wages; other states' bases differ — file per state.
-- No Kansas portability issue for Social Security / Medicare — federal only.
+- Multi-state employers: Kansas base and rate apply to Kansas wages; other states' bases differ, file per state.
+- No Kansas portability issue for Social Security / Medicare, federal only.
 - How Kansas localizes the work of remote employees is listed under Not yet confirmed.
 
 ## Worked examples
 
-These examples use only confirmed federal figures (26 U.S.C. §§ 3301 and 3302); employee wages are hypothetical. The Kansas UI figures are not yet confirmed — see Not yet confirmed.
+These examples use only confirmed federal figures (26 U.S.C. §§ 3301, 3302 and 3306); employee wages are hypothetical. The Kansas UI figures are not yet confirmed (see Not yet confirmed).
 
 ### Example 1: single-employee FUTA cost
 
-One employee earns $10,000 of wages in the year (hypothetical). The FUTA excise is 6% of total wages (26 U.S.C. § 3301: "an excise tax … equal to 6 percent of the total wages") = $600. With state contributions paid, the credit is capped at 90% of the tax (26 U.S.C. § 3302(c)(1)): credit $540, net federal cost $60.
+One employee earns $10,000 of wages in the year (hypothetical). FUTA wages stop at $7,000 (26 U.S.C. § 3306(b)(1)), so the gross FUTA is 6% of $7,000 = $420 (§ 3301). With Kansas contributions paid on time, the credit is capped at 90% of the tax (§ 3302(c)(1)): credit $378, net federal cost $42.
 
 ```oa-check
-name: KS FUTA single employee (confirmed federal rates)
+name: KS FUTA single employee (confirmed federal rates and wage base)
 inputs:
   wages: 10000
+  futa_base: 7000
   futa_rate: 0.06
   credit_cap: 0.9
 steps:
-  - gross_futa: wages * futa_rate
+  - futa_wages: min(wages, futa_base)
+  - gross_futa: futa_wages * futa_rate
   - max_credit: gross_futa * credit_cap
   - net_federal: gross_futa - max_credit
 expected:
-  gross_futa: 600
-  max_credit: 540
-  net_federal: 60
+  futa_wages: 7000
+  gross_futa: 420
+  max_credit: 378
+  net_federal: 42
 ```
 
-### Example 2: two employees — the tax runs on each employee's wages
+### Example 2: two employees, one below the wage base
 
-Same facts, two employees each earning $10,000: the gross FUTA doubles to $1,200 and the net federal cost doubles to $120, because the excise applies to the total wages paid with respect to employment.
+Employee A earns $10,000 and employee B earns $5,000. The $7,000 cap applies to each employee separately: FUTA wages are $7,000 + $5,000 = $12,000, gross FUTA $720, maximum credit $648, net federal cost $72. Applying 6% to total payroll of $15,000 would overstate the gross tax by $180.
 
 ```oa-check
-name: KS FUTA two employees
+name: KS FUTA two employees, per-employee wage base
 inputs:
-  per_employee_net_federal: 60
-  employees: 2
+  wages_a: 10000
+  wages_b: 5000
+  futa_base: 7000
+  futa_rate: 0.06
+  credit_cap: 0.9
 steps:
-  - total_net_federal: per_employee_net_federal * employees
+  - futa_wages: min(wages_a, futa_base) + min(wages_b, futa_base)
+  - gross_futa: futa_wages * futa_rate
+  - net_federal: gross_futa - gross_futa * credit_cap
+  - overstatement: (wages_a + wages_b) * futa_rate - gross_futa
 expected:
-  total_net_federal: 120
+  futa_wages: 12000
+  gross_futa: 720
+  net_federal: 72
+  overstatement: 180
 ```
 
 ## Ask the client first
@@ -113,6 +126,7 @@ expected:
 | KDOR business navigation (Misclassification Statistics; Employment Tax Delinquencies) | https://www.ksrevenue.gov/business.html | 2026-10-28 |
 | 26 U.S.C. § 3301 (FUTA rate 6.0%) | https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleC-chap23-sec3301.htm | 2026-10-28 |
 | 26 U.S.C. § 3302 (credit cap 90% of the tax) | https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleC-chap23-sec3302.htm | 2026-10-28 |
+| 26 U.S.C. § 3306(b)(1) (FUTA wage base $7,000) | https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleC-chap23-sec3306.htm | 2026-10-29 |
 
 Not yet confirmed: the 2026 Kansas UI taxable wage base (recent years were described in v0.1 as in the $15,000 range); the experience-rated contribution schedule and the new-employer rate for the first coverage years; that Kansas imposes no employee UI premium; any suspense or financing surcharge (historically added in years with a federal loan balance); the coverage threshold for registration; aggregation of successors and common-owner groups for experience rating; FUTA credit-reduction status for 2026; the quarterly UI report and payment due dates (v0.1: last day of the month after each quarter); the annual rate notice and its protest window; the annual wage report for experience rating with the Q4 filing; late-report and late-payment penalty and interest percentages and misclassification penalty tiers; Kansas adoption of the federal four-part localization-of-work tests for remote workers; which agency administers Kansas UI (v0.1 said the Labor Services division of KDOR, but KDOR's business page does not show it and the UI program pages are on dol.ks.gov); and the statutory citation (v0.1 cited K.S.A. 79-27 and 79-27-105, whose kslegislature.org page served only a JS shell; the Kansas Employment Security Law in K.S.A. chapter 44 should be checked).
 

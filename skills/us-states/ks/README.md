@@ -7,7 +7,7 @@ covered_by:
 partial:
   SC: "2026 UI taxable wage base, contribution rates and filing calendar not yet confirmed"
   TP: "addback rules and combined-report ownership test not yet confirmed"
-  XB: "nonresident form routing, resident credit and reciprocity status not yet confirmed"
+  XB: "Schedule S Part B line detail and reciprocity status not yet confirmed"
 ---
 
 # Kansas (US-KS): tax pack

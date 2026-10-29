@@ -2,7 +2,7 @@
 name: ks-transfer-pricing
 description: >
   Use this skill whenever asked about Kansas transfer pricing and
-  related-party adjustments for tax year 2026 — Kansas has no standalone
+  related-party adjustments for tax year 2026: Kansas has no standalone
   TP documentation regime; related-party exposure runs through combined
   reporting, intangible/management-fee addbacks, and the apportionment
   base. Trigger on "Kansas transfer pricing", "Kansas combined report",
@@ -13,8 +13,8 @@ jurisdiction: US-KS
 category: transfer-pricing
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: 0.1
+last_updated: 2026-10-29
+version: 0.2
 depends_on:
   - ks-corporate-income-tax
 ---
@@ -23,14 +23,14 @@ depends_on:
 
 > **Source-cited draft.** Built from the KDOR Corporate Income page, the KDOR 2025 Corporate Tax Booklet and K.S.A. 79-32,141 and 79-32,142, read on 2026-10-28. Most related-party rules a Kansas reviewer would apply (addbacks, combined-report ownership tests, penalties) are not yet confirmed and are listed at the end. Treat this skill as a map of where the exposure lives, not as authority. No accountant has reviewed it.
 
-Tax year: the corporation's federal tax year. Authority: Kansas Department of Revenue (KDOR). Currency: US dollars. Related-party pricing risk in Kansas arises from three mechanisms: (1) **combined / consolidated reporting** for affiliated or unitary groups, (2) **addback adjustments** for intangible and management-fee payments to related affiliates, and (3) the **apportionment base** itself (intercompany sales shift the sales factor). No Kansas transfer-pricing documentation statute or Kansas country-by-country report was found in the sources read; that absence is listed under Not yet confirmed.
+Tax year: the corporation's federal tax year. Authority: Kansas Department of Revenue (KDOR). Currency: US dollars. Related-party pricing risk in Kansas arises from (1) the director's **allocation authority** over commonly controlled businesses (K.S.A. 79-32,141), (2) **consolidated reporting** for affiliated groups (K.S.A. 79-32,142) and (3) the **apportionment base** itself (intercompany sales shift the sales factor, which becomes the only factor from 2027 under K.S.A. 79-3279(c)). Whether Kansas has an addback for related-party intangible or management-fee payments is not yet confirmed. No Kansas transfer-pricing documentation statute or Kansas country-by-country report was found in the sources read; that absence is listed under Not yet confirmed.
 
 See also: `ks-corporate-income-tax`, `ks-cross-border`.
 
 ## Who this applies to
 
-- Members of an **affiliated or unitary group** doing business in Kansas — combined / consolidated-return exposure.
-- Any K-120 filer making **intercompany payments** (royalties, interest, management fees) to out-of-state affiliates — addback exposure.
+- Members of an **affiliated or unitary group** doing business in Kansas, combined / consolidated-return exposure.
+- Any K-120 filer making **intercompany payments** (royalties, interest, management fees) to out-of-state affiliates: allocation exposure under K.S.A. 79-32,141.
 - Multistate filers whose **intercompany sales** move the Kansas apportionment factor.
 - S corporations: distributive-share pricing issues flow to shareholders.
 
@@ -49,12 +49,12 @@ No Kansas-specific transfer-pricing threshold, addback percentage or documentati
 | Starting point | Federal taxable income with Kansas modifications, so federal §482 adjustments flow into the Kansas base | [2025 Corporate Tax Booklet](https://www.ksrevenue.gov/corpbook25.html) |
 | Allocation authority | The director may allocate income among affiliated or controlled corporations | [K.S.A. 79-32,141](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0141.html) |
 | Consolidated returns | Federal-consolidated groups with all-Kansas income must file consolidated; the director may permit or require it for affiliated groups (Schedule K-121) | [K.S.A. 79-32,142](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0142.html); Booklet |
-| Apportionment | Three-factor formula; intercompany sales move the sales factor | Booklet |
+| Apportionment | Tax years starting before 2027: (property + payroll + sales) / 3, or elective (property + sales) / 2 for a qualifying taxpayer; from 2027: single sales factor. Intercompany sales move the sales factor | [K.S.A. 79-3279](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0079.html) |
 
 ## Deadlines and filing
 
-- No separate Kansas TP filing calendar; adjustments ride the K-120 return and any combined or consolidated attachment, due with the return — the 15th day of the 4th month after year end (April 15 for calendar-year filers) ([2025 Corporate Tax Booklet](https://www.ksrevenue.gov/corpbook25.html)).
-- Keep contemporaneous federal §6662(e) documentation for audit defense; Kansas examiners use it.
+- No separate Kansas TP filing calendar; adjustments ride the K-120 return and any combined or consolidated attachment, due with the return, one month after the federal due date including extensions (May 15 for a calendar-year C corporation) ([K.S.A. 79-3221(c)(2)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0021.html)).
+- Keep contemporaneous federal §6662(e) documentation for audit defense (whether Kansas ties any penalty to it is not yet confirmed).
 
 ## Penalties and interest
 
@@ -63,7 +63,7 @@ Understatement adjustments carry interest. The accuracy-penalty tiers, and wheth
 ## Cross-border points
 
 - Foreign-parent groups: Kansas starts from federal taxable income, so §482 adjustments carry in; state adjustments layer on top.
-- Intangible holding companies in zero-tax states (DE / NV / WY patterns) are the classic addback target.
+- Intangible holding companies in other states fall under the K.S.A. 79-32,141 allocation power when commonly controlled.
 - Combined or consolidated reporting pulls out-of-state affiliates' results into one factor set.
 
 ## Worked examples
@@ -126,6 +126,8 @@ expected:
 | KDOR Corporate Income (entity scope, filing duty) | https://www.ksrevenue.gov/bustaxtypescorp.html | 2026-10-28 |
 | KDOR 2025 Corporate Tax Booklet (starting point, three-factor formula, K-121, due date) | https://www.ksrevenue.gov/corpbook25.html | 2026-10-28 |
 | K.S.A. 79-32,110 (corporate rates) | https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html | 2026-10-28 |
+| K.S.A. 79-3279 (apportionment; single sales factor from 2027) | https://ksrevisor.gov/statutes/chapters/ch79/079_032_0079.html | 2026-10-29 |
+| K.S.A. 79-3221 (corporate due date) | https://ksrevisor.gov/statutes/chapters/ch79/079_032_0021.html | 2026-10-29 |
 | K.S.A. 79-32,141 (allocation among affiliated / controlled corporations) | https://ksrevisor.gov/statutes/chapters/ch79/079_032_0141.html | 2026-10-28 |
 | K.S.A. 79-32,142 (consolidated returns) | https://ksrevisor.gov/statutes/chapters/ch79/079_032_0142.html | 2026-10-28 |
 
