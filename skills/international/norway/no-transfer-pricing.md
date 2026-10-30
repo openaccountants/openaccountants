@@ -20,13 +20,13 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-30
-version: 0.3
+version: 0.4
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Norway transfer pricing (2026) v0.3
+# Norway transfer pricing (2026) v0.4
 
 Income year 2026. Currency: Norwegian kroner (NOK). Authority: Skatteetaten. Statutes: Skatteloven (Taxation Act, lov 26 March 1999 nr. 14, "sktl.") § 13-1; Skatteforvaltningsloven (Tax Administration Act, lov 27 May 2016 nr. 14, "sktfvl.") §§ 8-11, 8-12, 12-6, 14-1 to 14-6; Skatteforvaltningsforskriften (forskrift 23 November 2016 nr. 1360, "sktfvf.") §§ 8-11-1 to 8-11-16 and 8-12-1 to 8-12-7. See Sources.
 
@@ -67,7 +67,7 @@ See also: [no-corporate-income-tax](no-corporate-income-tax.md) (corporate rate 
 | Comparability analysis or database study on request | 60 to 90 days | 2026 | sktfvf. § 8-11-15 second paragraph |
 | Retention | At least ten years after the end of the tax period | 2026 | sktfvl. § 8-11 second paragraph |
 | Documentation languages | Norwegian, Swedish, Danish or English | 2026 | sktfvf. § 8-11-16 first paragraph |
-| Corporate tax rate on an upward adjustment | 22% | 2026 | Forskuddsutskrivingen 2026 (ordinary income, companies); https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ |
+| Corporate tax rate on an upward adjustment | 22%; 25% for companies that pay financial activity tax on wages (finansskatt på lønn) | 2026 | Forskuddsutskrivingen 2026 (skatt til staten for selskaper, ssv. § 3-3); https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ |
 | Country-by-country report threshold | Group revenue of NOK 6,500,000,000 or more in the year before the reporting year | 2026 | sktfvl. § 8-12 fourth paragraph; https://lovdata.no/lov/2016-05-27-14/§8-12 |
 | Country-by-country report deadline and language | 12 months after the end of the financial year; in English | 2026 | sktfvf. § 8-12-7; sktfvl. § 8-12 fifth paragraph |
 | Additional tax | 20% of the tax advantage | 2026 | sktfvl. § 14-5 first paragraph |
@@ -96,7 +96,7 @@ The two § 8-11-1 tests are cumulative: a company is exempt only if both are und
 7. **EU code of conduct.** The company may instead document under the EU Code of Conduct (master file plus country file), provided the § 8-11-4 to 8-11-13 information appears in one of them (§ 8-11-16 second paragraph).
 8. **Choose the method.** Skatteetaten follows the five OECD methods: comparable uncontrolled price (CUP), resale price, cost plus, transactional net margin (TNMM) and transactional profit split. Cost plus, resale price and TNMM test one party (the tested party); profit split looks at both parties. Traditional transaction methods are preferred over profit-based methods where the data allow. Another method may be used if the process and the result can be checked and the documentation explains why the standard methods do not fit (Skatteetaten, select method).
 9. **Range.** Where no single price can be set, the arm's length price is a point in a range of comparables. Practice is to use the 1st to 3rd quartile. With high comparability any point in the range can be arm's length; with lower comparability Skatteetaten recommends a mid-range value such as the median (Skatteetaten, select method).
-10. **Adjustment.** Where prices are not at arm's length, the tax office sets income as if there were no community of interest (sktl. § 13-1 third paragraph). The extra income is taxed at the ordinary 22%.
+10. **Adjustment.** Where prices are not at arm's length, the tax office sets income as if there were no community of interest (sktl. § 13-1 third paragraph). The extra income is taxed at the ordinary 22% (25% for a company that pays financial activity tax on wages).
 
 ## Deadlines and filing
 
@@ -118,7 +118,7 @@ The two § 8-11-1 tests are cumulative: a company is exempt only if both are und
 
 ## Cross-border points
 
-- **Treaty partners.** Where a tax treaty's arm's length article applies, the OECD Transfer Pricing Guidelines guide both whether income is reduced and the discretionary assessment (sktl. § 13-1 fourth paragraph).
+- **Treaty partners.** Where a tax treaty's arm's length article applies, the OECD Transfer Pricing Guidelines apply both to whether income is reduced and the discretionary assessment (sktl. § 13-1 fourth paragraph).
 - **Non-EEA and non-exchange states.** The reversed burden of proof applies (§ 13-1 second paragraph) and the small-group documentation exemption does not (sktfvl. § 8-11 third paragraph).
 - **Permanent establishments.** Dealings between head office and PE are controlled transactions for reporting and documentation (sktfvl. § 8-11 fifth paragraph; sktfvf. § 8-11-2 letter a). PE status follows the treaty, or OECD Model article 5 where no treaty applies (sktfvf. § 8-11-2 letter c).
 - **Country-by-country reporting.** A Norwegian group company files instead of a foreign parent where the parent's state does not require a report, has no exchange agreement in effect with Norway, or has been notified as failing to exchange (sktfvl. § 8-12 second paragraph). This does not apply where another group company has filed in its own state within 12 months under the § 8-12-6 conditions, or where the foreign parent is below its own state's threshold (sktfvf. § 8-12-6).

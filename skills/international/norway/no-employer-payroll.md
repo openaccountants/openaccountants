@@ -19,13 +19,13 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-30
-version: 0.3
+version: 0.4
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Norway employer payroll (2026) v0.3
+# Norway employer payroll (2026) v0.4
 
 Income year 2026. Currency: Norwegian kroner (NOK). Authority: Skatteetaten (the Norwegian Tax Administration). Statutes: Skattebetalingsloven (Tax Payment Act, lov 17 June 2005 nr. 67, "sktbl."), its regulation (forskrift 21 December 2007 nr. 1766, "sktbf."), A-opplysningsloven (lov 22 June 2012 nr. 43) and its regulation (forskrift 24 June 2014 nr. 857), Folketrygdloven (National Insurance Act) § 23-2, and the Storting's 2026 contribution decision (Stortingsvedtak 18 December 2025 nr. 2748, "avgiftsvedtaket"). See Sources.
 
@@ -44,17 +44,19 @@ See also: [no-income-tax](no-income-tax.md) (bands and deductions behind the tax
 
 | Item | Amount | Year | Source |
 |---|---|---|---|
-| Withholding with no access to the latest tax card | 50% of salary | 2026 | sktbl. § 5-5 first paragraph, second sentence; https://lovdata.no/lov/2005-06-17-67/§5-5 |
+| Withholding with no access to the latest tax card | 50% of salary, and of benefits under folketrygdloven chapters 4, 8 to 11 and 14 and disability benefits taxed as salary | 2026 | sktbl. § 5-5 first paragraph, second sentence; https://lovdata.no/lov/2005-06-17-67/§5-5 |
 | Withholding with no card: other national insurance benefits, pensions, annuities | 30% | 2026 | sktbl. § 5-5 first paragraph, fourth sentence |
 | Exemption card (frikort) amount limit | NOK 100,000 | 2026 | Skatteetaten, Forskuddsutskrivingen 2026; https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ |
 | Salary above the frikort amount allocated to this employer | 50% of the excess; 50% of all salary if the allocation is NOK 0 | 2026 | Skatteetaten, tax deduction cards for employers; https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/tax-deduction-cards/about-tax-deduction-cards-for-you-as-an-employer/ |
-| PAYE source tax on wages (kildeskatt på lønn) | 25%; 17.4% where no national insurance contribution is due | 2026 | Forskuddsutskrivingen 2026, central rates table |
+| PAYE source tax on wages (kildeskatt på lønn) | 25% for ages 17 to 69; 22.5% under 17 or over 69; 17.4% where the worker is not a member of the National Insurance Scheme | 2026 | Forskuddsutskrivingen 2026, kildeskatt på lønn and central rates table |
 | PAYE scheme income cap | NOK 725,050 (the bracket tax step 3 threshold) | 2026 | Forskuddsutskrivingen 2026; skatteloven § 20-3 |
 | Employee national insurance contribution on salary (age 17 to 69) | 7.6% | 2026 | Skatteetaten, National Insurance contributions 2026; https://www.skatteetaten.no/en/rates/national-insurance-contributions/ |
 | Employee contribution lower limit | NOK 99,650; the contribution is never more than 25% of income over that limit | 2026 | Forskuddsutskrivingen 2026; folketrygdloven § 23-3 fourth paragraph |
 | Employer contribution, zone I | 14.1% | 2026 | Arbeidsgiveravgift til folketrygden for 2026, point 4.2; https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ |
 | Employer contribution, zone Ia | 10.6% until the saving against 14.1% reaches the NOK 850,000 allowance (fribeløp) per legal entity, then 14.1% | 2026 | Same, points 4.2 and 6; https://www.skatteetaten.no/en/rates/employers-national-insurance-contributions/ |
 | Employer contribution, zones II / III / IV / IVa / V | 10.6% / 6.4% / 5.1% / 7.9% / 0% | 2026 | Same, point 4.2 |
+| De minimis cap on reduced-rate aid | Reduced contributions under the allowance plus other de minimis aid: at most EUR 300,000 per legal entity or group over 3 years, even if the NOK 850,000 is not used up | 2026 | Arbeidsgiveravgift til folketrygden for 2026, point 6.5 (Regulation (EU) 2023/2831) |
+| Household employers: no employer contribution | Paid work in a private home or holiday home, where the pay is not deductible for the household and the work is not part of the worker's business, while the household's total such pay (holiday pay and free board and lodging included) is not over NOK 60,000 in the income year. Private childminding of children under 12, or with special care needs, is also free of the contribution | 2026 | folketrygdloven § 23-2 (household limit: seventh paragraph); https://lovdata.no/lov/1997-02-28-19/§23-2; Arbeidsgiveravgift til folketrygden for 2026 |
 | Minimum employer contribution to pay per period | NOK 100 (the a-melding is still due) | 2026 | Skatteetaten, payment page (sktbf. § 10-4-1); https://www.skatteetaten.no/en/business-and-organisation/employer/employers-national-insurance-contributions/payment-of-withholding-tax-and-employers-national-insurance-contributions/ |
 | Holiday pay: no withholding | Statutory holiday pay paid in the holiday year; agreed holiday pay up to 21% above the statutory amount | 2026 | sktbl. § 5-7 first paragraph letter a; sktbf. § 5-7-1 first paragraph letters a and b; https://lovdata.no/forskrift/2007-12-21-1766/§5-7-1 |
 | Pre-Christmas break | Monthly paid: no withholding for the second half of November or the first half of December | 2026 | sktbf. § 5-7-2 first paragraph |
@@ -64,8 +66,8 @@ See also: [no-income-tax](no-income-tax.md) (bands and deductions behind the tax
 
 1. **Fetch the tax card.** Fetch an electronic card for every employee before the first pay run of the year, and make sure the card data are current before each pay run (sktbl. § 5-1 second paragraph). Skatteetaten notifies the employer when a card changes; fetch the new card before the next run.
 2. **Main or secondary employer.** The main employer (where income is usually highest) withholds by table; a secondary employer withholds by the card's percentage. If it is unclear, ask the employee; if it stays unclear, use the percentage (sktbf. § 5-1-4). A PAYE-scheme card uses its fixed rate for every payment, including holiday pay and December, because it is based on 12 months of withholding (Forskuddsutskrivingen 2026, kildeskatt på lønn).
-3. **No card.** If the employer cannot access the latest card through no fault of its own, it withholds by the last card issued. If it cannot access any card, it withholds 50% on salary and 30% on pensions and other benefits (sktbl. § 5-5 first paragraph). In January the employer may use the previous year's card and must correct the deductions to the new card by the end of February (Skatteetaten, how to deduct the correct amount of tax).
-4. **Exemption card.** Salary up to the amount allocated to this employer is free of withholding; withhold 50% on the excess. If the allocation is NOK 0, withhold 50% on all salary until the employee allocates an amount.
+3. **No card.** If the employer cannot access the latest card through no fault of its own, it withholds by the last card issued. If it cannot access any card, it withholds 50% on salary and on the National Insurance benefits listed in § 5-5 first paragraph third sentence, and 30% on other benefits, pensions and annuities (sktbl. § 5-5 first paragraph). In January the employer may use the previous year's card and must correct the deductions to the new card by the end of February (Skatteetaten, how to deduct the correct amount of tax).
+4. **Exemption card.** An employee with several employers allocates the frikort amount between them (Skatteetaten, tax deduction cards). Salary up to the amount allocated to this employer is free of withholding; withhold 50% on the excess. If the allocation is NOK 0, withhold 50% on all salary until the employee allocates an amount.
 5. **Gross cash and benefits.** Cash pay counts gross (sktbl. § 5-8 first paragraph). Take out of the base the pension contributions and union dues the employer deducts from pay, where the employee will get a deduction for them (§ 5-9 first paragraph). Withhold on benefits in kind only so far as the cash pay covers it; if it does not, tell the tax office at once (§ 5-10 third paragraph).
 6. **Withholding breaks.** No withholding on statutory holiday pay in the holiday year. A monthly paid employee is free of withholding for one month in the summer and half a month before Christmas (sktbl. § 5-7 first paragraph letter a; sktbf. §§ 5-7-1 and 5-7-2). An employee with no card does not get these breaks (Skatteetaten, how to deduct the correct amount of tax), nor does a PAYE card.
 7. **Higher deduction on request.** The employer must withhold more than the card says if the employee asks in good time (sktbl. § 5-5 second paragraph).
@@ -132,7 +134,7 @@ expected:
 
 ### Example 2: zone Ia employer that uses up the NOK 850,000 allowance
 
-A company registered only in zone Ia, in a general industry and not in financial difficulty, has reportable pay of NOK 30,000,000 in 2026. It pays 10.6% until the saving against 14.1% equals NOK 850,000, then 14.1%.
+A company registered only in zone Ia, in a general industry, not in financial difficulty and with no other de minimis aid, has reportable pay of NOK 30,000,000 in 2026. It pays 10.6% until the saving against 14.1% equals NOK 850,000, then 14.1%.
 
 1. Saving per krone at the reduced rate: 14.1% - 10.6% = 3.5%.
 2. Pay that uses up the allowance: 850,000 / 3.5% = NOK 24,285,714.29.
@@ -176,6 +178,7 @@ expected:
 |---|---|---|
 | Skattebetalingsloven (lov 2005-06-17-67) §§ 5-1 to 5-11, 10-2, 10-10, 11-1, 11-6, 16-20 | https://lovdata.no/dokument/NL/lov/2005-06-17-67 | 2026-10-30 |
 | Skattebetalingsforskriften (forskrift 2007-12-21-1766) §§ 5-1-4, 5-7-1, 5-7-2 | https://lovdata.no/forskrift/2007-12-21-1766/§5-7-1 | 2026-10-30 |
+| Folketrygdloven (lov 1997-02-28-19) § 23-2 | https://lovdata.no/lov/1997-02-28-19/§23-2 | 2026-10-30 |
 | A-opplysningsloven (lov 2012-06-22-43) §§ 4, 10, 11 | https://lovdata.no/dokument/NL/lov/2012-06-22-43 | 2026-10-30 |
 | A-opplysningsforskriften (forskrift 2014-06-24-857) §§ 2-1, 4-1, 4-2 | https://lovdata.no/forskrift/2014-06-24-857/§2-1 | 2026-10-30 |
 | Skatteforvaltningsloven (lov 2016-05-27-14) §§ 14-3, 14-5, 14-6 | https://lovdata.no/dokument/NL/lov/2016-05-27-14 | 2026-10-30 |
@@ -191,4 +194,4 @@ expected:
 | Skatteetaten, how to deduct the correct amount of tax | https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/how-to-deduct-the-correct-amount-of-tax/ | 2026-10-30 |
 | Skatteetaten, tax deduction cards for employers | https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/tax-deduction-cards/about-tax-deduction-cards-for-you-as-an-employer/ | 2026-10-30 |
 
-Not yet confirmed: the late-payment interest rate in force in 2026 (set by regulation under forsinkelsesrenteloven § 3); the detailed sector exclusions and financial-difficulty rules for the reduced contribution rates; financial activity tax on wages; valuation of benefits in kind; the withholding tables; seafarer, fishing and Svalbard rules.
+Not yet confirmed: the simplified settlement scheme (forenklet oppgjørsordning) for household employers; the late-payment interest rate in force in 2026 (set by regulation under forsinkelsesrenteloven § 3); the detailed sector exclusions and financial-difficulty rules for the reduced contribution rates; financial activity tax on wages; valuation of benefits in kind; the withholding tables; seafarer, fishing and Svalbard rules.
