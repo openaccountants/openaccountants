@@ -48,7 +48,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 For anyone reinvesting to grow (hiring, equipment, expansion), the SIA defers all corporate tax until cash is taken out. **This often beats working as a self-employed FIK**, whose profit is taxed every year at 25.5% and 33% with social contributions on top.
 
-- **The 15% option from 1 January 2026.** A company whose members are all individuals in the month the dividend is calculated may choose 15% instead of 20%. The dividend is divided by 0.85 instead of 0.8 (CIT Law art. 3(5), art. 4.2(1), (2)). The ordinary dividend exemption then does not apply, and the shareholder pays 6% personal income tax on the dividend (PIT Law s. 9(3.9), s. 15(5.1)). The company withholds it (see lv-corporate-income-tax for dates).
+- **The 15% option from 1 January 2026.** A company whose members are all individuals in the tax period (month, or quarter) in which the dividend is calculated may choose 15% instead of 20%. The dividend is divided by 0.85 instead of 0.8 (CIT Law art. 3(5), art. 4.2(1), (2)). The ordinary dividend exemption then does not apply, and the shareholder pays 6% personal income tax on the dividend (PIT Law s. 9(3.9), s. 15(5.1)). The company withholds it when it calculates the dividend (CIT Law art. 16(5); see lv-corporate-income-tax for dates).
 - **What the option does to the total.** On a declared dividend of EUR 10,000, company tax is EUR 1,764.71 instead of EUR 2,500, but the shareholder then pays EUR 600 and keeps EUR 9,400, not EUR 10,000. Compared on the same profit, the two routes leave almost the same cash with the shareholder. The worked comparison below shows it. Choose the option on the client's own facts, not as a saving in itself.
 
 **Worked comparison.** An SIA owned by one individual has EUR 12,000 of profit to pay out in 2026, and pays all of it as a dividend plus the tax on it.
@@ -140,7 +140,7 @@ The most up-to-date version of this skill is maintained at [openaccountants.com]
 
 | Source | URL | Read on |
 |---|---|---|
-| Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums), art. 3, 4, 4.2, 8, 11 (Internet Archive copy of 4 October 2026) | https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums | 2026-10-30 |
+| Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums), art. 3, 4, 4.2, 8, 10, 11, 16 (Internet Archive copy of 4 October 2026) | https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums | 2026-10-30 |
 | Law on Personal Income Tax (Par iedzīvotāju ienākuma nodokli), s. 9, 10, 13, 15, 15.1, transitional provision 197 (Internet Archive copy of 1 September 2026) | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli | 2026-10-30 |
 | VAT Law (Pievienotās vērtības nodokļa likums), art. 59 (Internet Archive copy of 16 October 2026) | https://likumi.lv/ta/id/253451-pievienotas-vertibas-nodokla-likums | 2026-10-30 |
 | VID, Corporate income tax | https://www.vid.gov.lv/lv/uznemumu-ienakuma-nodoklis | 2026-10-30 |
