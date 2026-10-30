@@ -17,15 +17,17 @@ Calendar income year. Authority: Skatteetaten (skatteetaten.no); statutes on lov
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | no-income-tax: residence, 22% on ordinary income (18.5% in Finnmark and seven Nord-Troms municipalities), the five bracket tax steps, personal allowance NOK 114,540, minimum deductions, pension credit and low-income limit, the youth work deduction, sole proprietors and calculated personal income, depreciation, wealth tax, returns, advance tax, fines and the PAYE scheme, for 2026; no-capital-gains for shares and the shareholder model | sourced from the law |
+| IT-IND, individual income tax | no-income-tax: residence, 22% on ordinary income (18.5% in Finnmark and seven Nord-Troms municipalities), the five bracket tax steps, personal allowance NOK 114,540, minimum deductions, pension credit and low-income limit, the youth work deduction, sole proprietors and calculated personal income, depreciation, wealth tax, returns, advance tax, fines and the PAYE scheme, for 2026; no-capital-gains for shares and the shareholder model | checked against the law (no-capital-gains: sourced from the law) |
 | IT-CORP, corporate income tax | no-corporate-income-tax: 22% and 25% rates, participation exemption, interest limitation, depreciation, losses, group contributions, the 31 May return, advance tax and withholding, for 2026 | checked against the law |
-| VAT | no-vat-return: registration (NOK 50,000), 25% / 15% / 12% / 11.11% rates, exempt and zero-rated supplies, blocked input VAT, two-monthly and annual periods and deadlines, imports, reverse charge, VOEC, fines and interest, for 2026 (norway-mva is an older copy) | sourced from the law |
-| SC, social contributions | no-social-contributions: membership, trygdeavgift at 5.1% / 7.6% / 10.8% with the NOK 99,650 limit and 25% phase-in, employer contributions by zone (14.1% to 0%) and the NOK 850,000 limit, financial tax on pay, deadlines and fines, for 2026 | sourced from the law |
+| VAT | no-vat-return: registration (NOK 50,000), 25% / 15% / 12% / 11.11% rates, exempt and zero-rated supplies, blocked input VAT, two-monthly and annual periods and deadlines, imports, reverse charge, VOEC, fines and interest, for 2026 (norway-mva is an older copy; use no-vat-return) | checked against the law (norway-mva: sourced from the law) |
+| SC, social contributions | no-social-contributions: membership, trygdeavgift at 5.1% / 7.6% / 10.8% with the NOK 99,650 limit and 25% phase-in, employer contributions by zone (14.1% to 0%) and the NOK 850,000 limit, financial tax on pay, deadlines and fines, for 2026 | checked against the law |
 | PR, payroll withholding | no-employer-payroll | checked against the law |
 | TP, transfer pricing | no-transfer-pricing | checked against the law |
 | XB, cross-border | no-individual-residence, norway-to-switzerland-wealth-tax-exit | checked against the law |
 
 Also in the pack: no-tax-overview and no-company-formation (tax year 2026).
+
+Out of scope for this pack: the special deductions for fishermen, farmers and seamen, petroleum tax, and Svalbard tax. The skills flag these and do not compute them.
 
 ## Official sources
 
