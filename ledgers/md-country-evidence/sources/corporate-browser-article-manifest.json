@@ -1235,6 +1235,153 @@
       "format": "Exact JSON returned by read-only browser DOM observation",
       "sha256": "e27b32cae93ee9237f187ac38e5dd294c3a4611339f8366d6ca5b47e57862e3c"
     },
+    "HEALTH1585-4": {
+      "article": "HEALTH1585-4",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155334&lang=ro",
+      "observed_utc": "2026-10-30T18:32:11.720Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "9483b8c6cd89157d81152172a6e807e3cc2b1fd395200d96ec4b403fa7adbfc2"
+    },
+    "HEALTH1585-5": {
+      "article": "HEALTH1585-5",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155334&lang=ro",
+      "observed_utc": "2026-10-30T18:32:11.720Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "e2ce8f347c8d9134dc5262cc8de85f3d5a69ea4248ceb0027ba06be527e51025"
+    },
+    "HEALTH1585-6": {
+      "article": "HEALTH1585-6",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155334&lang=ro",
+      "observed_utc": "2026-10-30T18:32:11.720Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "b4c402a2c1dcc246815eff5e61c63e00593836473e7e2890e0134faaa449f61a"
+    },
+    "HEALTH1585-9": {
+      "article": "HEALTH1585-9",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155334&lang=ro",
+      "observed_utc": "2026-10-30T18:33:09.951Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "6ccb64db29e7fa56951d55fc636c0274cf3bdb7065e5e9768c0c71f3c604f358"
+    },
+    "HEALTH1585-17": {
+      "article": "HEALTH1585-17",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155334&lang=ro",
+      "observed_utc": "2026-10-30T18:33:09.951Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "abebd0e8be32ae6da7353b3549a62fcf0525fc0573f858f2826add116e15f727"
+    },
+    "HEALTH1585-18": {
+      "article": "HEALTH1585-18",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155334&lang=ro",
+      "observed_utc": "2026-10-30T18:33:09.951Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "5eaebb244b26561b58dca3ae899a728509f0c6de1d75372316e1408556168a84"
+    },
+    "HEALTH1585-JAN-4": {
+      "article": "HEALTH1585-JAN-4",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149500&lang=ro",
+      "observed_utc": "2026-10-30T18:33:49.089Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "9483b8c6cd89157d81152172a6e807e3cc2b1fd395200d96ec4b403fa7adbfc2"
+    },
+    "HEALTH1585-JAN-6": {
+      "article": "HEALTH1585-JAN-6",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149500&lang=ro",
+      "observed_utc": "2026-10-30T18:33:49.089Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "b4c402a2c1dcc246815eff5e61c63e00593836473e7e2890e0134faaa449f61a"
+    },
+    "HEALTH1585-JAN-9": {
+      "article": "HEALTH1585-JAN-9",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149500&lang=ro",
+      "observed_utc": "2026-10-30T18:33:49.089Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "05fcc8a92f882155b3e2d487f2eff124fd0bbd755f20c1e4488967637fbf3d42"
+    },
+    "HEALTH1585-JAN-17": {
+      "article": "HEALTH1585-JAN-17",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149500&lang=ro",
+      "observed_utc": "2026-10-30T18:33:49.089Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "4a7c5a651e068b213ba1aa27ea81eb96b9aee6b4f2207b62c2af44f4a7a7100e"
+    },
+    "HEALTH1585-MAR-4": {
+      "article": "HEALTH1585-MAR-4",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=151186&lang=ro",
+      "observed_utc": "2026-10-30T18:34:18.588Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "9483b8c6cd89157d81152172a6e807e3cc2b1fd395200d96ec4b403fa7adbfc2"
+    },
+    "HEALTH1585-MAR-9": {
+      "article": "HEALTH1585-MAR-9",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=151186&lang=ro",
+      "observed_utc": "2026-10-30T18:34:18.588Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "022445b6647cb6c539ae73e148ea7a92e4e31556750f19b7e33e691a311e3e06"
+    },
+    "HEALTH1585-MAR-17": {
+      "article": "HEALTH1585-MAR-17",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=151186&lang=ro",
+      "observed_utc": "2026-10-30T18:34:18.588Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "abebd0e8be32ae6da7353b3549a62fcf0525fc0573f858f2826add116e15f727"
+    },
+    "SOCIAL320-CURRENT-3": {
+      "article": "SOCIAL320-CURRENT-3",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro",
+      "observed_utc": "2026-10-30T18:35:37.545Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "35e6b78dc5c83a059ca124b301a7da31afb6cc3258b6a5a3dbf7ec4ce3f6025c"
+    },
+    "SOCIAL320-CURRENT-4": {
+      "article": "SOCIAL320-CURRENT-4",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro",
+      "observed_utc": "2026-10-30T18:35:37.545Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "0a3e52b74ce25b0358537d6c1dec8e48e2f1d740cacfcedce284f60a08c6d945"
+    },
+    "HEALTH-STATUS-PART1": {
+      "article": "HEALTH-STATUS-PART1",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=151859&lang=ro",
+      "observed_utc": "2026-10-30T18:35:51.602Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "d6f284828ebc43c61374057ec7cb6d2e6ba301f7d340f6836926a9d32b9c77a3"
+    },
+    "HEALTH-STATUS-PART2": {
+      "article": "HEALTH-STATUS-PART2",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=151859&lang=ro",
+      "observed_utc": "2026-10-30T18:35:55.483Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "7161bc1c01935761cbab3975265c2e59aacc6785d2df6c83a13e66d2e0ed8a47"
+    },
+    "HEALTH-STATUS-PART3": {
+      "article": "HEALTH-STATUS-PART3",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=151859&lang=ro",
+      "observed_utc": "2026-10-30T18:36:00.962Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "bd4a7f55276c68e0a13b390e62af6f7485f11c535cd774d476460532dc05421d"
+    },
+    "HEALTH-STATUS-PART4": {
+      "article": "HEALTH-STATUS-PART4",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=151859&lang=ro",
+      "observed_utc": "2026-10-30T18:36:05.592Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "93c48cec66b7bdcb2c5bb0388730109e4c476f7b5a2287931b0845fe071fbd06"
+    },
+    "HEALTH1593-JAN-23": {
+      "article": "HEALTH1593-JAN-23",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149273&lang=ro",
+      "observed_utc": "2026-10-30T18:43:17.460Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "78a7e86af328f21abb24831d1a79d6af0197d403e5d61eb011a6b60e07fa63be"
+    },
+    "HEALTH1593-JAN-30": {
+      "article": "HEALTH1593-JAN-30",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149273&lang=ro",
+      "observed_utc": "2026-10-30T18:43:17.460Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "14311c30511a3f43e3901b96639db2ca645c9cc8f31795f1b972f7afd32c3ef2"
+    },
     "20": {
       "article": "20",
       "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
@@ -1269,6 +1416,13 @@
       "observed_utc": "2026-10-30T17:56:36.764Z",
       "format": "Consecutive exact bounded DOM JSON slices joined without overlap or omission",
       "sha256": "b2f220d7c6d9dce2e352d14b7594fae4abceec0e48ea081213c1620e4527a13f"
+    },
+    "HEALTH-STATUS": {
+      "article": "HEALTH-STATUS",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=151859&lang=ro",
+      "observed_utc": "2026-10-30T18:35:51.602Z",
+      "format": "Consecutive exact bounded DOM JSON slices joined without overlap or omission",
+      "sha256": "daf9c36c946047e9028bdb478efde3e2c891e865a32aa36c1d5442028aaeed4e"
     }
   }
 }

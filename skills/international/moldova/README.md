@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 0.6
+version: 0.7
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -11,7 +11,7 @@ partial:
   IT-IND: "2026 individual-income writer draft and figure ledger prepared; commencement, procedure and form conflicts remain explicit; whole-country independent review is pending."
   IT-CORP: "2026 corporate writer draft and figure ledger prepared; ordinary deduction procedures, approved returns, dividend-deferral implementation and independent whole-country review remain open."
   VAT: "2026 VAT writer draft and figure ledger prepared with the current 24-box VAT12 mapping; commencement, prorata-rounding and ordinary source/procedure gaps remain explicit; whole-country independent review is pending."
-  SC: "2026 social/medical writer draft prepared; annex-1 retention, full commencement chain, State-insured health coverage, approved reporting codes and independent whole-country review remain open."
+  SC: "2026 social/medical writer draft and ledger include State-insured categories/status procedure, selected 2026 comparisons and the service medical top-up; direct tariff annex evidence, ordinary reporting/refund forms, remaining implementation/commencement gaps and whole-country independent review remain open."
   PR: "2026 payroll writer draft and figure ledger prepared; cumulative withholding and reporting instructions reconciled, with remaining benefit, procedure and special-regime gaps explicit; whole-country independent review is pending."
   TP: "2026 TP writer rewrite and figure ledger prepared: exclusions, methods, files, APA and corresponding-adjustment procedures sourced; full current form/role codes, retention and specific procedure gaps remain explicit; whole-country independent review is pending."
   XB: "2026 cross-border writer rewrite and figure ledger prepared: residence populations, source/withholding, PE profit, foreign credits, mobility and monthly reporting sourced; approved ordinary forms, refund/departure implementation and precise procedure gaps remain explicit; whole-country independent review is pending."
