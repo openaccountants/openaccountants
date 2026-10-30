@@ -1,10 +1,10 @@
 ---
 name: be-vat-return
 description: "Preparing and filing the Belgian periodic VAT return (periodieke btw-aangifte / déclaration périodique TVA) for tax year 2026: who files, the 21%, 12%, 6% and 0% rates (hotels and campsites 12% from 1 March 2026), monthly or quarterly filing (EUR 2,500,000 test, EUR 50,000 intra-EU test), the 20th and 25th deadlines and the 2026 calendar, Intervat, which grid each transaction goes in, domestic reverse charge for construction (KB nr. 1 art. 20) and other customer-pays cases, the annual client listing (over EUR 250 per customer, before 31 March) and the intra-EU listing, structured B2B e-invoicing from 1 January 2026 and its fines, late interest of 8% for 2026 and the fines in KB nr. 41 and 44. Trigger on: Belgian VAT return, btw-aangifte invullen, rooster 71, Intervat, klantenlisting, intracommunautaire opgave, medecontractant, verlegging van heffing, btw-boete. Out of scope: the small-business exemption and refunds in depth (belgium-vat-return), Peppol set-up (belgium-einvoice), bookkeeping (belgium-bookkeeping), income tax (be-income-tax, be-corporate-tax)."
-version: 2.2
+version: 2.3
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Belgium periodic VAT return (btw-aangifte / déclaration TVA): preparing and filing, tax year 2026 v2.2
+# Belgium periodic VAT return (btw-aangifte / déclaration TVA): preparing and filing, tax year 2026 v2.3
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Belgium.
 
@@ -116,6 +116,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Rounding of fines | The total fine is rounded down to the euro below EUR 250 and to the ten euros above | KB nr. 41 art. 4 § 1 |
 | Spontaneous correction | Full remission of proportional fines if corrected before any intervention by a tax administration | KB nr. 41 art. 3 |
 
+**Tolerance in early 2026.** FOD Financiën applied no penalties during the first three months of 2026 (January to March) for offences specific to the new e-invoicing obligation: not yet having the technical means to send or receive a structured e-invoice, or not issuing one because the business's own system, or a third party's, could not yet produce a valid one. The condition is that the business can show it took steps in a timely and reasonable manner. The invoice still had to be issued in another format or by another channel. Each case is assessed individually and there is no general postponement ([einvoice.belgium.be, tolerance during the first three months of 2026](https://einvoice.belgium.be/en/news/period-tolerance-during-first-three-months-2026)). For self-billing invoices the administration is lenient until 30 June 2026 where sending or receiving them is not yet technically possible, if the business shows its software supplier is still building the function; until then they may be made and sent another way, with no fine for sender or receiver ([efactuur.belgium.be FAQ B2B, question 23](https://efactuur.belgium.be/nl/FAQ/algemene-vragen-b2b)).
+
 ## Cross-border points
 
 - **Services bought from EU suppliers** under the general B2B rule: base in 88, VAT in 55, deducted in 59. **From non-EU suppliers:** base in 87, VAT in 56, deducted in 59 (KB nr. 1 annex II).
@@ -215,8 +217,10 @@ expected:
 | FOD Financiën, btw-kalender 2026 | https://financien.belgium.be/nl/ondernemingen/btw/btw-kalender | 2026-10-24 |
 | FOD Financiën, jaarlijkse klantenlisting (EUR 250, 31 March, exemption turnover report) | https://financien.belgium.be/nl/ondernemingen/btw/aangifte/jaarlijkse_klantenlisting | 2026-10-24 |
 | FOD Financiën, betaling (8% late interest for 2026) | https://financien.belgium.be/nl/ondernemingen/btw/betaling-teruggave/betaling | 2026-10-24 |
+| FPS BOSA / FOD Financiën, "Period of tolerance during the first three months of 2026" (e-invoicing) | https://einvoice.belgium.be/en/news/period-tolerance-during-first-three-months-2026 | 2026-10-30 |
+| efactuur.belgium.be, FAQ algemene vragen B2B, question 23 (self-billing tolerance to 30 June 2026) | https://efactuur.belgium.be/nl/FAQ/algemene-vragen-b2b | 2026-10-30 |
 
-Not yet confirmed: the EUR 250 per-customer floor of the client listing is on the FOD Financiën page but not in KB nr. 23 (neither its articles nor its annex, model form 725, state an amount), so its legal basis was not found; the 2027 late-interest rate (the fiscal rate for 2027 is published in the third quarter) was not looked up; the FOD Financiën page waives only the fine for late filing (KB nr. 44) for June, Q2 and July 2026 returns filed by 10 August or 10 September 2026; whether the late-payment fine on such a return is 5% or 10% (KB nr. 41 Table G, I.1 or I.2) is not stated in the sources read; any administrative tolerance for e-invoicing fines in the first months of 2026 was not found; the old v2.0 internal review flags (EUR 5,000 single transaction, EUR 400 default delta and similar) were working rules, not law, and were not carried; the treatment of short-term letting income (platform sales, Airbnb) beyond the 12% rate for furnished accommodation is left to belgium-vat-return.
+Not yet confirmed: the EUR 250 per-customer floor of the client listing is on the FOD Financiën page but not in KB nr. 23 (neither its articles nor its annex, model form 725, state an amount), so its legal basis was not found; the 2027 late-interest rate (the fiscal rate for 2027 is published in the third quarter) was not looked up; the FOD Financiën page waives only the fine for late filing (KB nr. 44) for June, Q2 and July 2026 returns filed by 10 August or 10 September 2026; whether the late-payment fine on such a return is 5% or 10% (KB nr. 41 Table G, I.1 or I.2) is not stated in the sources read; the old v2.0 internal review flags (EUR 5,000 single transaction, EUR 400 default delta and similar) were working rules, not law, and were not carried; the treatment of short-term letting income (platform sales, Airbnb) beyond the 12% rate for furnished accommodation is left to belgium-vat-return.
 
 > Contributed by Michael Cutajar.
 
