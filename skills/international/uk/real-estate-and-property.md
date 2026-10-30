@@ -6,9 +6,9 @@ category: international
 tax_year: 2026
 last_updated: 2026-10-30
 version: 1.1
-authored_by: Nadir Khan, OTHER
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -20,8 +20,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 This skill covers the tax on buying residential property in England and Northern Ireland, Stamp Duty Land Tax (SDLT), in depth: the standard bands, the higher rates landlords need to plan around, and the reliefs that actually apply versus the ones that get assumed. It also gives the purchase tax tables for Scotland (Land and Buildings Transaction Tax, LBTT) and Wales (Land Transaction Tax, LTT), the headline rules for letting income in 2026/27, and Capital Gains Tax (CGT) when a residential property is sold, including the 60-day return.
 
 SDLT figures are for transactions with an effective date (normally completion) on or after 1 April 2025. They were still the law on 30 October 2026. Income tax and CGT figures are for the tax year 6 April 2026 to 5 April 2027 (2026/27).
-
-The first version of this skill was contributed by Nadir Khan. This version brings it to 2026/27.
 
 ## Who this is for
 
