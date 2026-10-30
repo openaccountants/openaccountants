@@ -1,242 +1,183 @@
 ---
 name: ua-social-contributions
-description: "Ukrainian Unified Social Contribution (ЄСВ / USC) for self-employed people (FOP and independent professionals): the 22% rate, minimum and maximum monthly base, quarterly payment, the obligation to pay even at zero income, exemptions, and 2026 reporting changes."
-version: 1.0
+description: "Ukrainian unified social contribution (єдиний соціальний внесок, ЄСВ) for tax year 2026 under the Law on the unified social contribution (No. 2464-VI) and the 2026 State Budget Law. Covers who pays: employers, sole proprietors on the general system and the single tax, independent professionals, voluntary payers; the 22% rate and the 8.41% rate for employees with disabilities; the minimum contribution of UAH 1,902.34 a month, due even with no income; the maximum base of 20 minimum wages (UAH 172,940; 15 for service members); exemptions for pensioners, people with disabilities, employed proprietors and mobilised proprietors; the suspended martial-law right not to pay; quarterly payment and annual reporting; fines and penalty interest. Trigger on: ЄСВ Ukraine, єдиний внесок ФОП, unified social contribution, USC Ukraine, social security Ukraine. Out of scope: employer payroll steps (ua-payroll), PIT (ua-income-tax), single tax (ua-single-tax)."
+version: 0.1
 jurisdiction: UA
 tax_year: 2026
-last_updated: 2026-07-13
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-depends_on:
-  - social-contributions-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# UA Social Contributions
+# Ukraine: unified social contribution, ЄСВ (2026)
 
-## Ukraine Unified Social Contribution (Єдиний соціальний внесок / ЄСВ / USC) — Self-Employed Skill v1.0
+The unified social contribution (єдиний соціальний внесок, ЄСВ) is Ukraine's one compulsory social insurance charge. It funds the state pension and the other types of compulsory state social insurance, in proportions set each year (Law No. 2464-VI, art. 8 part 1, art. 11). It is not a tax and sits outside the tax system (art. 8 part 2), but the State Tax Service collects it and the Tax Code governs its administration (art. 8 part 4). The rate is 22% (art. 8 part 5). Every amount ties to the minimum wage, which is UAH 8,647 a month from 1 January 2026 (Law No. 4695-IX on the State Budget for 2026, art. 8). Article numbers below are articles of Law No. 2464-VI of 8 July 2010 ("ЄСВ law") unless another act is named. "TCU" is the Tax Code of Ukraine.
 
-The Unified Social Contribution (ЄСВ) is Ukraine's single mandatory social-security charge. It replaced four separate state social funds (pension, unemployment, temporary disability/sickness, and accident-at-work insurance) with one consolidated contribution. For self-employed people it is **separate from and on top of** income tax / the single tax — see the companion skill `ua-single-tax` for the simplified-system tax itself.
-
-> **Wartime note.** Figures below are pinned at their **1 January 2026** values. Ukraine is under martial law; the temporary wartime right to skip ЄСВ that existed in 2022–2024 was **abolished from 1 January 2025**. Several values depend on the statutory minimum wage (₴8,647 from 1 Jan 2026) — always **verify the current value** before relying on a number.
-
-## 1. Quick Reference
-
-**Quick Reference Table**
-
-**Quick Reference**
-
-| Field | Value |
-| --- | --- |
-| Country | Ukraine (UA) |
-| Contribution | Єдиний соціальний внесок (ЄСВ / Unified Social Contribution / USC) |
-| Rate | **22%** |
-| Minimum monthly base | 1 × minimum wage = **₴8,647** → min contribution **₴1,902.34/month** |
-| Maximum monthly base | 20 × minimum wage = **₴172,940** → max contribution **₴38,046.80/month** *(verify — see §3)* |
-| Currency | UAH (₴) |
-| Legislation | Law of Ukraine "On collection and accounting of the unified social contribution" (No. 2464-VI); State Budget Law for 2026 (03 Dec 2025) sets the year's minimum wage |
-| Authority | Державна податкова служба (ДПС / State Tax Service) collects; Pension Fund of Ukraine (Пенсійний фонд) administers records |
-| Portal | Електронний кабінет платника (cabinet.tax.gov.ua) |
-| Payment deadlines | Quarterly — by the **20th** of the month after each calendar quarter (20 Apr, 20 Jul, 20 Oct, 20 Jan) |
-| Contributor | Open Accountants Community |
-| Quality tier | **Research-verified — pending sign-off by a Ukrainian accountant** |
-| Skill version | 1.0 |
-
-### Base and amount table (as of 1 Jan 2026; verify current minimum wage)
-
-**Base and amount table**
-
-| Item | Basis | Indicative value (₴) |
-| --- | --- | --- |
-| Minimum wage (мінімальна зарплата) | statutory, 1 Jan 2026 | 8,647 |
-| ЄСВ rate | statutory | 22% |
-| **Minimum** monthly contribution | 22% × 1 min. wage (₴8,647) | **1,902.34** |
-| **Minimum** quarterly contribution | 1,902.34 × 3 | **5,707.02** |
-| **Minimum** annual contribution | 1,902.34 × 12 | **22,828.08** |
-| **Maximum** monthly base | 20 × min. wage | 172,940 *(verify)* |
-| **Maximum** monthly contribution | 22% × ₴172,940 | 38,046.80 *(verify)* |
-| Military/police-only cap (not for FOP) | 15 × min. wage = ₴129,705 → 22% | 28,535.10 |
-
-### Conservative defaults
-
-**Conservative defaults**
-
-| Situation | Default assumption |
-| --- | --- |
-| Single-tax FOP (Groups 1–3) with any or no income | Owes the **minimum** ₴1,902.34/month unless a clear exemption is documented |
-| FOP wants to pay below the minimum | **Not allowed** — minimum applies even at zero income |
-| Income unknown for a general-system FOP | Assume profit ≥ minimum base → ₴1,902.34/month floor |
-| Claimed exemption (pensioner, disability, mobilised) | Treat as **not exempt** until status and supporting documents are confirmed |
-| Maximum cap multiplier in doubt | Cap at the lower (15×) base and flag for reviewer; never under-cap |
-| Mid-year start/stop | Pro-rate by **months registered**, not by days |
-
-## 2. Who Pays / Who Is Exempt
-
-### Who pays ЄСВ "for themselves"
-
-- **Categories of payers** — **FOP (фізична особа-підприємець / sole proprietor)** on the **simplified system** (single-tax Groups 1, 2 and 3). **FOP on the general system** (загальна система) — pays 22% of **net taxable income (profit)**, but not less than the minimum and not more than the maximum base. **Independent professionals** ("особи, які провадять незалежну професійну діяльність") — e.g. private notaries, lawyers/advocates, arbitration managers, appraisers, and others registered as self-employed professionals. **Members of farming households** in some cases (out of scope here). > **Single-tax payers owe ЄСВ even with zero income.** In 2026 a FOP on the simplified system must pay the minimum ₴1,902.34/month **regardless of whether any income or activity occurred**. The only way to avoid it is to fall into an exemption category (below) or to be officially deregistered.
-
-### Difference: simplified vs general system at zero income
-
-**Difference: simplified vs general system at zero income**
-
-| System | No income / loss in the month |
-| --- | --- |
-| Simplified (Groups 1–3) | Still owes the **minimum** ₴1,902.34 |
-| General system | **No ЄСВ** is due for a month with no net profit / a loss (ЄСВ = 22% of profit, minimum floor only applies in months with profit) |
-
-### Who may legally NOT pay ЄСВ for themselves (exemptions)
-
-- **Exemption categories** — The following FOP/self-employed categories are released from paying ЄСВ "for themselves" — but the exemption must be supported by status and, where relevant, an application/documents: 1. **Old-age (and certain length-of-service) pensioners** — FOP who already receive a pension by age are exempt; payment becomes voluntary. 2. **Persons with disabilities** who receive a pension or social assistance on the grounds of disability — exempt; payment becomes voluntary. 3. **FOP who are also employed** ("основне місце роботи") where the **employer pays ЄСВ for them at no less than the minimum** on the employment income — relief applies for the months the employer's contribution is at/above the minimum. The taxpayer should retain proof. 4. **Mobilised FOP** (called up for military service during martial law) — exempt for the period of service, on the basis of supporting documents (mobilisation order / demobilisation confirmation). The State Tax Service / Pension Fund records the period.
-
-### Status of wartime / mobilisation reliefs in 2026
-
-- **Wartime reliefs status** — **2022–2024 voluntary right to skip ЄСВ:** During the COVID period and then the full-scale-war period, single-tax FOP had a **temporary voluntary right not to pay ЄСВ for themselves**. This relief was **abolished from 1 January 2025.** **2026 position:** There is **no general wartime exemption** for ordinary FOP. Single-tax payers must pay the minimum even with zero income. The **mobilisation exemption** (item 4 above) for FOP actually called up to serve **remains** in force during martial law and is the main wartime relief still available.
-
-### What ЄСВ funds
-
-- **What ЄСВ funds** — ЄСВ is the single contribution that finances the state social-insurance system: **State pension** (Pension Fund of Ukraine) — and it is what builds the FOP's **insurance length-of-service (страховий стаж)** toward a future pension; paying only the minimum earns roughly one month of stage per month paid. **Social insurance** — temporary incapacity / sickness, maternity, work-accident / occupational-disease, and unemployment cover.
-
-## 3. Computation — Minimum, Voluntary Higher Base, Maximum Cap
-
-- **Core formula (per month)** — ЄСВ (month) = 22% × base where  minimum base = 1 × minimum wage  (₴8,647 in 2026) maximum base = 20 × minimum wage (₴172,940 in 2026 — verify)
-
-### Minimum (the usual case)
-
-- **Minimum calculation** — Almost all single-tax FOP pay on the minimum base because the law sets a **floor** of one minimum wage regardless of actual income: 22% × ₴8,647 = ₴1,902.34 / month × 3 = ₴5,707.02 / quarter × 12 = ₴22,828.08 / year
-
-### Voluntary higher base
-
-- **Voluntary higher base rule** — A FOP **may choose** to pay ЄСВ on a **higher self-declared base** (anywhere between one minimum wage and the maximum base). This is voluntary and is usually done to build a larger future pension. Example: choosing a base of ₴20,000 → 22% × ₴20,000 = ₴4,400/month.
-
-### Maximum cap
-
-- **Maximum cap** — The base is **capped**. For 2026 the operative cap is **20 × minimum wage = ₴172,940**, giving a maximum monthly contribution of **22% × ₴172,940 = ₴38,046.80**. > **Verify the maximum-base multiplier.** Sources conflict. The State Budget Law for 2026 (3 Dec 2025) and current specialist Ukrainian tax catalogues (dtkt.ua, Factor, Holovbukh) state the FOP maximum base is **20 × minimum wage (₴172,940)**. A separate **15 ×** cap (₴129,705 → ₴28,535.10) applies **only to military / police service members**, not to FOP. One international summary (PwC) described the 20× increase as "postponed," leaving 15× — this appears to be outdated for the FOP base. The cap only ever matters for a FOP paying voluntarily above the minimum, so the minimum-case figures above are unaffected. **A Ukrainian accountant must confirm the exact cap before relying on it.**
-
-### Mid-year start / stop (pro-ration)
-
-- **Pro-ration rule** — ЄСВ accrues per **month of registration**. A FOP registered on any day of a month owes the full minimum for that month; a FOP deregistered owes for each month they were registered. Pro-rate by **whole months**, not days.
-
-## 4. Payment & Reporting Calendar
-
-### Payment (quarterly)
-
-- **Payment cadence** — Self-employed people pay ЄСВ **quarterly** by the **20th of the month following the end of the calendar quarter**. A FOP may also pay monthly/in advance if they prefer, but the legal deadline is quarterly.
-
-**Payment schedule table**
-
-| Period (2026) | Minimum amount | Pay by |
-| --- | --- | --- |
-| Q1 (Jan–Mar 2026) | ₴5,707.02 | **20 April 2026** |
-| Q2 (Apr–Jun 2026) | ₴5,707.02 | **20 July 2026** |
-| Q3 (Jul–Sep 2026) | ₴5,707.02 | **20 October 2026** |
-| Q4 (Oct–Dec 2026) | ₴5,707.02 | **20 January 2027** |
-
-### Payment (quarterly)
-
-> If the 20th falls on a weekend/holiday the deadline is **not** automatically extended for ЄСВ — pay on or before the 20th. Verify against the current ДПС tax calendar.
-
-### Reporting — 2026 changes
-
-- **Reporting changes** — **The separate ЄСВ report has been abolished as a standalone form.** Self-employed FOP no longer file a separate monthly or standalone annual ЄСВ report. ЄСВ data is reported **as part of the tax return** (in the unified single-tax declaration, via the ЄСВ appendix / "Додаток" / former Form D5 content folded in). From **2026** single-tax FOP move to **quarterly tax reporting** (for personal income tax, military levy and ЄСВ where relevant); FOP **without employees** generally report ЄСВ "for themselves" **once a year** together with the annual return. Indicative annual-return deadlines (verify against ДПС for the exact form/year): Groups 1–2 by **early March** after year-end; Group 3 quarterly returns plus the year-end ЄСВ appendix. > **Reporting is mandatory even at zero income.** Missing the ЄСВ appendix is treated as failing to report for the whole year.
-
-## 5. Worked Examples
-
-### Example 1 — Group 3 FOP (IT freelancer), normal year
-
-Olena is a Group-3 single-tax FOP. She earns ₴80,000 some months, ₴0 in others.
-
-- ЄСВ is **not** based on her income — she pays the **minimum**.
-- Per month: **₴1,902.34**. Per quarter: **₴5,707.02**. Per year: **₴22,828.08**.
-- This is **on top of** her single tax (5%) and military levy (1%) — see `ua-single-tax`.
-
-### Example 2 — Group 2 FOP, no income for two months
-
-Petro had ₴0 turnover in February and March (sick, no clients).
-
-- As a **simplified-system** payer he **still owes** the minimum for those months.
-- Q1 ЄСВ = 3 × ₴1,902.34 = **₴5,707.02**, due **20 April 2026**, despite zero income.
-
-### Example 3 — Old-age pensioner FOP (exempt)
-
-Maria is 63, receives an old-age pension, and runs a Group-1 FOP.
-
-- As an **old-age pensioner** she is **exempt** from ЄСВ "for herself"; payment is **voluntary**.
-- Default ЄСВ due: **₴0**. If she wants more pension stage she may pay voluntarily, on a base she chooses between ₴8,647 and ₴172,940.
-
-### Example 4 — Employed + FOP (dual status)
-
-Andriy works full-time for an employer who pays ЄСВ on his ₴30,000 salary, and also has a Group-3 FOP on the side.
-
-- The employer's ЄСВ (22% × ₴30,000 = ₴6,600/month) is **above the minimum**.
-- For months where the employer's contribution ≥ the minimum, Andriy is **relieved** of paying ЄСВ on the FOP. He should keep proof (payslips / employer confirmation).
-- Default FOP ЄСВ for those months: **₴0** (relief), but **confirm month-by-month**.
-
-### Example 5 — Voluntary higher base for pension
-
-Iryna (Group 3) wants a bigger future pension and elects a base of ₴25,000.
-
-- ЄСВ = 22% × ₴25,000 = **₴5,500/month** (well below the ₴38,046.80 cap).
-- She must declare the chosen higher base; it is voluntary and self-elected.
-
-## 6. Tier 2 Catalogue (reviewer judgement required)
-
-**Tier 2 Catalogue table**
-
-| # | Situation | Why it needs judgement |
-| --- | --- | --- |
-| T2-1 | **Claimed exemption** (pensioner / disability / mobilised) | Must confirm official status, dates, and supporting documents; partial-year exemptions are common. |
-| T2-2 | **Mid-year registration or deregistration** | Determine exact months owed; first/last partial month rules; deregistration paperwork timing. |
-| T2-3 | **Dual status (employee + FOP)** | Relief only for months the employer's ЄСВ ≥ minimum; verify each month and the employment income level. |
-| T2-4 | **General-system FOP with fluctuating profit/loss** | ЄСВ = 22% of profit with a min/max collar; loss months differ from simplified-system months. |
-| T2-5 | **Maximum-base cap** (paying voluntarily above the minimum) | Cap multiplier (15× vs 20×) must be confirmed for the year before applying. |
-| T2-6 | **Mobilisation period overlapping a quarter** | Apportioning exempt vs non-exempt months; documentation from the military unit. |
-| T2-7 | **Independent professional vs FOP classification** | Different registration and base rules for notaries/advocates/etc. |
-| T2-8 | **Backdated arrears / penalties** | Penalty and late-interest computation, voluntary disclosure. |
-
-## 7. Reference Material + Test Suite
-
-### Key sources (verify before reuse)
-
-Law of Ukraine **No. 2464-VI** "On collection and accounting of the unified social contribution to compulsory state social insurance."
-**State Tax Service of Ukraine** — tax.gov.ua / dps.gov.ua (ЄСВ rates, calendar, Електронний кабінет).
-**Pension Fund of Ukraine** — pfu.gov.ua (FOP ЄСВ guidance, e.g. "Сплата ЄСВ для ФОП з 1 січня 2026 року").
-**State Budget Law for 2026** (03 Dec 2025) — minimum wage ₴8,647 from 1 Jan 2026.
-PwC Worldwide Tax Summaries — Ukraine, Individual / Other taxes (note the cap discrepancy in §3).
-Specialist Ukrainian tax catalogues: dtkt.ua, Factor (factor.academy / i.factor.ua), Holovbukh (buhplatforma), taxer.ua, buh.ua.
-
-### Self-check test suite
-
-**Self-check test suite table**
-
-| # | Prompt | Expected answer |
-| --- | --- | --- |
-| 1 | What is the ЄСВ rate? | **22%**. |
-| 2 | Minimum monthly ЄСВ in 2026? | **₴1,902.34** (22% × ₴8,647). |
-| 3 | Minimum quarterly ЄСВ? | **₴5,707.02**. |
-| 4 | A Group-2 FOP earned ₴0 this quarter — owes? | **₴5,707.02** — single-tax payers pay even at zero income. |
-| 5 | A general-system FOP had a loss this month — owes? | **₴0** for that month (ЄСВ = 22% of profit; no profit, no ЄСВ). |
-| 6 | When is Q1 2026 ЄСВ due? | **20 April 2026** (20th of month after the quarter). |
-| 7 | Is the old wartime "skip ЄСВ" relief available in 2026? | **No** — abolished from 1 Jan 2025; only the mobilisation exemption remains. |
-| 8 | Who can legally not pay ЄСВ for themselves? | Old-age pensioners, persons with disabilities on disability pension, FOP whose employer pays ЄСВ ≥ minimum, and mobilised FOP. |
-| 9 | Is there still a separate monthly ЄСВ report for FOP? | **No** — ЄСВ is reported within the tax return; the separate report is abolished. |
-| 10 | What does ЄСВ fund? | State **pension** + **social insurance** (sickness, maternity, accident, unemployment). |
-
-## PROHIBITIONS
-
-- **Do not** tell a single-tax FOP they can skip ЄСВ in a zero-income month — they cannot (simplified system); they owe the minimum.
-- **Do not** apply the 2022–2024 voluntary-non-payment relief to 2025 or 2026 — it was abolished from 1 Jan 2025.
-- **Do not** assert an exemption (pensioner / disability / mobilised / dual-status) without confirmed status and supporting documents.
-- **Do not** state the maximum-base cap as settled fact without a Ukrainian accountant confirming the multiplier for the year (15× vs 20×) — see §3.
-- **Do not** quote ₴ figures without anchoring them to the **current minimum wage** and adding "verify current value."
-- **Do not** conflate ЄСВ with the single tax or the military levy — they are separate charges (see `ua-single-tax`).
-- **Do not** treat the quarterly **20th** deadline as auto-extended over weekends/holidays without checking the ДПС calendar.
-
-## Disclaimer
-
-This skill is **research-verified** from public sources (State Tax Service of Ukraine, Pension Fund of Ukraine, PwC Worldwide Tax Summaries, and reputable Ukrainian specialist sources) as of **May 2026** for tax year 2026. It is **not** a substitute for professional advice and **must be signed off by a qualified Ukrainian accountant / tax adviser** before being relied upon for filing or payment. Rates, the minimum wage, the maximum-base multiplier, deadlines, and exemption rules can change — especially under martial law — so always verify the current values with ДПС / the Pension Fund. Part of the Open Accountants community library at **openaccountants.com**; contributions and corrections welcome.
+## Who this applies to
+
+- **Employers** pay ЄСВ on the salary of each employee and on fees paid to individuals under civil-law contracts (art. 4 part 1 point 1, art. 7 part 1 point 1). This includes companies, branches, sole proprietors who hire, and individuals who hire staff. The employer pays it on top of gross pay; nothing is deducted from the employee. The payroll steps are in `ua-payroll`.
+- **Sole proprietors (ФОП) for themselves,** including those on the single tax, except e-residents (art. 4 part 1 point 4).
+- **Independent professionals** for themselves: scientific, literary, artistic, educational, medical and legal practice, including advocates and notaries, and others listed (art. 4 part 1 point 5).
+- **Members of a farming household** who are not insured on another ground (art. 4 part 1 point 5-1).
+- **Voluntary payers.** People aged 16 or over who are not employed and not otherwise payers, members of a personal peasant household, and domestic workers may join by a voluntary agreement with the tax authority (art. 10 parts 1 and 3). People living or working abroad may pay under such an agreement in foreign currency (art. 9 part 5).
+- **Exempt from paying for themselves** (sole proprietors, independent professionals, farming household members): a person who receives an old-age or long-service pension, a person with a disability, or a person who has reached the pension age in art. 26 of the pension insurance law and receives a pension or social assistance (art. 4 part 4). They may join voluntarily.
+- **Employed proprietors.** A proprietor or professional is exempt for each month in which an employer, including a Diia City resident, paid ЄСВ for them of at least the minimum contribution (art. 4 part 6). They may pay on a self-chosen base for months where the employer paid less.
+- **Mobilised proprietors.** A proprietor, professional or farming household member called up during mobilisation, or serving under contract in the special period, is released from paying for themselves for the whole service; the tax authority takes the dates from the military register (section VIII, point 9-2). The same applies to reservists called up (point 9-18).
+- **No general martial-law exemption in 2026.** Point 9-19 gave proprietors the right not to pay ЄСВ for themselves from 1 March 2022 until twelve months after martial law ends. Its effect is suspended for 2025 (Law No. 4059-IX) and for 2026 (Law No. 4695-IX). Everyone not exempt above pays.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| ЄСВ rate | 22% of the base | 2026 | https://zakon.rada.gov.ua/laws/show/2464-17 (art. 8 part 5) |
+| Rate on pay of employees with disabilities | 8.41% | 2026 | same, art. 8 part 13 |
+| Minimum wage from 1 January 2026 | UAH 8,647 a month | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 8) |
+| Minimum contribution (22% x minimum wage) | UAH 1,902.34 a month | 2026 | ЄСВ law art. 1 point 5, art. 8 part 5; Budget art. 8 |
+| Minimum for a quarter / a year | UAH 5,707.02 / UAH 22,828.08 | 2026 | computed from the line above |
+| Maximum monthly base (except service members and police) | 20 minimum wages, UAH 172,940 | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 32) |
+| Maximum monthly contribution | UAH 38,046.80 (22% x 172,940) | 2026 | computed from the two lines above |
+| Maximum monthly base for pay of service members, police and similar ranks | 15 minimum wages, UAH 129,705 | 2026 | Budget art. 32 |
+| Maximum base in the ЄСВ law itself | 15 minimum wages; suspended for 2026 by the Budget Law | 2026 | ЄСВ law art. 1 point 4 |
+| Payment by proprietors and professionals for themselves | by the 20th of the month after each quarter | 2026 | ЄСВ law art. 9 part 8 |
+| Payment by employers | with each salary payment, and for the month by the 20th of the next month | 2026 | ЄСВ law art. 9 part 8 |
+| Fine for late or unpaid ЄСВ | 20% of the amount not paid on time | 2026 | ЄСВ law art. 25 part 11 point 2 |
+| Fine for under-accrual found later | 10% for each full or part reporting period, at most 50% | 2026 | art. 25 part 11 point 3 |
+| Fine for not paying with the salary | 10% | 2026 | art. 25 part 11 point 6 |
+| Penalty interest | 0.1% of the unpaid amount a day | 2026 | art. 25 part 10 |
+
+## The taxable base
+
+**Base by payer type (art. 7 part 1).**
+- **Employers:** the accrued salary of each insured person (basic and additional pay, bonuses, compensation, pay in kind, as defined by the Law "On remuneration") plus fees to individuals under civil-law contracts (point 1). The base is gross: taxes and other deductions do not reduce it (art. 7 part 4). It counts when accrued, whether or not paid (art. 7 part 5). A Cabinet of Ministers list sets payments with no ЄСВ (art. 7 part 7).
+- **Sole proprietors on the general system, independent professionals, farming household members:** the income (profit) from their activity that is subject to personal income tax. The contribution cannot be less than the minimum contribution for the month in which income was received. In a month or period with no income, they choose the base themselves, up to the maximum, and still pay at least the minimum (point 2).
+- **Sole proprietors on the single tax:** a base they choose themselves, up to the maximum, with the contribution not less than the minimum (point 3). Turnover does not matter.
+
+**The minimum contribution.** It is the minimum wage for the month times the rate, and it is payable every month (art. 1 point 5). If the base does not exceed the minimum wage, the contribution is the minimum wage times 22% (art. 8 part 5). For 2026 that is 8,647 x 22% = UAH 1,902.34. Two exceptions for employers: pay from a job that is not the employee's main place of work, and pay under an employment contract with non-fixed working hours, bear 22% of actual pay with no floor (art. 8 part 5).
+
+**The maximum base.** ЄСВ is charged only up to the maximum base (art. 7 part 3). For 2026 it is 20 minimum wages, UAH 172,940 a month; for pay of service members, police and similar ranks it is 15 minimum wages (Budget Law art. 32). The ЄСВ law's own figure of 15 is suspended for 2026 (art. 1 point 4). So the most a proprietor or an employer pays per person is UAH 38,046.80 a month.
+
+**What this means in practice.**
+- A single-tax proprietor in groups 1, 2 or 3 pays at least UAH 1,902.34 every month, with income or without. A higher self-chosen base is allowed, up to UAH 172,940; for example a base of UAH 20,000 gives UAH 4,400 a month.
+- A general-system proprietor pays 22% of net taxable income (as computed in `ua-income-tax`), never less than the minimum for any month, never more than 22% of the maximum base. A loss month still costs the minimum.
+- An employer pays 22% of each employee's gross pay, at least UAH 1,902.34 for an employee at the main place of work earning below the minimum wage, at most UAH 38,046.80. For an employee with a disability, the rate is 8.41% (art. 8 part 13).
+- Own ЄСВ paid by a general-system proprietor is a deductible expense for PIT (TCU art. 177.4.3).
+
+**Currency.** ЄСВ is computed only in hryvnia; amounts in foreign currency are converted at the National Bank rate (art. 9 part 1).
+
+**Priority.** ЄСВ is payable whatever the payer's finances, and ranks ahead of all other obligations except paying wages (art. 9 part 12).
+
+**Diia City residents** pay the minimum contribution on employee salaries and on gig-contract fees if they meet the residency conditions (art. 8 part 14-1). Detail: `ua-tax-optimization`.
+
+## Deadlines and filing
+
+| What | Deadline | Source |
+|---|---|---|
+| Proprietor, professional, farming household: ЄСВ for Q1 2026 | 20 April 2026 | art. 9 part 8 |
+| Same, Q2 2026 | 20 July 2026 | art. 9 part 8 |
+| Same, Q3 2026 | 20 October 2026 | art. 9 part 8 |
+| Same, Q4 2026 | 20 January 2027 | art. 9 part 8 |
+| Employer: ЄСВ on each salary payment | at the same time as the pay | art. 9 part 8 |
+| Employer: ЄСВ for the month | by the 20th of the next month (28th for mining companies) | art. 9 part 8 |
+| Reporting period, employers | the calendar month | art. 9 part 8 |
+| Reporting period, proprietors and professionals for themselves | the calendar year; the last period ends on the date of deregistration | art. 9 part 8 |
+
+**How it is reported.** There is no separate ЄСВ report. Payers report ЄСВ inside their personal income tax or single-tax reporting, on the form and by the deadlines set in the Tax Code (art. 6 part 2 point 4). For a general-system proprietor that is the annual PIT declaration, due 1 May (so 3 May 2027 for 2026) (TCU art. 49.18.4, 49.20); for single-tax payers it is the single-tax declaration (`ua-single-tax`); for employers it is the tax calculation of income and ЄСВ, quarterly for proprietors and monthly for others (TCU art. 176.2 "б"; see `ua-payroll`). Employers report hires and changes in insured persons' details in the same reporting (art. 6 part 2 points 8 and 10).
+
+**Paying.** By bank transfer from the payer's account to the tax authority's accounts or the single account, in hryvnia (art. 9 parts 5 and 7). The day of payment is the day the bank debits the payer's account (art. 9 part 10).
+
+**Mobilised employers.** A proprietor who hands payroll to an authorised person while serving pays the ЄСВ accrued by that person within 180 days after demobilisation, and reports it within 150 days, without fines (section VIII, point 9-2).
+
+## Penalties and interest
+
+| Breach | Penalty | Source |
+|---|---|---|
+| ЄСВ not paid or paid late | fine of 20% of the amount not paid on time | art. 25 part 11 point 2 |
+| ЄСВ not accrued on time, found by the tax authority or the payer | 10% of the amount for each full or part reporting period, at most 50% | art. 25 part 11 point 3 |
+| Employer does not pay ЄСВ with the salary | 10% of the amount | art. 25 part 11 point 6 |
+| Improper keeping of the records ЄСВ is based on | 8 to 15 tax-free minimum incomes of citizens | art. 25 part 11 point 5 |
+| Penalty interest on arrears | 0.1% of the unpaid amount for each day late | art. 25 part 10 |
+
+**Martial law.** The 2022 to 2023 reliefs from fines and penalty interest ended on 1 August 2023 (section VIII, points 9-21 and 9-22). A mobilised proprietor's fines and penalty interest for the service period are cancelled (point 9-2).
+
+## Cross-border points
+
+- **Voluntary payment from abroad.** A person living or working abroad who is not otherwise insured may sign a voluntary agreement and pay in foreign currency to the tax authority's account; it is converted to hryvnia (art. 9 part 5, art. 10).
+- **e-residents.** Sole proprietors who are e-residents are outside art. 4 part 1 point 4 and do not pay ЄСВ for themselves.
+- **Foreign employers.** Branches and representative offices of foreign companies in Ukraine, and diplomatic missions, are employers that pay ЄСВ on staff they employ (art. 4 part 1 point 1).
+- **Social security agreements.** Ukraine's bilateral agreements can change which country's contributions apply to a posted worker; their texts were not read for this skill. See `ua-cross-border` for residence and treaty points.
+
+## Worked examples
+
+**Example 1. Single-tax proprietor, a full year at the minimum.** A group 3 single-tax proprietor works all of 2026 and is not exempt. Her income does not matter: she pays the minimum, UAH 1,902.34 a month. Each quarter she pays UAH 5,707.02, by 20 April, 20 July and 20 October 2026 and 20 January 2027. The year costs UAH 22,828.08. If she chose a base of UAH 20,000 instead, she would pay UAH 4,400 a month, still below the maximum of UAH 38,046.80.
+
+```oa-check
+name: Single-tax proprietor, minimum ЄСВ, 2026
+inputs:
+  minimum_wage: 8647
+  rate: 0.22
+  chosen_base: 20000
+  maximum_base_multiple: 20
+steps:
+  - monthly_minimum: minimum_wage * rate
+  - quarterly_minimum: monthly_minimum * 3
+  - annual_minimum: monthly_minimum * 12
+  - maximum_base: minimum_wage * maximum_base_multiple
+  - maximum_monthly: maximum_base * rate
+  - chosen_monthly: min(chosen_base, maximum_base) * rate
+expected:
+  monthly_minimum: 1902.34
+  quarterly_minimum: 5707.02
+  annual_minimum: 22828.08
+  maximum_base: 172940
+  maximum_monthly: 38046.80
+  chosen_monthly: 4400
+```
+
+**Example 2. Employed until June, then a late payment.** A proprietor on the single tax worked as an employee from January to June 2026, and his employer paid ЄСВ for him above the minimum. He is exempt for those six months (art. 4 part 6) and owes nothing for Q1 and Q2. From July he owes the minimum: UAH 5,707.02 for Q3, due 20 October 2026, and the same for Q4, due 20 January 2027, so UAH 11,414.04 for the year. He pays Q3 30 days late. The fine is 20% of the late amount, UAH 1,141.40, and penalty interest is 0.1% a day for 30 days, UAH 171.21 (art. 25 part 10, part 11 point 2).
+
+```oa-check
+name: Employed half-year exemption, then late Q3 ЄСВ, 2026
+inputs:
+  minimum_wage: 8647
+  months_owed: 6
+  days_late: 30
+steps:
+  - monthly_minimum: minimum_wage * 0.22
+  - quarter_due: monthly_minimum * 3
+  - year_due: monthly_minimum * months_owed
+  - late_fine: round(quarter_due * 0.20, 2)
+  - penalty_interest: round(quarter_due * 0.001 * days_late, 2)
+expected:
+  monthly_minimum: 1902.34
+  quarter_due: 5707.02
+  year_due: 11414.04
+  late_fine: 1141.40
+  penalty_interest: 171.21
+```
+
+## Ask the client first
+
+1. Are you a sole proprietor (general system or single tax, which group), an independent professional, an employer, or a voluntary payer?
+2. Do you receive an old-age or long-service pension, have a disability, or have you reached pension age with a pension or social assistance?
+3. Were you employed in any month of 2026, and did the employer pay ЄСВ for you of at least UAH 1,902.34 for each such month?
+4. Were you mobilised or did you serve under contract in 2026? From and to what dates?
+5. For a general-system proprietor: your net taxable income by month or for the year.
+6. Which quarters have you paid, and on what dates?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Law of Ukraine "On the collection and accounting of the unified contribution to compulsory state social insurance", No. 2464-VI of 8 Jul 2010, text in force from 1 Jan 2026 (amended by Laws 4280-IX, 4681-IX, 4695-IX): arts. 1, 4, 6, 7, 8, 9, 10, 25; section VIII points 9-2, 9-18 to 9-22 | https://zakon.rada.gov.ua/laws/show/2464-17 | 2026-10-30 (zakon.rada.gov.ua timed out from our network; read via web.archive.org capture of 9 Jan 2026, https://web.archive.org/web/20260109165053/https://zakon.rada.gov.ua/laws/show/2464-17; the 18 Oct 2026 capture shows the current text is the edition of 26 Jan 2026 under Law 4697-IX, which only adds a rule on court-ordered pay for forced absence) |
+| Law No. 4697-IX of 3 Dec 2025, amending the ЄСВ law on forced absence | https://zakon.rada.gov.ua/laws/show/4697-20 | 2026-10-30 (via web.archive.org capture of 8 Aug 2026) |
+| Law "On the State Budget of Ukraine for 2026", No. 4695-IX of 3 Dec 2025, arts. 8 and 32, and the suspensions of ЄСВ law art. 1 point 4 and section VIII point 9-19 | https://zakon.rada.gov.ua/laws/show/4695-20 | 2026-10-30 (via web.archive.org capture of 4 Jan 2026) |
+| Tax Code of Ukraine, Law No. 2755-VI, arts. 49.18.4, 49.20, 176.2, 177.4.3 | https://zakon.rada.gov.ua/laws/show/2755-17 | 2026-10-30 (via web.archive.org capture of 12 Oct 2026) |
+| State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
+
+Not yet confirmed: how a proprietor who registers or deregisters mid-month counts that month; how a general-system proprietor spreads annual net income across months for the minimum and the cap (the Ministry of Finance instruction was not read); whether a payment date on a weekend moves (none of the 2026 quarterly dates falls on one); the proportional floor for employees hired or leaving mid-month; the amount of the tax-free minimum income of citizens for the records fine; how insurance length of service (страховий стаж) is counted (pension insurance law not read); the Cabinet of Ministers list of payments free of ЄСВ; social security agreements with other countries; any amendment after the 18 October 2026 archive capture.
 
 <!-- openaccountants-cta-block -->
 
