@@ -1,10 +1,10 @@
 ---
 name: lv-corporate-income-tax
 description: "Latvian corporate income tax for tax year 2026 under the Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums) in force from 1 January 2026. Latvia taxes a company only when it distributes profit: 20% of the amount divided by 0.8. Covers who pays, the optional 15% rate with a 0.85 divisor for dividends of companies owned only by individuals (plus 6% personal income tax), deemed distributions (non-business expenses, bad debts, excess interest, loans to related persons, transfer pricing adjustments), dividends received, the 36-month share disposal relief, pre-2018 profits and losses, the monthly return by the 20th and payment by the 23rd, the EUR 50 minimum, fines and 0.05% a day late interest. Trigger on: Latvia corporate tax, SIA dividend tax, 20/80, UIN deklarācija, uzņēmumu ienākuma nodoklis. Out of scope: payments to non-residents (lv-cross-border), transfer pricing documentation (lv-transfer-pricing), individuals (latvia-income-tax), micro-enterprise tax and planning (latvia-tax-optimization)."
-version: 0.1
+version: 0.2
 jurisdiction: LV
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -80,13 +80,13 @@ Items (b), (c), (d), (e), (f), (i), (j) and (k) go into the base of the **last t
 - Later dividends out of that already-taxed profit reduce the company's own dividend base (art. 6.1(10)).
 
 **4. The 15% alternative for companies owned only by individuals (art. 4.2)**
-- Condition: in the taxation period in which the dividend is calculated, every shareholder (dalībnieks) is an individual (art. 4.2(1)). "Dalībnieks" means any owner of shares or anyone else with a non-debt right to share in profit (art. 1(7)), so the option is open to an AS as well as an SIA, as long as no shareholder is a company, fund or other entity.
+- Condition: in the tax period (a calendar month, or a quarter for a company entitled to book quarterly, art. 3(2), 3(3)) in which the dividend is calculated, every shareholder (dalībnieks) is an individual (art. 4.2(1)). "Dalībnieks" means any owner of shares or anyone else with a non-debt right to share in profit (art. 1(7)), so the option is open to an AS as well as an SIA, as long as no shareholder is a company, fund or other entity.
 - Scope: only calculated dividends under art. 4(2)(1)(a). Deemed dividends, payments treated as dividends and all deemed distributions stay at 20% / 0.8.
-- It is a choice: the company "is entitled to choose" it (art. 4.2(1)).
+- It is a choice: the company "is entitled to choose" it for the dividends calculated in that tax period, so the test and the choice are made period by period (art. 4.2(1)).
 - Computation: dividend / 0.85 x 15% (art. 3(5), art. 4.2(2)). The shareholder then pays 6% personal income tax on the dividend instead of the usual exemption (PIT Law art. 9(3.9), art. 15(5.1)).
 - Who withholds the 6%: the company, when it calculates the dividend (CIT Law art. 16(5)). For personal income tax the dividend counts as paid on the day it is calculated (PIT Law art. 16.1(8)). The company pays the 6% into the single tax account by the 23rd of the following month (PIT Law art. 17(10)(12)) and reports the payment to VID by the 15th of the following month (PIT Law art. 17(11)(1)). For listed shares, the investment service provider that keeps the account withholds, on the payment date (PIT Law art. 16.1(8)).
 - Start: inserted by the law of 3 December 2025, in force 1 January 2026.
-- Per euro of net dividend the total is 15/85 plus 6%, about 23.6%, against 25% under the standard rule.
+- It is not a saving on the same profit. Take EUR 12,000 of profit paid out. Standard rule: the dividend divided by 0.8 is 12,000, so the dividend is 9,600, CIT is 2,400 and there is no personal income tax; the owner keeps 9,600 (art. 3(1), art. 4(9)). Option: the dividend divided by 0.85 is 12,000, so the dividend is 10,200, CIT is 1,800 and the company withholds 6%, which is 612 (art. 3(5), art. 4.2(2), art. 16(5)); the owner keeps 9,588. On the same profit the standard rule leaves the owner 12 more per 12,000.
 
 **5. Losses and pre-2018 profit**
 - There is no loss carry-forward under this system: losses do not reduce a distribution.
@@ -155,7 +155,7 @@ expected:
   cit: 9500
 ```
 
-**Example 2. SIA owned by two individuals, 15% option plus a loan to a sister company, 2026.** In March 2026 the SIA calculates a dividend of EUR 50,000 for its two individual shareholders and chooses the art. 4.2 rate. CIT is 50,000 / 0.85 x 15% = EUR 8,823.53, due by 23 April 2026. The SIA withholds 6% personal income tax from the dividend, EUR 3,000, reports it to VID by 15 April 2026 and pays it by 23 April 2026. Total tax is EUR 11,823.53. Under the standard rule it would be 50,000 / 0.8 x 20% = EUR 12,500 with no personal income tax, so the option saves EUR 676.47. In June 2026 the SIA also lends EUR 10,000 for 24 months to a sister company owned by the same individuals. The SIA had retained earnings at 1 January 2026, opening share capital of EUR 3,000, no earlier unrepaid loans and no borrowings from unrelated lenders. The first EUR 3,000 is covered by share capital (art. 11(4)(3)); EUR 7,000 is a deemed distribution. It goes into the December 2026 return at the standard rate, because the 15% option covers only calculated dividends: 7,000 / 0.8 x 20% = EUR 1,750.
+**Example 2. SIA owned by two individuals, 15% option plus a loan to a sister company, 2026.** In March 2026 the SIA calculates a dividend of EUR 50,000 for its two individual shareholders and chooses the art. 4.2 rate. CIT is 50,000 / 0.85 x 15% = EUR 8,823.53, due by 23 April 2026. The SIA withholds 6% personal income tax from the dividend, EUR 3,000, reports it to VID by 15 April 2026 and pays it by 23 April 2026. Total tax is EUR 11,823.53 and the owners keep EUR 47,000. The profit used is 50,000 + 8,823.53 = EUR 58,823.53. Paid out under the standard rule, the same profit gives a dividend of 58,823.53 x 0.8 = EUR 47,058.82 with no personal income tax (art. 3(1), art. 4(9)), so on the same profit the option leaves the owners EUR 58.82 less. Comparing the same EUR 50,000 dividend (EUR 12,500 of CIT under the standard rule) is not like with like, because the owners would then keep EUR 50,000 rather than EUR 47,000. In June 2026 the SIA also lends EUR 10,000 for 24 months to a sister company owned by the same individuals. The SIA had retained earnings at 1 January 2026, opening share capital of EUR 3,000, no earlier unrepaid loans and no borrowings from unrelated lenders. The first EUR 3,000 is covered by share capital (art. 11(4)(3)); EUR 7,000 is a deemed distribution. It goes into the December 2026 return at the standard rate, because the 15% option covers only calculated dividends: 7,000 / 0.8 x 20% = EUR 1,750.
 
 ```oa-check
 name: Individual-owned SIA, art. 4.2 dividend plus related-party loan, 2026
@@ -168,8 +168,10 @@ steps:
   - cit_alternative: round(dividend / 0.85 * 0.15, 2)
   - pit_on_dividend: dividend * 0.06
   - total_alternative: cit_alternative + pit_on_dividend
-  - cit_standard: dividend / 0.8 * 0.20
-  - saving: cit_standard - total_alternative
+  - net_alternative: dividend - pit_on_dividend
+  - profit_used: dividend + cit_alternative
+  - net_standard: round(profit_used * 0.8, 2)
+  - standard_route_extra: net_standard - net_alternative
   - loan_exempt: min(loan_to_related, max(share_capital - earlier_unrepaid_loans, 0))
   - loan_taxable: loan_to_related - loan_exempt
   - cit_on_loan: loan_taxable / 0.8 * 0.20
@@ -178,8 +180,10 @@ expected:
   cit_alternative: 8823.53
   pit_on_dividend: 3000
   total_alternative: 11823.53
-  cit_standard: 12500
-  saving: 676.47
+  net_alternative: 47000
+  profit_used: 58823.53
+  net_standard: 47058.82
+  standard_route_extra: 58.82
   loan_taxable: 7000
   cit_on_loan: 1750
   total_company_cit: 10573.53
@@ -187,7 +191,7 @@ expected:
 
 ## Ask the client first
 
-1. Who owns the company in the month the dividend is declared: only individuals, or any company, trust or fund? This decides whether the 15% option is open.
+1. Who owns the company in the tax period (month, or quarter) in which the dividend is calculated: only individuals, or any company, trust or fund? This decides whether the 15% option is open.
 2. Is the company registered for micro-enterprise tax or tonnage tax, or is it a bank or consumer lender? Each changes the regime.
 3. Does it receive dividends or sell shareholdings, and from which countries? The art. 6 and art. 13 reliefs depend on it.
 4. Are there loans to shareholders, sister companies or other related persons, and for how long? Plus opening share capital and retained earnings.
