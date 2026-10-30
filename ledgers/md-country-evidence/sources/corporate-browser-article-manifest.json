@@ -1,0 +1,350 @@
+{
+  "status": "Selected already-read public statutory articles only. Not whole-Code verification. No PDF retrieval success claimed.",
+  "normalization": "Node display adjacent string literals decoded safely with ast.literal_eval; JSON exports parsed directly. Original article text otherwise unchanged.",
+  "read_date": "2026-10-30",
+  "articles": {
+    "13": {
+      "article": "13",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:03:16.251Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "f86c7dde16884e893c8abb6746416bf72f95e21ba540a73c9ef7529b31e07869"
+    },
+    "14": {
+      "article": "14",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:03:16.251Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "506565c9ece20f62972b488c6fcd2e70796c75c2d05d2fd382f8687c7e3c2dc2"
+    },
+    "541": {
+      "article": "541",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:03:16.251Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "6c22eb0e6adc089e0f3d9564c480c6c53b46b87b6a8ddfb9ab2767c3ed9eff24"
+    },
+    "541/1": {
+      "article": "541/1",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:03:16.251Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "df2fbde05c7b3f96fcbfea834f4c1a8374d9cd5e867650659acc6df096483d1a"
+    },
+    "542": {
+      "article": "542",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:03:16.251Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "e82f106f2380ece13d516095dd5645bc44cc96ce5e3bf668adf37e748c6f2dfc"
+    },
+    "543": {
+      "article": "543",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:03:16.251Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "d5c0c0074159fbe4af925bd8f226bf0e9bc0468dbf8548bffb133a1114fd73db"
+    },
+    "544": {
+      "article": "544",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:03:16.251Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "015139708991c3e13dd4458bb94d70370790c6897d0344de1cda64e34f28ba29"
+    },
+    "82": {
+      "article": "82",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:03:16.251Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "96f957a5a39ac6e52765b10c48951be31517bec04bc891e89d43efaecd99311f"
+    },
+    "83": {
+      "article": "83",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:03:16.251Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "6d451f477360658a4c74a8e32dab77d53cb3b34f71634387bd3a3e2511d8cd57"
+    },
+    "84": {
+      "article": "84",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:03:16.251Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "8c962cb21564a67a2098a118b1c071cd381b18bdd6e87939cdde862a88c7e7d0"
+    },
+    "87": {
+      "article": "87",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:03:16.251Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "c72fb130063e5a478799602fafb3eecc3782a552ef1ce16c1fca5b4066ccb7e8"
+    },
+    "25": {
+      "article": "25",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:04:03.373Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "351d9d2dd145c217acd378394b891d63cfd5facf00ca2b75a4d506fa4f2b5922"
+    },
+    "26^1": {
+      "article": "26^1",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:04:03.373Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "364d41757cdab8978d5219b740ec1e2bb2f923b51903d9d98e9e3339d7219048"
+    },
+    "28": {
+      "article": "28",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:04:03.373Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "8cea89b5a00677248bf92cc346849058b018dc5d75524cfaccf8d74821b0bd17"
+    },
+    "30": {
+      "article": "30",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:04:03.373Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "1862e6b159d10aa05021561a42c9e138175cc0e3eff8711f1c08cb23d0e9ce91"
+    },
+    "31": {
+      "article": "31",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:04:03.373Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "3bebdc53561a888fbd97d5685b3c23a13acb6b1dc93feb76890a82b961d68fea"
+    },
+    "32": {
+      "article": "32",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:04:03.373Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "4441e914773b1b0433682dc791fc28702f7f228c33500c66f192373f0919d6f2"
+    },
+    "36": {
+      "article": "36",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:04:03.373Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "a47a158a973c47c3f60887de9927e579e38fda5cb75a9d7ff507100061b7dc4e"
+    },
+    "228": {
+      "article": "228",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:04:03.373Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "098a1a8bac5cff0a738c1c624115cf0f64a773e7de96b037d87d20f96d5c6dc7"
+    },
+    "260": {
+      "article": "260",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:04:03.373Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "9275a87dfc37fa25b7dbc88291bc9297e0267d1ae11fd22fb77e65fbae3ab74e"
+    },
+    "261": {
+      "article": "261",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:04:03.373Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "8b151060c2f556a94d723b8e643be1e7888c3df73635efe2a133f51922d18064"
+    },
+    "541@149766": {
+      "article": "541",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro",
+      "observed_utc": "2026-10-30T16:05:14.225Z",
+      "format": "Losslessly decoded returned browser SME article observation; version URL retained",
+      "sha256": "bec679ea0e9f12e936e98129368ded137331dbb27f3c7f319f58ff0f4f757d3a"
+    },
+    "541@153161": {
+      "article": "541",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=153161&lang=ro",
+      "observed_utc": "2026-10-30T16:06:23.366Z",
+      "format": "Losslessly decoded returned browser SME article observation; version URL retained",
+      "sha256": "1ac085e4f80612fef57fb1afd3d97b91ba3d746663b3cd5e3d0ac062e396c8e1"
+    },
+    "541@138613": {
+      "article": "541",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=138613&lang=ro",
+      "observed_utc": "2026-10-30T16:07:20.002Z",
+      "format": "Losslessly decoded returned browser SME article observation; version URL retained",
+      "sha256": "6c22eb0e6adc089e0f3d9564c480c6c53b46b87b6a8ddfb9ab2767c3ed9eff24"
+    },
+    "541@153671": {
+      "article": "541",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=153671&lang=ro",
+      "observed_utc": "2026-10-30T16:08:07.866Z",
+      "format": "Losslessly decoded returned browser SME article observation; version URL retained",
+      "sha256": "6c22eb0e6adc089e0f3d9564c480c6c53b46b87b6a8ddfb9ab2767c3ed9eff24"
+    },
+    "801": {
+      "article": "801",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:09:43.069Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "8c28b6bbe0927570349204bbe77ab9b7f2c0a95ffbd365f4483d9b744dc40173"
+    },
+    "901": {
+      "article": "901",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:09:43.069Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "48f44ac7fc55dc535365b3493fce42e220a9c1a9fab670835e493d2b88df5295"
+    },
+    "91": {
+      "article": "91",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:09:43.069Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "00d8083f45f249b54528326abd85fd71fe370a6ab1fcec1147b9fff6329a6702"
+    },
+    "92": {
+      "article": "92",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:09:43.069Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "ffe3db82ae14b892aedc62d22c6de518728b76d035e328150bddb50a9209215e"
+    },
+    "232": {
+      "article": "232",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:09:43.069Z",
+      "format": "Losslessly decoded adjacent string literals from returned browser observation; no source code executed",
+      "sha256": "436a9aae09c70354092756016895598bd001a08ebce31461fe00f9638f50f795"
+    },
+    "44": {
+      "article": "44",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:10:34.540Z",
+      "format": "Losslessly decoded returned browser observation",
+      "sha256": "3361f034a95127fd99368483af02467dadfd5c2b286a806ccd7faec81666919d"
+    },
+    "24": {
+      "article": "24",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:17:51.592Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "9e3e5e60098ec37f768fbc2489f471d54bc559ad177a216986676f86be21df64"
+    },
+    "15": {
+      "article": "15",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:20:17.044Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "d858755af807146c4b73c3ec7d0074d8ecfb6da2b392e1a6b41b528f6c4b1195"
+    },
+    "LAW41": {
+      "article": "LAW41",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=153667&lang=ro",
+      "observed_utc": "2026-10-30T16:20:17.044Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "98b39b0d3df9a348dd791b45fbd31020691acfad05a0d4cf84c16a74e29aed22"
+    },
+    "HEALTH1593": {
+      "article": "HEALTH1593",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro",
+      "observed_utc": "2026-10-30T16:20:17.044Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "9590a8bc9998fa308a19a54fbe013df51bede76d1b00dc65c193d96069cc9778"
+    },
+    "SOCIAL489-CHARGING": {
+      "article": "SOCIAL489-CHARGING",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro",
+      "observed_utc": "2026-10-30T16:30:43.959Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "8a7196b34bc7f2e76ed5bdf99e7201afd2ce547b4c4bfb96827cede7961e80d3"
+    },
+    "SOCIAL489-ANNEX2-3": {
+      "article": "SOCIAL489-ANNEX2-3",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro",
+      "observed_utc": "2026-10-30T16:31:10.861Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "c62f65911ce3c3a7f8459f03e58f4c286539e019cb3be090b1be558980b1d3c9"
+    },
+    "SOCIAL489-JAN22": {
+      "article": "SOCIAL489-JAN22",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=151170&lang=ro",
+      "observed_utc": "2026-10-30T16:31:50.818Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "b17b0b24f06b21f373bbe57bbd094274855b1c0de34b6f6283189d02e328f0eb"
+    },
+    "18": {
+      "article": "18",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:32:46.948Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "bcf7bf57b0d1838aad593824fa74cd52ed4d3956fb7d6c6490fb63ce53dff3a0"
+    },
+    "113": {
+      "article": "113",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:32:46.948Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "1b59338221c5358119b39f559a77802359ee26c845db40e35a2fab832787f50e"
+    },
+    "20-PART1": {
+      "article": "20-PART1",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:32:53.171Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "203939d4e0b9514d8c8fe58394fcc6bc7b937e6e5adf1d845958ce5d337b17bc"
+    },
+    "20-PART2": {
+      "article": "20-PART2",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:33:00.302Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "10e33d642c4cbd5151d8c1a58c2a4a03c8d7868056fc2c5372e5c265cfedc9be"
+    },
+    "16": {
+      "article": "16",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:33:00.302Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "68bf9b0b841930e611c7cfec3f44f60f74beb8c6ef8b1ac1d37577df2f70ad2c"
+    },
+    "81": {
+      "article": "81",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:33:00.302Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "6d93ae748ffd22f5d92810a92a48b48fec61739bd206f402f2a96ab157df4fb5"
+    },
+    "SOCIAL320-JAN": {
+      "article": "SOCIAL320-JAN",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=152321&lang=ro",
+      "observed_utc": "2026-10-30T16:33:26.478Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "3b1a7bbc3447188db6be50cf04487130789dc0627a15cee60f2aac1e5a10da75"
+    },
+    "49": {
+      "article": "49",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:40:03.906Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "15e7d3e0185bee80e83767a14042113b95b0bd5e6dc35bfde79d2068039dffe0"
+    },
+    "SOCIAL489-JAN49": {
+      "article": "SOCIAL489-JAN49",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=151170&lang=ro",
+      "observed_utc": "2026-10-30T16:49:06.429Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "cbf21aff7d72864e69ed4103ccffc8a7359b72b90478f11e2683754b3a79fe1b"
+    },
+    "HEALTH321-ARTICLE4": {
+      "article": "HEALTH321-ARTICLE4",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro",
+      "observed_utc": "2026-10-30T16:04:49.148Z",
+      "format": "Losslessly decoded already-returned public budget article; selected article only",
+      "sha256": "4a01a783381bdd83c3383afe8f282f21782eea2833dd7005c8d6d737be99b5c8"
+    },
+    "20": {
+      "article": "20",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T16:32:53.171Z",
+      "format": "Two consecutive exact read-only DOM JSON slices, joined without overlap or omission",
+      "sha256": "75aef6a7fa078adeeccc726d97698d22afa5e79b4670262e572bebde3235a946"
+    }
+  }
+}

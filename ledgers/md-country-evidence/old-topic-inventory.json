@@ -169,8 +169,10 @@
       "original_sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
       "unit_sha256": "60a9c75db84e963c110cc71d7e0bda096fde0bc53cf9a12eb6dcfc830ac00405",
       "original_text": "# Moldova Corporate Income Tax",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to"
+      ],
+      "status": "Preserved or corrected with primarylaw; unsupported universal treaty ranges explicitly listed in Sources; whole-pack reviewer must verify"
     },
     {
       "id": "md-corporate-income-tax-OLD-002",
@@ -178,8 +180,10 @@
       "original_sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
       "unit_sha256": "16cc19a08387ccac46bd9ed91d2e5bec7eb0d3ea259569efbbed69b8ad8444bb",
       "original_text": "## Moldova Corporate Income Tax",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to"
+      ],
+      "status": "Preserved or corrected with primarylaw; unsupported universal treaty ranges explicitly listed in Sources; whole-pack reviewer must verify"
     },
     {
       "id": "md-corporate-income-tax-OLD-003",
@@ -187,8 +191,10 @@
       "original_sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
       "unit_sha256": "f96d9bd5e7a94b445138334cad39c59bf20c4d3ab779156e2f6dc355827e8779",
       "original_text": "## Corporate income tax rates and base",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds"
+      ],
+      "status": "Preserved or corrected with primarylaw; unsupported universal treaty ranges explicitly listed in Sources; whole-pack reviewer must verify"
     },
     {
       "id": "md-corporate-income-tax-OLD-004",
@@ -196,8 +202,11 @@
       "original_sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
       "unit_sha256": "4cbc185ca4e2e6b798869511babacf82e4778fe172fef0f53553d67627d72b39",
       "original_text": "Moldova's standard corporate income tax (CIT) rate is 12%, with reduced regimes for farming enterprises and small/medium companies. Resident companies are taxed on worldwide income.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds"
+      ],
+      "status": "Preserved or corrected with primarylaw; unsupported universal treaty ranges explicitly listed in Sources; whole-pack reviewer must verify"
     },
     {
       "id": "md-corporate-income-tax-OLD-005",
@@ -205,8 +214,14 @@
       "original_sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
       "unit_sha256": "71a8109bf4c224e6dd80a5601ee1be6b63eef708691f5cf26ddc6341020e0e6b",
       "original_text": "- **Standard CIT rate** — 12% percent  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/taxes-on-corporate-income)_\n- **CIT rate for farming (agricultural) enterprises** — 7% percent  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/taxes-on-corporate-income)_\n- **Special SME regime (non-VAT-registered small/medium companies meeting criteria)** — 4% on aggregate income (turnover-based) percent  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/taxes-on-corporate-income)_\n- **CIT rate for individual entrepreneurs** — 12% on total income percent  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/taxes-on-corporate-income)_\n- **CIT tax base for residents** — Worldwide income, adjusted for non-deductible expenses and tax incentives  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/taxes-on-corporate-income)_\n- **Withholding tax on dividends (resident and non-resident, profits earned after 2011)** — 6% percent (treaty relief may reduce to 0-5%)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/withholding-taxes)_\n- **Withholding tax on interest paid to non-residents** — 12% percent (treaty relief may reduce to 0-10%)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/withholding-taxes)_\n- **Withholding tax on royalties paid to non-residents** — 12% percent (treaty relief may reduce to 0-10%)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/withholding-taxes)_\n- **Annual CIT return filing deadline** — By the 25th day of the third month following the end of the tax period (25 March)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/tax-administration)_\n- **Interim (advance) CIT payments** — 25% of estimated annual CIT due by 25 March, 25 June, 25 September and 25 December  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/tax-administration)_\n- **Final CIT payment deadline** — By the 25th day of the third month following the end of the tax period (25 March)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/tax-administration)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Cross-border points",
+        "Sources"
+      ],
+      "status": "Preserved or corrected with primarylaw; unsupported universal treaty ranges explicitly listed in Sources; whole-pack reviewer must verify"
     },
     {
       "id": "md-corporate-income-tax-OLD-006",
@@ -214,8 +229,10 @@
       "original_sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
       "unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "original_text": "<!-- openaccountants-cta-block -->",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Preserved or corrected with primarylaw; unsupported universal treaty ranges explicitly listed in Sources; whole-pack reviewer must verify"
     },
     {
       "id": "md-corporate-income-tax-OLD-007",
@@ -223,8 +240,10 @@
       "original_sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
       "unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
       "original_text": "---",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Preserved or corrected with primarylaw; unsupported universal treaty ranges explicitly listed in Sources; whole-pack reviewer must verify"
     },
     {
       "id": "md-corporate-income-tax-OLD-008",
@@ -232,8 +251,10 @@
       "original_sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
       "unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
       "original_text": "## Talk to a verified accountant",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Preserved or corrected with primarylaw; unsupported universal treaty ranges explicitly listed in Sources; whole-pack reviewer must verify"
     },
     {
       "id": "md-corporate-income-tax-OLD-009",
@@ -241,8 +262,10 @@
       "original_sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
       "unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
       "original_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Preserved or corrected with primarylaw; unsupported universal treaty ranges explicitly listed in Sources; whole-pack reviewer must verify"
     },
     {
       "id": "md-corporate-income-tax-OLD-010",
@@ -250,8 +273,10 @@
       "original_sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
       "unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
       "original_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Preserved or corrected with primarylaw; unsupported universal treaty ranges explicitly listed in Sources; whole-pack reviewer must verify"
     },
     {
       "id": "md-corporate-income-tax-OLD-011",
@@ -259,8 +284,10 @@
       "original_sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
       "unit_sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
       "original_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Preserved or corrected with primarylaw; unsupported universal treaty ranges explicitly listed in Sources; whole-pack reviewer must verify"
     },
     {
       "id": "md-cross-border-OLD-001",
@@ -3832,8 +3859,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "455deee98ed9c9e3ac2b96b91893e11aeb1cefe3e0a8db75b5447d2a86683565",
       "original_text": "# Moldova Social Contributions, Health Insurance & Personal Income Tax",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-002",
@@ -3841,8 +3874,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "a77452c78c1041fdda1afd9c7d3cc3e9bc1afea8eb416a02857971bce5615453",
       "original_text": "## Section 1 -- Quick reference",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-003",
@@ -3850,8 +3889,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "34ef27cfa581f085961de724f2bd4242a5a28f58e1d4ab63ffd3796824c8d7f3",
       "original_text": "**Section 1 quick reference field table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-004",
@@ -3859,8 +3904,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "43ad86ff64c49e074caaf154ce5373fdf6658f8f4f2d37e9eae70d2f248a7242",
       "original_text": "| Field | Value |\n| --- | --- |\n| Country | Republic of Moldova |\n| Primary Legislation | Tax Code of the Republic of Moldova (Codul fiscal); Law No. 489/1999 on the state social insurance system; Law No. 303/2024 on the state social insurance budget for 2025; Law No. 1593/2002 on mandatory health insurance contributions |\n| Tax / Contribution Authorities | State Tax Service (Serviciul Fiscal de Stat / SFS, sfs.md) collects payroll PIT, social and health contributions via the monthly IPC21 declaration; CNAS (Casa Nationala de Asigurari Sociale, cnas.gov.md) administers social insurance/pensions; CNAM (Compania Nationala de Asigurari in Medicina, cnam.md) administers mandatory health insurance |\n| Personal income tax (PIT) | Flat 12% (PwC, *Taxes on personal income*) |\n| Employer social insurance (CNAS) | 24% of gross remuneration; 32% for special/hazardous working conditions (PwC, *Corporate -- Other taxes* / *Individual -- Other taxes*) |\n| Employee social insurance (CNAS) | 0% -- employees pay NO state social insurance (PwC, *Individual -- Other taxes*) |\n| Employee health insurance (CNAM) | 9% of wages, withheld by employer (PwC, *Individual -- Other taxes*) |\n| Employer health insurance (CNAM) | 0% -- abolished in the October 2018 reform (PwC, *Corporate -- Other taxes*) |\n| Standard PIT personal allowance (2025) | 29,700 MDL/year (~2,475 MDL/month), only if annual taxable income <= 360,000 MDL (Intelcont; PwC carries the same figure for 2026) |\n| Minimum wage (2025) | 5,500 MDL/month gross, full-time (Govt Decision No. 846 of Dec 2024; WageIndicator) |\n| Minimum wage (2026, confirmed) | 6,300 MDL/month (Govt decision of 17 Dec 2025; MOLDPRES) |\n| Forecast average monthly salary | 16,100 MDL for 2025; 17,400 MDL for 2026 (Min. of Labour / social.gov.md) |\n| Payroll return | Form IPC21, monthly, by the 25th of the following month (Rivermate; SFS) |\n| Annual individual return | Form CET18, by 30 April of the following year (PwC, *Individual -- Tax administration*) |\n| Currency | MDL (Moldovan leu) only |\n| Validated by | Pending -- requires sign-off by a licensed Moldovan accountant |\n| Validation date | Pending |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-005",
@@ -3868,8 +3919,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "ef2e97050cbd06c8a9df2c1745c30c01eef397712188aaaba61194101d0b502b",
       "original_text": "**Payroll component overview (standard private-sector employee)**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-006",
@@ -3877,8 +3934,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "e58be20b826b740b2de6cbef91428bc7f37848fd69fc3165797b55550182d567",
       "original_text": "| Component | Payer | Rate / amount | Authority |\n| --- | --- | --- | --- |\n| State social insurance (CNAS) | Employer | 24% of gross (32% special conditions) | PwC, *Corporate -- Other taxes* |\n| State social insurance (CNAS) | Employee | 0% | PwC, *Individual -- Other taxes* |\n| Mandatory health insurance (CNAM) | Employee (employer withholds) | 9% of wages | PwC, *Individual -- Other taxes* |\n| Mandatory health insurance (CNAM) | Employer | 0% | PwC, *Corporate -- Other taxes* |\n| Personal income tax (PIT/PAYE) | Employee (employer withholds) | 12% flat on base after allowance and CNAM | PwC, *Individual -- Taxes on personal income* |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-007",
@@ -3886,8 +3949,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "46bfdad640b74e5fc480b205a5adb268222ff2bc65d073ea0c639d255b92322e",
       "original_text": "**Conservative defaults**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-008",
@@ -3895,8 +3964,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "685516f7a7d3e3396018eb5b58e09b664f083529644e78a0b8129d0a72d5981d",
       "original_text": "| Ambiguity | Default |\n| --- | --- |\n| Unknown working conditions | Assume standard 24% employer CNAS (NOT 32%) and flag for reviewer |\n| Source cites a 6% \"employee social insurance\" figure | Treat as 0% (pre-2018 legacy figure); do NOT apply 6% (PwC; see caveats) |\n| Source cites a 4.5%/4.5% employer/employee health split | Treat as 9% fully employee-borne, 0% employer (post-2018 reform) |\n| Unknown tax year | Use 2025 figures (5,500 MDL min wage, 20,518 MDL fixed SSC); apply 2026 figures only from 1 Jan 2026 |\n| Unknown whether personal allowance applies | Apply standard 29,700 MDL/year ONLY if annual income <= 360,000 MDL; otherwise nil allowance |\n| Self-employed vs employed status unclear | STOP -- the contribution base (24% on gross vs fixed annual amount) differs entirely; ask before computing |\n| Employer in Moldova IT Park (MITP) | STOP -- standard SSC/PIT do NOT apply; the 7% single tax replaces them; escalate |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-009",
@@ -3904,8 +3979,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "89e23d90d0ebd3cb948fa71d072a006c1741145ac220b001fe566951683cb2cc",
       "original_text": "## Section 2 -- Required inputs and refusal catalogue",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-010",
@@ -3913,8 +3994,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "9e05eccf7f1dfe0692640d3f91a244434949c4c9c49698acd3b041a2a26e3155",
       "original_text": "- **Required inputs -- Minimum viable** — Employment status (employed vs self-employed/individually insured), gross monthly remuneration in MDL, and the tax year. Without employment status, STOP: an employee is taxed on 24% employer / 9% employee / 12% PIT, whereas a self-employed person pays a fixed annual contribution.\n- **Required inputs -- Recommended** — Working conditions (standard vs special/hazardous, which sets 24% vs 32% employer CNAS), full-time vs part-time (which sets the minimum contribution base), entitlement to personal/major/dependent allowances, and annual taxable income (to test the 360,000 MDL allowance cap).\n- **Required inputs -- Ideal** — Monthly IPC21 declarations, CNAS and CNAM statements, the employment contract, and prior-year CET18 return.\n- **R-MD-SC-1 -- Employment status unknown** — Trigger: not stated whether the individual is an employee or self-employed/individually insured. Message: \"Employment status is mandatory. Employees are subject to 24% employer CNAS, 9% employee CNAM and 12% PIT on remuneration; self-employed/individually insured persons instead pay a fixed annual contribution (20,518 MDL in 2025). Cannot proceed without this information.\"\n- **R-MD-SC-2 -- Moldova IT Park (MITP) resident** — Trigger: employer is a registered Moldova IT Park resident. Message: \"MITP residents pay a single 7% tax on monthly turnover (not less than 30% of the forecast average monthly salary per employee) that REPLACES CIT, salary PIT, employer SSC, employee health insurance and several other taxes (Invest Moldova). Standard payroll computations do not apply. Escalate to a licensed Moldovan accountant.\"  _(Invest Moldova)_\n- **R-MD-SC-3 -- Special/hazardous working conditions** — Trigger: client claims the 32% employer CNAS rate or an industry-specific split (e.g. agriculture). Message: \"The 32% special-conditions rate and any sector-specific splits must be confirmed against the current state social insurance budget law for the relevant year. Do not apply without reviewer confirmation.\"\n- **R-MD-SC-4 -- Contribution arrears or penalties** — Trigger: unpaid CNAS/CNAM/PIT from prior periods. Message: \"Late social insurance is penalised at 0.1% per day (Law 489/1999, art. 28) and late PIT interest at 0.0301% per day; both compound. Quantify only from an official SFS/CNAS statement and escalate to a licensed Moldovan accountant.\"  _(Law 489/1999, art. 28)_\n- **R-MD-SC-5 -- Increased/major allowance entitlement** — Trigger: client claims the major allowance (34,620 MDL), spouse's major allowance (21,780 MDL), or severe-disability dependent allowance. Message: \"Qualifying conditions for the increased personal/spouse/dependent allowances are not fully enumerated in this skill [RESEARCH GAP -- reviewer to confirm]. Confirm eligibility before applying.\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-011",
@@ -3922,8 +4009,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "b90eeecf7a4934ab0b30c3bc6da9030680cecbe6a7ad8c600c1134bf1ed7ed32",
       "original_text": "## Section 3 -- Payment pattern library",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-012",
@@ -3931,8 +4021,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "62bc3343b7a0a3e020eb42fd22bbfcb13a55f03a064e83923213edb34847b293",
       "original_text": "This is the deterministic pre-classifier for bank statement transactions related to Moldovan payroll, social and health contributions, and income tax. When a transaction matches a pattern below, apply the treatment directly. Do not second-guess.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-013",
@@ -3940,8 +4033,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "0254710a2e7550b4df906db6f29a1aed898cf35c6fd6b0ef087e437ad39a6f1d",
       "original_text": "**How to read this table.** Match by case-insensitive substring on the counterparty/reference as it appears in the bank statement (Romanian and English variants are both shown). Contribution and PIT payments are statutory obligations -- they EXCLUDE from any VAT return; employer-side contributions are a payroll cost, employee-side withholdings are remitted on the employee's behalf.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-014",
@@ -3949,8 +4045,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "a367b7ead7567a6bae3872450894cb0ec29b380dcca4e8395d1564822dcceb84",
       "original_text": "### 3.1 State social insurance (CNAS) payments",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-015",
@@ -3958,8 +4057,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "103e3325890f51af08216dea0faa471362ecb43bf035b7565a1742f0c46ef5cd",
       "original_text": "**3.1 State social insurance (CNAS) payments**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-016",
@@ -3967,8 +4069,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "f234ae09901027fd111ae3bdce4b362e3849bcc369bddafcf585ef28eb06b13d",
       "original_text": "| Pattern | Treatment | Notes |\n| --- | --- | --- |\n| CNAS, CASA NATIONALA DE ASIGURARI SOCIALE | EXCLUDE -- social insurance (CNAS) | Employer 24% (or 32%) contribution |\n| ASIGURARI SOCIALE, CONTRIBUTII SOCIALE | EXCLUDE -- social insurance | Romanian-language reference |\n| BASS, BUGETUL ASIGURARILOR SOCIALE DE STAT | EXCLUDE -- social insurance budget | State social insurance budget |\n| CONTRIBUTIE SOCIALA FIXA | EXCLUDE -- fixed annual SSC | Self-employed / individually insured |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-017",
@@ -3976,8 +4081,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "3b3815a51f1057adf6d721a293cd340c97908b1f8abde564a27c74a05cc06d68",
       "original_text": "### 3.2 Mandatory health insurance (CNAM) payments",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-018",
@@ -3985,8 +4093,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "c42611c8ab24bfd7e94277abd681884487a47dd80295e875190e2e48e5c915e0",
       "original_text": "**3.2 Mandatory health insurance (CNAM) payments**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-019",
@@ -3994,8 +4105,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "a76c94dfb0d8845da53c7225641b09b99f67043dd5c663ffd73db286c6743b5b",
       "original_text": "| Pattern | Treatment | Notes |\n| --- | --- | --- |\n| CNAM, COMPANIA NATIONALA DE ASIGURARI IN MEDICINA | EXCLUDE -- health insurance (CNAM) | Employee-borne 9%, withheld by employer |\n| ASIGURARE MEDICALA, ASIGURARI MEDICALE | EXCLUDE -- health insurance | Romanian-language reference |\n| PRIMA ASIGURARE MEDICALA, FAOAM | EXCLUDE -- fixed health premium | Fixed annual CNAM premium (self-employed) |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-020",
@@ -4003,8 +4117,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "d88fb4342a275f919ba64c4c6191ea72c6de702834383ce034ab9b3c71514e5a",
       "original_text": "### 3.3 Income tax (PIT) and combined SFS payments",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-021",
@@ -4012,8 +4129,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "8d65aa3488dea5141a4ff8e4b241846d94d457233e0e444df729e8c7eef16d79",
       "original_text": "**3.3 Income tax (PIT) and combined SFS payments**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-022",
@@ -4021,8 +4141,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "ab34b3d5f91394f6847998869492ae670d479be5abbbed0ef00b2b7cff25f9d4",
       "original_text": "| Pattern | Treatment | Notes |\n| --- | --- | --- |\n| SFS, SERVICIUL FISCAL DE STAT | EXCLUDE -- tax/contribution remittance | SFS collects PIT + CNAS + CNAM via IPC21 |\n| IMPOZIT PE VENIT, IPC21 | EXCLUDE -- PIT / payroll return remittance | 12% PIT withholding |\n| IPC | EXCLUDE -- combined monthly payroll remittance | IPC21 declaration payment |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-023",
@@ -4030,8 +4153,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "56f0aaaac44d1b84c6a5a278e3dc2214061b3ffdf33a0c693bffa41776176dd5",
       "original_text": "### 3.4 Salary and payroll (exclude from contribution classification)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-024",
@@ -4039,8 +4165,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "ada7a05f8c8d28ee147dc24ac824b46a9b875cee8c53e42f14cba94e8d3233a1",
       "original_text": "**3.4 Salary and payroll (exclude from contribution classification)**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-025",
@@ -4048,8 +4177,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "cf1ffaba4ab0d859c931be17eec79351f2bfa931099ead2998e149911c368d41",
       "original_text": "| Pattern | Treatment | Notes |\n| --- | --- | --- |\n| SALARIU, SALARIZARE (outgoing) | EXCLUDE -- payroll expense | Net wage to employee, not a contribution |\n| SALARIU, AVANS (incoming) | EXCLUDE -- employment income received | Not a contribution payment |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-026",
@@ -4057,8 +4189,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "38537d73b25a9d2bc4e921a3a1f7239781172d4a7fdeabbc244c2ae58c14d38c",
       "original_text": "### 3.5 Pension and benefit payments (received -- not contributions)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-027",
@@ -4066,8 +4201,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "90d00943b3a12daca6b9454e1b722134bc2f96beefd3df2ea331d91dd2bf22c7",
       "original_text": "**3.5 Pension and benefit payments (received -- not contributions)**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-028",
@@ -4075,8 +4213,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "d08a9fb0e6095d44bb37d3dd0f827687c5c1ab5c4f387c1442a69b8845a135e8",
       "original_text": "| Pattern | Treatment | Notes |\n| --- | --- | --- |\n| PENSIE, CNAS PENSIE | EXCLUDE -- pension income received | Benefit received, not a contribution |\n| INDEMNIZATIE, AJUTOR SOCIAL | EXCLUDE -- social benefit received | Not a contribution paid |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-029",
@@ -4084,8 +4225,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "6db8467ae6a9c463b50dc05a2ce76257a8907b9ce78e15bacfa99726325223b3",
       "original_text": "## Section 4 -- Worked examples",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-030",
@@ -4093,8 +4238,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "2cf58ebc2e507fb789e0238f99208a8f73329f9625bdb7f2b8c4eb173103fbc9",
       "original_text": "Six bank statement / payroll classifications for a hypothetical Moldovan employer and its employees. All figures in MDL, 2025 tax year. PIT is computed as 12% of (gross − 9% CNAM − monthly personal allowance), allowance = 29,700/12 = 2,475 MDL/month (Intelcont; PwC, *Individual -- Taxes on personal income* / *Deductions*).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-031",
@@ -4102,8 +4251,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "68ea767a5c8e01a213538f4846f52aed9e00ce988d359bb08193c575f3b7c3e6",
       "original_text": "### Example 1 -- Standard employee at minimum wage (5,500 MDL)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-032",
@@ -4111,8 +4264,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "7a257069e5f4ba7e87d2ea50c5195b330cbc083c961377228ebd5f55db5dc3bb",
       "original_text": "**Input line:**\n`31.01.2025 ; SALARIU IANUARIE ; DEBIT ; SALARIU NET ; -4,701.40 ; MDL`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-033",
@@ -4120,8 +4277,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "41566cd420b61d036d85c9ba80c5432a34f57bdb273b6487b13d7ee45dda93d2",
       "original_text": "**Reasoning:**\nGross = 5,500 MDL (2025 minimum wage; Govt Decision 846/2024). Employee CNAM 9% = 495.00. PIT base = 5,500 − 495 − 2,475 = 2,530.00. PIT 12% = 303.60. Net pay = 5,500 − 495 − 303.60 = **4,701.40**. Employer CNAS 24% = 1,320.00. Employer total cost = 5,500 + 1,320 = **6,820.00**. The net salary debit excludes from VAT; it is a payroll expense.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-034",
@@ -4129,8 +4290,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "77be566d02b858c9edfcbf3d4c185098109fb736d557c95b14ffe2473c9fb616",
       "original_text": "**Classification:** EXCLUDE from VAT -- net salary (payroll expense). CNAS 1,320.00 and CNAM 495.00 + PIT 303.60 remitted via IPC21.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-035",
@@ -4138,8 +4303,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "8148f70b9d5774faf49432a87487573555a5a64c2421ef0d305eea9e73bea0f9",
       "original_text": "### Example 2 -- Employee at the forecast average salary (16,100 MDL)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-036",
@@ -4147,8 +4316,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "11da6e7399bdd239a8ae12ca9cf8ac8113978974628e7833151575d661ef4cd3",
       "original_text": "**Input line:**\n`25.02.2025 ; SFS IPC21 IAN ; DEBIT ; CONTRIBUTII + IMPOZIT ; -5,313.12 ; MDL`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-037",
@@ -4156,8 +4329,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "34d7ff086652a5f221240140fb38313f464e8d2d7793808fb00bed9f95b57fb4",
       "original_text": "**Reasoning:**\nGross = 16,100 MDL (forecast average monthly salary 2025; social.gov.md). Employee CNAM 9% = 1,449.00. PIT base = 16,100 − 1,449 − 2,475 = 12,176.00. PIT 12% = 1,461.12. Net pay = 16,100 − 1,449 − 1,461.12 = 13,189.88. Employer CNAS 24% = 3,864.00. The IPC21 remittance line bundles employer CNAS (3,864.00) − no, it bundles the amounts paid TO SFS: CNAM 1,449.00 + PIT 1,461.12 + CNAS 3,864.00 would be the full remittance. The debit shown (5,313.12) = CNAM 1,449.00 + PIT 1,461.12 + (this employer remits CNAS separately). Confirm the exact composition against the IPC21 line. Employer total cost = 16,100 + 3,864 = **19,964.00**.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-038",
@@ -4165,8 +4342,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "31c81b8779dcfb9e3a5313edb239c20667f2af012b0a1a01572bbd63d0c21a14",
       "original_text": "**Classification:** EXCLUDE from VAT -- statutory remittance via IPC21 (PIT + CNAM = 2,910.12; CNAS 3,864.00 if combined = 6,774.12). Flag composition for reviewer if the bank line does not itemise.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-039",
@@ -4174,8 +4355,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "31bcfa467dfcc3af69b07ae5740ad9c83f574114250193c547d909d4ec7f930c",
       "original_text": "### Example 3 -- Employer CNAS payment (standard 24%)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-040",
@@ -4183,8 +4368,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "f0c33388d316f7a5229a40821869a6bc7b0604afa0f681573a5f0deeba3baf88",
       "original_text": "**Input line:**\n`25.03.2025 ; CNAS BASS ; DEBIT ; CONTRIBUTIE FEB ; -2,400.00 ; MDL`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-041",
@@ -4192,8 +4381,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "8f2a14c382d28318787d61f21d3d14e2672cad9ea5f7e87f16c094cff36a38fc",
       "original_text": "**Reasoning:**\nMatches \"CNAS\" (pattern 3.1). For a 10,000 MDL gross employee, employer CNAS 24% = 10,000 × 0.24 = **2,400.00**. This is an employer payroll cost, not withheld from the employee. Excludes from VAT.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-042",
@@ -4201,8 +4394,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "aa7a0f2bacdcfcaee94e5d1cfa86f36aaf568de2b793a42fd6e5172beda2ec0d",
       "original_text": "**Classification:** EXCLUDE from VAT -- employer social insurance (CNAS) cost.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-043",
@@ -4210,8 +4407,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "813c3423d7cf1049fcb1537a6dfe5cc235091db621496bd7d27a5201eaa1d3f4",
       "original_text": "### Example 4 -- Special working conditions employer CNAS (32%)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-044",
@@ -4219,8 +4420,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "7f2901dff9636e18b0f26c2f5b4be8f6cd938ced6af4907c0a32342d55687c7f",
       "original_text": "**Input line:**\n`25.04.2025 ; CASA NATIONALA DE ASIGURARI SOCIALE ; DEBIT ; CONTRIBUTIE 32% ; -6,400.00 ; MDL`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-045",
@@ -4228,8 +4433,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "2377d8431807e0ad86da606128f715ac049fc9e740e0f57d352dc0910fed02d1",
       "original_text": "**Reasoning:**\nMatches \"CASA NATIONALA DE ASIGURARI SOCIALE\" (pattern 3.1) with a 32% reference. For a 20,000 MDL gross employee in special/hazardous conditions, employer CNAS 32% = 20,000 × 0.32 = **6,400.00** (PwC, *Individual -- Other taxes*). For the same employee: CNAM 9% = 1,800.00; PIT base = 20,000 − 1,800 − 2,475 = 15,725.00; PIT 12% = 1,887.00; net pay = 20,000 − 1,800 − 1,887 = 16,313.00. The 32% rate must be reviewer-confirmed (R-MD-SC-3).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-046",
@@ -4237,8 +4446,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "4842e2b5ec2f44eec4d50417e13721b64029b23d5a08bd74c5dec1729c84ae4e",
       "original_text": "**Classification:** EXCLUDE from VAT -- employer social insurance (special conditions). Flag 32% rate for reviewer.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-047",
@@ -4246,8 +4459,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "c198bc7f0e7bbff1daaaeb367f1e6e19e3387fca580bd144f5e0fb19cf9364dd",
       "original_text": "### Example 5 -- Self-employed fixed annual social contribution",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-048",
@@ -4255,8 +4472,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "eb1f01080936441880145c006dc70d86b9efc6871723f4d7b4b44b8ae5c5219e",
       "original_text": "**Input line:**\n`15.06.2025 ; CNAS CONTRIBUTIE SOCIALA FIXA ; DEBIT ; ANUL 2025 ; -20,518.00 ; MDL`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-049",
@@ -4264,8 +4485,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "ce22c85ebb83171ecb763010c8dfc56ce7d82593a4592dab383e0585954b0b45",
       "original_text": "**Reasoning:**\nMatches \"CONTRIBUTIE SOCIALA FIXA\" (pattern 3.1). The 2025 fixed annual SSC for self-employed/individually insured persons = **20,518 MDL** (1,709.84 MDL/month × 12 per the CNAS Aug-2025 declaration; rises to 22,878 MDL in 2026). This is not based on the 24% employer rate -- it is a flat statutory amount. Excludes from VAT.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-050",
@@ -4273,8 +4498,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "142aba8936381854afb03f2c9551ac1683b0c828a8156b4840706c429d9723a0",
       "original_text": "**Classification:** EXCLUDE from VAT -- fixed annual social insurance contribution (self-employed).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-051",
@@ -4282,8 +4511,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "0fa908a34244ca57634ace1e29da6fc7656b4f7168b507da8d7014e5a2d812c3",
       "original_text": "### Example 6 -- Fixed annual health insurance premium (non-salaried)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-052",
@@ -4291,8 +4524,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "f96a7621bcc7bfad20c62cb28c4316dbf3ca631b28a903b232e19c03491c9269",
       "original_text": "**Input line:**\n`30.03.2025 ; CNAM PRIMA ASIGURARE MEDICALA ; DEBIT ; 2025 ; -12,636.00 ; MDL`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-053",
@@ -4300,8 +4537,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "aff9b1299c0d6d40492fa03d0856c55d8871b4acec0d20f0c9b2afa458cb84b1",
       "original_text": "**Reasoning:**\nMatches \"PRIMA ASIGURARE MEDICALA\" (pattern 3.2). The fixed annual CNAM premium for non-salaried individuals = **12,636 MDL**, unchanged for 2025 and 2026 (PwC, *Individual -- Deductions*). Early-payment discounts may apply. This is distinct from the employee 9% withholding. Excludes from VAT.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-054",
@@ -4309,8 +4550,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "2daa05e734090afca30d62d8cca494516d590d57cf0d95a17ec78e59e9ef40f7",
       "original_text": "**Classification:** EXCLUDE from VAT -- fixed annual health insurance premium (self-employed / non-salaried).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-055",
@@ -4318,8 +4563,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "cfda141c6a56b985e1e1c1569df947f03db31b5ae232ecff081efc9882a4df79",
       "original_text": "## Section 5 -- Tier 1 rules",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-056",
@@ -4327,8 +4578,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "9f15470c301a05c401cc3b1a2953b3772aaa7dd4ffcec7ce2c0efa66a5bb287d",
       "original_text": "These rules apply when payroll/contribution data is clear and all required inputs are available. Apply exactly as written. All citations are to PwC Worldwide Tax Summaries (reviewed Jan 2026), CNAS, and the named statutes unless otherwise noted.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-057",
@@ -4336,8 +4593,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "08ce65224a7a4e9f28ca229d844a8f5dd9a3053beb79b400cf90d87aedcfdea0",
       "original_text": "### Rule 1 -- Personal income tax is a single flat 12%",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-058",
@@ -4345,8 +4605,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "1d78a773bfbe24fef244b41ddfb17581664020f08d2138a45dc70cefe28582c2",
       "original_text": "- **PIT flat rate** — PIT on employment, professional/entrepreneurial and most other income = 12% flat for resident individuals. There are no progressive brackets.  _(PwC, *Individual -- Taxes on personal income*)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-059",
@@ -4354,8 +4617,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "85f40ab599c664f5b64985b095b0a2df5238973049d01c4cebdb542eae17ea57",
       "original_text": "### Rule 2 -- PIT base (PAYE) formula",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-060",
@@ -4363,8 +4629,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "5ab8aa07012ea00605aac1ca5ec390f3ceaf588d0f43b120cf4c4ba9d6a6be43",
       "original_text": "- **Monthly PIT / net pay formula** — monthly_PIT = 12% x (gross_remuneration - employee_CNAM - monthly_personal_allowance) employee_CNAM = 9% x gross_remuneration monthly_personal_allowance = 29,700 / 12 = 2,475 MDL   (only if annual income <= 360,000 MDL) net_pay = gross_remuneration - employee_CNAM - monthly_PIT CNAM (9%) is deducted before PIT; the personal allowance is then subtracted.  _(PwC, *Individual -- Taxes on personal income* / *Deductions*)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-061",
@@ -4372,8 +4641,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "e0af6660bdb0db80f5e14a77492dc0579a78dbdaaf0c36bd325d5aebb4296845",
       "original_text": "### Rule 3 -- Employer state social insurance (CNAS) = 24%",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-062",
@@ -4381,8 +4656,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "db3d6552965afddb08a1f2d2b2896fcc3b190d7659db46c46f11487b18fb089d",
       "original_text": "- **Employer CNAS rate** — 24% percent of gross salary, meal tickets and other remuneration (minimum monthly base cannot be lower than national minimum monthly salary (5,500 MDL in 2025), or 25% of it for part-time; NO ceiling; 32% applies to special/hazardous working conditions (reviewer-confirm per R-MD-SC-3))  _(PwC, *Corporate -- Other taxes*; PwC, *Individual -- Other taxes*)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-063",
@@ -4390,8 +4671,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "84004816b663097f096ac6af8c6acb2e30df19bfd7a3adae1cfdd6fa5f997d1b",
       "original_text": "### Rule 4 -- Employees pay NO state social insurance",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-064",
@@ -4399,8 +4686,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "76e74a4cb27c7c40137f6801187856403268063acb26f1296726ef2b78d7c2c2",
       "original_text": "- **Employee CNAS = 0%** — The employee state social insurance contribution is 0% under the current system. The \"6% employee\" figure on many EOR/aggregator sites reflects the pre-October-2018 regime and is incorrect for 2025 (see caveats).  _(PwC, *Individual -- Other taxes*)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-065",
@@ -4408,8 +4701,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "c0447b114e48a9837720db63e73da15be221e1952b0577d70a2ed4ec1f4cd154",
       "original_text": "### Rule 5 -- Health insurance (CNAM) = 9%, fully employee-borne",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-066",
@@ -4417,8 +4716,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "195444c9f672f56fbb36dbc052e344bdd50ae712ed7ac33d7b8bc30e3dc109a7",
       "original_text": "- **Employee CNAM rate** — 9% percent of wages (fully borne by employee and withheld by employer; employer pays 0% health insurance; old 4.5%/4.5% split abolished in October 2018 reform)  _(PwC, *Individual -- Other taxes* / *Corporate -- Other taxes*)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-067",
@@ -4426,8 +4731,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "568d21eef7ca54e5adccce906cf028847d8abad83089f7e748541c0e5e523e74",
       "original_text": "### Rule 6 -- Total payroll wedge",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-068",
@@ -4435,8 +4746,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "b28ee82f46dfa901dc7bcba74b6bfd91e5d34152c7eab3aa4885504f8e8171be",
       "original_text": "- **Total payroll wedge formula** — employer_total_cost = gross x 1.24            (gross + 24% CNAS; 1.32 for special conditions) employee_deductions = 9% CNAM + 12% PIT (on the post-allowance base)  _(PwC, *Corporate -- Other taxes* / *Individual -- Taxes on personal income*)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-069",
@@ -4444,8 +4761,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "e8ad62a09847867b3b46e42ca0a10081ccbd00cfe6bc5e30d1688ee7b3168b37",
       "original_text": "### Rule 7 -- Personal allowances (annual)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-070",
@@ -4453,8 +4773,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "0b421c78b93264ab8992dca9f8fbf5b40e68b47b6faf01095dcca672bdf3548c",
       "original_text": "**Personal allowances (annual)**  _(PwC, *Individual -- Deductions*)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-071",
@@ -4462,8 +4785,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "e077ebeb8fd86256cdeb53700c26ee7a3a51270f8821db51040d6163f84896bf",
       "original_text": "| Allowance | Annual amount | Condition | Source |\n| --- | --- | --- | --- |\n| Standard personal | 29,700 MDL | Only if annual taxable income <= 360,000 MDL | Intelcont; PwC (same for 2026) |\n| Major (increased) personal | 34,620 MDL | Qualifying individuals (e.g. disability) [RESEARCH GAP -- reviewer to confirm exact conditions] | PwC, *Individual -- Deductions* |\n| Spouse's major allowance | 21,780 MDL | Qualifying spouse | PwC, *Individual -- Deductions* |\n| Per dependent | 9,900 MDL (21,780 MDL if dependent has severe disability since childhood) | Per qualifying dependent | PwC, *Individual -- Deductions* |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-072",
@@ -4471,8 +4797,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "01691cadd9f76a9515adc2c3352ec11e0adb7cc7d2b2f45556143607e4ca3974",
       "original_text": "### Rule 8 -- Fixed annual contributions for self-employed / individually insured",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-073",
@@ -4480,8 +4812,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "36bf0ab6e7006afd2cc68f7b8da7e361be7c39507fef1a645b675b8ee2f8147c",
       "original_text": "**Fixed annual contributions table**  _(CNAS Aug-2025 declaration; PwC, *Individual -- Deductions*)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-074",
@@ -4489,8 +4827,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "6ff82ea4f8626951b46b37c45479f1fe2c221b55237c96229ecd3702577e0066",
       "original_text": "| Contribution | 2025 amount | 2026 amount | Source |\n| --- | --- | --- | --- |\n| Fixed annual social insurance (CNAS) | 20,518 MDL (1,709.84 MDL/month) | 22,878 MDL | CNAS Aug-2025 declaration |\n| Fixed annual health premium (CNAM) | 12,636 MDL | 12,636 MDL (unchanged) | PwC, *Individual -- Deductions* |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-075",
@@ -4498,8 +4842,10 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "5983d3445d357cc4eaed86fea22a98a7e385ab442b0783171f42db4226f44003",
       "original_text": "### Rule 9 -- Payroll filing: monthly IPC21",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing"
+      ],
+      "status": "Current social/medical reporting route retained with distinct timing"
     },
     {
       "id": "moldova-social-contributions-OLD-076",
@@ -4507,8 +4853,10 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "68401b0d1bef03b5df8d0011215ad0dd787744983ac866ae6dc46bda4d4c041c",
       "original_text": "- **IPC21 filing deadline** — Employers file Form IPC21 (combined PIT + CNAS + CNAM) by the 25th of the month following the reporting month, with payment due the same date, to the State Tax Service (SFS).  _(Rivermate; SFS)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing"
+      ],
+      "status": "Current social/medical reporting route retained with distinct timing"
     },
     {
       "id": "moldova-social-contributions-OLD-077",
@@ -4516,8 +4864,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "520d9f75cab035ee9ef53d54819e5c01c5497616d084726befa4f62f46655e6b",
       "original_text": "### Rule 10 -- Annual individual return: CET18",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-078",
@@ -4525,8 +4876,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "6cc1e5304dbf6477a632b0cd0dee0587fc44960faf15d3bb16a9d764b4778863",
       "original_text": "- **CET18 filing deadline** — The annual individual income tax return (Form CET18) is due by 30 April of the year following the reporting year. Foreign citizens earning income from Moldovan residents file a short-stay return within 3 days of ending the activity.  _(PwC, *Individual -- Tax administration*)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-079",
@@ -4534,8 +4888,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "74b61106bb7a465c9dc03f241871850edf830525ba112a8fe06780ed5aa99d33",
       "original_text": "### Rule 11 -- Minimum wage and average salary",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-080",
@@ -4543,8 +4903,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "8bdf8b2aaafb3ff9f984f8a54e2e3c2aa4fe3a8d6d335ea77945ff9634debee1",
       "original_text": "- **Minimum wage and average salary** — Minimum wage = 5,500 MDL/month in 2025, rising to 6,300 MDL/month from 1 January 2026. Forecast economy-wide average monthly salary = 16,100 MDL for 2025 and 17,400 MDL for 2026; it is used for contribution caps/floors and the IT Park minimum tax base.  _(Govt Decision 846/2024; WageIndicator; Govt decision of 17 Dec 2025; MOLDPRES; social.gov.md)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-081",
@@ -4552,8 +4918,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "09987099a20d8b4da880cc4663bb7b3868d7fa18551ee8b3fdc1466d74ee1bd3",
       "original_text": "### Rule 12 -- Moldova IT Park (MITP) single tax = 7%",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Agriculture, IT parks and other professional categories",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Classify actual regime; no blanket self-payer or IT-park substitution; full special-tax method remains open"
     },
     {
       "id": "moldova-social-contributions-OLD-082",
@@ -4561,8 +4930,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "cf67d7bba5d1fddd213871c84fb1b4d0ae47252a6eac471ec89067105654b9c4",
       "original_text": "- **MITP single tax rate** — 7% percent of monthly turnover (not less than 30% of the forecast average monthly salary per employee; REPLACES CIT, salary PIT, employer SSC, employee health insurance and several other taxes; regime guaranteed to 2035; standard payroll rules do not apply (R-MD-SC-2))  _(Invest Moldova)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Agriculture, IT parks and other professional categories",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Classify actual regime; no blanket self-payer or IT-park substitution; full special-tax method remains open"
     },
     {
       "id": "moldova-social-contributions-OLD-083",
@@ -4570,8 +4942,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "6dccc56200e66010af8d81ab1b26d018fc526da7cca00efbb888733a5fec3811",
       "original_text": "## Section 6 -- Tier 2 catalogue",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-084",
@@ -4579,8 +4957,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "c1e4bc275c24b9fe69e3bd79014d2268ccadaa3e4ebd9fe095f57ad13cddee30",
       "original_text": "When payroll data is ambiguous or client circumstances are unclear, flag these situations for reviewer confirmation.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-085",
@@ -4588,8 +4972,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "8fddfaa7b2ba28379125b38f05e39b03fd9f32857115673d0da416489843029c",
       "original_text": "### T2-1 -- Special / hazardous working conditions (32% vs 24%)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-086",
@@ -4597,8 +4987,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "317a1ed43f2457d8041e72dd709ebc6f20dfe80594d07167abe05c89934014f2",
       "original_text": "- **T2-1** — Trigger: Employer claims the 32% employer CNAS rate, or the work involves hazardous conditions. Issue: The 32% rate (vs the standard 24%) and any sector-specific splits (e.g. an 18% employer + 6% state-budget split mentioned in one PwC pass for agriculture) must be confirmed against the current state social insurance budget law. Action: Flag for reviewer. Default to 24% until confirmed.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-087",
@@ -4606,8 +5002,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "5e97eab6db44d048040e0214d5ce3bf068495473da17b79616f03c52283c0436",
       "original_text": "### T2-2 -- Conflicting secondary data (6% employee SSC / 4.5%-4.5% health split)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-088",
@@ -4615,8 +5017,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "b826fe7d87db698216e7a00891ebf09212dd89bf83a0895777afac6226d1ddfb",
       "original_text": "- **T2-2** — Trigger: A source (Rivermate, Safeguard Global, G-P, Native Teams, etc.) reports a 6% employee social insurance contribution and/or a 4.5%/4.5% employer-employee health split. Issue: These reflect the pre-October-2018 regime and are contradicted by PwC's current pages (24% employer CNAS, 9% employee-borne CNAM, no employee SSC). Action: Apply PwC/CNAS (0% employee SSC, 9% employee CNAM). Flag for reviewer to confirm the precise 2025 employee-side position against the Tax Code / Law 489/1999, especially for special categories.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-089",
@@ -4624,8 +5032,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "3d30421617940c99bbff3ad7ea8f5e072843854c631cd2112a92e92fc2ed0234",
       "original_text": "### T2-3 -- Personal allowance cap (360,000 MDL)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-090",
@@ -4633,8 +5044,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "9a252f1b46fb88ba6d3730535ffe00f5067f8f2dc70cc452d939d84754a6c643",
       "original_text": "- **T2-3** — Trigger: Annual taxable income approaches or exceeds 360,000 MDL. Issue: The standard 29,700 MDL personal allowance is available only if annual taxable income does not exceed 360,000 MDL. Above that, no allowance applies. Action: Confirm annual income before applying the monthly 2,475 MDL allowance in PAYE; recompute on the CET18.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-091",
@@ -4642,8 +5056,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "bdde2a8243350daafc6e6a9d1c0d343979d684e0b42f362d72404eb2338809dc",
       "original_text": "### T2-4 -- Increased / major allowances",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-092",
@@ -4651,8 +5068,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "45247de61a7a3ea90f969772a20d63d7a67ea6ef1e110d90f69d894561dfed64",
       "original_text": "- **T2-4** — Trigger: Client claims the major (34,620 MDL), spouse (21,780 MDL), or severe-disability dependent (21,780 MDL) allowance. Issue: Qualifying conditions for the increased allowances are not fully enumerated [RESEARCH GAP -- reviewer to confirm]. Action: Flag for reviewer. Do not apply increased allowances without confirmation.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-093",
@@ -4660,8 +5080,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "5c48b36b8e6b5e08399b9bdbed649420e09a5b0b3e5b765c0f926efee7c4ed76",
       "original_text": "### T2-5 -- Tax-year boundary (2025 vs 2026 figures)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-094",
@@ -4669,8 +5095,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "f15b987775987fce340956482d4d13304c6c37a2252b3ea3885c3843c1ede658",
       "original_text": "- **T2-5** — Trigger: Computation spans the 2025/2026 boundary, or it is unclear which year's figures apply. Issue: Minimum wage rises from 5,500 to 6,300 MDL, fixed SSC from 20,518 to 22,878 MDL, and forecast average salary from 16,100 to 17,400 MDL effective 1 Jan 2026. PwC pages now display 2026 figures because they were re-reviewed in January 2026. Action: Use 2025 figures for periods up to 31 Dec 2025; 2026 figures from 1 Jan 2026. Flag any cross-boundary computation for reviewer.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-095",
@@ -4678,8 +5110,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "41a27b48751449714d0337904fb3b978b73fcca7a4ee930ba74a9b97a1359af5",
       "original_text": "### T2-6 -- Self-employed / individually insured status",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Agriculture, IT parks and other professional categories",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Classify actual regime; no blanket self-payer or IT-park substitution; full special-tax method remains open"
     },
     {
       "id": "moldova-social-contributions-OLD-096",
@@ -4687,8 +5122,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "d2776a32f3ef79edc9766c1734cf77d45350c6945a495b7644b04040966282c4",
       "original_text": "- **T2-6** — Trigger: Individual has no employer, or status (employee vs self-employed) is unclear. Issue: Self-employed/individually insured persons pay a fixed annual SSC (20,518 MDL in 2025) and a fixed CNAM premium (12,636 MDL) rather than percentage-based contributions on remuneration. Justice-sector freelancers have a higher fixed SSC. Action: Confirm status and category before computing (R-MD-SC-1).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Agriculture, IT parks and other professional categories",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Classify actual regime; no blanket self-payer or IT-park substitution; full special-tax method remains open"
     },
     {
       "id": "moldova-social-contributions-OLD-097",
@@ -4696,8 +5134,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "71015aaca862ceff08b696ee9efa9ef8f763057ab9f9be86260afbc9b3eb5788",
       "original_text": "### T2-7 -- Contribution arrears and penalties",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Penalties and interest",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Social law reconciled; compounding assertion corrected; published tax/medical rate remains open"
     },
     {
       "id": "moldova-social-contributions-OLD-098",
@@ -4705,8 +5146,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "de7ba90c189378de7dadc7acd365537d8ab740cd0c328b4162489aacc77913d6",
       "original_text": "- **T2-7** — Trigger: Unpaid CNAS/CNAM/PIT from prior periods. Issue: Late CNAS = 0.1%/day (Law 489/1999, art. 28); late PIT interest = 0.0301%/day. Both compound. Action: Quantify only from an official SFS/CNAS statement. Escalate to a licensed Moldovan accountant (R-MD-SC-4).  _(Law 489/1999, art. 28)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Penalties and interest",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Social law reconciled; compounding assertion corrected; published tax/medical rate remains open"
     },
     {
       "id": "moldova-social-contributions-OLD-099",
@@ -4714,8 +5158,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "08a9dff6008eb250e771121dbe230d7df1786f7c22a33824b8b3537eaefea4b4",
       "original_text": "## Section 7 -- Excel working paper template",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-100",
@@ -4723,8 +5170,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "0b3d09edcd63f64e5771a643905d2b2fad01fd15276ba1c1e329f5263bf98a5a",
       "original_text": "When producing a Moldovan payroll/contribution computation, structure the working paper as follows:",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-101",
@@ -4732,8 +5182,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "e20b2b92c754f39c8cdc0b64d492b61da105dc1c0e106a8ad728583af8ac7fc9",
       "original_text": "```\nMOLDOVA PAYROLL & CONTRIBUTION COMPUTATION -- WORKING PAPER\nClient / Employer: [name]\nTax Year:          [2025 / 2026]\nPrepared:          [date]",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-102",
@@ -4741,8 +5194,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "99d31a5aa92a319179fb90a296e6f46de3cc7bab8b0309739353dca2d1b3385e",
       "original_text": "INPUT DATA\n  Employment status:             [Employee / Self-employed / Individually insured]\n  Working conditions:            [Standard 24% / Special 32%]\n  Full-time or part-time:        [FT / PT]\n  Gross monthly remuneration:    MDL [____]\n  Annual taxable income:         MDL [____]   (test vs 360,000 cap)\n  Personal allowance applies:    [YES if <= 360,000 / NO]\n  MITP resident:                 [YES -> STOP / NO]",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-103",
@@ -4750,8 +5206,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "4c0c92300b567a65d25f46a030ae05d89427075917f2f03b06984029a9c5efe6",
       "original_text": "EMPLOYEE-SIDE COMPUTATION (monthly)\n  Gross remuneration:            MDL [____]\n  Employee CNAM (9%):            MDL [____]\n  Personal allowance (2,475):    MDL [____]\n  PIT base:                      MDL [____]   (gross - CNAM - allowance)\n  PIT (12%):                     MDL [____]\n  Net pay:                       MDL [____]   (gross - CNAM - PIT)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-104",
@@ -4759,8 +5218,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "643d211aa37e443fcb33f885ea6fb4ea192a1daaf939fa111606c3c3e2b9f893",
       "original_text": "EMPLOYER-SIDE COMPUTATION (monthly)\n  Employer CNAS (24% / 32%):     MDL [____]\n  Employer CNAM (0%):            MDL 0.00\n  Employer total cost:           MDL [____]   (gross + CNAS)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-105",
@@ -4768,8 +5230,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "19da3e4519efb715dcea41e0dd1f8ebc5a9a85e9c4860a6477c42d754c2bb285",
       "original_text": "SELF-EMPLOYED (if applicable, annual)\n  Fixed annual SSC:              MDL [20,518 (2025) / 22,878 (2026)]\n  Fixed annual CNAM premium:     MDL 12,636",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-106",
@@ -4777,8 +5242,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "35f5add8a5153c3af89853dfe8e9c2171f26cd343cdcd8ab070117da6e81959d",
       "original_text": "FILING\n  Monthly IPC21 due:             25th of following month\n  Annual CET18 due:              30 April following year",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-107",
@@ -4786,8 +5254,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "50aab2bd2f2af583599b2c130d20d07665b9c0657f2cbb69fbda27bdcf464c13",
       "original_text": "REVIEWER FLAGS\n  [List any Tier 2 flags here]",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-108",
@@ -4795,8 +5266,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "4cbe74849d529606b8ec8306aa9f9c8fc01c0954b61c2158e9811b2658bca211",
       "original_text": "CONSERVATIVE DEFAULTS APPLIED\n  [List any defaults applied and their impact]\n```",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-109",
@@ -4804,8 +5278,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "4cee45c959453a9e6fbbf87e126546cee3582732fab78c7f90f21907061f002d",
       "original_text": "## Section 8 -- Bank statement reading guide",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-110",
@@ -4813,8 +5290,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "99d86ce15183ddb7f62e959f4fb2fabc8b8f27c7cb1d33d93e885239daf28971",
       "original_text": "### How payroll, contribution and PIT items appear on Moldovan bank statements",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-111",
@@ -4822,8 +5302,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "7da7b477d7fb29ec80e7e8b4b6fbb25abb72f8a238299d414d457cedd62bca29",
       "original_text": "Moldovan retail/business banks include Maib (formerly Moldova Agroindbank), MICB (Moldindconbank), OTP Bank Moldova, and Victoriabank. Statements are typically in Romanian; English variants appear on some corporate accounts.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-112",
@@ -4831,8 +5314,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "826ca8a7ed4b5a0ec83404ad798c81501c82071c665c38059c18272464aaf5c9",
       "original_text": "**Social insurance (CNAS):**\n- Description: \"CNAS\", \"CASA NATIONALA DE ASIGURARI SOCIALE\", \"BASS\", \"CONTRIBUTII SOCIALE\", \"CONTRIBUTIE SOCIALA FIXA\"\n- Timing: monthly (employer 24%/32%), or annual lump sum (self-employed fixed)\n- Amount: employer = 24% (or 32%) of gross; self-employed = 20,518 MDL annual (2025)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-113",
@@ -4840,8 +5326,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "d372781f5c47c57d5aef47e65a970c6aaf80395be21377cd28dd9010b3f740ef",
       "original_text": "**Health insurance (CNAM):**\n- Description: \"CNAM\", \"ASIGURARE MEDICALA\", \"ASIGURARI MEDICALE\", \"PRIMA ASIGURARE MEDICALA\", \"FAOAM\"\n- Timing: monthly (employee 9% via IPC21), or annual (fixed 12,636 MDL premium)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-114",
@@ -4849,8 +5338,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "edcd9933a9aa3a4d40acc2d8db26429da0e0f354d83de76a0d14ce8a27f921f0",
       "original_text": "**Income tax / combined remittance:**\n- Description: \"SFS\", \"SERVICIUL FISCAL DE STAT\", \"IMPOZIT PE VENIT\", \"IPC21\", \"IPC\"\n- Timing: by the 25th of the following month\n- Note: SFS collects PIT, CNAS and CNAM together via IPC21; a single line may bundle all three",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-115",
@@ -4858,8 +5350,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "63a9bc3e14e0f1e5125cd90268ead2c5335ea4e981e7cbcd316952f63d5f8f86",
       "original_text": "**Key identification tips:**\n1. Contribution and PIT remittances are always outgoing (DEBIT) to CNAS/CNAM/SFS, never credits\n2. Employer CNAS recurs monthly at a consistent percentage of gross; self-employed fixed SSC is a single annual lump sum\n3. PENSIE / INDEMNIZATIE / AJUTOR SOCIAL credits are benefits RECEIVED, not contributions paid\n4. A single IPC21 remittance line may combine PIT + employee CNAM + employer CNAS -- request the IPC21 detail to itemise\n5. SALARIU / AVANS debits are net wages (payroll expense), not contributions",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-116",
@@ -4867,8 +5362,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "53b9a52fefa8f6d43674bcbe46931cb3347162b8f8c1b50a906a358ca6cae695",
       "original_text": "## Section 9 -- Onboarding fallback",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-117",
@@ -4876,8 +5374,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "8a2243f2d123f4f0f7b50faa9f43febdb19c6072f1f762152c7dbbbb7f5b14bc",
       "original_text": "If the client provides only a bank statement and no other information:",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-118",
@@ -4885,8 +5386,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "c1afcc9b9ac0d1e760a05b18e1ef14656599df8b1ddcd76fdd08ec26f0a0aa88",
       "original_text": "1. **Scan for CNAS / CNAM / SFS debits** -- identify all outgoing payments matching Section 3 patterns\n2. **Sum by category** -- total CNAS (employer social), CNAM (health), and SFS/IPC21 (PIT + combined) separately\n3. **Reverse-engineer the gross (employee case):**\n   - Employer CNAS / 0.24 ~= monthly gross (standard conditions)\n   - Employee CNAM / 0.09 ~= monthly gross\n   - Cross-check the two; they should imply the same gross\n4. **Identify self-employed fixed payments:**\n   - A single ~20,518 MDL CNAS debit (2025) -> fixed annual social contribution\n   - A single ~12,636 MDL CNAM debit -> fixed annual health premium\n5. **Flag for reviewer:** \"Payroll classification derived from bank statement amounts only. Employment status, working conditions, allowance entitlement and tax year have not been independently verified. Reviewer must confirm before filing IPC21 / CET18.\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Reconcile the bank and working paper",
+        "Ask the client first"
+      ],
+      "status": "Operational reconciliation preserved; unsupported automatic bank/VAT conclusions replaced by evidence checks"
     },
     {
       "id": "moldova-social-contributions-OLD-119",
@@ -4894,8 +5398,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "bb396fd333172de29decf1fa7e15274b890a817b3180d3fd963580caf956f6f7",
       "original_text": "### Contribution & rate summary (2025; sources in column)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-120",
@@ -4903,8 +5413,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "caa3029637cb3e6788c53dbd5d24f494715246265a2c06ead68564150e8e72b1",
       "original_text": "**Contribution & rate summary (2025; sources in column)**  _(PwC; CNAS)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-121",
@@ -4912,8 +5428,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "03372d56b42a8463003559b671bae06a367e62da26f7d6417bbc12c5ac4c98ce",
       "original_text": "| Item | Payer | Rate / amount | Source |\n| --- | --- | --- | --- |\n| State social insurance (CNAS), standard | Employer | 24% of gross | PwC, *Corporate -- Other taxes* |\n| State social insurance (CNAS), special conditions | Employer | 32% of gross | PwC, *Individual -- Other taxes* |\n| State social insurance (CNAS) | Employee | 0% | PwC, *Individual -- Other taxes* |\n| Mandatory health insurance (CNAM) | Employee | 9% of wages | PwC, *Individual -- Other taxes* |\n| Mandatory health insurance (CNAM) | Employer | 0% | PwC, *Corporate -- Other taxes* |\n| Personal income tax (PIT) | Employee | 12% flat | PwC, *Individual -- Taxes on personal income* |\n| Fixed annual SSC (self-employed) | Individual | 20,518 MDL (2025); 22,878 MDL (2026) | CNAS |\n| Fixed annual health premium (self-employed) | Individual | 12,636 MDL (2025 & 2026) | PwC, *Individual -- Deductions* |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-122",
@@ -4921,8 +5443,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "8f49e921ee7d195ef1908beeb71215be78c04b12bcc755545cdc9d91bfa8038d",
       "original_text": "- **Standard employee totals summary** — Standard employee totals (per cell): employee column = 0% CNAS + 9% CNAM = 9%; employer column = 24% CNAS + 0% CNAM = 24%; combined statutory wedge above gross = 24% (employer) + 9% (employee withholding) + 12% PIT on net-of-allowance base.  _(PwC)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-123",
@@ -4930,8 +5458,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "883af859b00f79ea5ef4c26f6b03427acdd104b96d80af60b2c658c2d205c267",
       "original_text": "### Other Moldovan rates (context; not payroll, but cited for cross-checks)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-124",
@@ -4939,8 +5473,14 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "782a93433353fe0bd01178c04cc1a644ae07708df00961446540220c746cfd75",
       "original_text": "**Other Moldovan rates (context; not payroll, but cited for cross-checks)**  _(PwC; Invest Moldova)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Predecessor subject preserved/corrected in current methods or expressly unconfirmed; independent comparison pending"
     },
     {
       "id": "moldova-social-contributions-OLD-125",
@@ -4948,8 +5488,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "b0fa1907fde0063f6b9add34d6981d89f3b08aec1a5ce9e60a9180de75bcd5e7",
       "original_text": "| Tax | Rate | Source |\n| --- | --- | --- |\n| Corporate income tax (standard) | 12% | PwC, *Corporate -- Taxes on corporate income* |\n| SME regime (non-VAT) | 4% of turnover | PwC, *Corporate -- Taxes on corporate income* |\n| Farming | 7% | PwC, *Corporate -- Taxes on corporate income* |\n| IT Park (MITP) single tax | 7% of turnover (>= 30% of forecast avg salary/employee) | Invest Moldova |\n| VAT (standard) | 20% (reduced 8% / 6%) | PwC, *Corporate -- Other taxes* |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-126",
@@ -4957,8 +5500,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "13e569393a5999a46f3a49e284e0df7a7b4a378c3e58bf8895a5bb04d974b262",
       "original_text": "### Thresholds (sources in column)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-127",
@@ -4966,8 +5512,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "ede4643140ef90c705d30958a25686f0c2c4cf27a93991c36a6f44c351840a9e",
       "original_text": "**Thresholds (sources in column)**  _(Intelcont; PwC; WageIndicator; MOLDPRES; social.gov.md; KPMG)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-128",
@@ -4975,8 +5524,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "1207e970bdeea087ca0d66ec334b2ee1f580f60f0b1bd4f510cbc8cc3796791a",
       "original_text": "| Threshold | 2025 | 2026 | Source |\n| --- | --- | --- | --- |\n| Standard personal allowance | 29,700 MDL/yr (~2,475/mo), only if income <= 360,000 MDL | 29,700 MDL/yr (PwC carries same) | Intelcont; PwC |\n| Major personal allowance | 34,620 MDL/yr | -- [RESEARCH GAP -- reviewer to confirm 2026] | PwC, *Individual -- Deductions* |\n| Spouse's major allowance | 21,780 MDL/yr | -- [RESEARCH GAP -- reviewer to confirm 2026] | PwC, *Individual -- Deductions* |\n| Per dependent | 9,900 MDL/yr (21,780 if severe disability) | -- [RESEARCH GAP -- reviewer to confirm 2026] | PwC, *Individual -- Deductions* |\n| Minimum wage | 5,500 MDL/mo | 6,300 MDL/mo (confirmed) | WageIndicator; MOLDPRES |\n| Forecast average monthly salary | 16,100 MDL | 17,400 MDL | social.gov.md |\n| SSC minimum contribution base | National minimum wage (5,500 MDL); 25% for part-time | National minimum wage (6,300 MDL) | PwC, *Corporate -- Other taxes* |\n| VAT mandatory registration | 1,200,000 MDL / 12 months | 1,500,000 MDL (from 1 Jan); 1,700,000 MDL (from 1 Mar) | KPMG |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-129",
@@ -4984,8 +5536,10 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "3d5b844fa4d4eb1cc2541ccf672df5d395f82d1adea6fd7caf0bf24d9e56758c",
       "original_text": "### Forms",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing"
+      ],
+      "status": "Current social/medical reporting route retained with distinct timing"
     },
     {
       "id": "moldova-social-contributions-OLD-130",
@@ -4993,8 +5547,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "fb85bf3f1bfe31da2ca227de63f89c1d86005a7c4a7218e9a39dcfdc97bac5b4",
       "original_text": "**Forms**  _(Rivermate; SFS; PwC)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-131",
@@ -5002,8 +5559,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "a10c1baa5fded2ea0b0fbb920672a26dcfdfb2d399d5c65161a86f01a57a8043",
       "original_text": "| Form | Purpose | Deadline | Source |\n| --- | --- | --- | --- |\n| IPC21 | Monthly combined declaration of withheld PIT + CNAS + CNAM (employer return) | 25th of the following month | Rivermate; SFS |\n| CET18 | Annual individual income tax return / reconciliation | 30 April of the following year | PwC, *Individual -- Tax administration* |\n| Foreign-citizen short-stay return | Return for foreign citizens earning income from Moldovan residents | Within 3 days of ending the activity | PwC, *Individual -- Tax administration* |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "companion individual/payroll/corporate/VAT Guide as explicitly stated"
+      ],
+      "status": "Unverified predecessor tax/allowance/form context explicitly retained as a gap; no certification of another Guide"
     },
     {
       "id": "moldova-social-contributions-OLD-132",
@@ -5011,8 +5571,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "f39807adccfe39a70cad2645e33826a9056e50f072c01216fdef41a431dbf726",
       "original_text": "### Penalties",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Penalties and interest",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Social law reconciled; compounding assertion corrected; published tax/medical rate remains open"
     },
     {
       "id": "moldova-social-contributions-OLD-133",
@@ -5020,8 +5583,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "5787e84cb5c85b77e39d8454a096e554b06d7ebe612334ee2758a86eb3852525",
       "original_text": "**Penalties**  _(CNAS; PwC)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Penalties and interest",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Social law reconciled; compounding assertion corrected; published tax/medical rate remains open"
     },
     {
       "id": "moldova-social-contributions-OLD-134",
@@ -5029,8 +5595,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "45051722d6cae75a21d2b0d15fbfa6013834c1878f1ec5fcd9915aafa3d7694f",
       "original_text": "| Penalty | Rate | Basis | Source |\n| --- | --- | --- | --- |\n| Late payment of social insurance (CNAS) | 0.1% of the amount owed per day | Law No. 489/1999, art. 28 | CNAS |\n| Interest on late payment of PIT | 0.0301% per day on total tax due | Tax Code (rate set annually) | PwC, *Individual -- Tax administration* |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Penalties and interest",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Social law reconciled; compounding assertion corrected; published tax/medical rate remains open"
     },
     {
       "id": "moldova-social-contributions-OLD-135",
@@ -5038,8 +5607,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "785466711a3d93d6c44e933f5efca282f32c00ebe831144d96c3b00294f87206",
       "original_text": "### Test suite",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-136",
@@ -5047,8 +5620,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "e307dc7c67e380716721f2a041174cc89f48e2752cf2f24d750a76b5e875b4e3",
       "original_text": "All employee tests use 2025 figures: CNAM 9%, allowance 2,475 MDL/month, PIT 12% on (gross − CNAM − allowance), employer CNAS 24% standard.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-137",
@@ -5056,8 +5633,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "b65fa75c208fccc9698e8e4298302de18de8e6ac2e9d8ed1dd80eb6b660f3be1",
       "original_text": "Test 1 -- Minimum wage employee (5,500 MDL). CNAM = 495.00; PIT base = 5,500 − 495 − 2,475 = 2,530.00; PIT = 303.60; net = 4,701.40; employer CNAS = 1,320.00; employer cost = 6,820.00.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-138",
@@ -5065,8 +5646,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "855d904c4fb2aff09df92abc98dee318426d204313360b70f86357f559cc9191",
       "original_text": "Test 2 -- Average-salary employee (16,100 MDL). CNAM = 1,449.00; PIT base = 16,100 − 1,449 − 2,475 = 12,176.00; PIT = 1,461.12; net = 13,189.88; employer CNAS = 3,864.00; employer cost = 19,964.00.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-139",
@@ -5074,8 +5659,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "af6e38f27415515656f7bf2b4acf55411e83daf22b27bf9ac5c83faae0f1ed45",
       "original_text": "Test 3 -- 10,000 MDL employee. CNAM = 900.00; PIT base = 10,000 − 900 − 2,475 = 6,625.00; PIT = 795.00; net = 8,305.00; employer CNAS = 2,400.00; employer cost = 12,400.00.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-140",
@@ -5083,8 +5672,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "564d071b95d8d95e47700117b89b16463f285129911ab0481836e2658829ddb0",
       "original_text": "Test 4 -- Special-conditions employee (20,000 MDL, 32% CNAS). CNAM = 1,800.00; PIT base = 20,000 − 1,800 − 2,475 = 15,725.00; PIT = 1,887.00; net = 16,313.00; employer CNAS 32% = 6,400.00; employer cost = 26,400.00. (32% to be reviewer-confirmed.)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-141",
@@ -5092,8 +5685,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "48dc924eec0e539511c8f89d1fab89e6898f7ce357c0bfa0ebc1aed2042fb45b",
       "original_text": "Test 5 -- High earner above allowance cap (gross 40,000 MDL/mo => 480,000 MDL/yr > 360,000). No personal allowance. CNAM = 3,600.00; PIT base = 40,000 − 3,600 − 0 = 36,400.00; PIT = 4,368.00; net = 31,032.00; employer CNAS = 9,600.00; employer cost = 49,600.00.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-142",
@@ -5101,8 +5698,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "b223fabd33e749bf6dbb1482de18a6d0523f4d2f3f260c05c54d0dd9e534e6a8",
       "original_text": "Test 6 -- Self-employed (2025). Fixed annual SSC = 20,518.00 MDL; fixed annual CNAM premium = 12,636.00 MDL; total fixed contributions = 33,154.00 MDL. No 24% / 9% percentage contributions apply.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-143",
@@ -5110,8 +5711,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "2631f68aadc5f7832eaedac2e447c761fa5615c23343cff7f92a135bbaa25956",
       "original_text": "Test 7 -- Employee SSC check. Any employee, any gross: employee state social insurance = 0.00 MDL. (Reject any 6% employee figure.)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-144",
@@ -5119,8 +5724,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "6ca94c702b6280dc7b8c23262392c51b45ebdff5dd83707ea7ba668ae6e7aaef",
       "original_text": "Test 8 -- Tax-year boundary. Same gross employee on 1 Jan 2026: use minimum wage 6,300 MDL, fixed SSC 22,878 MDL, average salary 17,400 MDL; rates (24% / 9% / 12%) unchanged absent a new budget law.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "status": "Old assumed 2025 fixtures preserved verbatim in archive; current social components corrected, PIT/full-net-pay and old-year legal assumptions not certified"
     },
     {
       "id": "moldova-social-contributions-OLD-145",
@@ -5128,8 +5737,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "322bea6889ddb4e191d48a2705cdc5ece49e7433777c6904dd3512952f1bebd8",
       "original_text": "### Prohibitions",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Operational prohibitions preserved/corrected; no guessed category, compounding or universal personal-allowance claim"
     },
     {
       "id": "moldova-social-contributions-OLD-146",
@@ -5137,8 +5750,12 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "5e09774b77876546b2e3d5996f04e9e7ab23203bd403286ea2e058341e3c1760",
       "original_text": "- **No 6% employee SSC** — NEVER apply a 6% employee social insurance contribution -- employees pay 0% under the current (post-2018) system  _(n/a)_\n- **No 4.5%/4.5% CNAM split** — NEVER apply a 4.5%/4.5% employer/employee health split -- CNAM is 9%, fully employee-borne, employer 0%  _(n/a)_\n- **No standard payroll for MITP resident** — NEVER compute standard payroll for a Moldova IT Park (MITP) resident -- the 7% single tax replaces SSC/PIT; escalate  _(n/a)_\n- **No unconfirmed 32% special-conditions rate** — NEVER apply the 32% special-conditions CNAS rate without reviewer confirmation -- default to 24%  _(n/a)_\n- **No allowance above 360,000 MDL** — NEVER grant the 29,700 MDL personal allowance when annual taxable income exceeds 360,000 MDL  _(n/a)_\n- **No mixing 2025/2026 thresholds** — NEVER mix 2025 and 2026 thresholds in one computation -- pick the year of the period and apply it consistently  _(n/a)_\n- **Fixed SSC not a percentage** — NEVER treat the self-employed fixed annual SSC (20,518 MDL) as a percentage of income -- it is a flat statutory amount  _(n/a)_\n- **No confusing credit with contribution** — NEVER confuse a CNAS/CNAM credit (PENSIE / INDEMNIZATIE benefit received) with a contribution paid  _(n/a)_\n- **No quantifying arrears without official statement** — NEVER quantify contribution arrears or penalties without an official SFS/CNAS statement -- escalate  _(n/a)_\n- **Figures are estimates only** — NEVER present figures as definitive -- label as estimated and direct the client to their SFS e-cabinet / IPC21 and CNAS/CNAM statements  _(n/a)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Operational prohibitions preserved/corrected; no guessed category, compounding or universal personal-allowance claim"
     },
     {
       "id": "moldova-social-contributions-OLD-147",
@@ -5146,8 +5763,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "694d80a0c515e397a6f7fffe8d899d7eff3724673440d179a00c2995d439b15a",
       "original_text": "## Disclaimer",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA",
+        "Who this applies to"
+      ],
+      "status": "Duplicated general-reference boilerplate consolidated with unchanged stamped disclaimer; no legal topic removed"
     },
     {
       "id": "moldova-social-contributions-OLD-148",
@@ -5155,8 +5775,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "d0f85d745adbbb6fa4bb2d9cefdcb70239bcb511f1aca8d3e8d5ec0749150e79",
       "original_text": "This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA",
+        "Who this applies to"
+      ],
+      "status": "Duplicated general-reference boilerplate consolidated with unchanged stamped disclaimer; no legal topic removed"
     },
     {
       "id": "moldova-social-contributions-OLD-149",
@@ -5164,8 +5787,11 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "e6097dc710d0439015cb49bab66f9aeaa3e744a0ac917c019e5a84fc9abd2ddb",
       "original_text": "The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA",
+        "Who this applies to"
+      ],
+      "status": "Duplicated general-reference boilerplate consolidated with unchanged stamped disclaimer; no legal topic removed"
     },
     {
       "id": "moldova-social-contributions-OLD-150",
@@ -5173,8 +5799,10 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "original_text": "<!-- openaccountants-cta-block -->",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Unchanged platform block"
     },
     {
       "id": "moldova-social-contributions-OLD-151",
@@ -5182,8 +5810,10 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
       "original_text": "---",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Unchanged platform block"
     },
     {
       "id": "moldova-social-contributions-OLD-152",
@@ -5191,8 +5821,10 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
       "original_text": "## Talk to a verified accountant",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Unchanged platform block"
     },
     {
       "id": "moldova-social-contributions-OLD-153",
@@ -5200,8 +5832,10 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
       "original_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Unchanged platform block"
     },
     {
       "id": "moldova-social-contributions-OLD-154",
@@ -5209,8 +5843,10 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
       "original_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Unchanged platform block"
     },
     {
       "id": "moldova-social-contributions-OLD-155",
@@ -5218,8 +5854,10 @@
       "original_sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
       "unit_sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
       "original_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Unchanged platform block"
     },
     {
       "id": "moldova-tax-optimization-OLD-001",
