@@ -47,8 +47,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Admin burden | Low | Medium | Medium | High |
 | Audit required | No | Only if thresholds exceeded | Only if thresholds exceeded | Only if thresholds exceeded |
 
+Members of an S.L. or S.A. are not personally liable for the company's debts _(LSC art 1.2-1.3)_. A company with one member is a sociedad unipersonal (S.L.U. or S.A.U.) _(LSC art 12)_.
+
 - **Recommended default entity** -- S.L. (Sociedad Limitada) with €3,000 capital for most commercial purposes.
-- **Note on €1 capital** -- Since Ley 18/2022 (Crea y Crece), the minimum capital of an S.L. is €1. While capital is below €3,000: at least 20% of profit must go to the legal reserve until reserve plus capital reach €3,000; and if the company is wound up without enough assets to pay its debts, the members (socios) are jointly liable for the difference between €3,000 and the subscribed capital _(LSC art 4.1, as amended by Ley 18/2022 art 2.1)_.
+- **Note on €1 capital** -- Since Ley 18/2022 (Crea y Crece), the minimum capital of an S.L. is €1. While capital is below €3,000: at least 20% of profit must go to the legal reserve until reserve plus capital reach €3,000; and if the company is wound up without enough assets to pay its debts, the members (socios) are jointly liable for the difference between €3,000 and the subscribed capital _(LSC art 4.1, as amended by Ley 18/2022 art 2.1)_. The old successive-formation regime of LSC art 4 bis was abolished by Ley 18/2022 art 2.2, so the rule is in art 4.1, not art 4 bis.
 - **Audit thresholds** -- An S.L. or S.A. is exempt from audit if, on two consecutive year ends, it meets at least two of: total assets not over €2,850,000; net turnover not over €5,700,000; average staff not over 50. In its first year a company is exempt if it meets two of the three at that year end _(LSC art 263)_.
 
 ## Section 3 -- Registration Process
@@ -75,7 +77,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Step 6: File with Registro Mercantil Provincial
 
-- **File with Registro Mercantil Provincial** -- Submit the escritura to the provincial mercantile registry. The registrar must register it within 15 days of the filing entry (Código de Comercio art 18.4). The company gains legal personality on registration. Company formation is exempt from the capital-duty part of ITP-AJD (operaciones societarias), and the registry receives proof of the exemption (Ley 14/2013 art 15.5).
+- **File with Registro Mercantil Provincial** -- Submit the escritura to the provincial mercantile registry. The registrar must register it within 15 days of the filing entry (Código de Comercio art 18.4). The company gains legal personality on registration (LSC art 33). Company formation is exempt from the capital-duty part of ITP-AJD (operaciones societarias), and the registry receives proof of the exemption (Ley 14/2013 art 15.5).
 
 ### Step 7: Register for Taxes and Social Security
 
@@ -189,7 +191,7 @@ The bottleneck for foreign founders is obtaining the NIE, which should be starte
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Real Decreto Legislativo 1/2010, Ley de Sociedades de Capital, consolidated text (last update 03/01/2025), arts 4, 62, 67, 73, 74, 76, 78, 79, 164, 253, 263, 279, 282, 283 | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 | 2026-10-30 |
+| Real Decreto Legislativo 1/2010, Ley de Sociedades de Capital, consolidated text (last update 03/01/2025), arts 1, 4, 4 bis (abolished), 12, 33, 62, 67, 73, 75, 76, 78, 79, 164, 253, 263, 279, 282, 283 | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 | 2026-10-30 |
 | Ley 14/2013 de apoyo a los emprendedores, consolidated text, arts 15 and 18 | https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074 | 2026-10-30 |
 | Real Decreto 1784/1996, Reglamento del Registro Mercantil, consolidated text, arts 410, 411, 412, 414 | https://www.boe.es/buscar/act.php?id=BOE-A-1996-17533 | 2026-10-30 |
 | Código de Comercio, consolidated text, art 18 | https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627 | 2026-10-30 |
