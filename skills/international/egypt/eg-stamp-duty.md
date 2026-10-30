@@ -26,6 +26,18 @@ This skill covers Egyptian **stamp duty** (ضريبة الدمغة / ضريبة 
 > **Currency note:** all figures are in Egyptian Pounds (EGP / ج.م).
 > **YMYL — verify before relying.** Egyptian stamp duty rates are frequently amended by decree (most recently Laws 30/2023, 157/2025). Where this skill says "verify current value," re-confirm against the Egyptian Tax Authority (ETA — eta.gov.eg), PwC Worldwide Tax Summaries (taxsummaries.pwc.com/egypt), or a Big-4 alert before filing.
 
+---
+
+## What this file is
+
+**This file is a content skill** that loads on top of a workflow base. It provides Egypt-specific stamp duty rules, rate schedules, exemptions, payment mechanics, and penalty regimes.
+
+**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date.
+
+**The reviewer is the customer of this output.** This skill assumes a credentialed reviewer reviews and signs any filing. The skill produces working papers and a brief, not a filed return.
+
+---
+
 ## Section 1 — Quick Reference
 
 | Field | Value |

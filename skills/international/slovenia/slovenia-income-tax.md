@@ -1,19 +1,20 @@
 ---
 name: slovenia-income-tax
-description: "Slovenian personal income tax (dohodnina) for tax year 2026 under ZDoh-2 as amended to ZINR (Uradni list RS 40/25). Covers residents and non-residents, the five-band scale (16%, 26%, 33%, 39%, 50%) with the 2026 indexed bands, the general allowance of EUR 5,551.93 and its taper for total income up to EUR 17,766.18, dependants and other allowances, capital income at 25% with 20% and 15% after 5 and 10 years and exemption after 15, rent at 25% with 10% standard costs, sole proprietors (s.p.) on normed expenses at 20% (pointer), the informative calculation (informativni izračun) and its 15-day objection, advance tax and fines. Trigger on: dohodnina, informativni izračun, ugovor, splošna olajšava, Doh-KDVP, Doh-Div, rent tax Slovenia. Out of scope: si-cross-border (7% new-resident relief, non-residents), slovenia-payroll, slovenia-social-contributions, si-corporate-income-tax, slovenia-tax-optimization."
+description: "Slovenian personal income tax (dohodnina) for tax year 2026 under ZDoh-2 as amended to ZINR (Uradni list RS 40/25). Covers residents and non-residents, the five-band scale (16%, 26%, 33%, 39%, 50%) with the 2026 indexed bands, the general allowance of EUR 5,551.93 and its taper for total income up to EUR 17,766.18, dependants and other allowances, capital income at 25% with 20% and 15% after 5 and 10 years and exemption after 15, rent at 25% with 10% standard costs, sole proprietors (s.p.) on normed expenses under ZPZR for 2026 (two-year average revenue tests of EUR 120,000, 85,000 or 50,000; final tax 20% then 35%) as a pointer, the informative calculation (informativni izračun) and its 15-day objection, advance tax and fines. Trigger on: dohodnina, informativni izračun, ugovor, splošna olajšava, Doh-KDVP, Doh-Div, rent tax Slovenia. Out of scope: si-cross-border (7% new-resident relief, non-residents), slovenia-payroll, slovenia-social-contributions, si-corporate-income-tax, slovenia-tax-optimization."
+version: 0.4
 jurisdiction: SI
-category: international
 tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
-version: 0.3
-verified_by: pending
+last_updated: 2026-10-30
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Slovenia: personal income tax (dohodnina) 2026 v0.3
+# Slovenia: personal income tax (dohodnina) 2026 v0.4
 
-> **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Personal Income Tax Act (ZDoh-2) and the Tax Procedure Act (ZDavP-2) as consolidated on pisrs.si, the amending act ZDoh-2AB (Uradni list RS 104/24), and the Financial Administration (FURS) notice of the 2026 scale and allowances, all read on 24 October 2026. It prepares working papers; it is not authority to file or pay.
+> **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Personal Income Tax Act (ZDoh-2) and the Tax Procedure Act (ZDavP-2) as consolidated on pisrs.si, the amending act ZDoh-2AB (Uradni list RS 104/24), and the Financial Administration (FURS) notice of the 2026 scale and allowances, all read on 24 October 2026. The 2026 normed-expense rules for sole proprietors come from ZPZR (Uradni list RS 91/25, amended by ZPZR-A 32/26), read on 30 October 2026. It prepares working papers; it is not authority to file or pay.
 
 Related skills in this pack:
 
@@ -65,10 +66,11 @@ The band amounts and allowances are indexed each year by a ministerial rule if t
 | Individual investment account (INR) payout | 15%, final; exempt for a payout made at least 15 years after opening (or after the last payout) | from 5 March 2026 | ZDoh-2 arts. 104.b and 132(3); ZINR art. 45 |
 | Rent | 25% final, on rent less 10% standard costs | 2026 | ZDoh-2 arts. 77 and 135.č |
 | Royalties | 10% standard costs; 25% advance tax | 2026 | ZDoh-2 arts. 79 and 130 |
-| s.p. on normed expenses | 20% final | 2026 | ZDoh-2 art. 135.a |
+| s.p. on normed expenses, full-time self-insured for at least 9 months of 2026 | 20% of a base up to EUR 72,000; EUR 14,400 plus 35% above; final | 2026 | ZPZR art. 7(1) and (3) (replaces ZDoh-2 art. 135.a for 2026), https://pisrs.si/pregledPredpisa?id=ZAKO9359 |
+| s.p. on normed expenses, other | 20% of a base up to EUR 33,000; EUR 6,600 plus 35% above; final | 2026 | ZPZR art. 7(1) and (3), https://pisrs.si/pregledPredpisa?id=ZAKO9359 |
 | Normed expenses, full-time self-insured s.p. | 80% of revenue up to EUR 60,000; none on revenue above | from 2025 | ZDoh-2 art. 59(1) |
 | Normed expenses, other s.p. | 80% up to EUR 12,500; 40% from 12,500 to 30,000; none above | from 2025 | ZDoh-2 art. 59(2) |
-| Entry test for normed expenses | prior-year revenue up to EUR 30,000, or EUR 60,000 if full-time self-insured for 9 months | from 2025 | ZDoh-2 art. 48(3) |
+| Entry and exit test for normed expenses | average revenue of the two previous years (2024 and 2025 for 2026) up to EUR 120,000 if full-time self-insured for 9 months in each of those years; EUR 50,000 if in neither; EUR 85,000 otherwise | 2026 | ZPZR art. 6(3) and (13) (replace ZDoh-2 art. 48(3) and (14) for 2026), https://pisrs.si/pregledPredpisa?id=ZAKO9359 |
 | Advance tax at a secondary employer; contract work | 25% | 2026 | ZDoh-2 art. 127(6) and (10) |
 
 ## The taxable base
@@ -98,8 +100,14 @@ The band amounts and allowances are indexed each year by a ministerial rule if t
 **Sole proprietor (s.p.).** Business profit is revenue less expenses under corporate tax rules (ZDoh-2 art. 48(1) and (2)).
 
 - **Actual expenses.** The profit joins the annual base and is taxed on the scale.
-- **Normed expenses.** The s.p. can elect normed expenses instead if prior-year revenue was up to EUR 30,000, or up to EUR 60,000 with full-time self-employment insurance for at least nine months (art. 48(3), amended by ZDoh-2AB from 2025). A new business can elect for its first year, and also for its second year if it started in the last six months of the first (art. 48(4)). The new business elects within eight days of registration (ZDavP-2 art. 308(2)).
-- **Forced exit for 2026.** An s.p. must use actual expenses and keep full books for 2026 if its 2025 revenue exceeded EUR 60,000 (full-time self-insured for nine months in 2025) or EUR 30,000 (otherwise) (ZDoh-2AB art. 23(b)). The deduction is set by art. 59 (see the table above). The remaining profit is taxed at 20% final (art. 135.a).
+- **Normed expenses (2026 rules).** For tax years from 1 January 2026 the entry and exit tests and the tax rate come from ZPZR, not ZDoh-2 arts. 48 and 135.a (ZPZR arts. 6, 7, 20 and 21(2)). ZPZR came into force on 20 November 2025, the day after publication in Uradni list RS 91/25 (art. 21(1)). The normed expenses themselves still come from ZDoh-2 art. 59 (see the table above; ZPZR arts. 6(3) and 20).
+  - **Entry test.** The s.p. can elect normed expenses for 2026 if the average revenue of 2024 and 2025 (under the accounting rules) is not over EUR 120,000, when it was full-time self-insured for at least nine months in each of those two years. The limit is EUR 50,000 if it was so insured in neither year, and EUR 85,000 in any other case (ZPZR art. 6(3)). "Nine months" means insured on the basis of self-employment for at least 75% of the minimum annual full-time hours (art. 6(16)).
+  - **Part years and new businesses.** If the s.p. traded for only part of 2024 or 2025, the entry test is adjusted pro rata to the period traded (art. 6(4)). FURS applies this by scaling the limit by the days traded over the days in the two years: an s.p. that traded 90 days in each of 2024 and 2025 and was not full-time insured may enter if its average revenue is not over (180 / 731) x EUR 50,000 = EUR 12,311.90 (FURS brochure on business income, section 3.1). A previous year with no trading counts as zero revenue (art. 6(14)), so a business that starts in 2026 passes the entry test unless art. 6(8) and (9) add other revenue. The pro rata adjustment does not apply if, in the 18 months before the election, the s.p. set up a company, transformed the business or took over a business; then the revenue of that company or business counts too (art. 6(8) and (9)). The old ZDoh-2 art. 48(4) rule for new businesses (first year, and the second if trading started in the last six months of the first) does not apply for 2026: art. 6 applies notwithstanding ZDoh-2 art. 48, and art. 20 puts art. 6(4) in place of art. 48(4), so new businesses enter through art. 6(4) and (14) (ZPZR arts. 6(1), 20 and 21(2)).
+  - **Related persons.** Revenue of related persons counts toward the tests, unless the s.p. proves that meeting the normed-expense conditions was not the main reason, or one of the main reasons, for the set-up (art. 6(9) and (13)). The annual return discloses revenue from each related person and from any employer the s.p. also works for (art. 6(15)).
+  - **Election.** By 31 March of the year concerned; a new business elects within eight days of registration, and a late election is rejected (ZDavP-2 art. 308(1) to (3)). The election carries on each year unless the s.p. gives notice of leaving (art. 308(4)).
+- **Forced exit for 2026.** An s.p. must use actual expenses and keep full books for 2026 if the average revenue of 2024 and 2025 is over the same limits: EUR 120,000, EUR 50,000 or EUR 85,000 (ZPZR art. 6(13); ZDavP-2 art. 308(5)). The pro rata adjustment is for entry only: in the exit test a year with no trading counts as zero and part-year revenue is not scaled (art. 6(4), (13) and (14)). FURS's example: an s.p. registered on 1 June 2025, not full-time insured, with 2025 revenue of EUR 110,000 has a 2024 and 2025 average of EUR 55,000, over EUR 50,000, and must leave normed expenses for 2026 (FURS brochure on business income, section 3.6). The earlier exit rule for 2026 in ZDoh-2AB art. 23(b) (2025 revenue over EUR 60,000 or 30,000) does not apply for tax year 2026 (ZPZR art. 19).
+- **The tax.** The profit after normed expenses is taxed as a final tax (ZPZR art. 7(3)). If the s.p. was full-time self-insured for at least nine months of 2026 itself, the rate is 20% on a base up to EUR 72,000 and EUR 14,400 plus 35% of the base above that. Otherwise it is 20% up to EUR 33,000 and EUR 6,600 plus 35% above (art. 7(1)).
+- **ZIURS and the 6 December 2026 referendum.** FURS stated on 16 October 2026 that ZPZR currently governs entry to and exit from normed expenses for 2026. A separate act, ZIURS (the Act on Intervention Measures for the Development of Slovenia), also changes the normed-expense rules for 2026 and, if it enters into force, applies from 1 January 2026. The National Assembly has called a subsequent legislative referendum on ZIURS for Sunday 6 December 2026 (OdZIURS, Uradni list RS 1692/2026, point IV). FURS stated that if ZIURS does not enter into force, ZPZR stands for 2026 and FURS will issue decisions moving s.p.s that fail the ZPZR tests to actual expenses, with full books, for the whole of 2026 (FURS news, 16 October 2026). Check the FURS page before advising on 2026.
 - **Pointer only.** This skill does not cover business expenses, depreciation, reliefs or the s.p. against d.o.o. choice. Use [slovenia-tax-optimization](slovenia-tax-optimization.md) and [si-corporate-income-tax](si-corporate-income-tax.md), whose base rules ZDoh-2 art. 48(2) borrows.
 
 **Changes for 2025 and 2026.**
@@ -112,8 +120,9 @@ The band amounts and allowances are indexed each year by a ministerial rule if t
   - dropped the extra proof test for EU and EEA non-residents (art. 116).
 - **ZDoh-2AB, from tax year 2026:** it deletes art. 42(1), the special base for public servants and officials posted abroad, who were taxed only on the pay they would have received for the same work in Slovenia (ZDoh-2AB arts. 7 and 27(1); old text in the ZDoh-2 consolidated text NPB33).
 - **ZINR (Uradni list RS 40/25):** added the INR regime, applying from 5 March 2026 (ZINR art. 45).
+- **ZPZR (Uradni list RS 91/25, amended by ZPZR-A 32/26), from tax year 2026:** replaced the normed-expense entry and exit tests with two-year average revenue tests of EUR 120,000, 85,000 and 50,000, replaced the 20% rate of art. 135.a with 20% up to a base of EUR 72,000 (EUR 33,000 if not full-time self-insured) and 35% above, and switched off ZDoh-2AB art. 23(b) for 2026 (ZPZR arts. 6, 7, 19 and 21(2)). ZPZR does not amend the ZDoh-2 text itself; it overrides it.
 
-The PISRS register lists no amendment to ZDoh-2 after ZINR as of 24 October 2026.
+The PISRS register lists no amendment to ZDoh-2 after ZINR as of 30 October 2026. ZPZR overrides arts. 48 and 135.a for 2026 without amending the ZDoh-2 text.
 
 **Foreign tax credit.** A resident deducts foreign tax on foreign income, up to the lower of the foreign tax actually paid and the Slovenian tax on that income. Under a treaty, the credit is capped at the treaty rate. Unused credit is lost (ZDoh-2 arts. 136, 137 and 140). Details are in [si-cross-border](si-cross-border.md).
 
@@ -127,7 +136,7 @@ The PISRS register lists no amendment to ZDoh-2 after ZINR as of 24 October 2026
 | Claim actual rent costs where the tenant withheld tax | by 28 February 2027 | ZDavP-2 art. 329.a(1) |
 | FURS decision on the 28 February returns | by 30 April | ZDavP-2 art. 330(2) |
 | s.p. annual tax return (davčni obračun) | by 31 March 2027 for 2026; balance due within 30 days of that date | ZDavP-2 arts. 297(2) and 301 |
-| s.p. election of normed expenses | by 31 March of the year concerned | ZDavP-2 art. 308 |
+| s.p. election of normed expenses | by 31 March of the year concerned; a new business within 8 days of registration | ZDavP-2 art. 308(1) and (2) |
 | FURS sends the informative calculation (informativni izračun) | by 31 May 2027 | ZDavP-2 art. 267(3) |
 | Objection (ugovor) to the informative calculation | within 15 days of delivery, with a corrected calculation | ZDavP-2 art. 267(4) and (5) |
 | No informative calculation received by 15 June | file a return (napoved) by 31 July 2027 | ZDavP-2 art. 267(6) |
@@ -239,19 +248,25 @@ expected:
 
 1. Were you a Slovenian resident for the whole of 2026? If you arrived or left, on what dates, and were you under 40 when you started work here?
 2. What income did you have, by type? That means salary (main or secondary employer), contract work, s.p. business (actual or normed expenses), rent, dividends, interest, share or property sales, and any income from abroad.
-3. Who do you support, and for which months? Does the other parent claim any of the children?
-4. For each sale of shares or property: the purchase date and cost, the sale date and price, and whether you lived in the property.
-5. Has FURS delivered your informative calculation, and on what date? The 15-day objection period runs from delivery.
-6. Did you pay tax abroad on any income? Do you have the foreign tax certificates?
+3. For an s.p. on normed expenses: revenue for 2024 and 2025 (and 2026), the months of each year you traded, and whether you were full-time self-insured for at least nine months in each of 2024, 2025 and 2026. These set the entry test and the 72,000 or 33,000 band.
+4. Who do you support, and for which months? Does the other parent claim any of the children?
+5. For each sale of shares or property: the purchase date and cost, the sale date and price, and whether you lived in the property.
+6. Has FURS delivered your informative calculation, and on what date? The 15-day objection period runs from delivery.
+7. Did you pay tax abroad on any income? Do you have the foreign tax certificates?
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
 | Personal Income Tax Act (ZDoh-2), unofficial consolidated text NPB36 up to ZINR (Uradni list RS 40/25): arts. 37, 41, 42, 46 to 48, 59, 77 to 80, 96 to 98, 104.a to 104.c, 111 to 123, 127, 128, 130 to 140 | https://pisrs.si/pregledPredpisa?id=ZAKO4697 | 2026-10-24 |
-| PISRS register entry for ZDoh-2 (amendment list, last entry 40/25 ZINR) | https://pisrs.si/api/rezultat/zbirka/id/ZAKO4697 | 2026-10-24 |
-| ZDoh-2AB, Uradni list RS 104/24 (amendments; arts. 23, 26 and 27 on transition and start dates) | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2024-01-3309 | 2026-10-24 |
+| PISRS register entry for ZDoh-2 (amendment list, last entry 40/25 ZINR) | https://pisrs.si/api/rezultat/zbirka/id/ZAKO4697 | 2026-10-30 |
+| ZDoh-2AB, Uradni list RS 104/24 (amendments; arts. 23, 26 and 27 on transition and start dates; art. 23(b) not applied for 2026 under ZPZR art. 19) | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2024-01-3309 | 2026-10-30 |
+| Act on the Right to a Winter Allowance and the Reform of Normed Expenses (ZPZR), Uradni list RS 91/25 as amended by ZPZR-A 32/26, unofficial consolidated text NPB 1: arts. 6, 7, 19, 20 and 21 | https://pisrs.si/pregledPredpisa?id=ZAKO9359 | 2026-10-30 |
+| PISRS register entry for ZPZR (in force; amendments 91/25 and ZPZR-A 32/26) | https://pisrs.si/api/rezultat/zbirka/id/ZAKO9359 | 2026-10-30 |
+| Decree calling the subsequent legislative referendum on ZIURS (OdZIURS), Uradni list RS 1692/2026 of 16 October 2026, point IV (vote on Sunday 6 December 2026) | https://pisrs.si/api/uradni-list/objava/u20261692.pdf | 2026-10-30 |
+| FURS news, normed expenses in 2026 and ZIURS (16 October 2026) | https://www.gov.si/novice/2026-10-16-ugotavljanje-davcne-osnove-z-normiranimi-odhodki-v-letu-2026-v-povezavi-z-interventnim-zakonom-ziurs/ | 2026-10-30 |
 | FURS, notice of the 2026 income tax scale and allowances (15 December 2025, under the Pravilnik in Uradni list RS 104/25) | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx | 2026-10-24 |
+| FURS, Brošura o dohodku iz dejavnosti (16th edition, April 2026): section 3.1 (entry after part years, pro rata limit example), section 3.6 (exit, zero-revenue year example), and its note that ZPZR art. 6 replaces ZDoh-2 art. 48 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Dohodek_iz_dejavnosti/Opis/Brosura_o_dohodku_iz_dejavnosti.doc | 2026-10-30 |
 | FURS, annual income tax assessment page | https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/dohodnina/letna_odmera_dohodnine/ | 2026-10-24 |
 | ZDoh-2, unofficial consolidated text NPB33 (up to ZORZFS, before ZDoh-2AB): old art. 42(1) | https://pisrs.si/api/datoteke/integracije/9340577 (NPB 33 version in the PISRS register for ZAKO4697) | 2026-10-24 |
 | Individual Investment Accounts Act (ZINR), Uradni list RS 40/25: art. 45 (entry into force and start of application) | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-1572 | 2026-10-24 |
@@ -260,6 +275,26 @@ expected:
 | ECB key interest rates (main refinancing rate 2.15% from 11 June 2025, 2.40% from 17 June 2026) | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-24 |
 | Social Security Contributions Act (ZPSV) art. 1 and arts. 8 to 13 rates, and Long-Term Care Act (ZDOsk-1) arts. 51(2), 56 and 56.a(1), for the example contribution rates and their deduction | https://pisrs.si/pregledPredpisa?id=ZAKO984 and https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-24 |
 | Health Care and Health Insurance Act (ZZVZZ) art. 48 (OZP), and FURS self-employed contribution tables SZ 1/2026 and SZ 3/2026 for the OZP of EUR 37.17 and EUR 39.36 | https://pisrs.si/pregledPredpisa?id=ZAKO213 and https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/prispevki_za_socialno_varnost/osnove_za_placilo_ter_zneski_prispevkov_za_socialno_varnost/ | 2026-10-24 |
-| Tax Procedure Act (ZDavP-2), unofficial consolidated text up to ZDavP-2P (Uradni list RS 100/25) and decision U-I-148/25: arts. 63, 64, 66, 95, 96, 267 to 277, 283, 297 to 301, 308, 325 to 330, 394 to 397 | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-24 |
+| Tax Procedure Act (ZDavP-2), unofficial consolidated text up to ZDavP-2P (Uradni list RS 100/25) and decision U-I-148/25: arts. 63, 64, 66, 95, 96, 267 to 277, 283, 297 to 301, 308, 325 to 330, 394 to 397 (art. 308 re-read 2026-10-30) | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-24 |
 
-Not yet confirmed: FURS practice on whether "total income" for the allowance taper is gross pay (the reading used here, from arts. 37 and 111(3) and the FURS monthly table, which uses gross pay). The eDavki form codes Doh-KDVP and Doh-Div, which are FURS names and are not in the statute. The 2027 indexation, not yet published.
+Not yet confirmed: FURS practice on whether "total income" for the allowance taper is gross pay (the reading used here, from arts. 37 and 111(3) and the FURS monthly table, which uses gross pay). The eDavki form codes Doh-KDVP and Doh-Div, which are FURS names and are not in the statute. The 2027 indexation, not yet published. The content of ZIURS and whether it enters into force: it goes to a referendum on 6 December 2026, and if it enters into force it changes the 2026 normed-expense rules from 1 January 2026 (FURS, 16 October 2026); its text was not read.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

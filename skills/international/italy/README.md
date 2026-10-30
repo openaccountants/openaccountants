@@ -14,19 +14,19 @@ Calendar tax year for individuals; companies are taxed on their financial year. 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | it-irpef-employees (employees, pensioners, investment and rental income), it-income-tax (self-employed, regime ordinario), it-regime-forfettario (flat-rate regime), it-estimated-tax, it-impatriati, italy-crypto-tax | source-cited draft |
-| IT-CORP, corporate income tax | it-ires-corporate-tax; it-irap covers the regional tax on companies | source-cited draft |
-| VAT | italy-vat-return (2026 rates and Tabella A, monthly or quarterly settlement, LIPE, reverse charge, split payment, esterometro, penalties and ravvedimento), it-dichiarazione-iva-annuale (annual return, December acconto, credits and refunds). Out of scope: margin scheme, VAT groups, agriculture regime, OSS returns | source-cited draft |
-| SC, social contributions | it-inps-contributions (gestione separata in full, with the 2026 headline figures for artigiani and commercianti), it-inps-artigiani-commercianti (artigiani, commercianti and the professional funds); employee and employer INPS and INAIL in it-employer-contributions | source-cited draft |
-| PR, payroll withholding | italy-payroll (IRPEF withholding, payslip, CU, F24), it-employer-contributions (employer and employee INPS by sector, INAIL, TFR and the Fondo di Tesoreria, cost of an employee) | source-cited draft |
-| TP, transfer pricing | italy-transfer-pricing | source-cited draft |
-| XB, cross-border | it-cross-border (hub), it-impatriati | source-cited draft |
+| IT-IND, individual income tax | it-irpef-employees (employees, pensioners, investment and rental income), it-income-tax (self-employed, regime ordinario), it-regime-forfettario (flat-rate regime), it-estimated-tax, it-impatriati, italy-crypto-tax | sourced from the law |
+| IT-CORP, corporate income tax | it-ires-corporate-tax; it-irap (who pays since 2022, rates and 2026 surcharges, base by entity type, staff and flat deductions, return, acconti, penalties, multi-region split) | sourced from the law |
+| VAT | italy-vat-return (2026 rates and Tabella A, monthly or quarterly settlement, LIPE, reverse charge, split payment, esterometro, penalties and ravvedimento), it-dichiarazione-iva-annuale (annual return, December acconto, credits and refunds). Out of scope: margin scheme, VAT groups, agriculture regime, OSS returns | checked against the law |
+| SC, social contributions | it-inps-contributions (gestione separata in full, with the 2026 headline figures for artigiani and commercianti), it-inps-artigiani-commercianti (artigiani, commercianti and the professional funds); employee and employer INPS and INAIL in it-employer-contributions | checked against the law |
+| PR, payroll withholding | italy-payroll (IRPEF withholding and conguaglio, cuneo fiscale, 2026 substitute taxes, fringe benefits, employee INPS, TFR, payslip, CU, 770, F24), it-employer-contributions (employer and employee INPS by sector, INAIL, TFR and the Fondo di Tesoreria, cost of an employee) | checked against the law |
+| TP, transfer pricing | italy-transfer-pricing | sourced from the law |
+| XB, cross-border | it-cross-border (hub), it-impatriati | sourced from the law |
 
 ## Official sources
 
 - TUIR, D.P.R. 917/1986 (income taxes, to 31 December 2026): https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917 (read 2026-10-22)
 - D.Lgs. 117/2026, new income tax code from 1 January 2027: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117 (read 2026-10-22)
-- D.Lgs. 446/1997 (IRAP): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446 (read 2026-06-30, see it-irap)
+- D.Lgs. 446/1997 (IRAP): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446 (read 2026-10-27, see it-irap)
 - D.P.R. 600/1973 (assessment and withholding): https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600 (read 2026-10-22)
 - L. 190/2014, art. 1, commi 54-89 (regime forfettario, to 31 December 2026): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 (read 2026-10-22)
 - INPS Circolare n. 14 of 9 February 2026 (artigiani and commercianti, 2026): https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf (read 2026-10-22)

@@ -3,7 +3,7 @@
 Every tax skill in this repository, in the open [Agent Skills](https://agentskills.io) format: one folder, one `SKILL.md`, with a `name`, a `description` that tells the AI when to use it, and the method. Install a country and your AI knows how that country's income tax, VAT or GST, payroll, company formation and cross-border rules work, every time the topic comes up.
 
 <!-- oa-skills-stats:start -->
-**2,068 skills** across **273 jurisdictions**. 33 are accountant-reviewed (a named accountant in `metadata.reviewed_by`); the other 2,035 are source-cited drafts.
+**2,115 skills** across **273 jurisdictions**. 33 are accountant-reviewed (a named accountant in `metadata.reviewed_by`); the other 2,082 are tier 2 (checked against the law, or sourced from the law).
 <!-- oa-skills-stats:end -->
 
 > General reference only, not advice on your situation. Confirm with a qualified professional in the relevant jurisdiction before you file, pay or amend.
@@ -49,10 +49,13 @@ Every `SKILL.md` ends with where its current version lives, so an AI with both i
 
 ## What a skill is, and who stands behind it
 
-A skill sets out the method for one tax task in one jurisdiction: scope, the order of operations, the figures with their official sources, the edge cases, the self-checks. `metadata` in each file carries the jurisdiction, tax year, last update, the author line and the review status. There are exactly two quality states (see [docs/QUALITY-TIERS.md](../docs/QUALITY-TIERS.md)):
+A skill sets out the method for one tax task in one jurisdiction: scope, the order of operations, the figures with their official sources, the edge cases, the self-checks. `metadata` in each file carries the jurisdiction, tax year, last update, the author line and the review status. There are exactly two tiers, and tier 2 has two names (see [docs/QUALITY-TIERS.md](../docs/QUALITY-TIERS.md)):
 
 - **Accountant-reviewed:** a named licensed accountant reviewed the whole skill; their name is in `metadata.reviewed_by`.
-- **Source-cited draft:** written from official sources, every figure cited, not yet reviewed by an accountant. An `authored_by` line says who wrote it; it is not a review.
+- **Checked against the law:** built to the standard in docs/skill-template.md, every figure cited to the law and checked against the statute by an independent review before merge; no accountant has signed it off yet.
+- **Sourced from the law:** an older skill not yet rebuilt to the standard, every figure cited to an official source; no accountant has signed it off yet.
+
+An `authored_by` line says who wrote a skill; it is not a review.
 
 Nothing here is a sign-off on a figure. The official source cited next to each figure is the authority on the number.
 

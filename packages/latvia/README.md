@@ -7,17 +7,21 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `latvia-income-tax.md`
-4. `latvia-payroll.md`
-5. `latvia-social-contributions.md`
-6. `latvia-tax-optimization.md`
-7. `latvia-vat-return.md`
-8. `lv-company-formation.md`
-9. `lv-corporate-income-tax.md`
-10. `lv-tax-overview.md`
-11. `eu-vat-directive.md`
-12. `payroll-workflow-base.md`
-13. `company-formation-workflow-base.md`
+3. `README.md`
+4. `latvia-income-tax.md`
+5. `latvia-payroll.md`
+6. `latvia-social-contributions.md`
+7. `latvia-tax-optimization.md`
+8. `latvia-vat-return.md`
+9. `lv-company-formation.md`
+10. `lv-corporate-income-tax.md`
+11. `lv-cross-border.md`
+12. `lv-tax-overview.md`
+13. `lv-transfer-pricing.md`
+14. `eu-vat-directive.md`
+15. `payroll-workflow-base.md`
+16. `company-formation-workflow-base.md`
+17. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

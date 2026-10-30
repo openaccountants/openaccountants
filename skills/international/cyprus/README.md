@@ -14,13 +14,13 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | cyprus-income-tax (2026 bands with the EUR 22,000 tax-free band, exempt dividends and interest, the 20%, 25% and 50% exemptions for new arrivals, the one-fifth cap, the child, housing and green deductions with their family income caps, special 8% and 5% rates, SDC from 2026, filing duty, deadlines, provisional tax, penalties and interest) | source-cited draft |
-| IT-CORP, corporate income tax | cy-corporate-tax | source-cited draft |
-| VAT | cyprus-vat-return (2026 rates including the temporary 0% on basic goods into 2027, registration, the return boxes, VIES, domestic reverse charge, property, partial exemption, cash accounting and SME-SS, penalties) | source-cited draft |
-| SC, social contributions | cyprus-social-contributions | source-cited draft |
-| PR, payroll withholding | cyprus-payroll | source-cited draft |
-| TP, transfer pricing | cy-transfer-pricing, including the OECD Chapter X method for intra-group loans, back-to-back financing, guarantees and cash pools, the Tax Department's minimum documentation and safe harbours below the local file threshold (Circulars 6/2023 and 5/2026) and the CUP method for back-to-back financing (Circular 7/2023) | source-cited draft |
-| XB, cross-border | cy-cross-border (residence, non-residents, withholding, leaving); cy-non-dom for domicile and SDC | source-cited draft |
+| IT-IND, individual income tax | cyprus-income-tax (2026 bands with the EUR 22,000 tax-free band, exempt dividends and interest, the 20%, 25% and 50% exemptions for new arrivals, the one-fifth cap, the child, housing and green deductions with their family income caps, special 8% and 5% rates, SDC from 2026, filing duty, deadlines, provisional tax, penalties and interest) | checked against the law |
+| IT-CORP, corporate income tax | cy-corporate-tax | checked against the law |
+| VAT | cyprus-vat-return (2026 rates including the temporary 0% on basic goods into 2027, registration, the return boxes, VIES, domestic reverse charge, property, partial exemption, cash accounting and SME-SS, penalties) | checked against the law |
+| SC, social contributions | cyprus-social-contributions (2026: Social Insurance 8.8% + 8.8%, 16.6% self-employed on the 16 Table I occupational category minimums (EUR 220.76 basic insurable earnings) or on actual earnings under Reg. 17, voluntary rates, the EUR 5,742 / 1,325 maximum insurable earnings, the 2026 self-employed quarters and their 10 May, 10 August, 10 November and 10 February due dates, GHS 2.65%, 2.90% and 4.00% with the EUR 180,000 maximum and its order, employer funds, the self-employed HRDA 0.5% from 5 January 2026, payment, registration, late charges of 3% to 27% for employers and the self-employed) | sourced from the law |
+| PR, payroll withholding | cyprus-payroll (2026 PAYE from the T.D.59A with the EUR 22,000 band, the one-fifth cap, first-employment deductions, the 12 or 13 divisor, employee and employer contributions, minimum wage, monthly and annual PAYE returns, the 1% surcharge) | checked against the law |
+| TP, transfer pricing | cy-transfer-pricing, including the OECD Chapter X method for intra-group loans, back-to-back financing, guarantees and cash pools, the Tax Department's minimum documentation and safe harbours below the local file threshold (Circulars 6/2023 and 5/2026) and the CUP method for back-to-back financing (Circular 7/2023) | checked against the law |
+| XB, cross-border | cy-cross-border (residence, non-residents, withholding, leaving); cy-non-dom for domicile and SDC | sourced from the law |
 
 ## Official sources
 
@@ -37,4 +37,8 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 - OECD Transfer Pricing Guidelines 2022, Chapter X (financial transactions): https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/oecd-transfer-pricing-guidelines-for-multinational-enterprises-and-tax-administrations-2022_57104b3a/0e655865-en.pdf (read 2026-10-23)
 - VAT Law 95(I)/2000, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html (read 2026-10-24)
 - VAT orders Κ.Δ.Π. 337/2025, 168/2026, 354/2026 and 362/2026 (temporary 0% on basic goods): https://www.cylaw.org/KDP/data/2025_1_337.pdf, https://www.cylaw.org/KDP/data/2026_1_168.pdf, https://www.cylaw.org/KDP/data/2026_1_354.pdf, https://www.cylaw.org/KDP/data/2026_1_362.pdf (read 2026-10-24)
+- Social Insurance Law 59(I)/2010 and General Healthcare System Law 89(I)/2001, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/2010_1_59/full.html, https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html (read 2026-10-26)
+- Social Insurance Services, 2026 maximum insurable earnings: https://sisweb.mlsi.gov.cy/anotato2025/ (read 2026-10-26)
+- Social Insurance (Contributions) Regulations 2010, K.D.P. 289/2010, Regs 16 to 22 and Tables I and II: https://www.cylaw.org/KDP/data/2010_1_289.pdf (read 2026-10-29)
+- Social Insurance Services, 2026 self-employed categories (Table I) and quarterly contribution amounts: https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/E3FAA841210065C3C2258E37002C0420?OpenDocument, https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/CC73852B37301B20C2258E37002C21E4?OpenDocument (read 2026-10-29)
 - Tax Department: https://www.gov.cy/tax/ (read 2026-10-22)

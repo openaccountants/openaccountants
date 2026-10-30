@@ -1,0 +1,68 @@
+{
+  "checked_utc": "2026-10-26T21:41:20.080Z",
+  "kind": "writer delta verification; independent review pending",
+  "baseline_commit": "9541fed2a60a14cdf38730fe5bac30a9b6877264",
+  "checks": [
+    {
+      "check": 0,
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "509a29",
+          "wall_time_seconds": 0.236421208,
+          "exit_code": 0,
+          "original_token_count": 15,
+          "output": "checked 12 files, 88 oa-check blocks, 0 failures, 0 missing\n"
+        }
+      }
+    },
+    {
+      "check": 1,
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "7e2701",
+          "wall_time_seconds": 1.055057916,
+          "exit_code": 0,
+          "original_token_count": 21,
+          "output": "Sync integrity checked 10 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n"
+        }
+      }
+    },
+    {
+      "check": 2,
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "dfaff1",
+          "wall_time_seconds": 0.611878,
+          "exit_code": 0,
+          "original_token_count": 49,
+          "output": "changed-only mode: validating 46 changed guide file(s)\nchecked 10 guides (24 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n"
+        }
+      }
+    },
+    {
+      "check": 3,
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "da8ef1",
+          "wall_time_seconds": 0.156312709,
+          "exit_code": 0,
+          "original_token_count": 89,
+          "output": "2\t2\tskills/international/armenia/am-corporate-income-tax.md\n29\t3\tskills/international/armenia/armenia-income-tax.md\n11\t2\tskills/international/armenia/armenia-payroll.md\n3\t3\tskills/research/armenia-2026/preservation-check.json\n8\t8\tskills/research/armenia-2026/recovered-candidate-validation.json\n44\t0\tskills/research/armenia-2026/supplementary-examples.md\n"
+        }
+      }
+    }
+  ],
+  "original_blocks_byte_identical": 51,
+  "legacy_protected_metadata_and_cta_sets": 8,
+  "examples": 88,
+  "repository_tests": {
+    "commit": "9541fed2a60a14cdf38730fe5bac30a9b6877264",
+    "passed": 129,
+    "rerun_for_content_delta": false
+  },
+  "published": false
+}

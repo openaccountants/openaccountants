@@ -3,14 +3,14 @@ name: ie-preliminary-tax
 description: "Irish preliminary tax for individuals in income tax self-assessment, tax year 2026, under Chapter 7 of Part 41A of the Taxes Consolidation Act 1997 (ss.959AM to 959AP) as amended by Finance Act 2025 s.100. Covers who pays (chargeable persons filing Form 11), what it covers (income tax, USC, PRSI), the three safe harbours (90% of 2026, 100% of 2025, 105% of 2024 for direct debit payers only), first-year nil, the 31 October 2026 date and the ROS extension to 18 November 2026, monthly direct debit, the backdating of the whole liability to 31 October and interest at 0.0219% a day, the late return surcharge, and Form 11 pay and file. Trigger on 'preliminary tax Ireland', '90% rule', '100% rule', '105% direct debit', 'pay and file', 'preliminary tax interest'. Out of scope: company preliminary tax (ie-corporation-tax), computing the Form 11 liability (ie-income-tax-form11), USC (ie-usc), PRSI (ie-prsi-class-s), CGT (ie-cgt)."
 version: 2.1
 jurisdiction: IE
-category: international
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-26
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

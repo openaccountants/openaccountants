@@ -1,0 +1,364 @@
+{
+  "initial_guide_blocks": 51,
+  "current_guide_blocks": 14,
+  "supplementary_blocks": 37,
+  "controls": [
+    {
+      "source_file": "am-corporate-income-tax.md",
+      "index": 0,
+      "name": "Armenia ordinary corporate book to tax bridge",
+      "kept_in_guide": true,
+      "markdown_sha256": "323ff44021b3c50a08f1a66110e40047a1c2a531892cf7580fb2c5011f54b9d0"
+    },
+    {
+      "source_file": "am-corporate-income-tax.md",
+      "index": 1,
+      "name": "Armenia representation ordinary and registration year",
+      "kept_in_guide": false,
+      "markdown_sha256": "4a6edbdbf144226b42cf44e1545e21eca1fa78950f0b1753c0a22b106276a6c0"
+    },
+    {
+      "source_file": "am-corporate-income-tax.md",
+      "index": 2,
+      "name": "Armenia production asset months and small asset",
+      "kept_in_guide": false,
+      "markdown_sha256": "351eeeb6612ea5156822d940a269bfa026ff7ecfa98b7ab0cb69956c4ea2d5e5"
+    },
+    {
+      "source_file": "am-corporate-income-tax.md",
+      "index": 3,
+      "name": "Armenia loss aging and oldest first use",
+      "kept_in_guide": true,
+      "markdown_sha256": "44ad969b094e8787fe0844acfd89012c6f7cf70fa8ac4b82c95df72ec676ad05"
+    },
+    {
+      "source_file": "am-corporate-income-tax.md",
+      "index": 4,
+      "name": "Armenia quarterly advance lower of statutory limbs",
+      "kept_in_guide": false,
+      "markdown_sha256": "7a797b878e9adce9e812fb84396ea35b9a98158ed23c1a32ba2efa823e909375"
+    },
+    {
+      "source_file": "am-corporate-income-tax.md",
+      "index": 5,
+      "name": "Armenia conditional interest rate and equity amount limits",
+      "kept_in_guide": false,
+      "markdown_sha256": "f5f1898b56d6f716c6148bbc5fc2006555ec43a77e4e42c08685d745fd11bcd0"
+    },
+    {
+      "source_file": "am-corporate-income-tax.md",
+      "index": 6,
+      "name": "Armenia general donation gross income cap",
+      "kept_in_guide": false,
+      "markdown_sha256": "f960a8d7feb5c6a1b6e5b381b1c000f8a972735670fd8a72ebae99565f8bd65d"
+    },
+    {
+      "source_file": "am-cross-border.md",
+      "index": 0,
+      "name": "Armenia corporate royalty gross withholding",
+      "kept_in_guide": true,
+      "markdown_sha256": "1ff77797feb186b8c45d59371fdf13edf894facfd1bbb793070ca5fdcb1732d8"
+    },
+    {
+      "source_file": "am-cross-border.md",
+      "index": 1,
+      "name": "Armenia conditional consultancy net guarantee",
+      "kept_in_guide": false,
+      "markdown_sha256": "70968cdc8ace69ebb84658fc3b2f6c378c9f4d9e4e9999ffc927bd365f4a54a4"
+    },
+    {
+      "source_file": "am-cross-border.md",
+      "index": 2,
+      "name": "Armenia established dividend decision tax event",
+      "kept_in_guide": false,
+      "markdown_sha256": "a7e4f4fab6c8e7d60fd1f7d3df6665214b35a15e68a52aaa5d13340fe4af4ee5"
+    },
+    {
+      "source_file": "am-cross-border.md",
+      "index": 3,
+      "name": "Armenia foreign object tax credit limitation",
+      "kept_in_guide": true,
+      "markdown_sha256": "3a16fba6d2434051118006226eab7c2818b5c3abca1125ea561ea9c2ca381e7c"
+    },
+    {
+      "source_file": "am-cross-border.md",
+      "index": 4,
+      "name": "Armenia eligible foreign credit annual liability carryforward",
+      "kept_in_guide": false,
+      "markdown_sha256": "a14ed3140f29bce6f205669899632239d54553e19bc320c7462fe929f7c31477"
+    },
+    {
+      "source_file": "am-cross-border.md",
+      "index": 5,
+      "name": "Armenia PE and non attributed income separation",
+      "kept_in_guide": false,
+      "markdown_sha256": "e28842cc4ff0e92c82eb4e3a803bd11484f9b51a28081e96ac8e2b29545a8a7b"
+    },
+    {
+      "source_file": "am-transfer-pricing.md",
+      "index": 0,
+      "name": "Armenia separate TP application and notification populations",
+      "kept_in_guide": false,
+      "markdown_sha256": "30d1f177a5b62b17c31f95f5360b19d7f476ddbd0bf27512e94e3ca21a78f8fd"
+    },
+    {
+      "source_file": "am-transfer-pricing.md",
+      "index": 1,
+      "name": "Armenia CUP revenue bridge",
+      "kept_in_guide": true,
+      "markdown_sha256": "e9c4319a0ba5b62dc94d8735dadd97a3755d40e806348adbbb22f46412a84140"
+    },
+    {
+      "source_file": "am-transfer-pricing.md",
+      "index": 2,
+      "name": "Armenia cost plus remuneration",
+      "kept_in_guide": false,
+      "markdown_sha256": "8c3b08ca36fdf68cb5a807c188e69298a874196e5ff85295705e1935f3fc6c31"
+    },
+    {
+      "source_file": "am-transfer-pricing.md",
+      "index": 3,
+      "name": "Armenia resale gross sales margin",
+      "kept_in_guide": false,
+      "markdown_sha256": "713d20bc5bfd7bd2234f54c8e936b188a8dfbb0757086cee96bcfd280153ff66"
+    },
+    {
+      "source_file": "am-transfer-pricing.md",
+      "index": 4,
+      "name": "Armenia statutory eight observation range and net margin",
+      "kept_in_guide": true,
+      "markdown_sha256": "cb8f19870187c0472e723fc2e8c64e601b97bcc20ca0e51ca17976452d29d6f1"
+    },
+    {
+      "source_file": "am-transfer-pricing.md",
+      "index": 5,
+      "name": "Armenia conditional full year loan interest comparison",
+      "kept_in_guide": false,
+      "markdown_sha256": "e8804a4c8914e5efd66d83f944dda70b1d7a62b2dbf7fd75f7ed00ef84c61d12"
+    },
+    {
+      "source_file": "am-transfer-pricing.md",
+      "index": 6,
+      "name": "Armenia documentation sanction base",
+      "kept_in_guide": false,
+      "markdown_sha256": "f7123d77dce2ed24d9fc7958de1b8c4249f9d07e41cc747eb6811151b9d2356a"
+    },
+    {
+      "source_file": "armenia-income-tax.md",
+      "index": 0,
+      "name": "Armenia ordinary salary PIT only",
+      "kept_in_guide": true,
+      "markdown_sha256": "e12a390a8a1da2a12d3a17df8165ca6bc3912a97470c002f02c7dd2473a3fb80"
+    },
+    {
+      "source_file": "armenia-income-tax.md",
+      "index": 1,
+      "name": "Armenia personal interest category rates",
+      "kept_in_guide": false,
+      "markdown_sha256": "0d0a906c281d9f463c7d64a7d5a75c5d280c3766e9a01ba276f194819d31162e"
+    },
+    {
+      "source_file": "armenia-income-tax.md",
+      "index": 2,
+      "name": "Armenia annual rental excess and prior withholding",
+      "kept_in_guide": true,
+      "markdown_sha256": "acda0995e97a9c9dca5b635f03485a97a3b25132de7f55f73929fe684818f44f"
+    },
+    {
+      "source_file": "armenia-income-tax.md",
+      "index": 3,
+      "name": "Armenia royalty and dividend categories",
+      "kept_in_guide": false,
+      "markdown_sha256": "0167975b318e9f7d63cbfc34a542f9293d2956edd08a8cf4b341c7c8bf42a238"
+    },
+    {
+      "source_file": "armenia-income-tax.md",
+      "index": 4,
+      "name": "Armenia established ordinary taxable property income",
+      "kept_in_guide": false,
+      "markdown_sha256": "915e586ae76f29e3b0c83df90efbfa74112cae767403c72eb4f63fb258f3cd0d"
+    },
+    {
+      "source_file": "armenia-income-tax.md",
+      "index": 5,
+      "name": "Armenia foreign personal income tax object cap",
+      "kept_in_guide": false,
+      "markdown_sha256": "62b792bcdf93a71b1bf73a069fde5ed97e8c29f9be709baace1b8c299602e2ca"
+    },
+    {
+      "source_file": "armenia-income-tax.md",
+      "index": 6,
+      "name": "Armenia eligible PIT credit annual liability carry",
+      "kept_in_guide": false,
+      "markdown_sha256": "10fcdbd20edbf565c08de60edd22bf4eef858f94076a9555bcd19ddef90e63ef"
+    },
+    {
+      "source_file": "armenia-payroll.md",
+      "index": 0,
+      "name": "Armenia ordinary salary 300000 net due",
+      "kept_in_guide": true,
+      "markdown_sha256": "bc1144b8bcd08c45a2a7e4c1afa9cbb68a221a42676fdb38a19d46649b339a37"
+    },
+    {
+      "source_file": "armenia-payroll.md",
+      "index": 1,
+      "name": "Armenia ordinary salary upper pension health limbs",
+      "kept_in_guide": false,
+      "markdown_sha256": "b35cee734c4053b2a00f92ea3625f23e685cd93d4a494685a8bb19ddf3be12fc"
+    },
+    {
+      "source_file": "armenia-payroll.md",
+      "index": 2,
+      "name": "Armenia salary cap and high stamp",
+      "kept_in_guide": false,
+      "markdown_sha256": "8ad20a5a74dc62d10230cc60bd7ece6edeef1918cee5317a456ab1bac69d81b4"
+    },
+    {
+      "source_file": "armenia-payroll.md",
+      "index": 3,
+      "name": "Armenia established nonparticipant pension branch",
+      "kept_in_guide": false,
+      "markdown_sha256": "54740d2049972e0f218cd1b33301883fbdf3cb432003d1acbd9cb4a0f433c174"
+    },
+    {
+      "source_file": "armenia-payroll.md",
+      "index": 4,
+      "name": "Armenia health entry following month salary comparison",
+      "kept_in_guide": true,
+      "markdown_sha256": "72469bb85c061e62a79ba982e14c9b61b9e909d4d8b9bb3dad148e3e2e0ed8ce"
+    },
+    {
+      "source_file": "armenia-payroll.md",
+      "index": 5,
+      "name": "Armenia accrued salary and unpaid net reconciliation",
+      "kept_in_guide": false,
+      "markdown_sha256": "44a8cba823a66d47cbda36f5902c4831eb78dd49895297a268b25ffcee7b7765"
+    },
+    {
+      "source_file": "armenia-payroll.md",
+      "index": 6,
+      "name": "Armenia voluntary pension published form inverse base limit",
+      "kept_in_guide": false,
+      "markdown_sha256": "d2bdffb551cfa129a36646ea4efd0e016e1bb69bd0a18d44ea9709d70621fc8d"
+    },
+    {
+      "source_file": "armenia-social-contributions.md",
+      "index": 0,
+      "name": "Armenia ordinary mandatory pension two limbs",
+      "kept_in_guide": true,
+      "markdown_sha256": "8533b2c017001fd62fb50839fa2597f842fdc1ed8c9c84d595f3f7b12052b529"
+    },
+    {
+      "source_file": "armenia-social-contributions.md",
+      "index": 1,
+      "name": "Armenia ordinary monthly pension cap",
+      "kept_in_guide": false,
+      "markdown_sha256": "e4189f4bf8eda8cf4fc4cf04a83553ea202f4f9136761b34b93dbdf5172ec379"
+    },
+    {
+      "source_file": "armenia-social-contributions.md",
+      "index": 2,
+      "name": "Armenia elected pension participant five percent branch",
+      "kept_in_guide": false,
+      "markdown_sha256": "593f1164d7f07960c9bcd983bc8dae160205d325bf1f9e242dbb90d521bb923b"
+    },
+    {
+      "source_file": "armenia-social-contributions.md",
+      "index": 3,
+      "name": "Armenia business pension distinct actual and turnover cases",
+      "kept_in_guide": false,
+      "markdown_sha256": "0349875a4493876e6998f15e2b5ff541830e88aa8a3439a3a5aaddd23f41db85"
+    },
+    {
+      "source_file": "armenia-social-contributions.md",
+      "index": 4,
+      "name": "Armenia employer funded childcare pension",
+      "kept_in_guide": false,
+      "markdown_sha256": "87f8ac8864f595f51a2692acccdb6cc018e958321a71c8a89a3612b1fd8acf68"
+    },
+    {
+      "source_file": "armenia-social-contributions.md",
+      "index": 5,
+      "name": "Armenia monthly stamp threshold discontinuity",
+      "kept_in_guide": false,
+      "markdown_sha256": "760feb2200362a78b7c029cb2735ad98793db79e3bb77406ba3381a15ee4feb9"
+    },
+    {
+      "source_file": "armenia-social-contributions.md",
+      "index": 6,
+      "name": "Armenia continuing health payer lower salary funding",
+      "kept_in_guide": true,
+      "markdown_sha256": "0c61378eb9508759658eddec48e1700a83b8f2231cba7f5d620b5c868d7f9ac7"
+    },
+    {
+      "source_file": "armenia-social-contributions.md",
+      "index": 7,
+      "name": "Armenia social package health funding separate self payment",
+      "kept_in_guide": false,
+      "markdown_sha256": "45045fe3ea5eb6fcff286f23291fb4861a967c6f960d21d34ef32a31160b4d96"
+    },
+    {
+      "source_file": "armenia-social-contributions.md",
+      "index": 8,
+      "name": "Armenia ordinary annual business pension cap",
+      "kept_in_guide": false,
+      "markdown_sha256": "f3bba07afeaf6f725d7e5878500d100e618b7ab9387f3a06d1d6c9f528c00fa2"
+    },
+    {
+      "source_file": "armenia-vat.md",
+      "index": 0,
+      "name": "Armenia ordinary VAT and separate negative balance",
+      "kept_in_guide": true,
+      "markdown_sha256": "f01143dac55791415a7921f4abdf85dee03c7dc88afd17d89539d2734161f076"
+    },
+    {
+      "source_file": "armenia-vat.md",
+      "index": 1,
+      "name": "Armenia statutory inclusive receipt calculation",
+      "kept_in_guide": false,
+      "markdown_sha256": "37c3af5da273b05b5e792af69acf27f0f8e8a437df222b0a2fd0757c82aa5461"
+    },
+    {
+      "source_file": "armenia-vat.md",
+      "index": 2,
+      "name": "Armenia late invoice confirmation separates recovery period",
+      "kept_in_guide": false,
+      "markdown_sha256": "42c51a238477c9f87098a1f5f463b1bcef95a9771f7c772368cf19a42260f2bc"
+    },
+    {
+      "source_file": "armenia-vat.md",
+      "index": 3,
+      "name": "Armenia import base and later paid recovery",
+      "kept_in_guide": true,
+      "markdown_sha256": "e3ebfd6ec23d978f2fd445a05590ed2c5dfb44ee1925309640eddc3c29aab355"
+    },
+    {
+      "source_file": "armenia-vat.md",
+      "index": 4,
+      "name": "Armenia EAEU filing payment and recovery month",
+      "kept_in_guide": false,
+      "markdown_sha256": "a3d14dfb37643a32eaeae61ab27ae0d2885a0c28c0f2543a77497be35504ca39"
+    },
+    {
+      "source_file": "armenia-vat.md",
+      "index": 5,
+      "name": "Armenia subsequent mixed use reversal",
+      "kept_in_guide": false,
+      "markdown_sha256": "ab75d1c6dea2d8f4eb1bbb77fd79086d9019beb2bc2924a5fefd22b4d7b9acfd"
+    },
+    {
+      "source_file": "armenia-vat.md",
+      "index": 6,
+      "name": "Armenia fixed asset subsequent non taxable period",
+      "kept_in_guide": false,
+      "markdown_sha256": "959cb079895feb8813e347889e93f2cfbc006e582ed9ea4d446ad8f1166a2158"
+    },
+    {
+      "source_file": "armenia-vat.md",
+      "index": 7,
+      "name": "Armenia foreign service agent output and timing branches",
+      "kept_in_guide": false,
+      "markdown_sha256": "d3ac83c10bf6cfb3bc10148f53c0300fc3a3ba317be9225eb3d491d3310f3451"
+    }
+  ]
+}

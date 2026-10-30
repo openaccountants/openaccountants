@@ -1,0 +1,207 @@
+{
+  "reviewed_original_commit": "96fe5f2a3510edfedfff145c24067fae15710203",
+  "targeted_commit": "b978b73efc342ce5a4888685a25a10f8cafe6035",
+  "registered_sources": [
+    {
+      "id": "company-modernisation",
+      "url": "https://legimonaco.mc/tnc/loi/2025/04-08-1.573",
+      "attempted_at_utc": "2026-10-24T16:09:19.894530+00:00",
+      "status": 200,
+      "bytes": 202104,
+      "sha256": "a7cad7b289c632aa93de9cec67d57ea16eb148c155e61aa1af4e5e011571d9d2",
+      "final_url": "https://legimonaco.mc/tnc/loi/2025/04-08-1.573/"
+    },
+    {
+      "id": "business-licensing",
+      "url": "https://legimonaco.mc/tnc/loi/1991/07-26-1.144/",
+      "attempted_at_utc": "2026-10-24T16:09:19.895407+00:00",
+      "status": 200,
+      "bytes": 73366,
+      "sha256": "e7488b2d85e731b81ff0e3e794b0a946e0d1e00e65a36567bb319df0872f3194",
+      "final_url": "https://legimonaco.mc/tnc/loi/1991/07-26-1.144/"
+    },
+    {
+      "id": "social-filing",
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/modalites-declaratives",
+      "attempted_at_utc": "2026-10-24T16:09:19.895563+00:00",
+      "status": 200,
+      "bytes": 74987,
+      "sha256": "8cf61b9876b7a31f8a69927483d44e3afcd018124df695fb433aa774bd55925c",
+      "final_url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/modalites-declaratives"
+    },
+    {
+      "id": "commerce-code",
+      "url": "https://legimonaco.mc/code/code-commerce/",
+      "attempted_at_utc": "2026-10-24T16:09:19.895771+00:00",
+      "status": 200,
+      "bytes": 1054641,
+      "sha256": "47fca706c0e6ff13fba678006d5a596488788bb7f6930f840e56e6b7797b5874",
+      "final_url": "https://legimonaco.mc/code/code-commerce/"
+    },
+    {
+      "id": "vat-code",
+      "url": "https://legimonaco.mc/code/code-taxes-chiffre-affaires",
+      "attempted_at_utc": "2026-10-24T16:09:19.895994+00:00",
+      "status": 200,
+      "bytes": 1946822,
+      "sha256": "9de66dd8b4f2f401511ede92ca7616fa85255b9b7d86aa8e0bd9c11c93ee3d75",
+      "final_url": "https://legimonaco.mc/code/code-taxes-chiffre-affaires/"
+    },
+    {
+      "id": "personal-government",
+      "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+      "attempted_at_utc": "2026-10-24T16:09:20.204046+00:00",
+      "status": 200,
+      "bytes": 597196,
+      "sha256": "d51e86f9dc10453538784e867af28dcf7814920bde84d89d484bb7984002df79",
+      "final_url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco"
+    },
+    {
+      "id": "france-personal-doctrine",
+      "url": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602",
+      "attempted_at_utc": "2026-10-24T16:09:20.300416+00:00",
+      "status": 200,
+      "bytes": 109179,
+      "sha256": "276e810935e37a095c07ff3cfff60eaf7331f950601db0f20344706b6d4dd754",
+      "final_url": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602"
+    },
+    {
+      "id": "social-october-2026.pdf",
+      "url": "https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+      "attempted_at_utc": "2026-10-24T16:09:20.550364+00:00",
+      "status": 200,
+      "bytes": 914791,
+      "sha256": "deb6d290c5abeb4065e42bf5b0520800c49559e01ac3f15c7fd45cfff867a2f9",
+      "final_url": "https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf"
+    },
+    {
+      "id": "self-employed",
+      "url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/cotisations",
+      "attempted_at_utc": "2026-10-24T16:09:20.571931+00:00",
+      "status": 200,
+      "bytes": 90962,
+      "sha256": "075230fd6987444613056c686ccd11f534705a718ca8fb92131b8c79937ec640",
+      "final_url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/cotisations"
+    },
+    {
+      "id": "residence",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/",
+      "attempted_at_utc": "2026-10-24T16:09:20.755862+00:00",
+      "status": 200,
+      "bytes": 26639,
+      "sha256": "85982c943dcb7caa235da48a621f685d16c7f6fdc3c6c2d553a8a2db75cf6eb9",
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/"
+    },
+    {
+      "id": "company-audit-reform",
+      "url": "https://legimonaco.mc/tnc/loi/2026/10-09-1.596/",
+      "attempted_at_utc": "2026-10-24T16:09:20.831438+00:00",
+      "status": 200,
+      "bytes": 149445,
+      "sha256": "f65af1d93f06287c07160d06e6cf456b58d8c192e741f2712bfcdae15af90fb8",
+      "final_url": "https://legimonaco.mc/tnc/loi/2026/10-09-1.596/"
+    },
+    {
+      "id": "isb-government",
+      "url": "https://monentreprise.gouv.mc/en/themes/accounting-obligations-and-tax/tax/other-taxes-and-duties/corporate-income-tax",
+      "attempted_at_utc": "2026-10-24T16:09:20.960964+00:00",
+      "status": 200,
+      "bytes": 513103,
+      "sha256": "347d1869860399c7f556a67999c3f9825d23616ab3d56663b48ca5a5092c4fd4",
+      "final_url": "https://monentreprise.gouv.mc/en/themes/accounting-obligations-and-tax/tax/other-taxes-and-duties/corporate-income-tax"
+    },
+    {
+      "id": "treaty-france",
+      "url": "https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/",
+      "attempted_at_utc": "2026-10-24T16:09:21.041200+00:00",
+      "status": 200,
+      "bytes": 75130,
+      "sha256": "648e210a6867cf38ea6f063e2613fe5726ac834ace9eceda5914f3fdd125d81d",
+      "final_url": "https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/"
+    },
+    {
+      "id": "minimum-tax-project",
+      "url": "https://legimonaco.mc/projet/1.129",
+      "attempted_at_utc": "2026-10-24T16:09:21.128193+00:00",
+      "status": 200,
+      "bytes": 409540,
+      "sha256": "ce66c8494d320a69ec58dc90254c33fb940acdd173aa27d7545d28bef9d1fcf8",
+      "final_url": "https://legimonaco.mc/projet/1.129/"
+    },
+    {
+      "id": "new-enterprises",
+      "url": "https://journaldemonaco.gouv.mc/fr/Journaux/1991/Journal-6996/Ordonnances-Souveraines-n-10.324-et-n-10.325-du-17-octobre-1991-relatives-a-l-impot-sur-les-benefices",
+      "attempted_at_utc": "2026-10-24T16:09:21.215477+00:00",
+      "status": 200,
+      "bytes": 117790,
+      "sha256": "d2e1b75f2af8d77ef4fbeecdac37cf26ea9eedc4be90fe790127e25ec6506293",
+      "final_url": "https://journaldemonaco.gouv.mc/fr/Journaux/1991/Journal-6996/Ordonnances-Souveraines-n-10.324-et-n-10.325-du-17-octobre-1991-relatives-a-l-impot-sur-les-benefices"
+    },
+    {
+      "id": "personal-government-fr",
+      "url": "https://monservicepublic.gouv.mc/thematiques/fiscalite/informations-sur-la-fiscalite/informations-generales/la-fiscalite-monegasque",
+      "attempted_at_utc": "2026-10-24T16:09:21.325399+00:00",
+      "status": 200,
+      "bytes": 602056,
+      "sha256": "fb985a99184a2d838c3b0846886f5c61dad84055f2ebc449566b4547efabbef9",
+      "final_url": "https://monservicepublic.gouv.mc/thematiques/fiscalite/informations-sur-la-fiscalite/informations-generales/la-fiscalite-monegasque"
+    },
+    {
+      "id": "new-enterprises-law",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1991/10-17-10.324",
+      "attempted_at_utc": "2026-10-24T16:09:21.371303+00:00",
+      "status": 200,
+      "bytes": 21997,
+      "sha256": "7ab19d72c412d7409c225f4a035c46a329ad7b8e4409492c7c6ae9a4b6819dd7",
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/1991/10-17-10.324/"
+    },
+    {
+      "id": "isb-ord-3152",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152",
+      "attempted_at_utc": "2026-10-24T16:09:21.519859+00:00",
+      "status": 200,
+      "bytes": 159183,
+      "sha256": "44c6255f4a108e8cdc775687420a7fca1d20f3d79c780eb00c634f7e15c8a3bc",
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152/"
+    },
+    {
+      "id": "social-current",
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations",
+      "attempted_at_utc": "2026-10-24T16:09:21.685885+00:00",
+      "status": 200,
+      "bytes": 77247,
+      "sha256": "b1a0f899a08d3ae8faaf691bd3866e7be5d4cd6e1dcf7cb319a54b841a63218f",
+      "final_url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations"
+    }
+  ],
+  "corroborating_sources": [
+    {
+      "id": "vat-2018-interest",
+      "url": "https://legimonaco.mc/tnc/ordonnance/2018/03-06-6.823/",
+      "status": 200,
+      "bytes": 29762,
+      "sha256": "4c09fe5184beae57fa4bc65c098e3a2f382f4eebac94fdbe62b95d076458e903",
+      "saved_file_modified_at_utc": "2026-10-24T16:10:53.761427+00:00",
+      "time_limit": "No separate original retrieval UTC receipt; file modification time only."
+    },
+    {
+      "id": "vat-2021-interest-repeal",
+      "url": "https://legimonaco.mc/tnc/ordonnance/2021/02-26-8.512/",
+      "status": 200,
+      "bytes": 30785,
+      "sha256": "5f368ccef14119462591e315abf3935aa26e5345597d8461515f3987299d6200",
+      "saved_file_modified_at_utc": "2026-10-24T16:17:00.921697+00:00",
+      "time_limit": "No separate original retrieval UTC receipt; file modification time only."
+    },
+    {
+      "id": "company-implementation-2025",
+      "url": "https://legimonaco.mc/tnc/ordonnance/2025/09-18-11.486/",
+      "status": 200,
+      "bytes": 66643,
+      "sha256": "256494a76b44db51d42ecb965fae0c4528dfbb75dc063d846457da4873e93614",
+      "saved_file_modified_at_utc": "2026-10-24T16:10:54.004446+00:00",
+      "time_limit": "No separate original retrieval UTC receipt; file modification time only."
+    }
+  ],
+  "registered_html_text_comparison": "All 18 newly retrieved HTML sources have identical normalized visible text to the preserved source files; PDF bytes/hash also match. Comparison is transport integrity, not legal verification."
+}

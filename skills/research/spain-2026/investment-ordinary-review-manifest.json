@@ -1,0 +1,253 @@
+{
+  "review_date": "2026-10-27",
+  "baseline_head": "33c86ed352ff457bb520f34389a941e3e73cd569",
+  "scope": "Finite ordinary investment-good VAT delta only; no whole-pack or tier1 claim",
+  "verdict": "PASS finite Guide delta; E1 evidence-description correction required",
+  "artifacts": [
+    {
+      "file": "arithmetic-controls.json",
+      "bytes": 5974,
+      "sha256": "2c8ca55065e171e070a57c995e36ca20f36529f72e3849c5bcd6d21ed44edff4"
+    },
+    {
+      "file": "baseline-README.md",
+      "bytes": 7602,
+      "sha256": "0161002bd4cfc7ee88265d842059ff245010e3ada86f69ef5caf5a4389474332"
+    },
+    {
+      "file": "baseline-es-vat-return.md",
+      "bytes": 64925,
+      "sha256": "f6cb72d6ab61571455c665e2741663d8e77ce600143a059198682eaf0307e99b"
+    },
+    {
+      "file": "baseline-spain-vat-return.md",
+      "bytes": 23788,
+      "sha256": "d222dc6f10e8e88722a6c994c9704505b258febc58e51c51b285a2f4dff6edac"
+    },
+    {
+      "file": "dgt-completeness-proof.json",
+      "bytes": 590,
+      "sha256": "214d3b3bf4dbacd0dc0f9fb642ff5304527d8ad47688f6766025eaf5c290784f"
+    },
+    {
+      "file": "independent-no-loss.json",
+      "bytes": 26771,
+      "sha256": "7dbf6ac242c7b5e41bb4e64e0d9ab012fb7355e7960afbf347a451a766e01b66"
+    },
+    {
+      "file": "live-calculator-controls.json",
+      "bytes": 5729,
+      "sha256": "85eb1b731296f361d21e7a56f8f3cc4a3998f2f179a589fd8f673fec9af0933d"
+    },
+    {
+      "file": "report.md",
+      "bytes": 11297,
+      "sha256": "bb3ca1e0add972326b1d1408befd85ee10d99ed832c21cf2b9dbc1d0da6f0049"
+    },
+    {
+      "file": "repository-check-0.txt",
+      "bytes": 243,
+      "sha256": "79680427e8f32f9a5d1c1d0446c973339ec502bb4e5955ed4c023f71b4df372f"
+    },
+    {
+      "file": "repository-check-1.txt",
+      "bytes": 33,
+      "sha256": "f22b46d3936f47ba00352565d6b186e943ce99a29d5ce43acf7516aeeeaefe59"
+    },
+    {
+      "file": "retained-source-rehash.json",
+      "bytes": 263,
+      "sha256": "2f2870b5a1054a066959e61b2472145db3303db6e7b0745e1e217dad822a6a03"
+    },
+    {
+      "file": "review-controls.py",
+      "bytes": 7242,
+      "sha256": "807ef41ad839e0fc5fdf8d499a7b30b1861ae48d1e1050704bb032caaec525a8"
+    },
+    {
+      "file": "reviewed-README.md",
+      "bytes": 7708,
+      "sha256": "8b640e4d477d2138bf4f51d72aa082d04f76f9a368ce9ddb2971ac5275d7a97c"
+    },
+    {
+      "file": "reviewed-es-vat-return.md",
+      "bytes": 71407,
+      "sha256": "074290ea1009163b5480d3ff9ba61ef521ff4487bc1673a852d003b069b4397f"
+    },
+    {
+      "file": "reviewed-spain-vat-return.md",
+      "bytes": 25104,
+      "sha256": "8a459ee282c66569cca124ef4b589f486ffcf55069ab5d2dff9994740c684f08"
+    },
+    {
+      "file": "source-read-receipts.json",
+      "bytes": 6844,
+      "sha256": "15d35c126c1f78c133f3f389074a3bea6dd36c9e944cbc88fef7d7b239667eea"
+    },
+    {
+      "file": "sources/aeat-both-eleven-233-31-live.json",
+      "bytes": 15632,
+      "sha256": "5db370acb6207ff302f28d8b54edd936db82ee770017aaa2246089cb5b615b95"
+    },
+    {
+      "file": "sources/aeat-calculator-fresh.html",
+      "bytes": 128011,
+      "sha256": "abcaa9797921df3beaa95494f65ef3f42a9de0b7859c18b83f7decf048363e51"
+    },
+    {
+      "file": "sources/aeat-delayed10pointzero-live.json",
+      "bytes": 16057,
+      "sha256": "878c234c31704610a1b8144c906e8599f9f8b8f70147ca60ebad34be165993a9"
+    },
+    {
+      "file": "sources/aeat-delayed420-live.json",
+      "bytes": 15775,
+      "sha256": "f544c374bc8dfbb0c73f8bd62ace43853dc47a0e7f4f785781386055339c1bf5"
+    },
+    {
+      "file": "sources/aeat-joint-462-live.json",
+      "bytes": 15620,
+      "sha256": "eb7baf98314baac48263454e0c139feb0ff657cea84fa596e4903fa363a7029d"
+    },
+    {
+      "file": "sources/aeat-joint-minus462-live.json",
+      "bytes": 15624,
+      "sha256": "182d81e3d00fb785d6ef20e1991b093159b1b993acf264f34a74b67191940401"
+    },
+    {
+      "file": "sources/aeat-joint-opposite42-live.json",
+      "bytes": 15616,
+      "sha256": "2acac502ee05724aa52631256054eb4a68ba07078011432167b3efd1ba0ff708"
+    },
+    {
+      "file": "sources/aeat-one-gate210-live.json",
+      "bytes": 15620,
+      "sha256": "ab304fff8901d874cbea49f441e215a3a3ebb8b254b26e2b4b455e08625fc262"
+    },
+    {
+      "file": "sources/aeat-separate-gates-zero-live.json",
+      "bytes": 15902,
+      "sha256": "ba48bd7db23de4b51548e30da1d713fe5c7a54725d46f3fd462b65b29c52153f"
+    },
+    {
+      "file": "sources/aeat-use-only-anomaly525-live.json",
+      "bytes": 15620,
+      "sha256": "0f6783380c37f9001860a84ec68fe5f52adc563387759b2cd34c1e6c863ef8cb"
+    },
+    {
+      "file": "sources/article-comparison.json",
+      "bytes": 1820,
+      "sha256": "f944755af9232fff8bdfa75e35d6f3e827f822f0cfd7163f85da41c999bacbbe"
+    },
+    {
+      "file": "sources/dgt-v0386-24-body-innertext-search-only.txt",
+      "bytes": 1621,
+      "sha256": "0a97012a678f599f931fa7fe89be140672dc5adfe72dea233804dd3783c6d8c2"
+    },
+    {
+      "file": "sources/dgt-v0386-24-live.txt",
+      "bytes": 42236,
+      "sha256": "e6d864d6f18608d08fe44936ebd18a3fc3172e5fbb4329e0b2a30efc888be060"
+    },
+    {
+      "file": "sources/dgt-v0386-24-selected-live.html",
+      "bytes": 59688,
+      "sha256": "41e88cbc213d61c14a29f24f2d669cc9895bfbf9b42fac3d353ffc89368d4c25"
+    },
+    {
+      "file": "sources/dgt-v0835-25-body-innertext-search-only.txt",
+      "bytes": 2014,
+      "sha256": "b5b72f61c9ab522d609684997e1cfe41a0492042caf55c231ed1891a7064ea71"
+    },
+    {
+      "file": "sources/dgt-v0835-25-live.txt",
+      "bytes": 27792,
+      "sha256": "99288c4d0e98c047e355e454e0e8ccfd2f7be99cb422bcfb174528244ce3e131"
+    },
+    {
+      "file": "sources/dgt-v0835-25-selected-live.html",
+      "bytes": 51835,
+      "sha256": "37fdf7d534c88a6095a241998a12ce0b3436a54c0dab8c999331d00592812d97"
+    },
+    {
+      "file": "sources/fresh-receipts.json",
+      "bytes": 756,
+      "sha256": "6f2e3da8a9131e0ed1e017167928cd51c88206be2ab0ae26afb354a0afaf1a0a"
+    },
+    {
+      "file": "sources/liva-104-fresh.txt",
+      "bytes": 6949,
+      "sha256": "1cc52c2c446232814ebc86716dff19bba91da61a12903bf8cf0141dd8516115a"
+    },
+    {
+      "file": "sources/liva-105-fresh.txt",
+      "bytes": 2661,
+      "sha256": "09fb7160ac12372583c50e90a5ed3f735bf129fe8720e0f629807abb9d8ceadb"
+    },
+    {
+      "file": "sources/liva-106-fresh.txt",
+      "bytes": 1754,
+      "sha256": "5d4e05843cd5eb610284172f01a33f3d9ee3e90dea2f55ff778497fdb769a1c2"
+    },
+    {
+      "file": "sources/liva-107-fresh.txt",
+      "bytes": 3719,
+      "sha256": "82dd5878c09553175980eb78a593b2a34f4d7e75c341fcf629288a1d96d78551"
+    },
+    {
+      "file": "sources/liva-108-fresh.txt",
+      "bytes": 943,
+      "sha256": "117026d49245659cf4a65f688dbe19d494a4e27d057f9b973fa3c8e6e5a1ccd1"
+    },
+    {
+      "file": "sources/liva-109-fresh.txt",
+      "bytes": 885,
+      "sha256": "50420f91b0b5f8987665166f0f5e44b4e71cb2b4a7ed5bb5c9aacd3dea0ce661"
+    },
+    {
+      "file": "sources/liva-110-fresh.txt",
+      "bytes": 2687,
+      "sha256": "f8f0423a911ed391b8e07f6d6ac9e7597a40b5d4b41aa940c7b91c54f24ebe0f"
+    },
+    {
+      "file": "sources/liva-111-fresh.txt",
+      "bytes": 4135,
+      "sha256": "0fe0c4039e20eb05c9e4d109005bb520eb41849d5b67fd71b256b77416992d53"
+    },
+    {
+      "file": "sources/liva-112-fresh.txt",
+      "bytes": 2094,
+      "sha256": "da0096de7521a404dbd23eea544018e5ac8216787a68746e17d315ac9d2187ef"
+    },
+    {
+      "file": "sources/liva-113-fresh.txt",
+      "bytes": 1947,
+      "sha256": "90683c23e9eabfa26a385656a667b5b817e20ea6dd62c013e8b0df488af73462"
+    },
+    {
+      "file": "sources/liva-114-fresh.txt",
+      "bytes": 4027,
+      "sha256": "8be43df22d3b80686218329037599c45aadb7d3e6e8fb566fd086ae9d1276b51"
+    },
+    {
+      "file": "sources/liva-95-fresh.txt",
+      "bytes": 5780,
+      "sha256": "e39f5949e56235c1b4027cf6cf4d5f9c4d7b2db6ec27eecbca219a6b31938c09"
+    },
+    {
+      "file": "sources/liva-99-fresh.txt",
+      "bytes": 5814,
+      "sha256": "2e528fe2c5974106e1e5e2b9a00a22323a81b0e0ee466367d90e45dc96da11f3"
+    },
+    {
+      "file": "sources/liva-fresh.html",
+      "bytes": 1769466,
+      "sha256": "40687bde59904ba515d151bf341040f41787f0b906c649061273c5fc2616b615"
+    },
+    {
+      "file": "sources/pgc-fresh.html",
+      "bytes": 1851507,
+      "sha256": "e19e6f89b840414760cbfc0ebe1be01210506d21b24f407c0a22feaa14f6f4bd"
+    }
+  ]
+}

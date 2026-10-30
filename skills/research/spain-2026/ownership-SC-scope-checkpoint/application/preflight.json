@@ -1,0 +1,53 @@
+{
+  "as_of": "2026-10-28T04:34:38.950959+00:00",
+  "baseline_head": "bafc0f62bb889781dd24aead563eccdd785c4725",
+  "origin_main": "73f566473aaab8cda1e1a28c0fb8a9c3cd6f7dd0",
+  "before29_hashes": {
+    "README.md": "8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82",
+    "es-autonomous-worker.md": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+    "es-beckham.md": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+    "es-canary-islands-igic.md": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+    "es-capital-gains.md": "77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b",
+    "es-ceuta-melilla-ipsi.md": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+    "es-corporate-tax.md": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+    "es-estimated-tax.md": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+    "es-foral-corporate-tax.md": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+    "es-foral-income-tax.md": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+    "es-foral-non-resident-tax.md": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+    "es-foral-payroll.md": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+    "es-income-tax.md": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+    "es-irpf-deductions.md": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+    "es-modelo-111.md": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+    "es-non-resident-income-tax-irnr-and.md": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+    "es-rental-income.md": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+    "es-social-contributions.md": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+    "es-vat-return.md": "18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca",
+    "references.md": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+    "spain-bookkeeping.md": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+    "spain-crypto-tax.md": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+    "spain-einvoice.md": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+    "spain-financial-statements.md": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+    "spain-formation.md": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+    "spain-payroll.md": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+    "spain-tax-optimization.md": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+    "spain-transfer-pricing.md": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+    "spain-vat-return.md": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977"
+  },
+  "review_identities": [
+    {
+      "role": "scope-delta",
+      "report": "spain-ownership-SC-scope-independent-review/report.md",
+      "report_sha256": "5e80ddc39d06c35500f5f58b3c55cc6e84a7e3c55172a928a89053d0c541ded4",
+      "manifest": "spain-ownership-SC-scope-independent-review/artifact-manifest.json",
+      "manifest_sha256": "ec3e621e883eb7887f251a6d8802382bd3779d8e2c3cff42fccfbf5055b50001",
+      "members_verified": 113
+    }
+  ],
+  "archive": {
+    "original_files": 198,
+    "unique_blobs": 96,
+    "all_roundtrip_hashes_match": true
+  },
+  "country_ready": false,
+  "pushed": false
+}

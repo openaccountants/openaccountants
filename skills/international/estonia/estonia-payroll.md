@@ -3,12 +3,11 @@ name: estonia-payroll
 description: "Estonian payroll for tax year 2026: running a monthly payroll for employees and board members of an Estonian employer. Covers the 22% withholding income tax, the flat 2026 basic exemption (EUR 700 a month, EUR 776 at pensionable age, no income taper), the 1.6% employee and 0.8% employer unemployment insurance premiums, the 2%, 4% or 6% funded pension (II pillar) contribution, the 33% employer social tax on the EUR 886 monthly minimum base, the order of deductions, fringe benefits at 22/78, the employment register, form TSD and payment by the 10th, interest at 0.06% a day and coercive fines. Trigger on: Estonia payroll, gross to net Estonia, palgaarvestus, netopalk, maksuvaba tulu 2026, TSD lisa 1, kinnipeetav tulumaks, II sammas, töötuskindlustusmakse. Out of scope: estonia-social-contributions (social tax in depth, self-employed FIE), estonia-income-tax (annual return), ee-corporate-income-tax, ee-cross-border (non-resident employees in depth)."
 version: 0.2
 jurisdiction: EE
-category: international
 tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-verified_by: pending
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -233,3 +232,23 @@ expected:
 | Ministry of Finance, Law changes in force in 2026 | https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused | 2026-10-24 |
 
 Not yet confirmed: the 2026 State Budget Act text that sets the EUR 886 social tax monthly rate (taken from EMTA and the Ministry of Finance, not read in the Act itself); the Social Tax Act version in force from 25.10.2026 (not read); the pensionable age in 2026 (not stated here); the weekend roll-forward rule in the Taxation Act (taken from EMTA's example, not the Act).
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "LIS-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+    "status": 200,
+    "bytes": 1477792,
+    "sha256": "5405e802c325cc1815bdfd1a48ddfe5da7ca8d6d652c25db0d0e52fac9e783db",
+    "read_utc": "2026-10-27T19:56:29.772119+00:00",
+    "personally_read_27_Oct_2026": true,
+    "full_raw_body_verified_sha256": "5405e802c325cc1815bdfd1a48ddfe5da7ca8d6d652c25db0d0e52fac9e783db",
+    "extract_file": "LIS-current-personally-read-extract.txt"
+  },
+  {
+    "name": "Budget-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "status": 200,
+    "bytes": 2870265,
+    "sha256": "b8a30f031e36252be334a18670b65c46e3d8082de84f8f78edf5f9afc5f3a110",
+    "read_utc": "2026-10-27T19:56:30.950140+00:00",
+    "personally_read_27_Oct_2026": true,
+    "full_raw_body_verified_sha256": "b8a30f031e36252be334a18670b65c46e3d8082de84f8f78edf5f9afc5f3a110",
+    "extract_file": "Budget-current-personally-read-extract.txt"
+  },
+  {
+    "name": "RDL3-2004",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-12010",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-12010",
+    "status": 200,
+    "bytes": 110758,
+    "sha256": "eb9653eb9fc3251a2f96be14fccce77da7a9eada1cf7afb5ed3db9cb5c494575",
+    "read_utc": "2026-10-27T19:56:31.246594+00:00",
+    "personally_read_27_Oct_2026": true,
+    "full_raw_body_verified_sha256": "eb9653eb9fc3251a2f96be14fccce77da7a9eada1cf7afb5ed3db9cb5c494575",
+    "extract_file": "RDL3-2004-personally-read-extract.txt"
+  },
+  {
+    "name": "LIS-original",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2014-12328",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2014-12328",
+    "status": 200,
+    "bytes": 1163889,
+    "sha256": "125af8cb5bd576a6e28a4b9da65c58fdcc414b4ec745a3f5a4cca2a0a9ed4570",
+    "read_utc": "2026-10-27T19:56:31.746977+00:00",
+    "personally_read_27_Oct_2026": true,
+    "full_raw_body_verified_sha256": "125af8cb5bd576a6e28a4b9da65c58fdcc414b4ec745a3f5a4cca2a0a9ed4570",
+    "extract_file": "LIS-original-personally-read-extract.txt"
+  },
+  {
+    "name": "SEPE-2026",
+    "url": "https://www.sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html",
+    "final_url": "https://www.sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html",
+    "status": 200,
+    "bytes": 90837,
+    "sha256": "e03e479f71686c5fab1885e5b4554ef987e30393efa2b277c9d51af72c1556eb",
+    "read_utc": "2026-10-27T19:56:32.284782+00:00",
+    "personally_read_27_Oct_2026": true,
+    "full_raw_body_verified_sha256": "e03e479f71686c5fab1885e5b4554ef987e30393efa2b277c9d51af72c1556eb",
+    "extract_file": "SEPE-2026-personally-read-extract.txt"
+  }
+]

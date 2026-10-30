@@ -1,13 +1,15 @@
 ---
 name: lt-payroll-social
 description: "Use this skill for Lithuanian payroll and social contributions in tax year 2026. It covers Sodra social insurance (VSD) and compulsory health insurance (PSD) for employees: 19.5% withheld (pension 8.72%, sickness 1.99%, maternity 1.81%, health 6.98%) plus 3% for second-pillar savers; the employer's 1.77% (unemployment 1.31%, accidents 0.14%, Guarantee Fund 0.16%, Long-term Employment Benefit Fund 0.16%) and 2.49% on fixed-term contracts; the 60 average wage ceiling (EUR 138,729), which from 2026 also caps the employer's part; the EUR 1,153 minimum wage and the minimum contribution base; contributions for individual activity (12.52% or 15.52% VSD and 6.98% PSD on 90% of taxable income, capped at EUR 99,422.45, PSD minimum EUR 80.48 a month); PIT withholding at 20%, 25% and 32% with the NPD; GPM313 and SAM returns by the 15th; tax and Sodra payment dates; fines and late interest. Trigger on: Sodra, VSD, PSD, SAM, GPM313, darbo užmokestis, NPD, Lithuanian payroll, self-employed contributions Lithuania. Out of scope: lithuania-pit (annual income tax), lt-cross-border, lt-corporate-income-tax, lithuania-vat-return."
-jurisdiction: LT
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.1
+jurisdiction: LT
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Lithuania: payroll and social contributions (2026) v0.1
@@ -204,3 +206,23 @@ expected:
 | VMI, late payment interest, answer KM2633 | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- | 2026-10-24 |
 
 Not yet confirmed: the text of the 2026 social funds' budget indicators law that fixes the rates and the 2026 VDU (the figures here come from Sodra's tables and its EUR 138,729 ceiling); the late interest rate Sodra charges on employer contributions in 2026 (the law leaves it to the Minister of Finance; VMI's 0.027% a day is confirmed for tax only, and only from 1 August 2026; the rate for January to July 2026 was not read); whether the Guarantee Fund and Long-term Employment Benefit Fund contributions, which rest on separate laws, also stop at the 60 VDU ceiling from 2026; the monthly band thresholds employers use under GPMĮ article 23(7) when a single payment is large; the exact payment date for 2026 self-employed contributions, given that 1 May 2027 is a Saturday; the administrative fine for filing SAM or GPM313 late (Code of Administrative Offences, not read); and the social insurance rules for posted and multi-state workers under the EU coordination regulations.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

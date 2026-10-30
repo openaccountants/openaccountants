@@ -160,7 +160,7 @@ def stamp_readme(text: str, built: dict, jurisdictions: list[str], reviewed: int
     """Rewrite the counts block between the oa-skills-stats markers; the rest is hand-written.
 
     Two quality states only: accountant-reviewed (tier 1 with a named reviewer) and
-    source-cited draft. `reviewed` is the tier-1 count from build(); when it is not
+    tier 2 (checked against the law, or sourced from the law). `reviewed` is the tier-1 count from build(); when it is not
     given, a named reviewer in metadata is the fallback signal."""
     if reviewed is None:
         reviewed = sum(1 for v in built.values() if v.get("reviewed_by"))
@@ -169,7 +169,7 @@ def stamp_readme(text: str, built: dict, jurisdictions: list[str], reviewed: int
         "<!-- oa-skills-stats:start -->\n"
         f"**{len(built):,} skills** across **{len(jurisdictions)} jurisdictions**. "
         f"{reviewed} are accountant-reviewed (a named accountant in `metadata.reviewed_by`); "
-        f"the other {drafts:,} are source-cited drafts.\n"
+        f"the other {drafts:,} are tier 2 (checked against the law, or sourced from the law).\n"
         "<!-- oa-skills-stats:end -->"
     )
     return re.sub(r"<!-- oa-skills-stats:start -->.*?<!-- oa-skills-stats:end -->", block, text, flags=re.S)

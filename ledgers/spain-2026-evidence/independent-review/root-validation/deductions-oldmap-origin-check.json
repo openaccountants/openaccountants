@@ -1,0 +1,20 @@
+{
+  "map_sha256": "1e6c3a520d75fba9c4c16e692f2026201b4b80591fd7514b70a9baa623030280",
+  "mechanical_origin_completeness": [
+    {
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "actual_units": 287,
+      "map_units": 287,
+      "missing": 0,
+      "invented": 0
+    },
+    {
+      "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+      "actual_units": 1126,
+      "map_units": 1126,
+      "missing": 0,
+      "invented": 0
+    }
+  ],
+  "scope": "Exact origin units mechanically matched; finite semantic rootspotread separate; no assertion all1413freshlyread"
+}

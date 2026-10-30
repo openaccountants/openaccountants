@@ -1,0 +1,20 @@
+{
+  "guide_sha256": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+  "ledger_sha256": "d633dd1d7044ab3ec29efd14fbe5aed88286bbe77ed25678b18eb905417e037e",
+  "rows": 3261,
+  "native_selected_scopes": 6345,
+  "raw_reader_identity_records": 200,
+  "unmatched_quote_or_identity_count": 0,
+  "current_all_row_wordings_present": true,
+  "S-L25": "Approved actual own4.Uno.a.2 condition >183days belongs to fostering/delegatedguardianship, not general birth/adoption",
+  "S-L33": "CLOSED evidence-only: five checker fixtures corrected660/900, fullinverse,84othernumericrecords exact, Guide/ledger/sourcequotes/oldmap unchanged",
+  "own_controls": 120,
+  "actual_oa": {
+    "files": 1,
+    "blocks": 2,
+    "failures": 0,
+    "missing": 0
+  },
+  "coverage_nonrules": "Remaining LF inventory is metadata/headings/table headers, multiline already covered canonical oa units and protected wrapped CTA; no omitted substantive tax-method paragraph found.",
+  "earlier_failures_preserved": "Initial source-batch dict/list/key and historical support-path assumptions, then oa fence regex mismatch, failed harness before correction. No source/Guide/control bypass. Old unadopted auxiliary reuse proposal retained as inventory only."
+}
