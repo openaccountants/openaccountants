@@ -27,9 +27,9 @@ The most common vehicle is the private limited company (einkahlutafélag, 'ehf.'
 - **Private limited company (einkahlutafélag, 'ehf.').** No member is personally liable for the company's debts _(Act 138/1994, Article 1)_. One or more founders sign a written memorandum and subscribe for the shares _(Article 3)_, so one person can form an ehf. alone. Taxed as a separate entity at 20% _(Income Tax Act 90/2003, Articles 2(1)(1) and 71(1))_. Detail: `is-corporate-income-tax`.
 - **Public limited company (hlutafélag, 'hf.').** Used for larger and listed companies. At least two founders _(Act 2/1995, Article 3)_, a board of at least three _(Article 63)_ and higher minimum capital (below). Taxed at 20% like an ehf. _(Income Tax Act, Article 71(1))_.
 - **General partnership (sameignarfélag, 'sf.').** An arrangement between two or more parties for joint business _(Act 50/2007, Article 2)_; the partners are personally liable. A partnership registered in the company register is a separate taxpayer only if this is asked for at registration and a partnership agreement showing ownership shares, paid-in capital and how the partnership is wound up is handed in. Spouses alone, or with their minor children, cannot form a partnership that is a separate taxpayer _(Income Tax Act, Article 2(1)(3))_. A separately taxed partnership pays 37.6% _(Income Tax Act, Article 71(2))_. Otherwise the partners are taxed on their shares.
-- **Limited partnership (samlagsfélag, 'slf.').** Covered by the same separate-taxpayer rule and the same 37.6% rate as a general partnership _(Income Tax Act, Articles 2(1)(3) and 71(2))_.
+- **Limited partnership (samlagsfélag, 'slf.').** At least one partner has unlimited liability, and the firm name must carry the name of at least one such partner _(Firms Act 42/1903, Article 9)_. The Partnerships Act 50/2007 applies to general partnerships only _(Act 50/2007, Article 1)_. A limited partnership is entered in the company register _(Act 17/2003, Article 3)_. It is covered by the same separate-taxpayer rule and the same 37.6% rate as a general partnership _(Income Tax Act, Articles 2(1)(3) and 71(2))_.
 - **Sole trader (einstaklingsrekstur).** Not a separate taxpayer. The owner is taxed as an individual and must set calculated remuneration (reiknað endurgjald) for own work _(Income Tax Act, Article 58)_. Detail: `iceland-income-tax`, `iceland-tax-optimization`.
-- **Branch of a foreign company (útibú).** Registered in the company register _(Act 17/2003, Article 3; Skatturinn fee list)_. The branch manager files a certified copy of the foreign company's annual accounts with the branch accounts no later than eight months after the year end _(Act 3/2006, Article 112)_. A non-resident company with an Icelandic permanent establishment pays 20% where it corresponds to an ehf. or hf., and 37.6% otherwise _(Income Tax Act, Articles 3 and 71)_. Detail: `is-cross-border`.
+- **Branch of a foreign company (útibú).** Its formation is notified to the company register _(Act 138/1994, Articles 111 and 115, for a foreign private limited company; Act 2/1995, Chapter XVI, for a foreign public limited company; Skatturinn fee list)_. The branch manager files a certified copy of the foreign company's annual accounts with the branch accounts no later than eight months after the year end _(Act 3/2006, Article 112)_. A non-resident company with an Icelandic permanent establishment pays 20% where it corresponds to an ehf. or hf., and 37.6% otherwise _(Income Tax Act, Articles 3 and 71)_. Detail: `is-cross-border`.
 
 ### Capital
 
@@ -53,14 +53,14 @@ The most common vehicle is the private limited company (einkahlutafélag, 'ehf.'
 
 ### Registration fees (2026)
 
-Skatturinn's fee list gives the amount payable. It includes, where relevant, the fee for issuing an ID number (kennitala) and for publication in the Legal Gazette (Lögbirtingablað). The statutory registration fee is set by Act 88/1991, Article 13.
+Skatturinn's fee list gives the amount payable. It includes, where relevant, the fee for issuing an ID number (kennitala) and for publication in the Legal Gazette (Lögbirtingablað). The statutory registration fee is set by Act 88/1991, Article 13. A partnership is registered as a firm in the firm register _(Act 50/2007, Article 4)_, so its statutory fee is the line for a firm of two or more persons _(Act 88/1991, Article 13, item 5)_.
 
 | Registration | Payable to Skatturinn | Statutory registration fee (Act 88/1991, Art 13) |
 |---|---:|---:|
 | ehf. | ISK 140,500 | ISK 134,000 |
 | hf. | ISK 276,500 | ISK 270,000 |
-| sf. (general partnership) | ISK 95,500 | not confirmed |
-| slf. (limited partnership) | ISK 95,500 | not confirmed |
+| sf. (general partnership) | ISK 95,500 | ISK 89,000 |
+| slf. (limited partnership) | ISK 95,500 | ISK 89,000 |
 | Sole trader's firm (firma eins manns) | ISK 73,500 | ISK 72,000 |
 | Branch of a foreign company | ISK 276,500 | ISK 270,000 |
 | Conversion ehf. to hf. | ISK 137,700 | ISK 134,000 |
@@ -81,24 +81,6 @@ A sole trader can move the business into an ehf. without taxable income for the 
 - **Changes.** Changes to the articles or other registered details of an ehf. are notified within one month _(Act 138/1994, Article 123)_.
 - **Other registrations.** A company that pays wages registers on the employer register, and one that sells taxable goods or services above ISK 2,000,000 in 12 months registers for VAT. Detail: `iceland-payroll`, `iceland-vat`.
 
-## Sources
-
-| Source | URL | Read on |
-|---|---|---|
-| Act 138/1994 on Private Limited Companies (lög um einkahlutafélög), consolidated text 158a of 1 October 2026, Articles 1, 3, 9, 11, 39, 42, 123 | https://www.althingi.is/lagas/nuna/1994138.html | 2026-10-30 |
-| Act 2/1995 on Public Limited Companies (lög um hlutafélög), consolidated text 158a, Articles 1, 3, 14, 63 | https://www.althingi.is/lagas/nuna/1995002.html | 2026-10-30 |
-| Act 50/2007 on Partnerships (lög um sameignarfélög), consolidated text 158a, Article 2 | https://www.althingi.is/lagas/nuna/2007050.html | 2026-10-30 |
-| Act 3/2006 on Annual Accounts (lög um ársreikninga), consolidated text 158a, Articles 2, 3, 98, 109, 112 | https://www.althingi.is/lagas/nuna/2006003.html | 2026-10-30 |
-| Act 88/1991 on State Fees (lög um aukatekjur ríkissjóðs), consolidated text 158a, Article 13 | https://www.althingi.is/lagas/nuna/1991088.html | 2026-10-30 |
-| Act 17/2003 on the Business Register (lög um fyrirtækjaskrá), consolidated text 158a, Article 3 | https://www.althingi.is/lagas/nuna/2003017.html | 2026-10-30 |
-| Income Tax Act 90/2003 (lög um tekjuskatt), consolidated text 158a, Articles 2, 56, 71 | https://www.althingi.is/lagas/nuna/2003090.html | 2026-10-30 |
-| Skatturinn, private limited companies (registration, capital, documents, processing time, sole-trade transfer) | https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/ | 2026-10-30 |
-| Skatturinn, company register fee list (gjaldskrá) | https://www.skatturinn.is/fyrirtaekjaskra/gjaldskra/ | 2026-10-30 |
-| Skatturinn, notice of 30 January 2026: legal-entity returns 2026, deadline 31 May, extension to 21 September | https://www.skatturinn.is/um-rsk/frettir-og-tilkynningar/opnad-fyrir-skil-a-skattframtali-logadila-2026 | 2026-10-30 |
-| Skatturinn, key figures and rates 2026 (company tax 20% / 37.6%) | https://www.skatturinn.is/einstaklingar/helstutolur/2026/ | 2026-10-30 |
-
-Not yet confirmed: processing time for an electronic ehf. registration (Skatturinn gives ten to twelve working days for paper only); the article of Act 50/2007 or other law that governs limited partnerships (slf.) as a company-law form; which line of Act 88/1991, Article 13 sets the statutory fee for an sf. or slf.; the 2027 company return deadlines for 2026 income (not yet published).
-
 <!-- openaccountants-cta-block -->
 
 ---
@@ -116,3 +98,22 @@ version (and the professional behind it) is at
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
 > licensed professional before relying on them.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Act 138/1994 on Private Limited Companies (lög um einkahlutafélög), consolidated text 158a of 1 October 2026, Articles 1, 3, 9, 11, 39, 42, 111, 115, 123 | https://www.althingi.is/lagas/nuna/1994138.html | 2026-10-30 |
+| Act 2/1995 on Public Limited Companies (lög um hlutafélög), consolidated text 158a, Articles 1, 3, 14, 63 and Chapter XVI | https://www.althingi.is/lagas/nuna/1995002.html | 2026-10-30 |
+| Act 50/2007 on Partnerships (lög um sameignarfélög), consolidated text 158a, Articles 1, 2, 4 | https://www.althingi.is/lagas/nuna/2007050.html | 2026-10-30 |
+| Act 3/2006 on Annual Accounts (lög um ársreikninga), consolidated text 158a, Articles 2, 3, 98, 109, 112 | https://www.althingi.is/lagas/nuna/2006003.html | 2026-10-30 |
+| Act 88/1991 on State Fees (lög um aukatekjur ríkissjóðs), consolidated text 158a, Article 13 | https://www.althingi.is/lagas/nuna/1991088.html | 2026-10-30 |
+| Act 17/2003 on the Business Register (lög um fyrirtækjaskrá), consolidated text 158a, Article 3 | https://www.althingi.is/lagas/nuna/2003017.html | 2026-10-30 |
+| Firms Act 42/1903 (lög um verslanaskrár, firmu og prókúruumboð), consolidated text 158a, Article 9 | https://www.althingi.is/lagas/nuna/1903042.html | 2026-10-30 |
+| Income Tax Act 90/2003 (lög um tekjuskatt), consolidated text 158a, Articles 2, 56, 71 | https://www.althingi.is/lagas/nuna/2003090.html | 2026-10-30 |
+| Skatturinn, private limited companies (registration, capital, documents, processing time, sole-trade transfer) | https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/ | 2026-10-30 |
+| Skatturinn, company register fee list (gjaldskrá) | https://www.skatturinn.is/fyrirtaekjaskra/gjaldskra/ | 2026-10-30 |
+| Skatturinn, notice of 30 January 2026: legal-entity returns 2026, deadline 31 May, extension to 21 September | https://www.skatturinn.is/um-rsk/frettir-og-tilkynningar/opnad-fyrir-skil-a-skattframtali-logadila-2026 | 2026-10-30 |
+| Skatturinn, key figures and rates 2026 (company tax 20% / 37.6%) | https://www.skatturinn.is/einstaklingar/helstutolur/2026/ | 2026-10-30 |
+
+Not yet confirmed: processing time for an electronic ehf. registration (Skatturinn gives ten to twelve working days for paper only); the 2027 company return deadlines for 2026 income (not yet published); the old statement that the share capital is deposited in an Icelandic bank account (not in Act 138/1994 or on Skatturinn's page, so left out).
