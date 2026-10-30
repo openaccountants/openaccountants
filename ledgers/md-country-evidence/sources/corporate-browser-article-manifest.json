@@ -2037,6 +2037,80 @@
       "read_date": "2026-10-30",
       "format": "Exact selected text returned by read-only official-page DOM observation: current AML statute provisions/header or selected ASP company checklist/beneficial-owner guidance. Not a whole-law, portal or complete-country verification.",
       "sha256": "a253866abc5b3b7953362b899ead1539780963a4881bebdbe45e9b1f24a2d820"
+    },
+    "FORMATION-POSTFORMATION-CATALOGUE-20261030": {
+      "article": "FORMATION-POSTFORMATION-CATALOGUE-20261030",
+      "official_url": "https://www.asp.gov.md/ro/informatii-utile/formulare-tip/3-7-8",
+      "observed_utc": "2026-10-30T21:43:00.490Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected current ASP post-formation form catalogue rows and their exact download links; not a filed application",
+      "sha256": "994b55f23632dec87c3eb20837584acaa9553438d5bffdb7d9c5fe4dd8b7178a"
+    },
+    "FORMATION-COMPANY-BO-UPDATE-PDF": {
+      "article": "FORMATION-COMPANY-BO-UPDATE-PDF",
+      "official_url": "https://www.asp.gov.md/sites/default/files/servicii/formulare-tip/3/3-11.pdf",
+      "observed_utc": "2026-10-30T21:44:27.287733+00:00",
+      "read_date": "2026-10-30",
+      "sha256": "33f33bca99b7f3c8da906f27fa77c20a46103ed0fb1a734f3319b3d66c6b6a92",
+      "pdf_sha256": "e7561facedc35c5ebd7f1001ed27a380971feb2758a15a8f469a136558b2530e",
+      "retained_pdf_relative_to_country_workspace": "primary-attachments/company-bo-update-application.pdf",
+      "format": "Direct official PDF; pdftotext-layout extraction; pages1-1of1 read and rendered pages visually inspected",
+      "visual_inspection": "Pages1-1 inspected; blank template, no filed application or portal test. All pages inspected."
+    },
+    "FORMATION-COMPANY-BO-UPDATE-INSTRUCTIONS-PDF": {
+      "article": "FORMATION-COMPANY-BO-UPDATE-INSTRUCTIONS-PDF",
+      "official_url": "https://www.asp.gov.md/sites/default/files/servicii/formulare-tip/3/3-11.instructiuni.pdf",
+      "observed_utc": "2026-10-30T21:44:27.288700+00:00",
+      "read_date": "2026-10-30",
+      "sha256": "cb47b699a95e007449ee2830f03210db58e0ab7ae84a47698d3e2448e7e8776e",
+      "pdf_sha256": "e4c07023631aa23488d3d597ee17a466d432faac929061d8bf4d77bf7922662a",
+      "retained_pdf_relative_to_country_workspace": "primary-attachments/company-bo-update-instructions.pdf",
+      "format": "Direct official PDF; pdftotext-layout extraction; pages1-3of3 read and rendered pages visually inspected",
+      "visual_inspection": "Pages1-3 inspected; blank template, no filed application or portal test. All pages inspected."
+    },
+    "FORMATION-II-UPDATE-PDF": {
+      "article": "FORMATION-II-UPDATE-PDF",
+      "official_url": "https://www.asp.gov.md/sites/default/files/servicii/formulare-tip/3/3-22.pdf",
+      "observed_utc": "2026-10-30T21:44:27.289644+00:00",
+      "read_date": "2026-10-30",
+      "sha256": "ccb5724b5a53fbb69bfd6c973c841e9abf3a135de1d23b7808f5fe88488ebf24",
+      "pdf_sha256": "f5c6849ed88e7af0c5476f7fe4c9f9fdf8c39efacc16d23e1ce53cea7f562ba5",
+      "retained_pdf_relative_to_country_workspace": "primary-attachments/individual-update-application.pdf",
+      "format": "Direct official PDF; pdftotext-layout extraction; pages1-1of1 read and rendered pages visually inspected",
+      "visual_inspection": "Pages1-1 inspected; blank template, no filed application or portal test. All pages inspected."
+    },
+    "FORMATION-II-UPDATE-INSTRUCTIONS-PDF": {
+      "article": "FORMATION-II-UPDATE-INSTRUCTIONS-PDF",
+      "official_url": "https://www.asp.gov.md/sites/default/files/servicii/formulare-tip/3/3-22.instructiuni.pdf",
+      "observed_utc": "2026-10-30T21:44:27.290453+00:00",
+      "read_date": "2026-10-30",
+      "sha256": "f5108b6ad11bb0b274b1b40bce7374f0b21444bc815fcae3c3ae81609ece44e1",
+      "pdf_sha256": "18927c1af94bba11bf16e0a72b110fdb67b0278ac232727c83e919ebc52f4053",
+      "retained_pdf_relative_to_country_workspace": "primary-attachments/individual-update-instructions.pdf",
+      "format": "Direct official PDF; pdftotext-layout extraction; pages1-3of3 read and rendered pages visually inspected",
+      "visual_inspection": "Pages1-3 inspected; blank template, no filed application or portal test. All pages inspected."
+    },
+    "FORMATION-COMPANY-BE3-PDF": {
+      "article": "FORMATION-COMPANY-BE3-PDF",
+      "official_url": "https://www.asp.gov.md/sites/default/files/servicii/formulare-tip/7/7-7.pdf",
+      "observed_utc": "2026-10-30T21:44:27.291760+00:00",
+      "read_date": "2026-10-30",
+      "sha256": "6ab3107c2469ae70b447027ed1905589847ff20e3d63b008dc18282853cd9d42",
+      "pdf_sha256": "6b867037b32edb33e75a9da853b1b91ebf72a80d8f70e00dff57bbe5520f6bd4",
+      "retained_pdf_relative_to_country_workspace": "primary-attachments/company-be3.pdf",
+      "format": "Direct official PDF; pdftotext-layout extraction; pages1-2of7 read and rendered pages visually inspected",
+      "visual_inspection": "Pages1-2 inspected; blank template, no filed application or portal test. PEP annex pages3-7 not fully verified."
+    },
+    "FORMATION-PROVISIONAL-UPDATE-PDF": {
+      "article": "FORMATION-PROVISIONAL-UPDATE-PDF",
+      "official_url": "https://www.asp.gov.md/sites/default/files/servicii/formulare-tip/3/3-34.pdf",
+      "observed_utc": "2026-10-30T21:44:27.292843+00:00",
+      "read_date": "2026-10-30",
+      "sha256": "8658665e8c69abb9aaa813502d42e54028e08277720c25bb4ce69aeda1385561",
+      "pdf_sha256": "5c9113be9784eed98df409fd553458869489dcd0f48305eb57e38a157e72533c",
+      "retained_pdf_relative_to_country_workspace": "primary-attachments/provisional-data-update.pdf",
+      "format": "Direct official PDF; pdftotext-layout extraction; pages1-1of1 read and rendered pages visually inspected",
+      "visual_inspection": "Pages1-1 inspected; blank template, no filed application or portal test. All pages inspected."
     }
   }
 }

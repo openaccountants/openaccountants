@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 1.9
+version: 2.0
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -27,7 +27,7 @@ The subsequently merged corporate PR #1008 is preserved and mapped separately in
 
 The three subsequently merged supporting drafts (PRs #1009, #1010 and #1011) are preserved in [their complete writer destination table](../../../ledgers/md-country-evidence/public-supporting-predecessor-reconciliation.md). Source-checked additions include SRL governance, individual-registration/name tariffs and actual individual-registration form instructions; only BE-8’s first page is used, with AML/PEP and change-clock gaps retained. Overview headlines and planning entry/term conditions are reconciled with the connected Guides. These additions do not verify all company forms or complete the independent country review.
 
-The formation draft now maps the actual company application and instructions, BE-1/BE-2 core forms and the current statutory ownership/disclosure/due-diligence interface. Current [Law 308/2017](https://www.legis.md/cautare/getResults?doc_id=155856&lang=ro) and [ASP guidance](https://www.asp.gov.md/ro/servicii/intrebari-frecvente?grup=2718), read 30 October 2026, confirm the beneficial-owner update clock and signer roles. Post-formation form variants, discrepancy-removal procedure, current national PEP-list screening and other named ordinary/specialist gaps remain explicit. This is writer work; whole-country independent review is still pending.
+The formation draft now maps the actual company application and instructions, BE-1/BE-2 core forms and the current statutory ownership/disclosure/due-diligence interface. Current [Law 308/2017](https://www.legis.md/cautare/getResults?doc_id=155856&lang=ro) and [ASP guidance](https://www.asp.gov.md/ro/servicii/intrebari-frecvente?grup=2718), read 30 October 2026, confirm the beneficial-owner update clock and signer roles. The ordinary company/individual post-formation applications, instructions and BE-3 core are now mapped to actual filing fields, authority and separate deadlines. The individual instructions’ unrelated corporate-administrator sentence and the limited scope of provisional-data form 3-34 are explicitly distinguished. Discrepancy-removal procedure, other entity-specific variants, current national PEP-list screening and other named ordinary/specialist gaps remain explicit. This is writer work; whole-country independent review is still pending.
 
 ## Domains
 
