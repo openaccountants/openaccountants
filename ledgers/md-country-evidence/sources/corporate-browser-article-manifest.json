@@ -1515,6 +1515,90 @@
       "format": "Exact JSON returned by read-only browser DOM observation",
       "sha256": "e9f9089207daa8e33d973b08ed9da75c680f00a9ee8b4309f7675c8d79f2c7dd"
     },
+    "ASSET-HG704-PART1": {
+      "article": "ASSET-HG704-PART1",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146665&lang=ro",
+      "observed_utc": "2026-10-30T19:14:20.372Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "9c0f251ee569e1567fd58638402d0ba17718dce9cc4dd1e33f15717fa3010469"
+    },
+    "ASSET-HG704-PART2": {
+      "article": "ASSET-HG704-PART2",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146665&lang=ro",
+      "observed_utc": "2026-10-30T19:14:20.372Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "66d1ea8e8a78267831d0eb9dee375b069b3367ed6b51314369efaa9217ba1944"
+    },
+    "TRAVEL-HG783-AMENDMENT": {
+      "article": "TRAVEL-HG783-AMENDMENT",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=145826&lang=ro",
+      "observed_utc": "2026-10-30T19:14:20.372Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "601860c18c99bf996b9827122d265a522657118c0b63093551c948454002320f"
+    },
+    "ASSET-HG704-PART3": {
+      "article": "ASSET-HG704-PART3",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146665&lang=ro",
+      "observed_utc": "2026-10-30T19:14:25.172Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "c28abade11f068b8e02d79cf909b8d9cdfa2910e0996b2965c059059a614de0a"
+    },
+    "ASSET-HG704-PART4": {
+      "article": "ASSET-HG704-PART4",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146665&lang=ro",
+      "observed_utc": "2026-10-30T19:14:25.172Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "b835828f81ce60a43a860a8cc271be1795a627ab02d65287c33f36e5be8882be"
+    },
+    "TRAVEL-HG10-PART1": {
+      "article": "TRAVEL-HG10-PART1",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=145854&lang=ro",
+      "observed_utc": "2026-10-30T19:14:49.204Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "b0cf9eed2ec884e836676bd652904ea77d7d7f0e92bd61320e5cb174a88b0f1b"
+    },
+    "TRAVEL-HG10-PART2": {
+      "article": "TRAVEL-HG10-PART2",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=145854&lang=ro",
+      "observed_utc": "2026-10-30T19:14:53.710Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "0422ede9d07a577319642d3612402b442c86ea27a7d7cd0825ea83e288241c9c"
+    },
+    "TRAVEL-HG10-PART3": {
+      "article": "TRAVEL-HG10-PART3",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=145854&lang=ro",
+      "observed_utc": "2026-10-30T19:14:53.710Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "2aca3d6f8d208920517d981d44a514c11ef13e69669e2619a2586e9754122c99"
+    },
+    "TRAVEL-HG10-PART4": {
+      "article": "TRAVEL-HG10-PART4",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=145854&lang=ro",
+      "observed_utc": "2026-10-30T19:14:57.019Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "81843eea2d848cac80b0ee2596c202f3f2d75157387ba81fd029514f5bac3791"
+    },
+    "TRAVEL-HG10-PART5": {
+      "article": "TRAVEL-HG10-PART5",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=145854&lang=ro",
+      "observed_utc": "2026-10-30T19:14:57.019Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "548ea86a9a862a747bc7650b94fb879112e5fe9e5e4fba9dcbba24761cdca519"
+    },
+    "TRAVEL-HG10-PART6": {
+      "article": "TRAVEL-HG10-PART6",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=145854&lang=ro",
+      "observed_utc": "2026-10-30T19:15:00.478Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "236da36a611086ae5c8fd607ff12e3a3f1ec3d160198932ff7a52dbd17e888b5"
+    },
+    "ASSET-HG941-CATALOGUE": {
+      "article": "ASSET-HG941-CATALOGUE",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=131787&lang=ro",
+      "observed_utc": "2026-10-30T19:15:00.478Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "db804cbe44f8c7a5d05f71908f0104286f9630b9ec67e12de272d2d576f4fe53"
+    },
     "20": {
       "article": "20",
       "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
@@ -1563,6 +1647,20 @@
       "observed_utc": "2026-10-30T18:49:53.489Z",
       "format": "Consecutive exact bounded DOM JSON slices joined without overlap or omission",
       "sha256": "424b78c229b1c025f185d4a54c1f49852cb8310f18c41cf812b2bd9cb643086e"
+    },
+    "ASSET-HG704": {
+      "article": "ASSET-HG704",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146665&lang=ro",
+      "observed_utc": "2026-10-30T19:14:20.372Z",
+      "format": "Consecutive exact bounded DOM JSON slices joined without overlap or omission",
+      "sha256": "f65db12d63a2f68699cc607bdb9b090bd0b64c937e8308be11a84ddeecaa88b1"
+    },
+    "TRAVEL-HG10": {
+      "article": "TRAVEL-HG10",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=145854&lang=ro",
+      "observed_utc": "2026-10-30T19:14:49.204Z",
+      "format": "Consecutive exact bounded DOM JSON slices joined without overlap or omission",
+      "sha256": "34db5fa1ea22a47d814890a3a00749f688942b6d067fd95513226c2e9c80e15c"
     }
   }
 }
