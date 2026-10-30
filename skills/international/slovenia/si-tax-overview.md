@@ -42,7 +42,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Employee social contributions | 22.1% (pension 15.5%, health 6.36%, parental 0.10%, unemployment 0.14%) | ZPSV arts. 8, 11, 13 and 14 |
 | Employer social contributions | 16.1% (pension 8.85%, health 6.56%, injury at work 0.53%, parental 0.10%, unemployment 0.06%) | ZPSV arts. 8, 11, 12, 13 and 14 |
 | Long-term care contribution | 1% for each payer; 2% for the self-employed (s.p.) and for owner-managers | ZDOsk-1 art. 56(1) and (2) |
-| s.p. on normed expenses: final tax, full-time self-insured | 20% on a base up to EUR 72,000; EUR 14,400 + 35% on the base above | ZPZR art. 7(1), from tax year 2026 |
+| s.p. on normed expenses: final tax, full-time self-insured for at least nine months of the tax year | 20% on a base up to EUR 72,000; EUR 14,400 + 35% on the base above | ZPZR art. 7(1), from tax year 2026 |
 | s.p. on normed expenses: final tax, others | 20% on a base up to EUR 33,000; EUR 6,600 + 35% on the base above | ZPZR art. 7(1), from tax year 2026 |
 | Winter allowance (zimski regres) | half the Slovenian minimum wage, paid in cash; tax-free up to that amount within the business-performance bonus cap | ZPZR arts. 2(1) and 4(1) |
 
@@ -50,10 +50,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 - **Corporate tax stays at 22%.** The temporary rate under the flood reconstruction law applies for 2024 to 2028 (ZORZFS art. 64(1)). See [si-corporate-income-tax](si-corporate-income-tax.md).
 - **Normed-expense sole proprietors (normiranci).** From tax year 2026, ZPZR replaces the ZDoh-2 entry and exit tests and the flat 20% final tax (ZPZR arts. 6, 7 and 21(2)):
-  - An s.p. may use normed expenses if the average revenue of the two previous years is not over EUR 120,000 (full-time self-insured for at least nine months in each year), EUR 50,000 (not full-time self-insured in those years) or EUR 85,000 (full-time self-insured in only one of the two years). The same averages force an exit to actual expenses (ZPZR art. 6(3) and (13)).
-  - The normed expenses themselves are unchanged: 80% of revenue up to EUR 60,000 for a full-time self-insured s.p.; 80% up to EUR 12,500 and 40% from EUR 12,500 to 30,000 for others (ZDoh-2 art. 59(1) and (2); ZPZR art. 20).
-  - The final tax is 20% up to a base of EUR 72,000 (EUR 33,000 if not full-time self-insured) and 35% above (ZPZR art. 7(1)).
-  - FURS confirmed on 16 October 2026 that ZPZR governs 2026. It said that a separate law, ZIURS, would change these rules from 1 January 2026 if it enters into force after a referendum (FURS news, 16 Oct 2026).
+  - An s.p. may use normed expenses if the average revenue of the two previous years is not over EUR 120,000 (full-time self-insured for at least nine months in each year), EUR 50,000 (not full-time self-insured in those years) or EUR 85,000 (full-time self-insured in only one of the two years). The same averages force an exit to actual expenses (ZPZR art. 6(3) and (13)). An s.p. counts as full-time self-insured for nine months if insured for at least 75% of the minimum annual hours of full-time self-employed insurance (ZPZR art. 6(16)). If the s.p. traded for only part of either year, the average is adjusted pro rata to the trading period (ZPZR art. 6(4)); a year with no trading counts as zero revenue (ZPZR art. 6(14)).
+  - The normed expenses themselves are unchanged: 80% of revenue up to EUR 60,000 for an s.p. full-time self-insured for at least nine months of the tax year; 80% up to EUR 12,500 and 40% from EUR 12,500 to 30,000 for others (ZDoh-2 art. 59(1) and (2); ZPZR art. 20).
+  - The final tax is 20% up to a base of EUR 72,000 (EUR 33,000 if not full-time self-insured for nine months of the tax year) and 35% above, as a final tax (ZPZR art. 7(1) and (3)).
+  - FURS confirmed on 16 October 2026 that ZPZR governs 2026. It said that a separate law, ZIURS, would change these rules from 1 January 2026 if it enters into force after a referendum (FURS news, 16 Oct 2026). The National Assembly has called that referendum for Sunday 6 December 2026 (OdZIURS, Uradni list RS 1692/2026 of 16 Oct 2026). Until the result is known, ZPZR is the law for 2026.
   - Planning detail: [slovenia-tax-optimization](slovenia-tax-optimization.md).
 - **Winter allowance.** Employees are entitled to a winter allowance of half the minimum wage, paid within 18 days after the November pay period ends (ZPZR arts. 2(1) and 3(1)). It is not taxed up to that amount, counted together with any business-performance bonus within the ZDoh-2 art. 44(1)(12) cap (ZPZR art. 4(1)). See [slovenia-payroll](slovenia-payroll.md).
 
@@ -89,9 +89,10 @@ VAT periods and return dates are in [slovenia-vat-return](slovenia-vat-return.md
 | Source | URL | Read on |
 |---|---|---|
 | Personal Income Tax Act (ZDoh-2), consolidated text NPB 36, arts. 2, 5, 6, 15, 59, 111, 122, 132 | https://pisrs.si/pregledPredpisa?id=ZAKO4697 | 2026-10-30 |
-| Act on the Right to a Winter Allowance and the Reform of Normed Expenses (ZPZR), Uradni list RS 91/25 as amended by ZPZR-A 32/26, consolidated text NPB 1, arts. 2, 3, 4, 6, 7, 19, 20, 21 | https://pisrs.si/pregledPredpisa?id=ZAKO9359 | 2026-10-30 |
+| Act on the Right to a Winter Allowance and the Reform of Normed Expenses (ZPZR), Uradni list RS 91/25 as amended by ZPZR-A 32/26, consolidated text NPB 1, arts. 2, 3, 4, 6, 7, 19, 20, 21; in force the day after publication on 19 Nov 2025 (art. 21(1)) | https://pisrs.si/pregledPredpisa?id=ZAKO9359 | 2026-10-30 |
 | Act amending ZDoh-2 (ZDoh-2AB), Uradni list RS 104/24, consolidated text NPB 1, art. 23 | https://pisrs.si/pregledPredpisa?sop=2024-01-3309 | 2026-10-30 |
 | FURS, notice on the 2026 income tax scale and allowances (15 Dec 2025) | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx | 2026-10-30 |
+| Decree calling the referendum on ZIURS (OdZIURS), Uradni list RS 1692/2026 of 16 Oct 2026, points I to IV | https://pisrs.si/api/uradni-list/objava/u20261692.pdf | 2026-10-30 |
 | FURS news, normed expenses in 2026 and ZIURS (16 Oct 2026) | https://www.gov.si/novice/2026-10-16-ugotavljanje-davcne-osnove-z-normiranimi-odhodki-v-letu-2026-v-povezavi-z-interventnim-zakonom-ziurs/ | 2026-10-30 |
 | Corporate Income Tax Act (ZDDPO-2), consolidated text NPB 23, arts. 4, 5, 10, 60 | https://pisrs.si/pregledPredpisa?id=ZAKO4687 | 2026-10-30 |
 | Reconstruction, Development and Financing Act (ZORZFS), consolidated text NPB 4, art. 64 | https://pisrs.si/pregledPredpisa?id=ZAKO8910 | 2026-10-30 |
@@ -101,7 +102,7 @@ VAT periods and return dates are in [slovenia-vat-return](slovenia-vat-return.md
 | Long-Term Care Act (ZDOsk-1), consolidated text NPB 2, art. 56 | https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-30 |
 | FURS, income from business activity (news list) | https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/dohodnina/dohodnina_dohodek_iz_dejavnosti/ | 2026-10-30 |
 
-Not yet confirmed: the content of ZIURS and whether it enters into force for 2026 (it awaits a referendum, so the normed-expense rules above apply unless FURS announces otherwise); the 2026 euro amount of the winter allowance (half of the 2026 minimum wage, which this skill does not restate); the flat monthly compulsory health contribution (OZP) amount, which is in slovenia-social-contributions.
+Not yet confirmed: the content of ZIURS and whether it enters into force for 2026 (it goes to a referendum on 6 December 2026; ZPZR applies unless ZIURS enters into force); the 2026 euro amount of the winter allowance (half of the 2026 minimum wage, which this skill does not restate); the flat monthly compulsory health contribution (OZP) amount, which is in slovenia-social-contributions.
 
 <!-- openaccountants-cta-block -->
 
