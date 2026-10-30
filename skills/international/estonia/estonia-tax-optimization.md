@@ -49,7 +49,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- | --- |
 | **OÜ** (private limited company) | Profit reinvested or retained; wants limited liability; building value | **0% on retained profit**; 22% (22/78) only when profit is distributed or treated as distributed; owner-manager can take a salary or board fee. Details: `ee-corporate-income-tax` |
 | **FIE** (sole proprietor) | Small, simple, wants income in own hands now | Business income taxed every year: 22% income tax on the annual return, and 33% social tax on business income after allowed deductions, minimum EUR 3,508.56 and maximum EUR 36,867.60 a year (SMS § 2(5), § 7(1); EMTA). **No deferral**; unlimited personal liability. Details: `estonia-income-tax`, `estonia-social-contributions` |
-| **Ettevõtluskonto** (entrepreneur account) | Small or side income from selling services and goods, few expenses | The bank holds back **20%** of every receipt (**22%, 24% or 26%** if in the II pillar at 2%, 4% or 6%); the 20% is 22/55 income tax and 33/55 social tax. No bookkeeping and no deductions. Above **EUR 40,000** of receipts in a calendar year the person must register as an FIE or company and for VAT. The holder cannot be VAT-registered or an FIE in the same or a similar activity. EMTA says only LHV Pank offers the account (Simplified Business Income Taxation Act § 2(2), § 4, § 8(2); EMTA). Details: `estonia-income-tax` |
+| **Ettevõtluskonto** (entrepreneur account) | Small or side income from selling services and goods, few expenses, customers mainly private individuals | The bank holds back **20%** of every receipt (**22%, 24% or 26%** if in the II pillar at 2%, 4% or 6%); the 20% is 22/55 income tax and 33/55 social tax. No bookkeeping and no deductions. Above **EUR 40,000** of receipts in a calendar year the person must register as an FIE or company and for VAT. The holder cannot be VAT-registered or an FIE in the same or a similar activity. A company that pays for a service into an entrepreneur account pays 22/78 company income tax on the payment on top (EMTA's example: a EUR 100 service costs the company EUR 128.20). EMTA says only LHV Pank offers the account (Simplified Business Income Taxation Act § 2(2), § 4, § 8(2); EMTA). Details: `estonia-income-tax` |
 
 - **The deferral play.** An OÜ that keeps profit to fund hiring, equipment or expansion pays no company income tax at that stage. Tax (22/78) arises only on distribution. For anyone reinvesting, the OÜ beats the FIE, whose profit is taxed every year. Most growing businesses should be an OÜ. Entity choice detail: `ee-company-formation`.
 - **The entrepreneur account test.** It suits a person whose costs are low, because the 20% is charged on receipts, not on profit, and nothing can be deducted.
@@ -138,7 +138,7 @@ expected:
 | --- | --- |
 | **Basic exemption (maksuvaba tulu)** | **2026: EUR 8,400 a year (EUR 700 a month), the same at every income level** (TuMS § 23(1)). 2025: up to EUR 7,848, tapered between income of EUR 14,400 and EUR 25,200 and nil above (EMTA, calculation of basic exemption until the end of 2025) |
 | **Pensionable-age exemption** | EUR 9,312 a year (EUR 776 a month) from the year the person reaches pensionable age (TuMS § 23^5(1)) |
-| **II-pillar funded pension** | 2% by default; the member may choose **4% or 6%**, which then holds for at least a calendar year (KoPS § 9). The contribution is deducted before income tax is withheld (TuMS § 42(6)). EMTA: an application to change the rate is made by 30 November and applies from 1 January |
+| **II-pillar funded pension** | 2% by default; the member may choose **4% or 6%**, which then holds for at least a calendar year (KoPS § 9). The contribution is deducted before income tax is withheld (TuMS § 42(6)). An application to change the rate that reaches the register by 30 November applies from 1 January of the next year (KoPS § 17^2(8)) |
 | **III-pillar supplementary pension** | Deductible up to **15%** of the year's taxable income, maximum **EUR 6,000** (TuMS § 28(2)) |
 | **Training costs and donations** | Together up to **EUR 1,200** a year, and not more than 50% of the person's Estonian taxable income (TuMS §§ 26, 27, 28^2(1)) |
 
@@ -149,7 +149,7 @@ expected:
 
 ## Section 6 -- Holding / Participation Exemption
 
-- **Participation exemption on dividends received.** An Estonian company that receives a dividend from a company in an EEA state or Switzerland that is liable to income tax there (not in a non-cooperative jurisdiction), and that held **at least 10%** of the shares, units or votes **at the time it received the dividend**, pays no income tax again when it passes that dividend on to its own shareholders. Dividends from other foreign companies qualify on the same 10% test only if tax was withheld on the dividend or the underlying profit was taxed (TuMS § 50(1^1) points 1 and 3). This makes Estonia a workable EU holding location. Details: `ee-corporate-income-tax`.
+- **Participation exemption on dividends received.** An Estonian company that receives a dividend from a company in an EEA state or Switzerland that is liable to income tax there (not in a non-cooperative jurisdiction), and that held **at least 10%** of the shares, units or votes **at the time it received the dividend**, pays no income tax again when it passes that dividend on to its own shareholders. Dividends from other foreign companies qualify on the same 10% test only if tax was withheld on the dividend or the underlying profit was taxed (TuMS § 50(1^1) points 1 and 3). In both cases the exemption applies only if the company that paid the dividend could not deduct it from its own taxable profit (TuMS § 50(1^3)). This makes Estonia a workable EU holding location. Details: `ee-corporate-income-tax`.
 - **No minimum holding period** is set in § 50(1^1): the test is the holding when the dividend is received.
 
 **AUDIT FLASH POINT.** A holding structure must have genuine substance. A letterbox holding set up mainly for tax can be challenged: Estonian law taxes a transaction by its real economic substance where it was made to avoid tax (MKS § 84).
@@ -181,10 +181,11 @@ The most up-to-date version of this skill is maintained at [openaccountants.com]
 
 | Source | URL | Read on |
 |---|---|---|
-| Tulumaksuseadus (Income Tax Act), consolidated text in force 01.10.2026 to 31.12.2026, §§ 4, 12, 23, 23^5, 26, 27, 28, 28^2, 42, 48, 49, 50 | https://www.riigiteataja.ee/et/akt/109072026066 | 2026-10-30 |
+| Tulumaksuseadus (Income Tax Act), consolidated text in force 01.10.2026 to 31.12.2026, §§ 4, 12, 23, 23^5, 26, 27, 28, 28^2, 42, 48, 49, 50 (incl. 50(1^1), 50(1^3)) | https://www.riigiteataja.ee/et/akt/109072026066 | 2026-10-30 |
 | Sotsiaalmaksuseadus (Social Tax Act), consolidated text in force from 26.10.2026, §§ 2, 7, 10 | https://www.riigiteataja.ee/et/akt/116102026014 | 2026-10-30 |
 | Maksukorralduse seadus (Taxation Act), consolidated text in force from 26.10.2026, § 84 | https://www.riigiteataja.ee/et/akt/116102026010 | 2026-10-30 |
 | Kogumispensionide seadus (Funded Pensions Act), consolidated text in force 01.06.2025 to 31.10.2026, § 9 | https://www.riigiteataja.ee/et/akt/103122024016 | 2026-10-30 |
+| Kogumispensionide seadus (Funded Pensions Act), consolidated text in force from 31.10.2026, §§ 9, 17^2 (same § 9 wording) | https://www.riigiteataja.ee/et/akt/116102026006 | 2026-10-30 |
 | Ettevõtlustulu lihtsustatud maksustamise seadus (Simplified Business Income Taxation Act), consolidated text in force from 01.01.2026, §§ 2, 4, 8 | https://www.riigiteataja.ee/et/akt/118122025016 | 2026-10-30 |
 | Töötuskindlustuse seadus (Unemployment Insurance Act), consolidated text in force 01.10.2026 to 31.12.2026, § 3 | https://www.riigiteataja.ee/et/akt/130062026040 | 2026-10-30 |
 | EMTA, tax rates (2024 to 2026) | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates | 2026-10-30 |
@@ -195,7 +196,7 @@ The most up-to-date version of this skill is maintained at [openaccountants.com]
 | Ministry of Finance, law changes in force in 2026 | https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused | 2026-10-30 |
 | Ministry of Finance, Riigikogu approved the security tax changes (18.06.2025) | https://www.fin.ee/uudised/riigikogu-kiitis-heaks-julgeolekumaksu-muudatused | 2026-10-30 |
 
-Not yet confirmed: the Funded Pensions Act text read is the one in force to 31.10.2026; the version from 01.11.2026 was not compared for § 9. The 30 November deadline for changing the II-pillar rate comes from the EMTA tax rates page, not from KoPS § 17^2, which was not read. The EMTA salary-and-dividend guidance carries no 2026 date; its examples use older minimum-wage figures, so only its principles are relied on here.
+Not yet confirmed: the EMTA salary-and-dividend guidance carries no 2026 date; its examples use older minimum-wage figures, so only its principles are relied on here.
 
 <!-- openaccountants-cta-block -->
 
