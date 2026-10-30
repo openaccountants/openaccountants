@@ -1,10 +1,10 @@
 ---
 name: austria-vat-return
 description: "Austrian VAT (Umsatzsteuer) for tax year 2026 in the deep-tax shape: who must charge VAT, the rates under § 10 UStG 1994 (20%, 13%, 10%, the 4.9% rate on listed basic foods from 1 July 2026, 19% for Jungholz and Mittelberg), the small business exemption under § 6 Abs 1 Z 27 (EUR 55,000 with the 10% tolerance) and the EU SME scheme (EUR 100,000 EU-wide), the UVA period (monthly above EUR 100,000, quarterly, none at or below EUR 55,000), the due date on the 15th of the second following month, the annual U 1 by 30 April or 30 June, reverse charge under § 19, the recapitulative statement (ZM), the late-filing surcharge (§ 135 BAO) and late-payment surcharges (§ 217 BAO). Trigger on: Austrian VAT return, UVA, Umsatzsteuervoranmeldung, U 30, U 1, Kleinunternehmerregelung, Säumniszuschlag, Austrian reverse charge. Out of scope: the Kennzahl-by-Kennzahl bank-statement method in at-vat-return; corporate income tax in at-corporate-income-tax; non-residents and treaties in at-cross-border."
-version: 2.2
+version: 2.3
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -34,7 +34,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 |---|---|---|---|
 | Standard rate (§ 10 Abs 1) | 20% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Basic foods listed in Anlage 3, as goods supplied or imported (not restaurant or catering services), from 1 July 2026 (§ 10 Abs 1a, § 28 Abs 69). Anlage 3 has 12 items: milk, yoghurt, butter, fresh hen eggs, fresh or chilled vegetables, frozen vegetables, apples, pears and stone fruit (CN 0808 and 0809), rice, wheat flour and semolina, uncooked pasta, bread, table salt, each only within its listed CN code | 4.9% | 2026 (from 1 July) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
-| Reduced rate: goods in Anlage 1 (food not in Anlage 3, books), restaurant food, residential letting, hotel accommodation, passenger transport, waste collection, repairs of bicycles, shoes, clothing (§ 10 Abs 2) | 10% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| Reduced rate: goods in Anlage 1 (food not in Anlage 3, books), restaurant and catering food and the drinks Anlage 1 lists (only water and milk drinks; alcoholic drinks stay at 20%), residential letting, hotel accommodation, passenger transport, waste collection, repairs of bicycles, shoes, clothing (§ 10 Abs 2) | 10% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Reduced rate: goods in Anlage 2 (live animals, plants), artists, swimming pools, theatre, concerts, museums, film, circus, domestic flights, farm wine, sports event tickets (§ 10 Abs 3) | 13% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Jungholz and Mittelberg (§ 10 Abs 4) | 19% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Small business limit, previous and current year, gross (§ 6 Abs 1 Z 27) | EUR 55,000 | 2025 onward | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
@@ -96,19 +96,23 @@ Interest on assessed differences (Anspruchszinsen, § 205 BAO) applies only to i
 
 ### Example 1: Quarterly filer, Q3 2026, with the new food rate and a reverse charge
 
-A grocery and catering business in Graz had 2025 turnover of EUR 80,000, so it files quarterly UVAs. For July to September 2026 its net sales are: EUR 30,000 at 20% (catering services and other goods), EUR 8,000 at 4.9% (listed basic foods sold over the counter, all after 30 June 2026), and EUR 5,000 at 10% (other food). It bought online advertising for EUR 1,000 net from an Irish company, which is reverse-charged at 20%. Domestic input VAT on proper invoices is EUR 4,200.
+A grocery and catering business in Graz had 2025 turnover of EUR 80,000, so it files quarterly UVAs. For July to September 2026 its net sales are: EUR 18,000 of catering (food served at customers' events), EUR 4,000 of wine and beer served at those events, EUR 8,000 of non-food goods, EUR 8,000 of listed basic foods sold over the counter (all after 30 June 2026), and EUR 5,000 of other food sold over the counter. The catering food is a restaurant supply at 10% (§ 10 Abs 2 Z 1 lit b UStG). The 4.9% rate does not reach it, because § 10 Abs 1a covers only supplies and imports of goods. Wine and beer are not in Anlage 1, so they stay at 20% (§ 10 Abs 1). The rates are: EUR 12,000 at 20% (drinks 4,000 and non-food 8,000), EUR 8,000 at 4.9%, and EUR 23,000 at 10% (catering 18,000 and other food 5,000). It bought online advertising for EUR 1,000 net from an Irish company, which is reverse-charged at 20%. Domestic input VAT on proper invoices is EUR 4,200.
 
-Output VAT is 6,000 + 392 + 500 = EUR 6,892. The reverse charge adds EUR 200 output and EUR 200 input. Input VAT is 4,200 + 200 = EUR 4,400. The UVA shows a payment of EUR 2,692. The due date, 15 November 2026, is a Sunday, so the UVA and payment are due Monday 16 November 2026 (§ 108 Abs 3 BAO). If the business pays three weeks late and the five-day grace does not apply, the first late-payment surcharge is 2% of EUR 2,692, EUR 53.84; it is set because it is not below EUR 50.
+Output VAT is 2,400 + 392 + 2,300 = EUR 5,092. The reverse charge adds EUR 200 output and EUR 200 input, so output VAT is EUR 5,292. Input VAT is 4,200 + 200 = EUR 4,400. The UVA shows a payment of EUR 892. The due date, 15 November 2026, is a Sunday, so the UVA and payment are due Monday 16 November 2026 (§ 108 Abs 3 BAO). If the business pays three weeks late and the five-day grace does not apply, the first late-payment surcharge is 2% of EUR 892, EUR 17.84. It is not set, because it is below EUR 50 (§ 217 Abs 10 BAO).
 
 ```oa-check
 name: Austria quarterly UVA Q3 2026 with 4.9% food rate and reverse charge
 inputs:
-  sales_20: 30000
+  sales_drinks_20: 4000
+  sales_nonfood_20: 8000
   sales_food: 8000
-  sales_10: 5000
+  sales_catering_10: 18000
+  sales_other_food_10: 5000
   rc_service: 1000
   domestic_input_vat: 4200
 steps:
+  - sales_20: sales_drinks_20 + sales_nonfood_20
+  - sales_10: sales_catering_10 + sales_other_food_10
   - out_20: sales_20 * 0.20
   - out_food: sales_food * 0.049
   - out_10: sales_10 * 0.10
@@ -118,11 +122,15 @@ steps:
   - payable: output_total - input_total
   - first_surcharge: payable * 0.02
 expected:
+  sales_20: 12000
+  sales_10: 23000
+  out_20: 2400
   out_food: 392
-  output_total: 7092
+  out_10: 2300
+  output_total: 5292
   input_total: 4400
-  payable: 2692
-  first_surcharge: 53.84
+  payable: 892
+  first_surcharge: 17.84
 ```
 
 ### Example 2: Small business crosses the limit, inside and then outside the tolerance
@@ -169,6 +177,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Umsatzsteuergesetz 1994, RIS consolidated text as of 23.10.2026 (§ 6 Abs 1 Z 27 and Abs 3, § 10, § 19, § 21, § 28 Abs 69 and 70) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 | 2026-10-23 |
+| Umsatzsteuergesetz 1994, Anlage 1 (goods and drinks at 10%; chapter 22 lists only water 2201 90 00, milk drinks 2202 99 and vinegar 2209) and § 10 Abs 1, 1a and 2 Z 1 lit b, re-read for the catering example | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873&Anlage=1 | 2026-10-30 |
 | Bundesabgabenordnung, RIS consolidated text as of 23.10.2026 (§ 108, § 134, § 135, § 205, § 217) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 | 2026-10-23 |
 | Budgetmaßnahmengesetz 2026, BGBl. I Nr. 43/2026 (Art. 2, UStG change) | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_43/BGBLA_2026_I_43.html | 2026-10-23 |
 | Änderung des Umsatzsteuergesetzes 1994, BGBl. I Nr. 37/2026 (4.9% rate, Anlage 3) | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_37/BGBLA_2026_I_37.html | 2026-10-23 |
