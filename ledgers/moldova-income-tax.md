@@ -2,7 +2,7 @@
 
 **Local 2026 writer draft. Ordinary gaps remain; no whole-country independent review, accountant attestation or complete-coverage claim.**
 
-Guide SHA256: `2cf9262682c93b07bda9e8c7f3e66eb027c86833358347950daa12eda2223a05`. Short exact original-language quotations are tied to full retained paragraph contexts, official URLs, source hashes and read dates in the JSON. A source row can contain linked statutory conditions; the reviewer must verify the whole retained paragraph and its Guide application, not only the quotation.
+Guide SHA256: `0cc3507d884edd3a4f8993cfd1331cecfb0db164ac5327fa592e9e8d6391654f`. Short exact original-language quotations are tied to full retained paragraph contexts, official URLs, source hashes and read dates in the JSON. A source row can contain linked statutory conditions; the reviewer must verify the whole retained paragraph and its Guide application, not only the quotation.
 
 | ID | Rule/figure or exact source-rule opening | Guide section | Act/article and official URL | Short original-language quote | Read |
 |---|---|---|---|---|---|
@@ -382,6 +382,10 @@ Guide SHA256: `2cf9262682c93b07bda9e8c7f3e66eb027c86833358347950daa12eda2223a05`
 | MD-IND-374 | MF40approvalonly;actualseparatecapital-documentannexnotretrieved | The base / Sources: Unretrieved fullcapitaldocumentlist | [MFOrder40/2018approval](https://www.legis.md/cautare/getResults?doc_id=105006&lang=ro) | Republica Moldova MINISTERUL FINANȚELOR ORDIN Nr. 40 din 06-02-2018 ORDIN Publicat : 16-02-2018 în Monitorul Oficial Nr. 48-57 art. 199 Întru executarea art.42 alin.(1) | 2026-10-30 |
 | MD-IND-375 | Cash-registerreceiptalone establishescashcollection,notcapitalcost | The base: Capital acquisition proof | [SFSOrder13/2025question29.2.4.4;Code42(1)](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/1215) | Bonul fiscal reprezintă document confirmativ la determinarea bazei valorice a activului de capital? În conformitate cu prevederile art. 42 alin. (1) din Codul fiscal, | 2026-10-30 |
 | MD-IND-376 | InheritancemarketvalueatacquisitionandlegalheircertificateplusvaluerorStatepropertyvaluecertificate | The base: Capital acquisition proof | [SFSOrder13/2025question29.2.4.18;Code42(1)(d)](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/1215) | Care este regimul fiscal în cazul înstrăinării de către persoana fizică, care nu practică activitate de întreprinzător, a proprietății moștenite? Conform art. 18 lit. | 2026-10-30 |
+| MD-IND-377 | November2025short-term BNMbase6.00%;sourceinputfor2026Code228dailycalculation | Penalties and interest / Sources | [BNM6November2025 monetarypolicydecision point1](https://bnm.md/en/node/69226) | 06.11.2025 Decizia de politică monetară, 06.11.2025 Comitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat | 2026-10-30 |
+| MD-IND-378 | 2026ordinarydailypercentage0.0301%;decimalmultiplier0.000301,derivedfrom6%Novemberbase+5points/365days rounded4decimalplaces | Penalties and interest / Sources | [FiscalCode228(3);BNM6November2025point1;2026calendar365days](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | (3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de | 2026-10-30 |
+| MD-IND-379 | CurrentmedicaldailychargeusestheCodecalculation;inter-account-transfer-documentexceptionpreserved | Penalties and interest / Sources | [Law1593/2002 art30(1)-(2)](https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro) | Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în | 2026-10-30 |
+| MD-IND-380 | MedicalCode-methodswitchoperative1January2026underLaw146/2025,notanassumedcontinuationofold0.1% | Penalties and interest / Sources | [Law1593art30January2026version;Law146/2025commencementannotations](https://www.legis.md/cautare/getResults?doc_id=149273&lang=ro) | Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în | 2026-10-30 |
 
 ## Complete predecessor-topic destinations
 
@@ -810,7 +814,7 @@ Every original unit and individual old table/bullet/test claim is preserved in t
 
 ## Removed and why
 
-Baseline 46135 bytes; current 58690 bytes. More than 25% shorter: False.
+Baseline 46135 bytes; current 60357 bytes. More than 25% shorter: False.
 - Duplicated old headings/rate tables/boilerplate consolidated into the canonical nine sections; every original rule/table/bullet has a destination.
 - Unsupported employee 6% social withholding and additive 27% model corrected to statutory category/base method; old fixtures archived and explicitly corrected.
 - Guessed employer category, exemption, missing-IDNP refusal, non-cumulative payroll and legal-year assumptions replaced by actual facts and official rules.

@@ -1,7 +1,7 @@
 ---
 name: moldova-payroll
 description: "Compute Moldova payroll withholding for 2026 using the cumulative income-tax method, documented exemption months and separate social/medical contribution bases. Covers ordinary private and public employers, listed aviation conditions, qualifying agriculture, joiners, leavers, advances, benefits, corrections, IT-park transitions, nonresident source rules and treaty evidence. Use for salary tax, gross to net, CNAS, CNAM, IPC21, IRM19, personal and dependent exemptions, payment timing and payroll reconciliation. This source-cited writer draft corrects the former employee social deduction and exemption assumptions, preserves predecessor topics through explicit destinations, and requires whole-country independent review. Its stated implementation gaps keep the domain partial; it does not claim accountant attestation or comprehensive coverage."
-version: 0.2
+version: 0.3
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-30
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova payroll withholding, 2026 v0.2
+# Moldova payroll withholding, 2026 v0.3
 
 ## Who this applies to
 
@@ -131,7 +131,11 @@ IT-park, day-worker, dual-education, sickness, holiday, agriculture and fixed-fo
 
 ## Penalties and interest
 
-PIT and medical late charges use the applicable Fiscal Code art. 228/Law 1593 art. 30 mechanism, rather than the social-insurance daily rate. Article 228 ordinarily runs from the day after the due date through payment inclusive and sets its annual BNM-derived formula; the actual published 2026 daily-rate body and complete medical commencement chain remain to be retained. Social contribution arrears use the 2026 social-budget 0.1% per delayed day of outstanding principal through actual payment, with Law 489's transfer/set-off exceptions and special qualifying-agriculture timing. Do not compound every liability or multiply the bank balance by a guessed historical rate. [Code art. 228][code]; [Law 1593 art. 30][health]; [Law 489 art. 28][social]; [social budget art. 4][socialbudget].
+**Calendar-2026 ordinary tax late charge.** Code art. 228(3) and the BNM decision of 6 November 2025, point 1, supply the calculation: the retained **6.00%** short-term policy rate, rounded up to a whole percent, plus **5 percentage points**, divided by **365 days**, gives **0.0301% per delayed day** after rounding the daily percentage to four decimal places. The decimal multiplier is **0.000301**. Apply it to the established outstanding principal for each chargeable day; split changes in principal and calendar year. This calculation concerns debts governed by art. 228 and does not replace a separate statutory regime's rate or establish case-specific relief. [Code art. 228(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [BNM decision, point 1](https://bnm.md/en/node/69226).
+
+**Medical and social rates remain separate.** Medical Law 1593 art. 30(1)–(1^1) applies the Code method from **1 January 2026**, as recorded in the January text and Law 146/2025 commencement annotations, so the above 2026 medical daily rate is **0.0301%**. Preserve art. 30(2)'s documented inter-account-transfer examination exception. Social-contribution late charges retain the separate **0.1%** annual-budget rate; do not use it for ordinary tax or medical premiums. [Current Law 1593 art. 30](https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro); [January art. 30 and commencement](https://www.legis.md/cautare/getResults?doc_id=149273&lang=ro); [Law 320/2025 art. 4](https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro).
+
+PIT and medical late charges use the applicable Fiscal Code art. 228/Law 1593 art. 30 mechanism, rather than the social-insurance daily rate. Article 228 ordinarily runs from the day after the due date through payment inclusive and sets its annual BNM-derived formula; apply the actual debt movements and documented statutory non-accrual periods. Social contribution arrears use the 2026 social-budget 0.1% per delayed day of outstanding principal through actual payment, with Law 489's transfer/set-off exceptions and special qualifying-agriculture timing. Do not compound every liability or multiply the bank balance by a guessed historical rate. [Code art. 228][code]; [Law 1593 art. 30][health]; [Law 489 art. 28][social]; [social budget art. 4][socialbudget].
 
 Filing fines depend on the liable category under art. 232: for the corporate category, art. 260(1) provides 500–1,000 per return with a 10,000 total cap; the individual category has different amounts. Article 261(4) provides the separate 20%–30% understatement sanction, with its qualifying self-correction exception; evasion has the separate 80%–100% rule. Retain the actual notice, offence, correction date and debt movements. A payroll calculation alone cannot establish every administrative/criminal sanction or eliminate a lawful late charge. [Code arts. 232, 260–261][code]; [regulation points 26, 48^2–49][reg].
 
@@ -234,6 +238,7 @@ Read 30 October 2026. [The payroll ledger](../../../ledgers/moldova-payroll.md) 
 
 | Official source | Scope actually read | Read on |
 |---|---|---|
+| [BNM monetary-policy decision, 6 November 2025, point 1](https://bnm.md/en/node/69226) | Fetched 6.00% short-term base input; calendar-2026 daily percentage derived with Code 228(3), rather than copied from an old rate. | 2026-10-30 |
 | [Current Fiscal Code][code] | Selected employment, benefit, exemption, deduction, filing, nonresident/treaty and enforcement provisions cited above | 2026-10-30 |
 | [January Code][jan] | Personal/spouse/dependent and individual-deduction provisions compared to current selected text | 2026-10-30 |
 | [Government Decision 697, 1 January 2026 regulation][reg] | Scope, benefits, exemption/documents and full rendered computation/correction text; attached annex forms and image loan formula are not certified as retrieved | 2026-10-30 |
@@ -245,7 +250,7 @@ Read 30 October 2026. [The payroll ledger](../../../ledgers/moldova-payroll.md) 
 | [Medical budget, Law 321/2025 art. 4][medicalbudget] | Current percentage premium and fixed-category amounts | 2026-10-30 |
 | [Social budget, Law 320/2025 arts. 3–4][socialbudget] | Original 2026 fixed amounts/daily social charge; later charging-version comparison remains open | 2026-10-30 |
 
-Not yet confirmed: full 2026 commencement/form-version comparison beyond the selected January/current checks; operative attached IPC21 annex-3/4 and annual information-form code sets, all liquidation/historical correction routes and remaining nominal special categories; Government benefit/travel/food/training limits, exact loan-formula image/2026 BNM benchmark, meal-ticket nominal amount and every non-cash exception; statutory entitlement computation for contractual wage/leave/sickness/severance and execution deductions; the actual published tax/medical daily-rate body and medical commencement chain; complete IT-park/software-occupation eligibility and historical entry/exit treatment; treaty-by-treaty employment/social coverage. The old 2025 figures 5,500 minimum and 16,100 forecast, employee 6%/27% net-pay model, universal 32% hazardous-work default, blanket missing-IDNP refusal, automatic personal exemption without application, non-cumulative monthly formula and assumed 2026 continuity are corrected or retained as historical subjects, not certified current rules. The old dividend/farming/winnings summary belongs to the individual/corporate income classifications; a statutory peasant-farm 7% income-tax rate is not a general payroll or farming-distribution withholding rate. All old examples/tests remain in the archive with their legal-assumption corrections. The payroll domain stays partial until ordinary gaps and whole-country independent review are closed.
+Not yet confirmed: full 2026 commencement/form-version comparison beyond the selected January/current checks; operative attached IPC21 annex-3/4 and annual information-form code sets, all liquidation/historical correction routes and remaining nominal special categories; Government benefit/travel/food/training limits, exact loan-formula image/2026 BNM benchmark, meal-ticket nominal amount and every non-cash exception; statutory entitlement computation for contractual wage/leave/sickness/severance and execution deductions; taxpayer-specific pre-2026 medical-penalty transition and arrears-account allocation; complete IT-park/software-occupation eligibility and historical entry/exit treatment; treaty-by-treaty employment/social coverage. The old 2025 figures 5,500 minimum and 16,100 forecast, employee 6%/27% net-pay model, universal 32% hazardous-work default, blanket missing-IDNP refusal, automatic personal exemption without application, non-cumulative monthly formula and assumed 2026 continuity are corrected or retained as historical subjects, not certified current rules. The old dividend/farming/winnings summary belongs to the individual/corporate income classifications; a statutory peasant-farm 7% income-tax rate is not a general payroll or farming-distribution withholding rate. All old examples/tests remain in the archive with their legal-assumption corrections. The payroll domain stays partial until ordinary gaps and whole-country independent review are closed.
 
 [code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
 [jan]: https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro

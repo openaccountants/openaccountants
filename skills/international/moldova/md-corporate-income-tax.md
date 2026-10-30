@@ -1,7 +1,7 @@
 ---
 name: md-corporate-income-tax
 description: "Compute Moldova resident-company corporate income tax for 2026, including the ordinary taxable-profit reconciliation and the separate eligible non-VAT SME accounting-income regime. Use for regime and legal-category selection, business expenses, employee benefits, financing, depreciation, losses, foreign-tax credits, instalments, distributions and withholding. Distinguish company tax from shareholder withholding and the dividend-linked payment-deferral option. Establish actual tax-period, VAT, ownership, activity, profit-origin and payment facts before calculating. This source-cited writer draft preserves the earlier Guide subjects, states exact remaining ordinary and specialist gaps, and requires whole-country independent review before publication. It does not claim accountant attestation or comprehensive coverage."
-version: 0.3
+version: 0.4
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-30
@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 ---
 
-# Moldova corporate income tax, 2026 v0.3
+# Moldova corporate income tax, 2026 v0.4
 
 ## Who this applies to
 
@@ -156,7 +156,9 @@ Reconcile the approved current return to the general ledger, asset/loss/credit s
 
 ## Penalties and interest
 
-Late tax accrues from the day after its due date through actual payment inclusive. Article 228(3) sets the annual daily rate from the preceding November BNM short-term policy rate rounded up to a whole percentage point, plus 5 percentage points, divided by days in the year and mathematically rounded to four decimal places. The exact 2026 published daily-rate body is not yet retained/verified here; do not reuse an old figure or compound the debt automatically. Apply the actual account movements, statutory exceptions and the corrected-return cap in art. 228(2^1). [Art. 228][code].
+**Calendar-2026 ordinary tax late charge.** Code art. 228(3) and the BNM decision of 6 November 2025, point 1, supply the calculation: the retained **6.00%** short-term policy rate, rounded up to a whole percent, plus **5 percentage points**, divided by **365 days**, gives **0.0301% per delayed day** after rounding the daily percentage to four decimal places. The decimal multiplier is **0.000301**. Apply it to the established outstanding principal for each chargeable day; split changes in principal and calendar year. This calculation concerns debts governed by art. 228 and does not replace a separate statutory regime's rate or establish case-specific relief. [Code art. 228(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [BNM decision, point 1](https://bnm.md/en/node/69226).
+
+Late tax accrues from the day after its due date through actual payment inclusive. Article 228(3) sets the annual daily rate from the preceding November BNM short-term policy rate rounded up to a whole percentage point, plus 5 percentage points, divided by days in the year and mathematically rounded to four decimal places. Do not compound the debt automatically. Apply the actual account movements, statutory exceptions and the corrected-return cap in art. 228(2^1). [Art. 228][code].
 
 For corporate taxpayers within art. 232(a), failure to follow return preparation/submission rules carries 500–1,000 per return, with the 10,000 total cap in art. 260(1). Understatement through false return data has the separate 20%–30% sanction; qualifying self-correction is excepted under art. 261(4^1). Evasion has its separate 80%–100% rule. Understatement in the art. 87(1^1) deferred-payment class has the specific 1,000–10,000 rule; distinguish its commencement/application from ordinary understatement. [Arts. 232, 260(1), (6), 261(4)–(5)][code]; [Law 41 arts. I(7), X(2)][amend].
 
@@ -243,6 +245,7 @@ Read 30 October 2026. These are writer primary-source checks; independent whole-
 
 | Official source | Selected reads and limits | Read |
 |---|---|---|
+| [BNM monetary-policy decision, 6 November 2025, point 1](https://bnm.md/en/node/69226) | Fetched 6.00% short-term base input; calendar-2026 daily percentage derived with Code 228(3), rather than copied from an old rate. | 2026-10-30 |
 | [Fiscal Code, current 30 October consolidation][code] | Selected corporate scope, deduction, accounting, SME, credit, distribution, filing and enforcement articles cited above; ordinary browser body read after automated retrieval returned 403. No full-Code audit claimed | 2026-10-30 |
 | [Fiscal Code, 1 January version][jan] | Art. 54^1 threshold and commencement notes | 2026-10-30 |
 | [Fiscal Code, 27 March version][mar] | Art. 54^1 and Law 41 commencement; current rules compared with January and later versions | 2026-10-30 |
@@ -256,7 +259,7 @@ Read 30 October 2026. These are writer primary-source checks; independent whole-
 | [CNAS 2026 instructions][average] | Point 12.1 records the 17,400 forecast salary and Government Decision 773/2025; used only for that sourced input | 2026-10-30 |
 | [Finance Ministry 2026 explanation][changes] | Corroborating new payment/deduction rules, not a substitute for the operative Code; January SME summary is superseded by Law 41 | 2026-10-30 |
 
-Not yet confirmed: all 2026 commencement interactions beyond the selected transitions; current approved return lines and filing/payment implementation; travel annex-2 destination/currency/rate/ceiling values and actual minimum domestic transport tariffs, remaining special personnel/trip cases; current meal-voucher nominal limit/scheme and any employee-benefit cases beyond the sourced transport/food, development and recreation methods; attached numerical asset-life ranges and approved asset-register/repair-form fields, historical-transition/capped-car implementation beyond the cited ordinary methods, and all donation/undocumented-expense circular-base computations; the exact operational prorata rounding and corrected-election process for art. 87(1^1), including the denominator and applicable election rules for distributions from 2023–2025 origin profits; actual 2026 daily-rate body; full specialist incentive/free-zone/IT-park/financial/reorganisation/liquidation methods; current treaty-by-treaty rates and procedures. The old unsourced universal treaty ranges of 0%–5% and 0%–10% are not certified rules. Actual facts, authorisations, notices and receipts remain required. The domain stays partial until ordinary gaps and whole-pack review are resolved.
+Not yet confirmed: all 2026 commencement interactions beyond the selected transitions; current approved return lines and filing/payment implementation; travel annex-2 destination/currency/rate/ceiling values and actual minimum domestic transport tariffs, remaining special personnel/trip cases; current meal-voucher nominal limit/scheme and any employee-benefit cases beyond the sourced transport/food, development and recreation methods; attached numerical asset-life ranges and approved asset-register/repair-form fields, historical-transition/capped-car implementation beyond the cited ordinary methods, and all donation/undocumented-expense circular-base computations; the exact operational prorata rounding and corrected-election process for art. 87(1^1), including the denominator and applicable election rules for distributions from 2023–2025 origin profits; full specialist incentive/free-zone/IT-park/financial/reorganisation/liquidation methods; current treaty-by-treaty rates and procedures. The old unsourced universal treaty ranges of 0%–5% and 0%–10% are not certified rules. Actual facts, authorisations, notices and receipts remain required. The domain stays partial until ordinary gaps and whole-pack review are resolved.
 
 [code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
 [jan]: https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro

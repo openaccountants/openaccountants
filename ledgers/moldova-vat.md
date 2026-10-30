@@ -2,7 +2,7 @@
 
 **Writer draft only. Whole-country independent review and source/procedure gaps remain open.**
 
-Guide SHA256: `f10eff04da4072feaca4310e8e2e2ccc24689bd404c381e4656bcf732c6e0a20`. Exact quotations, full statutory paragraph contexts, original-language text, source hashes, URLs and read dates are retained in the JSON. Review each whole rule and its Guide application; one row can contain linked legal conditions.
+Guide SHA256: `ad52a74372fc263bc1a03909ca41405efe624e2307e9a32e142201107c6480d9`. Exact quotations, full statutory paragraph contexts, original-language text, source hashes, URLs and read dates are retained in the JSON. Review each whole rule and its Guide application; one row can contain linked legal conditions.
 
 |ID|Rule/figure or original source-rule opening|Guide section|Act/article and official source|Short exact original-language quote|Read|
 |---|---|---|---|---|---|
@@ -358,6 +358,8 @@ Guide SHA256: `f10eff04da4072feaca4310e8e2e2ccc24689bd404c381e4656bcf732c6e0a20`
 | MD-VAT-350 | 2. Seria și numărul facturii nu este atribuită furnizorului ce a eliberat-o. 8 Eroare la completarea Anexei nr.2 la declarația TVA „Lista facturilor fiscale eli | Deadlines and filing | [Order1164/2012 annex2 point2](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro) | 2. Seria și numărul facturii nu este atribuită furnizorului ce a eliberat-o. 8 Eroare la completarea Anexei nr.2 la declarația TVA „Lista facturilor fiscale | 2026-10-30 |
 | MD-VAT-351 | 1. Nu este completat: - Codul fiscal al cumpărătorului; - Data eliberării facturii fiscale; - Seria și/sau numărul facturii fiscale. | Deadlines and filing | [Order1164/2012 annex2 point1](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro) | 1. Nu este completat: - Codul fiscal al cumpărătorului; - Data eliberării facturii fiscale; - Seria și/sau numărul facturii fiscale. | 2026-10-30 |
 | MD-VAT-352 | 2. Seria și numărul facturii nu este atribuită furnizorului ce a eliberat-o. [Anexa nr.2 modificată prin OSFS529 din 04.11.25, MO565-568/13.11.25 art.993; în vi | Deadlines and filing | [Order1164/2012 annex2 point2](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro) | 2. Seria și numărul facturii nu este atribuită furnizorului ce a eliberat-o. [Anexa nr.2 modificată prin OSFS529 din 04.11.25, MO565-568/13.11.25 art.993; în vigoare 13.11.25] | 2026-10-30 |
+| MD-VAT-353 | November2025short-term BNMbase6.00%;sourceinputfor2026Code228dailycalculation | Penalties and interest / Sources | [BNM6November2025 monetarypolicydecision point1](https://bnm.md/en/node/69226) | 06.11.2025 Decizia de politică monetară, 06.11.2025 Comitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat | 2026-10-30 |
+| MD-VAT-354 | 2026ordinarydailypercentage0.0301%;decimalmultiplier0.000301,derivedfrom6%Novemberbase+5points/365days rounded4decimalplaces | Penalties and interest / Sources | [FiscalCode228(3);BNM6November2025point1;2026calendar365days](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | (3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de | 2026-10-30 |
 
 ## Complete predecessor-topic destinations
 
@@ -628,7 +630,7 @@ The JSON preserves all135 original coarse units plus individual table/bullet cla
 
 ## Removed and why
 
-Original bytes: 13083. Draft bytes: 43382. More than25% shorter: False.
+Original bytes: 13083. Draft bytes: 44434. More than25% shorter: False.
 - Duplicated old headings, rates and disclaimer boilerplate consolidated into canonical nine sections; platform CTA preserved.
 - Invented 17-box map, stale deadline/threshold and automatic tax defaults corrected against law and full current VAT12 instructions.
 - All six old transaction fixtures and supplier patterns archived and mapped; no unsupported supplier, use, export or documentation assumption accepted as verified.

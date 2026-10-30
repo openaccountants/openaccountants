@@ -2,7 +2,7 @@
 
 **Local 2026 writer draft. Ordinary gaps remain; no whole-country independent review, accountant attestation or complete-coverage claim.**
 
-Guide SHA256: `d01bc814c67583113595a619f6f4a95bff039d0abc89522e1583a227f1bfd10c`. Short exact original-language quotations are tied to full retained paragraph contexts, official URLs, source hashes and read dates in the JSON. A source row can contain linked statutory conditions; the reviewer must verify the whole retained paragraph and its Guide application, not only the quotation.
+Guide SHA256: `f8e0083a481d3a72837a3a1056b5ac355c96dd7d44904cbb1c9f56269feddc40`. Short exact original-language quotations are tied to full retained paragraph contexts, official URLs, source hashes and read dates in the JSON. A source row can contain linked statutory conditions; the reviewer must verify the whole retained paragraph and its Guide application, not only the quotation.
 
 | ID | Rule/figure or exact source-rule opening | Guide section | Act/article and official URL | Short original-language quote | Read |
 |---|---|---|---|---|---|
@@ -202,6 +202,10 @@ Guide SHA256: `d01bc814c67583113595a619f6f4a95bff039d0abc89522e1583a227f1bfd10c`
 | MD-PR-194 | Nonresident salary, management remuneration and benefits source categories | The base / Deadlines and filing / Cross-border points | [Fiscal Code art71(n)–(o)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | n) veniturile primite de persoanele fizice nerezidente sub formă de salarii și alte remunerații similare din activitatea desfășurată conform contractului (acordului) de muncă şi/sau | 2026-10-30 |
 | MD-PR-195 | Specific nonresident self-assessment/cessation route | The base / Deadlines and filing / Cross-border points | [Fiscal Code art74](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 74. Reguli de impozitare a veniturilor nerezidenţilor obţinute de la alte persoane rezidente (1) Veniturile nerezidenţilor obţinute din Republica Moldova de la persoane | 2026-10-30 |
 | MD-PR-196 | Annual individual filing distinguished from entity/professional categories | The base / Deadlines and filing / Cross-border points | [Fiscal Code art83](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 83. Prezentarea declaraţiei cu privire la impozitul pe venit (1) Dreptul de a prezenta declaraţia cu privire la impozitul pe venit îl au | 2026-10-30 |
+| MD-PR-197 | November2025short-term BNMbase6.00%;sourceinputfor2026Code228dailycalculation | Penalties and interest / Sources | [BNM6November2025 monetarypolicydecision point1](https://bnm.md/en/node/69226) | 06.11.2025 Decizia de politică monetară, 06.11.2025 Comitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat | 2026-10-30 |
+| MD-PR-198 | 2026ordinarydailypercentage0.0301%;decimalmultiplier0.000301,derivedfrom6%Novemberbase+5points/365days rounded4decimalplaces | Penalties and interest / Sources | [FiscalCode228(3);BNM6November2025point1;2026calendar365days](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | (3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de | 2026-10-30 |
+| MD-PR-199 | CurrentmedicaldailychargeusestheCodecalculation;inter-account-transfer-documentexceptionpreserved | Penalties and interest / Sources | [Law1593/2002 art30(1)-(2)](https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro) | Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în | 2026-10-30 |
+| MD-PR-200 | MedicalCode-methodswitchoperative1January2026underLaw146/2025,notanassumedcontinuationofold0.1% | Penalties and interest / Sources | [Law1593art30January2026version;Law146/2025commencementannotations](https://www.legis.md/cautare/getResults?doc_id=149273&lang=ro) | Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în | 2026-10-30 |
 
 ## Complete predecessor-topic destinations
 
@@ -606,7 +610,7 @@ Every original unit and individual old table/bullet/test claim is preserved in t
 
 ## Removed and why
 
-Baseline 44386 bytes; current 40394 bytes. More than 25% shorter: False.
+Baseline 44386 bytes; current 42170 bytes. More than 25% shorter: False.
 - Duplicated old headings/rate tables/boilerplate consolidated into the canonical nine sections; every original rule/table/bullet has a destination.
 - Unsupported employee 6% social withholding and additive 27% model corrected to statutory category/base method; old fixtures archived and explicitly corrected.
 - Guessed employer category, exemption, missing-IDNP refusal, non-cumulative payroll and legal-year assumptions replaced by actual facts and official rules.

@@ -2,7 +2,7 @@
 
 **Expanded2026 writer draft. Whole-country review, ordinary source/procedure gaps and accountant attestation remain open.**
 
-Guide SHA256: `83e3de9c9aa8b3291b9e39e86b37b2b1123d00c8a08cc803165507c413a75ed2`. JSON retains each short exact original-language quote, full context, URL, read date and source hash. Independent review must check the actual Guide application and context, not quote presence alone.
+Guide SHA256: `3911999abf4219744a6ea66eff2b53e5fda8acfd4c61357c0f413cb65a20763a`. JSON retains each short exact original-language quote, full context, URL, read date and source hash. Independent review must check the actual Guide application and context, not quote presence alone.
 
 |ID|Rule/figure or exact source-rule opening|Guide section|Act/article and official source|Short exact original-language quote|Read|
 |---|---|---|---|---|---|
@@ -262,6 +262,8 @@ Guide SHA256: `83e3de9c9aa8b3291b9e39e86b37b2b1123d00c8a08cc803165507c413a75ed2`
 | MD-XB-254 | Tabelul nr.1 Suma venitului achitat, impozitul pe venit şi primele de asigurare obligatorie de asistenţă medicală reţinute din acesta la codul 11 col. 4 – suma  | Deadlines and filing; Sources | [MF Order94/2020 annex2 Table1 salary code11](https://www.legis.md/cautare/getResults?doc_id=154168&lang=ro) | Tabelul nr.1 Suma venitului achitat, impozitul pe venit şi primele de asigurare obligatorie de asistenţă medicală reţinute din acesta la codul 11 col. 4 | 2026-10-30 |
 | MD-XB-255 | Română Русский 2025 2024 2021 2018 2017 Fişa actului juridic Print Pdf Republica Moldova MINISTERUL FINANȚELOR ORDIN Nr. 140 din 20-11-2017 privind aprobarea un | Deadlines and filing; Sources | [MF Order140/2017 enacting form scope; attachments not retained](https://www.legis.md/cautare/getResults?doc_id=148920&lang=ro) | Română Русский 2025 2024 2021 2018 2017 Fişa actului juridic Print Pdf Republica Moldova MINISTERUL FINANȚELOR ORDIN Nr. 140 din 20-11-2017 privind aprobarea unor | 2026-10-30 |
 | MD-XB-256 | Republica Moldova PARLAMENTUL COD Nr. 1163 din 24-04-1997 COD FISCAL AL REPUBLICII MOLDOVA Publicat : 18-09-1997 în Monitorul Oficial Nr. 62 art. 522 MODIFICAT  | Deadlines and filing; Sources | [Fiscal Code consolidation heading](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Republica Moldova PARLAMENTUL COD Nr. 1163 din 24-04-1997 COD FISCAL AL REPUBLICII MOLDOVA Publicat : 18-09-1997 în Monitorul Oficial Nr. 62 art. 522 MODIFICAT | 2026-10-30 |
+| MD-XB-257 | November2025short-term BNMbase6.00%;sourceinputfor2026Code228dailycalculation | Penalties and interest / Sources | [BNM6November2025 monetarypolicydecision point1](https://bnm.md/en/node/69226) | 06.11.2025 Decizia de politică monetară, 06.11.2025 Comitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat | 2026-10-30 |
+| MD-XB-258 | 2026ordinarydailypercentage0.0301%;decimalmultiplier0.000301,derivedfrom6%Novemberbase+5points/365days rounded4decimalplaces | Penalties and interest / Sources | [FiscalCode228(3);BNM6November2025point1;2026calendar365days](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | (3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de | 2026-10-30 |
 
 ## Complete predecessor-topic destinations
 
@@ -306,7 +308,7 @@ All26 original paragraph/table units and split bullet/source claims retain full 
 
 ## Removed and why
 
-Original 10653 bytes;draft 48692 bytes;more than25% shorter: False.
+Original 10653 bytes;draft 49756 bytes;more than25% shorter: False.
 - Prior short screening headings consolidated into canonical nine sections.
 - Old2024 Code links superseded before the stamped marker; stamped source list and attribution preserved unchanged.
 - All three predecessor decision fixtures and prior legal-person treaty-evidence correction retained, with current-law scope expanded.

@@ -2,7 +2,7 @@
   "status": "LOCAL 2026 WRITER DRAFT; ordinary and specialist gaps explicit; no independent review or comprehensive-coverage claim",
   "slug": "moldova-income-tax",
   "Guide_path": "skills/international/moldova/moldova-income-tax.md",
-  "Guide_sha256": "2cf9262682c93b07bda9e8c7f3e66eb027c86833358347950daa12eda2223a05",
+  "Guide_sha256": "0cc3507d884edd3a4f8993cfd1331cecfb0db164ac5327fa592e9e8d6391654f",
   "rows": [
     {
       "id": "MD-IND-001",
@@ -5265,6 +5265,73 @@
       "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-SFS1215-INHERITANCE.json",
       "source_text_sha256": "6911534b2c8e3c29cc217dddafab60ba9e759c6f8134f8b3fd7e23eb37bec6e9",
       "source_context": "Care este regimul fiscal în cazul înstrăinării de către persoana fizică, care nu practică activitate de întreprinzător, a proprietății moștenite?\n\n        Conform art. 18 lit. e) din Codul fiscal, creşterea de capital definită la art.40 alin.(7) din Cod, constituie sursă de venit impozabilă, care se include în venitul brut.\n       Titlurile (cotele) de participare, obligaţiunile, alte titluri de proprietate în activitatea de întreprinzător, reprezintă active de capital potrivit art. 39 alin. (1) lit. a) din Codul fiscal.\n\n        În conformitate cu prevederile art. 40 alin. (1) din Codul fiscal, mărimea creşterii sau pierderii de capital provenite din vînzare, schimb sau din altă formă de înstrăinare a activelor de capital este egală cu diferenţa dintre suma încasată (venitul obţinut) şi baza valorică a acestor active.\n        Astfel, obligația fiscală la impozitul pe venit urmează a fi calculată reieșind din prevederile Capitolului 5 Titlul II din Codul fiscal de către contribuabil, care a înstrăinat proprietate moștenită.\n       Totodată, potrivit art. 42 alin. (1) lit. d) din Cod, bază valorică a activelor de capital obținute prin moștenire, se confirmă documentar conform ordinului Ministerului Finanțelor nr.40 din 06.02.2018 și constituie valoarea de piață a activelor de capital obținute prin moștenire, la data dobândirii dreptului de proprietate.\n\n        Confirmarea documentară a bazei valorice în cazul proprietății obținute prin moștenire se asigură prin următoarele modalități:\n        1) Certificatul de moștenitor legal și raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piață a activului la data dobândirii dreptului de proprietate;\n\n       2) Certificatul de moștenitor legal și certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să țină evidența de stat a bunurilor imobile.\n        Respectiv, conform art. 40 alin. (7) din Codul fiscal, suma creșterii de capital în perioada fiscală este egală cu 50% din suma excedentară a creșterii de capital recunoscute peste nivelul oricăror pierderi de capital suportate pe parcursul perioadei fiscale.\n\n       Astfel, persoanele fizice care înstrăinează proprietatea moștenită, urmează să calculeze impozitul pe venit reieșind din suma impozabilă a creșterii de capital, aplicând cota stabilită la art.15 lit. a) din Codul Fiscal.\n        [Modificare în baza generalizată a practicii fiscale în baza Legii pentru modificarea unor acte normative (ce vizează politica bugetar-fiscală şi vamală) nr.214 din 31.07.2024, Monitorul Oficial al R. Moldova nr. 355-357 din 15.08.2024, în vigoare începând cu 01.01.2025]",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-IND-377",
+      "rule_or_figure": "November2025short-term BNMbase6.00%;sourceinputfor2026Code228dailycalculation",
+      "Guide_section": "Penalties and interest / Sources",
+      "act_article_or_official_section": "BNM6November2025 monetarypolicydecision point1",
+      "official_url": "https://bnm.md/en/node/69226",
+      "exact_original_language_quote": "06.11.2025 Decizia de politică monetară, 06.11.2025 Comitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-BASE.json",
+      "source_text_sha256": "042305a1147d2b79792e79f850619f94144406e0e689fa213123ee6070e4aa19",
+      "source_context": "06.11.2025\nDecizia de politică monetară, 06.11.2025\nComitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat prin vot unanim următoarea hotărâre:\n1. Se menține rata de bază aplicată la principalele operațiuni de politică monetară pe termen scurt la nivelul actual de 6,00 la sută anual.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-IND-378",
+      "rule_or_figure": "2026ordinarydailypercentage0.0301%;decimalmultiplier0.000301,derivedfrom6%Novemberbase+5points/365days rounded4decimalplaces",
+      "Guide_section": "Penalties and interest / Sources",
+      "act_article_or_official_section": "FiscalCode228(3);BNM6November2025point1;2026calendar365days",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-228.json",
+      "source_text_sha256": "098a1a8bac5cff0a738c1c624115cf0f64a773e7de96b037d87d20f96d5c6dc7",
+      "source_context": "(3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de Banca Naţională a Moldovei în luna noiembrie a anului precedent anului fiscal de gestiune, aplicată la operaţiunile de politică monetară pe termen scurt, majorată cu 5 puncte, împărţită la numărul de zile ale anului şi aproximată conform regulilor matematice până la 4 semne după virgulă.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained",
+      "derived_values": {
+        "november_base_percent": 6,
+        "rounded_up_whole_percent": 6,
+        "addition_percentage_points": 5,
+        "calendar_days_2026": 365,
+        "daily_percent_rounded_four_decimals": "0.0301",
+        "daily_decimal_multiplier": "0.000301",
+        "formula": "round((ceil(6)+5)/365,4); dividepercentageby100beforemultiplyingprincipal",
+        "calculation_control": "ledgers/md-country-evidence/late-rate-controls.md",
+        "source_input": "ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-BASE.json"
+      }
+    },
+    {
+      "id": "MD-IND-379",
+      "rule_or_figure": "CurrentmedicaldailychargeusestheCodecalculation;inter-account-transfer-documentexceptionpreserved",
+      "Guide_section": "Penalties and interest / Sources",
+      "act_article_or_official_section": "Law1593/2002 art30(1)-(2)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro",
+      "exact_original_language_quote": "Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1593.json",
+      "source_text_sha256": "9590a8bc9998fa308a19a54fbe013df51bede76d1b00dc65c193d96069cc9778",
+      "source_context": "Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în conformitate cu alin. (11), din suma datoriei pentru fiecare zi de întârziere.\n\n(l1) Cuantumul penalității se determină conform prevederilor Codului fiscal.\n\n(2) Penalitatea nu se va calcula pentru perioada aflării la examinare a documentelor privind transferul primelor de asigurare obligatorie de asistenţă medicală de la un cont la altul.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-IND-380",
+      "rule_or_figure": "MedicalCode-methodswitchoperative1January2026underLaw146/2025,notanassumedcontinuationofold0.1%",
+      "Guide_section": "Penalties and interest / Sources",
+      "act_article_or_official_section": "Law1593art30January2026version;Law146/2025commencementannotations",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149273&lang=ro",
+      "exact_original_language_quote": "Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1593-JAN-30.json",
+      "source_text_sha256": "14311c30511a3f43e3901b96639db2ca645c9cc8f31795f1b972f7afd32c3ef2",
+      "source_context": "Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în conformitate cu alin. (11), din suma datoriei pentru fiecare zi de întârziere.\n\n[Art.30 al.(1) modificat prin LP146 din 26.06.25, MO340-342/28.06.25 art.401; în vigoare 01.01.26]\n\n(l1) Cuantumul penalității se determină conform prevederilor Codului fiscal.\n\n[Art.30 al.(11) introdus prin LP146 din 26.06.25, MO340-342/28.06.25 art.401; în vigoare 01.01.26]\n\n(2) Penalitatea nu se va calcula pentru perioada aflării la examinare a documentelor privind transferul primelor de asigurare obligatorie de asistenţă medicală de la un cont la altul.\n",
       "quote_matches_source_after_layout_normalization": true,
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
     }
@@ -10907,7 +10974,7 @@
   ],
   "baseline_old_units": 192,
   "old_bytes": 46135,
-  "new_bytes": 58690,
+  "new_bytes": 60357,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Duplicated old headings/rate tables/boilerplate consolidated into the canonical nine sections; every original rule/table/bullet has a destination.",

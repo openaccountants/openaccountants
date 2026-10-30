@@ -1,7 +1,7 @@
 ---
 name: md-transfer-pricing
 description: Use this Guide for Moldova transfer-pricing affiliation, local and cross-border scope, the aggregate information threshold, statutory exclusions, method selection, comparability intervals and adjustments for 2026. It explains requested master and local files, electronic information filing, advance pricing agreements, corresponding adjustments and period-specific sanctions. Trigger on Moldova TP, affiliated transactions, the MDL20 million threshold, transfer-pricing information, an SFS file request or an APA. Reconcile actual transaction values and evidence rather than using net balances or an expired automatic file tier. Current source and implementation gaps remain explicit; this is a writer draft awaiting independent country-pack review.
-version: 0.1
+version: 0.2
 jurisdiction: MD
 category: transfer-pricing
 tax_year: 2026
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova transfer pricing v0.1
+# Moldova transfer pricing v0.2
 
 2026 writer draft, primary law read30October2026. The24October draft and its independent correction evidence are preserved; that review does not attest to this expanded country pack. This Guide provides the domestic TP computation/documentation method. Actual comparables, legal facts and any treaty relief must be evidenced before use.
 
@@ -113,6 +113,8 @@ Pay the per-type fee before application/modification. Annex3 points87–90 sends
 
 ## Penalties and interest
 
+**Calendar-2026 ordinary tax late charge.** Code art. 228(3) and the BNM decision of 6 November 2025, point 1, supply the calculation: the retained **6.00%** short-term policy rate, rounded up to a whole percent, plus **5 percentage points**, divided by **365 days**, gives **0.0301% per delayed day** after rounding the daily percentage to four decimal places. The decimal multiplier is **0.000301**. Apply it to the established outstanding principal for each chargeable day; split changes in principal and calendar year. This calculation concerns debts governed by art. 228 and does not replace a separate statutory regime's rate or establish case-specific relief. [Code art. 228(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [BNM decision, point 1](https://bnm.md/en/node/69226).
+
 Map the offence and period, rather than multiplying one late-return fine by every missing document:
 
 | Offence | Statutory fine | Provision |
@@ -126,7 +128,7 @@ Map the offence and period, rather than multiplying one late-return fine by ever
 
 Figures: [Code260(7)–(12)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro). **Law214/2024 artXVII(2)** applies260(8),(11) in SFS audits of fiscal periods beginning with2028; do not charge those two penalties as2026-period sanctions merely because their amounts appear in the Code. This does not postpone the ordinary late/non-submission duties or the underlying tax/interest. The separate2024 file transition is in Law187 artXXVI(3). [Law214 official text](https://www.legis.md/cautare/getResults?doc_id=144601&lang=ro), [Law187](https://www.legis.md/cautare/getResults?doc_id=149593&lang=ro).
 
-Additional income/expense adjustments can change the relevant income/single tax. General understatement/evasion and self-correction provisions are in261(4)–(5)/188; establish the actual offence and interaction before stacking sanctions. Art228 charges late-payment interest from after due date through payment using its prior-November BNM base-rate-plus-five-points annual formula; the actual published2026 daily rate and case-specific relief are not confirmed here. An objection does not automatically suspend collection under252(2). [Code228,252,261,188](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+Additional income/expense adjustments can change the relevant income/single tax. General understatement/evasion and self-correction provisions are in261(4)–(5)/188; establish the actual offence and interaction before stacking sanctions. Art228 charges late-payment interest from after due date through payment using its prior-November BNM base-rate-plus-five-points annual formula; case-specific relief and any applicable special single-tax rate must be established. An objection does not automatically suspend collection under252(2). [Code228,252,261,188](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
 ## Cross-border points
 
@@ -210,6 +212,7 @@ expected:
 
 |Primary source actually read|Scope|Read|
 |---|---|---|
+| [BNM monetary-policy decision, 6 November 2025, point 1](https://bnm.md/en/node/69226) | Fetched 6.00% short-term base input; calendar-2026 daily percentage derived with Code 228(3), rather than copied from an old rate. | 2026-10-30 |
 |[Current Fiscal Code157050](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|226¹⁷–226³⁰,260,252,188 and relevant ordinary tax/interest provisions; selected articles only|2026-10-30|
 |[Law187/2025](https://www.legis.md/cautare/getResults?doc_id=149593&lang=ro)|ArtII point19, selected point28 and artXXVI: period2025 structure and separate2024 transition|2026-10-30|
 |[Order9 current consolidation152738](https://www.legis.md/cautare/getResults?doc_id=152738&lang=ro)|Complete rendered annex1 and annex3 text: pricing, documentation, amendments and APA procedure. Linked annex2DOCX unavailable|2026-10-30|

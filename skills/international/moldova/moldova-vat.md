@@ -1,7 +1,7 @@
 ---
 name: moldova-vat
 description: Use this Guide for Moldova VAT (TVA) registration, output tax, input credits, mixed supplies, imports, exported services, tax points and the monthly VAT12 reconciliation for 2026. It covers ordinary registered businesses and explains separate obligations for unregistered service importers, specified property purchasers, energy traders and nonresident electronic-service suppliers. Trigger on Moldova VAT, TVA Moldova, VAT12, imported SaaS, input deduction or SFS VAT filing. Load alongside vat-workflow-base v0.1 or later. Check the dated registration thresholds, actual supply classification and evidence before calculating. Remaining source and implementation gaps are explicit; the country draft still requires independent pack review.
-version: 2.1
+version: 2.2
 jurisdiction: MD
 category: international
 tax_year: 2026
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova VAT v2.1
+# Moldova VAT v2.2
 
 2026 writer draft, law read 30 October 2026. Use alongside `vat-workflow-base` v0.1 or later for document handling. The Moldova law and current return instructions control the tax calculation. This draft has not completed independent whole-country review or accountant attestation.
 
@@ -135,9 +135,11 @@ The predecessor's private red-flag settings (MDL100,000 transaction, MDL5,000 ta
 
 ## Penalties and interest
 
+**Calendar-2026 ordinary tax late charge.** Code art. 228(3) and the BNM decision of 6 November 2025, point 1, supply the calculation: the retained **6.00%** short-term policy rate, rounded up to a whole percent, plus **5 percentage points**, divided by **365 days**, gives **0.0301% per delayed day** after rounding the daily percentage to four decimal places. The decimal multiplier is **0.000301**. Apply it to the established outstanding principal for each chargeable day; split changes in principal and calendar year. This calculation concerns debts governed by art. 228 and does not replace a separate statutory regime's rate or establish case-specific relief. [Code art. 228(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [BNM decision, point 1](https://bnm.md/en/node/69226).
+
 For legal-person/business categories in art232(a),(c), art260(1) sets reporting-preparation/presentation fines ofMDL500–1,000 per return, capped atMDL10,000 for all returns; the distinct nonbusiness-individual category hasMDL200–400, capped atMDL2,000. Failure to issue a required fiscal invoice within arts117/117^1 timing isMDL3,000–3,600 per invoice, capped atMDL72,000 under260(4). Late/nonregistration as a VAT payer is7%–10% of taxable supply volume excluding art104 supplies under256(7); where this fine is applied,261(5) is not also applied. Do not treat those ranges as a discretionary minimum automatically selected by software. [Code arts232,256(7),260](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-False-data understatement is20%–30% of the understated amount under261(4); genuine self-correction under188 is excepted by261(4^1). Evasion under261(5) is80%–100% of undeclared tax, subject to the non-cumulation just described. Late-payment interest under228 runs from the day after due date through actual payment; its annual formula uses the prior-November BNM base rate rounded up to a whole percent, plus5points, divided by days in the year and rounded to four decimals. Additional-liability self-correction interest is capped at the corresponding tax under228(2^1). The actual published2026 daily rate and the correct application of relief/audit facts remain unconfirmed; do not invent a universal0.1% VAT rate. [Code arts228,261,188](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+False-data understatement is20%–30% of the understated amount under261(4); genuine self-correction under188 is excepted by261(4^1). Evasion under261(5) is80%–100% of undeclared tax, subject to the non-cumulation just described. Late-payment interest under228 runs from the day after due date through actual payment; its annual formula uses the prior-November BNM base rate rounded up to a whole percent, plus5points, divided by days in the year and rounded to four decimals. Additional-liability self-correction interest is capped at the corresponding tax under228(2^1). Determine the correct case-specific relief/audit treatment; do not substitute the social-contribution0.1% rate for ordinary VAT late charges. [Code arts228,261,188](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
 ## Cross-border points
 
@@ -261,6 +263,7 @@ expected:
 
 | Primary source actually read | Scope | Read date |
 |---|---|---|
+| [BNM monetary-policy decision, 6 November 2025, point 1](https://bnm.md/en/node/69226) | Fetched 6.00% short-term base input; calendar-2026 daily percentage derived with Code 228(3), rather than copied from an old rate. | 2026-10-30 |
 |[Fiscal Code current consolidation157050](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|Selected arts93–118 and contained superscript articles;232,256,260–261,228,188. Current TVA scope/base/credit/exemption/place/timing/reporting and penalties; not a claim to have audited the entire Code|2026-10-30|
 |[January consolidation149766](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro)|Arts96,104,112 and retained energy commencement notes. Jan–Feb threshold and pre-May medical-device wording|2026-10-30|
 |[Law12/2026](https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro)|ArtsI–II;1March2026 registration threshold change|2026-10-30|
@@ -268,7 +271,7 @@ expected:
 |[Order1164/2012 current consolidation151641](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro)|Full annex2 text: ordinary24boxes, annexes, unregistered routes and critical submission errors. Linked annex1DOCX not retrieved|2026-10-30|
 |[Order529/2025](https://www.legis.md/cautare/getResults?doc_id=151607&lang=ro)|Energy box7/8/16/17 amendments, applicability fromJanuary2026 periods|2026-10-30|
 
-Not yet confirmed: full2026 amendment-by-amendment commencement reconciliation beyond the dated changes above; actual late-registration assessment period and procedural relief; non-exact prorata rounding representation in SFS practice; Government refund application/proof/limits and2026 refund-programme amendments; Government capital-contribution, destruction, assistance-project/free-zone/processing and other specialist exemption procedures; full2026 cross-Nistru transitional law/customs and DCFTA origin procedures; current Ministry energy-trader own-use declaration procedure; current nonresident e-services registration/form/payment implementation; foreign-currency VAT conversion date and supporting BNM rule; actual published2026 daily late-payment rate; current annex1TVA12DOCX/layout and authenticated portal validation/rounding; counterparty-specific status, bank-export conventions, the predecessor IBAN-prefix claim and the legal assumptions of the archived legacy transactions. These gaps remain explicit and this VAT draft does not establish whole-country coverage or independent review.
+Not yet confirmed: full2026 amendment-by-amendment commencement reconciliation beyond the dated changes above; actual late-registration assessment period and procedural relief; non-exact prorata rounding representation in SFS practice; Government refund application/proof/limits and2026 refund-programme amendments; Government capital-contribution, destruction, assistance-project/free-zone/processing and other specialist exemption procedures; full2026 cross-Nistru transitional law/customs and DCFTA origin procedures; current Ministry energy-trader own-use declaration procedure; current nonresident e-services registration/form/payment implementation; foreign-currency VAT conversion date and supporting BNM rule; case-specific late-charge relief/account allocation; current annex1TVA12DOCX/layout and authenticated portal validation/rounding; counterparty-specific status, bank-export conventions, the predecessor IBAN-prefix claim and the legal assumptions of the archived legacy transactions. These gaps remain explicit and this VAT draft does not establish whole-country coverage or independent review.
 
 <!-- openaccountants-cta-block -->
 

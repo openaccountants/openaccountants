@@ -2,7 +2,7 @@
   "status": "LOCAL 2026 WRITER DRAFT; whole-country independent review and ordinary gaps pending",
   "slug": "moldova-vat",
   "Guide_path": "skills/international/moldova/moldova-vat.md",
-  "Guide_sha256": "f10eff04da4072feaca4310e8e2e2ccc24689bd404c381e4656bcf732c6e0a20",
+  "Guide_sha256": "ad52a74372fc263bc1a03909ca41405efe624e2307e9a32e142201107c6480d9",
   "rows": [
     {
       "id": "MD-VAT-001",
@@ -4931,6 +4931,45 @@
       "source_context": "2. Seria și numărul facturii nu este atribuită furnizorului ce a eliberat-o.\n\n \n\n[Anexa nr.2 modificată prin OSFS529 din 04.11.25, MO565-568/13.11.25 art.993; în vigoare 13.11.25] \n\n \n13-11-2025\n10-10-2025",
       "quote_matches_source_after_layout_normalization": true,
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-VAT-353",
+      "rule_or_figure": "November2025short-term BNMbase6.00%;sourceinputfor2026Code228dailycalculation",
+      "Guide_section": "Penalties and interest / Sources",
+      "act_article_or_official_section": "BNM6November2025 monetarypolicydecision point1",
+      "official_url": "https://bnm.md/en/node/69226",
+      "exact_original_language_quote": "06.11.2025 Decizia de politică monetară, 06.11.2025 Comitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-BASE.json",
+      "source_text_sha256": "042305a1147d2b79792e79f850619f94144406e0e689fa213123ee6070e4aa19",
+      "source_context": "06.11.2025\nDecizia de politică monetară, 06.11.2025\nComitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat prin vot unanim următoarea hotărâre:\n1. Se menține rata de bază aplicată la principalele operațiuni de politică monetară pe termen scurt la nivelul actual de 6,00 la sută anual.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-VAT-354",
+      "rule_or_figure": "2026ordinarydailypercentage0.0301%;decimalmultiplier0.000301,derivedfrom6%Novemberbase+5points/365days rounded4decimalplaces",
+      "Guide_section": "Penalties and interest / Sources",
+      "act_article_or_official_section": "FiscalCode228(3);BNM6November2025point1;2026calendar365days",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-228.json",
+      "source_text_sha256": "098a1a8bac5cff0a738c1c624115cf0f64a773e7de96b037d87d20f96d5c6dc7",
+      "source_context": "(3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de Banca Naţională a Moldovei în luna noiembrie a anului precedent anului fiscal de gestiune, aplicată la operaţiunile de politică monetară pe termen scurt, majorată cu 5 puncte, împărţită la numărul de zile ale anului şi aproximată conform regulilor matematice până la 4 semne după virgulă.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained",
+      "derived_values": {
+        "november_base_percent": 6,
+        "rounded_up_whole_percent": 6,
+        "addition_percentage_points": 5,
+        "calendar_days_2026": 365,
+        "daily_percent_rounded_four_decimals": "0.0301",
+        "daily_decimal_multiplier": "0.000301",
+        "formula": "round((ceil(6)+5)/365,4); dividepercentageby100beforemultiplyingprincipal",
+        "calculation_control": "ledgers/md-country-evidence/late-rate-controls.md",
+        "source_input": "ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-BASE.json"
+      }
     }
   ],
   "old_topic_destinations": [
@@ -8453,7 +8492,7 @@
   ],
   "baseline_old_units": 135,
   "old_bytes": 13083,
-  "new_bytes": 43382,
+  "new_bytes": 44434,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Duplicated old headings, rates and disclaimer boilerplate consolidated into canonical nine sections; platform CTA preserved.",

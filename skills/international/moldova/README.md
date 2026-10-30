@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 1.0
+version: 1.1
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -21,7 +21,7 @@ partial:
 
 Accountable owner: Michael. Assigned writer: ChatGPT under [OWNERS.md](../../../OWNERS.md). Eight existing Guides were present before this batch. Two missing core areas now have draft Guides: [transfer pricing](md-transfer-pricing.md) and [cross-border tax](md-cross-border.md). The new Guides are source-cited drafts, not independently reviewed or accountant-attested. Existing material remains unverified and partial; no domain is marked complete.
 
-The [corporate-income](md-corporate-income-tax.md), [social/medical](moldova-social-contributions.md), [individual-income](moldova-income-tax.md), [payroll](moldova-payroll.md), [VAT](moldova-vat.md), [transfer-pricing](md-transfer-pricing.md) and [cross-border](md-cross-border.md) Guides now have 2026 writer drafts and two recomputing examples each. Their figure ledgers ([corporate](../../../ledgers/md-corporate-income-tax.md), [social](../../../ledgers/moldova-social-contributions.md), [individual](../../../ledgers/moldova-income-tax.md), [payroll](../../../ledgers/moldova-payroll.md), [VAT](../../../ledgers/moldova-vat.md), [TP](../../../ledgers/md-transfer-pricing.md), [XB](../../../ledgers/md-cross-border.md)) retain predecessor-topic destinations. Their stated ordinary implementation gaps remain open. Separate source controls are writer evidence and do not establish completed Guide coverage. The other existing Guides retain their own stated dates and gaps. No whole-country independent review has been completed for this expansion.
+The [corporate-income](md-corporate-income-tax.md), [social/medical](moldova-social-contributions.md), [individual-income](moldova-income-tax.md), [payroll](moldova-payroll.md), [VAT](moldova-vat.md), [transfer-pricing](md-transfer-pricing.md) and [cross-border](md-cross-border.md) Guides now have 2026 writer drafts and two recomputing examples each. Their figure ledgers ([corporate](../../../ledgers/md-corporate-income-tax.md), [social](../../../ledgers/moldova-social-contributions.md), [individual](../../../ledgers/moldova-income-tax.md), [payroll](../../../ledgers/moldova-payroll.md), [VAT](../../../ledgers/moldova-vat.md), [TP](../../../ledgers/md-transfer-pricing.md), [XB](../../../ledgers/md-cross-border.md)) retain predecessor-topic destinations. The calendar-2026 ordinary tax/medical daily rate is now derived from the fetched Code/BNM inputs and the medical January commencement; the social rate remains separate. Other stated ordinary implementation gaps remain open. Separate source controls are writer evidence and do not establish completed Guide coverage. The other existing Guides retain their own stated dates and gaps. No whole-country independent review has been completed for this expansion.
 
 ## Domains
 

@@ -3,7 +3,7 @@
   "country": "MD",
   "slug": "moldova-social-contributions",
   "Guide_path": "skills/international/moldova/moldova-social-contributions.md",
-  "Guide_sha256": "5990f934a07e81f87925fb0cf4851b4c71bc8c0e72c88d351db2391275edbf2f",
+  "Guide_sha256": "b056ad7dc7e063c2e435afbdbe6f7d34b79eb38a6e631c501a2c2a8b9632bebf",
   "rows": [
     {
       "id": "MD-SC-001",
@@ -3670,6 +3670,73 @@
       "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH-HCC8-OPERATIVE.json",
       "source_text_sha256": "a0b77186304644eb617f2ccd062a724c74a66b466da98a1d34bced4128d9285b",
       "source_point_full_text": "Se recunoaște constituțional textul „avocații” din punctul 2 al Anexei nr. 2 la Legea nr. 1593 din 26 decembrie 2002 cu privire la mărimea, modul și termenele de achitare a primelor de asigurare obligatorie de asistență medicală în măsura în care nu se aplică în privința persoanelor cu dizabilități severe, accentuate sau medii care dețin o licență de avocat și în cazul persoanelor care asigură creșterea și educarea a patru și mai mulți copii care dețin licență de avocat.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-SC-263",
+      "rule_or_figure": "November2025short-term BNMbase6.00%;sourceinputfor2026Code228dailycalculation",
+      "Guide_section": "Penalties and interest / Sources",
+      "act_article_or_official_section": "BNM6November2025 monetarypolicydecision point1",
+      "official_url": "https://bnm.md/en/node/69226",
+      "exact_original_language_quote": "06.11.2025 Decizia de politică monetară, 06.11.2025 Comitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-BASE.json",
+      "source_text_sha256": "042305a1147d2b79792e79f850619f94144406e0e689fa213123ee6070e4aa19",
+      "source_context": "06.11.2025\nDecizia de politică monetară, 06.11.2025\nComitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat prin vot unanim următoarea hotărâre:\n1. Se menține rata de bază aplicată la principalele operațiuni de politică monetară pe termen scurt la nivelul actual de 6,00 la sută anual.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-SC-264",
+      "rule_or_figure": "2026ordinarydailypercentage0.0301%;decimalmultiplier0.000301,derivedfrom6%Novemberbase+5points/365days rounded4decimalplaces",
+      "Guide_section": "Penalties and interest / Sources",
+      "act_article_or_official_section": "FiscalCode228(3);BNM6November2025point1;2026calendar365days",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-228.json",
+      "source_text_sha256": "098a1a8bac5cff0a738c1c624115cf0f64a773e7de96b037d87d20f96d5c6dc7",
+      "source_context": "(3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de Banca Naţională a Moldovei în luna noiembrie a anului precedent anului fiscal de gestiune, aplicată la operaţiunile de politică monetară pe termen scurt, majorată cu 5 puncte, împărţită la numărul de zile ale anului şi aproximată conform regulilor matematice până la 4 semne după virgulă.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained",
+      "derived_values": {
+        "november_base_percent": 6,
+        "rounded_up_whole_percent": 6,
+        "addition_percentage_points": 5,
+        "calendar_days_2026": 365,
+        "daily_percent_rounded_four_decimals": "0.0301",
+        "daily_decimal_multiplier": "0.000301",
+        "formula": "round((ceil(6)+5)/365,4); dividepercentageby100beforemultiplyingprincipal",
+        "calculation_control": "ledgers/md-country-evidence/late-rate-controls.md",
+        "source_input": "ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-BASE.json"
+      }
+    },
+    {
+      "id": "MD-SC-265",
+      "rule_or_figure": "CurrentmedicaldailychargeusestheCodecalculation;inter-account-transfer-documentexceptionpreserved",
+      "Guide_section": "Penalties and interest / Sources",
+      "act_article_or_official_section": "Law1593/2002 art30(1)-(2)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro",
+      "exact_original_language_quote": "Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1593.json",
+      "source_text_sha256": "9590a8bc9998fa308a19a54fbe013df51bede76d1b00dc65c193d96069cc9778",
+      "source_context": "Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în conformitate cu alin. (11), din suma datoriei pentru fiecare zi de întârziere.\n\n(l1) Cuantumul penalității se determină conform prevederilor Codului fiscal.\n\n(2) Penalitatea nu se va calcula pentru perioada aflării la examinare a documentelor privind transferul primelor de asigurare obligatorie de asistenţă medicală de la un cont la altul.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-SC-266",
+      "rule_or_figure": "MedicalCode-methodswitchoperative1January2026underLaw146/2025,notanassumedcontinuationofold0.1%",
+      "Guide_section": "Penalties and interest / Sources",
+      "act_article_or_official_section": "Law1593art30January2026version;Law146/2025commencementannotations",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149273&lang=ro",
+      "exact_original_language_quote": "Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1593-JAN-30.json",
+      "source_text_sha256": "14311c30511a3f43e3901b96639db2ca645c9cc8f31795f1b972f7afd32c3ef2",
+      "source_context": "Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în conformitate cu alin. (11), din suma datoriei pentru fiecare zi de întârziere.\n\n[Art.30 al.(1) modificat prin LP146 din 26.06.25, MO340-342/28.06.25 art.401; în vigoare 01.01.26]\n\n(l1) Cuantumul penalității se determină conform prevederilor Codului fiscal.\n\n[Art.30 al.(11) introdus prin LP146 din 26.06.25, MO340-342/28.06.25 art.401; în vigoare 01.01.26]\n\n(2) Penalitatea nu se va calcula pentru perioada aflării la examinare a documentelor privind transferul primelor de asigurare obligatorie de asistenţă medicală de la un cont la altul.\n",
       "quote_matches_source_after_layout_normalization": true,
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
     }
