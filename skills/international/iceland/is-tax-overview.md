@@ -32,7 +32,7 @@ Iceland taxes individuals on earned income at progressive rates (state income ta
 - **Children.** Children born in 2011 or later pay 6% on income above ISK 300,000 a year _(Skatturinn, key figures 2026)_. Detail: `iceland-income-tax`.
 - **Capital income tax (fjármagnstekjuskattur).** 22% on an individual's capital income: interest, dividends, capital gains and rent. An allowance of ISK 300,000 a person (ISK 600,000 for a married couple) covers interest, and dividends and gains on shares that meet the conditions _(Skatturinn, key figures 2026; Skatturinn, capital income tax)_. Detail: `iceland-income-tax`.
 - **Corporate income tax.** 20% for limited companies (hf., ehf.) and the other entities in Article 2(1)(1) and (2). 37.6% for other taxable entities, such as partnerships registered as separate taxpayers and estates _(Income Tax Act, Article 71(1) and (2); Skatturinn, key figures 2026)_. Detail: `is-corporate-income-tax`.
-- **Payroll levy (tryggingagjald).** 6.35% in 2026, of which the general levy is 4.90% _(Act 113/1990, Article 2; Skatturinn, key figures 2026)_. Detail: `iceland-social-contributions`, `iceland-payroll`.
+- **Payroll levy (tryggingagjald).** 6.35% in 2026: the general levy of 4.90% and the employment-insurance levy of 1.35% _(Act 113/1990, Article 2)_, plus the wage-guarantee fee of 0.05% and the market fee of 0.05%, which Skatturinn collects with the levy _(Skatturinn, payroll levy page; Skatturinn, key figures 2026)_. Detail: `iceland-social-contributions`, `iceland-payroll`.
 - **Pension contributions.** The minimum contribution to a pension fund is 15.5% of the contribution base _(Act 129/1997, Article 2)_. Skatturinn's employer return calculates 11.5% from the employer against 4% from the employee _(Skatturinn, employer notice 1/2026)_. Detail: `iceland-payroll`.
 - **Withholding (staðgreiðsla) due dates.** Withholding for a wage month falls due on the 1st of the next month; the final due date is the 15th _(Skatturinn, employer register)_. Detail: `iceland-payroll`.
 - **VAT (virðisaukaskattur).** Standard rate 24%; reduced rate 11% on the supplies the Act lists, such as food, hotel rooms, books and passenger transport _(VAT Act 50/1988, Article 14; Skatturinn, key figures 2026)_. Detail: `iceland-vat`.
@@ -58,29 +58,6 @@ Iceland taxes individuals on earned income at progressive rates (state income ta
 | ehf., hf., partnership or sole trade: forming and running one | `is-company-formation` |
 | Lawful ways to lower the tax bill | `iceland-tax-optimization` |
 
-## Sources
-
-| Source | URL | Read on |
-|---|---|---|
-| Income Tax Act 90/2003 (lög um tekjuskatt), consolidated text 158a of 1 October 2026, Articles 1, 2, 3, 57, 59, 67, 71, 93, 108 | https://www.althingi.is/lagas/nuna/2003090.html | 2026-10-30 |
-| VAT Act 50/1988 (lög um virðisaukaskatt), consolidated text 158a, Articles 4, 14, 24 | https://www.althingi.is/lagas/nuna/1988050.html | 2026-10-30 |
-| Act 4/1995 on Municipal Revenue, consolidated text 158a, Article 23 | https://www.althingi.is/lagas/nuna/1995004.html | 2026-10-30 |
-| Act 113/1990 on the Payroll Levy (tryggingagjald), consolidated text 158a, Article 2 | https://www.althingi.is/lagas/nuna/1990113.html | 2026-10-30 |
-| Act 129/1997 on Pension Funds, consolidated text 158a, Article 2 | https://www.althingi.is/lagas/nuna/1997129.html | 2026-10-30 |
-| Annual Accounts Act 3/2006, consolidated text 158a, Article 109 | https://www.althingi.is/lagas/nuna/2006003.html | 2026-10-30 |
-| Advertisement 1521/2025 on 2026 tax bands, withholding rates and personal credit (Stjórnartíðindi B) | https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d | 2026-10-30 |
-| Skatturinn, key figures and rates 2026 (helstu tölur 2026) | https://www.skatturinn.is/einstaklingar/helstutolur/2026/ | 2026-10-30 |
-| Skatturinn, capital income tax | https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/ | 2026-10-30 |
-| Skatturinn, notice of 30 January 2026: legal-entity returns 2026, deadline 31 May, extension to 21 September | https://www.skatturinn.is/um-rsk/frettir-og-tilkynningar/opnad-fyrir-skil-a-skattframtali-logadila-2026 | 2026-10-30 |
-| Skatturinn, filing a tax return (individuals, 2026 deadline 13 March) | https://www.skatturinn.is/english/individuals/filing-a-tax-return/ | 2026-10-30 |
-| Skatturinn, employer register (withholding due 1st, final due 15th) | https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/launagreidendaskra/ | 2026-10-30 |
-| Skatturinn, employer notice 1/2026 (RSK 06.01) | https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf | 2026-10-30 |
-| Skatturinn, VAT general page (periods, due date, annual settlement) | https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/almennt-um-vsk/ | 2026-10-30 |
-| Skatturinn, guide to VAT registration (due date one month and five days) | https://www.skatturinn.is/media/baeklingar/VSK_Skraning_a_vsk_skra.pdf | 2026-10-30 |
-| Skatturinn, private limited companies (company register) | https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/ | 2026-10-30 |
-
-Not yet confirmed: the 2027 filing deadlines for 2026 income (Skatturinn has not yet published them); the 2026 reduced payroll-levy rate for workers with an A1 certificate (see `iceland-social-contributions`).
-
 <!-- openaccountants-cta-block -->
 
 ---
@@ -98,3 +75,27 @@ version (and the professional behind it) is at
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
 > licensed professional before relying on them.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Act 90/2003 (lög um tekjuskatt), consolidated text 158a of 1 October 2026, Articles 1, 2, 3, 57, 59, 67, 71, 93, 108 | https://www.althingi.is/lagas/nuna/2003090.html | 2026-10-30 |
+| VAT Act 50/1988 (lög um virðisaukaskatt), consolidated text 158a, Articles 4, 14, 24 | https://www.althingi.is/lagas/nuna/1988050.html | 2026-10-30 |
+| Act 4/1995 on Municipal Revenue, consolidated text 158a, Article 23 | https://www.althingi.is/lagas/nuna/1995004.html | 2026-10-30 |
+| Act 113/1990 on the Payroll Levy (tryggingagjald), consolidated text 158a, Article 2 | https://www.althingi.is/lagas/nuna/1990113.html | 2026-10-30 |
+| Act 129/1997 on Pension Funds, consolidated text 158a, Article 2 | https://www.althingi.is/lagas/nuna/1997129.html | 2026-10-30 |
+| Annual Accounts Act 3/2006, consolidated text 158a, Article 109 | https://www.althingi.is/lagas/nuna/2006003.html | 2026-10-30 |
+| Advertisement 1521/2025 on 2026 tax bands, withholding rates and personal credit (Stjórnartíðindi B) | https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d | 2026-10-30 |
+| Skatturinn, key figures and rates 2026 (helstu tölur 2026) | https://www.skatturinn.is/einstaklingar/helstutolur/2026/ | 2026-10-30 |
+| Skatturinn, capital income tax | https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/ | 2026-10-30 |
+| Skatturinn, notice of 30 January 2026: legal-entity returns 2026, deadline 31 May, extension to 21 September | https://www.skatturinn.is/um-rsk/frettir-og-tilkynningar/opnad-fyrir-skil-a-skattframtali-logadila-2026 | 2026-10-30 |
+| Skatturinn, filing a tax return (individuals, 2026 deadline 13 March) | https://www.skatturinn.is/english/individuals/filing-a-tax-return/ | 2026-10-30 |
+| Skatturinn, payroll levy (tryggingagjald): 2026 components 4.90% + 1.35% + 0.05% + 0.05% | https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald | 2026-10-30 |
+| Skatturinn, employer register (withholding due 1st, final due 15th) | https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/launagreidendaskra/ | 2026-10-30 |
+| Skatturinn, employer notice 1/2026 (RSK 06.01) | https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf | 2026-10-30 |
+| Skatturinn, VAT general page (periods, due date, annual settlement) | https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/almennt-um-vsk/ | 2026-10-30 |
+| Skatturinn, guide to VAT registration (due date one month and five days) | https://www.skatturinn.is/media/baeklingar/VSK_Skraning_a_vsk_skra.pdf | 2026-10-30 |
+| Skatturinn, private limited companies (company register) | https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/ | 2026-10-30 |
+
+Not yet confirmed: the 2027 filing deadlines for 2026 income (Skatturinn has not yet published them); the 2026 reduced payroll-levy rate for workers with an A1 certificate (Skatturinn's levy page gives rates up to wage year 2025 only; see `iceland-social-contributions`).
