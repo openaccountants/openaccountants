@@ -1,0 +1,15 @@
+{
+  "retrieved": "2026-10-22",
+  "version": "July 2026",
+  "sources": [
+    {
+      "url": "https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0",
+      "sha256": "13acc24e2323e0e3e7388a231fb076b2b5583c3d10524a3b6b919a15da7ac1b4"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0",
+      "sha256": "f0e69b330aa71f055da57ca171ee91f8901c851854230288abfd206ca7e8170b"
+    }
+  ],
+  "limits": "Complete regulations/current court procedure not reconciled; March boundary wording not automated."
+}

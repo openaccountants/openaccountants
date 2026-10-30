@@ -3,12 +3,11 @@ name: sk-payroll-social
 description: "Slovak payroll and social contributions for tax year 2026. Covers employee and employer social insurance (Sociálna poisťovňa, Act 461/2003) and public health insurance (Act 580/2004) at the 2026 rates, including the health rise to 5% employee, 11% employer and 16% self-employed; the EUR 16,764 social ceiling; self-employed (SZČO) contributions from the tax base with the 1.486 coefficient, the EUR 914.40 minimum and the new EUR 396.24 special base; monthly gross-to-net with the EUR 497.23 allowance, the 19/25/30/35% advance bands and the child tax bonus; monthly reports and payment dates; the annual tax and health reconciliations; and penalties. Trigger on 'Slovakia payroll', 'odvody 2026', 'SZČO odvody', 'gross to net Slovakia', 'ročné zúčtovanie', 'Sociálna poisťovňa', 'zdravotné poistenie 2026'. Out of scope: the annual personal return (slovakia-pit), companies (sk-corporate-income-tax), treaties and non-residents in depth (sk-cross-border), set-up (sk-company-formation)."
 version: 0.2
 jurisdiction: SK
-category: international
 tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-verified_by: pending
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -246,3 +245,23 @@ expected:
 | Financial Directorate, 31/DZPaU/2025/I, amounts for individuals' tax for 2026 | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.10.17_031_DZPaU_2025_I.pdf | 2026-10-23 |
 
 Not yet confirmed: which fine band in Act 563/2009 §155 the tax office uses for a late monthly Prehľad (Act 595/2003 §39(11) points to §§ 155 and 156 without naming a band); the rule that Sociálna poisťovňa issues the A1 form rests on Regulation 987/2009 Art. 19(2), which was not read.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -1,0 +1,1 @@
+Actual check on pre-floor-repair Guide: checked 1 files, 2 oa-check blocks, 0 failures, 0 missing. Final complete block bytes independently identical; no changed-case recalculation claim.

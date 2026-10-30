@@ -1,0 +1,236 @@
+{
+  "arithmetic_controls": [
+    {
+      "name": "R from before-tax profit150000 plus depreciation30000",
+      "actual": "180000",
+      "expected": "180000",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Mean of three positive100000 results",
+      "actual": "100000",
+      "expected": "100000",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Taxable base with matched accounting/tax depreciation",
+      "actual": "150000",
+      "expected": "150000",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Base gross quota at24percent",
+      "actual": "36000.00",
+      "expected": "36000",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Diagnostic R slice 1",
+      "actual": "15000.00",
+      "expected": "15000",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Diagnostic R slice 2",
+      "actual": "25000.00",
+      "expected": "25000",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Diagnostic R slice 3",
+      "actual": "5000.00",
+      "expected": "5000",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Diagnostic R slice 4",
+      "actual": "0",
+      "expected": "0",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Weighted R diagnostic before quota conversion",
+      "actual": "800.0000",
+      "expected": "800",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Uncertified literal-R slice quota diagnostic",
+      "actual": "192.000000",
+      "expected": "192",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Uncertified proportional whole-quota diagnostic",
+      "actual": "160.0000000000000000000000000",
+      "expected": "160",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Uncertified slicing taxable base instead of R diagnostic",
+      "actual": "36.000000",
+      "expected": "36",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Uncertified additional-base-rate diagnostic",
+      "actual": "800.0000",
+      "expected": "800",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Difference between two candidate quota answers",
+      "actual": "32",
+      "expected": "32",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "R weighted-slice boundary 100000",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "R weighted-slice boundary 135000",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "R weighted-slice boundary 150000",
+      "actual": "150.0000",
+      "expected": "150",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "R weighted-slice boundary 175000",
+      "actual": "650.0000",
+      "expected": "650",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "R weighted-slice boundary 200000",
+      "actual": "1400.0000",
+      "expected": "1400",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "R weighted-slice boundary 225000",
+      "actual": "2400.0000",
+      "expected": "2400",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Strict35percent entry gate 135000",
+      "actual": "0",
+      "expected": "0",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Strict35percent entry gate 135001",
+      "actual": "1",
+      "expected": "1",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Strict35percent entry gate 150000",
+      "actual": "1",
+      "expected": "1",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Strict35percent entry gate 175000",
+      "actual": "1",
+      "expected": "1",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Strict35percent entry gate 200000",
+      "actual": "1",
+      "expected": "1",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Zero adjusted historic result exclusion",
+      "actual": "1",
+      "expected": "1",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Negative adjusted historic result exclusion",
+      "actual": "1",
+      "expected": "1",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "First four periods exclude startup",
+      "actual": "1",
+      "expected": "1",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    },
+    {
+      "name": "Fifth period passes only startup timing",
+      "actual": "1",
+      "expected": "1",
+      "pass": true,
+      "legal_status": "Arithmetic/source-reading control only; no positive surcharge method certified"
+    }
+  ],
+  "count": 29,
+  "source_hashes_verified": [
+    "sources/bizkaia-law.pdf",
+    "sources/alava-law.pdf",
+    "sources/gipuzkoa-law.pdf",
+    "sources/bizkaia-reg.pdf",
+    "sources/alava-reg.pdf",
+    "sources/gipuzkoa-reg.pdf",
+    "sources/alava-normative-index.html",
+    "sources/alava-news.html",
+    "sources/alava-faq.html",
+    "sources/alava-programme2026.pdf",
+    "sources/alava-df42-2025-gazette.pdf",
+    "sources/alava-df42-correction2026.pdf",
+    "sources/bizkaia-2025-web-help.pdf",
+    "sources/bizkaia-surcharge-parliament.pdf",
+    "sources/bizkaia-campaign2025.html",
+    "sources/alava-campaign2025.html",
+    "sources/gipuzkoa-treasury-home.html",
+    "sources/gipuzkoa-corporate-landing.html",
+    "sources/gipuzkoa-programmes.html",
+    "sources/gipuzkoa-model200.html",
+    "sources/bizkaia-irnr.pdf",
+    "sources/alava-irnr.pdf",
+    "sources/gipuzkoa-irnr.pdf",
+    "sources/gipuzkoa-order259.pdf"
+  ],
+  "failures": 0,
+  "positive_surcharge_method_certified": false
+}

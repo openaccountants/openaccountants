@@ -3,7 +3,7 @@ name: nl-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Netherlands VAT return (OB aangifte / btw-aangifte) for a self-employed individual or small business in the Netherlands. Trigger on phrases like "prepare OB aangifte", "Dutch VAT return", "BTW aangifte", "classify transactions for Dutch VAT", or any request involving Netherlands VAT filing. This skill covers the Netherlands only, standard BTW regime. Kleineondernemersregeling (KOR), partial exemption, margin scheme (margeregeling), and VAT groups (fiscale eenheid) are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Dutch VAT work.
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

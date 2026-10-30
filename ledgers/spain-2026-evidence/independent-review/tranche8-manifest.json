@@ -1,0 +1,57 @@
+[
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche8-controls.json",
+    "sha256": "e4e64609514803fcc055d9696a5977c091ef7ebb98d1fa72f64dcda97172d216",
+    "bytes": 11060
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche8-controls.py",
+    "sha256": "f8d5c990fab2f309f1b91d4aff99a4ddf0e133b999af98e3520af574c5722b9c",
+    "bytes": 5184
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche8-initial-ledger.md",
+    "sha256": "4ec45fe0d20e05e12750616e05553a0110d99171a09104f8895037d7e498b4dd",
+    "bytes": 576977
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche8-initial-rows.json",
+    "sha256": "7be5ebbcef71bc70f49c21e29aa367ec906d43a60ad5ef619d7813716c1efe44",
+    "bytes": 468409
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche8-protection.json",
+    "sha256": "f49c5e728a011ea4833dfd19d07adf1e824577cc2ddafa78b34882b6e8474e58",
+    "bytes": 436
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche8-read-ledger.json",
+    "sha256": "6847d02f5be55de8b06f84f8b7bb02353ba455da0e2c8056fea4792bfb7445ef",
+    "bytes": 4968
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche8-report.md",
+    "sha256": "74b8bae2d7e3f797d51d92c881fc80e36d35c11600bad380882c7d1a5219baf4",
+    "bytes": 2710
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche8-result.json",
+    "sha256": "53af753a0e9391bdfc0c2dd9ead25ab02b99737f70a5f5c6b98602cd4a1a4589",
+    "bytes": 500
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche8-source-check.json",
+    "sha256": "19786f25e6b97ac8a5ff0cf1406afdbfa3d0efed8e783a41cc799574e98d64b8",
+    "bytes": 64093
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche8-successor-delta.json",
+    "sha256": "186dcab800de4fb99618b3021ba2c747e44833c9804d26d6e40007cf6cbcb829",
+    "bytes": 15379
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche8-successor-presence.json",
+    "sha256": "644c2458bf8dadfb4221157500903a3b5cf08f81389cc79328517a03a2c3569e",
+    "bytes": 11505
+  }
+]

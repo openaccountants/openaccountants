@@ -1,0 +1,1375 @@
+
+
+
+
+[[ID:ctl00_Head1]]
+
+	DYCTEA
+
+    
+    
+    
+    
+    
+
+
+
+[[ID:header]]
+
+    
+    
+        
+[[ID:headerEscudo]]
+
+        
+[[ID:lnkLogo]]
+
+            
+[[ID:imgLogo]]
+
+         
+        
+        
+[[ID:headerTitle]]
+
+        
+[[ID:ctl00_Titulo]]
+
+Doctrina y Criterios de los Tribunales Económico-Administrativos
+
+        
+        
+[[ID:headerEscudoTea]]
+
+            
+            
+[[ID:img1]]
+
+            
+        
+    
+    
+
+
+
+    
+[[ID:aspnetForm]]
+
+
+
+[[ID:__VIEWSTATE]]
+
+
+
+
+
+	
+[[ID:__VIEWSTATEGENERATOR]]
+
+
+    
+        
+[[ID:ctl00_pnAyuda]]
+
+	
+        
+        
+        Ayuda
+        
+        
+        
+        
+
+        
+
+    Volver
+
+
+
+
+
+[[ID:ctl00_contentBody_pnCriterio]]
+
+	
+    
+[[ID:criterioBloque]]
+
+        
+[[ID:criterioDatos]]
+
+            
+[[ID:criterioDatosTitulo]]
+
+                Criterio 1 de 1 de la resolución: 00/05409/2025/00/00
+            
+            
+[[ID:criterioDatosCalificacion]]
+
+                Calificación: Doctrina
+            
+            
+[[ID:criterioDatosUnidad]]
+
+                Unidad resolutoria: TEAC
+            
+            
+[[ID:criterioDatosFecha]]
+
+                Fecha de la resolución: 24/09/2026
+            
+        
+        
+[[ID:criterioContenido]]
+
+            
+[[ID:criterioDatosAsunto]]
+
+                Asunto: 
+
+IRPF. Deducción apartado 1 del art. 81 bis LIRPF. Cuidador no profesional de un familiar con dependencia Ley 39/2006 acogido al convenio especial con la Seguridad Social.
+
+            
+            
+[[ID:criterioDatosContenido]]
+
+                Criterio: 
+
+                
+Un contribuyente que no se encuentra en ninguna de las situaciones a que se refiere el  art. 81 bis 1) penúltimo párrafo de la Ley 35/2006, del Impuesto sobre la Renta de las  Personas Físicas, y que únicamente realiza la actividad de ser cuidador no profesional de  un familiar con dependencia habiendo, ante la realización de tal actividad, suscrito el  convenio especial con la Seguridad Social para cuidadores no profesionales, cumple el  requisito de realizar una actividad por cuenta propia por la cual está dado de alta en el  régimen de la Seguridad Social exigido para aplicar las deducciones previstas en el  artículo 81.bis.1 de la Ley 35/2006 del Impuesto sobre la Renta de las Personas Físicas.
+
+Unificación de criterio.
+
+                    
+            
+[[ID:criterioDatosNormas]]
+
+                Referencias normativas: 
+
+                
+[[ID:referenciasNormativas]]
+
+Ley 35/2006 Impuesto sobre la Renta de las Personas Físicas IRPF                                                                                                                                                                                                
+81.bis
+
+RD 439/2007 IRPF Reglamento Impuesto sobre la Renta de las Personas Físicas                                                                                                                                                                                     
+60.bis                                                                                                                          
+
+Real Decreto 615/2007, de 11 de mayo, por el que se regula la Seguridad Social de los cuidadores de las personas en situación de dependencia.                                                                                                                   
+1                                                                                                                               
+
+2                                                                                                                               
+
+
+            
+            
+[[ID:criterioDatosConceptos]]
+
+                Conceptos: 
+
+                
+Cuidador no profesional
+
+Deducciones
+
+Dependencia
+
+Impuesto sobre la Renta de las Personas Físicas IRPF
+
+Seguridad Social
+
+            
+        
+        
+[[ID:criterioDatosResolucion]]
+
+            Texto de la resolución: 
+
+
+	
+
+		Tribunal Económico-Administrativo Central
+
+	
+
+		SALA PRIMERA
+
+	
+
+		FECHA: 24 de septiembre de 2026
+
+
+
+[[ID:CF_DB_1554]]
+
+	
+
+		PROCEDIMIENTO: 00-05409-2025-00
+
+	
+
+		CONCEPTO: IMPUESTO RENTA PERSONAS FÍSICAS. IRPF
+
+	
+
+		NATURALEZA: RECURSO EXTRAORDINARIO DE ALZADA PARA LA UNIFICACIÓN DE CRITERIO
+
+	
+
+		RECURRENTE: AGENCIA ESTATAL DE ADMINISTRACION TRIBUTARIA - Q2826000H
+
+
+
+[[ID:SE_PI]]
+
+	
+
+		En Madrid, en el recurso extraordinario de alzada para unificación de criterio interpuesto por la DIRECTORA DEL DEPARTAMENTO DE GESTIÓN TRIBUTARIA DE LA AGENCIA ESTATAL DE ADMINISTRACIÓN TRIBUTARIA (AEAT) frente a la resolución de la Sala Desconcentrada de Burgos del Tribunal Económico-Administrativo Regional de Castilla y León de 31 de enero de 2025, recaída en la reclamación nº 09/375/2024 interpuesta frente al acuerdo de liquidación provisional del IRPF 2022.
+
+
+
+[[ID:SE_AH_1604]]
+
+	
+
+		ANTECEDENTES DE HECHO
+
+
+
+[[ID:CP_AH_1]]
+
+	
+
+		 PRIMERO. Los obligados tributarios DON X y DOÑA Y presentaron autoliquidación del Impuesto sobre la Renta de las Personas Físicas (en adelante, IRPF) 2022 acogiéndose a la modalidad de tributación conjunta.
+
+	
+
+		En dicha autoliquidación aplicaron la deducción por descendientes con discapacidad a cargo y la deducción por familia numerosa por importe de 1.200 € cada una.
+
+	
+
+		La correspondiente Oficina Gestora de la Agencia Estatal de Administración Tributaria (en adelante, AEAT) inició mediante la notificación el 8 de enero de 2024 de una propuesta de liquidación provisional un procedimiento de comprobación limitada dirigido a comprobar la correcta aplicación de las deducciones por descendientes con discapacidad a cargo y por familia numerosa.
+
+	
+
+		En dicha propuesta la Administración manifestaba que los contribuyentes no cumplían los requisitos exigidos en el artículo 81 bis de la Ley 35/2006 del Impuesto sobre la Renta de las Personas Físicas (en adelante, LIRPF) puesto que para ambas deducciones “el contribuyente ha de realizar una actividad por cuenta propia o ajena y estar dado de alta en el régimen correspondiente de la Seguridad Social o Mutualidad, percibir prestaciones del sistema de desempleo, pensiones de la Seguridad Social o por el Régimen de Clases Pasivas del Estado o prestaciones análogas a las anteriores, siempre que se trate de prestaciones por situaciones idénticas a las previstas para la correspondiente pensión de la Seguridad Social”. 
+
+	
+
+		En fase de alegaciones, los obligados tributarios aducen que DOÑA Y suscribió un convenio especial de cotización como cuidadora no profesional en el ámbito familiar al hacerse cargo la misma del cuidado de su hijo con situación de dependencia de grado III.
+
+	
+
+		El citado procedimiento culminó con la notificación el 27 de febrero de 2024 de una liquidación provisional IRPF 2022 en la que se regularizó las deducciones aplicadas por los contribuyentes con la siguiente argumentación jurídica:
+
+	
+
+		<<Para tener derecho a la deducción por familia numerosa o por personas con discapacidad a cargo se requiere que la persona beneficiaria realice actividad por cuenta ajena o propia, por la cual estén dados de alta en el régimen correspondiente de la Seguridad Social o mutualidad, o bien ser perceptor de prestaciones contributivas y asistenciales del sistema de protección al desempleo o pensionista de la Seguridad Social, Clases Pasivas o Mutualidades alternativas. Los cuidadores no profesionales de personas en situación de dependencia, según la normativa de la Seguridad Social, quedarán incluidos obligatoriamente en el campo de aplicación del Régimen General de la Seguridad Social y en situación asimilada al alta. Esta situación asimilada al alta no debe entenderse a efectos laborales, ni fiscales, que se encuentra en situación de desempeñar una actividad por cuenta propia o ajena. Al NO tener actividad por cuenta ajena o propia el contribuyente NO tendrá derecho a las anteriores deducciones>>
+
+	
+
+		SEGUNDO. Frente a la liquidación provisional IRPF 2022, los contribuyentes el 18 de marzo de 2024 interpusieron reclamación económico-administrativa nº 09/375/2024 ante el Tribunal Económico-Administrativo Regional (en adelante, TEAR) de Castilla y León defendiendo su derecho a aplicar las citadas deducciones puesto que en virtud del convenio especial suscrito con la Seguridad Social, DOÑA Y tenía la condición de situación asimilada al alta en la Seguridad Social.
+
+	
+
+		La Sala Desconcentrada de Burgos del citado Tribunal Regional resolvió en fecha 31 de enero de 2025 en sentido estimatorio la reclamación:
+
+	
+
+		Resolución Sala Desconcentrada de Burgos TEAR de Castilla y León impugnada (RG 09/375/2024):
+
+	
+
+		<<CUARTO. En el presente caso no se cuestiona la situación de discapacidad del descendiente, siendo la única cuestión controvertida si procede la aplicación de las deducciones en el supuesto de la progenitora que desempeña las funciones de cuidadora "no profesional".
+
+	
+
+		Los reclamantes aportan el certificado de bases de cotización a la Seguridad Social, en Régimen General, por el Convenio especial, por el que viene cotizando desde el año 2007.
+
+	
+
+		Además se aporta el certificado de los Servicios Sociales de la Comunidad Autónoma en el que consta que su hijo "..." tiene reconocida la situación de dependencia en Grado 3 así como el derecho a percibir la Prestación económica de cuidados en el entorno familiar siendo la persona cuidadora DOÑA Y”. 
+
+	
+
+		La Ley 39/2006 de 14 de diciembre, de promoción de la Autonomía personal y atención a la personas en situación de dependencia define en el artículo 2, apartado 5, los Cuidados no profesionales como “la atención prestada a personas en situación de dependencia en su domicilio, por personas de la familia o de su entorno, no vinculadas a un servicio de atención profesionalizada”.
+
+	
+
+		El artículo 14 del mismo texto legal regula las prestaciones de atención a la dependencia señalando en el apartado 4 que “el beneficiario podrá, excepcionalmente, recibir una prestación económica para ser atendido por cuidadores no profesionales, siempre que se den condiciones adecuadas de convivencia y de habitabilidad de la vivienda y así lo establezca su Programa Individual de Atención”.
+
+	
+
+		Y, el artículo 18 “Prestación económica para cuidados en el entorno familiar y apoyo a cuidadores no profesionales”, dispone:
+
+	
+
+		“1. Excepcionalmente, cuando el beneficiario esté siendo atendido por su entorno familiar, y se reúnan las condiciones establecidas en el artículo 14.4, se reconocerá una prestación económica para cuidados familiares.
+
+	
+
+		2. Previo acuerdo del Consejo Territorial de Servicios Sociales y del Sistema para la Autonomía y Atención a la Dependencia se establecerán las condiciones de acceso a esta prestación, en función del grado reconocido a la persona en situación de dependencia y de su capacidad económica.
+
+	
+
+		3. El cuidador deberá ajustarse a las normas sobre afiliación, alta y cotización a la Seguridad Social que se determinen reglamentariamente.
+
+	
+
+		4. El Consejo Territorial del Sistema para la Autonomía y Atención a la Dependencia promoverá acciones de apoyo a los cuidadores no profesionales que incorporarán programas de formación, información y medidas para atender los periodos de descanso”.
+
+	
+
+		En desarrollo de estos preceptos el Real Decreto 615/2007, de 11 de mayo, por el que se regula la Seguridad Social de los cuidadores de las personas en situación de dependencia, establece en su artículo 1 “Cuidadores no profesionales.” que: 
+
+	
+
+		“A los efectos de lo previsto en los artículos 2.º 5, 14.4 y 18 de la Ley 39/2006, de 14 de diciembre, de promoción de la autonomía personal y atención a las personas en situación de dependencia, tendrán la consideración de cuidadores no profesionales de una persona en situación de dependencia, aquellos que sean designados como tales en el Programa Individual de Atención y cumplan los requisitos establecidos en el artículo 12 del Real Decreto 727/2007, de 8 de junio, sobre criterios para determinar las intensidades de protección de los servicios y la cuantía de las prestaciones económicas de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia”.
+
+	
+
+		Se añade en el artículo 2, “Encuadramiento en la Seguridad Social” que: 
+
+	
+
+		“1. Los cuidadores no profesionales, a los que se refiere el artículo anterior, quedarán incluidos obligatoriamente en el campo de aplicación del Régimen General de la Seguridad Social y en situación asimilada al alta, mediante la suscripción del convenio especial regulado en este real decreto.
+
+	
+
+		La suscripción del convenio especial no precisará de la acreditación de periodo de cotización previo.
+
+	
+
+		2. No será aplicable lo dispuesto en el apartado anterior, en los supuestos en que el cuidador no profesional siga realizando o inicie una actividad profesional por la que deba quedar incluido en el sistema de la Seguridad Social, así como en los supuestos a que se refiere el apartado siguiente.
+
+	
+
+		De igual modo, no existirá la obligación de suscribir convenio especial en los supuestos en que el cuidador se encuentre percibiendo la prestación de desempleo, o cuando tenga la condición de pensionista de jubilación o de incapacidad permanente o, de tratarse de pensionista de viudedad o en favor de familiares, cuando tenga 65 o más años.
+
+	
+
+		3. No existirá la obligación de suscripción del convenio especial regulado en este real decreto por los períodos en que el cuidador no profesional esté disfrutando de los periodos de excedencia laboral en razón de cuidado de familiares, que tengan la consideración de periodos de cotización efectiva, de acuerdo con lo previsto en el artículo 180 del texto refundido de la Ley General de la Seguridad Social.
+
+	
+
+		4. En los casos en que, como consecuencia de la realización de los cuidados no profesionales, el cuidador haya de reducir su jornada de trabajo y la correspondiente retribución, en los términos previstos en la legislación laboral o de función pública que sea de aplicación, el convenio especial se aplicará en orden al mantenimiento de la base de cotización en los términos contemplados en el artículo 4.º 2.
+
+	
+
+		5. En los casos en que el cuidador no profesional, con anterioridad a la prestación de los correspondientes cuidados en beneficio de la persona dependiente, hubiese suscrito un convenio especial con la Seguridad Social, procederá la extinción de dicho convenio y la suscripción del regulado en este real decreto, sin perjuicio del mantenimiento de la base de cotización de acuerdo con lo previsto en el artículo 4.º 2.
+
+	
+
+		6. A efectos de la suscripción del convenio especial y la acreditación de la realización de los cuidados no profesionales, se deberá aportar copia de la resolución por la que se haya concedido la prestación económica a la persona atendida, así como la documentación acreditativa del parentesco con aquélla o de las circunstancias a que se refiere el artículo 1.º 2.”
+
+	
+
+		SEXTO. Pues bien, los Tribunales de Justicia, han venido estableciendo de forma clara que los cuidadores no profesionales no realizan un trabajo por cuenta ajena.
+
+	
+
+		Se trata de determinar por tanto si los cuidados no profesionales son equiparables a un trabajo por cuenta propia, cuestión que a juicio de esta Sala debe contestarse de manera afirmativa puesto que, salvo por la percepción de una remuneración de los servicios prestados, las tareas realizadas son exactamente las mismas que las efectuadas en el ámbito profesional. Así, la exposición de motivos de la Ley 39/2006, de 14 de diciembre señala que:
+
+	
+
+		“hasta ahora, han sido las familias, y en especial las mujeres, las que tradicionalmente han asumido el cuidado de las personas dependientes, constituyendo lo que ha dado en llamarse el «apoyo informal». Los cambios en el modelo de familia y la incorporación progresiva de casi tres millones de mujeres, en la última década, al mercado de trabajo introducen nuevos factores en esta situación que hacen imprescindible una revisión del sistema tradicional de atención para asegurar una adecuada capacidad de prestación de cuidados a aquellas personas que los necesitan”
+
+	
+
+		Como se ha visto la Ley 39/2006 define los cuidados no profesionales como “la atención prestada a personas en situación de dependencia en su domicilio, por personas de la familia o de su entorno, no vinculadas a un servicio de atención profesionalizada” y los cuidados profesionales como “los prestados por una institución pública o entidad, con y sin ánimo de lucro, o profesional autónomo entre cuyas finalidades se encuentre la prestación de servicios a personas en situación de dependencia, ya sean en su hogar o en un centro”. Estableciendo el Real Decreto 727/2007 de 8 de junio en su artículo 12 que solo es posible acceder a la prestación cuando “no sea posible el reconocimiento de un servicio debido a la inexistencia de recursos públicos o privados acreditados”.
+
+	
+
+		A este respecto, señala el Tribunal Supremo, Sala de lo Social, en la Sentencia de 11 de julio de 2014 (Rec nº2385/2013) que:
+
+	
+
+		"En definitiva, en la sentencia de contraste las dos actividades y altas son en situación de pluriempleo en sentido propio. En la recurrida, en cambio, las cotizaciones consideradas responden por un lado a una situación asimilada al alta convenio especial cuidadores de personas en situación de dependencia, y por otra parte a un alta ordinaria en régimen general. Aunque las cotizaciones en la situación de convenio tienen eficacia para causar las prestaciones incluidas en el convenio, no es la misma situación que la del pluriempleo en sentido estricto. El alta de un cuidador no profesional en este caso se ha realizado por convenio especial y para el cuidado de un familiar de la demandante (así lo dice expresamente el convenio especial (folio 69 de los autos, en el expediente administrativo aportado por el INSS al juicio), y con carácter estrictamente voluntario (folio 67 id. id., certificado de la TGSS de que la beneficiaria no le es aplicable el art. 2 del RD 615/2007 y “no está obligada a suscribir convenio especial).
+
+	
+
+		En estas condiciones, la actividad de la demandante está más próxima a una actividad por cuenta propia, eventualmente asimilada a cuenta ajena a efectos de alta pluriactividad, por la vía del convenio especial (en el que cotiza el cuidador al 85%), que a una segunda actividad adicional por cuenta ajena (pluriempleo en sentido propio y estricto). En este caso está constatado que el convenio especial es voluntario, y no obligatorio (art. 2 RD 615/2007), no solo por suscribirse en situación de desempleo (así ocurría en el momento de la suscripción del convenio), sino porque el cuidador profesional ha seguido desarrollando después del convenio especial la actividad por cuenta ajena por la que estaba ya incluido en el sistema de seguridad social monitor. En cualquier caso es una situación suficientemente singular y diversa como para concluir sin más que sea un pluriempleo y no una pluriactividad, por lo que simplemente la razón de decidir es distinta. La evolución normativa posterior confirma el carácter estrictamente voluntario del convenio especial de cuidadores no profesionales¿ así desde 15-7-2012 el convenio especial de estos cuidadores tiene carácter estrictamente voluntario y desde 1-1-13 el convenio especial corre a cargo exclusivamente del cuidador no profesional".
+
+	
+
+		Por tanto, y como ya se anticipó, entiende este Tribunal que la actividad de los cuidadores no profesionales es perfectamente asimilable a un trabajo por cuenta propia ya que se ordenan recursos productivos en competencia directa con los servicios profesionales del mercado, sin que el artículo 81.bis de la LIRPF exija que se trate de una actividad remunerada.
+
+	
+
+		En consecuencia, a la vista de la documentación aportada procede estimar la presente reclamación, anulando el acuerdo impugnado.
+
+	
+
+		Por lo expuesto
+
+	
+
+		Este Tribunal Económico-Administrativo acuerda ESTIMAR la presente reclamación, anulando el acto impugnado>>
+
+	
+
+		 
+
+	
+
+		TERCERO. Frente a la citada resolución de la Sala Desconcentrada de Burgos del TEAR de Castilla y León, ha interpuesto la Directora del Departamento de Gestión de la AEAT el día 14 de mayo de 2025, con entrada en este Tribunal central el 9 de julio de 2025, el presente recurso extraordinario de alzada para la unificación de criterio.
+
+	
+
+		La Directora recurrente delimita del siguiente modo la controversia jurídica a resolver en el presente recurso extraordinario de alzada para la unificación de criterio:
+
+	
+
+		<<Determinar si los contribuyentes que realizan los cuidados no profesionales a personas en situación de dependencia, regulados en la Ley 39/2006, con realización de aportaciones al convenio especial con la Seguridad Social, pueden ser considerados trabajadores por cuenta propia a los efectos de poder aplicar la deducción prevista en el apartado 1 del art. 81 bis LIRPF>>
+
+	
+
+		Controversia jurídica que, a su juicio, debe resolverse a la luz del artículo 81 bis de la Ley 35/2006 del Impuesto sobre la Renta de las Personas Físicas (en adelante, LIRPF).
+
+	
+
+		Invoca la Directora recurrente dos consultas de la Dirección General de Tributos: V1676-16 y V 1688-20:
+
+	
+
+		Consulta V1676-16 de 19/04/2016 el subrayado es el añadido por la Directora en el escrito de interposición-:
+
+	
+
+		<<Cuestión planteada: “Aplicación de la deducción por familia numerosa o por personas con discapacidad a cargo”
+
+	
+
+		Descripción de hechos: “La consultante, que cotiza a un convenio especial por la realización de cuidados dentro del entorno familiar, tiene a su cargo un descendiente con discapacidad”
+
+	
+
+		Contestación:“(…) Como puede observarse, como consecuencia de la redacción dada al citado artículo 81 bis de la LIRPF por el Real Decreto-ley 1/2015, las deducciones no solo podrán ser aplicadas por contribuyentes que realicen una actividad por cuenta propia o ajena, sino también por los perceptores de prestaciones contributivas y asistenciales del sistema de protección del desempleo y pensiones abonadas por la Seguridad Social, Clases Pasivas o Mutualidades alternativas, circunstancias que en el presente caso se desconocen. 
+
+	
+
+		En cuanto al resto de requisitos, del precepto transcrito se desprende que pueden aplicar esta deducción los ascendientes o hermanos huérfanos de padre y madre que formen parte de una familia numerosa, el ascendiente separado legalmente, o sin vínculo matrimonial, con dos hijos sin derecho a percibir anualidades por alimentos y por los que tenga derecho a la totalidad del mínimo previsto en el artículo 58 de esta Ley o, en su caso, los contribuyentes con derecho a la aplicación de los mínimos por descendientes o ascendientes, con discapacidad en ambos casos. 
+
+	
+
+		Dicho lo anterior, es necesario resaltar que para la aplicación de estas deducciones se requiere en todo caso que los beneficiarios realicen actividad por cuenta propia o ajena por la cual estén dados de alta en el régimen correspondiente de la Seguridad Social o mutualidad, o perciba alguna de las prestaciones anteriormente señaladas, circunstancias que en el presente caso no se producen. 
+
+	
+
+		En este sentido, debe señalarse que el hecho de que la interesada cotice al Régimen Público de la Seguridad Social, según Convenio Especial regulado por el Real Decreto 615/2007, de 11 de mayo, por el que se regula la Seguridad Social de los cuidadores de personas en situación de dependencia, y del que se desprende conforme a lo establecido en el artículo 2.1 que “los cuidadores no profesionales, a los que se refiere el párrafo anterior, quedarán incluidos obligatoriamente en el campo de aplicación del Régimen General de la Seguridad Social y en situación asimilada al alta,…”, no debe entenderse a efectos laborales, y mucho menos a efectos de carácter tributario, que la interesada, por el efecto antes indicado de considerarle “en situación asimilada a la de alta…”, que se encuentra en situación de desempeñar una actividad por cuenta propia o ajena.
+
+	
+
+		En definitiva, la consultante no tiene derecho a la aplicación de la deducción por familia numerosa o por personas con discapacidad a cargo, que se regula en el artículo 81 bis de la Ley del Impuesto y, por tanto, a percibir el abono anticipado de la citada deducción. “(…)”>>
+
+	
+
+		A continuación, la Directora cita las resoluciones del TEAR Castilla y León de 31/08/2021, RG: 24-00121-2019 y la del TEAR de Extremadura, de 09/09/2024, RG: 06-03243-2023, que hace referencia a otras (Comunidad Valenciana (resolución de 31/07/2015, rec. 46-06218-2014), el de Castilla y León (resolución de 31/08/2021, rec. 24-00121-2019), y el de Cantabria (resolución de 30/06/2023, rec. 39-00826-2022)). resoluciónes que sí reconocen a los cuidadores no profesionales la aplicación de la deducción del art. 81.bis LIRPF.
+
+	
+
+		Tras ello, formula las siguientes alegaciones:
+
+	
+
+		<<En el presente caso, los estrictos términos del artículo 81.bis LIRPF, se refiere, como posibles beneficiarios de la deducción a “Los contribuyentes que realicen una actividad por cuenta propia o ajena por la cual estén dados de alta en el régimen correspondiente de la Seguridad Social o mutualidad”. 
+
+	
+
+		Pues bien, en el caso de los cuidadores no profesionales, no concurre expresamente ninguna de dichas circunstancias, sin perjuicio de que, a los efectos descritos en la normativa de la Seguridad Social, se encuentren en situación de asimilada a la de alta en el Régimen Público de la Seguridad Social, según Convenio Especial regulado por el RD 615/2007. 
+
+	
+
+		Por su parte, la jurisdicción de lo Social tampoco considera equiparable la situación de estos cuidadores no profesionales a la de trabajadores por cuenta ajena. Así, por ejemplo, se pueden citar la Sentencia 698/2016, de 11 de julio, del Tribunal Superior de Justicia, Sala de lo Social, de la Región de Murcia (Rec. 49/2016) establece: 
+
+	
+
+		"La relación de servicios del cuidador no profesional, con vínculo familiar con la persona dependiente, no reúne los caracteres del relación laboral que se establecen en el artículo 1 del ET, no solo por no tratarse de servicios prestados mediante retribución, sino porque no se da la relación de dependencia que tal precepto exige y ello singularmente cuando el cuidador no profesional está unido a la persona dependiente por vínculos de parentesco; ello sin perjuicio de que la persona dependiente pueda tener asignada una prestación o ayuda económica destinada a la persona que le atiende, de conformidad con los términos del artículo 14.4 de la Ley 39/2006 .
+
+		
+
+		El hecho de que se prevea la integración en Seguridad Social de los cuidadores no profesionales, la cual se articula a través del convenio especial que se regula en el RD 615/2007, para los familiares, no implica que la relación que les une a la persona dependiente tenga naturaleza laboral. Situación diferente se podría producir en ausencia de relación de parentesco, pues la protección de seguridad social se articula a través del régimen especial de Empleados de Hogar …)"
+
+	
+
+		Asimismo, tratándose la cuestión analizada de una deducción, no cabe la analogía para extender su ámbito más allá de sus términos estrictos, al igual que ocurre con el hecho imponible y los demás beneficios o incentivos fiscales, tal y como establece el artículo 14 de la LGT y ha declarado con reiteración la jurisprudencia que recuerda que no cabe una interpretación extensiva, sino que ésta debe hacerse "con carácter restrictivo". Al respecto, la STS de 26 de mayo de 2016 (Recurso de Casación núm. 2876/2014), cuya doctrina reiteran las SSTS de 28 de marzo de 2019, Recurso de Casación núm. 3772/2017 y Recurso de Casación núm. 3774/2017>>
+
+	
+
+		Concluye la Directora su escrito solicitando de este TEAC la fijación del siguiente criterio en la presente resolución dictada en unificación de criterio:
+
+	
+
+		<<Los contribuyentes que realizan los cuidados no profesionales a personas en situación de dependencia, regulados en la Ley 39/2006, con realización de aportaciones al convenio especial con la Seguridad Social, no pueden ser considerados trabajadores por cuenta propia, de modo que no les resultará de aplicación la deducción prevista en el apartado 1 del art. 81 bis LIRPF>>
+
+	
+
+		CUARTO. En fecha 1 de julio de 2025 se notificó al obligado tributario que en su día ostentó ante el TEAR la condición de interesado (cuya situación jurídica particular en ningún caso va a resultar afectada por la resolución que se dicte en el presente recurso, en virtud del artículo 242.3 de la LGT), la interposición del presente recurso extraordinario de alzada para la unificación de criterio y la puesta de manifiesto del expediente. Sin embargo, no consta que a la fecha en la que se dicta la presente resolución, haya formulado alegaciones.
+
+
+
+[[ID:SE_FD_1605]]
+
+	
+
+		FUNDAMENTOS DE DERECHO
+
+
+
+[[ID:SE_FD]]
+
+	
+
+		PRIMERO. Concurren los requisitos de competencia, legitimación y plazo para la admisión a trámite del presente recurso, de acuerdo a lo dispuesto en el artículo 242 de la Ley 58/2003, de 17 de diciembre, General Tributaria (en adelante, LGT).
+
+	
+
+		SEGUNDO. Sobre la controversia jurídica y la normativa aplicable.
+
+	
+
+		Según hemos detallado en los antecedentes de hecho, la controversia jurídica que este Tribunal Económico-Administrativo Central (TEAC) tiene que resolver radica en determinar si los contribuyentes que realizan los cuidados no profesionales a personas en situación de dependencia, regulados en la Ley 39/2006, estando acogidos al convenio especial con la Seguridad Social, tienen derecho a aplicar la deducción prevista en el apartado 1 del art. 81 bis LIRPF.
+
+	
+
+		Controversia jurídica que hemos de resolver a la luz de la normativa aplicable contenida fundamentalmente en el artículo 81 bis LIRPF:
+
+	
+
+		Artículo 81 bis LIRPF. Deducciones por familia numerosa o personas con discapacidad a cargo. Redacción vigente desde 05/07/2018:
+
+	
+
+		<<1. Los contribuyentes que realicen una actividad por cuenta propia o ajena por la cual estén dados de alta en el régimen correspondiente de la Seguridad Social o mutualidad podrán minorar la cuota diferencial del impuesto en las siguientes deducciones:
+
+	
+
+		a) Por cada descendiente con discapacidad con derecho a la aplicación del mínimo por descendientes previsto en el artículo 58 de esta Ley, hasta 1.200 euros anuales.
+
+	
+
+		b) Por cada ascendiente con discapacidad con derecho a la aplicación del mínimo por ascendientes previsto en el artículo 59 de esta Ley, hasta 1.200 euros anuales.
+
+	
+
+		c) Por ser un ascendiente, o un hermano huérfano de padre y madre, que forme parte de una familia numerosa conforme a la Ley 40/2003, de 18 de noviembre, de Protección a las Familias Numerosas, o por ser un ascendiente separado legalmente, o sin vínculo matrimonial, con dos hijos sin derecho a percibir anualidades por alimentos y por los que tenga derecho a la totalidad del mínimo previsto en el artículo 58 de esta Ley, hasta 1.200 euros anuales. En caso de familias numerosas de categoría especial, esta deducción se incrementará en un 100 por ciento. Este incremento no se tendrá en cuenta a efectos del límite a que se refiere el apartado 2 de este artículo.
+
+	
+
+		La cuantía de la deducción a que se refiere el párrafo anterior se incrementará hasta en 600 euros anuales por cada uno de los hijos que formen parte de la familia numerosa que exceda del número mínimo de hijos exigido para que dicha familia haya adquirido la condición de familia numerosa de categoría general o especial, según corresponda. Este incremento no se tendrá en cuenta a efectos del límite a que se refiere el apartado 2 de este artículo.
+
+	
+
+		d) Por el cónyuge no separado legalmente con discapacidad, siempre que no tenga rentas anuales, excluidas las exentas, superiores a 8.000 euros ni genere el derecho a las deducciones previstas en las letras a) y b) anteriores, hasta 1.200 euros anuales.
+
+	
+
+		Asimismo podrán minorar la cuota diferencial del impuesto en las deducciones previstas anteriormente los contribuyentes que perciban prestaciones contributivas y asistenciales del sistema de protección del desempleo, pensiones abonadas por el Régimen General y los Regímenes especiales de la Seguridad Social o por el Régimen de Clases Pasivas del Estado, así como los contribuyentes que perciban prestaciones análogas a las anteriores reconocidas a los profesionales no integrados en el régimen especial de la Seguridad Social de los trabajadores por cuenta propia o autónomos por las mutualidades de previsión social que actúen como alternativas al régimen especial de la Seguridad Social mencionado, siempre que se trate de prestaciones por situaciones idénticas a las previstas para la correspondiente pensión de la Seguridad Social.
+
+	
+
+		Cuando dos o más contribuyentes tengan derecho a la aplicación de alguna de las anteriores deducciones respecto de un mismo descendiente, ascendiente o familia numerosa, su importe se prorrateará entre ellos por partes iguales, sin perjuicio de lo dispuesto en el apartado 4 de este artículo.
+
+	
+
+		2. Las deducciones se calcularán de forma proporcional al número de meses en que se cumplan de forma simultánea los requisitos previstos en el apartado 1 anterior, y tendrán como límite para cada una de las deducciones, en el caso de los contribuyentes a que se refiere el primer párrafo del apartado 1 anterior, las cotizaciones y cuotas totales a la Seguridad Social y Mutualidades devengadas en cada período impositivo. No obstante, si tuviera derecho a la deducción prevista en las letras a) o b) del apartado anterior respecto de varios ascendientes o descendientes con discapacidad, el citado límite se aplicará de forma independiente respecto de cada uno de ellos.
+
+	
+
+		A efectos del cálculo de este límite se computarán las cotizaciones y cuotas por sus importes íntegros, sin tomar en consideración las bonificaciones que pudieran corresponder.
+
+	
+
+		3. Se podrá solicitar a la Agencia Estatal de Administración Tributaria el abono de las deducciones de forma anticipada. En estos supuestos, no se minorará la cuota diferencial del impuesto.
+
+	
+
+		4. Reglamentariamente se regularán el procedimiento y las condiciones para tener derecho a la práctica de estas deducciones, así como los supuestos en que se pueda solicitar de forma anticipada su abono.
+
+	
+
+		Asimismo, reglamentariamente se podrán determinar los supuestos de cesión del derecho a la deducción a otro contribuyente que tenga derecho a su aplicación respecto de un mismo descendiente, ascendiente o familia numerosa.
+
+	
+
+		En este caso, a efectos del cálculo de la deducción a que se refiere el apartado 2 de este artículo, se tendrá en cuenta de forma conjunta, tanto el número de meses en que se cumplan de forma simultánea los requisitos previstos en el apartado 1 de este artículo como las cotizaciones y cuotas totales a la Seguridad Social y Mutualidades correspondientes a todos los contribuyentes que tuvieran derecho a la deducción.
+
+	
+
+		Se entenderá que no existe transmisión lucrativa a efectos fiscales por esta cesión>>.
+
+	
+
+		Precepto que es objeto de desarrollo reglamentario en el artículo 60 bis del Real Decreto 439/2007, de 30 de marzo, por el que se aprueba el Reglamento del Impuesto sobre la Renta de las Personas Físicas (en adelante, RIRPF):
+
+	
+
+		Artículo 60 bis RIRPF. Procedimiento para la práctica de las deducciones por familia numerosa o personas con discapacidad a cargo y su pago anticipado. Redacción vigente desde 23/12/2018:
+
+	
+
+		<<1. Las deducciones reguladas en el artículo 81 bis de la Ley del Impuesto se aplicarán, para cada contribuyente con derecho a las mismas, proporcionalmente al número de meses en que se cumplan de forma simultánea los requisitos previstos en el apartado 1 del citado artículo, y tendrán como límite para cada deducción, las cotizaciones y cuotas a la Seguridad Social y Mutualidades de carácter alternativo devengadas en cada período impositivo con posterioridad al momento en que se cumplan tales requisitos.
+
+	
+
+		No obstante, si el contribuyente tuviera derecho a la deducción prevista en las letras a) o b) del apartado 1 del artículo 81 bis de la Ley del Impuesto respecto de varios ascendientes o descendientes con discapacidad, el citado límite se aplicará de forma independiente respecto de cada uno de ellos.
+
+	
+
+		En caso de familias numerosas, los incrementos de la deducción a que se refiere la letra c) del apartado 1 del artículo 81 bis de la Ley del Impuesto no se tendrá en cuenta a efectos del citado límite.
+
+	
+
+		A efectos del cálculo de este límite se computarán las cotizaciones y cuotas por sus importes íntegros sin tomar en consideración las bonificaciones que pudieran corresponder.
+
+	
+
+		No resultará de aplicación el citado límite cuando se trate de contribuyentes que perciban las prestaciones a que se refiere el séptimo párrafo del apartado 1 del artículo 81 bis de la Ley del Impuesto.
+
+	
+
+		2. A efectos del cómputo del número de meses para el cálculo del importe de la deducción a que se refiere el apartado anterior se tendrán en cuenta las siguientes reglas:
+
+	
+
+		1.ª La determinación de la condición de familia numerosa, del estado civil del contribuyente, del número de hijos que exceda del número mínimo de hijos exigido para que la familia haya adquirido la condición de familia numerosa de categoría general o especial y de la situación de discapacidad, se realizará de acuerdo con su situación el último día de cada mes.
+
+	
+
+		2.ª El requisito de alta en el régimen correspondiente de la Seguridad Social o Mutualidad se entenderá cumplido cuando esta situación se produzca en cualquier día del mes. Este requisito no será aplicable cuando se trate de contribuyentes que perciban las prestaciones a que se refiere el séptimo párrafo del apartado 1 del artículo 81 bis de la Ley del Impuesto.
+
+	
+
+		3.ª Se entenderá cumplido el requisito de percibir las prestaciones a que se refiere el séptimo párrafo del apartado 1 del artículo 81 bis de la Ley del Impuesto cuando las mismas se perciban en cualquier día del mes.
+
+	
+
+		3. Los contribuyentes con derecho a la aplicación de estas deducciones podrán solicitar a la Agencia Estatal de Administración Tributaria su abono de forma anticipada por cada uno de los meses en que perciban las prestaciones a que se refiere el séptimo párrafo del apartado 1 del artículo 81 bis de la Ley del Impuesto o estén dados de alta en la Seguridad Social o Mutualidad y coticen los plazos mínimos que a continuación se indican:
+
+	
+
+		a) Trabajadores con contrato de trabajo a jornada completa, en alta durante al menos quince días de cada mes en el Régimen General o en los Regímenes especiales de la Minería del Carbón y de los Trabajadores del Mar.
+
+	
+
+		b) Trabajadores con contrato de trabajo a tiempo parcial cuya jornada laboral sea de, al menos, el 50 por ciento de la jornada ordinaria en la empresa, en cómputo mensual, y se encuentren en alta durante todo el mes en los regímenes citados en el párrafo anterior.
+
+	
+
+		c) En el caso de trabajadores por cuenta ajena en alta en el Sistema Especial para Trabajadores por Cuenta Ajena Agrarios incluidos en el Régimen General de la Seguridad Social cuando se hubiera optado por bases diarias de cotización, que realicen, al menos, diez jornadas reales en dicho período.
+
+	
+
+		d) Trabajadores incluidos en los restantes Regímenes Especiales de la Seguridad Social no citados en los párrafos anteriores o mutualistas de las respectivas mutualidades alternativas a la Seguridad Social que se encuentren en alta durante quince días en el mes.
+
+	
+
+		Para el abono anticipado de la deducción por cónyuge no separado legalmente con discapacidad, la cuantía de las rentas anuales a tomar en consideración serán las correspondientes al último periodo impositivo cuyo plazo de presentación de autoliquidación hubiera finalizado al inicio del ejercicio en el que se solicita su abono anticipado.
+
+	
+
+		4.1.º La tramitación del abono anticipado se efectuará de acuerdo con el siguiente procedimiento:
+
+	
+
+		a) La solicitud se presentará en el lugar, forma y plazo que determine la Ministra de Hacienda, por cada contribuyente con derecho a deducción. No obstante, podrá optarse por presentar una solicitud colectiva por todos los contribuyentes que pudieran tener derecho a la deducción respecto de un mismo descendiente, ascendiente o familia numerosa. En este caso, deberá designarse como primer solicitante a un contribuyente que cumpla, en el momento de presentar la solicitud, los requisitos previstos en el apartado 1 del artículo 81 bis de la Ley del Impuesto.
+
+	
+
+		Cada mes de enero se podrá modificar la modalidad de solicitud respecto de cada una de las deducciones.
+
+	
+
+		Los solicitantes, el cónyuge no separado legalmente con discapacidad y los descendientes o ascendientes con discapacidad que se relacionen en la solicitud deberán disponer de número de identificación fiscal.
+
+	
+
+		b) La Agencia Estatal de Administración Tributaria, a la vista de la solicitud recibida, y de los datos obrantes en su poder, abonará de oficio de forma anticipada y a cuenta el importe de cada deducción al solicitante. En el caso de que se hubiera efectuado una solicitud colectiva, el abono se efectuará a quien figure como primer solicitante.
+
+	
+
+		En el supuesto de que no procediera el abono anticipado se notificará tal circunstancia al contribuyente con expresión de las causas que motivan la denegación.
+
+	
+
+		c) El abono de la deducción de forma anticipada se efectuará mensualmente por la Agencia Estatal de Administración Tributaria, mediante transferencia bancaria, por importe de 100 euros por cada descendiente, ascendiente o familia numerosa a que se refiere el apartado 1 del artículo 81 bis de la Ley del Impuesto, si la solicitud fue colectiva. Dicho importe será de 200 euros si se trata de una familia numerosa de categoría especial. En los supuestos de familia numerosa, dicho importe se incrementará en 50 euros mensuales por cada uno de los hijos que formen parte de la familia numerosa, que exceda del número mínimo de hijos exigido para que dicha familia haya adquirido la condición de familia numerosa de categoría general o especial, según corresponda. En caso de solicitud individual, se abonará al solicitante la cantidad que resulte de dividir el importe que proceda de los indicados anteriormente entre el número de contribuyentes con derecho a la aplicación del mínimo respecto del mismo descendiente o ascendiente con discapacidad, o entre el número de ascendientes o hermanos huérfanos de padre y madre que formen parte de la misma familia numerosa, según proceda. El importe del abono mensual de la deducción de forma anticipada por cónyuge no separado legalmente con discapacidad será de 100 euros.
+
+	
+
+		La Ministra de Hacienda podrá autorizar el abono por cheque cruzado o nominativo cuando concurran circunstancias que lo justifiquen.
+
+	
+
+		2.º Los contribuyentes con derecho al abono anticipado de dichas deducciones vendrán obligados a comunicar a la Administración tributaria las variaciones que afecten a su abono anticipado, así como cuando, por alguna causa o circunstancia sobrevenida, incumplan alguno de los requisitos para su percepción. La comunicación se efectuará en el lugar, forma y plazo que determine la Ministra de Hacienda.
+
+	
+
+		3.º Cuando el importe de cada una de las deducciones no se correspondiera con el de su abono anticipado, los contribuyentes deberán regularizar tal situación en su declaración por este Impuesto. En el supuesto de contribuyentes no obligados a declarar, tal regularización se efectuará mediante el ingreso de las cantidades percibidas en exceso en el lugar, forma y plazo que determine la Ministra de Hacienda.
+
+	
+
+		4.º No serán exigibles intereses de demora por la percepción, a través del abono anticipado y por causa no imputable al contribuyente, de cantidades superiores a las deducciones reguladas en el artículo 81 bis de la Ley del Impuesto.
+
+	
+
+		5. Cuando dos o más contribuyentes tengan derecho a la aplicación de alguna de las anteriores deducciones respecto de un mismo descendiente, ascendiente o familia numerosa, se podrá ceder el derecho a la deducción a uno de ellos. En este caso, a efectos del cálculo de la deducción, se aplicarán las siguientes reglas especiales:
+
+	
+
+		a) El importe de la deducción no se prorrateará entre ellos sino que se aplicará íntegramente por el contribuyente en cuyo favor se hubiera cedido la deducción.
+
+	
+
+		b) Se computarán los meses en que cualquiera de los contribuyentes que tuvieran derecho a la deducción cumpla los requisitos previstos en el apartado 1 de este artículo.
+
+	
+
+		c) Se tendrán en cuenta de forma conjunta las cotizaciones y cuotas totales a la Seguridad Social y Mutualidades correspondientes a todos los contribuyentes que tuvieran derecho a la deducción. Lo dispuesto en esta letra no resultará de aplicación en el caso de que se hubiera cedido el derecho a la deducción a aquellos contribuyentes que perciban las prestaciones a que se refiere el séptimo párrafo del apartado 1 del artículo 81 bis de la Ley del Impuesto.
+
+	
+
+		d) Los importes que, en su caso, se hubieran percibido anticipadamente, se considerarán obtenidos por el contribuyente en cuyo favor se hubiera cedido la deducción.
+
+	
+
+		Cuando se hubiera optado por la percepción anticipada de la deducción presentando una solicitud colectiva, se entenderá cedido el derecho a la deducción en favor del primer solicitante. En los restantes casos, se entenderá cedido el derecho a la deducción en favor del contribuyente que aplique la deducción en su declaración, debiendo constar esta circunstancia en la declaración de todos los contribuyentes que tuvieran derecho a la deducción, salvo que el cedente sea un no obligado a declarar, en cuyo caso tal cesión se efectuará mediante la presentación del modelo en el lugar, forma y plazo que determine la Ministra de Hacienda.
+
+	
+
+		6. Las comunidades autónomas y el Instituto de Mayores y Servicios Sociales estarán obligados a suministrar por vía electrónica a la Agencia Estatal de Administración Tributaria durante los diez primeros días de cada mes los datos de familias numerosas y discapacidad correspondientes al mes anterior.
+
+	
+
+		El formato y contenido de la información serán los que, en cada momento, consten en la sede electrónica de la Agencia Estatal de Administración Tributaria en Internet>>
+
+	
+
+		Por otro lado, en relación con la normativa de Seguridad Social aplicable, hemos de advertir que la figura del cuidador no profesional ha sido reconocida en virtud de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia.
+
+	
+
+		Dicho texto legal define en su artículo 2 una serie de conceptos siendo relevante a los efectos que aquí nos ocupan la de los cuidados no profesionales:
+
+	
+
+		Artículo 2 Ley 39/2006. Definiciones:
+
+	
+
+		<<A efectos de la presente Ley, se entiende por:
+
+	
+
+		Autonomía (…)
+
+	
+
+		5. Cuidados no profesionales: la atención prestada a personas en situación de dependencia en su domicilio, por personas de la familia o de su entorno, no vinculadas a un servicio de atención profesionalizada
+
+	
+
+		(…)>>
+
+	
+
+		Así, la citada Ley 39/2006 recoge unas prestaciones y un catálogo de servicios para la autonomía y atención a la dependencia en aras de lograr los objetivos normativamente previstos en el artículo 13 del citado texto legal:
+
+	
+
+		Artículo 13 Ley 39/2006. Objetivos de las prestaciones de dependencia.
+
+	
+
+		<<La atención a las personas en situación de dependencia y la promoción de su autonomía personal deberán orientarse a la consecución de una mejor calidad de vida y autonomía personal, en un marco de efectiva igualdad de oportunidades, de acuerdo con los siguientes objetivos:
+
+	
+
+		a) Facilitar una existencia autónoma en su medio habitual, todo el tiempo que desee y sea posible.
+
+	
+
+		b) Proporcionar un trato digno en todos los ámbitos de su vida personal, familiar y social, facilitando su incorporación activa en la vida de la comunidad>>
+
+	
+
+		Prestaciones de atención a la dependencia que recoge el artículo 14 de la Ley 39/2006 siendo importante a estos efectos destacar que esta atención a la dependencia puede garantizarse a través de una prestación económica satisfecha a la persona dependiente para que sea cuidado en su hogar por cuidadores no profesionales:
+
+	
+
+		Artículo 14 Ley 39/2006. Prestaciones de atención a la dependencia -el subrayado es añadido-:
+
+	
+
+		<<1. Las prestaciones de atención a la dependencia podrán tener la naturaleza de servicios y de prestaciones económicas e irán destinadas, por una parte, a la promoción de la autonomía personal y, por otra, a atender las necesidades de las personas con dificultades para la realización de las actividades básicas de la vida diaria.
+
+	
+
+		2. Los servicios del Catálogo del artículo 15 tendrán carácter prioritario y se prestarán a través de la oferta pública de la Red de Servicios Sociales por las respectivas Comunidades Autónomas mediante centros y servicios públicos o privados concertados debidamente acreditados.
+
+	
+
+		3. De no ser posible la atención mediante alguno de estos servicios, en los Convenios a que se refiere el artículo 10 se incorporará la prestación económica vinculada establecida en el artículo 17. Esta prestación irá destinada a la cobertura de los gastos del servicio previsto en el Programa Individual de Atención al que se refiere el artículo 29, debiendo ser prestado por una entidad o centro acreditado para la atención a la dependencia.
+
+	
+
+		4. El beneficiario podrá, excepcionalmente, recibir una prestación económica para ser atendido por cuidadores no profesionales, siempre que se den condiciones adecuadas de convivencia y de habitabilidad de la vivienda y así lo establezca su Programa Individual de Atención.
+
+	
+
+		5. Las personas en situación de dependencia podrán recibir una prestación económica de asistencia personal en los términos del artículo 19.
+
+	
+
+		6. La prioridad en el acceso a los servicios vendrá determinada por el grado de dependencia y, a igual grado, por la capacidad económica del solicitante. Hasta que la red de servicios esté totalmente implantada, las personas en situación de dependencia que no puedan acceder a los servicios por aplicación del régimen de prioridad señalado, tendrán derecho a la prestación económica vinculada al servicio prevista en el artículo 17 de esta ley.
+
+	
+
+		7. A los efectos de esta Ley, la capacidad económica se determinará, en la forma que reglamentariamente se establezca, a propuesta del Consejo Territorial del Sistema para la Autonomía y Atención a la Dependencia, en atención a la renta y el patrimonio del solicitante. En la consideración del patrimonio se tendrán en cuenta la edad del beneficiario y el tipo de servicio que se presta.
+
+	
+
+		8. Las prestaciones económicas establecidas en virtud de esta Ley son inembargables, salvo para el supuesto previsto en el artículo 608 de la Ley de Enjuiciamiento Civil>>
+
+	
+
+		Así, el citado texto legal contiene varias modalidades de prestaciones económicas, a saber: la prestación económica vinculada al servicio (art. 17), la prestación económica para cuidados en el entorno familiar y apoyo a cuidadores no profesionales (art. 18) y la prestación económica de asistencia personal (art. 19) siendo relevante a los efectos que aquí nos ocupan la prevista en el citado artículo 18:
+
+	
+
+		Artículo 18 Ley 39/2006. Prestación económica para cuidados en el entorno familiar y apoyo a cuidadores no profesionales. Redacción vigente desde 15/07/2012:
+
+	
+
+		<<1. Excepcionalmente, cuando el beneficiario esté siendo atendido por su entorno familiar, y se reúnan las condiciones establecidas en el artículo 14.4, se reconocerá una prestación económica para cuidados familiares.
+
+	
+
+		2. Previo acuerdo del Consejo Territorial de Servicios Sociales y del Sistema para la Autonomía y Atención a la Dependencia se establecerán las condiciones de acceso a esta prestación, en función del grado reconocido a la persona en situación de dependencia y de su capacidad económica.
+
+	
+
+		3. El cuidador deberá ajustarse a las normas sobre afiliación, alta y cotización a la Seguridad Social que se determinen reglamentariamente.
+
+	
+
+		4. El Consejo Territorial del Sistema para la Autonomía y Atención a la Dependencia promoverá acciones de apoyo a los cuidadores no profesionales que incorporarán programas de formación, información y medidas para atender los periodos de descanso>>
+
+	
+
+		La remisión a la normativa reglamentaria en relación con el cumplimiento por el cuidador no profesional de las normas sobre afiliación, alta y cotización a la Seguridad Social se contiene en el Real Decreto 615/2007, de 11 de mayo, por el que se regula la Seguridad Social de los cuidadores de las personas en situación de dependencia.
+
+	
+
+		El artículo 1 del citado Real Decreto establece una definición del cuidador no profesional, especificando que puede llegar hasta el tercer grado de parentesco e incluso más allá cuando haya “insuficiencia de recursos públicos o privados acreditados, la despoblación, o circunstancias geográficas o de otra naturaleza que impidan o dificulten otras modalidades de atención”:
+
+	
+
+		Artículo 1 Real Decreto 615/2007. Cuidadores no profesionales.
+
+	
+
+		<<1. A los efectos de lo previsto en los artículos 2.5, 14.4 y 18 de la Ley 39/2006, de 14 de diciembre, de promoción de la autonomía personal y atención a las personas en situación de dependencia, podrán asumir la condición de cuidadores no profesionales de una persona en situación de dependencia, su cónyuge y sus parientes por consaguinidad, afinidad o adopción, hasta el tercer grado de parentesco.
+
+	
+
+		2. Cuando la persona en situación de dependencia tenga su domicilio en un entorno caracterizado por insuficiencia de recursos públicos o privados acreditados, la despoblación, o circunstancias geográficas o de otra naturaleza que impidan o dificulten otras modalidades de atención, la administración competente podrá excepcionalmente permitir la existencia de cuidados no profesionales por parte de una persona de su entorno que, aun no teniendo el grado de parentesco señalado en el apartado anterior, resida en el municipio de la persona dependiente o en uno vecino, y lo haya hecho durante el periodo previo de un año>>.
+
+	
+
+		Por su parte, el artículo 2 del Real Decreto 615/2007 establece en su primer párrafo la inclusión de los cuidadores no profesionales en el Régimen General de la Seguridad Social (situación asimilada al alta) a través de la suscripción de un convenio especial (a saber, el denominado “convenio especial para cuidadores no profesionales”); si bien en los apartados siguientes establece excepciones como es el caso de que el cuidador no profesional realice una actividad que determine por sí sola la inclusión en el sistema de la Seguridad Social o sea perceptor de determinadas prestaciones públicas:
+
+	
+
+		Artículo 2 Real Decreto 615/2007. Encuadramiento en la Seguridad Social.
+
+	
+
+		<<1. Los cuidadores no profesionales, a los que se refiere el artículo anterior, quedarán incluidos obligatoriamente en el campo de aplicación del Régimen General de la Seguridad Social y en situación asimilada al alta, mediante la suscripción del convenio especial regulado en este real decreto.
+
+	
+
+		La suscripción del convenio especial no precisará de la acreditación de periodo de cotización previo.
+
+	
+
+		2. No será aplicable lo dispuesto en el apartado anterior, en los supuestos en que el cuidador no profesional siga realizando o inicie una actividad profesional por la que deba quedar incluido en el sistema de la Seguridad Social, así como en los supuestos a que se refiere el apartado siguiente.
+
+	
+
+		De igual modo, no existirá la obligación de suscribir convenio especial en los supuestos en que el cuidador se encuentre percibiendo la prestación de desempleo, o cuando tenga la condición de pensionista de jubilación o de incapacidad permanente o, de tratarse de pensionista de viudedad o en favor de familiares, cuando tenga 65 o más años.
+
+	
+
+		3. No existirá la obligación de suscripción del convenio especial regulado en este real decreto por los períodos en que el cuidador no profesional esté disfrutando de los periodos de excedencia laboral en razón de cuidado de familiares, que tengan la consideración de periodos de cotización efectiva, de acuerdo con lo previsto en el artículo 180 del texto refundido de la Ley General de la Seguridad Social.
+
+	
+
+		4. En los casos en que, como consecuencia de la realización de los cuidados no profesionales, el cuidador haya de reducir su jornada de trabajo y la correspondiente retribución, en los términos previstos en la legislación laboral o de función pública que sea de aplicación, el convenio especial se aplicará en orden al mantenimiento de la base de cotización en los términos contemplados en el artículo 4.2.
+
+	
+
+		5. En los casos en que el cuidador no profesional, con anterioridad a la prestación de los correspondientes cuidados en beneficio de la persona dependiente, hubiese suscrito un convenio especial con la Seguridad Social, procederá la extinción de dicho convenio y la suscripción del regulado en este real decreto, sin perjuicio del mantenimiento de la base de cotización de acuerdo con lo previsto en el artículo 4.2.
+
+	
+
+		6. A efectos de la suscripción del convenio especial y la acreditación de la realización de los cuidados no profesionales, se deberá aportar copia de la resolución por la que se haya concedido la prestación económica a la persona atendida, así como la documentación acreditativa del parentesco con aquélla o de las circunstancias a que se refiere el artículo 1.2.>>
+
+	
+
+		El artículo 3 del citado Real Decreto, por su parte, delimita la acción protectora que van a percibir los cuidadores no profesionales que se acojan al convenio especial con la Seguridad Social de cuidadores no profesionales
+
+	
+
+		Artículo 3 Real Decreto 615/2007. Acción protectora.
+
+	
+
+		<<La situación de asimilación al alta a que se refiere el artículo anterior será a efectos de las prestaciones de jubilación y de incapacidad permanente y muerte y supervivencia, derivadas de accidente, cualquiera que sea su carácter, o de enfermedad, con independencia de su naturaleza>>.
+
+	
+
+		Además, es interesante destacar que la adhesión al convenio especial para cuidadores no profesionales desde su creación tuvo la particularidad de que la totalidad de las cuotas a la Seguridad Social eran íntegramente abonadas por el sector público de forma que ni el cuidador no profesional ni el familiar dependiente satisfacen a la Tesorería General de la Seguridad Social cuota alguna -si bien la norma permite al cuidador no profesional que realice él cotizaciones en casos tales como cuando haya interrumpido la actividad por cuenta propia o ajena que venía realizando a fin de dedicarse a la atención del dependiente cuando desee mantener la base de cotización-:
+
+	
+
+		Artículo 4 Real Decreto 615/2007. Cotización.
+
+	
+
+		<<1. La base mensual de cotización en el convenio especial será el tope mínimo que, en cada momento, esté establecido en el Régimen General de la Seguridad Social.
+
+	
+
+		En los casos en que los cuidados a la persona en situación de dependencia no alcancen la dedicación completa, la base de cotización indicada se reducirá proporcionalmente, sin que, salvo lo dispuesto en el párrafo segundo del apartado siguiente, la base de cotización pueda ser inferior al 50 por ciento del tope mínimo establecido en el Régimen General.
+
+	
+
+		2. Cuando la persona que desempeñe las funciones de cuidador no profesional haya interrumpido una actividad por cuenta ajena o por cuenta propia, por la que hubiera estado incluido en el sistema de la Seguridad Social, a fin de dedicarse a la atención de la persona dependiente, podrá mantener la base de cotización del último ejercicio en dicha actividad, siempre que resulte superior al tope mínimo del Régimen General, siendo a su cargo directo el coste del incremento de cotización sobre la cuantía resultante de la aplicación del apartado 1 de este artículo. Dicha base podrá actualizarse en los mismos términos que el tope mínimo citado.
+
+	
+
+		En los casos previstos en el artículo 2.4, la suma de la base de cotización del cuidador no profesional, en función de la actividad laboral realizada, y la prevista en este apartado, no podrá ser superior a la base por la que se venía cotizando antes de reducir la jornada y la correspondiente retribución, como consecuencia de la atención al familiar en situación de dependencia. De superarse el límite indicado, se procederá a reducir la base de cotización aplicable en el convenio especial.
+
+	
+
+		Si la suscripción del convenio especial regulado en este real decreto hubiese supuesto la extinción de otro convenio anterior, en los términos regulados en el artículo 2.5, el interesado podrá mantener la base por la que venía cotizando, siendo a su cargo directo el coste del incremento de cotización sobre la cuantía resultante de la aplicación del apartado 1 de este artículo. Dicha base podrá actualizarse en los mismos términos que el tope mínimo del Régimen General.
+
+	
+
+		3. A la base de cotización resultante, conforme a lo previsto en los apartados anteriores, se aplicará el tipo de cotización vigente en cada momento. El importe resultante se reducirá mediante la aplicación del coeficiente que determine el Ministerio de Trabajo y Asuntos Sociales, previo informe del Ministerio de Economía y Hacienda, siendo el resultado la cuota a ingresar.
+
+	
+
+		4. A efectos de la financiación total o parcial de las acciones formativas previstas en el artículo 18.4 de la Ley 39/2006, de 14 de diciembre, se cotizará por formación profesional en una cuantía equivalente al 0,2 por ciento aplicable a la base de cotización indicada en el apartado 2 de este artículo.
+
+	
+
+		5. La cotización a la Seguridad Social, así como la correspondiente a las acciones formativas a que se refiere el apartado anterior, será asumida directamente por convenio con la Tesorería General de la Seguridad Social por la Administración General del Estado>>.
+
+	
+
+		Si bien hemos de advertir que a resultas de la entrada en vigor de la Disposición Adicional Decimocuarta del Real Decreto Legislativo 8/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley General de la Seguridad Social las cuotas son en la actualidad satisfechas por el IMSERSO y no por la Administración General del Estado:
+
+	
+
+		Disposición adicional decimocuarta Real Decreto Legislativo 8/2015. Régimen jurídico de los convenios especiales de los cuidadores no profesionales de las personas en situación de dependencia:
+
+	
+
+		 <<1. A partir del 1 de abril de 2019, los convenios especiales que se suscriban según lo previsto en el Real Decreto 615/2007, de 11 de mayo, por el que se regula la Seguridad Social de los cuidadores de las personas en situación de dependencia, se regirán íntegramente por lo dispuesto en dicho real decreto.
+
+	
+
+		 2. Estos convenios especiales surtirán efectos desde la fecha de reconocimiento de la prestación económica regulada en el artículo 18 de la Ley 39/2006, de 14 de diciembre, de promoción de la autonomía personal y atención a las personas en situación de dependencia, siempre y cuando se solicite dentro de los 90 días naturales siguientes a esa fecha. Transcurrido dicho plazo, surtirán efectos desde la fecha en que se haya solicitado su suscripción.
+
+	
+
+		3. Las cuotas a la Seguridad Social y por Formación Profesional establecidas cada año en función de lo previsto en el artículo 4 del Real Decreto 615/2007, de 11 de mayo, serán abonadas conjunta y directamente por el Instituto de Mayores y Servicios Sociales (IMSERSO) a la Tesorería General de la Seguridad Social.
+
+	
+
+		4. Lo establecido en esta disposición no afecta al rango del Real Decreto 615/2007, de 11 de mayo, que podrá ser modificado mediante norma de igual rango>>
+
+	
+
+		Además de la normativa anterior, debemos también tomar en consideración el Real Decreto 1051/2013, de 27 de diciembre, por el que se regulan las prestaciones del Sistema para la Autonomía y Atención a la Dependencia, establecidas en la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia.
+
+	
+
+		En particular, hay que destacar el artículo 12 que establece los requisitos para la percepción de la prestación económica para cuidados en el entorno familiar y las exigencias que debe cumplir el cuidador no profesional:
+
+	
+
+		Artículo 12 Real Decreto 1051/2013. Requisitos y condiciones de acceso a la prestación económica para cuidados en el entorno familiar y apoyo a cuidadores no profesionales. Redacción dada a su entrada en vigor:
+
+	
+
+		<<1. A los efectos de lo previsto en los artículos 2.5, 14.4 y 18 de la Ley 39/2006, de 14 de diciembre, la prestación económica para cuidados en el entorno familiar y apoyo a cuidadores no profesionales tiene carácter excepcional.
+
+	
+
+		2. Podrán asumir la condición de cuidadores no profesionales de una persona en situación de dependencia, su cónyuge y sus parientes por consanguinidad, afinidad o adopción, hasta el tercer grado de parentesco, cuando convivan en el mismo domicilio de la persona dependiente, esté siendo atendido por ellos y lo hayan hecho durante el periodo previo de un año a la fecha de presentación de la solicitud. Se entienden como situaciones asimiladas a la relación familiar, las parejas de hecho, tutores y personas designadas, administrativa o judicialmente, con funciones de acogimiento.
+
+	
+
+		3. Cuando la persona en situación de dependencia reconocida, tenga su domicilio en un entorno caracterizado por insuficiencia de recursos públicos o privados acreditados, despoblación, o circunstancias geográficas o de otra naturaleza que impidan o dificulten otras modalidades de atención, incluida la atención mediante servicios a través de la prestación vinculada, la Administración competente podrá excepcionalmente permitir la existencia de cuidados no profesionales por parte de una persona de su entorno que, aun no teniendo el grado de parentesco señalado en el apartado anterior, resida en el municipio de la persona en situación de dependencia o en uno vecino, y lo haya hecho durante el periodo previo de un año a la fecha de presentación de la solicitud.
+
+	
+
+		Cuando la persona tuviera reconocida la situación de dependencia en grado III o II será necesaria la convivencia con la persona de su entorno, dada la necesidad de atención permanente y apoyo indispensable y continuo que se requiere.
+
+	
+
+		Cuando la persona tuviera reconocida la situación de dependencia en grado I, el entorno al que se refiere este apartado, habrá de tener además la consideración de rural y no será necesaria la convivencia en el domicilio de la persona dependiente.
+
+	
+
+		4. Además de lo previsto en los anteriores apartados, se establecen las siguientes condiciones de acceso a la prestación económica para cuidados en el entorno familiar y los requisitos de los cuidadores no profesionales de las personas en situación de dependencia:
+
+	
+
+		a) Que la persona beneficiaria esté siendo atendida mediante cuidados en el entorno familiar, con carácter previo a la solicitud de reconocimiento de la situación de dependencia no sea posible el reconocimiento de un servicio debido a la inexistencia de recursos públicos o privados acreditados.
+
+	
+
+		b) Que la persona cuidadora cuente con la capacidad física, mental e intelectual suficiente para desarrollar adecuadamente por sí misma las funciones de atención y cuidado, así como que no tenga reconocida la situación de dependencia.
+
+	
+
+		c) Que la persona cuidadora asuma formalmente los compromisos necesarios para la atención y cuidado de la persona en situación de dependencia.
+
+	
+
+		d) Que la persona cuidadora realice las acciones formativas que se le propongan, siempre que sean compatibles con el cuidado de la personas en situación de dependencia.
+
+	
+
+		e) Que la persona cuidadora facilite el acceso de los servicios sociales de las Administraciones públicas competentes, a la vivienda de la persona en situación de dependencia con el fin de comprobar el cumplimiento de los requisitos o variación de las circunstancias, previo consentimiento de la persona beneficiaria.
+
+	
+
+		5. En caso de que la persona en situación de dependencia reconocida en grado I viniera recibiendo un servicio de los previstos para su grado de dependencia, en la resolución de concesión de prestaciones se ha de mantener al menos el mismo servicio u otro servicio con la misma intensidad. En el supuesto de que dicho servicio sea incompatible con la prestación económica de cuidados en el entorno, no se concederá ésta.
+
+	
+
+		6. La comunidad autónoma o Administración competente revisará el cumplimiento de los requisitos de acceso a la prestación y de las obligaciones exigidas, a fin de comprobar que no se produzca una variación de cualquiera de los mismos, y controlarán el seguimiento de los cuidados en el entorno familiar, con la finalidad de comprobar la idoneidad y calidad de atención de los mismos, pudiendo en su caso, resolver la suspensión o extinción de la prestación>>
+
+	
+
+		Precepto que ha sido modificado por el artículo único.5 del Real Decreto 675/2023; reforma que, según destaca la Exposición de Motivos, “modifica los requisitos y las condiciones de acceso a esta prestación. Entre otras, se suprime el período previo de prestación de cuidados y se amplía la condición de persona cuidadora no profesional a las personas de su entorno relacional que, a propuesta de la persona en situación de dependencia, estén en condiciones de prestarles los apoyos y cuidados necesarios para el desarrollo de la vida diaria”; quedando el precepto redactado como sigue:
+
+	
+
+		Artículo 12 Real Decreto 675/2023. Requisitos y condiciones de acceso a la prestación económica para cuidados en el entorno familiar y apoyo a cuidadores no profesionales. Redacción vigente desde el 20/07/2023:
+
+	
+
+		<<A los efectos de lo previsto en los artículos 2.5, 14.4 y 18 de la Ley 39/2006, de 14 de diciembre, los requisitos y condiciones de acceso a la prestación económica para cuidados en el entorno familiar y apoyo a personas cuidadoras no profesionales, que tiene carácter excepcional, serán los siguientes:
+
+	
+
+		a) Podrán asumir la condición de personas cuidadoras no profesionales de las personas en situación de dependencia su cónyuge o pareja de hecho y sus parientes por consanguinidad, afinidad o adopción hasta el cuarto grado de parentesco, así como las personas de su entorno relacional que, a propuesta de la persona en situación de dependencia, estén en condiciones de prestarle los apoyos y cuidados necesarios para el desarrollo de la vida diaria.
+
+	
+
+		Cuando la persona tuviera reconocida la situación de dependencia en grado III o II será necesaria la convivencia con la persona cuidadora no profesional dada la necesidad de atención permanente y apoyo indispensable y continuo que se requiere.
+
+	
+
+		Cuando la persona tuviera reconocida la situación de dependencia en grado I, podrá exceptuarse dicho requisito de convivencia, siempre que se asegure la atención inmediata por parte de la persona cuidadora no profesional.
+
+	
+
+		b) Además de lo previsto en el apartado anterior, se establecen las siguientes condiciones de acceso a la prestación económica para cuidados en el entorno familiar, como requisitos de las personas cuidadoras no profesionales de las personas en situación de dependencia:
+
+	
+
+		1.ª Que la persona en situación de dependencia esté siendo atendida mediante cuidados en el entorno en el momento de elaboración o de revisión del programa individual de atención.
+
+	
+
+		2.ª Que la persona cuidadora cuente con idoneidad para prestar adecuadamente los apoyos y cuidados.
+
+	
+
+		3.ª Que la persona cuidadora asuma formalmente los compromisos necesarios para prestar los apoyos y cuidados de la persona en situación de dependencia.
+
+	
+
+		4.ª Que la persona cuidadora realice las acciones formativas que se le propongan, siempre que sean compatibles con el cuidado de la persona en situación de dependencia.
+
+	
+
+		5.ª Que la persona cuidadora facilite el acceso de los servicios sociales de las Administraciones públicas competentes, a la vivienda de la persona en situación de dependencia con el fin de comprobar el cumplimiento de los requisitos o variación de las circunstancias, previo consentimiento de la persona beneficiaria.
+
+	
+
+		c) La comunidad autónoma o Administración competente revisará el cumplimiento de los requisitos de acceso a la prestación y de las obligaciones exigidas, a fin de comprobar que no se produzca una variación de cualquiera de los mismos, y controlarán el seguimiento de los cuidados en el entorno familiar, con la finalidad de comprobar la viabilidad, idoneidad y calidad de atención de los mismos, pudiendo en su caso, resolver la suspensión o extinción de la prestación>>
+
+	
+
+		 
+
+	
+
+		TERCERO. Juicio de este TEAC. 
+
+	
+
+		Una adecuada respuesta a la cuestión controvertida que aquí nos ocupa, nos exige partir del estudio de la deducción prevista en el artículo 81 bis LIRPF para los contribuyentes que tienen un familiar con discapacidad a su cargo o la deducción por familia numerosa.
+
+	
+
+		Así, el artículo 81 bis LIRPF permite dotar una deducción en la cuota diferencial de 1.200 euros a aquellos contribuyentes que tengan a su cargo a un ascendiente, descendiente, cónyuge con discapacidad o sean parte de una familia numerosa.
+
+	
+
+		Sin embargo, esta deducción de acuerdo con la literalidad del precepto, no la pueden aplicar todos los contribuyentes del IRPF, pues está sujeta a varios requisitos que afectan tanto al beneficiario de la deducción que se hace cargo de la persona con discapacidad, como a este último, como son los requisitos referidos a su renta máxima.
+
+	
+
+		En particular, la cuestión controvertida que aquí nos ocupa tiene por objeto ahondar en la interpretación de los requisitos subjetivos previstos en el artículo 81 bis LIRPF puesto que la misma establece tres grandes grupos de contribuyentes que pueden aplicar la deducción; requisito subjetivo cuyo cumplimiento, dicho sea, es necesario pero no suficiente al estar la efectiva aplicación de la deducción supeditada a requisitos adicionales como, por ejemplo, el que mencionábamos anteriormente referido a las rentas máximas del familiar con discapacidad.
+
+	
+
+		Este triple ámbito subjetivo se delimita, por un lado, en el artículo 81 bis.1 LIRPF primer párrafo que se refiere a “los contribuyentes que realicen una actividad por cuenta propia o ajena por la cual estén dados de alta en el régimen correspondiente de la Seguridad Social o mutualidad” y, por otro lado, en el penúltimo párrafo del citado precepto :contribuyentes que perciben prestación por desempleo, pensión o prestaciones análogas del régimen especial de los trabajadores autónomos:
+
+	
+
+		Transcripción primer párrafo y penúltimo párrafo del artículo 81 bis. 1 LIRPF:
+
+	
+
+		<<Los contribuyentes que realicen una actividad por cuenta propia o ajena por la cual estén dados de alta en el régimen correspondiente de la Seguridad Social o mutualidad podrán minorar la cuota diferencial del impuesto en las siguientes deducciones:
+
+	
+
+		(…)
+
+	
+
+		Asimismo podrán minorar la cuota diferencial del impuesto en las deducciones previstas anteriormente los contribuyentes que perciban prestaciones contributivas y asistenciales del sistema de protección del desempleo, pensiones abonadas por el Régimen General y los Regímenes especiales de la Seguridad Social o por el Régimen de Clases Pasivas del Estado, así como los contribuyentes que perciban prestaciones análogas a las anteriores reconocidas a los profesionales no integrados en el régimen especial de la Seguridad Social de los trabajadores por cuenta propia o autónomos por las mutualidades de previsión social que actúen como alternativas al régimen especial de la Seguridad Social mencionado, siempre que se trate de prestaciones por situaciones idénticas a las previstas para la correspondiente pensión de la Seguridad Social>>.
+
+	
+
+		Es precisamente en torno al posible encuadramiento en ese triple ámbito subjetivo de los contribuyentes que realizan cuidados no profesionales de un familiar con dependencia que surge la presente controversia jurídica puesto que el TEAR de Castilla y León en la resolución impugnada ha entendido que realizarían una actividad por cuenta propia y, sin embargo, la Directora recurrente en aplicación de varias consultas de la Dirección General de Tributos (DGT) ha entendido que no ejercerían tal actividad.
+
+	
+
+		Así y con carácter previo a ahondar en la cuestión interpretativa que aquí nos ocupa, hemos de realizar una serie de consideraciones.
+
+	
+
+		En primer lugar, hemos de advertir que el debate jurídico que aquí enjuiciamos se produce únicamente cuando estamos analizando la situación de un contribuyente cuya única actividad es la de ser cuidador no profesional de una persona con dependencia. En este sentido, debemos tener en consideración que la legislación social acepta que un cuidador no profesional compatibilice tal actividad con la realización de otra actividad, ya sea por cuenta propia o ajena siempre, claro está, que el desempeño de esa otra actividad le permita atender adecuadamente a su familiar con discapacidad. Extremo que se pone de manifiesto de la lectura de diversos preceptos tales como los artículos 2.2 y 4 del Real Decreto 615/2007.
+
+	
+
+		De este modo, en la medida en que un contribuyente compatibilice el cuidar no profesionalmente a un familiar dependiente con la realización de otra actividad por cuenta propia o ajena por la cual esté dada de alta en la Seguridad Social, no se plantearía dificultad interpretativa alguna para afirmar que el mismo sí cumpliría el requisito subjetivo previsto en el artículo 81 bis LIRPF.
+
+	
+
+		En segundo lugar, debemos también poner de manifiesto que no debe pasar desapercibido que el artículo 81 bis.1 primer párrafo LIRPF exige la realización de una actividad por cuenta propia y ajena “por la cual estén dados de alta en el régimen correspondiente de la Seguridad Social o mutualidad”. Extremo que es relevante porque una cosa es ser un cuidador no profesional y otra acogerse al convenio especial de la Seguridad Social -extremo que ya evidenciamos en el fundamento de derecho anterior con ocasión de la cita de sendos artículos del Real Decreto 615/2007-. De este modo, en la medida en que un contribuyente no realice ninguna actividad distinta del desempeño del cuidado no profesional del familiar dependiente y, sin embargo, decida no suscribir el convenio voluntario con la Seguridad Social, en ningún caso cumpliría el requisito necesario pero no suficiente que venimos analizando.
+
+	
+
+		Y, en tercer lugar, hemos de advertir que también puede compatibilizarse el ser un cuidador no profesional con la percepción de la prestación por desempleo o la percepción de determinadas prestaciones públicas; extremo que cabe inferir de la regulación legal recogida en el artículo 2 del Real Decreto 615/2007 anteriormente citado pues en estos casos establece que dichos sujetos no tendrán la obligación de suscribir convenio especial:
+
+	
+
+		Artículo 2 Real Decreto 615/2007. Encuadramiento en la Seguridad Social.
+
+	
+
+		<<1. Los cuidadores no profesionales, a los que se refiere el artículo anterior, quedarán incluidos obligatoriamente en el campo de aplicación del Régimen General de la Seguridad Social y en situación asimilada al alta, mediante la suscripción del convenio especial regulado en este real decreto.
+
+	
+
+		La suscripción del convenio especial no precisará de la acreditación de periodo de cotización previo.
+
+	
+
+		2. No será aplicable lo dispuesto en el apartado anterior, en los supuestos en que el cuidador no profesional siga realizando o inicie una actividad profesional por la que deba quedar incluido en el sistema de la Seguridad Social, así como en los supuestos a que se refiere el apartado siguiente.
+
+	
+
+		De igual modo, no existirá la obligación de suscribir convenio especial en los supuestos en que el cuidador se encuentre percibiendo la prestación de desempleo, o cuando tenga la condición de pensionista de jubilación o de incapacidad permanente o, de tratarse de pensionista de viudedad o en favor de familiares, cuando tenga 65 o más años>>.
+
+	
+
+		Supuesto este último en el que, de nuevo, se entendería cumplido el requisito subjetivo previsto en el artículo 81bis.1 LIRPF por el hecho de ser perceptor de una prestación por desempleo o una pensión -siendo, por ende, innecesario en dicho supuesto el análisis de la consideración de cuidador no profesional-.
+
+	
+
+		Así pues, la controversia jurídica que aquí se nos suscita se acota a una situación de hecho muy específica que es, precisamente, la que genera severas dificultades interpretativas: a saber, determinar si un contribuyente  que no se encuentra en ninguna de las situaciones a que se refiere el art. 81 bis 1) penúltimo párrafo de la Ley 35/2006, del Impuesto sobre la Renta de las Personas Físicas ("contribuyentes que perciban prestaciones contributivas y asistenciales del sistema de protección del desempleo, pensiones abonadas por el Régimen General y los Regímenes especiales de la Seguridad Social o por el Régimen de Clases Pasivas del Estado, así como los contribuyentes que perciban prestaciones análogas a las anteriores reconocidas a los profesionales no integrados en el régimen especial de la Seguridad Social de los trabajadores por cuenta propia o autónomos por las mutualidades de previsión social que actúen como alternativas al régimen especial de la Seguridad Social mencionado, siempre que se trate de prestaciones por situaciones idénticas a las previstas para la correspondiente pensión de la Seguridad Social") y que únicamente realiza la actividad de ser cuidador no profesional de un familiar con dependencia habiendo, ante la realización de tal actividad, suscrito el convenio especial con la Seguridad Social para cuidadores no profesionales, cumple los requisitos subjetivos exigidos para aplicar las deducciones previstas en el artículo 81.bis.1 LIRPF.
+
+	
+
+		De forma que, mientras que el TEAR considera que estos cuidadores no profesionales sí cumplen los requisitos subjetivos en cuanto entiende que realizan una actividad por cuenta propia, la Directora recurrente considera que no la realizan.
+
+	
+
+		Pues bien, este Tribunal Central adelanta que comparte la postura del TEAR y, por tanto, la posible calificación de esta actividad como realizada por cuenta propia.
+
+	
+
+		A juicio de este TEAC es claro que la actividad del cuidador no profesional comparte con el trabajo autónomo sus rasgos principales como son la independencia operativa (actúa fuera del ámbito de dirección y organización de otra persona), la realización de esa actividad de forma personal y la asunción de los riesgos de su prestación personal. 
+
+	
+
+		Así, en puridad, el rasgo ordinario del trabajo autónomo que no sería posible encontrar en la actividad de un cuidador no profesional es la obtención directa de un beneficio ya que, como hemos adelantado previamente, el cuidador no profesional no recibe una prestación económica por la realización de tales servicios ni tampoco puede estrictamente considerarse como tal la satisfacción de cuotas a la Seguridad Social por parte del IMSERSO. 
+
+	
+
+		No obstante, el hecho de que la normativa social española haya previsto expresamente que a los cuidadores no profesionales que suscriban el convenio se les dará la condición de situación asimilada al alta y que será el propio IMSERSO quien satisfaga las cuotas, es un hecho de una especial singularidad.
+
+	
+
+		Así, la propia regulación transcrita en el fundamento de derecho segundo de la presente resolución pone de manifiesto, a juicio de este TEAC, que para la Seguridad Social estos contribuyentes sí realizan una auténtica actividad por cuenta propia puesto que realizan una ordenación por cuenta propia de medios materiales y su propia prestación personal para producir un servicio: a saber, el cuidado de una persona dependiente. 
+
+		En este sentido, hemos de recordar que no cualquier sujeto puede llegar a ser cuidador no profesional puesto que el artículo 12 del Real Decreto 675/2023 les exige varios requisitos: deben “estar en condición de prestarle apoyos y cuidados necesarios a la persona dependiente para el desarrollo de la vida diaria”, debiendo calificársele como “idóneo” para el desempeño de tal tarea y debe comprometerse a realizar acciones formativas en la medida en que sean compatibles con el cuidado de la persona en situación de dependencia. 
+
+	
+
+		Además, tampoco es baladí que esa determinación de la idoneidad de una determinada persona para ser cuidador no profesional de una persona con dependencia, es objeto de una revisión regular por parte de las autoridades públicas competentes con el fin de “comprobar que no se produzca una variación de cualquiera de los requisitos de acceso a la prestación, y controlarán el seguimiento de los cuidados en el entorno familiar, con la finalidad de comprobar la viabilidad, idoneidad y calidad de atención de los mismos, pudiendo en su caso, resolver la suspensión o extinción de la prestación” (artículo 12 c) del Real Decreto 675/2023).
+
+		
+
+		Adicionalmente, debemos recordar que, de acuerdo con el artículo 14 de la Ley 39/2006, son prioritarios los servicios previstos en su artículo 15 que son prestados a través de la oferta pública de la red de servicios sociales y a través de centros públicos debidamente autorizados; catálogo de servicios que, recordemos, prevé con carácter general la asistencia a las personas con dependencia mediante la utilización de servicios de ayuda a domicilio, servicios de centro de día o servicios de atención residencial siendo, por el contrario, el cuidado de la persona dependiente en su hogar a través de la figura del cuidador no profesional una situación excepcional que exige que se haya valorado por los servicios competentes como adecuado para la persona con dependencia. 
+
+		
+
+		Ello evidencia, claramente, que la persona con dependencia de no ser atendido en su hogar por su familiar que ostenta el título de cuidador no profesional tendría derecho a ser directamente atendido por los servicios sociales. De este modo, se erige la actividad desempeñada por el cuidador no profesional como un servicio sustitutivo y no complementario de la directa prestación de servicios asistenciales públicos ya que, recordemos, el artículo 25 bis de la Ley 39/2006 establece la incompatibilidad de las prestaciones económicas y la percepción de los servicios de catálogo salvando la teleasistencia y los servicios de prevención de las situaciones de dependencia. Hecho este que es la razón que justifica que el IMSERSO asuma la satisfacción de las cuotas sociales. 
+
+		
+
+		Así, que la existencia de un cuidador no profesional sustituye a la directa prestación de un servicio público asistencial se pone aún más de manifiesto con la posibilidad legalmente reconocida en el artículo 1 del Real Decreto 615/2007 de atribuir la condición de cuidador no profesional incluso a un no familiar en los casos en los que haya “insuficiencia de recursos públicos o privados acreditados” o “circunstancias que impidan o dificulten otras modalidades de atención” -precepto que volvemos a transcribir en aras de la claridad expositiva-: 
+
+	
+
+		Artículo 1 Real Decreto 615/2007. Cuidadores no profesionales.
+
+	
+
+		<<1. A los efectos de lo previsto en los artículos 2.5, 14.4 y 18 de la Ley 39/2006, de 14 de diciembre, de promoción de la autonomía personal y atención a las personas en situación de dependencia, podrán asumir la condición de cuidadores no profesionales de una persona en situación de dependencia, su cónyuge y sus parientes por consaguinidad, afinidad o adopción, hasta el tercer grado de parentesco.
+
+	
+
+		2. Cuando la persona en situación de dependencia tenga su domicilio en un entorno caracterizado por insuficiencia de recursos públicos o privados acreditados, la despoblación, o circunstancias geográficas o de otra naturaleza que impidan o dificulten otras modalidades de atención, la administración competente podrá excepcionalmente permitir la existencia de cuidados no profesionales por parte de una persona de su entorno que, aun no teniendo el grado de parentesco señalado en el apartado anterior, resida en el municipio de la persona dependiente o en uno vecino, y lo haya hecho durante el periodo previo de un año>>.
+
+	
+
+		Actividad del cuidador no profesional que, recordemos, tiene su razón de ser en la asistencia en la vida diaria de una persona con dependencia. Así, la propia normativa social que hemos tomado en consideración prevé específicamente el caso de que la persona que pasa a desempeñar tal condición haya tenido que interrumpir la actividad por cuenta propia o ajena que venía desempeñando en aras de cuidar a la persona con dependencia (artículo 4.2 Real Decreto 615/2007) y también, de hecho, el artículo 4.1 del citado Real Decreto también establece que la base de cotización se reduce cuando la atención a la persona dependiente no exija la dedicación completa de la persona dependiente -se cita de nuevo en aras de claridad expositiva-: 
+
+	
+
+		Artículo 4 Real Decreto 615/2007. Cotización:
+
+	
+
+		<<1. La base mensual de cotización en el convenio especial será el tope mínimo que, en cada momento, esté establecido en el Régimen General de la Seguridad Social
+
+	
+
+		En los casos en que los cuidados a la persona en situación de dependencia no alcancen la dedicación completa, la base de cotización indicada se reducirá proporcionalmente, sin que, salvo lo dispuesto en el párrafo segundo del apartado siguiente, la base de cotización pueda ser inferior al 50 por ciento del tope mínimo establecido en el Régimen General
+
+	
+
+		Cuando a la persona en situación de dependencia tuviera reconocido el grado I, dependencia moderada, en todo caso se entenderá que, dadas las características de la atención prestada por estos cuidadores no profesionales, la base mensual de cotización en el correspondiente convenio especial será el cincuenta por ciento del tope mínimo establecido en el Régimen General de la Seguridad Social, salvo que resultara inferior por aplicación de lo dispuesto en el párrafo segundo del apartado siguiente>>
+
+	
+
+		Así, el hecho de que la normativa social establezca una excepción para el caso de que los cuidados a la persona en situación de dependencia no alcance la dedicación completa, pone de manifiesto que esa es la regla general o, dicho de otra manera, la situación ordinaria que se da en los casos de atención a una persona con dependencia. 
+
+	
+
+		Ello pone de manifiesto también, a juicio de este TEAC, la irracionabilidad de negar que las tareas desempeñadas por estos sujetos sean una actividad por cuenta propia cuando, en puridad, en la mayoría de los supuestos, la atención de la persona con dependencia exige la “dedicación completa”. Negar a una actividad que se desempeña en régimen de dedicación completa, y en muchos casos sin poderse compatibilizar con el descanso dominical, de días festivos o de vacaciones, la calificación jurídica de actividad por cuenta propia cuando ello conlleva la no posibilidad de aplicar la deducción por persona con discapacidad a cargo, a juicio de este TEAC, carece de lógica jurídica. 
+
+	
+
+		Y ello máxime cuando tal deducción, en última instancia, se ha configurado como un “auténtico impuesto negativo” lo cual, supone, una auténtica ayuda pública satisfecha por el Estado a través de la Administración Tributaria en favor de determinadas personas. 
+
+	
+
+		A fortiori, quiere este TEAC asimismo ahondar en una incongruencia práctica que se derivaría de la conjunción de la normativa social y fiscal que aquí nos ocupa en el caso de que se negara al cuidador no profesional que únicamente realiza esa actividad la aplicación de la deducción. Y es que de acuerdo con el artículo 3 del Real Decreto 615/2007 la situación de asimilación al alta de la que disfrutan los cuidadores no profesionales lo es, entre otros supuestos, "a efectos de las prestaciones de jubilación". O, dicho sea de otro modo, un cuidador no profesional en situación de asimilación al alta por la realización de tal actividad tiene derecho, alcanzada la edad de jubilación, al cobro de la prestación por jubilación. 
+
+	
+
+		Así, y si bien el cobro de la prestación por jubilación determinará la extinción del convenio especial con la Seguridad Social y, en puridad, el cuidador no profesional dejará de ostentar tal condición, lo que es relevante a los efectos que aquí nos ocupan es que el cobro de tal prestación por jubilación va a determinar de modo directo, y al margen de toda posible duda interpretativa, el encuadramiento del antiguo cuidador no profesional en el triple ámbito subjetivo de la deducción en tanto en cuanto ese sujeto cumpliría el tercer supuesto del ámbito subjetivo de la deducción prevista en el artículo 81.bis.1: a saber, sería un contribuyente que percibiría una "pensión abonada por el Régimen General de la Seguridad Social". Ello, en definitiva, evidencia a juicio de esta Tribunal la improcedencia de mantener una tesis que niegue la aplicación de la deducción al cuidador no profesional durante el período en que realiza únicamente esa actividad y por la cual la Seguridad Social le otorga el estatus de asimilación al alta cuando, pacíficamente, en el momento en que comience a percibir la prestación por jubilación de la Seguridad Social únicamente a resultas de la realización de la actividad de cuidador no profesional, y siempre que se sigan cumpliendo el resto de requisitos normativamente exigidos, va a tener derecho a la aplicación de la deducción.
+
+	
+
+		Por lo expuesto,
+
+	
+
+		EL TRIBUNAL ECONÓMICO-ADMINISTRATIVO CENTRAL, EN SALA, en el recurso extraordinario de alzada para la unificación de criterio interpuesto por la DIRECTORA DEL DEPARTAMENTO DE GESTIÓN DE LA AEAT, acuerda DESESTIMARLO y fijar criterio en el sentido siguiente:
+
+	
+
+		Un contribuyente que no se encuentra en ninguna de las situaciones a que se refiere el art. 81 bis 1) penúltimo párrafo de la Ley 35/2006, del Impuesto sobre la Renta de las Personas Físicas, y que únicamente realiza la actividad de ser cuidador no profesional de un familiar con dependencia habiendo, ante la realización de tal actividad, suscrito el convenio especial con la Seguridad Social para cuidadores no profesionales,  cumple el requisito de realizar una actividad por cuenta propia por la cual está dado de alta en el  régimen de la Seguridad Social exigido para aplicar las deducciones previstas en el artículo 81.bis.1 de la Ley 35/2006 del Impuesto sobre la Renta de las Personas Físicas.
+
+
+
+
+	 
+
+
+        
+    
+
+
+
+
+    Volver
+
+
+    
+    
+
+
+
+
+[[ID:pie]]
+
+    
+        
+Ministerio de Hacienda y Administraciones Públicas
+
+        
+            
+[[ID:textos]]
+
+	            
+                
+Accesibilidad
+
+            	
+            
+            
+[[ID:iconosacc]]
+
+	            
+
+
+
+
+
+
+
+
+	            
+            
+            
+[[ID:textos2]]
+
+	            
+                
+(NIPO: 225-24-144-1)
+		
+            	
+            			
+        
+    
+
+
+
+

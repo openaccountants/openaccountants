@@ -1,0 +1,47 @@
+[
+  {
+    "path": "before.md",
+    "sha256": "267e36d1a15ff15bd4dc3ccbe474e906330feec853c4a3cf7933131034b1f69d",
+    "bytes": 8326
+  },
+  {
+    "path": "draft-options.md",
+    "sha256": "3a0fd525648bc5bd2ce8cb589df77b0b82be1737294717897ed04c2b2b42fd33",
+    "bytes": 398
+  },
+  {
+    "path": "independent/before-head.md",
+    "sha256": "267e36d1a15ff15bd4dc3ccbe474e906330feec853c4a3cf7933131034b1f69d",
+    "bytes": 8326
+  },
+  {
+    "path": "independent/checks.json",
+    "sha256": "60266c8ba18b12ead3389f5a7ade20682c74b52bc7018ca6fe2f90ac6badd51c",
+    "bytes": 4311
+  },
+  {
+    "path": "independent/final.md",
+    "sha256": "5a732c693317ea41b9b265a7ac3bf9960656faf2bffcbb8c41fe7e1565327c4a",
+    "bytes": 8220
+  },
+  {
+    "path": "independent/frozen-manifest.json",
+    "sha256": "bc73b4b7125d0906dd1a597ab99bd4d5233fd7d0cf1b8ebf80c35f862d5d9e08",
+    "bytes": 1024
+  },
+  {
+    "path": "independent/report.md",
+    "sha256": "5492a94fb25fb34211ab7eafb3f28ec42cc62083a8d7e978f7650864d3278f6a",
+    "bytes": 2244
+  },
+  {
+    "path": "independent/surgical.diff",
+    "sha256": "0cd852bc0762ed93d038c4cc28c1d0c4550c2b49dd694cba3d264520cefc3dde",
+    "bytes": 3308
+  },
+  {
+    "path": "writer-freeze.json",
+    "sha256": "6185b9e4068e6305c6f2318e771d2a25ac6cac3a57bc52a57476573ebbe582b4",
+    "bytes": 248
+  }
+]

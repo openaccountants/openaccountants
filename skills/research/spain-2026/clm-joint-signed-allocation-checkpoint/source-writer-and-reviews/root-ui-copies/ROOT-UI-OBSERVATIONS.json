@@ -1,0 +1,77 @@
+{
+  "source": "Actual public Renta2025 OPEN1.19 fictional UI, root observations on27Oct2026; no2026calculator or filing claim",
+  "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+  "tab": "1623102835",
+  "browser": "Brave1",
+  "session_provenance": "Old root tab1623102787 authoritatively not found; other-agent1623102812 remained owned by that session and was not claimed; new separate tab created. No restart inferred solely from timeout.",
+  "fictional_household": {
+    "decl": "12345678Z PRUEBA CONJUNTA male DOB1980-01-01",
+    "spouse": "87654321X PRUEBA CONYUGE female DOB1982-01-01",
+    "both_regions": "CLM",
+    "married": true,
+    "no_children_or_disability": true
+  },
+  "common_inputs": {
+    "claimant_gross_wage": "22000",
+    "wage_SS_other_specific_expenses": "0",
+    "ordinary_wage_expense": "2000",
+    "reduced_net_wage": "20000",
+    "spouse_professional": "A05 normal direct assessment N",
+    "spouse_activity_receipts": "0",
+    "spouse_activity_rental_cost": "9000",
+    "spouse_net_activity": "-9000",
+    "savings_interest_claimant": "1000",
+    "savings_cost_and_all_withholdings": "0",
+    "joint_reduction": "3400",
+    "joint_minimum": "5550",
+    "other_credits_and_reductions": "0",
+    "eligibility_facts": "Ruralzone/workmove/initialBLceiling/continuity assumed,notprovedbycheckbox. ActivityIAE detailnotcompleted:calculationprobe,notvalidated/file-readyreturn."
+  },
+  "observed": [
+    {
+      "id": "J1",
+      "eligible_members": "claimant only",
+      "general_nontransfer_gain": "1000",
+      "G": "12000",
+      "B": "8600",
+      "QGC": "289.75",
+      "QSC": "95",
+      "regional_total": "384.75",
+      "move_credit": "289.75",
+      "regional_liquid": "95",
+      "total_result": "479.75",
+      "role": "Material N>G discriminator with selected entitled-member N20000 vs combinedhouseholdwork/activity11000; ratio of latter wouldgive265.60 instead.",
+      "repeat": "AfterJ3 resetgain1000 anduncheckspouse; sameG/B/tax/credit/settlementobservedagain."
+    },
+    {
+      "id": "J2",
+      "eligible_members": "both",
+      "general_nontransfer_gain": "1000",
+      "G": "12000",
+      "B": "8600",
+      "QGC": "289.75",
+      "QSC": "95",
+      "regional_total": "384.75",
+      "move_credit": "265.61",
+      "regional_liquid": "119.14",
+      "total_result": "503.89",
+      "limit": "Directaggregatefullprecisionratio11/12 gives265.60, onecentdifferent. Noexactalgorithmclaimed."
+    },
+    {
+      "id": "J3",
+      "eligible_members": "both",
+      "general_nontransfer_gain": "2000",
+      "G": "13000",
+      "B": "9600",
+      "QGC": "384.75",
+      "QSC": "95",
+      "regional_total": "479.75",
+      "move_credit": "325.55",
+      "regional_liquid": "154.20",
+      "total_result": "633.95",
+      "limit": "Directaggregatefullprecisionratio11/13gives325.56;percentrounding84.62%gives325.58;permemberrounded591.92minus266.37matches325.55butmatchingfiniteobservationsdoesnotestablishauthoritativealgorithm."
+    }
+  ],
+  "scope": "J1readactualseparategeneral/savingsquotaworksheet;J2/J3summaryamountsactual,sameunderlyingtaxscaleandunchangedbaseinputs. Rootdidnotclaimbothentitledmethodclosed. No presentation clicked. Zero-withholding advisory warningacknowledgedasfictionalzero facts,notarealtransaction.",
+  "arithmetic_correction": "Rootsecondary84.62percentdiagnosticwasinitiallyrecorded325.57; actualDecimal384.75times0.8462=325.575450rounds325.58. Correctedbyindependentcontrol; originalobservationJSONpreserved. NoactualUIresultchanged."
+}

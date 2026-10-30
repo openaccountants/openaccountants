@@ -1,0 +1,498 @@
+{
+  "scope": "Own canonical VAT controls plus separately sealed37mirror controls reused where identical. Actual source/claimant/authority conditions remain; no software execution claimed from algebra.",
+  "count": 82,
+  "checks": [
+    {
+      "name": "case1 fulloutput",
+      "actual": "2520",
+      "expected": "2520",
+      "passed": true
+    },
+    {
+      "name": "case1 deductibleinput",
+      "actual": "1155",
+      "expected": "1155",
+      "passed": true
+    },
+    {
+      "name": "case1 net",
+      "actual": "1365",
+      "expected": "1365",
+      "passed": true
+    },
+    {
+      "name": "case1 payable after500prior",
+      "actual": "865",
+      "expected": "865",
+      "passed": true
+    },
+    {
+      "name": "case2 rounded percentage",
+      "actual": "60",
+      "expected": "60",
+      "passed": true
+    },
+    {
+      "name": "case2 general",
+      "actual": "6000",
+      "expected": "6000",
+      "passed": true
+    },
+    {
+      "name": "case2 special",
+      "actual": "2800",
+      "expected": "2800",
+      "passed": true
+    },
+    {
+      "name": "case2 compulsory comparison",
+      "actual": "3080",
+      "expected": "3080",
+      "passed": true
+    },
+    {
+      "name": "case2 compulsory triggers",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "case2 annual adjustment",
+      "actual": "-4200",
+      "expected": "-4200",
+      "passed": true
+    },
+    {
+      "name": "zerozero doesnot trigger compulsions",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "positivegeneral zerospecial triggers",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "prorrata fractional roundsup",
+      "actual": "34",
+      "expected": "34",
+      "passed": true
+    },
+    {
+      "name": "prorrata exactinteger stays",
+      "actual": "60",
+      "expected": "60",
+      "passed": true
+    },
+    {
+      "name": "sector50exact no separate sector",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "sector51 creates numerical split",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "ancillary15percent equality amountgate",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "ancillary15.01 fails",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "startup June30 countedcurrentyear",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "startup July1 countnextyear",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "startup globalfraction not meanannual",
+      "actual": "1/10",
+      "expected": "1/10",
+      "passed": true
+    },
+    {
+      "name": "startup globalpercentage10 not mean50",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "delayedfirstuse window2026\u20132035",
+      "actual": "10",
+      "expected": "10",
+      "passed": true
+    },
+    {
+      "name": "literalDGT45percent additionaldespitefall",
+      "actual": "63",
+      "expected": "63",
+      "passed": true
+    },
+    {
+      "name": "literalDGT40percent repayment",
+      "actual": "-42",
+      "expected": "-42",
+      "passed": true
+    },
+    {
+      "name": "literalDGT latercash after75",
+      "actual": "9513",
+      "expected": "9513",
+      "passed": true
+    },
+    {
+      "name": "literalDGT fixedreference next75",
+      "actual": "693",
+      "expected": "693",
+      "passed": true
+    },
+    {
+      "name": "wrongcumulative cashreference next75",
+      "actual": "6237/10",
+      "expected": "6237/10",
+      "passed": true
+    },
+    {
+      "name": "conditional12600reference later75",
+      "actual": "315",
+      "expected": "315",
+      "passed": true
+    },
+    {
+      "name": "conditional12600reference later45",
+      "actual": "-315",
+      "expected": "-315",
+      "passed": true
+    },
+    {
+      "name": "conditionalreference71",
+      "actual": "231",
+      "expected": "231",
+      "passed": true
+    },
+    {
+      "name": "conditionalreference49",
+      "actual": "-231",
+      "expected": "-231",
+      "passed": true
+    },
+    {
+      "name": "bothgate21k50/40to70/60",
+      "actual": "462",
+      "expected": "462",
+      "passed": true
+    },
+    {
+      "name": "neithergate tenpoints despiteproductgrowth",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "ungatedproductalone would differ",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "eithergate useonly",
+      "actual": "210",
+      "expected": "210",
+      "passed": true
+    },
+    {
+      "name": "eithergate prorrataonly",
+      "actual": "525/2",
+      "expected": "525/2",
+      "passed": true
+    },
+    {
+      "name": "eithergate otherdrift5",
+      "actual": "1155/4",
+      "expected": "1155/4",
+      "passed": true
+    },
+    {
+      "name": "eithergate usedrift5",
+      "actual": "1323/4",
+      "expected": "1323/4",
+      "passed": true
+    },
+    {
+      "name": "eithergate opposite10",
+      "actual": "105/2",
+      "expected": "105/2",
+      "passed": true
+    },
+    {
+      "name": "eithergate oppositedrift",
+      "actual": "-987/4",
+      "expected": "-987/4",
+      "passed": true
+    },
+    {
+      "name": "calculator525 is usechange withoutprorrata",
+      "actual": "525",
+      "expected": "525",
+      "passed": true
+    },
+    {
+      "name": "source-derived210 includes40percent restriction",
+      "actual": "210",
+      "expected": "210",
+      "passed": true
+    },
+    {
+      "name": "108 recoverableVAT excluded",
+      "actual": "3000",
+      "expected": "3000",
+      "passed": true
+    },
+    {
+      "name": "108 fullirrecoverable included",
+      "actual": "3630",
+      "expected": "3630",
+      "passed": true
+    },
+    {
+      "name": "10890percentrecovery irrecoverable",
+      "actual": "63",
+      "expected": "63",
+      "passed": true
+    },
+    {
+      "name": "10890percent acquisitionvalue",
+      "actual": "3063",
+      "expected": "3063",
+      "passed": true
+    },
+    {
+      "name": "10899percent acquisitionvalue",
+      "actual": "30063/10",
+      "expected": "30063/10",
+      "passed": true
+    },
+    {
+      "name": "108directinstallation acquisitioncost",
+      "actual": "3050",
+      "expected": "3050",
+      "passed": true
+    },
+    {
+      "name": "108upperbound belowthreshold",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "108 strict below atirrecoverable5.05",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "108 strict below atirrecoverable5.06",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "108 strict below atirrecoverable5.07",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "foral prior12m equality domicile",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "foral prior13m splits numerical gateway",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "foral overallresult",
+      "actual": "18000",
+      "expected": "18000",
+      "passed": true
+    },
+    {
+      "name": "foral60percent result",
+      "actual": "10800",
+      "expected": "10800",
+      "passed": true
+    },
+    {
+      "name": "common40percent result",
+      "actual": "7200",
+      "expected": "7200",
+      "passed": true
+    },
+    {
+      "name": "foral prior11m domicile whole",
+      "actual": "18000",
+      "expected": "18000",
+      "passed": true
+    },
+    {
+      "name": "installation15percent equality",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "ratiochange15point equality",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "rectificativa previouslypaid1000 corrected800",
+      "actual": "-200",
+      "expected": "-200",
+      "passed": true
+    },
+    {
+      "name": "rectificativa previousrefund300 corrected500",
+      "actual": "-200",
+      "expected": "-200",
+      "passed": true
+    },
+    {
+      "name": "Juneelectricity annualone decimal",
+      "actual": "6.0",
+      "expected": "6.0",
+      "passed": true
+    },
+    {
+      "name": "Juneelectricity strictactivation fails",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "Julyelectricity annualone decimal",
+      "actual": "8.4",
+      "expected": "8.4",
+      "passed": true
+    },
+    {
+      "name": "Julyelectricity strictactivation fails",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "Sepelectricity annualone decimal",
+      "actual": "11.4",
+      "expected": "11.4",
+      "passed": true
+    },
+    {
+      "name": "Sepelectricity strictactivation fails",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "Junegas annualone decimal",
+      "actual": "0.8",
+      "expected": "0.8",
+      "passed": true
+    },
+    {
+      "name": "Junegas strictactivation fails",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "Julygas annualone decimal",
+      "actual": "4.1",
+      "expected": "4.1",
+      "passed": true
+    },
+    {
+      "name": "Julygas strictactivation fails",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "Sepgas annualone decimal",
+      "actual": "4.3",
+      "expected": "4.3",
+      "passed": true
+    },
+    {
+      "name": "Sepgas strictactivation fails",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "15percent exact threshold fails",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "monthly16.1 not annual6.0",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "cashbackstop2026sale followingyearend",
+      "actual": "2027",
+      "expected": "2027",
+      "passed": true
+    },
+    {
+      "name": "renunciation Feb15 inwindow",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "renunciation Feb17 outsidewindow",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "renewal materials40percent equality",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "shortletting30 nights included numerical rule",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    }
+  ]
+}

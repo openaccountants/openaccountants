@@ -1,0 +1,155 @@
+{
+  "guide_sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+  "fragment_sha256": "57036f9f27da03f548436df244e9e1957d4b3178811d58b5863459a2fab081b1",
+  "current_units": 35,
+  "quotation_rows": 85,
+  "selected_source_anchors": 29,
+  "native_checks": [
+    {
+      "quote_key": "Mforeign",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P28div",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P32custody",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P39definition",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P39home",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P39loss",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P39lossrelease",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P39small",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P40",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P41",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P43FIFO",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P43listed",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P43rights",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P43swap",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P43unlisted",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P45annuity",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P45home",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P54",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P60",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P67foreign",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P7n",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "P83recapture",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "R40condition",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "R40construct",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "R40rehab",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "R40scope",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "R40timing",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "R5day",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    },
+    {
+      "quote_key": "R5specific",
+      "exact_native_interval": true,
+      "read_scope": "Selected original-language paragraph(s), actually read by root; not entire acquired instrument"
+    }
+  ],
+  "independent_status": "Writer evidence only; country review pending; remaining Navarra sections not represented complete"
+}

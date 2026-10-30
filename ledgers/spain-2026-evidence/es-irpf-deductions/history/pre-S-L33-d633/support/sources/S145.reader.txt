@@ -1,0 +1,145 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Requisito conjunto para determinadas deducciones autonómicas por donativos o cesiones de uso o co...
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+Comunitat Valenciana
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Requisito conjunto para determinadas deducciones autonómicas por donativos o cesiones de uso o comodato
+
+Deducciones:
+
+Por donaciones dinerarias para la conservación, reparación y restauración de bienes integrantes del Patrimonio Cultural Valenciano,
+
+Por cantidades destinadas por sus titulares para la conservación, reparación y restauración de bienes integrantes del Patrimonio Cultural Valenciano,
+
+Por donaciones destinadas al fomento de la Lengua Valenciana y
+
+Por donaciones o cesiones de uso o comodatos para otros fines de carácter cultural, científico o deportivo no profesional.
+
+Requisito conjunto
+
+La base de las deducciones anteriores no podrá ser superior al 30 por 100 de la base liquidable general y del ahorro del contribuyente, suma de las casillas [0500] y [0510] de la declaración.
+
+En cualquier caso, la revocación de la donación determinará la obligación de ingresar las cuotas correspondientes a los beneficios disfrutados en el periodo impositivo en el que dicha revocación se produzca, más los intereses de demora que procedan, en la forma establecida por la normativa estatal reguladora del IRPF.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

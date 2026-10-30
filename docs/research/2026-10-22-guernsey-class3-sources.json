@@ -1,0 +1,15 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://gov.gg/non-employedcontributions",
+      "locators": "Under/over pension age classification and application; pre-allowance exemption test",
+      "sha256": "a60e5407e6731fd3b9d02d0ac69d0ef0b34a6929aa06872457e14af48860e30e"
+    },
+    {
+      "url": "https://gov.gg/CHttpHandler.ashx?id=185595&p=0",
+      "locators": "Monetary Values 2026 V2 16.7.26 page6 Class3 rows",
+      "sha256": "c9c3ef20c2eb8e38e1e58fd82d233b54a47a8eff0cd1850444bf29c790050cab"
+    }
+  ]
+}

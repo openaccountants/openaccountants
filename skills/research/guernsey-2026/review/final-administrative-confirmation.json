@@ -1,0 +1,210 @@
+{
+  "candidate_head": "0952cd3bbc3aca46680b7f11d61437b47bec86ce",
+  "accepted_guide_manifest_head": "23fa6a44e6bbc80d008bd5613ae67587beb35282",
+  "accepted_legal_body_head": "4f2539df8ac40f8496c1de98488284630c014d11",
+  "review_scope": "Administrative-only diff confirmation; no new substantive legal research or broad test repetition.",
+  "verdict": "ACCEPT: accurate explicitly partial draft; no open material findings.",
+  "operative_legal_methods_unchanged": true,
+  "lost_content_restored": 2,
+  "machine_readable_partials_retained": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "readme_frontmatter_byte_exact_to_legal_body_head": true,
+  "false_complete_or_attestation_claim": false,
+  "main_blocks": 18,
+  "main_blocks_byte_exact_to_legal_body_head": true,
+  "archived_review_artifacts_byte_exact": true,
+  "archive_files": [
+    {
+      "original_name": "bounded-addition-closure.json",
+      "archived_path": "skills/research/guernsey-2026/review/bounded-addition-closure.json",
+      "sha256": "27ec4a4253b265d5f2f34ad4a77278d2698c49788e96cd72f53d8a9fa39832db",
+      "bytes": 1566
+    },
+    {
+      "original_name": "bounded-addition-closure.md",
+      "archived_path": "skills/research/guernsey-2026/review/bounded-addition-closure.md",
+      "sha256": "f87ff7f6247ee8fc467f4a18cfc64913e21e1688b175797cad92569f16673e20",
+      "bytes": 4268
+    },
+    {
+      "original_name": "checks.log",
+      "archived_path": "skills/research/guernsey-2026/review/checks.log",
+      "sha256": "95d8207b0dc4a64924adbb74131e85623ae4ba85a7302f2702b55273d6090ff2",
+      "bytes": 60
+    },
+    {
+      "original_name": "final-integrity.json",
+      "archived_path": "skills/research/guernsey-2026/review/final-integrity.json",
+      "sha256": "75e0c9a38ddf9b418b3632b4c2e428b26046762c0972be193b13b72a9d2b6ac1",
+      "bytes": 4889
+    },
+    {
+      "original_name": "integrity.json",
+      "archived_path": "skills/research/guernsey-2026/review/integrity.json",
+      "sha256": "f65fce38038a3570b5c905ef36c3fbac9e2c2e310c6cd98809d9c0b9b8d045f1",
+      "bytes": 48269
+    },
+    {
+      "original_name": "original-only-paragraphs.md",
+      "archived_path": "skills/research/guernsey-2026/review/original-only-paragraphs.md",
+      "sha256": "cc0d8a2190698034111d963be7a7b511ae9f1362771481c04a12016d5378e8f7",
+      "bytes": 48632
+    },
+    {
+      "original_name": "report.md",
+      "archived_path": "skills/research/guernsey-2026/review/report.md",
+      "sha256": "c429055273e7a9bab4e3595ced0f0fda746cc0b328f77b7c32d321a24af8ce64",
+      "bytes": 17512
+    },
+    {
+      "original_name": "result.json",
+      "archived_path": "skills/research/guernsey-2026/review/result.json",
+      "sha256": "c02c1a6d11f789a208362c7c2f4446aa52965c3ce6f9b014cd0a62e4d66c94c0",
+      "bytes": 4724
+    }
+  ],
+  "new_receipt_copies_byte_exact": true,
+  "protected_metadata_and_original_cta_preserved": true,
+  "guide_manifest": [
+    {
+      "path": "skills/international/guernsey/README.md",
+      "git_blob": "28827c452cae78e3e4869281e4492969ba366a9d",
+      "sha256": "d808b1b33df34d63460217b207f681417d9c27e03d2d8d62287cb7917e981dd8",
+      "bytes": 8069,
+      "lines": 52,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+      "git_blob": "aa46c2cd79757da8b67c4dbf2c77a5e9c87137e3",
+      "sha256": "f181d56e7efa895f16a6508785764c1a5ff7fa5f927729f06087a686320177c4",
+      "bytes": 25430,
+      "lines": 199,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "git_blob": "3bef025f6ed1fae667c21a3f3b317ff36d3da9d6",
+      "sha256": "163ad7d2b693b3287e9a208f58c59a9ad4b481acf3048fee7f3e604f5def1007",
+      "bytes": 12375,
+      "lines": 125,
+      "frontmatter_exact_to_legal_body_head": false,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "git_blob": "210e876f13f24607cc58e5943595d4ee51edf4bd",
+      "sha256": "130728de1cbf2ca27b91ea2ed7e6c2410b20c9149ea6e653f85ae38963da1d5f",
+      "bytes": 67245,
+      "lines": 418,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "git_blob": "19599746ede00a0f926ac700a252ce497bb3b61a",
+      "sha256": "1611f398bb155f265e5998ed808be7a6a78ab4be3f546a1f75e0a40053e5f33d",
+      "bytes": 9223,
+      "lines": 110,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "git_blob": "7f0f5d6ff3c38238738cddecc7a4ddfc9b3c93ff",
+      "sha256": "cf17eff62e9e284603e06ff6effd07371b69653b442f1b7db3f0f0187ff155d8",
+      "bytes": 43597,
+      "lines": 339,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "git_blob": "3d731e786695301593ef2da2c127c7d22d9d8511",
+      "sha256": "e77c522e1e277e16134a505f7576831a2432afd189b2f54f62b33e903daadfd8",
+      "bytes": 38946,
+      "lines": 326,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "git_blob": "f3c60460350fccb39d31eb691260c0095286890f",
+      "sha256": "f40b6e738ee039ade43cfc7f72f913af9bb1989d002360144bcfcc5406a5513f",
+      "bytes": 16781,
+      "lines": 183,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-secondary-pensions.md",
+      "git_blob": "3832501d5aac7e8149c1ff5d0f9e89963eff2187",
+      "sha256": "757f38c5ba60ff5f8fcae3536fb930a1cdd5f0ce66c680f0b70e8111a65db8a2",
+      "bytes": 16361,
+      "lines": 157,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "git_blob": "89bebb34e8d206ca5e4720af3eaf04270f139249",
+      "sha256": "d5982c3b7040a0e2541778ee49187e81d00d3773420a0d8c5c384967fcfbb662",
+      "bytes": 52428,
+      "lines": 319,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    }
+  ],
+  "administrative_findings": [
+    {
+      "priority": "P3",
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "line": 125,
+      "issue": "Stale pending-review sentence contradicted accepted-review references.",
+      "status": "closed",
+      "fix_head": "23fa6a44e6bbc80d008bd5613ae67587beb35282"
+    }
+  ],
+  "administrative_extension": {
+    "head": "0952cd3bbc3aca46680b7f11d61437b47bec86ce",
+    "change": "Removed one EOF blank separator in writer-created corporate-original-controls.md; both blocks byte-identical; all Guide/README blobs and eight review artifacts unchanged."
+  },
+  "tests": {
+    "independent_this_pass": "18 main block bodies compared byte-exact; no execution repeated",
+    "parent_reported_changed_only": "77 checks, 0 failures:57 prior including seven duplicate supplements plus20 duplicate blocks in archived original-only-paragraphs working paper",
+    "parent_reported_strict_metadata": "9 Guides,0 errors,0 warnings",
+    "prior_independent_execution": "18 main and57 total checks passed as recorded in unchanged earlier review artifacts"
+  },
+  "record_refresh": "Candidate-integrity and no-loss size records predate formation status correction; refresh these administrative records to this manifest.",
+  "publication_constraints": "Issue397 remains open. No attestation, push, merge or final-head CI action performed by reviewer. Further changes under this closure are limited to review/validation/research records, with every Guide and README blob identical to this manifest.",
+  "checked_utc": "2026-10-27T23:24:20.154645+00:00"
+}

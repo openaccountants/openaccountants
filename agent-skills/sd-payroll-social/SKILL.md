@@ -19,6 +19,29 @@ metadata:
 
 > **Currency note:** All figures are in Sudanese Pounds (SDG — ج.س). Exchange rate reference: US$1.00 = SDG 47 (SSA 2019 data — verify current rate). Sudan has undergone multiple currency redenominations; verify current SDG values before filing.
 
+---
+
+## Section 1 — Scope statement
+
+This skill covers:
+
+- National Social Insurance Fund (NSIF) contribution rates for employers and employees
+- Employment income tax (PAYE) withholding mechanics
+- Monthly remittance deadlines for both PAYE and NSIF
+- Sickness, maternity, and work injury benefits framework
+- Severance pay (unemployment) rules under the labor code
+- Self-employed and voluntary social insurance contributions
+- Record-keeping and compliance requirements
+
+This skill does NOT cover:
+
+- Personal income tax computation (brackets, allowances) — see `sd-income-tax`
+- Corporate income tax — see `sd-corporate-income-tax`
+- VAT — see `sd-vat-gst`
+- Company formation — see `sd-company-formation`
+
+---
+
 ## Section 2 — Social insurance framework
 
 ### Regulatory framework

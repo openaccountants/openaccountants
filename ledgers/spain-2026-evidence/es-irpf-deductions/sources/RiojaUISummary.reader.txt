@@ -1,0 +1,280 @@
+Browser tab: 1623103268, Title: "Renta 2025", URL: "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB".
+0 AXWebArea Renta 2025, URL: www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB
+	1 container sRKP_
+		2 container Description: Cabecera de la página, ID: AEAT_header
+			3 link Description: Saltar al contenido principal, Value: www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB#acc-main
+			4 link Help: Página de inicio, Value: sede.agenciatributaria.gob.es/Sede/inicio.html, Description: Logotipo del Gobierno de España Logotipo de la Agencia Tributaria Logotipo de la Agencia Tributaria. Sede electrónica
+			5 container topDerecha
+				6 link Description: Icono Calendario, fecha y hora oficial 28/10/2026 12:45:22 Hora oficial, Value: sede.agenciatributaria.gob.es/Sede/Calendario_fecha_y_hora_oficial.html
+				7 link Description: ÁREA PERSONAL, Value: sede.agenciatributaria.gob.es/Sede/mi-area-personal.html
+				8 pop up button (collapsed) ES, ID: dropdownIdiomas, Secondary Actions: Expand
+		9 container acc-main
+			10 container Description: Contenido principal, ID: sRKPk
+				11 container sRKPl
+					12 heading Impuesto sobre la Renta de las Personas Físicas. - Modelo 100, Value: 1, ID: sRKPn
+						13 text Impuesto sobre la Renta de las Personas Físicas. - Modelo 100
+				14 container Description: Impuesto sobre la Renta de las Personas Físicas. - Modelo 100, ID: sRKPr
+					15 container sRKPt
+						272 container sRKP7ca
+							273 container sRKP9ca
+								274 button  Apartados declaración, ID: sRKPeca
+								275 button  Ayuda, ID: sRKPhca
+								276 button sRKPjca
+								277 button  Mostrar opciones, ID: sRKPpca
+							278 container sRKP0da
+								279 text Resumen de declaraciones
+								280 table resumenRenta
+									281 row
+										282 cell
+											283 text Declarante
+									284 row
+										285 cell PRUEBA RIOJA
+											286 text 12345678Z
+									287 row
+										288 cell
+											289 text PRUEBA RIOJA
+									290 row
+										291 cell
+											292 button Presentar declaración, ID: Presentacion
+												293 image
+												294 text Presentar declaración
+									295 row
+										296 cell
+											297 button Vista previa, ID: VistapreviaXML
+												298 image
+												299 text Vista previa
+									300 row
+										301 cell
+											302 button masfavorable
+									303 row
+										304 cell
+											305 image N9
+											306 text    Resultado de la declaración
+										307 cell
+											308 button 1.051,80, ID: RESINGDEV
+									309 row
+										310 cell
+											311 image A
+											312 text    Rendimientos del trabajo
+									313 row
+										314 cell
+											315 text       Total ingresos íntegros computables
+										316 cell
+											317 button 20.000,00, ID: TPING
+									318 row
+										319 cell
+											320 text       Rendimiento neto
+										321 cell
+											322 button 18.000,00, ID: TPRDTO
+									323 row
+										324 cell
+											325 text       Rendimiento neto reducido
+										326 cell
+											327 button 18.000,00, ID: TPTOTAL
+									328 row
+										329 cell
+											330 image J1
+											331 text    Base imponible general
+										332 cell
+											333 button 18.000,00, ID: BIGRALH
+									334 row
+										335 cell
+											336 image J3
+											337 text    Base liquidable general
+										338 cell
+											339 button 18.000,00, ID: BLGRAL
+									340 row
+										341 cell
+											342 image J4
+											343 text    Base liquidable general sometida a gravamen
+										344 cell
+											345 button 18.000,00, ID: BLGGRAV
+									346 row
+										347 cell
+											348 image J5
+											349 text    Base imponible del ahorro
+										350 cell
+											351 button 0,00, ID: BIAHOJ
+									352 row
+										353 cell
+											354 image J7
+											355 text    Base liquidable del ahorro
+										356 cell
+											357 button 0,00, ID: BLAHOJ
+									358 row
+										359 cell
+											360 image L
+											361 text    Mínimo personal y familiar
+									362 row
+										363 cell
+											364 text       Mínimo personal y familiar. Parte estatal
+										365 cell
+											366 button 10.750,00, ID: MPERFA
+									367 row
+										368 cell
+											369 text       Mínimo personal y familiar. Parte autonómica
+										370 cell
+											371 button 10.750,00, ID: MPERFAAU
+									372 row
+										373 cell
+											374 image N1
+											375 text    Cuota íntegra
+									376 row
+										377 cell
+											378 text       Cuota íntegra estatal
+										379 cell
+											380 button 827,50, ID: CINTEST
+									381 row
+										382 cell
+											383 text       Cuota íntegra autonómica
+										384 cell
+											385 button 724,30, ID: CINTAUT
+									386 row
+										387 cell
+											388 text       Suma de deducciones autonómicas
+										389 cell
+											390 button 500,00, ID: ANEXOB
+									391 row
+										392 cell
+											393 image N4
+											394 text    Cuotas
+									395 row
+										396 cell
+											397 text       Cuota líquida estatal
+										398 cell
+											399 button 827,50, ID: CLIQEST
+									400 row
+										401 cell
+											402 text       Cuota líquida autonómica
+										403 cell
+											404 button 224,30, ID: CLIQAUT
+									405 row
+										406 cell
+											407 text       Cuota líquida estatal incrementada
+										408 cell
+											409 button 827,50, ID: CLEIN
+									410 row
+										411 cell
+											412 text       Cuota líquida autonómica incrementada
+										413 cell
+											414 button 224,30, ID: CLAIN
+									415 row
+										416 cell
+											417 text       Cuota líquida incrementada total
+										418 cell
+											419 button 1.051,80, ID: CLIQT
+									420 row
+										421 cell
+											422 image N6
+											423 text    Cuota resultante de la autoliquidación
+										424 cell
+											425 button 1.051,80, ID: CAUTLIQ
+									426 row
+										427 cell
+											428 image N7
+											429 text    Retenciones y demás pagos a cuenta
+										430 cell
+											431 button 0,00, ID: PAGOS
+									432 row
+										433 cell
+											434 image N8
+											435 text    Cuota diferencial
+										436 cell
+											437 button 1.051,80, ID: CDIF
+									438 row
+										439 cell
+											440 text       Deducción por maternidad
+										441 cell
+											442 button 0,00, ID: MATER
+									443 row
+										444 cell
+											445 text       Deducción por maternidad. Incremento por gastos en guardería
+										446 cell
+											447 button 0,00, ID: MATERB
+									448 row
+										449 cell
+											450 text       Deducción por descendientes con discapacidad a cargo
+										451 cell
+											452 button 0,00, ID: DAFAS1
+									453 row
+										454 cell
+											455 text       Deducción por ascendientes con discapacidad a cargo
+										456 cell
+											457 button 0,00, ID: DAFAS2
+									458 row
+										459 cell
+											460 text       Deducción por cónyuge no separado legalmente con discapacidad
+										461 cell
+											462 button 0,00, ID: DAFAS5
+									463 row
+										464 cell
+											465 text       Deducción por familia numerosa
+										466 cell
+											467 button 0,00, ID: DAFAS3
+									468 row
+										469 cell
+											470 text       Deducción por ascendiente con dos hijos sin derecho a anualidades por alimentos
+										471 cell
+											472 button 0,00, ID: DAFAS4
+		212 container js-pie-enlaces
+			213 container
+				214 heading Agencia Tributaria, Value: 2, ID: tgraeat-id-1793186860381-64374
+					215 text Agencia Tributaria
+				216 content list aeat-id-1793186860381-64374
+					217 link Description: Accesibilidad, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html
+					218 link Description: Aviso de seguridad, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/aviso-seguridad.html
+					219 link Description: Aviso legal, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/aviso-legal.html
+					220 link Description: Validación del certificado de sede, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/validacion-certificado-sede.html
+					221 link Description: Protección de datos, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/datos-personales.html
+					222 link Description: Política lingüística, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/politica-linguistica.html
+					223 link Description: Estructura y navegación en la sede electrónica, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/estructura-navegacion-sede-electronica.html
+					224 link Description: Códigos de identificación de la Agencia Tributaria (DIR3) Se abre en ventana nueva, Help: Códigos de identificación de la Agencia Tributaria (DIR3), Se abre en ventana nueva, Value: administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/fichaUnidadOrganica.htm?codigoUnidad=EA0028512
+			225 container
+				226 heading Contacta con nosotros, Value: 2, ID: tgraeat-id-1793186860381-64375
+					227 text Contacta con nosotros
+				228 content list aeat-id-1793186860381-64375
+					229 link Description: Asistencia y Cita, Value: sede.agenciatributaria.gob.es/Sede/procedimientoini/GC29.shtml
+					230 link Description: Teléfonos de interés, Value: sede.agenciatributaria.gob.es/Sede/contacta-nosotros/telefonos-interes.html
+					231 link Description: Buscador de oficinas, Value: sede.agenciatributaria.gob.es/Sede/buscador-oficinas.html
+					232 link Description: Buzones de sugerencias, Value: sede.agenciatributaria.gob.es/Sede/buzones-sugerencias.html
+					233 link Description: Encuesta de satisfacción de usuarios Se abre en ventana nueva, Help: Encuesta de satisfacción de usuarios, Se abre en ventana nueva, Value: forma.administracionelectronica.gob.es/form/open/corp/95fd4f0b-5c6e-4d91-a036-0717b277b7dd/RtHF/oauQDQlm
+					234 link Description: Denuncias, Value: sede.agenciatributaria.gob.es/Sede/colaborar-agencia-tributaria/denuncias.html
+					235 link Description: Suscripción newsletter, Value: sede.agenciatributaria.gob.es/Sede/informacion-institucional/suscripcion-rss-newsletter/newsletter.html
+					236 link Description: Suscripción RSS, Value: sede.agenciatributaria.gob.es/Sede/informacion-institucional/suscripcion-rss-newsletter/rss.html
+			237 container
+				238 heading Ayuda, Value: 2, ID: tgraeat-id-1793186860381-64376
+					239 text Ayuda
+				240 content list aeat-id-1793186860381-64376
+					241 link Description: Buscar, Value: sede.agenciatributaria.gob.es/Sede/search.html
+					242 link Description: Consultas informáticas, Value: sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas.html
+					243 link Description: Contenidos en lectura fácil, Value: sede.agenciatributaria.gob.es/Sede/ayuda/contenidos-lectura-facil.html
+					244 link Description: Diseños de registro, Value: sede.agenciatributaria.gob.es/Sede/ayuda/disenos-registro.html
+					245 link Description: Horario de interrupciones de sede, Value: sede.agenciatributaria.gob.es/Sede/ayuda/horario-interrupciones-sede-electronica.html
+					246 link Description: Manuales, vídeos y folletos, Value: sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos.html
+					247 link Description: Simuladores, Value: sede.agenciatributaria.gob.es/Sede/procedimientoini/ZZ08.shtml
+					248 link Description: Todas las ayudas, Value: sede.agenciatributaria.gob.es/Sede/ayuda.html
+			249 container
+				250 heading Enlaces de interés, Value: 2, ID: tgraeat-id-1793186860381-64377
+					251 text Enlaces de interés
+				252 content list aeat-id-1793186860381-64377
+					253 link Description: Ministerio de Hacienda, Value: hacienda.gob.es/
+					254 link Description: Fiscalidad autonómica y local Se abre en ventana nueva, Help: Fiscalidad autonómica y local, Se abre en ventana nueva, Value: agenciatributaria.es/AEAT.fisterritorial/InicioF.shtml
+					255 link Description: Tribunales Económico - Administrativos, Value: sede.tea.hacienda.gob.es/
+					256 link Description: Consejo para la Defensa del Contribuyente, Value: www2.agenciatributaria.gob.es/static_files/common/dep/planificacion/CDC/IFRD0001.html
+					257 link Description: Punto de Acceso General Se abre en ventana nueva, Help: Punto de Acceso General, Se abre en ventana nueva, Value: administracion.gob.es/
+					258 link Description: Portal de la transparencia Se abre en ventana nueva, Help: Portal de la transparencia, Se abre en ventana nueva, Value: transparencia.gob.es/
+					259 link Description: Otros enlaces de interés, Value: sede.agenciatributaria.gob.es/Sede/enlaces-interes.html
+	260 container ClickToCall
+		261 container
+			262 container ClickToCalld50284
+				263 text ¿Dudas?
+				264 text Clic aquí
+			265 text Información Tributaria Básica
+		266 link ¿Dudas? Clic aquí
+			267 image ¿Dudas? Clic aquí
+		268 button Ocultar ayuda de llamada a Información tributaria básica
+			269 image Ocultar ayuda de llamada a Información tributaria básica
+		270 button Cerrar ayuda de llamada a Información tributaria básica
+			271 image Cerrar ayuda de llamada a Información tributaria básica
+
+The focused UI element is 0 AXWebArea Renta 2025, URL: www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB

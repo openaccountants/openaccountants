@@ -1,0 +1,16 @@
+[
+  {
+    "name": "minimum-july2026",
+    "url": "https://www.cass.ad/sites/default/files/arxius/Circular%20informativa%20salari%20m%C3%ADnim%20a%20partir%20de%20l%271%20de%20juliol%20del%202026_0.pdf",
+    "sha256": "d491a9cd0cc7091448743679f2f8e54a0d2f0448b1ddf74c71b17f49c008057b",
+    "bytes": 340173,
+    "read_date": "2026-10-27"
+  },
+  {
+    "name": "minimum-jan2026",
+    "url": "https://www.cass.ad/sites/default/files/arxius/Circular%20informativa%20Salari%20m%C3%ADnim%202026.pdf",
+    "sha256": "ed1f15914c07d6b963b74fe6fe34c18be5e48b10df35bc476d922813b29587ee",
+    "bytes": 345142,
+    "read_date": "2026-10-27"
+  }
+]

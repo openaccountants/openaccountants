@@ -1,0 +1,276 @@
+{
+  "controls": [
+    {
+      "name": "service executive turnover 0",
+      "actual": "67680",
+      "expected": "67680",
+      "pass": true
+    },
+    {
+      "name": "service executive turnover 125000",
+      "actual": "67680",
+      "expected": "67680",
+      "pass": true
+    },
+    {
+      "name": "service executive turnover 125000.01",
+      "actual": "118440.00",
+      "expected": "118440",
+      "pass": true
+    },
+    {
+      "name": "service executive turnover 1000000",
+      "actual": "423000.00",
+      "expected": "423000",
+      "pass": true
+    },
+    {
+      "name": "service executive turnover 1000000.01",
+      "actual": "477144.00",
+      "expected": "477144",
+      "pass": true
+    },
+    {
+      "name": "service executive turnover 3500000",
+      "actual": "1505880.00",
+      "expected": "1505880",
+      "pass": true
+    },
+    {
+      "name": "other business scale top",
+      "actual": "1505880.00",
+      "expected": "1505880",
+      "pass": true
+    },
+    {
+      "name": "derived shareholder ceiling from marginal 2.40",
+      "actual": "6.40",
+      "expected": "6.40",
+      "pass": true
+    },
+    {
+      "name": "derived shareholder ceiling from marginal 2.65",
+      "actual": "6.65",
+      "expected": "6.65",
+      "pass": true
+    },
+    {
+      "name": "derived shareholder ceiling from marginal 2.90",
+      "actual": "6.90",
+      "expected": "6.90",
+      "pass": true
+    },
+    {
+      "name": "ordinary loss cap profit 999999",
+      "actual": "999999",
+      "expected": "999999",
+      "pass": true
+    },
+    {
+      "name": "ordinary loss cap profit 1000000",
+      "actual": "1000000",
+      "expected": "1000000",
+      "pass": true
+    },
+    {
+      "name": "ordinary loss cap profit 1000001",
+      "actual": "1000000.5",
+      "expected": "1000000.5",
+      "pass": true
+    },
+    {
+      "name": "ordinary loss cap profit 2000000",
+      "actual": "1500000",
+      "expected": "1500000",
+      "pass": true
+    },
+    {
+      "name": "participation quota at 20",
+      "actual": "0.2",
+      "expected": "0.2",
+      "pass": true
+    },
+    {
+      "name": "participation quota at 34.999",
+      "actual": "0.2",
+      "expected": "0.2",
+      "pass": true
+    },
+    {
+      "name": "participation quota at 35",
+      "actual": "0.1",
+      "expected": "0.1",
+      "pass": true
+    },
+    {
+      "name": "participation quota at 49.999",
+      "actual": "0.1",
+      "expected": "0.1",
+      "pass": true
+    },
+    {
+      "name": "participation quota at 50",
+      "actual": "0.05",
+      "expected": "0.05",
+      "pass": true
+    },
+    {
+      "name": "participation quota actual expense cap",
+      "actual": "600",
+      "expected": "600",
+      "pass": true
+    },
+    {
+      "name": "March total employer",
+      "actual": "3716.11",
+      "expected": "3716.11",
+      "pass": true
+    },
+    {
+      "name": "March total employee",
+      "actual": "1645.93",
+      "expected": "1645.93",
+      "pass": true
+    },
+    {
+      "name": "October total employer",
+      "actual": "955.56",
+      "expected": "955.56",
+      "pass": true
+    },
+    {
+      "name": "October total employee",
+      "actual": "397.74",
+      "expected": "397.74",
+      "pass": true
+    },
+    {
+      "name": "CMRC October half-time A cap",
+      "actual": "2033.5",
+      "expected": "2033.5",
+      "pass": true
+    },
+    {
+      "name": "CARTI early class four",
+      "actual": "2200.32",
+      "expected": "2200.32",
+      "pass": true
+    },
+    {
+      "name": "CARTI late class four",
+      "actual": "2259.36",
+      "expected": "2259.36",
+      "pass": true
+    },
+    {
+      "name": "January 169 hours minimum",
+      "actual": "2031.38",
+      "expected": "2031.38",
+      "pass": true
+    },
+    {
+      "name": "June 169 hours minimum",
+      "actual": "2080.39",
+      "expected": "2080.39",
+      "pass": true
+    },
+    {
+      "name": "June minimum including 5 percent allowance",
+      "actual": "2184.41",
+      "expected": "2184.41",
+      "pass": true
+    },
+    {
+      "name": "domestic 254 hours eligible under native law",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "domestic 254.01 hours excluded under ordinary hours limb",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "VAT quarterly equality 4000 excluded",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "EU introduction declaration equality 460000",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "additional statistical equality 460000 not exceedance",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "CbCR 750 million not excluded",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "active NFE ordinary test equality 50 percent fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "VAT coefficient upward rounding",
+      "actual": "0.51",
+      "expected": "0.51",
+      "pass": true
+    },
+    {
+      "name": "ordinary excluded-car diesel admission",
+      "actual": "80.0",
+      "expected": "80",
+      "pass": true
+    },
+    {
+      "name": "ordinary excluded-car LPG admission",
+      "actual": "50.0",
+      "expected": "50",
+      "pass": true
+    },
+    {
+      "name": "small acquisition exact 10000 remains within threshold",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "small acquisition 10000.01 loses threshold",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "2026 acquisition election expiry year",
+      "actual": "2028",
+      "expected": "2028",
+      "pass": true
+    },
+    {
+      "name": "new company corporate holding exact50 not above limit",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "new company deemed family participation exact25 included",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    }
+  ],
+  "passed": 45,
+  "failed": 0
+}
