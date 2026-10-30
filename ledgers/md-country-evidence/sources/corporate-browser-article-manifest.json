@@ -1973,6 +1973,70 @@
       "read_date": "2026-10-30",
       "format": "Exact JSON returned by read-only browser DOM observation; selected ASP registration/name tariff and requirements; current SRL governance and park duration only; not whole-Code verification",
       "sha256": "ef58ba33f12f40ae5c45f669b327cdab4d936355fc8e1a7e44df2cb7d295d8ac"
+    },
+    "FORMATION-AML308-TRANSPARENCY-20261030": {
+      "article": "FORMATION-AML308-TRANSPARENCY-20261030",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155856&lang=ro",
+      "observed_utc": "2026-10-30T21:21:38.680Z",
+      "read_date": "2026-10-30",
+      "format": "Exact selected text returned by read-only official-page DOM observation: current AML statute provisions/header or selected ASP company checklist/beneficial-owner guidance. Not a whole-law, portal or complete-country verification.",
+      "sha256": "ef8fe07bf07d9faaa609527a93aba636cf627acb491636b2534305eacde68f59"
+    },
+    "FORMATION-AML308-CDD-SCOPE-20261030": {
+      "article": "FORMATION-AML308-CDD-SCOPE-20261030",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155856&lang=ro",
+      "observed_utc": "2026-10-30T21:23:01.406Z",
+      "read_date": "2026-10-30",
+      "format": "Exact selected text returned by read-only official-page DOM observation: current AML statute provisions/header or selected ASP company checklist/beneficial-owner guidance. Not a whole-law, portal or complete-country verification.",
+      "sha256": "98b0065550f3e2055b802b8905e96f46925257fa8dab71788085821737d9ac0c"
+    },
+    "FORMATION-ASP-SRL-FORMS-20261030": {
+      "article": "FORMATION-ASP-SRL-FORMS-20261030",
+      "official_url": "https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-1",
+      "observed_utc": "2026-10-30T21:23:54.203Z",
+      "read_date": "2026-10-30",
+      "format": "Exact selected text returned by read-only official-page DOM observation: current AML statute provisions/header or selected ASP company checklist/beneficial-owner guidance. Not a whole-law, portal or complete-country verification.",
+      "sha256": "88870fbc172319d5f57dd6f9b4c921a1991580ca55ad95658cd851f20a14be0f"
+    },
+    "FORMATION-ASP-BO-DEADLINE-20261030": {
+      "article": "FORMATION-ASP-BO-DEADLINE-20261030",
+      "official_url": "https://www.asp.gov.md/ro/servicii/intrebari-frecvente?grup=2718",
+      "observed_utc": "2026-10-30T21:24:37.364Z",
+      "read_date": "2026-10-30",
+      "format": "Exact selected text returned by read-only official-page DOM observation: current AML statute provisions/header or selected ASP company checklist/beneficial-owner guidance. Not a whole-law, portal or complete-country verification.",
+      "sha256": "4e419a1d20d2bec5a6368b2f6b1d45a3b3a4636adceb9dc00702b2e61e1a2b45"
+    },
+    "FORMATION-ASP-BO-CHANNELS-20261030": {
+      "article": "FORMATION-ASP-BO-CHANNELS-20261030",
+      "official_url": "https://www.asp.gov.md/ro/servicii/intrebari-frecvente?grup=2718",
+      "observed_utc": "2026-10-30T21:24:42.573Z",
+      "read_date": "2026-10-30",
+      "format": "Exact selected text returned by read-only official-page DOM observation: current AML statute provisions/header or selected ASP company checklist/beneficial-owner guidance. Not a whole-law, portal or complete-country verification.",
+      "sha256": "afc0934fb00cdd7e0519e82152d9b1ff6014963748d79878ba1d9e7ddac96a86"
+    },
+    "FORMATION-ASP-BO-ONLINE-STEPS-20261030": {
+      "article": "FORMATION-ASP-BO-ONLINE-STEPS-20261030",
+      "official_url": "https://www.asp.gov.md/ro/servicii/intrebari-frecvente?grup=2718",
+      "observed_utc": "2026-10-30T21:25:44.535Z",
+      "read_date": "2026-10-30",
+      "format": "Exact selected text returned by read-only official-page DOM observation: current AML statute provisions/header or selected ASP company checklist/beneficial-owner guidance. Not a whole-law, portal or complete-country verification.",
+      "sha256": "e76a799067c9c3d5d6f6fa6d0255d0459b8b91893b2403124ab9753b75860eba"
+    },
+    "FORMATION-ASP-BO-SIGNERS-20261030": {
+      "article": "FORMATION-ASP-BO-SIGNERS-20261030",
+      "official_url": "https://www.asp.gov.md/ro/servicii/intrebari-frecvente?grup=2718",
+      "observed_utc": "2026-10-30T21:25:49.300Z",
+      "read_date": "2026-10-30",
+      "format": "Exact selected text returned by read-only official-page DOM observation: current AML statute provisions/header or selected ASP company checklist/beneficial-owner guidance. Not a whole-law, portal or complete-country verification.",
+      "sha256": "ee632b31cc64322fffc247b6773177673469bef184cb0c1a5c4c5ddadebedbf9"
+    },
+    "FORMATION-AML308-OPERATIVE-HEADER-20261030": {
+      "article": "FORMATION-AML308-OPERATIVE-HEADER-20261030",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155856&lang=ro",
+      "observed_utc": "2026-10-30T21:25:49.300Z",
+      "read_date": "2026-10-30",
+      "format": "Exact selected text returned by read-only official-page DOM observation: current AML statute provisions/header or selected ASP company checklist/beneficial-owner guidance. Not a whole-law, portal or complete-country verification.",
+      "sha256": "a253866abc5b3b7953362b899ead1539780963a4881bebdbe45e9b1f24a2d820"
     }
   }
 }
