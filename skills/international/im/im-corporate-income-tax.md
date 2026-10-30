@@ -31,8 +31,8 @@ Related skills: [im-income-tax](im-income-tax.md) for resident individuals and t
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Standard rate, resident and non-resident companies | 0% | 2026/27 | PN 227/26 para 1, https://www.gov.im/media/1391759/pn-227-26-budget.pdf ; https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/corporate-tax-rates/ |
-| Banking business income | 10% | 2026/27 | PN 227/26 para 1; corporate tax rates page |
-| Retail business in the Island, taxable income from that business over GBP 500,000 | 10% | 2026/27 | PN 227/26 para 1; https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/ |
+| Banking business income (deposit taking by a licensed bank) | 10% | 2026/27 | PN 227/26 para 1; corporate tax rates page; PN 124/06 |
+| Retail business in the Island, taxable income from that business over GBP 500,000 (then all of it) | 10% | 2026/27 | PN 227/26 para 1; https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/ ; PN 181/13 paras 1 and 4 |
 | Income from land and property in the Isle of Man | 20% | 2026/27 | PN 227/26 para 1; Business and Corporations page |
 | Petroleum extraction activities or rights (from 6 April 2024) | 20% | 2026/27 | PN 227/26 para 1; ITA 1970 s.119BA |
 | One-year rate on banking and retail income (history only) | 15% | 2024/25 only | corporate tax rates page |
@@ -42,7 +42,7 @@ Related skills: [im-income-tax](im-income-tax.md) for resident individuals and t
 | Return and payment due | the day after 12 months from the end of the accounting period | all periods | ITA 1970 s.A66(3); GN58 |
 | First late return penalty | GBP 250 | all periods | ITA 1970 s.112A; GN38 para 5.1.1 (SD 460/07) |
 | Second late return penalty (not filed 18 months after period end) | GBP 500, on top of the first | all periods | ITA 1970 s.112B; GN38 para 5.1.1 |
-| Interest on overdue tax | 5% a year | as stated in the consolidated Act | ITA 1970 s.111A and endnote 956 (SD 961/08) |
+| Interest on overdue tax | 5% a year | from 1 February 2009, no later change | ITA 1970 s.111A and endnote 956 (SD 961/08); PN 154/09 |
 | Withholding on dividends and loan interest paid by a 0% company | 0% | current | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/withholding-tax/ |
 | Withholding on Manx rent paid by a company to a non-resident company | 20% | from 6 April 2015 | withholding tax page |
 
@@ -53,7 +53,8 @@ Related skills: [im-income-tax](im-income-tax.md) for resident individuals and t
 Rates attach to the source of income, not to the company as a whole. A company can have income at 0%, 10% and 20% in the same period (ITA 1970 s.1(3B)(a); corporate tax rates page).
 
 - **20% income.** Taxable income from land and property in the Island. The Division lists property development, residential and commercial rental or letting, contract car parking, landfill, and mining and quarrying. From 6 April 2024 the same rate applies to petroleum extraction activities or rights (Business and Corporations page). Section 119BA treats income from searching for or extracting petroleum in the Island and its territorial sea, and from rights to that petroleum, as income from petroleum extraction activities or rights.
-- **10% income.** Income from banking business, and income from retail business in the Island where the company's taxable income from that business is more than GBP 500,000 (Business and Corporations page; Practice Notes 181/13 and 222/24 give the detail).
+- **10% income, banking.** For a company holding a banking licence, income from deposit taking is taxed at 10%: all income from re-investing or using client deposits, the ancillary fees (cheque books, transaction, account and card fees, foreign exchange charges, money transmission), and income from the minimum regulatory capital. Income from funds other than client deposits (for example group-funded lending, leasing, syndicated loans) and from capital above the regulatory minimum is taxed at 0% (PN 124/06).
+- **10% income, retail.** Income from retail business in the Island is taxed at 10% where the company's taxable income from that business is more than GBP 500,000 (Business and Corporations page). It is a cliff, not a band: once the retail taxable income passes GBP 500,000, all of it is taxed at 10%; at GBP 500,000 or less, all of it is at 0%. Only the retail element is counted and taxed; other income keeps its own rate. The GBP 500,000 limit is reduced proportionately where associated companies also carry on retail business in the Island, and where the accounting period is shorter than 12 months. The computation splits retail profit from other income unless the limit will clearly never be met (PN 181/13 paras 1, 3 and 4).
 - **0% income.** Everything else.
 
 ### Step 2: apportion across a rate change
@@ -72,7 +73,9 @@ There is no company-level charge on distributions now. The Distributable Profits
 
 ### Step 5: Domestic Top-up Tax
 
-For in-scope groups, Domestic Top-up Tax brings the effective rate on Isle of Man profits to 15%. It follows the OECD GloBE rules closely, it is separate from income tax, and the entity still pays income tax in the normal way. Each Isle of Man entity has its own liability; the allocation inside the group follows articles 17 and 18 of the 2024 Order. An Isle of Man ultimate or intermediate parent may also owe Multinational Top-up Tax (an income inclusion rule) on low-taxed profits outside the Island (Pillar 2 page).
+For in-scope groups, Domestic Top-up Tax brings the effective rate on Isle of Man profits to 15% (PN 227/26, note to para 1). It follows the OECD GloBE rules closely, it is separate from income tax, and the entity still pays income tax in the normal way. Each Isle of Man entity has its own liability; the allocation inside the group follows articles 17 and 18 of the 2024 Order. An Isle of Man ultimate or intermediate parent may also owe Multinational Top-up Tax (an income inclusion rule) on low-taxed profits outside the Island (Pillar 2 page).
+
+For fiscal years beginning on or after 1 January 2026 the Global Minimum Tax (Pillar Two) (Amendment) Order 2026 (SD 2026/0127, approved by Tynwald on 23 July 2026) brings in the OECD Side-by-Side Package: a Side-by-Side Safe Harbour (so far only the United States regime is recognised) and a Substance-based Tax Incentive Safe Harbour. It does not stop the Island charging Domestic Top-up Tax on the Isle of Man profits of an in-scope group, wherever the ultimate parent is (Pillar 2 update, 24 June 2026; Order articles 2 and 3).
 
 ## Deadlines and filing
 
@@ -80,7 +83,7 @@ For in-scope groups, Domestic Top-up Tax brings the effective rate on Isle of Ma
 - **Payment.** Tax is due on the same day as the return. The computation in the return is treated as the assessment, so no separate assessment notice is issued (GN58; Pay and File page).
 - **Online filing.** Returns for accounting periods ending on or after 5 April 2015 must be filed online, by the company or its tax agent, unless the company is exempt or the Assessor grants an exemption (ITA 1970 s.B66; Online Filing page). Guidance Note GN58 covers periods ending on or after 31 December 2019. The R1C form has Pillar 2 questions for periods ending on or after 31 December 2024 (Pillar 2 page).
 - **Companies with no income** still deliver the return and pick the reason in it: dormant, non-income-producing asset holding, flat management or registered charity (GN58).
-- **Domestic Top-up Tax.** In-scope groups appoint a Domestic Filing Entity (form P1) and register through the Pillar 2 online service. The registration deadline is set by article 29 of the Order and is not earlier than 1 January 2026. The Division expects the online return system for Domestic and Multinational Top-up Tax from mid-2026 (Pillar 2 page).
+- **Domestic Top-up Tax.** In-scope groups appoint a Domestic Filing Entity (form P1) and register through the Pillar 2 online service. The registration deadline is set by article 29 of the Order: ordinarily 12 months after the start of the first in-scope fiscal year, earlier for an entity being wound up or leaving the Island, and not earlier than 1 January 2026. Penalties can be charged for late registration (Pillar 2 page; Pillar 2 update, 5 November 2025). The Domestic Filing Entity must enrol for the online service even where an agent does the work. The first Domestic and Multinational Top-up Tax returns are due by 31 March 2027 for groups with a fiscal year ending 31 December 2025; the Division expects the online return function in November 2026 (Pillar 2 update, 13 October 2026).
 
 ## Penalties and interest
 
@@ -93,11 +96,8 @@ For in-scope groups, Domestic Top-up Tax brings the effective rate on Isle of Ma
 
 - **Non-resident companies** pay tax only on Manx-source income, at the same rates as resident companies (Business and Corporations page).
 - **Payments to non-residents.** A company paying a non-resident looks at the type of payment, its own tax rate and the recipient (Withholding Tax page). The Division's table shows:
-  - dividends: 0%;
-  - loan interest from a 0% company: 0%;
-  - other payments to a non-resident company: 0%;
-  - Manx rent paid to a non-resident company: 20% (from 6 April 2015);
-  - directors' fees: 0%, but tax is due in certain cases where duties are performed in the Island.
+  - to a non-resident company: Manx rent 20% (from 6 April 2015); all other payments 0%;
+  - to a non-resident individual: dividends 0%; loan interest 0%, but 20% where the paying company has Manx land and property income taxed at 20%; directors' fees 0%, but tax is due in certain cases where duties are performed in the Island.
   The same table shows 20% on Manx rent and other Manx income paid to non-resident individuals. That figure predates the current 21% non-resident rate. For payments to individuals follow [im-non-resident-income-tax](im-non-resident-income-tax.md), which uses 21% under notice N15.
 - **UK treaty.** For transfer pricing with UK associated enterprises see [im-related-party-uk-treaty](im-related-party-uk-treaty.md).
 - **Economic substance.** Part 6A of the Income Tax Act 1970 holds the economic substance rules. They were extended to partnerships and LLCs by a change Tynwald approved on 16 June 2021. The return asks for the substance information (s.A66(4A)). The joint Guernsey, Isle of Man and Jersey guidance (version 2, 22 November 2019) is issued under s.80M (Economic Substance page).
@@ -150,6 +150,24 @@ expected:
   penalties: 750.00
 ```
 
+### Example 3: Manx retailer just over the GBP 500,000 limit
+
+A resident company with no associated companies runs shops in the Island. For the year to 31 December 2026 its taxable income from the retail business is GBP 520,000 and it also has GBP 30,000 of non-retail investment income. Because retail taxable income is over GBP 500,000, all GBP 520,000 is taxed at 10%, not just the GBP 20,000 above the limit: tax GBP 52,000. The investment income stays at 0%. Had retail taxable income been GBP 500,000, the tax would be nil (PN 181/13 para 4, examples 2 and 3).
+
+```oa-check
+name: IM retailer, 10% on all retail income once over GBP 500,000 (year to 31 Dec 2026)
+inputs:
+  retail_income: 520000
+  investment_income: 30000
+steps:
+  - tax_retail: retail_income * 0.10
+  - tax_other: investment_income * 0
+  - tax: tax_retail + tax_other
+expected:
+  tax_retail: 52000.00
+  tax: 52000.00
+```
+
 ## Ask the client first
 
 1. Where is the company incorporated and where is it managed? Is it a 1931 Act or 2006 Act company, an LLC or a foreign company?
@@ -167,6 +185,14 @@ expected:
 | Practice Note PN 227/26, Budget 2026 income tax and National Insurance proposals (17 February 2026), para 1 | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-10-30 |
 | Income Tax Division, Business and Corporations | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/ | 2026-10-30 |
 | Income Tax Division, Corporate Tax Rates | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/corporate-tax-rates/ | 2026-10-30 |
+| Practice Note PN 124/06, Budget 2006: Banking Business (21 February 2006) | https://www.gov.im/media/511816/pn12406.pdf | 2026-10-30 |
+| Practice Note PN 181/13, retail business 10% rate | https://www.gov.im/media/365703/pn18113.pdf | 2026-10-30 |
+| Practice Note PN 222/24, Budget 2024 (2024/25 15% rate, petroleum) | https://www.gov.im/media/1382355/pn-222-24-budget-2024.pdf | 2026-10-30 |
+| Practice Note PN 154/09, Interest and Repayment Supplement: Change of Rate (30 January 2009) | https://www.gov.im/media/97344/pn154.pdf | 2026-10-30 |
+| Pillar 2 update: Registration deadline (5 November 2025) | https://www.gov.im/media/1390706/pillar-2-update-registration-deadline.pdf | 2026-10-30 |
+| Pillar 2 update: Side-by-Side Package of measures (24 June 2026) | https://www.gov.im/media/1393642/pillar-2-update-side-by-side-measures.pdf | 2026-10-30 |
+| Pillar 2 update: Compulsory enrolment for Pillar 2 online service (13 October 2026) | https://www.gov.im/media/1394700/pillar-2-update-compulsory-enrolment-for-pillar-2-online-service.pdf | 2026-10-30 |
+| Global Minimum Tax (Pillar Two) (Amendment) Order 2026, SD 2026/0127 | https://www.gov.im/media/1394545/global-minimum-tax-pillar-two-amendment-order-2026.pdf | 2026-10-30 |
 | Income Tax Division, Pay and File | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/pay-and-file/ | 2026-10-30 |
 | Income Tax Division, Online Filing | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/online-filling/ | 2026-10-30 |
 | Income Tax Division, Withholding Tax | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/withholding-tax/ | 2026-10-30 |
@@ -179,7 +205,7 @@ expected:
 | Guidance Note GN58, Company Income Tax Return (version 3.0, 31 December 2024) | https://www.gov.im/media/1386923/gn58-company-income-tax-return-20241231_compressed.pdf | 2026-10-30 |
 | Companies Registry, Limited Liability Companies | https://www.gov.im/categories/business-and-industries/companies-registry/registries/limited-liability-companies/ | 2026-10-30 |
 
-Not yet confirmed: the text of the Treasury order fixing the 2026/27 company rates (the rates here come from PN 227/26 and the Division's pages, which agree); the current text of SD 460/07 and the higher amounts for successive defaults under s.112F (the GBP 250 and GBP 500 come from GN38, issued 2009); the statutory test of company residence; how the 10% retail rate treats the first GBP 500,000 (Practice Notes 181/13 and 222/24 not read); the voluntary election by a 0% company to pay 10% (the old version of this skill listed it; the only official mention found is GN41 section 4.4 under the abolished Attribution Regime); loss relief, capital allowances and group relief (ITA 1980 Schedule 2); the Domestic Top-up Tax computation and its return and payment dates in the Global Minimum Tax (Pillar Two) Order 2024 (Order not read); whether the 5% in endnote 956 is still the prescribed interest rate today.
+Not yet confirmed: the text of the Treasury order fixing the 2026/27 company rates (the rates here come from PN 227/26 and the Division's pages, which agree); the current text of SD 460/07 and the higher amounts for successive defaults under s.112F (the GBP 250 and GBP 500 come from GN38, issued 2009); the statutory test of company residence; the exact formula for reducing the GBP 500,000 retail limit for associated companies; the voluntary election by a 0% company to pay 10% (the old version of this skill listed it; the only official mention found is GN41 section 4.4 under the abolished Attribution Regime); loss relief, capital allowances and group relief (ITA 1980 Schedule 2); the Domestic Top-up Tax computation, payment dates and return due dates after the first year in the Global Minimum Tax (Pillar Two) Order 2024 (Order not read).
 
 <!-- openaccountants-cta-block -->
 

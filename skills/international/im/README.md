@@ -30,7 +30,7 @@ The Isle of Man tax year runs from 6 April to 5 April. The authority is the Inco
 |---|---|---|
 | IT-IND, individual income tax (residents) | [im-income-tax](im-income-tax.md) | checked against the law |
 | IT-IND / XB, non-resident individuals | [im-non-resident-income-tax](im-non-resident-income-tax.md) | checked against the law |
-| IT-CORP, corporate income tax | [im-corporate-income-tax](im-corporate-income-tax.md) | sourced from the law (2026/27) |
+| IT-CORP, corporate income tax | [im-corporate-income-tax](im-corporate-income-tax.md) | checked against the law (2026/27) |
 | VAT | [isle-of-man-vat](../isle-of-man/isle-of-man-vat.md) | sourced from the law (tax year 2025) |
 | SC and PR, National Insurance and payroll | [im-payroll-social](im-payroll-social.md) | sourced from the law (tax year 2025) |
 | TP, related parties (UK treaty) | [im-related-party-uk-treaty](im-related-party-uk-treaty.md) | checked against the law |
