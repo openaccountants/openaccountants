@@ -1,19 +1,19 @@
 ---
 name: sm-cross-border
 description: >
-  San Marino cross-border tax for 2026: residence of individuals and companies, San Marino-source income of non-residents, permanent establishment (including the three-month construction test), the October 2026 identification rule for non-residents, final withholding on payments abroad (13% interest, 11% qualifying bonds, 5% dividends to individuals, 20% professional and self-employed services, 3% artistic and sports performers, 10% equipment and vehicle rentals), bank interest rates, the Finance circular 1/2026 on interest paid to foreign banks and rentals paid to foreign operators (B2B withholding and B2C self-assessment at 18% by 31 July 2027), the corporate and personal foreign tax credit, treaty priority and international advance agreements. Use for San Marino withholding tax, non-resident income, payments to Italy or other countries, PE and foreign tax credit questions. Treaty rates need the actual treaty text.
+  San Marino cross-border tax for 2026: residence of individuals and companies, San Marino-source income of non-residents, permanent establishment (including the three-month construction test), the October 2026 identification rule for non-residents, final withholding on payments abroad (13% interest, 11% qualifying bonds, 5% dividends to individuals, 20% professional and self-employed services, royalties and directors' fees, 3% artistic and sports performers, 10% equipment and vehicle rentals), bank interest rates, the Finance circular 1/2026 on interest paid to foreign banks and rentals paid to foreign operators (B2B withholding and B2C self-assessment at 18% by 31 July 2027), the corporate and personal foreign tax credit, treaty priority and international advance agreements. Use for San Marino withholding tax, non-resident income, payments to Italy or other countries, PE and foreign tax credit questions. Treaty rates need the actual treaty text.
 jurisdiction: SM
 category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-30
-version: 0.4
+version: 0.5
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# San Marino cross-border tax v0.4
+# San Marino cross-border tax v0.5
 
 Tax year: calendar year 2026. Currency EUR. Authority: UO Ufficio Tributario (Tax Office), Dipartimento Finanze e Bilancio.
 
@@ -37,6 +37,7 @@ Tax year: calendar year 2026. Currency EUR. Authority: UO Ufficio Tributario (Ta
 | Dividends paid by a resident capital company to individuals | 5% final | 2026 | [IGR art 103(6)][igr] |
 | Dividends paid to non-individuals | Nil, if the recipient declares it does not act for an individual | 2026 | [IGR art 103(6)][igr] |
 | Self-employed and assimilated services (article 27) paid to non-residents, including when supplied by a business | 20% final | 2026 | [IGR art 102(1)][igr] |
+| Royalties for trademarks, works of ingenuity, copyright and industrial inventions, and fees of directors, statutory auditors and coordinated collaborators, paid to non-residents (article 27(6) income) | 20% final | 2026 | [IGR arts 27(6), 102(1)][igr] |
 | Artistic, cultural or sports services as defined by Tax Office circular; airport and naval services abroad for aviation or shipping operators | 3% final | 2026 | [IGR art 102(2)][igr] |
 | Use of industrial, commercial or scientific equipment and vehicles situated in San Marino, including finance leases, paid to non-residents | 10% final | 2026 | [IGR art 104(5)][igr] |
 | Non-resident B2C recipient (circular 1/2026 route) | 18% on the return for tax years 2026-2030; an Italian recipient applies the treaty rates of 13% (capital income) or 10% (rentals) | 2026 | [Finance circular 1/2026, pp. 2-3][circ1]; [Law 141/2025, art 54(6)][l141] |
@@ -153,13 +154,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 1-5, 9-10, 18, 42-44, 93, 102-104, 125, 128-131, 138-139 | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
+| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 1-5, 9-10, 18, 27, 42-44, 93, 102-104, 125, 128-131, 138-139 | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
 | Delegated Decree 156/2026 of 12 October 2026, arts 2, 16, 19 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
 | Law 141/2025 of 12 November 2025, art 54(6) | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html | 2026-10-30 |
 | Finance department circular 1/2026 of 5 August 2026 (articles 5, 103 and 104 IGR), pp. 1-3 | https://www.finanze.sm/pub2/dam/jcr%3Ac7b6c29b-5894-4a96-914b-00785958a63a/Circolare%20n.1-2026.pdf | 2026-10-30 |
 | Delegated Decree 116/2026 (international advance agreements), art 1 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0 | 2026-10-30 |
 
-Not yet confirmed: a separate withholding rate for royalties (the earlier version's 20% royalty rate; article 102 covers article 27 self-employed income, and whether a given royalty falls in article 27 depends on its character); the list of San Marino tax treaties in force and their rates; the conditions of the article 44(7) deduction; exit taxation of companies.
+Not yet confirmed: whether the 20% withholding still applies to a royalty that article 27(7) treats as other income because it is not connected with the recipient's art, profession or business; whether the special stamp duty of Law 179/2005 article 39 (6% or 3% on agency and commission fees and 3% on advertising and data-processing fees invoiced by non-residents, as set by Delegated Decree 50/2011, article 24) still applies in 2026; the list of San Marino tax treaties in force and their rates; the conditions of the article 44(7) deduction; exit taxation of companies.
 
 [igr]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
 [l141]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html

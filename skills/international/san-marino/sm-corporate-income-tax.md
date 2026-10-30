@@ -1,7 +1,7 @@
 ---
 name: sm-corporate-income-tax
 description: >
-  San Marino corporate income tax (IGR on legal persons) for tax year 2026, under Law 166/2013 Title III as reformed by Law 141/2025 and Delegated Decree 156/2026. Covers company residence by registered office or effective management, the 18% rate for tax years 2026 to 2030 (statutory 17%), the base from accounting profit, expense limits, depreciation under Annex D, the 70% annual cap on loss carryforward, the 50% rate cut for qualifying new companies, the 10% own-capital increase deduction, foreign tax credit, the 35% and 55% advances due 31 August and 30 November, the 31 July return and balance, late interest and late-filing charges. Use for San Marino company tax, SRL or SPA tax, new-company incentive, corporate losses and corporate filing questions. Special sector regimes, reorganisations and insolvency need their own facts.
+  San Marino corporate income tax (IGR on legal persons) for tax year 2026, under Law 166/2013 Title III as reformed by Law 141/2025 and Delegated Decree 156/2026. Covers company residence by registered office or effective management, the 18% rate for tax years 2026 to 2030 (statutory 17%), the base from accounting profit, expense limits, depreciation under Annex D, the 70% annual cap on loss carryforward, the 50% rate cut for qualifying new companies, the 10% own-capital increase deduction, dividends received and shareholding gains, the article 50 cost caps, the hiring credit, foreign tax credit, the 35% and 55% advances due 31 August and 30 November, the 31 July return and balance, late interest and late-filing charges. Use for San Marino company tax, SRL or SPA tax, new-company incentive, corporate losses and corporate filing questions. Special sector regimes, reorganisations and insolvency need their own facts.
 jurisdiction: SM
 tax_year: 2026
 last_updated: 2026-10-30
@@ -10,10 +10,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.4
+version: 0.5
 ---
 
-# San Marino corporate income tax v0.4
+# San Marino corporate income tax v0.5
 
 Tax year: the company's tax period in 2026 (calendar year for most companies). Currency EUR. Authority: UO Ufficio Tributario (Tax Office).
 
@@ -37,9 +37,17 @@ Out of scope: special regimes for banks, insurers and financial companies, reorg
 | New-activity incentive (qualifying new company) | 50% cut in the rate for the first five tax periods: 9% in 2026 | 2026 | [IGR art 73(1)(c), (2)][igr]; [Law 141/2025, art 54(6)][l141] |
 | New-activity licence-fee relief | No first licence fee; no annual licence fee for the next three years | 2026 | [IGR art 73(1)(a)-(b)][igr] |
 | Own-capital (equity) increase deduction | 10% of the year's increase in own capital, net of the year's result; unused amounts lapse | 2026 | [IGR art 74(1)-(3)][igr] |
-| Accelerated depreciation (tangible assets, not buildings) | Up to 20% extra in each of the first two tax periods | 2026 | [IGR Annex D, art D3(3)][igr] |
+| Accelerated depreciation (tangible assets, not buildings) | Allowed in the first two tax periods, at most 20% | 2026 | [IGR Annex D, art D3(3)][igr] |
 | Higher depreciation for intensive use or obsolescence | Up to 50% above the ordinary coefficient, buildings excluded, only after a ruling request to the Tax Office | 2026 | [IGR Annex D, art D3(1)-(2)][igr] |
 | Intangible assets | Up to 20% a year | 2026 | [IGR Annex D, art D4(1)][igr] |
+| Advertising and sponsorship costs | Deductible up to 8% of operating revenue | 2026 | [IGR art 50(1)(a)][igr] |
+| Data-processing and market-research costs | Deductible up to 10% of operating revenue (not for banks and financial operators) | 2026 | [IGR art 50(1)(b), (3)][igr] |
+| Entertainment (rappresentanza) costs | Deductible up to 5% of operating revenue | 2026 | [IGR art 50(1)(c)][igr] |
+| Cars and motorcycles not used directly as business assets, not for public use and not assigned to employees for mixed use | 60% of costs deductible; purchase cost counted up to 50,000 per car and 10,000 per motorcycle | 2026 | [IGR art 50(4-bis)][igr]; [DD 156/2026, art 20(1)][dd156] |
+| Dividends from non-resident companies | 95% excluded from income if the holding is kept 12 months without a break (the period can be completed after the distribution) and shown in the accounts and at least one balance sheet | 2026 | [IGR art 59(1)-(2)][igr] |
+| Dividends from resident companies | Fully excluded from income | 2026 | [IGR art 59(3)][igr] |
+| Gains on shareholdings | Exempt if held from the first day of the 12th month before disposal and booked as financial fixed assets in the first balance sheet; 50% exempt for San Marino real-estate companies | 2026 | [IGR art 56(1)-(3)][igr] |
+| Hiring credit | IGR credit of 10% (prior-year average under 5 employees) or 5% (5 or more) of the tax for each unit of increase in average staff, at least half hired from the job-placement lists; capped at 25% of the tax; suspended when the prior year's average unemployment rate is under 3% | 2026 | [IGR arts 69-70][igr]; [DD 156/2026, art 12][dd156] |
 | First advance | 35% of prior-year IGR (net of foreign tax credits on business income), by 31 August | 2026 | [IGR art 124(2)][igr] |
 | Second advance | 55% of the same basis, by 30 November | 2026 | [IGR art 124(2)][igr] |
 | Return and balance | 31 July following the tax year | 2026 | [IGR arts 93(1), 124(1)][igr] |
@@ -48,13 +56,14 @@ Out of scope: special regimes for banks, insurers and financial companies, reorg
 ## 3. The base
 
 1. **Start from the accounts.** Taxable income is business income determined under Title III from complete accounts and fiscal records, with income and costs in the correct period ([IGR arts 45-48][igr]). An unrecorded receipt is still taxable; a capital asset is depreciated, not expensed when paid.
-2. **Disallowed costs.** Income taxes, related tax penalties and interest, and costs of criminal activity are not deductible; directors' pay is deductible under its payment rule ([IGR art 49][igr]). Article 50 sets ceilings for general costs such as advertising, data processing and entertainment; DD 156/2026 repealed article 50(4-bis)(b) ([IGR art 50][igr]; [DD 156/2026, art 20][dd156]).
+2. **Disallowed costs.** Income taxes, related tax penalties and interest, and costs of criminal activity are not deductible; directors' pay is deductible under its payment rule ([IGR art 49][igr]). Article 50 caps advertising at 8%, data processing at 10% and entertainment at 5% of operating revenue (not where these costs are the company's core business); a ruling request by 31 March of the following year can lift the caps. DD 156/2026 repealed the full deduction for agents' cars in article 50(4-bis)(b), so for companies those cars now follow the other article 50(4-bis) categories (60% unless used directly as business assets) ([IGR art 50][igr]; [DD 156/2026, art 20(1)][dd156]).
 3. **Depreciation and provisions.** Use the Annex D coefficients by asset group, recorded in the depreciable-assets register. Depreciation starts in the first period the asset is used or usable, at the full annual rate regardless of month. New companies can start depreciation in the first period with revenue ([IGR Annex D, arts D1-D3][igr]). Non-capitalised research and advertising costs are deductible in the year or spread over that year and the next three ([IGR Annex D, art D4(4)][igr]).
 4. **Related parties.** Dealings with companies that control, are controlled by or share a controller with the taxpayer are valued at normal value where that increases income ([IGR art 46(4)][igr]). Use `sm-transfer-pricing`.
-5. **Crypto-assets.** Year-end valuation gains and losses on crypto-assets do not count in income, whatever the accounting entry ([IGR art 46(5-bis)][igr]).
-6. **Incentives.** The 10% own-capital deduction uses the year's increase in own capital, excluding the year's result, retained-earnings reserves made under Title IV Chapter I and legally required reserves. If shareholders later reduce capital other than for losses, the benefit is repaid in proportion ([IGR art 74][igr]).
-7. **Losses.** Documented tax losses carry forward without time limit and can absorb at most 70% of the year's taxable business income ([IGR art 46(5)][igr]). Keep a schedule by year of origin.
-8. **Tax.** Apply 18% to the result. Then deduct foreign tax credit (section 6), advances paid and tax withheld on account ([IGR art 124(3)][igr]).
+5. **Shareholdings.** Dividends from resident companies are excluded; 95% of dividends from non-resident companies are excluded after a 12-month holding, and related costs stay deductible. Gains on qualifying holdings are exempt (50% for San Marino real-estate companies) ([IGR arts 56, 59][igr]).
+6. **Crypto-assets.** Year-end valuation gains and losses on crypto-assets do not count in income, whatever the accounting entry ([IGR art 46(5-bis)][igr]).
+7. **Incentives.** The 10% own-capital deduction uses the year's increase in own capital, excluding the year's result, retained-earnings reserves made under Title IV Chapter I and legally required reserves. If shareholders later reduce capital other than for losses, the benefit is repaid in proportion ([IGR art 74][igr]).
+8. **Losses.** Documented tax losses carry forward without time limit and can absorb at most 70% of the year's taxable business income ([IGR art 46(5)][igr]). Keep a schedule by year of origin.
+9. **Tax.** Apply 18% to the result. Then deduct foreign tax credit (section 6), advances paid and tax withheld on account ([IGR art 124(3)][igr]).
 
 ### New-activity incentive conditions
 
@@ -163,11 +172,11 @@ The same rules give: a qualifying own-capital increase of 100,000 gives a 10,000
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 4-5, 10, 42-50, 73-74, 93, 124-129, 137-139, Annexes C and D | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
+| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 4-5, 10, 42-50, 56, 59, 69-70, 73-74, 93, 124-129, 137-139, Annexes C and D | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
 | Law 141/2025 of 12 November 2025, art 54 (commencement, 18% rate 2026-2030) | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html | 2026-10-30 |
-| Delegated Decree 156/2026 of 12 October 2026, arts 13-14, 16, 19-20 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
+| Delegated Decree 156/2026 of 12 October 2026, arts 12-14, 16, 19-20 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
 
-Not yet confirmed: the 2026 legal interest rate; the full Annex D coefficient table by asset group; participation exemption and treatment of dividends received; the current implementing circular for article 73; the 2027 return forms.
+Not yet confirmed: the 2026 legal interest rate; the full Annex D coefficient table by asset group; whether the 20% accelerated depreciation is on top of the ordinary coefficient (Annex D3(3) says only "at most 20%"); the current implementing circular for article 73; the 2027 return forms.
 
 [igr]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
 [l141]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html

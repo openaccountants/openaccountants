@@ -1,6 +1,6 @@
 ---
 jurisdiction: SM
-version: 0.6
+version: 0.7
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -13,14 +13,14 @@ covered_by:
   TP: sm-transfer-pricing
   XB: sm-cross-border
 partial:
-  IT-CORP: "Dividends received by companies (participation exemption) and the Annex D depreciation coefficient table are not yet covered."
-  VAT: "Import-tax payment dates and the export-refund procedure and time limits are not yet covered."
+  IT-CORP: "The Annex D depreciation coefficient table by asset group is not yet covered."
+  VAT: "Import-tax payment dates, the export-refund procedure and time limits, the per-unit special import tax on fuels and the rate of the services tax on private customers (imposta complementare sui servizi) are not yet covered."
   SC: "Employer contributions other than pension and FONDISS (total employer cost) and the employer's monthly ISS payment date are not yet confirmed."
 ---
 
 # San Marino tax pack
 
-San Marino taxes income under one law, the IGR (Law 166/2013), reformed by Law 141/2025 from tax year 2026 and corrected by Delegated Decree 156/2026. The tax year is the calendar year; returns are due 31 July of the following year. Currency is the euro. The UO Ufficio Tributario (Tax Office) collects tax; ISS collects social contributions. There is no VAT: a single-stage import tax (monofase), ordinary rate 17%, applies to goods imported into the Republic, with an electronic invoicing exchange with Italy. Companies and business income of individuals pay 18% for tax years 2026 to 2030.
+San Marino taxes income under one law, the IGR (Law 166/2013), reformed by Law 141/2025 from tax year 2026 and corrected by Delegated Decree 156/2026. The tax year is the calendar year; returns are due 31 July of the following year. Currency is the euro. The UO Ufficio Tributario (Tax Office) collects tax; ISS collects social contributions. There is no VAT: a single-stage import tax (monofase), ordinary rate 17%, applies to goods imported into the Republic, with an electronic invoicing exchange with Italy; listed services to private customers carry a separate services tax. Companies and business income of individuals pay 18% for tax years 2026 to 2030.
 
 ## Domains
 

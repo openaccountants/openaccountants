@@ -10,10 +10,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.5
+version: 0.6
 ---
 
-# San Marino tax overview v0.5
+# San Marino tax overview v0.6
 
 ## Section 1: Scope
 
@@ -32,11 +32,11 @@ A one-page map of San Marino tax for 2026, with the headline figures and which s
 | Personal income tax (IGR) | Eight bands, 9% to 35% (top band over 80,000) | [IGR Annex C][igr] |
 | Business and professional income of individuals | 18% separate rate for 2026 to 2030 | [Law 141/2025, art 54(6)][l141] |
 | Corporate IGR | 18% for 2026 to 2030 (statutory 17%) | [Law 141/2025, art 54(6)][l141]; [IGR art 43][igr] |
-| New-company incentive | 50% rate cut for five tax periods if the article 73 conditions are met (9% in 2026) | [IGR art 73][igr] |
-| VAT | None. Single-stage import tax (monofase), ordinary rate 17% | [DD 183/2011, art 1][dd183] |
+| New-activity incentive | 50% rate cut for five tax periods for a qualifying new company, sole trader or professional that opts in (9% in 2026) | [IGR art 73][igr] |
+| VAT | None. Single-stage import tax (monofase), ordinary rate 17%; a separate services tax (imposta complementare sui servizi) applies to listed services supplied to private customers | [DD 183/2011, art 1][dd183]; [DD 50/2011, arts 2-3][dd50] |
 | Employee social contributions | 7.80% ISS plus 2.50% FONDISS | [ISS circular 2187/UC/2026][iss] |
 | Employer pension and FONDISS | 17.60% plus 2.50% (other employer funds on top) | [ISS circular 2187/UC/2026][iss] |
-| Withholding on payments abroad | 13% interest, 5% dividends to individuals, 20% professional services, 10% equipment rentals | [IGR arts 102-104][igr] |
+| Withholding on payments abroad | 13% interest, 5% dividends to individuals, 20% professional services, royalties and directors' fees, 10% equipment rentals | [IGR arts 102-104][igr] |
 | Domestic e-invoicing | Optional from 1 October 2026; required from 1 January 2027 for operators with prior-year revenue of 100,000 or more | [DD 133/2026, arts 2, 11][dd133] |
 
 The 2026 reform: Law 141/2025 applies from tax year 2026 ([Law 141/2025, art 54(1)][l141]); Delegated Decree 156/2026 of 12 October 2026 corrected it, also from 2026 ([DD 156/2026, art 19][dd156]).
@@ -68,6 +68,7 @@ The 2026 reform: Law 141/2025 applies from tax year 2026 ([Law 141/2025, art 54(
 | Law 141/2025 of 12 November 2025, art 54 | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html | 2026-10-30 |
 | Delegated Decree 156/2026 of 12 October 2026 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
 | Delegated Decree 183/2011 (import tax 17%) | https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html | 2026-10-30 |
+| Delegated Decree 50/2011 (imposta complementare sui servizi) | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17027521.html | 2026-10-30 |
 | Delegated Decree 133/2026 (domestic e-invoicing) | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538 | 2026-10-30 |
 | ISS circular 2187/UC/2026 of 22 April 2026 | https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html | 2026-10-30 |
 | San Marino Finance department, national taxation page | https://www.finanze.sm/pub2/FinanzeSM/FISCALITA-NAZIONALE.html | 2026-10-24 |
@@ -78,6 +79,7 @@ Not yet confirmed: nothing in this overview beyond what the linked skills list.
 [l141]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
 [dd156]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
 [dd183]: https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html
+[dd50]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17027521.html
 [dd133]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538
 [iss]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html
 [finance]: https://www.finanze.sm/pub2/FinanzeSM/FISCALITA-NAZIONALE.html

@@ -1,7 +1,7 @@
 ---
 name: sm-income-tax
 description: >
-  San Marino personal income tax (IGR, imposta generale sui redditi) for individuals in tax year 2026, under Law 166/2013 as reformed by Law 141/2025 and Delegated Decree 156/2026. Covers residence, worldwide and domestic-source scope, the eight progressive bands from 9% to 35%, the 18% separate rate on business and professional income for 2026 to 2030, the employee 7% forfait capped at EUR 2,800, pension forfaits, rental income, family, medical and rent credits, the SMaC card tax credit for wages, pensions and business income, loss relief, foreign tax credit, payroll withholding, the 31 July return deadline and late-filing charges. Use for San Marino income tax, IGR bands, SMaC credit, resident and frontier employee tax, self-employed tax in San Marino and personal return questions. Special residence regimes and mixed-income ordering need their own facts.
+  San Marino personal income tax (IGR, imposta generale sui redditi) for individuals in tax year 2026, under Law 166/2013 as reformed by Law 141/2025 and Delegated Decree 156/2026. Covers residence, worldwide and domestic-source scope, the eight progressive bands from 9% to 35%, the 18% separate rate on business and professional income for 2026 to 2030 (9% for a qualifying new activity), the employee 7% forfait capped at EUR 2,800, pension forfaits, rental income, family, medical and rent credits, the SMaC card tax credit for wages, pensions and business income, loss relief, foreign tax credit, payroll withholding, the 31 July return deadline and late-filing charges. Use for San Marino income tax, IGR bands, SMaC credit, resident and frontier employee tax, self-employed tax in San Marino and personal return questions. Special residence regimes and mixed-income ordering need their own facts.
 jurisdiction: SM
 tax_year: 2026
 last_updated: 2026-10-30
@@ -10,10 +10,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.3
+version: 0.4
 ---
 
-# San Marino personal income tax v0.3
+# San Marino personal income tax v0.4
 
 Tax year: calendar year 2026 (1 January to 31 December), return filed in 2027. Currency EUR. Authority: UO Ufficio Tributario (Tax Office), Dipartimento Finanze e Bilancio.
 
@@ -68,6 +68,7 @@ Out of scope here: corporate IGR (`sm-corporate-income-tax`), payroll mechanics 
 | SMaC eligible fuel | Fuel counts only up to 1,500 a year | 2026 | [IGR Annex E, art E1(1)(a)][igr] |
 | SMaC home utilities and insurance (residents) | Count up to 1,000 at taxable income up to 15,000, tapering to nil at 50,000 | 2026 | [IGR Annex E, art E1(2)][igr] |
 | Business SMaC credit (separately taxed income) | 18% of spend up to 5,000 (income up to 25,000); cap 900 (25,000 to 50,000); 9% of spend up to 10,000 (over 50,000) | 2026 | [IGR art 17(1-ter)][igr] |
+| New-activity incentive for a new sole trader or professional | 50% cut in the separate rate for the first five tax periods (9% in 2026), on option, if the person carried on no similar activity in the 12 months before the request; no first licence fee and no annual licence fee for the next three years | 2026 | [IGR art 73(1), (3)-(5)][igr]; [Law 141/2025, art 54(6)][l141] |
 | Business and self-employed loss carryforward | No time limit; use capped at 70% of taxable business income each year | 2026 | [IGR art 30(4), replaced by DD 156/2026, art 10][dd156] |
 | Return and balance payment deadline | 31 July following the tax year (31 July 2027 for 2026) | 2026 | [IGR arts 93(1), 124(1)][igr] |
 | Employer income certification (IGR G) | Transmitted by 15 April | 2026 | [IGR art 85(2)][igr] |
@@ -112,11 +113,11 @@ Resident pensions are reduced by a marginal forfait: 20% of the first 13,000, 12
 
 ### Business and self-employed income
 
-Use actual accounts: income, deductible costs, timing, depreciation (Annex D) and related-party normal value ([IGR arts 27-30][igr]). Compulsory social contributions of the self-employed, sole traders and separate-management members are fully deductible from that income ([IGR art 15][igr]). Documented losses carry forward without time limit but can absorb at most 70% of the year's taxable business income ([IGR art 30(4), replaced by DD 156/2026, art 10][dd156]). The 18% separate rate then applies.
+Use actual accounts: income, deductible costs, timing, depreciation (Annex D) and related-party normal value ([IGR arts 27-30][igr]). Compulsory social contributions of the self-employed, sole traders and separate-management members are fully deductible from that income ([IGR art 15][igr]). Documented losses carry forward without time limit but can absorb at most 70% of the year's taxable business income ([IGR art 30(4), replaced by DD 156/2026, art 10][dd156]). The 18% separate rate then applies. A new sole trader or professional who carried on no similar activity in the 12 months before the request can opt for a 50% cut in that rate for the first five tax periods, 9% in 2026; the start can be deferred to no later than the period after the activity starts, and losing a condition ends the benefit for the current and later periods ([IGR art 73(1)(c), (4)-(5)][igr]).
 
 ### Property
 
-San Marino homes count at their cadastral income; when let, income is 20% or 60% of rent depending on whether the rent is at or above the controlled rent, never less than the cadastral income; homes let to atypical residents count at 100% of rent ([IGR art 22(1)-(3)][igr]). Rent is income of the year the contract covers, whether or not received; a lessor with a documented bad debt can file a corrective return within the assessment period ([IGR art 22(6)][igr]; [DD 156/2026, art 7][dd156]). A let foreign home produces income of 60% of rent ([DD 156/2026, art 6][dd156]). Business premises let by a person without bookkeeping duties produce rent less 25% ([IGR art 23(3)][igr]). For own business premises used as the seat of activity, the cadastral rent is phased out of income: 100% in 2026, 75% in 2027, 50% in 2028, 25% in 2029 ([Law 141/2025, art 54(5)][l141]).
+San Marino homes count at their cadastral income; when let, income is 20% or 60% of rent depending on whether the rent is at or above the controlled rent, never less than the cadastral income; homes let to atypical residents count at 100% of rent ([IGR art 22(1)-(3)][igr]). Home rent is income of the year the contract covers unless the lessor declares it was not received; rent received in a later year is income of that year, and a lessor who reported rent never received can file a corrective return within the assessment period ([IGR art 22(6)][igr]). Business-premises rent is income of the contract year whether or not received; a corrective return is allowed only for a documented loss of the claim ([IGR art 23(5-bis), added by DD 156/2026, art 7][dd156]). A let foreign home produces income of 60% of rent ([DD 156/2026, art 6][dd156]). Business premises let by a person without bookkeeping duties produce rent less 25% ([IGR art 23(3)][igr]). For own business premises used as the seat of activity, the cadastral rent is phased out of income: 100% in 2026, 75% in 2027, 50% in 2028, 25% in 2029 ([Law 141/2025, art 54(5)][l141]).
 
 ### Deductible charges
 
@@ -243,7 +244,7 @@ The same rules give: two resident parents sharing two dependent children 50/50 f
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 1-18, 22-30, 84-85, 93, 101, 124, 128-129, 139, Annexes C and E | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
+| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 1-18, 22-30, 73, 84-85, 93, 101, 124, 128-129, 139, Annexes C and E | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
 | Law 141/2025 of 12 November 2025, art 54 (commencement, 18% rate 2026-2030, cadastral phase-out, omitted-return charge) | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html | 2026-10-30 |
 | Delegated Decree 156/2026 of 12 October 2026, arts 2-10, 16-20 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
 | ISS circular 2187/UC/2026 of 22 April 2026 (2026 contribution rates) | https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html | 2026-10-30 |
