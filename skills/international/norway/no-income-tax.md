@@ -1,10 +1,10 @@
 ---
 name: no-income-tax
-description: Use this skill whenever asked about Norwegian income tax for self-employed individuals (enkeltpersonforetak). Trigger on phrases like "Norwegian tax", "trinnskatt", "alminnelig inntekt", "personfradrag", "skattemelding", "RF-1175", "naeringsoppgave", "enkeltpersonforetak", "self-employed tax Norway", or any question about filing or computing income tax for a Norwegian self-employed client. Covers alminnelig inntekt (22%), trinnskatt (5 brackets), personfradrag, naeringsinntekt computation, deductible expenses, filing deadlines, and penalties. ALWAYS read this skill before touching any Norwegian income tax work.
-version: 2.0
+description: "Use this skill for Norwegian personal income tax for income year 2026 (the calendar year, filed in 2027). It covers who is taxed in Norway, the 22% tax on ordinary income (18.5% in Finnmark and seven Nord-Troms municipalities), the five-step bracket tax (trinnskatt) on personal income, the national insurance contribution as it sits on the same base, the NOK 114,540 personal allowance, the 46% and 40% minimum deductions, the pension tax credit, the low-income limitation, the selected-youth work deduction, sole proprietors (enkeltpersonforetak) and calculated personal income, depreciation, wealth tax, returns, advance tax, enforcement fines and additional tax. Trigger on: Norwegian tax, skattemelding, trinnskatt, alminnelig inntekt, personinntekt, personfradrag, minstefradrag, enkeltpersonforetak, ENK, formuesskatt, forskuddsskatt, restskatt. Out of scope: no-social-contributions (contribution detail), no-employer-payroll, no-capital-gains (shares, shareholder model), no-individual-residence (residence and exit), no-corporate-income-tax, no-vat-return, no-transfer-pricing."
+version: 2.1
 jurisdiction: "NO"
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-30
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -15,169 +15,276 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Norway income tax: 2026 sole-proprietor calculation and return
+# Norway: personal income tax (income year 2026)
 
-Figures are for tax year 2026. For income earned in **2026**, normally reported in **2027**. A return submitted during **2026** for **2025** income needs that earlier year's rates. This skill covers ordinary Norwegian sole proprietors (*enkeltpersonforetak*, ENK), including owners with wages. Amounts are NOK. Figures and procedures were researched in September 2026; the business shielding rate is established after year-end.
+This skill covers personal income tax in Norway for income year 2026. The 2026 return is filed in spring 2027. A return filed in 2026 is for 2025 and needs 2025 figures. The main law is the Tax Act (skatteloven, lov 1999-03-26-14). The rates and amounts for the year are in the Storting's tax decision for 2026 (Stortingets skattevedtak, FOR-2025-12-18-2747, amended 19 June 2026). Returns, penalties and corrections follow the Tax Administration Act (skatteforvaltningsloven) and its regulation. Payment and interest follow the Tax Payment Act (skattebetalingsloven). The authority is Skatteetaten. Amounts are in Norwegian kroner (NOK).
+
+Norway taxes individuals on two bases. Ordinary income (alminnelig inntekt) is net income after deductions and is taxed at a flat 22%. Personal income (personinntekt) is gross pay, pensions and calculated business income, with no deductions; bracket tax and the national insurance contribution fall on it. Keep the two bases apart in every calculation.
+
+Detail lives in the sibling skills. Read [no-social-contributions](no-social-contributions.md) for the national insurance contribution and employer contributions, [no-employer-payroll](no-employer-payroll.md) for withholding on wages, [no-capital-gains](no-capital-gains.md) for shares, dividends and the shield deduction, [no-individual-residence](no-individual-residence.md) for residence, emigration and exit tax, [no-corporate-income-tax](no-corporate-income-tax.md) for companies and [no-vat-return](no-vat-return.md) for VAT.
+
+## Who this applies to
+
+- **Residents.** A person resident in Norway is taxed on all wealth and income in Norway and abroad (skatteloven § 2-1 first and ninth paragraphs).
+- **Day tests.** A person who stays in Norway for more than 183 days in any 12-month period, or more than 270 days in any 36-month period, is resident, but only from the income year in which the stay passes that count (§ 2-1 second paragraph). Detail and the emigration tests are in [no-individual-residence](no-individual-residence.md).
+- **Leaving Norway.** Residence ends for a year only if the person shows they did not stay in Norway for periods over 61 days in that year and that they and close relatives did not have a home in Norway. A person resident for at least ten years stays resident until the end of the third income year after moving, subject to the same tests each year (§ 2-1 third paragraph).
+- **Wealth tax residence.** The duty to pay wealth tax depends on living in Norway on 31 December of the year before the assessment year (§ 2-1 seventh paragraph).
+- **Non-residents.** A non-resident is taxed only on the Norwegian items listed in § 2-3, such as work done in Norway and business carried on here. A short-stay foreign worker can choose the flat PAYE scheme (kildeskatt på lønn, Tax Act chapter 20); see Cross-border points.
+- **Sole proprietors.** An owner of an enkeltpersonforetak (ENK) is taxed personally. Business profit is ordinary income, and a calculated personal income (beregnet personinntekt) carries bracket tax and the contribution (§§ 12-2 g and 12-10 to 12-13).
+- **Out of scope here.** Companies (AS, ASA), partnerships taxed at partner level, petroleum tax, Svalbard tax, shipping tonnage tax and the special rules for fishermen, farmers and seamen. They use other rules and are flagged, not computed.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Tax on ordinary income, individuals | 22% (common tax 8.25% + county 2.40% + municipal 11.35%, maximum rates) | 2026 | ssv. §§ 3-2, 3-8; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Tax on ordinary income, Finnmark and Karlsøy, Kvænangen, Kåfjord, Lyngen, Nordreisa, Skjervøy, Storfjord | 18.5% (common tax 4.75%) | 2026 | ssv. § 3-2; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Bracket tax step 1 | 1.7% of personal income above NOK 226,100 | 2026 | ssv. § 3-1; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Bracket tax step 2 | 4.0% above NOK 318,300 | 2026 | ssv. § 3-1 |
+| Bracket tax step 3 | 13.7% above NOK 725,050 | 2026 | ssv. § 3-1 |
+| Bracket tax step 4 | 16.8% above NOK 980,100 | 2026 | ssv. § 3-1 |
+| Bracket tax step 5 | 17.8% above NOK 1,467,200 | 2026 | ssv. § 3-1 |
+| National insurance contribution: pay | 7.6% | 2026 | Stortingsvedtak om avgifter til folketrygden 2026 § 7; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| National insurance contribution: business income | 10.8% | 2026 | same decision § 8 |
+| National insurance contribution: pensions, and anyone under 17 or over 69 | 5.1% | 2026 | same decision § 6 |
+| Contribution lower limit and phase-in | Nothing due up to NOK 99,650; never more than 25% of income above NOK 99,650 | 2026 | folketrygdloven § 23-3 fourth paragraph; https://lovdata.no/lov/1997-02-28-19/§23-3 |
+| Personal allowance (personfradrag), class 1 | NOK 114,540 | 2026 | ssv. § 6-3 |
+| Minimum deduction on pay | 46% of pay, at most NOK 95,700 | 2026 | skatteloven § 6-32 first paragraph a; ssv. § 6-1 |
+| Minimum deduction on pensions | 40% of pensions, at most NOK 75,400 (pay and pension together capped at NOK 95,700) | 2026 | skatteloven § 6-32 first paragraph b and d; ssv. § 6-1 |
+| Special deduction, Finnmark and seven Nord-Troms municipalities | NOK 45,000 (not for bracket tax or contribution) | 2026 | skatteloven § 15-5 |
+| Tax credit for pensioners | Up to NOK 39,100; reduced by 19.1% of pension income above NOK 294,200 and 6% above NOK 437,100 | 2026 | ssv. § 6-5 (amended 19 June 2026); skatteloven § 16-1 third paragraph |
+| Low-income limitation for pensioners | No tax below NOK 163,750 (single) or NOK 151,350 (each spouse); above that, tax capped at 55% of the excess | 2026 | ssv. § 6-4; skatteloven § 17-1 |
+| Selected-youth work deduction (trial) | NOK 125,000, reduced by 40% of eligible income above NOK 345,000 | 2026 | ssv. § 6-6; skatteloven § 6-86 |
+| Parental childcare deduction | NOK 15,000 for one child, plus NOK 10,000 for each further child | 2026 | ssv. § 6-2 |
+| Exemption card limit (frikort) | NOK 100,000 | 2026 | Skatteetaten, Forskuddsutskrivingen 2026; https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ |
+| PAYE scheme for foreign workers | 25% (22.5% under 17 or over 69; 17.4% if not a member of national insurance); only up to NOK 725,050 of pay | 2026 | ssv. § 3-9; Forskuddsutskrivingen 2026 |
+| Wealth tax, state | 0.65% of net wealth above NOK 1,900,000; 0.75% above NOK 21,500,000 (spouses: NOK 3,800,000 and NOK 43,000,000) | 2026 | ssv. § 2-1 |
+| Wealth tax, municipal | Up to 0.35% of net wealth above NOK 1,900,000 | 2026 | ssv. § 2-3 |
+| Wealth valuation, primary home | 25% of estimated market value; 70% of the part above NOK 14,000,000 | 2026 | skatteloven § 4-10 second paragraph |
+| Wealth valuation, shares | 80% of value | 2026 | skatteloven § 4-12 |
+| Direct expensing of an asset | Cost below NOK 30,000 or life under three years | 2026 | skatteloven § 14-40 |
+| Bank-payment rule for deductions | A cost paid other than through a bank is deductible only if the payment is under NOK 10,000 | 2026 | skatteloven § 6-51 |
+| Upward adjustment factor on share income | 1.72 | 2026 | Forskuddsutskrivingen 2026 (skatteloven § 10-31 first paragraph) |
+| Late-payment interest | 12% from 1 January 2026; 12.25% from 1 July 2026 | 2026 | skattebetalingsloven § 11-1; https://www.skatteetaten.no/satser/forsinkelsesrenter/ |
+| Court fee (basis of enforcement fines) | NOK 1,345 | 2026 | Skatteetaten, enforcement fines; https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/ |
+
+The 22% is the sum of maximum rates. A county or municipality may set a lower rate, but the maximum applies unless it does (ssv. § 3-8 second paragraph).
+
+## The taxable base
+
+### Ordinary income for an employee or pensioner
+
+1. Start with taxable pay, benefits in kind, pensions, interest, rent and other income. Shares and dividends follow the shareholder model in [no-capital-gains](no-capital-gains.md); dividends and gains above the shield are multiplied by 1.72 for 2026 before the 22% applies.
+2. Deduct the minimum deduction (minstefradrag) unless actual costs of earning the pay are higher (§ 6-30). It is 46% of pay up to NOK 95,700 and 40% of pensions up to NOK 75,400. Someone with both gets the sum, capped at NOK 95,700 (§ 6-32). There is no minimum deduction on business income, except a childminder's fee in their own home (§ 6-31 first paragraph d).
+3. Deduct interest on debt (§ 6-40), union dues, gifts to approved organisations, the parental childcare deduction and other specific deductions.
+4. Deduct usable losses carried forward.
+5. Deduct the personal allowance of NOK 114,540 (§ 15-4). In Finnmark and the seven Nord-Troms municipalities, also deduct NOK 45,000 (§ 15-5). The tax is 22% (18.5% there) of what is left, never below zero.
+
+The personal allowance is cut to whole or started months of residence for a part-year resident (§ 15-4 fifth paragraph). The upper limit of the minimum deduction is cut the same way (§ 6-32 fourth paragraph).
+
+### Personal income, bracket tax and the contribution
+
+Personal income (§ 12-2) is pay and benefits, pensions, work assessment allowance and disability benefit, and calculated personal income from a sole proprietorship. No deduction reduces it: not the personal allowance, not interest, not losses. Bracket tax is charged step by step on total personal income (ssv. § 3-1). For a part-year resident the step limits are cut to whole or started months of residence (ssv. § 3-1 second paragraph).
+
+The national insurance contribution is a percentage of the same personal income. Pay carries 7.6%, business income 10.8%, pensions and people under 17 or over 69 carry 5.1% (folketrygdloven § 23-3; 2026 decision §§ 6 to 8). Childminding in one's own home and fishing businesses that pay product tax carry the middle rate instead of the high rate (§ 23-3 second paragraph no. 2 c and d). Nothing is due up to NOK 99,650 of total personal income, and the total can never exceed 25% of income above NOK 99,650. Apply that limit once across all categories. The full method is in [no-social-contributions](no-social-contributions.md).
+
+### Sole proprietors (enkeltpersonforetak)
+
+**Is it a business?** Business needs profit potential, enough duration and extent, and work on the owner's own account and risk. A registration or a payment-platform label does not decide it. Occasional independent work can be employment-type income instead. Passive investments can be capital income.
+
+**Business profit.** Taxable revenue includes earned sales, fees, commissions, royalties, grants and benefits in kind. Recognise credit sales in the year they are earned. Record sales without output VAT where charged. Reconcile customer sales, refunds, platform fees and payouts; a bank payout is not turnover. Separate loans, transfers and owner drawings. Owner withdrawals of goods or services are taxed at market value.
+
+Deduct business costs with an invoice, a business purpose and a business-or-private split. Exclude private consumption and tax payments. A cost is deductible only if it was paid through a bank or a licensed payment provider, unless the total payment is under NOK 10,000. Several payments for the same delivery, service or contract count as one (§ 6-51). An amount refused under this rule cannot go into the asset's depreciation base either.
+
+**Common costs.**
+
+| Item | Treatment |
+|---|---|
+| Home office in an owned home or housing cooperative unit | Standard deduction NOK 2,240 for 2026, not reduced for part-year use; or actual costs with a supported split. The room must be used for the business. No deduction for rent paid to yourself. |
+| Phone and internet (electronic communication) | Deduct the business costs, then add back private use. The private add-back is at most NOK 4,392 a year (field 6998 in the business specification) and never more than the costs. |
+| Client meals at a restaurant outside the workplace | Deductible only within a ceiling of NOK 592 per person for 2026. Above the ceiling, none of the meal is deductible. Spirits make the whole meal non-deductible. Other entertainment, gifts to business contacts and trips are not deductible. |
+| Training | Keeping up a qualification already used to earn income can be deductible. Getting a new qualification or degree normally is not. |
+| Fines and additional tax | Not deductible, even when incurred in the business. |
+
+**Vehicles.** A car counts as a business vehicle (yrkesbil) if business driving is at least 6,000 km a year, or more than half its total use; take a three-year view (Skatte-ABC B-5-3.3). Keep a trip log. A car below those tests is a private car even if it is used somewhat in the business; for business driving in a private car under 6,000 km the 2026 rate is NOK 3.50 per km (2026 rates regulation). For a business vehicle, deduct actual costs and depreciation and add back private use. Under the standard car-benefit rule the 2026 benefit is 30% of the list price as new up to NOK 370,300 and 20% of the excess. Use 75% of the list price if the car was more than three years old on 1 January, or if documented business driving exceeds 40,000 km in the year; use 56.25% if both apply (Skatteetaten, bilsatser firmabil). Private use of a car outside the standard rules is valued at NOK 3.40 per km (2026 rates regulation).
+
+**Depreciation.** An asset with a cost of NOK 30,000 or more and a life of at least three years must go into a declining-balance group. An asset under NOK 30,000 or with a life under three years can be expensed or depreciated (§ 14-40). Use tax groups, not book depreciation (§ 14-43):
+
+| Group | Assets | Maximum rate |
+|---|---|---:|
+| a | Office machines | 30% |
+| b | Acquired goodwill | 20% |
+| c | Lorries, buses, vans, taxis, vehicles for disabled transport | 24% |
+| d | Passenger cars, tractors, machinery, tools, instruments, furniture | 20% |
+| e | Ships, vessels, rigs | 14% |
+| f | Aircraft, helicopters | 12% |
+| g | Power transmission and distribution plant | 5% |
+| h | Buildings and plant, hotels, restaurants | 4% |
+| i | Commercial buildings | 2% |
+| j | Fixed technical installations in buildings | 10% |
+
+Groups a to d are pooled; each asset in e to i has its own balance; j is pooled per building (§ 14-41). On a sale in groups a to d and j, the price not taken to income reduces the balance (§ 14-44). A negative balance in a, c, d or j is taken to income at least at the group's rate (§ 14-46). Gains and losses on groups e to i go to a gain and loss account; at least 20% of a positive balance is taken to income and up to 20% of a negative balance is deducted each year (§ 14-45). A balance under NOK 30,000 is cleared in full that year (§ 14-47).
+
+**Calculated personal income (§§ 12-10 to 12-13).** Start with ordinary business income before losses carried forward (§ 12-11 first paragraph). Add back actual capital costs and losses, except losses on customer receivables and interest on financial-institution debt up to the shield base. Deduct actual capital income such as interest, dividends and gains on financial assets, but not income on customer receivables. Then deduct the shield deduction: the shield base times the shield rate (§ 12-12). The shield base is the average of opening and closing values of business assets (fixed assets of NOK 30,000 or more, stock, customer receivables and acquired intangibles), less debt to financial institutions, supplier credit and customer prepayments. The Ministry sets the maximum shield rate for each year (§ 12-12 third paragraph). A negative result cannot be set against other personal income. It is carried forward against later positive results from the same business, and the right is lost to the extent the owner does not use it in the first year possible (§ 12-13).
+
+**Small businesses.** An owner whose total operating revenue is NOK 50,000 or less need not file the business specification (næringsspesifikasjon), unless an exception applies, for example VAT registration, accounting duty, more than one business or a spouse split. Without the personal income report, personal income equals business income and a negative result cannot be carried forward (skatteforvaltningsforskriften § 8-2-1).
+
+**Losses.** An ordinary business loss reduces other ordinary income. An unused ordinary loss is carried forward. Keep it separate from negative calculated personal income.
+
+### Credits and limits
+
+- **Pension tax credit (§ 16-1).** A person on a national insurance retirement pension or AFP gets a credit of up to NOK 39,100 against income tax and the contribution. It falls by 19.1% of pension income above NOK 294,200 and by 6% above NOK 437,100. It is cut for graded pension, AFP reduced for earnings and months without pension.
+- **Low-income limitation (§ 17-1).** For a pensioner, no income tax or contribution is due when ordinary income (plus 1.5% of net wealth above NOK 200,000 for a single person, excluding the primary home) is no more than NOK 163,750 (single) or NOK 151,350 (each spouse). Above that, the listed taxes cannot exceed 55% of the excess. A person who qualifies for both the credit and the limitation gets the lower tax (§ 16-1 fourth paragraph).
+- **Selected-youth work deduction (§ 6-86).** A trial from 2026 for 8% of people born 1991 to 2006 who were registered as taxable to Norway on 31 October 2025, drawn at random by Skatteetaten. The deduction is NOK 125,000, reduced by 40% of eligible income (pay, calculated personal income and partner pay) above NOK 345,000, so it reaches zero at NOK 657,500. It cannot exceed the income, cannot create or increase a loss and lasts five income years. It is cut by months for part-year residents. It is not given to anyone on the PAYE scheme or the foreign-worker standard deduction. Being in the age group is not enough; check the person was drawn.
+
+### Wealth tax
+
+Net wealth is valued at 1 January of the assessment year. Main valuation rules: primary home 25% of estimated market value and 70% of the part above NOK 14,000,000 (§ 4-10); secondary home 100%; listed and unlisted shares 80% (§ 4-12). The state rate is 0.65% above NOK 1,900,000 and 0.75% above NOK 21,500,000; the municipal rate is up to 0.35% above NOK 1,900,000 (ssv. §§ 2-1 and 2-3). The combined rate is therefore 1.0%, and 1.1% above NOK 21,500,000. Spouses taxed together have double thresholds. Debt is reduced in proportion where assets carry a valuation discount (§ 4-19).
+
+## Deadlines and filing
+
+| Step | When | Source |
+|---|---|---|
+| Tax return, employees and pensioners | End of April 2027 for income year 2026 | skatteforvaltningsforskriften § 8-2-3 first paragraph b |
+| Tax return, ENK owners | End of May 2027 | § 8-2-3 first paragraph a |
+| Spouses with different deadlines | Both may use the later one | § 8-2-3 second paragraph |
+| Extension | Apply before the deadline; an accountant can get extensions for a smaller share of named clients, at most to 30 June | § 8-2-5 |
+| Pre-filled return | An employee or pensioner whose pre-filled return is right need not submit; the pre-filled data then count as filed | skatteforvaltningsloven § 8-2 fourth paragraph |
+| Advance tax (forskuddsskatt), individuals | Four equal instalments, 15 March, 15 June, 15 September, 15 December of the income year; under NOK 2,000 all falls due on 15 June | skattebetalingsloven § 10-20 |
+| Extra advance tax | Pay by 31 May of the following year to avoid the interest charge on residual tax | skattebetalingsloven § 11-5 first paragraph |
+| Residual tax (restskatt) | Three weeks after the assessment is sent, but not before 20 August; NOK 1,000 or more is split into two instalments five weeks apart | skattebetalingsloven § 10-21 |
+| Correcting your own return | Up to three years after the filing deadline | skatteforvaltningsloven § 9-4 second paragraph |
+| Tax office reopening | Five years after the end of the income year; ten years with aggravated additional tax | skatteforvaltningsloven § 12-6 |
+
+The return covers wealth on 1 January of the assessment year and income of the previous calendar year (§ 8-2-2). A sole proprietor files the personal return with the business information and the business specification. Skatteetaten's page for sole proprietors says a deadline on a Saturday or Sunday is met by the next working day. Employees pay through withholding on the tax card; see [no-employer-payroll](no-employer-payroll.md). Self-employed people and people with income that has no withholding pay advance tax. Update the tax card when expected profit changes; Skatteetaten lets you change it online until 15 December. If an instalment is not paid, the later instalments fall due at once (§ 10-20 fourth paragraph).
+
+Keep accounting records: the annual accounts, specifications and documentation of entries for five years after the year end; agreements and material correspondence for three years and six months (bokføringsloven § 13).
+
+## Penalties and interest
+
+- **Enforcement fine (tvangsmulkt).** If a return or other required information is not given by the deadline, Skatteetaten can set a daily fine. It is half a court fee per day (skatteforvaltningsforskriften § 14-1-1), capped at 50 court fees (skatteforvaltningsloven § 14-1 second paragraph). With the 2026 court fee of NOK 1,345 that is NOK 672.50 a day and at most NOK 67,250.
+- **Additional tax (tilleggsskatt).** 20% of the tax advantage that was or could have been gained from wrong or missing information; 10% where the information was also reported by an employer or other third party (§ 14-5). Aggravated additional tax adds 20% or 40% for intent or gross negligence, so 40% or 60% in total (§ 14-6).
+- **No additional tax** on correct pre-filled information, obvious typing or calculation errors, a voluntary correction not prompted by a control, an amount under NOK 1,000, or after death (§ 14-4). An enforcement fine already paid is deducted from additional tax for failing to file (§ 14-5 fifth paragraph). Additional tax can be appealed within six weeks (Skatteetaten, additional tax).
+- **Late-payment interest.** Charged from the due date until payment (skattebetalingsloven § 11-1). The rate is 12% from 1 January 2026 and 12.25% from 1 July 2026.
+- **Interest on residual tax.** Residual tax carries an interest charge from 1 July of the income year to the first due date, at the rate under § 11-6 reduced by 22%. No charge arises on residual tax paid by 31 May of the assessment year (§ 11-5). Interest also runs on tax increased by a change decision or the taxpayer's own correction (§ 11-2).
+
+## Cross-border points
+
+- **Residence and exit tax.** Residence day counts, the ten-year tail, the treaty tie-breaker and the exit tax on shares are in [no-individual-residence](no-individual-residence.md).
+- **PAYE scheme (kildeskatt på lønn).** A foreign worker on a short stay with limited tax liability can be taxed at a flat 25% of gross pay with no deductions (skatteloven §§ 20-1 and 20-2; ssv. § 3-9). The rate is 22.5% under 17 or over 69 and 17.4% if the worker is not a member of national insurance. The scheme closes once pay exceeds NOK 725,050 (§ 20-3), and the ordinary rules then apply to all the pay. It is voluntary. A person only on the scheme need not file a return (skatteforvaltningsloven § 8-2 fifth paragraph).
+- **Non-residents on ordinary rules.** The personal allowance is given to a resident and to someone taxable for work done in Norway (§ 15-4 fourth paragraph), cut by months. A non-resident taxable only on board fees and similar gets a minimum deduction of at most NOK 4,000 (§ 6-32 fourth paragraph).
+- **Work abroad.** A resident working abroad for at least 12 continuous months can ask to have the tax on that foreign pay reduced, with short visits home limited to six days a month on average (§ 2-1 tenth paragraph). It does not apply where a treaty gives Norway sole taxing rights.
+- **Pensioners in the EEA.** A non-resident pensioner in another EEA state taxed in Norway on almost all ordinary income can claim the pension credit and the low-income limitation (§§ 16-1 fifth and 17-1 fifth paragraphs).
+- **Membership of national insurance** decides whether the contribution is due, not tax residence. See [no-social-contributions](no-social-contributions.md).
+
+## Worked examples
+
+Both examples assume a full-year resident in a municipality with the maximum rates, outside Finnmark and Nord-Troms, aged 17 to 69, a member of national insurance, not drawn for the youth deduction and with no other income or deductions. Amounts are unrounded working-paper figures; the official assessment rounds.
+
+### Example 1: employee on NOK 700,000
+
+An employee earns NOK 700,000 in 2026. The minimum deduction is 46% of pay, which is NOK 322,000, capped at NOK 95,700. Ordinary income is NOK 604,300. After the NOK 114,540 personal allowance the base is NOK 489,760, and tax at 22% is NOK 107,747.20. Bracket tax is on the full NOK 700,000: 1.7% of NOK 92,200 (NOK 226,100 to 318,300) is NOK 1,567.40, and 4.0% of NOK 381,700 (NOK 318,300 to 700,000) is NOK 15,268.00, together NOK 16,835.40. The contribution is 7.6% of NOK 700,000, NOK 53,200; the 25% limit (NOK 150,087.50) does not bite. Total tax before withholding is NOK 177,782.60.
+
+```oa-check
+name: NO employee, pay NOK 700,000 (2026)
+inputs:
+  pay: 700000
+  min_rate: 46
+  min_cap: 95700
+  allowance: 114540
+steps:
+  - min_deduction: min(pct(pay, min_rate), min_cap)
+  - ordinary_income: pay - min_deduction
+  - base: max(ordinary_income - allowance, 0)
+  - tax_ordinary: pct(base, 22)
+  - step1: pct(min(pay, 318300) - 226100, 1.7)
+  - step2: pct(min(pay, 725050) - 318300, 4.0)
+  - bracket_tax: step1 + step2
+  - contribution_rate: pct(pay, 7.6)
+  - contribution_cap: pct(pay - 99650, 25)
+  - contribution: min(contribution_rate, contribution_cap)
+  - total: tax_ordinary + bracket_tax + contribution
+expected:
+  min_deduction: 95700.00
+  ordinary_income: 604300.00
+  base: 489760.00
+  tax_ordinary: 107747.20
+  bracket_tax: 16835.40
+  contribution: 53200.00
+  total: 177782.60
+```
+
+### Example 2: sole proprietor with a side job
+
+An ENK owner has business profit of NOK 450,000 and pay of NOK 60,000 from a part-time job. The business has a documented zero shield base and no capital items, so calculated personal income equals the profit, NOK 450,000. The minimum deduction applies only to the pay: 46% of NOK 60,000 is NOK 27,600. There is none on the business profit. Ordinary income is NOK 482,400, the base after the personal allowance is NOK 367,860 and tax at 22% is NOK 80,929.20. Personal income is NOK 510,000. Bracket tax is NOK 1,567.40 on step 1 plus 4.0% of NOK 191,700 (NOK 7,668.00) on step 2, together NOK 9,235.40. The contribution is 7.6% of the pay (NOK 4,560) plus 10.8% of the business income (NOK 48,600), NOK 53,160; one 25% limit on NOK 510,000 (NOK 102,587.50) does not bite. Total tax is NOK 143,324.60, paid through withholding on the pay and four advance tax instalments.
+
+```oa-check
+name: NO sole proprietor NOK 450,000 plus pay NOK 60,000 (2026)
+inputs:
+  business: 450000
+  pay: 60000
+  allowance: 114540
+steps:
+  - min_deduction: min(pct(pay, 46), 95700)
+  - ordinary_income: business + pay - min_deduction
+  - base: max(ordinary_income - allowance, 0)
+  - tax_ordinary: pct(base, 22)
+  - personal_income: business + pay
+  - step1: pct(min(personal_income, 318300) - 226100, 1.7)
+  - step2: pct(min(personal_income, 725050) - 318300, 4.0)
+  - bracket_tax: step1 + step2
+  - contribution_rates: pct(pay, 7.6) + pct(business, 10.8)
+  - contribution_cap: pct(personal_income - 99650, 25)
+  - contribution: min(contribution_rates, contribution_cap)
+  - total: tax_ordinary + bracket_tax + contribution
+expected:
+  min_deduction: 27600.00
+  ordinary_income: 482400.00
+  base: 367860.00
+  tax_ordinary: 80929.20
+  bracket_tax: 9235.40
+  contribution: 53160.00
+  total: 143324.60
+```
 
 ## Ask the client first
 
-- Confirm income year, tax residence and residence dates, tax municipality, National Insurance coverage, age and business activity. Obtain coverage decisions where work crosses borders.
-- Obtain the ledger, invoices, platform gross-sales/fees statements, bank reconciliations, VAT records, stock and receivables/payables lists, asset register and disposals. A bank export alone does not establish taxable profit.
-- Obtain salary/benefit statements, private interest and other deductions, ordinary tax losses, negative calculated business personal income, spouse participation, advance payments and withholding.
-- Check whether the taxpayer was selected for the young-person work-deduction trial. Age alone does not confer entitlement.
-- For mixed costs obtain business-purpose evidence, phone bills, office use, vehicle classification, travel logs and meal attendees. Identify any grants, related-party withdrawals or foreign transactions.
+- Were you resident in Norway for all of 2026, and where did you live on 1 January 2026 (municipality, and whether it is in Finnmark or the seven Nord-Troms municipalities)?
+- What income did you have: pay, pension, business profit, rent, interest, dividends or share sales? Are you a member of Norwegian national insurance?
+- If you run an ENK: what are revenue, costs, assets, debts and stock at the start and end of the year, and do you have any losses or negative personal income carried forward?
+- What is your date of birth, and did Skatteetaten tell you that you were drawn for the youth work deduction?
+- Do you receive a retirement pension or AFP, and from what month?
+- What net wealth did you have on 1 January 2027 (home, second home, shares, bank, debt)?
 
-## The method, step by step
+## Sources
 
-1. Establish business, residence, municipality and coverage status; choose the correct income year.
-2. Reconcile income and expenses to taxable business profit, including VAT, timing, stock, private use and tax depreciation.
-3. Calculate business *personinntekt* using the capital/interest/shield/loss bridge below; retain it separately from ordinary income.
-4. Combine the owner's ordinary income and deductions; calculate ordinary-income tax, bracket tax and National Insurance separately.
-5. Apply eligible deductions and tax credits once, reconcile withholding and advances, submit the whole personal return with business information, and retain the calculation and submission receipt.
+| Source | URL | Read on |
+|---|---|---|
+| Stortingets skattevedtak for inntektsåret 2026, FOR-2025-12-18-2747, amended 19 June 2026 (§§ 2-1, 2-3, 3-1, 3-2, 3-8, 3-9, 6-1 to 6-6) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-10-30 |
+| Stortingsvedtak om fastsetting av avgifter mv. til folketrygden for 2026, FOR-2025-12-18-2748 (§§ 6 to 8) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 | 2026-10-30 |
+| Skatteloven, lov 1999-03-26-14 (§§ 2-1, 2-3, 4-10, 4-12, 6-30 to 6-32, 6-51, 6-86, 12-2, 12-10 to 12-13, 14-40 to 14-47, 15-4, 15-5, 16-1, 17-1, 20-1 to 20-3) | https://lovdata.no/lov/1999-03-26-14 | 2026-10-30 |
+| Folketrygdloven, lov 1997-02-28-19 (§ 23-3) | https://lovdata.no/lov/1997-02-28-19/§23-3 | 2026-10-30 |
+| Skatteforvaltningsloven, lov 2016-05-27-14 (§§ 8-2, 9-4, 12-6, 14-1, 14-4 to 14-6) | https://lovdata.no/lov/2016-05-27-14 | 2026-10-30 |
+| Skatteforvaltningsforskriften, FOR-2016-11-23-1360 (§§ 8-2-1 to 8-2-5, 14-1-1) | https://lovdata.no/forskrift/2016-11-23-1360 | 2026-10-30 |
+| Skattebetalingsloven, lov 2005-06-17-67 (§§ 10-20, 10-21, 11-1, 11-2, 11-5) | https://lovdata.no/lov/2005-06-17-67 | 2026-10-30 |
+| Bokføringsloven, lov 2004-11-19-73 (§ 13) | https://lovdata.no/lov/2004-11-19-73/§13 | 2026-10-30 |
+| Skatteetaten, Forskuddsutskrivingen 2026 | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-10-30 |
+| Forskrift om satser mv. til bruk for forskudd og skattefastsetting for 2026, FOR-2025-11-07-2216 (NOK 3.50 and NOK 3.40 per km) | https://lovdata.no/dokument/SF/forskrift/2025-11-07-2216 | 2026-10-30 |
+| Skatteetaten, Home office standard deduction 2026 | https://www.skatteetaten.no/en/rates/home-office-standard-deduction/?year=2026 | 2026-10-30 |
+| Skatteetaten, Telefon og internett (ENK) | https://www.skatteetaten.no/bedrift-og-organisasjon/skatt/skattemelding-naringsdrivende/fradrag/eiendeler-utstyr-eiendom/telefon-og-internett/ | 2026-10-30 |
+| Skatteetaten, Skatte-ABC R-13 Representasjon (2026 meal ceiling) | https://www.skatteetaten.no/en/rettskilder/type/handboker/skatte-abc/gjeldende/r-13-representasjon/R-13.008/R-13.009/ | 2026-10-30 |
+| Skatteetaten, Skatte-ABC B-5-3.3 Yrkesbil | https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/b-5-bil--fradrag-for-bilkostnader/B-5.007/B-5.010/ | 2026-10-30 |
+| Skatteetaten, Bilsatser firmabil 2026 | https://www.skatteetaten.no/satser/bilsatser---firmabil/ | 2026-10-30 |
+| Skatteetaten, Tax return for sole proprietorships | https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/sole-proprietorships/ | 2026-10-30 |
+| Skatteetaten, Advance tax | https://www.skatteetaten.no/en/person/taxes/tax-deduction-card-and-advance-tax/advance-tax/ | 2026-10-30 |
+| Skatteetaten, Enforcement fines | https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/ | 2026-10-30 |
+| Skatteetaten, Additional tax | https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/additional-tax/ | 2026-10-30 |
+| Skatteetaten, Forsinkelsesrenter | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-10-30 |
+| Skatteetaten, Formuesskatt satser 2026 | https://www.skatteetaten.no/satser/formuesskatt/ | 2026-10-30 |
 
-## Establish the scope
+Not yet confirmed: that a sole proprietor using the NOK 3.50 kilometre rate may deduct no other costs of that car, and how an owner chooses between the standard benefit and the per-km valuation for a business vehicle (Skatte-ABC B-7, not read); the maximum shield rate for sole proprietors for 2026 (set after the year ends; § 12-12 third paragraph); the conditions for the home-office standard deduction on the share of the home and rental income (at least 50% of rental value, or rent up to NOK 20,000), which the 2026 page did not state; the van rules (class-two van list-price cut of 50% capped at NOK 150,000) and the 75% cost cap on the car benefit for sole proprietors, both in the previous version of this skill; the rate in skattebetalingsloven § 11-6 used for the residual-tax interest charge in 2026; whether the 19 June 2026 amendments to the pension credit (NOK 39,100, 19.1%) apply to the whole of income year 2026 in Skatteetaten's assessment, as the amended decision reads.
 
-Business requires profit potential, sufficient duration and extent, and operation for the owner's own account and risk. Registration or payment-platform labels do not settle that question. Occasional independent work can instead be employment-type income; passive investments can be capital income. A low turnover does not make a genuine business tax-exempt. Decide rental classification from the actual activity, rather than classifying every rent receipt alike. [Business criteria](https://www.skatteetaten.no/bedrift-og-organisasjon/starte-og-drive/er-jeg-naringsdrivende/)
-
-The calculation below assumes a full-year resident with ordinary taxable activity and confirmed Norwegian coverage. Non-residence, part-year residence, treaty allocation, foreign tax credit, Svalbard, agriculture/fishing special deductions and pension-credit computations need their specific additional rules. Do the ordinary domestic portions below while resolving those identified branches. Membership is a separate decision from tax residence or citizenship. [National Insurance membership](https://www.nav.no/en/home/rules-and-regulations/membership-of-the-national-insurance-scheme)
-
-## Reconstruct business profit
-
-Taxable operating revenue includes earned sales and relevant fees, commissions, royalties, grants and benefits in kind. Recognise earned credit sales in the earning year even if paid later. Record sales excluding output VAT where charged. Reconcile gross customer sales, refunds, fees and net platform payouts; never treat the bank payout as automatically equal to turnover. Separate loans, transfers and owner cash drawings from sales. Owner withdrawals of goods/assets/services can require income at market value, unlike a transfer of already-earned cash. Check grant exemptions individually. [Business income and timing](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/deductions/income-in-business/inntekt-i-enkeltpersonforetak/)
-
-For each expense record invoice, supplier, date, purpose, business/private split, VAT recovery and whether capital or current expenditure. Deduct business operating costs; exclude personal consumption and income-tax payments. Fines and penalty-type charges imposed under law, such as traffic fines and additional tax, are not deductible even when incurred in the business. A cost of **NOK 10,000** or more is deductible only if it was paid through a bank or another licensed payment provider (settlement by set-off is the exception); several payments in the same calendar year for the same delivery, contract or recurring service count as one payment, and if part is paid another way only the bank-paid part is deductible. Recovered input VAT is not another income-tax cost; unrecovered VAT follows the underlying expense or asset. Reconcile opening/closing stock and receivables, bad debts and accruals rather than assuming every payment is an immediate deduction. Use the tax adjustment schedule where accounting and tax treatments differ. The return needs both business income and expenses, not an unexplained net bank total. [Cost connection/private exclusion](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/k-4-kostnader--allment-om-fradrag/K-4.010/K-4.011/); [Bank-payment condition](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/k-4-kostnader--allment-om-fradrag/K-4.021/K-4.025/); [Fines](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/b-21-bot-gebyr-mv/B-21.001/B-21.002/); [VAT and acquisition cost](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/i-3-inngangsverdi/I-3.018/I-3.019/) [Business information and preparation](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/sole-proprietorships/)
-
-### Common expenses and private use
-
-| Item | Treatment and evidence |
-|---|---|
-| Software, supplies, accountancy, advertising, insurance and premises | Ordinary business-purpose operating expenses; separate capital acquisitions and private portions. A merchant name is only a categorisation clue, not proof of deductibility. |
-| Home office | The room must be used exclusively for business. A bedroom or living room also used privately does not qualify. An owner can use eligible actual costs with a supported allocation; there is no deduction for invented rent paid to oneself. The standard deduction is an alternative, not an addition, if you occupy at least **50%** of the dwelling measured by rental value, or rent out a larger share but total annual rent does not exceed **NOK 20,000**. For income year **2026** the standard deduction is **NOK 2,240** (2025: NOK 2,192) for a home office in an owner-occupied (tax-exempt) dwelling, including a housing-cooperative unit, not reduced for part-year use. Rented premises use actual attributable rent/costs. [Home-office conditions](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/deductions/office-car-transport-and-equipment/home-offices/); [2026 standard amount](https://www.skatteetaten.no/en/rates/home-office-standard-deduction/?year=2026); [2025 amount and conditions](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/b-14-bolig--hjemmekontor-mv/B-14.002/B-14.004/) |
-| Phone and internet | Enter the business EK costs, then add back private use, capped at **NOK 4,392** annually and at the total costs. If costs are below that cap, the addition can consume the whole cost. Claim no private addition only with support for no private use; do not assign an arbitrary percentage or import employee exceptions. [ENK electronic communications](https://www.skatteetaten.no/bedrift-og-organisasjon/skatt/skattemelding-naringsdrivende/fradrag/eiendeler-utstyr-eiendom/telefon-og-internett/) |
-| Client meals | Qualifying modest hospitality must relate to business and occur during business hours or immediately in connection with negotiations or product demonstrations, with no spirits. It must take place at the workplace, or at a nearby restaurant if the workplace has no canteen or other reasonable catering facility. For catering at a restaurant outside the workplace, the **2026** ceiling is **NOK 592** per person. Exceeding that restaurant ceiling loses the whole meal deduction, rather than allowing a deduction up to the ceiling. If spirits are served, no part of the meal is deductible; tobacco is never deductible. Keep attendee and purpose records. Other entertainment is not deductible at all, for example trips to sporting events, hunting or fishing trips, gifts to business contacts, or running a building, boat or car for entertainment. Borderline costs can instead be advertising or staff welfare; classify them from the facts, not the label. [Hospitality conditions](https://www.skatteetaten.no/bedrift-og-organisasjon/skatt/skattemelding-naringsdrivende/fradrag/representasjon-velferdstiltak-reklame-og-gaver/representasjon/); [2026 ceiling, spirits and tobacco](https://www.skatteetaten.no/en/rettskilder/type/handboker/skatte-abc/gjeldende/r-13-representasjon/R-13.008/R-13.009/) |
-| Training, professional subscriptions and travel | Verify the applicable deduction conditions and business connection from the supporting documents. Costs of maintaining or updating a qualification the owner already uses to earn income can be deductible; costs of obtaining a new qualification or degree (basic education, further education or specialisation) are normally not. Private gifts and commuting must not be relabelled as ordinary operating costs. Use the relevant specific category where facts require it. [Training conditions](https://www.skatteetaten.no/nn/person/skatt/hjelp-til-rett-skatt/arbeid-trygd-og-pensjon/utdanning/fradrag-for-kostnader-til-utdanning/) |
-
-### Vehicles
-
-Assess each vehicle separately. The business-vehicle branch normally applies at **6,000** business kilometres or more, or if business use is more than half of total use; consider the usage pattern across years. Keep a trip log identifying date, destination, business purpose and distance. [Vehicle classification](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/b-5-bil--fradrag-for-bilkostnader/B-5.007/B-5.010/)
-
-For a car that does not qualify as a business vehicle (under **6,000** business kilometres and not mainly used in the business), the current official business guidance permits **NOK 3.50** per business kilometre, and then no other costs of keeping that car are deductible; running costs and depreciation are covered by the kilometre rate. Confirm the filing-year valuation rules before final submission. A business vehicle gets no kilometre rate. For a business vehicle, claim the relevant actual costs and tax depreciation and add back private use. [Business vehicle method](https://info.altinn.no/starte-og-drive/skatt-og-avgift/skatt/yrkesbil/)
-
-For an ordinary car under the standard private-use method in **2026**, the annual benefit is **30%** of the adjusted list-price base up to **NOK 370,300**, plus **20%** of the excess. The base is normally the original list price including extras; use **75%** of that list price if the car is older than **three years** at **1 January**, or documented business driving exceeds **40,000 km** in the year; use **56.25%** when both conditions apply. The high-mileage reduction needs an electronic logbook showing more than **40,000** business kilometres in the year, and it is not available for class-two vans. This standard method covers owners who account for a car in their own business, not only employees. Compare that benefit with **75%** of calculated total vehicle costs and use the lower add-back. The cost cap uses the special **17%** declining depreciation calculation, not the ordinary tax depreciation deduction; leased cars use lease costs in that cap instead. For a class-two van with documented business need, reduce list price by **50%**, capped at **NOK 150,000**. If older than three years at 1 January, first reduce original list price to **75%**, then apply that van deduction. Alternatively, include **NOK 3.40** per private kilometre supported by an electronic trip log. Record which method is used. [ENK cap and van rules](https://info.altinn.no/starte-og-drive/skatt-og-avgift/skatt/yrkesbil/); [Standard benefit and reduced bases](https://www.skatteetaten.no/satser/bilsatser---firmabil/); [Owners covered by the standard rule](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/b-7-bil--privat-bruk/B-7.012/B-7.013/); [Reduced bases](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/b-7-bil--privat-bruk/B-7.020/B-7.022/)
-
-### Capital assets and [depreciation rates](https://www.skatteetaten.no/satser/avskrivningssatser/)
-
-For a depreciating physical business asset, direct deduction is available where cost is **below NOK 30,000** or useful life is **under three years**. At exactly the threshold with a life of at least three years, capitalise. Two elections exist: a durable asset below NOK 30,000 may instead be capitalised in its pool, and an asset costing NOK 30,000 or more with a life under three years may have its cost spread over its expected useful life instead of being expensed at once. Do not expense non-depreciating land/art merely because its cost is low. Determine cost after recoverable VAT and directly attributable acquisition costs; record delivery and in-service facts. The Norwegian detailed rule resolves the ambiguous threshold wording on the English summary. [Exact direct-deduction boundary](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/d-3-driftsmiddel--direkte-fradragsforing/D-3.001/D-3.002/); [Asset acquisition and grouping](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/deductions/office-car-transport-and-equipment/bedriftens-eiendeler-driftsmidler/kjope-eiendeler-til-bedriften/)
-
-Use the correct declining-balance pool, not book depreciation:
-
-| Group | Ordinary maximum annual rate |
-|---|---:|
-| a: office machines | 30% |
-| b: acquired goodwill | 20% |
-| c: specified trucks, buses and vans | 24% |
-| d: passenger cars, machinery, furniture | 20% |
-| e: ships and rigs | 14% |
-| f: aircraft | 12% |
-| g: installations for transmitting/distributing electric power and electrotechnical equipment in power companies | 5% |
-| h: buildings/structures, hotels | 4% (special qualifying categories differ) |
-| i: commercial buildings | 2% |
-| j: technical installations in business buildings | 10% |
-
-[Depreciation rates and exceptions](https://www.skatteetaten.no/satser/avskrivningssatser/)
-
-Pools a–d are collective; e–i are individual assets; j is per building. Roll forward opening tax balance, additions, disposals and elected depreciation. For sold a/c/d/j assets, unrecognised proceeds reduce the balance; a negative balance triggers income at least at the pool's rate, subject to small-balance rules. Other disposal groups can feed a gain/loss account: recognise at least **20%** of positive gain balance, or deduct up to **20%** of negative balance, subject to closure/small-balance rules. Preserve residual pools after disposal; do not expense the whole purchase and then depreciate it again. [Pools](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/deductions/office-car-transport-and-equipment/bedriftens-eiendeler-driftsmidler/kjope-eiendeler-til-bedriften/); [Disposals and gain/loss account](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/deductions/income-in-business/inntekt-i-enkeltpersonforetak/)
-
-## Calculate business personal income separately
-
-Start with taxable net business income before ordinary loss carryforward. Remove included capital returns/gains that are outside the personal-income base and add back capital costs/losses that the model excludes. Then deduct qualifying business-debt interest under its specific rule, avoiding a duplicate deduction after the add-back. Retain customer-receivable interest/FX and relevant business fixed-asset gains in the personal-income calculation; a generic “subtract all capital income” rule is wrong. Adjust any gain/loss-account amounts that do not belong in personal income. Show each bridge line, amount and source ledger. Financial-institution/bond-debt interest remains deductible only to the extent the relevant debt does not exceed the shielding base before that debt deduction; add back the excess interest. Private debt interest included in business profit must be added back. [Detailed bridge and debt limitation](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/e-5-enkeltpersonforetak--beregnet-personinntekt-foretaksmodellen/E-5.016/E-5.017/) [Personal-income bridge](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/deductions/income-in-business/personinntekt-i-enkeltpersonforetak/)
-
-Calculate the optional shield from the average opening/closing qualifying business asset base after prescribed debt deductions. Include qualifying assets used in the business whose return remains within the personal-income model; exclude private assets and financial assets whose actual return was removed. Deduct supplier credit/customer advances and relevant financial-institution/bond debt in the prescribed base. Maintain opening and closing schedules; bank deposits are not automatically qualifying capital. [Shield asset/debt principles](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/e-5-enkeltpersonforetak--beregnet-personinntekt-foretaksmodellen/E-5.054/E-5.055/) Deduct the eligible shield from calculated personal income, not again from ordinary profit. The **2026** maximum business shielding rate is published in January **2027**; retain the rate as an unresolved parameter until publication if a positive shield base exists. A documented zero base, or a clear election of a lower rate (whole percentage points, made no later than filing the return by the deadline), enables a calculation now; without a clear election the maximum published rate applies. Do not substitute the share shielding rate. [Risk-free return calculation](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/deductions/income-in-business/personinntekt-i-enkeltpersonforetak/); [Publication and election rules](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/e-5-enkeltpersonforetak--beregnet-personinntekt-foretaksmodellen/E-5.054/E-5.091/)
-
-Carry negative calculated personal income separately from ordinary tax losses. Apply available prior negative personal income against positive personal income from the same business under the coordination rules; unused amounts can carry forward. Electing not to use an available offset can forfeit the amount that could have been used. It does not offset wage personal income. Where spouses run a joint business and both worked in it during the income year, positive personal income can be split in the same shares as net business income, but one spouse's negative personal income cannot be deducted from the other spouse's positive personal income; floor each spouse's final business entry at zero for contribution/bracket calculations. [Negative personal income](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/e-5-enkeltpersonforetak--beregnet-personinntekt-foretaksmodellen/E-5.096/E-5.097/); [Carryforward election and spouse allocation](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/deductions/income-in-business/personinntekt-i-enkeltpersonforetak/)
-
-## Ordinary-income tax and deductions
-
-For the ordinary full-year case:
-
-```text
-ordinary income before personal allowance = taxable business profit
-  + wages and other ordinary taxable income
-  - salary minimum deduction or eligible actual salary costs
-  - eligible private interest/other deductions
-  - usable ordinary loss carryforward
-ordinary-income tax base = max(0, ordinary income
-  - applicable work deduction - personal allowance - eligible zone deduction)
-ordinary-income tax = applicable ordinary rate × that base
-```
-
-There is **no salary minimum deduction on ENK business profit**. Wages alongside the business can qualify separately: **46%** of eligible wages, capped at **NOK 95,700** for the ordinary full-year **2026** case. Do not deduct both the wage standard and the same actual wage costs. The full-year personal allowance is **NOK 114,540** once for the individual. It reduces ordinary income, not bracket tax or National Insurance. Partial-year liability can reduce allowances; confirm the exact month and residence rules before applying full-year inputs. [Final 2026 rates and allowances](https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/); [Part-year reduction](https://www.skatteetaten.no/en/rates/personal-allowance/) (that page's year selector can still display an earlier year's amount; use the 2026 circular for the figure)
-
-The ordinary combined rate is **22%**. Qualifying Finnmark/North Troms tax locations use **18.5%** on the relevant ordinary income and up to **NOK 45,000** zone deduction. The zone covers Finnmark and Troms except Balsfjord, Bardu, Dyrøy, Gratangen, Harstad, Ibestad, Kvæfjord, Lavangen, Målselv, Salangen, Senja, Sørreisa, Tjeldsund and Tromsø; eligibility follows tax location at the end of **1 January** of the income year. The ordinary bracket schedule below applies in 2026; do not carry forward the former lower third bracket. If business operates in another municipality, allocate business income/deductions/wealth in the return as instructed, rather than choosing the office municipality for the owner's whole calculation. [Ordinary rates](https://www.skatteetaten.no/satser/alminnelig-inntekt/); [Tax location and zone deduction](https://www.skatteetaten.no/nn/person/skatt/hjelp-til-rett-skatt/arbeid-trygd-og-pensjon/finnmarksfradrag/); [Business in another municipality](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/deductions/income-in-business/inntekt-i-enkeltpersonforetak/)
-
-An ordinary business loss first reduces other ordinary income under the applicable rules; unused ordinary loss carries forward with no time limit. It is not automatically the same amount as negative calculated personal income. Keep both schedules and reconcile them separately. [Business deficit](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/deductions/income-in-business/inntekt-i-enkeltpersonforetak/); [No time limit](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/u-2-underskudd/U-2.025/U-2.026/)
-
-### Selected young-person [work deduction](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-13-arbeidsfradrag-for-unge/A-13.004/)
-
-The trial starts with **2026** income. The target group is people born 1991–2006 who were registered as resident in Norway on 31 October 2025; about **8%** (roughly **100,000**) were randomly drawn for a planned five-year trial, and nobody else will be drawn later. Confirm the taxpayer was drawn; being in the cohort alone is insufficient. The deduction has no effect under the PAYE source-tax scheme (*kildeskatt på lønn*). Do not apply the public page's illustrative salary-income starting point as a universal business-income threshold. [Selection and operation](https://www.skatteetaten.no/person/skatt/arbeidsfradrag/); [Cohort](https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/)
-
-For the full-year case let W equal eligible wage/replacement income plus ENK calculated personal income after usable negative-personal-income carryforward. Exclude nonqualifying benefits and pensions. The tentative ordinary-income deduction is:
-
-```text
-max(0, 125,000 - 40% × max(0, W - 345,000))
-```
-
-It phases out at **NOK 657,500**. Then cap it by eligible income and available ordinary income after other deductions, including ordinary loss carryforward: it cannot create/enlarge a loss or transfer a new loss to a spouse. It reduces ordinary-income tax only. Partial-year rules proportionately reduce both the deduction and phase-out threshold; do not apply this full-year formula unchanged. Reconcile the automatically calculated result with the return. [Eligible base](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-13-arbeidsfradrag-for-unge/A-13.003/); [Amount and phase-out](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-13-arbeidsfradrag-for-unge/A-13.004/); [Ordering, caps and part-year rules](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-13-arbeidsfradrag-for-unge/A-13.005/)
-
-## [Bracket tax](https://www.skatteetaten.no/en/Rates/bracket-tax/) and National Insurance
-
-Let P be total taxable personal income, including wage personal income and the final coordinated nonnegative business amount. Personal allowance, ordinary interest deductions and ordinary loss carryforward do not simply reduce P. Compute each marginal band once on combined P:
-
-| Portion of P above lower bound, up to upper bound | 2026 marginal rate |
-|---|---:|
-| NOK 226,100 to NOK 318,300 | 1.7% |
-| NOK 318,300 to NOK 725,050 | 4.0% |
-| NOK 725,050 to NOK 980,100 | 13.7% |
-| NOK 980,100 to NOK 1,467,200 | 16.8% |
-| Above NOK 1,467,200 | 17.8% |
-
-For each band use `rate × max(0, min(P, upper) - lower)`; the final band has no upper limit. [2026 bracket tax](https://www.skatteetaten.no/en/Rates/bracket-tax/)
-
-For a confirmed ordinary covered adult aged 17–69, business personal income bears **10.8%**, ordinary wages **7.6%**. Pension and income for people under 17 or over 69 use **5.1%**; primary business income from fishing/hunting, or from childminding in the owner's home (children under 12 or with special care needs), bears **7.6%** instead of **10.8%**. Confirm the category and age conditions rather than assigning every ENK owner the high rate. The lower threshold is **NOK 99,650** of total personal income. Compute category-rate amounts, sum them, then limit total National Insurance to **25%** of `max(0, P - 99,650)`. Apply the threshold once across categories; do not use a second allowance for the business. A negative business personal-income remainder does not reduce wage contribution income. [2026 categories and phase-in](https://www.skatteetaten.no/en/rates/national-insurance-contributions/); [Aggregate limit](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/p-15-personinntekt--trygdeavgiftpensjonspoengpensjonsbeholdning/P-15.027/P-15.035/); [Negative income coordination](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/e-5-enkeltpersonforetak--beregnet-personinntekt-foretaksmodellen/E-5.096/E-5.097/)
-
-## Worked checks
-
-Illustrative calculations below assume full-year ordinary residence outside the zone, confirmed ordinary adult coverage, no pension/special-sector income, and no youth-trial deduction unless stated. Monetary results are mathematical working-paper amounts; reconcile filing rounding with the official calculation.
-
-- **Ordinary business:** profit and final personal income both **NOK 600,000**, no other income/deductions and a documented zero shield. Ordinary tax is **NOK 106,801.20**. Bracket tax is **NOK 12,835.40**. NI is **NOK 64,800**. Total before advances/credits is **NOK 184,436.60**. [Ordinary rate/allowance](https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/); [Bands](https://www.skatteetaten.no/en/Rates/bracket-tax/); [NI](https://www.skatteetaten.no/en/rates/national-insurance-contributions/)
-- **Combined low income:** wage and final business personal income each **NOK 60,000**. The ordinary category-rate NI total is **NOK 11,040**, but the single aggregate ceiling gives **NOK 5,087.50**, which is payable NI. Wage minimum deduction is **NOK 27,600** and the personal allowance eliminates the remaining ordinary-income base; no bracket tax arises. [Salary deduction](https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/); [NI phase-in](https://www.skatteetaten.no/en/rates/national-insurance-contributions/); [Combined limit](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/p-15-personinntekt--trygdeavgiftpensjonspoengpensjonsbeholdning/P-15.027/P-15.035/)
-- **Asset boundary:** an eligible machine costing exactly **NOK 30,000** with a three-year life belongs in group d; elected maximum first-year depreciation is **NOK 6,000**, not an immediate full deduction. [Boundary](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/d-3-driftsmiddel--direkte-fradragsforing/D-3.001/D-3.002/); [Group d](https://www.skatteetaten.no/satser/avskrivningssatser/)
-- **Selected trial participant:** business profit and personal income **NOK 400,000**, no other deductions and zero shield. The tentative work deduction is **NOK 103,000**, within the stated caps. Ordinary-income tax after it and the personal allowance is **NOK 40,141.20**; the work deduction does not change the bracket or NI bases. [Phase-out](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-13-arbeidsfradrag-for-unge/A-13.004/); [Caps](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-13-arbeidsfradrag-for-unge/A-13.005/); [Ordinary inputs](https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/)
-- **Phone:** business EK costs **NOK 3,000** with private use produce an equal private addition, hence zero net cost deduction. Costs above the cap would instead leave costs less **NOK 4,392**. [Private addition](https://www.skatteetaten.no/bedrift-og-organisasjon/skatt/skattemelding-naringsdrivende/fradrag/eiendeler-utstyr-eiendom/telefon-og-internett/)
-- **Meals:** an otherwise qualifying nearby-restaurant client meal outside the workplace costing **NOK 600** per person exceeds **NOK 592**; deduction is zero even if the other conditions are satisfied. [Whole-cost exclusion](https://www.skatteetaten.no/bedrift-og-organisasjon/skatt/skattemelding-naringsdrivende/fradrag/representasjon-velferdstiltak-reklame-og-gaver/representasjon/); [2026 ceiling](https://www.skatteetaten.no/en/rettskilder/type/handboker/skatte-abc/gjeldende/r-13-representasjon/R-13.008/R-13.009/)
-
-- **Older van:** a class-two van with business need, list price NOK 400,000 and age over three years at 1 January has adjusted price `400,000 × 75% − min(400,000 × 75% × 50%, 150,000) = 150,000`; standard annual benefit is NOK 45,000 before the 75% cost cap. Alternatively, 2,000 electronically recorded private kilometres give NOK 6,800 under the kilometre method. [Van calculation](https://info.altinn.no/starte-og-drive/skatt-og-avgift/skatt/yrkesbil/)
-
-## Submit, reconcile and correct
-
-The ENK return deadline is normally **31 May** in the following year, moved to the next working day if necessary. Accordingly, this 2026 calculation belongs to the return in 2027, not the 2025 return being filed in 2026. Submit even for a newly registered, inactive or closed ENK. Revenue of **NOK 50,000** or less can permit simplified business information; it is not a filing exemption. The current route is personal tax return plus business information, rather than automatically prescribing the old RF-1175 form. [Deadline and simplified reporting](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/sole-proprietorships/)
-
-In the return search for “Business”, then “Income, expenses, wealth and debt from business activity”. Complete/reconcile business information, assets, tax adjustments, calculated personal income and losses. Check transferred figures against the working paper, and keep personal debt separate from business debt already reported there. Use accounting software where required by accounting/audit obligations; otherwise use a supported software or website route. Request any extension before the deadline. Save the submitted return, receipt and supporting schedules. [Submission workflow](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/sole-proprietorships/)
-
-Update expected annual profit and other inputs in the tax deduction card as estimates change. Advance instalments normally fall on **15 March, 15 June, 15 September and 15 December**, adjusted for weekends/holidays. A changed estimate is not itself an approved cancellation of an invoice. Wage withholding and advance tax are prepayments, not deductible business expenses. Subtract actual credited withholding/advances from assessed tax to reconcile refund or balance; apply any separately established tax credits only once. Additional advance tax paid by **31 May** of the following year avoids the corresponding underpayment interest. [Advance payments](https://www.skatteetaten.no/en/person/taxes/tax-deduction-card-and-advance-tax/advance-tax/)
-
-Check the assessment notice against all three tax components and credited payments. Pay by the notice's deadlines even if correcting or appealing; do not copy a historical example's interest rate into a 2026 forecast. Correct a submitted return by reopening the relevant year, correcting business and personal transfers together and submitting again. The ordinary self-correction route covers the last **three income years**; for an older year or an authority decision use the appropriate change/appeal process and its notice deadline. Missing filing or inaccurate information can lead to assessment and sanctions; do not predict an automatic penalty without the applicable notice and conditions. [Corrections and filing obligation](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/sole-proprietorships/); [Settlement and payment despite correction](https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-assessment/underpaid-tax/)
-
-Keep primary accounting records, vouchers and mandatory reports for **five years** after the accounting year ends. Secondary material such as material agreements/correspondence is generally retained for **three years and six months**; electronically booked entries must also stay electronically available for three years and six months, unless turnover excluding VAT is under NOK 5 million. Apply any longer industry-specific period or retention order. [Retention rules](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/r-3-regnskap--foretak-med-bokforingsplikt/R-3.002/R-3.009/)
-
-A missed filing obligation can lead to a conditional enforcement-fine notice with a new deadline; submit by that deadline to avoid daily accrual. For the tax return the **2026** fine is half a court fee per day (court fee NOK 1,345), up to 50 court fees, a maximum of **NOK 67,250**. Inaccurate or incomplete information that could produce a tax advantage can separately attract additional tax: **20%** of the tax advantage, **40%** in serious cases and up to **60%** in especially serious cases. Exceptions include excusable circumstances, correct pre-filled information, obvious typing/calculation errors and voluntary correction. An enforcement fine paid for the same failure is deducted from the additional tax; appeal additional tax within six weeks. Record the notice, deadline, grounds, correction and any appeal route; do not treat a daily fine and additional tax as the same sanction. [Enforcement fines](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/); [Additional tax](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/additional-tax/)
-
-## When to refuse or refer
-
-- Do not present a final liability where income year, business status, actual taxable income or coverage remains unknown. Identify the missing input and calculate unaffected portions.
-- Resolve treaty/foreign tax, part-year allowance, Svalbard, special industry, pension-credit or disputed membership branches before claiming this ordinary domestic method is the complete return.
-- Do not invent an unpublished shielding rate or certify undocumented expenses. A positive shield-base case remains provisional until its elected/published input is established.
-- Require specialist review for disputed business classification, complex spouse/business coordination, reorganisations, contentious valuations, or an authority assessment/penalty. Preserve the facts and calculations already established.
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 
