@@ -1,13 +1,13 @@
 ---
 name: how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide
-description: "How a foreign citizen registers a limited liability company (DOO) or an entrepreneur (preduzetnik) in Serbia, for 2026. Covers the information to prepare, the qualified electronic signature or an attorney with a power of attorney, the founding act (founding decision or agreement) and signature certification, the notary and court interpreter in practice, the RSD 100 minimum share capital and the five-year limit for paying it in, filing with the Business Registers Agency (APR), the bank account and KYC, the 15% corporate tax and 10% entrepreneur tax, the lump-sum (paušal) conditions and RSD 6,000,000 limit, the RSD 8,000,000 VAT threshold, and beneficial owner registration. Trigger on: register DOO Serbia, open company Serbia foreigner, APR registracija, osnivanje DOO, preduzetnik registracija stranac. Out of scope: choosing the form (can-a-foreigner-start-a-business-in-serbia), tax computations (serbia-income-tax, rs-corporate-tax), tax planning (serbia-tax-optimization), VAT (serbia-vat), contributions (serbia-social-contributions), residence and work permits."
+description: "How a foreign citizen registers a limited liability company (DOO) or an entrepreneur (preduzetnik) in Serbia, for 2026. Covers the information to prepare, the qualified electronic signature or an attorney with a power of attorney, the founding act (founding decision or agreement) and signature certification, the notary and court interpreter in practice, the RSD 100 minimum share capital and the five-year limit for paying it in, filing with the Business Registers Agency (APR), the 2026 APR fees (RSD 8,000 for a DOO, RSD 2,500 for an entrepreneur), the bank account and KYC, the 15% corporate tax and 10% entrepreneur tax, the lump-sum (paušal) conditions and RSD 6,000,000 limit, the RSD 8,000,000 VAT threshold, and beneficial owner registration. Trigger on: register DOO Serbia, open company Serbia foreigner, APR registracija, osnivanje DOO, preduzetnik registracija stranac. Out of scope: choosing the form (can-a-foreigner-start-a-business-in-serbia), tax computations (serbia-income-tax, rs-corporate-tax), tax planning (serbia-tax-optimization), VAT (serbia-vat), contributions (serbia-social-contributions), residence and work permits."
 version: 0.2
 jurisdiction: RS
 tax_year: 2026
 last_updated: 2026-10-30
-authored_by: Andrija Eminovic
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: formation
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -26,13 +26,15 @@ Although both forms are registered with the Serbian Business Registers Agency (*
 
 For foreign citizens, there are also several practical issues that should be considered before starting the registration process.
 
-This guide explains what you should expect when registering a DOO or an entrepreneur in Serbia. Figures are for 2026. How to choose between the two forms, and why registration does not give a right to live or work in Serbia, is in [can-a-foreigner-start-a-business-in-serbia](can-a-foreigner-start-a-business-in-serbia.md). The two skills overlap on liability, tax rates, banking and VAT; this one is about the registration steps.
+**Tier 2, checked against the law. Built by Michael Cutajar and the OpenAccountants team. Figures for 2026 come from the official consolidated Company Law (pravno-informacioni-sistem.rs), the Ministry of Finance texts of the tax laws, and the Business Registers Agency (APR) fee and founding pages, all read on 30 October 2026. Tax figures must agree with serbia-income-tax, serbia-social-contributions, rs-corporate-tax and serbia-vat; those skills win if they differ. Not signed off by a Serbian accountant.**
+
+This skill explains what you should expect when registering a DOO or an entrepreneur in Serbia. Figures are for 2026. How to choose between the two forms, and why registration does not give a right to live or work in Serbia, is in [can-a-foreigner-start-a-business-in-serbia](can-a-foreigner-start-a-business-in-serbia.md). The two skills overlap on liability, tax rates, banking and VAT; this one is about the registration steps.
 
 ## 1. Registering a DOO in Serbia
 
 A DOO is a separate legal entity and is one of the most common business structures used by foreign investors in Serbia. Its members are not liable for the company's obligations, except in the cases in Articles 18 and 548 of the Company Law (Article 139).
 
-The incorporation of a DOO is submitted to APR electronically.
+The incorporation of a DOO is submitted to APR electronically. Since 17 May 2023 a paper founding application for a company is no longer accepted (Law on the Registration Procedure with APR, Article 9(2), as APR's founding instructions state).
 
 Before starting the procedure, the founder should prepare the necessary information and decide who will handle the electronic registration.
 
@@ -40,7 +42,7 @@ Before starting the procedure, the founder should prepare the necessary informat
 
 For a foreign individual establishing a DOO, the starting point is a valid identification document.
 
-In practice, we require a clear copy of the identification page of the founder's valid passport.
+For a foreign member, APR takes a copy of the passport (or of an identity card issued to the foreigner in Serbia) as the identity document. In practice, a clear copy of the identification page of the valid passport is needed.
 
 Before preparing the incorporation documents, the following information should also be determined:
 
@@ -67,7 +69,7 @@ There are two practical options.
 
 A foreign citizen may obtain an appropriate qualified electronic certificate in Serbia from an authorised provider, subject to the provider's requirements.
 
-In practice, this can be obtained through providers such as the Chamber of Commerce and Industry of Serbia or other authorised certification service providers.
+APR's electronic registration requires a qualified electronic certificate issued by a certification body in Serbia (APR entrepreneur founding instructions); which providers issue one to a foreigner, and on what conditions, is for the provider to confirm.
 
 Once the foreign founder has the appropriate electronic signature and fulfils the technical requirements, the founder can electronically sign and submit the registration application through APR's electronic registration system.
 
@@ -93,7 +95,7 @@ On incorporation, the signatures on the founding act are certified under the law
 
 However, **the practical procedure used for foreign founders may involve additional steps.**
 
-In our practice, when assisting a foreign citizen with establishing a DOO in Serbia, the incorporation documentation is executed before a Serbian public notary.
+In practice, when a foreign citizen establishes a DOO in Serbia, the incorporation documentation is often executed before a Serbian public notary. APR accepts a founding act signed with the founders' electronic certificates or digitised in line with the law (APR founding instructions).
 
 ## What happens if the founder does not understand Serbian?
 
@@ -104,6 +106,8 @@ The interpreter translates and explains the contents of the incorporation docume
 The participation of the interpreter is recorded in the notarial documentation, and the interpreter physically signs the relevant documentation.
 
 The documentation is subsequently prepared in the appropriate electronic form for the electronic registration procedure.
+
+Any document in a foreign language must be filed with a Serbian translation certified by a permanent court interpreter. Where a certified foreign public document is required, it needs an Apostille or, for a country outside the Hague Convention with no bilateral agreement with Serbia, full legalisation (APR founding instructions).
 
 It is important to distinguish between these two parts of the process:
 
@@ -125,7 +129,7 @@ The monetary contribution does **not generally have to be paid before the DOO is
 
 The incorporation document may provide for the contribution to be paid after registration within the legally permitted period. The period is set in the founding act, runs from the day the founding act is registered, and cannot be longer than **five years** for a DOO (Company Law, Article 46(2)). A member who does not pay in, or pays late, answers to the company for the damage caused (Article 46(1)).
 
-If the founder chooses to pay the contribution before incorporation, evidence of the payment issued by the bank must be provided in the appropriate electronic form as part of the registration documentation.
+If the founder chooses to pay the contribution before incorporation, the bank's confirmation of the payment must be provided in the appropriate electronic form as part of the registration documentation (APR founding instructions).
 
 Therefore:
 
@@ -144,7 +148,7 @@ Depending on the particular case, the documentation may include:
 * power of attorney if an attorney handles the procedure,
 * evidence concerning the share capital if it was paid before incorporation,
 * other documentation required by the circumstances of the particular company, and
-* evidence of payment of the applicable registration fee.
+* evidence of payment of the registration fee: **RSD 8,000** for registering the founding of a company, including registration of the documents (APR fee page).
 
 The documentation submitted through APR's electronic system must comply with the applicable requirements for electronic documents and digitalisation of documents originally created in paper form.
 
@@ -208,7 +212,7 @@ A Serbian DOO is also subject to the rules concerning the registration of its **
 
 The beneficial owner must be identified in accordance with Serbian regulations and the required supporting documentation must be provided or retained as prescribed.
 
-If the beneficial owner has not already been registered through the available integrated registration procedure, the registration must be completed within the applicable statutory deadline.
+Since 1 October 2023 the electronic founding application for a company can also record the beneficial owner in the same filing (APR founding instructions). If the founder does not use that option, the company's legal representative must record the beneficial owner separately within the statutory deadline.
 
 The fact that the company's shareholder is already registered with APR should not be confused with the separate obligation concerning the Ultimate Beneficial Owner.
 
@@ -271,7 +275,9 @@ For this reason, the taxation model should be analysed **before registration**, 
 
 The registration procedure for an entrepreneur is generally simpler than the incorporation procedure for a DOO.
 
-Unlike incorporation of a DOO, entrepreneur registration is not restricted exclusively to electronic submission.
+Unlike incorporation of a DOO, entrepreneur registration is not restricted exclusively to electronic submission. The application can be filed in person at APR or by post, or electronically with a qualified electronic certificate (possible since 1 January 2018). The APR fee for registering an entrepreneur is **RSD 2,500** (APR entrepreneur fee and founding pages).
+
+Registration runs through APR's one-stop system: with the registration decision the entrepreneur also gets a tax identification number (PIB) and can file, in the same application, for lump-sum taxation, for paying a personal salary, or for VAT (APR entrepreneur founding instructions).
 
 For a straightforward registration of a foreign individual, the passport identification page and the required registration information form the basis of the procedure, together with any additional documentation required by the circumstances of the particular case.
 
@@ -321,7 +327,7 @@ This is why it is advisable to consider the entire structure before submitting t
 
 Establishing a business in Serbia as a foreign citizen is possible both through a **Limited Liability Company (DOO)** and, where appropriate, by registering as an **Entrepreneur (Preduzetnik)**.
 
-The entrepreneur registration procedure is generally simpler, while establishing a DOO requires an incorporation document, determination of the company's management and ownership structure and an exclusively electronic incorporation procedure.
+The entrepreneur registration procedure is generally simpler, while establishing a DOO requires an incorporation document, determination of the company's management and ownership structure and an exclusively electronic incorporation procedure. The 2026 APR fees are RSD 8,000 for a DOO and RSD 2,500 for an entrepreneur.
 
 Foreign founders establishing a DOO must also decide whether they will obtain their own qualified electronic signature or use an authorised attorney to handle the electronic registration.
 
@@ -333,9 +339,9 @@ Most importantly, **successful registration with APR does not automatically mean
 
 Planning these steps before incorporation can save considerable time and prevent unnecessary complications later.
 
-*This article provides general information based on Serbian registration rules and practical experience with foreign founders. Individual registration, banking, tax, immigration and compliance requirements may differ depending on the founder's citizenship, residence, business activity and other circumstances.*
+*This article provides general information based on Serbian registration rules. Individual registration, banking, tax, immigration and compliance requirements may differ depending on the founder's citizenship, residence, business activity and other circumstances.*
 
-> Contributed by Andrija Eminovic, 21041987. 2026 figures and sources added by the OpenAccountants team on 30 October 2026.
+> Built by Michael Cutajar and the OpenAccountants team.
 
 ## Sources
 
@@ -347,8 +353,12 @@ Planning these steps before incorporation can save considerable time and prevent
 | Zakon o doprinosima za obavezno socijalno osiguranje (Law on Contributions), Ministry of Finance consolidated text: Art. 44 | https://www.mfin.gov.rs/propisi/zakon-o-doprinosima-za-obavezno-socijalno-osiguranje | 2026-10-30 |
 | Minister of Finance, lowest monthly contribution base for 2026, RSD 51,297 | https://www.mfin.gov.rs//upload/media/nATlw2_69429ec84247a.docx | 2026-10-30 |
 | Zakon o porezu na dodatu vrednost (VAT Law), Ministry of Finance consolidated text to 80/2026: Art. 38 | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dodatu-vrednost2 | 2026-10-30 |
+| APR, company fees: founding registration RSD 8,000 (apr.gov.rs blocks automated and browser access from our network, so read from the Internet Archive capture of 17 February 2026) | https://web.archive.org/web/20260217232353/http://www.apr.gov.rs/привредна-друштва/накнаде/накнаде.1070.html | 2026-10-30 |
+| APR, entrepreneur fees: founding registration RSD 2,500 (Internet Archive capture of 17 January 2026) | https://web.archive.org/web/20260117213611/https://apr.gov.rs/регистри-/предузетници/накнаде.4862.html | 2026-10-30 |
+| APR, company founding instructions: electronic-only filing from 17 May 2023 (Law on the Registration Procedure with APR, Art. 9(2)), documents, certified translation, Apostille, beneficial owner in the founding filing from 1 October 2023 (Internet Archive capture of 17 February 2026) | https://web.archive.org/web/20260217232227/https://www.apr.gov.rs/регистри-/привредна-друштва/упутства/оснивање.1059.html | 2026-10-30 |
+| APR, entrepreneur founding instructions: paper or electronic filing, one-stop system (Internet Archive capture of 19 February 2026) | https://web.archive.org/web/20260219073956/https://www.apr.gov.rs/регистри/предузетници/упутства/оснивање.1083.html | 2026-10-30 |
 
-Not yet confirmed: APR registration fees for a DOO and an entrepreneur in 2026, and whether the fee differs for electronic filing (apr.gov.rs blocked access on 2026-10-30, so no fee is stated here); that DOO incorporation must be filed electronically while entrepreneur registration may also be filed on paper (this is in the law on the APR registration procedure, which was not read); the deadline for registering the beneficial owner in the Central Register and whether APR's integrated procedure registers it at incorporation (the Law on the Central Register of Beneficial Owners was not read); the qualified electronic certificate providers and their conditions for foreigners; the conditions for an entrepreneur's personal salary (lična zarada), which serbia-tax-optimization places in Personal Income Tax Law Article 37a.
+Not yet confirmed: whether the entrepreneur fee differs between paper and electronic filing (the APR page gives one amount); the deadline for recording the beneficial owner when it is not done in the founding filing (APR's page still cites the 2018 Law on the Central Register of Beneficial Owners and its 15-day deadline, but that law was replaced in 2025 and the new law was not read); the text of the Law on the Registration Procedure with APR itself (Article 9(2) is cited through APR's own page); the qualified electronic certificate providers and their conditions for foreigners; the conditions for an entrepreneur's personal salary (lična zarada), which serbia-tax-optimization places in Personal Income Tax Law Article 37a.
 
 <!-- openaccountants-cta-block -->
 
