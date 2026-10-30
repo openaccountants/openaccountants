@@ -156,8 +156,8 @@ In the start-up phase, a loss in the business reduces employment or rental incom
 
 | Strategy | Detail |
 | --- | --- |
-| Defer invoicing | Under estimación directa, income and expenses follow accrual. Cash timing matters for IVA and for the quarterly payments. For módulos the yield does not depend on invoice timing. |
-| Accelerate expenses | Business income and expenses are allocated by the corporate tax rules, so by accrual (LIRPF art 14.1.b). Expenses that accrue before 31 December count in that year; paying in advance does not on its own move the expense. |
+| Defer invoicing | Under estimación directa, income and expenses follow accrual unless the cash criterion below is chosen. IVA falls due when the supply is made, or earlier when an advance payment is received (LIVA art 75), not when the invoice is paid, unless the IVA cash scheme is chosen (Section 7). For módulos the yield does not depend on invoice timing. |
+| Accelerate expenses | Business income and expenses are allocated by the corporate tax rules, so by accrual (LIRPF art 14.1.b). Expenses that accrue before 31 December count in that year; paying in advance does not on its own move the expense. Exception: an autónomo who does not have to keep Commercial Code accounts (simplified direct assessment, professionals, módulos) may opt in the return for the cash criterion (cobros y pagos) for all activities, kept for at least three years; then income counts when collected and expenses when paid, and a December payment does move the expense (RIRPF art 7.2). |
 | Plan de pensiones contributions | Contributions reduce the general base. Make them before 31 December (Section 9). |
 | Ganancias/pérdidas patrimoniales timing | Realise losses before year end to offset gains (Section 5). A loss on listed shares is not allowed while homogeneous shares bought within two months before or after the sale are still held; for unlisted shares the window is one year (LIRPF art 33.5.f-g). |
 | Retenciones management | Professionals invoicing Spanish businesses suffer 15% withholding. A new professional can use 7% in the start year and the next two, if they had no professional activity in the year before (RIRPF art 95.1). |
@@ -299,7 +299,7 @@ Detail: [es-irpf-deductions](es-irpf-deductions.md).
 | September | Review the IVA position: missed input IVA, pro rata. |
 | October | File Modelo 303 + Modelo 130 for Q3 by the 20th. Estimate full-year income. |
 | November | Use the pension limits (EUR 1,500 + EUR 4,250 for autónomo plans). Realise capital losses to offset gains, watching the anti-wash rule. |
-| December | Bring forward deductible expenses that will accrue this year. Make charitable donations. Buy and bring into use assets to depreciate. |
+| December | Bring forward deductible expenses that will accrue this year (or pay them, under the cash criterion of RIRPF art 7.2). Make charitable donations. Buy and bring into use assets to depreciate. |
 
 ## Section 12 -- Cash Impact Examples
 
@@ -371,9 +371,9 @@ The examples use a combined marginal rate of 37% as an assumption. The real marg
 | Source | URL | Read on |
 | --- | --- | --- |
 | Ley 35/2006 del IRPF, consolidated text (last update 07/10/2026), arts 12, 28-33, 48-52, 63, 66, 68, 72, 76, 84, 93, 97, DT 12, DT 32 | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 | 2026-10-30 |
-| Real Decreto 439/2007 (RIRPF), consolidated text, arts 9, 28, 30, 90, 95, 109-111 | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 | 2026-10-30 |
+| Real Decreto 439/2007 (RIRPF), consolidated text, arts 7, 9, 28, 30, 90, 95, 109-111 | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 | 2026-10-30 |
 | Ley 27/2014 del Impuesto sobre Sociedades, consolidated text, arts 12.3, 18, 29, 101, DT 44 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 | 2026-10-30 |
-| Ley 37/1992 del IVA, consolidated text, arts 90, 91, 95, 161, 163 bis | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 | 2026-10-30 |
+| Ley 37/1992 del IVA, consolidated text, arts 75, 90, 91, 95, 161, 163 bis | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 | 2026-10-30 |
 | Real Decreto 1624/1992 (RIVA), consolidated text, arts 41, 71 | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 | 2026-10-30 |
 | Ley 58/2003 General Tributaria, consolidated text, arts 15, 16, 191, 201, 206 bis | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 | 2026-10-30 |
 | Real Decreto 1065/2007 (Reglamento general de gestión e inspección), art 33 (Modelo 347 threshold) | https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984 | 2026-10-30 |
@@ -389,7 +389,7 @@ The examples use a combined marginal rate of 37% as an assumption. The real marg
 | AEAT, Modelo 390 filing period | https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-390-iva-declaracion-resumen-anual_/plazos-presentacion.html | 2026-10-30 |
 | AEAT, Renta 2025 campaign page | https://sede.agenciatributaria.gob.es/Sede/Renta.html | 2026-10-30 |
 
-Not yet confirmed: (1) the statutory basis for the 2026 reduced starting fee (tarifa plana): the law leaves the amount to the State Budget Law and no 2026 budget provision was found; the EUR 88.64 used here is Social Security's published administrative figure (es-social-contributions takes the same approach). (2) No statutory sentence was quoted for the deduction of the autónomo's own RETA contributions; it rests on the pack's es-autonomous-worker skill. (3) The old file's "typical combined rate" column (about 19% to 54%) and its ranking of communities (Madrid lowest; Cataluña, Valencia and Extremadura among the highest) have no single official source and were removed; use the community scales in es-income-tax. (4) The old rule of thumb to incorporate once profits pass about EUR 40,000 to 50,000 has no official source. (5) The old file's "AEAT monitors gaps under 2-3 years" for the reduced fee is not an official statement; only the statutory two-year and three-year rules are given. (6) The 2027 dates for the Renta campaign, Modelo 347 and Modelo 390 are not yet published. (7) The day-count rule for first-year depreciation was not read in the IS regulation.
+Not yet confirmed: (1) the statutory basis for the 2026 reduced starting fee (tarifa plana): the law leaves the amount to the State Budget Law and no 2026 budget provision was found; the EUR 88.64 used here is Social Security's published administrative figure (es-social-contributions takes the same approach). (2) No statutory sentence was quoted for the deduction of the autónomo's own RETA contributions; it rests on the pack's es-autonomous-worker skill. (3) The old file's "typical combined rate" column (about 19% to 54%) and its ranking of communities (Madrid lowest; Cataluña, Valencia and Extremadura among the highest) have no single official source and were removed; use the community scales in es-income-tax. (4) The old rule of thumb to incorporate once profits pass about EUR 40,000 to 50,000 has no official source. (5) The old file's "AEAT monitors gaps under 2-3 years" for the reduced fee is not an official statement; only the statutory two-year and three-year rules are given. (6) The 2027 dates for the Renta campaign, Modelo 347 and Modelo 390 are not yet published. (7) The day-count rule for first-year depreciation was not read in the IS regulation. (8) The old file's 40% figure for the pre-2007 pension reduction is in the 2004 IRPF text (the art 17 that LIRPF DT 12 refers to), which was not read; only the reference is given.
 
 ## Disclaimer
 
