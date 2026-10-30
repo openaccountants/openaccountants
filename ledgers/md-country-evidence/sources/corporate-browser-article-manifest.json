@@ -1599,6 +1599,41 @@
       "format": "Exact JSON returned by read-only browser DOM observation",
       "sha256": "db804cbe44f8c7a5d05f71908f0104286f9630b9ec67e12de272d2d576f4fe53"
     },
+    "IND-HG693-ANNEX2-PART1": {
+      "article": "IND-HG693-ANNEX2-PART1",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T19:23:02.241Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "54111654940c3415987f2c1068931db5a1c68908cc7e6424c31849a5160471d3"
+    },
+    "IND-HG693-ANNEX2-PART2": {
+      "article": "IND-HG693-ANNEX2-PART2",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T19:23:02.241Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "7b613a5a5ade52d07e3c26f233a40620fe50c60c6ee49466b21d578e1209e26b"
+    },
+    "IND-HG693-ANNEX2-PART3": {
+      "article": "IND-HG693-ANNEX2-PART3",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T19:23:06.383Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "366fcdcb0b31a136e92e34e7d9120707476831a8f3d0da6bc498bb919120ddc7"
+    },
+    "IND-CAPITAL-ORDER40": {
+      "article": "IND-CAPITAL-ORDER40",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=105006&lang=ro",
+      "observed_utc": "2026-10-30T19:23:06.383Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "9cfdba27133ba92782b5ee2eebb91aad2249a6b30f0297c3d98a84e518241dfe"
+    },
+    "IND-HG693-JAN-DEDUCTIONS": {
+      "article": "IND-HG693-JAN-DEDUCTIONS",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=150441&lang=ro",
+      "observed_utc": "2026-10-30T19:24:53.045Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "259b30d29467db0d5853bdc3dcfe389da0f41a500d028109c9d4f94e7b0ffa44"
+    },
     "20": {
       "article": "20",
       "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
@@ -1661,6 +1696,13 @@
       "observed_utc": "2026-10-30T19:14:49.204Z",
       "format": "Consecutive exact bounded DOM JSON slices joined without overlap or omission",
       "sha256": "34db5fa1ea22a47d814890a3a00749f688942b6d067fd95513226c2e9c80e15c"
+    },
+    "IND-HG693-ANNEX2": {
+      "article": "IND-HG693-ANNEX2",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T19:23:02.241Z",
+      "format": "Consecutive exact bounded DOM JSON slices joined without overlap or omission",
+      "sha256": "c74be8a7d532db9b0d348079f89789cf38ba3005956dd50a442e59e4b5f35396"
     }
   }
 }

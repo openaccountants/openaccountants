@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 0.9
+version: 1.0
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -8,7 +8,7 @@ covered_by:
   TP: md-transfer-pricing
   XB: md-cross-border
 partial:
-  IT-IND: "2026 individual-income writer draft and figure ledger prepared; commencement, procedure and form conflicts remain explicit; whole-country independent review is pending."
+  IT-IND: "2026 individual-income writer draft and ledger include Government deduction evidence, January/June education-proof changes, the personal-exemption gate and capital allocation; remaining commencement, annex, annual-relief and form conflicts stay explicit; whole-country independent review is pending."
   IT-CORP: "2026 corporate writer draft and ledger include ordinary Government representation, insurance, transport/food, development and donation-documentation methods; travel settlement and ordinary asset-life/depreciation/repair/disposal methods are supplied, while unavailable travel-rate/asset-life tables, approved asset/return fields and capped-base procedures, dividend-deferral implementation and independent whole-country review remain open."
   VAT: "2026 VAT writer draft and figure ledger prepared with the current 24-box VAT12 mapping; commencement, prorata-rounding and ordinary source/procedure gaps remain explicit; whole-country independent review is pending."
   SC: "2026 social/medical writer draft and ledger include State-insured categories/status procedure, selected 2026 comparisons and the service medical top-up; direct tariff annex evidence, ordinary reporting/refund forms, remaining implementation/commencement gaps and whole-country independent review remain open."
