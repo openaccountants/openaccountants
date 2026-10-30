@@ -40,7 +40,7 @@ The laws below are read from the consolidated texts on the Portal Jurídic d'And
 - **Late payment interest (interès moratori).** 4.05% for 2026. The separate legal interest rate is 3.24% _(Llei 1/2026 del pressupost per a l'exercici del 2026, art 17)_.
 - **Wealth, inheritance and gift tax.** Andorra has none. The Govern's list of Andorran taxes names IRPF, IGI, IS and IRNR, plus "Altres impostos": the empty-housing tax (IHB), the insurance services tax (ISI), the property transfer tax (ITP), the property gains tax (plusvàlua), special taxes on alcohol, tobacco and fuel, and the gambling tax. None of these is a tax on net wealth or on inheritances and gifts as such _(Govern d'Andorra, "Altres impostos")_.
 - **Property transfer tax (ITP).** 4% of the real value of a property transfer, paid by the buyer: 1% to the Govern and 3% to the parish _(Govern d'Andorra, "Altres impostos", ITP)_. The parish surcharge may be set between 0.50% and 3% _(Llei 10/2003 de les finances comunals, art 34(3))_.
-- **Communal (parish) taxes.** Each of the seven parishes (comuns) sets five local taxes by ordinance, within ranges fixed by law _(Llei 10/2003 de les finances comunals, art 28)_:
+- **Communal (parish) taxes.** Andorra has seven parishes _(Constitució, art 1(5))_. Each parish (comú) sets five local taxes by ordinance, within ranges fixed by law _(Llei 10/2003 de les finances comunals, art 28)_:
   - foc i lloc (residence tax): EUR 5 to EUR 50 a year for each resident aged 18 to 65 _(art 29(2), (4))_;
   - property tax: EUR 0.30 to EUR 3 per m² built; EUR 0 to EUR 0.75 per m² of unbuilt land _(art 30(6))_;
   - tax on rental income: 0.4% to 4% of the rent accrued in the year _(art 31(6))_;
@@ -74,6 +74,7 @@ The laws below are read from the consolidated texts on the Portal Jurídic d'And
 | Llei 1/2026 del pressupost per a l'exercici del 2026, art 17 and budget heading 420 | https://www.portaljuridicandorra.ad/L2026001 | 2026-10-30 |
 | Llei 10/2003 de les finances comunals, consolidated text, arts 28 to 32 bis and 34 | https://www.portaljuridicandorra.ad/L2003010 | 2026-10-30 |
 | Llei 20/2007 de societats anònimes i de responsabilitat limitada, consolidated text, art 14 | https://www.portaljuridicandorra.ad/L2007020 | 2026-10-30 |
+| Constitució del Principat d'Andorra, art 1(5) (the seven parishes) | https://www.portaljuridicandorra.ad/Constitucio | 2026-10-30 |
 | Govern d'Andorra, Impostos a Andorra: Altres impostos (IHB, ISI, ITP, plusvàlua, special taxes, gambling) | https://www.govern.ad/ca/tematiques/impostos-taxes-i-duana/impostos-en-andorra/altres-impostos | 2026-10-30 |
 | Govern d'Andorra, Impostos a Andorra (list of the main taxes) | https://www.govern.ad/ca/tematiques/impostos-taxes-i-duana/impostos-a-andorra | 2026-10-30 |
 
