@@ -1,0 +1,193 @@
+{
+  "status": "PASS five new return arithmetic controls and two non-halfway rounding observations; independent legal review PENDING",
+  "cases": [
+    {
+      "name": "SME positive current-categoryA base",
+      "assumed_inputs": {
+        "row1_income": 1000000,
+        "row2_article20": 30000,
+        "row3_priorperiod_returns": 20000,
+        "row4_priorperiod_discounts": 10000,
+        "row5_fx_income": 30000,
+        "allowed_foreign_credit": 400,
+        "quarterly_paid": 30000
+      },
+      "actual": {
+        "row6": "910000",
+        "row8": "36400.00",
+        "row10": "36000.00",
+        "separate_account_balance": "6000.00"
+      },
+      "expected": {
+        "row6": 910000,
+        "row8": 36400,
+        "row10": 36000,
+        "separate_account_balance": 6000
+      },
+      "scope": "Current eligible chapter7^1/categoryA; all exclusions disjoint; credit already tested underCode82; no retiredcategoryB or portal-version claim",
+      "status": "PASS ARITHMETIC ONLY; legal assumptions await independent review"
+    },
+    {
+      "name": "SME negative raw base reported as zero",
+      "assumed_inputs": {
+        "row1_income": 10000,
+        "row2_article20": 20000,
+        "row3_priorperiod_returns": 0,
+        "row4_priorperiod_discounts": 0,
+        "row5_fx_income": 0,
+        "allowed_foreign_credit": 0,
+        "quarterly_paid": 0
+      },
+      "actual": {
+        "row6": "0",
+        "row8": "0.00",
+        "row10": "0.00",
+        "separate_account_balance": "0.00"
+      },
+      "expected": {
+        "row6": 0,
+        "row8": 0,
+        "row10": 0,
+        "separate_account_balance": 0
+      },
+      "scope": "Current eligible chapter7^1/categoryA; all exclusions disjoint; credit already tested underCode82; no retiredcategoryB or portal-version claim",
+      "status": "PASS ARITHMETIC ONLY; legal assumptions await independent review"
+    },
+    {
+      "name": "DAP24 correct professional row numbers",
+      "assumed_inputs": {
+        "professional_income": 500000,
+        "professional_expenses": 200000,
+        "other_income": 0,
+        "eligible_unused_personal": 29700,
+        "eligible_prior_loss": 20300,
+        "allowed_foreign_credit": 1000,
+        "qualifying_payments": 25000
+      },
+      "actual": {
+        "row040": "300000",
+        "row070": "29700",
+        "row080": "270300",
+        "row090": "20300",
+        "row100": "250000",
+        "row130": "30000.00",
+        "row140": "1000",
+        "row150": "29000.00",
+        "row160": "25000",
+        "row170": "4000.00",
+        "row180": "0"
+      },
+      "expected": {
+        "row040": 300000,
+        "row070": 29700,
+        "row080": 270300,
+        "row090": 20300,
+        "row100": 250000,
+        "row130": 30000,
+        "row150": 29000,
+        "row170": 4000,
+        "row180": 0
+      },
+      "scope": "Actualchapter10^1individual; all conditions expressly assumed; row070relief must not be confused withUNIF070income; noportal/halfway-rounding convention inferred",
+      "status": "PASS ARITHMETIC ONLY; legal assumptions await independent review"
+    },
+    {
+      "name": "UNIF25 A_individual_entrepreneur",
+      "assumed_inputs": {
+        "eligible_category": "A_individual_entrepreneur",
+        "profit": 200000,
+        "other_income": 0,
+        "unused_eligible_relief": 29700,
+        "eligible_prior_loss": 20300,
+        "credit": 0,
+        "instalments": 15000
+      },
+      "actual": {
+        "row040": "200000",
+        "row0701": "29700",
+        "row070": "170300",
+        "row080": "20300",
+        "row090": "150000",
+        "row120": "18000.00",
+        "row150": "18000.00",
+        "row160": "0",
+        "row180": "15000",
+        "row190": "3000.00",
+        "row200": "0"
+      },
+      "expected": {
+        "row0701": 29700,
+        "row070": 170300,
+        "row080": 20300,
+        "row090": 150000,
+        "row120": 18000,
+        "row190": 3000,
+        "row200": 0
+      },
+      "scope": "Eligible whole-yearUNIFpopulation, currentlegalcategory, no other income/relief reuse; income-tax part only, not social/payroll/otherunifiedtaxes",
+      "status": "PASS ARITHMETIC ONLY; legal assumptions await independent review"
+    },
+    {
+      "name": "UNIF25 B_peasant_farm",
+      "assumed_inputs": {
+        "eligible_category": "B_peasant_farm",
+        "profit": 200000,
+        "other_income": 0,
+        "unused_eligible_relief": 29700,
+        "eligible_prior_loss": 20300,
+        "credit": 0,
+        "instalments": 10000
+      },
+      "actual": {
+        "row040": "200000",
+        "row0701": "29700",
+        "row070": "170300",
+        "row080": "20300",
+        "row090": "150000",
+        "row120": "10500.00",
+        "row150": "10500.00",
+        "row160": "0",
+        "row180": "10000",
+        "row190": "500.00",
+        "row200": "0"
+      },
+      "expected": {
+        "row0701": 29700,
+        "row070": 170300,
+        "row080": 20300,
+        "row090": 150000,
+        "row120": 10500,
+        "row190": 500,
+        "row200": 0
+      },
+      "scope": "Eligible whole-yearUNIFpopulation, currentlegalcategory, no other income/relief reuse; income-tax part only, not social/payroll/otherunifiedtaxes",
+      "status": "PASS ARITHMETIC ONLY; legal assumptions await independent review"
+    }
+  ],
+  "rounding_observations": [
+    {
+      "assumed_field_value": "12345.6",
+      "nearest_whole_leu": "12346",
+      "scope": "Non-halfway values only; no tie or computation-stage convention certified"
+    },
+    {
+      "assumed_field_value": "12345.4",
+      "nearest_whole_leu": "12345",
+      "scope": "Non-halfway values only; no tie or computation-stage convention certified"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-SIMM24-FORM-DOWNLOADED-20261030.json": "442e18a6bccb99cb3dc1f54050af5e8fb7a9e168270c15dd5738a234c1a5c511",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-SIMM24-INSTRUCTIONS-DOWNLOADED-20261030.json": "d78c925930aef998a1ee63bc682fdf68eb954d67f346128e151885010dd371e3",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-DAP24-FORM-DOWNLOADED-20261030.json": "f5bbe6738d72841978606229cc62d6fab55fe37222981ae29b5b869daf5d45c3",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-DAP24-INSTRUCTIONS-DOWNLOADED-20261030.json": "a8bed4d1ed344bf8718eb149367a166bba0cc69af4973a01d605a1d413279e35",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-FORM-CORE-DOWNLOADED-20261030.json": "3a372d41b85dceaae38ec4cdbcdab134a4ce95d7a13ef8b94c5949dd8acfb776",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-INSTRUCTIONS-CORE-DOWNLOADED-20261030.json": "16855ea51a23911242640e3d1c6529a6f712b286eea2d5f052c7411382d9f90b"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/md-corporate-income-tax.md": "7b2e4c22eb4226b9eb536c07d2df293b04564392768b667ae4724bf62f0e7389",
+    "skills/international/moldova/moldova-income-tax.md": "0cc404f485cc8fd72ec140e74fd5e4b60559c2f0388703511409b4c4e0037861"
+  },
+  "read_date": "2026-10-30",
+  "not_certified": "Live portal acceptance/field names, half-way rounding/stage,retiredmetal-tradingcategory,remainingUNIFtaxsections,defectiveDAP24reliefheader"
+}

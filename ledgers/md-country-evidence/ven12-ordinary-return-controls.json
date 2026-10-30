@@ -154,10 +154,10 @@
   ],
   "source_files": {
     "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-FORM-SELECTED-20261030.json": "59e584fc96b37d916f4e272e1a4ad2eb6adb74f92d731e4865839d8c069cdb24",
-    "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-INSTRUCTIONS-SELECTED-20261030.json": "c03220153b7e99ff7593a7172a7c919205ec1faae5ccde1d0374506cf9aae931",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-INSTRUCTIONS-SELECTED-20261030.json": "22486ebaf2acf8db036695d1c6e169b8bf8d761a23e2715c162ca1d228a1cedc",
     "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-DEDUCTIONS.json": "31d08d258b7555513ef22c1a9607689464c0b5c95a5ab8160244bb3154a04ad6"
   },
   "Guide_path": "skills/international/moldova/md-corporate-income-tax.md",
-  "Guide_sha256": "254e608c51d05b53f033e9e74c803c12a54c485f8a378d763193750e3e877731",
+  "Guide_sha256": "7b2e4c22eb4226b9eb536c07d2df293b04564392768b667ae4724bf62f0e7389",
   "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
 }

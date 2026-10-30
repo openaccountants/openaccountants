@@ -10,14 +10,20 @@
     {
       "kind": "form",
       "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/Anexa%20n1%20OMF%2060.docx",
-      "retrieval_status": "Bounded read-only curl attempt30October2026:HTTP403;no file obtained;no active download job",
-      "claimed_full_attachment_verification": false
+      "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+      "claimed_full_attachment_verification": false,
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/dap24-form.docx",
+      "binary_sha256": "9c625b836c12a45046e8d06e6d696c378ebfb1da97cf284538ccb23ae983dc50",
+      "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-DAP24-FORM-DOWNLOADED-20261030.json"
     },
     {
       "kind": "instructions",
       "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/Anexa%20n2%20OMF60.docx.rtf",
-      "retrieval_status": "Bounded read-only curl attempt30October2026:HTTP403;no file obtained;no active download job",
-      "claimed_full_attachment_verification": false
+      "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+      "claimed_full_attachment_verification": false,
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/dap24-instructions.rtf",
+      "binary_sha256": "598246fcf839772f7f928a7fdb2571bf3baf115be1d1efe380e40067b05828d5",
+      "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-DAP24-INSTRUCTIONS-DOWNLOADED-20261030.json"
     }
   ]
 }

@@ -10,14 +10,20 @@
     {
       "kind": "form",
       "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx",
-      "retrieval_status": "boundedcurl403;notretrieved",
-      "claimed_full_attachment_verification": false
+      "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+      "claimed_full_attachment_verification": false,
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/unif25-form.docx",
+      "binary_sha256": "015f061d7c02b690dd28ff0e18fe116a8e492b18511110c8110e2ffca98bc298",
+      "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-FORM-CORE-DOWNLOADED-20261030.json"
     },
     {
       "kind": "instructions",
       "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx",
-      "retrieval_status": "boundedcurl403;notretrieved",
-      "claimed_full_attachment_verification": false
+      "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+      "claimed_full_attachment_verification": false,
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/unif25-instructions.docx",
+      "binary_sha256": "acffef2241f3e1a1bba5460159569e06675b1c9bbdd9e4a98f5ea9de271b714b",
+      "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-INSTRUCTIONS-CORE-DOWNLOADED-20261030.json"
     }
   ]
 }

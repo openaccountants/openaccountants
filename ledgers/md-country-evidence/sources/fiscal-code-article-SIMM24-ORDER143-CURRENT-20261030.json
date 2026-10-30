@@ -10,14 +10,20 @@
     {
       "kind": "form",
       "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/mo%20501%20ro/an_1_143_md.docx",
-      "retrieval_status": "boundedcurl403;notretrieved",
-      "claimed_full_attachment_verification": false
+      "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+      "claimed_full_attachment_verification": false,
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/simm24-form.docx",
+      "binary_sha256": "722facc7e364027926bed189a3911e7e802cac574613e79fb2119bdf54d6bba2",
+      "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-SIMM24-FORM-DOWNLOADED-20261030.json"
     },
     {
       "kind": "instructions",
       "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/mo%20501%20ro/an_2_143_md.docx",
-      "retrieval_status": "boundedcurl403;notretrieved",
-      "claimed_full_attachment_verification": false
+      "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+      "claimed_full_attachment_verification": false,
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/simm24-instructions.docx",
+      "binary_sha256": "ae76dcb89c1b5f81489f36b93d92e7687666c0b9daa93d1445796ddce7d5a078",
+      "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-SIMM24-INSTRUCTIONS-DOWNLOADED-20261030.json"
     }
   ]
 }

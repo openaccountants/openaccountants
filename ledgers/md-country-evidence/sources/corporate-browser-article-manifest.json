@@ -2225,14 +2225,20 @@
         {
           "kind": "form",
           "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx",
-          "retrieval_status": "boundedcurl403;notretrieved",
-          "claimed_full_attachment_verification": false
+          "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+          "claimed_full_attachment_verification": false,
+          "binary_path": "ledgers/md-country-evidence/sources/attachments/unif25-form.docx",
+          "binary_sha256": "015f061d7c02b690dd28ff0e18fe116a8e492b18511110c8110e2ffca98bc298",
+          "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-FORM-CORE-DOWNLOADED-20261030.json"
         },
         {
           "kind": "instructions",
           "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx",
-          "retrieval_status": "boundedcurl403;notretrieved",
-          "claimed_full_attachment_verification": false
+          "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+          "claimed_full_attachment_verification": false,
+          "binary_path": "ledgers/md-country-evidence/sources/attachments/unif25-instructions.docx",
+          "binary_sha256": "acffef2241f3e1a1bba5460159569e06675b1c9bbdd9e4a98f5ea9de271b714b",
+          "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-INSTRUCTIONS-CORE-DOWNLOADED-20261030.json"
         }
       ]
     },
@@ -2247,14 +2253,20 @@
         {
           "kind": "form",
           "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/mo%20501%20ro/an_1_143_md.docx",
-          "retrieval_status": "boundedcurl403;notretrieved",
-          "claimed_full_attachment_verification": false
+          "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+          "claimed_full_attachment_verification": false,
+          "binary_path": "ledgers/md-country-evidence/sources/attachments/simm24-form.docx",
+          "binary_sha256": "722facc7e364027926bed189a3911e7e802cac574613e79fb2119bdf54d6bba2",
+          "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-SIMM24-FORM-DOWNLOADED-20261030.json"
         },
         {
           "kind": "instructions",
           "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/mo%20501%20ro/an_2_143_md.docx",
-          "retrieval_status": "boundedcurl403;notretrieved",
-          "claimed_full_attachment_verification": false
+          "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+          "claimed_full_attachment_verification": false,
+          "binary_path": "ledgers/md-country-evidence/sources/attachments/simm24-instructions.docx",
+          "binary_sha256": "ae76dcb89c1b5f81489f36b93d92e7687666c0b9daa93d1445796ddce7d5a078",
+          "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-SIMM24-INSTRUCTIONS-DOWNLOADED-20261030.json"
         }
       ]
     },
@@ -2269,14 +2281,20 @@
         {
           "kind": "form",
           "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/Anexa%20n1%20OMF%2060.docx",
-          "retrieval_status": "observedofficiallink;downloadnotattempted",
-          "claimed_full_attachment_verification": false
+          "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+          "claimed_full_attachment_verification": false,
+          "binary_path": "ledgers/md-country-evidence/sources/attachments/dap24-form.docx",
+          "binary_sha256": "9c625b836c12a45046e8d06e6d696c378ebfb1da97cf284538ccb23ae983dc50",
+          "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-DAP24-FORM-DOWNLOADED-20261030.json"
         },
         {
           "kind": "instructions",
           "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/Anexa%20n2%20OMF60.docx.rtf",
-          "retrieval_status": "observedofficiallink;downloadnotattempted",
-          "claimed_full_attachment_verification": false
+          "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+          "claimed_full_attachment_verification": false,
+          "binary_path": "ledgers/md-country-evidence/sources/attachments/dap24-instructions.rtf",
+          "binary_sha256": "598246fcf839772f7f928a7fdb2571bf3baf115be1d1efe380e40067b05828d5",
+          "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-DAP24-INSTRUCTIONS-DOWNLOADED-20261030.json"
         }
       ]
     },
@@ -2320,7 +2338,8 @@
         "validation/ven12-instructions-web-selected.txt",
         "validation/ven12-instructions-web-initial.txt"
       ],
-      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "writer_interpretation_correction_20261030": "The earlier metadata called both S-election2023-2025 and personal360000 text historical. CurrentCode33 retains the strict360000 threshold: the number is not obsolete. Full annual-income conditions in33(1^1) still apply. Only the S-election year range is stale for2026. Source text/hash and all original evidence remain unchanged."
     },
     "CORP-VEN12-FORM-SELECTED-20261030": {
       "article": "CORP-VEN12-FORM-SELECTED-20261030",
@@ -2370,6 +2389,150 @@
       "read_date": "2026-10-30",
       "format": "Exact JSON returned by read-only browser DOM observation; selected actual Law200/2010 operative4June2026 andJanuary2026 articles43^17/scope;future9December2026/1June2027versionsnotadopted;notcompleteimmigrationlaworregistrationformverification",
       "sha256": "4c9ec3dbd4daf76fdd3f7573b521b8d2512e279a6e8c919c4389285d8ce19922"
+    },
+    "CODE-73-REPEAL-20261030": {
+      "article": "CODE-73-REPEAL-20261030",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T22:34:11.183Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected actual FiscalCode30October2026header/currentchapter73repealed;notcompleteCodeorhistoricalrepealdateverification",
+      "sha256": "6be27983a0dc692254378b52b17359c4d494e3c41b59f2e852053c22a3518084"
+    },
+    "APPROVED-SIMM24-FORM-DOWNLOADED-20261030": {
+      "article": "APPROVED-SIMM24-FORM-DOWNLOADED-20261030",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/mo%20501%20ro/an_1_143_md.docx",
+      "sha256": "f7e01e4985988f462e33e4545d1c01d3a9370c0470b4766244fb829479b71e31",
+      "read_date": "2026-10-30",
+      "observed_utc": "2026-10-30T22:40:10.225616+00:00",
+      "format": "Actual approved-order annex downloaded through normal visible browser link and bounded download event, retained unchanged; text extracted from bundled LibreOffice render; no portal submission",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/simm24-form.docx",
+      "binary_sha256": "722facc7e364027926bed189a3911e7e802cac574613e79fb2119bdf54d6bba2",
+      "binary_size_bytes": 34147,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/simm24-form-render/simm24-form.pdf",
+      "rendered_pdf_sha256": "fc52e781a7c769b03a8a514f71167af3c93b13503cd2347facdfcfe80d4b7cd9",
+      "rendered_pages": 1,
+      "visually_read_rendered_pages": [
+        1
+      ],
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "read_scope": "Complete rendered form/instructions read and visually inspected; current statutory applicability and documented source inconsistencies control application.",
+      "source_inconsistencies": "The linked annex actually says SIMM24M and contains categoryB/chapter7^3; enacted order says SIMM24 and currentCodechapter7^3 is repealed. Only currently eligible chapter7^1/categoryA method is applied; no portal-name/version or live-categoryB validation claim."
+    },
+    "APPROVED-SIMM24-INSTRUCTIONS-DOWNLOADED-20261030": {
+      "article": "APPROVED-SIMM24-INSTRUCTIONS-DOWNLOADED-20261030",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/mo%20501%20ro/an_2_143_md.docx",
+      "sha256": "0443d9d9eeca580460cd29f491352bd085bef117ca7c807884fab4ae0ee17db1",
+      "read_date": "2026-10-30",
+      "observed_utc": "2026-10-30T22:40:10.331814+00:00",
+      "format": "Actual approved-order annex downloaded through normal visible browser link and bounded download event, retained unchanged; text extracted from bundled LibreOffice render; no portal submission",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/simm24-instructions.docx",
+      "binary_sha256": "ae76dcb89c1b5f81489f36b93d92e7687666c0b9daa93d1445796ddce7d5a078",
+      "binary_size_bytes": 35198,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/simm24-instructions-render/simm24-instructions.pdf",
+      "rendered_pdf_sha256": "a102f24da00e70ef7d5c6264f660b8e4f51eb9bb032430fe987ea831f36fc222",
+      "rendered_pages": 2,
+      "visually_read_rendered_pages": [
+        1,
+        2
+      ],
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "read_scope": "Complete rendered form/instructions read and visually inspected; current statutory applicability and documented source inconsistencies control application.",
+      "source_inconsistencies": "The linked annex actually says SIMM24M and contains categoryB/chapter7^3; enacted order says SIMM24 and currentCodechapter7^3 is repealed. Only currently eligible chapter7^1/categoryA method is applied; no portal-name/version or live-categoryB validation claim."
+    },
+    "APPROVED-DAP24-FORM-DOWNLOADED-20261030": {
+      "article": "APPROVED-DAP24-FORM-DOWNLOADED-20261030",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/Anexa%20n1%20OMF%2060.docx",
+      "sha256": "8f5a4686969bf86d9c90a25d4366910491f04c793db236362bb3d32037fa9c94",
+      "read_date": "2026-10-30",
+      "observed_utc": "2026-10-30T22:40:10.579582+00:00",
+      "format": "Actual approved-order annex downloaded through normal visible browser link and bounded download event, retained unchanged; text extracted from bundled LibreOffice render; no portal submission",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/dap24-form.docx",
+      "binary_sha256": "9c625b836c12a45046e8d06e6d696c378ebfb1da97cf284538ccb23ae983dc50",
+      "binary_size_bytes": 53581,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/dap24-form-render/dap24-form.pdf",
+      "rendered_pdf_sha256": "76a83f0b93025cf845c926e2df752f21afa56fb62c9647e899747198df0cedaa",
+      "rendered_pages": 3,
+      "visually_read_rendered_pages": [
+        1,
+        2,
+        3
+      ],
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "read_scope": "Complete rendered form/instructions read and visually inspected; current statutory applicability and documented source inconsistencies control application.",
+      "source_inconsistencies": "Instruction44 points to S/H columns10/11, whereas actual form/N-H and instructions49-51 use ordinary9,disabled10,total11; form total-header formula also includes its own column11. Do not propagate the self-reference or turn this into a different statutory relief. Named-field working paper and currentCode control; portal implementation remains untested.",
+      "parser_limitations": "pypdf warned that rotated text may be omitted; actual rendered pages in the declared read scope were visually inspected. No complete machine-text/portal equivalence claim."
+    },
+    "APPROVED-DAP24-INSTRUCTIONS-DOWNLOADED-20261030": {
+      "article": "APPROVED-DAP24-INSTRUCTIONS-DOWNLOADED-20261030",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/Anexa%20n2%20OMF60.docx.rtf",
+      "sha256": "d852e89d20362a06dfc7a5dd1a10d953de9e3fe78994afbd739b99f9cdd1a0d2",
+      "read_date": "2026-10-30",
+      "observed_utc": "2026-10-30T22:40:10.795293+00:00",
+      "format": "Actual approved-order annex downloaded through normal visible browser link and bounded download event, retained unchanged; text extracted from bundled LibreOffice render; no portal submission",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/dap24-instructions.rtf",
+      "binary_sha256": "598246fcf839772f7f928a7fdb2571bf3baf115be1d1efe380e40067b05828d5",
+      "binary_size_bytes": 246403,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/dap24-instructions-render/dap24-instructions.pdf",
+      "rendered_pdf_sha256": "9d618f550c4f7f5c8de055ff81f9d7a8c09617af4ec2d9d95bad5b7b52a0809d",
+      "rendered_pages": 4,
+      "visually_read_rendered_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "read_scope": "Complete rendered form/instructions read and visually inspected; current statutory applicability and documented source inconsistencies control application.",
+      "source_inconsistencies": "Instruction44 points to S/H columns10/11, whereas actual form/N-H and instructions49-51 use ordinary9,disabled10,total11; form total-header formula also includes its own column11. Do not propagate the self-reference or turn this into a different statutory relief. Named-field working paper and currentCode control; portal implementation remains untested."
+    },
+    "APPROVED-UNIF25-FORM-CORE-DOWNLOADED-20261030": {
+      "article": "APPROVED-UNIF25-FORM-CORE-DOWNLOADED-20261030",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx",
+      "sha256": "c34defde0d053b8019ba963f11888b9457b530040ce3aaf7151b4fa2f550db20",
+      "read_date": "2026-10-30",
+      "observed_utc": "2026-10-30T22:40:11.035397+00:00",
+      "format": "Actual approved-order annex downloaded through normal visible browser link and bounded download event, retained unchanged; text extracted from bundled LibreOffice render; no portal submission",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/unif25-form.docx",
+      "binary_sha256": "015f061d7c02b690dd28ff0e18fe116a8e492b18511110c8110e2ffca98bc298",
+      "binary_size_bytes": 40058,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/unif25-form-render/unif25-form.pdf",
+      "rendered_pdf_sha256": "8aae798caa3e0aa1babcfb001828b9b993d316fc2e3c442bf3c50ef48d08273f",
+      "rendered_pages": 4,
+      "visually_read_rendered_pages": [
+        1,
+        2
+      ],
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "read_scope": "Only form pages1-2 and completion instructions1-35 applied here. Complete4-page form/20-page instructions binaries retained. Remaining unified withholding/social/property/local-tax tables and later instruction annexes still require substantive verification.",
+      "parser_limitations": "pypdf warned that rotated text may be omitted; actual rendered pages in the declared read scope were visually inspected. No complete machine-text/portal equivalence claim."
+    },
+    "APPROVED-UNIF25-INSTRUCTIONS-CORE-DOWNLOADED-20261030": {
+      "article": "APPROVED-UNIF25-INSTRUCTIONS-CORE-DOWNLOADED-20261030",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx",
+      "sha256": "77a6608d69d1c1d651a1be214865fc97740b78c5f64b2e61b67fcbe110e90404",
+      "read_date": "2026-10-30",
+      "observed_utc": "2026-10-30T22:40:12.326602+00:00",
+      "format": "Actual approved-order annex downloaded through normal visible browser link and bounded download event, retained unchanged; text extracted from bundled LibreOffice render; no portal submission",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/unif25-instructions.docx",
+      "binary_sha256": "acffef2241f3e1a1bba5460159569e06675b1c9bbdd9e4a98f5ea9de271b714b",
+      "binary_size_bytes": 102664,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/unif25-instructions-render/unif25-instructions.pdf",
+      "rendered_pdf_sha256": "cf033e113446afa444f89dc25cace40a4e30e131c7efe883e487b153ae3d33c7",
+      "rendered_pages": 20,
+      "visually_read_rendered_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "read_scope": "Only form pages1-2 and completion instructions1-35 applied here. Complete4-page form/20-page instructions binaries retained. Remaining unified withholding/social/property/local-tax tables and later instruction annexes still require substantive verification."
     }
   }
 }

@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 2.4
+version: 2.5
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -31,11 +31,13 @@ The formation draft now maps the actual company application and instructions, BE
 
 Formation now distinguishes the actual founder tax-evasion declarations from the wider SRL administrator eligibility/representation rules, supplies the conditional Civil Code release right after delayed registration, and maps the sourced debutant-company and specified geographic registration-fee relief. The enacted free electronic beneficial-owner service clock and the noncommercial name-service qualifier are also reconciled. SME-law, accounting and income-tax populations remain separate. First-year/programme implementation, other named ordinary gaps and independent review remain open.
 
-The corporate and individual drafts now apply the actual enacted return-changeover rules: SIMM24 from reporting 2024, DAP24 from 2024 and UNIF25 from 2025, including each order’s early-obligation exception. Current legal taxpayer/regime and whole-year staffing/VAT conditions control form selection. Full approved attachment fields, completion instructions and filing implementation remain open; identifying the right form does not complete those gaps or the country review.
+The corporate and individual drafts now apply the actual enacted return-changeover rules: SIMM24 from reporting 2024, DAP24 from 2024 and UNIF25 from 2025, including each order’s early-obligation exception. Current legal taxpayer/regime and whole-year staffing/VAT conditions control form selection. Actual SIMM/UNIF25/DAP24 annexes have since been downloaded and retained. The methods and remaining read-scope/implementation gaps are stated below; attachment presence does not complete country review.
 
-The corporate draft now supplies selected actual VEN12 period/signature/main-reconciliation and representation-expense instructions, including inactive legacy rows and the capital-gain annex disabled from 2020. Current Code rules control the instruction’s stale S-election/personal-relief passages. Full attachments, remaining ordinary gaps and independent whole-country review remain open.
+The corporate draft now supplies selected actual VEN12 period/signature/main-reconciliation and representation-expense instructions, including inactive legacy rows and the capital-gain annex disabled from 2020. Current Code rules control the instruction’s stale S-election period; the printed 360,000 personal threshold agrees with current Code33. Full attachments, remaining ordinary gaps and independent whole-country review remain open.
 
 The social/medical draft now supplies the actual initial-registration population and four continuing conditions for the article-43^17 foreign-worker route, with January/current comparison and the loss-of-eligibility rule. Current law scope, actual registration/electronic-identity documents and the separate EU/Schengen interaction must still be established; neither foreign nationality nor remote work alone proves an insurance exemption. Remaining ordinary gaps and whole-country independent review keep coverage partial.
+
+Actual SIMM, UNIF25 and DAP24 form/instruction binaries are now retained. The corporate draft supplies the current category-A SME row method and identifies the printed retired-category/name mismatch. The individual draft supplies UNIF25 income-tax and DAP24 professional/expense/relief methods, including the DAP24 cross-reference/self-referential-header defects. UNIF25 later/unified-tax sections, portal/rounding implementation, other ordinary gaps and independent country review remain open. The 360,000 personal-exemption threshold is current, correcting the earlier writer description of it as stale.
 
 ## Domains
 
