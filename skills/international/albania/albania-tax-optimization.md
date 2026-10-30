@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Albania Tax Optimization Skill v0.4, tax year 2026.
 
-**Tier 2, source-cited draft. Sources: Law No. 29/2023 on income tax, consolidated to Law No. 81/2025 of 11.12.2025, as published by the General Directorate of Taxes ([tatime.gov.al](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf), read 2026-10-30); for the VAT threshold Council of Ministers Decision No. 953/2014 art. 11 ([tatime.gov.al](https://tatime.gov.al/wp-content/uploads/2026/09/VKM-Nr.953-date-29.12.2014-i-ndryshuar.pdf), read 2026-10-30); for contributions Council of Ministers Decision No. 77/2015 and the General Directorate of Taxes notice of 14.01.2026 (see Sources). Figures must agree with `albania-income-tax.md` / `albania-social-contributions.md`. NOT yet signed off by an Albanian tax adviser. Aggressive positions are never advised; every suggestion must be reviewed.**
+**Tier 2. Sources: Law No. 29/2023 on income tax, consolidated to Law No. 81/2025 of 11.12.2025, as published by the General Directorate of Taxes ([tatime.gov.al](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf), read 2026-10-30); for the VAT threshold Council of Ministers Decision No. 953/2014 art. 11 ([tatime.gov.al](https://tatime.gov.al/wp-content/uploads/2026/09/VKM-Nr.953-date-29.12.2014-i-ndryshuar.pdf), read 2026-10-30); for contributions Council of Ministers Decision No. 77/2015 and the General Directorate of Taxes notice of 14.01.2026 (see Sources). Figures must agree with `albania-income-tax.md` / `albania-social-contributions.md`. NOT yet signed off by an Albanian tax adviser. Aggressive positions are never advised; every suggestion must be reviewed.**
 
 ## Section 1 -- Quick Reference
 
@@ -43,7 +43,7 @@ Albania Tax Optimization Skill v0.4, tax year 2026.
 - **0% rate**: individual traders, the self-employed and entities with gross income up to ALL 14,000,000 a year pay 0% on the whole business profit until 31 Dec 2029. The test is gross income, not profit.  _(Law 29/2023 art. 69(1)(dh); see `albania-income-tax`)_
 - **Old simplified profit tax**: repealed. It sat in Chapter III of Law No. 9632/2006 on local taxes, which Law 29/2023 art. 71(2) repealed; the art. 69(1)(dh) 0% rate is the small-business regime now. Art. 69(1)(e) only kept the old forms for the 2024 tax period.  _(Law 29/2023 arts. 69(1)(e), 71(2))_
 - **Above ALL 14,000,000 of gross income**: individual traders and the self-employed pay 15% on taxable profit up to ALL 14,000,000 and 23% on taxable profit above it, with no part of the profit at 0%. Entities pay corporate income tax at 15% (see `al-corporate-tax`).  _(Law 29/2023 arts. 24(2), 41)_
-- **Company route**: an entity pays 15% on its profit above the threshold, and dividends it pays to an individual are taxed at 8% with no costs deducted (see `al-corporate-tax`, `albania-income-tax`).  _(Law 29/2023 arts. 24(3)(a), 41)_
+- **Company route**: an entity pays 15% on its profit above the threshold, and dividends it pays to an individual are taxed at 8% with no costs deducted (see `al-corporate-tax`, `albania-income-tax`).  _(Law 29/2023 arts. 24(3)(a), 24(4), 41)_
 - **After 2029**: art. 69(1)(dh) ends on 31 December 2029. Unless the law is changed, from 2030 business profit falls under the art. 24(2) scale (individuals) or the art. 41 rate (entities).  _(Law 29/2023 arts. 24(2), 41, 69(1)(dh))_
 
 This makes Albania extremely efficient for profitable solo/micro service businesses under the cap, but social and health contributions (at least ALL 14,900 a month in 2026 for a self-employed person, see `albania-social-contributions`) and VAT (mandatory above ALL 10m of turnover, see `albania-vat`) still apply.
@@ -59,7 +59,7 @@ This makes Albania extremely efficient for profitable solo/micro service busines
 
 ## Section 4 -- Red Lines (do not cross)
 
-- **Single-client / few-client reclassification**: Single-client / few-client reclassification (Section 3) is the main risk.
+- **Single-client / few-client reclassification**: the main risk (Section 3).
 - **Mandatory VAT registration**: VAT registration is mandatory once turnover goes above ALL 10m in a calendar year or any 12 consecutive months, with the request due within 15 days of the end of the month in which the threshold is passed (VKM 953/2014 art. 11(1); Law 92/2014 art. 122(1)); don't ignore it. Notaries and bailiffs register whatever their turnover (VKM 953/2014 art. 11(2)).
 - **Time-limited regime**: The 0% regime is time-limited (to 2029) and income-capped; model the cliff at ALL 14m and the 2030 reversion.
 - **No fragmentation without substance**: Don't fragment one business across entities to stay under the cap without substance.
