@@ -70,7 +70,7 @@ A person who is a director at the start of the tax year has an annual earnings p
 
 ### Step 3: ITIP income tax
 
-Deduct income tax on each payday according to the employee's tax code. A code is one to four numbers followed by F, M or S. The non-numeric codes are NT (no tax), SB (no allowances, tax at the lower rate using table D and table C if needed) and HR (no allowances, higher rate, table C) (Tax codes explained for employers page). The employer acts on form T6 (codes for the new year, issued in mid-March) or form T21 from a previous employer, never on the employee's own T1. Failing to apply the correct code makes the employer liable for the ITIP not deducted. The 2026/27 free pay tables and tables C and D apply from 6 April 2026 (Employers page).
+Deduct income tax on each payday according to the employee's tax code. A code is one to four numbers followed by F, M or S. The non-numeric codes are NT (no tax), SB (no allowances, tax at the lower rate using table D and table C if needed) and HR (no allowances, higher rate, table C) (Tax codes explained for employers page). The employer acts on form T6 (codes for the new year, issued in mid-March) or form T21 from a previous employer, never on the employee's own T1. Failing to apply the correct code makes the employer liable for the ITIP not deducted. The 2026/27 free pay tables and tables C and D apply from 6 April 2026 (Employers page). Where no code has come on T6 or T21 for a resident employee, use the emergency code: SB (tables D and C) for a person in subsidiary employment or receiving the State Retirement Pension; for all other cases the page gives a numeric S code (see Not yet confirmed). If a code has not arrived by 5 April, send form T20 marked 'substitute' and keep using the previous year's code until the new one arrives (Tax codes explained for employers page).
 
 ### Step 4: self-employed contributions
 
@@ -189,7 +189,7 @@ expected:
 | Income Tax Division, Employers: Tax codes explained for employers | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/tax-codes-explained-for-employers/ | 2026-10-30 |
 | Income Tax Division, Employers: Legislation | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/legislation/ | 2026-10-30 |
 
-Not yet confirmed: the Tynwald order or regulations setting the 2026/27 National Insurance limits and rates (the figures come from PN 227/26 and the Division's rates page, which agree); the section numbers in the Income Tax (Instalment Payments) Act 1974 and its regulations for the employer deadlines and GBP 250 penalties (taken from the Division's Compliance and Penalties page); the current emergency tax code (the tax codes page still shows 1450S, which matches the 2024/25 allowance, not GBP 17,000); interest on late ITIP and NI; when the 2026 UK agreement enters into force.
+Not yet confirmed: the Tynwald order or regulations setting the 2026/27 National Insurance limits and rates (the figures come from PN 227/26 and the Division's rates page, which agree); the section numbers in the Income Tax (Instalment Payments) Act 1974 and its regulations for the employer deadlines and GBP 250 penalties (taken from the Division's Compliance and Penalties page); the current numeric emergency tax code for 'all other cases' (the tax codes page still shows 1450S at 10/21%, which matches the 2024/25 allowance, not GBP 17,000); interest on late ITIP and NI; when the 2026 UK agreement enters into force.
 
 <!-- openaccountants-cta-block -->
 
