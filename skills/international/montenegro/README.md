@@ -24,7 +24,7 @@ Calendar tax year. Authority: the Tax Administration (Poreska uprava), with retu
 | TP, transfer pricing | me-transfer-pricing (2026: related persons, methods and interquartile range, 4.97% prescribed financing rate, documentation, large taxpayers, CbC notification, fines) | checked against the law |
 | XB, cross-border | me-cross-border (2026: company residence and PE, 15% withholding and 30% for listed territories, nonresident capital gains, treaty relief conditions, foreign tax credit, participation relief) | checked against the law |
 
-Also in the pack: montenegro-tax-optimization (2026), and me-tax-overview and me-company-formation (tax year 2025, older summaries not yet rebuilt).
+Also in the pack: montenegro-tax-optimization, me-tax-overview and me-company-formation, all tax year 2026 (overview and formation rebuilt from the official laws on 30 Oct 2026: PRs #1001 and #1002).
 
 ## Official sources
 
