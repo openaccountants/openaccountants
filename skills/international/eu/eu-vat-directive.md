@@ -13,7 +13,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # eu-vat-directive
 
-## EU VAT Base: Common Rules (Directive 2006/112/EC)
+## EU VAT Directive: Common Rules (Directive 2006/112/EC)
 
 ## Skill Metadata
 
@@ -36,7 +36,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ## Section 1: EU Member State List [T1]
 
 - **EU Member State List**: AT Austria | BE Belgium | BG Bulgaria | HR Croatia | CY Cyprus | CZ Czech Republic | DK Denmark | EE Estonia | FI Finland | FR France | DE Germany | GR Greece (EL in VAT numbers) | HU Hungary | IE Ireland | IT Italy | LV Latvia | LT Lithuania | LU Luxembourg | MT Malta | NL Netherlands | PL Poland | PT Portugal | RO Romania | SK Slovakia | SI Slovenia | ES Spain | SE Sweden  _(Directive 2006/112/EC, Articles 1 and 5)_
-- **NOT EU (treat as non-EU / third country)**: UK (left EU 31 January 2020); Norway, Switzerland, Iceland (EEA or EFTA but not EU); USA, Canada, Australia, UAE, and all other non-EU countries
+- **NOT EU (treat as non-EU / third country)**: UK (EU VAT law stopped applying to it at the end of the transition period on 31 December 2020, Withdrawal Agreement, Article 126; but the EU VAT rules on goods still apply in Northern Ireland under Article 8 of the Protocol on Ireland/Northern Ireland, so goods moving between Northern Ireland and a member state follow Section 3; for services Northern Ireland is part of the UK, a third country); Norway, Switzerland, Iceland (EEA or EFTA but not EU); USA, Canada, Australia, UAE, and all other non-EU countries
 - **Parts of member states outside the EU VAT area**: Mount Athos, the Canary Islands, the French territories in Articles 349 and 355(1) TFEU, the Aland Islands, the Channel Islands, Campione d'Italia, the Italian waters of Lake Lugano, Heligoland, Busingen, Ceuta, Melilla and Livigno. Treat supplies to and from them like third-country trade.  _(Directive 2006/112/EC, Article 6)_
 
 ## Section 2: VAT Rate Framework [T1]
@@ -193,7 +193,7 @@ Legislation: Directive 2006/112/EC, Articles 33, 58, 59c, 358-369zb
 ## Section 7: EC Sales List / Recapitulative Statement [T1]
 
 - **EC Sales List filing requirement**: Every VAT-registered business that makes exempt intra-community supplies of goods, B2B services under Article 44 where the customer pays the VAT (Article 196), or call-off stock transfers must file an EC Sales List (called Recapitulative Statement in the Directive) reporting: Customer VAT numbers; Total value supplied to each customer; Period covered.  _(Directive 2006/112/EC, Articles 262-264)_
-- **Timing**: monthly, within one month (Article 263(1)). A member state may allow quarterly statements, within one month of the quarter end, while intra-community supplies of goods stay at or below EUR 50,000 per quarter (Article 263(1a)); for services, quarterly without a cap (Article 263(1c)). Filing frequency and format varies by country -- check country skill.
+- **Timing**: monthly, within one month (Article 263(1)). A member state may allow quarterly statements, within one month of the quarter end, while intra-community supplies of goods stay at or below EUR 50,000 in the quarter and in each of the previous four quarters; once they pass EUR 50,000 in a quarter, monthly statements start from the end of that month (Article 263(1a)); for services, quarterly without a cap (Article 263(1c)). Filing frequency and format varies by country -- check country skill.
 - **Triangulation**: an intermediary using the simplification for an ABC triangle reports it on its statement; without that, the Article 41 double charge applies  _(Articles 42, 141, 197, 265)_
 
 ## Section 8: Local Consumption Exception [T1]
@@ -211,7 +211,7 @@ Examples:
 ## Section 9: Import of Physical Goods from Non-EU [T2]
 
 - **Import VAT treatment**: When physical goods are imported from outside the EU: Import VAT is charged at the border by Customs, not via reverse charge on the VAT return; Import VAT is paid to Customs at the point of entry, at the rate for a domestic supply of like goods; The business recovers import VAT as input tax via the VAT return (using the Customs entry document); Reverse charge on the VAT return is NOT used for physical goods imports, unless the member state lets import VAT be entered in the VAT return instead of paid at the border (postponed accounting)  _(Directive 2006/112/EC, Articles 30, 60, 70-71, 94(2), 168(e), 211; national customs legislation)_
-- **Low-value imports**: see IOSS in Section 6. From 1 July 2028 the supplier or deemed supplier, not the customer, is liable for import VAT on distance sales of imported goods  _(Directive (EU) 2025/1539)_
+- **Low-value imports**: see IOSS in Section 6. From 1 July 2028, for distance sales of imported goods up to EUR 150 not declared under IOSS, the supplier or deemed supplier, not the customer, is liable for the import VAT  _(new Article 201(2), Directive (EU) 2025/1539)_
 - **Reviewer flag**: [T2] Process and documentation varies by country. Flag for reviewer to confirm: (a) client has the customs entry document, (b) import VAT amount is correct, (c) recovery is allowable.
 
 ## Section 10: VAT Number Validation [T1]
@@ -252,7 +252,7 @@ Legislation: Directive (EU) 2025/516, Article 6; Regulation (EU) 2025/517, Artic
 | --- | --- |
 | 14 April 2025 | Optional domestic e-invoicing mandates without derogation; no buyer consent needed (Directive 2025/516, Article 1(2), (3)) |
 | 1 January 2027 | Cash accounting reworded (Article 66); Article 59c threshold counts only goods sent from the supplier's own member state; non-Union OSS usable by non-EU suppliers also VAT-registered in a member state; OSS covers B2C energy supplies by non-established suppliers until 30 June 2028 (Directive 2025/516, Article 2) |
-| 1 July 2028 | Platforms deemed suppliers of short-term accommodation (up to 30 nights) and road passenger transport (member states may delay to 1 January 2030); mandatory reverse charge for non-established suppliers to VAT-identified customers (Article 194); wider OSS and a transfer-of-own-goods OSS; no new call-off stock movements after 30 June 2028 (Directive 2025/516, Article 3; Implementing Regulation 2025/518); import VAT on distance sales of imported goods payable by the supplier or deemed supplier (Directive 2025/1539) |
+| 1 July 2028 | Platforms deemed suppliers of short-term accommodation (up to 30 nights) and road passenger transport (member states may delay to 1 January 2030); mandatory reverse charge for non-established suppliers to VAT-identified customers (Article 194); wider OSS and a transfer-of-own-goods OSS; no new call-off stock movements after 30 June 2028 (Directive 2025/516, Article 3, call-off stock Article 2; Implementing Regulation 2025/518); import VAT on distance sales of imported goods not declared under IOSS payable by the supplier or deemed supplier, with a tax representative for a third-country supplier without a mutual-assistance agreement (Directive 2025/1539, new Article 201) |
 | 1 July 2029 | Call-off stock register and call-off statement removed; Article 17a ends 30 June 2029 (Directive 2025/516, Articles 2 and 4) |
 | 1 July 2030 | E-invoices in the European standard by default; intra-EU B2B invoices within 10 days; transaction-by-transaction digital reporting replaces the recapitulative statement (supplier at invoice issue, buyer within 5 days of receipt) (Directive 2025/516, Article 5) |
 | 1 July 2032 | Last stage of administrative cooperation changes (Regulation 2025/517, Article 6) |
@@ -292,6 +292,7 @@ Practitioner review required for: rate table accuracy (verify against EC TEDB an
 | Council Directive (EU) 2025/1539 | https://eur-lex.europa.eu/eli/dir/2025/1539/oj/eng | 2026-10-30 |
 | Council Directive (EU) 2020/285 (SME scheme) | https://eur-lex.europa.eu/eli/dir/2020/285/oj/eng | 2026-10-30 |
 | Council Directive (EU) 2022/542 (VAT rates) | https://eur-lex.europa.eu/eli/dir/2022/542/oj/eng | 2026-10-30 |
+| Agreement on the withdrawal of the United Kingdom from the EU (OJ L 29, 31.1.2020), Article 126 and Protocol on Ireland/Northern Ireland, Article 8 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12020W/TXT | 2026-10-30 |
 | Council Directive 2008/9/EC (refunds), Article 15 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008L0009 | 2026-10-30 |
 | European Commission TEDB VAT rates web service (situations on 31 December 2023 to 30 October 2026) | https://ec.europa.eu/taxation_customs/tedb/ | 2026-10-30 |
 | European Commission, VAT rates (secondary guidance) | https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/vat-rates_en | 2026-10-30 |
