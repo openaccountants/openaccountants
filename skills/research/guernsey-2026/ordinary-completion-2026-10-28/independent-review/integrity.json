@@ -1,0 +1,956 @@
+{
+  "candidate": "115f7229aeab749a673e806cf8a98391d59ccd3c",
+  "baseline": "6ae8c8a270ef09b1e024575a241c57ea816a5c06",
+  "guides": [
+    {
+      "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+      "sha256": "f181d56e7efa895f16a6508785764c1a5ff7fa5f927729f06087a686320177c4",
+      "baseline_bytes": 25430,
+      "candidate_bytes": 25430,
+      "main_blocks": 2,
+      "main_blocks_byte_exact": true,
+      "protected_fields": {
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_exact": true,
+      "full_body_read": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "sha256": "163ad7d2b693b3287e9a208f58c59a9ad4b481acf3048fee7f3e604f5def1007",
+      "baseline_bytes": 12375,
+      "candidate_bytes": 12375,
+      "main_blocks": 2,
+      "main_blocks_byte_exact": true,
+      "protected_fields": {
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_exact": true,
+      "full_body_read": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "sha256": "b5b867dcad9247476eb2ef654749a1672537c5e9dc1300895324c8c11e50f283",
+      "baseline_bytes": 67245,
+      "candidate_bytes": 68864,
+      "main_blocks": 2,
+      "main_blocks_byte_exact": true,
+      "protected_fields": {
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_exact": true,
+      "full_body_read": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "sha256": "26f645852afb2db4c02b172d467d5d05216e9d6c0c4f32a7dfe5222074979bb5",
+      "baseline_bytes": 9223,
+      "candidate_bytes": 13765,
+      "main_blocks": 2,
+      "main_blocks_byte_exact": true,
+      "protected_fields": {
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_exact": true,
+      "full_body_read": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "sha256": "d961daa12b3685e3d332eea0a99910e36b4747505dfd49ecc490790d0f5e8f9b",
+      "baseline_bytes": 43597,
+      "candidate_bytes": 46978,
+      "main_blocks": 2,
+      "main_blocks_byte_exact": true,
+      "protected_fields": {
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_exact": true,
+      "full_body_read": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "sha256": "8d5638a847ce349a12256c600b8a6a5a3b7fbfac42a1a44af49a51d69d637ed7",
+      "baseline_bytes": 38946,
+      "candidate_bytes": 62043,
+      "main_blocks": 2,
+      "main_blocks_byte_exact": true,
+      "protected_fields": {
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_exact": true,
+      "full_body_read": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "sha256": "4eceef9f12934f2eaeaf9ff8435017bed502be1381c48b84f81280134fc466a5",
+      "baseline_bytes": 16781,
+      "candidate_bytes": 29016,
+      "main_blocks": 2,
+      "main_blocks_byte_exact": true,
+      "protected_fields": {
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_exact": true,
+      "full_body_read": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-secondary-pensions.md",
+      "sha256": "757f38c5ba60ff5f8fcae3536fb930a1cdd5f0ce66c680f0b70e8111a65db8a2",
+      "baseline_bytes": 16361,
+      "candidate_bytes": 16361,
+      "main_blocks": 2,
+      "main_blocks_byte_exact": true,
+      "protected_fields": {
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_exact": true,
+      "full_body_read": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "sha256": "e84a3965f79529847f8dab782569c05fbe1c49ec7f54c3e41561c290e0bdbe15",
+      "baseline_bytes": 52428,
+      "candidate_bytes": 58764,
+      "main_blocks": 2,
+      "main_blocks_byte_exact": true,
+      "protected_fields": {
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_exact": true,
+      "full_body_read": true
+    }
+  ],
+  "archive": {
+    "original_block_count": 32,
+    "archived_block_count": 32,
+    "all_original_blocks_byte_exact": true,
+    "archive_unchanged_from_published_baseline": true,
+    "original_bodies": [
+      {
+        "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+        "archive_original_body_byte_exact": true
+      },
+      {
+        "path": "skills/international/guernsey/gg-company-formation.md",
+        "archive_original_body_byte_exact": true
+      },
+      {
+        "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+        "archive_original_body_byte_exact": true
+      },
+      {
+        "path": "skills/international/guernsey/gg-gst-transition.md",
+        "archive_original_body_byte_exact": true
+      },
+      {
+        "path": "skills/international/guernsey/gg-individual-income-tax.md",
+        "archive_original_body_byte_exact": true
+      },
+      {
+        "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+        "archive_original_body_byte_exact": true
+      },
+      {
+        "path": "skills/international/guernsey/gg-property-document-duty.md",
+        "archive_original_body_byte_exact": true
+      },
+      {
+        "path": "skills/international/guernsey/gg-secondary-pensions.md",
+        "archive_original_body_byte_exact": true
+      },
+      {
+        "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+        "archive_original_body_byte_exact": true
+      }
+    ]
+  },
+  "control_count": 62,
+  "main_controls": 18,
+  "supplementary_controls": 12,
+  "controls": [
+    {
+      "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+      "block": 1,
+      "name": "Guernsey September 2026 multiple late changes are separate breaches",
+      "failure": [],
+      "actual": {
+        "total_penalty": "430"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+      "block": 2,
+      "name": "Guernsey validation and one resolution fees by established category",
+      "failure": [],
+      "actual": {
+        "category6_total": "275",
+        "category5_total": "540"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "block": 1,
+      "name": "Guernsey standard incorporation with optional name reservation",
+      "failure": [],
+      "actual": {
+        "with_reservation": "125",
+        "without_reservation": "100"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "block": 2,
+      "name": "Guernsey alternative incorporation service fees",
+      "failure": [],
+      "actual": {
+        "rapid_total": "525",
+        "special_total": "1025"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "block": 1,
+      "name": "Guernsey ordinary corporate base allowance and loss",
+      "failure": [],
+      "actual": {
+        "capital_allowance": "8000.0",
+        "profit_before_loss": "202000.0",
+        "loss_used": "30000",
+        "taxable_profit": "172000.0",
+        "company_tax": "17200.00",
+        "loss_remaining": "0"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "block": 2,
+      "name": "Guernsey qualifying loan net gross-up and partial repayment",
+      "failure": [],
+      "actual": {
+        "gross_income": "1.00E+4",
+        "loan_tax": "2000",
+        "refundable_tax": "750",
+        "principal_remaining": "5000",
+        "tax_remaining": "1250"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "block": 1,
+      "name": "Guernsey planned GST exclusive-price scenario, not current liability",
+      "failure": [],
+      "actual": {
+        "hypothetical_gst": "30.00",
+        "gross_price": "1030.00"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "block": 2,
+      "name": "Guernsey planned GST fixed-inclusive-price scenario",
+      "failure": [],
+      "actual": {
+        "net_price": "970.87",
+        "hypothetical_gst": "29.13"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "block": 1,
+      "name": "Guernsey 2026 personal allowance withdrawal",
+      "failure": [],
+      "actual": {
+        "withdrawal": "3000",
+        "retained_allowance": "12200",
+        "tax": "17560.0"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "block": 2,
+      "name": "Guernsey furnished rent 2026 current and historic repair transition",
+      "failure": [],
+      "actual": {
+        "standard_repair_deduction": "4500.00",
+        "current_additional": "4500.00",
+        "historic_additional": "2500.00",
+        "additional_allowed": "7000.00",
+        "allowed_interest": "1000.0",
+        "rental_income": "17500.00",
+        "taxable_income": "2300.00",
+        "tax_before_credits": "460.000"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "block": 1,
+      "name": "Guernsey ordinary monthly Class 1 contributions 2026",
+      "failure": [],
+      "actual": {
+        "employee_si": "225.00",
+        "employer_si": "213.00",
+        "employer_cost": "3213.00"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "block": 2,
+      "name": "Guernsey monthly Class 1 upper cap 2026",
+      "failure": [],
+      "actual": {
+        "base": "16380",
+        "employee_si": "1228.50",
+        "employer_si": "1162.98"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "block": 1,
+      "name": "Guernsey 600000 realty ordinary and qualified downsizing",
+      "failure": [],
+      "actual": {
+        "ordinary_duty": "17750.0000",
+        "qualified_relief": "13750.0000",
+        "qualified_net_duty": "4000.0000"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "block": 2,
+      "name": "Guernsey six million realty official cross-check",
+      "failure": [],
+      "actual": {
+        "duty": "308250.0000"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-secondary-pensions.md",
+      "block": 1,
+      "name": "Guernsey 2026 minimum secondary pension ordinary month",
+      "failure": [],
+      "actual": {
+        "employer_pension": "30.00",
+        "employee_pension": "45.00",
+        "combined_pension": "75.00"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-secondary-pensions.md",
+      "block": 2,
+      "name": "Guernsey 2026 secondary pension monthly cap",
+      "failure": [],
+      "actual": {
+        "base": "16380",
+        "employer_pension": "163.80",
+        "employee_pension": "245.70",
+        "combined_pension": "409.50"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "block": 1,
+      "name": "Employment presence boundary in one tested rolling window",
+      "failure": [],
+      "actual": {
+        "at_boundary": "183",
+        "over_boundary": "184"
+      }
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "block": 2,
+      "name": "Guernsey treaty credit below and above the same-income ceiling",
+      "failure": [],
+      "actual": {
+        "lower_credit": "3000",
+        "lower_residual": "1000",
+        "higher_credit": "4000",
+        "higher_residual": "0",
+        "excess_over_ceiling": "1000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/benefit-period-controls.md",
+      "block": 1,
+      "name": "Guernsey ordinary accommodation arrival period and split employment",
+      "failure": [],
+      "actual": {
+        "example_a_benefit": "525.000",
+        "example_b_emoluments": "40000",
+        "example_b_benefit": "7000.000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/benefit-period-controls.md",
+      "block": 2,
+      "name": "Guernsey car benefit annual versus stated final-month method remains unresolved",
+      "failure": [],
+      "actual": {
+        "annual_benefit": "6000.00",
+        "annual_day_method": "2810.96",
+        "final_month_entry": "333.33",
+        "monthly_payroll_method": "2833.33",
+        "unresolved_difference": "22.37"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/contribution-controls.md",
+      "block": 1,
+      "name": "Guernsey Class 2 current-year relevant-income bridge 2026",
+      "failure": [],
+      "actual": {
+        "book_profit": "47000",
+        "tax_business_income": "46000",
+        "relevant_income": "52000",
+        "weekly_contribution": "124.000",
+        "period_contribution": "6448.000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/contribution-controls.md",
+      "block": 2,
+      "name": "Guernsey simultaneous employment and self-employment cap 2026",
+      "failure": [],
+      "actual": {
+        "remaining_headroom": "52000",
+        "class_2_base": "52000",
+        "class_2_liability": "6448.000",
+        "excluded_from_class_2_base": "8000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/contribution-controls.md",
+      "block": 3,
+      "name": "Guernsey Class 3 actual source bridge and alternative age rates 2026",
+      "failure": [],
+      "actual": {
+        "relevant_income": "37122",
+        "post_allowance_base": "26000",
+        "lower_limit_excess": "12162",
+        "under_age_weekly": "59.000",
+        "under_age_period": "3068.000",
+        "pension_age_weekly": "19.000",
+        "pension_age_period": "988.000",
+        "under_age_excess_over_potential_contribution": "9094.000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/contribution-controls.md",
+      "block": 4,
+      "name": "Guernsey certified contribution periods and Class 2 reassessment difference 2026",
+      "failure": [],
+      "actual": {
+        "class_3_period": "1534",
+        "class_2_old_weekly": "124.000",
+        "class_2_new_weekly": "186.000",
+        "class_2_additional": "3224.000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/enforcement-controls.md",
+      "block": 1,
+      "name": "Guernsey income-tax initial and two six-month surcharge events",
+      "failure": [],
+      "actual": {
+        "initial_surcharge": "500.00",
+        "first_additional_surcharge": "525.0000",
+        "second_additional_surcharge": "551.250000",
+        "total_surcharges": "1576.250000",
+        "total_outstanding": "11576.250000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/enforcement-controls.md",
+      "block": 2,
+      "name": "Guernsey statutory Class 1 arrears penalty and two full months interest",
+      "failure": [],
+      "actual": {
+        "initial_penalty": "125.000",
+        "monthly_interest": "125.000",
+        "period_interest": "250.000",
+        "total_charges": "375.000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/property-controls.md",
+      "block": 1,
+      "name": "Guernsey non-exempt non-arm-length acquisition uses market value",
+      "failure": [],
+      "actual": {
+        "correct_duty": "29750.0000",
+        "unsupported_lower_base_duty": "17750.0000",
+        "difference": "12000.0000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/property-controls.md",
+      "block": 2,
+      "name": "Guernsey indirect property benefit and separate 2026 filing fees",
+      "failure": [],
+      "actual": {
+        "duty": "17750.0000",
+        "duty_and_non_exempt_fee": "17908.0000",
+        "separate_exempt_case_duty_and_fee": "79",
+        "assessment_penalty_ceiling": "17750.0000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/relief-controls.md",
+      "block": 1,
+      "name": "Guernsey domestic treaty-credit effective-rate ceiling without excess tax",
+      "failure": [],
+      "actual": {
+        "effective_rate": "0.1",
+        "same_income_ceiling": "2000.0",
+        "credit": "1500",
+        "total_residual_tax": "8500"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/relief-controls.md",
+      "block": 2,
+      "name": "Guernsey unilateral relief ordinary no-excess case",
+      "failure": [],
+      "actual": {
+        "guernsey_effective_rate": "0.1",
+        "three_quarters_ceiling": "0.075",
+        "relief_rate": "0.05",
+        "relief": "500.00"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 1,
+      "name": "Guernsey September 2026 multiple late changes are separate breaches",
+      "failure": [],
+      "actual": {
+        "total_penalty": "430"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 2,
+      "name": "Guernsey established corporate income streams",
+      "failure": [],
+      "actual": {
+        "standard_tax": "0",
+        "intermediate_tax": "3000.0",
+        "rental_tax": "4000.0",
+        "total_tax": "7000.0"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 3,
+      "name": "Guernsey corporate daily penalty after concession period",
+      "failure": [],
+      "actual": {
+        "daily_penalty": "1750",
+        "total_penalty": "2050"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 4,
+      "name": "Guernsey planned GST exclusive-price scenario, not current liability",
+      "failure": [],
+      "actual": {
+        "hypothetical_gst": "30.00",
+        "gross_price": "1030.00"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 5,
+      "name": "Guernsey planned GST fixed-inclusive-price scenario",
+      "failure": [],
+      "actual": {
+        "net_price": "970.87",
+        "hypothetical_gst": "29.13"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 6,
+      "name": "Guernsey 2026 qualifying cap comparison",
+      "failure": [],
+      "actual": {
+        "ordinary": "224000.0",
+        "qualifying_route": "184000.0",
+        "combined_route": "224000.0"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 7,
+      "name": "Guernsey 2026 combined cap leaves property tax outside",
+      "failure": [],
+      "actual": {
+        "ordinary": "404000.0",
+        "qualifying_route": "364000.0",
+        "combined_route": "324000.0"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 8,
+      "name": "Guernsey individual late return outside daily penalty grace",
+      "failure": [],
+      "actual": {
+        "daily_penalty": "400",
+        "unreduced_total": "600"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 9,
+      "name": "Guernsey 2026 personal allowance withdrawal",
+      "failure": [],
+      "actual": {
+        "withdrawal": "3000",
+        "retained_allowance": "12200",
+        "tax": "17560.0"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 10,
+      "name": "Guernsey 2026 ordered relief withdrawal protects eligible pension portion",
+      "failure": [],
+      "actual": {
+        "withdrawal": "23000",
+        "personal_removed": "15200",
+        "mortgage_removed": "3500",
+        "pension_removed": "2500",
+        "retained_pension": "2500",
+        "unused_withdrawal": "1800",
+        "tax": "39500.0"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 11,
+      "name": "Guernsey Class 3 allowance applies after exemption test",
+      "failure": [],
+      "actual": {
+        "margin_above_lower": "0",
+        "assessment_base": "13838",
+        "annual_rate_arithmetic": "1632.884"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 12,
+      "name": "Guernsey ordinary monthly Class 1 contributions 2026",
+      "failure": [],
+      "actual": {
+        "employee_si": "225.00",
+        "employer_si": "213.00",
+        "employer_cost": "3213.00"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 13,
+      "name": "Guernsey monthly Class 1 upper cap 2026",
+      "failure": [],
+      "actual": {
+        "base": "16380",
+        "employee_si": "1228.50",
+        "employer_si": "1162.98"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 14,
+      "name": "Guernsey eligible recurring benefit with annual exemption",
+      "failure": [],
+      "actual": {
+        "monthly_exemption": "75",
+        "monthly_taxable_benefit": "25",
+        "annual_taxable_benefit": "300"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 15,
+      "name": "Guernsey employer-paid income tax on benefit",
+      "failure": [],
+      "actual": {
+        "grossed_income": "6.25E+3",
+        "tax_reimbursement": "1250",
+        "total_tax": "1250.0",
+        "after_tax_value": "5000.0"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 16,
+      "name": "Guernsey ordinary car benefit cost includes trade-in value",
+      "failure": [],
+      "actual": {
+        "benefit_cost": "31000",
+        "annual_benefit": "6200.00"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 17,
+      "name": "Guernsey car business-use strict percentage boundary",
+      "failure": [],
+      "actual": {
+        "boundary_percent": "75.00",
+        "above_percent": "75.100",
+        "ordinary_benefit": "6000.0"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 18,
+      "name": "Guernsey furnished accommodation with valid rental-value election",
+      "failure": [],
+      "actual": {
+        "percentage_benefit": "7000.000",
+        "benefit_with_valid_election": "6000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 19,
+      "name": "Guernsey 600000 realty ordinary and qualified downsizing",
+      "failure": [],
+      "actual": {
+        "ordinary_duty": "17750.0000",
+        "qualified_relief": "13750.0000",
+        "qualified_net_duty": "4000.0000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 20,
+      "name": "Guernsey six million realty official cross-check",
+      "failure": [],
+      "actual": {
+        "duty": "308250.0000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 21,
+      "name": "Guernsey document duty 500000 boundary",
+      "failure": [],
+      "actual": {
+        "boundary_duty": "13750.0000",
+        "additional_duty": "4.00",
+        "above_boundary_duty": "13754.0000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 22,
+      "name": "Guernsey 2026 minimum secondary pension ordinary month",
+      "failure": [],
+      "actual": {
+        "employer_pension": "30.00",
+        "employee_pension": "45.00",
+        "combined_pension": "75.00"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 23,
+      "name": "Guernsey 2026 secondary pension monthly cap",
+      "failure": [],
+      "actual": {
+        "base": "16380",
+        "employer_pension": "163.80",
+        "employee_pension": "245.70",
+        "combined_pension": "409.50"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 24,
+      "name": "PE anti-fragmentation ownership boundary",
+      "failure": [],
+      "actual": {
+        "boundary_percentage": "50.0",
+        "above_percentage": "51.00"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 25,
+      "name": "Supported PE profit bridge before domestic tax",
+      "failure": [],
+      "actual": {
+        "initial_profit": "70000",
+        "revised_profit": "80000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 26,
+      "name": "Property-income dividend treaty ceiling is not a minimum tax",
+      "failure": [],
+      "actual": {
+        "ceiling": "1500.00",
+        "higher_case_tax": "1500.00",
+        "lower_case_tax": "1000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 27,
+      "name": "Non-resident ownership strict less-than boundary",
+      "failure": [],
+      "actual": {
+        "below_percentage": "24.00",
+        "boundary_percentage": "25.00"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 28,
+      "name": "Associated-enterprise profit adjustment and excess interest",
+      "failure": [],
+      "actual": {
+        "profit_adjustment": "30000",
+        "excess_interest": "10000"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 29,
+      "name": "Guernsey UK property-rich interest value boundary",
+      "failure": [],
+      "actual": {
+        "boundary_percent": "50.0",
+        "higher_percent": "51.00"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 30,
+      "name": "Guernsey UK offshore associated activity overlap",
+      "failure": [],
+      "actual": {
+        "aggregated_days": "30",
+        "additional_nonoverlapping_day": "31"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 31,
+      "name": "Employment presence boundary in one tested rolling window",
+      "failure": [],
+      "actual": {
+        "at_boundary": "183",
+        "over_boundary": "184"
+      }
+    },
+    {
+      "path": "skills/research/guernsey-2026/original-controls.md",
+      "block": 32,
+      "name": "Guernsey treaty credit below and above the same-income ceiling",
+      "failure": [],
+      "actual": {
+        "lower_credit": "3000",
+        "lower_residual": "1000",
+        "higher_credit": "4000",
+        "higher_residual": "0",
+        "excess_over_ceiling": "1000"
+      }
+    }
+  ]
+}

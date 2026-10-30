@@ -8,12 +8,12 @@ metadata:
   jurisdiction: "AU"
   tax_year: "2026"
   last_updated: "2026-09-12"
+  authored_by: "Ryan Duguid"
+  trust_label: "Accountant-authored"
   review_status: "pending_review"
 ---
 
 # Australia Superannuation Guarantee (SG) -- Sole Trader & Employer Skill v3.3
-
-## Australia Superannuation Guarantee (SG) -- Sole Trader & Employer Skill v3.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -57,8 +57,6 @@ The remaining payday calculations and indexed figures below concern 2026–27. [
 
 **Conservative defaults**
 
-**Conservative defaults**
-
 | Ambiguity | Default |
 | --- | --- |
 | Unknown entity structure | Ask -- sole trader vs company affects SG obligation |
@@ -80,10 +78,10 @@ The remaining payday calculations and indexed figures below concern 2026–27. [
 
 ### Refusal catalogue
 
-- **R-AU-SG-1 -- Defined benefit funds** — *Trigger:* client has a defined benefit fund. *Message:* "Defined benefit fund calculations are actuarially determined and out of scope. Escalate." _(R-AU-SG-1)_
-- **R-AU-SG-2 -- Constitutionally protected funds** — *Trigger:* client has a constitutionally protected state fund. *Message:* "Out of scope. Escalate." _(R-AU-SG-2)_
-- **R-AU-SG-3 -- Family law splits** — *Trigger:* super splitting in divorce. *Message:* "Family law superannuation splits require legal advice. Out of scope." _(R-AU-SG-3)_
-- **R-AU-SG-4 -- SGC computation** — *Trigger:* client has missed payday super deadlines and asks about the Super Guarantee Charge. *Message:* "SGC under the payday super regime is ATO-assessed per payday from STP and fund data -- it is not self-assessed and should be escalated to a qualified practitioner. Components: final SG shortfall + notional earnings (GIC rate, compounding daily) + administrative uplift + any choice loading. Note the NEW SGC (payday regime) is tax-deductible; the OLD quarterly-regime SGC remains non-deductible." _(R-AU-SG-4)_
+- **R-AU-SG-1 -- Defined benefit funds** — *Trigger:* client has a defined benefit fund. *Message:* "Defined benefit fund calculations are actuarially determined and out of scope. Escalate."  _(R-AU-SG-1)_
+- **R-AU-SG-2 -- Constitutionally protected funds** — *Trigger:* client has a constitutionally protected state fund. *Message:* "Out of scope. Escalate."  _(R-AU-SG-2)_
+- **R-AU-SG-3 -- Family law splits** — *Trigger:* super splitting in divorce. *Message:* "Family law superannuation splits require legal advice. Out of scope."  _(R-AU-SG-3)_
+- **R-AU-SG-4 -- SGC computation** — *Trigger:* client has missed payday super deadlines and asks about the Super Guarantee Charge. *Message:* "SGC under the payday super regime is ATO-assessed per payday from STP and fund data -- it is not self-assessed and should be escalated to a qualified practitioner. Components: final SG shortfall + notional earnings (GIC rate, compounding daily) + administrative uplift + any choice loading. Note the NEW SGC (payday regime) is tax-deductible; the OLD quarterly-regime SGC remains non-deductible."  _(R-AU-SG-4)_
 
 **Direct super fund payments pattern table (source heading missing; header row truncated in source)**
 
@@ -220,8 +218,14 @@ Matches "ATO" + "IAS" (pattern 3.6). This is an Instalment Activity Statement (P
 
 ### Rule 1 -- SG formula (payday super)
 
-- **SG eligibility** — Establish SG eligibility before calculating. The $450 monthly earnings threshold ended on 1 July 2022, but employee exclusions still apply. An employee under 18 must work **more than 30 actual hours in the week**: exactly 30 does not qualify. Assess each week, including within a fortnightly pay cycle. Some contractors are employees for SG purposes, including qualifying labour contracts under SGAA s 12(3); refer uncertain cases to T2-1. Work wholly or principally of a domestic or private nature for 30 hours or less a week is excluded under s 12(11). Check any separate award or agreement obligation. See [business.gov.au: superannuation](https://business.gov.au/finance/superannuation) and [SGAA s 12](https://www.ato.gov.au/law/view/print?DocID=PAC%2F19920111%2F12&PiT=99991231235958).  _(business.gov.au: superannuation; SGAA s 12)_
-- **SG per payday formula** — remaining_base = max(0, $270,830 - YTD_qualifying_earnings_before_this_payday) SG per payday  = 12% x min(Qualifying_earnings_paid_this_payday, remaining_base) SG applies only to the first $270,830 of qualifying earnings paid in the financial year -- the payday that crosses the base attracts SG only on the portion beneath it, and later paydays attract none. Annual maximum SG per employee: exactly $32,499.60.  _(business.gov.au: superannuation; SGAA s 12)_
+Establish SG eligibility before calculating. The $450 monthly earnings threshold ended on 1 July 2022, but employee exclusions still apply. An employee under 18 must work **more than 30 actual hours in the week**: exactly 30 does not qualify. Assess each week, including within a fortnightly pay cycle. Some contractors are employees for SG purposes, including qualifying labour contracts under SGAA s 12(3); refer uncertain cases to T2-1. Work wholly or principally of a domestic or private nature for 30 hours or less a week is excluded under s 12(11). Check any separate award or agreement obligation. See [business.gov.au: superannuation](https://business.gov.au/finance/superannuation) and [SGAA s 12](https://www.ato.gov.au/law/view/print?DocID=PAC%2F19920111%2F12&PiT=99991231235958).
+
+```
+remaining_base = max(0, $270,830 - YTD_qualifying_earnings_before_this_payday)
+SG per payday  = 12% x min(Qualifying_earnings_paid_this_payday, remaining_base)
+```
+
+SG applies only to the first $270,830 of qualifying earnings paid in the financial year -- the payday that crosses the base attracts SG only on the portion beneath it, and later paydays attract none. Annual maximum SG per employee: exactly $32,499.60.
 
 ### Rule 2 -- SG rate
 
@@ -237,7 +241,7 @@ Matches "ATO" + "IAS" (pattern 3.6). This is an Instalment Activity Statement (P
 
 ### Rule 5 -- Sole traders have NO SG obligation to themselves
 
-- **Sole trader / director SG obligation** — Drawings are not salary. Only voluntary contributions. Company directors paying themselves a salary: YES SG applies (director is employee of company). _(Rule 4)_
+- **Sole traders have NO SG obligation to themselves** — - **Sole trader / director SG obligation** — Drawings are not salary. Only voluntary contributions. Company directors paying themselves a salary: YES SG applies (director is employee of company). _(Rule 4)_
 
 ### Rule 6 -- Concessional contributions cap
 
@@ -257,16 +261,28 @@ Matches "ATO" + "IAS" (pattern 3.6). This is an Instalment Activity Statement (P
 
 ### Rule 10 -- Division 293 (additional 15% for high earners)
 
-- **Division 293 income and low-tax contributions** — Use the tax return and fund-reported amounts: 1. Division 293 income is taxable income plus reportable fringe benefits, net financial investment loss, net rental property loss and the net amount subject to family trust distribution tax. Subtract taxed super lump sum elements subject to a zero tax rate and assessable First Home Super Saver released amounts. Do not add reportable super contributions to this income subtotal. 2. Low-tax contributions generally comprise concessional contributions, including SG, salary sacrifice and deductible personal contributions, less excess concessional contributions. Contributions covered by carried-forward caps still count. Apply the special roll-over rules where relevant; defined benefit and constitutionally protected funds remain outside scope. ATO discretion to disregard or reallocate excess contributions does not remove those contributions from Division 293.  _(ATO: Division 293; ITAA 1997 ss 293-20 to 293-30)_
-- **Division 293 tax formula** — threshold_excess = max(0, Division_293_income + low_tax_contributions - $250,000) Division_293_tax = 15% x min(low_tax_contributions, threshold_excess) For $210,000 taxable income, $20,000 reportable fringe benefits, $30,000 low-tax contributions and no other adjustments, the combined amount is $260,000. Tax is 15% x $10,000 = **$1,500**. Sources: [ATO: Division 293](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-293-tax-on-concessional-contributions-by-high-income-earners), ITAA 1997 ss 293-20 to 293-30. Threshold: $250,000, not indexed.  _(ATO: Division 293; ITAA 1997 ss 293-20 to 293-30)_
+Use the tax return and fund-reported amounts:
+
+1. Division 293 income is taxable income plus reportable fringe benefits, net financial investment loss, net rental property loss and the net amount subject to family trust distribution tax. Subtract taxed super lump sum elements subject to a zero tax rate and assessable First Home Super Saver released amounts. Do not add reportable super contributions to this income subtotal.
+2. Low-tax contributions generally comprise concessional contributions, including SG, salary sacrifice and deductible personal contributions, less excess concessional contributions. Contributions covered by carried-forward caps still count. Apply the special roll-over rules where relevant; defined benefit and constitutionally protected funds remain outside scope. ATO discretion to disregard or reallocate excess contributions does not remove those contributions from Division 293.
+3. Calculate:
+
+```
+threshold_excess = max(0, Division_293_income + low_tax_contributions - $250,000)
+Division_293_tax = 15% x min(low_tax_contributions, threshold_excess)
+```
+
+For $210,000 taxable income, $20,000 reportable fringe benefits, $30,000 low-tax contributions and no other adjustments, the combined amount is $260,000. Tax is 15% x $10,000 = **$1,500**.
+
+Sources: [ATO: Division 293](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-293-tax-on-concessional-contributions-by-high-income-earners), ITAA 1997 ss 293-20 to 293-30. Threshold: $250,000, not indexed.
 
 ### Rule 11 -- Redesigned SGC (QE days from 1 July 2026)
 
-- **Redesigned SGC (QE days from 1 July 2026)** — ATO-assessed per payday (no SG statement is lodged; ATO matches STP against fund reporting). Components: 1. **Final SG shortfall** -- unpaid SG on qualifying earnings at 12% 2. **Notional earnings** -- GIC-rate interest on the shortfall, compounding daily from the day after the deadline 3. **Administrative uplift** -- starts at 60% of (shortfall + notional earnings); reduced 20 points for a clean 2-year history and up to 40 points for voluntary disclosure (0% if disclosed within 30 days with clean history) 4. **Choice loading** -- 25% of contributions where choice-of-fund rules breached, capped at $1,200 per notice period Payment due the day the assessment is made. Unpaid 28 days after assessment -> Notice to Pay -> late payment penalty of 25% or 50% of unpaid SGC. **The new SGC is tax-deductible** (all four components); GIC on late SGC and the late payment penalty are not, and old-regime SGC (quarters before 1 July 2026) remains non-deductible. First-year approach: PCG 2026/1. _(PCG 2026/1)_  _(PCG 2026/1)_
+- **Redesigned SGC (QE days from 1 July 2026)** — ATO-assessed per payday (no SG statement is lodged; ATO matches STP against fund reporting). Components: 1. **Final SG shortfall** -- unpaid SG on qualifying earnings at 12% 2. **Notional earnings** -- GIC-rate interest on the shortfall, compounding daily from the day after the deadline 3. **Administrative uplift** -- starts at 60% of (shortfall + notional earnings); reduced 20 points for a clean 2-year history and up to 40 points for voluntary disclosure (0% if disclosed within 30 days with clean history) 4. **Choice loading** -- 25% of contributions where choice-of-fund rules breached, capped at $1,200 per notice period Payment due the day the assessment is made. Unpaid 28 days after assessment -> Notice to Pay -> late payment penalty of 25% or 50% of unpaid SGC. **The new SGC is tax-deductible** (all four components); GIC on late SGC and the late payment penalty are not, and old-regime SGC (quarters before 1 July 2026) remains non-deductible. First-year approach: PCG 2026/1.  _(PCG 2026/1)_
 
 ## Personal deduction notice validity
 
-- **Personal deduction notice validity** — Before claiming a personal contribution deduction, verify the notice was valid when given and acknowledged by the fund. Check membership, whether the fund still held the contribution, any rollover/withdrawal, commencement of an income stream and contribution-splitting application. Check the deduction eligibility and age/work-test rules separately. The deadline alone does not establish validity. _(ITAA 1997 s 290-170 (https://www.ato.gov.au/law/view/document?docid=PAC/19970038/290-170))_  _(ITAA 1997 s 290-170 (https://www.ato.gov.au/law/view/document?docid=PAC/19970038/290-170))_
+- **Personal deduction notice validity** — Before claiming a personal contribution deduction, verify the notice was valid when given and acknowledged by the fund. Check membership, whether the fund still held the contribution, any rollover/withdrawal, commencement of an income stream and contribution-splitting application. Check the deduction eligibility and age/work-test rules separately. The deadline alone does not establish validity.  _(ITAA 1997 s 290-170 (https://www.ato.gov.au/law/view/document?docid=PAC/19970038/290-170))_
 
 ## Section 7 -- Excel working paper template
 
@@ -448,10 +464,6 @@ Sole trader asks about SG to self. -> $0. No obligation. Advise voluntary contri
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-> Contributed by Ryan Duguid.
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

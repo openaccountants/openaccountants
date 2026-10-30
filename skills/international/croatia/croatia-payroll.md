@@ -1,17 +1,16 @@
 ---
 name: croatia-payroll
 description: "Croatian payroll for employees in tax year 2026: monthly withholding of income tax (predujam poreza na dohodak) and the contributions run with each salary. Covers the EUR 600 basic personal allowance and the dependants' allowances, the two rates set by each local unit within the legal ranges (default 20% and 30% where no decision was taken, band EUR 5,000 a month and EUR 60,000 a year), pension Pillar I 15% and Pillar II 5% (20% for Pillar I only), the 16.5% employer health contribution, the 2026 minimum and maximum bases, the low-wage pension relief, the young-worker income tax relief, the EUR 1,050 minimum wage, the JOPPD report and its deadlines, and fines. Trigger on: Croatia payroll, plaća, bruto neto, JOPPD, predujam poreza, osobni odbitak, gross to net Croatia, employer cost Croatia. Out of scope: contribution rules in depth and the self-employed (croatia-social-contributions), annual income tax (croatia-income-tax), non-residents and treaties (hr-cross-border)."
-jurisdiction: HR
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.2
-verified_by: pending
+jurisdiction: HR
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - payroll-workflow-base
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -211,3 +210,23 @@ expected:
 | Zakon o kamatama, NN 94/04, Tax Administration register | https://porezna-uprava.gov.hr/Propisi | 2026-10-24 |
 
 Not yet confirmed: that no amendment to the Personal Income Tax Act or the Contributions Act after NN 152/24 applies in 2026 (the Tax Administration register lists none); that the City of Zagreb has not replaced its NN 28/25 decision for 2026; that the Obligations Act art. 29(2) rate for non-commercial relationships (5.40% from 1 July 2026) is the rate the Tax Administration charges on late tax and contributions, since no official text found ties them together (General Tax Act art. 130(1) points to a special regulation only); who must be a Pillar II member (Mandatory Pension Funds Act) was not read.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

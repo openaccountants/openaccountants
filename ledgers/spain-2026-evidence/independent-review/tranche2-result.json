@@ -1,0 +1,45 @@
+{
+  "verdict": "BOUNDED PASS for2 exact pairs; no country-complete verdict",
+  "pins": {
+    "es-non-resident-income-tax-irnr-and": {
+      "guide_sha256": "329094d55059fe79c3bfb5b6830d3664d5bfdaed7c61a67322662c74a0d8cc67",
+      "ledger_sha256": "e6d267324516381e9f09083d3614d8780b03da7c197d2bf239e781663c4661d0",
+      "guide_bytes": 34436,
+      "all_other_metadata_exact": true,
+      "metadata_allowed_changes": {
+        "last_updated": [
+          "2026-10-27",
+          "2026-10-28"
+        ],
+        "version": [
+          "1.0",
+          "1.1"
+        ]
+      },
+      "CTA_exact": true,
+      "CTA_present": true,
+      "old_URLs_ordered_subsequence": true,
+      "exact_inverse_operations": 5,
+      "prior_main_comparator": true
+    },
+    "es-canary-islands-igic": {
+      "guide_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "ledger_sha256": "f3fbc2f6ec343dfdd20187ba5908b028ebd7c83952a212636918cc189094f0fb",
+      "guide_bytes": 33282,
+      "all_other_metadata_exact": true,
+      "metadata_allowed_changes": {},
+      "CTA_exact": true,
+      "CTA_present": false,
+      "old_URLs_ordered_subsequence": true,
+      "exact_inverse_operations": 0,
+      "prior_main_comparator": false
+    }
+  },
+  "rows_actual_read": 215,
+  "source_pairs_rehashed": 19,
+  "own_controls": 57,
+  "canonical_oa_blocks": 4,
+  "new_guide_findings": [],
+  "restoration": "Parent-found IRNR spouse property-transfer topic independently verified and exactdelta approved",
+  "report_sha256": "fac20a3daae03c3b61277228c2b39e707d02d398b4e9392b57b61fbeec118d0e"
+}

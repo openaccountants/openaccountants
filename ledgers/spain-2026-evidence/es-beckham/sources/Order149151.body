@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="BOE-A-2023-25416 Orden HFP/1338/2023, de 13 de diciembre, por la que se aprueba el modelo 151 de Declaración del Impuesto sobre la Renta de las Personas Físicas para contribuyentes del Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español, así como el modelo 149 de Comunicación para el ejercicio de la opción por tributar por dicho régimen, y se modifica la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de no Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes." />
+    <title>BOE-A-2023-25416 Orden HFP/1338/2023, de 13 de diciembre, por la que se aprueba el modelo 151 de Declaración del Impuesto sobre la Renta de las Personas Físicas para contribuyentes del Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español, así como el modelo 149 de Comunicación para el ejercicio de la opción por tributar por dicho régimen, y se modifica la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de no Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/texto.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2023-25416"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2023-25416" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#date_document" content="2023-12-13" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#number" content="hfp1338" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/503"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1508"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4107"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6854"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2023-25416" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#date_document" content="2023-12-13" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#number" content="hfp1338" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/503"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1508"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4107"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6854"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden HFP/1338/2023, de 13 de diciembre, por la que se aprueba el modelo 151 de Declaración del Impuesto sobre la Renta de las Personas Físicas para contribuyentes del Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español, así como el modelo 149 de Comunicación para el ejercicio de la opción por tributar por dicho régimen, y se modifica la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de no Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2023-12-15" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/epub"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/epub" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/epub" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/epub" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2023/12/13/hfp1338/dof/spa"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="doc.php?lang=es&amp;id=BOE-A-2023-25416" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="doc.php?lang=ca&amp;id=BOE-A-2023-25416" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=gl&amp;id=BOE-A-2023-25416" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="doc.php?lang=eu&amp;id=BOE-A-2023-25416" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="doc.php?lang=va&amp;id=BOE-A-2023-25416" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=en&amp;id=BOE-A-2023-25416" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="doc.php?lang=fr&amp;id=BOE-A-2023-25416" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>        <li class="destino">Documento BOE-A-2023-25416</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<h2 class="fuera">Documento BOE-A-2023-25416</h2>
+<div class="enlacesDoc" id="barraSep">
+  <h3 class="documento-tit">Orden HFP/1338/2023, de 13 de diciembre, por la que se aprueba el modelo 151 de Declaración del Impuesto sobre la Renta de las Personas Físicas para contribuyentes del Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español, así como el modelo 149 de Comunicación para el ejercicio de la opción por tributar por dicho régimen, y se modifica la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de no Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes.</h3>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl>
+        <dt>Publicado en:</dt>
+        <dd>«<abbr title="Boletín Oficial del Estado">BOE</abbr>» <abbr title="número">núm.</abbr> 299, de 15 de diciembre de 2023, páginas 165465 a 165487 (23 <abbr title="páginas">págs.</abbr>)</dd>
+        <dt>Sección:</dt>
+        <dd>I. Disposiciones generales</dd>
+        <dt>Departamento:</dt>
+        <dd>Ministerio de Hacienda y Función Pública</dd>
+        <dt>Referencia:</dt>
+        <dd>BOE-A-2023-25416</dd>
+        <dt>Permalink ELI:</dt>
+        <dd>
+          <a href="https://www.boe.es/eli/es/o/2023/12/13/hfp1338" title="Permalink ELI">https://www.boe.es/eli/es/o/2023/12/13/hfp1338</a>
+        </dd>
+      </dl>
+    </div>
+    <ul class="enlaces-doc">
+      <li class="tit-enlaces">Otros formatos:</li>
+      <li class="puntoPDF">
+        <a title="Documento PDF de la publicación original" href="/boe/dias/2023/12/15/pdfs/BOE-A-2023-25416.pdf">PDF</a>
+      </li>
+      <li class="puntoEpub">
+        <a title="Libro electrónico de BOE-A-2023-25416" href="/diario_boe/epub.php?id=BOE-A-2023-25416">EPUB</a>
+      </li>
+      <li class="puntoXML">
+        <a target="_blank" title="Texto y metadatos en formato XML" href="/diario_boe/xml.php?id=BOE-A-2023-25416">XML</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .metadatosDoc -->
+</div>
+<!-- .enlacesDoc -->
+<div class="pretexto">
+  <div class="tabs">
+    <input name="tabs" type="radio" id="tab-texto" class="input" checked="checked"/>
+    <label for="tab-texto" class="label">Texto</label>
+    <div id="DOdocText" class="panel">
+      <h4>TEXTO ORIGINAL</h4>
+      <div id="textoxslt">
+        <p class="parrafo">Con efectos desde 1 de enero de 2023, el artículo 93 de la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio (en adelante, Ley 35/2006), que regula el régimen fiscal especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español, ha sido objeto de modificación por la disposición final tercera de la Ley 28/2022, de 21 de diciembre, de fomento del ecosistema de las empresas emergentes.</p>
+        <p class="parrafo">Conforme al citado artículo 93, las personas físicas que adquieran su residencia fiscal en España como consecuencia de su desplazamiento a territorio español podrán optar por tributar por las normas del Impuesto sobre la Renta de no Residentes para las rentas obtenidas sin mediación de establecimiento permanente, con ciertas reglas especiales, manteniendo la condición de contribuyentes por el Impuesto sobre la Renta de las Personas Físicas, durante el período impositivo en que se efectúe el cambio de residencia y durante los cinco períodos impositivos siguientes, cuando se cumplan las condiciones y circunstancias previstas en el apartado 1 del artículo 93 de la Ley 35/2006, de 28 de noviembre.</p>
+        <p class="parrafo">También podrán optar por el régimen especial, manteniendo la condición de contribuyentes por el Impuesto sobre la Renta de las Personas Físicas, el cónyuge del contribuyente y sus hijos, menores de veinticinco años o cualquiera que sea su edad en caso de discapacidad, o en el supuesto de inexistencia de vínculo matrimonial, el progenitor de estos, siempre que se cumplan ciertas condiciones (en adelante contribuyentes asociados). En el caso de los integrantes del núcleo familiar, el régimen especial resultará de aplicación durante los sucesivos períodos impositivos en los que, cumpliéndose las condiciones exigidas, el mismo resulte también de aplicación al contribuyente a que se refiere el citado apartado 1 del artículo 93 de la ley del impuesto (en adelante contribuyente principal).</p>
+        <p class="parrafo">En este sentido, cabe señalar como aspectos más novedosos de la norma modificada, por un lado, la reducción a cinco años del período previo de no residencia en España y, por otro, la ampliación de la posibilidad de opción por el régimen especial a nuevos supuestos, teletrabajadores, emprendedores, profesionales altamente cualificados que presten servicios en empresas emergentes y personas que lleven a cabo determinadas actividades de formación, investigación, desarrollo e innovación, así como a las personas de su entorno familiar, bajo ciertas condiciones.</p>
+        <p class="parrafo">El desarrollo reglamentario de este régimen especial se encuentra en los artículos 113 a 120 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por Real Decreto 439/2007, de 30 de marzo (en adelante, Reglamento del Impuesto sobre la Renta de las Personas Físicas), en la redacción dada por el Real Decreto 1008/2023, de 5 de diciembre, por el que se modifican el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de 30 de marzo, en materia de retribuciones en especie, deducción por maternidad, obligación de declarar, pagos a cuenta y régimen especial aplicable a trabajadores, profesionales, emprendedores e inversores desplazados a territorio español, y el Reglamento del Impuesto sobre Sociedades, aprobado por el Real Decreto 634/2015, de 10 de julio, en materia de retenciones e ingresos a cuenta.</p>
+        <p class="parrafo">El ejercicio de la opción de tributar por este régimen especial, tal como dispone el artículo 116.1 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, deberá realizarse por los contribuyentes mediante una comunicación dirigida a la Administración tributaria.</p>
+        <p class="parrafo">La opción ha de ser individual de cada contribuyente, tanto para el contribuyente principal como para cada uno de los contribuyentes asociados al mismo que deseen optar, si bien los contribuyentes asociados deben identificar en su comunicación de opción la previa comunicación presentada por el contribuyente principal, tal como establece el artículo 119.3 del Reglamento del Impuesto sobre la Renta de las Personas Físicas.</p>
+        <p class="parrafo">El artículo 93.1 de la Ley 35/2006, de 28 de noviembre, dispone que la persona titular del Ministerio de Hacienda y Función Pública establecerá el procedimiento para el ejercicio de la opción por el régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español.</p>
+        <p class="parrafo">Conforme establece el artículo 119 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, la opción por la aplicación del régimen especial del artículo 93 de la Ley 35/2006 se ejercitará mediante una comunicación a la Administración tributaria, a través del modelo que apruebe la persona titular del Ministerio de Hacienda y Función Pública, quien establecerá la forma y lugar de su presentación. Asimismo, según se establece en los artículos 117, 118 y 119.5 de ese mismo reglamento, los contribuyentes deberán comunicar a la Administración tributaria, mediante el mismo modelo de comunicación, la renuncia o la exclusión del régimen, así como el fin del desplazamiento a efectos de lo dispuesto en el artículo 114.2.a) del citado reglamento.</p>
+        <p class="parrafo">El artículo 114.4 del Reglamento del Impuesto sobre la Renta de las Personas Físicas determina que los contribuyentes a los que resulte de aplicación este régimen especial estarán obligados a presentar y suscribir declaración por el Impuesto sobre la Renta de las Personas Físicas, en el modelo especial que se apruebe por la persona titular del Ministerio de Hacienda y Función Pública, el cual establecerá la forma, lugar y plazos de su presentación. Igualmente dispone que, al tiempo de presentar su declaración, deberán determinar la deuda tributaria correspondiente e ingresarla en el lugar, la forma y los plazos que determine la persona titular del Ministerio de Hacienda y Función Pública.</p>
+        <p class="parrafo">Mediante la presente orden se procede a aprobar los modelos de comunicación y de declaración adaptados al contenido del régimen en su versión vigente desde 1 de enero de 2023. A tal fin, se aprueba un nuevo modelo 149 de comunicación de la opción, de la renuncia y de la exclusión, así como de la finalización del desplazamiento a territorio español a los efectos de lo previsto en el artículo 114.2.a) del Reglamento del Impuesto sobre la Renta de las Personas Físicas. Asimismo, se aprueba un nuevo modelo especial de declaración del Impuesto sobre la Renta de las Personas Físicas del régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español, modelo 151. Atendiendo a las especiales características y condiciones de los contribuyentes que pueden aplicar este régimen fiscal especial, trabajadores desplazados, teletrabajadores, profesionales altamente cualificados, personas que realizan actividades de formación, investigación, desarrollo e innovación y emprendedores, la vía de presentación de estos modelos será electrónica.</p>
+        <p class="parrafo">Por otra parte, se modifica la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de no Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes, para introducir una modificación que permita una mejora en la gestión de las autoliquidaciones modelo 210 cuando las rentas declaradas sean rendimientos derivados del arrendamiento de inmuebles, de modo que, en ese supuesto, la «persona que realiza la autoliquidación» ha de ser necesariamente el propio contribuyente, así como otras mejoras de carácter eminentemente técnico.</p>
+        <p class="parrafo">De acuerdo con lo dispuesto en la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la elaboración de esta orden se ha efectuado de acuerdo con los principios de necesidad, eficacia, proporcionalidad, seguridad jurídica, transparencia y eficiencia.</p>
+        <p class="parrafo">Se cumplen los principios de necesidad y eficacia por ser desarrollo de la norma reglamentaria y el instrumento adecuado para dicho desarrollo.</p>
+        <p class="parrafo">Se cumple también el principio de proporcionalidad al contener la regulación necesaria para conseguir los objetivos que justifican su aprobación.</p>
+        <p class="parrafo">Respecto al principio de seguridad jurídica, se ha garantizado la coherencia del texto con el resto del ordenamiento jurídico nacional, generando un marco normativo estable, predecible, integrado, claro y de certidumbre que facilita su conocimiento y comprensión y, en consecuencia, la actuación y toma de decisiones de los diferentes sujetos afectados sin introducción de cargas administrativas innecesarias.</p>
+        <p class="parrafo">El principio de transparencia, sin perjuicio de su publicación oficial en el «Boletín Oficial del Estado», se ha garantizado mediante la publicación del proyecto de orden y su correspondiente memoria en el portal web del Ministerio de Hacienda y Función Pública, a efectos de que puedan ser conocidos dichos textos en el trámite de audiencia e información pública por todos los ciudadanos.</p>
+        <p class="parrafo">Por último, en relación con el principio de eficiencia se ha procurado que la norma genere las menores cargas administrativas para los ciudadanos, así como los menores costes indirectos, fomentando el uso racional de los recursos públicos y el pleno respeto a los principios de estabilidad presupuestaria y sostenibilidad financiera.</p>
+        <p class="parrafo">La disposición final segunda número 2 del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes señala que los modelos de declaración de este impuesto y los de sus pagos a cuenta se aprobarán por el Ministro de Hacienda, que establecerá la forma, lugar y plazos para su presentación, así como los supuestos y condiciones de su presentación por medios telemáticos.</p>
+        <p class="parrafo">Por otro lado, la disposición final única del Reglamento del Impuesto sobre la Renta de no Residentes autoriza al Ministro de Economía y Hacienda para dictar las disposiciones necesarias para la aplicación de dicho reglamento.</p>
+        <p class="parrafo">Las habilitaciones anteriores deben entenderse conferidas en la actualidad a la Ministra de Hacienda y Función Pública, de acuerdo con lo dispuesto en el artículo 5 y en la disposición final segunda del Real Decreto 2/2020, de 12 de enero, por el que se reestructuran los departamentos ministeriales, modificado por Real Decreto 507/2021, de 10 de julio.</p>
+        <p class="parrafo">En su virtud, dispongo:</p>
+        <h5 class="articulo">Artículo 1. Aprobación del modelo 151 de «Declaración del Impuesto sobre la Renta de las Personas Físicas. Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español».</h5>
+        <p class="parrafo">Se aprueba el modelo de declaración del Impuesto sobre la Renta de las Personas Físicas del régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español y el documento de ingreso o devolución, consistentes en:</p>
+        <p class="parrafo_2">a) Modelo 151. «Declaración del Impuesto sobre la Renta de las Personas Físicas. Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español», que figura en el anexo I de la presente orden.</p>
+        <p class="parrafo">b) Documento de ingreso o devolución de la declaración del Impuesto sobre la Renta de las Personas Físicas del régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español, que figura en el anexo I de la presente orden. El número de justificante que habrá de aparecer en este documento será un número secuencial cuyos tres primeros dígitos se corresponderán con el código 151.</p>
+        <h5 class="articulo">Artículo 2. Obligados a presentar el modelo 151 de «Declaración del Impuesto sobre la Renta de las Personas Físicas. Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español».</h5>
+        <p class="parrafo">De acuerdo con lo dispuesto en el artículo 114 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por Real Decreto 439/2007, de 30 de marzo (en adelante, Reglamento del Impuesto sobre la Renta de las Personas Físicas), los contribuyentes del citado Impuesto a los que resulte de aplicación el régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español estarán obligados a presentar y suscribir el modelo de declaración aprobado en el artículo 1 de esta orden.</p>
+        <h5 class="articulo">Artículo 3. Plazo y formas de presentación del modelo 151 de «Declaración del Impuesto sobre la Renta de las Personas Físicas. Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español».</h5>
+        <p class="parrafo">1. El plazo de presentación de las declaraciones del Impuesto sobre la Renta de las Personas Físicas del régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español será el mismo que se apruebe cada ejercicio, con carácter general, para las declaraciones del Impuesto sobre la Renta de las Personas Físicas, sin perjuicio del plazo específicamente establecido en el artículo 4.2 de esta orden para la domiciliación bancaria del pago de las deudas tributarias resultantes de las declaraciones.</p>
+        <p class="parrafo">2. El modelo 151 de Declaración del Impuesto sobre la Renta de las Personas Físicas del régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español así como el correspondiente documento de ingreso o devolución, se presentarán de forma electrónica a través de Internet, de acuerdo con lo previsto en la letra a) del artículo 2 de la Orden HAP/2194/2013, de 22 de noviembre, por la que se regulan los procedimientos y las condiciones generales para la presentación de determinadas autoliquidaciones, declaraciones informativas, declaraciones censales, comunicaciones y solicitudes de devolución, de naturaleza tributaria.</p>
+        <h5 class="articulo">Artículo 4. Habilitación, condiciones generales y procedimiento para la presentación electrónica por Internet del modelo 151 de «Declaración del Impuesto sobre la Renta de las Personas Físicas. Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español».</h5>
+        <p class="parrafo">1. La presentación electrónica por Internet de las declaraciones correspondientes al modelo 151 se efectuará con sujeción a la habilitación y condiciones del artículo 6 de la Orden HAP/2194/2013, de 22 de noviembre, y de acuerdo con el procedimiento establecido en los artículos 7 a 11 de esa misma orden.</p>
+        <p class="parrafo">2. Cuando se trate de una declaración con resultado a ingresar y se pretenda realizar el pago mediante domiciliación bancaria, esta podrá realizarse desde el inicio del plazo hasta, con carácter general, cinco días antes de que finalice el plazo de presentación a que se refiere el artículo 3.1 de esta orden.</p>
+        <h5 class="articulo">Artículo 5. Procedimiento para la presentación electrónica por Internet de documentación complementaria a la declaración modelo 151 de «Declaración del Impuesto sobre la Renta de las Personas Físicas. Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español».</h5>
+        <p class="parrafo">Cuando los contribuyentes deban acompañar a la declaración cualquier documentación, solicitudes o manifestaciones de opciones no contempladas expresamente en el propio modelo de declaración, dicha documentación se presentará por vía electrónica con arreglo al procedimiento establecido en el artículo 18 de la Orden HAP/2194/2013, de 22 de noviembre.</p>
+        <h5 class="articulo">Artículo 6. Aprobación del modelo 149 de comunicación de la opción, de la renuncia a la misma, de la exclusión o del fin del desplazamiento, del régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español.</h5>
+        <p class="parrafo">Se aprueba el modelo 149 «Impuesto sobre la Renta de las Personas Físicas. Régimen especial aplicable a los trabajadores profesionales, emprendedores e inversores desplazados a territorio español. Comunicación de la opción, renuncia, exclusión, o del fin del desplazamiento», que figura como anexo II de la presente orden.</p>
+        <h5 class="articulo">Artículo 7. Ámbito subjetivo, plazo de presentación y documentación a adjuntar con la comunicación modelo 149.</h5>
+        <p class="parrafo">1. Los contribuyentes que deseen ejercitar la opción de tributar por el régimen especial a que se refiere el artículo 93 de la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio, deberán utilizar el modelo de comunicación 149 aprobado en el artículo anterior. Para ello, deberán estar incluidos en el Censo de Obligados Tributarios. En caso contrario, solicitarán previamente el alta en dicho Censo mediante la presentación de la declaración censal correspondiente.</p>
+        <p class="parrafo">A los efectos de esta comunicación modelo 149, se entenderá por contribuyente principal al contribuyente a que se refiere el apartado 1 del artículo 93 de la Ley Impuesto sobre la Renta de las Personas Físicas y por contribuyentes asociados aquéllos contribuyentes a que se refiere el apartado 3 de dicho artículo 93.</p>
+        <p class="parrafo">La comunicación de la opción se efectuará de forma individual por cada contribuyente, de acuerdo a lo dispuesto en el artículo 116.1 del Reglamento del Impuesto sobre la Renta de las Personas Físicas. La comunicación de la opción por el contribuyente principal se realizará con anterioridad a la de sus contribuyentes asociados.</p>
+        <p class="parrafo">2. Conforme establece el artículo 119.2 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, a la comunicación de la opción del contribuyente principal se adjuntará la documentación justificativa del alta en la Seguridad Social en España o la documentación que permita el mantenimiento de la legislación de Seguridad Social de origen o, en caso de que no fuera obligatoria el alta en la Seguridad Social, documento justificativo de la fecha de inicio de la actividad, la autorización de residencia que corresponda, en su caso, y la siguiente documentación:</p>
+        <p class="parrafo_2">a) Cuando se inicie una relación laboral, ordinaria o especial, o estatutaria con un empleador en España, un documento justificativo emitido por el empleador en el que se exprese el reconocimiento de la relación laboral o estatutaria con el contribuyente, la fecha de inicio de la actividad que conste en el alta en la Seguridad Social en España, el centro de trabajo y su dirección, así como la duración del contrato de trabajo.</p>
+        <p class="parrafo">b) Cuando se trate de un desplazamiento ordenado por su empleador, copia de la carta de desplazamiento del empleador, así como un documento justificativo emitido por éste en el que se exprese la fecha de inicio de la actividad que conste en el alta en la Seguridad Social en España o en la documentación que permita, en su caso, el mantenimiento de la legislación de Seguridad Social de origen, el centro de trabajo y su dirección, así como la duración de la orden de desplazamiento.</p>
+        <p class="parrafo">c) Cuando, sin ser ordenado por el empleador, la actividad laboral se preste a distancia mediante el uso exclusivo de medios y sistemas informáticos, telemáticos y de telecomunicación, un documento justificativo emitido por el empleador en el que se exprese el reconocimiento de la relación laboral con el contribuyente, la fecha de inicio de la actividad que conste en el alta en la Seguridad Social en España o en la documentación que permita, en su caso, el mantenimiento de la legislación de Seguridad Social de origen, así como la duración estimada de la prestación de la actividad laboral en España.</p>
+        <p class="parrafo">d) Cuando se trate de desplazamientos como consecuencia de la adquisición de la condición de administrador de una entidad, un documento justificativo emitido por la entidad en el que se exprese la fecha de adquisición de la condición de administrador y, en el caso de que la entidad tenga la consideración de entidad patrimonial en los términos previstos en el artículo 5.2 de la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades, que la participación del contribuyente en la entidad no determina la condición de entidad vinculada en los términos previstos en el artículo 18 de la Ley del Impuesto sobre Sociedades.</p>
+        <p class="parrafo">e) Cuando se trate de desplazamientos como consecuencia de la realización en España de una actividad económica calificada como actividad emprendedora, el informe favorable emitido por la Empresa Nacional de Innovación, SME (ENISA), el cual será solicitado directamente por el contribuyente a ENISA, a través de la Dirección General de Industria y de la Pequeña y Mediana Empresa, salvo que la autorización de residencia aportada sea la de residencia para emprendedores a que se refiere el artículo 69 de la Ley 14/2013, de 27 de septiembre, de apoyo a los emprendedores y su internacionalización.</p>
+        <p class="parrafo">f) Cuando se trate de desplazamientos como consecuencia de la realización en España de una actividad económica por parte de un profesional altamente cualificado que preste servicios a empresas emergentes en el sentido del artículo 3 de la Ley 28/2022, de 21 de diciembre, de fomento del ecosistema de las empresas emergentes, la documentación justificativa de la condición de profesional altamente cualificado, salvo que la autorización de residencia aportada sea la de profesional altamente cualificado a que se refiere el artículo 71 de la Ley 14/2013, de 27 de septiembre, de apoyo a los emprendedores y su internacionalización, la acreditación de la inscripción de la empresa a la que preste servicios como empresa emergente en el Registro Mercantil o en el Registro de Cooperativas competente, salvo que exista un procedimiento habilitado para la comprobación online de esa circunstancia, así como un documento justificativo de la prestación de servicios a dicha empresa emergente.</p>
+        <p class="parrafo">g) Cuando se trate de desplazamientos como consecuencia de la realización en España de actividades de formación, investigación, desarrollo e innovación, un documento justificativo de la realización de esas actividades a que se refiere el artículo 113.2 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, salvo que la autorización de residencia aportada sea la de formación, investigación, desarrollo e innovación a que se refiere el artículo 72 de la Ley 14/2013, de 27 de septiembre, de apoyo a los emprendedores y su internacionalización.</p>
+        <p class="parrafo_2">3. Conforme establece el artículo 119.3 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, a la comunicación de la opción de un contribuyente asociado se adjuntará la documentación que acredite la vinculación con el contribuyente principal que determine el derecho a la opción por el régimen especial.</p>
+        <p class="parrafo">La situación de discapacidad se entenderá acreditada cuando se haya solicitado el correspondiente certificado o resolución expedido por el Instituto de Migraciones y Servicios Sociales o el órgano competente de las Comunidades Autónomas al que se refiere el artículo 72 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, aunque dicho certificado o resolución no se hubiera emitido en el momento de ejercitar la opción. No obstante, la aplicación del régimen especial quedará condicionada al reconocimiento de la situación de discapacidad.</p>
+        <p class="parrafo">4. La comunicación de la opción, según dispone el artículo 116.1 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, se presentará en el siguiente plazo máximo:</p>
+        <p class="parrafo_2">a) en el caso de un contribuyente principal, seis meses desde la fecha de inicio de la actividad que conste en el alta en la Seguridad Social en España o en la documentación que permita, en su caso, el mantenimiento de la legislación de Seguridad Social de origen o, en caso de que no fuera obligatoria el alta en la Seguridad Social, en la fecha de inicio de la actividad que conste en un documento justificativo.</p>
+        <p class="parrafo">b) en el caso de los contribuyentes asociados, seis meses desde la fecha de su entrada en territorio español o en el plazo previsto en la letra a) anterior para el contribuyente principal, si fuera mayor.</p>
+        <p class="parrafo_2">La oficina gestora competente, a la vista de la comunicación de la opción presentada y de la documentación adjunta, expedirá al contribuyente, si procede, en el plazo máximo de los diez días hábiles siguientes al de presentación de la comunicación, un documento acreditativo de haber ejercitado la opción por este régimen especial, conforme al modelo que figura como anexo III de esta orden.</p>
+        <p class="parrafo">5. La comunicación de la renuncia a la aplicación del régimen especial se realizará también mediante la presentación del modelo 149. Se presentará durante los meses de noviembre y diciembre, conforme dispone el artículo 117.1 del citado reglamento.</p>
+        <p class="parrafo">En el caso de trabajadores por cuenta ajena, a la comunicación de la renuncia se adjuntará la copia sellada de la comunicación de datos al retenedor prevista en el artículo 88 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, como establece el artículo 117.2 de dicho reglamento.</p>
+        <p class="parrafo">6. La comunicación de la exclusión del régimen especial se realizará igualmente mediante la presentación del modelo 149.</p>
+        <p class="parrafo">La comunicación de la exclusión se presentará en el plazo de un mes desde el incumplimiento de las condiciones que determinaron la aplicación del régimen, según dispone el artículo 118.2 del Reglamento del Impuesto sobre la Renta de las Personas Físicas.</p>
+        <p class="parrafo">Cuando un contribuyente principal hubiera comunicado su renuncia o exclusión no será necesario que los contribuyentes asociados al mismo comuniquen su exclusión del régimen a la Administración tributaria.</p>
+        <p class="parrafo">7. Asimismo, cuando el contribuyente finalice su desplazamiento a territorio español sin perder la residencia fiscal en España en dicho ejercicio, se utilizará el modelo 149 para comunicar la finalización del desplazamiento a efectos de que no se entiendan obtenidos durante la aplicación del régimen especial los rendimientos que deriven de una actividad desarrollada con posterioridad a la fecha de presentación de la comunicación.</p>
+        <p class="parrafo">Esta comunicación se presentará en el plazo de un mes desde que hubiera finalizado el desplazamiento a territorio español, conforme establece el artículo 119.5 del Reglamento del Impuesto sobre la Renta de las Personas Físicas.</p>
+        <h5 class="articulo">Artículo 8. Formas de presentación de la comunicación modelo 149.</h5>
+        <p class="parrafo">La comunicación modelo 149, ajustada al modelo aprobado por esta orden, se presentará de forma electrónica a través de Internet, de acuerdo con lo previsto en la letra a) del artículo 19 de la Orden HAP/2194/2013, de 22 de noviembre.</p>
+        <h5 class="articulo">Artículo 9. Habilitación, condiciones generales y procedimiento para la presentación por Internet de la comunicación modelo 149.</h5>
+        <p class="parrafo">La presentación electrónica por Internet de la comunicación modelo 149 se efectuará con sujeción a la habilitación y condiciones del artículo 20 de la Orden HAP/2194/2013, de 22 de noviembre, y de acuerdo con el procedimiento establecido en el artículo 21 de esa misma orden.</p>
+        <h5 class="articulo">Artículo 10. Procedimiento para la presentación electrónica por Internet de documentación complementaria a la comunicación modelo 149.</h5>
+        <p class="parrafo">En el caso de comunicación de la opción por el régimen, de forma previa a la presentación del modelo 149 de comunicación, se accederá a un trámite específico «Aportar documentación necesaria para optar por el régimen especial» para el envío por vía electrónica a través de Internet de la documentación que debe acompañarse a esa comunicación. El número de registro del envío de esa documentación debe constar en el correspondiente modelo de comunicación 149 de opción por el régimen.</p>
+        <p class="parrafo">En otro caso, cuando los contribuyentes acompañen a la comunicación documentación indicada en el artículo 7 de esta orden y, en general, cualesquiera documentos, solicitudes o manifestaciones, la citada documentación se presentará por vía electrónica a través de Internet con arreglo al procedimiento establecido en el artículo 18 de la Orden HAP/2194/2013, de 22 de noviembre, mediante la opción «Aportar documentación complementaria».</p>
+        <h5 class="articulo">Artículo 11. Plazo de presentación de la comunicación de datos del perceptor de rentas del trabajo a su pagador, modelo 145, en el supuesto de exclusión del régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español.</h5>
+        <p class="parrafo">Cuando, conforme al artículo 118.3 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, se comunique al retenedor la exclusión del régimen especial por incumplimiento de alguna de las condiciones determinantes de su aplicación, el plazo de diez días a que se refiere el segundo párrafo del artículo 88.4 del Reglamento del Impuesto sobre la Renta de las Personas Físicas se contará desde que finalice el plazo de un mes previsto en el artículo 118.2 de ese mismo Reglamento para la comunicación de la exclusión a la Administración tributaria.</p>
+        <h5 class="articulo">Disposición adicional única. Referencias normativas.</h5>
+        <p class="parrafo">Las referencias contenidas en otras normas al «Régimen especial aplicable a los trabajadores desplazados a territorio español» se entenderán efectuadas al «Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español».</p>
+        <h5 class="articulo">Disposición transitoria única. Plazo para el ejercicio de la opción por el régimen especial del artículo 93 de la Ley del Impuesto sobre la Renta de las Personas Físicas para desplazamientos producidos con anterioridad a la entrada en vigor de la presente orden.</h5>
+        <p class="parrafo">El plazo para el ejercicio de la opción por el régimen especial previsto en el artículo 93 de la Ley del Impuesto para los contribuyentes que adquieran su residencia fiscal en España en el período impositivo 2023, como consecuencia de un desplazamiento realizado a territorio español en 2022 o en 2023 antes de la entrada en vigor de esta orden, será de seis meses desde la fecha de entrada en vigor de esta orden, salvo cuando el artículo 116 del Reglamento del Impuesto le otorgue un plazo superior.</p>
+        <p class="parrafo">En el supuesto de que el desplazamiento a que se refiere el párrafo anterior hubiera venido determinado por el inicio de una relación laboral, ordinaria o especial, o estatutaria con un empleador en España, por venir ordenado por su empleador o cuando sin ser ordenado, la actividad laboral se preste a distancia, o como consecuencia de la adquisición de la condición de administrador de una entidad, también podrán ejercer la opción por el citado régimen especial con anterioridad a la fecha de entrada en vigor de esta orden, aplicando a tal efecto lo dispuesto en el artículo 119 del Reglamento del Impuesto en su redacción vigente a 31 de diciembre de 2022.</p>
+        <p class="parrafo">No obstante, en el caso de los trabajadores que presten servicios a distancia a que se refiere el párrafo anterior deberán remitir a la Agencia Estatal de Administración Tributaria la documentación prevista en el artículo 119 del Reglamento del Impuesto, en el plazo establecido en el primer párrafo de esta disposición.</p>
+        <h5 class="articulo">Disposición derogatoria única. Derogación normativa.</h5>
+        <p class="parrafo">A partir de la entrada en vigor de la presente orden quedan derogados los artículos 6 a 10 de la Orden HAP/2783/2015, de 21 de diciembre, por la que se aprueba el modelo 151 de declaración del Impuesto sobre la Renta de las Personas Físicas para contribuyentes del régimen especial aplicable a los trabajadores desplazados a territorio español, así como el modelo 149 de comunicación para el ejercicio de la opción por tributar por dicho régimen, y se modifican la Orden HAP/1136/2014, de 30 de junio, por la que se regulan determinadas cuestiones relacionadas con las obligaciones de información y diligencia debida establecidas en el acuerdo entre el Reino de España y los Estados Unidos de América para la mejora del cumplimiento fiscal internacional y la aplicación de la ley estadounidense de cumplimiento tributario de cuentas extranjeras y se aprueba la declaración informativa anual de cuentas financieras de determinadas personas estadounidenses, modelo 290, y otra normativa tributaria.</p>
+        <h5 class="articulo">Disposición final primera. Modificación de la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de no Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes.</h5>
+        <p class="parrafo">Se introducen las siguientes modificaciones en la Orden EHA/3316/2010, de 17 de diciembre:</p>
+        <p class="parrafo_2">Uno. Se modifica el número 2 del artículo 2 «Contenido del modelo 210», que quedará con la siguiente redacción:</p>
+        <blockquote class="sangrado">
+      <p class="parrafo_2">«2. Cuando las rentas declaradas sean derivadas del arrendamiento o subarrendamiento de bienes inmuebles, rentas imputadas de inmuebles urbanos o rentas derivadas de transmisiones de bienes inmuebles, debe figurar como persona que realiza la autoliquidación el propio contribuyente.»</p>
+    </blockquote>
+        <p class="parrafo_2">Dos. Se modifica el número 1 del artículo 11 «Lugar de presentación e ingreso de los modelos 210, 211 y 213, en formato papel obtenido del servicio de impresión», que quedará con la siguiente redacción:</p>
+        <blockquote class="sangrado">
+      <p class="parrafo_2">«1. En el caso de autoliquidaciones a ingresar, modelos 210, 211 y 213, excepto cuando se utilice el procedimiento previsto en el artículo 14, la presentación e ingreso se realizará en cualquier entidad colaboradora en la gestión recaudatoria sita en territorio español.</p>
+      <p class="parrafo">Una vez presentada la autoliquidación, modelos 210, 211 ó 213, en la entidad colaboradora, en general, no debe ensobrarse ni remitirse a la Agencia Estatal de Administración Tributaria.</p>
+      <p class="parrafo">No obstante, cuando conforme a lo previsto en los artículos 7 y 9, deba acompañarse a las autoliquidaciones 210 o 213 alguna documentación, se hará constar en la misma el concepto IMPUESTO SOBRE LA RENTA DE NO RESIDENTES y el número de justificante del documento de ingreso que figure en la autoliquidación. La documentación podrá presentarse en el registro presencial de la Delegación de la Agencia Estatal de Administración Tributaria competente, o Administraciones dependientes de la misma, o de la Delegación Central de Grandes Contribuyentes o de las Unidades de Gestión de Grandes Empresas correspondientes, en cuanto a las autoliquidaciones realizadas por obligados tributarios adscritos a las mismas, o en las formas previstas en el apartado 4 del artículo 16 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.»</p>
+    </blockquote>
+        <h5 class="articulo">Disposición final segunda. Entrada en vigor.</h5>
+        <p class="parrafo">La presente orden entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado». No obstante:</p>
+        <p class="parrafo_2">a) El modelo 151 de «Declaración del Impuesto sobre la Renta de las Personas Físicas. Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español» aprobado en esta orden se utilizará por primera vez para la presentación de la declaración correspondiente al período impositivo 2023 a presentar en 2024.</p>
+        <p class="parrafo">b) Las modificaciones a que se refiere la disposición final primera se aplicarán a las autoliquidaciones modelo 210 presentadas a partir de la entrada en vigor de la presente orden.</p>
+        <p class="parrafo_2">Madrid, 13 de diciembre de 2023.–La Vicepresidenta Cuarta del Gobierno y Ministra de Hacienda y Función Pública, María Jesús Montero Cuadrado.</p>
+        <h5 class="anexo_num">ANEXO I</h5>
+        <h5 class="anexo_tit">Declaración del Impuesto sobre la Renta de las Personas Físicas. Régimen especial aplicable a los trabajadores, profesionales, emprendedores e inversores desplazados a territorio español</h5>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_1.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_1.png" width="728"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_2.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_2.png" width="728"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_3.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_3.png" width="728"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_4.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_4.png" width="728"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_5.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_5.png" width="728"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_6.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_6.png" width="728"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_7.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_7.png" width="728"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_8.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_8.png" width="728"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_9.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_9.png" width="728"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_10.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_10.png" width="728"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_11.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_11.png" width="728"/>
+        </p>
+        <h5 class="anexo">ANEXO II</h5>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_12.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_12.png" width="728"/>
+        </p>
+        <h5 class="anexo_num">ANEXO III</h5>
+        <h5 class="anexo_tit">Certificado de haber ejercitado la opción por el Régimen Especial del artículo 93 de la Ley del Impuesto sobre la Renta de las Personas Físicas</h5>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2023/299/25416_13894256_13.png" class="frame" alt="Imagen: /datos/imagenes/disp/2023/299/25416_13894256_13.png" width="728"/>
+        </p>
+      </div>
+      <!-- #textoxslt -->
+    </div>
+    <!-- #DOdocText -->
+    <input name="tabs" type="radio" id="tab-analisis" class="input"/>
+    <label for="tab-analisis" class="label">Análisis</label>
+    <div class="panel" id="panelAnalisis">
+      <div id="analisis" class="analisisDoc">
+<h4>ANÁLISIS</h4>
+<ul class="bullet-boe">
+  <li>Rango: Orden</li>
+  <li>Fecha de disposición: 13/12/2023</li>
+  <li>Fecha de publicación: 15/12/2023</li>
+  <li>Fecha de entrada en vigor: 16/12/2023</li>
+  <li>Aplicable en la forma indicada en la disposición final 2.</li>
+</ul>
+<h5>Referencias anteriores</h5>
+<ul class="bullet-boe">
+  <li>DEROGA los arts. 6 a 10 de la Orden HAP/2783/2015, de 21 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2015-14021">BOE-A-2015-14021</a>).</li>
+  <li>MODIFICA los arts. 2.2 y 11.1 de la Orden EHA/3316/2010, de 17 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2010-19707">BOE-A-2010-19707</a>).</li>
+  <li>DE CONFORMIDAD con el art. 93 de la Ley 35/2006, de 28 de noviembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2006-20764">BOE-A-2006-20764</a>).</li>
+</ul>
+<h5>Materias</h5>
+<ul class="bullet-boe">
+  <li>Administración electrónica</li>
+  <li>Bienes inmuebles</li>
+  <li>Formularios administrativos</li>
+  <li>Impuesto sobre la Renta de las Personas Físicas</li>
+  <li>Internet</li>
+  <li>Recaudación</li>
+  <li>Sistema tributario</li>
+  <li>Telecomunicaciones</li>
+</ul>
+</div>
+    </div>
+  </div>
+</div>
+<p class="linkSubir"><a href="#top">subir</a></p>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>

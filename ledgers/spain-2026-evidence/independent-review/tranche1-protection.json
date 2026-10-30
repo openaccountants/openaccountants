@@ -1,0 +1,91 @@
+{
+  "pins": {
+    "es-beckham": {
+      "guide_sha256": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02",
+      "guide_bytes": 23912,
+      "ledger_sha256": "977e773de5fa24cc7b4feb88c05bbe05137a7c5cc1132ed5c94802dcb465e925"
+    },
+    "es-modelo-111": {
+      "guide_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "guide_bytes": 25444,
+      "ledger_sha256": "323f795bfb6d1a2b865ff5cc419b39d872d6f63df02f7e4d3843227e64b3f5c6"
+    },
+    "es-estimated-tax": {
+      "guide_sha256": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+      "guide_bytes": 36751,
+      "ledger_sha256": "8c3f32ab844c98129f295317534e711b5f21c9914049f50a0b2519fa13b1c8c9"
+    },
+    "spain-transfer-pricing": {
+      "guide_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "guide_bytes": 31683,
+      "ledger_sha256": "8fcbf7ccd6a8b44922db500eac09386b2ce65de894c9cf8aa6d902831d8231d4"
+    }
+  },
+  "checks": {
+    "es-beckham": {
+      "metadata9": {
+        "name": true,
+        "jurisdiction": true,
+        "tax_year": true,
+        "last_updated": true,
+        "review_status": true,
+        "trust_label": true,
+        "category": true,
+        "tier": true,
+        "license": true
+      },
+      "CTA_exact": true,
+      "all_old_URLs_ordered_subsequence": true,
+      "change_scope": "7 exact source-backed operations separately checked; first oa exact, second intentionally corrected, no other change"
+    },
+    "es-modelo-111": {
+      "metadata9": {
+        "name": true,
+        "jurisdiction": true,
+        "tax_year": true,
+        "last_updated": true,
+        "review_status": true,
+        "trust_label": true,
+        "category": true,
+        "tier": true,
+        "license": true
+      },
+      "CTA_exact": true,
+      "all_old_URLs_ordered_subsequence": true,
+      "change_scope": "Full Guide byte-exact to supplied frozen body"
+    },
+    "es-estimated-tax": {
+      "metadata9": {
+        "name": true,
+        "jurisdiction": true,
+        "tax_year": true,
+        "last_updated": true,
+        "review_status": true,
+        "trust_label": true,
+        "category": true,
+        "tier": true,
+        "license": true
+      },
+      "CTA_exact": true,
+      "all_old_URLs_ordered_subsequence": true,
+      "change_scope": "Full Guide byte-exact to supplied frozen body"
+    },
+    "spain-transfer-pricing": {
+      "metadata9": {
+        "name": true,
+        "jurisdiction": true,
+        "tax_year": true,
+        "last_updated": true,
+        "review_status": true,
+        "trust_label": true,
+        "category": true,
+        "tier": true,
+        "license": true
+      },
+      "CTA_exact": true,
+      "all_old_URLs_ordered_subsequence": true,
+      "change_scope": "Full Guide byte-exact to supplied frozen body"
+    }
+  },
+  "old_map_scope": "All original-wording/ref/LF identities mechanically unchanged for111/estimated; semantic destination spotchecks actually read, not every old unit freshly read. Beckham/TP initial history also retained."
+}

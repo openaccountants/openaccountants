@@ -26,6 +26,18 @@ This skill covers Egyptian **transfer pricing (TP)** compliance for resident com
 > **Currency note:** all figures are in Egyptian Pounds (EGP / ج.م).
 > **YMYL — verify before relying.** Egyptian TP guidelines, thresholds, and penalty rates are subject to amendment (most recently Laws 5, 6, 7 of 2025). Where this skill says "verify current value," re-confirm against the Egyptian Tax Authority (ETA — eta.gov.eg), PwC Worldwide Tax Summaries (taxsummaries.pwc.com/egypt), or a Big-4 alert before filing.
 
+---
+
+## What this file is
+
+**This file is a content skill that loads on top of a workflow base** (here: `transfer-pricing-workflow-base`). It provides Egypt-specific TP rules, documentation thresholds, methods, filing deadlines, penalty regimes, and APA procedure.
+
+**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date.
+
+**The reviewer is the customer of this output.** Per the base, this skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
+
+---
+
 ## Section 1 — Quick Reference
 
 | Field | Value |

@@ -1,0 +1,189 @@
+{
+  "original-candidate.json": {
+    "embedded_files": 18,
+    "checks": [
+      {
+        "path": "docs/research/2026-10-24-armenia-corporate-sources.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "docs/research/2026-10-24-armenia-cross-border-sources.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "docs/research/2026-10-24-armenia-formation-planning-sources.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "docs/research/2026-10-24-armenia-individual-sources.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "docs/research/2026-10-24-armenia-social-payroll-sources.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "docs/research/2026-10-24-armenia-tp-sources.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "docs/research/2026-10-24-armenia-vat-sources.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/README.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/am-company-formation.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/am-corporate-income-tax.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/am-cross-border.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/am-tax-overview.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/am-transfer-pricing.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/armenia-income-tax.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/armenia-payroll.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/armenia-social-contributions.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/armenia-tax-optimization.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/armenia-vat.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      }
+    ]
+  },
+  "main-baseline.json": {
+    "embedded_files": 8,
+    "checks": [
+      {
+        "path": "skills/international/armenia/am-company-formation.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/am-corporate-income-tax.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/am-tax-overview.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/armenia-income-tax.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/armenia-payroll.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/armenia-social-contributions.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/armenia-tax-optimization.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      },
+      {
+        "path": "skills/international/armenia/armenia-vat.md",
+        "sha256_matches": true,
+        "git_blob_matches": true
+      }
+    ]
+  },
+  "example_preservation": {
+    "original": 51,
+    "current": 88,
+    "all_exact_blocks_retained": true
+  },
+  "protected": [
+    {
+      "path": "skills/international/armenia/am-company-formation.md",
+      "protected_equal": true,
+      "cta_equal": true
+    },
+    {
+      "path": "skills/international/armenia/am-corporate-income-tax.md",
+      "protected_equal": true,
+      "cta_equal": true
+    },
+    {
+      "path": "skills/international/armenia/am-tax-overview.md",
+      "protected_equal": true,
+      "cta_equal": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-income-tax.md",
+      "protected_equal": true,
+      "cta_equal": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-payroll.md",
+      "protected_equal": true,
+      "cta_equal": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-social-contributions.md",
+      "protected_equal": true,
+      "cta_equal": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-tax-optimization.md",
+      "protected_equal": true,
+      "cta_equal": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-vat.md",
+      "protected_equal": true,
+      "cta_equal": true
+    }
+  ]
+}

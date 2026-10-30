@@ -1,0 +1,33 @@
+{
+  "before_sha256": "3c82da241ef656c873de024eba9870837cfd1df85b57915578daa71a9f39bfa4",
+  "after_sha256": "f6cb72d6ab61571455c665e2741663d8e77ce600143a059198682eaf0307e99b",
+  "count": 5,
+  "failures": 0,
+  "exact_replacement": {
+    "before": "method already supplied below",
+    "after": "method already supplied in the startup section above"
+  },
+  "checks": [
+    {
+      "id": "final-canonical-sha",
+      "passed": true
+    },
+    {
+      "id": "one-corrected-location",
+      "passed": true
+    },
+    {
+      "id": "exact-single-navigation-replacement",
+      "passed": true
+    },
+    {
+      "id": "oa-blocks-identical",
+      "passed": true
+    },
+    {
+      "id": "final-canonical-existing-example-exit",
+      "passed": true
+    }
+  ],
+  "checked_utc": "2026-10-27T17:02:33.397176+00:00"
+}

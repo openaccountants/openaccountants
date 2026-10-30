@@ -1,0 +1,154 @@
+{
+  "jurisdiction": "ES",
+  "tax_year": 2026,
+  "reviewed_on": "2026-10-28",
+  "review_type": "Independent cumulative whole-pack figure-ledger review using completed whole22body/source/no-loss reviews plus finite current tranches",
+  "verdict": "PASS for reviewed source-cited draft; six domains remain partial",
+  "country_computation_complete": false,
+  "accountant_attested": false,
+  "reviewed_guide_ledger_pairs": 22,
+  "pins_file": "final-22-pair-pins.json",
+  "pins_sha256": "819d2ad279399e587aee6d4518b24dd62c6322067a3a9e9d9463ed99c23de263",
+  "README_sha256": "ad40e989b534567accbbc4e9238aa90ec5909c6055c6dcc1d85684f8df9d5afd",
+  "partial_domains": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "XB"
+  ],
+  "review_reports": [
+    {
+      "path": "tranche1-report.md",
+      "sha256": "5666fa99914e304e3bf7182611aa869eabfd74398a1d41a38bff5576355353d2",
+      "manifest": "tranche1-manifest.json",
+      "manifest_sha256": "920d6c087b4e3c34790b6c21ed76eac82662099e7a4f524b2361c10af6e7b31d"
+    },
+    {
+      "path": "tranche2-report.md",
+      "sha256": "fac20a3daae03c3b61277228c2b39e707d02d398b4e9392b57b61fbeec118d0e",
+      "manifest": "tranche2-manifest.json",
+      "manifest_sha256": "fed7167d8757b4a9fa580ed8f0a6c3abfe776be60691868b9b3f053f3a272039"
+    },
+    {
+      "path": "tranche3-report.md",
+      "sha256": "b3256a7fd11b11076b89ac9e4c217016d7f3e32419bf016e7542c899f77ed1bf",
+      "manifest": "tranche3-manifest.json",
+      "manifest_sha256": "7dc8337c019edc8480879e87fd6fe8943d5b719bda8f96c84e1dce81c5844e6a"
+    },
+    {
+      "path": "tranche4-report.md",
+      "sha256": "6392646ad4af0d15202079d735df7507efeed50439373da42362203828d2ace8",
+      "manifest": "tranche4-manifest.json",
+      "manifest_sha256": "20c25208ef3902123565ca0708b150d2ef1353d4dd944a922bc2fc75e3317892"
+    },
+    {
+      "path": "tranche5-report.md",
+      "sha256": "35d8366f95a549e26c95614a34131b7fe5c1bf2eb724366998b23437ac6c04b9",
+      "manifest": "tranche5-manifest.json",
+      "manifest_sha256": "44d243ee0d0b4043458785c2ae6ce251921ed36be02ceb72616a71a751737b6b"
+    },
+    {
+      "path": "tranche6-report.md",
+      "sha256": "b549b46379782b99f1e0a50dbf721e3e763b3f19bc3fc0b2aa43d148e1ccf730",
+      "manifest": "tranche6-manifest.json",
+      "manifest_sha256": "5fb3a55d74125a7d54245ba98fe7b08e6e0c879a06eea20e83d33f3101a18c9c"
+    },
+    {
+      "path": "tranche7-report.md",
+      "sha256": "b60783bbf09f27d43be1f89e0f26f864f2d95004e240d370f33fc10795ad9d8c",
+      "manifest": "tranche7-manifest.json",
+      "manifest_sha256": "7c6b54d09102641b3905afca638d57b17daa8cf5d6bdbb6290dc536931c8fa7c"
+    },
+    {
+      "path": "tranche8-report.md",
+      "sha256": "74b8bae2d7e3f797d51d92c881fc80e36d35c11600bad380882c7d1a5219baf4",
+      "manifest": "tranche8-manifest.json",
+      "manifest_sha256": "305215ca39e50c0fa1e1857026b00f0fc691560d2a7badff7b430f35ce0a8897"
+    },
+    {
+      "path": "tranche9-report.md",
+      "sha256": "e351fa46d61ddccff6edc7889b9eac26ac382ae00c50fa5c695c2334e46369e2",
+      "manifest": "tranche9-manifest.json",
+      "manifest_sha256": "7c9ed1b1cb3bae35a997586dc62a1ca020b0eb59fc56ca5d972f563277c5a532"
+    },
+    {
+      "path": "tranche10-report.md",
+      "sha256": "2d0b2df8b896f1da91671fdf434a9737ce3d6c3ce76b2e46a71f70840dcc7721",
+      "manifest": "tranche10-manifest.json",
+      "manifest_sha256": "7fc57fb1dd45cb393481054d4f2110c8ba5398f74882d84f5c6cf9848264092f"
+    },
+    {
+      "path": "tranche11-report.md",
+      "sha256": "301b0d8bc9e5e7b960edc8105e19fdaf9e37a6fb7598bd0072ce2a79b6c128a5",
+      "manifest": "tranche11-manifest.json",
+      "manifest_sha256": "25561927c8925bd68100e5022591d3fa16f50e970e53abe292e20f147c68e106"
+    },
+    {
+      "path": "tranche12-report.md",
+      "sha256": "0a581060515ff9d5d625ae8ffd751b309b3423ebdd9c5f599775e31f028d8c13",
+      "manifest": "tranche12-manifest.json",
+      "manifest_sha256": "ca7a8df313f7c1e92aa9a71156299446d8bdab537ee81935d3c85dc2f81f1371"
+    },
+    {
+      "path": "tranche13-report.md",
+      "sha256": "67831a28f498d2a0f2fd2b4e78386cfa8765108b4da0d015721aa2ff45031a56",
+      "manifest": "tranche13-manifest.json",
+      "manifest_sha256": "ee138ee7f8e4bf8f556132ec727bb914bf17455a73ab854b84e3c4014c835953"
+    },
+    {
+      "path": "tranche14-report.md",
+      "sha256": "01887a51f1e254eb29babb1a38bde80b32f9e15fb48a0a13878f1dae3c811e7f",
+      "manifest": "tranche14-manifest.json",
+      "manifest_sha256": "743fd7a865170cfb3fa687cb4db0dbf0985555c66e6c8bc63b6ab491614ec92f"
+    },
+    {
+      "path": "tranche15-report.md",
+      "sha256": "7f274337a67126777c709bb1f733ac5ef6ea405e93cf1f5942b68439a4d9dbbd",
+      "manifest": "tranche15-manifest.json",
+      "manifest_sha256": "a7ebeaf7bd87c5c47e1d82002967a02634e1e65a3550382fba34a81b528f331c"
+    },
+    {
+      "path": "tranche16-report.md",
+      "sha256": "9890bfe36b8ce232075eafaa0e8cfec9f0be3ed0a252909e3fa05a73e6d273a1",
+      "manifest": "tranche16-manifest.json",
+      "manifest_sha256": "b85cfbad8975b59fdf7c9c9e1d5bc113c6041aa9cb33d01bba21be2a1e7d3ef6"
+    },
+    {
+      "path": "tranche17-report.md",
+      "sha256": "fbeaaf3a927f5a71b260d6878e86cda4637d712170faf0e32df6319ea62101db",
+      "manifest": "tranche17-manifest.json",
+      "manifest_sha256": "daca61f2e9d33cc21077dff6fa4f0d305ca55cdd13fd47d9ebf8fe843eef9e97"
+    },
+    {
+      "path": "tranche18-report.md",
+      "sha256": "2704bf30ff23ff772a45476bbc0377265f47c87fb025a8181668e63a208ffc21",
+      "manifest": "tranche18-manifest.json",
+      "manifest_sha256": "4a753439e2081806ce7484f00731cc81c148b16661020e22f8c6d2620d3abcab"
+    }
+  ],
+  "coordinate_erratum": {
+    "path": "native-LF-erratum-report.md",
+    "sha256": "4bce6e2a8c2c5b71f63ddf62d67444ca9a03cedbb6b4746a4cfc9fcddee70065",
+    "manifest": "native-LF-erratum-manifest.json",
+    "manifest_sha256": "15e47c974ec7b088e3eee56670e17c7e2440323d3f3c8c19f633c7d804d2d372"
+  },
+  "findings_status": "S-L01–S-L33 resolved in their exact scopes; S-L25 ownValenciaGuide narrowing and S-L33 five Balearic writer-control fixtures included. Earlier rejected/intermediate evidence and errata remain historical, not retroactivePASS.",
+  "unresolved_review_defects": [],
+  "scope": "Every prepared current ledger row assessed for actual official quote, applicable figure/year/conditions, complete current rule coverage, selected old-topic destinations and independently recomputed examples. Prior actual reading is reused only through pinned exact claim/reader/quote/range bridges, attributed honestly; full hashes/acquisition/emission alone do not prove reading. Original whole22body review is reused rather than restarted.",
+  "source_reading_limits": "Selected actual native-LF excerpts and attributed historical runtime observations, not full raw-document reading or 2026software parity. Every tranche specifies its exact scope.",
+  "remaining_ordinary_questions": "Actual README partial frontmatter and individual Sources remain authoritative scope disclosures. They are not erased, marked specialist merely for convenience, or replaced with zero entitlement. See final-README-scope-review.json.",
+  "preservation": "Reports pin original examples, allowed sourced corrections, original/slugs/bylines/protectedtrustmetadata/CTA/URLorder and substantive old-topic routes; historical research preserved. Old-topic checks are selectedsemantic+completeorigin/identity checks, notall-old-unitfreshreading.",
+  "technical_validation": {
+    "attribution": "Root actual recorded technical checks, independently bound to unchanged22Guidehashes; not newly rerun by reviewer",
+    "record": "root-validation/candidate-final-validation.json",
+    "record_sha256": "67951c2b7e74e7dbe4006ea22f497caacfe6f08d42725ea8e9084d3a731c82f9",
+    "examples": "44blocks0failures0missing",
+    "schema": "22Guides0warninggroups",
+    "repository_tests": "129PASS",
+    "strict_source_audit": "22sourceGuides0errors0warnings0notices after normal mainmerge",
+    "reviewer_final_deductions": "actual2oa0failures and120owncontrolsPASS"
+  },
+  "readiness": "The country independent-review gate is satisfied for one accurate partial source-cited-draft country PR update. This does not satisfy a universal ordinary-computation-complete or licensed-accountant-attestation gate, neither of which is claimed. No Michael research/review dependency remains."
+}

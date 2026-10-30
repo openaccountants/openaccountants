@@ -25,13 +25,13 @@ One paragraph on the tax system a visitor should know before reading any skill: 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | xx-income-tax | source-cited draft |
+| IT-IND, individual income tax | xx-income-tax | checked against the law |
 | IT-CORP, corporate income tax | (missing) | |
-| VAT / GST | xx-vat-return | source-cited draft |
-| SC, social contributions | xx-national-insurance | source-cited draft |
-| PR, payroll withholding | xx-payroll | source-cited draft |
+| VAT / GST | xx-vat-return | checked against the law |
+| SC, social contributions | xx-national-insurance | checked against the law |
+| PR, payroll withholding | xx-payroll | checked against the law |
 | TP, transfer pricing | not applicable, see above | |
-| XB, cross-border | moving-to-xx-tax-residence | source-cited draft |
+| XB, cross-border | moving-to-xx-tax-residence | checked against the law |
 
 ## Official sources
 
@@ -42,5 +42,5 @@ Rules:
 - `applicable` lists the domain codes from GOAL.md that exist in this jurisdiction. `not_applicable` gives a one-line reason for each domain left out; "not applicable" with no reason is not accepted.
 - `covered_by` is only needed when the covering skill's slug does not contain the usual tokens (income-tax, corporate, vat, gst, sales-tax, social, payroll, withholding, transfer-pricing, exit, departure, treaty).
 - `partial` names a domain whose skills exist but leave out a part of it that most clients need (for example SC covered for the self-employed only). The report counts it as missing until the gap is closed: a skill being present is not coverage. Say what is missing in one line, in double quotes: an unquoted colon inside the note breaks the YAML and fails the compare check.
-- Status uses the two quality states only: `source-cited draft` or `accountant-reviewed`.
+- Status uses the quality labels only: `checked against the law` (tier 2, built to the standard in skill-template.md), `sourced from the law` (tier 2, older skill not yet rebuilt) or `accountant-reviewed` (tier 1).
 - Keep it short. The README is a map, not a guide.

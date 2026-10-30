@@ -1,0 +1,11 @@
+{
+  "name": "riva-current",
+  "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+  "utc": "2026-10-27T23:30:21.245105Z",
+  "status": 200,
+  "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 1052204,
+  "sha256": "ffdb577dd0dc7f7d9cbc769d29acf84b36b2caa73b9863aad9d9932e4ea53ccd",
+  "same_as_writer_body": true
+}

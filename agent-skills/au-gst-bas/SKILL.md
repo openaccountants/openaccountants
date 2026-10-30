@@ -8,12 +8,12 @@ metadata:
   jurisdiction: "AU"
   tax_year: "2025"
   last_updated: "2026-09-10"
+  authored_by: "Ryan Duguid"
+  trust_label: "Accountant-authored"
   review_status: "pending_review"
 ---
 
 # AU GST Bas
-
-## AU GST Bas
 
 ## AU GST Bas
 
@@ -126,12 +126,14 @@ Two methods are available:
 
 #### Method A — Instalment amount method (label T7)
 
-- **Instalment amount method steps** — Use the notified T7 amount unless varying. For a standard quarterly amount variation, enter estimated annual tax at T8; calculate the cumulative 25%, 50%, 75% or 100% share for the quarter, subtracting earlier instalments and applying the form’s treatment of earlier credits; enter the varied amount at T9, reason at T4 and payable amount at 5A. A zero or negative result needs the ATO credit instructions, including 5B where applicable. Do not divide annual tax by the remaining quarters. Example: at the third standard quarterly instalment, an annual estimate of $8,000 gives a cumulative $6,000 target (75%). If earlier instalments total $3,000 and there are no earlier credits, the current varied amount is $3,000. This is not $8,000 divided by two remaining quarters. Follow the ATO variation instructions above.  _([ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments))_
+- **Instalment amount method steps:** Use the notified T7 amount unless varying. For a standard quarterly amount variation, enter estimated annual tax at T8; calculate the cumulative 25%, 50%, 75% or 100% share for the quarter, subtracting earlier instalments and applying the form’s treatment of earlier credits; enter the varied amount at T9, reason at T4 and payable amount at 5A. A zero or negative result needs the ATO credit instructions, including 5B where applicable. Do not divide annual tax by the remaining quarters. [ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments).
+
+Example: at the third standard quarterly instalment, an annual estimate of $8,000 gives a cumulative $6,000 target (75%). If earlier instalments total $3,000 and there are no earlier credits, the current varied amount is $3,000. This is not $8,000 divided by two remaining quarters. Follow the ATO variation instructions above.
 
 #### Method B — Instalment rate method (labels T1-T2)
 
-- **Instalment rate method steps** — Establish instalment income at T1 and the notified rate at T2. If varying, enter the new rate at T3 and reason at T4. Multiply T1 by the applicable rate and enter the result at T11 and 5A as instructed. Exclude salary, GST and capital gains from T1. Check the variation shortfall and GIC rules.  _([ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments))_
-- **Rate-method formula** — T11 = T1 × applicable percentage rate, using T3 if validly varied, otherwise T2. Follow the issued statement for 5A.  _([ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments))_
+- **Instalment rate method steps:** Establish instalment income at T1 and the notified rate at T2. If varying, enter the new rate at T3 and reason at T4. Multiply T1 by the applicable rate and enter the result at T11 and 5A as instructed. Exclude salary, GST and capital gains from T1. Check the variation shortfall and GIC rules. [ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments).
+- **Rate-method formula:** T11 = T1 × applicable percentage rate, using T3 if validly varied, otherwise T2. Follow the issued statement for 5A. [ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments).
 
 ### 4.3 FBT instalment (label F1)
 
@@ -139,13 +141,13 @@ Two methods are available:
 
 ### 4.4 Net BAS payable / refundable
 
-- **Net BAS payable** — Sum the completed payment labels, including 1A, 4, 5A and 6A as applicable; subtract credit labels including 1B, 5B and 6B. Use the statement’s total labels and exclude amounts, such as large-withholder payments, paid separately. Do not treat an annual estimate at T8 as a tax payment.
+- **Net BAS payable:** Sum the completed payment labels, including 1A, 4, 5A and 6A as applicable; subtract credit labels including 1B, 5B and 6B. Use the statement’s total labels and exclude amounts, such as large-withholder payments, paid separately. Do not treat an annual estimate at T8 as a tax payment.
 
 ## Section 5 — Edge cases and special rules
 
 ### 5.1 Variation of PAYG instalments
 
-- **PAYG instalment variation and GIC** — Apply the ATO’s method-specific 85% shortfall test to a variation using expected full-year income and tax. Document the estimate and review it as circumstances change. Repeated variations do not themselves change the published GDP adjustment factor.  _([ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments))_
+- **PAYG instalment variation and GIC:** Apply the ATO’s method-specific 85% shortfall test to a variation using expected full-year income and tax. Document the estimate and review it as circumstances change. Repeated variations do not themselves change the published GDP adjustment factor. [ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments).
 
 ### 5.2 First year of business
 
@@ -181,8 +183,6 @@ Before delivering output, verify:
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

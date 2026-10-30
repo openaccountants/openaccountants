@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "source_url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "read_on": "2026-10-27",
+    "observed_version": "Renta Web2025 (Versión OPEN),1.19 (OPEN)",
+    "method": "Actual normal Brave browser through cua_repl. This file transcribes selected visible input labels and output rows from that session. It is not represented as an export of the full DOM. Full tool snapshots are in the task conversation.",
+    "fictional": true,
+    "filed_or_authenticated": false,
+    "setup": "Fictional adult born01/01/1980, single, no dependants/disability. All other supplied inputs fictional. Initial gross work30,000; Social Security3,000; ordinary employment other expense2,000. When changed later: gross work10,000 then6,000; same Social Security3,000. Bank interest10,000 then1,000. Personal pension contribution1,500, limited to300 when work net1,000. Non-employment general gain/public-aid income20,000 added for binding allocation controls.",
+    "qualifications": [
+      "Credit inputs are algorithm probes; programme/medical/relocation facts are not claimed verified.",
+      "The initial Balearic aid input1,000 was isolated within pre-existing general BI25,000; that credit window did not itself add taxable income.",
+      "Aragon rental input1,000 was isolated from existing dummy general income; programme rental-income consistency warning was acknowledged. It is not a valid complete rental return example.",
+      "Galicia thalidomide control is an included-income algorithm probe; its specific employment-income allocation is expressly reserved.",
+      "Numeric existing-value fill initially restored the old formatted value. Only keyboard-replaced, visibly verified values were used. Validation dialogs were inspected and acknowledged; premature stale-state reads were discarded.",
+      "The2025 programme is algorithm evidence.2026 rates are recomputed from current primary scales, with Extremadura and Valencia differences expressly retained."
+    ]
+  },
+  "visible_input_transcriptions": {
+    "balearic_emergency": "Importe de la subvención y/o ayuda a integrar en la base imponible",
+    "balearic_note": "NOTA: Si la subvención o ayuda ha dado lugar a una ganancia patrimonial, debe reflejar su importe. Si la subvención o ayuda tiene la consideración de rendimiento de actividades económicas, indique la parte del rendimiento neto reducido que corresponde a la subvención, una vez minorado su importe en la parte proporcional de las reducciones que pudieran resultar aplicables (Vea la ayuda)",
+    "aragon": "Importe de los rendimientos netos del capital inmobiliario reducidos correspondientes a la(s) vivienda(s) que originen el derecho a la deducción",
+    "asturias": "Importe de la subvención y/o ayuda a integrar en la base imponible general",
+    "extremadura": "Importe de la subvención y/o ayuda integrada en la base imponible general",
+    "galicia_thalidomide": "Importe de la ayuda pública integrada en la base imponible general",
+    "valencia_DA17a": "Importe de la ayuda pública recibida",
+    "valencia_note": "NOTA: Solo deben reflejarse las ayudas públicas que hayan sido integradas en la base imponible del contribuyente.",
+    "canary_move": "Si ha trasladado su residencia habitual en el ejercicio, marque la casilla",
+    "cantabria_move": "Si tiene derecho a la deducción marque la casilla (Vea la ayuda)"
+  },
+  "observations": [
+    {
+      "label": "Balearic emergency general-only",
+      "general_BI": "25000",
+      "general_BL": "25000",
+      "savings_BL": "0",
+      "state_total_quota": "2305.50",
+      "regional_total_quota": "2298.00",
+      "regional_credit": "184.10",
+      "aid_input": "1000"
+    },
+    {
+      "label": "Balearic emergency mixed, savings added",
+      "general_BI": "25000",
+      "general_BL": "25000",
+      "savings_BL": "10000",
+      "state_total_quota": "3295.50",
+      "regional_total_quota": "3288.00",
+      "regional_credit": "184.10",
+      "aid_input": "1000"
+    },
+    {
+      "label": "Balearic emergency mixed+pension1500",
+      "general_BI": "25000",
+      "general_BL": "23500",
+      "savings_BL": "10000",
+      "state_total_quota": "3070.50",
+      "regional_total_quota": "3074.25",
+      "regional_credit": "166.47",
+      "aid_input": "1000",
+      "state_general_quota": "2080.50",
+      "regional_general_quota": "2084.25",
+      "state_general_rate": "8.85",
+      "regional_general_rate": "8.86"
+    },
+    {
+      "label": "Balearic emergency minimum spillover",
+      "general_BI": "5000",
+      "general_BL": "3500",
+      "savings_BL": "10000",
+      "state_total_quota": "795.25",
+      "regional_total_quota": "795.25",
+      "regional_credit": "0.00",
+      "aid_input": "1000"
+    },
+    {
+      "label": "Canary move minimum spillover",
+      "general_BI": "5000",
+      "general_BL": "3500",
+      "savings_BL": "10000",
+      "state_total_quota": "795.25",
+      "regional_total_quota": "789.93",
+      "regional_credit": "0.00",
+      "current_year_move_checkbox": true
+    },
+    {
+      "label": "Canary move binding mixed+pension",
+      "general_BI": "21000",
+      "general_BL": "20700",
+      "savings_BL": "10000",
+      "state_total_quota": "2650.50",
+      "regional_total_quota": "2554.21",
+      "regional_credit": "74.49",
+      "selected_work_net": "1000",
+      "state_general_quota": "1660.50",
+      "regional_general_quota": "1564.21",
+      "state_general_rate": "8.02",
+      "regional_general_rate": "7.55"
+    },
+    {
+      "label": "CLM move initial BL gate fails",
+      "general_BI": "21000",
+      "general_BL": "20700",
+      "savings_BL": "10000",
+      "state_total_quota": "2650.50",
+      "regional_total_quota": "2650.50",
+      "regional_credit": "0.00",
+      "current_year_move_checkbox": true,
+      "note": "TotalBL30,700 exceeds initial individual22,946; this is gate control, not a zero attribution finding."
+    },
+    {
+      "label": "CLM move initial BL gate passes, binding cap",
+      "general_BI": "21000",
+      "general_BL": "20700",
+      "savings_BL": "1000",
+      "state_total_quota": "1755.50",
+      "regional_total_quota": "1755.50",
+      "regional_credit": "79.07",
+      "current_year_move_checkbox": true,
+      "selected_work_net": "1000"
+    },
+    {
+      "label": "Cantabria move binding mixed+pension",
+      "general_BI": "21000",
+      "general_BL": "20700",
+      "savings_BL": "1000",
+      "state_total_quota": "1755.50",
+      "regional_total_quota": "1575.25",
+      "regional_credit": "70.49",
+      "entitlement_checkbox": true,
+      "selected_work_net": "1000"
+    },
+    {
+      "label": "Aragon isolated rental-attribution probe",
+      "general_BI": "21000",
+      "general_BL": "20700",
+      "savings_BL": "1000",
+      "state_total_quota": "1755.50",
+      "regional_total_quota": "1724.94",
+      "regional_credit": "23.29",
+      "reduced_net_rental_input": "1000",
+      "warning": "El importe del rendimiento neto reducido de capital inmobiliario reflejado a efectos de la deducción autonómica por arrendamiento de vivienda social es superior a los rendimientos netos reducidos de esa naturaleza reflejados en la declaración:Compruebe que el importe reflejado es correcto",
+      "warning_acknowledged_for_algorithm_probe": true
+    },
+    {
+      "label": "Valencia DA17a mixed+pension2025",
+      "general_BI": "21000",
+      "general_BL": "20700",
+      "savings_BL": "1000",
+      "state_total_quota": "1755.50",
+      "regional_total_quota": "1669.55",
+      "regional_credit": "76.00",
+      "taxable_aid_input": "1000",
+      "regional_general_rate": "7.60",
+      "note": "2026current scale instead gives7.42% and74.20; source vintage retained."
+    },
+    {
+      "label": "Asturias ALS mixed+pension",
+      "general_BI": "21000",
+      "general_BL": "20700",
+      "savings_BL": "1000",
+      "state_total_quota": "1755.50",
+      "regional_total_quota": "1715.90",
+      "regional_credit": "156.24",
+      "aid_BI_input": "1000"
+    },
+    {
+      "label": "Extremadura ALS mixed+pension2025",
+      "general_BI": "21000",
+      "general_BL": "20700",
+      "savings_BL": "1000",
+      "state_total_quota": "1755.50",
+      "regional_total_quota": "1502.00",
+      "regional_credit": "145.98",
+      "aid_BI_input": "1000",
+      "note": "2026current scale gives general quota1370.37/regional rate6.62% and aid144.31; source vintage retained."
+    },
+    {
+      "label": "Galicia thalidomide included-income probe",
+      "general_BI": "21000",
+      "general_BL": "20700",
+      "savings_BL": "1000",
+      "state_total_quota": "1755.50",
+      "regional_total_quota": "1641.43",
+      "regional_credit": "152.69",
+      "aid_BI_input": "1000"
+    },
+    {
+      "label": "Galicia aid rounding discriminator",
+      "general_BI": "21000",
+      "general_BL": "20700",
+      "savings_BL": "1000",
+      "state_total_quota": "1755.50",
+      "regional_total_quota": "1641.43",
+      "regional_credit": "152.79",
+      "aid_BI_input": "1000.64",
+      "unrounded_BL_intermediate_would_produce": "152.78",
+      "rounded_BL_amount": "986.35"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: 10.8.10. Para el fomento de emprendimiento
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+10. Cumplimentación IRPF. Deducciones autonómicas
+
+10.8. Castilla y León
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+10.8.10. Para el fomento de emprendimiento
+
+Cuantía
+
+Los contribuyentes podrán deducirse el 20%  de las cantidades invertidas durante el ejercicio en la adquisición de acciones o participaciones como consecuencia de acuerdos de constitución de sociedades.
+
+El límite máximo de deducción será de 10.000 euros tanto en declaración individual como conjunta.
+
+Requisitos
+
+Destino de la inversión: adquisición de acciones o participaciones como consecuencia de acuerdos de constitución de sociedades o de ampliación del capital en las siguientes sociedades:
+
+Anónimas, limitadas o laborales cuando la sociedad destine la financiación recibida a proyectos de inversión realizados en el territorio de Castilla y León.
+
+Sociedades cuyo único objeto social sea la aportación de capital a sociedades anónimas, limitadas o laborales cuyo domicilio social y fiscal se encuentre en Castilla y León, siempre que se cumplan las siguientes condiciones:
+
+Que la sociedad cuyas acciones y participaciones se adquieran utilice en el plazo de seis meses la financiación recibida para aportar capital a una sociedad anónima, limitada o laboral cuyo domicilio social y fiscal se encuentre en Castilla y León.
+
+A estos efectos, los porcentajes del 0,5% mínimo y del 45% máximo del capital de la sociedad que se exige para aplicar la deducción se computarán respecto del conjunto de la aportación de capital.
+
+Que la sociedad anónima, limitada o laboral cuyas acciones y participaciones se adquieran cumpla el requisito de generación de empleo que se expone más adelante y no reduzca su plantilla de trabajadores en Castilla y León
+
+Las sociedades anónimas, limitadas o laborales deben tener el domicilio social y fiscal en la Comunidad de Castilla y León.
+
+Las adquisiciones de acciones o participaciones deben suponer un importe mínimo del 0,5% y un máximo del 45% del capital de la sociedad y deben permanecer en el patrimonio del adquirente al menos tres años.
+
+Creación de empleo: las sociedades respecto de las que se adquieran acciones o participaciones deben incrementar en el año en que se realice la inversión o en el ejercicio siguiente y respecto del año anterior:
+
+Su plantilla global de trabajadores, en términos de personas/año regulados en la normativa laboral, y mantengan esta plantilla al menos tres años, y/o;
+
+el número de contratos suscritos con trabajadores autónomos económicamente dependientes de la sociedad, y mantengan estos contratos al menos tres años, y/o;
+
+el número de personas que se incorporen al régimen de trabajadores por cuenta propia que tengan el carácter de familiares colaboradores de titulares de acciones o participaciones, y se mantengan estas altas al menos tres años.
+
+La inversión máxima del proyecto que es computable para la aplicación de la deducción será la que resulte de sumar los siguientes importes:
+
+100.000 euros por cada incremento de una persona/año en la plantilla.
+
+50.000 euros por cada contrato con trabajadores autónomos económicamente dependientes de la sociedad.
+
+50.000 euros por cada alta de trabajadores por cuenta propia que tengan el carácter de familiares colaboradores.
+
+Para la práctica de esta deducción será necesario obtener una certificación expedida por la entidad cuyas acciones o participaciones se hayan adquirido en la que se recoja el cumplimiento, en el periodo impositivo en el que se produjo la adquisición, de los requisitos relativos al destino de la inversión y, en su caso, cumplimiento de las condiciones específicas, a la localización del domicilio social y fiscal, al porcentaje de capital adquirido y finalmente al requisito de creación de empleo.
+
+Cuando en periodos impositivos posteriores al de su aplicación se pierda el derecho, en todo o en parte, a las deducciones practicadas, el contribuyente estará obligado a sumar a la cuota líquida autonómica devengada en el ejercicio en que se hayan incumplido los requisitos de la deducción las cantidades indebidamente deducidas, más los intereses de demora.
+
+Cumplimentación
+
+En la ventana se reflejarán las cantidades invertidas con derecho a la deducción y el NIF de la entidad. El programa trasladará los importes al anexo B.11 de la declaración.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 16/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

@@ -1,0 +1,57 @@
+[
+  {
+    "path": "before.md",
+    "sha256": "105161f7a6b7c2d0d542d6f1b0983bfb3d3585b57d684204e70827528751b88d",
+    "bytes": 65972
+  },
+  {
+    "path": "draft-options.md",
+    "sha256": "076bac2f1f35a5b693300d13e5ac59abaa828da11b7f6f79457afee830886cfd",
+    "bytes": 562
+  },
+  {
+    "path": "local-provenance.json",
+    "sha256": "23e04ad2f4fb3828d7d47d6a975b79fb6427e40a165fe2db10ec5324349c2a06",
+    "bytes": 165
+  },
+  {
+    "path": "source-receipts.json",
+    "sha256": "ee15d32b2db5c942ef7b3e3af4b1c92bd3ab9b3faa423cf550f98ab1dc90f12f",
+    "bytes": 1690
+  },
+  {
+    "path": "sources/LETA-current.html",
+    "sha256": "cb5515be4dfa46cb84ab6be4f546bb60155d06e6bd7d9e658c2acdea842d8e45",
+    "bytes": 500808
+  },
+  {
+    "path": "sources/LETA-current.html.txt",
+    "sha256": "0a0ec5614b8f2a42cf8da5022242a418ebb3caed09f03b73683f6f0bc4b08670",
+    "bytes": 187122
+  },
+  {
+    "path": "sources/RD2064-current.html",
+    "sha256": "6269d3bd555814c601f9526cc250c782894f6f8330a840cc572d027f09c6356c",
+    "bytes": 988922
+  },
+  {
+    "path": "sources/RD2064-current.html.txt",
+    "sha256": "9cee3a77c2de1f561f995f737b4b7bbb15a5f85dd3527906e8b51e33d79dd5b8",
+    "bytes": 282422
+  },
+  {
+    "path": "sources/TGSS-current-system.html",
+    "sha256": "333ecf206a88278a285a18204eaa09b88b7158c14d9c90d1de9d654e11afa019",
+    "bytes": 87853
+  },
+  {
+    "path": "sources/TGSS-current-system.html.txt",
+    "sha256": "292f5f3fad6299b6df21b0cda6f84fa36ad16016e7391adef8f1da7c415a38bf",
+    "bytes": 33909
+  },
+  {
+    "path": "writer-freeze.json",
+    "sha256": "84bace6458b1b6fc58751de35c2f5c28b790b320af59b290a40663a2d15f9fc3",
+    "bytes": 584
+  }
+]

@@ -1,0 +1,224 @@
+286 LF167 Álava NF33/2013 article 47
+[…] propios de sociedades o entidades, la ganancia o pérdida se computará por la diferencia entre su valor de adquisición y el valor de transmisión, determinado por su cotización en dichos mercados en la fecha en que se produzca aquélla o por el precio pactado cuando sea superior a la cotización.
+
+287 LF167 Gipuzkoa NF3/2014 article 47
+[…] propios de sociedades o entidades, la ganancia o pérdida se computará por la diferencia entre su valor de adquisición y el valor de transmisión, determinado por su cotización en dichos mercados en la fecha en que se produzca aquélla o por el precio pactado cuando sea superior a la cotización.
+
+288 LF169 Bizkaia NF13/2013 article 47
+- El que resulte de capitalizar al tipo del 20 por 100 el promedio de los resultados de los tres ejercicios sociales cerrados con anterioridad a la fecha del devengo del Impuesto. A este último efecto, se computarán como beneficios los dividendos distribuidos y las asignaciones a reservas, excluidas las de regularización o de actualización de balances.
+
+290 LF169 Bizkaia NF13/2013 article 47
+- El valor del patrimonio neto que corresponda a los valores transmitidos resultante del balance correspondiente al último ejercicio cerrado con anterioridad a la fecha del devengo del Impuesto.
+
+291 LF169 Álava NF33/2013 article 47
+- El que resulte de capitalizar al tipo del 20 por ciento el promedio de los resultados de los tres ejercicios sociales cerrados con anterioridad a la fecha del devengo del Impuesto. A este último efecto, se computarán como beneficios los dividendos distribuidos y las asignaciones a reservas, excluidas las de regularización o de actualización de balances.
+
+293 LF169 Álava NF33/2013 article 47
+- El valor del patrimonio neto que corresponda a los valores transmitidos resultante del balance correspondiente al último ejercicio cerrado con anterioridad a la fecha del devengo del Impuesto.
+
+294 LF169 Gipuzkoa NF3/2014 article 47
+- El que resulte de capitalizar al tipo del 20 por 100 el promedio de los resultados de los tres ejercicios sociales cerrados con anterioridad a la fecha de devengo del Impuesto. A este último efecto, se computarán como beneficios los dividendos distribuidos y las asignaciones a reservas, excluidas las de regularización o de actualización de balances.
+
+296 LF169 Gipuzkoa NF3/2014 article 47
+- El valor del patrimonio neto que corresponda a los valores transmitidos resultante del balance correspondiente al último ejercicio cerrado con anterioridad a la fecha de devengo del Impuesto.
+
+300 LF173 Bizkaia NF13/2013 article 47
+2. A efectos de lo dispuesto en las letras a), b), c), d) y p) del apartado anterior, y de aquellas transmisiones lucrativas de los mismos activos señalados en las citadas letras, cuando existan valores homogéneos o criptoactivos fungibles del mismo tipo, se considerará que los transmitidos por el contribuyente son aquellos que adquirió en primer lugar.
+
+301 LF173 Bizkaia NF13/2013 article 47
+Cuando se trate de acciones parcialmente liberadas, su valor de adquisición será el importe realmente satisfecho por el contribuyente.
+
+302 LF173 Bizkaia NF13/2013 article 47
+El importe obtenido por la transmisión de derechos de suscripción procedentes de estos valores tendrá la consideración de ganancia patrimonial para el transmitente en el período impositivo en que se produzca la citada transmisión.
+
+303 LF173 Álava NF33/2013 article 47
+2. (4) (37) A efectos de lo dispuesto en las letras a), b), c), d) y p) del apartado anterior, y de aquellas transmisiones lucrativas de los mismos activos señalados en las citadas letras, cuando existan valores homogéneos o criptoactivos fungibles del mismo tipo, se considerará que los transmitidos por el o la contribuyente son aquellos que adquirió en primer lugar.
+
+304 LF173 Álava NF33/2013 article 47
+Cuando se trate de acciones parcialmente liberadas, su valor de adquisición será el importe realmente satisfecho por el contribuyente.
+
+305 LF173 Álava NF33/2013 article 47
+El importe obtenido por la transmisión de derechos de suscripción procedentes de estos valores tendrá la consideración de ganancia patrimonial para el transmitente en el período impositivo en que se produzca la citada transmisión.
+
+306 LF173 Gipuzkoa NF3/2014 article 47
+primero del artículo 1 de la Norma Foral 5/2016, de 14 de noviembre, de aprobación en el año 2016 de determinadas modificaciones tributarias. La norma foral entra en vigor el día siguiente al de su publicación en el Boletín Oficial de Gipuzkoa (BOG 18/11/2016) y la modificación surte efectos desde el 01/01/2016.
+
+307 LF173 Gipuzkoa NF3/2014 article 47
+Cuando se trate de acciones parcialmente liberadas, su valor de adquisición será el importe realmente satisfecho por el contribuyente.
+
+308 LF173 Gipuzkoa NF3/2014 article 47
+El importe obtenido por la transmisión de derechos de suscripción procedentes de estos valores tendrá la consideración de ganancia patrimonial para el transmitente en el período impositivo en que se produzca la citada transmisión.
+
+309 LF173 Bizkaia NF13/2013 article 43
+g) Las derivadas de las transmisiones de valores o participaciones admitidos a negociación en alguno de los mercados secundarios oficiales de valores definidos en la Directiva 2014/65/UE del Parlamento Europeo y del Consejo, de 15 de mayo de 2014 relativa a los mercados de instrumentos financieros, cuando el o la contribuyente hubiera adquirido valores homogéneos dentro de los dos meses anteriores o posteriores a dichas transmisiones.
+
+310 LF173 Bizkaia NF13/2013 article 43
+f) Las derivadas de las transmisiones de elementos patrimoniales, cuando el transmitente vuelva a adquirirlos dentro del año siguiente a la fecha de la transmisión. Esta pérdida patrimonial se integrará cuando se produzca la posterior transmisión del elemento patrimonial.
+
+311 LF173 Álava NF33/2013 article 43
+g) (24) Las derivadas de las transmisiones de valores o participaciones admitidos a negociación en alguno de los mercados secundarios oficiales de valores definidos en la Directiva 2014/65/UE, del Parlamento Europeo y del Consejo, de 15 de mayo de 2014, relativa a los mercados de instrumentos financieros, cuando la o el contribuyente hubiera adquirido valores homogéneos dentro de los dos meses anteriores o posteriores a dichas transmisiones.
+
+312 LF173 Álava NF33/2013 article 43
+f) Las derivadas de las transmisiones de elementos patrimoniales, cuando el transmitente vuelva a adquirirlos dentro del año siguiente a la fecha de la transmisión. Esta pérdida patrimonial se integrará cuando se produzca la posterior transmisión del elemento patrimonial.
+
+313 LF173 Gipuzkoa NF3/2014 article 43
+g)115 Las derivadas de las transmisiones de valores o participaciones admitidos a negociación en alguno de los mercados secundarios oficiales de valores definidos en la Directiva 2014/65/UE, del Parlamento Europeo y del Consejo, de 15 de mayo de 2014, relativa a los mercados de instrumentos financieros, cuando el contribuyente hubiera adquirido valores homogéneos dentro de los dos meses anteriores o posteriores a dichas transmisiones.
+
+314 LF173 Gipuzkoa NF3/2014 article 43
+f) Las derivadas de las transmisiones de elementos patrimoniales, cuando el transmitente vuelva a adquirirlos dentro del año siguiente a la fecha de la transmisión. Esta pérdida patrimonial se integrará cuando se produzca la posterior transmisión del elemento patrimonial.
+
+315 LF181 Bizkaia NF13/2013 article 45
+1. El valor de adquisición estará formado por la suma de:
+
+316 LF181 Bizkaia NF13/2013 article 45
+3. El valor de transmisión será el importe real por el que la enajenación se hubiese efectuado. De este valor se deducirán los gastos y tributos a que se refiere la letra b) del apartado 1 anterior en cuanto resulten satisfechos por el transmitente.
+
+317 LF181 Álava NF33/2013 article 45
+1. El valor de adquisición estará formado por la suma de:
+
+318 LF181 Álava NF33/2013 article 45
+3. El valor de transmisión será el importe real por el que la enajenación se hubiese efectuado. De este valor se deducirán los gastos y tributos a que se refiere la letra b) del apartado 1 anterior en cuanto resulten satisfechos por el transmitente.
+
+319 LF181 Gipuzkoa NF3/2014 article 45
+1. El valor de adquisición estará formado por la suma de:
+
+320 LF181 Gipuzkoa NF3/2014 article 45
+81 Texto vigente 3. El valor de transmisión será el importe real por el que la enajenación se hubiese efectuado. De este valor se deducirán los gastos y tributos a que se refiere la letra b) del apartado 1 anterior en cuanto resulten satisfechos por el transmitente.
+
+369 LF181 Bizkaia NF13/2013 article 47
+p) De la transmisión a título oneroso de criptoactivos fungibles, la ganancia o pérdida se computará por la diferencia entre su valor de adquisición y el valor de transmisión, determinado por el valor de referencia fijado como resultado de la oferta y la demanda
+
+373 LF181 Álava NF33/2013 article 47
+p) (37) De la transmisión a título oneroso de criptoactivos fungibles, la ganancia o pérdida se computará por la diferencia entre su valor de adquisición y el valor de transmisión, determinado por el valor de referencia fijado como resultado de la oferta y la demanda en el mercado en el momento en que se produzca dicha transmisión, o por el precio pactado cuando sea superior a dicho valor de referencia.
+
+377 LF181 Gipuzkoa NF3/2014 article 47
+e)127 De la transmisión a título oneroso de criptoactivos fungibles, la ganancia o pérdida se computará por la diferencia entre su valor de adquisición y el valor de
+
+381 LF187 Bizkaia NF13/2013 article 47
+i) De la permuta de bienes o derechos, incluido el canje de valores, la ganancia o pérdida patrimonial se determinará por la diferencia entre el valor de adquisición del bien o derecho que se cede y el mayor de los dos siguientes:
+
+382 LF187 Álava NF33/2013 article 47
+i) De la permuta de bienes o derechos, incluido el canje de valores, la ganancia o pérdida patrimonial se determinará por la diferencia entre el valor de adquisición del bien o derecho que se cede y el mayor de los dos siguientes:
+
+383 LF187 Gipuzkoa NF3/2014 article 47
+85 Texto vigente transmisión, determinado por el valor de referencia fijado como resultado de la oferta y la demanda en el mercado en el momento en que se produzca dicha transmisión, o por el precio pactado cuando sea superior a dicho valor de referencia, sin perjuicio de lo previsto en la letra j) de este apartado para las operaciones de permuta de bienes y derechos.
+
+393 LF201 Bizkaia NF13/2013 article 43
+i) Las derivadas de las transmisiones de criptoactivos fungibles, cuando el o la contribuyente hubiera adquirido activos del mismo tipo dentro de los dos meses anteriores o posteriores a dichas transmisiones.
+
+394 LF201 Álava NF33/2013 article 43
+i) (37) Las derivadas de las transmisiones de criptoactivos fungibles, cuando la o el contribuyente hubiera adquirido activos del mismo tipo dentro de los dos meses anteriores o posteriores a dichas transmisiones.
+
+395 LF201 Gipuzkoa NF3/2014 article 43
+i)117 Las derivadas de las transmisiones de criptoactivos fungibles, cuando la persona contribuyente hubiera adquirido activos del mismo tipo dentro de los dos meses anteriores o posteriores a dichas transmisiones.
+
+405 LF222 B NF13/2013 article 75 own2026table
+0,00 18.080,00 23,00
+
+406 LF223 B NF13/2013 article 75 own2026table
+18.080,00 4.158,40 18.080,00 28,00
+
+407 LF224 B NF13/2013 article 75 own2026table
+36.160,00 9.220,80 18.080,00 35,00
+
+408 LF225 B NF13/2013 article 75 own2026table
+54.240,00 15.548,80 23.210,00 40,00
+
+409 LF226 B NF13/2013 article 75 own2026table
+77.450,00 24.832,80 29.810,00 45,00
+
+410 LF227 B NF13/2013 article 75 own2026table
+107.260,00 38.247,30 35.700,00 46,00
+
+411 LF228 B NF13/2013 article 75 own2026table
+142.960,00 54.669,30 65.430,00 47,00
+
+412 LF229 B NF13/2013 article 75 own2026table
+208.390,00 85.421,40 En adelante 49,00
+
+413 LF233 B NF13/2013 article 76 own2026table
+0,00 0,00 7.500,00 19,00
+
+414 LF234 B NF13/2013 article 76 own2026table
+7.500,00 1.425,00 7.500,00 20,00
+
+415 LF235 B NF13/2013 article 76 own2026table
+15.000,00 2.925,00 15.000,00 22,00
+
+416 LF236 B NF13/2013 article 76 own2026table
+30.000,00 6.225,00 20.000,00 24,00
+
+417 LF237 B NF13/2013 article 76 own2026table
+50.000,00 11.025,00 40.000,00 25,50
+
+418 LF238 B NF13/2013 article 76 own2026table
+90.000,00 21.225,00 30.000,00 26,00
+
+419 LF239 B NF13/2013 article 76 own2026table
+120.000,00 29.025,00 120.000,00 26,50
+
+420 LF240 B NF13/2013 article 76 own2026table
+240.000,00 60.825,00 60.000,00 27,00
+
+421 LF241 B NF13/2013 article 76 own2026table
+300.000,00 77.025,00 en adelante 28,00
+
+423 LF223 A NF33/2013 article 75 own2026table
+18.080,00 4.158,40 18.080,00 28,00
+
+424 LF224 A NF33/2013 article 75 own2026table
+36.160,00 9.220,80 18.080,00 35,00
+
+425 LF225 A NF33/2013 article 75 own2026table
+54.240,00 15.548,80 23.210,00 40,00
+
+426 LF226 A NF33/2013 article 75 own2026table
+77.450,00 24.832,80 29.810,00 45,00
+
+427 LF227 A NF33/2013 article 75 own2026table
+107.260,00 38.247,30 35.700,00 46,00
+
+428 LF228 A NF33/2013 article 75 own2026table
+142.960,00 54.669,30 65.430,00 47,00
+
+431 LF234 A NF33/2013 article 76 own2026table
+7.500,00 1.425,00 7.500,00 20,00 por ciento
+
+432 LF235 A NF33/2013 article 76 own2026table
+15.000,00 2.925,00 15.000,00 22,00 por ciento
+
+433 LF236 A NF33/2013 article 76 own2026table
+30.000,00 6.225,00 20.000,00 24,00 por ciento
+
+434 LF237 A NF33/2013 article 76 own2026table
+50.000,00 11.025,00 40.000,00 25,50 por ciento
+
+435 LF238 A NF33/2013 article 76 own2026table
+90.000,00 21.225,00 30.000,00 26,00 por ciento
+
+436 LF239 A NF33/2013 article 76 own2026table
+120.000,00 29.025,00 120.000,00 26,50 por ciento
+
+437 LF240 A NF33/2013 article 76 own2026table
+240.000,00 60.825,00 60.000,00 27,00 por ciento
+
+440 LF223 G NF3/2014 article 75 own2026table
+18.080 4.158,40 18.080 28
+
+441 LF224 G NF3/2014 article 75 own2026table
+36.160 9.220,80 18.080 35
+
+442 LF225 G NF3/2014 article 75 own2026table
+54.240 15.548,80 23.210 40
+
+443 LF226 G NF3/2014 article 75 own2026table
+77.450 24.832,80 29.810 45
+
+444 LF227 G NF3/2014 article 75 own2026table
+107.260 38.247,30 35.700 46
+
+445 LF228 G NF3/2014 article 75 own2026table
+142.960 54.669,30 65.430 47
+
+446 LF229 G NF3/2014 article 75 own2026table
+208.390 85.421,40 en adelante 49

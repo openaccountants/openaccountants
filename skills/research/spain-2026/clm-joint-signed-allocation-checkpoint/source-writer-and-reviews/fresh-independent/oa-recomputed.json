@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Canarias property-credit choice, quota limits and exempt medical grant",
+    "results": {
+      "acquisition_nominal": {
+        "actual": "240.00",
+        "expected": "240.0",
+        "pass": true
+      },
+      "acquisition_after_tax_cap": {
+        "actual": "180.00",
+        "expected": "180.0",
+        "pass": true
+      },
+      "energy_nominal": {
+        "actual": "840.00",
+        "expected": "840.0",
+        "pass": true
+      },
+      "energy_after_tax_cap": {
+        "actual": "120.0",
+        "expected": "120.0",
+        "pass": true
+      },
+      "chosen_property_credit": {
+        "actual": "180.00",
+        "expected": "180.0",
+        "pass": true
+      },
+      "medical_base": {
+        "actual": "4000",
+        "expected": "4000.0",
+        "pass": true
+      },
+      "medical_credit": {
+        "actual": "480.00",
+        "expected": "480.0",
+        "pass": true
+      },
+      "total_credit": {
+        "actual": "660.00",
+        "expected": "660.0",
+        "pass": true
+      },
+      "regional_liquid": {
+        "actual": "540.00",
+        "expected": "540.0",
+        "pass": true
+      },
+      "maternity": {
+        "actual": "1200",
+        "expected": "1200",
+        "pass": true
+      },
+      "childcare": {
+        "actual": "650",
+        "expected": "650",
+        "pass": true
+      },
+      "final_differential": {
+        "actual": "-850",
+        "expected": "-850",
+        "pass": true
+      }
+    }
+  },
+  {
+    "name": "Asturias protected home, subsequent-year ceiling and three-period expiry",
+    "results": {
+      "generated": {
+        "actual": "5000",
+        "expected": "5000.0",
+        "pass": true
+      },
+      "used_2026": {
+        "actual": "2000",
+        "expected": "2000.0",
+        "pass": true
+      },
+      "carried_2026": {
+        "actual": "3000",
+        "expected": "3000.0",
+        "pass": true
+      },
+      "used_2027": {
+        "actual": "700",
+        "expected": "700.0",
+        "pass": true
+      },
+      "carried_2027": {
+        "actual": "2300",
+        "expected": "2300.0",
+        "pass": true
+      },
+      "used_2028": {
+        "actual": "1000",
+        "expected": "1000.0",
+        "pass": true
+      },
+      "carried_2028": {
+        "actual": "1300",
+        "expected": "1300.0",
+        "pass": true
+      },
+      "used_2029": {
+        "actual": "1000",
+        "expected": "1000.0",
+        "pass": true
+      },
+      "expired_after_2029": {
+        "actual": "300",
+        "expected": "300.0",
+        "pass": true
+      },
+      "total_used": {
+        "actual": "4700",
+        "expected": "4700.0",
+        "pass": true
+      }
+    }
+  }
+]

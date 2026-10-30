@@ -1,0 +1,63 @@
+{
+  "baseline": "6ae8c8a270ef09b1e024575a241c57ea816a5c06",
+  "independent_review": "accepted at102a7bb82945633466c93002ba755e2b9c173cc7; see independent-review/closure.json",
+  "published": false,
+  "main_controls": 18,
+  "files": [
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "old_bytes": 67245,
+      "new_bytes": 69286,
+      "sha256": "7c1921f96c8c6f631a27abdd709d278aaffe9419ecd0a0b51c5c1446c1937c35",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "old_bytes": 9223,
+      "new_bytes": 14050,
+      "sha256": "1e95f0db588efe760c34b8a99c130bb5d50fea83ff6faf8917a499c369be90df",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "old_bytes": 43597,
+      "new_bytes": 47253,
+      "sha256": "809b3cf140a1f72ae7af449beb34c0a5abe95a2552fb281c97f53473585f3bf1",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "old_bytes": 38946,
+      "new_bytes": 62192,
+      "sha256": "abf3472550f155ee3ff8576be89704bd4e0706b2d2c0e2ad6959bde66b6e38c9",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "old_bytes": 16781,
+      "new_bytes": 29281,
+      "sha256": "1542cd9b3b69f8fd9270971d1398579313b4b7c23bc80ddc43910262021826a4",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "old_bytes": 52428,
+      "new_bytes": 58882,
+      "sha256": "6c3eb3a1de4d228d06a39ded80ba5bf987b94ee299533ba145963bc3124fc3ce",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    }
+  ],
+  "publication_note": "Preservation snapshot before the one planned country continuation push; final remote/CI evidence is recorded separately."
+}

@@ -1,0 +1,19 @@
+{
+  "verdict": "BOUNDED PASS exactIPSIpair, no wholecountry verdict",
+  "pins": {
+    "guide_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+    "guide_bytes": 50091,
+    "ledger_sha256": "41fd5a36bb182967cdbc50f2cf919363785ba65848bdb5c086a2f4c347980899",
+    "guide_full_byte_exact_to_frozen": true,
+    "S-L04": "CLOSED:exactoneprovisionlabel12\u219211 only; actualprimaryArt11LF188\u2013200 andArt12starts202 verified; quote/URL/Guide exact.",
+    "all_metadata_and_casebytes_exact": true,
+    "CTA": "Absent in supplied frozen and current, no removal claim.",
+    "old_topic_scope": "Earliestbranch explicitly not publishedmain, reused prioractualwholepackpreservation plus selected current/oldtopic checks; nofreshalloriginalreading claim."
+  },
+  "rows_actual_read": 155,
+  "own_controls": 42,
+  "canonical_oa_blocks": 2,
+  "source_pairs_rehashed": 21,
+  "finding": "S-L04closed exactonecelllabel correction",
+  "report_sha256": "b3256a7fd11b11076b89ac9e4c217016d7f3e32419bf016e7542c899f77ed1bf"
+}

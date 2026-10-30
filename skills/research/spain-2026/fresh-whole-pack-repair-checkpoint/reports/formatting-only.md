@@ -1,0 +1,11 @@
+# Exact formatting-only addendum
+
+**PASS** for capital successor SHA256`77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b`,34,701 bytes, and the29-file successor inventory SHA256`c524cdd28e5b632b1d905fc1a0fbc70690425dd74d53d621dace8fb0e91b278b`.
+
+Independently compared against the retained reviewed280b6647 predecessor (34,702bytes), the entire change is deletion of exactly one ASCII space (byte32) immediately before the newline in `post-2016 share basis. `. The recorded zero-based byte offset is10047. Removing precisely that byte reconstructs the successor exactly; no other byte changes. Both exact bodies are retained here.
+
+All other28 composition entries are identical dictionaries to the sealed round9 inventory. The capital entry changes only source path, SHA256 and byte count. Every successor-inventory source body was independently rehashed: all29 declared hashes and byte counts match. `verification.json` contains the full comparison.
+
+All non-whitespace tokens, formulas/legal text, heading lines, URL occurrences, frontmatter, both full oa-check blocks and CTA are identical. The successor has no remaining line-ending ASCII spaces/tabs. Actual `git diff --no-index --check` on these exact predecessor/successor bodies returns1 with empty output: --no-index implies difference status for the one-byte change, with no whitespace diagnostics. The first local assertion incorrectly expected0; that status-expectation error and its correction are retained in `first-diff-status-correction.json`. This check does not alter the live worktree. No broad legal/calculation/schema/example rerun is claimed or required for the verified one-byte change.
+
+The prior capital280b6647 bounded legal/preservation PASS and final round9 composition assessment (reportSHAbea5b239ada4bd747eee174202e47608910bd3c750146b2e73a400265e162a1b) carry forward through this exact formatting successor only. All immutable original reports, the initial whitespace-failure history and prior candidate remain preserved; none is rewritten. Ordinary partial/source questions, frozen NEEDS FIXES history and absence of country-ready/accountant-attestation claims remain unchanged. No live Guide, README, Git state or generated file was modified by this reviewer.

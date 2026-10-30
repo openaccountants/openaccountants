@@ -3,7 +3,9 @@ name: au-payg-instalments-2
 description: Calculate and vary Australian PAYG instalments using the correct activity statement fields, forecasts and credit rules.
 jurisdiction: AU
 last_updated: 2026-09-08
+authored_by: Ryan Duguid
 review_status: pending_review
+trust_label: Accountant-authored
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
