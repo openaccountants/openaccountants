@@ -1,10 +1,10 @@
 ---
 name: iceland-tax-optimization
 description: Use this skill whenever asked about reducing tax in Iceland, tax planning, or legal strategies to minimise tax for a self-employed person or small company in Iceland. Trigger on phrases like "reduce tax Iceland", "ehf vs self-employed", "Iceland dividends 22%", "reiknað endurgjald", "reference salary", "Iceland company tax 20%", "save tax Iceland", "tax planning Iceland". This skill covers the ehf-company-plus-dividend structure vs self-employment, the mandatory owner reference-salary rule (reiknað endurgjald), capital-income vs labour-income treatment, pension and personal reliefs, and the anti-avoidance red lines. ALWAYS read this skill before advising on any Icelandic tax optimisation.
-version: 0.1
+version: 0.2
 jurisdiction: IS
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-30
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -40,14 +40,14 @@ Withholding rates in this skill include the weighted average municipal tax (úts
 | Withholding rate, bracket 3, wages, 2026 (includes average útsvar) | 46.29% | "Skattþrep 3" |
 | Personal tax credit per month, 2026 | ISK 72,492 | "Persónuafsláttur á mánuði" |
 | Personal tax credit per year, 2026 | ISK 869,898 | "Persónuafsláttur á ári" |
-| Capital income tax, individuals, 2026 | 22% | "Skattur á fjármagnstekjur" |
-| Capital income allowance per person (interest, and dividends and gains on listed shares only) | ISK 300,000 | "Frítekjumark er 300.000 kr. samtals á manni" |
+| Capital income tax, individuals, 2026 | 22% | "Skattur á fjármagnstekjur"; Act 90/2003, Article 66(3) |
+| Capital income allowance per person (interest, and dividends and gains on listed shares only) | ISK 300,000 | "Frítekjumark er 300.000 kr. samtals á manni"; Act 90/2003, Article 66(3) |
 | Capital income allowance, married couple | ISK 600,000 | "fyrir hjón" |
-| Company income tax, hf. and ehf. | 20% | "hlutafélög, einkahlutafélög o.fl." |
-| Income tax, partnerships taxed as separate entities (sf.), estates and similar | 37.6% | "sameignarfélög, dánarbú, þrotabú o.fl." |
+| Company income tax, hf. and ehf. | 20% | "hlutafélög, einkahlutafélög o.fl."; Act 90/2003, Article 71(1) |
+| Income tax, partnerships taxed as separate entities (sf.), estates and similar | 37.6% | "sameignarfélög, dánarbú, þrotabú o.fl."; Act 90/2003, Article 71(2) |
 | Tax rate on children's income (born 2011 or later) above the children's tax-free amount | 6% | "Skatthlutfall barna" |
 
-The capital income allowance covers interest income on one side, and dividends and gains from shares in companies listed on a regulated market or trading facility on the other. The page reads "á annars vegar við vaxtatekjur og hins vegar tekjur af hlutabréfaeign í formi arðs og söluhagnaðar í félögum skráðum á skipulegum verðbréfamarkaði" (applies to interest income and to income from shareholdings as dividends and gains in companies listed on a regulated securities market). Dividends from an unlisted ehf. therefore get no allowance under this text.
+The capital income allowance covers interest income on one side, and dividends and gains from shares in companies listed on a regulated market or trading facility on the other. The page reads "á annars vegar við vaxtatekjur og hins vegar tekjur af hlutabréfaeign í formi arðs og söluhagnaðar í félögum skráðum á skipulegum verðbréfamarkaði" (applies to interest income and to income from shareholdings as dividends and gains in companies listed on a regulated securities market). Dividends from an unlisted ehf. therefore get no allowance under this text. The law says the same: Article 66(3) of the Income Tax Act 90/2003 exempts "annars vegar vaxtatekjum og hins vegar tekjum af hlutabréfaeign í formi arðs og söluhagnaðar í félögum skráðum á skipulegum markaði eða markaðstorgi fjármálagerninga, samtals allt að 300.000 kr. á ári hjá manni", and uses the allowance first against interest, then dividends, then share gains. Skatturinn's [Arður](https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/ardur/) page lists "Arðstekjur" without the listing condition; the statute governs, so do not apply the allowance to ehf. dividends.
 
 ### 2026 thresholds from the ministry note of 22 December 2025
 
@@ -60,7 +60,7 @@ The capital income allowance covers interest income on one side, and dividends a
 | Yearly tax-free amount of wages, 2026 (after the mandatory pension contribution) | ISK 2,877,560 | "Skattleysismörk launa" |
 | Yearly tax-free amount for children under 16, 2026 | ISK 300,000 | "Skattleysismörk barna yngri en 16 ára" |
 
-From tax year 2026 spouses and cohabitants lose the right to share the second and third brackets in the case where one has an income tax base in the third bracket and the other does not. The note reads "Á tekjuárinu 2026 fellur út heimild hjóna og sambúðaraðila að samnýta annað og þriðja þrep" (in income year 2026 the right of spouses and cohabitants to share the second and third bracket falls away). In that case, do not plan on shifting bracket room between the two for 2026.
+From tax year 2026 spouses and cohabitants lose the right to share the second and third brackets in the case where one has an income tax base in the third bracket and the other does not. Act 99/2025, Article 30, repealed the bracket-sharing paragraph (Article 66(1), point 4) of the Income Tax Act. The note reads "Á tekjuárinu 2026 fellur út heimild hjóna og sambúðaraðila að samnýta annað og þriðja þrep" (in income year 2026 the right of spouses and cohabitants to share the second and third bracket falls away). In that case, do not plan on shifting bracket room between the two for 2026.
 
 ### Monthly withholding brackets, 2026
 
@@ -79,7 +79,7 @@ From tax year 2026 spouses and cohabitants lose the right to share the second an
 
 The reason owners use an ehf. is that profit above a fair salary can be taxed at the company rate and, when paid out, at the capital income rate, both in the quick reference table, instead of at the wage withholding rates. The calculated remuneration rule limits this: an active controlling owner must first take the remuneration the rules require, and that part is taxed as wages. Whether the combined company and dividend burden is lower than wage tax depends on the facts. No allowed page prints a combined rate, and this skill does not compute one.
 
-A distribution that is not a lawful dividend is not taxed as a dividend. The [Arður](https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/ardur/) page reads "Ef um er að ræða óheimila úthlutun arðs fer með þær tekjur annað hvort sem laun eða sem gjöf" (an unlawful distribution of dividends is treated either as wages or as a gift), taxed at the ordinary income tax rates and útsvar.
+A distribution that is not a lawful dividend is not taxed as a dividend. The [Arður](https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/ardur/) page reads "Ef um er að ræða óheimila úthlutun arðs fer með þær tekjur annað hvort sem laun eða sem gjöf" (an unlawful distribution of dividends is treated either as wages or as a gift), taxed at the ordinary income tax rates and útsvar. The law decides which: under Article 11(2) of the Income Tax Act, a distribution that is unlawful under the company acts is wages if the shareholder is also an employee of the company or a related company, and a taxable gift under Article 7(A)(4) for any other shareholder.
 
 | Item | Value | Note |
 | --- | --- | --- |
@@ -92,7 +92,7 @@ A special rule taxing excess dividends of controlling working shareholders as wa
 
 ## Section 3: Calculated remuneration (reiknað endurgjald), the key constraint
 
-Who must compute it. A person working in their own business, alone or in a business run in common with others, must compute remuneration and treat it as wages: withholding, tryggingagjald and pension contribution. A person working in a company must do so if they are a controlling party by ownership or management participation (ráðandi aðili vegna eignar- eða stjórnunaraðildar). A controlling party is a person who, alone or together with a spouse, children, parents, siblings or other close relatives, or working shareholders, owns the share in the table below or more, AND personally owns the own-share figure in the table or more. Both conditions must be met. Indirect ownership or management counts in the same way, for example work for a subsidiary or associate of a company the person controls. For a group of working shareholders who are not related, the page states the group test as more than the group share in the table, with the same personal minimum: "eigi hópur starfandi hluthafa meira en 50% í lögaðila þá skulu viðmiðunarreglur um reiknað endurgjald gilda um þá ef eignarhlutur viðkomandi er a.m.k. 5%" (if a group of working shareholders owns more than 50% of a legal entity, the rules apply to them if the person's own share is at least 5%). The rule does not apply to work for a company listed on a public securities market.
+Who must compute it. A person working in their own business, alone or in a business run in common with others, must compute remuneration and treat it as wages: withholding, tryggingagjald and pension contribution. A person working in a company must do so if they are a controlling party by ownership or management participation (ráðandi aðili vegna eignar- eða stjórnunaraðildar). A controlling party is a person who, alone or together with a spouse, children, parents, siblings or other close relatives, or working shareholders, owns the share in the table below or more, AND personally owns the own-share figure in the table or more. Both conditions must be met. Indirect ownership or management counts in the same way, for example work for a subsidiary or associate of a company the person controls. For a group of working shareholders who are not related, the page states the group test as more than the group share in the table, with the same personal minimum: "eigi hópur starfandi hluthafa meira en 50% í lögaðila þá skulu viðmiðunarreglur um reiknað endurgjald gilda um þá ef eignarhlutur viðkomandi er a.m.k. 5%" (if a group of working shareholders owns more than 50% of a legal entity, the rules apply to them if the person's own share is at least 5%). The rule does not apply to work for a company listed on a public securities market. The statutory basis is Article 58 of the Income Tax Act 90/2003; Article 58(4) sets the same 50% group and 5% own-share test ("enda eigi hver um sig a.m.k. 5% hlut").
 
 How much. The remuneration must not be lower than the person would have earned working for an unrelated party. The tax authority sets minimum amounts each year by category A to H. Benefits in kind (for example a company car) are added on top. The amounts below are 2026 minimums for selected categories; the full list is on the page.
 
@@ -106,12 +106,15 @@ How much. The remuneration must not be lower than the person would have earned w
 | B(5) general business, alone or with fewer than two staff, per month | ISK 933,000 | "Mánaðarlaun" |
 | B(5) general business, alone or with fewer than two staff, per year | ISK 11,196,000 | "Árslaun" |
 | B(9) general business starting for the first time, alone or with one employee, first year only, per month | ISK 681,000 | "Mánaðarlaun" |
+| B(9) general business starting for the first time, first year only, per year | ISK 8,172,000 | "Árslaun" |
 | C(5) category C with fewer than two staff, per month | ISK 1,129,000 | "Mánaðarlaun" |
+| C(5) category C with fewer than two staff, per year | ISK 13,548,000 | "Árslaun" |
 | C(6) category C working alone, per month | ISK 795,000 | "Mánaðarlaun" |
+| C(6) category C working alone, per year | ISK 9,540,000 | "Árslaun" |
 | Floor when the person has another paid job or another job that itself requires calculated remuneration: never below this share of the benchmark, plus any increase set under the minimum rules | 25% | "aldrei lægra en 25% af viðmiðunarfjárhæðinni" |
 | Estimated yearly remuneration below this amount falls outside withholding (still taxable) | ISK 700,000 | "Reiknað endurgjald innan við 700.000 kr." |
 
-Lower than the benchmark. A person who considers the remuneration should be lower than the benchmark must attach documents and reasons to the tax return. The tax authority may accept a lower figure if the reasons and documents justify it. If it does not, it raises the remuneration to the benchmark. For a self-employed person, a raise by the tax authority may not create a loss in the business beyond the year's ordinary depreciation, and for an old-age or disability pensioner with their own business it may not create a loss at all. This limit does not apply to a company or to a person who computes remuneration for work in a company. The page reads "hún gildir ekki um rekstur lögaðila og þeirra sem reikna ber sér endurgjald vegna starfa hjá þeim" (it does not apply to the business of a legal entity or to those who must compute remuneration for work for one).
+Lower than the benchmark. A person who considers the remuneration should be lower than the benchmark must attach documents and reasons to the tax return. The tax authority may accept a lower figure if the reasons and documents justify it. If it does not, it raises the remuneration to the benchmark. For a self-employed person, a raise by the tax authority may not create a loss in the business beyond the year's ordinary depreciation, and for an old-age, disability or partial disability pensioner with their own business it may not create a loss at all (Article 58(3) of the Income Tax Act names "elli- og örorkulífeyrisþega [og hlutaörorkulífeyrisþega]"). This limit does not apply to a company or to a person who computes remuneration for work in a company. The page reads "hún gildir ekki um rekstur lögaðila og þeirra sem reikna ber sér endurgjald vegna starfa hjá þeim" (it does not apply to the business of a legal entity or to those who must compute remuneration for work for one).
 
 Another job. If the person has another fixed paid job, or another job for which remuneration must be computed, the benchmark may be reduced by the amount by which the pay or remuneration for the other job exceeds half of the benchmark, but never below the floor in the table plus any increase set under the minimum rules.
 
@@ -141,7 +144,7 @@ These are two separate deductions, each a share of the contribution base. Both r
 
 ### Personal tax credit (persónuafsláttur)
 
-Residents of Iceland aged 16 or older get the personal tax credit in the quick reference table. It reduces income tax on wages and pension; it is not a deduction from income. Unused credit in one month builds up and can be used later in the same year. Unused credit does not carry to the next year: "Ónýttur persónuafsláttur færist ekki á milli ára". A spouse's credit may be used "að fullu eða að hluta ef maki nýtir hann ekki sjálfur" (in full or in part if the spouse does not use it). The page prints no percentage for the transfer. Source: [Persónuafsláttur](https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/).
+Residents of Iceland aged 16 or older get the personal tax credit in the quick reference table. It reduces income tax on wages and pension; it is not a deduction from income. Unused credit in one month builds up and can be used later in the same year. Unused credit does not carry to the next year: "Ónýttur persónuafsláttur færist ekki á milli ára". A spouse's credit may be used "að fullu eða að hluta ef maki nýtir hann ekki sjálfur" (in full or in part if the spouse does not use it). For 2026 the whole of it may be used in withholding: "Heimilt er að nýta allan (100%) ónýttan persónuafslátt maka á árinu 2026" ([Staðgreiðsla 2026](https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026)); the employer must be told. At assessment, Article 67(A) of the Income Tax Act adds a jointly taxed spouse's unused credit to the other spouse's credit. Source: [Persónuafsláttur](https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/).
 
 ### Séreign for a first home
 
@@ -151,8 +154,10 @@ Residents of Iceland aged 16 or older get the personal tax credit in the quick r
 | Maximum tax-free use per person per year | ISK 500,000 | "Árleg hámarksnýting séreignarsparnaðar" |
 | Total maximum over the 10-year period | ISK 5,000,000 | "Samtals nemur hámarksheimild" |
 | Minimum ownership share the applicant must acquire | 30% | "Umsækjandi eignist 30% eignarhlut í eigninni" |
+| Own contribution counted, at most | 4% of the contribution base, up to ISK 333,000 a year | "allt að 4% af iðgjaldsstofni og að hámarki 333 þús. kr." |
+| Employer contribution counted, at most | 2%, up to ISK 167,000 a year | "allt að 2% og að hámarki 167 þús. kr." |
 
-Conditions, all of which must be met: the applicant acquires at least the ownership share in the table, applies within 12 months of signing the purchase contract, and is buying a first home or has not owned residential property for five years. Use can run for at most a continuous 10-year period.
+Conditions, all of which must be met: the applicant acquires at least the ownership share in the table, applies within 12 months of signing the purchase contract, and is buying a first home or has not owned residential property for five years. Use can run for at most a continuous 10-year period. The own contribution may not be lower than the employer's ("Framlag einstaklingsins getur ekki verið lægra en framlag launagreiðandans").
 
 The general scheme for using séreign tax-free on a home for own use ended at the end of 2025. The [Nýting séreignarsparnaðar](https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/) page reads "féll úr gildi í lok árs 2025 og hefur ekki verið framlengd" (lapsed at the end of 2025 and has not been extended). For 2026 only the first-home scheme is available.
 
@@ -164,7 +169,7 @@ The general scheme for using séreign tax-free on a home for own use ended at th
 | Share of residential rent taxed as capital income, from 2026 | 75% | "færast því einungis til skattskyldra tekna 75% af fenginni leigu" |
 | Share exempt before 2026 (old rule) | 50% | "Frítekjumarkið var áður 50%" |
 
-The relief applies to letting residential property for the tenant to live in. Letting counts as capital income only where it falls under the Rent Act (húsaleigulög) and no more than two separate dwellings are let; the page reads "ef um er að ræða útleigu sem fellur undir húsaleigulög og hinar útleigðu sérgreindu íbúðir ekki fleiri en tvær" (where the letting falls under the Rent Act and the separate dwellings let are not more than two). Letting of more dwellings, or letting property to a business, is business income. From 2026 a quarter of that rent is exempt and the rest is capital income; the page says "Þetta gildir frá og með árinu 2026" (this applies from 2026). Short-term letting (heimagisting, for example Airbnb) is taxed either as business income or as capital income and is not covered by this skill.
+The relief applies to letting residential property for the tenant to live in. Letting counts as capital income only where it falls under the Rent Act (húsaleigulög) and no more than two separate dwellings are let; the page reads "ef um er að ræða útleigu sem fellur undir húsaleigulög og hinar útleigðu sérgreindu íbúðir ekki fleiri en tvær" (where the letting falls under the Rent Act and the separate dwellings let are not more than two). Letting of more dwellings, or letting property to a business, is business income and gets no exemption. For qualifying residential letting, from 2026 a quarter of the gross rent is exempt and the rest is capital income taxed at 22%, with no deduction for costs; the page says "Þetta gildir frá og með árinu 2026" (this applies from 2026). The law adds a condition the page does not print: Article 66(3) of the Income Tax Act grants the 25% exemption only "enda hafi leigusamningur verið skráður í leiguskrá húsnæðisgrunns" (provided the lease has been registered in the rental register of the housing database, run by Húsnæðis-, mannvirkja- og skipulagsstofnun). Register the lease before relying on the exemption. Rent against rent: a person who lets a home they used themselves, under the Rent Act, and pays rent for another home for their own use may deduct the rent paid from the rent received (same page; Article 58a(1)(a) of the Income Tax Act). Short-term letting (heimagisting, for example Airbnb) is taxed either as business income or as capital income and is not covered by this skill.
 
 ### Business expenses
 
@@ -174,6 +179,7 @@ Genuine costs of the business are deductible against business income, whether in
 
 - **Remuneration red line.** Never set a controlling owner's remuneration below the category benchmark without documents and reasons that justify it.
 - **Lawful dividends only.** A distribution that is not a lawful dividend is taxed as wages or a gift.
+- **No unlawful shareholder loans.** A loan to a shareholder or board member that the company acts forbid is a taxable gift: "Til skattskyldra gjafa teljast lán til hluthafa og stjórnarmanna sem eru óheimil samkvæmt lögum um hlutafélög og lögum um einkahlutafélög" (Income Tax Act 90/2003, Article 7(A)(4)).
 - **Substance.** The ehf. must carry on a genuine business.
 - **Private spending.** Private costs booked as company expenses are not deductions.
 
@@ -199,22 +205,29 @@ Genuine costs of the business are deductible against business income, whether in
 - Refer cross-border cases (non-resident owners, foreign companies, double tax treaties).
 - Refer holding structures and dividends between companies; this skill does not cover them.
 - Refer short-term letting (heimagisting) and rental of more than ordinary residential letting.
+- Before applying the 25% rental exemption, ask whether the lease is registered in the HMS rental register; if not, register it first.
 - Refuse any scheme that hides private spending in the company or pays disguised dividends.
 - For the full 2026 wage withholding, pension and capital income computation use `iceland-income-tax`; for running the remuneration through payroll use `iceland-payroll`.
 
 ## Sources
 
-- [Helstu tölur og prósentur 2026](https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026)
-- [Breytingar á staðgreiðslu um áramótin, 22 December 2025](https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/)
-- [Skattþrep 2026](https://www.skatturinn.is/einstaklingar/stadgreidsla/skattthrep/2026/)
-- [Reiknað endurgjald 2026](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/)
-- [Tryggingagjald](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/)
-- [Arður](https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/ardur/)
-- [Iðgjald í lífeyrissjóði](https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/)
-- [Persónuafsláttur](https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/)
-- [Nýting séreignarsparnaðar](https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/)
-- [Fyrsta íbúð](https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/fyrsta-ibud/)
-- [Leigutekjur](https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/leigutekjur/)
+| Source | URL | Read on |
+| --- | --- | --- |
+| Income Tax Act 90/2003 (Alþingi consolidated text 158a, 1 October 2026), Articles 7(A)(4), 11(2), 58, 58a, 66, 67(A), 71 | https://www.althingi.is/lagas/nuna/2003090.html | 2026-10-30 |
+| Skatturinn, Helstu tölur og prósentur 2026 | https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026 | 2026-10-30 |
+| Ministry of Finance, Breytingar á staðgreiðslu um áramótin, 22 December 2025 | https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/ | 2026-10-30 |
+| Skatturinn, Skattþrep 2026 | https://www.skatturinn.is/einstaklingar/stadgreidsla/skattthrep/2026/ | 2026-10-30 |
+| Skatturinn, Staðgreiðsla 2026 (spouse's credit 100% in 2026) | https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026 | 2026-10-30 |
+| Skatturinn, Reiknað endurgjald 2026 | https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/ | 2026-10-30 |
+| Skatturinn, Tryggingagjald | https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/ | 2026-10-30 |
+| Skatturinn, Arður | https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/ardur/ | 2026-10-30 |
+| Skatturinn, Iðgjald í lífeyrissjóði | https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/ | 2026-10-30 |
+| Skatturinn, Persónuafsláttur | https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/ | 2026-10-30 |
+| Skatturinn, Nýting séreignarsparnaðar | https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/ | 2026-10-30 |
+| Skatturinn, Fyrsta íbúð | https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/fyrsta-ibud/ | 2026-10-30 |
+| Skatturinn, Leigutekjur | https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/leigutekjur/ | 2026-10-30 |
+
+Not yet confirmed: none. The first-home figures rest on Skatturinn's own page; the statute behind the scheme (Act 111/2016) was not opened, because althingi.is blocked automated access to that text.
 
 ## Disclaimer
 
