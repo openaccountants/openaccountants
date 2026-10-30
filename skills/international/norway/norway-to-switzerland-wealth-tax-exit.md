@@ -30,6 +30,28 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Who pays wealth tax.** From income year 2026 the duty to pay wealth tax depends on living in Norway at 31 December of the year before the assessment year _(skatteloven § 2-1 seventh paragraph, lov 22 December 2025 nr. 119)_.
 - **Switzerland** also has a wealth tax: every canton must levy income and wealth tax on individuals _(StHG art. 2 para. 1 letter a)_, so this is not a zero-tax move. Switzerland does not tax capital gains on movable private assets, at federal or cantonal level _(DBG art. 16 para. 3; StHG art. 7 para. 4 letter b)_.
 
+```oa-check
+name: Norway 2026 wealth tax on NOK 500m of shares and the dividend needed to fund it
+inputs:
+  share_value: 500000000
+  valuation_rate: 0.80
+  threshold: 1900000
+  upper_threshold: 21500000
+  dividend_rate: 0.3784
+steps:
+  - wealth_value: share_value * valuation_rate
+  - tax_band_1: (upper_threshold - threshold) * 0.010
+  - tax_band_2: (wealth_value - upper_threshold) * 0.011
+  - wealth_tax: tax_band_1 + tax_band_2
+  - dividend_needed: wealth_tax / (1 - dividend_rate)
+expected:
+  wealth_value: 400000000
+  tax_band_1: 196000
+  tax_band_2: 4163500
+  wealth_tax: 4359500
+  dividend_needed: 7013352.64
+```
+
 ---
 
 ## Part 2: The 3-year tail
@@ -51,15 +73,15 @@ Residence in Norway does not end when you board the plane _(skatteloven § 2-1 t
 
 - **Trigger.** Gains on shares and similar assets you own when your Norwegian residence ends under § 2-1 third paragraph, or when you become resident in another state under a treaty, are taxed as if you had sold the assets on the last day before _(§ 10-70 first paragraph)_. The same applies when you transfer such assets to a person or company not taxable in Norway, for example a gift to a child living abroad _(§ 10-70 first paragraph, second sentence)_.
 - **What it covers.** Shares and equity certificates in Norwegian companies, share savings accounts, interests in Norwegian partnerships, corresponding foreign shares and interests, subscription rights and options over them, and certain capital insurance _(§ 10-70 second paragraph)_.
-- **Thresholds.** On a move, only the part of your total net gain (gains less deductible losses) above NOK 3,000,000 is taxed. On a transfer to a non-resident, the whole net gain is taxed when the net gain or loss exceeds NOK 100,000 in the income year _(§ 10-70 fourth paragraph)_.
+- **Thresholds.** On a move, only the part of your total net gain (gains less deductible losses) above NOK 3,000,000 is taxed. On a transfer to a non-resident, the whole net gain is taxed when the net gain or loss exceeds NOK 100,000 in the income year _(§ 10-70 fourth paragraph)_. Skatteetaten computes each latent gain as market value less cost and unused shielding (risk-free return allowance), adds the gains up (on a move outside the EEA, losses are left out) and takes the NOK 3,000,000 basic deduction off that total; the 1.72 factor is not part of that sum _(Skatteetaten, Exit tax, worked examples)_.
 - **Losses.** Losses are deductible only on a move or transfer to another EEA state _(§ 10-70 third paragraph)_. Switzerland is not in the EEA, so a move to Switzerland gives no loss deduction.
 - **Computation.** The gain is the market value at the deemed sale less the cost; the ordinary share rules in skatteloven §§ 10-30 to 10-36 apply so far as they fit _(§ 10-70 fifth paragraph)_. Under those rules a personal shareholder's gain, after unused shielding, is multiplied by 1.72 and taxed at 22% _(skatteloven § 10-31 first paragraph; Forskuddsutskrivingen 2026)_. For assets you owned when you moved to Norway, the cost is their market value when you became resident _(§ 10-70 sixth paragraph)_.
-- **Deferral for 12 years.** You can be given 12 years to pay, counted from the end of the year the exit tax is timed to. Security is required. For a move to another EEA state security is required only where there is a real risk the tax cannot be collected; Switzerland is outside the EEA, so the general rule applies _(§ 10-70 seventh paragraph)_. You choose how to pay:
+- **Deferral for 12 years.** You can be given 12 years to pay, counted from the end of the year the exit tax is timed to. Security is required. For a move to another EEA state security is required only where there is a real risk the tax cannot be collected; Switzerland is outside the EEA, so the general rule applies _(§ 10-70 seventh paragraph)_. Security is, for example, a pledge of shares or real estate _(Skatteetaten, Exit tax)_. You choose how to pay:
   - a) one twelfth of the tax each year; or
   - b) all of it at the end of the period, with interest from the date the tax would have been due without deferral until payment _(§ 10-70 seventh paragraph letters a and b)_.
-- **When the deferral ends early.** On sale, on your death, on a transfer to a non-resident, and when a partnership in scope stops its business. Death does not end the deferral if your personal heirs take over your duties under § 10-70 _(§ 10-70 eighth paragraph)_.
+- **When the deferral ends early.** On sale, on your death, on a transfer to a non-resident, and when a partnership in scope stops its business. Death does not end the deferral if your personal heirs take over your duties under § 10-70 _(§ 10-70 eighth paragraph)_. A withdrawal from a share savings account beyond the deposits ends the deferral for a proportional amount _(§ 10-70 eighth paragraph, third sentence)_.
 - **Dividend rule.** A dividend or other distribution on an asset that carries exit tax ends the deferral for an amount equal to the distribution multiplied by 0.7 _(§ 10-70 eighth paragraph, fourth sentence)_. You cannot empty the company while the exit tax is deferred.
-- **Return within 12 years cancels it.** If you become resident in Norway again within 12 years after the end of the year the exit tax is timed to, the tax and accrued interest lapse for the assets you still own _(§ 10-70 ninth paragraph)_.
+- **Return within 12 years cancels it.** If you become resident in Norway again within 12 years after the end of the year the exit tax is timed to, the tax and accrued interest lapse for the assets you still own _(§ 10-70 ninth paragraph)_. If you return later than that, having paid the exit tax in full, the cost of the assets you still own is adjusted by the change in value that was taxed on exit _(same paragraph)_.
 - **Information duty.** You must give the tax office all information relevant to the exit tax without being asked and without undue delay; a breach ends the deferral _(§ 10-70 eleventh paragraph)_.
 - **Long reopening window.** Where exit tax under § 10-70 first paragraph was not assessed, the tax office has 15 years to reopen _(skatteforvaltningsloven § 12-6 first paragraph)_.
 
@@ -75,7 +97,7 @@ Residence in Norway does not end when you board the plane _(skatteloven § 2-1 t
 - **Dividends from Norwegian companies.** Norway's domestic withholding tax is 25% _(Stortingets skattevedtak 2026 § 3-5 third paragraph)_. Under the treaty, Norway's tax on dividends to a Swiss-resident individual is capped at 15%; a Swiss company holding at least 10% directly is exempt _(treaty art. 10 para. 2)_. Switzerland gives relief for the Norwegian tax on request, by credit, a lump-sum reduction or a partial exemption _(treaty art. 23 para. 2 letter b)_.
 - **Large holdings: the five-year rule.** Norway may tax a gain on selling a holding of more than 25% in a Norwegian company if the seller was resident in Norway at some point in the five years before the sale and is not taxed on the gain in Switzerland _(treaty art. 13 para. 5)_. As Switzerland does not tax private gains on movable assets, this rule bites on a sale in the first five years after the move.
 - **Norwegian real estate.** Income, gains and wealth from real estate in Norway can be taxed in Norway _(treaty arts. 6, 13 para. 1, 22 para. 1)_.
-- **The company may follow you.** From 2026 a company incorporated under Norwegian law is resident in Norway, and a foreign company with its effective management in Norway is too _(skatteloven § 2-2 seventh paragraph)_. If both states treat the company as resident, the treaty gives residence to the state of its place of effective management _(treaty art. 4 para. 5)_. If a Norwegian company becomes resident in Switzerland, which is outside the EEA, its assets are taxed as if sold the day before _(skatteloven § 10-71 first and second paragraphs)_. Keep real management (board meetings, decisions, minutes) in Norway if the company is to stay Norwegian.
+- **The company may follow you.** From 2026 a company incorporated under Norwegian law is resident in Norway, and a foreign company with its effective management in Norway is too _(skatteloven § 2-2 seventh paragraph)_. If both states treat the company as resident, the treaty gives residence to the state of its place of effective management _(treaty art. 4 para. 5)_. If a Norwegian company becomes resident in Switzerland, which is outside the EEA, its assets are taxed as if sold the day before _(skatteloven § 10-71 first and second paragraphs)_. Even short of that, a place of management in Switzerland is a permanent establishment _(treaty art. 5 para. 2 letter a)_, and Switzerland can tax the profits attributable to it _(treaty art. 7 para. 1)_. Keep real management (board meetings, decisions, minutes) in Norway if the company is to stay Norwegian.
 - **Board fees** paid by a Norwegian company to a Swiss-resident director can be taxed in Norway _(treaty art. 16)_.
 - **Pensions** for past employment paid from Norway can be taxed in Norway at no more than 15% _(treaty art. 18)_.
 - **Treaty anti-abuse.** A treaty benefit is denied where obtaining it was one of the main purposes of an arrangement _(treaty art. 28a)_.
@@ -101,7 +123,7 @@ Residence in Norway does not end when you board the plane _(skatteloven § 2-1 t
 5. Choose the Swiss regime: ordinary cantonal taxation or the modified lump sum (a plain lump sum loses the treaty). Compare cantons in writing.
 
 **Departure year**
-6. Report the exit gain with the return for the year of the move; apply for deferral and provide security; diarise the annual information duty.
+6. Report the exit gain in the tax return that covers the day before the move (a move or treaty change on 1 January goes in the previous year's return); choose there between paying now, twelfths or payment at the end; provide security; diarise the information duty _(Skatteetaten, Exit tax)_.
 7. Register in Switzerland and build the evidence for the treaty tie-breaker (permanent home, centre of vital interests).
 8. Tell Norwegian payers (dividend withholding at 15% under the treaty, pensions).
 
@@ -110,7 +132,7 @@ Residence in Norway does not end when you board the plane _(skatteloven § 2-1 t
 10. Before any dividend from the Norwegian company, price the 0.7 rule.
 
 **After the tail**
-11. Keep the 12-year exit tax calendar; within the first five years, price the treaty rule for holdings over 25% before any sale; review the return option before year 12 ends.
+11. Claim the end of Norwegian residence in the tax return (search "Emigration", then "Claim for cessation of tax residence (tax emigration)") _(Skatteetaten, Tax emigration)_; keep the 12-year exit tax calendar; within the first five years, price the treaty rule for holdings over 25% before any sale; review the return option before year 12 ends.
 
 ---
 
@@ -142,15 +164,17 @@ Residence in Norway does not end when you board the plane _(skatteloven § 2-1 t
 | Skatteloven § 13-2 (anti-avoidance) | https://lovdata.no/lov/1999-03-26-14/§13-2 | 2026-10-30 |
 | Stortingets skattevedtak 2026 (FOR-2025-12-18-2747) §§ 2-1, 2-3, 3-2, 3-5 | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-10-30 |
 | Skattebetalingsloven §§ 9-3, 10-51 (wealth tax deferral) | https://lovdata.no/dokument/NL/lov/2005-06-17-67 | 2026-10-30 |
+| Skatteetaten, Exit tax (latent gain, basic deduction, security, reporting) | https://www.skatteetaten.no/en/person/to-from-norway/from/tax-when-you-move-abroad/exit-tax/ | 2026-10-30 |
+| Skatteetaten, Tax emigration (how to claim) | https://www.skatteetaten.no/en/person/to-from-norway/from/tax-when-you-move-abroad/tax-emigration/ | 2026-10-30 |
 | Skatteforvaltningsloven § 12-6 (15-year window) | https://lovdata.no/lov/2016-05-27-14/§12-6 | 2026-10-30 |
 | Skatteetaten, Formuesskatt og verdsettingsrabatter (2026) | https://www.skatteetaten.no/satser/formuesskatt/ | 2026-10-30 |
 | Skatteetaten, Renter ved utsatt betaling av formuesskatt (2026) | https://www.skatteetaten.no/satser/renter-ved-utsatt-betaling-av-fomuesskatt-beregnet-pa-virksomhetsformue/ | 2026-10-30 |
 | Skatteetaten, Forskuddsutskrivingen 2026 | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-10-30 |
-| Norway-Switzerland tax treaty, SR 0.672.959.81, consolidated 26 October 2020, arts. 4, 6, 10, 13, 16, 18, 22, 23, 28a | https://www.fedlex.admin.ch/eli/cc/1989/1356_1356_1356/de | 2026-10-30 |
+| Norway-Switzerland tax treaty, SR 0.672.959.81, consolidated 26 October 2020, arts. 4, 5, 6, 7, 10, 13, 16, 18, 22, 23, 28a | https://www.fedlex.admin.ch/eli/cc/1989/1356_1356_1356/de | 2026-10-30 |
 | Swiss Federal Direct Tax Act (DBG), SR 642.11, as at 2 September 2026, arts. 14, 16 | https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de | 2026-10-30 |
 | Swiss Tax Harmonisation Act (StHG), SR 642.14, as at 1 January 2025, arts. 6, 7 | https://www.fedlex.admin.ch/eli/cc/1991/1256_1256_1256/de | 2026-10-30 |
 
-Not yet confirmed: whether the NOK 3,000,000 exit threshold is measured before or after the 1.72 adjustment; the interest rate under § 10-70 seventh paragraph letter b and the form of security; what the 7 October 2024 change to § 10-70 altered; how the 2026 wording of § 2-1 seventh paragraph ("bor i riket") applies to a person still resident during the 3-year tail; cantonal income and wealth tax rates and which cantons offer lump-sum taxation (the older version said Zurich and some others have abolished it); whether Switzerland publishes a list of countries that require the modified lump sum (the treaty text itself is relied on here); immigration and residence permits in Switzerland.
+Not yet confirmed: the interest rate under § 10-70 seventh paragraph letter b; what the 7 October 2024 change to § 10-70 altered; how the 2026 wording of § 2-1 seventh paragraph ("bor i riket") applies to a person still resident during the 3-year tail; cantonal income and wealth tax rates and which cantons offer lump-sum taxation (the older version said Zurich and some others have abolished it); whether Switzerland publishes a list of countries that require the modified lump sum (the treaty text itself is relied on here); immigration and residence permits in Switzerland; the risk, named in the older version, that Switzerland treats an active investor as a professional securities trader whose gains are taxable.
 
 ---
 
