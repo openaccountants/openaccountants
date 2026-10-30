@@ -45,7 +45,7 @@ Estonia's tax system is run by the Estonian Tax and Customs Board (Maksu- ja Tol
 - **VAT return (KMD) deadline.** Monthly. The return and its annex are due by the 20th day of the month after the period _(KMS § 27(1))_.
 - **Annual individual income tax return.** By 30 April of the year after the tax year. EMTA pre-fills the return for residents. Any extra tax is due, and refunds are paid, by 1 October of that year _(TuMS § 44(1), § 44(1^1), § 46(3), § 46(6))_. An FIE must file even when no tax is due _(TuMS § 44(6^1))_.
 - **Monthly employer and company return (TSD) deadline.** By the 10th day of the month after the month. The income tax on distributions, fringe benefits and other company tax objects is due by the same day _(TuMS § 54(1), (2), (4))_. Banks file the quarterly advance-tax return by the 10th day of the third month of each quarter _(TuMS § 54(2^1))_.
-- **Annual report (financial statements).** The management board of an OÜ files the approved annual report with the commercial register within six months of the end of the financial year, so by 30 June for a calendar-year company _(Commercial Code (äriseadustik, ÄS) § 179(4))_. Detail: `ee-company-formation`.
+- **Annual report (financial statements).** The management board of an OÜ (private limited company) or an AS (public limited company) files the approved annual report with the commercial register within six months of the end of the financial year, so by 30 June for a calendar-year company _(Commercial Code (äriseadustik, ÄS) § 179(4) for an OÜ, § 334(2) for an AS)_. Detail: `ee-company-formation`.
 - **Late payment interest.** 0.06% a day on tax paid late _(MKS § 117(1))_.
 - **Transfer pricing.** Where a related-party price differs from market value, the difference is taxed as if distributed _(TuMS § 50(4))_. Detail: `ee-transfer-pricing`.
 
@@ -74,14 +74,14 @@ Estonia's tax system is run by the Estonian Tax and Customs Board (Maksu- ja Tol
 | Maksukorralduse seadus (Taxation Act), consolidated text in force from 26.10.2026, § 117 | https://www.riigiteataja.ee/et/akt/116102026010 | 2026-10-30 |
 | Kogumispensionide seadus (Funded Pensions Act), consolidated text in force 01.06.2025 to 31.10.2026, § 9 | https://www.riigiteataja.ee/et/akt/103122024016 | 2026-10-30 |
 | Ettevõtlustulu lihtsustatud maksustamise seadus (Simplified Business Income Taxation Act), consolidated text in force from 01.01.2026, §§ 4, 8 | https://www.riigiteataja.ee/et/akt/118122025016 | 2026-10-30 |
-| Äriseadustik (Commercial Code), consolidated, § 179 | https://www.riigiteataja.ee/et/akt/106072023131 | 2026-10-30 |
+| Äriseadustik (Commercial Code), consolidated text in force from 01.03.2024 (the text Riigi Teataja lists as in force on 30.10.2026), §§ 179, 334 | https://www.riigiteataja.ee/et/akt/106072023131 | 2026-10-30 |
 | EMTA, tax rates (2024 to 2026) | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates | 2026-10-30 |
 | EMTA, entrepreneur account | https://www.emta.ee/en/private-client/taxes-and-payment/taxable-income/entrepreneur-account | 2026-10-30 |
 | EMTA, social tax of self-employed persons | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/social-tax | 2026-10-30 |
 | Ministry of Finance, law changes in force in 2026 | https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused | 2026-10-30 |
 | Ministry of Finance, Riigikogu approved the security tax changes (18.06.2025) | https://www.fin.ee/uudised/riigikogu-kiitis-heaks-julgeolekumaksu-muudatused | 2026-10-30 |
 
-Not yet confirmed: the Commercial Code text used is the consolidated version Riigi Teataja serves as in force from 01.03.2024 with no end date; no later consolidated version came up in the Riigi Teataja search, so § 179(4) was not checked against a 2026 text. The annual report deadline for an AS (public limited company) was not read, so this overview states it only for an OÜ.
+Not yet confirmed: nothing outstanding for this overview.
 
 <!-- openaccountants-cta-block -->
 
