@@ -1,7 +1,7 @@
 ---
 name: ua-social-contributions
 description: "Ukrainian unified social contribution (єдиний соціальний внесок, ЄСВ) for tax year 2026 under the Law on the unified social contribution (No. 2464-VI) and the 2026 State Budget Law. Covers who pays: employers, sole proprietors on the general system and the single tax, independent professionals, voluntary payers; the 22% rate and the 8.41% rate for employees with disabilities; the minimum contribution of UAH 1,902.34 a month, due even with no income; the maximum base of 20 minimum wages (UAH 172,940; 15 for service members); exemptions for pensioners, people with disabilities, employed proprietors and mobilised proprietors; the suspended martial-law right not to pay; quarterly payment and annual reporting; fines and penalty interest. Trigger on: ЄСВ Ukraine, єдиний внесок ФОП, unified social contribution, USC Ukraine, social security Ukraine. Out of scope: employer payroll steps (ua-payroll), PIT (ua-income-tax), single tax (ua-single-tax)."
-version: 0.1
+version: 1.1
 jurisdiction: UA
 tax_year: 2026
 last_updated: 2026-10-30
