@@ -1,10 +1,10 @@
 ---
 name: it-regime-forfettario
 description: "Italy's regime forfettario (flat-rate regime) for individuals running a business or a profession, tax year 2026, under L. 190/2014 art. 1 commi 54-89. Covers the entry and stay conditions (EUR 85,000 revenue, EUR 20,000 staff costs, the employment-income bar raised to EUR 35,000 for 2025 and 2026, the comma 57 exclusions), the same-year exit above EUR 100,000, the full table of coefficienti di redditivita by ATECO group, the 15% substitute tax and the 5% start-up rate, deduction of INPS contributions, no VAT and the invoice wording, e-invoicing, the EUR 2 stamp duty, the 35% INPS cut for artigiani and commercianti, acconti, Quadro LM, leaving the regime, and penalties. Trigger on: forfettario, forfetario, flat tax partita IVA, imposta sostitutiva 15%, 5% startup, coefficiente di redditivita, Quadro LM, superamento 100.000. Out of scope: regime ordinario (it-income-tax), employees (it-irpef-employees), INPS rates (it-inps-contributions for the gestione separata, it-inps-artigiani-commercianti for artigiani and commercianti), acconti method (it-estimated-tax), VAT returns (italy-vat-return), e-invoice XML (italy-einvoice)."
-version: 0.1
+version: 0.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-29
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
@@ -117,7 +117,7 @@ The person confirms these by ticking LM21 column 3. If one year's income has to 
 
 **INPS for artigiani and commercianti (commi 76 to 84).** Forfettari who run a business may ask INPS to compute the artigiani or commercianti contributions on the forfettario income, cut by 35% (comma 77). Someone already in business must apply by 28 February of the year; someone starting applies online when they start. A late application works from the following year (comma 83). The cut ends from the year after the regime ends, and once someone is back on the ordinary INPS regime they can never use the cut again (comma 82). The cut does not apply to professionals in the gestione separata. Contribution rates, the minimum income base and worked figures for the cut are in `it-inps-artigiani-commercianti`.
 
-**VAT (commi 58 to 60).** A forfettario charges no VAT on domestic sales, deducts no input VAT, keeps no VAT registers and files no annual VAT return. They still number and keep purchase invoices and customs documents. On reverse-charge purchases, and other operations where they are the debtor, they self-charge VAT and pay it by the 16th of the following month (comma 60). A forfettario may issue a simplified invoice whatever the amount (comma 59). The Agenzia's "Semplificazioni e adempimenti" page still gives the older deadline for this self-charged VAT (the 16th of the second month after each quarter); comma 60 as in force sets the 16th of the following month.
+**VAT (commi 58 to 60).** A forfettario charges no VAT on domestic sales, deducts no input VAT, keeps no VAT registers and files no annual VAT return. They still number and keep purchase invoices and customs documents. For purchases of goods or services subject to reverse charge under DPR 633/1972 article 17, including intra-EU purchases, comma 58(e-bis) specifically requires payment by the **16th of the second month after each calendar quarter**. Paragraph 60 retains the duty to issue/integrate the invoice and its general following-month deadline for debtor operations; do not replace the specific reverse-charge-purchase deadline with that general sentence. Classify other debtor operations under their applicable rule. A forfettario may issue a simplified invoice whatever the amount (comma 59). The authority's quarterly guidance matches comma 58(e-bis). Source: [Law 190/2014 art.1(58)(e-bis), (59) and (60), current text read 29 October 2026](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-29).
 
 **Invoice wording** (Agenzia, "Fattura elettronica per i forfettari"):
 - Tax regime field: "Regime forfettario (art.1, c.54-89, L. 190/2014)" (RF19).
@@ -291,6 +291,7 @@ IRPEF bands: TUIR art. 11(1) as amended by L. 199/2025 (https://www.normattiva.i
 | TUIR, art. 13 (detrazioni) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-22 | 2026-10-22 |
 | Agenzia, IRPEF rates (updated 13 January 2026; 2026 middle rate in its note) | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef | 2026-10-22 |
 | INPS Circolare n. 35 of 19 February 2016 (forfettari: 35% cut on the minimale and above, maternity on the fixed dates) | https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=%2FCircolari%2FCircolare+numero+35+del+19-02-2016.htm | 2026-10-23 |
+| Law190/2014 art.1(58)(e-bis), (59)–(60), reverse-charge purchases and debtor-operation duties | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-29 | 2026-10-29 |
 
 Not yet confirmed: (1) no Agenzia circular or FAQ read states in terms which employment-income year the EUR 35,000 limit tests; the reading above rests on the law text and the Fascicolo 3 instructions; (2) the text of D.Lgs. 117/2026 Capo XXI (Normattiva did not return the article text), so whether the 2027 regime keeps the same figures; (3) the 2027 filing and payment dates under the new consolidated codes; (4) whether the impatriati regime can be combined with the forfettario.
 
