@@ -1,7 +1,7 @@
 ---
 name: ua-income-tax
 description: "Ukrainian personal income tax (податок на доходи фізичних осіб, ПДФО) and the 5% military levy for every individual, tax year 2026, under section IV of the Tax Code of Ukraine. Covers residents and non-residents; salary and civil-law fees withheld by tax agents; the tax social benefit; interest, dividends (5% and 9%), investment profit, rent, property and car sales, gifts and inheritance; foreign income and foreign tax credit; sole proprietors on the general system (net profit, deductible expenses, depreciation, quarterly advances); independent professionals; the annual declaration due 1 May, payment by 1 August, the tax discount and refunds; penalties. Trigger on: Ukraine income tax, ПДФО, декларація про майновий стан і доходи, податкова знижка, ФОП загальна система, military levy Ukraine. Out of scope: single tax (ua-single-tax), crypto (ua-crypto-tax), ЄСВ (ua-social-contributions), employer payroll (ua-payroll), residence and treaties (ua-cross-border), companies (ua-corporate-income-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: UA
 tax_year: 2026
 last_updated: 2026-10-30
@@ -41,8 +41,8 @@ There are no bands. Each kind of income has one flat rate.
 | Dividends from a Ukrainian company that pays corporate income tax | 5% | 2026 | art. 167.5.2 |
 | Dividends from non-residents, collective investment institutions and companies that do not pay corporate income tax | 9% (half of 18%) | 2026 | art. 167.5.4 |
 | Sale of one home or qualifying land plot a year, owned more than 3 years | 0% (not taxed) | 2026 | art. 172.1 |
-| Sale of a second property in the year, or a property not in art. 172.1 | 5% | 2026 | art. 172.2, 167.2 |
-| Sale of a third and further property in the year | 18% | 2026 | art. 172.2, 167.1 |
+| Sale of a second art. 172.1 property in the year, or of the first property in the year that is not on the art. 172.1 list | 5% | 2026 | art. 172.2, 167.2 |
+| Sale of a third and further art. 172.1 property in the year, a second and further property not on that list, or unfinished construction and off-plan property rights | 18%; 5% where that property was inherited | 2026 | art. 172.2, 167.1, 167.2 |
 | Sale of movable property | 5%; one car, motorcycle or moped a year is not taxed | 2026 | art. 173.1, 173.2 |
 | Inheritance or gift from a family member of the 1st or 2nd degree | 0% | 2026 | art. 174.2.1, 174.6 |
 | Inheritance or gift from anyone else | 5% | 2026 | art. 174.2.2, 174.6 |
@@ -54,7 +54,7 @@ There are no bands. Each kind of income has one flat rate.
 | ПСП income limit: monthly salary not above | UAH 4,660 (3,328 x 1.4 = 4,659.20, rounded to the nearest UAH 10); times the number of children for the child benefits | 2026 | art. 169.4.1 |
 | Investment profit: sales proceeds a year not above | UAH 4,660 are not taxed | 2026 | art. 170.2.8 "а" |
 | Tax discount: donations to non-profit organisations | up to 4% of total taxable income of the year | 2026 | art. 166.3.2 |
-| Tax discount: rent paid by an internally displaced person | up to 30 minimum wages a year, UAH 259,410 | 2026 | art. 166.3.9 |
+| Tax discount: home rent paid by an internally displaced person, a combat participant or a person disabled by the war | up to 30 minimum wages a year, UAH 259,410 | 2026 | art. 166.3.9 |
 | Tax discount: own life, pension or medical insurance | up to UAH 4,660 for each month the contract ran; 50% of that per insured family member | 2026 | art. 166.3.5 |
 | Fixed asset of a sole proprietor | cost above UAH 20,000 and useful life over 1 year | 2026 | art. 14.1.138, 177.4.6 |
 | Minimum useful life for depreciation | buildings 10 years; machines and equipment 5 years; intangibles at least 2 years | 2026 | art. 177.4.9 |
@@ -79,7 +79,7 @@ There are no bands. Each kind of income has one flat rate.
 
 **Rent.** A business tenant withholds 18% from rent for real estate, on the contract rent but not less than the minimum rent set by the Cabinet of Ministers' method (art. 170.1.2, 170.1.4). If the tenant is a private individual, the landlord pays the tax himself within 40 days after each quarter and declares the year (art. 170.1.5 "а"). Real estate of a non-resident may be let only through a Ukrainian representative (art. 170.1.3).
 
-**Sale of real estate.** One sale a year of a house, flat or part of one (with its land), or of land within the free-transfer norms, is not taxed if owned more than three years; the three-year test does not apply to inherited property (art. 172.1). The second sale in the year, or a sale of property not in art. 172.1, is taxed at 5%. The third and later sales are taxed at 18% (art. 172.2). Income is the contract price, but not less than the assessed value from the state valuation module (art. 172.3). The seller pays the tax before the notary certifies the sale (art. 172.5 "а").
+**Sale of real estate.** One sale a year of a house, flat or part of one (with its land), or of land within the free-transfer norms, is not taxed if owned more than three years; the three-year test does not apply to inherited property (art. 172.1). The second sale in the year of an art. 172.1 property, or the first sale in the year of a property not on that list, is taxed at 5%. The third and later sales of art. 172.1 property, the second and later sales of other property, and sales of unfinished construction or of off-plan purchase rights are taxed at 18%; where that property was inherited, the rate is 5% (art. 172.2). Income is the contract price, but not less than the assessed value from the state valuation module (art. 172.3). The seller pays the tax before the notary certifies the sale (art. 172.5 "а").
 
 **Sale of movable property.** 5% (art. 173.1). One car, motorcycle or moped a year is not taxed (art. 173.2).
 
@@ -106,7 +106,7 @@ There are no bands. Each kind of income has one flat rate.
 - assisted reproduction (up to one third of the year's salary) and state fees for adoption (art. 166.3.6);
 - conversion of a car to biofuel or gas (art. 166.3.7);
 - affordable housing (art. 166.3.8);
-- rent paid by an internally displaced person who has no habitable home outside occupied territory and gets no housing payments, up to UAH 259,410 (art. 166.3.9).
+- home rent paid by an internally displaced person, a combat participant or a person disabled by the war, who (with 1st-degree family) has no habitable home outside occupied territory and gets no budget housing payments, up to UAH 259,410 (art. 166.3.9).
 The discount cannot exceed the year's salary (art. 166.4.2). Documents must back each expense (art. 166.2). An unused right lapses at the end of the following year (art. 166.4.3). The discount refunds PIT only; the levy is charged on income before the discount (sub-point 1.2(1)).
 
 ## Deadlines and filing
@@ -182,12 +182,12 @@ expected:
   refund: 11592
 ```
 
-**Example 2. General-system sole proprietor with a laptop.** A sole proprietor on the general system receives UAH 2,075,000 in 2026. Documented expenses: subcontractors UAH 400,000, software UAH 60,000, rent UAH 120,000, bank charges UAH 15,000, and her own minimum ЄСВ for 12 months (22% of UAH 8,647 a month). In December 2025 she bought and started using a laptop for UAH 45,000. It costs more than UAH 20,000, so it is a fixed asset: she cannot expense it, and the minimum life for equipment is 5 years, so 2026 depreciation is UAH 9,000 (art. 177.4.5, 177.4.9). Net income is UAH 1,448,171.92. PIT at 18% is UAH 260,670.95 and the levy at 5% is UAH 72,408.60. She paid advances of UAH 190,000 by 20 April, 20 July and 20 October, so she owes UAH 70,670.95 PIT and the whole levy, UAH 143,079.55, with the declaration due 3 May 2027. Her proceeds also pass UAH 1,000,000, so she checks VAT registration in `ukraine-vat`.
+**Example 2. General-system sole proprietor with a laptop.** A sole proprietor on the general system receives UAH 3,300,000 in 2026, evenly over the year. Documented expenses: subcontractors UAH 400,000, software UAH 60,000, rent UAH 120,000, bank charges UAH 15,000. In December 2025 she bought and started using a laptop for UAH 45,000. It costs more than UAH 20,000, so it is a fixed asset: she cannot expense it, and the minimum life for machines and equipment is 5 years, so 2026 depreciation is UAH 9,000 (art. 177.4.5, 177.4.9). Her ЄСВ is 22% of her net taxable income, capped at the maximum base of UAH 172,940 a month (Law 2464-VI art. 7.1.2, 7.3, 8.5; Budget Law 4695-IX art. 32). Her profit is above the cap in every month whether or not the ЄСВ itself is deducted first, so her ЄСВ is the maximum, UAH 456,561.60 for the year, which she paid during 2026 and deducts (art. 177.4.3). Net income is UAH 2,239,438.40. PIT at 18% is UAH 403,098.91 and the levy at 5% is UAH 111,971.92. She paid PIT advances of UAH 290,000 by 20 April, 20 July and 20 October and no levy during the year, so with the declaration due 3 May 2027 she owes UAH 113,098.91 PIT and UAH 111,971.92 levy, UAH 225,070.83 in total. Her proceeds also pass UAH 1,000,000, so she checks VAT registration in `ukraine-vat`.
 
 ```oa-check
-name: General-system FOP net profit with laptop depreciation, 2026
+name: General-system FOP net profit with laptop depreciation and capped ЄСВ, 2026
 inputs:
-  proceeds: 2075000
+  proceeds: 3300000
   subcontractors: 400000
   software: 60000
   rent: 120000
@@ -195,25 +195,29 @@ inputs:
   minimum_wage: 8647
   laptop_cost: 45000
   minimum_life_years: 5
-  advances_paid: 190000
+  advances_paid: 290000
 steps:
-  - own_esv: minimum_wage * 0.22 * 12
   - depreciation: laptop_cost / minimum_life_years
-  - expenses: subcontractors + software + rent + bank_charges + own_esv + depreciation
-  - net_income: proceeds - expenses
+  - profit_before_esv: proceeds - subcontractors - software - rent - bank_charges - depreciation
+  - max_base_month: minimum_wage * 20
+  - own_esv: round(max_base_month * 0.22 * 12, 2)
+  - net_income: profit_before_esv - own_esv
+  - net_income_month: round(net_income / 12, 2)
   - pit: round(net_income * 0.18, 2)
   - levy: round(net_income * 0.05, 2)
   - pit_balance: pit - advances_paid
   - due_with_declaration: pit_balance + levy
 expected:
-  own_esv: 22828.08
   depreciation: 9000
-  expenses: 626828.08
-  net_income: 1448171.92
-  pit: 260670.95
-  levy: 72408.60
-  pit_balance: 70670.95
-  due_with_declaration: 143079.55
+  profit_before_esv: 2696000
+  max_base_month: 172940
+  own_esv: 456561.60
+  net_income: 2239438.40
+  net_income_month: 186619.87
+  pit: 403098.91
+  levy: 111971.92
+  pit_balance: 113098.91
+  due_with_declaration: 225070.83
 ```
 
 ## Ask the client first
@@ -223,7 +227,7 @@ expected:
 3. Are you registered as a sole proprietor or independent professional? On the general system or the single tax (`ua-single-tax`)?
 4. For a proprietor: your record of income and expenses, documents for each expense, any purchase over UAH 20,000, and the advances paid.
 5. Did you sell real estate, a car or securities, or receive a gift or inheritance? From whom, and how long had you owned the property?
-6. Did you pay tuition, treatment, insurance, mortgage interest, donations or rent as a displaced person in 2026, and do you have the payment documents?
+6. Did you pay tuition, treatment, insurance, mortgage interest, donations, or home rent as a displaced person, combat participant or person disabled by the war, in 2026, and do you have the payment documents?
 
 ## Sources
 
@@ -233,7 +237,7 @@ expected:
 | Law "On the State Budget of Ukraine for 2026", No. 4695-IX of 3 Dec 2025, arts. 7 and 8 | https://zakon.rada.gov.ua/laws/show/4695-20 | 2026-10-30 (via web.archive.org capture of 4 Jan 2026) |
 | State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
 
-Not yet confirmed: whether a sole proprietor's balance on the annual declaration is due within 10 days after the filing deadline (art. 57.1) or by 1 August (art. 179.7), so pay by the earlier date; whether the 1 August 2027 payment date, a Sunday, moves to the next working day; the taxation of state pensions (art. 167.4 refers to art. 164.2.19, which has been deleted); the full list of 150% and 200% social benefit categories; the National Bank discount rate for penalty interest in 2026; the Cabinet of Ministers minimum rent method; the cost-of-goods matching rule and cash-basis timing for proprietors (in the Ministry of Finance record-keeping order, not read); Diia City gig-specialist rates; any amendment after the 12 October 2026 archive capture.
+Not yet confirmed: whether a sole proprietor's balance on the annual declaration is due within 10 days after the filing deadline (art. 57.1) or by 1 August (art. 179.7), so pay by the earlier date; whether the 1 August 2027 payment date, a Sunday, moves to the next working day; the taxation of state pensions (art. 167.4 refers to art. 164.2.19, which has been deleted); the full list of 150% and 200% social benefit categories; the National Bank discount rate for penalty interest in 2026; whether a general-system proprietor must also pay the military levy in quarterly advances with the PIT advances (sub-point 1.4 applies the section IV order; art. 177.5.1 names only PIT); whether a proprietor's ЄСВ base is net income before or after deducting that ЄСВ, and whether ЄСВ for the fourth quarter paid in January counts in the year it is for or the year it is paid; the Cabinet of Ministers minimum rent method; the cost-of-goods matching rule and cash-basis timing for proprietors (in the Ministry of Finance record-keeping order, not read); Diia City gig-specialist rates; any amendment after the 12 October 2026 archive capture.
 
 <!-- openaccountants-cta-block -->
 
