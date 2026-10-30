@@ -1,7 +1,42 @@
 {
-  "status": "TWO-GUIDE WRITER CHECKPOINT; FULL COUNTRY REVIEW/PUBLICATION PENDING",
-  "generated_at": "2026-10-30T10:27:12.782793+00:00",
+  "status": "FOUR-GUIDE WRITER CHECKPOINT; FULL COUNTRY REVIEW/PUBLICATION PENDING",
+  "generated_at": "2026-10-30T11:22:30.313954+00:00",
   "files": [
+    {
+      "path": "ledgers/li-cross-border-evidence/predecessor-guide.md",
+      "sha256": "0c1e6515b43e740a86f1494ff8689c58628b6ccae7ae1002359ebd0b1f417c01",
+      "bytes": 14001
+    },
+    {
+      "path": "ledgers/li-cross-border-evidence/retained-original-controls.md",
+      "sha256": "857eb5b45cf3de1a4323028e9ba29fa5d5a6a232e4cdad6123bc1eb06668f670",
+      "bytes": 2584
+    },
+    {
+      "path": "ledgers/li-cross-border-evidence/sources/34-finance-act-2026.pdf",
+      "sha256": "3959ed63ec18ea7580187428eccb1f687a21d91018ecd0b532a47cec9bf8f0a0",
+      "bytes": 203416
+    },
+    {
+      "path": "ledgers/li-cross-border-evidence/sources/34-finance-act-2026.txt",
+      "sha256": "12a44b2b73a572642a156162483808534441126756298cb19374fd280988f27e",
+      "bytes": 99668
+    },
+    {
+      "path": "ledgers/li-cross-border-evidence/writer-method-checks.json",
+      "sha256": "d3820388b4abac1be71dd5068f61190fd10d0656235dd78422616eb7ec6d6b96",
+      "bytes": 4559
+    },
+    {
+      "path": "ledgers/li-cross-border.md",
+      "sha256": "7333941203ada1eb13fda3941e29679951d08eb1c7f01b33063bed9baceaf494",
+      "bytes": 26372
+    },
+    {
+      "path": "ledgers/li-cross-border.writer.json",
+      "sha256": "36821e0be620a0d5c304a25bd95a271f49a22de5d80dc5395a426334913abc5e",
+      "bytes": 78342
+    },
     {
       "path": "ledgers/li-payroll-social-evidence/predecessor-guide.md",
       "sha256": "45a891f3ce5cc96b215e94ac67be228cab1bab379fd6db30dd1062336d096a3c",
@@ -133,6 +168,11 @@
       "bytes": 5323
     },
     {
+      "path": "ledgers/li-payroll-social-evidence/writer-freeze-f44ea264.json",
+      "sha256": "72201a479b6d0fd456616edff585d75087a5ee23f9050efbafe5829a3b10bfb5",
+      "bytes": 9850
+    },
+    {
       "path": "ledgers/li-payroll-social-evidence/writer-method-checks-e7270d05.json",
       "sha256": "d936bcbada27560206f46319b1fca0cc1e5c19b41b02ffe8006e88eb0a93d0bf",
       "bytes": 6625
@@ -223,9 +263,89 @@
       "bytes": 82201
     },
     {
+      "path": "ledgers/liechtenstein-vat-evidence/predecessor-guide.md",
+      "sha256": "11a44408c8bace284b69f22bb4475cc9a5c29577be99cc6d41d53bfe23934db8",
+      "bytes": 14646
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/retained-original-controls.md",
+      "sha256": "8da12a1ed1e261d6945a130832b6742201c2f67794c63ce95752842a729d8c20",
+      "bytes": 3259
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/sources/04.pdf",
+      "sha256": "8ea497ccf56427cb13631b9f695f6ac770568f43524c7ebf41f7c97bbd92bcef",
+      "bytes": 434519
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/sources/04.txt",
+      "sha256": "60faa90d915232e0154919df4a1e92918805d42daefb4015908d8a79bbe1c77f",
+      "bytes": 165043
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/sources/35-mwstv-2026.pdf",
+      "sha256": "89330508f7955f24b820b0b616db76ef3753c602a86f9ab57dafec021f0dca0b",
+      "bytes": 433846
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/sources/35-mwstv-2026.txt",
+      "sha256": "b3c52c314c3fb20eb111e103d5b6f81905e2785145753ea06ea6d695af6f7333",
+      "bytes": 156844
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/sources/36-mwstv-interest-amendment.pdf",
+      "sha256": "14c0be72fce283f06729b0fdb98f3664e431f6f47fd3f29a63674903bd6f4215",
+      "bytes": 49407
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/sources/36-mwstv-interest-amendment.txt",
+      "sha256": "80a38f5ca7984154b728fd95dd12d76d8f880f3aede01dc5e89a000869f1e83d",
+      "bytes": 1902
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/sources/vat-portal-browser-excerpt.json",
+      "sha256": "6f626411f80a6d97ca47f883b05bc015b2307f2b932fff0b0968c360b7aee941",
+      "bytes": 1043
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/sources/vat-practice-browser-excerpt.json",
+      "sha256": "05e024cb001da5762b1def555f3204b4d2e90935006c03db3fca69e57ac8850f",
+      "bytes": 576
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/sources/vat-registration-browser-excerpt.json",
+      "sha256": "6f41fd3b9e1171e907b86263500a4d7afa341146f92fbaf8b79bfb23e14c06f4",
+      "bytes": 1276
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/writer-method-checks.json",
+      "sha256": "893e6258b204b36705da23fa1ff01133b7480e4d50c8ab9a97106ecf07c9095a",
+      "bytes": 6535
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/writer-validation.json",
+      "sha256": "5f7d634be5c76bcd875a96e74ea0943bc4a3b37d8aeca8d158832cec7404cabb",
+      "bytes": 1141
+    },
+    {
+      "path": "ledgers/liechtenstein-vat.md",
+      "sha256": "700973c2e0684304bbc53af447059375c4a4b2c34f7dcdd996553cc29a1816c9",
+      "bytes": 28438
+    },
+    {
+      "path": "ledgers/liechtenstein-vat.writer.json",
+      "sha256": "dfb569ce7218106f735c0da0cc6feabfc6bf425eebbcd6980562fda582a0fe3d",
+      "bytes": 88906
+    },
+    {
       "path": "skills/international/liechtenstein/README.md",
-      "sha256": "8d0aa80064e833e23bafb38ebe2df9cab0d95f57834f10d6f4466c6ac9527b0d",
-      "bytes": 9581
+      "sha256": "75e4f00d735e31feb396d9f137ec7b8a595ab2b53c03a03706bb0cccffa38008",
+      "bytes": 10363
+    },
+    {
+      "path": "skills/international/liechtenstein/li-cross-border.md",
+      "sha256": "98c5ed4b05ce03aa2435c4313ac425216af3fff1c9c9a344463fb702192608dd",
+      "bytes": 23918
     },
     {
       "path": "skills/international/liechtenstein/li-payroll-social.md",
@@ -236,14 +356,11 @@
       "path": "skills/international/liechtenstein/li-transfer-pricing.md",
       "sha256": "963195bbcb4533061b868a960e16f9abf00cf696c3422da21ece5cb811c5ea18",
       "bytes": 19517
+    },
+    {
+      "path": "skills/international/liechtenstein/liechtenstein-vat.md",
+      "sha256": "83ed049ad9c373473494f2767b0bd5f373552db647a6ce66107fa276321740e8",
+      "bytes": 22421
     }
-  ],
-  "verifications": {
-    "changed_guide_schema": "8Guides PASS/0warnings",
-    "current_and_retained_examples": "29blocksPASS,4duplicateoriginalsbetweenGuidesandannexes;not29distinctcases",
-    "writer_controls": "28payroll/19TPPASS",
-    "ledger_quotes": "168payroll/82TPgroups;allquoteanchorsmatchsavedofficialobservations",
-    "prior_independent_review": "24Octoberrecord unchanged;notextendedtonewcontent"
-  },
-  "remaining": "Four other taxGuide ledgers plus formation/router scope, wholepack independent review, precise unresolved ordinary questions, final country publication."
+  ]
 }
