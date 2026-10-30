@@ -1,0 +1,423 @@
+{
+  "read_on": "2026-10-24",
+  "purpose": "Writer source retrieval and selected preparation only; not independent review, named accountant approval, full-country verification or publication.",
+  "direct_pdf_sources": [
+    {
+      "name": "law-141-2025",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html",
+      "retrieved_at_utc": "2026-10-24T11:36:49.279615+00:00",
+      "curl_exit": 0,
+      "raw_sha256": "274ef75aa5da81c8c0e10be9a87bda3246a8eb3867de515ba2aba42a9154ba18",
+      "bytes": 420785,
+      "pdf_magic": true,
+      "pdftotext_exit": 0,
+      "text_sha256": "2ad920adf77504ff433eced17363d64e69ce729867a486083ad955c1b135d849",
+      "read_scope": "Selected original amendment/commencement paragraphs, especially2,16,23,25–26,46–47,51–56; compared with selected coordinated IGR passages. Full-file retrieval is not full amendment verification."
+    },
+    {
+      "name": "iss-household-2026",
+      "url": "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49156660.html",
+      "retrieved_at_utc": "2026-10-24T11:36:50.108242+00:00",
+      "curl_exit": 0,
+      "raw_sha256": "3aee190c5ebb3836607ad916784c49e036e450218a4045e3fdce057da59378de",
+      "bytes": 265450,
+      "pdf_magic": true,
+      "pdftotext_exit": 0,
+      "text_sha256": "d2fb687bcfbb77fd57c20e0a7a21a3b0023b1d0691e5d66ebd7e13752ad02cde",
+      "read_scope": "Full one-page circular726/UC/2026 read; household-worker daily base and stated pension/FONDISS2026 rates. This is not the complete general contribution/coverage law."
+    },
+    {
+      "name": "crossborder-circular-1-2026",
+      "url": "https://www.finanze.sm/pub2/dam/jcr%3Ac7b6c29b-5894-4a96-914b-00785958a63a/Circolare%20n.1-2026.pdf",
+      "retrieved_at_utc": "2026-10-24T11:36:50.864610+00:00",
+      "curl_exit": 0,
+      "raw_sha256": "23997e3d5a51aa1d645205b90f783379d7b5fff87e24a5ec86b56d1f3c0b5d59",
+      "bytes": 275200,
+      "pdf_magic": true,
+      "pdftotext_exit": 0,
+      "text_sha256": "98643c463bab73b2f9ec567820551d4825e0ff6f7a37119e6c545276a847386c",
+      "read_scope": "Scanned PDF. pdftotext returns principally provenance stamps. Tesseract Italian OCR used for navigation; substantive pages1–3 visually compared, including bases,13/10/18%distinction, B2C31July2027 and future procedures. Page4form OCR-read but not exercised; no live filing claim.",
+      "ocr": {
+        "engine": "tesseract -l ita --psm3; pdftoppm180dpi",
+        "page_text_sha256": {
+          "1": "eaddd671aecb1b4e474530560963fd1b5d65e134ac1ee40dfff394c6c1735574",
+          "2": "9d33e69e3fe8909c64e5267edb93d02bc7355be176a3bc7f74f4757c130607b8",
+          "3": "deb9bebe322d6c1eab6acfa223f43a75dd124a0d9463438a10249f8a7e259deb",
+          "4": "b12a366e0a9cd1d02af1b1afb52927705d5920491dd82e6607bdb2f02414a783"
+        },
+        "pixel_compared_pages": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "name": "dd-156-2026",
+      "url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33",
+      "retrieved_at_utc": "2026-10-24T11:39:27.619909+00:00",
+      "curl_exit": 0,
+      "bytes": 198339,
+      "raw_sha256": "5be329c273f1462c7b57a33e81d81050185182a61f76671d39255292f1638881",
+      "pdf_magic": true,
+      "pdftotext_exit": 0,
+      "text_sha256": "935800dddaead7e41c9c6161f70f456ae4d7af7b75944acccf1344eb88903454",
+      "read_scope": "All20articles read, including2026application under19 and identified changes to older source methods; authentic Bollettino PDF. Not evidence that every other2026act was found."
+    },
+    {
+      "name": "dd-116-2026",
+      "url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0",
+      "retrieved_at_utc": "2026-10-24T11:39:28.666791+00:00",
+      "curl_exit": 0,
+      "bytes": 208413,
+      "raw_sha256": "3df5a20303498f924ee45a5cc0a21461eb26a91c5a89ecf13098a7297696d462",
+      "pdf_magic": true,
+      "pdftotext_exit": 0,
+      "text_sha256": "aa53e3400162a93a7cc76eebd30b7f18f0cb3671ae192a79f9b10c76d965e7b9",
+      "read_scope": "All6articles read: international eligibility/scope, fee tiers, pre-filing, signature/effect/duration/conditional rollback and implementing-circular delegation."
+    },
+    {
+      "name": "dd-98-2026",
+      "url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=e54431a0e32f941616323ba3300c13a32828e853",
+      "retrieved_at_utc": "2026-10-24T11:39:29.573690+00:00",
+      "curl_exit": 0,
+      "bytes": 196975,
+      "raw_sha256": "5f66c378c1c86ef06207b32e8b08e1b0b14594b976f80582c4047430cd417743",
+      "pdf_magic": true,
+      "pdftotext_exit": 0,
+      "text_sha256": "f1af201e0e3411e8478b351827c0469e4ffda79f1d036cb1b7240b24cceaacc6",
+      "read_scope": "Full single-page amendment read; specified goods-table change from1August2026. Full tariff classification not yet verified."
+    },
+    {
+      "name": "dd-133-2026",
+      "url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538",
+      "retrieved_at_utc": "2026-10-24T11:39:30.545731+00:00",
+      "curl_exit": 0,
+      "bytes": 238088,
+      "raw_sha256": "9198273eba5a15d18b86be252c8acdea2760176f76456a1632e5ef0638493d2d",
+      "pdf_magic": true,
+      "pdftotext_exit": 0,
+      "text_sha256": "94ed19059dd89df6138d8044c82f1d7edfa950c0c6d5783d2cba8b5cca050c82",
+      "read_scope": "All eleven articles now read, including article 11 optional 2026 route, 2027 obligation/paper scope, 2028 sanction and conditional public-entity commencement. Complete technical Regulation28/2026 and portal execution remain open."
+    },
+    {
+      "name": "iss-general-revised-2026",
+      "url": "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T11:59:51.742109+00:00",
+      "raw_sha256": "7b6c1a321a75dd029aa19585b1f8745ac4c43ef0ec1832003634b21df4fc5ad3",
+      "bytes": 3136289,
+      "pdf_magic": true,
+      "read_scope": "All ten pages OCR-read; material pages 1,4,5,10 visually compared. Full underlying special-case statutes and live CONTRISS not audited.",
+      "text_sha256": "cb7c7f5a50363e843bf55318c122a7f82614928eb2580384dc6aca3a963ef1cd",
+      "ocr": {
+        "engine": "tesseract -l ita --psm3; pdftoppm160dpi",
+        "pixel_compared_pages": [
+          1,
+          4,
+          5,
+          10
+        ],
+        "page_text_sha256": {
+          "1": "a03b114891b85791a56b721c859dda5b4d82d28f0b2a32b31b28f65511d43189",
+          "2": "ba26585b7ae2bce7deb2215b140e27557aa882307e5760c02bb3a60712b0ad56",
+          "3": "858a8941ffca9ff5ef6a19552cb850e2d387d027a3dfb2a7151e938afe8a0e91",
+          "4": "aac5acd809fdc745f1fca1d1aab9c50b2359d61a4d206b94cc2f49060595d618",
+          "5": "9481172190086ee7ff14f48d8118dbbe6a900b2b55c594acf2776a2a3c414320",
+          "6": "dac013be8bf2a43ef30c4a06f4cc49080492a833aa35abe4e569e940ec39cebf",
+          "7": "4ed4d0922c83e89fc3908ae93ed9d44cc1d5bfa0f7e2edccc30539cd8d2d0b78",
+          "8": "54d91a432607d4126c1dc54916c217e4fe283e08f454cff7bb3f696b4899ef87",
+          "9": "3cfdfa1689f6761a14860768d341492ec9fcbe5f2a6a3b9601fe93a536e56e5a",
+          "10": "fb5d55249cec1fefc14c6b91a4da1ac7fe6a69e21a23b26088969d8b8c7c4766"
+        }
+      }
+    },
+    {
+      "name": "pension-law-157-2022",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17136203.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T11:59:53.228433+00:00",
+      "raw_sha256": "7eff5489f2d598750f2c2e5fee171f57b26d058f22c88d1d4e7a818eb1f54609",
+      "bytes": 624059,
+      "pdf_magic": true,
+      "read_scope": "Final enacted law identity/first page checked; not a full contribution-law review. Current rate method uses revised ISS circular. Subsequently selected enacted articles21-22read in full against2026pension/FONDISSrateprogression. Other law provisions remain outside this read scope.",
+      "text_sha256": "d70f7e1cb48dca99c59fd4438648532c7f357616f45b9e63a88328b425957564"
+    },
+    {
+      "name": "import-law-40-1972",
+      "url": "https://www.consigliograndeegenerale.sm/contents/instance18/files/document/19029leggi_2560.pdf",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:16:50.861305+00:00",
+      "raw_sha256": "9e520020b95448dbc94d143c1ad929042513b2a556e7c90f6f50f4f55a4cb1a1",
+      "bytes": 71329,
+      "pdf_magic": true,
+      "read_scope": "Selected scope, base, liability and export/refund framework read; original paper process and rates are not represented as current.",
+      "text_sha256": "4919c410c521a3bee0f7f487f3c6c10127de20fc7e6d68004c9a0a7794271094"
+    },
+    {
+      "name": "import-d-50-1993",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17021434.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:18:55.010557+00:00",
+      "raw_sha256": "f8dea1e7b0130f07102c643d40dee29aad5818915754d4f853148dabbf4e99a6",
+      "bytes": 34852,
+      "pdf_magic": true,
+      "read_scope": "Selected article 3 base and 4-5 documentary provisions read; current operational amendments remain open.",
+      "text_sha256": "3ff5236329c13b313326ed0c46703e191087ee30d6fb531d1dd1763fd7cc9c87"
+    },
+    {
+      "name": "import-dd-183-2011",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:16:52.827461+00:00",
+      "raw_sha256": "8e3ad9d943239739fe216ad13283469868efc214f34d0393233392e7f6a2e8b9",
+      "bytes": 21481,
+      "pdf_magic": true,
+      "read_scope": "Both articles read; ordinary 17%, specified Table C 21% and January 2012 application. Official errata corrects title, not these rates.",
+      "text_sha256": "d6300cfcbbb09537e3c1d2aa4324eeb6a0f6a60fd5299cd8f8dd1f6acb6884bb"
+    },
+    {
+      "name": "import-d-108-1997",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:16:55.283641+00:00",
+      "raw_sha256": "3552dce9dddfa06c71fe8433f9550a4f601fd7cf879eb611d486cfe89b037752",
+      "bytes": 69694,
+      "pdf_magic": true,
+      "read_scope": "Articles 1-4 and selected table framework; original ordinary rate superseded. Not full current tariff-chain review.",
+      "text_sha256": "b99058f402fbf8b8b98a235bd724e5891e256a0541995304dd460e3ed9898cf6"
+    },
+    {
+      "name": "import-d-135-2003",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:18:57.858949+00:00",
+      "raw_sha256": "d6137ce89f82cc985e0c346be611f6b173fcba7e20a4ceb94efd376738df5ab7",
+      "bytes": 22983,
+      "pdf_magic": true,
+      "read_scope": "All articles read for capital-goods original framework; later amendments/current vehicle, rental and property conclusions remain open.",
+      "text_sha256": "9ac73159b4ed48c4eb75f0107a8e9dacf01a72d56b98aa44d514cbdc738276ee"
+    },
+    {
+      "name": "company-law-80-2022",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17132480.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:18:07.812592+00:00",
+      "raw_sha256": "4f032d3ba066d3ec1ab1106030165fc2b1fbba2b0b374ac3aa56136dfaedc444",
+      "bytes": 282337,
+      "pdf_magic": true,
+      "read_scope": "Original articles 1-7 read and compared with selected company collection; not full current company/licensing law review.",
+      "text_sha256": "e13941ad76ae2972f93f0c0e82aab0b65c62fdcfa6253866722f10743b5d1513"
+    },
+    {
+      "name": "italy-gu-168-2021",
+      "url": "https://www.gazzettaufficiale.it/eli/gu/2021/07/15/168/sg/pdf",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:17:43.525451+00:00",
+      "raw_sha256": "18dcb791dec4ac7914b92f1e41afeb5a148616d7a9b83d781eb4a651e8957f0f",
+      "bytes": 2732845,
+      "pdf_magic": true,
+      "read_scope": "Only DM 21 June 2021 articles 1-23 read; detailed ordinary B2B and commencement comparisons. Gazette remainder unrelated/not reviewed; all later implementation/amendments and live SDI remain open.",
+      "selected_extracted_articles_text_sha256": "1b3d656833bdfe1cbd733f2f6e6a3f5b8407c76aac077ec541523c0243262770"
+    },
+    {
+      "name": "reg-24-2026",
+      "url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=16951b47dbbfd35a095f3ff014ae4d7f1dd77aa7",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:30:20.400882+00:00",
+      "raw_sha256": "1ad8dde05bfea7af439d94052e964802eadd7f973b1b1247fd582575887a7437",
+      "bytes": 291021,
+      "pdf_magic": true,
+      "text_sha256": "188a0dd59eb4c0e3486a8de30a7e0aec42bae1d35f3d925054346e6bd0921ca8",
+      "read_scope": "All fifteen articles read: employee-specific notice/count/October transition, separate licence category/count/exclusions, repayment and collection-stage coordination; full underlying Law30/2025, current Law179/2005 chain, further sanctions proposal and live portals remain open."
+    },
+    {
+      "name": "iss-instalments-4295-2026",
+      "url": "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49160180.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:29:14.261192+00:00",
+      "raw_sha256": "c6ec2a42df7194a33e48693942bf31576ea83d43dadc2228808ca2ac6249c740",
+      "bytes": 341802,
+      "pdf_magic": true,
+      "text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+      "read_scope": "Full one-page current circular OCR-read and visually compared: maximum12months,5%penalty plus statutory interest, single-instalment default and superseded2019circular.",
+      "ocr": {
+        "engine": "tesseract -l ita --psm3; pdftoppm150dpi",
+        "pixel_compared_pages": [
+          1
+        ],
+        "page_text_sha256": {
+          "1": "252c8fa849237ce4e12afdba0a16e84c5c815625119d3dc06a7d29224e0e8b66"
+        }
+      }
+    },
+    {
+      "name": "iss-employer-portal-2026",
+      "url": "https://www.iss.sm/on-line/home/documento49158044.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:29:16.457540+00:00",
+      "raw_sha256": "2f7993d984238bbdd48ffbbb634309903f0b56c18c082e1b69e5de2db78d1340",
+      "bytes": 1301627,
+      "pdf_magic": true,
+      "text_sha256": "7b2aa16484b6ad79ef5bec51da3501f5079367b625da44bf97468422d27e8e95",
+      "read_scope": "All six pages OCR-read only; category-specific care-worker contracts/payslip portal route fromMay2026, not accepted as universal employer procedure. No pixel comparison or live use."
+    },
+    {
+      "name": "law-179-2005",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17023301.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:31:08.391831+00:00",
+      "raw_sha256": "b0f9fb6964f6aa3045cb49e0fc82b0a43a6c30862584f92114b71c4969427626",
+      "bytes": 152927,
+      "pdf_magic": true,
+      "text_sha256": "7479702bb208170be01e77186dde135cdc305db7bc9346bc443dbd7cf0b98561",
+      "read_scope": "Original article44read only; later2006andotheramendments not fully reconciled. No complete current sanctions chain inferred."
+    },
+    {
+      "name": "iss-contriss-2023",
+      "url": "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49139863.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:31:07.201830+00:00",
+      "raw_sha256": "04b742622430ea6a924895359acf32554cba8fb3b62f0c917db84c2170f36129",
+      "bytes": 3323085,
+      "pdf_magic": true,
+      "text_sha256": "cb7c7f5a50363e843bf55318c122a7f82614928eb2580384dc6aca3a963ef1cd",
+      "read_scope": "Retrieved ten-page scan. Text extraction empty; not read/OCR-verified and no Guide rule relies on it."
+    },
+    {
+      "name": "pension-law-15-1983",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17019962.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:31:43.152436+00:00",
+      "raw_sha256": "da1208817d92c21e1bb38cfeef5e9589ecbf2544a60a31128507c01280e62782",
+      "bytes": 1899836,
+      "pdf_magic": true,
+      "text_sha256": "aac7759cf2e575c1375a1b7f6e7a435f143d34e0ff44977a133c7ab452e1c3a3",
+      "read_scope": "Original selected article6scope/reporting text read; current amendment chain not established. Not used as current2026universal payment deadline."
+    },
+    {
+      "name": "fondiss-information-note",
+      "url": "https://www.iss.sm/on-line/home/fondiss/nota-informativa.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:31:40.555267+00:00",
+      "raw_sha256": "438baf5eebcc8120db28abe78c0d0d9b0821909d3abd69078215e3fea123a53a",
+      "bytes": 376718,
+      "pdf_magic": true,
+      "text_sha256": "82af97d360fcfcf9a1aaaa27d0accb5c60033cd2c89db1d5bccbc5d0664abcd5",
+      "read_scope": "Cover dated3November2020and selected employee payment paragraph read. Historical contribution rates/procedures not treated as current2026general scheme."
+    }
+  ],
+  "coordinated_archive": {
+    "url": "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html",
+    "retrieval": "curl -f -L success; actual ZIP retained; two embedded PDFs extracted by exact member read",
+    "archive_sha256": "0901777ac682f9d719ef5cd9b75a3409f52da085670c91e36ea79c91165ff86d",
+    "retrieved_at_utc": "2026-10-24T11:37:24.703562+00:00",
+    "catalogue_date": "2025-12-22",
+    "editions": [
+      {
+        "name": "igr-coordinated-2025-12-no-notes",
+        "printed_update_date": "2025-12-22",
+        "raw_pdf_sha256": "c975837618fdf82a3fcc74bb70f7c2b98c1a69d4d995a355b9c446dd9b35c78f",
+        "extracted_text_sha256": "c4b1a5bf2fb437afef2219d573bc9fdae92bdeb59255dc8aa0b605fa3aa5efbb",
+        "selected_read_scope": "No-notes edition used for selected main-law1–6,9–11,17,24,30,42–50,73–75,84–85,92–94,123–128,131,137–139/143; not every paragraph in those ranges. With-notes edition used for selected source history and original/amending text comparisons; full historical annex not audited."
+      },
+      {
+        "name": "igr-coordinated-2025-12-with-notes",
+        "printed_update_date": "2025-12-12",
+        "raw_pdf_sha256": "2aca02fe822ecae3441f2a2546b51af0934bc08a5320ef234cbd65c739adf16a",
+        "extracted_text_sha256": "f846cbbd7f35869837e82e84dfacfa6884130d7ecab41a9c7453ffd5e7ff4b67",
+        "selected_read_scope": "No-notes edition used for selected main-law1–6,9–11,17,24,30,42–50,73–75,84–85,92–94,123–128,131,137–139/143; not every paragraph in those ranges. With-notes edition used for selected source history and original/amending text comparisons; full historical annex not audited."
+      }
+    ],
+    "status_limit": "Official coordinated texts are recognitive aids; authentic post2012acts are in Bollettino. Do not describe the two editions as identical or a complete2026consolidation.",
+    "additional_selected_read_scope": "Personal articles12-18,24-26/30,84-85/101 and AnnexC/E read for second preparation, with current DD156 amendments. Not all category or implementation provisions."
+  },
+  "access_limits": [
+    "Web reader cannot open coordinated ZIP; direct official download succeeded.",
+    "Web reader twice timed out on October-decree news detail; direct official HTML supplied the authentic Bollettino download link, whose PDF was successfully retrieved.",
+    "Augustcircular has scanned substantive pages; OCR alone was not accepted for material rates/dates.",
+    "Selected gov.sm/ISS listing pages rendered only forms/iframe in web reader; this does not establish unavailable or completed underlying source coverage."
+  ],
+  "country_source_sha256": {
+    "skills/international/san-marino/README.md": "f06f21f141c5c5130cf2d12184923b18913e556734da4a9afc7d83398f5202d5",
+    "skills/international/san-marino/sm-company-formation.md": "3213f2f7c3bb1bd07637f75cd1fdd5f979dff0a78922f45f9200448e0fc54e25",
+    "skills/international/san-marino/sm-corporate-income-tax.md": "1581fbd03fc673d65d9e272ede646557ff45bf6b46a811ed5d33ad66daa011b8",
+    "skills/international/san-marino/sm-cross-border.md": "4d09329515cad5079999890ad51f1c286bd6b1127ddfd322483a1a66a281593a",
+    "skills/international/san-marino/sm-income-tax.md": "744e4e44d8b55ffcd8162432fd24ee1a3b4165d10226b5391b978225766ecfb6",
+    "skills/international/san-marino/sm-payroll-social.md": "ffb9144b818dffa6743bd9c80e06bfe12e7eb3f924b1d8eb64ab1770e3408afe",
+    "skills/international/san-marino/sm-tax-overview.md": "b26e78811b5197e0da66839e7083b413c93eb5ecb14a8be9a5326ad33121c181",
+    "skills/international/san-marino/sm-transfer-pricing.md": "ef783b5a2be4a92b95d39915bb89e1ba0ca31ddf50f14b1da338728a87db6c7d",
+    "skills/international/san-marino/sm-vat-gst.md": "02f7b3d952ff36c2d2a0a65bc1ae8c5ad1a349a1fe951c65d990f4b46b497154"
+  },
+  "second_preparation_recorded_at_utc": "2026-10-24T12:24:06.549315+00:00",
+  "second_preparation_limit": "Writer preparation only. Earlier retrieval timestamps are preserved; local file mtime below identifies the completed download, not a separately measured HTTP-response timestamp.",
+  "company_coordinated_archive": {
+    "url": "https://www.consigliograndeegenerale.sm/on-line/documento17113696.html",
+    "catalogue_printed_date": "2024-11-27",
+    "archive_sha256": "07e213846e9f5f88607dbacaef1b93d8860fe91521f8710191725315adab4047",
+    "selected_scope": "Definitions and selected company articles2-6,10-21,48-52; selected accounting references and history of10/12/13. Not the full collection or2025-2026amendment chain.",
+    "pdfs": {
+      "0": {
+        "raw_sha256": "99211a9bb2bb370238df67883ef71103716e244fa7595cfe20466afa224652d7",
+        "text_sha256": "4bcae7cbf5b5f5cccf7e6df2cd219b3b003ab727dcee421a4f2554e28a36a182"
+      },
+      "1": {
+        "raw_sha256": "5b6cc6b149df0da53174e015f7f2e34154f62e5620609783975e2a5261fbca35",
+        "text_sha256": "b4695b4aa444b97b8dc8bfe1b1ae11be18c442f4519e563abad1a5041e5a7632"
+      }
+    }
+  },
+  "public_synthetic_calculator_checks": [
+    {
+      "url": "https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025",
+      "synthetic_get_inputs": {
+        "AnnoComp": "2026",
+        "TipoContribuente": "2",
+        "Imponibile": "0,00",
+        "NumMensilita": "13",
+        "ImponibileAnnuo": "11000,00",
+        "Conferma": "Calcola",
+        "MPasso": "3",
+        "MTipo": "G"
+      },
+      "checked_at_utc": "2026-10-24T12:05:19.008066+00:00",
+      "http_status": 200,
+      "raw_html_sha256": "d6db64bb91e408f98f25ee8e3eb4bc015cef51f6d594521ce596eea7ab6ecda6",
+      "extracted_text_sha256": "2fa324dba601cbe2a5152a7abdd71989c1944dcf0fceb47d55d4b860da9b0dfe",
+      "limit": "Public synthetic calculation only, no personal/client data, authentication, declaration, filing or payment. Runtime output is guidance, not independent law verification."
+    },
+    {
+      "url": "https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025",
+      "synthetic_get_inputs": {
+        "AnnoComp": "2026",
+        "TipoContribuente": "2",
+        "Imponibile": "0,00",
+        "NumMensilita": "13",
+        "ImponibileAnnuo": "30000,00",
+        "Conferma": "Calcola",
+        "MPasso": "3",
+        "MTipo": "G"
+      },
+      "checked_at_utc": "2026-10-24T12:05:19.454822+00:00",
+      "http_status": 200,
+      "raw_html_sha256": "cf6ed2b20334dd68db61b13f6dd5b0e1974f30c440f0118125d1ce1770a6efac",
+      "extracted_text_sha256": "fb9b23f1ab8ec799e70f090a86f9365886bab3e434ea21c8489cf83980d293cb",
+      "limit": "Public synthetic calculation only, no personal/client data, authentication, declaration, filing or payment. Runtime output is guidance, not independent law verification."
+    },
+    {
+      "url": "https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025",
+      "synthetic_get_inputs": {
+        "AnnoComp": "2026",
+        "TipoContribuente": "2",
+        "Imponibile": "0,00",
+        "NumMensilita": "13",
+        "ImponibileAnnuo": "50000,00",
+        "Conferma": "Calcola",
+        "MPasso": "3",
+        "MTipo": "G"
+      },
+      "checked_at_utc": "2026-10-24T12:05:19.942727+00:00",
+      "http_status": 200,
+      "raw_html_sha256": "752e58b5728f80dd46db7b361fbc4d1a999b83486bc7320bbab34871e7ddb509",
+      "extracted_text_sha256": "1965748caa1336bbdbe0d40553da6a4b8b79241ef9c199d8ce4ace75506ce7dd",
+      "limit": "Public synthetic calculation only, no personal/client data, authentication, declaration, filing or payment. Runtime output is guidance, not independent law verification."
+    }
+  ],
+  "third_preparation_recorded_at_utc": "2026-10-24T12:33:31.927535+00:00",
+  "independent_review_correction_recorded_at_utc": "2026-10-24T14:34:01.936851+00:00",
+  "independent_review_corrections": {
+    "original_source_checkpoint": "fc1a9b19591ebb8f163c4a1e8378694abb7c9c29",
+    "corrective_source_checkpoint": "b5e11396408884836a1d3b31dd10ba265628eae1",
+    "material": "DD133/2026 art2 current-year exactly100000 boundary separated from strict-exceeded/option continuing-use wording; equality persistence unconfirmed.",
+    "clarity": [
+      "IGR125(1) next-bimonth clock explicitly covers withholding or monthly employment-income accrual.",
+      "XB routes to personal Guides partial article18method."
+    ],
+    "workflow": "Primary Armenia/Montenegroqueued, source-review record and professional tier2/partial limits; no whole-country completeness claimed.",
+    "arithmetic": "All28original control blocks remain byte-identical."
+  }
+}
