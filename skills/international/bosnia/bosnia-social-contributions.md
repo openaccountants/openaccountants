@@ -1,553 +1,197 @@
 ---
 name: bosnia-social-contributions
-description: "Use this skill whenever asked about Bosnia and Herzegovina (BiH) payroll social security contributions, salary taxes, or personal income tax withholding. Trigger on phrases like \"how much social contributions in Bosnia\", \"BiH payroll\", \"Federation of BiH contributions\", \"Republika Srpska contributions\", \"doprinosi\", \"MIO/PIO\", \"PIO/MIO\", \"Brcko District payroll\", \"BiH net to gross\", \"gross to net salary Bosnia\", \"FBiH employer contributions 5%\", \"RS 32.8% contributions\", \"BiH personal income tax\", \"porez na dohodak\", \"BAM salary tax\", \"do I pay social security in Bosnia\", or any question about computing Bosnian payroll deductions, employer on-costs, or PIT withholding. CRITICAL: Bosnia and Herzegovina has NO single nationwide payroll/social-security system — contributions and PIT are set and collected at ENTITY level (Federation of BiH, Republika Srpska, Brcko District) with materially different rates and bases. ALWAYS branch on entity before computing. Also trigger when classifying bank-statement transactions that relate to payroll-tax payments to Porezna uprava FBiH, Poreska uprava RS, entity pension/health funds, or UINO (VAT). ALWAYS read this skill before touching any BiH social-contributions or payroll work."
-version: 0.1
+description: "Bosnia and Herzegovina mandatory social contributions (doprinosi) for 2026, set separately in the Federation of BiH (FBiH), Republika Srpska (RS) and Brčko District. Covers who pays, the rates (FBiH 31% from gross plus 5% employer since July 2025, 36% for the self-employed; RS 31% all from gross), the bases (gross salary, the minimum-wage floor, the FBiH 2026 fixed monthly bases for entrepreneurs such as 2,710 KM for liberal professions, RS bases of 70% or 100% of the average gross wage), board fees and other occasional income, due dates, fines and interest. Trigger on: doprinosi, PIO/MIO, zdravstveno osiguranje, osnovica za obračun doprinosa, doprinosi za preduzetnike, Specifikacija, Obrazac 1002, Bosnia social security. Out of scope: income tax (bosnia-income-tax), the full payroll run (bosnia-payroll), VAT (bosnia-vat)."
+version: 0.2
 jurisdiction: BA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-depends_on:
-  - social-contributions-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Bosnia and Herzegovina Social Security Contributions & Payroll
+# Bosnia and Herzegovina: social contributions (2026)
 
-## Bosnia and Herzegovina Social Security Contributions & Payroll Skill v0.1
+> **Not reviewed by an accountant.** Figures come from the FBiH Zakon o doprinosima and its rulebook, the FBiH Ministry of Finance list of 2026 bases, the RS Zakon o doprinosima and its amendments to 114/25, and the RS Tax Administration's 2026 notices, read on pufbih.ba, fmf.gov.ba, fbihvlada.gov.ba and poreskaupravars.org on 30 October 2026. It prepares working papers; it is not authority to file or pay.
 
-## Section 1 -- Quick reference
+There is no state-level social security system. Each of the three tax jurisdictions has its own contributions law, rates and bases, and the entity tax administrations collect them. Contributions go to the pension and disability, health and unemployment funds (RS also has a child-protection contribution).
 
-**Read this whole section before computing or classifying anything.**
+Related skills: the monthly payroll run in [bosnia-payroll](bosnia-payroll.md); income tax, including the self-employed, in [bosnia-income-tax](bosnia-income-tax.md); [ba-tax-overview](ba-tax-overview.md); planning in [bosnia-tax-optimization](bosnia-tax-optimization.md).
 
-> **STOP — entity branch first.** Bosnia and Herzegovina is a federal state with THREE separate payroll/PIT regimes. You CANNOT compute anything until you know which entity applies: **Federation of BiH (FBiH)**, **Republika Srpska (RS)**, or **Brcko District (BD)**. Only VAT is unified nationally.
+## Who this applies to
 
-**Quick reference fields**  _(authority and legislation per the research brief; PwC Worldwide Tax Summaries (https://taxsummaries.pwc.com/bosnia-and-herzegovina/individual/other-taxes); UINO (https://www.uino.gov.ba/portal/en/news/the-threshold-for-entering-the-vat-system-has-been-increased-to-bam-100-000/).)_
+**FBiH (Contributions Law arts. 4 and 5).** Insured persons who pay contributions from their income: residents employed in the Federation by a resident or non-resident employer, elected and appointed officials, residents posted abroad by an FBiH employer (unless insured in the host state or a treaty says otherwise), residents employed abroad by a foreign employer who are not insured there, people with income from other independent activities and occasional work, and non-residents employed in the Federation. A resident means a person with domicile or residence in the Federation. Payers of contributions on income: resident employers; residents and non-residents carrying on a business, profession or other independent activity as their main occupation; farmers and foresters as their only or main occupation; registered sole traders; and payers of income from other independent activities and occasional work.
 
-| Field | Value |
-| --- | --- |
-| Country | Bosnia and Herzegovina (BiH) |
-| ISO code | BA |
-| Currency | Convertible Mark (BAM / KM) only |
-| Tax year | 2025 |
-| FBiH legislation | Law on Contributions of FBiH (Zakon o doprinosima FBiH), as amended by the Law published in the Official Gazette of FBiH on 7 May 2025, applicable from 1 July 2025; Law on Personal Income Tax of FBiH (flat 10%) |
-| RS legislation | Law on Contributions of RS (Zakon o doprinosima RS); Law on Personal Income Tax of RS (flat 8%) |
-| BD legislation | Law on Personal Income Tax of Brcko District (flat 10%) |
-| National (VAT) legislation | Law on Value Added Tax of BiH (Official Gazette of BiH no. 80/23) |
-| FBiH authority | Tax Administration of FBiH (Porezna uprava FBiH, www.pufbih.ba) + entity pension fund (FZ MIO/PIO), health fund, employment service |
-| RS authority | Tax Administration of Republika Srpska (Poreska uprava RS, www.poreskaupravars.org) |
-| BD authority | Brcko District Tax Administration |
-| VAT authority (national) | Indirect Taxation Authority (Uprava za indirektno oporezivanje / UINO, www.uino.gov.ba) |
-| Contribution base | Gross salary (all entities). FBiH disaster + water charges are on NET salary |
-| Withholding | PAYE-style: employer calculates and withholds both contributions and PIT at source each salary payment |
-| Validated by | Pending — requires sign-off by a BiH-licensed tax advisor / certified accountant |
-| Validation date | Pending |
+**RS (Contributions Law 114/17 and amendments).** Employees, entrepreneurs and people in independent professions as their main occupation (art. 3(1)(6) as amended by 110/24), and others listed in the law. Entrepreneurs who are pensioners or carry on the activity as a secondary occupation are covered by art. 6(7) and (8) (110/24). From 2026, people engaged in seasonal and temporary work are covered by a fixed daily amount (art. 6(9), 114/25).
 
-**Headline rate overview (per entity)**  _(PwC (https://taxsummaries.pwc.com/bosnia-and-herzegovina/individual/other-taxes and .../taxes-on-personal-income); FBiH employer cut per Orbitax (https://orbitax.com/news/archive.php/Federation-of-Bosnia-and-Herze-58893) and Unija (https://unija.com/en/amendments-to-the-law-on-contibutions-in-the-fbih/).)_
+**Brčko District.** Employees and the self-employed in the District are insured under District health and employment laws and an entity pension fund. The rates are not covered here (see Not yet confirmed).
 
-| Item | FBiH | RS | BD |
-| --- | --- | --- | --- |
-| Employee social contributions (on gross) | 31.0% | 32.8% | 12.0% health + pension fund election |
-| Employer social contributions (on gross) | 5.0% (from 1 Jul 2025) | 0% (none) | per elected pension fund |
-| FBiH-only extra employer charges (on NET) | 0.5% disaster + 0.5% water | n/a | n/a |
-| Personal income tax (flat) | 10% | 8% | 10% |
+## Rates, bands and thresholds
 
-**Conservative defaults**
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| FBiH, from the insured person's gross pay | pension and disability 17%, health 12.5%, unemployment 1.5% (total 31%) | 2026 | [FBiH Contributions Law art. 10(1)](https://www.pufbih.ba/v1/public/upload/zakoni/2dcc6-zakon-o-doprinosima-precisceni-tekst-25.pdf) |
+| FBiH, employer on gross pay | pension and disability 2.5%, health 2%, unemployment 0.5% (total 5%) | pay for July 2025 onward | [FBiH Contributions Law art. 10(2) as amended by 33/25](https://www.fmf.gov.ba/Content/Open/102560?n=Zakona_o_izmjenama_i_dopunama_Zakona_o_doprinosima.doc); [Rulebook art. 40b](https://www.pufbih.ba/v1/public/upload/zakoni/7cfcb-pravilnik-o-nacinu-obracunavanja-i-uplate-doprinosa-precisceni-48-25.pdf) |
+| FBiH, self-employed on their fixed base | pension and disability 19.5%, health 14.5%, unemployment 2% (total 36%) | pay for July 2025 onward | FBiH Contributions Law art. 10b as amended by 33/25 |
+| FBiH, additional pension contribution for jobs with extended service credit | 2%, 3% or 6% | 2026 | FBiH Contributions Law art. 10(3) |
+| FBiH, board fees and other occasional income | health 4% from the recipient; pension 6% from the payer | 2026 | FBiH Contributions Law art. 10a |
+| FBiH monthly base, entrepreneurs keeping books | liberal professions 2,710 KM; crafts 1,602 KM; agriculture and forestry 715 KM; sole traders 715 KM | 2026 | [FMF, Osnovice za obračun doprinosa 2026 (Sl. novine FBiH 100/25)](https://www.fmf.gov.ba/Content/Open/102838?n=Osnovice_za_obra%C4%8Dun_doprinosa_odre%C4%91enih_obveznika_za_2026._godinu.docx) |
+| FBiH monthly base, entrepreneurs on the flat-rate income tax | crafts 1,355 KM; traditional crafts 616 KM; agriculture and forestry 616 KM; taxi 616 KM; sole traders 715 KM | 2026 | FMF, Osnovice 2026 |
+| FBiH monthly base, low-paid workers in coal mining, textiles, leather, footwear and traditional crafts (art. 6 point 10) | 739 KM | 2026 | FMF, Osnovice 2026 |
+| FBiH average salary used for 2026 bases | 2,464 KM (January to September 2025) | 2026 | FMF, Osnovice 2026 |
+| FBiH coefficients behind the bases | liberal professions 1.1; crafts 0.65; flat-rate crafts and professions 0.55; traditional crafts and taxi on flat rate 0.25; agriculture 0.25 or 0.29; sole traders 0.29; art. 6 point 10 workers 0.30 | 2026 | FBiH Contributions Law arts. 6 and 8 |
+| FBiH minimum base for employees | the minimum wage (1,027 KM net for 2026) converted to gross with the employee's own allowance; 50% of it for part-time of 4 hours a day or less | 2026 | FBiH Contributions Law art. 7(1), (2); Rulebook art. 20; [FBiH Government decision 1094](https://fbihvlada.gov.ba/bs/1094-odluka-o-iznosu-najnize-place-za-2026-godinu) |
+| FBiH base for employees posted abroad or employed abroad | pay for the same job in the Federation, not below the average salary | 2026 | FBiH Contributions Law art. 7(3) |
+| FBiH pension contribution for volunteers, and for young cooperative workers under 26 in full-time education | 30 KM a month | from Decision 62/26 | [FBiH Pension Fund decision 62/26](https://ik.imagekit.io/9qcwbg8wl/Odluka_62_26_U6SpxhQfE.pdf) |
+| FBiH pension contribution for students in practical training | 3 KM a month | from Decision 62/26 | FBiH Pension Fund decision 62/26 |
+| RS rates on the base | pension and disability 18.5%, health 10.2%, unemployment 0.6%, child protection 1.7% (total 31%) | 2026 | [RS Contributions Law art. 22(1)](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-doprinosima-SLGL-114_17.pdf), amended by [112/19](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-izmjenama-Zakona-o-doprinosima-SLGL-112_19.pdf) and [119/21](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20doprinosima.pdf) |
+| RS minimum base for employees | the minimum gross wage in force in the month | 2026 | [RS Contributions Law art. 10a, by 49/21](https://poreskaupravars.org/wp-content/uploads/2021/06/Zakon-o-doprinosima-2.pdf) |
+| RS minimum base, entrepreneurs | 70% of the previous year's average gross wage | from 1 Jan 2026 | [RS Contributions Law art. 11(1) as amended by 114/25](https://poreskaupravars.org/wp-content/uploads/2025/12/Doprinosi.pdf) |
+| RS minimum base, independent professions | the previous year's average gross wage | 2026 | RS Contributions Law art. 11(2) |
+| RS minimum base, entrepreneurs who are pensioners or work at it part-time (secondary occupation) | 30% of the previous year's average gross wage | 2026 | RS Contributions Law art. 11(3) as amended by [110/24](https://poreskaupravars.org/wp-content/uploads/2024/12/Scan25122024-1.pdf) |
+| RS average gross wage 2025 | 2,349 KM | 2025 | [RS Statistics Institute](https://www.rzs.rs.ba/) |
+| RS seasonal and temporary work | 16 KM a day of engagement | from 1 Jan 2026 | RS Contributions Law art. 16b, by 114/25 |
+| Late payment interest | FBiH 0.04% a day; RS 0.03% a day | 2026 | [FBiH interest law art. 2](https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf); [RS ZPP art. 60](https://poreskaupravars.org/wp-content/uploads/2026/05/Zakon-o-poreskom-postupku-78-20.pdf) |
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown entity | STOP -- do not compute. Ask which entity (FBiH / RS / BD) applies based on place of work/residence |
-| Entity known but pay-period date unknown (FBiH) | STOP -- FBiH employer rates changed on 1 Jul 2025; confirm pay date before computing |
-| Pay date on/after 1 Jul 2025 (FBiH employer) | Apply reduced employer rates totalling 5.0% |
-| Pay date before 1 Jul 2025 (FBiH employer) | Apply old employer rates totalling 10.5% |
-| Unknown personal allowance / dependants (FBiH PIT) | Apply basic allowance only; flag dependants for reviewer |
-| RS personal allowance / deduction unknown | [RESEARCH GAP — reviewer to confirm RS personal deduction] |
-| Contribution base ambiguous | Use gross salary; FBiH disaster + water charges on net salary only |
-| BD pension fund election unknown | STOP -- ask whether the individual elected the RS or FBiH pension fund |
+## The taxable base
 
-## Section 2 -- Required inputs and refusal catalogue
+**FBiH employees.** The base is the salary: every payment in money or kind that is taxable as salary, made up of contributions from the base, income tax and the net amount paid (arts. 6 and 6a). It includes pay for public holidays, annual leave and sick leave paid by the employer for up to 42 days. Payments that are not taxed as salary are not subject to contributions (art. 9(2)). The base cannot be lower than the minimum wage converted to gross with the employee's own tax-card allowance (art. 7(1); Rulebook art. 20). Each fund's rate is applied to the same base (Contributions Rulebook).
 
-### Required inputs
+**FBiH self-employed.** Entrepreneurs pay on a fixed monthly base published by the Federal Minister of Finance by 31 December for the next year (art. 20), not on their profit. The base is the average FBiH salary for January to September of the previous year times a coefficient that depends on the activity and whether income tax is paid from books or as a flat amount (art. 8(2)). They pay 36% on that base (art. 10b). The contributions are a business expense (art. 8).
 
-**Minimum viable** -- (1) the **entity** (FBiH / RS / BD), (2) **gross monthly salary in BAM**, and (3) for FBiH, the **pay-period date** (to pick the correct employer rate set). Without the entity, STOP.
+**FBiH board fees and occasional work.** Each payment for membership of a representative body, a company assembly or supervisory board, management board, commission, insolvency administration or as a lay judge, and for other occasional independent work, less the expense the income tax law allows, is a base (art. 6 point 11). The recipient pays 4% health, the payer 6% pension (art. 10a). The payer calculates them before paying and pays them at the same time (art. 11).
 
-**Recommended** -- residency/place of work confirming the entity; number of dependants and disability status (FBiH PIT personal allowance); for BD, the elected pension fund (RS or FBiH).
+**RS employees.** The base is total income subject to income tax, including the contributions themselves (art. 10(1)), so the 31% comes out of gross. It cannot be lower than the minimum gross wage; for part-time work with several employers whose combined pay is below it, each employer pays pro rata up to the minimum (art. 10a). From 2026 the 50 KM tax-free part of pay for low-qualified jobs is outside the base (art. 21(1); RS Tax Administration notice, February 2026). Posted workers (insurance code 56) pay on the minimum wage (art. 16a); low-qualified workers in textiles, clothing and leather pay on 25% of the previous year's average gross wage (art. 16).
 
-**Ideal** -- prior payslips, the employer's monthly salary/tax specification, and the entity tax-administration registration confirming fund membership.
+**RS self-employed.** Entrepreneurs pay on at least 70% of the previous year's average gross wage (2,349 KM for 2025, so at least 1,644.30 KM a month for 2026), and independent professions on at least the full average (art. 11).
 
-### Refusal catalogue
+**Brčko.** The District health insurance law lets the Assembly set, each year, the lowest and highest amounts on which the health contribution is charged (Health Insurance Law art. 76). Rates and those amounts are not covered here.
 
-- **R-BA-SSC-1 -- Entity unknown** — Trigger: the applicable entity (FBiH / RS / BD) is not provided. Message: "Bosnia and Herzegovina has three separate payroll regimes with materially different contribution and PIT rates. The entity (Federation of BiH, Republika Srpska, or Brcko District) is mandatory before any computation. Cannot proceed without it."
-- **R-BA-SSC-2 -- FBiH pay-period date unknown** — Trigger: FBiH payroll where the pay date in 2025 is not given. Message: "FBiH employer contribution rates fell from 10.5% to 5.0% effective 1 July 2025. 2025 payrolls straddle two rate sets. Confirm the pay-period date before computing employer on-costs."
-- **R-BA-SSC-3 -- Contribution minimum/maximum base** — Trigger: salary is near the minimum wage or unusually high and a contribution floor/ceiling may bite. Message: "A minimum contribution base (linked to the minimum/average wage) applies; any annual ceiling was not pinned to a primary figure. [RESEARCH GAP — reviewer to confirm the applicable floor/ceiling with the entity tax administration] before relying on the computation."
-- **R-BA-SSC-4 -- RS small-entrepreneur / FBiH self-employment specifics** — Trigger: client is a sole trader / small entrepreneur rather than an employee. Message: "Self-employed and small-entrepreneur regimes (e.g. RS 2% on annual revenue) differ from employee payroll. Escalate to a BiH-licensed advisor; this skill computes employee payroll."
-- **R-BA-SSC-5 -- Cross-entity or expat arrangements** — Trigger: worker is posted across entities, is a non-resident, or has dual fund membership. Message: "Cross-entity postings, non-resident workers, and totalisation/treaty questions require case-specific confirmation. Escalate to a BiH-licensed advisor."
+## Deadlines and filing
 
-## Section 3 -- Payment pattern library
+| What | FBiH | RS |
+|---|---|---|
+| Employer, on salary | calculated with the salary, due at the same time as the salary (art. 11(4)) | arises at each payment, paid by deduction (art. 24(1) and (3)) |
+| Salary not paid on time | calculated on the unpaid salary and paid by the last day of the month in which it fell due (art. 11(5) and (6)) | liability arises two months after the end of the month (art. 24(2)) |
+| Self-employed on their base | calculate and pay by the 10th for the previous month (art. 11(1)(b)) | due on the 20th for the previous month (art. 24(4)) |
+| Board fees, occasional work | before payment, paid with it (art. 11) | |
+| Report | payment specification with each payment, same day or next (art. 11a); annual data to each insured person and the Tax Administration by the end of January (art. 11) | monthly withholding return (Form 1002) by the end of the month for the previous month (art. 23(1)) |
+| Seasonal work | | by the 20th of the next month (art. 24(5), by 114/25) |
 
-This is the deterministic pre-classifier for bank-statement transactions related to BiH payroll taxes and contributions. When a transaction matches a pattern below, apply the treatment directly. Match by case-insensitive substring on the counterparty/reference. Contribution and PIT payments always EXCLUDE from any VAT return — they are statutory payroll obligations, not taxable supplies.
+Payments go to the prescribed public revenue accounts by type of contribution, in KM (FBiH art. 12). The FBiH insured person keeps his rights even if the employer fails to pay (art. 11).
 
-### 3.1 FBiH payroll-tax / contribution payments
+## Penalties and interest
 
-**3.1 FBiH payroll-tax / contribution payments**
+**FBiH (Contributions Law arts. 13 to 17a).**
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| POREZNA UPRAVA FBIH, PU FBIH, PUFBIH | EXCLUDE -- payroll tax/contribution remittance | FBiH Tax Administration |
-| DOPRINOSI, DOPRINOS | EXCLUDE -- social contributions | "Contributions" in local language |
-| MIO, PIO, MIO/PIO, FZ MIO | EXCLUDE -- pension/disability contribution | FBiH pension fund |
-| ZDRAVSTVENO, ZZO | EXCLUDE -- health insurance contribution | Health fund |
-| NEZAPOSLENOST, ZAPOSLJAVANJE | EXCLUDE -- unemployment contribution | Employment service |
-| POREZ NA DOHODAK | EXCLUDE -- personal income tax (not a contribution) | PIT withholding |
+- Contributions not calculated with the salary or by the last day of the month, or calculated on a base below the minimum: employer 2,000 to 10,000 KM; responsible person 500 to 2,000 KM. Self-employed person who does not calculate by the 10th: same range.
+- Contributions not paid with the salary, specification not filed on time: 1,000 to 5,000 KM. Self-employed person who does not pay on time: 500 to 2,000 KM.
+- Bank that does not report a salary paid without contributions within eight days: 2,000 to 5,000 KM.
+- A second offence can also bring a ban on the activity for up to one year.
+- Interest for each day of delay at the public-revenue rate, 0.04% a day.
 
-### 3.2 Republika Srpska payroll-tax / contribution payments
+**RS.**
 
-**3.2 Republika Srpska payroll-tax / contribution payments**
+- Return (Form 1002) not filed or late: legal person 2,000 to 6,000 KM, entrepreneur 1,000 to 3,000 KM (Tax Procedure Law art. 112).
+- Insured person not registered in the single contributions system: legal person 10,000 to 30,000 KM; natural person and responsible person 3,000 to 9,000 KM (art. 114).
+- Contributions neither declared nor paid, found in an audit: 30% of the amount, up to 200,000 KM (art. 115).
+- Interest 0.03% a day (art. 60).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PORESKA UPRAVA RS, PU RS | EXCLUDE -- payroll tax/contribution remittance | RS Tax Administration |
-| DOPRINOSI RS, DOPRINOS | EXCLUDE -- social contributions | RS unified contribution |
-| PIO RS, FOND PIO | EXCLUDE -- pension/disability contribution | RS pension fund |
-| ZDRAVSTVO RS, FOND ZDRAVSTVA | EXCLUDE -- health insurance contribution | RS health fund |
-| DJECIJA ZASTITA, DJEČJA ZAŠTITA | EXCLUDE -- child protection contribution | RS-specific |
+## Cross-border points
 
-### 3.3 Brcko District payroll payments
+- **Posted abroad.** An FBiH resident posted abroad by an FBiH employer stays insured in the Federation unless insured in the host state or a treaty says otherwise; the base is the pay for the same job at home and at least the FBiH average salary (arts. 5 and 7(3)). An RS posted worker pays on the RS minimum wage (art. 16a).
+- **Employed abroad by a foreign employer.** An FBiH resident not insured abroad pays FBiH contributions on the same base (arts. 5 and 7(3)); a resident working in the Federation for a non-resident employer pays himself by the 10th, or the foreign employer can pay (art. 11(1)(b) and (c)).
+- **Non-residents working in the Federation** for a resident employer, or for a non-resident unless a treaty registered with the BiH Ministry of Foreign Affairs says otherwise, pay FBiH contributions (art. 5).
+- **Between the entities.** An RS employer pays by its seat in RS; an employer from the Federation or Brčko pays through its RS business unit (RS art. 26).
+- Bilateral social security agreements can move the liability; check the agreement and the certificate of coverage before leaving anyone out.
 
-**3.3 Brcko District payroll payments**
+## Worked examples
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| BRCKO DISTRIKT, BD POREZ | EXCLUDE -- BD payroll tax | Brcko District Tax Administration |
-| ZDRAVSTVO BD | EXCLUDE -- BD health contribution | 12.0% health on gross |
+### Example 1: FBiH lawyer keeping books, monthly contributions (2026)
 
-### 3.4 National VAT payments (NOT payroll — do not confuse)
+A lawyer in Tuzla works as a liberal profession and keeps business books for income tax. For 2026 the monthly base is fixed at 2,710 KM, whatever the profit.
 
-**3.4 National VAT payments (NOT payroll — do not confuse)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| UINO, UPRAVA ZA INDIREKTNO OPOREZIVANJE | EXCLUDE -- VAT/indirect tax | National authority, not payroll |
-| PDV, PDV PRIJAVA | EXCLUDE -- VAT | "PDV" = VAT |
-
-### 3.5 Salary and payroll movements (exclude from contribution classification)
-
-**3.5 Salary and payroll movements (exclude from contribution classification)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PLATA, PLAĆA, NETO PLATA (outgoing) | EXCLUDE -- payroll/wage expense | Net salary disbursement, not a contribution |
-| PLATA, PLAĆA (incoming) | EXCLUDE -- employment income received | Not a contribution payment |
-| PENZIJA, PENZIJSKO (incoming) | EXCLUDE -- pension income received | Benefit received, not a contribution |
-
-## Section 4 -- Worked examples
-
-Five bank-statement / payslip classifications for hypothetical BiH employees, in BAM. **All figures recomputed below.**
-
-### Example 1 -- FBiH employee, gross BAM 2,000, pay date Aug 2025 (post-1-Jul-2025 employer rates)
-
-**Input line:**
-`31.08.2025 ; POREZNA UPRAVA FBIH ; DEBIT ; DOPRINOSI + POREZ 08/2025 ; -758.00 ; BAM`
-
-**Reasoning (gross BAM 2,000, single, basic FBiH allowance BAM 1,000/month):**
-- Employee contributions = 2,000 x 31.0% = **BAM 620.00** (pension 17.0% = 340.00 + health 12.5% = 250.00 + unemployment 1.5% = 30.00; 340 + 250 + 30 = 620 ✓)
-- PIT base = gross − employee contributions − personal allowance = 2,000 − 620 − 1,000 = **BAM 380.00**
-- PIT (10%) = 380.00 x 10% = **BAM 38.00**
-- Employee deductions total remitted (contributions + PIT) = 620.00 + 38.00 = **BAM 658.00**
-- Net pay to employee = 2,000 − 620 − 38 = **BAM 1,342.00**
-- Employer social contributions (post-1-Jul-2025) = 2,000 x 5.0% = **BAM 100.00** (pension 2.5% = 50.00 + health 2.0% = 40.00 + unemployment 0.5% = 10.00; 50 + 40 + 10 = 100 ✓)
-- FBiH net-based charges: disaster 0.5% x 1,342.00 = **BAM 6.71**; water 0.5% x 1,342.00 = **BAM 6.71**
-- The combined remittance shown (BAM 758.00) = employee deductions 658.00 + employer social 100.00 = **758.00 ✓** (the 0.5% + 0.5% net charges of 13.42 are typically remitted separately to FBiH funds).
-
-**Classification:** EXCLUDE from VAT -- FBiH payroll remittance (contributions + PIT). Record net pay BAM 1,342.00 as payroll expense; employer on-cost BAM 100.00 + BAM 13.42 net charges as employer payroll cost.
-
-### Example 2 -- FBiH employee, gross BAM 2,000, pay date May 2025 (PRE-1-Jul-2025 employer rates)
-
-**Input line:**
-`31.05.2025 ; PU FBIH ; DEBIT ; DOPRINOSI POSLODAVAC 05/2025 ; -210.00 ; BAM`
-
-**Reasoning:**
-- Same employee side as Example 1 (employee 620.00, PIT 38.00, net 1,342.00).
-- Employer social contributions PRE-1-Jul-2025 = 2,000 x 10.5% = **BAM 210.00** (pension 6.0% = 120.00 + health 4.0% = 80.00 + unemployment 0.5% = 10.00; 120 + 80 + 10 = 210 ✓).
-- The reference is the employer-side remittance only (BAM 210.00). Demonstrates the effective-date branch: same gross, employer cost is BAM 210.00 before 1 Jul vs BAM 100.00 from 1 Jul.
-
-**Classification:** EXCLUDE from VAT -- FBiH employer contribution remittance (old rate set). Confirm pay-period date drives the rate.
-
-### Example 3 -- Republika Srpska employee, gross BAM 2,000
-
-**Input line:**
-`10.06.2025 ; PORESKA UPRAVA RS ; DEBIT ; DOPRINOSI 05/2025 ; -656.00 ; BAM`
-
-**Reasoning (RS):**
-- Employee contributions = 2,000 x 32.8% = **BAM 656.00** (pension 18.5% = 370.00 + health 12.0% = 240.00 + unemployment 0.6% = 12.00 + child protection 1.7% = 34.00; 370 + 240 + 12 + 34 = 656 ✓)
-- RS has NO employer-side social contributions.
-- RS PIT (flat 8%) base = gross − contributions − personal deduction. RS personal deduction figure is **[RESEARCH GAP — reviewer to confirm RS personal deduction]**. If, for illustration only, no deduction were applied: PIT = (2,000 − 656) x 8% = 1,344 x 8% = BAM 107.52. DO NOT rely on this PIT figure until the RS personal deduction is confirmed.
-- The DOPRINOSI line of BAM 656.00 (contributions only) reconciles to the 32.8% rate. ✓
-
-**Classification:** EXCLUDE from VAT -- RS contribution remittance. PIT figure flagged pending RS personal deduction.
-
-### Example 4 -- Brcko District employee, gross BAM 2,000, elected RS pension fund
-
-**Input line:**
-`12.06.2025 ; BRCKO DISTRIKT ; DEBIT ; ZDRAVSTVO + PIO 05/2025 ; -... ; BAM`
-
-**Reasoning (BD):**
-- BD health insurance = 2,000 x 12.0% = **BAM 240.00** (on gross).
-- Pension: the individual elects to pay into either the RS or FBiH pension fund. If RS fund elected, the RS pension rate (18.5%) applies = 2,000 x 18.5% = **BAM 370.00**. If FBiH fund elected, the FBiH employee pension rate (17.0%) applies = 2,000 x 17.0% = **BAM 340.00**.
-- Other BD contribution components (unemployment, etc.) and the BD PIT personal allowance were not pinned to a primary figure: **[RESEARCH GAP — reviewer to confirm full BD contribution stack and personal allowance]**.
-- BD PIT is flat 10% on the post-deduction base; do NOT apply FBiH disaster/water charges in BD.
-
-**Classification:** EXCLUDE from VAT -- BD payroll remittance. STOP and confirm the elected pension fund before finalising.
-
-### Example 5 -- National VAT remittance (NOT payroll -- do not confuse)
-
-**Input line:**
-`10.07.2025 ; UINO ; DEBIT ; PDV 06/2025 ; -1,700.00 ; BAM`
-
-**Reasoning:**
-- Matches "UINO" / "PDV" (pattern 3.4). This is a VAT remittance to the national Indirect Taxation Authority, NOT a payroll contribution or PIT. VAT is a single 17% standard rate. Do not classify as social security.
-
-**Classification:** EXCLUDE from VAT return as a payroll item -- this IS the VAT payment itself. NOT a contribution; do not record in payroll computations.
-
-## Section 5 -- Tier 1 rules
-
-These rules apply when the entity is known, inputs are complete, and (for FBiH) the pay-period date is known. Apply exactly as written. All rates from PwC unless noted.
-
-### Rule 1 -- Branch on entity FIRST
-
-- **Branch on entity first** — There is no nationwide payroll/social-security system. Determine FBiH / RS / BD before any calculation.  _(Research brief; PwC.)_
-
-### Rule 2 -- FBiH employee contributions = 31.0% of gross
-
-- **FBiH employee contributions** — 31.0% percent (Pension/disability (MIO/PIO) 17.0% + health 12.5% + unemployment 1.5%, all on gross salary)  _(PwC: https://taxsummaries.pwc.com/bosnia-and-herzegovina/individual/other-taxes)_
-
-### Rule 3 -- FBiH employer contributions = 5.0% from 1 Jul 2025 (was 10.5%)
-
-- **FBiH employer contributions** — 5.0% from 1 July 2025 (pension 2.5% + health 2.0% + unemployment 0.5%); 10.5% before 1 July 2025 (pension 6.0% + health 4.0% + unemployment 0.5%) percent  _(Orbitax: https://orbitax.com/news/archive.php/Federation-of-Bosnia-and-Herze-58893; Unija: https://unija.com/en/amendments-to-the-law-on-contibutions-in-the-fbih/)_
-
-### Rule 4 -- FBiH extra employer charges are on NET salary
-
-- **FBiH extra employer charges on net salary** — Protection from natural/other disasters 0.5% + water protection charge 0.5%, both levied on net salary. Do NOT apply these in RS or BD.  _(PwC: .../individual/other-taxes)_
-
-### Rule 5 -- RS employee contributions = 32.8% of gross; no employer contributions
-
-- **RS employee contributions** — 32.8% percent (Pension/disability 18.5% + health 12.0% + unemployment 0.6% + child protection 1.7%. No employer-side social contributions in RS.)  _(PwC: .../individual/other-taxes)_
-
-### Rule 6 -- Brcko District = 12.0% health on gross + pension fund election
-
-- **BD contribution rule** — BD: 12.0% health insurance on gross; for pension the individual elects to pay into either the RS or FBiH pension fund (use that fund's pension rate).  _(PwC: .../individual/other-taxes)_
-
-### Rule 7 -- Personal income tax is flat and entity-specific
-
-- **Personal income tax by entity** — FBiH 10%, RS 8%, Brcko District 10% percent  _(PwC: .../individual/taxes-on-personal-income)_
-
-### Rule 8 -- FBiH PIT base
-
-- **FBiH PIT base formula** — FBiH PIT base = gross salary − employee social contributions − personal allowance. PIT is withheld monthly by the employer at salary payment.  _(PwC; Rivermate: https://rivermate.com/guides/bosnia-and-herzegovina/taxes)_
-
-### Rule 9 -- FBiH basic personal allowance (licni odbitak) = BAM 1,000/month for 2025
-
-- **FBiH basic personal allowance** — BAM 1,000/month for 2025 (with additional allowances for dependent family members and disability. Secondary source — [RESEARCH GAP — reviewer to confirm exact 2025 figure and dependant/disability coefficients against the FBiH Law on Personal Income Tax / Porezna uprava FBiH])  _(Rivermate)_
-
-### Rule 10 -- Gross salary is the contribution base in all entities
-
-- **Contribution base rule** — All social contributions in FBiH, RS and BD use gross salary as the base. Only the FBiH disaster/water charges use net salary.  _(PwC: .../individual/other-taxes)_
-
-### Rule 11 -- PAYE-style withholding
-
-- **PAYE-style withholding rule** — The employer is the income payer / withholding agent and calculates and withholds both contributions and PIT at source with each salary payment.  _(PwC tax administration)_
-
-### Rule 12 -- Monthly reporting and payment deadlines
-
-**Monthly reporting and payment deadlines**  _(PwC tax administration: https://taxsummaries.pwc.com/Bosnia-and-Herzegovina/Individual/Tax-administration; UINO.)_
-
-| Item | Entity | Deadline |
-| --- | --- | --- |
-| Contributions + PIT payment | FBiH | With salary payment, no later than the end of the following month |
-| Salary/tax specification | FBiH | On the payment day, no later than one day after payment |
-| Salary-tax specification | RS | By the 10th day of the following month |
-| VAT return (PDV prijava) | National (UINO) | By the 10th day of the month following the period |
-
-### Rule 13 -- Annual PIT return deadlines
-
-- **Annual PIT return deadlines** — FBiH and RS annual PIT returns due 31 March of the following year; Brcko District annual return due 28 February (not required if all PIT settled via monthly withholding).  _(PwC tax administration.)_
-
-### Rule 14 -- Minimum wage 2025 (drives minimum contribution base)
-
-- **Minimum wage 2025** — FBiH: BAM 1,000/month net (raised from BAM 620 from 1 Jan 2025). RS: tiered by education — BAM 900 net (BAM 1,344.26 gross) basic; BAM 950 net (1,426.23 gross) for 3-yr secondary; BAM 1,000 net (1,508.20 gross) for 4-yr secondary; BAM 1,300 net (2,000 gross) for higher education.  _(WageIndicator: https://wageindicator.org/salary/minimum-wage/minimum-wages-news/2025/minimum-wage-updated-in-the-federation-of-bosnia-and-herzegovina-from-01-january-2025-may-02-2025; WageIndicator: https://wageindicator.org/salary/minimum-wage/minimum-wages-news/2025/minimum-wage-updated-in-republika-srpska-bosnia-and-herzegovina-from-01-january-2025-may-04-2025)_
-
-### Rule 15 -- VAT is national, flat 17%, threshold BAM 100,000
-
-- **VAT national flat rate and threshold** — Corporate income tax is flat 10% nationwide; VAT is a single standard rate of 17% with no reduced rate, administered by UINO. Mandatory VAT registration once taxable supplies exceed (or are likely to exceed) BAM 100,000/year (raised from BAM 50,000 effective 2 Dec 2023).  _(Mondaq tax card 2026: https://www.mondaq.com/withholding-tax/1747486/bosnia-herzegovina-tax-card-2026; PwC corporate other taxes; UINO.)_
-
-## Section 6 -- Tier 2 catalogue
-
-When the entity is known but circumstances are ambiguous, flag these for reviewer confirmation rather than computing automatically.
-
-### T2-1 -- FBiH payroll straddling 1 July 2025
-
-- **T2-1** — Trigger: FBiH payroll covering a period that spans or sits near 1 July 2025. Issue: Employer rate fell from 10.5% to 5.0% on 1 July 2025. The applicable rate depends on the pay-period date, not the work month in some interpretations. Action: Flag for reviewer. Confirm exact pay date and the entity's transition guidance.
-
-### T2-2 -- Minimum / maximum contribution base
-
-- **T2-2** — Trigger: Salary at or below the entity minimum wage, or unusually high. Issue: A minimum contribution base (linked to the minimum/average wage) applies; any annual ceiling was not pinned to a primary figure. Action: [RESEARCH GAP — reviewer to confirm floor/ceiling with the entity tax administration] before computing.
-
-### T2-3 -- FBiH dependant / disability allowances
-
-- **T2-3** — Trigger: Client claims allowances for dependent family members or disability. Issue: The basic BAM 1,000/month allowance is from a secondary source; dependant/disability coefficients were not pinned. Action: Flag for reviewer; confirm against the FBiH Law on Personal Income Tax.
-
-### T2-4 -- RS personal deduction for PIT
-
-- **T2-4** — Trigger: Computing RS PIT (8%) net of any personal deduction. Issue: The RS personal deduction figure was not captured from a primary source. Action: [RESEARCH GAP — reviewer to confirm RS personal deduction]; do not finalise RS PIT without it.
-
-### T2-5 -- Brcko District full contribution stack
-
-- **T2-5** — Trigger: BD payroll beyond health + elected pension. Issue: Only 12.0% health on gross and the pension-fund election are pinned; other BD components and the BD personal allowance were not. Action: [RESEARCH GAP — reviewer to confirm full BD contribution stack and personal allowance].
-
-### T2-6 -- Self-employed / small-entrepreneur regimes
-
-- **T2-6** — Trigger: Sole trader, freelancer, or RS small entrepreneur (2% on annual revenue). Issue: These regimes differ from employee payroll and are outside this skill's compute core. Action: Escalate to a BiH-licensed advisor.
-
-## Section 7 -- Excel working paper template
-
-When producing a BiH payroll computation, structure the working paper as follows:
-
-```
-BiH PAYROLL / SSC COMPUTATION -- WORKING PAPER
-Client: [name]
-Entity: [FBiH / RS / BD]            <-- MUST be set before computing
-Tax Year: 2025
-Pay-period date: [____]            <-- FBiH: drives employer rate set
-Prepared: [date]
-
-INPUT DATA
-  Gross monthly salary (BAM):       [____]
-  Personal allowance (BAM):         [FBiH 1,000 / RS gap / BD gap]
-  Dependants / disability:          [____]
-  Pay date on/after 1 Jul 2025:     [YES/NO]   (FBiH only)
-  BD elected pension fund:          [RS / FBiH]  (BD only)
-
-EMPLOYEE CONTRIBUTIONS (on gross)
-  FBiH:  pension 17.0% + health 12.5% + unemployment 1.5% = 31.0%
-  RS:    pension 18.5% + health 12.0% + unemploy 0.6% + child 1.7% = 32.8%
-  BD:    health 12.0% + elected pension (RS 18.5% or FBiH 17.0%)
-  Employee contributions (BAM):     [____]
-
-EMPLOYER CONTRIBUTIONS (on gross)
-  FBiH (from 1 Jul 2025): 2.5% + 2.0% + 0.5% = 5.0%
-  FBiH (before 1 Jul 2025): 6.0% + 4.0% + 0.5% = 10.5%
-  RS:    none
-  Employer contributions (BAM):     [____]
-
-FBiH NET-BASED CHARGES (employer)
-  Net salary (BAM):                 [____]
-  Disaster 0.5% + Water 0.5%:       [____]
-
-PERSONAL INCOME TAX
-  PIT base = gross − employee contributions − personal allowance (FBiH)
-  PIT rate: FBiH 10% / RS 8% / BD 10%
-  PIT (BAM):                        [____]
-
-RESULTS
-  Net pay to employee (BAM):        [____]
-  Total employer cost (BAM):        [____]
-
-REVIEWER FLAGS / RESEARCH GAPS
-  [List any Tier 2 flags and [RESEARCH GAP] markers here]
-
-CONSERVATIVE DEFAULTS APPLIED
-  [List any defaults applied and their impact]
+- Pension and disability 19.5%: 528.45 KM.
+- Health 14.5%: 392.95 KM.
+- Unemployment 2%: 54.20 KM.
+- Total 36%: 975.60 KM a month, due by the 10th of the next month, and deductible as a business expense for income tax.
+
+```oa-check
+name: FBiH liberal profession on 2026 base 2710 KM
+inputs:
+  base: 2710
+steps:
+  - pension: base * 0.195
+  - health: base * 0.145
+  - unemployment: base * 0.02
+  - total: pension + health + unemployment
+  - annual: total * 12
+expected:
+  pension: 528.45
+  health: 392.95
+  unemployment: 54.20
+  total: 975.60
+  annual: 11707.20
 ```
 
-## Section 8 -- Bank statement reading guide
+### Example 2: FBiH full-time employee paid below the minimum gross (2026)
 
-### How BiH payroll-tax payments appear on bank statements
+A single full-time employee (tax-card factor 1.0) has an agreed gross of 1,500 KM. The contribution base cannot be below the 1,027 KM net minimum wage converted to gross with this employee's 300 KM allowance.
 
-**Language note:** BiH uses Bosnian/Croatian/Serbian. Key terms: *doprinosi* = contributions; *porez na dohodak* = personal income tax; *plata/plaća* = salary; *neto/bruto* = net/gross; *PDV* = VAT; *MIO/PIO* = pension and disability insurance; *zdravstveno* = health; *nezaposlenost* = unemployment; *dječja zaštita* = child protection.
+- Net from a gross G is G − 31% of G − 10% of (69% of G − 300), which is 0.621 × G + 30.
+- Setting that equal to 1,027 gives a minimum gross of 997 / 0.621 = 1,605.48 KM.
+- The agreed 1,500 KM is lower, so contributions are charged on 1,605.48 KM: employee share 31% = 497.70 KM, employer share 5% = 80.27 KM.
 
-**Federation of BiH (FBiH):**
-- Counterparty: "POREZNA UPRAVA FBIH" / "PU FBIH" / entity funds (FZ MIO/PIO, ZZO)
-- References: "DOPRINOSI", "POREZ NA DOHODAK", a month code (e.g. "08/2025")
-- Timing: monthly, with or just after salary payment
+The gross-up method is in Contributions Rulebook art. 20; the 1,605.48 KM figure is computed here, not published.
 
-**Republika Srpska (RS):**
-- Counterparty: "PORESKA UPRAVA RS" / "PU RS" / RS funds
-- References: "DOPRINOSI", "DJECIJA ZASTITA"
-- Timing: monthly; specification by the 10th of the following month
+```oa-check
+name: FBiH minimum contribution base 2026, single employee
+inputs:
+  net_minimum: 1027
+  allowance: 300
+  agreed_gross: 1500
+steps:
+  - min_gross: round((net_minimum - allowance * 0.10) / (0.69 * 0.90), 2)
+  - base: max(agreed_gross, min_gross)
+  - employee_share: round(base * 0.31, 2)
+  - employer_share: round(base * 0.05, 2)
+expected:
+  min_gross: 1605.48
+  base: 1605.48
+  employee_share: 497.70
+  employer_share: 80.27
+```
 
-**Brcko District (BD):**
-- Counterparty: "BRCKO DISTRIKT" / BD Tax Administration
-- References: health + elected pension fund
+## Ask the client first
 
-**National VAT (UINO):**
-- Counterparty: "UINO" / "UPRAVA ZA INDIREKTNO OPOREZIVANJE"
-- Reference: "PDV"; due by the 10th of the following month — this is NOT a payroll item
+1. Which jurisdiction: where is the employer's seat or the business registered, and where does the person live and work?
+2. Employee, entrepreneur, independent profession, board member, or occasional work?
+3. For the self-employed: which activity, and is income tax paid from books or as a flat amount (FBiH), or as a small entrepreneur (RS)? Is it the main occupation, and is the person a pensioner?
+4. Full-time or part-time, and is the pay at or near the minimum wage?
+5. Anyone posted abroad, employed by a foreign employer, or covered by a social security agreement?
 
-**Key identification tips:**
-1. Contribution/PIT debits are outgoing and recur monthly with consistent amounts unless salary changed.
-2. Employer-side FBiH on-cost changes at 1 Jul 2025 (10.5% → 5.0%) — a step-down in the employer remittance mid-2025 is expected, not an error.
-3. Do not confuse UINO/PDV (VAT) debits with payroll contributions.
-4. RS has no employer-side social contribution remittance — only the employee 32.8% appears.
+## Sources
 
-## Section 9 -- Onboarding fallback
+| Source | URL | Read on |
+|---|---|---|
+| FBiH Zakon o doprinosima (consolidated to 33/25), arts. 4 to 22 | https://www.pufbih.ba/v1/public/upload/zakoni/2dcc6-zakon-o-doprinosima-precisceni-tekst-25.pdf | 2026-10-30 |
+| FBiH Zakon o izmjenama i dopunama Zakona o doprinosima 33/25 | https://www.fmf.gov.ba/Content/Open/102560?n=Zakona_o_izmjenama_i_dopunama_Zakona_o_doprinosima.doc | 2026-10-30 |
+| FBiH Pravilnik o načinu obračunavanja i uplate doprinosa (consolidated to 48/25), arts. 2, 19, 20, 40b | https://www.pufbih.ba/v1/public/upload/zakoni/7cfcb-pravilnik-o-nacinu-obracunavanja-i-uplate-doprinosa-precisceni-48-25.pdf | 2026-10-30 |
+| FBiH Ministry of Finance, Osnovice za obračun doprinosa određenih obveznika za 2026. godinu (Sl. novine 100/25) | https://www.fmf.gov.ba/Content/Open/102838?n=Osnovice_za_obra%C4%8Dun_doprinosa_odre%C4%91enih_obveznika_za_2026._godinu.docx | 2026-10-30 |
+| FBiH Government, Odluka o iznosu najniže plaće za 2026. godinu | https://fbihvlada.gov.ba/bs/1094-odluka-o-iznosu-najnize-place-za-2026-godinu | 2026-10-30 |
+| FBiH Pension Fund, Odluka o visini doprinosa za PIO za lica osigurana u određenim okolnostima (62/26) | https://ik.imagekit.io/9qcwbg8wl/Odluka_62_26_U6SpxhQfE.pdf | 2026-10-30 |
+| FBiH Zakon o visini stope zatezne kamate na javne prihode, art. 2 | https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf | 2026-10-30 |
+| RS Zakon o doprinosima 114/17 (gazette text), arts. 10, 11, 21 to 26 | https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-doprinosima-SLGL-114_17.pdf | 2026-10-30 |
+| RS amendments 112/19 (unemployment 0.6%), 49/21 (art. 10a), 119/21 (health 10.2%) | https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-izmjenama-Zakona-o-doprinosima-SLGL-112_19.pdf | 2026-10-30 |
+| RS amendments 110/24 and 114/25 (entrepreneur bases, seasonal work) | https://poreskaupravars.org/wp-content/uploads/2025/12/Doprinosi.pdf | 2026-10-30 |
+| RS Tax Administration, Form 1002 from 1 January 2026 | https://poreskaupravars.org/izmjene-u-podnosenju-obrasca-1002-od-01-01-2026-godine-3/ | 2026-10-30 |
+| RS Zakon o poreskom postupku 78/20, arts. 60, 112, 114, 115 | https://poreskaupravars.org/wp-content/uploads/2026/05/Zakon-o-poreskom-postupku-78-20.pdf | 2026-10-30 |
+| RS Statistics Institute, average gross wage 2025 | https://www.rzs.rs.ba/ | 2026-10-30 |
+| Brčko Zakon o zdravstvenom osiguranju (consolidated 19/20), art. 76 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20zdravstvenom%20osiguranju%20Brc--ko%20Distrikta%20BiH/precisceni%20tekst%2007B19-20%20Zakon%20o%20zdravstvenom%20osiguranju.pdf | 2026-10-30 |
 
-If the client provides only a bank statement and no other information:
-
-1. **Identify the entity** -- counterparty name (POREZNA UPRAVA FBIH vs PORESKA UPRAVA RS vs BRCKO DISTRIKT) reveals it. If none present, STOP and ask.
-2. **Scan for payroll-tax debits** -- match Section 3 patterns; separate contributions (doprinosi) from PIT (porez na dohodak) and VAT (PDV / UINO).
-3. **Reverse-engineer the gross** (entity-specific):
-   - FBiH: employee contributions ÷ 31.0% ≈ gross.
-   - RS: employee contributions ÷ 32.8% ≈ gross.
-   - BD: health ÷ 12.0% ≈ gross (then confirm pension fund election).
-4. **Check the FBiH employer step-down** -- if employer remittance drops mid-2025, it likely reflects the 1 Jul 2025 cut.
-5. **Flag for reviewer:** "Entity and gross derived from bank-statement amounts only. Personal allowance, minimum/maximum contribution base, and (FBiH) pay-date rate set have not been independently verified. Reviewer must confirm before relying on the computation."
-
-## Section 10 -- Reference material
-
-### Contribution rate tables (recomputed; totals verified)
-
-**FBiH — employee (on gross)**  _(PwC .../individual/other-taxes)_
-
-| Component | Rate | Source |
-| --- | --- | --- |
-| Pension / disability (MIO/PIO) | 17.0% | PwC .../individual/other-taxes |
-| Health insurance | 12.5% | PwC .../individual/other-taxes |
-| Unemployment insurance | 1.5% | PwC .../individual/other-taxes |
-| **Total employee** | **31.0%** | 17.0 + 12.5 + 1.5 = 31.0 ✓ |
-
-**FBiH — employer (on gross)**  _(Orbitax; Unija)_
-
-| Component | From 1 Jul 2025 | Before 1 Jul 2025 | Source |
-| --- | --- | --- | --- |
-| Pension / disability | 2.5% | 6.0% | Orbitax; Unija |
-| Health insurance | 2.0% | 4.0% | Orbitax; Unija |
-| Unemployment insurance | 0.5% | 0.5% | Orbitax; Unija |
-| **Total employer** | **5.0%** | **10.5%** | 2.5+2.0+0.5=5.0 ✓ ; 6.0+4.0+0.5=10.5 ✓ |
-
-**FBiH — additional employer charges (on NET salary)**  _(PwC .../individual/other-taxes)_
-
-| Component | Rate | Source |
-| --- | --- | --- |
-| Protection from natural/other disasters | 0.5% | PwC .../individual/other-taxes |
-| Water protection charge | 0.5% | PwC .../individual/other-taxes |
-
-**RS — employee (on gross); no employer-side contributions**  _(PwC .../individual/other-taxes)_
-
-| Component | Rate | Source |
-| --- | --- | --- |
-| Pension / disability | 18.5% | PwC .../individual/other-taxes |
-| Health insurance | 12.0% | PwC .../individual/other-taxes |
-| Unemployment insurance | 0.6% | PwC .../individual/other-taxes |
-| Child protection | 1.7% | PwC .../individual/other-taxes |
-| **Total employee** | **32.8%** | 18.5+12.0+0.6+1.7=32.8 ✓ |
-
-**Brcko District — employee (on gross)**  _(PwC .../individual/other-taxes)_
-
-| Component | Rate | Source |
-| --- | --- | --- |
-| Health insurance | 12.0% | PwC .../individual/other-taxes |
-| Pension | elected fund: RS 18.5% or FBiH 17.0% | PwC .../individual/other-taxes |
-| Other components / allowance | [RESEARCH GAP — reviewer to confirm] | — |
-
-### PIT, CIT and VAT (recomputed)
-
-**PIT, CIT and VAT table**  _(PwC .../individual/taxes-on-personal-income; Mondaq tax card 2026; PwC corporate other taxes)_
-
-| Tax | Jurisdiction | Rate / structure | Source |
-| --- | --- | --- | --- |
-| Personal income tax | FBiH | 10% flat | PwC .../individual/taxes-on-personal-income |
-| Personal income tax | RS | 8% flat (small entrepreneurs 2% on annual revenue) | PwC .../individual/taxes-on-personal-income |
-| Personal income tax | Brcko District | 10% flat | PwC .../individual/taxes-on-personal-income |
-| Corporate income tax | BiH (nationwide) | 10% flat | Mondaq tax card 2026 |
-| VAT | BiH (nationwide) | 17% single standard rate, no reduced rate | PwC corporate other taxes |
-
-### Thresholds
-
-**Thresholds table**  _(UINO; PwC; Rivermate)_
-
-| Threshold | Amount | Detail | Source |
-| --- | --- | --- | --- |
-| VAT registration (national) | BAM 100,000 | Mandatory once taxable supplies exceed/likely exceed BAM 100,000/yr; raised from BAM 50,000 on 2 Dec 2023 | UINO: https://www.uino.gov.ba/portal/en/news/the-threshold-for-entering-the-vat-system-has-been-increased-to-bam-100-000/ |
-| RS small-entrepreneur regime | 2% PIT on annual revenue | Alternative simplified PIT in RS | PwC .../individual/taxes-on-personal-income |
-| FBiH basic personal allowance | BAM 1,000/month (2025) | Plus dependant/disability allowances | Rivermate (secondary); [RESEARCH GAP — confirm against FBiH PIT Law] |
-
-### Filing & payment deadlines
-
-**Filing & payment deadlines table**  _(PwC tax administration; UINO)_
-
-| Form / item | Jurisdiction | Deadline | Source |
-| --- | --- | --- | --- |
-| Annual PIT return | FBiH | 31 March (following year) | PwC tax administration |
-| Annual PIT return | RS | 31 March (following year) | PwC tax administration |
-| Annual PIT return | Brcko District | 28 February (not required if all PIT settled via monthly withholding) | PwC tax administration |
-| Monthly salary/tax specification | FBiH | On payment day, no later than one day after payment | PwC tax administration |
-| Monthly contributions + PIT payment | FBiH | With salary payment, no later than end of following month | PwC tax administration |
-| Monthly salary-tax specification | RS | By the 10th of the following month | PwC tax administration |
-| VAT return (PDV prijava) | National (UINO) | By the 10th of the month following the period | UINO |
-
-### Filing & payment deadlines
-
-> **Form numbers note:** specific FBiH/RS form numbers (e.g. FBiH GIP/MIP/PMIP, RS forms) were not captured from authoritative sources — **[RESEARCH GAP — reviewer to confirm form numbers with the entity tax administrations]**.
-
-### Penalties (VAT — national)
-
-**Penalties (VAT — national) table**  _(PwC corporate other taxes)_
-
-| Penalty | Rate / Amount | Source |
-| --- | --- | --- |
-| Failure to calculate/pay VAT | 50% of the VAT amount, minimum BAM 100 | PwC corporate other taxes |
-| Failure to submit VAT declaration on time | BAM 300 | PwC corporate other taxes |
-
-### Penalties (VAT — national)
-
-> Payroll-contribution and PIT late-payment penalties at entity level were not pinned to a primary figure — **[RESEARCH GAP — reviewer to confirm entity-level payroll penalties]**.
-
-### Test suite
-
-**Test 1 -- FBiH, gross BAM 2,000, post-1-Jul-2025, single, allowance BAM 1,000.**
-Employee contributions = 2,000 x 31.0% = **620.00**. PIT base = 2,000 − 620 − 1,000 = **380.00**. PIT = 380 x 10% = **38.00**. Net pay = 2,000 − 620 − 38 = **1,342.00**. Employer social = 2,000 x 5.0% = **100.00**. Disaster+water = 1,342 x 1.0% = **13.42**. Total employer cost = 2,000 + 100 + 13.42 = **2,113.42**.
-
-**Test 2 -- FBiH, gross BAM 2,000, PRE-1-Jul-2025.**
-Employee side identical to Test 1 (net 1,342.00). Employer social = 2,000 x 10.5% = **210.00**. Disaster+water = 1,342 x 1.0% = **13.42**. Total employer cost = 2,000 + 210 + 13.42 = **2,223.42**.
-
-**Test 3 -- RS, gross BAM 2,000.**
-Employee contributions = 2,000 x 32.8% = **656.00** (370.00 + 240.00 + 12.00 + 34.00). No employer contributions. PIT (8%) requires the RS personal deduction → **[RESEARCH GAP — reviewer to confirm RS personal deduction]**; illustrative-only with no deduction = (2,000 − 656) x 8% = 1,344 x 8% = **107.52** (do not rely).
-
-**Test 4 -- BD, gross BAM 2,000, RS pension fund elected.**
-Health = 2,000 x 12.0% = **240.00**. Pension (RS rate) = 2,000 x 18.5% = **370.00**. Remaining BD components + PIT allowance → **[RESEARCH GAP — reviewer to confirm]**.
-
-**Test 5 -- BD, gross BAM 2,000, FBiH pension fund elected.**
-Health = 2,000 x 12.0% = **240.00**. Pension (FBiH rate) = 2,000 x 17.0% = **340.00**. Remaining BD components + PIT allowance → **[RESEARCH GAP — reviewer to confirm]**.
-
-**Test 6 -- FBiH, gross BAM 3,000, post-1-Jul-2025, single, allowance BAM 1,000.**
-Employee contributions = 3,000 x 31.0% = **930.00**. PIT base = 3,000 − 930 − 1,000 = **1,070.00**. PIT = 1,070 x 10% = **107.00**. Net pay = 3,000 − 930 − 107 = **1,963.00**. Employer social = 3,000 x 5.0% = **150.00**. Disaster+water = 1,963 x 1.0% = **19.63**. Total employer cost = 3,000 + 150 + 19.63 = **3,169.63**.
-
-**Test 7 -- VAT registration check.**
-Taxable supplies BAM 120,000/yr → exceeds BAM 100,000 → mandatory VAT registration with UINO; VAT charged at 17%.
-
-**Test 8 -- Entity unknown.**
-Gross BAM 2,000, entity not stated → STOP. Refuse under R-BA-SSC-1; ask for the entity.
-
-### Prohibitions
-
-- NEVER compute BiH payroll without first establishing the entity (FBiH / RS / BD).
-- NEVER apply one entity's rates to another — FBiH (31.0% / 5.0%), RS (32.8% / 0%), and BD (12.0% + elected pension) are not interchangeable.
-- NEVER apply the FBiH employer rate without confirming the pay-period date (10.5% before 1 Jul 2025; 5.0% from 1 Jul 2025).
-- NEVER apply FBiH disaster (0.5%) or water (0.5%) net-salary charges in RS or BD.
-- NEVER add employer-side social contributions in RS — there are none.
-- NEVER finalise RS or BD PIT without confirming the personal deduction/allowance (flagged research gaps).
-- NEVER rely on the FBiH BAM 1,000 personal allowance, minimum/maximum contribution base, or entity form numbers without reviewer confirmation — they are secondary or unpinned.
-- NEVER confuse UINO/PDV (national VAT) debits with entity payroll contributions.
-- NEVER present BiH payroll figures as definitive — label as estimated and direct the client to the relevant entity tax administration.
-- NEVER advise on self-employed, small-entrepreneur, cross-entity or expat arrangements with this skill — escalate to a BiH-licensed advisor.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+Not yet confirmed: all Brčko District contribution rates and the 2026 lowest and highest health bases; the RS 2026 minimum gross wage; whether RS entrepreneurs pay all four RS contributions or only some (art. 22(2) exceptions not fully read) and the rates for pensioner and secondary-occupation entrepreneurs; the RS gazette publication of the 2025 average gross wage (2,349 KM is the RS Statistics Institute figure); the FBiH employer fees on net pay for natural disaster protection and water (other laws, not read); the FBiH rule for entrepreneurs who start or stop mid-month; any RS Contributions Law amendment not listed on the RS Tax Administration page.
 
 <!-- openaccountants-cta-block -->
 
