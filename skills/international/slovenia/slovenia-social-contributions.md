@@ -1,10 +1,10 @@
 ---
 name: slovenia-social-contributions
 description: "Slovenian social security contributions (prispevki za socialno varnost) for tax year 2026. Covers the rates for employees (22.1%) and employers (16.1%), the long-term care contribution in force since 1 July 2025 (1% + 1% on wages, 2% for the self-employed), the flat compulsory health contribution (EUR 39.36 a month from 1 March 2026), the minimum base for employees (EUR 1,521.62), and the self-employed (s.p.) and owner-manager bases: profit less 25%, at least 60% (90% for owner-managers) and at most 3.5 times the 2025 average wage of EUR 2,536.03, the relief for new s.p., the monthly OPSV return and payment by the 20th, and fines. Trigger phrases: Slovenia social security, prispevki s.p. 2026, zavarovalna osnova, OPSV, POPSV, prispevek za dolgotrajno oskrbo, OZP, minimalna osnova samozaposleni. Out of scope: the monthly gross-to-net and REK-O (slovenia-payroll), income tax on the s.p. profit and normed expenses (slovenia-income-tax), postings and A1 (si-cross-border)."
-version: 0.3
+version: 0.4
 jurisdiction: SI
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -65,7 +65,7 @@ Contribution period: the calendar month. Authority: the Financial Administration
 - **Higher base on request.** Any s.p. can choose a base above their own, up to the maximum (art. 145(16)).
 - **New s.p. relief.** In the first 12 months after first registration, 50% of the pension contributions is relieved; in the next 12 months, 30%. The state pays the relieved part to the ZPIZ (art. 145(14) and (15)).
 
-**Normed-expense s.p. (normiranec).** The profit for the base is the profit set under the income tax rules, so for an s.p. on normed expenses it is revenue less the normed expenses. The normed-expense rules (80% of revenue up to a cap, entry thresholds, the 20% final tax) are in `slovenia-income-tax`.
+**Normed-expense s.p. (normiranec).** The profit for the base is the profit set under the income tax rules (ZPIZ-2 art. 145(2)), so for an s.p. on normed expenses it is revenue less the normed expenses. From tax year 2026 ZPZR (Uradni list RS 91/25, amended by ZPZR-A 32/26) sets the normed-expense entry and exit tests (two-year average revenue of EUR 120,000, 85,000 or 50,000) and the final income tax (20% up to a base of EUR 72,000, or EUR 33,000 if not full-time self-insured, and 35% above) (ZPZR arts. 6 and 7). ZPZR does not change the contribution base: its only contribution rule is for the employees' winter allowance (ZPZR art. 5). The normed expenses themselves still come from ZDoh-2 art. 59 (ZPZR art. 6(3)). The full rules are in `slovenia-income-tax`.
 
 **Owner-managers.** All pay received for managing and working counts as the profit. The minimum base is 90% of the average wage (EUR 2,282.43) and the maximum is the same EUR 8,876.11 (ZPIZ-2 art. 145(3) to (5)).
 
@@ -177,6 +177,7 @@ expected:
 |---|---|---|
 | Social Security Contributions Act (ZPSV), consolidated NPB 14: arts. 1, 3, 6, 7, 8, 10 to 15 | https://pisrs.si/pregledPredpisa?id=ZAKO984 | 2026-10-24 |
 | Pension and Disability Insurance Act (ZPIZ-2), consolidated NPB 27 to Uradni list RS 90/25: arts. 14 to 17, 144, 145, 152 | https://pisrs.si/pregledPredpisa?id=ZAKO6280 | 2026-10-24 |
+| Act on the Right to a Winter Allowance and the Reform of Normed Expenses (ZPZR), Uradni list RS 91/25 as amended by ZPZR-A 32/26, unofficial consolidated text NPB 1: arts. 5, 6, 7 and 21 | https://pisrs.si/pregledPredpisa?id=ZAKO9359 | 2026-10-30 |
 | Health Care and Health Insurance Act (ZZVZZ), consolidated NPB 42: arts. 48, 50 | https://pisrs.si/pregledPredpisa?id=ZAKO213 | 2026-10-24 |
 | Long-Term Care Act (ZDOsk-1), consolidated NPB 2: arts. 51, 54, 55, 56, 56.a, 137 | https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-24 |
 | Personal Income Tax Act (ZDoh-2): art. 41 | https://pisrs.si/pregledPredpisa?id=ZAKO4697 | 2026-10-24 |
