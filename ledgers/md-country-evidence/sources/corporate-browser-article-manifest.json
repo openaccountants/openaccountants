@@ -1,5 +1,5 @@
 {
-  "status": "Selected already-read public statutory articles only. Not whole-Code verification. No PDF retrieval success claimed.",
+  "status": "Selectedalready-readMoldovaofficiallawandBNMreportobservationsonly.NotwholeCodeorbankdatabaseverification.NoPDFdownloadsuccessclaimed.",
   "normalization": "Node display adjacent string literals decoded safely with ast.literal_eval; JSON exports parsed directly. Original article text otherwise unchanged.",
   "read_date": "2026-10-30",
   "articles": {
@@ -1633,6 +1633,28 @@
       "observed_utc": "2026-10-30T19:24:53.045Z",
       "format": "Exact JSON returned by read-only browser DOM observation",
       "sha256": "259b30d29467db0d5853bdc3dcfe389da0f41a500d028109c9d4f94e7b0ffa44"
+    },
+    "BNM-NOV2025-LOANS": {
+      "article": "BNM-NOV2025-LOANS",
+      "official_url": "https://bnm.md/bdi/pages/reports/dpmc/DPMC8.xhtml?id=0&lang=ro",
+      "observed_utc": "2026-10-30T19:50:40.981Z",
+      "format": "ExactvisiblegeneratedBNMDPMC8reportbodyreturnedbyframe-scopedread-onlybrowserlocator;selectedNovember2025month;notafetchofallbankstatistics",
+      "sha256": "059a2096d8fec973f95ffdbba042d03f62d01727733a98d1f3814660472b0ea7",
+      "query_settings": {
+        "periodicity": "monthly",
+        "begin_year": 2025,
+        "begin_month": 11,
+        "end_year": 2025,
+        "end_month": 11,
+        "currency_filters": "allthreeoptions",
+        "category_filters": "allsixoptions",
+        "term_filters": "alltenoptions",
+        "selected_usable_series": "moneda naţională / persoane fizice: total / peste 5 ani / Rata nominală,%",
+        "selected_rate_percent": "8.32",
+        "rate_volume_row_companion": "853.89 million MDL;notusedasataxinput",
+        "report_reproduction": "OpenstableofficialURL,Configurarea raportului;setbothyearsto2025andbothmonthstoNoiembrie;Generare;readselectedrow. ReportdefaultislatestanddoesnotreproduceNovemberwithoutconfiguration."
+      },
+      "generated_report_url": "https://bnm.md/bdi/pages/user/www/we/temp/DPMC8_e595f9365423393acada75c32a8a_-6500293279469051310.html"
     },
     "20": {
       "article": "20",

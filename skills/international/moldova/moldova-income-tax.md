@@ -1,7 +1,7 @@
 ---
 name: moldova-income-tax
 description: "Compute Moldova individual income tax for 2026 after classifying residence, citizenship, source, legal activity and the actual tax regime. Covers annual ordinary income, sole-trader and professional profit, personal/spouse/dependent exemptions, actual contribution and personal deductions, capital gains, final withholding, property rentals, foreign-tax credit and separate retail, plant-purchasing and independent-service regimes. Use for CET18, annual personal tax, self-employed tax, freelancer income, taxable investment receipts, exemption eligibility, foreign interest, capital disposals, fixed contributions and income-tax filing. This source-cited writer draft preserves predecessor subjects, identifies ordinary and specialist gaps, and requires independent whole-country review. It does not certify every treaty or special-regime implementation or claim accountant attestation."
-version: 0.4
+version: 0.5
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-30
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova individual income tax and self-employment, 2026 v0.4
+# Moldova individual income tax and self-employment, 2026 v0.5
 
 ## Who this applies to
 
@@ -78,6 +78,8 @@ For expenses, preserve the original Guide's practical categories as evidence que
 Transactions in foreign currency use the official MDL exchange rate at the statutory transaction date, not an invented annual average or net conversion shown by a payment platform. Article 21(3) defines transaction-date evidence, year-end debt revaluation, advances and uncoted-currency conversion. Preserve gross foreign receipts, fees, withholding, original currency, bank/platform dates and the applicable official rate independently. Match the actual accounting method and current-year FX differences rather than treating every bank conversion difference as a deductible cost. [Art. 21(3)][code].
 
 For non-cash income, donor transactions and related-person transfers, apply the specific valuation rule. Article 21(4) deems excess cash donations by a non-business donor income to that donor over the period's income, subject to the first-degree relative/affinity and spouse exceptions. Article 40 has its separate donated-capital-asset treatment; recipient exemptions under art. 20 have their own citizenship/category conditions. Internal transfers and loan principal are reconciliation subjects, not automatically business income or an automatic tax exemption for an unexplained receipt. [Arts. 20–21, 40][code].
+
+For an employee’s concessional MDL loan, use the [payroll Guide’s sourced loan-benefit method](moldova-payroll.md): the observed regulation formula and the November 2025 BNM domestic-currency individual-total over-five-year rate of **8.32%** for the ordinary 2026 calculation. Keep principal, actual interest and the positive deemed benefit separate. The companion’s foreign-currency and collection/rounding gaps remain applicable; this annual-income Guide does not turn the loan principal into salary. [Code art. 19(d)][code]; [regulation point 8(4)][reg]; [BNM DPMC8 report, configured November 2025](https://bnm.md/bdi/pages/reports/dpmc/DPMC8.xhtml?id=0&lang=ro).
 
 ### Personal, spouse and dependent exemptions
 
@@ -285,7 +287,7 @@ Read 30 October 2026. The [individual-income ledger](../../../ledgers/moldova-in
 | [Government Decision 693/2018 current annex 2][personalreg], [January version][personalregjan] and [amending Decision 321/2026][personalamend] | Directly read personal scope, annual-income gate, actual deduction proof and capital-allocation methods; January/June proof change; the statute controls conflicting general summaries | 2026-10-30 |
 | [MF Order 40/2018 approval][capitalorder] and [SFS Order 13/2025 published interpretations][capitalproof] | Approval page only for the unretained Order 40 annex; SFS questions 29.2.4.4 and 29.2.4.18 directly support the cash-receipt and inheritance-proof statements | 2026-10-30 |
 | [Order 150/2018 CET18, 3 April 2026 consolidation][cet] | Scope/identity/departure, ordinary resident income/deduction/credit fields, capital table and signature/acceptance instructions; complete current form attachment and remaining nonresident fields are not certified | 2026-10-30 |
-| [Government Decision 697/2014, 2026 payroll regulation][reg] | Applications, exemptions/evidence and cumulative payroll method; attached forms and image formula remain limited as stated in payroll Guide | 2026-10-30 |
+| [Government Decision 697/2014, 2026 payroll regulation][reg] | Applications, exemptions/evidence and cumulative payroll method; attached forms remain unretained; the formula was visually read and the ordinary MDL loan benchmark supplied as stated in the payroll Guide | 2026-10-30 |
 | [CNAS 2026 instructions][cnas] | Contribution categories, actual fixed amounts and forecast salary input; not a substitute for individual income-tax entitlement | 2026-10-30 |
 | [Medical budget Law 321/2025 art. 4][medicalbudget] | Current eligible 2,527/12,636 and 9% category rules; 2,572 overview discrepancy not adopted | 2026-10-30 |
 | [Law 489/1999][social]; [Law 1593/2002][health] | Selected social/medical framework retained in the connected Guide/ledger; full amendment/implementing-chain gaps remain explicit there | 2026-10-30 |

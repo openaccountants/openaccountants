@@ -2,7 +2,7 @@
   "status": "LOCAL 2026 WRITER DRAFT; ordinary and specialist gaps explicit; no independent review or comprehensive-coverage claim",
   "slug": "moldova-payroll",
   "Guide_path": "skills/international/moldova/moldova-payroll.md",
-  "Guide_sha256": "f8e0083a481d3a72837a3a1056b5ac355c96dd7d44904cbb1c9f56269feddc40",
+  "Guide_sha256": "fe3957067b924ef9f71d72246f90fe3dbaeb3d3da3b28d8ee7fc9a7704c09888",
   "rows": [
     {
       "id": "MD-PR-001",
@@ -2814,6 +2814,71 @@
       "source_context": "Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în conformitate cu alin. (11), din suma datoriei pentru fiecare zi de întârziere.\n\n[Art.30 al.(1) modificat prin LP146 din 26.06.25, MO340-342/28.06.25 art.401; în vigoare 01.01.26]\n\n(l1) Cuantumul penalității se determină conform prevederilor Codului fiscal.\n\n[Art.30 al.(11) introdus prin LP146 din 26.06.25, MO340-342/28.06.25 art.401; în vigoare 01.01.26]\n\n(2) Penalitatea nu se va calcula pentru perioada aflării la examinare a documentelor privind transferul primelor de asigurare obligatorie de asistenţă medicală de la un cont la altul.\n",
       "quote_matches_source_after_layout_normalization": true,
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-PR-201",
+      "rule_or_figure": "Positiveemployee-loaninterestrategap;currentnewindividualover-five-yearbenchmark;generalcustomerbank/nonbankexception",
+      "Guide_section": "The base: Employer loan benefit",
+      "act_article_or_official_section": "FiscalCode19(d)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "d) suma dobânzii, determinată reieşind din diferenţa pozitivă dintre rata medie ponderată a dobânzilor aplicate la creditele noi acordate persoanelor fizice pe un termen",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-19.json",
+      "source_text_sha256": "38751727f8062c118a4a1ae3a03d48cac5c29c6ead072847a154fbb8857f0100",
+      "source_context": "d) suma dobânzii, determinată reieşind din diferenţa pozitivă dintre rata medie ponderată a dobânzilor aplicate la creditele noi acordate persoanelor fizice pe un termen ce depăşeşte 5 ani, stabilită de Banca Naţională a Moldovei în luna noiembrie a anului precedent anului fiscal de gestiune, şi rata dobânzii calculată pentru împrumuturile acordate de către angajator salariatului. Prevederile prezentei litere nu se aplică creditelor acordate de bănci şi organizații de creditare nebancară salariaților acestora în condițiile generale în care acestea acordă credite persoanelor fizice terțe. În sensul prezentului articol, prin condiții generale se înțeleg condițiile acceptate de către bănci și organizații de creditare nebancară privind oferirea creditelor cel puțin unei persoane fizice terțe pentru același produs financiar oferit salariaților;\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-PR-202",
+      "rule_or_figure": "Monthlyloanbenefit,actualprincipalrepayments,variabledefinitions,pre2019outstandingloansandone-third-partycustomerexception",
+      "Guide_section": "The base: Employer loan benefit",
+      "act_article_or_official_section": "Government697/2014 regulationpoint8(4),January2026consolidation",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro",
+      "exact_original_language_quote": "4) suma dobânzii, determinată reieșind din diferența pozitivă dintre rata medie ponderată a dobânzilor aplicate la creditele noi acordate persoanelor fizice pe un termen",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-REG697-SCOPE-BENEFITS.json",
+      "source_text_sha256": "79f2ec44450495f63647ecda754a11ae49da592e5925f0598e34a454d75fb3fc",
+      "source_context": "4) suma dobânzii, determinată reieșind din diferența pozitivă dintre rata medie ponderată a dobânzilor aplicate la creditele noi acordate persoanelor fizice pe un termen ce depășește 5 ani, stabilită de Banca Națională a Moldovei în luna noiembrie a anului precedent anului fiscal de gestiune și rata dobânzii calculată pentru împrumuturile acordate de către angajator salariatului. Prevederile prezentului punct nu se aplică creditelor acordate de bănci și organizații de creditare nebancare salariaților acestora în condițiile generale în care acestea acordă credite persoanelor fizice terțe.\n\nVenitul de la acordarea împrumutului se determină lunar. După rambursarea unei părți a împrumutului, suma facilității se calculează, în mod analogic, conform formulei, ținând cont de sumele rambursate în contul stingerii împrumutului.\n\nVenitul de la acordarea împrumutului se calculează conform următoarei formule:\n\nunde:\n\nF – suma facilității acordată de către angajator;\n\nS – suma împrumutului;\n\nNzl – numărul de zile în luna pe parcursul căreia angajatul s-a folosit de împrumut;\n\nRd – rata medie ponderată a dobânzilor aplicate la creditele noi acordate persoanelor fizice pe un termen ce depășește 5 ani, stabilită de Banca Națională a Moldovei;\n\nRdc – rata dobânzii calculată pentru împrumutul acordat de către angajator.\n\nPrevederile respective se vor aplica inclusiv pentru împrumuturile acordate și nerambursate în perioadele fiscale până în anul 2019 inclusiv la calcularea sumei facilității acordate.\n\nÎn sensul prezentului subpunct, prin „condiții generale” se înțeleg condițiile acceptate de către bănci și organizații de creditare nebancară privind oferirea creditelor cel puțin unei persoane fizice terțe pentru același produs financiar oferit salariaților.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-PR-203",
+      "rule_or_figure": "Visuallyreadformula:F=S*(Nzl/365)*((Rd-Rdc)/100);Codepositivedifferenceappliedseparately",
+      "Guide_section": "The base: Employer loan benefit",
+      "act_article_or_official_section": "Government697regulationpoint8(4)embeddedofficialPNG;visualtranscription",
+      "official_url": "https://www.legis.md/UserFiles/images/RO/2020/mo165-176md/formula_543.png",
+      "exact_original_language_quote": "F = S × (Nzl / 365) × ((Rd − Rdc) / 100)",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-REG697-LOAN-FORMULA-IMAGE.json",
+      "source_text_sha256": "75b64a4098a5032cd1ded220dd309fb5f8ab20ae07c47a0c9ba566a490a4e1d4",
+      "source_context": "F = S × (Nzl / 365) × ((Rd − Rdc) / 100)",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-PR-204",
+      "rule_or_figure": "November2025MDLnewloans,individuals-total,overfiveyears:8.32%;ordinary2026MDLinput,nouniversalforeigncurrencyclaim",
+      "Guide_section": "The base: Employer loan benefit",
+      "act_article_or_official_section": "BNMDPMC8;monthlyNovember2025;monedanaţională/persoanefizice:total/peste5ani/Ratanominală,%",
+      "official_url": "https://bnm.md/bdi/pages/reports/dpmc/DPMC8.xhtml?id=0&lang=ro",
+      "exact_original_language_quote": "peste 5 ani 8.32",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-LOANS.json",
+      "source_text_sha256": "059a2096d8fec973f95ffdbba042d03f62d01727733a98d1f3814660472b0ea7",
+      "source_context": "persoane fizice: total\n\t\npână la 1 lună\n\t\n0.00\n\t\n0.00\n\n\nde la 1 lună până la 3 luni\n\t\n11.71\n\t\n1.82\n\n\nde la 3 luni până 6 luni\n\t\n11.13\n\t\n4.32\n\n\nde la 6 luni până la 12 luni\n\t\n11.62\n\t\n39.99\n\n\ntotal până la 12 luni\n\t\n11.58\n\t\n46.14\n\n\nde la 1 an până la 2 ani\n\t\n11.06\n\t\n62.00\n\n\nde la 2 ani până la 5 ani\n\t\n10.88\n\t\n1,194.47\n\n\npeste 5 ani\n\t\n8.32\n\t\n853.89\n\n\ntotal peste 12 luni\n\t\n9.85\n\t\n2,110.36\n\n\ntotal pe termene\n\t\n9.88\n\t\n2,156.49\n\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained",
+      "series_ancestry": {
+        "period": "nov.2025",
+        "currency": "moneda naţională",
+        "borrower": "persoane fizice: total",
+        "term": "peste 5 ani",
+        "measure": "Rata nominală,%",
+        "rate_percent": "8.32",
+        "query_and_reproduction": "Seequery_settingsinsourceobservation;defaultreportislatest,notNovember2025"
+      }
     }
   ],
   "old_topic_destinations": [
@@ -8017,7 +8082,7 @@
   ],
   "baseline_old_units": 144,
   "old_bytes": 44386,
-  "new_bytes": 42170,
+  "new_bytes": 45907,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Duplicated old headings/rate tables/boilerplate consolidated into the canonical nine sections; every original rule/table/bullet has a destination.",

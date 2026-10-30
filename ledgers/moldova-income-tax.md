@@ -2,7 +2,7 @@
 
 **Local 2026 writer draft. Ordinary gaps remain; no whole-country independent review, accountant attestation or complete-coverage claim.**
 
-Guide SHA256: `0cc3507d884edd3a4f8993cfd1331cecfb0db164ac5327fa592e9e8d6391654f`. Short exact original-language quotations are tied to full retained paragraph contexts, official URLs, source hashes and read dates in the JSON. A source row can contain linked statutory conditions; the reviewer must verify the whole retained paragraph and its Guide application, not only the quotation.
+Guide SHA256: `97dbda5282f15d056dccc694596db27e5ef646a789cd91901cf9efdc050ad7f8`. Short exact original-language quotations are tied to full retained paragraph contexts, official URLs, source hashes and read dates in the JSON. A source row can contain linked statutory conditions; the reviewer must verify the whole retained paragraph and its Guide application, not only the quotation.
 
 | ID | Rule/figure or exact source-rule opening | Guide section | Act/article and official URL | Short original-language quote | Read |
 |---|---|---|---|---|---|
@@ -386,6 +386,10 @@ Guide SHA256: `0cc3507d884edd3a4f8993cfd1331cecfb0db164ac5327fa592e9e8d6391654f`
 | MD-IND-378 | 2026ordinarydailypercentage0.0301%;decimalmultiplier0.000301,derivedfrom6%Novemberbase+5points/365days rounded4decimalplaces | Penalties and interest / Sources | [FiscalCode228(3);BNM6November2025point1;2026calendar365days](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | (3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de | 2026-10-30 |
 | MD-IND-379 | CurrentmedicaldailychargeusestheCodecalculation;inter-account-transfer-documentexceptionpreserved | Penalties and interest / Sources | [Law1593/2002 art30(1)-(2)](https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro) | Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în | 2026-10-30 |
 | MD-IND-380 | MedicalCode-methodswitchoperative1January2026underLaw146/2025,notanassumedcontinuationofold0.1% | Penalties and interest / Sources | [Law1593art30January2026version;Law146/2025commencementannotations](https://www.legis.md/cautare/getResults?doc_id=149273&lang=ro) | Art.30. – (1) Neachitarea în termen a primelor de asigurare obligatorie de asistenţă medicală atrage după sine calcularea unei penalităţi, stabilită în | 2026-10-30 |
+| MD-IND-381 | Positiveemployee-loaninterestrategap;currentnewindividualover-five-yearbenchmark;generalcustomerbank/nonbankexception | The base: Employer loan benefit | [FiscalCode19(d)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | d) suma dobânzii, determinată reieşind din diferenţa pozitivă dintre rata medie ponderată a dobânzilor aplicate la creditele noi acordate persoanelor fizice pe un termen | 2026-10-30 |
+| MD-IND-382 | Monthlyloanbenefit,actualprincipalrepayments,variabledefinitions,pre2019outstandingloansandone-third-partycustomerexception | The base: Employer loan benefit | [Government697/2014 regulationpoint8(4),January2026consolidation](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) | 4) suma dobânzii, determinată reieșind din diferența pozitivă dintre rata medie ponderată a dobânzilor aplicate la creditele noi acordate persoanelor fizice pe un termen | 2026-10-30 |
+| MD-IND-383 | Visuallyreadformula:F=S*(Nzl/365)*((Rd-Rdc)/100);Codepositivedifferenceappliedseparately | The base: Employer loan benefit | [Government697regulationpoint8(4)embeddedofficialPNG;visualtranscription](https://www.legis.md/UserFiles/images/RO/2020/mo165-176md/formula_543.png) | F = S × (Nzl / 365) × ((Rd − Rdc) / 100) | 2026-10-30 |
+| MD-IND-384 | November2025MDLnewloans,individuals-total,overfiveyears:8.32%;ordinary2026MDLinput,nouniversalforeigncurrencyclaim | The base: Employer loan benefit | [BNMDPMC8;monthlyNovember2025;monedanaţională/persoanefizice:total/peste5ani/Ratanominală,%](https://bnm.md/bdi/pages/reports/dpmc/DPMC8.xhtml?id=0&lang=ro) | peste 5 ani 8.32 | 2026-10-30 |
 
 ## Complete predecessor-topic destinations
 
@@ -814,7 +818,7 @@ Every original unit and individual old table/bullet/test claim is preserved in t
 
 ## Removed and why
 
-Baseline 46135 bytes; current 60357 bytes. More than 25% shorter: False.
+Baseline 46135 bytes; current 61097 bytes. More than 25% shorter: False.
 - Duplicated old headings/rate tables/boilerplate consolidated into the canonical nine sections; every original rule/table/bullet has a destination.
 - Unsupported employee 6% social withholding and additive 27% model corrected to statutory category/base method; old fixtures archived and explicitly corrected.
 - Guessed employer category, exemption, missing-IDNP refusal, non-cumulative payroll and legal-year assumptions replaced by actual facts and official rules.
