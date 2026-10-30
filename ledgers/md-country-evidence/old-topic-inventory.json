@@ -610,8 +610,11 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "13e5fbce8402817fd609c6086697064a1c636a5b0e68ddb2f1601079e5f80312",
       "original_text": "# Moldova transfer pricing",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds"
+      ],
+      "status": "Scope and affiliation retained, expanded against current Code and rules"
     },
     {
       "id": "md-transfer-pricing-OLD-002",
@@ -619,8 +622,11 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "f98c96429dc90ee8d9efe256576a693fb74ec6416cb3d288884029961458622e",
       "original_text": "## Scope and controlled transactions",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds"
+      ],
+      "status": "Scope and affiliation retained, expanded against current Code and rules"
     },
     {
       "id": "md-transfer-pricing-OLD-003",
@@ -628,8 +634,11 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "775c2833f0d881c033a402a90761b371e5969ea7dcdf3b40ee58970a7ff5ab47",
       "original_text": "Moldova's transfer-pricing rules are in Fiscal Code Title V, Chapter 11², with implementation rules approved by Ministry of Finance Order 9/2024, as amended by Orders 21/2025 and 8/2026. Law 187/2025 rewrote the filing rule in Article 226¹⁹; apply that later law for fiscal periods beginning in 2025. The implementing rules apply to Moldovan-registered legal and natural-person businesses and foreign legal persons with a Moldovan branch or permanent establishment. Apply the current Code definition of an affiliated person before aggregating transactions: the rules cover specified family relationships, direct or indirect participation and effective control. A permanent establishment is treated as affiliated with its legal person. [Fiscal Code, art. 226¹⁷–226²⁹](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [Law 187/2025](https://www.legis.md/cautare/downloadpdf/149593); [Order 21/2025](https://www.legis.md/cautare/downloadpdf/147520); [Order 8/2026](https://www.legis.md/cautare/downloadpdf/152708) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds"
+      ],
+      "status": "Scope and affiliation retained, expanded against current Code and rules"
     },
     {
       "id": "md-transfer-pricing-OLD-004",
@@ -637,8 +646,11 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "8ab081ab6627464ca048fe49d377b10f9f42819bc487f22757cb83ff67058cec",
       "original_text": "Controlled transactions include dealings between affiliated persons. The Code distinguishes domestic transactions, including specified resident transactions involving free economic zones or IT parks and differing tax rates or bases, from cross-border transactions between a Moldovan resident and a nonresident. Do not assume every related-party transaction falls into the same reporting category; classify the parties, transaction, tax regime and period under the current statutory definitions first. [SFS transfer-pricing guidance and Generalized Fiscal Practice](https://www.sfs.md/ro/pagina/preturi-de-transfer) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds"
+      ],
+      "status": "Scope and affiliation retained, expanded against current Code and rules"
     },
     {
       "id": "md-transfer-pricing-OLD-005",
@@ -646,8 +658,12 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "bba509ff723f65b7eb08f184f76edfebb39c23a37354d8e6d121aac2d5531725",
       "original_text": "## Annual information and documentation thresholds",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Build the affiliate and threshold reconciliation",
+        "The base: Compile the master file and local file",
+        "Deadlines and filing"
+      ],
+      "status": "Prior20m/request-only120day corrections preserved; current exclusions, file content and deadlines expanded"
     },
     {
       "id": "md-transfer-pricing-OLD-006",
@@ -655,8 +671,12 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "22f5e46c8acdac3a41fbd3ba8d9e8ade916cb78ec47bd7c67b1c3c31200b531c",
       "original_text": "For fiscal periods beginning in 2025, add the value of transactions with **all** affiliated persons for the fiscal period, excluding VAT. At MDL 20 million or more, the taxpayer must prepare and submit transfer-pricing information. Law 187/2025 removed the separate MDL 50 million threshold for automatic submission of a transfer-pricing file: the file is prepared and submitted only if the State Tax Service (SFS) requests it. The 2025-period rule applies the MDL 20 million threshold to local and cross-border controlled transactions; check the Code's definitions and exclusions before aggregation. Below MDL 20 million, the Article 226¹⁹ threshold-based filing does not arise; this does not establish that prices are arm's length or remove ordinary recordkeeping duties. [Law 187/2025](https://www.legis.md/cautare/downloadpdf/149593); [SFS, 25 June 2026 deadline notice](https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Build the affiliate and threshold reconciliation",
+        "The base: Compile the master file and local file",
+        "Deadlines and filing"
+      ],
+      "status": "Prior20m/request-only120day corrections preserved; current exclusions, file content and deadlines expanded"
     },
     {
       "id": "md-transfer-pricing-OLD-007",
@@ -664,8 +684,12 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "42ce6e05febd62ad45f342be265b59f716d7378708eb19156ecbedcc00d3c127",
       "original_text": "For periods beginning in 2025, submit the information electronically through the SFS taxpayer cabinet using the electronic-declaration service, signed with an accepted electronic or mobile signature. The annual information deadline is the 25th day of the sixth month after the fiscal period ends. For a calendar-year 2025 period, SFS identified 25 June 2026 as the deadline. If SFS requests a transfer-pricing file, submit it within 120 days of the request, but not before the deadline for submitting the information. The 2024 transition used different form and deadline rules; do not apply its XLSX forms or transitional provisions to 2025 periods. [Law 187/2025](https://www.legis.md/cautare/downloadpdf/149593); [SFS transfer-pricing page](https://www.sfs.md/ro/pagina/preturi-de-transfer); [SFS 2025-period deadline notice](https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Build the affiliate and threshold reconciliation",
+        "The base: Compile the master file and local file",
+        "Deadlines and filing"
+      ],
+      "status": "Prior20m/request-only120day corrections preserved; current exclusions, file content and deadlines expanded"
     },
     {
       "id": "md-transfer-pricing-OLD-008",
@@ -673,8 +697,12 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "3ade13978771891cccaaffe178323a03db907316b46227e76813d6f2f0e34470",
       "original_text": "If SFS requests the transfer-pricing file, the taxpayer has 120 days from the request, but the period cannot end before the annual information deadline. The file includes taxpayer and group information, controlled-transaction descriptions and contracts, functional and comparability analyses, method selection, comparables, adjustments and the arm's-length conclusion. The current implementing rules prescribe master-file and local-file components, with group ownership, value chain, intangibles and DEMPE, intra-group financing, consolidated financial information, and local transaction analysis. Confirm the exact information schedules and file contents against Orders 9/2024 as amended, including Order 8/2026, and current SFS instructions. [Law 187/2025](https://www.legis.md/cautare/downloadpdf/149593); [Order 8/2026](https://www.legis.md/cautare/downloadpdf/152708); [SFS transfer-pricing page](https://www.sfs.md/ro/pagina/preturi-de-transfer) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Build the affiliate and threshold reconciliation",
+        "The base: Compile the master file and local file",
+        "Deadlines and filing"
+      ],
+      "status": "Prior20m/request-only120day corrections preserved; current exclusions, file content and deadlines expanded"
     },
     {
       "id": "md-transfer-pricing-OLD-009",
@@ -682,8 +710,10 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "b8b2a50178c789af57417f8368b7c456f526bfbf1d88b61574977468b9dda968",
       "original_text": "## Pricing analysis and records",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Delineate and price the actual transaction"
+      ],
+      "status": "All prior methods/analysis retained with current comparator interval and computation"
     },
     {
       "id": "md-transfer-pricing-OLD-010",
@@ -691,8 +721,10 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "bff23319ba6dfac53bccab3470ad44440bc26041bd1bb147d986e1134b1fce4e",
       "original_text": "Select the most appropriate method for the accurately delineated transaction and available reliable data. Moldova's rules recognize the comparable uncontrolled price, resale price, cost-plus, transactional net margin and profit-split methods, as well as another method consistent with the OECD Guidelines where the listed methods cannot be applied reliably. Document the reasons for selection, the tested party where relevant, comparability factors, adjustments, data sources and the resulting arm's-length range. A group policy or database benchmark by itself does not show that a particular transaction is arm's length. [Fiscal Code, art. 226²⁰–226²¹](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [SFS transfer-pricing guidance](https://www.sfs.md/ro/pagina/preturi-de-transfer) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Delineate and price the actual transaction"
+      ],
+      "status": "All prior methods/analysis retained with current comparator interval and computation"
     },
     {
       "id": "md-transfer-pricing-OLD-011",
@@ -700,8 +732,11 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "0e741d8ddee2d9a5f01e161068f15c2affac69e2e5593f3930c5720af8175ada",
       "original_text": "Retain supporting contracts, invoices, accounting reconciliations, functional interviews, benchmarking inputs and signed filings. SFS guidance states the transfer-pricing file is retained for six years from its presentation. Check the current statutory retention trigger and any longer accounting or tax-record period before destroying records. [SFS Generalized Fiscal Practice, TP item 44.3.1](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/1200) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Compile the master file and local file",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Records preserved; stale six-year statutory trigger expressly not recertified"
     },
     {
       "id": "md-transfer-pricing-OLD-012",
@@ -709,8 +744,10 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "0b66ec7f3021f2bac1e86cdb2af051594e44d8c12e4a3c3ac8f577fc9c06b7ac",
       "original_text": "## Penalties and advance agreements",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Penalties and interest"
+      ],
+      "status": "Full offence/range map and2028 commencement supplied with primary-law evidence"
     },
     {
       "id": "md-transfer-pricing-OLD-013",
@@ -718,8 +755,10 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "652a2538fc7a29e8fd90e8a902e242c830dba57d1aa5e82a2ec2d7a7e2dcf7f8",
       "original_text": "SFS states that for the 2025 information filing, late submission attracts MDL 30,000–50,000 and failure to submit MDL 100,000–150,000. It also states that penalties for false information apply in audits for fiscal periods starting in 2028. Other Article 260 penalties relate to transfer-pricing file failures; establish the exact offense, period and current sanction before quantifying exposure. [SFS, 25 June 2026 deadline notice](https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Penalties and interest"
+      ],
+      "status": "Full offence/range map and2028 commencement supplied with primary-law evidence"
     },
     {
       "id": "md-transfer-pricing-OLD-014",
@@ -727,8 +766,11 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "c90f944c6b59e043f4c2d5818447438f900b110162d40dabd81bf92abf2141bd",
       "original_text": "The SFS offers unilateral, bilateral and multilateral advance pricing agreements. The current SFS page lists fees of MDL 30,000 per transaction type for unilateral agreements and MDL 50,000 for bilateral or multilateral agreements; confirm the current application requirements and fee before filing. [SFS transfer-pricing page](https://www.sfs.md/ro/pagina/preturi-de-transfer) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "Deadlines and filing: APA application and monitoring"
+      ],
+      "status": "APA fees/type and procedural subject retained and expanded"
     },
     {
       "id": "md-transfer-pricing-OLD-015",
@@ -736,8 +778,11 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "d9eb22fb0326f271e4355e14fbe9b6e527c4b2789d4217dde8502fb9c03b36b0",
       "original_text": "## Worked threshold checks",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "archived original"
+      ],
+      "status": "All three old threshold fixtures retained/mapped; no hypothetical affiliation or legal assumption treated as verified client facts"
     },
     {
       "id": "md-transfer-pricing-OLD-016",
@@ -745,8 +790,11 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "b7b2edb1e3a8d22b6069bfda3da208462cb179fbe1c6096e7247e8a1b90d8d5d",
       "original_text": "- A company has MDL 12 million of controlled transactions with one affiliate and MDL 8 million with another, both amounts excluding VAT. Aggregate amount is MDL 20 million, so the information filing threshold is met. The company must classify the transactions and use the period-specific form and deadline.\n- Aggregate controlled transactions are MDL 49.9 million excluding VAT. The information filing threshold is met. There is no automatic MDL 50 million file-submission tier for 2025 periods; submit the file only if SFS requests it, within the statutory response period.\n- Aggregate controlled transactions are MDL 50 million excluding VAT. The same MDL 20 million information threshold is met. The amount does not by itself require file submission; an SFS request triggers the 120-day response period, which cannot expire before the information filing deadline.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "archived original"
+      ],
+      "status": "All three old threshold fixtures retained/mapped; no hypothetical affiliation or legal assumption treated as verified client facts"
     },
     {
       "id": "md-transfer-pricing-OLD-017",
@@ -754,8 +802,11 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "25e06b2b2fa424d8848eb44fee769bffc1bf8be072909c7ef5a9aaafff186341",
       "original_text": "These examples apply only the published aggregate thresholds. They do not decide whether a transaction is controlled or whether its price is arm's length.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Two worked examples that recompute",
+        "archived original"
+      ],
+      "status": "All three old threshold fixtures retained/mapped; no hypothetical affiliation or legal assumption treated as verified client facts"
     },
     {
       "id": "md-transfer-pricing-OLD-018",
@@ -763,8 +814,11 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "3ec39896929d19a9d742f7cbbb785e2a5e8de909442458d987fa7c7c5a901e65",
       "original_text": "## Open verification points",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "Ask the client first"
+      ],
+      "status": "Original open points retained/resolved or precisely restated; whole-country review pending"
     },
     {
       "id": "md-transfer-pricing-OLD-019",
@@ -772,8 +826,11 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "32e5f03aeb1895c9151719ceb98756b9b041b549bc5e8f190ef1d8f1abd4664c",
       "original_text": "This source-cited draft has not been reviewed by a Moldovan transfer-pricing practitioner. Before reliance, confirm the current consolidated Code and Orders 9/2024, 21/2025 and 8/2026, transaction scope and exclusions, filing fields, the fiscal-period rule for non-calendar periods, the current penalty mapping and records-retention trigger. No conclusion about the arm's-length result of a taxpayer's transaction follows from this Guide.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "Ask the client first"
+      ],
+      "status": "Original open points retained/resolved or precisely restated; whole-country review pending"
     },
     {
       "id": "md-transfer-pricing-OLD-020",
@@ -781,8 +838,10 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "original_text": "<!-- openaccountants-cta-block -->",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list left byte-identical; current Sources section precedes marker"
     },
     {
       "id": "md-transfer-pricing-OLD-021",
@@ -790,8 +849,10 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
       "original_text": "---",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list left byte-identical; current Sources section precedes marker"
     },
     {
       "id": "md-transfer-pricing-OLD-022",
@@ -799,8 +860,10 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
       "original_text": "## Talk to a verified accountant",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list left byte-identical; current Sources section precedes marker"
     },
     {
       "id": "md-transfer-pricing-OLD-023",
@@ -808,8 +871,10 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "4ddab0331c9dbbd36518d040a1c09ea1d8d555c30f65579b419479c9e2948f96",
       "original_text": "This document is general reference information, not advice for a specific transaction. Consult the cited legislation and a Moldovan transfer-pricing specialist before filing or setting prices.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list left byte-identical; current Sources section precedes marker"
     },
     {
       "id": "md-transfer-pricing-OLD-024",
@@ -817,8 +882,10 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
       "original_text": "## Sources",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list left byte-identical; current Sources section precedes marker"
     },
     {
       "id": "md-transfer-pricing-OLD-025",
@@ -826,8 +893,10 @@
       "original_sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
       "unit_sha256": "9c81d9fd2b14fdcaee87b3d54173cb179ea8624eeb44355fcee00a45c9d5b324",
       "original_text": "- Moldova Fiscal Code, Title V, Chapter 11², official consolidated text: https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro (read 2026-10-24)\n- Law 187/2025, amendment to Article 226¹⁹: https://www.legis.md/cautare/downloadpdf/149593 (read 2026-10-24)\n- Ministry of Finance Order 9/2024, as amended by Orders 21/2025 and 8/2026: https://www.legis.md/cautare/downloadpdf/147520 and https://www.legis.md/cautare/downloadpdf/152708 (read 2026-10-24)\n- State Tax Service transfer-pricing page and 2025 reporting deadline notice: https://www.sfs.md/ro/pagina/preturi-de-transfer and https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025 (read 2026-10-24)\n",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list left byte-identical; current Sources section precedes marker"
     },
     {
       "id": "moldova-income-tax-OLD-001",
