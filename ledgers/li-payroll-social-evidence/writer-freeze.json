@@ -1,7 +1,52 @@
 {
-  "status": "FOUR-GUIDE WRITER CHECKPOINT; FULL COUNTRY REVIEW/PUBLICATION PENDING",
-  "generated_at": "2026-10-30T11:22:30.313954+00:00",
+  "status": "FIVE-GUIDE WRITER CHECKPOINT; WHOLE COUNTRY REVIEW/PUBLICATION PENDING",
+  "generated_at": "2026-10-30T11:31:02.433916+00:00",
   "files": [
+    {
+      "path": "ledgers/li-corporate-income-tax-evidence/predecessor-guide.md",
+      "sha256": "72981e14840831bf1b1f36f48261ad83a50678ead66fc7df0a3c81ee35f6d4b6",
+      "bytes": 14299
+    },
+    {
+      "path": "ledgers/li-corporate-income-tax-evidence/retained-original-controls.md",
+      "sha256": "826665d12a7a668afdf7b600dd557e3ffda90d2642665ccbef27926d7b962aa3",
+      "bytes": 2644
+    },
+    {
+      "path": "ledgers/li-corporate-income-tax-evidence/sources/02.pdf",
+      "sha256": "1ff70b755a4ec75c652f79ef5ec7f2cb7d8fe87bc08128cec701e5a623698435",
+      "bytes": 80069
+    },
+    {
+      "path": "ledgers/li-corporate-income-tax-evidence/sources/02.txt",
+      "sha256": "b667da6049064d66c48316dbb3f9cd2df782adab8cd9fba067e9aaa29aabb076",
+      "bytes": 18136
+    },
+    {
+      "path": "ledgers/li-corporate-income-tax-evidence/sources/corporate-source-refetch.json",
+      "sha256": "bb4cdbba87d03be0e8477b8498c6fedac2b68aa6ea99b4efe9f6b964908bbc95",
+      "bytes": 433
+    },
+    {
+      "path": "ledgers/li-corporate-income-tax-evidence/writer-method-checks.json",
+      "sha256": "3c46cbadacdc6e7dc6df2c8a08f81f4913142276548d7a2e1c2f1f4a1e976a28",
+      "bytes": 7550
+    },
+    {
+      "path": "ledgers/li-corporate-income-tax-evidence/writer-validation.json",
+      "sha256": "627d4c593b008029848fff2596ecbcb88cab67d94f3affba54a70bd9816e555e",
+      "bytes": 664
+    },
+    {
+      "path": "ledgers/li-corporate-income-tax.md",
+      "sha256": "622e8f72e19758c62b60b79801a1fbd6c877f3aaef550959790b45dd15fc95e3",
+      "bytes": 29013
+    },
+    {
+      "path": "ledgers/li-corporate-income-tax.writer.json",
+      "sha256": "ee94175c5c32a7112dc57c44aa0eca75b59824aa725715031c183e9f236b72d7",
+      "bytes": 89338
+    },
     {
       "path": "ledgers/li-cross-border-evidence/predecessor-guide.md",
       "sha256": "0c1e6515b43e740a86f1494ff8689c58628b6ccae7ae1002359ebd0b1f417c01",
@@ -161,6 +206,11 @@
       "path": "ledgers/li-payroll-social-evidence/sources/wage-current-web-reader.txt",
       "sha256": "32868ed0a611b1896d6045557d08f091f0bbd2bcb0d853c8df2abb43a611e3cd",
       "bytes": 14168
+    },
+    {
+      "path": "ledgers/li-payroll-social-evidence/writer-freeze-5bf66d6c.json",
+      "sha256": "9744deedc35432a1a500ca5f41461c18af826226ad940701b9318ea07d02ed2c",
+      "bytes": 14088
     },
     {
       "path": "ledgers/li-payroll-social-evidence/writer-freeze-e7270d05.json",
@@ -339,8 +389,13 @@
     },
     {
       "path": "skills/international/liechtenstein/README.md",
-      "sha256": "75e4f00d735e31feb396d9f137ec7b8a595ab2b53c03a03706bb0cccffa38008",
-      "bytes": 10363
+      "sha256": "890a82ca35f8911e8c0d38dea2025f63768f8d65f678c3c2d8120b49147474b3",
+      "bytes": 10859
+    },
+    {
+      "path": "skills/international/liechtenstein/li-corporate-income-tax.md",
+      "sha256": "689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b7aa52ec",
+      "bytes": 22922
     },
     {
       "path": "skills/international/liechtenstein/li-cross-border.md",
