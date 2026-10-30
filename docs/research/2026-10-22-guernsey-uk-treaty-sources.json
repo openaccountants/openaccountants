@@ -1,0 +1,22 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf",
+      "sha256": "0bd8655edaf801db86a2abe0561a6bfd238559ebe70977b302b725256fe4bffd",
+      "locators": "Articles1\u20137,9\u201312,14,22\u201325; Protocol1\u20133; cover effective dates"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/guernsey-tax-treaties",
+      "locators": "Current agreement status and separate collection/arbitration materials"
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600",
+      "locators": "Agreement in force and effective dates"
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602",
+      "locators": "Summary table, distinction between domestic/treaty rates, notes1\u20132"
+    }
+  ]
+}

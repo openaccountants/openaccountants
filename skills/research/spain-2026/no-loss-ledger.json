@@ -1,0 +1,836 @@
+{
+  "base": "30545a0db19be3fe2b741006cd7f78d6efabc5b7",
+  "counting_rule": "One substantive subject/gateway family per listed row; IRNR two special rates count together; resident/nonresident2012 urban family counts once; VAT duplicate review sibling not counted; new foral Guides and new ordinary computations not counted as lost-topic restorations.",
+  "lost_content_restored": 41,
+  "reviewer_edits": 0,
+  "topics": [
+    {
+      "id": "R01",
+      "file": "es-autonomous-worker.md",
+      "topic": "Modelo347 conditional third-party reporting including February",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R02",
+      "file": "es-autonomous-worker.md",
+      "topic": "Modelo720 three separate foreign-asset blocks and subsequent reporting",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R03",
+      "file": "es-capital-gains.md",
+      "topic": "2012 urban-property half-gain relief, resident and nonresident gateways",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R04",
+      "file": "es-capital-gains.md",
+      "topic": "nonresident pre1994 old-asset abatement",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R05",
+      "file": "es-corporate-tax.md",
+      "topic": "creditcooperative/rural-bank extra-cooperative30percent",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R06",
+      "file": "es-non-resident-income-tax-irnr-and.md",
+      "topic": "special reinsurance1.5percent/shipping-air4percent rates",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R07",
+      "file": "es-non-resident-income-tax-irnr-and.md",
+      "topic": "real-right timeshare imputation and <=14day exclusion",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R08",
+      "file": "es-non-resident-income-tax-irnr-and.md",
+      "topic": "residence-certificate validity and exceptions",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R09",
+      "file": "es-non-resident-income-tax-irnr-and.md",
+      "topic": "cultural/humanitarian residence exclusion",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R10",
+      "file": "es-vat-return.md",
+      "topic": "retailer recargo statutory rates",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R11",
+      "file": "es-vat-return.md",
+      "topic": "agriculture/forestry12 versus livestock/fishing10.5 compensation",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R12",
+      "file": "es-vat-return.md",
+      "topic": "qualified advertising-object200 boundary",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R13",
+      "file": "es-vat-return.md",
+      "topic": "distance/TBE10000 gateway",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R14",
+      "file": "es-vat-return.md",
+      "topic": "specified-acquirer10000 gateway",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R15",
+      "file": "es-vat-return.md",
+      "topic": "cash-scheme entry/exclusion and actual payment/backstop timing",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R16",
+      "file": "es-vat-return.md",
+      "topic": "cash-scheme informative62/63 and74/75",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R17",
+      "file": "es-rental-income.md",
+      "topic": "subletting/business classification",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R18",
+      "file": "es-rental-income.md",
+      "topic": "employee-housing rent-withholding exclusion",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R19",
+      "file": "es-rental-income.md",
+      "topic": "same-payer annual900 rent-withholding exclusion",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R20",
+      "file": "es-rental-income.md",
+      "topic": "certified IAE nonzero-quota exclusion",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R21",
+      "file": "es-rental-income.md",
+      "topic": "Ceuta/Melilla19percent reduced60percent withholding",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R22",
+      "file": "es-rental-income.md",
+      "topic": "operator179 replacement by040/238",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "this closure / source-reread and reviewed baseline delta"
+    },
+    {
+      "id": "R23",
+      "file": "es-social-contributions.md",
+      "topic": "2025 solidarity historical comparative tables",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R24",
+      "file": "es-social-contributions.md",
+      "topic": "dated2026 contribution catchup/election windows",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R25",
+      "file": "es-social-contributions.md",
+      "topic": "RETA signed expense/refund/excess-income booking",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R26",
+      "file": "spain-payroll.md",
+      "topic": "short-term<=120day SMI",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R27",
+      "file": "spain-payroll.md",
+      "topic": "external household hourly SMI",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R28",
+      "file": "spain-payroll.md",
+      "topic": "qualified9hour daily maximum",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R29",
+      "file": "spain-payroll.md",
+      "topic": "continuous-day break",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R30",
+      "file": "spain-payroll.md",
+      "topic": "14 public holidays",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R31",
+      "file": "spain-payroll.md",
+      "topic": "Christmas extra-pay timing",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R32",
+      "file": "spain-payroll.md",
+      "topic": "IT percentages/payers/BR, operative process transitions",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R33",
+      "file": "spain-payroll.md",
+      "topic": "birth/care benefit",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R34",
+      "file": "spain-payroll.md",
+      "topic": "shared nursing-infant benefit",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R35",
+      "file": "spain-payroll.md",
+      "topic": "fixed-term expiry termination",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R36",
+      "file": "spain-payroll.md",
+      "topic": "employer death/retirement/incapacity termination",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R37",
+      "file": "spain-payroll.md",
+      "topic": "objective-dismissal notice",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R38",
+      "file": "spain-payroll.md",
+      "topic": "FOGASA scope and published limits",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R39",
+      "file": "spain-payroll.md",
+      "topic": "retirement-age IT contribution",
+      "status": "restored in frozen content; legal scope as report",
+      "review": "parallel same-head bounded review"
+    },
+    {
+      "id": "R40",
+      "file": "spain-payroll.md",
+      "topic": "ordinary descendant under25/disability eligibility",
+      "status": "restored and independently checked in social/payroll delta",
+      "review": "social-payroll-corrections-review.md SP01"
+    },
+    {
+      "id": "R41",
+      "file": "spain-payroll.md",
+      "topic": "LGSS142.2 employer missed employee-deduction bar on later recovery",
+      "status": "restored and independently checked in social/payroll delta",
+      "review": "social-payroll-corrections-review.md SP03"
+    }
+  ],
+  "retained_precise_pending": [
+    "2026 VAT simplified150k ordinary limbs versus prior250k extension and DT13ending2024",
+    "historic payroll severance/leave transitions",
+    "December special-IT detailed rate/day interactions",
+    "FOGASA published module versus statutory derivation"
+  ],
+  "files": [
+    {
+      "file": "skills/international/spain/es-autonomous-worker.md",
+      "old_words": 6802,
+      "new_words": 3355,
+      "old_bytes": 41442,
+      "new_bytes": 30586,
+      "shrink_percent": 26.2,
+      "sha256": "2dca12fd017ef796412f7ea73e6affb426f330307128c5b3897f0b7ce4eb6936",
+      "old_sha256": "4500ee91a693fbd1fca9fd5b0727a00475a0ddde81c7a2f8af2501b681610bf9",
+      "preserved": "Registration036/abolished037; full RETA category/control, generic7/3, final floor, rates and refund; starting relief durations/conditions; family collaboration; TRADE; territorial allocation; record books; professional15/7; instalments; business expenses and annual cash reconciliation retained or linked to calculation siblings.",
+      "removed_and_why": "Old computed-total prohibition and default guesses removed because they are unsupported workflow restrictions; company-worker universal salary classification corrected by art27. Old IGIC rates51–57 routed specifically to Not yet confirmed completeIGIC/IPSI computations, with source retained. Old personal filing baskets are in linked coreIRPF; forms347/720 require the more precise threshold treatment below.",
+      "restoration_or_explicit_pending_required": [
+        "Check that original347/720 threshold routing remains explicit: old autonomous430–433 supplied3005.06 third-party and50000foreign-asset block thresholds. Current registration/filing table omits both forms, and Not yet confirmed does not name them. These were sourced to RGAT33/42bis. Restore the original reporting gateways, with all actual exclusions, or list specifically unresolved."
+      ],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 99,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 6802,
+        "new_words": 3604,
+        "old_bytes": 41442,
+        "new_bytes": 32789
+      },
+      "final_word_shrink_percent": 47.02,
+      "restored_topics": [
+        "R01",
+        "R02"
+      ],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/es-beckham.md",
+      "old_words": 748,
+      "new_words": 2471,
+      "old_bytes": 4912,
+      "new_bytes": 21321,
+      "shrink_percent": -334.06,
+      "sha256": "b028e02fff942c0a20c5e649642ab1092bdb8d1b64c552c95eac3a92366d4e2e",
+      "old_sha256": "64237c38e0e37cc151980a71e100a28c5a1323354255695d41b92c7f2cf2e104",
+      "preserved": "Five prior nonresident years, six-year election duration,24/47 employment scale,600000boundary,149/151 and six-month application retained and materially corrected/expanded.",
+      "removed_and_why": "Old overseas employment exemption, worldwide foreign investment taxation,28%top savings,visa automatically confers election,qualified-investment-manager category and renunciation simplification were unsupported or contradicted current art93/RIRPF113–120. Preserve correction rationale, not those erroneous outcomes. Digital-nomad immigration20%client rule is not an IRPF rule and is outside Guide scope.",
+      "restoration_or_explicit_pending_required": [],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 117,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 748,
+        "new_words": 2471,
+        "old_bytes": 4912,
+        "new_bytes": 21321
+      },
+      "final_word_shrink_percent": -230.35,
+      "restored_topics": [],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/es-capital-gains.md",
+      "old_words": 5085,
+      "new_words": 2494,
+      "old_bytes": 31582,
+      "new_bytes": 21376,
+      "shrink_percent": 32.32,
+      "sha256": "fbefc01de7caad39319b5888e7246f0b2dd8e60e9ae041624b79b7b953668953",
+      "old_sha256": "f3a8492c3cf0dfa9cac176b840929284f89143de47ad25d2b63fb6ebc13f5eee",
+      "preserved": "Gain classification, ordinarybasis, rates, all loss pools/deferral windows, three home/annuity reliefs,DT9rates/400000lifetime cap and nonresident sale filing retained or expanded. DT9special2005securities value now corrects old automatic day-split.",
+      "removed_and_why": "Duplicated state/combined tables and methods consolidated. Old bare-ownership exemption evidence expressly listed unconfirmed. Historical2025campaign dates removed as redundant dated history; no2027dates invented.",
+      "restoration_or_explicit_pending_required": [
+        "Old nonresident property50%urban exemption for acquisitions12May–31Dec2012 is no longer quantified here or in IRNR sibling. Detailed legacy acquisition relief is generically flagged, but name this particular retained relief and acquisition dates explicitly or restore its conditional rule. OldIRNRDT9gateway should remain an explicit linked/unconfirmed method."
+      ],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 121,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 5085,
+        "new_words": 2819,
+        "old_bytes": 31582,
+        "new_bytes": 24530
+      },
+      "final_word_shrink_percent": 44.56,
+      "restored_topics": [
+        "R03",
+        "R04"
+      ],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/es-corporate-tax.md",
+      "old_words": 9350,
+      "new_words": 5261,
+      "old_bytes": 55329,
+      "new_bytes": 41671,
+      "shrink_percent": 24.69,
+      "sha256": "1ec4a17ddeefaf3af70ee8a9b8b43f2681133b8da3b8afcc28d5100cc5013658",
+      "old_sha256": "7dfdf2ef12154f4950d22ec78bf63629d81f30eb16f512afc4ce31a63ed0bbfb",
+      "preserved": "All ordinary rates/transitions, depreciation table, finance cap/carries, participation exemption, capitalisation/loss/levelling reserves, credits/donations,Ceuta,minimumtax,202instalments,ZECcaps and return exemptions retained; art104one-percent collective impairment is present at73.",
+      "removed_and_why": "Duplicate pipelines, invented-zero defaults, prohibition of derived percentages and removed numerical examples replaced with recomputing examples. Foral rates not proved by original sources remain excluded explicitly.",
+      "restoration_or_explicit_pending_required": [
+        "Old extra-cooperative results of credit cooperatives/rural savings banks30% at108 is shortened to separate rules at49. Restore that conditional30% row from LIS29.2 or name it specifically in pending specialist-regime scope; do not apply30% to all cooperative results."
+      ],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 113,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 9350,
+        "new_words": 5388,
+        "old_bytes": 55329,
+        "new_bytes": 43177
+      },
+      "final_word_shrink_percent": 42.37,
+      "restored_topics": [
+        "R05"
+      ],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/es-estimated-tax.md",
+      "old_words": 8186,
+      "new_words": 3355,
+      "old_bytes": 49336,
+      "new_bytes": 29351,
+      "shrink_percent": 40.51,
+      "sha256": "e1728babe09e0e1583b03a6d08dec1f117ff09bd8aff240a45f85de2a47b19af",
+      "old_sha256": "d6fa931e647bcc63695672abe5d61068c8ec051720fae4bfe7868e4389e59f59",
+      "preserved": "130/131 scope,70%activity exemption/start-year treatment,20/4/3/2rates,low-income100/75/50/25quarters,all signed formboxes,660.14route differences,module limits/order5%,youngfarmer25%,territorial rates,deadlines,payment/correction and partner-attribution preserved.",
+      "removed_and_why": "Bank merchant classifiers, repeated examples/tests and generic working-paper scaffolding removed; no independent legal rule lost from those repeats. Incorrect web-instruction660.14annual cap and reversed19subtraction corrected by regulation/gazette.",
+      "restoration_or_explicit_pending_required": [],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 102,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 8186,
+        "new_words": 3487,
+        "old_bytes": 49336,
+        "new_bytes": 30417
+      },
+      "final_word_shrink_percent": 57.4,
+      "restored_topics": [],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/es-income-tax.md",
+      "old_words": 5770,
+      "new_words": 8240,
+      "old_bytes": 37660,
+      "new_bytes": 64846,
+      "shrink_percent": -72.19,
+      "sha256": "30935f0e1a912f2e22edf6d6654d76452d577e3646a2be5d215afe00604e3223",
+      "old_sha256": "7ce66152e2d31f71fd5fee79aa82e21fed95af627208b55886d01d3194ea49c2",
+      "preserved": "Original self-employment assessment selection, expenses, complete simplified depreciation table,5%/2000/Ceuta10%,all general/savingsrates/minima/joint reductions,withholding/instalments,moduleconflict,thresholds and penalties retained with linked siblings; all15regional scales/minima newly supplied.",
+      "removed_and_why": "Unsafe defaults and restriction to state-only scale removed. Repeated identical2025/2026figures consolidated;2025campaign no longer substitutes for2026. Other ordinary computations remain partial as findings state.",
+      "restoration_or_explicit_pending_required": [],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 121,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 5770,
+        "new_words": 10151,
+        "old_bytes": 37660,
+        "new_bytes": 80883
+      },
+      "final_word_shrink_percent": -75.93,
+      "restored_topics": [],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/es-irpf-deductions.md",
+      "old_words": 3477,
+      "new_words": 43477,
+      "old_bytes": 22699,
+      "new_bytes": 378234,
+      "shrink_percent": -1566.3,
+      "sha256": "afbc491821a83c315a1a0428af3ef08133e475f045ee050e3b2b80a61be27015",
+      "old_sha256": "c0cf916416d60558fbd6e021fa36fb9286713b1ad4e7cdcd167d84041b529ea7",
+      "preserved": "All fifteen originally named regional catalogues replaced with article-based current catalogues, pending interactions retained; national additions reviewed independently in closure. Family/home/gift/investment subject classes represented at much greater depth.",
+      "removed_and_why": "Old339total and per-region counts, approximate boxranges, unsupported30%Madrid1000cap/600birth amounts, generic environmental gift and foral coverage claims removed or corrected to current law; duplicate regional headings eliminated. Foral/Ceuta gaps explicit.",
+      "restoration_or_explicit_pending_required": [],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 112,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 3477,
+        "new_words": 43651,
+        "old_bytes": 22699,
+        "new_bytes": 380338
+      },
+      "final_word_shrink_percent": -1155.42,
+      "restored_topics": [],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/es-modelo-111.md",
+      "old_words": 2477,
+      "new_words": 2823,
+      "old_bytes": 15270,
+      "new_bytes": 24163,
+      "shrink_percent": -58.24,
+      "sha256": "a4785209c71ab650b1575554e31046217ee7d6aeba5a4758040b76316c3bc66d",
+      "old_sha256": "c8bd9712165c1f3bf04c43511983b461d77a384d8eda8cb76e0f1baa8d2a24f3",
+      "preserved": "Payer/payment scope,professional15/7conditions,employment/director/agriculture/artists/categories,cash/in-kind bases,111recipientcounts/boxes,190certificates,negative-return and correction procedures retained and corrected to current RIRPF.",
+      "removed_and_why": "Old industrial-property15%blanket,companies never withhold,foreignpayers neverwithhold,certificateFeb1,firstprior economic activity rather thanprofessional,emptyregisteredzero-return and130January20deadline corrected under specific primary rules. Duplicated sampleinvoice/method/example boilerplate consolidated.",
+      "restoration_or_explicit_pending_required": [],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 115,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 2477,
+        "new_words": 2823,
+        "old_bytes": 15270,
+        "new_bytes": 24163
+      },
+      "final_word_shrink_percent": -13.97,
+      "restored_topics": [],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+      "old_words": 3469,
+      "new_words": 3250,
+      "old_bytes": 27848,
+      "new_bytes": 27570,
+      "shrink_percent": 1.0,
+      "sha256": "68398f7a875aa8d3e0267f46480b429a7ef5732fc74ed96facaaaa5f09a1038b",
+      "old_sha256": "9018dbc63c09eaa0ffecc641273c7741a1ca5f5ba34e630e554d4f14874877ab",
+      "preserved": "183day/economiccentre/familypresumption,treatyresidence gateway,rate/base distinction,EU/EEAexpenses,ownuse cadastral methods,all2026income/filingtransition populations retained; PE/pension/exit calculations added.",
+      "removed_and_why": "Original conflictingquarterly/annualgrouping shorthand replaced bycurrentorder. Generic treatysequence properly contingent on actualtreaty; duplicate183/184wording consolidated.",
+      "restoration_or_explicit_pending_required": [
+        "Original92/109special1.5%reinsurance and4%shipping/airtouchingSpain rates disappear. Restore under art25.1.d/e or explicitly listthese specialisttaxpayer classes unconfirmed.",
+        "Original117timeshare imputation exception disappears. Restore operative art85.3 pro-rata and no-imputation for duration no more than two weeks/year; correct originalunder-two-weeks boundary.",
+        "Original73foreignresidencecertificate one-year validity and residencecultural/humanitarian exclusion are absent. Restore with operative conditions or specifically list unresolved."
+      ],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 119,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 3469,
+        "new_words": 3712,
+        "old_bytes": 27848,
+        "new_bytes": 32541
+      },
+      "final_word_shrink_percent": -7.0,
+      "restored_topics": [
+        "R06",
+        "R07",
+        "R08",
+        "R09"
+      ],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/es-rental-income.md",
+      "old_words": 8558,
+      "new_words": 2988,
+      "old_bytes": 57187,
+      "new_bytes": 27088,
+      "shrink_percent": 52.63,
+      "sha256": "806d67778caa192eccc98184a6ea6be240fd4415b50d2605603fb2235f227231",
+      "old_sha256": "1433599fe485b27f9db90fda707aff5b9ca8efcbb2fdf4c2cf4bb12458df9dbd",
+      "preserved": "Income/expense categorisation,interest/repairpropertycap/fouryearcarry,baddebts,3%building/10%furniture/inheritance/lifetimebasis,relativefloor,partialuse,IRNRroute,housingold60/newpreserved90/70/60/50 and newDecemberladder retained;no wrong2027imputation backdate.",
+      "removed_and_why": "Bank pattern tables and inheritedworkedexample2448/81600 replaced by a new example testing samebasis mechanism. Unsourced automatic kitchen/bathcapitalclassification and ordinary minimumdepreciation1%not needed to retain as confirmed rules.2025campaign dates and duplicate state-only scale removed in favour of coreIRPF.",
+      "restoration_or_explicit_pending_required": [
+        "Original115–118subletting/businessletting distinction is not carried: sublessor income is art25.4.c capitalmovable unlessactivity; landlordshare remains propertyincome and no23.2housingreduction. Restore or explicitly listthe classification unresolved.",
+        "Original386–394subjecturbanrent exemptions900annualsamepayer,employeehousing and certified IAE861/nonzeroquota disappear behind general reference. Restore conditions under RIRPF75.3.g. Original387Ceuta/Melilla60%withholdingcut (derived7.6%) also needs explicit retention under RIRPF100.",
+        "Original413platformreporting179endedfrom2024,040registration/238reporting disappears. Restore dated operator-specific routing or listthe history precisely unconfirmed; this is not a landlords own238return."
+      ],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 124,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 8558,
+        "new_words": 3251,
+        "old_bytes": 57187,
+        "new_bytes": 29668
+      },
+      "final_word_shrink_percent": 62.01,
+      "restored_topics": [
+        "R17",
+        "R18",
+        "R19",
+        "R20",
+        "R21",
+        "R22"
+      ],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/es-social-contributions.md",
+      "old_words": 6478,
+      "new_words": 5106,
+      "old_bytes": 41276,
+      "new_bytes": 43681,
+      "shrink_percent": -5.83,
+      "sha256": "d31e35910a44c1b029e6c3613088fe512fd8a8e859aea481548b55b06bdf6e23",
+      "old_sha256": "b6f79310ea62b9da7332016d13766485927f84ab86d0ac4c2856567ed8cd184e",
+      "preserved": "All2026RETA/employee bases/rates/solidarity,2025max/MEI/pluriactivity/specialfloor,daymethod/control/category,changes,regularisation,startingfee/family/citybonuses,collection,RETAIT/cessationbenefit and newparttime/suspensionmethods retained.",
+      "removed_and_why": "Cash merchant pattern library replaced with evidence-basedidentification. Unsupportedcombined-rate ban removed;dayaverage corrected. Older2025boxnumbers not reused as2026boxes.",
+      "restoration_or_explicit_pending_required": [
+        "Original239–2412025solidarity thresholds4909.51/5400.45/5400.46/7364.25 and total0.92/1/1.17 with employer/employee splits removed fromthe2025historytable. Restore exactly as2025 under OrderPJC178/2025art17 or explicitly retain asunconfirmed historicalcorrectionwork.",
+        "Original2026retroactive-order catch-up windows250–255 disappear. Restore period-specific closed deadline history under2026ordertransitions or listthese oldassessmentwindows unconfirmed.",
+        "OriginalRETArefundbooking374–382higherexpenseforamountpaid,reductionofexpenseforrefund,excessrefundasactivityincome is shortened to yearsettled only at187. Restore the signs/expensevsincome mechanics from linkedAEATguidance; do not revive obsolete2025boxnumbers as2026."
+      ],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 107,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 6478,
+        "new_words": 6961,
+        "old_bytes": 41276,
+        "new_bytes": 60159
+      },
+      "final_word_shrink_percent": -7.46,
+      "restored_topics": [
+        "R23",
+        "R24",
+        "R25"
+      ],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/es-vat-return.md",
+      "old_words": 11479,
+      "new_words": 4102,
+      "old_bytes": 69414,
+      "new_bytes": 37324,
+      "shrink_percent": 46.23,
+      "sha256": "2b4f24ca126a598029f248cb90fd1e41ebe4fbaebd7e425e736ca32c762fdeb5",
+      "old_sha256": "3177f1cdb489c9dd1c24129f2bc5aea1f968d5f9c5197af3341a104b37b4042b",
+      "preserved": "Ordinaryscope/devengo/rates,all ordinary303mapping,reversecharge/imports/businessuse/vehicles/blocks,invoice400/3000,prorrata/investmentadjustment,annualcredit/refund,349/390/SII anddeductionclocks retained/corrected; datedenergy/housingchanges added.",
+      "removed_and_why": "Merchant-specific billingentity/VAT guesses,unsupported Excel layout/colours and duplicate examples removed. Unsupporteddefault taxcountry/rate and allfinancialfeesexempt presumptions correctlyremoved. Several original stale303aliases in other sibling corrected, not retained.",
+      "restoration_or_explicit_pending_required": [
+        "Original49–53recargo5.2/1.4/0.5/1.75 and agriculturalcompensation12 disappear; restore supported rates and correct scope usingLIVA161/130(12agri/forestry,10.5livestock/fishing) or explicitly listspecialregimecalculations asunconfirmed.",
+        "Original536advertisingobjects200recipientannualthreshold disappears. Restoreart7.4conditions including redistributionexception; this is not auniversal gift-deductionallowance.",
+        "Original785/786two different10000thresholds disappear behindcross-borderconsumer/placeheading. Restore conditional combinedEUdistancegoods/TBEthreshold art73and specified exempt/farmer/nonbusinessperson AICthreshold art14, keepingconditionsseparate.",
+        "Original787cash-scheme2mturnoverlimit and788simplifiedregime150000priorincome limit disappear. Restore currentconditions plustransitionconflict or specificallynamethese unconfirmedregimes; actualcash-schemereporting62/63/74/75 also needs routing."
+      ],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 105,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 11479,
+        "new_words": 6000,
+        "old_bytes": 69414,
+        "new_bytes": 53577
+      },
+      "final_word_shrink_percent": 47.73,
+      "restored_topics": [
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16"
+      ],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/spain-crypto-tax.md",
+      "old_words": 3592,
+      "new_words": 3431,
+      "old_bytes": 22709,
+      "new_bytes": 29306,
+      "shrink_percent": -29.05,
+      "sha256": "9533a3e6d989df94227b38aa3d5d0c9878f9ed3896645962ff8bff78991b0368",
+      "old_sha256": "43614410e49699006f863873a3b0f6a6b6d7fe3408b5b7e6c0d4b51671e4c462",
+      "preserved": "FIFOglobalfeehandling,swaps,stakingandotherrewardclassification,nontransfergeneralpool,mining,foreigncustody721threshold/deadline/re-reporting,172/173,records/lossesretained/corrected. FullDGTresponses wereindependentlyread inbaseline.",
+      "removed_and_why": "Unsupportedoccasionalmining/simplesignupairdrop/NFTroyaltyuniversalclassifications and cryptoexit4mclaim correctedor preciselyunconfirmed; stale7215000/datum and1–20%latefigures replacedbycurrentLGT. Wrongcombinedgeneralscale removedforactualregion. Genericwealthtaxheadlines areroutedtospecialistregime, not treatedas verifiedcryptoexemptions.",
+      "restoration_or_explicit_pending_required": [],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 102,
+      "tax_year_integer_2026": true,
+      "category": "crypto",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 3592,
+        "new_words": 3431,
+        "old_bytes": 22709,
+        "new_bytes": 29306
+      },
+      "final_word_shrink_percent": 4.48,
+      "restored_topics": [],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/spain-payroll.md",
+      "old_words": 11290,
+      "new_words": 3930,
+      "old_bytes": 69522,
+      "new_bytes": 34007,
+      "shrink_percent": 51.08,
+      "sha256": "a7708463e479017d001ed2148c71d71aaa3d87e92614128860fda8b1147347b1",
+      "old_sha256": "24fabb7461e169291206d64d86013e30825af6698dd3d12f31b29a6b86ceac5a",
+      "preserved": "All ordinary2026withholdingformula/rates/minima/incomereductions,forecast/recalculation,payincash/in-kind,contribution/solidarityhandoff,SMI,extras,ordinaryleave/overtime,severance20/33andlimits,recordarchive,111/190/certificate/settlementpreserved.",
+      "removed_and_why": "Bankdescriptionlists,duplicateprohibitions and prohibitionofderivedrates removed. Originalmisleadingworkreductioncomparison andmonthlymanualscale corrected. Historicalseverance/leave transitions specificallylistedunconfirmed, so their omissionis disclosed rather than silent.",
+      "restoration_or_explicit_pending_required": [
+        "Original296/297SMI57.82perlegaldayshortterm<=120days and9.55externaldomestichour missing. RestoreRD126/2026art4conditions or namespecificexcludedtaxpayertypes.",
+        "Original311/313/315ordinary9hourqualifieddailymaximum,15minbreakafter6continuoushours,14paidpublicholidays shortened to qualifiedrules. Restore values/exceptions underET34/37.2. Christmasextra-paytiming underET31also shouldremain explicit.",
+        "Original349–379employeeIT60/75ratesand100%donation/birth/infantcarebenefits/regulatorybaserules lost; RETA companion preservescommonIT rates but notall employeeevents. Restore currentLGSS169/172/173/179/185methods withdatecutovers, or individuallynamespecialawardsunconfirmed.",
+        "Original392/393fixed-term12days/year andemployerdeath/retirement/incapacityonemonthpay disappear; restoreET49.1.c/gconditions. Originalobjective15daynotice shouldalsoremain explicit.",
+        "Original398–408FOGASAbenefit capframework/published2026figures94.78/11373.60/34594.70 disappear. FreshFAQsupportsthepublishednumbers; recordratherthan silentlyderive them from40.70SMI, becausederivationdoesnotreconcile. Restoreformulas andpreciselyflagunresolvedarithmetic.",
+        "Original273postpensionageIT1.55split1.30/0.25 isabsent. Restoreonlyaftercheckingthe2026ordereligibility/exemptions or specificallynameasunconfirmedretirementcontributionroute."
+      ],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 115,
+      "tax_year_integer_2026": true,
+      "category": "payroll",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 11290,
+        "new_words": 5341,
+        "old_bytes": 69522,
+        "new_bytes": 46124
+      },
+      "final_word_shrink_percent": 52.69,
+      "restored_topics": [
+        "R26",
+        "R27",
+        "R28",
+        "R29",
+        "R30",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R35",
+        "R36",
+        "R37",
+        "R38",
+        "R39"
+      ],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/spain-transfer-pricing.md",
+      "old_words": 1588,
+      "new_words": 2850,
+      "old_bytes": 9664,
+      "new_bytes": 22798,
+      "shrink_percent": -135.91,
+      "sha256": "4c67686850ae6c8a3d40d211f545882d7a96683b64ac335e6545405ded9e4688",
+      "old_sha256": "3596c52d4df2aa40d90666fcadaf5a5a659aa82bc6f12f6e15913463e3e94430",
+      "preserved": "Relationships,methods/documentation/232/231thresholds,deadlines,APAandsafeharbourclassification,documentationpenaltiesandseparateinformationfiling allretainedor corrected. Ordinaryspecifictransactiontests strengthened.",
+      "removed_and_why": "Unsupportedsecretdcomparablesban,CUPpreference,noncooperative20%penalty,professional75%wrongdenominator and5%servicesbenchmark notretainedaslaw. PublicCbCRspeculationispreciselyunconfirmed. DuplicateSafeHarboursheading/genericrecentdevelopments removed.",
+      "restoration_or_explicit_pending_required": [],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 116,
+      "tax_year_integer_2026": true,
+      "category": "transfer-pricing",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 1588,
+        "new_words": 3370,
+        "old_bytes": 9664,
+        "new_bytes": 27927
+      },
+      "final_word_shrink_percent": -112.22,
+      "restored_topics": [],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    },
+    {
+      "file": "skills/international/spain/spain-vat-return.md",
+      "old_words": 8158,
+      "new_words": 2194,
+      "old_bytes": 50606,
+      "new_bytes": 19385,
+      "shrink_percent": 61.69,
+      "sha256": "940b0c63ec2289585597e86295e19275e682d775cf110132f446a80eecc60fbe",
+      "old_sha256": "44556c993974a48c3c16197339f1b6db0cfcaa6e271fb1b98a0d841c039bdc70",
+      "preserved": "Reviewroute linkscanonicalVATcomputationandpreservestransactioncash/withholdingreconciliation,correct303mapping,reversecharge/businessinput/prorratacontrols,SII/349/390 and creditclocks;2independentexamplesnowtestannualrecovery.",
+      "removed_and_why": "Large duplicate merchantmatrix/Excelworkpaper,unsupportedcliententertainmentdefaults and wrong303boxes/5%superreducedspreadsheetformula replacedwithcurrentlaw. Canonicalroute mustcarrytheverifiedVATtopicslistedfor es-vat-return; duplication neednotberestored.",
+      "restoration_or_explicit_pending_required": [],
+      "nine_authored_h2": true,
+      "examples": 2,
+      "description_words": 106,
+      "tax_year_integer_2026": true,
+      "category": "international",
+      "content_loss_restored_by_this_review": 0,
+      "final_metrics": {
+        "old_words": 8158,
+        "new_words": 2511,
+        "old_bytes": 50606,
+        "new_bytes": 22630
+      },
+      "final_word_shrink_percent": 69.22,
+      "restored_topics": [],
+      "baseline_pending_requirements_reconciled": "All baseline named missing topics now restored in supplied IDs or exact unresolved specialist/source-version entries; simplified2026 extension and historic transitions are not asserted closed."
+    }
+  ],
+  "additional_current_review_findings": [
+    "SP01 ordinary descendant eligibility remained omitted at9784",
+    "SP03 LGSS142.2 missed-deduction consequence remained omitted at9784"
+  ],
+  "parallel_restored_17_topics_confirmed": true,
+  "future_after_SP01_SP03_restoration_total": 41,
+  "historical_head": "9784b7b45b9ed5bef2d618b2fe9786fe4faa6e9c",
+  "scope_note": "Historical39-family no-loss ledger plus two disjoint independently confirmed payroll restorations. Later ordinary expansions are not counted as lost topics."
+}

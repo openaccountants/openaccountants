@@ -1,0 +1,13 @@
+{
+  "verdict": "BOUNDED PASS exact autonomous-worker pair; no whole-country verdict",
+  "guide_sha256": "4b71a29c11cd45f3c998ad358b598e545f8b49289c0a6c27a4e793c8bf084ef9",
+  "ledger_sha256": "d3e3ea646a7b3eab90d772ea5301c939929e14047a1057353586347db29c4555",
+  "rows_actual_read": 223,
+  "quoted_anchors": 115,
+  "rehashed_pairs": 27,
+  "empty_failed_pairs": 1,
+  "own_controls": 53,
+  "oa_blocks": 2,
+  "finding": "None new",
+  "report_sha256": "6392646ad4af0d15202079d735df7507efeed50439373da42362203828d2ace8"
+}

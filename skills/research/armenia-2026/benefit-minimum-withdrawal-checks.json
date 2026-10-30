@@ -1,0 +1,69 @@
+{
+  "checked_utc": "2026-10-26T21:47:00.555Z",
+  "kind": "writer validation after withdrawal of unconfirmed numeric benefit minimum",
+  "checks": [
+    {
+      "check": 0,
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "7c7a56",
+          "wall_time_seconds": 0.101117084,
+          "exit_code": 0,
+          "original_token_count": 15,
+          "output": "checked 12 files, 88 oa-check blocks, 0 failures, 0 missing\n"
+        }
+      }
+    },
+    {
+      "check": 1,
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "4228f1",
+          "wall_time_seconds": 0.356868584,
+          "exit_code": 0,
+          "original_token_count": 21,
+          "output": "Sync integrity checked 10 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n"
+        }
+      }
+    },
+    {
+      "check": 2,
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "301a07",
+          "wall_time_seconds": 0.235261333,
+          "exit_code": 0,
+          "original_token_count": 49,
+          "output": "changed-only mode: validating 51 changed guide file(s)\nchecked 10 guides (26 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n"
+        }
+      }
+    },
+    {
+      "check": 3,
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "b072cd",
+          "wall_time_seconds": 0.130523584,
+          "exit_code": 0,
+          "original_token_count": 115,
+          "output": "## codex/armenia-country-recovery-2026...origin/main [ahead 2]\n M skills/international/armenia/README.md\n M skills/international/armenia/am-tax-overview.md\n M skills/international/armenia/armenia-payroll.md\n M skills/research/armenia-2026/preservation-check.json\n M skills/research/armenia-2026/recovered-candidate-validation.json\n M skills/research/armenia-2026/recovered-review-delta.md\n M skills/research/armenia-2026/supplementary-examples.md\n?? resp.txt\n"
+        }
+      }
+    }
+  ],
+  "core_examples": 14,
+  "supplementary_examples": 74,
+  "original_controls_unchanged": 51,
+  "protected_metadata_and_cta_sets": 8,
+  "partial_domains": [
+    "PR",
+    "XB"
+  ],
+  "independent_delta_review": "pending",
+  "country_complete": false,
+  "published": false
+}

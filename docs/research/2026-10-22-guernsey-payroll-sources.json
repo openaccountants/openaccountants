@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Employer webpage",
+    "url": "https://gov.gg/employers",
+    "as_of": "2026-10-22",
+    "sha256": "6b0b689af0d4aa1a0ca49698c5020cb9a2d674a293077dcd6b434a45434f9378"
+  },
+  {
+    "title": "Contribution classification guidance",
+    "url": "https://gov.gg/SScontributions",
+    "as_of": "2026-10-22",
+    "sha256": "6e3fcb00be4719097d85e33b83c4252575d279119889aa7ca525a76ca3c0c651"
+  },
+  {
+    "title": "2026 rates leaflet",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=102818&p=0",
+    "as_of": "2026-10-22",
+    "sha256": "13a281fd677cf34db87d0c6782e047d9ad1ca7639f3bd5cb007acb4a9dde94bb"
+  },
+  {
+    "title": "Employer Guide 2025",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=175677&p=0",
+    "as_of": "2026-10-22",
+    "sha256": "3c7e9c4521a43152e2ca19c9844f80314a71e804f3d8539b87556584a079e7dc"
+  },
+  {
+    "title": "SIC1 published 22 December 2025",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=196680&p=0",
+    "as_of": "2026-10-22",
+    "sha256": "f58a611b5974bb82cb1418924455295e4776a575957d0d1404b7a87cc787d56e"
+  },
+  {
+    "title": "Benefits in Kind Guide 2026",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=202739&p=0",
+    "as_of": "2026-10-22",
+    "sha256": "29f22fdc6ed75c15256a4784dfdd4e6a8505420fcd08cdbab5e772117d2459e8",
+    "locators": "Sections 1\u201312; SoP E4, E12, E13, E35, E38, E46, E48"
+  }
+]

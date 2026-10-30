@@ -1,0 +1,44 @@
+[
+  {
+    "from": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/clm-current.html",
+    "copy": "sources/clm-current.html",
+    "bytes": 379179,
+    "sha256": "47a4a4fd780c2ee26b6436c4a50aedad4307e86ac0e1c32d82bc1c9369410a01",
+    "status": "Actual retained full source body copied exactly; independently reading operative provisions in this phase."
+  },
+  {
+    "from": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/clm-original-law2-2021.html",
+    "copy": "sources/clm-original-law2-2021.html",
+    "bytes": 338404,
+    "sha256": "ce1ad532d70d003648ce386392ee97617eb0e6dabe6fdc283e202542a9c460d1",
+    "status": "Actual retained full source body copied exactly; independently reading operative provisions in this phase."
+  },
+  {
+    "from": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/clm-law1-2026.html",
+    "copy": "sources/clm-law1-2026.html",
+    "bytes": 130927,
+    "sha256": "bb8446891b9e1d78c56bebcd81ca37099804917a320cd14a2343f00c6e0ea7b5",
+    "status": "Actual retained full source body copied exactly; independently reading operative provisions in this phase."
+  },
+  {
+    "from": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/aeat-clm2025.html",
+    "copy": "sources/aeat-clm2025.html",
+    "bytes": 12409,
+    "sha256": "26ce6211b5540c92659ffb6afd5b056c323fbc85490e9e9d0dd67a9c65c512a7",
+    "status": "Actual retained full source body copied exactly; independently reading operative provisions in this phase."
+  },
+  {
+    "from": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current.html",
+    "copy": "sources/lirpf-current.html",
+    "bytes": 2028806,
+    "sha256": "e4bef365a0df16c0f30cd858c31dbdccefb2fe0a59113924d03b967e60857fa4",
+    "status": "Actual retained full source body copied exactly; independently reading operative provisions in this phase."
+  },
+  {
+    "from": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/DOCM-Law1-2026.pdf",
+    "copy": "sources/DOCM-Law1-2026.pdf",
+    "bytes": 454855,
+    "sha256": "91b8c33af6b79496dfcd4bf61a0e1a7d530e9fc1e1200c55c4cce4da423e902b",
+    "status": "Actual retained full source body copied exactly; independently reading operative provisions in this phase."
+  }
+]

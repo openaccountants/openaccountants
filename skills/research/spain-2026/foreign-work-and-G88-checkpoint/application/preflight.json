@@ -1,0 +1,61 @@
+{
+  "as_of": "2026-10-28T09:41:00.838704+00:00",
+  "baseline_head": "dce27934c2f2105469f3aecf2f6539682fb76232",
+  "origin_main": "73f566473aaab8cda1e1a28c0fb8a9c3cd6f7dd0",
+  "before29_hashes": {
+    "README.md": "6093646998039397e0f8c64d50bb05142845ceabb62205247f4a5c3acf8b4d9a",
+    "es-autonomous-worker.md": "f66e5c8fa560153a9d359138b172565b12974be378fab14212b243ee7fb8da36",
+    "es-beckham.md": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+    "es-canary-islands-igic.md": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+    "es-capital-gains.md": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+    "es-ceuta-melilla-ipsi.md": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+    "es-corporate-tax.md": "66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4",
+    "es-estimated-tax.md": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+    "es-foral-corporate-tax.md": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+    "es-foral-income-tax.md": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+    "es-foral-non-resident-tax.md": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+    "es-foral-payroll.md": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+    "es-income-tax.md": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+    "es-irpf-deductions.md": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+    "es-modelo-111.md": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+    "es-non-resident-income-tax-irnr-and.md": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+    "es-rental-income.md": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+    "es-social-contributions.md": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+    "es-vat-return.md": "d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3",
+    "references.md": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+    "spain-bookkeeping.md": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+    "spain-crypto-tax.md": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+    "spain-einvoice.md": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+    "spain-financial-statements.md": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+    "spain-formation.md": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+    "spain-payroll.md": "89de80b5558648018020a803fd139685ac92d4908d6f72b1007e84626598d77a",
+    "spain-tax-optimization.md": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+    "spain-transfer-pricing.md": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+    "spain-vat-return.md": "70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2"
+  },
+  "review_identities": [
+    {
+      "role": "scope-delta",
+      "report": "spain-foreign-work-exemption-independent-review/report.md",
+      "report_sha256": "761d0449d2324ecb62784dcb11499447df5903228121078da5f0bccedd6b2763",
+      "manifest": "spain-foreign-work-exemption-independent-review/artifact-manifest.json",
+      "manifest_sha256": "d386ec9708e1fbfea29d471a3c6ec4c36af3dcfbe6797b3226722304d2ce4b40",
+      "members_verified": 104
+    },
+    {
+      "role": "frozen-whole-pack-needs-fixes",
+      "report": "spain-fresh-pack-review-bafc0f62/phase2/report.md",
+      "report_sha256": "8f4dfaf87ea07adb1a858dc93d032a2737f11483c31132939fa230ab03303102",
+      "manifest": "spain-fresh-pack-review-bafc0f62/phase2/final-manifest.json",
+      "manifest_sha256": "4a12405a753ed00855d4e500fd881216753deeccef69f6bdf2cca96be4dce166",
+      "members_verified": 35
+    }
+  ],
+  "archive": {
+    "original_files": 445,
+    "unique_blobs": 258,
+    "all_roundtrip_hashes_match": true
+  },
+  "country_ready": false,
+  "pushed": false
+}

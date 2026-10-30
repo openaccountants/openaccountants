@@ -19,7 +19,7 @@ SPDX-License-Identifier = "AGPL-3.0-only"
 # --- Tax Guides and their machine-readable exports → OA Guide License ---
 # Source-available; commercial embedding / RAG / model-training / bulk
 # redistribution require a commercial licence. See
-# LICENSES/LicenseRef-OA-Guide-License-1.0.txt.
+# LICENSES/LicenseRef-OA-Guide-License-2.0.txt.
 #
 # CAVEAT (counsel to resolve): some Guides under packages/ incorporate
 # third-party AGPL-3.0 / GPL-3.0 material and may NOT be validly relicensed
@@ -40,4 +40,4 @@ path = [
 ]
 precedence = "override"
 SPDX-FileCopyrightText = "2026 Glimpse Ltd and Open Accountants contributors"
-SPDX-License-Identifier = "LicenseRef-OA-Guide-License-1.0"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-2.0"

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="BOE-A-2013-3362 Orden ESS/484/2013, de 26 de marzo, por la que se regula el Sistema de remisión electrónica de datos en el ámbito de la Seguridad Social." />
+    <title>BOE-A-2013-3362 Orden ESS/484/2013, de 26 de marzo, por la que se regula el Sistema de remisión electrónica de datos en el ámbito de la Seguridad Social.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/consolidada.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/act.php?id=BOE-A-2013-3362"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2013-3362" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#date_document" content="2013-03-26" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#number" content="ess484" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/397"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1508"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5703"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5923"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6499"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6876"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7894"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2013-3362" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#date_document" content="2013-03-26" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#number" content="ess484" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/397"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1508"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5703"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5923"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6499"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6876"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7894"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden ESS/484/2013, de 26 de marzo, por la que se regula el Sistema de remisión electrónica de datos en el ámbito de la Seguridad Social." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2013-03-28" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/epub"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/epub" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/epub" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/epub" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/cat"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat" property="http://data.europa.eu/eli/ontology#title" content="Ordre ESS/484/2013, de 26 de març, per la qual es regula el Sistema de remissió electrònica de dades en l&#039;àmbit de la Seguretat Social." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat" property="http://data.europa.eu/eli/ontology#date_publication" content="2013-03-28" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/cat"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/glg"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg" property="http://data.europa.eu/eli/ontology#title" content="Orde ESS/484/2013, do 26 de marzo, pola que se regula o Sistema de remisión electrónica de datos no ámbito da Seguridade Social." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg" property="http://data.europa.eu/eli/ontology#date_publication" content="2013-03-28" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof/glg"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2013-3362" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#date_document" content="2013-03-26" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#number" content="ess484" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/397"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1508"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5703"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5923"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6499"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6876"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7894"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#version_date" content="2018-03-06" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden ESS/484/2013, de 26 de marzo, por la que se regula el Sistema de remisión electrónica de datos en el ámbito de la Seguridad Social." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20180306/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2013-3362" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#date_document" content="2013-03-26" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#number" content="ess484" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/397"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1508"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5703"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5923"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6499"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6876"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7894"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#version_date" content="2013-03-28" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden ESS/484/2013, de 26 de marzo, por la que se regula el Sistema de remisión electrónica de datos en el ámbito de la Seguridad Social." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2013/03/26/ess484/con/20130328/spa"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="act.php?lang=es&amp;id=BOE-A-2013-3362&amp;tn=1&amp;p=" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="act.php?lang=ca&amp;id=BOE-A-2013-3362&amp;tn=1&amp;p=" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="act.php?lang=gl&amp;id=BOE-A-2013-3362&amp;tn=1&amp;p=" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="act.php?lang=eu&amp;id=BOE-A-2013-3362&amp;tn=1&amp;p=" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="act.php?lang=va&amp;id=BOE-A-2013-3362&amp;tn=1&amp;p=" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="act.php?lang=en&amp;id=BOE-A-2013-3362&amp;tn=1&amp;p=" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="act.php?lang=fr&amp;id=BOE-A-2013-3362&amp;tn=1&amp;p=" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>
+        <li class="destino">Documento consolidado BOE-A-2013-3362</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<div class="titulo-wrapper">
+  <h2>Legislación consolidada<img class="tooltipimg" src="/imagenes/msg_info.png" alt="(información)"/><span class="tooltiptext">Este texto consolidado es de carácter informativo y no tiene valor jurídico.<br/>La consolidación consiste en integrar en un solo texto, sin valor oficial, las modificaciones, correcciones y derogaciones de carácter expreso que una norma ha tenido desde su origen, con el objetivo de facilitar el acceso al Derecho vigente. Para fines jurídicos, debe consultarse la publicación oficial.</span></h2>
+  <div class="puntoAyuda">
+    <a href="/buscar/ayudas/legislacion_actualizada.php">
+      <span class="pc tablet">Ayuda</span>
+    </a>
+  </div>
+</div>
+<div id="barraSep" class="enlacesDoc">
+  <h3 class="documento-tit">Orden ESS/484/2013, de 26 de marzo, por la que se regula el Sistema de remisión electrónica de datos en el ámbito de la Seguridad Social.</h3>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl class="conso">
+        <dt>Publicado en:</dt>
+        <dd><abbr title="Boletín Oficial del Estado">«BOE»</abbr> <abbr title="número">núm.</abbr> 75, de 28/03/2013.</dd>
+        <dt>Entrada en vigor:</dt>
+        <dd>01/04/2013</dd>
+        <dt>Departamento:</dt>
+        <dd>Ministerio de Empleo y Seguridad Social</dd>
+        <dt>Referencia:</dt>
+        <dd>
+          <a href="/buscar/doc.php?id=BOE-A-2013-3362">BOE-A-2013-3362</a>
+        </dd>
+        <dt>Permalink ELI:</dt>
+        <dd>
+          <a href="https://www.boe.es/eli/es/o/2013/03/26/ess484/con">https://www.boe.es/eli/es/o/2013/03/26/ess484/con</a>
+        </dd>
+      </dl>
+    </div>
+    <div class="redaccion">
+      <label for="activar-versiones">
+        <span class="etiqDoc">Seleccionar redacción: </span>
+      </label>
+      <div class="dropdown">
+        <input id="activar-versiones" type="checkbox"/>
+        <label class="version-actual" for="activar-versiones" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones">
+          <span>Última actualización publicada el 06/03/2018</span>
+        </label>
+        <ul id="lista-versiones">
+          <li>
+            <a class="version-selected" href="?id=BOE-A-2013-3362&amp;tn=1&amp;p=20180306">Última actualización publicada el 06/03/2018</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2013-3362&amp;tn=1&amp;p=20130328">Texto inicial publicado el 28/03/2013</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="enlaces-conso">
+      <li class="puntoPDF2">
+        <a target="_blank" title="Abre el PDF en una nueva ventana" href="/buscar/pdf/2013/BOE-A-2013-3362-consolidado.pdf">PDF</a>
+      </li>
+      <li class="puntoEpub">
+        <a target="_blank" href="/buscar/epub/2013/BOE-A-2013-3362-consolidado.epub">ePUB</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="/js/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+<script src="/djrae/_js/jquery.djRAE.js?rnd=574"></script>
+<link   rel="stylesheet" type="text/css" href="/djrae/lib/jquery.djRAE.css" />
+
+<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/djrae/lib/jquery.djRAE_ie8.css" />
+<![endif]-->
+	
+<div id="barra_dj">
+	<form name="frm_search_dj" action="/djrae/execute_service.php" target="_blank" method="GET">
+		<a class="logo-video" title="Ver v&iacute;deo sobre el Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico" href="https://youtu.be/7W_GfHGjVrw" target="_blank"><span class="fuera">Vídeo tutorial sobre Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico de la Real Academia Espa&ntilde;ola</span></a>
+		<a href="https://dpej.rae.es/" title="Ir a la web del Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico (DPEJ)" target="_blank"><div class="icon_dj"><span class="fuera">Ir a la web del Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico (DPEJ)</span>&nbsp;</div></a>
+		<label class="azul_dj" for="caja-busqueda-djrae"><span class="fuera">Introducir t&eacute;rmino a buscar en el </span>
+		<span class="pc tablet">Diccionario Panhisp&aacute;nico del Espa&ntilde;ol <span class="rojo_dj">J</span>ur&iacute;dico</span>
+		</label>
+		<div id="container_dj">
+			<input type="text" name="w" id="caja-busqueda-djrae"/>
+			<div class="lupa_dj">
+				<span class="movil"><input for="caja-busqueda-djrae" type="image" src="/imagenes/home/lupa_16x16.png" title="Buscar en el Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico de la RAE" alt="Buscar en el Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico de la RAE"></span>
+			</div>
+		</div>
+	</form>
+</div>
+
+<script>
+	if(typeof jQuery !== "undefined"){
+
+		jQuery.noConflict();
+
+		var carga = true, djrae_t = "P";
+
+		if(!window.matchMedia){
+			//IE9
+			carga = true;
+		}else if(window.matchMedia("(max-width:669px)").matches){
+			carga = true;
+			djrae_t  = "M";
+		} else if(window.matchMedia("(min-width:670px) and (max-width:1050px)").matches) {
+			carga = true;
+			djrae_t  = "T";
+		}
+
+		if(carga){
+			jQuery("#container_dj").djraeWidget({modo: djrae_t});
+		}
+	}
+</script>
+<div class="pretexto" id="tabs">
+  <ul class="navlist">
+    <li><span class="pc tablet"><a href="#" class="current">Completo</a></span>
+    <span class="movil"><a href="#tabs" class="current">Completo</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2013-3362&amp;p=20180306&amp;tn=0">Solo Texto</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2013-3362&amp;p=20180306&amp;tn=0#tabs">Texto</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2013-3362&amp;p=20180306&amp;tn=2">&Iacute;ndice</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2013-3362&amp;p=20180306&amp;tn=2#tabs">&Iacute;ndice</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2013-3362&amp;p=20180306&amp;tn=6">An&aacute;lisis</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2013-3362&amp;p=20180306&amp;tn=6#tabs">An&aacute;lisis</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2013-3362&amp;p=20180306&amp;tn=3" class="guardar">Recibir alerta <img src="/imagenes/logoMiBOE_azul.png" srcset="/imagenes/logoMiBOE_azul.svg" alt="Mi BOE"/></a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2013-3362&amp;p=20180306&amp;tn=3#tabs" class="guardar"><img src="/imagenes/logoMiBOE_azul.png" srcset="/imagenes/logoMiBOE_azul.svg" alt="Mi BOE"/></a></span></li>
+  </ul>
+</div>
+<div id="textoxslt">
+<h3>Texto consolidado<span class="subtitMostrado">: &laquo;&Uacute;ltima actualizaci&oacute;n, publicada el 06/03/2018&raquo;</span></h3>
+  <div class="marcadores">
+    <label for="activar-marcadores"><span class="etiqDoc">Ir a: </span></label>
+    <div id="selector-marcador"  class="dropdown">
+      <input id="activar-marcadores" type="checkbox">
+      <label class="marcador-actual" for="activar-marcadores" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span>Seleccionar apartado</span></label>
+      <ul id="lista-marcadores">
+        <li><a href="#preambulo">[Pre&aacute;mbulo]</a></li>
+        <li><a href="#a1">Artículo 1</a></li>
+        <li><a href="#a2">Artículo 2</a></li>
+        <li><a href="#a3">Artículo 3</a></li>
+        <li><a href="#a4">Artículo 4</a></li>
+        <li><a href="#a5">Artículo 5</a></li>
+        <li><a href="#a6">Artículo 6</a></li>
+        <li><a href="#a7">Artículo 7</a></li>
+        <li><a href="#a8">Artículo 8</a></li>
+        <li><a href="#a9">Artículo 9</a></li>
+        <li><a href="#a10">Artículo 10</a></li>
+        <li><a href="#daprimera">Disposición adicional primera</a></li>
+        <li><a href="#dasegunda">Disposición adicional segunda</a></li>
+        <li><a href="#dtunica">Disposición transitoria única</a></li>
+        <li><a href="#ddunica">Disposición derogatoria única</a></li>
+        <li><a href="#dfprimera">Disposición final primera</a></li>
+        <li><a href="#dfsegunda">Disposición final segunda</a></li>
+        <li><a href="#dftercera">Disposición final tercera</a></li>
+        <li><a href="#firma">[Firma]</a></li>
+      </ul>
+    </div>
+  </div>
+          <hr class="bloque"/>
+          <div class="bloque" id="preambulo">
+            <p class="bloque">[Bloque 1: #preambulo]</p>
+
+<p class="parrafo">La <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-26318" target="_blank" title="Abre nueva ventana">Ley 30/1992, de 26 de noviembre</a>, de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común, insta en su artículo 45.1 a las administraciones públicas a impulsar el uso y aplicación de las técnicas y medios electrónicos, informáticos y telemáticos para el desarrollo de su actividad y el ejercicio de sus competencias, con las limitaciones que a la utilización de dichos medios establecen <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229" target="_blank" title="Abre nueva ventana">la Constitución</a> y las leyes. Por su parte, el derecho de los ciudadanos a comunicarse con las administraciones por medios electrónicos se consagra con la promulgación de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-12352" target="_blank" title="Abre nueva ventana">Ley 11/2007, de 22 de junio</a>, de acceso electrónico de los ciudadanos a los servicios públicos, en la que se regula la actuación de las administraciones públicas para generalizar la sociedad de la información a través de dichos medios. En desarrollo de esta última ley, el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2009-18358" target="_blank" title="Abre nueva ventana">Real Decreto 1671/2009, de 6 de noviembre</a>, establece un marco flexible para facilitar la adaptación de organizaciones, funciones y procedimientos a la comunicación por medios electrónicos, garantizando al mismo tiempo que no resulten afectados otros bienes constitucionalmente protegidos, como son la protección de datos, los derechos de acceso a la información administrativa o la preservación de intereses de terceros.</p>
+<p class="parrafo">Dentro del ámbito específico de la Administración de la Seguridad Social el uso y aplicación de técnicas y medios electrónicos para el desarrollo de su actividad y el ejercicio de sus competencias se ha regulado en la Orden de 3 de abril de 1995, sobre uso de medios electrónicos, informáticos y telemáticos en relación con la inscripción de empresas, la afiliación, altas y bajas de trabajadores, la cotización y la recaudación; medios y procedimientos que, bajo la denominación «Sistema de remisión electrónica de datos (Sistema RED)», han sido objeto de implantación y desarrollo progresivo a través de sucesivas resoluciones de la Dirección General de la Tesorería General de la Seguridad Social, dictadas en aplicación de la referida Orden ministerial.</p>
+<p class="parrafo">El alcance y las condiciones de utilización del Sistema RED se han ido perfilando, asimismo, al amparo de lo previsto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1998-30155#a30" target="_blank" title="Abre nueva ventana">artículo 30 de la Ley 50/1998, de 30 de diciembre</a>, de medidas fiscales, administrativas y del orden social, en aplicación del cual, por una parte, la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2004-3324" target="_blank" title="Abre nueva ventana">Orden TAS/399/2004, de 12 de febrero</a>, sobre presentación en soporte informático de los partes médicos de baja, confirmación de la baja y alta correspondientes a procesos de incapacidad temporal, ha extendido su ámbito de aplicación a la presentación de partes médicos de baja, confirmación de baja y alta correspondientes a procesos de incapacidad temporal, y, por otra parte, por la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2005-8986" target="_blank" title="Abre nueva ventana">Orden TAS/1562/2005, de 25 de mayo</a>, por la que se establecen normas para la aplicación y desarrollo del Reglamento general de recaudación de la Seguridad Social, se determinaron los supuestos de incorporación obligatoria a dicho sistema, tras su reforma por la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2010-16552" target="_blank" title="Abre nueva ventana">Orden TIN/2777/2010, de 29 de octubre</a>, y recientemente en el ámbito del Régimen Especial del Mar se ampliaron esos supuestos por <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-2149" target="_blank" title="Abre nueva ventana">Orden ESS/229/2012, de 9 de febrero</a>, por la que se establecen para el año 2012 las bases de cotización a la Seguridad Social de los trabajadores del Régimen Especial del Mar incluidos en los grupos segundo y tercero.</p>
+<p class="parrafo">A su vez, diversas normas reglamentarias de Seguridad Social, tales como la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-18970#daquinta" target="_blank" title="Abre nueva ventana">disposición adicional quinta del Reglamento general de la gestión financiera de la Seguridad Social, aprobado por el Real Decreto 1391/1995, de 4 de agosto</a>; la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579#dasexta" target="_blank" title="Abre nueva ventana">disposición adicional sexta del Reglamento general sobre cotización y liquidación de otros derechos de la Seguridad Social, aprobado por el Real Decreto 2064/1995, de 22 de diciembre</a>; el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1996-4447#a38" target="_blank" title="Abre nueva ventana">artículo 38 del Reglamento general sobre inscripción de empresas y afiliación, altas, bajas y variaciones de datos de trabajadores en la Seguridad Social, aprobado por el Real Decreto 84/1996, de 26 de enero</a> y las disposiciones adicionales cuarta y quinta del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-11836" target="_blank" title="Abre nueva ventana">Reglamento general de recaudación de la Seguridad Social, aprobado por el Real Decreto 1415/2004, de 11 de junio</a>, también contemplan la posibilidad de utilizar los procedimientos y medios que conforman el Sistema RED para la realización de actuaciones administrativas y el suministro de datos o documentos relativos a las materias reguladas por tales reglamentos, quedando habilitada la Ministra de Empleo y Seguridad Social para determinar las condiciones de uso del citado sistema, bien de forma expresa en esos mismos preceptos o bien mediante las correspondientes disposiciones finales sobre facultades de aplicación y desarrollo de los respectivos reglamentos.</p>
+<p class="parrafo">Finalmente, la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1994-14960#daquincuagesima" target="_blank" title="Abre nueva ventana">disposición adicional quincuagésima del texto refundido de la Ley General de la Seguridad Social, aprobado por el Real Decreto legislativo 1/1994, de 20 de junio</a>, ha introducido la obligatoriedad de notificación por medios electrónicos, informáticos o telemáticos de los actos administrativos que traigan causa o se dicten como consecuencia de los datos transmitidos electrónicamente a través del Sistema RED.</p>
+<p class="parrafo">En base a las referidas previsiones legales y con el objetivo de sistematizar los criterios en ellas establecidos, así como prever la extensión de la obligatoriedad de incorporación a dicho sistema al resto de las empresas, agrupaciones de empresas y demás sujetos responsables del cumplimiento de la obligación de cotizar encuadrados en cualquiera de los regímenes del sistema de la Seguridad Social, con independencia del número de trabajadores que mantengan en alta, se considera conveniente regular en un texto único la utilización de medios electrónicos, informáticos y telemáticos en las actuaciones de inscripción de empresas, afiliación, altas, bajas y variaciones de datos de trabajadores, cotización y recaudación de empresas y trabajadores, comunicación de partes médicos de baja, de confirmación de la baja y alta correspondiente a procesos de incapacidad temporal, así como cualquier otra actuación que se determine en el ámbito de la Seguridad Social a través del Sistema RED.</p>
+<p class="parrafo">Esta orden ha sido informada favorablemente por la Comisión Ministerial de Administración Electrónica del Ministerio de Empleo y Seguridad Social, al amparo de lo previsto por el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2011-18199#a2" target="_blank" title="Abre nueva ventana">artículo 2.2.e) de la Orden TIN/3155/2011, de 8 de noviembre</a>, por la que se regula la composición y funciones del citado órgano colegiado.</p>
+<p class="parrafo">En su virtud, con la aprobación previa del Ministro de Hacienda y Administraciones Públicas, y de acuerdo con el Consejo de Estado, dispongo:</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1">
+            <p class="bloque">[Bloque 2: #a1]</p>
+
+<h5 class="articulo">Artículo 1. Objeto y ámbito de aplicación objetivo.</h5>
+<p class="parrafo">1. Esta orden tiene por objeto regular el Sistema de remisión electrónica de datos (en adelante, Sistema RED), como un servicio gestionado por la Tesorería General de la Seguridad Social para el intercambio electrónico de datos o documentos, así como para la comunicación de actuaciones administrativas entre el citado servicio común y las entidades gestoras de la Seguridad Social y los autorizados para ello, con el fin de facilitar el cumplimiento de las obligaciones de Seguridad Social por parte de los sujetos responsables en las siguientes materias:</p>
+<p class="parrafo_2">a) Actuaciones contempladas en la normativa reguladora de la inscripción de empresas y afiliación, altas, bajas y variaciones de datos de trabajadores, así como de la cotización y recaudación de empresas y trabajadores en el ámbito de la Seguridad Social, en los términos y condiciones previstos en cada momento por dicha normativa.</p>
+<p class="parrafo">b) Comunicación de partes médicos de baja, de confirmación de la baja y de alta correspondientes a procesos de incapacidad temporal cuya gestión esté encomendada a la entidad gestora o a la mutua colaboradora con la Seguridad Social, en los términos establecidos en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-6839" target="_blank" title="Abre nueva ventana">Orden ESS/1187/2015, de 15 de junio</a>, por la que se desarrolla el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2014-7684" target="_blank" title="Abre nueva ventana">Real Decreto 625/2014, de 18 de julio</a>, por el que se regulan determinados aspectos de la gestión y control de los procesos por incapacidad temporal en los primeros trescientos sesenta y cinco días de su duración.</p>
+<p class="parrafo">c) Comunicación empresarial de la fecha de inicio de la suspensión del contrato de trabajo o del correspondiente permiso, a efectos de la tramitación de las prestaciones por maternidad, paternidad, riesgo durante el embarazo y riesgo durante la lactancia natural, así como de las reducciones de jornada de trabajo de los progenitores, adoptantes o acogedores, a efectos de la tramitación de la prestación de cuidado de menores afectados por cáncer u otra enfermedad grave, de las que sean beneficiarios los trabajadores por cuenta ajena o asimilados, incluidos en el respectivo régimen del sistema de la Seguridad Social.</p>
+<p class="parrafo">d) Cualquier otra actuación que venga exigida en la normativa de la Seguridad Social cuya gestión esté atribuida a la Tesorería General de la Seguridad Social, en la forma y con las especificaciones técnicas que establezca por resolución de su Director General.</p>
+<p class="parrafo_2">2. Las notificaciones de los actos administrativos que traigan causa o se dicten como consecuencia de los datos que deban comunicarse electrónicamente a través del Sistema RED se efectuarán en la sede electrónica de la Secretaría de Estado de la Seguridad Social (en adelante, SEDESS), de acuerdo con lo previsto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a132" target="_blank" title="Abre nueva ventana">artículo 132.2 del texto refundido de la Ley General de la Seguridad Social, aprobado por el Real Decreto legislativo 8/2015, de 30 de octubre</a>, así como en la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2013-3363" target="_blank" title="Abre nueva ventana">Orden ESS/485/2013, de 26 de marzo</a>, por la que se regulan las notificaciones y comunicaciones por medios electrónicos en el ámbito de la Seguridad Social.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica por el art. único.1 de la Orden ESS/214/2018, de 26 de marzo. <a href="/buscar/act.php?id=BOE-A-2018-3080#au" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2018-3080</a></p>
+  <p class="nota_pie_2">Téngase en cuenta que la modificación del apartado 1.c) surtirá efectos a partir del 1 de abril de 2018 respecto a las prestaciones por maternidad y paternidad, y a partir del día 1 de enero de 2019 respecto a las prestaciones por riesgo durante el embarazo, riesgo durante la lactancia natural y cuidado de menores afectados por cáncer u otra enfermedad grave, según se establece en la disposición final única de la citada Orden.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a1">
+              <input type="hidden" name="id" value="BOE-A-2013-3362">
+              <input type="hidden" name="b"  value="2">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab220180306" value="20180306" checked="checked"/>
+                  <label for="lab220180306" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 06/03/2018, en vigor a partir del 01/04/2018.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab220130328" value="20130328"/>
+                  <label for="lab220130328" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 28/03/2013, en vigor a partir del 01/04/2013.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2">
+            <p class="bloque">[Bloque 3: #a2]</p>
+
+<h5 class="articulo">Artículo 2. Ámbito de aplicación subjetivo.</h5>
+<p class="parrafo">1. La incorporación al Sistema RED será obligatoria para los sujetos responsables de la obligación de cotizar a que se refiere el apartado 2 de este artículo. Los restantes sujetos responsables podrán incorporarse voluntariamente para la realización de los trámites administrativos que en cada momento permita dicho sistema para estos colectivos. En todo caso se precisará para la incorporación la autorización previa otorgada por la Tesorería General de la Seguridad Social.</p>
+<p class="parrafo">2. A los efectos indicados, estarán obligados a su incorporación al Sistema RED:</p>
+<p class="parrafo_2">a) Las empresas, agrupaciones de empresas y demás sujetos responsables del cumplimiento de la obligación de cotizar encuadrados en el Régimen General de la Seguridad Social y en los Regímenes Especiales de la Seguridad Social de los Trabajadores del Mar y para la Minería del Carbón, con independencia del número de trabajadores que mantengan en alta y sin perjuicio de las excepciones establecidas en el apartado 3.</p>
+<p class="parrafo">b) Los sujetos responsables del cumplimiento de la obligación de cotizar encuadrados en el Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos y en el Régimen Especial de la Seguridad Social de los Trabajadores del Mar como trabajadores por cuenta propia clasificados, a efectos de cotización, en el grupo primero del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11346#a10" target="_blank" title="Abre nueva ventana">artículo 10 de la Ley 47/2015, de 21 de octubre</a>, reguladora de la protección social de las personas trabajadoras del sector marítimo-pesquero, con independencia de que tengan o no trabajadores a su cargo.</p>
+<p class="parrafo">En este supuesto, la incorporación al Sistema RED podrá efectuarse en los términos y condiciones de esta orden o por el uso de los medios electrónicos disponibles en la SEDESS y con arreglo a las condiciones establecidas para el acceso a sus servicios, de acuerdo con lo previsto en el artículo 3.3 de esta orden.</p>
+<p class="parrafo_2">3. La incorporación al Sistema RED no será obligatoria:</p>
+<p class="parrafo_2">a) En el Régimen General de la Seguridad Social, para las empresas, agrupaciones de empresas y demás sujetos responsables del cumplimiento de la obligación de cotizar, por lo que respecta al colectivo de profesionales taurinos y al Sistema Especial para Empleados de Hogar.</p>
+<p class="parrafo">b) En el Régimen Especial de la Seguridad Social de los Trabajadores del Mar, para los trabajadores por cuenta propia clasificados, a efectos de cotización, en los grupos segundo y tercero del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11346#a10" target="_blank" title="Abre nueva ventana">artículo 10 de la Ley 47/2015, de 21 de octubre</a>.</p>
+<p class="parrafo">4. Las actuaciones administrativas para el intercambio de datos o documentos en el Sistema RED podrán llevarse a cabo por los sujetos responsables del cumplimiento de las obligaciones a que se refiere el artículo 1, bien en nombre propio o bien por medio de representante.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica por el art. único.2 de la Orden ESS/214/2018, de 26 de marzo. <a href="/buscar/act.php?id=BOE-A-2018-3080#au" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2018-3080</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a2">
+              <input type="hidden" name="id" value="BOE-A-2013-3362">
+              <input type="hidden" name="b"  value="3">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab320180306" value="20180306" checked="checked"/>
+                  <label for="lab320180306" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 06/03/2018, en vigor a partir del 01/04/2018.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab320130328" value="20130328"/>
+                  <label for="lab320130328" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 28/03/2013, en vigor a partir del 01/04/2013.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3">
+            <p class="bloque">[Bloque 4: #a3]</p>
+
+<h5 class="articulo">Artículo 3. Incidencia de la incorporación efectiva al Sistema RED en la adquisición y mantenimiento de beneficios en la cotización a la Seguridad Social.</h5>
+<p class="parrafo">1. Conforme a lo previsto en el párrafo primero del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1998-30155#a29" target="_blank" title="Abre nueva ventana">artículo 29 de la Ley 50/1998, de 30 de diciembre</a>, de medidas fiscales, administrativas y del orden social, en el caso de que las empresas, agrupaciones de empresas y demás sujetos responsables del cumplimiento de la obligación de cotizar que hubieran solicitado u obtenido reducciones, bonificaciones o cualesquiera otros beneficios en las bases, tipos y cuotas de la Seguridad Social y conceptos de recaudación conjunta, no se incorporen de manera efectiva al Sistema RED, no podrán obtener los citados beneficios y quedarán suspendidos, sin más trámite, los que tuvieran concedidos, respecto de todos sus trabajadores por cuenta ajena o asimilados y respecto de todos sus códigos de cuenta de cotización, tanto principales como secundarios, desde la fecha en que tal incorporación debió realizarse. Dicha suspensión se aplicará, asimismo, a los sujetos responsables que dejen de utilizar de forma efectiva el Sistema RED en las actuaciones relativas al encuadramiento, cotización y recaudación.</p>
+<p class="parrafo">La obtención de los beneficios indicados se regirá por la normativa vigente en el período de liquidación correspondiente a la incorporación efectiva al Sistema RED y surtirá efectos desde el día primero de dicho período, sin perjuicio de la pérdida de los beneficios por el tiempo transcurrido desde el nacimiento del derecho hasta tal incorporación efectiva. Asimismo, la suspensión de aquellos beneficios quedará sin efecto y volverán a ser aplicables a partir de la liquidación correspondiente a la nueva incorporación a dicho sistema, sin que quepa la recuperación de los beneficios perdidos. Tanto en un caso como en otro, se considerará que los beneficios se han aplicado, a efectos del cómputo de su duración, durante el periodo transcurrido entre la fecha inicial en que se hubiesen podido obtener, se hubiesen obtenido o se hubiesen suspendido, y la de incorporación efectiva al Sistema RED.</p>
+<p class="parrafo">No dará lugar a la pérdida de reducciones, bonificaciones o cualesquiera otros beneficios que tuvieran concedidos, la falta de transmisión de datos a través del Sistema RED por causas de carácter técnico imputables a la Tesorería General de la Seguridad Social, sin perjuicio de la obligación de presentar los documentos de cotización y los de afiliación, altas, bajas y variaciones de datos dentro de los plazos establecidos.</p>
+<p class="parrafo">2. A los efectos previstos en el apartado anterior, se entiende por incorporación efectiva al Sistema RED la utilización de dicho sistema para la realización de las actuaciones previstas en el artículo 1 con plena validez y eficacia, generando los derechos y obligaciones establecidos por la normativa en vigor en relación con dichos actos, así como de cualesquiera otras exigidas en la normativa de Seguridad Social, en la forma y con los requerimientos que fije la Tesorería General de la Seguridad Social.</p>
+<p class="parrafo">3. El cumplimiento de la obligación de incorporación al Sistema RED no se verá afectado cuando las actuaciones de encuadramiento, cotización y recaudación puedan realizarse a través de otros medios electrónicos distintos del citado sistema, en los términos y condiciones que fije la Tesorería General de la Seguridad Social, a fin de facilitar la prestación de los servicios electrónicos en aplicación de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-12352" target="_blank" title="Abre nueva ventana">Ley 11/2007, de 22 de junio</a>, de acceso electrónico de los ciudadanos a los servicios públicos.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4">
+            <p class="bloque">[Bloque 5: #a4]</p>
+
+<h5 class="articulo">Artículo 4. Características del Sistema RED.</h5>
+<p class="parrafo">1. El Sistema RED comprenderá las aplicaciones informáticas y telemáticas que en cada momento resulten precisas para el cumplimiento de la finalidad antes indicada, autorizándose a tal efecto la utilización de redes públicas y privadas de transmisión de datos, combinaciones de unas y otras y cualesquiera otros medios que determine la Tesorería General de la Seguridad Social.</p>
+<p class="parrafo">2. El Sistema RED garantiza los siguientes principios generales:</p>
+<p class="parrafo_2">a) Autenticación. El sistema identificará de manera inequívoca al emisor y al receptor de la información que sea distinto de la Tesorería General de la Seguridad Social, asegurando su identidad. La identificación de los interesados necesariamente se efectuará mediante sistemas de firma electrónica determinados conforme a lo establecido en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-23399" target="_blank" title="Abre nueva ventana">Ley 59/2003, de 19 de diciembre</a>, de firma electrónica, así como en los <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-12352#a13" target="_blank" title="Abre nueva ventana">artículos 13 y siguientes de la Ley 11/2007, de 22 de junio</a>, y en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2009-18358" target="_blank" title="Abre nueva ventana">Real Decreto 1671/2009, de 6 de noviembre</a>, por el que se desarrolla parcialmente la citada ley, que resulten adecuados para garantizar su identificación, así como la autenticidad de los documentos electrónicos.</p>
+<p class="parrafo">b) Constancia. El sistema dispondrá de un servicio en el que se haga constar la fecha y hora de envío de cada una de las comunicaciones realizadas entre los usuarios y la Tesorería General de la Seguridad Social.</p>
+<p class="parrafo">c) Confidencialidad. El sistema garantizará que sólo el usuario acreditado debidamente tenga acceso a las comunicaciones que contengan datos de carácter personal, de acuerdo con lo establecido en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1999-23750" target="_blank" title="Abre nueva ventana">Ley Orgánica 15/1999, de 13 de diciembre</a>, de Protección de Datos de Carácter Personal. A tal efecto, el sistema incluirá las pertinentes medidas de seguridad en las transmisiones mediante el cifrado de datos o a través de cualquier otro mecanismo que garantice que la información no es inteligible ni manipulable por terceros.</p>
+<p class="parrafo">d) Integridad. El sistema garantizará que la información y documentos serán transmitidos sin alteración alguna de su contenido original, pudiendo ser detectada cualquier anomalía por el receptor de los mismos.</p>
+<p class="parrafo">e) Conservación. El sistema garantizará la conservación de la información y documentos transmitidos durante el tiempo exigido por la normativa aplicable en función de los datos transmitidos.</p>
+<p class="parrafo">f) No repudio. El sistema se instrumentará de forma que el receptor de la información o documento no pueda rechazar un envío válidamente efectuado y que el remitente tenga constancia de su recepción.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a5">
+            <p class="bloque">[Bloque 6: #a5]</p>
+
+<h5 class="articulo">Artículo 5. Autorización para actuar a través del Sistema RED.</h5>
+<p class="parrafo">1. Para operar en el ámbito de actuación definido en el artículo 1, será necesario contar con autorización otorgada por la Tesorería General de la Seguridad Social. Dicha autorización podrá ser de dos tipos:</p>
+<p class="parrafo_2">a) Autorización para actuar en nombre propio.</p>
+<p class="parrafo">b) Autorización para actuar en nombre de otros.</p>
+<p class="parrafo_2">La Tesorería General de la Seguridad Social determinará mediante resolución del Director General los requisitos que se han de cumplir para la obtención de cada tipo de autorización.</p>
+<p class="parrafo">2. Las solicitudes de autorización serán resueltas por los directores provinciales de la Tesorería General de la Seguridad Social, informándose al autorizado de las condiciones de utilización de la autorización en el caso de resoluciones estimatorias.</p>
+<p class="parrafo">El plazo máximo en que debe notificarse la resolución expresa será de tres meses, transcurrido dicho plazo podrá entenderse desestimada la solicitud por silencio administrativo.</p>
+<p class="parrafo">Dicha resolución podrá ser objeto de recurso de alzada ante la Dirección General de la Tesorería General de la Seguridad Social, de acuerdo con lo establecido en los <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-26318#a114" target="_blank" title="Abre nueva ventana">artículos 114 y 115 de la Ley 30/1992, de 26 de noviembre</a>, de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común, cuya interposición suspenderá la ejecución del acto impugnado. El plazo para la interposición de dicho recurso será el de un mes a contar desde el día siguiente a la notificación. Transcurrido el plazo de tres meses desde la interposición de dicho recurso de alzada sin que recaiga resolución expresa, el mismo podrá entenderse desestimado, según dispone el artículo 115 de la citada <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-26318" target="_blank" title="Abre nueva ventana">Ley 30/1992, de 26 de noviembre</a>.</p>
+<p class="parrafo">Las autorizaciones concedidas dejarán de surtir efectos tanto por incumplimiento de sus condiciones de utilización como por el uso abusivo o fraudulento de éstas, mediante resolución motivada de la Tesorería General de la Seguridad Social.</p>
+<p class="parrafo">3. Concedida una autorización para actuar a través del Sistema RED, el autorizado quedará habilitado tanto para la transmisión electrónica de los datos o documentos a través del referido sistema como para la recepción de las comunicaciones y notificaciones de las actuaciones administrativas que se realicen al respecto, implicando esta autorización la obligación del autorizado de gestionar con carácter exclusivo mediante dicho sistema, salvo imposibilidad del servicio por causa debida a la Tesorería General de la Seguridad Social, el cumplimiento de las obligaciones y actuaciones en las materias a que se refiere el artículo 1 respecto de todos los sujetos responsables vinculados a dicha autorización, entendiéndose realizadas directamente por estos últimos.</p>
+<p class="parrafo">4. Las actuaciones a las que habilita la autorización RED para la transmisión electrónica de datos o documentos y recepción de las comunicaciones y notificaciones de las actuaciones administrativas consecuencia de dicha transmisión, podrán ser realizadas tanto por el autorizado como por los usuarios que éste designe a través del correspondiente servicio establecido al efecto por la Tesorería General de la Seguridad Social, garantizándose conforme al artículo 4.2.a) la identificación del emisor o receptor y la autenticidad e integridad de los datos y documentos objeto de transmisión.</p>
+<p class="parrafo">En todo caso, las transmisiones de datos o documentos realizadas por los usuarios a través del Sistema RED, así como las comunicaciones y las notificaciones de las actuaciones administrativas que éstos reciban de la Tesorería General de la Seguridad Social, se entenderán transmitidos y recibidos por el autorizado.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a6">
+            <p class="bloque">[Bloque 7: #a6]</p>
+
+<h5 class="articulo">Artículo 6. Requisitos para el ejercicio efectivo de las autorizaciones RED.</h5>
+<p class="parrafo">Para el intercambio efectivo de los datos o documentos y recepción de las comunicaciones y notificaciones de las actuaciones administrativas que traigan causa o se dicten como consecuencia de los datos que deban comunicarse a través del Sistema RED, correspondientes a sujetos responsables, se requiere:</p>
+<p class="parrafo_2">a) En el caso de autorizaciones para actuar en nombre propio, la comunicación por el medio que establezca al efecto la Tesorería General de la Seguridad Social de los códigos de cuenta de cotización o números de afiliación cuyos datos hayan de ser transmitidos a través del Sistema RED.</p>
+<p class="parrafo">b) En el caso de autorizaciones para actuar en nombre de terceros, además de la comunicación a que se refiere el párrafo anterior, será necesaria la acreditación de la representación otorgada por los sujetos responsables en cuyo nombre se actúe, a favor del autorizado y de sus usuarios, por el medio que establezca la Tesorería General de la Seguridad Social.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a7">
+            <p class="bloque">[Bloque 8: #a7]</p>
+
+<h5 class="articulo">Artículo 7. Responsabilidad de los autorizados.</h5>
+<p class="parrafo">La responsabilidad de las actuaciones realizadas recae en todo caso sobre el autorizado, con independencia de quien las efectúe, y sin perjuicio de la responsabilidad que éste pueda exigir a los usuarios responsables de la actuación.</p>
+<p class="parrafo">Se prohíbe expresamente al autorizado RED y a los usuarios designados por éste el tratamiento automatizado de los datos a los que tengan acceso mediante la creación de ficheros informáticos para fines distintos de los estrictamente propios del Sistema RED.</p>
+<p class="parrafo">Será responsabilidad del autorizado mantener actualizada la relación de usuarios acreditados a operar en el sistema, en el marco de su autorización.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a8">
+            <p class="bloque">[Bloque 9: #a8]</p>
+
+<h5 class="articulo">Artículo 8. Efectos de la transmisión electrónica de datos o documentos a través del Sistema RED.</h5>
+<p class="parrafo">1. La remisión electrónica de datos o documentos relativos a actuaciones de inscripción de empresas, afiliación, altas, bajas y variaciones de datos de trabajadores, cotización y recaudación de empresas y trabajadores en el ámbito de la Seguridad Social y la comunicación de partes médicos de baja, de confirmación de la baja y de alta correspondientes a procesos de incapacidad temporal a través del Sistema RED, así como la transmisión de las actuaciones administrativas realizadas por la Tesorería General de la Seguridad Social o entidad gestora correspondiente, que se deriven de la citada transmisión, gozarán de plena validez y eficacia, generando los derechos y obligaciones establecidos por la normativa en vigor en relación con dichos actos.</p>
+<p class="parrafo">2. La obligación de informar sobre los datos figurados en las relaciones nominales de trabajadores (documentos serie TC-2) que se transmitan por el Sistema RED, prevista en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-11836#a25" target="_blank" title="Abre nueva ventana">artículo 25.4 del Reglamento general de recaudación de la Seguridad Social, aprobado por el Real Decreto 1415/2004, de 11 de junio</a>, se considerará cumplida de acuerdo con lo dispuesto en dicho artículo, mediante la colocación o puesta a disposición de los trabajadores, a través de la presentación en pantalla de ordenador o terminal informático, de los datos de sus archivos que, a tales efectos, serán considerados como copia autorizada de las citadas relaciones nominales de trabajadores, siempre que, en este último caso, se muestren acompañados de su correspondiente huella electrónica.</p>
+<p class="parrafo">3. En el supuesto de falta de ingreso de las obligaciones de pago correspondientes, la aportación en soporte informático de los datos de las relaciones nominales de trabajadores efectuada en plazo reglamentario se considerará como presentación de documentos de cotización a los efectos previstos en el artículo 26 del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724" target="_blank" title="Abre nueva ventana">texto refundido de la Ley General de la Seguridad Social</a>.</p>
+<p class="parrafo">4. La utilización del Sistema RED para el suministro de datos se entenderá sin perjuicio del cumplimiento, por parte de las empresas y demás sujetos responsables, de las demás obligaciones previstas en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1996-4447#a38" target="_blank" title="Abre nueva ventana">Reglamento general sobre inscripción de empresas y afiliación, altas, bajas y variaciones de datos de trabajadores en la Seguridad Social, aprobado por el Real Decreto 84/1996, de 26 de enero</a>.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a9">
+            <p class="bloque">[Bloque 10: #a9]</p>
+
+<h5 class="articulo">Artículo 9. Validez de los documentos generados por impresión autorizada de las actuaciones tramitadas electrónicamente a través del Sistema RED.</h5>
+<p class="parrafo">Los documentos generados por impresión autorizada de las actuaciones tramitadas electrónicamente a través del Sistema RED incluirán elementos de contraste/cotejo y gozarán de la misma validez y eficacia frente a terceros que las certificaciones expedidas al respecto por los órganos competentes de la Tesorería General de la Seguridad Social.</p>
+<p class="parrafo">La Tesorería General de la Seguridad Social podrá realizar la impresión de los datos y documentos recibidos, producidos y emitidos por el Sistema RED, considerándose como impresión de contraste y gozando de la misma validez que los originales tramitados.</p>
+<p class="parrafo">La autenticidad e integridad de los documentos generados podrá verificarse mediante los sistemas dispuestos a tal efecto, consistentes en la verificación mediante el código electrónico de autenticidad (CEA), mediante huella digital o cualquier otro sistema que permita contrastar la información de dichos documentos con la obrante en las correspondientes bases de datos corporativas.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a10">
+            <p class="bloque">[Bloque 11: #a10]</p>
+
+<h5 class="articulo">Artículo 10. Conexión y modalidades de trabajo.</h5>
+<p class="parrafo">1. La conexión para el intercambio electrónico de datos o documentos se realizará a través de internet.</p>
+<p class="parrafo">Excepcionalmente, la Tesorería General de la Seguridad Social podrá autorizar a determinados sujetos responsables con un elevado número de trabajadores, a optar por una modalidad de intercambio electrónico de datos bajo protocolo «ad hoc». Asimismo, por la Tesorería General de la Seguridad Social podrá determinarse igualmente, en función de otros criterios objetivos, qué autorizados utilizarán un determinado protocolo para el intercambio de datos.</p>
+<p class="parrafo">2. Las modalidades de trabajo utilizadas por el Sistema RED son dos:</p>
+<p class="parrafo_2">a) Conexión directa con la Tesorería General de la Seguridad Social.</p>
+<p class="parrafo">b) Envío y recepción de ficheros con una estructura determinada, según instrucciones técnicas que figuran en la página web de la Seguridad Social.</p>
+<p class="parrafo_2">La Tesorería General de la Seguridad Social podrá incluir cualquier otro protocolo o modalidad de trabajo que la evolución tecnológica aconseje, así como la supresión de los utilizados hasta el momento.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="daprimera">
+            <p class="bloque">[Bloque 12: #daprimera]</p>
+
+<h5 class="articulo">Disposición adicional primera. Exención de la obligación de presentación de la relación nominal de trabajadores.</h5>
+<p class="parrafo">En aquellos supuestos en los que existiendo transmisión electrónica de la relación nominal de trabajadores a través del Sistema RED, y por razones técnicas la Tesorería General de la Seguridad Social no pueda calcular la liquidación correspondiente, no será necesario adjuntar, para su sellado y validación, dicha relación nominal de trabajadores (documentos serie TC-2) al boletín de cotización (serie TC-1) en el momento del ingreso de las cuotas en cualquiera de las oficinas recaudadoras autorizadas. Al respecto, en la casilla del boletín de cotización (serie TC-1) reservada a firma y sello del empresario se indicará:</p>
+<p class="parrafo_2">«No acompaña TC-2</p>
+<p class="parrafo_2">Autorización TGSS número................... de fecha................................»</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dasegunda">
+            <p class="bloque">[Bloque 13: #dasegunda]</p>
+
+<h5 class="articulo">Disposición adicional segunda. Servicio de asistencia y orientación para la cumplimentación de las actuaciones de encuadramiento, cotización y recaudación por medios electrónicos.</h5>
+<p class="parrafo">En el marco de lo previsto por el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-12352#a8" target="_blank" title="Abre nueva ventana">artículo 8 de la Ley 11/2007, de 22 de junio</a>, la Tesorería General de la Seguridad Social pondrá a disposición de las empresas, agrupaciones de empresas y demás sujetos responsables obligados a incorporarse de manera efectiva al Sistema RED, que por sus dificultades personales o su reducida dimensión y localización geográfica así lo requieran, un servicio de asistencia técnica y asesoramiento, que incluirá los medios necesarios para garantizar la efectividad del cumplimiento de la obligación de transmisión electrónica de los datos de encuadramiento, cotización y recaudación impuesta por el artículo 1.1.</p>
+<p class="parrafo">Dicho servicio se prestará siempre que el sujeto responsable no disponga de la correspondiente autorización para transmitir por el Sistema RED, en los términos y condiciones que determine la Tesorería General de la Seguridad Social.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dtunica">
+            <p class="bloque">[Bloque 14: #dtunica]</p>
+
+<h5 class="articulo">Disposición transitoria única. Autorizaciones para actuar a través del Sistema RED otorgadas con anterioridad a la fecha de entrada en vigor de esta orden.</h5>
+<p class="parrafo">Respecto a las autorizaciones para actuar a través del Sistema RED otorgadas con anterioridad a la fecha de entrada en vigor de esta orden a profesionales colegiados y terceros que viniesen transmitiendo electrónicamente a través del Sistema RED datos relativos a una o varias empresas, agrupaciones de empresas y demás sujetos responsables, serán válidas, salvo manifestación expresa en contrario, y sin perjuicio de que la Tesorería General de la Seguridad Social pueda en cualquier momento solicitar la acreditación de la representación, procediendo a dejar sin efecto la autorización respecto de las empresas o sujetos obligados en el caso de que no se acredite suficientemente ésta.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ddunica">
+            <p class="bloque">[Bloque 15: #ddunica]</p>
+
+<h5 class="articulo">Disposición derogatoria única. Derogación normativa.</h5>
+<p class="parrafo">1. Quedan derogadas todas las disposiciones de igual o inferior rango en tanto contradigan o se opongan a lo establecido en esta orden.</p>
+<p class="parrafo">2. Quedan derogadas expresamente las siguientes disposiciones:</p>
+<p class="parrafo_2">a) La Orden de 3 de abril de 1995, sobre uso de medios electrónicos, informáticos y telemáticos en relación con la inscripción de empresas, afiliación, altas y bajas de trabajadores, cotización y recaudación en el ámbito de la Seguridad Social.</p>
+<p class="parrafo">b) De la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2005-8986" target="_blank" title="Abre nueva ventana">Orden TAS/1562/2005, de 25 de mayo</a>, por la que se establecen normas para la aplicación y desarrollo del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-11836" target="_blank" title="Abre nueva ventana">Reglamento general de recaudación de la Seguridad Social, aprobado por el Real Decreto 1415/2004, de 11 de junio</a>, el artículo 28 y las disposiciones adicionales cuarta y quinta.</p>
+<p class="parrafo">c) De la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-2149" target="_blank" title="Abre nueva ventana">Orden ESS/229/2012, de 9 de febrero</a>, por la que se establecen para el año 2012 las bases de cotización a la Seguridad Social de los trabajadores del Régimen Especial del Mar incluidos en los grupos segundo y tercero, los apartados 1 y 2 de su disposición adicional única.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfprimera">
+            <p class="bloque">[Bloque 16: #dfprimera]</p>
+
+<h5 class="articulo">Disposición final primera. Título competencial.</h5>
+<p class="parrafo">Esta orden se dicta al amparo de lo dispuesto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a149" target="_blank" title="Abre nueva ventana">artículo 149.1.17.ª de la Constitución Española</a>, que atribuye al Estado la competencia exclusiva en materia de legislación básica y régimen económico de la Seguridad Social.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfsegunda">
+            <p class="bloque">[Bloque 17: #dfsegunda]</p>
+
+<h5 class="articulo">Disposición final segunda. Facultades de aplicación y desarrollo.</h5>
+<p class="parrafo">Se faculta al Director General de la Tesorería General de la Seguridad Social para dictar cuantas resoluciones resulten necesarias para la aplicación de lo dispuesto en esta orden.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dftercera">
+            <p class="bloque">[Bloque 18: #dftercera]</p>
+
+<h5 class="articulo">Disposición final tercera. Entrada en vigor.</h5>
+<p class="parrafo">La presente orden entrará en vigor el día 1 del mes siguiente al de su publicación en el «Boletín Oficial del Estado».</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="firma">
+            <p class="bloque">[Bloque 19: #firma]</p>
+
+<p class="parrafo_2">Madrid, 26 de marzo de 2013.–La Ministra de Empleo y Seguridad Social, Fátima Báñez García.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+        </div> <!-- #textoxslt -->
+        <div class="caja redondeada gris info" role="alert">
+          <p>Este documento es de car&aacute;cter informativo y no tiene valor jur&iacute;dico.</p>
+          <p>Ay&uacute;denos a mejorar: puede dirigir sus comentarios y sugerencias a nuestro <a href="/contactar/formulario_completo.php">Servicio de atenci&oacute;n al ciudadano</a></p>
+        </div>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>

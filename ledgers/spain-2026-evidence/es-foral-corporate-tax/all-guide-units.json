@@ -1,0 +1,1160 @@
+[
+  {
+    "line": 28,
+    "section": "Who this applies to",
+    "text": "For 2026, the agreements use the EUR 12 million preceding-period operations threshold. Annualise operations for a short period and use estimated first-year operations until actual figures are known. Operations means VAT-exclusive consideration for business supplies, excluding the equivalence surcharge; it is not automatically accounting turnover or assets. At or below EUR 12 million, the ordinary single company pays the administration of its fiscal domicile. Above it, collection follows the current year's territorial operations, with the percentage rounded to two decimals. Calculate one company's taxable income under the selected governing law, then allocate its liability. Do not apply each territory's headline rate separately to its sales. [CE arts.14–18; CN arts.18–23.](https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969), [Navarra Economic Agreement](https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117)",
+    "references": {}
+  },
+  {
+    "line": 30,
+    "section": "Who this applies to",
+    "text": "For a Basque-domiciled company, Basque law governs unless preceding operations exceed EUR 12 million and at least 75% took place in common territory. A common-territory company above EUR 12 million uses Basque law if at least 75% of preceding operations took place in the Basque Country; a common-domiciled fiscal-group member needs 100% there. Select the province under that province's art.2: domicile normally controls; if all Basque operations occurred outside the domicile province, use the sole operating province or the province with the larger share of the other two; a common-territory company coming into Basque law uses the province with the largest Basque operations share. Record all three provincial percentages, the common-territory percentage and preceding/current years separately. [CE art.14; B/A/G art.2.](https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969), [Bizkaia NF11/2013](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 32,
+    "section": "Who this applies to",
+    "text": "For Navarra, exclusive Navarra collection entails Navarra law. A company paying both Navarra and the State uses domicile law, except a Navarra-domiciled company with at least 75% preceding operations in common territory uses common law; a common-domiciled company with at least 75% in Navarra uses Navarra law, with the art.18 fiscal-group exception. Keep a case involving both Navarra and one or more Basque provinces for a specific agreement analysis rather than treating Navarra as a fourth Basque province. [CN arts.18–19.](https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117)",
+    "references": {}
+  },
+  {
+    "line": 34,
+    "section": "Who this applies to",
+    "text": "Build the operations ledger from the statutory connecting factors: goods generally where made available or where dispatch starts; transformed goods at the final transformation; industrial installations use the preparation/manufacturing place if installation cost does not exceed 15%; electricity at generating plants; immovable supplies and related services where the property is; ordinary services where performed from. Agriculture/fishing products, transport and leasing transport equipment have domicile rules; allocate foreign operations proportionately to the remaining operations. Customer address alone does not supply this analysis. [CE art.16; CN arts.20–21.](https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969), [Navarra Economic Agreement](https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117)",
+    "references": {}
+  },
+  {
+    "line": 36,
+    "section": "Who this applies to",
+    "text": "Advance payments use the last return's allocation, subject to the agreement's change-notification routes; deduct the instalment actually paid to each administration from its share. File with every administration entitled to collection. The governing law determines the instalment method even where another administration collects part of it. A State-law company allocating tax to a foral treasury must therefore retain State instalment calculations. [CE arts.17–18; CN arts.22–24.](https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969), [Navarra Economic Agreement](https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117)",
+    "references": {}
+  },
+  {
+    "line": 40,
+    "section": "Rates, bands and thresholds",
+    "text": "| Item |2026 rule |Primary law |",
+    "references": {}
+  },
+  {
+    "line": 42,
+    "section": "Rates, bands and thresholds",
+    "text": "| Basque ordinary micro/small |20% if all size/activity tests pass |[B/A/G art.56](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54) |",
+    "references": {}
+  },
+  {
+    "line": 43,
+    "section": "Rates, bands and thresholds",
+    "text": "| Basque general |24% |[B/A/G art.56](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54) |",
+    "references": {}
+  },
+  {
+    "line": 44,
+    "section": "Rates, bands and thresholds",
+    "text": "| Navarra ordinary rates |28% general, conditional25%;23% small/19% micro |[N art.51](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356) |",
+    "references": {}
+  },
+  {
+    "line": 45,
+    "section": "Rates, bands and thresholds",
+    "text": "| Connecting threshold |12million preceding-period operations; law and collection are separate |[CE arts.14–18;CN arts.18–23](https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969), [Navarra Economic Agreement](https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117) |",
+    "references": {}
+  },
+  {
+    "line": 52,
+    "section": "The base / Size and economic-activity tests",
+    "text": "| Test | Bizkaia, Álava and Gipuzkoa | Navarra |",
+    "references": {}
+  },
+  {
+    "line": 54,
+    "section": "The base / Size and economic-activity tests",
+    "text": "| Micro | Economic operation; assets **or** operations at most EUR 2m; average staff below 10; ownership condition below | Small company with prior net turnover at most EUR 1m, subject to group/ownership aggregation |",
+    "references": {}
+  },
+  {
+    "line": 55,
+    "section": "The base / Size and economic-activity tests",
+    "text": "| Small | Economic operation; assets **or** operations at most EUR 10m; average staff below 50 | Economic activity; prior net turnover below EUR 20m; ownership condition below |",
+    "references": {}
+  },
+  {
+    "line": 56,
+    "section": "The base / Size and economic-activity tests",
+    "text": "| Medium | Economic operation; assets at most EUR 43m **or** operations at most EUR 50m; average staff below 250 | No corresponding general medium rate band in art.51 |",
+    "references": {}
+  },
+  {
+    "line": 57,
+    "section": "The base / Size and economic-activity tests",
+    "text": "| Ownership | Direct/indirect holding of **25% or more** by an entity failing **either the relevant quantitative asset-or-operations condition or the workforce condition** disqualifies, subject to the statutory venture-capital exception. Article 13.5 imports only letters b/c for the shareholder; it does not require that shareholder to satisfy the taxpayer company's own economic-operation test | A holding of **more than** 25% by entities failing the relevant turnover condition disqualifies, subject to public/venture-capital exceptions |",
+    "references": {}
+  },
+  {
+    "line": 58,
+    "section": "The base / Size and economic-activity tests",
+    "text": "| Period | Prior period; startup/restarting inactive company uses current period. Annualise operations, not assets or staff. FTE average, with part time proportionate. Group totals with consolidation eliminations | Prior period; annualise short period. New company's first actual activity period; aggregate Code-of-Commerce groups and the statutory family-control case, and add acquired business/branch turnover where required |",
+    "references": {}
+  },
+  {
+    "line": 60,
+    "section": "The base / Size and economic-activity tests",
+    "text": "Sources: [B/A/G art.13; N art.12](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356). These conditions are cumulative apart from the expressly alternative asset/operations test. Navarra AIEs and UTEs cannot obtain small status. Navarra's 19%/23% trading rates also require current net turnover at least 50% of current taxable income and exclude patrimonial companies. An EUR 800,000-turnover company is not automatically a 19% company if it has a large investment gain. [N arts.12,51.1.b.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 62,
+    "section": "The base / Size and economic-activity tests",
+    "text": "For the Basque ownership test, apply the shareholder's relevant quantitative size and workforce conditions under article 13.5, while testing the taxpayer company's own economic operation separately under article 13.1–4. An ordinary trading company that meets all its own micro conditions is not disqualified merely because a 25% corporate shareholder is passive, if that shareholder satisfies the relevant quantitative tests and no separate group rule changes the figures. For example, with the shareholder's assets 1.5 million, operations below 2 million and zero employees, its passive activity alone does not deny micro status to the otherwise qualifying company. A 25% shareholder with both assets and operations above 2 million, or average staff reaching 10, fails the relevant micro quantitative test. Do not remove the taxpayer company's own 85%-business-income or other statutory conditions. Sources: the current article 13.5 of each Basque law linked above.",
+    "references": {}
+  },
+  {
+    "line": 64,
+    "section": "The base / Size and economic-activity tests",
+    "text": "For the Basque 85%-business-income condition, trace qualifying revenue and the local passive-income exclusions and look-through participation conditions. The property-business threshold differs: Bizkaia art.13.4 requires an average of at least three exclusive full-time unrelated employees; Álava art.13.4 requires five, with permitted related-entity staff aggregation; Gipuzkoa art.13.4 and DA 10 refer to its PIT art.24.3, which requires at least one exclusive full-time employee and excludes the specified related people. Do not import one province's employment threshold into another. [B/A/G art.13.4; G DA 10; Gipuzkoa PIT NF 3/2014 art.24.3.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 66,
+    "section": "The base / Size and economic-activity tests",
+    "text": "Before granting trading-company methods, test patrimonial status under B/A/G art.14 and N art.8.2. The Basque rules include the asset mix, the 90-day period, the 75%-ownership composition, exceptions for qualifying participation/business reinvestment and the treatment of inactive companies. The Basque patrimonial computation uses art.32's restricted expenses and the art.56.2 progressive savings scale; it is not the ordinary 20% or 24% computation. Navarra patrimonial entities lose the art.51.1.b reduced rates. The dedicated patrimonial calculation and restructuring/group regimes remain separate branches.",
+    "references": {}
+  },
+  {
+    "line": 72,
+    "section": "The base / Taxable-base reconciliation",
+    "text": "Start with the accounting result, add back local non-deductible expenses, reverse exempt income and timing differences, replace accounting depreciation with allowed tax depreciation, and apply local special deductions, reserves and eligible carried losses in their statutory order. Navarra art.42 puts the art.43 loss reduction before the art.44 investment-reserve reduction. Preserve a tax-basis register for each asset and a year-by-year register of deferred amounts. This sequence comes from B/A/G arts.15–55 and N arts.14–46; a State-law adjustment cannot be assumed to exist under a foral law.",
+    "references": {}
+  },
+  {
+    "line": 74,
+    "section": "The base / Taxable-base reconciliation",
+    "text": "| Recurring item | Basque ordinary method | Navarra ordinary method |",
+    "references": {}
+  },
+  {
+    "line": 76,
+    "section": "The base / Taxable-base reconciliation",
+    "text": "| Corporate tax, penalties, distributions | Add back income-tax expense, fines/sanctions and the specified surcharges, distributions of own funds, gifts except statutory business-purpose exceptions, bribery and specified unlawful/cash-restricted expenses | Apply art.23's own exclusions and limits; interest on tax arrears is expressly included in deductible financing under art.24 subject to its ceiling |",
+    "references": {}
+  },
+  {
+    "line": 77,
+    "section": "The base / Taxable-base reconciliation",
+    "text": "| Client hospitality/travel | Deduct 50% of qualifying public-relations restaurant/hotel/travel costs, capped together at 5% of operations; business gifts up to EUR 300 per recipient/year with recipient evidence | Apply art.23.2's 50% qualifying expense deduction capped at 1% of net turnover, plus the EUR 300-per-recipient gift rule. This differs from the Basque 5%-operations ceiling |",
+    "references": {}
+  },
+  {
+    "line": 78,
+    "section": "The base / Taxable-base reconciliation",
+    "text": "| Ordinary passenger vehicle | Apply the local art.31.3 split and annual lease/depreciation, running-cost and financing caps; do not infer full business deduction from VAT treatment | Apply art.23.3–4, with vehicle/person and partial-year rules; retained source has the full method |",
+    "references": {}
+  },
+  {
+    "line": 79,
+    "section": "The base / Taxable-base reconciliation",
+    "text": "| Net financing costs | Generally limited to 30% of operating profit, with EUR 3 m annual allowance (prorated short period), own statutory adjustments to operating profit, indefinite expense carry and five-year unused capacity | 30% operating profit with EUR 1m annual allowance (prorated), 15-year disallowed-expense carry and five-year unused capacity |",
+    "references": {}
+  },
+  {
+    "line": 80,
+    "section": "The base / Taxable-base reconciliation",
+    "text": "| Dividend/participation income | Arts.33–35: determine exemption conditions locally; ordinary participation at least 5%, or 3% listed, one-year holding; subject/non-exempt payer, qualifying business-income condition and exclusions including nominal tax below 10%, deductible distributions and patrimonial payer/recipient. If full art.33.1 exemption fails for Spanish-resident payer dividends, apply art.33.2's 50%-integration fallback, subject to art.33.3; see the separate method below | Arts.35–36 require their own 5%/one-year test and foreign-tax conditions. The 5% management-expense reduction in art.35must be considered; this is not the Basque full qualifying-income exclusion |",
+    "references": {}
+  },
+  {
+    "line": 82,
+    "section": "The base / Taxable-base reconciliation",
+    "text": "Sources: [B/A/G arts.25 bis,31–35; N arts.23–24,35–36](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356). The Basque financing rules exclude, among others, qualifying standalone companies with no related entities/foreign PE, credit/insurance entities and final extinction outside restructuring, and contain group-equity and acquisition-debt rules. Navarra's exemption list differs. Apply the acquisition-debt additional 30% ceiling before deciding the final allowed cost; its escape requires at most 70% acquisition debt and scheduled reduction towards 30% over eight years. Document both general and acquisition ceilings. [B/A/G art.25 bis; N art.24.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 86,
+    "section": "The base / Basque domestic-dividend fallback",
+    "text": "In Bizkaia, Álava and Gipuzkoa, failing the full article 33.1 participation-exemption conditions does not automatically make a dividend fully taxable. For dividends from a **Spanish-resident payer**, article 33.2 ordinarily integrates **50% of the dividend** into the recipient's tax base; Gipuzkoa expressly includes direct or indirect receipts. Dividends from the specifically named general-insurance mutuals, social-provision entities, mutual-guarantee companies or associations instead have zero integration under that paragraph. This domestic fallback is not a 50% rule for foreign dividends and is not Navarra's separate method. Sources: B/A/G article 33.2, in the current corporate laws linked above.",
+    "references": {}
+  },
+  {
+    "line": 88,
+    "section": "The base / Basque domestic-dividend fallback",
+    "text": "Apply article 33.3 before either the full exemption or the domestic fallback. Its exclusions include a distribution deductible to the payer or an equivalent benefit, payer nominal taxation below 10%, dividends from profits generated during the payer's patrimonial periods, a patrimonial recipient, and the specified deductible pass-through under a securities contract (with the actual recipient's own statutory conditions). Bizkaia/Álava also have article 33.3(f)'s three-year restriction after the specified tax-neutral contribution by an individual/non-PE non-resident who lacked dividend double-tax relief; test its stated reinvestment, onward-distribution or disposal exceptions. Do not import that extra paragraph into Gipuzkoa's article 33.3. Retain the distribution's profit/reserve origin and make the required article 33.6 return disclosure.",
+    "references": {}
+  },
+  {
+    "line": 90,
+    "section": "The base / Basque domestic-dividend fallback",
+    "text": "For example, an ordinary non-patrimonial company receives EUR 10,000 on a 1% holding in an unlisted Spanish trading company, taxed at a nominal rate of at least 10%. Assume no deductible distribution, pass-through or other article 33.3 exclusion. The 1% holding fails the ordinary 5% full-exemption threshold, but article 33.2 integrates only `10,000 × 50% = EUR 5,000`. If the full dividend is in accounting profit, the reconciliation deducts EUR 5,000. At the ordinary 24% rate the resulting incremental gross quota is EUR 1,200 before other adjustments, credits and minimum tax; integrating the full dividend would give EUR 2,400, and full exemption would give zero. If an article 33.3 exclusion applies, the 50% fallback does not cure it.",
+    "references": {}
+  },
+  {
+    "line": 94,
+    "section": "The base / Ordinary receivable impairment",
+    "text": "For an ordinary nonfinancial company, start with a genuine receivable impairment booked in the accounts; overdue status alone does not create an additional expense. Test the selected territory's timing and exclusions before leaving that expense in the tax base. Sources: B/A/G article 22 and article 54.3/6; N article 20.1 and article 15.5/6, in the current corporate laws linked above.",
+    "references": {}
+  },
+  {
+    "line": 96,
+    "section": "The base / Ordinary receivable impairment",
+    "text": "| Territory | Ordinary individual-debtor test | Separate timing extension |",
+    "references": {}
+  },
+  {
+    "line": 98,
+    "section": "The base / Ordinary receivable impairment",
+    "text": "| Bizkaia | By the **last permissible date for formulating annual accounts**, either six months have elapsed from contractual maturity, the debtor is declared bankrupt, the debtor or its company administrator/representative is prosecuted for concealment of assets, or collection is subject to the specified judicial claim, litigation or arbitration | Article 22.1 uses the accounts-formulation deadline; do not replace it with tax-year end or import Álava's additional extension |",
+    "references": {}
+  },
+  {
+    "line": 99,
+    "section": "The base / Ordinary receivable impairment",
+    "text": "| Álava | The same four alternatives, tested at the **last permissible accounts-formulation date** | Bankruptcy or the specified judicial/litigation/arbitration circumstance also qualifies when it arises **before the return-filing window begins**; this extension does not move the six-month age test to that later date |",
+    "references": {}
+  },
+  {
+    "line": 100,
+    "section": "The base / Ordinary receivable impairment",
+    "text": "| Gipuzkoa | The same four alternatives, normally tested at **tax accrual** | Bankruptcy or the specified judicial/litigation/arbitration circumstance also qualifies when it arises **before the return-filing window begins**; the six-month age test remains at tax accrual |",
+    "references": {}
+  },
+  {
+    "line": 101,
+    "section": "The base / Ordinary receivable impairment",
+    "text": "| Navarra | The same four alternatives, tested at **tax accrual**, under article 20.1.1º | Do not import a Basque accounts-formulation or pre-return-window extension |",
+    "references": {}
+  },
+  {
+    "line": 103,
+    "section": "The base / Ordinary receivable impairment",
+    "text": "The Basque article 22.2 exclusions cover public-body debts/guarantees, bank or mutual-guarantee cover, real security/title-retention/retention rights, credit insurance and expressly renewed or extended debts, with the stated exception for arbitration or litigation over the debt's existence or amount and the stated lost/impaired-security exception. Related-party impairments require judicially declared insolvency. Navarra article 20.1.2º has its own exclusions: public-body debts, public/bank/mutual guarantees and credit insurance (to the covered amount), real security except lost/impaired security, and express renewal/extension; apply its specified judicial/arbitral exception rather than assuming that six months overrides a guarantee. Its related-party exception requires bankruptcy **and judicial opening of liquidation**, not merely a bankruptcy declaration. Retain evidence of maturity, court events, guarantees and relationships for each balance. Special regulated financial entities follow the separate statutory route.",
+    "references": {}
+  },
+  {
+    "line": 105,
+    "section": "The base / Ordinary receivable impairment",
+    "text": "Basque article 22.3 permits a separate global impairment for qualifying article 13 micro, small and medium companies, limited to **1% of eligible closing debtor balances**. Remove balances already individually impaired under article 22.1 and those whose impairments are excluded by article 22.2(a)/(b). The **closing allowance balance**, not a fresh annual addition on top of the old balance, cannot exceed that ceiling. On leaving the eligible size category, later impairments are non-deductible up to the existing global-allowance balance, as article 22.3 provides. Navarra article 20.1.2º(g) excludes global customer/debtor risk estimates; there is no ordinary Basque-style 1% election in that provision.",
+    "references": {}
+  },
+  {
+    "line": 107,
+    "section": "The base / Ordinary receivable impairment",
+    "text": "For example, a calendar-2026 company books an impairment of EUR 10,000 on an unrelated, unsecured receivable due 31 August 2026, with no bankruptcy, prosecution or collection proceedings. Assume its applicable latest accounts-formulation date is 31 March 2027. Six months have elapsed by that date, so the ordinary individual age test is satisfied in Bizkaia/Álava, subject to the other conditions. At 31 December 2026 only four months have elapsed: Gipuzkoa/Navarra require a EUR 10,000 add-back for 2026 on these facts. A later qualifying year requires a tracked reversal of that add-back, not a second book expense.",
+    "references": {}
+  },
+  {
+    "line": 109,
+    "section": "The base / Ordinary receivable impairment",
+    "text": "For an eligible Basque SME with EUR 500,000 closing debtors, EUR 100,000 already individually impaired and EUR 50,000 excluded secured/related balances, the global ceiling is `(500,000 - 100,000 - 50,000) × 1% = EUR 3,500`. If EUR 2,000 of global allowance is already outstanding, the available increase is EUR 1,500, subject to the booked amount; it is not another EUR 3,500. Keep a tax register of individually deducted amounts, disallowed balances and the separate global allowance. Tax-deducted impairment recoveries enter the reversal year's tax base under B/A/G article 54.6 or N article 15.6; reconcile previously disallowed amounts so that the same expense or recovery is not counted twice.",
+    "references": {}
+  },
+  {
+    "line": 113,
+    "section": "The base / Basque ordinary disposal monetary correction",
+    "text": "**Basque disposal monetary correction (art.40.9).** For positive income on disposal of tangible fixed assets, intangible fixed assets or investment property, including those assets subsequently classified as non-current assets held for sale, calculate the monetary-depreciation deduction before integrating the disposal income into the tax base. Ordinary property held as trading inventory does not enter this asset population. Use the selected province's **CIT**, not PIT, coefficient table for tax periods beginning during2026 in [the separate2026 PE/CIT table](es-foral-non-resident-tax.md#separate2026-pecit-monetary-correction-coefficients). Start from the last authorised legal revaluation, or acquisition if later; the following ordinary calculation assumes no previous legal revaluation.",
+    "references": {}
+  },
+  {
+    "line": 115,
+    "section": "The base / Basque ordinary disposal monetary correction",
+    "text": "1. Calculate the disposal income under the ordinary accounting-to-tax reconciliation, retaining any separate tax-depreciation reversals or other fiscal adjustments. If that disposal income is zero or negative, art.40.9 gives no monetary-depreciation deduction.",
+    "references": {}
+  },
+  {
+    "line": 116,
+    "section": "The base / Basque ordinary disposal monetary correction",
+    "text": "2. Multiply acquisition/production cost by its year coefficient, each improvement by the coefficient for its own year, and each year's **accounted depreciation** by that year's coefficient. Let `indexed_net = indexed_costs − indexed_accumulated_depreciation`.",
+    "references": {}
+  },
+  {
+    "line": 117,
+    "section": "The base / Basque ordinary disposal monetary correction",
+    "text": "3. Calculate `monetary_depreciation = indexed_net − unindexed_carrying_value_of_the_disposed_asset`. The statute subtracts the asset's **carrying value** here. The indexed net amount is an intermediate calculation, not a new general tax basis replacing the depreciation/fiscal reconciliation.",
+    "references": {}
+  },
+  {
+    "line": 118,
+    "section": "The base / Basque ordinary disposal monetary correction",
+    "text": "4. Deduct the resulting positive monetary depreciation, capped at the positive disposal income. The correction cannot create or increase a disposal loss. Continue the existing corporate base, loss, rate, minimum-tax and credit sequence on the resulting income. Apply a special statutory vehicle limitation only where that vehicle provision actually governs.",
+    "references": {}
+  },
+  {
+    "line": 120,
+    "section": "The base / Basque ordinary disposal monetary correction",
+    "text": "Example, applicable to the identical2026 coefficients in all three provinces: an ordinary investment building acquired2023 for100,000, first brought into use2024, has accounted and tax-deducted depreciation3,000 in2024 and3,000 in2025; dispose at the opening of2026 for net proceeds150,000, with no2026 depreciation, prior revaluation or other fiscal adjustment. Carrying value is94,000 and pre-correction income56,000. Indexed cost is100,000×1.071=107,100; indexed depreciation is3,000×1.040+3,000×1.020=6,180; indexed net is100,920. Monetary correction is100,920−94,000=6,920; corrected taxable disposal income is49,080. If the otherwise identical transaction has positive disposal income only5,000, deduct5,000 and integrate zero. If it produces a loss, deduct zero under40.9.",
+    "references": {}
+  },
+  {
+    "line": 122,
+    "section": "The base / Basque ordinary disposal monetary correction",
+    "text": "Authorities: [Bizkaia NF11/2013 art.40.9](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013 art.40.9](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014 art.40.9](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54). Coefficient timing: [B DF115/2025 art.2](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2025/12/15/I-1336_cas.pdf?hash=7bb6a27105d5d87568e6537aa6283dc3), [A DF41/2025 art.2](https://www.araba.eus/botha/Boletines/2025/146/2025_146_03735_C.pdf), [G DF27/2025 DA2](https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2025/12/30/c2508991.pdf).",
+    "references": {}
+  },
+  {
+    "line": 127,
+    "section": "The base / Passenger-vehicle expense computation",
+    "text": "For an ordinary non-exclusively-business car, use the actual eligible expense first and then the statutory ceiling. In Bizkaia/Álava the usual lease/depreciation deduction is the least of 50% actual expense, EUR 3,000 and 50% of the taxpayer's depreciation rate times EUR 30,000 (the last comparator applies where depreciated); use EUR 4,000/EUR 40,000 for the named BEV/REEV/FCV/FCHV electric vehicles. Other running expenses are 50%, capped at EUR 3,600. Financing separately uses 50% of interest multiplied by min(1, EUR 30,000/acquisition price), or EUR 40,000 for the electric class. Proved exclusive business use or the valid benefit-in-kind election permits the 100% route: EUR 6,000/EUR 30,000 depreciation or lease comparator, EUR 7,200 other costs, and the corresponding full proportionate financing; electric comparators are EUR 8,000/EUR 40,000. Apply person/year and partial-year conditions. [B/A art.31.3.a.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf)",
+    "references": {}
+  },
+  {
+    "line": 129,
+    "section": "The base / Passenger-vehicle expense computation",
+    "text": "Gipuzkoa art.31.3.a/b has the same 50%/100%, EUR 3,000/6,000, EUR 30,000 and electric EUR 4,000/8,000/EUR 40,000 depreciation comparators and EUR 3,600/7,200 other-cost ceilings, but its own disposal-loss/monetary-correction method. Its statute does not separately reproduce the Bizkaia/Álava proportionate-financing formula in those clauses. Preserve that difference rather than inserting it by analogy. Special-purpose goods/passenger transport, manufacturer testing, driving instruction, surveillance and genuine rental vehicles have their expressly defined deduction exceptions. Sales representatives have a separate rule and a linked-person restriction; Gipuzkoa specifically retains the art.31.3.b.a' depreciation limit for those cars. [G art.31.3; B/A art.31.3.b/c.](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Bizkaia NF11/2013](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf)",
+    "references": {}
+  },
+  {
+    "line": 131,
+    "section": "The base / Passenger-vehicle expense computation",
+    "text": "Navarra art.23.3 uses 50% of eligible ordinary expenses with a depreciation/lease ceiling of 50% of the regulatory depreciation rate times EUR 25,000, and EUR 4,000 for other costs **including financing**. Its proved exclusive-use or benefit-in-kind route uses 100% with the depreciation-rate-times-EUR 25,000 ceiling and EUR 7,000 other-cost ceiling. The rate is the regulatory-table rate; prorate partial years and aggregate simultaneous vehicles by person. The art.23.3.e listed exclusive special activities have their own full-cost exception. The VAT deduction percentage does not decide this corporate expense. [N art.23.3–4.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 135,
+    "section": "The base / Depreciation and goodwill",
+    "text": "| Ordinary straight-line asset | Basque annual maximum | Navarra annual maximum / maximum period |",
+    "references": {}
+  },
+  {
+    "line": 137,
+    "section": "The base / Depreciation and goodwill",
+    "text": "| Offices/services/commercial buildings/housing | 3% | 4% / 38 years |",
+    "references": {}
+  },
+  {
+    "line": 138,
+    "section": "The base / Depreciation and goodwill",
+    "text": "| Industrial buildings | 5% | 5% / 30 years |",
+    "references": {}
+  },
+  {
+    "line": 139,
+    "section": "The base / Depreciation and goodwill",
+    "text": "| Installations | 20% | 15% / 10 years |",
+    "references": {}
+  },
+  {
+    "line": 140,
+    "section": "The base / Depreciation and goodwill",
+    "text": "| Industrial machinery | 20% | 15% / 10 years |",
+    "references": {}
+  },
+  {
+    "line": 141,
+    "section": "The base / Depreciation and goodwill",
+    "text": "| Other machinery | 15% | 15% / 10 years |",
+    "references": {}
+  },
+  {
+    "line": 142,
+    "section": "The base / Depreciation and goodwill",
+    "text": "| Furniture | 15% | 15% / 10 years |",
+    "references": {}
+  },
+  {
+    "line": 143,
+    "section": "The base / Depreciation and goodwill",
+    "text": "| Computers | 33.33% | 25% / 6 years |",
+    "references": {}
+  },
+  {
+    "line": 144,
+    "section": "The base / Depreciation and goodwill",
+    "text": "| Buses/trucks/vans | 20% | 20% / 8 years |",
+    "references": {}
+  },
+  {
+    "line": 145,
+    "section": "The base / Depreciation and goodwill",
+    "text": "| Moulds/models/dies | 33.33% | 33% / 5 years |",
+    "references": {}
+  },
+  {
+    "line": 146,
+    "section": "The base / Depreciation and goodwill",
+    "text": "| Other tangible property | 10% | 10% / 15 years |",
+    "references": {}
+  },
+  {
+    "line": 148,
+    "section": "The base / Depreciation and goodwill",
+    "text": "Sources: [B/A/G art.17; NR art.3](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra DF114/2017](https://www.navarra.es/documents/48192/6699806/Reglamento%20IS.pdf/ea37edba-eb1b-22d7-a04b-9f9d8fbba4e6). Start when available for use; exclude land. Basque general maximum periods are 15 years, 50 for real estate and 25 for ships/aircraft, with approved special plans available. Navarra useful-life/table and timing rules are those of N art.16 and NR arts.2–8. Track additions, disposals, days in use and any separate improvement cost.",
+    "references": {}
+  },
+  {
+    "line": 150,
+    "section": "The base / Depreciation and goodwill",
+    "text": "Basque micro/small companies can freely depreciate qualifying new tangible assets excluding buildings and specified passenger vehicles; unit-cost assets at most EUR 1,500 have a separate free-depreciation route. Medium companies can multiply the normal maximum by 1.5 for qualifying new assets. Microcompanies can elect a 25%-of-opening-net-tax-value pool over the eligible asset population, replacing accounting depreciation/impairment and retaining the election while micro status continues; that pooling excludes the art.21.1 free-depreciation methods. Bizkaia/Álava art21 provide their specified EUR20,000/EUR40,000 total-deduction limits. Gipuzkoa art21.1(g)/(h)/21.4 instead uses its own qualifying vehicle/charging and art31 restrictions; do not import the Bizkaia/Álava EUR20,000 total cap into that separate route. Navarra small companies use 1.5 times the normal maximum for qualifying new tangible assets and new investment property, with the construction/delivery conditions in art.16.7. Its separate free-depreciation cases include tangible assets of unit cost at most EUR 1,800 and exclusive permanent R&D assets/capitalised R&D, plus the conditional early-year labour-company and priority-agricultural cases; art.18.4 excludes combining its free depreciation with other tax incentives except art.61 R&D credit. [B/A/G art.21; N arts.16–18.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 152,
+    "section": "The base / Depreciation and goodwill",
+    "text": "For finite-life intangibles, use useful life; if unreliable, the ordinary local annual maximum is one tenth. Basque goodwill is not accounting amortisation automatically: art.25 gives its own one-eighth acquisition-price ceiling and acquisition/group conditions. Navarra art.17 allows goodwill up to one tenth annually. Keep the tax deduction and later disposal basis separately. [B/A/G arts.20,25; N art.17.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 156,
+    "section": "The base / 2026 temporary depreciation and payroll-related overlay",
+    "text": "The separately enacted emergency measures in B26 art.4, A26 art.4 and G26 art.4 permit 1.5 times the normal maximum depreciation for qualifying new tangible assets acquired in 2026, excluding buildings and the specified restricted transport assets. This ordinary-company measure is additional to the eligibility routes already present in art.21; it does not mean multiplying an already accelerated rate by another 1.5. Apply the new statutory coefficient from commissioning, with the local contract/construction and delivery-within-twelve-months provisions. Maintain that chosen tax-basis schedule through the asset's eligible life. The same separate instruments change 2026 hiring credits as set out below. January consolidations alone therefore omit a material 2026 overlay. [B26 arts.4–5; A26 arts.2,4; G26 arts.4–5.](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/04/20/I-441_cas.pdf), [Álava DNUF2/2026](https://www.araba.eus/botha/Boletines/2026/045/2026_045_01089_C.pdf), [Gipuzkoa DF-Norma2/2026](https://www.gipuzkoa.eus/documents/2456431/8.813641E7/DF-Norma%202-2026%20medidas%20para%20mitigar%20Crisis%20Oriente%20Medio.pdf/925d814a-7f73-6e58-f249-a1437b1d76bf)",
+    "references": {}
+  },
+  {
+    "line": 158,
+    "section": "The base / 2026 temporary depreciation and payroll-related overlay",
+    "text": "All three emergency instruments also remove the business-income Q 1 2026 instalment obligation, with valid voluntary payments expressly not refundable as undue payments. That relief concerns PIT, not corporate-tax instalments. [B26 art.3; A26 art.3; G26 art.3.](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/04/20/I-441_cas.pdf), [Álava DNUF2/2026](https://www.araba.eus/botha/Boletines/2026/045/2026_045_01089_C.pdf), [Gipuzkoa DF-Norma2/2026](https://www.gipuzkoa.eus/documents/2456431/8.813641E7/DF-Norma%202-2026%20medidas%20para%20mitigar%20Crisis%20Oriente%20Medio.pdf/925d814a-7f73-6e58-f249-a1437b1d76bf)",
+    "references": {}
+  },
+  {
+    "line": 162,
+    "section": "The base / Micro deduction and reserves",
+    "text": "The three Basque laws allow an eligible microcompany to deduct 15% of its positive pre-deduction ordinary base under art.32.4; remove the specified CFC/special imputations from its calculation and apply the exact local ordering, with Álava/Gipuzkoa expressly using the pre-loss base. This option is incompatible with the arts.51–53 result-application corrections. Thus an ordinary eligible EUR 100,000 pre-option base becomes EUR 85,000 before losses, rather than applying a blanket 15% tax discount after credits. [B/A/G art.32.4.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 164,
+    "section": "The base / Micro deduction and reserves",
+    "text": "The alternative capitalisation correction is 15% of the increase in **fiscal** equity, increased to 20% for micro/small companies; maintain the fiscal equity and a reserve equal to the qualifying increase for five years, except the capitalised portion and loss exception. Each province's art.51.2 exclusions define fiscal equity differently, including contributions and exempt/foreign/nonbusiness assets. Do not use the raw balance-sheet increase. The correction cannot create/increase a tax loss; insufficient-base amounts carry with the local five-year maintenance commencement. [B/A/G art.51.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 166,
+    "section": "The base / Micro deduction and reserves",
+    "text": "The Basque equalisation reserve normally allows a deduction bounded by 10% of freely distributable accounting profit, 15% of the specified taxable base and a reserve balance of 25% of fiscal equity. Eligible micro/small companies add five percentage points to each of those three limits (15%,20%,30%). Match amounts against losses over ten years. The expiry uplift is **20% in Bizkaia and 30% in Álava/Gipuzkoa** on the unused amount. Earlier unlawful reserve disposal has a different 5%-per-year clawback. Record origin years individually. [B/A/G art.52.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 168,
+    "section": "The base / Micro deduction and reserves",
+    "text": "The Basque productive/business reserve in art.53 provides a separate local reserve/materialisation method. Álava's current rates are a 65%-of-dotations reduction capped at 45% of taxable base and a 50%-of-fiscal-equity reserve balance, with the three-year investment categories, double-investment requirement for new art.61 assets and prior approval for the specified participation route. Bizkaia also uses 65%/45%/50%; Gipuzkoa uses 60%/45%/50% with its expressly pre-corrections/pre-loss base ceiling. The local business-angel route has its own eligibility and EUR 100,000-per-project ceiling; participation investments ordinarily require five-year retention, and the specified industrial-project participation route requires prior administrative approval. The three-year materialisation failure reverses the corresponding reduction with its separate 15% uplift; unlawful disposal has the separate 5%-per-year rule. Do not combine the micro 15% option with these reserves or claim a credit on the same investment used to materialise an incompatible reserve. [A art.53; B/G arts.32.4,53,67.6.](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Bizkaia NF11/2013](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 170,
+    "section": "The base / Micro deduction and reserves",
+    "text": "Navarra's special investment reserve reduces positive base by 45% of the qualifying allocation, or 60% for microcompanies, subject to 40% of the base after the specified art.42 reductions. Minimum allocation EUR 50,000. Maintain the equity increase and reserve, materialise in qualifying new tangible assets/investment property excluding land, normally from the preceding year through two years after the profit year's close, and retain the investment and reserve under art.46. **DLF 1/2026 extends reinvestment deadlines ending in 2026 by one year and reserve-materialisation deadlines ending in 2026–27 to 31 December 2027.** Keep the original deadline and statutory extension in the computation. [N arts.44–46; N26 sole article.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356), [Navarra DLF1/2026](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-10888)",
+    "references": {}
+  },
+  {
+    "line": 174,
+    "section": "The base / Losses",
+    "text": "Basque losses carry for 30 subsequent concluding periods. Outside the micro/small exception the normal utilisation ceiling is 50% of the positive pre-loss base. Current micro/small ordinary companies can use 100%; Álava excludes fiscal-consolidation cases from that exception. No State EUR 1m minimum is stated in these rules. Startups may begin the 30-year count at their first positive period. Apply debt-waiver/extinction and loss-trafficking rules, and the local patrimonial restrictions. Bizkaia additionally states the specified 90%-impairment-reversal exception. [B/A/G art.55.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 176,
+    "section": "The base / Losses",
+    "text": "An elected Basque block of five consecutive periods allows use up to 100% in the first four, but cumulatively only 50% of positive bases over the block. In year five, restore any excess plus **15% of that excess** to taxable base. Elect in the first return, do not overlap blocks and align the block with an elected credit-limit block. This is a timing election with a year-five liability, not permanent full loss relief. [B/A/G art.55.1.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 178,
+    "section": "The base / Losses",
+    "text": "Navarra losses carry 15 years; normal utilisation is at most 70% of positive base after the specified art.42 reductions, but at least EUR 1m is usable, prorated for a short year and always bounded by available base and losses. New companies have no percentage ceiling in their first three positive periods and count the carry period from the first positive period. Apply the debt-waiver/extinction exceptions and anti-trafficking tests in art.43; they differ from the Basque six-month inactive-company test. [N art.43.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 184,
+    "section": "The base / Rate, minimum and credit sequence",
+    "text": "| Ordinary trading company | Bizkaia | Álava | Gipuzkoa | Navarra |",
+    "references": {}
+  },
+  {
+    "line": 186,
+    "section": "The base / Rate, minimum and credit sequence",
+    "text": "| Micro/small passing all tests | 20% | 20% | 20% | 19% micro / 23% small |",
+    "references": {}
+  },
+  {
+    "line": 187,
+    "section": "The base / Rate, minimum and credit sequence",
+    "text": "| General | 24% | 24% | 24% | 28%; optional 25% only with all art.51.1.a conditions |",
+    "references": {}
+  },
+  {
+    "line": 188,
+    "section": "The base / Rate, minimum and credit sequence",
+    "text": "| Credit/qualifying bank group | 28% | 28% | 28% | Apply art.51's applicable category |",
+    "references": {}
+  },
+  {
+    "line": 190,
+    "section": "The base / Rate, minimum and credit sequence",
+    "text": "Sources: [B/A/G art.56; N art.51](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356). Navarra's new 25% election requires year-end employee headcount at least the average of the previous three year ends, no economic-cause ERTE suspension/reduction during the year, no final serious/very-serious occupational-safety sanction during the year and compliance with the equality-plan/registration obligation at accrual. It is not a universal 2026 rate cut. Special co-op, labour-company, nonprofit, investment and pension-fund rates require their own statutory category.",
+    "references": {}
+  },
+  {
+    "line": 194,
+    "section": "The base / Basque ordinary calculation",
+    "text": "1. Compute the positive taxable base after chosen corrections and usable losses; apply the art.56 rate. Deal separately with any 2026–30 extraordinary-profit surcharge below.",
+    "references": {}
+  },
+  {
+    "line": 195,
+    "section": "The base / Basque ordinary calculation",
+    "text": "2. Subtract art.60 foreign double-tax credits, limited under the local country/source calculation. Carry insufficient amounts for the local 30-year period, keeping treaty limits and taxes actually borne. Under B/A/G art.60.7, excess foreign tax over the attributable-quota limit is **not a deductible expense**; Navarra's separate art.56.2 conditional business-expense treatment cannot be imported here. The resulting `QL` (cuota líquida) is never negative. Álava art.58 and Bizkaia/Gipuzkoa art.58 have different additional cross-references for port/temporary-reversal deductions.",
+    "references": {}
+  },
+  {
+    "line": 196,
+    "section": "The base / Basque ordinary calculation",
+    "text": "3. Split chapter-III credits by local art.67 bucket. Use prior-year credits before current-year credits within each bucket. Ordinary bucket: at most 35% of `QL`. R&D/innovation bucket: at most 70% of the remaining `QL` after the ordinary bucket. Environmental/culture bucket: at most 50% of the remaining `QL` after both previous buckets. These are sequential remaining-quota limits, not 35%+70%+50% of the original quota. Exact article mapping below.",
+    "references": {}
+  },
+  {
+    "line": 197,
+    "section": "The base / Basque ordinary calculation",
+    "text": "4. Apply art.59's local minimum to credits subject to it. The minimum restricts the **reduction caused by those credits**; it does not automatically replace a quota already below that level because of a prior-stage double-tax credit. Credits expressly excepted from the minimum remain subject to their own art.67 bucket. Keep minimum-exempt and minimum-subject credits distinct when allocating claims and carries.",
+    "references": {}
+  },
+  {
+    "line": 198,
+    "section": "The base / Basque ordinary calculation",
+    "text": "5. Effective tax cannot be negative. Deduct withholding, payments on account and instalments actually paid. Excess advance payments are refundable, rather than converting unused investment credits into a cash refund. Apply territorial allocation and the final return obligations. [B/A/G arts.57–68,127–130 bis.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 200,
+    "section": "The base / Basque ordinary calculation",
+    "text": "| Art.67 credit bucket | Bizkaia | Álava | Gipuzkoa |",
+    "references": {}
+  },
+  {
+    "line": 202,
+    "section": "The base / Basque ordinary calculation",
+    "text": "| 70% of residual quota | arts.62–64 bis | arts.62–64 bis | arts.62–64 bis |",
+    "references": {}
+  },
+  {
+    "line": 203,
+    "section": "The base / Basque ordinary calculation",
+    "text": "| 50% of residual quota | arts.65,65 bis,66 quater,66 quinquies | arts.65,65 bis,66 ter,66 quater | arts.65,65 bis,66 bis |",
+    "references": {}
+  },
+  {
+    "line": 204,
+    "section": "The base / Basque ordinary calculation",
+    "text": "| 35% ordinary | Other chapter-III credits | Other chapter-III credits | Other chapter-III credits, subject to any express credit-specific rule |",
+    "references": {}
+  },
+  {
+    "line": 205,
+    "section": "The base / Basque ordinary calculation",
+    "text": "| Express art.59minimum exceptions | arts.62–64,64 bis,65,65 bis,66 quater,66 quinquies | arts.62–64,64 bis,65,65 bis,66 ter,66 quater | arts.62–64,64 bis,65,65 bis,66 bis |",
+    "references": {}
+  },
+  {
+    "line": 207,
+    "section": "The base / Basque ordinary calculation",
+    "text": "The article numbers are deliberately province-specific. Gipuzkoa's separate culture-financing art.66 ter has its own conditions and cannot silently be put into another province's article bucket. Unused chapter-III credits carry for 30 years; asset retention, subsidised base, accounting, no-double-use and recovery conditions in art.67 still apply. [B/A/G arts.59,67.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 209,
+    "section": "The base / Basque ordinary calculation",
+    "text": "| Minimum restricting ordinary credits | Bizkaia | Álava | Gipuzkoa |",
+    "references": {}
+  },
+  {
+    "line": 211,
+    "section": "The base / Basque ordinary calculation",
+    "text": "| General 24% company, no qualifying staff/investment condition | 19% base | 19% base | 19% base |",
+    "references": {}
+  },
+  {
+    "line": 212,
+    "section": "The base / Basque ordinary calculation",
+    "text": "| General company with maintained average indefinite staff **or** qualifying arts.61–65 investment | 17% base | 17% base | 17% base |",
+    "references": {}
+  },
+  {
+    "line": 213,
+    "section": "The base / Basque ordinary calculation",
+    "text": "| General company with maintained staff **and** investment, or increased average indefinite staff | 15% base | 15% base | 15% base |",
+    "references": {}
+  },
+  {
+    "line": 214,
+    "section": "The base / Basque ordinary calculation",
+    "text": "| Micro/small default | 15% base | 15% base | 15% base |",
+    "references": {}
+  },
+  {
+    "line": 215,
+    "section": "The base / Basque ordinary calculation",
+    "text": "| Micro/small with employees and maintained/increased average indefinite staff | 13% base | **15% base** | 13% base |",
+    "references": {}
+  },
+  {
+    "line": 217,
+    "section": "The base / Basque ordinary calculation",
+    "text": "Sources: [B/A/G art.59](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54). Additional bank/partially-exempt/hydrocarbon minima are in art.59. Do not describe this as the Pillar Two 15% top-up tax: the precise complementary-tax exception is province-specific. Bizkaia art.59.6 refers to preceding paragraphs3–5 and Álava art.59.5 to paragraphs3–4; Gipuzkoa art.59.6 literally refers to the preceding **two** paragraphs4–5. Do not silently extend the Gipuzkoa wording to paragraph3 without a supported interpretation. Keep a large-group case for the corresponding local and complementary-tax analysis. A five-year art.67 credit-block election recomputes the corresponding local minimum across that block and adds any year-five shortfall plus 5%; the election does not extinguish the floor.",
+    "references": {}
+  },
+  {
+    "line": 219,
+    "section": "The base / Basque ordinary calculation",
+    "text": "For **Bizkaia and Gipuzkoa**, regulation article 33 bis expressly separates the article 59.4 investment test from full entitlement to the corresponding articles 61–65 credit. Making an investment of a type described in those articles can satisfy the investment limb even where the conditions required to claim that credit are not fulfilled. Test the investment and workforce limbs independently, and calculate any generated credit separately. For example, assume an ordinary 24% company with no staff-maintenance/increase limb, positive base EUR 100,000, and EUR 5,000 of new business machinery of an article 61 asset type. If preceding net qualifying assets are EUR 100,000 and there are no other investments, EUR 5,000 fails the over-10%-or-over-EUR-5m article 61.3(d) credit threshold, so this investment generates no article 61 credit. It can nevertheless establish the article 59.4 investment limb under B/G regulation article 33 bis: the applicable ordinary-credit floor is EUR 17,000 rather than EUR 19,000. With a separately eligible EUR 6,000 ordinary-bucket credit, gross quota EUR 24,000 and bucket capacity EUR 8,400, a EUR 6,000 claim leaves EUR 18,000 and satisfies the 17% floor. This illustration creates no credit on the EUR 5,000 investment. An enacted Álava equivalent to the broader B/G33bis deeming rule has not been established; the narrow own-statutory amount-threshold method below does not assume one. Sources: B/G article 59.4, article 61.3(d), and BR/GR article 33 bis in the laws/regulations linked in Sources.",
+    "references": {}
+  },
+  {
+    "line": 223,
+    "section": "The base / Álava: the ordinary amount-threshold investment case",
+    "text": "**Source-derived interpretation, limited to the amount gate.** Álava article 59.4 tests whether an actual investment is capable of generating an article 61–65 credit, separately from calculating and using that credit. For an ordinary company taxed at the general 24% rate, an otherwise qualifying new business machine meets that investment limb where the **only** failed credit-generation condition is article 61.3(d)'s aggregate amount threshold. This is the identified interpretation of Álava's own potential-investment wording and article 61.1/3, not a B/G article 33 bis transplant or an express enacted Álava deeming rule. Its own article 53.2 and operative regulation article 32 bis expressly require actual-credit eligibility and all conditions for the separate productive reserve; that different test is not imported into article 59.4. Do not extend this amount-only method to a private, nonbusiness, used, land, unproved or otherwise unsuitable asset. [Own NF 37/2013 articles 53/59/61](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [own DF 41/2014 article 32 bis](https://web.araba.eus/documents/d/araba/indice-reglamento-del-impuesto-sobre-sociedades-cas-5-pdf).",
+    "references": {}
+  },
+  {
+    "line": 225,
+    "section": "The base / Álava: the ordinary amount-threshold investment case",
+    "text": "Assume taxable base EUR 100,000, unadjusted liquid quota EUR 24,000, current indefinite staff 1 against prior 2, no staff increase, no complementary-tax exclusion, no surcharge or other quota adjustment, no minimum-exempt credit and no five-period block election. A new business machine costing EUR 5,000 meets the other article 61 asset conditions. Relevant prior net assets of EUR 100,000 and no other investment make it fail the strictly-over-10%-or-over-EUR-5m credit threshold. Generated article 61 credit is zero. Under the stated source-derived investment interpretation, the floor is EUR 17,000 instead of EUR 19,000. A separately entitled, unexpired EUR 6,000 ordinary-bucket credit fits the EUR 8,400 article 67 capacity and leaves EUR 18,000; without the investment limb only EUR 5,000 could be used and EUR 1,000 would carry. With a separately entitled EUR 8,000 credit, use EUR 7,000 and carry EUR 1,000. The machine itself creates no EUR 500 credit. With no separate credit, quota remains EUR 24,000: 17% is a credit-use floor, not the ordinary tax rate or a cash refund. Actual credit-origin, expiry, asset/workforce and retention evidence remain necessary. [Own articles 59/61/67](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf).",
+    "references": {}
+  },
+  {
+    "line": 227,
+    "section": "The base / Álava: the ordinary amount-threshold investment case",
+    "text": "The current 19% default for 2026–2035 follows [NF 21/2025 article 3.Quinto](https://www.araba.eus/botha/Boletines/2025/147/2025_147_03861_C.pdf), despite its separate permanent 17% amendment; [NF 3/2025 article 12.Cuatro/DF1](https://www.araba.eus/botha/Boletines/2025/044/2025_044_01182_C.pdf) supplies article 59.4's 2026 effect. Álava's [July 2026 draft 45/2026](https://irekia.araba.eus/documents/2908004/21155021/26DF45.docx/f6429a06-3775-1778-d5f0-32866ad43181?t=1785328228887) proposes a broader article 33 bis clarification, but enactment has not been established. The amount-only method above does not rely on that draft having legal effect and does not settle other failed-credit-condition populations, excluded taxpayers or block elections.",
+    "references": {}
+  },
+  {
+    "line": 231,
+    "section": "The base / Navarra ordinary calculation and 2026 hard floors",
+    "text": "Apply the correct rate to `BL`, the base after reductions/losses, to obtain gross quota. Subtract eligible bonuses and international double-tax credits under arts.54–57. Let `Z = BL − bonuses/rate`. Art.53's starting minimum is `18%*Z` for a general-rate company (including the conditional 25%), `16%*Z` for small/qualifying art.51.2 entities, or `13%*Z` for microcompanies. Let `F` be international double-tax credits actually used; let `B=film/financing credits actually used + u×R&D/innovation credits actually used`, where `u=0.5` for general and `u=1` for art51.1(b)/51.2. Set `p=18%/16%/13%` and `H=13%/11%/10%` for general/small-or-art51.2/micro respectively. If `B=0`, compute `minimum=max(0,p×Z−F)`: art53.2.4's restriction on reductions3(b)/(c) does not top up a foreign-credit-only case. If `B>0`, compute `minimum=max(0,H×Z,p×Z−F−B)`. Only credits actually claimed enter B, not unused generated balances. Candidate claims must leave actual effective quota at least that minimum and satisfy art67's separate order/bucket constraints.",
+    "references": {}
+  },
+  {
+    "line": 233,
+    "section": "The base / Navarra ordinary calculation and 2026 hard floors",
+    "text": "For a general company with Z100,000 and foreign credit10,000 alone, the computed minimum is8,000, not13,000. With foreign6,000 and film5,000, the minimum is13,000 and effective quota is28,000−6,000−5,000=17,000. With foreign16,000, liquid quota12,000 is already below13,000: leave film/R&D credits unclaimed if no positive claim can satisfy the result floor, preserving the foreign credit. This is the direct conditional application of art53.2.3(a) versus3(b)/(c) and ordinal4, not an asserted official worked ruling or a universal top-up of foreign relief ([Navarra art53](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356#ar-53), [art67](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356#ar-67)).",
+    "references": {}
+  },
+  {
+    "line": 235,
+    "section": "The base / Navarra ordinary calculation and 2026 hard floors",
+    "text": "Apply arts.58,64.B and 66 credits under their combined 25%-of-liquid-quota ceiling (art.58 before activity has its exception), prior carry before current year. Follow with the unlimited credits in art.67.5's statutory order, while respecting the art.53 minimum and the film/R&D amounts used in its computation. Keep a reconciliation of generated credit, claimed credit, expired credit and 15-year carry. Finally deduct withholdings and instalments; refund an advance-payment excess. Do not copy the Basque 35%/70%/50% buckets or 30-year carry. [N arts.52–53,67–70.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 241,
+    "section": "The base / Investment, research and employment",
+    "text": "Determine eligibility before applying the quota limits above. For every claim retain invoices, asset commissioning dates, project/worker certification, grants, related-party information and continued-eligibility evidence.",
+    "references": {}
+  },
+  {
+    "line": 243,
+    "section": "The base / Investment, research and employment",
+    "text": "The Basque art.67.3 general credit base excludes interest, indirect taxes/surcharges, construction margin, tendering technical costs, dismantling/removal costs and land. Cap it at market value, require accounting recognition and ordinarily subtract the grant amount multiplied by (100% minus the company's rate). Apply express special overrides: Álava/Gipuzkoa art.65.3 environmental credits and the applicable bicycle provisions subtract grants in full. Bizkaia art.65 does not contain that environmental subsidy override, so its ordinary art.67.3 reduction is the grant multiplied by (100% minus the company's tax rate). Álava art.62.3 expressly overrides art.67 for the funded investments within its R&D base. B/G art.64 and A art.64 also exclude listed travel, training, project-documentation/management-certification, administration and overhead costs from R&D/innovation bases. Investment credits normally arise on commissioning; the long-order payment election has the one-month contract-notification requirement. Maintain eligible assets for five years, or three for movables, unless useful life is shorter, with the specified three-month replacement exception; earlier disqualification recovers the credit plus interest. Navarra chapter-III bases instead subtract grants in full under art.67.2 and use its own retention/time rules. [B/A/G arts.62–64,67; N arts.58–67.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 245,
+    "section": "The base / Investment, research and employment",
+    "text": "| Credit | Bizkaia / Álava / Gipuzkoa | Navarra |",
+    "references": {}
+  },
+  {
+    "line": 247,
+    "section": "The base / Investment, research and employment",
+    "text": "| New fixed business assets | Art.61:10% qualifying new assets, qualifying rehabilitated industrial premises, software and specified concession infrastructure;5% qualifying improvements/operating-lease fit-out. Account as fixed asset; ordinarily at least five-year table life except computers; vehicle eligibility restrictions; qualifying investment must exceed 10% of pre-existing net qualifying assets **or EUR 5m**. Industrial rehabilitation has a 25%-cost condition | Arts.58–59:10% new tangible business assets, excluding land and disallowed passenger vehicles; investment at leastEUR 6,000 and over 10% of preceding net tangible assets, reduced to 5% if investment exceedsEUR 300,000; commissioning generates credit except long-order special timing |",
+    "references": {}
+  },
+  {
+    "line": 248,
+    "section": "The base / Investment, research and employment",
+    "text": "| R&D expense | Art.62:30% ordinary spend,50% excess over previous two-year average; qualifying substantial environmental-reduction projects 35%/55%. Additional 20% designated exclusive researchers/approved research-contract costs and local categories.10% exclusive R&D tangible/intangible investment excluding real estate/land | Art.61:40% qualifying R&D spend plus 10% designated exclusive qualified researcher/approved research-provider costs; linked-party purchases limited to substantiated provider cost |",
+    "references": {}
+  },
+  {
+    "line": 249,
+    "section": "The base / Investment, research and employment",
+    "text": "| Technological innovation | Art.63:15% qualifying engineering/design/advanced-technology costs;20% approved research-provider projects and qualifying innovation-management certification. Advanced-technology acquisition base cappedEUR 1m and excludes related-party purchases | Art.61.3:15%, increased by 5 points for approved research-provider projects and specified certification; advanced technology acquisition base cappedEUR 1m, related-party exclusion |",
+    "references": {}
+  },
+  {
+    "line": 250,
+    "section": "The base / Investment, research and employment",
+    "text": "| Job creation, ordinary indefinite hire | For indefinite hires formalised in 2026: Bizkaia art.66 as overlaid by B26 art.5:35% gross annual salary capped 60% annual SMI; the special-difficulty third-paragraph route including under 30/over 45 retains 50% gross salary capped annual SMI. Álava/Gipuzkoa art.66 as overlaid by A26 art.2/G26 art.5: EUR 7,700 per eligible hire, doubled to EUR 15,400 for prescribed special-difficulty groups | Current ordinary LF 26/2016 has no equivalent general Basque art.66 job-creation amount. Use its specific employer-pension credit and any separately eligible special incentives |",
+    "references": {}
+  },
+  {
+    "line": 252,
+    "section": "The base / Investment, research and employment",
+    "text": "Sources: [B/A/G arts.61–66; B26 art.5; A26 art.2; G26 art.5; N arts.58–61,66](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Bizkaia DFN1/2026](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/04/20/I-441_cas.pdf), [Álava DNUF2/2026](https://www.araba.eus/botha/Boletines/2026/045/2026_045_01089_C.pdf), [Gipuzkoa DF-Norma2/2026](https://www.gipuzkoa.eus/documents/2456431/8.813641E7/DF-Norma%202-2026%20medidas%20para%20mitigar%20Crisis%20Oriente%20Medio.pdf/925d814a-7f73-6e58-f249-a1437b1d76bf), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356). Basque qualifying hire salary must exceed 170% of SMI at hiring; scale part-time relief, verify the indefinite-headcount increase and maintenance for the next three concluding periods, salary maintenance, related-entity aggregation, replacement rules and recapture. Álava additionally requires the administrator's equal-pay declaration. A replacement preserving an old claim cannot produce a duplicate credit. Use the SMI applicable at hiring, not an unsourced frozen annual amount. [B/A/G art.66.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 254,
+    "section": "The base / Investment, research and employment",
+    "text": "R&D is scientific/technological activity, not any software expenditure. Exclude routine maintenance, ordinary production, minor aesthetic changes, market surveys and staff training outside statutory qualifying activity. Basque non-EU/EEA work is bounded by the principal-EU/EEA activity and 25%-of-total conditions; Navarra requires eligible work in Spain/EU/EEA. Navarra applicants must submit the project and detailed budget to the competent innovation authority, request the report, and, for unsubsidised projects, file expense substantiation by the return deadline; a missing required submission loses the claim. Follow the special two-prior-period generation timing and negative-report recovery rules. Basque binding-report/financing methods require their own arts.64/64 bis and regulation workflow. [B/A/G arts.62–64 bis; N art.61.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 256,
+    "section": "The base / Investment, research and employment",
+    "text": "Navarra's employer-pension credit is 10% of qualifying contributions imputed to employees with gross pay below EUR 27,000; for pay at/above EUR 27,000, use the contribution proportion attributable to EUR 27,000. Test art.66's RETA top-up restriction separately. It is an ordinary quota credit in the combined 25% bucket, not an increase in the corporation's nominal tax rate or a second deduction of wages. [N arts.66–67.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 258,
+    "section": "The base / Investment, research and employment",
+    "text": "Navarra declared-social-interest sponsorship credits are marginal 30% throughEUR 30,000,35% on the nextEUR 30,000 and 40% above EUR 60,000, with 40% on qualifying women-only sport sponsorship, recipient reporting and the gambling exclusion. Renewable-energy investment starts at 15%, with uplifts capped at 30%: ten points for zero-GHG electricity generation, ten for qualifying storage over2kWh, five for a microgrid with two renewable sources, five for shared self-consumption/energy communities; thermal hydraulic heating/hot-water connection adds five points and replacing gas with renewable hydrogen adds up to fifteen according to the qualifying use. Apply the mandatory-building-installation exclusions, special70%-of-cost mixed hot-water/heating rule and heat-pump renewable-share calculation, supported by the energy-authority report; new qualifying electric vehicles 30%, plug-in hybrids 5%, with category base capsEUR 35,000(M1/N1), EUR 5,000(L1e/L2e), EUR 10,000(L3e/L4e/L5e), EUR 15,000(L6e/L7e), EUR 150,000(N 2/N 3). Charging systems give 15%, plus five points for public access, two points for 7.4–22 kW or five points over 22 kW; the base ceilings are EUR 5,000 normal-power, EUR 25,000 high-power up to 50 kW and EUR 200,000 above 50 kW, supported by the energy-authority report. The excess over the relevant vehicle/charger base cap can qualify separately under art.58, avoiding duplicate base. The new 2026 decarbonisation credit is 15% of qualifying new tangible business investment achieving at least 30,000 kWh/year final-energy savings, less the amount received for transferring the energy savings; cap the credit at EUR 1.5m. Generation follows the resolution registering the energy-saving certificates, supported by the competent energy authority's report. Keep art.64 investments separately identified as fixed assets for five years or shorter useful life and apply the statutory leasing, retention and clawback conditions. Separate these from real-estate energy improvements and from the personal income-tax vehicle credit. [N arts.63–64.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 262,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "The separate women/under-36 indefinite-hire method is B art.66 decies and A/G art.66 octies. For contracts formalised in 2026 the emergency instruments raise the salary percentage from 35% to **45%**, retaining the annual-SMI credit cap. Starting pay must exceed SMI by at least 10%, and the statutory three-year follow-through must reach pay exceeding then-current SMI by at least 70%. Increase and maintain the required indefinite workforce for the next three concluding periods; apply the part-time fractions, suspension/replacement rules, related-entity anti-duplication and recapture plus interest. Gipuzkoa expressly makes this credit incompatible with art.66; B/A art.67.6 also prevents two chapter-III credits for the same expense. Do not add this to the ordinary-hire credit on the same salary. [B art.66 decies; A/G art.66 octies; B26 art.5; A26 art.2; G26 art.5.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Bizkaia DFN1/2026](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/04/20/I-441_cas.pdf), [Álava DNUF2/2026](https://www.araba.eus/botha/Boletines/2026/045/2026_045_01089_C.pdf), [Gipuzkoa DF-Norma2/2026](https://www.gipuzkoa.eus/documents/2456431/8.813641E7/DF-Norma%202-2026%20medidas%20para%20mitigar%20Crisis%20Oriente%20Medio.pdf/925d814a-7f73-6e58-f249-a1437b1d76bf)",
+    "references": {}
+  },
+  {
+    "line": 264,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "All three provinces provide a new conciliation-plan credit: 5% of liquid quota in the introduction year capped EUR 2,500; 15% in the first year at least one third of staff use a qualifying measure capped EUR 7,500. Micro/small companies increase the two percentages by five points to 10%/20%, retaining those caps. The plan must contain new flexible-hours, continuous-day, telework, leave/reduced-hours, free childcare or commuting measures beyond legally mandatory minimums, available to every eligible worker; supply the required responsible declaration. Calculate the two separate statutory trigger years and apply the ordinary art.67 bucket/minimum. [B art.66 sexies; A art.66 quinquies; G art.66 quater; their current implementing regulations.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 266,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "Preferred EPSV employer contributions under collective bargaining generate 15% credit when imputed contributions are at least 1.5% but below 2.5% of annual gross pay, 20% from 2.5% to below 4%, and 25% at least 4% or for the specified under-36 employee contributions. Other eligible employment social-provision systems generate 10% where contributions reach at least 1.5% of annual gross pay or favour under-36 employees, including qualifying EU/EEA equivalents. Use the local regulatory annual-gross-pay denominator and the age-at-accrual provisions; the base is qualifying contributions actually imputed from collective bargaining. These permanent methods apply in 2026; the larger credits expressly confined to 2025 do not. [B arts.66 septies/octies and DA 31–33; A arts.66 sexies/septies; G arts.66 quinquies/sexies and implementing regulations.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 268,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "For tax periods **beginning from 1 January 2025 through 31 December 2029**, qualifying tax-imputed collective-bargaining contributions **below 1.5%** of the employer's annual gross pay generate a **10% credit for preferred EPSV plans** or **5% for other employment systems**. Apply articles 59 and 67, including the quota limits and the prohibition on claiming two chapter-III credits for the same expense. Keep the permanent under-36 treatment when applicable; do not add a transitional credit on the same contribution. A plan outside the preferred EPSV form, including an EU/EEA employment system, follows the preferred permanent bands and preferred 10% transitional route if its specifications satisfy the statutory preferred-plan requirements. Foreign location alone does not establish that equivalence. Sources: B DA 31–33, A DA 28–30 and G DA 26–28 in the current laws linked above.",
+    "references": {}
+  },
+  {
+    "line": 270,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "For example, assume a 2026 period, an employee aged 40, an established annual-gross-pay denominator of EUR 100,000 and EUR 1,000 of qualifying imputed employer contributions. The contribution ratio is 1%, so the generated credit is EUR 100 for the preferred or qualifying preferred-equivalent route, and EUR 50 for an ordinary other employment system. At exactly EUR 1,500 of contributions, the permanent 1.5% threshold is met: preferred credit is EUR 225 and the other-system credit is EUR 150. These are generated amounts before the separate articles 59/67 usage limits; a below-1.5% contribution is not automatically a zero-credit case.",
+    "references": {}
+  },
+  {
+    "line": 272,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "Commuter bicycles in all three provinces give 10% of qualifying fixed-asset investment: per-bike base maximum EUR 3,000 for the prescribed electric-assisted bicycle and EUR 500 otherwise; total bike base EUR 15,000 for micro/small companies, EUR 20,000 otherwise. Deduct grants in full and record these assets separately. Bizkaia/Gipuzkoa also include parking installations at 10%, base capped EUR 10,000. Álava's art.61 bis covers bicycles and its separate art.61 ter charging-point credit is 15%, plus five points for public access, plus two points for 7.4–22 kW or five for over 22–under 50 kW; the access and applicable power uplift can cumulate. Charging base is capped EUR 5,000 normal/EUR 25,000 high-power per point and total annual credit EUR 10,000. Observe the technical commissioning rules. [B art.66 nonies; A arts.61 bis/61 ter; G art.66 septies.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 274,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "The environmental art.65 credit in each province is 35% for qualifying new renewable/hydrogen/renewable-fuel generation, consumption, distribution, clean-technology-list equipment, carbon capture for the named permitted destinations, and material recycling/circularity investments. The separate 15% branch covers approved contaminated-soil work and the named applied projects (energy recovery where material recovery is unavailable, voluntary ecosystem regeneration beyond compulsory measures, water saving/treatment, best/emerging techniques and eligible sustainable transport). Match the project to a statutory category, obtain the specified regional/provincial certification or reasoned report, apply Bizkaia's art.67.3 subsidy reduction or Álava/Gipuzkoa's express full-grant reduction in art.65.3, prevent incompatible category overlap and apply the 50%-of-residual-quota bucket/minimum exception. Bizkaia and Álava state a EUR 40,000 clean-list passenger-car base cap; Gipuzkoa excludes principal waste-management businesses from the named energy-recovery branch. Financed-credit transfers under art.65 bis need their own signed contract, certification, communication and recipient limit and do not let both project owner and financer claim the transferred amount. [B/A/G arts.65–65 bis; G26 art.8 for revised timing of financed costs.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Gipuzkoa DF-Norma2/2026](https://www.gipuzkoa.eus/documents/2456431/8.813641E7/DF-Norma%202-2026%20medidas%20para%20mitigar%20Crisis%20Oriente%20Medio.pdf/925d814a-7f73-6e58-f249-a1437b1d76bf)",
+    "references": {}
+  },
+  {
+    "line": 276,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "For the environmental subsidy calculation, assume EUR 100,000 of otherwise eligible non-vehicle investment, a EUR 20,000 funding grant and a company taxed at 24%. Bizkaia's ordinary article 67.3 reduction is `20,000 × (100% - 24%) = EUR 15,200`; the base is EUR 84,800 and its generated 35% credit is EUR 29,680. Álava/Gipuzkoa article 65.3 instead subtract the full EUR 20,000: base EUR 80,000 and generated credit EUR 28,000. The EUR 1,680 difference is a territorial base rule, before quota limits. Sources: each province's article 65 and Bizkaia article 67.3, in the current corporate laws linked above.",
+    "references": {}
+  },
+  {
+    "line": 278,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "Bizkaia and Álava art.66 bis give 25% of eligible new/recent SME-share investment, increased to 35% for the statutory innovative or silver-economy company category. Only the investment portion within 25% total investor/related-person ownership can form the credit base. Require an eligible unlisted company form, real new business and its people/assets, acquisition at formation or in the following five years (seven for the innovative route, with its high-initial-risk-financing exception), retention **longer than five years**, the issuing company's certificate and innovation evidence where relevant. Exclude continuation/restructuring without a real new activity, enterprises in difficulty, pending aid-recovery orders and excess risk-finance cases. The same funds cannot generate two claims; recover the credit plus interest on failure. Bizkaia expressly makes this a return election that cannot be changed after the voluntary deadline. Do not give Gipuzkoa this corporate credit by copying art.66 bis, which there is a culture provision. [B/A art.66 bis.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf)",
+    "references": {}
+  },
+  {
+    "line": 280,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "Bizkaia's separate silver/care-economy vocational-training credit is 10% of qualifying employee training expense, plus 15% of the excess over the previous two-year average. It requires the statutory sector/activity classification and skills/update/reskilling purpose; exclude employee remuneration and follow the implementing subject/course conditions. [B art.66 ter and BR.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Bizkaia DF203/2013](https://www.bizkaia.eus/documents/880307/15187815/ca_203_2013.pdf/5d2f80fc-9d5b-0f71-b578-56da0a5a0c50?t=1679483614806)",
+    "references": {}
+  },
+  {
+    "line": 282,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "Navarra art.62's R&D financing method requires an unrelated financer, a prior signed financing contract identifying parties, project, budget and funding, no financer ownership of project-result IP, a requested/obtained technical report before contract signature, and joint communication of the report/request and contract before the end of the period generating the credit. The financer claims the transferred qualifying credit limited to **1.20 times its paid financing**; the project company retains the excess and cannot also claim the transferred portion. The financer brings the positive excess of credit used over financing paid into taxable income. Apply the art.53 minimum and art.67 sequencing to the actual claims. [N arts.39,61–62.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 284,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "Navarra foreign-tax credits in arts.56–57 have a **ten-year** insufficient-quota carry, unlike chapter-III investment credits' fifteen years. Credit the lower of actually paid equivalent foreign tax (within treaty entitlement) and Navarra tax attributable to the foreign income; gross up the foreign tax in the income and separate country baskets and each PE as required. Any eligible undeducted foreign tax treated as a business expense follows art.56.2. Do not claim participation/PE exemption and foreign credit for the same income. [N arts.35–36,56–57.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 286,
+    "section": "The base / Ordinary social, commuting and environmental credits",
+    "text": "Culture, credit financing and specialised IP/reinvestment routes remain additional methods, not universal deductions. Use the separately identified eligibility, contract and communication requirements before applying a specialist claim.",
+    "references": {}
+  },
+  {
+    "line": 292,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "All three current Basque corporate statutes add this branch for general 24%, bank 28% and hydrocarbon 31% taxpayers other than art.13 medium companies; ordinary micro/small 20% companies do not fall within the named rate categories. Its operation is more specific than adding 1–4 points to taxable income. Statutory wording applies the additional percentage to the **part of gross quota corresponding to the taxable-base increase derived from the excess**. [B art.57 bis and DA 34; A art.56.7; G art.56.7 and art.57.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 294,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "For Bizkaia/Gipuzkoa, start from pre-tax financial-statement profit before depreciation and impairment, minus the income adjustments in chapterIII of titleIV and approved exceptional results. Compare current positive measure `R` with mean `M` of the previous three positive measures. Regulations exclude any zero/negative result in current/prior three years, the first four periods from starting/restarting after at least a year inactive, and claims to the expressly listed investment/research/environment/employment credits in current/prior three periods. Exceptional-result exclusions require the local Director-General's decision. Tax groups need the regulation's consolidated-result/history rules; do not mechanically add individual surcharges. [BR DA 10; GR DA 9.](https://www.bizkaia.eus/documents/880307/15187815/ca_203_2013.pdf/5d2f80fc-9d5b-0f71-b578-56da0a5a0c50?t=1679483614806), [Gipuzkoa DF17/2015](https://www.gipuzkoa.eus/documents/2456431/8.0761381E7/DF%2017-2015%20%282026%29.pdf/ad233e14-7236-0450-948f-50a669df270f)",
+    "references": {}
+  },
+  {
+    "line": 296,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "The growth slices are `(1.35 M,1.50 M]` at 1%,`(1.50 M,1.75 M]` at 2%,`(1.75 M,2 M]` at 3%, and above`2 M` at 4%, applied to the corresponding gross-quota portion. Use the expressly labelled attribution-ledger interpretation below to reconcile fully taxable excess profit to its corresponding gross-quota portions; this does not assume that every accounting-profit slice is taxable or permit a blanket average allocation. [B art.57 bis; A/G art.56.7.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 298,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "Álava's own article 56.7 supplies the charging bands. The own-law net-result worksheet below supplies a labelled ordinary-accounting and tax-attribution interpretation for its stated PGC/current-tax population. A special delegated measurement equivalent has not been established from the retained regulation or the fresh operative amendments; the worksheet does not claim one. Do not import B/G's pre-tax/depreciation definition or regulatory exclusions. The delegated comparison and any controlling own definition or contrary interpretation remain expressly distinguished from an assumed suspension or zero charge. B DA34, A DA31 and G DA29 disapply arts.59.3–5 and67.1 for applying this surcharge and identify the fiscal group as taxpayer; they do not change the nominal rate in art.56.1. Gipuzkoa GR DA9 currently names art.66 quinquies in its exclusion list. Sources: the own statutes and regulations linked above.",
+    "references": {}
+  },
+  {
+    "line": 301,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "**Ordinary attribution-ledger method, reasoned from each own primary law.** This interpretation reads B57bis/G56.7 together with each province's arts.15,31 and57 and its own profit-measure regulation. First record the actual local eligibility and exclusion tests above, each of the four period measures, `M`, the nominal rate and the full accounts-to-tax reconciliation. Define accounting growth slices `E1=max(0,min(R,1.50M)-1.35M)`, `E2=max(0,min(R,1.75M)-1.50M)`, `E3=max(0,min(R,2M)-1.75M)`, `E4=max(0,R-2M)`. For each slice record the taxable-base increment `I_j` actually derived from that profit, with its identifiable tax additions, exclusions, deductions and used losses. Apply the selected law's tax treatment to those facts; an unsupported allocation is not a verified input. For a constant general24% rate, the corresponding gross-quota portion is `q_j=24% × I_j` and the additional quota is `S=1%q1+2%q2+3%q3+4%q4`. Ordinary gross quota plus `S` is the increased gross quota. This is a source-derived computation, not a published provincial algebra ruling. Álava's own articles 15/31/56.7/57 also support the conditional quota step; the separate net-result worksheet below derives its own `R/M/I_j` from the stated fully taxable PGC/current-tax ledger rather than stipulating approved measurements. Other accounting and tax-adjustment populations remain bounded as stated there. Sources: B/A/G arts.15,31,56–57 and B57bis, BR DA10/GR DA9, linked above.",
+    "references": {}
+  },
+  {
+    "line": 303,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "A fully taxable incremental-profit ledger supplies a positive ordinary B/G case. Assume a standalone general24% trading company which fails the art.13 medium-company size tests, has been active for more than four periods, has no group/restart/exceptional-result issue, and has claimed none of its own regulation's excluded credits in any of the four periods. Each previous period has pre-tax profit80,000 and deductible depreciation20,000, giving own `R=100,000` and `M=100,000`. Current pre-tax profit190,000 plus deductible depreciation60,000 gives `R=250,000`; no impairment, income adjustment, reserve deduction, other tax difference, used loss or credit changes these figures. The actual operating-profit ledger establishes that the60,000 depreciation belongs to the continuing business and that the115,000 profit above `1.35M` consists of additional fully taxable income with no attributable expense or tax adjustment. Thus the underlying business at `R=135,000` has taxable profit75,000, and adding the four excess slices15,000/25,000/25,000/50,000 reconciles exactly to actual taxable base190,000. This is factual attribution of the excess, not a rule assigning every company's depreciation to its underlying business. Sources: each own15/16/31/56.1/57 and surcharge/regulatory provisions above; art.13 tests are supplied earlier.",
+    "references": {}
+  },
+  {
+    "line": 305,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "| Ledger component | Accounting-profit slice | Attributable taxable increment |24% gross-quota portion | Additional percentage | Additional quota |",
+    "references": {}
+  },
+  {
+    "line": 307,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "| Above35% to50% |15,000 |15,000 |3,600 |1% |36 |",
+    "references": {}
+  },
+  {
+    "line": 308,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "| Above50% to75% |25,000 |25,000 |6,000 |2% |120 |",
+    "references": {}
+  },
+  {
+    "line": 309,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "| Above75% to100% |25,000 |25,000 |6,000 |3% |180 |",
+    "references": {}
+  },
+  {
+    "line": 310,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "| Above100% |50,000 |50,000 |12,000 |4% |480 |",
+    "references": {}
+  },
+  {
+    "line": 311,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "| Total excess |115,000 |115,000 |27,600 | |816 |",
+    "references": {}
+  },
+  {
+    "line": 313,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "Ordinary gross quota is `190,000 ×24%=45,600`; increased gross quota is `45,600+816=46,416`. Assuming the only accounting tax expense is that current charge, net accounting profit143,584 plus nondeductible tax expense46,416 reconciles to pre-tax/taxable profit190,000, and adding depreciation60,000 recovers `R=250,000`. The surcharge is a quota increase, not a deduction from taxable income. All amounts here are exact whole euros; the example establishes no intermediate or return-field rounding convention. Applying `BI/R` to every slice would instead produce620.16 without an attribution basis; using190,000 as `R` would produce264 using the wrong growth measure; applying the additional percentages directly to the115,000 profit slices would produce3,400 on the wrong charge base. The816 result follows the stated ledger and own gross-quota wording. Sources: each own15/31/57 and surcharge provisions above.",
+    "references": {}
+  },
+  {
+    "line": 315,
+    "section": "The base / Extraordinary-profit surcharge2026–2030",
+    "text": "For a different case, retain a reconciliation showing where depreciation/impairment, income adjustments, reserves, interest restrictions and used losses actually affect the increment; neither whole-company `BI/R` averaging nor automatic `I_j=E_j` supplies missing facts. The ordinary method is computable where the attribution is established, including the fully taxable ledger above. A disputed attribution or interaction with a non-linear adjustment needs its own reasoned legal allocation before use; the Guide does not invent a universal allocation order. Actual zero/negative-history, excluded-credit and startup cases follow the own B/G regulation rather than this positive illustration. Álava's separate ordinary net-result interpretation follows below; its own delegation and contrary-interpretation limit remain stated. Sources: own15 and surcharge/regulatory provisions above.",
+    "references": {}
+  },
+  {
+    "line": 319,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "**Own-law interpretation for a fully taxable PGC company.** Álava article 56.7 uses an accounting result and delegates comparison terms, but does not expressly defer its 2026–2030 charging command until a regulation exists. This worksheet gives the undefined term its ordinary technical accounting meaning under own NFGT article 11.1–2 and NF 37/2013 article 15.3: use the final net result in the applicable PGC profit-and-loss account, including its income-tax expense. Do not add back depreciation or impairment to that measure under Bizkaia/Gipuzkoa's different regulation. This is a reasoned interpretation of Álava's own operative text and accounting incorporation, not an identified special implementing definition, binding tax direction or ruling. [Own NFGT article 11](https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf), [NF 37/2013 articles 15/31/56–57](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas), [Código de Comercio article 35](https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627#a35), [PGC NRV 13.4 and normal profit-and-loss model](https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884).",
+    "references": {}
+  },
+  {
+    "line": 321,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "Apply this bounded worksheet to a standalone mature ordinary company subject to Álava's general 24% rate, outside article 13 medium-company status, using the same PGC basis and three actual positive prior-period net results. Establish the arithmetic mean `M` from those accounts. For the current year, require that all pre-tax profit `E` is taxable, all non-tax expenses including the stated depreciation are deductible, and the only accounts-to-tax correction is the current corporate-tax expense. There are no current credits, used losses, reserves, deferred-tax movements, tax charged directly to equity, interrupted operations or other tax differences in this worksheet. These are explicit input bounds, not a statement that other ordinary companies owe no surcharge.",
+    "references": {}
+  },
+  {
+    "line": 323,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "PGC NRV 13.4 includes current and deferred tax in the profit-and-loss tax expense, subject to its express exceptions; the current-only conditions above eliminate those additional interactions. Own article 31.1(b) then adds back the current corporate-tax expense, including this surcharge, when determining taxable base. With `t=0.24`, additional quota `S`, and final net accounting result `R`, the current ledger is `BI=E`, `Q=t×E+S` and `R=E−Q`. The surcharge is not itself a deductible cost reducing `BI`. Álava's actual [OF 380/2026 annex for the 2025 return](https://www.araba.eus/botha/Boletines/2026/073/2026_073_01914_C.pdf) distinguishes net profit-and-loss result in field 1000 from the before-tax result in 1005. This corroborates the accounting distinction; it is not a tested 2026 surcharge form or an instruction applying this interpretation to article 56.7.",
+    "references": {}
+  },
+  {
+    "line": 325,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "**Taxable excess and the tax-expense feedback.** At the first trigger, net result `1.35×M` corresponds to pre-tax/taxable profit `E0=1.35×M/(1−t)`, with no surcharge yet. If `E≤E0`, this worksheet produces no surcharge. Above that point, under this selected correspondence reading, use net-result band widths `0.15×M`, `0.25×M`, `0.25×M`, then an unlimited remainder, with additional quota percentages `a=1%,2%,3%,4%` respectively. For a taxable increment `I` in one band, the ordinary quota is `t×I`, its surcharge is `a×t×I`, and the resulting net-accounting increment is `I−t×I−a×t×I`. Thus a finite net-result band width `W` admits taxable increment `W/(1−t−a×t)`. Starting with the actual taxable profit above `E0`, fill those taxable capacities sequentially; call the admitted amounts `I1` through `I4`. Calculate `S=t×(0.01×I1+0.02×I2+0.03×I3+0.04×I4)`. Finally reconcile the resulting `R`, `Q` and `BI`. This expressly derives the taxable increase from the accounting excess and its own article 31 tax correction; merely applying 24% to net slices would omit that correction. The correspondence and its feedback are a disclosed source-derived attribution interpretation, not a published provincial algebra rule.",
+    "references": {}
+  },
+  {
+    "line": 327,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "The bullets grammatically attach these percentage comparisons to the taxable-base increase derived from the accounting excess. This worksheet reads them as boundaries of that accounting excess before mapping each band to its corresponding taxable increase; a literal comparison of the taxable-base increase itself with those thresholds is a competing interpretation not settled by the cited accounting rules.",
+    "references": {}
+  },
+  {
+    "line": 329,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "**Separating ordinary ledger.** The calendar-2026 company has operated continuously for more than four years, is not in a fiscal group, has no special regime or exceptional transaction, and has verified turnover and assets of €60 million each and an average workforce of 300 for the article 13 tests. Each actual 2023–2025 account records pre-tax profit €100,000, current corporate-tax expense €24,000 and final net profit €76,000. Therefore `M=76,000`; the statutory net trigger is €102,600 and `E0=135,000`. Current operating income less deductible operating costs before depreciation is €250,000; deductible accounting depreciation is €60,000, giving `E=BI=190,000`. The €60,000 depreciation and other non-tax costs belong to the continuing business and do not change across the excess-profit increments, which consist of additional fully taxable operating receipts. Thus the underlying €135,000 taxable profit has €195,000 operating surplus before that depreciation, and the additional €55,000 receipts reconcile to current taxable profit. The current-only/no-other-difference conditions above apply.",
+    "references": {}
+  },
+  {
+    "line": 331,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "| Net-result band | Net band width | Attributable taxable increment | Additional quota |",
+    "references": {}
+  },
+  {
+    "line": 333,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "| Above 35% to 50% | €11,400 | €15,047.518479… | €36.114044… |",
+    "references": {}
+  },
+  {
+    "line": 334,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "| Above 50% to 75% | €19,000 | €25,158.898305… | €120.762712… |",
+    "references": {}
+  },
+  {
+    "line": 335,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "| Above 75% to 100%, used portion | €11,136.609445… | €14,793.583216… | €106.513799… |",
+    "references": {}
+  },
+  {
+    "line": 336,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "| Above 100% | €0 | €0 | €0 |",
+    "references": {}
+  },
+  {
+    "line": 337,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "| Total used excess | €41,536.609445… | €55,000 | €263.390555… |",
+    "references": {}
+  },
+  {
+    "line": 339,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "The exact surcharge is `29432841/111746` euros. Ordinary quota €45,600 plus surcharge gives `Q=45,863.390555…`; final net `R=144,136.609445…` falls in the stated third band. `R+Q=190,000` reconciles the taxable base, while net excess €41,536.609445… plus its associated ordinary/additional tax correction €13,463.390555… reconciles the €55,000 taxable excess. With no credits or advance payments the charge is €45,863.39 when displayed at cents. A consistent before-tax-only comparator using the prior €100,000 pre-tax mean would give surcharge €264; it is not the selected net-result method. Scaling all profit/depreciation figures by 100 scales that difference to approximately €60.94. Displayed decimals are for readability, not a certified intermediate or return-field rounding convention.",
+    "references": {}
+  },
+  {
+    "line": 341,
+    "section": "The base / Álava: labelled ordinary net-result interpretation",
+    "text": "Álava's enacted [NF 17/2025 final provision 1 / DA 31](https://web.araba.eus/documents/d/araba/norma-foral-del-imic) disapplies articles 59.3–5 and 67.1 for the surcharge and identifies the fiscal group as taxpayer. It does not define accounting result, replace the ordinary 24% nominal rate or justify reducing the surcharge by an ordinary credit-use ceiling. [NF 21/2025 article 3.Cuarto](https://www.araba.eus/botha/Boletines/2025/147/2025_147_03861_C.pdf) supplies the operative 2026–2030 article 56.7 wording. The exact delegated comparison remains relevant: a controlling own definition or contrary interpretation must be applied on its own terms. This worksheet does not establish a universal net-profit rule for banks, groups, zero/negative or incomparable history, exceptional items, deferred tax, current credits, losses or other adjustments. Their accounting/tax attribution and any authoritative challenge to the selected net-result reading remain precise ordinary limits; they are not resolved by a B/G transplant, a stipulated approved `R` or an assumed suspension of Álava's enacted charge.",
+    "references": {}
+  },
+  {
+    "line": 345,
+    "section": "Deadlines and filing",
+    "text": "Basque ordinary non-micro/non-small taxpayers pay one instalment in the first 25 calendar days of October for the period in progress on 1 October:5% of the taxable base in the last return whose deadline expired by 1 October, less withholdings/payments on that period's income. Annualise a shorter reference period. Micro/small companies and the specified 1%/0% entities are excluded; Gipuzkoa also excludes the statutory venture-capital entities. Álava explicitly addresses larger patrimonial/partially-exempt entities and AIE/UTE nonresident-share bases. Retain statutory nonbusiness-day/approved-form rules when scheduling the actual due date. [B/A/G art.130 bis.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 347,
+    "section": "Deadlines and filing",
+    "text": "Navarra's October instalment is due in the first 20 calendar days. Default: 30% multiplied by **(effective quota minus withholdings/payments on account)** of the last closed period whose return deadline has expired at the first day of that window. A short reference period is topped up proportionately with preceding periods to 12 months. Alternatively elect 20% of the first nine months' taxable base, less that nine-month period's withholdings; a non-calendar company uses the nine months preceding 30 September. Exercise the option expressly through the approved form within the payment window. Limited Nueva Empresa companies have the stated first-two-concluded-period exception; any amount-based exclusion needs the ministerial order. [N art.68.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 349,
+    "section": "Deadlines and filing",
+    "text": "Bizkaia OF 298/2026 now governs web filing for periods **starting from 1 January 2025**, through the provincial electronic application. A requested draft must be checked, completed and confirmed; its availability is not a filing. Match the version and period in that application and retain its filing receipt. This is a fetched current procedure, whereas operational 2027 changes remain to be checked. [BF.](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/06/15/I-678_cas.pdf)",
+    "references": {}
+  },
+  {
+    "line": 351,
+    "section": "Deadlines and filing",
+    "text": "Basque art.126 annual filing is normally within 25 calendar days after six months from year end, subject to the local model-availability provision; pay with the return under art.127. Navarra's art.75 window starts on day 1 of the fifth month after year end and ends on day 25 of the seventh month; it is not only a 25-day July window. A calendar 2026 company therefore has a statutory Navarra window 1 May–25 July 2027, subject to the actual filing-model/nonbusiness-day rules. Check the year-specific local 200/220 and advance-payment models before stating operational 2027 dates as final. [B/A/G arts.126–127; N arts.75–76.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)",
+    "references": {}
+  },
+  {
+    "line": 355,
+    "section": "Penalties and interest",
+    "text": "Use the procedure law of the administration assessing the liability. Voluntary correction before a qualifying prior request, an underpayment offence and enforced collection are separate events. Interest uses the applicable period's statutory rate and actual accrual days; do not transplant the common-territory monthly surcharge into a foral return.",
+    "references": {}
+  },
+  {
+    "line": 357,
+    "section": "Penalties and interest",
+    "text": "| Administration | Voluntary late correction and collection | Underpayment offence before conditional reductions | Primary law |",
+    "references": {}
+  },
+  {
+    "line": 359,
+    "section": "Penalties and interest",
+    "text": "| Bizkaia | Art. 27's **declaration-based assessment** surcharge is 5% of assessed payable quota, or 0.5% if the declaration is filed within the next three working days. It preserves the art. 203 exception. Under art. 26.7, late **self-assessments** accrue interest from the original deadline except when both voluntary filing and payment occur within six months. Art. 28 collection is 5%, reduced to 0.5% for full effective payment in the first three working days of the executive period; 20% applies after the notified enforcement order's extraordinary payment term expires. The two collection surcharges are incompatible. | Art. 196:100–250% of unpaid tax for a culpable self-assessment underpayment; qualifying voluntary regularisation is excluded. Art. 203 ordinary late-return offence:400, with separate census/information amounts and narrowly specified no-request reductions. Do not halve the ordinary400 by borrowing the State rule. | [NF 2/2005 arts. 26–28/196/203](https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca) |",
+    "references": {}
+  },
+  {
+    "line": 360,
+    "section": "Penalties and interest",
+    "text": "| Álava | Art. 27:5% within six months without interest; months7–12:5% plus interest from after the sixth month; beyond12months:10% plus interest from after the twelfth month. These voluntary routes exclude sanctions on their conditions. Art. 28 collection stages:5% before enforcement-order notification,10% where debt plus reduced surcharge are paid by its statutory term,20% otherwise. | Art. 195:50–150% without concealment,100–150% with concealment; actually withheld/on-account/repercuted amounts instead75–150%/125–150%. Concealment's debt incidence must exceed10%. The specified later wrong-period regularisation has a separate30% rule. | [NF 6/2005 arts. 26–28/195](https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf) |",
+    "references": {}
+  },
+  {
+    "line": 361,
+    "section": "Penalties and interest",
+    "text": "| Gipuzkoa | Art. 27:2% within three months;5% from the fourth through twelfth month;10% after twelve months. Unlike Álava, these exclude sanctions but **retain interest from the original deadline**. Art. 28 collection:5% before enforcement-order notification; reduced5% where debt plus surcharge are paid within its term;20% otherwise. | Art. 195:50–150% without concealment,80–150% with concealment; actually withheld/on-account/repercuted amounts75–150%/105–150%. Concealment's debt incidence must exceed10%. | [NF 2/2005 arts. 26–28/195](https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20%282026%29.pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2) |",
+    "references": {}
+  },
+  {
+    "line": 362,
+    "section": "Penalties and interest",
+    "text": "| Navarra | Art. 52.3:1% within the following month;5% after the first month but before three months have elapsed;10% after three but before twelve;15% beyond twelve plus interest after that twelfth month until payment. The earlier routes exclude interest and sanctions. Identify expressly one tax/return period and include only that period. Unpaid filing can also attract the executive-period collection surcharge. An improper refund has its own amount and clock from receipt. | Arts. 76–77:ordinary serious offences75–180% of the relevant unpaid/unduly obtained amount; actually withheld/on-account/repercuted nonpayment90–200%. The specified later wrong-period regularisation has a separate55% rule. Apply art. 71's graduation and agreement/payment conditions before any reduction. | [LF 13/2000 arts. 50/52/68–77](https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494) |",
+    "references": {}
+  },
+  {
+    "line": 364,
+    "section": "Penalties and interest",
+    "text": "For Álava/Gipuzkoa, filing an unpaid late self-assessment without the prescribed contemporaneous deferral, instalment or compensation request does not prevent executive collection costs. For all four, preserve notice dates, the exact declaration/self-assessment route, payment evidence, correction period and any reduction conditions. Incorrect refunds, false invoices, information omissions and failure to provide an assessment declaration have their own offences. A percentage range is not an automatic assessment: establish culpability, statutory base, classification and applicable reductions under the cited law.",
+    "references": {}
+  },
+  {
+    "line": 368,
+    "section": "Cross-border points",
+    "text": "For B/A/G, art.42 and for Navarra, arts.28–29 require market value even if documentation is exempt. Map 25%-or-greater shareholder relationships, group control, administrators(and exclusion for the functions-as-administrator remuneration), third-degree family and indirect/common-control links; the Basque list additionally expressly includes registered partners and specified PE/cooperative relationships. Document what is supplied, who performs the functions, assets/risks, terms, markets and business strategy. Choose the most reliable supported comparable uncontrolled price, cost-plus, resale-margin, profit-split or transactional-net-margin method, or another generally accepted technique when those cannot apply. Adjust material comparability differences and reconcile the chosen tested-party data to the accounts. Related-party invoicing alone proves neither market value nor deductibility. [B/A/G art.42; N arts.28–29; NR art.18.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356), [Navarra DF114/2017](https://www.navarra.es/documents/48192/6699806/Reglamento%20IS.pdf/ea37edba-eb1b-22d7-a04b-9f9d8fbba4e6)",
+    "references": {}
+  },
+  {
+    "line": 370,
+    "section": "Cross-border points",
+    "text": "| Documentation test | Bizkaia,Álava, Gipuzkoa | Navarra |",
+    "references": {}
+  },
+  {
+    "line": 372,
+    "section": "Cross-border points",
+    "text": "| Small aggregate exemption | Micro/small: aggregate related transactions≤EUR 250,000 **and**≤20% operations; medium:≤EUR 400,000 **and**≤15% operations | No equivalent Basque aggregate percentage exemption in N art.30 |",
+    "references": {}
+  },
+  {
+    "line": 373,
+    "section": "Cross-border points",
+    "text": "| Same-counterparty exemption | Ordinarily≤EUR 500,000 market value, subject to art.43.5.g exceptions for the named SME service/financing/rental route, objective-estimation linked businesses, business/unlisted-share transfers, real estate and intangibles | ≤EUR 250,000 aggregate market-value consideration with the same related person/entity under N art.30.3.d |",
+    "references": {}
+  },
+  {
+    "line": 374,
+    "section": "Cross-border points",
+    "text": "| Simplification | Local art.43/regulatory simplified file for eligible micro/small/individual cases; group-master-file duty depends on local size rules | Turnover below EUR 45m: short file under NR art.31.4; N art.12 entities can use prescribed normalised form without comparables; full/special-operation exceptions remain |",
+    "references": {}
+  },
+  {
+    "line": 375,
+    "section": "Cross-border points",
+    "text": "| Normal file | Group structure/business/value chain, functions/risks, intangibles, financing, tax positions and consolidated accounts; local-file counterparty/transactions, comparability, method, allocations and financial reconciliation | NR arts.30–31 master/local detail, including comparables, financials, agreements and valuation-method assumptions |",
+    "references": {}
+  },
+  {
+    "line": 377,
+    "section": "Cross-border points",
+    "text": "Sources: [B/A/G art.43; N art.30; BR/AR/GR related-party chapters; NR arts.18–19,29–32](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356), [Bizkaia DF203/2013](https://www.bizkaia.eus/documents/880307/15187815/ca_203_2013.pdf/5d2f80fc-9d5b-0f71-b578-56da0a5a0c50?t=1679483614806), [Álava DF41/2014](https://web.araba.eus/documents/d/araba/indice-reglamento-del-impuesto-sobre-sociedades-cas-5-pdf), [Gipuzkoa DF17/2015](https://www.gipuzkoa.eus/documents/2456431/8.0761381E7/DF%2017-2015%20%282026%29.pdf/ad233e14-7236-0450-948f-50a669df270f), [Navarra DF114/2017](https://www.navarra.es/documents/48192/6699806/Reglamento%20IS.pdf/ea37edba-eb1b-22d7-a04b-9f9d8fbba4e6). The Basque safe-threshold documentation routes for qualifying SME remuneration, financing and property rent have separate floor, prior-year comparison and regulatory conditions. For example, the remuneration floor is the maximum of EUR 36,000(EUR 60,000 medium), the comparable employee's pay and prior-two-year average; it requires actual monetary remuneration and proportionate part-time treatment. Financing uses the specified official one-year Euribor plus 2 points(or 5 if the related borrower is an individual), compares the prior two-year effective rate and resets after five years; property-rent valuation differs by local land-value system. These are documentation routes, not automatic substitution of an interest rate or salary for a proper arm's-length result. The detailed local declarations/evidence requirements must be met before claiming them. [B/A/G art.43.6–9 and corresponding regulations.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)",
+    "references": {}
+  },
+  {
+    "line": 379,
+    "section": "Cross-border points",
+    "text": "Navarra's separately fetched OF84/2018 art.2 requires model232 for same-counterparty related transactions over EUR250,000, specified operations over EUR100,000 per specified category, or same-nature/same-valuation-method transactions exceeding50% of turnover regardless of the counterparty total, subject to the statutory group/AIE/UTE/public-offer exceptions. Related-party intangible-income relief and the named noncooperative-country operations/holdings have separate reporting triggers regardless of amount. File electronically in the month after ten months have elapsed from period end; for a calendar-year period this is November of the following year. This information-return test is separate from preparing and retaining the valuation file. [Navarra OF84/2018 arts.1–6, https://www.lexnavarra.navarra.es/detalle.asp?r=50181.]",
+    "references": {}
+  },
+  {
+    "line": 381,
+    "section": "Cross-border points",
+    "text": "Álava's fetched 2026 official calendar confirms its local232 is also electronic in the month after ten months following period end; country-by-country231 is due within twelve months after period end. The calendar confirms deadlines and routes; the separate OF381/2018 art.2 filing triggers and their aggregation method are supplied in the provincial model232 section below. [Álava 2026 filing calendar p.15, https://web.araba.eus/documents/d/araba/b_plazos-de-presentacion_2026_es-pdf.]",
+    "references": {}
+  },
+  {
+    "line": 383,
+    "section": "Cross-border points",
+    "text": "Keep the documentation available by the return-deadline endpoint prescribed by each local law/regulation, refresh only changed facts when a prior valid file remains applicable, and retain transaction/valuation evidence even after an exemption. The documentation exemption does not extinguish local information-return requirements. Check the applicable province's current related-party information model and timing separately; do not copy State model 232 by analogy. Country-by-country reporting has the local EUR 750m group-revenue threshold and parent/substitute/reporting-country conditions; the notification and return are separate from the ordinary file. [B/A/G art.43; N art.30; NR documentation chapter.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54), [Navarra LF26/2016](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356), [Navarra DF114/2017](https://www.navarra.es/documents/48192/6699806/Reglamento%20IS.pdf/ea37edba-eb1b-22d7-a04b-9f9d8fbba4e6)",
+    "references": {}
+  },
+  {
+    "line": 387,
+    "section": "Cross-border points / Provincial model232: information duty is separate from the valuation file",
+    "text": "The three Basque model232 triggers differ from common-territory and Navarra triggers. The reporting population is the locally governed corporate taxpayer, local PE and specified foreign attribution entity with local presence. The ordinary information threshold is **strictly over36,000 of market value excluding IVA**, but aggregation differs:",
+    "references": {}
+  },
+  {
+    "line": 391,
+    "section": "Cross-border points / Provincial model232: information duty is separate from the valuation file",
+    "text": "| Bizkaia |Aggregate related transactions **with the same related person/entity**; the art.2 trigger does not impose Álava/Gipuzkoa's same-type/same-method restriction |[OF1047/2018 art.2](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2018/06/20/I-614_cas.pdf?hash=2b88ef4ffa0b9176fffed62d97b059cb), [OF387/2023 current annex amendment](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2023/10/10/I-1187_cas.pdf) |",
+    "references": {}
+  },
+  {
+    "line": 392,
+    "section": "Cross-border points / Provincial model232: information duty is separate from the valuation file",
+    "text": "| Álava |Aggregate with the same person/entity **of the same type and valued using the same method** |[OF381/2018 art.2](https://www.araba.eus/botha/Boletines/2018/076/2018_076_02511_C.pdf) |",
+    "references": {}
+  },
+  {
+    "line": 393,
+    "section": "Cross-border points / Provincial model232: information duty is separate from the valuation file",
+    "text": "| Gipuzkoa |Aggregate with the same person/entity **of the same type and valued using the same method** |[OF444/2018 art.2](https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2018/09/20/c1806246.pdf), [current official FAQs](https://www.gipuzkoa.eus/documents/2456431/0/Preguntas%2Bfrecuentes.pdf/a3bb67f1-627e-8165-c710-af2e4b10956f) |",
+    "references": {}
+  },
+  {
+    "line": 395,
+    "section": "Cross-border points / Provincial model232: information duty is separate from the valuation file",
+    "text": "The ordinary boxes exclude the specified same-tax-consolidation-group, qualifying AIE/UTE/member/group and public securities-offer operations; Gipuzkoa also expressly names the qualifying credit-entity institutional-protection-system operations. Related-intangible-income relief and the named noncooperative-jurisdiction operations/holdings have separate boxes **irrespective of amount**, with their own conditions. The ordinary36,000 threshold does not suppress those separate disclosures. Bizkaia's2023 amendment changes the annex/noncooperative-jurisdiction terminology; it does not rewrite the original art.2 aggregation rule. Retain the actual current filing year's annex/accepted code list.",
+    "references": {}
+  },
+  {
+    "line": 397,
+    "section": "Cross-border points / Provincial model232: information duty is separate from the valuation file",
+    "text": "Report income and payment operations separately; do not net them against one another. Group report rows by counterparty, transaction type and valuation method, preserving the territory's trigger-aggregation distinction. Use accounting accrual for income/expense transactions, and actual transaction date for non-income/expense transactions. A qualifying transaction extending across years is disclosed in its originating year under the orders' specific rule; continued services are tested using each year's value. Do not treat a bank settlement date as the accrual date or repeat the entire original non-recurring transaction each year without testing that rule.",
+    "references": {}
+  },
+  {
+    "line": 399,
+    "section": "Cross-border points / Provincial model232: information duty is separate from the valuation file",
+    "text": "All three orders require electronic filing in **the month after ten months have elapsed from period end**: an ordinary31December2026 close produces November2027, subject to the competent administration's operational calendar. Bizkaia OF1047 arts.3–7 prescribe its authorised electronic/representation route; Álava OF381 art.5 prescribes its tax-model application/electronic headquarters; Gipuzkoa OF444 art.5 prescribes ZergaBidea. Preserve the submitted information return and acceptance receipt separately from the corporate tax return and market-value documentation. A printable model or an exempt documentation file is not proof that this information duty was discharged.",
+    "references": {}
+  },
+  {
+    "line": 401,
+    "section": "Cross-border points / Provincial model232: information duty is separate from the valuation file",
+    "text": "Boundary control: exactly36,000 does not cross the ordinary trigger;36,000.01 does. If one counterparty has20,000 of services plus20,000 of a genuinely different rental type, Bizkaia's ordinary aggregate is40,000. In Álava/Gipuzkoa, two separate type/method groups of20,000 each do not individually cross36,000, assuming no separate compulsory box or other transaction changes that result. Actual classification and market value remain essential.",
+    "references": {}
+  },
+  {
+    "line": 407,
+    "section": "Two worked examples that recompute / Example 1: Basque microcompany, ordinary credit and default minimum",
+    "text": "Assume a qualified ordinary trading microcompany, pre-option base100,000, no foreign credit, eligible6,000 ordinary-bucket investment credit and no staff-maintenance minimum reduction. Elect the15% micro-base deduction rather than incompatible reserves. The20% rate produces17,000. The ordinary35% bucket allows5,950, but the15%-of-base minimum limits this credit to4,250. Actual advance payments10,000 leave2,750 payable and1,750 credit carry. This example assumes no extraordinary-profit surcharge, which excludes this20% ordinary category.",
+    "references": {}
+  },
+  {
+    "line": 441,
+    "section": "Two worked examples that recompute / Example 2: Navarra microcompany, ordinary credit and default October instalment",
+    "text": "Assume all Navarra micro/activity/turnover tests are met, base100,000,19% rate, no bonuses/foreign/film/R&D credits, eligible8,000 ordinary credit within art.67's25% bucket and current-year advances10,000. The ordinary13% minimum is13,000; the25%-quota bucket4,750 binds before that floor. The separate default October instalment on a last eligible period's effective quota20,000 less2,000 withholding is30%×18,000=5,400. It is not an additional current effective-tax deduction until actually paid and attributable to that period.",
+    "references": {}
+  },
+  {
+    "line": 476,
+    "section": "Ask the client first",
+    "text": "1. What fiscal domicile, prior/current operations and provincial shares select law and collectors?",
+    "references": {}
+  },
+  {
+    "line": 477,
+    "section": "Ask the client first",
+    "text": "2. What activity, assets, staff, ownership and group totals establish actual company size?",
+    "references": {}
+  },
+  {
+    "line": 478,
+    "section": "Ask the client first",
+    "text": "3. What accounts, tax-basis schedules, financing, losses and reserve elections reconcile the base?",
+    "references": {}
+  },
+  {
+    "line": 479,
+    "section": "Ask the client first",
+    "text": "4. What investment/project/worker evidence, grants and carry registers establish each credit and minimum?",
+    "references": {}
+  },
+  {
+    "line": 480,
+    "section": "Ask the client first",
+    "text": "5. What foreign taxes, related transactions, prior returns, advances and notices need separate treatment?",
+    "references": {}
+  }
+]

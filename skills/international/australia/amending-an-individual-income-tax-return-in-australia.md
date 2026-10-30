@@ -3,7 +3,9 @@ name: amending-an-individual-income-tax-return-in-australia
 description: "Amend an Australian individual income tax assessment: establish the time limit, reconcile corrections, lodge the request and check interest and penalties."
 jurisdiction: AU
 last_updated: 2026-09-08
+authored_by: Ryan Duguid
 review_status: pending_review
+trust_label: Accountant-authored
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

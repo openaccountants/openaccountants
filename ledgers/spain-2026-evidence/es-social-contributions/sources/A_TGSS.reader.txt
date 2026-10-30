@@ -1,0 +1,1767 @@
+
+
+[[ID:jdN-vSs7GY9]]
+
+Colectivos
+
+[[ID:com.ibm.lotus.NavStateUrl]]
+
+[[ID:printArea]]
+
+[[ID:cookies]]
+
+[[ID:msj-aviso-cookies]]
+
+Este sitio web utiliza cookies para que tengas una mejor experiencia de usuario. Las cookies no se utilizan para recoger información de carácter personal. Para más información consulta nuestra política de cookies.  
+
+                Aceptar todas
+
+              Rechazar todas
+
+Ir al contenido principal
+
+					Ir a página resultados de búsqueda
+
+[[ID:form_busqueda_head]]
+
+		        	Buscar en el portal
+		            
+[[ID:palabraBusquedaHead]]
+
+		              Iniciar Búsqueda
+
+		        		Área personal
+
+[[ID:content]]
+
+[[ID:portletState]]
+{}
+
+[[ID:Z7_7P081341OGOI50QUGTRCS72012]]
+
+ 		Guía autónomo
+
+[[ID:breadcrumbParticularInicio]]
+
+          Tesorería de la Seg. Social
+
+Trabajo Autónomo
+
+Guía práctica de trabajo autónomo
+
+[[ID:Z7_7P081341O0A620QEJQD54S10G5]]
+
+ 		Guía autónomo
+
+Guía práctica de trabajo autónomo
+
+[[ID:post-6f6a8f6b-050f-44a9-8333-b48006832c45]]
+
+¿Qué estás buscando?
+
+    Resuelve tus dudas tanto si ya eres autónomo como si vas a realizar de manera habitual y por tu cuenta una actividad económica.
+
+[[ID:form_busqueda_guia]]
+
+[[ID:labelFormularioGuia]]
+Buscar en 
+	           		
+[[ID:inputFormularioGuia]]
+
+[[ID:buttonFormularioGuia]]
+
+[[ID:spanFormularioGuia]]
+Iniciar Búsqueda en  	            
+
+Índice de contenidos
+
+En esta guía encontrarás lo que necesitas saber sobre:
+
+Darte de alta en el Régimen Especial de Trabajo Autónomo
+
+Cuota y pagos
+
+Derechos y prestaciones
+
+Variaciones y bajas
+
+Regularización anual de cuotas
+
+[[ID:post-ccf17fad-c61f-4be3-86ff-278780b03667]]
+
+1. Darte de alta en el Régimen Especial de Trabajo Autónomo
+
+[[ID:post-542d2b90-fc18-4e9c-8798-fb487ab737b7]]
+
+[[ID:IDControl542d2b90-fc18-4e9c-8798-fb487ab737b7]]
+
+				Tengo pensado iniciar una actividad por mi cuenta ¿qué tengo que hacer?
+
+[[ID:IDregion542d2b90-fc18-4e9c-8798-fb487ab737b7]]
+
+Si vas a empezar a trabajar por cuenta propia tendrás que:
+
+Darte de alta como autónomo en la Seguridad Social a través de Alta en trabajo autónomo.
+
+Darte de alta en el Impuesto de Actividad Económica (IAE) de Agencia Tributaria o Hacienda Foral.
+
+Excepcionalmente, para algunos colectivos de autónomos no es obligatorio darse de alta en Hacienda.
+
+Ten en cuenta que el alta en la Seguridad Social debe coincidir con el alta en Hacienda. Ambas altas debes de realizarlas antes o en el mismo día de la fecha de inicio de la actividad, si lo haces después perderás el derecho a beneficios sobre la cuota y puede que se aplique algún recargo en tu cuota.
+
+[[ID:post-71901ef8-460e-448c-bf46-42ec1ef74e01]]
+
+[[ID:IDControl71901ef8-460e-448c-bf46-42ec1ef74e01]]
+
+				¿Qué necesito para para darme de alta como autónomo en la Seguridad Social?
+
+[[ID:IDregion71901ef8-460e-448c-bf46-42ec1ef74e01]]
+
+				La información que necesitarás para darte de alta como autónomo en la Seguridad Social es:
+
+Tu Número de Seguridad Social (NUSS) o de Número de Afiliación (NAF).
+
+Tu documento de identidad (DNI o NIE).
+
+La fecha de inicio de la actividad.
+
+La estimación de tus rendimientos netos mensuales.
+
+Los datos del domicilio de la actividad profesional.
+
+Tus datos de contacto (teléfono móvil y email).
+
+El código del Impuesto de Actividad Económica (IAE) y el de la Clasificación Nacional de Actividades Económicas (CNAE).
+
+Un número de cuenta bancaria para domiciliar los pagos (IBAN).
+
+[[ID:post-956e2b2b-3ddb-4d30-8a56-ced3bc54e29c]]
+
+[[ID:IDControl956e2b2b-3ddb-4d30-8a56-ced3bc54e29c]]
+
+				¿Es obligatorio darme de alta en Hacienda? ¿Qué necesito?
+
+[[ID:IDregion956e2b2b-3ddb-4d30-8a56-ced3bc54e29c]]
+
+Como norma general, todos los trabajadores autónomos tienen que darse de alta en Hacienda. Quedan excluidos quienes pertenezcan a alguno de los siguientes colectivos:
+
+Socios de cooperativas.
+
+Socios colectivos.
+
+Socios administradores.
+
+Religiosos.
+
+Familiares colaboradores.
+
+Familiares de trabajadores agrarios.
+
+Para darte de alta en Hacienda, tienes que completar la declaración censal a través de los modelos 036 o 037 y presentarlo de forma electrónica o presencialmente en la Agencia Tributaria. Para más información, consulta Declaración censal: Modelos 036 y 037.
+
+[[ID:post-0dbd4de8-c881-4122-a876-6829283185d8]]
+
+[[ID:IDControl0dbd4de8-c881-4122-a876-6829283185d8]]
+
+				¿Cuándo hay que tramitar el alta?
+
+[[ID:IDregion0dbd4de8-c881-4122-a876-6829283185d8]]
+
+Debes comunicar el alta el mismo día en el que empieces a trabajar por cuenta propia o hasta 60 días antes. Si te das de alta después de empezar a trabajar, se considerará que la fecha de alta es el primer día de ese mes, y pagarás la cuota del mes completo.
+
+Si vas a tramitar el alta después de 30 días desde que iniciaste la actividad, tendrás que solicitar el alta a través de este servicio.
+
+Recuerda que darte de alta como autónomo es obligatorio. Si no lo haces a tiempo, para tener derecho a tus prestaciones, tendrás que ingresar las cuotas completas desde el inicio de la actividad, con un recargo.
+
+[[ID:post-c26c65c7-0cc2-4a99-a96a-19c86f3df215]]
+
+[[ID:IDControlc26c65c7-0cc2-4a99-a96a-19c86f3df215]]
+
+				¿Me puedo dar de alta si soy extranjero y mi país de origen no pertenece a la Unión Europea?
+
+[[ID:IDregionc26c65c7-0cc2-4a99-a96a-19c86f3df215]]
+
+Sí, en ese caso, para darte de alta necesitarás tu NIE, el Número de la Seguridad Social (NUSS) y el permiso de trabajo y residencia. Si no dispones de NUSS, solicítalo desde el servicio Solicitar el número de la Seguridad Social. Si ya tienes Número de la Seguridad Social y no lo recuerdas, consúltalo en tu Área personal.
+
+[[ID:post-b4e8d55e-ff57-4efe-be06-ceed7d7a5b09]]
+
+[[ID:IDControlb4e8d55e-ff57-4efe-be06-ceed7d7a5b09]]
+
+				¿Qué es la Clasificación Nacional de Actividades Económicas (CNAE)? ¿Qué es el Impuesto sobre Actividades Económicas (IAE)?
+
+[[ID:IDregionb4e8d55e-ff57-4efe-be06-ceed7d7a5b09]]
+
+La Clasificación Nacional de Actividades Económicas o CNAE es un código numérico que se asigna a cada actividad profesional y que se usa para realizar estadísticas públicas. 
+
+El Impuesto sobre Actividades Económicas o IAE es el impuesto que se aplica por realizar cualquier tipo de actividad económica. Es el impuesto de actividades económicas. El IAE es el impuesto que Hacienda aplica tanto a autónomos como a sociedades, por realizar una actividad empresarial, profesional o artística. El IAE es el impuesto que Hacienda aplica tanto a autónomos como a sociedades, por realizar una actividad empresarial, profesional o artística.
+
+Existe una correspondencia entre el código CNAE e IAE. Consulta qué códigos te corresponden en el Buscador de Actividades de la Agencia Tributaria.
+
+[[ID:post-a48d312d-1a35-4e2a-9420-1fecdd8ba359]]
+
+[[ID:IDControla48d312d-1a35-4e2a-9420-1fecdd8ba359]]
+
+				¿Debo comunicar mi CNAE a la Seguridad Social? ¿En qué momento?
+
+[[ID:IDregiona48d312d-1a35-4e2a-9420-1fecdd8ba359]]
+
+Sí, cuando te das de alta en Trabajo Autónomo tendrás que indicar qué actividad profesional vas a desempeñar o el código CNAE al que corresponde. En caso de realizar varias actividades, deberás informar el código de cada una de ellas.
+
+[[ID:post-253508c6-b747-4b32-88f6-b7eac2f1937b]]
+
+[[ID:IDControl253508c6-b747-4b32-88f6-b7eac2f1937b]]
+
+				Según la actividad que voy a realizar, ¿con qué colectivo de autónomo me identifico?
+
+[[ID:IDregion253508c6-b747-4b32-88f6-b7eac2f1937b]]
+
+Voy a trabajar por mi cuenta o negocio. Hace referencia al trabajador por cuenta propia que no está incluido en ninguno de los grupos siguientes.
+
+Trabajo con un cliente principal. Son los trabajadores autónomos que facturan a un mismo cliente el 75% o más de sus ingresos y que no tienen otros trabajadores a su cargo.
+
+Voy a constituir, tengo o formo parte de una sociedad. Autónomos societarios de sociedades de capital o sociedades laborales, entre otros.
+
+Soy titular de una explotación agraria. Titulares de una explotación agraria que además trabajan en ella de forma personal y directa.
+
+Voy a trabajar con un familiar autónomo. Familiares de hasta segundo grado que conviven y trabajan con un autónomo.
+
+Formo parte de una institución religiosa. Religiosos de la Iglesia Católica.
+
+Para más información, consulta Régimen Especial de Trabajadores Autónomos.
+
+[[ID:post-c8340498-8356-44fc-834b-a3326d5cd271]]
+
+[[ID:IDControlc8340498-8356-44fc-834b-a3326d5cd271]]
+
+				¿Qué tengo que hacer si como autónomo trabajo en actividades distintas?
+
+[[ID:IDregionc8340498-8356-44fc-834b-a3326d5cd271]]
+
+Cuando tramites tu alta en Trabajo Autónomo y vayas a iniciar más de una actividad por cuenta propia de forma simultánea, tendrás que comunicarlo en ese momento a la Tesorería General de la Seguridad Social.
+
+Si realizas más de una actividad por cuenta propia, tendrás que informar a la Tesorería General de la Seguridad Social y comunicar todas ellas. Podrás hacerlo a través de Comunicar nueva actividad.
+
+Si en un momento posterior al alta, decides iniciar una nueva actividad o varias por cuenta propia, manteniendo la inicial, también deberás comunicarlo a través de Comunicar nueva actividad.
+
+Aunque realices más de una actividad profesional, tu alta y cotización en autónomos será única.
+
+Si lo que quieres es dejar de realizar alguna de estas actividades, pero no todas, podrás comunicar su fin a la Tesorería General de la Seguridad Social, a través del servicio Comunicar fin de alguna de tus actividades.
+
+[[ID:post-148bdcf5-016c-4eb6-bba5-caa8e4830560]]
+
+[[ID:IDControl148bdcf5-016c-4eb6-bba5-caa8e4830560]]
+
+				¿Son compatibles todas las actividades por cuenta propia?
+
+[[ID:IDregion148bdcf5-016c-4eb6-bba5-caa8e4830560]]
+
+Si realizas una actividad como religioso de la Iglesia católica, no podrás realizar otra actividad por cuenta propia.
+
+Si trabajas con un cliente principal (trabajador autónomo económicamente dependiente), será incompatible con la comunicación de otra actividad con otro cliente del que dependas económicamente.
+
+[[ID:post-dfb8624e-1d7e-4507-99d5-97d343c6a1fd]]
+
+[[ID:IDControldfb8624e-1d7e-4507-99d5-97d343c6a1fd]]
+
+				¿Debo darme de alta como autónomo si además trabajo para una empresa? ¿Cómo afecta mi situación de pluriactividad?
+
+[[ID:IDregiondfb8624e-1d7e-4507-99d5-97d343c6a1fd]]
+
+Sí, todas las personas que trabajen por cuenta propia deben darse de alta como autónomos.
+
+Si eres trabajador autónomo y además estás de alta como trabajador por cuenta ajena en la Seguridad Social, tu situación será de pluriactividad. En este caso, la cobertura de la incapacidad temporal por contingencias comunes (enfermedad común y accidente no laboral) en el Régimen Especial de Trabajadores Autónomos será opcional siempre y cuando cotices por ésta en el Régimen General.
+
+De igual modo, tienes derecho a la devolución del 50% del exceso cotizado por contingencias comunes en ambos regímenes. La Tesorería General de la Seguridad Social procederá a abonar el reintegro correspondiente en un plazo máximo de cuatro meses desde la regularización de cuotas de la Seguridad Social momento en el que se determinará ese importe.
+
+[[ID:post-2aa96556-0252-40e5-a26a-bbc42ea69454]]
+
+[[ID:IDControl2aa96556-0252-40e5-a26a-bbc42ea69454]]
+
+				¿Puedo darme de alta y de baja varias veces al año?
+
+[[ID:IDregion2aa96556-0252-40e5-a26a-bbc42ea69454]]
+
+Sí, podrás darte de alta y baja tantas veces como desees. Solo podrás elegir la fecha de alta y baja 3 veces al año y siempre las hayas solicitado en plazo. En estos casos, cotizarás a partir del día del alta o dejarás de hacerlo a partir del día de la baja. El resto de las altas que tramites durante ese año tendrán efectos desde el primer día del mes en el que empieces a trabajar. Igualmente, las restantes bajas tramitadas durante ese año natural tendrán efectos desde el último día del mes en el que dejes de trabajar. En ambos casos, cotizarás por el mes completo.
+
+[[ID:post-0a288948-0a0e-4ba5-a8dc-f248b96559dd]]
+
+[[ID:IDControl0a288948-0a0e-4ba5-a8dc-f248b96559dd]]
+
+				¿Puedo contratar a otros trabajadores siendo autónomo?
+
+[[ID:IDregion0a288948-0a0e-4ba5-a8dc-f248b96559dd]]
+
+Sí, puedes contratar a trabajadores por cuenta ajena o a otros trabajadores autónomos.
+
+Para contratar a otros profesionales por cuenta ajena tendrás que:
+
+Inscribirte como empresario en la Seguridad Social, accediendo al servicio en la Sede Electrónica Inscripción y asignación de CCC para empresario individual o a través del Sistema Red. Para utilizar este Sistema debes solicitar una autorización o acudir a un autorizado RED. 
+Consulta más información en Inscripción del empresario y Código de Cuenta de Cotización.
+
+Solicitar la asignación de Número de Seguridad Social para el trabajador si no lo tiene. Este trámite debe realizarse a través del Sistema RED.
+
+Dar de alta al trabajador a través del Sistema RED.
+
+Comunicar la contratación al Servicio de Empleo Público Estatal en un plazo máximo de 10 días presentando una copia del contrato de trabajo a través de Contrat@. Consulta modelos de contrato en Modalidades de contrato.
+
+Tendrás que hacerte cargo de las cotizaciones a la Seguridad Social de tus trabajadores.
+
+En cambio, si contratas a otro profesional autónomo, se establece una relación de prestación de servicios; el autónomo no es tu empleado si no que paga su propia cotización.
+
+Los trabajadores agrarios por cuenta propia titulares de una explotación agraria solo pueden contratar a 2 trabajadores indefinidos o los equivalentes en contratos temporales.
+
+Los trabajadores autónomos económicamente dependientes, es decir, aquellos que trabajan con un cliente principal, pueden contratar a un único trabajador por cuenta ajena cuando se encuentre en alguna de estas situaciones: Riesgo durante el embarazo o durante la lactancia natural de un menor de nueve meses, periodos de descanso por nacimiento, adopción, guarda con fines de adopción o acogimiento familiar, cuidado de menores de siete años a su cargo, familiares dependientes o discapacitados de hasta el segundo grado.
+
+[[ID:post-e4a70aa5-9383-443e-a4ad-9f292251a385]]
+
+[[ID:IDControle4a70aa5-9383-443e-a4ad-9f292251a385]]
+
+				¿Qué pasa si inicio mi actividad sin el alta en Seguridad Social?
+
+[[ID:IDregione4a70aa5-9383-443e-a4ad-9f292251a385]]
+
+Estar de alta en Seguridad Social el día de inicio de la actividad es una obligación. Si comunicas tu alta después de empezar a trabajar, se considerará que la fecha de alta es el primer día del mes y no podrás beneficiarte de descuentos en la cuota.
+
+Además, se te podrá aplicar una multa de entre 3.750 y 12.000 € dependiendo de la gravedad y tendrás que pagar las cuotas correspondientes desde que la Administración tenga constancia de que iniciaste tu actividad.
+
+[[ID:post-d350d742-b98c-488f-9875-bd12588532e9]]
+
+[[ID:IDControld350d742-b98c-488f-9875-bd12588532e9]]
+
+				He tramitado mi alta fuera de plazo, ¿qué ocurre?
+
+[[ID:IDregiond350d742-b98c-488f-9875-bd12588532e9]]
+
+Si solicitaste tu alta como trabajador autónomo fuera de plazo, desde el día que iniciaste la actividad y hasta el último día del mes en el que lo comunicaste, la base de cotización para este periodo será la base mínima del tramo 1 de la tabla general, que en 2026 son 950,98 €/mes.
+
+Además, ten en cuenta que no se incluirá en la regularización anual de cuotas las correspondientes a este periodo.
+
+[[ID:post-39728dcb-e7d1-4687-a8f9-66f8a2984570]]
+
+[[ID:IDControl39728dcb-e7d1-4687-a8f9-66f8a2984570]]
+
+				Mi alta en trabajo autónomo se realizó de oficio a instancia de la Inspección de Trabajo o de la Tesorería General de la seguridad Social, ¿afecta esto a mi cotización?
+
+[[ID:IDregion39728dcb-e7d1-4687-a8f9-66f8a2984570]]
+
+Sí, durante el periodo comprendido entre la fecha del alta y el último día del mes natural anterior a la fecha de efectos del alta, la base de cotización será la base mínima del tramo 1 de la tabla general, es decir 950,98 €/mes en 2026.
+
+No obstante, es posible que la Inspección de Trabajo y Seguridad Social fije otra base de cotización superior a la indicada.
+
+[[ID:post-ad499f10-3b94-4a26-b4d7-91cd3f2b19a6]]
+
+2. Cuota y pagos
+
+[[ID:post-bd9fbcd2-a723-4a33-9247-788a6e603473]]
+
+[[ID:IDControlbd9fbcd2-a723-4a33-9247-788a6e603473]]
+
+				¿En qué consiste el nuevo sistema de cotización para los trabajadores autónomos a partir del 1 de enero de 2023?
+
+[[ID:IDregionbd9fbcd2-a723-4a33-9247-788a6e603473]]
+
+Desde el 1 de enero de 2023, los trabajadores autónomos cotizan según los rendimientos anuales obtenidos en el ejercicio de todas sus actividades económicas, empresariales o profesionales.
+
+Al darte de alta, tendrás que elegir tu base de cotización en función de la previsión del promedio mensual de tus rendimientos netos anuales conforme a una tabla general de bases, fijada cada año por la Ley de Presupuestos Generales del Estado. Esta tabla establece unos tramos consecutivos de rendimientos netos anuales, en promedio mensual, a los que se asocian una base mínima de cotización y una base máxima.
+
+Si prevés que el promedio mensual de tus rendimientos netos anuales va a quedar por debajo del límite inferior del tramo 1 de la tabla general de bases, podrás elegir una base de cotización dentro de una tabla reducida que suponen una cuota inferior.
+
+Las bases elegidas tendrán carácter provisional hasta el momento de la regularización que se realizará en el ejercicio siguiente, tomando los rendimientos anuales obtenidos y comunicados por la Administración tributaria correspondiente.
+
+[[ID:post-b18a4c37-c4b8-485c-a667-8467ff52f260]]
+
+[[ID:IDControlb18a4c37-c4b8-485c-a667-8467ff52f260]]
+
+				Este sistema de cotización, ¿se aplica a todos los trabajadores autónomos?
+
+[[ID:IDregionb18a4c37-c4b8-485c-a667-8467ff52f260]]
+
+No, quedan excluidos del nuevo sistema de cotización por rendimientos los religiosos de la Iglesia católica.
+
+[[ID:post-d785082d-bedb-4385-a07c-8a9d2a5e1f05]]
+
+[[ID:IDControld785082d-bedb-4385-a07c-8a9d2a5e1f05]]
+
+				¿Tengo que comunicar la previsión de mis rendimientos para 2026? ¿Dónde? ¿Qué plazo tengo para hacerlo?
+
+[[ID:IDregiond785082d-bedb-4385-a07c-8a9d2a5e1f05]]
+
+Con el nuevo sistema de cotización tendrás que prever el promedio mensual de tus rendimientos netos anuales en el momento de tramitar tu alta.
+
+Según el tramo de la tabla general o reducida donde se encuentren, te corresponderá una base de cotización y una cuota a pagar.
+
+Para informar estos datos, tienes a tu disposición el servicio Base de cotización y rendimientos.
+
+A través de Base de cotización y rendimientos, podrás comunicar o modificar la previsión del promedio mensual de tus rendimientos netos anuales, modificar tu base de cotización o ambas cosas.
+
+Ten en cuenta que los cambios de bases de cotización no producen efectos de forma inmediata. Puedes consultarlo en ¿Es posible cambiar mi base de cotización?
+
+[[ID:post-779fbd09-1a04-466c-a5f5-d6cc96be84d5]]
+
+[[ID:IDControl779fbd09-1a04-466c-a5f5-d6cc96be84d5]]
+
+				¿Desde cuándo tengo que abonar la cuota de la Seguridad Social?
+
+[[ID:IDregion779fbd09-1a04-466c-a5f5-d6cc96be84d5]]
+
+La cuota de autónomos se paga desde la fecha del inicio de la actividad o desde la fecha de efectos del alta. 
+
+Ten en cuenta que podrás elegir la fecha de alta 3 veces al año, de forma que produzcan efectos desde el inicio de actividad. El resto de las altas tendrán efectos el primer día del mes en el que inicies tu actividad. 
+
+La cuota se cargará en tu cuenta bancaria el último día hábil de cada mes.
+
+[[ID:post-2fb03c89-adca-449e-ae39-597c11c4be01]]
+
+[[ID:IDControl2fb03c89-adca-449e-ae39-597c11c4be01]]
+
+				¿Cuánto se paga?
+
+[[ID:IDregion2fb03c89-adca-449e-ae39-597c11c4be01]]
+
+El importe mensual que tienes que pagar a la Seguridad Social vendrá determinado por la base de cotización elegida.
+
+Ten en cuenta que el importe de tus prestaciones variará en función de tu cotización a la Seguridad Social. Cuanto mayor sea la base de cotización que elijas, mayor será la cuantía de las prestaciones que obtengas.
+
+[[ID:post-da22efeb-ce50-417b-8cb9-d77a776a114f]]
+
+[[ID:IDControlda22efeb-ce50-417b-8cb9-d77a776a114f]]
+
+				¿Cómo elijo mi base de cotización?
+
+[[ID:IDregionda22efeb-ce50-417b-8cb9-d77a776a114f]]
+
+En el momento de solicitar el alta, deberás prever el promedio mensual de tus rendimientos netos anuales. Podrás elegir tu base de cotización dentro del tramo asociado al importe del promedio mensual de rendimientos. Estos tramos se recogen en la tabla general de bases, aprobada por ley.
+
+Si prevés que tus rendimientos mensuales van a estar por debajo del importe del límite inferior del tramo 1 de la tabla general de bases, puedes optar por una base de cotización incluida en una tabla de bases reducidas, también aprobada por ley.
+
+La base de cotización que hayas elegido tendrá carácter provisional y será única para todas las situaciones protegidas por el sistema de la Seguridad Social.
+
+[[ID:post-b4f0ae63-cf5f-4450-9942-77d1a215bad4]]
+
+[[ID:IDControlb4f0ae63-cf5f-4450-9942-77d1a215bad4]]
+
+				¿Cómo calculo mis rendimientos?
+
+[[ID:IDregionb4f0ae63-cf5f-4450-9942-77d1a215bad4]]
+
+Para este cálculo debes de tener en cuenta todos los rendimientos netos obtenidos de las distintas actividades que realices como trabajador por cuenta propia, a los que tendrás que sumar el importe de las cuotas abonadas a la Seguridad Social si tributas conforme al régimen de estimación directa.
+
+El cálculo de estos rendimientos netos se realizará según lo previsto en la normativa sobre el Impuesto sobre la Renta de las Personas Físicas, y con algunas especialidades en función de si perteneces a colectivos como por ejemplo socios de sociedades de capital.
+
+A estos rendimientos netos, se aplicará una deducción por gastos genéricos del 7%, porcentaje que, en el caso de socios de sociedades de capital o socios trabajadores de las sociedades laborales, que hayan estado de alta como autónomos 90 días en el año, la deducción se reduce a un 3%.
+
+Si el 1 de enero de 2026 ya figuras de alta como trabajador autónomo, puedes modificar tu base de cotización para ajustarla a tu previsión sobre el promedio mensual de tus rendimientos netos anuales a través del servicio Base de cotización y rendimientos.
+
+Ten en cuenta que este cambio no tendrá efectos hasta el día 1 de marzo, si lo haces antes del 28 de febrero. Consultar plazos para la modificación de la base de cotización ¿Es posible cambiar mi base de cotización?.
+
+Ajustando tu base de cotización a los rendimientos evitarás que el resultado de la futura regularización anual de cuotas sea ingresar diferencias de cotización.
+
+Con carácter meramente informativo, dado que en cada año los rendimientos computables para el cálculo de las cuotas de Seguridad Social dependerán de la norma reguladora sobre el Impuesto sobre la Renta de las Personas Físicas -IRPF-, se incluyen a continuación los rendimientos a considerar según las normas del Impuesto de la Renta de las Personas Físicas (IRPF):
+
+Para las actividades económicas, empresariales o profesionales ejercidas a título individual por el trabajador autónomo se tomarán como referencia las siguientes casillas como rendimientos computables:
+
+      Casillas de referencia para rendimientos computables
+
+          Modelo 100 - Impuesto sobre la Renta de las Personas Físicas. Declaración y documentos de ingreso o devolución (1)
+          Casillas
+
+          Rendimientos de actividades económicas en Estimación Directa
+
+          Rendimiento neto + Cuotas de Seguridad Social o aportaciones a mutualidades alternativas del titular de la actividad.
+*Si se hubiera producido alguna regularización de las cuotas RETA de ejercicios anteriores, además se debe sumar el importe de la casilla 0196 "Regularización cuotas RETA (si resulta una cantidad a ingresar)" y, en su caso, restar el importe de la casilla 0197 "Regularización cuotas RETA (si resulta una cantidad a devolver)".
+
+          0224 + 0186 +196 -197
+
+          Rendimientos de actividades económicas en Estimación Objetiva
+
+          Rendimiento neto previo (Actividades excepto agrícolas, ganaderas y forestales)
+          1465
+
+          Rendimiento neto previo – Amortización del inmovilizado material e intangible (Actividades agrícolas, ganaderas y forestales)
+
+          1537-1538
+
+          Régimen de atribución de rentas en rendimientos de actividades económicas en Estimación Directa
+
+          Rendimiento neto (Estimación Directa modalidad normal)
+
+          1577
+
+          Rendimiento neto – Provisiones deducibles y gastos de difícil justificación (Estimación Directa modalidad simplificada)
+
+          1577-1579
+
+    (1) Gestiones IRPF.
+
+          Modelo 184- Declaración Informativa. Entidades en régimen de atribución de rentas. Declaración Anual
+
+          Régimen de atribución de rentas en rendimientos de actividades económicas en Estimación Objetiva.
+
+          Rendimiento Neto Previo de actividades económicas en estimación objetiva (excepto agrícolas, ganaderas y forestales)
+
+          Rendimiento Neto Minorado de actividades económicas en estimación objetiva (agrícolas, ganaderas y forestales)
+
+Para las actividades económicas, empresariales o profesionales ejercidas como socio o integrante de cualquier tipo de sociedad o entidad, se computarán de manera adicional a los rendimientos que pudieran obtener por su propia actividad económica desarrollada a título individual, los rendimientos íntegros de trabajo o capital mobiliario, dinerarios o en especie, derivados de su condición de socios y/o administrador, así como los rendimientos de dicha naturaleza obtenidos en su condición de socio trabajador autónomo de una cooperativa de trabajo asociado. Estos rendimientos adicionales le son imputados al socio a través de los modelos 190 y 193 presentados por la sociedad y se podrán visualizar en los datos fiscales de Renta. Se indican a continuación los datos de los modelos 190 y 193 que la AEAT comunica a la Seguridad Social para el cálculo del rendimiento neto:
+
+Modelo 190: Declaración Informativa. Retenciones e ingresos a cuenta. Rendimientos del trabajo y de actividades económicas, premios y determinadas ganancias patrimoniales e imputaciones de rentas. Resumen anual.
+
+Clave A: Rendimientos del trabajo: Empleados por cuenta ajena en general.
+Clave E: Rendimientos del trabajo: Consejeros y administradores.
+Subclaves: 01, 02, 03 y 04.
+
+Clave F: Rendimientos del trabajo: Cursos, conferencias, seminarios y similares y elaboración de obras literarias, artísticas o científicas.
+Subclaves: 01, 02, 03, 04, 05, 06 y 07.
+
+Clave L: Rentas exentas y dietas exceptuadas de gravamen.
+Subclaves: 15, 24, 25, 26, 30 y 31.
+
+Modelo 193: Declaración Informativa. Retenciones e ingresos a cuenta del IRPF sobre determinados rendimientos del capital mobiliario. Retenciones e ingresos a cuenta del IS e IRNR (establecimientos permanentes) sobre determinadas rentas. Resumen anual.
+
+Clave A Rendimientos o rentas obtenidos por la participación en los fondos propios de cualquier entidad.
+Subclaves: 01, 02, 05, 07 y 08.
+
+En la página web de la Agencia Tributaria puedes consultar la información para determinar el rendimiento neto Agencia Tributaria: Información - Información para determinar el rendimiento neto.
+ 
+Si debes tributar en cualquiera de las Haciendas Forales de la Comunidad Autónoma del País Vasco o Navarra, ten en cuenta que las casillas anteriores variarán según las normas del IRPF aplicables en dichos territorios forales y que puede consultar en los siguientes enlaces:
+ 
+Hacienda Foral de Guipúzcoa 
+ 
+Cotización autónomos - Hacienda - Diputación Foral de Gipuzkoa
+ 
+Hacienda Foral de Vizcaya
+ 
+Nuevo sistema de cotización de la Seguridad Social para autónomos - Bizkaia.eus
+
+[[ID:post-ee569d66-d34e-4a6a-950a-17bd7761b575]]
+
+[[ID:IDControlee569d66-d34e-4a6a-950a-17bd7761b575]]
+
+				Consulta la tabla de rendimientos y bases de cotización
+
+[[ID:IDregionee569d66-d34e-4a6a-950a-17bd7761b575]]
+
+Para 2026, la tabla es la siguiente:
+
+  Tabla de rendimientos y bases de cotización 2026. 
+Tabla reducida
+
+      Tramos de rendimientos netos 2026.
+Euros/mes
+      Base mínima.
+Euros/mes
+      Base máxima.
+Euros/mes
+
+      Tramo 1
+      <= 670
+      653,59
+      718,94
+
+      Tramo 2
+      > 670 y <= 900
+      718,95
+      900
+
+      Tramo 3
+      > 900 y <1.166,70
+      849,67
+      1.166,70
+
+  Tabla de rendimientos y bases de cotización 2026. 
+Tabla general
+
+      Tramos de rendimientos netos 2026.
+Euros/mes
+
+        Base mínima.
+Euros/mes 
+      Base máxima.
+Euros/mes
+
+      Tramo 1
+      >= 1.166,70 y <=1.300
+      950,98
+      1.300
+
+      Tramo 2
+      > 1.300 y <= 1.500
+      960,78
+      1.500
+
+      Tramo 3
+      > 1.500 y <= 1.700
+
+      960,78
+      1.700
+
+      Tramo 4
+
+      > 1.700 y <= 1.850
+      1.143,79
+      1.850
+
+      Tramo 5
+      > 1.850 y <= 2.030
+      1.209,15
+      2.030
+
+      Tramo 6
+      > 2.030 y <= 2.330
+      1.274,51
+      2.330
+
+      Tramo 7
+      > 2.330 y <= 2.760
+      1.356,21
+      2.760
+
+      Tramo 8
+      > 2.760 y <= 3.190
+      1.437,91
+      3.190
+
+      Tramo 9
+      > 3.190 y <= 3.620
+      1.519,61
+      3.620
+
+      Tramo 10
+      > 3.620 y <= 4.050
+      1.601,31
+      4.050
+
+      Tramo 11
+      > 4.050 y <= 6.000
+      1.732,03
+      5.101,20
+
+      Tramo 12
+      > 6.000
+      1.928,10
+      5.101,20
+
+[[ID:post-8cbd77b6-f53f-4d98-a498-5d1caf59ce59]]
+
+[[ID:IDControl8cbd77b6-f53f-4d98-a498-5d1caf59ce59]]
+
+				Soy socio de una sociedad de capital o laboral, ¿cómo calculo mis rendimientos?
+
+[[ID:IDregion8cbd77b6-f53f-4d98-a498-5d1caf59ce59]]
+
+Si eres autónomo societario deberás tener al menos el 33% del capital social de la sociedad. Si ésta es tu situación, se tendrán en cuenta como rendimientos netos computables:
+
+Los rendimientos dinerarios o en especie que deriven de la sociedad.
+
+Los rendimientos de trabajo derivados de la actividad en la empresa.
+
+Los rendimientos que puedas obtener de la propia actividad económica.
+
+Una vez calculados los rendimientos netos obtenidos de las distintas actividades como autónomo, se sumará el importe de las cuotas abonadas a la Seguridad Social.
+
+El cálculo de estos rendimientos netos se realizará según lo previsto en la normativa sobre el Impuesto sobre la Renta de las Personas Físicas.
+
+A estos rendimientos netos, y siempre que hayas estado de alta en el Régimen Especial de Trabajadores Autónomos 90 días, se aplicará una deducción por gastos genéricos del 3%.
+
+Si el 1 de enero de 2026 ya figuras de alta como trabajador autónomo, podrás ajustar tu base de cotización a tu previsión del promedio mensual de los rendimientos netos anuales a través del servicio Base de cotización y rendimientos.
+
+[[ID:post-bf423aa2-363a-4062-bade-d05236937a0d]]
+
+[[ID:IDControlbf423aa2-363a-4062-bade-d05236937a0d]]
+
+				Soy religioso de la Iglesia católica, ¿cuál es mi base de cotización?
+
+[[ID:IDregionbf423aa2-363a-4062-bade-d05236937a0d]]
+
+Si eres religioso de la Iglesia Católica no cotizarás conforme al nuevo sistema de cotización para autónomos. Para el año 2026, debes elegir una base de cotización no inferior a 849,67 €/mes ni superior a 5.101,20 €/mes.
+
+[[ID:post-2d426221-7118-4dbe-b941-28139ff60623]]
+
+[[ID:IDControl2d426221-7118-4dbe-b941-28139ff60623]]
+
+				Soy autónomo societario o familiar colaborador, ¿qué base de cotización puedo elegir?
+
+[[ID:IDregion2d426221-7118-4dbe-b941-28139ff60623]]
+
+Si has estado de alta en el Régimen Especial de Trabajo Autónomo al menos 90 días en el año 2026 como familiar colaborador o autónomo societario de una sociedad de capital o laboral, puedes mantener tu base de cotización provisional no inferior a 1.000 euros. No obstante, ten en cuenta que, en la regularización anual de cuotas, se aplicará, en todo caso, una base de cotización mínima de 1.424,40 euros. 
+Actualiza tu base de cotización a través del servicio Base de cotización y rendimientos.
+
+[[ID:post-32aa0326-d17d-48a3-8186-72aa8a20bef5]]
+
+[[ID:IDControl32aa0326-d17d-48a3-8186-72aa8a20bef5]]
+
+				Soy autónomo artista, ¿existe alguna especialidad en mi cotización?
+
+[[ID:IDregion32aa0326-d17d-48a3-8186-72aa8a20bef5]]
+
+Si como trabajador autónomo desarrollas tu actividad en el campo de las artes escénicas, audiovisuales y musicales, o actividades técnicas o auxiliares necesarias para el desarrollo de esa actividad y tus rendimientos son inferiores a 3.000€ al año o 250€ al mes, podrás elegir una base reducida de 526,14€/mes.
+
+Durante el trámite de alta en Trabajo Autónomo, podrás optar por pago trimestral. Igualmente, desde tu área personal puedes modificar esta opción a pago mensual y viceversa.
+
+En este caso, los meses de ingreso serán los siguientes:
+
+En abril se ingresarán las cuotas correspondientes a enero, febrero y marzo.
+
+En julio se ingresarán las cuotas correspondientes a abril, mayo y junio.
+
+En octubre se ingresarán las cuotas correspondientes a julio, agosto y septiembre.
+
+En enero del año siguiente se ingresarán las cuotas correspondientes a octubre, noviembre y diciembre.
+
+Con carácter general, no se procederá a la regularización de cuotas cuando el promedio de los rendimientos netos mensuales obtenidos sean iguales o inferiores a los 3.000€ anuales y hayas cotizado por la base reducida de 526,14€/mes. Por el contrario, si tu promedio de rendimientos netos mensuales fuera superior a los 3.000€ al año, se procederá a la regularización de cuotas.
+
+[[ID:post-7be23ea9-22ba-457e-bdbb-1c1253c78dd0]]
+
+[[ID:IDControl7be23ea9-22ba-457e-bdbb-1c1253c78dd0]]
+
+				¿Cómo se calcula la cuota mensual a pagar?
+
+[[ID:IDregion7be23ea9-22ba-457e-bdbb-1c1253c78dd0]]
+
+La cuota que deberás pagar es el 31,40% de la base de cotización.
+
+Para el año 2026, dentro de la tabla general, la base de cotización mínima es de 950,98 € mensuales y la máxima de 5.101,20 € mensuales. En caso de que tus rendimientos previstos sean inferiores al salario mínimo interprofesional en cómputo anual, podrás elegir tu base de cotización dentro de una tabla reducida, siendo la base mínima 653,59 € mensuales.
+
+El porcentaje (tipo de cotización) que se aplica a la base de cotización para calcular la cuota se desglosa de la siguiente manera:
+
+28,30% por contingencias comunes. Esta cotización te asegura cuando no puedas trabajar debido a un accidente o enfermedad no laboral.
+
+1,3% por contingencias profesionales. Esta cotización te cubre en los casos de un accidente laboral o enfermedad profesional.
+
+0,9% por cese de actividad. Te cubre en caso de que se produzca el fin definitivo de tu actividad.
+
+0,1% por formación profesional. Cotización orientada al acceso a formación que facilite tu inserción en el mercado laboral.
+
+0,9% por mecanismo de equidad intergeneracional (MEI): Esta cotización pretende mantener el equilibrio entre generaciones y la sostenibilidad del sistema de la Seguridad Social.
+
+[[ID:post-4c38e983-577a-4f42-83d6-e07324eac15b]]
+
+[[ID:IDControl4c38e983-577a-4f42-83d6-e07324eac15b]]
+
+				Si mis rendimientos varían a lo largo del año, ¿cómo ajusto mi cotización?
+
+[[ID:IDregion4c38e983-577a-4f42-83d6-e07324eac15b]]
+
+Si a lo largo del año, tus rendimientos netos anuales en promedio mensual, son distintos a los previstos inicialmente, podrás ajustar tu base de cotización hasta seis veces en el servicio de Base de cotización y rendimientos.
+
+Para ello, dispondrás de un simulador de cuotas donde la podrás revisar y ajustar al nuevo sistema de cotización, teniendo en cuenta la situación de tus rendimientos en el momento de la consulta. La modificación de las bases no es inmediata, sino que en función del momento en el que hagas la comunicación, el cambio será efectivo el día 1 de los siguientes meses: marzo, mayo, julio, septiembre, noviembre del año 2026 y enero de 2027.
+
+El objetivo de este servicio es hacer posible que al finalizar el año el resultado de tu regularización sea cero.
+
+[[ID:post-4e2d7c10-0653-4d63-820e-9e5c72e31121]]
+
+[[ID:IDControl4e2d7c10-0653-4d63-820e-9e5c72e31121]]
+
+				¿Qué es la regularización de cuotas?
+
+[[ID:IDregion4e2d7c10-0653-4d63-820e-9e5c72e31121]]
+
+Con el nuevo sistema de cotización los trabajadores autónomos cotizarán en función de los rendimientos netos obtenidos por el ejercicio de las actividades económicas, empresariales o profesionales. Según la previsión de tus rendimientos netos anuales debes calcular el promedio mensual y elegir una base de cotización incluida dentro del tramo asociado al importe de dicho promedio. Los tramos aplicables se recogen en una tabla aprobada por ley.
+
+Las bases elegidas tendrán carácter provisional hasta que la Tesorería General de la Seguridad Social realice la regularización anual según los rendimientos que la Administración Tributaria le haya comunicado.
+
+Si tras el resultado de la regularización tus rendimientos anuales han sido menores a los que habías previsto, la Tesorería General de la Seguridad Social procederá de oficio a devolver la diferencia entre la cuota que has pagado y la que te corresponde pagar. Si tus rendimientos anuales definitivos están por encima de los previstos, tendrás que regularizar tu situación pagando la diferencia.
+
+Además, el importe de las bonificaciones se podrá ver afectado por la regularización de cuotas en los casos en los que la base de cotización definitiva es inferior a 950,98 €/mes. No obstante, algunas bonificaciones no sufrirán variaciones en su importe: bonificación por conciliación de la vida profesional y familiar; descanso por nacimiento, adopción, guarda, acogimiento, riesgo durante el embarazo o lactancia natural; reincorporación de la mujer trabajadora o cuidado de menores afectados por una enfermedad grave.
+
+[[ID:post-4a680661-642a-4ee8-b6cc-00a132bd553d]]
+
+[[ID:IDControl4a680661-642a-4ee8-b6cc-00a132bd553d]]
+
+				¿Qué casos no se incluyen a efectos de regularización?
+
+[[ID:IDregion4a680661-642a-4ee8-b6cc-00a132bd553d]]
+
+En las altas presentadas fuera de plazo o altas de oficio por la actuación de la Inspección de Trabajo y Seguridad Social, no se regularizará el período comprendido entre el día que iniciaste la actividad y el último día del mes en que se solicite el alta, de formularse esta solicitud a partir del mes siguiente al del inicio de la actividad.
+
+Cuando incumplas la obligación de presentar la declaración del IRPF.
+
+Quedan excluidas de la regularización, las cotizaciones correspondientes a los meses tenidos en cuenta para el cálculo de la base reguladora de una prestación económica del sistema de la Seguridad Social reconocida con anterioridad a la fecha de la regularización, entre otros casos.
+
+Tampoco se regularizarán las bases de cotización referidas a los períodos en que el trabajador autónomo haya percibido una prestación de corta duración. Por ejemplo, cuando el trabajador autónomo está en situación de incapacidad temporal, riesgo durante el embarazo y durante la lactancia natural, nacimiento y cuidado del menor o cese de actividad, entre otras.
+
+No se regularizará el periodo de disfrute de la tarifa plana.
+
+No se regularizará el periodo de disfrute de la tarifa plana de Cuenca, Teruel y Soria.
+
+Recuerda que los religiosos de la Iglesia católica no cotizan por rendimientos, por lo que no están sujetos a regularización.
+
+[[ID:post-490da98f-03e4-4ae1-8993-b0017169f356]]
+
+[[ID:IDControl490da98f-03e4-4ae1-8993-b0017169f356]]
+
+				¿Cuándo me pasarán el primer recibo?
+
+[[ID:IDregion490da98f-03e4-4ae1-8993-b0017169f356]]
+
+La cuota de autónomos se cargará en tu cuenta el último día hábil de cada mes. Tendrás que domiciliar los pagos a través de un banco o una entidad financiera colaboradora con la Seguridad Social. Conoce todas las Entidades financieras colaboradoras con la Seguridad Social.
+
+[[ID:post-8d42c9ba-a2a1-4d47-9f5e-eeda2b47e990]]
+
+[[ID:IDControl8d42c9ba-a2a1-4d47-9f5e-eeda2b47e990]]
+
+				¿Es obligatorio que yo sea el titular de la cuenta en la que domicilien los pagos?
+
+[[ID:IDregion8d42c9ba-a2a1-4d47-9f5e-eeda2b47e990]]
+
+No, pero necesitarás el consentimiento del titular de la cuenta. Si el titular de la cuenta es otra persona, deberá proporcionar información adicional en esta pantalla. En concreto, deberá indicar:
+
+El nombre del titular de la cuenta.
+
+El tipo de documento que puede ser un DNI/NIE/NIF del titular de la cuenta. Se permite que el titular de la cuenta sea una persona jurídica en todo caso.
+
+Deberás contar con la autorización del titular de la cuenta.
+
+[[ID:post-29331224-392b-44ea-9d91-d8151d5dfa43]]
+
+3. Derechos y prestaciones
+
+[[ID:post-0eb5cd0c-9403-4e04-bf45-81da7cfde64d]]
+
+[[ID:IDControl0eb5cd0c-9403-4e04-bf45-81da7cfde64d]]
+
+				¿Hay deducciones o beneficios sobre la cotización?
+
+[[ID:IDregion0eb5cd0c-9403-4e04-bf45-81da7cfde64d]]
+
+				Con el objetivo de impulsar la actividad por cuenta propia hay descuentos en la cuota de autónomo si:
+
+Es tu primera alta como autónomo (Tarifa plana).
+
+Resides en Ceuta y Melilla.
+
+Estás en descanso por nacimiento, adopción, guarda con fines de adopción, acogimiento, riesgo durante el embarazo y riesgo durante la lactancia natural.
+
+En situaciones de reincorporación tras el nacimiento de hija o hijo, adopción, guarda con fines de adopción, acogimiento y tutela.
+
+Estás en situación de cuidado de menores afectados por cáncer u otra enfermedad grave.
+
+Si compatibilizas tu actividad autónoma con un trabajo por cuenta ajena.
+
+Trabajas en actividades de venta ambulante.
+
+Por creación artística.
+
+Eres familiar colaborador de un trabajador autónomo.
+
+Eres familiar del titular de una explotación agraria.
+
+Contratas a otro profesional para facilitar tu conciliación de la vida profesional y familiar.
+
+Estás recibiendo una prestación de jubilación y estás de alta como autónomo.
+
+[[ID:post-57609723-01d9-4b30-9cc1-679a0da1812d]]
+
+[[ID:IDControl57609723-01d9-4b30-9cc1-679a0da1812d]]
+
+				¿Se mantienen los actuales beneficios de cotización? ¿Se establece algún beneficio nuevo?
+
+[[ID:IDregion57609723-01d9-4b30-9cc1-679a0da1812d]]
+
+Con el nuevo sistema de cotización se mantienen los siguientes beneficios:
+
+Tarifa plana de 60 €/mes, reconocida con anterioridad al 1 de enero de 2023 hasta el periodo máximo de duración. En el caso de los trabajadores autónomos del sector agrario, la tarifa plana de 50€/mes.
+
+Por la contratación de un trabajador por cuenta ajena para la conciliación de la vida familiar y profesional del trabajador autónomo.
+
+En situaciones de descanso por nacimiento, adopción, guarda con fines de adopción, acogimiento, riesgo durante el embarazo y durante la lactancia natural.
+
+Por la reincorporación después del nacimiento de hijo o hija, adopción, guarda con fines de adopción, acogimiento y tutela.
+
+Familiar colaborador del trabajador autónomo.
+
+Familiar del titular de la explotación agraria.
+
+Trabajadores autónomos en Ceuta y Melilla.
+
+Además, se incluyen algunos beneficios nuevos:
+
+Tarifa plana de 80 €/mes, reconocida con posterioridad al 1 de enero de 2023.
+
+Por cuidado de menores afectados por cáncer u otra enfermedad grave.
+
+Recuerda que para disfrutar de estos beneficios tendrás que estar al corriente del pago con la Seguridad Social y al corriente en el cumplimiento de tus obligaciones tributarias. Además, tendrás que cumplir los requisitos exigidos respecto de cada uno de ellos.
+
+[[ID:post-a38cef9b-d78a-43b7-b17b-d265642d2f22]]
+
+[[ID:IDControla38cef9b-d78a-43b7-b17b-d265642d2f22]]
+
+				¿Cuáles son los requisitos para aplicarme las deducciones sobre la cotización?
+
+[[ID:IDregiona38cef9b-d78a-43b7-b17b-d265642d2f22]]
+
+Algunas deducciones no son compatibles entre sí. 
+
+Además de la tarifa plana, estas son las deducciones que te puedes aplicar si cumples los requisitos:
+
+Beneficio en la cotización por familiar colaborador
+
+Con carácter general, serán beneficiarios el cónyuge o familiar del trabajador autónomo por consanguinidad o afinidad hasta el segundo grado inclusive o, en su caso, por adopción. Podrás disfrutar de este beneficio si es tu primera alta como autónomo o si han pasado 5 años desde que lo fuiste. 
+
+Podrás solicitar esta deducción a través de Importass, identificándote con Clave Permanente, certificado o DNI electrónico o vía SMS, si tienes comunicado tu teléfono móvil a la Seguridad Social.
+
+Tendrás que acreditar el parentesco mediante el libro de familia.
+
+La TGSS comprobará el empadronamiento de los familiares colaboradores.
+
+Reducción de cuotas a favor de familiares del titular de explotación agraria 
+
+Para la aplicación de este beneficio, con carácter general, debes cumplir los siguientes requisitos:
+
+Realizar una actividad agraria.
+
+Tener 50 años o menos en el momento del alta en trabajo autónomo.
+
+Ser cónyuge o descendiente del titular de la explotación.
+
+Podrás solicitar esta deducción a través de Importass, identificándote con Clave Permanente, certificado o DNI electrónico o vía SMS, si tienes comunicado tu teléfono móvil a la Seguridad Social.
+
+         Tendrás que acreditar el parentesco mediante el libro de familia.
+
+La TGSS comprobará el empadronamiento de los familiares colaboradores.
+
+Bonificación por cuidado de menor afectado por cáncer u otra enfermedad grave
+
+Si eres trabajador autónomo beneficiario de la prestación por cuidado de menor afectado por cáncer u otra enfermedad grave podrás disfrutar de una bonificación del 75 % de la cuota por contingencias comunes durante el periodo en el que recibas dicha prestación.
+
+Si llevas menos de 12 meses consecutivos dado de alta en Trabajo Autónomo, en el cálculo de la base media de cotización se tendrá en cuenta la última fecha de alta, cuyo resultado se obtiene dividiendo la suma de las bases de cotización entre el número de días en los que ha estado dado de alta de manera continuada, y la cuantía obtenida se multiplica por treinta.
+
+Esta bonificación se mantendrá durante el periodo de disfrute de la prestación por cuidado de menores afectados por cáncer u otra enfermedad grave, hasta los 23 años, siempre que el diagnóstico de la enfermedad fuera anterior a la mayoría de edad y persistiera el padecimiento de la enfermedad grave y el cuidado del mismo.
+
+Bonificación por reincorporación tras el nacimiento de hijo o hija, adopción, guarda con fines de adopción, acogimiento y tutela
+
+Si eres trabajadora autónoma, cesas tu actividad por nacimiento de hijo o hija, adopción, o guarda con fines de adopción, acogimiento y tutela y quieres volver a realizar una actividad por cuenta propia dentro de los 2 años siguientes a la fecha del cese, tendrás derecho a una bonificación del 80 % de la cuota por contingencias comunes durante los 24 meses siguientes a la fecha de reincorporación al trabajo.
+
+Trabajadores autónomos en Ceuta y Melilla
+
+Si eres trabajador autónomo, resides y ejerces tu actividad en las Ciudades de Ceuta y Melilla y tu actividad coincide con alguna de las relacionadas en el párrafo siguiente, tendrás derecho a un beneficio del 50 por ciento de la cuota por contingencias comunes correspondiente.
+
+Las actividades que dan derecho a este beneficio son las encuadradas en los sectores de agricultura, pesca y acuicultura; industria, excepto energía y agua; comercio; turismo; hostelería y resto de servicios, excepto el transporte aéreo de ala fija, construcción de edificios; actividades financieras y de seguros, y actividades inmobiliarias.
+
+[[ID:post-f28d7759-8ac1-4ffd-b5a0-66871901a29b]]
+
+[[ID:IDControlf28d7759-8ac1-4ffd-b5a0-66871901a29b]]
+
+				¿Qué es la tarifa plana?
+
+[[ID:IDregionf28d7759-8ac1-4ffd-b5a0-66871901a29b]]
+
+La tarifa plana consiste en el pago de una cuota de 80 € al mes durante los primeros 12 meses de alta si el autónomo se da de alta por primera vez en Trabajo Autónomo. Durante este periodo, se cotizará por el importe de la base mínima del tramo 1 de la tabla general de cotización.
+
+Al importe de la tarifa plana hay que añadirle la cotización correspondiente al Mecanismo de Equidad Intergeneracional (0,9%), ascendiendo a un total de 88,64€.
+
+Además, el autónomo podrá beneficiarse de la tarifa plana siempre y cuando no haya estado incluido en este Régimen Especial en los 2 años anteriores o 3 años si hubiera disfrutado de este beneficio con anterioridad.
+
+La tarifa plana tendrá una duración de 12 meses, prorrogables por otros 12 meses más si tus rendimientos económicos son inferiores al salario mínimo interprofesional y se acredita a través de la declaración sobre la previsión de tus rendimientos netos.
+
+Hay particularidades para distintas situaciones para las que habrá una reducción específica. En este caso, la tarifa plana tendrá una duración inicial de 24 meses, prorrogable por otros 36 meses cuando la previsión de tus rendimientos netos es inferior al salario mínimo interprofesional. Algunas especialidades son las siguientes:
+
+Tarifa plana para personas con discapacidad. Debes acreditar un grado de discapacidad igual o superior al 33%. Para ello, se requerirá la resolución del órgano competente en la que se reconozca el grado de discapacidad o resolución del INSS que acredite la incapacidad.
+
+Tarifa plana para víctima de violencia de género. Debes acreditar la condición de víctima de violencia de género, a través de la siguiente documentación:
+
+Certificación de los Servicios Sociales u orden del Ministerio Fiscal.
+
+Sentencia condenatoria por un delito de violencia de género, una orden de protección o cualquier otra resolución judicial que acuerde una medida cautelar a favor de la víctima.
+
+Tarifa plana para víctima de terrorismo. Debes acreditar la condición de víctima de terrorismo, a través del Certificado del Ministerio del Interior.
+
+Recuerda que para disfrutar de la tarifa plana debes estar al corriente de pago con la Seguridad Social y las Administraciones Tributarias, así como cumplir los requisitos exigidos. 
+
+Podrás solicitar esta deducción a través de Importass, identificándote con Clave Permanente, certificado o DNI electrónico. 
+
+Si no dispones de los medios de identificación indicados, será necesario rellenar tus datos personales, un selfie y adjuntar una fotografía de tu documento de identidad.
+
+Los autónomos que son familiares colaboradores tienen sus propios incentivos, por lo que, no pueden solicitar la tarifa plana. Tampoco será de aplicación la tarifa plana a los religiosos de la Iglesia Católica.
+
+Si estás de alta en varios regímenes, tendrás que elegir entre los beneficios de la tarifa plana o aquellos que se otorgan en caso de pluriactividad. Conoce qué beneficios tienes si te encuentras en situación de pluriactividad.
+
+[[ID:post-62ea8812-d380-4a95-8402-921845bec526]]
+
+[[ID:IDControl62ea8812-d380-4a95-8402-921845bec526]]
+
+				Estoy disfrutando actualmente de la tarifa plana de 60 €, ¿cómo me afecta esta nueva normativa?
+
+[[ID:IDregion62ea8812-d380-4a95-8402-921845bec526]]
+
+Seguirás disfrutando de la tarifa plana, en las mismas condiciones, hasta que finalice su periodo máximo de duración.
+
+[[ID:post-2b9bdeef-9a89-491f-bba3-be6e4171ec2a]]
+
+[[ID:IDControl2b9bdeef-9a89-491f-bba3-be6e4171ec2a]]
+
+				¿Puedo renunciar a mi tarifa plana?
+
+[[ID:IDregion2b9bdeef-9a89-491f-bba3-be6e4171ec2a]]
+
+Sí, podrás renunciar expresamente a la tarifa plana a través del servicio Renuncia a tu tarifa plana. Esta solicitud tendrá efectos a partir del día primero del mes siguiente a la comunicación de la renuncia.
+
+[[ID:post-5d1ffdeb-1cc5-4b3c-909d-af26b359fb6e]]
+
+[[ID:IDControl5d1ffdeb-1cc5-4b3c-909d-af26b359fb6e]]
+
+				¿Qué prestaciones cubre el alta en trabajo autónomo y cómo puedo solicitarlas?
+
+[[ID:IDregion5d1ffdeb-1cc5-4b3c-909d-af26b359fb6e]]
+
+Estas son las situaciones protegidas por la Seguridad Social en el Régimen especial de trabajo Autónomo:
+
+Baja médica por enfermedad común y accidente no laboral.
+
+Baja médica por enfermedad profesional o accidente laboral.
+
+Nacimiento y cuidado de menor.
+
+Riesgo durante el embarazo y lactancia.
+
+Incapacidad permanente.
+
+Viudedad y orfandad.
+
+Cese de actividad por causas involuntarias.
+
+Jubilación.
+
+Para más información sobre prestaciones y cómo puedes solicitarlas consulta Prestaciones de la Seguridad Social.
+
+[[ID:post-b51fb5c3-1acc-4bb5-bc8c-41b495a0631f]]
+
+[[ID:IDControlb51fb5c3-1acc-4bb5-bc8c-41b495a0631f]]
+
+				¿Qué cubren mis cuotas?
+
+[[ID:IDregionb51fb5c3-1acc-4bb5-bc8c-41b495a0631f]]
+
+Con carácter general, tendrás que cotizar como autónomo por:
+
+Contingencias comunes. Te asegura cuando no puedas trabajar debido a un accidente o enfermedad no laboral.
+
+Contingencias profesionales. Esta cotización te cubre en los casos de accidente laboral o enfermedad profesional.
+
+Cese de actividad. Te cubre en caso de que se produzca el fin definitivo de tu actividad.
+
+Por medidas de formación, orientación profesional y promoción de la actividad emprendedora. Cotización orientada al acceso a formación que facilite tu inserción en el mercado laboral.
+
+Mecanismo de equidad intergeneracional (MEI). Esta cotización pretende mantener el equilibrio entre generaciones y la sostenibilidad del sistema de la Seguridad Social.
+
+Sin embargo, hay algunas excepciones:
+
+La cotización por contingencias comunes es opcional para los autónomos que además estén de alta en otros regímenes de la Seguridad Social, y también para los trabajadores del Sistema Especial de Trabajadores por Cuenta Propia Agrarios (SETA).
+
+La cotización por contingencias profesionales no es obligatoria para los socios de cooperativas, para los autónomos que dispongan de un sistema intercooperativo de prestaciones sociales complementario al Sistema Público y para los trabajadores autónomos agrarios (SETA).
+
+La cotización por cese de actividad y formación no es obligatoria para los autónomos que estén disfrutando de la tarifa plana.
+
+[[ID:post-8a47448d-cd77-4dca-b289-98a8e8cb6eca]]
+
+[[ID:IDControl8a47448d-cd77-4dca-b289-98a8e8cb6eca]]
+
+				¿Qué pasa si me pongo enfermo o tengo un accidente?
+
+[[ID:IDregion8a47448d-cd77-4dca-b289-98a8e8cb6eca]]
+
+Si por una enfermedad o un accidente no puedes desempeñar temporalmente tu trabajo, además de asistencia sanitaria podrás solicitar una prestación económica siempre que cumplas con unos requisitos que dependen del motivo de la incapacidad.
+
+Si la incapacidad se debe a una enfermedad o un accidente no relacionados con el trabajo tendrás derecho a cobrar el subsidio a partir del cuarto día de la baja. Para solicitarlo deberás:
+
+Estar de alta en trabajo autónomo.
+
+Estar al corriente en el pago de las cuotas. Si tienes algún pago pendiente tendrás un plazo de 30 días para pagar tus deudas. Consulta de deudas y obtención de documento de pago. 
+
+Haber cotizado un mínimo de 180 días en los 5 años anteriores a la enfermedad.
+
+Si, por el contrario, la incapacidad se debe a una enfermedad profesional o un accidente de trabajo no se exige período previo de cotización. En este caso, tendrás derecho al subsidio a partir del día siguiente a la baja.
+
+Acude a la página web oficial de tu Mutua para solicitar la prestación. Consulta las Mutuas Colaboradoras con la Seguridad Social.
+
+[[ID:post-5feeba25-f09f-4233-b339-0174d97b992b]]
+
+[[ID:IDControl5feeba25-f09f-4233-b339-0174d97b992b]]
+
+				¿Los autónomos tienen derecho a paro?
+
+[[ID:IDregion5feeba25-f09f-4233-b339-0174d97b992b]]
+
+Sí. Los autónomos tienen derecho a la prestación por cese de actividad. 
+
+Para poder acceder a esta prestación tienes que cumplir las siguientes condiciones:
+
+Estar de alta como autónomo y tener cubierto el cese de actividad.
+
+Haber cotizado por cese de actividad un período mínimo de 12 meses continuados e inmediatamente anteriores al cese de actividad.
+
+Estar al corriente de pago de las cuotas de Seguridad Social. Si tienes algún pago pendiente tendrás un plazo de 30 días para pagar tus deudas. Consulta de deudas y obtención de documento de pago.
+
+El fin de la actividad debe ser por motivos económicos, técnicos, productivos u organizativos, causas de fuerza mayor, pérdida de licencia administrativa, violencia de género y divorcio o acuerdo de separación matrimonial. Si te das de baja de forma voluntaria no tendrás acceso a esta prestación.
+
+No haber cumplido la edad ordinaria para acceder a la pensión de jubilación.
+
+Cuanto más alta sea tu base de cotización, mayor será tu prestación. La cuantía máxima y mínima lo fija el Indicador Público de Rentas de Efectos Múltiples (IPREM), pero se podrá ver incrementada en función de tu situación familiar.
+
+El tiempo mínimo de la duración de la prestación es de 4 meses y el máximo de 24 meses. Con carácter general, la duración de la prestación se calculará en función de la edad y los periodos cotizados.
+
+Para más información, accede a Protección por cese de la actividad.
+
+En caso de los Trabajadores Autónomos Económicamente Dependientes (TRADE), las situaciones que dan derecho a esta prestación son las siguientes:
+
+Cuando se acaba el contrato por tiempo o por el término del servicio.
+
+Cuando el cliente incumple gravemente el contrato.
+
+Cuando el cliente rescinde el contrato, de manera justifica o injustificada.
+
+Jubilación, incapacidad o fallecimiento del cliente, cuando esto impida la realización de la actividad.
+
+El resto de las causas aplicables a los trabajadores autónomos.
+
+[[ID:post-534d06fa-e6e9-421a-a0a8-c811e5fe8a2a]]
+
+[[ID:IDControl534d06fa-e6e9-421a-a0a8-c811e5fe8a2a]]
+
+				¿Tengo derecho a baja por nacimiento y cuidado del menor?
+
+[[ID:IDregion534d06fa-e6e9-421a-a0a8-c811e5fe8a2a]]
+
+Sí, puedes solicitar una prestación en los siguientes casos:
+
+El nacimiento de hijo o hija.
+
+En caso de adopción, la guarda con fines de adopción y acogimiento familiar si su duración es mayor a un año y se trate de menores de 6 años.
+
+Para beneficiarte de la prestación tendrás que:
+
+Estar de alta en trabajo autónomo.
+
+Estar al corriente en el pago de las cuotas mensuales de la Seguridad Social.
+
+Tener cotizado un período mínimo que varía en función de la edad.
+
+Para más información, consulta Nacimiento y cuidado de menor.
+
+[[ID:post-0b4f9f6c-fa41-44cb-8ade-7b121b4bf5e4]]
+
+[[ID:IDControl0b4f9f6c-fa41-44cb-8ade-7b121b4bf5e4]]
+
+				¿Qué cuota pago durante el período de baja por nacimiento, adopción, guarda con fines de adopción, acogimiento, riesgo durante el embarazo o durante la lactancia natural?
+
+[[ID:IDregion0b4f9f6c-fa41-44cb-8ade-7b121b4bf5e4]]
+
+Si eres persona trabajadora autónoma y te encuentras en situación de descanso por nacimiento, adopción, guarda con fines de adopción, acogimiento, riesgo durante el embarazo o riesgo durante la lactancia natural, puedes beneficiarte de una bonificación del 100% de la cuota por contingencias comunes, excepto la correspondiente a Incapacidad Temporal.
+Esta bonificación se calcula sobre la base media de cotización de los últimos 12 meses.
+
+[[ID:post-7d710f14-27f5-427e-8a27-874c13e279af]]
+
+[[ID:IDControl7d710f14-27f5-427e-8a27-874c13e279af]]
+
+				¿Qué es una mutua?
+
+[[ID:IDregion7d710f14-27f5-427e-8a27-874c13e279af]]
+
+Las mutuas son asociaciones de empresarios sin ánimo de lucro que colaboran con el sistema de Seguridad Social en la gestión de coberturas y prestaciones:
+
+Accidentes de trabajo y enfermedades profesionales.
+
+Prestación económica debido a un accidente o enfermedad no laboral.
+
+Protección por cese de actividad.
+
+Prevención de riesgos laborales, mejora de las condiciones de trabajo y salud en las empresas.
+
+Al darte de alta como autónomo tienes que elegir una Mutua Colaboradora con la Seguridad Social. Puedes cambiar tu mutua y las coberturas a través de Modificación de datos de trabajo autónomo. 
+
+[[ID:post-66bae395-73d5-4906-bef1-88753b6e7357]]
+
+4. Variaciones y bajas
+
+[[ID:post-0bc27264-6a1f-4829-bf88-33572ac9b4d2]]
+
+[[ID:IDControl0bc27264-6a1f-4829-bf88-33572ac9b4d2]]
+
+				Quiero cambiar mis datos personales ¿qué tengo que hacer?
+
+[[ID:IDregion0bc27264-6a1f-4829-bf88-33572ac9b4d2]]
+
+Puedes modificar tu domicilio, número de teléfono móvil, teléfono fijo o correo electrónico desde la página Tus datos personales de tu Área personal.
+
+[[ID:post-30443a65-6a17-44ee-bb2c-b4ae06ca5efa]]
+
+[[ID:IDControl30443a65-6a17-44ee-bb2c-b4ae06ca5efa]]
+
+				Necesito acreditar que cumplo los requisitos para acceder a los beneficios que me corresponden ¿qué tengo que hacer?
+
+[[ID:IDregion30443a65-6a17-44ee-bb2c-b4ae06ca5efa]]
+
+Si necesitas adjuntar información para completar tu alta en trabajo autónomo o quieres modificar tus datos podrás hacerlo desde Modificación de datos de trabajo autónomo.
+
+[[ID:post-ec501411-4f66-4900-8585-10e852985e23]]
+
+[[ID:IDControlec501411-4f66-4900-8585-10e852985e23]]
+
+				He cambiado de domicilio de actividad ¿qué tengo que hacer?
+
+[[ID:IDregionec501411-4f66-4900-8585-10e852985e23]]
+
+Si quieres actualizar tu domicilio de actividad debes comunicarlo desde el servicio de tu área personal.
+
+En tu área personal podrás ver todas las actividades que tienes comunicadas a la Tesorería General de la Seguridad Social y podrás cambiar el domicilio de actividad en cada una de ellas.
+
+[[ID:post-a0bbde58-eabf-4a67-a409-b555decb6f58]]
+
+[[ID:IDControla0bbde58-eabf-4a67-a409-b555decb6f58]]
+
+				Mi actividad profesional ha cambiado ¿qué tengo que hacer?
+
+[[ID:IDregiona0bbde58-eabf-4a67-a409-b555decb6f58]]
+
+Si solo tienes una actividad comunicada a la Tesorería General de la Seguridad Social, puedes corregir la actividad profesional que comunicaste en el alta o modificarla si estando de alta ha cambiado desde Modificación de datos de trabajo autónomo. Este servicio permite corregir la actividad que se comunicó de forma errónea en el alta o modificar la actividad actual.
+
+Para ello, tendrás que indicar el nuevo código de actividad de acuerdo con la tabla de Clasificación Nacional de Actividades Económicas (CNAE).
+
+El plazo para para corregir una actividad comunicada de forma errónea durante el proceso de alta es de 10 días a partir de la tramitación del alta.
+
+Si lo que quieres es modificar la actividad que estás desarrollando porque tu situación ha cambiado desde que se efectuó el alta, debes comunicarlo dentro de los 6 días siguientes al cambio. En este caso, tendrá efectos en el mismo mes en el que lo comuniques.
+
+Ten en cuenta que, al modificar la actividad económica, es posible que varíen tus condiciones de cotización, por lo que se podrían producir cambios en la cuota a pagar. Te avisaremos en el caso de que esto ocurriese.
+
+[[ID:post-653456ac-96b2-4db4-b0e2-ebc500fa7e77]]
+
+[[ID:IDControl653456ac-96b2-4db4-b0e2-ebc500fa7e77]]
+
+				Mi condición de trabajador autónomo ha cambiado ¿qué tengo que hacer?
+
+[[ID:IDregion653456ac-96b2-4db4-b0e2-ebc500fa7e77]]
+
+Si solo tienes una actividad comunicada a la Tesorería General de la Seguridad Social, puedes corregir tu condición de trabajador autónomo (como titular, colaborador familiar, socio colaborador, etc.) que comunicaste en el alta o modificarla posteriormente desde Modificación de datos de trabajo autónomo.
+
+Este servicio permite corregir la condición de trabajador autónomo que se comunicó de forma errónea en el alta o modificar la condición de trabajador autónomo actual.
+
+Para ello, tendrás que indicar la nueva condición, aunque debes tener en cuenta que es posible que tengas que aportar nuevos datos en función del cambio:
+
+Si pasas a ser Familiar de trabajador autónomo, necesitarás el Documento Nacional de Identidad (DNI) con el que vas a trabajar.
+
+Si pasas a ser Socio o familiar de socio, necesitarás aportar el Código de Identificación Fiscal (CIF) de la empresa y acreditar tu condición de socio.
+
+Si eres familiar de un trabajador autónomo y pasas a ser propietario o titular de un negocio, profesional colegiado o trabajador autónomo por su cuenta, necesitarás aportar los datos relativos al Impuesto de Actividades Económicas (IAE) y el Código de Actividad Económica (CNAE) de la nueva actividad o negocio.
+
+A través de este servicio no podrás cambiar tu condición a trabajador agrario (SETA).
+
+El plazo para para corregir una condición de trabajador autónomo comunicada de forma errónea durante el proceso de alta es de 10 días a partir de la tramitación del alta.
+
+Si lo que quieres es modificar tu condición de trabajador autónomo porque tu situación ha cambiado, debes comunicarlo dentro de los 6 días siguientes desde de que se haya producido el cambio. La modificación tendrá efectos a partir del mes en que la comuniques, siempre que la comunicación esté dentro del plazo.
+
+Ten en cuenta que el cambio de condición de trabajador autónomo puede afectar al cálculo de tu cuota, a futuras prestaciones y a los beneficios a los que podrías tener derecho.
+
+[[ID:post-839bda8d-1c81-464e-82ca-157fc51692dc]]
+
+[[ID:IDControl839bda8d-1c81-464e-82ca-157fc51692dc]]
+
+				Quiero finalizar una actividad por cuenta propia sin darme de baja en el RETA, ¿es posible?
+
+[[ID:IDregion839bda8d-1c81-464e-82ca-157fc51692dc]]
+
+Si tienes comunicada más de una actividad por cuenta propia a la Tesorería General de la Seguridad Social, podrás tramitar el fin de alguna de ellas u fin a través del servicio Comunicar fin de alguna de tus actividades. Esto no supondrá tu baja en el Régimen Especial de Trabajadores Autónomos, siempre y cuando continúes realizando el resto de las actividades por cuenta propia.
+
+[[ID:post-2860a973-5af6-47c5-9fed-9572961062cc]]
+
+[[ID:IDControl2860a973-5af6-47c5-9fed-9572961062cc]]
+
+				Quiero darme de baja de autónomos ¿qué tengo que hacer?
+
+[[ID:IDregion2860a973-5af6-47c5-9fed-9572961062cc]]
+
+Si vas a finalizar tu actividad por cuenta propia tendrás que comunicar tu baja a la Seguridad Social a través Baja en trabajo autónomo. 
+
+Puedes programar la baja hasta 60 días antes del fin de la actividad o solicitarla hasta los 6 días naturales siguientes. Si comunicas la baja más tarde, se considerará que la fecha de baja será el último día del mes de la finalización de la actividad. Al final de mes solo te cargarán la parte de la cuota que corresponda hasta el día de efectos de la baja.
+
+Además, si estás dado de alta en la Agencia Tributaria tendrás que comunicar tu baja desde la misma fecha presentando el modelo 036 o 037. Para más información, accede a Modelos 036 y 037.
+
+[[ID:post-f399c476-465d-4473-96a7-52e0f7b98a99]]
+
+[[ID:IDControlf399c476-465d-4473-96a7-52e0f7b98a99]]
+
+				¿La causa de mi baja afecta a la prestación por cese de actividad?
+
+[[ID:IDregionf399c476-465d-4473-96a7-52e0f7b98a99]]
+
+Sí. Si la baja es por motivos económicos, técnicos, productivos u organizativos, causas de fuerza mayor, pérdida de licencia administrativa, violencia de género y divorcio o acuerdo de separación matrimonial tendrás derecho al paro de autónomos. Pero si la baja es voluntaria no tendrás acceso a esta prestación.
+
+Para más información, accede a Protección por cese de la actividad.
+
+[[ID:post-65a2281f-8f05-4e02-99ac-ed83447d2204]]
+
+[[ID:IDControl65a2281f-8f05-4e02-99ac-ed83447d2204]]
+
+				¿Cómo puedo modificar la Mutua Aseguradora?
+
+[[ID:IDregion65a2281f-8f05-4e02-99ac-ed83447d2204]]
+
+Si quieres cambiar de mutua deberás hacerlo a través del servicio Modificación de datos de trabajo autónomo. La modificación de Mutua, tendrás que solicitarla antes del 1 de octubre de cada año y tendrán efectos desde el 1 de enero del año siguiente. Cuando solicites un cambio de Mutua, en algunos casos, deberás comunicar a tu Mutua que ya no deseas mantener con ella la cobertura de los riesgos. Si no lo haces, la Mutua actual podría rechazar el cambio.
+
+[[ID:post-95459731-a16a-49ef-a10e-2e07c40e8a2a]]
+
+[[ID:IDControl95459731-a16a-49ef-a10e-2e07c40e8a2a]]
+
+				Quiero cambiar la cuenta bancaria que tengo domiciliada para los pagos de autónomos
+
+[[ID:IDregion95459731-a16a-49ef-a10e-2e07c40e8a2a]]
+
+Se puede realizar el cambio de cuenta bancaria o solicitar la domiciliación del pago de las cuotas de Seguridad Social en la entidad financiera de tu elección a través del servicio de Modificación de datos de trabajo autónomo.
+
+Si el cambio lo haces entre el día 1 y 13 del mes, tendrá efectos en el mismo mes de la solicitud.
+
+Si la modificas a partir del día 14, tendrá efectos a partir del primer día del mes siguiente.
+
+La entidad financiera seleccionada, deberá estar autorizada como colaboradora en esta modalidad de pago por la Tesorería General de la Seguridad Social.
+
+[[ID:post-884b4700-c8ec-424a-bec1-6cc8538463af]]
+
+[[ID:IDControl884b4700-c8ec-424a-bec1-6cc8538463af]]
+
+				¿Es posible cambiar mi base de cotización?
+
+[[ID:IDregion884b4700-c8ec-424a-bec1-6cc8538463af]]
+
+Puedes cambiar hasta seis veces al año la base de cotización eligiendo otra dentro de los límites mínimo y máximo aplicables, a través del servicio Bases de cotización y rendimientos.
+
+Los periodos para solicitar el cambio de base son los siguientes:
+
+Entre el 1 de enero y el último día de febrero, el cambio tendrá efectos el 1 de marzo.
+
+Entre el 1 de marzo y el 30 de abril, el cambio tendrá efectos el 1 de mayo.
+
+Entre el 1 de mayo y el 30 de junio, el cambio tendrá efectos el 1 de julio.
+
+Entre el 1 de julio y el 31 de agosto, el cambio tendrá efectos el 1 de septiembre.
+
+Entre el 1 de septiembre y el 31 de octubre, el cambio tendrá efectos el 1 de noviembre.
+
+Entre el 1 de noviembre y el 31 de diciembre, el cambio tendrá efectos el 1 de enero del año siguiente.
+
+[[ID:post-2b30e900-e068-482c-99b6-b3cbf72abd50]]
+
+[[ID:IDControl2b30e900-e068-482c-99b6-b3cbf72abd50]]
+
+				Si durante mi baja médica modifico mi base de cotización, ¿Cuándo se producirá el cambio?
+
+[[ID:IDregion2b30e900-e068-482c-99b6-b3cbf72abd50]]
+
+El cambio de base de cotización, estando en situación de baja médica, se producirá a partir del día siguiente al alta médica.
+
+[[ID:post-d3659e25-a584-4895-b015-f8d11831dd2e]]
+
+5. Regularización anual de cuotas
+
+[[ID:post-bd2e7f2a-4ea1-482c-a3a4-92ef94bc2b84]]
+
+[[ID:IDControlbd2e7f2a-4ea1-482c-a3a4-92ef94bc2b84]]
+
+				¿Qué es la regularización anual de cuotas?
+
+[[ID:IDregionbd2e7f2a-4ea1-482c-a3a4-92ef94bc2b84]]
+
+La Tesorería General de la Seguridad Social comprueba que las bases de cotización que has elegido durante el año se ajustan a los rendimientos netos que has obtenido. La información de los rendimientos netos es proporcionada por las Administraciones Tributarias (como la AEAT y las Haciendas Forales).
+
+[[ID:post-b498db5a-b0f2-4866-85a3-516613ec378a]]
+
+[[ID:IDControlb498db5a-b0f2-4866-85a3-516613ec378a]]
+
+				¿Tengo que solicitar a la Tesorería la regularización de mis cuotas?
+
+[[ID:IDregionb498db5a-b0f2-4866-85a3-516613ec378a]]
+
+No, el proceso de regularización se realiza por la Tesorería General de la Seguridad Social de forma automática. Recibirás una resolución con el resultado de tu regularización.
+
+[[ID:post-5f046878-bbfe-41ce-8c75-927c39eed364]]
+
+[[ID:IDControl5f046878-bbfe-41ce-8c75-927c39eed364]]
+
+				¿Cómo voy a recibir el resultado de mi regularización?
+
+[[ID:IDregion5f046878-bbfe-41ce-8c75-927c39eed364]]
+
+Recibirás una notificación electrónica con el resultado de tu regularización. Podrás consultar y firmar tu notificación a través del servicio de notificaciones telemáticas de la Seguridad Social o en el portal DEHú.
+
+A través del servicio de regularización anual de cuotas de trabajo autónomo, puedes consultar el estado de tu notificación:
+
+Pendiente de emisión: Indica que aún no se ha generado la notificación con el resultado de tu regularización.
+
+Pendiente de lectura: Indica que ya tienes disponible la notificación en el servicio de notificaciones telemáticas de la Seguridad Social. Si has comunicado tu correo electrónico a la Seguridad Social, recibirás un aviso informándote de que tu notificación ya está disponible para su consulta y firma.
+También puedes consultar la notificación a través del portal DEHú.
+
+Una vez leída la notificación o transcurrido el plazo de 10 días naturales desde que está disponible, podrás consultar el detalle de tu regularización anual de cuotas de Trabajo Autónomo.
+
+[[ID:post-f73b9cd8-9ef2-4011-a7ea-31eb40052521]]
+
+[[ID:IDControlf73b9cd8-9ef2-4011-a7ea-31eb40052521]]
+
+				¿Qué resultado puede tener la regularización anual de cuotas?
+
+[[ID:IDregionf73b9cd8-9ef2-4011-a7ea-31eb40052521]]
+
+El resultado de tu regularización puede ser:
+
+A devolver: Diferencias de cotización a tu favor. La Tesorería devolverá automáticamente la cuantía que se especifica en tu resolución en tu cuenta bancaria antes del 30 de abril.
+
+A ingresar: Diferencias en tu cotización, que requieren un ingreso por tu parte del importe que se especifica en la resolución antes de la fecha indicada. Si no realizas el ingreso en plazo, se aplicará un recargo del 10% o 20%, según las circunstancias. Desde el servicio de regularización puedes descargar el documento de pago anexo a la resolución y realizar el ingreso.
+
+Sin diferencias: No se han detectado diferencias en tu cotización. No debes ingresar ni recibirás devolución de tus cuotas.
+
+[[ID:post-2c77fcdd-8fb4-48da-b7c4-38652daec6df]]
+
+[[ID:IDControl2c77fcdd-8fb4-48da-b7c4-38652daec6df]]
+
+				¿Cómo puedo optar por mantener una base de cotización superior a la que correspondería según mis rendimientos?
+
+[[ID:IDregion2c77fcdd-8fb4-48da-b7c4-38652daec6df]]
+
+Si estabas dado de alta en Trabajo Autónomo a 31 de diciembre de 2022 y has cotizado por una base superior a la que te correspondería según tus rendimientos, recibirás una notificación de un trámite de audiencia.
+Para mantener la base superior por la que has cotizado, accede al servicio de regularización anual de cuotas de Trabajo Autónomo. Puedes optar por mantenerla hasta el último día del mes siguiente a la notificación. Hasta la finalización de este plazo puedes anular tu solicitud. Si optas por mantener una base superior, tus prestaciones serán de mayor cuantía
+
+Si no optas por mantener la base superior dentro de ese plazo, la Tesorería ajustará automáticamente tu base de cotización a tus rendimientos netos para el año regularizado. 
+
+ En ambos casos, la Tesorería te enviará una segunda notificación con el resultado de tu regularización, informándote de tus bases de cotización definitivas.
+
+[[ID:post-e04c4f41-4114-44d1-b462-c291598e1bf7]]
+
+[[ID:IDControle04c4f41-4114-44d1-b462-c291598e1bf7]]
+
+				Si hay diferencias de cotización a mi favor, ¿cuándo se realizará la devolución por la Tesorería?
+
+[[ID:IDregione04c4f41-4114-44d1-b462-c291598e1bf7]]
+
+La Tesorería General de la Seguridad Social te devolverá la diferencia de forma automática en la cuenta que tengas comunicada, sin intereses, antes del 30 de abril.
+
+[[ID:post-37e5ed58-de56-4e16-9dcf-dbbfb7c977f7]]
+
+[[ID:IDControl37e5ed58-de56-4e16-9dcf-dbbfb7c977f7]]
+
+				Si hay diferencias de cotización y debo realizar un ingreso a la Tesorería ¿cómo y cuándo debo hacerlo?
+
+[[ID:IDregion37e5ed58-de56-4e16-9dcf-dbbfb7c977f7]]
+
+Realiza el ingreso a través del servicio de regularización anual de cuotas de Trabajo Autónomo. A través de este servicio, también puedes descargar el documento de pago, junto con la resolución.
+
+El plazo máximo para realizar el ingreso, sin intereses de demora ni recargos, será el último día del mes siguiente a la notificación. En caso contrario, se aplicarán los siguientes recargos:
+
+Si realizas el ingreso dentro del mes natural siguiente al trascurso del plazo de pago: se aplicará un recargo del 10%.
+
+Si realizas el ingreso una vez finalizado el plazo anterior: el recargo será del 20%.
+
+[[ID:post-ace2a781-0890-4b33-9e50-8656262bcbc1]]
+
+[[ID:IDControlace2a781-0890-4b33-9e50-8656262bcbc1]]
+
+				¿Qué tiene en cuenta la Tesorería en el proceso de regularización de cuotas?
+
+[[ID:IDregionace2a781-0890-4b33-9e50-8656262bcbc1]]
+
+La Tesorería tiene en cuenta los siguientes datos:
+
+Rendimientos netos definitivos, obtenidos de las Administraciones tributarias (AEAT y Haciendas Forales).
+
+Bases de cotización mensuales provisionales, por las que has estado cotizando durante el año a regularizar.
+
+Periodos regularizables y no regularizables.
+
+[[ID:post-f212747c-25b1-441e-a2ff-954896aca79e]]
+
+[[ID:IDControlf212747c-25b1-441e-a2ff-954896aca79e]]
+
+				¿Qué periodos no se van a regularizar?
+
+[[ID:IDregionf212747c-25b1-441e-a2ff-954896aca79e]]
+
+Son periodos no regularizables:
+
+Los días de aquellos meses cuyas bases de cotización hayan sido consideradas para el cálculo de la base reguladora de cualquier prestación económica de la Seguridad Social reconocida antes de la fecha en que se realizó dicha regularización.
+
+Los días comprendidos entre el primer día del mes posterior al período considerado para el cálculo de la base reguladora y el día inmediatamente anterior a la fecha de inicio de efectos económicos de la prestación.
+
+Los períodos en que las personas trabajadoras por cuenta propia o autónomas perciban prestaciones por incapacidad temporal, riesgo durante el embarazo, riesgo durante la lactancia natural, nacimiento y cuidado de menor y ejercicio corresponsable del cuidado del lactante, así como por cese de actividad o para la sostenibilidad de la actividad de las personas trabajadoras por cuenta propia o autónomas en su modalidad cíclica o sectorial, en aquellos supuestos en los que deban permanecer en alta en este régimen especial.
+
+Los períodos en que se disfrute el beneficio de la tarifa plana.
+
+El período comprendido entre la fecha de inicio de la actividad y el mes en el que se solicite el alta, en los casos de altas presentadas fuera de plazo.
+
+El período comprendido entre la fecha del alta y el último día del mes natural inmediatamente anterior a la fecha de efectos del alta, así como los períodos incluidos en las actas de liquidación por falta de alta, en el caso de altas practicadas de oficio por la Tesorería o a propuesta de la Inspección de Trabajo y Seguridad Social.
+
+[[ID:post-07618d46-5e5c-4156-a28f-a3a85338693e]]
+
+[[ID:IDControl07618d46-5e5c-4156-a28f-a3a85338693e]]
+
+				¿Cómo se realiza el cálculo de la base de cotización provisional promedio?
+
+[[ID:IDregion07618d46-5e5c-4156-a28f-a3a85338693e]]
+
+Se procederá a sumar el importe de las bases de cotización provisionales de la totalidad de los meses de la anualidad de que se trate.
+
+De dicha suma se descontarán proporcionalmente los importes de las bases de cotización mensuales correspondientes a los días que no son objeto de regularización.
+
+El resultado obtenido se dividirá entre el número de días objeto de regularización. Para ello, se determinarán el número de días de alta dentro del año correspondiente, descontando de estos el número de días de los períodos que no son objeto de regularización, y el resultado se multiplicará por 30.
+
+[[ID:post-0872b459-1a2b-4e48-9874-ccdadc9b95e7]]
+
+[[ID:IDControl0872b459-1a2b-4e48-9874-ccdadc9b95e7]]
+
+				¿Qué rendimientos se tendrán en cuenta en la regularización?
+
+[[ID:IDregion0872b459-1a2b-4e48-9874-ccdadc9b95e7]]
+
+Para el proceso de regularización la TGSS tomará los rendimientos comunicados por las Administraciones tributarias - AEAT y Haciendas Forales.
+
+A estos efectos, se tendrá en cuenta la totalidad de los rendimientos netos obtenidos durante cada año natural por las distintas actividades profesionales o económicas, independientemente de si se realizan de forma individual o como socios o integrantes de cualquier tipo de entidad, con o sin personalidad jurídica, siempre que no deban figurar en alta por ellas como trabajadores por cuenta ajena o asimilados a estos.
+
+En función del método de determinación del rendimiento neto de la actividad, el rendimiento neto computable a efectos de calcular las cuotas de cotización se calculará conforme a las reglas del IRPF. Las casillas claves y subclaves de los modelos tributarios en la AEAT se han detallado en ¿Cómo calculo mis rendimientos?
+
+Estimación directa:
+
+Rendimiento neto + Importe cuotas Seguridad Social del titular de la actividad + Regularización cuotas RETA (si resulta una cantidad a ingresar) - Regularización cuotas RETA (si resulta una cantidad a devolver).
+
+Estimación objetiva:
+
+Rendimiento neto previo.
+
+Rendimiento neto previo minorado (actividades agrícolas, forestales y ganaderas).
+
+Socios mercantiles:
+
+Rendimientos del trabajo derivados de la actividad en la sociedad.
+
+Rendimientos del capital mobiliario (dinerarios o en especie) derivados de la participación en los fondos propios de la sociedad.
+
+Cooperativas:
+
+Rendimientos del trabajo derivados de la prestación de servicios a la cooperativa.
+
+Rendimientos del capital mobiliario (dinerarios o en especie) derivados de su condición de socios trabajadores.
+
+Socios civiles, colectivos, comanditarios, laborales y comuneros:
+
+ Rendimientos de la actividad económica (entidades de atribución de rentas).
+
+Rendimiento neto en Estimación directa.
+
+Rendimiento neto minorado de actividades agrícolas, forestales y ganaderas en Estimación objetiva.
+
+Rendimiento neto previo de actividades de resto de actividades económicas en Estimación objetiva.
+
+Rendimientos del trabajo derivados de la prestación de servicios en estas sociedades o entidades.
+
+Rendimientos del capital mobiliario (dinerarios o en especie) derivados de su condición de socios trabajadores.
+
+[[ID:post-6fe8e65e-453a-426b-af2f-0c674dec93d7]]
+
+[[ID:IDControl6fe8e65e-453a-426b-af2f-0c674dec93d7]]
+
+				¿Qué ocurre con las deudas generadas en periodo voluntario calculadas con arreglo a las bases provisionales?
+
+[[ID:IDregion6fe8e65e-453a-426b-af2f-0c674dec93d7]]
+
+Si las cuotas se ingresan con el recargo correspondiente en período voluntario de ingreso y antes de emitir la providencia de apremio, los períodos afectados entrarán dentro del proceso de regularización anual.
+
+Si las cuotas se ingresan una vez emitida la providencia de apremio, es decir, la deuda está en vía ejecutiva, existen dos situaciones:
+
+Si la base definitiva es inferior a la provisional, esta última se convierte en definitiva, por lo que, al ser las bases iguales, el resultado de la regularización será 0. Sin embargo, pueden darse cambios en datos de cotización distintos de la base que modifiquen la cuota definitiva. Esta nueva cuota definitiva podrá ser tanto superior como inferior a la provisional.  En el caso de que sea superior, se generará una liquidación complementaria por la diferencia y, en caso contrario, cuando sea inferior, se reducirá la deuda.  Si la deuda está pendiente de ingreso, continuará el procedimiento recaudatorio correspondiente y, si la deuda estuviera liquidada, se tramitará una devolución de oficio por la Tesorería, si bien, fuera del proceso de regularización, puesto que requiere una actuación manual por parte del gestor de la Tesorería.
+
+Si la base de cotización definitiva es superior a la base de cotización provisional por la que se generó deuda, la diferencia deberá ser ingresada conforme a lo establecido en el artículo 46 del Reglamento de Cotización.
+
+En ningún caso serán objeto de devolución los recargos e intereses.
+
+[[ID:post-beb2c8b7-793f-416d-a52a-5a647a6e34aa]]
+
+[[ID:IDControlbeb2c8b7-793f-416d-a52a-5a647a6e34aa]]
+
+				¿Deberían revisarme las prestaciones que he percibido si luego me modifican las bases de cotización a consecuencia de la regularización?
+
+[[ID:IDregionbeb2c8b7-793f-416d-a52a-5a647a6e34aa]]
+
+No procede la revisión de las prestaciones. No serán objeto de regularización:
+
+Las cotizaciones correspondientes a los meses cuyas bases de cotización hayan sido tenidas en cuenta para el cálculo de la base reguladora de cualquier prestación económica del sistema de la Seguridad Social reconocida antes de la fecha en que se haya realizado dicha regularización.
+
+La base de cotización mensual aplicada durante el período en el que se percibe la prestación.
+
+Estas bases de cotización adquieren carácter definitivo, por lo que no procede la revisión de las prestaciones causadas.
+
+[[ID:post-d9090c8a-37c0-4cc1-830d-a657c84fccbc]]
+
+[[ID:IDControld9090c8a-37c0-4cc1-830d-a657c84fccbc]]
+
+				En caso de pluriactividad, ¿cómo afecta a la regularización anual de cuotas?
+
+[[ID:IDregiond9090c8a-37c0-4cc1-830d-a657c84fccbc]]
+
+En esos casos, será la Administración Tributaria correspondiente la competente para enviar los rendimientos a la Tesorería, sin tener en cuenta los ingresos percibidos por la actividad que se realice por cuenta ajena, exceptuando en los casos de concurrencia del Régimen Especial de Trabajo Autónomo y Régimen Especial del Mar (autónomos del grupo I).
+
+[[ID:post-5eda3271-6fbe-441f-b482-f2ca376ce290]]
+
+[[ID:IDControl5eda3271-6fbe-441f-b482-f2ca376ce290]]
+
+				Una vez finalizado el proceso de regularización, ¿cuáles serán mis bases de cotización definitivas?
+
+[[ID:IDregion5eda3271-6fbe-441f-b482-f2ca376ce290]]
+
+Si la base de cotización provisional está comprendida entre la base de cotización mínima y la máxima establecida para el tramo de rendimientos netos obtenidos, la base provisional adquiere carácter definitivo, y las bases de cotización se corresponderán con el importe por el que se haya cotizado.
+
+Si la base de cotización provisional es inferior a la base de cotización mínima establecida para el tramo de rendimientos netos obtenidos, la base definitiva será dicha base mínima.
+
+Si la base de cotización provisional es superior a la base de cotización máxima establecida para el tramo de rendimientos netos obtenidos, la base de cotización definitiva será dicha base máxima.
+
+En el caso de que la persona trabajadora autónoma no presente la declaración del IRPF o, si se hubiera presentado, el contribuyente no declare ingresos por sus actividades económicas o profesionales, para la regularización del año 2024, la base de cotización definitiva será de 1.000 euros. En estos casos, no podrá optar por mantener una base de cotización superior a la que le correspondería según sus rendimientos.
+
+En el caso de los trabajadores autónomos dedicados a la venta ambulante cuyos rendimientos no superen los 670 euros mensuales, tienen derecho a mantener la base reducida de este colectivo (77% de la base mínima del tramo 1 de la tabla reducida).
+
+En el caso de los trabajadores autónomos dedicados a la venta ambulante, cuando en el mismo ejercicio objeto de regularización hayan causado alta en el Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos, como consecuencia de otra actividad como autónomo diferente a la actividad artística, existen dos situaciones:
+
+Si los rendimientos no superan los 670 euros mensuales, para la regularización del año 2024, los trabajadores autónomos dedicados a la venta ambulante podrán mantener la base reducida de este colectivo en el período de alta por dicha actividad. En los demás períodos, se aplicará la base mínima del tramo 1 de la tabla reducida que corresponda.
+
+Si los rendimientos son superiores a 670 euros mensuales, la base de cotización mensual se calculará según sus rendimientos.
+
+En el caso de los trabajadores autónomos dedicados a las actividades artísticas incluidos en este Régimen especial, existen dos supuestos según los ingresos anuales:
+
+Si los ingresos anuales son iguales o inferiores a 3.000 euros, se tomará una base de cotización mensual, para la regularización del año 2024 de 526,14 euros mensuales.
+
+Si los ingresos anuales son superiores a 3.000 euros anuales, la base de cotización mensual se calculará según sus rendimientos.
+
+En el caso de los trabajadores autónomos dedicados a las actividades artísticas, cuando en el mismo ejercicio objeto de regularización hayan causado alta en el Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos, como consecuencia de otra actividad como trabajador autónomo diferente a la actividad artística, existen dos situaciones, según los ingresos anuales:
+
+Si los ingresos anuales son iguales o inferiores a 3.000 euros, se tomará una base de cotización mensual aplicable al periodo de alta consecuencia de la actividad artística, para la regularización del año 2024, de 526,14 euros mensuales. Para el resto de períodos les resultará la base mínima del tramo 1 de la tabla reducida que corresponda.
+
+Si los ingresos son superiores a 3.000 euros anuales, la base de cotización mensual se calculará según sus rendimientos.
+
+En el caso de los trabajadores autónomos que sean socios de una sociedad mercantil capitalista o de una sociedad laboral, o con la condición de familiar colaborador, si han permanecido más de 90 días dados de alta con alguna de estas condiciones, la base de cotización mensual definitiva no podrá ser inferior a 1000 euros durante el año 2024.
+
+[[ID:encuestaPost]]
+
+[[ID:ratings-layer]]
+
+¿Te ha parecido útil esta página?
+
+[[ID:Control_Encuesta]]
+
+                        Valorar
+
+[[ID:Control_Cierre_Encuesta]]
+
+                            Ocultar Encuesta
+
+[[ID:Encuesta]]
+
+[[ID:starsform]]
+
+                        Puntúa la claridad y utilidad de la información del 1 al 5 *
+
+[[ID:radio1]]
+
+                                Una estrella
+
+[[ID:radio2]]
+
+                             Dos estrellas
+                            
+[[ID:radio3]]
+
+                            Tres estrellas 
+                            
+[[ID:radio4]]
+
+                            Cuatro estrellas 
+                            
+[[ID:radio5]]
+
+                            Cinco estrellas 
+
+                        ¿Has encontrado lo que buscabas? *
+
+[[ID:tramite1-si]]
+
+                                    Sí
+
+[[ID:tramite2-no]]
+
+                                    No
+
+[[ID:tramite3-no]]
+
+                                    No estoy seguro
+
+                        * Campos obligatorios    
+
+[[ID:enviarcampos]]
+
+                            Enviar valoración
+
+[[ID:ratings__close]]
+
+                            Cerrar
+
+[[ID:gratitude-layer]]
+
+Muchas gracias por ayudarnos a mejorar
+
+[[ID:tesoreriaServLinks]]
+
+Servicios de la Tesorería
+
+Vida laboral e informes
+
+Altas, bajas y modificaciones
+
+Consulta de pagos y deudas
+
+Datos personales
+
+[[ID:especialFooterLinks]]
+
+Especial sobre
+
+Trabajo Autónomo
+
+Empleo de hogar
+
+Convenios especiales
+
+Artistas
+
+Alumnos en prácticas
+
+Cl@ve
+
+Gestionar tus trámites nunca fue tan fácil
+
+Regularización anual de cuotas de Trabajo Autónomo
+
+Ayuda
+
+Contacto
+
+Mapa web
+
+Aviso legal
+
+Accesibilidad
+
+Política de Cookies
+
+                Copyright © Seguridad Social 
+[[ID:yearCopyright]]
+. Todos los derechos reservados
+
+[[ID:wpthemeComplementaryContent]]
+
+[[ID:wpthemeComplementaryContentText]]
+Contenido complementario 
+
+[[ID:uuidAreaSitio]]
+f3863070-642d-4cfd-a4df-5e19a02fdd80
+	
+[[ID:localizacion]]
+
+[[ID:device-characteristics]]
+
+[[ID:idSesion]]
+U7Ob3Pe83NAiRPuPZtsDwhj
+	
+[[ID:nivelCredencial]]
+0
+
+

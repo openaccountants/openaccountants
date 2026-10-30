@@ -1,0 +1,518 @@
+
+
+     
+	  
+    
+	
+
+Agencia Tributaria: Información - Preguntas frecuentes
+ 
+
+
+  	
+[[ID:body]]
+
+  
+	  
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	
+
+Inicio
+
+Todas las gestiones
+
+Impuestos, tasas y prestaciones patrimoniales
+
+Declaraciones Informativas
+
+Modelo 179. Declaración informativa anual de la cesión de uso de viviendas con fines turísticos
+
+
+
+
+ 
+			 
+				
+[[ID:acc-main]]
+
+[[ID:js-nombre-canal]]
+
+Preguntas frecuentes
+
+[[ID:acordeon-39cafeeb24428810VgnVCM100000dc381e0aRCRD]]
+
+[[ID:ba8bfeeb24428810VgnVCM100000dc381e0aRCRD]]
+
+¿Quiénes están obligados a presentar el modelo 179?
+
+[[ID:collapse-ba8bfeeb24428810VgnVCM100000dc381e0aRCRD]]
+
+Las personas y entidades que intermedien entre los cedentes y cesionarios del uso de viviendas con fines turísticos en los términos establecidos en los apartados 2 y 3 del artículo 54.ter del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por Real Decreto 1065/2007, de 27 de julio.
+
+[[ID:3fb895e077e7d810VgnVCM100000dc381e0aRCRD]]
+
+Novedad¿Se mantiene la obligación de presentar el modelo 179 para el ejercicio 2024 y siguientes?
+
+[[ID:collapse-3fb895e077e7d810VgnVCM100000dc381e0aRCRD]]
+
+El Real Decreto 117/2024, de 30 de enero, por el que se desarrollan las normas y los procedimientos de diligencia debida en el ámbito del intercambio automático obligatorio de información comunicada por los operadores de plataformas, y se modifican el Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por el Real Decreto 1065/2007, de 27 de julio, ha dado una nueva redacción art. 54 ter RGAT estableciendo una nueva obligación de informar que, en lo que respecta a la información relativa a la cesión y arrendamiento de bienes inmuebles, sustituye a la «Declaración informativa anual de la cesión de uso de viviendas con fines turísticos» (modelo 179).
+
+En consonancia, para el ejercicio 2024 y siguientes, se ha eliminado la obligación de presentar la Declaración informativa anual de la cesión de uso de viviendas con fines turísticos (modelo 179).
+
+[[ID:6a8ffeeb24428810VgnVCM100000dc381e0aRCRD]]
+
+¿Qué se entiende por “intermediario” entre los cedentes y cesionarios del uso de viviendas con fines turísticos?
+
+[[ID:collapse-6a8ffeeb24428810VgnVCM100000dc381e0aRCRD]]
+
+Se consideran “intermediarios” a efectos de la obligación de presentar el modelo 179 las personas y entidades que presten el servicio de intermediación entre los cedentes y cesionarios del uso de viviendas con fines turísticos, ya sea a título oneroso o gratuito.
+
+En particular, tendrán dicha consideración las personas o entidades que constituidas como plataformas colaborativas intermedien en la cesión de uso y tengan la consideración de prestador de servicios de la sociedad de la información, con independencia de que preste o no el servicio subyacente objeto de intermediación o de la imposición de condiciones respecto de los cedentes o cesionarios del servicio en relación al mismo tales como precio, seguros, plazos u otras condiciones contractuales.
+
+Por tanto, tienen la consideración de intermediarios a estos efectos, no sólo los intermediarios digitales (especialmente plataformas colaborativas), sino cualquier otro (intermediarios analógicos o tradicionales) cuya actividad en la operación haya consistido en la efectiva confluencia entre oferta y demanda de la cesión de dichas viviendas.
+
+[[ID:9e60feeb24428810VgnVCM100000dc381e0aRCRD]]
+
+¿Qué se entiende por “cesión de uso de viviendas con fines turísticos”?
+
+[[ID:collapse-9e60feeb24428810VgnVCM100000dc381e0aRCRD]]
+
+La cesión temporal de uso de la totalidad o parte de una vivienda amueblada y equipada en condiciones de uso inmediato, cualquiera que sea el canal a través del cual se comercialice o promocione y realizada con finalidad gratuita u onerosa.
+
+En todo caso quedan excluidos de este concepto:
+
+Los arrendamientos de vivienda, considerando como tales aquellos que recaen sobre una edificación habitable cuyo destino primordial sea satisfacer la necesidad permanente de vivienda del arrendatario.
+
+Los alojamientos turísticos, que se rigen por su normativa específica.
+
+Por tanto, quedan excluidos los establecimientos hoteleros, alojamientos en el medio rural, albergues y campamentos de turismo, entre otros.
+
+ Sin embargo, la cesión de pisos turísticos queda sometida a la nueva obligación de información.
+
+El derecho de aprovechamiento por turno de bienes inmuebles.
+
+Los siguientes usos y contratos:
+
+El uso de las viviendas que los porteros, guardas, asalariados, empleados y funcionarios, tengan asignadas por razón del cargo que desempeñen o del servicio que presten.
+
+El uso de las viviendas militares, cualquiera que fuese su calificación y régimen, que se regirán por lo dispuesto en su legislación específica.
+
+Los contratos en que, arrendándose una finca con casa-habitación, sea el aprovechamiento agrícola, pecuario o forestal del predio la finalidad primordial del arrendamiento. Estos contratos se regirán por lo dispuesto en la legislación aplicable sobre arrendamientos rústicos.
+
+El uso de las viviendas universitarias, cuando éstas hayan sido calificadas expresamente como tales por la propia Universidad propietaria o responsable de las mismas, que sean asignadas a los alumnos matriculados en la correspondiente Universidad y al personal docente y de administración y servicios dependiente de aquélla, por razón del vínculo que se establezca entre cada uno de ellos y la Universidad respectiva, a la que corresponderá en cada caso el establecimiento de las normas a que se someterá su uso.
+
+[[ID:f62fe65062628810VgnVCM100000dc381e0aRCRD]]
+
+Si el titular de la vivienda o el cedente de la misma no es residente en territorio español, ¿debe ser incluido en la declaración del modelo 179?
+
+[[ID:collapse-f62fe65062628810VgnVCM100000dc381e0aRCRD]]
+
+Sí. El artículo 54.ter del RGAT establece la obligación de información respecto de las cesiones de usos de viviendas con fines turísticos situadas en territorio español.
+
+[[ID:615fe65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Debe informarse en el modelo 179 de los inmuebles cedidos con fines turísticos fuera del territorio español?
+
+[[ID:collapse-615fe65062628810VgnVCM100000dc381e0aRCRD]]
+
+No. Únicamente deben incluirse en dicho modelo las cesiones de uso de viviendas con fines turísticos situadas en territorio español.
+
+[[ID:8fbfe65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Qué información deben suministrar en el modelo 179?
+
+[[ID:collapse-8fbfe65062628810VgnVCM100000dc381e0aRCRD]]
+
+Con carácter obligatorio:
+
+Identificación del titular o titulares de la vivienda, del titular del derecho en virtud del cual se cede la vivienda (si es distinto del titular de la vivienda) y de las personas o entidades cesionarias.
+
+Identificación del inmueble (dirección completa) con especificación de la referencia catastral, en el caso de que la tuvieran asignada.
+
+Número de días de disfrute de la vivienda con fines turísticos. 
+
+Importe percibido, en su caso, por el titular cedente del uso de la vivienda.
+
+Fecha de inicio de la cesión.
+
+Con carácter opcional: 
+
+Número de contrato en virtud del cual el declarante intermedia en la cesión de uso de la vivienda.
+
+Fecha de intermediación en la operación.
+
+Identificación del medio de pago utilizado (transferencia, tarjeta de crédito o débito u otro medio de pago
+
+[[ID:87dfe65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿En qué formato debo presentar la declaración del modelo 179?
+
+[[ID:collapse-87dfe65062628810VgnVCM100000dc381e0aRCRD]]
+
+Mediante el envío de mensajes en formato XML, de acuerdo con las especificaciones técnicas contenidas en el Anexo de la orden ministerial reguladora del modelo 179 (Orden HAC/612/2021, de 16 de junio, modificada por la Orden HFP/188/2023, de 27 de febrero).
+
+[[ID:dfefe65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Deben agregarse todas las cesiones de uso de cada titular o cedente del derecho de cesión durante el periodo al que se refiere la declaración?
+
+[[ID:collapse-dfefe65062628810VgnVCM100000dc381e0aRCRD]]
+
+No. Deben informarse individualmente cada una de dichas cesiones, identificándolas con un IDRegistroDeclarado diferente.
+
+[[ID:3800e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Si la vivienda ha sido objeto de varias cesiones de uso en el periodo objeto de declaración, ¿cómo debe informarse en el modelo 179?
+
+[[ID:collapse-3800e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Debe informarse de cada una de las cesiones objeto del correspondiente contrato. Cada cesión vendrá unívocamente referenciada e identificada con un “IDRegistroDeclarado” determinado.
+
+[[ID:7020e65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Qué número de contrato debe consignar en el campo NUMEROCONTRATO, el número relativo a la operación con el cesionario o el relativo a la operación con el cedente?
+
+[[ID:collapse-7020e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Debe ser el número de contrato que materializa la cesión de uso, que es el que realiza con el cesionario.
+
+[[ID:c830e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Si la vivienda es propiedad de varios titulares (o varios cedentes realizan la cesión), ¿cómo debe informarse en el modelo 179?
+
+[[ID:collapse-c830e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Debe informarse del titular/es, en cualquier caso. Además, en el caso de que el cedente de la vivienda con fines turísticos sea distinto del titular, debe informarse del cedente.
+
+Por tanto, si son varias las personas o entidades titulares o cedentes, debe informarse de cada uno de ellos (dentro del mismo IDRegistroDeclarado), con indicación de dicha condición (T=titular; C=cedente) que tuvieran en relación con el inmueble en el momento de la cesión:
+
+Titular 1
+
+Titular 2
+
+(…)
+
+Titular n
+
+Cedente 1
+
+Cedente 2
+
+(…)
+
+Cedente n
+
+En el supuesto en el que no figure consignado ningún titular ni cedente, el registro será rechazado.
+
+[[ID:5150e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Si en la declaración informativa del modelo 179 figura en una determinada cesión de una vivienda con fines turísticos un cedente (además del titular, siendo distintos), ¿a quién corresponde la renta que figura en dicho modelo en el campo “importe percibido”?
+
+[[ID:collapse-5150e65062628810VgnVCM100000dc381e0aRCRD]]
+
+En la medida en que el apartado 4.a) del artículo 54 ter del Real Decreto 1065/2007, a los efectos de la obligación de información, considera como titulares del derecho objeto de cesión a quienes lo sean del derecho de la propiedad, contratos de multipropiedad, propiedad a tiempo parcial o fórmulas similares, arrendamiento o subarrendamiento o cualquier otro derecho de uso o disfrute sobre las viviendas cedidas con fines turísticos, que sean cedentes, en última instancia, de uso de la vivienda citada, será a este cedente a quien se considere que corresponde la renta consignada en el modelo 179.
+
+[[ID:b3b0e65062628810VgnVCM100000dc381e0aRCRD]]
+
+En caso de que haya distintos cesionarios de la vivienda objeto de cesión, ¿Debo informar de todos ellos?
+
+[[ID:collapse-b3b0e65062628810VgnVCM100000dc381e0aRCRD]]
+
+En el caso de que disponga de la información de los diferentes cesionarios, debe procederse a la identificación desglosada de cada uno de ellos.
+
+No obstante, dicha identificación debe realizarse a nivel del IDregistro suministrado, por lo que no es necesario repetir la identificación de cada cesionario por cada uno de los titulares y/o cedentes.
+
+[[ID:9121e65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Cómo se identifica al titular(es)/cedente(es)/cesionario(es)?
+
+[[ID:collapse-9121e65062628810VgnVCM100000dc381e0aRCRD]]
+
+En el supuesto de que no disponga de NIF debe cumplimentar los campos de información relativos a “IDOtro”, consignando alguna de las claves de identificación siguientes:
+
+02 NIF-IVA
+
+03 Pasaporte
+
+04 Documento oficial de identificación expedido por el país o territorio de residencia
+
+05 Certificado de residencia
+
+06 Otro documento probatorio
+
+Para minimizar los errores de identificación y obtener una correcta identificación de los declarados, está disponible en la página web de la AEAT un servicio de ayuda a la identificación fiscal (común, por otra parte, a todas las declaraciones informativas a presentar por los obligados tributarios).
+
+El servicio de comprobación de un NIF de terceros a efectos censales devuelve los apellidos y nombre que constan en el Censo de la Agencia Tributaria asociados al NIF consultado si éstos son similares a los apellidos y nombre enviados.
+
+Deben corregirse los datos identificativos del declarado con los que constan en la Agencia para evitar errores de identificación en la presentación.
+
+[[ID:dc51e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Un propietario arrienda su vivienda a un gestor inmobiliario (“Property manager”) por un importe fijo mensual y, posteriormente, este gestor inmobiliario, en base al derecho de subarrendamiento que deriva del contrato celebrado con el propietario, lo subarrienda con fines turísticos por sus propios medios. ¿Quién debe presentar el modelo 179?
+
+[[ID:collapse-dc51e65062628810VgnVCM100000dc381e0aRCRD]]
+
+En la medida en que el contrato de arrendamiento formalizado entre el propietario de la vivienda y el Gestor reconoce el derecho del Gestor a subarrendar la vivienda con fines turísticos, y de acuerdo con lo dispuesto en el apartado 4.a) del citado artículo 54 ter del RGAT, a los efectos de la obligación de información, se considera como titular de un derecho en virtud del cual se cede la vivienda con fines turísticos, y, por tanto, como cedente en última instancia de la vivienda, a quien sea titular de un derecho de subarrendamiento sobre la misma.
+
+En este caso, el Gestor como titular de un derecho de subarriendo, cede a un tercero, el cesionario, el uso temporal de la totalidad o parte de la vivienda amueblada y equipada en condiciones de uso inmediato, convirtiéndose en última instancia en cedente del uso de viviendas con fines turísticos, por lo que no puede ser considerado intermediario a estos efectos.
+
+En consecuencia, el Gestor quedaría fuera del ámbito subjetivo de la obligación informativa, y en este caso, la operación no sería objeto de información en la declaración informativa.
+
+(Consulta V3083-18 de la Dirección General de Tributos)
+
+[[ID:57b1e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Un propietario arrienda su vivienda a un gestor inmobiliario (“Property manager”) por un importe fijo mensual y, posteriormente, este gestor inmobiliario, en base al derecho de subarrendamiento que deriva del contrato celebrado con el propietario, lo subarrienda con fines turísticos a través de una plataforma online. ¿Quién debe presentar el modelo 179?
+
+[[ID:collapse-57b1e65062628810VgnVCM100000dc381e0aRCRD]]
+
+La plataforma online no tiene derecho alguno de uso o disfrute sobre la vivienda cedida con fines turísticos, sino que únicamente presta un servicio de intermediación necesario para concluir la celebración del contrato de cesión de uso entre el Gestor y el cesionario percibiendo por ello una retribución o comisión.
+
+En la medida en que la plataforma online percibe su retribución o comisión por la efectiva formalización de la cesión de uso de viviendas con fines turísticos entre el Gestor, que actúa como cedente, y los turistas cesionarios de la vivienda, sin que tenga derecho alguno de uso o disfrute sobre la vivienda cedida con fines turísticos, sino que únicamente presta un servicio de intermediación necesario para concluir la celebración del contrato de cesión de uso entre el Gestor y el cesionario percibiendo por ello una retribución o comisión, dicha plataforma online presta un servicio de intermediación en la cesión del uso de viviendas con fines turísticos, resultando obligada a presentar la declaración informativa (modelo 179) de acuerdo con el artículo 54 ter del RGAT.
+
+El Gestor tiene la condición de cedente a efectos del modelo 179, no pudiendo tener la condición de intermediario en el sentido del artículo 54.ter del RGAT.
+
+(Consulta V3083-18 de la Dirección General de Tributos)
+
+[[ID:0be1e65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Debe presentar el modelo 179 una plataforma colaborativa que realiza únicamente un mero alojamiento digital de viviendas para usos turísticos?
+
+[[ID:collapse-0be1e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Aquellas plataformas colaborativas que realizan una labor de mero alojamiento digital de anuncios de viviendas para usos turísticos sin que intermedien entre cedente y cesionario no se podrán subsumir en el ámbito subjetivo del artículo 54.ter del RGAT y, por tanto, no estarán obligados a presentar la declaración informativa.
+
+(Consulta V3083-18 de la Dirección General de Tributos)
+
+[[ID:4822e65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Cómo se identifica el inmueble objeto de cesión? ¿y la referencia catastral?
+
+[[ID:collapse-4822e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Debe informar de la referencia catastral del inmueble objeto de cesión mediante la consignación de alguna de las siguientes claves:
+
+Valores
+Descripción
+
+01
+Inmueble con referencia catastral situado en cualquier punto del territorio español, excepto País Vasco y Navarra.
+
+02
+Inmueble con referencia catastral situado en la Comunidad Autónoma del País Vasco.
+
+03
+Inmueble con referencia catastral situado en la Comunidad Foral de Navarra.
+
+04
+Inmueble en cualquiera de las situaciones anteriores pero sin referencia catastral.
+
+A continuación de dicha clave, debe consignar la referencia catastral que corresponda con las claves 01, 02 y 03 anteriores.
+
+La clave 04 debe consignarse en el caso de que el inmueble no tuviera asignada referencia catastral.
+
+Además de lo anterior, debe consignar la dirección completa del inmueble, de la siguiente forma:
+
+Campos obligatorios: código de municipio, código de Provincia, tipo de vía, nombre de la vía y tipo de numeración en la que se encuentre el inmueble. 
+
+Campos opcionales: el resto de campos comprensivos de la localización del inmueble (número de la vivienda, calificador del número, bloque, portal, escalera, planta o piso, puerta y, en su caso, complemento).
+
+[[ID:d272e65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Cómo debe cumplimentarse el bloque de información relativa a la dirección del inmueble, al haber campos obligatorios y otros opcionales?
+
+[[ID:collapse-d272e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Los campos de información del bloque DIRECCION son todos obligatorios, en la medida en que la dirección concreta del inmueble contemple todos ellos.
+
+No obstante, el establecimiento del esquema XML del modelo exige que, en la medida en que hay inmuebles con todos los campos del bloque DIRECCION y otros con parte de ellos, no puedan exigirse algunos de ellos a inmuebles que carecen de los mismos.
+
+Por ejemplo, si un inmueble se trata de una vivienda individual, tendrá los campos, entre otros, de TIPOVIA, NOMBRE VIA, TIPONUMERACION, NUMEROVIVIENDA, pero no tendrá los campos BLOQUE, PORTAL, ESCALERA, PLANTAPISO, PUERTA, COMPLEMENTO. Por tanto, estos campos, para ese inmueble, deben configurarse técnicamente como opcionales puesto que no se van a poder cumplimentar.
+
+Sin embargo, si se trata de un inmueble con esa información (por ejemplo, un piso en una planta 4ª, con varias escaleras), estos campos serían obligatorios para este inmueble, en la medida en que informan de la dirección. Todo ello con independencia de que técnicamente, en el esquema XML, su cumplimentación no pueda configurarse como obligatoria.
+
+[[ID:98e3e65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Cuáles son los mensajes de respuesta de la AEAT respecto de los registros remitidos en el modelo 179?
+
+[[ID:collapse-98e3e65062628810VgnVCM100000dc381e0aRCRD]]
+
+El mensaje de respuesta de la AEAT incluye un “resultado global de la presentación”, con resultados posibles:
+
+Aceptación completa (si no existen errores en ningún registro), con su correspondiente Código Seguro de Verificación (CSV).
+
+Aceptación parcial (cuando existen registros aceptados y rechazados o aceptados con errores), también con su correspondiente CSV.
+
+Rechazado completo (cuando todos los registros han sido rechazados). En este caso, no se devuelve ningún CSV, al haber sido rechazados todos los registros contenidos en el mensaje enviado por el obligado tributario.
+
+Por su parte, el “resultado parcial de cada registro” enviado puede ser uno de los dos siguientes:
+
+Aceptado.
+
+Rechazado: se trata de rechazos que se corresponden con lo que se denomina “errores no admisibles”.
+
+[[ID:f714e65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Cuál es plazo de presentación del modelo 179?
+
+[[ID:collapse-f714e65062628810VgnVCM100000dc381e0aRCRD]]
+
+El plazo es anual, siendo el comprendido entre el 1 y el 31 de enero de cada año, en relación con la información y operaciones que correspondan al año natural inmediato anterior. El nuevo plazo de presentación será aplicable, por primera vez, a las declaraciones informativas correspondientes al ejercicio 2023, que deberán presentarse en enero de 2024.
+
+[[ID:c964e65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Cuándo debe enviarse la información, en el momento en el que se produce la intermediación o cuando se produce la cesión de la vivienda?
+
+[[ID:collapse-c964e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Debe informarse en el momento en el que se produce la cesión del inmueble, por lo que será en ese ejercicio en el que debe declararse la operación, con independencia de que la intermediación se haya producido en un momento anterior.
+
+[[ID:6ea4e65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Qué fecha debe consignar en el campo FECHAINTERMEDIACION, la fecha en la que el intermediario confirma al cesionario que se le cederá el uso de la vivienda en las fechas que solicita o la fecha en la que el cedente confirma al intermediario que le cede la gestión de la vivienda?
+
+[[ID:collapse-6ea4e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Debe ser la fecha de la operación con el cesionario (para cuya materialización requerirá previamente de la oportuna cesión del inmueble por parte del cedente).
+
+[[ID:3015e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Si la cesión de uso afecta a dos ejercicios distintos, ¿cómo debe informarse en el modelo 179?
+
+[[ID:collapse-3015e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Debe informarse de:
+
+Fecha de inicio de la cesión
+
+Número de días de disfrute
+
+Fecha de intermediación (campo opcional)
+
+La información de la correspondiente cesión de la vivienda con fines turísticos debe incluirse en el periodo y ejercicio que corresponda al día de inicio de la cesión (fecha de inicio de la cesión).
+
+[[ID:2025e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Las cesiones realizadas el 31 de diciembre de un ejercicio determinado, pero cuya efectividad no se conoce sino hasta el día 1 de enero del ejercicio siguiente, al existir un periodo de 24 horas para cancelar la operación, ¿Cuándo deben declararse?
+
+[[ID:collapse-2025e65062628810VgnVCM100000dc381e0aRCRD]]
+
+La información de estas operaciones realizadas el 31 de diciembre de un ejercicio debe hacerse en este ejercicio. Para evitar modificaciones y anulaciones de operaciones, el reporte de la información puede hacerse con la información a 1 de enero del ejercicio siguiente (referida al 31 de diciembre del ejercicio precedente), una vez conocida la efectividad de estas cesiones.
+
+[[ID:0765e65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Debe informarse del servicio de mediación prestado por el intermediario que presenta el modelo 179 e incluido en cada cesión de viviendas con fines turísticos?
+
+[[ID:collapse-0765e65062628810VgnVCM100000dc381e0aRCRD]]
+
+No. Únicamente debe informarse del importe percibido por el titular cedente del uso de la vivienda (si no se pacta retribución alguna, debe consignar un importe de 0,00 euros).
+
+[[ID:d026e65062628810VgnVCM100000dc381e0aRCRD]]
+
+En las operaciones en moneda distinta del euro, ¿Cuál es momento en el que debe aplicarse el tipo de cambio correspondiente?
+
+[[ID:collapse-d026e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Debe ser el día en el que el cesionario satisface al intermediario el importe correspondiente a la cesión, con independencia de que el pago al titular o cedente se realice en un momento posterior.
+
+[[ID:6d76e65062628810VgnVCM100000dc381e0aRCRD]]
+
+¿Debe informarse del número de cuenta o de tarjeta donde se abona el importe derivado de la cesión de uso?
+
+[[ID:collapse-6d76e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Se trata de un campo opcional. En el supuesto de que la cesión de uso no sea gratuita, debe informarse del medio de pago a través del que se satisface la contraprestación por la cesión de la vivienda con fines turísticos.
+
+Así, debe indicar opcionalmente:
+
+Clave de medio de pago (01-Transferencia, 02-Tarjeta de crédito/débito, 03-Otros medios de pago).
+
+IdMedioPago: debe consignar el número de cuenta financiera, o de tarjeta de crédito o débito o el identificador del medio de pago de que se trate).
+
+[[ID:c796e65062628810VgnVCM100000dc381e0aRCRD]]
+
+En el caso de que el pago se realice mediante un pago parcial con tarjeta de crédito o débito y mediante transferencia bancaria, ¿cómo debo identificar el MEDIOPAGO?
+
+[[ID:collapse-c796e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Debe consignar como CLAVEMEDIOPAGO la clave 03-Otros medios de pago, y en el campo IDMEDIOPAGO el identificador del medio de pago mediante transferencia (IBAN).
+
+[[ID:34b6e65062628810VgnVCM100000dc381e0aRCRD]]
+
+Si tras el envío de un registro de una determinada cesión del inmueble con fines turísticos se produce una modificación en la misma (cambio del periodo de cesión o de los días concretos de la cesión, o del importe), o una cancelación de la cesión, ¿cómo debe remitirse dicha información?
+
+[[ID:collapse-34b6e65062628810VgnVCM100000dc381e0aRCRD]]
+
+En esos casos, debe enviarse un nuevo mensaje de modificación mediante el Tipo de comunicación A1 modificando el registro inicialmente enviado, y consignando los nuevos datos derivados de la cesión del inmueble.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Sólo la página actual
+
+[[ID:pdf-Todo]]
+Todas las páginas del índice
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 08/septiembre/2026
+
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

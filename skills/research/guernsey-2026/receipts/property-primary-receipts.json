@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://parliament.gg/parliamentary-business/assets/propositions/P2025-121",
+    "key": "property-budget",
+    "retrieved_utc": "2026-10-27T23:09:58.503994+00:00",
+    "status": 200,
+    "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/country/../work/sources/property-budget.pdf",
+    "bytes": 8796725,
+    "sha256": "7e87c4bdf9353e2447a7b8ef433b6e51b6e6d05ee43cdad4335f809d9db5a675"
+  },
+  {
+    "url": "https://parliament.gg/parliamentary-business/assets/questions/2026-16",
+    "key": "property-rates",
+    "retrieved_utc": "2026-10-27T23:09:58.504465+00:00",
+    "status": 200,
+    "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/country/../work/sources/property-rates.pdf",
+    "bytes": 501751,
+    "sha256": "c658686b320256eda1401091395d3871ad60340fd0cdc3f7a29bb16784971ee1"
+  },
+  {
+    "url": "https://parliament.gg/parliamentary-business/hansard/hansard-14-33",
+    "key": "property-hansard",
+    "retrieved_utc": "2026-10-27T23:09:58.504613+00:00",
+    "status": 200,
+    "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/country/../work/sources/property-hansard.pdf",
+    "bytes": 725957,
+    "sha256": "bc4a6c728feafbd63d172115e6e6ef6c98b47324215a79d9e1c2c84ff252a2f8"
+  },
+  {
+    "url": "https://www.guernseyroyalcourt.gg/article/1638/Conveyances-and-Bonds",
+    "key": "court-conveyances-bonds",
+    "retrieved_utc": "2026-10-27T23:09:58.504708+00:00",
+    "status": 200,
+    "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/country/../work/sources/court-conveyances-bonds.html",
+    "bytes": 29360,
+    "sha256": "3a5dd7a14d916a9b1bb389f532870e17dbc1cf9ce0de92ef6eba339af8c8e579"
+  },
+  {
+    "url": "https://www.guernseyroyalcourt.gg/article/1919/Conveyances",
+    "key": "court-conveyances",
+    "retrieved_utc": "2026-10-27T23:09:59.182676+00:00",
+    "status": 200,
+    "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/country/../work/sources/court-conveyances.html",
+    "bytes": 29179,
+    "sha256": "80300314e74cb5102808d276327554a8048a81779080df322cde2d12c7783fe7"
+  },
+  {
+    "url": "https://www.guernseyroyalcourt.gg/article/1921/Document-Duty",
+    "key": "court-duty",
+    "retrieved_utc": "2026-10-27T23:09:59.297573+00:00",
+    "status": 200,
+    "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/country/../work/sources/court-duty.html",
+    "bytes": 30472,
+    "sha256": "623de1486bbc615162ad0c0a780071a4cdcda4dec5412b00b5e794dd18067766"
+  },
+  {
+    "url": "https://www.guernseyroyalcourt.gg/article/3186/The-Contracts-Court",
+    "key": "court-contracts",
+    "retrieved_utc": "2026-10-27T23:09:59.529994+00:00",
+    "status": 200,
+    "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/country/../work/sources/court-contracts.html",
+    "bytes": 29738,
+    "sha256": "56c9b102c6427a5e4bd7139846477d77c034584ef621d4d97391690078d4bcdc"
+  }
+]

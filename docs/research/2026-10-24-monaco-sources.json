@@ -1,0 +1,442 @@
+{
+  "jurisdiction": "MC",
+  "as_of": "2026-10-24",
+  "quality": "tier 2 source-cited draft; all seven tax domains partial; no named professional review",
+  "purpose": "Retrieval evidence and read-scope register, not certification of all law or operative dates",
+  "original_source_directory": "/private/tmp/oa-mc-sources",
+  "current_source_directory": "/Users/michaelcutajar/Documents/Codex/2026-10-24/monaco-country-pack/work/mc-current-sources",
+  "sources": [
+    {
+      "id": "company-modernisation",
+      "url": "https://legimonaco.mc/tnc/loi/2025/04-08-1.573",
+      "provisions_actually_read": "Law 1.573 arts. 11–18, 100–101: SAM constitution/capital and transition boundaries.",
+      "current_recheck": {
+        "id": "company-modernisation",
+        "url": "https://legimonaco.mc/tnc/loi/2025/04-08-1.573",
+        "attempted_at_utc": "2026-10-24T15:44:39.354320+00:00",
+        "status": 200,
+        "final_url": "https://legimonaco.mc/tnc/loi/2025/04-08-1.573/",
+        "bytes": 202104,
+        "sha256": "e80dd0e4697f0717cc5bfbc7105f7a6a212c0ecc6b5859434aacb42a2cc6c97d",
+        "retrieved_at_utc": "2026-10-24T15:44:41.221815+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://legimonaco.mc/tnc/loi/2025/04-08-1.573",
+        "final_url": "https://legimonaco.mc/tnc/loi/2025/04-08-1.573/",
+        "retrieved_at_utc": "2026-10-24T15:14:36.864078+00:00",
+        "status": 200,
+        "bytes": 202104,
+        "sha256": "25d7a2761061a6baa902abb3d4a56e67283b480d8a2bc97cd9ae63e8d8783011"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "business-licensing",
+      "url": "https://legimonaco.mc/tnc/loi/1991/07-26-1.144/",
+      "provisions_actually_read": "Law 1.144 arts. 1–8: nationality/activity/form gates. Not an exhaustive licensed-profession analysis.",
+      "current_recheck": {
+        "id": "business-licensing",
+        "url": "https://legimonaco.mc/tnc/loi/1991/07-26-1.144/",
+        "attempted_at_utc": "2026-10-24T15:44:39.356717+00:00",
+        "status": 200,
+        "final_url": "https://legimonaco.mc/tnc/loi/1991/07-26-1.144/",
+        "bytes": 73366,
+        "sha256": "d844719c4582288d56e211a6fc270bdae8694531e31569db91ce902e8c569ce6",
+        "retrieved_at_utc": "2026-10-24T15:44:39.935204+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://legimonaco.mc/tnc/loi/1991/07-26-1.144/",
+        "final_url": "https://legimonaco.mc/tnc/loi/1991/07-26-1.144/",
+        "retrieved_at_utc": "2026-10-24T15:15:50.784205+00:00",
+        "status": 200,
+        "bytes": 73366,
+        "sha256": "b91e14808de18e9ae6fedb2b6cd55910f6b908b4708cf3f4d550a09e6f88ca49"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "social-filing",
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/modalites-declaratives",
+      "provisions_actually_read": "Monthly declaration/payment, employer services and coverage routing; no live return or affiliation performed.",
+      "current_recheck": {
+        "id": "social-filing",
+        "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/modalites-declaratives",
+        "attempted_at_utc": "2026-10-24T15:44:39.357469+00:00",
+        "status": 200,
+        "final_url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/modalites-declaratives",
+        "bytes": 74987,
+        "sha256": "8cf61b9876b7a31f8a69927483d44e3afcd018124df695fb433aa774bd55925c",
+        "retrieved_at_utc": "2026-10-24T15:44:39.815141+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/modalites-declaratives",
+        "final_url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/modalites-declaratives",
+        "retrieved_at_utc": "2026-10-24T15:15:52.047462+00:00",
+        "status": 200,
+        "bytes": 74987,
+        "sha256": "8cf61b9876b7a31f8a69927483d44e3afcd018124df695fb433aa774bd55925c"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "commerce-code",
+      "url": "https://legimonaco.mc/code/code-commerce/",
+      "provisions_actually_read": "Arts. 35-1–35-3 and consolidation note: SARL/SURL and capital. Full accounts/audit implementation not established.",
+      "current_recheck": {
+        "id": "commerce-code",
+        "url": "https://legimonaco.mc/code/code-commerce/",
+        "attempted_at_utc": "2026-10-24T15:44:39.357762+00:00",
+        "status": 200,
+        "final_url": "https://legimonaco.mc/code/code-commerce/",
+        "bytes": 1054641,
+        "sha256": "f6f9d22c253e318cfeace5a39db2826d68fd0149e702de292fdc6f02d64b4970",
+        "retrieved_at_utc": "2026-10-24T15:44:50.099901+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://legimonaco.mc/code/code-commerce/",
+        "final_url": "https://legimonaco.mc/code/code-commerce/",
+        "retrieved_at_utc": "2026-10-24T15:15:50.493215+00:00",
+        "status": 200,
+        "bytes": 1054641,
+        "sha256": "77fa600c301fe45119c4c601502ce602cab99d1f68ced88c1c101209d23f7579"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "vat-code",
+      "url": "https://legimonaco.mc/code/code-taxes-chiffre-affaires",
+      "provisions_actually_read": "Arts. 1, 11, 42, 51, 62, 66, 68, 70–71, 87–91, 110–112; annex A-139, A-144–A-145. Special rules elsewhere are routing references, not complete verified workflows. Article 62 has future-version text: the service example uses the operative 62(2), not a staged future version.",
+      "current_recheck": {
+        "id": "vat-code",
+        "url": "https://legimonaco.mc/code/code-taxes-chiffre-affaires",
+        "attempted_at_utc": "2026-10-24T15:44:39.358107+00:00",
+        "status": 200,
+        "final_url": "https://legimonaco.mc/code/code-taxes-chiffre-affaires/",
+        "bytes": 1946822,
+        "sha256": "b4b6583bc0a9604083f32db76949d32e6e88c3d1c82a3bdefc65a35b6c4d2d17",
+        "retrieved_at_utc": "2026-10-24T15:44:51.493861+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://legimonaco.mc/code/code-taxes-chiffre-affaires",
+        "final_url": "https://legimonaco.mc/code/code-taxes-chiffre-affaires/",
+        "retrieved_at_utc": "2026-10-24T15:14:36.295725+00:00",
+        "status": 200,
+        "bytes": 1946822,
+        "sha256": "a9e99efb1c270b50be1c1a91c258e074c495e3f2114bfea6d8e3315fbfee5558"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "personal-government",
+      "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+      "provisions_actually_read": "Fiscal personal-tax paragraph and its genuine residence/activity and other-state limitations. No blanket individual exemption inferred for estate/transaction taxes.",
+      "current_recheck": {
+        "id": "personal-government",
+        "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+        "attempted_at_utc": "2026-10-24T15:44:39.815905+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "preserved_retrieval": {
+        "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+        "final_url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+        "retrieved_at_utc": "2026-10-24T15:18:34.800838+00:00",
+        "status": 200,
+        "bytes": 596154,
+        "sha256": "a4da85925b57ead4a73a8d6623f96d3b092f3405d456aa149d6de631f3ad97a1"
+      }
+    },
+    {
+      "id": "france-personal-doctrine",
+      "url": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602",
+      "provisions_actually_read": "I-A-1 and I-A-2: French national scope, historic/continuous-birth/service/family/dual-national exceptions and residence evidence. No French tax computation.",
+      "current_recheck": {
+        "id": "france-personal-doctrine",
+        "url": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602",
+        "attempted_at_utc": "2026-10-24T15:44:39.936326+00:00",
+        "status": 200,
+        "final_url": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602",
+        "bytes": 109179,
+        "sha256": "276e810935e37a095c07ff3cfff60eaf7331f950601db0f20344706b6d4dd754",
+        "retrieved_at_utc": "2026-10-24T15:44:40.697627+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602",
+        "final_url": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602",
+        "retrieved_at_utc": "2026-10-24T15:15:09.867681+00:00",
+        "status": 200,
+        "bytes": 109179,
+        "sha256": "276e810935e37a095c07ff3cfff60eaf7331f950601db0f20344706b6d4dd754"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "social-october-2026.pdf",
+      "url": "https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+      "provisions_actually_read": "Both pages of actual October 2026 letter, date/rates/ceilings and tenth-day payment rule. Filename says October 2025.",
+      "current_recheck": {
+        "id": "social-october-2026.pdf",
+        "url": "https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+        "attempted_at_utc": "2026-10-24T15:44:40.176744+00:00",
+        "status": 200,
+        "final_url": "https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+        "bytes": 914791,
+        "sha256": "deb6d290c5abeb4065e42bf5b0520800c49559e01ac3f15c7fd45cfff867a2f9",
+        "retrieved_at_utc": "2026-10-24T15:44:58.955186+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+        "final_url": "https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+        "retrieved_at_utc": "2026-10-24T15:16:44.668862+00:00",
+        "status": 200,
+        "bytes": 914791,
+        "sha256": "deb6d290c5abeb4065e42bf5b0520800c49559e01ac3f15c7fd45cfff867a2f9",
+        "content_note": "URL and search index say 2025, but actual downloaded two-page PDF is headed OCT 2026 and table effective 1 October 2026."
+      },
+      "filename_content_mismatch": "URL includes octobre_2025; actual PDF is headed OCT2026. Content agrees with tables effective 1 October 2026.",
+      "rechecked_pdf_matches_preserved": true
+    },
+    {
+      "id": "self-employed",
+      "url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/cotisations",
+      "provisions_actually_read": "Exercise 2026–27 CAMTI amount and CARTI class structure/payment headings. No full class calculation or earlier-year schedule.",
+      "current_recheck": {
+        "id": "self-employed",
+        "url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/cotisations",
+        "attempted_at_utc": "2026-10-24T15:44:40.698246+00:00",
+        "status": 200,
+        "final_url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/cotisations",
+        "bytes": 90962,
+        "sha256": "075230fd6987444613056c686ccd11f534705a718ca8fb92131b8c79937ec640",
+        "retrieved_at_utc": "2026-10-24T15:44:41.401198+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/cotisations",
+        "final_url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/cotisations",
+        "retrieved_at_utc": "2026-10-24T15:14:38.879004+00:00",
+        "status": 200,
+        "bytes": 90962,
+        "sha256": "075230fd6987444613056c686ccd11f534705a718ca8fb92131b8c79937ec640"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "residence",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/",
+      "provisions_actually_read": "Arts. 1–4: administrative and fiscal certificates, evidence, principal-stay/home/activity tests and validity.",
+      "current_recheck": {
+        "id": "residence",
+        "url": "https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/",
+        "attempted_at_utc": "2026-10-24T15:44:41.222654+00:00",
+        "status": 200,
+        "final_url": "https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/",
+        "bytes": 26639,
+        "sha256": "7848c75e0e9cd3a67f122541e14597ed54a462c549bb8fa8bac8c288d24993dd",
+        "retrieved_at_utc": "2026-10-24T15:44:49.217509+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/",
+        "final_url": "https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/",
+        "retrieved_at_utc": "2026-10-24T15:15:08.362815+00:00",
+        "status": 200,
+        "bytes": 26639,
+        "sha256": "3821e4ea1fe1f87b3ae8cc080d23ed7d0152569df08a9162914cbf2fbc6f5237"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "company-audit-reform",
+      "url": "https://legimonaco.mc/tnc/loi/2026/10-09-1.596/",
+      "provisions_actually_read": "Law 1.596 arts. 93–103 and Code amendment context: immediate versus deferred provisions; no complete audit/filing calendar.",
+      "current_recheck": {
+        "id": "company-audit-reform",
+        "url": "https://legimonaco.mc/tnc/loi/2026/10-09-1.596/",
+        "attempted_at_utc": "2026-10-24T15:44:41.401617+00:00",
+        "status": 200,
+        "final_url": "https://legimonaco.mc/tnc/loi/2026/10-09-1.596/",
+        "bytes": 149445,
+        "sha256": "fe745e71aa39edc19051b1a2101940836a1b0d2b0fc4e063c6974c02529dac89",
+        "retrieved_at_utc": "2026-10-24T15:44:50.183472+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://legimonaco.mc/tnc/loi/2026/10-09-1.596/",
+        "final_url": "https://legimonaco.mc/tnc/loi/2026/10-09-1.596/",
+        "retrieved_at_utc": "2026-10-24T15:17:14.806205+00:00",
+        "status": 200,
+        "bytes": 149445,
+        "sha256": "fe745e71aa39edc19051b1a2101940836a1b0d2b0fc4e063c6974c02529dac89"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "isb-government",
+      "url": "https://monentreprise.gouv.mc/en/themes/accounting-obligations-and-tax/tax/other-taxes-and-duties/corporate-income-tax",
+      "provisions_actually_read": "Scope summary only, including more-than-25% wording; statute used for inclusive boundary.",
+      "current_recheck": {
+        "id": "isb-government",
+        "url": "https://monentreprise.gouv.mc/en/themes/accounting-obligations-and-tax/tax/other-taxes-and-duties/corporate-income-tax",
+        "attempted_at_utc": "2026-10-24T15:44:49.219637+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "preserved_retrieval": {
+        "url": "https://monentreprise.gouv.mc/en/themes/accounting-obligations-and-tax/tax/other-taxes-and-duties/corporate-income-tax",
+        "final_url": "https://monentreprise.gouv.mc/en/themes/accounting-obligations-and-tax/tax/other-taxes-and-duties/corporate-income-tax",
+        "retrieved_at_utc": "2026-10-24T15:14:39.870007+00:00",
+        "status": 200,
+        "bytes": 512061,
+        "sha256": "490c1aae2364c6bd8c84c2e49c08fe91500026ce8549054045120378410ac713"
+      }
+    },
+    {
+      "id": "treaty-france",
+      "url": "https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/",
+      "provisions_actually_read": "Convention arts. 7, 15 and 22; arts. 9–14 read for cross-border context. Not a full treaty inventory or foreign procedure.",
+      "current_recheck": {
+        "id": "treaty-france",
+        "url": "https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/",
+        "attempted_at_utc": "2026-10-24T15:44:49.426637+00:00",
+        "status": 200,
+        "final_url": "https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/",
+        "bytes": 75130,
+        "sha256": "a651f2853262ef6f379c3f963f3f7cc7e8793094fca0bf3bb1a0b50ca9239cae",
+        "retrieved_at_utc": "2026-10-24T15:44:49.759405+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/",
+        "final_url": "https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/",
+        "retrieved_at_utc": "2026-10-24T15:14:37.112656+00:00",
+        "status": 200,
+        "bytes": 75130,
+        "sha256": "1f80a58f6dc6d296e02f19559ddff416a83acc94f199fb26ba916bb55a33e09a"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "minimum-tax-project",
+      "url": "https://legimonaco.mc/projet/1.129",
+      "provisions_actually_read": "Project status and explanatory introduction only. Proposed provisions/dates do not prove enacted law or non-enactment.",
+      "current_recheck": {
+        "id": "minimum-tax-project",
+        "url": "https://legimonaco.mc/projet/1.129",
+        "attempted_at_utc": "2026-10-24T15:44:49.759949+00:00",
+        "status": 200,
+        "final_url": "https://legimonaco.mc/projet/1.129/",
+        "bytes": 409540,
+        "sha256": "2fd9b67c6908bc44e71e0783ead2ab915e24ceaaf656ab89cff018519ec65dbb",
+        "retrieved_at_utc": "2026-10-24T15:44:50.683920+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://legimonaco.mc/projet/1.129",
+        "final_url": "https://legimonaco.mc/projet/1.129/",
+        "retrieved_at_utc": "2026-10-24T15:17:15.452698+00:00",
+        "status": 200,
+        "bytes": 409540,
+        "sha256": "2fd9b67c6908bc44e71e0783ead2ab915e24ceaaf656ab89cff018519ec65dbb"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "new-enterprises",
+      "url": "https://journaldemonaco.gouv.mc/fr/Journaux/1991/Journal-6996/Ordonnances-Souveraines-n-10.324-et-n-10.325-du-17-octobre-1991-relatives-a-l-impot-sur-les-benefices",
+      "provisions_actually_read": "Government summary of relief only; the operative period and exclusions come from Ordinance 10.324.",
+      "current_recheck": {
+        "id": "new-enterprises",
+        "url": "https://journaldemonaco.gouv.mc/fr/Journaux/1991/Journal-6996/Ordonnances-Souveraines-n-10.324-et-n-10.325-du-17-octobre-1991-relatives-a-l-impot-sur-les-benefices",
+        "attempted_at_utc": "2026-10-24T15:44:50.100875+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "preserved_retrieval": {
+        "url": "https://journaldemonaco.gouv.mc/fr/Journaux/1991/Journal-6996/Ordonnances-Souveraines-n-10.324-et-n-10.325-du-17-octobre-1991-relatives-a-l-impot-sur-les-benefices",
+        "final_url": "https://journaldemonaco.gouv.mc/fr/Journaux/1991/Journal-6996/Ordonnances-Souveraines-n-10.324-et-n-10.325-du-17-octobre-1991-relatives-a-l-impot-sur-les-benefices",
+        "retrieved_at_utc": "2026-10-24T15:15:09.426419+00:00",
+        "status": 200,
+        "bytes": 116748,
+        "sha256": "b690d7ff8911e4876b86a39bc5b3d3cf818a0df0bc07f16f07e536ce5af8db06"
+      }
+    },
+    {
+      "id": "personal-government-fr",
+      "url": "https://monservicepublic.gouv.mc/thematiques/fiscalite/informations-sur-la-fiscalite/informations-generales/la-fiscalite-monegasque",
+      "provisions_actually_read": "Parallel fiscal paragraphs only; no additional rates inferred.",
+      "current_recheck": {
+        "id": "personal-government-fr",
+        "url": "https://monservicepublic.gouv.mc/thematiques/fiscalite/informations-sur-la-fiscalite/informations-generales/la-fiscalite-monegasque",
+        "attempted_at_utc": "2026-10-24T15:44:50.184598+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "preserved_retrieval": {
+        "url": "https://monservicepublic.gouv.mc/thematiques/fiscalite/informations-sur-la-fiscalite/informations-generales/la-fiscalite-monegasque",
+        "final_url": "https://monservicepublic.gouv.mc/thematiques/fiscalite/informations-sur-la-fiscalite/informations-generales/la-fiscalite-monegasque",
+        "retrieved_at_utc": "2026-10-24T15:18:35.363236+00:00",
+        "status": 200,
+        "bytes": 601014,
+        "sha256": "feb74dd0d200316bbacd9e5d482702e17e90d0e9e48edb8a574d8347d4ab9c8f"
+      }
+    },
+    {
+      "id": "new-enterprises-law",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1991/10-17-10.324",
+      "provisions_actually_read": "Arts. 1–3: exact relief periods, declaration condition, excluded activities/ownership/reconstructions.",
+      "current_recheck": {
+        "id": "new-enterprises-law",
+        "url": "https://legimonaco.mc/tnc/ordonnance/1991/10-17-10.324",
+        "attempted_at_utc": "2026-10-24T15:44:50.288169+00:00",
+        "status": 200,
+        "final_url": "https://legimonaco.mc/tnc/ordonnance/1991/10-17-10.324/",
+        "bytes": 21997,
+        "sha256": "46757ad40632156f7acd52cc3b46802f9849081f0c0653e63a5fd90f4d7a18c8",
+        "retrieved_at_utc": "2026-10-24T15:44:50.693098+00:00"
+      },
+      "preserved_retrieval": {
+        "url": "https://legimonaco.mc/tnc/ordonnance/1991/10-17-10.324",
+        "final_url": "https://legimonaco.mc/tnc/ordonnance/1991/10-17-10.324/",
+        "retrieved_at_utc": "2026-10-24T15:16:14.734377+00:00",
+        "status": 200,
+        "bytes": 21997,
+        "sha256": "46757ad40632156f7acd52cc3b46802f9849081f0c0653e63a5fd90f4d7a18c8"
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "isb-ord-3152",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152",
+      "provisions_actually_read": "Arts. 1–15, 21–23, 29, 31–37; ordinary scope, base, losses, deduction gates, TP, participation/credit boundary, declarations, cessation, advances and sanctions. Full specialised computations remain incomplete.",
+      "current_recheck": {
+        "id": "isb-ord-3152",
+        "url": "https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152",
+        "attempted_at_utc": "2026-10-24T15:44:50.430829+00:00",
+        "status": 200,
+        "final_url": "https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152/",
+        "bytes": 159183,
+        "sha256": "8326c26058c60da5e50bb3ddf2098928d17564018a91ec8ed2443c9ab34fb87e",
+        "retrieved_at_utc": "2026-10-24T15:44:51.066891+00:00"
+      },
+      "preserved_file": {
+        "sha256": "8326c26058c60da5e50bb3ddf2098928d17564018a91ec8ed2443c9ab34fb87e",
+        "bytes": 159183,
+        "limitation": "No original UTC receipt was preserved; do not invent one. Current successful receipt provides dated retrieval."
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    },
+    {
+      "id": "social-current",
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations",
+      "provisions_actually_read": "Dated rate and ceiling tables, remuneration scope, director routing and payment/penalty paragraphs. Linked special schemes and internal regulation are not fully researched.",
+      "current_recheck": {
+        "id": "social-current",
+        "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations",
+        "attempted_at_utc": "2026-10-24T15:44:50.686176+00:00",
+        "status": 200,
+        "final_url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations",
+        "bytes": 77247,
+        "sha256": "b1a0f899a08d3ae8faaf691bd3866e7be5d4cd6e1dcf7cb319a54b841a63218f",
+        "retrieved_at_utc": "2026-10-24T15:44:50.949344+00:00"
+      },
+      "preserved_file": {
+        "sha256": "b1a0f899a08d3ae8faaf691bd3866e7be5d4cd6e1dcf7cb319a54b841a63218f",
+        "bytes": 77247,
+        "limitation": "No original UTC receipt was preserved; do not invent one. Current successful receipt provides dated retrieval."
+      },
+      "rechecked_extracted_text_matches_preserved": true
+    }
+  ]
+}

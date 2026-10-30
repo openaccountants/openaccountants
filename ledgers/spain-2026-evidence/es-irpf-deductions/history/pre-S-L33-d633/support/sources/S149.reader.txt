@@ -1,0 +1,139 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: 10.4.19.Por determinadas subvenciones y ayudas otorgadas por razón de una declaración de zona afe...
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+10. Cumplimentación IRPF. Deducciones autonómicas
+
+10.4. Illes Balears
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+10.4.19.Por determinadas subvenciones y ayudas otorgadas por razón de una declaración de zona afectada gravemente por una emergencia de protección civil
+
+Deducción para los contribuyentes que declaren en la base imponible general rendimientos correspondientes a subvenciones o ayudas públicas otorgandas por la Comunidad autónoma de las Illes Balears por razon de daños causados por emergencias que, de acuerdo con el artículo 23 de la Ley 17/2015 del sistema Nacional de Protección Civil, hayan sido declaradas por el Consejo de Ministros como zonas afectadas gravemente por una emergencia de protección civil.
+
+El importe de esta deducción será el resultado de aplicar el tipo medio de gravamen al importe de la subvención, en la base liquidable.
+
+Cumplimentación
+
+Deberá incluir, en la casilla habilitada al efecto, las cantidades declaradas como subvenciones en la base imponible general.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 16/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

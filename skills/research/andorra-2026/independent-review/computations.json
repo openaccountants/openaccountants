@@ -1,0 +1,527 @@
+{
+  "candidate": "32d4e3e8c3121fa37fa7648b5343116dacd08cc4",
+  "total_controls": 20,
+  "all_pass": true,
+  "controls": [
+    {
+      "file": "skills/international/andorra/ad-corporate-income-tax.md",
+      "name": "Andorra loss relief settlement floor without credits",
+      "inputs": {
+        "pre_loss_base": "100000",
+        "available_losses": "90000",
+        "tax_rate": "0.10",
+        "floor_fraction": "0.30"
+      },
+      "computed": {
+        "pre_loss_tax": "10000.00",
+        "liability_floor": "3000.0000",
+        "maximum_loss_use": "70000.00",
+        "losses_used": "70000.00",
+        "taxable_base": "30000.00",
+        "settlement_liability": "3000.0000",
+        "losses_remaining": "20000.00"
+      },
+      "expected": {
+        "pre_loss_tax": "10000",
+        "liability_floor": "3000",
+        "maximum_loss_use": "70000",
+        "losses_used": "70000",
+        "taxable_base": "30000",
+        "settlement_liability": "3000",
+        "losses_remaining": "20000"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/andorra/ad-corporate-income-tax.md",
+      "name": "Andorra ordinary permanent expense adjustments",
+      "inputs": {
+        "accounting_profit": "80000",
+        "booked_corporate_tax": "7000",
+        "administrative_fine": "2000",
+        "specified_communal_tax": "1000",
+        "tax_rate": "0.10"
+      },
+      "computed": {
+        "permanent_addbacks": "10000",
+        "taxable_base": "90000",
+        "tax": "9000.00"
+      },
+      "expected": {
+        "permanent_addbacks": "10000",
+        "taxable_base": "90000",
+        "tax": "9000"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/andorra/ad-income-tax.md",
+      "name": "Andorra 2026 direct business income and proportional bonus",
+      "inputs": {
+        "net_revenue": "55000",
+        "evidenced_business_expenses": "9000",
+        "deductible_cass_paid": "7055.40",
+        "personal_reduction": "24000"
+      },
+      "computed": {
+        "general_income": "38944.60",
+        "liquidation_base": "14944.60",
+        "gross_tax": "1494.460",
+        "bonus": "747.2300",
+        "settlement_tax": "747.2300"
+      },
+      "expected": {
+        "general_income": "38944.60",
+        "liquidation_base": "14944.60",
+        "gross_tax": "1494.46",
+        "bonus": "747.23",
+        "settlement_tax": "747.23"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/andorra/ad-income-tax.md",
+      "name": "Andorra 2026 employment savings and capped foreign credit",
+      "inputs": {
+        "ordinary_salary": "60000",
+        "employee_cass": "3900",
+        "foreign_dividends_gross": "8000",
+        "qualifying_foreign_tax": "800",
+        "actual_resident_withholding": "2000"
+      },
+      "computed": {
+        "employment_expense": "1800.00",
+        "general_income": "54300.00",
+        "general_base": "30300.00",
+        "general_tax": "2230.000",
+        "savings_base": "5000",
+        "savings_tax": "500.0",
+        "foreign_credit": "500.0",
+        "settlement_tax": "2230.000",
+        "final_payment": "230.000"
+      },
+      "expected": {
+        "employment_expense": "1800",
+        "general_income": "54300",
+        "general_base": "30300",
+        "general_tax": "2230",
+        "savings_base": "5000",
+        "savings_tax": "500",
+        "foreign_credit": "500",
+        "settlement_tax": "2230",
+        "final_payment": "230"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/andorra/ad-non-resident-income-tax.md",
+      "name": "Andorra separate service and royalty withholding",
+      "inputs": {
+        "service": "12000",
+        "royalty": "8000",
+        "service_rate": "0.10",
+        "royalty_rate": "0.05"
+      },
+      "computed": {
+        "service_tax": "1200.00",
+        "royalty_tax": "400.00",
+        "tax_total": "1600.00",
+        "net_total": "18400.00"
+      },
+      "expected": {
+        "service_tax": "1200",
+        "royalty_tax": "400",
+        "tax_total": "1600",
+        "net_total": "18400"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/andorra/ad-non-resident-income-tax.md",
+      "name": "Andorra property gain and withholding settlement",
+      "inputs": {
+        "transfer_value": "500000",
+        "acquisition": "300000",
+        "improvements": "20000",
+        "acquisition_costs": "10000",
+        "gain_rate": "0.15",
+        "withholding_rate": "0.05"
+      },
+      "computed": {
+        "adjusted_acquisition": "330000",
+        "taxable_gain": "170000",
+        "assessed_tax": "25500.00",
+        "buyer_withholding": "25000.00",
+        "settlement": "500.00"
+      },
+      "expected": {
+        "adjusted_acquisition": "330000",
+        "taxable_gain": "170000",
+        "assessed_tax": "25500",
+        "buyer_withholding": "25000",
+        "settlement": "500"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/andorra/ad-payroll-social.md",
+      "name": "Andorra ordinary employee annual rate and monthly payroll",
+      "inputs": {
+        "annual_salary": "60000",
+        "monthly_salary": "5000",
+        "employee_rate": "0.065",
+        "employer_rate": "0.155",
+        "expense_rate": "0.03",
+        "expense_cap": "2500",
+        "personal_reduction": "24000",
+        "tax_rate": "0.10",
+        "bonus_rate": "0.50",
+        "bonus_cap": "800"
+      },
+      "computed": {
+        "annual_employee_cass": "3900.000",
+        "work_expense": "1800.00",
+        "net_work": "54300.000",
+        "liquid_base": "30300.000",
+        "gross_tax": "3030.00000",
+        "bonus": "800",
+        "annual_tax": "2230.00000",
+        "withholding_percent": "3.72",
+        "monthly_employee_cass": "325.000",
+        "monthly_withholding": "186.00",
+        "monthly_net": "4489.000",
+        "monthly_employer_cass": "775.000",
+        "monthly_employer_cost": "5775.000"
+      },
+      "expected": {
+        "annual_employee_cass": "3900",
+        "work_expense": "1800",
+        "net_work": "54300",
+        "liquid_base": "30300",
+        "gross_tax": "3030",
+        "bonus": "800",
+        "annual_tax": "2230",
+        "withholding_percent": "3.72",
+        "monthly_employee_cass": "325",
+        "monthly_withholding": "186",
+        "monthly_net": "4489",
+        "monthly_employer_cass": "775",
+        "monthly_employer_cost": "5775"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/andorra/ad-payroll-social.md",
+      "name": "Andorra self-employed 50 percent base with July wage floor",
+      "inputs": {
+        "reference_wage": "2672.52",
+        "base_fraction": "0.50",
+        "january_minimum": "1525.33",
+        "july_minimum": "1568.67",
+        "contribution_rate": "0.22",
+        "first_months": "6",
+        "second_months": "6"
+      },
+      "computed": {
+        "raw_base": "1336.2600",
+        "first_base": "1525.33",
+        "second_base": "1568.67",
+        "first_quota": "335.57",
+        "second_quota": "345.11",
+        "annual_quota": "4084.08"
+      },
+      "expected": {
+        "raw_base": "1336.26",
+        "first_base": "1525.33",
+        "second_base": "1568.67",
+        "first_quota": "335.57",
+        "second_quota": "345.11",
+        "annual_quota": "4084.08"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/andorra/ad-transfer-pricing.md",
+      "name": "Andorra controlled service price reconciliation",
+      "inputs": {
+        "hours": "400",
+        "supported_hourly_price": "100",
+        "recorded_revenue": "32000"
+      },
+      "computed": {
+        "market_charge": "40000",
+        "revenue_shortfall": "8000"
+      },
+      "expected": {
+        "market_charge": "40000",
+        "revenue_shortfall": "8000"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/andorra/ad-transfer-pricing.md",
+      "name": "Andorra related financing pricing comparison",
+      "inputs": {
+        "principal": "200000",
+        "supported_rate": "0.04",
+        "years": "1",
+        "booked_interest": "12000"
+      },
+      "computed": {
+        "supported_interest": "8000.00",
+        "excess_over_supported": "4000.00"
+      },
+      "expected": {
+        "supported_interest": "8000",
+        "excess_over_supported": "4000"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/andorra/andorra-igi.md",
+      "name": "Andorra ordinary IGI mixed rates and prior credit",
+      "inputs": {
+        "service_base": "20000",
+        "service_rate": "0.045",
+        "food_inclusive": "2020",
+        "food_rate": "0.01",
+        "eligible_input": "180",
+        "prior_credit": "100"
+      },
+      "computed": {
+        "food_base": "2.0E+3",
+        "food_tax": "20",
+        "service_tax": "900.000",
+        "total_output": "920.000",
+        "payable": "640.000"
+      },
+      "expected": {
+        "food_base": "2000",
+        "food_tax": "20",
+        "service_tax": "900",
+        "total_output": "920",
+        "payable": "640"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/andorra/andorra-igi.md",
+      "name": "Andorra reverse charge and investment car presumption",
+      "inputs": {
+        "ordinary_output": "2250",
+        "foreign_service_base": "5000",
+        "general_rate": "0.045",
+        "car_input_tax": "1350",
+        "presumed_business_fraction": "0.50",
+        "other_eligible_input": "90"
+      },
+      "computed": {
+        "reverse_charge_output": "225.000",
+        "reverse_charge_input": "225.000",
+        "eligible_car_input": "675.00",
+        "total_output": "2475.000",
+        "total_input": "990.000",
+        "payable": "1485.000"
+      },
+      "expected": {
+        "reverse_charge_output": "225",
+        "reverse_charge_input": "225",
+        "eligible_car_input": "675",
+        "total_output": "2475",
+        "total_input": "990",
+        "payable": "1485"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/research/andorra-2026/corporate-supplementary-controls.md",
+      "name": "Andorra ordinary advance and annual balance",
+      "inputs": {
+        "prior_liability": "18000",
+        "advance_rate": "0.50",
+        "current_liability": "22000"
+      },
+      "computed": {
+        "advance": "9000.00",
+        "final_balance": "13000.00"
+      },
+      "expected": {
+        "advance": "9000",
+        "final_balance": "13000"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/research/andorra-2026/corporate-supplementary-controls.md",
+      "name": "Andorra advance excess reconciliation",
+      "inputs": {
+        "prior_liability": "20000",
+        "advance_rate": "0.50",
+        "current_liability": "6000"
+      },
+      "computed": {
+        "paid_advance": "10000.00",
+        "final_balance": "-4000.00",
+        "excess": "4000.00"
+      },
+      "expected": {
+        "paid_advance": "10000",
+        "final_balance": "-4000",
+        "excess": "4000"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/research/andorra-2026/corporate-supplementary-controls.md",
+      "name": "Andorra eligible intangible partial expenditure ratio",
+      "inputs": {
+        "net_income": "100000",
+        "qualifying_costs": "60000",
+        "total_costs": "100000",
+        "uplift": "1.30",
+        "reduction_rate": "0.80",
+        "general_rate": "0.10"
+      },
+      "computed": {
+        "adjusted_numerator": "78000.00",
+        "ratio": "0.78",
+        "reduction": "62400.0000",
+        "remaining_base": "37600.0000",
+        "tax_before_other_adjustments": "3760.000000"
+      },
+      "expected": {
+        "adjusted_numerator": "78000",
+        "ratio": "0.78",
+        "reduction": "62400",
+        "remaining_base": "37600",
+        "tax_before_other_adjustments": "3760"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/research/andorra-2026/nonresident-supplementary-controls.md",
+      "name": "Andorra non-resident rental income base",
+      "inputs": {
+        "gross_rent": "15000",
+        "base_reduction_rate": "0.20",
+        "tax_rate": "0.10"
+      },
+      "computed": {
+        "reduction": "3000.00",
+        "taxable_base": "12000.00",
+        "tax": "1200.0000"
+      },
+      "expected": {
+        "reduction": "3000",
+        "taxable_base": "12000",
+        "tax": "1200"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/research/andorra-2026/continuation-controls.md",
+      "name": "Andorra combined loss and credit settlement floor",
+      "inputs": {
+        "pre_loss_base": "100000",
+        "eligible_losses": "90000",
+        "chosen_loss_use": "50000",
+        "tax_rate": "0.10",
+        "floor_fraction": "0.30",
+        "eligible_credit": "4000"
+      },
+      "computed": {
+        "floor": "3000.0000",
+        "post_loss_base": "50000",
+        "gross_after_losses": "5000.00",
+        "usable_credit": "2000.0000",
+        "settlement": "3000.0000",
+        "credit_remaining": "2000.0000",
+        "loss_remaining": "40000"
+      },
+      "expected": {
+        "floor": "3000",
+        "post_loss_base": "50000",
+        "gross_after_losses": "5000",
+        "usable_credit": "2000",
+        "settlement": "3000",
+        "credit_remaining": "2000",
+        "loss_remaining": "40000"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/research/andorra-2026/continuation-controls.md",
+      "name": "Andorra PE cessation gain and annual balance",
+      "inputs": {
+        "entry_market_value": "120000",
+        "deductible_depreciation": "30000",
+        "exit_market_value": "150000",
+        "ordinary_taxable_profit": "40000",
+        "tax_rate": "0.10",
+        "paid_advance": "7000"
+      },
+      "computed": {
+        "remaining_basis": "90000",
+        "exit_gain": "60000",
+        "taxable_base": "100000",
+        "tax": "10000.00",
+        "balance": "3000.00"
+      },
+      "expected": {
+        "remaining_basis": "90000",
+        "exit_gain": "60000",
+        "taxable_base": "100000",
+        "tax": "10000",
+        "balance": "3000"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/research/andorra-2026/continuation-controls.md",
+      "name": "Andorra ordinary 25 percent health complement across July",
+      "inputs": {
+        "reference": "2672.52",
+        "base_fraction": "0.25",
+        "january_minimum": "1525.33",
+        "july_minimum": "1568.67",
+        "full_rate": "0.22",
+        "complement_rate": "0.10"
+      },
+      "computed": {
+        "base": "668.1300",
+        "ordinary_quota": "146.99",
+        "january_complement": "85.72",
+        "july_complement": "90.05",
+        "january_total": "232.71",
+        "july_total": "237.04"
+      },
+      "expected": {
+        "base": "668.13",
+        "ordinary_quota": "146.99",
+        "january_complement": "85.72",
+        "july_complement": "90.05",
+        "january_total": "232.71",
+        "july_total": "237.04"
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/research/andorra-2026/continuation-controls.md",
+      "name": "Andorra company migration deemed share gain",
+      "inputs": {
+        "market_value": "500000",
+        "tax_basis": "200000",
+        "tax_rate": "0.10"
+      },
+      "computed": {
+        "deemed_gain": "300000",
+        "tax": "30000.00"
+      },
+      "expected": {
+        "deemed_gain": "300000",
+        "tax": "30000"
+      },
+      "pass": true
+    }
+  ]
+}

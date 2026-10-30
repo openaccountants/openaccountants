@@ -7,14 +7,18 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ad-company-formation.md`
-4. `ad-corporate-income-tax.md`
-5. `ad-income-tax.md`
-6. `ad-payroll-social.md`
-7. `ad-tax-overview.md`
-8. `andorra-igi.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `ad-company-formation.md`
+5. `ad-corporate-income-tax.md`
+6. `ad-income-tax.md`
+7. `ad-non-resident-income-tax.md`
+8. `ad-payroll-social.md`
+9. `ad-tax-overview.md`
+10. `ad-transfer-pricing.md`
+11. `andorra-igi.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

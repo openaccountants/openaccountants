@@ -1,0 +1,79 @@
+{
+  "candidate": "32d4e3e8c3121fa37fa7648b5343116dacd08cc4",
+  "scope": "six computational Guides; README; country research",
+  "calculations": {
+    "files": 9,
+    "total": 20,
+    "Guide_blocks": 12,
+    "original_blocks_preserved": 10,
+    "moved_original_blocks": 4,
+    "supplementary_new_blocks": 4,
+    "failures": 0
+  },
+  "schema": {
+    "full_guides": 2263,
+    "generated_frontmatter_blocks": 6122,
+    "inherited_warning_groups": 3,
+    "changed_mode_guides": 7,
+    "changed_mode_warnings": 0
+  },
+  "tests": {
+    "count": 129,
+    "result": "PASS",
+    "environment": "TMPDIR=/private/tmp; RUNNER_TEMP=explicit persistent task test-runner",
+    "initial_result": "7 macOS /var/private-var path-resolution errors;1 RUNNER_TEMP unbound failure. See retained logs. No engineering files modified.",
+    "publication_rerun": "129 pass on final country batch"
+  },
+  "metadata": {
+    "baseline": "43a766a09b91b45392ee0522e5f69d9e2e6306b2",
+    "source_guides": 6,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0,
+    "old_published_baseline_comparison": "included100maincommits/57pre-existing other-country metadata errors; rejected as country-only validation"
+  },
+  "independent_review": {
+    "result": "COMPLETE; all F1\u2013F4/P3 closed on narrow repair review",
+    "whole_pack_candidate": "32d4e3e8c3121fa37fa7648b5343116dacd08cc4",
+    "accepted_repair": "ce1666a9ef976cb9b42bcbea4a1d9d2adc08efe9",
+    "lost_content_restored": 1,
+    "report": "independent-review/report.md",
+    "closure": "independent-review/repair-closure.md",
+    "accountant_attestation": false
+  },
+  "publication": "Prepared for one update to existing PR774; exact IT-IND partial retained, issue376 stays open; no merge or new CLA consent",
+  "core_partial": {
+    "IT-IND": "Exact2026 annual dependent-income SMI benchmark afterJulychange"
+  },
+  "read_utc": "2026-10-27T17:46:16.837953+00:00",
+  "repair_commit": "ce1666a9ef976cb9b42bcbea4a1d9d2adc08efe9",
+  "post_fix": {
+    "calculations": "20 pass; exactly2 per computational Guide",
+    "schema": "changed7/zero warnings; reviewer full2263/6122 with3inherited warning groups",
+    "metadata": "6sources, zero findings against43a766a",
+    "protection": "10original controls byte-exact; platform metadata and CTA preserved"
+  },
+  "final_administrative_closure": "administrative-closure.json;PASS",
+  "main_reconciliation": {
+    "head": "7e3624298e3f32b2c433147e77fbd18c8c9a83e5",
+    "main": "187064a83bc15251730448448f9ed8a57a388ba6",
+    "country_tree_unchanged": true,
+    "research_tree_unchanged": true
+  },
+  "final_metadata": {
+    "base": "187064a83bc15251730448448f9ed8a57a388ba6",
+    "sources": 7,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "final_schema": {
+    "guides": 2263,
+    "generated_frontmatter_blocks": 6122,
+    "inherited_warning_groups": 3,
+    "changed_guides": 7,
+    "changed_warning_groups": 0
+  },
+  "publication_main": "73f566473aaab8cda1e1a28c0fb8a9c3cd6f7dd0",
+  "publication_checks": "publication-checks.json; all checks pass"
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "name": "Ordinary ISB and advances",
+    "results": {
+      "tax": "25000.00",
+      "advance": "4000.00",
+      "paid": "16000.00",
+      "balance": "9000.00"
+    }
+  },
+  {
+    "name": "ISB loss ceiling",
+    "results": {
+      "ceiling": "1500000",
+      "used": "1500000",
+      "tax": "125000.00",
+      "remaining_loss": "500000"
+    }
+  },
+  {
+    "name": "Personal receipts",
+    "results": {
+      "receipts": "62000",
+      "monaco_personal_tax": "0"
+    }
+  },
+  {
+    "name": "Residence alternative",
+    "results": {
+      "days": "365",
+      "margin": "10",
+      "shortfall": "13"
+    }
+  },
+  {
+    "name": "Domestic VAT",
+    "results": {
+      "net": "1.000E+4",
+      "output": "2000",
+      "payable": "1400"
+    }
+  },
+  {
+    "name": "Foreign service VAT",
+    "results": {
+      "output": "400.0",
+      "input_credit": "200.00",
+      "payable": "200.00"
+    }
+  },
+  {
+    "name": "Selected contributions 3000",
+    "results": {
+      "ccss": "403.5000",
+      "car_er": "251.7000",
+      "car_ee": "205.5000",
+      "cmrc": "300.6000",
+      "selected_er": "955.56",
+      "selected_ee": "397.74",
+      "after_selected": "2602.26"
+    }
+  },
+  {
+    "name": "Selected contributions 12000",
+    "results": {
+      "ccss": "1345.0000",
+      "car_er": "526.5564",
+      "car_ee": "429.9060",
+      "cmrc": "2334.4391",
+      "selected_er": "3752.22",
+      "selected_ee": "1651.68",
+      "after_selected": "10348.32"
+    }
+  },
+  {
+    "name": "TP sale",
+    "results": {
+      "adjustment": "20000",
+      "extra_isb": "5000.00"
+    }
+  },
+  {
+    "name": "TP finance",
+    "results": {
+      "addback": "4000",
+      "extra_isb": "1000.00"
+    }
+  },
+  {
+    "name": "Foreign credit 1000",
+    "results": {
+      "gross": "10000",
+      "monaco_before": "2500.00",
+      "credit": "1000",
+      "monaco_after": "1500.00",
+      "uncredited": "0"
+    }
+  },
+  {
+    "name": "Foreign credit 3000",
+    "results": {
+      "gross": "10000",
+      "monaco_before": "2500.00",
+      "credit": "2500.00",
+      "monaco_after": "0.00",
+      "uncredited": "500.00"
+    }
+  },
+  {
+    "name": "SARL",
+    "results": {
+      "initial_minimum": "15000",
+      "remaining": "15000"
+    }
+  },
+  {
+    "name": "SAM",
+    "results": {
+      "quarter": "75000",
+      "initial_minimum": "150000",
+      "remaining": "150000"
+    }
+  }
+]

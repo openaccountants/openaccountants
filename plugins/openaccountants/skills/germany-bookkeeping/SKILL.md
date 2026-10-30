@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/germany-bookkeeping"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-10-24"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
@@ -555,7 +555,7 @@ Most German accountants use DATEV. Bank transactions are imported via DATEV Unte
 
 | Tax Guide | How Bookkeeping Connects |
 | --- | --- |
-| **de-income-tax** | Profit from GuV/EÜR feeds Anlage G (Gewerbe) or Anlage S (Freiberufler) of the Einkommensteuererklärung. Non-deductible items from Section 4 (the non-deductible share of entertainment, gifts over the limit, fines, trade tax) must be added back. |
+| **de-self-employed-income-tax** | Profit from GuV/EÜR feeds Anlage G (Gewerbe) or Anlage S (Freiberufler) of the Einkommensteuererklärung. Non-deductible items from Section 4 (the non-deductible share of entertainment, gifts over the limit, fines, trade tax) must be added back. |
 | **de-vat-return** | VAT accounts (1400 and 1406 for input VAT, 3800 and 3806 for output VAT, in SKR04) feed the Umsatzsteuer-Voranmeldung, sent electronically. Monthly or quarterly: see the VAT return table below. Input VAT (Vorsteuer) is netted against output VAT (Umsatzsteuer). |
 | **de-trade-tax** | Gewerbesteuer is worked out from the adjusted trade profit. Financing costs are partly added back (Hinzurechnungen): see the trade tax table below. |
 | **de-crypto-tax** | Gains on crypto held privately are private sales when sold within one year of purchase. Bookkeeping must track acquisition cost per wallet and exchange. See that Guide for the method. |
@@ -675,6 +675,8 @@ This Guide and its outputs are provided for informational and computational purp
 
 > Contributed by OpenAccountants.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---
@@ -695,4 +697,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-bookkeeping` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-bookkeeping. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-bookkeeping` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-bookkeeping. If neither is available, confirm every figure against the official source pages cited above before relying on it.

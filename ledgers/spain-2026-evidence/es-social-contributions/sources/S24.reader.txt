@@ -1,0 +1,145 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Regularización cuotas RETA
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+7. Cumplimentación IRPF (I)
+
+7.4. Rendimientos de actividades económicas
+
+7.4.2. Régimen de estimación directa. Modalidad normal y modalidad simplificada
+
+7.4.2.3. Gastos fiscalmente deducibles
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Regularización cuotas RETA
+
+Las cuotas satisfechas al RETA por la actividad económica desarrollada tendrán la naturaleza de gastos deducibles para el cálculo de los rendimientos de dicha actividad.
+
+Si como consecuencia de la regularización efectuada en 2025 por las cuotas satisfechas al RETA en 2024 resulta:
+
+Un importe adicional a satisfacer: dicho importe será un mayor gasto deducible de este ejercicio por cotizaciones a la Seguridad Social a consignar en la casilla 0196.
+
+Una cantidad a devolver por el contribuyente: dicho importe será una minoración del gasto de este ejercicio por cotizaciones a la Seguridad Social a consignar en la casilla 0197.
+
+En caso de que el importe a devolver superara a las cuotas satisfechas a la Seguridad Social, el importe del exceso de la cantidad a devolver sobre las cuotas satisfechas deberá reflejarse como un mayor rendimiento de este ejercicio en la casilla 0178.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 16/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

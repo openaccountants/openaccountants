@@ -1,0 +1,118 @@
+{
+  "accepted_administrative_head": "0952cd3bbc3aca46680b7f11d61437b47bec86ce",
+  "accepted_guide_manifest_head": "23fa6a44e6bbc80d008bd5613ae67587beb35282",
+  "complete_country": false,
+  "issue_397_must_remain_open": true,
+  "files": [
+    {
+      "path": "skills/international/guernsey/README.md",
+      "git_blob": "28827c452cae78e3e4869281e4492969ba366a9d",
+      "sha256": "d808b1b33df34d63460217b207f681417d9c27e03d2d8d62287cb7917e981dd8",
+      "bytes": 8069,
+      "lines": 52,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+      "git_blob": "aa46c2cd79757da8b67c4dbf2c77a5e9c87137e3",
+      "sha256": "f181d56e7efa895f16a6508785764c1a5ff7fa5f927729f06087a686320177c4",
+      "bytes": 25430,
+      "lines": 199,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "git_blob": "3bef025f6ed1fae667c21a3f3b317ff36d3da9d6",
+      "sha256": "163ad7d2b693b3287e9a208f58c59a9ad4b481acf3048fee7f3e604f5def1007",
+      "bytes": 12375,
+      "lines": 125,
+      "frontmatter_exact_to_legal_body_head": false,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "git_blob": "210e876f13f24607cc58e5943595d4ee51edf4bd",
+      "sha256": "130728de1cbf2ca27b91ea2ed7e6c2410b20c9149ea6e653f85ae38963da1d5f",
+      "bytes": 67245,
+      "lines": 418,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "git_blob": "19599746ede00a0f926ac700a252ce497bb3b61a",
+      "sha256": "1611f398bb155f265e5998ed808be7a6a78ab4be3f546a1f75e0a40053e5f33d",
+      "bytes": 9223,
+      "lines": 110,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "git_blob": "7f0f5d6ff3c38238738cddecc7a4ddfc9b3c93ff",
+      "sha256": "cf17eff62e9e284603e06ff6effd07371b69653b442f1b7db3f0f0187ff155d8",
+      "bytes": 43597,
+      "lines": 339,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "git_blob": "3d731e786695301593ef2da2c127c7d22d9d8511",
+      "sha256": "e77c522e1e277e16134a505f7576831a2432afd189b2f54f62b33e903daadfd8",
+      "bytes": 38946,
+      "lines": 326,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "git_blob": "f3c60460350fccb39d31eb691260c0095286890f",
+      "sha256": "f40b6e738ee039ade43cfc7f72f913af9bb1989d002360144bcfcc5406a5513f",
+      "bytes": 16781,
+      "lines": 183,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-secondary-pensions.md",
+      "git_blob": "3832501d5aac7e8149c1ff5d0f9e89963eff2187",
+      "sha256": "757f38c5ba60ff5f8fcae3536fb930a1cdd5f0ce66c680f0b70e8111a65db8a2",
+      "bytes": 16361,
+      "lines": 157,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "git_blob": "89bebb34e8d206ca5e4720af3eaf04270f139249",
+      "sha256": "d5982c3b7040a0e2541778ee49187e81d00d3773420a0d8c5c384967fcfbb662",
+      "bytes": 52428,
+      "lines": 319,
+      "frontmatter_exact_to_legal_body_head": true,
+      "protected_metadata_unchanged": true,
+      "original_cta_marker_to_eof_exact": true,
+      "calculation_blocks_exact_to_legal_body_head": true
+    }
+  ]
+}

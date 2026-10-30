@@ -7,15 +7,25 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `fi-company-formation.md`
-4. `fi-corporate-income-tax.md`
-5. `fi-income-tax.md`
-6. `fi-prepayments.md`
-7. `fi-tax-overview.md`
-8. `fi-yel-social.md`
-9. `finland-vat-return.md`
-10. `eu-vat-directive.md`
-11. `company-formation-workflow-base.md`
+3. `README.md`
+4. `fi-annual-real-estate-tax.md`
+5. `fi-company-formation.md`
+6. `fi-corporate-cross-border-tax.md`
+7. `fi-corporate-income-tax.md`
+8. `fi-country-by-country-reporting.md`
+9. `fi-employer-payroll.md`
+10. `fi-income-tax.md`
+11. `fi-individual-cross-border-residence.md`
+12. `fi-prepayments.md`
+13. `fi-property-transfer-tax.md`
+14. `fi-tax-overview.md`
+15. `fi-transfer-pricing.md`
+16. `fi-yel-social.md`
+17. `finland-vat-return.md`
+18. `eu-vat-directive.md`
+19. `payroll-workflow-base.md`
+20. `company-formation-workflow-base.md`
+21. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

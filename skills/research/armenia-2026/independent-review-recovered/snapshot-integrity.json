@@ -1,0 +1,19 @@
+{
+  "reviewed_commit": "9541fed2a60a14cdf38730fe5bac30a9b6877264",
+  "archive_entries_checked": 11651,
+  "all_match": true,
+  "mismatches": [],
+  "historical_commit_objects": [
+    {
+      "requested": "df7247a4",
+      "present": false,
+      "output": "fatal: Not a valid object name df7247a4\n"
+    },
+    {
+      "requested": "8be41f35",
+      "present": false,
+      "output": "fatal: Not a valid object name 8be41f35\n"
+    }
+  ],
+  "snapshot_pycache_note": "Canonical check imports create untracked __pycache__ files; archived tracked contents remain byte-identical."
+}

@@ -1,0 +1,37 @@
+{
+  "checked_utc": "2026-10-27T18:06:13.839195+00:00",
+  "main": "73f566473aaab8cda1e1a28c0fb8a9c3cd6f7dd0",
+  "Guide_files_identical_to_final_reviewed_checkpoint": [
+    "skills/international/andorra/andorra-igi.md",
+    "skills/international/andorra/ad-transfer-pricing.md",
+    "skills/international/andorra/ad-tax-overview.md",
+    "skills/international/andorra/ad-income-tax.md",
+    "skills/international/andorra/ad-payroll-social.md",
+    "skills/international/andorra/ad-non-resident-income-tax.md",
+    "skills/international/andorra/ad-corporate-income-tax.md",
+    "skills/international/andorra/ad-company-formation.md"
+  ],
+  "review_artifacts_byte_exact": 7,
+  "README_partial_byte_exact": true,
+  "generated_trees_touched": false,
+  "calculations": {
+    "controls": 20,
+    "failures": 0,
+    "per_Guide": 2
+  },
+  "schema": {
+    "changed_Guides": 7,
+    "warnings": 0
+  },
+  "metadata": {
+    "source_files": 7,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "tests": {
+    "count": 129,
+    "pass": true
+  },
+  "publication_scope": "One reviewed country batch to PR774; exact IT-IND partial retained; issue376 remains open; no merge or new CLA consent"
+}

@@ -1,0 +1,6 @@
+{
+  "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/fe5409c75fbb0b81c8bc.body",
+  "raw_sha256": "3397bd7ace92118cf6cb30c1e73d6d56e7463fc3340f0f0d2eaf509e8bebc508",
+  "reader_sha256": "dc73de9b16b3f5bb219909465d62965bd4592a6eaee4bd724da24604c2bafacc",
+  "derivation": "pdfplumber right-half crop of bilingual pages; raw unchanged; original-language Spanish only; page markers added"
+}

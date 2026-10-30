@@ -1,0 +1,31 @@
+{
+  "generated_on": "2026-10-26",
+  "armenia": {
+    "code": "AM",
+    "name": "Armenia",
+    "region": "europe",
+    "owner": "michael",
+    "dir": "skills/international/armenia",
+    "skills": 10,
+    "reviewed": 0,
+    "stale": 0,
+    "present": [
+      "IT-IND",
+      "IT-CORP",
+      "VAT",
+      "SC",
+      "TP"
+    ],
+    "missing": [
+      "PR",
+      "XB"
+    ],
+    "not_applicable": {},
+    "partial": {
+      "PR": "The exact 2026 tax-inclusive AMD benefit minimum under Benefits Law 22(1), read with Minimum Wage Law 4, remains unconfirmed. Ordinary benefit formulas and floor/cap ordering are supplied in M, not a cleared numeric base.",
+      "XB": "Current Code 19(7) treaty-procedure integration and the authorised applicant/account approval-to-beneficiary-refund settlement remain unverified. The ordinary personal source/property, agent/no-agent departure filing, corporate/PE returns and published historical treaty forms are supplied."
+    },
+    "has_readme": true,
+    "complete": false
+  }
+}

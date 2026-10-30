@@ -8,6 +8,8 @@ metadata:
   jurisdiction: "AU"
   tax_year: "2025"
   last_updated: "2026-09-10"
+  authored_by: "Ryan Duguid"
+  trust_label: "Accountant-authored"
   review_status: "pending_review"
 ---
 
@@ -58,7 +60,7 @@ Australia Transfer Pricing Skill v1.2
 | Filing deadline | Within 12 months of end of income year |
 | Filing method | Electronic lodgment with ATO |
 
-- **CbC reporting scope** — Establish whether the entity is a CbC reporting entity for the relevant period under s 815-370, including group-income and accounting-consolidation rules, exclusions and any reporting exemption. SGE status alone does not settle CbC obligations.  _([ITAA 1997 s 815-370](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/815-370))_
+- **CbC reporting scope:** Establish whether the entity is a CbC reporting entity for the relevant period under s 815-370, including group-income and accounting-consolidation rules, exclusions and any reporting exemption. SGE status alone does not settle CbC obligations. [ITAA 1997 s 815-370](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/815-370).
 
 ### 2.3 International Dealings Schedule (IDS)
 
@@ -72,7 +74,7 @@ Australia Transfer Pricing Skill v1.2
 
 ### 2.4 Short Form Local File
 
-- **Short Form Local File** — Determine CbC reporting-entity status and apply the reporting-period ATO local-file instructions to identify which parts are required. Do not infer a reduced filing obligation from revenue or a general low-risk description alone.  _([ATO CbC reporting](https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/in-detail/transfer-pricing/country-by-country-reporting))_
+- **Short Form Local File:** Determine CbC reporting-entity status and apply the reporting-period ATO local-file instructions to identify which parts are required. Do not infer a reduced filing obligation from revenue or a general low-risk description alone. [ATO CbC reporting](https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/in-detail/transfer-pricing/country-by-country-reporting).
 
 ## Section 3 -- Arm's Length Standard
 
@@ -129,7 +131,7 @@ Australia Transfer Pricing Skill v1.2
 
 ### 6.1 Transfer Pricing Shortfall Penalties
 
-**Transfer Pricing Shortfall Penalties**  _([ATO PS LA 2014/2](https://www.ato.gov.au/law/view/document?docid=PSR/PS20142/NAT/ATO/00001))_
+**Transfer Pricing Shortfall Penalties**
 
 | Scenario | Penalty Rate |
 | --- | --- |
@@ -148,7 +150,7 @@ Australia Transfer Pricing Skill v1.2
 
 ### 6.3 Failure to Lodge (SGEs)
 
-**Failure to Lodge (SGEs)**  _([Crimes (Amount of a Penalty Unit) Instrument 2026](https://www.legislation.gov.au/F2026N00424/asmade/text))_
+**Failure to Lodge (SGEs)**
 
 | Offence | Penalty |
 | --- | --- |
@@ -157,7 +159,7 @@ Australia Transfer Pricing Skill v1.2
 
 ## Section 7 -- Advance Pricing Agreements (APA)
 
-**Advance Pricing Agreements (APA) (PS LA 2015/4)**  _(PS LA 2015/4)_
+**Advance Pricing Agreements (APA)**  _(PS LA 2015/4)_
 
 | Item | Detail |
 | --- | --- |
@@ -215,8 +217,6 @@ ATO publishes Practical Compliance Guidelines indicating risk zones for various 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 
