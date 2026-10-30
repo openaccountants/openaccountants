@@ -56,7 +56,7 @@ Ukraine has been under martial law since 24 February 2022 (Presidential Decree N
 | Late or missing return (art. 120.1) | UAH 340; UAH 1,020 if repeated within a year | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
 | Late payment of an agreed liability (art. 124.1) | 5% up to 30 days; 10% over 30 days | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
 | Penalty interest (penia) (art. 129.4) | 120% of the NBU discount rate a year, per day | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
-| Self-correction of an understatement (art. 50.1) | 3% of the shortfall (5% route in a later return) | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Self-correction of an understatement (art. 50.1); waived with penia from 1 August 2023 until martial law ends (sec. XX, subsec. 10, point 69.38) | 3% of the shortfall (5% route in a later return); 0% during martial law | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
 | Desk audit of a refund return (art. 76.3, 200.10) | 30 calendar days after the filing deadline | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
 | Treasury pays an agreed refund (art. 200.13) | within 5 operating days | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
 | Interest on late refunds (art. 200.23) | 120% of the NBU discount rate | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
@@ -158,7 +158,7 @@ The "overdraft" is the monthly average of VAT the payer declared as payable and 
 
 **Return.** The VAT return is filed for each calendar month within 20 calendar days after the month ends (art. 49.18.1, 203.1). A payer that registers mid-month has a first period running from registration to the end of the first full calendar month (art. 202.1 (a)). The form is set by the Ministry of Finance (art. 201.15 with art. 46). It is filed electronically through the electronic cabinet.
 
-**Payment.** The liability declared is paid within 10 calendar days after the last day for filing the return (art. 57.1, 203.2). For a 31-day month that is the 30th of the following month, or the next working day.
+**Payment.** The liability declared is paid within 10 calendar days after the last day for filing the return (art. 57.1, 203.2). The return is due on the 20th of the month after the reporting month, so payment falls on the 30th of that month; for January returns, due 20 February, it falls on 2 March (1 March in a leap year).
 
 **Tax invoices.** Registration deadlines in YERPN:
 
@@ -169,7 +169,7 @@ The "overdraft" is the monthly average of VAT the payer declared as payable and 
 | Consolidated invoices under art. 198.5 and 199.1 | within 20 calendar days after the month end | not changed by point 89 |
 | Downward adjustment registered by the buyer | within 15 days of receipt | within 18 days of receipt |
 
-**Corrections.** A payer that finds an error in an earlier return files a correcting calculation (utochniuiuchyi rozrakhunok), or may show the corrected figures in any later return (art. 50.1). An understatement is paid with a 3% fine before the correction is filed, or with a 5% fine if corrected in a later return (art. 50.1). Martial law: a self-correction under art. 50 of an understatement in a period that falls in martial law carries no art. 50.1 fine and no penia, and VAT payers may not file corrections reducing liabilities or claiming refunds for periods before February 2022 until martial law ends (sec. XX, subsec. 10, point 69.1).
+**Corrections.** A payer that finds an error in an earlier return files a correcting calculation (utochniuiuchyi rozrakhunok), or may show the corrected figures in any later return (art. 50.1). An understatement is paid with a 3% fine before the correction is filed, or with a 5% fine if corrected in a later return (art. 50.1). Martial law: from 1 August 2023 until martial law ends, a payer that self-corrects an understatement under art. 50 pays no art. 50.1 fine and no penia, whatever period the error is in (sec. XX, subsec. 10, point 69.38; point 69.1 gives the same relief for periods that fall in martial law). VAT payers may not file corrections reducing liabilities or claiming refunds for periods before February 2022 until martial law ends (sec. XX, subsec. 10, point 69.1).
 
 **Non-resident e-services.** A non-resident registered under art. 208-1 files a simplified quarterly return through the special portal within 40 calendar days after the quarter, even for a quarter with no supplies (art. 208-1.4, 208-1.8). Its tax point is the last day of the quarter in which it was paid (art. 208-1.5). It claims no input VAT and issues no tax invoices (art. 208-1.7).
 
@@ -179,7 +179,7 @@ The "overdraft" is the monthly average of VAT the payer declared as payable and 
 
 **Late or missing return (art. 120.1).** UAH 340 for each return not filed or filed late; UAH 1,020 for each one if the payer was already fined for the same breach within the year. There is no warning-only first offence in the text.
 
-**Late tax invoice registration (art. 120-1.1).** A percentage of the VAT on the invoice, by days late. The permanent scale and the martial-law scale (point 90, which applies during martial law and for six months after it ends to the point 89 deadlines):
+**Late tax invoice registration (art. 120-1.1).** A percentage of the VAT on the invoice, by days late. The permanent scale and the martial-law scale (point 90, which applies during martial law and for six months after the month in which it ends, to the point 89 deadlines):
 
 | Days late | Permanent rule (art. 120-1.1) | Martial law (point 90) |
 |---|---|---|
@@ -197,7 +197,7 @@ No late-registration fine applies to invoices for exempt or zero-rated supplies,
 
 **Late payment (art. 124).** A fine on the agreed liability paid late: 5% of the debt repaid if up to 30 days late, 10% if more than 30 days late (art. 124.1). Intentional non-payment: 25% (art. 124.2); repeated within 1,095 days or more than 90 days late: 50% (art. 124.3).
 
-**Penalty interest, penia (art. 129).** 120% a year of the NBU discount rate in force on each day, charged for every calendar day late including the day of payment (art. 129.4). On a liability the payer declared itself, including a self-correction under art. 50, penia starts only after 90 calendar days past the payment deadline (art. 129.1.3). On an underpayment found by audit it runs from the first working day after the original deadline (art. 129.1.2).
+**Penalty interest, penia (art. 129).** 120% a year of the NBU discount rate in force on each day, charged for every calendar day late including the day of payment (art. 129.4). On a liability the payer declared itself, including a self-correction under art. 50, penia starts only after 90 calendar days past the payment deadline (art. 129.1.3), and while martial law lasts a self-correction carries no penia at all (point 69.38). On an underpayment found by audit it runs from the first working day after the original deadline (art. 129.1.2).
 
 **Martial-law relief.**
 
@@ -295,7 +295,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Tax Code of Ukraine, Law No. 2755-VI of 2 December 2010, consolidated with amendments to Law No. 4967-IX of 3 September 2026: arts. 14.1.139, 44.3, 49.18, 50.1, 57.1, 76.3, 120, 120-1, 124, 129, 180 to 183, 185 to 188, 190, 192 to 203, 208, 208-1, 209; section XX subsection 2 points 32-1, 54-1, 64-1, 87-1, 88-1, 89, 90, 92, 94, 99-1; subsection 10 points 69.1, 69.1-1, 69.3, 69.41 | https://zakon.rada.gov.ua/laws/show/2755-17 | 2026-10-30 (official text via web.archive.org capture of 12 Oct 2026, https://web.archive.org/web/20261012050950/https://zakon.rada.gov.ua/laws/show/2755-17/print; zakon.rada.gov.ua timed out from our network) |
+| Tax Code of Ukraine, Law No. 2755-VI of 2 December 2010, consolidated with amendments to Law No. 4967-IX of 3 September 2026: arts. 14.1.139, 44.3, 49.18, 50.1, 57.1, 76.3, 120, 120-1, 124, 129, 180 to 183, 185 to 188, 190, 192 to 203, 208, 208-1, 209; section XX subsection 2 points 32-1, 54-1, 64-1, 87-1, 88-1, 89, 90, 92, 94, 99-1; subsection 10 points 69.1, 69.1-1, 69.3, 69.38, 69.41 | https://zakon.rada.gov.ua/laws/show/2755-17 | 2026-10-30 (official text via web.archive.org capture of 12 Oct 2026, https://web.archive.org/web/20261012050950/https://zakon.rada.gov.ua/laws/show/2755-17/print; zakon.rada.gov.ua timed out from our network, and again by curl and a browser tab at review on 30 Oct 2026) |
 | Tax Code of Ukraine, consolidated text as of May 2025: former section XX subsection 2 point 64 (electric vehicles) | https://zakon.rada.gov.ua/laws/show/2755-17 | 2026-10-30 (official text via web.archive.org capture of 28 May 2025, https://web.archive.org/web/20250528171622/https://zakon.rada.gov.ua/laws/show/2755-17/print) |
 | State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access; not read) |
 
