@@ -295,8 +295,12 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "f537d6176d30b425d3659d68fc23c5e7279f837383a89b17414c599b46fbc511",
       "original_text": "# Moldova cross-border tax",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "The base: Classify the nonresident income",
+        "The base: Establish the PE and calculate its profit"
+      ],
+      "status": "Prior source/PE screening preserved and expanded with current scope and computation"
     },
     {
       "id": "md-cross-border-OLD-002",
@@ -304,8 +308,12 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "a16e4681228b670dea83457e9ca7e3a50afcd43c1ac90425861a5f0461cb1d3b",
       "original_text": "## Start with source, residence and permanent establishment",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "The base: Classify the nonresident income",
+        "The base: Establish the PE and calculate its profit"
+      ],
+      "status": "Prior source/PE screening preserved and expanded with current scope and computation"
     },
     {
       "id": "md-cross-border-OLD-003",
@@ -313,8 +321,12 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "e780aaa6fb2ba08e6d1db01730f94af06687f58c651fac936d491e7db6ea9ce5",
       "original_text": "For a cross-border payment, identify the recipient's legal form and tax residence, the payer, the nature and source of the income, where services are performed, whether a Moldovan permanent establishment is involved, and the relevant tax treaty. Moldova's Fiscal Code lists categories of Moldova-source income earned by nonresidents. The list includes specified service income, interest, royalties, rent or use of Moldovan property, employment and other enumerated income. Some service categories have different territorial tests: SFS says specified Article 71(1)(b) services can be Moldova-source even when performed abroad, while the residual services in paragraph (b¹) are source income when performed in Moldova. Classify the actual service before applying withholding. [Fiscal Code, arts. 5(15), 71–73](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [SFS Generalized Fiscal Practice 29.4.31 and TP/service guidance](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/102); [SFS item 1095](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/1095) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "The base: Classify the nonresident income",
+        "The base: Establish the PE and calculate its profit"
+      ],
+      "status": "Prior source/PE screening preserved and expanded with current scope and computation"
     },
     {
       "id": "md-cross-border-OLD-004",
@@ -322,8 +334,12 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "1bda5736bca956d365fc1c6be5835af6cebff523dbf89288a33c744aaf67cdb7",
       "original_text": "A permanent establishment is generally a fixed place through which a nonresident carries on business in Moldova, directly or through a dependent agent. The Code's examples include a place of management, branch, office, factory, workshop and extraction site. A construction, assembly or installation project and related supervision or equipment activity falls within the statutory definition where it continues for more than six months. Apply the complete current definition, exclusions and any applicable treaty: the domestic definition alone does not settle treaty PE status. [Fiscal Code, art. 5(15)](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [SFS Generalized Fiscal Practice 1.1.12](https://www.sfs.md/ro/intrebare-baza-de-date-generalizare/105) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "The base: Classify the nonresident income",
+        "The base: Establish the PE and calculate its profit"
+      ],
+      "status": "Prior source/PE screening preserved and expanded with current scope and computation"
     },
     {
       "id": "md-cross-border-OLD-005",
@@ -331,8 +347,12 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "3734ec807c2c1ae32d6db5d27608808f89ea02fb2147998b86a8f88496b8209f",
       "original_text": "## Nonresident withholding",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "The base: Apply the appropriate collection route",
+        "The base: Establish the PE and calculate its profit"
+      ],
+      "status": "Prior withholding/PE distinction retained; full domestic exceptions, payer route and PE profit method added"
     },
     {
       "id": "md-cross-border-OLD-006",
@@ -340,8 +360,12 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "43411c0a0122bd4a83fca024237cea773796327f013c8f1bbbd702bee9af56b6",
       "original_text": "Where a payment is Moldova-source income listed in Article 71 and is not attributable to a Moldovan permanent establishment, Article 73 generally taxes it at source without deductions. Article 91 sets a domestic 12% withholding rate for covered payments, subject to listed exceptions and special rules. The payer must identify the applicable Article 71 category and Article 91 clause; do not apply a blanket 12% to every foreign supplier invoice. SFS explains that the payer's withholding obligation can apply regardless of the payment's form or location. [Fiscal Code, arts. 71, 73, 90–91](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [SFS Generalized Fiscal Practice 29.4.31](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/102); [SFS item 1095](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/1095) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "The base: Apply the appropriate collection route",
+        "The base: Establish the PE and calculate its profit"
+      ],
+      "status": "Prior withholding/PE distinction retained; full domestic exceptions, payer route and PE profit method added"
     },
     {
       "id": "md-cross-border-OLD-007",
@@ -349,8 +373,12 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "95a8506099917164e0763062027eaa7c39da98962e053c076c1cddf44b721268",
       "original_text": "Check separately whether the income is attributable to a Moldovan permanent establishment. The domestic nonresident-at-source rule described above applies to income not connected with such a permanent establishment; PE profits require a separate computation and filing analysis under the Code and any applicable treaty. This Guide does not calculate PE taxable profit, deductibility, payroll, VAT, customs or local registration obligations.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "The base: Apply the appropriate collection route",
+        "The base: Establish the PE and calculate its profit"
+      ],
+      "status": "Prior withholding/PE distinction retained; full domestic exceptions, payer route and PE profit method added"
     },
     {
       "id": "md-cross-border-OLD-008",
@@ -358,8 +386,11 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "500c8c0b09eb3bd5fe60e6bc369a8acc36ce45f055ced69faf6501b0f21979da",
       "original_text": "## Treaty relief and proof",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Cross-border points: Apply an actual treaty and retain evidence",
+        "Cross-border points: Late evidence, refunds and tax-paid certificates"
+      ],
+      "status": "24October legal-person evidence correction preserved; current timing, language and refund rules expanded; treaty-specific gaps explicit"
     },
     {
       "id": "md-cross-border-OLD-009",
@@ -367,8 +398,11 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "6e5a5d1b26d008b3dc84a577415d9572038c5ff62e86e8d18b8f816135f17a90",
       "original_text": "An applicable international tax treaty prevails over conflicting domestic tax rules under Fiscal Code Article 4. First identify the treaty in force for the recipient's residence and the income category; read its protocol and effective dates. The Ministry of Finance maintains a treaty list, but the linked list currently carries a 20 June 2022 status date, so it is a starting point rather than proof that a treaty or protocol is current today. Check the official treaty text and subsequent amendments. [Fiscal Code, art. 4](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [Ministry of Finance treaty list](https://mf.gov.md/ro/content/acorduriconven%C8%9Bii-pentru-evitarea-dublei-impuneri-la-situa%C8%9Bia-din-20062022) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Cross-border points: Apply an actual treaty and retain evidence",
+        "Cross-border points: Late evidence, refunds and tax-paid certificates"
+      ],
+      "status": "24October legal-person evidence correction preserved; current timing, language and refund rules expanded; treaty-specific gaps explicit"
     },
     {
       "id": "md-cross-border-OLD-010",
@@ -376,8 +410,11 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "b29060c5207e0a42ffd3bd7339d18883aafbdf3267316019370f4fe2daf04c8c",
       "original_text": "The evidence of treaty residence depends on the recipient's legal form and applicable treaty. A nonresident individual must generally provide the payer with a residence certificate before payment. For a nonresident legal person, SFS guidance recognizes a copy of a residence certificate, a document showing registration in its residence country, or an extract from the official tax-authority website showing tax residence or registration; follow the Code's translation and validity rules and the applicable treaty. Keep the proof actually used, treaty analysis, contract, invoice, payment record and withholding calculation. A Moldova-resident person seeking a Moldovan residence certificate for treaty purposes applies to SFS under the prescribed process. [Fiscal Code, art. 79³](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [SFS Generalized Fiscal Practice 29.4.31 and 29.4.41–46](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/102); [SFS residence-certificate guidance](https://www.sfs.md/ro/pagina/certificate-de-rezidenta-persoane-fizice) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Cross-border points: Apply an actual treaty and retain evidence",
+        "Cross-border points: Late evidence, refunds and tax-paid certificates"
+      ],
+      "status": "24October legal-person evidence correction preserved; current timing, language and refund rules expanded; treaty-specific gaps explicit"
     },
     {
       "id": "md-cross-border-OLD-011",
@@ -385,8 +422,11 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "bf009d54e0826057c993d891380c498c4487a912d8e494957167c20fa657edd0",
       "original_text": "Treaty relief is not automatic from the recipient's address or incorporation certificate. Confirm treaty residence, beneficial ownership where relevant, limitation-of-benefits or principal-purpose provisions, permanent-establishment status, the payment's treaty classification and the acceptable proof for the recipient's legal form. The result can differ for business profits, dividends, interest, royalties, employment, directors' fees, immovable property and capital gains.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Cross-border points: Apply an actual treaty and retain evidence",
+        "Cross-border points: Late evidence, refunds and tax-paid certificates"
+      ],
+      "status": "24October legal-person evidence correction preserved; current timing, language and refund rules expanded; treaty-specific gaps explicit"
     },
     {
       "id": "md-cross-border-OLD-012",
@@ -394,8 +434,12 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "78441ba6fcbec89aa55ec1d7e5993d717d3a856abc9f982c74fa2b2139f763a5",
       "original_text": "## Foreign income of Moldova residents",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "The base: Foreign income, credits, property and mobility",
+        "Two worked examples that recompute"
+      ],
+      "status": "No blanket worldwide scope; population distinctions and article82 credit computation supplied"
     },
     {
       "id": "md-cross-border-OLD-013",
@@ -403,8 +447,12 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "5d82f055f562b9834afc676dca42b2acb00c4ae2706e4f9a0fdd7a7420770cce",
       "original_text": "Do not infer a worldwide-income rule for every Moldovan person from this Guide. Determine the taxpayer's statutory residence and legal form, the domestic treatment of the foreign income, any foreign tax credit or exemption, and the applicable treaty. Obtain foreign tax-payment evidence and apply the Code's credit limitation and documentation rules before claiming relief. The current Code and taxpayer-specific rules must be checked; this draft does not provide a comprehensive foreign tax credit calculation or residence tie-breaker analysis. [Fiscal Code, Title II and treaty provisions](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [Ministry of Finance treaty list and texts](https://mf.gov.md/ro/content/acorduriconven%C8%9Bii-pentru-evitarea-dublei-impuneri-la-situa%C8%9Bia-din-20062022) (read 2026-10-24).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "The base: Foreign income, credits, property and mobility",
+        "Two worked examples that recompute"
+      ],
+      "status": "No blanket worldwide scope; population distinctions and article82 credit computation supplied"
     },
     {
       "id": "md-cross-border-OLD-014",
@@ -412,8 +460,13 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "fd2b84b7f6ce73ae9119859615cb49bc75fe7bcb80d587da352b1d0261d210a2",
       "original_text": "## Cross-border compliance checklist",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Two worked examples that recompute",
+        "The base",
+        "archived original"
+      ],
+      "status": "All three predecessor decision cases expressly retained; no invented treaty-rate example"
     },
     {
       "id": "md-cross-border-OLD-015",
@@ -421,8 +474,13 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "fec04fd37ba377025c35f52460e46f13591390d4ac2e97590407551d650497c2",
       "original_text": "Before signing or paying, retain: counterparty identity and residence evidence; a contract describing the actual service, rights or property; service location and delivery evidence; a written Moldovan-source and PE analysis; the applicable treaty and protocol; timely residence evidence acceptable for the recipient’s legal form and treaty where relief is claimed; withholding and payment evidence; and any required tax statement and return. For related parties, also screen Moldova's transfer-pricing thresholds and documentation duties under [md-transfer-pricing](md-transfer-pricing.md).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Two worked examples that recompute",
+        "The base",
+        "archived original"
+      ],
+      "status": "All three predecessor decision cases expressly retained; no invented treaty-rate example"
     },
     {
       "id": "md-cross-border-OLD-016",
@@ -430,8 +488,13 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "867cdb3f99fdd95a8de7b853c784c665d03b3d7a5595ff26714f56e203fb4a81",
       "original_text": "### Examples",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Two worked examples that recompute",
+        "The base",
+        "archived original"
+      ],
+      "status": "All three predecessor decision cases expressly retained; no invented treaty-rate example"
     },
     {
       "id": "md-cross-border-OLD-017",
@@ -439,8 +502,13 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "d814af662c3216699e665aa760e2c359e30444c4b45bb26732848d79f325021f",
       "original_text": "- A nonresident supplies a service remotely. Do not decide withholding solely from the invoice address. Determine whether the service falls within Article 71(1)(b), which SFS treats as Moldova-source irrespective of where performed, or the residual Article 71(1)(b¹) category, for which SFS says performance in Moldova is required. Then check the applicable treaty and retain residence evidence accepted for the recipient’s legal form.\n- A nonresident earns income through a Moldovan fixed place of business. Test domestic PE criteria and the applicable treaty, then analyze PE attribution and filing separately. The 12% gross-payment rule for non-PE income is not a substitute for that analysis.\n- A Moldovan payer is about to pay interest or royalties to a treaty-country company. Identify the domestic category and rate, obtain and retain the residence proof acceptable for that legal form and treaty before payment, read the treaty article and protocol, and document the reduced rate or domestic rate used.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Two worked examples that recompute",
+        "The base",
+        "archived original"
+      ],
+      "status": "All three predecessor decision cases expressly retained; no invented treaty-rate example"
     },
     {
       "id": "md-cross-border-OLD-018",
@@ -448,8 +516,13 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "39bacb3caef0e94023881fa8853ea243cb2f33b14124a71e0c4d2234354b369d",
       "original_text": "These examples identify the decision sequence and do not determine an individual payment's final tax treatment.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Two worked examples that recompute",
+        "The base",
+        "archived original"
+      ],
+      "status": "All three predecessor decision cases expressly retained; no invented treaty-rate example"
     },
     {
       "id": "md-cross-border-OLD-019",
@@ -457,8 +530,11 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "3ec39896929d19a9d742f7cbbb785e2a5e8de909442458d987fa7c7c5a901e65",
       "original_text": "## Open verification points",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "country README"
+      ],
+      "status": "Earlier open topics resolved in the draft method or precisely retained as source/procedure/specialist gaps; whole-country review remains pending"
     },
     {
       "id": "md-cross-border-OLD-020",
@@ -466,8 +542,11 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "810fa733cace8c602e96f3a65b4294d46124d1fc39c155785588bbd75da4bff6",
       "original_text": "This source-cited draft has not had a Moldovan cross-border tax practitioner review. The Ministry of Finance treaty inventory is dated 2022; treaty coverage and modifications must be verified against official current texts. The full current consolidated Fiscal Code should be checked for 2026 amendments to source rules, rates, declarations, certificates and foreign-tax-credit mechanics before relying on this Guide. It does not cover every treaty, individual residence or exit tax, employment/social-security coordination, VAT, customs, property transfer or controlled-foreign-company issue.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources: Not yet confirmed",
+        "country README"
+      ],
+      "status": "Earlier open topics resolved in the draft method or precisely retained as source/procedure/specialist gaps; whole-country review remains pending"
     },
     {
       "id": "md-cross-border-OLD-021",
@@ -475,8 +554,10 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "original_text": "<!-- openaccountants-cta-block -->",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list remains byte-identical; current Sources precedes marker"
     },
     {
       "id": "md-cross-border-OLD-022",
@@ -484,8 +565,10 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
       "original_text": "---",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list remains byte-identical; current Sources precedes marker"
     },
     {
       "id": "md-cross-border-OLD-023",
@@ -493,8 +576,10 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
       "original_text": "## Talk to a verified accountant",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list remains byte-identical; current Sources precedes marker"
     },
     {
       "id": "md-cross-border-OLD-024",
@@ -502,8 +587,10 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "4321260b1a5ba597c05c5038f272231dce1af69b82f35c434f0da92830fd4db0",
       "original_text": "This document is general reference information, not advice for a specific payment or business structure. Consult the cited law, current treaty and a Moldovan tax professional before payment or filing.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list remains byte-identical; current Sources precedes marker"
     },
     {
       "id": "md-cross-border-OLD-025",
@@ -511,8 +598,10 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
       "original_text": "## Sources",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list remains byte-identical; current Sources precedes marker"
     },
     {
       "id": "md-cross-border-OLD-026",
@@ -520,8 +609,10 @@
       "original_sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
       "unit_sha256": "9f1d6a8d3bc56e5bd1caf23864943db3740b38095a14c4115d55cc6296edb9a3",
       "original_text": "- Moldova Fiscal Code, arts. 4, 5, 71–73, 79³, 90–91, official consolidated text: https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro (read 2026-10-24)\n- State Tax Service Generalized Fiscal Practice, nonresident income and treaty-residence evidence: https://www.sfs.md/ro/ordinele-de-baze-de-generalizare/102 and https://www.sfs.md/ro/ordinele-de-baze-de-generalizare/1095 (read 2026-10-24)\n- State Tax Service permanent-establishment practice: https://www.sfs.md/ro/intrebare-baza-de-date-generalizare/105 (read 2026-10-24)\n- State Tax Service residence-certificate instructions: https://www.sfs.md/ro/pagina/certificate-de-rezidenta-persoane-fizice (read 2026-10-24)\n- Ministry of Finance treaty inventory (status date shown as 20 June 2022; not current treaty proof): https://mf.gov.md/ro/content/acorduriconven%C8%9Bii-pentru-evitarea-dublei-impuneri-la-situa%C8%9Bia-din-20062022 (read 2026-10-24)\n",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Original stamped block including predecessor source list remains byte-identical; current Sources precedes marker"
     },
     {
       "id": "md-tax-overview-OLD-001",

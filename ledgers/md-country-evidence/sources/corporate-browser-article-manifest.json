@@ -1200,6 +1200,41 @@
       "format": "Exact JSON returned by read-only browser DOM observation",
       "sha256": "3096c7f8ff6171246d574e035d5469bef39c0ed7abc672f6c5bf3b04a657c7b0"
     },
+    "XB-IPC21-NONRESIDENT": {
+      "article": "XB-IPC21-NONRESIDENT",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154168&lang=ro",
+      "observed_utc": "2026-10-30T18:17:37.668Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "810ccb119d7ad5dc9e73cad2287b6428b464f46a2e86b2adbbf5707a19bbe82b"
+    },
+    "XB-IPC21-PAYMENT-CODES": {
+      "article": "XB-IPC21-PAYMENT-CODES",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154168&lang=ro",
+      "observed_utc": "2026-10-30T18:17:37.668Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "b6f204f8691fe313827fff48e0bbef0e4b8e67c66be9b25ef0997e20b2fce699"
+    },
+    "XB-ANNUAL-ORDER140": {
+      "article": "XB-ANNUAL-ORDER140",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=148920&lang=ro",
+      "observed_utc": "2026-10-30T18:18:03.164Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "82538126551b75cdd1fd2613fa9f791a25382baad73aeb58c7ef78143df39f39"
+    },
+    "XB-CODE-CONSOLIDATION": {
+      "article": "XB-CODE-CONSOLIDATION",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T18:18:03.164Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "f938cd19ce3417c1ec791ec441ddd30a9f3a7147e674ecaabbcd8b2a126a02e5"
+    },
+    "37": {
+      "article": "37",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T18:19:35.678Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "e27b32cae93ee9237f187ac38e5dd294c3a4611339f8366d6ca5b47e57862e3c"
+    },
     "20": {
       "article": "20",
       "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
