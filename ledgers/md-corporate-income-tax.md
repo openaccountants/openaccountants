@@ -2,7 +2,7 @@
 
 **Writer draft; independent whole-country review pending.** This ledger covers statutory rule/method groups and identifies both assumed examples separately. Ordinary implementation gaps remain in the Guide Sources and country README. It is not a complete-coverage or attestation record.
 
-Guide SHA256: `5e504aa5824ae994244329f1cfa2691844e8841daf03ef583403d54a0d05ad5d`. Read date: 30 October 2026. Selected official browser bodies are retained as article JSON with original text, observation date and official URL. They are not a complete Fiscal Code download.
+Guide SHA256: `254e608c51d05b53f033e9e74c803c12a54c485f8a378d763193750e3e877731`. Read date: 30 October 2026. Selected official browser bodies are retained as article JSON with original text, observation date and official URL. They are not a complete Fiscal Code download.
 
 | ID | Rule/figure | Section | Act/article and official URL | Short original-language quote | Read |
 |---|---|---|---|---|---|

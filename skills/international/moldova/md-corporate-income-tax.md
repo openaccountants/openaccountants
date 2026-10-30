@@ -1,7 +1,7 @@
 ---
 name: md-corporate-income-tax
 description: "Compute Moldova resident-company corporate income tax for 2026, including the ordinary taxable-profit reconciliation and the separate eligible non-VAT SME accounting-income regime. Use for regime and legal-category selection, business expenses, employee benefits, financing, depreciation, losses, foreign-tax credits, instalments, distributions and withholding. Distinguish company tax from shareholder withholding and the dividend-linked payment-deferral option. Establish actual tax-period, VAT, ownership, activity, profit-origin and payment facts before calculating. This source-cited writer draft preserves the earlier Guide subjects, states exact remaining ordinary and specialist gaps, and requires whole-country independent review before publication. It does not claim accountant attestation or comprehensive coverage."
-version: 0.8
+version: 0.9
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-30
@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 ---
 
-# Moldova corporate income tax, 2026 v0.8
+# Moldova corporate income tax, 2026 v0.9
 
 ## Who this applies to
 
@@ -193,7 +193,7 @@ Sources for the table: [VEN12 instructions 7–31][ven12instructions], [approved
 
 **Ordinary cash-donation and undocumented-expense cap working paper.** Where accounting profit already includes the cash philanthropic/sponsorship cost and ordinary article-24(10) undocumented expense, annex 2D **03025** and **03026** put those book amounts in column 2 and zero in column 3. The annex's adjustment is **column 3 minus column 2**; subtracting that negative adjustment when calculating 040 adds the costs back once. The approved form then uses **040**, before rows 050–060 and loss relief, as both percentage-cap bases. Deduct in 050 the lesser of the actual qualifying cash donation and **5% of positive 040**; deduct in 060 the lesser of the actual qualifying ordinary undocumented expense and **0.2% of positive 040**. If 040 is not positive, these capped deductions are zero. Do not add the costs back twice, apply the percentages to post-deduction 070/090, or solve an invented simultaneous circular formula. Establish eligible recipients, purpose, proof and ordinary necessary business use first. Article **24(10^1)** business-card purchases have a separate statutory route; do not automatically place them under this capped ordinary article-24(10) route. Noncash/food donations and other special adjustments require their own classification and remain outside this cash-only illustration. [Approved VEN12 form, main rows 040–060 and annex 2D columns/03025–03026][ven12form]; [instructions 12–14, 79–80][ven12instructions]; [Code arts. 24(1), (10), (10^1), 36][code].
 
-**Representation expenses: use the current instruction rather than obsolete printed rows.** Annex 2.1D instructions 102–102^3 direct the Government point-53 coefficient to **row 03043 column 3**, with the corresponding cap in column 4. The current Government rule is **0.75% of statutory gross income**. Old rows **030431, 030432 and 03044 are not completed**. Record actual eligible accounting costs in **03045 column 4**, then the lesser of those costs and the cap in **03046 column 4**. Transfer 03045 to **annex 2D row 0304 column 2**, and 03046 to **row 0304 column 3**. Apply the documented business purpose and gift sublimits above before this comparison; old goods/services percentage rows are not additional deductions. [VEN12 instructions 58, 102–102^3][ven12instructions]; [Government regulation points 51–53][corpreg].
+**Representation expenses: use the current instruction rather than obsolete printed rows.** Annex 2.1D instructions 102–102^3 direct the Government point-53 coefficient to **row 03043 column 3**, with the corresponding cap in column 4. The current Government rule is **0.75% of statutory gross income**. Old rows **030431, 030432 and 03044 are not completed**. For the ordinary case where all recorded costs meet the purpose, evidence and gift-sublimit conditions, record the **actual accounting costs** in **03045 column 4**, then the lesser of those costs and the cap in **03046 column 4**. Transfer 03045 to **annex 2D row 0304 column 2**, and 03046 to **row 0304 column 3**. Keep the accounting amount distinct from any eligibility disallowance: do not replace actual book costs with a pre-screened subtotal or count a gift-sublimit excess twice. The simple field calculation above assumes all recorded costs qualify; additional eligibility adjustments need their own reconciliation. Old goods/services percentage rows are not additional deductions. [VEN12 instructions 58, 102–102^3][ven12instructions]; [Government regulation points 51–53][corpreg].
 
 **Do not reactivate the old capital-gain annex.** Instruction **53^1** says VEN12 **annex 1.2D is not completed from reporting year 2020**. A legacy printed percentage in that annex is not a current SRL inclusion rule. Apply the current business-income and fixed-asset disposal rules, while the individual-only chapter-5 rule remains in the individual Guide. [VEN12 instruction 53^1][ven12instructions]; [Code arts. 14, 18, 24, 37, 40][code].
 
