@@ -18,13 +18,13 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Crypto-asset tax in Italy (cripto-attività) v1.1
 
-Tax year **2026**, private holdings of Italian resident individuals. This Guide computes ordinary crypto gains/income and the annual crypto-value tax, identifies the special euro e-money-token rate, and distinguishes income, monitoring and wealth-tax duties. Outputs are working papers for a commercialista; they do not carry accountant attestation.
+Tax year **2026**, private holdings of Italian resident individuals. This skill computes ordinary crypto gains/income and the annual crypto-value tax, identifies the special euro e-money-token rate, and distinguishes income, monitoring and wealth-tax duties. Outputs are working papers for a commercialista; they do not carry accountant attestation.
 
 **Year boundary:** Redditi PF **2026** instructions report **2025** income. Their form coordinates below are historical reference points, not published 2027 fields. The current statutory **2026** rates override older rates and thresholds in Circolare 30/E/2023 or a return instruction. D.Lgs. 117/2026, annex article 377, applies the new income-tax code from **1 January 2027**; use the provisions in force for the relevant income period ([annex art.377](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377!vig=2026-10-29)).
 
 ## Who this applies to
 
-Confirm residence, private/business capacity, token rights, contracts and tax arrangements before computing. This Guide covers private crypto within TUIR article 67(1)(c-sexies), not company/business income, PE attribution, financial instruments or residence/exit-tax analysis. It does not assume that an unclassified token is an ordinary coin merely because it uses a blockchain.
+Confirm residence, private/business capacity, token rights, contracts and tax arrangements before computing. This skill covers private crypto within TUIR article 67(1)(c-sexies), not company/business income, PE attribution, financial instruments or residence/exit-tax analysis. It does not assume that an unclassified token is an ordinary coin merely because it uses a blockchain.
 
 - **cripto-attività.** "Una rappresentazione digitale di valore o di diritti che possono essere trasferiti e memorizzati elettronicamente, utilizzando la tecnologia di registro distribuito o una tecnologia analoga" (art. 67(1)(c-sexies) TUIR): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art67!vig=2026-06-30
 - Agenzia Circolare 30/E of 27 October 2023 says security tokens that are MiFID II financial instruments are NOT under letter c-sexies; they follow the ordinary rules for capital income and financial "redditi diversi". Tokenised shares stay shares. Derivatives on crypto (CFDs, futures) fall under letter c-quater: https://www.agenziaentrate.gov.it/portale/documents/20143/5589638/Circolare+criptoattivita+del+27+ottobre+2023.pdf
@@ -35,7 +35,7 @@ Confirm residence, private/business capacity, token rights, contracts and tax ar
 | --- | --- | --- |
 | Cryptocurrencies (BTC, ETH, SOL, etc.) | Cripto-attività | Ordinary crypto rate |
 | Utility tokens | Cripto-attività | Ordinary crypto rate on sale. Using the right to buy the product at a discount is not income (Circolare 30/E) |
-| Security / financial tokens | Financial instrument if it meets the MiFID II definition, otherwise cripto-attività | Financial instrument: ordinary rules for financial income, not this Guide |
+| Security / financial tokens | Financial instrument if it meets the MiFID II definition, otherwise cripto-attività | Financial instrument: ordinary rules for financial income, not this skill |
 | Stablecoins that do not satisfy the euro e-money-token exception | Cripto-attività | Ordinary crypto rate |
 | Euro e-money tokens (MiCA art. 3(1)(7)) | Cripto-attività with its own rate, but only tokens whose value is stably pegged to the euro and whose reserve funds are held entirely in euro assets with entities authorised in the EU (Legge 199/2025 comma 28) | The euro e-money token rate. Converting euro to these tokens, or redeeming them in euro at face value, is not a gain or loss (Legge 199/2025 comma 28) |
 | NFTs | Cripto-attività when sold by a holder | Ordinary crypto rate. Sale by the author of the work: see Staking, NFTs and excluded activities |
@@ -112,7 +112,7 @@ Gain is proceeds received (or the normal value of crypto received in a taxable s
 
 - **2023–2024 c-sexies origins:** the historical EUR 2,000 excess limit applies to the eligible carried loss, as described in PF2 section V-A. Do not apply it to a 2025 or 2026 origin.
 - **From 2025:** the EUR 2,000 gain/loss threshold is removed by Law 207/2024 article 1(25); the current crypto loss/carry-forward conditions above apply.
-- **Operations before 1 January 2023:** Circolare 30/E's transitional section 3.2, printed pages 51–52, applies article 68(5)/(6) and its separate financial-income loss bucket, with the stated four-year carry and origin-return condition. This Guide does not compute those transitional balances. Obtain the origin records and refer the classification; do not treat a 2022 transitional loss as a 2023–2024 c-sexies loss subject to the EUR 2,000 excess rule.
+- **Operations before 1 January 2023:** Circolare 30/E's transitional section 3.2, printed pages 51–52, applies article 68(5)/(6) and its separate financial-income loss bucket, with the stated four-year carry and origin-return condition. This skill does not compute those transitional balances. Obtain the origin records and refer the classification; do not treat a 2022 transitional loss as a 2023–2024 c-sexies loss subject to the EUR 2,000 excess rule.
 
 ### Acquisition-cost records and fees
 
@@ -122,7 +122,9 @@ For multiple crypto-assets **of the same denomination in the private declarative
 
 ### Staking, NFTs and excluded activities
 
-Staking is income from holding within letter c-sexies and is taxed gross on receipt. Circolare 30/E treats an issued NFT sold by its holder within the crypto rules; its example of an NFT/NFT swap falls under same-characteristics/functions treatment, while crypto/NFT swaps are taxable. For an author's own work, the circular distinguishes professional self-employment, occasional activity and business income. **Refer creators and NFT royalties/VAT** for their own classification; do not apply this holder computation to them ([Circolare 30/E pp.44–51 and section3.7.1.3](https://www.agenziaentrate.gov.it/portale/documents/20143/5589638/Circolare+criptoattivita+del+27+ottobre+2023.pdf)).
+Staking is income from holding within letter c-sexies and is taxed gross on receipt. Circolare 30/E treats an issued NFT sold by its holder within the crypto rules; its example of an NFT/NFT swap falls under same-characteristics/functions treatment, while crypto/NFT swaps are taxable. For an author selling an NFT of their own work, the sale is not letter c-sexies income: it is business income if made in a business, self-employment income under TUIR article 53(2)(b) if the activity is carried on as a profession, or income under article 67(1)(l) if not carried on habitually (Circolare 30/E, printed p.48). **Refer creators and NFT royalties/VAT** for their own classification; do not apply this holder computation to them ([Circolare 30/E pp.44–51 and section3.7.1.3](https://www.agenziaentrate.gov.it/portale/documents/20143/5589638/Circolare+criptoattivita+del+27+ottobre+2023.pdf)).
+
+Mining for VAT: where the miner is paid automatically by the network, with no identifiable customer, Circolare 30/E (printed p.87) treats the activity as outside the scope of VAT, with no right to deduct input VAT. Mining under specific contracts between known parties can be exempt, non-taxable or taxable for VAT depending on its nature. The income-tax classification of mining is not settled here (Not yet confirmed).
 
 ### Annual crypto-value tax and stamp duty
 
@@ -173,7 +175,7 @@ Source: D.P.R. 322/1998 art. 2: https://www.normattiva.it/uri-res/N2Ls?urn:nir:s
 | Method | Detail |
 | --- | --- |
 | Payment vehicle | Modello F24 |
-| Codes | 1727 (balance), 1728 (first acconto), 1729 (second acconto). The live Guide said 1728 and 1729 were interest and penalties; the instructions say they are the acconti |
+| Codes | 1727 (balance), 1728 (first acconto), 1729 (second acconto). An earlier version of this skill said 1728 and 1729 were interest and penalties; the instructions say they are the acconti |
 | Deadline | Same dates and acconto rules as IRPEF (instructions, link in Annual crypto-value tax and stamp duty). For the IRPEF dates and the late-payment surcharge see `it-income-tax` |
 
 **All RT/RW section, row, column and code references above describe the published PF 2026 form for 2025 income.** They are not confirmed fields of the future PF 2027 form for 2026. The law still requires annual reporting; verify the actual successor form before filing. The bank-account monitoring exemption does not create a crypto de-minimis exemption (DL 167/1990 art.4). Monitoring concerns holdings during the year, not only 31 December balances.
@@ -188,7 +190,7 @@ For tax payments, **D.Lgs. 471/1997 art.13(1)** starts at **25%** of unpaid tax,
 
 Italian-resident monitoring duties include beneficial owners under DL 167/1990 article4(1). The resident-intermediary exemption requires the statutory management/intervention and tax-withholding/substitute-tax conditions in article4(3); the fact that an exchange has an Italian name or registration does not prove the exemption. A foreign platform/self-custody position requires its own monitoring and value-tax review. A resident's final foreign wealth tax on the same crypto can credit the value tax only up to that tax. Do not net unrelated foreign income tax against it.
 
-Non-residents, residence changes, entities, CFC attribution, tax-treaty treatment and business exit/transfer-pricing rules need separate analysis. The scope limits of `it-cross-border` and `it-income-tax` apply. DAC8/CARF implementation is not used here to change the taxpayer's own reporting duty.
+Non-residents, residence changes, entities, CFC attribution, tax-treaty treatment and business exit/transfer-pricing rules need separate analysis. The scope limits of `it-cross-border` and `it-income-tax` apply. DAC8/CARF implementation is not used here to change the taxpayer's own reporting duty. Background: the EU DAC8 directive makes crypto-asset service providers report client transactions for automatic exchange between tax authorities, mirroring the OECD Crypto-Asset Reporting Framework, and Circolare 30/E (section 1.2, printed p.15) states that Member States had to transpose it by 31 December 2025. Expect the Agenzia to hold platform data to match against returns.
 
 ## Two worked examples that recompute
 
@@ -270,7 +272,7 @@ A resident holds 2 BTC on a foreign exchange all year.
 
 ### Referral gates
 
-- Crypto held in a business, by a company, or mining as an activity: business income rules, not this Guide.
+- Crypto held in a business, by a company, or mining as an activity: business income rules, not this skill.
 - Security tokens and derivatives on crypto (CFDs, futures): financial income rules.
 - Non-residents, people moving in or out of Italy in the year, or exit tax questions.
 - DeFi, liquidity pools, airdrops, hard forks and wrapping where no official guidance settles the treatment: refer to a commercialista.
@@ -307,6 +309,7 @@ Before finalising any Italy crypto tax computation:
 | DL 167/1990 art.5(2), monitoring penalties | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1990-06-28;167~art5!vig=2026-10-29 | 2026-10-29 |
 | DPR 322/1998 art.2, filing/90 days | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art2!vig=2026-10-29 | 2026-10-29 |
 | AdE Circolare 30/E/2023 pp.44–51, administered-regime discussion, monitoring/value-tax and NFT VAT sections; historical rates overridden | https://www.agenziaentrate.gov.it/portale/documents/20143/5589638/Circolare+criptoattivita+del+27+ottobre+2023.pdf | 2026-10-29 |
+| AdE Circolare 30/E/2023 section 1.2 (DAC8, p.15), NFT author income (p.48), mining VAT (p.87), LIFO in section 3.2.1 (p.55), checked by the reviewer | https://www.agenziaentrate.gov.it/portale/documents/20143/5589638/Circolare+criptoattivita+del+27+ottobre+2023.pdf | 2026-10-30 |
 | AdE Redditi PF 2026 Fascicolo 2,RTV-A,XI,RW (2025-income form only) | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 | 2026-10-29 |
 | D.Lgs. 117/2026 annex art.377 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377!vig=2026-10-29 | 2026-10-29 |
 | D.Lgs. 173/2024 annex art.102 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-11-05;173:1~art102!vig=2026-10-29 | 2026-10-29 |
@@ -314,10 +317,6 @@ Before finalising any Italy crypto tax computation:
 | D.Lgs. 471/1997 art.13 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-29 | 2026-10-29 |
 
 **Not yet confirmed:** transfers between own wallets, wrapping/unwrapping, hard-fork receipt/disposal, private/business mining income classification, DeFi lending, liquidity provision/LP tokens, airdrops and yield farming (their former proposed timing/treatments are not applied); NFT smart-contract royalties and current creator/VAT computations; exact application of the increased tax-haven value-tax rate to crypto; carry-back and computation of the separate pre-2023 transitional financial-loss bucket; crypto-specific application of general abuse-of-law, CFC, transfer-pricing, private-holder exit and wash-sale rules; Italian DAC8/CARF implementing provisions/operational dates; successor 2027 form fields, penalty provisions, interest and income-code cross-references. Prior undeclared holdings and the closed 2022 regularisation need specialist correction advice. These are explicit referrals, not default tax assumptions.
-
-## Disclaimer
-
-This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a commercialista, consulente del lavoro, or equivalent licensed practitioner in Italy) before filing or acting upon.
 
 > Contributed by OpenAccountants.
 

@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Transfer pricing in Italy (prezzi di trasferimento) v1.1
 
-Tax year **2026**. This Guide covers cross-border related-company pricing, optional documentation and penalty protection, country-by-country reporting (CbCR), low-value services and advance pricing agreements (APAs). It produces working papers for a qualified Italian tax adviser. It has no accountant attestation.
+Tax year **2026**. This skill covers cross-border related-company pricing, optional documentation and penalty protection, country-by-country reporting (CbCR), low-value services and advance pricing agreements (APAs). It produces working papers for a qualified Italian tax adviser. It has no accountant attestation.
 
 ## Who this applies to
 
@@ -26,7 +26,7 @@ Italian businesses transacting with non-resident companies that control them, ar
 
 The definition of participation includes **more than 50%** of capital, voting rights or profits, or dominant management influence through shareholding or contractual links. Do not infer independence from shareholding alone. Documentation is an optional burden to obtain penalty protection, not a filing obligation for every taxpayer ([DM 14 May 2018, art. 2](https://www.gazzettaufficiale.it/eli/id/2018/05/23/18A03544/sg); [Risposta 174/2024](https://www.agenziaentrate.gov.it/portale/documents/20143/6314639/Risposta+n.+174_2024.pdf/f2013dc1-acb4-2459-77e9-bac69cc74e74)).
 
-Tax year 2026 is distinct from **Redditi SC 2026**, which reports 2025 income. The form references below identify the published form actually read; the 2027 edition must be checked before filing 2026 income. This Guide does not calculate Pillar Two, hybrid mismatches, treaty relief or specialist financial/IP/restructuring benchmarks.
+Tax year 2026 is distinct from **Redditi SC 2026**, which reports 2025 income. The form references below identify the published form actually read; the 2027 edition must be checked before filing 2026 income. This skill uses the TUIR article numbers in force for 2026: the new income-tax code of D.Lgs. 117/2026 applies from **1 January 2027** ([annex art. 377](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377!vig=2026-10-29)). It does not calculate Pillar Two, hybrid mismatches (which have their own penalty-protection documentation under D.Lgs. 471/1997 art. 1(6-bis)), treaty relief or specialist financial/IP/restructuring benchmarks.
 
 ## Rates, bands and thresholds
 
@@ -59,6 +59,8 @@ Accurately delineate the transaction using contracts and actual conduct. Identif
 | Profit Split Method (PSM) | Yes |
 
 Choose the most appropriate method for the case, considering its strengths and weaknesses, suitability, available reliable information and comparability. **At equal reliability**, prefer a traditional transaction method (CUP, resale price or cost plus) over TNMM or profit split; prefer **CUP over any other method** at equal reliability. One method is sufficient. Another method requires proof that none of the five works reliably and that the alternative gives an independent-party result. A compliant taxpayer-selected method is also the basis of the authority's verification ([DM art. 4(1)–(6)](https://www.gazzettaufficiale.it/eli/id/2018/05/23/18A03544/sg)).
+
+The provvedimento defines the OECD Guidelines it refers to as the OECD Transfer Pricing Guidelines for Multinational Enterprises and Tax Administrations published on 10 July 2017 and later updates ([Provvedimento point 1.1(b)](https://www.agenziaentrate.gov.it/portale/documents/20143/2794495/Provv_prot_0360494_del_23112020.pdf/87a55907-b275-a3b5-1bc7-a6e316b70fef)).
 
 Apply the analysis transaction by transaction; aggregate closely linked/unitary transactions when they cannot reliably be evaluated separately (DM art. 5). A comparable arm's-length range is acceptable; an indicator outside the range can be adjusted into it, subject to the taxpayer's contrary evidence and the authority's reasoned evaluation (DM art. 6).
 
@@ -98,7 +100,7 @@ The provvedimento of 23 November 2020 sets the content of the two documents. It 
 | Submission on request | Within 20 days of the request; additional information within 7 working days, or a longer period for complex transactions (Provvedimento points 5.2.1–5.2.2; Circolare 15/E section 8.2 clarifies working days) |
 | Small and medium companies | A company with turnover (volume d'affari or ricavi) not above fifty million euro ("cinquanta milioni di euro"), and not controlling or controlled by a larger company, may skip updating the comparability data (points 2.1.1 to 2.1.5 of the Documentazione Nazionale) for the two following tax years, if the comparability analysis uses public sources and the items in point 2.1.2 do not change significantly (points 1.1(a) and 4.1) |
 
-Sources for 2.1 and 2.2: the provvedimento linked above; Risposta 174/2024: https://www.agenziaentrate.gov.it/portale/documents/20143/6314639/Risposta+n.+174_2024.pdf/f2013dc1-acb4-2459-77e9-bac69cc74e74
+Sources for the Master File and Local File tables: the provvedimento linked above; Risposta 174/2024: https://www.agenziaentrate.gov.it/portale/documents/20143/6314639/Risposta+n.+174_2024.pdf/f2013dc1-acb4-2459-77e9-bac69cc74e74
 
 ### Claiming penalty protection
 
@@ -107,7 +109,7 @@ Art. 1(6) D.Lgs. 471/1997 says the penalty for an unfaithful return does not app
 To benefit from penalty protection, ALL conditions must be met:
 
 1. Masterfile and Documentazione Nazionale prepared as the provvedimento of 23 November 2020 requires, complete and truthful (points 5.3.2 and 5.3.3).
-2. Electronic signature with time stamp by the date the tax return is filed. The statutory return deadline is the last day of the tenth month after period end, subject to applicable non-working-day extensions (DPR 322/1998 art. 2(2), (9)). Circolare 15/E says that for a return filed within ninety days of the deadline (late, or supplementary or replacing), the signature and time stamp must be applied by the date that return is actually filed.
+2. Electronic signature with time stamp by the date the tax return is filed. The statutory return deadline is the last day of the tenth month after period end, subject to applicable non-working-day extensions (DPR 322/1998 art. 2(2), (9)). A return filed within ninety days of the deadline is valid, with penalties for the delay; one filed later is treated as omitted (DPR 322/1998 art. 2(7)). Circolare 15/E says that for a return filed within ninety days of the deadline (late, or supplementary or replacing), the signature and time stamp must be applied by the date that return is actually filed.
 3. The documentation-possession notice given in the annual return. In the published Redditi SC 2026 form (2025 income), this is the "Possesso documentazione" box in row RS106; check its successor in the return for 2026 income. That tick is the notice the law requires. After the ninety days, Circolare 15/E allows a late notice through remissione in bonis only if the taxpayer has the substantive eligibility requirements; the documentation was complete, signed and time stamped within ninety days of the ordinary deadline; the breach has not already been established; and no access, inspection, audit or other administrative assessment activity of which the taxpayer has formal knowledge has begun. The notice must be given in a supplementary return by the deadline for the next year's return, with simultaneous payment of the minimum penalty in art. 11(1) D.Lgs. 471/1997. Apply Circolare 15/E section 9's conditions in full; ordinary information/document requests in cooperative compliance are not the disqualifying assessment activity described there.
 4. The documentation handed over during the audit, within 20 days of the request.
 
@@ -119,7 +121,7 @@ The documentation is annual, effective for its tax period, retained until the as
 
 In **Redditi SC 2026, section 17.17**, RS106 identifies A (controlled by a foreign company), B (controls a foreign company) or C (common control); the documentation-possession box supplies the notice; columns 5 and 6 report cumulative positive and negative TP income components. These are **2025-income form coordinates**, not confirmed 2027 coordinates ([AdE Redditi SC 2026 instructions](https://www.agenziaentrate.gov.it/portale/documents/20143/9764103/SC_istr_2026.pdf/51e462b7-2907-b093-4028-198631cbabdd?t=1772181405366)).
 
-File CbCR **electronically with the Agenzia delle Entrate**, as a separate annual report within **12 months** of the reporting period's last day. The Agency's [CbCR electronic-file/control guidance](https://www.agenziaentrate.gov.it/portale/schede/comunicazioni/rendicontazione-dati-nazionali-paese-per-paese/swcontrollo-cbcr-dati-nazionali) identifies the telematic document route; this Guide does not prescribe an unsupported alternative channel. The resident ultimate parent files when the previous-period consolidated-revenue threshold is met. If the ultimate parent is foreign, an Italian constituent/designated entity files only in the situations and with the surrogate/EU-filer exemptions described by the authority. Verify the responsible filer rather than requiring every Italian group member to file ([AdE CbCR guidance, updated 6 May 2026](https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/rendicontazione-dati-nazionali-paese-per-paese/scheda-informativa-rendicontazione-dati-nazionali)).
+File CbCR **electronically with the Agenzia delle Entrate**, as a separate annual report within **12 months** of the reporting period's last day. The Agency's [CbCR electronic-file/control guidance](https://www.agenziaentrate.gov.it/portale/schede/comunicazioni/rendicontazione-dati-nazionali-paese-per-paese/swcontrollo-cbcr-dati-nazionali) identifies the telematic document route; this skill does not prescribe an unsupported alternative channel. The resident ultimate parent files when the previous-period consolidated-revenue threshold is met. If the ultimate parent is foreign, an Italian constituent/designated entity files only in the situations and with the surrogate/EU-filer exemptions described by the authority. Verify the responsible filer rather than requiring every Italian group member to file ([AdE CbCR guidance, updated 6 May 2026](https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/rendicontazione-dati-nazionali-paese-per-paese/scheda-informativa-rendicontazione-dati-nazionali)).
 
 ## Penalties and interest
 
@@ -153,7 +155,7 @@ With suitable documentation delivered and the required notice, article 1(6) remo
 
 An APA is governed by **article 31-ter**, not article 31-bis (exchange of information). During its validity, audit powers address matters outside the agreement; material changes to facts or law affect its continued operation (paragraphs 2 and 5). The competent office, checking procedures and changed-circumstance monitoring are governed by the director's implementation provision (paragraph 6). An APA/MAP, downward relief under article 31-quater, PE attribution, exit tax and specialist financing/IP/restructuring analysis require a tax adviser.
 
-Reconcile TP support to the books and the corporate return. Related bookkeeping and financial-statement work is in `italy-bookkeeping` and `italy-financial-statements`; IRES and IRAP computations are in `it-ires-corporate-tax` and `it-irap`. This Guide does not derive VAT/customs adjustments from an income-tax adjustment; review those separately with `italy-vat-return`. CbCR supplies tax authorities with information for cross-border risk assessment (AdE CbCR guidance).
+Reconcile TP support to the books and the corporate return. Related bookkeeping and financial-statement work is in `italy-bookkeeping` and `italy-financial-statements`; IRES and IRAP computations are in `it-ires-corporate-tax` and `it-irap`. This skill does not derive VAT/customs adjustments from an income-tax adjustment; review those separately with `italy-vat-return`. CbCR supplies tax authorities with information for cross-border risk assessment (AdE CbCR guidance).
 
 ## Two worked examples that recompute
 
@@ -218,15 +220,12 @@ Refer an ongoing audit or adjustment notice to a tax adviser/litigator. APA/MAP 
 | DPR 322/1998 art. 2 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art2!vig=2026-10-29 | 2026-10-29 |
 | D.Lgs. 471/1997 art. 1 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-29 | 2026-10-29 |
 | D.Lgs. 87/2024 art. 5(1) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-06-14;87~art5!vig=2026-10-29 | 2026-10-29 |
+| D.Lgs. 117/2026, annex art. 377 (new TUIR from 1 January 2027) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377!vig=2026-10-29 | 2026-10-30 |
 | D.Lgs. 173/2024, annex art. 102 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-11-05;173:1~art102!vig=2026-10-29 | 2026-10-29 |
 | AdE Redditi SC 2026 instructions, section 17.17 (2025 income) | https://www.agenziaentrate.gov.it/portale/documents/20143/9764103/SC_istr_2026.pdf/51e462b7-2907-b093-4028-198631cbabdd?t=1772181405366 | 2026-10-29 |
 | AdE CbCR electronic-file/control guidance | https://www.agenziaentrate.gov.it/portale/schede/comunicazioni/rendicontazione-dati-nazionali-paese-per-paese/swcontrollo-cbcr-dati-nazionali | 2026-10-29 |
 
-**Not yet confirmed:** the return coordinates and successor statutory cross-references for 2026 income filed in 2027; the precise violation-date treatment for that filing; current tax-interest rates; CbCR penalties; a general or interest-rate safe harbour (the legacy claims of absence are not asserted); APA processing time (the old 12–24-month estimate is unverified), unilateral application fees beyond the quoted statutory schedule, and annual APA compliance-report requirements under the implementation provision; TP-specific VAT/customs valuation effects and financial-statement related-party disclosure rules; operational Pillar Two dates and hybrid-mismatch requirements; detailed downward-adjustment/MAP/PE/exit-tax procedures; successor TUIR article numbers and 2027 application. These topics are retained as explicit boundaries, not computation rules. No old executable example was removed: the prior Guide had none.
-
-## Disclaimer
-
-This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+**Not yet confirmed:** the return coordinates and successor statutory cross-references for 2026 income filed in 2027; the precise violation-date treatment for that filing; current tax-interest rates; CbCR penalties; a general or interest-rate safe harbour (the legacy claims of absence are not asserted); APA processing time (the old 12–24-month estimate is unverified), unilateral application fees beyond the quoted statutory schedule, and annual APA compliance-report requirements under the implementation provision; TP-specific VAT/customs valuation effects and financial-statement related-party disclosure rules; operational Pillar Two dates and hybrid-mismatch requirements; detailed downward-adjustment/MAP/PE/exit-tax procedures; successor TUIR article numbers that apply from 2027. These topics are retained as explicit boundaries, not computation rules. No old executable example was removed: the prior skill had none.
 
 > Contributed by OpenAccountants.
 

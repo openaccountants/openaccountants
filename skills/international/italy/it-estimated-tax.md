@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Italian income tax payments on account (acconti) v2.1
 
-Tax year **2026**. This Guide calculates advances paid during 2026, credited against 2026 tax declared in 2027. The published **Redditi PF 2026** instructions report 2025 income and expressly instruct how to calculate **2026 advances**. Return-year and income-year references must not be interchanged. Outputs are working papers for a commercialista.
+Tax year **2026**. This skill calculates advances paid during 2026, credited against 2026 tax declared in 2027. The published **Redditi PF 2026** instructions report 2025 income and expressly instruct how to calculate **2026 advances**. Return-year and income-year references must not be interchanged. Outputs are working papers for a commercialista.
 
 ## Who this applies to
 
@@ -37,10 +37,7 @@ This computation excludes non-resident payment procedures, foreign-tax-credit ti
 | Second instalment, by 30 November | 60% | "restante 60%" | 2026 | [AdE IRPEF payment guidance](https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef) |
 | ISA taxpayers and forfettari: one payment by 30 November if the total is not above; otherwise two equal instalments on the same dates | EUR 206 | "non supera 206 euro" | 2026 | [AdE IRPEF payment guidance](https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef) |
 
-
 **Return rules, surcharge, instalment interest and offsets (Redditi PF 2026, Fascicolo 1)**
-
-
 
 | Rule | Value | Note (verbatim) | Period | Official source |
 | --- | --- | --- | --- | --- |
@@ -53,8 +50,6 @@ This computation excludes non-resident payment procedures, foreign-tax-credit ti
 
 **IRAP acconti (2026 IRAP instructions)**
 
-
-
 | Rule | Value | Note (verbatim) | Period | Official source |
 | --- | --- | --- | --- | --- |
 | Acconto on the historical method, share of last year's IRAP | 100% | "nella misura pari al 100 per cento" | 2026 | [IRAP 2026 instructions, Acconti / DPR 435 art. 17](https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414) |
@@ -66,10 +61,7 @@ This computation excludes non-resident payment procedures, foreign-tax-credit ti
 
 Companies ordinarily pay the balance and first IRAP advance by the last day of the sixth month after year end, with the second in the eleventh month. Late statutory accounts-approval cases have the distinct first-payment rules of DPR 435/2001 art. 17(1). Check the IRAP recomputations and specialist exclusions before using the ordinary historical base (`it-irap`).
 
-
 **INPS gestione separata acconti (Redditi PF 2026, Fascicolo 2, Appendice)**
-
-
 
 | Rule | Value | Note (verbatim) | Period | Official source |
 | --- | --- | --- | --- | --- |
@@ -78,7 +70,6 @@ Companies ordinarily pay the balance and first IRAP advance by the last day of t
 | Item | Rate and conditions | Period | Official source |
 | --- | --- | --- | --- |
 | Legal interest for late tax | **1.60% a year from 1 January 2026**; daily calculation, separate from 4% instalment interest | 2026 only | [DM 10 December 2025 art.1](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticoloDefault/originario?atto.dataPubblicazioneGazzetta=2025-12-13&atto.codiceRedazionale=25A06705&atto.tipoProvvedimento=DECRETO) |
-
 
 ## The base
 
@@ -103,7 +94,7 @@ Companies ordinarily pay the balance and first IRAP advance by the last day of t
 - **IRAP** (partnerships, companies; individuals no longer pay it). See the table below and `it-irap`.
 - **INPS gestione separata** (professionals without their own fund). Two acconti of equal amount on the IRPEF acconto dates. Total: 2026 rates on the share of 2025 professional income in the rates table, within the 2026 massimale. They go in the INPS section of the F24 (causale PXX or P10). Rates are in `it-inps-contributions`. Artigiani and commercianti pay acconti on income above the minimale on the same dates: see `it-inps-artigiani-commercianti`.
 
-Use the verified regime, not the bank description, to select the base. An F24 tax advance is a payment towards the taxpayer's liability; classification is a working-paper convention, not evidence that the amount is a deductible business expense.
+Use the confirmed regime, not the bank description, to select the base. An F24 tax advance is a payment towards the taxpayer's liability; classification is a working-paper convention, not evidence that the amount is a deductible business expense.
 
 ## Deadlines and filing
 
@@ -232,7 +223,7 @@ The penalty is reduced if the client pays of their own accord (D.Lgs. 472/1997 a
 
 ## Cross-border points
 
-Foreign-source income and foreign-tax-credit timing, non-resident methods of paying, and a move into/out of Italy need the dedicated residence and cross-border analysis (`it-cross-border`, `it-income-tax`). This Guide does not conclude that residents and non-residents have the same payment procedure. Do not classify an overseas tax payment as Italian acconto from its bank text.
+Foreign-source income and foreign-tax-credit timing, non-resident methods of paying, and a move into/out of Italy need the dedicated residence and cross-border analysis (`it-cross-border`, `it-income-tax`). This skill does not conclude that residents and non-residents have the same payment procedure. Do not classify an overseas tax payment as Italian acconto from its bank text.
 
 ## Two worked examples that recompute
 
@@ -410,13 +401,7 @@ Before delivering output, verify:
 | D.Lgs. 33/2025 annex art. 243 (application from 2027) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2025-03-24;33:1~art243!vig=2026-10-29 | 2026-10-29 |
 | Law 190/2014 art. 1(64), forfettario substitute tax and IRPEF payment rules | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-29 | 2026-10-29 |
 
-**Not yet confirmed:** taxpayer-specific extensions; detailed addizionale computations/local rates; foreign-credit timing and non-resident payment mechanics; regime-transition bases; post-notice/audit-stage voluntary-correction fractions and successor rules for regularisation in 2027; any 2027 interest rate. The bank matching windows are heuristic cues only. No prior executable check was removed: the earlier Guide had none; all six prose examples and seven qualitative scenario checks are retained.
-
-## Disclaimer
-
-This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a commercialista or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date version of this Guide is maintained at openaccountants.com.
+**Not yet confirmed:** taxpayer-specific extensions; detailed addizionale computations/local rates; foreign-credit timing and non-resident payment mechanics; regime-transition bases; post-notice/audit-stage voluntary-correction fractions and successor rules for regularisation in 2027; any 2027 interest rate. The bank matching windows are heuristic cues only. No prior executable check was removed: the earlier skill had none; all six prose examples and seven qualitative scenario checks are retained.
 
 > Contributed by OpenAccountants.
 
