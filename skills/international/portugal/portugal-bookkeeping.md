@@ -616,8 +616,8 @@ Para o tratamento do regime de Residente Não Habitual (RNH) e do Incentivo Fisc
 - **Modelo 22**: Até ao último dia de maio (CIRC art. 120.º, n.º 1); período diferente do ano civil: até ao último dia do 5.º mês após o fim do período (n.º 2)
 - **Resultado fiscal e Quadro 07**: O resultado fiscal parte do resultado contabilístico (conta 811/818) com as correções fiscais no Quadro 07 da Modelo 22
 - **Principais correções fiscais**: Tributação autónoma, gastos não dedutíveis do art. 23.º-A, depreciações acima das quotas máximas, benefícios fiscais (SIFIDE II, RFAI, DLRR). Ver pt-corporate-tax
-- **Taxa de IRC geral**: 19 % nos períodos de tributação iniciados em 2026 (20 % em 2025, 18 % em 2027, 17 % a partir de 2028)  _(artigo 87.º, n.º 1, do CIRC; artigo 3.º da Lei n.º 64/2025; ver a skill pt-corporate-tax)_
-- **Taxa reduzida PME primeiros 50.000 EUR**: 15 % em 2026 (16 % em 2025) sobre os primeiros 50.000 EUR de matéria coletável de PME e Small Mid Cap; o excedente paga a taxa geral; derrama estadual sobre a parte do lucro tributável acima de 1.500.000 EUR  _(artigos 87.º, n.º 2, e 87.º-A do CIRC; ver a skill pt-corporate-tax)_
+- **Taxa de IRC geral**: 19 % nos períodos de tributação iniciados em 2026 (18 % em 2027, 17 % a partir de 2028)  _(artigo 87.º, n.º 1, do CIRC; artigo 3.º da Lei n.º 64/2025; ver a skill pt-corporate-tax)_
+- **Taxa reduzida PME primeiros 50.000 EUR**: 15 % em 2026 sobre os primeiros 50.000 EUR de matéria coletável de PME e Small Mid Cap; o excedente paga a taxa geral; derrama estadual sobre a parte do lucro tributável acima de 1.500.000 EUR (art. 87.º-A, n.º 1)  _(artigos 87.º, n.º 2, e 87.º-A do CIRC; ver a skill pt-corporate-tax)_
 
 Utilize a skill pt-corporate-tax para o apuramento do IRC e a skill pt-income-tax para o IRS da categoria B.
 
@@ -626,8 +626,8 @@ Utilize a skill pt-corporate-tax para o apuramento do IRC e a skill pt-income-ta
 - **Contas do IVA**: Conta 243 do Código de Contas, subcontas 2431 a 2439
 - **Periodicidade mensal vs trimestral**: Declaração mensal se o volume de negócios do ano civil anterior for igual ou superior a 650.000 EUR; trimestral se inferior; entrega até ao dia 20 do 2.º mês seguinte ao período (CIVA art. 41.º, n.º 1)
 - **Taxas no continente**: 6 % (Lista I), 13 % (Lista II), 23 % (restantes) (CIVA art. 18.º, n.º 1)
-- **Taxas nos Açores**: 4 % / 9 % / 16 % (ver portugal-vat-return)
-- **Taxas na Madeira**: 4 % / 12 % / 22 % (ver portugal-vat-return)
+- **Taxas nos Açores**: 4 % / 9 % / 16 %, fixadas pela Região ao abrigo do CIVA art. 18.º, n.º 3 (AT, Ofício Circulado 25045/2024; ver portugal-vat-return)
+- **Taxas na Madeira**: 4 % / 12 % / 22 % (AT, Ofício Circulado 25045/2024; ver portugal-vat-return)
 - **Conservação dos registos de IVA**: 10 anos civis subsequentes (CIVA art. 52.º, n.º 1)
 
 Utilize a skill portugal-vat-return para detalhes da submissão.
@@ -643,7 +643,7 @@ Utilize a skill portugal-vat-return para detalhes da submissão.
 
 ### Segurança Social
 
-- **Contribuição da entidade empregadora**: 23,75 % da remuneração ilíquida (Código Contributivo, art. 53.º; ver pt-social-contributions)
+- **Contribuição da entidade empregadora**: 23,75 % da remuneração ilíquida, no regime geral (Código Contributivo, art. 53.º; ISS, Guia Prático de Inscrição, Vinculação e Cessação de Atividade de Trabalhador por Conta de Outrem; ver pt-social-contributions)
 - **Contribuição do trabalhador**: 11 % da remuneração ilíquida (idem)
 - **Trabalhador independente**: 21,4 % do rendimento relevante; 25,2 % para empresários em nome individual e titulares de EIRL e respetivos cônjuges. O rendimento relevante é 70 % do valor das prestações de serviços e 20 % dos rendimentos da venda de bens e dos serviços de hotelaria, restauração e bebidas (Segurança Social, Guia Prático do Trabalhador Independente, 2026)
 - **Registo contabilístico**: Registado na conta 245 até ao pagamento; o encargo da entidade empregadora vai a 635
@@ -674,6 +674,7 @@ Utilize a skill pt-social-contributions para detalhes.
 | CIRC art. 34.º, depreciações não dedutíveis | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc34.aspx | 2026-10-30 |
 | CIRC art. 45.º-A, goodwill em 15 períodos (Lei 82/2023) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc45a.aspx | 2026-10-30 |
 | CIRC art. 87.º, taxas de IRC 2026 (Lei 64/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx | 2026-10-30 |
+| CIRC art. 87.º-A, derrama estadual acima de 1.500.000 EUR | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx | 2026-10-30 |
 | CIRC art. 88.º, tributação autónoma | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx | 2026-10-30 |
 | CIRC arts. 120.º e 121.º, Modelo 22 e IES | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx | 2026-10-30 |
 | CIRC art. 123.º, obrigações contabilísticas | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc123.aspx | 2026-10-30 |
@@ -693,8 +694,10 @@ Utilize a skill pt-social-contributions para detalhes.
 | Portaria 467/2010, limites de custo das viaturas | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_467-2010.pdf | 2026-10-30 |
 | Estatuto da Ordem dos Contabilistas Certificados (texto da OCC, 2024), art. 10.º | https://www.occ.pt/sites/default/files/public/2024-09/Estatuto_2024.pdf | 2026-10-30 |
 | Segurança Social, Guia Prático, Trabalhadores Independentes (21,4 %, 25,2 %, 70 %/20 %) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-30 |
+| Segurança Social, Guia Prático, Inscrição, Vinculação e Cessação de Atividade de Trabalhador por Conta de Outrem (19 May 2026: 23,75 % / 11 %) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xlxpq00d9kl2y0p3inyft | 2026-10-30 |
+| AT, Ofício Circulado 25045/2024 (taxas do IVA nos Açores e na Madeira) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_25045_2024.pdf | 2026-10-30 |
 
-Not yet confirmed: the employer and employee rates (23,75 % / 11 %), the Azores and Madeira VAT rates and the derrama estadual threshold are taken from the reviewed sibling skills pt-social-contributions, portugal-vat-return and pt-corporate-tax, not re-read here; the CAE revision now in force (the old version said Rev. 3; DL 28/2019 still cites Rev. 3); the AT copy of DL 28/2019 shows amendments only up to DL 48/2020, so the EUR 50.000 certified-software threshold was not checked against later amendments; the old "anexo NC-ME com máximo de 15 rubricas" claim (no such limit found in the NC-ME or DL 158/2009, art. 11.º); account 6811 label (blank in the Portaria text extracted); the tax treatment of goodwill recognised before 2024 (the old version said 20 years / 5%; the earlier wording of CIRC art. 45.º-A was not read); the bank-by-bank statement export formats (CSV/OFX per bank) from the old version, which have no official source.
+Not yet confirmed: whether the Azores 2026 regional budget changed the Azores VAT rates (the AT circular is dated 6 December 2024; the Azores budget was not read); the CAE revision now in force (the old version said Rev. 3; DL 28/2019 still cites Rev. 3); the old "anexo NC-ME com máximo de 15 rubricas" claim (no such limit found in the NC-ME or DL 158/2009, art. 11.º); account 6811 label (blank in the Portaria text extracted); the tax treatment of goodwill recognised before 2024 (the old version said 20 years / 5%; the earlier wording of CIRC art. 45.º-A was not read); the bank-by-bank statement export formats (CSV/OFX per bank) from the old version, which have no official source.
 
 ## Aviso Legal
 
