@@ -2,7 +2,7 @@
 
 **2026 writer draft. Whole-country independent review and stated source/procedure gaps remain open.**
 
-Guide SHA256: `89c0f0e6163a7deeaa1a3a327019a0484627f68af83eba9d8a50396e2da6a8fe`. JSON retains exact original-language quotations, full context, official URL, read date and source hash. A reviewer must check actual Guide application and every condition, not quote presence alone.
+Guide SHA256: `8d59ab9a146484b9453d79375843abfa4b547bf512f8252adf18531f124fdc84`. JSON retains exact original-language quotations, full context, official URL, read date and source hash. A reviewer must check actual Guide application and every condition, not quote presence alone.
 
 | ID | Rule/figure or source-rule opening | Guide section | Act/article and official source | Short original-language quote | Read |
 |---|---|---|---|---|---|
@@ -59,7 +59,7 @@ Guide SHA256: `89c0f0e6163a7deeaa1a3a327019a0484627f68af83eba9d8a50396e2da6a8fe`
 
 ## Removed and why
 
-Original 3272 bytes; current 12850 bytes; more than25%shorter: False.
+Original 3272 bytes; current 12875 bytes; more than25%shorter: False.
 - Unverified PwC/secondary-source references replaced by fetched actual primary law/authority sources; original copy remains archived.
 - Formation numerical guesses and most-common/suitability generalisations corrected or precisely retained as unconfirmed; overview blanket population/period claims corrected, not silently discarded.
 - Old boilerplate headings consolidated into canonical sections; stamped attribution/CTA/disclaimer retained exactly.

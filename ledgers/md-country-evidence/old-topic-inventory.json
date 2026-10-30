@@ -10,7 +10,7 @@
       "destination": [
         "# Moldova tax pack"
       ],
-      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim."
     },
     {
       "id": "README-OLD-002",
@@ -21,7 +21,7 @@
       "destination": [
         "Owner and writer paragraph"
       ],
-      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim."
     },
     {
       "id": "README-OLD-003",
@@ -32,7 +32,7 @@
       "destination": [
         "Domains table"
       ],
-      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim."
     },
     {
       "id": "README-OLD-004",
@@ -43,7 +43,7 @@
       "destination": [
         "Domains table"
       ],
-      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim."
     },
     {
       "id": "README-OLD-005",
@@ -54,7 +54,7 @@
       "destination": [
         "Scope/gaps paragraph; each partial domain and Guide Sources"
       ],
-      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim."
     },
     {
       "id": "README-OLD-006",
@@ -65,7 +65,7 @@
       "destination": [
         "Official starting sources; current Code correction; preserved24October research link"
       ],
-      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim."
     },
     {
       "id": "README-OLD-007",
@@ -76,7 +76,7 @@
       "destination": [
         "Official starting sources; current Code correction; preserved24October research link"
       ],
-      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim."
     },
     {
       "id": "README-OLD-008",
@@ -87,7 +87,7 @@
       "destination": [
         "Official starting sources; current Code correction; preserved24October research link"
       ],
-      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim."
     },
     {
       "id": "md-company-formation-OLD-001",
@@ -7393,8 +7393,11 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "455c96fcf36df1e139bed4ed54ad89992c7cf1c259623f81243c258966791229",
       "original_text": "# Moldova Tax Optimization",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Sources"
+      ],
+      "status": "Unverifiedresearch-verified/secondarysource wrapper corrected todocumentedwriterdraft;oldsourceprovenance preserved inarchive"
     },
     {
       "id": "moldova-tax-optimization-OLD-002",
@@ -7402,8 +7405,11 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "384768b8d424e933a377277cf7dbaa0cb44d6ecefcbf7d12da48dbc3372cba45",
       "original_text": "## Moldova Tax Optimization Skill v0.1",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Sources"
+      ],
+      "status": "Unverifiedresearch-verified/secondarysource wrapper corrected todocumentedwriterdraft;oldsourceprovenance preserved inarchive"
     },
     {
       "id": "moldova-tax-optimization-OLD-003",
@@ -7411,8 +7417,11 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "baa550b2b508b375c78ebb4a3343a14086cfb515885d3e0f08694aced7f13189",
       "original_text": "**Tier 2 — research-verified. Sources: SFS (State Tax Service), PwC Moldova, Intelcont/Ducont, Moldova IT Park. Figures must agree with `moldova-income-tax.md` / `moldova-social-contributions.md`. NOT yet signed off by a Moldovan tax adviser. Aggressive positions are never advised; every suggestion must be reviewed.**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Sources"
+      ],
+      "status": "Unverifiedresearch-verified/secondarysource wrapper corrected todocumentedwriterdraft;oldsourceprovenance preserved inarchive"
     },
     {
       "id": "moldova-tax-optimization-OLD-004",
@@ -7420,8 +7429,11 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "7006ff302d793189d56218439b9fc0b23dd217ba27079775698666ddbe0ec47e",
       "original_text": "## Section 1 -- Quick Reference",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "Who this applies to"
+      ],
+      "status": "Headlinerates/currency/eligibility retained withactualbases,minimum andscope"
     },
     {
       "id": "moldova-tax-optimization-OLD-005",
@@ -7429,8 +7441,11 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "4529ace52bf1243db200af35c1f4967e0331f8ef42788298ae686afad15cfa17",
       "original_text": "**Quick Reference**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "Who this applies to"
+      ],
+      "status": "Headlinerates/currency/eligibility retained withactualbases,minimum andscope"
     },
     {
       "id": "moldova-tax-optimization-OLD-006",
@@ -7438,8 +7453,11 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "d1df79114176ecb11e9a2c0add6f307b030e242b96334661283d516deb6ef215",
       "original_text": "| Field | Value |\n| --- | --- |\n| Country | Republic of Moldova |\n| Currency | MDL (leu) |\n| Headline levers | **IT Park 7% of turnover**; 4% small-business turnover; 6% dividends |\n| Standard income/corporate tax | 12% |\n| Anti-avoidance | IT Park ≥70% eligible-revenue test; substance |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "Who this applies to"
+      ],
+      "status": "Headlinerates/currency/eligibility retained withactualbases,minimum andscope"
     },
     {
       "id": "moldova-tax-optimization-OLD-007",
@@ -7447,8 +7465,12 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "3b43313a61faaf32689e041d4ef2045cd94180606fe7ed0976a747e1d6eb7cbc",
       "original_text": "> **Moldova's headline is the IT PARK 7% regime:** a single **7% tax on turnover** (excl. VAT) replaces corporate tax, income tax, social contributions and several others — for IT businesses. Savings can reach 20–50% of the total tax burden.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "The base: Compare the4%SME andordinarysystems",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Unsupported20–50%saving removed as unverified;actualassumedcomparisonandcost/eligibilityscope supplied;originalclaim preserved inledger/archive"
     },
     {
       "id": "moldova-tax-optimization-OLD-008",
@@ -7456,8 +7478,13 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "444eede789991771288fe7e73209f3ae28fe597289923739e540474ec644d4ad",
       "original_text": "## Section 2 -- IT Park (7% of turnover)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "The base: EstablishIT-parkstatus andrealeligibleactivity",
+        "The base: Calculate single tax andcharges it doesnotreplace",
+        "Deadlines and filing"
+      ],
+      "status": "Parklegalstatus,fullactivityconditions,70%cumulative/two-monthrule,minimum,count,composition andimplementationgaps supplied;no blanketnon-ITban"
     },
     {
       "id": "moldova-tax-optimization-OLD-009",
@@ -7465,8 +7492,13 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "23786372c3bcc474fcd6845024f259ea4a3be64d8687b6ed0b14fb984b46c38e",
       "original_text": "**IT Park (7% of turnover)**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "The base: EstablishIT-parkstatus andrealeligibleactivity",
+        "The base: Calculate single tax andcharges it doesnotreplace",
+        "Deadlines and filing"
+      ],
+      "status": "Parklegalstatus,fullactivityconditions,70%cumulative/two-monthrule,minimum,count,composition andimplementationgaps supplied;no blanketnon-ITban"
     },
     {
       "id": "moldova-tax-optimization-OLD-010",
@@ -7474,8 +7506,13 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "5a32f8a97a37a313a69492c8e73f6ed954c46fd6ec09a4cdc7cd1a2a4f172b9b",
       "original_text": "| Feature | Detail |\n| --- | --- |\n| Tax | **7% of turnover** (excl. VAT) — replaces CIT, employee income tax, social/health contributions, and more |\n| Legal form | **SRL (LLC)** or **ÎI (sole proprietor)** |\n| Eligibility | **≥ 70% of revenue** from eligible IT activities (software development, IT services, etc.) |\n| Best for | Software/IT firms with significant payroll (the 7% covers payroll taxes too) |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "The base: EstablishIT-parkstatus andrealeligibleactivity",
+        "The base: Calculate single tax andcharges it doesnotreplace",
+        "Deadlines and filing"
+      ],
+      "status": "Parklegalstatus,fullactivityconditions,70%cumulative/two-monthrule,minimum,count,composition andimplementationgaps supplied;no blanketnon-ITban"
     },
     {
       "id": "moldova-tax-optimization-OLD-011",
@@ -7483,8 +7520,13 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "f9bb061d3838074f5ef57cc0e341609840ab0acd06e2fc2444538aa7f548b8ce",
       "original_text": "(Moldova IT Park; Intelcont) **[RESEARCH GAP — reviewer to confirm the current eligible-activity list and any minimum monthly tax per employee.]**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Rates, bands and thresholds",
+        "The base: EstablishIT-parkstatus andrealeligibleactivity",
+        "The base: Calculate single tax andcharges it doesnotreplace",
+        "Deadlines and filing"
+      ],
+      "status": "Parklegalstatus,fullactivityconditions,70%cumulative/two-monthrule,minimum,count,composition andimplementationgaps supplied;no blanketnon-ITban"
     },
     {
       "id": "moldova-tax-optimization-OLD-012",
@@ -7492,8 +7534,12 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "73f09ab0e04a059e221429ff4d9b085d29d5043cb96350d2d476abb3ffd1ee2a",
       "original_text": "## Section 3 -- 4% Small-Business Turnover Regime",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Compare the4%SME andordinarysystems",
+        "Rates, bands and thresholds",
+        "Two worked examples that recompute"
+      ],
+      "status": "SMEeligibility/election/currentdates/base corrected;notallnonVATbusinesses orindividualentrepreneurs;no genericbest-casepromise"
     },
     {
       "id": "moldova-tax-optimization-OLD-013",
@@ -7501,8 +7547,12 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "3dc8b92adb96dea87450961cd58305b9e831de048ed4b6307f3ecef3d5f7be90",
       "original_text": "- **4% small-business turnover regime** — SMEs not registered for VAT that meet the criteria may opt for a 4% tax on aggregate income (turnover) — simple, no profit computation. Best for low-expense small businesses below the VAT threshold.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Compare the4%SME andordinarysystems",
+        "Rates, bands and thresholds",
+        "Two worked examples that recompute"
+      ],
+      "status": "SMEeligibility/election/currentdates/base corrected;notallnonVATbusinesses orindividualentrepreneurs;no genericbest-casepromise"
     },
     {
       "id": "moldova-tax-optimization-OLD-014",
@@ -7510,8 +7560,12 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "73e5fdf0417e0fddfc0c61a4caeecaade01feeaef18567868cd917e544e20c93",
       "original_text": "## Section 4 -- Standard System & Extraction (SRL / ÎI)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Two worked examples that recompute",
+        "Sources"
+      ],
+      "status": "Ordinary12%and6% topics retained withcompanytax,lawfulnetprofit,recipient andhistoricconditions;no automaticdividend-for-salary orbestentitypromise"
     },
     {
       "id": "moldova-tax-optimization-OLD-015",
@@ -7519,8 +7573,12 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "91436d35b03c07507eb925d601001234e1c236d5edab405c21378d51ec476d8c",
       "original_text": "**Standard System & Extraction (SRL / ÎI)**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Two worked examples that recompute",
+        "Sources"
+      ],
+      "status": "Ordinary12%and6% topics retained withcompanytax,lawfulnetprofit,recipient andhistoricconditions;no automaticdividend-for-salary orbestentitypromise"
     },
     {
       "id": "moldova-tax-optimization-OLD-016",
@@ -7528,8 +7586,12 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "e7581eb5f517914b04bdbeed47f2116553dc985ea0b0ff3eb73f85daff206105",
       "original_text": "| Item | Rate |\n| --- | --- |\n| Corporate / personal income tax | **12%** |\n| Dividends to founders | **6%** |\n| Sole proprietor (ÎI) | 12% on income; simplest for solo freelancers |\n| SRL (LLC) | 12% CIT; recommended for employees/international corporate clients |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Two worked examples that recompute",
+        "Sources"
+      ],
+      "status": "Ordinary12%and6% topics retained withcompanytax,lawfulnetprofit,recipient andhistoricconditions;no automaticdividend-for-salary orbestentitypromise"
     },
     {
       "id": "moldova-tax-optimization-OLD-017",
@@ -7537,8 +7599,12 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "605025fb1a339dd7cf2485304969e2c0dd6a64d6db087a5e22242ccfc0856b39",
       "original_text": "- **Dividend vs salary extraction** — Owner can withdraw profit annually as 6% dividends instead of salary — model salary-vs-dividend with the contribution effect.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Two worked examples that recompute",
+        "Sources"
+      ],
+      "status": "Ordinary12%and6% topics retained withcompanytax,lawfulnetprofit,recipient andhistoricconditions;no automaticdividend-for-salary orbestentitypromise"
     },
     {
       "id": "moldova-tax-optimization-OLD-018",
@@ -7546,8 +7612,13 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "4245f4c16b8d0a9958dd82193e2dc4ee62e894d18476f27d120bb94343870ccd",
       "original_text": "## Section 5 -- Red Lines (do not cross)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: EstablishIT-parkstatus andrealeligibleactivity",
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Penalties and interest",
+        "Sources"
+      ],
+      "status": "Redlinesreconciled toactualstatus/taxbase/reclassificationrules;nonITmix andsingleclientblanketclaims corrected;fullcontext retained"
     },
     {
       "id": "moldova-tax-optimization-OLD-019",
@@ -7555,8 +7626,13 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "608a4bba0698fcac8a6149e140af9008e31b3fe0026375481e3e0eab3f731ff7",
       "original_text": "- **IT Park 70% test** — At least 70% of revenue must be genuine eligible IT activity — non-IT income placed in an IT Park entity is a misuse. AUDIT FLASH POINT.\n- **Substance & genuine self-employment** — Single-client ÎI under employer-like control → reclassification.\n- **Non-eligible income routing** — Don't route non-eligible income through the 4%/7% regimes.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: EstablishIT-parkstatus andrealeligibleactivity",
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Penalties and interest",
+        "Sources"
+      ],
+      "status": "Redlinesreconciled toactualstatus/taxbase/reclassificationrules;nonITmix andsingleclientblanketclaims corrected;fullcontext retained"
     },
     {
       "id": "moldova-tax-optimization-OLD-020",
@@ -7564,8 +7640,13 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "065bc830c7c4c824c974319e7bef09035edb8236ad0ff9abc64c99122bef2183",
       "original_text": "## PROHIBITIONS",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: EstablishIT-parkstatus andrealeligibleactivity",
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Penalties and interest",
+        "Sources"
+      ],
+      "status": "Redlinesreconciled toactualstatus/taxbase/reclassificationrules;nonITmix andsingleclientblanketclaims corrected;fullcontext retained"
     },
     {
       "id": "moldova-tax-optimization-OLD-021",
@@ -7573,8 +7654,13 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "5dbf8b9700af83755c245181821448a674d439754432c1d164ed5c025c6d6e6a",
       "original_text": "- **Non-IT revenue in IT Park** — NEVER place non-IT revenue in the IT Park 7% regime to dodge tax (70% eligibility test).\n- **4% regime for VAT-registered business** — NEVER present the 4% regime for a VAT-registered business — it is for non-VAT SMEs.\n- **Single-client work as safe self-employment** — NEVER present single-client work as safe self-employment.\n- **Contradicting rate skills** — NEVER contradict the rates in `moldova-income-tax.md` / `moldova-social-contributions.md`.\n- **Research gap figures as confirmed** — NEVER present [RESEARCH GAP] figures as confirmed, nor optimisation as definitive advice — route to a licensed Moldovan tax adviser.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: EstablishIT-parkstatus andrealeligibleactivity",
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Penalties and interest",
+        "Sources"
+      ],
+      "status": "Redlinesreconciled toactualstatus/taxbase/reclassificationrules;nonITmix andsingleclientblanketclaims corrected;fullcontext retained"
     },
     {
       "id": "moldova-tax-optimization-OLD-022",
@@ -7582,8 +7668,11 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "694d80a0c515e397a6f7fffe8d899d7eff3724673440d179a00c2995d439b15a",
       "original_text": "## Disclaimer",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Duplicativeboilerplate/unverifiedalways-current/loginclaims consolidated;draft/scope andexactstamped general-reference disclaimer retained"
     },
     {
       "id": "moldova-tax-optimization-OLD-023",
@@ -7591,8 +7680,11 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "dc4f55c7f39a5992b1812411a0f4a811a88de89c4f6e7c8a9c9b479d795502e0",
       "original_text": "This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Moldova) before acting upon.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Duplicativeboilerplate/unverifiedalways-current/loginclaims consolidated;draft/scope andexactstamped general-reference disclaimer retained"
     },
     {
       "id": "moldova-tax-optimization-OLD-024",
@@ -7600,8 +7692,11 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "e6097dc710d0439015cb49bab66f9aeaa3e744a0ac917c019e5a84fc9abd2ddb",
       "original_text": "The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Duplicativeboilerplate/unverifiedalways-current/loginclaims consolidated;draft/scope andexactstamped general-reference disclaimer retained"
     },
     {
       "id": "moldova-tax-optimization-OLD-025",
@@ -7609,8 +7704,10 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "original_text": "<!-- openaccountants-cta-block -->",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped tail and attribution/disclaimer preserved byte-identically;not newreview"
     },
     {
       "id": "moldova-tax-optimization-OLD-026",
@@ -7618,8 +7715,10 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
       "original_text": "---",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped tail and attribution/disclaimer preserved byte-identically;not newreview"
     },
     {
       "id": "moldova-tax-optimization-OLD-027",
@@ -7627,8 +7726,10 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
       "original_text": "## Talk to a verified accountant",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped tail and attribution/disclaimer preserved byte-identically;not newreview"
     },
     {
       "id": "moldova-tax-optimization-OLD-028",
@@ -7636,8 +7737,10 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
       "original_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped tail and attribution/disclaimer preserved byte-identically;not newreview"
     },
     {
       "id": "moldova-tax-optimization-OLD-029",
@@ -7645,8 +7748,10 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
       "original_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped tail and attribution/disclaimer preserved byte-identically;not newreview"
     },
     {
       "id": "moldova-tax-optimization-OLD-030",
@@ -7654,8 +7759,10 @@
       "original_sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
       "unit_sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
       "original_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped tail and attribution/disclaimer preserved byte-identically;not newreview"
     },
     {
       "id": "moldova-vat-OLD-001",

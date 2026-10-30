@@ -1845,6 +1845,54 @@
       "read_date": "2026-10-30",
       "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
       "sha256": "6c130f42c4c40f72f3701becfee3df6aabb6fc1d1a9cd4da9c7b21eb52c47e43"
+    },
+    "PLANNING-CODE-ITPARK-CURRENT": {
+      "article": "PLANNING-CODE-ITPARK-CURRENT",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T20:26:57.804Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected substantive tax/eligibility/worker/distribution provisions only; not whole-Code verification",
+      "sha256": "26683c540bb0d33a8de7b3c7ea64dab88feb8e4ae09fc603cf6f01f3ff383f8c"
+    },
+    "PLANNING-HG773-WAGE2026": {
+      "article": "PLANNING-HG773-WAGE2026",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro",
+      "observed_utc": "2026-10-30T20:26:57.804Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected substantive tax/eligibility/worker/distribution provisions only; not whole-Code verification",
+      "sha256": "a7ae92bded08f28b5c57ad52c725293ff0d6cea18b50c64dea2bb5f6c91be164"
+    },
+    "PLANNING-LAW77-CURRENT": {
+      "article": "PLANNING-LAW77-CURRENT",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro",
+      "observed_utc": "2026-10-30T20:27:12.899Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected substantive tax/eligibility/worker/distribution provisions only; not whole-Code verification",
+      "sha256": "1a5eb211ec7171f3e42ce40aad9a314c4d8eef9e88470bb7c53db9516629b45b"
+    },
+    "PLANNING-SRL-DISTRIBUTIONS": {
+      "article": "PLANNING-SRL-DISTRIBUTIONS",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro",
+      "observed_utc": "2026-10-30T20:28:29.157Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected substantive tax/eligibility/worker/distribution provisions only; not whole-Code verification",
+      "sha256": "9930a59f26b32b59d8e2d709dd75640ddd35098d176168c3007b0732c6bd6838"
+    },
+    "PLANNING-CODE-ITPARK-JAN": {
+      "article": "PLANNING-CODE-ITPARK-JAN",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro",
+      "observed_utc": "2026-10-30T20:29:30.568Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected substantive tax/eligibility/worker/distribution provisions only; not whole-Code verification",
+      "sha256": "03dcc56bdd803f698e2371b359a579379f2dae767ea2f6b6c5c26ac8461e9d19"
+    },
+    "PLANNING-LABOUR-CURRENT-CLASSIFICATION": {
+      "article": "PLANNING-LABOUR-CURRENT-CLASSIFICATION",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155518&lang=ro",
+      "observed_utc": "2026-10-30T20:30:06.144Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected substantive tax/eligibility/worker/distribution provisions only; not whole-Code verification",
+      "sha256": "070c93df87e6e8b4924a376ef0bacbb110ecd38da54ac8bca1198ba5c927c2ee"
     }
   }
 }

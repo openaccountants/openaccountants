@@ -2,7 +2,7 @@
   "status": "LOCAL2026 WRITER DRAFT; stated implementation/specialist gaps and whole-country review pending",
   "slug": "md-tax-overview",
   "Guide_path": "skills/international/moldova/md-tax-overview.md",
-  "Guide_sha256": "89c0f0e6163a7deeaa1a3a327019a0484627f68af83eba9d8a50396e2da6a8fe",
+  "Guide_sha256": "8d59ab9a146484b9453d79375843abfa4b547bf512f8252adf18531f124fdc84",
   "rows": [
     {
       "id": "MD-OV-001",
@@ -649,7 +649,7 @@
   ],
   "baseline_old_units": 9,
   "old_bytes": 3272,
-  "new_bytes": 12850,
+  "new_bytes": 12875,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Unverified PwC/secondary-source references replaced by fetched actual primary law/authority sources; original copy remains archived.",

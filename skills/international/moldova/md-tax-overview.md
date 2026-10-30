@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 ---
 
-# Moldova tax overview, 2026 v0.1
+# Moldova tax overview, 2026 v0.2
 
 ## Who this applies to
 
@@ -116,7 +116,7 @@ Read 30 October 2026. The overview ledger binds the rules and both assumed compu
 | [Accounting Law 287/2017, operative consolidation][accounts] | Selected accounting currency, category, period and accounts presentation/audit provisions, distinct from tax returns | 2026-10-30 |
 | [BNM national-currency section][bnm] | Official identification of the Moldovan leu; not a general tax conversion procedure | 2026-10-30 |
 
-**Not yet confirmed:** the connected domains' remaining approved-form/annex, commencement and ordinary implementation gaps; the separate tax-planning Guide's special-regime and savings claims; treaty-specific and specialist industry/transaction procedures not established by this overview. The old blanket resident-worldwide-income statement and unqualified calendar-year/monthly-deadline shortcuts are replaced by the cited population, period and exception rules. No accountant attestation, comprehensive country coverage or completed whole-country independent review is claimed.
+**Not yet confirmed:** the connected domains' remaining approved-form/annex, commencement and ordinary implementation gaps; the tax-planning Guide's remaining procedure/form and taxpayer-specific comparison questions; treaty-specific and specialist industry/transaction procedures not established by this overview. The old blanket resident-worldwide-income statement and unqualified calendar-year/monthly-deadline shortcuts are replaced by the cited population, period and exception rules. No accountant attestation, comprehensive country coverage or completed whole-country independent review is claimed.
 
 [code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
 [accounts]: https://www.legis.md/cautare/getResults?doc_id=140124&lang=ro
