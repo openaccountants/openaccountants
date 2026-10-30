@@ -2346,6 +2346,30 @@
       "source_total_lines_reported": 481,
       "selection_status": "Main reconciliation and annex1D/2D signed-column headings, cash-donation/undocumented-expense rows read. Not a complete form. Inactive legacy annex1.2D text and old representation rows are controlled by actual current completion instructions, not used as tax rules.",
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    "FOREIGN200-4317-CURRENT-20261030": {
+      "article": "FOREIGN200-4317-CURRENT-20261030",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154717&lang=ro",
+      "observed_utc": "2026-10-30T22:24:25.434Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected actual Law200/2010 operative4June2026 andJanuary2026 articles43^17/scope;future9December2026/1June2027versionsnotadopted;notcompleteimmigrationlaworregistrationformverification",
+      "sha256": "400462541be26d1b2a693be391d5d70547ef03f82d91d4daee9ccbfd1e514873"
+    },
+    "FOREIGN200-CURRENT-SCOPE-20261030": {
+      "article": "FOREIGN200-CURRENT-SCOPE-20261030",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154717&lang=ro",
+      "observed_utc": "2026-10-30T22:25:16.718Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected actual Law200/2010 operative4June2026 andJanuary2026 articles43^17/scope;future9December2026/1June2027versionsnotadopted;notcompleteimmigrationlaworregistrationformverification",
+      "sha256": "19f37efb5952be53b21f54f61c9def29521092056516dcd3f3665d0219e0c36b"
+    },
+    "FOREIGN200-4317-JAN-20261030": {
+      "article": "FOREIGN200-4317-JAN-20261030",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=148704&lang=ro",
+      "observed_utc": "2026-10-30T22:25:40.783Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected actual Law200/2010 operative4June2026 andJanuary2026 articles43^17/scope;future9December2026/1June2027versionsnotadopted;notcompleteimmigrationlaworregistrationformverification",
+      "sha256": "4c9ec3dbd4daf76fdd3f7573b521b8d2512e279a6e8c919c4389285d8ce19922"
     }
   }
 }

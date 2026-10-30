@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 2.3
+version: 2.4
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -11,7 +11,7 @@ partial:
   IT-IND: "2026 individual-income, overview and planning drafts supply statutory residence populations, deduction evidence, personal-relief/capital methods and sourced IT-park/SME/distribution/worker comparisons; actual forms, remaining commencement/implementation and taxpayer-specific gaps remain open; whole-country independent review is pending."
   IT-CORP: "2026 corporate and formation writer drafts supply ordinary deductions, travel/asset methods, SRL registration/contributions, the corrected SA capital screen and annual-accounts duties; company-disposal scope and enacted VEN12 TP-adjustment and fixed-asset-loss row identities are now reconciled; unavailable numeric annexes, remaining approved tax-return/update forms, statutory discrepancy procedures, capped-base and dividend-deferral implementation remain open; whole-country independent review is pending."
   VAT: "2026 VAT writer draft and figure ledger prepared with the current 24-box VAT12 mapping; commencement, prorata-rounding and ordinary source/procedure gaps remain explicit; whole-country independent review is pending."
-  SC: "2026 social/medical writer draft and ledger include State-insured categories/status procedure, selected 2026 comparisons and the service medical top-up; direct tariff annex evidence, ordinary reporting/refund forms, remaining implementation/commencement gaps and whole-country independent review remain open."
+  SC: "2026 social/medical writer draft and ledger include State-insured categories/status procedure, selected 2026 comparisons, the service medical top-up and the specific art.43^17 foreign-worker cumulative conditions; direct tariff annex evidence, ordinary reporting/refund forms, remaining implementation/commencement gaps and whole-country independent review remain open."
   PR: "2026 payroll writer draft and figure ledger prepared; cumulative withholding, ordinary MDL loan method and directly read current IALS21 column instructions/May amendment are supplied; actual reporting attachments/technical fields, foreign-currency loan and remaining benefit/procedure gaps stay explicit; whole-country independent review is pending."
   TP: "2026 TP writer rewrite and figure ledger prepared: exclusions, methods, files, APA and corresponding-adjustment procedures sourced; enacted VEN12 adjustment rows are linked separately from the TP information form; full current information-form/role codes, retention and specific procedure gaps remain explicit; whole-country independent review is pending."
   XB: "2026 cross-border writer rewrite and figure ledger prepared: residence, withholding, PE profit, foreign credits, mobility, monthly reporting and current salary-information instructions sourced; INR14 citizenship amendment/commencement read, while actual revised attachments, other approved forms and refund/departure procedures remain open; whole-country independent review is pending."
@@ -34,6 +34,8 @@ Formation now distinguishes the actual founder tax-evasion declarations from the
 The corporate and individual drafts now apply the actual enacted return-changeover rules: SIMM24 from reporting 2024, DAP24 from 2024 and UNIF25 from 2025, including each order’s early-obligation exception. Current legal taxpayer/regime and whole-year staffing/VAT conditions control form selection. Full approved attachment fields, completion instructions and filing implementation remain open; identifying the right form does not complete those gaps or the country review.
 
 The corporate draft now supplies selected actual VEN12 period/signature/main-reconciliation and representation-expense instructions, including inactive legacy rows and the capital-gain annex disabled from 2020. Current Code rules control the instruction’s stale S-election/personal-relief passages. Full attachments, remaining ordinary gaps and independent whole-country review remain open.
+
+The social/medical draft now supplies the actual initial-registration population and four continuing conditions for the article-43^17 foreign-worker route, with January/current comparison and the loss-of-eligibility rule. Current law scope, actual registration/electronic-identity documents and the separate EU/Schengen interaction must still be established; neither foreign nationality nor remote work alone proves an insurance exemption. Remaining ordinary gaps and whole-country independent review keep coverage partial.
 
 ## Domains
 

@@ -10,13 +10,13 @@
     {
       "kind": "form",
       "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/Anexa%20n1%20OMF%2060.docx",
-      "retrieval_status": "observedofficiallink;downloadnotattempted",
+      "retrieval_status": "Bounded read-only curl attempt30October2026:HTTP403;no file obtained;no active download job",
       "claimed_full_attachment_verification": false
     },
     {
       "kind": "instructions",
       "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/Anexa%20n2%20OMF60.docx.rtf",
-      "retrieval_status": "observedofficiallink;downloadnotattempted",
+      "retrieval_status": "Bounded read-only curl attempt30October2026:HTTP403;no file obtained;no active download job",
       "claimed_full_attachment_verification": false
     }
   ]
