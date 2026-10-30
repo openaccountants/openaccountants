@@ -1917,6 +1917,14 @@
       "read_date": "2026-10-30",
       "format": "Exact JSON returned by read-only browser DOM observation; selected current company/capital scope and enacted VEN12 amendment only; not whole-Code verification",
       "sha256": "c35d9917aad47ee1e71a53f270f8cc13cf376da43efbfdc1eb52f2dcbaf534cb"
+    },
+    "CORP-VEN12-AMENDMENT10-2024": {
+      "article": "CORP-VEN12-AMENDMENT10-2024",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=141590&lang=ro",
+      "observed_utc": "2026-10-30T20:59:28.849Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected current company/capital scope and enacted VEN12 amendment only; not whole-Code verification",
+      "sha256": "6512360a0a58753e70ae00bc851a27c0a7a896b5f202ea5a541aa5c4a92e6c71"
     }
   }
 }

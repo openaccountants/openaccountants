@@ -2,7 +2,7 @@
   "status": "2026CORPORATE WRITER DRAFT; ordinary implementation gaps retained; independentwholecountryreviewnotyetrequested",
   "slug": "md-corporate-income-tax",
   "Guide_path": "skills/international/moldova/md-corporate-income-tax.md",
-  "Guide_sha256": "699952cf47a91475f4e5641eea2e3a059f210dac75319b316692940db7a44f0f",
+  "Guide_sha256": "187b5c1132d140602f40d27f12764a29ff04df06361aa042f359588176377dce",
   "rows": [
     {
       "id": "MD-CORP-001",
@@ -4001,6 +4001,34 @@
       "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-22623.json",
       "source_text_sha256": "44565f32722329abc76a42c4a14f3ada537f053a9ebed9c5b7fa4b3c1fc718f1",
       "source_context": "Articolul 22623. Ajustarea benevolă\n\n(1) În cazul în care nu respectă principiul lungimii brațului în cadrul tranzacțiilor, contribuabilul este în drept să efectueze ajustarea veniturilor și/sau a cheltuielilor.\n\n(2) În cazul ajustării benevole aferente perioadelor anterioare, contribuabilul este obligat să prezinte informația corectată privind prețurile de transfer sau dosarul corectat privind prețurile de transfer și dările de seamă fiscale corectate în conformitate cu art. 188.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-286",
+      "rule_or_figure": "VEN1203020booklosscolumn2/taxlosscolumn3;charity/sponsorshipdonations03037instead",
+      "Guide_section": "Deadlines and filing: Verified fixed-asset loss rows",
+      "act_article_or_official_section": "MFOrder10/2024point1(2)(b),instruction74",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=141590&lang=ro",
+      "exact_original_language_quote": "b) Punctul 74 va avea următorul cuprins: „74. În rândul 03020 se reflectă pierderile din vânzarea mijloacelor fixe, inclusiv în cazul efectuării donației, cu",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-AMENDMENT10-2024.json",
+      "source_text_sha256": "6512360a0a58753e70ae00bc851a27c0a7a896b5f202ea5a541aa5c4a92e6c71",
+      "source_context": "b) Punctul 74 va avea următorul cuprins:\n\n„74. În rândul 03020 se reflectă pierderile din vânzarea mijloacelor fixe, inclusiv în cazul efectuării donației, cu excepția donațiilor în scopuri filantropice şi de sponsorizare care se reflectă în rând 03037. În rând 03020 în coloana 2 se reflectă pierderile constatate în contabilitatea financiară iar în coloana 3 – pierderile constatate în scopuri fiscale.”;\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-287",
+      "rule_or_figure": "Enactedasset-rowamendmentcommencement;currentOrder145doesnotreplacepoint74",
+      "Guide_section": "Deadlines and filing: Verified fixed-asset loss rows",
+      "act_article_or_official_section": "MFOrder10/2024point2;effective1February2024,reporting2023",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=141590&lang=ro",
+      "exact_original_language_quote": "2. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, iar modificările aprobate se pun în aplicare începând cu",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-AMENDMENT10-2024.json",
+      "source_text_sha256": "6512360a0a58753e70ae00bc851a27c0a7a896b5f202ea5a541aa5c4a92e6c71",
+      "source_context": "2. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, iar modificările aprobate se pun în aplicare începând cu perioada fiscală de raportare 2023. \n\n \n\n",
       "quote_matches_source_after_layout_normalization": true,
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
     }

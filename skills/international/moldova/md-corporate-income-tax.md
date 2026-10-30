@@ -1,7 +1,7 @@
 ---
 name: md-corporate-income-tax
 description: "Compute Moldova resident-company corporate income tax for 2026, including the ordinary taxable-profit reconciliation and the separate eligible non-VAT SME accounting-income regime. Use for regime and legal-category selection, business expenses, employee benefits, financing, depreciation, losses, foreign-tax credits, instalments, distributions and withholding. Distinguish company tax from shareholder withholding and the dividend-linked payment-deferral option. Establish actual tax-period, VAT, ownership, activity, profit-origin and payment facts before calculating. This source-cited writer draft preserves the earlier Guide subjects, states exact remaining ordinary and specialist gaps, and requires whole-country independent review before publication. It does not claim accountant attestation or comprehensive coverage."
-version: 0.5
+version: 0.6
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-30
@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 ---
 
-# Moldova corporate income tax, 2026 v0.5
+# Moldova corporate income tax, 2026 v0.6
 
 ## Who this applies to
 
@@ -163,6 +163,8 @@ On disposal, determine tax undepreciated value from entry/capitalised cost less 
 
 **Verified transfer-pricing return rows.** Order 145/2024 adds VEN12 **annex 1D row 02020** for income adjusted under Code art. 226^23(1), and **annex 2D row 03047** for the corresponding expense adjustment. Completion-instruction points **51^1** and **100^1** identify those rows; points 52 and 101 extend their respective aggregation ranges to 02020 and 03047. The order entered into force on publication, **5 December 2024**, and applies from the **2024 reporting period**; its point 3 preserves the then-effective form for an obligation arising before approval/publication. Under Code art. 226^23(2), voluntary adjustments for prior periods also require corrected TP information/file and corrected tax returns under art. 188. Retain the adjustment calculation and year/form version; these verified row identities do not establish unobserved attachment columns, portal checks or the remainder of the return. [Order 145/2024 points 1–3][ven12amend]; [Code art. 226^23][code].
 
+**Verified fixed-asset loss rows.** Actual MF Order 10/2024 replaces completion-instruction point 74: VEN12 **row 03020, column 2** records the fixed-asset disposal loss recognised in financial accounting; **column 3** records the loss recognised for tax. It includes donation losses **except** philanthropic/sponsorship donations, which belong in **row 03037**. Keep those two loss measures and the charitable-donation classification distinct; row placement does not itself allow a tax loss or settle the donation cap. The order entered into force on **1 February 2024** and applies from reporting period **2023**. The subsequent Order 145/2024 adds the TP rows above and does not replace this point 74. The full current attachment, other columns and final-return aggregation still remain unverified. [Order 10/2024 points 1(1)(b)–(c), 1(2)(b), 2][ven12assetamend]; [Order 145/2024][ven12amend]; [Code arts. 21, 24, 26^1, 36][code].
+
 Reconcile the approved current return to the general ledger, asset/loss/credit schedules and actual SFS account. Verify subdivision allocation under art. 84(3). Use the statute's special liquidation/reorganisation periods and deadlines where applicable. Filing instructions and portal access must come from the current approved form, not an old form label or bank description. [Arts. 54^4(5)–(6), 83–87][code].
 
 ## Penalties and interest
@@ -284,6 +286,9 @@ Not yet confirmed: all 2026 commencement interactions beyond the selected transi
 [corpregamend]: https://www.legis.md/cautare/getResults?doc_id=154909&lang=ro
 MF Order 145/2024, points 1–3: actual enacted VEN12 income/expense adjustment rows and commencement. Read 30 October 2026: https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro.
 
+MF Order 10/2024, points 1–2: enacted fixed-asset loss/donation row classification, separate book/tax columns and reporting commencement. Read 30 October 2026: https://www.legis.md/cautare/getResults?doc_id=141590&lang=ro.
+
+[ven12assetamend]: https://www.legis.md/cautare/getResults?doc_id=141590&lang=ro
 [ven12amend]: https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro
 [ven12order]: https://www.legis.md/cautare/getResults?doc_id=146095&lang=ro
 

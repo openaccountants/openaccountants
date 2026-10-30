@@ -2,7 +2,7 @@
 
 **Writer draft; independent whole-country review pending.** This ledger covers statutory rule/method groups and identifies both assumed examples separately. Ordinary implementation gaps remain in the Guide Sources and country README. It is not a complete-coverage or attestation record.
 
-Guide SHA256: `699952cf47a91475f4e5641eea2e3a059f210dac75319b316692940db7a44f0f`. Read date: 30 October 2026. Selected official browser bodies are retained as article JSON with original text, observation date and official URL. They are not a complete Fiscal Code download.
+Guide SHA256: `187b5c1132d140602f40d27f12764a29ff04df06361aa042f359588176377dce`. Read date: 30 October 2026. Selected official browser bodies are retained as article JSON with original text, observation date and official URL. They are not a complete Fiscal Code download.
 
 | ID | Rule/figure | Section | Act/article and official URL | Short original-language quote | Read |
 |---|---|---|---|---|---|
@@ -291,6 +291,8 @@ Guide SHA256: `699952cf47a91475f4e5641eea2e3a059f210dac75319b316692940db7a44f0f`
 | MD-CORP-283 | Instruction51^1/100^1and52/101aggregationrangesextended | Deadlines and filing: Verified transfer-pricing return rows | [MFOrder145/2024point1(2)(a)-(d)](https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro) | 2) În Anexa nr.2, a) După punctul 51, se completează cu punctul 511 cu următorul cuprins: „511. În rândul 02020 se reflectă ajustarea veniturilor | 2026-10-30 |
 | MD-CORP-284 | Effective5December2024,reportingperiod2024,priorobligationformexception | Deadlines and filing: Verified transfer-pricing return rows | [MFOrder145/2024points2-3](https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro) | 2. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, iar modificările aprobate se pun în aplicare ncepând cu | 2026-10-30 |
 | MD-CORP-285 | Voluntaryarmslengthincome/expenseadjustment;priorperiodcorrectedTPinformation/fileandtaxreturns | Deadlines and filing | [FiscalCode226^23(1)-(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 22623. Ajustarea benevolă (1) În cazul în care nu respectă principiul lungimii brațului în cadrul tranzacțiilor, contribuabilul este în drept să efectueze ajustarea | 2026-10-30 |
+| MD-CORP-286 | VEN1203020booklosscolumn2/taxlosscolumn3;charity/sponsorshipdonations03037instead | Deadlines and filing: Verified fixed-asset loss rows | [MFOrder10/2024point1(2)(b),instruction74](https://www.legis.md/cautare/getResults?doc_id=141590&lang=ro) | b) Punctul 74 va avea următorul cuprins: „74. În rândul 03020 se reflectă pierderile din vânzarea mijloacelor fixe, inclusiv în cazul efectuării donației, cu | 2026-10-30 |
+| MD-CORP-287 | Enactedasset-rowamendmentcommencement;currentOrder145doesnotreplacepoint74 | Deadlines and filing: Verified fixed-asset loss rows | [MFOrder10/2024point2;effective1February2024,reporting2023](https://www.legis.md/cautare/getResults?doc_id=141590&lang=ro) | 2. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, iar modificările aprobate se pun în aplicare începând cu | 2026-10-30 |
 
 ## Complete predecessor-topic destination table
 
