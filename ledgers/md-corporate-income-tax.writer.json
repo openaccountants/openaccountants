@@ -2,7 +2,7 @@
   "status": "2026CORPORATE WRITER DRAFT; ordinary implementation gaps retained; independentwholecountryreviewnotyetrequested",
   "slug": "md-corporate-income-tax",
   "Guide_path": "skills/international/moldova/md-corporate-income-tax.md",
-  "Guide_sha256": "f7ea3744ba8411e66a654919c18952f9f77e8a71964a7373478b0149d5d0d2ea",
+  "Guide_sha256": "699952cf47a91475f4e5641eea2e3a059f210dac75319b316692940db7a44f0f",
   "rows": [
     {
       "id": "MD-CORP-001",
@@ -3835,6 +3835,174 @@
         "calculation_control": "ledgers/md-country-evidence/late-rate-controls.md",
         "source_input": "ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-BASE.json"
       }
+    },
+    {
+      "id": "MD-CORP-274",
+      "rule_or_figure": "Company organised/managed/principalactivity inMoldova; individual183daytest not companytest",
+      "Guide_section": "Who this applies to",
+      "act_article_or_official_section": "FiscalCode5(5)(b)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "b) orice persoană juridică sau formă organizatorică cu statut de persoană fizică a cărei activitate este organizată sau gestionată în Republica Moldova ori al",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-COMPANY-RESIDENCE-20261030.json",
+      "source_text_sha256": "c35d9917aad47ee1e71a53f270f8cc13cf376da43efbfdc1eb52f2dcbaf534cb",
+      "source_context": "b) orice persoană juridică sau formă organizatorică cu statut de persoană fizică a cărei activitate este organizată sau gestionată în Republica Moldova ori al cărei loc de bază de desfăşurare a activităţii este Republica Moldova.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-275",
+      "rule_or_figure": "Articolul 121. Perioada fiscală privind impozitul pe venit (1) Prin perioadă fiscală privind impozitul pe venit se înţelege anul calendaristic la încheierea căr",
+      "Guide_section": "Who this applies to / Deadlines and filing",
+      "act_article_or_official_section": "FiscalCode12^1(1)-(6);ordinary/short/noncalendarperiods",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 121. Perioada fiscală privind impozitul pe venit (1) Prin perioadă fiscală privind impozitul pe venit se înţelege anul calendaristic la încheierea căruia se",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-12s1.json",
+      "source_text_sha256": "3096c7f8ff6171246d574e035d5469bef39c0ed7abc672f6c5bf3b04a657c7b0",
+      "source_context": "Articolul 121. Perioada fiscală privind impozitul pe venit\n\n(1) Prin perioadă fiscală privind impozitul pe venit se înţelege anul calendaristic la încheierea căruia se determină venitul impozabil şi se calculează suma impozitului care trebuie achitată.\n\n(2) Pentru întreprinderile nou-create, perioadă fiscală se consideră perioada de la data înregistrării întreprinderii până la finele anului calendaristic.\n\n(3) Pentru agentul economic care a adoptat decizia de lichidare pe parcursul anului calendaristic, perioadă fiscală se consideră:\n\na) perioada de la începutul anului calendaristic până la data întocmirii bilanţului provizoriu de lichidare;\n\nb) perioada de la începutul anului calendaristic până la data aprobării bilanţului definitiv de lichidare.\n\n(31) Pentru întreprinderile reorganizate, perioadă fiscală se consideră perioada de la începutul anului calendaristic până la data radierii întreprinderii din Registrul de stat.\n\n(32) Pentru agenţii economici care pe parcursul anului fiscal obţin titlul de rezident al parcului pentru tehnologia informaţiei, perioadă fiscală se consideră perioada de la începutul anului calendaristic şi până la finele lunii calendaristice în care este obţinut titlul de rezident al parcului.\n\n(33) Pentru agenţii economici cărora pe parcursul anului fiscal li se retrage titlul de rezident al parcului pentru tehnologia informaţiei, perioadă fiscală se consideră perioada care începe cu prima zi a lunii următoare celei în care a fost retras titlul de rezident al parcului şi până la finele anului calendaristic.\n\n(4) Prin derogare de la prevederile alin.(1), pentru agenţii economici care au dreptul, în conformitate cu prevederile Legii contabilităţii, să aplice o perioadă de gestiune diferită de anul calendaristic, perioada fiscală privind impozitul pe venit corespunde cu perioada de gestiune pentru întocmirea şi prezentarea situaţiilor financiare. În acest caz, perioada fiscală constituie o perioadă de oricare 12 luni consecutive.\n\n(5) Perioada fiscală menţionată la alin.(4) se va modifica ulterior doar dacă perioada de gestiune pentru întocmirea şi prezentarea situaţiilor financiare este modificată în corespundere cu prevederile Legii contabilităţii.\n\n(6) Înainte de aplicarea unei noi perioade fiscale în corespundere cu prevederile alin.(4) sau (5), agentul economic este obligat:\n\na) să informeze Serviciul Fiscal de Stat şi să prezinte acestuia documentele privind schimbarea perioadei fiscale, în modul stabilit de Serviciul Fiscal de Stat;\n\nb) să aplice perioada fiscală de tranziţie şi regulile stabilite în cap. 72 din prezentul titlu.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-276",
+      "rule_or_figure": "Estimated-business-income specific15% excessbase,notordinarycompanyrate",
+      "Guide_section": "Rates, bands and thresholds",
+      "act_article_or_official_section": "FiscalCode15(d)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "d) pentru agenţii economici al căror venit a fost estimat în conformitate cu art.225 şi 2251 – în mărime de 15% din depăşirea venitului",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-15.json",
+      "source_text_sha256": "d858755af807146c4b73c3ec7d0074d8ecfb6da2b392e1a6b41b528f6c4b1195",
+      "source_context": "d) pentru agenţii economici al căror venit a fost estimat în conformitate cu art.225 şi 2251 – în mărime de 15% din depăşirea venitului estimat faţă de venitul brut înregistrat în contabilitate de agentul economic.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-277",
+      "rule_or_figure": "Grossincomearticle18(e)reference doesnotexpandchapter5taxpayer scope",
+      "Guide_section": "The base: Company disposals and the individual capital-gain boundary",
+      "act_article_or_official_section": "FiscalCode18(a),(e),(o)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 18. Sursele de venit impozabile În venitul brut se includ: a) venitul provenit din activitatea de întreprinzător, din activitatea profesională sau din alte",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-CAPITAL-SCOPE-20261030.json",
+      "source_text_sha256": "f51db8d449a09ee9dc049f4d62f99201e4fb4c633c140217c6401e5074c093c9",
+      "source_context": "Articolul 18. Sursele de venit impozabile\n\nÎn venitul brut se includ:\n\na) venitul provenit din activitatea de întreprinzător, din activitatea profesională sau din alte activităţi similare;\n\nb) venitul de la activitatea societăţilor obţinut de către membrii societăţilor şi venitul obţinut de către acţionarii/deţinătorii de unităţi (titluri) emise de organismele de plasament colectiv;\n\nc) plăţile pentru munca efectuată şi serviciile prestate (inclusiv salariile), facilităţile acordate de angajator, onorariile, comisioanele, primele şi alte retribuţii similare;\n\nd) venitul din chirie (arendă);\n\ne) creşterea de capital definită la art.40 alin.(7);\n\nf) venitul aferent provizioanelor neutilizate conform art.24 alin.(16);\n\nf1) suma diminuărilor reducerilor pentru pierderi la active şi la angajamente condiţionale în urma îmbunătăţirii calităţii acestora pe parcursul perioadei fiscale;\n\nf2) suma diminuărilor provizioanelor destinate acoperirii eventualelor pierderi ce ţin de nerestituirea împrumuturilor, a ratelor de leasing şi a dobânzilor aferente în urma îmbunătăţirii calităţii şi/sau rambursării acestora pe parcursul perioadei fiscale;\n\ng) venitul obţinut sub formă de dobândă;\n\nh) royalty (redevenţe);\n\ni) anuităţile, inclusiv primite în baza tratatelor internaţionale la care Republica Moldova este parte; sumele şi despăgubirile de asigurare primite în baza contractelor de asigurare şi coasigurare şi neutilizate conform art.22. Excepţie fac cele prevăzute la art.20 lit. a);\n\nj) venitul rezultat din neachitarea datoriei de către agentul economic, cu excepţia cazurilor când formarea acestei datorii este o urmare a insolvabilităţii contribuabilului;\n\nk) dotaţiile de stat, primele şi premiile care nu sunt specificate ca neimpozabile în legile prin care se stabilesc aceste plăţi;\n\nn) veniturile obţinute, conform legislaţiei, ca urmare a aplicării clauzei penale, în formă de despăgubire pentru venitul ratat, precum şi ca urmare a reţinerii arvunei sau restituirii arvunei;\n\no) alte venituri care nu au fost specificate la literele menţionate şi care nu sunt neimpozabile conform legislaţiei fiscale.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-278",
+      "rule_or_figure": "Chapter5capitalgainmethod onlynonbusinessresident/nonresident individuals",
+      "Guide_section": "The base: Company disposals and the individual capital-gain boundary",
+      "act_article_or_official_section": "FiscalCode37",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 37. Subiecţii creşterii sau pierderii de capital Prevederile prezentului capitol se aplică contribuabililor persoane fizice rezidenţi şi nerezidenţi ai Republicii Moldova care nu",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-CAPITAL-SCOPE-20261030.json",
+      "source_text_sha256": "f51db8d449a09ee9dc049f4d62f99201e4fb4c633c140217c6401e5074c093c9",
+      "source_context": "Articolul 37. Subiecţii creşterii sau pierderii de capital\n\nPrevederile prezentului capitol se aplică contribuabililor persoane fizice rezidenţi şi nerezidenţi ai Republicii Moldova care nu practică activitate de întreprinzător şi care vând, schimbă sau înstrăinează sub altă formă active de capital.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-279",
+      "rule_or_figure": "50%annualnetcapitalgain inparagraph7,withinarticle37individualscope",
+      "Guide_section": "The base: Company disposals and the individual capital-gain boundary",
+      "act_article_or_official_section": "FiscalCode40(1)-(7),readwith37",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 40. Determinarea creşterii sau pierderii de capital (1) Mărimea creşterii sau pierderii de capital provenite din vânzare, schimb sau din altă formă de",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-CAPITAL-SCOPE-20261030.json",
+      "source_text_sha256": "f51db8d449a09ee9dc049f4d62f99201e4fb4c633c140217c6401e5074c093c9",
+      "source_context": "Articolul 40. Determinarea creşterii sau pierderii\n\n                       de capital\n\n(1) Mărimea creşterii sau pierderii de capital provenite din vânzare, schimb sau din altă formă de înstrăinare a activelor de capital este egală cu diferenţa dintre suma încasată (venitul obţinut) şi baza valorică a acestor active.\n\n(2) Suma încasată ca urmare a vânzării, schimbului sau a înstrăinării în alt mod a activelor de capital este egală cu suma mijloacelor băneşti şi/sau valoarea evaluată la preţul de piaţă a activelor de capital obţinute sub formă nemonetară.\n\n(3) Mărimea creşterii sau pierderii de capital provenite din tranzacţionarea la bursă a acţiunilor prin intermediul unui broker/unei societăţi de investiţii se determină în baza raportului brokerului/societăţii de investiţii, conform modului stabilit de Ministerul Finanţelor.\n\n(4) Persoana care face o donaţie se consideră că a vândut bunul donat la un preţ ce reprezintă mărimea maximă din baza lui valorică ajustată sau preţul lui de piaţă la momentul donării.\n\n(5) Creşterea sau pierderea de capital nu este recunoscută în scopuri fiscale în cazul încheierii unui contract de donaţii între rude de gradul I, precum şi între soţi.\n\n(51) Creșterea sau pierderea de capital nu este recunoscută în scopuri fiscale în cazul înstrăinării unui autoturism care a fost în proprietatea contribuabilului cel puțin 3 ani până la data înstrăinării, cu excepția autovehiculelor de colecție de interes istoric sau etnografic.\n\n(6) Creşterea sau pierderea de capital provenită din vânzare, schimb sau din altă formă de înstrăinare a locuinţei de bază nu este recunoscută în scopuri fiscale.\n\n(61) Creșterea sau pierderea de capital provenită din vânzare, schimb sau din altă formă de înstrăinare a locuinței proprietate comună în devălmășie se determină ca diferența dintre suma încasată și baza valorică a acestor active de către unul dintre proprietari (coproprietari) în baza acordului comun scris.\n\n(62) Creșterea sau pierderea de capital în cazul tranzacțiilor cu titluri (cote) de participare dobândite la preț preferențial sau gratuit în cadrul stock option plan se determină ca diferența dintre prețul de vânzare (suma încasată/venitul obținut) a titlurilor (cotelor) de participare și baza valorică a acestora.\n\n(7) Suma creşterii de capital în perioada fiscală este egală cu 50% din suma excedentară a creşterii de capital recunoscute peste nivelul oricăror pierderi de capital suportate pe parcursul perioadei fiscale.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-280",
+      "rule_or_figure": "Nonresidentindividual40(7)versusnonresidentlegalentity40(1)-(4);differentstatutorycrossreferences",
+      "Guide_section": "The base / Cross-border points",
+      "act_article_or_official_section": "FiscalCode71(1)(c)-(d)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 71. Veniturile nerezidenților obținute din Republica Moldova (1) Venituri ale nerezidenților obținute din Republica Moldova, indiferent dacă sunt primite în Republica Moldova sau",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-CAPITAL-SCOPE-20261030.json",
+      "source_text_sha256": "f51db8d449a09ee9dc049f4d62f99201e4fb4c633c140217c6401e5074c093c9",
+      "source_context": "Articolul 71. Veniturile nerezidenților obținute din\n\n                       Republica Moldova\n\n(1) Venituri ale nerezidenților obținute din Republica Moldova, indiferent dacă sunt primite în Republica Moldova sau în străinătate, se consideră:\n\na) veniturile din comercializarea mărfurilor;\n\nb) veniturile din prestarea de servicii de management sau de consultanță din orice domeniu, dacă aceste venituri sunt obținute de la un rezident sau dacă veniturile respective sunt cheltuieli ale unei reprezentanțe permanente în Republica Moldova, indiferent de locul prestării acestora;\n\nb1) alte venituri din servicii prestate pe teritoriul Republicii Moldova care nu sunt prevăzute în prezentul articol;\n\nc) veniturile, sub formă de creștere de capital, obținute de către persoanele fizice nerezidente care nu desfășoară activitate de întreprinzător pe teritoriul Republicii Moldova, determinate conform art. 40 alin. (7), aferente activelor de capital specificate la art. 39, aflate, înregistrate, emise pe teritoriul Republicii Moldova, cu excepția veniturilor sub formă de creștere de capital aferente valorilor mobiliare de stat și/sau aferente obligațiunilor emise de autoritățile administrației publice locale;\n\nd) veniturile obținute de persoanele juridice nerezidente, sub formă de creștere de capital, determinate conform art. 40 alin. (1)–(4), din vânzare, schimb sau din altă formă de înstrăinare a activelor de capital specificate la art. 39, aflate, înregistrate, emise pe teritoriul Republicii Moldova;\n\ne) dividendele, inclusiv cele sub formă de acțiuni sau titluri de proprietate plătite de un rezident;\n\nf) dobânzile plătite de un rezident sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă asemenea dobânzi sunt cheltuieli ale reprezentanței permanente, cu excepția dobânzilor aferente valorilor mobiliare de stat și/sau aferente obligațiunilor emise de autoritățile administrației publice locale, obținute de către persoanele fizice nerezidente care nu desfășoară activitate de întreprinzător pe teritoriul Republicii Moldova;\n\ng) veniturile din cesiunea drepturilor de creanță de la un rezident sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă asemenea venituri sunt cheltuieli ale reprezentanței permanente;\n\nh) veniturile din amenzi și penalități pentru neexecutarea sau executarea inadecvată a obligațiilor contractuale, inclusiv în baza contractelor de executare a lucrărilor (prestare a serviciilor) și/sau conform contractelor de comerț extern de livrare a mărfurilor plătite de un rezident sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă asemenea venituri sunt cheltuieli ale reprezentanței permanente;\n\nj) royalty (redevențele) obținute de la un rezident sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă aceste royalty sunt cheltuieli ale reprezentanței permanente;\n\nk) veniturile din operațiunile de leasing, din darea în arendă sau în subarendă, din locațiunea, sublocațiunea, superficia sau din uzufructul proprietății aflate pe teritoriul Republicii Moldova;\n\nk1) veniturile din operațiunile de leasing, închirierea, locațiunea, sublocațiunea sau din uzufructul navelor maritime, al aeronavelor și/sau al mijloacelor de transport feroviar ori rutier, inclusiv al celor exploatate în trafic internațional, precum și al proprietăților mobiliare ce țin de exploatarea acestora;\n\nl) veniturile din primele pe baza contractelor de asigurare și reasigurare colectate de la un rezident al Republicii Moldova sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă asemenea venituri sunt cheltuieli ale reprezentanței permanente;\n\nm) veniturile din prestarea serviciilor de transport, cu excepția cazurilor în care transportul se efectuează numai între puncte situate în afara teritoriului Republicii Moldova;\n\nn) veniturile primite de persoanele fizice nerezidente sub formă de salarii și alte remunerații similare din activitatea desfășurată conform contractului (acordului) de muncă şi/sau orice altă plată diferită de cele stabilite la prezentul alineat, primită de administrator, fondator, membru al consiliului de administrație ori membru al organelor de conducere ale unui rezident al Republicii Moldova sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă asemenea venituri sunt cheltuieli ale reprezentanței permanente, indiferent de locul exercitării efective a obligațiilor administrative încredințate acestor persoane;\n\no) veniturile sub formă de facilități, specificate la art. 19, acordate persoanelor fizice nerezidente de un angajator rezident al Republicii Moldova sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă asemenea venituri sunt cheltuieli ale reprezentanței permanente;\n\np) plățile efectuate de fondurile de pensii facultative rezidente;\n\nq) veniturile obținute de către oamenii de artă, cum ar fi artiștii de teatru, de circ, de cinema, de radio, de televiziune, muzicienii și artiștii plastici sau sportivii, indiferent de faptul în adresa cărei persoane se efectuează plățile aferente acestui venit, ca urmare a activității acestora desfășurate pe teritoriul Republicii Moldova;\n\nr) veniturile obținute din prestarea serviciilor profesionale, din activități sportive și de divertisment, precum și din alte servicii decât cele prevăzute la lit. q) prestate pe teritoriul Republicii Moldova;\n\ns) veniturile din premiile acordate la concursuri desfășurate pe teritoriul Republicii Moldova;\n\nt) comisioanele din activitatea desfășurată pe teritoriul Republicii Moldova, primite de la un rezident sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă asemenea comisioane sunt cheltuieli ale reprezentanței permanente;\n\nt1) câștigurile de la jocuri de noroc și de la campanii promoționale, obținute de la un rezident sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă acestea sunt cheltuieli ale reprezentanței permanente;\n\nu) veniturile obținute din plățile la lichidarea unui rezident. Venitul realizat din lichidarea unui rezident reprezintă suma excedentului plăților la lichidare în formă monetară sau nemonetară care depășește aportul (cota de participație) la capitalul social al persoanei fizice/juridice beneficiare.\n\n(2) Prin derogare de la prevederile alin.(1), veniturile nerezidenţilor, cu excepţia celor care dispun de o reprezentanţă permanentă în Republica Moldova, din transportul internaţional aerian obţinute din efectuarea curselor regulate nu sunt considerate venituri obţinute în Republica Moldova.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-281",
+      "rule_or_figure": "VEN12annex1D02020voluntaryTPincomeadjustment",
+      "Guide_section": "Deadlines and filing: Verified transfer-pricing return rows",
+      "act_article_or_official_section": "MFOrder145/2024point1(1)(a)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro",
+      "exact_original_language_quote": "a) Anexa 1D, după rândul 02019, se completează cu un rând nou 02020 cu următorul cuprins: „ Venitul obținut în rezultatul ajustării conform art.22623",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-AMENDMENT145-2024.json",
+      "source_text_sha256": "e87dcb43410e73b687f82b7352b3815304499ac60226b71d18e5456f703d759a",
+      "source_context": "a) Anexa 1D, după rândul 02019, se completează cu un rând nou 02020 cu următorul cuprins:\n\n„\n\nVenitul obținut în rezultatul ajustării conform art.22623 alin.(1) din Codul fiscal\n\n\t\n\n02020\n\n\t\n\n \n\n\t\n\n \n\n\t\n\n \n\n”          \n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-282",
+      "rule_or_figure": "VEN12annex2D03047voluntaryTPexpenseadjustment",
+      "Guide_section": "Deadlines and filing: Verified transfer-pricing return rows",
+      "act_article_or_official_section": "MFOrder145/2024point1(1)(b)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro",
+      "exact_original_language_quote": "b) Anexa 2D, după rândul 03046, se completează cu un rând nou 03047 cu următorul cuprins: „ Cheltuieli înregistrate în rezultatul ajustării conform art.22623",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-AMENDMENT145-2024.json",
+      "source_text_sha256": "e87dcb43410e73b687f82b7352b3815304499ac60226b71d18e5456f703d759a",
+      "source_context": "b) Anexa 2D, după rândul 03046, se completează cu un rând nou 03047 cu următorul cuprins:\n\n„\n\nCheltuieli înregistrate în rezultatul ajustării conform art.22623 alin.(1) din Codul fiscal\n\n\t\n\n03047\n\n\t\n\n \n\n\t\n\n \n\n\t\n\n \n\n”\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-283",
+      "rule_or_figure": "Instruction51^1/100^1and52/101aggregationrangesextended",
+      "Guide_section": "Deadlines and filing: Verified transfer-pricing return rows",
+      "act_article_or_official_section": "MFOrder145/2024point1(2)(a)-(d)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro",
+      "exact_original_language_quote": "2) În Anexa nr.2, a) După punctul 51, se completează cu punctul 511 cu următorul cuprins: „511. În rândul 02020 se reflectă ajustarea veniturilor",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-AMENDMENT145-2024.json",
+      "source_text_sha256": "e87dcb43410e73b687f82b7352b3815304499ac60226b71d18e5456f703d759a",
+      "source_context": "2) În Anexa nr.2,\n\na) După punctul 51, se completează cu punctul 511 cu următorul cuprins:\n\n„511. În rândul 02020 se reflectă ajustarea veniturilor conform prevederilor art.22623 alin.(1) din Codul fiscal.”;\n\nb) La punctul 52, textul „0201 – 02019” se substituie cu textul „0201 – 02020”;\n\nc) După punctul 100, se completează cu punctul 1001 cu următorul cuprins:\n\n„1001. În rândul 03047 se reflectă ajustarea cheltuielilor conform prevederilor art.22623 alin.(1) din Codul fiscal.”;\n\nd) La punctul 101, textul „0301 – 03046” se substituie cu textul „0301 – 03047”.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-284",
+      "rule_or_figure": "Effective5December2024,reportingperiod2024,priorobligationformexception",
+      "Guide_section": "Deadlines and filing: Verified transfer-pricing return rows",
+      "act_article_or_official_section": "MFOrder145/2024points2-3",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro",
+      "exact_original_language_quote": "2. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, iar modificările aprobate se pun în aplicare ncepând cu",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-AMENDMENT145-2024.json",
+      "source_text_sha256": "e87dcb43410e73b687f82b7352b3815304499ac60226b71d18e5456f703d759a",
+      "source_context": "2. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, iar modificările aprobate se pun în aplicare ncepând cu perioada fiscală de raportare 2024.\n\n3. Contribuabilii pentru care obligaţia de raportare survine până la aprobarea şi publicarea prezentului ordin, vor prezenta Declaraţia conform formularului în vigoare la data prezentării.\n\n \n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-CORP-285",
+      "rule_or_figure": "Voluntaryarmslengthincome/expenseadjustment;priorperiodcorrectedTPinformation/fileandtaxreturns",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "FiscalCode226^23(1)-(2)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 22623. Ajustarea benevolă (1) În cazul în care nu respectă principiul lungimii brațului în cadrul tranzacțiilor, contribuabilul este în drept să efectueze ajustarea",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-22623.json",
+      "source_text_sha256": "44565f32722329abc76a42c4a14f3ada537f053a9ebed9c5b7fa4b3c1fc718f1",
+      "source_context": "Articolul 22623. Ajustarea benevolă\n\n(1) În cazul în care nu respectă principiul lungimii brațului în cadrul tranzacțiilor, contribuabilul este în drept să efectueze ajustarea veniturilor și/sau a cheltuielilor.\n\n(2) În cazul ajustării benevole aferente perioadelor anterioare, contribuabilul este obligat să prezinte informația corectată privind prețurile de transfer sau dosarul corectat privind prețurile de transfer și dările de seamă fiscale corectate în conformitate cu art. 188.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
     }
   ],
   "old_topic_destinations": [
@@ -4102,5 +4270,12 @@
     }
   ],
   "source_integrity": "EveryshortquoteisboundtoaretainedofficialbrowserobservationorCNAStext;thisiswriteridentitychecking,notindependentsubstantivereview",
-  "remaining": "SourcesNotyetconfirmedandcountryREADMEpartialentriesremainauthoritative;noaccountantattestationorcompletecoverageclaim"
+  "remaining": "SourcesNotyetconfirmedandcountryREADMEpartialentriesremainauthoritative;noaccountantattestationorcompletecoverageclaim",
+  "subsequently_merged_public_predecessor": {
+    "PR": 1008,
+    "merged_main_commit": "6e9a13f47d6224bf2fb118a63fe604ef56802a8f",
+    "complete_destination_table": "ledgers/md-country-evidence/public-pr1008-predecessor-reconciliation.json",
+    "units": 95,
+    "status": "WRITER MAPPING ONLY; current scope correction supplied; independent whole-country review pending"
+  }
 }

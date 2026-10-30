@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 1.5
+version: 1.6
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -9,11 +9,11 @@ covered_by:
   XB: md-cross-border
 partial:
   IT-IND: "2026 individual-income, overview and planning drafts supply statutory residence populations, deduction evidence, personal-relief/capital methods and sourced IT-park/SME/distribution/worker comparisons; actual forms, remaining commencement/implementation and taxpayer-specific gaps remain open; whole-country independent review is pending."
-  IT-CORP: "2026 corporate and formation writer drafts supply ordinary deductions, travel/asset methods, SRL registration/contributions, the corrected SA capital screen and annual-accounts duties; unavailable numeric annexes, approved return/registration fields, capped-base and dividend-deferral implementation remain open; whole-country independent review is pending."
+  IT-CORP: "2026 corporate and formation writer drafts supply ordinary deductions, travel/asset methods, SRL registration/contributions, the corrected SA capital screen and annual-accounts duties; company-disposal scope and enacted VEN12 TP adjustment-row identities are now reconciled; unavailable numeric annexes, remaining approved return/registration fields, capped-base and dividend-deferral implementation remain open; whole-country independent review is pending."
   VAT: "2026 VAT writer draft and figure ledger prepared with the current 24-box VAT12 mapping; commencement, prorata-rounding and ordinary source/procedure gaps remain explicit; whole-country independent review is pending."
   SC: "2026 social/medical writer draft and ledger include State-insured categories/status procedure, selected 2026 comparisons and the service medical top-up; direct tariff annex evidence, ordinary reporting/refund forms, remaining implementation/commencement gaps and whole-country independent review remain open."
   PR: "2026 payroll writer draft and figure ledger prepared; cumulative withholding, ordinary MDL loan method and directly read current IALS21 column instructions/May amendment are supplied; actual reporting attachments/technical fields, foreign-currency loan and remaining benefit/procedure gaps stay explicit; whole-country independent review is pending."
-  TP: "2026 TP writer rewrite and figure ledger prepared: exclusions, methods, files, APA and corresponding-adjustment procedures sourced; full current form/role codes, retention and specific procedure gaps remain explicit; whole-country independent review is pending."
+  TP: "2026 TP writer rewrite and figure ledger prepared: exclusions, methods, files, APA and corresponding-adjustment procedures sourced; enacted VEN12 adjustment rows are linked separately from the TP information form; full current information-form/role codes, retention and specific procedure gaps remain explicit; whole-country independent review is pending."
   XB: "2026 cross-border writer rewrite and figure ledger prepared: residence, withholding, PE profit, foreign credits, mobility, monthly reporting and current salary-information instructions sourced; INR14 citizenship amendment/commencement read, while actual revised attachments, other approved forms and refund/departure procedures remain open; whole-country independent review is pending."
 ---
 
@@ -22,6 +22,8 @@ partial:
 Accountable owner: Michael. Assigned writer: ChatGPT under [OWNERS.md](../../../OWNERS.md). Eight existing Guides were present before this batch. Two missing core areas now have draft Guides: [transfer pricing](md-transfer-pricing.md) and [cross-border tax](md-cross-border.md). The new Guides are source-cited drafts, not independently reviewed or accountant-attested. Existing material remains unverified and partial; no domain is marked complete.
 
 All ten Guides now have 2026 writer drafts and two recomputing examples each: [corporate-income](md-corporate-income-tax.md), [social/medical](moldova-social-contributions.md), [individual-income](moldova-income-tax.md), [payroll](moldova-payroll.md), [VAT](moldova-vat.md), [transfer-pricing](md-transfer-pricing.md), [cross-border](md-cross-border.md), [formation](md-company-formation.md), [overview](md-tax-overview.md) and [tax planning](moldova-tax-optimization.md). Their figure ledgers ([corporate](../../../ledgers/md-corporate-income-tax.md), [social](../../../ledgers/moldova-social-contributions.md), [individual](../../../ledgers/moldova-income-tax.md), [payroll](../../../ledgers/moldova-payroll.md), [VAT](../../../ledgers/moldova-vat.md), [TP](../../../ledgers/md-transfer-pricing.md), [XB](../../../ledgers/md-cross-border.md), [formation](../../../ledgers/md-company-formation.md), [overview](../../../ledgers/md-tax-overview.md), [planning](../../../ledgers/moldova-tax-optimization.md)) retain predecessor-topic destinations. Formation corrects the old SA capital figure; the overview corrects the blanket resident-worldwide-income assumption. Planning supplies actual IT-park eligibility, monthly employee minimum, tax composition, transitions and comparisons instead of unsupported savings/blanket prohibitions. The ordinary tax/medical daily rate and the distinct social/IT-park late-charge rules are separately sourced. Stated ordinary form/annex and implementation gaps remain open. Source controls and complete topic mapping are writer evidence, not comprehensive coverage. No whole-country independent review has been completed for this expansion.
+
+The subsequently merged corporate PR #1008 is preserved and mapped separately in [its predecessor reconciliation](../../../ledgers/md-country-evidence/public-pr1008-predecessor-reconciliation.md). The local draft corrects its company/individual capital-gain scope and supplies enacted VEN12 adjustment-row changes from [MF Order 145/2024](https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro), read 30 October 2026. This reconciliation does not complete the ordinary form gaps or independent review.
 
 ## Domains
 

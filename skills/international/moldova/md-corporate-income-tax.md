@@ -1,7 +1,7 @@
 ---
 name: md-corporate-income-tax
 description: "Compute Moldova resident-company corporate income tax for 2026, including the ordinary taxable-profit reconciliation and the separate eligible non-VAT SME accounting-income regime. Use for regime and legal-category selection, business expenses, employee benefits, financing, depreciation, losses, foreign-tax credits, instalments, distributions and withholding. Distinguish company tax from shareholder withholding and the dividend-linked payment-deferral option. Establish actual tax-period, VAT, ownership, activity, profit-origin and payment facts before calculating. This source-cited writer draft preserves the earlier Guide subjects, states exact remaining ordinary and specialist gaps, and requires whole-country independent review before publication. It does not claim accountant attestation or comprehensive coverage."
-version: 0.4
+version: 0.5
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-30
@@ -12,11 +12,13 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 ---
 
-# Moldova corporate income tax, 2026 v0.4
+# Moldova corporate income tax, 2026 v0.5
 
 ## Who this applies to
 
 Compute ordinary resident-company profit tax and the separate eligible non-VAT SME income regime for 2026. Establish the taxpayer, elected regime and applicable period before calculating. Resident business entities include income from Moldova and abroad, less the deductions and exemptions they actually qualify for. Legal persons use accrual accounting. This is a source-cited writer draft, without accountant attestation or completed whole-country review. [Fiscal Code arts. 13–14, 44][code].
+
+A company is resident if its activity is organised or managed in Moldova, or Moldova is its principal place of activity. The ordinary income-tax period is the calendar year; a newly created business starts at registration. A lawful noncalendar accounting period has Code art. 12^1(4)–(6)'s separate eligibility, notification and transition requirements; liquidation, reorganisation and IT-park entry/exit have their own short-period rules. Do not use the excise article 121 in place of income-tax article 12^1. [Code arts. 5(5)(b), 12^1][code].
 
 The 7% rate belongs to the statutory **gospodărie țărănească (de fermier)** category. It is not a rate for every agricultural company. Individual entrepreneurs use the 12% annual taxable-income rule and their own personal/entity procedures; the corporate Guide does not replace the [individual-income Guide](moldova-income-tax.md). IT-park, free-zone, financial-sector and other special regimes require their own legal eligibility tests. Use [transfer pricing](md-transfer-pricing.md), [cross-border](md-cross-border.md), [VAT](moldova-vat.md), [payroll](moldova-payroll.md) and [social contributions](moldova-social-contributions.md) for the connected subjects, with each file's stated currency and gaps. [Arts. 15, 49, 54^1, 87(1^1)][code].
 
@@ -29,6 +31,7 @@ Amounts are MDL unless stated otherwise. A percentage does not establish which r
 | Ordinary company profit tax | 12% of taxable income | [Art. 15(b)][code] |
 | Statutory peasant-farm category | 7% of taxable income | [Art. 15(c)][code] |
 | Individual entrepreneur | 12% of annual taxable income | [Art. 15(a)][code] |
+| Income estimated under arts. 225 or 225^1 | 15% of the excess of the estimated income over the business's booked gross income; this is not the ordinary company rate | [Art. 15(d)][code] |
 | Eligible non-VAT SME regime | 4% of the defined accounting-income base, not ordinary taxable profit | [Arts. 54^2–54^3][code] |
 | SME election/mandatory-general threshold in art. 54^1(3)(a), (3^1) | 1.5 million in the text operative from 1 January through 26 March; 1.7 million from 27 March 2026. These tests use the specified previous-year supply income and conditions | [January Code][jan]; [Law 41/2026 art. I(1), X(1)][amend]; [27 March Code][mar] |
 | Business/management consultancy exclusion from SME regime | Prior-year CAEM 70.22 service income above 60% of sales income | [Art. 54^1(1)][code] |
@@ -54,6 +57,12 @@ Law 41's SME amendment took effect on publication, 27 March. Its separate medica
 9. **Settle the actual liability.** For ordinary profit tax, apply the legal rate to the positive reconciled taxable income after eligible losses. Match qualifying foreign-tax credit to the same taxed foreign income and period, capped at Moldova's tax on that income. Credit evidenced instalments and applicable advance payments, avoiding double credit. The dividend-linked payment deferral below changes payment timing; it does not make all retained profit exempt. [Arts. 15–16, 32, 81–84, 87][code].
 
 Article 24 also has specific stock-loss, environmental, infrastructure-transfer, audit/sector, stipend and liquidation rules. Their full special procedures are not certified by this draft. The ordinary Government procedures below resolve the identified representation, business-insurance, transport/food, development and donation-documentation gaps; the travel/asset procedures below are sourced; unavailable annex values, capped-base and actual-return implementation gaps stay explicit. Do not classify a payment from a vendor name or an assumed expense percentage.
+
+### Company disposals and the individual capital-gain boundary
+
+For an ordinary resident company, recognise the business disposal income and the admissible tax cost under the applicable company rules. **Do not remove half of a company’s share-disposal gain under art. 40(7).** Article 37 limits that capital-gains chapter to resident/nonresident **individuals who do not carry on business**; article 18(e)'s reference to art. 40(7) does not expand that taxpayer scope. The company's ordinary worldwide business-income and deduction rules remain arts. 14(1)(a), 18(a)/(o) and 24; depreciable property follows its separate tax-undepreciated-value method below. [Code arts. 14, 18, 24, 37–40][code].
+
+Keep the nonresident rules distinct as well. Article 71(1)(c) refers to art. 40(7) for the specified nonbusiness **individual** gains; article 71(1)(d) expressly refers to art. 40(1)–(4), excluding paragraph (7), for a nonresident **legal entity** disposing of the specified Moldovan assets. Determine source, tax basis, withholding and any treaty entitlement under the cross-border method; neither route creates a universal 50% company exclusion. [Code arts. 37, 40, 71(1)(c)–(d), 91][code]; [cross-border Guide](md-cross-border.md).
 
 ### Apply the ordinary deduction procedures
 
@@ -150,7 +159,9 @@ On disposal, determine tax undepreciated value from entry/capitalised cost less 
 
 **Dividend-linked company-tax deferral for 2023–2026 profit.** Test at the period's final day: at most 249 employees and turnover up to 100 million, or at most 249 employees and assets up to 100 million. The rule excludes the listed individual/farm, free-zone/free-port/free-airport, IT-park, SME-regime and financial/insurance taxpayers. It also excludes the stated section-G businesses above 49 employees and the applicable 50-million turnover/assets test. Exercise the option through the art. 83 return. Tax becomes payable by the 25th after the month dividends are paid, including share distributions. For profit originating in the 2026 tax period, apply the current statute's prorata of gross dividend paid to total pre-tax financial-statement profit for that origin period, rounded as the statute requires, to that period's calculated company tax. Preserve the origin-year profit/tax and all prior distributions. For distributions from earlier origin years, establish the version governing that year's election and calculation before selecting the denominator; this draft does not certify that the current pre-tax denominator applies retrospectively to every earlier year. Article 84(6) excludes this class from ordinary instalments for 2023–2026. Law 41 removed the old blanket sentence rejecting corrected returns aimed at changing the option, and its art. X(2) specifies retrospective-period application. Exact return-line prorata/rounding and corrected-election implementation remain an explicit draft gap; do not invent a calculation or ignore the option. [Arts. 84(6), 87(1^1)][code]; [Law 41 arts. I(2)–(3), X(2)][amend].
 
-**Approved ordinary business return.** MF Order 153/2017 approves VEN12 and its completion instructions as annexes 1–2. The latest consolidation displayed in the official register is amended by Order 145 of 29 November 2024, effective 5 December 2024. The enacting order was read; the separate form/instruction attachments were not retrieved, so their row-by-row mapping and the special-regime/deferral fields remain unconfirmed. Do not describe the approval page as verification of the actual return fields or use a superseded pre-2024 instruction. [MF Order 153/2017, consolidation 146095][ven12order].
+**Approved ordinary business return.** MF Order 153/2017 approves VEN12 and its completion instructions as annexes 1–2. The latest consolidation displayed in the official register is amended by Order 145 of 29 November 2024, effective 5 December 2024. The enacting order and actual amending Order 145/2024 were read; the separate consolidated form/instruction attachments were not retrieved, so full row-by-row mapping and the special-regime/deferral fields remain unconfirmed. Do not describe the approval page as verification of every return field or use a superseded pre-2024 instruction. [MF Order 153/2017, consolidation 146095][ven12order]; [Order 145/2024][ven12amend].
+
+**Verified transfer-pricing return rows.** Order 145/2024 adds VEN12 **annex 1D row 02020** for income adjusted under Code art. 226^23(1), and **annex 2D row 03047** for the corresponding expense adjustment. Completion-instruction points **51^1** and **100^1** identify those rows; points 52 and 101 extend their respective aggregation ranges to 02020 and 03047. The order entered into force on publication, **5 December 2024**, and applies from the **2024 reporting period**; its point 3 preserves the then-effective form for an obligation arising before approval/publication. Under Code art. 226^23(2), voluntary adjustments for prior periods also require corrected TP information/file and corrected tax returns under art. 188. Retain the adjustment calculation and year/form version; these verified row identities do not establish unobserved attachment columns, portal checks or the remainder of the return. [Order 145/2024 points 1–3][ven12amend]; [Code art. 226^23][code].
 
 Reconcile the approved current return to the general ledger, asset/loss/credit schedules and actual SFS account. Verify subdivision allocation under art. 84(3). Use the statute's special liquidation/reorganisation periods and deadlines where applicable. Filing instructions and portal access must come from the current approved form, not an old form label or bank description. [Arts. 54^4(5)–(6), 83–87][code].
 
@@ -271,6 +282,9 @@ Not yet confirmed: all 2026 commencement interactions beyond the selected transi
 [corpreg]: https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro
 [corpregjan]: https://www.legis.md/cautare/getResults?doc_id=150441&lang=ro
 [corpregamend]: https://www.legis.md/cautare/getResults?doc_id=154909&lang=ro
+MF Order 145/2024, points 1–3: actual enacted VEN12 income/expense adjustment rows and commencement. Read 30 October 2026: https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro.
+
+[ven12amend]: https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro
 [ven12order]: https://www.legis.md/cautare/getResults?doc_id=146095&lang=ro
 
 [travelreg]: https://www.legis.md/cautare/getResults?doc_id=145854&lang=ro

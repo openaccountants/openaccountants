@@ -1,7 +1,7 @@
 ---
 name: md-transfer-pricing
 description: Use this Guide for Moldova transfer-pricing affiliation, local and cross-border scope, the aggregate information threshold, statutory exclusions, method selection, comparability intervals and adjustments for 2026. It explains requested master and local files, electronic information filing, advance pricing agreements, corresponding adjustments and period-specific sanctions. Trigger on Moldova TP, affiliated transactions, the MDL20 million threshold, transfer-pricing information, an SFS file request or an APA. Reconcile actual transaction values and evidence rather than using net balances or an expired automatic file tier. Current source and implementation gaps remain explicit; this is a writer draft awaiting independent country-pack review.
-version: 0.2
+version: 0.3
 jurisdiction: MD
 category: transfer-pricing
 tax_year: 2026
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova transfer pricing v0.2
+# Moldova transfer pricing v0.3
 
 2026 writer draft, primary law read30October2026. The24October draft and its independent correction evidence are preserved; that review does not attest to this expanded country pack. This Guide provides the domestic TP computation/documentation method. Actual comparables, legal facts and any treaty relief must be evidenced before use.
 
@@ -94,6 +94,8 @@ Use the whole-group master information. Point51 permits the relevant group segme
 Retain contracts, invoices, accounting reconciliation, functional interviews, benchmark inputs, signed submissions, the actual SFS request and receipt and review evidence. The old six-years-from-file-presentation assertion came from an earlier226¹⁹(5), which now governs corrected information; it is **not recertified as the current statutory retention trigger**. The current retention rule is expressly unconfirmed below. Preserve the records pending resolution; do not destroy them on an assumed expiry.
 
 ## Deadlines and filing
+
+Reconcile a voluntary income/expense adjustment with the income-tax return as well as the TP information/file. The [corporate Guide](md-corporate-income-tax.md) identifies the VEN12 adjustment rows verified directly from enacted MF Order 145/2024. Those return rows are separate from the Order 9 annex-2 information form, whose unobserved fields/role codes remain a gap. [MF Order 145/2024, read 30 October 2026](https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro); [Code art. 226²³](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
 Use the actual tax period, including a legally adopted non-calendar fiscal period under art12¹, rather than the parent group's reporting calendar by default. The information deadline is the25th of month six after that period ends. Thus a calendar2026 period has a statutory25June2027 deadline before any applicable nonworking-day adjustment; a valid30June2026 period has25December2026 on that same basis. The taxpayer's actual fiscal-period eligibility and general calendar adjustment must be confirmed before fixing a live deadline. File-request due time is120days from the request but cannot fall before the information deadline; monitor the actual valid request/communication, not an informal conversation. [Code226¹⁹(2)–(3),12¹](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 

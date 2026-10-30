@@ -81,3 +81,38 @@ expected:
   listed_class_excess: 20000
   total_qualifying_insurance_deduction: 80000
 ```
+
+
+## Resident company disposal: repair the subsequently merged example's scope
+
+Writer control, independent legal review pending. Reuse only the hypothetical inputs in PR #1008's first example: an ordinary resident SRL with accounting profit 900,000 including an 80,000 share-disposal gain and a 15,000 statutory fine, no other adjustments/losses/credits, and 96,000 evidenced instalments. Assume the booked disposal gain already equals the ordinary tax result. Current Code arts. 14(1)(a), 18(a)/(o), 24, 30 and 37–40 do not give this SRL the nonbusiness individual's 50% exclusion. Add back the fine; retain the full booked gain. The counterfactual excluded-half result below is labelled wrong and retained solely to quantify the published example's error, not as an available company election.
+
+Primary source read 30 October 2026: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro (arts. 14, 18, 24, 30, 37–40, 83–84 and 87). Exact scope observations and the full incoming example are retained in the source ledger and predecessor reconciliation.
+
+```oa-check
+name: Moldova resident company capital gain scope and fine addback
+inputs:
+  accounting_profit_including_full_gain: 900000
+  statutory_fine: 15000
+  gain_already_in_profit: 80000
+  prior_year_tax: 96000
+  evidenced_instalments: 96000
+steps:
+  taxable_income: accounting_profit_including_full_gain + statutory_fine
+  ordinary_company_tax: taxable_income * 0.12
+  balance_due: ordinary_company_tax - evidenced_instalments
+  counterfactual_wrong_excluded_half: gain_already_in_profit * 0.50
+  counterfactual_wrong_company_tax: (taxable_income - counterfactual_wrong_excluded_half) * 0.12
+  understated_tax_from_wrong_scope: ordinary_company_tax - counterfactual_wrong_company_tax
+  instalment_comparison: min(prior_year_tax, ordinary_company_tax * 0.80)
+  instalment_shortfall: max(0, instalment_comparison - evidenced_instalments)
+expected:
+  taxable_income: 915000
+  ordinary_company_tax: 109800
+  balance_due: 13800
+  counterfactual_wrong_excluded_half: 40000
+  counterfactual_wrong_company_tax: 105000
+  understated_tax_from_wrong_scope: 4800
+  instalment_comparison: 87840
+  instalment_shortfall: 0
+```

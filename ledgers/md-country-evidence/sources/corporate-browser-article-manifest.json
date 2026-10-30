@@ -1893,6 +1893,30 @@
       "read_date": "2026-10-30",
       "format": "Exact JSON returned by read-only browser DOM observation; selected substantive tax/eligibility/worker/distribution provisions only; not whole-Code verification",
       "sha256": "070c93df87e6e8b4924a376ef0bacbb110ecd38da54ac8bca1198ba5c927c2ee"
+    },
+    "CORP-CAPITAL-SCOPE-20261030": {
+      "article": "CORP-CAPITAL-SCOPE-20261030",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T20:51:35.585Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected current company/capital scope and enacted VEN12 amendment only; not whole-Code verification",
+      "sha256": "f51db8d449a09ee9dc049f4d62f99201e4fb4c633c140217c6401e5074c093c9"
+    },
+    "CORP-VEN12-AMENDMENT145-2024": {
+      "article": "CORP-VEN12-AMENDMENT145-2024",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro",
+      "observed_utc": "2026-10-30T20:52:27.277Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected current company/capital scope and enacted VEN12 amendment only; not whole-Code verification",
+      "sha256": "e87dcb43410e73b687f82b7352b3815304499ac60226b71d18e5456f703d759a"
+    },
+    "CORP-COMPANY-RESIDENCE-20261030": {
+      "article": "CORP-COMPANY-RESIDENCE-20261030",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T20:53:16.119Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected current company/capital scope and enacted VEN12 amendment only; not whole-Code verification",
+      "sha256": "c35d9917aad47ee1e71a53f270f8cc13cf376da43efbfdc1eb52f2dcbaf534cb"
     }
   }
 }

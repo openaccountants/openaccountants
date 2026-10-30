@@ -2,7 +2,7 @@
   "status": "LOCAL2026 WRITER DRAFT; ordinary source/procedure gaps remain; whole-country review pending",
   "slug": "md-transfer-pricing",
   "Guide_path": "skills/international/moldova/md-transfer-pricing.md",
-  "Guide_sha256": "8985cc589fcd1c8936c4147872a3068ff17322306e24f9b56cc200de502e258c",
+  "Guide_sha256": "0dcc6b99e4f75410b8ac1ffefd57238795a9ec81a0bc68b04836d06a0eca0b8e",
   "rows": [
     {
       "id": "MD-TP-001",
@@ -4564,6 +4564,20 @@
         "calculation_control": "ledgers/md-country-evidence/late-rate-controls.md",
         "source_input": "ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-BASE.json"
       }
+    },
+    {
+      "id": "MD-TP-326",
+      "rule_or_figure": "VEN12returnadjustmentrowsdistinctfromTPinformationform;actualenactedamendmentandcommencement",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "MFOrder145/2024points1-3;corporateGuideverifiedVEN12rowmethod;notOrder9annex2",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro",
+      "exact_original_language_quote": "Republica Moldova MINISTERUL FINANȚELOR ORDIN Nr. 145 din 29-11-2024 cu privire la modificarea Ordinului ministrului finanțelor nr.153/2017 privind aprobarea formularului tipizat al Declaraţiei cu",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-AMENDMENT145-2024.json",
+      "source_text_sha256": "e87dcb43410e73b687f82b7352b3815304499ac60226b71d18e5456f703d759a",
+      "source_context": "Republica Moldova\nMINISTERUL FINANȚELOR\nORDIN Nr. 145\ndin 29-11-2024\ncu privire la modificarea Ordinului ministrului\nfinanțelor nr.153/2017 privind aprobarea\nformularului  tipizat al Declaraţiei cu privire\nla impozitul pe venit pentru agenţii economici\nPublicat : 05-12-2024 în Monitorul Oficial Nr. 506-508 art. 958\n\nÎn scopul executării prevederilor art.83 alin.(4) din Codul fiscal nr.1163/1997 (republicat în Monitorul Oficial al Republicii Moldova din 8 februarie 2007, ediţie specială), precum și în temeiul modificărilor operate prin Legea nr.214/2024 pentru modificarea unor acte normative (ce vizează politica bugetar-fiscală şi vamală) (Monitorul Oficial al R. Moldova nr. 355-357 art. 545 din 15.08.2024),\n\nORDON:\n\n1. Ordinul ministrului finanțelor nr.153/2017 privind aprobarea formularului tipizat al Declaraţiei cu privire la impozitul pe venit pentru agenţii economici (Monitorul Oficial al R. Moldova nr. 451-463 art. 2303 din 29.12.2017) se modifică după cum urmează:\n\n1) În Anexa nr.1,\n\na) Anexa 1D, după rândul 02019, se completează cu un rând nou 02020 cu următorul cuprins:\n\n„\n\nVenitul obținut în rezultatul ajustării conform art.22623 alin.(1) din Codul fiscal\n\n\t\n\n02020\n\n\t\n\n \n\n\t\n\n \n\n\t\n\n \n\n”          \n\nb) Anexa 2D, după rândul 03046, se completează cu un rând nou 03047 cu următorul cuprins:\n\n„\n\nCheltuieli înregistrate în rezultatul ajustării conform art.22623 alin.(1) din Codul fiscal\n\n\t\n\n03047\n\n\t\n\n \n\n\t\n\n \n\n\t\n\n \n\n”\n\n2) În Anexa nr.2,\n\na) După punctul 51, se completează cu punctul 511 cu următorul cuprins:\n\n„511. În rândul 02020 se reflectă ajustarea veniturilor conform prevederilor art.22623 alin.(1) din Codul fiscal.”;\n\nb) La punctul 52, textul „0201 – 02019” se substituie cu textul „0201 – 02020”;\n\nc) După punctul 100, se completează cu punctul 1001 cu următorul cuprins:\n\n„1001. În rândul 03047 se reflectă ajustarea cheltuielilor conform prevederilor art.22623 alin.(1) din Codul fiscal.”;\n\nd) La punctul 101, textul „0301 – 03046” se substituie cu textul „0301 – 03047”.\n\n2. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, iar modificările aprobate se pun în aplicare ncepând cu perioada fiscală de raportare 2024.\n\n3. Contribuabilii pentru care obligaţia de raportare survine până la aprobarea şi publicarea prezentului ordin, vor prezenta Declaraţia conform formularului în vigoare la data prezentării.\n\n \n\nMINISTRU                                                                                          Victoria BELOUS\n\n \n\nNr. 145. Chişinău, 29 noiembrie 2024.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     }
   ],
   "old_topic_destinations": [
@@ -4983,7 +4997,7 @@
   ],
   "baseline_old_units": 25,
   "old_bytes": 10169,
-  "new_bytes": 36560,
+  "new_bytes": 37122,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Duplicated early headings and120day explanation consolidated into the canonical nine sections.",

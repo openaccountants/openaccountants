@@ -2,7 +2,7 @@
 
 **Expanded2026 writer draft. Whole-country review, source/procedure gaps and accountant attestation remain open.**
 
-Guide SHA256: `8985cc589fcd1c8936c4147872a3068ff17322306e24f9b56cc200de502e258c`. The JSON retains each short exact original-language quote, full context, URL, read date and source hash. Review the whole rule and its application, including linked conditions and the expressly retained source conflicts.
+Guide SHA256: `0dcc6b99e4f75410b8ac1ffefd57238795a9ec81a0bc68b04836d06a0eca0b8e`. The JSON retains each short exact original-language quote, full context, URL, read date and source hash. Review the whole rule and its application, including linked conditions and the expressly retained source conflicts.
 
 |ID|Rule/figure or exact source-rule opening|Guide section|Act/article and official source|Short exact original-language quote|Read|
 |---|---|---|---|---|---|
@@ -331,6 +331,7 @@ Guide SHA256: `8985cc589fcd1c8936c4147872a3068ff17322306e24f9b56cc200de502e258c`
 | MD-TP-323 | Serviciul Fiscal de Stat informează despre lansarea formularului Informației privind prețurile de transfer în SIA „Declarația electronică” din cadrul Cabinetulu | Who this applies to; Deadlines and filing; Penalties and interest; Sources | [SFS12May2026 electronic information launch](https://www.sfs.md/ro/stiri/formularul-privind-preturile-de-transfer-disponibil-in-sia-declaratia-electronica) | Serviciul Fiscal de Stat informează despre lansarea formularului Informației privind prețurile de transfer în SIA „Declarația electronică” din cadrul Cabinetului personal al contribuabilului, care | 2026-10-30 |
 | MD-TP-324 | November2025short-term BNMbase6.00%;sourceinputfor2026Code228dailycalculation | Penalties and interest / Sources | [BNM6November2025 monetarypolicydecision point1](https://bnm.md/en/node/69226) | 06.11.2025 Decizia de politică monetară, 06.11.2025 Comitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat | 2026-10-30 |
 | MD-TP-325 | 2026ordinarydailypercentage0.0301%;decimalmultiplier0.000301,derivedfrom6%Novemberbase+5points/365days rounded4decimalplaces | Penalties and interest / Sources | [FiscalCode228(3);BNM6November2025point1;2026calendar365days](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | (3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de | 2026-10-30 |
+| MD-TP-326 | VEN12returnadjustmentrowsdistinctfromTPinformationform;actualenactedamendmentandcommencement | Deadlines and filing | [MFOrder145/2024points1-3;corporateGuideverifiedVEN12rowmethod;notOrder9annex2](https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro) | Republica Moldova MINISTERUL FINANȚELOR ORDIN Nr. 145 din 29-11-2024 cu privire la modificarea Ordinului ministrului finanțelor nr.153/2017 privind aprobarea formularului tipizat al Declaraţiei cu | 2026-10-30 |
 
 ## Complete predecessor-topic destinations
 
@@ -373,7 +374,7 @@ All25 original paragraph/table units and split original bullet fixtures/source c
 
 ## Removed and why
 
-Original 10169 bytes;draft 36560 bytes;more than25% shorter: False.
+Original 10169 bytes;draft 37122 bytes;more than25% shorter: False.
 - Duplicated early headings and120day explanation consolidated into the canonical nine sections.
 - Superseded source links replaced before the stamped marker; platform-owned old source list and attribution retained unchanged.
 - Old retention claim tied to repealed/replaced22619(5) made explicitly unconfirmed; no current six-year file-destruction claim.
