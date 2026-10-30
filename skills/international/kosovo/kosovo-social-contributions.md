@@ -5,24 +5,24 @@ description: >
 version: 0.2
 jurisdiction: XK
 tax_year: 2026
-last_updated: 2026-10-25
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - social-contributions-workflow-base
 category: international
 tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+license: AGPL-3.0-or-later (code) / OpenAccountants skill License v1.0 (content)
 ---
 
 # Kosovo social contributions v0.2
 
-Tax year **2026**, checked **24 October 2026**. Source-cited draft, tier 2;
-no licensed accountant has attested to this revision.
+Tax year **2026**. Checked against the law on **30 October 2026** (tier 2); no
+licensed accountant has signed it off.
 
 ## Who this applies to
 
-This Guide computes ordinary Kosovo Pension Savings Trust contributions for
+This skill computes ordinary Kosovo Pension Savings Trust contributions for
 covered employees and self-employed people. Law 04/L-101 art. 1 defines an
 employee by work under the employer's control and supervision, including
 part-time work, regardless of the contract's title. Article 6(1), (13) requires
@@ -35,7 +35,7 @@ Self-employed business income is covered by art. 6(12), including a business
 owner who allocates part of business income as wages. Do not substitute the
 company's corporate tax threshold for the individual's pension base. Pension
 benefit calculations and supplementary-fund investment arrangements are outside
-this contribution Guide. The new health-law implementation gap below keeps SC
+this contribution skill. The new health-law implementation gap below keeps SC
 partial for a complete 2026 social-contribution calculation.
 
 ## Rates, bands and thresholds
@@ -58,7 +58,9 @@ All money amounts are EUR. The minimum-wage figures change during 2026.
 
 The EUR 600 cap belongs to mandatory **real-income self-employment** contributions.
 It is not a ceiling on an employee's pensionable wage and not a EUR 24,000 annual
-employee income exemption.
+employee income exemption: Law 04/L-101, as amended by 04/L-115, 04/L-168 and
+05/L-116 (the full amendment list in the Official Gazette record), sets no
+maximum wage base for employee or employer contributions.
 
 ## The base
 
@@ -106,7 +108,7 @@ of operation, with phase contributions approved through the government and
 Assembly process. Article 22(2), (13) and (21) requires collection procedures.
 A statutory standard rate alone does not establish the operative collection
 period, phased rate or filing process. Obtain those instruments before adding
-a health deduction. This Guide supplies pension and wage-tax components and
+a health deduction. This skill supplies pension and wage-tax components and
 leaves final health-inclusive payroll open; it does not certify either a zero
 health liability or automatic collection at the standard rate
 ([10/L-028 arts. 21–22, 35–37](https://gzk.rks-gov.net/ActDetail.aspx?ActID=119938&langid=1)).
@@ -151,9 +153,10 @@ Use Law 08/L-257, not the repealed Law 03/L-222's penalty schedule.
 Late-payment interest runs for each month or part-month, for at most ten years.
 The Minister sets the rate at least annually and TAK publishes it. Under a
 compliant instalment agreement interest stops from the following month; default
-reinstates it. Apply the published rate for the liability period, not an old
+reinstates it. The rate must be higher than commercial bank lending rates in
+Kosovo (art. 24(3)). Apply the published rate for the liability period, not an old
 presentation or the rate for commercial debts ([08/L-257 art. 24](https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf)).
-The numeric 2026 tax-interest rate is not confirmed in this Guide. These fines
+These fines
 have distinct statutory triggers; do not automatically add every row to every
 correction.
 
@@ -163,7 +166,7 @@ The resident/temporary-foreign-employee distinction in Pension Funds Law art.
 6(13)–(14) must be tested independently of wage-tax residence. A wage-tax treaty
 relief does not itself establish exemption from pension contributions. Obtain
 the applicable social-security agreement, coverage certificate and relevant
-period before applying a cross-border exception. This Guide supplies no
+period before applying a cross-border exception. This skill supplies no
 universal expatriate exclusion or automatic foreign-contribution credit.
 Foreign employees with temporary stay are subject to the express prohibition
 in art. 6(14); other foreign-worker cases require the actual legal status.
@@ -233,22 +236,22 @@ expected:
 5. What health phase/collection instruments and cross-border coverage certificate apply to that period?
 6. Which TAK returns, payment receipts and Trust allocations are outstanding or inconsistent?
 
-Independent AI whole-pack review on 25 October 2026 accepted the corrected material for partial source-cited draft publication; this is not professional attestation.
 
 ## Sources
 
 | Official source and provisions read | URL | Read on |
 |---|---|---|
-| Pension Funds Law 04/L-101 arts. 1, 6 and 37 | https://bqk-kos.org/wp-content/uploads/2024/11/Law-on-Pension-Funds.pdf?lang=en | 2026-10-24 |
-| 04/L-168 art. 3, quarterly mandatory cap | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=8655 | 2026-10-24 |
-| 05/L-116 art. 10, replacement tax-treatment art. 37 | https://bqk-kos.org/wp-content/uploads/2024/11/Law-05-L116-on-Amending-and-Supplementing-The-Law-on-Pension-Funds-Of-Ko.pdf | 2026-10-24 |
-| PIT AI 01/2016 art. 37, pension deduction and voluntary limits | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=12233 | 2026-10-24 |
-| Decision 10/273 of 31 October 2025 para. 1, 2026 minimum wages | https://kryeministri.rks-gov.net/wp-content/uploads/2025/10/Vendimet-e-mbledhjes-se-273-te-te-Qeverise.pdf | 2026-10-24 |
-| Tax-procedure Law 08/L-257 arts. 24, 43(5), 99–103 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-24 |
-| Current TAK forms and deadlines; read in ordinary browser | https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/ | 2026-10-24 |
-| Current TAK IL calculator, owner-pension fields | https://crmm.atk-ks.org/en/Public/CalculatorDetail?id=4 | 2026-10-24 |
-| Compulsory Healthcare Insurance Law 10/L-028 arts. 9–11, 21–22, 35–37; actual Gazette PDF downloaded through its public form | https://gzk.rks-gov.net/ActDetail.aspx?ActID=119938&langid=1 | 2026-10-24 |
-| Official health fund copy of 10/L-028; full normalised text matches the Gazette download | https://fssh.rks-gov.net/wp-content/uploads/2026/05/LIGJI-PER-SIGURIMIN-E-DETYRUESHEM-TE-KUJDESIT-SHENDETESOR-2.pdf | 2026-10-24 |
+| Pension Funds Law 04/L-101 arts. 1, 6 and 37 | https://bqk-kos.org/wp-content/uploads/2024/11/Law-on-Pension-Funds.pdf?lang=en | 2026-10-30 |
+| 04/L-168 art. 3, quarterly mandatory cap | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=8655 | 2026-10-30 |
+| Gazette record of 04/L-101 and its amending acts | https://gzk.rks-gov.net/ActDetail.aspx?ActID=2815&langid=2 | 2026-10-30 |
+| 05/L-116 art. 10, replacement tax-treatment art. 37 | https://bqk-kos.org/wp-content/uploads/2024/11/Law-05-L116-on-Amending-and-Supplementing-The-Law-on-Pension-Funds-Of-Ko.pdf | 2026-10-30 |
+| PIT AI 01/2016 art. 37, pension deduction and voluntary limits | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=12233 | 2026-10-30 |
+| Decision 10/273 of 31 October 2025 para. 1, 2026 minimum wages | https://kryeministri.rks-gov.net/wp-content/uploads/2025/10/Vendimet-e-mbledhjes-se-273-te-te-Qeverise.pdf | 2026-10-30 |
+| Tax-procedure Law 08/L-257 arts. 24, 43(5), 99–103 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-30 |
+| Current TAK forms and deadlines; read in ordinary browser | https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/ | 2026-10-30 |
+| Current TAK IL calculator, owner-pension fields | https://crmm.atk-ks.org/en/Public/CalculatorDetail?id=4 | 2026-10-30 |
+| Compulsory Healthcare Insurance Law 10/L-028 arts. 9–11, 21–22, 35–37; actual Gazette PDF downloaded through its public form | https://gzk.rks-gov.net/ActDetail.aspx?ActID=119938&langid=1 | 2026-10-30 |
+| Official health fund copy of 10/L-028; full normalised text matches the Gazette download | https://fssh.rks-gov.net/wp-content/uploads/2026/05/LIGJI-PER-SIGURIMIN-E-DETYRUESHEM-TE-KUJDESIT-SHENDETESOR-2.pdf | 2026-10-30 |
 
 Not yet confirmed: operative 2026 health-insurance phase, contribution rates, collection commencement and filing instruments; numeric 2026 tax late-interest rate; foreign-worker/social-security agreement outcomes for a specified case. SC remains partial pending the health implementation evidence.
 

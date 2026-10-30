@@ -12,21 +12,24 @@ description: >
   and MAP requests. Covers current statutes and TAK's revised treaty-form
   procedure. The statutory service-PE proviso and specified implementation
   questions remain expressly unresolved; individual employment and sole-trader
-  calculations use the linked Kosovo Guides.
+  calculations use the linked Kosovo skills.
 jurisdiction: XK
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-25
+last_updated: 2026-10-30
 version: 0.2
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
 
 # Kosovo cross-border business income v0.2
 
-> **General reference only.** Source-cited draft for tax year 2026, without a
-> Kosovo professional's attestation. The ordinary corporate framework below
-> does not resolve the stated service-PE interpretation or every treaty and
-> transaction-specific implementing rule. Keep those cases open in the workpaper.
+Tax year **2026**, checked against the law on **30 October 2026** (tier 2; no
+licensed accountant has signed it off). Corporate Income Tax Law 06/L-105 has
+no amendment listed in the Official Gazette, so its 2019 text applies to 2026.
+The ordinary corporate framework below does not resolve the stated service-PE
+interpretation or every treaty and transaction-specific implementing rule.
+Keep those cases open in the workpaper.
 
 ## Who this applies to
 
@@ -49,7 +52,7 @@ business calculation is not a flat corporate rate
 
 ## Rates, bands and thresholds
 
-Domestic rules apply before a verified exemption or effective treaty. The
+Domestic rules apply before a confirmed exemption or effective treaty. The
 withholding base is gross compensation; the ordinary corporate base is net
 taxable income. The same payment must not be treated as both routes without
 establishing the correct classification.
@@ -130,7 +133,7 @@ performance. For eligible domestic gross-fee service withholding, calculate
 a net receipt after that tax, calculate `gross = promised net / (1 − rate)`,
 then withhold from gross. Contract wording does not remove the payer's duty.
 For a mixed-location or bundled contract, retain performance/value evidence;
-an unverified old-instruction percentage exception is not a current exemption
+an unconfirmed old-instruction percentage exception is not a current exemption
 ([arts. 31 and 33][law]).
 
 ### Foreign income and credit reconciliation
@@ -167,10 +170,10 @@ absence.
 
 | Obligation | Current rule | Authority |
 |---|---|---|
-| Article 33 monthly withholding statement/payment | Within fifteen days after the calendar month ends | [Art. 33(3)][law] |
+| Article 33 monthly withholding statement/payment | WR in EDI, within fifteen days after the calendar month ends (TAK: 1st to 15th) | [Art. 33(3)][law]; [TAK timetable][cal] |
 | Article 33 annual reconciliation | Before 1 March following the tax period under the original Albanian wording; include required certificate copies | [Art. 33(6), Albanian][alb] |
 | Article 33 certificate | On recipient request, before 1 March following the tax period | [Art. 33(5)][law] |
-| Article 31 interest/royalty/rent payment | By the 15th of the month after payment or credit | [Art. 31(2)–(3)][law] |
+| Article 31 interest/royalty/rent payment | WR in EDI, by the 15th of the month after payment or credit | [Art. 31(2)–(3)][law]; [TAK timetable][cal] |
 | Article 31 certificate | Before 1 March following the tax period | [Art. 31(5)][law] |
 | Ordinary corporate annual return and balance | 31 March of the following year under current rules | [Arts. 37–38][law] |
 | Corporate activity closure | Annual tax statement in the period when the business-deregistration application is submitted | [Art. 37(5)][law] |
@@ -232,7 +235,16 @@ conditions. Preserve residence and entitlement evidence supporting the tax
 position. A treaty's business-profit rule must not be substituted for a
 separate royalty, property or employment article without classification.
 Treaty-rate matrices and individual treaty case conclusions are outside
-this ordinary Guide.
+this skill.
+
+TAK's register lists 22 agreements for avoidance of double taxation: Albania,
+Austria, Belgium, Croatia, Czechia, Finland, Germany, Hungary, Ireland,
+Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, North Macedonia,
+Saudi Arabia, Slovenia, Switzerland, Turkey, the United Arab Emirates and the
+United Kingdom. The Italy agreement is new for 2026: in force from
+21 December 2025 and applicable from 1 January 2026. Belgium, Finland and
+Germany are listed as agreements continued from former Yugoslavia. Read the
+dates in the register for each agreement before relying on it.
 
 For taxation inconsistent with an applicable treaty, TAK's **MAP** procedure
 requires the request to the competent authority permitted by that treaty
@@ -245,13 +257,13 @@ acknowledgement within thirty days; acknowledgement is not the separate
 admissibility decision. It directs a printed Albanian submission to the
 International Relations Division at the headquarters address stated in the
 procedure. Keep domestic remedies and deadlines under separate review rather
-than assuming a MAP request pauses them ([TAK MAP guide, pp. 1–6][map]).
+than assuming a MAP request pauses them ([TAK MAP guide, pp. 1–5][map]).
 
 Transfer-pricing corresponding adjustments need their own eligibility and
 application evidence; see [transfer pricing](xk-transfer-pricing.md). VAT place
 of supply, imports/reverse charge and employee coverage use the relevant
 [VAT](kosovo-vat.md), [payroll](kosovo-payroll.md) and
-[social-contributions](kosovo-social-contributions.md) Guides.
+[social-contributions](kosovo-social-contributions.md) skills.
 
 ## Two worked examples that recompute
 
@@ -319,16 +331,17 @@ expected:
 
 | Official source and provisions read | URL | Read on |
 |---|---|---|
-| Current CIT 06/L-105 arts. 3–10, 22–33, 37–41, Gazette record and TAK PDF | https://gzk.rks-gov.net/ActDetail.aspx?ActID=20988 ; https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf | 2026-10-25 |
-| Original Albanian CIT arts. 30 and 33, service-PE proviso and annual deadline | https://gzk.rks-gov.net/ActDetail.aspx?ActID=20988&langid=1 | 2026-10-25 |
-| PIT 05/L-028 arts. 2–6, individual/employment routing; amended bands are in the PIT Guide | https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf | 2026-10-25 |
-| Procedure 08/L-257 arts. 24, 99–103 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-24 |
-| TAK revised WR / DTA-form procedure, 23 January 2025, read in ordinary browser | https://www.atk-ks.org/en/notice-to-taxpayers-the-wr-form-for-withholding-taxes-has-been-modified/ | 2026-10-25 |
-| TAK current treaty register with separate force/application dates, read in ordinary browser | https://www.atk-ks.org/marreveshjet/marreveshjet-nderkombetare/ | 2026-10-25 |
+| Current CIT 06/L-105 arts. 4–8, 22–33, 37–38, Gazette record (no amendments listed) and TAK PDF | https://gzk.rks-gov.net/ActDetail.aspx?ActID=20988 ; https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf | 2026-10-30 |
+| Original Albanian CIT arts. 30 and 33, service-PE proviso and annual deadline | https://gzk.rks-gov.net/ActDetail.aspx?ActID=20988&langid=1 | 2026-10-30 |
+| PIT 05/L-028 arts. 2–6, individual/employment routing; amended bands are in the PIT skill | https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf | 2026-10-25 |
+| Procedure 08/L-257 arts. 24, 99–103 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-30 |
+| TAK revised WR / DTA-form procedure, 23 January 2025 | https://www.atk-ks.org/en/notice-to-taxpayers-the-wr-form-for-withholding-taxes-has-been-modified/ | 2026-10-30 |
+| TAK current treaty register (22 agreements) with separate force/application dates | https://www.atk-ks.org/marreveshjet/marreveshjet-nderkombetare/ | 2026-10-30 |
+| TAK deadline timetable, WR from the 1st to the 15th of each month | https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/ | 2026-10-30 |
 | Malta–Kosovo treaty art. 7, TAK Albanian scan, pp. 8–9, visually read | https://www.atk-ks.org/wp-content/uploads/2019/07/MARR%C3%8BVESHJE_QRK_MALTA.pdf | 2026-10-25 |
-| TAK MAP procedure, request, evidence, acknowledgements and submission route, pp. 1–6 | https://www.atk-ks.org/wp-content/uploads/2022/11/Njoftim-per-tatimpagues-mbi-procedurat-e-MAP.pdf | 2026-10-25 |
+| TAK MAP procedure, request, evidence, acknowledgements and submission route, pp. 1–5 | https://www.atk-ks.org/wp-content/uploads/2022/11/Njoftim-per-tatimpagues-mbi-procedurat-e-MAP.pdf | 2026-10-30 |
 
-Not yet confirmed: authoritative resolution of CIT art. 30(3.2)'s service-day/individual-presence interaction; current general PE profit-allocation implementing instructions beyond the express statute and cited treaty illustration; current mixed-location service apportionment instructions; residence/asset-migration and final branch-closure implementation; numeric 2026 late-interest rate. Individual treaty conclusions need their actual agreement and evidence. Independent AI whole-pack review on 25 October 2026 accepted the corrected material for partial source-cited draft publication; this is not professional attestation. XB stays partial for the identified ordinary implementation gaps.
+Not yet confirmed: authoritative resolution of CIT art. 30(3.2)'s service-day/individual-presence interaction; current general PE profit-allocation implementing instructions beyond the express statute and cited treaty illustration; current mixed-location service apportionment instructions; residence/asset-migration and final branch-closure implementation; numeric 2026 late-interest rate. Individual treaty conclusions need their actual agreement and evidence.
 
 [law]: https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf
 [alb]: https://gzk.rks-gov.net/ActDetail.aspx?ActID=20988&langid=1
@@ -338,3 +351,4 @@ Not yet confirmed: authoritative resolution of CIT art. 30(3.2)'s service-day/in
 [treaties]: https://www.atk-ks.org/marreveshjet/marreveshjet-nderkombetare/
 [mt]: https://www.atk-ks.org/wp-content/uploads/2019/07/MARR%C3%8BVESHJE_QRK_MALTA.pdf
 [map]: https://www.atk-ks.org/wp-content/uploads/2022/11/Njoftim-per-tatimpagues-mbi-procedurat-e-MAP.pdf
+[cal]: https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/

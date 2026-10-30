@@ -1,26 +1,28 @@
 ---
 name: kosovo-income-tax
 description: >
-  Compute Kosovo personal income tax for 2026 individuals, sole traders and partners from the current Personal Income Tax Law and its amendments. Covers residence, worldwide and Kosovo-source income, progressive annual bands, small-business gross taxation, the actual-income election, allowable expenses, capital allowances, losses, rent, royalties, gifts, inheritance, capital gains, instalments and foreign tax credits. Separates personal business income from corporate income tax, routes wages and pension contributions to their current Guides, and identifies the outdated donation label in the tax authority calculator. Use for annual PD or DI returns, IS or IL advances, self-employment, investment disposals, taxable transfers and income-tax reconciliation.
+  Compute Kosovo personal income tax for 2026 individuals, sole traders and partners from the current Personal Income Tax Law and its amendments. Covers residence, worldwide and Kosovo-source income, progressive annual bands, small-business gross taxation, the actual-income election, allowable expenses, capital allowances, losses, rent, royalties, gifts, inheritance, capital gains, instalments and foreign tax credits. Separates personal business income from corporate income tax, routes wages and pension contributions to their current skills, and identifies the outdated donation label in the tax authority calculator. Use for annual PD or DI returns, IS or IL advances, self-employment, investment disposals, taxable transfers and income-tax reconciliation.
 version: 0.2
 jurisdiction: XK
 tax_year: 2026
-last_updated: 2026-10-25
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 category: international
 tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+license: AGPL-3.0-or-later (code) / OpenAccountants skill License v1.0 (content)
 ---
 
 # Kosovo personal income tax v0.2
 
-Tax year **2026**, checked **24 October 2026**. Source-cited draft, tier 2;
-no licensed accountant has attested to this revision. The operative PIT law is
+Tax year **2026**. Checked against the law on **30 October 2026** (tier 2); no
+licensed accountant has signed it off. The operative PIT law is
 **05/L-028**, amended by **08/L-142**. The 2015 PDF's original four-band table
-has been replaced; it is not the current rate schedule.
+has been replaced; it is not the current rate schedule. 08/L-142 entered into
+force on publication, 23 August 2024 (art. 7), and it is the only act amending
+05/L-028 in the Official Gazette record.
 
 ## Who this applies to
 
@@ -33,7 +35,7 @@ Residents are taxed on worldwide taxable income; non-residents on Kosovo-
 source taxable income. Determine the source and applicable treaty rather
 than using the bank-account location as the test ([05/L-028 arts. 2–4](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf)).
 
-This Guide covers ordinary individual income, sole-trader computation and
+This skill covers ordinary individual income, sole-trader computation and
 partnership allocation. Legal entities use
 [xk-corporate-income-tax](xk-corporate-income-tax.md). Wages and pension
 components use [kosovo-payroll](kosovo-payroll.md) and
@@ -66,6 +68,7 @@ Amounts are EUR; rates and thresholds below apply to 2026 unless stated.
 | Non-business rent deemed cost option | 10% of gross rent; quarterly tax is 10% of the remaining base, less withholding | [PIT arts. 27, 44](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf) |
 | Interest/royalty withholding | 10%, subject to statutory exemptions and an applicable treaty | [PIT art. 39(1)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf); [AI 01/2016 art. 38](https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=12233) |
 | Rent withholding by an obliged payer | 9% of gross rent | [PIT art. 39(4)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf) |
+| Special-category withholding by a business natural person | 3% of gross payments to non-business farmers and collectors of recycling materials, berries, herbs and similar; WR by the 15th of the next month; certificate by 1 March | [PIT art. 40](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf) |
 | Non-exempt resident gifts | Other-income inclusion where annual value exceeds EUR 5,000; specified family/education exemptions | [PIT art. 14(2)–(4)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf) |
 
 Separate income-tax boundaries from VAT's registration test. A low turnover does
@@ -174,7 +177,7 @@ Wage PIT is calculated after employee pension deduction. Ordinary monthly
 principal-employer bands correspond to the current annual bands; secondary
 withholding is 10% of taxable wages. Government pensions are not the same as
 Trust pension withdrawals: the latter have PIT withholding rules in art. 38
-and AI art. 37(5). Use the payroll Guide for the computation and certificate.
+and AI art. 37(5). Use the payroll skill for the computation and certificate.
 
 ## Deadlines and filing
 
@@ -188,7 +191,14 @@ and AI art. 37(5). Use the payroll Guide for the computation and certificate.
 | Wage/other source withholding | WM/CM or WR as applicable, by the 15th following the month | [PIT arts. 38–41](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf); [TAK timetable](https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/) |
 | Real-income election / approved return to gross method | 1 March of the relevant year; new-business first-return election exception | [PIT art. 33(3)–(4)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf) |
 
-Use TAK EDI after obtaining the required registration. Full business records
+Use TAK EDI after obtaining the required registration. Every person carrying
+on an economic activity also submits its purchase and sales books electronically:
+monthly if VAT-registered, otherwise every three months (LB/LSH by the 15th after
+the quarter); a missing book is fined under 08/L-257 art. 101(1)
+([08/L-257 art. 43(3)–(4)](https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf)). A filing date that falls on a
+non-business day moves to the next business day (08/L-257 art. 13(7)). An error
+found later is corrected by an amended declaration within three years of the
+mandatory filing date, with any extra tax paid with it (08/L-257 art. 14(2), (5)). Full business records
 include sales, purchases, cash diaries, capital/depreciation records and
 necessary financial records. Gross-method businesses still keep minimum
 sales, purchase and cash records (PIT arts. 33–34).
@@ -224,9 +234,9 @@ in the specified cases. Failure to withhold/pay over tax or pension has its
 ([08/L-257 arts. 99–103](https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf)).
 
 Article 24 accrues interest by month or part-month, for at most ten years, at
-the Minister's rate published by TAK. A compliant instalment agreement stops
-interest from the following month; default reinstates it. The numeric 2026
-rate is not verified here. Do not use an old late-filing percentage or a
+the Minister's rate published by TAK; the law requires that rate to be higher
+than commercial bank lending rates in Kosovo (art. 24(3)). A compliant instalment agreement stops
+interest from the following month; default reinstates it. Do not use an old late-filing percentage or a
 commercial-debt reference rate as current tax interest.
 
 PIT art. 43(7) separately governs inadequate business advances, including the
@@ -249,8 +259,7 @@ VAT, pension or unrelated-country charge as income-tax credit
 A personal-business related-party adjustment follows PIT art. 35's open-market
 rule and stated method sequence. Do not automatically replace it with the
 corporate statute's best-method wording. The cross-border and transfer-pricing
-Guides address the related corporate framework and nonresident withholding;
-check their status before relying on a retained scoped draft.
+skills address the related corporate framework and nonresident withholding.
 
 Actual asset sales remain subject to art. 31, and entity/form changes can
 forfeit losses under art. 26(5). These provisions do not alone prove either a
@@ -331,17 +340,19 @@ expected:
 
 | Official source and provisions read | URL | Read on |
 |---|---|---|
-| PIT Law 05/L-028 arts. 2–48; use the replacement art. 6 below | https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf | 2026-10-24 |
-| Law 08/L-142 art. 5, current progressive PIT bands | https://gzk.rks-gov.net/ActDetail.aspx?ActID=96360&langid=2 | 2026-10-24 |
-| PIT AI 01/2016 arts. 14–20, 26–38, 44–48 | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=12233 | 2026-10-24 |
-| Current tax-procedure Law 08/L-257 arts. 24, 99–103 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-24 |
-| TAK current rates and forms timetable, read in ordinary browser | https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/ | 2026-10-24 |
-| TAK IL24 layout, 110% prior-year option and pension base | https://crmm.atk-ks.org/en/Public/CalculatorDetail?id=34 | 2026-10-24 |
-| TAK PD24 layout; donation label conflict identified above | https://crmm.atk-ks.org/en/Public/CalculatorDetail?id=35 | 2026-10-24 |
-| Pension Funds Law 04/L-101 art. 6(12) | https://bqk-kos.org/wp-content/uploads/2024/11/Law-on-Pension-Funds.pdf?lang=en | 2026-10-24 |
-| Pension amendment 04/L-168 art. 3 | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=8655 | 2026-10-24 |
+| PIT Law 05/L-028 arts. 2–48; use the replacement art. 6 below | https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf | 2026-10-30 |
+| Law 08/L-142 art. 5, current progressive PIT bands | https://gzk.rks-gov.net/ActDetail.aspx?ActID=96360&langid=2 | 2026-10-30 |
+| PIT AI 01/2016 arts. 14–20, 26–38, 44–48 | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=12233 | 2026-10-30 |
+| Current tax-procedure Law 08/L-257 arts. 13–14, 24, 43, 99–103 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-30 |
+| TAK current rates and forms timetable, read in ordinary browser | https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/ | 2026-10-30 |
+| TAK IL24 layout, 110% prior-year option and pension base | https://crmm.atk-ks.org/en/Public/CalculatorDetail?id=34 | 2026-10-30 |
+| TAK PD24 layout; donation label conflict identified above | https://crmm.atk-ks.org/en/Public/CalculatorDetail?id=35 | 2026-10-30 |
+| Pension Funds Law 04/L-101 art. 6(12) | https://bqk-kos.org/wp-content/uploads/2024/11/Law-on-Pension-Funds.pdf?lang=en | 2026-10-30 |
+| Pension amendment 04/L-168 art. 3 | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=8655 | 2026-10-30 |
 
-Not yet confirmed: numeric 2026 tax late-interest rate; filing treatment of the PD24 donation-field conflict; case-specific residence exit/cessation treatment; operative health phase for a final payroll/contribution result. Independent AI whole-pack review on 25 October 2026 accepted the corrected material for partial source-cited draft publication; this is not professional attestation.
+| Gazette record of 05/L-028: 08/L-142 is the only amending act | https://gzk.rks-gov.net/ActDetail.aspx?ActID=11014&langid=2 | 2026-10-30 |
+
+Not yet confirmed: numeric 2026 tax late-interest rate; filing treatment of the PD24 donation-field conflict; case-specific residence exit/cessation treatment; operative health phase for a final payroll/contribution result.
 
 <!-- openaccountants-cta-block -->
 

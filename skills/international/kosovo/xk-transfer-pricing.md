@@ -6,14 +6,15 @@ jurisdiction: XK
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-25
+last_updated: 2026-10-30
 version: 0.5
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
 
 # Kosovo transfer pricing v0.5
 
-Tax year **2026**, checked **24 October 2026**. Source-cited draft, tier 2;
-no licensed accountant has attested to this revision. Corporate Law 06/L-105
+Tax year **2026**, checked against the law on **30 October 2026** (tier 2).
+No licensed accountant has signed off this revision. Corporate Law 06/L-105
 controls where the older Instruction 02/2017 differs. TAK expressly applies
 that instruction in its 30 March 2026 controlled-transactions notice.
 
@@ -64,8 +65,9 @@ instruction's strict-greater-than boundary, with the current notice as
 corroboration. Exactly EUR 300,000 does not satisfy that wording. Retain this
 conflict with the workpaper and the transaction reconciliation; it does not
 remove the statute's documentation duty or any other reporting obligation.
-The instruction prints two articles numbered 28: the heading and PDF page
-identify which is meant (corresponding adjustments pp. 40–43; notification p. 44).
+The instruction prints two articles numbered 28: the heading identifies which
+is meant (first art. 28, Relevant adjustments; second art. 28, Controlled
+Transactions Notice).
 
 ## The base
 
@@ -182,11 +184,11 @@ a newly published 2027 operational instruction
 
 Current TAK notice/FAQ directs physical submission to its Central Office,
 Archives Office, Department for Transfer Pricing and Digital Economy, at
-Dëshmorët e Kombit/Bill Klinton, Prishtina. The notice links the form currently
-listed by TAK, dated 15 February 2023. Use the actual reporting year in the
-old year-placeholder template and retain the signed form, attachments and
-receipt. The instruction allows the channel determined by TAK; this Guide
-has not filed or tested EDI and does not invent an electronic submission route.
+Dëshmorët e Kombit/Bill Klinton, Prishtina. The notice points to the form on TAK's
+Forms page; the version linked is the 2023 English form. Use the actual
+reporting year in the template and keep the signed form, attachments and
+receipt. The instruction allows the physical or electronic channel determined
+by TAK; the 30 March 2026 notice requires submission in person.
 Check the operational notice applicable when making the later-year filing.
 
 Prepare the documentation separately and make it available within thirty days
@@ -228,9 +230,9 @@ compliance; an assessment abroad does not automatically grant Kosovo relief.
 That instruction provides a three-month response from receipt of a qualifying
 request, with reasons for rejection, and preserves applicable treaty procedures
 and deadlines. Identify the actual treaty and competent-authority route before
-calculating its limitation period; this Guide supplies no invented universal
-MAP filing period ([06/L-105 art. 28(6)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf);
-[Instruction, first art. 28(1)–(6), PDF pp. 40–43](https://gzk.rks-gov.net/ActDetail.aspx?ActID=14937&langid=2)).
+calculating its limitation period; there is no universal Kosovo MAP filing
+period to apply ([06/L-105 art. 28(6)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf);
+[Instruction, first art. 28(1)–(6)](https://gzk.rks-gov.net/ActDetail.aspx?ActID=14937&langid=2)).
 
 Keep treaty relief, WHT, PE attribution and VAT distinct from transfer-pricing
 valuation. The related-income inclusion does not establish a withholding
@@ -301,14 +303,14 @@ expected:
 
 ## Sources
 
-| Official source and provisions read | URL | Read on |
+| Source | URL | Read on |
 |---|---|---|
-| Current Corporate Income Tax Law 06/L-105 arts. 3(1.18), 7, 28, 37–38 | https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf | 2026-10-24 |
-| Personal Income Tax Law 05/L-028 art. 35, distinct individual method rule | https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf | 2026-10-24 |
-| Instruction 02/2017, complete arts. 1–31; specified-jurisdiction Annex 1 and notification Annex 2 | https://gzk.rks-gov.net/ActDetail.aspx?ActID=14937&langid=2 | 2026-10-24 |
-| TAK current FAQ 46–49, read in normal browser; threshold conflict identified above | https://www.atk-ks.org/en/transferimi-i-cmimit/ | 2026-10-24 |
-| TAK notice of 30 March 2026, read in normal browser; 2025 notification and physical channel | https://www.atk-ks.org/en/notice-to-taxpayers-report-controlled-transactions-4/ | 2026-10-24 |
-| Official form currently linked by TAK, 15 February 2023; full form/completion guidance read | https://www.atk-ks.org/wp-content/uploads/2023/02/ENG-Njoftimi-Vjetor-per-Transaksionet-e-Kontrolluara.docx | 2026-10-24 |
-| Tax-procedure Law 08/L-257 arts. 24, 100–102 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-24 |
+| Law 06/L-105 on Corporate Income Tax, arts. 3(1.18), 7, 28, 37–38 | https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf | 2026-10-30 |
+| Law 05/L-028 on Personal Income Tax, art. 35 | https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf | 2026-10-30 |
+| Administrative Instruction MF 02/2017 on Transfer Pricing, arts. 5, 24, 27, both arts. 28, 29; Annexes 1 and 2 (Official Gazette text) | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=14937&langid=2 | 2026-10-30 |
+| TAK transfer pricing FAQ 46–49 | https://www.atk-ks.org/en/transferimi-i-cmimit/ | 2026-10-30 |
+| TAK notice of 30 March 2026: notification above EUR 300,000, 2025 deadline, in-person channel | https://www.atk-ks.org/en/notice-to-taxpayers-report-controlled-transactions-4/ | 2026-10-30 |
+| TAK Annual Controlled Transactions Notification form (English, 2023) | https://www.atk-ks.org/wp-content/uploads/2023/02/ENG-Njoftimi-Vjetor-per-Transaksionet-e-Kontrolluara.docx | 2026-10-30 |
+| Law 08/L-257 on Tax Administration and Procedures, arts. 24, 100–102 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-30 |
 
-Not yet confirmed: numeric 2026 tax late-interest rate; loan-threshold measurement where opening/closing balances change notification status; standalone country-by-country reporting and advance-pricing applicability/procedures; case-specific treaty route/deadline. Independent AI whole-pack review on 25 October 2026 accepted the corrected material for partial source-cited draft publication; this is not professional attestation.
+Not yet confirmed: numeric 2026 tax late-interest rate; loan-threshold measurement where opening/closing balances change notification status; standalone country-by-country reporting and advance-pricing applicability/procedures; case-specific treaty route/deadline.

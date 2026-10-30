@@ -5,7 +5,7 @@ description: >
 version: 2.1
 jurisdiction: XK
 tax_year: 2026
-last_updated: 2026-10-25
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -15,9 +15,13 @@ category: international
 
 # Kosovo VAT v2.1
 
-Tax year **2026**, checked **24 October 2026**. Source-cited draft, tier 2;
-no licensed accountant has attested to this revision. Apply VAT Law 05/L-037
-with the 2024 amendment 08/L-276, not the original PDF in isolation.
+Tax year **2026**, checked against the law on **30 October 2026** (tier 2;
+no licensed accountant has signed off this revision). Kosovo VAT (TVSH, tatimi
+mbi vlerën e shtuar) is charged and paid in EUR. Apply VAT Law 05/L-037 with
+the amendment 08/L-276 (published 27 December 2024, in force fifteen days
+later under its art. 55), not the original PDF in
+isolation. The Official Gazette lists no other amendment to the VAT law in
+force for 2026.
 
 ## Who this applies to
 
@@ -32,8 +36,11 @@ A Kosovo-established taxable person must register when calendar-year turnover
 exceeds the threshold; notify TAK within fifteen calendar days, effective from
 the crossing date. Do not use a rolling twelve-month test, wait until the next
 month or charge the full year's previously below-threshold receipts. Aggregate
-the individual's businesses/locations under the registration rules. Eligible
-persons below the boundary can register voluntarily (arts. 6–8).
+the individual's businesses/locations under the registration rules. A person
+who does not notify in time is registered compulsorily by TAK with retroactive
+effect from the date the threshold was exceeded (art. 7(2)). Eligible persons
+below the boundary can register voluntarily; TAK registers them from the date
+it receives the request (arts. 6–8).
 
 For the registration calculation, AI 03/2015 art. 7(1) includes supplies at
 all rates and supplies exempt with or without input-credit rights. Do not
@@ -46,7 +53,7 @@ and register within five days after appointment and before activity starts,
 except where the only supplies fall within the recipient-liability cases in
 art. 52(1.2)–(1.3) (arts. 6(5), (7)–(8), 52(5)).
 
-This Guide supplies the ordinary VAT calculation, including mixed use,
+This skill supplies the ordinary VAT calculation, including mixed use,
 imports/exports, foreign services and domestic construction reverse charge.
 Travel-agent/used-goods margins, flat-rate farmers, investment gold, tourist
 refunds and the Albanian electricity-exchange special regime need their own
@@ -60,26 +67,41 @@ and period conditions.
 | Item | Figure or rule | Official authority |
 |---|---|---|
 | Standard VAT | 18% | [05/L-037 art. 26(1)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
-| Reduced VAT | 8%, only for listed supplies/imports and classifications; not all food, medical or IT expenditure | [Art. 26(2)–(3)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf); [AI 03/2015 art. 36 and Annex 1](https://gzk.rks-gov.net/ActDetail.aspx?ActID=11079) |
+| Reduced VAT | 8%, only for the supplies and imports listed in art. 26(2) (below) and Annex 1 of the instruction; not all food, medical or IT expenditure | [Art. 26(2)–(3)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf); [AI 03/2015 art. 36 and Annex 1](https://gzk.rks-gov.net/ActDetail.aspx?ActID=11079) |
+| Exempt with input recovery (no output VAT) | Exports, international vessel/aircraft supplies, international air and rail passenger transport, diplomatic/international-organisation/NATO-KFOR supplies, irrigation and Annex IV agricultural inputs | [Arts. 31–35, 36(3.2)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | Domestic compulsory registration | Calendar-year turnover above EUR 30,000 | [Arts. 6–7](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | Registration notification | Fifteen calendar days from the obligation; effective crossing date | [Art. 7](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | Foreign supplier representative/registration | Five days after appointment and before activity, subject to recipient-liability exception | [Art. 6(5)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | Ordinary period and return/payment | Calendar month; by the following month's 20th | [Arts. 53–54](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | Omitted input deduction | No later than the final tax period of the following calendar year | [Art. 38(2)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | Mixed private/business car costs | Maximum 50% input recovery, subject to use/eligibility | [Art. 36(5.2)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
-| Capital adjustment period | Five calendar years for capital goods; twenty for immovable property, including first-use year | [Art. 41(2)–(4)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
+| Capital adjustment period | Five calendar years for capital goods; twenty for immovable property, including first-use year; no annual adjustment where the difference in the deductible proportion is less than 3% of the input VAT | [Art. 41(2)–(4)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | Ordinary VAT-credit refund conditions | Three consecutive credit months; credit exceeds EUR 3,000 at end of third month; all past returns filed | [Art. 40(1)–(2.1)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | Exporter refund route | Each period if credit exceeds EUR 3,000, customs/VAT compliance and past returns complete | [Art. 40(2.2)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | General overpayment refund claim/review | Claim within three years of payment/right arising; TAK review within thirty calendar days | [08/L-257 art. 26(3)–(4)](https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf) |
 | VAT bad-debt timing | At least six months after the relevant VAT period; initiate declaration procedures within twenty-four months of payment obligation | [05/L-037 art. 43](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf); [AI art. 64](https://gzk.rks-gov.net/ActDetail.aspx?ActID=11079) |
 | Records | At least six years; immovable-property documents twenty years under VAT-specific rules | [Arts. 56–57](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 
-The reduced list includes specified water (not bottled), electricity and related
-services, grains and named food products, books/publications and specified
-IT/medical goods. Use the actual legal description and Annex 1 code. Determine
-an import exemption first: art. 29(1.11)–(1.12) and AI art. 48 separately cover
-qualifying production raw materials and IT equipment. A reduced domestic rate
-is not proof that an otherwise exempt import bears that rate.
+The 8% list in art. 26(2) covers, for supply and import: water other than
+bottled water; electricity including transmission and distribution, central
+heating, waste collection and other waste treatment; grains (barley, maize,
+oats, rye, rice, wheat); grain products for human consumption (flour, pasta,
+bread and similar); cooking oils from grains or oilseeds; dairy products; salt
+for human consumption; eggs; textbooks and serial publications; books,
+library lending and specified printed matter; information technology
+equipment; medicines, pharmaceutical products and medical/surgical instruments
+and devices; and medical equipment and aids for exclusive use by disabled
+persons (including repair) and children's car seats. Use the actual legal
+description and Annex 1 code. Any other taxable supply or import is 18%.
+
+Agricultural inputs are not 8% items. Irrigation of farming land and the
+goods in Annex IV of the law (breeding animals, seed, animal feed,
+fertilisers, plant-protection products and listed agricultural machinery)
+are exempt with input recovery (art. 33(2), art. 36(3.2)), and their import is
+exempt (art. 29(2)). Determine an import exemption first: art. 29(1.10)–(1.12)
+and AI art. 48 separately cover production lines and machinery, qualifying
+production raw materials and IT equipment. A reduced domestic rate is not
+proof that an otherwise exempt import bears that rate.
 
 ## The base
 
@@ -112,24 +134,43 @@ changes with linked debit/credit notes and adjust both parties' VAT records
 Classify three different outcomes: domestic taxable supply, exemption without
 input recovery, and export/treatment carrying recovery. General B2B services
 whose place is outside Kosovo are not a domestic zero-rated sale merely
-because the customer is foreign. Arts. 27–28 exempt specified public-interest,
-financial, insurance and property transactions, with their conditions. Hotel
-accommodation, parking, permanently installed equipment, safe boxes and
-commercial immovable-property leasing (other than land) are excluded from the
-art. 28 leasing exemption. A residential label does not decide every property
-transaction ([Arts. 27–28](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf)).
+because the customer is foreign. Arts. 27–28 exempt, without input recovery,
+specified public-interest, financial, insurance and property transactions,
+with their conditions. They include hospital and medical care, dental
+technicians' services and dental prostheses, welfare, education and vocational training by recognised bodies,
+newspapers and periodicals, public radio/television, public transport at
+state-fixed prices, life and health insurance and reinsurance (not other
+insurance classes), lending, payments, deposits, currency and securities
+dealings (not debt collection), postal and fiscal stamps at nominal value,
+gambling, land, residential houses/apartments, and leasing of immovable
+property. Hotel accommodation, parking, permanently installed equipment and
+machinery, safe boxes and commercial immovable-property leasing (other than
+land) are excluded from the leasing exemption, so residential leasing stays
+exempt and commercial leasing is taxable. International road passenger
+transport is exempt without recovery under art. 28(4), unlike international
+air and rail passenger transport, which art. 33(4) exempts with recovery. A
+residential label does not decide every property transaction
+([Arts. 27–28, 33](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf)).
 
 Deduct eligible input VAT only when it is chargeable, the necessary invoice
 or customs SAD is held, and the goods/services serve transactions with a
-right to deduct. Article 36(3) preserves recovery for the specified foreign
+right to deduct. Import VAT is paid at customs at the same 18% or 8% rate as
+the domestic supply and is deducted only with an SAD naming the taxable person
+as consignee or importer (arts. 26(2), 36(2.2), 37(2.1), 52(3)). Article 36(3) preserves recovery for the specified foreign
 activities and exports; do not disallow export inputs just because no domestic
 output VAT is collected. No deduction arises from VAT wrongly charged by an
 unauthorised supplier or above the lawful amount, even if paid. Correct the
 supplier document instead (arts. 36–38).
 
-Directly attribute inputs first. Block private-only costs and representation
-meals/drinks/accommodation under art. 36(5), apply mixed-car restrictions and
-immovable-property business-use apportionment, then apply art. 39 to genuinely
+Directly attribute inputs first. Art. 36(5.1) blocks input VAT on sport and
+recreation yachts and boats, private aircraft, and cars and motorcycles used
+only for non-business purposes, with their fuel, lubricants, spare parts and
+closely linked services. It does not block vehicles used for leasing, renting
+or resale, driving-school vehicles, or public and special line transport
+vehicles (the last only for the share used in that activity). Block
+representation costs (hosting and entertainment, including food, drinks and
+accommodation) under art. 36(5.3), limit mixed private/business cars to 50%
+under art. 36(5.2), apply immovable-property business-use apportionment, then apply art. 39 to genuinely
 shared taxable/exempt inputs. Its ordinary proportion is eligible turnover
 divided by eligible plus non-eligible turnover, with the statutory denominator
 and exclusions. Exclude business capital-asset disposals and incidental
@@ -140,7 +181,8 @@ methods require the specified TAK authority/notification and records
 ([Arts. 36(4)–(5), 39](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf)).
 
 Adjust capital input tax over one-fifth or one-twentieth each year for the
-change in recovery entitlement; test art. 41(4)'s small-difference exception.
+change in recovery entitlement; under art. 41(4) no adjustment is made where
+the difference in the deductible proportion is less than 3% of the input VAT.
 A capital disposal during the adjustment period can require a single
 remaining-period adjustment. New-registration stock credit needs an inventory,
 supporting invoices and the conditions in art. 42; that stock deduction does
@@ -153,8 +195,9 @@ simply leaving the assets out of the final return.
 Bad-debt relief is not automatic after six unpaid months. Establish court-
 procedure requirements/the art. 43(5) EUR 500 exception, collection efforts,
 proper timing and the bad-debt invoice. Related-party bad debts and repeated
-transactions with the same debtor are restricted; AI art. 64(2) provides the
-stated public-interest-business exception. Start declaration procedures within
+transactions with the same debtor are restricted; AI art. 64(2) disapplies
+the repeated-transactions restriction (art. 43(6.1)) for businesses carrying
+out activities of general interest. Start declaration procedures within
 twenty-four months. A later recovery creates the corresponding restored VAT
 and linked "bad debt paid" invoice. The original Albanian art. 43(6.2) says
 **related parties**; the English PDF's "contracted parties" mistranslation
@@ -165,7 +208,12 @@ Carry excess eligible credit forward or claim a refund when the statutory
 conditions are met. The ordinary and exporter routes in art. 40 are distinct;
 keep all prior returns, customs and invoice evidence. Apply the general
 procedure art. 26 to tax-debt offsets, claim time limits, thirty-day review
-and refund interest where due. A pending supported refund is not permission
+and refund interest where due. Under 08/L-257 art. 26(7), where a taxpayer has
+been in credit for more than three consecutive months and owes tax debt above
+EUR 5,000, TAK assesses the VAT credit, applies a valid credit against the debt
+and refunds the rest. TAK retains a refund while required evidence is missing
+or the return data is documented as incorrect, with no late-refund interest
+for that retention period (VAT art. 40(3)). A pending supported refund is not permission
 to stop filing, and a credit balance alone does not prove an immediate cash
 entitlement. Document any legally retained amount and the reason
 ([VAT art. 40](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf); [08/L-257 art. 26](https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf)).
@@ -177,6 +225,7 @@ entitlement. Document any legally retained amount and the reason
 | Compulsory/voluntary VAT registration | Notify within fifteen calendar days of compulsory trigger; voluntary registration effective on valid request | [Arts. 6–8](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | VAT return/payment | TV through TAK EDI, by 20th following the monthly period | [Arts. 53–54](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf); [TAK timetable](https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/) |
 | Purchase/sales books | LB and LSH monthly, by 20th with the VAT cycle | [TAK current timetable](https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/); [08/L-257 art. 43](https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf) |
+| VAT refund request | KRR form, from the 1st to the 20th of the month, once the art. 40 conditions are met | [Art. 40](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf); [TAK timetable](https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/) |
 | Invoice | Before the 15th of the month following the chargeable-event month | [Art. 44(4)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | Cessation notice | Within fifteen days after activity ceases | [Art. 9(3)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
 | Optional deregistration | Prior calendar-year supplies below threshold; TAK approval, two-month effect; minimum registration lock-in applies | [Art. 9(1)–(2)](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf) |
@@ -215,7 +264,7 @@ or a rate for commercial debts.
 ## Cross-border points
 
 Goods without transport are located where present on supply; transported
-goods generally where dispatch begins, with installation/assembly and gas/
+goods where dispatch or transport to the customer begins, with installation/assembly and gas/
 electricity exceptions (art. 19). General B2B services follow the recipient's
 business/receiving fixed establishment; general B2C follows the supplier.
 Immovable property, event admission/activities, transport, catering and short-
@@ -223,7 +272,7 @@ term vehicle hire have the specific art. 20 rules. Obtain the actual service
 and establishments before applying a foreign-customer shortcut.
 
 For Kosovo-place supplies by a non-established supplier to a Kosovo VAT-
-registered recipient, art. 52(1.2) normally makes the recipient liable, with
+registered recipient, art. 52(1.2) makes the recipient liable, with
 its express event-admission exception. Self-assess output VAT and separately
 test input recovery; equal output and input is conditional on full entitlement,
 not inherent in reverse charge. An unregistered recipient does not inherit
@@ -235,7 +284,11 @@ taxable persons fall within recipient liability, regardless of contract date.
 The amendment deleted the old construction-permit limitation. The supplier
 issues a referenced reverse-charge invoice; the recipient accounts for VAT
 and tests recovery. Do not extend that rule to every material-only sale or
-to a consumer ([VAT art. 52](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf); [AI art. 70](https://gzk.rks-gov.net/ActDetail.aspx?ActID=11079);
+to a consumer. Art. 52(1.4) also lets the Minister extend recipient liability
+by sub-legal act to staff supplied for construction, scrap and waste, goods
+given as security, retention-of-title goods and, as split out by 08/L-276
+art. 48, immovable property sold by a judgment debtor in a compulsory sale.
+Apply those categories only where an implementing act covers them ([VAT art. 52](https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf); [AI art. 70](https://gzk.rks-gov.net/ActDetail.aspx?ActID=11079);
 [AI 06/2016 art. 6](https://gzk.rks-gov.net/ActDetail.aspx?ActID=13130)).
 
 Export goods require actual dispatch/customs evidence under art. 31; a foreign
@@ -247,8 +300,8 @@ production/IT approval procedures in AI art. 48.
 For foreign electronic/telecom/broadcast supplies to Kosovo consumers, apply
 the specific place rule. Law 08/L-276 art. 49 replaced VAT art. 61 with authority
 for a ministerial special scheme; the original 2015 scheme text is not the
-current provision. This Guide does not certify an unverified simplified
-registration route. Tourist refund commencement is also separate: AI 01/2018
+current provision. This skill does not cover a simplified registration
+route whose implementing act is not confirmed here. Tourist refund commencement is also separate: AI 01/2018
 art. 2 replaced the earlier fixed date with a capacity/infrastructure condition
 for AI art. 51. Both are named specialist scope limits, not a basis to assume
 no VAT on an otherwise taxable supply
@@ -322,16 +375,18 @@ expected:
 
 | Official source and provisions read | URL | Read on |
 |---|---|---|
-| VAT Law 05/L-037 arts. 3–9, 19–29, 31, 36–57 | https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf | 2026-10-24 |
-| Original Albanian law, art. 43(6.2) related-party restriction | https://gzk.rks-gov.net/ActDetail.aspx?ActID=11015&langid=1 | 2026-10-24 |
-| Law 08/L-276 arts. 48–49, amended VAT arts. 52 and 61 | https://gzk.rks-gov.net/ActDetail.aspx?ActID=100032&langid=2 | 2026-10-24 |
-| AI 03/2015 arts. 7, 36, 48, 51, 64–66, 70 and Annex 1; read with amendments below | https://gzk.rks-gov.net/ActDetail.aspx?ActID=11079 | 2026-10-24 |
-| AI 06/2016 arts. 4–6, construction amendment and prior tourist-date provision | https://gzk.rks-gov.net/ActDetail.aspx?ActID=13130 | 2026-10-24 |
-| AI 01/2018 art. 2, replacement tourist-refund commencement condition | https://gzk.rks-gov.net/ActDetail.aspx?ActID=16042 | 2026-10-24 |
-| Current tax-procedure Law 08/L-257 arts. 24, 26, 43, 99–101 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-24 |
-| TAK current TV/LB/LSH timetable, read in ordinary browser | https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/ | 2026-10-24 |
+| VAT Law 05/L-037 arts. 3–9, 19–43, 44, 52–57 and Annex IV | https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L-037_ON_VALUE_ADDED_TAX___ANNEX.pdf | 2026-10-30 |
+| Official Gazette record of 05/L-037 and its amendments (only 08/L-276 listed) | https://gzk.rks-gov.net/ActDetail.aspx?ActID=11015&langid=2 | 2026-10-30 |
+| Original Albanian law, art. 43(6.2) related-party restriction | https://gzk.rks-gov.net/ActDetail.aspx?ActID=11015&langid=1 | 2026-10-30 |
+| Law 08/L-276 arts. 48–49 and 55, amended VAT arts. 52 and 61 | https://gzk.rks-gov.net/ActDetail.aspx?ActID=100032&langid=2 | 2026-10-30 |
+| AI 03/2015 arts. 7 and 64 (registration turnover, bad-debt 24 months and general-interest exception) | https://gzk.rks-gov.net/ActDetail.aspx?ActID=11079 | 2026-10-30 |
+| AI 03/2015 arts. 36, 48, 51, 65–66, 70 and Annex 1; read with amendments below | https://gzk.rks-gov.net/ActDetail.aspx?ActID=11079 | 2026-10-24 |
+| AI 06/2016 arts. 4–6, construction amendment and prior tourist-date provision | https://gzk.rks-gov.net/ActDetail.aspx?ActID=13130 | 2026-10-30 |
+| AI 01/2018 art. 2, replacement tourist-refund commencement condition | https://gzk.rks-gov.net/ActDetail.aspx?ActID=16042 | 2026-10-30 |
+| Current tax-procedure Law 08/L-257 arts. 24, 26, 43, 99–101 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-30 |
+| TAK current TV/LB/LSH/KRR timetable | https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/ | 2026-10-30 |
 
-Not yet confirmed: numeric 2026 tax late-interest rate; current instruments for the amended electronic-services special scheme and tourist-refund operational commencement. These named specialist procedures require their own evidence. Independent AI whole-pack review on 25 October 2026 accepted the corrected material for partial source-cited draft publication; this is not professional attestation.
+Not yet confirmed: numeric 2026 tax late-interest rate; current instruments for the amended electronic-services special scheme and tourist-refund operational commencement; whether any sub-legal act implements recipient liability under VAT art. 52(1.4.2)–(1.4.7) beyond construction services (AI 03/2015 art. 70); full current Annex 1 code list of AI 03/2015 for 8% goods.
 
 <!-- openaccountants-cta-block -->
 

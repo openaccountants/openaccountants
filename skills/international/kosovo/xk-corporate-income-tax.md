@@ -7,48 +7,44 @@ description: >
   profit to taxable income, track depreciation and carried losses, and prepare
   quarterly instalments and the annual settlement. Use for Kosovo company
   tax, corporate returns, real-income elections and quarterly advance-payment
-  questions. The draft covers 2026 using Law 06/L-105, current tax-authority
-  forms and the current tax-procedure statute. It includes ordinary assets,
-  bad debts, donations, distributions and liquidation. Construction, leasing,
-  gross-interest reporting and remaining implementing-rule questions are
-  explicitly pending. Independent AI review accepted the corrected material
-  for publication as a partial source-cited draft; professional attestation
-  remains outstanding.
+  questions. Covers 2026 using Law 06/L-105, current tax-authority forms and
+  the current tax-procedure statute. It includes ordinary assets, bad debts,
+  donations, distributions and liquidation. Gross-interest reporting and the
+  remaining implementing-rule questions are listed as not yet confirmed.
 jurisdiction: XK
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-25
+last_updated: 2026-10-30
 version: 0.2
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
 
 # Kosovo corporate income tax v0.2
 
-Tax year **2026**, checked **25 October 2026**. Source-cited draft, tier 2;
-no licensed accountant has attested to this revision.
+Tax year **2026**, checked against the law on **30 October 2026** (tier 2).
+No licensed accountant has signed off this revision.
 
 ## Who this applies to
 
-This source-cited draft covers ordinary corporations and other business enterprises with legal personality under Law 06/L-105, Article 4. Resident taxpayers are taxed on Kosovo and foreign-source taxable income; non-residents on Kosovo-source income. Entity residence includes establishment in Kosovo under Article 3(1.13.2). A foreign business needs a separate permanent-establishment assessment under Article 30. Do not apply the company's calculation to a sole proprietor without first determining the correct taxpayer regime. [Articles 3–5][law]
+This skill covers ordinary corporations and other business enterprises with legal personality under Law 06/L-105, Article 4. Resident taxpayers are taxed on Kosovo and foreign-source taxable income; non-residents on Kosovo-source income. Entity residence includes establishment in Kosovo under Article 3(1.13.2). A foreign business needs a separate permanent-establishment assessment under Article 30. Do not apply the company's calculation to a sole proprietor without first determining the correct taxpayer regime. [Articles 3–5][law]
 
-The current Gazette record lists Law 06/L-105 and its repeal of 05/L-029,
-without a later amending act listed. TAK's current overview identifies
-06/L-105 as the corporate law. Both were read on 24 October 2026. This is
-evidence about those current official records, not a conclusion from a missing
-search result that no special rule can exist. The older 2016 corporate
-instruction implements the repealed statute. Positive post-2019 TAK answers
-apply the construction ruling and describe finance/operating leases, as set
-out below. General legal continuity of the old instruction, gross-interest
-reporting and the other specified implementation questions remain open.
-The pack therefore keeps IT-CORP partial. [Current Gazette record][record];
-[TAK current overview][overview].
+Law 06/L-105 is the corporate income tax law in force for 2026. The Official
+Gazette record lists it as repealing 05/L-029 and lists no later amending act;
+TAK's current overview and its laws list name 06/L-105 as the corporate law.
+The 2016 corporate instruction (AI 02/2016) implements the repealed statute.
+Post-2019 TAK answers apply the construction ruling and describe finance and
+operating leases, as set out below. The legal continuity of the old
+instruction, gross-interest reporting and the other implementing questions
+are listed under Not yet confirmed, so the pack keeps IT-CORP partial.
+[Current Gazette record][record]; [TAK current overview][overview].
 
 ## Rates, bands and thresholds
 
 | Test or payment | Rule | Authority |
 |---|---|---|
 | Real-income corporate tax | 10% of taxable income | [06/L-105 art. 7][law] |
-| Mandatory real-income regime | Annual gross turnover exceeds EUR 30,000 | [Arts. 35 and 38(3)][law] |
+| Mandatory real-income regime | Annual gross income exceeds EUR 30,000; applies for that period and at least three following periods | [Arts. 35(1), (3) and 38(3)][law] |
 | Small-company trade, transport, agriculture and similar activities | 3% of quarterly gross income; minimum EUR 37.50 for an income-bearing quarter | [Art. 38(2.1.1)][law] |
 | Small-company services, professional, vocational, entertainment and similar activities | 9% of quarterly gross income; minimum EUR 37.50 for an income-bearing quarter | [Art. 38(2.1.2)][law] |
 | Small-company rent | 10% of net rent, less relevant withholding | [Art. 38(2.1.3)][law] |
@@ -67,11 +63,13 @@ The pack therefore keeps IT-CORP partial. [Current Gazette record][record];
 
 A qualifying small taxpayer can elect the real-income books/records regime. An existing taxpayer applies before 1 March of the chosen tax period; a new taxpayer's first quarterly statement communicates the election. The election year and at least three following tax periods are covered. Crossing EUR 30,000 similarly brings the crossing year and at least three following periods into real-income treatment. [Articles 35(2)–(3), 38(3)][law]
 
-Returning to small-business books requires the statutory conditions and TAK
-approval **before** 1 March. The original Albanian art. 35(4) says income
-in the **last period** must be below EUR 30,000; the English translation
-says last quarter. Use the original period wording and retain TAK's approval
-with the turnover/election history. A low quarter alone does not end the
+A return to small-business books is allowed only after three years have
+passed from the period of the election (or of the crossing), when income in
+the **last period** is below EUR 30,000, and with TAK approval granted
+**before** 1 March of the year concerned. The original Albanian art. 35(4)
+says last period ("periudhën e fundit"); the English translation says last
+quarter. Use the original period wording and keep TAK's approval with the
+turnover and election history. A low quarter alone does not end the
 continuing real-income obligation. [Article 35(4), original Albanian][albanian];
 [English translation][law]
 
@@ -103,7 +101,7 @@ is taxable. Issue the required **"Bad Debt" invoice/document for the
 uncollected amount, referencing the original invoice number; it supports the
 seller's income reduction and the purchaser's expense/cost reduction. An
 unsupported ledger write-off is insufficient, and the same relief must not
-be counted twice. [Article 13(1.6), (2)][law]
+be counted twice. [Article 13(1)–(3)][law]
 
 Related-party interest, rent and other charges are deductible at the **lower
 of actual payment and open-market amount**, rather than increasing an expense
@@ -191,7 +189,7 @@ Retain a separate contract schedule for value, forecast costs, period costs,
 recognised income, advances, units/sales, stock and final reconciliation.
 Barter is not invisible because no cash changes hands: the ruling requires
 market-value income/expense when the exchange occurs (p. 8). VAT construction
-reverse charge and chargeable events are separate; use the VAT Guide.
+reverse charge and chargeable events are separate; use the VAT skill.
 
 Contractual retention is not income until received or the contractor is
 entitled to receive it. Early payment is income on receipt. An amount paid
@@ -261,18 +259,18 @@ rather than automatically adding every penalty. [Arts. 99–103][procedure]
 Late interest runs for each month or part-month, at most ten years, at the
 Minister's rate published by TAK. A compliant instalment agreement stops it
 from the following month; default reinstates it. The numeric 2026 tax-interest
-rate is not verified here. Do not substitute the repealed procedure statute's
+rate is on the Not yet confirmed line. Do not substitute the repealed procedure statute's
 penalty schedule or a commercial-debt reference rate. [Art. 24][procedure]
 
 ## Cross-border points
 
-Controlled transactions require arm's-length profit and documentation under Article 28. Article 29 provides a foreign-tax credit limited to the Kosovo tax attributable to the foreign income and gives applicable treaties precedence. Articles 31–33 contain separate withholding obligations. Treaty eligibility, current treaty rates, permanent establishments and detailed transfer-pricing procedures need their own verified workpapers; none is marked covered by this Guide. [Articles 28–33][law]
+Controlled transactions require arm's-length profit and documentation under Article 28. Article 29 provides a foreign-tax credit limited to the Kosovo tax attributable to the foreign income and gives applicable treaties precedence. Articles 31–33 contain separate withholding obligations. Treaty eligibility, treaty rates and permanent establishments are in the [cross-border skill](xk-cross-border.md); the transfer-pricing notice, documentation and methods are in the [transfer-pricing skill](xk-transfer-pricing.md). [Articles 28–33][law]
 
 ## Two worked examples that recompute
 
 ### 1. Ordinary profit and annual settlement
 
-Assume a resident company in the real-income regime, no exempt/special income, accounting profit EUR 40,000 after a EUR 2,000 non-deductible public fine and EUR 8,000 accounting depreciation. Independently verified tax depreciation is EUR 10,000. A EUR 5,000 carried loss survives all conditions. The tax base is EUR 35,000, tax EUR 3,500 and balance EUR 900 after EUR 2,400 advances and EUR 200 allowable withholding credit. Depreciation and loss eligibility are case assumptions, not inferred from the arithmetic.
+Assume a resident company in the real-income regime, no exempt/special income, accounting profit EUR 40,000 after a EUR 2,000 non-deductible public fine and EUR 8,000 accounting depreciation. Tax depreciation from the asset schedule is EUR 10,000. A EUR 5,000 carried loss survives all conditions. The tax base is EUR 35,000, tax EUR 3,500 and balance EUR 900 after EUR 2,400 advances and EUR 200 allowable withholding credit. Depreciation and loss eligibility are case assumptions, not inferred from the arithmetic.
 
 ```oa-check
 name: Kosovo corporate profit and settlement bridge
@@ -337,21 +335,22 @@ expected:
 
 ## Sources
 
-| Official source and provisions read | URL | Read on |
+| Source | URL | Read on |
 |---|---|---|
-| Law 06/L-105 arts. 3–13, 15–29, 35–41; cross-border arts. 30–33 | [Official TAK PDF][law] | 2026-10-24 |
-| Current Gazette law record, repeal relationship; no later amendment listed there | [Gazette record][record] | 2026-10-24 |
-| Original Albanian art. 35(4), last-period wording versus English quarter | [Gazette original][albanian] | 2026-10-25 |
-| Current rates and filing timetable, read in ordinary browser | [TAK overview][overview] | 2026-10-24 |
-| Current corporate declaration layout and credit reconciliation | [TAK CD layout][cd] | 2026-10-24 |
-| Tax-procedure Law 08/L-257 arts. 24, 99–103 | [Official TAK PDF][procedure] | 2026-10-24 |
-| Public Ruling 02/2019, contractor/investor methods and retention, pp. 8, 13 and 20 | [TAK ruling][construction] | 2026-10-25 |
-| Current-law construction application, ATK27334/2023 | [TAK FAQ][construction-faq] | 2026-10-25 |
-| Retention treatment, ATK27829/2024 | [TAK FAQ][retention-faq] | 2026-10-25 |
-| Finance lease, ATK26322/2021, art. 6(2.2) interpretation | [TAK FAQ][finance-lease] | 2026-10-25 |
-| Operating lease, ATK28224/2025, with citation error disclosed above | [TAK FAQ][operating-lease] | 2026-10-25 |
+| Law 06/L-105 on Corporate Income Tax, arts. 3–38 (official TAK PDF of Official Gazette No. 15/2019) | https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf | 2026-10-30 |
+| Official Gazette record for 06/L-105: repeals 05/L-029, no later amending act listed | https://gzk.rks-gov.net/ActDetail.aspx?ActID=20988&langid=2 | 2026-10-30 |
+| Law 06/L-105, original Albanian text, arts. 35(4) and 36(1) | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=20988 | 2026-10-30 |
+| TAK laws list (06/L-105 as current corporate law) | https://www.atk-ks.org/en/legislation/laws/ | 2026-10-30 |
+| TAK general information on taxes: CIT rates, EUR 30,000 threshold, QS/QL/CD timetable | https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/ | 2026-10-30 |
+| TAK CD annual corporate declaration layout (boxes 37, 38, 41) | https://crmm.atk-ks.org/en/Public/CalculatorDetail?id=9 | 2026-10-30 |
+| Law 08/L-257 on Tax Administration and Procedures, arts. 24, 99–103 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-30 |
+| TAK Public Ruling 02/2019 on long-term construction contracts, pp. 8, 13 and 20 | https://www.atk-ks.org/wp-content/uploads/2019/02/VendimiShpjeguesPublik.pdf | 2026-10-30 |
+| TAK answer ATK27334/2023 (construction, art. 6(2.1)) | https://www.atk-ks.org/en/pyetje/?wpfaqpage=120 | 2026-10-30 |
+| TAK answer ATK27829/2024 (retention payments) | https://www.atk-ks.org/en/pyetje/?wpfaqpage=151 | 2026-10-30 |
+| TAK answer ATK26322/2021 (finance lease, 75% and 90% tests) | https://www.atk-ks.org/pyetje-te-shpeshta/?dy=20&mcat=all&month=04&time=day&wpfaqpage=49&yr=2021 | 2026-10-30 |
+| TAK answer ATK28224/2025 (operating lease, art. 31 citation error) | https://www.atk-ks.org/en/pyetje/?wpfaqpage=183 | 2026-10-30 |
 
-Not yet confirmed: current ministerial instrument/legal continuity for special reporting, beyond the cited positive TAK construction/lease applications; gross-interest recognition/reporting; prescribed post-education employment period; numeric 2026 tax-interest rate; case-specific treaty and departure/cessation treatment. Independent AI whole-pack review on 25 October 2026 accepted the corrected material for partial source-cited draft publication; this is not professional attestation. IT-CORP remains partial for the stated implementing-rule gaps.
+Not yet confirmed: current ministerial instrument/legal continuity for special reporting, beyond the cited positive TAK construction/lease applications; gross-interest recognition/reporting; prescribed post-education employment period; numeric 2026 tax-interest rate; case-specific treaty and departure/cessation treatment. IT-CORP remains partial for these implementing-rule gaps.
 
 [law]: https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf
 [gazette]: https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=20988
