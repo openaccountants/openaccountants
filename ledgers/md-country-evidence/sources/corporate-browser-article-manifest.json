@@ -1725,6 +1725,38 @@
       "observed_utc": "2026-10-30T19:23:02.241Z",
       "format": "Consecutive exact bounded DOM JSON slices joined without overlap or omission",
       "sha256": "c74be8a7d532db9b0d348079f89789cf38ba3005956dd50a442e59e4b5f35396"
+    },
+    "IALS21-CURRENT-ORDER95": {
+      "article": "IALS21-CURRENT-ORDER95",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154297&lang=ro",
+      "observed_utc": "2026-10-30T20:02:48.048Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; linked form/classifier attachments not retrieved",
+      "sha256": "2da8eba37bc7c8ef4dc061cdfd1ecaf845130868a5c83a0f3f36f71364e64864"
+    },
+    "INR14-AMENDMENT48-2025": {
+      "article": "INR14-AMENDMENT48-2025",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=148862&lang=ro",
+      "observed_utc": "2026-10-30T20:02:55.350Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; linked form/classifier attachments not retrieved",
+      "sha256": "aff90bd59bd2f5188226d470560224d7ecd3aba9cee497a31db395b512b0a4d7"
+    },
+    "IALS21-AMENDMENT59-2026": {
+      "article": "IALS21-AMENDMENT59-2026",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154274&lang=ro",
+      "observed_utc": "2026-10-30T20:03:04.217Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; linked form/classifier attachments not retrieved",
+      "sha256": "d8b0cb0fd54e0dfd601020da3cf4d181aa83868697a6dc7bb9ca6dbcfc306155"
+    },
+    "IALS21-PRE2026-ORDER95": {
+      "article": "IALS21-PRE2026-ORDER95",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=145086&lang=ro",
+      "observed_utc": "2026-10-30T20:03:04.217Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; linked form/classifier attachments not retrieved",
+      "sha256": "7697d64acdd8aefc2fecab0e6c36ee067c9e886a9e50240aacaa36f69ac7c07d"
     }
   }
 }

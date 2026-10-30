@@ -2,7 +2,7 @@
 
 **Expanded2026 writer draft. Whole-country review, ordinary source/procedure gaps and accountant attestation remain open.**
 
-Guide SHA256: `3911999abf4219744a6ea66eff2b53e5fda8acfd4c61357c0f413cb65a20763a`. JSON retains each short exact original-language quote, full context, URL, read date and source hash. Independent review must check the actual Guide application and context, not quote presence alone.
+Guide SHA256: `e68e04af1dec9caba5196f630b378aaba23ed32206eb9d481f3791c75f45937d`. JSON retains each short exact original-language quote, full context, URL, read date and source hash. Independent review must check the actual Guide application and context, not quote presence alone.
 
 |ID|Rule/figure or exact source-rule opening|Guide section|Act/article and official source|Short exact original-language quote|Read|
 |---|---|---|---|---|---|
@@ -264,6 +264,13 @@ Guide SHA256: `3911999abf4219744a6ea66eff2b53e5fda8acfd4c61357c0f413cb65a20763a`
 | MD-XB-256 | Republica Moldova PARLAMENTUL COD Nr. 1163 din 24-04-1997 COD FISCAL AL REPUBLICII MOLDOVA Publicat : 18-09-1997 în Monitorul Oficial Nr. 62 art. 522 MODIFICAT  | Deadlines and filing; Sources | [Fiscal Code consolidation heading](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Republica Moldova PARLAMENTUL COD Nr. 1163 din 24-04-1997 COD FISCAL AL REPUBLICII MOLDOVA Publicat : 18-09-1997 în Monitorul Oficial Nr. 62 art. 522 MODIFICAT | 2026-10-30 |
 | MD-XB-257 | November2025short-term BNMbase6.00%;sourceinputfor2026Code228dailycalculation | Penalties and interest / Sources | [BNM6November2025 monetarypolicydecision point1](https://bnm.md/en/node/69226) | 06.11.2025 Decizia de politică monetară, 06.11.2025 Comitetul executiv al Băncii Naționale a Moldovei, în cadrul ședinței din 6 noiembrie 2025, a adoptat | 2026-10-30 |
 | MD-XB-258 | 2026ordinarydailypercentage0.0301%;decimalmultiplier0.000301,derivedfrom6%Novemberbase+5points/365days rounded4decimalplaces | Penalties and interest / Sources | [FiscalCode228(3);BNM6November2025point1;2026calendar365days](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | (3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de | 2026-10-30 |
+| MD-XB-259 | Current IALS21 scope and companion ordinary sixteen-column method; actual attachments and technical fields remain unverified | Deadlines and filing; Sources | [MF Order95/2020 current approval and annex2](https://www.legis.md/cautare/getResults?doc_id=154297&lang=ro) | Republica Moldova MINISTERUL FINANȚELOR ORDIN Nr. 95 din 30-07-2020 cu privire la aprobarea formularului tipizat (Forma IALS21) „Nota de informare privind salariul şi alte | 2026-10-30 |
+| MD-XB-260 | Actual amendment limits specified taxi entries to1January–30June2026 and deletes day-worker personal-exemption sentence | Deadlines and filing; Sources | [MF Order59/2026 point1](https://www.legis.md/cautare/getResults?doc_id=154274&lang=ro) | 1. Ordinul ministrului finanțelor nr. 95/2020 cu privire la aprobarea formularului tipizat (Forma IALS21) „Nota de informare privind salariul și alte plăți efectuate de | 2026-10-30 |
+| MD-XB-261 | Order59 effective upon8May2026publication; not an assumed January commencement of the amending order | Deadlines and filing; Sources | [MF Order59/2026 point3 and publication heading](https://www.legis.md/cautare/getResults?doc_id=154274&lang=ro) | 3. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova. | 2026-10-30 |
+| MD-XB-262 | INR14column5 citizenship-countrycode replacescountryname; annex4instructionandnewclassifier; no unretainedentity-countryimplementationclaim | Deadlines and filing; Sources | [MF Order48/2025 point1](https://www.legis.md/cautare/getResults?doc_id=148862&lang=ro) | 1. Ordinul ministrului finanțelor nr. 140/2017 cu privire la aprobarea unor formulare tipizate de declarații cu privire la impozitul pe venit (Monitorul Oficial al | 2026-10-30 |
+| MD-XB-263 | IALS18lastreportingyear2020; not current ordinary salaryreport | Deadlines and filing; Sources | [MF Order48/2025 point2](https://www.legis.md/cautare/getResults?doc_id=148862&lang=ro) | 2. Ordinul ministrului finanțelor nr. 149/2018 privind probarea formularului-tip „Nota de informare privind salariul şi alte plăți efectuate de către angajator în folosul angajaților, | 2026-10-30 |
+| MD-XB-264 | Effective12June2025publication and appliesfromreportingyear2025 | Deadlines and filing; Sources | [MF Order48/2025 point3](https://www.legis.md/cautare/getResults?doc_id=148862&lang=ro) | 3. Prezentul ordin intra în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, fiind pus în aplicare începând cu perioada fiscală de | 2026-10-30 |
+| MD-XB-265 | Earlyreportingobligationsuseformlegallyinforceatpresentation | Deadlines and filing; Sources | [MF Order48/2025 point4](https://www.legis.md/cautare/getResults?doc_id=148862&lang=ro) | 4. Contribuabilii pentru care obligația de raportare survine până la aprobarea și publicarea prezentului ordin vor prezenta Nota de informare conform formularului în vigoare | 2026-10-30 |
 
 ## Complete predecessor-topic destinations
 
@@ -308,7 +315,7 @@ All26 original paragraph/table units and split bullet/source claims retain full 
 
 ## Removed and why
 
-Original 10653 bytes;draft 49756 bytes;more than25% shorter: False.
+Original 10653 bytes;draft 52185 bytes;more than25% shorter: False.
 - Prior short screening headings consolidated into canonical nine sections.
 - Old2024 Code links superseded before the stamped marker; stamped source list and attribution preserved unchanged.
 - All three predecessor decision fixtures and prior legal-person treaty-evidence correction retained, with current-law scope expanded.

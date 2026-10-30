@@ -2,7 +2,7 @@
   "status": "LOCAL2026 WRITER DRAFT; ordinary source/procedure gaps remain; whole-country review pending",
   "slug": "md-cross-border",
   "Guide_path": "skills/international/moldova/md-cross-border.md",
-  "Guide_sha256": "3911999abf4219744a6ea66eff2b53e5fda8acfd4c61357c0f413cb65a20763a",
+  "Guide_sha256": "e68e04af1dec9caba5196f630b378aaba23ed32206eb9d481f3791c75f45937d",
   "rows": [
     {
       "id": "MD-XB-001",
@@ -3626,6 +3626,104 @@
         "calculation_control": "ledgers/md-country-evidence/late-rate-controls.md",
         "source_input": "ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-BASE.json"
       }
+    },
+    {
+      "id": "MD-XB-259",
+      "rule_or_figure": "Current IALS21 scope and companion ordinary sixteen-column method; actual attachments and technical fields remain unverified",
+      "Guide_section": "Deadlines and filing; Sources",
+      "act_article_or_official_section": "MF Order95/2020 current approval and annex2",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154297&lang=ro",
+      "exact_original_language_quote": "Republica Moldova MINISTERUL FINANȚELOR ORDIN Nr. 95 din 30-07-2020 cu privire la aprobarea formularului tipizat (Forma IALS21) „Nota de informare privind salariul şi alte",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-IALS21-CURRENT-ORDER95.json",
+      "source_text_sha256": "2da8eba37bc7c8ef4dc061cdfd1ecaf845130868a5c83a0f3f36f71364e64864",
+      "source_context": "Republica Moldova\nMINISTERUL FINANȚELOR\nORDIN Nr. 95\ndin 30-07-2020\ncu privire la aprobarea formularului tipizat \n(Forma IALS21) „Nota de informare privind\nsalariul şi alte plăți efectuate de către angajator\nîn folosul angajaților, precum şi plățile achitate\nrezidenților din alte surse de venit decât salariul\nşi impozitul pe venit reținut din aceste plați” și\nModul de completare a acesteia\nPublicat : 07-08-2020 în Monitorul Oficial Nr. 199-204 art. 688\n\nMODIFICAT\n\nOMF59 din 04.05.26, MO198-201/08.05.26 art.356; în vigoare 08.05.26\n\n \n\n \n\nÎn vederea executării prevederilor art.92 alin.(5) din Codul fiscal nr.1163-XIII din 24 aprilie 1997 (republicat în Monitorul Oficial al Republicii Moldova, din 8 februarie 2007, ediţie specială) și ale art. XXI alin.(3) din Legea privind instituirea unor măsuri de susținere a activității de întreprinzător şi modificarea unor acte normative nr. 60 din 23 aprilie 2020 (publicată în Monitorul Oficial al Republicii Moldova nr.108-109 din 25 aprilie 2020, art.186),\n\nORDON:\n\n1. Se aprobă:\n\nFormularul-tip „Nota de informare privind salariul și alte plăti efectuate de către angajator în folosul angajaților, precum şi plățile achitate rezidenților din alte surse de venit decât salariul şi impozitul pe venit reținut din aceste plăți (Forma IALS21)”, conform anexei nr. 1;\n\nModul de completare a Notei de informare privind salariul şi alte plăți efectuate de către angajator în folosul angajaților, precum şi plățile achitate rezidenților din alte surse de venit decât salariul şi impozitul pe venit reținut din aceste plăți (Forma IALS21), conform anexei nr. 2.\n\n2. Prima perioadă de declarare a obligațiilor fiscale, potrivit formularului tipizat aprobat, este perioada fiscală 2021.\n\n3. Prezentul ordin intră în vigoare la data de 1 ianuarie 2021.\n\n \n\nVICEPRIM-MINISTRU,\n\nMINISTRUl FINANŢELOR                                     Serghei PUȘCUȚA\n\n \n\nNr. 95. Chişinău, 30 iulie 2020.\n\n \n\nanexa nr.1\n\n \n\nAnexa nr. 2\n\nla Ordinul Ministerului Finanţelor\n\nnr. 95 din 30 iulie 2020\n\n \n\nMODUL DE COMPLETARE\n\nA NOTEI DE INFORMARE PRIVIND SALARIUL\n\nŞI ALTE PLĂŢI EFECTUATE DE CĂTRE ANGAJATOR\n\nÎN FOLOSUL ANGAJAŢILOR, PRECUM ŞI PLĂŢILE\n\nACHITATE REZIDENŢILOR DIN ALTE SURSE DE VENIT\n\nDECÂT SALARIUL ŞI IMPOZITUL PE VENIT REŢINUT\n\nDIN ACESTE PLĂŢI\n\nNota de informare (Forma IALS21) se completează după cum urmează:\n\nÎn preambulul Notei de informare se reflectă:\n\nîn rubrica “Codul fiscal” – codul fiscal care reprezintă numărul personal de identificare al contribuabilului atribuit în modul stabilit de legislaţia în vigoare;\n\nîn rubrica “Denumirea contribuabilului” – denumirea contribuabilului, care trebuie să corespundă cu cea indicată în documentele de înregistrare eliberate de către organele abilitate conform legislaţiei în vigoare;\n\nîn rubrica “Serviciul Fiscal de Stat” – denumirea subdiviziunii Serviciului Fiscal de Stat în a cărei rază se deserveşte contribuabilul, la care prezintă Nota de informare;\n\nîn rubrica “Codul localităţii (CUATM)” – codul localităţii unde este înregistrat sediul central al contribuabilului – cod unic de identificare (4 semne), conform Clasificatorului unităţilor administrativ-teritoriale al Republicii Moldova (CUATM), aprobat şi pus în aplicare de la 3 septembrie 2003 prin Hotărârea Departamentului “Moldova-Standard” nr.1398-ST din 3 septembrie 2003;\n\nîn rubrica “Codul genului principal de activitate” – codul genului principal de activitate, determinat conform Clasificatorului activităţilor din economia Moldovei, care corespunde codului din patru cifre;\n\nîn rubrica “Perioada fiscală” – perioada fiscală pentru care se prezintă nota de informare respectivă. Rubrica dată se completează sub formă de cod cu următorul format:\n\nP/AAAA,\n\nunde:\n\nP – în corespundere cu categoria contribuabilului poate primi valorile:\n\nAAAA – indică anul gestionar.\n\nîn rubrica “Data prezentării” – data efectivă a prezentării Notei de informare subdiviziunii Serviciului Fiscal de Stat.\n\nÎn Nota de informare privind salariul şi alte plăţi efectuate de către angajator în folosul angajaților, precum şi plățile achitate rezidenților din alte surse de venit decât salariul şi impozitul pe venit reținut din aceste plăți (forma IALS21) se indică:\n\nîn coloana 1 – numărul curent al înscrierii, cumulativ pe toată Nota, indiferent de numărul de pagini;\n\nîn coloana 2 – codul fiscal al angajatului sau al altui beneficiar;\n\nîn coloana 3 – numele şi prenumele angajatului sau al altui beneficiar;\n\nîn coloana 4 – codul fiscal al soției (soțului) (se indică numai în cazul în care angajatul beneficiază de scutirea pentru soţie (şoţ));\n\nîn coloana 5 – codul sursei de venit, preluat din Darea de seamă lunară prezentată conform art.92 alin.(2) din Codul fiscal şi art.92 alin.(14) din Codul fiscal; Începând cu perioada fiscală de raportare 2024, codul sursei de venit „SAL a)” nu se completează;\n\nîn coloana 6 – suma totală a venitului îndreptată spre achitare în perioada fiscală, inclusiv suma plăţilor salariale aferente perioadei precedente şi achitate în anul curent;\n\nîn coloana 7 – codul țării al cărei cetățean este beneficiarul plății conform Clasificatorului codurilor țărilor lumii (Anexa nr.3). Coloana 7 nu se va completa în cazul în care beneficiarul plății este cetățean al Republicii Moldova. Dacă beneficiarul plății deține două sau mai multe cetățenii, se va indica cetățenia cu care acesta s-a manifestat în cadrul raportului de muncă sau civil;\n\nîn coloana 8 – (P) – suma scutirii personale, art.33 alin.(1) din Codul fiscal;\n\nîn coloana 9 – (M) – suma scutirii majore, art.33 alin.(2) din Codul fiscal;\n\nîn coloana 10 – (Sm) – suma scutirii majore utilizată pentru soţie (soţ), art.34 alin.(2) din Codul fiscal;\n\nîn coloana 11 – (N) – suma scutirii pentru persoanele întreţinute, cu excepţia persoanelor cu dizabilităţi în urma unei afecţiuni congenitale sau din copilărie, persoanelor cu dizabilităţi severe şi accentuate, art.35 din Codul fiscal;\n\nîn coloana 12 – (H) – suma scutirii pentru persoanele întreținute cu dizabilități în urma unei afecţiuni congenitale sau din copilărie, persoanelor cu dizabilități severe şi accentuate, art.35 din Codul fiscal;\n\nîn coloana 13 – suma totală a scutirilor acordate angajatului pentru perioada fiscală respectivă;\n\nîn coloana 14 – suma primelor de asigurare obligatorie de asistenţă medicală reținute în perioada fiscală de gestiune, permise spre deducere conform art.352 alin.(1) din Codul fiscal;\n\nîn coloana 15 – suma contribuției de asigurări sociale de stat obligatorii reținute în perioada fiscală de gestiune, permise spre deducere conform art.36 alin.(7) din Codul fiscal, în redacția de până la 01.01.2021;\n\nîn coloana 16 – suma impozitului pe venit reţinut la sursa de plată.\n\nColoanele 8-12 nu se completează în cazul angajaților conducători auto ce efectuează transport rutier de persoane în regim de taxi, veniturile cărora se impozitează conform art.881 din Codul fiscal (plățile salariale care depășesc lunar 10 000 lei).*\n\nÎn anexa „Informaţia privind persoanele întreţinute” se reflectă:\n\nîn coloana 1 - se indică numărul curent;\n\nîn coloana 2 – codul fiscal al angajatului;\n\nîn coloana 3 – codul fiscal al persoanei întreţinute, cu excepţia persoanelor cu dizabilităţi în urma unei afecţiuni congenitale sau din copilărie, persoanelor cu dizabilităţi severe şi accentuate, art.35 din Codul fiscal;\n\nîn coloana 4 – codul fiscal al persoanei întreţinute cu dizabilităţi în urma unei afecţiuni congenitale sau din copilărie, persoanelor cu dizabilităţi severe şi accentuate, art.35 din Codul fiscal.\n\nCorectarea erorilor comise în Nota de informare (Forma IALS21) se efectuează prin prezentarea unei dări de seamă corectate în condiţiile stabilite de art.188 din Codul fiscal.\n\nContribuabilii - angajatori din domeniul transportului rutier de persoane în regim de taxi, declară plăţile salariale (inclusiv primele şi facilităţile acordate) achitate în folosul angajaților - conducători auto ce efectuează transport rutier de pasageri în regim de taxi, care nu depășesc 10 000 lei per lună per angajat, la codul sursei de venit „TAXI”.*\n\nPlăţile salariale care depăşesc suma de 10 000 lei per lună pe fiecare angajat-conducători auto ce efectuează transport rutier de pasageri în regim de taxi, se declară în Nota de informare (Forma IALS21) la codul sursei de venit „SAL” (pct.7 din Ordinul MF nr.154/2018).*\n\n* Notă: prevederile în cauză se aplică doar pentru perioada 1 ianuarie- 30 iunie 2026, inclusiv.\n\nBeneficiarii de lucrări care, potrivit Legii nr.22 din 23 februarie 2018 privind exercitarea unor activităţi necalificate cu caracter ocazional desfășurate de zilieri, achită remunerații zilierilor vor completa doar coloanele 1, 2, 3, 5, 6, 7 şi 16 din Nota de informare (Forma IALS21).\n\n[Anexa nr.2 modificată prin OMF59 din 04.05.26, MO198-201/08.05.26 art.356; în vigoare 08.05.26]\n\n \n\nanexa nr.3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application and statutory scope"
+    },
+    {
+      "id": "MD-XB-260",
+      "rule_or_figure": "Actual amendment limits specified taxi entries to1January–30June2026 and deletes day-worker personal-exemption sentence",
+      "Guide_section": "Deadlines and filing; Sources",
+      "act_article_or_official_section": "MF Order59/2026 point1",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154274&lang=ro",
+      "exact_original_language_quote": "1. Ordinul ministrului finanțelor nr. 95/2020 cu privire la aprobarea formularului tipizat (Forma IALS21) „Nota de informare privind salariul și alte plăți efectuate de",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-IALS21-AMENDMENT59-2026.json",
+      "source_text_sha256": "d8b0cb0fd54e0dfd601020da3cf4d181aa83868697a6dc7bb9ca6dbcfc306155",
+      "source_context": "1. Ordinul ministrului finanțelor nr. 95/2020 cu privire la aprobarea formularului tipizat (Forma IALS21) „Nota de informare privind salariul și alte plăți efectuate de către angajator în folosul angajaților, precum și plățile achitate rezidenților din alte surse de venit decât salariul și impozitul pe venit reținut din aceste plați” și Modul de completare a acesteia (Monitorul Oficial al Republicii Moldova, 2020, nr. 199-204, art. 688) se modifică după cum urmează:\n\nÎn Anexa nr. 2:\n\na) după textul „Coloanele 8-12 nu se completează în cazul angajaților conducători auto ce efectuează transport rutier de persoane în regim de taxi, veniturile cărora se impozitează conform art.881 din Codul fiscal (plățile salariale care depășesc lunar 10 000 lei).”, la final se completează cu asterisc „*”;\n\nb) după textul „Contribuabilii - angajatori din domeniul transportului rutier de persoane în regim de taxi, declară plăţile salariale (inclusiv primele şi facilităţile acordate) achitate în folosul angajaților - conducători auto ce efectuează transport rutier de pasageri în regim de taxi, care nu depășesc 10 000 lei per lună per angajat, la codul sursei de venit „TAXI”.”, la final se completează cu asterisc „*”;\n\nc) după textul „Plăţile salariale care depăşesc suma de 10 000 lei per lună pe fiecare angajat-conducători auto ce efectuează transport rutier de pasageri în regim de taxi, se declară în Nota de informare (Forma IALS21) la codul sursei de venit „SAL” (pct.7 din Ordinul MF nr.154/2018).”, la final se completează:\n\na) cu asterisc „*”;\n\nb) cu următorul text: „* Notă: prevederile în cauză se aplică doar pentru perioada 1 ianuarie- 30 iunie 2026, inclusiv.”\n\nd) textul „În cazurile în care zilierii solicită scutirea personală, prezentând concomitent o confirmare privind neutilizarea scutirii personale pentru perioada prestării serviciilor şi/sau lucrărilor (conform modelului stabilit prin Anexa nr.71 la Regulamentul aprobat prin HG nr.697/2014), beneficiarii de lucrări reflectă scutirea acordată acestora în coloana 8 din Nota de informare (Forma IALS21).”, se exclude.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application and statutory scope"
+    },
+    {
+      "id": "MD-XB-261",
+      "rule_or_figure": "Order59 effective upon8May2026publication; not an assumed January commencement of the amending order",
+      "Guide_section": "Deadlines and filing; Sources",
+      "act_article_or_official_section": "MF Order59/2026 point3 and publication heading",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154274&lang=ro",
+      "exact_original_language_quote": "3. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-IALS21-AMENDMENT59-2026.json",
+      "source_text_sha256": "d8b0cb0fd54e0dfd601020da3cf4d181aa83868697a6dc7bb9ca6dbcfc306155",
+      "source_context": "3. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application and statutory scope"
+    },
+    {
+      "id": "MD-XB-262",
+      "rule_or_figure": "INR14column5 citizenship-countrycode replacescountryname; annex4instructionandnewclassifier; no unretainedentity-countryimplementationclaim",
+      "Guide_section": "Deadlines and filing; Sources",
+      "act_article_or_official_section": "MF Order48/2025 point1",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=148862&lang=ro",
+      "exact_original_language_quote": "1. Ordinul ministrului finanțelor nr. 140/2017 cu privire la aprobarea unor formulare tipizate de declarații cu privire la impozitul pe venit (Monitorul Oficial al",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-INR14-AMENDMENT48-2025.json",
+      "source_text_sha256": "aff90bd59bd2f5188226d470560224d7ecd3aba9cee497a31db395b512b0a4d7",
+      "source_context": "1. Ordinul ministrului finanțelor nr. 140/2017 cu privire la aprobarea unor formulare tipizate de declarații cu privire la impozitul pe venit (Monitorul Oficial al R. Moldova nr. 421-427, art. 2076, din 01.12.2017) se modifică după cum urmează:\n\n1) În Anexa nr.3, coloana 5, textul „Denumirea ţării” se substituie cu textul „Codul țării al cărei cetățean este beneficiarul plății”;\n\n2) În Anexa nr.4, textul „în coloana 5 - denumirea ţării” se substituie cu textul „în coloana 5 - codul țării al cărei cetățean este beneficiarul plății conform Clasificatorului codurilor țărilor lumii (Anexa nr.41 )”;\n\n3) Se completează cu anexa nr.41 conform anexei la prezentul ordin.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application and statutory scope"
+    },
+    {
+      "id": "MD-XB-263",
+      "rule_or_figure": "IALS18lastreportingyear2020; not current ordinary salaryreport",
+      "Guide_section": "Deadlines and filing; Sources",
+      "act_article_or_official_section": "MF Order48/2025 point2",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=148862&lang=ro",
+      "exact_original_language_quote": "2. Ordinul ministrului finanțelor nr. 149/2018 privind probarea formularului-tip „Nota de informare privind salariul şi alte plăți efectuate de către angajator în folosul angajaților,",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-INR14-AMENDMENT48-2025.json",
+      "source_text_sha256": "aff90bd59bd2f5188226d470560224d7ecd3aba9cee497a31db395b512b0a4d7",
+      "source_context": "2. Ordinul ministrului finanțelor nr. 149/2018 privind probarea formularului-tip „Nota de informare privind salariul şi alte plăți efectuate de către angajator în folosul angajaților, precum şi plățile achitate rezidenților din alte surse de venit decât salariul şi impozitul pe venit reținut din aceste plăți” (Forma IALS18) şi a Modului de completare a acestuia (Monitorul Oficial al Republicii Moldova nr.336-346, art.1324, din 07.09.2018) se completează cu punctul 21 cu următorul conținut:\n\n„21. Ultima perioadă de raportare conform formularului-tip „Nota de informare privind salariul şi alte plăți efectuate de către angajator în folosul angajaților, precum şi plățile achitate rezidenților din alte surse de venit decât salariul şi impozitul pe venit reținut din aceste plăți” (Forma IALS18) este pentru perioada fiscală 2020.”",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application and statutory scope"
+    },
+    {
+      "id": "MD-XB-264",
+      "rule_or_figure": "Effective12June2025publication and appliesfromreportingyear2025",
+      "Guide_section": "Deadlines and filing; Sources",
+      "act_article_or_official_section": "MF Order48/2025 point3",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=148862&lang=ro",
+      "exact_original_language_quote": "3. Prezentul ordin intra în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, fiind pus în aplicare începând cu perioada fiscală de",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-INR14-AMENDMENT48-2025.json",
+      "source_text_sha256": "aff90bd59bd2f5188226d470560224d7ecd3aba9cee497a31db395b512b0a4d7",
+      "source_context": "3. Prezentul ordin intra în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, fiind pus în aplicare începând cu perioada fiscală de raportare 2025.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application and statutory scope"
+    },
+    {
+      "id": "MD-XB-265",
+      "rule_or_figure": "Earlyreportingobligationsuseformlegallyinforceatpresentation",
+      "Guide_section": "Deadlines and filing; Sources",
+      "act_article_or_official_section": "MF Order48/2025 point4",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=148862&lang=ro",
+      "exact_original_language_quote": "4. Contribuabilii pentru care obligația de raportare survine până la aprobarea și publicarea prezentului ordin vor prezenta Nota de informare conform formularului în vigoare",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-INR14-AMENDMENT48-2025.json",
+      "source_text_sha256": "aff90bd59bd2f5188226d470560224d7ecd3aba9cee497a31db395b512b0a4d7",
+      "source_context": "4. Contribuabilii pentru care obligația de raportare survine până la aprobarea și publicarea prezentului ordin vor prezenta Nota de informare conform formularului în vigoare la data prezentării.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application and statutory scope"
     }
   ],
   "old_topic_destinations": [
@@ -4094,7 +4192,7 @@
   ],
   "baseline_old_units": 26,
   "old_bytes": 10653,
-  "new_bytes": 49756,
+  "new_bytes": 52185,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Prior short screening headings consolidated into canonical nine sections.",

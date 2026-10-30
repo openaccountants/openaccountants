@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 1.2
+version: 1.3
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -12,9 +12,9 @@ partial:
   IT-CORP: "2026 corporate writer draft and ledger include ordinary Government representation, insurance, transport/food, development and donation-documentation methods; travel settlement and ordinary asset-life/depreciation/repair/disposal methods are supplied, while unavailable travel-rate/asset-life tables, approved asset/return fields and capped-base procedures, dividend-deferral implementation and independent whole-country review remain open."
   VAT: "2026 VAT writer draft and figure ledger prepared with the current 24-box VAT12 mapping; commencement, prorata-rounding and ordinary source/procedure gaps remain explicit; whole-country independent review is pending."
   SC: "2026 social/medical writer draft and ledger include State-insured categories/status procedure, selected 2026 comparisons and the service medical top-up; direct tariff annex evidence, ordinary reporting/refund forms, remaining implementation/commencement gaps and whole-country independent review remain open."
-  PR: "2026 payroll writer draft and figure ledger prepared; cumulative withholding/reporting and the observed loan formula with the ordinary MDL 8.32% benchmark are supplied; foreign-currency loan, remaining benefit/procedure and special-regime gaps stay explicit; whole-country independent review is pending."
+  PR: "2026 payroll writer draft and figure ledger prepared; cumulative withholding, ordinary MDL loan method and directly read current IALS21 column instructions/May amendment are supplied; actual reporting attachments/technical fields, foreign-currency loan and remaining benefit/procedure gaps stay explicit; whole-country independent review is pending."
   TP: "2026 TP writer rewrite and figure ledger prepared: exclusions, methods, files, APA and corresponding-adjustment procedures sourced; full current form/role codes, retention and specific procedure gaps remain explicit; whole-country independent review is pending."
-  XB: "2026 cross-border writer rewrite and figure ledger prepared: residence populations, source/withholding, PE profit, foreign credits, mobility and monthly reporting sourced; approved ordinary forms, refund/departure implementation and precise procedure gaps remain explicit; whole-country independent review is pending."
+  XB: "2026 cross-border writer rewrite and figure ledger prepared: residence, withholding, PE profit, foreign credits, mobility, monthly reporting and current salary-information instructions sourced; INR14 citizenship amendment/commencement read, while actual revised attachments, other approved forms and refund/departure procedures remain open; whole-country independent review is pending."
 ---
 
 # Moldova tax pack

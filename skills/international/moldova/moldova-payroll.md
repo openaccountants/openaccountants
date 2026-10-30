@@ -1,7 +1,7 @@
 ---
 name: moldova-payroll
 description: "Compute Moldova payroll withholding for 2026 using the cumulative income-tax method, documented exemption months and separate social/medical contribution bases. Covers ordinary private and public employers, listed aviation conditions, qualifying agriculture, joiners, leavers, advances, benefits, corrections, IT-park transitions, nonresident source rules and treaty evidence. Use for salary tax, gross to net, CNAS, CNAM, IPC21, IRM19, personal and dependent exemptions, payment timing and payroll reconciliation. This source-cited writer draft corrects the former employee social deduction and exemption assumptions, preserves predecessor topics through explicit destinations, and requires whole-country independent review. Its stated implementation gaps keep the domain partial; it does not claim accountant attestation or comprehensive coverage."
-version: 0.4
+version: 0.5
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-30
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova payroll withholding, 2026 v0.4
+# Moldova payroll withholding, 2026 v0.5
 
 ## Who this applies to
 
@@ -134,7 +134,30 @@ For table 2, a missing IDNP is entered as zero if the valid CPAS is available; a
 
 A corrected IPC21 is the complete prescribed replacement/version, not an ad hoc delta. Identity/category/occupation/period corrections, fiscal-control social recalculations and corrections to previously controlled periods have different checkboxes and scope; do not select mutually incompatible declaration types. The fiscal-control nominal recalculation route has the stated 30-calendar-day submission rule. The no-return exception requires no payments to individuals, no calculated social contributions **and no employees**, not merely zero bank salary. Pre-2021 corrections use the historic forms/administration rather than forcing IPC21. [IPC21 instruction points 2–7 and preamble][ipc].
 
-IT-park, day-worker, dual-education, sickness, holiday, agriculture and fixed-founder reporting need the correct nominal categories and periods. Do not use an undated category table or a draft proposal as enacted law. Current annex-3/4 machine-code detail, annual information-form versions, all historical form transitions and the complete liquidation procedure remain explicit gaps. The [social Guide](moldova-social-contributions.md) retains the verified ordinary/liquidation CNAS deadlines and the January–June taxi versus July ordinary transition. A successful filing receipt and treasury allocation are required before treating an obligation as settled.
+IT-park, day-worker, dual-education, sickness, holiday, agriculture and fixed-founder reporting need the correct nominal categories and periods. Do not use an undated category table or a draft proposal as enacted law. Current IPC21 annex-3/4 machine-code detail, actual attached annual forms/classifiers and their technical validations, all historical form transitions and the complete liquidation procedure remain explicit gaps. The [social Guide](moldova-social-contributions.md) retains the verified ordinary/liquidation CNAS deadlines and the January–June taxi versus July ordinary transition. A successful filing receipt and treasury allocation are required before treating an obligation as settled.
+
+### Annual salary and resident-payment information: IALS21
+
+Use **IALS21**, approved by MF Order 95/2020 from reporting year 2021, for its covered salary and resident non-salary payments. Keep the monthly IPC21, annual information report, employee information and any personal CET18 return separate. The ordinary annual deadline is Code art. 92(3)'s **25 January following the calendar year**; the same paragraph has the **15-day** liquidation/division rule measured from approval of the liquidation/distribution balance sheet. Article 92(8) instead gives the specified non-VAT individual entrepreneur/peasant farm with annual average employees not exceeding five the unified-report route and **25 March** deadline. Do not apply the ordinary annual form/deadline to that exception without classifying the payer. [Code art. 92(2)–(5), (8)][code]; [Order 95 approval and annex 2][ials].
+
+Start with the payer's fiscal code, registered name, administering SFS office, head-office four-character CUATM, four-digit main activity code, reporting year and actual submission date. The rendered annex gives period format `P/AAAA`, but omits the values after its introductory sentence for `P`; the actual attachment/portal prefix remains unverified and is not invented here. Reconcile the annual recipient/source totals to the payment record and monthly declarations, including prior-period salary paid in the reporting year. [Order 95 annex 2, preamble and column 6][ials].
+
+| IALS21 column | Current instruction and preparation step | Primary source |
+|---|---|---|
+| 1–3 | Consecutive entry number across all pages; employee/recipient fiscal code; name and surname | [Order 95 annex 2, columns 1–3][ials] |
+| 4 | Spouse fiscal code only where spouse relief is used; it does not create eligibility | [Order 95 annex 2, column 4][ials]; [Code art. 34][code] |
+| 5 | Income-source code from the monthly declaration. **Do not fill `SAL a)` from reporting year 2024.** Preserve separate recipient/source records rather than merging different income classifications | [Order 95 annex 2, column 5][ials] |
+| 6 | Total income directed for payment in the fiscal period, **including prior-period salary paid in the current year**; use the income amount rather than net bank cash | [Order 95 annex 2, column 6][ials] |
+| 7 | Citizenship-country code from annex 3, not months worked or a guessed residence-country code. Leave it blank for a Moldovan citizen; for multiple citizenships use the citizenship with which the person acted in the employment/civil relationship. The actual classifier attachment remains unretained | [Order 95 annex 2, column 7][ials] |
+| 8–12 | Actual relief amounts: `P` standard personal, `M` increased personal, `Sm` qualifying spouse, `N` ordinary dependent, `H` specified disabled dependent. Apply the legal eligibility and application-month rules above; do not shift columns using the original 2020 layout | [Order 95 annex 2, columns 8–12][ials]; [Code arts. 33–35][code] |
+| 13 | Total exemptions actually granted for the fiscal period; reconcile to the applicable relief columns and payroll records | [Order 95 annex 2, column 13][ials] |
+| 14 | Withheld compulsory medical premiums permitted as a deduction under Code art. 35^2(1) | [Order 95 annex 2, column 14][ials] |
+| 15 | The instruction expressly refers to withheld individual social contributions deductible under art. 36(7) **as worded before 1 January 2021**. The existence of this field does not authorise a new employee 6% deduction for 2026 or reporting the employer's social charge as an employee deduction | [Order 95 annex 2, column 15][ials]; [Code art. 35^2][code]; [Law 489 arts. 17, 20, 22][social] |
+| 16 | Income tax actually withheld at source; reconcile to the cumulative payroll tax record and monthly returns | [Order 95 annex 2, column 16][ials] |
+
+In the dependent-information annex, columns 1–4 identify the sequence, employee fiscal code, ordinary dependent fiscal code and specified disabled dependent fiscal code respectively. Keep the two dependent categories distinct. A corrected IALS21 follows Code art. 188; the separate recipient-notification duty is **15 working days** under art. 92(4^1), and the ordinary **1 March** recipient information has the exceptions in art. 92(4). The annual report itself does not prove the tax remittance. [Order 95 annex 2, dependent annex and corrections][ials]; [Code arts. 188, 92(4)–(4^1)][code].
+
+**2026 version and special entries.** The preceding 19 September 2024 consolidation and current text agree on the ordinary column mapping above. Amending Order 59/2026 became effective on **8 May 2026**. Its added note limits the specified taxi `TAXI`/`SAL` split around **10,000 MDL per employee per month**, and the associated columns-8–12 restriction, to **1 January–30 June 2026 inclusive**. Do not carry that special annual-report rule into July–December. It also deletes the older day-worker personal-exemption sentence; current annex 2 lists only columns **1, 2, 3, 5, 6, 7 and 16** for covered day-worker remuneration. The prior sentence does not establish a current entitlement contrary to the Code and payroll regulation. Actual attached forms, country-code lists, missing period-prefix values and portal acceptance checks still need separate verification; the directly read column instructions do not certify those files. [Pre-amendment annex 2][ialspre]; [current annex 2][ials]; [Order 59/2026 points 1, 3][ialsamend]; [Code art. 33(1^1)][code]; [regulation point 9][reg].
 
 ## Penalties and interest
 
@@ -251,6 +274,7 @@ Read 30 October 2026. [The payroll ledger](../../../ledgers/moldova-payroll.md) 
 | [BNM DPMC8 loan report, configured November 2025][loanreport] | Domestic-currency new individual-total loans over five years: 8.32%; query settings and returned report text retained, not the default latest report | 2026-10-30 |
 | [Official regulation loan-formula image][loanformula] | Formula visually read in browser; raw binary retrieval returned 403, so no retained PNG file is claimed | 2026-10-30 |
 | [Government Decision 697, 1 January 2026 regulation][reg] | Scope, benefits, exemption/documents and full rendered computation/correction text; attached annex forms remain unretained; embedded loan formula visually read separately | 2026-10-30 |
+| [MF Order 95/2020 current annex 2][ials], [preceding consolidation][ialspre] and [actual Order 59/2026][ialsamend] | Directly read annual IALS21 columns, dependent/correction method and May amendment with January–June taxi limit; actual form/classifier attachments and omitted period-prefix values remain unverified | 2026-10-30 |
 | [Order 94/2020, 30 April 2026 consolidation][ipc] | Reporting/correction rules, preamble, ordinary table-1 fields and selected nominal table-2 instructions; full annex-3/4 code set not yet certified | 2026-10-30 |
 | [Order 150/2018, 3 April 2026 CET18 instructions][cet] | Individual categories/departure timing and ordinary field mappings; not a replacement for entity/professional returns | 2026-10-30 |
 | [CNAS 2026 instructions][cnas] | Complete retained authority instruction, especially points 8–13, 23–33, 40–41 | 2026-10-30 |
@@ -259,7 +283,7 @@ Read 30 October 2026. [The payroll ledger](../../../ledgers/moldova-payroll.md) 
 | [Medical budget, Law 321/2025 art. 4][medicalbudget] | Current percentage premium and fixed-category amounts | 2026-10-30 |
 | [Social budget, Law 320/2025 arts. 3–4][socialbudget] | Original 2026 fixed amounts/daily social charge; later charging-version comparison remains open | 2026-10-30 |
 
-Not yet confirmed: full 2026 commencement/form-version comparison beyond the selected January/current checks; operative attached IPC21 annex-3/4 and annual information-form code sets, all liquidation/historical correction routes and remaining nominal special categories; remaining Government benefit/travel/food/training implementation, meal-ticket nominal amount and non-cash exceptions; foreign-currency/FX-linked loan benchmark choice, missing-observation handling, exact transaction-day/conversion/final-rounding and no-cash-wages remittance; statutory entitlement computation for contractual wage/leave/sickness/severance and execution deductions; taxpayer-specific pre-2026 medical-penalty transition and arrears-account allocation; complete IT-park/software-occupation eligibility and historical entry/exit treatment; treaty-by-treaty employment/social coverage. The old 2025 figures 5,500 minimum and 16,100 forecast, employee 6%/27% net-pay model, universal 32% hazardous-work default, blanket missing-IDNP refusal, automatic personal exemption without application, non-cumulative monthly formula and assumed 2026 continuity are corrected or retained as historical subjects, not certified current rules. The old dividend/farming/winnings summary belongs to the individual/corporate income classifications; a statutory peasant-farm 7% income-tax rate is not a general payroll or farming-distribution withholding rate. All old examples/tests remain in the archive with their legal-assumption corrections. The payroll domain stays partial until ordinary gaps and whole-country independent review are closed.
+Not yet confirmed: full 2026 commencement/form-version comparison beyond the selected January/current and IALS21 May-amendment checks; operative attached IPC21 annex-3/4 code sets, actual IALS21 form/country-classifier attachments and omitted period-prefix values, portal technical validations, all liquidation/historical correction routes and remaining nominal special categories; remaining Government benefit/travel/food/training implementation, meal-ticket nominal amount and non-cash exceptions; foreign-currency/FX-linked loan benchmark choice, missing-observation handling, exact transaction-day/conversion/final-rounding and no-cash-wages remittance; statutory entitlement computation for contractual wage/leave/sickness/severance and execution deductions; taxpayer-specific pre-2026 medical-penalty transition and arrears-account allocation; complete IT-park/software-occupation eligibility and historical entry/exit treatment; treaty-by-treaty employment/social coverage. The old 2025 figures 5,500 minimum and 16,100 forecast, employee 6%/27% net-pay model, universal 32% hazardous-work default, blanket missing-IDNP refusal, automatic personal exemption without application, non-cumulative monthly formula and assumed 2026 continuity are corrected or retained as historical subjects, not certified current rules. The old dividend/farming/winnings summary belongs to the individual/corporate income classifications; a statutory peasant-farm 7% income-tax rate is not a general payroll or farming-distribution withholding rate. All old examples/tests remain in the archive with their legal-assumption corrections. The payroll domain stays partial until ordinary gaps and whole-country independent review are closed.
 
 [code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
 [jan]: https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro
@@ -275,6 +299,10 @@ Not yet confirmed: full 2026 commencement/form-version comparison beyond the sel
 
 [loanreport]: https://bnm.md/bdi/pages/reports/dpmc/DPMC8.xhtml?id=0&lang=ro
 [loanformula]: https://www.legis.md/UserFiles/images/RO/2020/mo165-176md/formula_543.png
+
+[ials]: https://www.legis.md/cautare/getResults?doc_id=154297&lang=ro
+[ialspre]: https://www.legis.md/cautare/getResults?doc_id=145086&lang=ro
+[ialsamend]: https://www.legis.md/cautare/getResults?doc_id=154274&lang=ro
 
 <!-- openaccountants-cta-block -->
 
