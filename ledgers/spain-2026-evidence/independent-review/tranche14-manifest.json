@@ -1,0 +1,36 @@
+{
+  "artifacts": [
+    {
+      "path": "tranche14-report.md",
+      "sha256": "01887a51f1e254eb29babb1a38bde80b32f9e15fb48a0a13878f1dae3c811e7f"
+    },
+    {
+      "path": "tranche14-final-integrity.json",
+      "sha256": "5c0d3405678a5d5f0fdac145a1498f5f502226a569dc706c94b3dabf2ceb7b7f"
+    },
+    {
+      "path": "tranche14-read-ledger.json",
+      "sha256": "d256a937cbb29364fd0262360be50a8c6018bc03ba1408f3de7c365ef21409c4"
+    },
+    {
+      "path": "tranche14-source-identities.json",
+      "sha256": "2312b09897463bf5528f3ce873a3072ed5421d2df85411c8303782c92256c3b7"
+    },
+    {
+      "path": "tranche14-controls.json",
+      "sha256": "6bb15faa9d1b1c50fd92b9ff307af7ac047f9911ead96afa84aed04f38171c63"
+    },
+    {
+      "path": "tranche14-controls.py",
+      "sha256": "ac85c69ba022fcbec45470decf4789b7ea85324087656cf9b8db4b9ff7ec4898"
+    },
+    {
+      "path": "tranche14-examples.txt",
+      "sha256": "50fb7cc5050d01b87502a8144b2d20aea48fdd4a71dfe2fe838d41cccdeee0aa"
+    },
+    {
+      "path": "tranche14-initial-integrity.json",
+      "sha256": "28add02494e0e9da950b00b9e56637aad6d0b80156af909da5337c5e29560a89"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+[
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "artifact": "sources/liva-fresh.html",
+    "read_on": "2026-10-27",
+    "scope": "Fresh raw HTTP200 law; full articles95,99,104-114 independently read; core matches retained article files",
+    "bytes": 1769466,
+    "sha256": "40687bde59904ba515d151bf341040f41787f0b906c649061273c5fc2616b615"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884",
+    "artifact": "sources/pgc-fresh.html",
+    "read_on": "2026-10-27",
+    "scope": "Fresh raw HTTP200 current PGC; NRV2/12 actual text read",
+    "bytes": 1851507,
+    "sha256": "e19e6f89b840414760cbfc0ebe1be01210506d21b24f407c0a22feaa14f6f4bd"
+  },
+  {
+    "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0835-25",
+    "artifact": "sources/dgt-v0835-25-live.txt",
+    "read_on": "2026-10-27",
+    "scope": "Normal official browser, all6sections read; explicit #document2 innerText exported; identity16/05/2025/binding clause checked",
+    "bytes": 27792,
+    "sha256": "99288c4d0e98c047e355e454e0e8ccfd2f7be99cb422bcfb174528244ce3e131"
+  },
+  {
+    "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0386-24",
+    "artifact": "sources/dgt-v0386-24-live.txt",
+    "read_on": "2026-10-27",
+    "scope": "Normal official browser, all10sections read; explicit #document2 innerText exported; identity12/03/2024/binding clause checked",
+    "bytes": 42236,
+    "sha256": "e6d864d6f18608d08fe44936ebd18a3fc3172e5fbb4329e0b2a30efc888be060"
+  },
+  {
+    "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0055-19",
+    "artifact": "../sources/dgt-v0055-19.txt",
+    "read_on": "2026-10-27",
+    "scope": "Actual retained complete body independently read; not a fresh network retrieval; rehashed",
+    "bytes": 7241,
+    "sha256": "8c21c724b6545d46e057bdb16c390564244c3736dcf2199827bf1a85c5ea1494"
+  },
+  {
+    "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V3307-17",
+    "artifact": "../sources/dgt-v3307-17.txt",
+    "read_on": "2026-10-27",
+    "scope": "Actual retained complete body independently read; not a fresh network retrieval; rehashed",
+    "bytes": 37558,
+    "sha256": "a43c15d0539b47763ffb3f1ea1f2764707f32c87111bd2a772b1634c47f980e0"
+  },
+  {
+    "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=0036-18",
+    "artifact": "../sources/dgt-0036-18.txt",
+    "read_on": "2026-10-27",
+    "scope": "Actual retained complete body independently read; not a fresh network retrieval; rehashed",
+    "bytes": 17602,
+    "sha256": "f097765ed21ddff6a7b0d3c0ad199b755652c363b1ad6f724350ad12a640eac1"
+  },
+  {
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata",
+    "artifact": "sources/aeat-both-eleven-233-31-live.json",
+    "read_on": "2026-10-27",
+    "scope": "Fresh actual browser form inputs, radio state and visible output DOM; independently entered hypothetical; not local generated output",
+    "bytes": 15632,
+    "sha256": "5db370acb6207ff302f28d8b54edd936db82ee770017aaa2246089cb5b615b95"
+  },
+  {
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata",
+    "artifact": "sources/aeat-delayed10pointzero-live.json",
+    "read_on": "2026-10-27",
+    "scope": "Fresh actual browser form inputs, radio state and visible output DOM; independently entered hypothetical; not local generated output",
+    "bytes": 16057,
+    "sha256": "878c234c31704610a1b8144c906e8599f9f8b8f70147ca60ebad34be165993a9"
+  },
+  {
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata",
+    "artifact": "sources/aeat-delayed420-live.json",
+    "read_on": "2026-10-27",
+    "scope": "Fresh actual browser form inputs, radio state and visible output DOM; independently entered hypothetical; not local generated output",
+    "bytes": 15775,
+    "sha256": "f544c374bc8dfbb0c73f8bd62ace43853dc47a0e7f4f785781386055339c1bf5"
+  },
+  {
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata",
+    "artifact": "sources/aeat-joint-462-live.json",
+    "read_on": "2026-10-27",
+    "scope": "Fresh actual browser form inputs, radio state and visible output DOM; independently entered hypothetical; not local generated output",
+    "bytes": 15620,
+    "sha256": "eb7baf98314baac48263454e0c139feb0ff657cea84fa596e4903fa363a7029d"
+  },
+  {
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata",
+    "artifact": "sources/aeat-joint-minus462-live.json",
+    "read_on": "2026-10-27",
+    "scope": "Fresh actual browser form inputs, radio state and visible output DOM; independently entered hypothetical; not local generated output",
+    "bytes": 15624,
+    "sha256": "182d81e3d00fb785d6ef20e1991b093159b1b993acf264f34a74b67191940401"
+  },
+  {
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata",
+    "artifact": "sources/aeat-joint-opposite42-live.json",
+    "read_on": "2026-10-27",
+    "scope": "Fresh actual browser form inputs, radio state and visible output DOM; independently entered hypothetical; not local generated output",
+    "bytes": 15616,
+    "sha256": "2acac502ee05724aa52631256054eb4a68ba07078011432167b3efd1ba0ff708"
+  },
+  {
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata",
+    "artifact": "sources/aeat-one-gate210-live.json",
+    "read_on": "2026-10-27",
+    "scope": "Fresh actual browser form inputs, radio state and visible output DOM; independently entered hypothetical; not local generated output",
+    "bytes": 15620,
+    "sha256": "ab304fff8901d874cbea49f441e215a3a3ebb8b254b26e2b4b455e08625fc262"
+  },
+  {
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata",
+    "artifact": "sources/aeat-separate-gates-zero-live.json",
+    "read_on": "2026-10-27",
+    "scope": "Fresh actual browser form inputs, radio state and visible output DOM; independently entered hypothetical; not local generated output",
+    "bytes": 15902,
+    "sha256": "ba48bd7db23de4b51548e30da1d713fe5c7a54725d46f3fd462b65b29c52153f"
+  },
+  {
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata",
+    "artifact": "sources/aeat-use-only-anomaly525-live.json",
+    "read_on": "2026-10-27",
+    "scope": "Fresh actual browser form inputs, radio state and visible output DOM; independently entered hypothetical; not local generated output",
+    "bytes": 15620,
+    "sha256": "0f6783380c37f9001860a84ec68fe5f52adc563387759b2cd34c1e6c863ef8cb"
+  },
+  {
+    "url": "https://dfb.microsoftcrmportals.com/es-ES/Articulo/?Code=KA-01732",
+    "read_on": "2026-10-27",
+    "scope": "Fresh web open complete primary page; office furniture3000plus21percent and VAT-exclusive3005.06; 2024direct-tax amortisation content not imported"
+  }
+]

@@ -1,0 +1,151 @@
+{
+  "review_date": "2026-10-27",
+  "reviewer": "fresh independent agent /root/spain_joint_rent_independent",
+  "scope": "Finite frozen Cantabria ordinary married joint rent-burden delta only; no whole-pack or professional attestation",
+  "baseline_commit": "96d45505ced79937b06ffc59c081aba776ff5eea",
+  "baseline_guide_sha256": "89f5cbe7587a1b7254162a8018db9f51cee92db6881e82fd915271d0fe00cc7f",
+  "frozen_guide_sha256": "8f0a2db6bf2fabde6391761b8b98738f54980dee2486b27bb59267a7616036dc",
+  "verdict": "PASS within the explicit ordinary positive-income and married entitlement scope",
+  "findings": [],
+  "raw_evidence_independently_read": true,
+  "screenshots_visually_inspected": [
+    "joint4000-result.png",
+    "joint-one-payer-passes-other-equality.png"
+  ],
+  "new_simulator_trials": 0,
+  "root_tab_7_modified": false,
+  "sources_read": [
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028#a2",
+      "scope": "Current article 2.1: personal qualification, strict rent threshold, 10% rate, 300/600 ceilings and bank-payment conditions"
+    },
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_6-cantabria/10_6_2-arrendamiento-vivienda-habitual.html",
+      "scope": "Exact 2025 input/joint/contract-holder/common-funds instructions"
+    },
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+      "scope": "Current published 2025 practical manual: joint ceiling, named tenancy, same-home incompatibility and personal requirements"
+    },
+    {
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-10431",
+      "scope": "2026 amending law article 2.One changes age alternative in 2.1(a), not 2.1(b) income comparison or joint paragraph"
+    }
+  ],
+  "excluded_evidence": [
+    "decimal-dot-attempt-input.txt",
+    "decimal-dot-attempt-result.txt"
+  ],
+  "evidence_files": [
+    {
+      "file": "actual-ui-observations.json",
+      "bytes": 5844,
+      "sha256": "b93cbb5851f26b1067bb94ba9aeabcebf802c72bf65051f4e2838d4377d69744"
+    },
+    {
+      "file": "decimal-dot-attempt-input.txt",
+      "bytes": 2797,
+      "sha256": "ed58e708ca4bd47dd3b2aa01aed5978022ee53610d0a3762b84aa2ab9c3a9980"
+    },
+    {
+      "file": "decimal-dot-attempt-result.txt",
+      "bytes": 38799,
+      "sha256": "1c5aeff7372cf70230d8b5484178ee1317b7e362ec0c4a5f227c0727072af408"
+    },
+    {
+      "file": "declarante-interest.txt",
+      "bytes": 22768,
+      "sha256": "3b636b74f46d32c877c9a386ae352ec0019d843dfa6b3a36ca2c3c7ee4e712ee"
+    },
+    {
+      "file": "household-bases-summary.txt",
+      "bytes": 18519,
+      "sha256": "36b135c821b3914ba3afd97ddaee266bc79a0d4c9f3a6a7f257cdf76aa4192e7"
+    },
+    {
+      "file": "individual3000-result.txt",
+      "bytes": 38799,
+      "sha256": "fb380345891e78b0b5466723804170a9049e9f323c4026c9988e26b25d423b66"
+    },
+    {
+      "file": "individual3000.01-result.txt",
+      "bytes": 38913,
+      "sha256": "11352d57acbc61cdfac9073ca0fefeec53266092309ce309990f0147dc00c595"
+    },
+    {
+      "file": "individual4000-result.txt",
+      "bytes": 38913,
+      "sha256": "839b6e42e5a81574f7b1003c1b513312592d67997b1f9870c9b76ec5e89357fd"
+    },
+    {
+      "file": "joint-one-payer-passes-other-equality.png",
+      "bytes": 123380,
+      "sha256": "6dac9d18d21ab18c49ef799efb9698e560e920e427947dc1c5a1f5006dcdfe58"
+    },
+    {
+      "file": "joint-one-payer-passes-other-equality.txt",
+      "bytes": 38547,
+      "sha256": "e4e48e802f4e2be118766c9e6a3d5e38d2f6864436e5b263fbddf5f45b4a478f"
+    },
+    {
+      "file": "joint3000-result.txt",
+      "bytes": 38410,
+      "sha256": "5d820adf5a3feb64ee5c1bdcb1ad79aecd6935ebced25778c9334e2e9e744370"
+    },
+    {
+      "file": "joint3000.01-result.txt",
+      "bytes": 38524,
+      "sha256": "ec0ca10badde7a1982312705eb03a51edf2a91ac5fa724a55fe0aba4193edaaf"
+    },
+    {
+      "file": "joint4000-result.png",
+      "bytes": 123424,
+      "sha256": "389a79c45fb56c3d35315f29b87850d9609977ebb11bfbd783fbe6d57db2ac32"
+    },
+    {
+      "file": "joint4000-result.txt",
+      "bytes": 38524,
+      "sha256": "1a823ce38bc5a5329352428236814bcbecd20b1ae683e23c0636be26b31b3aca"
+    },
+    {
+      "file": "profile.txt",
+      "bytes": 19688,
+      "sha256": "a4f038f78591473b44e8b9b3178c4b19b7e241b0267722c714da8682d238f1d4"
+    },
+    {
+      "file": "rent3000-input.txt",
+      "bytes": 2798,
+      "sha256": "f9d4f206973f24f3b29bad9adfb1c94b3c324dd87aed6660d13b361dcaf999bc"
+    },
+    {
+      "file": "rent3000.01-input.txt",
+      "bytes": 2800,
+      "sha256": "c7350f910bf4423dc63e1a26a9a02c8f55041e3e75b9655bc700b4cdbefb9f0e"
+    },
+    {
+      "file": "rent4000-input.txt",
+      "bytes": 2800,
+      "sha256": "02230bb221e4d4e62b3789bfca52a70c805beecf16ce07eff59bbb19a135254d"
+    },
+    {
+      "file": "spouse-interest.txt",
+      "bytes": 22748,
+      "sha256": "d15d7995c7d9e73ab5352d1dea3efa0e02d81d9aff09b6665a49bad4999421c8"
+    },
+    {
+      "file": "spouse3000-input.txt",
+      "bytes": 2794,
+      "sha256": "da76762ef58c1125d85304890a4ee9a2810d476e9b12de2b760374e4db61ea04"
+    },
+    {
+      "file": "spouse3000-result.txt",
+      "bytes": 38802,
+      "sha256": "9d69e9c7368b10c7d0aae743bbfdfb50ec421388ed4e37aa66653f53521df28f"
+    }
+  ],
+  "validation": {
+    "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+    "target_guide_validator": "0 errors, 0 warnings using existing /private/tmp/claude-502/fi/venv/bin/python; system and bundled Python initially lacked yaml",
+    "full_repository_validation": "Not run; finite target review only"
+  }
+}

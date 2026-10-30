@@ -1,0 +1,1984 @@
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	BOPA: Disposiciones - miPrincipado
+
+	
+
+
+[[ID:liferayAUICSS]]
+
+[[ID:631db0ef]]
+
+[[ID:liferayThemeCSS]]
+
+
+ 
+
+
+   
+
+    
+    
+    
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+	
+[[ID:skip-link]]
+Saltar al conteníu
+	
+	
+
+
+
+
+
+[[ID:wrapper]]
+
+	
+	
+        
+            
+                
+                    
+                        
+                            
+                        
+                    
+                    Tas en miPrincipado, un portal oficial del Gobiernu del Principáu d'Asturies
+                
+            
+        
+
+    
+
+    
+    	
+[[ID:screenName]]
+
+    		
+    	
+        
+            
+                
+                    
+                        
+                            
+                            
+                                
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_HeadPortales_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_HeadPortales]]
+
+		
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_HeadPortales]]
+
+
+
+	
+
+		
+			
+				
+
+				
+			
+		
+
+
+        Portales
+
+[[ID:header-links]]
+
+                        asturias.es
+
+                        Participación
+
+                        miasturSalud
+
+		
+	
+
+                                
+                        
+
+[[ID:p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_]]
+
+[[ID:p_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet]]
+
+		
+
+[[ID:portlet_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet]]
+
+
+
+	
+
+		
+			
+				
+				
+			
+		
+
+
+En Español
+
+		
+	
+
+
+                                
+                                    
+                                        
+                                    
+                                    Área personal
+                                 
+
+                        
+                    
+                
+            
+        
+    
+	
+	
+
+    
+		
+			
+				
+
+						
+					
+						
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_Logotipo_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_Logotipo]]
+
+		
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_Logotipo]]
+
+
+
+	
+
+		
+			
+				
+
+				
+			
+		
+
+
+            Principáu d'Asturies
+
+		
+	
+
+				
+							
+Principáu d'Asturies							
+						
+						
+
+							
+								
+							
+							
+							
+									miPrincipado
+							
+					
+						
+
+					
+						
+							Menú
+							
+								
+									
+								
+							
+						
+						
+							Buscar n'asturias.es
+							
+								
+							
+							
+								
+							
+						
+					
+				
+			
+					
+
+	
+		
+			
+				
+					
+
+						Buscador					
+
+					
+
+
+[[ID:p_p_id_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_HeaderSearch_]]
+
+[[ID:p_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_HeaderSearch]]
+
+		
+
+[[ID:portlet_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_HeaderSearch]]
+
+
+
+	
+
+		
+			
+				
+				
+			
+		
+
+
+[[ID:dkrk___fm]]
+
+				Barra de búsqueda
+
+[[ID:Content]]
+
+[[ID:_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_HeaderSearch_emptySearchEnabled]]
+
+[[ID:_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_HeaderSearch_lvqt]]
+
+Buscar
+
+[[ID:_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_HeaderSearch_scope]]
+
+		
+	
+
+						
+					
+				
+			
+		
+		
+    	
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_MasBuscados_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_MasBuscados]]
+
+		
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_MasBuscados]]
+
+
+
+	
+
+		
+			
+				
+
+				
+			
+		
+
+
+Lo más buscao
+
+Ayuda pa la renovación de vehículos pa la meyora de la seguranza y la mengua d'emisiones contaminantes
+
+Ayudes a estudiantes pa tresporte escolar en zones rurales
+
+Ayuda destinada a persones con diagnósticu d'Esclerosis Llateral Amiotrófica (ELA)
+
+Solicitú xenérica
+
+		
+	
+
+		
+	
+
+		
+	
+	
+
+
+[[ID:p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_NavigationMenu_]]
+
+[[ID:p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_NavigationMenu]]
+
+		
+
+[[ID:portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_NavigationMenu]]
+
+
+
+	
+
+		
+			
+				
+				
+			
+		
+
+
+[[ID:navigation]]
+
+[[ID:gpa-logo]]
+
+Principáu d'Asturies                                    
+
+                                            Zarrar menú
+
+                                        Boletín Oficial del Principáu d'Asturies
+
+                                        Boletín Oficial del Principáu d'Asturies
+
+[[ID:layout_401901]]
+
+[[ID:layout_403104]]
+
+                                                    Últimu boletín
+
+[[ID:layout_403102]]
+
+                                                    BOPA: Disposiciones
+
+[[ID:layout_460742]]
+
+                                                    Llexislación consolidada
+
+[[ID:layout_403103]]
+
+                                                    miBOPA
+
+[[ID:layout_460743]]
+
+                                                    Convocatories y concesiones d’ayudes y subvenciones
+
+[[ID:layout_461028]]
+
+                                                    Inxertar anuncies
+
+                                        Dir a Boletín Oficial del Principáu d'Asturies
+
+                                        Tramita con miPrincipado
+
+                                        Tramita con miPrincipado
+
+[[ID:layout_405266]]
+
+                                        Dir a Tramita con miPrincipado
+
+                                        Consultar mis trámites
+
+                                        Consultar mis trámites
+
+[[ID:layout_10927572]]
+
+[[ID:layout_10927573]]
+
+                                                    Consultar otros trámites
+
+[[ID:layout_10927574]]
+
+                                                    Documentos reutilizables
+
+                                        Dir a Consultar mis trámites
+
+                                        Sobre miPrincipado
+
+                                        Sobre miPrincipado
+
+[[ID:layout_402590]]
+
+[[ID:layout_460744]]
+
+                                                    ¿Qué ye miPrincipado?
+
+[[ID:layout_477634]]
+
+                                                    Descubri miPrincipado
+
+[[ID:layout_405572]]
+
+                                                    Identificación de la sede electrónica
+
+[[ID:layout_402592]]
+
+                                                    Llicencies y términos d'usu
+
+[[ID:layout_405664]]
+
+                                                    Seguranza de la información
+
+[[ID:layout_825138]]
+
+                                                    Preguntas frecuentes
+
+[[ID:layout_478726]]
+
+                                                    Condiciones llegales d’usu
+
+[[ID:layout_827033]]
+
+                                                    Sistemes d'identificación
+
+                                        Dir a Sobre miPrincipado
+
+                                        Perfil del contratante
+
+                                        Perfil del contratante
+
+[[ID:layout_402007]]
+
+[[ID:layout_402114]]
+
+                                                    Licitaciones - Adjudicaciones
+
+[[ID:layout_460745]]
+
+                                                    Portal de llicitaciones
+
+[[ID:layout_460746]]
+
+                                                    Plataforma de contratación
+
+[[ID:layout_402220]]
+
+                                                    Meses de contratación permanentes
+
+[[ID:layout_460747]]
+
+                                                    Buscador de contratos
+
+[[ID:layout_460748]]
+
+                                                    Presentación d’ufiertes en contratos menores en plazu abiertu
+
+[[ID:layout_460749]]
+
+                                                    Llistes trimestrales de contratos menores celebraos
+
+                                        Dir a Perfil del contratante
+
+                                        Tablón d'anuncios
+
+                                        Tablón d'anuncios
+
+[[ID:layout_952151]]
+
+                                        Dir a Tablón d'anuncios
+
+                                        Utilidaes
+
+                                        Utilidaes
+
+[[ID:layout_402327]]
+
+[[ID:layout_405481]]
+
+                                                    Rexistru electrónicu del Principáu d’Asturies
+
+[[ID:layout_460503]]
+
+                                                    Verificación de documentos electrónicos
+
+[[ID:layout_402595]]
+
+                                                    Sacar un certificáu dixital
+
+[[ID:layout_460489]]
+
+                                                    Quexes y suxerencies
+
+[[ID:layout_460803]]
+
+                                                    Formularios xenéricos
+
+[[ID:layout_460849]]
+
+                                                    Comprobar la validez d’un certificáu
+
+                                        Dir a Utilidaes
+
+                                        miPrincipado Empreses
+
+                                        miPrincipado Empreses
+
+[[ID:layout_402588]]
+
+[[ID:layout_402589]]
+
+                                                    ¿Qué ye la Oficina d’Atención a les Empreses?
+
+[[ID:layout_402596]]
+
+                                                    Facturación electrónica (FACE)
+
+[[ID:layout_460929]]
+
+                                                    Contacta con nós
+
+                                        Dir a miPrincipado Empreses
+
+                                        miPrincipado Xusticia
+
+                                        miPrincipado Xusticia
+
+[[ID:layout_402907]]
+
+[[ID:layout_460930]]
+
+                                                    Carpeta Xusticia
+
+[[ID:layout_460931]]
+
+                                                    Visor Expediente Judicial Electrónico
+
+[[ID:layout_460932]]
+
+                                                    Cita previa
+
+[[ID:layout_460933]]
+
+                                                    Rexistru d'uniones de fechu
+
+[[ID:layout_402996]]
+
+                                                    Contactu
+
+[[ID:layout_460934]]
+
+                                                    LexNET
+
+                                        Dir a miPrincipado Xusticia
+
+                                        Ayuda y contacto
+
+                                        Ayuda y contacto
+
+[[ID:layout_402788]]
+
+[[ID:layout_402791]]
+
+                                                    Contactu
+
+[[ID:layout_402789]]
+
+                                                    Un trámite, un minutu
+
+[[ID:layout_403922]]
+
+                                                    Oficines de rexistru
+
+[[ID:layout_683225]]
+
+                                                    Preguntes frecuentes
+
+[[ID:layout_461026]]
+
+                                                    Sedes Electróniques de l'Alministración del Principáu d'Asturies
+
+                                        Dir a Ayuda y contacto
+
+		
+	
+
+	
+
+
+
+[[ID:p_p_id_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_37450_migas_instance_]]
+
+[[ID:p_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_37450_migas_instance]]
+
+		
+
+[[ID:portlet_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_37450_migas_instance]]
+
+
+
+	
+
+		
+			
+				
+				
+			
+		
+
+
+[[ID:_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_37450_migas_instance_breadcrumbs-defaultScreen]]
+
+Inicio
+
+Boletín Oficial del Principáu d'Asturies
+
+		
+	
+
+
+	
+[[ID:content]]
+
+
+[[ID:p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_AvisoSite_]]
+
+[[ID:p_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_AvisoSite]]
+
+		
+
+[[ID:portlet_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_AvisoSite]]
+
+
+
+	
+
+		
+			
+				
+				
+			
+		
+
+
+		
+	
+
+
+
+
+[[ID:main-content]]
+
+[[ID:fragment-94f6553a-23ac-c2b0-84f3-d84f5fe4af37]]
+
+[[ID:fragment-93725a67-5f03-5b78-dc2c-a2f4450e63d4]]
+
+[[ID:fragment-f5d1f2fe-fa8c-9686-8c55-a518e21c2501]]
+
+[[ID:p_p_id_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb_]]
+
+[[ID:p_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb]]
+
+[[ID:portlet_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb]]
+
+Consultar una disposición
+
+                      Regresar al sumario del boletín    
+                      Disposición siguiente
+
+ Acceder al PDF de la disposición 
+
+Boletín Nº 123 del viernes 27 de junio de 2025
+
+[[ID:bopa-articulo]]
+
+DISPOSICIONES GENERALES
+
+CONSEJERÍA DE PRESIDENCIA, RETO DEMOGRÁFICO, IGUALDAD Y TURISMO
+
+Decreto 83/2025, de 23 de junio, por el que establece la zonificación demográfica y se regula el Indicador Sintético de Estado Demográfico del Principado de Asturias.
+
+Preámbulo
+
+En las últimas décadas, el Principado de Asturias ha enfrentado desafíos demográficos significativos que amenazan tanto su estructura socioeconómica como su futuro desarrollo sostenible. La despoblación y el envejecimiento de la población son fenómenos que afectan gravemente a los concejos asturianos, generando disparidades y necesidades específicas en distintas áreas de la región. Ante esta situación, surge la necesidad de establecer una zonificación demográfica que permita abordar de manera eficaz y diferenciada los retos planteados, orientando la aplicación y evaluación de las políticas, planes, programas, medidas y acciones recogidas en la Ley del Principado de Asturias 2/2024, de 30 de abril, de Impulso Demográfico.
+
+La zonificación demográfica de los concejos asturianos no solo permitirá una evaluación más precisa del estado actual de los concejos, sino que también facilitará la implementación de políticas, planes y programas específicos que respondan a las necesidades particulares de cada área, así como la formulación de estrategias más efectivas para garantizar un futuro próspero y sostenible para todos los asturianos y las asturianas. Este enfoque diferenciado es crucial para revertir las tendencias negativas y promover un desarrollo equilibrado y sostenible en toda la región.
+
+La citada Ley del Principado de Asturias 2/2024, de 30 de abril, establece en su artículo 23 los criterios para esta zonificación, clasificando en su artículo siguiente, los concejos en cuatro categorías: dinámicos, inestables, en crisis demográfica y en riesgo de despoblamiento. Esta clasificación se basa en el análisis de los componentes más relevantes del estado demográfico, permitiendo una intervención más focalizada y eficiente.
+
+El indicador sintético de estado demográfico del Principado de Asturias (ISDA), se presenta como una herramienta fundamental para establecer la zonificación demográfica, de conformidad con el artículo 23 de la Ley del Principado de Asturias 2/2024, de 30 de abril. Este indicador, con base en variables como la densidad de población, la tasa de natalidad y mortalidad, el envejecimiento y los flujos migratorios, permitirá una caracterización demográfica operativa de cada concejo asturiano.
+
+Las valoraciones de este indicador deben ser consideradas dentro de un contexto europeo occidental, esto es, se valora como positivo el crecimiento, la juventud y la natalidad y se valora como negativo la vejez, la mortalidad y los riesgos asociados al despoblamiento. Un indicador es un dato numérico resultado de un proceso que describe una situación y permite tanto su análisis como su comparación espacial y temporal. Un indicador sintético, por su lado, agrega varios indicadores con objeto de simplificar el análisis, comparación o evolución de una realidad demasiado compleja para ser abordada con un indicador simple.
+
+Conforme al citado artículo 23 de la Ley del Principado de Asturias 2/2024, de 30 de abril, para la elaboración del indicador sintético de estado demográfico del Principado de Asturias, se añaden dos variables a las ya recogidas en la Ley: la tasa de empleo, por tratarse de una variable que cuenta con una valoración tanto demográfica como económica, al medir la proporción de personas ocupadas de un lugar, y el volumen de población, motivado en el hecho de que los municipios con muy poca población cuentan con un riesgo mayor de despoblamiento.
+
+A través del presente decreto, además de estructurarse el ISDA, se establece la zonificación demográfica en el Principado de Asturias. A efectos demográficos, la concreción de la clasificación de los concejos asturianos permitirá abordar el estudio de medidas, planes y actuaciones aplicables a cada uno de ellos. Por ello, y dada la necesidad de cumplir el mandato legal en materia de zonificación demográfica a la mayor brevedad, se dispone la entrada en vigor de esta norma el día siguiente al de su publicación en el Boletín Oficial del Principado de Asturias.
+
+La tramitación de la presente disposición se adecua a los principios de buena regulación previstos en el artículo 129.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, conforme a los cuales deben actuar todas las Administraciones Públicas en el ejercicio de la potestad reglamentaria. En concreto, la norma responde a la necesidad de establecer una zonificación demográfica, atendiendo al mandato de la citada Ley del Principado de Asturias 2/2024, de 30 de abril, configurándose en el anexo I la construcción del ISDA, los criterios y parámetros a tener cuenta en cada indicador, en tanto, el anexo II recoge la zonificación demográfica resultante.
+
+Contribuye al principio de seguridad jurídica y respeta el principio de eficiencia y eficacia, al no imponer cargas administrativas nuevas. De acuerdo con el principio de proporcionalidad, la presente norma contiene la regulación imprescindible para atender la necesidad descrita y resulta coherente con el ordenamiento jurídico. Finalmente, se ha dado cumplimiento al principio de transparencia, sometiéndose a la debida publicación en los términos previstos en la Ley del Principado de Asturias 8/2018, de 14 de septiembre, de Transparencia, Buen Gobierno y Grupos de Interés.
+
+En la tramitación de este decreto, se ha sometido la iniciativa a consulta pública previa y al trámite de información pública, a informe de la Comisión Asturiana de Administración Local y de la Dirección General de Presupuestos y Finanzas.
+
+En virtud de lo expuesto, de acuerdo con el Consejo Consultivo del Principado de Asturias, a propuesta de la Consejera de Presidencia, Reto Demográfico, Igualdad y Turismo, y previa deliberación del Consejo de Gobierno en su reunión de 23 de junio de 2025,
+
+DISPONGO
+
+Artículo 1.—Objeto y ámbito de aplicación.
+
+1. El presente decreto tiene por objeto establecer la zonificación demográfica en el Principado de Asturias utilizando el Indicador Sintético de Estado Demográfico del Principado de Asturias (ISDA) como herramienta para evaluar y clasificar el estado demográfico de los concejos asturianos.
+
+2. A través de la zonificación demográfica se orienta la aplicación y se evalúan los resultados de las políticas, planes, programas, medidas y acciones recogidas en la Ley del Principado de Asturias 2/2024, de 30 de abril, de Impulso Demográfico.
+
+Artículo 2.—Definición y finalidad del Indicador Sintético de Estado Demográfico del Principado de Asturias (ISDA).
+
+1. El ISDA es un dato numérico que resulta de la agregación de varios indicadores con objeto de simplificar el análisis, comparación o evolución de la demografía.
+
+2. El ISDA permite analizar el estado demográfico de cada concejo, su clasificación, comparar el estado demográfico de unos concejos con otros, visualizar la evolución demográfica y orientar y evaluar la aplicación de la Ley del Principado de Asturias 2/2024, de 30 de abril, así como cualesquiera otras políticas que tengan efecto en los diferentes componentes demográficos.
+
+3. El ISDA resulta de la agregación de diez indicadores simples:
+
+a) Densidad de población: expresión del número de habitantes por kilómetro cuadrado.
+
+b) Índice de vejez: proporción de personas de 65 y más años sobre el total, como indicador de envejecimiento.
+
+c) Índice de población infantil: proporción de personas de 0 a 14 años sobre el total.
+
+d) Relación de masculinidad en edad fértil (15-49 años): La unidad es “hombres por cada 100 mujeres”.
+
+e) Tasa bruta de natalidad: relación entre el número de nacidos vivos y el total de la población, expresado en tantos por mil (‰).
+
+f) Tasa bruta de mortalidad: relación entre el número de defunciones y el total de la población, expresado en tantos por mil (‰).
+
+g) Tasa de migración neta: relación entre el saldo migratorio (inmigrantes-emigrantes) y el total de la población, expresado en tantos por mil (‰).
+
+h) Dinámica demográfica: es la tasa de crecimiento real, esto es, la diferencia en términos relativos, entre la población de un año respecto de la del anterior, expresado en tantos por mil (‰).
+
+i) Tasa de empleo: relación entre la población ocupada y la población de 16 y más años.
+
+j) Volumen de población: población total del concejo.
+
+Artículo 3.—Metodología de cálculo del ISDA.
+
+1. Cada uno de los indicadores simples del ISDA se normaliza en una escala de 0 a 100 y se agrega, ponderadamente, para formar el ISDA.
+
+2. La construcción del ISDA y los criterios y parámetros en la valoración de los indicadores se recogen en el anexo I.
+
+Artículo 4.—Zonificación demográfica.
+
+1. Atendiendo a la clasificación de los concejos asturianos prevista en el artículo 24 de la Ley del Principado de Asturias 2/2024, de 30 de abril, se establecen los siguientes valores del ISDA:
+
+a) Concejos Demográficamente Dinámicos: Aquellos cuyos componentes del ISDA son mayoritariamente favorables. (Valores de 30.01 a 100.)
+
+b) Concejos Demográficamente Inestables: Aquellos cuyos componentes no les permiten pertenecer a la categoría anterior por no ser mayoritariamente favorables pero que unos indicadores simples compensan a otros. (Valores de 20.01 a 30.)
+
+c) Concejos en Crisis Demográfica: Aquellos que presentan problemas demográficos en la mayoría de los componentes del ISDA. (Valores de 8.01 a 20.)
+
+d) Concejos en Riesgo de Despoblamiento: Aquellos cuyos componentes son muy negativos, indicando una severa reducción de la población. (Valores de 0 a 8.)
+
+2. La zonificación demográfica de los concejos asturianos, resultante de la aplicación del ISDA, se determina en el anexo II.
+
+Disposición final primera. Habilitación normativa
+
+Se habilita a la persona titular de la Consejería competente en materia de reto demográfico para dictar cuantas disposiciones resulten necesarias en desarrollo y ejecución de lo previsto en el presente decreto. En particular, corresponderá a la misma, la actualización y revisión de la zonificación demográfica prevista en el anexo II, en función de lo dispuesto en esta norma, al menos anualmente.
+
+Disposición final segunda. Entrada en vigor
+
+El presente decreto entrará en vigor el día siguiente al de su publicación en el Boletín Oficial del Principado de Asturias.
+
+Dado en Oviedo, a veintitrés de junio de dos mil veinticinco.—El Presidente del Principado de Asturias, Adrián Barbón Rodríguez.—La Consejera de Presidencia, Reto Demográfico, Igualdad y Turismo, Gimena Llamedo González.—Cód. 2025-05426.
+
+Anexo I
+
+Construcción del Indicador Sintético de Estado Demográfico de los concejos del Principado de Asturias (ISDA), criterios y parámetros en la valoración de los indicadores
+
+1. Construcción del ISDA.
+
+El ISDA consiste en el agregado de 10 indicadores simples, señalados en el artículo 2 de este decreto. Cada uno de ellos se normaliza en un índice 100 para que se pueda contar con el contraste homogéneo de indicadores diferentes. Esto implica que cada uno de los índices simples presente un valor 100 si refleja un estado demográfico óptimo y 0 si se asocia a un estado demográfico pésimo, juzgados estos desde una contextualización europea occidental (entendiendo como “Europa” los datos que publica eurostat, que incluye la Unión Europea, sus territorios en otros continentes y países no pertenecientes a la Unión Europea). Este proceso se lleva a cabo a partir de las siguientes fórmulas:
+
+— Cuando el valor más alto se juzga como óptimo y el más bajo como pésimo.
+
+Iia =
+
+xia-min
+
+x 100
+
+max - min
+
+— Cuando el valor más alto se juzga como pésimo y el más bajo como óptimo.
+
+Iia =
+
+max - xia
+
+x 100
+
+max - min
+
+ISDA:
+
+— I : Índice 100 de cada indicador simple.
+
+— i : indicador simple.
+
+— a: año o período al que hace referencia.
+
+— x: valor del indicador simple.
+
+— min: valor inferior previamente establecido que fija el teórico óptimo o pésimo estado demográfico.
+
+— max: valor superior previamente establecido que fija el teórico óptimo o pésimo demográfico.
+
+En función de la relevancia de cada indicador simple en el ISDA, se le otorgará una ponderación a cada uno de los indicadores simples.
+
+Finalmente, el ISDA es el resultado de una sumatoria de los valores obtenidos para cada uno de los indicadores simples; para facilitar su lectura, se expresarán en valores de 0 a 100, lo que supone dividir la sumatoria entre cien:
+
+ISDAa =
+
+ΣIia
+
+100
+
+El ISDA contendría un valor entre 0 (pésimo estado demográfico) y 100 (óptimo estado demográfico).
+
+2. Criterios y parámetros en la valoración de los indicadores:
+
+2.1. Densidad de población.
+
+La densidad de población se expresa en habitantes por kilómetro cuadrado (hab./km²).
+
+La relevancia de la densidad de población sobre el estado demográfico de un concejo parte del principio de que con muy baja densidad de población se estaría en riesgo de despoblación; esto implica que los menores valores son los que se consideran como peor estado demográfico. No obstante, a partir de cierto valor elevado, el indicador carece de representatividad como parte del estado demográfico, pasando a ser un indicador de grado de urbanización que, incluso si se eleva demasiado, puede considerarse como pernicioso para la calidad de vida.
+
+2.2. Índice de vejez.
+
+Se emplea el porcentaje de personas de 65 y más años respecto del total de la población por los siguientes motivos:
+
+— Una mayor estabilidad en los valores de ámbitos poco poblados.
+
+— Evitar la redundancia con los indicadores de juventud.
+
+— Desde una perspectiva administrativa y gubernamental, añadir menores en el indicador supone una alteración del fenómeno; esto quiere decir que contar con más menores no aminora el volumen de “viejos” ni, por tanto, las necesidades asociadas a ellos.
+
+2.3. Índice de población infantil.
+
+Se emplea aquel que pone en relación a la población infantil con el total. El criterio para definir a la población infantil ha sido considerar como tal a la población pediátrica, es decir, la comprendida entre 0 y 14 años.
+
+2.4. Relación de masculinidad en edad fértil (15-49 años).
+
+Se puede considerar la masculinidad como parte del estado demográfico durante la edad fértil de las mujeres, en cuanto a que identifica el potencial reproductivo. Como edad fértil ha sido considerado el período que va entre los 15 y los 49 años, edades empleadas en la difusión de información estadística.
+
+La unidad es “hombres por cada 100 mujeres”.
+
+2.5. Tasa bruta de natalidad.
+
+Relaciona el número de nacimientos entre el total de la población, expresado en tantos por mil (‰). Por su variabilidad, especialmente en espacios poco poblados, se emplea el promedio quinquenal.
+
+2.6. Tasa bruta de mortalidad.
+
+Relaciona el número de defunciones entre el total de la población, expresado en tantos por mil (‰). Por su variabilidad, especialmente en espacios poco poblados, se emplea el promedio quinquenal.
+
+2.7. Tasa de migración neta.
+
+Relaciona el saldo migratorio (inmigrantes menos emigrantes) con el total de la población, expresándose en tantos por mil (‰).
+
+Las migraciones son el componente demográfico de mayor interés, dado que cada vez son más frecuentes los movimientos migratorios y son los que con mayor velocidad alteran las condiciones socio-demográficas de un lugar. Generalmente cuentan con una importante relación con la situación económica y social tanto de la entidad de emisión como de la de recepción.
+
+2.8. Dinámica demográfica.
+
+Mide la diferencia de población entre un año y el anterior, expresado en tantos por mil (‰).
+
+Se relaciona con el estado demográfico en cuanto que el decrecimiento de la población puede incidir en el riesgo de despoblamiento. Por su variabilidad, especialmente en espacios poco poblados, se emplea el promedio quinquenal.
+
+2.9. Tasa de empleo.
+
+Se incluye por tratarse de un indicador que incide tanto en el ámbito demográfico como en el económico, por cuanto el cómputo de las personas ocupadas de un lugar y la proporción de las mismas, constituye un elemento a tener en cuenta para caracterizar ese territorio y evaluar su potencialidad. Se juzga que un espacio es más dinámico demográfica y económicamente cuando cuenta con una mayor proporción de personas laboralmente ocupadas. Dentro de las diferentes fuentes aplicables, se ha utilizado el censo anual, por no hacer referencia al empleo publicado en el municipio, sino a la población ocupada que reside en el mismo, eliminándose de esta forma, los efectos frontera entre concejos vecinos.
+
+La tasa de empleo relaciona el total de ocupados entre el total de población de 16 y más años según su concejo de residencia.
+
+2.10. Volumen de población.
+
+Se incluye porque los concejos con muy poca población cuentan con un riesgo mayor de despoblamiento, es decir, el riesgo de despoblamiento es inversamente proporcional al volumen de población de un lugar.
+
+Se considerarán los valores de menos de 1.000 y de más de 50.000 habitantes como valores extremos a partir de los cuáles existe un riesgo cierto o no existe riesgo real de despoblamiento.
+
+3. Ponderaciones:
+
+— Indicador capital: es el principal indicador, que directa o indirectamente se relaciona con el resto; es la dinámica demográfica, que indica si una población crece o no. Se le ha otorgado una ponderación de 20.
+
+— Indicadores muy relevantes: sin llegar al extremo del anterior, son muy determinantes sobre el estado demográfico de un lugar, con capacidad para condicionar a otros indicadores. Es el caso del índice de vejez, del índice de población infantil y de la tasa bruta de natalidad, su ponderación es de 15.
+
+— Indicadores relevantes: similares a los anteriores, pero con un peso algo menor. Es el caso de la tasa de migración neta, que podría haberse incluido en el grupo anterior si contase con una mayor estabilidad temporal; su ponderación es de 10.
+
+— Otros indicadores: Si bien siguen siendo importantes, su impacto es menor en el estado demográfico de cada concejo. Se incluye la densidad de población, la relación de masculinidad en edad fértil (15-49 años), la tasa bruta de mortalidad, la tasa de empleo y el volumen de población; su ponderación es de 5.
+
+La suma de las ponderaciones es de 100.
+
+Ponderación
+
+1. Densidad de población
+
+5
+
+2. Índice de vejez
+
+15
+
+3. Índice de población infantil
+
+15
+
+4. Relación de masculinidad en edad fértil (15-49 años)
+
+5
+
+5. Tasa bruta de natalidad
+
+15
+
+6. Tasa bruta de mortalidad
+
+5
+
+7. Tasa de migración neta
+
+10
+
+8. Dinámica demográfica
+
+20
+
+9. Tasa de empleo
+
+5
+
+10. Volumen de población
+
+5
+
+Anexo II
+
+Zonificación demográfica
+
+ISDA
+
+33000
+
+Asturias
+
+24,55
+
+33001
+
+Allande
+
+Concejos en riesgo de despoblamiento
+
+3,30
+
+33002
+
+Aller
+
+Concejos en riesgo de despoblamiento
+
+5,85
+
+33003
+
+Amieva
+
+Concejos en riesgo de despoblamiento
+
+1,25
+
+33004
+
+Avilés
+
+Concejos demográficamente inestables
+
+26,65
+
+33005
+
+Belmonte de Miranda
+
+Concejos en riesgo de despoblamiento
+
+5,65
+
+33006
+
+Bimenes
+
+Concejos en crisis demográfica
+
+11,55
+
+33007
+
+Boal
+
+Concejos en riesgo de despoblamiento
+
+1,00
+
+33008
+
+Cabrales
+
+Concejos en crisis demográfica
+
+9,70
+
+33009
+
+Cabranes
+
+Concejos demográficamente inestables
+
+26,85
+
+33010
+
+Candamo
+
+Concejos en crisis demográfica
+
+10,20
+
+33011
+
+Cangas del Narcea
+
+Concejos en crisis demográfica
+
+10,80
+
+33012
+
+Cangas de Onís
+
+Concejos demográficamente inestables
+
+29,30
+
+33013
+
+Caravia
+
+Concejos demográficamente inestables
+
+22,00
+
+33014
+
+Carreño
+
+Concejos demográficamente inestables
+
+20,95
+
+33015
+
+Caso
+
+Concejos en riesgo de despoblamiento
+
+2,75
+
+33016
+
+Castrillón
+
+Concejos demográficamente inestables
+
+26,75
+
+33017
+
+Castropol
+
+Concejos en crisis demográfica
+
+8,80
+
+33018
+
+Coaña
+
+Concejos demográficamente inestables
+
+22,40
+
+33019
+
+Colunga
+
+Concejos en riesgo de despoblamiento
+
+6,85
+
+33020
+
+Corvera de Asturias
+
+Concejos demográficamente inestables
+
+30,00
+
+33021
+
+Cudillero
+
+Concejos en crisis demográfica
+
+9,90
+
+33022
+
+Degaña
+
+Concejos en riesgo de despoblamiento
+
+7,55
+
+33023
+
+Franco, El
+
+Concejos demográficamente inestables
+
+20,65
+
+33024
+
+Gijón
+
+Concejos demográficamente dinámicos
+
+30,80
+
+33025
+
+Gozón
+
+Concejos demográficamente inestables
+
+22,95
+
+33026
+
+Grado
+
+Concejos en crisis demográfica
+
+19,15
+
+33027
+
+Grandas de Salime
+
+Concejos en riesgo de despoblamiento
+
+4,15
+
+33028
+
+Ibias
+
+Concejos en riesgo de despoblamiento
+
+0,40
+
+33029
+
+Illano
+
+Concejos en riesgo de despoblamiento
+
+0,10
+
+33030
+
+Illas
+
+Concejos demográficamente inestables
+
+25,85
+
+33031
+
+Langreo
+
+Concejos demográficamente inestables
+
+21,95
+
+33032
+
+Laviana
+
+Concejos en crisis demográfica
+
+15,30
+
+33033
+
+Lena
+
+Concejos en crisis demográfica
+
+10,85
+
+33034
+
+Valdés
+
+Concejos en crisis demográfica
+
+8,05
+
+33035
+
+Llanera
+
+Concejos demográficamente dinámicos
+
+34,50
+
+33036
+
+Llanes
+
+Concejos demográficamente inestables
+
+21,75
+
+33037
+
+Mieres
+
+Concejos en crisis demográfica
+
+14,75
+
+33038
+
+Morcín
+
+Concejos en crisis demográfica
+
+14,65
+
+33039
+
+Muros de Nalón
+
+Concejos demográficamente inestables
+
+27,10
+
+33040
+
+Nava
+
+Concejos en crisis demográfica
+
+17,10
+
+33041
+
+Navia
+
+Concejos demográficamente inestables
+
+20,25
+
+33042
+
+Noreña
+
+Concejos demográficamente dinámicos
+
+30,50
+
+33043
+
+Onís
+
+Concejos en crisis demográfica
+
+18,85
+
+33044
+
+Oviedo
+
+Concejos demográficamente dinámicos
+
+36,55
+
+33045
+
+Parres
+
+Concejos en crisis demográfica
+
+18,30
+
+33046
+
+Peñamellera Alta
+
+Concejos en crisis demográfica
+
+12,70
+
+33047
+
+Peñamellera Baja
+
+Concejos en crisis demográfica
+
+16,10
+
+33048
+
+Pesoz
+
+Concejos en riesgo de despoblamiento
+
+2,40
+
+33049
+
+Piloña
+
+Concejos en crisis demográfica
+
+13,50
+
+33050
+
+Ponga
+
+Concejos en riesgo de despoblamiento
+
+5,45
+
+33051
+
+Pravia
+
+Concejos en crisis demográfica
+
+14,85
+
+33052
+
+Proaza
+
+Concejos en riesgo de despoblamiento
+
+4,05
+
+33053
+
+Quirós
+
+Concejos en crisis demográfica
+
+8,15
+
+33054
+
+Regueras, Las
+
+Concejos en crisis demográfica
+
+18,80
+
+33055
+
+Ribadedeva
+
+Concejos en crisis demográfica
+
+16,75
+
+33056
+
+Ribadesella
+
+Concejos en crisis demográfica
+
+17,95
+
+33057
+
+Ribera de Arriba
+
+Concejos demográficamente inestables
+
+26,15
+
+33058
+
+Riosa
+
+Concejos en riesgo de despoblamiento
+
+5,10
+
+33059
+
+Salas
+
+Concejos en crisis demográfica
+
+8,55
+
+33060
+
+San Martín del Rey Aurelio
+
+Concejos en crisis demográfica
+
+12,05
+
+33061
+
+San Martín de Oscos
+
+Concejos en riesgo de despoblamiento
+
+5,70
+
+33062
+
+Santa Eulalia de Oscos
+
+Concejos en riesgo de despoblamiento
+
+7,65
+
+33063
+
+San Tirso de Abres
+
+Concejos en crisis demográfica
+
+9,80
+
+33064
+
+Santo Adriano
+
+Concejos demográficamente inestables
+
+21,45
+
+33065
+
+Sariego
+
+Concejos demográficamente inestables
+
+24,40
+
+33066
+
+Siero
+
+Concejos demográficamente dinámicos
+
+36,70
+
+33067
+
+Sobrescobio
+
+Concejos en crisis demográfica
+
+17,35
+
+33068
+
+Somiedo
+
+Concejos en riesgo de despoblamiento
+
+4,20
+
+33069
+
+Soto del Barco
+
+Concejos en crisis demográfica
+
+13,25
+
+33070
+
+Tapia de Casariego
+
+Concejos en crisis demográfica
+
+11,90
+
+33071
+
+Taramundi
+
+Concejos en riesgo de despoblamiento
+
+5,15
+
+33072
+
+Teverga
+
+Concejos en riesgo de despoblamiento
+
+5,10
+
+33073
+
+Tineo
+
+Concejos en riesgo de despoblamiento
+
+6,45
+
+33074
+
+Vegadeo
+
+Concejos demográficamente inestables
+
+21,60
+
+33075
+
+Villanueva de Oscos
+
+Concejos en riesgo de despoblamiento
+
+7,70
+
+33076
+
+Villaviciosa
+
+Concejos demográficamente inestables
+
+28,65
+
+33077
+
+Villayón
+
+Concejos en riesgo de despoblamiento
+
+0,75
+
+33078
+
+Yernes y Tameza
+
+Concejos en crisis demográfica
+
+8,65
+
+ISDA/Zonificación Demográfica.
+
+30,01-100/Concejos demográficamente dinámicos.
+
+20,01-30/Concejos demográficamente inestables.
+
+8,01-20/Concejos en crisis demográfica.
+
+0,00-8/Concejos en riesgo de despoblamiento.
+
+                     Regresar al sumario del boletín   
+
+                        Este documento es de carácter informativo y no tiene valor jurídico.
+El archivo en formato PDF publicado en esta Sede Electrónica está firmado con un certificado reconocido a nombre del Boletín Oficial del Principado de Asturias que asegura su oficialidad e integridad.
+
+                     Disposición siguiente
+
+[[ID:fragment-85c76290-6b6f-7ab3-7dae-e923e4f9291b]]
+
+[[ID:hrefFm]]
+Oculto
+
+	
+
+		
+			
+			
+
+    
+        
+
+[[ID:p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_footer_top_]]
+
+[[ID:p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_footer_top]]
+
+		
+
+[[ID:portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_footer_top]]
+
+
+
+	
+
+		
+			
+				
+				
+			
+		
+
+
+[[ID:footerMenuTop]]
+
+Temes        
+
+                        Tramita con miPrincipado
+
+                        Boletín Oficial del Principáu d'Asturies
+
+                        Sobre miPrincipado
+
+                        Perfil del contratante
+
+                        Ayuda y contactu
+
+                        Utilidaes
+
+                        ¿Qué ye la Oficina d’Atención a les Empreses?
+
+                        miPrincipado Xusticia
+
+		
+	
+
+        
+
+        
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_FooterContacto_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_FooterContacto]]
+
+		
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_FooterContacto]]
+
+
+
+	
+
+		
+			
+				
+
+				
+			
+		
+
+
+Contactu
+
+Llámanos al 985 27 91 00 o al 012
+
+Escríbinos al traviés del formulariu
+
+Ven a venos a les nueses oficines
+
+		
+	
+
+        
+    
+
+
+
+
+
+    
+        
+            
+                
+                    
+                        
+                            
+                            
+                                
+                            
+
+                            
+Principáu d'Asturies                            
+                            
+                            
+                        
+                    
+                    
+
+[[ID:p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_footer_down_]]
+
+[[ID:p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_footer_down]]
+
+		
+
+[[ID:portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_footer_down]]
+
+
+
+	
+
+		
+			
+				
+				
+			
+		
+
+
+                        Accesibilidá
+
+                        Avisu llegal y política de privacidá
+
+                        Llicencies y términos d'usu
+
+                        Mapa web
+
+                        Seguridad de la información
+
+                        Cookies
+
+Configuración de les cookies
+
+		
+	
+
+                    
+                
+            
+        
+    
+
+
+
+
+    
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_FooterLogos_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_FooterLogos]]
+
+		
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_FooterLogos]]
+
+
+
+	
+
+		
+			
+				
+
+				
+			
+		
+
+
+		
+	
+
+
+        
+                
+                    
+© 2025. Gobiernu del Principáu d'Asturies
+
+
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_HeadSocial_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_HeadSocial]]
+
+		
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_HeadSocial]]
+
+
+
+	
+
+		
+			
+				
+
+				
+			
+		
+
+
+Visítanos en
+
+Facebook
+
+Equis
+
+Youtube
+
+Instagram
+
+Tiktok
+
+		
+	
+
+                
+        
+    
+			
+		
+
+
+
+
+[[ID:p_p_id_miprincipadocookiesportlet_INSTANCE_37450_Cookies_]]
+
+[[ID:p_miprincipadocookiesportlet_INSTANCE_37450_Cookies]]
+
+		
+
+[[ID:portlet_miprincipadocookiesportlet_INSTANCE_37450_Cookies]]
+
+
+
+	
+
+		
+			
+				
+				
+			
+		
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+

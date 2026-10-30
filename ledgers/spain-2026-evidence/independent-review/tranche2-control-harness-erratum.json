@@ -1,0 +1,5 @@
+{
+  "failure": "Own test expected2200 instead of1100 for200000\u00d750%\u00d71.1%. Actual computation was1100; Guide/source not wrong.",
+  "repair": "Correct own expected value1100; no Guide/evidence change; failure retained in toolhistory and this receipt.",
+  "inverse_harness_note": "First reviewer difflib inverse check tried to require uniqueness of an empty insertion string and failed. Added actual following-line anchors; all5 operations then forward/inverse match entire before/after. No Guide defect."
+}

@@ -1,0 +1,355 @@
+{
+  "scope": "source-only CLM individual signed-loss assessment and private proposal; no Guide/Git edits",
+  "files": [
+    {
+      "path": "CLM-A-activity-loss-summary.ax.txt",
+      "sha256": "c337e2fb5ae925c5d1b7795e55d54d57d97629c209a0ba5ac8221817a340f354",
+      "bytes": 14754
+    },
+    {
+      "path": "CLM-A-activity-loss-summary.png",
+      "sha256": "5a9590102be0165f5f496f5f45e2969fd7bce5f73f148ab523a70aad3d1c2ce4",
+      "bytes": 92918
+    },
+    {
+      "path": "CLM-A-repeat-activity-input.png",
+      "sha256": "f40afadb0f8d8ff1061933b336ae8371a7a138d717c963cbd63f98f30459d7bb",
+      "bytes": 131102
+    },
+    {
+      "path": "CLM-A-repeat-activity-worksheet.ax.txt",
+      "sha256": "5ac9cf9ec7ddbd4769d693e296f284f4a70534eac31e016fccbe9ffc15b98e6d",
+      "bytes": 36109
+    },
+    {
+      "path": "CLM-A-repeat-quota-components.ax.txt",
+      "sha256": "c7d169a69ab7c07b7972cfc0a33f849f5861d7e518a6fd0174b6e7ae85b29064",
+      "bytes": 41118
+    },
+    {
+      "path": "CLM-A-repeat-quota-components.png",
+      "sha256": "e64e21263e477de3b71658440dbd934303b5ef188c2840b8d8b77bfc1aef71f2",
+      "bytes": 122813
+    },
+    {
+      "path": "CLM-A-repeat-summary.ax.txt",
+      "sha256": "c27cee31b8101ccbff0abe1995f6eb3d9eec896e67ae0adccb087b7008811fb5",
+      "bytes": 14754
+    },
+    {
+      "path": "CLM-A-repeat-summary.png",
+      "sha256": "a910102a6837d0b9116f254d37c27a777cd83250a2f5ed08eaaf284755caa199",
+      "bytes": 92919
+    },
+    {
+      "path": "CLM-B-capital-loss-summary.ax.txt",
+      "sha256": "b356efc5d483b18b9bb102be585bc1ca23d619e9b82528294414d1419d2e3ccd",
+      "bytes": 14746
+    },
+    {
+      "path": "CLM-B-quota-components.ax.txt",
+      "sha256": "ea4089a2b9d1cb657006469852cbc63b884d5aa1b465599c6bd85fd9b526ae2c",
+      "bytes": 41118
+    },
+    {
+      "path": "CLM-B-quota-components.png",
+      "sha256": "e64e21263e477de3b71658440dbd934303b5ef188c2840b8d8b77bfc1aef71f2",
+      "bytes": 122813
+    },
+    {
+      "path": "CLM-C-capital-dialog.ax.txt",
+      "sha256": "8c0560f4faf4155aa9c449eccb0a8f330d82b46043d3bdf768be17c7bae62507",
+      "bytes": 27034
+    },
+    {
+      "path": "CLM-C-capital-dialog.png",
+      "sha256": "0dcac7e5861803daef4166de437c8e2f80b33b84f0c381cba640de4dedd05b8b",
+      "bytes": 80443
+    },
+    {
+      "path": "CLM-C-capital-loss-plus-general-gain-summary.ax.txt",
+      "sha256": "b90fb21b754966c42c23fe16d9f1ebf667d2a62ed8fbce677f156d7bb5bce8dc",
+      "bytes": 15105
+    },
+    {
+      "path": "CLM-C-capital-loss-plus-general-gain-summary.png",
+      "sha256": "f74e40802378be0f123b8bcc1dc950805587095db9665a78cb2d33015e705724",
+      "bytes": 92906
+    },
+    {
+      "path": "CLM-C-capital-worksheet.ax.txt",
+      "sha256": "501b8fa47b349995c48a320731b01542d4b034ec69135108eb119e215abd70e8",
+      "bytes": 23990
+    },
+    {
+      "path": "CLM-C-general-gain-input.png",
+      "sha256": "0497e33c24a57b4e6eb24e0461d271f92da187c4fc9f2513188d88158fdec299",
+      "bytes": 157915
+    },
+    {
+      "path": "CLM-C-general-gain-worksheet.ax.txt",
+      "sha256": "5a91df8bb23b050e5708de4a5c5284d82416b64c74ef6de0d82839a52f03ab8a",
+      "bytes": 25665
+    },
+    {
+      "path": "CLM-C-general-quota.png",
+      "sha256": "4a508300dc29dee0e2337db757e64a9ae9ac97a9a456fe595f089f2d111282e9",
+      "bytes": 135770
+    },
+    {
+      "path": "CLM-C-move-checkbox.ax.txt",
+      "sha256": "44161ad48b13c0f4b01a117f2bbd0727e76d75ba5124f0010dee5377217f3044",
+      "bytes": 32249
+    },
+    {
+      "path": "CLM-C-move-checkbox.png",
+      "sha256": "388e7e4db542f0bd10a1965c847bcf0a897982ecb167fff3e732c243cd3cf17e",
+      "bytes": 94341
+    },
+    {
+      "path": "CLM-C-quota-components.ax.txt",
+      "sha256": "dd4ac78638f329615821f260c9c591e216fa596cd6d58d13dc229415415973a0",
+      "bytes": 41118
+    },
+    {
+      "path": "CLM-C-quota-components.png",
+      "sha256": "ea7e99592cf447ad926fcf83146f40d955acc66a8fc0d6031cfbfd60308ed824",
+      "bytes": 125899
+    },
+    {
+      "path": "CLM-D-pension-input.ax.txt",
+      "sha256": "5e3a04253e5241f84b661d95e598e014eda3a0d6c3ae0b606a2dfc64494f63e2",
+      "bytes": 23070
+    },
+    {
+      "path": "CLM-D-pension-input.png",
+      "sha256": "218eb2f8d88d5f1e24275fe6952e61a4baedd2534c2d7697c54be1d15ce8d61d",
+      "bytes": 151690
+    },
+    {
+      "path": "CLM-D-pension-quota-components.ax.txt",
+      "sha256": "2eedaca9e861f581bcd12d850e61366f902a8b34ee4ae47774d5d42d0ae3d2a3",
+      "bytes": 41118
+    },
+    {
+      "path": "CLM-D-pension-quota-components.png",
+      "sha256": "dfd6d9cfc3702425120e844a4fdefe042cd3238715137a9507f9ec49f8a2afd1",
+      "bytes": 125667
+    },
+    {
+      "path": "CLM-D-pension-summary.ax.txt",
+      "sha256": "eede6a91b8eaf159a099d2ab58a3a4a544168312f34bb89daeb72cff9368037c",
+      "bytes": 15446
+    },
+    {
+      "path": "CLM-D-pension-summary.png",
+      "sha256": "65eaa18927eae07276467d25b409d8c94d011781b55160d6f51dfdb817d6d2b0",
+      "bytes": 93219
+    },
+    {
+      "path": "CLM-D-pension-worksheet.ax.txt",
+      "sha256": "66f41a2db8e4d8c7cb48c4f7377f4f95bf193a702484fd9aecc3d49a96d6e87d",
+      "bytes": 18046
+    },
+    {
+      "path": "CLM-common-savings-dialog.ax.txt",
+      "sha256": "11a87902e1d2f95652e5b3f92331d6c39038d17908ed788913346387d6dc9e3f",
+      "bytes": 25508
+    },
+    {
+      "path": "CLM-common-savings-dialog.png",
+      "sha256": "78d1d03eb9f0e9d95521d9f1c2214b69f4cb1df4d374edf59d115f9c9f311392",
+      "bytes": 83635
+    },
+    {
+      "path": "CLM-common-wage-dialog.ax.txt",
+      "sha256": "256a6203ac0ba339d47228fce42d106c5e2ba18250e7872ed522539b47ebe8de",
+      "bytes": 32221
+    },
+    {
+      "path": "CLM-common-wage-dialog.png",
+      "sha256": "5f9ec9319c6feef53c087d38b45de506f9aeece8ed975ca68bcd89dfe986359d",
+      "bytes": 112546
+    },
+    {
+      "path": "CLM-common-wage-worksheet.ax.txt",
+      "sha256": "3c89321eaa4170fa8b710bc2290c63b5b1cca645e04e7c13790d145f8d2b10ec",
+      "bytes": 22574
+    },
+    {
+      "path": "access-results.json",
+      "sha256": "ae332c1af55b75786264be423ee1d72a3f9dfae676bfee477b7c7ed74b6207fc",
+      "bytes": 831
+    },
+    {
+      "path": "before-README.md",
+      "sha256": "5a732c693317ea41b9b265a7ac3bf9960656faf2bffcbb8c41fe7e1565327c4a",
+      "bytes": 8220
+    },
+    {
+      "path": "before-es-income-tax.md",
+      "sha256": "1d9320f9ed602e68fc30865b2b4cf1b1091564e6f765c40fd5fe5175907caab1",
+      "bytes": 84808
+    },
+    {
+      "path": "before-es-irpf-deductions.md",
+      "sha256": "a68b6eb27a849eb86105799f5744717d29c2296814d9f8bdb2c647fb56cdf8b1",
+      "bytes": 462410
+    },
+    {
+      "path": "browser-observations.json",
+      "sha256": "c4f1f31bb5a925ac67e1c2489c2200076cf3a404c1d6bd8292083f048601051f",
+      "bytes": 6205
+    },
+    {
+      "path": "build-evidence.py",
+      "sha256": "2d591dbd2fbca02143ae7431e96a2bddf71e1bc8da7577b0be9186a46a36a355",
+      "bytes": 23356
+    },
+    {
+      "path": "controls.json",
+      "sha256": "a4161d5356fbaaa042cd0d2a9071dfa5129880252a67d370bae43bb6f8b86415",
+      "bytes": 958153
+    },
+    {
+      "path": "draft-options.md",
+      "sha256": "7d46b83ef88d21f5029dc7bc5d334ace9fbfb3b1c2fbdcffd5e3d570e9aaed1f",
+      "bytes": 1085
+    },
+    {
+      "path": "frozen-guides.json",
+      "sha256": "30b79c40a87e8a357616b15b3a7d35c5d1e512b222309d834da9c45715e88acf",
+      "bytes": 391
+    },
+    {
+      "path": "proposed-es-irpf-deductions.md",
+      "sha256": "18aab6dc6ba4ffbcdd2dcf673ed9f445a475a998ed085797b86045b7554ef364",
+      "bytes": 464949
+    },
+    {
+      "path": "report.md",
+      "sha256": "ccbf1691dbe38001a1d87dbb5f2e2c3f08f57b4f4a66741af32b7e083446bb11",
+      "bytes": 6068
+    },
+    {
+      "path": "source-read-receipts.json",
+      "sha256": "0d5836f7d64326f643431f8c6f77cf0390687572453b676409a2115a94c9c67c",
+      "bytes": 2606
+    },
+    {
+      "path": "sources/aeat-clm2025.html",
+      "sha256": "26ce6211b5540c92659ffb6afd5b056c323fbc85490e9e9d0dd67a9c65c512a7",
+      "bytes": 12409
+    },
+    {
+      "path": "sources/aeat-clm2025.txt",
+      "sha256": "02296fd6d4d677791b4b6cfe708454d4e618dd2e386d5717225e94e596e92bb9",
+      "bytes": 4053
+    },
+    {
+      "path": "sources/clm-current-authority-index-links.json",
+      "sha256": "ade5c26e51cdc3ee9e01ff52fdbb3ccae05faeddce51d5421f3ba77194a78e33",
+      "bytes": 484
+    },
+    {
+      "path": "sources/clm-current-authority-index.ax.txt",
+      "sha256": "e807fd6ec968a1611defa4bfc1013bab0638a85ce998a3f08ca69f578f6698cb",
+      "bytes": 37576
+    },
+    {
+      "path": "sources/clm-current.html",
+      "sha256": "47a4a4fd780c2ee26b6436c4a50aedad4307e86ac0e1c32d82bc1c9369410a01",
+      "bytes": 379179
+    },
+    {
+      "path": "sources/clm-current.txt",
+      "sha256": "e891fddde0fd38b54b43c467f33eea5aadec8da6f48e245c5b37b9c7ef7efb2c",
+      "bytes": 173516
+    },
+    {
+      "path": "sources/clm-law1-2026.html",
+      "sha256": "bb8446891b9e1d78c56bebcd81ca37099804917a320cd14a2343f00c6e0ea7b5",
+      "bytes": 130927
+    },
+    {
+      "path": "sources/clm-law1-2026.txt",
+      "sha256": "74d49fbd3f4d37a4dade41fd59295613ee0a4585c9412066abab0a6f7fd9dd25",
+      "bytes": 108385
+    },
+    {
+      "path": "sources/clm-original-law2-2021.html",
+      "sha256": "ce1ad532d70d003648ce386392ee97617eb0e6dabe6fdc283e202542a9c460d1",
+      "bytes": 338404
+    },
+    {
+      "path": "sources/clm-original-law2-2021.txt",
+      "sha256": "39f8d88ce41554b67deb7285aa68413cc0e5b49ab35e04eb42ba519dd89ad636",
+      "bytes": 218448
+    },
+    {
+      "path": "sources/lirpf-current-19.txt",
+      "sha256": "930af1ca9eed3509562e314e40279bad5df28f99bf0f8084a73de337edbee2f6",
+      "bytes": 2307
+    },
+    {
+      "path": "sources/lirpf-current-20.txt",
+      "sha256": "66e74eefb6b698bb15624825fb0fbe719fefaf6f7c765c801f0ec2bec3795fb3",
+      "bytes": 2966
+    },
+    {
+      "path": "sources/lirpf-current-26.txt",
+      "sha256": "97d64a91975d30a9702cb8eb4f82e170c9063bca2926e473ffebcddf6803e4c5",
+      "bytes": 2326
+    },
+    {
+      "path": "sources/lirpf-current-48.txt",
+      "sha256": "b4a905705138cb7d2afebec84bd750373b49640b0fab50c87d19976ebdcb779b",
+      "bytes": 1816
+    },
+    {
+      "path": "sources/lirpf-current-51.txt",
+      "sha256": "c8d14ade933488f640da39fbc42f6a81ac6d8b285586fe1487e240b5bd0e6e7d",
+      "bytes": 12728
+    },
+    {
+      "path": "sources/lirpf-current-52.txt",
+      "sha256": "79f549659ff4d9bc98be1a4d3f7205d64a1accc050d0b3cb65487fcf107f54d2",
+      "bytes": 5115
+    },
+    {
+      "path": "sources/lirpf-current-56.txt",
+      "sha256": "5ef2fd27defe388c4413232a2c6748908af7436cdfa0f10a6f04e47a245fa61a",
+      "bytes": 1748
+    },
+    {
+      "path": "sources/lirpf-current-74.txt",
+      "sha256": "a483fe4c171a7683d3194818402528cc0c3007a02a696d41be93f6b6ea76507e",
+      "bytes": 2556
+    },
+    {
+      "path": "sources/lirpf-current-76.txt",
+      "sha256": "ed5044202ee881fc44b1458415728b07ffc4aeb5946ecbd44709f2086be0bb72",
+      "bytes": 2765
+    },
+    {
+      "path": "sources/lirpf-current-77.txt",
+      "sha256": "5fa2d2158abf34e90e8ffbc3abe27676b4627c68b0d6de208575a11afeeee1bf",
+      "bytes": 1821
+    },
+    {
+      "path": "sources/lirpf-current.html",
+      "sha256": "e4bef365a0df16c0f30cd858c31dbdccefb2fe0a59113924d03b967e60857fa4",
+      "bytes": 2028806
+    },
+    {
+      "path": "sources/lirpf-current.txt",
+      "sha256": "218a0b609ae6b3d568f893a54eabe34bcfa8289a9c17c7305e2a90b730455cea",
+      "bytes": 901350
+    },
+    {
+      "path": "surgical-proposal.diff",
+      "sha256": "bce8f7ea48a0442c6f86a987619ea279077451e6b7932dc0e29242e25a8cc7e8",
+      "bytes": 7074
+    }
+  ]
+}

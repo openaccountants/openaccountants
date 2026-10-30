@@ -1,0 +1,13 @@
+{
+  "before_sha256": "dc7b1c2f8cf4d5b90514539c335d073d56736d70775ed1d762ea37794e02904c",
+  "after_sha256": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+  "changed_LF": [
+    4,
+    1261
+  ],
+  "inverse_entire_before": true,
+  "root_source_actually_read": [
+    "S132.reader.txt LF1108\u20131136"
+  ],
+  "selected_option": "A"
+}
