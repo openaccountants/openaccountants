@@ -12,8 +12,6 @@ covered_by:
   XB: ua-cross-border
 partial:
   IT-IND: "Covers sole proprietors only (general system in ua-income-tax, single tax in ua-single-tax, crypto in ua-crypto-tax). Employment, investment, rental and property income of individuals who are not entrepreneurs, their annual declaration and the tax discount are not covered."
-  IT-CORP: "ua-corporate-income-tax on main is a tax year 2025 stub. The 2026 rewrite from the Tax Code is in PR #959; remove this entry when it merges."
-  VAT: "ukraine-vat on main carries tax year 2025. The 2026 rewrite from the Tax Code is in PR #966; remove this entry when it merges."
 ---
 
 # Ukraine: tax pack
@@ -24,15 +22,15 @@ Calendar tax year. Currency: hryvnia (UAH). Authority: the State Tax Service of 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ua-income-tax: general-system sole proprietors, 18% PIT and 5% military levy on net profit (2026); with ua-single-tax (single-tax groups) and ua-crypto-tax (virtual assets from 2026). Individuals who are not entrepreneurs are not covered | partial; general template, not yet in the deep-tax shape |
-| IT-CORP, corporate income tax | ua-corporate-income-tax: on main a 2025 stub; PR #959 rewrites it for 2026 (18%, 25% financial institutions, 50% banks in 2026, accounting-profit base, UAH 40 million option, losses, dividend advance, returns, penalties, withholding) | partial until PR #959 merges |
-| VAT | ukraine-vat: on main tax year 2025; PR #966 rewrites it for 2026 (UAH 1,000,000 registration, 20% / 14% / 7% / 0%, invoices and blocking, monthly return, refunds, reverse charge, martial-law rules) | partial until PR #966 merges |
-| SC, social contributions | ua-social-contributions: ЄСВ for sole proprietors and independent professionals, 22%, minimum and maximum base (2026); employer ЄСВ on salaries is in ua-payroll | general template, not yet in the deep-tax shape |
-| PR, payroll withholding | ua-payroll: employer PIT 18%, 5% military levy and 22% ЄСВ on salaries, gross-to-net, reporting calendar (2026) | general template, not yet in the deep-tax shape |
-| TP, transfer pricing | ua-transfer-pricing: controlled transactions (UAH 150 million income and UAH 10 million per counterparty), related persons, methods and the median rule, self-adjustment, report and group notice by 1 October, local file, master file (EUR 50 million), CbCR (EUR 750 million), fines (2026), PR #984 | checked against the law; awaiting merge |
-| XB, cross-border | ua-cross-border: residence, non-residents, PE, art. 141.4 withholding and gross-up, treaty relief and residence certificates, foreign tax credits, CFC rules for companies and individuals, leaving Ukraine (2026), PR #986 | checked against the law; awaiting merge |
+| IT-IND, individual income tax | ua-income-tax: general-system sole proprietors, 18% PIT and 5% military levy on net profit (2026); with ua-single-tax (single-tax groups) and ua-crypto-tax (virtual assets from 2026). Individuals who are not entrepreneurs are not covered | partial; sourced from the law (general template, no Sources table, not yet rebuilt to the deep-tax shape) |
+| IT-CORP, corporate income tax | ua-corporate-income-tax (2026: 18%, 25% financial institutions, 50% banks in 2026, accounting-profit base, UAH 40 million option, losses, dividend advance, returns, penalties, withholding) | checked against the law |
+| VAT | ukraine-vat (2026: UAH 1,000,000 registration, 20% / 14% / 7% / 0%, invoices and blocking, monthly return, refunds, reverse charge, martial-law rules) | checked against the law |
+| SC, social contributions | ua-social-contributions: ЄСВ for sole proprietors and independent professionals, 22%, minimum and maximum base (2026); employer ЄСВ on salaries is in ua-payroll | sourced from the law (general template, no Sources table, not yet rebuilt to the deep-tax shape) |
+| PR, payroll withholding | ua-payroll: employer PIT 18%, 5% military levy and 22% ЄСВ on salaries, gross-to-net, reporting calendar (2026) | sourced from the law (general template, no Sources table, not yet rebuilt to the deep-tax shape) |
+| TP, transfer pricing | ua-transfer-pricing: controlled transactions (UAH 150 million income and UAH 10 million per counterparty), related persons, methods and the median rule, self-adjustment, report and group notice by 1 October, local file, master file (EUR 50 million), CbCR (EUR 750 million), fines (2026) | checked against the law |
+| XB, cross-border | ua-cross-border: residence, non-residents, PE, art. 141.4 withholding and gross-up, treaty relief and residence certificates, foreign tax credits, CFC rules for companies and individuals, leaving Ukraine (2026) | checked against the law |
 
-Other skills in the pack, outside the seven tax domains: ua-tax-overview (country map; 2026 rewrite in PR #974), ua-tax-optimization, ua-formation, ua-bookkeeping, ua-einvoice, ua-financial-statements.
+Other skills in the pack, outside the seven tax domains: ua-tax-overview (country map, 2026), ua-tax-optimization, ua-formation, ua-bookkeeping, ua-einvoice, ua-financial-statements.
 
 ## Official sources
 
