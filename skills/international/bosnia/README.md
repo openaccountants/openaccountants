@@ -3,10 +3,11 @@ jurisdiction: BA
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
-  IT-CORP: "ba-corporate-income-tax on main still carries tax year 2025 figures"
   IT-IND: "capital gains on shares and securities (FBiH, RS) and the Brčko flat-rate amounts are not yet sourced"
   SC: "Brčko District pension and unemployment contribution rates are not yet sourced"
   PR: "Brčko District pension and unemployment contributions not yet sourced; FBiH employer levies on net pay (disaster and water fees) not yet sourced"
+  TP: "Brčko rulebook on market value not found; the RS annual return form and any RS transfer pricing rulebook issued after 114/25 not yet confirmed"
+  XB: "treaty withholding rates sourced for 8 of 38 treaties (Croatia, Serbia, Austria, Germany, Italy, Netherlands, Slovenia, Turkey); the other 30 not yet read"
 covered_by: {}
 ---
 
@@ -23,8 +24,8 @@ Bosnia and Herzegovina has three tax jurisdictions for direct taxes: the Federat
 | VAT | bosnia-vat | checked against the law |
 | SC, social contributions | bosnia-social-contributions | checked against the law |
 | PR, payroll withholding | bosnia-payroll | checked against the law |
-| TP, transfer pricing | (missing) | |
-| XB, cross-border | (missing) | |
+| TP, transfer pricing | ba-transfer-pricing | checked against the law |
+| XB, cross-border | ba-cross-border | checked against the law |
 
 Not covered in depth, by design: VAT special schemes for travel agencies, second-hand goods and auctions, the farmers' flat-rate compensation and a field-by-field e-records map; treaty withholding rate tables.
 
