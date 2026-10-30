@@ -54,8 +54,6 @@ The 2026 law is the CIT Law consolidated through Official Gazette 88/24. The ame
 | Fine, legal person (documentation not delivered or not held) | EUR 1,000 to 20,000 | 2026 | [CIT Law art. 42a(1)(3) and (4)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
 | Fine, responsible person in the company | EUR 500 to 2,000 | 2026 | [CIT Law art. 42a(2)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
 | Interest on unpaid or underpaid tax, 1 January to 17 July 2026 | 0.03% a day from the day after the due date | 2026 | [Tax Administration Law art. 95](https://wapi.gov.me/download/6bf4fd6a-fa32-4c33-9f5a-3a13ae509233?version=1.0) |
-| Law amending the Tax Administration Law, Official Gazette 104/26 (17 July 2026), arts. 20 (new art. 95 rate: ECB + 3 points) and 26 (in force the next day) | https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0 | 2026-10-30 |
-| Tax Administration decision on the default interest rate for 18 July to 31 December 2026 (5.4% a year) | https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0 | 2026-10-30 |
 | Interest on unpaid or underpaid tax, 18 July to 31 December 2026 | 5.4% a year (ECB main refinancing rate + 3 points, set each half-year) | 2026 | [104/26 Tax Administration Law amendment arts. 20, 26](https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0); [Tax Administration decision, 24 Jul 2026](https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0) |
 
 ## The taxable base
@@ -71,7 +69,7 @@ The adjustment only increases the base. There is no domestic route to a downward
 
 ### Methods
 
-The law lists seven methods (art. 38b(1); Instruction art. 3). Choose the one that fits the facts, after a functional analysis of the controlled transaction, the data available and the degree of comparability (Instruction art. 4). Transactions may be aggregated or split, with reasons.
+The law lists seven methods (art. 38b(1); Instruction art. 3). Choose the one that fits the facts, after a functional analysis of the controlled transaction, the data available and the degree of comparability (Instruction art. 4). Transactions can be aggregated or split, with reasons.
 
 | Method | How it works (Instruction) |
 |---|---|
@@ -85,11 +83,11 @@ The law lists seven methods (art. 38b(1); Instruction art. 3). Choose the one th
 
 A cost-plus markup is on cost; a resale margin is on sales. They are different percentages and are not interchangeable.
 
-For comparables, use internal data first. If external data is needed, use Montenegrin data first; data from other countries may be used where Montenegrin data is not available, taking account of market differences (Instruction art. 10(3) and (4)).
+For comparables, use internal data first. If external data is needed, use Montenegrin data first; data from other countries can be used where Montenegrin data is not available, taking account of market differences (Instruction art. 10(3) and (4)).
 
 ### Related-party financing
 
-For loans, credits and other financial instruments between related persons, the Ministry prescribes the arm's-length rate by 31 December for the next year (art. 38b(2)). For 2026 it is 4.97% (Rulebook 145/25 art. 2; it applies from 1 January 2026 under art. 3). As an alternative, the taxpayer may price the interest with the general methods in Article 38b(1) (art. 38b(3)). Record which route is used for each instrument.
+For loans, credits and other financial instruments between related persons, the Ministry prescribes the arm's-length rate by 31 December for the next year (art. 38b(2)). For 2026 it is 4.97% (Rulebook 145/25 art. 2; it applies from 1 January 2026 under art. 3). As an alternative, the taxpayer can price the interest with the general methods in Article 38b(1) (art. 38b(3)). Record which route is used for each instrument.
 
 Apply the 4.97% rate to 2026 only, on the actual principal outstanding for the actual period. Compare booked interest with arm's-length interest separately for each instrument: excess interest expense of a borrower, or shortfall in interest income of a lender, goes into the base under Article 38a(4).
 
@@ -102,7 +100,7 @@ Other rules on related-party finance that sit outside the pricing test:
 
 ### Large-taxpayer status
 
-Status decides whether documentation is delivered with the return or only held. Under Rulebook 31/17 a legal person is a large taxpayer if it meets at least two of: fiscal capacity (total public-revenue tax obligations over the two business years before the year of determination) above EUR 600,000; turnover above EUR 10,000,000 over those two years; more than 50 employees (arts. 2 and 3). Banks and insurers are large taxpayers regardless (art. 5). A related person of a large taxpayer whose turnover is wholly or mainly with that large taxpayer may also be designated (art. 4). The tax authority notifies the taxpayer in writing when it gains or loses the status (art. 6). Use that notice, not the accounting size class.
+Status decides whether documentation is delivered with the return or only held. Under Rulebook 31/17 a legal person is a large taxpayer if it meets at least two of: fiscal capacity (total public-revenue tax obligations over the two business years before the year of determination) above EUR 600,000; turnover above EUR 10,000,000 over those two years; more than 50 employees (arts. 2 and 3). Banks and insurers are large taxpayers regardless (art. 5). A related person of a large taxpayer whose turnover is wholly or mainly with that large taxpayer can also be designated (art. 4). The tax authority notifies the taxpayer in writing when it gains or loses the status (art. 6). Use that notice, not the accounting size class.
 
 ### Documentation content
 
@@ -152,7 +150,7 @@ Under CIT Law Article 42a, a legal person is fined EUR 1,000 to 20,000, and the 
 - as another taxpayer, does not hold the documentation at the return date and does not deliver it within 45 days of a request (art. 42a(1)(4));
 - does not compute CIT under the law (art. 42a(1)(5)), or does not file the return electronically within three months (art. 42a(1)(6)).
 
-Tax underpaid because of a TP adjustment carries interest at 0.03% a day until 17 July 2026 and, from 18 July 2026, at 5.4% a year (ECB main refinancing rate plus 3 points, set each half-year; 104/26 arts. 20 and 26 and the Tax Administration decision of 24 July 2026), from the day after the due date (Tax Administration Law art. 95(1)); there is no interest on interest (art. 95(3)). Overpaid tax earns interest at the same rate from the date the refund claim is received (art. 96). Appeals and enforcement follow the tax procedure law (CIT Law art. 42).
+Tax underpaid because of a TP adjustment carries interest at 0.03% a day until 17 July 2026 and, from 18 July 2026, at 5.4% a year (ECB main refinancing rate plus 3 points, set each half-year; 104/26 arts. 20 and 26 and the Tax Administration decision of 24 July 2026), from the day after the due date (Tax Administration Law art. 95(1)); there is no interest on interest (art. 95(7), art. 95(3) before 104/26). Overpaid tax earns interest at the same rate (art. 96(1)). Until 17 July 2026 that interest ran from the day the refund claim was received; from 18 July 2026 art. 96(2) says interest is calculated within 30 days of receipt of the claim (104/26 art. 21). Appeals and enforcement follow the tax procedure law (CIT Law art. 42).
 
 ## Cross-border points
 
@@ -364,8 +362,11 @@ expected:
 | Instruction on reporting by members of international groups (CbC), Official Gazette 69/22 and 43/25, points 2 to 29 and the attached form and instructions | https://wapi.gov.me/download/194f36b9-b629-4bfc-87f4-d0385517846f?version=1.0 | 2026-10-30 |
 | Ministry of Finance, list of territories with tax sovereignty under CIT Law art. 29 (published 28 March 2025) | https://wapi.gov.me/download/10ea79a6-8f36-463d-ab8c-b88ab655b61c?version=1.0 | 2026-10-30 |
 | Tax Administration Law (Zakon o poreskoj administraciji), consolidated text through Official Gazette 160/25 (before 104/26), arts. 95 and 96 | https://wapi.gov.me/download/6bf4fd6a-fa32-4c33-9f5a-3a13ae509233?version=1.0 | 2026-10-30 |
+| Tax Administration Law, Ministry consolidated text through Official Gazette 104/26, arts. 95 and 96 | https://wapi.gov.me/download/8e3ee8d0-f10c-453a-90ad-6439ac07aca2?version=1.0 | 2026-10-30 |
+| Law amending the Tax Administration Law, Official Gazette 104/26 (17 July 2026), arts. 20 (new art. 95 rate: ECB + 3 points), 21 (new art. 96) and 26 (in force the next day) | https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0 | 2026-10-30 |
+| Tax Administration decision on the default interest rate for 18 July to 31 December 2026 (5.4% a year), 24 July 2026 | https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0 | 2026-10-30 |
 
-Not yet confirmed: whether the Article 44b transitional date ("until 2027") covers 2026 documentation, giving 30 June 2027, or ends with 2025 documentation; whether Montenegro now meets the OECD appropriate-use and confidentiality standards that switch on local CbC filing by non-parent members (CbC point 2b); the deadline and electronic format for filing a full CbC report (the instruction sets none); which lines of Form PD and attachment carry the TP adjustment; any amendment to the Tax Administration Law after 160/25; rules for intangibles, guarantees, cash pools and business restructurings beyond the general methods.
+Not yet confirmed: whether the Article 44b transitional date ("until 2027") covers 2026 documentation, giving 30 June 2027, or ends with 2025 documentation; whether Montenegro now meets the OECD appropriate-use and confidentiality standards that switch on local CbC filing by non-parent members (CbC point 2b); the deadline and electronic format for filing a full CbC report (the instruction sets none); which lines of Form PD and attachment carry the TP adjustment; whether interest on a refund runs from the day of the claim or from day 30 under the new art. 96(2); rules for intangibles, guarantees, cash pools and business restructurings beyond the general methods.
 
 <!-- openaccountants-cta-block -->
 
