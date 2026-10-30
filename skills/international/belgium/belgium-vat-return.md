@@ -1,10 +1,10 @@
 ---
 name: belgium-vat-return
 description: "Belgian VAT (btw / TVA) for tax year 2026: who must charge it, the 21%, 12%, 6% and 0% rates (hotels and campsites moved from 6% to 12% on 1 March 2026), the small-business exemption at EUR 25,000 with its 10% tolerance and the rises to EUR 26,000-30,000 from 2027, the EU small-business scheme (EUR 100,000), monthly or quarterly returns (EUR 2,500,000 test), the 20th and 25th deadlines, the end of the summer holiday extension in 2026, refunds on request and the VAT provision account, the replacement return, mandatory structured B2B e-invoicing from 1 January 2026, late interest (8% in 2026) and the fines in Royal Decrees 41 and 44. Trigger on: Belgian VAT, btw-aangifte, déclaration TVA, Intervat, kwartaalaangifte, vrijstellingsregeling kleine ondernemingen, franchise TVA, vervangende aangifte, Peppol Belgium, btw-boete. Out of scope: e-invoice formats and Peppol set-up (belgium-einvoice), bookkeeping (belgium-bookkeeping), income tax (be-income-tax), corporate tax (be-corporate-tax)."
-version: 2.3
+version: 2.4
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Belgium VAT (btw / TVA): rates, thresholds, returns and penalties, tax year 2026 v2.3
+# Belgium VAT (btw / TVA): rates, thresholds, returns and penalties, tax year 2026 v2.4
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Belgium.
 
@@ -116,6 +116,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | No technical means to issue and receive structured e-invoices | EUR 1,500 the 1st offence, EUR 3,000 the 2nd, EUR 5,000 after. A later offence counts only if found at least three months after the previous fine | KB nr. 44 annex, section 2, I.C |
 | Spontaneous correction | Full remission of proportional fines if the taxpayer corrects before any intervention by the administration | KB nr. 41 art. 3 |
 
+**Tolerance in early 2026.** FOD Financiën applied no penalties during the first three months of 2026 (January to March) for offences specific to the new e-invoicing obligation: not yet having the technical means to send or receive a structured e-invoice, or not issuing one because the business's own system, or a third party's, could not yet produce a valid one. The condition is that the business can show it took steps in a timely and reasonable manner. The invoice still had to be issued in another format or by another channel. Each case is assessed individually and there is no general postponement ([einvoice.belgium.be, tolerance during the first three months of 2026](https://einvoice.belgium.be/en/news/period-tolerance-during-first-three-months-2026)). For self-billing invoices the administration is lenient until 30 June 2026 where sending or receiving them is not yet technically possible, if the business shows its software supplier is still building the function; until then they may be made and sent another way, with no fine for sender or receiver ([efactuur.belgium.be FAQ B2B, question 23](https://efactuur.belgium.be/nl/FAQ/algemene-vragen-b2b)).
+
 The KB nr. 41 scale does not apply where the offence was committed to evade tax (KB nr. 41 art. 1).
 
 ## Cross-border points
@@ -215,9 +217,10 @@ expected:
 | FOD Financiën, periodieke aangifte (no holiday extension in 2026) | https://financien.belgium.be/nl/ondernemingen/btw/aangifte/periodieke-aangifte | 2026-10-23 |
 | FOD Financiën, btw-kalender 2026 | https://financien.belgium.be/nl/ondernemingen/btw/btw-kalender | 2026-10-23 |
 | FOD Financiën, betaling (late interest 8% for 2026) | https://financien.belgium.be/nl/ondernemingen/btw/betaling-teruggave/betaling | 2026-10-23 |
-| FOD Financiën, e-factuur FAQ on the B2B obligation | https://efactuur.belgium.be/nl/FAQ/algemene-vragen-b2b | 2026-10-23 |
+| FOD Financiën, e-factuur FAQ on the B2B obligation (question 23: self-billing tolerance to 30 June 2026) | https://efactuur.belgium.be/nl/FAQ/algemene-vragen-b2b | 2026-10-30 |
+| FPS BOSA / FOD Financiën, "Period of tolerance during the first three months of 2026" (e-invoicing) | https://einvoice.belgium.be/en/news/period-tolerance-during-first-three-months-2026 | 2026-10-30 |
 
-Not yet confirmed: whether the pro rata limit for a business that starts mid-year is also the limit tested for the "exceeded in the previous year" bar in art. 56decies; the full item lists of Tables A, B and C are summarised, not reproduced; any tolerance period the administration may grant for the first months of B2B e-invoicing was not found in the sources read.
+Not yet confirmed: whether the pro rata limit for a business that starts mid-year is also the limit tested for the "exceeded in the previous year" bar in art. 56decies; the full item lists of Tables A, B and C are summarised, not reproduced.
 
 > Contributed by Michael Cutajar.
 
