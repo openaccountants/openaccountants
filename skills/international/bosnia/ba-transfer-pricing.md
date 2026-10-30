@@ -91,7 +91,7 @@ Apply the law of the place where the company (or its branch) is taxed on profit.
 - FBiH: the transfer pricing report must cover at least the group structure and business, an industry analysis, a functional analysis, the choice of method, and a conclusion (Rulebook art. 83(1)). Groups at the EUR 750 million threshold also prepare a master file; everyone else prepares the local file (art. 70). A **short report** (group structure, method and conclusion only) is enough for: loans between related parties; transactions with an FBiH related party where TP-900 is used; loans with related parties in BiH; support services charged at cost plus 5%; and a single one-off sale or purchase of an asset other than goods (art. 83(2), (3)). The report is in an official BiH language; the master file may be in English (art. 90). Records are kept as long as the return itself (art. 89).
 - RS: ten items, from a business overview and group structure through the functional and comparability analysis, choice of method, any advance pricing agreements abroad and a conclusion (Rulebook art. 12(2)). The documentation is in an official language of the RS, on paper or electronically (art. 12(4), (5)), though from 2026 the law requires electronic filing (law art. 34(2)).
 
-**Self-correction.** If the analysis shows the prices were not at arm's length, the FBiH report states the method and the amount of the correction in the tax balance (FBiH Rulebook art. 88(3)). Correct it in the return, not after an audit.
+**Self-correction.** If the analysis shows the prices were not at arm's length, the FBiH report states the method and the amount of the correction in the tax balance (FBiH Rulebook art. 88(3)). Correct it in the return, not after an audit. In the FBiH tax balance (Form PB-800-A or PB-800-B), unreported income goes on line 65 and excess expenses on line 66; the amount relieved through Form TP-900 goes on line 67; taxable profit after transfer pricing is line 63 + 65 + 66 − 67 (Pravilnik o primjeni Zakona o porezu na dobit art. 107).
 
 ## Penalties and interest
 
@@ -155,7 +155,9 @@ expected:
 
 A Mostar company keeps the books and runs payroll for its sister company in Sarajevo, also an FBiH resident. It does not offer these services to outsiders. In 2026 the work cost KM 400,000 and it charged the sister exactly KM 400,000. It also bought goods worth KM 300,000 from its Croatian parent at a price its benchmark supports. Neither FBiH company uses an investment or employment incentive or has a tax loss.
 
-Accounting and payroll are support services (Rulebook art. 55). Instead of a benchmark study, the company applies the 5% mark-up (art. 54(2)). The arm's length charge is 400,000 x 1.05 = KM 420,000. It adds KM 20,000 in its 2026 tax balance and pays KM 2,000 more tax. A short report is enough for this service (art. 83(3)(c)). Because both companies are FBiH residents and the conditions of art. 95(2) are met, it files Form TP-900 with its return by 31 March 2027 to remove the double tax. Its controlled transactions total KM 700,000, which is over KM 500,000, so Form TP-902 is also due by 31 March 2027 (law art. 49(3); Rulebook art. 92).
+Accounting and payroll are support services (Rulebook art. 55). Instead of a benchmark study, the company applies the 5% mark-up (art. 54(2)). The arm's length charge is 400,000 x 1.05 = KM 420,000. It enters the KM 20,000 difference on line 65 of its 2026 tax balance (Form PB-800-A), which on its own costs KM 2,000 in tax. A short report is enough for this service (art. 83(3)(c)).
+
+Both companies are FBiH residents and neither uses an incentive or has a tax loss (art. 95(2)(b), (c)). If both also show this transaction at transfer prices in their tax base (art. 95(2)(a)), the company files Form TP-900 with its return by 31 March 2027 and enters the same KM 20,000 on line 67, which takes it back out: taxable profit after transfer pricing is line 63 + 65 + 66 − 67 (Pravilnik o primjeni Zakona o porezu na dobit art. 107). The extra tax is then nil instead of KM 2,000. Its controlled transactions total KM 700,000, which is over KM 500,000, so Form TP-902 is also due by 31 March 2027 (law art. 49(3); Rulebook art. 92).
 
 ```oa-check
 name: FBiH support services at cost plus 5% and TP-902 test (2026)
@@ -167,12 +169,16 @@ steps:
   - arm_length_charge: service_cost * 1.05
   - adjustment: arm_length_charge - charged
   - extra_tax: adjustment * 0.10
+  - line_67_relief: adjustment
+  - tax_after_tp900: (adjustment - line_67_relief) * 0.10
   - controlled_total: charged + purchases_from_parent
   - over_tp902_threshold: controlled_total - 500000
 expected:
   arm_length_charge: 420000
   adjustment: 20000
   extra_tax: 2000
+  line_67_relief: 20000
+  tax_after_tp900: 0
   controlled_total: 700000
   over_tp902_threshold: 200000
 ```
@@ -193,6 +199,7 @@ expected:
 | FBiH Zakon o porezu na dobit, 15/16 and 15/20, unofficial consolidated text: arts. 7(8), 9(1)(l), 18, 38, 44 to 46, 49, 58 | https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf | 2026-10-30 |
 | FBiH Pravilnik o transfernim cijenama, 67/16 and 92/24, unofficial consolidated text: arts. 1 to 3, 6, 25, 42, 54 to 56, 65, 66, 68 to 70, 76, 83, 85, 88 to 96 | https://www.pufbih.ba/v1/public/upload/zakoni/ae0c4-pravilnik-o-transfernim-cijenama-preciscen-tekst.pdf | 2026-10-30 |
 | FBiH Pravilnik o izmjenama Pravilnika o transfernim cijenama, 92/24 (EUR 750 million thresholds, CBC-901 deadline; applies from 1 January 2025) | https://www.pufbih.ba/v1/public/upload/zakoni/80e33-pravilnik-o-izmjenama-pravilnika-o-transfernim-cijenama-92-24.pdf | 2026-10-30 |
+| FBiH Pravilnik o primjeni Zakona o porezu na dobit, consolidated to 39/26: art. 107 (tax balance lines 63 to 68) | https://pufbih.ba/v1/public/upload/zakoni/03062026%20Pravilnik%20o%20primjeni%20Zakona%20o%20porezu%20na%20dobit%2039-26.pdf | 2026-10-30 |
 | Porezna uprava FBiH, list of regulations in force | https://pufbih.ba/api/regulations | 2026-10-30 |
 | FBiH Zakon o visini stope zatezne kamate na javne prihode, consolidated: art. 2 | https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf | 2026-10-30 |
 | RS Zakon o porezu na dobit, Sl. glasnik RS 94/15: arts. 31 to 35, 38, 40, 58 | https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20porezu%20na%20dobit%20od%2001_01_2016.pdf | 2026-10-30 |
@@ -203,7 +210,7 @@ expected:
 | BD Zakon o porezu na dobit, consolidated text Sl. glasnik BD 17/22: arts. 2(e), 2(j), 8(3), 9 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/05B17-22%20Zakon%20o%20porezu%20na%20dobit%20-%20prec--is--eni%20tekst.pdf | 2026-10-30 |
 | BD Zakon o Poreznoj upravi 11/20: art. 68 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20Poreznoj%20upravi%20Brc--ko%20Distrikta%20BiH/011B11-20%20Zakon%20%20o%20poreznoj%20upravi%20Brcko%20distrikta%20BiH.pdf | 2026-10-30 |
 
-Not yet confirmed: whether the RS Ministry has issued a new transfer pricing rulebook after 114/25 (the Tax Administration's list, updated June 2026, still shows 47/16, so the KM 700,000 annual-return threshold is taken from it; the law's KM 50,000 documentation threshold from 2026 is a separate test); the form number and layout of the RS annual return of controlled transactions; the BD rulebook that sets how market value is found (BD law art. 9(3)), which was not found on an official site; whether a BD transfer pricing adjustment also triggers a general fine under the BD tax administration law; whether the RS Zakon o poreskom postupku art. 115 (30% of an unreported tax) is applied to transfer pricing adjustments; the FBiH Ministry of Finance's 2017 position on applying the rulebook (pufbih.ba lists it, but the PDF had no text layer). The RS law and rulebook texts were read from OCR of the official gazette scans published by Poreska uprava RS.
+Not yet confirmed: whether the RS Ministry has issued a new transfer pricing rulebook after 114/25 (the Tax Administration's list, updated June 2026, still shows 47/16, so the KM 700,000 annual-return threshold is taken from it; the law's KM 50,000 documentation threshold from 2026 is a separate test); the form number and layout of the RS annual return of controlled transactions; the BD rulebook that sets how market value is found (BD law art. 9(3)), which was not found on an official site; whether a BD transfer pricing adjustment also triggers a general fine under the BD tax administration law; whether the RS Zakon o poreskom postupku art. 115 (30% of an unreported tax) is applied to transfer pricing adjustments; what the FBiH condition that both companies "show transfer prices for the same transaction in their tax base" (Rulebook art. 95(2)(a)) requires of a counterparty that underpaid and so has no adjustment line of its own; the FBiH Ministry of Finance's 2017 position on applying the rulebook (pufbih.ba lists it, but the PDF had no text layer). The RS law and rulebook texts were read from OCR of the official gazette scans published by Poreska uprava RS.
 
 <!-- openaccountants-cta-block -->
 
