@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 0.2
+version: 0.3
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -8,11 +8,11 @@ covered_by:
   TP: md-transfer-pricing
   XB: md-cross-border
 partial:
-  IT-IND: "Existing Guides retained; current-source and full individual, investment and residence scope review open."
+  IT-IND: "2026 individual-income writer draft and figure ledger prepared; commencement, procedure and form conflicts remain explicit; whole-country independent review is pending."
   IT-CORP: "2026 corporate writer draft and figure ledger prepared; ordinary deduction procedures, approved returns, dividend-deferral implementation and independent whole-country review remain open."
   VAT: "Existing VAT Guide retained; registration, place-of-supply, imports, exemptions and return instructions need current source reconciliation."
   SC: "2026 social/medical writer draft prepared; annex-1 retention, full commencement chain, State-insured health coverage, approved reporting codes and independent whole-country review remain open."
-  PR: "Existing payroll Guide retained; current withholding, benefits, filings and special employment cases need review."
+  PR: "2026 payroll writer draft and figure ledger prepared; cumulative withholding and reporting instructions reconciled, with remaining benefit, procedure and special-regime gaps explicit; whole-country independent review is pending."
   TP: "New source-cited draft updated for Law 187/2025 and Order 8/2026; practitioner review, full statutory and annex reconciliation, and taxpayer-specific analysis remain open."
   XB: "New scoped source-cited draft; practitioner review, current treaty-by-treaty checks, residence, credits, mobility, property and entity topics remain open."
 ---
@@ -21,7 +21,7 @@ partial:
 
 Accountable owner: Michael. Assigned writer: ChatGPT under [OWNERS.md](../../../OWNERS.md). Eight existing Guides were present before this batch. Two missing core areas now have draft Guides: [transfer pricing](md-transfer-pricing.md) and [cross-border tax](md-cross-border.md). The new Guides are source-cited drafts, not independently reviewed or accountant-attested. Existing material remains unverified and partial; no domain is marked complete.
 
-The [corporate-income Guide](md-corporate-income-tax.md) and [social/medical Guide](moldova-social-contributions.md) now have 2026 writer drafts, two recomputing examples each and [corporate](../../../ledgers/md-corporate-income-tax.md) and [social](../../../ledgers/moldova-social-contributions.md) figure ledgers with predecessor-topic destinations. Their stated ordinary implementation gaps remain open. Separate source controls are writer evidence and do not establish completed Guide coverage. The other existing Guides retain their own stated dates and gaps. No whole-country independent review has been completed for this expansion.
+The [corporate-income](md-corporate-income-tax.md), [social/medical](moldova-social-contributions.md), [individual-income](moldova-income-tax.md) and [payroll](moldova-payroll.md) Guides now have 2026 writer drafts and two recomputing examples each. Their figure ledgers ([corporate](../../../ledgers/md-corporate-income-tax.md), [social](../../../ledgers/moldova-social-contributions.md), [individual](../../../ledgers/moldova-income-tax.md), [payroll](../../../ledgers/moldova-payroll.md)) retain predecessor-topic destinations. Their stated ordinary implementation gaps remain open. Separate source controls are writer evidence and do not establish completed Guide coverage. The other existing Guides retain their own stated dates and gaps. No whole-country independent review has been completed for this expansion.
 
 ## Domains
 
@@ -39,7 +39,7 @@ Property, tax reporting, audit/compliance, cross-border residence and treaty app
 
 ## Official starting sources
 
-- Fiscal Code No. 1163/1997, consolidation operative 30 October 2026, selected corporate articles read: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro . The earlier linked document 142855 is an April 2024 consolidation and must not be treated as current 2026 law.
+- Fiscal Code No. 1163/1997, consolidation operative 30 October 2026, selected corporate, individual-income and payroll articles read: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro . The earlier linked document 142855 is an April 2024 consolidation and must not be treated as current 2026 law.
 - SFS transfer-pricing rules, current period filing instructions and notices: https://www.sfs.md/ro/pagina/preturi-de-transfer
 - Ministry of Finance Order 21/2025 amending Order 9/2024: https://www.legis.md/cautare/downloadpdf/147520
 - SFS 2025 transfer-pricing deadline notice (published June 2026): https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025
