@@ -1,7 +1,7 @@
 ---
 name: ua-payroll
 description: "Ukrainian payroll for employers, tax year 2026: companies and sole proprietors (ФОП) who hire staff under employment or civil-law contracts. Covers the hiring notice before work starts; withholding of 18% personal income tax and the 5% military levy; the tax social benefit for low salaries (UAH 1,664, limit UAH 4,660); the employer's 22% ЄСВ on gross pay, with the UAH 1,902.34 floor, the UAH 172,940 cap and 8.41% for employees with disabilities; gross-to-net; paying with each salary and by the 20th; the combined tax calculation (quarterly for sole proprietors, monthly for companies) and its 2026 deadlines; fines under the Tax Code, the ЄСВ law and the Labour Code; contractors versus employees. Trigger on: Ukraine payroll, зарплата податки, ПДФО з зарплати, військовий збір з зарплати, ЄСВ роботодавця, податковий розрахунок, hiring in Ukraine. Out of scope: own ЄСВ (ua-social-contributions), annual declaration (ua-income-tax)."
-version: 0.2
+version: 1.1
 jurisdiction: UA
 tax_year: 2026
 last_updated: 2026-10-30
