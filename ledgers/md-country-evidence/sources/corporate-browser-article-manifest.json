@@ -1382,6 +1382,139 @@
       "format": "Exact JSON returned by read-only browser DOM observation",
       "sha256": "14311c30511a3f43e3901b96639db2ca645c9cc8f31795f1b972f7afd32c3ef2"
     },
+    "CORP-VEN12-ORDER": {
+      "article": "CORP-VEN12-ORDER",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=146095&lang=ro",
+      "observed_utc": "2026-10-30T18:49:27.000Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "504c0aaf0f55d473edcc41b57b2d59bf552580000fe9fd01900d5fd958251c40"
+    },
+    "CORP-HG693-DEDUCTIONS-PART1": {
+      "article": "CORP-HG693-DEDUCTIONS-PART1",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T18:49:53.489Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "a5be5e18316f5a4880424106ba5e2c9b4df492035371e3b95205dfe7cb038b76"
+    },
+    "CORP-HG693-DEDUCTIONS-PART2": {
+      "article": "CORP-HG693-DEDUCTIONS-PART2",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T18:49:57.760Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "ea2d74913d0caa41bdb76a30ad827b54289b4d4ac2ff802095dccfe605bc5409"
+    },
+    "CORP-HG693-DEDUCTIONS-PART3": {
+      "article": "CORP-HG693-DEDUCTIONS-PART3",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T18:50:01.966Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "f2134acfe9ec10dc94a11f0a228a40c6932407eb8fb02b06283a528b19c6168d"
+    },
+    "CORP-HG693-DEDUCTIONS-PART4": {
+      "article": "CORP-HG693-DEDUCTIONS-PART4",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T18:50:05.853Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "5c1356efaf0620ab56e6bd8d63625e8d60d86de6bd37d298d45675623f3566f4"
+    },
+    "CORP-HG693-DEDUCTIONS-PART5": {
+      "article": "CORP-HG693-DEDUCTIONS-PART5",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T18:50:11.618Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "b384f43439178c185bd350d3ab5a73bfaf7bdae202b257677f31e888e09198de"
+    },
+    "CORP-HG693-DEDUCTIONS-PART6": {
+      "article": "CORP-HG693-DEDUCTIONS-PART6",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T18:50:15.528Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "c2dad0e255bc8550217ad18c6159a27d277b9582551d2b1f63b856996016631d"
+    },
+    "CORP-HG693-LOSSES": {
+      "article": "CORP-HG693-LOSSES",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T18:50:15.528Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "d1b07dc72623c718817b7d4f5ed61f11fcc92943274cd5cb7819261cdaff1b57"
+    },
+    "CORP-HG693-TAX-PAYMENT": {
+      "article": "CORP-HG693-TAX-PAYMENT",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T18:50:15.528Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "734a0966746cee215604efd9431cd286baaeffd85a4145c59707b493123557e3"
+    },
+    "CORP-HG693-JAN-30": {
+      "article": "CORP-HG693-JAN-30",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=150441&lang=ro",
+      "observed_utc": "2026-10-30T18:54:34.003Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "6a7ef099d1fe107af1f69b32187592ce10fe424cf2ea80f9896cb88398980b4a"
+    },
+    "CORP-HG693-JAN-31": {
+      "article": "CORP-HG693-JAN-31",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=150441&lang=ro",
+      "observed_utc": "2026-10-30T18:54:34.003Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "2570a60cfb677f222560bcbb556d8c33800cc7b6ec70ce2c50a0693d71f82a16"
+    },
+    "CORP-HG693-JAN-34": {
+      "article": "CORP-HG693-JAN-34",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=150441&lang=ro",
+      "observed_utc": "2026-10-30T18:54:34.003Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "49f2b3acd1c926b392c353a8bc523c8543a42f6abd4274643d2b9c97cc99c5d0"
+    },
+    "CORP-HG693-JAN-39": {
+      "article": "CORP-HG693-JAN-39",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=150441&lang=ro",
+      "observed_utc": "2026-10-30T18:54:34.003Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "f9f6cca2e83af851cf942f0d678d042e23a118b2bef2081bd9e851d5565dcbc9"
+    },
+    "CORP-HG693-JAN-391": {
+      "article": "CORP-HG693-JAN-391",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=150441&lang=ro",
+      "observed_utc": "2026-10-30T18:54:34.003Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "a6e86ecea48e2eb63654643393b4a09e0fc8af0f2f2c071c64b5552781e12a5d"
+    },
+    "CORP-HG693-JAN-40": {
+      "article": "CORP-HG693-JAN-40",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=150441&lang=ro",
+      "observed_utc": "2026-10-30T18:54:34.003Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "b693c5193456867ca882d720a84902f82188f828b19a7eb2a1913919e95b7b59"
+    },
+    "CORP-HG693-JAN-53": {
+      "article": "CORP-HG693-JAN-53",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=150441&lang=ro",
+      "observed_utc": "2026-10-30T18:54:34.003Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "08b70045b1f9e216a2d8d7fea79f8edbd15eb0234b453a9c92b2be583be20f0a"
+    },
+    "CORP-CODEJAN24-15": {
+      "article": "CORP-CODEJAN24-15",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro",
+      "observed_utc": "2026-10-30T18:55:36.191Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "e4e3b1d00604a19c3f6bf0d3b96b3b299ff06b8d82e580daf057f7dc58d8f926"
+    },
+    "CORP-CODEJAN24-151": {
+      "article": "CORP-CODEJAN24-151",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro",
+      "observed_utc": "2026-10-30T18:55:36.191Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "d39a69a4caa80afb115d89575c01321cc14eb71cc6e40c6a27a7e83da39b23c8"
+    },
+    "CORP-HG321-AMENDMENT": {
+      "article": "CORP-HG321-AMENDMENT",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154909&lang=ro",
+      "observed_utc": "2026-10-30T18:58:53.164Z",
+      "format": "Exact JSON returned by read-only browser DOM observation",
+      "sha256": "e9f9089207daa8e33d973b08ed9da75c680f00a9ee8b4309f7675c8d79f2c7dd"
+    },
     "20": {
       "article": "20",
       "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
@@ -1423,6 +1556,13 @@
       "observed_utc": "2026-10-30T18:35:51.602Z",
       "format": "Consecutive exact bounded DOM JSON slices joined without overlap or omission",
       "sha256": "daf9c36c946047e9028bdb478efde3e2c891e865a32aa36c1d5442028aaeed4e"
+    },
+    "CORP-HG693-DEDUCTIONS": {
+      "article": "CORP-HG693-DEDUCTIONS",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro",
+      "observed_utc": "2026-10-30T18:49:53.489Z",
+      "format": "Consecutive exact bounded DOM JSON slices joined without overlap or omission",
+      "sha256": "424b78c229b1c025f185d4a54c1f49852cb8310f18c41cf812b2bd9cb643086e"
     }
   }
 }

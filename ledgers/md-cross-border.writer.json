@@ -2,7 +2,7 @@
   "status": "LOCAL2026 WRITER DRAFT; ordinary source/procedure gaps remain; whole-country review pending",
   "slug": "md-cross-border",
   "Guide_path": "skills/international/moldova/md-cross-border.md",
-  "Guide_sha256": "554dee81cbe06aa8ad974b24a7fb73bbb98572fcd642a70576f194063cac6b7f",
+  "Guide_sha256": "83e3de9c9aa8b3291b9e39e86b37b2b1123d00c8a08cc803165507c413a75ed2",
   "rows": [
     {
       "id": "MD-XB-001",
@@ -748,6 +748,20 @@
     },
     {
       "id": "MD-XB-054",
+      "rule_or_figure": "(3) În cazul efectuării operaţiunilor în valută străină: 1) La calcularea venitului impozabil, venitul brut şi alte încasări, precum şi cheltuielile suportate î",
+      "Guide_section": "The base: Foreign income, credits, property and mobility",
+      "act_article_or_official_section": "Fiscal Code art21(3)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(3) În cazul efectuării operaţiunilor în valută străină: 1) La calcularea venitului impozabil, venitul brut şi alte încasări, precum şi cheltuielile suportate în valută",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-21.json",
+      "source_text_sha256": "5ecbca58b0a5e4becb4d9453092c121658cfa30ed3ae2da44586db776b410334",
+      "source_context": "(3) În cazul efectuării operaţiunilor în valută străină:\n\n1) La calcularea venitului impozabil, venitul brut şi alte încasări, precum şi cheltuielile suportate în valută străină se recalculează în monedă naţională la cursul oficial al leului moldovenesc valabil la data tranzacţiei.\n\n2) Orice datorie atât a contribuabilului, cât şi faţă de contribuabil, a cărei sumă este exprimată în valută străină, cu excepţia avansurilor acordate/primite pentru procurări/livrări de active şi servicii, se recalculează la cursul oficial al leului moldovenesc valabil pentru ultima zi a perioadei fiscale.\n\n21) Dacă operaţiunea se efectuează în valuta străină faţă de care Banca Naţională a Moldovei nu cotează leul moldovenesc, atunci conversiunea are loc în două etape. Iniţial, valuta străină este recalculată în altă valută străină faţă de care Banca Naţională a Moldovei cotează leul moldovenesc. Pentru aceasta se foloseşte metoda directă de corelaţie între cursurile respectivelor valute străine. Suma obţinută astfel în altă valută străină este recalculată în monedă naţională la cursul oficial al leului moldovenesc.\n\n3) Orice venit sau pierdere de pe urma recalculării datoriei conform pct.2) se consideră venit obţinut sau pierdere suportată în ultima zi a perioadei fiscale.\n\n31) Data tranzacţiei este considerată data reflectată în extrasul de cont al băncii şi/sau al societăţii de plată, iar în alte cazuri – data menţionată în documentele primare, conform metodei de evidenţă financiară bazate pe prevederile Standardelor Naţionale de Contabilitate şi IFRS.\n\n32) Dacă în perioada care s-a scurs de la data efectuării tranzacţiei şi până la data achitării pentru datoria creată cursul oficial al leului moldovenesc s-a modificat, atunci apare diferenţa de curs valutar. Dacă achitarea sumei are loc în aceeaşi perioadă a anului fiscal în care a avut loc tranzacţia, atunci diferenţa de curs valutar dintre suma reflectată iniţial în contabilitate şi suma achitată efectiv reprezintă venitul sau pierderea anului fiscal curent.\n\n33) În cazul în care achitarea pentru datoria creată nu are loc în aceeaşi perioadă a anului fiscal în care a avut loc tranzacţia, aceasta este reevaluată de către contribuabil la cursul oficial al leului moldovenesc în ultima zi a anului fiscal pentru care se prezintă declaraţia fiscală, iar diferenţa de curs valutar apărută este considerată drept venit sau pierdere a aceluiaşi an fiscal. Indiferent de eventualele fluctuaţii ale cursului oficial al leului moldovenesc pe viitor, pentru reflectarea situaţiei financiare a contribuabilului la data întocmirii bilanţului, conturile în valută străină se reflectă în sume echivalente în monedă naţională la cursul oficial al leului moldovenesc faţă de valuta străină, valabil în ziua respectivă. Diferenţa dintre suma indicată în contabilitate şi suma în care a fost reflectată în contabilitate tranzacţia pe parcursul perioadei sau în anul precedent este considerată drept venit sau pierdere.\n\n4) Operaţiunile în care intervin obligaţii de plată în valută străină se referă la:\n\na) cheltuielile care urmează să fie efectuate sau venitul care urmează să fie obţinut în urma calculelor;\n\nb) contractele futures, opţioanele şi alte operaţiuni financiare similare.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
+    },
+    {
+      "id": "MD-XB-055",
       "rule_or_figure": "Articolul 37. Subiecţii creşterii sau pierderii de capital Prevederile prezentului capitol se aplică contribuabililor persoane fizice rezidenţi şi nerezidenţi a",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art37",
@@ -761,7 +775,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-055",
+      "id": "MD-XB-056",
       "rule_or_figure": "(1) Active de capital reprezintă: a) titlurile (cotele) de participare, obligațiunile, alte titluri de proprietate în activitatea de întreprinzător; b) propriet",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art39(1)",
@@ -775,7 +789,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-056",
+      "id": "MD-XB-057",
       "rule_or_figure": "a) titlurile (cotele) de participare, obligațiunile, alte titluri de proprietate în activitatea de întreprinzător;",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art39(1) listed item a)",
@@ -789,7 +803,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-057",
+      "id": "MD-XB-058",
       "rule_or_figure": "b) proprietatea privată nefolosită în activitatea de întreprinzător;",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art39(1) listed item b)",
@@ -803,7 +817,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-058",
+      "id": "MD-XB-059",
       "rule_or_figure": "d) opţionul la procurarea sau vânzarea activelor de capital.",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art39(1) listed item d)",
@@ -817,7 +831,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-059",
+      "id": "MD-XB-060",
       "rule_or_figure": "(2) Creșterea sau pierderea de capital nu este recunoscută în cazul: a) redistribuirii (transmiterii) proprietății între soți sau între foștii soți, dacă o astf",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art39(2)",
@@ -831,7 +845,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-060",
+      "id": "MD-XB-061",
       "rule_or_figure": "a) redistribuirii (transmiterii) proprietății între soți sau între foștii soți, dacă o astfel de redistribuire (transmitere) rezultă din necesitatea împărțirii ",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art39(2) listed item a)",
@@ -845,7 +859,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-061",
+      "id": "MD-XB-062",
       "rule_or_figure": "b) răscumpărării și/sau preschimbării titlurilor de creanță, obligațiunilor, efectuată de către emitenții acestora;",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art39(2) listed item b)",
@@ -859,7 +873,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-062",
+      "id": "MD-XB-063",
       "rule_or_figure": "c) răscumpărării și/sau preschimbării valorilor mobiliare de stat, efectuată de către Ministerul Finanțelor sau dealeri primari în sensul Legii nr.419/2006 cu p",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art39(2) listed item c)",
@@ -873,7 +887,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-063",
+      "id": "MD-XB-064",
       "rule_or_figure": "d) exercitării dreptului, prevăzut în opțion, de a cumpăra ori a vinde active de capital și/sau de a converti opționul.",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art39(2) listed item d)",
@@ -887,7 +901,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-064",
+      "id": "MD-XB-065",
       "rule_or_figure": "(1) Mărimea creşterii sau pierderii de capital provenite din vânzare, schimb sau din altă formă de înstrăinare a activelor de capital este egală cu diferenţa di",
       "Guide_section": "The base; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art40(1)",
@@ -901,7 +915,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-065",
+      "id": "MD-XB-066",
       "rule_or_figure": "(2) Suma încasată ca urmare a vânzării, schimbului sau a înstrăinării în alt mod a activelor de capital este egală cu suma mijloacelor băneşti şi/sau valoarea e",
       "Guide_section": "The base; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art40(2)",
@@ -915,7 +929,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-066",
+      "id": "MD-XB-067",
       "rule_or_figure": "(3) Mărimea creşterii sau pierderii de capital provenite din tranzacţionarea la bursă a acţiunilor prin intermediul unui broker/unei societăţi de investiţii se ",
       "Guide_section": "The base; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art40(3)",
@@ -929,7 +943,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-067",
+      "id": "MD-XB-068",
       "rule_or_figure": "(4) Persoana care face o donaţie se consideră că a vândut bunul donat la un preţ ce reprezintă mărimea maximă din baza lui valorică ajustată sau preţul lui de p",
       "Guide_section": "The base; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art40(4)",
@@ -943,7 +957,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-068",
+      "id": "MD-XB-069",
       "rule_or_figure": "(5) Creşterea sau pierderea de capital nu este recunoscută în scopuri fiscale în cazul încheierii unui contract de donaţii între rude de gradul I, precum şi înt",
       "Guide_section": "The base; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art40(5)",
@@ -957,7 +971,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-069",
+      "id": "MD-XB-070",
       "rule_or_figure": "(51) Creșterea sau pierderea de capital nu este recunoscută în scopuri fiscale în cazul înstrăinării unui autoturism care a fost în proprietatea contribuabilulu",
       "Guide_section": "The base; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art40(5^1)",
@@ -971,7 +985,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-070",
+      "id": "MD-XB-071",
       "rule_or_figure": "(6) Creşterea sau pierderea de capital provenită din vânzare, schimb sau din altă formă de înstrăinare a locuinţei de bază nu este recunoscută în scopuri fiscal",
       "Guide_section": "The base; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art40(6)",
@@ -985,7 +999,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-071",
+      "id": "MD-XB-072",
       "rule_or_figure": "(61) Creșterea sau pierderea de capital provenită din vânzare, schimb sau din altă formă de înstrăinare a locuinței proprietate comună în devălmășie se determin",
       "Guide_section": "The base; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art40(6^1)",
@@ -999,7 +1013,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-072",
+      "id": "MD-XB-073",
       "rule_or_figure": "(62) Creșterea sau pierderea de capital în cazul tranzacțiilor cu titluri (cote) de participare dobândite la preț preferențial sau gratuit în cadrul stock optio",
       "Guide_section": "The base; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art40(6^2)",
@@ -1013,7 +1027,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-073",
+      "id": "MD-XB-074",
       "rule_or_figure": "(7) Suma creşterii de capital în perioada fiscală este egală cu 50% din suma excedentară a creşterii de capital recunoscute peste nivelul oricăror pierderi de c",
       "Guide_section": "The base; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art40(7)",
@@ -1027,7 +1041,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-074",
+      "id": "MD-XB-075",
       "rule_or_figure": "(1) Contribuabilului i se permite deducerea pierderilor de capital numai în limitele creşterii de capital.",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art41(1)",
@@ -1041,7 +1055,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-075",
+      "id": "MD-XB-076",
       "rule_or_figure": "(1) Bază valorică a activelor de capital se confirmă documentar conform modului stabilit de Ministerul Finanţelor şi constituie: a) valoarea activelor de capita",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1)",
@@ -1055,7 +1069,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-076",
+      "id": "MD-XB-077",
       "rule_or_figure": "a) valoarea activelor de capital procurate;",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1) listed item a)",
@@ -1069,7 +1083,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-077",
+      "id": "MD-XB-078",
       "rule_or_figure": "b) valoarea activelor de capital create de contribuabil. În cazul lipsei documentelor de confirmare a valorii bunurilor imobiliare construite cu forţele proprii",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1) listed item b)",
@@ -1083,7 +1097,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-078",
+      "id": "MD-XB-079",
       "rule_or_figure": "c) valoarea activelor (la data dobândirii dreptului de proprietate) obţinute ca urmare a redistribuirii (transmiterii) proprietăţii în devălmăşie între soţi sau",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1) listed item c)",
@@ -1097,7 +1111,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-079",
+      "id": "MD-XB-080",
       "rule_or_figure": "d) valoarea de piaţă a activelor de capital (la data dobândirii dreptului de proprietate) obţinute prin moştenire, titlu de donaţie sau prin contractul de între",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1) listed item d)",
@@ -1111,7 +1125,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-080",
+      "id": "MD-XB-081",
       "rule_or_figure": "e) valoarea de piaţă a activelor de capital (la data dobândirii dreptului de proprietate) obţinute prin schimb;",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1) listed item e)",
@@ -1125,7 +1139,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-081",
+      "id": "MD-XB-082",
       "rule_or_figure": "f) valoarea activelor de capital privatizate;",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1) listed item f)",
@@ -1139,7 +1153,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-082",
+      "id": "MD-XB-083",
       "rule_or_figure": "g) zero în cazul lipsei documentelor de confirmare a activelor de capital;",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1) listed item g)",
@@ -1153,7 +1167,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-083",
+      "id": "MD-XB-084",
       "rule_or_figure": "h) valoarea activelor confirmate documentar – în alte cazuri;",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1) listed item h)",
@@ -1167,7 +1181,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-084",
+      "id": "MD-XB-085",
       "rule_or_figure": "i) valoarea activelor de capital obţinute fără plată, în cazul în care din valoarea respectivă a fost achitat impozitul pe venit;",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1) listed item i)",
@@ -1181,7 +1195,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-085",
+      "id": "MD-XB-086",
       "rule_or_figure": "j) valoarea titlurilor (cotelor) de participare tranzacționate în cadrul stock option plan, care reprezintă prețul de achiziție preferențial stabilit la data ac",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1) listed item j)",
@@ -1195,7 +1209,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-086",
+      "id": "MD-XB-087",
       "rule_or_figure": "k) valoarea contribuției, exprimată în mijloace bănești, conform documentelor de constituire a agentului economic, a activelor de capital sub formă de acțiuni s",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(1) listed item k)",
@@ -1209,7 +1223,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-087",
+      "id": "MD-XB-088",
       "rule_or_figure": "(2) Baza valorică a acţiunilor nu se majorează cu suma dividendelor sub formă de acţiuni care nu modifică în niciun fel cotele de participare ale acţionarilor î",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(2)",
@@ -1223,7 +1237,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-088",
+      "id": "MD-XB-089",
       "rule_or_figure": "(3) Baza valorică a acţiunilor dobândite până la data de 1 ianuarie 1998 se determină reieşind din valoarea unei acţiuni la data de 31 decembrie 1997, care se c",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(3)",
@@ -1237,7 +1251,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-089",
+      "id": "MD-XB-090",
       "rule_or_figure": "(4) Baza valorică ajustată a activelor de capital reprezintă baza valorică a activelor de capital: a) - abrogată; b) - abrogată; c) redusă cu mărimea sumei retr",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(4)",
@@ -1251,7 +1265,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-090",
+      "id": "MD-XB-091",
       "rule_or_figure": "c) redusă cu mărimea sumei retrase din capitalul social, proporţional cu cota de participaţie;",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(4) listed item c)",
@@ -1265,7 +1279,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-091",
+      "id": "MD-XB-092",
       "rule_or_figure": "d) majorată cu suma creşterii capitalului social, proporţional cu cota de participaţie.",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(4) listed item d)",
@@ -1279,7 +1293,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-092",
+      "id": "MD-XB-093",
       "rule_or_figure": "(5) Reducerile şi majorările bazei valorice a activelor de capital care au avut loc până la 1 ianuarie 1998 se efectuează conform actelor normative în vigoare p",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(5)",
@@ -1293,7 +1307,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-093",
+      "id": "MD-XB-094",
       "rule_or_figure": "(6) Baza valorică a activelor de capital se ajustează cu diferenţele pozitive rezultate din reevaluarea capitalului efectuată în conformitate cu cap. IV din Leg",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art42(6)",
@@ -1307,7 +1321,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-094",
+      "id": "MD-XB-095",
       "rule_or_figure": "(1) Venituri ale nerezidenților obținute din Republica Moldova, indiferent dacă sunt primite în Republica Moldova sau în străinătate, se consideră: a) venituril",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1)",
@@ -1321,7 +1335,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-095",
+      "id": "MD-XB-096",
       "rule_or_figure": "a) veniturile din comercializarea mărfurilor;",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item a)",
@@ -1335,7 +1349,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-096",
+      "id": "MD-XB-097",
       "rule_or_figure": "b) veniturile din prestarea de servicii de management sau de consultanță din orice domeniu, dacă aceste venituri sunt obținute de la un rezident sau dacă venitu",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item b)",
@@ -1349,7 +1363,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-097",
+      "id": "MD-XB-098",
       "rule_or_figure": "b1) alte venituri din servicii prestate pe teritoriul Republicii Moldova care nu sunt prevăzute în prezentul articol;",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item b1)",
@@ -1363,7 +1377,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-098",
+      "id": "MD-XB-099",
       "rule_or_figure": "c) veniturile, sub formă de creștere de capital, obținute de către persoanele fizice nerezidente care nu desfășoară activitate de întreprinzător pe teritoriul R",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item c)",
@@ -1377,7 +1391,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-099",
+      "id": "MD-XB-100",
       "rule_or_figure": "d) veniturile obținute de persoanele juridice nerezidente, sub formă de creștere de capital, determinate conform art. 40 alin. (1)–(4), din vânzare, schimb sau ",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item d)",
@@ -1391,7 +1405,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-100",
+      "id": "MD-XB-101",
       "rule_or_figure": "e) dividendele, inclusiv cele sub formă de acțiuni sau titluri de proprietate plătite de un rezident;",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item e)",
@@ -1405,7 +1419,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-101",
+      "id": "MD-XB-102",
       "rule_or_figure": "f) dobânzile plătite de un rezident sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă asemenea dobânzi sunt cheltuieli ale re",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item f)",
@@ -1419,7 +1433,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-102",
+      "id": "MD-XB-103",
       "rule_or_figure": "g) veniturile din cesiunea drepturilor de creanță de la un rezident sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă asemene",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item g)",
@@ -1433,7 +1447,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-103",
+      "id": "MD-XB-104",
       "rule_or_figure": "h) veniturile din amenzi și penalități pentru neexecutarea sau executarea inadecvată a obligațiilor contractuale, inclusiv în baza contractelor de executare a l",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item h)",
@@ -1447,7 +1461,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-104",
+      "id": "MD-XB-105",
       "rule_or_figure": "j) royalty (redevențele) obținute de la un rezident sau nerezident care dispune de o reprezentanță permanentă în Republica Moldova, dacă aceste royalty sunt che",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item j)",
@@ -1461,7 +1475,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-105",
+      "id": "MD-XB-106",
       "rule_or_figure": "k) veniturile din operațiunile de leasing, din darea în arendă sau în subarendă, din locațiunea, sublocațiunea, superficia sau din uzufructul proprietății aflat",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item k)",
@@ -1475,7 +1489,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-106",
+      "id": "MD-XB-107",
       "rule_or_figure": "k1) veniturile din operațiunile de leasing, închirierea, locațiunea, sublocațiunea sau din uzufructul navelor maritime, al aeronavelor și/sau al mijloacelor de ",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item k1)",
@@ -1489,7 +1503,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-107",
+      "id": "MD-XB-108",
       "rule_or_figure": "l) veniturile din primele pe baza contractelor de asigurare și reasigurare colectate de la un rezident al Republicii Moldova sau nerezident care dispune de o re",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item l)",
@@ -1503,7 +1517,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-108",
+      "id": "MD-XB-109",
       "rule_or_figure": "m) veniturile din prestarea serviciilor de transport, cu excepția cazurilor în care transportul se efectuează numai între puncte situate în afara teritoriului R",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item m)",
@@ -1517,7 +1531,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-109",
+      "id": "MD-XB-110",
       "rule_or_figure": "n) veniturile primite de persoanele fizice nerezidente sub formă de salarii și alte remunerații similare din activitatea desfășurată conform contractului (acord",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item n)",
@@ -1531,7 +1545,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-110",
+      "id": "MD-XB-111",
       "rule_or_figure": "o) veniturile sub formă de facilități, specificate la art. 19, acordate persoanelor fizice nerezidente de un angajator rezident al Republicii Moldova sau nerezi",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item o)",
@@ -1545,7 +1559,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-111",
+      "id": "MD-XB-112",
       "rule_or_figure": "p) plățile efectuate de fondurile de pensii facultative rezidente;",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item p)",
@@ -1559,7 +1573,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-112",
+      "id": "MD-XB-113",
       "rule_or_figure": "q) veniturile obținute de către oamenii de artă, cum ar fi artiștii de teatru, de circ, de cinema, de radio, de televiziune, muzicienii și artiștii plastici sau",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item q)",
@@ -1573,7 +1587,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-113",
+      "id": "MD-XB-114",
       "rule_or_figure": "r) veniturile obținute din prestarea serviciilor profesionale, din activități sportive și de divertisment, precum și din alte servicii decât cele prevăzute la l",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item r)",
@@ -1587,7 +1601,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-114",
+      "id": "MD-XB-115",
       "rule_or_figure": "s) veniturile din premiile acordate la concursuri desfășurate pe teritoriul Republicii Moldova;",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item s)",
@@ -1601,7 +1615,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-115",
+      "id": "MD-XB-116",
       "rule_or_figure": "t) comisioanele din activitatea desfășurată pe teritoriul Republicii Moldova, primite de la un rezident sau nerezident care dispune de o reprezentanță permanent",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item t)",
@@ -1615,7 +1629,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-116",
+      "id": "MD-XB-117",
       "rule_or_figure": "t1) câștigurile de la jocuri de noroc și de la campanii promoționale, obținute de la un rezident sau nerezident care dispune de o reprezentanță permanentă în Re",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item t1)",
@@ -1629,7 +1643,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-117",
+      "id": "MD-XB-118",
       "rule_or_figure": "u) veniturile obținute din plățile la lichidarea unui rezident. Venitul realizat din lichidarea unui rezident reprezintă suma excedentului plăților la lichidare",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(1) listed item u)",
@@ -1643,7 +1657,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-118",
+      "id": "MD-XB-119",
       "rule_or_figure": "(2) Prin derogare de la prevederile alin.(1), veniturile nerezidenţilor, cu excepţia celor care dispun de o reprezentanţă permanentă în Republica Moldova, din t",
       "Guide_section": "The base: Classify the nonresident income; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art71(2)",
@@ -1657,7 +1671,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-119",
+      "id": "MD-XB-120",
       "rule_or_figure": "Articolul 72. - abrogat.",
       "Guide_section": "The base",
       "act_article_or_official_section": "Fiscal Code art72",
@@ -1671,7 +1685,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-120",
+      "id": "MD-XB-121",
       "rule_or_figure": "(1) Veniturile persoanelor juridice nerezidente, specificate la art.71, cu excepția celor de la alin.(1) lit. a), care nu țin de o reprezentanţă permanentă în R",
       "Guide_section": "The base: Apply the appropriate collection route; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art73(1)",
@@ -1685,7 +1699,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-121",
+      "id": "MD-XB-122",
       "rule_or_figure": "(2) Impozitarea veniturilor persoanelor juridice nerezidente la sursa de plată se efectuează, indiferent de distribuirea de către asemenea persoane a veniturilo",
       "Guide_section": "The base: Apply the appropriate collection route; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art73(2)",
@@ -1699,7 +1713,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-122",
+      "id": "MD-XB-123",
       "rule_or_figure": "(3) Veniturile persoanelor fizice nerezidente, specificate la art.71, cu excepția celor de la alin.(1) lit.a), care nu țin de o reprezentanţă permanentă în Repu",
       "Guide_section": "The base: Apply the appropriate collection route; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art73(3)",
@@ -1713,7 +1727,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-123",
+      "id": "MD-XB-124",
       "rule_or_figure": "(4) Veniturile persoanelor fizice nerezidente, specificate la art.71 lit.n) şi o), urmează a fi supuse impozitării la sursa de plată în modul prevăzut la art.88",
       "Guide_section": "The base: Apply the appropriate collection route; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art73(4)",
@@ -1727,7 +1741,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-124",
+      "id": "MD-XB-125",
       "rule_or_figure": "(5) Impozitul pe venit la sursa de plată se reţine de la nerezidenţi indiferent de forma şi locul achitării venitului.",
       "Guide_section": "The base: Apply the appropriate collection route; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art73(5)",
@@ -1741,7 +1755,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-125",
+      "id": "MD-XB-126",
       "rule_or_figure": "(1) Veniturile nerezidenţilor obţinute din Republica Moldova de la persoane altele decât cele menţionate la art.90 urmează a fi supuse impozitului pe venit conf",
       "Guide_section": "The base; Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art74(1)",
@@ -1755,7 +1769,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-126",
+      "id": "MD-XB-127",
       "rule_or_figure": "(11) Prin derogare de la prevederile alin. (1), veniturile nerezidenților specificate la art. 71 alin. (1) lit. k) și k1) obținute de la alte persoane decât cel",
       "Guide_section": "The base; Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art74(11)",
@@ -1769,7 +1783,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-127",
+      "id": "MD-XB-128",
       "rule_or_figure": "(2) Nerezidenţii care corespund condiţiilor alin.(1) şi care obţin venituri specificate la art.71 lit.b)- k), n), o), q)-s) şi u), calculează şi achită impozitu",
       "Guide_section": "The base; Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art74(2)",
@@ -1783,7 +1797,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-128",
+      "id": "MD-XB-129",
       "rule_or_figure": "(4) Nerezidenţii menţionaţi în prezentul articol, în termen de 3 zile de la încheierea activităţii în Republica Moldova, sunt obligaţi să prezinte subdiviziunii",
       "Guide_section": "The base; Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art74(4)",
@@ -1797,7 +1811,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-129",
+      "id": "MD-XB-130",
       "rule_or_figure": "(5) Prevederile prezentului articol se aplică veniturilor obţinute de către nerezidenţi, care nu cad sub incidenţa art.73 şi 75.",
       "Guide_section": "The base; Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art74(5)",
@@ -1811,7 +1825,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-130",
+      "id": "MD-XB-131",
       "rule_or_figure": "(1) Venituri ale nerezidenţilor care desfăşoară activitate printr-o reprezentanţă permanentă, obţinute din Republica Moldova, se consideră veniturile specificat",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art75(1)",
@@ -1825,7 +1839,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-131",
+      "id": "MD-XB-132",
       "rule_or_figure": "(2) În cazul nerezidenţilor care au reprezentanţă permanentă potrivit art.5 pct.15), aceasta se consideră, în scopuri fiscale, ca agent economic rezident, dar n",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art75(2)",
@@ -1839,7 +1853,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-132",
+      "id": "MD-XB-133",
       "rule_or_figure": "b) cheltuielile legate nemijlocit de acest venit, confirmate documentar, potrivit prevederilor titlului II.",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art75(2) listed item b)",
@@ -1853,7 +1867,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-133",
+      "id": "MD-XB-134",
       "rule_or_figure": "(3) Evidenţa nerezidenţilor care au reprezentanţă permanentă, în calitate de contribuabil, se efectuează în conformitate cu capitolul 4 din titlul V.",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art75(3)",
@@ -1867,7 +1881,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-134",
+      "id": "MD-XB-135",
       "rule_or_figure": "(4) Reprezentanţa permanentă a nerezidentului, situată în Republica Moldova, nu are dreptul de a trece la deduceri sumele prezentate de către acest nerezident s",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art75(4)",
@@ -1881,7 +1895,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-135",
+      "id": "MD-XB-136",
       "rule_or_figure": "a) royalty, onorarii şi alte plăţi similare pentru utilizarea sau concesionarea proprietăţii sau a rezultatelor activităţii sale intelectuale;",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art75(4) listed item a)",
@@ -1895,7 +1909,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-136",
+      "id": "MD-XB-137",
       "rule_or_figure": "b) plăţi pentru serviciile prestate de acesta;",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art75(4) listed item b)",
@@ -1909,7 +1923,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-137",
+      "id": "MD-XB-138",
       "rule_or_figure": "c) dobânzi şi alte remuneraţii pentru împrumuturile acordate de către acesta;",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art75(4) listed item c)",
@@ -1923,7 +1937,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-138",
+      "id": "MD-XB-139",
       "rule_or_figure": "d) cheltuieli care nu ţin de obţinerea veniturilor din activitatea desfăşurată în Republica Moldova;",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art75(4) listed item d)",
@@ -1937,7 +1951,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-139",
+      "id": "MD-XB-140",
       "rule_or_figure": "e) cheltuieli care nu sunt confirmate documentar.",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art75(4) listed item e)",
@@ -1951,7 +1965,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-140",
+      "id": "MD-XB-141",
       "rule_or_figure": "(5) Prin derogare de la prevederile prezentului articol, munca conform contractului (acordului) de muncă sau altui contract (acord) cu caracter civil, exercitat",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art75(5)",
@@ -1965,7 +1979,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-141",
+      "id": "MD-XB-142",
       "rule_or_figure": "(1) Faptul că nerezidenţii desfăşoară activitate pe teritoriul Republicii Moldova, conform art.5 pct.151), nu constituie temei pentru recunoaşterea acestor pers",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art76(1)",
@@ -1979,7 +1993,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-142",
+      "id": "MD-XB-143",
       "rule_or_figure": "(2) Pentru desfăşurarea activităţii pe teritoriul Republicii Moldova, conform art.5 pct.151), nerezidentului i se atribuie cod fiscal în conformitate cu prezent",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art76(2)",
@@ -1993,7 +2007,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-143",
+      "id": "MD-XB-144",
       "rule_or_figure": "(3) Pentru desfăşurarea activităţii pe teritoriul Republicii Moldova, conform art.5 pct.151), nerezidentul urmează să ţină contabilitatea conform cerinţelor pre",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art76(3)",
@@ -2007,7 +2021,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-144",
+      "id": "MD-XB-145",
       "rule_or_figure": "(4) După încheierea activităţii în Republica Moldova specificate la art.5 pct.151), nerezidenţii sunt obligaţi să prezinte, în termen de 10 zile, documentul cu ",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art76(4)",
@@ -2021,7 +2035,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-145",
+      "id": "MD-XB-146",
       "rule_or_figure": "(5) Forma şi modul de completare a documentelor specificate la alin.(3) şi (4) se aprobă de către Ministerul Finanţelor.",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art76(5)",
@@ -2035,7 +2049,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-146",
+      "id": "MD-XB-147",
       "rule_or_figure": "(1) În sensul prezentului capitol, şantierul de construcţie al nerezidentului pe teritoriul Republicii Moldova înseamnă: а) locul de construcţie a noilor obiect",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art77(1)",
@@ -2049,7 +2063,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-147",
+      "id": "MD-XB-148",
       "rule_or_figure": "(2) La stabilirea termenului de existenţă a şantierului de construcţie, în scopul determinării statutului nerezidentului pe teritoriul Republicii Moldova în sen",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art77(2)",
@@ -2063,7 +2077,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-148",
+      "id": "MD-XB-149",
       "rule_or_figure": "(3) În cazul în care nerezidentul, fiind antreprenor general, încredinţează exercitarea unei părţi a lucrărilor în antrepriză altor persoane (subantreprenori), ",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art77(3)",
@@ -2077,7 +2091,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-149",
+      "id": "MD-XB-150",
       "rule_or_figure": "(4) În cazul în care subantreprenorul, menţionat la alin.(3), este nerezident, activitatea sa pe acest şantier de construcţie, de asemenea, se consideră că cons",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art77(4)",
@@ -2091,7 +2105,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-150",
+      "id": "MD-XB-151",
       "rule_or_figure": "(5) Începutul existenţei şantierului de construcţie în scopuri fiscale se consideră prima din următoarele date: а) data semnării actului de transmitere a şantie",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art77(5)",
@@ -2105,7 +2119,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-151",
+      "id": "MD-XB-152",
       "rule_or_figure": "(6) Expirarea termenului de existenţă a şantierului de construcţie se consideră data semnării de către beneficiar a actului de primire a obiectului sau a comple",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art77(6)",
@@ -2119,7 +2133,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-152",
+      "id": "MD-XB-153",
       "rule_or_figure": "(7) Nu se consideră că şantierul de construcţie şi-a încetat existenţa dacă lucrările pe acesta sunt temporar întrerupte, cu excepţia cazurilor de conservare a ",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art77(7)",
@@ -2133,7 +2147,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-153",
+      "id": "MD-XB-154",
       "rule_or_figure": "(8) Dacă continuarea sau reluarea lucrărilor, conform alin.(7), este legată de construirea sau montarea unui obiect nou pe acelaşi şantier de construcţie sau de",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art77(8)",
@@ -2147,7 +2161,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-154",
+      "id": "MD-XB-155",
       "rule_or_figure": "(9) Construirea sau montarea unor astfel de obiecte precum construirea drumurilor, viaductelor, canalelor, construirea comunicaţiilor, în cadrul exercitării luc",
       "Guide_section": "The base: Establish the PE and calculate its profit",
       "act_article_or_official_section": "Fiscal Code art77(9)",
@@ -2161,7 +2175,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-155",
+      "id": "MD-XB-156",
       "rule_or_figure": "(1) Persoana fizică care încetează a mai fi rezidentă este considerată persoana care ca şi cum ar fi vândut toată proprietatea, exceptând proprietatea imobiliar",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art78(1)",
@@ -2175,7 +2189,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-156",
+      "id": "MD-XB-157",
       "rule_or_figure": "(2) Orice persoană fizică nerezidentă care obţine statutul de rezident are dreptul la determinarea valorii de piaţă a proprietăţii sale la momentul obţinerii st",
       "Guide_section": "The base: Foreign income, credits, property and mobility",
       "act_article_or_official_section": "Fiscal Code art78(2)",
@@ -2189,7 +2203,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-157",
+      "id": "MD-XB-158",
       "rule_or_figure": "(1) Aplicarea tratatelor internaţionale care reglementează impozitarea sau includ norme ce reglementează impozitarea se efectuează în modul stabilit de preveder",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(1)",
@@ -2203,7 +2217,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-158",
+      "id": "MD-XB-159",
       "rule_or_figure": "(2) Pentru aplicarea prevederilor tratatelor internaţionale, persoana fizică nerezidentă are obligaţia de a prezenta plătitorului de venit, până la data achităr",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(2)",
@@ -2217,7 +2231,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-159",
+      "id": "MD-XB-160",
       "rule_or_figure": "(21) În cazul în care, în decursul anului calendaristic, beneficiarul venitului prezintă certificatul de rezidenţă după data achitării venitului obţinut din sur",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(2^1)",
@@ -2231,7 +2245,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-160",
+      "id": "MD-XB-161",
       "rule_or_figure": "(3) În cazul în care impozitul a fost reţinut la sursă înainte de prezentarea documentului de atestare a rezidenţei prevăzut la alin.(2), suma impozitului reţin",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(3)",
@@ -2245,7 +2259,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-161",
+      "id": "MD-XB-162",
       "rule_or_figure": "(4) Cererea de restituire a impozitului reţinut în plus urmează să fie perfectată şi depusă fie de către plătitorul de venit rezident, fie de către o altă perso",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(4)",
@@ -2259,7 +2273,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-162",
+      "id": "MD-XB-163",
       "rule_or_figure": "(5) Pentru impozitele reţinute la sursă în Republica Moldova, autoritatea competentă eliberează nerezidentului un certificat privind atestarea impozitului pe ve",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(5)",
@@ -2273,7 +2287,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-163",
+      "id": "MD-XB-164",
       "rule_or_figure": "(6) În cazul în care certificatul privind atestarea impozitului pe venit achitat în Republica Moldova a fost eliberat anterior, cererea pentru restituirea impoz",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(6)",
@@ -2287,7 +2301,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-164",
+      "id": "MD-XB-165",
       "rule_or_figure": "(7) În cazul în care cererea pentru restituirea impozitului pe venit reţinut din surse aflate în Republica Moldova a fost executată anterior, certificatul privi",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(7)",
@@ -2301,7 +2315,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-165",
+      "id": "MD-XB-166",
       "rule_or_figure": "a) suma impozitului pe venit reflectată în certificatul privind atestarea impozitului pe venit achitat în Republica Moldova reprezintă suma impozitului pe venit",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(7) listed item a)",
@@ -2315,7 +2329,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-166",
+      "id": "MD-XB-167",
       "rule_or_figure": "b) nerezidentul a rambursat impozitul pe venit restituit anterior.",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(7) listed item b)",
@@ -2329,7 +2343,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-167",
+      "id": "MD-XB-168",
       "rule_or_figure": "(8) În cazul în care tratatele internaţionale au fost aplicate incorect şi au condus la neachitarea sau achitarea parţială la buget a impozitului pe venit, plăt",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(8)",
@@ -2343,7 +2357,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-168",
+      "id": "MD-XB-169",
       "rule_or_figure": "(9) Modul de atestare şi confirmare a rezidenţei Republicii Moldova în scopul beneficierii de prevederile convențiilor (acordurilor) pentru evitarea dublei impu",
       "Guide_section": "Cross-border points; Deadlines and filing; Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art79^3(9)",
@@ -2357,7 +2371,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-169",
+      "id": "MD-XB-170",
       "rule_or_figure": "(1) Agentul economic achită dividende acţionarilor (asociaţilor) săi din venitul rămas după impozitare.",
       "Guide_section": "The base: Apply the appropriate collection route",
       "act_article_or_official_section": "Fiscal Code art80(1)",
@@ -2371,7 +2385,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-170",
+      "id": "MD-XB-171",
       "rule_or_figure": "(1) Contribuabilul are dreptul de a trece în cont impozitul pe venit, achitat în orice stat străin, dacă acest venit urmează a fi supus impozitării şi în Republ",
       "Guide_section": "The base; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art82(1)",
@@ -2385,7 +2399,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-171",
+      "id": "MD-XB-172",
       "rule_or_figure": "(2) Mărimea trecerii în cont, specificată la alin.(1), pentru orice an fiscal nu poate depăşi suma care ar fi fost calculată la cotele aplicate în Republica Mol",
       "Guide_section": "The base; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art82(2)",
@@ -2399,7 +2413,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-172",
+      "id": "MD-XB-173",
       "rule_or_figure": "(3) Trecerea în cont a impozitului achitat în alt stat se efectuează în perioada fiscală în care venitul respectiv este supus impozitării în Republica Moldova. ",
       "Guide_section": "The base; Rates, bands and thresholds; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art82(3)",
@@ -2413,7 +2427,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-173",
+      "id": "MD-XB-174",
       "rule_or_figure": "(2) Sunt obligaţi să prezinte declaraţia cu privire la impozitul pe venit: a) persoanele fizice (cetăţenii Republicii Moldova, cetăţenii străini, apatrizii, inc",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(2)",
@@ -2427,7 +2441,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-174",
+      "id": "MD-XB-175",
       "rule_or_figure": "a) persoanele fizice (cetăţenii Republicii Moldova, cetăţenii străini, apatrizii, inclusiv membrii societăţilor şi acţionarii fondurilor de investiţii) care au ",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(2) listed item a)",
@@ -2441,7 +2455,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-175",
+      "id": "MD-XB-176",
       "rule_or_figure": "a1) persoanele care practică activitate profesională, indiferent de prezenţa obligaţiei privind achitarea impozitului;",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(2) listed item a1)",
@@ -2455,7 +2469,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-176",
+      "id": "MD-XB-177",
       "rule_or_figure": "a2) persoanele fizice rezidente care au utilizat scutirea personală şi au obţinut venituri impozabile anuale mai mari de 360000 de lei pe parcursul perioadei fi",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(2) listed item a2)",
@@ -2469,7 +2483,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-177",
+      "id": "MD-XB-178",
       "rule_or_figure": "b) persoanele fizice rezidente (cetăţeni ai Republicii Moldova, cetăţeni străini şi apatrizi, inclusiv membri ai societăţilor şi acţionari ai fondurilor de inve",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(2) listed item b)",
@@ -2483,7 +2497,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-178",
+      "id": "MD-XB-179",
       "rule_or_figure": "b1) persoanele fizice nerezidente care obţin venituri conform art.74;",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(2) listed item b1)",
@@ -2497,7 +2511,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-179",
+      "id": "MD-XB-180",
       "rule_or_figure": "c) persoanele juridice rezidente, inclusiv cele specificate la art.512 şi 514, cu excepţia autorităţilor publice şi instituţiilor publice, indiferent de prezenţ",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(2) listed item c)",
@@ -2511,7 +2525,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-180",
+      "id": "MD-XB-181",
       "rule_or_figure": "d) formele organizatorice rezidenţi cu statut de persoană fizică, potrivit legislaţiei, indiferent de prezenţa obligaţiei privind achitarea impozitului;",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(2) listed item d)",
@@ -2525,7 +2539,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-181",
+      "id": "MD-XB-182",
       "rule_or_figure": "e) reprezentanţa permanentă a nerezidentului în Republica Moldova, indiferent de prezenţa obligaţiei privind achitarea impozitului.",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(2) listed item e)",
@@ -2539,7 +2553,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-182",
+      "id": "MD-XB-183",
       "rule_or_figure": "(4) Declaraţia cu privire la impozitul pe venit se completează în modul şi forma stabilite de Ministerul Finanţelor. Cu excepţia cazurilor prevăzute la alin.(5)",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(4)",
@@ -2553,7 +2567,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-183",
+      "id": "MD-XB-184",
       "rule_or_figure": "a) data de 25 a lunii a treia după finele perioadei fiscale de gestiune – în cazul persoanelor juridice, formelor organizatorice rezidenţi cu statut de persoană",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(4) listed item a)",
@@ -2567,7 +2581,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-184",
+      "id": "MD-XB-185",
       "rule_or_figure": "b) data de 30 aprilie a anului următor anului fiscal de gestiune – în cazul persoanelor fizice (cetăţeni ai Republicii Moldova, cetăţeni străini şi apatrizi, in",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(4) listed item b)",
@@ -2581,7 +2595,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-185",
+      "id": "MD-XB-186",
       "rule_or_figure": "(7) Dacă contribuabilul intenţionează să-şi schimbe domiciliul permanent din Republica Moldova în altă ţară, el este obligat să prezinte declaraţia cu privire l",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(7)",
@@ -2595,7 +2609,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-186",
+      "id": "MD-XB-187",
       "rule_or_figure": "(8) La cererea în scris, depusă pe suport de hârtie sau în formă electronică, a persoanei fizice care nu desfăşoară activitate de întreprinzător, Serviciul Fisc",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(8)",
@@ -2609,7 +2623,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-187",
+      "id": "MD-XB-188",
       "rule_or_figure": "(10) Nerezidentul care desfăşoară activitate conform art.5 pct.151) şi care obţine statut de reprezentanţă permanentă conform art.5 pct.15) este obligat să prez",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(10)",
@@ -2623,7 +2637,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-188",
+      "id": "MD-XB-189",
       "rule_or_figure": "(12) Darea de seamă fiscală cu privire la impozitul pe venit se prezintă utilizând, în mod obligatoriu, metode automatizate de raportare electronică, în condiţi",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art83(12)",
@@ -2637,7 +2651,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-189",
+      "id": "MD-XB-190",
       "rule_or_figure": "(1) Contribuabilul care, conform art.83, este obligat să prezinte declaraţia cu privire la impozitul pe venit (fără cererea suplimentară din partea Serviciului ",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art87(1)",
@@ -2651,7 +2665,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-190",
+      "id": "MD-XB-191",
       "rule_or_figure": "(1) Fiecare angajator care plăteşte salariatului salariu (inclusiv primele şi facilităţile acordate) este obligat să calculeze, ținând cont de scutirile solicit",
       "Guide_section": "The base; Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art88(1)",
@@ -2665,7 +2679,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-191",
+      "id": "MD-XB-192",
       "rule_or_figure": "(1) Impozitul pe venit la sursa de plată se reţine, în mod obligatoriu, de către orice: a) persoană (contribuabil) care desfăşoară activitate de întreprinzător,",
       "Guide_section": "The base: Apply the appropriate collection route",
       "act_article_or_official_section": "Fiscal Code art90(1)",
@@ -2679,7 +2693,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-192",
+      "id": "MD-XB-193",
       "rule_or_figure": "a) persoană (contribuabil) care desfăşoară activitate de întreprinzător, cu excepţia deţinătorilor de patente de întreprinzător şi a persoanelor care desfăşoară",
       "Guide_section": "The base: Apply the appropriate collection route",
       "act_article_or_official_section": "Fiscal Code art90(1) listed item a)",
@@ -2693,7 +2707,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-193",
+      "id": "MD-XB-194",
       "rule_or_figure": "b) nerezident care desfăşoară activitate conform art.5 pct.151);",
       "Guide_section": "The base: Apply the appropriate collection route",
       "act_article_or_official_section": "Fiscal Code art90(1) listed item b)",
@@ -2707,7 +2721,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-194",
+      "id": "MD-XB-195",
       "rule_or_figure": "e) organizaţie, inclusiv orice autoritate publică şi instituţie publică.",
       "Guide_section": "The base: Apply the appropriate collection route",
       "act_article_or_official_section": "Fiscal Code art90(1) listed item e)",
@@ -2721,7 +2735,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-195",
+      "id": "MD-XB-196",
       "rule_or_figure": "(31) Persoanele specificate la art.90 reţin şi achită la buget un impozit în mărime de: - 6% din dividende, inclusiv sub formă de acţiuni sau cote-părţi, achita",
       "Guide_section": "Rates, bands and thresholds",
       "act_article_or_official_section": "Fiscal Code art90^1(3^1)",
@@ -2735,7 +2749,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-196",
+      "id": "MD-XB-197",
       "rule_or_figure": "(1) Persoanele menţionate la art.90 reţin şi achită un impozit în mărime de: - 12% din plăţile direcţionate spre achitare nerezidentului aferente veniturilor de",
       "Guide_section": "Rates, bands and thresholds; The base; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art91(1)",
@@ -2749,7 +2763,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-197",
+      "id": "MD-XB-198",
       "rule_or_figure": "- 12% din plăţile direcţionate spre achitare nerezidentului aferente veniturilor de la art.71, cu excepţia celor specificate la art. 71 alin. (1) lit. a), precu",
       "Guide_section": "Rates, bands and thresholds; The base; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art91(1) listed item -",
@@ -2763,7 +2777,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-198",
+      "id": "MD-XB-199",
       "rule_or_figure": "- 15% din dividende, inclusiv sub formă de acţiuni sau cote-părţi, aferente profitului nerepartizat obţinut în perioadele fiscale 2008–2011 inclusiv;",
       "Guide_section": "Rates, bands and thresholds; The base; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art91(1) listed item -",
@@ -2777,7 +2791,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-199",
+      "id": "MD-XB-200",
       "rule_or_figure": "- 15% din sumele specificate la art.901 alin.(31) liniuţa a treia;",
       "Guide_section": "Rates, bands and thresholds; The base; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art91(1) listed item -",
@@ -2791,7 +2805,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-200",
+      "id": "MD-XB-201",
       "rule_or_figure": "- 6% din dividendele specificate la art. 71 alin. (1) lit. e).",
       "Guide_section": "Rates, bands and thresholds; The base; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art91(1) listed item -",
@@ -2805,7 +2819,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-201",
+      "id": "MD-XB-202",
       "rule_or_figure": "(2) Prevederile alin.(1) nu se aplică: a) veniturilor nerezidentului ce ţin de activitatea reprezentanţei permanente a acestora în Republica Moldova; b) venitur",
       "Guide_section": "Rates, bands and thresholds; The base; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art91(2)",
@@ -2819,7 +2833,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-202",
+      "id": "MD-XB-203",
       "rule_or_figure": "a) veniturilor nerezidentului ce ţin de activitatea reprezentanţei permanente a acestora în Republica Moldova;",
       "Guide_section": "Rates, bands and thresholds; The base; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art91(2) listed item a)",
@@ -2833,7 +2847,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-203",
+      "id": "MD-XB-204",
       "rule_or_figure": "b) veniturilor specificate la art. 71 alin. (1) lit. n) și o) din care se efectuează reţineri conform art.88.",
       "Guide_section": "Rates, bands and thresholds; The base; Two worked examples that recompute",
       "act_article_or_official_section": "Fiscal Code art91(2) listed item b)",
@@ -2847,7 +2861,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-204",
+      "id": "MD-XB-205",
       "rule_or_figure": "(1) Impozitul reţinut conform art.6918 şi art.88–91 se achită la buget de către persoana care a efectuat reţinerea până la data de 25 a lunii următoare lunii în",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art92(1)",
@@ -2861,7 +2875,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-205",
+      "id": "MD-XB-206",
       "rule_or_figure": "(2) Dările de seamă privind impozitul pe venit, privind primele de asigurare obligatorie de asistenţă medicală reţinute şi contribuţiile de asigurări sociale de",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art92(2)",
@@ -2875,7 +2889,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-206",
+      "id": "MD-XB-207",
       "rule_or_figure": "(3) Persoanele care sunt obligate să reţină impozitul în conformitate cu art.6918 şi art.88–91, cu excepţia impozitului reţinut pentru câștigurile de la loterii",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art92(3)",
@@ -2889,7 +2903,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-207",
+      "id": "MD-XB-208",
       "rule_or_figure": "(4) Persoanele indicate la alin.(3) sunt obligate, până la 1 martie al anului fiscal imediat următor celui în care au fost efectuate plăţile, să prezinte benefi",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art92(4)",
@@ -2903,7 +2917,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-208",
+      "id": "MD-XB-209",
       "rule_or_figure": "(41) În cazul efectuării corectărilor în informaţia prezentată conform alin.(3), persoanele indicate la alin.(3) sunt obligate să informeze beneficiarul plăţilo",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art92(4^1)",
@@ -2917,7 +2931,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-209",
+      "id": "MD-XB-210",
       "rule_or_figure": "(5) Ministerul Finanţelor stabileşte lista şi forma documentelor solicitate conform prezentului articol, precum şi modul de completare a acestora.",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art92(5)",
@@ -2931,7 +2945,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-210",
+      "id": "MD-XB-211",
       "rule_or_figure": "(8) Prin derogare de la prevederile alin.(3), întreprinzătorul individual, gospodăria ţărănească (de fermier) al căror număr mediu anual de salariaţi, pe parcur",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art92(8)",
@@ -2945,7 +2959,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-211",
+      "id": "MD-XB-212",
       "rule_or_figure": "(9) Instituția publică Cadastrul Bunurilor Imobile, deţinătorii registrelor de valori mobiliare, notarii publici prezintă Serviciului Fiscal de Stat, conform mo",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art92(9)",
@@ -2959,7 +2973,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-212",
+      "id": "MD-XB-213",
       "rule_or_figure": "(10) Casa Naţională de Asigurări Sociale prezintă Serviciului Fiscal de Stat, până la data de 25 a lunii următoare anului fiscal, informaţia aferentă persoanelo",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art92(10)",
@@ -2973,7 +2987,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-213",
+      "id": "MD-XB-214",
       "rule_or_figure": "(12) Ministerul Justiţiei, până la data de 25 a lunii următoare anului fiscal, transmite Serviciului Fiscal de Stat lista organizaţiilor necomerciale în modul ş",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art92(12)",
@@ -2987,7 +3001,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-214",
+      "id": "MD-XB-215",
       "rule_or_figure": "(13) Agenţii economici specializaţi (intermediari imobiliari), până la data de 25 a lunii următoare încheierii anului fiscal, prezintă Serviciului Fiscal de Sta",
       "Guide_section": "Deadlines and filing",
       "act_article_or_official_section": "Fiscal Code art92(13)",
@@ -3001,7 +3015,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-215",
+      "id": "MD-XB-216",
       "rule_or_figure": "(1) Darea de seamă fiscală corectată este versiunea dării de seamă fiscale precedente.",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art188(1)",
@@ -3015,7 +3029,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-216",
+      "id": "MD-XB-217",
       "rule_or_figure": "(2) Contribuabilul care descoperă că darea de seamă fiscală prezentată anterior conține o greșeală sau o omisiune are dreptul să prezinte o dare de seamă fiscal",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art188(2)",
@@ -3029,7 +3043,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-217",
+      "id": "MD-XB-218",
       "rule_or_figure": "(3) Darea de seamă fiscală corectată, depusă înainte sau în termenul stabilit pentru prezentarea dărilor de seamă fiscale pe o anumită perioadă fiscală se consi",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art188(3)",
@@ -3043,7 +3057,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-218",
+      "id": "MD-XB-219",
       "rule_or_figure": "(4) Darea de seamă fiscală corectată nu va fi luată în considerare şi, prin urmare, nu va fi modificată darea de seamă precedentă dacă cea corectată a fost prez",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art188(4)",
@@ -3057,7 +3071,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-219",
+      "id": "MD-XB-220",
       "rule_or_figure": "(41) Prin derogare de la prevederile alin.(4) din prezentul articol, darea de seamă fiscală corectată și prezentată în baza art.92 alin.(2) și (3) va fi luată î",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art188(4^1)",
@@ -3071,7 +3085,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-220",
+      "id": "MD-XB-221",
       "rule_or_figure": "(1) Majorarea de întârziere (penalitatea) este o sumă calculată în funcţie de cuantumul impozitului, taxei şi de timpul scurs din ziua în care acestea trebuiau ",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art228(1)",
@@ -3085,7 +3099,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-221",
+      "id": "MD-XB-222",
       "rule_or_figure": "(2) Pentru neplata impozitului, taxei în termenul şi în bugetul stabilite conform legislaţiei fiscale se plăteşte o majorare de întârziere, determinată în confo",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art228(2)",
@@ -3099,7 +3113,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-222",
+      "id": "MD-XB-223",
       "rule_or_figure": "(21) În cazul în care contribuabilul descoperă că darea de seamă fiscală prezentată anterior conţine greşeli sau omisiuni şi prezintă darea de seamă corectată, ",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art228(2^1)",
@@ -3113,7 +3127,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-223",
+      "id": "MD-XB-224",
       "rule_or_figure": "(3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de Banca Naţională a",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art228(3)",
@@ -3127,7 +3141,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-224",
+      "id": "MD-XB-225",
       "rule_or_figure": "(4) Pentru neplata în termen a impozitului şi a taxei înscrise de organul cu atribuţii de administrare fiscală în contul personal al contribuabilului, majorarea",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art228(4)",
@@ -3141,7 +3155,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-225",
+      "id": "MD-XB-226",
       "rule_or_figure": "(5) La cererea contribuabililor, în cazul prezentării documentelor confirmative, organele cu atribuţii de administrare fiscală nu vor aplica (nu vor calcula) ma",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art228(5)",
@@ -3155,7 +3169,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-226",
+      "id": "MD-XB-227",
       "rule_or_figure": "(6) Pentru obligaţiile fiscale luate la evidenţă specială conform art.206, nu se calculează majorare de întârziere (penalitate). Majorarea de întârziere (penali",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art228(6)",
@@ -3169,7 +3183,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-227",
+      "id": "MD-XB-228",
       "rule_or_figure": "(7) În cazurile în care termenul de stingere a obligaţiei fiscale coincide cu data încasării sumelor în numerar de către bancă (sucursala) în contul stingerii o",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art228(7)",
@@ -3183,7 +3197,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-228",
+      "id": "MD-XB-229",
       "rule_or_figure": "(9) Contribuabilii pentru care, potrivit alin.(5) lit.b), nu se aplică (nu se calculează) majorări de întîrziere (penalităţi) nu vor calcula penalităţi instituţ",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art228(9)",
@@ -3197,7 +3211,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-229",
+      "id": "MD-XB-230",
       "rule_or_figure": "(10) Pentru sumele impozitelor şi taxelor solicitate de către contribuabil spre restituire şi restituite în mărimi mai mari decât suma calculată în condiţiile l",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art228(10)",
@@ -3211,7 +3225,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-230",
+      "id": "MD-XB-231",
       "rule_or_figure": "Articolul 232. Persoanele pasibile de răspundere pentru încălcare a legislației Este tras la răspundere pentru încălcare a legislației: a) contribuabilul persoa",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art232",
@@ -3225,7 +3239,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-231",
+      "id": "MD-XB-232",
       "rule_or_figure": "(1) Nerespectarea modului de întocmire şi de prezentare a dării de seamă fiscale se sancţionează cu o amendă de la 200 la 400 de lei pentru fiecare dare de seam",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art260(1)",
@@ -3239,7 +3253,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-232",
+      "id": "MD-XB-233",
       "rule_or_figure": "(4) Diminuarea impozitelor, a taxelor, a primelor de asigurare obligatorie de asistenţă medicală şi a contribuţiilor de asigurări sociale de stat obligatorii, s",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art261(4)",
@@ -3253,7 +3267,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-233",
+      "id": "MD-XB-234",
       "rule_or_figure": "(41) Prevederile alin.(4) nu se aplică în cazul în care contribuabilul depune de sine stătător darea de seamă corectată în conformitate cu art.188, cu condiţia ",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art261(4^1)",
@@ -3267,7 +3281,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-234",
+      "id": "MD-XB-235",
       "rule_or_figure": "(5) Eschivarea de la calculul şi de la plata impozitelor, a taxelor, a primelor de asigurare obligatorie de asistenţă medicală şi a contribuţiilor de asigurări ",
       "Guide_section": "Penalties and interest",
       "act_article_or_official_section": "Fiscal Code art261(5)",
@@ -3281,7 +3295,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-235",
+      "id": "MD-XB-236",
       "rule_or_figure": "la codul 51 col.4 – venitul sub formă de royalty îndreptat spre achitare persoanelor nerezidente; la codul 51 col.5 – impozitul pe venit reţinut din veniturile ",
       "Guide_section": "Deadlines and filing; Sources",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3295,7 +3309,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-236",
+      "id": "MD-XB-237",
       "rule_or_figure": "la codul 51 col.4 – venitul sub formă de royalty îndreptat spre achitare persoanelor nerezidente;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3309,7 +3323,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-237",
+      "id": "MD-XB-238",
       "rule_or_figure": "la codul 51 col.5 – impozitul pe venit reţinut din veniturile menţionate în col.4;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3323,7 +3337,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-238",
+      "id": "MD-XB-239",
       "rule_or_figure": "la codul 52 col.4 – suma venitului sub formă de dobânzi îndreptate spre achitare nerezidenţilor;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3337,7 +3351,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-239",
+      "id": "MD-XB-240",
       "rule_or_figure": "la codul 52 col.5 – impozitul pe venit reţinut din veniturile menţionare în col.4;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3351,7 +3365,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-240",
+      "id": "MD-XB-241",
       "rule_or_figure": "la codul 53 col.4 – venitul sub formă de creştere de capital;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3365,7 +3379,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-241",
+      "id": "MD-XB-242",
       "rule_or_figure": "la codul 53 col.5 – impozitul pe venit reţinut din veniturile menţionate în col.4;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3379,7 +3393,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-242",
+      "id": "MD-XB-243",
       "rule_or_figure": "la codul 54 col.4 – dividendele achitate în folosul nerezidentului;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3393,7 +3407,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-243",
+      "id": "MD-XB-244",
       "rule_or_figure": "la codul 54 col.5 – impozitul pe venit din dividendele indicate în col.4;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3407,7 +3421,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-244",
+      "id": "MD-XB-245",
       "rule_or_figure": "la codul 55 col.4 – suma retrasă din capitalul social, aferentă majorării capitalului social din repartizarea profitului net şi/sau altor surse constatate în ca",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3421,7 +3435,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-245",
+      "id": "MD-XB-246",
       "rule_or_figure": "la codul 55 col.5 – impozitul pe venit reţinut din venitul menţionat în col.4;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3435,7 +3449,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-246",
+      "id": "MD-XB-247",
       "rule_or_figure": "la codul 56 col.4 – alte plăţi direcţionate spre achitare nerezidentului aferente veniturilor de la art.71, cu excepţia dividendelor şi a sumelor specificate la",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3449,7 +3463,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-247",
+      "id": "MD-XB-248",
       "rule_or_figure": "la codul 56 col.5 – impozitul pe venit reţinut din veniturile menţionate în col.4;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3463,7 +3477,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-248",
+      "id": "MD-XB-249",
       "rule_or_figure": "la codul 61 col.4 – suma totală a veniturilor achitate;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3477,7 +3491,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-249",
+      "id": "MD-XB-250",
       "rule_or_figure": "la codul 61 col.5 – suma totală a impozitului pe venit reţinut din veniturile reflectate în col.4;",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3491,7 +3505,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-250",
+      "id": "MD-XB-251",
       "rule_or_figure": "la codul 61 col.6 – suma totală a primelor de asigurare obligatorie de asistenţă medicală reţinute de la angajaţi, alte persoane fizice din plăţile salariale şi",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3505,7 +3519,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-251",
+      "id": "MD-XB-252",
       "rule_or_figure": "Pentru plăţile reflectate la codurile 11, 51 – 56, în cazul în care acestea potrivit tratatelor internaţionale privind evitarea dublei impuneri se scutesc de im",
       "Guide_section": "Deadlines and filing: Monthly IPC21 reconciliation",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 codes51–61 and treaty exemption rule",
@@ -3519,7 +3533,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-252",
+      "id": "MD-XB-253",
       "rule_or_figure": "10. Achitarea impozitului pe venit se efectuează la clasificația economică corespunzătoare, după cum urmează: 10.1 Impozitul pe venit aferent codului sursei de ",
       "Guide_section": "Deadlines and filing; Sources",
       "act_article_or_official_section": "MF Order94/2020 annex2 points10.1–10.3",
@@ -3533,7 +3547,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-253",
+      "id": "MD-XB-254",
       "rule_or_figure": "Tabelul nr.1 Suma venitului achitat, impozitul pe venit şi primele de asigurare obligatorie de asistenţă medicală reţinute din acesta la codul 11 col. 4 – suma ",
       "Guide_section": "Deadlines and filing; Sources",
       "act_article_or_official_section": "MF Order94/2020 annex2 Table1 salary code11",
@@ -3547,7 +3561,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-254",
+      "id": "MD-XB-255",
       "rule_or_figure": "Română Русский 2025 2024 2021 2018 2017 Fişa actului juridic Print Pdf Republica Moldova MINISTERUL FINANȚELOR ORDIN Nr. 140 din 20-11-2017 privind aprobarea un",
       "Guide_section": "Deadlines and filing; Sources",
       "act_article_or_official_section": "MF Order140/2017 enacting form scope; attachments not retained",
@@ -3561,7 +3575,7 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; stated source/procedure gaps retained"
     },
     {
-      "id": "MD-XB-255",
+      "id": "MD-XB-256",
       "rule_or_figure": "Republica Moldova PARLAMENTUL COD Nr. 1163 din 24-04-1997 COD FISCAL AL REPUBLICII MOLDOVA Publicat : 18-09-1997 în Monitorul Oficial Nr. 62 art. 522 MODIFICAT ",
       "Guide_section": "Deadlines and filing; Sources",
       "act_article_or_official_section": "Fiscal Code consolidation heading",
@@ -4041,7 +4055,7 @@
   ],
   "baseline_old_units": 26,
   "old_bytes": 10653,
-  "new_bytes": 47721,
+  "new_bytes": 48692,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Prior short screening headings consolidated into canonical nine sections.",
