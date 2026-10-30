@@ -7,29 +7,29 @@ description: >
   prepare treaty exemption or refund applications. Covers national company
   rates, residence boundaries, payer evidence and departure checks. Use for
   foreign contractors, royalties, dividends, interest, remote work, branches
-  and international moves. This source-cited draft flags inconsistent official
-  residence summaries. It includes a resident foreign-relief workpaper and conditional UK company/individual credit examples. It does not complete every treaty corridor, individual final
-  assessment, exit-tax case or live filing
-  procedures. Independent Icelandic legal review remains required before reliance.
+  and international moves. Includes a resident foreign-relief workpaper,
+  conditional UK company and individual credit examples and the qualifying
+  company migration (exit) computation. It does not cover every treaty
+  corridor. General reference only; apply it to the client's documented facts.
 jurisdiction: IS
 category: cross-border
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
-version: 0.6
+last_updated: 2026-10-30
+version: 0.7
 ---
 
-# Iceland cross-border tax screening v0.6
+# Iceland cross-border tax screening v0.7
 
 ## Who this applies to
 
 For 2026 workpapers involving Iceland and another jurisdiction, establish domestic status, classify the income, then apply the actual treaty and collection procedure. Overseas addresses, foreign employers and the absence of an Icelandic subsidiary do not settle those questions. [Income Tax Act 90/2003, Articles 1–3a][law]
 
-**Individuals.** Article 1 includes Icelandic domicile and stays **longer than 183 days in any twelve-month period**, counting ordinary holiday absences. It separately addresses work aboard Iceland-registered ships and aircraft. Check domicile independently from a rolling-period presence schedule. [Article 1][law]
+**Individuals.** Article 1(1) includes Icelandic domicile (point 1) and stays **longer than 183 days in total in any twelve-month period**, counting ordinary holiday absences (point 3). Point 4 separately covers work of more than 183 days aboard Iceland-registered ships and aircraft. Check domicile independently from a rolling-period presence schedule. The tax authority decides residence disputes under Article 1(2), with appeal to the Tax Appeals Board. [Article 1][law]
 
-**Residence discrepancy:** that statutory wording differs from the authority's English “six months or longer” summary and Iceland's OECD residency profile's “183 days or longer.” Flag exactly-183-day and calendar-month boundary cases for a documented authority/local-law determination; do not silently equate these tests or conclude non-residence from that boundary alone. [Article 1][law]; [English guidance][residence]; [Jurisdiction-submitted profile][residence-profile]
+**Residence wording on the authority's English page:** the statute's test is "longer than 183 days in total". The authority's English page summarises it as a stay of "six months or longer". The statute prevails: a stay of exactly 183 days does not meet point 3, and a calendar-month count does not replace the day count. Domicile under point 1 is still tested separately. [Article 1][law]; [English guidance][residence]
 
-Former domiciliaries who leave and terminate Icelandic domicile remain within Article 1(2) unless they prove ordinary residence-equivalent foreign tax liability **and fulfilment of those obligations**. The period is three years **from the next New Year after departure**, rather than simply from the departure date. Retain foreign residence certificates, returns, assessments and payment evidence. Treaty residence is a separate question. [Article 1(2)][law]
+Former domiciliaries who leave and terminate Icelandic domicile remain within Article 1(1), point 2, unless they prove ordinary residence-equivalent foreign tax liability **and fulfilment of those obligations**. The period is three years **from the next New Year after departure**, rather than simply from the departure date. Retain foreign residence certificates, returns, assessments and payment evidence. Treaty residence is a separate question. [Article 1(1), point 2][law]
 
 **Entities.** Article 2 uses Icelandic registration, constitutional domicile or actual management. Check legal form and separate-taxpayer status, including partnership conditions/elections. Foreign incorporation does not rule out Icelandic actual management. [Article 2][law]
 
@@ -41,19 +41,23 @@ These are **2026 national statutory rates before exclusions or relief**, not a u
 
 | Category or test | Rule | Official source |
 |---|---|---|
-| Article 3(3) service payments | 20% of payment for legal entities corresponding to Article 2(1)(1)–(2); 37.6% for other legal entities | [Article 70(3)(b)–(c)][law] |
+| Article 3(2) remuneration, board fees and pensions from Icelandic payers | 20% of the individual's tax base; pensioners use the Article 66 bands with personal credit instead | [Article 70(2)][law] |
+| Article 3(3) service payments to individuals | 20% of the payment, including performers' fees and benefits | [Article 70(3)(a)][law] |
+| Article 3(3) service payments to legal entities | 20% of payment for legal entities corresponding to Article 2(1)(1)–(2); 37.6% for other legal entities | [Article 70(3)(b)–(c)][law] |
 | Non-resident PE taxable income | 20% for Article 2(1)(1)–(2)-type legal entities; 37.6% for other legal entities | [Article 70(4)(b)–(c)][law] |
 | Article 3(6) rights/royalty income | 22% national rate | [Article 70(6)][law] |
 | Legal entity's Article 3(7) share/dividend income | 20%, before applicable relief | [Article 70(7)(b)][law] |
 | Legal entity's taxable interest | 12%; check Article 3(8) exclusions first | [Article 70(8)(b)][law] |
 | Domestic construction/installation PE duration | Longer than six months; other domestic and treaty tests also require review | [Article 3a(2)][law] |
 | Qualifying company migration payment deferral | Up to five calendar years; annual principal at least one fifth of original deferred sum; 1 November due, final fifteen days later | [Articles 51(5)–(6), 56a][law] |
-| Migration security/report screens | Above 50 million, subject to exceptions; collection-assistance test can require security at any amount; report before 1 October | [Article 51(7)][law] |
-| Individual resident-like treatment screen | Qualifying EEA/EFTA/Faroe residence and at least 75% of total annual income from Iceland; further requirements apply | [Article 70a][law] |
+| Migration security/report screens | Deferred amount above ISK 50 million, unless the treaty information-access exception applies; collection-assistance test can require security at any amount; report before 1 October | [Article 51(7)][law] |
+| Individual resident-like treatment screen | Qualifying EEA/EFTA/Faroe residence and at least 75% of total annual income from Iceland; further requirements apply | [Article 70a(1)–(2)][law] |
+| Joint filing for EEA/EFTA/Faroe couples | Income from Iceland at least 90% of the couple's combined income, and registered at the same address at year end | [Article 70a(3)][law] |
+| 2026 average municipal tax (útsvar) | 14.94%; each municipality sets its own rate, and an Article 3 person pays to the municipality where most income was earned | [Notice 1521/2025](https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d); [Municipal Revenue Act 4/1995, Articles 19–21][municipal] |
 
 The dividend and interest guidance identifies 21% and 13% as **2024 exceptions**. Do not import them into 2026. [Dividend guidance][dividends]; [Interest guidance][interest]
 
-Published 2026 monthly employment withholding uses 31.49% through ISK 498,122, 37.99% for the next band through ISK 1,398,450, and 46.29% above it; monthly credit is ISK 72,492. These payroll figures do not determine every non-resident final assessment or payment's municipal tax. Use the [income-tax Guide](iceland-income-tax.md) alongside Articles 69–70's partial-year and limited-liability rules. [2026 rates][rates]; [Articles 69–70][law]
+Published 2026 monthly employment withholding uses 31.49% through ISK 498,122, 37.99% for the next band through ISK 1,398,450, and 46.29% above it; monthly credit is ISK 72,492. These payroll figures do not determine every non-resident final assessment or payment's municipal tax. Use the [income-tax skill](iceland-income-tax.md) alongside Articles 69–70's partial-year and limited-liability rules. [2026 rates][rates]; [Articles 69–70][law]
 
 ## The base
 
@@ -67,7 +71,7 @@ Published 2026 monthly employment withholding uses 31.49% through ISK 498,122, 3
 | Dividends | Recipient, residence, entitlement and distribution decision. Review treaty relief and the separate return-based EEA limited-company refund conditions before asserting zero tax. | [Article 70(7)][law]; [Dividend guidance][dividends] |
 | Interest | Principal, paid/accrued interest, issuer, instrument and recipient. Article 3(8) contains specified public-body and debt exclusions; 12% is not a conclusion that every instrument is taxable. | [Articles 3(8), 70(8)][law] |
 
-The English interest page's Central Bank description differs from the current statutory wording, which also refers to issuance on behalf of the Treasury. Apply the statute to the particular instrument and preserve any registration/exclusion evidence. [Article 3(8)][law]; [Interest guidance][interest]
+Article 3(8) excludes interest paid by the Central Bank of Iceland in its own name **or on behalf of the Treasury** (wording added by Act 53/2014). The authority's English interest page still says Central Bank issues on behalf of the Treasury are not exempt; that page is out of date and the statute prevails. Article 3(8) also excludes interest paid to foreign states, international organisations and tax-exempt public bodies, and interest on the specified registered bank and energy-company bonds. Apply the statute to the particular instrument and keep the registration/exclusion evidence. [Article 3(8)][law]; [Interest guidance][interest]
 
 Keep tax-base calculation, withholding/remittance and final assessment in separate columns. Act 45/1987 expressly covers specified non-resident receipts; Act 94/1996 has a separate capital-income collection scope. Do not substitute an individual's domestic 22% capital-tax headline for all foreign-company payments. [Act 45/1987, Articles 2, 4, 9][withholding]; [Act 94/1996, Articles 1–3][capital-withholding]
 
@@ -85,35 +89,35 @@ Prepare premises, project-duration, people and contract-negotiation timelines, t
 
 [Regulation 1165/2016, Articles 2–8](https://files.reglugerd.is/pdf/1165-2016/current)
 
-Then compare the domestic result with the actual treaty's PE article and effective modifications. Treaty protection, residence and eligibility must be established, not inferred from incorporation abroad. If a PE is taxable, prepare its revenue, attributable expenses, asset and head-office transaction schedules under the applicable income-tax/treaty rules, with the [transfer-pricing Guide](is-transfer-pricing.md) for branch dealings. Disputed attribution and treaty-specific project thresholds require their own supported analysis. The regulation reproduction states that the official Gazette prevails where texts differ.
+Then compare the domestic result with the actual treaty's PE article and effective modifications. Treaty protection, residence and eligibility must be established, not inferred from incorporation abroad. If a PE is taxable, prepare its revenue, attributable expenses, asset and head-office transaction schedules under the applicable income-tax/treaty rules, with the [transfer-pricing skill](is-transfer-pricing.md) for branch dealings. Disputed attribution and treaty-specific project thresholds require their own supported analysis. The regulation reproduction states that the official Gazette prevails where texts differ.
 
 ### Partial-year and short-stay employment assessment
 
 Income Tax Act Article 69(2) annualises an eligible part-year resident's tax base by dividing by Icelandic stay days and multiplying by 365, computes annual state income tax and the Article 67 credit, then prorates the result by stay days/365. Article 70(1) applies this method to the Article 3(1) nonresident employment category. It is not the computation for every director, performer, service fee or pension. Preserve the category and day-count workpaper first. [Articles 69–70][law]
 
-Use the actual **annual** 2026 state bands, not twelve times rounded monthly ceilings: 16.55% through 5,977,470; 23.05% through 16,781,397; 31.35% above that; annual credit 869,898. Municipal tax has its own supported rate and allocation; show it separately and deal with any unused credit under the applicable rules. The example below has positive state tax after credit, so it does not resolve an unused-credit branch. [2026 Gazette notice 1521/2025](https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d), [Income Tax Act Articles 66–70][law], [Municipal Revenue Act 4/1995, Articles 20–23](https://www.althingi.is/lagas/nuna/1995004.html)
+Use the actual **annual** 2026 state bands, not twelve times rounded monthly ceilings: 16.55% through 5,977,470; 23.05% through 16,781,397; 31.35% above that; annual credit 869,898. Municipal tax has its own rate and allocation (the 2026 average is 14.94%; the Article 3 person pays to the municipality where most income was earned); show it separately and deal with any unused credit under the applicable rules. The example below has positive state tax after credit, so it does not resolve an unused-credit branch. [2026 Gazette notice 1521/2025](https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d), [Income Tax Act Articles 66–70][law], [Municipal Revenue Act 4/1995, Articles 20–23](https://www.althingi.is/lagas/nuna/1995004.html)
 
 Reconcile actual withholding as payment against the assessment calculation. Withholding bands or net payslips alone do not prove a final assessment. Treaty exemption, residence, municipality, days, foreign income relevant to an elected regime and credit entitlement remain evidence inputs.
 
 ## Deadlines and filing
 
-**Treaty relief.** For the Article 3(3), (6), (7) and (8) payments addressed in the authority's procedure, prepare **RSK 5.42**, foreign-authority residence/full-tax-liability confirmation and complete recipient/transaction details. Skatturinn confirms approval with a unique certificate number. The payer needs the confirmed certificate; a treaty table or unapproved application is insufficient. The guidance permits effectiveness from receipt once approved and distinguishes earlier payments. [Exemption procedure][exemption]
+**Treaty relief.** For the Article 3(3), (6), (7) and (8) payments addressed in the authority's procedure, prepare **RSK 5.42**, foreign-authority residence/full-tax-liability confirmation and complete recipient/transaction details. Skatturinn confirms approval with a unique certificate number (box 20). The payer needs the confirmed certificate; a treaty table or unapproved application is insufficient. Once approved, the exemption or reduced rate applies from the date Skatturinn received the application; it does not apply to payments made before that date. Until approval, tax is withheld at the domestic rate. [Exemption procedure][exemption]
 
-For tax already withheld, prepare the applicable refund route. The dividend guidance names **RSK 5.43** and requires remittance to the Treasury. Preserve that evidence with the residence and treaty analysis. Current forms, limitation periods and submission channels require case verification; no live filing was tested. [Dividend guidance][dividends]
+For tax already withheld above the treaty rate, the refund application is **RSK 5.43**, made once the withheld tax has been paid over to the Treasury. A non-resident limited company resident in an EEA state that received a dividend from an Icelandic limited company claims a full refund of the withheld tax by filing the return **RSK 1.04**; the refund follows the company assessment at the end of October of the following year. Preserve that evidence with the residence and treaty analysis. [Dividend guidance][dividends]
 
 **Payer controls.** For amounts collected under **Act 45/1987**, Article 20 requires monthly remittance and an itemised statement for the previous month. Its ordinary due date is the first of the following month and final payment date fourteen days later. Check the applicable calendar; do not transfer this deadline to every capital payment. Article 22 addresses responsibility for amounts withheld or required to be withheld. [Articles 20, 22][withholding]
 
-Annual returns are separate. Tax-year 2026 income and a return/assessment issued in 2026 concern different periods; this draft establishes no 2027 filing deadline. Article 112 also contains a pre-departure settlement rule for specified foreign nationals/stateless persons on time-limited permits. Review those facts before assuming monthly deductions complete departure obligations. [Articles 90, 112][law]
+Annual returns are separate. Tax-year 2026 income is reported on the return filed in 2027; a return or assessment issued in 2026 concerns 2025 income. This skill does not set the 2027 return deadlines; use the income-tax and corporate income-tax skills for them. Article 112 also contains a pre-departure settlement rule for specified foreign nationals/stateless persons on time-limited permits. Review those facts before assuming monthly deductions complete departure obligations. [Articles 90, 112][law]
 
 ## Penalties and interest
 
 Act 45/1987 Article 28 charges **1% per day after the final payment date, capped at 10%**, for unpaid amounts under that regime. If unpaid within a month from the due date, late interest runs from the due date under the provision. The authority can waive the surcharge for accepted reasons. These collection rules are not automatically the rules for every annual assessment or capital-income payment. [Article 28][withholding]
 
-Income Tax Act Article 108 separately addresses missing, late or defective returns/bases; Article 114 governs assessment late interest. No floating interest rate is quoted here. Obtain the actual notice, period, collection basis and payment dates before computing interest or penalties. [Articles 108, 114][law]
+Income Tax Act Article 108 sets the return surcharges: up to **15%** on estimated bases where no return is filed in time; where a late return arrives before the assessment is completed, **0.5% of the bases per day late, capped at 10%**; **25%** on omitted or wrongly stated items, reduced to at most **15%** if corrected before the assessment. The surcharge is cancelled if the taxpayer shows the failure was not their fault or was caused by events beyond their control. Article 114 charges late interest on tax not paid within a month of its due date, at the rate the Central Bank sets under Act 38/2001, Article 6. No floating interest rate is quoted here; take it from the Central Bank's publication for the actual period. [Articles 108, 114][law]
 
 ## Cross-border points
 
-Retain the exact treaty, effective dates, recipient residence, income article, entitlement/ownership conditions, PE connection, anti-abuse provisions and relevant MLI changes. Domestic residence, treaty residence and permission to reduce withholding are separate decisions. Find the treaty via the [official list][treaties]; this draft establishes no corridor-specific exemption.
+Retain the exact treaty, effective dates, recipient residence, income article, entitlement/ownership conditions, PE connection, anti-abuse provisions and relevant MLI changes. Domestic residence, treaty residence and permission to reduce withholding are separate decisions. Find the treaty via the [authority's treaty page][treaties]; this skill sets no corridor-specific exemption.
 
 ### Resident foreign-income relief workpaper
 
@@ -148,7 +152,7 @@ The authority's **2026 return handbook, page 20, reports 2025 income**. It demon
 Prepare the following workpaper for the stated positive-tax case:
 
 1. Reconcile domestic and foreign **taxable earned-income bases after supported deductions**, rather than net foreign bank receipts. Attribute deductions consistently; record currency conversions and any mismatch between the foreign assessment and Icelandic base. Keep separately taxed capital income outside this simplified same-category example.
-2. Compute annual state tax on the combined base using the **2026 annual bands** and subtract the supported annual personal credit **once**. Compute municipal tax with the actual applicable municipal rate/allocation; 14.94% is an assumed case rate in the example, not a universal final rate. Preserve the state/municipal columns.
+2. Compute annual state tax on the combined base using the **2026 annual bands** and subtract the supported annual personal credit **once**. Compute municipal tax with the client's own municipality's rate; the example uses 14.94%, the 2026 average set out in notice 1521/2025, as the assumed case rate. Preserve the state/municipal columns.
 3. Compute the eligible foreign base divided by the combined comparable base. Allocate the after-personal-credit state tax and municipal tax by that ratio to establish the attributable ceiling for this supported case. Do not instead charge only domestic income, assign all foreign income to the highest marginal band, or subtract full personal credit again after relief.
 4. Under the established credit branch, limit the **total** reduction to the lower of qualifying paid foreign tax and that attributable covered-tax ceiling. Reconcile the state/municipal allocation to the actual assessment; do not deduct the whole foreign tax separately from both charges. Actual Icelandic withholding is a separate payment credit after the tax calculation.
 5. Retain the treaty analysis, proof of payment/refunds, income/deduction/currency schedule, allocation and submitted claim/assessment. Later foreign refunds or reassessments need reconsideration. An excess above the ceiling has no automatic Icelandic refund or carryforward established by this method.
@@ -163,7 +167,7 @@ Article 56a addresses a qualifying company's residence or asset move to another 
 
 **Valuation workpaper.** Fix the relevant closing date and obtain expert market valuations certified by the company's licensed auditors. List operating assets, shares, intangibles, other assets and eligible liabilities; reconcile market values to tax bases after prior depreciation. Article 51 permits excluding assets retained in Iceland that could belong to the merged company's **registered Icelandic PE**. Evidence that retained property meets that condition is required. Liabilities must satisfy Article 75; book pension or deferred-income-tax provisions are not automatically allowable liabilities. [Article 51(3)–(4)][law]
 
-For mergers, **RSK 4.27** provides two controls: fair-value net assets less tax net assets, and the sum of category differences. Reconcile both to the same base, then apply the company's applicable Article 71 rate. Keep valuation and tax-basis adjustments separate from book equity. This published form is dated 31 August 2021; confirm its accepted current route and any additional migration-specific report before submission. [RSK 4.27](https://www.skatturinn.is/media/rsk04/rsk_0427.is.pdf)
+For mergers, **RSK 4.27** provides two controls: fair-value net assets less tax net assets, and the sum of category differences. Reconcile both to the same base, then apply the company's applicable Article 71 rate. Keep valuation and tax-basis adjustments separate from book equity. The form is dated 31 August 2021 and appears in Skatturinn's 2026 forms list as "Ákvörðun skattstofns við millilandasamruna". Its instructions treat pension and income-tax provisions as liabilities that do not meet Article 75. For an Article 56a move, also file the report in the form the tax authority sets under Article 51(3). [RSK 4.27](https://www.skatturinn.is/media/rsk04/rsk_0427.is.pdf); [2026 forms list][forms]
 
 **Assessment and payment.** For Article 51's confirmed cross-border merger, the statutory assessment period is within two months of confirmation notified to the company registry, with payment due ten days later. Apply the incorporated rule to the actual Article 56a transaction with professional/authority confirmation of the event and date. Do not substitute the ordinary annual corporate-return deadline. [Article 51(4), Article 56a(2)][law]
 
@@ -302,7 +306,7 @@ expected:
 
 ### 6. Eligible short-stay employment, annualised state tax
 
-Assume an adult in the Article 70(1) employment category, 100 supported stay days in 2026, taxable income after allowed deductions of 2 million, no treaty exemption or other adjustment, and an established applicable municipal rate of 14.94%. Annualised state-tax base is **7.3 million**. State tax before annual credit is **1,294,114.45**, annual state tax after credit **424,216.45**, and prorated state tax **116,223.68**. Municipal tax on the stated period base is **298,800**, giving **415,023.68 before actual payment credits**. The municipality rate and status are assumed case facts, not universal nonresident parameters. [Articles 66–70][law], [Gazette notice 1521/2025](https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d)
+Assume an adult in the Article 70(1) employment category, 100 supported stay days in 2026, taxable income after allowed deductions of 2 million, no treaty exemption or other adjustment, and an established applicable municipal rate of 14.94%. Annualised state-tax base is **7.3 million**. State tax before annual credit is **1,294,114.45**, annual state tax after credit **424,216.45**, and prorated state tax **116,223.68**. Municipal tax on the stated period base is **298,800**, giving **415,023.68 before actual payment credits**. The 14.94% is the 2026 average municipal rate; use the rate of the municipality where the person earned most income (Municipal Revenue Act Article 20). [Articles 66–70][law], [Gazette notice 1521/2025](https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d)
 
 ```oa-check
 name: Iceland qualifying short-stay employment annualisation, positive state tax
@@ -401,42 +405,44 @@ For professional review of the facts, [contact OpenAccountants](https://www.open
 
 ## Sources
 
-Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Local direct retrieval returned HTTP 403; the statutory text was read through the web reader. Administrative residence, historic-rate and instrument-exemption discrepancies are identified above. Notice 1521/2025 was checked through the Gazette's indexed HTML and the ministry's matching 2026 notice; direct Gazette PDF access returned HTTP 403. Independent Icelandic legal review, treaty-specific PE/attribution, foreign-relief cases beyond the stated workpaper/example, individual assessment categories outside the stated annualisation and full-year positive-tax credit examples, exit cases outside the stated statutory method and operational filing remain open. Invented example inputs are not client facts. This is partial XB coverage.
+Statutes were read in the Alþingi consolidated text of 1 October 2026 (Income Tax Act compilation 158a). Regulation texts are the reglugerd.is reproductions; the regulation site states that the B-section Gazette publication prevails if they differ. The worked examples use invented inputs, not client facts.
 
 | Official source | URL | Read on |
 |---|---|---|
-| Income Tax Act 90/2003, Articles 1–3a, 51, 56a, 69–70a, 90, 108, 112, 114 | [Alþingi][law] | 2026-10-23 |
-| Public-levy withholding Act 45/1987, Articles 2, 4, 9, 20, 22, 28 | [Alþingi][withholding] | 2026-10-23 |
-| Capital-income withholding Act 94/1996, scope Articles 1–3 | [Alþingi][capital-withholding] | 2026-10-23 |
-| Skatturinn, individual tax liability | [Guidance][residence] | 2026-10-23 |
-| Iceland residency information submitted to OECD | [Profile][residence-profile] | 2026-10-23 |
-| Skatturinn, 2026 rates | [Rates][rates] | 2026-10-23 |
-| Skatturinn, company dividends | [Guidance][dividends] | 2026-10-23 |
-| Skatturinn, company interest | [Guidance][interest] | 2026-10-23 |
-| Skatturinn, royalties and rights | [Guidance][royalties] | 2026-10-23 |
-| Skatturinn, treaty exemption procedure | [Procedure][exemption] | 2026-10-23 |
-| Skatturinn, treaties and MAP | [Treaties][treaties], [MAP][map] | 2026-10-23 |
-| RSK 4.27, merger base reconciliation; current-route check required | [Published form](https://www.skatturinn.is/media/rsk04/rsk_0427.is.pdf) | 2026-10-23 |
-| Skatturinn, treaty scope and procedure | [Authority guidance](https://www.skatturinn.is/english/companies/double-taxation-conventions/) | 2026-10-23 |
-| Tax Appeals Board decision 520/2012; historical years only | [Decision](https://yskn.is/urskurdir/skoda-urskurd/?nr=2912) | 2026-10-23 |
-| Current UK Convention/MLI reading aid | [Synthesised text](https://www.gov.uk/government/publications/iceland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-iceland-uk-double-taxation-convention-in-force) | 2026-10-23 |
-| UK treaty publication and effective periods | [Official publication](https://www.gov.uk/government/publications/iceland-tax-treaties) | 2026-10-23 |
-| PE Regulation 1165/2016, Articles 2–8 | [Regulation](https://files.reglugerd.is/pdf/1165-2016/current) | 2026-10-23 |
-| 2026 annual state bands and credit, notice 1521/2025 | [Gazette HTML](https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d) | 2026-10-23 |
-| Skatturinn 2026 individual-return handbook, page 20, method demonstrated on 2025 income | [Official handbook][individual-handbook] | 2026-10-23 |
-| Municipal Revenue Act 4/1995 | [Alþingi](https://www.althingi.is/lagas/nuna/1995004.html) | 2026-10-23 |
+| Income Tax Act 90/2003, Articles 1–3a, 51, 56a, 57a, 66–71, 90, 108, 112, 114, 119 | [Alþingi][law] | 2026-10-30 |
+| Withholding of public levies Act 45/1987, Articles 2, 20, 22, 28 | [Alþingi][withholding] | 2026-10-30 |
+| Capital-income withholding Act 94/1996, Articles 1, 3 | [Alþingi][capital-withholding] | 2026-10-30 |
+| Municipal Revenue Act 4/1995, Articles 19–21 and 34 | [Alþingi][municipal] | 2026-10-30 |
+| Notice 1521/2025: 2026 state bands, personal credit and 14.94% average municipal rate | [Stjórnartíðindi](https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d) | 2026-10-30 |
+| Skatturinn, key rates and amounts 2026 | [Rates][rates] | 2026-10-30 |
+| Skatturinn, individual tax liability (English) | [Guidance][residence] | 2026-10-30 |
+| Skatturinn, dividends (English): 20% rate, RSK 5.42, RSK 5.43, EEA refund via RSK 1.04 | [Guidance][dividends] | 2026-10-30 |
+| Skatturinn, interest (English): 12% rate, Central Bank wording | [Guidance][interest] | 2026-10-30 |
+| Skatturinn, royalties, lease etc. (English) | [Guidance][royalties] | 2026-10-30 |
+| Skatturinn, treaty exemption procedure, RSK 5.42 | [Procedure][exemption] | 2026-10-30 |
+| Skatturinn, double taxation conventions (English) | [Treaty page][treaties] | 2026-10-30 |
+| Skatturinn, mutual agreement procedure | [MAP guidance][map] | 2026-10-30 |
+| Skatturinn, 2026 forms list (RSK 4.27) | [Forms][forms] | 2026-10-30 |
+| RSK 4.27, tax base on cross-border merger, form dated 31 August 2021 | [Form](https://www.skatturinn.is/media/rsk04/rsk_0427.is.pdf) | 2026-10-30 |
+| Regulation 1165/2016 on permanent establishments, Articles 2–8 (version in force from 12 November 2020) | [reglugerd.is](https://files.reglugerd.is/pdf/1165-2016/current) | 2026-10-30 |
+| Skatturinn 2026 individual-return handbook RSK 8.01, page 20 (foreign income, credit method) | [Handbook][individual-handbook] | 2026-10-30 |
+| Tax Appeals Board (Yfirskattanefnd) decision 520/2012, Article 119 per-country limitation; historical years only | [Decision](https://yskn.is/urskurdir/skoda-urskurd/?nr=2912) | 2026-10-30 |
+| 2013 Iceland-UK Double Taxation Convention as modified by the MLI, Articles 2 and 21 (synthesised text) | [GOV.UK synthesised text](https://www.gov.uk/government/publications/iceland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-iceland-uk-double-taxation-convention-in-force) | 2026-10-30 |
+| Iceland-UK treaty publication: in force 10 November 2014, effective in Iceland from 1 January 2015 | [GOV.UK publication](https://www.gov.uk/government/publications/iceland-tax-treaties) | 2026-10-30 |
 
 [law]: https://www.althingi.is/lagas/nuna/2003090.html
 [withholding]: https://www.althingi.is/lagas/nuna/1987045.html
 [capital-withholding]: https://www.althingi.is/lagas/nuna/1996094.html
+[municipal]: https://www.althingi.is/lagas/nuna/1995004.html
 [residence]: https://www.skatturinn.is/english/individuals/tax-liability/
-[residence-profile]: https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-residency/Iceland-Tax-Residency.pdf
 [rates]: https://www.skatturinn.is/english/individuals/key-rates-and-amounts/2026/
 [dividends]: https://www.skatturinn.is/english/companies/dividends/
 [interest]: https://www.skatturinn.is/english/companies/interests/
 [royalties]: https://www.skatturinn.is/english/companies/royalties-lease-etc/
 [exemption]: https://www.skatturinn.is/english/companies/exemption/
-[treaties]: https://island.is/en/o/skatturinn/double-taxation-agreements
+[treaties]: https://www.skatturinn.is/english/companies/double-taxation-conventions/
 [map]: https://island.is/en/o/skatturinn/mutual-agreement-procedure-for-double-taxation
-
+[forms]: https://www.skatturinn.is/atvinnurekstur/eydublod/2026
 [individual-handbook]: https://www.skatturinn.is/media/baeklingar/rsk_0801_2026.is.pdf
+
+Not yet confirmed: no figure in this skill is open. Not covered here: treaty-specific PE thresholds and MAP deadlines for corridors other than the UK, 2027 return deadlines for 2026 income, and individual departure (exit) cases outside Articles 51 and 56a.

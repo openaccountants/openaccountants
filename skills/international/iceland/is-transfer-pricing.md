@@ -8,18 +8,18 @@ description: >
   Covers annual documentation, RSK 4.28 disclosure, minor transactions,
   language, retention, request deadlines, documentation fines and a separate
   country-by-country reporting screen. Use for intercompany goods, services,
-  loans, intangibles and branch dealings. Treaty-specific relief, current
-  submission-system checks and independent Icelandic legal review remain open;
-  this source-cited draft does not establish comprehensive country coverage.
+  loans, intangibles and branch dealings. Treaty-specific MAP relief is
+  screened, not computed. General reference only; apply it to the client's
+  documented facts.
 jurisdiction: IS
 category: transfer-pricing
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
-version: 0.2
+last_updated: 2026-10-30
+version: 0.3
 ---
 
-# Iceland transfer pricing v0.2
+# Iceland transfer pricing v0.3
 
 ## Who this applies to
 
@@ -29,11 +29,11 @@ Related-party routes include membership of the same group; direct or indirect ma
 
 Pricing applies to domestic and foreign related entities even when formal documentation is not required. The special related-legal-entity regime is not the rule for individual-to-individual or individual-to-company transactions; those still require consideration of the general rules in Article 57(1)–(2). [Skatturinn, scope][guidance]
 
-This Guide produces workpapers for a qualified reviewer. It does not select a defensible market price without transaction evidence, establish a permanent establishment or complete the corporate return.
+This skill produces workpapers for a qualified reviewer. It does not select a defensible market price without transaction evidence, establish a permanent establishment or complete the corporate return.
 
 ## Rates, bands and thresholds
 
-These are compliance tests, not tax rates or permitted profit margins. Sources were checked on 23 October 2026.
+These are compliance tests, not tax rates or permitted profit margins. Sources were checked on 30 October 2026.
 
 | Test | 2026 rule | Official source |
 |---|---|---|
@@ -41,14 +41,14 @@ These are compliance tests, not tax rates or permitted profit margins. Sources w
 | Domestic documentation exclusion | Related-entity transactions where all parties are resident in Iceland; pricing rules still apply | [Article 57(3), (5)][law] |
 | Minor transactions | Limited economic size and significance, assessed qualitatively; no numeric safe harbour is prescribed in Article 12; intangibles excluded | [Regulation 1180/2014, Article 12][reg] |
 | Documentation response | Within **45 days** of the authority's request | [Article 57(5)][law]; [Regulation, Articles 13–14][reg] |
-| Retention | **Seven years** from financial-year end | [Regulation, Article 15][reg] |
+| Retention | **Seven years** from financial-year end | [Article 57(5)][law]; [Regulation, Article 15][reg] |
 | Separate CbC screen | Domestic ultimate-parent exemption if previous-year consolidated group revenue is **below EUR 750 million**; equality does not qualify for that exemption | [Article 91a(1)][law]; [Regulation 766/2019, Article 1][cbc-reg] |
 
 Use the financial year preceding the year being documented for the size screen. Exactly ISK 1 billion does not exceed the test. Check revenue and both asset dates independently, and retain earlier-year history before concluding that an existing obligation has ended. Do not substitute the value of related-party invoices for the entity-size test. [Article 57(5)][law]
 
 ## The base
 
-If controlled prices or terms differ from comparable independent dealings, Article 57(3) requires valuation and, where appropriate, adjustment of the tax base. Reconcile the supported transaction value to the ledger and resulting profit adjustment. An arm's-length interest rate does not by itself establish interest deductibility: Article 57b requires a separate review. [Articles 57(3), 57b][law]
+If controlled prices or terms differ from comparable independent dealings, Article 57(3) requires valuation and, where appropriate, adjustment of the tax base. Reconcile the supported transaction value to the ledger and resulting profit adjustment. An arm's-length interest rate does not by itself establish interest deductibility: Article 57b separately limits a company's deduction of interest and discounts on loans from related parties, for the amount above ISK 100 million, to 30% of its adjusted profit, subject to the group-taxation, equity-ratio and financial-undertaking exceptions. Use the [corporate income-tax skill](is-corporate-income-tax.md) for that computation. [Articles 57(3), 57b][law]
 
 ### Prepare the pricing file
 
@@ -67,7 +67,7 @@ Use the following checklist to implement Regulation 1180/2014. Its requirements 
 
 Article 9 lists CUP, cost plus, resale price, profit split and TNMM. Select and justify the method against the actual evidence; the list is not a prescribed markup. For services, trace the benefit, cost pool, allocation key and pricing result to the books. A percentage used in an example is an assumption, not an Icelandic safe harbour. [Articles 7, 9–10][reg]
 
-Iceland's January 2026 jurisdiction-submitted OECD profile explains that domestic rules do not require separately labelled OECD master and local files. Required information must still be available. Article 15 permits the EU documentation code format as an alternative while retaining Articles 2 and 11–15; choosing that format does not remove deadlines or retention. [OECD profile, questions 29–30][profile]; [Article 15][reg]
+Regulation 1180/2014 sets its own content list (Articles 3–11); it does not use the OECD "master file" and "local file" labels. Article 15 lets the entity document instead under the EU Code of Conduct on transfer pricing documentation (2006/C 176/01); Articles 2 and 11–15 still apply either way, so the deadlines, language and retention rules stay. If the file has no comparability analysis, Article 14 lets the authority ask for one. [Articles 3–15][reg]
 
 ### Minor transactions
 
@@ -79,16 +79,16 @@ Prepare documentation for **each financial year**. With the annual return, discl
 
 Keep the file available in **Icelandic and/or English**. Supply requested documentation within **45 days**; Article 14 says a request under that procedure cannot precede the return deadline and preserves other statutory information-gathering powers. Do not treat this as permission to ignore another lawful request. Record request date, scope, response due date and delivery evidence. [Articles 14–15][reg]
 
-The 2026 forms catalogue concerns the filing cycle labelled 2026. It does not establish the precise return deadline or accepted form for 2026 income reported in 2027. Obtain the applicable filing timetable before delivery; no live submission was tested for this draft.
+The disclosure goes with the annual company return; this skill does not set the return deadline (see the [corporate income-tax skill](is-corporate-income-tax.md)).
 
 ### Separate country-by-country reporting
 
 Run this screen separately from the ISK 1 billion documentation test:
 
-1. Identify the multinational group, ultimate parent, reporting year and previous-year consolidated revenue. Article 91a(1) exempts a domestic ultimate parent below **EUR 750 million**. Older material, including the retrieved RSK 4.31 PDF, still says ISK 100 billion; use the current statute and amended regulation for this threshold. [Article 91a][law]; [Article 1][cbc-reg]; [legacy form][cbc-form]
+1. Identify the multinational group, ultimate parent, reporting year and previous-year consolidated revenue. Article 91a(1) exempts a domestic ultimate parent below **EUR 750 million**. The RSK 4.31 form (dated 26 August 2020) still says ISK 100 billion; the statute (amended by Act 38/2019) prevails. Skatturinn's guidance converts foreign-currency amounts at the year's average mid-rate for income items and the year-end mid-rate for balance-sheet items, and says a local filing duty under Article 91a(2)(a) does not arise merely because exchange-rate movements take a foreign parent's group revenue to EUR 750 million or more in euro terms. [Article 91a][law]; [Article 1][cbc-reg]; [RSK 4.31][cbc-form]; [CbC guidance, section 3][cbc-guidance]
 2. For a foreign-parent group, check local filing triggers: no parent filing obligation, no effective competent-authority exchange arrangement in the stated circumstances, or notified systemic failure. A foreign parent saying it will file is insufficient without the exchange checks. Check all six Article 91a(3) conditions before relying on a surrogate-parent exemption. [Article 91a(2)–(3)][law]; [Article 3][cbc-reg]
-3. The report is due within **12 months** of financial-year end. Article 91a(4)–(5) requires the relevant local entity notification within **one month** of group financial-year end. The authority's CbC guidance instead describes RSK 4.31 notification at year-end. Record both dates and arrange delivery by the earlier administrative date while resolving the discrepancy; the statute's one-month wording is not replaced by that guidance. [Article 91a][law]; [CbC guidance, section 3][cbc-guidance]
-4. The report uses English; direct submissions must meet the authority's XML requirements. Reconcile jurisdiction totals and constituent-entity activities to group data, and retain acceptance evidence. Current schema, exchange relationships, foreign-currency threshold treatment and notification channel require operational verification for the actual group. [Articles 4–6][cbc-reg]; [CbC guidance, sections 1, 3–4][cbc-guidance]
+3. The report is due within **12 months** of financial-year end. Article 91a(4)–(5) requires the Icelandic constituent entity to notify, within **one month** of the group's financial-year end, whether it is the ultimate parent or surrogate parent, or otherwise which group entity files and where. The authority's CbC guidance describes RSK 4.31 notification "at year-end"; the statute's one-month deadline governs. [Article 91a][law]; [CbC guidance, section 3][cbc-guidance]
+4. The report is made on the English-language form (RSK 4.30), states its currency, and is filed electronically in the XML format Skatturinn requires. Reconcile jurisdiction totals and constituent-entity activities to group data, and retain acceptance evidence. Check the competent-authority exchange relationship with the parent's state at the end of the reporting year. [Articles 4–6][cbc-reg]; [CbC guidance, sections 1, 3–4][cbc-guidance]
 
 ## Penalties and interest
 
@@ -102,7 +102,7 @@ Article 57(6)–(11) permits administrative fines for incomplete or absent requi
 | Deficiencies cured within 30 days of the fine decision | Fine reduced by 90% | [Article 57(10)][law] |
 | Cure within two months / three months | Fine reduced by 60% / 40% respectively | [Article 57(10)][law] |
 
-An appeal does not suspend collection. If the fine is unpaid within one month of the decision date, Article 57(7) requires late-payment interest from the decision date. These documentation fines are distinct from additional tax, tax-base surcharges and collection interest. Article 114 links tax late-payment interest to the Central Bank rate; this Guide does not quote an undated rate or compute an assessment's interest. Review the actual assessment and applicable periods separately. [Articles 57(7)–(8), 108, 114][law]
+An appeal does not suspend collection. If the fine is unpaid within one month of the decision date, Article 57(7) requires late-payment interest from the decision date. These documentation fines are distinct from additional tax, tax-base surcharges and collection interest. Article 114 links tax late-payment interest to the Central Bank rate; this skill does not quote an undated rate or compute an assessment's interest. Review the actual assessment and applicable periods separately. [Articles 57(7)–(8), 108, 114][law]
 
 ## Cross-border points
 
@@ -187,28 +187,28 @@ For help with the facts and professional review, [contact OpenAccountants](https
 
 ## Sources
 
-Read **23 October 2026**. The Icelandic statute and consolidated regulation reproductions are the legal sources used for this draft. The regulation website states that the official B-section Gazette publication prevails if its reproduction differs; that publication comparison remains open. The regulations were retrieved directly as HTML after the web reader returned access errors; 1180/2014 includes the displayed 1156/2017 amendment, and 766/2019 includes 413/2022. Independent Icelandic-language legal review, current filing-system verification, detailed litigation review and professional attestation remain open. All figures used in examples other than identified legal thresholds/fines are invented assumptions.
+Statutes were read in the Alþingi consolidated text of 1 October 2026. Regulation 1180/2014 includes amendment 1156/2017 and Regulation 766/2019 includes amendment 413/2022, as reproduced on island.is; the regulation site states that the B-section Gazette publication prevails if they differ. Figures in the examples other than the statutory thresholds and fines are invented assumptions.
 
 | Official source | URL | Read on |
 |---|---|---|
-| Income Tax Act 90/2003, Articles 57, 57b, 91a, 108, 114; displayed compilation 1 October 2026 | [Alþingi][law] | 2026-10-23 |
-| Regulation 1180/2014, documentation and pricing | [Ísland.is][reg] | 2026-10-23 |
-| Regulation 766/2019, CbC reporting | [Ísland.is][cbc-reg] | 2026-10-23 |
-| Act 61/2021, documentation sanctions | [Alþingi][fine-law] | 2026-10-23 |
-| Skatturinn, transfer-pricing guidance | [Tax authority][guidance] | 2026-10-23 |
-| Iceland's OECD transfer-pricing profile, January 2026, questions 29–30 | [Jurisdiction-submitted profile][profile] | 2026-10-23 |
-| Skatturinn, 2026 forms catalogue | [Forms][forms] | 2026-10-23 |
-| Skatturinn, CbC guidance | [Guidance][cbc-guidance] | 2026-10-23 |
-| RSK 4.31, dated 26 August 2020; outdated ISK threshold retained in retrieved PDF | [Legacy notification form][cbc-form] | 2026-10-23 |
-| Skatturinn, mutual agreement procedure | [MAP guidance][map] | 2026-10-23 |
+| Income Tax Act 90/2003, Articles 57, 57b, 91a, 108, 114 | [Alþingi][law] | 2026-10-30 |
+| Act 61/2021, Article 1: documentation fines added to Article 57 | [Alþingi][fine-law] | 2026-10-30 |
+| Regulation 1180/2014 on transfer-pricing documentation, Articles 1–15 | [Ísland.is][reg] | 2026-10-30 |
+| Regulation 766/2019 on country-by-country reporting, Articles 1–6 | [Ísland.is][cbc-reg] | 2026-10-30 |
+| Skatturinn, transfer pricing (milliverðlagning): scope, related parties, minor transactions | [Guidance][guidance] | 2026-10-30 |
+| Skatturinn, 2026 forms list (RSK 4.28) | [Forms][forms] | 2026-10-30 |
+| Skatturinn, CbC guidance (leiðbeiningar), sections 1, 3–4 | [Guidance][cbc-guidance] | 2026-10-30 |
+| RSK 4.31, CbC notification form dated 26 August 2020 (still shows the old ISK 100 billion threshold) | [Form][cbc-form] | 2026-10-30 |
+| Skatturinn, mutual agreement procedure | [MAP guidance][map] | 2026-10-30 |
 
 [law]: https://www.althingi.is/lagas/nuna/2003090.html
 [reg]: https://island.is/reglugerdir/nr/1180-2014
 [cbc-reg]: https://island.is/reglugerdir/nr/0766-2019
 [fine-law]: https://www.althingi.is/altext/stjt/2021.061.html
 [guidance]: https://www.skatturinn.is/atvinnurekstur/skattskylda/milliverdlagning/
-[profile]: https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/transfer-pricing/transfer-pricing-country-profile-iceland.pdf
 [forms]: https://www.skatturinn.is/atvinnurekstur/eydublod/2026
 [cbc-guidance]: https://www.skatturinn.is/fagadilar/cbc/leidbeiningar/
 [cbc-form]: https://www.skatturinn.is/media/rsk04/rsk_0431.is.pdf
 [map]: https://island.is/en/o/skatturinn/mutual-agreement-procedure-for-double-taxation
+
+Not yet confirmed: no figure in this skill is open. Removed: the reference to Iceland's OECD transfer-pricing country profile (not an official Icelandic law or tax-authority source); the master/local-file point now rests on Regulation 1180/2014 itself.

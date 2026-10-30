@@ -12,29 +12,28 @@ description: >
   public-aid limits, and the stated financial-sector remuneration, additional
   profit and bank-liability taxes, conditional domestic mergers/splits and
   sole-trade incorporation. Other sector taxes, foreign credits, disputed
-  restructuring cases, some financial instruments and independent Icelandic
-  legal review require further work;
-  this source-cited draft is not comprehensive country coverage.
+  restructuring cases and some financial instruments are outside this skill.
+  General reference only; check the cited law before filing.
 jurisdiction: IS
 category: international
 tax_year: 2026
-last_updated: 2026-10-23
-version: 0.8
+last_updated: 2026-10-30
+version: 0.9
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iceland corporate income tax v0.8
+# Iceland corporate income tax v0.9
 
 ## Who this applies to
 
-Prepare **income-year 2026** workpapers for separately taxable Iceland-resident legal entities. Article 2 residence includes Icelandic registration, domicile under the constitution or actual management in Iceland. Confirm the legal form and separate-taxpayer status, including any partnership election; a business name alone does not establish the tax rate. Residents are taxed on worldwide income under Article 2. [Income Tax Act 90/2003, Article 2][law]
+Prepare **income-year 2026** workpapers for separately taxable Iceland-resident legal entities. Article 2 residence includes Icelandic registration, a seat in Iceland under the articles of association, or actual management in Iceland. Confirm the legal form and separate-taxpayer status, including any partnership election; a business name alone does not establish the tax rate. Residents are taxed on worldwide income under Article 2. [Income Tax Act 90/2003, Article 2][law]
 
-An individual's sole trade belongs in the [individual income-tax Guide](iceland-income-tax.md). Exempt bodies require Article 4 and Article 71(4)–(5) review: ordinary income-tax exemption does not itself settle capital-income tax. Non-residents require the source-category method in the [cross-border Guide](is-cross-border.md), rather than a blanket resident-company computation. [Articles 3–4, 70–71][law]
+An individual's sole trade belongs in the [individual income-tax skill](iceland-income-tax.md). Exempt bodies require Article 4 and Article 71(4)–(5) review: ordinary income-tax exemption does not itself settle capital-income tax, and exempt bodies within Article 71(4) pay 22% on the listed capital income. Non-residents require the source-category method in the [cross-border skill](is-cross-border.md), rather than a blanket resident-company computation. A non-resident's Icelandic permanent establishment is taxed on its Article 61(2) tax base at 20% where the entity corresponds to an Article 2(1)(1)–(2) entity and at 37.6% for other legal entities. [Articles 3–4, 70(4), 71][law]
 
-**Keep years separate.** A return labelled 2026 ordinarily reports **2025 income**. The official 2026 assessment page expressly uses that pairing. This Guide distinguishes the current 2026 income computation from confirmed 2026 filing/payment rules; no unissued 2027 deadline is inferred. [2026 assessment information][assessment]; [Article 59][law]
+**Keep years separate.** A return labelled 2026 ordinarily reports **2025 income**. The official 2026 assessment page expressly uses that pairing. This skill distinguishes the current 2026 income computation from confirmed 2026 filing/payment rules; no unissued 2027 deadline is inferred. [2026 assessment information][assessment]; [Article 59][law]
 
 ## Rates, bands and thresholds
 
@@ -58,7 +57,10 @@ Amounts are ISK. The rates below concern the ordinary statutory computation, bef
 | Financial activities remuneration tax | 5.5% of the supported Articles 4–5 base, including employer pension contributions before applicable exclusions | [Act 165/2011, Articles 4–6][fat-law]; [2026 employer notice][fat-notice] |
 | Additional financial activities income tax | 6% of the applicable stand-alone base above 1,000,000,000, without group taxation or brought-forward losses | [Income Tax Act Article 71(3)][law] |
 | Special tax on financial institutions' liabilities | 0.145% of the applicable year-end tax-return liabilities above 50,000,000,000, subject to the Act's own scope and exceptions | [Act 155/2010, Articles 2–4][bank-law] |
-| 2026 assessment-year advances | 8.5% of 2025 assessed public levies at each due date; current guidance describes eight February–September payments totalling 68% | [Regulation 1370/2025, Articles 1–2][payment-reg]; [Advance-tax guidance][advances] |
+| 2026 assessment-year advances | 8.5% of 2025 assessed public levies at each due date; eight February–September payments totalling 68% | [Regulation 1370/2025, Articles 1–2][payment-reg]; [Advance-tax guidance][advances] |
+| 2026 assessment balance (2025 income) | Spread over two due dates, 1 November and 1 December 2026; no instalment below ISK 5,000 | [Article 112(1), (4)][law]; [2026 legal-entity assessment][assessment] |
+| Return deadline, 2025 income filed in 2026 | 31 May 2026; extension for professional preparers up to 21 September 2026 | [2026 filing notice][filing-notice]; [Article 93][law] |
+| Assessment complaint period, legal entities | One month from the assessment announcement; for the 2026 assessment it ends 30 November 2026 | [Article 99][law]; [2026 legal-entity assessment][assessment] |
 
 The three financial-sector charges in the table are separate computations; the method below establishes their scope, bases and reconciliation. It does not cover every regulatory charge or transaction-specific financial instrument. The 2024 exceptional 21%/38.4% ordinary rates in transitional provision LXXVI do not replace the 2026 rates. [Article 71(3), transitional provision LXXVI][law]
 
@@ -102,7 +104,7 @@ Keep higher-rate entities' Article 71(3) dividend treatment separate. Do not ass
 
 For a calendar 2026 computation, the ordinary preceding-ten-year window covers **2016–2025**, subject to adequate original reporting, unused balances and the change-of-ownership/business rules. A 2015 vintage is outside that ordinary window. Retain origin, opening balance, prior use, eligible amount used now and closing balance for each vintage. Article 31(8) restricts use after material business/activity changes unless the ordinary-business-purpose condition is established; age alone is insufficient. [Article 31(8)][law]
 
-Separate share-loss restrictions, foreign CFC losses and pre-group losses. Mergers/splits also require Article 54's loss-transfer conditions; unused losses do not automatically follow a purchase or reorganisation. This Guide supplies no loss carryback claim. [Articles 31(9a), 54–55, 57a][law]
+Separate share-loss restrictions, foreign CFC losses and pre-group losses. Mergers/splits also require Article 54's loss-transfer conditions; unused losses do not automatically follow a purchase or reorganisation. Article 31(8) only allows losses of the ten preceding years against current income; the Act has no loss carryback. [Articles 31(9a), 54–55, 57a][law]
 
 ### 6. Group taxation and related-party finance
 
@@ -132,7 +134,7 @@ allowed = min(pool, 100,000,000) + min(excess_pool, statutory_profit × 30%)
 disallowed = pool − allowed
 ```
 
-A loss/negative statutory-profit case needs a documented local interpretation before a final calculation; this positive-profit control does not resolve that boundary.
+This control is for a positive statutory profit only. A zero or negative statutory profit is not covered here (see "Not yet confirmed" in Sources).
 
 ### 8. Controlled foreign holdings
 
@@ -144,9 +146,9 @@ Test the exceptions from evidence: a qualifying treaty/information-exchange case
 
 The substance file addresses actual premises/equipment, local management and staff, their decision-making authority and expertise, local economic connections and demonstrable value from intragroup services. For the Article 7 outside-EEA/EFTA/Faroe exception, establish the information-access agreement and that more than half of income arises from genuine business. For the within-area exception, prove genuine activity and the required information access/disclosure. A registered-office service or treaty listing alone does not settle these tests. [Regulation, Articles 6–7](https://files.reglugerd.is/pdf/1102-2013/current); [Article 57a][law]
 
-If taxable, allocate the Icelandic-rule profit to the supported ownership share. Keep losses by **owner, foreign entity and origin year**: only proved losses arising during that owner's holding period, verified at year end, offset that owner's later share of the same entity's profit. The regulation excludes pre-2010 losses, permits a ten-year period and does not transfer the unused owner loss to a buyer. Keep distributions and previously taxed inclusions in a separate roll-forward; only the specified excess distribution is taxable again. Any underlying or distribution-level foreign-tax relief needs its own legal basis and claim. [Regulation, Articles 8–9](https://files.reglugerd.is/pdf/1102-2013/current)
+If taxable, allocate the Icelandic-rule profit to the supported ownership share. Keep losses by **owner, foreign entity and origin year**: only proved losses arising during that owner's holding period, confirmed at year end, offset that owner's later share of the same entity's profit. The regulation excludes pre-2010 losses, permits a ten-year period and does not transfer the unused owner loss to a buyer. Keep distributions and previously taxed inclusions in a separate roll-forward; only the specified excess distribution is taxable again. Any underlying or distribution-level foreign-tax relief needs its own legal basis and claim. [Regulation, Articles 8–9](https://files.reglugerd.is/pdf/1102-2013/current)
 
-**Reporting.** Skatturinn specifies an Icelandic identifier for the CFC, applied for through RSK 17.90 if needed; the annual entity report RSK 4.24 with accounts; and each owner's RSK 4.25 with the owner's return. Multiple Icelandic owners coordinate the entity report. Current general guidance describes the entity report as a paper form and owner reporting as electronically available; confirm the accepted current-year route before submission. Do not substitute a foreign annual report for both filings. [CFC reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/cfc-felog/)
+**Reporting.** Skatturinn specifies an Icelandic identifier for the CFC, applied for through RSK 17.90 if needed; the annual entity report RSK 4.24 with accounts; and each owner's RSK 4.25 with the owner's return. Multiple Icelandic owners agree who files the entity report. RSK 4.24 exists only as a paper form (not in electronic filing); RSK 4.25 is filed electronically as an attachment to the owner's return. Do not substitute a foreign annual report for both filings. [CFC reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/cfc-felog/)
 
 The regulation reproduction says the official Gazette prevails if texts differ. Read it with the current Article 57a, not as authority to override later legislation.
 
@@ -230,7 +232,7 @@ Compare assessment with the return, tax calculation and payment ledger. Article 
 
 ### R&D approval and claim records
 
-New-project applications reach Rannís by **1 October** for the application year; ordinary extensions are due by **1 April**, with no more than three extensions of the same project. Keep submission receipts, cost/work plans, business plan, staff expertise, funding and collaboration evidence. The dated 2026 notice specified **1 October 2026 at 23:59 Icelandic time** through Rannís's electronic system; that deadline had passed at this Guide's research date. Do not assume an unsubmitted 2026 application can be created retrospectively. [Articles 4–5 and 9][rd-law]; [20 August 2026 notice][rd-notice]
+New-project applications reach Rannís by **1 October** for the application year; ordinary extensions are due by **1 April**, with no more than three extensions of the same project. Keep submission receipts, cost/work plans, business plan, staff expertise, funding and collaboration evidence. The dated 2026 notice specified **1 October 2026 at 23:59 Icelandic time** through Rannís's electronic system; that deadline has passed at this skill's review date. Do not assume an unsubmitted 2026 application can be created retrospectively. [Articles 4–5 and 9][rd-law]; [20 August 2026 notice][rd-notice]
 
 The 2026 amendment permits the stated small-company two-year approval with both years' plans and a first-year progress report. Obtain the actual approval rather than treating every small project as automatically covered for two years. Current statutory processing time is **three months**; the older regulation reproduction still says two months, so do not promise that older interval. Approval does not settle the tax authority's cost/aid calculation. [Articles 8–9][rd-law]; [Amendment, Articles 4–5][rd-amendment]; [Handbook, pages 3 and 6–8][rd-handbook]
 
@@ -242,21 +244,23 @@ For remuneration tax, Act 165/2011 Article 7 requires notification **at least ei
 
 The Act gives separate annual due dates for specified benefit/non-withheld amounts: **1 June for individuals and 1 November for legal entities**, with final payment one month later. This is not permission to defer ordinary monthly remuneration tax. Correct an omission by the original payment periods under Article 11 rather than assigning all arrears to the annual date. Confirm applicable calendar shifts and the issued notice. [Act 165/2011, Articles 10–11][fat-law]
 
-For the **2026 assessment on 2025 income/year-end liabilities**, Regulation 1370/2025 Article 2 expressly includes additional financial activities tax and bank-liability tax alongside ordinary CIT in the advance public levies. The authority describes eight 8.5% advances and settlement against the assessment. Keep those payment-year credits separate from the 2026-income computation; do not reuse the 2012 launch notice's transitional advance timetable or infer the unissued 2027 timetable. The existing final-date conflict and reduction conditions below remain relevant. [Regulation, Articles 1–4][payment-reg]; [Advance guidance][advances]; [2026 assessment][assessment]
+For the **2026 assessment on 2025 income/year-end liabilities**, Regulation 1370/2025 Article 2 expressly includes additional financial activities tax and bank-liability tax alongside ordinary CIT in the advance public levies. The authority describes eight 8.5% advances and settlement against the assessment. Keep those payment-year credits separate from the 2026-income computation; do not reuse the 2012 launch notice's transitional advance timetable or infer the unissued 2027 timetable. The final-date and reduction rules below apply. [Regulation, Articles 1–4][payment-reg]; [Advance guidance][advances]; [2026 assessment][assessment]
 
 ### Restructuring dates and return evidence
 
 For an Article 54 merger/split, retain the effective date under the approved documents and the corresponding operation/return cut-off. The current rule requires the start date to fall **within the income year** and approval in **all participating companies in that year**; do not apply an old unrestricted backdating assumption. Reconcile the transferor/recipient returns and loss/asset schedules to those dates. [Article 54(2), as amended in 2023][law]
 
-For the domestic Article 56 route, Skatturinn specifies **formation by 30 April** and delivery of formation documents to the company registry **by 30 June of the same year**. June is the document-lodging deadline, not an extension of the four-month balance-sheet condition. The 2026 dates have already passed at this research date. Include the audited opening balance and transfer declaration with the first company return, and retain the formation/registration evidence, tax-cost roll-forward, owner-drawings confirmation and continuing pretransfer-liability record. Confirm the applicable year's accepted forms before submission. [Article 56][law]; [Regulation, Articles 3–5][incorp-reg]; [Current registry guidance][incorp-guidance]
+For the domestic Article 56 route, Skatturinn specifies **formation by 30 April** and delivery of formation documents to the company registry **by 30 June of the same year**. June is the document-lodging deadline, not an extension of the four-month balance-sheet condition. The 2026 dates have passed at this skill's review date. Include the audited opening balance and transfer declaration with the first company return, and retain the formation/registration evidence, tax-cost roll-forward, owner-drawings confirmation and continuing pretransfer-liability record. Confirm the applicable year's accepted forms before submission. [Article 56][law]; [Regulation, Articles 3–5][incorp-reg]; [Current registry guidance][incorp-guidance]
 
 ### Payment-year reconciliation
 
-Regulation 1370/2025 governs **2026 payments towards the 2026 assessment on 2025 income**. Each pre-assessment payment is 8.5% of 2025 assessed public levies; current guidance describes eight equal February–September payments totalling 68%. Reconcile actual notices, reductions and payments rather than treating advances as a tax expense or calling them payments against 2026 trading profit. The regulation also has an ISK 5,000 collection minimum per due date. [Regulation, Articles 1–2][payment-reg]; [Advance guidance][advances]
+Regulation 1370/2025 governs **2026 payments towards the 2026 assessment on 2025 income**. Each pre-assessment payment is 8.5% of 2025 assessed public levies, on eight due dates from 1 February to 1 September, totalling 68%. For legal entities the advances cover income tax, the additional financial activities tax and the bank-liability tax. Reconcile actual notices, reductions and payments rather than treating advances as a tax expense or calling them payments against 2026 trading profit. No amount below ISK 5,000 is collected on a due date. [Regulation, Articles 1–2][payment-reg]; [Article 112(1)][law]; [Advance guidance][advances]
 
-Article 112 allocates the assessed balance, after the stated advances/credits, across remaining due dates. Do not promise two identical November/December instalments without checking the actual assessment and prior payments. **Final-date discrepancy:** Article 112(1)'s ordinary wording is the month's last business day, whereas Regulation 1370/2025 Article 1 and the guidance say one month after due date. Preserve the issued payment notice and obtain a documented resolution where dates differ; this draft does not silently treat them as identical. [Articles 112, 114][law]; [Regulation, Articles 1–4][payment-reg]
+Legal-entity due dates are the first of every month except January and October, the month in which legal-entity assessment is completed. Article 112(4) spreads the assessed balance, after advances and credits, in nearly equal payments over the remaining due dates of the year; for the 2026 assessment Skatturinn states these are **1 November and 1 December 2026**. A taxpayer may ask, when filing and before assessment, to pay the balance in one sum on the first due date after assessment. Partial nonpayment brings all the year's taxes to their final date one month after the missed due date, but not earlier than one month after assessment. [Article 112(1), (4)–(5)][law]; [2026 legal-entity assessment][assessment]
 
-For a requested advance reduction, Regulation 1370/2025 Article 6 says the relevant 2025 bases are **more than 25%** below 2024; the authority's general guidance instead says **at least 25%**, adds an ISK 100,000 tax reduction and describes a 31 May application deadline. Exactly 25% and the applicable year's notice require resolution before assuming eligibility. A request does not itself reduce the amount due. [Regulation, Articles 5–7][payment-reg]; [Advance guidance][advances]
+**Final date (eindagi).** Article 112(1) sets the final date as the last business day of the month; Regulation 1370/2025 Article 1 and Skatturinn's advance page state one month after the due date. The statute controls. Paying by the last business day of the due-date month meets both. Late-payment interest under Article 114 runs where tax is not paid within a month of the due date. [Articles 112, 114][law]; [Regulation, Articles 1 and 4][payment-reg]
+
+For a requested advance reduction, Regulation 1370/2025 Article 6 requires the relevant 2025 bases to be **more than 25%** below 2024, unless Skatturinn finds special circumstances. Under the further rules Article 6(2) lets it set, Skatturinn also requires the assessed levies to fall by at least ISK 100,000, proof by filing the return and accounts, and an application by 31 May. Skatturinn's page says "at least 25%"; the regulation's "more than 25%" controls, so a fall of exactly 25% does not meet it. A request does not itself reduce the amount due. [Regulation, Articles 5–7][payment-reg]; [Advance guidance][advances]
 
 ## Penalties and interest
 
@@ -273,13 +277,13 @@ Article 114 links assessment late interest to the Central Bank rate. Regulation 
 
 For R&D overstatement, Article 12 permits a **25% surcharge on the reduction of the credit**, not 25% of all project costs. Its no-fault and criminal-case exceptions must be considered; this is not an automatic charge in every correction. Article 5 permits approval revocation for materially false/misleading application information, reaching the current and preceding two income years. False/fabricated claims also require the separate Article 15a criminal-law analysis. [Articles 5, 12 and 15a][rd-law]
 
-For remuneration tax unpaid by the monthly final date, Act 165/2011 Articles 8 and 11 provide default interest from the original due date. Article 9 imports the Withholding Act only as applicable and **expressly excludes Article 28(2)(1)'s daily surcharge**. Do not add the ordinary PAYE 1%-per-day/10%-cap charge to this tax. Assessment/information/sanction rules also require Articles 10–13; criminal penalties are not an automatic payroll calculation. The bank-liability tax uses Act 155/2010 Article 5's separate reference to the Income Tax Act's assessment, collection and sanction chapters. [Act 165/2011, Articles 8–13][fat-law]; [Act 155/2010, Article 5][bank-law]
+For remuneration tax unpaid by the monthly final date, Act 165/2011 Articles 8 and 11 provide default interest from the original due date. Article 9 imports the Withholding Act only as applicable and **expressly excludes Article 28(2)(1)'s daily surcharge**. Do not add the ordinary PAYE daily late-payment surcharge under that provision to this tax. Assessment/information/sanction rules also require Articles 10–13; criminal penalties are not an automatic payroll calculation. The bank-liability tax uses Act 155/2010 Article 5's separate reference to the Income Tax Act's assessment, collection and sanction chapters. [Act 165/2011, Articles 8–13][fat-law]; [Act 155/2010, Article 5][bank-law]
 
 ## Cross-border points
 
-Resident worldwide income still needs treaty and foreign-tax-relief analysis. Article 119 permits an application-based reduction where no double-tax treaty exists and the statutory conditions apply; it is not automatic dollar-for-dollar credit. Use the [resident foreign-income relief workpaper](is-cross-border.md) for country/category matching, tax attribution and the conditional current-UK credit example. Other treaty-specific limitations and exemption methods still need the actual treaty analysis. Company/asset migration now has a statutory computation and payment workpaper in the [cross-border Guide](is-cross-border.md); do not treat a qualifying move as automatically tax-free. [Articles 2, 119][law]
+Resident worldwide income still needs treaty and foreign-tax-relief analysis. Article 119 permits an application-based reduction where no double-tax treaty exists and the statutory conditions apply; it is not automatic dollar-for-dollar credit. Use the [resident foreign-income relief workpaper](is-cross-border.md) for country/category matching, tax attribution and the conditional current-UK credit example. Other treaty-specific limitations and exemption methods still need the actual treaty analysis. Company/asset migration now has a statutory computation and payment workpaper in the [cross-border skill](is-cross-border.md); do not treat a qualifying move as automatically tax-free. [Articles 2, 119][law]
 
-For non-resident payments, preserve the [cross-border Guide](is-cross-border.md)'s distinctions: Article 70 national rates include 20% for the relevant company service/dividend categories, **22% for Article 3(6) royalties**, and **12% for taxable corporate interest**, before exclusions/treaty relief. Do not apply ordinary resident CIT to every gross cross-border receipt. [Articles 3, 70][law]
+For non-resident payments, preserve the [cross-border skill](is-cross-border.md)'s distinctions: Article 70 national rates include 20% for the relevant company service/dividend categories, **22% for Article 3(6) royalties**, and **12% for taxable corporate interest**, before exclusions/treaty relief. Do not apply ordinary resident CIT to every gross cross-border receipt. [Articles 3, 70][law]
 
 Screen foreign holdings under Article 57a, related-party transactions under Article 57, CbC reporting under Article 91a, and migration/restructuring under Articles 51–56a. These screens require their own evidence and computations. The R&D method above includes the foreign-supplier and foreign-public-aid screens; territory alone does not establish purchase eligibility. The stated financial-sector scope includes relevant foreign branches, but an actual branch still needs liability/attribution evidence. Other sector taxes/incentives, financial instruments and any applicable group minimum-tax regime still need their own applicability audit; this ordinary computation does not establish their absence.
 
@@ -362,7 +366,7 @@ expected:
 
 ### 4. Assessment-year cash reconciliation
 
-Assume 2025 assessed public levies of ISK 5 million, eight unreduced 2026 advances paid in full, and a 2026 assessment on 2025 income of ISK 3.6 million, with no other credits or charges. Each advance is **ISK 425,000**, total **ISK 3.4 million**, leaving **ISK 200,000**. This is a payment reconciliation for the 2026 assessment cycle; it does not calculate tax on 2026 trading income or establish actual instalment dates. [Regulation, Articles 1–2][payment-reg]
+Assume 2025 assessed public levies of ISK 5 million, eight unreduced 2026 advances paid in full, and a 2026 assessment on 2025 income of ISK 3.6 million, with no other credits or charges. Each advance is **ISK 425,000**, total **ISK 3.4 million**, leaving **ISK 200,000**, payable as **ISK 100,000 on 1 November and ISK 100,000 on 1 December 2026** unless the company asked at filing to pay it in one sum. This is a payment reconciliation for the 2026 assessment cycle; it does not calculate tax on 2026 trading income. [Regulation, Articles 1–2][payment-reg]; [Article 112(4)][law]; [2026 legal-entity assessment][assessment]
 
 ```oa-check
 name: Iceland 2026 assessment advances and balance
@@ -371,14 +375,17 @@ inputs:
   instalment_rate: 0.085
   paid_instalments: 8
   assessment_2026: 3600000
+  remaining_due_dates: 2
 steps:
   each_advance: assessment_2025 * instalment_rate
   paid_advances: each_advance * paid_instalments
   assessment_balance: assessment_2026 - paid_advances
+  each_remaining_instalment: assessment_balance / remaining_due_dates
 expected:
   each_advance: 425000
   paid_advances: 3400000
   assessment_balance: 200000
+  each_remaining_instalment: 100000
 ```
 
 ### 5. Related-party financing, official positive-profit illustration
@@ -720,34 +727,37 @@ For professional review of the facts and workpapers, [contact OpenAccountants](h
 
 ## Sources
 
-Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, the negative-profit interest-cap boundary, CFC timing/substance disputes and foreign-relief cases outside the shared workpaper, other sector/incentive/minimum-tax applicability, disputed restructuring/valuation/loss cases and current filing-system verification remain open. The restructuring addition covers the stated domestic routes and their separate loss/basis/date controls; it does not resolve every atypical transaction or company-law procedure. The official linked procedure page retains historical rates and broad no-succession wording; current Article 56, Regulation 223/2003 and the current registry page control the conditional incorporation method. The financial-sector addition supplies the stated three-charge computation and reporting method; disputed classifications, foreign-branch attribution, reserve/winding-up exceptions and actual submission acceptance still need their evidence and independent review. The added R&D method uses the current 2026 amendment and August 2026 handbook; enterprise-size boundaries, overlapping aid/cost limits and accepted future-year claim forms require the stated evidence and independent review. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
+Income Tax Act text: Alþingi consolidated text 158a (1 October 2026 compilation). The reglugerd.is and island.is regulation reproductions state that the printed B-section of the Official Gazette prevails if the texts differ. Skatturinn's linked procedure page for sole-trade incorporation still shows historical rates; current Article 56, Regulation 223/2003 and the current registry page control the incorporation method. Example amounts are invented assumptions.
+
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act 90/2003, Articles 2–4, 7–8, 12–61, 70–71, 90–99, 108, 112–114, 119 | [Alþingi][law] | 2026-10-23 |
-| Skatturinn, corporate income tax | [Authority guidance][corporate] | 2026-10-23 |
-| Skatturinn, 2026 rates | [Current-year rate table][rates] | 2026-10-23 |
-| Skatturinn, 2026 assessment on 2025 income | [Assessment information][assessment] | 2026-10-23 |
-| Skatturinn, RSK 1.04 filing method | [Return instructions][return] | 2026-10-23 |
-| Skatturinn, 30 January 2026 corporate filing notice | [Filing notice][filing-notice] | 2026-10-23 |
-| Regulation 1370/2025, 2026 payment cycle | [Regulation][payment-reg] | 2026-10-23 |
-| Skatturinn, corporate advance-tax guidance | [Advance payments][advances] | 2026-10-23 |
-| Act 33/2020, Article 6, excess-interest wording | [Enacted amendment](https://www.althingi.is/altext/stjt/2020.033.html) | 2026-10-23 |
-| Bill 626/150, section 3.5, positive-profit interest calculation | [Official explanation](https://www.althingi.is/altext/150/s/0626.html) | 2026-10-23 |
-| CFC Regulation 1102/2013, computation, substance, losses and reports | [Regulation](https://files.reglugerd.is/pdf/1102-2013/current) | 2026-10-23 |
-| Skatturinn, CFC report and identifier requirements | [Reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/cfc-felog/) | 2026-10-23 |
-| Act 152/2009, current R&D entitlement, costs, credit, aid, procedure and sanctions | [Current statute][rd-law] | 2026-10-23 |
-| Act 27/2026, 2026 R&D procedural and purchased-cost amendments | [Enacted amendment][rd-amendment] | 2026-10-23 |
-| Regulation 758/2011, project costs, aid and debt setoff; older decision period distinguished | [Current reproduction][rd-reg] | 2026-10-23 |
-| Rannís, August 2026 application handbook, linked from the official grants portal | [Official handbook][rd-handbook] | 2026-10-23 |
-| Rannís, 20 August 2026 application notice | [Dated notice][rd-notice] | 2026-10-23 |
-| Skatturinn, published RSK 4.21 (2026 return) and RSK 4.22 (2025 label) | [4.21][rd-form]; [4.22][rd-coop-form] | 2026-10-23 |
-| European Commission, SME definition and group-data warning | [Definition][rd-sme] | 2026-10-23 |
-| Act 165/2011, financial remuneration tax scope, bases, exclusions, collection and deduction | [Current statute][fat-law] | 2026-10-23 |
-| Act 155/2010, bank-liability scope/base/rate and nondeductibility | [Current statute][bank-law] | 2026-10-23 |
-| Skatturinn, January 2026 employer notice, financial remuneration rate | [Dated notice][fat-notice] | 2026-10-23 |
-| Regulation 223/2003, sole-trade incorporation, audit, succession and continued tax/share bases | [Current reproduction][incorp-reg] | 2026-10-23 |
-| Skatturinn, current ehf. incorporation and sole-trade conversion dates | [Registry guidance][incorp-guidance] | 2026-10-23 |
-| Skatturinn, linked procedure page; historical rates/overbroad succession wording distinguished | [Procedure page][incorp-procedure] | 2026-10-23 |
+| Income Tax Act 90/2003, Articles 2–4, 7–8, 12–61, 70–71, 90–99, 108, 112–114, 119 and transitional provision LXXVI | https://www.althingi.is/lagas/nuna/2003090.html | 2026-10-30 |
+| Skatturinn, corporate income tax (tekjuskattur lögaðila) | https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tekjuskattur/ | 2026-10-30 |
+| Skatturinn, key figures and rates 2026 (helstu tölur 2026), legal-entity rates 20% / 37.6% | https://www.skatturinn.is/einstaklingar/helstutolur/2026 | 2026-10-30 |
+| Government of Iceland, 23 Dec 2025 note: tax changes in 2026 (no change to legal-entity income tax) | https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/23/Skattabreytingar-a-arinu-2026/ | 2026-10-30 |
+| Skatturinn, legal-entity assessment 2026 on 2025 income: rates, due dates, 1 Nov / 1 Dec balance, complaint deadline 30 Nov 2026 | https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/alagningarsedill-og-forsendur/2026/ | 2026-10-30 |
+| Skatturinn, RSK 1.04 business return (legal-entity version) | https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/skattframtal-rekstraradila/ | 2026-10-30 |
+| Skatturinn, 30 January 2026 notice: legal-entity returns 2026, deadline 31 May, extension to 21 September | https://www.skatturinn.is/um-rsk/frettir-og-tilkynningar/opnad-fyrir-skil-a-skattframtali-logadila-2026 | 2026-10-30 |
+| Regulation 1370/2025 on 2026 advance payments, Articles 1–9 | https://island.is/reglugerdir/nr/1370-2025 | 2026-10-30 |
+| Skatturinn, advance payment of public levies (fyrirframgreiðsla þinggjalda) and reduction conditions | https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/fyrirframgreidsla-thinggjalda/ | 2026-10-30 |
+| Act 33/2020, Article 6 (ISK 100 million slice in Article 57b) | https://www.althingi.is/altext/stjt/2020.033.html | 2026-10-30 |
+| Bill 626/150 explanatory notes, section 3.5 (220 / 80 million interest example) | https://www.althingi.is/altext/150/s/0626.html | 2026-10-30 |
+| CFC Regulation 1102/2013, Articles 2–10 | https://files.reglugerd.is/pdf/1102-2013/current | 2026-10-30 |
+| Skatturinn, CFC companies: RSK 17.90, RSK 4.24, RSK 4.25 | https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/cfc-felog/ | 2026-10-30 |
+| Act 152/2009 on support for innovation companies, Articles 2–5, 7–12, 15, 15a | https://www.althingi.is/lagas/nuna/2009152.html | 2026-10-30 |
+| Act 27/2026 amending Act 152/2009 (Articles 1–8, in force on adoption 27 March 2026) | https://www.althingi.is/altext/stjt/2026.027.html | 2026-10-30 |
+| Regulation 758/2011 on support for innovation companies, Articles 2–8 | https://files.reglugerd.is/pdf/0758-2011/current | 2026-10-30 |
+| Rannís, R&D tax deduction handbook (August 2026), pages 3, 6–8, 10–15 | https://assets.ctfassets.net/8k0h54kbe6bj/2RRCQujMqAjymTTMW8B5rb/5c12a20c7dcaf5b905f629c6805dcc57/6588aab1-6369-4453-9990-35a7c22eab13.pdf | 2026-10-30 |
+| Ísland.is, 20 August 2026 notice: R&D applications due 1 October 2026 at 23:59 | https://island.is/frett/opid-fyrir-nyjar-umsoknir-um-skattfradratt-vegna-rannsokna-og-throunarverkefna-a-arinu-2026 | 2026-10-30 |
+| Skatturinn, RSK 4.21 (2026 return) R&D cost statement | https://www.skatturinn.is/media/rsk04/rsk_0421_2026.is.pdf | 2026-10-30 |
+| Skatturinn, RSK 4.22 (2025 label) R&D cooperation statement | https://www.skatturinn.is/media/rsk04/rsk_0422_2025.is.pdf | 2026-10-30 |
+| European Commission, SME definition and group-data rule | https://single-market-economy.ec.europa.eu/smes/sme-fundamentals/sme-definition_en | 2026-10-30 |
+| Act 165/2011 on financial activities tax, Articles 2–15 | https://www.althingi.is/lagas/nuna/2011165.html | 2026-10-30 |
+| Act 155/2010 on special tax on financial institutions, Articles 2–6 | https://www.althingi.is/lagas/nuna/2010155.html | 2026-10-30 |
+| Skatturinn, RSK 6.01 employer notice January 2026 (financial activities tax 5.5%) | https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf | 2026-10-30 |
+| Regulation 223/2003 on sole-trade incorporation, Articles 1–8 | https://files.reglugerd.is/pdf/0223-2003/current | 2026-10-30 |
+| Skatturinn, ehf. formation and sole-trade transfer (30 April / 30 June) | https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/ | 2026-10-30 |
+| Skatturinn, procedure rules for ehf. formation (historical rates noted above) | https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/verklagsreglur | 2026-10-30 |
 
 [law]: https://www.althingi.is/lagas/nuna/2003090.html
 [corporate]: https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tekjuskattur/
@@ -774,3 +784,5 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regul
 [incorp-reg]: https://files.reglugerd.is/pdf/0223-2003/current
 [incorp-guidance]: https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/
 [incorp-procedure]: https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/verklagsreglur
+
+Not yet confirmed: how Article 57b applies where statutory profit (accounts profit plus income tax, finance items, depreciation and write-downs) is zero or negative; the body gives the positive-profit computation only. Not covered here: other sector taxes and incentives, foreign-branch attribution for the financial-sector taxes, reserve and winding-up exceptions to the bank-liability tax, atypical restructurings, and the 2027 filing and payment timetable for 2026 income, which Skatturinn has not yet published.
