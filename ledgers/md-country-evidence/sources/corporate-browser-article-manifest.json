@@ -2279,6 +2279,73 @@
           "claimed_full_attachment_verification": false
         }
       ]
+    },
+    "CORP-VEN12-INSTRUCTIONS-SELECTED-20261030": {
+      "article": "CORP-VEN12-INSTRUCTIONS-SELECTED-20261030",
+      "official_url": "https://sfs.md/uploads/blank/210/document/instructiunepdf-6761280a94279.pdf",
+      "sha256": "4b8a71a4a82e946429b1d4f823e16534b560cc4925f606985e558dde6d9fb883",
+      "read_date": "2026-10-30",
+      "observed_utc": "2026-10-30T22:15:09.626880+00:00",
+      "format": "Selected actual text returned by official-PDF web parser; source-line indices retained below; not a PDF binary, visual rendering, complete 705-line extraction or portal test",
+      "source_line_ranges": [
+        [
+          0,
+          26
+        ],
+        [
+          56,
+          171
+        ],
+        [
+          240,
+          278
+        ],
+        [
+          343,
+          365
+        ],
+        [
+          415,
+          474
+        ],
+        [
+          629,
+          660
+        ]
+      ],
+      "source_total_lines_reported": 705,
+      "selection_status": "Only the explicitly read ranges are retained. Consolidation includes current TP rows02020/03047 and revised instruction74; its S-election2023-2025 and personal-relief360000 text are historical and are not adopted for2026.",
+      "transport_note": "Literal URL open inaccessible; initial indexed search reference returned the actual210-document text. Reopening view reference misleadingly redirected to an older188-document; that different745-line body is excluded entirely.",
+      "source_response_files_private": [
+        "validation/ven12-instructions-web-selected.txt",
+        "validation/ven12-instructions-web-initial.txt"
+      ],
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    "CORP-VEN12-FORM-SELECTED-20261030": {
+      "article": "CORP-VEN12-FORM-SELECTED-20261030",
+      "official_url": "https://www.sfs.md/uploads/blank/210/document/formularpdf-67612806009d2.pdf",
+      "sha256": "48fa5c80f831cc5d0f000347c6a851b996e48e3056cec39e7eb41518a4bd02dd",
+      "read_date": "2026-10-30",
+      "observed_utc": "2026-10-30T22:18:14.926567+00:00",
+      "format": "Selected actual official-PDF parser text, including HTML table transcription; no downloaded binary, visual PDF verification or portal test",
+      "source_line_ranges": [
+        [
+          30,
+          62
+        ],
+        [
+          69,
+          90
+        ],
+        [
+          156,
+          195
+        ]
+      ],
+      "source_total_lines_reported": 481,
+      "selection_status": "Main reconciliation and annex1D/2D signed-column headings, cash-donation/undocumented-expense rows read. Not a complete form. Inactive legacy annex1.2D text and old representation rows are controlled by actual current completion instructions, not used as tax rules.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
     }
   }
 }

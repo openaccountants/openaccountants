@@ -1,0 +1,163 @@
+{
+  "status": "PASS: five ordinary-return/representation arithmetic controls; independent legal review PENDING",
+  "read_date": "2026-10-30",
+  "scope": "Ordinary resident SRL, cash-only eligible philanthropic/sponsorship costs and ordinary article24(10) expense; no special noncash/food, deferral or rounding rule certified",
+  "cases": [
+    {
+      "case": "Both caps bind; signed addback, loss deduction and two payment categories",
+      "assumed_inputs": {
+        "profit": 900000,
+        "cash": 100000,
+        "undocumented": 10000,
+        "loss_allowed": 57480,
+        "foreign_credit": 8000,
+        "instalments": 80000,
+        "dividend_advance": 10000
+      },
+      "expected": {
+        "expense_adjustment": -110000,
+        "row040": 1010000,
+        "row050": 50500,
+        "row060": 2020,
+        "row070": 957480,
+        "row080": 57480,
+        "row090": 900000,
+        "row120": 108000,
+        "row190": 10000,
+        "row200": 0
+      },
+      "actual": {
+        "expense_adjustment": "-110000",
+        "row040": "1010000",
+        "row050": "50500.00",
+        "row060": "2020.000",
+        "row070": "957480.000",
+        "row080": "57480",
+        "row090": "900000.000",
+        "row100": "0",
+        "row120": "108000.00000",
+        "row150": "108000.00000",
+        "row160": "8000",
+        "row170": "100000.00000",
+        "row180": "90000",
+        "row190": "10000.00000",
+        "row200": "0"
+      },
+      "status": "PASS ARITHMETIC ONLY; legal assumptions await independent review"
+    },
+    {
+      "case": "Actual costs below both caps; excess payment is separate from tax loss",
+      "assumed_inputs": {
+        "profit": 900000,
+        "cash": 5000,
+        "undocumented": 500,
+        "loss_allowed": 0,
+        "foreign_credit": 0,
+        "instalments": 110000,
+        "dividend_advance": 0
+      },
+      "expected": {
+        "expense_adjustment": -5500,
+        "row040": 905500,
+        "row050": 5000,
+        "row060": 500,
+        "row070": 900000,
+        "row090": 900000,
+        "row120": 108000,
+        "row100": 0,
+        "row190": 0,
+        "row200": 2000
+      },
+      "actual": {
+        "expense_adjustment": "-5500",
+        "row040": "905500",
+        "row050": "5000",
+        "row060": "500",
+        "row070": "900000",
+        "row080": "0",
+        "row090": "900000",
+        "row100": "0",
+        "row120": "108000.00",
+        "row150": "108000.00",
+        "row160": "0",
+        "row170": "108000.00",
+        "row180": "110000",
+        "row190": "0",
+        "row200": "2000.00"
+      },
+      "status": "PASS ARITHMETIC ONLY; legal assumptions await independent review"
+    },
+    {
+      "case": "Negative row040; no capped deductions or carried loss use; tax loss and overpayment coexist",
+      "assumed_inputs": {
+        "profit": -20000,
+        "cash": 5000,
+        "undocumented": 500,
+        "loss_allowed": 10000,
+        "foreign_credit": 0,
+        "instalments": 2000,
+        "dividend_advance": 0
+      },
+      "expected": {
+        "row040": -14500,
+        "row050": 0,
+        "row060": 0,
+        "row070": 0,
+        "row080": 0,
+        "row090": 0,
+        "row100": 14500,
+        "row120": 0,
+        "row190": 0,
+        "row200": 2000
+      },
+      "actual": {
+        "expense_adjustment": "-5500",
+        "row040": "-14500",
+        "row050": "0.00",
+        "row060": "0.000",
+        "row070": "0",
+        "row080": "0",
+        "row090": "0",
+        "row100": "14500.000",
+        "row120": "0.00",
+        "row150": "0.00",
+        "row160": "0",
+        "row170": "0.00",
+        "row180": "2000",
+        "row190": "0",
+        "row200": "2000.00"
+      },
+      "status": "PASS ARITHMETIC ONLY; legal assumptions await independent review"
+    },
+    {
+      "case": "Representation cap binds",
+      "assumed_statutory_gross_income": 2000000,
+      "assumed_eligible_costs_after_gift_sublimits": 18000,
+      "row03043_column4": "15000.0000",
+      "row03045_column4": 18000,
+      "row03046_column4": "15000.0000",
+      "annex2D_row0304_column4": "-3000.0000",
+      "legacy_rows_030431_030432_03044": "NOT COMPLETED",
+      "status": "PASS ARITHMETIC ONLY; eligibility assumptions await independent review"
+    },
+    {
+      "case": "Representation cap does not bind",
+      "assumed_statutory_gross_income": 2000000,
+      "assumed_eligible_costs_after_gift_sublimits": 10000,
+      "row03043_column4": "15000.0000",
+      "row03045_column4": 10000,
+      "row03046_column4": "10000",
+      "annex2D_row0304_column4": "0",
+      "legacy_rows_030431_030432_03044": "NOT COMPLETED",
+      "status": "PASS ARITHMETIC ONLY; eligibility assumptions await independent review"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-FORM-SELECTED-20261030.json": "59e584fc96b37d916f4e272e1a4ad2eb6adb74f92d731e4865839d8c069cdb24",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-INSTRUCTIONS-SELECTED-20261030.json": "c03220153b7e99ff7593a7172a7c919205ec1faae5ccde1d0374506cf9aae931",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-DEDUCTIONS.json": "31d08d258b7555513ef22c1a9607689464c0b5c95a5ab8160244bb3154a04ad6"
+  },
+  "Guide_path": "skills/international/moldova/md-corporate-income-tax.md",
+  "Guide_sha256": "5e504aa5824ae994244329f1cfa2691844e8841daf03ef583403d54a0d05ad5d",
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+}
