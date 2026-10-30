@@ -18,7 +18,7 @@ This skill covers income tax on resident individuals in the Isle of Man for the 
 
 Read [im-non-resident-income-tax](im-non-resident-income-tax.md) for individuals who are not resident, [im-payroll-social](im-payroll-social.md) for ITIP payroll deductions and National Insurance, [im-corporate-income-tax](im-corporate-income-tax.md) for companies and [isle-of-man-vat](../isle-of-man/isle-of-man-vat.md) for VAT.
 
-**What changed for 2026/27.** Budget 2026 (17 February 2026, Practice Note PN 227/26) raised the personal allowance from GBP 14,750 to GBP 17,000 (GBP 29,500 to GBP 34,000 for a jointly assessed couple), the TT Homestay Allowance from GBP 2,350 to GBP 2,500 and the nursing expenses limit from GBP 12,500 to GBP 15,000. The 10% and 21% rates, the GBP 6,500 / GBP 13,000 threshold, the taper and the GBP 220,000 tax cap are unchanged.
+**What changed for 2026/27.** On 17 February 2026 Tynwald resolved under section 119 of the Income Tax Act 1970 that the section 35 personal allowance is GBP 17,000 for an individual and GBP 34,000 for spouses or civil partners, for the year starting 6 April 2026 and later years (up from GBP 14,750 and GBP 29,500). Budget 2026 (Practice Note PN 227/26) also raised the TT Homestay Allowance from GBP 2,350 to GBP 2,500 (SD 2026/0036) and the nursing expenses limit from GBP 12,500 to GBP 15,000 (SD 2026/0035). The 10% and 21% rates, the GBP 6,500 / GBP 13,000 threshold, the taper and the GBP 220,000 tax cap are unchanged.
 
 ## Who this applies to
 
@@ -34,9 +34,9 @@ Read [im-non-resident-income-tax](im-non-resident-income-tax.md) for individuals
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
-| Personal allowance, single | GBP 17,000 | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ ; PN 227/26 |
+| Personal allowance, single | GBP 17,000 | 2026/27 | ITA 1970 s.35 as varied by Tynwald resolution under s.119, 17 February 2026 (Hansard, item 6); rates page https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ ; PN 227/26 |
 | Personal allowance, jointly assessed couple | GBP 34,000 | 2026/27 | same |
-| Allowance taper | reduced by GBP 1 for every GBP 2 of total income above GBP 100,000 (GBP 200,000 joint); nil at GBP 134,000 (GBP 268,000 joint) | 2026/27 | same; Budget 2026 page; ITA 1970 s.35(11), (12) |
+| Allowance taper | reduced by GBP 1 for every GBP 2 of total income above GBP 100,000 (GBP 200,000 joint); nil at GBP 134,000 (GBP 268,000 joint) | 2026/27 | ITA 1970 s.35(3), (4); rates page; Budget 2026 page |
 | Lower (standard) rate | 10% on the first GBP 6,500 of taxable income (GBP 13,000 joint) | 2026/27 | rates page; PN 227/26 |
 | Higher rate | 21% on taxable income above the threshold | 2026/27 | rates page; PN 227/26 |
 | Single parent additional allowance | GBP 6,400 | 2026/27 | rates page; PN 227/26 |
@@ -45,13 +45,13 @@ Read [im-non-resident-income-tax](im-non-resident-income-tax.md) for individuals
 | Mortgage and loan interest limit | GBP 5,000 (doubled for a jointly assessed couple) | 2026/27 | rates page |
 | Charitable donations limit | GBP 7,000 | 2026/27 | rates page |
 | Private medical insurance limit | GBP 1,800 | 2026/27 | rates page |
-| Nursing expenses limit | GBP 15,000 | 2026/27 | rates page; PN 227/26 |
+| Nursing expenses limit | GBP 15,000 | 2026/27 | ITA 1970 s.39AA(1), sum prescribed by SD 2026/0035; rates page; PN 227/26 |
 | Benefit in kind exemption (not car benefit) | GBP 600 | 2026/27 | rates page |
-| TT Homestay Allowance | GBP 2,500 | 2026/27 | rates page; PN 227/26 |
+| TT Homestay Allowance | GBP 2,500 | 2026/27 | ITA 1970 s.58AA as amended by SD 2026/0036; rates page; PN 227/26 |
 | Income tax cap (election) | GBP 220,000 individual; GBP 440,000 jointly assessed couple | elections from 2025/26 onwards | ITA 1970 s.2ZB(1A); rates page |
 | Payment on account factor | 105% of the previous year's liability less tax deducted at source | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/payment-on-account/ |
 | Late return penalties | GBP 100; a further GBP 200 if still outstanding 6 months after the due date | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/income-tax-returns-and-penalties/ |
-| Late payment interest | 5% | as stated on 30 October 2026 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/personal-tax/personal-tax-frequently-asked-questions/ |
+| Late payment interest | 5% (the prescribed rate under ITA 1970 s.111A) | as stated on 30 October 2026 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/personal-tax/personal-tax-frequently-asked-questions/ |
 
 ## The base
 
@@ -61,7 +61,7 @@ Income tax is charged on income from property, professions, trade, employment, p
 
 ### Step 2: personal allowance and taper
 
-Deduct GBP 17,000 (GBP 34,000 for a jointly assessed couple). If total income exceeds GBP 100,000 (GBP 200,000 joint), reduce the allowance by half the excess, rounding a remaining deduction up to the nearest pound (s.35(11), (12), (14); rates page). In the year residence starts or ends, the allowance is apportioned by time resident, and the GBP 100,000 / GBP 200,000 taper starting points are reduced pro rata (s.35(13); Receiving Isle of Man source income page).
+Deduct GBP 17,000 (GBP 34,000 for a jointly assessed couple) (s.35(1), (2) as varied by the 17 February 2026 resolution). If total income exceeds GBP 100,000 (GBP 200,000 joint), reduce the allowance by half the excess, rounding a remaining deduction up to the nearest pound (s.35(3), (4), (6); rates page). In the year residence starts or ends, the allowance is apportioned by time resident, and the GBP 100,000 / GBP 200,000 taper starting points are reduced pro rata (s.35(5); Receiving Isle of Man source income page). Subsection numbers here follow the section's own cross-references and the 2026 resolution; the consolidated text [62] prints the same subsections as (9) to (14).
 
 Add any additional allowance the person qualifies for: single parent or eligible co-habiting couple with a child (GBP 6,400), blind person or disabled person (GBP 2,900) (rates page; Tax relief page; return guides GN1 and GN1S).
 
@@ -77,7 +77,7 @@ Other deductions listed by the Division are personal pension contributions, supe
 
 ### Step 5: tax cap
 
-A resident may elect for income tax to be capped at GBP 220,000 a year (GBP 440,000 for a jointly assessed couple) for five or ten consecutive tax years (s.2ZA(1), s.2ZB(1A)). The Assessor approves an election only if the tax otherwise payable in each year would exceed the cap (s.2ZA(3)). An election received on or before 5 April applies from the following 6 April. A new resident may elect within 60 days of starting residence for the rest of that year plus four (or nine) further years (s.2ZA(5), (6)). The cap amount for every year of an election is the amount that applied in its first year, and the full cap is payable each year even if actual tax would be lower (GN 51 paras 3.2 and 4.3). Where the election turns out to have cost more tax over its whole period than no election, the individual may apply to be assessed as if it had not been made (s.2ZA(10), (11)). The election is made in writing to the Assessor, or on form R264 (s.2ZA(2); GN 51 para 4.2). An approved election does not remove the duty to file the annual return (s.2ZA(9)).
+A resident may elect for income tax to be capped at GBP 220,000 a year (GBP 440,000 for a jointly assessed couple) for five or ten consecutive tax years (s.2ZA(1), s.2ZB(1A)). The Assessor may approve an election if satisfied that the tax otherwise payable in each year of the election would exceed the cap (s.2ZA(3)). An election received on or before 5 April applies from the following 6 April. A new resident may elect within 60 days of starting residence for the rest of that year plus four (or nine) further years (s.2ZA(5), (6)). The cap amount for every year of an election is the amount that applied in its first year, and the full cap is payable each year even if actual tax would be lower (GN 51 paras 3.2 and 4.3). Where the election turns out to have cost more tax over its whole period than no election, the individual may apply to be assessed as if it had not been made (s.2ZA(10), (11)). The election is made in writing to the Assessor, or on form R264 (s.2ZA(2); GN 51 para 4.2). The cap amount is due on 6 January in each year of the election, unless the Assessor allows it to be paid through ITIP (s.2ZC(1), (3)). An approved election does not remove the duty to file the annual return (s.2ZA(9)).
 
 ### Step 6: credits
 
@@ -85,7 +85,7 @@ Deduct tax already paid through ITIP (payroll), subcontractor deductions, paymen
 
 ## Deadlines and filing
 
-- **Return.** Returns are issued shortly after 5 April and are due by 6 October following the end of the tax year (s.62(1); Income tax returns and penalties page). For 2026/27 the return is due by 6 October 2027. A person served with a notice must make a return within 6 months of service (s.62(4)). File online through Online Tax Services or on paper at the Income Tax Division, Government Offices, Bucks Road, Douglas. Both members of a jointly assessed couple sign the return.
+- **Return.** Returns are issued shortly after 5 April. The Act requires the return to be delivered before 6 October following the end of the tax year (s.62(1)); the Division's pages give the date as 6 October (Income tax returns and penalties page). For 2026/27, file by 5 October 2027 to meet the Act's wording. A person served with a notice must make a return within 6 months of service (s.62(4)). File online through Online Tax Services or on paper at the Income Tax Division, Government Offices, Bucks Road, Douglas. Both members of a jointly assessed couple sign the return.
 - **Suspension.** A person whose income is consistently below the personal allowance may have the duty to file suspended by letter from the Division (Income tax returns and penalties page).
 - **Payment.** The statutory due date is 6 January following the tax year (6 January 2028 for 2026/27). Tax is due 30 days after the assessment where the assessment is issued after 6 December following the tax year, or when the person has left the Island or died (GN3 section 5.1; FAQ page).
 - **Payment on account.** A person whose previous-year liability was not settled by ITIP or subcontractor deductions (for example rent, bank interest, dividends, non-Manx pensions or self-employment) receives a payment-on-account notice at 105% of that liability less tax at source. It is due on 6 January in the tax year it relates to (6 January 2027 for 2026/27), or within 30 days if raised later. A person may apply to postpone part of it; interest runs from the original due date on any postponed amount that proves to be due (Payment on account page; GN3).
@@ -96,12 +96,12 @@ Deduct tax already paid through ITIP (payroll), subcontractor deductions, paymen
 
 - **Late return:** GBP 100 if the return is not in by the due date, and a further GBP 200 if it is still outstanding 6 months after the due date. Paying the penalty does not remove the duty to file (Income tax returns and penalties page). For a leaver the GBP 100 applies if the return is not in within 6 months of departure and the further GBP 200 if not in within 12 months (Leaving the Island page).
 - **Default assessment:** if no return is made, the Division raises an assessment on best judgement from previous assessments and third-party information; any refund waits until the return is filed (Assessments page).
-- **Late payment interest:** charged from the day after the due date to the day before payment; the Division states the rate as currently 5% (GN3 section 7; FAQ page).
+- **Late payment interest:** tax charged by an assessment carries interest at the prescribed rate from the relevant date until payment (s.111A(1)). For a payment on account not paid by 6 January, interest runs from that 6 January; where no return is delivered by 5 April after the tax year, it runs from the date the tax became due (s.111A(1A)). The Division charges it from the day after the due date to the day before payment and states the rate as currently 5% (GN3 section 7; FAQ page).
 
 ## Cross-border points
 
 - **Double taxation relief.** Relief for foreign tax is limited to the lower of the foreign tax and the Manx tax on that income (ITA 1970 s.57; Guidance Note GN5). With no treaty, relief needs evidence of the foreign tax and proof that all reasonable steps were taken to minimise it. With a treaty, the treaty decides (Double taxation relief page).
-- **UK treaty.** The 2018 UK-Isle of Man agreement has effect for Manx income tax from 6 April 2019. Under it, an Isle of Man resident's UK dividends (other than property income dividends, which the UK may tax up to 15%), interest and pensions are taxable only in the Island. UK rental income may be taxed in the UK first, with relief in the Island (Double taxation relief page; SI 2018/1347 Articles 6, 10, 11 and 17). For employment, see the three conditions of Article 14(2) in [im-non-resident-income-tax](im-non-resident-income-tax.md).
+- **UK treaty.** The 2018 UK-Isle of Man agreement has effect for Manx income tax from 6 April 2019. Under it, an Isle of Man resident individual's UK dividends (other than property income dividends, which the UK may tax up to 15%), interest and pensions (other than UK government service pensions, Article 18) are taxable only in the Island. UK rental income may be taxed in the UK first, with relief in the Island (Double taxation relief page; SI 2018/1347 Articles 6, 10(2), 11(2) and (3)(a)(ii), 17 and 18). For employment, see the three conditions of Article 14(2) in [im-non-resident-income-tax](im-non-resident-income-tax.md).
 - **Dual residence.** A person can be resident in both the Island and another country under each country's law and must file in both. The treaty tie-breaker (permanent home, centre of vital interests, habitual abode, then mutual agreement) settles treaty residence only (Double taxation relief page; SI 2018/1347 Article 4(2)).
 - **Non-residents** pay 21% on Manx income with no allowance: see [im-non-resident-income-tax](im-non-resident-income-tax.md).
 
@@ -171,7 +171,9 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act 1970 (AT 3 of 1970), consolidated text [62], ss.1, 2ZA, 2ZB, 9, 10, 35, 35C, 62 | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf | 2026-10-30 |
+| Income Tax Act 1970 (AT 3 of 1970), consolidated text [62], ss.1, 2ZA, 2ZB, 2ZC, 9, 10, 35, 35C, 39AA, 57, 58AA, 62, 111A, 119 | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf | 2026-10-30 |
+| Tynwald Court Official Report (Hansard), 17 February 2026, item 6: Income Tax Act 1970, personal allowance, resolution under s.119 carried | https://tynwald.org.im/index.php/spfile?file=%2Fbusiness%2Fhansard%2F20202040%2Ft260217.pdf | 2026-10-30 |
+| Income Tax Division, Regulations and orders (SD 2026/0035 nursing expenses, SD 2026/0036 TT Homestay) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/tax-practitioners-and-technical-information/regulations-and-orders | 2026-10-30 |
 | Income Tax Division, Rates and allowances (current and historic, 2026/27) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ | 2026-10-30 |
 | Income Tax Division, Budget 2026 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/budget/ | 2026-10-30 |
 | Practice Note PN 227/26, Budget 2026 income tax and National Insurance proposals (17 February 2026) | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-10-30 |
@@ -184,13 +186,15 @@ expected:
 | Income Tax Division, Personal tax frequently asked questions | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/personal-tax/personal-tax-frequently-asked-questions/ | 2026-10-30 |
 | Income Tax Division, Tax relief | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/tax-relief/ | 2026-10-30 |
 | Income Tax Division, Marriage/civil partnership | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/marriagecivil-partnership/ | 2026-10-30 |
-| Income Tax Division, Moving to the Island: new residents | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/moving-to-the-island-new-residents/ | 2026-10-30 |
+| Income Tax Division, Moving to the Island: new residents (its allowance line still shows the 2025/26 GBP 14,750; not used for the allowance) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/moving-to-the-island-new-residents/ | 2026-10-30 |
 | Income Tax Division, Leaving the Island | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/leaving-the-island/ | 2026-10-30 |
 | Income Tax Division, Receiving Isle of Man source income | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/ | 2026-10-30 |
 | Income Tax Division, International agreements and double taxation relief | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/international-agreements-and-double-taxation-relief/ | 2026-10-30 |
 | UK-Isle of Man Double Taxation Agreement 2018, SI 2018/1347, Articles 4, 6, 10, 11, 14, 17 | https://www.legislation.gov.uk/uksi/2018/1347/pdfs/uksi_20181347_en.pdf | 2026-10-30 |
 
-Not yet confirmed: the 2026 statutory document that raises the s.35 allowance to GBP 17,000 / GBP 34,000 (the consolidated Income Tax Act 1970 read on 30 October 2026 still prints the 2025/26 figures in s.35(9) and (10), as substituted by SD 2025/0060; the 2026/27 figures here come from the Division's rates page and PN 227/26, and legislation.gov.im blocked automated search for the 2026 order); the statutory basis and order setting the 5% late-payment interest rate; personal pension and superannuation contribution limits (PN 201/18 not read); the conditions for the co-habiting couple addition and the TT Homestay Allowance (PN 219/22 not read).
+Note: the consolidated Income Tax Act 1970 [62] read on 30 October 2026 still prints GBP 14,750 / GBP 29,500 in s.35 (as substituted by SD 2025/0060); it has not yet taken in the 17 February 2026 Tynwald resolution under s.119, which sets GBP 17,000 / GBP 34,000 from 6 April 2026.
+
+Not yet confirmed: the order prescribing the 5% late-payment interest rate under s.111A; personal pension and superannuation contribution limits (PN 201/18 not read); the conditions for the co-habiting couple addition and the TT Homestay Allowance (PN 219/22 not read).
 
 <!-- openaccountants-cta-block -->
 

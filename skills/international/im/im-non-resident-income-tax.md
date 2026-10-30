@@ -36,7 +36,7 @@ This skill covers individuals who are not resident in the Isle of Man and receiv
 - **Income not taxable to non-residents:** Manx bank and building society interest, dividends and the Manx State Pension (Leaving the Island page). In law this works through the section 11A limit on excluded income (see The base).
 - **Payers.** Anyone paying rent, interest or similar payments to a person resident outside the Island is required by the Division to deduct tax (Making payments to non-residents page). Employers of non-resident employees apply code HR (Non-resident employees page).
 - **Couples.** Non-resident spouses and civil partners cannot elect joint taxation; each is taxed on their own income (Receiving Isle of Man source income page; ITA 1970 s.35C(2)).
-- **Part years.** A person who becomes resident or ceases residence during the year gets both a resident and a non-resident allowance, each apportioned by date (Receiving Isle of Man source income page; s.35D). This skill works full-year non-residence; for the resident part see [im-income-tax](im-income-tax.md).
+- **Part years.** A person who becomes resident or ceases residence during the year gets both a resident and a non-resident allowance, each apportioned by date (Receiving Isle of Man source income page; ss.35D, 35E). This skill works full-year non-residence; for the resident part see [im-income-tax](im-income-tax.md).
 
 ## Rates, bands and thresholds
 
@@ -47,8 +47,8 @@ This skill covers individuals who are not resident in the Isle of Man and receiv
 | Rate on non-corporate entities other than individuals | 21% | 2026/27 | PN 227/26; Budget 2026 page |
 | Payer deduction | the prescribed higher rate (21%) | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/making-payments-to-non-residents/ ; rates page |
 | Remittance of tax deducted (form N35) | within 14 days of making the payment | 2026/27 | Making payments to non-residents page |
-| Non-resident return due | 6 October after the tax year (6 October 2027 for 2026/27) | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/ |
-| Late non-resident return penalty | GBP 100 | 2026/27 | Receiving Isle of Man source income page |
+| Non-resident return due | before 6 October after the tax year (ITA 1970 s.62(1)); the Division's page says by 6 October | 2026/27 | ITA 1970 s.62(1); https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/ |
+| Late non-resident return penalties | GBP 100; a further GBP 200 if still outstanding six months later | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/ ; Receiving Isle of Man source income page |
 | UK treaty, employment presence limit | 183 days in any twelve-month period starting or ending in the fiscal year | from 6 April 2019 | SI 2018/1347 Article 14(2) |
 | UK treaty, mutual agreement time limit | 3 years from first notification of the action | from 6 April 2019 | SI 2018/1347 Article 25(1) |
 
@@ -72,7 +72,7 @@ For an individual not resident for the whole year, tax cannot exceed the sum of 
 - national insurance retirement pensions paid by the Treasury;
 - other income designated by Treasury order approved by Tynwald.
 
-Income from a trade or profession carried on in the Island through a representative or branch is not excluded income (s.11A(2)). The limit does not apply to non-resident trustees where a beneficiary is resident in the Island (s.11A(4)).
+Income from a trade or profession carried on in the Island through a representative or branch is not excluded income (s.11A(2)). The limit does not apply to non-resident trustees where a relevant beneficiary of the trust is an individual or a company resident in the Island (s.11A(4), (5)).
 
 ### Step 3: tax on the remaining income
 
@@ -84,7 +84,7 @@ Deduct tax withheld by payers (N13 certificates), PAYE-style deductions under co
 
 ## Deadlines and filing
 
-**Recipient's return.** Non-residents with Manx income such as rent or pensions receive a return issued on 6 April for the year ended the previous 5 April. Every item of income goes on it and it is due by the following 6 October (Receiving Isle of Man source income page). For 2026/27: issued 6 April 2027, due 6 October 2027. Guidance Note GN1NR is the non-resident return guide.
+**Recipient's return.** Non-residents with Manx income such as rent or pensions receive a return issued on 6 April for the year ended the previous 5 April. Every item of income goes on it. The Act requires delivery before 6 October (s.62(1)); the Division's page says by the following 6 October (Receiving Isle of Man source income page). For 2026/27: issued 6 April 2027; file by 5 October 2027 to meet the Act's wording. Guidance Note GN1NR is the non-resident return guide.
 
 **Payer procedure.** When the Division learns that a person is paying a non-resident, it issues (Making payments to non-residents page):
 
@@ -105,9 +105,9 @@ A common case is a letting agent collecting rent for a non-resident owner. Recon
 
 ## Penalties and interest
 
-- **Late non-resident return:** GBP 100 if not submitted by 6 October (Receiving Isle of Man source income page).
+- **Late non-resident return:** GBP 100 if not submitted within six months of the deemed date of issue (by 6 October), and a further GBP 200 if still outstanding six months later. Paying the penalty does not remove the duty to file (Non-residents page; Receiving Isle of Man source income page).
 - **Payers:** tax deducted is remitted with the N35 within 14 days of payment (Making payments to non-residents page).
-- Further penalties for non-residents, the payment date of a non-resident assessment, and penalties on payers who fail to deduct are on the Not yet confirmed line. Late payment interest for individuals generally is in [im-income-tax](im-income-tax.md).
+- The payment date of a non-resident assessment and penalties on payers who fail to deduct are on the Not yet confirmed line. Late payment interest for individuals generally is in [im-income-tax](im-income-tax.md).
 
 ## Cross-border points
 
@@ -132,7 +132,7 @@ HMRC lists the 2018 agreement as in force (it entered into force on 19 December 
 
 ### Example 1: non-resident landlord, deduction against final liability
 
-A UK-resident individual owns a Douglas flat let through a Manx letting agent for 2026/27. Gross rent is GBP 24,000. Under an N15 notice the agent deducts 21% from each payment, GBP 5,040 in the year, remits it with N35 cards and issues N13 certificates. After expenses, taxable rental income is established at GBP 18,000. Tax at 21% with no allowance is GBP 3,780, so GBP 1,260 of the tax deducted is repayable on the non-resident return due 6 October 2027. (Article 6 of the UK treaty lets the Island tax the rent first.)
+A UK-resident individual owns a Douglas flat let through a Manx letting agent for 2026/27. Gross rent is GBP 24,000. Under an N15 notice the agent deducts 21% from each payment, GBP 5,040 in the year, remits it with N35 cards and issues N13 certificates. After expenses, taxable rental income is established at GBP 18,000. Tax at 21% with no allowance is GBP 3,780, so GBP 1,260 of the tax deducted is repayable on the 2026/27 non-resident return. (Article 6 of the UK treaty lets the Island tax the rent first.)
 
 ```oa-check
 name: IM non-resident landlord, deduction vs liability (2026/27)
@@ -184,10 +184,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act 1970 (AT 3 of 1970), consolidated text [62], ss.1(3), 1(3A), 11A, 35C, 35D | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf | 2026-10-30 |
+| Income Tax Act 1970 (AT 3 of 1970), consolidated text [62], ss.1(3), 1(3A), 11A, 35C, 35D, 35E, 62 | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf | 2026-10-30 |
 | Income Tax Division, Rates and allowances (current and historic) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ | 2026-10-30 |
 | Income Tax Division, Budget 2026 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/budget/ | 2026-10-30 |
 | Practice Note PN 227/26, Budget 2026 proposals | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-10-30 |
+| Income Tax Division, Non-residents (late return penalties) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/ | 2026-10-30 |
 | Income Tax Division, Receiving Isle of Man source income | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/ | 2026-10-30 |
 | Income Tax Division, Making payments to non-residents | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/making-payments-to-non-residents/ | 2026-10-30 |
 | Income Tax Division, Non-resident pensioners | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/personal-tax/non-residents/non-resident-pensioners/ | 2026-10-30 |
@@ -199,7 +200,7 @@ expected:
 | UK-Isle of Man Double Taxation Agreement 2018, SI 2018/1347, Articles 4, 6, 14, 15, 17, 18, 21, 23, 25 | https://www.legislation.gov.uk/uksi/2018/1347/pdfs/uksi_20181347_en.pdf | 2026-10-30 |
 | HMRC, 2024 UK-Isle of Man memorandum of understanding (arbitration), Parts 1 and 2 | https://www.gov.uk/government/publications/isle-of-man-tax-treaties/2024-uk-isle-of-man-memorandum-of-understanding-in-force | 2026-10-30 |
 
-Not yet confirmed: the payment date of a non-resident assessment; any further penalty after the GBP 100 for a non-resident return; penalties on payers who fail to deduct or remit; which expenses are allowable against non-resident rental income; electronic filing routes for N35 and N37; relief under treaties other than the UK and Ireland; foreign tax credits and permanent-establishment rules for non-resident individuals trading in the Island.
+Not yet confirmed: the payment date of a non-resident assessment; penalties on payers who fail to deduct or remit; which expenses are allowable against non-resident rental income; electronic filing routes for N35 and N37; relief under treaties other than the UK and Ireland; foreign tax credits and permanent-establishment rules for non-resident individuals trading in the Island.
 
 <!-- openaccountants-cta-block -->
 
