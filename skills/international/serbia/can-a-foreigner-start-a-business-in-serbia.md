@@ -5,9 +5,9 @@ version: 0.2
 jurisdiction: RS
 tax_year: 2026
 last_updated: 2026-10-30
-authored_by: Andrija Eminovic
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: formation
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Can a Foreigner Start a Business in Serbia?
 
-## DOO vs Entrepreneur – A Practical Guide for Foreign Founders
+## DOO vs Entrepreneur – A Practical Overview for Foreign Founders
 
 Foreign citizens can establish and operate businesses in Serbia. However, before starting the registration process, one of the most important decisions is choosing the appropriate legal form.
 
@@ -29,17 +29,19 @@ These two forms differ significantly in terms of legal status, liability, taxati
 
 Understanding these differences before registration can prevent unnecessary costs and legal or tax complications later.
 
+**Tier 2, checked against the law. Built by Michael Cutajar and the OpenAccountants team. Figures for 2026 come from the official consolidated texts of the Company Law, the Law on Foreigners and the Law on Employment of Foreigners (pravno-informacioni-sistem.rs), the Ministry of Finance texts of the tax laws, and the Business Registers Agency (APR) fee and founding pages, all read on 30 October 2026. Tax figures must agree with serbia-income-tax, serbia-social-contributions, rs-corporate-tax and serbia-vat; those skills win if they differ. Not signed off by a Serbian accountant.**
+
 Figures in this skill are for 2026. The registration steps themselves are in [how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide](how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide.md). That skill and this one overlap on liability, tax rates, banking and VAT; this one is about choosing the form, the other about registering it.
 
 ## 1. Can a foreign citizen start a business in Serbia?
 
 **Yes.**
 
-A foreign citizen can generally establish a Serbian limited liability company (DOO) and may own 100% of the company.
+A foreign citizen can establish a Serbian limited liability company (DOO) and own 100% of it. The Company Law lets any natural or legal person be a member of a company (Article 9) and sets no nationality condition; a DOO can have a single member (Article 139). APR's founding instructions take a copy of the passport as the identity document of a foreign member.
 
-A foreign individual may also register as an entrepreneur in Serbia, subject to the applicable registration and other legal requirements.
+A foreign individual may also register as an entrepreneur in Serbia. APR's entrepreneur founding instructions likewise take a copy of a foreigner's passport or foreign identity card.
 
-A Serbian citizen or Serbian business partner is therefore not generally required simply because the founder is a foreign national.
+A Serbian citizen or Serbian business partner is therefore not required simply because the founder is a foreign national.
 
 However, business registration, residence and the right to work in Serbia are separate legal matters.
 
@@ -117,7 +119,7 @@ How the Tax Administration sets the lump-sum base, and the 10% yearly cap on ris
 
 A **DOO is a separate legal entity** from its shareholder or shareholders.
 
-A foreign individual or foreign legal entity can generally establish a Serbian DOO and may hold 100% of its ownership.
+A foreign individual or foreign legal entity can establish a Serbian DOO and hold 100% of it (Company Law, Articles 9 and 139).
 
 A DOO can have one or more shareholders. Its founding act is a founding decision when there is one founder, and a founding agreement when there are several (Company Law, Article 11(1)).
 
@@ -179,7 +181,7 @@ The tax, contribution and administrative consequences of the interruption depend
 
 ## DOO
 
-A DOO does **not** have an equivalent mechanism allowing the company simply to be placed into “mirovanje”.
+A DOO does **not** have an equivalent mechanism allowing the company simply to be placed into “mirovanje”. The Company Law provides a registered interruption of activity only for an entrepreneur (Article 90); it has no such provision for a company.
 
 The company can stop generating revenue or temporarily have no commercial activity, but the legal entity continues to exist.
 
@@ -224,9 +226,14 @@ The appropriate procedure should therefore be considered together with the inten
 
 Both entrepreneurs and companies are registered through the **Serbian Business Registers Agency (APR – Agencija za privredne registre)**.
 
-The documentation and procedure differ depending on whether the applicant is registering as an entrepreneur or establishing a DOO. The steps are in [how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide](how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide.md).
+The documentation and procedure differ depending on whether the applicant is registering as an entrepreneur or establishing a DOO:
 
-Foreign identification documents and, where relevant, documents concerning foreign legal entities may require appropriate certification and translation.
+* **DOO:** since 17 May 2023 the founding application can only be filed electronically (Law on the Registration Procedure with APR, Article 9(2), as APR's founding instructions state). The APR fee for registering the founding, including registration of the documents, is **RSD 8,000**.
+* **Entrepreneur:** the application can be filed on paper (at APR or by post) or electronically. The APR fee for registering an entrepreneur is **RSD 2,500**.
+
+The steps are in [how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide](how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide.md).
+
+Documents in a foreign language must be filed with a Serbian translation certified by a permanent court interpreter, and where a certified foreign public document is required it needs an Apostille or, for a country outside the Hague Convention with no bilateral agreement with Serbia, full legalisation (APR founding instructions).
 
 Foreign founders should therefore determine the appropriate structure before preparing the incorporation documents.
 
@@ -321,13 +328,13 @@ For foreign founders, the correct choice should therefore be based on the planne
 
 *This article provides general information about doing business in Serbia and does not constitute individual legal, tax or immigration advice. The appropriate structure and obligations depend on the circumstances of each founder and business.*
 
-> Contributed by Andrija Eminovic, 21041987. 2026 figures and sources added by the OpenAccountants team on 30 October 2026.
+> Built by Michael Cutajar and the OpenAccountants team.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Zakon o privrednim društvima (Company Law), Sl. glasnik RS 36/2011 to 19/2025, official consolidated text: Arts. 11, 18, 85, 89, 90, 139 | https://pravno-informacioni-sistem.rs/eli/rep/sgrs/skupstina/zakon/2011/36/1/reg | 2026-10-30 |
+| Zakon o privrednim društvima (Company Law), Sl. glasnik RS 36/2011 to 19/2025, official consolidated text: Arts. 9, 11, 18, 85, 89, 90, 139 | https://pravno-informacioni-sistem.rs/eli/rep/sgrs/skupstina/zakon/2011/36/1/reg | 2026-10-30 |
 | Zakon o porezu na dohodak građana (Personal Income Tax Law), Ministry of Finance copy of the consolidated text up to 80/2026: Arts. 38, 40, 64 | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana | 2026-10-30 |
 | Zakon o porezu na dobit pravnih lica (Corporate Income Tax Law), Ministry of Finance consolidated text: Art. 39 | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dobit-pravnih-lica | 2026-10-30 |
 | Zakon o doprinosima za obavezno socijalno osiguranje (Law on Contributions), Ministry of Finance consolidated text: Art. 44 | https://www.mfin.gov.rs/propisi/zakon-o-doprinosima-za-obavezno-socijalno-osiguranje | 2026-10-30 |
@@ -335,8 +342,12 @@ For foreign founders, the correct choice should therefore be based on the planne
 | Zakon o porezu na dodatu vrednost (VAT Law), Ministry of Finance consolidated text to 80/2026: Art. 38 | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dodatu-vrednost2 | 2026-10-30 |
 | Zakon o strancima (Law on Foreigners), Sl. glasnik RS 24/2018, 31/2019, 62/2023, official consolidated text: Arts. 3, 19, 44 | https://pravno-informacioni-sistem.rs/eli/rep/sgrs/skupstina/zakon/2018/24/1/reg | 2026-10-30 |
 | Zakon o zapošljavanju stranaca (Law on Employment of Foreigners), Sl. glasnik RS 128/2014 to 62/2023, official consolidated text: Arts. 2, 4 | https://pravno-informacioni-sistem.rs/eli/rep/sgrs/skupstina/zakon/2014/128/4/reg | 2026-10-30 |
+| APR, company fees: founding registration RSD 8,000 (apr.gov.rs blocks automated and browser access from our network, so read from the Internet Archive capture of 17 February 2026) | https://web.archive.org/web/20260217232353/http://www.apr.gov.rs/привредна-друштва/накнаде/накнаде.1070.html | 2026-10-30 |
+| APR, entrepreneur fees: founding registration RSD 2,500 (Internet Archive capture of 17 January 2026) | https://web.archive.org/web/20260117213611/https://apr.gov.rs/регистри-/предузетници/накнаде.4862.html | 2026-10-30 |
+| APR, company founding instructions: electronic-only filing from 17 May 2023, passport copy for a foreign member, certified translation, Apostille (Internet Archive capture of 17 February 2026) | https://web.archive.org/web/20260217232227/https://www.apr.gov.rs/регистри-/привредна-друштва/упутства/оснивање.1059.html | 2026-10-30 |
+| APR, entrepreneur founding instructions: paper or electronic filing, passport copy for a foreigner (Internet Archive capture of 19 February 2026) | https://web.archive.org/web/20260219073956/https://www.apr.gov.rs/регистри/предузетници/упутства/оснивање.1083.html | 2026-10-30 |
 
-Not yet confirmed: APR registration fees for an entrepreneur and a DOO in 2026 (apr.gov.rs blocked access on 2026-10-30, so no fee is stated here); that the Company Law gives a DOO no registered interruption equivalent to the entrepreneur's (Article 90 covers entrepreneurs only; the DOO chapters were not read article by article); the documents, conditions and fees for a Visa D and a single permit for a self-employed foreigner (the Law on Foreigners and the Law on Employment of Foreigners were read only for the articles cited); the certification and translation rules for foreign documents; that a foreigner may own 100% of a DOO with no Serbian partner (the author's statement, kept; no article stating it was read); the tax and contribution consequences of a registered interruption.
+Not yet confirmed: the documents, conditions and fees for a Visa D and a single permit for a self-employed foreigner (the Law on Foreigners and the Law on Employment of Foreigners were read only for the articles cited); the tax and contribution consequences of a registered interruption; whether the APR fee differs between paper and electronic filing for an entrepreneur (the APR page gives one amount).
 
 <!-- openaccountants-cta-block -->
 
