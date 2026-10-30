@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Kansas individual income tax. T
 version: "0.3"
 jurisdiction: US-KS
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-10-29
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -254,6 +254,8 @@ expected:
 | Kansas Department of Revenue | https://www.ksrevenue.gov/ | 2026-10-28 |
 
 Not yet confirmed: whether Kansas decouples from IRC §179 / bonus depreciation (v0.2 said Kansas "may decouple from certain federal accelerated depreciation provisions", cited generally to K.S.A. 79-32,117); the standard deduction and personal exemption amounts for tax year 2026 (the tables show 2025 amounts); individual late-filing and late-payment penalty percentages under K.S.A. 79-3228 and the current interest-rate value under K.S.A. 79-2968(b). Two secondary sources listed in v0.2 are no longer cited (rule 1).
+
+> Contributed by Jeff Watts.
 
 <!-- openaccountants-cta-block -->
 

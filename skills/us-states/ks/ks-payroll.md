@@ -11,14 +11,18 @@ description: >
   withholding", "K-4", "KW-3", "KW-5", "KDOR withholding", "Kansas W-2".
   Corrected 2026-10-28 against archived KDOR FAQ, Pub. KW-100 (full text
   incl. percentage tables), and KW-3 e-file specs.
-jurisdiction: US-KS
-category: payroll
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-28
 version: 0.2
+jurisdiction: US-KS
+tax_year: 2026
+last_updated: 2026-10-29
+authored_by: Jeff Watts
+review_status: pending_review
+trust_label: Accountant-authored
 depends_on:
   - ks-income-tax
+category: payroll
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Kansas payroll withholding, tax year 2026
@@ -141,6 +145,8 @@ expected:
 | KDOR business navigation (Employment Tax Delinquencies page) | https://www.ksrevenue.gov/business.html | 2026-10-28 |
 
 Not yet confirmed: the current withholding penalty tier percentages (79-32,173 was repealed in 1988; the successor sections and the K.S.A. 79-3228 percentages are not yet archived); a citation for the statement that Kansas has no withholding reciprocity agreement with neighboring states; the exact K.A.R. regulation that assigns filing frequency; KDOR's enforcement detail for employment-tax delinquencies.
+
+> Contributed by Jeff Watts.
 
 <!-- openaccountants-cta-block -->
 
