@@ -1,7 +1,7 @@
 ---
 name: moldova-tax-optimization
 description: "Compare legally available Moldova tax regimes and owner extraction for 2026. Covers actual IT-park status and permitted activities, cumulative seventy-percent eligibility, the monthly sales base and employee minimum, included and separate taxes, annual verification, entry and exit, ordinary income tax, the eligible four-percent SME regime, dividends and employment classification. Use for Moldova tax planning, IT Park seven-percent tax, minimum per employee, non-IT revenue, small-business regime, SRL versus individual entrepreneur, dividend versus salary and a single-client contractor. This source-cited writer draft corrects unsupported savings and blanket prohibitions, preserves predecessor subjects and states remaining form, procedure and case-specific gaps. Independent whole-country review and accountant attestation remain pending."
-version: 0.2
+version: 0.3
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-30
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova tax planning and regime comparison, 2026 v0.2
+# Moldova tax planning and regime comparison, 2026 v0.3
 
 ## Who this applies to
 
@@ -33,6 +33,8 @@ Read the connected [corporate](md-corporate-income-tax.md), [individual](moldova
 | Ordinary domestic nonresident dividend withholding | **6%**, with the specified **15%** historic-profit/capital rules; actual treaty relief needs its own evidence | [Code art. 91(1)][code] |
 | IT-park insured salary basis | **68% × 17,400 = 11,832 MDL** monthly under the stated rule; this is distinct from the 5,220 tax minimum and actual cash salary | [Law 77 art. 16(1)][park]; [Government Decision 773][wage] |
 
+The independent-service and independent-retail regimes are different populations from an ordinary individual entrepreneur. For an **eligible registered service entrepreneur**, the single tax is **15% of its defined income base up to 1.2 million MDL**, and **35% only on the excess**. The statutory tax composition and annual medical allocation/top-up must be checked separately; “single tax” does not certify that no further amount can arise. For **eligible independent retail excluding excise goods**, the income-tax rate is **1%**, with the ordinary full-year **3,000 MDL minimum** and specific cessation/cash-register rules. Current article 69^13(3) limits that retail route to persons registered before **1 July 2026**; do not present it as an unrestricted new-entry option in October. The full amendment/commencement history remains a stated gap. Use the [individual](moldova-income-tax.md) and [social/medical](moldova-social-contributions.md) methods, actual registration and activity conditions before comparing either regime. [Code arts. 69^6–69^13, 69^20–69^26][code].
+
 The IT-park forecast-wage input comes from the enacted decision, not a draft or the prior year's 16,100 figure. The January and current Code articles 367–379 were both read; their substantive text matches in the writer comparison after explicitly recorded layout/orthographic and commencement-annotation normalization. This is not an independent review or a whole-Code audit. [January Code][jan]; [current Code][code].
 
 ## The base
@@ -40,6 +42,8 @@ The IT-park forecast-wage input comes from the enacted decision, not a draft or 
 ### Establish IT-park status and the real eligible activity
 
 Law 77 defines a resident as a Moldovan-registered business person entered in the park's resident register and carrying out a permitted main activity under a contract with its administration. The registered person signs that contract, enters the register on signing and receives the prescribed status confirmation. Article 7 provides a contract of at least **four years**, within the park's lifetime, and contractual provisions including activities, reports and the mandatory membership contribution. A generic SRL or IT invoice is not evidence of park status. Obtain the actual registration/contract and applicable dates; the complete Government registration-form procedure and current membership-fee amount remain unverified here. [Law 77 arts. 2, 7][park].
+
+Law 77 article 9(2) sets a **20-year maximum** for a park’s operation; the actual term is fixed by its Government creation decision. This maximum and the resident contract’s four-year minimum are different clocks. The Moldova park’s actual creation/extension decision and end date remain unverified here; do not turn the statutory ceiling into a guaranteed twenty-year individual tax holiday. [Law 77 art. 9][park].
 
 The current article-8 list is broader than software development but has precise restrictions. Match the real service, contract/deliverable and applicable classification; a broad CAEM heading alone does not prove every activity within it qualifies. [Law 77 art. 8(a)–(r)][park].
 

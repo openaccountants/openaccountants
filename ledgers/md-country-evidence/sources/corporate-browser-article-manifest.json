@@ -1925,6 +1925,54 @@
       "read_date": "2026-10-30",
       "format": "Exact JSON returned by read-only browser DOM observation; selected current company/capital scope and enacted VEN12 amendment only; not whole-Code verification",
       "sha256": "6512360a0a58753e70ae00bc851a27c0a7a896b5f202ea5a541aa5c4a92e6c71"
+    },
+    "FORMATION-ASP-II-REQUIREMENTS-20261030": {
+      "article": "FORMATION-ASP-II-REQUIREMENTS-20261030",
+      "official_url": "https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-3-ii",
+      "observed_utc": "2026-10-30T21:04:13.686Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected ASP registration/name tariff and requirements; current SRL governance and park duration only; not whole-Code verification",
+      "sha256": "2dc49c5104f67186affd5f3fcd216b9233bac301302263b29891377a0f725c6a"
+    },
+    "FORMATION-ASP-II-TARIFF-20261030": {
+      "article": "FORMATION-ASP-II-TARIFF-20261030",
+      "official_url": "https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-3-ii",
+      "observed_utc": "2026-10-30T21:04:31.716Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected ASP registration/name tariff and requirements; current SRL governance and park duration only; not whole-Code verification",
+      "sha256": "65e08d02854d2e549a68fa29ee84a436eb3acfeebb9887f1358bfe8a06a63cc1"
+    },
+    "FORMATION-ASP-NAME-TARIFF-20261030": {
+      "article": "FORMATION-ASP-NAME-TARIFF-20261030",
+      "official_url": "https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/223",
+      "observed_utc": "2026-10-30T21:05:05.309Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected ASP registration/name tariff and requirements; current SRL governance and park duration only; not whole-Code verification",
+      "sha256": "14799942c4bd25d52934916cc6209b5c887c39479ed1d43411d44ed7756a3860"
+    },
+    "FORMATION-ASP-NAME-REQUIREMENTS-20261030": {
+      "article": "FORMATION-ASP-NAME-REQUIREMENTS-20261030",
+      "official_url": "https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/223",
+      "observed_utc": "2026-10-30T21:06:30.590Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected ASP registration/name tariff and requirements; current SRL governance and park duration only; not whole-Code verification",
+      "sha256": "eed8adb2c44d1f208f86e9dc9a049b7569092ceec2461eb37d7bd37bbeebd613"
+    },
+    "FORMATION-SRL-GOVERNANCE-20261030": {
+      "article": "FORMATION-SRL-GOVERNANCE-20261030",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro",
+      "observed_utc": "2026-10-30T21:06:58.081Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected ASP registration/name tariff and requirements; current SRL governance and park duration only; not whole-Code verification",
+      "sha256": "7aad139438e2adb86fb2860c224b359afc4d2f191f7324693c93a012c9479bee"
+    },
+    "PLANNING-LAW77-PARK-TERM-20261030": {
+      "article": "PLANNING-LAW77-PARK-TERM-20261030",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro",
+      "observed_utc": "2026-10-30T21:08:24.062Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected ASP registration/name tariff and requirements; current SRL governance and park duration only; not whole-Code verification",
+      "sha256": "ef58ba33f12f40ae5c45f669b327cdab4d936355fc8e1a7e44df2cb7d295d8ac"
     }
   }
 }

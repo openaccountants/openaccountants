@@ -2,7 +2,7 @@
   "status": "LOCAL2026 WRITER DRAFT; remainingprocedure/form/case-specificgaps andwhole-countryreviewpending",
   "slug": "moldova-tax-optimization",
   "Guide_path": "skills/international/moldova/moldova-tax-optimization.md",
-  "Guide_sha256": "b48d1bbf03dade952a37669403d11524ebde5ef02bcddae78191ad3495f9f2ca",
+  "Guide_sha256": "e62930a705802c6f56b2340529aea987379c588217cab02bc6a7e696f19ee42c",
   "rows": [
     {
       "id": "MD-PLAN-001",
@@ -1069,6 +1069,118 @@
       "quote_matches_source_after_layout_normalization": true,
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
       "inherited_from": "md-corporate-income-tax.writer.json:MD-CORP-019"
+    },
+    {
+      "id": "MD-PLAN-077",
+      "rule_or_figure": "Governmentcreationdecisionfixesactualparkterm;20yearstatutoryceilingnotindividualguarantee",
+      "Guide_section": "The base: Establish IT-park status",
+      "act_article_or_official_section": "Law77/2016 art9(1)-(2)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro",
+      "exact_original_language_quote": "Articolul 9. Crearea parcului pentru tehnologia informației (1) Parcul este creat în baza unei hotărîri de Guvern, la propunerea Ministerului Dezvoltării Economice și Digitalizării.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-PLANNING-LAW77-PARK-TERM-20261030.json",
+      "source_text_sha256": "ef58ba33f12f40ae5c45f669b327cdab4d936355fc8e1a7e44df2cb7d295d8ac",
+      "source_context": "Articolul 9. Crearea parcului pentru tehnologia\n\n                     informației \n\n(1) Parcul este creat în baza unei hotărîri de Guvern, la propunerea Ministerului Dezvoltării Economice și Digitalizării. \n\n(2) Termenul de funcţionare a parcului se stabileşte prin hotărîre de Guvern, dar nu poate depăşi 20 de ani.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application, full source conditions, every predecessor topic and both examples"
+    },
+    {
+      "id": "MD-PLAN-078",
+      "rule_or_figure": "Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified",
+      "Guide_section": "Rates, bands and thresholds; The base; Sources",
+      "act_article_or_official_section": "FiscalCode art6920",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 6920. Sfera aplicării Prezentul regim fiscal se aplică exclusiv activităților economice independente desfășurate în domeniul prestării serviciilor.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-69s20-26.json",
+      "source_text_sha256": "b95e0742871f1d7400a81b1034373f1e946757cb12336092359085c54a8c491a",
+      "source_context": "Articolul 6920. Sfera aplicării\n\nPrezentul regim fiscal se aplică exclusiv activităților economice independente desfășurate în domeniul prestării serviciilor.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application, full source conditions, every predecessor topic and both examples"
+    },
+    {
+      "id": "MD-PLAN-079",
+      "rule_or_figure": "Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified",
+      "Guide_section": "Rates, bands and thresholds; The base; Sources",
+      "act_article_or_official_section": "FiscalCode art6921",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 6921. Subiecții impunerii (1) Subiecți ai impunerii, conform prezentului capitol, sunt antreprenorii independenți, luați în evidență de Agenția Servicii Publice în condițiile Legii",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-69s20-26.json",
+      "source_text_sha256": "b95e0742871f1d7400a81b1034373f1e946757cb12336092359085c54a8c491a",
+      "source_context": "Articolul 6921. Subiecții impunerii\n\n(1) Subiecți ai impunerii, conform prezentului capitol, sunt antreprenorii independenți, luați în evidență de Agenția Servicii Publice în condițiile Legii nr. 220/2007 privind înregistrarea de stat a persoanelor juridice și a întreprinzătorilor individuali.\n\n(2) Dreptul la aplicarea regimului fiscal și la exercitarea activității reglementate de prezentul capitol se acordă din momentul atribuirii numărului de identificare de stat, eliberat de către Agenția Servicii Publice, în termen de 24 de ore. În același termen, informația cu privire la atribuirea numărului de identificare de stat este furnizată autorităților publice pentru luarea la evidență fiscală, medicală și socială.\n\n(3) Modificarea datelor aferente activității declarate inițial, precum și încetarea activității se efectuează în baza cererii depuse de către antreprenorul independent la Agenția Servicii Publice. Agenția informează solicitantul cu privire la operarea modificărilor în termen de 24 de ore de la recepționarea cererii.\n\n(4) Antreprenorul independent care și-a încetat activitatea poartă răspundere față de creditorii săi conform legislației civile și fiscale.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application, full source conditions, every predecessor topic and both examples"
+    },
+    {
+      "id": "MD-PLAN-080",
+      "rule_or_figure": "Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified",
+      "Guide_section": "Rates, bands and thresholds; The base; Sources",
+      "act_article_or_official_section": "FiscalCode art6925",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 6925. Cota și componența impozitului unic (1) Cota impozitului unic constituie 15% din obiectul impunerii în cazul în care venitul anual al antreprenorului",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-69s20-26.json",
+      "source_text_sha256": "b95e0742871f1d7400a81b1034373f1e946757cb12336092359085c54a8c491a",
+      "source_context": "Articolul 6925. Cota și componența impozitului unic\n\n(1) Cota impozitului unic constituie 15% din obiectul impunerii în cazul în care venitul anual al antreprenorului independent nu depășește 1200000 de lei.\n\n(2) În cazul în care venitul anual depășește plafonul prevăzut la alin. (1), pentru partea excedentară a venitului se aplică o cotă a impozitului unic de 35%.\n\n(3) În componența impozitului unic sunt incluse următoarele impozite, taxe și contribuții:\n\na) impozitul pe venitul antreprenorilor independenți care desfășoară activități în domeniul prestării serviciilor;\n\nb) contribuțiile de asigurări sociale de stat obligatorii;\n\nc) primele de asigurare obligatorie de asistență medicală;\n\nd) taxele locale.\n\n(4) Impozitul unic se încasează într-un cont trezorerial de încasări, fiind ulterior repartizate:\n\na) la bugetul local: impozitul pe venitul antreprenorilor independenți care desfășoară activități economice independente în domeniul prestării serviciilor – 26,3% și taxele locale – 5,0%;\n\nb) la bugetul asigurărilor sociale de stat: contribuțiile de asigurări sociale de stat obligatorii datorate de antreprenorii independenți care desfășoară activități economice independente în domeniul prestării serviciilor – 53,3%;\n\nc) la fondurile asigurării obligatorii de asistență medicală: primele de asigurare obligatorie de asistență medicală sub formă de contribuție procentuală din venitul obținut de antreprenorii independenți care desfășoară activități economice independente în domeniul prestării serviciilor – 15,4%.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application, full source conditions, every predecessor topic and both examples"
+    },
+    {
+      "id": "MD-PLAN-081",
+      "rule_or_figure": "Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified",
+      "Guide_section": "Rates, bands and thresholds; The base; Sources",
+      "act_article_or_official_section": "FiscalCode art6926",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 6926. Modul de calculare și achitare (1) Calcularea impozitului unic se efectuează prin aplicarea cotei impozitului asupra venitului obținut din activități economice independente",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-69s20-26.json",
+      "source_text_sha256": "b95e0742871f1d7400a81b1034373f1e946757cb12336092359085c54a8c491a",
+      "source_context": "Articolul 6926. Modul de calculare și achitare\n\n(1) Calcularea impozitului unic se efectuează prin aplicarea cotei impozitului asupra venitului obținut din activități economice independente în domeniul prestării serviciilor.\n\n(2) Calcularea impozitului unic se efectuează lunar de către Serviciul Fiscal de Stat, prin remiterea avizelor de plată până la data de 10 a lunii următoare lunii de gestiune. Achitarea impozitului unic se efectuează lunar, până la data de 25 a lunii următoare lunii de gestiune. Dacă suma anuală defalcată pentru primele de asigurare obligatorie de asistență medicală nu acoperă valoarea sumei fixe stabilite ca facilitate pentru achitarea în termen prestabilit pentru categoria de plătitori prevăzută la pct. 1 lit. b) din anexa nr. 2 la Legea nr. 1593/2002 cu privire la mărimea, modul și termenele de achitare a primelor de asigurare obligatorie de asistență medicală, diferența se achită de către antreprenorul independent în baza unui aviz de plată emis suplimentar, remis până la data de 25 ianuarie a anului următor celui de gestiune. Achitarea diferenței primelor de asigurare obligatorie de asistență medicală se efectuează până la data de 25 februarie a anului de gestiune în care a fost remis avizul.\n\n(3) Pentru antreprenorii independenți care inițiază sau încetează activitatea pe parcursul perioadei fiscale, calcularea impozitului unic se efectuează prin aplicarea cotei impozitului asupra venitului obținut din activități economice independente în domeniul prestării serviciilor.\n\n \n\nAnexă\n\nLISTA\n\ndomeniilor de activitate deschise pentru activitate\n\neconomică independentă, conform Clasificatorului\n\nActivităților din Economia Moldovei (CAEM-2)\n\nNr.\n\ncrt.\n\n\t\n\nCod\n\nCAEM\n\n\t\n\nDenumirea activității\n\n\n\n\n1\n\n\t\n\n15.1\n\n\t\n\nTăbăcirea și finisarea pieilor; fabricarea articolelor de voiaj și marochinărie și a articolelor de harnașament; prepararea și vopsirea blănurilor\n\n\n\n\n2\n\n\t\n\n23.13\n\n\t\n\nFabricarea articolelor din sticlă\n\n\n\n\n3\n\n\t\n\n23.41\n\n\t\n\nFabricarea articolelor ceramice pentru uz gospodăresc și ornamental\n\n\n\n\n4\n\n\t\n\n23.44\n\n\t\n\nFabricarea altor produse tehnice din ceramică\n\n\n\n\n5\n\n\t\n\n23.49\n\n\t\n\nFabricarea altor produse ceramice n.c.a.\n\n\n\n\n6\n\n\t\n\n32.1\n\n\t\n\nFabricarea bijuteriilor, a imitațiilor de bijuterii și a articolelor similare\n\n\n\n\n7\n\n\t\n\n32.2\n\n\t\n\nFabricarea instrumentelor muzicale\n\n\n\n\n8\n\n\t\n\n32.3\n\n\t\n\nFabricarea articolelor pentru sport\n\n\n\n\n9\n\n\t\n\n32.4\n\n\t\n\nFabricarea jocurilor și jucăriilor\n\n\n\n\n10\n\n\t\n\n33.1\n\n\t\n\nRepararea articolelor fabricate din metal, mașinilor și echipamentelor\n\n\n\n\n11\n\n\t\n\n43.22\n\n\t\n\nLucrări de instalații tehnico-sanitare, de alimentare cu gaze, de încălzire și de aer condiționat\n\n\n\n\n12\n\n\t\n\n58.1\n\n\t\n\nActivități de editare a cărților, ziarelor, revistelor și alte activități de editare\n\n\n\n\n13\n\n\t\n\n58.2\n\n\t\n\nActivități de editare a produselor software\n\n\n\n\n14\n\n\t\n\n59.1\n\n\t\n\nActivități de producție cinematografică, video și de programe de televiziune\n\n\n\n\n15\n\n\t\n\n59.2\n\n\t\n\nActivități de realizare a înregistrărilor audio și activități de editare muzicală\n\n\n\n\n16\n\n\t\n\n62.01\n\n\t\n\nActivități de realizare a soft-ului la comandă (software orientat client)\n\n\n\n\n17\n\n\t\n\n62.02\n\n\t\n\nActivități de consultanță în tehnologia informației\n\n\n\n\n18\n\n\t\n\n63.1\n\n\t\n\nActivități ale portalurilor web, prelucrarea datelor, administrarea paginilor web și activități conexe\n\n\n\n\n19\n\n\t\n\n63.91\n\n\t\n\nActivități ale agențiilor de știri\n\n\n\n\n20\n\n\t\n\n70.21\n\n\t\n\nActivități de consultanță în domeniul relațiilor publice și al comunicării\n\n\n\n\n21\n\n\t\n\n71.11\n\n\t\n\nActivități de arhitectură\n\n\n\n\n22\n\n\t\n\n71.12\n\n\t\n\nActivități de inginerie și consultanță tehnică legate de acestea\n\n\n\n\n23\n\n\t\n\n73.20\n\n\t\n\nActivități de studiere a pieței și de sondare a opiniei publice\n\n\n\n\n24\n\n\t\n\n74.1\n\n\t\n\nActivități de design specializat\n\n\n\n\n25\n\n\t\n\n74.2\n\n\t\n\nActivități fotografice\n\n\n\n\n26\n\n\t\n\n74.3\n\n\t\n\nActivități de traducere scrisă și orală (interpreți)\n\n\n\n\n27\n\n\t\n\n79.9\n\n\t\n\nAlte servicii de rezervare și asistență turistică\n\n\n\n\n28\n\n\t\n\n81.2\n\n\t\n\nActivități de curățenie\n\n\n\n\n29\n\n\t\n\n81.3\n\n\t\n\nActivități de întreținere peisagistică\n\n\n\n\n30\n\n\t\n\n82.19\n\n\t\n\nActivități de fotocopiere, de pregătire a documentelor și alte activități specializate de secretariat\n\n\n\n\n31\n\n\t\n\n82.3\n\n\t\n\nActivități de organizare a expozițiilor, târgurilor și congreselor\n\n\n\n\n32\n\n\t\n\n85.5\n\n\t\n\nAlte forme de învățământ\n\n\n\n\n33\n\n\t\n\n88.9\n\n\t\n\nAlte activități de asistență socială, fără cazare\n\n\n\n\n34\n\n\t\n\n90.01\n\n\t\n\nActivități de interpretare artistică (spectacole)\n\n\n\n\n35\n\n\t\n\n90.02\n\n\t\n\nActivități de suport pentru interpretarea artistică (spectacole)\n\n\n\n\n36\n\n\t\n\n90.03\n\n\t\n\nActivități de creație artistică\n\n\n\n\n37\n\n\t\n\n93.11\n\n\t\n\nActivități ale bazelor sportive\n\n\n\n\n38\n\n\t\n\n93.12\n\n\t\n\nActivități ale cluburilor sportive\n\n\n\n\n39\n\n\t\n\n93.19\n\n\t\n\nAlte activități sportive\n\n\n\n\n40\n\n\t\n\n96.09\n\n\t\n\nAlte activități de servicii personale n.c.a., exclusiv serviciile de îngrijire a animalelor de companie și ale hamalilor\n\n \n\n \n\nCapitolul 11\n\nIMPOZITAREA NEREZIDENŢILOR.\n\nPREVEDERI SPECIALE\n\nPENTRU TRATATELE INTERNAŢIONALE",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application, full source conditions, every predecessor topic and both examples"
+    },
+    {
+      "id": "MD-PLAN-082",
+      "rule_or_figure": "Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified",
+      "Guide_section": "Rates, bands and thresholds; The base; Sources",
+      "act_article_or_official_section": "FiscalCode art696",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 696. Sfera aplicării Prezentul regim fiscal se aplică numai activităţilor independente desfăşurate în domeniul comerţului cu amănuntul (cu excepţia mărfurilor supuse accizelor).",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-69s6-13.json",
+      "source_text_sha256": "d6aa2360b062524ffc6b23552200746e237eaad41740c312b8b1fc4247d0ae74",
+      "source_context": "Articolul 696. Sfera aplicării\n\nPrezentul regim fiscal se aplică numai activităţilor independente desfăşurate în domeniul comerţului cu amănuntul (cu excepţia mărfurilor supuse accizelor).",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application, full source conditions, every predecessor topic and both examples"
+    },
+    {
+      "id": "MD-PLAN-083",
+      "rule_or_figure": "Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified",
+      "Guide_section": "Rates, bands and thresholds; The base; Sources",
+      "act_article_or_official_section": "FiscalCode art6911",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 6911. Cota de impozit (1) Cota impozitului pe venit constituie 1% din obiectul impunerii, dar nu mai puţin de 3000 de lei. (2)",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-69s6-13.json",
+      "source_text_sha256": "d6aa2360b062524ffc6b23552200746e237eaad41740c312b8b1fc4247d0ae74",
+      "source_context": "Articolul 6911. Cota de impozit\n\n(1) Cota impozitului pe venit constituie 1% din obiectul impunerii, dar nu mai puţin de 3000 de lei.\n\n(2) În prima perioadă fiscală, contribuabilul este în drept să diminueze suma impozitului pe venit datorat cu suma cheltuielilor suportate pentru procurarea echipamentului de casă și de control utilizat în activitate, cu excepția persoanelor care au beneficiat de compensarea sumei aferente procurării echipamentului de casă și de control.\n\n(3) Pentru contribuabilii care încetează activitatea pe parcursul perioadei fiscale, cota impozitului pe venit constituie 1% din obiectul impunerii, dar nu mai puţin de 250 de lei pentru fiecare lună în care a desfăşurat activitate.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application, full source conditions, every predecessor topic and both examples"
+    },
+    {
+      "id": "MD-PLAN-084",
+      "rule_or_figure": "Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified",
+      "Guide_section": "Rates, bands and thresholds; The base; Sources",
+      "act_article_or_official_section": "FiscalCode art6913",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 6913. Evidenţa persoanelor fizice ce desfăşoară activităţi independente (1) Serviciul Fiscal de Stat organizează ţinerea evidenţei şi monitoringul informaţiei privind fiecare subiect al",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-69s6-13.json",
+      "source_text_sha256": "d6aa2360b062524ffc6b23552200746e237eaad41740c312b8b1fc4247d0ae74",
+      "source_context": "Articolul 6913. Evidenţa persoanelor fizice ce desfăşoară\n\n                           activităţi independente\n\n(1) Serviciul Fiscal de Stat organizează ţinerea evidenţei şi monitoringul informaţiei privind fiecare subiect al impunerii.\n\n(2) Forma şi metodele de ţinere a evidenţei subiecţilor impunerii se stabilesc de către Serviciul Fiscal de Stat.\n\n(3) Pentru desfăşurarea activităţii independente subiectul se înregistrează la Serviciul Fiscal de Stat în baza cererii. Dovadă a înregistrării fiscale servește confirmarea luării în evidenţă fiscală. Subiecții impunerii au dreptul să desfășoare activități independente în domeniul comerțului, conform prezentului capitol, doar dacă au fost înregistrați la Serviciul Fiscal de Stat până la data de 1 iulie 2026.\n\nCapitolul 103\n\nREGIMUL FISCAL AL PERSOANELOR FIZICE CARE\n\nDESFĂŞOARĂ ACTIVITĂŢI ÎN DOMENIUL ACHIZIŢIILOR DE\n\nPRODUSE DIN FITOTEHNIE ŞI/SAU HORTICULTURĂ\n\nŞI/SAU DE OBIECTE ALE REGNULUI VEGETAL",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; verify actual Guide application, full source conditions, every predecessor topic and both examples"
     }
   ],
   "old_topic_destinations": [
@@ -1902,7 +2014,7 @@
   ],
   "baseline_old_units": 30,
   "old_bytes": 5942,
-  "new_bytes": 26804,
+  "new_bytes": 28315,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Unsupported20–50%savingsrange andblanketbestentity/salarysubstitute claims notadopted;fulloriginaltext/hash preserved andactualconditionalcomparison supplied.",
@@ -1910,5 +2022,12 @@
     "Secondary-source/research-verifiedwrapper andduplicatedmarketing/disclaimer consolidated;protectedteammetadata andexactstampedtail unchanged."
   ],
   "independent_old_topic_comparison": "PENDING WHOLE-COUNTRY REVIEW;everyoriginalparent andsplitclaim retained for comparison",
-  "remaining": "GuideSources andcountryREADME;topicmapping isnot independent review orcomprehensivecoverage"
+  "remaining": "GuideSources andcountryREADME;topicmapping isnot independent review orcomprehensivecoverage",
+  "subsequently_merged_public_predecessor": {
+    "PR": 1011,
+    "merged_main_commit": "7bf59a0bfc79c25d13ecc3d58062ba65df055aec",
+    "complete_destination_table": "ledgers/md-country-evidence/public-supporting-predecessor-reconciliation.json",
+    "units": 71,
+    "status": "WRITER MAPPING ONLY; full independent review pending"
+  }
 }

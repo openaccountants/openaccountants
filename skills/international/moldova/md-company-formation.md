@@ -9,16 +9,18 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 0.1
+version: 0.2
 ---
 
-# Moldova company formation and entity choice, 2026 v0.1
+# Moldova company formation and entity choice, 2026 v0.2
 
 ## Who this applies to
 
 Use this Guide to prepare an ordinary Moldovan SRL incorporation, compare the individual-entrepreneur registration route and screen an SA proposal. It supplies the current registration and continuing-compliance framework as read on 30 October 2026. It does not certify the full securities-registration procedure, regulated-sector approvals, every foreign-document treaty exemption or historical incorporation rules throughout 2026. Whole-country independent review is pending. [Law 135/2007 arts. 2, 9, 11–16][srl]; [Law 220/2007 arts. 7–14, 28, 35][register]; [Law 1134/1997 arts. 2–4, 38][sa].
 
 An SRL has legal personality and capital divided into participation interests. It is formed on State registration; the company answers with its assets, while members' liability has the exceptions in article 9, including unpaid subscribed contributions. One or more permitted individuals or legal entities can found it. An SA divides capital into shares and has its own company/securities requirements. An individual entrepreneur registers the individual under Law 220 article 28. These legal choices do not themselves prove entitlement to a tax incentive. Do not describe one as universally best, safest or most common without evidence about the proposed business. [Law 135 arts. 2, 9, 11][srl]; [Law 1134 arts. 2–4][sa]; [Law 220 art. 28][register].
+
+An ordinary SRL has no general numerical member cap. The article-11(4) exception limits a qualifying crowdfunding investment vehicle to **200 members**. A company board is compulsory with **more than 50 members**; at **50 members or fewer** the statute can provide for one. Build the actual governance arrangement into the statute rather than treating every multi-member SRL identically. [Law 135 arts. 11, 63][srl].
 
 ## Rates, bands and thresholds
 
@@ -29,10 +31,14 @@ An SRL has legal personality and capital divided into participation interests. I
 | SA minimum capital | **600,000 MDL** under the currently operative general SA law. The predecessor's 20,000 MDL figure is not the current article-38 floor | [Law 1134 art. 38(1)–(6)][sa] |
 | Standard company registration | ASP displays **1,149 MDL / 24 hours**; eligibility for its listed fee relief must be checked separately | [ASP current company-registration tariff][asp]; [Law 220 art. 4][register] |
 | Urgent company registration | ASP displays **4,596 MDL / four hours**; Law 220 has a **four-times** fee rule for the specified urgent registrations | [ASP tariff][asp]; [Law 220 art. 4(6)][register] |
+| Individual-entrepreneur registration | ASP displays **364 MDL / 24 hours** or **1,456 MDL / four hours**. Its separate relief footnote is conditional | [ASP individual-registration service][aspii] |
+| Paid name-service tracks | **71 MDL / three working days; 142 / 24 hours; 213 / four hours; 284 / one hour** | [ASP name-service tariff][aspname] |
 | Name reservation | On request, up to **six months**; name availability is checked before an online filing | [Law 220 art. 9(7)–(8)][register] |
 | Ordinary registration clock | **24 hours on a working day**, calculated from the working day immediately after the necessary documents were submitted | [Law 220 art. 5(2)][register] |
 
-The published agency fee is not a quotation for legal advice, translation, apostille, name services, bank charges or every ancillary service. ASP's relief footnote names Law 220 article 4, SME Law 179/2016 article 15, Law 39/2006 article 3 and Government Decision 707/2025 point 2. Eligibility and separate-service prices are not established here. Law 220 article 4(1) permits Government-set electronic/counter tariffs within the annex ceiling; use the current service and applicant category, not the old approximate “under 1,500” estimate. [Law 220 art. 4][register]; [ASP tariff and relief footnote][asp].
+The published agency fee is not a quotation for legal advice, translation, apostille, name services, bank charges or every ancillary service. ASP's relief footnote names Law 220 article 4, SME Law 179/2016 article 15, Law 39/2006 article 3 and Government Decision 707/2025 point 2. Relief eligibility and services other than the expressly quoted company, individual-registration and name tracks are not established here. Law 220 article 4(1) permits Government-set electronic/counter tariffs within the annex ceiling; use the current service and applicant category, not the old approximate “under 1,500” estimate. [Law 220 art. 4][register]; [ASP tariff and relief footnote][asp].
+
+The name-service table also displays **five working days / free**, marked with footnote 21 referring to Noncommercial Organisations Law 86/2020 article 13(4)–(5). Preserve that qualifier: this observation does not establish unconditional free or urgent service for every commercial company. Choose the actual entity/channel, term and applicable relief rather than adding every alternative tariff together. [ASP name-service table and footnote][aspname].
 
 ## The base
 
@@ -42,6 +48,8 @@ Identify founders, proposed name and registered office, actual activities and an
 
 Cash is the presumed contribution unless the statute provides otherwise. Permitted contributions include property, property/intellectual-property rights and money. For in-kind contributions, the statute sets how the members approve the valuation results; ownership passes to the company unless the statute provides otherwise. Members cannot simply demand return of paid-in capital while the company operates. Record amounts subscribed, paid and outstanding separately; a nominal capital entry does not prove payment or satisfy all creditor protections. [Law 135 arts. 21–23][srl].
 
+If State registration has not occurred within **three months from approval of the statute**, current Law 135 article 16(3) refers to Civil Code article 248(2). Do not replace the statutory approval-date trigger with the agency summary’s signing date or certify a founder’s release from contributions without reading the applicable Civil Code provision and actual constitution. That precise civil-law consequence remains a gap. [Law 135 art. 16(3)][srl].
+
 ### Assemble and submit the registration file
 
 1. Check the name and office. For online submission, verify name availability before filing. The registered office is entered from the constituting documents; article 10 places responsibility for authenticity on the entity and does not authorise a universal extra premises-proof demand. [Law 220 arts. 9–10][register].
@@ -50,7 +58,26 @@ Cash is the presumed contribution unless the statute provides otherwise. Permitt
 4. Submit Romanian documents electronically with the prescribed electronic signatures, on paper at the registrar or by registered post. A representative needs the legally valid authenticated power or qualifying electronic-register authorisation. The registrar can obtain official electronic information directly where article 8 permits; keep the receipt listing the application number/date, submitted documents and planned release date. [Law 220 art. 8][register].
 5. Pay the applicable registration charge and retain the complete-payment confirmation. Processing follows payment as specified in article 7(5). The registrar checks the file and issues registration or a reasoned refusal. Preserve the decision, statute and register information; the assigned **IDNO is also the entity's fiscal code**. The one-stop procedure transmits registration data for tax, statistical, medical and social records and gives the prescribed notice. This transmission does not prove a separate VAT-registration entitlement or fulfil every later filing. [Law 220 arts. 7(5), 11, 14][register]; [VAT Code art. 112][code].
 
-For individual-entrepreneur registration, article 28 prescribes the application, article-8 submission route, identity/capacity verification and one-stop notifications. Do not apply the company statute/capital checklist mechanically to an individual. A person already registered as an individual entrepreneur, or judicially disqualified from the activity, engages article 30's refusal conditions. The separate current individual-registration tariff and all profession-specific authorisations remain unverified here. [Law 220 arts. 28–30][register].
+For individual-entrepreneur registration, article 28 prescribes the application, article-8 submission route, identity/capacity verification and one-stop notifications. Do not apply the company statute/capital checklist mechanically to an individual. A person already registered as an individual entrepreneur, or judicially disqualified from the activity, engages article 30's refusal conditions. The current individual tariff and the ordinary application fields are supplied below; profession-specific authorisations remain separate. [Law 220 arts. 28–30][register].
+
+### Complete the actual individual-registration application
+
+The ASP individual-registration page links the current **3-6 application**, its separate instructions and **BE-8** beneficial-owner declaration. The application’s two pages, all three instruction pages and the declaration’s first page were retrieved and visually checked. These are blank filing templates, not a filed application or proof that an applicant qualifies. The separate legal-entity application and its beneficial-owner forms remain unverified. [ASP page][aspii]; [application][iiform]; [instructions][iiinstructions]; [BE-8][iibe8].
+
+| Application part | Completion method from the actual form/instructions |
+|---|---|
+| Submission and service | Enter the actual submission date and requested **24-hour or four-hour** track. The ordinary working-day clock is distinct from the date the applicant types on the form |
+| Individual identity | Name, personal identification number and valid identity-document data; domicile with postal code, street/building/apartment, locality/district and country; legible valid email and working phone/fax details |
+| Legal form and activities | The form states **individual entrepreneur**. Enter the actual CAEM-2 activity code and name; instruction 12 separately addresses the wording for licensed activities. Neither the form nor an activity code grants the required licence |
+| Beneficial owner | Complete the named person’s identity, birth and identity-document details, citizenship, domicile, residence country and contact fields using actual evidence. Do not substitute a corporate shareholder’s name for the required natural-person identification |
+| Professional office and duration | Complete the professional-office address **only if different from domicile**. Enter the actual expiry date for a fixed term, or unlimited duration as applicable |
+| Attachments and signature | List the supporting documents, reconcile the payment proof and beneficial-owner information on the current ASP checklist, and obtain the applicant’s or duly authorised representative’s signature. Apply the actual representation rule; a name typed into the form does not establish authority |
+
+The form acknowledges one-stop fiscal, statistical, medical and social registration and warns about false/incomplete information. Keep the accepted filing/registration confirmation; the acknowledgement is not evidence that this particular applicant has been registered. Form 3-6’s note repeats the **three-day** register-data-change duty already in Law 220 article 29. [Application pages 1–2][iiform]; [instructions points 6–17][iiinstructions]; [Law 220 arts. 28–30][register].
+
+**BE-8 is a separate declaration.** Its first page distinguishes the entrepreneur from a designated declarant and asks for the designation act’s name, number and date where applicable. It identifies the entrepreneur and natural-person beneficial owner, asks the stated PEP/family/close-associate questions and requires signature/date. The form says its annex is not attached when the PEP answer is “No”. Its printed **30-day** beneficial-owner-change undertaking must not be used to extend a separately applicable three-day register-data-change duty. The precise current Law 308/2017 article-14 interaction, designation/ownership tests and current PEP-list applicability remain unverified; the form’s checklist and the instructions’ older AML footnote do not settle them. Only BE-8 page 1 is used here; its five-page PEP annex has not been fully verified. [BE-8 page 1][iibe8]; [application note 3][iiform]; [Law 220 art. 29][register].
+
+The ASP page’s general-information reference says “Law 308/2018”, while its document list and BE-8 identify Law **308/2017**. Retain the inconsistency and use the actual applicable law before completing an ownership analysis. Do not treat that unreconciled year reference or the incomplete footnote as a replacement for current legislation. [ASP checklist/general information][aspii]; [BE-8][iibe8].
 
 ## Deadlines and filing
 
@@ -137,8 +164,15 @@ Read 30 October 2026. The formation ledger retains each source context, short or
 | [Accounting Law 287/2017, operative consolidation][accounts] | Scope, categories, framework, language/currency, responsibility, statement content/period, signing, audit, filing/publication and liability; future 2027 version not adopted | 2026-10-30 |
 | [Current Fiscal Code][code] | Selected income-tax period, category/deadline, VAT and payer-reporting rules retained in the core tax ledgers | 2026-10-30 |
 
-**Not yet confirmed:** actual current registration/application/beneficial-owner form attachments and completion fields; complete AML ownership identification and current fee-relief eligibility/other-service/individual tariffs; bank-specific account-opening/KYC procedure; full SA constitution/securities-registration and sector-capital/permit requirements; detailed BNS/SNC templates, public-interest determination and individual deadline rollover; all 2026 historical formation/amendment transitions and cross-border document treaty exemptions. The old SRL 1 MDL example, SA 20,000 MDL minimum, approximate fee and universal one-day completion were not retained as certified rules. Their subjects remain in the current method or precise gaps and in the archived original. No most-common-entity statistic, comprehensive country coverage or completed independent review is claimed.
+**Not yet confirmed:** actual current legal-entity registration/application/beneficial-owner attachments and completion fields; current AML ownership/designation/PEP analysis and the BE-8 thirty-day versus ordinary register three-day interaction; current fee-relief eligibility, the name table’s free-service qualifier and other unquoted service tariffs; Civil Code 248(2) consequences after three months without registration; bank-specific account-opening/KYC procedure; full SA constitution/securities-registration and sector-capital/permit requirements; detailed BNS/SNC templates, public-interest determination and individual deadline rollover; all 2026 historical formation/amendment transitions and cross-border document treaty exemptions. The old SRL 1 MDL example, SA 20,000 MDL minimum, approximate fee and universal one-day completion were not retained as certified rules. Their subjects remain in the current method or precise gaps and in the archived original. No most-common-entity statistic, comprehensive country coverage or completed independent review is claimed.
 
+Actual ASP individual application (two pages), instructions (three pages), BE-8 first page, individual-registration tariff and name-service tariff/requirements read 30 October 2026. The formation ledger binds their retained texts and PDF hashes. No full PEP-list or portal validation is claimed.
+
+[aspii]: https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-3-ii
+[aspname]: https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/223
+[iiform]: https://www.asp.gov.md/sites/default/files/servicii/formulare-tip/3/3-6.pdf
+[iiinstructions]: https://www.asp.gov.md/sites/default/files/servicii/formulare-tip/3/3-6.instructiuni.pdf
+[iibe8]: https://www.asp.gov.md/sites/default/files/servicii/formulare-tip/7/7-12.pdf
 [srl]: https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro
 [register]: https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro
 [sa]: https://www.legis.md/cautare/getResults?doc_id=154797&lang=ro

@@ -2,7 +2,7 @@
 
 **2026writerdraft. Whole-country independent review and stated ordinary/specialist procedure gaps remain open.**
 
-Guide SHA256: `b48d1bbf03dade952a37669403d11524ebde5ef02bcddae78191ad3495f9f2ca`. JSON retains short exact original-language quotations, full contexts, official URLs/read dates/hashes. Reviewer must verify actual Guide use, every condition, original topic and both computations.
+Guide SHA256: `e62930a705802c6f56b2340529aea987379c588217cab02bc6a7e696f19ee42c`. JSON retains short exact original-language quotations, full contexts, official URLs/read dates/hashes. Reviewer must verify actual Guide use, every condition, original topic and both computations.
 
 |ID|Rule/figure|Guide section|Act/article and source|Short exact quote|Read|
 |---|---|---|---|---|---|
@@ -82,6 +82,14 @@ Guide SHA256: `b48d1bbf03dade952a37669403d11524ebde5ef02bcddae78191ad3495f9f2ca`
 | MD-PLAN-074 | DirectmonthlyIU17account611salesamendment;not fullformretrieval | Who this applies to; Rates, bands and thresholds; The base; Deadlines and filing; Penalties and interest; Sources | [MFOrder59/2026 point2](https://www.legis.md/cautare/getResults?doc_id=154274&lang=ro) | 2. Ordinul ministrului finanțelor nr.135/2017 cu privire la aprobarea formularelor dărilor de seamă ce vizează impozitul unic datorat de rezidenții parcurilor pentru tehnologia informației | 2026-10-30 |
 | MD-PLAN-075 | Law41 replaces1.5m by1.7m in54^1(3)/(3^1) | The base: Compare4%SME andordinarysystems; Sources | [Law41/2026 artI(1)](https://www.legis.md/cautare/getResults?doc_id=153667&lang=ro) | 1. La articolul 541 alineatul (3) litera a) și alineatul (31), textul „1,5 milioane” se substituie cu textul „1,7 milioane”. 2. La articolul 84 | 2026-10-30 |
 | MD-PLAN-076 | Law41effectivepublication27March exceptmedical-deviceVATMay1; period application for corrected-election/sanction rules | The base: Compare4%SME andordinarysystems; Sources | [Law41/2026 artX(1)-(2)](https://www.legis.md/cautare/getResults?doc_id=153667&lang=ro) | Art. X. – (1) Prin derogare de la prevederile art. 56 alin. (2) din Legea nr. 100/2017 cu privire la actele normative, prezenta lege | 2026-10-30 |
+| MD-PLAN-077 | Governmentcreationdecisionfixesactualparkterm;20yearstatutoryceilingnotindividualguarantee | The base: Establish IT-park status | [Law77/2016 art9(1)-(2)](https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro) | Articolul 9. Crearea parcului pentru tehnologia informației (1) Parcul este creat în baza unei hotărîri de Guvern, la propunerea Ministerului Dezvoltării Economice și Digitalizării. | 2026-10-30 |
+| MD-PLAN-078 | Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified | Rates, bands and thresholds; The base; Sources | [FiscalCode art6920](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 6920. Sfera aplicării Prezentul regim fiscal se aplică exclusiv activităților economice independente desfășurate în domeniul prestării serviciilor. | 2026-10-30 |
+| MD-PLAN-079 | Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified | Rates, bands and thresholds; The base; Sources | [FiscalCode art6921](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 6921. Subiecții impunerii (1) Subiecți ai impunerii, conform prezentului capitol, sunt antreprenorii independenți, luați în evidență de Agenția Servicii Publice în condițiile Legii | 2026-10-30 |
+| MD-PLAN-080 | Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified | Rates, bands and thresholds; The base; Sources | [FiscalCode art6925](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 6925. Cota și componența impozitului unic (1) Cota impozitului unic constituie 15% din obiectul impunerii în cazul în care venitul anual al antreprenorului | 2026-10-30 |
+| MD-PLAN-081 | Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified | Rates, bands and thresholds; The base; Sources | [FiscalCode art6926](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 6926. Modul de calculare și achitare (1) Calcularea impozitului unic se efectuează prin aplicarea cotei impozitului asupra venitului obținut din activități economice independente | 2026-10-30 |
+| MD-PLAN-082 | Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified | Rates, bands and thresholds; The base; Sources | [FiscalCode art696](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 696. Sfera aplicării Prezentul regim fiscal se aplică numai activităţilor independente desfăşurate în domeniul comerţului cu amănuntul (cu excepţia mărfurilor supuse accizelor). | 2026-10-30 |
+| MD-PLAN-083 | Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified | Rates, bands and thresholds; The base; Sources | [FiscalCode art6911](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 6911. Cota de impozit (1) Cota impozitului pe venit constituie 1% din obiectul impunerii, dar nu mai puţin de 3000 de lei. (2) | 2026-10-30 |
+| MD-PLAN-084 | Actualseparateindependentservice/retailregime:scope,registration,definedrate/minimum,annualtopuporcurrentcutoff;fullhistoriccommencementnotcertified | Rates, bands and thresholds; The base; Sources | [FiscalCode art6913](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 6913. Evidenţa persoanelor fizice ce desfăşoară activităţi independente (1) Serviciul Fiscal de Stat organizează ţinerea evidenţei şi monitoringul informaţiei privind fiecare subiect al | 2026-10-30 |
 
 ## Complete predecessor-topic destinations
 
@@ -151,9 +159,13 @@ Guide SHA256: `b48d1bbf03dade952a37669403d11524ebde5ef02bcddae78191ad3495f9f2ca`
 
 ## Removed and why
 
-Original 5942bytes;draft 26804bytes;morethan25%shorter: False.
+Original 5942bytes;draft 28315bytes;morethan25%shorter: False.
 - Unsupported20–50%savingsrange andblanketbestentity/salarysubstitute claims notadopted;fulloriginaltext/hash preserved andactualconditionalcomparison supplied.
 - Universal non-IT ban andautomatic single-client reclassification replacedbycurrent70%cumulative/base andspecificlabour/taxconditions.
 - Secondary-source/research-verifiedwrapper andduplicatedmarketing/disclaimer consolidated;protectedteammetadata andexactstampedtail unchanged.
 
 Independentlegalassumption/source/old-topicreview andanylost-content-restoredcountremainpending.
+
+## Subsequently merged public predecessor
+
+PR #1011 contributes 71 additional pre-CTA units, all mapped in [the complete supporting-predecessor table](md-country-evidence/public-supporting-predecessor-reconciliation.md). Its JSON retains the full incoming file, unit hashes and current Guide hash. These are writer destinations, not independent source/application approval or comprehensive country coverage.
