@@ -1,10 +1,10 @@
 ---
 name: croatia-income-tax
 description: "Use this skill for Croatian personal income tax (porez na dohodak) for the 2026 tax year (calendar year). It covers residence, the two annual rates set by each town or municipality inside the legal ranges (lower rate up to EUR 60,000 of base, higher rate above), the default 20% / 30%, the EUR 600 monthly personal allowance and the dependant and disability coefficients, employment income and monthly withholding, the youth and returnee reliefs, self-employed income from books (obrt, free professions), the lump-sum paušalni obrt and its seven 2026 bands, final taxes on interest, dividends and capital gains (12%), rent (12%), property disposals (24%), the annual return, deadlines and fines. Trigger on: porez na dohodak, osobni odbitak, paušalni obrt, PO-SD, DOH, JOPPD, Croatian salary tax, Zagreb tax rate, dividend tax Croatia. Out of scope: hr-cross-border (treaties, non-resident withholding), croatia-payroll and croatia-social-contributions, croatia-vat-return, hr-corporate-income-tax, hr-transfer-pricing, croatia-tax-optimization."
-version: 0.2
+version: 0.3
 jurisdiction: HR
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 This skill covers personal income tax in Croatia for 2026. The law is the Income Tax Act (Zakon o porezu na dohodak, "ZPD"), Narodne novine 115/16, 106/18, 121/19, 32/20, 138/20, 151/22, 114/23 and 152/24. The Tax Administration (Porezna uprava) keeps a consolidated text in force from 1 January 2025. The authority is the Tax Administration of the Ministry of Finance. The currency is the euro. The tax year is the calendar year (art. 7).
 
-Detail lives in the sibling skills. Read [hr-cross-border](hr-cross-border.md) for residence tie-breakers, non-residents, treaty forms and withholding on payments abroad, [hr-corporate-income-tax](hr-corporate-income-tax.md) for companies and for an obrt that opts into profit tax, and [hr-transfer-pricing](hr-transfer-pricing.md) for related-party pricing. Read [croatia-payroll](croatia-payroll.md) for the full gross-to-net and the JOPPD report, [croatia-social-contributions](croatia-social-contributions.md) for contributions and [croatia-vat-return](croatia-vat-return.md) for VAT; those three still carry 2025 figures.
+Detail lives in the sibling skills. Read [hr-cross-border](hr-cross-border.md) for residence tie-breakers, non-residents, treaty forms and withholding on payments abroad, [hr-corporate-income-tax](hr-corporate-income-tax.md) for companies and for an obrt that opts into profit tax, and [hr-transfer-pricing](hr-transfer-pricing.md) for related-party pricing. Read [croatia-payroll](croatia-payroll.md) for the full gross-to-net and the JOPPD report, [croatia-social-contributions](croatia-social-contributions.md) for contributions and [croatia-vat-return](croatia-vat-return.md) for VAT.
 
 **What changed for 2026.** The Act itself did not change for 2026. The last amendment, NN 152/2024, took effect on 1 January 2025. It raised the basic allowance from EUR 560 to EUR 600 a month, moved the band limit from EUR 50,400 to EUR 60,000 a year (EUR 5,000 a month for withholding), narrowed the local rate ranges, added the five-year relief for returning emigrants, and tightened the rules on property sales and rent. What does change in 2026:
 
