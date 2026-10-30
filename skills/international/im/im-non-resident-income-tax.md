@@ -1,200 +1,220 @@
 ---
 name: im-non-resident-income-tax
 description: >
-  Prepare Isle of Man non-resident individual income-tax workpapers for
-  2026/27: distinguish taxable and exempt source income, apply the published
-  rate, reconcile payer deductions, and identify returns and pension-relief
-  applications. Residence, treaty entitlement and full statutory review remain open.
+  Use this skill for Isle of Man income tax on individuals who are not resident
+  in the Island, for the 2026/27 tax year (6 April 2026 to 5 April 2027). It covers
+  the 21% non-resident rate with no personal allowance, which Manx income is
+  taxable and which is excluded (Manx bank interest, Manx company dividends, the
+  Manx State Pension), the section 11A limit on tax, the non-resident return due
+  6 October, payer deductions under notice N15 with forms N13, N20, N35 and N37,
+  the HR code for non-resident employees, pension relief on form R221, and the
+  UK treaty rules on residence, employment, directors, pensions, government
+  service, entitlement and mutual agreement. Trigger on: Isle of Man non-resident
+  tax, Manx rent non-resident landlord, N15 notice, R221 pension relief, HR tax
+  code, UK resident with Isle of Man pension. Out of scope: residents
+  (im-income-tax), companies and permanent establishments (im-corporate-income-tax),
+  National Insurance (im-payroll-social).
 jurisdiction: IM
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
-version: 0.3
+last_updated: 2026-10-30
+version: 0.4
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Isle of Man non-resident individual income tax v0.3
+# Isle of Man: income tax on non-resident individuals (2026/27) v0.4
+
+This skill covers individuals who are not resident in the Isle of Man and receive Manx income, and the people who pay them. The year is **6 April 2026 to 5 April 2027**. The law is the Income Tax Act 1970 (AT 3 of 1970); the authority is the Income Tax Division of the Treasury. Residence itself is decided under [im-income-tax](im-income-tax.md) (six-month test, 90-day practice, departures); companies and permanent establishments are in [im-corporate-income-tax](im-corporate-income-tax.md); related-party treaty adjustments are in [im-related-party-uk-treaty](im-related-party-uk-treaty.md).
 
 ## Who this applies to
 
-This draft addresses individuals already established to be non-resident who receive Isle of Man income, and the people making taxable payments to them. It does not determine residence, company taxation, permanent establishments or National Insurance. The period is **6 April 2026 to 5 April 2027**, not calendar 2026. [Government rates table][rates]
-
-The government identifies rents and occupational/private pensions as examples of continuing taxable Manx-source income after departure. It identifies Manx bank/building-society interest, dividends and the Manx State Pension as non-taxable to non-residents. Classify the actual income before applying the rate; do not treat every payment from a Manx account as taxable, or every payment called interest as exempt. [Leaving the Island][leaving]
-
-This is a source-cited draft using tax-authority guidance read on 23 October 2026. Several pages were available through the search index but rejected direct browser retrieval. Statutory cross-checks, complete income-category exceptions, treaty entitlement and independent review remain outstanding.
+- **Non-resident individuals with Manx income.** A person not resident pays tax at the prescribed rate on every pound of Manx income, meaning income from a trade, profession, employment or vocation carried on in the Island and income from any other source in the Island (ITA 1970 s.1(3), (3A)).
+- **Typical taxable income** after leaving: Manx rents and Manx occupational or private pensions (Leaving the Island page).
+- **Income not taxable to non-residents:** Manx bank and building society interest, dividends and the Manx State Pension (Leaving the Island page). In law this works through the section 11A limit on excluded income (see The base).
+- **Payers.** Anyone paying rent, interest or similar payments to a person resident outside the Island is required by the Division to deduct tax (Making payments to non-residents page). Employers of non-resident employees apply code HR (Non-resident employees page).
+- **Couples.** Non-resident spouses and civil partners cannot elect joint taxation; each is taxed on their own income (Receiving Isle of Man source income page; ITA 1970 s.35C(2)).
+- **Part years.** A person who becomes resident or ceases residence during the year gets both a resident and a non-resident allowance, each apportioned by date (Receiving Isle of Man source income page; s.35D). This skill works full-year non-residence; for the resident part see [im-income-tax](im-income-tax.md).
 
 ## Rates, bands and thresholds
 
-| Item | 2026/27 rule |
+| Item | Amount | Tax year | Source |
+|---|---|---|---|
+| Non-resident rate on all Manx taxable income | 21% | 2026/27 (also 2025/26) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ ; PN 227/26; Budget 2026 page |
+| Non-resident personal allowance | GBP 0 | 2026/27 | rates page; ITA 1970 s.35C(1) |
+| Rate on non-corporate entities other than individuals | 21% | 2026/27 | PN 227/26; Budget 2026 page |
+| Payer deduction | the prescribed higher rate (21%) | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/making-payments-to-non-residents/ ; rates page |
+| Remittance of tax deducted (form N35) | within 14 days of making the payment | 2026/27 | Making payments to non-residents page |
+| Non-resident return due | 6 October after the tax year (6 October 2027 for 2026/27) | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/ |
+| Late non-resident return penalty | GBP 100 | 2026/27 | Receiving Isle of Man source income page |
+| UK treaty, employment presence limit | 183 days in any twelve-month period starting or ending in the fiscal year | from 6 April 2019 | SI 2018/1347 Article 14(2) |
+| UK treaty, mutual agreement time limit | 3 years from first notification of the action | from 6 April 2019 | SI 2018/1347 Article 25(1) |
+
+The rate was 22% for 2024/25 and 20% for 2023/24 and earlier (rates page, historic table). Practice Note PN 130/06 still shows a GBP 2,000 allowance and 18% rate from 2006; the Division warns those figures are historical (Receiving Isle of Man source income page; Leaving the Island page).
+
+## The base
+
+### Step 1: classify each item of Manx income
+
+List every Manx-source receipt and sort it into taxable income, excluded income and treaty-relieved income. Do not treat every payment from a Manx account as taxable, or every payment called interest as excluded.
+
+### Step 2: excluded income and the section 11A limit
+
+For an individual not resident for the whole year, tax cannot exceed the sum of (a) the tax that would be due on total Manx income reduced by excluded income and (b) the tax actually deducted at source from excluded income, ignoring the personal allowance (ITA 1970 s.11A(1)). Excluded income is (s.11A(2)):
+
+- dividends paid by a company incorporated under the Companies Acts 1931 to 2004 or registered under the Foreign Companies Act 2014;
+- deposit interest paid by a holder of a deposit-taking licence under section 7 of the Financial Services Act 2008;
+- interest or dividends paid by a building society authorised under the Building Societies Act 1986;
+- interest or dividends on Isle of Man Government bonds (Isle of Man Loans Act 1974) and on local authority securities (Local Government Act 1985 s.50);
+- social security benefits chargeable under section 48;
+- national insurance retirement pensions paid by the Treasury;
+- other income designated by Treasury order approved by Tynwald.
+
+Income from a trade or profession carried on in the Island through a representative or branch is not excluded income (s.11A(2)). The limit does not apply to non-resident trustees where a beneficiary is resident in the Island (s.11A(4)).
+
+### Step 3: tax on the remaining income
+
+Charge 21% on the taxable Manx income with no allowance (s.1(3), s.35C; rates page). Allowable expenses and the taxable amount must be established first: tax withheld from a gross payment does not by itself fix the taxable base. Do not apply the resident 10% band or resident allowances to a full-year non-resident.
+
+### Step 4: credits
+
+Deduct tax withheld by payers (N13 certificates), PAYE-style deductions under code HR and any accepted treaty relief.
+
+## Deadlines and filing
+
+**Recipient's return.** Non-residents with Manx income such as rent or pensions receive a return issued on 6 April for the year ended the previous 5 April. Every item of income goes on it and it is due by the following 6 October (Receiving Isle of Man source income page). For 2026/27: issued 6 April 2027, due 6 October 2027. Guidance Note GN1NR is the non-resident return guide.
+
+**Payer procedure.** When the Division learns that a person is paying a non-resident, it issues (Making payments to non-residents page):
+
+| Form | Purpose |
 |---|---|
-| Published non-resident individual income-tax rate | 21% |
-| Non-resident personal allowance | GBP 0 |
-| Tax year | 6 April to 5 April |
+| N15 | Notice to deduct tax from all future payments |
+| N13 | Certificate of tax deducted: gross payment, tax deducted and net amount paid, sent to the recipient with the balance |
+| N20 | Estate agent registration of a new property rented by a non-resident landlord, sent to the Division |
+| N35 | Remittance card sent with the tax within 14 days of making the payment |
+| N37 | Annual return at the tax year end listing all payments in the year |
+| R221 | Application by a resident of a treaty country for a Manx pension to be paid without deduction, or for repayment of tax deducted |
 
-[Government rates table][rates]. The historical table also gives 21% for 2025/26. Do not reuse the former 20% rate or apply resident allowances and the resident standard-rate band to a full-year non-resident calculation. The 2026 budget confirms the 21% rate for taxable income of non-resident individuals and non-corporate entities. [Budget 2026][budget]
+A common case is a letting agent collecting rent for a non-resident owner. Reconcile N13 certificates and N35 remittances to the payer's ledger and the recipient's return.
 
-## The base and the recipient's return
+**Employers.** A non-resident employee has no personal allowance and the employer applies code HR. If all duties are performed outside the Island, no tax need be deducted, but only after prior clearance from the Division; without clearance code HR applies. If only part of the duties are performed in the Island, tax is deducted from the whole remuneration (Non-resident employees page). Do not prorate payroll deductions on a day count without clearance; treaty relief is claimed through the Division.
 
-Separate taxable source income, exempt income, any treaty-relieved income and payer deductions. Establish allowable expenses and taxable profit before calculating final liability; tax withheld from a gross payment does not by itself establish the final taxable base.
+**Pension relief (form R221).** By default the non-resident rate is deducted from every Manx occupational or private pension until an application is made and accepted. The R221 is sent first to the tax authority of the new country of residence to confirm residence, then to the Income Tax Division (Leaving the Island page; Non-resident pensioners page). For UK residents, a successful claim means future payments are made gross and tax deducted since 6 April 2009 is refunded (Non-resident pensioners page).
 
-The government's non-resident guidance says returns are issued on 6 April for the year ended the previous day and are due by the following **6 October**. It states a GBP 100 penalty for missing that deadline. For 2026/27, that means a return issued on 6 April 2027 and due on 6 October 2027 under the published rule. Further penalties, payment deadlines and individual notices require separate checking. [Receiving Manx-source income][receiving]
+## Penalties and interest
 
-That page warns that its linked 2006 practice note contains historical rates and allowances. Use the relevant year's rates table. It also states that non-resident couples cannot elect joint taxation; each accounts for their own income. Part-year arrival/departure cases require separate apportionment and residence work, rather than this full-year illustration. [Receiving Manx-source income][receiving]
+- **Late non-resident return:** GBP 100 if not submitted by 6 October (Receiving Isle of Man source income page).
+- **Payers:** tax deducted is remitted with the N35 within 14 days of payment (Making payments to non-residents page).
+- Further penalties for non-residents, the payment date of a non-resident assessment, and penalties on payers who fail to deduct are on the Not yet confirmed line. Late payment interest for individuals generally is in [im-income-tax](im-income-tax.md).
 
-## Payer deductions and records
+## Cross-border points
 
-The tax authority's payment guidance describes deduction at the prescribed higher rate and these documents. Apply it to a payment established to be within the deduction obligation; the listed income exemptions and any authorised relief still matter. [Making payments][payments]
+### Treaty relief in general
 
-| Document | Purpose |
-|---|---|
-| N15 | Authority's instruction to deduct from future payments |
-| N13 | Recipient certificate recording gross payment, deduction and net payment |
-| N20 | Estate agent registration of a new non-resident landlord's property |
-| N35 | Remittance card sent with tax within 14 days of making the payment |
-| N37 | Year-end payer return recording payments |
-| R221 | Application for treaty relief or repayment on qualifying Manx pension income |
+R221 relief applies only where the relevant agreement gives relief from Manx tax on pension income arising in the Island; a foreign address alone is not enough (Making payments to non-residents page). Under the Ireland agreement, occupational pensions ("in consideration of past employment") are taxable only in Ireland, but private pensions are not covered and Isle of Man Government pensions stay taxable in the Island (Non-resident pensioners page). Other corridors: read the agreement itself.
 
-[Making payments][payments]. Reconcile certificates and remittances to the payer ledger and the recipient's return. A deduction notice or treaty-relief application must be examined for its actual recipient, payment and effective period. No electronic submission route or holiday extension has been verified here.
+### UK corridor (2018 agreement, SI 2018/1347)
 
-## Employment performed on and off the Island
+HMRC lists the 2018 agreement as in force (it entered into force on 19 December 2018) and the 1955 arrangement, 2013 exchange of letters and 2016 protocol as terminated (HMRC treaty collection).
 
-Government employer guidance directs use of code **HR** for a non-resident employee with no personal allowance. For duties wholly outside the Island, it requires prior Income Tax Division clearance before omitting deductions. For duties partly performed on the Island, it directs HR deductions on the whole remuneration. Do not unilaterally prorate payroll withholding using a day-count spreadsheet; resolve any relief through the applicable clearance or assessment procedure. [Non-resident employees][employment]
-
-This is an employer withholding instruction, not a conclusion that every payment is ultimately taxable in full regardless of a treaty. Final relief, residence, workdays, employer identity and treaty conditions remain case-specific checks.
-
-## Treaty and pension relief
-
-R221 is the authority's route described for residents of a treaty jurisdiction whose agreement provides relevant pension relief. A foreign address alone is insufficient. Verify the actual agreement, income article, residence evidence and relief decision before treating a pension as exempt. [Making payments][payments]
-
-For the UK corridor, HMRC lists the 2018 agreement as in force and the previous 1955 arrangement as terminated. Its collection includes later exchange-of-letters and memorandum material. The following section develops the UK pension route only; other treaty corridors remain unverified. [HMRC treaty collection][uk]
-
-### UK corridor: residence and pension classification
-
-Under Article 4(1), treaty residence depends on liability to tax by a residence-type criterion; source-only liability is insufficient. For an individual resident in both territories, Article 4(2) considers permanent home, then centre of vital interests if a home exists in both, then habitual abode where required. If habitual abode is in both or neither, the competent authorities resolve the case by agreement. Do not insert a nationality tie-breaker that this text does not contain. Preserve the residence evidence before applying the pension article. [2018 agreement, Article 4][treaty]
-
-Article 17 assigns pensions and similar remuneration to the individual's treaty-residence territory only, **subject to Article 18**. Thus a Manx ordinary pension paid to an eligible UK treaty-resident individual falls within UK-only taxing rights under Article 17, once classification and entitlement are established. This allocates taxing rights; it does not determine the UK taxable amount or make the pension tax-free everywhere. Use the R221 application process and obtain the relevant deduction/relief instruction rather than independently stopping withholding. [Article 17][treaty]; [Making payments][payments]
-
-Article 18 contains a separate government-service rule. For remuneration including pensions paid by one government for services discharging governmental functions, the exemption in the other territory depends on ordinary residence there. For remuneration other than a pension, it also addresses residence solely to render those services. It excludes payments for services connected with a government's profit-making trade or business. Record the actual government payer, former duties, ordinary-residence facts and any commercial activity; do not use a standard “government pension always taxable only at source” shortcut. A case outside the stated exemption needs a separate domestic-law and treaty analysis. [Article 18][treaty]
-
-Article 23 denies benefits where obtaining them was one of an arrangement's principal purposes, unless granting them accords with the relevant treaty provisions' object and purpose. Its competent-authority relief mechanism requires a request and assessment; residence documentation alone does not resolve every entitlement question. [Article 23][treaty]
-
-### UK corridor: employment and the 183-day exception
-
-Article 14(1) permits taxation where employment is exercised, subject to its specified exceptions. Article 14(2) reserves taxation to the residence territory only when **all three conditions** hold:
-
-- Presence in the work territory totals no more than 183 days in any twelve-month period commencing or ending in the fiscal year concerned.
-- The employer paying, or on whose behalf remuneration is paid, is not resident in the work territory.
-- That remuneration is not borne by the employer's PE there.
-
-[2018 agreement, Article 14][treaty]. Exactly 183 days satisfies the presence limb; it does not establish the other two conditions. A calendar-year reset does not replace the treaty's twelve-month test. Collect travel records, employer residence, contracts and payroll/recharge evidence. Apply this after treaty residence and entitlement are established, alongside the payroll-clearance procedure above.
-
-Directors' fees have their own Article 15 rule. Article 14(3) separately addresses employment aboard ships/aircraft in international traffic. Offshore activities require Article 21 review. Do not apply this ordinary-employment checklist to those categories without classification. [Articles 14–15 and 21][treaty]
-
-### Disputed treaty treatment
-
-Article 25(1) permits presenting a case to either competent authority within **three years of the first notification** of the action producing treaty-inconsistent taxation, independently of domestic remedies. Record that notification and protect domestic appeal deadlines separately. This Guide does not establish that a treaty request suspends payment or collection. [Article 25][treaty]
-
-The 2024 memorandum governs the treaty's arbitration procedure. A request must identify the case and include statements about prior court or tribunal decisions. Its information requirements cover parties, relevant treaty provisions, facts, periods, amounts, analysis and supporting correspondence. This is not an automatic refund process; the full timing and admissibility conditions require case-specific review. [2024 memorandum, Parts 1–2][mou]
+- **Residence (Article 4).** A resident is a person liable to tax by reason of domicile, residence, place of management, incorporation or a similar criterion; liability on source income only does not count (Art. 4(1)). For an individual resident in both: permanent home; if a home in both, centre of vital interests; if that cannot be determined or there is no home in either, habitual abode; if habitual abode in both or neither, mutual agreement (Art. 4(2)). There is no nationality step.
+- **Pensions (Article 17).** Pensions and similar remuneration paid to a resident of one territory are taxable only in that territory, subject to Article 18. So a Manx occupational, personal or group personal pension paid to a UK treaty resident is taxable only in the UK once the R221 claim is accepted (Non-resident pensioners page). The UK taxable amount is a separate calculation.
+- **Government service (Article 18).** Remuneration, including pensions, paid by one government for services in the discharge of governmental functions is exempt in the other territory if the individual is not ordinarily resident there, or (for remuneration other than a pension) is ordinarily resident there solely to render those services. This does not apply to services connected with a government trade or business carried on for profit. The Division applies the pension article to Isle of Man Government pensions paid to individuals resident and ordinarily resident in the UK (Non-resident pensioners page).
+- **Employment (Article 14).** Employment income may be taxed where the employment is exercised (Art. 14(1)). It is taxable only in the residence territory if **all three** conditions hold: presence in the work territory not exceeding 183 days in aggregate in any twelve-month period starting or ending in the fiscal year; paid by or for an employer not resident in the work territory; not borne by the employer's permanent establishment there (Art. 14(2)). Exactly 183 days meets the presence limb. Employment aboard a ship or aircraft in international traffic (other than solely within the other territory) is taxable only in the residence territory (Art. 14(3)). The Division's own summary of Article 14 on its double taxation relief page reads the conditions as alternatives; the treaty text, which joins them with "and", governs.
+- **Directors (Article 15).** Directors' fees paid by a company resident in the other territory may be taxed there.
+- **Offshore activities (Article 21)** override the other articles for seabed exploration and exploitation; review them separately.
+- **Entitlement (Article 23).** A benefit is denied where obtaining it was one of the principal purposes of an arrangement, unless granting it accords with the object and purpose of the provision; the competent authority may still grant it on request after considering the facts (Art. 23(1), (2)).
+- **Mutual agreement (Article 25).** A person may present a case to either competent authority within three years from the first notification of the action giving rise to taxation not in accordance with the agreement, whatever the domestic remedies (Art. 25(1)). Keep domestic appeal deadlines running in parallel. The 2024 memorandum of understanding sets the arbitration process under Article 25: a written request identifying the case, with a statement from each person directly affected that no court or tribunal decision has been given on the same issues (Part 1), and minimum information covering identity, the treaty provisions at issue, facts, analysis and parallel requests (Part 2).
 
 ## Worked examples
 
-### 1. Full-year non-resident taxable income
+### Example 1: non-resident landlord, deduction against final liability
 
-Assume GBP 18,000 is the correctly determined taxable income after category, expense and treaty review, the individual is non-resident throughout 2026/27, and there is no other relief. At 21%, liability before credits is GBP 3,780. This is not a calculation of allowable rental expenses from gross rent.
+A UK-resident individual owns a Douglas flat let through a Manx letting agent for 2026/27. Gross rent is GBP 24,000. Under an N15 notice the agent deducts 21% from each payment, GBP 5,040 in the year, remits it with N35 cards and issues N13 certificates. After expenses, taxable rental income is established at GBP 18,000. Tax at 21% with no allowance is GBP 3,780, so GBP 1,260 of the tax deducted is repayable on the non-resident return due 6 October 2027. (Article 6 of the UK treaty lets the Island tax the rent first.)
 
 ```oa-check
-name: Isle of Man 2026 non-resident taxable income
+name: IM non-resident landlord, deduction vs liability (2026/27)
 inputs:
-  established_taxable_income: 18000
-  applicable_rate: 0.21
+  gross_rent: 24000
+  taxable_rent: 18000
+  rate: 21
 steps:
-  liability_before_credits: established_taxable_income * applicable_rate
+  - deducted: pct(gross_rent, rate)
+  - liability: pct(taxable_rent, rate)
+  - repayable: deducted - liability
 expected:
-  liability_before_credits: 3780
+  deducted: 5040.00
+  liability: 3780.00
+  repayable: 1260.00
 ```
 
-### 2. Payer deduction and cash reconciliation
+### Example 2: excluded income and the section 11A limit
 
-Assume an N15-covered GBP 2,000 payment to a non-resident individual in 2026/27, subject to the published 21% rate, with no authorised exemption or net-of-tax promise. Deduct GBP 420 and pay GBP 1,580 to the recipient. Record both on the certificate and track remittance separately. This cash split does not settle the recipient's annual liability.
-
-```oa-check
-name: Isle of Man non-resident payer cash split
-inputs:
-  gross_payment: 2000
-  deduction_rate: 0.21
-steps:
-  withheld_tax: gross_payment * deduction_rate
-  recipient_cash: gross_payment - withheld_tax
-  reconciled_payment: withheld_tax + recipient_cash
-expected:
-  withheld_tax: 420
-  recipient_cash: 1580
-  reconciled_payment: 2000
-```
-
-### 3. Pension deduction pending accepted treaty relief
-
-Assume a UK treaty-resident individual receives GBP 12,000 of ordinary Manx pension, Article 17 applies, Article 18 does not, and entitlement is accepted after GBP 2,520 has been withheld at 21%. The Manx tax under the assumed treaty conclusion is zero, so the amount to reconcile in the relief/repayment application is GBP 2,520. UK liability is a separate calculation. This example does not assume that filing R221 itself produces approval or payment.
+The same landlord also receives GBP 3,000 of deposit interest from a licensed Manx bank and GBP 5,000 of dividends from a Manx company, with no tax deducted from either. Without section 11A the tax would be 21% of GBP 26,000, GBP 5,460. The limit is the tax on income reduced by excluded income (21% of GBP 18,000, GBP 3,780) plus tax deducted from excluded income (nil). Tax payable is the lower amount, GBP 3,780: the interest and dividends add no tax.
 
 ```oa-check
-name: Isle of Man UK ordinary pension relief reconciliation
+name: IM non-resident, s.11A limit with excluded income (2026/27)
 inputs:
-  gross_pension: 12000
-  rate_used_before_relief: 0.21
-  accepted_manx_treaty_tax: 0
+  taxable_rent: 18000
+  bank_interest: 3000
+  dividends: 5000
+  tax_deducted_excluded: 0
+  rate: 21
 steps:
-  tax_previously_withheld: gross_pension * rate_used_before_relief
-  amount_to_reconcile_for_repayment: tax_previously_withheld - accepted_manx_treaty_tax
+  - tax_without_limit: pct(taxable_rent + bank_interest + dividends, rate)
+  - limit: pct(taxable_rent, rate) + tax_deducted_excluded
+  - tax_payable: min(tax_without_limit, limit)
 expected:
-  tax_previously_withheld: 2520
-  amount_to_reconcile_for_repayment: 2520
-```
-
-### 4. Aggregate visits before testing the employment exception
-
-Assume non-overlapping visits of 70, 65 and 50 days all fall within one relevant twelve-month period. Their total is 185 days, exceeding 183 by two. The presence limb fails for that assumed period; a complete conclusion still requires the remaining treaty and domestic analysis. This example does not prescribe a legal day-count convention or determine residence.
-
-```oa-check
-name: Isle of Man UK employment aggregate presence
-inputs:
-  first_visit: 70
-  second_visit: 65
-  third_visit: 50
-  treaty_presence_limit: 183
-steps:
-  total_presence: first_visit + second_visit + third_visit
-  days_over_limit: total_presence - treaty_presence_limit
-expected:
-  total_presence: 185
-  days_over_limit: 2
+  tax_without_limit: 5460.00
+  limit: 3780.00
+  tax_payable: 3780.00
 ```
 
 ## Ask the client first
 
-- What establishes non-residence, and on what dates did residence change?
-- Which income categories, gross amounts, expenses and ownership shares are involved?
-- What N15 instructions, certificates, remittance records and returns exist?
-- Where were employment duties performed, and is written clearance available?
-- What treaty residence and pension-relief evidence supports the claimed treatment?
+1. On what date did you stop being resident in the Island (or have you never been resident), and where are you resident now?
+2. What Manx income do you receive (rent, pensions, employment, interest, dividends), from which payer, and what has been deducted?
+3. Which N15 notices, N13 certificates, R221 applications or clearances do you or your payer hold?
+4. For employment: where are the duties performed, how many days were you in the Island in each twelve-month period, and who pays and bears your salary?
+5. For a pension: is it occupational, private or government, and has your new tax authority confirmed your residence on the R221?
 
-## Sources and review limits
+## Sources
 
-Read 23 October 2026. The rates, budget, receiving-income, departure and employment guidance were retrieved in indexed official-source text; attempted direct opens of several returned rejection/cache errors. The payer guidance opened successfully. No independent review, professional attestation or full statutory verification is claimed.
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Act 1970 (AT 3 of 1970), consolidated text [62], ss.1(3), 1(3A), 11A, 35C, 35D | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf | 2026-10-30 |
+| Income Tax Division, Rates and allowances (current and historic) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ | 2026-10-30 |
+| Income Tax Division, Budget 2026 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/budget/ | 2026-10-30 |
+| Practice Note PN 227/26, Budget 2026 proposals | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-10-30 |
+| Income Tax Division, Receiving Isle of Man source income | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/ | 2026-10-30 |
+| Income Tax Division, Making payments to non-residents | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/making-payments-to-non-residents/ | 2026-10-30 |
+| Income Tax Division, Non-resident pensioners | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/personal-tax/non-residents/non-resident-pensioners/ | 2026-10-30 |
+| Income Tax Division, Leaving the Island | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/leaving-the-island/ | 2026-10-30 |
+| Income Tax Division, Non-resident employees | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/further-information-for-employers/non-resident-employees/ | 2026-10-30 |
+| Income Tax Division, International agreements and double taxation relief | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/international-agreements-and-double-taxation-relief/ | 2026-10-30 |
+| Practice Note PN 130/06, Taxation of non-resident individuals (historic rates) | https://www.gov.im/media/511796/pn13006.pdf | 2026-10-30 |
+| HMRC, Isle of Man tax treaties | https://www.gov.uk/government/publications/isle-of-man-tax-treaties | 2026-10-30 |
+| UK-Isle of Man Double Taxation Agreement 2018, SI 2018/1347, Articles 4, 6, 14, 15, 17, 18, 21, 23, 25 | https://www.legislation.gov.uk/uksi/2018/1347/pdfs/uksi_20181347_en.pdf | 2026-10-30 |
+| HMRC, 2024 UK-Isle of Man memorandum of understanding (arbitration), Parts 1 and 2 | https://www.gov.uk/government/publications/isle-of-man-tax-treaties/2024-uk-isle-of-man-memorandum-of-understanding-in-force | 2026-10-30 |
 
-- [Current and historical rates][rates]; [Budget 2026][budget].
-- [Receiving Manx-source income][receiving]; [Leaving the Island][leaving].
-- [Making payments to non-residents][payments]; [Non-resident employees][employment].
-- [HMRC Isle of Man treaty collection][uk]; [2018 agreement, Articles 4, 14–15, 17–18, 21, 23 and 25][treaty]; [2024 arbitration memorandum][mou]. The treaty text was retrieved from legislation.gov.uk and cross-checked against HMRC's PDF.
+Not yet confirmed: the payment date of a non-resident assessment; any further penalty after the GBP 100 for a non-resident return; penalties on payers who fail to deduct or remit; which expenses are allowable against non-resident rental income; electronic filing routes for N35 and N37; relief under treaties other than the UK and Ireland; foreign tax credits and permanent-establishment rules for non-resident individuals trading in the Island.
 
-Not yet confirmed: residence tests, statutory amendment chain, detailed deductions, additional sanctions and payment deadlines, live forms, treaty-by-treaty entitlement, company/PE rules, foreign-tax credits and wider reporting. Cross-border country coverage remains partial. Existing corporate withholding summaries must not be used to infer individual treatment.
+<!-- openaccountants-cta-block -->
 
-[rates]: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances?iomg-device=Mobile
-[budget]: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/budget/
-[receiving]: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/
-[leaving]: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/leaving-the-island?iomg-device=Mobile
-[payments]: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/making-payments-to-non-residents?iomg-device=Mobile
-[employment]: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/further-information-for-employers/non-resident-employees/?iomg-device=Mobile
-[uk]: https://www.gov.uk/government/publications/isle-of-man-tax-treaties
+---
 
-[treaty]: https://www.legislation.gov.uk/uksi/2018/1347/made
-[mou]: https://www.gov.uk/government/publications/isle-of-man-tax-treaties/2024-uk-isle-of-man-memorandum-of-understanding-in-force
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

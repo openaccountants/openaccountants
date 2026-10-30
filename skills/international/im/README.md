@@ -1,7 +1,7 @@
 ---
 jurisdiction: IM
-version: 0.3
-last_updated: 2026-10-23
+version: 0.4
+last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -9,28 +9,39 @@ covered_by:
   VAT: isle-of-man-vat
   SC: im-payroll-social
   PR: im-payroll-social
+  XB: im-non-resident-income-tax
 partial:
-  IT-IND: "Legacy 2025/26 Guide; non-resident rate corrected, other claims and current-year scope still require review."
-  IT-CORP: "Legacy draft needs source, year, withholding scope and minimum-tax review."
-  VAT: "Guide exists in sibling isle-of-man directory; full source and scope review open."
-  SC: "Shared legacy payroll/social draft; current-year verification open."
-  PR: "Shared legacy payroll/social draft; current-year verification open."
-  TP: "Scoped UK treaty adjustment draft added; domestic related-party rules, other treaties, reporting and independent review remain open."
-  XB: "Individual non-resident draft includes UK pension treaty screening; domestic residence, other treaties, companies, PE, credits, statutes and independent review open."
+  IT-IND: "Residents and non-residents on 2026/27; self-employed trading profit computation and pension contribution limits are not covered."
+  IT-CORP: "im-corporate-income-tax is still on tax year 2025 and has not been rebuilt from official sources."
+  VAT: "isle-of-man-vat (sibling isle-of-man directory) is still on tax year 2025."
+  SC: "im-payroll-social is still on tax year 2025; the 2026/27 National Insurance figures are in PN 227/26."
+  PR: "im-payroll-social is still on tax year 2025."
+  TP: "Only the UK treaty Article 9 corridor; country-by-country reporting, domestic related-party rules outside the Income Tax Act 1970 and other treaties are not covered."
+  XB: "Individuals only (UK and Ireland pension relief, UK treaty); companies, permanent establishments and other treaties are not covered."
 ---
 
-# Isle of Man tax pack
+# Isle of Man: tax pack
 
-Accountable owner: Michael. Assigned writer: ChatGPT under [OWNERS.md](../../../OWNERS.md). This inventory preserves existing Guides and does not establish comprehensive coverage.
+The Isle of Man tax year runs from 6 April to 5 April. The authority is the Income Tax Division of the Treasury (income tax and National Insurance); VAT is run by Customs and Excise. Amounts are in pounds sterling. There is no capital gains tax or inheritance tax. Residents pay 10% and 21% after a personal allowance; non-residents pay 21% on Manx income with no allowance; most company income is taxed at 0%.
 
-| Topic | Guide | Status |
+## Domains
+
+| Domain | Skill | Status |
 |---|---|---|
-| Individual income tax | [Income tax](im-income-tax.md) | Non-resident rate corrected; other legacy statements not reverified |
-| Corporate income tax | [Corporate tax](im-corporate-income-tax.md) | Legacy draft; current source and scope review required |
-| VAT | [VAT](../isle-of-man/isle-of-man-vat.md) | Existing Guide in sibling directory; not missing merely because of directory naming |
-| Payroll and social contributions | [Payroll/social](im-payroll-social.md) | Existing draft; verification open |
-| Non-resident individual income | [Non-resident income tax](im-non-resident-income-tax.md) | Scoped 2026/27 draft; statutory and independent review open |
-| Transfer pricing and related parties | [UK treaty adjustments](im-related-party-uk-treaty.md) | Scoped draft; domestic, reporting and review gaps open |
-| Formation | [Company formation](im-company-formation.md) | Legacy draft; not reverified |
+| IT-IND, individual income tax (residents) | [im-income-tax](im-income-tax.md) | checked against the law |
+| IT-IND / XB, non-resident individuals | [im-non-resident-income-tax](im-non-resident-income-tax.md) | checked against the law |
+| IT-CORP, corporate income tax | [im-corporate-income-tax](im-corporate-income-tax.md) | sourced from the law (tax year 2025) |
+| VAT | [isle-of-man-vat](../isle-of-man/isle-of-man-vat.md) | sourced from the law (tax year 2025) |
+| SC and PR, National Insurance and payroll | [im-payroll-social](im-payroll-social.md) | sourced from the law (tax year 2025) |
+| TP, related parties (UK treaty) | [im-related-party-uk-treaty](im-related-party-uk-treaty.md) | checked against the law |
+| Formation | [im-company-formation](im-company-formation.md) | sourced from the law (tax year 2025) |
+| Overview | [im-tax-overview](im-tax-overview.md) | sourced from the law (tax year 2025) |
 
-The overview is supplementary. Property, wider reporting and other applicable compliance topics still require a scope audit. All seven tax domains remain partial; presence, arithmetic checks and publication do not confer professional attestation.
+## Official sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Act 1970, consolidated text | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf | 2026-10-30 |
+| Income Tax Division, rates and allowances | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ | 2026-10-30 |
+| Practice Note PN 227/26, Budget 2026 | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-10-30 |
+| UK-Isle of Man Double Taxation Agreement 2018, SI 2018/1347 | https://www.legislation.gov.uk/uksi/2018/1347/pdfs/uksi_20181347_en.pdf | 2026-10-30 |
