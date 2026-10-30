@@ -1,0 +1,49 @@
+{
+  "review_date": "2026-10-28",
+  "base_accepted_head": "e98e95296a5f61fa4e30745a47a1eee3bdc7997d",
+  "candidate_head": "4f2539df8ac40f8496c1de98488284630c014d11",
+  "verdict": "accepted_bounded_addition_to_accurate_partial",
+  "findings": [],
+  "full_source_pages_read": 8,
+  "sources": [
+    {
+      "url": "https://gov.gg/CHttpHandler.ashx?id=101485&p=0",
+      "form": "366/CF30 (2020)",
+      "pages": 2
+    },
+    {
+      "url": "https://gov.gg/CHttpHandler.ashx?id=197037&p=0",
+      "form": "CF130b (01/26)",
+      "pages": 3
+    },
+    {
+      "url": "https://gov.gg/CHttpHandler.ashx?id=197038&p=0",
+      "form": "CF130a (01/26)",
+      "pages": 3
+    }
+  ],
+  "source_pdf_sizes_and_hashes_match_receipts": true,
+  "source_access": "Saved official PDF/text copies with HTTP200 receipts; no fresh reviewer download",
+  "main_checks": {
+    "files": 9,
+    "blocks": 18,
+    "failures": 0,
+    "missing": 0
+  },
+  "other_eight_guide_blobs_unchanged": true,
+  "readme_unchanged": true,
+  "payroll_frontmatter_and_cta_exact": true,
+  "payroll_checks_exact": true,
+  "sc_partial_preserved": true,
+  "complete_country": false,
+  "professional_attestation": false,
+  "merge_authorized": false,
+  "lost_content_restored": 2,
+  "original_review_hashes": {
+    "report.md": "c429055273e7a9bab4e3595ced0f0fda746cc0b328f77b7c32d321a24af8ce64",
+    "result.json": "c02c1a6d11f789a208362c7c2f4446aa52965c3ce6f9b014cd0a62e4d66c94c0"
+  },
+  "original_review_files_modified": false,
+  "reviewer_guide_or_git_mutations": false,
+  "report": "bounded-addition-closure.md"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "tranche12-controls.json",
+    "bytes": 11251,
+    "sha256": "029edbcfec61263e84411f29e1f56bb0a9df129bda13c158afcfbfa5a0cf0b59"
+  },
+  {
+    "path": "tranche12-examples.txt",
+    "bytes": 188,
+    "sha256": "6f2707f75acbabb75ad90768efc2ac14f60af5a6b9a500d7474f2fbec83499ff"
+  },
+  {
+    "path": "tranche12-final-identity.json",
+    "bytes": 1066,
+    "sha256": "0231b3952f8cd3934bd0a7200f9c53321d36938044e14ba43a9e99574780c2a8"
+  },
+  {
+    "path": "tranche12-independent-controls.py",
+    "bytes": 5626,
+    "sha256": "e6ba39d7c01a487eaea91a36469dc91cff9324b83e647e57da030e510964cfbf"
+  },
+  {
+    "path": "tranche12-initial-integrity.json",
+    "bytes": 12121,
+    "sha256": "ef1e0dc7263e8c10a396d016837608ab3a864ecf77c8b1a251e46dd7bcc059cd"
+  },
+  {
+    "path": "tranche12-read-ledger.json",
+    "bytes": 224863,
+    "sha256": "608b1c7f38304696f08097170c1a2e022cabe7e69ed0ab28e386d0fd69cb3293"
+  },
+  {
+    "path": "tranche12-report.md",
+    "bytes": 2925,
+    "sha256": "0a581060515ff9d5d625ae8ffd751b309b3423ebdd9c5f599775e31f028d8c13"
+  },
+  {
+    "path": "tranche12-successor-integrity.json",
+    "bytes": 10873,
+    "sha256": "812e636cdbca1a02ef1c899b4f277500d62dc31db2b2d4ee250f4c9ba8006dda"
+  }
+]

@@ -1,14 +1,14 @@
 ---
 name: si-corporate-income-tax
 description: "Slovenian corporate income tax (davek od dohodkov pravnih oseb, DDPO) for tax year 2026. Covers who pays (resident companies on worldwide profit, non-residents through a Slovenian PE), the 22% rate for 2024 to 2028 under ZORZFS art. 64 (the ZDDPO-2 art. 60 rate is 19%), the taxable base and non-deductible items, the 50% rules for entertainment and provisions, maximum depreciation rates, the R&D (100%), investment (40%) and digital and green (40%) reliefs, losses (five years, 50% of the base) and the 63% overall cap in art. 59.a, the interest limitation rule (30% of EBITDA or EUR 3 million), advance payments, the return three months after year end, and fines and interest. Trigger phrases: DDPO, davek od dohodkov pravnih oseb, Slovenia corporate tax, d.o.o. tax, akontacija davka, davčna izguba. Out of scope: si-cross-border, si-transfer-pricing, slovenia-income-tax, slovenia-vat-return, slovenia-payroll."
-jurisdiction: SI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.2
-verified_by: pending
+jurisdiction: SI
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -255,3 +255,23 @@ expected:
 | FURS, Pokrivanje davčne izgube (2nd edition, February 2025), five-year rule and old losses | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Pokrivanje_davcne_izgube.doc | 2026-10-24 |
 
 Not yet confirmed: the 2026 late-payment interest rate (ZDavP-2 art. 96 points to the act on statutory default interest, which was not read); whether FURS requires a particular order between loss relief and other reliefs inside the 63% cap; the Pillar Two minimum tax act, which was not read and is not covered here.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

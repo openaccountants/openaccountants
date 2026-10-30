@@ -1,0 +1,5 @@
+# Spain ordinary share, care, minimum-tax and Murcia checkpoint
+
+This batch combines independently reviewed finite ordinary computations: basic Basque direct employee/new-company shares, the narrow own Alava deemed-jobseeker route and general repayment bridge, an explicitly source-derived Alava minimum-investment amount-only method, and the published Murcia vehicle equality worksheet with a labelled shared-charger allocation interpretation. Each method keeps its actual eligibility and source limits. The care/share same-file composition is separately bound; unrelated current country bytes are preserved.
+
+The exact bounded reports are in reports/. The earlier frozen whole-pack review remains NEEDS FIXES; these repairs do not imply a country PASS, readiness or accountant attestation. Five country domains remain partial. ARCHIVE-MAP.json retains the source bodies, actual read scopes, exact candidates, controls, original errors/corrections and reviews losslessly. Full acquisition and actual legal reading are distinguished. Final required validators apply to this actual combined batch, once.

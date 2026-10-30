@@ -1,588 +1,202 @@
 ---
 name: bulgaria-social-contributions
-description: "Use this skill whenever asked about Bulgaria social security and health insurance contributions for employees, employers, or self-insured persons (self-employed / freelancers / sole traders). Trigger on phrases like \"Bulgaria social security\", \"osigurovki\", \"how much social contribution in Bulgaria\", \"Category III employee\", \"Universal Pension Fund\", \"2nd pillar Bulgaria\", \"Declaration 1\", \"Declaration 6\", \"Декларация Образец 1\", \"self-insured person Bulgaria\", \"freelancer social contributions Bulgaria\", \"EOOD payroll\", \"minimum insurable income\", \"maximum insurable income ceiling\", \"health insurance NHIF Bulgaria\", \"10% flat tax Bulgaria\", or any question about Bulgarian payroll, social-security withholding, or contribution caps. Also trigger when classifying bank statement transactions that relate to NRA (НАП) contribution payments, NSSI (НОИ) debits, or social/health insurance remittances from Bulgarian banks (UniCredit Bulbank, DSK Bank, Postbank, etc.). Also trigger when computing"
+description: "Bulgarian social and health insurance contributions for tax year 2026, in euro. Covers the state social insurance funds (pension, general illness and maternity, unemployment, work accident), the universal pension fund (second pillar) and health insurance; the employer and employee split by fund and by year of birth; the minimum and maximum insurable income for 2026 (two periods, to 31 July and from 1 August); and the self-insured (freelancers, sole traders, working owners): monthly advance contributions, the optional illness and maternity cover, and the annual reconciliation with Declaration 6 by 30 April. Also covers payment dates (25th), Declarations 1 and 6 and penalties. Lev amounts are shown in euro at BGN 1.95583. Trigger phrases: Bulgaria social security, осигуровки, самоосигуряващо се лице, МОД, максимален осигурителен доход, Декларация образец 6, УПФ. Out of scope: monthly gross-to-net and wage tax (bulgaria-payroll), income tax (bulgaria-income-tax), A1 certificates and treat"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/bulgaria-social-contributions"
   jurisdiction: "BG"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-10-24"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Bulgaria Social Security & Health Insurance Contributions
-
-## Bulgaria Social Security & Health Insurance Contributions -- Skill v0.1
-
-> **Tier 2 (research-verified).** Figures below are sourced inline. Several depend on the 2026 State Social Security Budget Act (Закон за бюджета на държавното обществено осигуряване), which was pending/just-adopted as of early 2026; provisional figures are marked **[RESEARCH GAP — reviewer to confirm]**. This skill has NOT been signed off by a Bulgarian-licensed accountant.
-
-## Section 1 -- Quick reference
-
-**Read this whole section before computing or classifying anything.**
-
-- **Country** — Bulgaria (Republic of Bulgaria)
-- **Primary Legislation** — Social Security Code (Кодекс за социално осигуряване)
-- **Supporting Legislation** — Health Insurance Act (Закон за здравното осигуряване); annual State Social Security Budget Act (Закон за бюджета на държавното обществено осигуряване)
-- **Tax / contribution authority** — National Revenue Agency (NRA / НАП) — nra.bg (collects contributions + PIT); National Social Security Institute (NSSI / НОИ) — nssi.bg (administers benefits)
-- **Personal income tax** — Flat 10% on gross remuneration LESS the employee's mandatory social/health contributions  _(Ministry of Economy; PwC, reviewed 30 Jan 2026)_
-- **Corporate income tax** — Flat 10%; no local CIT — relevant for EOOD-vs-freelancer entity choice  _(PwC corporate)_
-- **Total employee+employer contribution (Category III, born after 1959)** — 32.7%–33.4% of insurable income: employee 13.78%, employer 18.92%–19.62%  _(Ministry of Economy; PwC)_
-- **Self-insured persons (born after 1959)** — 27.8% (pension 14.8% + 2nd pillar 5% + health 8%); +3.5% if optionally insured for sickness/maternity  _(innovires; Ruskov & Kollegen; PwC)_
-- **Currency** — EUR from 1 Jan 2026; BGN through 31 Dec 2025; irrevocable fixed rate BGN 1.95583 = EUR 1  _(Ruskov & Kollegen)_
-- **Min monthly insurable income (employees)** — BGN 933 (1 Jan–31 Mar 2025); BGN 1,077 (1 Apr–31 Dec 2025); from 2026 follows the minimum wage EUR 620.20 (= BGN 1,213)  _(Ministry of Economy; PwC)_
-- **Min monthly insurable income (self-insured)** — BGN 1,077 (2025, = the minimum wage); EUR 550.66/month (= BGN 1,077, carried over for 2026 pending Budget Act)  _(PwC *Other taxes*; Ruskov & Kollegen)_
-- **Max monthly insurable income (ceiling, all)** — BGN 3,750 (1 Jan–31 Mar 2025); BGN 4,130 (1 Apr–31 Dec 2025); EUR 2,111.64 (= BGN 4,130, 2026 pending Budget Act)  _(Ministry of Economy; PwC *Other taxes*)_
-- **Minimum monthly wage** — BGN 1,077 (1 Jan 2025, = EUR 550.66); BGN 1,213 = EUR 620.20 (1 Jan 2026, Council of Ministers Decree No. 243 of 13.11.2025)  _(Ministry of Economy; Ruskov & Kollegen)_
-- **Monthly compliance** — Declaration 1 + Declaration 6 filed electronically with the NRA; contributions paid; all by the 25th of the following month  _(activpayroll; Lano)_
-- **Annual return** — Годишна данъчна декларация (GDD) — by 30 April of the following year  _(innovires; PwC)_
-
-Pending — requires sign-off by a Bulgarian-licensed accountant
-
-Pending
-
-**Quick reference field table**
-
-| Field | Value |
-| --- | --- |
-| Country | Bulgaria (Republic of Bulgaria) |
-| Primary Legislation | Social Security Code (Кодекс за социално осигуряване) |
-| Supporting Legislation | Health Insurance Act (Закон за здравното осигуряване); annual State Social Security Budget Act (Закон за бюджета на държавното обществено осигуряване) |
-| Tax / contribution authority | National Revenue Agency (NRA / НАП) — nra.bg (collects contributions + PIT); National Social Security Institute (NSSI / НОИ) — nssi.bg (administers benefits) |
-| Personal income tax | Flat 10% on gross remuneration LESS the employee's mandatory social/health contributions (Ministry of Economy; PwC, reviewed 30 Jan 2026) |
-| Corporate income tax | Flat 10%; no local CIT (PwC corporate) — relevant for EOOD-vs-freelancer entity choice |
-| Total employee+employer contribution (Category III, born after 1959) | 32.7%–33.4% of insurable income: employee 13.78%, employer 18.92%–19.62% (Ministry of Economy; PwC) |
-| Self-insured persons (born after 1959) | 27.8% (pension 14.8% + 2nd pillar 5% + health 8%); +3.5% if optionally insured for sickness/maternity (innovires; Ruskov & Kollegen; PwC) |
-| Currency | EUR from 1 Jan 2026; BGN through 31 Dec 2025; irrevocable fixed rate BGN 1.95583 = EUR 1 (Ruskov & Kollegen) |
-| Min monthly insurable income (employees) | BGN 933 (1 Jan–31 Mar 2025); BGN 1,077 (1 Apr–31 Dec 2025); from 2026 follows the minimum wage EUR 620.20 (= BGN 1,213) (Ministry of Economy; PwC) |
-| Min monthly insurable income (self-insured) | BGN 1,077 (2025, = the minimum wage); EUR 550.66/month (= BGN 1,077, carried over for 2026 pending Budget Act) (PwC *Other taxes*; Ruskov & Kollegen) |
-| Max monthly insurable income (ceiling, all) | BGN 3,750 (1 Jan–31 Mar 2025); BGN 4,130 (1 Apr–31 Dec 2025); EUR 2,111.64 (= BGN 4,130, 2026 pending Budget Act) (Ministry of Economy; PwC *Other taxes*) |
-| Minimum monthly wage | BGN 1,077 (1 Jan 2025, = EUR 550.66); BGN 1,213 = EUR 620.20 (1 Jan 2026, Council of Ministers Decree No. 243 of 13.11.2025) (Ministry of Economy; Ruskov & Kollegen) |
-| Monthly compliance | Declaration 1 + Declaration 6 filed electronically with the NRA; contributions paid; all by the 25th of the following month (activpayroll; Lano) |
-| Annual return | Годишна данъчна декларация (GDD) — by 30 April of the following year (innovires; PwC) |
-| Validated by | Pending — requires sign-off by a Bulgarian-licensed accountant |
-| Validation date | Pending |
-
-**Contribution overview (Category III employee, born after 31 Dec 1959)**  _(Ministry of Economy; PwC; innovires; ISSA)_
-
-| Fund | Total | Employee | Employer |
-| --- | --- | --- | --- |
-| Pension Fund (1st pillar) | 14.8% | 6.58% | 8.22% |
-| Supplementary mandatory pension (2nd pillar, Universal Pension Fund) | 5% | 2.2% | 2.8% |
-| General Disease & Maternity Fund | 3.5% | 1.4% | 2.1% |
-| Unemployment Fund | 1% | 0.4% | 0.6% |
-| Accident at Work & Occupational Diseases Fund | 0.4%–1.1% | 0% | 0.4%–1.1% |
-| Health Insurance (NHIF) | 8% | 3.2% | 4.8% |
-| **TOTAL** | **32.7%–33.4%** | **13.78%** | **18.92%–19.62%** |
-
-*Source: Ministry of Economy; PwC; innovires; ISSA. Per-fund splits cross-checked: employee column 6.58+2.2+1.4+0.4+0+3.2 = 13.78%; employer column (low) 8.22+2.8+2.1+0.6+0.4+4.8 = 18.92%, (high) substitutes 1.1% work-accident = 19.62%.*
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown birth year | Assume born **after** 31 Dec 1959 (Category III, in 2nd pillar) — the standard active-workforce case (research conservative_defaults) |
-| Unknown employment status | Determine before computing — employee vs self-insured changes the rate from 13.78%/18.92% to 27.8% |
-| Work-accident rate (economic activity unknown) | Apply low end 0.4% (or services ~0.5%) and flag that the exact rate is in the Budget Act NACE annex (research conservative_defaults) |
-| Income below floor | Clamp UP to the applicable minimum insurable income |
-| Income above ceiling | Clamp DOWN to the maximum insurable income; excess not contributory |
-| Date in 2026+ | Use EUR figures; date in 2025 use BGN figures for the correct sub-period (Jan–Mar vs Apr–Dec) |
-| Self-insured, no optional sickness cover | Use 27.8% (do NOT add the 3.5% Disease & Maternity unless voluntarily elected) |
-
-## Section 2 -- Required inputs and refusal catalogue
-
-### Required inputs
-
-- **Minimum viable inputs** — (1) period/date (to pick 2025 BGN sub-period vs 2026 EUR), (2) employment status (employee vs self-insured person), and (3) gross monthly remuneration / declared insurable income. Without employment status and period, STOP.
-- **Recommended inputs** — birth cohort (born before 1 Jan 1960 vs after 31 Dec 1959, which changes the pension rate and 2nd-pillar eligibility), the employer's economic-activity / NACE code (to fix the 0.4%–1.1% work-accident rate), and whether a self-insured person has elected optional sickness/maternity cover.
-- **Ideal inputs** — payroll register, NRA Declaration 1 / Declaration 6 filings, NSSI insurance record, prior-year GDD for self-insured reconciliation, and bank statements showing NRA contribution remittances.
-
-### Refusal catalogue
-
-- **R-BG-SSC-1 -- Period/currency undetermined** — Trigger: the relevant date is not known, so the system cannot tell whether to apply 2025 BGN sub-period thresholds or 2026 EUR figures. Message: "Bulgaria adopted the euro on 1 Jan 2026 (fixed rate BGN 1.95583 = EUR 1) and raised the wage/insurable-income thresholds effective 1 Apr 2025. The applicable floors, ceilings and currency depend on the exact period. Provide the contribution month before computing."
-- **R-BG-SSC-2 -- 2026 floors/ceilings treated as final** — Trigger: a self-employed minimum (EUR 550.66) or ceiling (EUR 2,111.64) figure is needed for a 2026 date. Message: "The 2026 EUR floors/ceilings are 2025 amounts carried over at the fixed rate (self-employed min EUR 550.66 = BGN 1,077; ceiling EUR 2,111.64 = BGN 4,130). They remain in force only while the 2025 State Social Security Budget Act continues to apply (reported through 31 Mar 2026, per Ruskov & Kollegen). The draft 2026 State Social Security Budget Act proposes raising the self-employed minimum insurable income to EUR 620.20 and the ceiling to EUR 2,352, but this was NOT yet adopted as of early 2026. Treat the post-Budget figures as provisional and verify against the adopted Act. **[RESEARCH GAP — reviewer to confirm]**."
-- **R-BG-SSC-3 -- Work-accident rate by activity** — Trigger: the precise Accident-at-Work rate is needed and the economic-activity / NACE code is unknown. Message: "The work-accident contribution (employer-only) is 0.4%–1.1% and is keyed to the company's economic activity in the annual Budget Act annex, which was not retrieved in full. Look up the activity-specific rate in the Budget Act annex before relying on a figure. **[RESEARCH GAP — reviewer to confirm]**."
-- **R-BG-SSC-4 -- Arrears, penalties, statutory interest** — Trigger: client has unpaid contributions and wants the penalty/interest quantified. Message: "Penalty amounts (reported EUR 250–500 late filing; BGN 500–10,000 general) come from secondary payroll guides, and the statutory interest formula (BNB base rate + 10 pts, per the Interest Act) was not re-confirmed from the authority. Do not quantify arrears without checking the Social Security Code administrative-penalty schedule and the Interest Act. Escalate to a Bulgarian-licensed accountant. **[RESEARCH GAP — reviewer to confirm]**."
-- **R-BG-SSC-5 -- Pre-1960 birth cohort** — Trigger: person born before 1 Jan 1960. Message: "Persons born before 1 Jan 1960 are NOT in the 2nd pillar; their state pension rate is 19.8% (employee 8.78% / employer 11.02%) instead of 14.8%. Confirm exact birth date and that the person is genuinely outside the Universal Pension Fund before applying the higher rate."
-
-## Section 3 -- Payment pattern library
-
-This is the deterministic pre-classifier for bank statement transactions related to Bulgarian social/health contributions and PIT. When a transaction matches a pattern below, apply the treatment directly. Do not second-guess.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty/reference as it appears in the bank statement. Contribution and PIT remittances always EXCLUDE from any VAT return or revenue/expense classification of the business -- the employee-side portion and PIT are withholdings from staff pay, and the employer-side contributions are a payroll cost, not a taxable supply.
-
-### 3.1 NRA contribution / tax remittances (outgoing)
-
-**NRA contribution/tax remittance patterns**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| НАП, NAP, NRA, NATIONAL REVENUE AGENCY | EXCLUDE -- contribution/PIT remittance | NRA collects both social/health contributions and PIT |
-| ОСИГУРОВКИ, OSIGUROVKI, SOCIAL INSURANCE | EXCLUDE -- social contribution payment | Generic social-insurance reference |
-| ЗДРАВНИ ОСИГУРОВКИ, HEALTH INSURANCE, NHIF, НЗОК | EXCLUDE -- health-insurance contribution | 8% NHIF fund |
-| ДДФЛ, PIT, DOHODEN DANAK, INCOME TAX | EXCLUDE -- withheld 10% PIT | Flat-tax remittance, not a social contribution |
-| ДОО, DOO, STATE SOCIAL SECURITY | EXCLUDE -- state social security (1st pillar etc.) | Държавно обществено осигуряване |
-| УПФ, UPF, UNIVERSAL PENSION FUND | EXCLUDE -- 2nd-pillar supplementary pension | 5% Universal Pension Fund |
-
-### 3.2 Contribution debits appearing on specific Bulgarian banks
-
-**Bank-specific contribution debits**
-
-| Bank | Typical debit description | Treatment |
-| --- | --- | --- |
-| UniCredit Bulbank | "НАП ОСИГУРОВКИ" or "NAP CONTRIBUTIONS" | EXCLUDE -- contribution remittance |
-| DSK Bank | "НАП" or "ОСИГУРИТЕЛНИ ВНОСКИ" | EXCLUDE -- contribution remittance |
-| Postbank (Eurobank Bulgaria) | "NRA" or "SOC INSURANCE" | EXCLUDE -- contribution remittance |
-| Fibank (First Investment Bank) | "НАП ДДФЛ" or "TAX/SSC" | EXCLUDE -- PIT or contribution |
-| Wise / Revolut | Rare -- NRA debits typically come from local BGN/EUR accounts | If present, EXCLUDE |
-
-*Bank-specific reference strings are illustrative of common Bulgarian payroll-remittance descriptions; exact text varies by bank. **[RESEARCH GAP — reviewer to confirm]** the literal description used by each institution.*
-
-### 3.3 Self-insured persons (own contributions)
-
-**Self-insured contribution patterns**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| НАП САМООСИГУРЯВАЩ, SELF-INSURED, SOL | EXCLUDE -- self-insured person's own 27.8% contribution | Self-declared insurable income |
-| ДЕКЛАРАЦИЯ 6, DECLARATION 6 | EXCLUDE -- contribution remittance per Decl. 6 | Monthly/annual settlement |
-
-### 3.4 Salary and payroll (exclude from contribution classification)
-
-**Salary/payroll exclusion patterns**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ЗАПЛАТА, ZAPLATA, SALARY, WAGES (outgoing) | EXCLUDE -- payroll expense | Net pay to employee, not a contribution |
-| АВАНС, ADVANCE (outgoing) | EXCLUDE -- salary advance | Not a contribution |
-
-### 3.5 Benefits received (not contributions)
-
-**Benefit received patterns**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| НОИ, NOI, NSSI, ПЕНСИЯ, PENSION (incoming) | EXCLUDE -- benefit received | Pension/benefit paid out by NSSI, not a contribution |
-| ОБЕЗЩЕТЕНИЕ, БОЛНИЧНИ, SICK PAY (incoming) | EXCLUDE -- benefit received | Sickness/maternity benefit, not a contribution |
-
-## Section 4 -- Worked examples
-
-Six bank statement / payroll classifications for a hypothetical Bulgarian software company and a freelance consultant. All employees assumed born after 31 Dec 1959 (Category III). Where 2026 EUR figures are used, the ceiling is EUR 2,111.64 and the work-accident rate is taken at the low end (0.4%) unless stated.
-
-### Example 1 -- Standard employee, gross within the band (2026, EUR)
-
-**Input line:**
-`25.02.2026 ; НАП ОСИГУРОВКИ ; DEBIT ; FEB 2026 SOC+HEALTH+PIT ; -826.44 ; EUR`
-
-**Reasoning:**
-Employee gross EUR 2,000/month, within the floor (>= EUR 620.20) and below the ceiling (EUR 2,111.64), so the full EUR 2,000 is the insurable base.
-- Employee contributions = 13.78% x 2,000 = EUR 275.60
-- PIT base = 2,000 - 275.60 = EUR 1,724.40; PIT = 10% x 1,724.40 = EUR 172.44
-- Employer contributions (18.92%) = 2,000 x 18.92% = EUR 378.40
-- Total remitted to NRA = employee SSC 275.60 + PIT 172.44 + employer SSC 378.40 = **EUR 826.44** (matches the debit)
-- Employee net pay = 2,000 - 275.60 - 172.44 = EUR 1,551.96; total employer cost = 2,000 + 378.40 = EUR 2,378.40
-
-**Classification:** EXCLUDE -- combined NRA contribution + PIT remittance (Decl. 1 / Decl. 6). Not a VAT or revenue/expense item.
-
-### Example 2 -- High earner, capped at the ceiling (2026, EUR)
-
-**Input line:**
-`25.03.2026 ; НАП ОСИГУРОВКИ ; DEBIT ; MAR 2026 ; -561.88 ; EUR`
-
-**Reasoning:**
-Employee gross EUR 3,000/month, above the EUR 2,111.64 ceiling, so the insurable base is clamped to EUR 2,111.64. PIT, however, is on the full gross less the (capped) actual contributions.
-- Employee contributions = 13.78% x 2,111.64 = EUR 290.98
-- PIT base = 3,000 - 290.98 = EUR 2,709.02; PIT = 10% x 2,709.02 = EUR 270.90
-- Employee-side remittance shown = employee SSC 290.98 + PIT 270.90 = **EUR 561.88** (matches; employer share remitted separately)
-- Employee net = 3,000 - 290.98 - 270.90 = EUR 2,438.12
-
-**Classification:** EXCLUDE -- contribution + PIT remittance. Note the contribution cap but full-income PIT base.
-
-### Example 3 -- PIT-only withholding line (2026, EUR)
-
-**Input line:**
-`25.02.2026 ; НАП ДДФЛ ; DEBIT ; FEB 2026 INCOME TAX ; -172.44 ; EUR`
-
-**Reasoning:**
-Matches "ДДФЛ" (pattern 3.1) -- this is the withheld 10% flat PIT only, separated from the social/health contributions. For the EUR 2,000 employee in Example 1, PIT = EUR 172.44. This is income tax, NOT a social contribution.
-
-**Classification:** EXCLUDE -- withheld 10% PIT. Not a social-security contribution; do not double-count against the contribution funds.
-
-### Example 4 -- Self-insured freelancer, own contributions (2026, EUR)
-
-**Input line:**
-`14.04.2026 ; НАП САМООСИГУРЯВАЩ ; DEBIT ; MAR 2026 SOL ; -417.00 ; EUR`
-
-**Reasoning:**
-Self-insured person (born after 1959) declaring insurable income of EUR 1,500/month (>= self-employed minimum EUR 550.66, <= ceiling EUR 2,111.64), NO optional sickness/maternity cover.
-- Contributions = 27.8% x 1,500 = EUR 417.00 (pension 14.8% + 2nd pillar 5% + health 8%)
-- If the person had elected optional Disease & Maternity (+3.5%): 31.3% x 1,500 = EUR 469.50
-
-**Classification:** EXCLUDE -- self-insured person's own social/health contribution. Reconciled to actual annual income via the GDD (Decl. 6).
-
-### Example 5 -- Salary net pay outgoing (not a contribution)
-
-**Input line:**
-`28.02.2026 ; IVAN PETROV ЗАПЛАТА ; DEBIT ; SALARY FEB ; -1,551.96 ; EUR`
-
-**Reasoning:**
-Matches "ЗАПЛАТА" / salary pattern (3.4). EUR 1,551.96 is the net pay for the EUR 2,000 gross employee in Example 1 (2,000 - 275.60 SSC - 172.44 PIT). This is wages paid, not a contribution.
-
-**Classification:** EXCLUDE -- payroll expense (net wages). NOT a contribution remittance.
-
-### Example 6 -- NSSI benefit received (not a contribution)
-
-**Input line:**
-`10.05.2026 ; НОИ ПЕНСИЯ ; CREDIT ; OLD-AGE PENSION MAY ; +540.00 ; EUR`
-
-**Reasoning:**
-Matches "НОИ" / "ПЕНСИЯ" (pattern 3.5). This is a benefit RECEIVED from NSSI, not a contribution paid. Do not confuse inbound NSSI credits with outbound NRA contribution debits.
-
-**Classification:** EXCLUDE from VAT and from contribution classification -- benefit received, not a contribution.
-
-## Section 5 -- Tier 1 rules
-
-These rules apply when the period, status and figures are clear and all required inputs are available. Apply exactly as written. (Sources: Ministry of Economy; PwC reviewed 30 Jan 2026; ISSA; innovires; Ruskov & Kollegen.)
-
-### Rule 1 -- Insurable base is clamped
-
-- **Insurable base clamp formula** — insurable_base = clamp(gross_insurable_income, floor, ceiling)  _(Ministry of Economy; PwC)_
-- **floor (employees)** — BGN 933 (Jan–Mar 2025) / BGN 1,077 (Apr–Dec 2025) / minimum wage EUR 620.20 = BGN 1,213 (2026)  _(Ministry of Economy; PwC)_
-- **floor (self-insured)** — BGN 1,077 (2025) / EUR 550.66 = BGN 1,077 (2026, carried over pending Budget Act) **[RESEARCH GAP — reviewer to confirm 2026 final value; draft Budget proposes EUR 620.20]**  _(Ministry of Economy; PwC)_
-- **ceiling (all)** — BGN 3,750 (Jan–Mar 2025) / BGN 4,130 (Apr–Dec 2025) / EUR 2,111.64 = BGN 4,130 (2026, carried over pending Budget Act; draft proposes EUR 2,352)  _(Ministry of Economy; PwC)_
-- **Income above ceiling not contributory** — Income above the ceiling is NOT subject to social or health contributions.  _(Ministry of Economy; PwC)_
-
-### Rule 2 -- Category III employee total (born after 31 Dec 1959)
-
-- **Employee/employer contribution formula** — employee_contributions = 13.78% x insurable_base employer_contributions = (18.92% to 19.62%) x insurable_base   # range = work-accident 0.4%-1.1%
-- **Per-fund employee/employer split** — pension 6.58/8.22; 2nd pillar 2.2/2.8; disease & maternity 1.4/2.1; unemployment 0.4/0.6; work accident 0/0.4–1.1; health 3.2/4.8  _(Ministry of Economy; innovires; PwC)_
-
-### Rule 3 -- Birth cohort changes ONLY the pension fund and 2nd-pillar eligibility
-
-- **Birth cohort effect on pension fund** — Born **after** 31 Dec 1959 (Category III): pension 14.8% (6.58/8.22) PLUS 2nd-pillar 5% (2.2/2.8). Born **before** 1 Jan 1960: NOT in the 2nd pillar; full state pension rate is 19.8% (employee 8.78% / employer 11.02%), and no 5% Universal Pension Fund. All other funds (disease/maternity, unemployment, work accident, health) are unchanged. Note the employee/employer totals coincidentally net to the same 13.78%/18.92%–19.62% (the higher 1st-pillar pension exactly replaces the absent 2nd pillar — see Test 4).  _(Ministry of Economy; ISSA)_
-
-### Rule 4 -- 10% flat PIT base
-
-- **PIT base and PIT formula** — PIT_base = gross_remuneration - employee_mandatory_social_and_health_contributions PIT      = 10% x PIT_base  _(Ministry of Economy; PwC)_
-- **No local income tax; contribution cap note** — Flat 10% on employment income; no local/municipal income tax. Note the contribution cap can apply to the contributions even though PIT is on the full gross less those (capped) contributions.  _(Ministry of Economy; PwC)_
-
-### Rule 5 -- Self-insured persons (born after 1959)
-
-- **Self-insured contribution formula** — contributions = 27.8% x declared_insurable_base            # pension 14.8% + 2nd pillar 5% + health 8% contributions = 31.3% x declared_insurable_base            # if optional Disease & Maternity (+3.5%) elected
-- **No unemployment/work-accident for self-insured** — Unemployment and work-accident funds do NOT apply to self-insured persons. The declared base is clamped between the self-employed minimum and the general ceiling, and reconciled to actual annual income via the GDD.  _(innovires; Ruskov & Kollegen; PwC)_
-
-### Rule 6 -- Work-accident fund is employer-only and activity-keyed
-
-- **Work-accident fund rule** — 0.4%–1.1%, borne entirely by the employer, with the exact rate set by the company's economic activity (NACE) in the annual Budget Act annex; administration/services is reported around 0.5%. When the activity is unknown, use the low end and flag.  _(Ministry of Economy; PwC)_
-
-### Rule 7 -- Monthly compliance and payment
-
-**Monthly compliance table**
-
-| Item | Form | Due |
-| --- | --- | --- |
-| Per-person insured data + contributions | Declaration 1 (Декларация Образец 1) | 25th of the following month |
-| Employer totals (contributions + withheld PIT) | Declaration 6 (Декларация Образец 6) | 25th of the following month |
-| Contribution + PIT payment | Remittance to NRA | 25th of the following month |
-
-- **Electronic filing** — Both declarations are filed electronically with the NRA.  _(activpayroll; Lano)_
-
-### Rule 8 -- Annual reconciliation (self-insured)
-
-- **Annual reconciliation rule** — Self-insured persons declare insurable income monthly but reconcile to actual annual income via the annual personal income tax return (Годишна данъчна декларация / GDD), due 30 April of the following year.  _(innovires; PwC)_
-
-### Rule 9 -- Euro adoption and currency selection
-
-- **Euro adoption and currency selection rule** — Bulgaria joined the euro area on 1 Jan 2026 at the irrevocable fixed rate BGN 1.95583 = EUR 1. For dates in 2026+ use EUR figures; for 2025 use BGN figures and the correct sub-period (Jan–Mar vs Apr–Dec, because thresholds rose on 1 Apr 2025). Convert legacy BGN at the fixed rate.  _(Ruskov & Kollegen; sb-bg.com)_
-
-### Rule 10 -- Employer registration
-
-- **Employer registration rule** — Employers, including foreign employers with staff in Bulgaria, must register with the NRA and report insured persons; foreign employers can register directly with the NRA for social-security/payroll purposes.  _(innovires foreign-employer-registration)_
-
-## Section 6 -- Tier 2 catalogue
-
-When the period, status or figures are ambiguous, or the client circumstances are unusual, flag these situations for reviewer confirmation.
-
-### T2-1 -- Birth cohort straddling 1 Jan 1960
-
-- **T2-1 full entry** — Trigger: birth year near 1959/1960, or unconfirmed. Issue: Born after 31 Dec 1959 → 14.8% pension + 5% 2nd pillar; born before 1 Jan 1960 → 19.8% pension and no 2nd pillar. While the employee/employer totals coincide, the fund allocation (and 2nd-pillar membership) differs. Action: Flag for reviewer. Confirm exact birth date and 2nd-pillar membership before applying rates.
-
-### T2-2 -- 2026 thresholds pending the Budget Act
-
-- **T2-2 full entry** — Trigger: a 2026 computation relying on the self-employed minimum (EUR 550.66) or ceiling (EUR 2,111.64). Issue: These are the 2025 amounts carried over at the fixed rate (EUR 550.66 = BGN 1,077; EUR 2,111.64 = BGN 4,130) while the 2025 State Social Security Budget Act still applies (reported through 31 Mar 2026). The draft 2026 State Social Security Budget Act proposes raising the self-employed minimum to EUR 620.20 and the ceiling to EUR 2,352, but this was NOT adopted as of early 2026. Action: Flag for reviewer. Verify the in-force figures against the adopted 2026 State Social Security Budget Act. **[RESEARCH GAP — reviewer to confirm]**
-
-### T2-3 -- Work-accident rate by economic activity
-
-- **T2-3 full entry** — Trigger: the precise employer work-accident rate matters and the NACE code is unknown or the activity is high-risk. Issue: The rate ranges 0.4%–1.1% across activities; using the low end under-states the cost for higher-risk activities. Action: Flag for reviewer; look up the rate in the Budget Act NACE annex. **[RESEARCH GAP — reviewer to confirm]**
-
-### T2-4 -- Self-insured: optional sickness/maternity cover
-
-- **T2-4 full entry** — Trigger: a self-insured person's expected benefit entitlements (e.g. maternity, sickness) are relevant. Issue: General Disease & Maternity (+3.5%) is optional for self-insured persons; whether the person elected it changes the rate from 27.8% to 31.3% and changes benefit entitlement. Action: Flag for reviewer. Confirm the election on the NSSI/NRA record before computing.
-
-### T2-5 -- Contribution arrears, penalties and interest
-
-- **T2-5 full entry** — Trigger: unpaid contributions or late declarations. Issue: Penalty figures (EUR 250–500 late filing; BGN 500–10,000 general) come from secondary guides, and the statutory interest formula (BNB base + 10 pts) was not re-confirmed from the authority. Action: Do not quantify without checking the Social Security Code penalty schedule and the Interest Act. Escalate to a Bulgarian-licensed accountant. **[RESEARCH GAP — reviewer to confirm]**
-
-### T2-6 -- EOOD vs freelancer entity choice
-
-- **T2-6 full entry** — Trigger: client weighing operating as a sole trader/freelancer (self-insured at 27.8%) vs an EOOD (single-member company). Issue: Corporate income tax is a flat 10% (PwC corporate); the interaction of CIT, dividend taxation, manager-contract contributions and self-insured contributions affects total burden. Pillar Two QDMTT can raise the effective rate to 15% for groups with revenue > EUR 750m. Action: Flag for reviewer. Entity choice is a planning decision outside this skill's compute scope.
-
-## Section 7 -- Excel working paper template
-
-When producing a Bulgarian contribution computation, structure the working paper as follows:
-
-```
-BULGARIA SOCIAL/HEALTH CONTRIBUTION + PIT COMPUTATION -- WORKING PAPER
-Client: [name]
-Period: [month/year]    Currency: [BGN 2025 sub-period / EUR 2026]
-Prepared: [date]
-
-INPUT DATA
-  Status:                         [Employee / Self-insured person]
-  Born after 31 Dec 1959:         [YES/NO]   (NO => 19.8% pension, no 2nd pillar)
-  Gross / declared income:        [____]
-  Economic activity / NACE:       [____]     (sets work-accident 0.4%-1.1%)
-  Optional sickness cover (SOL):  [YES/NO]   (self-insured only, +3.5%)
-
-BASE CLAMP
-  Floor (period-specific):        [933 / 1,077 BGN 2025 | 2026: employee 620.20 EUR (=BGN 1,213) / self-insured 550.66 EUR (=BGN 1,077)]
-  Ceiling (period-specific):      [3,750 / 4,130 BGN | 2,111.64 EUR]
-  Insurable base (clamped):       [____]
-
-EMPLOYEE CONTRIBUTIONS (Category III, post-1959)
-  Pension 1st pillar  6.58%:      [____]
-  2nd pillar          2.20%:      [____]
-  Disease & maternity 1.40%:      [____]
-  Unemployment        0.40%:      [____]
-  Health (NHIF)       3.20%:      [____]
-  Employee total     13.78%:      [____]
-
-EMPLOYER CONTRIBUTIONS (Category III, post-1959)
-  Pension 1st pillar  8.22%:      [____]
-  2nd pillar          2.80%:      [____]
-  Disease & maternity 2.10%:      [____]
-  Unemployment        0.60%:      [____]
-  Work accident  0.4%-1.1%:       [____]
-  Health (NHIF)       4.80%:      [____]
-  Employer total 18.92%-19.62%:   [____]
-
-SELF-INSURED (if applicable)
-  Pension 14.8% + 2nd 5% + health 8% = 27.8%:  [____]
-  + optional disease/maternity 3.5% => 31.3%:  [____]
-
-PERSONAL INCOME TAX
-  Gross remuneration:             [____]
-  Less employee contributions:    [____]
-  PIT base:                       [____]
-  PIT @ 10%:                      [____]
-
-NET / EMPLOYER COST
-  Employee net pay:               [gross - employee SSC - PIT]
-  Total employer cost:            [gross + employer SSC]
-
-COMPLIANCE
-  Declaration 1 due:              25th of following month
-  Declaration 6 due:              25th of following month
-  Payment due:                    25th of following month
-  Annual GDD (self-insured):      30 April following year
-
-REVIEWER FLAGS
-  [List any Tier 2 flags / RESEARCH GAP markers here]
-
-CONSERVATIVE DEFAULTS APPLIED
-  [List any defaults applied and their impact]
+# Bulgaria social and health insurance contributions (2026)
+
+> **Source-cited draft.** Drafted from the Social Insurance Code (KSO), the Health Insurance Act (ZZO), the State Social Insurance Budget Act for 2026, the National Health Insurance Fund Budget Act for 2026, the Ordinance on the social insurance of self-insured persons, Ordinance N-13, the Personal Income Taxes Act (ZDDFL) and the Euro Introduction Act, read on lex.bg, dv.parliament.bg and nssi.bg on 2026-10-24. No accountant has reviewed it. Do not file from it without review by a qualified Bulgarian professional.
+
+Contribution year: the calendar year. The National Revenue Agency (NRA, НАП) collects; the National Social Security Institute (NSSI, НОИ) runs the funds; the National Health Insurance Fund (NHIF, НЗОК) receives health contributions. Currency: the euro from 1 January 2026; lev amounts in a law are read as euro at BGN 1.95583, rounded to the cent (Euro Introduction Act arts. 11(2), 12, 13). The 2026 budget acts were published on 28 July 2026 (ДВ бр. 68) and apply from 1 January 2026, with new limits from 1 August 2026. For the monthly payroll calculation and the wage tax, see `bulgaria-payroll`.
+
+## Who this applies to
+
+- **Employees and managers** under an employment or management contract: insured for all risks (pension, illness and maternity, work accident, unemployment), with the cost split between employer and employee (KSO arts. 4(1)(1), (7), 6(3)).
+- **Self-insured persons** (самоосигуряващи се лица): registered freelancers and craftsmen; sole traders; owners and partners in companies who work in the business; registered farmers (KSO art. 4(3)(1), (2), (4)). They are insured for pension only and pay it all themselves. They may choose to add illness and maternity (art. 4(4)). They are not insured for unemployment or work accident.
+- **Civil-contract workers** with monthly pay, after the statutory cost deduction, of at least one minimum wage, or who are insured on another basis in that month: insured for pension (KSO art. 4(3)(5), (6)). The paying company withholds and pays.
+- **Pensioners** who are self-insured contribute only if they choose to (KSO art. 4(6)).
+- **Health insurance** is due from everyone insured under the KSO, on the same base (ZZO art. 40(1)).
+- **Not covered here:** civil servants and judges (new split from 1 August 2026, KSO art. 6(5a)), seafarers (art. 4a), and the voluntary purchase of service years.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Pension, born after 31 Dec 1959 | 14.8% (employee: employer 8.22%, employee 6.58%) | 2026 | KSO art. 6(1)(2)(a), (1)(4), (3)(9), [lex.bg](https://lex.bg/laws/ldoc/1597824512) |
+| Pension, born before 1 Jan 1960 | 19.8% (employee: employer 11.02%, employee 8.78%) | 2026 | KSO art. 6(1)(1)(a), (1)(4), (3)(8) |
+| Universal pension fund (UPF), born after 31 Dec 1959 | 5% (employee: employer 2.8%, employee 2.2%); self-insured pay all 5% | 2026 | KSO art. 157(1)(1)(c), (3), (5) |
+| General illness and maternity | 3.5%, split 60:40 (2.1% / 1.4%); optional for the self-insured | 2026 | KSO arts. 4(4), 6(1)(5), (3)(7) |
+| Unemployment | 1%, split 60:40 (0.6% / 0.4%); employees only | 2026 | KSO art. 6(1)(6), (3)(7) |
+| Work accident and occupational disease | 0.4% to 1.1% by activity, employer only | 2026 | KSO art. 6(1)(7), (6); ZBDOO 2026 art. 14, Appendices 2, 2A, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982) |
+| Health insurance | 8%, split 60:40 for employees (4.8% / 3.2%); self-insured pay all 8% | 2026 | NHIF Budget Act 2026 art. 2, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981); ZZO art. 40(1)(1), (2), [lex.bg](https://lex.bg/laws/ldoc/2134412800) |
+| Self-insured total, without illness and maternity | 27.8% (pension 14.8 + UPF 5 + health 8; or pension 19.8 + health 8 if born before 1960) | 2026 | KSO arts. 6(3)(8)(a), (9)(a), (1)(4), 157(5); ZZO art. 40(1)(2) |
+| Self-insured total, with illness and maternity | 31.3% | 2026 | As above plus KSO art. 6(1)(5) |
+| Minimum monthly insurable income, self-insured, 1 Jan to 31 Jul | EUR 550.66 (BGN 1,077) | 2026 | ZBDOO 2026 art. 9(1)(b) |
+| Minimum monthly insurable income, self-insured, 1 Aug to 31 Dec | EUR 620.20 | 2026 | ZBDOO 2026 art. 9(2)(b) |
+| Maximum monthly insurable income, all insured, 1 Jan to 31 Jul | EUR 2,111.64 (BGN 4,130) | 2026 | ZBDOO 2026 art. 9(1)(c) |
+| Maximum monthly insurable income, all insured, 1 Aug to 31 Dec | EUR 2,300 | 2026 | ZBDOO 2026 art. 9(2)(c) |
+| Minimum insurable income for employees by activity and job group | EUR 550.66 to EUR 901.41 (to 31 Jul); EUR 620.20 to EUR 1,532.00 (from 1 Aug) | 2026 | ZBDOO 2026 art. 9, Appendices 1, 1A |
+| Minimum monthly wage (floor where no activity minimum is set) | EUR 620.20 (BGN 1,213) | 2026 | Decree 243/2025, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238961) |
+| Annual insurable income limits for a self-insured person active all year | Minimum EUR 6,955.62 (7 x 550.66 + 5 x 620.20); maximum EUR 26,281.48 (7 x 2,111.64 + 5 x 2,300) | 2026 | KSO art. 6(9); ZBDOO 2026 art. 9 |
+| Guaranteed receivables fund | Not paid for 2026 | 2026 | ZBDOO 2026 art. 15(1) |
+
+Employee totals: employee 13.78%, employer 18.52% plus 0.4% to 1.1% work accident. The same totals apply to both birth cohorts.
+
+## The taxable base
+
+**Employees.** Contributions are due on gross pay accrued for the month, paid or not, between the activity minimum (or the minimum wage) and the monthly maximum (KSO art. 6(2), (3)). The employer's share cannot be taken from the employee's pay (art. 6(13)). See `bulgaria-payroll` for the full monthly calculation.
+
+**Self-insured: monthly advances.** The person picks a monthly insurable income between the self-insured minimum and the maximum and pays advance contributions on it each month (KSO art. 6(8); Ordinance on self-insured persons art. 3(1)). The minimum moves from EUR 550.66 to EUR 620.20 for August to December 2026, so advances for those months must rise to at least EUR 620.20.
+
+**Self-insured: annual reconciliation.** After the year, the final insurable income is fixed from the annual tax return (KSO art. 6(9); Ordinance on self-insured persons art. 2(4)):
+1. Take the taxable income from the activity for the year, as declared in the annex to the annual return. For a freelancer this is revenue less the statutory cost deduction (25% for most free professions, 40% for lawyers, notaries, authors and craftsmen; ZDDFL art. 29(1)).
+2. Keep it within the year's limits for the months of activity: not below the sum of the monthly minimums and not above the sum of the monthly maximums.
+3. Subtract the total of the monthly incomes on which advances were paid.
+4. Final contributions = the difference x the pension, UPF and (if chosen) illness and maternity rates (KSO art. 6(9)), plus 8% health insurance (ZZO art. 40(1)(2)).
+
+If the difference is negative, no final contribution is due on it. Contributions already paid on income above the final figure are not covered by this skill; ask the NRA (see Not yet confirmed).
+
+**Several sources of income.** A person who is both employed and self-insured pays on the total, up to one monthly maximum, in the order set by KSO art. 6(11): employment first, then benefits, then self-insured income, then civil-contract pay. A self-insured person with several activities pays advances on one basis of their choice (Ordinance on self-insured persons art. 2(3)).
+
+**Civil-contract workers.** The base is the pay less the statutory cost deduction under the ZDDFL (KSO art. 6(4)), capped at the monthly maximum. The payer withholds the person's share and pays its own (art. 6(3)). The person's share is not withheld from advance payments (art. 7(11)).
+
+## Deadlines and filing
+
+| What | Deadline | Source |
+|---|---|---|
+| Employer contributions and employee share | 25th of the month after the month worked | KSO art. 7(1); ZZO art. 40(1)(1)(c) |
+| Employer Declarations 1 and 6 | 25th of the month after the month the data relate to | Ordinance N-13 art. 4(1)(1)(a), (3)(1), consolidated to ДВ бр. 90/2026 |
+| Self-insured monthly advances (social and health) | 25th of the month after the month they relate to | KSO art. 7(4); ZZO art. 40(1)(2) |
+| Self-insured Declaration 1 | 25th of the month after the month concerned; if insured for pension only, one Declaration 1 a year is allowed, filed by 25 February with the January data | Ordinance N-13 arts. 4(1)(2)(a), 6(1), (2) |
+| Self-insured: start or restart of activity | Declaration 1 by the 25th of the month after the first full month insured | Ordinance N-13 art. 6(3) |
+| Civil-contract contributions | 25th of the month after the month of payment | KSO art. 7(6) |
+| Self-insured final contributions | By the annual tax return deadline: 30 April of the next year | ZZO art. 40(1)(2); Ordinance on self-insured persons art. 2(4); ZDDFL art. 53(1) |
+| Self-insured Declaration 6 for the final contributions | 30 April of the next year | Ordinance N-13 art. 4(3)(2) |
+
+## Penalties and interest
+
+| Breach | Penalty | Source |
+|---|---|---|
+| Breach of the KSO insurance rules (part one) | Fine EUR 51.13 to EUR 1,022.58 on the person at fault; plus EUR 255.65 to EUR 1,022.58 on a company or sole trader insurer, per case | KSO art. 349(1) |
+| Declaration not filed or filed late (employer's Declaration 1, or a self-insured person's declaration), or breach of the art. 6(9) reconciliation rules | EUR 25.56 to EUR 255.65 for an individual who is not a trader; EUR 255.65 to EUR 2,556.46 for a company or sole trader | KSO art. 355(1) |
+| False data to avoid contributions | EUR 25.56 to EUR 127.82 per case | KSO art. 355(2) |
+| Repeat breach of art. 355(1) | Fine EUR 255.65 to EUR 1,022.58, or sanction of EUR 511.29 per case, capped at EUR 5,112.92 | KSO art. 355(4) |
+| Late payment | Statutory interest (законна лихва) on the unpaid contributions | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 |
+
+## Cross-border points
+
+- **EU, EEA and Switzerland.** Regulation 883/2004 decides which single country's insurance applies. A person insured abroad under it with an A1 certificate does not pay Bulgarian contributions on that work.
+- **Posted from Bulgaria.** Staff posted to another member state stay in Bulgarian insurance on their pay, but not less than the host country's minimum pay and not more than the Bulgarian maximum (KSO art. 6a).
+- **Foreign contributions and tax.** Mandatory contributions paid abroad reduce the Bulgarian income tax base like Bulgarian ones (ZDDFL arts. 25(1), 42(2)).
+- See `bg-cross-border` for tax residence and treaties.
+
+## Worked examples
+
+### Example 1: freelancer on minimum advances, annual top-up
+
+A management consultant born in 1985 is a registered freelancer all of 2026 and does not opt into illness and maternity cover. She pays advances on the minimum: 27.8% of EUR 550.66 = EUR 153.08 a month for January to July, and 27.8% of EUR 620.20 = EUR 172.42 a month for August to December. The total advance base is EUR 6,955.62.
+
+Her 2026 revenue is EUR 30,000. Taxable income from the activity is 75% of that (25% statutory costs): EUR 22,500. That is inside the annual limits (EUR 6,955.62 to EUR 26,281.48). The top-up base is 22,500 - 6,955.62 = EUR 15,544.38. Final contributions at 27.8%: EUR 4,321.34, due with Declaration 6 by 30 April 2027.
+
+```oa-check
+name: Bulgaria freelancer born 1985, revenue EUR 30,000, minimum advances, no sickness cover, 2026
+inputs:
+  revenue: 30000
+  min_jan_jul: 550.66
+  min_aug_dec: 620.20
+  max_jan_jul: 2111.64
+  max_aug_dec: 2300
+steps:
+  - rate: 0.148 + 0.05 + 0.08
+  - advance_jan_jul: round(min_jan_jul * rate, 2)
+  - advance_aug_dec: round(min_aug_dec * rate, 2)
+  - advance_base: min_jan_jul * 7 + min_aug_dec * 5
+  - annual_max: max_jan_jul * 7 + max_aug_dec * 5
+  - taxable_income: revenue * 0.75
+  - final_income: clamp(taxable_income, advance_base, annual_max)
+  - topup_base: final_income - advance_base
+  - final_contributions: round(topup_base * rate, 2)
+expected:
+  advance_jan_jul: 153.08
+  advance_aug_dec: 172.42
+  advance_base: 6955.62
+  annual_max: 26281.48
+  topup_base: 15544.38
+  final_contributions: 4321.34
 ```
 
-## Section 8 -- Bank statement reading guide
+### Example 2: high-earning contractor with sickness cover, capped at the annual maximum
 
-### How contribution and PIT remittances appear on Bulgarian bank statements
+An IT contractor born in 1975, registered as a freelancer for all of 2026, opts into illness and maternity cover, so his rate is 31.3%. He pays advances on the minimum: EUR 172.36 a month for January to July and EUR 194.12 a month for August to December.
 
-**UniCredit Bulbank:**
-- Description: "НАП ОСИГУРОВКИ", "NAP CONTRIBUTIONS", or split into "ОСИГУРОВКИ" and "ДДФЛ"
-- Timing: around the 25th of each month (for the prior month)
-- Amount: depends on headcount and gross pay
+His revenue is EUR 60,000, so taxable income is EUR 45,000. That is above the annual maximum of EUR 26,281.48, so the final insurable income is capped there. The top-up base is 26,281.48 - 6,955.62 = EUR 19,325.86. Final contributions at 31.3%: EUR 6,048.99, due by 30 April 2027. No contributions are due on the EUR 18,718.52 above the cap.
 
-**DSK Bank:**
-- Description: "НАП", "ОСИГУРИТЕЛНИ ВНОСКИ", or "ЗДРАВНИ ОСИГУРОВКИ"
-- Timing: same monthly cycle
+```oa-check
+name: Bulgaria IT contractor born 1975, revenue EUR 60,000, sickness cover, capped, 2026
+inputs:
+  revenue: 60000
+  min_jan_jul: 550.66
+  min_aug_dec: 620.20
+  max_jan_jul: 2111.64
+  max_aug_dec: 2300
+steps:
+  - rate: 0.148 + 0.05 + 0.035 + 0.08
+  - advance_jan_jul: round(min_jan_jul * rate, 2)
+  - advance_aug_dec: round(min_aug_dec * rate, 2)
+  - advance_base: min_jan_jul * 7 + min_aug_dec * 5
+  - annual_max: max_jan_jul * 7 + max_aug_dec * 5
+  - taxable_income: revenue * 0.75
+  - final_income: clamp(taxable_income, advance_base, annual_max)
+  - topup_base: final_income - advance_base
+  - final_contributions: round(topup_base * rate, 2)
+  - above_cap: taxable_income - annual_max
+expected:
+  advance_jan_jul: 172.36
+  advance_aug_dec: 194.12
+  final_income: 26281.48
+  topup_base: 19325.86
+  final_contributions: 6048.99
+  above_cap: 18718.52
+```
 
-**Postbank (Eurobank Bulgaria) / Fibank:**
-- Description: "NRA", "SOC INSURANCE", "НАП ДДФЛ"
-- Timing: same monthly cycle
+## Ask the client first
 
-*Bank-specific reference strings above are illustrative. **[RESEARCH GAP — reviewer to confirm]** the literal description each institution prints.*
+1. Year of birth (before 1960 or after 1959) and whether the person moved from the universal pension fund into the state pension fund.
+2. The basis of insurance: employee, manager, freelancer, sole trader, working owner, farmer, civil contract, or several at once.
+3. For the self-insured: whether they opted into illness and maternity cover, and the monthly income they chose for advances.
+4. The months of activity in 2026 (the annual limits depend on them) and whether they already receive a pension.
+5. Taxable income from the activity for the year, and the statutory cost rate that applies.
+6. Any foreign insurance or A1 certificate.
 
-**Key identification tips:**
-1. Contribution and PIT remittances are always outgoing (DEBIT) to the NRA; benefits (НОИ pension, sick pay) are incoming CREDITs.
-2. They recur monthly, near the 25th.
-3. A combined line bundles employee SSC + employer SSC + withheld PIT; a "ДДФЛ" line is PIT only.
-4. Do not confuse NRA contribution debits with net-salary ("ЗАПЛАТА") payments to employees.
-5. From 1 Jan 2026 amounts are in EUR; 2025 statements are in BGN (convert at 1.95583 if needed).
+## Sources
 
-### Quick Bulgarian/Cyrillic glossary
+| Source | URL | Read on |
+|---|---|---|
+| Social Insurance Code (KSO), consolidated to ДВ бр. 68/2026: arts. 4, 6, 6a, 7, 157, 158, 349, 355 | https://lex.bg/laws/ldoc/1597824512 | 2026-10-24 |
+| State Social Insurance Budget Act for 2026, ДВ бр. 68/2026: arts. 9, 14, 15, Appendices 1, 1A, 2, 2A | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 | 2026-10-24 |
+| National Health Insurance Fund Budget Act for 2026, ДВ бр. 68/2026: art. 2 | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981 | 2026-10-24 |
+| Health Insurance Act (ZZO), consolidated to ДВ бр. 68/2026: arts. 29(3), 40 | https://lex.bg/laws/ldoc/2134412800 | 2026-10-24 |
+| Ordinance on the social insurance of self-insured persons (NSSI copy): arts. 2, 3 | https://www.nssi.bg/wp-content/uploads/NOOSLBGIRCHML.pdf | 2026-10-24 |
+| Ordinance N-13 of 17 December 2019 (Declarations 1 and 6), original text ДВ бр. 1/2020: arts. 4, 6 | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=144073 | 2026-10-24 |
+| Ordinance N-13, consolidated text to ДВ бр. 90/2026 (amendments ДВ бр. 10/2021, 15/2024, 17/2026, 90/2026; secondary consolidation by KiK-Info, checked article by article against the original): arts. 4, 6, 9 | https://kik-info.com/normativna-baza/naredbi/h-13/ | 2026-10-24 |
+| Personal Income Taxes Act (ZDDFL): arts. 25, 29, 42, 53 | https://lex.bg/laws/ldoc/2135538631 | 2026-10-24 |
+| Council of Ministers Decree 243 of 13 November 2025 on the minimum wage, ДВ бр. 98/2025 | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238961 | 2026-10-24 |
+| NSSI, new insurable income limits from 1 August 2026 | https://nssi.bg/dohod01082026/ | 2026-10-24 |
+| Euro Introduction Act: arts. 11, 12, 13 | https://lex.bg/bg/laws/ldoc/2137244903 | 2026-10-24 |
+| Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 | https://lex.bg/bg/laws/ldoc/2123675140 | 2026-10-24 |
 
-**Glossary table**
+Not yet confirmed: how the NRA's 2026 reconciliation annex sums the annual minimum and maximum across the two 2026 periods (this skill adds the monthly limits for each month of activity, which follows KSO art. 6(9) but the 2026 form was not read; nra.bg served a human check); the treatment of advances paid on more than the final income; the amending ДВ issues of Ordinance N-13 were not read on dv.parliament.bg (a secondary consolidation to ДВ бр. 90/2026 was used); the self-insured ordinance after its latest amendments; the statutory late-payment interest rate after the euro changeover.
 
-| Term | Meaning |
-| --- | --- |
-| Осигуровки (osigurovki) | Social contributions |
-| Здравно осигуряване | Health insurance (NHIF / НЗОК) |
-| ДДФЛ | Personal income tax (10% flat) |
-| ДОО | State social security (Държавно обществено осигуряване) |
-| УПФ | Universal Pension Fund (2nd pillar) |
-| Самоосигуряващо се лице (SOL) | Self-insured person (self-employed) |
-| Заплата | Salary / wages |
-| Декларация Образец 1 / 6 | Declaration 1 / 6 |
-| Годишна данъчна декларация (GDD) | Annual personal income tax return |
-
-## Section 9 -- Onboarding fallback
-
-If the client provides only a bank statement and no other information:
-
-1. **Scan for NRA debits** -- identify all outgoing payments matching Section 3.1/3.2 patterns (НАП / NAP / ОСИГУРОВКИ / ДДФЛ).
-2. **Separate PIT from contributions** -- "ДДФЛ" lines are 10% PIT only; combined "ОСИГУРОВКИ" lines bundle social + health + (often) PIT.
-3. **Determine the period/currency** -- 2025 statements are in BGN (use the Jan–Mar vs Apr–Dec sub-period); 2026 statements are in EUR.
-4. **Reverse-engineer roughly:** for a single Category III employee, the combined monthly NRA outflow ≈ (13.78% + 18.92%) x insurable base + 10% x (gross − 13.78% x base). Use this only to sanity-check, not to assert exact pay.
-5. **Flag for reviewer:** "Classification derived from bank statement amounts only. Employment status, birth cohort, economic-activity rate, and the in-force 2026 thresholds have not been independently verified. Reviewer must confirm before filing Declaration 1/6 or the GDD."
-
-## Section 10 -- Reference material
-
-### Rate summary (Category III employee, born after 31 Dec 1959)
-
-**Rate summary (Category III employee, born after 31 Dec 1959)**  _(Ministry of Economy; ISSA; innovires; PwC)_
-
-| Fund | Total | Employee | Employer | Source |
-| --- | --- | --- | --- | --- |
-| Pension (1st pillar) | 14.8% | 6.58% | 8.22% | Ministry of Economy; ISSA; innovires |
-| 2nd pillar (Universal Pension Fund) | 5% | 2.2% | 2.8% | Ministry of Economy; PwC |
-| Disease & Maternity | 3.5% | 1.4% | 2.1% | innovires; Ministry of Economy |
-| Unemployment | 1% | 0.4% | 0.6% | innovires; Ministry of Economy |
-| Work accident (employer only) | 0.4%–1.1% | 0% | 0.4%–1.1% | Ministry of Economy; PwC |
-| Health (NHIF) | 8% | 3.2% | 4.8% | Ministry of Economy; PwC |
-| **Total** | **32.7%–33.4%** | **13.78%** | **18.92%–19.62%** | Ministry of Economy; PwC |
-
-Self-check: employee 6.58+2.2+1.4+0.4+0+3.2 = 13.78. Employer low 8.22+2.8+2.1+0.6+0.4+4.8 = 18.92; high (1.1% accident) = 19.62. Total 13.78+18.92 = 32.70; 13.78+19.62 = 33.40.
-
-### Pre-1960 cohort (no 2nd pillar)
-
-**Pre-1960 cohort (no 2nd pillar)**  _(Ministry of Economy; ISSA)_
-
-| Fund | Total | Employee | Employer | Source |
-| --- | --- | --- | --- | --- |
-| Pension (1st pillar, higher) | 19.8% | 8.78% | 11.02% | Ministry of Economy; ISSA |
-| 2nd pillar | n/a | n/a | n/a | Ministry of Economy; ISSA |
-
-Self-check: 8.78 + 11.02 = 19.80. Other funds (disease/maternity, unemployment, work accident, health) are unchanged from the table above. Combined employee total again = 8.78+1.4+0.4+3.2 = 13.78; combined employer total (low) = 11.02+2.1+0.6+0.4+4.8 = 18.92.
-
-### Self-insured persons (born after 1959)
-
-**Self-insured persons (born after 1959)**  _(innovires; Ruskov & Kollegen; PwC)_
-
-| Component | Rate | Source |
-| --- | --- | --- |
-| Pension (1st pillar) | 14.8% | innovires; Ruskov & Kollegen |
-| 2nd pillar | 5% | innovires; PwC |
-| Health (NHIF) | 8% | innovires; PwC |
-| **Mandatory total** | **27.8%** | innovires; Ruskov & Kollegen; PwC |
-| Optional Disease & Maternity | +3.5% | innovires |
-| **With optional cover** | **31.3%** | innovires |
-
-Self-check: 14.8 + 5 + 8 = 27.8; 27.8 + 3.5 = 31.3. Unemployment and work-accident funds do NOT apply.
-
-### Floors and ceilings
-
-**Floors and ceilings**  _(Ministry of Economy; PwC; Ruskov & Kollegen)_
-
-| Item | 2025 (BGN) | 2026 (EUR) | Source |
-| --- | --- | --- | --- |
-| Min insurable income (employees, general) | 933 (Jan–Mar); 1,077 (Apr–Dec) | follows min wage 620.20 (= BGN 1,213) | Ministry of Economy; PwC |
-| Min insurable income (self-insured) | 1,077 (= the minimum wage) | 550.66 (= BGN 1,077, carried over pending Budget Act; draft proposes 620.20) **[RESEARCH GAP — reviewer to confirm]** | PwC *Other taxes*; Ruskov & Kollegen |
-| Max insurable income (ceiling, all) | 3,750 (Jan–Mar); 4,130 (Apr–Dec) | 2,111.64 (= BGN 4,130, carried over pending Budget Act; draft proposes 2,352) | Ministry of Economy; PwC *Other taxes* |
-| Minimum monthly wage | 1,077 (from 1 Jan 2025, = EUR 550.66) | 620.20 (= BGN 1,213, from 1 Jan 2026; Council of Ministers Decree No. 243 of 13.11.2025) | Ministry of Economy; Ruskov & Kollegen |
-
-Euro conversions at the irrevocable fixed rate BGN 1.95583 = EUR 1. Note the two distinct 2026 floors: the **employee** floor is the 2026 minimum wage EUR 620.20 (= BGN 1,213 / 1.95583 = 620.20); the **self-insured** floor is EUR 550.66 (= the 2025 BGN 1,077 carried over: 1,077 / 1.95583 = 550.66). These are NOT the same BGN amount — BGN 1,077 ≠ BGN 1,213. Ceiling: BGN 4,130 / 1.95583 = 2,111.65 (PwC rounds to EUR 2,111.64).
-
-### Taxes (context)
-
-**Taxes (context)**  _(Ministry of Economy; PwC; PwC corporate)_
-
-| Tax | Rate | Source |
-| --- | --- | --- |
-| Personal income tax | 10% flat (no local/municipal PIT) | Ministry of Economy; PwC |
-| Corporate income tax | 10% flat (no local CIT; Pillar Two QDMTT can lift effective rate to 15% for large groups) | PwC corporate |
-
-### Forms and deadlines
-
-**Forms and deadlines**  _(activpayroll; asanify; Lano; innovires; Ruskov & Kollegen; PwC; playroll)_
-
-| Form | Purpose | Deadline | Source |
-| --- | --- | --- | --- |
-| Declaration 1 (Образец 1) | Per-employee insured data + contributions | 25th of following month | activpayroll; asanify; Lano |
-| Declaration 6 (Образец 6) | Employer totals: contributions + withheld PIT; self-insured annual reconciliation | 25th of following month (employers) | activpayroll; innovires; Ruskov & Kollegen |
-| Annual PIT return (GDD) | Self-insured annual reconciliation; freelancer/sole-trader income | 30 April following year | innovires; PwC |
-| Monthly payment | Remittance of contributions + PIT to NRA | 25th of following month | Lano; playroll |
-
-### Thresholds
-
-**Thresholds**  _(innovires foreign-employer-registration; Ministry of Economy; ISSA; PwC)_
-
-| Threshold | Detail | Source |
-| --- | --- | --- |
-| Employer registration | Employers (incl. foreign employers with staff in BG) must register with the NRA and report insured persons | innovires foreign-employer-registration |
-| 2nd pillar eligibility | Applies only to persons born after 31 Dec 1959; pre-1960 pay the higher 19.8% state pension instead | Ministry of Economy; ISSA |
-| Contribution cap | Income above the ceiling (BGN 4,130 H2-2025 / EUR 2,111.64 2026) is not subject to social or health contributions | Ministry of Economy; PwC |
-
-### Penalties
-
-**Penalties**  _(asanify; activpayroll; secondary guides; Interest on Taxes, Fees and Other State Receivables Act)_
-
-| Penalty | Amount | Source |
-| --- | --- | --- |
-| Late/missed Declaration 1 or 6 | Reported ~EUR 250–500 per late filing, plus statutory interest | asanify; activpayroll **[RESEARCH GAP — reviewer to confirm]** |
-| General non-compliance / contribution violations | BGN 500–10,000 depending on severity/recurrence (Social Security Code admin-penalty provisions) | asanify; secondary guides **[RESEARCH GAP — reviewer to confirm]** |
-| Interest on overdue contributions | Statutory interest (BNB base rate + 10 pts, per the Interest Act) from the due date | general; verify against the Interest on Taxes, Fees and Other State Receivables Act **[RESEARCH GAP — reviewer to confirm]** |
-
-### Test suite
-
-All employees born after 31 Dec 1959 (Category III) unless stated; 2026 figures use ceiling EUR 2,111.64 and work-accident at the low end (0.4%).
-
-Test 1: Employee, gross EUR 1,000/month, 2026. Within band. Employee SSC = 13.78% x 1,000 = EUR 137.80. PIT base = 1,000 - 137.80 = EUR 862.20. PIT = EUR 86.22. Net = 1,000 - 137.80 - 86.22 = EUR 775.98. Employer SSC (18.92%) = EUR 189.20.
-
-Test 2: Employee, gross EUR 2,000/month, 2026. Within band. Employee SSC = EUR 275.60. PIT base = EUR 1,724.40. PIT = EUR 172.44. Net = EUR 1,551.96. Employer SSC (18.92%) = EUR 378.40. Total NRA outflow = 275.60 + 172.44 + 378.40 = EUR 826.44.
-
-Test 3: Employee, gross EUR 3,000/month, 2026. Above ceiling → base EUR 2,111.64. Employee SSC = 13.78% x 2,111.64 = EUR 290.98. PIT base = 3,000 - 290.98 = EUR 2,709.02. PIT = EUR 270.90. Net = EUR 2,438.12.
-
-Test 4: Employee born 1955 (pre-1960), gross EUR 2,000/month, 2026. Pension 19.8% (8.78/11.02), no 2nd pillar. Employee total = 8.78 + 1.4 + 0.4 + 3.2 = 13.78% x 2,000 = EUR 275.60 (the higher 1st-pillar employee pension 8.78 replaces 6.58+2.2=8.78, so the total is unchanged). Employer total = 11.02 + 2.1 + 0.6 + 0.4 + 4.8 = 18.92% x 2,000 = EUR 378.40 (11.02 replaces 8.22+2.8=11.02). PIT base = EUR 1,724.40; PIT = EUR 172.44.
-
-Test 5: Self-insured person, declared income EUR 1,500/month, 2026, no optional cover. Contributions = 27.8% x 1,500 = EUR 417.00.
-
-Test 6: Self-insured person, declared income EUR 1,500/month, 2026, WITH optional Disease & Maternity. Contributions = 31.3% x 1,500 = EUR 469.50.
-
-Test 7: Self-insured person, declared income below the EUR 550.66 floor → clamp UP to EUR 550.66. Contributions = 27.8% x 550.66 = EUR 153.08. **[RESEARCH GAP — reviewer to confirm 2026 final floor]**
-
-Test 8: Employee, 2025 H2 (Apr–Dec), gross BGN 5,000/month → above ceiling BGN 4,130 → base BGN 4,130. Employee SSC = 13.78% x 4,130 = BGN 569.11. PIT base = 5,000 - 569.11 = BGN 4,430.89. PIT = BGN 443.09. Net = 5,000 - 569.11 - 443.09 = BGN 3,987.80.
-
-Arithmetic self-check (Test 8): 4,130 x 0.1378 = 569.114 → BGN 569.11; 5,000 - 569.11 = 4,430.89; x10% = 443.089 → 443.09; 5,000 - 569.11 - 443.09 = 3,987.80.
-
-### Prohibitions
-
-- **Fix period and employment status first** — NEVER compute Bulgarian contributions without first fixing the period (2025 BGN sub-period vs 2026 EUR) and the employment status (employee vs self-insured person).  _(Prohibitions section)_
-- **2nd pillar only for post-1959 births** — NEVER apply the 2nd pillar (5%) to a person born before 1 Jan 1960 — they pay the higher 19.8% state pension and are outside the Universal Pension Fund.  _(Prohibitions section)_
-- **Disease & Maternity optional for self-insured** — NEVER add the 3.5% Disease & Maternity to a self-insured person's rate unless they have voluntarily elected that cover.  _(Prohibitions section)_
-- **No unemployment/work-accident for self-insured** — NEVER apply unemployment or work-accident contributions to a self-insured person — those funds do not apply.  _(Prohibitions section)_
-- **2026 EUR floors/ceilings pending confirmation** — NEVER treat the 2026 EUR floors/ceilings (EUR 550.66 / EUR 2,111.64) as final after ~Aug 2026 — they are pending the Budget Act; flag and verify.  _(Prohibitions section)_
-- **Work-accident rate needs NACE code** — NEVER pick a single work-accident rate inside 0.4%–1.1% without the NACE/economic-activity code — flag the gap.  _(Prohibitions section)_
-- **PIT base calculation** — NEVER compute the PIT base on gross alone — it is gross MINUS the employee's mandatory social/health contributions, then x 10%.  _(Prohibitions section)_
-- **Ceiling clamp for contributions** — NEVER omit the ceiling clamp — contributions stop at the maximum insurable income even though PIT continues on the full base.  _(Prohibitions section)_
-- **No definitive penalty quantification** — NEVER quantify penalties or statutory interest from this skill's figures — they are secondary-source and unconfirmed; escalate.  _(Prohibitions section)_
-- **Label figures as estimates** — NEVER present figures as definitive — label as estimated and direct the client to the NRA/NSSI and a Bulgarian-licensed accountant.  _(Prohibitions section)_
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 
@@ -604,4 +218,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bulgaria-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bulgaria-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bulgaria-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bulgaria-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

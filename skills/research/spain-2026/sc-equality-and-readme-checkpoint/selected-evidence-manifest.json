@@ -1,0 +1,214 @@
+{
+  "scope": "Independent bounded PASS on exact README5a732c69 and SCf7f25258. Administrative equality-at-SMI method only; statutory fee/MEI and narrow literal legal reconciliation remain open. Not a country completion or attestation.",
+  "selection": "Only the listed artifacts are copied. Full private review manifests can name additional private snapshots; no claim that every such file is included here.",
+  "artifacts": [
+    {
+      "path": "readme-domain-mapping-correction/draft-options.md",
+      "bytes": 398,
+      "sha256": "3a0fd525648bc5bd2ce8cb589df77b0b82be1737294717897ed04c2b2b42fd33",
+      "original_bytes": 398,
+      "original_sha256": "3a0fd525648bc5bd2ce8cb589df77b0b82be1737294717897ed04c2b2b42fd33",
+      "lossless_gzip": false
+    },
+    {
+      "path": "readme-domain-mapping-correction/writer-freeze.json",
+      "bytes": 248,
+      "sha256": "6185b9e4068e6305c6f2318e771d2a25ac6cac3a57bc52a57476573ebbe582b4",
+      "original_bytes": 248,
+      "original_sha256": "6185b9e4068e6305c6f2318e771d2a25ac6cac3a57bc52a57476573ebbe582b4",
+      "lossless_gzip": false
+    },
+    {
+      "path": "readme-domain-mapping-correction/root-artifact-manifest.json",
+      "bytes": 1316,
+      "sha256": "840dbf5687b51d4b46da244c124c52b8168827ecc8167f25d405d33081f056be",
+      "original_bytes": 1316,
+      "original_sha256": "840dbf5687b51d4b46da244c124c52b8168827ecc8167f25d405d33081f056be",
+      "lossless_gzip": false
+    },
+    {
+      "path": "readme-domain-mapping-correction/independent/checks.json",
+      "bytes": 4311,
+      "sha256": "60266c8ba18b12ead3389f5a7ade20682c74b52bc7018ca6fe2f90ac6badd51c",
+      "original_bytes": 4311,
+      "original_sha256": "60266c8ba18b12ead3389f5a7ade20682c74b52bc7018ca6fe2f90ac6badd51c",
+      "lossless_gzip": false
+    },
+    {
+      "path": "readme-domain-mapping-correction/independent/frozen-manifest.json",
+      "bytes": 1024,
+      "sha256": "bc73b4b7125d0906dd1a597ab99bd4d5233fd7d0cf1b8ebf80c35f862d5d9e08",
+      "original_bytes": 1024,
+      "original_sha256": "bc73b4b7125d0906dd1a597ab99bd4d5233fd7d0cf1b8ebf80c35f862d5d9e08",
+      "lossless_gzip": false
+    },
+    {
+      "path": "readme-domain-mapping-correction/independent/report.md",
+      "bytes": 2244,
+      "sha256": "5492a94fb25fb34211ab7eafb3f28ec42cc62083a8d7e978f7650864d3278f6a",
+      "original_bytes": 2244,
+      "original_sha256": "5492a94fb25fb34211ab7eafb3f28ec42cc62083a8d7e978f7650864d3278f6a",
+      "lossless_gzip": false
+    },
+    {
+      "path": "readme-domain-mapping-correction/independent/surgical.diff.gz",
+      "bytes": 1191,
+      "sha256": "4bbdbbf7ac7999f16e17524d1f39965b8ceae7f2c68738253b68fcc3d1222d9a",
+      "original_bytes": 3308,
+      "original_sha256": "0cd852bc0762ed93d038c4cc28c1d0c4550c2b49dd694cba3d264520cefc3dde",
+      "lossless_gzip": true
+    },
+    {
+      "path": "sc-extension-equality-current/draft-options.md",
+      "bytes": 562,
+      "sha256": "076bac2f1f35a5b693300d13e5ac59abaa828da11b7f6f79457afee830886cfd",
+      "original_bytes": 562,
+      "original_sha256": "076bac2f1f35a5b693300d13e5ac59abaa828da11b7f6f79457afee830886cfd",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/writer-freeze.json",
+      "bytes": 584,
+      "sha256": "84bace6458b1b6fc58751de35c2f5c28b790b320af59b290a40663a2d15f9fc3",
+      "original_bytes": 584,
+      "original_sha256": "84bace6458b1b6fc58751de35c2f5c28b790b320af59b290a40663a2d15f9fc3",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/root-artifact-manifest.json",
+      "bytes": 1650,
+      "sha256": "a6c4419e3574ec7262f355e6b4951bc7f9d5282ef8d19b9e6e482f3073b5d9ce",
+      "original_bytes": 1650,
+      "original_sha256": "a6c4419e3574ec7262f355e6b4951bc7f9d5282ef8d19b9e6e482f3073b5d9ce",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/source-receipts.json",
+      "bytes": 1690,
+      "sha256": "ee15d32b2db5c942ef7b3e3af4b1c92bd3ab9b3faa423cf550f98ab1dc90f12f",
+      "original_bytes": 1690,
+      "original_sha256": "ee15d32b2db5c942ef7b3e3af4b1c92bd3ab9b3faa423cf550f98ab1dc90f12f",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/independent/boundary-controls.json",
+      "bytes": 3905,
+      "sha256": "714a6c8c7d60b56876302bf2cd19643a510b9844ffd23aa102ab9577fdf7e12d",
+      "original_bytes": 3905,
+      "original_sha256": "714a6c8c7d60b56876302bf2cd19643a510b9844ffd23aa102ab9577fdf7e12d",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/independent/frozen-manifest.json",
+      "bytes": 1971,
+      "sha256": "706d19414d8e0e95fbf837adeeefa1bfcd54220c9e0b82674f10bafb333dab5b",
+      "original_bytes": 1971,
+      "original_sha256": "706d19414d8e0e95fbf837adeeefa1bfcd54220c9e0b82674f10bafb333dab5b",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/independent/guide-validator.txt",
+      "bytes": 507,
+      "sha256": "92de247b53e509a47e136aafaed778c41f9e50d5a7701f449049de183c9f00fc",
+      "original_bytes": 507,
+      "original_sha256": "92de247b53e509a47e136aafaed778c41f9e50d5a7701f449049de183c9f00fc",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/independent/oa-runner.txt",
+      "bytes": 303,
+      "sha256": "d28208b3e77354e2944fc29ae32afab915c573d438bd5d1949d90cd4c96a0653",
+      "original_bytes": 303,
+      "original_sha256": "d28208b3e77354e2944fc29ae32afab915c573d438bd5d1949d90cd4c96a0653",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/independent/preservation-checks.json",
+      "bytes": 3887,
+      "sha256": "070afb0a3b97eb541d7b2e780beb633c87b79c57f7fabea15a6fc103e15bde9d",
+      "original_bytes": 3887,
+      "original_sha256": "070afb0a3b97eb541d7b2e780beb633c87b79c57f7fabea15a6fc103e15bde9d",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/independent/primary-sections-read.txt",
+      "bytes": 41513,
+      "sha256": "a324fd0529922f77cee7719fe3e8aa4cc803b148976c11a2b9761f1c9a67f2e8",
+      "original_bytes": 41513,
+      "original_sha256": "a324fd0529922f77cee7719fe3e8aa4cc803b148976c11a2b9761f1c9a67f2e8",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/independent/report.md",
+      "bytes": 5231,
+      "sha256": "7412629f6f56a8b8608f79404454a65f6c5a99575a89f64c97ea78e5c2f8f440",
+      "original_bytes": 5231,
+      "original_sha256": "7412629f6f56a8b8608f79404454a65f6c5a99575a89f64c97ea78e5c2f8f440",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/independent/source-read-receipts.json",
+      "bytes": 2599,
+      "sha256": "0963643605c12dd871674a5673b8906e0dd983f46a34b4b046c226cc2010a1d9",
+      "original_bytes": 2599,
+      "original_sha256": "0963643605c12dd871674a5673b8906e0dd983f46a34b4b046c226cc2010a1d9",
+      "lossless_gzip": false
+    },
+    {
+      "path": "sc-extension-equality-current/independent/surgical.diff.gz",
+      "bytes": 3315,
+      "sha256": "f374d4aadfbad6a19b35dfdbff66693bec0058df35275f9a530a8ab3dfbcbb1d",
+      "original_bytes": 8152,
+      "original_sha256": "5c73cab38d89f2aff6111be6d3b2e9d4b797dbf633919ba74a1948f12aa6b986",
+      "lossless_gzip": true
+    },
+    {
+      "path": "sc-extension-equality-current/sources/LETA-current.html.gz",
+      "bytes": 60083,
+      "sha256": "ab34d2743f7b959a70c1c378f489acd1a718ba4048f555738ba5c825b73ff897",
+      "original_bytes": 500808,
+      "original_sha256": "cb5515be4dfa46cb84ab6be4f546bb60155d06e6bd7d9e658c2acdea842d8e45",
+      "lossless_gzip": true
+    },
+    {
+      "path": "sc-extension-equality-current/sources/LETA-current.html.txt.gz",
+      "bytes": 41376,
+      "sha256": "8871e306e632a7d05428a5326364750aa000c912e9d40df78c6c90af7586111d",
+      "original_bytes": 187122,
+      "original_sha256": "0a0ec5614b8f2a42cf8da5022242a418ebb3caed09f03b73683f6f0bc4b08670",
+      "lossless_gzip": true
+    },
+    {
+      "path": "sc-extension-equality-current/sources/RD2064-current.html.gz",
+      "bytes": 88525,
+      "sha256": "f9f8e89084b12e0523e9e66cda32313cc44335d83c30725a082c73c511b89374",
+      "original_bytes": 988922,
+      "original_sha256": "6269d3bd555814c601f9526cc250c782894f6f8330a840cc572d027f09c6356c",
+      "lossless_gzip": true
+    },
+    {
+      "path": "sc-extension-equality-current/sources/RD2064-current.html.txt.gz",
+      "bytes": 58460,
+      "sha256": "5695d9b9d94b46f7c91938f21b6b194d9099db5b7c2b2f004c707c82515f54fa",
+      "original_bytes": 282422,
+      "original_sha256": "9cee3a77c2de1f561f995f737b4b7bbb15a5f85dd3527906e8b51e33d79dd5b8",
+      "lossless_gzip": true
+    },
+    {
+      "path": "sc-extension-equality-current/sources/TGSS-current-system.html.gz",
+      "bytes": 20524,
+      "sha256": "95f45efb27b5e906cbe81be46c87231ae8a784ea037577f26f77250de885a2ff",
+      "original_bytes": 87853,
+      "original_sha256": "333ecf206a88278a285a18204eaa09b88b7158c14d9c90d1de9d654e11afa019",
+      "lossless_gzip": true
+    },
+    {
+      "path": "sc-extension-equality-current/sources/TGSS-current-system.html.txt.gz",
+      "bytes": 11098,
+      "sha256": "0d97d765d388e68369ce2e500e5531422910e181537f64ed3c8af50eab82b927",
+      "original_bytes": 33909,
+      "original_sha256": "292f5f3fad6299b6df21b0cda6f84fa36ad16016e7391adef8f1da7c415a38bf",
+      "lossless_gzip": true
+    }
+  ]
+}

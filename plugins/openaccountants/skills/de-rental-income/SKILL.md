@@ -1,325 +1,341 @@
 ---
 name: de-rental-income
-description: "Use this skill whenever asked about German rental income taxation (Vermietung und Verpachtung). Trigger on phrases like \"Mieteinnahmen\", \"Vermietung\", \"Verpachtung\", \"Anlage V\", \"§21 EStG\", \"AfA\", \"Abschreibung\", \"Werbungskosten Vermietung\", \"Hausgeld\", \"Grundsteuer deduction\", \"Erhaltungsaufwand\", \"Herstellungskosten\", \"verbilligte Vermietung\", \"Möblierungszuschlag\", \"rental income Germany\", \"German property tax deduction\", \"depreciation German property\", \"Verlustverrechnung\", \"rental loss Germany\", or any question about computing, filing, or optimising income from letting immovable property in Germany. Covers Anlage V structure, AfA depreciation rates, Werbungskosten, repairs vs improvements, reduced-rent rules, furnished premium, and loss offset. ALWAYS read this skill before touching any German rental income work."
+description: "German income from letting property held privately (Einkünfte aus Vermietung und Verpachtung, § 21 EStG), tax year 2026. Covers what counts as rent and Werbungskosten (§ 9 EStG), building depreciation at 2%, 2.5% or 3% (§ 7(4)), the 5% declining-balance AfA for new housing (§ 7(5a)) and § 7b special depreciation for new rental flats, maintenance versus acquisition-related production cost (the 15% three-year rule) and § 82b EStDV spreading, cheap lets to relatives (the 50% and 66% rules), holiday and short-term lets and the intention to make a surplus, losses, the ten-year rule on a sale (§ 23), Anlage V and deadlines. Trigger on: Mieteinnahmen, Vermietung, Anlage V, AfA Gebäude, Werbungskosten Vermietung, anschaffungsnahe Herstellungskosten, verbilligte Vermietung, Ferienwohnung, Spekulationsfrist, rental income Germany. Out of scope: property in a business or a trade in property (de-trade-tax), the tariff (de-einkommensteuer-freelancer), non-resident landlords (de-non-resident-tax), s"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/de-rental-income"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-10-26"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Rental income tax in Germany (Vermietung und Verpachtung)
+# Rental income tax in Germany 2026 (Vermietung und Verpachtung)
 
-## Scope
+> **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific landlord's facts. A Steuerberater should confirm results before a return is filed.
 
-An individual's income from letting land, buildings and flats held as **private assets** ([§ 21 EStG](https://www.gesetze-im-internet.de/estg/__21.html)): income, deductible costs (Werbungskosten), building depreciation (AfA, including the 3% and declining-balance rules for new builds and § 7b), maintenance versus acquisition cost (the 15% rule), cheap lets (the 66% rule), holiday and short-term lets, losses, a sale within ten years, and Anlage V.
+## Who this applies to
 
-- **Who.** Private landlords resident in Germany and their preparers. Letting income that belongs to another kind of income, such as property held in a business or by a trading partnership, is taxed there (§ 21(3) EStG) and is outside this skill.
-- **Which year.** Tax year 2026, the calendar year. The consolidated EStG as read applies from 2026 ([§ 52(1) EStG](https://www.gesetze-im-internet.de/estg/__52.html): "erstmals für den Veranlagungszeitraum 2026 anzuwenden"). For the 2025 returns being filed now, see "Returns being filed now: tax year 2025".
-- **Forms.** The 2026 instructions were not on ELSTER on 27 September 2026. Form names, line numbers, the cheap-let forecast test and the official example come from the [ELSTER instructions for the 2025 return](https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025) ("2025 instructions"). Check the 2026 form when published.
-- **Measure.** Receipts less Werbungskosten ([§ 2(2) EStG](https://www.gesetze-im-internet.de/estg/__2.html)), cash basis. The result joins the client's other income at the normal tariff, plus solidarity surcharge and church tax (tariff: `de-einkommensteuer-freelancer`).
-- **Related Skills.** `de-capital-gains` (sales), `germany-vat-return` (VAT), `de-trade-tax` (a letting activity that is a trade), `de-freelance-intake` (intake and routing).
+- **Individuals letting land, buildings, flats or rooms held as private assets.** This is income from letting and leasing under [§ 21(1) EStG](https://www.gesetze-im-internet.de/estg/__21.html): immovable property (land, buildings, parts of buildings, rights such as a heritable building right), bundles of movable assets, the temporary grant of rights, and the sale of rent claims.
+- **Not here: letting that belongs to another kind of income** (§ 21(3) EStG). Property held in a business, a trading partnership, or a trade in property (gewerblicher Grundstückshandel) is taxed as business income: refer, and see `de-trade-tax`. Hotel-like services can also make a let a trade.
+- **Residents.** A person with a home or habitual abode in Germany is taxed on worldwide income. This skill computes the German rental result. Rent from property abroad (Anlage AUS, treaty exemption): refer.
+- **Non-residents with German property** are taxed on German rent under [§ 49(1) no. 6 EStG](https://www.gesetze-im-internet.de/estg/__49.html). Compute the rental result with this skill, then go to `de-non-resident-tax` for liability, the tariff and filing.
+- **Year.** Tax year 2026, the calendar year. The consolidated EStG as read applies "erstmals für den Veranlagungszeitraum 2026" ([§ 52(1) EStG](https://www.gesetze-im-internet.de/estg/__52.html)). For 2025 returns still being filed, see "Deadlines and filing".
+- **Measure.** Receipts less Werbungskosten, on a cash basis. The result joins the client's other income at the normal tariff with solidarity surcharge and church tax: use `de-einkommensteuer-freelancer` for the tariff.
+- **Refer, not covered here**: co-ownership determinations (separate and uniform assessment), heirs' communities, funds, usufruct (Nießbrauch), heritable building rights (Erbbaurecht) as a party, §§ 7h and 7i, and §§ 15a and 15b loss limits.
+- **Related skills.** `de-capital-gains` (sales), `germany-vat-return` and `de-vat-annual-and-special-schemes` (VAT), `de-trade-tax` (a letting that is a trade), `de-estimated-tax` (prepayments), `de-employee-income-tax` (employees who must file), `de-non-resident-tax` (non-resident landlords).
 
-## Ask the client first
+## Rates, bands and thresholds
 
-- When was the building completed, and when did you buy it (contract date, and date benefit and burden passed)? Which depreciation method and rate did past returns use?
-- Is the property held privately or in a business? What share of the floor area is housing?
-- How was the price split between land and building, and by whom?
-- What rent and running costs (Umlagen) does each tenant pay? What is the local market rent? Is the tenant a relative? Is the let permanent?
-- What works were done since the purchase, when, and at what cost without VAT?
-- Is any unit a holiday flat or let short-term through a platform? Any own use? Is VAT charged?
-- For a new flat: date of the building application or notice, start of construction, living space in m², cost per m², energy standard.
-- Co-owners? Loans? Any sale made or planned? Is the client an employee with wage tax withheld?
+All figures apply to tax year 2026 and were the same in 2025 unless marked.
 
-**Defaults when a fact is missing.** Completion date, land share, market rent for a cheap let, or private versus business status unknown: stop and ask, because each changes the result. Unsure whether work is maintenance or production cost: treat it as production cost (capitalise) until resolved. Housing use unknown: ask, because § 7(5a), § 7b, § 21(2) and § 82b apply only to housing.
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| Straight-line AfA, building completed after 31 Dec 2022 | 3% a year | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(4) no. 2(a)) |
+| Straight-line AfA, completed 1 Jan 1925 to 31 Dec 2022 | 2% a year | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(4) no. 2(b)) |
+| Straight-line AfA, completed before 1 Jan 1925 | 2.5% a year | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(4) no. 2(c)) |
+| Declining-balance AfA for housing, construction start or purchase contract 1 Oct 2023 to 30 Sep 2029 | 5% of remaining value | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(5a)) |
+| § 7b special depreciation for new rental flats, year of purchase or completion and three more | up to 5% a year of the base | 2026 | https://www.gesetze-im-internet.de/estg/__7b.html |
+| § 7b cost cliff / base cap, application 1 Jan 2023 to 30 Sep 2029 | EUR 5,200 / EUR 4,000 per m² of living space | 2026 | https://www.gesetze-im-internet.de/estg/__7b.html (§ 7b(2), (3)) |
+| § 7b cost cliff / base cap, application 1 Sep 2018 to 31 Dec 2021 | EUR 3,000 / EUR 2,000 per m²; last year of claim 2026 | 2026 | https://www.gesetze-im-internet.de/estg/__52.html (§ 52(15a)) |
+| Works within three years of purchase capitalised if, without VAT, they exceed | 15% of the building's acquisition cost | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(1) no. 1a) |
+| Spreading of larger maintenance, mainly residential building | 2 to 5 years | 2026 | https://www.gesetze-im-internet.de/estdv_1955/__82b.html |
+| Low-value movable item (furniture) deducted at once | cost not more than EUR 800 net | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(2)), via § 9(1) no. 7 |
+| Cheap let of a home: costs split if rent is | under 50% of local market rent | 2026 | https://www.gesetze-im-internet.de/estg/__21.html (§ 21(2)) |
+| Cheap let of a permanent home: fully paid if rent is | at least 66% of local rent | 2026 | https://www.gesetze-im-internet.de/estg/__21.html (§ 21(2)) |
+| Car travel to the property (actual cost or flat rate) | 30 cents per km driven | 2026 | https://www.gesetze-im-internet.de/brkg_2005/__5.html (§ 5(2) BRKG) |
+| Commuting allowance (only if the property were a first place of activity) | EUR 0.38 per full km one way | 2026 | https://www.gesetze-im-internet.de/estg/__9.html (§ 9(1) no. 4) |
+| Private sale of land: taxable period | not more than 10 years between purchase and sale | 2026 | https://www.gesetze-im-internet.de/estg/__23.html (§ 23(1) no. 1) |
+| Private sale gains tax-free if total for the year is | less than EUR 1,000 | 2026 | https://www.gesetze-im-internet.de/estg/__23.html (§ 23(3)) |
+| Loss carry-back | EUR 1,000,000 (EUR 2,000,000 joint) | 2026 | https://www.gesetze-im-internet.de/estg/__10d.html (§ 10d(1)) |
+| Loss carry-forward above EUR 1 million (EUR 2 million joint) of total income | 70% of the excess for 2024 to 2027; 60% from 2028 | 2026 | https://www.gesetze-im-internet.de/estg/__10d.html; https://www.recht.bund.de/bgbl/1/2024/108/regelungstext.pdf (Art. 6, in force 1 Jan 2028) |
+| Employee must file if untaxed side income is more than | EUR 410 | 2026 | https://www.gesetze-im-internet.de/estg/__46.html (§ 46(2) no. 1) |
+| Prepayments set only if at least | EUR 400 a year and EUR 100 per date | 2026 | https://www.gesetze-im-internet.de/estg/__37.html (§ 37(5)) |
+| VAT on a let where the landlord opts / on short-term guest lets | 19% / 7% | 2026 | https://www.gesetze-im-internet.de/ustg_1980/__12.html (§ 12(1), (2) no. 11) |
+| Late-filing surcharge per started month | 0.25% of net tax due, at least EUR 25; cap EUR 25,000 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__152.html (§ 152(5), (10)) |
+| Interest on back tax or refunds | 0.15% a month (1.8% a year), from 15 months after the year | 2026 | https://www.gesetze-im-internet.de/ao_1977/__233a.html; https://www.gesetze-im-internet.de/ao_1977/__238.html (§ 238(1a)) |
 
-## The method, step by step
-
-1. **Confirm § 21 income**: private asset, not a business, no trade in property (refer).
-2. **Pick the forms**: one Anlage V per built-on property; add Anlage V-FeWo for holiday or short-term lets; Anlage V-Sonstige for shares in communities, subletting, land without buildings, rights.
-3. **Add up 2026 receipts** on a cash basis ([§ 11 EStG](https://www.gesetze-im-internet.de/estg/__11.html)): rent, Umlagen, settlement back-payments, deposits kept, VAT received.
-4. **Fix the depreciation base**: split the total cost between land and building. Land is never depreciated.
-5. **Set the method and rate** by completion date ([§ 7 EStG](https://www.gesetze-im-internet.de/estg/__7.html)); test the 5% declining-balance method; cut the first year by months.
-6. **Test § 7b** for a new rental flat ([§ 7b EStG](https://www.gesetze-im-internet.de/estg/__7b.html)). Old window: 2026 is the last year.
-7. **Sort building costs** into maintenance and production or acquisition cost; for a building bought in the last three years run the 15% test ([§ 6(1) no. 1a EStG](https://www.gesetze-im-internet.de/estg/__6.html)).
-8. **Decide on spreading** larger maintenance over two to five years ([§ 82b EStDV](https://www.gesetze-im-internet.de/estdv_1955/__82b.html)).
-9. **List the other Werbungskosten paid** ([§ 9 EStG](https://www.gesetze-im-internet.de/estg/__9.html)). Leave out principal and maintenance-reserve payments.
-10. **Run the cheap-let test** for every home ([§ 21(2) EStG](https://www.gesetze-im-internet.de/estg/__21.html)). Below 50%: enter the cut. 50% to under 66%: refer the forecast.
-11. **Work out the surplus or loss** per property, share it between co-owners, and apply the loss rules ([§ 10d EStG](https://www.gesetze-im-internet.de/estg/__10d.html)).
-12. **File and pay** (see "Filing and payment"); review prepayments.
-13. **On a sale**, test ten years under [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html) and add back depreciation.
-
-Order matters: fix the building share (step 4) before the three-year test (step 7), which measures against it; complete the costs (step 9) before the cheap-let cut (step 10), which applies to their total.
-
-## Figures for 2026
-
-All apply to tax year 2026 and were the same in 2025 unless marked.
-
-| Rule | Figure | Source |
-| --- | --- | --- |
-| Straight-line AfA: completed after 31 Dec 2022 / 1925 to 2022 / before 1925 | 3% / 2% / 2.5% a year | [§ 7(4) EStG](https://www.gesetze-im-internet.de/estg/__7.html) |
-| Declining-balance AfA (choice, housing) | 5% of remaining value | § 7(5a) EStG |
-| § 7b special depreciation, four years | up to 5% a year | [§ 7b EStG](https://www.gesetze-im-internet.de/estg/__7b.html) |
-| § 7b cost cliff / base cap, new window | EUR 5,200 / EUR 4,000 per m² | § 7b(2), (3) EStG |
-| § 7b cost cliff / base cap, old window | EUR 3,000 / EUR 2,000 per m² | § 7b(2), (3) EStG |
-| Works within three years capitalised if | more than 15% of building cost, without VAT | [§ 6(1) no. 1a EStG](https://www.gesetze-im-internet.de/estg/__6.html) |
-| Low-value item deducted at once | not more than EUR 800 net | § 6(2) EStG |
-| Cheap let: split / fully paid | under 50% / at least 66% of market rent | [§ 21(2) EStG](https://www.gesetze-im-internet.de/estg/__21.html) |
-| Car travel to the property | 30 cents per km driven | [§ 5(2) BRKG](https://www.gesetze-im-internet.de/brkg_2005/__5.html) |
-| Commuting allowance (only if a first place of activity), 2026 | EUR 0.38 per full km one way | [§ 9(1) no. 4 EStG](https://www.gesetze-im-internet.de/estg/__9.html) |
-| Loss carry-back | EUR 1,000,000 (EUR 2,000,000 joint) | [§ 10d EStG](https://www.gesetze-im-internet.de/estg/__10d.html) |
-| Loss carry-forward above EUR 1 million (EUR 2 million joint) | 70% of the excess for 2024 to 2027; 60% from 2028 | § 10d(2) EStG; BGBl. 2024 I Nr. 108, Art. 6 (https://www.recht.bund.de/bgbl/1/2024/108/VO.html) |
-| Private sale exempt if total gains are | less than EUR 1,000 | [§ 23(3) EStG](https://www.gesetze-im-internet.de/estg/__23.html) |
-| Employee must file if untaxed income is | more than EUR 410 | [§ 46(2) EStG](https://www.gesetze-im-internet.de/estg/__46.html) |
-| VAT on an opted let | 19% | [§ 12 UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html) |
-| Prepayments set only if | at least EUR 400 a year and EUR 100 per date | [§ 37(5) EStG](https://www.gesetze-im-internet.de/estg/__37.html) |
-| Late-filing surcharge per month | 0.25%, at least EUR 25 | [§ 152(5) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |
-
-## The rules
+## The taxable base
 
 ### Income and timing
 
-- **Income**: rent, Umlagen, settlement back-payments, a deposit once kept and set off, a furniture surcharge, VAT received on an opted let. A refundable deposit is not income while held.
+- **Income**: rent; Umlagen (running costs paid by the tenant); settlement back-payments; a deposit kept and set off against rent, running costs or damage; payments for antenna, wind or Wi-Fi sites; a furniture surcharge; VAT received on an opted let; grants for rent (2025 instructions, lines 13 to 31). A refundable deposit is not income while held.
 - **Umlagen count twice**: income when received; the running costs paid are Werbungskosten.
-- **Cash basis** (§ 11 EStG): income when received, costs when paid; regularly recurring items paid shortly around the turn of the year belong to their year. Rent received in advance for more than five years **may** be spread; costs paid in advance for more than five years **must** be spread. A market-level loan discount (Disagio) is deductible when paid.
-
-### Building depreciation (AfA, [§ 7 EStG](https://www.gesetze-im-internet.de/estg/__7.html))
-
-- **Completion date decides the rate**, not the purchase date. The rates apply to every privately held building, housing or not, including condominiums and separate parts of a building (§ 7(5b)). The separate 3% rate for **business-asset** buildings not used for housing (§ 7(4) sentence 1 no. 1) is outside this skill; never use it for a private shop or office completed before 2023.
-- **Shorter actual life.** If the actual useful life is under 33 years (built after 2022), 50 years (1925 to 2022) or 40 years (before 1925), that life may be used (§ 7(4) sentence 2). The 2025 instructions call this an exceptional case needing proof and cite the BMF letter of 22 February 2023. Refer.
-- **Older staged rates.** A building built or bought in its completion year under an application or contract before 1 January 2006 (housing; earlier dates otherwise) may be on the staged rates of § 7(5). Ask what past returns used; refer any change of method.
-- **Acquired for free**: continue the previous owner's rate (2025 instructions).
-- **Declining-balance, § 7(5a).** 5% of the remaining value, so far as the building is used for **housing**, if: it is in Germany, the EU or the EEA; the client built it or bought it by the end of the completion year; and construction started (per the construction-start notice required by state law, not the application date; where none is required, the client declares a voluntary report), or the binding purchase contract was made, after 30 September 2023 and before 1 October 2029. No extraordinary write-down while it runs. Switching to straight-line is allowed, then on remaining value and remaining life.
-- **Base.** Price plus side costs (transfer tax, notary, land register, the buyer's broker) under [§ 255 HGB](https://www.gesetze-im-internet.de/hgb/__255.html), less the land share. A maintenance reserve bought with a flat is excluded; grants reduce the base (line 89). A former own home let for the first time needs a first computation.
-- **Price split.** By the ratio of market values, "nicht nach der sogenannten Restwertmethode". The [BMF price-split tool](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html) (March 2026) makes or tests a split. A contract split at arm's length or an expert valuation may also be used; the tax office may challenge a high building share.
-- **First-year month cut.** Cut one twelfth for each full month before the month of acquisition or completion (§ 7(1) sentence 4), applied to § 7(5a) by statute and to straight-line by the finance ministry ("bei Fertigstellung nach dem 31. Januar wäre eine zeitanteilige Kürzung der linearen AfA im Jahr der Fertigstellung erforderlich", BMF letter of 21 May 2025, example 7). Only the old staged rates of § 7(5) take a full first year.
-- **End**: until fully written off or sold.
-
-### Special depreciation for new rental flats ([§ 7b EStG](https://www.gesetze-im-internet.de/estg/__7b.html))
-
-Up to 5% of the base in the year of acquisition or production and the three following years, on top of normal AfA. All must hold:
-
-- The work creates **new** flats. Building application (or notice) in the **old window**, after 31 August 2018 and before 1 January 2022, or the **new window**, after 31 December 2022 and before 1 October 2029. Nothing made in 2022 qualifies.
-- Cost per m² of living space **not more than** the cliff (EUR 5,200 new, EUR 3,000 old), or no § 7b at all. The base is capped per m² (EUR 4,000 new, EUR 2,000 old); normal AfA still runs on full cost.
-- In the EU or a state giving the required administrative assistance. If bought, bought by the end of the completion year; only the buyer claims.
-- Let **for housing, against payment**, in that year and the **nine** following years. Short-term guest accommodation is not housing.
-- New window: "Effizienzhaus 40" with sustainability class, proven by the "Qualitätssiegel Nachhaltiges Gebäude".
-
-Also:
-
-- **Old window ends with 2026**: claims "letztmalig für den Veranlagungszeitraum 2026" ([§ 52(15a) EStG](https://www.gesetze-im-internet.de/estg/__52.html)), even if four years have not run. A buyer who started in 2024 claims 2024 to 2026 and loses the fourth year (BMF letter, paragraph 16). No end date for the new window.
-- **Claw-back** for the past if the flat is not let for housing for ten years, is sold in that time with the gain untaxed, or later costs push it over the cliff within three years after the year of acquisition or production (§ 7b(4)).
-- **After four years**, normal AfA runs on the remaining value ([§ 7a(9) EStG](https://www.gesetze-im-internet.de/estg/__7a.html); BMF letter, paragraph 66). Refer the computation.
-- **De minimis**: for the new window only for claimants with farming, business or self-employed income (§ 7b(5)); the 2025 instructions treat the old window as de minimis aid and ask for a checklist.
-
-Source: [BMF letter of 21 May 2025 on § 7b EStG](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5).
+- **Cash basis** ([§ 11 EStG](https://www.gesetze-im-internet.de/estg/__11.html)): income when received, costs when paid. Regularly recurring items paid shortly before or after the turn of the year belong to the year they relate to. Rent received in advance for a let of more than five years **may** be spread over the period; costs paid in advance for more than five years **must** be spread. A market-level loan discount (Disagio) is deductible when paid.
 
 ### Werbungskosten ([§ 9 EStG](https://www.gesetze-im-internet.de/estg/__9.html))
 
-Costs to get, secure and keep the income (§ 9(1) EStG), deductible in the year paid, only for a flat that earns or is intended to earn rent. Not for a flat the client lives in or lets for free.
+Costs "zur Erwerbung, Sicherung und Erhaltung der Einnahmen", deductible in the year paid, only for a property that earns or is intended to earn rent. Never for a flat the client lives in or lets free.
 
-- **Deductible**: loan interest so far as linked to the property, and costs of raising the loan; AfA and § 7b; property tax, public charges and building insurance (§ 9(1) sentence 3 no. 2); liability insurance; running costs passed on; Hausgeld **except** the maintenance-reserve part, which is deductible only when the community spends it; management; the tax adviser's rental share; tenancy legal fees; tenant advertising and broker; rent-account fees; maintenance.
-- **Travel**: actual cost or 30 cents per km **driven** (§ 5(2) BRKG through § 9(1) sentence 3 no. 4a and § 9(3) EStG). If the property were a first place of activity, the commuting allowance applies instead: EUR 0.38 per full km one way in 2026. When a let property is one is unsettled on the pages read: ask the accountant.
-- **Not deductible**: principal (Tilgung); transfer tax on the purchase (acquisition cost); reserve payments until spent; own-use or free flats; the unpaid part of a cheap let; private costs; fines (§ 9(5) with § 4(5) no. 8 EStG); income tax, solidarity surcharge, church tax.
+- **Deductible**: loan interest so far as linked to the property, and the cost of raising the loan (§ 9(1) no. 1); property tax, other public charges and building insurance (no. 2); AfA and § 7b (no. 7); liability insurance; running costs, including those passed on; Hausgeld **except** the maintenance-reserve part, which is deductible only when the owners' association spends it; management; the tax adviser's rental share; tenancy legal fees; advertising and the broker for finding a tenant; rent-account fees; maintenance.
+- **Travel**: actual cost, or 30 cents per km **driven** by car (§ 9(1) no. 4a and § 9(3) EStG with [§ 5(2) BRKG](https://www.gesetze-im-internet.de/brkg_2005/__5.html)). If the property were a first place of activity, the commuting allowance of EUR 0.38 per full km one way applies instead. When a let property is one is not settled on the pages read: ask the accountant.
+- **Not deductible**: loan principal (Tilgung); transfer tax, notary and broker on the purchase (they go into acquisition cost); reserve payments until spent; own-use or free flats; the unpaid part of a cheap let; fines (§ 9(5) with § 4(5) no. 8 EStG); income tax, solidarity surcharge and church tax.
+- **§ 35c energy credit**: only for a building used **only** for the owner's own housing ([§ 35c(2) EStG](https://www.gesetze-im-internet.de/estg/__35c.html)), and not for costs deducted as Werbungskosten (§ 35c(3)). For a let property, energy works are maintenance or production cost under the rules below, never the § 35c credit.
 
-### Maintenance or production cost ([§ 6(1) no. 1a EStG](https://www.gesetze-im-internet.de/estg/__6.html))
+### Building depreciation (AfA, [§ 7 EStG](https://www.gesetze-im-internet.de/estg/__7.html))
 
-- **Maintenance** (Erhaltungsaufwand) keeps or restores the condition: repainting, like-for-like heating, roof repair, equivalent windows. Deductible when paid, or spread under § 82b.
-- **Production cost** creates something new, extends, or substantially improves beyond the original condition ([§ 255(2) HGB](https://www.gesetze-im-internet.de/hgb/__255.html)): balcony, attic conversion, lift, lifting the standard (judged mainly by heating, sanitary, electrics and windows). Capitalised.
-- **Bought in a poor state**: making non-functioning essential parts work again (defective heating, water or fire damage), and change-of-use works before first use, are **acquisition** cost (2025 instructions).
-- **15% rule** (§ 6(1) no. 1a EStG, applied by § 9(5) sentence 2). Repair and modernisation works carried out **within three years** of acquisition become production cost if their total cost **without VAT** is **more than** 15% of the **building's** acquisition cost ("ohne die Umsatzsteuer 15 Prozent der Anschaffungskosten des Gebäudes übersteigen"). A cliff: over it, **all** are capitalised. The three years are added up, so a later job can pull earlier deductions in. Exactly 15% is not over. Not counted: extensions, and maintenance that usually recurs yearly (servicing).
-- **Spreading, § 82b EStDV.** Larger maintenance may be spread evenly over two to five years if, **when incurred**, the building is not a business asset and is **mainly** housing: housing floor area more than half the usable area; garages count as housing up to one car per flat. On sale, move into a business or end of letting, the rest is deducted that year. Co-owners use one period. Works in redevelopment areas and on listed buildings (§§ 11a, 11b EStG): refer.
+- **Completion date decides the straight-line rate**, not the purchase date: 3% after 2022, 2% for 1925 to 2022, 2.5% before 1925 (§ 7(4) sentence 1 no. 2). This covers every privately held building, housing or not, including flats and separate parts of a building (§ 7(5b)). The separate 3% rate in no. 1 is for business-asset buildings not used for housing: never use it for a private shop or office completed before 2023.
+- **Shorter actual life.** If the actual life is under 33 years (after 2022), 50 years (1925 to 2022) or 40 years (before 1925), that life may be used (§ 7(4) sentence 2). The 2025 instructions call this an exceptional case that must be proved to the tax office. Refer.
+- **Older staged rates.** A building built or bought in its completion year under an old application or contract may be on the staged rates of § 7(5). Ask what past returns used; refer any change.
+- **Acquired free of charge** (gift or inheritance): continue the previous owner's rate (2025 instructions).
+- **Declining-balance AfA, § 7(5a).** Instead of 3% straight-line, 5% of the remaining value ("Restwert") each year, so far as the building is used for **housing**, if all hold: it is in Germany, the EU or the EEA; the client built it, or bought it by the end of the completion year; and construction started (the date on the construction-start notice required by state law; where none is required, the client declares a voluntary notice) or the binding purchase contract was made after 30 September 2023 and before 1 October 2029. No extraordinary write-down while it runs. Switching to straight-line is allowed, then on the remaining value and remaining life.
+- **Base.** Price plus side costs (transfer tax, notary, land register, the buyer's broker) under [§ 255 HGB](https://www.gesetze-im-internet.de/hgb/__255.html), less the land share. Land is never depreciated. A maintenance reserve bought with a flat is excluded (2025 instructions). Grants reduce the base (line 89). A former own home let for the first time needs a first computation.
+- **Price split.** Split by the ratio of market values, not by the residual-value method (2025 instructions). The [BMF purchase-price split tool](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html) makes or tests a split. A contract split at arm's length or an expert valuation may also be used; the tax office may challenge a high building share.
+- **First-year month cut.** Cut one twelfth for each full month before the month of acquisition or completion (§ 7(1) sentence 4). Statute applies it to § 7(5a) (sentence 5). For straight-line AfA, the BMF letter of 21 May 2025 on § 7b says so too: "bei Fertigstellung nach dem 31. Januar wäre eine zeitanteilige Kürzung der linearen AfA im Jahr der Fertigstellung erforderlich" (example 7). Only the old staged § 7(5) rates take a full first year.
+- **For example**: completed February 2026, bought with benefit and burden from 1 April 2026, building share EUR 300,000. Declining-balance: 300,000 × 5% × 9/12 = EUR 11,250 in 2026; 2027: (300,000 − 11,250) × 5% = EUR 14,437.50. Straight-line instead: 300,000 × 3% × 9/12 = EUR 6,750.
+- **End**: until fully written off, or the year of sale.
+
+### § 7b special depreciation for new rental flats ([§ 7b EStG](https://www.gesetze-im-internet.de/estg/__7b.html))
+
+Up to 5% of the base in the year of acquisition or production and the three following years, on top of normal AfA under § 7(4) or § 7(5a). All must hold:
+
+- The building work creates **new** flats that did not exist before, under a building application or notice in the **old window** (after 31 August 2018 and before 1 January 2022) or the **new window** (after 31 December 2022 and before 1 October 2029). Nothing applied for in 2022 qualifies.
+- Cost per m² of living space **not more than** the cliff (EUR 3,000 old window, EUR 5,200 new window), or no § 7b at all. The base is capped per m² (EUR 2,000 old, EUR 4,000 new). Normal AfA still runs on full cost (BMF letter of 21 May 2025, para. 65).
+- In the EU, or a state giving the required administrative help. If bought, bought by the end of the completion year; only the buyer claims.
+- Let **for housing, against payment**, in that year and the **nine** following years. Short-term guest accommodation is not housing (§ 7b(2) no. 3).
+- New window only: the building meets "Effizienzhaus 40" with sustainability class, proven by the "Qualitätssiegel Nachhaltiges Gebäude".
+- **Old window ends with 2026**: claims are allowed "letztmalig für den Veranlagungszeitraum 2026" ([§ 52(15a)](https://www.gesetze-im-internet.de/estg/__52.html)), even if four years have not run. A buyer who started in 2024 claims 2024 to 2026 and loses the fourth year (BMF letter, para. 16, example 1). The new window has no such end.
+- **Claw-back** of all past claims if the flat is not let for housing for ten years, is sold in that time with the gain untaxed, or later costs push it over the cliff within three years after the year of acquisition or production (§ 7b(4)).
+- **After four years**, AfA runs on the remaining value ([§ 7a(9) EStG](https://www.gesetze-im-internet.de/estg/__7a.html); BMF letter, para. 66). Refer the computation.
+- **De minimis aid**: for the new window, only claimants with farming, business or self-employed income must meet the EU de minimis rules (§ 7b(5)); the 2025 instructions treat the old window as de minimis aid and ask for the other aid received.
+- **For example**: an 80 m² flat applied for in 2024, completed and bought January 2026, Effizienzhaus 40 with the seal, let long-term, cost of the flat without land EUR 400,000 (land never enters § 7b: BMF letter, para. 43). 400,000 / 80 = EUR 5,000 per m², not over 5,200: qualifies. Base cap 80 × 4,000 = EUR 320,000; § 7b 320,000 × 5% = EUR 16,000 a year for 2026 to 2029, plus straight-line 400,000 × 3% = EUR 12,000 (January, no cut). At EUR 420,000 (EUR 5,250 per m²) there is no § 7b.
+
+Source for the letter: [BMF letter of 21 May 2025 on § 7b EStG](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5).
+
+### Maintenance or production cost
+
+- **Maintenance** (Erhaltungsaufwand) keeps or restores the condition: repainting, like-for-like heating, roof repair, equivalent windows. Deductible when paid, or spread under § 82b EStDV.
+- **Production cost** creates something new, extends, or substantially improves beyond the original condition ([§ 255(2) HGB](https://www.gesetze-im-internet.de/hgb/__255.html)): balcony, attic conversion, lift, lifting the standard. The 2025 instructions: works that bring the flat or building "auf einen höheren Standard" are production or acquisition cost. Capitalised and depreciated with the building.
+- **Bought in a poor state**: making non-working essential parts work again (defective heating, water or fire damage), and change-of-use works before first use, are **acquisition** cost (2025 instructions).
+- **The 15% rule, acquisition-related production cost** ([§ 6(1) no. 1a EStG](https://www.gesetze-im-internet.de/estg/__6.html), applied to Werbungskosten by § 9(5) sentence 2). Repair and modernisation works carried out **within three years** of acquisition become production cost if their total cost **without VAT** "15 Prozent der Anschaffungskosten des Gebäudes übersteigen". It is a cliff: over it, **all** of them are capitalised. The three years are added up, so a later job can pull earlier deductions back in. Exactly 15% is not over. Not counted: extensions, and maintenance that usually recurs every year, such as servicing.
+- **For example**: building completed 1970, bought May 2025, building share EUR 200,000, so the limit is EUR 30,000. Works without VAT: EUR 12,000 in 2025 (deducted on the 2025 return) and EUR 19,000 in 2026. Total EUR 31,000 is over EUR 30,000: all of it is production cost, including 2025, and is depreciated at 2% with the building. Refer the correction of the 2025 assessment. With 2026 works of EUR 18,000 the total is exactly EUR 30,000: not over, judge each job on its own.
+- **Spreading, [§ 82b EStDV](https://www.gesetze-im-internet.de/estdv_1955/__82b.html).** Larger maintenance may be spread evenly over two to five years if, **when paid**, the building is not a business asset and is **mainly** housing: housing floor area more than half the usable area; garages count as housing up to one car per flat. On sale, transfer into a business or end of letting, the rest is deducted that year. Co-owners must use the same period. Works in redevelopment areas and on listed buildings (§§ 11a, 11b EStG, §§ 7h, 7i): refer.
 
 ### Furniture
 
-A furniture surcharge is rent. Furniture and fitted kitchens are depreciated over their useful life (§ 7(1) EStG; lines 42 to 45). An item usable on its own costing not more than EUR 800 net may be deducted at once ([§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html)). How a furniture surcharge enters the cheap-let comparison is not on an official page read: refer.
+A furniture surcharge is rent. Furniture and fitted kitchens are depreciated over their useful life (§ 7(1) EStG; lines 42 to 45). An item usable on its own costing not more than EUR 800 net may be deducted at once ([§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html) through § 9(1) no. 7). How a furniture surcharge enters the cheap-let comparison is not on an official page read: refer.
 
 ### Cheap lets: the 50% and 66% rules ([§ 21(2) EStG](https://www.gesetze-im-internet.de/estg/__21.html))
 
 Applies to letting a **home for living in**, to any tenant; it mostly bites on relatives.
 
-| Rent as share of local market rent | Result |
-| --- | --- |
-| Less than 50% ("weniger als 50 Prozent") | Split into paid and unpaid parts; costs deductible only for the paid part |
-| At least 50% and less than 66% | No split **only if** no loss is expected over the let (surplus forecast); 50% alone is not enough (2025 instructions: "mindestens 50 % , jedoch weniger als 66 %") |
-| At least 66%, permanent home let ("mindestens 66 Prozent") | Fully paid; all costs deductible |
+| Rent including Umlagen, as share of local market rent including passable costs | Result |
+|---|---|
+| Less than 50% | Split into a paid and an unpaid part; costs deductible only for the paid part |
+| At least 50% and less than 66% | Surplus forecast: positive, all costs deductible; negative, split (2025 instructions; BMF letter of 8 October 2004, para. 13 as applied from 2021) |
+| At least 66%, permanent home let | Deemed fully paid; all costs deductible |
 
-- **Compare** rent paid **including** Umlagen with market rent **including** passable running costs. Not cold rent with cold rent.
-- **Split**: costs in the ratio of agreed to market rent. On the 2025 form enter all costs in full (lines 33 to 84) and the cut percentage in line 87, or an amount in line 88 if only part is let cheaply. The tax office makes the cut.
-- **Forecast**: per the BMF letter of 8 October 2004 (paragraph 33 onward), not found on an allowed page. Refer.
-- **Market rent**: the local rent index (Mietspiegel); failing that, as equal-ranking examples, a sworn expert's report, a rent database, or three comparable flats (§ 558a(2) nos. 2 to 4 BGB).
-- **Outside**: commercial space; the 66% sentence covers only permanent home lets.
+- **Compare** rent paid including Umlagen with market rent including passable running costs, never cold rent with cold rent (2025 instructions).
+- **The split**: costs in the ratio of agreed rent to market rent. On the 2025 form enter all costs in full (lines 33 to 84) and the cut percentage in line 87, or an amount in line 88 if only part of the property is let cheaply. The tax office makes the cut.
+- **The forecast (Totalüberschussprognose)** for the 50% to 66% band, per the BMF letter of 8 October 2004 (BStBl I p. 933), paras. 13 and 34, as printed with its notes in the [official income tax handbook 2024, Anhang 30 II](https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html). The notes state that from 2021 para. 13 applies with 50% and 66% in place of 56% and 75%.
+  - **Period**: 30 years, counted for the cheap let from the date of its tenancy contract (para. 34, example 2). Earlier lets of the same flat and other flats are left out.
+  - **AfA in the forecast**: the straight-line § 7(4) rate, not § 7(5a) declining balance or § 7b special depreciation actually claimed (para. 34).
+  - **Estimate**: average income and costs of the last five years, unless the client shows objective changes already set in motion; future maintenance may be estimated along § 28 of the Second Computation Ordinance (II. BV).
+  - **Safety margins**: add 10% to total estimated income and deduct 10% from total estimated costs.
+  - **Leave out** private sale gains, taxable under § 23 or not.
+  - **Result**: a positive total gives full deduction of all costs; a negative total splits the let as under 50%.
+- **Market rent**: the local rent index (Mietspiegel); failing that, equally valid: a sworn expert's reasoned report, a rent database, or rents for at least three comparable flats (§ 558a(2) nos. 2 to 4 BGB, per the 2025 instructions).
+- **Outside § 21(2)**: commercial space; the 66% sentence covers only permanent home lets. A cheap let of an office to a relative: refer.
 
-### Vacancy, holiday flats and short-term lets
+### Vacancy, holiday flats and the intention to make a surplus (Liebhaberei)
 
-- **Vacancy.** Costs stay deductible while the client intends to let. Keep evidence (listings, agent mandate, realistic rent); a long unmarketed vacancy risks denial.
-- **Form.** A holiday flat or house, or any object let **short-term** (for example through an internet platform), needs **Anlage V-FeWo** as well as Anlage V; up to 4 flats per form.
-- **Day counts** where the owner used it, left it free to others, or could use it at any time: days of own use (including free use by others; not short stays for servicing, cleaning, renovation or checks), letting and vacancy. Own use possible at any time: split vacancy by the ratio of own use to letting. Own use limited to set times (for example via an agent): only reserved time is own use; vacancy counts as letting. Never used by the owner: give the letting days usual in that place.
-- **Intention to make a surplus**: the instructions cite the BMF letter of 8 October 2004, not read on an allowed page. Refer holiday homes with own use.
-- **Trade and VAT.** Hotel-like services may make it a trade (`de-trade-tax`). Short-term guest accommodation is not VAT-exempt ([§ 4 no. 12 UStG](https://www.gesetze-im-internet.de/ustg_1980/__4.html)); where VAT is due it takes the reduced rate of seven per cent ([§ 12(2) no. 11 UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)). The reduced rate does not cover services not directly part of the letting, such as breakfast, even if included in the price (§ 12(2) no. 11 sentence 2). Whether it is due depends on the small-business rule: `germany-vat-return`. No § 7b for short-term lets.
+Source for this part: BMF letter of 8 October 2004 (BStBl I p. 933), as printed with its notes in the [official income tax handbook 2024, Anhang 30 II](https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html) ("para." below).
+
+- **Long-term home lets.** A let of a flat meant to last is taken to aim at a surplus without a test (para. 1). That presumption does not cover commercial premises or undeveloped land (note to para. 1): there the forecast below decides.
+- **Signs against the intention** (paras. 5 to 7): a let planned only for a time (a fixed-term lease with stated own use or sale, short financing, an early search for a buyer), or a sale or own use within about five years of acquisition with only losses in that time. The client can rebut by showing the decision to sell or move in came later (para. 9).
+- **Vacancy.** Costs are deductible before the first let and during a gap once the decision to let for good is made and shown by serious, continuing efforts (agent, advertisements, a realistic rent) (paras. 25 to 27). The client carries the proof. Without such efforts, or if the flat cannot be let in the foreseeable future, the intention lapses and costs stop (notes to para. 26).
+- **Forms.** A holiday flat, or any object let **short-term** (for example through an online platform), needs **Anlage V-FeWo** as well as Anlage V (2025 instructions).
+- **Day counts** where the owner used it, left it free to others, or could use it at any time: days of own use (including free use by others; not short stays for servicing, cleaning, renovation or checks), letting and vacancy. Own use possible at any time: split vacancy by the ratio of own use to letting. Own use limited to set times (for example let through an agent): only the reserved time is own use, and vacancy counts as letting. Never used by the owner and let only to changing guests: give the letting days usual in that place, from tourist office or municipal records.
+- **Holiday flat let only to changing guests** and otherwise held ready for them: the intention is taken as given without a test, whether the client lets it directly or through an agent (para. 16). Exception: if letting days fall short of the usual local letting time by **at least 25%**, with no obstacle to letting, a forecast is needed (note to para. 16).
+- **Proving there is no own use** (para. 17): the client shows one of: letting handed to an unrelated agent with own use excluded by contract for the whole year; the flat is in or right next to the client's own home, which meets the client's needs; the client has more than one holiday flat in the place and uses only one; or letting days at least equal the local seasonal average. Otherwise the client must prove it, and with too few letting days show stronger advertising (para. 18). Short stays for servicing, key handover, cleaning, checks, repairs or owners' meetings are not own use; longer stays or stays with family need explaining (para. 19).
+- **Holiday flat let part of the time and used by the owner** (or reserved for own use, or lent free): the intention is always tested by forecast (para. 21), per flat, not per let (para. 34). Only costs for let days and vacancy allocated to letting go in (para. 39); mixed costs (interest, property charges, maintenance, AfA, insurance) are split by days of each use (para. 40). Vacancy: if own use is limited to set times, only those count as own use; if possible at any time, split vacancy by the ratio of own use to letting; if the extent of own use cannot be established, vacancy is split 50/50 (paras. 22, 23). The forecast then follows para. 34: 30 years, § 7(4) AfA, five-year average, 10% margins (see the cheap-let forecast above).
+- **Without the intention** the losses are not recognised (Liebhaberei). If the lack of intention only shows later, final assessments can be changed under § 173(1) no. 1 AO (para. 10).
+- **Trade and VAT.** Hotel-like services may make it a trade (`de-trade-tax`). Short-term guest accommodation is not VAT-exempt ([§ 4 no. 12 sentence 2 UStG](https://www.gesetze-im-internet.de/ustg_1980/__4.html)); where VAT is due it is at 7% ([§ 12(2) no. 11 UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)), except for services not directly part of the letting, such as breakfast, even if included in the price. Whether VAT is due turns on the small-business rule: `germany-vat-return`. No § 7b for short-term lets.
 
 ### VAT option on commercial lets
 
-Letting is VAT-exempt (§ 4 no. 12 sentence 1 letter a UStG), except short-term accommodation, parking spaces, short-term campsites and operating fixtures. The landlord may opt only on a let **to a business for its business** ([§ 9 UStG](https://www.gesetze-im-internet.de/ustg_1980/__9.html)), and for land only so far as the tenant uses it **only** for sales that allow input VAT deduction, which the landlord must prove. Not to a private tenant. Some buildings started before 1 June 1984 or 11 November 1993 escape that test ([§ 27(2) UStG](https://www.gesetze-im-internet.de/ustg_1980/__27.html)). If opted: VAT at 19% of net rent, input VAT recoverable; on the income tax return VAT received is income (line 27) and input VAT a cost (lines 80 to 82).
+Letting land and buildings is VAT-exempt (§ 4 no. 12 sentence 1 letter a UStG), except short-term guest rooms, parking spaces, short-term campsites and operating fixtures. The landlord may opt to tax only on a let **to another business for its business** ([§ 9(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__9.html)), and for land only so far as the tenant uses it **only** for sales that allow input VAT deduction (§ 9(2)). Never to a private tenant. Some buildings begun before 1 June 1984 or 11 November 1993 escape that test ([§ 27(2) UStG](https://www.gesetze-im-internet.de/ustg_1980/__27.html)). If opted: VAT at 19% of net rent, input VAT recoverable; on the income tax return VAT received is income (line 27) and input VAT a cost (lines 80 to 82).
 
 ### Losses ([§ 10d EStG](https://www.gesetze-im-internet.de/estg/__10d.html))
 
 - **Same year**: against other rental income, then other kinds of income (§ 2(3) EStG).
-- **Carry-back**: up to EUR 1,000,000 (EUR 2,000,000 joint), to the year before and then the second year before; waivable only in full ("insgesamt abzusehen").
-- **Carry-forward**: no time limit; unlimited up to total income of EUR 1 million (EUR 2 million joint), then 70% of the excess for 2024 to 2027 (§ 52(18b)) and 60% again from 2028: BGBl. 2024 I Nr. 108, Art. 6 (https://www.recht.bund.de/bgbl/1/2024/108/VO.html) changes "70 Prozent" back to "60 Prozent" from 1 January 2028, a change the consolidated text on gesetze-im-internet.de does not show yet. Fixed by a separate notice (§ 10d(4)).
-- **Schemes**: §§ 15a, 15b apply by analogy (§ 21(1) sentence 2). Refer.
-- **Lasting losses** with no surplus in sight may be denied; no allowed page sets the test. A permanent home let at 66% or more is fully paid by statute. Refer doubtful cases.
-- **Prepayments**: a building's rental loss reduces prepayments only for calendar years beginning **after** its acquisition or completion ([§ 37(3) sentence 8 EStG](https://www.gesetze-im-internet.de/estg/__37.html)); if the building is bought before the year it is completed, count from completion (sentence 9). The bar does not apply where § 7b is claimed (sentence 10). The same timing governs a wage tax allowance ([§ 39a(1) no. 5 EStG](https://www.gesetze-im-internet.de/estg/__39a.html)).
+- **Carry-back**: up to EUR 1,000,000 (EUR 2,000,000 joint) to the year before, then the second year before; the client may waive it only in full.
+- **Carry-forward**: no time limit; unlimited up to total income of EUR 1 million (EUR 2 million joint), then 70% of the excess for 2024 to 2027 and 60% from 2028. Article 6 of BGBl. 2024 I No. 108 changes "70 Prozent" back to "60 Prozent" from 1 January 2028; the consolidated text on gesetze-im-internet.de does not show that yet. Fixed by a separate notice (§ 10d(4)).
+- **Loss schemes**: §§ 15a and 15b apply by analogy (§ 21(1) sentence 2). Refer.
 
-### Sale within ten years ([§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))
+### Sale within ten years ([§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html), the Spekulationsfrist)
 
-- A private sale if acquisition and sale are **not more than** ten years apart; buildings put up or extended in the period are included.
-- **Own-use exception**: used **only** for own housing throughout, **or** for own housing in the year of sale and the two years before (the statute does not say "full" years). A flat let up to the sale meets neither.
-- **Depreciation comes back**: the cost is **reduced** by AfA, increased and special depreciation deducted (§ 23(3) sentence 4). Gain = price less reduced cost less selling costs.
-- **Exemption limit**: tax-free only if all private-sale gains in the year are **less than** EUR 1,000; otherwise all is taxed.
-- **Gift**: a single successor takes the donor's acquisition date (§ 23(1) sentence 3); heirs are not named: ask the accountant.
-- **Also**: deduct any rest of a § 82b spread, and check § 7b claw-back. More in `de-capital-gains`.
+- A sale of land or a flat is a private sale if acquisition and sale are **not more than** ten years apart. Buildings put up or extended in the period are included.
+- **Own-use exception**: used **only** for own housing between acquisition (or completion) and sale, **or** for own housing in the year of sale and the two years before. A flat let up to the sale meets neither.
+- **Depreciation comes back**: the cost is **reduced** by AfA, increased depreciation and special depreciation claimed (§ 23(3) sentence 4). Gain = price less reduced cost less selling costs.
+- **Exemption limit**: tax-free only if all private-sale gains in the year total **less than** EUR 1,000; at EUR 1,000 or more, all is taxed. Losses offset only private-sale gains of the same year, and carry back or forward only against such gains (§ 23(3) sentences 7 and 8).
+- **Gift**: a single successor who receives it free takes over the donor's acquisition date (§ 23(1) sentence 3). Heirs' communities are not named there: ask the accountant.
+- **Also**: deduct any rest of a § 82b spread in the year of sale, and check the § 7b claw-back.
+- **For example**: bought March 2019 for EUR 300,000 (building EUR 240,000 at 2% = EUR 4,800 a year); sold at the end of February 2026 for EUR 340,000; selling costs EUR 10,000. AfA claimed: 2019, ten months = EUR 4,000; 2020 to 2025, 6 × 4,800 = EUR 28,800; 2026, two months to the sale, assumed EUR 800. Total EUR 33,600. Reduced cost EUR 266,400; gain 340,000 − 266,400 − 10,000 = EUR 63,600, all taxed. Confirm the sale-year AfA with the accountant. More in `de-capital-gains`.
 
-## Boundaries and exceptions
+### Order of work
 
-| Situation | Treatment |
-| --- | --- |
-| Completed 31 Dec 2022 vs 1 Jan 2023 | 2% vs 3% ([§ 7(4) EStG](https://www.gesetze-im-internet.de/estg/__7.html)) |
-| Construction started 30 Sep 2023 vs 1 Oct 2023, or on or after 1 Oct 2029 | Declining-balance closed / open / closed (§ 7(5a)) |
-| Mixed building, declining-balance | Only the housing part (§ 7(5a)) |
-| § 7b application in 2022 | No special depreciation (§ 7b(2)) |
-| § 7b cost exactly EUR 5,200 per m² | Qualifies ("nicht übersteigen"); above it nothing does |
-| § 7b old window in 2027 | No claim (§ 52(15a)) |
-| Works within three years at exactly 15% | Not over: normal rules (§ 6(1) no. 1a) |
-| Building half housing, half office by floor area | Not "mainly" housing: no § 82b spread |
-| Rent incl. Umlagen just under half / exactly half / exactly 66% of market rent | Split / forecast band / fully paid (§ 21(2)) |
-| Cheap let of an office to a relative | Outside § 21(2): refer |
-| Sale exactly ten years after acquisition | Still inside ("nicht mehr als zehn Jahre") |
-| Total private-sale gains EUR 999 vs EUR 1,000 | Tax-free vs fully taxed (§ 23(3)) |
-| Loss in the year the building is bought | Not used for that year's prepayments unless § 7b is claimed (§ 37(3)) |
-| Employee, untaxed income EUR 410 vs EUR 411 | No duty from this trigger vs must file (§ 46(2) no. 1) |
-| Let to a private tenant with VAT | Not possible (§ 9(1) UStG) |
+Fix the building share before the three-year 15% test, which measures against it. Complete the costs before the cheap-let cut, which applies to their total. Then work out the surplus or loss per property, share it between co-owners, and apply the loss rules.
 
-## Worked cases
+**Defaults when a fact is missing.** Completion date, land share, market rent for a cheap let, or private versus business status unknown: stop and ask, because each changes the result. Unsure whether work is maintenance or production cost: treat it as production cost (capitalise) until resolved. Housing use unknown: ask, because § 7(5a), § 7b, § 21(2) and § 82b apply only to housing.
 
-Inputs are invented and labelled, except the official example in Case 3. Every amount is recomputed.
+## Deadlines and filing
 
-### Case 1: new flat, first year ([§ 7 EStG](https://www.gesetze-im-internet.de/estg/__7.html))
+- **Forms.** One Anlage V per built-on property, filed with the income tax return through ELSTER. Add Anlage V-FeWo for holiday or short-term lets, and Anlage V-Sonstige for shares in communities and funds, subletting, land without buildings and rights (2025 instructions).
+- **Who must file.** A landlord who is assessed anyway files Anlage V with the return. An employee whose wage tax was withheld must file if untaxed side income, such as rent, is **more than** EUR 410 ([§ 46(2) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__46.html)); if assessed, side income of not more than EUR 410 in total is taken off again, phased out above (§ 46(3), (5)).
+- **2026 return** ([§ 149 AO](https://www.gesetze-im-internet.de/ao_1977/__149.html)): without an adviser, seven months after the year: 31 July 2027 is a Saturday, so **Monday 2 August 2027** ([§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html)). With an adviser, the last day of February of the second following year: **Tuesday 29 February 2028**. The tax office may call for an advised return earlier (§ 149(4)).
+- **2025 returns being filed now.** Without an adviser: due Friday 31 July 2026, passed. With an adviser: the last day of February 2027 is a Sunday, so **Monday 1 March 2027**. The extended dates in Art. 97 § 36(3) EGAO cover only "die Besteuerungszeiträume 2020 bis 2024" ([EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)). Use the 2025 Anlage V. Rules are as for 2026, except the commuting allowance, which rose for 2026 (check the 2025 rate). 2025 is the second-last year for the old § 7b window.
+- **Prepayments** ([§ 37 EStG](https://www.gesetze-im-internet.de/estg/__37.html)): 10 March, 10 June, 10 September, 10 December; set only if at least EUR 400 a year and EUR 100 per date. A building's rental loss reduces prepayments only for calendar years beginning **after** its acquisition or completion (§ 37(3) sentence 8); a building bought before the year it is completed counts from completion (sentence 9); the bar does not apply where § 7b is claimed (sentence 10). The same timing governs a wage tax allowance for an employee ([§ 39a(1) no. 5 EStG](https://www.gesetze-im-internet.de/estg/__39a.html)). For example, a landlord who bought a new flat in 2026 with a EUR 10,050 loss cannot cut her 2026 prepayments for it; she can from 2027, or at once if § 7b is claimed.
+- **2026 forms.** The ELSTER instructions for 2026 were empty when read on 24 October 2026. Line numbers below come from the [2025 instructions](https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025). Check the 2026 form when published.
 
-Completed February 2026; contract March 2026; benefit and burden pass 1 April 2026. Total cost EUR 400,000; split: land EUR 100,000, building EUR 300,000. Rent EUR 1,200 a month plus Umlagen EUR 250 from April. Paid in 2026: interest EUR 9,000, running costs EUR 2,250, management EUR 600.
-- Income: 9 × 1,200 = EUR 10,800, plus 9 × 250 = EUR 2,250; total EUR 13,050.
-- Declining-balance (bought in completion year, inside the window, housing): 300,000 × 5% = EUR 15,000; × 9/12 = EUR 11,250 (January to March cut).
-- Other costs 9,000 + 2,250 + 600 = EUR 11,850. Result 13,050 − 11,850 − 11,250 = loss of EUR 10,050.
-- Straight-line instead: 300,000 × 3% = EUR 9,000; × 9/12 = EUR 6,750; loss EUR 5,550.
-- 2027 declining-balance: (300,000 − 11,250) × 5% = EUR 14,437.50.
-
-### Case 2: the 15% cliff ([§ 6(1) no. 1a EStG](https://www.gesetze-im-internet.de/estg/__6.html))
-
-Building completed 1970, bought May 2025; building share EUR 200,000, so the limit is EUR 30,000. Works without VAT: EUR 12,000 in 2025 (deducted in 2025) and EUR 19,000 in 2026; yearly boiler servicing left out.
-- Total EUR 31,000 is more than EUR 30,000: **all** of it is production cost, including 2025.
-- Depreciated at 2%: 31,000 × 2% = EUR 620 a year. Refer the correction of the 2025 assessment.
-- Variant: 2026 works of EUR 18,000 give exactly EUR 30,000: not over; judge each job separately.
-
-### Case 3: cheap let to parents ([official example, 2025 instructions](https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025))
-
-Cold rent EUR 270 plus Umlagen EUR 150 a month; market rent 60 m² × EUR 15 = EUR 900 plus EUR 150 = EUR 1,050.
-- Paid share EUR 420 / EUR 1,050 = 40.00%, under 50%: split. Line 87: 60.00%.
-- Income (line 32) EUR 5,040; costs in full (line 83) EUR 4,920; cut 60% = EUR 2,952; allowed EUR 1,968.
-- Net EUR 5,040 − EUR 1,968 = EUR 3,072, EUR 1,536 per spouse.
-- Variants: EUR 700 is 66.67%, fully paid; EUR 600 is 57.14%, forecast band: refer.
-
-### Case 4: § 7b, new window ([§ 7b EStG](https://www.gesetze-im-internet.de/estg/__7b.html))
-
-80 m² flat, application 2024, completed and bought January 2026, Effizienzhaus 40 with QNG seal, let long-term. Building cost EUR 400,000.
-- Per m²: 400,000 / 80 = EUR 5,000, not over EUR 5,200: qualifies.
-- Base cap 80 × EUR 4,000 = EUR 320,000; special depreciation 320,000 × 5% = EUR 16,000 a year, 2026 to 2029.
-- Straight-line on full cost 400,000 × 3% = EUR 12,000 (January: no cut). 2026 total EUR 28,000.
-- Variant: EUR 420,000 is EUR 5,250 per m²: no § 7b.
-
-### Case 5: sale inside ten years ([§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))
-
-Bought March 2019 for EUR 300,000 (building EUR 240,000 at 2% = EUR 4,800 a year); sold end of February 2026 for EUR 340,000; selling costs EUR 10,000.
-- AfA deducted: 2019, ten months (January and February cut) = EUR 4,000; 2020 to 2025, 6 × 4,800 = EUR 28,800; 2026, two months to the sale, assumed = EUR 800 (confirm the sale-year treatment with the accountant). Total EUR 33,600.
-- Reduced cost 300,000 − 33,600 = EUR 266,400. Gain 340,000 − 266,400 − 10,000 = EUR 63,600, all taxed.
-
-### Case 6: new landlord's prepayments ([§ 37 EStG](https://www.gesetze-im-internet.de/estg/__37.html))
-
-The Case 1 client asks in autumn 2026 to cut 2026 prepayments for her EUR 10,050 loss.
-- Refused for 2026: the building was acquired in 2026 (§ 37(3) sentence 8). Allowed from 2027. With § 7b claimed the bar would not apply.
-- Her adviser-prepared 2025 return is due Monday 1 March 2027.
-
-## When to refuse or refer
-
-- Business property, trading partnerships, or a possible trade in property (gewerblicher Grundstückshandel).
-- Non-resident landlords: compute the rental result here, then tax it under `de-non-resident-tax`. Foreign property (Anlage AUS, treaties): refer.
-- The cheap-let forecast band; doubted intention to make a surplus; lasting losses.
-- Holiday homes with own use; short-term lets with hotel-like services.
-- Shorter actual useful life; change of method on older buildings.
-- Doubtful § 7b cases, claw-back, the post-four-year computation; §§ 7h, 7i.
-- Correcting an earlier year after the three-year works rule is triggered.
-- Co-ownership determinations, heirs' communities, funds, usufruct (Nießbrauch), heritable building rights (Erbbaurecht).
-- §§ 15a, 15b loss limits; furniture surcharges in the market-rent test; cheap commercial lets.
-- Sale computations beyond the ten-year test (`de-capital-gains`); VAT beyond the basics (`germany-vat-return`); the tariff (`de-einkommensteuer-freelancer`).
-
-## Filing and payment
-
-- **Return**: Anlage V per property, plus V-FeWo and V-Sonstige as needed, through ELSTER.
-- **Employees**: must file if untaxed income (rent counts) is **more than** EUR 410; if assessed, such income of **not more than** EUR 410 in total is taken off again, phased out above ([§ 46(2) no. 1, (3), (5) EStG](https://www.gesetze-im-internet.de/estg/__46.html)). One trigger among several.
-- **Deadlines** ([§ 149 AO](https://www.gesetze-im-internet.de/ao_1977/__149.html)): unadvised, seven months after the year; for 2026 that is 31 July 2027, a Saturday, so Monday 2 August 2027. Advised: last day of February of the second following year, for 2026 Tuesday 29 February 2028; the tax office may call for it earlier (§ 149(4)). Weekend and holiday deadlines move to the next working day ([§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html)).
-- **Late filing** ([§ 152 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)): compulsory if the return is filed "nicht binnen 14 Monaten nach Ablauf des Kalenderjahrs" (§ 152(2) no. 1), advised or not, so for an advised return it applies from the day after the advised deadline; also compulsory if a return the office called in early is not filed by the date set (no. 3). The 19-month period in no. 2 is only for farmers and foresters with a non-calendar financial year (§ 149(2) sentence 2), not for advised returns. It is 0.25% a month of the tax less prepayments and withheld tax, at least EUR 25 per month or part month. Not compulsory (but still possible at discretion) if the deadline was extended, tax is nil or below, or tax does not exceed prepayments and withheld tax (§ 152(3)).
-- **Prepayments** ([§ 37 EStG](https://www.gesetze-im-internet.de/estg/__37.html)): 10 March, 10 June, 10 September, 10 December; set only if at least EUR 400 a year and EUR 100 per date. See the new-building loss rule above.
-
-## Returns being filed now: tax year 2025
-
-- **Unadvised**: due Friday 31 July 2026; passed. A return filed now is late; the compulsory surcharge starts after 14 months (end of February 2027).
-- **Advised**: last day of February 2027, a Sunday, so **Monday 1 March 2027**. The compulsory surcharge applies to a return filed after that date. The extensions in Art. 97 § 36(3) EGAO cover only "die Besteuerungszeiträume 2020 bis 2024" ([EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)); for 2024 the advised date was 30 April 2026.
-- Use the 2025 Anlage V and the line map below. Rules are the same for 2025 except the commuting allowance, which rose for 2026 (check the 2025 rate). 2025 is the second-last year for the old § 7b window.
-
-## Anlage V line map (2025 form)
-
-From the 2025 instructions; check the 2026 form. Bank-text keywords in brackets.
+**Anlage V line map (2025 form).** Bank-text keywords in brackets.
 
 | Lines | Content |
-| --- | --- |
+|---|---|
 | 6 to 12 | File number; purchase, completion, sale dates; use (holiday: V-FeWo); living space, own or free part |
-| 13 to 19 | Rent without Umlagen: homes 13-15 (MIETE), other rooms 16-18, relatives 19 |
-| 20 to 24 | Umlagen (NEBENKOSTEN); 21 settlement (NACHZAHLUNG); 22-23 relatives |
-| 25 to 31 | Deposit kept (KAUTION) 25; antenna sites 26; VAT received 27; grants 29-31 |
+| 13 to 19 | Rent without Umlagen: homes 13 to 15 (MIETE), other rooms 16 to 18, relatives 19 |
+| 20 to 24 | Umlagen (NEBENKOSTEN); 21 settlement (NACHZAHLUNG); 22 to 23 relatives |
+| 25 to 31 | Deposit kept (KAUTION) 25; antenna, wind and Wi-Fi sites 26; VAT received 27; grants 29 to 31 |
 | 32 | Total income |
-| 33 to 45 | Building AfA 33-35; § 7b 36-38; §§ 7h, 7i 39-41; furniture 42-45 |
-| 46 to 51 | Interest (DARLEHENSZINSEN) 46-48; loan costs 49-51 |
-| 55 to 72 | Maintenance (REPARATUR, HANDWERKER), incl. § 82b spreads |
-| 73 to 78 | Running costs passed on 73-75 (GRUNDSTEUER, insurance, Hausgeld settlement); not passed on 76-78 (management, Hausgeld without reserve, KONTOFÜHRUNG) |
+| 33 to 45 | Building AfA 33 to 35; § 7b 36 to 38; §§ 7h, 7i 39 to 41; furniture 42 to 45 |
+| 46 to 51 | Interest (DARLEHENSZINSEN) 46 to 48; loan costs 49 to 51 |
+| 55 to 72 | Maintenance (REPARATUR, HANDWERKER), including § 82b spreads |
+| 73 to 78 | Running costs passed on 73 to 75 (GRUNDSTEUER, insurance, Hausgeld settlement); not passed on 76 to 78 (management, Hausgeld without reserve, KONTOFÜHRUNG) |
 | 80 to 83 | Other costs (travel, adviser, tenant broker, low-value items, input VAT); 83 total |
-| 85 to 89 | Result and sharing 85-86; cheap-let cut 87-88; acquisition grants 89 |
+| 85 to 89 | Result and sharing 85 to 86; cheap-let cut 87 to 88; acquisition grants 89 |
 
-The instructions name the content of lines 46 to 51 and 55 to 72, the Hausgeld settlement (73 to 75) and, in the official example, account fees (76 to 78); other keyword placements are this skill's reading of the headings and do not change the total in line 83. **Exclude**: principal (TILGUNG), own transfers, deposit refunds, reserve payments until spent, personal taxes. Transfer tax (GRUNDERWERBSTEUER) goes into acquisition cost.
+The instructions name the content of lines 25, 26, 46 to 51, 55 to 72, the Hausgeld settlement (73 to 75) and, in the official example, account fees (76 to 78). Other keyword placements are this skill's reading of the headings and do not change the total in line 83. **Exclude**: principal (TILGUNG), own transfers, deposit refunds, reserve payments until spent, personal taxes. Transfer tax (GRUNDERWERBSTEUER) goes into acquisition cost.
 
-## Completion checklist
+## Penalties and interest
 
-- [ ] § 21 income from a private asset; right forms and form year.
-- [ ] Cash-basis income incl. Umlagen, settlements, deposits kept, VAT.
-- [ ] Land split off by market values; rate by completion date; declining-balance conditions; month cut; no business-asset rate.
-- [ ] § 7b window, cliff, cap, ten-year let; old window not after 2026.
-- [ ] Three-year works test, without VAT, on building cost; § 82b only if mainly housing; co-owners on one period.
-- [ ] No principal, reserve payments or fines deducted.
-- [ ] Cheap-let test per home; line 87 or 88; forecast band referred.
-- [ ] Loss offset, carry-back, carry-forward; prepayment rule for new buildings.
-- [ ] Sale: ten years, AfA added back, exemption limit.
-- [ ] Deadline and surcharge checked; results labelled estimates until an accountant signs off.
+- **Late-filing surcharge** ([§ 152 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)). Compulsory if the return is not filed "binnen 14 Monaten nach Ablauf des Kalenderjahrs" (§ 152(2) no. 1), advised or not. For 2026 the 14 months end on 29 February 2028, the same day as the advised deadline, so for an advised return it bites from the day after that deadline. Also compulsory if a return the office called in early is not filed by the date set (no. 3). The 19-month period in no. 2 is only for farmers with a non-calendar financial year. Amount: 0.25% a month of the tax less prepayments and withheld tax, at least EUR 25 for each started month (§ 152(5)), rounded down to full euros and capped at EUR 25,000 (§ 152(10)). Not compulsory, though still possible at discretion, if the deadline was extended, the tax is nil or negative, or the tax does not exceed prepayments and withheld tax (§ 152(3)). For an unadvised 2025 return filed now the surcharge is discretionary until the 14 months run out at the end of February 2027.
+- **Interest** ([§ 233a AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html)): back tax and refunds carry interest of 0.15% a month ([§ 238(1a) AO](https://www.gesetze-im-internet.de/ao_1977/__238.html)) starting 15 months after the end of the tax year, so from 1 April 2028 for 2026.
+- **§ 7b claw-back**: assessments are reopened even if final; the assessment period restarts at the end of the year of the triggering event, and § 233a(2a) AO does not apply (§ 7b(4)), so interest runs from the normal date.
+- **Under-declaration** (wrong deductions, unreported rent): the tax office corrects the assessment with interest; deliberate cases are tax offences. Refer.
+
+## Cross-border points
+
+- **Non-resident landlords** with German property are taxed on the rent ([§ 49(1) no. 6 EStG](https://www.gesetze-im-internet.de/estg/__49.html)). They deduct only Werbungskosten linked to the German income ([§ 50(1) EStG](https://www.gesetze-im-internet.de/estg/__50.html)), and their tariff is applied with the basic allowance added back unless an option applies. Compute the rental result here; liability, the § 1(3) and § 1a options, and filing are in `de-non-resident-tax`.
+- **German residents with property abroad**: report it; treaties usually leave rent to the state where the property is. Treaty exemption, progression and Anlage AUS: refer.
+- **AfA for property elsewhere in the EU or EEA**: § 7(5a) and § 7b reach buildings in the EU or EEA (and for § 7b, states giving administrative help), which matters for a resident's foreign property only where Germany taxes it. Refer.
+- **Moving in or out during the year**: `de-partners-and-part-year`.
+
+## Worked examples
+
+Inputs are invented and labelled, except Example 2, which is the official example in the 2025 instructions. Each result is the rental surplus or loss before the tariff.
+
+### Example 1: a let flat bought in 2019, full year 2026
+
+A flat completed in 1995, bought in 2019, let all of 2026 at market rent. Building share of cost EUR 180,000, so straight-line AfA at 2% (§ 7(4) no. 2(b)) is EUR 3,600. Rent EUR 950 a month plus Umlagen EUR 180. Paid in 2026: interest EUR 4,200; running costs EUR 2,160 (all passed on); Hausgeld excluding the reserve EUR 540 (the reserve part of EUR 600 is left out); a repair EUR 1,500; account fees EUR 60; principal EUR 6,000 (not deductible). Six trips by car, 300 km driven in all, at 30 cents.
+
+Income is (950 + 180) × 12 = EUR 13,560. Werbungskosten are 3,600 + 4,200 + 2,160 + 540 + 1,500 + 90 + 60 = EUR 12,150. The surplus of EUR 1,410 goes in line 85 and is taxed at the client's marginal rate.
+
+```oa-check
+name: DE 2026 let flat, 2% AfA, surplus
+inputs:
+  monthly_rent: 950
+  monthly_umlagen: 180
+  building_cost: 180000
+  interest: 4200
+  running_costs: 2160
+  hausgeld_without_reserve: 540
+  repairs: 1500
+  km_driven: 300
+  account_fees: 60
+steps:
+  - income: (monthly_rent + monthly_umlagen) * 12
+  - afa: building_cost * 0.02
+  - travel: km_driven * 0.30
+  - costs: afa + interest + running_costs + hausgeld_without_reserve + repairs + travel + account_fees
+  - surplus: income - costs
+expected:
+  income: 13560
+  afa: 3600
+  travel: 90
+  costs: 12150
+  surplus: 1410
+```
+
+### Example 2: cheap let to parents, under 50% (official example, 2025 instructions)
+
+A married couple own a 60 m² flat and let it to the wife's parents for EUR 270 cold rent plus EUR 150 Umlagen a month. Local market rent is 60 m² × EUR 15 = EUR 900 plus EUR 150 passable costs = EUR 1,050. Costs: AfA EUR 3,000, running costs EUR 1,800, account fees EUR 120.
+
+Rent paid including Umlagen is EUR 420, which is 40.00% of EUR 1,050: under 50%, so costs are split. The form shows income EUR 5,040 (line 32), costs in full EUR 4,920 (line 83), result before the cut EUR 120 (line 85), and the cut of 60.00% in line 87. After the cut only EUR 1,968 of costs is deductible, so the taxable surplus is EUR 3,072, EUR 1,536 for each spouse. Variants: rent of EUR 700 including Umlagen is 66.67%, fully paid; EUR 600 is 57.14%, in the forecast band: run the 30-year forecast under "Cheap lets".
+
+```oa-check
+name: DE 2026 cheap let to relatives at 40% of market rent
+inputs:
+  cold_rent: 270
+  umlagen: 150
+  market_cold_rent: 900
+  afa: 3000
+  running_costs: 1800
+  account_fees: 120
+steps:
+  - rent_paid: cold_rent + umlagen
+  - market_rent: market_cold_rent + umlagen
+  - paid_share: rent_paid / market_rent
+  - income: rent_paid * 12
+  - costs_in_full: afa + running_costs + account_fees
+  - line85_before_cut: income - costs_in_full
+  - cut_percent: (1 - paid_share) * 100
+  - deductible_costs: costs_in_full * paid_share
+  - surplus: income - deductible_costs
+  - per_spouse: surplus / 2
+expected:
+  paid_share: 0.40
+  income: 5040
+  costs_in_full: 4920
+  line85_before_cut: 120
+  cut_percent: 60
+  deductible_costs: 1968
+  surplus: 3072
+  per_spouse: 1536
+```
+
+## Ask the client first
+
+- When was the building completed, and when did you buy it (contract date, and the date benefit and burden passed)? Which AfA method and rate did past returns use? For a new flat: date of the building application, start of construction, living space in m², cost per m², energy standard.
+- Is the property held privately or in a business? What share of the floor area is housing? Is any unit let short-term or as a holiday flat, and is there any own use?
+- How was the price split between land and building, and who made the split?
+- What rent and Umlagen does each tenant pay, and what is the local market rent? Is any tenant a relative?
+- What works were done since the purchase, when, and at what cost without VAT?
+- Do you live in Germany? Any co-owners, loans, a sale made or planned, or wage tax withheld on a job?
 
 ## Sources
 
-Statutes on gesetze-im-internet.de (EStG, EStDV, HGB, BRKG, UStG, AO, EGAO), ELSTER's 2025 instructions, and finance-ministry pages, all linked where used above. Also: [§ 7b EStG](https://www.gesetze-im-internet.de/estg/__7b.html), [§ 10d EStG](https://www.gesetze-im-internet.de/estg/__10d.html), [§ 152 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html), [§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html), [§ 82b EStDV](https://www.gesetze-im-internet.de/estdv_1955/__82b.html).
+| Source | URL | Read on |
+|---|---|---|
+| EStG § 21, income from letting; § 21(2) cheap lets | https://www.gesetze-im-internet.de/estg/__21.html | 2026-10-24 |
+| EStG § 9, Werbungskosten; commuting allowance EUR 0.38 | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-24 |
+| EStG § 7, AfA rates and § 7(5a) declining balance | https://www.gesetze-im-internet.de/estg/__7.html | 2026-10-24 |
+| EStG § 7a(9), AfA after special depreciation | https://www.gesetze-im-internet.de/estg/__7a.html | 2026-10-24 |
+| EStG § 7b, special depreciation for new rental flats | https://www.gesetze-im-internet.de/estg/__7b.html | 2026-10-24 |
+| EStG § 6(1) no. 1a (15% rule) and § 6(2) (EUR 800) | https://www.gesetze-im-internet.de/estg/__6.html | 2026-10-24 |
+| EStG § 11, cash basis | https://www.gesetze-im-internet.de/estg/__11.html | 2026-10-24 |
+| EStG § 10d, losses | https://www.gesetze-im-internet.de/estg/__10d.html | 2026-10-24 |
+| EStG § 23, private sales | https://www.gesetze-im-internet.de/estg/__23.html | 2026-10-24 |
+| EStG § 35c, energy works on own home | https://www.gesetze-im-internet.de/estg/__35c.html | 2026-10-24 |
+| EStG § 37, prepayments | https://www.gesetze-im-internet.de/estg/__37.html | 2026-10-24 |
+| EStG § 46, employee filing duty | https://www.gesetze-im-internet.de/estg/__46.html | 2026-10-24 |
+| EStG §§ 49, 50, non-residents | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-24 |
+| EStG § 52(1), (15a), (18b), (35a), application | https://www.gesetze-im-internet.de/estg/__52.html | 2026-10-24 |
+| EStDV § 82b, spreading larger maintenance | https://www.gesetze-im-internet.de/estdv_1955/__82b.html | 2026-10-24 |
+| BRKG § 5(2), 30 cents per km | https://www.gesetze-im-internet.de/brkg_2005/__5.html | 2026-10-24 |
+| UStG §§ 4 no. 12, 9, 12, 27(2) | https://www.gesetze-im-internet.de/ustg_1980/__9.html | 2026-10-24 |
+| AO §§ 108, 149, 152, 233a, 238 | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-10-24 |
+| EGAO Art. 97 § 36(3), extended deadlines 2020 to 2024 | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-24 |
+| BGBl. 2024 I No. 108, Art. 6 (loss carry-forward back to 60% from 2028) | https://www.recht.bund.de/bgbl/1/2024/108/regelungstext.pdf | 2026-10-24 |
+| BMF letter of 21 May 2025 on § 7b EStG (paras. 16, 63 to 66, example 7) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5 | 2026-10-24 |
+| BMF letter of 8 October 2004 (BStBl I p. 933) on the intention to make a surplus, with notes, in the official income tax handbook 2024, Anhang 30 II (paras. 1, 5 to 10, 13, 16 to 27, 34, 39, 40) | https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html | 2026-10-24 |
+| BMF purchase-price split tool | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html | 2026-10-24 |
+| ELSTER instructions to the 2025 return, Anlage V, V-FeWo, V-Sonstige | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-24 |
+| ELSTER instructions to the 2026 return (page empty when read) | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2026 | 2026-10-24 |
 
-## Disclaimer
-
-For information and computation only; not tax, legal or financial advice. OpenAccountants accepts no liability for errors, omissions or outcomes. Have every output reviewed by a qualified professional, such as a Steuerberater, before filing or acting on it.
+Not yet confirmed: the 2026 Anlage V form and instructions (not published on 24 October 2026; line numbers are from 2025); any BMF update to the letter of 8 October 2004 after the 2024 handbook (the 2025 handbook was not online on 24 October 2026); the BMF letter of 22 February 2023 on a shorter actual useful life; whether a let property can be a first place of activity for travel; how a furniture surcharge enters the cheap-let test; AfA in the month of sale; heirs under § 23(1) sentence 3; the 2025 commuting allowance rate; treaty treatment of foreign rental property; the BMF letter of 21 October 2026 on paid waiver of usufruct (Nießbrauch), not read.
 
 <!-- openaccountants-cta-block -->
 
@@ -341,4 +357,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-rental-income` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-rental-income. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-rental-income` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-rental-income. If neither is available, confirm every figure against the official source pages cited above before relying on it.

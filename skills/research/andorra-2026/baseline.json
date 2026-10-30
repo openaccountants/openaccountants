@@ -1,0 +1,88 @@
+{
+  "published": "5254033fda891adceb3c98aec1f508e3b21f85f5",
+  "main": "5139339dc4ed5736505503840e1613192a6b9278",
+  "merge_head": "43a766a09b91b45392ee0522e5f69d9e2e6306b2",
+  "files": [
+    {
+      "path": "skills/international/andorra/README.md",
+      "published_sha256": "250a2f727e31b68eb8b365bf9083f9fe15c6c7bd75f8dd44cccc8ef1a9c05813",
+      "baseline_sha256": "250a2f727e31b68eb8b365bf9083f9fe15c6c7bd75f8dd44cccc8ef1a9c05813",
+      "unchanged_by_main_merge": true,
+      "bytes": 2528,
+      "lines": 36,
+      "controls": 0
+    },
+    {
+      "path": "skills/international/andorra/ad-company-formation.md",
+      "published_sha256": "145ece035cc8dd4d3e47628fc331e5ab985f0b46846a252c195474e774ddc0c2",
+      "baseline_sha256": "145ece035cc8dd4d3e47628fc331e5ab985f0b46846a252c195474e774ddc0c2",
+      "unchanged_by_main_merge": true,
+      "bytes": 3862,
+      "lines": 47,
+      "controls": 0
+    },
+    {
+      "path": "skills/international/andorra/ad-corporate-income-tax.md",
+      "published_sha256": "fd442bfecdb48a21732d57091096374572d02b5a5ae3564e15e51b1282419d33",
+      "baseline_sha256": "fd442bfecdb48a21732d57091096374572d02b5a5ae3564e15e51b1282419d33",
+      "unchanged_by_main_merge": true,
+      "bytes": 21380,
+      "lines": 228,
+      "controls": 5
+    },
+    {
+      "path": "skills/international/andorra/ad-income-tax.md",
+      "published_sha256": "a4ab4b8bc510f9ee41fcad9e1efcdf1df8fe2adfea55513eb5eca8288919213c",
+      "baseline_sha256": "a4ab4b8bc510f9ee41fcad9e1efcdf1df8fe2adfea55513eb5eca8288919213c",
+      "unchanged_by_main_merge": true,
+      "bytes": 52348,
+      "lines": 820,
+      "controls": 0
+    },
+    {
+      "path": "skills/international/andorra/ad-non-resident-income-tax.md",
+      "published_sha256": "2c5ccde97d3e9541d9aab77106a970e6c35531e539bcf946aaf08665c6abbddd",
+      "baseline_sha256": "2c5ccde97d3e9541d9aab77106a970e6c35531e539bcf946aaf08665c6abbddd",
+      "unchanged_by_main_merge": true,
+      "bytes": 14773,
+      "lines": 190,
+      "controls": 3
+    },
+    {
+      "path": "skills/international/andorra/ad-payroll-social.md",
+      "published_sha256": "ca091b7cf301d1f88c09fec59a0e3cad8726b085fadc053babd2ea4fb2499e09",
+      "baseline_sha256": "ca091b7cf301d1f88c09fec59a0e3cad8726b085fadc053babd2ea4fb2499e09",
+      "unchanged_by_main_merge": true,
+      "bytes": 41890,
+      "lines": 695,
+      "controls": 0
+    },
+    {
+      "path": "skills/international/andorra/ad-tax-overview.md",
+      "published_sha256": "d3e4933ac322c78b098dc5eb1566cbb48e877175527c8f4aded3a50ad50e5d0f",
+      "baseline_sha256": "d3e4933ac322c78b098dc5eb1566cbb48e877175527c8f4aded3a50ad50e5d0f",
+      "unchanged_by_main_merge": true,
+      "bytes": 3320,
+      "lines": 47,
+      "controls": 0
+    },
+    {
+      "path": "skills/international/andorra/ad-transfer-pricing.md",
+      "published_sha256": "a3915de6a372aeabb85d98b4aea8b49fed2a550a0eb111b7bbefa3b3fa118065",
+      "baseline_sha256": "a3915de6a372aeabb85d98b4aea8b49fed2a550a0eb111b7bbefa3b3fa118065",
+      "unchanged_by_main_merge": true,
+      "bytes": 14783,
+      "lines": 156,
+      "controls": 2
+    },
+    {
+      "path": "skills/international/andorra/andorra-igi.md",
+      "published_sha256": "62354fe9b2ea06f3481f5112a1610f15dfd709169be819654f89892c0c320d65",
+      "baseline_sha256": "62354fe9b2ea06f3481f5112a1610f15dfd709169be819654f89892c0c320d65",
+      "unchanged_by_main_merge": true,
+      "bytes": 18608,
+      "lines": 443,
+      "controls": 0
+    }
+  ]
+}

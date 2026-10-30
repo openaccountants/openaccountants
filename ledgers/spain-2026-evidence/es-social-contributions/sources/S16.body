@@ -1,0 +1,4608 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/wps/contenthandler/importass/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/ImportassThemeStatic/themes/Portal/js/importass/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+	
+	
+		
+	
+
+
+
+
+
+<script>
+
+    var cargarCookiesImportass;
+    $(document).ready(function() {
+        cargarCookiesImportass = comportamientoAvisoCookiesImportass(leerCookieImportass("Importass_Cookies")); 
+    });
+    
+	var dataLayer = [{"user":{"authenticated":"false","user_type":"interesado","login_type":"NO_AUTH","subject":"pf","loa":0},"content":{"site_name":"importass","page_type":"informacion","page_name":"Colectivos","language":"es","site_section":"colectivos"}}];
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KP8HV4M');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+	<!-- Script insuit -->
+	<script async src="https://paas-segsocial.insuit.net/i4tservice/insuit-app.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    	<meta name="format-detection" content="telephone=no">
+		
+		<link rel="stylesheet" href="/wps/contenthandler/importass/!ut/p/digest!FN1rKIfT9stuNPuJnkdXlg/sp/mashup:ra:collection?soffset=0&amp;eoffset=14&amp;themeID=ZJ_J0M2HA42P8ENC0QHU8J3A320H4&amp;locale=es&amp;mime-type=text%2Fcss&amp;lm=1779957888000&amp;entry=wp_toolbar_common__0.0%3Ahead_css&amp;entry=wp_theme_portal_edit_85__0.0%3Ahead_css&amp;entry=wp_theme_portal_85__0.0%3Ahead_css&amp;entry=post_datepicker__1.0.0%3Ahead_css&amp;entry=wp_status_bar__0.0%3Ahead_css&amp;entry=post_estilos_principales__1.0.0%3Ahead_css&amp;entry=post_autocomplete__1.0.0%3Ahead_css&amp;entry=post_slick__1.0.0%3Ahead_css" type="text/css"/><script type="text/javascript">(function(){if (typeof(wpModules) == 'undefined') wpModules = {}; if (typeof(wpModules.state) == 'undefined') wpModules.state = {}; if (typeof(wpModules.state.page) == 'undefined') wpModules.state.page = {};wpModules.state.page._initial=[{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"selection","value":["Z6_7P081341OO84C0QE6ULE5H3K47"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"labelMappings","value":["Z6_7P081341OO84C0QE6ULE5H3KO6","Z6_7P081341OO84C0QE6ULE5H3K47","Z6_000000000000000000000000A0","Z6_7P081341OO84C0QE6ULE5H3K47"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"path-info","value":["Empleo del hogar","guia"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"expansions","value":["Z6_000000000000000000000000A0","Z6_7P081341OO84C0QE6ULE5H3KO6"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"locale","value":["es"]}];wpModules.state.page.selectionPath=['Z6_000000000000000000000000A0','Z6_7P081341OO84C0QE6ULE5H3KO6','Z6_7P081341OO84C0QE6ULE5H3K47'];wpModules.state.page.supportsEditMode=true;wpModules.state.page.supportsToolbar=true;wpModules.state.page.path='/wps/portal/importass';wpModules.state.page.protectedPath='/wps/myportal/importass';wpModules.state.page.publicPath='/wps/portal/importass';})();</script><script type="text/javascript" src="/wps/contenthandler/importass/!ut/p/digest!FN1rKIfT9stuNPuJnkdXlg/mashup/ra:collection?themeID=ZJ_J0M2HA42P8ENC0QHU8J3A320H4&amp;locale=es&amp;mime-type=text%2Fjavascript&amp;lm=1779957888000&amp;entry=wp_client_main__0.0%3Ahead_js&amp;entry=wp_client_ext__0.0%3Ahead_js&amp;entry=wp_client_logging__0.0%3Ahead_js&amp;entry=wp_client_tracing__0.0%3Ahead_js&amp;entry=wp_modules__0.0%3Ahead_js&amp;entry=wp_photon_dom__0.0%3Ahead_js&amp;entry=wp_toolbar_common__0.0%3Ahead_js&amp;entry=post_utils__1.0.0%3Ahead_js&amp;entry=wp_state_page__0.0%3Ahead_js&amp;entry=wp_theme_portal_85__0.0%3Ahead_js&amp;entry=wp_theme_utils__0.0%3Ahead_js&amp;entry=wp_toolbar_viewframe_validator__0.0%3Ahead_js&amp;entry=post_jqueryui__1.0.0%3Ahead_js&amp;entry=post_cookies__1.0.0%3Ahead_js"></script><link title="assigned" href="/wps/contenthandler/importass/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/ImportassThemeStatic/themes/Portal/css/importass/styles.css" rel="stylesheet" type="text/css" /><link id="jdN-vSs7GY9" rel="alternate" href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Empleo%20del%20hogar/guia/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zizQMMLAyNTQz9_S1MnA0CXc1CfVxNPYy9Tcz1w_Eq8DfTjyJGvwEO4GhASL8XIQVAHxgV-Tr7putHFSSWZOhm5qXl60e45hbkpOYrpKTmKGTkpycW6Uekl2YmAl0Thdc8kH_ACvA4ODi1WL8gNzSiysfDIMvEUREAuLS8kg!!/"><script type="text/javascript">(function() {
+	var element = document.getElementById("jdN-vSs7GY9");
+	if (element) {
+		wpModules.theme.WindowUtils.baseURL.resolve(element.href);
+	}
+}());</script>
+<title>Colectivos</title>
+
+
+<link id="com.ibm.lotus.NavStateUrl" rel="alternate" href="/wps/portal/importass/importass/Colectivos/Empleo%20del%20hogar/guia/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zizQMMLAyNTQz9_S1MnA0CXc1CfVxNPYy9Tcz1w_Eq8DfTjyJGvwEO4GhASL8XIQVAHxgV-Tr7putHFSSWZOhm5qXl60e45hbkpOYrpKTmKGTkpycW6Uekl2YmAl0Thdc8kH_ACvA4ODi1WL8gNzSiysfDIMvEUREAuLS8kg!!/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2XzdQMDgxMzQxT084NEMwUUU2VUxFNUgzSzQ3/" />
+
+
+<link href="/wps/contenthandler/importass/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/ImportassThemeStatic/themes/Portal/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap" rel="stylesheet" >
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet" >
+
+
+<link rel="Sitemap" type="application/rss+xml" title="Tesorería General de la Seguridad Social RSS" href="https://portal.seg-social.gob.es/sitemap.xml"/>
+
+
+
+<script>
+	var rutaServletEstadisticasImportass = 'https://stss.seg-social.gob.es/ImportassEstadisticas/ServletEstadisticasImportass';
+</script>
+
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="YK6TM-X7WGS-BMT9L-4Z2TB-3PLNJ",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"YK6TM-X7WGS-BMT9L-4Z2TB-3PLNJ";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="2vq5x23acbmjg2xbht5a-f-75b1966dd-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1390446","ak.ai":parseInt("687908",10),"ak.ol":"0","ak.cr":96,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"64e8c511","ak.r":46318,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.cport":42231,"ak.gh":"96.16.87.19","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1793146106","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==nHePr0rbT+YYWzeqJgZXJviKQ1AAX7ual5WVRkYjoXQwXns/LAMatWpsd9hHCIU/Tq6Yedoig+qrkjPgXTPNYEVgIvpAfQ8xTaVSIiqqN0bJ9cZCkpfNrudACwuRzrSwFAUgr+/6kejKp1QLxJ5GYkKkRbhROmzJbaf9EtrCAgQygFg+OkQ8/lvLsmihmx5PHPPsPG5OFXywyicVWOCSGRYXKUks1qBJ9fuV5YFJ0MXwme1AMnOdwVtpkRqcsjhX/Bmr2Y+BczcnXStADAR3VAhlX/QVLxrlKTNfLxpuzVhZDopdmbJT39xj0kbjY9X0xYfS8mPEDJF69FQlu9w/+SyFkn8sqAxCB3ho+JCOwwiGtIWQUPlwA7Yon9mzjPNKTFeWF0UF/hzJtBA9nBVkW5OVzHzIcyDG6kNbcYXG7+w=","ak.pv":"46","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+	<body class="lotusui30dojo nav-by-keyboard" id="printArea">
+		
+
+
+<script>
+pintarIframeGAImportass('GTM-KP8HV4M');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+	
+        
+    
+    
+	
+	
+	
+	
+	    
+         
+    
+
+
+
+    <script>
+		$('body').addClass('parte-publica');
+    </script>
+
+
+  
+	<script> 
+		    window.addEventListener("load",  
+		            $("body").addClass("post")
+		    ); 
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="cookies" class="ss-content-cookies ss-u-is-hidden" role="dialog" aria-modal="false" aria-describedby="msj-aviso-cookies" aria-label="Aviso de cookies">
+ <div class="ss-content-cookies_inner ss-content ">			
+      <div id="msj-aviso-cookies" class="ss-content-cookies_text">
+        <p>Este sitio web utiliza cookies para que tengas una mejor experiencia de usuario. Las cookies no se utilizan para recoger información de carácter personal. Para más información consulta nuestra <a href="/wps/portal/importass/importass/PoliticaCookies" target="" title="">política de cookies</a>.&nbsp;&nbsp;</p>
+       </div>
+        <div class="ss-buttons-group ss-aligned--left">
+            
+        	<button type="button" class="ss-button" onclick="AceptarCookies(valorCookieActual);" >
+                Aceptar todas
+          	</button>
+           
+          
+            <button type="button" class="ss-button" onclick="RechazarCookies(valorCookieActual);">
+              Rechazar todas
+          </button>
+          
+      	</div>	
+      </div>
+</section>
+
+
+
+
+
+
+<script>
+	var valorCookie = leerCookieImportass("Importass_Cookies");
+	var valorCookieActual = "Ver_2511051417"
+	
+	if(isShowabledMsgCookies(valorCookie,valorCookieActual)){
+		showMsgCookie();
+	}	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<header class="ss-header" role="banner">
+	    
+	    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="ss-skip-to-content" href="#content" tabindex="0">Ir al contenido principal</a>
+
+
+
+    
+    
+        <a href="/wps/portal/importass/importass/inicio" class="ss-header__link-logo">
+            <picture>
+	            <source media="(max-width: 500px)" srcset="/wps/contenthandler/importass/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/ImportassThemeStatic/themes/Portal/images/importass/Logo_Movil.svg">
+	            <source media="(max-width: 1023px)" srcset="/wps/contenthandler/importass/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/ImportassThemeStatic/themes/Portal/images/importass/Logo_Tablet.svg">
+	            <source media="(min-width: 1024px)" srcset="/wps/contenthandler/importass/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/ImportassThemeStatic/themes/Portal/images/importass/Logo_desktop.svg">
+	            <img src="/wps/contenthandler/importass/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/ImportassThemeStatic/themes/Portal/images/importass/Logo_desktop.svg" class="ss-header__logo" alt="Acceso a Página principal del portal">
+	        </picture>    
+        </a>
+    
+
+	       
+		
+		
+			<div class="ss-header-search">
+				<a href="/wps/portal/importass/importass/resultadosBusqueda" class="ss-link-search" role="button">
+					<span class="ss-u-is-vishidden">Ir a página resultados de búsqueda</span>
+					<img src="/wps/contenthandler/importass/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/ImportassThemeStatic/themes/Portal/images/importass/icon_search_mob.svg" alt="Icono de Resultados Búsqueda">
+				</a>	
+			</div>
+	    	<form name="search" id="form_busqueda_head" onsubmit="return busquedaAction('#form_busqueda_head', '');" action="/wps/portal/importass/importass/resultadosBusqueda" method="post">
+		      <input type="hidden" name="search_query" />
+		     
+		      <div class="ss-header__content">
+		        <div class="ss-header__search ss-search-input ss-search-input--header">
+		        	<label for="palabraBusquedaHead" class="visuallyhidden">Buscar en el portal</label>
+		            <input class="ss-search-input__input ss-text-input" type="search" name="palabraBusqueda" id="palabraBusquedaHead" placeholder="Buscar" maxlength="500">
+		            <button class="ss-search-input__btn" title="Buscar" aria-label="Buscar">
+		              <span class="visuallyhidden">Iniciar Búsqueda</span></button>
+		        </div>
+		        
+		        
+		        
+		        	<a href="#" 
+		        			onClick="doLogin();"							
+		        			class="ss-header__action">
+		        		Área personal
+		        	</a>
+		        
+			      
+		      </div>
+	    	</form>
+	    
+	    
+	    	<script>
+	    	
+		    	function doLogin() {
+	                deleteCookie('com.ibm.portal.SUA_WPReqURL', '/');
+	                window.location.href="/wps/myportal/importass/importass/personal/";
+	            } 
+		    	
+				function mostrarModalCierre(){
+				
+					if (confirm("¿Seguro que quieres cerrar la sesión?")) {
+						window.location.href="/wps/portal/importass/importass/Colectivos/Empleo%20del%20hogar/guia/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zizQMMLAyNTQz9_S1MnA0CXc1CfVxNPYy9Tcz1w_Eq8DfTjyJGvwEO4GhASL8XIQVAHxgV-Tr7putHFSSWZOhm5qXl60e45hbkpOYrpKTmKGTkpycW6Uekl2YmAl0Thdc8kH_ACvA4ODi1WL8gNzSiysfDIMvEUREAuLS8kg!!/dz/d5/L3dDb1ZJQSEhL3dPb0JKTnNBLzRFS2lqaFVNV0hFIS8wLzQ2ODY2NDAvbG8!/";
+					}
+				
+				}
+				
+				
+			</script>
+	</header>
+<main id="content"> <!-- required - do not remove -->
+			<div style="display:none" id="portletState">{}</div><!-- this layout has one main container -->
+<div class='component-container wpthemeCol ibmDndColumn wpthemeCol12of12 wpthemeFull wpthemePrimary id-Z7_4787D78AN8PGDEPGS46GR1L5C1' name='ibmMainContainer' ><div class='component-control id-Z7_7P081341OGOI50QUGTRCS72012' ><span id="Z7_7P081341OGOI50QUGTRCS72012"></span><section class="ibmPortalControl wpthemeNoSkin a11yRegionTarget" role="region">
+	<!-- marks the node the analytics tags for this portlet will be placed in -->
+	<!-- asa.overlay marks the node that the AsaOverlayWidget will be placed in -->
+	<div style="position:relative; z-index: 1;">
+		<div class="analytics.overlay" ></div>
+	</div>
+    <!-- Hide the text of the title, but still provide the lm-dynamic-title container for accessing the dynamic title -->
+    <span class="wpthemeAccess">
+ 		<span class="lm-dynamic-title asa.portlet.title a11yRegionLabel">Guía práctica del empleo en el hogar</span>
+	</span>
+    <div class="wpthemeOverflowAuto"> <!-- lm:control dynamic spot injects markup of layout control -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+	
+		
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+	
+	
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="ss-breadcrumb" aria-label="Ruta de navegación">
+  <ol class="ss-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li class="ss-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+		<a id="breadcrumbParticularInicio" href="?1dmy&amp;mapping=com.ss.importass.inicio&amp;urile=wcm%3apath%3a%2FIMPORTASS_Contenidos%2FColectivos%2FEmpleo%2Bdel%2Bhogar%2FGuia" itemprop="item">
+          <span itemprop="name">Tesorería de la Seg. Social</span>
+          <meta itemprop="position" content="1">
+      	</a>
+    </li>
+
+
+
+	
+		<li class="ss-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+	
+	
+			<a href="/wps/portal/importass/importass/Colectivos/Empleo+del+hogar" itemprop="item">
+	
+	
+				
+<span itemprop="name">Empleo de hogar</span>
+
+  
+  	<meta itemprop="position" content="2" />
+            
+  
+
+                                                                 
+  
+
+
+	
+	
+			</a>
+	
+	
+		</li>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+		
+		
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="ss-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+	
+	
+	
+				
+<span itemprop="name">Guía práctica del empleo en el hogar</span>
+
+            
+  
+  	<meta itemprop="position" content="2">
+  
+
+                                                                 
+  
+
+
+	
+	
+	
+		</li>
+	
+
+
+
+
+	</ol>
+    </nav>
+                                              
+                                              
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+           	dataLayer.push({"content":{"subcategory1":"Empleo de hogar","page_name":"Gu\u00eda pr\u00e1ctica del empleo en el hogar [Colectivos\/Empleo de hogar]","category":"Colectivos"}});
+			dataLayer.push({"content":{"id":"9eaf117e-e582-4287-9ff0-10a41fa58b4a"}});
+    </script>
+
+
+
+
+                                              
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+<script>
+	$("#breadcrumbParticularInicio").attr("href",$(".ss-header__link-logo")[0].href);
+</script>
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+</div>
+</section> </div><div class='component-control id-Z7_7P081341O0A620QEJQD54S10G5' ><span id="Z7_7P081341O0A620QEJQD54S10G5"></span><section class="ibmPortalControl wpthemeNoSkin a11yRegionTarget" role="region">
+	<!-- marks the node the analytics tags for this portlet will be placed in -->
+	<!-- asa.overlay marks the node that the AsaOverlayWidget will be placed in -->
+	<div style="position:relative; z-index: 1;">
+		<div class="analytics.overlay" ></div>
+	</div>
+    <!-- Hide the text of the title, but still provide the lm-dynamic-title container for accessing the dynamic title -->
+    <span class="wpthemeAccess">
+ 		<span class="lm-dynamic-title asa.portlet.title a11yRegionLabel">Guía práctica del empleo en el hogar</span>
+	</span>
+    <div class="wpthemeOverflowAuto"> <!-- lm:control dynamic spot injects markup of layout control -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+            
+            
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+	
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	
+	
+	
+		
+		
+
+		
+		
+	
+
+
+
+      
+
+
+
+
+	
+	
+	
+		
+		
+
+		
+		
+	
+
+	
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+	
+	
+
+
+
+
+
+  
+
+
+  
+			
+    
+      
+     
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+ 
+
+
+
+
+<script>
+addClassToBody('ss-s-guia-colectivo');
+
+function busquedaGuiaAction() {
+    var palabraBusqueda = $('#form_busqueda_guia input[name=palabraBusqueda]').val();
+    console.log("palabraBusqueda: " + palabraBusqueda);	
+     setCookie("palabraBusqueda",palabraBusqueda,1);     
+     $('#form_busqueda_guia input[name=search_query]').val(palabraBusqueda+ ' +contentpath::"/Importass_Contenidos/Colectivos/Empleo del hogar/Guia" +authoringtemplate::"PC_FAQ" ');  
+console.log("search_query: " + $('#form_busqueda_guia input[name=search_query]').val());	
+       return true;
+}
+</script>
+
+
+<div class="ss-hero ss-hero--subsection ss-bg--actividad">
+  <div class="ss-content">
+
+    <h1 class="ss-h1">Guía práctica del empleo en el hogar</h1>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+<section class="ss-content">
+    <div class="ss-search-wrapper">
+      
+
+
+
+
+
+
+
+
+                                                             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             
+
+
+
+
+
+
+  <h2 id="post-0fb53640-e7c6-406d-a092-ef660de6801f" class="ss-h2">Novedades</h2>
+  <div class="ss-search-wrapper__text">
+    <p>Si eres empleador o empleado de hogar, estas novedades te interesan:</p>
+<ul>
+  <li>Desde el&nbsp;<strong>1 de octubre de 2022 </strong>los empleadores tienen que cotizar por <strong>desempleo y Fondo de Garantía Salarial (FOGASA)</strong>.&nbsp; Los empleados de hogar también cotizarán por <strong>desempleo</strong>. La Tesorería General de la Seguridad Social adaptará la cotización a la nueva normativa, sin que sea necesario realizar ningún trámite adicional por parte del empleado y empleador.<br /><br /></li>
+  <li>Desde el<strong> 1 de enero de 2023,&nbsp;</strong>el empleador es el único responsable de tramitar el alta o la baja ante la Tesorería General de la Seguridad Social, así como de comunicar todas la variaciones de jornada, tipo de contrato o retribuciones que se produzcan.&nbsp;<br />
+    <p>El empleador puede solicitar una deducción del 45% de su cuota por contingencias comunes por la contratación de cuidadores en familias numerosas. Más información sobre esta deducción <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/guias/#IDControl409ff9f6-26fb-467b-b244-a852b9fb98e8" >“<strong>Voy a contratar a una persona para trabajar en mi casa, ¿me puedo aplicar algún beneficio en las cuotas a la Seguridad Social?, ¿qué requisitos tengo que cumplir?</strong></a>”.<br /><br />En caso de solicitar este beneficio, no será de aplicación el descuento del 20% al dar de alta a una persona empleada en el hogar familiar, pero sí las deducciones del 80% en la cotización por desempleo y FOGASA.<br /><br />Si el empleador tiene contratada a más de una persona en el hogar familiar, este beneficio solo se aplicará por una de las personas empleadas.</p>
+  </li>
+</ul>
+<div class="ss-notification ss-notification--warning" dir="ltr" role="alert">
+  <p>Recuerda que desde el 1 de octubre de 2022 la cotización por desempleo y Fondo de Garantía Salarial (FOGASA) es obligatoria.</p>
+</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             
+
+
+
+
+
+
+  <h2 id="post-cfbd6b10-14df-464a-b715-cbb15deff46e" class="ss-h2">&iquest;Qué estás buscando?</h2>
+  <div class="ss-search-wrapper__text">
+    <div>Resuelve tus dudas tanto si eres empleador y vas a dar de alta a un trabajador en empleo de hogar, como si eres la persona empleada y vas a empezar a desarrollar tu actividad en el ámbito doméstico.</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<form name="search" id="form_busqueda_guia" onsubmit="return busquedaGuiaAction();" action="/wps/portal/importass/importass/resultadosBusqueda" method="post">
+		<input type="hidden" name="search_query">
+		<div class="ss-search-wrapper__input">
+	        <div class="ss-form-item__element">
+	        	<div class="ss-search-input">
+	        		<label id="labelFormularioGuia" for="inputFormularioGuia" class="ss-form-item__title visuallyhidden">Buscar en </label>
+	           		<input class="ss-search-input__input ss-text-input" type="search" name="palabraBusqueda" id="inputFormularioGuia" placeholder="Buscar" maxlength="500">
+	               	<button id="buttonFormularioGuia" class="ss-search-input__btn ss-button" aria-label="Buscar"><span id="spanFormularioGuia" class="visuallyhidden">Iniciar Búsqueda en  </span></button>	            
+	        	</div>
+	        </div>
+		</div>
+	</form>
+
+
+    </div>
+</section>
+
+<div class="ss-content-helper">
+
+
+
+    <div class="ss-content-helper__helper">
+  <h3 class="ss-h4">Índice de contenidos</h3>
+  <p>En esta guía encontrarás lo que necesitas saber sobre:</p>
+  <nav aria-label="área de navegación en un ranking de enlaces que hacen referencia a puntos específicos del documento para ayudar en la búsqueda de contenido">
+  <ol class="ss-list ss-list--ordered ss-list--style-blue">
+    <li><a href="#post-db795fde-2ae8-460f-a474-6f8e6966816e" class="ss-link">Dar de alta en empleo de hogar</a></li>  
+<li><a href="#post-0a779526-03f9-4a2f-bd4b-574e6fce2d47" class="ss-link">Cuota y pagos</a></li>  
+<li><a href="#post-a2fb1875-b1e9-4192-b64d-e00db58129ae" class="ss-link">Derechos y obligaciones</a></li>  
+<li><a href="#post-2f228ee0-8ebf-4873-a9dd-55eae33a8f16" class="ss-link">Bajas y modificaciones de datos</a></li>  
+  </nav>
+ </ol>
+</div>
+
+    <div class="ss-content-helper__content" itemscope itemtype="https://schema.org/FAQPage"><section class="ss-content" id="post-db795fde-2ae8-460f-a474-6f8e6966816e">
+  <h2 class="ss-h3">1. Dar de alta en empleo de hogar</h2>
+  <ul class="ss-list ss-list--of-collapses" aria-label="Preguntas para Dar de alta en empleo de hogar">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-ebc7b240-f73a-4a0c-8a8c-586b8e878a46" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregionebc7b240-f73a-4a0c-8a8c-586b8e878a46" id="IDControlebc7b240-f73a-4a0c-8a8c-586b8e878a46">
+              <span  itemprop="name">
+				&iquest;Cuándo hay que tramitar el alta?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControlebc7b240-f73a-4a0c-8a8c-586b8e878a46" id="IDregionebc7b240-f73a-4a0c-8a8c-586b8e878a46">
+              <div itemprop="text">
+				<p style="text-align: justify;">Siempre que una persona vaya a realizar una actividad en el entorno dom&eacute;stico a cambio de un salario, hay que solicitar el alta independientemente del n&uacute;mero de horas que trabaje. Se consideran tareas dom&eacute;sticas, entre otras, el servicio de limpieza o el cuidado de menores o personas dependientes.</p>
+<p style="text-align: justify;">El alta en el empleo de hogar se podr&aacute; realizar con una antelaci&oacute;n m&aacute;xima de 60 d&iacute;as y hasta el mismo d&iacute;a en el que se inicie la actividad desde <a href="/wps/portal/importass/importass/Categorias/altas%2C+bajas+y+modificaciones/altas+y+afiliacion+de+trabajadores/alta+en+empleo+de+hogar/6a3608f5-14c8-4744-8130-b85c9cd89e49" ><strong>Alta en empleo de hogar.</strong></a></p>
+<p style="text-align: justify;">Si la persona empleada ya ha empezado a trabajar, puedes tramitar el alta hasta pasados 30 d&iacute;as desde el inicio de actividad. En ese caso, se considera que el alta ha sido comunicada fuera de plazo y la cuota a pagar se calcular&aacute; desde la fecha que has indicado como de inicio de la actividad.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-f6806e49-247c-4ae4-863b-98d8c8878d20" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregionf6806e49-247c-4ae4-863b-98d8c8878d20" id="IDControlf6806e49-247c-4ae4-863b-98d8c8878d20">
+              <span  itemprop="name">
+				Voy a contratar a una persona para trabajar en mi casa, &iquest;quién debe tramitar el alta en la Seguridad Social?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControlf6806e49-247c-4ae4-863b-98d8c8878d20" id="IDregionf6806e49-247c-4ae4-863b-98d8c8878d20">
+              <div itemprop="text">
+				<p>
+  <strong>Desde el 1 de enero de 2023</strong>, el empleador es el único responsable de tramitar el alta y de ingresar las cuotas a la Seguridad Social con independencia del número de horas de trabajo al mes que tenga acordadas con la persona empleada.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-db8cc116-950d-4456-bd42-ea5dc0c1b73a" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregiondb8cc116-950d-4456-bd42-ea5dc0c1b73a" id="IDControldb8cc116-950d-4456-bd42-ea5dc0c1b73a">
+              <span  itemprop="name">
+				&iquest;Es obligatorio tener un contrato de trabajo?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControldb8cc116-950d-4456-bd42-ea5dc0c1b73a" id="IDregiondb8cc116-950d-4456-bd42-ea5dc0c1b73a">
+              <div itemprop="text">
+				<p>
+  Si los servicios van a durar más de 4 semanas debes reflejar las condiciones laborales en un contrato escrito y firmado. Si no, salvo que puedas demostrar lo contrario, se considera que el contrato es por tiempo indefinido y jornada completa. Se debe conservar una copia firmada por ambas partes.</p>
+<p>Para ayudarte a elaborar el contrato, el Servicio Publico de Empleo Estatal (SEPE) pone a tu disposición varios <a href="https://www.sepe.es/HomeSepe/empresas/Contratos-de-trabajo/modelos-contrato.html" target="_blank" ><strong>modelos</strong></a>.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-8ccbbe47-5177-412e-b9e7-af96779d6ccd" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion8ccbbe47-5177-412e-b9e7-af96779d6ccd" id="IDControl8ccbbe47-5177-412e-b9e7-af96779d6ccd">
+              <span  itemprop="name">
+				&iquest;Qué información se necesita para tramitar el alta en empleo de hogar?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl8ccbbe47-5177-412e-b9e7-af96779d6ccd" id="IDregion8ccbbe47-5177-412e-b9e7-af96779d6ccd">
+              <div itemprop="text">
+				<p>Para gestionar un alta en empleo de hogar, necesitarás:</p>
+<ul>
+  <li>Los datos identificativos de la persona trabajadora. Documentos como DNI, NIE&nbsp;o Número de la Seguridad Social.</li>
+  <li>Los datos identificativos de la persona empleadora. Documentos como DNI, NIE, Número de la Seguridad Social y el Número de identificación como empleador (Código de Cuenta de Cotización CCC).</li>
+  <li>Tener acordada la jornada y el salario entre las partes.</li>
+  <li>Un contrato de trabajo que refleje la jornada y el salario pactado. El Servicio Publico de Empleo Estatal (SEPE) dispone de <a href="https://www.sepe.es/HomeSepe/empresas/Contratos-de-trabajo/modelos-contrato.html" target="_blank" ><strong>modelos de contrato</strong></a> para un contrato indefinido o a tiempo parcial.</li>
+  <li>El IBAN de la cuenta corriente en la que se van a domiciliar los pagos y mandato SEPA (autorización para cargar las cuotas en la cuenta). Si la persona que va a tramitar el alta no es titular de la cuenta, debe contar con la autorización de su titular.</li>
+  <li>Permiso de trabajo vigente para trabajadores extracomunitarios.</li>
+  <li>Otros datos en el caso de aplicación de beneficios en la cuota, como información sobre el título de familia numerosa.</li>
+</ul>
+<p>Si durante el trámite te falta algún dato, pulsa el botón “Salir y guardar” para guardar la información en un borrador durante 10 días. Podrás recuperar el alta más adelante dónde lo dejaste.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-ad208ace-0227-4bcc-a809-158dd9073882" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregionad208ace-0227-4bcc-a809-158dd9073882" id="IDControlad208ace-0227-4bcc-a809-158dd9073882">
+              <span  itemprop="name">
+				Quiero contratar a una persona extranjera, &iquest;qué documentación es necesaria?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControlad208ace-0227-4bcc-a809-158dd9073882" id="IDregionad208ace-0227-4bcc-a809-158dd9073882">
+              <div itemprop="text">
+				<p>Además de contar con la documentación indicada en el apartado anterior, debes asegurarte de que pueda trabajar en España. Por su Tarjeta de Identificación Extranjera (TIE) podrás saber si pertenece o no a un país de la Unión Europea y los permisos que necesita: </p>
+<ul>
+  <li>Si es del Espacio Económico Europeo o Suiza, podrá trabajar siempre que tenga el Número de Identificación de Extranjero (NIE). Si carece de NIE debe solicitarlo previamente.</li>
+  <li>En otro caso, necesitará una autorización temporal de residencia con permiso de trabajo en vigor o una autorización de residencia de larga duración.<br /></li>
+</ul>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-d3eac1d3-71d2-47b9-add9-ff2aa5ab6e3c" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregiond3eac1d3-71d2-47b9-add9-ff2aa5ab6e3c" id="IDControld3eac1d3-71d2-47b9-add9-ff2aa5ab6e3c">
+              <span  itemprop="name">
+				&iquest;Qué es el Código de Cuenta de Cotización (CCC) o el identificador como empleador?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControld3eac1d3-71d2-47b9-add9-ff2aa5ab6e3c" id="IDregiond3eac1d3-71d2-47b9-add9-ff2aa5ab6e3c">
+              <div itemprop="text">
+				<p>El CCC es el número que la Seguridad Social asigna al empleador cuando contrata por primera vez a una persona en empleo de hogar. Tiene carácter provincial, es decir, si contratas trabajadores en empleo de hogar en distintas provincias, se asigna un CCC en cada una de ellas al solicitar un alta nueva. </p>
+<p>Con este número, la persona empleadora podrá ser identificada en los distintos trámites de empleo de hogar. </p>
+<p>Si eres empleador, encontrarás tu CCC en la página <a title="" href="/wps/portal/importass/importass/inicio" target=""><strong>Mi perfil de empleador</strong></a> de tu área personal.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-f8af8874-6c23-425e-a6a6-8263c70f4d43" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregionf8af8874-6c23-425e-a6a6-8263c70f4d43" id="IDControlf8af8874-6c23-425e-a6a6-8263c70f4d43">
+              <span  itemprop="name">
+				&iquest;Qué es el tiempo de presencia?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControlf8af8874-6c23-425e-a6a6-8263c70f4d43" id="IDregionf8af8874-6c23-425e-a6a6-8263c70f4d43">
+              <div itemprop="text">
+				<p>Las horas de presencia o guardia son aquellas en las que la persona trabajadora no está trabajando de forma activa, pero está disponible dentro o fuera del hogar. Las horas de presencia no pueden superar las 20 horas semanales en cómputo mensual y su importe tiene que ser igual o mayor al importe de la hora del salario mensual con pagas extras.<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-3504c5a7-6c83-4a85-ad12-df3d1f51eb7c" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion3504c5a7-6c83-4a85-ad12-df3d1f51eb7c" id="IDControl3504c5a7-6c83-4a85-ad12-df3d1f51eb7c">
+              <span  itemprop="name">
+				&iquest;Qué es la entidad aseguradora?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl3504c5a7-6c83-4a85-ad12-df3d1f51eb7c" id="IDregion3504c5a7-6c83-4a85-ad12-df3d1f51eb7c">
+              <div itemprop="text">
+				<p>Las Mutuas Colaboradoras con la Seguridad Social son las entidades aseguradoras de los riesgos profesionales. Prestan asistencia sanitaria a las personas empleadas en caso de accidente de trabajo y enfermedad profesional y, por otro lado, gestionan la prestación económica por incapacidad temporal en tales casos.</p>
+<p>En el supuesto de enfermedad común o accidente no laboral, tendrás que elegir si quieres que la cobertura se preste por el Instituto Nacional de la Seguridad Social y el Sistema Nacional de Salud, o si prefieres que sea una Mutua colaboradora la que abone la prestación económica por incapacidad temporal y realice el seguimiento médico.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-dfb4cdde-3552-4cad-9212-1e2d1e84a600" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregiondfb4cdde-3552-4cad-9212-1e2d1e84a600" id="IDControldfb4cdde-3552-4cad-9212-1e2d1e84a600">
+              <span  itemprop="name">
+				&iquest;Qué diferencia hay entre elegir una Mutua o la Seguridad Social como entidad aseguradora?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControldfb4cdde-3552-4cad-9212-1e2d1e84a600" id="IDregiondfb4cdde-3552-4cad-9212-1e2d1e84a600">
+              <div itemprop="text">
+				<p>No existe diferencia en la cobertura de riesgos por el Instituto Nacional de la seguridad Social o una Mutua.</p>
+<p>Las mutuas colaboradoras son asociaciones de empresarios autorizadas por el Ministerio de Inclusión, Seguridad Social y Migraciones, que ayudan a la Seguridad Social en la gestión de coberturas y prestaciones. Si se selecciona la mutua, esta asiste a la persona empleada en caso de accidente de trabajo y enfermedades profesionales, se encargan de la prevención de riesgos laborales, la mejora de las condiciones de trabajo y la salud de las personas trabajadoras. Además, gestionan las prestaciones económicas de incapacidad temporal, por riesgo durante el embarazo, riesgo durante la lactancia natural y la prestación del nacimiento o cuidado de menores.</p>
+<p><br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-fd96b3a0-de37-47a0-a85b-4cfc11e80d92" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregionfd96b3a0-de37-47a0-a85b-4cfc11e80d92" id="IDControlfd96b3a0-de37-47a0-a85b-4cfc11e80d92">
+              <span  itemprop="name">
+				&iquest;En qué bancos puedo domiciliar los pagos de las cuotas a la Seguridad Social?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControlfd96b3a0-de37-47a0-a85b-4cfc11e80d92" id="IDregionfd96b3a0-de37-47a0-a85b-4cfc11e80d92">
+              <div itemprop="text">
+				<p>Para ingresar las cuotas a la Seguridad Social tendrás que domiciliar los pagos en un banco o una entidad financiera colaboradora con la Seguridad Social. Consulta las <a href="https://www.seg-social.es/descarga/es/225529" target="_blank" ><strong>entidades financieras colaboradoras con la Seguridad Social</strong></a>.<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-96ad8aec-2b96-4763-b347-7ae5652a4ba8" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion96ad8aec-2b96-4763-b347-7ae5652a4ba8" id="IDControl96ad8aec-2b96-4763-b347-7ae5652a4ba8">
+              <span  itemprop="name">
+				Si trabajo en varias casas para distintos empleadores, &iquest;tengo que estar de alta en la Seguridad Social con cada uno de ellos?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl96ad8aec-2b96-4763-b347-7ae5652a4ba8" id="IDregion96ad8aec-2b96-4763-b347-7ae5652a4ba8">
+              <div itemprop="text">
+				<p>Todos los empleadores deben tramitar tu alta en empleo de hogar con independencia del número de horas que trabajes para cada uno de ellos.</p>
+<p>Cada empleador será el responsable de tramitar el alta en empleo de hogar y de comunicar el número de horas de tu jornada laboral.</p>
+<p><br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-1b74183c-a1c6-48fe-87a6-464503f87445" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion1b74183c-a1c6-48fe-87a6-464503f87445" id="IDControl1b74183c-a1c6-48fe-87a6-464503f87445">
+              <span  itemprop="name">
+				Soy empleador, &iquest;qué ocurre si no doy de alta ni cotizo por la persona contratada en el hogar familiar?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl1b74183c-a1c6-48fe-87a6-464503f87445" id="IDregion1b74183c-a1c6-48fe-87a6-464503f87445">
+              <div itemprop="text">
+				<p>En caso de incumplimiento de las obligaciones de alta y de cotización, la Tesorería General de la Seguridad Social podrá dar de alta a la persona trabajadora reclamando el pago de las cuotas debidas desde el inicio de la actividad, con los correspondientes recargos.</p>
+<p>Además, esto supone una falta grave que puede sancionarse por la Inspección de Trabajo y Seguridad Social. El importe de la multa oscila entre 3.750 y 12.000 euros.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-97601315-b688-400b-8365-eb6556b864c5" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion97601315-b688-400b-8365-eb6556b864c5" id="IDControl97601315-b688-400b-8365-eb6556b864c5">
+              <span  itemprop="name">
+				&iquest;Puedo contratar a un familiar para realizar tareas domésticas?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl97601315-b688-400b-8365-eb6556b864c5" id="IDregion97601315-b688-400b-8365-eb6556b864c5">
+              <div itemprop="text">
+				<p>Sí, lo puedes contratar siempre que quede acreditado que le pagas un salario y que trabaja bajo tu dirección y organización.</p>
+<p>Si el familiar reside en tu domicilio y tenéis un parentesco de hasta segundo grado (padres, hijos, nietos o abuelos y sus cónyuges), podremos pedir que justifiques que recibe un salario.</p>
+<p><br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-9879d92e-ef21-475c-8cba-95c513fafaba" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion9879d92e-ef21-475c-8cba-95c513fafaba" id="IDControl9879d92e-ef21-475c-8cba-95c513fafaba">
+              <span  itemprop="name">
+				Si he empezado a trabajar en un hogar, &iquest;cómo puedo saber si me han dado de alta?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl9879d92e-ef21-475c-8cba-95c513fafaba" id="IDregion9879d92e-ef21-475c-8cba-95c513fafaba">
+              <div itemprop="text">
+				<p>En el momento en el que el empleador solicite el alta en empleo de hogar te lo comunicaremos mediante un SMS o correo electrónico. En el mensaje encontrarás un enlace desde el que podrás acceder a tu área personal y consultar todos los datos con los que te ha dado de alta, como la fecha de inicio de actividad, el tipo de contrato o el número de horas.</p>
+<p>Si el empleador te ha dado de alta, pero no has recibido ningún mensaje, accede a tu área personal para comprobar el trámite realizado y revisa tus datos de contacto, teléfono móvil y correo electrónico, para verificar que son correctos. En adelante, la Seguridad Social podrá comunicarte cualquier cambio por estos medios.</p>
+<p><br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+	 
+
+
+
+
+
+
+
+
+
+
+  
+  </ul>
+</section>
+<section class="ss-content" id="post-0a779526-03f9-4a2f-bd4b-574e6fce2d47">
+  <h2 class="ss-h3">2. Cuota y pagos</h2>
+  <ul class="ss-list ss-list--of-collapses" aria-label="Preguntas para Cuota y pagos">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-409ff9f6-26fb-467b-b244-a852b9fb98e8" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion409ff9f6-26fb-467b-b244-a852b9fb98e8" id="IDControl409ff9f6-26fb-467b-b244-a852b9fb98e8">
+              <span  itemprop="name">
+				Voy a contratar a una persona para trabajar en mi casa, &iquest;me puedo aplicar algún beneficio en las cuotas a la Seguridad Social?, &iquest;qué requisitos tengo que cumplir?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl409ff9f6-26fb-467b-b244-a852b9fb98e8" id="IDregion409ff9f6-26fb-467b-b244-a852b9fb98e8">
+              <div itemprop="text">
+				<p style="text-align: justify;">
+  Con carácter general, estos son los beneficios que puedes disfrutar como <strong>empleador</strong>. <strong>Se aplicarán sobre la cotización a tu cargo.</strong><br />Los siguientes beneficios serán de aplicación automática siempre que no seas deudor con la Seguridad Social o con las Haciendas Tributarias:</p>
+<ul>
+  <li style="margin-left: 40px; text-align: justify;"><strong>Reducción del 20%</strong> en la cuota por contingencias comunes por alta en empleo de hogar.</li>
+  <li style="margin-left: 40px; text-align: justify;"><strong>Bonificación del 80%</strong> en la cuota por desempleo.</li>
+  <li style="margin-left: 40px; text-align: justify;"><strong>Bonificación del 80%</strong> en la cotización al Fondo de Garantía Salarial (FOGASA).</li>
+  <li style="margin-left: 40px; text-align: justify;"><strong>Reducción del 75% </strong>en la cuota por contingencias comunes durante la situación de incapacidad temporal de las personas trabajadoras que tengan cumplida la edad de 62 años.<br /></li>
+</ul>
+<p style="text-align: justify;">Además, existen otros beneficios en tu cuota que <strong><a href="https://identificacion.seg-social.es/?origen=tgss&amp;pasaporte=true&amp;destino=https%3A%2F%2Fportal.seg-social.gob.es%2Fwps%2Fportal%2Fimportass%2Fimportass%2Ftramites%2FsolicitudesAtria%2Finicio%3Ftramite%3DConsultaEmpleoHogar" target="_blank" >podrás solicitar</a>:</strong> </p>
+<ul>
+  <li style="text-align: justify;">Beneficio del 45% en la cuota por contingencias comunes por la contratación en familias numerosas (no acumulable con la reducción por alta del 20%).</li>
+  <li style="text-align: justify;">Bonificación del 100% en la cuota por contingencias comunes por la formalización de un contrato para sustituir a otra persona que cesa en su prestación de servicios por ejercicio de los derechos laborales reconocidos a las víctimas de violencia de género o de violencia sexual.</li>
+  <li style="text-align: justify;">Bonificación de hasta 366 euros en la cuota total:
+    <ul>
+      <li style="text-align: justify;">Por la formalización de contratos de interinidad que se celebren con personas desempleadas para sustituir a personas trabajadores que tengan suspendido su contrato de trabajo por riesgo durante el embarazo o lactancia natural, nacimiento y cuidado del menor y ejercicio corresponsable del lactante.</li>
+      <li style="text-align: justify;">De la persona trabajadora sustituida por las causas anteriores.</li>
+    </ul>
+  </li>
+  <li style="text-align: justify;">Bonificación en la cuota por contingencias comunes por la contratación de personas con discapacidad.</li>
+</ul>
+<div class="ss-notification ss-notification--warning" dir="ltr" role="alert">
+  <p style="text-align: justify;">Ten en cuenta que, si debes alguna cuota o tienes cualquier otra deuda con la Seguridad Social y las Haciendas Tributarias, aunque cumplas los requisitos, solo podrás aplicarte los beneficios si pagas tu deuda antes de que el empleado empiece a trabajar. Accede a <a href="/wps/portal/importass/importass/Categorias/consulta+de+pagos+y+deudas/pagosdevoluciones_/consultadeudas" ><strong>Consulta de deudas y obtención de documento de pago</strong></a> para regularizar la situación con la Seguridad Social
+  </p>
+</div>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-c913e257-c0e0-426a-a3b4-5ecb1e2965f5" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregionc913e257-c0e0-426a-a3b4-5ecb1e2965f5" id="IDControlc913e257-c0e0-426a-a3b4-5ecb1e2965f5">
+              <span  itemprop="name">
+				Tabla de tramos de cotización
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControlc913e257-c0e0-426a-a3b4-5ecb1e2965f5" id="IDregionc913e257-c0e0-426a-a3b4-5ecb1e2965f5">
+              <div itemprop="text">
+				<p>La cotización a la Seguridad Social se calcula aplicando unos porcentajes a las bases de cotización. Las bases de cotización vienen determinadas por la totalidad del salario mensual, según la tabla de tramos vigente. </p>
+<p>Durante el año 2026 esta es la tabla de tramos de cotización: </p>
+<table border="1" dir="ltr" style="border-collapse: collapse;">
+  <tbody>
+    <tr style="height: 102px;">
+      <th id="header18">Tramo</th>
+      <th id="header28">
+        Retribución mensual euros/mes
+      </th>
+      <th id="header38">
+        <p class="irdivcent">Base de cotización</p>
+
+        <p class="irdivcent">euros/mes</p>
+      </th>
+    </tr>
+    <tr>
+      <td headers="header18">1.º</td>
+      <td headers="header28">Hasta 329,00</td>
+      <td headers="header38">306,00</td>
+    </tr>
+    <tr>
+      <td headers="header18">2.º</td>
+      <td headers="header28">Desde 329,01 hasta 510,00</td>
+      <td headers="header38">436,00</td>
+    </tr>
+    <tr>
+      <td headers="header18">3.º</td>
+      <td headers="header28">Desde 510,01 hasta 693,00</td>
+      <td headers="header38">602,00</td>
+    </tr>
+    <tr>
+      <td headers="header18">4.º</td>
+      <td headers="header28">Desde 693,01 hasta 877,00</td>
+      <td headers="header38">785,00</td>
+    </tr>
+    <tr>
+      <td headers="header18">5.º</td>
+      <td headers="header28">Desde 877,01 hasta 1.061,00</td>
+      <td headers="header38">970,00</td>
+    </tr>
+    <tr>
+      <td headers="header18">6.º</td>
+      <td headers="header28">Desde 1.061,01 hasta 1.242,00</td>
+      <td headers="header38">1.151,00</td>
+    </tr>
+    <tr>
+      <td headers="header18">7.º</td>
+      <td headers="header28">Desde 1.242,01 hasta 1.424,40</td>
+      <td headers="header38" 1.166,70<="" td="">
+        1.424,40<br /></td>
+    </tr>
+    <tr>
+      <td headers="header18">8.º</td>
+      <td headers="header28">Desde 1.424,41</td>
+      <td headers="header38">Retribución mensual</td>
+    </tr>
+
+  </tbody>
+</table>
+<p>La tabla de tramos de cotización y los tipos de cotización aplicables a las bases vienen determinados legalmente.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-a433c2e0-30bc-4a09-a4d7-0e35b2b94324" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregiona433c2e0-30bc-4a09-a4d7-0e35b2b94324" id="IDControla433c2e0-30bc-4a09-a4d7-0e35b2b94324">
+              <span  itemprop="name">
+				&iquest;Cómo se calcula la cuota mensual a pagar?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControla433c2e0-30bc-4a09-a4d7-0e35b2b94324" id="IDregiona433c2e0-30bc-4a09-a4d7-0e35b2b94324">
+              <div itemprop="text">
+				<p dir="ltr" style="text-align: justify;">La cuota mensual es la suma de la aportación del empleador y del trabajador. Estas cuotas se calculan a partir de la base de cotización que puedes consultar en la tabla de tramos anterior. Para saber qué base de cotización se aplica, debes calcular la retribución mensual que se obtiene de la suma del salario mensual, la parte proporcional de las pagas extraordinarias y otros complementos salariales como pernocta, horas de guardia o presencia y el salario en especie si los hay.</p>
+<p dir="ltr">Cuota a pagar = Cuota del empleador + Cuota del trabajador</p>
+<p dir="ltr">Si el contrato es <strong>fijo discontinuo o indefinido</strong>:</p>
+<p dir="ltr" style="margin-left: 40px;">Cuota del empleador = [Base x 0,2360 x (1- bonificación) (contingencias comunes)] + [Base x 0,0150 (contingencias profesionales)] + [Base x 0,055 x (1-0,80) (desempleo)] + [Base x 0,0075 (Mecanismo de Equidad Intergeneracional)] + [Base x 0,002 x (1-0,80) (FOGASA)]</p>
+<p dir="ltr" style="margin-left: 40px;">Cuota del trabajador = [Base x 0,0470 (contingencias comunes)] + [Base x 0,0155 (desempleo)] + [Base x 0,0015 (Mecanismo de Equidad Intergeneracional)]</p>
+<p dir="ltr">Si el contrato es <strong>temporal</strong>:</p>
+<p dir="ltr" style="margin-left: 40px;">Cuota del empleador = [Base x 0,2360 x (1- bonificación) (contingencias comunes)] + [Base x 0,0150 (contingencias profesionales)] + [Base x 0,067 x (1-0,80) (desempleo)] + [Base x 0,0075 (Mecanismo de Equidad Intergeneracional)] + [Base x 0,002 x (1-0,80) (FOGASA)]</p>
+<p dir="ltr" style="margin-left: 40px;">Cuota del trabajador = [Base x 0,0470 (contingencias comunes)] + [Base x 0,016 (desempleo)] + [Base x 0,0015 (Mecanismo de Equidad Intergeneracional)]</p>
+<div class="ss-notification ss-notification--warning" dir="ltr" role="alert">
+  <p>Recuerda que la aplicación de estos beneficios se encuentra condicionada a estar al corriente de pago con la Seguridad Social y Haciendas Tributarias.</p>
+</div>
+
+
+<p dir="ltr">Puedes calcular la retribución total mensual de la siguiente manera:<br /></p>
+<p dir="ltr">Retribución total mensual = Salario Mensual + Pagas extraordinarias / 12 + Salario en especie + Retribución mensual por horas presencia + Retribución mensual por pernocta</p>
+<p dir="ltr"><strong>Ejemplo:</strong> El salario mensual de María es de 1.221 € (Salario Mínimo Interprofesional), tiene dos pagas extraordinarias al año que suman un total de 2.700 € anuales. Tiene un contrato indefinido.</p>
+<p dir="ltr" style="text-align: justify;">Retribución o importe total = 1.221 + 2.700/12 = 1.446€<br />Base de cotización = 1.446€<br />Cuota del empleador = [1.446 x 0,2360 x (1-0,2)] + [1.446 x 0,0150] + [1.446 x 0,055 x (1-0,8)] + [1.446 x 0,0075] + [1.446 x 0,002 x (1-0,8)]= 322,03€<br />Cuota del trabajador = [1.446 x 0,0470] + [1.446 x 0,0155] + [1.446 x 0,0015]= 92,54€<br />Cuota a pagar = 322,03 + 92,54 = 414,57€</p>
+
+<p dir="ltr"><a href="/wps/portal/importass/importass/tramites/calculadorahogar/" target="" title=""><strong>Simular cuota</strong></a></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-af603904-1085-43ef-8bf9-52c89d725019" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregionaf603904-1085-43ef-8bf9-52c89d725019" id="IDControlaf603904-1085-43ef-8bf9-52c89d725019">
+              <span  itemprop="name">
+				&iquest;Quién debe ingresar las cuotas a la Seguridad Social?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControlaf603904-1085-43ef-8bf9-52c89d725019" id="IDregionaf603904-1085-43ef-8bf9-52c89d725019">
+              <div itemprop="text">
+				<p><strong>Desde el 1 de enero de 2023</strong>, el único responsable de tramitar el alta y de ingresar las cuotas correspondientes al mes de enero y siguientes es el empleador. El empleador deberá descontar del salario del trabajador la parte correspondiente de éste.<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-cb75df89-667d-468c-bd19-debd189dc1f1" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregioncb75df89-667d-468c-bd19-debd189dc1f1" id="IDControlcb75df89-667d-468c-bd19-debd189dc1f1">
+              <span  itemprop="name">
+				Soy empleador, &iquest;desde cuándo debo cotizar por desempleo?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControlcb75df89-667d-468c-bd19-debd189dc1f1" id="IDregioncb75df89-667d-468c-bd19-debd189dc1f1">
+              <div itemprop="text">
+				<p><strong>Desde el 1 de octubre de 2022</strong> la cotizaci&oacute;n por desempleo y al Fondo de Garant&iacute;a Salarial (FOGASA) es obligatoria.</p>
+<p>La Tesorer&iacute;a General de la Seguridad Social se ocupar&aacute; de que tu cotizaci&oacute;n se adapte a la nueva normativa sin que sea necesario realizar ning&uacute;n tr&aacute;mite adicional.</p>
+<p>Sin embargo, recuerda que en caso de que exista alg&uacute;n cambio en el salario o en la jornada pactados con la persona trabajadora has de comunicarlo a trav&eacute;s de tu <strong><a href="/wps/portal/importass/importass" target="" title="">&Aacute;rea Personal</a></strong>. En todo caso, los cambios que afecten a la retribuci&oacute;n deber&aacute;n respetar siempre el salario m&iacute;nimo interprofesional establecido por ley.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-137e7bab-7dd9-4694-80d2-6bcad91f5de6" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion137e7bab-7dd9-4694-80d2-6bcad91f5de6" id="IDControl137e7bab-7dd9-4694-80d2-6bcad91f5de6">
+              <span  itemprop="name">
+				&iquest;Cómo se paga la cotización a la Seguridad Social?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl137e7bab-7dd9-4694-80d2-6bcad91f5de6" id="IDregion137e7bab-7dd9-4694-80d2-6bcad91f5de6">
+              <div itemprop="text">
+				<p>El pago de la cuota mensual se efectuará mediante domiciliación bancaria en la cuenta bancaria comunicada por el empleador. La actualización de la cuenta bancaria se puede realizar a través de <strong><a href="/wps/portal/importass/importass/Categorias/altas%2C+bajas+y+modificaciones/bajas+y+modificaciones/modificacion_datos_como_empleador_empleadora_hogar" >Modificación de tus datos como empleador o empleadora del hogar</a>.</strong></p>
+<p><strong>Desde el 1 de enero de 2023</strong>, el empleador es el único responsable de ingresar las cuotas correspondientes al mes de enero y siguientes a la Seguridad Social mediante domiciliación bancaria.<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-d6b8f73d-a08b-4137-848b-d291cf0baddf" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregiond6b8f73d-a08b-4137-848b-d291cf0baddf" id="IDControld6b8f73d-a08b-4137-848b-d291cf0baddf">
+              <span  itemprop="name">
+				Si soy empleador y se ha aprobado un nuevo Salario Mínimo Interprofesional,  &iquest;debo modificar la retribución de la persona empleada en mi casa?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControld6b8f73d-a08b-4137-848b-d291cf0baddf" id="IDregiond6b8f73d-a08b-4137-848b-d291cf0baddf">
+              <div itemprop="text">
+				<p>Sí, siempre que las retribuciones en metálico que hayas comunicado por última vez sean inferiores al nuevo SMI, ya que la retribución determina la base de cotización aplicable.&nbsp;</p>
+<p>En caso de no realizar voluntariamente esta actualización, la Tesorería General de la Seguridad Social cargará en la cuenta donde esté domiciliado el pago, la cuota correspondiente.<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-7e543a73-aa9b-490a-9685-bb9147ad382d" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion7e543a73-aa9b-490a-9685-bb9147ad382d" id="IDControl7e543a73-aa9b-490a-9685-bb9147ad382d">
+              <span  itemprop="name">
+				&iquest;Qué incluye la cuota que tengo que pagar a la Seguridad Social?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl7e543a73-aa9b-490a-9685-bb9147ad382d" id="IDregion7e543a73-aa9b-490a-9685-bb9147ad382d">
+              <div itemprop="text">
+				<p>La cuota del empleador comprende:</p>
+
+<ul>
+  <li>Una cuota por contingencias comunes (no profesionales).</li>
+  <li>Una cuota por contingencias profesionales (accidente de trabajo y enfermedad profesional).</li>
+  <li>Una cuota por desempleo.</li>
+  <li>Una cuota por Fondo de Garantía Salarial (FOGASA).</li>
+  <li>Una cuota por Mecanismo de Equidad Intergeneracional (MEI).</li>
+</ul>
+<p>La cuota del empleado comprende:</p>
+<ul>
+  <li>Una cuota por contingencias comunes (no profesionales).</li>
+  <li>Una cuota por desempleo.</li>
+  <li>Una cuota por Mecanismo de Equidad Intergeneracional (MEI).
+  </li>
+</ul>
+<p>La cuota total calculada puede resultar de menor cuantía por aplicación de beneficios en la cotización. Puede consultarlos en “<strong><a href="/wps/portal/importass/importass/Colectivos/guias/#IDControl409ff9f6-26fb-467b-b244-a852b9fb98e8" target="" title="">Voy a contratar a una persona para trabajar en mi casa, ¿me puedo aplicar algún beneficio en las cuotas a la Seguridad Social?, ¿qué requisitos tengo que cumplir?</a></strong>”.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-057f8422-ede1-415b-a650-6a4f9052f4a3" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion057f8422-ede1-415b-a650-6a4f9052f4a3" id="IDControl057f8422-ede1-415b-a650-6a4f9052f4a3">
+              <span  itemprop="name">
+				Soy empleador y tengo contratada a una persona menos de 60 horas mensuales que realiza el pago de la cuota, &iquest;tengo que hacer algo a partir de enero 2023?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl057f8422-ede1-415b-a650-6a4f9052f4a3" id="IDregion057f8422-ede1-415b-a650-6a4f9052f4a3">
+              <div itemprop="text">
+				<p>Desde el 1 de enero de 2023 desaparece la posibilidad de que la persona trabajadora que presta servicios en el hogar durante menos de 60 horas mensuales asuma las obligaciones de darse de alta en la seguridad social e ingresar las cuotas.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-c63039e1-6274-45a3-adf4-d5dbcb206121" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregionc63039e1-6274-45a3-adf4-d5dbcb206121" id="IDControlc63039e1-6274-45a3-adf4-d5dbcb206121">
+              <span  itemprop="name">
+				Si soy familia numerosa y contrato a un empleado de hogar, &iquest;tengo algún tipo de beneficio?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControlc63039e1-6274-45a3-adf4-d5dbcb206121" id="IDregionc63039e1-6274-45a3-adf4-d5dbcb206121">
+              <div itemprop="text">
+				<p>Podrás solicitar un beneficio del <strong>45%</strong> por la contratación de empleados de hogar para familias numerosas que se aplica a la cuota de contingencias comunes del empleador.<br />Este beneficio no se sumará al descuento general del 20%, pero sí a las deducciones del 80% en la cotización por desempleo y FOGASA.<br />Si tienes más de una persona contratada en el hogar, este beneficio solo se aplicará por una de ellas.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-8980c01a-5811-440e-ac35-0dd39a376803" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion8980c01a-5811-440e-ac35-0dd39a376803" id="IDControl8980c01a-5811-440e-ac35-0dd39a376803">
+              <span  itemprop="name">
+				&iquest;Qué ocurre si no pago las cuotas por la persona contratada en el hogar familiar?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl8980c01a-5811-440e-ac35-0dd39a376803" id="IDregion8980c01a-5811-440e-ac35-0dd39a376803">
+              <div itemprop="text">
+				<p>En caso de incumplir la obligación de cotizar, la Tesorería General de la Seguridad Social reclamará el pago de las cuotas debidas desde el inicio de la actividad con los correspondientes recargos.</p>
+<p>Además, esto supone una falta grave que puede sancionarse por la Inspección de Trabajo y Seguridad Social. El importe de la multa oscila entre 3.750 y 12.000 euros.<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-98082ece-5edd-4db9-a9ae-98937be00328" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion98082ece-5edd-4db9-a9ae-98937be00328" id="IDControl98082ece-5edd-4db9-a9ae-98937be00328">
+              <span  itemprop="name">
+				&iquest;Cuándo me cargarán la primera cuota?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl98082ece-5edd-4db9-a9ae-98937be00328" id="IDregion98082ece-5edd-4db9-a9ae-98937be00328">
+              <div itemprop="text">
+				<p>Las cuotas de empleo de hogar se cargan el mes siguiente de haber prestado el servicio. Es decir, si el empleado ha comenzado a trabajar en julio, la cuota correspondiente se carga en el mes de agosto. </p>
+<p>En tu <strong><a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/personal/" >Área personal</a> </strong>podrás consultar la cuota y cuándo se realizará el cargo en tu cuenta.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-a27467c7-f8a6-44b2-a58e-a344bfc323ad" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregiona27467c7-f8a6-44b2-a58e-a344bfc323ad" id="IDControla27467c7-f8a6-44b2-a58e-a344bfc323ad">
+              <span  itemprop="name">
+				&iquest;Qué es la nómina? &iquest;Es necesaria?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControla27467c7-f8a6-44b2-a58e-a344bfc323ad" id="IDregiona27467c7-f8a6-44b2-a58e-a344bfc323ad">
+              <div itemprop="text">
+				<p>La nómina es un recibo que se le entrega al trabajador y que indica la cantidad que se le paga por los servicios prestados.</p>
+<p>Recuerda prestar atención al Salario Mínimo Interprofesional.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+	 
+
+
+
+
+
+
+
+
+
+
+  
+  </ul>
+</section>
+<section class="ss-content" id="post-a2fb1875-b1e9-4192-b64d-e00db58129ae">
+  <h2 class="ss-h3">3. Derechos y obligaciones</h2>
+  <ul class="ss-list ss-list--of-collapses" aria-label="Preguntas para Derechos y obligaciones">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-6e453e6d-f556-442b-a3f0-e82edefced63" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion6e453e6d-f556-442b-a3f0-e82edefced63" id="IDControl6e453e6d-f556-442b-a3f0-e82edefced63">
+              <span  itemprop="name">
+				&iquest;Qué prestaciones cubre el alta en el empleo del hogar y cómo puedo solicitarlas?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl6e453e6d-f556-442b-a3f0-e82edefced63" id="IDregion6e453e6d-f556-442b-a3f0-e82edefced63">
+              <div itemprop="text">
+				<p>Estas son las situaciones protegidas por la Seguridad Social para empleados de hogar que pueden dar lugar a prestaciones, siempre que se cumplan los requisitos establecidos legalmente:</p>
+<ul>
+  <li>
+    Baja médica por enfermedad común o accidente no laboral (Incapacidad temporal derivada de contingencias comunes).</li>
+  <li>Baja médica por enfermedad profesional o accidente laboral (Incapacidad temporal derivada de contingencias profesionales).</li>
+  <li>Nacimiento y cuidado de menor.</li>
+  <li>Riesgo durante el embarazo y riesgo durante la lactancia.</li>
+  <li>Incapacidad permanente.</li>
+  <li>Prestaciones familiares.</li>
+  <li>Jubilación.</li>
+  <li>Muerte y supervivencia (viudedad y orfandad).</li>
+  <li>Cuidados de menores por cáncer u otra enfermedad grave.</li>
+  <li>Desempleo.</li>
+</ul>
+<p>Si necesitas más información sobre alguna de estas prestaciones, puedes consultar a la entidad que las gestiona, el Instituto Nacional de la Seguridad Social o accede a <a href="https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/12778" target="_blank" ><strong>Acción protectora - prestaciones</strong></a>.</p>
+<p>Para información relativa al desempleo, la entidad competente es el <strong><a href="https://www.sepe.es/HomeSepe/Personas/distributiva-prestaciones/quiero-cobrar-el-paro/soy-persona-trabajadora-servicio-hogar.html" target="_blank" >Servicio Público de Empleo Estatal</a></strong>.<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-1d86c467-51ae-47d3-a9f4-39c1c2ca01bc" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion1d86c467-51ae-47d3-a9f4-39c1c2ca01bc" id="IDControl1d86c467-51ae-47d3-a9f4-39c1c2ca01bc">
+              <span  itemprop="name">
+				&iquest;Debo seguir pagando a la persona empleada si se pone enferma y tiene una baja prolongada?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl1d86c467-51ae-47d3-a9f4-39c1c2ca01bc" id="IDregion1d86c467-51ae-47d3-a9f4-39c1c2ca01bc">
+              <div itemprop="text">
+				<p>Si la baja se debe a una enfermedad común o a un accidente no laboral, el trabajador no recibirá ninguna prestación hasta el cuarto día de la baja médica. Entre el cuarto y el octavo día de baja, ambos inclusive, tendrá que pagarla el empleador. El noveno y los sucesivos los pagará la Seguridad Social, pero el trabajador deberá hacer la solicitud del pago al Instituto Nacional de la Seguridad Social y aportar un certificado de su empleador. Si el empleador ha elegido una Mutua colaboradora, la mutua se hará cargo de la cobertura.</p>
+<p>Si la baja se debe a una enfermedad profesional o a un accidente laboral, la asistencia y la prestación correspondiente será abonada por la Mutua colaboradora seleccionada. En estos casos la prestación económica por incapacidad temporal se abonará desde el día siguiente al inicio de la baja médica.</p>
+<p>El importe de la prestación dependerá de la base de cotización, así como del motivo de la baja.</p>
+<p>Ten en cuenta que, aunque la Seguridad Social o la Mutua abone una prestación, deberás seguir pagando la cuota de empleo de hogar mientras la persona empleada esté de baja médica.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-786b8d56-c32c-4587-b2bf-e23a8974e512" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion786b8d56-c32c-4587-b2bf-e23a8974e512" id="IDControl786b8d56-c32c-4587-b2bf-e23a8974e512">
+              <span  itemprop="name">
+				Si la familia se va de vacaciones y la persona trabajadora se desplaza con ellos, &iquest;este tiempo cuenta como parte de sus vacaciones?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl786b8d56-c32c-4587-b2bf-e23a8974e512" id="IDregion786b8d56-c32c-4587-b2bf-e23a8974e512">
+              <div itemprop="text">
+				<p>No. Si la persona trabajadora acompaña a la familia y se dedica a realizar tareas domésticas no se considerará parte de sus vacaciones ya que no supone un tiempo de descanso.<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-a8022f8b-8155-41dc-93d8-f54c1a89492b" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregiona8022f8b-8155-41dc-93d8-f54c1a89492b" id="IDControla8022f8b-8155-41dc-93d8-f54c1a89492b">
+              <span  itemprop="name">
+				Mi empleada estará de vacaciones un mes, &iquest;tengo que seguir pagando el sueldo y la cuota de Seguridad Social?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControla8022f8b-8155-41dc-93d8-f54c1a89492b" id="IDregiona8022f8b-8155-41dc-93d8-f54c1a89492b">
+              <div itemprop="text">
+				<p>Sí, toda persona empleada tiene derecho a las vacaciones pagadas. Las vacaciones deben ser disfrutadas dentro de cada año natural, entre el 1 de enero y el 31 de diciembre. La persona empleada tiene derecho a disfrutar de 30 días naturales de vacaciones o 2,5 días por mes de trabajo. Además, tendrás que pagar la cuota correspondiente a la Seguridad Social. </p>
+<p>Puedes pagarle el salario correspondiente durante el mes de vacaciones o dividir su importe y sumar la parte proporcional al salario que recibe el resto de meses.</p>
+<p>Si se pone fin a la relación laboral y la persona empleada de hogar no ha disfrutado de sus vacaciones durante la misma, cuando se comunique la baja a la Seguridad Social, se deben declarar los días de vacaciones no disfrutados.<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-d2b84110-0c1b-40d6-811d-53c586a30d79" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregiond2b84110-0c1b-40d6-811d-53c586a30d79" id="IDControld2b84110-0c1b-40d6-811d-53c586a30d79">
+              <span  itemprop="name">
+				Trabajo en varias casas y no sé cuánto están pagando por mí a la Seguridad Social.
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControld2b84110-0c1b-40d6-811d-53c586a30d79" id="IDregiond2b84110-0c1b-40d6-811d-53c586a30d79">
+              <div itemprop="text">
+				<p>Si entras en tu área personal, encontrarás el nombre de cada uno de los empleadores con los que trabajas y la cuota que corresponde por cada uno de tus trabajos. En el detalle encontrarás qué parte de la cuota está a cargo del empleador, qué parte está a tu cargo como trabajador y la base de cotización a la que corresponde esta cuota.<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-2d870fce-0288-463e-b5d2-21641d2abcef" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion2d870fce-0288-463e-b5d2-21641d2abcef" id="IDControl2d870fce-0288-463e-b5d2-21641d2abcef">
+              <span  itemprop="name">
+				&iquest;Y para qué sirve el FOGASA?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl2d870fce-0288-463e-b5d2-21641d2abcef" id="IDregion2d870fce-0288-463e-b5d2-21641d2abcef">
+              <div itemprop="text">
+				<p>El Fondo Garantía Salarial (FOGASA) garantiza a los trabajadores la percepción de salarios, indemnizaciones por despido o extinción de la relación laboral que están pendientes de pago, una vez finalizado el contrato.<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+	 
+
+
+
+
+
+
+
+
+
+
+  
+  </ul>
+</section>
+<section class="ss-content" id="post-2f228ee0-8ebf-4873-a9dd-55eae33a8f16">
+  <h2 class="ss-h3">4. Bajas y modificaciones de datos</h2>
+  <ul class="ss-list ss-list--of-collapses" aria-label="Preguntas para Bajas y modificaciones de datos">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-3b5d0716-9ff7-464c-b264-30c85a7627b9" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion3b5d0716-9ff7-464c-b264-30c85a7627b9" id="IDControl3b5d0716-9ff7-464c-b264-30c85a7627b9">
+              <span  itemprop="name">
+				Si la persona trabajadora deja de trabajar en casa, &iquest;cómo se tramita la baja en la Seguridad Social?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl3b5d0716-9ff7-464c-b264-30c85a7627b9" id="IDregion3b5d0716-9ff7-464c-b264-30c85a7627b9">
+              <div itemprop="text">
+				<p>Si el empleador tramitó el alta en la Seguridad Social deberá solicitar la baja en empleo de hogar al finalizar la actividad desde <a href="/wps/portal/importass/importass/Categorias/altas%2C+bajas+y+modificaciones/bajas+y+modificaciones/baja+de+empleo+de+hogar" ><strong>Baja en empleo de hogar</strong></a>.</p>
+<p>Desde el 1 de enero de 2023, únicamente&nbsp;el empleador podrá tramitar la baja de la persona trabajadora .<br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-462421c8-5d8b-4096-b073-42fcf319372b" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion462421c8-5d8b-4096-b073-42fcf319372b" id="IDControl462421c8-5d8b-4096-b073-42fcf319372b">
+              <span  itemprop="name">
+				&iquest;Cuáles son los plazos para solicitar la baja?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl462421c8-5d8b-4096-b073-42fcf319372b" id="IDregion462421c8-5d8b-4096-b073-42fcf319372b">
+              <div itemprop="text">
+				<p style="text-align: justify;">La baja puede solicitarse con una antelaci&oacute;n m&aacute;xima de hasta 60 d&iacute;as a la fecha de finalizaci&oacute;n de la actividad y hasta 6 d&iacute;as naturales despu&eacute;s.</p>
+<p style="text-align: justify;">Si han pasado m&aacute;s de 6 d&iacute;as, podr&aacute;s tramitar la baja desde <strong><a href="/wps/portal/importass/importass/Categorias/altas%2C+bajas+y+modificaciones/bajas+y+modificaciones/baja+de+empleo+de+hogar" >Baja en empleo de hogar</a></strong> hasta 30 d&iacute;as despu&eacute;s. Al haber comunicado la baja fuera de plazo, a efectos de cotizaci&oacute;n, se considerar&aacute; que la fecha fin de actividad ser&aacute; la fecha de la solicitud.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-6db1fa3f-e0b0-4a56-ad8f-ad58ae2e2c8f" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion6db1fa3f-e0b0-4a56-ad8f-ad58ae2e2c8f" id="IDControl6db1fa3f-e0b0-4a56-ad8f-ad58ae2e2c8f">
+              <span  itemprop="name">
+				&iquest;Qué motivos dan lugar a la solicitud de la baja en empleo de hogar? &iquest;Tengo que indemnizar al trabajador?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl6db1fa3f-e0b0-4a56-ad8f-ad58ae2e2c8f" id="IDregion6db1fa3f-e0b0-4a56-ad8f-ad58ae2e2c8f">
+              <div itemprop="text">
+				<p style="text-align: justify;">Al dar de baja a una persona empleada tienes que indicar cu&aacute;l es la causa de la baja. Los motivos de la baja pueden ser los siguientes:</p>
+<ul>
+<li>
+<p style="text-align: justify;"><strong>Dimisi&oacute;n o baja voluntaria del trabajador.</strong> Al tratarse de una baja voluntaria el empleador no tendr&aacute; que indemnizar a la persona trabajadora.</p>
+</li>
+<li>
+<p style="text-align: justify;"><strong>Baja no voluntaria por otras causas</strong>. Cuando la baja de la persona empleada de hogar deriva de alguna de las siguientes causas:</p>
+<ol style="list-style-type: lower-alpha;">
+<li style="text-align: justify;">Disminuci&oacute;n de los ingresos de la unidad familiar o incremento de sus gastos por circunstancia sobrevenida.</li>
+<li style="text-align: justify;">&nbsp;Modificaci&oacute;n sustancial de las necesidades de la unidad familiar que justifican que se prescinda de la persona trabajadora del hogar.</li>
+<li style="text-align: justify;">El comportamiento de la persona trabajadora que fundamente de manera razonable y proporcionada la p&eacute;rdida de confianza de la persona empleadora.</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>
+<p style="text-align: justify;"><strong>Baja despido disciplinario individual.</strong> Si la baja es consecuencia de un incumplimiento grave y culpable de sus obligaciones y as&iacute; queda justificado, como pudieran ser peque&ntilde;o robo, ausencia injustificada y otros, no tendr&aacute; derecho a indemnizaci&oacute;n.</p>
+</li>
+<li>
+<p style="text-align: justify;"><strong>Baja por no superar el periodo de prueba.</strong> El periodo de prueba al inicio de un nuevo contrato existe para que el empleador confirme que el trabajo realizado es como desea y el trabajador compruebe si es lo que esperaba. En este periodo de prueba tanto empleador como trabajador pueden finalizar su contrato sin necesidad de justificar motivo ni pagar indemnizaci&oacute;n.</p>
+</li>
+<li><strong>Baja fin contrato temporal o duraci&oacute;n determinada.</strong> Por agotamiento del plazo establecido entre empleador y trabajador. Si el contrato es por causa de sustituci&oacute;n, no tendr&aacute; derecho a indemnizaci&oacute;n.</li>
+<li>
+<p style="text-align: justify;"><strong>Baja por pase a situaci&oacute;n de pensionista</strong>. Esta causa se refiere a la adquisici&oacute;n de la condici&oacute;n de pensionista por jubilaci&oacute;n o incapacidad permanente del trabajador. Al tratarse de una baja voluntaria, el empleador no tendr&aacute; que indemnizar a la persona trabajadora.</p>
+</li>
+<li>
+<p style="text-align: justify;"><strong>Baja por fallecimiento</strong>. Esta causa se refiere al fallecimiento del trabajador. El empleador no tendr&aacute; que indemnizar por la persona trabajadora.</p>
+</li>
+<li style="text-align: justify;"><strong>Baja por pase a inactividad fijos discontinuos.</strong> Por finalizar el periodo para el que se contrat&oacute; a la persona empleada como fijo discontinuo.</li>
+</ul>
+<p style="text-align: justify;">Si la baja es por motivos injustificados o por fin de contrato temporal, la persona trabajadora tendr&aacute; derecho a indemnizaci&oacute;n. Si el motivo es justificado o el contrato temporal es por causa de sustituci&oacute;n, no tendr&aacute; derecho a indemnizaci&oacute;n.</p>
+<p style="text-align: justify;">Si fallece la persona empleadora, la persona trabajadora tendr&aacute; derecho al abono de una cantidad equivalente a un mes de salario con independencia de su antig&uuml;edad en el puesto.</p>
+<p style="text-align: justify;">El fallecimiento de la persona empleadora se tendr&aacute; que comunicar a trav&eacute;s del servicio <a href="/wps/portal/importass/importass/Categorias/altas%2C+bajas+y+modificaciones/bajas+y+modificaciones/baja+de+empleo+de+hogar" >Baja de empleo de hogar</a>, en el apartado<a href="/wps/portal/importass/importass/Categorias/altas%2C+bajas+y+modificaciones/bajas+y+modificaciones/baja+de+empleo+de+hogar/cd94207a-1302-4f67-84c1-963c78dcc5f5#:~:text=Si%20ha%20fallecido%20la%20persona%20empleadora" target="" title=""><strong></strong></a><a href="/wps/portal/importass/importass/Categorias/altas%2C+bajas+y+modificaciones/bajas+y+modificaciones/baja+de+empleo+de+hogar/cd94207a-1302-4f67-84c1-963c78dcc5f5#:~:text=Si%20ha%20fallecido%20la%20persona%20empleadora" target="" title=""><strong>"Si ha fallecido la persona empleadora"</strong></a>.</p>
+<p style="text-align: justify;">Adem&aacute;s, al dar de baja a una persona trabajadora, cualquiera que sea la causa de la baja e independientemente de la indemnizaci&oacute;n, tendr&aacute; derecho a un finiquito. Consulta m&aacute;s informaci&oacute;n sobre la finalizaci&oacute;n del contrato de trabajo en la <a href="https://www.mites.gob.es/es/Guia/texto/index.htm" target="_blank"  rel="noopener"><strong>gu&iacute;a laboral</strong></a> del Ministerio de Trabajo y Econom&iacute;a Social.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-74bbde6d-16f2-4115-89b8-7ddd50c8a81f" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion74bbde6d-16f2-4115-89b8-7ddd50c8a81f" id="IDControl74bbde6d-16f2-4115-89b8-7ddd50c8a81f">
+              <span  itemprop="name">
+				Me han despedido, &iquest;tengo derecho a una prestación por desempleo?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl74bbde6d-16f2-4115-89b8-7ddd50c8a81f" id="IDregion74bbde6d-16f2-4115-89b8-7ddd50c8a81f">
+              <div itemprop="text">
+				<p>Desde el 1 de octubre de 2022, el Sistema Especial para Empleados de Hogar incluye la cotización por desempleo. Por tanto, las personas trabajadoras de hogar sí tienen derecho a esta prestación, cuando cumplan los requisitos establecidos. Para más información sobre la prestación por desempleo, puedes consultar la página web del <a href="https://www.sepe.es/HomeSepe/Personas/distributiva-prestaciones/quiero-cobrar-el-paro/soy-persona-trabajadora-servicio-hogar.html" target="_blank" ><strong>Servicio Público de Empleo Estatal.</strong></a><br /></p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-5d08c94b-ad2e-4f71-b796-c6d0a35534cf" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion5d08c94b-ad2e-4f71-b796-c6d0a35534cf" id="IDControl5d08c94b-ad2e-4f71-b796-c6d0a35534cf">
+              <span  itemprop="name">
+				Si modifico mi cuenta bancaria, &iquest;cuándo me pasarán las cuotas a mi nueva cuenta?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl5d08c94b-ad2e-4f71-b796-c6d0a35534cf" id="IDregion5d08c94b-ad2e-4f71-b796-c6d0a35534cf">
+              <div itemprop="text">
+				<p>Depende del día del mes en el que modifiques la cuenta:</p>
+<ul>
+  <li>Si el cambio lo haces entre el día 1 y 10 del mes, la cuota de hogar se cargará en la nueva cuenta a finales de mes.</li>
+  <li>Si la modificas a partir del día 11, el cambio de cuenta tendrá efecto el mes siguiente.</li>
+</ul>
+<p>Ten en cuenta que, si en una misma provincia tienes varios trabajadores dados de alta como empleados de hogar, el cambio de cuenta afectará al pago de todas esas cuotas de hogar.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-42275ee3-660c-485d-bd84-9a1aecd2f855" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion42275ee3-660c-485d-bd84-9a1aecd2f855" id="IDControl42275ee3-660c-485d-bd84-9a1aecd2f855">
+              <span  itemprop="name">
+				Si acordamos un nuevo salario o jornada, &iquest;cuándo debo comunicarlo?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl42275ee3-660c-485d-bd84-9a1aecd2f855" id="IDregion42275ee3-660c-485d-bd84-9a1aecd2f855">
+              <div itemprop="text">
+				<p>Debes comunicar a la Seguridad Social cualquier modificaci&oacute;n de la jornada, o el salario en los 6 d&iacute;as naturales siguientes a aqu&eacute;l en que el cambio se produzca. Si han pasado m&aacute;s de 6 d&iacute;as, podr&aacute;s comunicar fuera de plazo la variaci&oacute;n a trav&eacute;s de <a href="/wps/portal/importass/importass/Categorias/altas%2C+bajas+y+modificaciones/bajas+y+modificaciones/modificacion_datos_laborales_personas_empleadas_hogar" ><strong>Modificaci&oacute;n de datos laborales en empleo de hogar</strong></a>.</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+  
+
+
+
+
+	
+	<li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+
+
+
+		
+		<div id="post-4db6ee4f-45e2-43b2-86ae-4cffefbb2a50" class="ss-collapse">
+			<a href="#" role="button" class="ss-collapse__btn ss-link" aria-expanded="false" aria-controls="IDregion4db6ee4f-45e2-43b2-86ae-4cffefbb2a50" id="IDControl4db6ee4f-45e2-43b2-86ae-4cffefbb2a50">
+              <span  itemprop="name">
+				Tengo acordado con el trabajador el abono del importe del Salario Mínimo Interprofesional, &iquest;qué tengo que hacer si cambia?
+      		</span>
+			</a>
+			<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  class="ss-collapse__content" role="region" aria-labelledby="IDControl4db6ee4f-45e2-43b2-86ae-4cffefbb2a50" id="IDregion4db6ee4f-45e2-43b2-86ae-4cffefbb2a50">
+              <div itemprop="text">
+				<p style="text-align: justify;">Deberás ajustar el salario de acuerdo al nuevo importe del Salario Mínimo Interprofesional y comunicarlo a la Seguridad Social a través de <a href="/wps/portal/importass/importass/Categorias/altas%2C+bajas+y+modificaciones/bajas+y+modificaciones/modificacion_datos_laborales_personas_empleadas_hogar" ><strong>Modificación de datos laborales en empleo de hogar</strong></a>. Ten en cuenta que el SMI se revisa anualmente.&nbsp;</p>
+               </div>
+			</div>
+		</div>
+
+
+
+	
+	</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+	 
+
+
+
+
+
+
+
+
+
+
+  
+  </ul>
+</section>
+</div>
+
+
+
+</div>
+
+<script>
+
+var nombreGuia ='Guía práctica del empleo en el hogar';
+var buttonGuia = document.getElementById('buttonFormularioGuia').attributes["aria-label"].value;
+document.getElementById('buttonFormularioGuia').attributes["aria-label"].value = buttonGuia + ' ' +nombreGuia; 
+var labelGuia = document.getElementById('labelFormularioGuia').innerHTML;  
+document.getElementById('labelFormularioGuia').innerHTML = labelGuia + nombreGuia;
+var spanGuia = document.getElementById('spanFormularioGuia').innerHTML;
+ document.getElementById('spanFormularioGuia').innerHTML = spanGuia + nombreGuia;
+  
+</script>
+        
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+</div>
+</section> </div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+    
+
+
+
+
+
+    
+<!-- Valoraciones -->
+<section id="encuestaPost" class="ss-pre-footer clearfix">
+    <div class="ss-content">
+        <div id="ratings-layer" class="ss-collapse">
+            <div class="ss-grid--ratings ss-grid ">
+                <h2 class="ss-h2">¿Te ha parecido útil esta página?</h2>
+                <div class="ss-buttons-group ss-aligned--left">
+                    <button type="button" class="ss-button ss-button--secondary ss-collapse__btn--ratings" aria-expanded="false" aria-controls="Encuesta" id="Control_Encuesta" >
+                        Valorar
+                    </button>
+                    <button type="button" class="ss-ratings__close ss-u-is-vishidden" id="Control_Cierre_Encuesta" >
+                            <span class="ss-u-is-vishidden">Ocultar Encuesta</span>
+                    </button>
+                </div>
+            </div>
+            <div class="ss-collapse__content ss-margin--top-component ss-padding--top-0" role="region" id="Encuesta" aria-labelledby="Control_Encuesta">
+                <form method="get" id="starsform" target="remain">
+                    <fieldset class="ss-form-item ss-margin--top-element">
+                        <legend class="ss-form-item__title">Puntúa la claridad y utilidad de la información del 1 al 5 *</legend>
+                        <div class="ss-classification ss-radio ">
+                            <input id="radio1" type="radio" name="estrellas" value="5">
+                            <label for="radio1"><!-- ★ ( &#9733; ) ★ -->
+                                <span class="ss-u-is-vishidden">Una estrella</span>
+                            </label>
+                            <input id="radio2" type="radio" name="estrellas" value="4">
+                            <label for="radio2"> <span class="ss-u-is-vishidden">Dos estrellas</span></label>
+                            <input id="radio3" type="radio" name="estrellas" value="3">
+                            <label for="radio3"><span class="ss-u-is-vishidden">Tres estrellas</span> </label>
+                            <input id="radio4" type="radio" name="estrellas" value="2">
+                            <label for="radio4"><span class="ss-u-is-vishidden">Cuatro estrellas</span> </label>
+                            <input id="radio5" type="radio" name="estrellas" value="1">
+                            <label for="radio5"><span class="ss-u-is-vishidden">Cinco estrellas</span> </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="ss-form-item ss-margin--top-element">
+                        <legend class="ss-form-item__title ">¿Has encontrado lo que buscabas? *</legend>
+                        <div class="ss-form-item__element">
+                            <div class="ss-radios">
+                                <div class="ss-radio">
+                                    <input type="radio" name="tramite" id="tramite1-si" value="si">
+                                    <label for="tramite1-si">Sí</label>
+                                </div>
+                                <div class="ss-radio">
+                                    <input type="radio" name="tramite" id="tramite2-no" value="no">
+                                    <label for="tramite2-no">No</label>
+                                </div>
+                                <div class="ss-radio">
+                                    <input type="radio" name="tramite" id="tramite3-no" value="no seguro">
+                                    <label for="tramite3-no">No estoy seguro</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                      
+                    
+                    <div class="ss-form-item ss-margin--top-element">
+                        <!--
+                        //No borrar, se descomentará en un futuro
+                        <label class="ss-form-item__title" for="be-better">¿Cómo podemos mejorar la página?</label>
+                            <div class="ss-form-item__element">
+                                <textarea class="ss-text-input" id="be-better" name="be-better" rows="5" cols="50"></textarea>   
+                            </div>
+                        -->
+                        <span>* Campos obligatorios</span>    
+                    </div>
+                    
+                    <div class="ss-buttons-group ss-aligned--left"> 
+                        <button type="submit" name="accion" value="CONTINUAR" class="ss-button" id="enviarcampos" disabled="disabled">
+                            Enviar valoración
+                        </button>
+                        <button type="button" id="ratings__close" class="ss-button ss-button--secondary" value="Cancelar">
+                            Cerrar
+                        </button>
+                    </div>                          
+                </form>
+            </div>
+        </div><iframe title="Posición de agradecimiento" name="remain" class="ss-u-is-hidden"></iframe>
+        <!-- Capa del cuadro de dialogo -->
+        <div id="gratitude-layer" class="ss-u-is-vishidden">
+            <div>
+                <p class="ss-h2">Muchas gracias por ayudarnos a mejorar</p>                                     
+            </div>
+        </div>
+    </div>
+</section>   
+
+
+
+
+</main>
+	
+		<!--  IMPORTASS_THEME FOOTER -->
+		
+<footer class="ss-footer clearfix">
+    <div class="ss-footer__categorized">
+        <div class="ss-content">            
+            <div class='ss-grid ss-grid--cols-md-4'><div class='ss-footer__escudo'>
+  <picture>
+    <source media='(min-width: 641px)' srcset='/ImportassThemeStatic/themes/Portal/images/importass/escudo-xl.png'>
+      <img src='/ImportassThemeStatic/themes/Portal/images/importass/escudo-xl.png' alt=''>
+  </picture>
+</div><nav id="tesoreriaServLinks" class="ss-footer__category-links" aria-label="Área de navegación a Servicios de la Tesorería">
+  <h2 class="ss-h3">Servicios de la Tesorería</h2>
+  <ul class="ss-list">
+<li><a href="/wps/portal/importass/IMPORTASS_Contenidos/Categorias/Vida+laboral+e+informes" class="ss-link"  aria-label="Ir a Vida laboral e informes para saber más">Vida laboral e informes</a></li><li><a href="/wps/portal/importass/IMPORTASS_Contenidos/Categorias/Altas%2C+bajas+y+modificaciones" class="ss-link"  aria-label="Ir a Altas, bajas y modificaciones para saber más">Altas, bajas y modificaciones</a></li><li><a href="/wps/portal/importass/IMPORTASS_Contenidos/Categorias/Consulta+de+pagos+y+deudas" class="ss-link"  aria-label="Ir a Consulta de pagos y deudas para saber más">Consulta de pagos y deudas</a></li><li><a href="/wps/portal/importass/IMPORTASS_Contenidos/Categorias/Datos+personales" class="ss-link"  aria-label="Ir a Datos personales para saber más">Datos personales</a></li>  </ul>
+</nav>
+<nav id="especialFooterLinks" class="ss-footer__category-links" aria-label="Área de navegación a Especial">
+  <h2 class="ss-h3">Especial sobre</h2>
+  <ul class="ss-list">
+<li><a href="/wps/portal/importass/IMPORTASS_Contenidos/Colectivos/Trabajo+Autonomo" class="ss-link" aria-label="Ir a Trabajo Autónomo">Trabajo Autónomo</a></li>
+
+<li><a href="/wps/portal/importass/IMPORTASS_Contenidos/Colectivos/Empleo+del+hogar" class="ss-link" aria-label="Ir a Empleo de hogar">Empleo de hogar</a></li>
+
+<li><a href="/wps/portal/importass/IMPORTASS_Contenidos/Colectivos/Convenios+Especiales" class="ss-link" aria-label="Ir a Convenios especiales">Convenios especiales</a></li>
+
+<li><a href="/wps/portal/importass/IMPORTASS_Contenidos/Colectivos/Artistas" class="ss-link" aria-label="Ir a Artistas">Artistas</a></li>
+
+<li><a href="/wps/portal/importass/IMPORTASS_Contenidos/Colectivos/Alumnos" class="ss-link" aria-label="Ir a Alumnos en prácticas">Alumnos en prácticas</a></li>
+
+  <li>
+<a href="/wps/portal/importass/IMPORTASS_Contenidos/otras_secciones/clave" class="ss-link"  aria-label="Ir a Cl@ve">Cl@ve</a></li><li>
+<a href="/wps/portal/importass/IMPORTASS_Contenidos/otras_secciones/Gestiona" class="ss-link"  aria-label="Ir a Gestionar tus trámites nunca fue tan fácil">Gestionar tus trámites nunca fue tan fácil</a></li><li>
+<a href="/wps/portal/importass/IMPORTASS_Contenidos/otras_secciones/Regularizacion" class="ss-link"  aria-label="Ir a Regularización anual de cuotas de Trabajo Autónomo">Regularización anual de cuotas de Trabajo Autónomo</a></li></ul>
+</nav></div>
+        </div>
+    </div>
+    <div class="ss-footer__general">
+        <div class="ss-wrapper">
+            <nav class="ss-footer__general-links" aria-label="Área de navegación General">
+                <ul class="ss-list ss-grid">
+                	
+                    <li><a href="/wps/portal/importass/importass/ayuda" class="ss-link" aria-label="Ir a Ayuda para saber más">Ayuda</a></li>
+                    
+                    <li><a href="/wps/portal/importass/importass/contacto" class="ss-link" aria-label="Ir a Contacto para saber más">Contacto</a></li>
+                    
+                    <li><a href="/wps/portal/importass/importass/mapaWeb" class="ss-link" aria-label="Ir a Mapa web para saber más">Mapa web</a></li>
+                    
+                    <li><a href="/wps/portal/importass/importass/avisoLegal" class="ss-link" aria-label="Ir a Aviso legal para saber más">Aviso legal</a></li>
+                    
+                    <li><a href="/wps/portal/importass/importass/accesibilidad" class="ss-link" aria-label="Ir a Accesibilidad para saber más">Accesibilidad</a></li>
+                    
+                    <li><a href="/wps/portal/importass/importass/PoliticaCookies" class="ss-link" aria-label="Ir a Política de Cookies para saber más">Política de Cookies</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="ss-footer__copyright">
+                <small>Copyright © Seguridad Social <span id="yearCopyright"></span>. <span>Todos los derechos reservados</span></small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <script>
+   	if(document.getElementsByTagName("h1") && document.getElementsByTagName("h1").length > 0){
+   		document.title = document.getElementsByTagName("h1")[0].innerText + ". Seguridad Social | Gobierno de España, UE";
+	}
+    </script>
+
+
+
+<script> 
+    window.addEventListener("load", function(e){
+    			document.querySelectorAll( 'a[href^="http"]:not([href*="' + new URL (document.URL).origin + '"]):not([rel])').forEach(a => a.setAttribute( 'rel', 'noopener noreferrer nofollow')) ;
+    			document.querySelectorAll("section.a11yRegionTarget").forEach((item) => { item.removeAttribute("aria-label"); });
+    			document.querySelectorAll("header.wpthemeControlHeader").forEach((item) => { item.removeAttribute("role"); });
+				document.querySelectorAll("header.wpthemeControlHeader").forEach((item) => { item.removeAttribute("aria-label"); });
+    			} ); 
+
+    if(leerCookieImportass("canal")=='app'){
+   	document.getElementsByTagName("body")[0].classList.add("app-tgss");
+   }
+</script><!--  IMPORTASS_THEME SCRIPT  -->
+		<!-- This is responsible for bootstrapping the configuration for the javascript framework. 
+	        This is located here instead of the head section to improve client performance. -->
+		<div class="wpthemeComplementaryContent"
+			id="wpthemeComplementaryContent" role="region" tabindex="-1"
+			aria-labelledby="wpthemeComplementaryContentText">
+			<span class="wpthemeAltText" id="wpthemeComplementaryContentText">Contenido complementario</span> <script type="text/javascript" src="/wps/contenthandler/importass/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/mashup/ra:collection?themeID=ZJ_J0M2HA42P8ENC0QHU8J3A320H4&amp;locale=es&amp;mime-type=text%2Fjavascript&amp;lm=1779957888000&amp;entry=post_hasmodal__1.0.0%3Aconfig_js&amp;entry=post_coberturas__1.0.0%3Aconfig_js&amp;entry=post_datalayer__1.0.0%3Aconfig_js&amp;entry=wp_high_contrast__0.0%3Aconfig_js&amp;entry=post_estadisticas__1.0.0%3Aconfig_js&amp;entry=post_add__1.0.0%3Aconfig_js&amp;entry=wp_state_page_modes__0.0%3Aconfig_js&amp;entry=post_datepicker__1.0.0%3Aconfig_js&amp;entry=post_scrollbutton__1.0.0%3Aconfig_js&amp;entry=wp_theme_skin_region__0.0%3Aconfig_js&amp;entry=post_locale__1.0.0%3Aconfig_js&amp;entry=post_valoracion__1.0.0%3Aconfig_js&amp;entry=wp_status_bar__0.0%3Aconfig_js&amp;entry=post_estilos_principales__1.0.0%3Aconfig_js&amp;entry=post_modernizr__1.0.0%3Aconfig_js&amp;entry=post_avisos_comunicaciones__1.0.0%3Aconfig_js&amp;entry=post_autocomplete__1.0.0%3Aconfig_js&amp;entry=post_slick__1.0.0%3Aconfig_js"></script></div>
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="display:none;">
+	<span id="uuidAreaSitio">9eaf117e-e582-4287-9ff0-10a41fa58b4a</span>
+	<span id="localizacion"></span>
+	<span id="device-characteristics"></span>
+	<span id="idSesion">0zKMuIpWy2wUBsSWMegGa0n</span>
+	<span id="nivelCredencial">0</span>
+</div></body>
+</html>

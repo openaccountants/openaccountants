@@ -1,0 +1,16 @@
+{
+  "slug": "es-rental-income",
+  "guide_sha256": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+  "ledger_sha256": "a27636f11456163abcca7726f793615ba1093b70dc1366218c36511645247c77",
+  "rows": 236,
+  "old_units": 476,
+  "findings": [
+    "S-L05",
+    "S-L06"
+  ],
+  "Guide_edited": false,
+  "read_date": "2026-10-28",
+  "source_note": "Only exact saved native reader scopes were re-read; no source acquisition or broad research was required.",
+  "history": "ledgers/spain-2026-evidence/es-rental-income/history/pre-S-L05-S-L07-caa48a2b",
+  "assertions": 178
+}

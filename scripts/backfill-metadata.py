@@ -14,7 +14,7 @@ What gets backfilled (missing keys only):
                 `git log --name-only` pass over history (no per-file
                 subprocesses). Inserted as `last_updated: YYYY-MM-DD`.
 
-  tier          `tier: 2` (source-cited draft) by default. `tier: 1` ONLY
+  tier          `tier: 2` (sourced from the law) by default. `tier: 1` ONLY
                 when the frontmatter already records a real review:
                 `reviewed_by` non-empty, or `verified_by` set to something
                 other than the unreviewed markers (pending/none/tbd/...).

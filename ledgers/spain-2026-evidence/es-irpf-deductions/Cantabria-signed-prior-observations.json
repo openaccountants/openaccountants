@@ -1,0 +1,185 @@
+{
+  "official_application": "RentaWEBOpen2025 version1.19OPEN",
+  "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+  "tab": "Brave1623103262",
+  "observed_on": "2026-10-28",
+  "profile": {
+    "fictional_name": "PRUEBA SIMULACION",
+    "fictional_NIF": "12345678Z",
+    "DOB": "1995-01-01",
+    "filing": "individual",
+    "region": "Cantabria",
+    "eligible_named_tenancy": "Assumed all substantive eligibility/receipt/noncash conditions, no competing same-home relief."
+  },
+  "imported_file": "original-fictional-input.ses",
+  "imported_sha256": "638ff3a7608d94d96e48df4b9003e2f6a76e6423c160e0c6070ce326e9ef0c64",
+  "baseline": {
+    "employment_net": 25000,
+    "bank_interest": 10000,
+    "general_BI": 25000,
+    "savings_BI": 10000,
+    "pension_reduction": 1500,
+    "general_BL": 23500,
+    "minimum": 5550,
+    "regional_quota": "2865.75",
+    "rent": "3500.01",
+    "credit": 300
+  },
+  "own_observed_states": [
+    {
+      "id": "E-addition",
+      "change": "General-base exempt-progressivity box0525=10000",
+      "general_BI": 25000,
+      "savings_BI": 10000,
+      "active_exempt_input": 10000,
+      "regional_quota": "3321.20",
+      "rent": "3500.01",
+      "Cantabria0946": 300
+    },
+    {
+      "id": "E-equality",
+      "active_E": 10000,
+      "rent": 3500,
+      "Cantabria0946": "blank; no generated credit",
+      "input_reopened_verified": true
+    },
+    {
+      "id": "E-one-cent",
+      "active_E": 10000,
+      "rent": "3500.01",
+      "Cantabria0946": 300
+    },
+    {
+      "id": "L-addition",
+      "active_E": 10000,
+      "listed_share_sale": 1000,
+      "listed_share_acquisition": 9000,
+      "homogeneous_reacquisition": false,
+      "computed_loss": 8000,
+      "general_BI": 25000,
+      "savings_BI": 7500,
+      "regional_quota": "3058.70",
+      "rent": "3500.01",
+      "credit": 300
+    },
+    {
+      "id": "L-equality",
+      "active_E": 10000,
+      "loss": 8000,
+      "rent": 3250,
+      "Cantabria0946": "blank; no generated credit",
+      "input_reopened_verified": true
+    },
+    {
+      "id": "L-one-cent",
+      "active_E": 10000,
+      "loss": 8000,
+      "rent": "3250.01",
+      "Cantabria0946": 300,
+      "settled_AX_and_screenshot_verified": true
+    }
+  ],
+  "new_observed_states_count": 6,
+  "original_import_baseline_read_separately": true,
+  "new_downloaded_sessions": 0,
+  "login_filing_payment": false,
+  "bound_evidence": [
+    {
+      "file": "baseline-summary-AX.txt",
+      "sha256": "3af4d7ea51b9e8b0c26f69563b452d1fed89ceaaf1ed21f88577e799a9fa23ba",
+      "bytes": 14634
+    },
+    {
+      "file": "exempt10000-credit-AX.txt",
+      "sha256": "4829cee795710bfdd8883e550a468ec324b3b691ac850b8be6f93ac45557a530",
+      "bytes": 39153
+    },
+    {
+      "file": "exempt10000-input-AX.txt",
+      "sha256": "f38c07d463192340a4033ce3bed505b9976e7c9bfc9bc63dcfd9084581432368",
+      "bytes": 10466
+    },
+    {
+      "file": "exempt10000-loss8000-summary-AX.txt",
+      "sha256": "a7da65008f704dc0fbb4924df7a9c53bdb87593f954ed48114b9a7df69485e5d",
+      "bytes": 15341
+    },
+    {
+      "file": "exempt10000-rent3500-credit-AX.txt",
+      "sha256": "48c9ea8204d69b523059dd42539fa522b8c381067373bee0299520748ecb91fd",
+      "bytes": 38828
+    },
+    {
+      "file": "exempt10000-rent3500-reopened-input-AX.txt",
+      "sha256": "86c1c76d77615260109681f5b8ec5d72939fab420caffc5de256640f4ceead9b",
+      "bytes": 2806
+    },
+    {
+      "file": "exempt10000-rent3500p01-credit-AX.txt",
+      "sha256": "38f98acb10223918993f0970392057560f8ff06fdf5a906857db49ab68f7b09f",
+      "bytes": 38942
+    },
+    {
+      "file": "exempt10000-summary-AX.txt",
+      "sha256": "e402c350a9294ab5a6dd22d48bf61321e7e188b0baccd8465e26cd8f0f7555f3",
+      "bytes": 14958
+    },
+    {
+      "file": "final-loss8000-rent3250p01-credit-AX.txt",
+      "sha256": "2411f052755f939aece3e7f27ab23c232958ff3da7517967e21b459e1c7d1c4e",
+      "bytes": 38942
+    },
+    {
+      "file": "final-loss8000-rent3250p01-credit.png",
+      "sha256": "3f86acad0e7912b646ce9c9f8a6a6472a2ff1885998bd72eac13cd4f354ba43d",
+      "bytes": 132584
+    },
+    {
+      "file": "loss8000-input-AX.txt",
+      "sha256": "19b8c529d86ae57fc4058eba35c1484bb3de2bfb957ad6e92e85f1efea2620f1",
+      "bytes": 4021
+    },
+    {
+      "file": "loss8000-rent3250-credit-AX.txt",
+      "sha256": "e397801c40d89c923c309aaaed399a329819123e3d1cb446e65379cb6c330f31",
+      "bytes": 38828
+    },
+    {
+      "file": "loss8000-rent3250-input-AX.txt",
+      "sha256": "508cdddb698de181a61ad8b15e0245add683595bf2206196efcc1d5019fe8241",
+      "bytes": 2800
+    },
+    {
+      "file": "loss8000-rent3250-reopened-AX.txt",
+      "sha256": "37f4996e97038189d68edeaa17eee75fed75ea1fa3384743be635c10b092215b",
+      "bytes": 2806
+    },
+    {
+      "file": "loss8000-rent3250p01-credit-AX.txt",
+      "sha256": "875576dc5d399037dbf4ff890d0dc6352378c17c6cc702ca45217c8ec70aa10a",
+      "bytes": 38942
+    },
+    {
+      "file": "loss8000-rent3250p01-input.png",
+      "sha256": "9e4a8d66d0d265f23a7c90d0895dcdc0873c20fb9480453f0900a823d74590f7",
+      "bytes": 117405
+    },
+    {
+      "file": "loss8000-rent3250p01-reopened-input-AX.txt",
+      "sha256": "4ff77b8771951c5bcb667d0223308bb7066cea1a63cfc1f1336b5beceeaba1d5",
+      "bytes": 2806
+    },
+    {
+      "file": "loss8000-shares-AX.txt",
+      "sha256": "e8b7d43e0661b03f3a88bb8dc7de4d5c4817f54a0f957d072bc73b288427030b",
+      "bytes": 16277
+    }
+  ],
+  "limitations": [
+    "2025implementation for unchanged2026comparison, not a2026campaign observation.",
+    "Not every exempt category or signed/current/prior-offset population tested.",
+    "A screenshot initially captured the reopened input dialog, so it was retained and renamed input.png; final settled300credit is independently captured in final-...credit.png and actual AX.",
+    "Intermediate UI actions sometimes returned a stale/detached tree; fresh actual observations and reopened values superseded them. No cached RESUMEN or serialized value attributes are used as result proof.",
+    "Shared-browser agents used separate tabs; only this own fictional session was changed."
+  ]
+}

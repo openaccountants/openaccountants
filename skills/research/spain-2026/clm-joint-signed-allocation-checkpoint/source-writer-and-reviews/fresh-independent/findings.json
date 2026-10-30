@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS for bounded delta only",
+  "actionable_findings": [],
+  "ordinary_remaining": [
+    "Both-entitled signed aggregation and exact intermediate cent rounding",
+    "Other CLM joint populations outside supplied positive N above positive G/positive B branch",
+    "All inherited expressly listed regional/base/allocation reservations"
+  ],
+  "country_complete": false,
+  "accountant_attestation": false
+}

@@ -1,0 +1,369 @@
+{
+  "core": [
+    {
+      "file": "snapshot/skills/international/armenia/am-transfer-pricing.md",
+      "name": "Armenia CUP revenue bridge",
+      "independent_values": {
+        "charged_revenue": "100000000",
+        "supported_revenue": "120000000",
+        "positive_revenue_difference": "20000000"
+      },
+      "matches": {
+        "charged_revenue": true,
+        "supported_revenue": true,
+        "positive_revenue_difference": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/am-transfer-pricing.md",
+      "name": "Armenia statutory eight observation range and net margin",
+      "independent_values": {
+        "lower_bound": "0.035",
+        "upper_bound": "0.075",
+        "median": "0.055",
+        "profit_difference": "3500000.000"
+      },
+      "matches": {
+        "lower_bound": true,
+        "upper_bound": true,
+        "median": true,
+        "profit_difference": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/am-cross-border.md",
+      "name": "Armenia corporate royalty gross withholding",
+      "independent_values": {
+        "withholding": "1000000",
+        "recipient_net": "9000000.0"
+      },
+      "matches": {
+        "withholding": true,
+        "recipient_net": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/am-cross-border.md",
+      "name": "Armenia foreign object tax credit limitation",
+      "independent_values": {
+        "total_armenian_tax": "9000000.00",
+        "deductible_credit": "5400000.00",
+        "armenian_balance": "3600000.00",
+        "foreign_tax_above_object_cap": "1600000"
+      },
+      "matches": {
+        "total_armenian_tax": true,
+        "deductible_credit": true,
+        "armenian_balance": true,
+        "foreign_tax_above_object_cap": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/armenia-income-tax.md",
+      "name": "Armenia ordinary salary PIT only",
+      "independent_values": {
+        "pit": "200000"
+      },
+      "matches": {
+        "pit": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/armenia-income-tax.md",
+      "name": "Armenia annual rental excess and prior withholding",
+      "independent_values": {
+        "excess": "12000000",
+        "additional_pit": "1200000",
+        "total_rent_pit": "8400000",
+        "remaining_rent_pit": "1200000"
+      },
+      "matches": {
+        "excess": true,
+        "additional_pit": true,
+        "total_rent_pit": true,
+        "remaining_rent_pit": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/armenia-payroll.md",
+      "name": "Armenia ordinary salary 300000 net due",
+      "independent_values": {
+        "pit": "60000",
+        "pension": "15000",
+        "net_due": "219200"
+      },
+      "matches": {
+        "pit": true,
+        "pension": true,
+        "net_due": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/armenia-payroll.md",
+      "name": "Armenia health entry following month salary comparison",
+      "independent_values": {
+        "net_before_entry": "186500.00",
+        "net_after_entry": "181700.00"
+      },
+      "matches": {
+        "net_before_entry": true,
+        "net_after_entry": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/am-corporate-income-tax.md",
+      "name": "Armenia ordinary corporate book to tax bridge",
+      "independent_values": {
+        "current_tax_result": "29500000",
+        "taxable_profit": "24500000",
+        "annual_tax": "4410000.00",
+        "remaining_payment": "1410000"
+      },
+      "matches": {
+        "current_tax_result": true,
+        "taxable_profit": true,
+        "annual_tax": true,
+        "remaining_payment": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/am-corporate-income-tax.md",
+      "name": "Armenia loss aging and oldest first use",
+      "independent_values": {
+        "use_2021": "8000000",
+        "use_2023": "2000000",
+        "remaining_loss_2023": "4000000",
+        "taxable_profit": "0"
+      },
+      "matches": {
+        "use_2021": true,
+        "use_2023": true,
+        "remaining_loss_2023": true,
+        "taxable_profit": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/armenia-vat.md",
+      "name": "Armenia ordinary VAT and separate negative balance",
+      "independent_values": {
+        "output": "1000000",
+        "allowed_input": "800000",
+        "current_payable": "200000",
+        "zero_rated_only_refundable_balance": "800000"
+      },
+      "matches": {
+        "output": true,
+        "allowed_input": true,
+        "current_payable": true,
+        "zero_rated_only_refundable_balance": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/armenia-vat.md",
+      "name": "Armenia import base and later paid recovery",
+      "independent_values": {
+        "import_base": "11000000",
+        "import_vat": "2200000",
+        "september_recovery": "0",
+        "october_recovery_after_full_payment": "2200000"
+      },
+      "matches": {
+        "import_base": true,
+        "import_vat": true,
+        "september_recovery": true,
+        "october_recovery_after_full_payment": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/armenia-social-contributions.md",
+      "name": "Armenia ordinary mandatory pension two limbs",
+      "independent_values": {
+        "lower_payment": "15000",
+        "upper_payment": "35000"
+      },
+      "matches": {
+        "lower_payment": true,
+        "upper_payment": true
+      }
+    },
+    {
+      "file": "snapshot/skills/international/armenia/armenia-social-contributions.md",
+      "name": "Armenia continuing health payer lower salary funding",
+      "independent_values": {
+        "full_monthly_funding": "10800"
+      },
+      "matches": {
+        "full_monthly_funding": true
+      }
+    }
+  ],
+  "new_controls": [
+    {
+      "name": "management cap ordinary and registration",
+      "law": "TaxCode118",
+      "inputs": {
+        "gross_income": 20000000,
+        "expense": 3000000
+      },
+      "computed": {
+        "ordinary_allowed": "400000.00",
+        "registration_allowed": "2000000"
+      }
+    },
+    {
+      "name": "social reimbursement nonduplication",
+      "law": "1067-N8–9;956-N3–6",
+      "inputs": {
+        "health": 70000,
+        "education": 80000,
+        "total_PIT": 120000,
+        "already_refunded": 90000,
+        "annual_payable": 20000
+      },
+      "computed": {
+        "eligible_expenses": "100000",
+        "available_tax": "30000",
+        "reimbursable": "30000",
+        "net_annual_payable": "0",
+        "cash_reimbursement": "10000"
+      }
+    },
+    {
+      "name": "mortgage loan-date control",
+      "law": "Code160(2);445(1)(5);oldPIT8.2;1321-N8.1",
+      "inputs": {
+        "interest": 1800000,
+        "settled_wage_PIT": 2000000
+      },
+      "computed": {
+        "2019_loan": "1500000",
+        "2025_loan": "750000",
+        "2016_qualifying_legacy_loan": "1800000"
+      }
+    },
+    {
+      "name": "reinvestment refund is invested amount bounded by tax",
+      "law": "1371-N2;Code159(4)",
+      "inputs": {
+        "tax_paid": 50000,
+        "eligible_investment": 10000
+      },
+      "computed": {
+        "refund": "10000"
+      }
+    },
+    {
+      "name": "multi-employer pension after monthly refunds",
+      "law": "Pension6;181-N/126-N13",
+      "inputs": {
+        "each_salary": 1000000,
+        "employers": 2
+      },
+      "computed": {
+        "each_payment": "75000.0",
+        "paid_total": "150000",
+        "monthly_excess": "62500",
+        "annual_paid_after_monthly_refunds": "1050000",
+        "extra_annual_refund": "0"
+      }
+    },
+    {
+      "name": "minimum qualifying basic pay grossup",
+      "law": "MinWage1/4;Code150;Pension6;Stamp12",
+      "inputs": {
+        "net_minimum": 75000,
+        "ordinary_pension": ".05",
+        "stamp": 1000,
+        "health_if_entered": 4800
+      },
+      "computed": {
+        "gross_without_health": "101334",
+        "gross_entered_health": "107734"
+      }
+    },
+    {
+      "name": "benefit caps applied to correct stage",
+      "law": "Benefits22(1)–(6)/(15)–(19)",
+      "inputs": {
+        "M": "90000.00",
+        "average": 2000000,
+        "sickness_days": 10,
+        "maternity_days": 140
+      },
+      "computed": {
+        "employee_sickness_monthly_base": "900000.00",
+        "employee_sickness_gross": "296052.6315789473684210526316",
+        "employer_first7": "207236.8421052631578947368421",
+        "state_days8_to10": "88815.78947368421052631578948",
+        "employed_maternity_gross": "6217105.263157894736842105264",
+        "selfemployed_sickness_gross": "148026.3157894736842105263158"
+      }
+    },
+    {
+      "name": "benefit floor comparison precedes percentage",
+      "law": "Benefits22(6)/(15);1024-NAnnex5(17)",
+      "inputs": {
+        "M": "90000.00"
+      },
+      "computed": {
+        "A40000_sickness_base": "45000.00",
+        "A50000_sickness_base": "40000.0",
+        "A50000_10day_benefit": "13157.89473684210526315789474"
+      }
+    },
+    {
+      "name": "leave and severance tax classes",
+      "law": "Labour129/195;Code147(1)(1)/(12);joint416list1(2)",
+      "inputs": {
+        "monthly_average": 210000,
+        "unused_days": 10
+      },
+      "computed": {
+        "daily_average": "10000",
+        "unused_leave_gross": "100000",
+        "unused_leave_PIT": "20000.0",
+        "unused_leave_ordinary_pension": "5000.00",
+        "statutory_one_month_severance": "210000",
+        "statutory_severance_PIT": "0",
+        "statutory_severance_pension": "0"
+      }
+    },
+    {
+      "name": "turnover floor unused carry then exit",
+      "law": "Code258/264",
+      "inputs": {
+        "trade_base": 5000000,
+        "eligible_cost": 5000000
+      },
+      "computed": {
+        "gross_tax": "500000.0",
+        "reduction": "475000.000",
+        "floor": "50000.00",
+        "tax_payable": "50000",
+        "carry": "25000",
+        "exit_deduction": "250000"
+      }
+    },
+    {
+      "name": "TP tax adjustment into loss",
+      "law": "Code105/364;1032-N",
+      "inputs": {
+        "original_loss": 5000000
+      },
+      "computed": {
+        "3m_income_adjustment_tax": "0.00",
+        "remaining_loss": "2000000",
+        "8m_income_adjustment_tax": "540000.00"
+      }
+    },
+    {
+      "name": "strict gates equality",
+      "law": "Code363(6)/375/376",
+      "inputs": {},
+      "computed": {
+        "200m_not_exceeded": true,
+        "750m_not_exceeded": true
+      }
+    }
+  ]
+}

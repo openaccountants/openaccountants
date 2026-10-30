@@ -1,0 +1,239 @@
+Browser tab: 1, Title: "Consultas de la D.G. Tributos: Buscador", URL: "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V3625-16".
+1 AXWebArea Consultas de la D.G. Tributos: Buscador, URL: petete.tributos.hacienda.gob.es/consultas/?num_consulta=V3625-16
+	2 container page
+		3 container header_content
+			4 image Description: Logo Ministerio de Hacienda y Funci�n P�blica, Help: Logo Ministerio de Hacienda y Función Pública
+			5 container
+				6 text SECRETARÍA DE ESTADO DE HACIENDA
+				7 text DIRECCIÓN GENERAL DE TRIBUTOS
+				8 text Doctrina Tributaria - Consultas Tributarias 1997-2026
+		9 heading BUSCADOR, Value: 1
+			10 text BUSCADOR
+		11 container knosys_form
+			12 heading Formulario de consulta, Value: 2
+				13 text Formulario de consulta
+			14 link Description: Ayuda general del buscador, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/ayudaTributos.html
+			15 container search
+				16 container Mostrar
+					17 text Mostrar
+					18 container
+						19 checkbox (settable, integer) Description: Consultas generales, Value: 0, ID: generales
+						20 text (actualizada a 30/09/2026)
+					21 container
+						22 checkbox (settable, integer) Description: Consultas vinculantes, Value: 1, ID: vinculantes
+						23 text (actualizada a 30/09/2026)
+				24 container Filtro de búsqueda
+					25 text Filtro de búsqueda
+					26 container
+						27 link Description: Ayuda del buscador para número de consulta, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/numConsulta.html
+						28 text  Nº de consulta *
+						29 text field (settable) Ayuda del buscador para número de consulta Nº de consulta *, Value: V3625-16, ID: VLCMP_1
+						30 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_1, Secondary Actions: Expand
+							31 menu
+								32 (selected) Y
+								33 O
+								34 NO
+					35 container
+						36 text Fecha salida desde
+						37 text field (settable) Fecha salida desde, ID: dateIni_2
+						38 button Description: Seleccionar fecha de inicio, ID: btnDateIni_2
+						39 text Hasta
+						40 text field (disabled) Hasta, ID: dateEnd_2
+						41 button (disabled) Description: Seleccionar fecha de fin, ID: btnDateEnd_2
+						42 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_2, Secondary Actions: Expand
+							43 menu
+								44 (selected) Y
+								45 O
+								46 NO
+					47 container
+						48 link Description: Ayuda del buscador para normativa, Help: Normativa, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/normativa.html
+						49 text  Normativa
+						50 text field (settable) Ayuda del buscador para normativa Normativa, ID: VLCMP_3
+						51 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_3, Secondary Actions: Expand
+							52 menu
+								53 (selected) Y
+								54 O
+								55 NO
+					56 container
+						57 text Cuestión planteada
+						58 text field (settable) Cuestión planteada, ID: VLCMP_4
+						59 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_4, Secondary Actions: Expand
+							60 menu
+								61 (selected) Y
+								62 O
+								63 NO
+					64 container
+						65 text Descripción de hechos
+						66 text field (settable) Descripción de hechos, ID: VLCMP_5
+						67 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_5, Secondary Actions: Expand
+							68 menu
+								69 (selected) Y
+								70 O
+								71 NO
+					72 container
+						73 text Texto libre
+						74 text field (settable) Texto libre, ID: VLCMP_6
+						75 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_6, Secondary Actions: Expand
+							76 menu
+								77 (selected) Y
+								78 O
+								79 NO
+					80 container
+						81 text Criterio de interés
+						82 text (a partir de 01-01-2022)
+						83 checkbox (settable, integer) Description: Criterio de interés (a partir de 01-01-2022), Value: 0, ID: VLCMP_7
+				84 container Ordenación
+					85 text Ordenación
+					86 container
+						87 text Campo de ordenación
+						88 pop up button (collapsed, settable) Campo de ordenación, Value: Nº de consulta, ID: cmpOrder, Secondary Actions: Expand
+							89 menu
+								90 (selected) Nº de consulta
+								91 Órgano
+								92 Fecha salida
+						93 pop up button (collapsed, settable) Description: Operador, Value: Ascendente, ID: dirOrder, Secondary Actions: Expand
+							94 menu
+								95 (selected) Ascendente
+								96 Descendente
+				97 text *  0006-26 a 4999-26 Números de consulta sin contenido por cambio de procedimiento y numeración para consultas generales
+				98 text *  V1690-26 a V4999-26 Números de consulta sin contenido por cambio de procedimiento y numeración para consultas vinculantes
+				99 container
+					100 button Buscar
+					101 button Borrar
+		112 container tabs
+			113 heading Resultados, Value: 2
+				114 text Resultados
+			115 tab group
+				116 tab (selected, expanded, settable, boolean) Description: Consultas vinculantes (1 resultados), ID: tab-2, Secondary Actions: Collapse, Value: 1
+Consultas vinculantes
+(1 resultados)
+			117 container Description: Consultas vinculantes (1 resultados), ID: tabs-2
+				118 container results2
+					119 container
+						120 text  Página 
+						121 text field (settable) Description: Introduzca un número de página y pulse INTRO, Value: 1, ID: current_page
+						122 text  de 
+						123 text 1
+					124 heading Documentos encontrados, Value: 3
+						125 text Documentos encontrados
+					126 table
+						127 row
+							128 cell
+								129 text Nº de consulta, Descripción de hechos, Cuestión planteada
+						130 row
+							131 cell doc_7571
+								132 heading V3625-16, Value: 4
+									133 text V3625-16
+								134 text El consultante se dedica al minado de Bitcoins obteniendo como contraprestación por tal labor una comisión y un numero de Bitcoins.
+								135 text Sujeción al Impuesto sobre el Valor Añadido de dicha actividad. Derecho a la deducción.
+				136 container document2
+					137 container
+						138 text  Documento 1 de 1 
+						139 link Description: Copiar enlace al documento, Value: petete.tributos.hacienda.gob.es/consultas/docLink.vm
+						140 link Description: Imprimir documento, Value: javascript:void(0);
+					141 heading Documento seleccionado, Value: 3
+						142 text Documento seleccionado
+					143 table Documento seleccionado
+						144 row
+							145 cell
+								146 text Nº de consulta
+							147 cell
+								148 text V3625-16
+						149 row
+							150 cell
+								151 text Órgano
+							152 cell
+								153 text SG de Impuestos sobre el Consumo
+						154 row
+							155 cell
+								156 text Fecha salida
+							157 cell
+								158 text 31/08/2016
+						159 row
+							160 cell
+								161 text Normativa
+							162 cell
+								163 text Ley 37/1992 art. 20-Uno-18 h) y l)
+						164 row
+							165 cell
+								166 text Descripción de hechos
+							167 cell
+								168 text El consultante se dedica al minado de Bitcoins obteniendo como contraprestación por tal labor una comisión y un numero de Bitcoins.
+						169 row
+							170 cell
+								171 text Cuestión planteada
+							172 cell
+								173 text Sujeción al Impuesto sobre el Valor Añadido de dicha actividad. Derecho a la deducción.
+						174 row
+							175 cell
+								176 text Contestación completa
+							177 cell
+								178 text 1.- De conformidad con el artículo 4 de la Ley 37/1992, de 28 de diciembre, del Impuesto sobre el Valor Añadido (BOE del 29 de diciembre):
+								179 text “Uno. Estarán sujetas al impuesto las entregas de bienes y prestaciones de servicios realizadas en el ámbito espacial del impuesto por empresarios o profesionales a título oneroso, con carácter habitual u ocasional, en el desarrollo de su actividad empresarial o profesional, incluso si se efectúan en favor de los propios socios, asociados, miembros o partícipes de las entidades que las realicen.
+								180 text (…).”.
+								181 text Adicionalmente, el artículo 5 del mismo texto legal señala que:
+								182 text “Uno. A los efectos de lo dispuesto en esta Ley, se reputarán empresarios o profesionales:
+								183 text a) Las personas o entidades que realicen las actividades empresariales o profesionales definidas en el apartado siguiente de este artículo.
+								184 text No obstante, no tendrán la consideración de empresarios o profesionales quienes realicen exclusivamente entregas de bienes o prestaciones de servicios a título gratuito, sin perjuicio de lo establecido en la letra siguiente.
+								185 text (…)
+								186 text Dos. Son actividades empresariales o profesionales las que impliquen la ordenación por cuenta propia de factores de producción materiales y humanos o de uno de ellos, con la finalidad de intervenir en la producción o distribución de bienes o servicios.
+								187 text En particular, tienen esta consideración las actividades extractivas, de fabricación, comercio y prestación de servicios, incluidas las de artesanía, agrícolas, forestales, ganaderas, pesqueras, de construcción, mineras y el ejercicio de profesiones liberales y artísticas.
+								188 text (…).”.
+								189 text De conformidad con los preceptos anteriores, de aplicación general, el consultante tendrá la consideración de empresario o profesional en la medida en que ordenen por cuenta propia los factores de producción necesarios con el fin de intervenir en el mercado y estarán sujetas al Impuesto las entregas de bienes y prestaciones de servicios que realice a título oneroso en el desarrollo de su actividad empresarial o profesional en el territorio de aplicación del Impuesto.
+								190 text 2.- A este respecto debe señalarse que es el Tribunal de Justicia de la Unión Europea el que ha establecido los criterios para considerar si una operación se efectúa a título oneroso, entre otras en su sentencia de 5 de febrero de 1981 Coöperatieve Aardappelenbewaarplaats, Asunto C-154/1980, y que establece que “debe existir una relación directa entre el servicio prestado y la contraprestación recibida para que una prestación de servicios sea gravable por el Impuesto.”.
+								191 text Por su parte, el Tribunal europeo, en su sentencia de 3 de marzo de 1994, R. J. Tolsma, Asunto C-16/1993, cuando señaló que:
+								192 text “14. De lo anterior se deduce que una prestación de servicios sólo se realiza «a título oneroso» en el sentido del número 1 del artículo 2 de la Sexta Directiva y, por tanto, sólo es imponible si existe entre quien efectúa la prestación y su destinatario una relación jurídica en cuyo marco se intercambian prestaciones recíprocas y la retribución percibida por quien efectúa la prestación constituye el contravalor efectivo del servicio prestado al destinatario.”.
+								193 text Las operaciones de minado de Bitcoins son aquellas que permiten crear nuevos bloques de los que se derivan nuevos Bitcoins y que son remunerados por el sistema con una cantidad de Bitcoins. Pues bien, la actividad de minado no conduce a una situación en la que exista una relación entre el proveedor del servicio y el destinatario del mismo y en los que la retribución abonada al prestador del servicio sea el contravalor del servicio prestado en los términos previstos en la jurisprudencia del Tribunal y en, particular, en el asunto Tolsma anteriormente referido, de tal forma que en la actividad de minado no puede indentificarse un destinatario o cliente efectivo de la misma, en la medida que los nuevos Bitcoins son automáticamente generados por la red.
+								194 text En consecuencia, la falta de una relación directa entre el servicio prestado y la contraprestación recibida en los términos señalados los servicios de minado objeto de consulta no estarán sujetos al Impuesto sobre el Valor Añadido.
+								195 text 3.- Por otra parte, el artículo 135.1.d) de la Directiva 2006/112/CE del Consejo de 28 de noviembre de 2006 relativa al sistema común del impuesto sobre el valor añadido establece la exención de las siguientes operaciones:
+								196 text “Art. 135.1 Los Estados miembros eximirán las operaciones siguientes:
+								197 text d) las operaciones, incluida la negociación, relativas a depósitos de fondos, cuentas corrientes, pagos, giros, créditos, cheques y otros efectos comerciales, con excepción del cobro de créditos;
+								198 text e) las operaciones, incluida la negociación, relativas a las divisas, los billetes de banco y las monedas que sean medios legales de pago, con excepción de las monedas y billetes de colección, a saber, las monedas de oro, plata u otro metal, así como los billetes, que no sean utilizados normalmente para su función de medio legal de pago o que revistan un interés numismático;”.
+								199 text Dicho artículo ha sido objeto de trasposición por el artículo 20.Uno.18º letras h) y i) de la Ley 37/1992 que disponen la siguiente exención:
+								200 text “h) Las operaciones relativas a transferencias, giros, cheques, libranzas, pagarés, letras de cambio, tarjetas de pago o de crédito y otras órdenes de pago.
+								201 text (…)
+								202 text i) La transmisión de los efectos y órdenes de pago a que se refiere la letra anterior, incluso la transmisión de efectos descontados.
+								203 text (…)
+								204 text j) Las operaciones de compra, venta o cambio y servicios análogos que tengan por objeto divisas, billetes de banco y monedas que sean medios legales de pago, a excepción de las monedas y billetes de colección y de las piezas de oro, plata y platino.”.
+								205 text Este centro directivo se ha manifestado recientemente en relación al tratamiento en el Impuesto sobre el Valor Añadido en la transmisión de monedas virtuales Bitcoins. Entre otras se pueden señalar la consulta vinculante de 1 de octubre de 2015, número V2846-15 en dónde se llega a la conclusión de que su transmisión debe quedar, en todo caso, sujeta y exenta del Impuesto por aplicación del artículo 20.Uno.18º de la Ley del Impuesto.
+								206 text 4.- Por último, sobre la incidencia de las operaciones objeto de consulta en la deducibilidad de las cuotas de Impuesto sobre el Valor Añadido soportadas por el consultnte, hay que tener en cuenta lo dispuesto por el artículo 94.Uno de la Ley 37/1992, según el cual:
+								207 text “Uno. Los sujetos pasivos a que se refiere el apartado uno del artículo anterior podrán deducir las cuotas del Impuesto sobre el Valor Añadido comprendidas en el artículo 92 en la medida en que los bienes o servicios, cuya adquisición o importación determinen el derecho a la deducción, se utilicen por el sujeto pasivo en la realización de las siguientes operaciones:
+								208 text 1.º Las efectuadas en el ámbito espacial de aplicación del impuesto que se indican a continuación:
+								209 text a) Las entregas de bienes y prestaciones de servicios sujetas y no exentas del Impuesto sobre el Valor Añadido.
+								210 text (…).”.
+								211 text En consecuencia, la realización de operaciones no sujetas (minado) y sujetas y exentas (venta de Bitcoins) objeto de consulta no generarán el derecho a la deducción de las cuotas soportadas por el consultante.
+								212 text 5.- En relación con la obligación de darse de Alta en el Impuesto sobre Actividades Económicas se informa lo siguiente:
+								213 text El Impuesto sobre Actividades Económicas se regula en los artículos 78 a 91 del texto refundido de la Ley Reguladora de las Haciendas Locales (TRLRHL), aprobado por el Real Decreto Legislativo 2/2004, de 5 de marzo.
+								214 text El artículo 78 del TRLRHL dispone en su apartado 1 lo siguiente:
+								215 text “El Impuesto sobre Actividades Económicas es un tributo directo de carácter real, cuyo hecho imponible está constituido por el mero ejercicio, en territorio nacional, de actividades empresariales, profesionales o artísticas, se ejerzan o no en local determinado y se hallen o no especificadas en las tarifas del impuesto.”.
+								216 text De la definición legal transcrita se desprenden, entre otras, las siguientes cuestiones:
+								217 text a) Que el hecho imponible se realiza por el mero ejercicio de cualquier actividad económica, lo cual significa que basta con un solo acto de realización de una actividad económica para que se produzca el supuesto de hecho gravado por el impuesto, lo que, en definitiva, viene a excluir la habitualidad en el ejercicio de la actividad como requisito indispensable.
+								218 text En este mismo sentido se expresa la Instrucción para la aplicación de las Tarifas del impuesto, aprobadas por Real Decreto Legislativo 1175/1900, de 28 de septiembre, al establecer en su regla 2ª que “El mero ejercicio de cualquier actividad económica especificada en las Tarifas, así como el mero ejercicio de cualquier otra actividad de carácter empresarial, profesional o artístico no especificada en aquéllas, dará lugar a la obligación de presentar la correspondiente declaración de alta y de contribuir por este impuesto, salvo que en la presente Instrucción se disponga otra cosa.”.
+								219 text b) Que el hecho imponible del Impuesto se realiza con independencia de que exista o no lucro en el ejercicio de la actividad, e, incluso, con independencia de que exista o no ánimo de lucro.
+								220 text c) Finalmente, que el Impuesto grava toda clase de actividades, con independencia de que éstas se hallen o no especificadas en las correspondientes Tarifas.
+								221 text Por otro lado, la delimitación de este ámbito de aplicación tan amplio del impuesto viene recogida en el artículo 79 del TRLRHL al disponer en su apartado 1 lo siguiente:
+								222 text “Se considera que una actividad se ejerce con carácter empresarial, profesional o artístico, cuando suponga la ordenación por cuenta propia de medios de producción y recursos humanos o de uno de ambos, con la finalidad de intervenir en la producción o distribución de bienes o servicios.”.
+								223 text En consecuencia, para que una actividad sea considerada como económica y su ejercicio constitutivo del hecho imponible del tributo local en estudio se requiere:
+								224 text a) que dicha actividad se realice en territorio nacional.
+								225 text b) que dicha actividad suponga ordenación de medios de producción y/o recursos humanos con un fin determinado;
+								226 text c) que dicho fin sea, precisamente, la intervención en la producción o distribución de bienes y servicios;
+								227 text d) que la referida ordenación se haga por cuenta propia.
+								228 text Pues bien, en la actividad desarrollada por el consultante se cumplen todos los requisitos señalados anteriormente, por lo que estamos ante una actividad económica sujeta al Impuesto sobre Actividades Económicas.
+								229 text No obstante, dicha actividad no se encuentra recogida en epígrafe alguno de las Tarifas del citado impuesto, por lo que debe aplicarse lo dispuesto en la regla 8ª de la Instrucción, que señala lo siguiente:
+								230 text “Las actividades empresariales, profesionales y artísticas, no especificadas en las Tarifas, se clasificarán, provisionalmente, en el grupo o epígrafe dedicado a las actividades no clasificadas en otras partes (n.c.o.p.), a las que por su naturaleza se asemejen y tributarán por la cuota correspondiente al referido grupo o epígrafe de que se trate.
+								231 text Si la clasificación prevista en el párrafo anterior no fuera posible, las actividades no especificadas en las Tarifas se clasificarán, provisionalmente, en el grupo o epígrafe correspondiente a la actividad a la que por su naturaleza más se asemejen, y tributarán por la cuota asignada a ésta.”.
+								232 text En consecuencia, de acuerdo con la citada regla, procede clasificar, provisionalmente, la actividad de referencia en el epígrafe 831.9 de la sección primera de las Tarifas, “Otros servicios financieros n.c.o.p.”.
+								233 text Por último, debe tenerse en cuenta que según lo dispuesto en la regla 4ª, apartado 4 de la Instrucción “El hecho de figurar inscrito en la Matrícula o de satisfacer el Impuesto sobre Actividades Económicas no legitima el ejercicio de una actividad si para ello se exige en las disposiciones vigentes el cumplimiento de otros requisitos.”.
+								234 text 6.- Lo que comunico a Vd. con efectos vinculantes, conforme a lo dispuesto en el apartado 1 del artículo 89 de la Ley 58/2003, de 17 de diciembre, General Tributaria.
+		102 container footer_content
+			103 container
+				104 text Doctrina Tributaria - Consultas Tributarias
+				105 link Description: Accesibilidad, Value: petete.tributos.hacienda.gob.es/consultas/accesibilidad.vm
+				106 text  | 
+				107 link Description: Aviso Legal, Value: petete.tributos.hacienda.gob.es/consultas/avisoLegal.vm
+			108 container
+				109 link Description: HTML5 válido, Value: validator.w3.org/check?uri=referer
+				110 link Description: CSS válido, Value: jigsaw.w3.org/css-validator/check/referer
+				111 link Description: WCAG 2.1 (Level AA), Value: achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA
+
+The focused UI element is 1 AXWebArea Consultas de la D.G. Tributos: Buscador, URL: petete.tributos.hacienda.gob.es/consultas/?num_consulta=V3625-16

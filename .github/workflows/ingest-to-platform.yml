@@ -78,6 +78,37 @@ jobs:
             -d "$BODY") || STATUS=000
           echo "Platform answered HTTP $STATUS: $(head -c 300 resp.txt 2>/dev/null)"
           case "$STATUS" in 2*) ;; *) exit 1 ;; esac
+          echo "$BODY" > "$RUNNER_TEMP/ingest-body.json"
+
+      # A green doorbell only means the platform accepted the request. The 22-24
+      # Oct 2026 check found refused ingests, held proposals and bodies served
+      # with text cut out, all behind "success". This asks the platform to compare
+      # what it now serves with the file at this SHA, and goes red on a mismatch
+      # or a failed ingest. Held proposals are warnings: a human decides those.
+      - name: Verify the platform serves what was merged
+        env:
+          SECRET: ${{ secrets.PLATFORM_INGEST_SECRET }}
+        run: |
+          set -euo pipefail
+          F="$RUNNER_TEMP/ingest-body.json"
+          [ -f "$F" ] || { echo "Nothing was rung; nothing to verify."; exit 0; }
+          BODY=$(jq -c '{headSha, paths}' "$F")
+          # Ingest runs in the background after the ack: poll until no path is pending.
+          for i in $(seq 1 20); do
+            sleep 30
+            STATUS=$(curl -s -o verify.json -w '%{http_code}' -X POST "https://www.openaccountants.com/api/cron/github-ingest/verify" \
+              -H "Authorization: Bearer $SECRET" -H "Content-Type: application/json" -d "$BODY") || STATUS=000
+            case "$STATUS" in 2*) ;; *) echo "verify HTTP $STATUS: $(head -c 300 verify.json)"; continue ;; esac
+            PENDING=$(jq '[.outcomes[] | select(.status=="pending")] | length' verify.json)
+            [ "$PENDING" = "0" ] && break
+            echo "Try $i: $PENDING path(s) still ingesting."
+          done
+          [ -f verify.json ] && jq -e '.outcomes' verify.json >/dev/null || { echo "::error::verify never answered"; exit 1; }
+          jq -r '.outcomes[] | "\(.status)\t\(.path)\t\(.detail // "")"' verify.json | sort
+          jq -r '.outcomes[] | select(.status=="held") | "::warning file=\(.path)::held for a human: \(.detail)"' verify.json
+          jq -r '.outcomes[] | select(.status=="mismatch" or .status=="failed" or .status=="pending") | "::error file=\(.path)::\(.status): \(.detail // "")"' verify.json
+          BAD=$(jq '[.outcomes[] | select(.status=="mismatch" or .status=="failed" or .status=="pending")] | length' verify.json)
+          [ "$BAD" = "0" ] || { echo "$BAD guide(s) not served as merged."; exit 1; }
 
   backfill:
     if: github.event_name == 'workflow_dispatch'

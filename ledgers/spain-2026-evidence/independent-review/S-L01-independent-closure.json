@@ -1,0 +1,8 @@
+{
+  "S-L01": "CLOSED: independently checked legal rounding+all7actualops+fullforward/inverse/oldURLsubsequence/metadata9+CTA. Original2ndoa intentionallycorrected, firstoa exact.",
+  "before_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+  "after_sha256": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02",
+  "current_exact": true,
+  "scope": "No claim on S-L02 map yet, no wholecountryPASS.",
+  "snapshot_erratum": "beckham-initial-frozen-guide.md name misleading: captured successor edbac385. Actual predecessor verified from parent S-L01/before.md; preserved own artifact unchanged."
+}

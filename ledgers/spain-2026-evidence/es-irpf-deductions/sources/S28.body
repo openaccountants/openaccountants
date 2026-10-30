@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: 10.1.16. Por gastos veterinarios derivados de la adquisición de animales de compañía o de la tene...</title><meta name="ObjectId" content="a7fc65456ec9b910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales de ayuda a la presentación"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='499a4b1a2c9dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales/manuales-ayuda-presentacion.html'>Manuales de ayuda a la presentación</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='4d6754fa31388910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Presentacion/100.html'>Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b76362af318f7910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Presentacion/100/10.html'>10. Cumplimentación IRPF. Deducciones autonómicas</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='ab8362af318f7910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Presentacion/100/10_1.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>10.1. Andalucía</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Presentacion/100.html" class="d-none">Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">10.1.16. Por gastos veterinarios derivados de la adquisición de animales de compañía o de la tenencia de perros de asistencia</h1><h2>Cuant&iacute;a</h2>
+<p>El <strong>30%</strong> de las cantidades satisfechas en el periodo impositivo en concepto de gastos veterinarios derivados de la adquisici&oacute;n de animales de compa&ntilde;&iacute;a o de la tenencia de perros de asistencia con un <strong>m&aacute;ximo de 100 euros anuales por contribuyente.</strong></p>
+<h2><strong>Requisitos y condiciones&nbsp;</strong></h2>
+<ol>
+<li>
+<p>La deducci&oacute;n ser&aacute; aplicable en relaci&oacute;n con los gastos veterinarios satisfechos por el contribuyente desde el 1 de enero de 2025 y durante los periodos siguientes:</p>
+<ol type="a">
+<li>
+<p>Con car&aacute;cter general, durante el a&ntilde;o siguiente a la fecha de adquisici&oacute;n del animal de compa&ntilde;&iacute;a.</p>
+</li>
+<li>
+<p>En caso de que la adquisici&oacute;n del animal de compa&ntilde;&iacute;a se realice mediante adopci&oacute;n, durante los tres a&ntilde;os siguientes a la fecha de la adopci&oacute;n.</p>
+</li>
+<li>
+<p>En el supuesto de que se trate de un perro de asistencia, durante todo el periodo de tenencia del animal por parte del contribuyente.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>A los efectos de esta deducci&oacute;n se entender&aacute; por:</p>
+<ul>
+<li>
+<p>Animales de compa&ntilde;&iacute;a: animal dom&eacute;stico o silvestre en cautividad, mantenido por el ser humano, principalmente en el hogar, siempre que se pueda tener en buenas condiciones de bienestar que respeten sus necesidades etol&oacute;gicas, pueda adaptarse a la cautividad y que su tenencia no tenga como destino su consumo o el aprovechamiento de sus producciones o cualquier uso industrial o cualquier otro fin comercial o lucrativo y que, en el caso de los animales silvestres su especie est&eacute; incluida en el listado positivo de animales de compa&ntilde;&iacute;a.</p>
+<p>En todo caso perros, gatos y hurones, independientemente del fin al que se destinen o del lugar en el que habiten o del que procedan, ser&aacute;n considerados animales de compa&ntilde;&iacute;a.</p>
+<p>Los animales de producci&oacute;n s&oacute;lo se considerar&aacute;n animales de compa&ntilde;&iacute;a en el supuesto de que, perdiendo su fin productivo, el propietario decidiera inscribirlo como animal de compa&ntilde;&iacute;a en el Registro de Animales de Compa&ntilde;&iacute;a.</p>
+</li>
+<li>
+<p>Perros de asistencia, <span>el que tras superar un proceso de selecci&oacute;n ha finalizado su adiestramiento en una entidad especializada y oficialmente reconocida u homologada por la administraci&oacute;n competente, con la adquisici&oacute;n de las aptitudes necesarias para dar servicio y asistencia a personas con discapacidad, as&iacute; como perros de aviso o perros para asistencia a personas con trastorno del espectro autista.</span></p>
+<p>A estos efectos, se entender&aacute;n comprendidos en esta definici&oacute;n los perros de aviso que, cumpliendo los requisitos establecidos en el Real Decreto 409/2025, de 27 de mayo, est&eacute;n destinados a la protecci&oacute;n y acompa&ntilde;amiento de las v&iacute;ctimas de violencia de g&eacute;nero, siempre que estas tengan dicha consideraci&oacute;n conforme a lo previsto en la Ley 13/2007, de 26 de noviembre, de medidas de prevenci&oacute;n y protecci&oacute;n integral contra la violencia de g&eacute;nero, o en las normas que las sustituyan.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Tendr&aacute;n la consideraci&oacute;n de gastos veterinarios derivados de la adquisici&oacute;n de animales de compa&ntilde;&iacute;a o de la tenencia de perros de asistencia los siguientes, siempre que hayan sido efectivamente satisfechos por el contribuyente:</p>
+<ul>
+<li>
+<p>Los relativos a vacunaciones, desparasitaci&oacute;n y dem&aacute;s tratamientos que resulten obligatorios conforme a lo dispuesto en el art&iacute;culo 3 de la Orden de la Consejer&iacute;a de Agricultura y Pesca, de 19 de abril de 2010, por la que se establecen los tratamientos obligatorios de los animales de compa&ntilde;&iacute;a, los datos para su identificaci&oacute;n en la venta y los m&eacute;todos de sacrificio de los mismos en la Comunidad Aut&oacute;noma de Andaluc&iacute;a, o norma que la sustituya.</p>
+</li>
+<li>
+<p>Los gastos de esterilizaci&oacute;n del animal, cuando dicha intervenci&oacute;n sea preceptiva de conformidad con lo dispuesto en los art&iacute;culos 23.1.a) y 26.i) de la Ley 7/2023, de 28 de marzo, y en el art&iacute;culo 29 de la Ley 11/2003, de 24 de noviembre, de protecci&oacute;n de los animales, o en las normas que las sustituyan. Entre otros se consideran deducibles:</p>
+<ul>
+<li>
+<p>Los satisfechos y repercutidos a los adoptantes por los centros privados de adopci&oacute;n (las llamadas &ldquo;protectoras de animales&rdquo; o &ldquo;entidades de protecci&oacute;n animal&rdquo; en los t&eacute;rminos del art&iacute;culo 3.q) de la Ley 7/2023, que les dedica su Cap&iacute;tulo VII; entidades sin &aacute;nimo de lucro con forma de asociaci&oacute;n o fundaci&oacute;n).</p>
+</li>
+<li>
+<p>Los directamente satisfechos por tales adoptantes<strong>,</strong> que en numerosas ocasiones efect&uacute;an la adopci&oacute;n con el compromiso de llevar a cabo posteriormente la esterilizaci&oacute;n del animal.</p>
+</li>
+<li>
+<p>Los abonados por los adquirentes a trav&eacute;s de la venta de animales de compa&ntilde;&iacute;a, obligados por el art&iacute;culo 26.d) de la Ley 7/2023 a &ldquo;Adoptar las medidas necesarias para evitar la reproducci&oacute;n incontrolada de los animales de compa&ntilde;&iacute;a&rdquo;.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>La deducci&oacute;n solo ser&aacute; aplicable:</p>
+<ul>
+<li>
+<p>Cuando la adquisici&oacute;n del animal de compa&ntilde;&iacute;a se produzca mediante venta, cesi&oacute;n o adopci&oacute;n, si esta se realiza conforme a lo previsto en los art&iacute;culos 55, 56, 57 y 58 de la Ley 7/2023, de 28 de marzo.</p>
+</li>
+<li>
+<p>Si los gastos est&aacute;n debidamente justificados mediante factura expedida por profesional o centro veterinario legalmente autorizado.</p>
+</li>
+<li>
+<p>Si la suma de la base imponible general y del ahorro del contribuyente no supera los 80.000 euros en tributaci&oacute;n individual ni los 100.000 euros en tributaci&oacute;n conjunta.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>En el caso de adquisici&oacute;n de animales de compa&ntilde;&iacute;a, la deducci&oacute;n solo ser&aacute; aplicable para aquellas adquisiciones formalizadas a partir del 1 de enero de 2025.</p>
+<p>Esta limitaci&oacute;n no resultar&aacute; de aplicaci&oacute;n a los perros de asistencia, sin perjuicio de lo dispuesto en el apartado 1.c</p>
+</li>
+</ol>
+<h2>Cumplimentaci&oacute;n</h2>
+<p>Consignar&aacute; el importe satisfecho con derecho a deducci&oacute;n.</p><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-16">16/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

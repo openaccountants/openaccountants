@@ -20,6 +20,32 @@ metadata:
 > **Currency note:** All figures are in Sudanese Pounds (SDG — ج.س). Sudan has undergone multiple currency redenominations; verify current SDG values before filing.
 > **YMYL — verify before relying.** Sudan's tax legislation has been subject to amendments and the political situation has disrupted tax administration. Where this skill says "verify current value," re-confirm against the Sudan Taxation Chamber (tax.gov.sd), PwC Worldwide Tax Summaries, or a qualified Sudan accountant before filing.
 
+---
+
+## Section 1 — Scope statement
+
+This skill covers:
+
+- Personal income tax (employment income) rates and progressive brackets
+- Self-employed / sole proprietorship income tax (same progressive scale)
+- Professional / non-commercial activity income
+- Rental income from real estate
+- Residence rules and taxation basis (territorial + person principle)
+- Personal tax-free allowance (SDG 3,000)
+- PAYE withholding and remittance mechanics
+- Tax exemptions and special categories
+
+This skill does NOT cover:
+
+- Corporate / Business Profits Tax — see `sd-corporate-income-tax`
+- VAT — see `sd-vat-gst`
+- Payroll and social insurance contributions — see `sd-payroll-social`
+- Company formation — see `sd-company-formation`
+- Capital gains tax — separate schedule under Income Tax Act 1986
+- Zakat — separate obligation under Zakat Act 2001
+
+---
+
 ## Section 2 — Required inputs and refusal catalogue
 
 ### Required inputs

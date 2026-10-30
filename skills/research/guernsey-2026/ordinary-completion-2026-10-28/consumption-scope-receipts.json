@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://gov.gg/gstplusfaqs",
+    "status": 200,
+    "final_url": "https://gov.gg/taxpackagefaqs",
+    "file": "gst-faq-current.html",
+    "bytes": 88166,
+    "sha256": "e8382fc7d17c7000bf3adc69f1ea3a705162fa6f29583e96204f0206d971697b",
+    "read_utc": "2026-10-27T23:49:40.684681+00:00"
+  },
+  {
+    "url": "https://gov.gg/article/119655/Imports--Exports",
+    "status": 200,
+    "final_url": "https://gov.gg/article/119655/Imports--Exports",
+    "file": "imports-exports-current.html",
+    "bytes": 72782,
+    "sha256": "a382c9f04e2a5e1bf0811e9d292c889ce69558412788d3d9ef1d03eb07104f8c",
+    "read_utc": "2026-10-27T23:49:40.640442+00:00"
+  }
+]

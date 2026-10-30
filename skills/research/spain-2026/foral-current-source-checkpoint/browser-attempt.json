@@ -1,0 +1,8 @@
+{
+  "tool": "mcp__cua_repl.js",
+  "code": "await cua.getState();",
+  "timeout_ms": 30000,
+  "result": "js execution timed out; kernel reset, rerun your request",
+  "wall_seconds": 31.4364,
+  "scope": "No browser or tab content read; no computational test performed."
+}

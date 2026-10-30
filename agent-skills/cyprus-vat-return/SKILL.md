@@ -1,629 +1,312 @@
 ---
 name: cyprus-vat-return
-description: "Use this skill whenever asked to prepare, review, or classify transactions for a Cyprus VAT return (VAT4 form) for any client. Trigger on phrases like \"prepare Cyprus VAT return\", \"do the Cyprus VAT\", \"fill in VAT4\", \"create the return\", \"Cyprus VAT filing\", or any request involving Cyprus VAT filing. This skill covers Cyprus only and standard VAT registration. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Cyprus VAT work."
+description: "Use this skill for Cyprus VAT (Φ.Π.Α.) in tax year 2026 (law at 24 October 2026). It covers the 19% standard rate, the 9%, 5% and 3% reduced rates, the temporary 0% on basic goods (baby milk, nappies, feminine hygiene products and listed fruit and vegetables to 31 December 2027; meat and fish 6 April 2026 to 31 May 2027; bread, milk, coffee, sugar and baby food 12 October 2026 to 31 May 2027), household electricity and home solar rates, property VAT, partial exemption, cash accounting, the EUR 15,600 registration threshold, the EUR 10,000 EU distance-sales threshold, quarterly returns and payment by the 10th of the second month, return boxes 1 to 11B, VIES by the 15th, domestic reverse charge (construction, scrap, phones and laptops, precious metals, property in loan restructuring), TFA filing, the EUR 100 late-return charge, 10% additional tax and interest. Trigger on: Cyprus VAT, Φ.Π.Α., VAT return Cyprus, TFA VAT, Cyprus reverse charge, VIES Cyprus. Out of scope: corporate tax (cy-c"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/cyprus-vat-return"
   jurisdiction: "CY"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-10-24"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Cyprus VAT return: classifying a quarter and filling in the return
+# Cyprus VAT return: rates, registration, the return and penalties (2026)
 
-This skill prepares and reviews the periodic Cyprus VAT return (Δήλωση Φ.Π.Α.) for a business on the normal VAT scheme: which rate applies, which box each transaction goes in, who must register, when the return is due, and how to correct it. Figures are for tax year 2026. Every figure comes from a Cyprus Tax Department page or document, linked in the table that holds it. Most of those pages are in Greek only, so the Note column quotes the Greek text. Use it with the `vat-workflow-base` skill (workflow) and the `eu-vat-directive` skill (EU rules).
+This skill sets out who must charge Cyprus VAT (Φόρος Προστιθέμενης Αξίας, Φ.Π.Α.), at what rate, how to fill in and file the periodic VAT return, and what late filing and late payment cost, as the law stands on 24 October 2026. The law is the VAT Law 95(I)/2000 as amended up to Law 109(I)/2026 and order Κ.Δ.Π. 221/2026, with the VAT (General) Regulations Κ.Δ.Π. 314/2001. The tax authority is the Tax Department (Τμήμα Φορολογίας) of the Ministry of Finance. Use it with `vat-workflow-base` (workflow) and `eu-vat-directive` (EU rules).
 
-## Section 1: Quick reference
+What changed for 2026:
+- Order Κ.Δ.Π. 337/2025 zero-rates baby milk, children's and adult nappies, feminine hygiene products and listed fresh fruit and vegetables from 1 January to 31 December 2026.
+- Order Κ.Δ.Π. 362/2026 (16 October 2026) repeats that 0% from 1 January to 31 December 2027.
+- Order Κ.Δ.Π. 168/2026 zero-rated fresh and frozen meat, fish, cuttlefish, squid and octopus from 6 April to 30 September 2026. Order Κ.Δ.Π. 354/2026 (30 September 2026) continues that 0% from 1 October 2026 to 31 May 2027.
+- Order Κ.Δ.Π. 354/2026 also zero-rates bread, milk, coffee, sugar and baby food from 12 October 2026 to 31 May 2027.
+- Order Κ.Δ.Π. 363/2026 (16 October 2026) adds home solar (photovoltaic) systems for household self-consumption to the 9% rate.
+- Orders Κ.Δ.Π. 82/2026 and 167/2026 cut VAT on household electricity (tariffs 01, 02, 08 and 56): 9% for April 2026 meter readings, 5% for readings from 1 May 2026 to 31 March 2027.
+- Orders Κ.Δ.Π. 102/2026 and 103/2026 redefine "first establishment" for new buildings and renovations from 1 September 2026.
+- Law 223(I)/2025 keeps the reverse charge on property transferred in loan restructuring in force to 31 December 2026.
+- Law 104(I)/2025 brought in the EU small business scheme (SME-SS) from 1 January 2025.
+- The 3% rate is not new for 2026. It dates from Law 75(I)/2023 (art. 18Β, Fifteenth Schedule).
 
-Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1.
+## Who this applies to
 
-**Quick reference field table**
+- **Businesses established in Cyprus.** A person making taxable supplies must register at the end of any month in which its taxable supplies (standard, reduced and zero rated) in the past 12 months passed **EUR 15,600**, or at any time when there are reasonable grounds to expect that supplies in the next 30 days will pass EUR 15,600 (First Schedule, Part I, para. 1; Tax Department registration page). Sales of capital assets are left out of the count.
+- **Notice and start date.** Under the 12-month test the business must notify within 30 days of the end of the month in which it passed the threshold; registration runs from the end of the following month or an agreed earlier date. Under the 30-day test it must notify before the end of the 30 days, and registration runs from the start of them. The obligation exists whether or not the business applied: the Commissioner can register it back to the date it became liable, and it owes VAT on its supplies from that date.
+- **No threshold for B2B services to other EU states.** A person that supplies services to taxable persons in another member state, where the customer accounts for the VAT, must register from the first such supply and file VIES.
+- **Non-established businesses.** A business not established in Cyprus that makes taxable supplies in Cyprus where the customer does not account for the VAT must register as soon as it intends to make them.
+- **Acquisitions of goods from other EU states.** A person not otherwise registered (for example an exempt business) must register once its acquisitions from other member states in the calendar year pass **EUR 10,251.61**, or are expected to within the next 30 days.
+- **Voluntary registration** is open below the thresholds and to an intending trader.
+- **Citrus growers.** A person whose only taxable supplies are zero-rated citrus (lemons, oranges, mandarins, grapefruit, citron) is not required to register but may ask to (First Schedule, Part I, para. 1(1Α)).
+- **Deregistration.** A registered person may be removed from the register if it satisfies the Commissioner that its taxable supplies in the coming year will not pass **EUR 13,668.81**. It must notify the end of its taxable activity within 60 days.
+- **Summarised here, but refer the computation:** the special schemes (cash accounting, SME-SS, OSS and IOSS, the margin schemes, investment gold, the farmers' scheme, the urban taxi scheme, the tour operators' scheme), partial exemption, and immovable property including the 5% main-residence rate. Ship management is out of this skill.
 
-| Field | Value |
-| --- | --- |
-| Country | Cyprus (Republic of Cyprus) |
-| Authority | Tax Department (Τμήμα Φορολογίας), Ministry of Finance |
-| Law | VAT Law N.95(I)/2000 as amended, and the VAT (General) Regulations Κ.Δ.Π. 314/2001 |
-| Return | The VAT return (Δήλωση Φ.Π.Α.), 13 boxes numbered 1 to 11B. Earlier versions of this skill called it "VAT4"; no Tax Department page read for this rewrite uses that name |
-| Filing | Electronic only, through Tax For All (TFA) |
-| Period | Usually quarterly, set at registration by the business's NACE code; the Commissioner may set monthly or annual periods (Section 2) |
-| Deadline | Return and payment by the 10th day after the end of the month that follows the end of the period (Section 2) |
-| Currency | EUR only |
-| Companion Skills | `vat-workflow-base` and `eu-vat-directive`, both must be loaded |
+## Rates, bands and thresholds
 
-**2026 VAT rates.** The Tax Department rates page lists the goods and services in each reduced band. Anything not listed on the rates page or in the Sixth Schedule table below takes the standard rate.
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate (art. 17) | 19% | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html |
+| Reduced rate (art. 18Α, Twelfth Schedule): taxi, tourist, excursion and intercity bus transport; restaurant and catering; hotel and holiday accommodation; domestic sea passenger transport; old people's homes (non-exempt supplies) | 9% | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html |
+| Reduced rate (art. 18, Fifth Schedule): food and drinks except alcohol, beer, wine and soft drinks; water; bottled gas; medicines and vaccines; fertilisers, animal feed and seeds; contraceptives; medical equipment for disabled people; child car seats; urban and rural buses; renovation of private homes (materials up to 50% of value); main residence on conditions; and the other Fifth Schedule items | 5% | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html |
+| Super-reduced rate (art. 18Β, Fifteenth Schedule, from Law 75(I)/2023): books, newspapers and magazines (print and e-format); talking books, wheelchairs, orthopaedic and hearing devices for disabled people; street cleaning, refuse and waste treatment (not by local authorities); sewage; admission to the first performance of theatre, music and dance works | 3% | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html |
+| Zero rate (art. 25, Sixth Schedule): exports; sea-going ships and airline aircraft; international passenger transport to the extent carried out in Cyprus | 0% | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html |
+| Temporary 0%: baby milk, children's and adult nappies, feminine hygiene products, listed fresh fruit and vegetables (Sixth Schedule paras 13 to 15, 25(α) and 25(β)) | 0% from 1 Jan to 31 Dec 2026 | 2026 | https://www.cylaw.org/KDP/data/2025_1_337.pdf (para. 4) |
+| Temporary 0%: baby milk, nappies, feminine hygiene products, listed fresh fruit and vegetables, continued | 0% from 1 Jan to 31 Dec 2027 | 2027 | https://www.cylaw.org/KDP/data/2026_1_362.pdf (para. 4) |
+| Temporary 0%: fresh and frozen meat and offal, fish, cuttlefish, squid and octopus (Sixth Schedule paras 25(γ) and 25(δ)) | 0% from 6 Apr to 30 Sep 2026, then continued from 1 Oct 2026 to 31 May 2027; 5% food rate before 6 Apr 2026 | 2026 | https://www.cylaw.org/KDP/data/2026_1_168.pdf (para. 4); https://www.cylaw.org/KDP/data/2026_1_354.pdf (para. 4(α)) |
+| Temporary 0%: bread, milk, coffee, sugar and baby food (Sixth Schedule para. 25(ε)) | 0% from 12 Oct 2026 to 31 May 2027; 5% food rate before | 2026 | https://www.cylaw.org/KDP/data/2026_1_354.pdf (para. 4(β)) |
+| Home solar (photovoltaic) systems of household customers, for self-consumption in their homes (Twelfth Schedule para. 6) | 9% from the order's publication on 16 Oct 2026 (it states no other start date) | 2026 | https://www.cylaw.org/KDP/data/2026_1_363.pdf |
+| Household electricity, tariffs 01, 02, 08 and 56 | 9% for readings from 1 Apr 2026 until the 9% entry was deleted on 30 Apr 2026; 5% for readings 1 May 2026 to 31 Mar 2027 | 2026 | https://www.cylaw.org/KDP/data/2026_1_82.pdf; https://www.cylaw.org/KDP/data/2026_1_167.pdf |
+| 5% main residence: first 130 m² of buildable area, up to this value | EUR 350,000 | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html (Fifth Schedule, Table Γ) |
+| 5% main residence: lost entirely if total value passes / total buildable area passes | EUR 475,000 / 190 m² | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html (Fifth Schedule, Table Γ) |
+| Registration threshold, established business | EUR 15,600 (past 12 months or next 30 days) | 2026 | https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/ |
+| Registration threshold, acquisitions from other EU states | EUR 10,251.61 a calendar year | 2026 | https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/ |
+| Deregistration threshold | EUR 13,668.81 for the coming year | 2026 | https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/ |
+| EU distance sales and TBE services: below this, VAT stays in the seller's state (art. 10(4Α)) | EUR 10,000 EU-wide, current and previous calendar year | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html |
+| EU small business scheme (SME-SS): EU-wide turnover cap | EUR 100,000 | 2026 | https://www.cylaw.org/nomoi/arith/2025_1_104.pdf |
+| Retailer must issue a VAT invoice if a taxable customer asks and the price passes | EUR 85 | 2026 | https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/ |
+| Errors in past returns that may be corrected in the current return (net total, periods under three years old) | Up to EUR 1,708.60 | 2026 | https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-se-schesi-me-tis-diorthoseis-lathon/ |
+| Gifts of goods: output VAT due when cost per gift passes | EUR 17 | 2026 | Tax Department return guide (URL in Sources) |
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/ |
-| Standard rate: every taxable supply of goods or services and every import of goods, except those listed in the rows below | 19% | "Κανονικός συντελεστής (19%) Επιβάλλεται σε κάθε φορολογητέα παράδοση αγαθών ή παροχή υπηρεσιών ή εισαγωγή αγαθών πλην των πιο κάτω" |
-| Reduced rate: passenger transport by urban, intercity and rural taxis, and by tourist and intercity buses; restaurant and catering services; accommodation in hotels, tourist lodgings and similar; supplies by old people's homes (other than exempt ones) | 9% | "Μειωμένος συντελεστής (9%) Μεταφορά επιβατών με αστικά, υπεραστικά και αγροτικά ταξί καθώς και τουριστικά και υπεραστικά λεωφορεία" |
-| Reduced rate: among others, food and drinks (but NOT alcoholic drinks, beer, wine or soft drinks, and not the items in the 0% row), water, bottled gas, medicines and vaccines, contraceptives, medical equipment for people with disabilities, children's car seats, electricity on tariff 08, funeral services, authors' and composers' services, transport by urban and rural buses, camping pitches, admission to shows, cinemas, museums, zoos and sports events, hairdressing, renovation of private homes under conditions, school canteens, and the purchase or construction of a main and permanent residence after the Commissioner's approval | 5% | "Μειωμένος συντελεστής (5%) Φέρετρα"; "Τρόφιμα και ποτά (εκτός τον οινοπνευματωδη, μπύρα, καρασί και αναψυκτικά) εκτος αυτά που βρίσκονται στον 0%" |
-| Super-reduced rate: books, newspapers and magazines (including electronic), talking books for people with disabilities, lifting devices and wheelchairs for people with disabilities, orthopaedic and hearing devices, street cleaning, refuse collection and waste treatment other than by local authorities, sewage disposal and tank emptying, admission to the first performance only of theatre, music and dance works | 3% | "Μειωμένος συντελεστής (3%) Βιβλία, εφημερίδες, περιοδικά και σε ηλεκτρονική μορφή" |
-| Zero rate: export of goods; supply, repair and hire of sea-going ships and airline aircraft; services for the direct needs of sea-going ships | 0% | "Μηδενικός συντελεστής (0%) Εξαγωγή αγαθών" |
-| Last day of the temporary zero rate on basic goods: baby milk, children's and adult nappies, meat, fish, cuttlefish, squid, octopus, and certain vegetables and fruit | 30/9/2026 | "συγκεκριμένα λαχανικά και φρούτα μέχρι και 30/9/2026" |
+## The taxable base
 
-The temporary zero rate on basic goods applied "up to and including" 30 September 2026. The rates page, read on 2 October 2026, shows no extension. For supplies of those goods made from 1 October 2026, use the rate the page lists for the item (food and drinks are in the 5% row); an item the page does not list in any reduced row takes the standard rate. A quarter that straddles 30 September 2026 (for example August to October) needs the sales of these goods split by date.
+- **What is taxed.** Supplies of goods and services in Cyprus for consideration, acquisitions of goods from other member states and imports (art. 17). The rate is 19% unless a schedule names another one. Anything the Fifth, Twelfth, Fifteenth or Sixth Schedule does not list takes 19%.
+- **Rate traps.**
+  - Taxis and intercity or tourist buses are at 9%. Urban and rural buses are at 5%.
+  - Books, newspapers and magazines are at 3%, not 5%.
+  - Food is at 5%, but alcohol, beer, wine and soft drinks are at 19%. Food served with support services (a restaurant) is at 9%.
+  - Meat and fish stay at 0% after 30 September 2026: Κ.Δ.Π. 354/2026 continues the 0% from 1 October 2026 to 31 May 2027. Bread, milk, coffee, sugar and baby food are at 5% up to 11 October 2026 and 0% from 12 October 2026 to 31 May 2027. Baby milk, nappies, feminine hygiene products and the listed fruit and vegetables are at 0% to 31 December 2026 (Κ.Δ.Π. 337/2025) and again for 2027 (Κ.Δ.Π. 362/2026). The Tax Department rates page (read 24 October 2026) still says all basic goods are at 0% only "μέχρι και 30/9/2026". The orders in the Gazette win over the page.
+  - Split every basic-goods sale by date: 6 April 2026 (meat and fish), 12 October 2026 (bread, milk, coffee, sugar, baby food), 31 May 2027 (both end).
+  - The same rates page lists only tariff 08 electricity at 5%. Orders Κ.Δ.Π. 82/2026 and 167/2026 cover tariffs 01, 02, 08 and 56. Follow the orders.
+- **Renovation at 5%.** Renovation and repair of a private home by plumbers, electricians, carpenters, painters and builders is at 5%, except where materials are more than 50% of the value of the service (Fifth Schedule, Table Β, para. 11; energy and structural upgrades, para. 11Α). From 1 September 2026 a home counts as "old" when at least three years have passed since first establishment, and "first use" means systematic use for at least 18 months (Κ.Δ.Π. 102/2026).
+- **Main residence at 5%.** The purchase or building of a main and permanent residence is at 5% on the first 130 m² of buildable area, up to EUR 350,000. If the total value passes EUR 475,000 or the total buildable area passes 190 m², the whole amount is at 19%. A disabled person gets 190 m² whatever the total area. Families with more than three children get 15 m² more per extra child. The buyer files a declaration with the Commissioner (Fifth Schedule, Table Γ). If the home stops being the main residence within ten years, the owner must tell the Commissioner within 30 days and pay the difference; the Tax Department issues a VAT Return for Special Cases. Refer every case.
+- **Exempt supplies (Seventh Schedule).** Among others: services of Cyprus Post as a public body; medical care by recognised professionals; education by recognised schools; insurance; credit, bank account and other financial services; lotteries and betting. Card processing, clearing and authorisation, and collecting third parties' debts, are at 19% (Tax Department exemptions page). Exempt sales carry no VAT and give no right to deduct.
+- **Input VAT.** VAT on purchases used for taxable supplies is deductible under art. 21 if the business holds a tax invoice dated in the period. Mixed taxable and exempt use is apportioned under regs 64 to 65Γ of Κ.Δ.Π. 314/2001 (refer). Credit notes received reduce Box 4.
+- **Partial exemption** (regs 64 and 65 of Κ.Δ.Π. 314/2001). A business with both taxable and exempt sales deducts in full the input VAT on costs used only for taxable sales, nothing on costs used only for exempt sales (or for non-business activity), and on shared costs the proportion that taxable sales bear to all sales in the period. The ratio leaves out sales of the business's capital goods, incidental property and financial transactions, and self-supplies, and is rounded up to the next whole percentage. The Commissioner may approve or direct another method. The deduction in each return is provisional (reg. 64(1)). Refer the annual adjustment and any special method.
+- **Input VAT that must not go in Box 4** (return guide): private purchases; business entertainment of employees or company managers; second-hand goods bought under the second-hand scheme; payments to the Tax Department under an assessment. The Tax Department's 2001 General VAT Guide also blocks VAT on ordinary passenger cars (not taxis, hire cars, driving-school cars, vans, vehicles with more than ten seats or over three tonnes) and on business entertainment generally. That guide predates the current law, so this skill keeps the conservative default: block, ask, refer.
+- **Output VAT that is easy to miss** (return guide): reverse-charge services and purchases; commission on sales for third parties; sales of fixed assets; goods taken for private use; self-billed invoices; bad-debt relief later recovered; and gifts of goods costing more than EUR 17 each. Credit notes issued reduce Box 1.
 
-The rates page does not list every zero-rated item. The Sixth Schedule of the VAT Law also zero-rates international passenger transport, to the extent the transport takes place in Cyprus.
+### Property
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/01/Consolidated-VAT-Law-%CE%9A%CE%94%CE%A0-221_2026.pdf |
-| Passenger transport from Cyprus to abroad or the reverse, to the extent carried out inside Cyprus (Sixth Schedule paragraph 5(ε), wording in force from 20 August 2020) | 0% | "ΠΑΡΑΔΟΣΕΙΣ ΑΓΑΘΩΝ ΚΑΙ ΠΑΡΟΧΕΣ ΥΠΗΡΕΣΙΩΝ ΠΟΥ ΥΠΟΚΕΙΝΤΑΙ ΣΤΟ ΜΗΔΕΝΙΚΟ ΣΥΝΤΕΛΕΣΤΗ"; "(ε) Μεταφορά επιβατών ... εξωτερικό ή αντίστροφα, στην έκταση που η μεταφορά διενεργείται στο εσωτερικό της Δημοκρατίας" |
+- **Letting** of immovable property is exempt (Eighth Schedule para. 1(α)), except: hotel and similar accommodation; parking spaces; fixed equipment and machinery; safes; hire-purchase of property that is itself taxable; and the letting of property to a taxable person for its taxable business, other than as a home (para. 1(α)(vi)). That last letting is taxed at 19% for leases starting on or after the 2017 amending law (No. 3) came into force, unless the landlord tells the Commissioner it opts out of taxing it. The opt-out cannot be reversed later. Since 3 April 2026 the opt-out is made on the form set by Commissioner's notice Κ.Δ.Π. 172/2026, filed through TFA.
+- **Sales** of immovable property are exempt (para. 1(β)) except: new buildings, or parts of them with their land, transferred before first establishment (first use); and undeveloped building land meant for building, transferred in the course of an economic activity. These are at 19%, or 5% for a qualifying main residence. From 1 September 2026 the meaning of first establishment changed (Κ.Δ.Π. 102/2026 and 103/2026). Refer every property sale.
 
-The 5% rate on a main residence is a separate scheme with its own approval, limits and cliff (Section 5.3).
+### Special schemes
 
-**Key return boxes.** From the Tax Department's guide to completing the VAT return, dated 31/08/2020 (file name 06082024). It predates the one-stop shop (OSS); where it says MOSS, read the OSS the rights page lists, unconfirmed on any page read.
+- **Cash accounting (art. 42Ε).** Output VAT is due when the business is paid, and input VAT is deductible when it pays. Open from the start of any tax period if supplies in the previous 12 months did not pass **EUR 25,000**, all returns were filed and paid on time, all assessed tax is paid, and the business has no conviction under art. 46. Some transactions are left out of the scheme (art. 42Ε(3)); refer.
+- **EU small business scheme (SME-SS, Law 104(I)/2025, from 1 January 2025).** A business established in another member state can use the Cyprus exemption if its turnover in Cyprus does not pass **EUR 15,600** and its EU-wide annual turnover does not pass **EUR 100,000**. A Cyprus business can use another state's exemption under the same EUR 100,000 EU-wide cap. Refer.
+- **Others (refer):** OSS and IOSS, the margin schemes, investment gold, the farmers' scheme, the urban taxi scheme, the tour operators' scheme.
+
+### Domestic reverse charge
+
+The customer, not the supplier, accounts for the VAT on:
+- construction, conversion, demolition, repair and maintenance of buildings and civil engineering works, including services supplied with goods, to a business customer (art. 11Β);
+- used metals and scrap supplied to a registered buyer whose activity code is 46771 (art. 11Γ);
+- transfers of buildings, building land and related rights by a borrower in a loan restructuring or forced transfer to the lender (art. 11Δ), in force to 31 December 2026 (art. 61(3), as extended by Law 223(I)/2025);
+- mobile phones, integrated circuit devices (microprocessors and CPUs before they go into end-user products), game consoles, tablets and laptops supplied to a taxable person (art. 11Ε);
+- raw and semi-finished precious metals, outside the margin and investment-gold schemes (art. 11ΣΤ);
+- gas and electricity supplied by a business established outside Cyprus to a registered person (art. 11Α).
+
+The supplier invoices without VAT. The buyer enters output VAT in Box 1, deducts it in Box 4 under art. 21, and puts the value in Boxes 6 and 7. Records of these transactions must be kept for six years (art. 11Γ(6), 11Ε(5)). Failing to apply the reverse charge costs EUR 200 per tax period, up to EUR 4,000 in total (art. 45(7Β)).
+
+### The return boxes
+
+From the Tax Department's guide to completing the VAT return (file name 06082024). The guide predates the OSS; where it says MOSS, read OSS.
 
 | Box | Meaning |
-| --- | --- |
-| 1 | VAT due on outputs: sales, plus VAT you self-assess on services received from abroad and on domestic reverse charge purchases |
-| 2 | VAT on acquisitions of GOODS (and linked services) from other EU member states |
+|---|---|
+| 1 | VAT on outputs: sales, plus VAT self-assessed on services from abroad and on domestic reverse-charge purchases |
+| 2 | VAT on acquisitions of goods (and linked services) from other EU member states |
 | 3 | Total VAT due (Box 1 + Box 2) |
-| 4 | Input VAT deductible this period on purchases and other inputs, including acquisitions from other EU member states |
-| 5 | VAT payable or repayable (Box 3 minus Box 4) |
-| 6 | Total value of outputs, without VAT, INCLUDING the amounts in Boxes 8A, 8B, 9, 10 and 11B |
-| 7 | Total value of inputs, without VAT, INCLUDING the amounts in Boxes 11A and 11B |
-| 8A | Value of supplies of goods (and linked services) to other EU member states |
-| 8B | Value of services supplied to taxable persons in other EU member states where the customer accounts for the VAT |
-| 9 | Value of zero-rated outputs other than those in 8A and 8B (exports included) |
-| 10 | Value of out-of-scope sales with the right to deduct input VAT (other than 8B), including triangular sales and sales through the one-stop shop (the 2020 guide says "MOSS") |
-| 11A | Value of acquisitions of goods (and linked services) from other EU member states |
-| 11B | Value of services received from taxable persons in other EU member states |
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 19% (standard rate) |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Cyprus |
-| Unknown B2B vs B2C for an EU customer | B2C, charge Cyprus VAT at the standard rate |
-| Unknown business-use proportion | No recovery |
-| Unknown SaaS billing entity | Reverse charge as a service from outside the EU |
-| Unknown blocked-input status | Blocked |
-| Unknown whether in scope | In scope |
-
-**Red flags for the reviewer.** Flag for review: a single transaction that is large for the business; any default whose effect on the VAT due is material; one counterparty dominating the quarter's sales or purchases; more than a handful of conservative defaults in one quarter; and a large net payable or repayable position. (The earlier numeric trigger levels were internal review settings, not law; set them with the reviewer.)
-
-## Section 2: Registration, periods, deadlines and penalties
-
-**Registration and filing obligations.** From the Tax Department page on the obligation and right to register.
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/ |
-| Registration threshold for a person established in Cyprus: taxable supplies (standard, reduced and zero rated) in the year ending at the end of any month have exceeded this, OR there are reasonable grounds to believe supplies in the next 30 days will exceed it. Capital assets of the business are not counted | EUR 15,600 | "η αξία των φορολογητέων συναλλαγών του κατά την περίοδο ενός έτους που τελειώνει σε αυτό το χρονικό σημείο έχει υπερβεί τις €15.600" |
-| Penalty for late notification of the obligation to register, for every month the failure lasts | EUR 85 | "Καθυστέρηση γνωστοποίησης της υποχρέωσης για εγγραφή, συνεπάγεται χρηματική επιβάρυνση €85 για κάθε μήνα που διαρκεί η παράλειψη" |
-| Registration threshold for acquisitions of goods from other EU member states, counted from 1 January of the calendar year (or expected within the next 30 days). Not the general threshold | EUR 10,251.61 | "έχουν υπερβεί το όριο των €10.251,61" |
-
-- Past-12-months test: the business must notify within thirty days of the end of the month in which the threshold was exceeded. Registration takes effect from the end of the following month, or an earlier agreed date.
-- Next-30-days test: the business must notify before the end of that thirty-day period, and registration takes effect from the start of it.
-- The obligation exists whether or not the business applied. The Commissioner may register it back to the date it became liable, and it owes the VAT on its supplies from that date.
-- No threshold: a person who supplies services to taxable persons in another EU member state, where the customer pays the VAT there, must register from the first such supply, whatever its value, and file the VIES recapitulative statement.
-- No threshold: a business NOT established in Cyprus that makes taxable supplies in Cyprus (where the reverse charge does not apply) must register as soon as it intends to make them.
-- Distance sales: the page sends distance sellers to Information Leaflet 3A. No allowed page read for this rewrite prints the EU distance-sales threshold, so this skill does not state one. Refer.
-- Voluntary registration is open to a business below the thresholds and to an intending trader.
-
-**Return periods.** From the Tax Department page on submitting VAT returns. VAT returns "usually cover quarterly tax periods" ("Οι Δηλώσεις ΦΠΑ αφορούν συνήθως τριμηνιαίες φορολογικές περιόδους"), set at registration from the business's NACE activity code. Under conditions the Commissioner may set monthly or annual returns. The quarters are not always calendar quarters: the official calendar shows quarters such as June to August. Source: https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/
-
-**Deadlines.** The return is due, and the VAT must be paid, by the 10th day after the end of the month that follows the end of the tax period (regulation 17 of Κ.Δ.Π. 314/2001). For a quarter ending 31 March, that is 10 May. The VIES recapitulative statement is due by the 15th day after the end of each month in which the business supplied goods or services to a person registered in another member state, and also for months with no such supplies. A corrective VIES statement is due within one month of the end of the month it relates to. Source: https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/
-
-**Calendar example.** The official deadline calendar prints "2026-10-10 Προθεσμία Υποβολής Δήλωσης και Πληρωμής Φ.Π.Α. για την τριμηνία Ιουνίου" for the June to August 2026 quarter (return and payment due 10 October 2026), and states that when the deadline falls on a weekend or public holiday it moves to the next working day ("Όταν η ημερομηνία λήξης συμπίπτει με Σαββατοκύριακο ή αργία, η προθεσμία είναι η επόμενη εργάσιμη ημέρα"). Source: https://www.gov.cy/mof-tax/prothesmies/
-
-**Penalties and corrections.** From the VAT return FAQ and the FAQ on correcting errors.
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-dilosis-f-p-a/ |
-| Fixed charge for failing to submit a required VAT return | EUR 100 | "χρηματική επιβάρυνση ύψους 100€, επιπρόσθετος φόρος ίσο προς το 10% του οφειλόμενου φόρου καθώς και τόκοι υπερημερίας" |
-| Additional tax on the tax due, on top of the fixed charge and default interest | 10% | "επιπρόσθετος φόρος ίσο προς το 10% του οφειλόμενου φόρου" |
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-se-schesi-me-tis-diorthoseis-lathon/ |
-| Errors in earlier returns may be corrected in the current period's VAT account ONLY if the net total of all errors found does not exceed this AND the error relates to a period less than three years old. Otherwise the business must send a written request to the Tax Department through TFA | EUR 1,708.60 | "δεν υπερβαίνει τα €1708,60, μπορείτε να προβείτε σε καταχώριση του εν λόγω ποσού στο ανάλογο μερίδιο του Λογαριασμού Φ.Π.Α. της τρέχουσας φορολογικής περιόδου" |
-
-- Before the deadline, the business can amend its own return (boxes 1 to 11B) in TFA.
-- Value boxes 6 to 11B of a return whose deadline is after 27/3/2023 can be amended in TFA by the business itself. Earlier returns need a written request.
-- The correction in the current return follows regulation 24 of Κ.Δ.Π. 314/2001. The net total is worked out by setting the under-declared output VAT and over-claimed input VAT against the over-declared output VAT and under-claimed input VAT.
-
-**Deregistration and invoicing.** From the Tax Department page on business rights and obligations.
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/ |
-| A registered person may be deregistered if it satisfies the Commissioner that its taxable supplies in the coming year will not exceed this | EUR 13,668.81 | "δεν θα υπερβεί τις €13.668,81 μπορεί να διαγραφεί από το Μητρώο Φ.Π.Α." |
-| A retailer must issue a VAT invoice if the customer is a taxable person, asks for one, and the consideration exceeds this | EUR 85 | "αν ο πελάτης είναι υποκείμενο στο φόρο πρόσωπο και το ζητήσει και αν η αντιπαροχή υπερβαίνει τις €85" |
-| Administrative charge for failing to issue a legal receipt to consumers: up to this share of the transaction value | 20% | "διοικητικής χρηματικής επιβάρυνσης ίσης με ποσοστό έως και 20% της αξίας της συναλλαγής" |
-
-- A business must notify the end of its taxable activity within 60 days.
-- The same page lists the special schemes a business may join where conditions are met, including the special scheme for small businesses (SME-SS) under Law 104(I)/2025, the one-stop shop (OSS / IOSS), the cash accounting scheme (article 42Ε), the margin schemes, the farmers' scheme and the urban taxi scheme. All are outside this skill (refusal catalogue).
-
-## Section 3: Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable**: bank statement for the period. Acceptable from: Bank of Cyprus, Hellenic Bank, RCB Bank, Eurobank Cyprus, Astrobank, Revolut Business, Wise Business.
-
-**Recommended**: sales invoices (intra-EU B2B, exports), purchase invoices for input VAT claims, the CY VAT number. To claim input VAT in Box 4 the business must hold a tax invoice dated in the period (Section 5.11).
-
-**Ideal**: complete invoice register, prior VAT return, VIES statements, credit brought forward reconciliation.
-
-### Cyprus-specific refusal catalogue
-
-- **R-CY-1: Non-registered entity.** Trigger: not registered and not required to register (Section 2). Message: "A person that is not registered and not required to register does not file a VAT return."
-- **R-CY-2: Partial exemption.** Trigger: mixed taxable and exempt supplies. Message: "Input VAT must be apportioned under regulations 64-65Γ of Κ.Δ.Π. 314/2001. Use a licensed accountant."
-- **R-CY-3: Domestic reverse charge.** Trigger: purchases or sales under articles 11A, 11B, 11Γ or 11Δ (for example construction). Message: "Domestic reverse charge needs specialist classification."
-- **R-CY-4: Ship management and maritime services.** Trigger: shipping or maritime services. Message: "Ship management and tonnage tax structures need specialist advice."
-- **R-CY-5: Special schemes.** Trigger: tour operator margin scheme, second-hand goods or car margin schemes, investment gold, farmers' scheme, urban taxi scheme, cash accounting, the small business scheme (SME-SS), OSS / IOSS. Message: "Special schemes need specialist computation."
-- **R-CY-6: Immovable property.** Trigger: sale, lease or construction of property, including the 5% main-residence scheme. Message: "Immovable property needs specialist review."
-- **R-CY-7: Distance sales.** Trigger: B2C sales of goods to other member states, or distance sales into Cyprus by a foreign seller. Message: "The distance-sales threshold and OSS position must be checked by an accountant."
-
-## Section 4: Supplier pattern library
-
-Match by case-insensitive substring. Most specific match wins. "No input VAT" means nothing goes in Box 4; the Box 7 column says whether the net value still belongs in Box 7.
-
-### 4.1 Cypriot banks
-
-| Pattern | Treatment | Box 7 | Notes |
-| --- | --- | --- | --- |
-| BANK OF CYPRUS, BOC | Exempt: no input VAT for bank charges and fees | Yes (exempt purchase) | Exempt financial service |
-| HELLENIC BANK | Same | Yes | Same |
-| RCB BANK | Same | Yes | Same |
-| EUROBANK CYPRUS | Same | Yes | Same |
-| ASTROBANK | Same | Yes | Same |
-| REVOLUT, WISE, N26 (fee lines) | Exempt fee lines | Yes | Check for taxable subscription invoices |
-| TOKOI, INTEREST | EXCLUDE | No | Interest is not a supply to the business |
-| DANEIO, LOAN | EXCLUDE | No | Loan principal |
-
-### 4.2 Cypriot government and statutory bodies
-
-| Pattern | Treatment | Box 7 | Notes |
-| --- | --- | --- | --- |
-| TAX DEPARTMENT, TMHMA FOROLOGIAS | EXCLUDE | No | Tax payment |
-| SOCIAL INSURANCE, KOINONIKON ASFALISION | EXCLUDE | No | Contribution to a fund |
-| REGISTRAR OF COMPANIES | EXCLUDE | No | Fees and duties |
-| CYPRUS STOCK EXCHANGE | Ask | Ask | Regulatory fee or taxable service: check invoice |
-
-### 4.3 Cypriot utilities
-
-| Pattern | Treatment | Box | Notes |
-| --- | --- | --- | --- |
-| EAC, ELECTRICITY AUTHORITY CYPRUS | Domestic 19% | 4 (input) | Electricity. Only tariff 08 is in the 5% row |
-| WATER BOARD, SYMVOULIO YDATOPROMITHEIAS | Domestic 5% | 4 (input) | Water is in the 5% row |
-| CYTA, CYTANET | Domestic 19% | 4 (input) | Telecoms |
-| EPIC, PRIMETEL | Domestic 19% | 4 (input) | Telecoms |
-
-### 4.4 Insurance
-
-| Pattern | Treatment | Box 7 | Notes |
-| --- | --- | --- | --- |
-| GENERAL INSURANCE CYPRUS | Exempt: no input VAT | Yes | Insurance is exempt (Seventh Schedule, Table B) |
-| CNP CYPRIALIFE | Same | Yes | Same |
-| ALLIANZ CYPRUS | Same | Yes | Same |
-| ATLANTIC INSURANCE | Same | Yes | Same |
-| ASFALEIA, INSURANCE | Same | Yes | Same |
-
-### 4.5 Post and logistics
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| CYPRUS POST, KYPRIAKO TACHYDROMEIO | Exempt: no input VAT | The exemption covers services by Cyprus Post as a public body |
-| AKIS EXPRESS, ACS COURIER CY | Domestic 19% | Private couriers are not covered by the Cyprus Post exemption |
-| DHL INTERNATIONAL | Check invoice entity | Reverse charge if billed from abroad |
-
-### 4.6 Transport
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TAXI | Domestic 9% | Urban, intercity and rural taxis are in the 9% row |
-| INTERCITY BUSES, TRAVEL EXPRESS | Domestic 9% | Intercity and tourist buses are in the 9% row |
-| URBAN BUS, RURAL BUS | Domestic 5% | Urban and rural buses are in the 5% row |
-| RYANAIR, WIZZ AIR (international) | No Cyprus input VAT unless the ticket shows it | Check the ticket |
-
-### 4.7 Food retail and restaurants
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ALPHAMEGA, PAPANTONIOU, LIDL CY, CARREFOUR CY | Default BLOCK | Personal provisioning |
-| RESTAURANT, ESTIATORIO, TAVERNA | Default BLOCK | Entertainment (Section 5.11) |
-
-### 4.8 SaaS: EU suppliers (reverse charge: Boxes 1, 4, 6, 7 and 11B)
-
-| Pattern | Billing entity | Notes |
-| --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | EU reverse charge |
-| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | Reverse charge |
-| ADOBE | Adobe Systems Software Ireland Ltd (IE) | Reverse charge |
-| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | Reverse charge |
-| LINKEDIN | LinkedIn Ireland Unlimited (IE) | Reverse charge |
-| SPOTIFY | Spotify AB (SE) | EU reverse charge |
-| DROPBOX | Dropbox International Unlimited (IE) | Reverse charge |
-| SLACK | Slack Technologies Ireland Ltd (IE) | Reverse charge |
-| ATLASSIAN | Atlassian Network Services BV (NL) | EU reverse charge |
-| ZOOM | Zoom Video Communications Ireland Ltd (IE) | Reverse charge |
-| AWS EMEA SARL | AWS EMEA SARL (LU) | LU = EU reverse charge |
-
-### 4.9 SaaS: non-EU suppliers (reverse charge: Boxes 1, 4, 6 and 7; not 11B)
-
-| Pattern | Billing entity | Notes |
-| --- | --- | --- |
-| NOTION | Notion Labs Inc (US) | Non-EU reverse charge |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | Non-EU reverse charge |
-| OPENAI, CHATGPT | OpenAI Inc (US) | Non-EU reverse charge |
-| GITHUB | GitHub Inc (US) | Check if billed by an EU entity |
-| FIGMA | Figma Inc (US) | Non-EU reverse charge |
-| CANVA | Canva Pty Ltd (AU) | Non-EU reverse charge |
-
-### 4.10 Payment processors
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | Default taxable, reverse charge: output VAT in Box 1, input VAT in Box 4, value in Boxes 6 and 7, plus 11B when billed by an EU entity | The exemptions page puts processing, clearing and authorisation services for card payments at the standard rate. Treat a fee as exempt only where the invoice shows an exempt payment service. |
-| PAYPAL (transaction fees) | Same | Same |
-
-### 4.11 Professional services (Cyprus)
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| DIKIGOROS, LAWYER, ADVOCATE | Domestic 19% | Legal |
-| LOGISTIS, ACCOUNTANT, AUDITOR | Domestic 19% | Accounting |
-| SYMVOLAIOGRAFOS, NOTARY | Domestic 19% | Notary |
-
-### 4.12 Payroll and contributions
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| KOINONIKES ASFALISIS, SOCIAL INSURANCE | EXCLUDE (not in Box 7) | Contributions to funds |
-| SALARY, MISTHOS | EXCLUDE (not in Box 7) | Wages |
-
-### 4.13 Property and rent
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ENOIKIO, RENT (commercial, invoice shows VAT) | Domestic 19% | Commercial lease with VAT charged |
-| ENOIKIO, RENT (residential or no VAT) | No input VAT; Box 7 if a business expense | Refer property questions (R-CY-6) |
-
-### 4.14 Internal transfers and exclusions
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| OWN TRANSFER, INTERNAL | EXCLUDE | Internal movement |
-| MERISMA, DIVIDEND | EXCLUDE | Not a supply |
-| LOAN REPAYMENT | EXCLUDE | Loan principal |
-| ATM, CASH WITHDRAWAL | Ask | Default exclude |
-
-## Section 5: Classification rules
-
-### 5.1 Standard rate
-
-Default rate for any supply not in a reduced row of the rates table in Section 1. Output VAT in Box 1, value in Box 6. Input VAT in Box 4, value in Box 7.
-
-### 5.2 Reduced rates
-
-Use only the items the rates table lists for each band. Common traps from the live page:
-- Taxis and intercity or tourist buses are in the 9% row; urban and rural buses are in the 5% row.
-- Books, newspapers and magazines are in the 3% row, not the 5% row.
-- Alcoholic drinks, beer, wine and soft drinks are excluded from the 5% food row (the rates page prints the word as 'καρασί').
-- Electricity is standard rated except tariff 08.
-- The 3% row is not a social housing rate.
-
-### 5.3 The 5% rate on a main residence
-
-From Tax Department circular 11/2023 (a scanned document; only clean fragments are quoted). The rules apply under the amending law in force from 16 June 2023. The rates page lists this purchase or construction in the 5% row only "μετά από έγκριση του Εφόρου" (after the Commissioner's approval).
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/01/%CE%95%CE%95-11_2023.pdf |
-| The 5% rate covers the first 130 square metres of buildable area, and only up to this value | EUR 350,000 | "η αξία είναιμέχρι €350.000" |
-| If the total value of the purchase or construction exceeds this, the standard rate applies to the WHOLE amount (a cliff) | EUR 475,000 | "πέντε χιλιάδες ευρώ (€475.000), επιβάλλεται Φ.Π.Α. με τον εκάστοτε ισχύοντα κανονικό συντελεστή" |
-
-- Area cliff: the 5% rate does not apply at all where the total buildable area "υπερβαίνει τα 190 τετραγωνικά μέτρα" (exceeds 190 square metres). The circular joins the area and value tests with "ή/και" (and/or): failing either one loses the whole relief.
-- Between the two levels the 5% rate is applied pro rata to the square metres, as the circular sets out. The circular also has special rules for large families and for people with disabilities.
-- If the owner stops using the home as a residence within ten years, they must tell the Commissioner within thirty days and pay the difference from the standard rate for the unused period; the Tax Department raises the debt by issuing a VAT Return for Special Cases (Δήλωση Φ.Π.Α. για Ειδικές Περιπτώσεις). Sources: https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/ and https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-dilosis-f-p-a-gia-eidikes-periptoseis/
-- For a VAT return, this matters to a developer or contractor deciding which rate to charge. Refer every case (R-CY-6).
-
-### 5.4 Zero rate and EU supplies
-
-- Exports of goods and the ship and aircraft supplies in the 0% row: value in Box 9 and Box 6.
-- Supplies of goods to other EU member states: value in Box 8A and Box 6, and file VIES.
-- Services to taxable persons in other EU member states where the customer accounts for the VAT: value in Box 8B and Box 6, and file VIES. Verify the customer's VAT number.
-- International passenger transport sold by a Cyprus business: 0% (table in Section 1), value in Box 9 and Box 6.
-
-### 5.5 Exempt supplies
-
-The exempt supplies are in the Seventh Schedule, Tables A and B, of the VAT Law. The Tax Department exemptions page lists, among others: services by Cyprus Post as a public body; hospital and medical care by recognised health professionals; education by public schools and registered private schools and institutes; insurance and reinsurance; credit, bank account, card and other financial services; lotteries, betting and gambling. Property exemptions are on a separate page (R-CY-6). The same page puts card processing, clearing and authorisation services and the collection of third-party receivables at the standard rate. Source: https://www.gov.cy/mof-tax/documents/exairoymenes-synallages/
-
-Exempt sales go in Box 6 (no VAT in Box 1). Exempt purchases go in Box 7 (no VAT in Box 4).
-
-### 5.6 Reverse charge: services received from another EU member state
-
-For services whose place of supply is Cyprus (article 11), received from a taxable person in another member state: self-assess output VAT in **Box 1** (not Box 2), claim input VAT in Box 4 under the conditions of article 21, enter the value in **Boxes 6 and 7**, and also in **Box 11B**.
-
-### 5.7 Reverse charge: services received from outside the EU
-
-Output VAT in **Box 1**, input VAT in Box 4 under article 21, value in **Boxes 6 and 7**. Nothing in Box 11B.
-
-### 5.8 Acquisitions of goods from another EU member state
-
-Output VAT in **Box 2**, input VAT in Box 4 under article 21, value in **Boxes 7 and 11A**. The tax point is the earlier of the supplier's invoice date and the 15th day of the month after the goods were sent.
-
-### 5.9 Imports of goods from outside the EU
-
-VAT paid on import goes in Box 4. The value of goods cleared through customs in the period goes in Box 7.
-
-### 5.10 Domestic reverse charge (articles 11A to 11Δ)
-
-Output VAT in Box 1, input VAT in Box 4 under article 21, value in Boxes 6 and 7. Refer (R-CY-3).
-
-### 5.11 Input VAT that must not go in Box 4
-
-The return guide says do not include VAT on:
-- purchases for private use;
-- business entertainment of employees or of persons engaged in managing a company ("για επιχειρηματική ψυχαγωγία σε εργοδοτούμενους, ή σε πρόσωπα που ασχολούνται με τη διεύθυνση εταιρείας");
-- second-hand goods bought under the second-hand goods scheme;
-- payments to the Tax Department under an assessment.
-
-To claim any input VAT, the business must hold a tax invoice dated in the period. Credit notes received reduce Box 4.
-
-Client entertainment and motor vehicles. The Tax Department's General VAT Guide (Information Leaflet 10, dated November 2001, still published on gov.cy) lists among the VAT that may not be deducted: the purchase, hire or import of a motor car, other than taxis, hire cars and driving-school cars, where "car" means an ordinary passenger car and excludes single-seaters, vehicles with more than ten seats, commercial and van-type vehicles, caravans, ambulances and vehicles over three tonnes; and business entertainment expenses, without limiting them to employees or managers. The guide predates the current law, so this skill keeps the conservative default (block, ask, refer) and does not restate the rule as current law. Source: https://www.gov.cy/media/sites/167/2026/01/%CE%93%CE%B5%CE%BD%CE%B9%CE%BA%CF%8C%CF%82-%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%A6.%CE%A0.%CE%91.-%CE%95%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CF%84%CE%B9%CE%BA%CF%8C-%CE%88%CE%BD%CF%84%CF%85%CF%80%CE%BF-10.pdf
-
-### 5.12 Output VAT that is easy to miss
-
-The return guide lists output VAT due in Box 1 beyond normal sales, including: services received from abroad and reverse charge purchases; commission on sales made for third parties; sales of fixed assets; goods taken for private use; VAT on self-billed invoices; VAT refunded for bad debts that are later recovered; and gifts of goods above a cost limit (table below). Credit notes issued reduce Box 1.
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/01/%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%B3%CE%B9%CE%B1-%CE%A3%CF%85%CE%BC%CF%80%CE%BB%CE%AE%CF%81%CF%89%CF%83%CE%B7-%CE%94%CE%AE%CE%BB%CF%89%CF%83%CE%B7%CF%82-%CE%A6%CE%A0%CE%91-06082024.pdf |
-| Goods given as gifts: output VAT is due when the cost exceeds this (see circular 195) | EUR 17 | "δώρα όταν το κόστος υπερβαίνει το ποσό των €17" |
-
-### 5.13 Return format rules
-
-From the same return guide:
-- Boxes 1 to 5 are VAT amounts: two decimals, with a comma as the decimal sign, not a point, no thousands separators, a minus sign for a negative amount, "0" when empty. Box 3 must equal Box 1 plus Box 2, and Box 5 must equal Box 3 minus Box 4.
-- Boxes 6 to 11B are values without VAT, rounded to the nearest euro, "0" when empty.
-- Box 6 must be at least the sum of Boxes 8A, 8B, 9, 10 and 11B. Box 7 must be at least the sum of Boxes 11A and 11B.
-- Leave out of Box 6: capital you put into the business, loans, dividends, insurance compensation, and stock exchange transactions (unless you are a financial institution).
-- Leave out of Box 7: wages, contributions to funds, money donations, interest, dividends, taxes and fees.
-- Triangular transactions as the intermediate supplier: purchase value in Box 7, sale value in Boxes 6 and 10.
-- A negative Box 5 is a credit. It can be carried forward, set off against other tax owed, or claimed back on form 4B with the return if the conditions for a refund are met.
-
-## Section 6: Tier 2 catalogue
-
-### 6.1 Fuel and vehicle costs
-
-Default: no recovery. Question: "Vehicle type and business-use percentage?" Refer (Section 5.11).
-
-### 6.2 Entertainment
-
-Default: block. Question: "Who was entertained, and for what business purpose?"
-
-### 6.3 Ambiguous SaaS
-
-Default: non-EU reverse charge. Question: "Check invoice entity."
-
-### 6.4 Owner transfers
-
-Default: exclude. Question: "Customer payment, own money, or loan?"
-
-### 6.5 Individual incoming
-
-Default: domestic B2C at the standard rate. Question: "Sale? Country?"
-
-### 6.6 Foreign incoming
-
-Default: standard rate. Question: "B2B? Country? VAT number?"
-
-### 6.7 Large purchases
-
-Default: deductible if business use is confirmed; flag if a capital item. Question: "Useful life more than one year?"
-
-### 6.8 Mixed-use telecom or home office
-
-Default: no recovery. Question: "Business line or mixed?"
-
-### 6.9 Outgoing to individuals
-
-Default: exclude. Question: "Contractor, wages, or personal?"
-
-### 6.10 Cash withdrawals
-
-Default: exclude. Question: "Cash purpose?"
-
-### 6.11 Rent
-
-Default: no input VAT unless the invoice shows VAT. Question: "Commercial or residential? Does the landlord charge VAT?"
-
-### 6.12 Basic goods around 30 September 2026
-
-Default: 0% only for supplies made up to and including 30 September 2026; the normal rate after. Question: "Which sales of baby milk, nappies, meat, fish or fruit and vegetables fall before and after 1 October 2026?"
-
-## Section 7: Worked examples
-
-All amounts in these examples are hypothetical bank lines in euro. The arithmetic is checked in `quality-cases.json`.
-
-### Example 1: Non-EU SaaS reverse charge (Notion)
-
-**Input line:**
-`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; -14.68 ; EUR`
-
-**Reasoning:**
-US supplier, service received from outside the EU. Self-assess output VAT at the standard rate in Box 1. Claim the same amount in Box 4 if the service is used for taxable supplies. Value in Boxes 6 and 7. Nothing in Box 11B. Net VAT effect zero.
-
-| Date | Counterparty | Net | VAT | Rate | Box (input) | Box (output) | Value boxes | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | 14.68 | 2.79 | 19% | 4 | 1 | 6, 7 | N |
-
-### Example 2: EU service reverse charge (Google Ads)
-
-**Input line:**
-`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads ; -850.00 ; EUR`
-
-**Reasoning:**
-Irish supplier, service received from another member state. Output VAT in Box 1, input in Box 4, value in Boxes 6, 7 and 11B.
-
-| Date | Counterparty | Net | VAT | Rate | Box (input) | Box (output) | Value boxes | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | GOOGLE IRELAND LIMITED | 850.00 | 161.50 | 19% | 4 | 1 | 6, 7, 11B | N |
-
-### Example 3: Entertainment
-
-**Input line:**
-`15.04.2026 ; COLUMBIA STEAK HOUSE LIMASSOL ; DEBIT ; Business dinner ; -220.00 ; EUR`
-
-**Reasoning:**
-Restaurant bill. The return guide bars input VAT on business entertainment of employees or company managers; the 2001 General VAT Guide blocks business entertainment generally. Default: block and ask who attended.
-
-| Date | Counterparty | Gross | VAT claimed | Box | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | COLUMBIA STEAK HOUSE | 220.00 | 0 | none | Y | "Who was entertained?" |
-
-### Example 4: Equipment purchase
-
-**Input line:**
-`18.04.2026 ; LOGITECH CYPRUS ; DEBIT ; Laptop ; -1,595.00 ; EUR`
-
-**Reasoning:**
-Business equipment bought in Cyprus with a tax invoice. Input VAT at the standard rate in Box 4, net value in Box 7.
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | LOGITECH CYPRUS | 1,595.00 | 1,340.34 | 254.66 | 19% | 4 (VAT), 7 (net) | N |
-
-### Example 5: EU B2B service sale
-
-**Input line:**
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; IT consultancy ; +3,500.00 ; EUR`
-
-**Reasoning:**
-Service to a German business. The customer accounts for the VAT in Germany. No Cyprus VAT; value in Boxes 8B and 6; include on the VIES statement. Verify the customer's VAT number.
-
-| Date | Counterparty | Net | VAT | Box | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | STUDIO KREBS GMBH | 3,500.00 | 0 | 8B, 6 | Y | "Verify the German VAT number" |
-
-### Example 6: Fuel
-
-**Input line:**
-`28.04.2026 ; PETROLINA STATIONS ; DEBIT ; Fuel ; -60.00 ; EUR`
-
-**Reasoning:**
-Fuel. Business use unknown and the 2001 General VAT Guide blocks VAT on passenger cars; fuel is not addressed. Default: no recovery, ask, refer.
-
-| Date | Counterparty | Gross | VAT claimed | Box | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | PETROLINA STATIONS | 60.00 | 0 | none | Y | "Vehicle and business-use percentage?" |
-
-## Section 8: Excel working paper template (Cyprus-specific)
-
-Per `vat-workflow-base` Section 3. Column H accepts the Cyprus return box codes (1 to 11B). Sheet "Box Summary" maps directly to the return. Check the format rules in Section 5.13 before filing. Bottom line: Box 5 (Box 3 minus Box 4).
-
-## Section 9: Cyprus bank statement reading guide
-
-**CSV conventions.** Bank of Cyprus and Hellenic Bank typically use comma delimiters and DD/MM/YYYY dates.
-
-**Greek language variants.** Enoikio (rent), misthos (salary), tokoi (interest), metafora (transfer). Treat as the English equivalent.
-
-**Internal transfers.** "Own transfer", "esoteriki metafora". Exclude.
-
-**IBAN prefix.** CY = Cyprus. IE, DE, NL = EU. US, GB = non-EU.
-
-## Section 10: Onboarding fallback
-
-### 10.1 Entity type
-
-Inference: Ltd = company; otherwise sole trader. Fallback: "Company or self-employed?"
-
-### 10.2 VAT registration
-
-Fallback: "Are you VAT-registered? If not, have your taxable sales in the last twelve months passed the registration threshold?"
-
-### 10.3 VAT number
-
-Fallback: "CY VAT number? (CY + 8 digits + letter)"
-
-### 10.4 Filing period
-
-Inference: quarterly. Fallback: "Which tax period does your registration certificate show?"
-
-### 10.5 Industry
-
-Fallback: "What does the business do?"
-
-### 10.6 Exempt supplies
-
-Fallback: "Any exempt supplies?" If yes: R-CY-2.
-
-### 10.7 Credit brought forward
-
-Fallback: "Excess VAT credit from the prior period?"
-
-### 10.8 Cross-border customers
-
-Fallback: "Customers outside Cyprus? Businesses or consumers?"
-
-## The method, step by step
-
-1. Confirm the business must file: registered, or required to register under the tests in the VAT registration page (https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/). If not, R-CY-1.
-2. Confirm the tax period on the registration certificate and the deadline: the 10th day after the end of the month following the period, moved to the next working day if it falls on a weekend or holiday (https://www.gov.cy/mof-tax/prothesmies/).
-3. Classify each sale by the rates page (https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/): standard, 9%, 5%, 3%, 0%, exempt (https://www.gov.cy/mof-tax/documents/exairoymenes-synallages/), or EU or out-of-scope. Split basic goods at 30 September 2026.
-4. Classify each purchase with the supplier library and the reverse charge rules in Sections 5.6 to 5.10, which follow the Tax Department return guide (https://www.gov.cy/media/sites/167/2026/01/%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%B3%CE%B9%CE%B1-%CE%A3%CF%85%CE%BC%CF%80%CE%BB%CE%AE%CF%81%CF%89%CF%83%CE%B7-%CE%94%CE%AE%CE%BB%CF%89%CF%83%CE%B7%CF%82-%CE%A6%CE%A0%CE%91-06082024.pdf). Services from abroad: output VAT in Box 1. Goods from the EU: output VAT in Box 2.
-5. Remove blocked input VAT (Section 5.11) and add easy-to-miss output VAT (Section 5.12).
-6. Fill Boxes 1 to 11B and run the format checks in Section 5.13.
-7. Check for errors in earlier returns. Correct them in this return only within the limit and the three-year window in the corrections FAQ (https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-se-schesi-me-tis-diorthoseis-lathon/); otherwise write to the Tax Department through TFA.
-8. File in TFA and pay by the deadline, or claim the credit or a refund on form 4B (https://www.gov.cy/media/sites/167/2026/01/%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%B3%CE%B9%CE%B1-%CE%A3%CF%85%CE%BC%CF%80%CE%BB%CE%AE%CF%81%CF%89%CF%83%CE%B7-%CE%94%CE%AE%CE%BB%CF%89%CF%83%CE%B7%CF%82-%CE%A6%CE%A0%CE%91-06082024.pdf). File VIES by the 15th day after each month with EU supplies (https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/).
+| 4 | Input VAT deductible this period, including on EU acquisitions and reverse-charge purchases |
+| 5 | VAT payable or repayable (Box 3 - Box 4) |
+| 6 | Total outputs without VAT, including Boxes 8A, 8B, 9, 10 and 11B |
+| 7 | Total inputs without VAT, including Boxes 11A and 11B |
+| 8A | Supplies of goods (and linked services) to other EU member states |
+| 8B | Services to taxable persons in other EU member states where the customer accounts for the VAT |
+| 9 | Zero-rated outputs other than 8A and 8B, exports included |
+| 10 | Out-of-scope sales with the right to deduct (other than 8B), including triangular sales and OSS sales |
+| 11A | Acquisitions of goods (and linked services) from other EU member states |
+| 11B | Services received from taxable persons in other EU member states |
+
+Where things go:
+- Services from another EU state (place of supply Cyprus, art. 11): output VAT in Box 1 (not Box 2), input in Box 4, value in Boxes 6, 7 and 11B.
+- Services from outside the EU: output VAT in Box 1, input in Box 4, value in Boxes 6 and 7. Nothing in 11B.
+- Goods from another EU state: output VAT in Box 2, input in Box 4, value in Boxes 7 and 11A. The tax point is the earlier of the supplier's invoice and the 15th day of the month after dispatch.
+- Imports from outside the EU: VAT paid at import in Box 4; value in Box 7.
+- Exports and other zero-rated sales: Boxes 9 and 6. EU B2B goods: 8A and 6. EU B2B services: 8B and 6. Both go on VIES.
+- Exempt sales go in Box 6 only. Exempt purchases go in Box 7 only.
+- Triangular sales as the middle supplier: purchase value in Box 7, sale value in Boxes 6 and 10.
+
+Format rules: Boxes 1 to 5 are amounts with two decimals and a comma as the decimal sign, no thousands separators, a minus sign for a negative, "0" when empty. Boxes 6 to 11B are rounded to whole euro. Box 3 must equal Box 1 + Box 2, and Box 5 must equal Box 3 - Box 4. Box 6 must be at least 8A + 8B + 9 + 10 + 11B, and Box 7 at least 11A + 11B. Leave out of Box 6: capital put in, loans, dividends, insurance claims and share dealing (unless a financial institution). Leave out of Box 7: wages, contributions to funds, money donations, interest, dividends, taxes and fees. A negative Box 5 is a credit: carry it forward, set it off against other tax, or claim it on form 4B with the return if the refund conditions are met.
+
+### Classifying a bank statement
+
+Defaults when a fact is missing: unknown sale rate 19%; unknown purchase status not deductible; unknown counterparty country Cyprus; unknown EU customer status B2C with Cyprus VAT; unknown business use no recovery; unknown SaaS billing entity non-EU reverse charge; unknown blocked status blocked; unknown scope in scope. Flag for the reviewer any large single item, any default that moves the VAT due materially, one counterparty dominating the quarter, many defaults in one quarter, and a large net payable or repayable.
+
+| Pattern on the statement | Treatment |
+|---|---|
+| Bank fees: Bank of Cyprus, Hellenic Bank, RCB, Eurobank Cyprus, Astrobank; Revolut, Wise, N26 fee lines | Exempt: no input VAT, value in Box 7. Check for taxable subscription invoices |
+| Interest (tokoi), loan principal (daneio), dividends (merisma), own transfers, salaries (misthos), Social Insurance, Tax Department, Registrar of Companies | Exclude from the return |
+| EAC electricity | 19% for business tariffs; household tariffs as in the rates table |
+| Water Board | 5% |
+| CYTA, Epic, PrimeTel telecoms; lawyers, accountants, notaries | 19% |
+| Insurers (General Insurance Cyprus, CNP Cyprialife, Allianz, Atlantic) | Exempt: no input VAT, value in Box 7 |
+| Cyprus Post | Exempt. Private couriers (Akis Express, ACS) at 19%. DHL: check the billing entity |
+| Taxis, intercity buses | 9%. Urban and rural buses 5%. Airlines: no Cyprus VAT unless the ticket shows it |
+| Supermarkets, restaurants | Block by default (private provisioning, entertainment); ask who and why |
+| Google, Microsoft, Adobe, Meta, LinkedIn, Dropbox, Slack, Zoom (Irish entities), Spotify (SE), Atlassian (NL), AWS EMEA (LU) | EU reverse charge: Boxes 1, 4, 6, 7, 11B |
+| Notion, Anthropic, OpenAI, Figma (US), Canva (AU); GitHub unless billed from the EU | Non-EU reverse charge: Boxes 1, 4, 6, 7 |
+| Stripe, PayPal fees | 19% reverse charge (11B when billed from the EU) unless the invoice shows an exempt payment service |
+| Rent (enoikio) | 19% only if the invoice shows VAT; otherwise no input VAT; refer property questions |
+| Fuel, cars | No recovery by default; ask vehicle type and business use |
+| ATM and cash withdrawals | Exclude by default; ask the purpose |
+
+Bank exports from Bank of Cyprus and Hellenic Bank usually use comma delimiters and DD/MM/YYYY dates. Greek words to recognise: enoikio (rent), misthos (salary), tokoi (interest), metafora (transfer). An IBAN starting CY is Cyprus; IE, DE, NL and other EU prefixes are EU; US and GB are outside the EU.
+
+## Deadlines and filing
+
+- **Tax periods.** Usually quarterly, set at registration from the business's activity code; the Commissioner may allow or require monthly periods (Κ.Δ.Π. 314/2001 reg. 17). Quarters are not always calendar quarters: the official calendar shows quarters such as May to July and June to August.
+- **Return and payment.** By the 10th day after the end of the month that follows the end of the period (reg. 17). Examples from the official calendar: quarter January to March 2026 due 10 May 2026; April to June 2026 due 10 August 2026; May to July 2026 due 10 September 2026. A deadline on a weekend or public holiday moves to the next working day.
+- **Where.** Electronically through Tax For All (TFA). Before the deadline a business can amend its own return in TFA. Boxes 6 to 11B of a return whose deadline is after 27 March 2023 can be amended in TFA by the business; older returns need a written request.
+- **Correcting errors.** Errors in earlier returns go in the current period's VAT account under reg. 24 only if the net total of all errors found is not more than EUR 1,708.60 and the period is less than three years old. The net total sets under-declared output VAT and over-claimed input VAT against over-declared output VAT and under-claimed input VAT. Otherwise the business writes to the Tax Department through TFA.
+- **VIES recapitulative statement.** Monthly, by the 15th day after the end of each month in which the business supplied goods or services to a person registered in another member state (art. 42Γ(2)). A corrective statement is due within one month of the end of the month it concerns.
+- **Records and invoices.** Keep records as the Tenth Schedule para. 5 and regs 22 and 23 require. A retailer must issue a VAT invoice to a taxable customer who asks for one when the price passes EUR 85 (reg. 14).
+
+## Penalties and interest
+
+| Failure | Charge | Source |
+|---|---|---|
+| Late notification of the obligation to register | EUR 85 for each month the failure lasts | VAT Law art. 45(1) |
+| Return not received by the deadline | EUR 100 per return | VAT Law art. 45(2) |
+| VAT shown on a return not paid by the deadline, or VAT assessed by the Commissioner | Additional tax of 10% of the VAT due | VAT Law art. 45(3) |
+| Interest on VAT subject to the 10% | 9% a year from the day the VAT became due | VAT Law art. 45(4) |
+| Reverse charge not applied (arts 11 to 11Ε, 12Α) | EUR 200 per tax period, at most EUR 4,000 | VAT Law art. 45(7Β) |
+| VIES statement not received by the deadline | EUR 50 | VAT Law art. 45Β |
+| VIES statement wrong and not corrected in time | EUR 15 | VAT Law art. 45Α(1) |
+| Not issuing a legal receipt to a consumer | Up to 20% of the transaction value | Tax Department rights and obligations page |
+
+The Tax Department VAT return FAQ confirms the EUR 100 charge, the 10% additional tax and default interest for a missing return, and says TFA also raises an estimated assessment. The EUR 51 late-return figure sometimes quoted is not the law in force: art. 45(2) says EUR 100.
+
+## Cross-border points
+
+- **EU B2B services out:** no Cyprus VAT; Boxes 8B and 6; VIES. Check the customer's VAT number in VIES before invoicing.
+- **EU B2B goods out:** 0%; Boxes 8A and 6; VIES.
+- **EU distance sales of goods and TBE services to consumers:** while the EU-wide total stays within EUR 10,000 in the current and previous calendar year, Cyprus VAT applies; above it, VAT is due in the customer's state, usually through the OSS (art. 10(4Α)). Refer OSS and IOSS work.
+- **Non-established businesses** register as soon as they make taxable supplies in Cyprus where the customer does not self-account.
+- **EU small business scheme (Law 104(I)/2025, from 1 January 2025):** a Cyprus business with EU turnover up to EUR 100,000 can use another state's exemption, and a business from another state can use the Cyprus exemption. Refer.
+- **Imports:** VAT is paid at customs and claimed in Box 4.
+- **Passenger transport:** domestic sea passenger transport is at 9%; international passenger transport is 0% to the extent it takes place in Cyprus.
+
+## Worked examples
+
+### Example 1: a Limassol consultancy's January to March 2026 return
+
+A registered consultancy in Limassol sells EUR 40,000 of consulting to Cyprus clients in January to March 2026, all at 19%. It buys Google Ads from Google Ireland Ltd for EUR 2,000 (an EU service, so the business reverse-charges it) and has Cyprus purchase invoices showing EUR 3,800 of input VAT, all for its taxable business.
+
+Output VAT on sales is 40,000 x 19% = EUR 7,600. The Google service adds 2,000 x 19% = EUR 380 to Box 1 and the same EUR 380 to Box 4. Box 1 is EUR 7,980. Box 4 is 3,800 + 380 = EUR 4,180. Box 5 is EUR 3,800. Box 6 includes the EUR 2,000 service as well as the EUR 40,000 of sales, and Boxes 7 and 11B include the EUR 2,000. The return and payment are due on 10 May 2026.
+
+```oa-check
+name: Limassol consultancy, Q1 2026, 19% sales plus an EU reverse-charge service
+inputs:
+  sales: 40000
+  google_ads: 2000
+  domestic_input_vat: 3800
+steps:
+  - vat_sales: sales * 19 / 100
+  - vat_reverse_charge: google_ads * 19 / 100
+  - box_1: vat_sales + vat_reverse_charge
+  - box_4: domestic_input_vat + vat_reverse_charge
+  - box_5: box_1 - box_4
+expected:
+  vat_sales: 7600
+  vat_reverse_charge: 380
+  box_1: 7980
+  box_4: 4180
+  box_5: 3800
+```
+
+### Example 2: a grocer's August to October 2026 quarter, filed and paid late
+
+A Nicosia grocer has a quarter running August to October 2026. Its sales, without VAT, are: fresh fish EUR 30,000 in August and September and EUR 10,000 in October; listed fresh fruit and vegetables EUR 20,000 across the quarter; bread and milk EUR 12,000 from 1 August to 11 October and EUR 4,000 from 12 to 31 October; other food EUR 50,000; soft drinks EUR 8,000. Input VAT on purchase invoices is EUR 3,000.
+
+Fish is at 0% for the whole quarter: to 30 September under Κ.Δ.Π. 168/2026 and from 1 October under Κ.Δ.Π. 354/2026. The fruit and vegetables are at 0% (Κ.Δ.Π. 337/2025 runs to 31 December 2026). Bread and milk are at the 5% food rate up to 11 October, 12,000 x 5% = EUR 600, and at 0% from 12 October (Κ.Δ.Π. 354/2026). Other food is at 5%: EUR 2,500. Soft drinks are excluded from the food rate, so 19%: EUR 1,520. Output VAT is 600 + 2,500 + 1,520 = EUR 4,620 and Box 5 is 4,620 - 3,000 = EUR 1,620.
+
+The return and payment were due on 10 December 2026. The grocer files and pays in January 2027. The late return costs EUR 100 (art. 45(2)) and the late payment adds 10% of the VAT due, EUR 162 (art. 45(3)): EUR 262 before interest at 9% a year (art. 45(4)).
+
+```oa-check
+name: Grocer, Aug-Oct 2026, basic goods split by date, late return and payment
+inputs:
+  fish_aug_sep: 30000
+  fish_oct: 10000
+  fruit_veg: 20000
+  bread_milk_to_11_oct: 12000
+  bread_milk_from_12_oct: 4000
+  other_food: 50000
+  soft_drinks: 8000
+  input_vat: 3000
+  late_return_charge: 100
+steps:
+  - vat_fish: (fish_aug_sep + fish_oct) * 0 / 100
+  - vat_fruit_veg: fruit_veg * 0 / 100
+  - vat_bread_milk_5: bread_milk_to_11_oct * 5 / 100
+  - vat_bread_milk_0: bread_milk_from_12_oct * 0 / 100
+  - vat_food: other_food * 5 / 100
+  - vat_drinks: soft_drinks * 19 / 100
+  - output_vat: vat_fish + vat_fruit_veg + vat_bread_milk_5 + vat_bread_milk_0 + vat_food + vat_drinks
+  - vat_payable: output_vat - input_vat
+  - additional_tax: vat_payable * 10 / 100
+  - charges_before_interest: late_return_charge + additional_tax
+expected:
+  vat_fish: 0
+  vat_bread_milk_5: 600
+  vat_food: 2500
+  vat_drinks: 1520
+  output_vat: 4620
+  vat_payable: 1620
+  additional_tax: 162
+  charges_before_interest: 262
+```
 
 ## Ask the client first
 
-- Which tax period does your VAT registration certificate show (quarter ending which month, or monthly)?
-- Do you make any exempt supplies, such as financial services, insurance, medical care, education, or property letting? (Partial exemption, R-CY-2.)
-- Do you sell to customers in other EU countries, and are they businesses with VAT numbers or consumers? (Boxes 8A and 8B, VIES, distance sales.)
-- Do you buy services or goods from suppliers outside Cyprus? Which entity bills you? (Box 1 or Box 2, and 11A or 11B.)
-- Did you sell baby milk, nappies, meat, fish or fruit and vegetables in a period that includes 30 September 2026?
-- Did you find errors in earlier returns, and how large are they in total? (The correction limit in Section 2.)
-
-## When to refuse or refer
-
-- Partial exemption, domestic reverse charge, ship management, any special scheme, property (including the 5% main-residence scheme), and distance sales: R-CY-2 to R-CY-7.
-- The business is not established in Cyprus, or is in the small business scheme (Law 104(I)/2025) or OSS / IOSS.
-- Errors in earlier returns above the correction limit or older than three years: the business must write to the Tax Department.
-- Client entertainment, cars and fuel, where the amount matters: the only source is the Tax Department's 2001 General VAT Guide, which predates the current law.
-- Late registration or unfiled returns: penalties, interest and possible estimated assessments.
+- Which tax period does the VAT registration certificate show (quarter ending which month, or monthly)?
+- Do you make any exempt supplies (financial services, insurance, medical care, education, letting)? If so, refer for partial exemption.
+- Do you sell to customers in other EU countries, and are they businesses with VAT numbers or consumers? (Boxes 8A and 8B, VIES, the EUR 10,000 distance-sales threshold.)
+- Which entity bills you for services and goods from abroad? (Box 1 or Box 2, and 11A or 11B.)
+- Do you buy or sell construction work, scrap metal, phones, laptops, tablets or consoles, or precious metals? (Domestic reverse charge.)
+- Did you sell meat, fish, bread, milk, coffee, sugar, baby food, baby milk, nappies, hygiene products or fruit and vegetables in the period, and on which dates? Have you found errors in earlier returns, and what is their net total?
 
 ## Sources
 
-1. Tax Department, VAT rates: https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/
-2. Tax Department, obligation and right to register for VAT: https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/
-3. Tax Department, submitting and amending VAT returns: https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/
-4. Tax Department, guide to completing the VAT return: https://www.gov.cy/media/sites/167/2026/01/%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%B3%CE%B9%CE%B1-%CE%A3%CF%85%CE%BC%CF%80%CE%BB%CE%AE%CF%81%CF%89%CF%83%CE%B7-%CE%94%CE%AE%CE%BB%CF%89%CF%83%CE%B7%CF%82-%CE%A6%CE%A0%CE%91-06082024.pdf
-5. Tax Department, VAT return FAQ: https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-dilosis-f-p-a/
-6. Tax Department, FAQ on correcting errors: https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-se-schesi-me-tis-diorthoseis-lathon/
-7. Tax Department, rights and obligations: https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/
-8. Tax Department, exempt transactions: https://www.gov.cy/mof-tax/documents/exairoymenes-synallages/
-9. Tax Department, circular 11/2023 on the 5% residence rate: https://www.gov.cy/media/sites/167/2026/01/%CE%95%CE%95-11_2023.pdf
-10. Tax Department, deadline calendar: https://www.gov.cy/mof-tax/prothesmies/
-11. VAT Law N.95(I)/2000 as amended, and Κ.Δ.Π. 314/2001 (cited by section in words).
-12. EU VAT Directive 2006/112/EC: via the `eu-vat-directive` skill.
-13. Consolidated VAT Law (Κ.Δ.Π. 221/2026): https://www.gov.cy/media/sites/167/2026/01/Consolidated-VAT-Law-%CE%9A%CE%94%CE%A0-221_2026.pdf
-14. Tax Department, General VAT Guide (Information Leaflet 10, November 2001): https://www.gov.cy/media/sites/167/2026/01/%CE%93%CE%B5%CE%BD%CE%B9%CE%BA%CF%8C%CF%82-%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%A6.%CE%A0.%CE%91.-%CE%95%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CF%84%CE%B9%CE%BA%CF%8C-%CE%88%CE%BD%CF%84%CF%85%CF%80%CE%BF-10.pdf
+| Source | URL | Read on |
+|---|---|---|
+| VAT Law 95(I)/2000, consolidated to Law 109(I)/2026 and Κ.Δ.Π. 221/2026 (CyLaw): arts 10, 11 to 11ΣΤ, 17, 18, 18Α, 18Β, 42Γ, 42Ε, 45, 45Α, 45Β, 61; First, Fifth, Sixth, Seventh, Eighth, Twelfth and Fifteenth Schedules | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html | 2026-10-24 |
+| Κ.Δ.Π. 337/2025 (0% on baby milk, nappies, hygiene products, fruit and vegetables, 1 Jan to 31 Dec 2026) | https://www.cylaw.org/KDP/data/2025_1_337.pdf | 2026-10-24 |
+| Κ.Δ.Π. 168/2026 (0% on meat and fish, 6 Apr to 30 Sep 2026) | https://www.cylaw.org/KDP/data/2026_1_168.pdf | 2026-10-24 |
+| Κ.Δ.Π. 354/2026 (0% on meat and fish 1 Oct 2026 to 31 May 2027; bread, milk, coffee, sugar, baby food 12 Oct 2026 to 31 May 2027) | https://www.cylaw.org/KDP/data/2026_1_354.pdf | 2026-10-24 |
+| Κ.Δ.Π. 362/2026 (0% on baby milk, nappies, hygiene products, fruit and vegetables, 1 Jan to 31 Dec 2027) | https://www.cylaw.org/KDP/data/2026_1_362.pdf | 2026-10-24 |
+| Κ.Δ.Π. 363/2026 (9% on home solar systems) | https://www.cylaw.org/KDP/data/2026_1_363.pdf | 2026-10-24 |
+| Κ.Δ.Π. 172/2026 (form to opt out of VAT on a commercial lease) | https://www.cylaw.org/KDP/data/2026_1_172.pdf | 2026-10-24 |
+| CyLaw index of 2026 regulatory acts (Κ.Δ.Π.) | https://www.cylaw.org/KDP/2026.html | 2026-10-24 |
+| Κ.Δ.Π. 82/2026 (9% household electricity from 1 Apr 2026) | https://www.cylaw.org/KDP/data/2026_1_82.pdf | 2026-10-24 |
+| Κ.Δ.Π. 167/2026 (5% household electricity, readings 1 May 2026 to 31 Mar 2027) | https://www.cylaw.org/KDP/data/2026_1_167.pdf | 2026-10-24 |
+| Κ.Δ.Π. 102/2026 and 103/2026 (renovation and first establishment, from 1 Sep 2026) | https://www.cylaw.org/KDP/data/2026_1_102.pdf; https://www.cylaw.org/KDP/data/2026_1_103.pdf | 2026-10-24 |
+| Κ.Δ.Π. 221/2026 (Seventh Schedule wording) | https://www.cylaw.org/KDP/data/2026_1_221.pdf | 2026-10-24 |
+| VAT (Amendment) (No. 2) Law 223(I)/2025 | https://www.cylaw.org/nomoi/arith/2025_1_223.pdf | 2026-10-24 |
+| VAT (Amendment) Law 104(I)/2025 (SME-SS) | https://www.cylaw.org/nomoi/arith/2025_1_104.pdf | 2026-10-24 |
+| VAT (Amendment) Law 109(I)/2026 | https://www.cylaw.org/nomoi/arith/2026_1_109.pdf | 2026-10-24 |
+| VAT (General) Regulations Κ.Δ.Π. 314/2001, regs 17, 24, 64 and 65 | https://www.cylaw.org/KDP/data/2001_1_314.pdf | 2026-10-24 |
+| Tax Department, VAT rates | https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/ | 2026-10-24 |
+| Tax Department, obligation and right to register | https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/ | 2026-10-24 |
+| Tax Department, rights and obligations | https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/ | 2026-10-24 |
+| Tax Department, VAT return FAQ | https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-dilosis-f-p-a/ | 2026-10-24 |
+| Tax Department, FAQ on correcting errors | https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-se-schesi-me-tis-diorthoseis-lathon/ | 2026-10-24 |
+| Tax Department, deadline calendar (VAT) | https://www.gov.cy/mof-tax/prothesmies/ | 2026-10-24 |
+| Tax Department, guide to completing the VAT return (06082024) | https://www.gov.cy/media/sites/167/2026/01/%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%B3%CE%B9%CE%B1-%CE%A3%CF%85%CE%BC%CF%80%CE%BB%CE%AE%CF%81%CF%89%CF%83%CE%B7-%CE%94%CE%AE%CE%BB%CF%89%CF%83%CE%B7%CF%82-%CE%A6%CE%A0%CE%91-06082024.pdf | 2026-10-02 (still published 2026-10-24) |
+| Tax Department, exempt transactions | https://www.gov.cy/mof-tax/documents/exairoymenes-synallages/ | 2026-10-02 |
+| Tax Department, General VAT Guide (Information Leaflet 10, November 2001) | https://www.gov.cy/media/sites/167/2026/01/%CE%93%CE%B5%CE%BD%CE%B9%CE%BA%CF%8C%CF%82-%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%A6.%CE%A0.%CE%91.-%CE%95%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CF%84%CE%B9%CE%BA%CF%8C-%CE%88%CE%BD%CF%84%CF%85%CF%80%CE%BF-10.pdf | 2026-10-02 |
 
-### Known gaps
-
-1. Ship management and maritime sector not covered.
-2. Domestic reverse charge, special schemes and immovable property are refusals.
-3. The EU distance-sales threshold and the VAT number format are not proved on an allowed page. The rules on client entertainment and on cars and fuel rest only on a 2001 document (Source 14), which predates the current law.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-The most up-to-date version of this skill is maintained at openaccountants.com.
+Not yet confirmed: the VAT rate on household electricity for meter readings from 1 January to 31 March 2026 (Κ.Δ.Π. 337/2025 deleted the earlier 5% entry); whether the Tax Department charges VAT default interest at a rate other than the 9% in art. 45(4); the euro amendment that set the EUR 15,600 registration threshold (the CyLaw consolidation still prints the old Cyprus pound figure in the First Schedule); the euro amounts of the art. 45(5) to (7) charges still printed in Cyprus pounds; the input VAT block on cars and entertainment in current law (only the 2001 guide states it); the box guide, the EUR 17 gift limit and the exemptions page were read on 2 October 2026, not re-read in full today; the Cyprus VAT number format.
 
 <!-- openaccountants-cta-block -->
 
@@ -645,4 +328,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cyprus-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cyprus-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cyprus-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cyprus-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
