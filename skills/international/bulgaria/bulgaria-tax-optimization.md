@@ -49,7 +49,7 @@ The Bulgarian headline is the FREELANCER regime (свободна професи
   - EOOD, all profit kept: tax = 10% of (G - C). This beats the freelancer once real costs exceed 25% of gross.
   - Sole trader: tax = 15% of (G - C). This beats the freelancer only when real costs exceed 50% of gross.
   - Example: gross EUR 50,000, real costs EUR 10,000. Freelancer EUR 3,750 (7.5% x 50,000). EOOD paying out everything EUR 5,800 (14.5% x 40,000). EOOD keeping everything EUR 4,000. Sole trader EUR 6,000.
-- **Contributions change the result.** These lines ignore social and health contributions. A freelancer pays them on 75% of gross, within the monthly minimum and maximum (KSO art. 6(8), (9)). An owner who works in the EOOD is self-insured as well (KSO art. 4(3)(2)), and a manager under a management contract is insured as an employee (art. 4(1)(7)). Model both structures with the contributions in `bulgaria-social-contributions.md` before choosing. We give no fixed revenue tipping point.
+- **Contributions change the result.** These lines ignore social and health contributions. A freelancer pays them on 75% of gross, within the monthly minimum and maximum (KSO art. 6(8), (9)). An owner who works in the EOOD is self-insured as well (KSO art. 4(3)(2)), and a company manager is insured for all risks, like an employee (art. 4(1)(7)). Model both structures with the contributions in `bulgaria-social-contributions.md` before choosing. We give no fixed revenue tipping point.
 
 ## Section 3 -- Dividends & Profit Extraction (EOOD)
 
@@ -74,7 +74,7 @@ The Bulgarian headline is the FREELANCER regime (свободна професи
 
 | Relief | Detail |
 | --- | --- |
-| Children relief | A reduction of the annual base for a child under 18, with a higher amount for two and for three or more children, and a separate relief for a child with 50% or more disability (ZDDFL arts. 22v, 22g). Only one parent claims. The 2026 euro amounts and how to use them during the year are in `bulgaria-income-tax.md`. |
+| Children relief | For 2026 the annual base is reduced by EUR 3,067.75 for one child under 18, EUR 6,135.50 for two and EUR 9,203.25 for three or more; a child with 50% or more disability adds EUR 6,135.50 (ZDDFL arts. 22v, 22g, with the 2026 amounts set by the 2026 State Budget Act, transitional provisions § 3(1), (2)). Only one parent claims (ZDDFL art. 22v(4)). An employee may take EUR 255.65, 511.29 or 766.94 a month (EUR 511.29 for a disabled child) off the monthly employment base (§ 3(4)). Any part not used against the general base comes off a sole trader's base (§ 3(3)). How to claim is in `bulgaria-income-tax.md`. |
 | Early-filing discount | 5% of the tax still due, if the return is filed electronically and the tax paid by 31 March, with no debts under enforcement. It applies to both the 10% and the 15% tax; the total discount is capped at BGN 500, which is EUR 255.65 (ZDDFL art. 53(6)). |
 | Personal contributions | Mandatory contributions reduce the taxable base (ZDDFL arts. 28(1), 30(1)). |
 
@@ -96,14 +96,15 @@ The Bulgarian headline is the FREELANCER regime (свободна професи
 
 | Source | URL | Read on |
 |---|---|---|
-| Personal Income Taxes Act (ZDDFL), consolidated to State Gazette 85/2026: arts. 19, 22v, 22g, 26, 28, 29, 30, 38, 46, 48, 53, 65 | https://lex.bg/laws/ldoc/2135538631 | 2026-10-30 |
+| Personal Income Taxes Act (ZDDFL), consolidated to State Gazette 85/2026: arts. 19, 22v, 22g, 26, 28, 29, 30, 38, 46, 48, 53, 65 (art. 22v still prints the old lev amounts; the 2026 amounts come from the State Budget Act below) | https://lex.bg/laws/ldoc/2135538631 | 2026-10-30 |
 | Corporate Income Tax Act (ZKPO), consolidated to State Gazette 55/2026: arts. 16, 20 | https://lex.bg/laws/ldoc/2135540562 | 2026-10-30 |
 | Social Insurance Code (KSO), consolidated to State Gazette 68/2026: arts. 4, 6 | https://lex.bg/laws/ldoc/1597824512 | 2026-10-30 |
 | State Social Insurance Budget Act for 2026, State Gazette 68/2026, art. 9 (copy published by the National Social Security Institute) | https://nssi.bg/wp-content/uploads/zbdoo-2026.pdf | 2026-10-30 |
+| State Budget Act of the Republic of Bulgaria for 2026, State Gazette 69/2026, transitional and final provisions § 3 (2026 child relief amounts) | https://www.parliament.bg/bg/laws/ID/167157 | 2026-10-30 |
 | Euro Introduction Act, arts. 11, 12, 13 | https://lex.bg/bg/laws/ldoc/2137244903 | 2026-10-30 |
 | Bulgarian National Bank, National Euro Changeover Plan (the fixed rate BGN 1.95583 = EUR 1) | https://www.bnb.bg/bnbweb/groups/public/documents/bnb_download/eurochangeoverplan_en.pdf | 2026-10-30 |
 
-Not yet confirmed: the 2026 child relief amounts in euro (ZDDFL art. 22v still reads BGN 200, 400 and 600; the 2026 amounts are set outside the ZDDFL, the NRA page served a human check and the State Gazette did not load, so the amounts stay in `bulgaria-income-tax.md`); the minimum insurable income for a manager under a management contract; the Labour Code provision under which disguised employment is reclassified (not read); the old "EUR 100,000 to 150,000" freelancer-vs-EOOD tipping point (from a private adviser's site, no official source; replaced by the cost-share comparison in Section 2); the old claim that 7.5% is the lowest effective rate in the EU (no official source).
+Not yet confirmed: the minimum insurable income for a manager under a management contract; the Labour Code provision under which disguised employment is reclassified (not read); the old "EUR 100,000 to 150,000" freelancer-vs-EOOD tipping point (from a private adviser's site, no official source; replaced by the cost-share comparison in Section 2); the old claim that 7.5% is the lowest effective rate in the EU (no official source).
 
 ## Disclaimer
 
