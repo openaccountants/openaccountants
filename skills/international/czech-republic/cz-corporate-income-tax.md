@@ -1,10 +1,10 @@
 ---
 name: cz-corporate-income-tax
 description: "Use this skill for Czech corporate income tax (daň z příjmů právnických osob, DPPO) in tax year 2026. It covers who is a taxpayer and who is resident (Income Taxes Act § 17), the 21% rate and the 5%, 0% and 15% special rates (§ 21), the tax base and the main non-deductible costs (§§ 23 to 25), tax depreciation (§§ 26 to 33), losses (back 2 years, forward 5, § 34), the participation exemption (§ 19), the limit on exceeding borrowing costs (30% of tax EBITDA or CZK 80 million, § 23e), advances (§ 38a), return and payment deadlines for 2026, penalties and late payment interest. Trigger on: Czech corporate tax, DPPO, s.r.o. tax, daňové přiznání právnických osob, zálohy na daň, daňové odpisy, daňová ztráta, úroky 23e. Out of scope: transfer pricing and thin capitalisation (cz-transfer-pricing), withholding on payments abroad and exit tax (cz-cross-border), VAT (cz-vat-return), top-up tax for large groups."
-version: 0.1
+version: 0.2
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Czech Republic: corporate income tax (2026) v0.1
+# Czech Republic: corporate income tax (2026) v0.2
 
 > **Source-cited draft.** Built by Michael Cutajar and the OpenAccountants team. No accountant has reviewed this skill yet. The law comes from the consolidated texts on e-Sbírka (the official Collection of Laws), and the guidance from financnisprava.gov.cz and cnb.cz, all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -128,9 +128,13 @@ For a calendar year 2026 company, counting the same way as the [cz-income-tax](c
 
 - paper or electronic: **1 April 2027** (Thursday);
 - electronic, after 1 April: **3 May 2027**, because 1 May 2027 is a Saturday and a public holiday;
-- audited company, or tax adviser files: **1 July 2027**.
+- company that must be audited (from 2026 periods, a medium or large company, or one a special law requires to be audited), or tax adviser files after 1 April: **1 July 2027**.
 
 For a company whose accounts must be audited, only the 6-month deadline applies; the Financial Administration says the 3-month deadline never applies to it ([Finanční správa, DPFO obecné informace](https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace)). For the 2025 period the Financial Administration gave 1 April, 4 May and 1 July 2026 on the same page. A company with a financial year counts the same months from the end of its period.
+
+**Statutory audit from 2026 periods.** Act No. 316/2025 Coll. repealed Accounting Act § 20(1)(c) and (d) from 1 January 2026 (Act 316/2025, Art. I point 12, Art. VII). Those two limbs made a small accounting unit have its accounts audited if, on the balance sheet date of the audited period and of the period before, it reached size limits of CZK 40,000,000 total assets, CZK 80,000,000 net turnover or 50 average employees (one limit for a joint stock company or trust fund, two for others). For an accounting period that starts on or after 1 January 2026, the Accounting Act requires an audit only from large accounting units (except selected accounting units that are not public interest entities), medium accounting units, and units that a special law requires to be audited (§ 20(1)). A period that started before 1 January 2026 still follows the old law (Act 316/2025, Art. II point 1). A small accounting unit is one that is not a micro unit and, at the balance sheet date, does not exceed at least 2 of these: total assets CZK 120,000,000, net turnover CZK 240,000,000, 50 average employees (§ 1b(2)).
+
+The consequence for the return: a small or micro company with no audit duty under a special law no longer gets the audit-based 6-month deadline (TC § 136(2)(b)(1)). For its 2026 return the deadline is 1 April 2027, or 3 May 2027 if it files electronically after 1 April. It gets 1 July 2027 only if a tax adviser files the return after 1 April (TC § 136(2)(b)(2)). Without an adviser, a paper return filed after 1 April 2027 is late, and an electronic one is late after 3 May 2027. The audit limb of the e-filing duty below also stops applying to it; the data box limb still does.
 
 **Electronic filing.** A company with a data box set up by law, or one that must have its accounts audited, must file the return electronically (TC § 72(6)).
 
@@ -243,7 +247,7 @@ expected:
 ## Ask the client first
 
 1. The tax period: calendar year or financial year, and any merger, division or change of period. This sets the deadlines and the advance periods.
-2. Whether the accounts must be audited, and whether a tax adviser files the return. This decides the 1 April, 3 May or 1 July deadline.
+2. Whether the accounts must be audited (for periods from 1 January 2026, only a medium or large company, or one a special law names, must be), and whether a tax adviser files the return. This decides the 1 April, 3 May or 1 July deadline.
 3. The last known tax liability. This sets whether advances are due and how often.
 4. Tax losses from earlier years, by year, and any change in ownership or control since. This decides how much loss can be used.
 5. Borrowings: interest costs and income, related-party lenders and equity. This decides the § 23e limit and thin capitalisation.
@@ -254,8 +258,11 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Act No. 586/1992 Coll., Income Taxes Act, version in force from 1 August 2026: §§ 17, 19, 20, 20b, 20ba, 21, 21a, 23, 23e, 24, 25, 26, 30, 30a, 30e, 31, 32, 34, 36, 38a, 38d, 38f, 38m, 38mb, 38na, 38r | https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 | 2026-10-23 |
-| Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 33, 72, 135, 136, 141, 146, 250, 251, 251a, 252 | https://e-sbirka.gov.cz/sb/2009/280/2026-01-01 | 2026-10-23 |
+| Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 33, 72, 135, 136, 141, 146, 250, 251, 251a, 252 | https://e-sbirka.gov.cz/sb/2009/280/2026-01-01 | 2026-10-23 (§§ 72(6) and 136 re-read 2026-10-30) |
 | Government Regulation No. 351/2013 Coll., § 2(1) (late payment interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-10-23 |
+| Act No. 563/1991 Coll., Accounting Act, version in force from 1 January 2026: § 1b(2), § 20(1) | https://e-sbirka.gov.cz/sb/1991/563/2026-01-01 | 2026-10-30 |
+| Act No. 563/1991 Coll., Accounting Act, version in force from 3 September 2025 to 31 December 2025: § 20(1)(c), (d) (the repealed small-company audit limbs) | https://e-sbirka.gov.cz/sb/1991/563/2025-09-03 | 2026-10-30 |
+| Act No. 316/2025 Coll., amending the Accounting Act: Art. I point 12, Art. II point 1, Art. VII | https://e-sbirka.gov.cz/sb/2025/316 | 2026-10-30 |
 | Act No. 416/2023 Coll., top-up taxes, § 8(1)(b) (EUR 750 million group test) | https://e-sbirka.gov.cz/sb/2023/416 | 2026-10-23 |
 | Finanční správa, Daň z příjmů fyzických osob, obecné informace (2025 filing dates; the 3-month deadline does not apply to audited taxpayers) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace | 2026-10-23 |
 | Finanční správa, Daň z příjmů právnických osob, obecné informace (rate, advances, link to accounts) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pravnicke-osoby/obecne-informace | 2026-10-23 |
