@@ -35,9 +35,10 @@ The tax period is the calendar year. For a new company it runs from registration
 | Peasant (farmer) households (art. 15(c)) | 7% of taxable income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
 | Income estimated by the SFS under arts. 225 and 225^1 (art. 15(d)) | 15% of the excess of estimated income over booked gross income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
 | Small-company regime, not VAT-registered (art. 54^3) | 4% of accounting income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
-| Small-company regime: ceiling on VAT-exempt supplies without deduction right (art. 54^1(3), (3^1)) | MDL 1.7 million | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
-| VAT registration threshold, any 12 consecutive months (art. 112(1)) | over MDL 1.7 million | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
+| Small-company regime: ceiling on VAT-exempt supplies without deduction right (art. 54^1(3), (3^1)) | MDL 1.7 million (text in force 30 October 2026) | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
+| VAT registration threshold, any 12 consecutive months (art. 112(1)) | over MDL 1.7 million from 1 March 2026; over MDL 1.5 million before that date (Law LP12/2026) | 2026 | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro |
 | IT park single tax (art. 370(1), (2)) | 7% of sales revenue; minimum 30% of the forecast average monthly wage per employee per month | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
+| Forecast average monthly wage for 2026 (Government Decision 773/2025), so IT park minimum per employee | MDL 17,400; minimum MDL 5,220 a month (30% x 17,400) | 2026 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro |
 | Capital gain included in income (art. 40(7)) | 50% of net capital gain | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
 | Donations cap (art. 36(1)) | 5% of taxable income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
 | Loss carry-forward (art. 32(1)) | spread over the next 5 tax periods | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
@@ -49,6 +50,7 @@ The tax period is the calendar year. For a new company it runs from registration
 | Non-resident withholding, dividends (art. 91(1)) | 6% (15% on 2008 to 2011 profits) | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
 | Under-declaration fine (art. 261(4)) | 20% to 30% of the tax understated | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
 | Evasion fine (art. 261(5)) | 80% to 100% of the tax not declared | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |
+| Late-payment interest (art. 228(3)): NBM base rate of November 2025 (6.00%, kept on 6 November 2025) + 5 points | 11% a year, charged per day (11% / 365) | 2026 | https://www.bnm.md/ro/content/raportul-asupra-inflatiei-nr-4-2025 |
 
 ## The taxable base
 
@@ -88,8 +90,8 @@ Every resident legal entity files a return, whether or not tax is due (art. 83(2
 
 ## Penalties and interest
 
-- **Late payment interest** accrues for each day of delay (art. 228(2)). The yearly rate is the National Bank of Moldova base rate set in November of the previous year, rounded up to the next whole percent, plus 5 points, divided by the days in the year (art. 228(3)).
-- **Instalments.** Unpaid or short instalments are fined by applying the art. 228(3) rate from the instalment date to the filing date. The shortfall is measured against the smaller of last year's tax and this year's tax (art. 261(6)).
+- **Late payment interest** accrues for each day of delay (art. 228(2)). The yearly rate is the National Bank of Moldova base rate set in November of the previous year, rounded up to the next whole percent, plus 5 points, divided by the days in the year (art. 228(3)). On 6 November 2025 the National Bank kept its base rate at 6.00% a year, so for 2026 the rate is 6% + 5 points = 11% a year, or 11% / 365 for each day of delay (NBM, Inflation Report no. 4, 2025).
+- **Instalments.** Unpaid or short instalments are fined by applying the art. 228(3) rate from the instalment date to the filing date. The shortfall is measured against the smaller of last year's tax and 80% of this year's final tax, less credits (art. 261(6)).
 - **Wrong or late return.** MDL 500 to 1,000 per return for companies, capped at MDL 10,000 for all returns (art. 260(1), contributors under art. 232 lit. a) and c)).
 - **Under-declaration.** Understating tax in a return with untrue data: 20% to 30% of the amount understated. No fine if the company files a corrected return itself under art. 188 (art. 261(4), (4^1)).
 - **Evasion.** Avoiding calculation and payment: 80% to 100% of the tax not declared (art. 261(5)).
@@ -108,7 +110,7 @@ Every resident legal entity files a return, whether or not tax is due (art. 83(2
 
 A Chișinău SRL, VAT-registered, has accounting profit of MDL 900,000 for 2026. The profit includes a MDL 15,000 tax fine and an MDL 80,000 gain on selling shares it held in another company. It has no capital losses. Its 2025 tax was MDL 96,000, and it paid four instalments of MDL 24,000 in 2026 (1/4 of last year's tax, art. 84(1)(b)).
 
-The fine is added back (art. 30(1)). Only 50% of the capital gain is taxable (art. 40(7)), so MDL 40,000 comes off. Taxable income is 900,000 + 15,000 - 40,000 = MDL 875,000. Tax at 12% (art. 15(b)) is MDL 105,000. Instalments paid were MDL 96,000, so MDL 9,000 is due with the return by 25 March 2027 (arts. 83(4)(a), 87(1)). There is no instalment fine, because the company paid the smaller of last year's and this year's tax (art. 261(6)).
+The fine is added back (art. 30(1)). Only 50% of the capital gain is taxable (art. 40(7)), so MDL 40,000 comes off. Taxable income is 900,000 + 15,000 - 40,000 = MDL 875,000. Tax at 12% (art. 15(b)) is MDL 105,000. Instalments paid were MDL 96,000, so MDL 9,000 is due with the return by 25 March 2027 (arts. 83(4)(a), 87(1)). There is no instalment fine: the company had to pay the smaller of last year's tax (MDL 96,000) and 80% of this year's tax (MDL 84,000), so MDL 84,000, and it paid MDL 96,000 (art. 261(6)).
 
 ```oa-check
 name: Moldovan SRL 2026, fine add-back and 50% capital gain
@@ -124,11 +126,15 @@ steps:
   - instalment: tax_2025 / 4
   - instalments_paid: instalment * 4
   - balance_due: tax - instalments_paid
+  - instalments_required: min(tax_2025, tax * 0.80)
+  - instalment_shortfall: max(0, instalments_required - instalments_paid)
 expected:
   taxable_income: 875000.00
   tax: 105000.00
   instalment: 24000.00
   balance_due: 9000.00
+  instalments_required: 84000.00
+  instalment_shortfall: 0.00
 ```
 
 ### Example 2: tax deferred until dividends (art. 87(1^1))
@@ -169,8 +175,12 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Codul fiscal nr. 1163/1997, consolidated to LP235/2026 (in force 30.10.2026): arts. 5 pct. 5, 12^1, 13, 14, 15, 18, 20 lit. z19), 24, 25, 30, 32, 36, 40, 54^1 to 54^4, 71, 79^3, 80^1, 82, 83, 84, 87, 90^1, 91, 92, 112, 228, 260, 261, 368 to 373 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |
+| Codul fiscal nr. 1163/1997, 2025 version (to LP227/2025, in force 30.12.2025): art. 112(1) and art. 54^1 read MDL 1.2 million | https://www.legis.md/cautare/getResults?doc_id=152857&lang=ro | 2026-10-30 |
+| Law LP12 of 19 February 2026 amending art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |
+| Government Decision 773 of 17 December 2025: forecast average monthly wage for 2026, MDL 17,400 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-30 |
+| National Bank of Moldova, Inflation Report no. 4, 2025 (base rate kept at 6.00% on 6 November 2025) | https://www.bnm.md/ro/content/raportul-asupra-inflatiei-nr-4-2025 | 2026-10-30 |
 
-Not yet confirmed: the 2026 late-payment interest rate in figures (it needs the National Bank of Moldova base rate of November 2025, not read); whether the five-year loss spread caps each year at one fifth (art. 32 says "eşalonat", spread out, and art. 32(2) is unclear); treaty withholding rates (the old version gave 0% to 5% on dividends and 0% to 10% on interest and royalties from a secondary source; no treaty text was read) and the treaty documentation rules in art. 79^3(2); depreciation rules (art. 26^1, not read); the forecast average monthly wage for 2026 that sets the IT park minimum; any changes in force from 2027 shown on legis.md.
+Not yet confirmed: the date from which the MDL 1.7 million figure in art. 54^1(3), (3^1) applies (the text in force on 30 December 2025 said MDL 1.2 million; the amending act was not found); whether the five-year loss spread caps each year at one fifth (art. 32 says "eşalonat", spread out, and art. 32(2) is unclear); treaty withholding rates (the old version gave 0% to 5% on dividends and 0% to 10% on interest and royalties from a secondary source; no treaty text was read) and the treaty documentation rules in art. 79^3(2); depreciation rules (art. 26^1, not read); any changes in force from 2027 shown on legis.md.
 
 <!-- openaccountants-cta-block -->
 
