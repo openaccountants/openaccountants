@@ -1,0 +1,22 @@
+[
+  {
+    "before": "eq('Balearic child184days530cap',530*D(184)/365,D('267.1780821917808219178082192'))",
+    "after": "eq('Balearic child184days660cap',660*D(184)/365,D('332.7123287671232876712328767'))"
+  },
+  {
+    "before": "eq('Balearic child184days650cap',650*D(184)/365,D('327.6712328767123287671232877'))",
+    "after": "eq('Balearic child184days900cap',900*D(184)/365,D('453.6986301369863013698630137'))"
+  },
+  {
+    "before": "eq('Balearic ordinary payer2000 halfcap530',min(2000*D('.4'),530/D(2)),265)",
+    "after": "eq('Balearic ordinary payer2000 halfcap660',min(2000*D('.4'),660/D(2)),330)"
+  },
+  {
+    "before": "eq('Balearic ordinary payer1000 halfcap530',min(1000*D('.4'),530/D(2)),265)",
+    "after": "eq('Balearic ordinary payer1000 halfcap660',min(1000*D('.4'),660/D(2)),330)"
+  },
+  {
+    "before": "eq('Balearic enhanced payer1000 halfcap650',min(1000*D('.5'),650/D(2)),325)",
+    "after": "eq('Balearic enhanced payer1000 halfcap900',min(1000*D('.5'),900/D(2)),450)"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://gov.gg/taxpackage",
+    "status": 200,
+    "sha256": "8b0bdc7154530f1e8a3558e2aa3894a8a4d88903a581e0c5cfb742fd6b05aa6a",
+    "retrieved": "2026-10-27T23:01:15.914635+00:00",
+    "path": "../work/sources/consumption-current.html"
+  },
+  {
+    "url": "https://gov.gg/taxreviewsubcommittee",
+    "status": 200,
+    "sha256": "447c92d89c82bac91859805b25f6c626dfded6d12a0af83d97f3a00dd2409b53",
+    "retrieved": "2026-10-27T23:01:18.559621+00:00",
+    "path": "../work/sources/corporate-reform-current.html"
+  }
+]

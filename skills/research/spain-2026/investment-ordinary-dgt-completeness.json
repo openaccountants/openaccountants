@@ -1,0 +1,19 @@
+{
+  "v0386-24": {
+    "selected_text_bytes": 42236,
+    "has_full_answer_and_binding_clause": true,
+    "selected_text_sha256": "e6d864d6f18608d08fe44936ebd18a3fc3172e5fbb4329e0b2a30efc888be060"
+  },
+  "v0835-25": {
+    "selected_text_bytes": 27792,
+    "has_full_answer_and_binding_clause": true,
+    "selected_text_sha256": "99288c4d0e98c047e355e454e0e8ccfd2f7be99cb422bcfb174528244ce3e131"
+  },
+  "original_v0386_artifacts": {
+    "txt_bytes": 1621,
+    "txt_full_answer": false,
+    "html_bytes": 77564,
+    "html_has_reference_sentence": true,
+    "html_has_binding_clause": true
+  }
+}

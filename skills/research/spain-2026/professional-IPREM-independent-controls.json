@@ -1,0 +1,299 @@
+{
+  "pass_count": 49,
+  "cases": [
+    {
+      "name": "direct annual IPREM minimum",
+      "observed": "36000",
+      "expected": "36000",
+      "explanation": "DA90(c), applied to a full calendar year under the expressly labelled construction."
+    },
+    {
+      "name": "conditional annual-SMI minimum",
+      "observed": "42000",
+      "expected": "42000",
+      "explanation": "DA90(d) comparator only; not automatically imported into LIS18.6."
+    },
+    {
+      "name": "monthly annualisation",
+      "observed": "36000",
+      "expected": "36000",
+      "explanation": "Do not use 600 times 5 as the full-year amount."
+    },
+    {
+      "name": "direct-IPREM boundary 35999.99",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "Individual limb only; other conditions still needed."
+    },
+    {
+      "name": "distinguishing 8400 comparator 35999.99",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "36000 through 41999.99 passes annual7200 and fails imported8400."
+    },
+    {
+      "name": "direct-IPREM boundary 36000",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "Individual limb only; other conditions still needed."
+    },
+    {
+      "name": "distinguishing 8400 comparator 36000",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "36000 through 41999.99 passes annual7200 and fails imported8400."
+    },
+    {
+      "name": "direct-IPREM boundary 36000.01",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "Individual limb only; other conditions still needed."
+    },
+    {
+      "name": "distinguishing 8400 comparator 36000.01",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "36000 through 41999.99 passes annual7200 and fails imported8400."
+    },
+    {
+      "name": "direct-IPREM boundary 37000",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "Individual limb only; other conditions still needed."
+    },
+    {
+      "name": "distinguishing 8400 comparator 37000",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "36000 through 41999.99 passes annual7200 and fails imported8400."
+    },
+    {
+      "name": "direct-IPREM boundary 39000",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "Individual limb only; other conditions still needed."
+    },
+    {
+      "name": "distinguishing 8400 comparator 39000",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "36000 through 41999.99 passes annual7200 and fails imported8400."
+    },
+    {
+      "name": "direct-IPREM boundary 41999.99",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "Individual limb only; other conditions still needed."
+    },
+    {
+      "name": "distinguishing 8400 comparator 41999.99",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "36000 through 41999.99 passes annual7200 and fails imported8400."
+    },
+    {
+      "name": "direct-IPREM boundary 42000",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "Individual limb only; other conditions still needed."
+    },
+    {
+      "name": "distinguishing 8400 comparator 42000",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "36000 through 41999.99 passes annual7200 and fails imported8400."
+    },
+    {
+      "name": "revenue equality fails",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "LIS18.6(a) is strictly more than75 percent."
+    },
+    {
+      "name": "revenue just above passes",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "Revenue denominator is total entity revenue."
+    },
+    {
+      "name": "example professional revenue share",
+      "observed": "80.0",
+      "expected": "80",
+      "explanation": "Distinct from pre-remuneration result."
+    },
+    {
+      "name": "example cohort result minimum",
+      "observed": "60000.00",
+      "expected": "60000",
+      "explanation": "LIS18.6(b) uses result before all professional shareholder service remuneration."
+    },
+    {
+      "name": "example actual cohort pay",
+      "observed": "72000",
+      "expected": "72000",
+      "explanation": "Two shareholders,each36000."
+    },
+    {
+      "name": "example cohort headroom",
+      "observed": "12000",
+      "expected": "12000",
+      "explanation": "Original variant arithmetic."
+    },
+    {
+      "name": "cohort equality passes",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "At least75percent, not strictly above."
+    },
+    {
+      "name": "cohort below equality fails",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "A cent matters at equality."
+    },
+    {
+      "name": "wrong professional-revenue denominator distinguished",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "Professional revenue80000 cannot substitute for result200000; wrong denominator would pass60000."
+    },
+    {
+      "name": "one person below minimum,cohort survives",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "Individual failure cannot be hidden by aggregate passing."
+    },
+    {
+      "name": "underpaid person fails",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "LIS18.6(c)(2)."
+    },
+    {
+      "name": "other person meets own minimum",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "Explicit statutory preservation applies to c2 failure, assuming other conditions remain met."
+    },
+    {
+      "name": "cohort excess cannot offset zero individual",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "Another shareholder72000 does not cure this individual."
+    },
+    {
+      "name": "comparable employee annual average30000",
+      "observed": "45000.0",
+      "expected": "45000",
+      "explanation": "Use employee limb when analogous employees exist, not the IPREM fallback."
+    },
+    {
+      "name": "40000 fails existing analogous employee limb",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "It passes derived no-employee minimum but that alternative is unavailable."
+    },
+    {
+      "name": "employee equality passes",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "Not below1.5times."
+    },
+    {
+      "name": "mandatory condition adequate people and equipment",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "All numerical tests pass but this statutory prerequisite fails."
+    },
+    {
+      "name": "mandatory condition written qualitative or quantitative contribution criteria",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "All numerical tests pass but this statutory prerequisite fails."
+    },
+    {
+      "name": "mandatory condition related natural-person professional services",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "All numerical tests pass but this statutory prerequisite fails."
+    },
+    {
+      "name": "all conditions together",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "Full-year supplied example, subject to the stated construction."
+    },
+    {
+      "name": "one below,remaining shareholder still permitted",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "All shared conditions pass; c2 failure of other person does not remove this result."
+    },
+    {
+      "name": "one below,underpaid shareholder not permitted",
+      "observed": "False",
+      "expected": "False",
+      "explanation": "Individual c2 test fails for this person only."
+    },
+    {
+      "name": "special rule optional",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "LIS18.6 says podr\u00e1 considerar; ordinary arm\u2019s-length valuation remains under18.1/18.4."
+    },
+    {
+      "name": "failure does not determine compulsory salary",
+      "observed": "True",
+      "expected": "True",
+      "explanation": "A failed threshold is not itself the arm\u2019s-length adjustment. No general valuation fact is invented."
+    },
+    {
+      "name": "no part-year conclusion",
+      "observed": "undetermined",
+      "expected": "undetermined",
+      "explanation": "No 6/12 or daily apportionment is inferred from the full-year construction."
+    },
+    {
+      "name": "original example1 market fee",
+      "observed": "324000.00",
+      "expected": "324000",
+      "explanation": "Evidenced example margin, not statutory safe harbour."
+    },
+    {
+      "name": "original example1 adjustment",
+      "observed": "24000",
+      "expected": "24000",
+      "explanation": "Original output preserved."
+    },
+    {
+      "name": "original example1 threshold excess",
+      "observed": "74000",
+      "expected": "74000",
+      "explanation": "Original output preserved."
+    },
+    {
+      "name": "original example2 turnover test",
+      "observed": "150000.0",
+      "expected": "150000",
+      "explanation": "Disclosure threshold independent of valuation rule."
+    },
+    {
+      "name": "original example2 share",
+      "observed": "60.0",
+      "expected": "60",
+      "explanation": "Original output preserved."
+    },
+    {
+      "name": "original example2 test excess",
+      "observed": "30000",
+      "expected": "30000",
+      "explanation": "Original output preserved."
+    },
+    {
+      "name": "original example2 documentation headroom",
+      "observed": "70000",
+      "expected": "70000",
+      "explanation": "Original output preserved."
+    }
+  ]
+}

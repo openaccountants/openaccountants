@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/portugal-financial-statements"
   jurisdiction: "PT"
   tax_year: "2025"
-  last_updated: "2026-10-23"
+  last_updated: "2026-10-24"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
@@ -125,7 +125,7 @@ Em vigor para os exercícios económicos até 31 de dezembro de 2025:
 | 3 | Acréscimos e diferimentos | Princípio rigoroso da periodização económica (especialização dos exercícios) |
 | 4 | Imparidade de dívidas a receber | NCRF 27; avaliação individual e por carteira |
 | 5 | Inventários | NCRF 18; menor entre custo (FIFO/CMP) e valor realizável líquido (VRL) |
-| 6 | Impostos diferidos | NCRF 25; diferenças temporárias; taxa de IRC de 21% + derrama |
+| 6 | Impostos diferidos | NCRF 25; diferenças temporárias; taxa de IRC do período em que a diferença reverte (19% em 2026, 18% em 2027, 17% a partir de 2028; art. 87.º CIRC e art. 3.º da Lei 64/2025; ver pt-corporate-tax) + derrama |
 | 7 | Operações em moeda estrangeira | NCRF 23; itens monetários à taxa de fecho |
 | 8 | Locações | NCRF 9; classificação como locação financeira ou operacional |
 | 9 | Benefícios dos empregados | NCRF 28; provisão para férias, subsídio de férias e subsídio de Natal |
@@ -297,6 +297,8 @@ Esta skill e os respetivos resultados são disponibilizados apenas para fins inf
 
 > Contributed by Ryan Duguid.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---
@@ -317,4 +319,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.

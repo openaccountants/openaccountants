@@ -33,6 +33,7 @@ Output:
         └── [code]-*.md (state-specific skills)
 """
 
+import json
 import os
 import re
 import shutil
@@ -509,6 +510,25 @@ def find_country_skills(country_dir):
     return skills
 
 
+def _load_registry_dir_to_code():
+    """Folder name -> ISO code for international packs, from scripts/data/jurisdictions.json."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "jurisdictions.json")
+    try:
+        with open(path, encoding="utf-8") as fh:
+            rows = json.load(fh)
+    except (OSError, ValueError):
+        return {}
+    out = {}
+    for row in rows:
+        d = row.get("dir") or ""
+        if d.startswith("skills/international/") and row.get("code"):
+            out[d.rsplit("/", 1)[-1]] = row["code"]
+    return out
+
+
+REGISTRY_DIR_TO_CODE = _load_registry_dir_to_code()
+
+
 def find_orchestrator_files(country_dir_name):
     """Find intake and assembly files for a country."""
     orch_dir = os.path.join(SKILLS_DIR, "orchestrator")
@@ -537,7 +557,12 @@ def find_orchestrator_files(country_dir_name):
 
 def build_package(country_dir_name, country_dir):
     """Build a complete package for one jurisdiction."""
-    code = DIR_TO_CODE.get(country_dir_name, country_dir_name.upper()[:2])
+    # The country code comes from the registry (scripts/data/jurisdictions.json), then the
+    # legacy map. Never guess it from the folder name: the old ``upper()[:2]`` fallback
+    # labelled Benin as Belgium, Eswatini as Spain and gave non-EU packs the EU VAT base.
+    code = REGISTRY_DIR_TO_CODE.get(country_dir_name) or DIR_TO_CODE.get(country_dir_name)
+    if code is None:
+        print(f"WARNING: {country_dir_name} has no jurisdictions.json entry; built without a country code")
     name = COUNTRY_NAMES.get(code, country_dir_name.replace('-', ' ').title())
     practitioner = PRACTITIONER_TITLES.get(code, "qualified tax professional")
 

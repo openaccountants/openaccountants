@@ -6,16 +6,17 @@ How OpenAccountants skills are built, reviewed and corrected, and what "reviewed
 
 General-purpose LLMs hallucinate tax law: they invent rates, misremember thresholds, cite forms that do not exist, and apply last year's rules to this year. OpenAccountants skills replace the model's guesswork with content drafted from official sources and, where a named accountant has reviewed it, signed off by that person.
 
-## Two quality states
+## Two quality tiers
 
 See [QUALITY-TIERS.md](QUALITY-TIERS.md) for the full definitions. In short:
 
 | State | Standard | Who |
 |---|---|---|
-| **Source-cited draft** (`tier: 2`) | Every rate, threshold, form and deadline drafted from official sources (tax-authority publications and primary legislation) | Drafted and cross-checked, awaiting a full accountant review |
+| **Checked against the law** (`tier: 2`) | Built to the standard in [skill-template.md](skill-template.md): every figure cited to the law and checked against the statute by an independent review before merge | No accountant has signed it off yet |
+| **Sourced from the law** (`tier: 2`) | Older skill not yet rebuilt to the standard: every figure cited to an official source (tax-authority publications and primary legislation) | No accountant has signed it off yet |
 | **Accountant-reviewed** (`tier: 1`) | A licensed accountant has reviewed the whole skill and put their name and credential on it | Named CPA / CA / EA / Steuerberater / local equivalent |
 
-The honest headline is "source-cited drafts here, accountant-reviewed where a name is on the file", never a blanket "reviewed by accountants". Most skills in this repo are source-cited drafts. `python3 scripts/coverage-report.py --summary` gives the exact split; see [COVERAGE.md](COVERAGE.md).
+The honest headline is "checked against the law or sourced from the law here, accountant-reviewed where a name is on the file", never a blanket "reviewed by accountants". Most skills in this repo are tier 2 (no accountant sign-off). `python3 scripts/coverage-report.py --summary` gives the exact split; see [COVERAGE.md](COVERAGE.md).
 
 ## Sources
 
@@ -48,12 +49,12 @@ Accuracy improves in the open. When a skill produces something wrong:
 
 1. Anyone can open an issue or PR with the correct figure and its official source, or email info@openaccountants.com.
 2. The fix is applied and the contributor gets public credit.
-3. With a licensed accountant's full review, the skill moves from source-cited draft to accountant-reviewed.
+3. With a licensed accountant's full review, the skill moves from tier 2 to accountant-reviewed (tier 1).
 
 ## What "reviewed" does not mean
 
 - It is not tax advice and not a filed return. Every output is a working paper for a human to check.
-- A source-cited draft has not been reviewed by a credentialed practitioner.
+- A tier-2 skill (checked against the law, or sourced from the law) has not been reviewed by a credentialed practitioner.
 - A review reflects the rules as of the skill's stated date; tax law changes, so check the date.
 - Coverage of a jurisdiction does not imply coverage of every edge case within it.
 

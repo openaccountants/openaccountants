@@ -1,0 +1,10 @@
+{
+  "root_supplied_guide_sha256": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02",
+  "current_ledger_sha256": "a050a4420ddb05bca7ef25b068ceb76152836b42aebae45fb0378c1478779353",
+  "prior_ledger_sha256": "9399808f089b796f57ac6bc9256452bcd8e1b3f0b2b899fe42e8eb55f6773ae6",
+  "prior_history": "ledgers/spain-2026-evidence/es-beckham/history/pre-S-L01-9399808f",
+  "source_change": "None. Actual LIRPF80.2 and RIRPF114 quotes unchanged; actual reread of two-decimal rule retained.",
+  "source_corrected_topic": "S-L01 replaces raw foreign limit77,307.69 with effective percentage25.77% and77,310. Bindingcap50,250/finaltax192,130/refund22,770 unchanged.",
+  "baseline_labels": "62b7639a is published main comparator;0b5e6245 is frozen GitHub-public PR branch, not verified platform body.",
+  "writer_guide_edits": false
+}

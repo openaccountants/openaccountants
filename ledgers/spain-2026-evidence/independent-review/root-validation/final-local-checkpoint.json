@@ -1,0 +1,26 @@
+{
+  "checked_at_utc": "2026-10-28T22:32:46.314346+00:00",
+  "reviewed_pairs": 22,
+  "Guide_and_ledger_hash_matches": 44,
+  "README_exact_reviewed_hash": "ad40e989b534567accbbc4e9238aa90ec5909c6055c6dcc1d85684f8df9d5afd",
+  "independent_review": "PASS within stated partial source-cited-draft scope; no unresolved review defect",
+  "country_complete": false,
+  "partial_domains": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "XB"
+  ],
+  "technical_checks": {
+    "unchanged_Guide_bytes": "all22 equal the prior technical-test freeze",
+    "examples": "22Guide files/44blocks/0failures/0missing",
+    "schema": "22Guides/0warninggroups",
+    "strict_audit": "22sources/0errors/0warnings/0notices after normal mainmerge",
+    "post_stage_unit": "129PASS in6.703s with evidence tracked",
+    "scoped_diff_check": "PASS for Spain Guides/README and test_copy_rules.py"
+  },
+  "history_note": "candidate-final-validation.json is preserved byte-exact as the earlier technical witness with its then-pending review status. The sealed current independent review and this supplemental checkpoint supersede that historical pending status without modifying it.",
+  "exact_head_CI": "Pending publication; no claim yet."
+}

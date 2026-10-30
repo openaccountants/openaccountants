@@ -1,502 +1,227 @@
 ---
 name: es-autonomous-worker
-description: "Use this skill whenever asked about Spanish self-employed (autónomo) tax and social security obligations beyond IRPF computation. Trigger on phrases like \"autonomo\", \"autónomo\", \"cuota de autonomos\", \"cuota seguridad social autonomo\", \"RETA\", \"tarifa plana\", \"alta autonomo\", \"baja autonomo\", \"cotizacion por ingresos reales\", \"obligaciones fiscales autonomo\", \"modelos autonomo\", \"Modelo 303\", \"Modelo 130\", \"Modelo 390\", \"Modelo 349\", \"calendario fiscal autonomo\", \"pluriactividad\", \"autonomo societario\", \"facturacion autonomo\", \"estimacion directa\", \"libro registro\", \"IGIC autonomo\", \"IPSI autonomo\", \"autonomo Canarias\", \"autonomo Ceuta Melilla\", \"cuanto paga un autonomo\", or any question about the complete fiscal and social security picture for a self-employed worker in Spain. ALWAYS read this skill before advising on autónomo setup, ongoing obligations, or take-home pay calculations."
+description: "Compute the 2026 tax, social contributions and cash position of a Spanish resident sole trader or professional. Covers autónomo registration, actual assessment-method selection, deductible expenses, simplified provisions, professional withholding, cumulative income-tax prepayments, VAT reconciliation and day-based RETA income banding. Distinguishes company controllers, family collaborators, TRADE arrangements and pluriactividad, and identifies the separate conditions for reduced contributions and new-activity relief. Use for cuota de autónomos, alta autónomo, Modelo 130, professional invoices, take-home profit or income-based regularisation questions. Includes an annual Madrid tax-to-cash reconciliation and a part-year contribution example. Common-territory computations are supplied; foral and island/city indirect taxes retain explicit limits."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/es-autonomous-worker"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-09-23"
+  last_updated: "2026-10-28"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Being an autónomo in Spain: tax and social security obligations
-
-The whole picture for a self-employed worker (autónomo) in Spain: registering with the tax office and with Social Security, which IRPF regime applies, what may be deducted, what clients withhold, which returns fall due, and how the RETA contribution is built. Figures are for tax year 2026, with two exceptions that say so where they appear: the reduced starting contribution (tarifa plana) has no 2026 amount in law, because Real Decreto-ley 13/2022 fixed it for 2023 to 2025 only and left later years to a Budget Law that has not been approved; and the Canary Islands IGIC rates are those in force since 1 January 2024.
-
-## Spain Autónomo (Self-Employed Worker) Complete Obligations Guide v1.0
+# Spain self-employment: 2026 tax, contributions and cash reconciliation v1.4
 
 > Based on work by Nambu89 (Impuestify) and Pau March (larenta), licensed under MIT. Adapted for the OpenAccountants format.
 
-## Section 1: Quick Reference
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Spain (Estado Español) |
-| Subject | Trabajador Autónomo (self-employed worker, sole trader) |
-| Currency | EUR only |
-| Legal framework | Ley 20/2007 (Estatuto del trabajo autónomo); Real Decreto-ley 13/2022 (contributions on real income); Ley 35/2006 and RD 439/2007 (IRPF) |
-| Social Security regime | RETA (Régimen Especial de Trabajadores por Cuenta Propia o Autónomos) |
-| Tax regime | IRPF, estimación directa simplificada by default |
-| Tax authority | Agencia Tributaria for tax, Tesorería General de la Seguridad Social for contributions |
-| Key filing forms | Modelo 036 (census), 130 (quarterly IRPF), 303 (quarterly VAT), 100 (annual IRPF) |
-| Contribution bands and rates | In the Guide `es-social-contributions` |
-| Income tax scale | In the Guide `es-income-tax`. Half state, half autonomous community, so there is no single Spanish rate |
+This Guide computes the ordinary **2026** common-territory position of a Spanish-resident individual operating a business or profession. Select the actual activity, assessment method, tax territory and social-security legislation before calculating. It connects [annual IRPF](es-income-tax.md), [regional credits](es-irpf-deductions.md), [payments on account](es-estimated-tax.md), [VAT](es-vat-return.md) and [contributions](es-social-contributions.md); an autónomo's invoice cash is not their after-tax profit.
 
-## Section 2: Cuota de Autónomos in 2026: Cotización por Ingresos Reales
+IRPF economic activity requires the organisation described in [LIRPF art. 27](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a27). RETA membership follows the distinct habitual, personal, direct, own-account and category tests in [LGSS art. 305](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a305). A low profit alone is not a statutory general exemption from registration. Tax residence, VAT establishment, customer location and social-security coverage are separate facts.
 
-Since January 2023 an autónomo contributes on actual net income. Each year the Budget Law sets a general and a reduced table of contribution bases, split into bands of monthly net income with a minimum and a maximum base each (art. 308.1.a LGSS). The worker picks a base inside the band matching their forecast; Social Security regularises it later against the income the tax office reports.
+**Company workers.** Effective control under art. 305.2.b is conclusive at an own holding of at least half the capital; the rebuttable presumptions include at least half held by cohabiting family, an own holding of at least one third, or at least one quarter with management functions. The administration can establish control outside those presumptions. Company-paid income is **not automatically salary**: professional services covered by LIRPF art. 27.1 are activity income when its shareholder/RETA or alternative-mutual conditions hold. Director remuneration and other employment income require their own classification under art. 17. Keep corporate tax and the individual's tax/contributions separate.
 
-### The contribution bands (tramos)
+**TRADE.** At least **75%** of work and activity income from one client is necessary but insufficient. Apply all [Ley 20/2007 arts. 11–12](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a11) conditions: own organisation, relevant independent infrastructure, distinct work from the client's staff, commercial risk and the employee/subcontracting restriction with its specified care/leave exceptions. The contract is written and registered. TRADE status does not itself fix an IRPF deduction, invoice withholding or VAT exemption.
 
-The 2026 tables and rates are in the Guide `es-social-contributions` and are not repeated here. Two limits from the same 2026 order are used below.
+## Rates, bands and thresholds
 
-**The two limits used in this Guide**
+All amounts are EUR. These are 2026 ordinary common-territory rules unless stated otherwise.
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296 |
-| Maximum monthly base, whatever the net income | EUR 5,101.20 | "5.101,20 euros mensuales" |
-| Floor for company owners and working partners (art. 305.2.b and e LGSS) and family members (art. 305.2.k): group 7 of the General Regime scale | EUR 1,424.40 | "7 Auxiliares Administrativos. 1.424,40" |
+| Item | Amount/test | Official source |
+|---|---|---|
+| Simplified direct assessment | Prior-year combined activity turnover no more than 600,000, annualised when required; no incompatible method or valid renunciation | [RIRPF arts. 28–29](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a28) |
+| Simplified provisions and hard-to-justify expenses | 5% of positive qualifying net income before this item, combined annual cap 2,000; incompatible with elected art. 32.2.1 relief | [RIRPF art. 30](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a30) |
+| Qualifying Ceuta simplified activity | 10% instead of 5%, same 2,000 cap; separate instalment commencement rule | [LIRPF DA 64](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#da-18) |
+| Professional invoice withholding | 15%; eligible start tax period and next two 7%, with no professional activity in the preceding year and written notice | [RIRPF art. 95.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |
+| Direct-assessment prepayment | 20% of cumulative net income, then statutory deductions/adjustments | [RIRPF art. 110](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110) |
+| Professional exemption from prepayments | At least 70% of prior-year relevant income withheld; start-year covered-period test | [RIRPF art. 109.2/5](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a109) |
+| Standard VAT | 21%; 10% and 4% only for specifically listed supplies, with dated exceptions | [LIVA arts. 90–91](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90) |
+| Ordinary RETA components | CC 28.30%, occupational 1.30%, cessation 0.90%, training 0.10%, MEI 0.90%; derived full-cover total 31.50% before exceptions/bonuses | [2026 order arts. 18 and 37](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-10), [art. 37](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-9) |
+| RETA generic deduction for band income | 7%; 3% for art. 305.2.b/e after 90 days in those categories | [LGSS art. 308.1.c](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a308) |
+| Company/family final-base floor | Group 7 minimum 1,424.40 once the 90-day test applies; separate 2025 provisional-base continuation | [LGSS art. 308.1.a.4](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a308), [order art. 18.4](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-10) |
+| Pluriactividad | Refund 50% of combined CC above 17,323.68, capped at 50% of RETA CC paid | [Order art. 18.8](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-10) |
+| New-activity IRPF reduction | 20% of eligible positive net income, base capped at 100,000, first positive year and following year; statutory prior-activity/former-employer exclusions | [LIRPF art. 32.3](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a32) |
 
-The contribution is base times rate and the autónomo pays every rate in full: there is no employer share. No official page adds the rates together, so no Guide should state a single combined percentage.
+There is no single ordinary final “autónomo tax rate”. Apply the state and actual community scales and minima in [es-income-tax](es-income-tax.md), then credits and prepayments. The RETA bands, including all minimum/maximum bases, are reproduced in [es-social-contributions](es-social-contributions.md#rates-bands-and-thresholds).
 
-### How to Calculate Net Monthly Income (Rendimiento Neto)
+## The base
 
-Art. 308.1.c LGSS: take the net income of all activities as computed for IRPF, add back the RETA contributions, apply the deduction below, then divide by the months registered. That is the direct estimation case. For an activity in the module method the figure the law takes is the net income before reductions, and for farming, livestock and forestry the reduced one.
+### 1. Establish the tax method and keep records
 
-**Deduction for generic expenses before banding**
+Determine normal direct, simplified direct or objective assessment from the census/elections and prior-year data. Never default an unknown activity to professional withholding, VAT territory or simplified assessment. Keep the [RIRPF art. 68](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a68) income, expense, capital-asset and, for professions, provisions/advances books, or required mercantile accounts. Obtain invoices, payment evidence, business purpose and depreciation schedules.
 
-| Who | Deduction | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724 |
-| Ordinary self-employed person | 7% | "gastos genéricos del 7 por ciento" |
-| Company directors and working partners (art. 305.2.b and e LGSS) | 3% | "la deducción será del 3 por ciento" |
+For módulos, [LIRPF art. 31 and DT 32](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a31) must be read with the [2026 annual order](https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272). The ordinary statutory non-farming receipts/business-invoicing/purchases baseline is **150,000/75,000/150,000**; farming/livestock/forestry receipts have their separate **250,000** ceiling. Current DT 32 ends its express extension at 2024 after the later extensions were left without effect. That textual baseline is distinct from AEAT's published 2026 administrative route: its [1 April post-repeal note](https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html) expressly maintains the 2016–2024 limits for 2026, and the [current entry page](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html) specifies **250,000/125,000/250,000**. Apply that published route with the actual annual-order activity, specific magnitudes, aggregation, annualisation, territorial, compatibility and election conditions; do not exclude a trader solely by substituting the lower baseline for those published 2026 limits. An otherwise eligible trader with prior-year ordinary receipts 200,000, required-invoice B2B receipts 100,000 and relevant purchases 220,000 passes the three administrative numerical tests. This does not resolve the separate legal reconciliation of the statutory/repeal texts or a particular return correction. AEAT also confirms validity of renunciations/revocations made while the two decrees operated; preserve the filing and date and use the complete published election route in [es-estimated-tax](es-estimated-tax.md), including its limits on implicit renunciation and exceptional windows. The linked Guide supplies the payment worksheets; an actual module activity needs its annual-order units/indices, not accounting profit times 5%.
 
-Ninety days registered in the year is enough for the lower deduction to apply.
+### 2. Compute direct-assessment activity income
 
-### Key Rules
+Under [LIRPF arts. 28–30](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a30), start with the full activity receipts on the actual tax accounting basis. Deduct substantiated business expenses and tax depreciation, including the proprietor's eligible own RETA/alternative-mutual contribution. Keep recoverable input VAT outside both income and expenses; retain irrecoverable VAT where it forms part of the deductible cost or asset basis. Owner drawings, loan principal, income-tax withholding and Modelo 130 are not activity expenses.
 
-- **Changing the base.** Several times a year, to follow income. The count and the dates are set by regulation and published by Social Security.
-- **Annual regularisation.** Social Security compares the bases paid with the income the tax office reports. Overpayments are refunded, underpayments collected (art. 308.1.c LGSS).
-- **The floor.** Company owners and family members cannot pick a base below the minimum above, and regularisation cannot take the final base below it.
-- **Pluriactividad.** An employee who is also an autónomo can reclaim part of the excess. The threshold and the capped share are in `es-social-contributions`.
+| Cost requiring a special computation | 2026 method | Official source |
+|---|---|---|
+| Home supplies | 30% × separately evidenced business floor-area share × qualifying supplies, unless another higher/lower share is proved | [LIRPF art. 30.2.5.b](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a30) |
+| Eligible health insurance | Up to 500 per covered proprietor/spouse/cohabiting child under 25; 1,500 per qualifying disabled person | [Art. 30.2.5.a](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a30) |
+| Own business meals | Restaurant/hospitality and electronic payment; actual eligible cost within Spain 26.67 without /53.34 with qualifying overnight; abroad 48.08/91.35 | [Art. 30.2.5.c](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a30), [RIRPF art. 9](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a9) |
+| Business assets | Actual allocation and depreciation. Indivisible mixed-use assets are not automatically deductible by an invented percentage | [RIRPF arts. 22 and 30](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a22) |
+| Ordinary passenger vehicle | IRPF exclusive-use restriction with the article's specific transport/agent/hire exceptions; VAT's rebuttable 50% presumption is a different tax rule | [RIRPF art. 22.4](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a22), [LIVA art. 95.Tres](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a95) |
 
-## Section 3: Tarifa Plana (Flat Rate for New Autónomos)
+Apply the simplified 5%/2,000 combined item only after the qualifying expenses and before subsequent income reductions. Test [LIRPF art. 32](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a32) low-income, qualifying unrelated single-client/TRADE, disability, irregular and new-activity relief using the complete conditions and formulas in [the annual IRPF computation](es-income-tax.md#the-base). The single-client reduction and simplified provisions item are incompatible; first registration alone does not establish new-activity relief. A business fixed-asset disposal is separately a capital gain under art. 28.2, rather than another turnover receipt.
 
-### Standard Tarifa Plana (art. 38 ter Ley 20/2007)
+### 3. Independently band and regularise RETA
 
-The reduced starting contribution (cuota reducida, the tarifa plana) is one monthly amount instead of base times rate. It runs for the twelve complete calendar months after the alta takes effect, with nothing paid in them for cessation of activity or vocational training. A second twelve months can follow if net income then is below the annual minimum wage.
+For direct assessment, build annual computable activity income by adding deducted own social/alternative-mutual contributions back to IRPF net activity income, then include the other statutory company/partner/attributed income in [LGSS art. 308.1.c](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a308). Apply the appropriate 7%/3% generic deduction. A shareholder's relevant company work and equity income is not omitted merely because it is outside the sole trade.
 
-**Amount of the reduced contribution**
+Let D be **regularisable calendar days** after statutory benefit/reduced-fee exclusions. `monthly_band_income = annual_computable_income_after_generic_deduction / D × 30`. Do not substitute annual/12 or a count of monthly bank debits. Compare against the actual year's bands, choose a permissible base, and apply all covered components and eligible bonuses. Annual regularisation compares the day-weighted provisional base against the final band, retaining signed monthly differences, partial-month proportions and historical-base elections ([RD 2064/1995 arts. 44–46](https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579#a44)). Use [the contribution Guide](es-social-contributions.md#the-base) for exclusions, final-base floors, notices and refunds.
 
-| Period | Monthly amount | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482 |
-| The reduced contribution of art. 38 ter, both twelve month periods, for 2023, 2024 and 2025 | EUR 80 | "será de 80 euros mensuales" |
-| From month 25 in the cases in art. 38 ter(10), same years | EUR 160 | "160 euros a partir del mes vigesimoquinto" |
+**Starting reduction.** [Ley 20/2007 art. 38 ter](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5) covers qualifying first registration or no registration in the preceding two years, three when previously enjoyed. Request it at registration. Its first period runs from effective registration through the following twelve complete calendar months; a requested further twelve needs annual computable income below annual SMI, with the stated annual tests. Qualifying disability of at least 33%, gender violence and terrorism cases have 24/36 complete months. It expressly extends to qualifying company/cooperative members and excludes the listed joining relatives/religious members. A baja ends the benefit. The general **new-2026 monetary amount is unconfirmed**: [RDL 13/2022 DT 5](https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482) fixes amounts only through 2025, while the TGSS display does not reconcile its components. Record an individual's actual award/assessment without turning it into a general statutory amount.
 
-**There is no 2026 amount in law.** The provision linked above sets the amount for 2023 to 2025 and leaves later years to the Budget Law. None has been approved for 2026, so no allowed official page prints a 2026 amount. Treat the amounts above as the 2023 to 2025 amounts and check what Social Security is charging before quoting one. What Social Security is actually charging appears on the award letter and the monthly receipt. Read the amount from that document and name it as the source; do not state one from memory.
+**While the reduction applies.** Hiring employees after starting the activity does not itself end it. An express renunciation takes effect on the first day of the month after communication. Economic benefits during the reduced-fee period use the applicable minimum base of the lowest general-table band. After the maximum benefit period ends, contribution for all protected contingencies resumes on the first day of the following month. The initial reduced-fee period is not annually income-regularised; the extension has its separate income/reassessment test in [es-social-contributions](es-social-contributions.md#reduced-starting-fee-and-familyterritorial-bonuses) ([LETA art.38 ter.3–8](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5)).
 
-### Requirements
+**Other relief.** Qualifying family collaborators under [art. 35](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a35) receive 50% for eighteen months then 25% for six on CC at general-band-1 minimum, subject to prior-registration/relationship conditions. Company/family final floors still require testing. [Art. 36](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a36) changes qualifying Ceuta/Melilla CC relief from 50% to 75% for quotas accrued from **1 October 2026**; use each period's sector list and do not reduce MEI or every contingency. Pluriactividad includes employer and employee CC plus RETA CC before applying the excess/refund cap.
 
-- **New to RETA.** A first registration, or none in the two years before the alta takes effect.
-- **Three years, not two,** if the worker used these reductions in an earlier registration.
-- **It must be asked for,** at the alta, and again before the second period starts. It is not automatic.
-- **The second period** needs a declaration that net income will be below the annual minimum wage.
-- **Not for family members** of an autónomo up to the second degree, nor for members of Catholic institutes of consecrated life (art. 38 ter(11)).
-- **Company partners can use it.** Art. 38 ter(9) extends it to partners of capital and labour companies and to working members of worker cooperatives who fall into RETA.
+### 4. Reconcile invoice cash, VAT, annual IRPF and spendable income
 
-### Extended Tarifa Plana (longer periods)
+For a taxable professional fee, `invoice cash = fee + output VAT − applicable withholding`. The withholding is credited on annual IRPF, not deducted as a cost. Private/non-obliged customers and foreign payers require their actual withholding analysis; a Spanish professional invoice does not automatically suffer 15% from every customer ([RIRPF arts. 75–76 and 95](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a76)).
 
-**Longer periods for particular situations**
+Compute VAT separately: output VAT less **eligible**, evidenced input VAT, then period adjustments, prior credits and payment/refund treatment. Mixed business/private use and exempt activities can limit input recovery. A foreign client does not automatically make a service VAT-free; use LIVA place-of-supply and reverse-charge rules in [es-vat-return](es-vat-return.md).
 
-| Situation | Effect | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409 |
-| Recognised degree of disability at or above the level in art. 38 ter(10) | First period 24 complete months, second period 36 | "discapacidad igual o superior al 33 por ciento" |
-| Victims of gender violence or of terrorism | The same longer periods | "víctimas de violencia de género" |
+Annual IRPF combines the correctly classified net activity amount with all other income, base reductions, state/community scales and distinct minima, credits and actual prepayments. Reconcile spendable annual cash as collected fees less actual business outflows, final net indirect tax, final personal tax and any contribution regularisation. Outstanding invoices, capital purchases, loan principal and timing differences prevent equating taxable profit with bank cash without a reconciliation.
 
-### Important Notes
+## Deadlines and filing
 
-- **No retroactive request,** and no claim for months already past.
-- **A baja ends it,** and the worker may renounce it from the first day of the next month.
-- **Hiring staff does not end it.**
-- **Regularisation.** None in the first period; in the second, one if income turns out above the annual minimum wage.
-- **Benefits** earned while it is paid use the minimum base of the lowest band of the general table.
-- **After it ends,** all contingencies are paid for in the ordinary way.
+| Obligation | Timing/route | Official source |
+|---|---|---|
+| Census registration | Modelo 036 before activity starts; actual activity/regime/withholding registrations. Modelo 037 was abolished from 3 February 2025 | [RGAT art. 9](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984), [Orden HAC/1526/2024](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-410) |
+| RETA | Registration/cessation and changes through TGSS with actual start/end/coverage information; use the statutory effective date and exclusions | [LGSS arts. 305/308](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a308), [TGSS guide](https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/trabajo%2Bautonomo/guia) |
+| Modelo 130/131 if obliged | Q1–3 days 1–20 April/July/October; Q4 days 1–30 following January; applicable non-working-day extension. File the prescribed negative return when obliged but no payment | [RIRPF art. 111](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a111) |
+| Ordinary quarterly Modelo 303 | First three quarters days 1–20 April/July/October; Q4 first 30 days following January; monthly/SII/REDEME routes differ | [RIVA art. 71](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a71) |
+| Modelo 390 | Applicable January annual summary; exemptions depend on actual regime and final-period information | [Orden EHA/3111/2009](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18472) |
+| Annual Modelo 100 | Anyone registered in RETA at any time in the tax year files; 2026 income is filed in the prescribed 2027 campaign | [LIRPF arts. 96–97](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a96) |
+| Payer withholding | If paying employees/professionals, apply the distinct 111/190 obligations in [es-modelo-111](es-modelo-111.md); business-rent 115/180 is a separate route | [RIRPF arts. 95/100/108](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108), [AEAT rent withholding](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_3-retenciones-arrendamiento-bienes-inmuebles-180.html) |
+| RETA base change | Requests Jan–Feb/Mar–Apr/May–Jun/Jul–Aug/Sep–Oct/Nov–Dec take effect March/May/July/September/November/following January | [RD 2064 art. 45](https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579#a45) |
 
-## Section 4: Complete Fiscal Calendar for Autónomos
+Apply actual direct-debit cutoffs separately. Determine Modelo 349, 347 and foreign-asset reports from the underlying transactions and exemptions, not simply from the existence of an autónomo registration. Preserve filing, payment and award evidence.
 
-### Quarterly Obligations
+**Modelo 347.** Under [RGAT arts. 31–33](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984#a33), an obliged operator normally reports a third party where the relevant calendar-year transactions **exceed 3,005.06**, counting deliveries and purchases separately and including the tax in the prescribed transaction amount. Check SII/reporting exclusions, operations already covered by a coincident specific return, invoice and other statutory exclusions before requiring the form. Exactly 3,005.06 does not exceed the threshold. Cash-scheme operations require the two statutory accrual views and annual information; do not omit one merely because the invoice was unpaid. File 347 **during February following the calendar year reported**, subject to the applicable non-working-day calendar and incorporated technical-presentation provision ([Orden EHA/3012/2008 art. 10](https://www.boe.es/buscar/act.php?id=BOE-A-2008-16973#a10), read 2026-10-27).
 
-Art. 111 RD 439/2007: the first three quarters between the 1st and the 20th of April, July and October, the fourth between the 1st and the 30th of January. A quarter with nothing to pay is still filed, as a negative return. https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820
+**Modelo 720.** The foreign-account, securities/rights/insurance/rents and foreign-property blocks have **separate 50,000 aggregate thresholds**, not 50,000 per asset or one combined allowance. For accounts test both year-end and last-quarter average balances; exceeding either aggregate triggers all reportable accounts. Apply actual ownership/authority/beneficial-owner status, each block's valuation rules and its exemptions, including the specifically conditioned commercial-accounting exemptions. Following a prior report, a block generally requires reporting on an **increase exceeding 20,000** against its last reported reference, with separate cessation/disposal reporting duties even without that increase. The statutory window is **1 January–31 March following the report year**, subject to the applicable calendar. These are information returns, not a wealth-tax allowance or authority to apply retired punitive rules ([RGAT arts. 42 bis/42 ter/54 bis](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984#a42bis)). Foreign crypto custody uses the distinct 721 route in the crypto sibling, not automatic insertion into 720.
 
-| Quarter | Period | Deadline | Models to file |
-| --- | --- | --- | --- |
-| Q1 | January to March | 1 to 20 April | 130 (IRPF) and 303 (VAT) |
-| Q2 | April to June | 1 to 20 July | 130 and 303 |
-| Q3 | July to September | 1 to 20 October | 130 and 303 |
-| Q4 | October to December | 1 to 30 January | 130 and 303 |
+## Penalties and interest
 
-### Annual Obligations
+Tax and Social Security collection have separate rules. For tax, [LGT art. 27](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27) voluntary late payable returns without prior request carry **1% plus 1% per complete month** within twelve months; thereafter **15% plus interest after those twelve months**, with the conditional 25% surcharge reduction. [Art. 28](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28) executive surcharges are 5%/10%/20% by payment stage. [Arts. 191 and 198](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a191) distinguish classified underpayment sanctions of 50–150% from ordinary non-economic late returns, generally 200 with the statutory no-request reduction. Default interest follows the applicable period rate under art. 26; [AEAT records 4.0625% under the continued 2026 budget](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html).
 
-| Model | Description | Deadline |
-| --- | --- | --- |
-| 100 | Declaración de la Renta, the annual IRPF return | Spring campaign, dates set by the order approving the model |
-| 390 | Annual VAT summary | January |
-| 347 | Operations with third parties above the threshold in Section 10 | February |
-| 349 | Intra-EU operations, if any | Monthly or quarterly, by volume |
+For contributions, [LGSS art. 30](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a30) applies 10% in the first late calendar month and 20% subsequently when the art. 29 duties were met; otherwise 20% before the demand/assessment period ends and 35% afterwards. [Art. 31](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a31) supplies interest exigibility and legal rate plus 25% relative uplift unless otherwise budgeted. A regularisation paid by its special notice deadline is not an ordinary late quota.
 
-### Additional Models (if applicable)
+## Cross-border points
 
-| Model | Who | When |
-| --- | --- | --- |
-| 111 | Anyone who withholds from staff or from professional invoices | Quarterly |
-| 115 | Anyone who withholds on rent for business premises | Quarterly |
-| 131 | Instead of 130, for an activity in estimación objetiva (módulos) | Quarterly |
-| 720 | Assets abroad above the threshold in Section 10 | Until 31 March |
-
-## Section 5: Indirect Tax by Territory
-
-### IVA (Common Territory + Baleares)
-
-**Spanish VAT rates**
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
-| General rate (art. 90.Uno) | 21% | "al tipo del 21 por ciento" |
-| Reduced rate (art. 91.Uno): food, water, passenger transport, hotels, restaurants, new housing | 10% | "el tipo del 10 por ciento" |
-| Super-reduced rate (art. 91.Dos): plain bread, milk, cheese, eggs, fruit, vegetables, olive oil, books, medicines | 4% | "el tipo del 4 por ciento" |
-
-Filed on modelo 303 each quarter, with modelo 390 as the annual summary. The rate is the one in force when the tax point arises, not when the invoice is issued. See `es-vat-return`.
-
-### IGIC (Canarias)
-
-The Canary Islands are outside the Spanish VAT territory. An autónomo established there charges IGIC and files the quarterly modelo 420 with the Agencia Tributaria Canaria. Rates are in art. 51 Ley 4/2012 of the Canary Islands, wording in force since 1 January 2024.
-
-**IGIC rates**
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282 |
-| Zero rate, supplies listed in art. 52 | Zero rate | "El tipo cero, aplicable a las entregas de bienes" |
-| Reduced rate, art. 54 | 3% | "El tipo reducido del 3 por ciento" |
-| Reduced rate, art. 54 bis | 5% | "El tipo reducido del 5 por ciento" |
-| General rate, everything not in another rate | 7% | "El tipo general del 7 por ciento" |
-| Increased rate, art. 55 | 9.5% | "incrementado del 9,5 por ciento" |
-| Increased rate, art. 56 | 15% | "incrementado del 15 por ciento" |
-| Special rate, art. 57 | 20% | "El tipo especial del 20 por ciento" |
-
-### IPSI (Ceuta and Melilla)
-
-Ceuta and Melilla are outside both the VAT and the IGIC territories and charge their own IPSI on imports, production and services. Rates and forms are set by each city's ordinance, which is not published on any site this Guide may cite, so no IPSI rate is stated here.
-
-## Section 6: Net Take-Home Calculation (Sueldo Neto Autónomo)
-
-### Monthly Calculation Formula
-
-1. Start from the fee for the month, without indirect tax.
-2. Add the VAT, IGIC or IPSI charged to the client. That money is the tax authority's, not income.
-3. Take off the IRPF withholding the client applies, if the activity is professional (Section 9).
-4. What is left is the cash received; from it come the RETA contribution and the running costs.
-5. Separately, the indirect tax to pay over is tax on sales less deductible tax on purchases, settled on modelo 303.
-
-### Annual Calculation Formula
-
-1. Gross fees for the year, without indirect tax.
-2. Less the deductible expenses in Section 10, RETA contributions included.
-3. Less, in estimación directa simplificada only, the hard to justify deduction in Section 10.
-4. The result is the net income from the activity, which joins the general IRPF base with the client's other income.
-5. The tax on that base uses the state scale plus the client's community scale: `es-income-tax`. This Guide states no income tax rate, because half of it is regional.
-6. Deduct the withholdings suffered and the modelo 130 payments. The difference is paid or refunded on modelo 100.
-
-### Worked Example: IT Freelancer, Madrid
-
-The worked example with amounts was removed in this refresh: every figure in it was computed rather than read off an official page, and its last step cannot be computed without naming the autonomous community, whose scale is on no national page. Use the orders of operations above with the client's own numbers, the band from `es-social-contributions` and the tax from `es-income-tax`. The cash left each month is not the yearly result: withholdings and modelo 130 payments are prepayments that the annual return settles.
-
-## Section 7: Territorial Regime Classification
-
-| Fiscal residence | IRPF scale | Indirect tax | Social Security |
-| --- | --- | --- | --- |
-| Common territory | State plus community scale | VAT | Ordinary RETA rules |
-| Canarias | State plus community scale | IGIC | Ordinary RETA rules |
-| Ceuta | State plus community, with the credit below | IPSI, set by the city | Bonification below, listed sectors |
-| Melilla | State plus community, with the credit below | IPSI, set by the city | Bonification below, listed sectors |
-| País Vasco (Álava, Bizkaia, Gipuzkoa) | Foral: own income tax law and scale | VAT | Ordinary RETA rules |
-| Navarra | Foral: own income tax law and scale | VAT | Ordinary RETA rules |
-
-The foral scales are not in this Guide. Quoting a Spanish scale to a Basque or Navarrese client quotes the wrong law.
-
-**Ceuta and Melilla: the two reliefs**
-
-| Relief | Value | Note |
-| --- | --- | --- |
-| Source, IRPF credit, art. 68.4 Ley 35/2006 | see below | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| Credit against the tax on income earned in Ceuta or Melilla by someone habitually and effectively resident there | 60% | "se deducirán el 60 por ciento" |
-| Source, contribution bonification to 30 September 2026, art. 36 Ley 20/2007 in the wording of Real Decreto-ley 1/2023 | see below | https://www.boe.es/buscar/act.php?id=BOE-A-2023-625 |
-| Bonification of the common contingencies contribution, contributions accrued before 1 October 2026 | 50% | "bonificación del 50 por ciento de la cuota por contingencias comunes" |
-| Bonification of the common contingencies contribution, contributions accrued from 1 October 2026 | 75% | "bonificación del 75 por ciento de la cuota" |
-
-Art. 36 changed inside the tax year. The wording in force from 1 January 2023 was introduced by disposición final 2.Uno of Real Decreto-ley 1/2023 and it named building construction INSIDE the exception clause, so a builder in Ceuta or Melilla was out of the relief. The wording in force from 1 October 2026 does not name it at all, so a builder is in. That one sentence carries its exceptions inside it, so read art. 36 for the period in question before deciding a sector is in or out. The wording above is the one introduced by Real Decreto-ley 22/2026 of 1 September, which the law's own note says has effect for contributions accrued from 1 October 2026. For a contribution accrued earlier in 2026, use the earlier wording and the earlier sector list.
-
-### Ceuta and Melilla: sectors with the contribution bonification
-
-- **The sectors, in the words of art. 36.** Agriculture, fishing and aquaculture; industry except energy and water; commerce; tourism; hospitality and the rest of services, except fixed-wing air transport; financial and insurance activities; and real estate activities. The list that applied before 1 October 2026 also included building construction. One sentence with exceptions inside it, so read the article before relying on it.
-
-## Section 8: Types of Autónomo
-
-### 8.1 Autónomo Persona Física (Standard)
-
-- **Autónomo persona física.** A sole trader or freelancer taxed as an individual under IRPF, in estimación directa simplificada unless another regime is chosen or imposed. Clients withhold on professional invoices only (Section 9).
-
-### 8.2 Autónomo Societario
-
-- **Who it is.** A partner or director who falls into RETA under art. 305.2.b LGSS. The law does not state the test as a percentage. Effective control is taken as given, with no proof to the contrary allowed, where the worker's own shares are at least half the capital. Below that it is presumed, and the presumption can be rebutted, where at least half the capital is held among relatives living with the worker, where the worker's holding is at least a third of the capital, or at least a quarter of it with management functions. Even outside all of these the administration may prove effective control by any means.
-- **Contribution floor and deduction.** The floor and the lower generic deduction in the Section 2 tables both apply to them.
-- **The reduced starting contribution is open to them,** by art. 38 ter(9) Ley 20/2007, on the ordinary conditions.
-- **Their pay is employment income.** What the company pays them for their work is rendimientos del trabajo, not business income, so there is no modelo 130 for it.
-
-### 8.3 Autónomo Colaborador (Family Member)
-
-- **Who it is.** The spouse, registered partner or a relative up to the second degree who works regularly in the business, joins RETA in their own name and was not registered in RETA in the five years before.
-
-**Bonification for a family member joining RETA**
-
-| Period | Bonification of the common contingencies contribution | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409 |
-| First eighteen months | 50% | "al 50 por ciento durante los primeros dieciocho meses" |
-| The following six months | 25% | "al 25 por ciento durante los seis meses siguientes" |
-
-It is worked out on the common contingencies contribution at the minimum base of band 1 of the general table. A family member has the Section 2 floor and cannot use the Section 3 reduction.
-
-### 8.4 Autónomo Económicamente Dependiente (TRADE)
-
-**When a worker is economically dependent**
-
-| Test | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409 |
-| Share of income from work and from economic or professional activities coming from one client | 75% | "75 por ciento de sus ingresos" |
-
-- **And the other conditions.** Art. 11.2 Ley 20/2007 requires all of them at once: no employees and no subcontracting of the work, own premises and equipment where the activity needs them, own organisational criteria, and payment by the results of the work rather than a wage. A freelancer whose biggest client passes the share above is not a TRADE unless every one of these also holds.
-- **What changes.** A written contract registered with the public employment service, and the protections in Ley 20/2007. Tax obligations are unchanged.
-
-- **Pluriactividad.** Someone contributing as an employee and in RETA in the same year can reclaim part of the excess once the two sets of common contingencies contributions pass a yearly threshold, capped at a share of what was paid in RETA. The threshold and the share are in `es-social-contributions`: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537
-
-## Section 9: Registration Process (Alta de Autónomo)
-
-### Steps
-
-- **Step 1: Alta en Hacienda.** File the census declaration of alta in the Censo de Empresarios, Profesionales y Retenedores before the activity starts, choosing the IAE heading, the IRPF regime and the VAT regime. **The form is modelo 036 only.** Modelo 037, the simplified census declaration, was suppressed by Orden HAC/1526/2024, in force from 3 February 2025: https://www.boe.es/buscar/doc.php?id=BOE-A-2025-410 The census obligations are in RD 1065/2007: https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984
-- **Step 2: Alta en RETA.** Register with Social Security, declaring the forecast of average monthly net income so a base can be chosen in the right band (art. 308.1.a LGSS), and ask for the reduced starting contribution in the same application if the Section 3 conditions are met: https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724
-- **Step 3: Licencia de actividad.** Some activities and any premises need a municipal licence: town hall law, not covered here.
-- **Step 4: Libros registro.** Start the books on day one. Under art. 68 RD 439/2007 a non-mercantile activity in direct estimation keeps a sales and income book, a purchases and expenses book and a capital assets book; a professional activity also keeps a book of provisions and advances: https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820
-
-### Key Decisions at Registration
-
-| Decision | Options | Default |
-| --- | --- | --- |
-| Estimation regime | Directa simplificada, directa normal, objetiva (módulos) | Simplificada, unless turnover is over the Section 10 limit |
-| IAE heading | Section one (business) or section two (professional) | Decides whether clients withhold |
-| VAT regime | General, simplified, recargo de equivalencia | General |
-| Reduced starting contribution | Ask at the alta or not at all | Ask if the Section 3 conditions are met |
-| Contribution base | The minimum of the band, or higher | The minimum of the band |
-
-**Withholding on professional invoices**
-
-| Case | Rate | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
-| Ordinary rate on a professional invoice to a business or another professional (art. 95.1) | 15% | "el tipo de retención del 15 por ciento" |
-| Starting a professional activity: the year it starts and the two following years, if no professional activity was carried on in the year before | 7% | "será del 7 por ciento en el período impositivo de inicio" |
-
-The reduced rate is notified to the payer in writing and the payer keeps the signed notice. Most business activities in section one of the IAE are not withheld on, but not all: art. 95.6 Reglamento IRPF withholds on a listed set of section one activities when they are in the module method, and arts. 95.4 and 95.5 withhold on farming, livestock and forestry. Check the activity against art. 95 before telling a client there is no withholding. The payer declares the withholding on modelo 111; the professional credits it in the return.
-
-**Quarterly payment on account**
-
-Modelo 130 is a fixed share of net income from 1 January to the end of the quarter, less the earlier quarters' payments and the withholdings suffered (art. 110.1.a RD 439/2007). A professional is released from filing it at all when enough of the previous calendar year's income from the activity bore withholding (art. 109.2). In the year the activity starts there is no previous year to look at, so art. 109.5 applies the same test to the period the payment on account itself covers. Módulos use modelo 131 at its own rates (art. 110.1.b). The rates and the release share are in `es-estimated-tax`: https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820
-
-**Rate of the payment on account**
-
-| Case | Rate | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
-| Activity in direct estimation, on net income from 1 January to the end of the quarter (art. 110.1.a) | 20% | "el 20 por ciento del rendimiento neto" |
-
-## Section 10: Deductible Expenses for Autónomos
-
-An expense is deductible in direct estimation if it is linked to the activity, recorded in the books and supported by a proper invoice. Capital assets are depreciated, not deducted at once; the simplified table is in `es-income-tax`.
-
-### Fully Deductible (with proper invoice)
-
-| Expense | Notes |
-| --- | --- |
-| RETA contributions | The worker's own contributions |
-| Rent of business premises | Withholding on the rent may apply, on modelo 115 |
-| Professional services (gestoría, lawyer) | With an invoice |
-| Software and subscriptions used in the activity | Business use |
-| Advertising and marketing | With an invoice |
-| Training related to the activity | With an invoice |
-| Professional liability and other business insurance | With an invoice |
-| Bank charges on the business account | With an invoice or statement |
-| Payment processor fees | With an invoice |
-| Depreciation of capital assets | See `es-income-tax` |
-| Business travel and transport | Documented trips |
-
-### Partially Deductible (Special Rules)
-
-**Limits on particular expenses**
-
-| Expense | Limit | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| Water, gas, electricity, telephone and internet where the home is partly used for the activity: the deductible share is this percentage applied to the proportion of square metres used for the activity, unless a different share, higher or lower, is proved (art. 30.2.5.b) | 30% | "aplicar el 30 por ciento a la proporción" |
-| Health insurance for the worker, the spouse and children under 25 living with them, per insured person per year (art. 30.2.5.a) | EUR 500 | "será de 500 euros" |
-| The same, for an insured person with a disability (art. 30.2.5.a) | EUR 1,500 | "o de 1.500 euros por cada una de ellas con discapacidad" |
-
-Art. 30.2.5.c Ley 35/2006 lets the worker deduct their own meals, up to the limits set for employees in art. 9 RD 439/2007, if the meal is taken in a restaurant or hotel and paid by electronic means.
-
-| Meal limits taken from the employee rules | Daily limit | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
-| In Spain, no overnight stay | EUR 26.67 | "no excedan de 26,67" |
-| Abroad, no overnight stay | EUR 48.08 | "26,67 ó 48,08 euros diarios" |
-| With an overnight stay away | Higher limits, in the same article | "Por gastos de manutención" |
-
-- **Vehicles.** For IRPF a car, moped or motorcycle counts as used in the activity only if it is used exclusively for it. Art. 22.4 Reglamento IRPF lifts that rule for five cases: mixed vehicles carrying goods, passenger transport for a fee, driving and flying instruction for a fee, the professional journeys of commercial representatives and agents, and vehicles habitually hired out for a fee. VAT is a separate rule with its own presumption, in the table below; do not carry one answer across to the other tax. The presumption can be displaced by proof either way, and the vehicles listed in the same rule, such as goods vans and driving school cars, are presumed wholly used in the business.
-
-**Vehicle, the VAT side**
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
-| Share of a car, trailer, moped or motorcycle presumed used in the business, for deducting VAT (art. 95.Tres.2) | 50% | "en la proporción del 50 por 100" |
-
-- **Mixed use items such as a mobile phone.** Only the business share, and only if it can be shown. The official pages give no default split, so nothing is deducted without evidence.
-- **Entertaining clients.** The rule covers the worker's own meals only. Anything spent on a client is not in it.
-- **Personal insurance.** Not deductible, apart from the health insurance above.
-- **The tax itself.** Modelo 130 payments are prepayments of IRPF, not an expense.
-
-### Gastos de Difícil Justificación (Simplificada only)
-
-**Deduction for provisions and hard to justify expenses**
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
-| Percentage of net income before this item (art. 30.2 RD 439/2007) | 5% | "el porcentaje del 5 por ciento" |
-| Yearly cap in cash | EUR 2,000 | "superar 2.000 euros anuales" |
-| Net turnover of the preceding year above which estimación directa simplificada cannot be used (art. 28.1.b) | EUR 600,000 | "no supere los 600.000 euros" |
-
-It is a cap, not an allowance: the deduction is the percentage of net income, up to the cash cap. It is not available to a taxpayer taking the new activity reduction of art. 26.1 RD 439/2007.
-
-**Module method limits, and two reporting thresholds**
-
-| Limit | Value | Note |
-| --- | --- | --- |
-| Source, module limits, art. 31.1.3 Ley 35/2006 | see below | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| Prior year income from all activities except farming, above which módulos cannot be used | EUR 150,000 | "150.000 euros anuales" |
-| Of that, prior year income invoiced to businesses and professionals | EUR 75,000 | "supere 75.000 euros" |
-| Prior year purchases, capital assets excluded | EUR 150,000 | "supere la cantidad de 150.000 euros" |
-| Source, the higher limits the Agencia Tributaria still states for 2016 to 2026 | see below | https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html |
-| Prior year income from all activities except farming, Agencia Tributaria page | EUR 250,000 | "los límites de 150.000 € y 75.000 € pasan a ser 250.000 € y 125.000 €" |
-| Of that, invoiced to businesses and professionals, Agencia Tributaria page | EUR 125,000 | "pasan a ser 250.000 € y 125.000 € respectivamente" |
-| Source, modelo 720 and modelo 347, RD 1065/2007 | see below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984 |
-| Assets abroad: each reporting block is filed once it passes this figure (art. 42 bis) | EUR 50,000 | "conjuntamente, los 50.000 euros" |
-| Operations with one third party in the calendar year, above which they go on modelo 347 | EUR 3,005.06 | "3.005,06 euros durante el año natural" |
-
-The higher module limits people remember are in disposición transitoria 32 Ley 35/2006, whose heading still reads "en los ejercicios 2016 a 2024". Real Decreto-ley 9/2024, 16/2025 and 2/2026 each tried to extend them and the Congress of Deputies left each one without effect, which is why the statutory figures above are the ones the law now prints for 2026. The 2026 module order does not print a figure of its own: it sends the reader back to art. 31.1.3. But the Agencia Tributaria's own page on who the module method applies to still states the higher limits for the years 2016 to 2026 inclusive, and it was last updated in September 2026. The two sources disagree. Do not tell anyone they are inside or outside the module method on the statutory figures alone: check the position with the Agencia Tributaria for the year in question.
-
-## Section 11: Obligación de Declarar (Filing Obligation)
-
-An autónomo files the annual return. Art. 96 Ley 35/2006 says that anyone who was registered in RETA, or in the seafarers' self-employed scheme, at any moment in the tax year must file in any case, whatever they earned. The thresholds below therefore matter for the client's other income, not for the activity.
-
-**Filing thresholds for the listed sources of income**
-
-| Situation | Limit | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| Employment income, one payer | EUR 22,000 | "con el límite de 22.000 euros anuales" |
-| Employment income, more than one payer, where the later payers together pass the tolerance below | EUR 15,876 | "será de 15.876 euros" |
-| Tolerance for second and later payers | EUR 1,500 | "la cantidad de 1.500 euros anuales" |
-| Investment income and capital gains subject to withholding, together | EUR 1,600 | "con el límite conjunto de 1.600 euros" |
-| Imputed property income, certain bills and grants, together | EUR 1,000 | "con el límite conjunto de 1.000 euros" |
-
-- **Always file.** Anyone who held an alta in RETA at any point in the year files modelo 100, whatever the amount.
-
-## Section 12: Conservative Defaults
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown estimation regime | Directa simplificada |
-| Unknown contribution band | Compute net income under art. 308.1.c LGSS as in Section 2, then read the band from `es-social-contributions` |
-| Unknown eligibility for the reduced starting contribution | Not eligible, ordinary bands apply |
-| Unknown whether the person is new to RETA | Not new |
-| Unknown IAE section | Section two, professional, so the ordinary withholding in Section 9 applies |
-| Unknown business use share of a mixed use item | Nothing deducted |
-| Unknown territory | Common territory, with VAT |
-| Unknown start date of the activity | Do not apply the reduced starting contribution |
-| Unknown autonomous community | State no income tax figure at all |
-
-## PROHIBITIONS
-
-- **Prohibition 1.** Never tell someone actively working for themselves that they can skip the RETA contribution.
-- **Prohibition 2.** Never say the reduced starting contribution is closed to company partners: art. 38 ter(9) Ley 20/2007 extends it to them. The excluded ones are family members and members of consecrated life institutes (art. 38 ter(11)).
-- **Prohibition 3.** Never state a monthly amount for the reduced contribution as a 2026 figure.
-- **Prohibition 4.** Never deduct client entertainment as a travel meal.
-- **Prohibition 5.** Never swap the two generic deduction percentages in Section 2. The lower one is for company directors and working partners.
-- **Prohibition 6.** Never treat withholdings or modelo 130 payments as business expenses.
-- **Prohibition 7.** Never charge VAT for an autónomo established in the Canary Islands (IGIC) or in Ceuta and Melilla (IPSI).
-- **Prohibition 8.** Never forget that modelo 130 is cumulative from 1 January, not the quarter alone.
-- **Prohibition 9.** Never present a contribution as final. Regularisation happens after the year end.
-- **Prohibition 10.** Never quote a total Spanish income tax rate. Half the scale is the community's, and the foral territories have their own law.
-- **Prohibition 11.** Never advise on a baja without saying it can end the reduced contribution and lengthen the gap before claiming it again.
-
-## The method, step by step
-
-1. Fix the facts that decide the rest: the client's residence, whether the activity is in section one or two of the IAE, and whether they are a partner or director of a company (RETA test: art. 305.2.b LGSS): https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724
-2. File the census declaration of alta on modelo 036 before the activity starts, choosing the IRPF and VAT regimes. Modelo 037 no longer exists: https://www.boe.es/buscar/doc.php?id=BOE-A-2025-410
-3. Register in RETA with a forecast of average monthly net income, and ask for the reduced starting contribution in the same application if art. 38 ter Ley 20/2007 is met: https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409
-4. Band the contribution: compute the income under art. 308.1.c LGSS, apply the Section 2 deduction, then take the band and base from `es-social-contributions`: https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724
-5. Open the record books required by art. 68 RD 439/2007 and keep them from the first invoice: https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820
-6. Invoice with the right indirect tax for the territory (Section 5) and, for a professional activity, the withholding in Section 9: https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740
-7. Each quarter file modelo 130 under arts. 110 and 111 RD 439/2007, unless the prior year withholding test releases the client, and modelo 303: https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820
-8. After the year end file modelo 100, deducting the withholdings suffered and the modelo 130 payments: https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764
-9. Check the Social Security regularisation against the income declared and pay or claim the difference (art. 308.1.c LGSS): https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724
+Common-territory residence does not eliminate foreign income: classify it and apply the actual treaty, source and foreign-credit rules in [es-income-tax](es-income-tax.md) and [IRNR/cross-border Guide](es-non-resident-income-tax-irnr-and.md). Foreign payers, digital-nomad status and an overseas account do not establish the incoming-worker election; [es-beckham](es-beckham.md) has its own eligibility and deemed-source computation.
+
+Social-security legislation is selected independently. [Regulation 883/2004 arts. 11–13](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02004R0883-20190731) determines one applicable Member State, posting/multi-state exceptions and the employment-state rule for employment in one state plus self-employment in another. Obtain the actual determination/A1 evidence instead of assuming Spanish RETA from tax residence alone.
+
+[VAT territory, LIVA art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a3), excludes Canarias, Ceuta and Melilla. This does not mean every invoice by a Canary-established trader bears IGIC: test place of supply, exemptions and reverse charge. Use [the ordinary2026 IGIC computation](es-canary-islands-igic.md), which reads Ley20/1991 alongside the current DL1/2025 regional consolidation and dated2026 amendments. Ceuta/Melilla use [the two city IPSI methods](es-ceuta-melilla-ipsi.md) and current ordinances. Foral residents use [the separate IRPF method](es-foral-income-tax.md); national social-security rules still require their own test. Each territorial Guide names any unresolved ordinary branch precisely.
+
+## Two worked examples that recompute
+
+### 1. Madrid professional: final tax versus invoice cash
+
+Assume an established 40-year-old Madrid resident, individual return, unrelated multiple clients, no relatives/minimum additions, base reductions or tax credits. Annual collected fees are 60,000; wholly deductible paid costs excluding recoverable VAT are 20,000, including actual own contributions. Of the costs, 10,000 carries fully deductible 21% input VAT; remaining costs have no deductible VAT. All fees carry 21% VAT and 15% professional withholding. Prior-year 70% withholding exemption releases Modelo 130. The simplified allowance is 2,000, leaving general base 38,000. State/Madrid scales and personal minima produce 4,353.50 and 3,783.04 tax, as [LIRPF arts. 63/74](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a63) and [Madrid arts. 1–2](https://www.boe.es/buscar/act.php?id=BOCM-m-2010-90068#a1) prescribe. Total 8,136.54 is settled against 9,000 withholding: refund 863.46. Cash after costs and net VAT before that refund is 31,000; final spendable cash is **31,863.46**, with no outstanding invoices, investment/financing movements or contribution adjustment. Actual contributions are an expense input, not proof a TGSS regularisation is nil.
+
+```oa-check
+name: Madrid professional annual tax and collected cash reconciliation
+inputs:
+  fees: 60000
+  expenses: 20000
+  vat_cost_base: 10000
+steps:
+  simplified: min(2000, max(0, fees - expenses) * 0.05)
+  base: fees - expenses - simplified
+  state_tax: round(4362.75 + (base - 35200) * 0.185 - 5550 * 0.095, 2)
+  madrid_tax: round(3841.42 + (base - 35425.68) * 0.174 - 5956.65 * 0.085, 2)
+  tax: state_tax + madrid_tax
+  withholding: fees * 0.15
+  output_vat: fees * 0.21
+  input_vat: vat_cost_base * 0.21
+  net_vat: output_vat - input_vat
+  received: fees + output_vat - withholding
+  cash_before_settlement: received - expenses - input_vat - net_vat
+  refund: withholding - tax
+  spendable: cash_before_settlement + refund
+expected:
+  simplified: 2000
+  base: 38000
+  state_tax: 4353.50
+  madrid_tax: 3783.04
+  tax: 8136.54
+  net_vat: 10500
+  cash_before_settlement: 31000
+  refund: 863.46
+  spendable: 31863.46
+```
+
+### 2. Part-year RETA and an invoice with withholding
+
+Assume a non-company ordinary fully covered worker with 180 documented regularisable days, IRPF net activity income 10,000 and deducted own contributions 1,200. These are final tax-record inputs; no reduced-fee days, benefits or other computable activity income. Band income is `(10,000 + 1,200) × 93% /180 ×30 = 1,736`, general band 4, whose permitted base is 1,143.79–1,850. A chosen 1,200 base gives **378** for a full ordinary contribution month, before separate component rounding. It is not an asserted full-year quota. Separately a professional fee of 1,000 with 21% VAT and 15% withholding produces **1,060** collected, not 1,210 income or 850 profit. Actual expense documents, annual tax and the period's VAT worksheet are still needed to calculate final spendable cash.
+
+```oa-check
+name: Part-year day-based RETA plus professional invoice reconciliation
+inputs:
+  irpf_net: 10000
+  own_contributions: 1200
+  regularisable_days: 180
+  chosen_base: 1200
+  fee: 1000
+steps:
+  monthly_band_income: (irpf_net + own_contributions) * 0.93 / regularisable_days * 30
+  cc: chosen_base * 0.283
+  occupational: chosen_base * 0.013
+  cessation: chosen_base * 0.009
+  training: chosen_base * 0.001
+  mei: chosen_base * 0.009
+  full_month_quota: cc + occupational + cessation + training + mei
+  invoice_vat: fee * 0.21
+  invoice_withholding: fee * 0.15
+  collected: fee + invoice_vat - invoice_withholding
+expected:
+  monthly_band_income: 1736
+  full_month_quota: 378
+  invoice_vat: 210
+  invoice_withholding: 150
+  collected: 1060
+```
 
 ## Ask the client first
 
-- Where are you resident: common territory, Canarias, Ceuta or Melilla, or a foral territory? The indirect tax, the credit and the scale all change.
-- Is the activity professional (section two of the IAE) or business (section one)? Only the first is withheld on.
-- Were you registered in RETA at any time in the last three years, and did you use the reduced starting contribution then?
-- Are you a partner or director of a company, or a family member of an autónomo? Each changes the floor, the generic deduction and the reduced contribution.
-- Do you work from home, and what share of the square metres is used for the activity?
-- Are you also an employee at the same time, and what did you and your employer pay in the year?
-
-## When to refuse or refer
-
-- Any figure for a Basque or Navarrese resident. Their income tax is foral law.
-- Any autonomous community deduction, or the community half of the scale. No national page carries them.
-- Any IPSI rate or return for Ceuta or Melilla: those ordinances are city law.
-- The reduced starting contribution amount for 2026, until a Budget Law sets it.
-- Whether a sector in Ceuta or Melilla is inside the bonification list, and which months of 2026 the current wording covers.
-- Whether a client is inside or outside the module method on turnover between the statutory limit and the higher one the Agencia Tributaria still publishes.
-- Taxing the company itself, or the choice between staying autónomo and incorporating: `es-corporate-tax`.
-- Anything with a foreign element: a client abroad, work abroad, a treaty, or a move in or out of Spain.
-- A licence, a permit or a local business tax. Those are municipal law.
+- What are your tax residence, community, establishment and actual work locations, and what applicable social-security determination exists?
+- What activities/IAE categories, assessment methods and elections are registered, and what were prior-year turnover and withheld-income proportions?
+- What complete receipts, expenses, VAT invoices, asset-use/depreciation records and withheld/prepaid-tax certificates support the year?
+- What registration/cessation days, provisional bases, contribution payments, benefit periods and reduced-fee awards appear in TGSS records?
+- Are you a company controller, director, partner, family collaborator or dependent contractor, and what company/other work income exists?
+- What family, disability, start-up, regional-credit and foreign-income facts alter final IRPF or the contribution relief?
 
 ## Sources
 
-- Ley 35/2006, IRPF: https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764
-- RD 439/2007, Reglamento del IRPF: https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820
-- Ley 37/1992, IVA: https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740
-- RD 1065/2007, gestión e inspección: https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984
-- Orden HAC/1526/2024, suppressing modelo 037: https://www.boe.es/buscar/doc.php?id=BOE-A-2025-410
-- Ley 20/2007, Estatuto del trabajo autónomo: https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409
-- RDLeg 8/2015, LGSS: https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724
-- Real Decreto-ley 13/2022: https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482
-- Orden PJC/297/2026, contributions 2026: https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296
-- Seguridad Social, bases y tipos 2026: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537
-- Ley 4/2012 de Canarias, IGIC rates: https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282
+[RGAT arts. 31–33/42 bis/42 ter/54 bis](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984) reread **2026-10-27** for conditional reporting thresholds, exemptions, later-year triggers and windows.
 
-## Disclaimer
+| Official source | Purpose | Read on |
+|---|---|---|
+| [Ley 35/2006](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764), arts. 17/27–32/63/74/96, DA 64 | Income classification, net activity, relief, annual tax and filing | 2026-10-26 |
+| [RD 439/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820), arts. 9/22/26/28–30/68/95/109–111 | Expenses, method, records, withholding and instalments | 2026-10-26 |
+| [Ley 20/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409), arts. 11–12/35–38 ter | TRADE and contribution relief | 2026-10-26 |
+| [LGSS](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724), arts. 30–31/305/308/313; [2026 order](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296); [RD 2064/1995](https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579) | Registration category, band income, day method, rates, regularisation, collection | 2026-10-26 |
+| [RDL 13/2022](https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482) DT 5; [TGSS guide](https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/trabajo%2Bautonomo/guia) | Starting-fee authority/display discrepancy | 2026-10-26 |
+| [RGAT](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984), art. 9; [HAC/1526/2024](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-410) | Census and abolished 037 | 2026-10-26 |
+| [LIVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740); [RIVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925); [390 order](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18472) | VAT territory, rates, allocation and filing | 2026-10-26 |
+| [AEAT 115/180](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_3-retenciones-arrendamiento-bienes-inmuebles-180.html) | Business-rent withholding form route | 2026-10-26 |
+| [2026 module order](https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272); [AEAT module-entry page](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html) | Earlier read of annual-order gateway and statutory/entry-page discrepancy; current administrative route supplied below | 2026-10-26 |
+| [AEAT 1 April post-repeal note](https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html), [current IRPF eligibility](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html) | Express 2026 administrative limits and valid renunciations; complete election method linked without treating repealed decrees as current law | 2026-10-28 |
+| [Madrid D.Leg. 1/2010](https://www.boe.es/buscar/act.php?id=BOCM-m-2010-90068), arts. 1–2 | Example's regional scale and personal minimum | 2026-10-26 |
+| [LGT](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186), arts. 26–28/191/198; [AEAT interest](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html) | Tax collection and sanctions | 2026-10-26 |
+| [Regulation 883/2004](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02004R0883-20190731), arts. 11–13 | Applicable social-security legislation | 2026-10-26 |
+| [Ley 4/2012](https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282), arts. 51–57 | Canary rate framework; BOE consolidation marked updating, not a complete 2026 IGIC reconciliation | 2026-10-26 |
 
-This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as an asesor fiscal or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+**Not yet confirmed:** general statutory amount for new 2026 reduced-fee awards and precise extension-boundary issues; legal reconciliation of the statutory/repeal texts with AEAT's published 2026 entry route, case-specific return corrections beyond its supplied election routes, and activity-specific module indices; the precisely outstanding branches in the linked foral IRPF/IGIC/IPSI Guides; specific foreign/treaty and special-system cases outside the ordinary routes. The final 2026 Modelo 100 campaign/schema for 2027 is not presumed from prior years. Independent whole-pack review remains pending.
 
 > Contributed by OpenAccountants.
 
@@ -520,4 +245,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-autonomous-worker` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-autonomous-worker. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-autonomous-worker` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-autonomous-worker. If neither is available, confirm every figure against the official source pages cited above before relying on it.

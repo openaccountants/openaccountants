@@ -1,0 +1,224 @@
+
+
+     
+	  
+    
+	
+
+: A quién se aplica - En el IRPF
+ 
+
+
+  	
+[[ID:body]]
+
+  
+	  
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	
+
+Inicio
+
+Empresarios individuales y profesionales
+
+Contribuyentes en módulos
+
+
+
+
+ 
+			 
+				
+[[ID:acc-main]]
+
+[[ID:js-nombre-canal]]
+
+A quién se aplica
+
+[[ID:js-descripcion-canal]]
+
+Te informamos sobre la aplicación de la estimación objetiva en IRPF y del régimen simplificado en IVA
+Saltar índice de la informaciónÍndice
+Índice:
+
+[[ID:indicePaginado]]
+
+En el IVA
+
+En el IRPF
+
+[[ID:js-nombre-canal-paginado]]
+
+En el IRPF
+
+Puedes aplicar el método de estimación objetiva siempre que:
+
+La actividad que realizas esté incluida en la Orden que desarrolla este régimen.
+
+No hayas renunciado a su aplicación.
+
+No haya incompatibilidades con los otros métodos de determinación del rendimiento.
+
+No hayas renunciado ni estés excluido del régimen simplificado del IVA ni del IGIC.
+
+No hayas renunciado al REAGP, ni al régimen de agricultura y ganadería del IGIC.
+
+No realices actividades total o parcialmente fuera del territorio español salvo: el transporte urbano colectivo y de viajeros por carretera, el autotaxis, el transporte de mercancías por carretera y el de mudanzas.
+
+No superes las magnitudes específicas que para cada actividad establece la Orden.
+
+El volumen de rendimientos íntegros en el año inmediato anterior no supere:
+
+150.000 € para el conjunto de todas tus actividades excepto las agrícolas, ganaderas y forestales. Se computan todas las operaciones exista o no obligación de expedir factura.
+
+75.000 € teniendo en cuenta las operaciones por las que estés obligado a expedir factura.
+
+250.000 € para el conjunto de actividades agrícolas, ganaderas, forestales.
+
+Desde 2016 hasta 2026 inclusive los límites de 150.000 € y 75.000 € pasan a ser 250.000 € y 125.000 € respectivamente. No se incluyen en el volumen de ingresos: las subvenciones corrientes, las de capital, las indemnizaciones, el IVA, ni, en su caso, el recargo de equivalencia, para aquellas actividades que tributen por el régimen simplificado del IVA.
+
+Desde el ejercicio 2025 tampoco se computará en el volumen de ingresos la compensación del régimen especial de la agricultura, ganadería y pesca del IVA.
+
+Desde 2016 hasta 2026 inclusive el volumen de compras en bienes y servicios en el año inmediato anterior no puede superar los 250.000 €. No se incluyen las adquisiciones de inmovilizado.
+
+[[ID:515fb4bb571d9710VgnVCM100000dc381e0aRCRD]]
+
+¿Qué actividades debes considerar para el cómputo de los límites?
+
+[[ID:collapse-515fb4bb571d9710VgnVCM100000dc381e0aRCRD]]
+
+A efectos de la estimación objetiva en el IRPF para determinar el volumen de rendimientos íntegros, de compras y de magnitudes específicas computarás no sólo las operaciones correspondientes a las actividades que desarrollas, sino también las correspondientes a las actividades desarrolladas por tu cónyuge, descendientes y ascendientes, y por las entidades en atribución de rentas en las que participéis cualquiera de vosotros, siempre que:
+
+las actividades que realicéis sean idénticas o similares (estén clasificadas en el mismo grupo de IAE)
+
+exista una dirección común, compartiendo medios materiales y personales
+
+En el caso de entidades en régimen de atribución de rentas computarás no sólo las operaciones correspondientes a las actividades de la entidad, sino también las correspondientes a las actividades desarrolladas por sus socios, herederos, comuneros o partícipes; los cónyuges, descendientes y ascendientes de éstos; así como por otras entidades en atribución de rentas en las que participéis cualquiera de los anteriores siempre que concurran las circunstancias antes señaladas.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Sólo la página actual
+
+[[ID:pdf-Todo]]
+Todas las páginas del índice
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+ContinuarGenerar PDFAnteriorEn el IVA
+[[ID:a5b97be9ed9f9710VgnVCM100000dc381e0aRCRD]]
+
+Ayuda
+
+[[ID:collapse-a5b97be9ed9f9710VgnVCM100000dc381e0aRCRD]]
+
+Manual Renta 2025- Rendimientos de actividades económicas en estimación objetiva (I) (Actividades distintas de las agrícolas, ganaderas y forestales)
+
+Manual Renta 2025- Rendimientos de actividades económicas en estimación objetiva (II) (Actividades agrícolas, ganaderas y forestales)
+
+Preguntas frecuentes INFORMA
+
+[[ID:f38766a23c6f9710VgnVCM100000dc381e0aRCRD]]
+
+Normativa
+
+[[ID:collapse-f38766a23c6f9710VgnVCM100000dc381e0aRCRD]]
+
+Art.16 de la Ley de IRPF
+(BOE, 29-noviembre-2006)
+
+Art. 32 del Reglamento de IRPF
+(BOE, 31-marzo-2007)
+
+Orden HAC/490/2024, de 21 de mayo,
+por la que se corrigen errores en la Orden HAC/348/2024, de 17 de abril, por la que se modifican para el período impositivo 2023 los índices de rendimiento neto y la reducción general aplicables en el método de estimación objetiva del Impuesto sobre la Renta de las Personas Físicas para las actividades agrícolas y ganaderas afectadas por diversas circunstancias excepcionales.(BOE, 24-mayo-2024)
+
+Orden HAC/348/2024, de 17 de abril,
+por la que se modifican para el período impositivo 2023 los índices de rendimiento neto y la reducción general aplicables en el método de estimación objetiva del Impuesto sobre la Renta de las Personas Físicas para las actividades agrícolas y ganaderas afectadas por diversas circunstancias excepcionales.(BOE, 19-abril-2024)
+
+Orden HFP/1359/2023, de 19 de diciembre,
+por la que se desarrollan para el año 2024 el método de estimación objetiva del Impuesto sobre la Renta de las Personas Físicas y el régimen especial simplificado del Impuesto Sobre el Valor Añadido.(BOE, 21-diciembre-2023)
+
+Orden HFP/1172/2022, de 29 de noviembre,
+por la que se desarrollan para el año 2023 el método de estimación objetiva del Impuesto sobre la Renta de las Personas Físicas y el régimen especial simplificado del Impuesto sobre el Valor Añadido.(BOE, 01-diciembre-2022)
+
+Corrección de errores de la Orden HFP/405/2023, de 18 de abril, 
+por la que se reducen para el período impositivo 2022 los índices de rendimiento neto y la reducción general aplicables en el método de estimación objetiva del Impuesto sobre la Renta de las Personas Físicas para las actividades agrícolas y ganaderas afectadas por diversas circunstancias excepcionales.(BOE, 09-junio-2023)
+
+Orden HFP/405/2023, de 18 de abril,
+por la que se reducen para el período impositivo 2022 los índices de rendimiento neto y la reducción general aplicables en el método de estimación objetiva del Impuesto sobre la Renta de las Personas Físicas para las actividades agrícolas y ganaderas afectadas por diversas circunstancias excepcionales.(BOE, 25-abril-2023)
+
+Orden HFP/1359/2023, de 19 de diciembre,
+por la que se desarrollan para el año 2024 el método de estimación objetiva del Impuesto sobre la Renta de las Personas Físicas y el régimen especial simplificado del Impuesto Sobre el Valor Añadido.(BOE, 22-diciembre-2023)
+
+Orden HAC/1347/2024, de 28 de noviembre,
+por la que se desarrollan para el año 2025 el método de estimación objetiva del Impuesto sobre la Renta de las Personas Físicas y el régimen especial simplificado del Impuesto sobre el Valor Añadido.(BOE, 30-noviembre-2024)
+
+Orden HAC/1155/2020, de 25 de noviembre,
+por la que se desarrollan, para el año 2021, el método de estimación objetiva del Impuesto sobre la Renta de las Personas Físicas y el régimen especial simplificado del Impuesto sobre el Valor Añadido.(BOE, 04-diciembre-2020)
+
+Orden HFP/1335/2021, de 1 de diciembre,
+por la que se desarrollan para el año 2022 el método de estimación objetiva del Impuesto sobre la Renta de las Personas Físicas y el régimen especial simplificado del Impuesto sobre el Valor Añadido.(BOE, 02-diciembre-2021)
+
+
+		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 13/octubre/2026
+
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

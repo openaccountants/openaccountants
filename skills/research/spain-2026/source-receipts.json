@@ -1,0 +1,2495 @@
+[
+  {
+    "key": "lis",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "17b276451de874491db43668d5e55f72d97c5330fccddf5c9e59e0b16829336f",
+    "bytes": 1477792
+  },
+  {
+    "key": "ris",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-7771",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-7771",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "4586b785155b565d6be3547f7eef305305780077d85fbdcaac785fdd11672e32",
+    "bytes": 387845
+  },
+  {
+    "key": "modelo232",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2017-10042",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2017-10042",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "257dea7721386a8b262da99b2667aa3c63e1dd9635737d7c29c0817aa5d5d18f",
+    "bytes": 57382
+  },
+  {
+    "key": "lgt",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "d2f1de03e5da2585980b1f6436b4d1ba59db78dc971051043025ae51a5fd2bcf",
+    "bytes": 1493014
+  },
+  {
+    "key": "irpf",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "8bfef4ea43ca44b95e9b1dce25310f43437f21493093317899e7357243fdef84",
+    "bytes": 2028806
+  },
+  {
+    "key": "rirpf",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "deaea4d081c69e6ef48ed1a3c9ddd619ea4ca5cbfd902384bee9091faf1a461b",
+    "bytes": 1000017
+  },
+  {
+    "key": "iva",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "90f33eb252bd3cc09e32c708f67cf91bcbd4de94ffabd4705e9002ff5bd70e8a",
+    "bytes": 1769466
+  },
+  {
+    "key": "irnr",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "31bf336b2aa115047d40f6bd20b526490bece821503572e7d48abd2d007c15aa",
+    "bytes": 534905
+  },
+  {
+    "key": "modelo231",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2016-12484",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2016-12484",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "0bd71101080cd3d080c31709e1baac5f025fdabbf19a7244b824c138cb032fb2",
+    "bytes": 47457
+  },
+  {
+    "key": "interest2026",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe",
+    "bytes": 13504
+  },
+  {
+    "key": "country_issue",
+    "url": "https://github.com/openaccountants/openaccountants/issues/391",
+    "final_url": "https://github.com/openaccountants/openaccountants/issues/391",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "562f26eca7b6764891482c996dd4728e4836c9898608776c8e4beb8b80ec893b",
+    "bytes": 271142
+  },
+  {
+    "key": "donations",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-25039",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-25039",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "2fc21f153356defa446907028408df1d4c88e940cb718a53b3bd192f51410b0d",
+    "bytes": 337232
+  },
+  {
+    "key": "canarias",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-15794",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-15794",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "d02387a947ceae67cc55a8a622f22f8a9c4f363cf2ce2ade9b9fc41edd40f155",
+    "bytes": 910319
+  },
+  {
+    "key": "modelo202",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "871dadcd4bec80ba651709c85397ff78252ae353ea635d67870779fe6a27849e",
+    "bytes": 93568
+  },
+  {
+    "key": "ceuta2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-18429",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-18429",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "dc07af8c760d98b737e48d6ffc469a283faa4ca7e5bf35da0ab11a337fa8df9c",
+    "bytes": 278406
+  },
+  {
+    "key": "lis-pre-ceuta",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328&p=20260901&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328&p=20260901&tn=1",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "ec3688e898346c3a0b1d57563b583b7f621318de9a63978ed1b210c432bd629f",
+    "bytes": 1477848
+  },
+  {
+    "key": "lis-20260321",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328&p=20260321&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328&p=20260321&tn=1",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "27f83a34f13285c06c35ef9ec6bc33b39ff8b0ca3a7f9e0b8309095bea31797f",
+    "bytes": 1473954
+  },
+  {
+    "key": "madrid",
+    "url": "https://www.boe.es/buscar/act.php?id=BOCM-m-2010-90068",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOCM-m-2010-90068",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "fd3b06538ae9972a27c2329a9bd598703ffc65ca3ffab6412617370cd4f2652c",
+    "bytes": 405008
+  },
+  {
+    "key": "extremadura",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-8159",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-8159",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "e8dded9eefb7d077b14e64248e1145b9b463817abc573dafbac1ca53c831572d",
+    "bytes": 558040
+  },
+  {
+    "key": "simplified-depreciation",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "5b2d4ec220d518fd5326fe8402ae56536b6553d425646261b7396f781ac88ade",
+    "bytes": 10458
+  },
+  {
+    "key": "rent-rdl29-2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "850d8ec469139be2944786fdfb9a1b52ebbedbf2807baa26a8ffed90209cb85b",
+    "bytes": 488166
+  },
+  {
+    "key": "modelo130",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "6f2721adf99468a175bfc0e67d62b31f9f35afdfa0d339ccc4f9da53e786ed08",
+    "bytes": 40838
+  },
+  {
+    "key": "modelo131",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-131-irpf______sionales-estimacion-objetiva-fraccionado_/instrucciones.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-131-irpf______sionales-estimacion-objetiva-fraccionado_/instrucciones.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "a1f8370ac01d628910fd95ace2704c3e9e991b7265c943c0e4b4619dbf101b27",
+    "bytes": 44126
+  },
+  {
+    "key": "modulos2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "32034015eda3a4292c887bb88415d42ea2d1105805e6b3ba202300c96f3a9fe1",
+    "bytes": 442076
+  },
+  {
+    "key": "modulos-entry",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "11dc81661c100f19bb60488711d6f4b58865eec3e20879d525c5567ecee80f64",
+    "bytes": 28195
+  },
+  {
+    "key": "instalment-forms",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6032",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6032",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "991ee3daaf4c36285a0355a29238808313a4ca05d097210d3b7d8b448daa8f97",
+    "bytes": 132230
+  },
+  {
+    "key": "instalment-2015-order",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2015-1656",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2015-1656",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "c1cc326a390495e16819b7a080d71031863a60bf1730e6be46a3a7998b0c9f23",
+    "bytes": 46940
+  },
+  {
+    "key": "irpf20121031",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20121031&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20121031&tn=1",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "20eb6a4d604c8bb45ee11af7d8021c9f291f3051e3774f02c2ea03e6c291ebf3",
+    "bytes": 1588227
+  },
+  {
+    "key": "rirpf-20120901",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820&p=20120901&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820&p=20120901&tn=1",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "61fe1b808a42350a26926d53941d47abfc8bed6abe4107560831bd7c2fe3d87d",
+    "bytes": 1000073
+  },
+  {
+    "key": "rirpf-20111220",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820&p=20111220&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820&p=20111220&tn=1",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "4c099539f0e5471b011194cc6c3bff0cd808ad6a73f1b6290f03a22a87624ee2",
+    "bytes": 852494
+  },
+  {
+    "key": "aragon-aeat-2025",
+    "url": "https://www3.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon.html",
+    "final_url": "https://www3.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "fc1e4e729f09688d76205177510dd71eb38242d8f66c7f5924e22ad73b698f26",
+    "bytes": 15182
+  },
+  {
+    "key": "clm-rural-law",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "6ef7441a9b3dc0d1d6b92cb2d275f5e30a99997aeee3748cba003077980fe5e5",
+    "bytes": 364443
+  },
+  {
+    "key": "clm-home-aeat",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "7a24c25e8319b59ef6ed77115f24e7624758316705632a5407d8bea69fc9d137",
+    "bytes": 21018
+  },
+  {
+    "key": "asturias-budget2026",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-2888",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-2888",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "f88f88f1e31c0c24fee0b3956d7a6d3dedb420603c9802673c9906845642201f",
+    "bytes": 287356
+  },
+  {
+    "key": "asturias-vital-aeat",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/gastos-vitales-que-incurran-contribuyentes-anos.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/gastos-vitales-que-incurran-contribuyentes-anos.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "82b8373734227807977df4c38f847e99f879abd4a92129d56155189f6ce6dddc",
+    "bytes": 11798
+  },
+  {
+    "key": "asturias-landlord-aeat",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/gastos-derivados-arrendamiento-viviendas.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/gastos-derivados-arrendamiento-viviendas.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "c383f1bba95123a351216d59f9bf24451f08cc75525b4652af914cb27ab8e64c",
+    "bytes": 14757
+  },
+  {
+    "key": "moves266",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-5869",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-5869",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "0841ccd1fd887b311059dab0e30ef0639919e40427ff11f3203638a808acfa17",
+    "bytes": 200892
+  },
+  {
+    "key": "asturias-stc21",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-3808",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-3808",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "7dfc7a18f6b92310c99e21832c5494ba6863c30dccd6678ec34c850a5d411881",
+    "bytes": 57068
+  },
+  {
+    "key": "balears-law4-2026",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15579",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15579",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "33c695cf22d4df04bcde1abe588baddab5185b4564b33f8ce4e8a49600135a96",
+    "bytes": 737136
+  },
+  {
+    "key": "balears-dl1-2026",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-9525",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-9525",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "1a5416f86b2a75fa80d87ec44d88a9456e74af1f74f7a01f8bfd8874a0c1e170",
+    "bytes": 118435
+  },
+  {
+    "key": "balears-law6-2025",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-22028",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-22028",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "c6684373338a4de9012dae99eb323c5ca8d088acc050a00e652f65aa5c1c0d15",
+    "bytes": 755384
+  },
+  {
+    "key": "balears-law3-2015",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-4331",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-4331",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "eadc0f225a953cbd7ed1d1f96aae45941d0ab15923e1b46a38c88561abd7a7b3",
+    "bytes": 104531
+  },
+  {
+    "key": "balears-law6-2015",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-4791",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-4791",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "3952bb529190a0658b7d06bf9be0f58cb3a9eafc87a37aa1b79cb06b0fd32155",
+    "bytes": 90503
+  },
+  {
+    "key": "balears-law8-2018",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-13193",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-13193",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "6eb8ecc7cf09298165a85114090ca3f44e7ff6e869771a5f25e6e710926bc94a",
+    "bytes": 162399
+  },
+  {
+    "key": "balears-atib2026",
+    "url": "https://atib.es/General/Novedad.aspx?idTexto=16987&idTipoTexto=1&lang=es",
+    "final_url": "https://atib.es/General/Novedad.aspx?idTexto=16987&idTipoTexto=1&lang=es",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "d23fe97eccb6c9ecbb8e56da3e6b0534b5ddbc0b35acba7f09b6651149bd8853",
+    "bytes": 39095
+  },
+  {
+    "key": "balears-birth-procedure",
+    "url": "https://www.caib.es/seucaib/es/tramites/tramite/6204812",
+    "final_url": "https://www.caib.es/seucaib/es/tramites/tramite/6204812",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "d62146e1aeb75bc73b67793c0328959d5862f2ba1aba2213a2cfee2569be45c4",
+    "bytes": 91966
+  },
+  {
+    "key": "cantabria-law5-2026",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-10431",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-10431",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "5842f73d21d4da5e184de5291bf6f3d01f0ac5512f8217a93c6a7e4d7c0b728d",
+    "bytes": 168962
+  },
+  {
+    "key": "lpge2023",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "527e1fa558d5699b714f9652c967a6ba7b7d667e63ef543cf302c168c440df27",
+    "bytes": 2870265
+  },
+  {
+    "key": "state-budget-extension2026",
+    "url": "https://www.sepg.pap.hacienda.gob.es/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga/Paginas/PGE2025Prorroga.aspx",
+    "final_url": "https://www.sepg.pap.hacienda.gob.es/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga/Paginas/PGE2025Prorroga.aspx",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "6a426a92a7902e90b3a62d6b0cafdb1a226a3394dd40128c00f72ef4ee59a46a",
+    "bytes": 44817
+  },
+  {
+    "key": "canarias-law9-2025",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-7560",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-7560",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "b3363355fc9bca5b3c5712324f08b55dce90489ce674d0acb31c29472f5d9714",
+    "bytes": 713787
+  },
+  {
+    "key": "irpf20111231",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20111231&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20111231&tn=1",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "4126548597f76f4bf5b5bd6f0496090342d8c82a3f85b5a23c625ddee485a86a",
+    "bytes": 1570548
+  },
+  {
+    "key": "canarias-dl12-2021",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-19374",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-19374",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "9c9033b4d31023e50573d2878b91133246e4efd1b492a7c9e54c4e22e0fbf091",
+    "bytes": 98748
+  },
+  {
+    "key": "aeat-2025-regional-index",
+    "url": "https://www3.agenciatributaria.gob.es/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html",
+    "final_url": "https://www3.agenciatributaria.gob.es/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "9067a59247b6a79c75a50ea8faf8eeb9b72e280e9e2c018c1beac8015a8a8b1c",
+    "bytes": 243849
+  },
+  {
+    "key": "cyl-law1-2012",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-4385",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-4385",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "b7f5a9bfe4ce2c21957e061a7d1c9e73f42894d3cc99d192a9f83d37b2143a67",
+    "bytes": 308884
+  },
+  {
+    "key": "cyl-law4-2024",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-14546",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-14546",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "0fcbc91df54fc646d46cd11b321e48efd1678145bbbc90a53d1aeb4bbcf92d1e",
+    "bytes": 277619
+  },
+  {
+    "key": "extremadura-law2-2026",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-17839",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-17839",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "3ad92f111e0566eb8f03f6e9957fd79b33977a78f828da9e4ac334efd5a2435a",
+    "bytes": 373409
+  },
+  {
+    "key": "extremadura-law3-2022",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-5853",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-5853",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "c44438885e0bc56dbbca1bf7039ec9feaf61d9c4bdb313e27f2bd94ad1a4c9d5",
+    "bytes": 259470
+  },
+  {
+    "key": "extremadura-law1-2025",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-7444",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-7444",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "994b759cd0376a4d79896c68ce3f3b12c010947edf5dd0f2fc6fc71d5bd89300",
+    "bytes": 125785
+  },
+  {
+    "key": "irpf20121228",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20121228&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20121228&tn=1",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "6d428054ec3d97bce12f65db95041a8cdecd1016e6f68f600791d8c350cb3296",
+    "bytes": 1601801
+  },
+  {
+    "key": "rioja-law9-2025",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-991",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-991",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "0cb4bb5cfa976b97d334207259ce97e86952e13a04c09d985fd314bf8bc0d3e7",
+    "bytes": 138086
+  },
+  {
+    "key": "murcia-law3-2025",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-16147",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-16147",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "28cc4a98ce73debfa6cca88cff2d988f3ef365a0f40c2965d891582f1ba89548",
+    "bytes": 698158
+  },
+  {
+    "key": "murcia-law4-2023",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-2045",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-2045",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "26c6d3a96a3e0e31b9748d15a6822560945b448ff87d0aeede20bf4c908757e4",
+    "bytes": 676368
+  },
+  {
+    "key": "galicia-law5-2025",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-3385",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-3385",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "a0ac527793a593d6070a7704a19d8479a1371141429bbe2f30ff7f912302e395",
+    "bytes": 792387
+  },
+  {
+    "key": "galicia-school-order2026",
+    "url": "https://www.xunta.gal/dog/Publicados/2026/20260327/AnuncioG0597-260326-0002_gl.html",
+    "final_url": "https://www.xunta.gal/dog/Publicados/2026/20260327/AnuncioG0597-260326-0002_gl.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "f7075a91a75e74d2d6134ba342a2a0e108c7c8075b96931079b3ad2c1b0d15e8",
+    "bytes": 16330
+  },
+  {
+    "key": "valencia-law3-2026",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15683",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15683",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "6bd2807ac81595ec1bfb6dfb61e196fedfdd1e8e9541d794ca397758cc41bdfc",
+    "bytes": 1269930
+  },
+  {
+    "key": "valencia-dl1-2026",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90037",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90037",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "acd7a45322445b30f4c571c4f3b4dcf4b55de3fc4508cd9fb451cf0bd2483903",
+    "bytes": 40327
+  },
+  {
+    "key": "valencia-dl2-2026",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90041",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90041",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "315371d88f67bcbfc1dc854a5052fa40ab24919b4dc045de2948c566813a4dda",
+    "bytes": 30102
+  },
+  {
+    "key": "valencia-law5-2025",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-11959",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-11959",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "8d9d4c5d68dfb80def26174929500df588985b0d6794b4046f35df5cddb24324",
+    "bytes": 1036469
+  },
+  {
+    "key": "valencia-dl14-2025",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2025-90320",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2025-90320",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "8ae0e2ecc10282b1aa8d86e8c2c66274ce2433825474d862c66151b999e633f8",
+    "bytes": 1118368
+  },
+  {
+    "key": "valencia2012",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202&p=20121228",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202&p=20121228",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "c70c1105892ba7a135bfb77895ec0b4f6755badfa6b2b7d828fb05caaa031490",
+    "bytes": 789757
+  },
+  {
+    "key": "valencia-dl1-convalidation",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90079",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90079",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "b6b99f0a8fcefe77f627451ae0fa0f7a7680c0835066d8444c5bf8f9327a162a",
+    "bytes": 17261
+  },
+  {
+    "key": "valencia-dl2-convalidation",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90069",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90069",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "b772f1cedc45fa1dc09c47bc544d1ca6ca7e420f4bac91f4d5b456939fd04c18",
+    "bytes": 17139
+  },
+  {
+    "key": "valencia-legacy-home",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202&b=10&tn=1&p=20021231",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202&b=10&tn=1&p=20021231",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "34472fd67839e84ccb384d8a16e14247f340d4d24837af3ea22bf01992e6c884",
+    "bytes": 504846
+  },
+  {
+    "key": "valencia-dana",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2024-90200",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2024-90200",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "06d852876b9224783e71c2b05de9dd4dec7ba5953c43bcb3e3dbaa2683e45f8a",
+    "bytes": 60249
+  },
+  {
+    "key": "riva",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "4ca7dc80cee480a7255c2b4a98ace08d6683c702b3302630117950adb28f8498",
+    "bytes": 1052204
+  },
+  {
+    "key": "invoices",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "9eedb12ef06878752168d540dffe9cd844f5a2d168d795618136d2dd0948f000",
+    "bytes": 242447
+  },
+  {
+    "key": "no-loss-303",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026.html",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "7c3789a009a3b268970f6877835fee5de0d866843a74f48e85bade21667e216c",
+    "bytes": 110059
+  },
+  {
+    "key": "form2026",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-1761",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:26:21.083944+00:00",
+    "sha256": "c8c630d6bb5aaac3e41f08db9b5bc3b0e019ff6e0e853c40278322c89661c6b2",
+    "bytes": 63014,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "instructions2026",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026/instrucciones-02-12-2t-4t-2026.html",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:26:21.363713+00:00",
+    "sha256": "3d6c3387b2f036be30edd8500ee2fd88ae022a52ba9985504d41e3d7e996df75",
+    "bytes": 113580,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "modelo390-law",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-18472",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-18472",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "60ed94cf7ca4aa6ab07e7a4ebbe0e9e4956a1ab6a9ae840151f4fd44e20e9f91",
+    "bytes": 164752
+  },
+  {
+    "key": "aeat-vat-investment",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2025/capitulo-05-deducciones-devoluciones/deducciones/regularizacion-deducciones-bienes-inversion/concepto-bienes-inversion.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2025/capitulo-05-deducciones-devoluciones/deducciones/regularizacion-deducciones-bienes-inversion/concepto-bienes-inversion.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "59e550b04f6b7346e0d1591f3c24a67aaa2a78375c7c5b1db620a9cf84e094c4",
+    "bytes": 9276
+  },
+  {
+    "key": "iva-before-dec2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740&b=124&tn=1&p=20241221",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740&b=124&tn=1&p=20241221",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "a672f42e242260aa85104566517d395028d84a77d85c6b9b24a685fa1f6c43f1",
+    "bytes": 1762108
+  },
+  {
+    "key": "teac-mixed-premises",
+    "url": "https://serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA/criterio.aspx?id=00%2F06654%2F2022%2F00%2F0%2F1",
+    "final_url": "https://serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA/criterio.aspx?id=00%2F06654%2F2022%2F00%2F0%2F1",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "230366a55a99b4eb08dded4e97e05a0b17bf0375662e6b6b86b973145bdab3df",
+    "bytes": 95419
+  },
+  {
+    "key": "aeat-vat2026-mixed",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-05-deducciones-devoluciones/deducciones/requisitos-deduccion/iva-soportado-adq-bienes-servic-profes.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-05-deducciones-devoluciones/deducciones/requisitos-deduccion/iva-soportado-adq-bienes-servic-profes.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "aacd97dc23f010bad3ee57e5516002e870ad80b2a9314d5924d90b82885d4c76",
+    "bytes": 15632
+  },
+  {
+    "key": "aeat-vat2026-rates",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-01-novedades-destacar-2026/tipos-impositivos.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-01-novedades-destacar-2026/tipos-impositivos.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "4503a704b6ee729d8fe336adec0101bee0f4283a0690c400c3d22a165f62ff8b",
+    "bytes": 11039
+  },
+  {
+    "key": "vat-rdl7-2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-6544",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-6544",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "7095280041ce2b8473e814b8627ef4f706ef413251c3e0b428e5585055d58388",
+    "bytes": 860027
+  },
+  {
+    "key": "aeat-vat-decrees",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/normativa-criterios-interpretativos/impuestos-otros-tributos/impuesto-sobre-valor-anadido/real-decreto-ley.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/normativa-criterios-interpretativos/impuestos-otros-tributos/impuesto-sobre-valor-anadido/real-decreto-ley.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "bd3e9ee1100bb333e577e5a9ddeee86b389b5fff4ec9997c892ee6f7f8bbaca4",
+    "bytes": 33530
+  },
+  {
+    "key": "aeat-vat2026-investment",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-05-deducciones-devoluciones/deducciones/regularizacion-deducciones-bienes-inversion/concepto-bienes-inversion.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-05-deducciones-devoluciones/deducciones/regularizacion-deducciones-bienes-inversion/concepto-bienes-inversion.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "611777501cd18fb0aa91665d7ac1be9016ba1ce1cf72c0ae78962cdb2515fd1f",
+    "bytes": 9276
+  },
+  {
+    "key": "vat-rdl18-2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-14112",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-14112",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "1431fd5d90d11fc607fc71964c72a0c012694d8aad6bd3676762293005c9150d",
+    "bytes": 327505
+  },
+  {
+    "key": "vat-rdl25-2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20265",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20265",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "9314b8340a37e6fca40eaa4eb8f237741b24a7f10a19f6f0506eefd52cca1a69",
+    "bytes": 354455
+  },
+  {
+    "key": "vat-rdl10-2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-9286",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-9286",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "604773dee0d4abad4454486592ddee6ceaa9ef10e4a9e2c5189bd31eece5481f",
+    "bytes": 119604
+  },
+  {
+    "key": "contributions-order2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "71f4939efb8ebbcd2b9315b896640d2aff7fc0348064c030a1e558124b561e15",
+    "bytes": 250030
+  },
+  {
+    "key": "lgss",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "c39a172c0282d6cfb7225ffd531b6f25743d3280f1899fbabf07e60c389e2dc4",
+    "bytes": 2646450
+  },
+  {
+    "key": "selfemployed-law",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "72b0c762a27a2ac124027ceb740a9b8d2339721d0a31d666de72cb5f570e9427",
+    "bytes": 500808
+  },
+  {
+    "key": "tgss-autonomos-guide",
+    "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/trabajo%2Bautonomo/guia",
+    "final_url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/trabajo%2Bautonomo/guia",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "39338e1890c91e09a8bea4f347e3e37bb83ad4c376680f704d3c5c90cc7c2a7e",
+    "bytes": 201837
+  },
+  {
+    "key": "social-collection",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-11836",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-11836",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "18012afaf050894e0be089b913c897410ce0aa09761e32c3742d694fd790c36d",
+    "bytes": 592734
+  },
+  {
+    "key": "social-red",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-3362",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-3362",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "824be4e10c70b118a2a467d67f40b5866cac2ef709a1e288fc04e6acb4b63b75",
+    "bytes": 93923
+  },
+  {
+    "key": "social-order2025",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-3780",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-3780",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "4029febb47446d8cf6a5ef263801caf97a3fff2c3b8efb828787bdd445baaceb",
+    "bytes": 252869
+  },
+  {
+    "key": "social-contribution-reg",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "b4c4667ea3ba67aeee12ec7686e118b2f6b3d1c3df5bb187b66d2c977b83c9d7",
+    "bytes": 988922
+  },
+  {
+    "key": "catalunya",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-6951",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-6951",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "718be5b387791f08f170b5ca74a833e370625aba2fbf47aac6ef227f355e168b",
+    "bytes": 479872
+  },
+  {
+    "key": "galicia",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-18161",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-18161",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "c8247a1c170f1956e6ee07048d867f2e30c045b2aa9ea74fba25f1440f6b54b1",
+    "bytes": 675742
+  },
+  {
+    "key": "andalucia",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "ed7c2b7e4f7d66f2faf57c317354372d816f15c4ce585bfc5b9d436f9a88f4f6",
+    "bytes": 352525
+  },
+  {
+    "key": "asturias",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-945",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-945",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "24555d5e6f80ef0119c51576d36f3a7c1dcebbc2ff55ec20635435865ded189f",
+    "bytes": 448677
+  },
+  {
+    "key": "cantabria",
+    "url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "033d491cecb6a2096e96901fc937bb0beaf4cd4d8bc073e67d144aab1b11e29c",
+    "bytes": 350447
+  },
+  {
+    "key": "rioja",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-13750",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-13750",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "b952d9d1d6a653bd1348918982b0dae55f2075e408858996efbf04989b6d74fe",
+    "bytes": 497687
+  },
+  {
+    "key": "murcia",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-10542",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-10542",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "0a4fe31dd1655d4139f786ddf7a139742656ee3256a59fabe60c9d078ee9aea0",
+    "bytes": 533085
+  },
+  {
+    "key": "valencia",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "c171a7a5d23e4327aa640cbb8d70cac933e636fd0bb4e1e67fc4cd5f1f193ce6",
+    "bytes": 789701
+  },
+  {
+    "key": "aragon",
+    "url": "https://www.boe.es/buscar/act.php?id=BOA-d-2005-90006",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOA-d-2005-90006",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "b4ebf36c37f4fadffe2ff40533f352c41d0ee691ea2cdae66f0e5e0b0197fc53",
+    "bytes": 509921
+  },
+  {
+    "key": "clm",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "61a21197345bbd34d139521a621f0765f4a8e55331314f521818188a90ff48dd",
+    "bytes": 379179
+  },
+  {
+    "key": "canarias-regional",
+    "url": "https://www.boe.es/buscar/act.php?id=BOC-j-2009-90008",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOC-j-2009-90008",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "df0e402a31cf875d07517d3b580fc8ca240fdc3cf29bb631d89178061eb67690",
+    "bytes": 463402
+  },
+  {
+    "key": "balears",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "9479b17c3c8681066badca0f8b68a5a7c32a0de758c5822c9f5d08e36335c89e",
+    "bytes": 718564
+  },
+  {
+    "key": "cyl",
+    "url": "https://www.boe.es/buscar/act.php?id=BOCL-h-2013-90254",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOCL-h-2013-90254",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "ec70f4633cba621eda8118fadff0aaff2af9119397e3e4db9864a4e5f30e9792",
+    "bytes": 312860
+  },
+  {
+    "key": "sc-benefit-it",
+    "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365",
+    "final_url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "7812defe35be96ca4304c3a192f3f3a85772b76dd81fc3821cb28ce734f97b38",
+    "bytes": 84327
+  },
+  {
+    "key": "aeat-booking",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/7-cumplimentacion-irpf/7_4-rendimientos-actividades-economicas/7_4_2-regimen-estimacion-directa/7_4_2_3-gastos-fiscalmente-deducibles/cotizaciones-reta.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/7-cumplimentacion-irpf/7_4-rendimientos-actividades-economicas/7_4_2-regimen-estimacion-directa/7_4_2_3-gastos-fiscalmente-deducibles/cotizaciones-reta.html",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:34.374060+00:00",
+    "sha256": "4f7e7bbd6e101ccb616971f80e4ef142bdc5f72829e8df121f234523f06053c2",
+    "bytes": 9772,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "algorithm-september",
+    "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/Algoritmo%20Retenciones-2026_10sept.pdf",
+    "final_url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/Algoritmo%20Retenciones-2026_10sept.pdf",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:35.231682+00:00",
+    "sha256": "b1a120d93bf541deb35ccbfd55f08f771eecc01a762148491e5c9e2cf0be27d3",
+    "bytes": 1137373,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "payroll-algorithm-january2026",
+    "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/ALGORITMO_2026.pdf",
+    "read_on": "2026-10-26",
+    "sha256": "a15b7fee871d1a4387d4ad0be3cd21930cd357a5ecd3372dc4fbed3f3181bca9"
+  },
+  {
+    "key": "employment-statute",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "a87f145d32216ebaf669a0beac99868337e0a02091f675aad97a035b67ca743d",
+    "bytes": 956621
+  },
+  {
+    "key": "minimumwage2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "1a52db921eddce874c1b89645599c1a7067f40a3a59943c5901e6bed95106012",
+    "bytes": 50016
+  },
+  {
+    "key": "payslip-order",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-912",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-912",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "c2bc13dc9aa737d5dd2ddcdd33c49a5bdf53e65ae0d04d2bf85e0eb38b857c4a",
+    "bytes": 45274
+  },
+  {
+    "key": "modelo111-order",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "c76c7b1da3e528f2b7e50a42938f775171c805b8132cb3829d64e5b1ef8d9456",
+    "bytes": 98387
+  },
+  {
+    "key": "modelo190-order",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "08bfd19b999aecdce890d5a887598821f3ecc4a2bebc713b20748c13aae0fcf9",
+    "bytes": 409741
+  },
+  {
+    "key": "modelo111-instructions",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "3544f8db141f259a08c631f86149039bae49ad70c47c6c2ef6cf4b9347c84b48",
+    "bytes": 34502
+  },
+  {
+    "key": "directdebit2026",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "33575930deb2fe0193786529952e9657b50b057a2b2fa1b8762b95ebcdfffa35",
+    "bytes": 31685
+  },
+  {
+    "key": "electronic-filing-order",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "2671be30fcd206ce35b5ea97b0f4c0f1da66f7ff21e60e4ae6e5349f90f2081a",
+    "bytes": 639331
+  },
+  {
+    "key": "impatriate-forms",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-25416",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-25416",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "c9a5a562f39830b9d48cc2a2f71dbc7bdd45234cead7eccbf17f2168cfba884d",
+    "bytes": 71906
+  },
+  {
+    "key": "irnr-forms",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "efa698599dd5cd7603fee7cc36e62be45190bb7125a5157d23623ab49157abae",
+    "bytes": 248834
+  },
+  {
+    "key": "irnr-reg",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "828fc5d30e35e5896efb15fb2cc464db93a202e0e5257456f54c0dbfaa0b2737",
+    "bytes": 195902
+  },
+  {
+    "key": "irnr-forms2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-13573",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-13573",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "033df559dc795e15d5a9125b814cebc923c8bd176994a840b1894130605ae9ec",
+    "bytes": 66621
+  },
+  {
+    "key": "irpf-asof20261026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20261026&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20261026&tn=1",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "4b7fb1bfbb1b07b7c276b246a56707b28d9e5fbf04b0b87a5f7f659d632d324b",
+    "bytes": 2028862
+  },
+  {
+    "key": "irpf-version20261002",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20261002&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20261002&tn=1",
+    "status": 200,
+    "read_on": "2026-10-26",
+    "sha256": "15d9576ef37bd32d31ceada9c518aa1d694ec47ca851814ac220e33fae2798fd",
+    "bytes": 1978185
+  },
+  {
+    "key": "basque-agreement-2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+    "read_on": "2026-10-26",
+    "sha256": "1423992e91770bdee617e1c29ec4d0f3b5444e1d31384c63905ce44daace1568"
+  },
+  {
+    "key": "basque-agreement-amend2025",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-8568",
+    "read_on": "2026-10-26",
+    "sha256": "caa8167723922c839c937af1503345047d796a5906e4d7d1d8191b2ac650a935"
+  },
+  {
+    "key": "navarra-agreement-2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+    "read_on": "2026-10-26",
+    "sha256": "a83593cbd2aef8a6bcb69d543b9e4bcbc520dd73f41bb54762788927bd2df46f"
+  },
+  {
+    "key": "rgat2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984",
+    "read_on": "2026-10-26",
+    "sha256": "a5cfed4807644d39a0f0915fc186b94bedb228acdae68464681b733f403d0175"
+  },
+  {
+    "key": "navarra-pit-2026",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=29657",
+    "read_on": "2026-10-26",
+    "sha256": "fee02e69591cf43f024477ac4c0a37f8530ff308bdf17980841ff0a1b5121547"
+  },
+  {
+    "key": "gipuzkoa-pit-2026",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0759126E7/NF%203-2014%20(2026-0).pdf/8ab5c95c-3f89-8fdf-5cb8-01950e3983cc",
+    "read_on": "2026-10-26",
+    "sha256": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704"
+  },
+  {
+    "key": "gipuzkoa-payroll-reg2026",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "bytes": 1555948
+  },
+  {
+    "key": "gipuzkoa-measures2026",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.8136388E7/DF-Norma%202-2026%20medidas%20para%20mitigar%20Crisis%20Oriente%20Medio.pdf/3fef6201-ae72-c346-880b-cd8aae8bc957",
+    "read_on": "2026-10-26",
+    "sha256": "4c4f6a46cff40d34d6f9437bff0aa80dd92d05c98bcbca4430206cc87564a13f"
+  },
+  {
+    "key": "bizkaia-pit-2026",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068",
+    "read_on": "2026-10-26",
+    "sha256": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a"
+  },
+  {
+    "key": "alava-pit-2026",
+    "url": "https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf",
+    "read_on": "2026-10-26",
+    "sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3"
+  },
+  {
+    "key": "alava-measures-2026",
+    "url": "https://www.araba.eus/BOTHA/Boletines/2025/147/2025_147_03861_C.pdf",
+    "read_on": "2026-10-26",
+    "sha256": "2cf4a6a79b6afb87c9fbb5c5f81a4188d721c73a3c0d47d7e32e635e3e6fe6b4"
+  },
+  {
+    "key": "no-loss-lgss-predec",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "2e9b8d3b50fd55c493e966529ff77f545fa213cce3fd66a1c700e10051f55bf3",
+    "bytes": 2525615
+  },
+  {
+    "key": "no-loss-riva",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "8d6b01370cef48b7b42458850adf3650b7ea95f02e8a15a796ce858631294a26",
+    "bytes": 1052204
+  },
+  {
+    "key": "no-loss-order2025",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-3780",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-3780",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "0604c26eabde5c5ab6057e8d40c8600302a338e5258518c1318f3c2c688010dd",
+    "bytes": 252869
+  },
+  {
+    "key": "no-loss-rdl31",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "6c608ed8148e1cfb1c2b05bd269094d62d09031d3e5bbc1b8ffc2bec4661c398",
+    "bytes": 142479
+  },
+  {
+    "key": "platform-order",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-2092",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:12:45.746812+00:00",
+    "sha256": "1e25161257ebd6485c2a4353bcf56e8d20ef4a4dbfbfb5d152dff9b724044d58",
+    "bytes": 67491,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "no-loss-platform-faq",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/declaraciones-informativas/modelo-179-decla_____la-cesion-uso-turisticos/preguntas-frecuentes.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/declaraciones-informativas/modelo-179-decla_____la-cesion-uso-turisticos/preguntas-frecuentes.html",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "535eca97b204bdef183b260630c17125587122d31b65420ea9018368474e1976",
+    "bytes": 64314
+  },
+  {
+    "key": "no-loss-it-authority",
+    "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es",
+    "final_url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "b3875d289330691dffc267111aa49cb3e71e9862ae12d1aa21fd5d04c4b8cc53",
+    "bytes": 84390
+  },
+  {
+    "key": "no-loss-employment",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "c97de52faf0c424af105485d9df22bf1c4a70fd187671c82bf6866a5467fb481",
+    "bytes": 956621
+  },
+  {
+    "key": "no-loss-vat",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "6993a102e34661b7ade27af40ad58ae5285fe8c1e9805ec6378ec5401cf6b82d",
+    "bytes": 1769466
+  },
+  {
+    "key": "no-loss-rirpf",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "81203002967364e03af2979d7e5c53ce78d409d717b462a0f2ed5124c07e16f1",
+    "bytes": 1000017
+  },
+  {
+    "key": "igic-regional2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "53cdfc408f32d4e416bf87bd11a924fefe132e5cbf6cffa51f903a2fa4da1220",
+    "bytes": 506019
+  },
+  {
+    "key": "igic-state2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "44c49b9c42af9249b05114249cce94c658ef0e35ee80dcf9ea80a37263d9639b",
+    "bytes": 1150695
+  },
+  {
+    "key": "ipsi-law-refetched",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-7645",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-7645",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "e38f7eda3f78246dfef7b7913bec40a3ee20150bc50e8f66aadfa6202a1ceaf3",
+    "bytes": 178621
+  },
+  {
+    "key": "igic-model4202026",
+    "url": "https://www3.gobiernodecanarias.org/tributos/atc/w/modelo-420",
+    "final_url": "https://www3.gobiernodecanarias.org/tributos/atc/w/modelo-420",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "500cc40b3f0c2690b1266650c3407a8378bf74d48e169b768fc4ecacb008a3d4",
+    "bytes": 184618
+  },
+  {
+    "key": "nr-abatement",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/no-residentes/irnr-sin-establecimiento-permanente/determinacion-bi-irnr-sin-establecimiento-permanente/ganancias-patrimon-proced-bienes-adquiridos-1994.html",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:12:47.811750+00:00",
+    "sha256": "123e34d968fb7fc978bae47790602376b4455bb96d87ed91581c424a701d4417",
+    "bytes": 18261,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "igic-regional-jan2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249&p=20251229&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249&p=20251229&tn=1",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "7b58345f0cdd4b941e123bbeb076388ad3742e846c65fea1c9bc7241bad9530a",
+    "bytes": 498411
+  },
+  {
+    "key": "igic-reg268-2011",
+    "url": "https://www3.gobiernodecanarias.org/libroazul/pdf/65872.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "a3fe1e01480e031459bee56839768eda7fbfa845e53a2efed3dd703e043c3eeb",
+    "bytes": 1244230
+  },
+  {
+    "key": "igic420-instructions",
+    "url": "https://www3.gobiernodecanarias.org/tributos/atc/documents/65729/201004/Instrucciones_modelo_420.pdf/59fbc2b2-7aff-4a68-95ea-4984da563cfc?t=1742821063325",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "fc74274197e6367392ca0a7b978b7831f1a0de40f7d85e7de3b05557ffefdba4",
+    "bytes": 164400
+  },
+  {
+    "key": "special-order2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "d354214f6cda67eb4d6fb90eeb059b2c2394b39cadf94c9d29f106492870b43c",
+    "bytes": 250030
+  },
+  {
+    "key": "special-household-relief",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-14680",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-14680",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "2adfd67dd07f5c67a4994d07356de01dbc046c62b1e8c607020acbc9245b5992",
+    "bytes": 198740
+  },
+  {
+    "key": "special-household-tgss",
+    "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Empleo%2Bdel%2Bhogar/guia",
+    "final_url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Empleo%2Bdel%2Bhogar/guia",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "f5e65b810c2b65cc5abf93fed778e584561a85a04e2731f8ae58e4b9959d497c",
+    "bytes": 112081
+  },
+  {
+    "key": "formula2021",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-20075",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-20075",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:33.581690+00:00",
+    "sha256": "88aa40f2c5f8e63bdc198f93606655ae24608805a737d344e77ccd4c3c777287",
+    "bytes": 182730,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "bizkaia-payroll-tables2026",
+    "url": "https://www.bizkaia.eus/es/normativa-tributaria/retenciones-de-trabajo",
+    "final_url": "https://www.bizkaia.eus/es/normativa-tributaria/retenciones-de-trabajo",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "68f9bbdc9efbd8146f745c5743a377b6fec6d2f4061b2d2d820a525aeab9fb7a",
+    "bytes": 504702
+  },
+  {
+    "key": "navarra-payroll-reg2026",
+    "url": "https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true",
+    "final_url": "https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "8876cd3e8ca7f7b89fad267792b25154cd1bb4c000eb72ca53c86e5959a5d17f",
+    "bytes": 1352673
+  },
+  {
+    "key": "gipuzkoa-payroll-calendar",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/calendario-fiscal",
+    "final_url": "https://www.gipuzkoa.eus/es/web/ogasuna/calendario-fiscal",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "9549615c2c10ac05b52f02d1ab5ab149ae330b1c7cc9ee21352695a85d5b31d4",
+    "bytes": 255460
+  },
+  {
+    "key": "gipuzkoa-payroll-procedure",
+    "url": "https://egoitza.gipuzkoa.eus/es/listado-tramites/-/tramiteak/xehetasuna/43/55/3027",
+    "final_url": "https://egoitza.gipuzkoa.eus/es/listado-tramites/-/tramiteak/xehetasuna/43/55/3027",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "c6b0bdd498f29bfb3aabe4aac1e68e799480109b6fe03e819fa4e06c8cb0844f",
+    "bytes": 156391
+  },
+  {
+    "key": "foral-alava-general",
+    "url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf",
+    "final_url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "bytes": 1683910
+  },
+  {
+    "key": "foral-navarra-general",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "e9f7afedc051b73568722be3914b2e92e1980580fd44f8afa0c2a323a87f93ce",
+    "bytes": 1189685
+  },
+  {
+    "key": "order347-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-16973",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-16973",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "235d2cd8bc0af612367d14764d04fe316de27b78e7040aafec23b732e5b8dbc1",
+    "bytes": 213522
+  },
+  {
+    "key": "foral-gipuzkoa-general",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20%282026%29.pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "bytes": 2762742
+  },
+  {
+    "key": "foral-bizkaia-general",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "bytes": 1502987
+  },
+  {
+    "key": "navarra-boe-20260420",
+    "url": "https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "aacc330ec450c67bc937d3d558a8038343b9f90fcaa5193a2b26cd7e4cee1ff2",
+    "bytes": 1063863
+  },
+  {
+    "key": "navarra-cit-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "80fe56269e673207bd16cd0aafd0284c1e4c1a2cd27c8564d8246a3ceec1f64b",
+    "bytes": 1012210
+  },
+  {
+    "key": "navarra-mecenazgo-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-16401",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "f368d825cb3afe8e638e046b3e13701ef294670148fadfe4e045cd0afddd6cc9",
+    "bytes": 190187
+  },
+  {
+    "key": "bizkaia-cit-current",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe",
+    "bytes": 1322692
+  },
+  {
+    "key": "alava-mecenazgo-current",
+    "url": "https://web.araba.eus/documents/1247685/1248445/%C3%8DNDICES_NF%2BMECENAZGO-CAS.pdf/b51493c8-e36d-2090-bec3-908084e051c2?t=1673261049711",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "2b7ddd9176e39c84e802179caa5fb5660c714ffd3b05677a77cc334d051124fc",
+    "bytes": 186923
+  },
+  {
+    "key": "alava-cit-current",
+    "url": "https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6",
+    "bytes": 1609894
+  },
+  {
+    "key": "alava-cit-reg-current",
+    "url": "https://web.araba.eus/documents/d/araba/indice-reglamento-del-impuesto-sobre-sociedades-cas-5-pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "988b4940f52598391edddd5e0dbd0d6319d3ed1043fbce87aa4e48d114392f09",
+    "bytes": 533045
+  },
+  {
+    "key": "bizkaia-cit-reg-current",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_203_2013.pdf/5d2f80fc-9d5b-0f71-b578-56da0a5a0c50?t=1679483614806",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "b3a53a124fe103a9261051d06bf6c01de9f607b1c123af9785d96598d1272339",
+    "bytes": 460049
+  },
+  {
+    "key": "gipuzkoa-tax-index-current",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/normativa/aprobada/",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "228e958927bda00c5868a4c3fe509c1c2c651053d662e8358a994c0b00c9a60d",
+    "bytes": 242403
+  },
+  {
+    "key": "gipuzkoa-cit-current",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20(2026).pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44",
+    "bytes": 2587573
+  },
+  {
+    "key": "gipuzkoa-cit-crisis2026",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.813641E7/DF-Norma%202-2026%20medidas%20para%20mitigar%20Crisis%20Oriente%20Medio.pdf/925d814a-7f73-6e58-f249-a1437b1d76bf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "4c4f6a46cff40d34d6f9437bff0aa80dd92d05c98bcbca4430206cc87564a13f",
+    "bytes": 2833077
+  },
+  {
+    "key": "gipuzkoa-cit-reg-current",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0761381E7/DF%2017-2015%20(2026).pdf/ad233e14-7236-0450-948f-50a669df270f",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "0ae4af64eb633dfa9f0327f5d391c3dce33f98debe109b7e364a1b2698352a1c",
+    "bytes": 1066738
+  },
+  {
+    "key": "navarra-cit-reg-current",
+    "url": "https://www.navarra.es/documents/48192/6699806/Reglamento%20IS.pdf/ea37edba-eb1b-22d7-a04b-9f9d8fbba4e6",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "9c56d8b172ec7da90bfd6894119f3872a58fdd9624a941b1a682284b9b30d7b7",
+    "bytes": 670916
+  },
+  {
+    "key": "alava-cit-crisis2026",
+    "url": "https://www.araba.eus/botha/Boletines/2026/045/2026_045_01089_C.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "041f8ebcdd7470960a02fd6a4fab7ce5dc924ead6daf43512b4268f62807f5b5",
+    "bytes": 172085
+  },
+  {
+    "key": "bizkaia-cit-crisis2026",
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/04/20/I-441_cas.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "b0e4701bc44f41aece070018b4170746346dd07531908ac544a5a6dff96e27b4",
+    "bytes": 293001
+  },
+  {
+    "key": "bizkaia-cit-filing2026",
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/06/15/I-678_cas.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "62a4308c6f0e40f55f59e92a907126858619cd83280ab48b2af685b58bc41f09",
+    "bytes": 447052
+  },
+  {
+    "key": "navarra-cit-crisis2026",
+    "url": "https://www.boe.es/boe/dias/2026/05/21/pdfs/BOE-A-2026-10888.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "09ba1225ecb6cd44bb515aa414b934d934bd083b392889adde2090d3cef6412e",
+    "bytes": 212268
+  },
+  {
+    "key": "alava-calendar2026",
+    "url": "https://web.araba.eus/documents/d/araba/b_plazos-de-presentacion_2026_es-pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "1272c7071d5f661afd0a0f36e565cac448e80088010bd1631c59c0caa86607ae",
+    "bytes": 1261222
+  },
+  {
+    "key": "navarra-model232-current",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=50181",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "efba1152c8afeaa1a9cf70ba0bf38e5c90839c0fe64fb477b810c6ef3b8e9e22",
+    "bytes": 34698
+  },
+  {
+    "key": "bizkaia-payroll-reg2026",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf",
+    "final_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "bytes": 678881
+  },
+  {
+    "key": "bizkaia-payroll-amend2026",
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2025/12/30/I-1405_cas.pdf",
+    "final_url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2025/12/30/I-1405_cas.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "7e4b2073bc3f8ab76e1b5a9f74a592ad6b91200dedd814061efc1425578f7aa4",
+    "bytes": 204756
+  },
+  {
+    "key": "alava-payroll-amend2026",
+    "url": "https://www.araba.eus/BOTHA/Boletines/2025/147/2025_147_03919_C.pdf",
+    "final_url": "https://www.araba.eus/BOTHA/Boletines/2025/147/2025_147_03919_C.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "08a259a6ada4d5c646ce77451505f3a55c33be381747aabd380b4ffbde608cb1",
+    "bytes": 541986
+  },
+  {
+    "key": "alava-payroll-reg2026",
+    "url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "bytes": 989922
+  },
+  {
+    "key": "gipuzkoa-payroll110",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/110",
+    "final_url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/110",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "b6f6b5be0dd726238cc253fd1c4264002ca7b3cedfbf6d677a698ee311cd2759",
+    "bytes": 233153
+  },
+  {
+    "key": "gipuzkoa-payroll111",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/111",
+    "final_url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/111",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "9ba79afaf95c2efc6fc29ac6fa810057ee717b82d2b8e191f232820ad6d72759",
+    "bytes": 233532
+  },
+  {
+    "key": "gipuzkoa-payroll190",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/190",
+    "final_url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/190",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "24cc90d0aaa038d63fc1fda876a49cdb5565f9688d6623a2c331528c7ebd941b",
+    "bytes": 233868
+  },
+  {
+    "key": "navarra-payroll715745",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=12301",
+    "final_url": "https://www.lexnavarra.navarra.es/detalle.asp?r=12301",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "2c587edc500b15e64a87dbc77430cf25a2e201b9aff3f64f1ab03a661eb54935",
+    "bytes": 28916
+  },
+  {
+    "key": "navarra-payroll190",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=29763",
+    "final_url": "https://www.lexnavarra.navarra.es/detalle.asp?r=29763",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "f132876b01c18aa63bc209af5f4d5b5d155077c48cd8d86200b727df90dd9f84",
+    "bytes": 34987
+  },
+  {
+    "key": "navarra-payroll190-extension",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=37052",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "1a637acb409775fc0aa08ac9399b2d8f9770fc55deb4d91f0ff7e965870f3e76",
+    "bytes": 18621
+  },
+  {
+    "key": "bizkaia-january-extension-resolved",
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2022/12/23/I-1160_cas.pdf?hash=7616a7ccaecc78b9aafa548934f8043a",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "828b901d565ae28f6ae68281ce174c92a9e569f75ee9a8c61b5fde0aad8a3f1e",
+    "bytes": 845405
+  },
+  {
+    "key": "ceuta-ipsi-index",
+    "url": "https://www.ceuta.es/ceuta/normativa-cac",
+    "final_url": "https://www.ceuta.es/ceuta/normativa-cac",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "9de2009e0b684728357d327669fcde25f644b337b0a542d1d4aaf731b52105df",
+    "bytes": 97000
+  },
+  {
+    "key": "ceuta-ipsi-2019",
+    "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1583-enero/9410-bocce-extra2-30-01-2019?Itemid=534",
+    "final_url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1583-enero/9410-bocce-extra2-30-01-2019?Itemid=534",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "6e1cf4e736f652443ace618e7f775d5a3890d7c5eacb5e2ea4ed609adb67e4a0",
+    "bytes": 6850780
+  },
+  {
+    "key": "ceuta-ipsi-2020mar",
+    "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1619-marzo/20188-bocce-5973-13-03-2020?Itemid=534",
+    "final_url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1619-marzo/20188-bocce-5973-13-03-2020?Itemid=534",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "e317302223e104be02aa80673f31cde93a1b2854437d1595a9aee5bb6eb3b1d5",
+    "bytes": 1634940
+  },
+  {
+    "key": "ceuta-ipsi-2020jun",
+    "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1830-junio/20334-bocce-extra54-29-06-2020?Itemid=534",
+    "final_url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1830-junio/20334-bocce-extra54-29-06-2020?Itemid=534",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "b6ca360af40f12d841130922ef5531dfef24b0ea847b3ea0b25f412a1bb4b4db",
+    "bytes": 492958
+  },
+  {
+    "key": "ceuta-ipsi-2021may04",
+    "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1847-mayo/20641-bocce-6092-04-05-2021?Itemid=534",
+    "final_url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1847-mayo/20641-bocce-6092-04-05-2021?Itemid=534",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "6a165c58b188d4d227ecb00879a1b011d715fdbcc5aad1324bae4e8e18548efb",
+    "bytes": 678755
+  },
+  {
+    "key": "ceuta-ipsi-2021may18",
+    "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1847-mayo/20648-bocce-6096-18-05-2021?Itemid=534",
+    "final_url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1847-mayo/20648-bocce-6096-18-05-2021?Itemid=534",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "aca6480a36a49022c37cf9fe83d8cc4846ed802a65d74fecff1726825c766467",
+    "bytes": 731128
+  },
+  {
+    "key": "ceuta-ipsi-2021jun",
+    "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1848-junio/20773-bocce-6108-29-06-2021?Itemid=534",
+    "final_url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1848-junio/20773-bocce-6108-29-06-2021?Itemid=534",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "7cff77c57dd32776400a6b192b7d7d6146bd1384111b629f951048566636b8ef",
+    "bytes": 723477
+  },
+  {
+    "key": "ceuta-ipsi-2024mar01",
+    "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1931-marzo/22325-bocce-6387-01-03-2024?Itemid=534",
+    "final_url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1931-marzo/22325-bocce-6387-01-03-2024?Itemid=534",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "fb79756259189adfb506602c1e031ba15eb06cfc5541c130ba69ac1870b015de",
+    "bytes": 855239
+  },
+  {
+    "key": "ceuta-ipsi-2024mar15",
+    "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1931-marzo/22347-bocce-6391-15-03-2024?Itemid=534",
+    "final_url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1931-marzo/22347-bocce-6391-15-03-2024?Itemid=534",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "25bd23f34ee29decb33d13f7623d0a020fbb87998d88e3a4883f540a99c2fc99",
+    "bytes": 4132942
+  },
+  {
+    "key": "melilla-ipsi-2019",
+    "url": "https://bomemelilla.es/bome/descargar/BOME-A-2019-104.pdf",
+    "final_url": "https://bomemelilla.es/bome/descargar/BOME-A-2019-104.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "00d3eeae7d3f5bedee32b631afc445be6eedd5b03ae1463df86cf38041db09a7",
+    "bytes": 201826
+  },
+  {
+    "key": "melilla-ipsi-2026extension",
+    "url": "https://www.melilla.es/melillaportal/RecursosWeb/DOCUMENTOS/1/1_36508_1.pdf",
+    "final_url": "https://www.melilla.es/melillaportal/RecursosWeb/DOCUMENTOS/1/1_36508_1.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "dfeb1f40c7f60c3aac9b5cd4101e9d4c02843c2d31f6fc50d251a38e7ce67ade",
+    "bytes": 140486
+  },
+  {
+    "key": "melilla-ipsi-import2022",
+    "url": "https://bomemelilla.es/bome/descargar/BOME-AX-2022-6.pdf",
+    "final_url": "https://bomemelilla.es/bome/descargar/BOME-AX-2022-6.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "1a7a42ad6dbfb18fcf538fd915c7ae2b6c67ebc74f9c89ea0dcea142de96487c",
+    "bytes": 908269
+  },
+  {
+    "key": "melilla-ipsi-faq2026",
+    "url": "https://www.melilla.es/melillaportal/contenedor.jsp?codMenu=19&codMenuPN=602&codMenuSN=609&contenido=391&nivel=1400&seccion=s_fdes_d4_v1.jsp&tipo=6",
+    "final_url": "https://www.melilla.es/melillaportal/contenedor.jsp?codMenu=19&codMenuPN=602&codMenuSN=609&contenido=391&nivel=1400&seccion=s_fdes_d4_v1.jsp&tipo=6",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "33d30381d37f9077555b9cb32d0e65aefd8a781a07dfab4be137a773cc8a534f",
+    "bytes": 101155
+  },
+  {
+    "key": "melilla-ipsi-import-index",
+    "url": "https://www.melilla.es/melillaPortal/contenedor.jsp?codMenu=343&codMenuPN=601&codMenuSN=1&codMenuTN=183&contenido=27051&language=es&layout=contenedor.jsp&nivel=1400&seccion=s_fdoc_d4_v1.jsp&tipo=5",
+    "final_url": "https://www.melilla.es/melillaPortal/contenedor.jsp?codMenu=343&codMenuPN=601&codMenuSN=1&codMenuTN=183&contenido=27051&language=es&layout=contenedor.jsp&nivel=1400&seccion=s_fdoc_d4_v1.jsp&tipo=5",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "1f7f14ec7060e75b29f143c1693f64c98c019e06ee415f2768d78186839f405c",
+    "bytes": 101507
+  },
+  {
+    "key": "melilla-ipsi-2021",
+    "url": "https://bomemelilla.es/bome/descargar/BOME-A-2021-410.pdf",
+    "final_url": "https://bomemelilla.es/bome/descargar/BOME-A-2021-410.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "cc41daba514e9abd4060e449b0b9d5e653e231731f0a734dfa89da3a29803293",
+    "bytes": 220394
+  },
+  {
+    "key": "melilla-ipsi-2021index",
+    "url": "https://bomemelilla.es/bome/BOME-B-2021-5857",
+    "final_url": "https://bomemelilla.es/bome/BOME-B-2021-5857",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "d59e49671c647fa80190b82408277a7104a6bbfae3764fbb99036e14ddbc7cea",
+    "bytes": 66561
+  },
+  {
+    "key": "ceuta-ipsi-model-list",
+    "url": "https://oac.tributosceuta.org/web/consultaAsuntos.do?idioma=1&palabras=MODELO+IPSI&tramitable=1",
+    "final_url": "https://oac.tributosceuta.org/web/consultaAsuntos.do?idioma=1&palabras=MODELO+IPSI&tramitable=1",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "9ed7110cdb3222b5487f3755f368033f895017d1ea553845b507a88590e086ab",
+    "bytes": 3817
+  },
+  {
+    "key": "melilla-calendar2026",
+    "url": "https://www.melilla.es/melillaportal/RecursosWeb/DOCUMENTOS/1/0_35454_1.pdf",
+    "final_url": "https://www.melilla.es/melillaportal/RecursosWeb/DOCUMENTOS/1/0_35454_1.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "3eb430ea6acbfdb9a00d7c9c9230de681a7355660d010833ca9c9315f15b3708",
+    "bytes": 275683
+  },
+  {
+    "key": "ceuta-ipsi-currentservice",
+    "url": "https://www.tributosceuta.org/index2.cfm?codigo=0081",
+    "final_url": "https://www.tributosceuta.org/index2.cfm?codigo=0081",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "22e8312baadd6f9b1dc7626c73c5cfd420d1905c7abdbbd7c54c120a7dc21254",
+    "bytes": 20686
+  },
+  {
+    "key": "ceuta-ipsi-form001",
+    "url": "https://oac.tributosceuta.org/web/fichaAsunto.do?asunto_ide=1043&op=26&simular=1",
+    "final_url": "https://oac.tributosceuta.org/web/fichaAsunto.do?asunto_ide=1043&op=26&simular=1",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "bb71ed7fca415c6ac9ec23d56e8b9cf6a3a70695db590c3af132333ca906d6fe",
+    "bytes": 1828729
+  },
+  {
+    "key": "ceuta-ipsi-form021",
+    "url": "https://oac.tributosceuta.org/web/fichaAsunto.do?asunto_ide=1047&op=26&simular=1",
+    "final_url": "https://oac.tributosceuta.org/web/fichaAsunto.do?asunto_ide=1047&op=26&simular=1",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "4b60d0523b921619105f78ac308bd0b7da6b731b984929354ebaa643bb407423",
+    "bytes": 813742
+  },
+  {
+    "key": "ceuta-ipsi-form006",
+    "url": "https://oac.tributosceuta.org/web/fichaAsunto.do?asunto_ide=1049&op=26&simular=1",
+    "final_url": "https://oac.tributosceuta.org/web/fichaAsunto.do?asunto_ide=1049&op=26&simular=1",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "aaaa9a3a0cbb200880be100e1af3c5d3170d15c47835800c1dc023c69e12666b",
+    "bytes": 1023915
+  },
+  {
+    "key": "ceuta-ipsi-2025may",
+    "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1955-mayo/22801-bocce-extra16-08-05-2025?Itemid=0",
+    "final_url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1955-mayo/22801-bocce-extra16-08-05-2025?Itemid=0",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "057a7a091f4aa28ae3dab7cf5f80bbe977714dae74f1d9af9b905a3111555d0e",
+    "bytes": 1192182
+  },
+  {
+    "key": "ceuta-ipsi-2026extension",
+    "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23296-bocce-extra48-19-10-2026?Itemid=0",
+    "final_url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23296-bocce-extra48-19-10-2026?Itemid=0",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "8d8c57d34308f6f107d15e41fbc4c3ccd1e81d9588c3ad7b0dc5d48a1ea1492d",
+    "bytes": 383096
+  },
+  {
+    "key": "ceuta-ipsi-extension-notice",
+    "url": "https://www.tributosceuta.org/index2.cfm?codigo=0201&idnoticia=18684",
+    "final_url": "https://www.tributosceuta.org/index2.cfm?codigo=0201&idnoticia=18684",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "a8431eb54805cebd6efeaa645131b6d62b1800d8bfbe49e011b1778786ee8140",
+    "bytes": 18836
+  },
+  {
+    "key": "ceuta-ipsi-form011",
+    "url": "https://oac.tributosceuta.org/web/fichaAsunto.do?simular=1&op=26&asunto_ide=1046",
+    "final_url": "https://oac.tributosceuta.org/web/fichaAsunto.do?simular=1&op=26&asunto_ide=1046",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "453b045e3838959578826924baa0ed41bee4775db8c0d259011d1bd3a129fc76",
+    "bytes": 887862
+  },
+  {
+    "key": "ceuta-ipsi-form009",
+    "url": "https://oac.tributosceuta.org/web/fichaAsunto.do?simular=1&op=26&asunto_ide=1050",
+    "final_url": "https://oac.tributosceuta.org/web/fichaAsunto.do?simular=1&op=26&asunto_ide=1050",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "ca73aa974590faf964de8d263c6a4e466d9f2b7e8e218d5c7833db83aac6fe1f",
+    "bytes": 207209
+  },
+  {
+    "key": "ipsi-vat-crossreference2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "deb38bfee93b0dd76a385d538fd60c6bbef356f81e9ae050d530a71e49e7a34e",
+    "bytes": 1769466
+  },
+  {
+    "key": "iprem-budget-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "00f8090c28d6d6f012b290fd99ab7108f216d01523326d41edb79d168f1d7590",
+    "bytes": 2870264
+  },
+  {
+    "key": "iprem-sepe2026",
+    "url": "https://sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html",
+    "final_url": "https://sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "fc9ecff4e392be0b2e6e49c3899760de7b91278f21c152ee1b16eb2904aefc28",
+    "bytes": 90836
+  },
+  {
+    "key": "clm-2026",
+    "url": "https://vivienda.castillalamancha.es/iprem",
+    "final_url": "https://vivienda.castillalamancha.es/iprem",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:30:54.778402+00:00",
+    "sha256": "f5f77915fd26199f3f4f666ec52229ccd0c11d981ddab6086f360af1af2ca0f7",
+    "bytes": 67672,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "foral-alava232-original",
+    "url": "https://www.araba.eus/botha/Boletines/2018/076/2018_076_02511_E.pdf",
+    "final_url": "https://www.araba.eus/botha/Boletines/2018/076/2018_076_02511_E.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "2eeac782517f185ca44c728a4daba9c06e10ae871b43bcb2a0f067a945204041",
+    "bytes": 288538
+  },
+  {
+    "key": "foral-gipuzkoa232-faq",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/0/Preguntas%2Bfrecuentes.pdf/a3bb67f1-627e-8165-c710-af2e4b10956f",
+    "final_url": "https://www.gipuzkoa.eus/documents/2456431/0/Preguntas%2Bfrecuentes.pdf/a3bb67f1-627e-8165-c710-af2e4b10956f",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "f2583b17b893c5039f58ecf62e1092c99680a19716aa0463029811b26c7bfc7f",
+    "bytes": 288948
+  },
+  {
+    "key": "reta-guide-current2026",
+    "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Trabajo%20Autonomo/guia",
+    "final_url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Trabajo%20Autonomo/guia",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "sha256": "9a2e1e43af65c2e0117deab6458cd0811ce172c21ace22a8819538d274baccd0",
+    "bytes": 201691
+  },
+  {
+    "key": "b232",
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2018/06/20/I-614_cas.pdf?hash=2b88ef4ffa0b9176fffed62d97b059cb",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:31.229371+00:00",
+    "sha256": "f6277b2c475da27db1095184bd95ed6204ccbb02baa945dc308666f44387544a",
+    "bytes": 548041,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "b232-amend",
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2023/10/10/I-1187_cas.pdf",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:31.330762+00:00",
+    "sha256": "1b1c40c9e0297f015ca934f8c35a082a146d416271493e97225d60970901e943",
+    "bytes": 160140,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "g232",
+    "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2018/09/20/c1806246.pdf",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:31.310933+00:00",
+    "sha256": "3397bd7ace92118cf6cb30c1e73d6d56e7463fc3340f0f0d2eaf509e8bebc508",
+    "bytes": 235357,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "a232",
+    "url": "https://www.araba.eus/botha/Boletines/2018/076/2018_076_02511_C.pdf",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:31.272253+00:00",
+    "sha256": "1a55d8093dd6896dc9a8a74f9114125ee3739f00fa735780b5cf257c5255ee92",
+    "bytes": 286139,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "navarra-emanzipa187-2026",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=58954",
+    "read_on": "2026-10-27",
+    "sha256": "27c55dd4d82aa232806f0d4ed42876e3ed16ebb04eeb2a3b074f2217c2e7855f"
+  },
+  {
+    "key": "navarra-housing-reg-current",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=32564",
+    "read_on": "2026-10-27",
+    "sha256": "a6ad553d4a06b317dca0d880b14b3d6949d036c4810f9707ee7c91c896e23ce6"
+  },
+  {
+    "key": "navarra-housing-law-current",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=29980",
+    "read_on": "2026-10-27",
+    "sha256": "f5745ee9dbf167a431129ed564d22d785068afa772d70c2eb4c42a5b1fd2fc03"
+  },
+  {
+    "key": "navarra-sara2026",
+    "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/179/7",
+    "read_on": "2026-10-27",
+    "sha256": "7be5fcdc77583f3877a721e56fb2704a0dc8f62eaab1b2e22b030e0a129058c5"
+  },
+  {
+    "key": "navarra-pit-historical-2012",
+    "url": "https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20120620&tn=1",
+    "read_on": "2026-10-27",
+    "sha256": "22eb6218759fe0b128f1a8590479ff0209758c7a94bafe84336d89026c54d934"
+  },
+  {
+    "key": "navarra-pit-historical-2015",
+    "url": "https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20150331&tn=1",
+    "read_on": "2026-10-27",
+    "sha256": "20efc195a999798e1054aefafb564967778090a0c6b17c4e445e4e781d2d2973"
+  },
+  {
+    "key": "navarra-pit-historical-2017",
+    "url": "https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20170519&tn=1",
+    "read_on": "2026-10-27",
+    "sha256": "b1ee97f847f86f3f2aacbc436b4cbc8689b4e827786c47667486415bfc80b6df"
+  },
+  {
+    "key": "navarra-david-service2026",
+    "url": "https://www.navarra.es/es/tramites/on/-/line/ayudas-david-al-alquiler-de-vivienda",
+    "read_on": "2026-10-27",
+    "sha256": "bfe6e0650dbf3eb5237b14bdf3c212ff4ead3f173cbe7b548bb19f363a1d7070"
+  },
+  {
+    "key": "navarra-income-weight-calculator2026",
+    "url": "https://www.navarra.es/es/tramites/on/-/line/calcular-los-ingresos-familiares-ponderados",
+    "read_on": "2026-10-27",
+    "sha256": "790e9b3bca0a2fb4cd20f6cab561d4a7b2fb78b03799f5df877e1bb423cf0d19"
+  },
+  {
+    "key": "nav-manual",
+    "url": "https://www.navarra.es/documents/48192/35409067/Manual%2Bte%C3%B3rico%2Bde%2Bla%2Bcampa%C3%B1a%2Bde%2B2025.pdf/c9e11ce5-ae6f-eb9a-040b-265f1f040525?download=true&t=1775726152475",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:31.185824+00:00",
+    "sha256": "dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f",
+    "bytes": 2360617,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "spain-germany-treaty",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-10212",
+    "read_on": "2026-10-27",
+    "sha256": "41015102c3604c7278c265c7030b64edfd7a30df75e78fe68e04f593d2e84f87"
+  },
+  {
+    "key": "regulation",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-17173",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-17173",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:30:54.154938+00:00",
+    "sha256": "9a912df959f912f980f0d59403ab16b49da78b1e1e247192d0acda21967b5125",
+    "bytes": 168715,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "nav-cit",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:12:47.848137+00:00",
+    "sha256": "35afc95f661c570c4e9db3d972f4aeedf5a5d48e046399c2ab2c3d3a7ad0997d",
+    "bytes": 1012210,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "basque",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:12:45.897983+00:00",
+    "sha256": "4fd194de7a16cdd76b5225f4bb85cc8e095b40eb71505ad488160b0d5c63f604",
+    "bytes": 463345,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "navarra",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:12:47.469252+00:00",
+    "sha256": "45c46b8165afcc17ce30ccf5a02ebf687f89196526c59726f41fc08c2f8f7d40",
+    "bytes": 491050,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "lirpf",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:32.791058+00:00",
+    "sha256": "fc377d976e2e0724b10c5d26c88fa2da79258325368eb39ec9ee52bcdcbc1a70",
+    "bytes": 2028806,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "rirpf",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:31.943022+00:00",
+    "sha256": "36e641073062ff24e41cd1c5e393dd0e6d6ecb0ac15765210e021aba5777a8a5",
+    "bytes": 1000017,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "liva",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:12:47.494102+00:00",
+    "sha256": "c2c1d24270b624f5630a1ca8622bec79860e16c4c7d11fdb26db5e4dbaf4595d",
+    "bytes": 1769466,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "riva",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:12:46.095176+00:00",
+    "sha256": "6526004aa7cf8a8c0d297fcd9b51a19ce5a89a0c3b4aa0d0ca51027397ac8696",
+    "bytes": 1052203,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "igic",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:12:46.738605+00:00",
+    "sha256": "e903ce95d11d939641d2e7876937b9137a8a8f9efef1893ce77e3f5e6931deaf",
+    "bytes": 1150695,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "order2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:30.367138+00:00",
+    "sha256": "68a1ff616ab84af7c13129d6a94a669a37ce5c12e1174d25d28d62fd9f721f55",
+    "bytes": 250030,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "order2025",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-3780",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-3780",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:30.367021+00:00",
+    "sha256": "fcc80ba1985c1537ff28d8e22f308f4ea51372ce00b458faf41cae734cc2be8d",
+    "bytes": 252869,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "lgss",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:31.455975+00:00",
+    "sha256": "3a1d6b9106389dab01ddb68371eb03da97e975d3be76c959efbf2e5588df22d0",
+    "bytes": 2646450,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "lgss-predec",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:41.262368+00:00",
+    "sha256": "71cbb4bca827737e4753dcbfd8d8bc13dda7466eeb11ddf44d4053f7dcef2914",
+    "bytes": 2525615,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "rdl31",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:30.534133+00:00",
+    "sha256": "ec200d7d2740e4801d5a488c119253721a95a1c33fd03c736749851c76ecb3d8",
+    "bytes": 142479,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "et",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:31.394037+00:00",
+    "sha256": "b259ddb86356bb75968f1bac9935f55e7f96a5a5920a06cfeadc6009015469d2",
+    "bytes": 956621,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "smi",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:31.175725+00:00",
+    "sha256": "e98bc874db398c81902d5aa2eb24ec9a97c0a3f808bb71aa8aba2aa1ea461a4a",
+    "bytes": 50015,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "contribution-reg",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:33.354202+00:00",
+    "sha256": "7a1322d8149037ea4cd0e8073e0d7942a104d8426d1f25b32d4734a770d28ff2",
+    "bytes": 988921,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "collection",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-11836",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-11836",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:32.778759+00:00",
+    "sha256": "f9190b602975fdb1d79f8a127151fec5b7e8caec2ca67015819944bde27beab3",
+    "bytes": 592734,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "self-employed-law",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:33.344746+00:00",
+    "sha256": "0d6307632065f9017df018dcb8886b3c8b121323e37ca8e896d45901056c43f1",
+    "bytes": 500808,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "rdl13",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:33.334436+00:00",
+    "sha256": "2b704184ad95dde2a9d87fec760174a9ba3265b80bf8ce974dd0e8c99cd1ff84",
+    "bytes": 395824,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "household-relief",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-14680",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-14680",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:33.540694+00:00",
+    "sha256": "c38a6ff5e5a171569f83cf82db8b3bb7f872a11880a4622416a79d83eef398c8",
+    "bytes": 198740,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "household-tgss",
+    "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Empleo%2Bdel%2Bhogar/guia",
+    "final_url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Empleo%2Bdel%2Bhogar/guia",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:34.133660+00:00",
+    "sha256": "170d5d99be7d65b54733ea84b7857da55a6ef964f8096471e24b0b4ed4f37bdf",
+    "bytes": 112082,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "reta-tgss",
+    "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Trabajo%20Autonomo/guia",
+    "final_url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Trabajo%20Autonomo/guia",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:34.280312+00:00",
+    "sha256": "253f670a51c09862e1c77a5ffa9f428e033a566853256be9481e8a3533e720d0",
+    "bytes": 201692,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "it-authority",
+    "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es",
+    "final_url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:13:34.350352+00:00",
+    "sha256": "7da5dab9dcc125a6799af027a849e90e2af7d74d2e0b6e50fed97f3fb1f9db93",
+    "bytes": 84390,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "lgss",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:30:55.298642+00:00",
+    "sha256": "b11c238761b0508084a02c34caa9a1a32e41935817ffe04b4a5847b334c32591",
+    "bytes": 2646449,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "pge",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:31:00.974324+00:00",
+    "sha256": "f4268516a8fb01f95955310411dd4e271205c2ade00402fe868e478bd0e554a6",
+    "bytes": 2870265,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "sepe-2026",
+    "url": "https://sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html",
+    "final_url": "https://sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:30:54.223460+00:00",
+    "sha256": "19674d9e6b24b40a608a5d14fb7fee45574a5131f78d62ea2e45df567fdb4eab",
+    "bytes": 90836,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "ss-cessation",
+    "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/10538/2277?changeLanguage=es",
+    "final_url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/10538/2277?changeLanguage=es",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:30:55.201865+00:00",
+    "sha256": "0616ce3601ba54e59cec1a545ad185e1b515263e2ae051e2eee3c7e8ca67a363",
+    "bytes": 91993,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "services",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/iva/iva-operaciones-comercio-exterior/prestaciones-servicios.html",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:26:21.107169+00:00",
+    "sha256": "27da6111c9bb062a5374e6b0f67a675600fcda3aaef84ea9b94514de3681c21d",
+    "bytes": 13966,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "bizkaia-3000",
+    "url": "https://dfb.microsoftcrmportals.com/es-ES/Articulo/?Code=KA-01732",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:26:22.271539+00:00",
+    "sha256": "468a7c5945c61ec58614c471f37017ef4939df0e14b7acb82e96e78e77e9bae3",
+    "bytes": 80387,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "vehicle-note-index",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2023/julio/28/nota-sobre-cuestiones-relativas-vehiculos-empleados.html",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:26:21.086177+00:00",
+    "sha256": "ebef42b5b8d05cb0eaaf710d89c296efbdc6c28d0831b5407b6665857be227a0",
+    "bytes": 5645,
+    "read_on": "2026-10-27"
+  },
+  {
+    "key": "dgt0055",
+    "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0055-19",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:26:21.363850+00:00",
+    "sha256": "5f3eb7158e35a68ac9378844aef4192ae12eded4ebd2dcb6e2f6baf20562af63",
+    "bytes": 4896,
+    "read_on": "2026-10-27",
+    "body_scope": "interactive shell only; full ruling independently read in ordinary browser as described in reports"
+  },
+  {
+    "key": "pgc",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884",
+    "status": 200,
+    "fetched_utc": "2026-10-27T15:26:22.319245+00:00",
+    "sha256": "781c9a8dbb68246bf26a8cad98427004e29f041c5fa55ac1794b6858b2a46123",
+    "bytes": 1851507,
+    "read_on": "2026-10-27"
+  }
+]

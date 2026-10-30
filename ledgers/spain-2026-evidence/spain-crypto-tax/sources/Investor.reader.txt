@@ -1,0 +1,259 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Compra y venta de monedas virtuales: tributación en el IRPF del inversor
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 1.
+
+Capítulo 11. Ganancias y pérdidas patrimoniales
+
+Monedas virtuales
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 1.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Compra y venta de monedas virtuales: tributación en el IRPF del inversor
+
+Las personas físicas, contribuyentes del IRPF, pueden comprar y vender monedas virtuales y cuando dichas operaciones no se realicen en el ámbito de una actividad económica pueden dar lugar a una ganancia o pérdida patrimonial por la diferencia entre el valor de transmisión y el valor de adquisición.
+
+En función del tipo de transacción que se realice se pueden distinguir los siguientes supuestos:
+
+a) Cambio de monedas virtuales por moneda de curso legal (moneda fiduciaria)
+
+Normativa: Arts. 35, 14 y 46.b) Ley IRPF 
+
+Concepto
+
+De acuerdo con el artículo 1.6. de la Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo se entenderá por “cambio de moneda virtual por moneda fiduciaria” la compra y venta de monedas virtuales mediante la entrega o recepción de euros o cualquier otra moneda extranjera de curso legal o dinero electrónico aceptado como medio de pago en el país en el que haya sido emitido.
+
+Ganancia o pérdida patrimonial
+
+La venta de monedas virtuales a cambio de euros u otras monedas de curso legal, realizada al margen de una actividad económica, dará lugar a una ganancia o pérdida patrimonial cuyo importe vendrá determinado por la diferencia entre los respectivos valores de transmisión y de adquisición.
+
+La ganancia o pérdida patrimonial deberá determinarse, para cada operación de venta de cada tipo de criptomoneda, por la diferencia que exista entre el importe de euros obtenidos en la venta (salvo que sea inferior a su valor normal de mercado en la fecha de la venta, en cuyo caso prevalecerá este último) y su importe de adquisición en euros, determinado, en su caso, aplicando el tipo de cambio a euros de la divisa vigente en la fecha de adquisición de la criptomoneda objeto de la venta, teniendo en cuenta los gastos y tributos que se originan por la realización de dichas operaciones, y a los que se refiere el artículo 35 de la Ley del IRPF, siempre que guarden relación directa con las mismas y sean satisfechos por el contribuyente.
+
+Identificación de las monedas transmitidas
+
+Las criptomonedas de un tipo, computables por unidades o fracciones de unidades, tienen su origen en un mismo protocolo informático y todas las del mismo tipo poseen las mismas características, siendo iguales entre sí, lo que confiere a las diferentes unidades o fracciones de unidades de la criptomoneda en cuestión la naturaleza de bienes fungibles y, por tanto, homogéneos.
+
+A efectos de determinar la correspondiente ganancia o pérdida patrimonial y en la medida en que la Ley del IRPF no establece una regla específica diferente para identificar, en el caso de monedas virtuales homogéneas (por ejemplo, el bitcoin), las que se entienden transmitidas, debe considerarse que en caso de efectuarse ventas parciales de monedas virtuales que hubieran sido adquiridas en diferentes momentos y a diferentes valores, las que se transmiten son las adquiridas en primer lugar (criterio FIFO).
+
+Imputación temporal de la ganancia o pérdida patrimonial
+
+De acuerdo con el artículo 14 de la Ley del IRPF, se producirá en el momento en que se proceda a la entrega de las monedas virtuales por el contribuyente en virtud del contrato de compraventa, con independencia del momento en que se perciba el precio de la venta, debiendo, por tanto, imputarse la ganancia o pérdida patrimonial producida al período impositivo en que se haya realizado dicha entrega.
+
+Clase de renta
+
+El importe de las ganancias o pérdidas patrimoniales que se pongan de manifiesto en las transmisiones de las monedas virtuales a cambio de dinero, constituyen renta del ahorro conforme a lo previsto en el artículo 46. b) de la Ley del IRPF y se integran y compensan en la base imponible del ahorro en la forma y con los límites establecidos en el artículo 49 de la misma Ley.
+
+Las operaciones de venta de monedas virtuales a cambio de euros realizadas al margen de una actividad económica deberán ser incluidas en la declaración del IRPF correspondiente al período impositivo en que dichas operaciones se hayan realizado en el apartado específico "Ganancias y pérdidas patrimoniales derivadas de la transmisión o permuta de monedas virtuales por particulares" de la declaración.
+
+Resumen:
+
+Ganancia o pérdida patrimonial.
+
+Importe: diferencia entre valor de transmisión y de adquisición
+
+Imputable al ejercicio en que se entrega la moneda en virtud del contrato de compraventa.
+
+Renta del ahorro porque procede de la transmisión de un elemento patrimonial
+
+b) Intercambio de una moneda virtual por otra diferente
+
+Normativa: Arts. 37.1.h), 14 y 46.b) Ley IRPF 
+
+Delimitación
+
+El intercambio de una moneda virtual por otra moneda virtual diferente constituye, en la medida en que son bienes diferentes, una permuta, conforme a la definición contenida en el artículo 1.538 del Código Civil, que dispone: “La permuta es un contrato por el cual cada uno de los contratantes se obliga a dar una cosa para recibir otra”.
+
+Ganancia o pérdida patrimonial
+
+Dicho intercambio, cuando se realiza al margen de una actividad económica, da lugar a una alteración en la composición del patrimonio, ya que se sustituye una cantidad de una moneda virtual por una cantidad de otra moneda virtual distinta, y con ocasión de esta alteración se pone de manifiesto una variación en el valor del patrimonio materializada en el valor de la moneda virtual que se adquiere en relación con el valor al que se obtuvo la moneda virtual que se entrega a cambio.
+
+En consecuencia, el intercambio entre monedas virtuales diferentes realizado por un contribuyente al margen de una actividad económica da lugar a la obtención de renta que se califica como ganancia o pérdida patrimonial.
+
+Para cuantificar la ganancia o pérdida patrimonial se aplica la norma de valoración específica de la permuta prevista en el artículo 37.1.h) de la Ley del IRPF conforme a la cual la ganancia o pérdida patrimonial se determinará por la diferencia entre el valor de adquisición de la moneda virtual que se entrega y el mayor de los dos siguientes:
+
+El valor de mercado de la moneda virtual entregada.
+
+El valor de mercado del bien o derecho que se recibe a cambio.
+
+A efectos de posteriores transmisiones, el valor de adquisición de las monedas virtuales obtenidas mediante permuta será el valor que haya tenido en cuenta el contribuyente por aplicación de la regla prevista en el citado artículo 37.1.h) como valor de transmisión en dicha permuta.
+
+En lo que respecta al valor de mercado correspondiente a las monedas virtuales que se permutan, es el que correspondería al precio acordado para su venta entre sujetos independientes en el momento de la permuta.
+
+Identificación de las monedas transmitidas
+
+Las criptomonedas de un tipo, computables por unidades o fracciones de unidades, tienen su origen en un mismo protocolo informático y todas las del mismo tipo poseen las mismas características, siendo iguales entre sí, lo que confiere a las diferentes unidades o fracciones de unidades de la criptomoneda en cuestión la naturaleza de bienes homogéneos.
+
+A efectos de determinar la correspondiente ganancia o pérdida patrimonial y en la medida en que la Ley del IRPF no establece una regla específica diferente para identificar, en el caso de monedas virtuales homogéneas (por ejemplo, el bitcoin), las que se entienden transmitidas, debe considerarse que en caso de efectuarse ventas parciales de monedas virtuales que hubieran sido adquiridas en diferentes momentos y a diferentes valores, las que se transmiten son las adquiridas en primer lugar (criterio FIFO).
+
+Imputación temporal de la ganancia
+
+Esta imputación se producirá, de acuerdo con el artículo 14 de la Ley del IRPF, en el momento en que se proceda al intercambio de las monedas virtuales.
+
+La pérdida patrimonial que pueda originarse en un intercambio entre monedas virtuales diferentes debe ser objeto de acreditación (a solicitud, en su caso, de los órganos de gestión e inspección tributaria) a través de los medios de prueba generalmente admitidos en Derecho.
+
+Clase de renta
+
+El importe de las ganancias o pérdidas patrimoniales procedentes de las operaciones de permuta entre monedas virtuales diferentes, constituyen renta del ahorro conforme a lo previsto en el artículo 46. b) de la Ley del IRPF y se integran y compensan en la base imponible del ahorro en la forma y con los límites establecidos en el artículo 49 de la misma Ley:
+
+Las operaciones de intercambio entre monedas virtuales realizadas al margen de una actividad económica deberán ser incluidas en la declaración del IRPF correspondiente al período impositivo en que dichas operaciones se hayan realizado, que, en su caso, deba presentar el contribuyente en el apartado "Ganancias y pérdidas patrimoniales derivadas de la transmisión o permuta de monedas virtuales por particulares" de la declaración.
+
+Resumen:
+
+El intercambio entre monedas virtuales diferentes da lugar a ganancia o pérdida patrimonial.
+
+La alteración patrimonial se valora con las normas específicas de las permutas.
+
+El valor de mercado de las monedas virtuales que se permutan es el que correspondería al precio acordado para su venta entre sujetos independientes.
+
+Las ganancias o pérdidas son renta del ahorro.
+
+c) Pérdidas patrimoniales. Por no devolución de las monedas depositadas o por quiebra de la plataforma de compraventa de monedas virtuales
+
+Normativa: Arts. 14.2.k) y 45 Ley IRPF 
+
+En estos casos, el importe de un crédito no devuelto a su vencimiento no constituye de forma automática una pérdida patrimonial, al mantener el acreedor su derecho de crédito, debiendo acudir a la regla especial de imputación temporal prevista en el artículo 14.2.k) de la Ley del IRPF para estos supuestos de créditos no cobrados.
+
+Imputación temporal de la pérdida
+
+Según el artículo 14.2.k) de la Ley del IRPF  las pérdidas patrimoniales derivadas de créditos vencidos y no cobrados podrán imputarse al período impositivo en que concurra alguna de las siguientes circunstancias:
+
+Que adquiera eficacia una quita establecida en un acuerdo de refinanciación judicialmente homologable a los que se refiere el artículo 71 bis y la disposición adicional cuarta de la Ley 22/2003, de 9 de julio, Concursal, o en un acuerdo extrajudicial de pagos a los cuales se refiere el Título X de la misma Ley.
+
+Que, encontrándose el deudor en situación de concurso, adquiera eficacia el convenio en el que se acuerde una quita en el importe del crédito conforme a lo dispuesto en el artículo 133 de la Ley 22/2003, de 9 de julio, Concursal, en cuyo caso la pérdida se computará por la cuantía de la quita.
+
+En otro caso, que concluya el procedimiento concursal sin que se hubiera satisfecho el crédito salvo cuando se acuerde la conclusión del concurso por las causas a las que se refieren los apartados 1.º, 4.º y 5.º del artículo 176 de la Ley 22/2003, de 9 de julio, Concursal.
+
+Que se cumpla el plazo de un año desde el inicio del procedimiento judicial distinto de los de concurso que tenga por objeto la ejecución del crédito sin que este haya sido satisfecho.
+
+Cuando el crédito fuera cobrado con posterioridad al cómputo de la pérdida patrimonial a que se refiere esta letra k), se imputará una ganancia patrimonial por el importe cobrado en el período impositivo en que se produzca dicho cobro
+
+Clase de renta
+
+Al tratarse de una pérdida patrimonial que no se ha puesto de manifiesto con ocasión de transmisiones de elementos patrimoniales, formará parte de la renta general, debiendo integrarse en la base imponible general del IRPF (artículos 45 y 48 de la Ley del IRPF).
+
+Resumen:
+
+En cuanto importe de un crédito no devuelto a su vencimiento no constituye una pérdida patrimonial.
+
+Se aplica la regla especial de imputación temporal prevista en el artículo 14.2.k) de la Ley del IRPF para estos supuestos de créditos no cobrados.
+
+Formará parte de la renta general, debiendo integrarse en la base imponible general del IRPF.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

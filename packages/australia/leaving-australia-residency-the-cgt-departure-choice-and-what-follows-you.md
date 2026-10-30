@@ -3,7 +3,9 @@ name: leaving-australia-residency-the-cgt-departure-choice-and-what-follows-you
 description: "Plan an Australian tax departure: establish residency, compare the I1 choice, assess a former home and manage continuing obligations."
 jurisdiction: AU
 last_updated: 2026-09-08
+authored_by: Ryan Duguid
 review_status: pending_review
+trust_label: Accountant-authored
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

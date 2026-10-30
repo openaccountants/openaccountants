@@ -1,0 +1,408 @@
+
+
+
+
+    
+	
+	
+	
+    
+    
+	
+	Lexnavarra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[ID:estructura]]
+
+
+    (ir al contenido)
+
+
+    
+[[ID:cabecera]]
+
+
+        
+navarra.es
+
+ 
+
+Castellano  | Euskara   | Français  | English 
+
+ 
+
+
+[[ID:frmSearch]]
+
+
+
+buscador
+
+
+[[ID:cadena]]
+
+
+[[ID:c]]
+
+
+
+
+
+[[ID:primerNivel]]
+
+
+
+Navarra
+
+
+Trámites
+
+
+Temas
+
+
+Gobierno
+
+
+Actualidad
+
+
+
+
+
+
+[[ID:contenido_modificado]]
+
+
+
+
+
+
+
+[[ID:migas]]
+
+
+Navarra :
+
+
+
+Lexnavarra
+
+ : Legislación
+
+
+
+
+
+
+
+LEXNAVARRA
+
+
+
+
+
+Versión para imprimir
+
+
+
+
+
+ORDEN FORAL 25/2011, DE 28 DE FEBRERO, DEL CONSEJERO DE ECONOMÍA Y HACIENDA, POR LA QUE SE APRUEBAN LOS MODELOS 715 Y 745 DE DECLARACIÓN DE RETENCIONES E INGRESOS A CUENTA DEL IMPUESTO SOBRE LA RENTA DE LAS PERSONAS FÍSICAS SOBRE RENDIMIENTOS DEL TRABAJO, DE DETERMINADAS ACTIVIDADES EMPRESARIALES Y PROFESIONALES, AGRÍCOLAS, GANADERAS Y FORESTALES, PREMIOS Y DETERMINADAS IMPUTACIONES DE RENTA
+
+
+
+BON N.º 64 - 01/04/2011
+
+
+
+Preámbulo
+
+Artículo 1. Aprobación del modelo 715.
+
+Artículo 2. Obligados a presentar el modelo 715.
+
+Artículo 3. Lugar, plazo de presentación y forma de pago del modelo 715.
+
+Artículo 4. Aprobación del modelo 745.
+
+Artículo 5. Obligados a presentar el modelo 745 .
+
+Artículo 6. Plazo de presentación y forma de pago del modelo 745.
+
+Artículo 7. Condiciones generales para la presentación telemática de los modelos 715 y 745.
+
+Artículo 8. Procedimiento para la presentación telemática por Internet de las declaraciones correspondientes a los modelos 715 y 745.
+
+Disposición Adicional Única. Coordinación de la presentación de los modelos 715 y 745 con el sistema de compensación establecido en el Decreto Foral 276/2002, de 30 de diciembre, por el que se regula el sistema de extinción por compensación de determinadas deudas tributarias.
+
+Disposición Final Única. Entrada en vigor.
+
+  ANEXO I. RETENCIONES I.R.P.F. POR RENDIMIENTOS DEL TRABAJO, DE DETERMINADAS ACTIVIDADES PROFESIONALES, AGRÍCOLAS, GANADERAS Y FORESTALES, PREMIOS Y DETERMINADAS IMPUTACIONES DE RENTA 
+ANEXO I
+
+  ANEXO II. DISEÑOS DE REGISTRO A LOS QUE DEBEN AJUSTARSE LOS FICHEROS DE LAS AUTOLIQUIDACIONES A TRANSMITIR DEL MODELO 715/745 
+ANEXO II
+
+
+
+
+Preámbulo
+
+El artículo 80.2  del Texto Refundido de la Ley Foral del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Decreto Foral Legislativo 4/2008, de 2 de junio, determina cuáles son las personas y entidades obligadas a retener y efectuar los ingresos a cuenta del Impuesto. Asimismo, ordena que las retenciones e ingresos a cuenta deberán hacerse efectivos a la Hacienda Pública de Navarra en los plazos y forma que se establezcan reglamentariamente. En ese sentido, el artículo 87  del mismo Texto Refundido dispone que el obligado a retener y practicar ingresos a cuenta deberá presentar, en los plazos, forma y lugares que se establezcan reglamentariamente, declaración de las cantidades retenidas o pagos a cuenta realizados, o declaración negativa cuando no hubiera procedido la práctica de los mismos.
+
+Por su parte, el artículo 90 del Reglamento del Impuesto, aprobado por el Decreto Foral 174/1999, de 24 de mayo, desarrolla esta obligación estableciendo los períodos, mensual o trimestral, según los casos, a los que se deben referir las declaraciones, así como los plazos correspondientes para su presentación e ingreso del importe resultante. El período mensual corresponderá a los obligados en los que concurran las circunstancias a las que se refieren los apartados 1.º y 1.º bis del número 3 del artículo 62  del Reglamento del Impuesto sobre el Valor Añadido, para el resto de obligados el período de declaración será trimestral.
+
+A través de esta Orden Foral, se aprueban los modelos 715 y 745 de declaración trimestral y mensual, respectivamente, de retenciones e ingresos a cuenta del Impuesto sobre la Renta de las Personas Físicas sobre rendimientos del trabajo, de determinadas actividades empresariales y profesionales, agrícolas, ganaderas y forestales, premios y determinadas imputaciones de renta.
+
+De conformidad con lo dispuesto en la Orden Foral 132/2009, de 3 de julio, del Consejero de Economía y Hacienda, en la cual se regulan los supuestos en los que será obligatoria la presentación por vía telemática, el modelo 715, de declaración trimestral, se presentará por vía telemática en los casos en los que sea obligatorio, en virtud de la aplicación de los criterios establecidos en el artículo 1.º  de esa Orden Foral, así como en aquellos otros en los que opcionalmente el sujeto pasivo escoja esa forma de presentación. En cuanto al modelo 745, de declaración mensual, deberá ser presentado por vía telemática.
+
+El artículo 90.5  del Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Decreto Foral 174/1999, de 24 de mayo, habilita al Consejero de Economía y Hacienda para aprobar los modelos 715 y 745.
+
+Finalmente, la disposición adicional séptima de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria autoriza al Consejero de Economía y Hacienda para regular mediante Orden Foral los supuestos y condiciones en los que contribuyentes y entidades pueden presentar por medios electrónicos, informáticos y telemáticos, declaraciones, comunicaciones, declaraciones-liquidaciones, autoliquidaciones o cualesquiera otros documentos exigidos por la normativa tributaria.
+
+En consecuencia,
+
+ordeno:
+
+
+Artículo 1. Aprobación del modelo 715.
+
+1. Se aprueba el modelo 715 “Impuesto sobre la Renta de las Personas Físicas. Retenciones e ingresos a cuenta sobre rendimientos del trabajo, de determinadas actividades empresariales y profesionales, agrícolas, ganaderas y forestales, premios y determinadas imputaciones de renta”, que figura en el anexo I de esta Orden Foral.
+
+2. La presentación del modelo 715 podrá realizarse en soporte papel o por vía telemática a elección del sujeto pasivo, salvo en el caso de los sujetos pasivos para los que dicha presentación telemática tenga carácter obligatorio, la cual se realizará con arreglo a las condiciones generales y al procedimiento previsto en los artículos 7 y 8, respectivamente.
+
+
+Artículo 2. Obligados a presentar el modelo 715.
+
+Deberán presentar el modelo 715 a la Comunidad Foral de Navarra, de conformidad con los criterios establecidos en el Convenio Económico, las personas y entidades que, estando obligadas a retener o ingresar a cuenta, de acuerdo con lo dispuesto en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Decreto Foral 174/1999, de 24 de mayo, hayan satisfecho, durante el trimestre natural objeto de declaración, rentas dinerarias o en especie sujetas a retención o ingreso a cuenta, relacionadas en el artículo anterior. No podrán utilizar el modelo 715 las personas y entidades obligadas a retener o ingresar a cuenta que deban efectuar mensualmente la declaración e ingreso de las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior.
+
+
+Artículo 3. Lugar, plazo de presentación y forma de pago del modelo 715.
+
+1. El modelo 715 en soporte papel deberá presentarse en las entidades colaboradoras, conforme a lo dispuesto en la disposición adicional  del Decreto Foral 177/2001, de 2 de julio, por el que se aprueba el Reglamento de Recaudación de la Comunidad Foral de Navarra.
+
+2. De conformidad con lo dispuesto en el artículo 90.1 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, la presentación del modelo 715 así como, en su caso, el ingreso de su importe se realizará dentro de los primeros veinte días naturales del mes siguiente a cada trimestre, salvo el correspondiente al segundo y cuarto trimestres, que podrán efectuarse hasta los días 5 de agosto y 31 de enero, respectivamente, cualquiera que sea la modalidad de presentación.
+
+3. El ingreso de la deuda tributaria resultante podrá realizarse mediante:
+
+a) Pago telemático, siguiendo las indicaciones de pago que aparezcan en pantalla una vez cumplimentado el formulario web.
+
+Realizado el ingreso, el sistema permitirá imprimir el justificante de pago, en el que constará la fecha de pago.
+
+b) Mediante domiciliación bancaria, con arreglo a lo establecido en la Orden Foral 51/2024, de 15 de abril, del consejero de Economía y Hacienda, por la que se desarrolla parcialmente el Reglamento de Recaudación de la Comunidad Foral de Navarra en materia de domiciliación bancaria de pagos relativos a determinadas declaraciones-liquidaciones y autoliquidaciones tributarias.
+
+c) Mediante transferencia bancaria, en los términos previstos en la Orden Foral 145/2022, de 30 de diciembre, de la consejera de Economía y Hacienda, por la que se regula el procedimiento y las condiciones para el pago de deudas mediante transferencia.
+
+d) Mediante presentación de carta de pago (modelo 715), a ingresar en cualquier entidad de depósito colaboradora en la gestión recaudatoria de la Hacienda Foral de Navarra .
+
+
+Artículo 4. Aprobación del modelo 745.
+
+1. Se aprueba, para su presentación exclusivamente por vía telemática, el modelo 745 de declaración de retenciones e ingresos a cuenta del Impuesto sobre la Renta de las Personas Físicas sobre rendimientos del trabajo, de determinadas actividades empresariales y profesionales, agrícolas, ganaderas y forestales, premios y determinadas imputaciones de renta.
+
+2. La presentación del modelo 745 deberá realizarse con arreglo a las condiciones generales y al procedimiento previsto en los artículos 7 y 8, respectivamente.
+
+
+Artículo 5. Obligados a presentar el modelo 745 .
+
+Deberán presentar el modelo 745 a la Comunidad Foral de Navarra, de conformidad con los criterios establecidos en el Convenio Económico, las personas y entidades cuyo periodo de liquidación del Impuesto sobre el Valor Añadido coincida con el mes natural, de acuerdo con el segundo párrafo del artículo 62.3  del Reglamento del Impuesto sobre el Valor Añadido, aprobado por el Decreto Foral 86/1993, de 8 de marzo, que, estando obligadas a retener o ingresar a cuenta, de acuerdo con lo dispuesto en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, hayan satisfecho, durante el mes objeto de declaración, rentas dinerarias o en especie sujetas a retención o ingreso a cuenta, relacionadas en el artículo anterior.
+
+
+Artículo 6. Plazo de presentación y forma de pago del modelo 745.
+
+1. De conformidad con lo dispuesto en el artículo 90.1 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, la presentación del modelo 745 así como, en su caso, el ingreso de su importe se realizará durante los treinta primeros días naturales del mes siguiente al correspondiente período de liquidación mensual, o hasta el último día del mes de febrero en el caso de la declaración e ingreso correspondiente al mes de enero. Sin embargo, el correspondiente al mes de junio, podrá efectuarse hasta el día 5 de agosto, el correspondiente al mes de julio, podrá efectuarse hasta el día 20 de septiembre, y el del mes de diciembre, podrá efectuarse hasta el día 31 de enero .
+
+2. El servicio web de presentación del modelo permitirá el ingreso de la deuda tributaria resultante dando las siguientes opciones de pago:
+
+a) Mediante pago telemático, siguiendo las indicaciones de pago que aparezcan en pantalla una vez cumplimentado el formulario web.
+
+Realizado el ingreso, el sistema permitirá imprimir el justificante de pago, en el que constará la fecha de pago.
+
+b) Mediante domiciliación bancaria, en los términos previstos en la Orden Foral 51/2024, de 15 de abril, del Consejero de Economía y Hacienda, por la que se desarrolla parcialmente el Reglamento de Recaudación de la Comunidad Foral de Navarra en materia de domiciliación bancaria de pagos relativos a determinadas declaraciones-liquidaciones y autoliquidaciones tributarias.
+
+c) Mediante transferencia bancaria, en los términos previstos en la Orden Foral 145/2022, de 30 de diciembre, de la consejera de Economía y Hacienda, por la que se regula el procedimiento y las condiciones para el pago de deudas mediante transferencia.
+
+d) Mediante presentación de carta de pago (modelo 745), a ingresar en cualquier entidad de depósito colaboradora en la gestión recaudatoria de la Hacienda Foral de Navarra .
+
+
+Artículo 7. Condiciones generales para la presentación telemática de los modelos 715 y 745.
+
+1. La presentación telemática de los modelos 715 y 745 estará sujeta a las siguientes condiciones:
+
+a) El declarante deberá disponer de Número de Identificación Fiscal (N.I.F.).
+
+b) El declarante deberá disponer de un certificado electrónico reconocido por la Hacienda Tributaria de Navarra, en los términos establecidos en el Decreto Foral 50/2006, de 17 de julio, por el que se regula el uso de medios electrónicos, informáticos y telemáticos (EIT) en el ámbito de la Hacienda Tributaria de Navarra.
+
+Los prestadores de servicios de certificación y los certificados electrónicos autorizados se encuentran relacionados en el apartado correspondiente, al que se accede a través de la dirección de Internet http://www.hacienda.navarra.es.
+
+c) Si el presentador es una persona o entidad autorizada para presentar declaraciones en representación de terceras personas, de conformidad con lo dispuesto en la Orden Foral 130/2009, de 29 de junio, por la que se aprueba el Acuerdo de colaboración externa para realizar en representación de terceras personas la presentación por vía telemática de declaraciones, comunicaciones y otros documentos tributarios y la tramitación telemática del pago de deudas tributarias, deberá disponer del certificado electrónico reconocido por la Hacienda Tributaria de Navarra, al que se refiere la letra b) anterior.
+
+d) El declarante o, en su caso, el presentador autorizado deberá utilizar previamente un programa de ayuda para obtener el fichero con la declaración a transmitir, salvo que opte por la utilización del formulario habilitado para la presentación telemática. El programa de ayuda podrá ser el desarrollado por la Hacienda Tributaria de Navarra para las declaraciones correspondientes a los modelos 715 ó 745, u otro que obtenga un fichero con el mismo formato.
+
+El contenido de dichos ficheros se deberá ajustar a los diseños de registros establecidos en el anexo ll de la presente Orden Foral.
+
+e) Los declarantes deberán tener en cuenta las normas técnicas que se requieren para poder efectuar la citada presentación telemática y que se encuentran publicadas en la página web de la Hacienda Tributaria de Navarra, en la dirección de Internet http://www.hacienda.navarra.es.
+
+2. En aquellos casos en que se detecten anomalías de tipo formal en la transmisión telemática de declaraciones, dicha circunstancia se pondrá en conocimiento del declarante por el propio sistema mediante los correspondientes mensajes de error, para que proceda a su subsanación.
+
+
+Artículo 8. Procedimiento para la presentación telemática por Internet de las declaraciones correspondientes a los modelos 715 y 745.
+
+El procedimiento para la presentación telemática por Internet de los modelos 715 y 745 será el siguiente:
+
+a) Desde el formulario web se deberá seguir este proceso:
+
+1.º Acceder al servicio de trámites con Hacienda, desde el Portal de Navarra.
+
+2.º Seleccionar el modelo de declaración a realizar, cumplimentando todos los datos necesarios para poder presentar la declaración.
+
+3.º Una vez cumplimentada la declaración, utilizar la opción de enviar. El sistema validará la declaración cuando ésta sea correcta. Cuando se detecten errores se comunicarán a través del formulario y no se permitirá presentar la declaración hasta que sean corregidos. Una vez que la declaración sea correcta, el sistema comunicará el número asignado a la declaración presentada, y la posibilidad de imprimirla para obtener un justificante de la misma.
+
+b) Desde el programa de ayuda desarrollado por la Hacienda Tributaria de Navarra se deberá seguir este proceso:
+
+1.º Cumplimentar la declaración en el programa de ayuda.
+
+2.º Una vez cumplimentada la declaración, es necesario validarla previamente a su presentación.
+
+3.º Una vez validada la declaración, se permitirá enviarla por Internet. En el envío se puede incluir más de una declaración, siempre que pertenezcan al mismo modelo, período y año.
+
+4.º Una vez enviada la declaración, el sistema le responderá con el número de recibo, fecha y hora de presentación. Posteriormente, cuando el envío haya sido validado y procesado, podrá comprobar su resultado desde la aplicación de consulta de declaraciones disponible en la dirección de Internet http://www.hacienda.navarra.es.
+
+
+Disposición Adicional Única. Coordinación de la presentación de los modelos 715 y 745 con el sistema de compensación establecido en el Decreto Foral 276/2002, de 30 de diciembre, por el que se regula el sistema de extinción por compensación de determinadas deudas tributarias.
+
+La presentación de los modelos 715 y 745 no será obligatoria cuando se haya utilizado, en el plazo reglamentariamente fijado, el sistema de compensación establecido en el Decreto Foral 276/2002, de 30 de diciembre, por el que se regula el sistema de extinción por compensación de determinadas deudas tributarias.
+
+
+Disposición Final Única. Entrada en vigor.
+
+Esta Orden Foral entrará en vigor el día siguiente al de su publicación en el Boletín Oficial de Navarra.
+
+ANEXO I. RETENCIONES I.R.P.F. POR RENDIMIENTOS DEL TRABAJO, DE DETERMINADAS ACTIVIDADES PROFESIONALES, AGRÍCOLAS, GANADERAS Y FORESTALES, PREMIOS Y DETERMINADAS IMPUTACIONES DE RENTA 
+
+
+ANEXO I
+
+
+
+
+
+
+
+ANEXO II. DISEÑOS DE REGISTRO A LOS QUE DEBEN AJUSTARSE LOS FICHEROS DE LAS AUTOLIQUIDACIONES A TRANSMITIR DEL MODELO 715/745 
+
+
+ANEXO II
+
+Tipo de registro 0
+
+Presentador.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tipo de registro 1
+
+Declarante.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tipo de registro 2
+
+Datos numéricos de la declaración.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tipo de registro 3
+
+Datos alfanuméricos de la declaración.
+
+
+
+
+
+
+
+
+
+Relación de casillas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[ID:pie]]
+
+
+
+
+
+
+
+
+Contacte con nosotros |
+Accesibilidad |
+Aviso legal |
+
+
+
+
+
+
+

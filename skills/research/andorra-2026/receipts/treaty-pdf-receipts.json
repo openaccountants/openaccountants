@@ -1,0 +1,18 @@
+[
+  {
+    "name": "spain-treaty-synth",
+    "url": "https://www.hacienda.gob.es/SGT/NormativaDoctrina/tributaria/cdi/textos-sinteticos/cdi-ts-andorra-sp.pdf",
+    "status": 200,
+    "bytes": 381833,
+    "sha256": "09a9795857eb7291bfa8f8ea9a725e9223d37c023090c95c917c170389d2deda",
+    "read_date": "2026-10-27"
+  },
+  {
+    "name": "france-treaty-synth",
+    "url": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/andorre/version-consolidee-de-la-convention-avec-andorre-modifiee-par-la-convention-multilaterale.pdf",
+    "status": 200,
+    "bytes": 242896,
+    "sha256": "d3d3ded5cd6e4fb2a7aa1eddd90fab8f95289c5347dd06e059154bc6d2ead8db",
+    "read_date": "2026-10-27"
+  }
+]

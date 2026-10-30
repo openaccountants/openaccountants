@@ -1,0 +1,51 @@
+# Guernsey ordinary PE bridge and pension procedure: bounded review
+
+Independent reviewer,28October2026. Initial candidate `b20482bb258cdd85f6807eb998dc7af1b0e0ed12`; repaired candidate accepted here: **`cd3dc1b8fa142ec18f549e08892ea880af25dc78`**. Accepted local predecessor `e9c82dcdd5a1a2fb37f582b37c6ecea0fcac96d3`, retaining the earlier696132b8Guide closure.
+
+## Decision
+
+Accept the repaired legal additions within their stated partial scope. No open material legal, numerical or no-loss finding remains. This is a bounded source review of the corridorv1.3addition and corresponding README status, not a restart or replacement of the completed whole-pack review. The non-residentPEregistration declaration-completion issue remains an unresolved operational limit. Guernsey domestic foreign-tax-credit submission/change-notification and the other exact partials also remain open.
+
+The candidate still labels these new methods as awaiting bounded review. Administrative closure should replace only that provisional wording with this review/candidate and the exact acceptance boundary. Do not turn review acceptance into a claim that the registration completion gap, transaction-specific attribution or domestic credit submission is solved. A final record/status-only comparison should preserve all legal methods and controls accepted here.
+
+## Findings and repairs checked
+
+1. **Form706requires more than its opening instructions.** The original new step used the opening branches/PEstatement and sections1–4, while section6requires certification of Guernseycentral management/control or Guernseycontrol through shares, loan-creditor status or voting powers. The corrected step expressly checks section6, prohibits signing an untrue statement and requires Revenue Service completion instructions before submission if neither fits the non-residentPE. README and Sources retain that precise gap. This resolves the drafting error without inventing a concession or an alternative declaration.
+
+   Independently read the complete183549Form706copy and complete current-index118095copy. Both bear08/21and the same section6declarations;118095lacks183549's express opening PEparagraph/company-type addition. Neither supplies permission to certify false control/residence facts. The verified opening route,14Julydate and submission address are useful, but full ordinary non-residentPEform completion is not established merely by the title or opening paragraph. No signature, application or external question was sent.
+
+2. **DT-Individualsource pinpoint.** Signed PartFis on printedPDFpage6; NotesPartFis onpage10. The repaired Guide/read-scope receipt now distinguishes them. This was a source-provenance correction; the actual signed-declaration/process method was otherwise correctly described.
+
+These repairs were made by the writer, then independently compared to the initial candidate. No reviewer Guide edits were made.
+
+## Source review and conclusions
+
+| Added method | Primary evidence and conclusion |
+|---|---|
+|PEattribution to ordinary domestic computation|ActualUK/Guernseytreaty7(1)–(4)requires the separate/independent enterprise approach considering functions/assets/risks and recognises separately governed income. Law6/7and47G–47Iprovide the accounting-period, commercial-profit/source and non-resident-liability bridge. PEbusiness-profit inclusion removes47I's disregarded-income treatment; land/buildings remain distinct. No fixed margin, automatic internal finance charge or unsupported shared-cost deduction is established. The attribution inputs remain independently evidenced assumptions.|
+|Capital allowances/rate classification|Law7,84–86andFifthSchedule support the qualified accounts-to-tax bridge and0%/10%/20%classification screen. Assumed£200,000revenue less£130,000costs=£70,000accounts profit; plus£10,000depreciation less separately established£5,000allowances=£75,000taxable profit. Established0%category gives£0; established10%category gives£7,500. The example supplies neither attribution evidence, allowance entitlement nor the rate classification itself.|
+|Registration/return sequence|Form706opening includesbranches/PEsand states14Julyfollowing the first required-return calendar year, emailrevenueservice@gov.ggand subjectForeignIncorporatedCompanyRegistration. The repaired section6gate above remains essential. Law68's actual addressed/published notice controls, even where no tax is payable; the specified return period cannot be less than21daysfromissue. Law68AArequires electronic company return/accounts unless the Director permits another route. The saved current company page says30November2026for the2025return. No deadline for2026income is manufactured from that date.|
+|UKordinary pension form/certification|HMRC's current publication linksDT-Individual10/22. ActualPartsA/B/C/F, Note4andNote6support the pension particulars, signed claim, post-payment-commencement relief-at-source application, residence-authority certification/standalone treaty-residence certificate and routing toHMRCBX91AS. These are application mechanics conditional on actualArticle17/18entitlement; the generic form does not decide pension/lump-sum classification.|
+|PAYEpension refund/adjustment|PartDexpressly excludes pensions/annuities taxed underPAYE;HMRCarranges the refund. NoteC.2uses the latest of the date of residence for that country's tax purposes, pension commencement and earliest open UKrepayment year. The latestP60supports the adjustment. The Guide's summary does not import Guernseycredit periods or assert an unverified UKrepayment deadline. Relief at source depends onHMRC's notice/decision; NotesCrequires subsequent changes to be reported without delay.|
+|New UKincome sources|FreshPAYE81010operative text expressly requires a newDoubleTaxationIndividualform for all new income sources even if a form already exists. The Guide accurately supplies that follow-through.|
+|GuernseyForm675limit|Complete02/23form expressly covers an individual who before1January2020wasUKresident, Guernseynon-resident and receiving a pension/similar payment taxable inGuernsey. HMRCresidence certification, payer particulars, refund evidence and the two declared change-notification events match the new passage. Its own refund-window wording is not substituted for173/176and the form is not promoted to a generic new-arrival/domestic foreign-tax-credit claim. Current index linkage proves linkage, not an expanded taxpayer population.|
+
+Fresh reviewer web access succeeded for the [HMRCpublication](https://www.gov.uk/government/publications/double-taxation-treaty-relief-form-dt-individual), [PAYE81010](https://www.gov.uk/hmrc-internal-manuals/paye-manual/paye81010) and [linked13-pagePDF](https://assets.publishing.service.gov.uk/media/637e192f8fa8f56eabf75e5b/Double_Taxation_Treaty_Relief_Form_DT-Individual.pdf). The PDF's10/22date and current publication linkage are verified, not assumed from the filename. Independent local rereads cover the operative pension/process passages, complete675and both706variants, actual treaty7/17/18and targeted domestic-law provisions. Guernseylaw/form conclusions use the saved official corpus and receipt hashes; no new independent GuernseyHTTPsuccess is claimed. No secondary tax summary was used as authority.
+
+The newly acquired alternativeLawPDF/standard-charge searches are not a source for closing the standard-charge implementing-instrument gap. The mixed-distribution report remains byte-exact, neither denominator hypothesis is adopted, and that partial is intact. No exhausted research or external authority-contact workflow was restarted.
+
+## Preservation and verification
+
+Compared the complete prior/current corridor bodies and all changed/replaced text, not only file lengths. The old PEaggregation/timing, remote premises, agency and attribution uncertainties remain explicit or are narrowed only by the supplied ordinary bridge. Prior pension/government-service allocation conditions, all other corridor articles, statutory relief/MAP/arbitration content and exact residual limits remain. Guernseycredit procedures are separated from the newly supplied UKpension procedure. No old substantive topic disappears.
+
+All nine other Guide files are byte-exact to the accepted predecessor. All20main controls remain byte-exact, with exactly two per Guide. Original32archived controls and full original-body archives remain unchanged. Protected/platform metadata and existingCTAtails are preserved. Corridorversion advances1.2to1.3; no new reviewer/attestation keys are introduced. The options file records the in-place extension choice and its alternative.
+
+Independently recomputed **95controls, zero failures**, including the two new supplementaryPEcontrols. Ten scoped Guide schema checks pass with zero errors and warnings. Country/research`git diff --check`passes at the repaired candidate. The writer's strict-metadata result is not misrepresented as a separately rerun reviewer suite. Per-file11Guide/READMEblobs, SHA256s, full-file/control/metadata/CTAcomparisons, all95controlresults and source-receipt hashes are in `remaining-methods-integrity.json`.
+
+**Lost content restored: 0 in this bounded addition.** Historical restorations and accepted earlier review records remain intact.
+
+## Residual scope
+
+All six ordinary-domain partials remain: IT-INDstandard-charge/fractional allocation; IT-CORPmixed-rate distribution mechanics; SCthreshold/deeming/rounding/directed part-year outcomes; PRcurrent employer-specific exemption withholding and contribution-interest/notice-penalty limits; TPcurrent general adjustment/documentation scope; XBGuernseydomestic credit submission/change-notification, transaction-specificPEattribution, truthful non-residentPEregistration declaration completion, source-specificexit/disposal and retained arbitration-specific intake/status conflict. Ordinary domesticPEbase/electronic-return mechanics and the UKordinary pension submission/follow-through procedure are now supplied within the gates above.
+
+Keep the country incomplete, issue#397open and professional attestation pending. This review makes no Guide edit, push, public contact, merge, CLAconsent, API/model/settings change or purchased-credit action.

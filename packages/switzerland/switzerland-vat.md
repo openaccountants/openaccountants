@@ -1,10 +1,10 @@
 ---
 name: switzerland-vat
 description: "Swiss VAT (MWST, TVA, IVA) for tax year 2026: who must register (worldwide turnover of CHF 100,000, CHF 250,000 for non-profit clubs, foreign businesses, electronic platforms since 2025), the 8.1%, 2.6% and 3.8% rates, the taxable base and input tax, the effective method and the net tax rate method (Saldosteuersatz, ten rates, CHF 5,024,000 / CHF 108,000), quarterly, semi-annual, monthly and the new annual reporting option (CHF 5,005,000), the 60-day filing and payment deadline, reverse charge on services from abroad (Bezugsteuer, CHF 10,000), import VAT and the deferral procedure, default interest of 4.0% for 2026 and penalties. Trigger on: Swiss VAT, MWST Abrechnung, Saldosteuersatz, Bezugsteuer, jährliche Abrechnung, Verzugszins MWST, ESTV, Einfuhrsteuer, decompte TVA. Out of scope: Swiss income and profit taxes (ch-federal-income-tax, ch-cantonal-tax, ch-corporate-income-tax), cross-border income tax (ch-cross-border), crypto (switzerland-crypto-tax)."
-version: 2.1
+version: 2.2
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Switzerland VAT (MWST): registration, rates, returns and penalties, tax year 2026 v2.1
+# Switzerland VAT (MWST): registration, rates, returns and penalties, tax year 2026 v2.2
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Switzerland.
 
@@ -52,16 +52,22 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Default interest (Verzugszins) | 4.0% a year (4.5% in 2025) | 2026 | Zinssatzverordnung EFD, SR 631.014, Annex 2, https://www.fedlex.admin.ch/eli/cc/2025/564/de |
 | Interest refund rate (Vergütungszins on refunds) | 4.0% a year | 2026 | SR 631.014, Annex 2, https://www.fedlex.admin.ch/eli/cc/2025/564/de |
 | Interest not charged or paid below | CHF 100 | 2026 | SR 631.014, Art. 3 (1), https://www.fedlex.admin.ch/eli/cc/2025/564/de |
+| Food served in restaurants and catering (gastgewerbliche Leistungen) | 8.1% (standard rate, not 2.6%) | 2026 | MWSTG Art. 25 (3), https://www.fedlex.admin.ch/eli/cc/2009/615/de |
 | Notification procedure required when tax on a transfer of assets exceeds | CHF 10,000 | 2026 | MWSTG Art. 38 (1), https://www.fedlex.admin.ch/eli/cc/2009/615/de |
 
 ## The taxable base
 
 - **What is taxed.** Supplies in Switzerland for consideration (domestic tax), services bought from foreign businesses (reverse charge, Bezugsteuer) and imports of goods (import tax) (Art. 1 (2)).
 - **Place of services.** As a rule, where the customer has its seat or establishment, or lives (Art. 8 (1)). Exceptions apply, for example, to services usually given to people physically present, which are taxed where the provider is (Art. 8 (2)).
-- **Exempt without input tax (Art. 21).** For example healthcare, education, financial services, insurance, letting and sale of real estate, and some cultural and sporting services. No input tax on costs used for them (Art. 29 (1)), unless the business opts to tax under Art. 22.
+- **Restaurant food.** Food supplied as a catering service (prepared or served at the customer's premises, or with facilities for eating on the spot) is taxed at the standard 8.1%, not 2.6%. Takeaway and delivered food (not alcohol) stays at 2.6% if the business separates it from catering by suitable organisational measures; otherwise 8.1% applies. Food from vending machines is at 2.6% (Art. 25 (3)). The 3.8% accommodation rate covers the room and breakfast, even when breakfast is billed separately; other meals are taxed under the food and catering rules above (Art. 25 (4)).
+- **Exempt without input tax (Art. 21).** For example letters within the Swiss Post reserved service (Art. 21 (2) 1), healthcare, education, financial services, insurance, letting and sale of real estate, and some cultural and sporting services. No input tax on costs used for them (Art. 29 (1)), unless the business opts to tax under Art. 22.
 - **Exempt with input tax (Art. 23).** For example exports of goods, with customs evidence, and international transport. There is no "zero rate" as such.
 - **Input tax (effective method).** Deductible on purchases used for taxable business activity, including reverse charge on services and import tax (Art. 28). Where a cost serves both taxable and exempt or private use, the input tax is cut in proportion (Art. 30). Taking goods or services out of the business for private use or exempt use triggers a correction (own use, Art. 31).
 - **Net tax rate method.** The business multiplies all taxable receipts, including VAT, by its ESTV-approved net rate. It does not claim input tax. Invoices still show the statutory 8.1%, 2.6% or 3.8% (Art. 37 (2); ESTV page). It must be applied for: new registrants within 60 days of receiving the VAT number; others switching from the effective method within 60 days of the start of a tax period (MWSTV Art. 78 (1), 79 (1)). A new registrant that misses the 60 days must stay on the effective method for at least three full tax periods (MWSTV Art. 78 (3)). It is kept for at least one tax period, and a business that leaves it waits three years to return (Art. 37 (4)). It cannot be used by VAT groups, users of the import deferral procedure, businesses with their seat abroad, electronic platforms under Art. 20a, mail-order sellers under Art. 7 (3), or businesses making over half their turnover to related businesses on the effective method (MWSTV Art. 77 (2)).
+- **Margin taxation (Art. 24a).** A business that buys collectors' items such as works of art and antiques, without deducting input tax on the purchase, may tax only the margin: sale price minus purchase price. A loss on one item may be deducted from taxable turnover. No notional input tax may be deducted on goods taxed on the margin (Art. 28a).
+- **Flat tax rate method (Pauschalsteuersätze).** Public bodies and related institutions (private hospitals and schools, licensed transport companies), associations and foundations may use the flat tax rate method instead of net tax rates (Art. 37 (5)).
+- **VAT groups (Art. 13).** Entities with a seat or establishment in Switzerland under common control may apply to be taxed as one VAT subject. A group can be formed only from the start of a tax period and ended only at the end of one.
+- **Foreign currency.** Consideration invoiced in a foreign currency is converted to CHF when the tax claim arises, at the ESTV-published rate: the monthly average or the daily selling rate, at the business's choice (MWSTV Art. 45 (1)-(3)). The same applies to input tax (MWSTV Art. 58). For import tax, the selling rate quoted on the last trading day before the import tax debt arises applies (MWSTG Art. 54 (5)).
 - **Transfers of a business.** Transfers of all or part of a business to another registered person on a restructuring, formation, liquidation or sale of the business use the notification procedure, not tax and input tax, where the tax would exceed CHF 10,000 or the buyer is closely related (Art. 38 (1)).
 
 ## Deadlines and filing
@@ -168,9 +174,11 @@ expected:
 | ESTV, net tax rates and flat tax rates | https://www.estv.admin.ch/de/mwst-saldosteuersaetze-pauschalsteuersaetze | 2026-10-23 |
 | ESTV, paying VAT (deadlines, refunds, default interest) | https://www.estv.admin.ch/de/mwst-bezahlen | 2026-10-23 |
 
-Not yet confirmed: the box (Ziffer) numbers of the ESTV return form were not re-read today, so this skill does not map amounts to boxes; the full list of industries per net tax rate (ESTV ordinance SR 641.202.62) was not read; the amount of the fine for procedural breaches under Art. 98; the day-count basis the ESTV uses for default interest; how Liechtenstein is treated (treaty not read); ESTV practice on private use of company cars and gifts.
+Not yet confirmed: the box (Ziffer) numbers of the ESTV return form were not re-read today, so this skill does not map amounts to boxes; the full list of industries per net tax rate (ESTV ordinance SR 641.202.62) was not read; the amount of the fine for procedural breaches under Art. 98; the day-count basis the ESTV uses for default interest; how Liechtenstein is treated (treaty not read); ESTV practice on private use of company cars and gifts; ESTV practice on input tax on business entertainment (the old version said it is deductible with documented business purpose; Art. 28-29 MWSTG were not checked for a specific rule); which document proves import tax for input tax deduction (the old version named the customs assessment, Veranlagungsverfügung; not checked in MWSTV).
 
 > Contributed by Ryan Duguid.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

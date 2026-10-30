@@ -1,0 +1,22 @@
+[
+  {
+    "name": "annual-allowances",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=2086&p=0",
+    "read_utc": "2026-10-27T22:41:52.116832+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=2086&p=0",
+    "content_type": "application/pdf",
+    "bytes": 208778,
+    "sha256": "6fea25c00d35e0759991c05f0bea35362a7fa8a52387503b0b52b525cf3e94e4"
+  },
+  {
+    "name": "statements-of-practice",
+    "url": "https://gov.gg/taxationstatementsofpractice",
+    "read_utc": "2026-10-27T22:41:52.842610+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/taxationstatementsofpractice",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 131287,
+    "sha256": "4d97bc3e7d6b10634dba3e279816183440597e47da54738cad62edb7480f715c"
+  }
+]

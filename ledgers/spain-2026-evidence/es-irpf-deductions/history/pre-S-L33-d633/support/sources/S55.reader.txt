@@ -1,0 +1,1380 @@
+                                                                                                                                                                                          Núm. 139
+                                                                                                                                                                                  24 de octubre de 2024
+                                                                                                                                                                         Fascículo 246 - Sec. I. - Pág. 49132
+
+
+
+
+                                                                              Sección I. Disposiciones generales
+                                                                              ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA
+                                                                              CONSEJERÍA DE ECONOMÍA, HACIENDA E INNOVACIÓN
+
+                                                         10593                Orden 37/2024, del 21 de octubre, del consejero de Economía, Hacienda e Innovación por la que se
+                                                                              aprueban los modelos de declaración y se regulan los procedimientos vinculados a la aplicación de la
+                                                                              deducción por nacimiento en la cuota íntegra autonómica del impuesto sobre la renta de las personas
+                                                                              físicas
+
+                                                         La Ley 11/2023, de 23 de noviembre, de modificación del Decreto Legislativo 1/2014, de 6 de junio, por el que se aprueba el Texto
+                                                         refundido de las disposiciones legales de la Comunidad Autónoma de las Illes Balears en materia de tributos cedidos por el Estado, creó, en
+                                                         el impuesto sobre la renta de las personas físicas, la deducción autonómica por nacimiento. El artículo 6 ter del Texto refundido mencionado,
+                                                         en el que se regula esta nueva deducción, prevé que los contribuyentes que tienen derecho a aplicarla pueden solicitar, en los términos que se
+                                                         establezcan mediante una orden, el abono anticipado de esta deducción, el cual será objeto de regularización en el momento de presentar la
+                                                         declaración del impuesto.
+
+                                                         Además, el apartado 7 del citado artículo 6 ter prevé que, si hay insuficiencia de cuota, el contribuyente puede solicitar el abono de la
+                                                         diferencia entre la deducción aplicada en la declaración y el importe de la deducción que le corresponda, en los términos que se fijen
+                                                         mediante una orden. En este caso, la renta que resulte tendrá la consideración de prestación pública por nacimiento a los efectos del artículo
+                                                         7.h) de la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas.
+
+                                                         El artículo 96 de la Ley 58/2013, de 17 de diciembre, General Tributaria, establece el principio general mediante el cual la Administración
+                                                         tributaria debe promover el uso de medios electrónicos, informáticos y telemáticos y que, cuando sea compatible con los medios técnicos con
+                                                         los que cuente, los ciudadanos podrán relacionarse con ella para ejercer sus derechos y cumplir con sus obligaciones a través de técnicas y
+                                                         medios electrónicos, informáticos o telemáticos, con las garantías y los requisitos previstos en cada procedimiento. De acuerdo con ello, con
+                                                         la finalidad de agilizar la tramitación del procedimiento de abono anticipado, se prevé una tramitación preferente por medios electrónicos y la
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                         asistencia al sujeto pasivo en las oficinas de la Agencia Tributaria de las Illes Balears, sin perjuicio de permitir la presentación de la solicitud
+                                                         correspondiente presencialmente, en formato papel, de acuerdo con la Sentencia del Tribunal Supremo 953/2023, de 11 de julio.
+
+                                                         Esta Orden consta de once artículos, una disposición adicional, dos transitorias y una final, y prevé cuatro supuestos: la solicitud de abono
+                                                         anticipado de la deducción por nacimiento; la solicitud de abono de la parte que falte de la deducción autonómica, en caso de insuficiencia de
+                                                         cuota del impuesto sobre la renta de las personas físicas; y las declaraciones liquidaciones del reintegro, tanto del abono anticipado como del
+                                                         abono de la deducción no aplicada por insuficiencia de cuota, en caso de incumplimiento de los requisitos exigidos para tener derecho a la
+                                                         deducción. Asimismo, aprueba los correspondientes modelos de presentación de cada solicitud de abono y de las autoliquidaciones de los
+                                                         reintegros correspondientes, que se adjuntan como anexos.
+
+                                                         La Orden cumple los principios de buena regulación a los que hacen referencia el artículo 129 de la Ley 39/2015, de 1 de octubre, del
+                                                         Procedimiento Administrativo Común de las Administraciones Públicas, y el artículo 49 de la Ley 1/2019, de 30 de enero, del Gobierno de
+                                                         las Illes Balears. Así, se cumplen los principios de necesidad y eficacia jurídica por el hecho de ser una norma de carácter eminentemente
+                                                         técnico cuyo único objetivo es dar cumplimiento al artículo 6 ter del Texto refundido de las disposiciones legales de la Comunidad Autónoma
+                                                         de las Illes Balears en materia de tributos cedidos por el Estado, ya mencionado. Se cumple también el principio de proporcionalidad, ya que
+                                                         contiene la regulación necesaria para conseguir los objetivos que justifican la aprobación. Con respecto al principio de seguridad jurídica, se
+                                                         ha garantizado la coherencia del texto con el resto del ordenamiento jurídico nacional y comunitario, con lo que se contribuye a crear un
+                                                         marco normativo estable, predictible, integrado, claro y de certeza que facilita el conocimiento y la comprensión y, en consecuencia, la
+                                                         actuación y la toma de decisiones de los diferentes sujetos afectados sin introducción de cargas administrativas innecesarias.
+
+                                                         El principio de transparencia se garantiza mediante la publicación del Proyecto de orden y la documentación pertinente en la página web del
+                                                         Portal de Transparencia de la Comunidad Autónoma de las Illes Balears, y de los anuncios de información pública correspondientes en el
+                                                         Boletín Oficial de las Illes Balears, a los efectos de que toda la ciudadanía pueda conocer el texto mencionado en el trámite de audiencia y de
+                                                         información pública.
+
+                                                         Finalmente, en relación con el principio de eficiencia, se ha procurado que la norma genere las menores cargas administrativas para la
+                                                         ciudadanía, así como los costes indirectos menores, y se ha fomentado el uso racional de los recursos públicos y el pleno respeto a los
+                                                         principios de estabilidad presupuestaria y sostenibilidad financiera. En este sentido, se promueve la presentación por medios electrónicos y la
+                                                         asistencia de la Agencia Tributaria de las Illes Balears a los sujetos pasivos que la necesiten.
+
+
+
+                                                                                                 https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                       Núm. 139
+                                                                                                                                                                               24 de octubre de 2024
+                                                                                                                                                                       Fascículo 246 - Sec. I. - Pág. 49133
+
+
+
+                                                         Por todo ello, y en uso de las atribuciones que me confiere el artículo 46.2 de la Ley 1/2019, dicto la siguiente
+
+
+
+                                                                                                                             ORDEN
+
+                                                         Artículo 1
+                                                         Objeto
+
+                                                         El objeto de esta Orden es establecer, en desarrollo del artículo 6 ter del Texto refundido de las disposiciones legales de la Comunidad
+                                                         Autónoma de las Illes Balears en materia de tributos cedidos por el Estado, aprobado por el Decreto Legislativo 1/2014, de 6 de junio, los
+                                                         requisitos y los procedimientos de solicitud de abono anticipado de la deducción por nacimiento del impuesto sobre la renta de las personas
+                                                         físicas, de solicitud de abono del importe de la deducción que no haya podido ser objeto de aplicación por insuficiencia de cuota íntegra
+                                                         autonómica, y del reintegro del importe de la deducción por nacimiento en el caso de incumplimiento de los requisitos exigidos.
+
+                                                         Artículo 2
+                                                         Aprobación de modelos
+
+                                                         Se aprueban los siguientes modelos:
+
+                                                                 a) Modelo IB50, «Solicitud del abono anticipado de la deducción autonómica del IRPF por nacimiento», que figura como anexo 1 de
+                                                                 esta Orden.
+                                                                 b) Modelo IB51, «Reintegro del abono anticipado de la deducción autonómica del IRPF por nacimiento», que figura como anexo 2
+                                                                 de esta Orden.
+                                                                 c) Modelo IB52 «Solicitud del abono de la deducción autonómica del IRPF por nacimiento en caso de insuficiencia de la cuota
+                                                                 íntegra autonómica», que figura como anexo 3 de esta Orden.
+                                                                 d) Modelo IB53 «Reintegro del abono de la deducción autonómica del IRPF por nacimiento percibido en caso de insuficiencia de la
+                                                                 cuota íntegra autonómica», que figura como anexo 4 de esta Orden.
+
+                                                         Artículo 3
+                                                         Lugar y forma de presentación
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                         1. La presentación de las solicitudes y de las autoliquidaciones de reintegro y, si procede, de la documentación que se debe acompañar, debe
+                                                         hacerse preferentemente por medios electrónicos, de acuerdo con el modelo correspondiente disponible en la Sede Electrónica de la Agencia
+                                                         Tributaria de las Illes Balears (ATIB) (https://sede.atib.es/), al que podrán acceder los solicitantes mediante el módulo habilitado con esta
+                                                         finalidad denominado «deducción autonómica del IRPF por nacimiento: abono y reintegro».
+
+                                                         Para acceder al módulo mencionado, es necesario identificarse con DNI electrónico, certificado digital o Cl@ve o cualquier otro medio que
+                                                         garantice la identidad del solicitante.
+
+                                                         En el supuesto de que el beneficiario actúe por medio de un representante que no disponga de un certificado electrónico de representación,
+                                                         previamente a la presentación de la solicitud o de la autoliquidación de reintegro, debe darse de alta al representante en el registro de
+                                                         presentadores habilitado a este efecto en la Sede Electrónica de la Agencia Tributaria de las Illes Balears.
+
+                                                         2. La presentación electrónica de la solicitud o de la autoliquidación de reintegro implica que todas las notificaciones y las comunicaciones
+                                                         relativas al procedimiento concreto se efectuarán por vía telemática.
+
+                                                         3. En cumplimiento del deber de información y asistencia al obligado tributario, la Agencia Tributaria de las Illes Balears debe habilitar los
+                                                         medios necesarios para ayudar al solicitante a presentar telemáticamente la solicitud o la autoliquidación de reintegro.
+
+                                                         4. Asimismo, la solicitud y la autoliquidación de reintegro pueden presentarse presencialmente en el registro de la Agencia Tributaria de las
+                                                         Illes Balears, mediante papel impreso, que se podrá descargar de la Sede Electrónica de la Agencia Tributaria de las Illes Balears.
+
+                                                         5. La presentación de la solicitud o la autoliquidación de reintegro implica, excepto que el solicitante se oponga de forma expresa, autorizar a
+                                                         la Agencia Tributaria de las Illes Balears para que consulte los datos de identidad, de residencia, las declaraciones del impuesto sobre la renta
+                                                         de las personas físicas o, si procede, las imputaciones fiscales y otros datos necesarios para tramitar y resolver la solicitud o para comprobar
+                                                         la autoliquidación de reintegro.
+
+                                                         A tal efecto, se entiende que el solicitante o quien presente la autoliquidación de reintegro queda informado y consiente expresamente el
+                                                         tratamiento de los datos suministrados voluntariamente. También se entiende que autoriza a la Agencia Tributaria de las Illes Balears a
+                                                         consultar los datos necesarios de la Agencia Estatal de Administración Tributaria u otras administraciones u organismos para verificar los
+
+
+
+                                                                                                 https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                      Núm. 139
+                                                                                                                                                                              24 de octubre de 2024
+                                                                                                                                                                      Fascículo 246 - Sec. I. - Pág. 49134
+
+
+
+                                                         datos aportados mediante la solicitud o la autoliquidación de reintegro y para comprobar los requisitos para realizar el abono anticipado o
+                                                         para autoliquidar el reintegro.
+
+                                                         Los datos personales aportados por el obligado tributario en el cumplimiento de sus obligaciones y derechos tributarios serán tratados con la
+                                                         finalidad de la aplicación del sistema tributario. Este tratamiento se ajustará al Reglamento (UE) 2016/679 del Parlamento Europeo y del
+                                                         Consejo, de 27 de abril de 2016, y a la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y Garantía de los
+                                                         Derechos Digitales.
+
+                                                         Artículo 4
+                                                         Procedimiento de presentación del modelo IB50
+
+                                                         1. Los contribuyentes con derecho a la aplicación de la deducción por nacimiento del artículo 6 ter del Texto refundido de las disposiciones
+                                                         legales de la Comunidad Autónoma de las Illes Balears en materia de tributos cedidos por el Estado, aprobado por el Decreto Legislativo
+                                                         1/2014, de 6 de junio, que deseen percibir el abono anticipado de la misma, tendrán que presentar la solicitud correspondiente, ajustada al
+                                                         modelo IB50 aprobado por esta Orden, y cumplimentar los datos correspondientes del modelo mencionado.
+
+                                                         2. Cada progenitor con derecho a la deducción presentará individualmente una solicitud por cada recién nacido que dé derecho a la misma.
+
+                                                         3. En el supuesto de que haya varios contribuyentes con derecho a la aplicación de la deducción respecto del mismo nacimiento, el importe se
+                                                         prorrateará en función del orden, que, para cada uno de ellos, represente el hijo que genera el derecho a la deducción.
+
+                                                          A tal efecto, se tomarán en consideración tanto los hijos naturales como los adoptados que den derecho a la aplicación del mínimo personal
+                                                         por descendientes al que se refiere el artículo 58 de la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas.
+
+                                                         En estos casos, en cada una de las solicitudes se tendrá que indicar el número de hijos previos al recién nacido que generan derecho a la
+                                                         aplicación del mínimo por descendientes a que se refiere el artículo 58 de la Ley 35/2006 en la fecha del devengo del impuesto en el ejercicio
+                                                         anterior al de la solicitud del abono anticipado.
+
+                                                         4. En el caso de familias monoparentales el importe del abono será del 100 % de la deducción que le corresponda.
+
+                                                         5. En el caso de partos múltiples, se debe hacer una declaración por cada uno de los recién nacidos y se debe indicar el número de orden de
+                                                         nacimiento de forma correlativa. Además, en el caso de que haya varios contribuyentes con derecho a la aplicación de la deducción, se debe
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                         aplicar lo previsto en el apartado 3 de este artículo.
+
+                                                         6. La presentación de la solicitud de abono anticipado de la deducción por nacimiento ajustada al modelo IB50 no requiere que se acompañe
+                                                         ningún documento justificativo, siempre y cuando se autorice a la ATIB en los términos previstos en el artículo 3.5, , sin perjuicio de la
+                                                         posterior comprobación que haga la Agencia Estatal de Administración Tributaria como administración competente en la gestión y
+                                                         comprobación del tributo, o la Administración tributaria autonómica a efectos del pago anticipado de la deducción.
+
+                                                         En el caso de no autorizar a la ATIB deberá presentar la siguiente documentación:
+
+                                                                 a) La declaración del IRPF del ejercicio anterior.
+                                                                 b) En el supuesto de no ser obligatorio presentar la declaración, un certificado de imputaciones fiscales y un certificado de residencia
+                                                                 fiscal en el ejercicio anterior al del nacimiento expedidos por la AEAT.
+                                                                 c) El certificado de nacimiento del descendiente que dé derecho a la deducción.
+
+                                                         7. Para conceder el abono anticipado, se exigirá el cumplimiento de los requisitos establecidos en el artículo 6 ter del Texto refundido de las
+                                                         disposiciones legales de la Comunidad Autónoma de las Illes Balears en materia de tributos cedidos por el Estado, a excepción del nivel de
+                                                         base imponible total que deberá darse con respecto al ejercicio anterior al nacimiento.
+
+                                                         Lo establecido en el inciso final del párrafo anterior debe entenderse sin perjuicio de que en el momento de presentar la declaración del
+                                                         impuesto correspondiente al ejercicio del nacimiento tenga que cumplirse con el límite de base imponible imputable a dicho ejercicio.
+
+                                                         8. El abono de la deducción se efectuará mediante una transferencia bancaria por el importe que corresponda.
+
+                                                         A tal efecto, los solicitantes indicarán una cuenta de su titularidad en una entidad de crédito ubicada en territorio español con un código
+                                                         IBAN que empiece por ES.
+
+                                                         Artículo 5
+                                                         Plazo de presentación de las solicitudes ajustadas al modelo IB50
+
+                                                         La solicitud del abono anticipado de la deducción por nacimiento se tendrá que formular en el plazo de quince días hábiles desde el
+
+
+
+                                                                                                https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                       Núm. 139
+                                                                                                                                                                              24 de octubre de 2024
+                                                                                                                                                                      Fascículo 246 - Sec. I. - Pág. 49135
+
+
+
+                                                         nacimiento. La presentación posterior a este plazo supondrá la denegación automática de la solicitud, sin perjuicio del derecho a aplicar la
+                                                         deducción en la correspondiente declaración del impuesto.
+
+                                                         Artículo 6
+                                                         Procedimiento de presentación del modelo IB52
+
+                                                         1. Los contribuyentes con derecho a la aplicación de la deducción por nacimiento del artículo 6 ter que no hayan podido aplicarse
+                                                         íntegramente el importe de la deducción por insuficiencia de cuota íntegra autonómica, y deseen solicitar el abono de la cuantía no deducida,
+                                                         tendrán que presentar la solicitud correspondiente, ajustada al modelo IB52 aprobado en esta Orden, de acuerdo con las condiciones que se
+                                                         indican en este artículo.
+
+                                                         2. Cuando, en el ejercicio en que se hayan generado las deducciones que den lugar a la solicitud de abono, el contribuyente haya optado por
+                                                         presentar declaración individual en el impuesto sobre la renta de las personas físicas, esta solicitud debe suscribirse de manera individual por
+                                                         el progenitor con derecho al abono por insuficiencia de cuota.
+
+                                                         3. En caso de que, en el ejercicio en que se hayan generado las deducciones que den lugar a la solicitud de abono, el contribuyente haya
+                                                         optado por presentar la declaración conjunta con el cónyuge y otros miembros de la unidad familiar, la solicitud se debe suscribir por ambos
+                                                         cónyuges.
+
+                                                         4. En la solicitud se tendrán que consignar los datos, con trascendencia a estos efectos, que figuren en las declaraciones del impuesto sobre la
+                                                         renta de las personas físicas que hayan sido presentadas en el ejercicio en que se generó la deducción no aplicada.
+
+                                                         La presentación de la solicitud no requiere que se acompañe ningún documento justificativo, siempre y cuando se autorice a la ATIB en los
+                                                         términos previstos en el artículo 3.5. En el caso de no autorizar a la ATIB deberá presentarse la siguiente documentación:
+
+                                                                 a) La declaración del IRPF del ejercicio en el que se produce la insuficiencia de cuota.
+                                                                 b) En el supuesto de no ser obligatorio presentar la declaración, un certificado de imputaciones fiscales y un certificado de residencia
+                                                                 fiscal en el ejercicio anterior al del nacimiento expedidos por la AEAT.
+                                                                 c) El certificado de nacimiento del descendiente que dé derecho a la deducción.
+
+                                                         5. El abono de la deducción se efectuará, mediante transferencia bancaria, por el importe que corresponda.
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                         A tal efecto los solicitantes tendrán que indicar una cuenta de una entidad de depósito de su titularidad ubicada en territorio español con un
+                                                         código IBAN que empiece por ES.
+
+                                                         Articulo 7
+                                                         Plazo de presentación de las solicitudes ajustadas al modelo IB52
+
+                                                         Las solicitudes correspondientes al modelo IB52 se pueden presentar a partir del día siguiente al de la finalización del plazo de presentación
+                                                         de la declaración del impuesto sobre la renta de las personas físicas correspondiente al ejercicio en el que se genere la deducción no aplicada,
+                                                         hasta el 30 de septiembre del mismo año.
+
+                                                         Artículo 8
+                                                         Resolución de las solicitudes de abono
+
+                                                         1. La Agencia Tributaria de las Illes Balears, a la vista de la solicitud recibida, de los datos de qué disponga y de las comprobaciones que
+                                                         pueda llevar a cabo, si considera procedente la solicitud, propondrá al consejero de Economía, Hacienda e Innovación que reconozca el
+                                                         derecho al abono, sin perjuicio de la comprobación posterior que pueda realizar la Agencia Estatal de Administración Tributaria.
+
+                                                         El abono que corresponda, en los términos que establecen los artículos 4.8 y 6.5, se entenderá, asimismo, como la notificación de la
+                                                         resolución de reconocimiento.
+
+                                                         2. En el supuesto de que no se considere procedente el abono de la deducción, el consejero de Economía, Hacienda e Innovación, a propuesta
+                                                         motivada del director de la Agencia Tributaria de las Illes Balears, resolverá la denegación del abono anticipado, que se notificará a la
+                                                         persona interesada.
+
+                                                         3. La revisión en la vía administrativa de las resoluciones que tengan por objeto el abono de la deducción por nacimiento se rigen por lo
+                                                         dispuesto en la Ley 58/2003 y las normas que la desarrollan.
+
+                                                         Artículo 9
+                                                         Reintegro de los anticipos y las deducciones cobrados indebidamente
+
+
+
+
+                                                                                                https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                       Núm. 139
+                                                                                                                                                                               24 de octubre de 2024
+                                                                                                                                                                       Fascículo 246 - Sec. I. - Pág. 49136
+
+
+
+                                                         1. En el supuesto de que, una vez percibido el abono anticipado o el abono de la deducción no aplicada en la declaración por insuficiencia de
+                                                         cuota, se dé alguna causa que suponga la pérdida del derecho a la aplicación de la deducción o a una parte del importe de la deducción, el
+                                                         perceptor debe reintegrar el importe percibido o la parte a la que no tiene derecho, de acuerdo con el procedimiento establecido en el artículo
+                                                         10 mediante los modelos IB51 o IB53, según corresponda.
+
+                                                         No obstante, la pérdida del derecho a la aplicación de la deducción no implicará la obligación de reintegro en los casos de abono anticipado
+                                                         de la deducción en la que el importe correspondiente sea objeto de regularización en la declaración del IRPF relativa al ejercicio fiscal en el
+                                                         que se produzca el nacimiento.
+
+                                                         2. Las causas por las que se pierde el derecho a la aplicación de la deducción son las siguientes:
+
+                                                                 a) Superar los límites de base imponible total.
+                                                                 b) Perder, en la fecha del devengo del impuesto, el derecho a aplicar el mínimo por descendiente al que se refiere el artículo 58 de la
+                                                                 Ley 35/2006.
+                                                                 c) Cambiar de residencia fiscal fuera de las Illes Balears, con efectos en el ejercicio al que corresponde la aplicación de la deducción
+                                                                 por nacimiento.
+                                                                 d) No presentar la declaración correspondiente al ejercicio de aplicación de la deducción, de manera que no tiene lugar la
+                                                                 regularización a la que se refiere el artículo 6 ter del Texto refundido de las disposiciones legales de la Comunidad Autónoma de las
+                                                                 Illes Balears en materia de tributos cedidos por el Estado, aprobado por el Decreto Legislativo 1/2014, de 6 de junio.
+                                                                 e) Percibir ayudas o prestaciones públicas concedidas u otorgadas por la Comunidad Autónoma de las Illes Balears a causa de
+                                                                 nacimiento, devengadas en el mismo ejercicio que el de aplicación de la deducción.
+                                                                 f) Presentar una declaración rectificativa o recibir una liquidación derivada de un procedimiento tributario incoado por la Agencia
+                                                                 Estatal de Administración Tributaria, que afecte la cuantificación o la aplicación de la deducción.
+                                                                 g) Cualquier otra circunstancia que dé lugar al incumplimiento de los requisitos para aplicar la deducción.
+
+                                                         Artículo 10
+                                                         Procedimiento y plazo para realizar el reintegro
+
+                                                         1. A efectos de proceder al reintegro, se debe aplicar lo previsto en el artículo 3 de esta Orden.
+
+                                                         2. Dentro del módulo «deducción autonómica del IRPF por nacimiento: abono i reintegro» aparecerá la aplicación «Reintegro de anticipos
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                         cobrados indebidamente», mediante la cual se debe cumplimentar el modelo IB51, y la aplicación «Reintegro de abonos cobrados por
+                                                         insuficiencia de cuota», mediante la que se debe cumplimentar el modelo IB53.
+
+                                                         Estas aplicaciones, una vez que se ha validado el modelo, permitirán el pago para reintegrar la deducción mediante cualquiera de los métodos
+                                                         de pago habilitados por la ATIB.
+
+                                                         3. En el reintegro del abono anticipado, en los supuestos de que haya varios perceptores por un mismo nacimiento o de partos múltiples, se
+                                                         deben aplicar los criterios establecidos en los apartados 2, 3, 4 y 5 del artículo 4.
+
+                                                         4. En el reintegro del abono derivado de la insuficiencia de cuota, este se debe llevar a cabo en los mismos términos en los que se realizó la
+                                                         solicitud de abono, de conformidad con lo previsto en los apartados 2 y 3 del artículo 6.
+
+                                                         5. El plazo para realizar el reintegro, en el caso de percepción del abono anticipado que no se haya regularizado con la declaración del IRPF
+                                                         correspondiente al ejercicio del nacimiento, será de un mes a contar desde que acabe el plazo de presentación del IRPF correspondiente al
+                                                         ejercicio del nacimiento.
+
+                                                         No obstante, si el hecho o acto determinante de la pérdida del derecho se produce posteriormente, el plazo empieza a contar desde que se
+                                                         produce el hecho o desde que el acto adquiere firmeza, respectivamente.
+
+                                                         En el caso de percepción del abono de la deducción por insuficiencia de cuota, el plazo para realizar el reintegro será de un mes desde que el
+                                                         acto administrativo que da lugar a la pérdida del derecho haya adquirido firmeza, o desde que se produzca el hecho determinante de la
+                                                         pérdida del derecho.
+
+                                                         Artículo 11
+                                                         Financiación
+
+                                                         1. Los créditos presupuestarios destinados a financiar el pago anticipado de la deducción por nacimiento y el abono del importe de la
+                                                         deducción no aplicada por insuficiencia de cuota serán los que se aprueben cada año por la ley de presupuestos generales de la Comunidad
+                                                         Autónoma de las Illes Balears correspondiente, por el importe que se determine anualmente.
+
+
+
+
+                                                                                                 https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                        Núm. 139
+                                                                                                                                                                                24 de octubre de 2024
+                                                                                                                                                                       Fascículo 246 - Sec. I. - Pág. 49137
+
+
+
+                                                         2. Para el ejercicio de 2024, la Consejería de Economía, Hacienda e Innovación habilitará los créditos presupuestarios para que se puedan
+                                                         gestionar los pagos correspondientes.
+
+                                                         Disposición adicional única
+                                                         Tratamiento de datos personales
+
+                                                         Los datos personales aportados serán tratados por la Agencia Tributaria de las Illes Balears. La finalidad del tratamiento es la aplicación de la
+                                                         deducción por nacimiento del impuesto sobre la renta de las personas físicas que regula esta Orden en cuanto a la solicitud de abono y el
+                                                         reintegro del importe de la deducción en el caso de incumplimiento de los requisitos exigidos.
+
+                                                         Este tratamiento se ajustará a lo establecido en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016,
+                                                         relativo a la protección de las personas físicas en cuanto al tratamiento de datos personales y a la libre circulación de estos datos y por el que
+                                                         se deroga la Directiva 95/46/CE (RGPD), y a la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y Garantía de los
+                                                         Derechos Digitales.
+
+                                                         Los datos recogidos no podrán ser cedidos a terceras personas excepto en los supuestos previstos en el artículo 95 de la Ley 58/2003, de 17
+                                                         de diciembre, General Tributaria.
+
+                                                         Disposición transitoria primera
+                                                         Solicitud de abono anticipado de la deducción por nacimientos producidos entre enero y octubre de 2024
+
+                                                         La presentación del modelo IB50, «Solicitud del abono anticipado de la deducción autonómica del IRPF por nacimiento», correspondiente a
+                                                         nacimientos producidos entre el 1 de enero y el 31 de octubre de 2024 debe realizarse desde la entrada en vigor de esta Orden y hasta el 30 de
+                                                         noviembre de 2024.
+
+                                                         Disposición transitoria segunda
+                                                         Solicitud de pago de la deducción por insuficiencia de cuota en la declaración del impuesto sobre la renta de las personas físicas del
+                                                         año 2023
+
+                                                         La presentación del modelo IB52, «Solicitud del abono de la deducción autonómica del IRPF por nacimiento en caso de insuficiencia de la
+                                                         cuota íntegra autonómica», correspondiente al ejercicio fiscal 2023, debe realizarse desde la entrada en vigor de esta orden y hasta el 30 de
+                                                         noviembre de 2024.
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                         Disposición final única
+                                                         Entrada en vigor
+
+                                                         Esta Orden entrará en vigor el 1 de noviembre de 2024.
+
+
+
+                                                                                                Palma, en la fecha de la firma electrónica (21 de octubre de 2024)
+
+                                                                                                      El consejero de Economía, Hacienda e Innovación
+                                                                                                                      Antoni Costa Costa
+
+                                                         ANEXO 1
+                                                         Modelo IB50. Solicitud del abono anticipado de la deducción autonómica del IRPF por nacimiento
+
+                                                         ANEXO 2
+                                                         Modelo IB51. Reintegro del abono anticipado de la deducción autonómica del IRPF por nacimiento
+
+                                                         ANEXO 3
+                                                         Modelo IB52. Solicitud del abono de la deducción autonómica del IRPF por nacimiento en caso de insuficiencia de la cuota íntegra
+                                                         autonómica
+
+                                                         ANEXO 4
+                                                         Modelo IB53. Reintegro del abono de la deducción autonómica del IRPF por nacimiento percibido en caso de insuficiencia de la
+                                                         cuota íntegra autonómica
+
+
+
+
+                                                                                                 https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                         Núm. 139
+                                                                                                                                                                                 24 de octubre de 2024
+                                                                                                                                                                         Fascículo 246 - Sec. I. - Pág. 49138
+
+
+
+
+                                                                                                                                                                                   02'(/2,%
+
+                                                                              
+
+                                                                                                                                                                            ',5$7,%$
+                                                             
+
+                                                             
+                                                                                     62/,&,78''(/$%212$17,&,3$'2'(/$'('8&&,Ï1$8721Ï0,&$
+                                                                                                       '(/,53)3251$&,0,(172
+                                                                              
+                                                             
+                                                                 ,'(17,),&$&,Ï1'(/&2175,%8<(17(62/,&,7$17(
+                                                              $SHOOLGRV\QRPEUH                                                                                    1,)
+                                                                                                                                                                    
+                                                                                                                                                                    
+                                                              7HOpIRQR                                                        &RUUHRHOHFWUyQLFR
+                                                              
+                                                                                                                            
+                                                              3DUHQWHVFR
+                                                                         0DGUH
+                                                                         3DGUH
+                                                             
+                                                                 ,'(17,),&$&,Ï1'(/2752352*(1,725
+                                                                 $SHOOLGRV\QRPEUH                                                                                 1,)
+                                                                                                                                                                    
+                                                                 
+                                                                                                                                                                     
+                                                                 3DUHQWHVFR                      ¢+DVROLFLWDGRRYDDVROLFLWDUHODERQRDQWLFLSDGRSRUHVWHQDFLPLHQWR"
+                                                                         0DGUH                     6t
+                                                                         3DGUH                    1R
+                                                             
+                                                                 ,'(17,),&$&,Ï1'(/5(&,e11$&,'2&21'(5(&+2'('('8&&,Ï1
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                                 $SHOOLGRV\QRPEUH
+                                                                 
+                                                                 
+                                                                 /XJDUGHQDFLPLHQWR                                          )HFKDGHQDFLPLHQWR
+                                                                                                                              
+                                                             
+                                                             
+                                                                 5(35(6(17$17(
+                                                                 $SHOOLGRV\QRPEUH                                                                                 1,)
+                                                                                                                                                                    
+                                                                 
+                                                                                                                                                                     
+                                                                 7HOpIRQR                                                     &RUUHRHOHFWUyQLFR
+                                                                 
+                                                                 
+                                                                                                                              
+                                                             
+                                                              '20,&,/,2$()(&726'(127,),&$&,Ï1
+                                                              9tDS~EOLFD                                                1~P         (VFDOHUDSLVRSXHUWD
+                                                                                                                                      
+                                                                                                                                      
+                                                              3REODFLyQ PXQLFLSLR                                                                           &yGLJRSRVWDO
+                                                                                                                                                             
+                                                             
+                                                         
+
+
+
+
+                                                                                                                              GH
+
+                                                                              
+
+
+                                                                                               https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                             Núm. 139
+                                                                                                                                                                                     24 de octubre de 2024
+                                                                                                                                                                             Fascículo 246 - Sec. I. - Pág. 49139
+
+
+
+
+                                                                                                                                                                                       02'(/2,%
+
+                                                                          
+
+                                                                 
+                                                                          
+                                                             '(&/$5$&,Ï1
+                                                         
+                                                             (OVROLFLWDQWHHQFDOLGDGGHEHQHILFLDULRGHODGHGXFFLyQDODTXHKDFHUHIHUHQFLDHODUWtFXORWHUGHO7H[WRUHIXQGLGRGHODV
+                                                             GLVSRVLFLRQHV OHJDOHV GH OD &RPXQLGDG $XWyQRPD GH ODV ,OOHV %DOHDUV HQ PDWHULD GH WULEXWRV FHGLGRV SRU HO (VWDGR
+                                                             DSUREDGRSRUHO'HFUHWR/HJLVODWLYRGHGHMXQLR
+                                                                                                                                                    
+                                                             '(&/$5$5(63216$%/(0(17(
+                                                             
+                                                                4XHHOQ~PHURGHKLMRVTXHOHGDQGHUHFKRDODDSOLFDFLyQGHOPtQLPRSHUVRQDO\IDPLOLDUDOTXHVHUHILHUHHODUWtFXOR
+                                                             GHOD/H\GHGHQRYLHPEUHGHO,PSXHVWRVREUHOD5HQWDGHODV3HUVRQDV)tVLFDV ,53) FRQHOQDFLPLHQWRDO
+                                                             TXHKDFHUHIHUHQFLDHVWDVROLFLWXGHVGHBBB
+                                                             
+                                                                )DPLOLDPRQRSDUHQWDO6, 12 
+                                                             
+                                                                     )DPLOLDQXPHURVD6,    12 
+                                                             
+                                                                     4XHGXUDQWHHOHMHUFLFLRILVFDOSUHYLRDOGHOQDFLPLHQWRHUDUHVLGHQWHILVFDOHQODV,OOHV%DOHDUV
+                                                             
+                                                                     4XHGXUDQWHHOHMHUFLFLRILVFDOSUHYLRDOGHOQDFLPLHQWR
+                                                             
+                                                                              3UHVHQWy GHFODUDFLyQ LQGLYLGXDO GHO ,53) \ OD EDVH LPSRQLEOH WRWDO VXPD GH ODV FDVLOODV  \  GH OD
+                                                                          GHFODUDFLyQGHO,53) QRVXSHUyORVHXURV,PSRUWHGHODEDVHLPSRQLEOHWRWDOBBBBBBBBBHXURV
+                                                                          
+                                                                              3UHVHQWy GHFODUDFLyQ FRQMXQWD GHO ,53) \ OD EDVH LPSRQLEOH WRWDO VXPD GH ODV FDVLOODV  \  GH OD
+                                                                          GHFODUDFLyQGHO,53) QRVXSHUyORVHXURV,PSRUWHGHODEDVHLPSRQLEOHWRWDOBBBBBBBBBHXURV
+                                                                          
+                                                                            3UHVHQWyGHFODUDFLyQLQGLYLGXDOGHO,53)WHQLHQGRODFRQGLFLyQGHIDPLOLDQXPHURVDRGHIDPLOLDPRQRSDUHQWDO
+                                                                          FRQGRVRPiVKLMRV VLQWHQHUHQFXHQWDHOQDFLGRHQHVWHHMHUFLFLR \ODEDVHLPSRQLEOHWRWDO VXPDGHODVFDVLOODV
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                                          \GHODGHFODUDFLyQGHO,53) QRVXSHUyORVHXURV,PSRUWHGHODEDVHLPSRQLEOHWRWDOBBBBBBBBB
+                                                                          HXURV
+                                                                          
+                                                                              3UHVHQWy GHFODUDFLyQ FRQMXQWD GHO ,53) WHQLHQGR OD FRQGLFLyQ GH IDPLOLD QXPHURVD R GH IDPLOLD PRQRSDUHQWDO
+                                                                          FRQGRVRPiVKLMRV VLQWHQHUHQFXHQWDHOQDFLGRHQHVWHHMHUFLFLR \ODEDVHLPSRQLEOHWRWDO VXPDGHODVFDVLOODV
+                                                                          \GHODGHFODUDFLyQGHO,53) QRVXSHUyORVHXURV,PSRUWHGHODEDVHLPSRQLEOHWRWDOBBBBBBBBB
+                                                                          HXURV
+                                                                          
+                                                                            1RSUHVHQWyGHFODUDFLyQGHO,53)
+                                                             
+                                                                 4XHQRKDSHUFLELGRRWUDVD\XGDVRSUHVWDFLRQHVS~EOLFDVFRQFHGLGDVXRWRUJDGDVSRUOD&RPXQLGDG$XWyQRPDGH ODV
+                                                             ,OOHV%DOHDUVSRUFDXVDGHHVWHQDFLPLHQWR
+                                                             
+                                                                  4XH HQ FDVR GH TXH XQD YH] SHUFLELGR HO DERQR DQWLFLSDGR VH SURGXMHUD DOJXQD FDXVD TXH VXSRQJD OD SpUGLGD GHO
+                                                             GHUHFKRDODDSOLFDFLyQGHODGHGXFFLyQRDXQDSDUWHGHOLPSRUWHGHODGHGXFFLyQHOSHUFHSWRUGHEHUHLQWHJUDUHOLPSRUWH
+                                                             SHUFLELGRRODSDUWHDODTXHQRWLHQHGHUHFKRVLHPSUHTXHQRKD\DVLGRREMHWRGHUHJXODUL]DFLyQHQODGHFODUDFLyQGHO,53)
+                                                             FRUUHVSRQGLHQWHDOHMHUFLFLRGHOQDFLPLHQWR
+                                                             
+                                                                 4XHDHIHFWRVGHLQJUHVRGHODERQRHOQ~PHURGHFXHQWDEDQFDULD ,%$1                   
+                                                                                                                                                        HVBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB\
+                                                             TXHVHFRPSURPHWHDQRGDUORGHEDMDDQWHVGHWUHVPHVHVGHVGHODIHFKDGHODVROLFLWXG
+                                                             
+                                                             $XWRUL]D D OD $JHQFLD 7ULEXWDULD GH ODV ,OOHV %DOHDUV SDUD TXH FRQVXOWH ORV GDWRV GH LGHQWLGDG GH UHVLGHQFLD ODV
+                                                             GHFODUDFLRQHV GHO LPSXHVWR VREUH OD UHQWD GH ODV SHUVRQDV ItVLFDV R HQ VX FDVR ODV LPSXWDFLRQHV ILVFDOHV \ RWURV GDWRV
+                                                             QHFHVDULRV SDUD WUDPLWDU \ UHVROYHU OD VROLFLWXG DUWtFXORV  \  GH OD 2UGHQ GHO FRQVHMHUR GH (FRQRPtD +DFLHQGD H
+                                                             ,QQRYDFLyQSRUODTXHVHDSUXHEDQORVPRGHORVGHGHFODUDFLyQ\VHUHJXODQORVSURFHGLPLHQWRVYLQFXODGRVDODDSOLFDFLyQGH
+                                                             ODGHGXFFLyQSRUQDFLPLHQWRHQODFXRWDtQWHJUDDXWRQyPLFDGHO,53) 6, 12 
+                                                                     (QFDVRGHQRDXWRUL]DUGHEHDGMXQWDUVHODVLJXLHQWHGRFXPHQWDFLyQ
+                                                                     D  /D GHFODUDFLyQ GHO ,53) GHO HMHUFLFLR DQWHULRU (Q FDVR GH TXH QR VHD REOLJDWRULR SUHVHQWDU OD GHFODUDFLyQ XQ
+                                                                     FHUWLILFDGRGHLPSXWDFLRQHVILVFDOHV\XQFHUWLILFDGRGHUHVLGHQFLDILVFDOHQHOHMHUFLFLRDQWHULRUDOGHOQDFLPLHQWRH[SHGLGR
+                                                                     SRUOD$JHQFLD(VWDWDOGH$GPLQLVWUDFLyQ7ULEXWDULD
+
+                                                                                                                                    GH
+
+                                                                          
+
+
+                                                                                                    https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                                Núm. 139
+                                                                                                                                                                                       24 de octubre de 2024
+                                                                                                                                                                             Fascículo 246 - Sec. I. - Pág. 49140
+
+
+
+
+                                                                                                                                                                                         02'(/2,%
+
+                                                                   
+
+                                                          
+                                                            E (OFHUWLILFDGRGHQDFLPLHQWRGHOGHVFHQGLHQWHTXHGpGHUHFKRDODGHGXFFLyQ
+                                                         
+                                                         $XWRUL]D D OD$JHQFLD7ULEXWDULDGH ODV ,OOHV %DOHDUV SDUD TXH ODVQRWLILFDFLRQHV\FRPXQLFDFLRQHVTXHVHGHULYHQGHHVWH
+                                                         SURFHGLPLHQWRVHKDJDQSRUYtDHOHFWUyQLFD6, 12 
+                                                         
+                                                         
+                                                                                          
+                                                         3REODFLyQ PXQLFLSLR \IHFKDBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                         )LUPD
+                                                         
+                                                         
+                                                                                             
+                                                         1RPEUH\DSHOOLGRVGHOVROLFLWDQWHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                                     
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                              ,QIRUPDFLyQEiVLFDVREUHSURWHFFLyQGHGDWRV
+                                                               5HJODPHQWR8(*HQHUDOGH3URWHFFLyQGHGDWRV5*3' 
+                                                                                                            $JHQFLD7ULEXWDULDGHODV,OOHV%DOHDUV $7,% FRQGRPLFLOLRHQODFDOOH&DQ7URQFRVR
+                                                              5HVSRQVDEOHGHOWUDWDPLHQWR
+                                                                                                            3DOPD ,OOHV%DOHDUV &RUUHRHOHFWUyQLFRDWLE#DWLEHV7HO
+
+                                                              )LQDOLGDGGHODUHFRJLGD\GHO               7UDPLWDFLyQGHSURFHGLPLHQWRVYLQFXODGRVDODDSOLFDFLyQGHODGHGXFFLyQ
+                                                              WUDWDPLHQWR                                  DXWRQyPLFDGHO,53)SRUQDFLPLHQWR
+
+                                                              %DVHMXUtGLFDGHOWUDWDPLHQWR                $UWH 5*3'
+
+                                                              'HVWLQDWDULRVGHOWUDWDPLHQWR                &RQWULEX\HQWHVVXMHWRVREOLJDGRVUHSUHVHQWDQWHVOHJDOHV\SUHVHQWDGRUHV
+
+                                                                                                            /D SHUVRQD DIHFWDGD SRU HO WUDWDPLHQWR GH GDWRV SHUVRQDOHV SXHGH HMHUFHU ORV
+                                                                                                            GHUHFKRV GH LQIRUPDFLyQ GH DFFHVR GH UHFWLILFDFLyQ GH VXSUHVLyQ GH OLPLWDFLyQ GH
+                                                                                                            SRUWDELOLGDGGHRSRVLFLyQ\GHQRLQFOXVLyQHQWUDWDPLHQWRVDXWRPDWL]DGRV HLQFOXVR
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                                                                            GH UHWLUDU HO FRQVHQWLPLHQWR HQ VX FDVR HQ ORV WpUPLQRV HVWDEOHFLGRV SRU HO 5*3' 
+                                                                                                            DQWHHOUHVSRQVDEOHGHOWUDWDPLHQWRPHGLDQWHHOSURFHGLPLHQWR©6ROLFLWXGGHHMHUFLFLR
+                                                              (MHUFLFLRGHORVGHUHFKRV
+                                                                                                            GH GHUHFKRV HQ PDWHULD GH SURWHFFLyQ GH GDWRV SHUVRQDOHVª HQODFH
+                                                                                                            KWWSVZZZDWLEHVHVSURWHFFLRQGHGDWRV 
+                                                                                                            &RQ SRVWHULRULGDG D OD UHVSXHVWD GHO UHVSRQVDEOH R D TXH QR H[LVWD UHVSXHVWD HQ HO
+                                                                                                            SOD]R GH XQ PHV SXHGH SUHVHQWDU OD ©5HFODPDFLyQ GH WXWHOD GH GHUHFKRVª DQWH OD
+                                                                                                            $JHQFLD(VSDxRODGH3URWHFFLyQGH'DWRV $(3' 
+
+                                                              3OD]RGHFRQVHUYDFLyQGHORVGDWRV           /RVGDWRVSHUPDQHFHUiQHQODVEDVHVGHGDWRVGHOD$7,%SDUDSRGHUGDUFREHUWXUDD
+                                                                                                            ORV SRVLEOHV UHTXHULPLHQWRV R UHFODPDFLRQHV UHODFLRQDGDV FRQ ORV SURFHGLPLHQWRV
+                                                                                                            YLQFXODGRVDODDSOLFDFLyQGHODGHGXFFLyQDXWRQyPLFDGHO,53)SRUQDFLPLHQWR
+
+                                                                                                            /D 'HOHJDFLyQ GH 3URWHFFLyQ GH GDWRV GH OD $7,% WLHQH OD VHGH HQ FDOOH GH &DQ
+                                                              'HOHJDFLyQGH3URWHFFLyQGHGDWRV            7URQFRVR   3DOPD ,OOHV %DOHDUV  'LUHFFLyQ HOHFWUyQLFD GH FRQWDFWR
+                                                                                                            GSG#DWLEHV
+
+                                                                                                            3XHGH FRQVXOWDU OD LQIRUPDFLyQ DGLFLRQDO \ GHWDOODGD VREUH SURWHFFLyQ GH GDWRV HQ
+                                                              ,QIRUPDFLyQDGLFLRQDO
+                                                                                                            KWWSVZZZDWLEHVHVSURWHFFLRQGHGDWRV
+                                                                   
+
+
+
+
+                                                                                                                               GH
+
+                                                                   
+
+
+                                                                                               https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                            Núm. 139
+                                                                                                                                                                                    24 de octubre de 2024
+                                                                                                                                                                          Fascículo 246 - Sec. I. - Pág. 49141
+
+
+
+
+                                                         
+                                                                                                                                                                                       02'(/2,%
+                                                         
+                                                         
+                                                                                                                                                                               ',5$7,%$
+                                                         
+                                                                            
+
+                                                                                 5(,17(*52'(/$%212$17,&,3$'2'(/$'('8&&,Ï1$8721Ï0,&$
+                                                                                                  '(/,53)3251$&,0,(172
+                                                                                                              
+                                                                 
+                                                                     ,'(17,),&$&,Ï1'(/&2175,%8<(17(
+                                                                     $SHOOLGRV\QRPEUH                                                                                 1,)
+                                                                                                                                                                        
+
+                                                                     7HOpIRQR                                                  &RUUHRHOHFWUyQLFR
+                                                                                                                               
+
+                                                                     3DUHQWHVFR
+                                                                       0DGUH
+                                                                       3DGUH
+                                                                 
+                                                                     ,'(17,),&$&,Ï1'(/5(&,e11$&,'2
+                                                                     $SHOOLGRV\QRPEUH
+                                                                     
+                                                                 
+                                                                  /XJDUGHQDFLPLHQWR                                          )HFKDGHQDFLPLHQWR
+                                                                                                                               
+                                                                 
+                                                                 
+                                                                     5(35(6(17$17(
+                                                                     $SHOOLGRV\QRPEUH                                                                                 1,)
+                                                                                                                                                                        
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                                     7HOpIRQR                                                  &RUUHRHOHFWUyQLFR
+                                                                                                                               
+
+                                                                 
+                                                                  '20,&,/,2$()(&726'(127,),&$&,Ï1
+                                                                 9tDS~EOLFD                                              1~P            (VFDOHUDSLVRSXHUWD
+                                                                                                                                          
+
+                                                                 3REODFLyQ PXQLFLSLR                                                                           &yGLJRSRVWDO
+                                                                                                                                                                 
+
+                                                                 
+                                                                 
+                                                                  ,'(17,),&$&,Ï1'(/$%212$17,&,3$'23(5&,%,'2
+                                                                 )HFKDGHODVROLFLWXGTXHGLROXJDUDODERQR
+                                                                 
+
+                                                                 ,PSRUWHSHUFLELGR                )HFKDGHOLQJUHVR
+                                                                                                  
+
+                                                             
+
+
+
+
+                                                                                                                               GH   
+                                                                            
+
+
+                                                                                                https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                             Núm. 139
+                                                                                                                                                                                     24 de octubre de 2024
+                                                                                                                                                                             Fascículo 246 - Sec. I. - Pág. 49142
+
+
+
+
+                                                         
+                                                                                                                                                                                          02'(/2,%
+                                                         
+                                                         
+                                                         
+
+                                                             
+                                                                 &$86$'(/$3e5','$'(/'(5(&+2$/$%212
+                                                             
+                                                                 (OFRQWULEX\HQWHHQFDOLGDGGHEHQHILFLDULRGHODGHGXFFLyQDODTXHKDFHUHIHUHQFLDHODUWtFXORWHUGHO7H[WRUHIXQGLGRGH
+                                                                 ODV GLVSRVLFLRQHV OHJDOHV GH OD &RPXQLGDG $XWyQRPD GH ODV ,OOHV %DOHDUV HQ PDWHULD GH WULEXWRV FHGLGRV SRU HO (VWDGR
+                                                                 DSUREDGRSRUHO'HFUHWR/HJLVODWLYRGHGHMXQLR
+                                                                 
+                                                                 '(&/$5$5(63216$%/(0(17(
+                                                                 
+                                                                    4XHKDSHUFLELGRHODERQRDQWLFLSDGRFRUUHVSRQGLHQWHDODGHGXFFLyQSRUHOQDFLPLHQWRLGHQWLILFDGRHQHVWDGHFODUDFLyQ
+                                                                 
+                                                                    4XHXQDYH]SHUFLELGRHODERQRVHKDQSURGXFLGRXQDRPiVGHODVFDXVDVTXHVHLQGLFDQDFRQWLQXDFLyQ
+                                                                     
+                                                                        6XSHUDFLyQGHORVOtPLWHVGHEDVHLPSRQLEOHWRWDO
+                                                                     
+                                                                        3pUGLGDHQODIHFKDGHGHYHQJRGHOLPSXHVWRGHOGHUHFKRDDSOLFDUHOPtQLPRSRUGHVFHQGLHQWHDOTXHVHUHILHUHHO
+                                                                     DUWtFXORGHOD/H\GHGHQRYLHPEUHGHO,PSXHVWRVREUHOD5HQWDGHODV3HUVRQDV)tVLFDV ,53) 
+                                                                          
+                                                                        &DPELRGHUHVLGHQFLDILVFDOIXHUDGHODV,OOHV%DOHDUVFRQHIHFWRVHQHOHMHUFLFLRDOTXHFRUUHVSRQGHODDSOLFDFLyQGH
+                                                                     ODGHGXFFLyQSRUQDFLPLHQWR
+                                                                     
+                                                                        )DOWDGHSUHVHQWDFLyQGHGHFODUDFLyQGHO,53)FRUUHVSRQGLHQWHDOHMHUFLFLRGHDSOLFDFLyQGHODGHGXFFLyQSRUORWDQWR
+                                                                     QRVHSURGXFHODUHJXODUL]DFLyQDODTXHVHUHILHUHHODUWtFXORWHUGHO7H[WRUHIXQGLGRGHODVGLVSRVLFLRQHVOHJDOHVGHOD
+                                                                     &RPXQLGDG$XWyQRPDGHODV,OOHV%DOHDUVHQPDWHULDGHWULEXWRVFHGLGRVSRUHO(VWDGR
+                                                                     
+                                                                        3pUGLGDGHOGHUHFKRDODGHGXFFLyQSRUSHUFHSFLyQGHRWUDVD\XGDVRSUHVWDFLRQHVS~EOLFDVFRQFHGLGDVXRWRUJDGDV
+                                                                     SRUOD&RPXQLGDG$XWyQRPDGH ODV,OOHV %DOHDUVSRUFDXVDGHQDFLPLHQWR GHYHQJDGDHQHOPLVPRHMHUFLFLRTXHHO GH
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                                     DSOLFDFLyQGHODGHGXFFLyQ
+                                                                     
+                                                                        2WUDFLUFXQVWDQFLDGLVWLQWDDODVDQWHULRUHVBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+                                                                 
+                                                                     4XHHOORKDRULJLQDGRODSpUGLGDGHOGHUHFKRDODSHUFHSFLyQGHOLPSRUWHGHHVWDGHGXFFLyQ
+                                                                 
+                                                                    4XH HO DERQR DQWLFLSDGR GH HVWD GHGXFFLyQ QR KD VLGR REMHWR GH UHJXODUL]DFLyQ HQ OD GHFODUDFLyQ GHO ,53)
+                                                                 FRUUHVSRQGLHQWHDOHMHUFLFLRILVFDOGHOQDFLPLHQWR
+                                                                 
+                                                                  /,48,'$&,Ï1
+                                                                 5HVXOWDGRGHODUHJXODUL]DFLyQ
+                                                                 
+
+                                                                 ,PSRUWHDLQJUHVDU
+
+
+                                                             
+                                                                 
+                                                                 3REODFLyQ PXQLFLSLR \IHFKDBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                         )LUPD
+                                                                 
+                                                                 
+                                                                 
+                                                                 1RPEUH\DSHOOLGRVGHOVROLFLWDQWHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                                
+                                                                 
+                                                                 
+                                                                          
+
+
+
+
+                                                                                                                                  GH   
+                                                                          
+
+
+                                                                                                   https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                               Núm. 139
+                                                                                                                                                                                      24 de octubre de 2024
+                                                                                                                                                                            Fascículo 246 - Sec. I. - Pág. 49143
+
+
+
+
+                                                         
+
+
+                                                         
+                                                         
+                                                         
+
+
+
+                                                             ,QIRUPDFLyQEiVLFDVREUHSURWHFFLyQGHGDWRV
+                                                              5HJODPHQWR8(*HQHUDOGH3URWHFFLyQGHGDWRV5*3' 
+                                                                                                           $JHQFLD7ULEXWDULDGHODV,OOHV%DOHDUV $7,% FRQGRPLFLOLRHQODFDOOH&DQ7URQFRVR
+                                                             5HVSRQVDEOHGHOWUDWDPLHQWR
+                                                                                                           3DOPD ,OOHV%DOHDUV &RUUHRHOHFWUyQLFRDWLE#DWLEHV7HO
+
+                                                             )LQDOLGDGGHODUHFRJLGD\GHO               7UDPLWDFLyQGHSURFHGLPLHQWRVYLQFXODGRVDODDSOLFDFLyQGHODGHGXFFLyQ
+                                                             WUDWDPLHQWR                                  DXWRQyPLFDGHO,53)SRUQDFLPLHQWR
+
+                                                             %DVHMXUtGLFDGHOWUDWDPLHQWR                $UWH 5*3'
+
+                                                             'HVWLQDWDULRVGHOWUDWDPLHQWR                &RQWULEX\HQWHVVXMHWRVREOLJDGRVUHSUHVHQWDQWHVOHJDOHV\SUHVHQWDGRUHV
+
+                                                                                                           /D SHUVRQD DIHFWDGD SRU HO WUDWDPLHQWR GH GDWRV SHUVRQDOHV SXHGH HMHUFHU ORV
+                                                                                                           GHUHFKRV GH LQIRUPDFLyQ GH DFFHVR GH UHFWLILFDFLyQ GH VXSUHVLyQ GH OLPLWDFLyQ GH
+                                                                                                           SRUWDELOLGDGGHRSRVLFLyQ\GHQRLQFOXVLyQHQWUDWDPLHQWRVDXWRPDWL]DGRV HLQFOXVR
+                                                                                                           GH UHWLUDU HO FRQVHQWLPLHQWR HQ VX FDVR HQ ORV WpUPLQRV HVWDEOHFLGRV SRU HO 5*3' 
+                                                                                                           DQWHHOUHVSRQVDEOHGHOWUDWDPLHQWRPHGLDQWHHOSURFHGLPLHQWR©6ROLFLWXGGHHMHUFLFLR
+                                                             (MHUFLFLRGHORVGHUHFKRV
+                                                                                                           GH GHUHFKRV HQ PDWHULD GH SURWHFFLyQ GH GDWRV SHUVRQDOHVª HQODFH
+                                                                                                           KWWSVZZZDWLEHVHVSURWHFFLRQGHGDWRV 
+                                                                                                           &RQ SRVWHULRULGDG D OD UHVSXHVWD GHO UHVSRQVDEOH R D TXH QR H[LVWD UHVSXHVWD HQ HO
+                                                                                                           SOD]R GH XQ PHV SXHGH SUHVHQWDU OD ©5HFODPDFLyQ GH WXWHOD GH GHUHFKRVª DQWH OD
+                                                                                                           $JHQFLD(VSDxRODGH3URWHFFLyQGH'DWRV $(3' 
+
+                                                             3OD]RGHFRQVHUYDFLyQGHORVGDWRV           /RVGDWRVSHUPDQHFHUiQHQODVEDVHVGHGDWRVGHOD$7,%SDUDSRGHUGDUFREHUWXUDD
+                                                                                                           ORV SRVLEOHV UHTXHULPLHQWRV R UHFODPDFLRQHV UHODFLRQDGDV FRQ ORV SURFHGLPLHQWRV
+                                                                                                           YLQFXODGRVDODDSOLFDFLyQGHODGHGXFFLyQDXWRQyPLFDGHO,53)SRUQDFLPLHQWR
+
+                                                                                                           /D 'HOHJDFLyQ GH 3URWHFFLyQ GH GDWRV GH OD $7,% WLHQH OD VHGH HQ FDOOH GH &DQ
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                             'HOHJDFLyQGH3URWHFFLyQGHGDWRV            7URQFRVR   3DOPD ,OOHV %DOHDUV  'LUHFFLyQ HOHFWUyQLFD GH FRQWDFWR
+                                                                                                           GSG#DWLEHV
+
+                                                                                                           3XHGH FRQVXOWDU OD LQIRUPDFLyQ DGLFLRQDO \ GHWDOODGD VREUH SURWHFFLyQ GH GDWRV HQ
+                                                             ,QIRUPDFLyQDGLFLRQDO
+                                                                                                           KWWSVZZZDWLEHVHVSURWHFFLRQGHGDWRV
+
+
+
+
+                                                                                                                              GH   
+                                                                  
+
+
+                                                                                              https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                            Núm. 139
+                                                                                                                                                                                    24 de octubre de 2024
+                                                                                                                                                                          Fascículo 246 - Sec. I. - Pág. 49144
+
+
+
+
+                                                                                                                                                                                      02'(/2,%
+
+
+
+                                                                                                                                                                              ',5$7,%$
+                                                         
+
+                                                             
+                                                                   62/,&,78''(/$%212'(/$'('8&&,Ï1$8721Ï0,&$'(/,53)3251$&,0,(172(1
+                                                                              &$62'(,168),&,(1&,$'(/$&827$Ë17(*5$$8721Ï0,&$
+                                                                        
+                                                                        
+                                                                 02'$/,'$''('(&/$5$&,Ï1'(,53)35(6(17$'$
+                                                                   ,QGLYLGXDO
+                                                                    &RQMXQWD>HQHVWHFDVRGHEHQFXPSOLPHQWDUVHORVGDWRVLGHQWLILFDWLYRVGHORVGRVGHFODUDQWHVSURJHQLWRUHVVDOYRTXH
+                                                                 VHWUDWHGHIDPLOLDPRQRSDUHQWDO@
+                                                                         
+                                                                 ,'(17,),&$&,Ï1'(/62/,&,7$17(62/,&,7$17(
+                                                                 $SHOOLGRV\QRPEUH                                                                                     1,)
+                                                                                                                                                                        
+
+                                                                 7HOpIRQR                                                      &RUUHRHOHFWUyQLFR
+                                                                                                                               
+
+                                                                 3DUHQWHVFR
+                                                                   0DGUH
+                                                                   3DGUH
+                                                             
+                                                                 ,'(17,),&$&,Ï1'(/2752352*(1,725
+                                                                 $SHOOLGRV\QRPEUH                                                                                     1,)
+                                                                                                                                                                        
+                                                                 3DUHQWHVFR
+                                                                   0DGUH
+                                                                   3DGUH
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                             
+                                                                 ,'(17,),&$&,Ï1'(/5(&,e11$&,'2&21'(5(&+2'('('8&&,Ï1
+                                                                 $SHOOLGRV\QRPEUH
+                                                                 
+
+                                                                 /XJDUGHQDFLPLHQWR                                           )HFKDGHQDFLPLHQWR
+                                                                                                                               
+
+                                                             
+                                                                 5(35(6(17$17(
+                                                                 $SHOOLGRV\QRPEUH                                                                                     1,)
+                                                                                                                                                                        
+
+                                                                 7HOpIRQR                                                      &RUUHRHOHFWUyQLFR
+                                                                                                                               
+
+                                                             
+                                                              '20,&,/,2$()(&726'(127,),&$&,Ï1
+                                                             9tDS~EOLFD                                                 1~P            (VFDOHUDSLVRSXHUWD
+                                                                                                                                          
+
+                                                             3REODFLyQ PXQLFLSLR                                                                                &yGLJRSRVWDO
+                                                                                                                                                                 
+
+                                                             
+                                                             
+
+
+
+
+                                                                                                                               GH   
+                                                                        
+
+
+                                                                                                https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                           Núm. 139
+                                                                                                                                                                                   24 de octubre de 2024
+                                                                                                                                                                         Fascículo 246 - Sec. I. - Pág. 49145
+
+
+
+
+                                                                                                                                                                                     02'(/2,%
+
+
+
+                                                                 
+                                                             
+                                                             '(&/$5$&,Ï1
+                                                         
+                                                             (OFRQWULEX\HQWHHQFDOLGDGGHEHQHILFLDULRGHODGHGXFFLyQDODTXHKDFHUHIHUHQFLDHODUWtFXORWHUGHO7H[WRUHIXQGLGRGH
+                                                             ODV GLVSRVLFLRQHV OHJDOHV GH OD &RPXQLGDG $XWyQRPD GH ODV ,OOHV %DOHDUV HQ PDWHULD GH WULEXWRV FHGLGRV SRU HO (VWDGR
+                                                             DSUREDGRSRUHO'HFUHWR/HJLVODWLYRGHGHMXQLR
+                                                             
+                                                             '(&/$5$5(63216$%/(0(17(
+                                                             
+                                                                4XHHOQ~PHURGHKLMRVTXHOHGDQGHUHFKRDODDSOLFDFLyQGHOPtQLPRSHUVRQDO\IDPLOLDUDOTXHVHUHILHUHHODUWtFXOR
+                                                             GHOD/H\GHGHQRYLHPEUHGHO,PSXHVWRVREUHOD5HQWDGHODV3HUVRQDV)tVLFDV ,53) FRQHOQDFLPLHQWRDO
+                                                             TXH KDFH UHIHUHQFLD HVWD VROLFLWXG HV GHBBB \ SDUD HO RWUR SURJHQLWRU HV GH BBB >VROR GHEH FXPSOLPHQWDUVH HQ FDVR GH
+                                                             GHFODUDFLyQFRQMXQWD@
+                                                             
+                                                                )DPLOLDPRQRSDUHQWDO6, 12 
+                                                             
+                                                                 )DPLOLDQXPHURVD6,    12 
+                                                             
+                                                                 4XHGXUDQWHHOHMHUFLFLRILVFDOHQHOTXHVHSURGXMRHOQDFLPLHQWRHUDUHVLGHQWHILVFDOHQODV,OOHV%DOHDUV
+                                                             
+                                                                 4XHHQODGHFODUDFLyQGHO,53)FRUUHVSRQGLHQWHDOHMHUFLFLRGHOQDFLPLHQWR
+                                                             
+                                                                        3UHVHQWyGHFODUDFLyQLQGLYLGXDO\ODEDVHLPSRQLEOHWRWDO VXPDGHODVFDVLOODV\GHODGHFODUDFLyQGHO
+                                                                      ,53) QRVXSHUyORVHXURV,PSRUWHGHODEDVHLPSRQLEOHWRWDOBBBBBBBBBHXURV
+                                                                      
+                                                                        3UHVHQWyGHFODUDFLyQFRQMXQWD\ODEDVH LPSRQLEOHWRWDO VXPDGHODVFDVLOODV\GH OD GHFODUDFLyQGHO
+                                                                      ,53) QRVXSHUyORVHXURV,PSRUWHGHODEDVHLPSRQLEOHWRWDOBBBBBBBBBHXURV
+                                                                      
+                                                                        3UHVHQWyGHFODUDFLyQLQGLYLGXDOWHQLHQGRODFRQGLFLyQGHIDPLOLDQXPHURVDRGHIDPLOLDPRQRSDUHQWDOFRQGRVR
+                                                                      PiVKLMRV VLQWHQHUHQFXHQWDHOQDFLGRHQHVWHHMHUFLFLR \ODEDVHLPSRQLEOHWRWDO VXPDGHODVFDVLOODV\
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                                      GHODGHFODUDFLyQGHO,53) QRVXSHUyORVHXURV,PSRUWHGHODEDVHLPSRQLEOHWRWDOBBBBBBBBBHXURV
+                                                                      
+                                                                        3UHVHQWyGHFODUDFLyQFRQMXQWDWHQLHQGRODFRQGLFLyQGHIDPLOLDQXPHURVDRGHIDPLOLDPRQRSDUHQWDOFRQGRVR
+                                                                      PiVKLMRV VLQWHQHUHQFXHQWDHOQDFLGRHQHVWHHMHUFLFLR \ODEDVHLPSRQLEOHWRWDO VXPDGHODVFDVLOODV\
+                                                                      GHODGHFODUDFLyQGHO,53) QRVXSHUyORVHXURV,PSRUWHGHODEDVHLPSRQLEOHWRWDOBBBBBBBBBHXURV
+                                                             
+                                                                  4XH OD FXRWD tQWHJUD DXWRQyPLFD GH OD GHFODUDFLyQ GHO ,53) FRUUHVSRQGLHQWH DO HMHUFLFLR GHO QDFLPLHQWR IXH GH
+                                                             BBBBBBBBBBBHXURV
+                                                             
+                                                                 4XHQRKDSHUFLELGRRWUDVD\XGDVRSUHVWDFLRQHVS~EOLFDVFRQFHGLGDVXRWRUJDGDVSRUOD&RPXQLGDG$XWyQRPDGHODV
+                                                             ,OOHV%DOHDUVSRUFDXVDGHHVWHQDFLPLHQWR
+                                                             
+                                                                4XHHQFDVRGH TXHXQDYH]SHUFLELGR HODERQR VHSURGXMHUD DOJXQDFDXVDTXHVXSRQJDODSpUGLGDGHO GHUHFKR D OD
+                                                             DSOLFDFLyQGHODGHGXFFLyQRDXQDSDUWHGHOLPSRUWHGHODGHGXFFLyQHOSHUFHSWRUUHLQWHJUDUiHOLPSRUWHSHUFLELGRRODSDUWH
+                                                             DODTXHQRWLHQHGHUHFKR
+                                                             
+                                                                4XHDHIHFWRVGHLQJUHVRGHODERQRHOQ~PHURGHFXHQWDEDQFDULD ,%$1 HVBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB\
+                                                             TXHVHFRPSURPHWHDQRGDUORGHEDMDDQWHVGHWUHVPHVHVGHVGHODIHFKDGHODVROLFLWXG
+                                                             
+                                                             $XWRUL]D D OD $JHQFLD 7ULEXWDULD GH ODV ,OOHV %DOHDUV SDUD TXH FRQVXOWH ORV GDWRV GH LGHQWLGDG GH UHVLGHQFLD ODV
+                                                             GHFODUDFLRQHV GHO LPSXHVWR VREUH OD UHQWD GH ODV SHUVRQDV ItVLFDV R HQ VX FDVR ODV LPSXWDFLRQHV ILVFDOHV \ RWURV GDWRV
+                                                             QHFHVDULRV SDUD WUDPLWDU \ UHVROYHU OD VROLFLWXG DUWtFXORV  \  GH OD 2UGHQ GHO FRQVHMHUR GH (FRQRPtD +DFLHQGD H
+                                                             ,QQRYDFLyQSRUODTXHVHDSUXHEDQORVPRGHORVGHGHFODUDFLyQ\VHUHJXODQORVSURFHGLPLHQWRVYLQFXODGRVDODDSOLFDFLyQGH
+                                                             ODGHGXFFLyQSRUQDFLPLHQWRHQODFXRWDtQWHJUDDXWRQyPLFDGHO,53) 6, 12 
+                                                                 (QFDVRGHQRDXWRUL]DUGHEHDGMXQWDUVHODVLJXLHQWHGRFXPHQWDFLyQ
+                                                                 D /DGHFODUDFLyQGHO,53)GHOHMHUFLFLRHQHOTXHVHSURGXFHODLQVXILFLHQFLDGHODFXRWDtQWHJUDDXWRQyPLFD
+                                                                 E (OFHUWLILFDGRGHQDFLPLHQWRGHOGHVFHQGLHQWHTXHGpGHUHFKRDODGHGXFFLyQ
+                                                                      
+                                                                      
+                                                                                                                                GH   
+                                                                      
+
+
+                                                                                                https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                              Núm. 139
+                                                                                                                                                                                     24 de octubre de 2024
+                                                                                                                                                                           Fascículo 246 - Sec. I. - Pág. 49146
+
+
+
+
+                                                                                                                                                                                       02'(/2,%
+
+
+
+                                                            
+                                                                 
+                                                         $XWRUL]D D OD$JHQFLD7ULEXWDULDGH ODV ,OOHV %DOHDUV SDUD TXHODVQRWLILFDFLRQHV\FRPXQLFDFLRQHVTXHVHGHULYHQ GHHVWH
+                                                         SURFHGLPLHQWRVHKDJDQSRUYtDHOHFWUyQLFD6, 12 
+                                                         
+                                                         
+                                                         3REODFLyQ PXQLFLSLR \IHFKDBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                        )LUPD
+                                                         
+                                                         
+                                                                                             
+                                                         1RPEUH\DSHOOLGRVGHOVROLFLWDQWHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                                    
+                                                           
+                                                                 
+
+
+
+                                                            ,QIRUPDFLyQEiVLFDVREUHSURWHFFLyQGHGDWRV
+                                                             5HJODPHQWR8(*HQHUDOGH3URWHFFLyQGHGDWRV5*3' 
+                                                                                                          $JHQFLD7ULEXWDULDGHODV,OOHV%DOHDUV $7,% FRQGRPLFLOLRHQODFDOOH&DQ7URQFRVR
+                                                            5HVSRQVDEOHGHOWUDWDPLHQWR
+                                                                                                          3DOPD ,OOHV%DOHDUV &RUUHRHOHFWUyQLFRDWLE#DWLEHV7HO
+
+                                                            )LQDOLGDGGHODUHFRJLGD\GHO               7UDPLWDFLyQGHSURFHGLPLHQWRVYLQFXODGRVDODDSOLFDFLyQGHODGHGXFFLyQ
+                                                            WUDWDPLHQWR                                  DXWRQyPLFDGHO,53)SRUQDFLPLHQWR
+
+                                                            %DVHMXUtGLFDGHOWUDWDPLHQWR                $UWH 5*3'
+
+                                                            'HVWLQDWDULRVGHOWUDWDPLHQWR                &RQWULEX\HQWHVVXMHWRVREOLJDGRVUHSUHVHQWDQWHVOHJDOHV\SUHVHQWDGRUHV
+
+                                                                                                          /D SHUVRQD DIHFWDGD SRU HO WUDWDPLHQWR GH GDWRV SHUVRQDOHV SXHGH HMHUFHU ORV
+                                                                                                          GHUHFKRV GH LQIRUPDFLyQ GH DFFHVR GH UHFWLILFDFLyQ GH VXSUHVLyQ GH OLPLWDFLyQ GH
+                                                                                                          SRUWDELOLGDGGHRSRVLFLyQ\GHQRLQFOXVLyQHQWUDWDPLHQWRVDXWRPDWL]DGRV HLQFOXVR
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                                                                          GH UHWLUDU HO FRQVHQWLPLHQWR HQ VX FDVR HQ ORV WpUPLQRV HVWDEOHFLGRV SRU HO 5*3' 
+                                                                                                          DQWHHOUHVSRQVDEOHGHOWUDWDPLHQWRPHGLDQWHHOSURFHGLPLHQWR©6ROLFLWXGGHHMHUFLFLR
+                                                            (MHUFLFLRGHORVGHUHFKRV
+                                                                                                          GH GHUHFKRV HQ PDWHULD GH SURWHFFLyQ GH GDWRV SHUVRQDOHVª HQODFH
+                                                                                                          KWWSVZZZDWLEHVHVSURWHFFLRQGHGDWRV 
+                                                                                                          &RQ SRVWHULRULGDG D OD UHVSXHVWD GHO UHVSRQVDEOH R D TXH QR H[LVWD UHVSXHVWD HQ HO
+                                                                                                          SOD]R GH XQ PHV SXHGH SUHVHQWDU OD ©5HFODPDFLyQ GH WXWHOD GH GHUHFKRVª DQWH OD
+                                                                                                          $JHQFLD(VSDxRODGH3URWHFFLyQGH'DWRV $(3' 
+
+                                                            3OD]RGHFRQVHUYDFLyQGHORVGDWRV           /RVGDWRVSHUPDQHFHUiQHQODVEDVHVGHGDWRVGHOD$7,%SDUDSRGHUGDUFREHUWXUDD
+                                                                                                          ORV SRVLEOHV UHTXHULPLHQWRV R UHFODPDFLRQHV UHODFLRQDGDV FRQ ORV SURFHGLPLHQWRV
+                                                                                                          YLQFXODGRVDODDSOLFDFLyQGHODGHGXFFLyQDXWRQyPLFDGHO,53)SRUQDFLPLHQWR
+
+                                                                                                          /D 'HOHJDFLyQ GH 3URWHFFLyQ GH GDWRV GH OD $7,% WLHQH OD VHGH HQ FDOOH GH &DQ
+                                                            'HOHJDFLyQGH3URWHFFLyQGHGDWRV            7URQFRVR   3DOPD ,OOHV %DOHDUV  'LUHFFLyQ HOHFWUyQLFD GH FRQWDFWR
+                                                                                                          GSG#DWLEHV
+
+                                                                                                          3XHGH FRQVXOWDU OD LQIRUPDFLyQ DGLFLRQDO \ GHWDOODGD VREUH SURWHFFLyQ GH GDWRV HQ
+                                                            ,QIRUPDFLyQDGLFLRQDO
+                                                                                                          KWWSVZZZDWLEHVHVSURWHFFLRQGHGDWRV
+
+
+
+
+                                                                                                                             GH   
+                                                                 
+
+
+                                                                                             https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                     Núm. 139
+                                                                                                                                                                             24 de octubre de 2024
+                                                                                                                                                                   Fascículo 246 - Sec. I. - Pág. 49147
+
+
+
+
+                                                                    
+                                                                                                                                                                                02'(/2,%
+                                                                    
+                                                                    
+                                                                                                                                                                         ',5$7,%$
+                                                                    
+
+                                                                          5(,17(*52'(/$%212'(/$'('8&&,Ï1$8721Ï0,&$'(/,53)3251$&,0,(172
+                                                                              3(5&,%,'2(1&$62'(,168),&,(1&,$'(/$&827$Ë17(*5$$8721Ñ0,&$
+                                                                    
+                                                             02'$/,'$''('(&/$5$&,Ï1'(,53)35(6(17$'$
+                                                               ,QGLYLGXDO
+                                                                &RQMXQWD>HQ HVWHFDVRGHEHQFXPSOLPHQWDUVH ORVGDWRV LGHQWLILFDWLYRVGHORVGRVGHFODUDQWHVVDOYR TXHVHWUDWHGH
+                                                             IDPLOLDPRQRSDUHQWDO@
+                                                                     
+                                                             ,'(17,),&$&,Ï1'(/62/,&,7$17(35,1&,3$/
+                                                             $SHOOLGRV\QRPEUH                                                                                  1,)
+                                                                                                                                                                 
+
+                                                             7HOpIRQR                                                      &RUUHRHOHFWUyQLFR
+                                                                                                                           
+
+                                                             3DUHQWHVFR
+                                                               0DGUH
+                                                               3DGUH
+                                                         
+                                                             ,'(17,),&$&,Ï1'(/2752352*(1,725
+                                                             $SHOOLGRV\QRPEUH                                                                                 1,)
+                                                                                                                                                                 
+                                                             3DUHQWHVFR
+                                                               0DGUH
+                                                               3DGUH
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                         
+                                                             ,'(17,),&$&,Ï1'(/5(&,e11$&,'2&21'(5(&+2'('('8&&,Ï1
+                                                             $SHOOLGRV\QRPEUH
+                                                             
+
+                                                             /XJDUGHQDFLPLHQWR                                           )HFKDGHQDFLPLHQWR
+                                                                                                                           
+
+                                                         
+                                                             5(35(6(17$17(
+                                                             $SHOOLGRV\QRPEUH                                                                                  1,)
+                                                                                                                                                                 
+
+                                                             7HOpIRQR                                                      &RUUHRHOHFWUyQLFR
+                                                                                                                           
+
+                                                         
+                                                          '20,&,/,2$()(&726'(127,),&$&,Ï1
+                                                         9tDS~EOLFD                                                 1~P         (VFDOHUDSLVRSXHUWD
+                                                                                                                                    
+
+                                                         3REODFLyQ PXQLFLSLR                                                                             &yGLJRSRVWDO
+                                                                                                                                                          
+
+                                                         
+                                                         ,'(17,),&$&,Ï1'(/$%212$17,&,3$'23(5&,%,'2
+                                                         )HFKDGHODVROLFLWXGTXHGLROXJDUDODERQR
+                                                         
+
+                                                         ,PSRUWHSHUFLELGR                   )HFKDGHOLQJUHVR
+
+
+                                                                                                                           GH
+
+                                                                    
+
+
+                                                                                            https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                                 Núm. 139
+                                                                                                                                                                                         24 de octubre de 2024
+                                                                                                                                                                                 Fascículo 246 - Sec. I. - Pág. 49148
+
+
+
+
+                                                                      
+                                                                                                                                                                                            02'(/2,%
+                                                                      
+                                                                      
+
+                                                                      
+                                                             &$86$'(/$3e5','$'(/'(5(&+2$/$%212
+                                                         
+                                                             (O VROLFLWDQWH HQ FDOLGDG GH EHQHILFLDULR GH OD GHGXFFLyQ D OD TXH VH UHILHUH HO DUWtFXOR  WHU GHO 7H[WR UHIXQGLGR GH ODV
+                                                             GLVSRVLFLRQHV OHJDOHV GH OD &RPXQLGDG $XWyQRPD GH ODV ,OOHV %DOHDUV HQ PDWHULD GH WULEXWRV FHGLGRV SRU HO (VWDGR
+                                                             DSUREDGRSRUHO'HFUHWR/HJLVODWLYRGHGHMXQLR
+                                                             
+                                                             '(&/$5$5(63216$%/(0(17(
+                                                             
+                                                                4XHKDSHUFLELGRHODERQRDQWLFLSDGRFRUUHVSRQGLHQWHDODGHGXFFLyQSRUHOQDFLPLHQWRLGHQWLILFDGRHQHVWDGHFODUDFLyQ
+                                                             
+                                                                4XHXQDYH]SHUFLELGRHODERQRVHKDQSURGXFLGRXQDRPiVGHODVFDXVDVTXHVHLQGLFDQDFRQWLQXDFLyQ
+                                                                 
+                                                                      3pUGLGDHQODIHFKDGHGHYHQJRGHOLPSXHVWRGHOGHUHFKRDDSOLFDUHOPtQLPRSRUGHVFHQGLHQWHDTXHVHUHILHUHHO
+                                                                        DUWtFXORGHOD/H\GHGHQRYLHPEUHGHO,PSXHVWRVREUHOD5HQWDGHODVSHUVRQDVItVLFDV ,53) 
+                                                                   
+                                                                      6XSHUDFLyQGHORVOtPLWHVGHODEDVHLPSRQLEOHWRWDOGHO,53)
+                                                                   
+                                                                      &DPELRGHUHVLGHQFLDILVFDOIXHUDGHODV,OOHV%DOHDUVFRQHIHFWRVHQHOHMHUFLFLRDOTXHFRUUHVSRQGHODDSOLFDFLyQGH
+                                                                        ODGHGXFFLyQSRUQDFLPLHQWR
+                                                                   
+                                                                       5HFWLILFDFLyQ GH OD GHFODUDFLyQ R UHJXODUL]DFLyQ GHULYDGD GH XQ SURFHGLPLHQWR WULEXWDULR LQLFLDGR SRU OD $JHQFLD
+                                                                        (VWDWDO GH $GPLQLVWUDFLyQ 7ULEXWDULD TXH DIHFWD D OD FXDQWLILFDFLyQ R DSOLFDFLyQ GH OD GHGXFFLyQ \ QR HV REMHWR GH
+                                                                        UHJXODUL]DFLyQSRUpVWD
+                                                                   
+                                                                      3pUGLGDGHOGHUHFKRDODGHGXFFLyQSRUSHUFHSFLyQGHRWUDVD\XGDVRSUHVWDFLRQHVS~EOLFDVFRQFHGLGDVXRWRUJDGDV
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                                        SRUOD&RPXQLGDG$XWyQRPDGHODV,OOHV%DOHDUVSRUFDXVDGHQDFLPLHQWRGHYHQJDGDHQHOPLVPRHMHUFLFLRTXHHO
+                                                                        GHDSOLFDFLyQGHODGHGXFFLyQ
+                                                                   
+                                                                      2WUDFLUFXQVWDQFLDGLVWLQWDDODVDQWHULRUHVBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+                                                             
+                                                                4XHHOORKDRULJLQDGRODSpUGLGDGHOGHUHFKRDODSHUFHSFLyQGHOLPSRUWHGHHVWDGHGXFFLyQ
+                                                             
+                                                             
+                                                             /,48,'$&,Ï1
+                                                             5HVXOWDGRGHODUHJXODFLyQ
+                                                             
+
+                                                             ,PSRUWHDLQJUHVDU
+                                                             
+
+
+                                                             
+                                                                 
+                                                                 3REODFLyQ PXQLFLSLR \IHFKDBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                          )LUPD
+                                                                       
+                                                                       
+                                                                 1RPEUH\DSHOOLGRVGHOVROLFLWDQWHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                                  
+                                                                 
+
+
+
+
+                                                                                                                                   GH
+
+                                                                      
+
+
+                                                                                                  https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+                                                                                                                                                                                           Núm. 139
+                                                                                                                                                                                  24 de octubre de 2024
+                                                                                                                                                                        Fascículo 246 - Sec. I. - Pág. 49149
+
+
+
+
+                                                              
+                                                                                                                                                                                     02'(/2,%
+                                                              
+                                                              
+
+                                                              
+                                                              
+                                                              
+                                                         ,QIRUPDFLyQEiVLFDVREUHSURWHFFLyQGHGDWRV
+                                                          5HJODPHQWR8(*HQHUDOGH3URWHFFLyQGHGDWRV5*3' 
+                                                                                                       $JHQFLD7ULEXWDULDGHODV,OOHV%DOHDUV $7,% FRQGRPLFLOLRHQODFDOOH&DQ7URQFRVR
+                                                         5HVSRQVDEOHGHOWUDWDPLHQWR
+                                                                                                       3DOPD ,OOHV%DOHDUV &RUUHRHOHFWUyQLFRDWLE#DWLEHV7HO
+
+                                                         )LQDOLGDGGHODUHFRJLGD\GHO               7UDPLWDFLyQGHSURFHGLPLHQWRVYLQFXODGRVDODDSOLFDFLyQGHODGHGXFFLyQ
+                                                         WUDWDPLHQWR                                  DXWRQyPLFDGHO,53)SRUQDFLPLHQWR
+
+                                                         %DVHMXUtGLFDGHOWUDWDPLHQWR                $UWH 5*3'
+
+                                                         'HVWLQDWDULRVGHOWUDWDPLHQWR                &RQWULEX\HQWHVVXMHWRVREOLJDGRVUHSUHVHQWDQWHVOHJDOHV\SUHVHQWDGRUHV
+
+                                                                                                       /D SHUVRQD DIHFWDGD SRU HO WUDWDPLHQWR GH GDWRV SHUVRQDOHV SXHGH HMHUFHU ORV
+                                                                                                       GHUHFKRV GH LQIRUPDFLyQ GH DFFHVR GH UHFWLILFDFLyQ GH VXSUHVLyQ GH OLPLWDFLyQ GH
+                                                                                                       SRUWDELOLGDGGHRSRVLFLyQ\GHQRLQFOXVLyQHQWUDWDPLHQWRVDXWRPDWL]DGRV HLQFOXVR
+                                                                                                       GH UHWLUDU HO FRQVHQWLPLHQWR HQ VX FDVR HQ ORV WpUPLQRV HVWDEOHFLGRV SRU HO 5*3' 
+                                                                                                       DQWHHOUHVSRQVDEOHGHOWUDWDPLHQWRPHGLDQWHHOSURFHGLPLHQWR©6ROLFLWXGGHHMHUFLFLR
+                                                         (MHUFLFLRGHORVGHUHFKRV
+                                                                                                       GH GHUHFKRV HQ PDWHULD GH SURWHFFLyQ GH GDWRV SHUVRQDOHVª HQODFH
+                                                                                                       KWWSVZZZDWLEHVHVSURWHFFLRQGHGDWRV 
+                                                                                                       &RQ SRVWHULRULGDG D OD UHVSXHVWD GHO UHVSRQVDEOH R D TXH QR H[LVWD UHVSXHVWD HQ HO
+                                                                                                       SOD]R GH XQ PHV SXHGH SUHVHQWDU OD ©5HFODPDFLyQ GH WXWHOD GH GHUHFKRVª DQWH OD
+                                                                                                       $JHQFLD(VSDxRODGH3URWHFFLyQGH'DWRV $(3' 
+
+                                                         3OD]RGHFRQVHUYDFLyQGHORVGDWRV           /RVGDWRVSHUPDQHFHUiQHQODVEDVHVGHGDWRVGHOD$7,%SDUDSRGHUGDUFREHUWXUDD
+                                                                                                       ORV SRVLEOHV UHTXHULPLHQWRV R UHFODPDFLRQHV UHODFLRQDGDV FRQ ORV SURFHGLPLHQWRV
+                                                                                                       YLQFXODGRVDODDSOLFDFLyQGHODGHGXFFLyQDXWRQyPLFDGHO,53)SRUQDFLPLHQWR
+
+
+
+
+https://www.caib.es/eboibfront/pdf/es/2024/139/1174054
+                                                                                                       /D 'HOHJDFLyQ GH 3URWHFFLyQ GH GDWRV GH OD $7,% WLHQH OD VHGH HQ FDOOH GH &DQ
+                                                         'HOHJDFLyQGH3URWHFFLyQGHGDWRV            7URQFRVR   3DOPD ,OOHV %DOHDUV  'LUHFFLyQ HOHFWUyQLFD GH FRQWDFWR
+                                                                                                       GSG#DWLEHV
+
+                                                                                                       3XHGH FRQVXOWDU OD LQIRUPDFLyQ DGLFLRQDO \ GHWDOODGD VREUH SURWHFFLyQ GH GDWRV HQ
+                                                         ,QIRUPDFLyQDGLFLRQDO
+                                                                                                       KWWSVZZZDWLEHVHVSURWHFFLRQGHGDWRV
+                                                              
+
+                                                              
+
+
+
+
+                                                                                                                          GH
+
+                                                              
+
+
+                                                                                          https://www.caib.es/eboibfront/ D.L.: PM 469-1983 - ISSN: 2254-1233
+

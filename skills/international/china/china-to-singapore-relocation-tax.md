@@ -29,6 +29,47 @@ moving to Singapore, and their advisers on both ends. Enforcement practice in Ch
 bureau and is evolving — the legal architecture below is stable, but treat enforcement
 descriptions as a direction of travel, not a guarantee either way.
 
+---
+
+## Part 1 — The Chinese side: domicile is the whole question
+
+China's IIT law taxes two classes of people on **worldwide income**:
+1. individuals **domiciled** in China, and
+2. non-domiciled individuals who reside in China **183+ days** in a year (with the six-year
+   concession for foreigners — an *inbound* rule, irrelevant here).
+
+**Domicile is not an address.** Under the law and its regulations, a person is domiciled if
+they **habitually reside** in China by reason of **household registration (hukou), family,
+or economic interests**. In practice, for a Chinese citizen this means: keeping your hukou,
+a spouse or dependents in China, the operating business in Shenzhen, the apartments in
+Shanghai — any dense combination keeps you *domiciled*, and therefore **worldwide-taxable,
+regardless of how many days you spend in Singapore**.
+
+Consequences worth stating plainly:
+- Moving your body is not an exit. A founder who relocates to Singapore while the family,
+  the hukou and the main company stay in China has, on the letter of the law, changed
+  nothing about their Chinese tax position.
+- **There is no formal "tax de-registration certificate" for citizens leaving**, and hukou
+  cancellation is generally tied to acquiring foreign citizenship or permanent residence
+  abroad and is administratively serious. A genuine exit is a *pattern of severed facts* —
+  family relocated, habitual residence abroad, economic centre shifted — built and
+  documented over time.
+- **The treaty helps at the margin, not at the core.** The China–Singapore DTA tie-breaker
+  (permanent home → centre of vital interests → habitual abode → nationality) can allocate
+  residence to Singapore for a dual-resident — but a Chinese-national dual resident whose
+  vital interests genuinely moved is exactly the person who has done the severing work
+  anyway; the treaty does not rescue a paper move.
+
+**The CRS reckoning.** Singapore banks and brokers report accounts of Chinese tax residents
+to China under CRS. Through 2024–2025, Chinese bureaus have run assessment campaigns on
+residents' **offshore investment income and gains (20%)**, using exactly this data, with
+back-year interest. Two corridor implications: (a) offshore accounts opened while still
+Chinese-resident are visible history, not a hiding place; (b) the account's self-certified
+tax residency must be *changed* to Singapore once the move is real — and must be *true* when
+changed, because a false self-certification compounds the problem in both countries.
+
+---
+
 ## Part 2 — What China keeps taxing after a real exit
 
 Even for a genuinely non-domiciled, non-resident former mover, Chinese-source items stay

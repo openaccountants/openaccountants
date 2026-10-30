@@ -1,10 +1,10 @@
 ---
 name: pt-income-tax
 description: "Portuguese personal income tax (IRS) for tax year 2026 on self-employed income (Category B, recibos verdes) of a resident individual. Covers the 2026 IRS bands of CIRS art. 68 (Lei 73-A/2025), the solidarity surcharge, the simplified regime coefficients of art. 31 (0.75, 0.35, 0.15, 0.95, 0.10, 1), the 10% social security rule and the 15% expenses rule, the first-year coefficient cut, organised accounts and the EUR 200,000 limit, client withholding (23%, 16.5%, 11.5%) and the waiver below EUR 15,000, payments on account, IRS Jovem on the 2026 IAS (EUR 537.13, cap EUR 29,542.15), the Modelo 3 with Anexo B, fines and interest. Trigger on: 'IRS trabalhador independente', 'recibos verdes', 'Anexo B', 'regime simplificado', 'coeficiente 0,75', 'IRS Jovem 2026', 'freelancer tax Portugal'. Out of scope: employees, pensions, rent and investment income (pt-irs-employees-investment), crypto (portugal-crypto-tax), social security (pt-social-contributions), NHR and IFICI (pt-nhr-ifici), non-residents (pt-cross-border)."
-version: 2.1
+version: 2.2
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 source_checked: 2026-10-16
@@ -13,7 +13,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Portugal: IRS for the self-employed, Category B (tax year 2026)
+# Portugal: IRS for the self-employed, Category B (tax year 2026) v2.2
 
 > Source-cited draft: not reviewed by an accountant.
 
@@ -112,7 +112,7 @@ The 2026 bands are lower than the 2025 bands. Lei 73-A/2025 (the 2026 State Budg
 | Modelo 3 with Anexo B, 2026 income | 1 April to 30 June 2027, online, whether or not 30 June is a working day | CIRS art. 60(1): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx |
 | Payment of the balance | By 31 August 2027 when AT assesses within the normal period | CIRS art. 97(1)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs97.aspx |
 
-**The waiver of withholding** is optional. The person writes "Sem retenção, nos termos do n.º 1 do artigo 101.º-B do Código do IRS." on the receipt (art. 101-B(2)). It stops in the month after the EUR 15,000 limit is reached (art. 101-B(3)(b)). Only clients that have or must have organised accounts withhold (art. 101(1)); private individuals do not.
+**The waiver of withholding** is optional. The person writes "Sem retenção, nos termos do n.º 1 do artigo 101.º-B do Código do IRS." on the receipt (art. 101-B(2)). It stops in the month after the EUR 15,000 limit is reached (art. 101-B(3)(b)). Only clients that have or must have organised accounts withhold (art. 101(1)); private individuals do not. Code 1519 ("outros prestadores de serviços"), the residual code of the art. 151 table, is for services that fit no other CAE or CIRS code; AT's binding ruling in process 4006/2019 (approved 20 December 2019) places that income in art. 3(1)(b) and sets withholding at 11.5% under art. 101(1)(c), not 23%.
 
 **Payments on account** stop when withholding plus payments already made cover the tax for the year, or when Category B income stops (art. 102(4)). They can be reduced (art. 102(5)). If the reduction leaves more than 20% unpaid, compensatory interest is due (art. 102(6)).
 
@@ -244,6 +244,7 @@ expected:
 | CIRS art. 101, withholding rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx | 2026-10-23 |
 | CIRS art. 101-B, withholding waiver | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx | 2026-10-23 |
 | CIRS art. 102, payments on account | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs102.aspx | 2026-10-23 |
+| AT binding ruling, process 4006/2019 (Ficha doutrinária, CIRS art. 101, code 1519 withholding 11.5%) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/rendimento/cirs/Documents/PIV_16493.pdf | 2026-10-27 |
 | CIRS art. 151, activity classification | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs151.aspx | 2026-10-23 |
 | CIVA art. 53(1), EUR 15,000 limit | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx | 2026-10-23 |
 | RGIT art. 116 and 119, fines | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx | 2026-10-23 |
@@ -251,9 +252,11 @@ expected:
 | Portaria 480-A/2025/1, art. 2, IAS 2026 EUR 537.13 (AT's copy of the Diário da República text) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf | 2026-10-23 |
 | Segurança Social, Guia Prático, Novo Regime dos Trabalhadores Independentes (IAS 2026 EUR 537.13, 21.4%, 25.2%, 70%/20%, ceiling EUR 6,445.56, payment 10th to 20th) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-23 |
 
-Not yet confirmed: which activity codes of Portaria 1011/2001 fall in the art. 151 table (the table was not read); that AT applies the IRS Jovem art. 22(4) rule as average rate on total income x non-exempt income, as this skill does, and that for Category B in the simplified regime the exempt share and the cap apply to income after the coefficient, as this skill does (no AT guidance read); the EBF art. 58 relief for authors' income, not read for 2026 and not used here; CIRS art. 68(2) still names EUR 8,059 (the 2025 first band limit), and this skill applies the method with the 2026 band limits.
+Not yet confirmed: which activity codes of Portaria 1011/2001 fall in the art. 151 table (the table was not read); which simplified-regime coefficient applies to code 1519 (an earlier version said 0.75 as AT's position; the AT ruling read covers withholding only); that AT applies the IRS Jovem art. 22(4) rule as average rate on total income x non-exempt income, as this skill does, and that for Category B in the simplified regime the exempt share and the cap apply to income after the coefficient, as this skill does (no AT guidance read); the EBF art. 58 relief for authors' income, not read for 2026 and not used here; CIRS art. 68(2) still names EUR 8,059 (the 2025 first band limit), and this skill applies the method with the 2026 band limits.
 
 > Contributed by Ryan Duguid.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

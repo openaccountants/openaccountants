@@ -1,10 +1,10 @@
 ---
 name: portugal-crypto-tax
 description: "Portuguese IRS on crypto assets for resident individuals, tax year 2026. Covers gains on crypto that is not a security (CIRS art. 10(1)(k)): the 28% autonomous rate or aggregation at the 2026 bands (12.5% to 48% plus the solidarity surcharge), the exclusion for crypto held 365 days or more (art. 10(22)), tax-free crypto-for-crypto swaps (art. 10(23)), the carve-out for non-cooperative counterparties (art. 10(24)), the exit charge on loss of residence (art. 10(25), art. 43(12)), FIFO per custodian, rewards paid in crypto or fiat, mining and trading as Category B (coefficients 0.15 and 0.95), losses, filing and fines. Article numbers follow Decreto-Lei 97/2026, which renumbered art. 10. Trigger on: 'crypto tax Portugal', 'Bitcoin Portugal 365 dias', 'criptoativos IRS', 'staking Portugal', 'exit tax crypto Portugal', 'Anexo G crypto'. Out of scope: self-employed rules in general (pt-income-tax), residence and other exit rules (pt-cross-border), NHR and IFICI (pt-nhr-ifici), companies (pt-corporate-tax)."
-version: 1.1
+version: 1.2
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Portugal: IRS on crypto assets (tax year 2026)
+# Portugal: IRS on crypto assets (tax year 2026) v1.2
 
 > Source-cited draft: not reviewed by an accountant.
 
@@ -75,7 +75,7 @@ There is no 35% rate on crypto gains. The 35% list in art. 72(18) covers capital
 
 **Net and choose.** Net all Category G crypto gains and losses of the year (art. 43(1)). A net gain pays 28% (art. 72(1)(c)), or the person opts to aggregate it with other income at the band rates (art. 72(13)). Aggregation pays when the marginal rate on the gain is below 28%: in 2026 that means total taxable income stays within band 4 (EUR 23,089, marginal 24.10%), or reaches band 5 only for a small part. If the person aggregates crypto gains, they must aggregate all income of that category (art. 22(5)). Worked example 1 shows the test.
 
-**Losses.** A net loss on crypto can be carried forward 5 years only if the person aggregates in the loss year (art. 55(1)(d)). Losses with a counterparty in a listed low-tax regime do not count (art. 43(7)).
+**Losses.** A net loss on crypto can be carried forward 5 years only if the person aggregates in the loss year (art. 55(1)(d)). Losses with a counterparty in a listed low-tax regime do not count (art. 43(7)). A net loss in one category is set only against positive net income of the same category (art. 55(1)): a Category G crypto loss does not reduce Category E rewards or Category B income. Art. 55(1) gives no carry-forward for Category E, so rewards paid in fiat are taxed in full each year. A Category B loss carries forward 12 years (art. 55(1)(a)).
 
 **Rewards.** Rewards in fiat are Category E income in the year received, 28% or aggregated (art. 5(2)(u), art. 72(1)(d)). Rewards in crypto are not taxed on receipt; the gain arises when they are sold (art. 5(11)). This skill takes their acquisition value as EUR 0.
 
@@ -91,7 +91,7 @@ There is no 35% rate on crypto gains. The 35% list in art. 72(18) covers capital
 
 Excluded gains on crypto held 365 days or more are reported in the return's annex for excluded gains (Anexo G1). Rewards in fiat go in Anexo E, business crypto in Anexo B. Box numbers change between return versions; check the 2026 form.
 
-Keep, for each unit: acquisition date and price, custodian, sale date and price, and fees. The 365-day exclusion depends on proving the acquisition date.
+Keep, for each unit: acquisition date and price, custodian, sale date and price, and fees. The 365-day exclusion depends on proving the acquisition date. AT can demand the documents that support the return; they must be produced within 15 days (25 days if the person shows difficulty obtaining them), and the duty lasts for the four years after the year the documents relate to (CIRS art. 128(1) to (3)).
 
 ## Penalties and interest
 
@@ -106,6 +106,7 @@ Keep, for each unit: acquisition date and price, custodian, sale date and price,
 - **Non-cooperative counterparties.** No 365-day exclusion and no swap deferral where the taxpayer or the payer is outside the EU/EEA and outside any treaty or exchange-of-information agreement (art. 10(24)). Art. 10(24) still refers to "n.os 19 e 20"; this skill reads that as the rules now in n.º 22 and 23.
 - **Foreign exchanges.** A foreign exchange withholds no Portuguese tax. The gain is taxed in Portugal; foreign tax credit, if any, is in `pt-foreign-source-treaties`.
 - **NHR and IFICI.** See `pt-nhr-ifici`.
+- **General anti-abuse rule.** Arrangements whose main purpose, or one of whose main purposes, is a tax advantage that defeats the purpose of the tax law, and that use abusive legal forms or are not genuine, are disregarded and taxed as the arrangement that reflects the economic substance (LGT art. 38(2) and (3)). Compensatory interest on the resulting tax is raised by 15 percentage points (LGT art. 38(6)). This applies, for example, to a swap chain or a transfer to a related party set up only to reach the 365-day exclusion or to avoid the exit charge.
 
 ## Worked examples
 
@@ -212,13 +213,17 @@ expected:
 | CIRS art. 72, 28% rate, aggregation option, 35% list | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx | 2026-10-23 |
 | CIRS art. 101-B(5), no withholding on crypto remuneration | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx | 2026-10-23 |
 | CIRS art. 25, specific deduction (example 1) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx | 2026-10-23 |
+| CIRS art. 128, keeping and producing documents | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs128.aspx | 2026-10-27 |
+| LGT art. 38, general anti-abuse rule | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt38.aspx | 2026-10-27 |
 | RGIT art. 116 and 119, fines | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit119.aspx | 2026-10-23 |
 | LGT art. 35 and 44, interest | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx | 2026-10-23 |
 | Portaria 480-A/2025/1, art. 2, IAS 2026 EUR 537.13 (example 1) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf | 2026-10-23 |
 
-Not yet confirmed: the acquisition value of crypto received as a reward (this skill assumes EUR 0); whether a swap restarts the 365-day period (no AT guidance read); how occasional mining outside a business is taxed; how NFT sales are taxed once excluded from the crypto definition; the Anexo G, G1, E and B box numbers for 2026; that art. 10(24), which still cites "n.os 19 e 20", is read as n.º 22 and 23; DAC8 and Portuguese exchange reporting dates.
+Not yet confirmed: the acquisition value of crypto received as a reward (this skill assumes EUR 0); whether a swap restarts the 365-day period (no AT guidance read); how occasional mining outside a business is taxed; how NFT sales are taxed once excluded from the crypto definition; the Anexo G, G1, E and B box numbers for 2026; airdrops received free (earlier versions assumed acquisition value EUR 0 and tax only on sale; no AT guidance read); hard forks (earlier versions assumed the new coin has acquisition value EUR 0 and a 365-day period starting at the fork; no AT guidance read); DeFi liquidity pools, yield farming, governance-token rewards and impermanent loss (earlier versions treated a deposit into a pool as a non-taxable swap and losses as recognised only on sale to fiat; no AT guidance read); whether creating and selling NFTs, or NFT royalties, is Category B or Category E income when done regularly (not read); when regular staking or validation becomes a Category B business (art. 3 and 28 not tested against crypto; no AT guidance read); whether AT can extend the four-year document period beyond art. 128(3) during an inspection (earlier versions said 12 years; no source read); that art. 10(24), which still cites "n.os 19 e 20", is read as n.º 22 and 23; DAC8 and Portuguese exchange reporting dates.
 
 > Contributed by Ryan Duguid.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

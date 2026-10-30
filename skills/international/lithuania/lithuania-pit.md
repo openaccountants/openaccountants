@@ -1,14 +1,15 @@
 ---
 name: lithuania-pit
 description: "Lithuanian personal income tax (gyventojų pajamų mokestis, GPM) for residents, tax year 2026. Covers the 2026 progressive bands of 20%, 25% and 32% at 36 and 60 average wages (EUR 83,237.40 and EUR 138,729); the 15% rate on non-employment income up to 12 average wages (EUR 27,745.80); 15% on dividends and on shares held over 5 years; the 2026 tax-exempt amount (NPD) formula built on the EUR 1,153 minimum wage; individual activity income at 20% with the sliding credit (5% effective up to EUR 20,000, 20% at EUR 42,500, ordinary bands above); the 30% flat cost option; exemptions for interest, gains, homes and gifts; deductible expenses; the annual return and payment by 1 May; fines and 0.027% a day late interest. Trigger phrases: GPM, pajamų mokestis, NPD, individuali veikla, metinė deklaracija, Lithuanian income tax, freelancer Lithuania. Out of scope: lt-cross-border (non-residents, residence, foreign tax credits), lt-payroll-social (Sodra and payroll), lt-corporate-income-tax, lithuania-vat-return."
-jurisdiction: LT
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 1.1
-verified_by: pending
+jurisdiction: LT
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Lithuania: personal income tax for residents (2026)
@@ -190,3 +191,23 @@ expected:
 | Law on Tax Administration IX-2112, consolidated from 1 July 2026, arts 96, 99, 139, 141 | https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr | 2026-10-24 |
 
 Not yet confirmed: the fine for filing the annual return late (Code of Administrative Offences, not read); whether individual activity needs advance tax payments during the year; crypto-asset rules beyond the general gain rules above; Sodra figures for the self-employed (lt-payroll-social still carries 2025 figures).
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

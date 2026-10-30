@@ -7,16 +7,20 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `am-company-formation.md`
-4. `am-corporate-income-tax.md`
-5. `am-tax-overview.md`
-6. `armenia-income-tax.md`
-7. `armenia-payroll.md`
-8. `armenia-social-contributions.md`
-9. `armenia-tax-optimization.md`
-10. `armenia-vat.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+3. `README.md`
+4. `am-company-formation.md`
+5. `am-corporate-income-tax.md`
+6. `am-cross-border.md`
+7. `am-tax-overview.md`
+8. `am-transfer-pricing.md`
+9. `armenia-income-tax.md`
+10. `armenia-payroll.md`
+11. `armenia-social-contributions.md`
+12. `armenia-tax-optimization.md`
+13. `armenia-vat.md`
+14. `payroll-workflow-base.md`
+15. `company-formation-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
 
 ## How to use
 
