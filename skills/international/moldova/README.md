@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 0.3
+version: 0.4
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -10,7 +10,7 @@ covered_by:
 partial:
   IT-IND: "2026 individual-income writer draft and figure ledger prepared; commencement, procedure and form conflicts remain explicit; whole-country independent review is pending."
   IT-CORP: "2026 corporate writer draft and figure ledger prepared; ordinary deduction procedures, approved returns, dividend-deferral implementation and independent whole-country review remain open."
-  VAT: "Existing VAT Guide retained; registration, place-of-supply, imports, exemptions and return instructions need current source reconciliation."
+  VAT: "2026 VAT writer draft and figure ledger prepared with the current 24-box VAT12 mapping; commencement, prorata-rounding and ordinary source/procedure gaps remain explicit; whole-country independent review is pending."
   SC: "2026 social/medical writer draft prepared; annex-1 retention, full commencement chain, State-insured health coverage, approved reporting codes and independent whole-country review remain open."
   PR: "2026 payroll writer draft and figure ledger prepared; cumulative withholding and reporting instructions reconciled, with remaining benefit, procedure and special-regime gaps explicit; whole-country independent review is pending."
   TP: "New source-cited draft updated for Law 187/2025 and Order 8/2026; practitioner review, full statutory and annex reconciliation, and taxpayer-specific analysis remain open."
@@ -21,7 +21,7 @@ partial:
 
 Accountable owner: Michael. Assigned writer: ChatGPT under [OWNERS.md](../../../OWNERS.md). Eight existing Guides were present before this batch. Two missing core areas now have draft Guides: [transfer pricing](md-transfer-pricing.md) and [cross-border tax](md-cross-border.md). The new Guides are source-cited drafts, not independently reviewed or accountant-attested. Existing material remains unverified and partial; no domain is marked complete.
 
-The [corporate-income](md-corporate-income-tax.md), [social/medical](moldova-social-contributions.md), [individual-income](moldova-income-tax.md) and [payroll](moldova-payroll.md) Guides now have 2026 writer drafts and two recomputing examples each. Their figure ledgers ([corporate](../../../ledgers/md-corporate-income-tax.md), [social](../../../ledgers/moldova-social-contributions.md), [individual](../../../ledgers/moldova-income-tax.md), [payroll](../../../ledgers/moldova-payroll.md)) retain predecessor-topic destinations. Their stated ordinary implementation gaps remain open. Separate source controls are writer evidence and do not establish completed Guide coverage. The other existing Guides retain their own stated dates and gaps. No whole-country independent review has been completed for this expansion.
+The [corporate-income](md-corporate-income-tax.md), [social/medical](moldova-social-contributions.md), [individual-income](moldova-income-tax.md), [payroll](moldova-payroll.md) and [VAT](moldova-vat.md) Guides now have 2026 writer drafts and two recomputing examples each. Their figure ledgers ([corporate](../../../ledgers/md-corporate-income-tax.md), [social](../../../ledgers/moldova-social-contributions.md), [individual](../../../ledgers/moldova-income-tax.md), [payroll](../../../ledgers/moldova-payroll.md), [VAT](../../../ledgers/moldova-vat.md)) retain predecessor-topic destinations. Their stated ordinary implementation gaps remain open. Separate source controls are writer evidence and do not establish completed Guide coverage. The other existing Guides retain their own stated dates and gaps. No whole-country independent review has been completed for this expansion.
 
 ## Domains
 

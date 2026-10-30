@@ -1,370 +1,274 @@
 ---
 name: moldova-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Moldova VAT (TVA) return for any client. Trigger on phrases like "Moldova VAT", "TVA Moldova", "SFS filing", or any request involving Moldovan VAT. This skill covers standard TVA payers filing monthly returns. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Moldovan VAT work.
-version: 2.0
+description: Use this Guide for Moldova VAT (TVA) registration, output tax, input credits, mixed supplies, imports, exported services, tax points and the monthly VAT12 reconciliation for 2026. It covers ordinary registered businesses and explains separate obligations for unregistered service importers, specified property purchasers, energy traders and nonresident electronic-service suppliers. Trigger on Moldova VAT, TVA Moldova, VAT12, imported SaaS, input deduction or SFS VAT filing. Load alongside vat-workflow-base v0.1 or later. Check the dated registration thresholds, actual supply classification and evidence before calculating. Remaining source and implementation gaps are explicit; the country draft still requires independent pack review.
+version: 2.1
 jurisdiction: MD
-tax_year: 2025
-last_updated: 2026-07-13
+category: international
+tax_year: 2026
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova VAT
-
-## Section 1 — Quick reference
-
-**Quick reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Moldova (Republic of Moldova) |
-| Tax name | TVA (Taxa pe Valoarea Adaugata) |
-| Standard rate | 20% |
-| Reduced rates | 8% (bread, dairy, agricultural produce, medicines, natural gas, LPG) |
-| Zero rate | 0% (exports, international transport) |
-| Return form | Monthly TVA declaration |
-| Filing portal | https://servicii.fisc.md (SFS portal) |
-| Authority | State Fiscal Service (SFS — Serviciul Fiscal de Stat) |
-| Currency | MDL (Moldovan Leu) only |
-| Filing frequency | Monthly |
-| Deadline | Last day of the month following the reporting month |
-| DCFTA with EU | Deep and Comprehensive Free Trade Area — impacts customs treatment |
-| Companion skill | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Contributor | Open Accounting Skills Registry |
-| Validated by | Pending local practitioner validation |
-| Validation date | April 2026 |
-
-**Key TVA return boxes**
-
-| Box | Meaning |
-| --- | --- |
-| 1 | Taxable supplies at 20% — base |
-| 2 | Output TVA at 20% |
-| 3 | Taxable supplies at 8% — base |
-| 4 | Output TVA at 8% |
-| 5 | Zero-rated supplies |
-| 6 | Exempt supplies |
-| 7 | Reverse charge on imported services — base |
-| 8 | Output TVA on reverse charge |
-| 9 | Total output TVA |
-| 10 | Input TVA domestic purchases (20%) |
-| 11 | Input TVA domestic purchases (8%) |
-| 12 | Import TVA (customs) |
-| 13 | Input TVA reverse charge (creditable) |
-| 14 | Total input TVA |
-| 15 | Net payable or credit |
-| 16 | Credit B/F |
-| 17 | Net payable |
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate | 20% |
-| Unknown purchase status | Not deductible |
-| Unknown counterparty country | Domestic Moldova |
-| Unknown SaaS billing entity | Reverse charge (Box 7/8/13) |
-| Unknown blocked-input status | Blocked |
-
-**Red flag thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | MDL 100,000 |
-| HIGH tax-delta | MDL 5,000 |
-| MEDIUM counterparty concentration | >40% |
-| LOW absolute net TVA | MDL 150,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-- **Minimum viable input** — Bank statement. Acceptable from: Moldova Agroindbank (MAIB), Victoriabank, Moldindconbank, Mobiasbanca, Eximbank, or any other. (Minimum viable)
-- **Recommended input** — Invoices (factura fiscala), client IDNO. (Recommended)
-- **Ideal input** — Complete e-invoice register, prior TVA declaration. (Ideal)
+# Moldova VAT v2.1
 
-### Refusal catalogue
+2026 writer draft, law read 30 October 2026. Use alongside `vat-workflow-base` v0.1 or later for document handling. The Moldova law and current return instructions control the tax calculation. This draft has not completed independent whole-country review or accountant attestation.
 
-- **R-MD-1 — Non-registered** — Below MDL 1,200,000 and not voluntarily registered. (Message: "Not TVA registered. Out of scope.")
-- **R-MD-2 — Partial exemption** — Mixed supplies. (Message: "Apportionment required.")
-- **R-MD-3 — Transnistria** — Trigger: entity in Transnistria. (Message: "Transnistrian entities have separate fiscal administration. Out of scope.")
-- **R-MD-4 — Income tax** — Not defined trigger in prose beyond message. (Message: "This skill handles TVA only.")
+## Who this applies to
 
-## Section 3 — Supplier pattern library
+This Guide covers ordinary Moldova TVA registration, domestic and imported goods/services, output tax, input credits, mixed activities, adjustments, monthly VAT12 reporting and payment. Classify the taxpayer and the transaction separately: being below the registration threshold does not remove every VAT obligation. Under Fiscal Code art94(a)–(f), the taxable persons include registered/required-to-register businesses and permanent establishments, goods importers, service importers irrespective of ordinary registration (subject to the stated social-political-organisation exclusion), certain buyers of insolvent/pledged/mortgaged/seized property, and the separate nonresident electronic-services class. [Code arts93–95](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-### 3.1 Moldovan banks (exempt — exclude)
+For an ordinary business, test eligible supplies in **any consecutive 12 months**, excluding supplies exempt without credit and art95(2) non-objects. Test again after adding non-exempt imported services under art112(4). The threshold is exceeded, rather than merely reached: **MDL1.5 million for January–February2026; MDL1.7 million from 1March2026**. Notify/register by the last day of the month of exceedance; ordinary registration takes effect on the first day of the following month. The period previously spent registered is excluded from a subsequent threshold test. The art112(1) exclusions include TitleII chapter10^4 independent service entrepreneurs and the specified public bodies/institutions, with the stated public-education exception. A business anticipating taxable supplies can register voluntarily, normally effective from the first day of the month after applying. Eligible network-energy purchasers under art110(4) must register before those purchases; reorganisation has its own succession date and five-working-day notification. [January art112](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro), [Law12/2026 artsI–II](https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro), [current art112](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-**Moldovan banks table**
+Nonresident automated electronic services to resident nonbusiness individuals follow arts94(d),95(1^1),109^1,111(5),112^1,114(1^1),115(1^2),(3), rather than automatically using a business's monthly reverse-charge return. Registration follows assignment of the fiscal code; the period is quarterly, the payment date is the tax point, and the declaration/payment deadline is the25th after the quarter. MDL, USD or EUR payment is permitted for this class. Ordinary VAT12 amounts are expressed in lei. A card payment to a software brand does not establish whether the customer is a business or the supplier falls in this consumer regime. [Code](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MAIB, MOLDOVA AGROINDBANK | EXCLUDE | Financial service, exempt |
-| VICTORIABANK, VICTORIA | EXCLUDE | Same |
-| MOLDINDCONBANK, MICB | EXCLUDE | Same |
-| MOBIASBANCA, EXIMBANK | EXCLUDE | Same |
-| DOBANDA, INTEREST | EXCLUDE | Interest |
-| CREDIT, IMPRUMUT | EXCLUDE | Loan |
+Do not refuse all mixed activity or all dealings across the Nistru. Compute direct attribution/prorata for ordinary mixed activity. Identify the counterparty's actual fiscal relationship and the relevant customs/implementing-law route for cross-Nistru dealings; the specialist procedure remains unconfirmed below. Income-tax calculations belong in the companion income Guides. VAT work here produces evidenced working papers and a return reconciliation, not a bank-statement-only filing conclusion.
 
-### 3.2 Government (exclude)
+## Rates, bands and thresholds
 
-**Government table**
+| Item | 2026 treatment | Official source |
+|---|---|---|
+| Standard rate |20% of the taxable value unless a specific reduced/exempt treatment applies |[Code art96(a)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Ordinary registration test |Eligible supplies, and separate combined supplies/imported-services test, **over** MDL1.5m Jan–Feb; **over** MDL1.7m from1March; rolling12months |[January art112](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro), [Law12 artsI–II](https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro)|
+| Listed bread/bakery and milk/dairy |8% on the specified domestic tariff lines; the listed dairy fat condition is maximum40%; specified baby foods are exempt without credit instead |[Code art96(b) first indent;103(1)(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Medicines and medical goods |8% for the statutory authorised/registered medicines, qualifying pharmacy preparations and the listed tariff goods; January–April also included goods registered in the State medical-device register in the second indent. **From1May**, that register alone no longer qualifies a device under that indent; check the remaining tariff list or another exemption |[January art96](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro), [May art96, Law41 amendment note](https://www.legis.md/cautare/getResults?doc_id=153671&lang=ro)|
+| Pharmaceutical ethyl alcohol |8% for the specified undenatured tariff lines, purposes and annual Government quota; no blanket alcohol reduction |[Code art96(b) second indent](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Natural gas/LPG and gas-network services |8% for domestic natural gas, the specified container import/domestic LPG at tariff2711, and natural-gas transport/distribution; distinguish the network import exemption and energy reverse charge |[Code arts96(b),101(1^1)–(1^2),104(b^1),101^7](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Agricultural/food goods |8% for the enumerated natural livestock, crop/horticulture tariff lines, and beet sugar; not every food or agricultural purchase |[Code art96(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Solid biofuel |8% for the listed electricity/heat/hot-water production purpose, qualifying feedstock/residues, and heat from solid biofuel supplied to public institutions |[Code art96(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Accommodation and catering |8% for the listed sectionI accommodation and qualifying food/nonalcoholic drinks supplied with related immediate-consumption services; sectionI and art93(21) conditions matter |[Code arts96(b),93(21)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Specified menstrual products |8% for the stated ex9619, ex392490000 and401490000 goods; match the product description and tariff |[Code art96(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Exports/international transport |Exempt **with credit**, subject to art104(a), export/place rules and evidence; the Code's current category is not a third numeric rate |[Code arts93(11),(20),104(a),111](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Residential utilities |Listed electricity/heat/hot water/water/sewerage for residential property, including holiday homes, exempt **with credit**; distinguish ordinary commercial premises |[Code art104(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Shared-input de minimis |Full shared-input deduction if exempt-without-credit supplies/total relevant supplies is **less than0.05**; exactly0.05 does not qualify |[Code art102(4)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Business-card cash-register proof |Connected fiscal receipt up toMDL2,000 inclusive each, no more thanMDL10,000 per period, paid by business card; not a universal invoice waiver |[Code art102(10)(d)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
+| Ordinary reporting/payment |Monthly;25th of the following month, with statutory import/property exceptions |[Code arts114–115](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SFS, SERVICIUL FISCAL | EXCLUDE | Tax payment |
-| VAMA, CUSTOMS | EXCLUDE | Duty (import TVA separate) |
-| CNAS, SOCIAL INSURANCE | EXCLUDE | Social contributions |
-| ASP, GOVERNMENT | EXCLUDE | Government fee |
+The current reduced medical tariff list is300215000,3005,300610,300630000,300640000,300660000,300670000,370790,380894,382100000,3822,4014,401512000,481890100,900110900,900130000,900140,900150,901831,901832 and901839000. Use the full art96(b) tariff list for agricultural classification, including its express exclusions. A supplier name is not a tariff classification. [Code art96(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-### 3.3 Utilities
+## The base
 
-**Utilities table**
+### Classify the supply before the payment
 
-| Pattern | Treatment | Box | Notes |
-| --- | --- | --- | --- |
-| MOLDOVAGAZ, MOLDELECTRICA | Domestic (8% gas / 20% electricity) | 11 or 10 | Gas at reduced rate; electricity at standard |
-| APA-CANAL, REGIA APA | Domestic 20% | 10 | Water |
-| MOLDTELECOM, ORANGE MD, MOLDCELL | Domestic 20% | 10 | Telecoms |
+For each invoice/contract, identify goods or services, ownership/principal/agent, place, date, taxable person, rate/exemption, taxable value, credit evidence and the reporting box. Goods include buildings; supplies include transfers in kind and specified free transfers. Rent/usufruct/operating lease and use of intellectual property are services. Electricity, heat and gas are goods; ancillary goods/services follow the linkage rules in art105. Mandatary transactions in the principal's name belong to the principal under art106. Commission and fiduciary chains under art107 can contain deemed purchases/resupplies plus a separate service; do not collapse them into a net bank commission. [Code arts93,95,105–107](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-### 3.4 Insurance (exempt — exclude)
+Under art97, start with consideration paid/payable excluding VAT and reduce by the contemporaneous documented discount/rebate/loyalty reduction. Include other taxes/charges except VAT. In-kind consideration uses market value. The taxable value of depreciable assets supplied is the greater of carrying value and market value. Insolvent/secured-property acquisitions have their own purchase-value base. For a proved VAT-inclusive domestic price, separate VAT mathematically as gross×rate/(1+rate); do not divide a stand-alone customs-tax payment by1.20. Customs import value is customs value plus applicable import taxes/charges excluding VAT under art100. [Code arts97,100](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-**Insurance table**
+Related-party/employee below-market supplies use market value under art99(1), with its agricultural cooperative/producer-group exception. Art99(2)–(5) distinguishes free employee supplies, personal/family appropriation, free gifts to other persons and remuneration in kind; their bases are not all the same. Use the relevant acquisition-value, production-cost or market-value branch; market value cannot fall below cost of sales under art99(6). Art95(2)(c) excludes qualifying advertising/promotion gifts within0.5% of prior-year sales, or for a newly created business0.5% of preceding-month sales with year-end adjustment. Reorganisation, meal-voucher nominal value and the other art95(2) non-objects have their own conditions. [Code arts95,99](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MOLDASIG, GRAWE, DONARIS | EXCLUDE | Exempt |
-| ASIGURARE, INSURANCE | EXCLUDE | Same |
+### Exemptions are transaction-specific
 
-### 3.5 Food and entertainment (blocked)
+Art103 exemptions **without credit** include housing/land and their specified rent/rights (not transaction commissions); education directly within the stated education/training categories; authorised state-fee services and professional justice-sector activity; medical services except cosmetic services, the listed medical goods and qualifying care; listed financial operations including insurance/reinsurance/intermediation; postal services; the specified domestic passenger transport and other enumerated supplies. A bank's consultancy, information, rental, cash-handling or custody service can fall outside the financial exemption's wording. Notaries/lawyers cannot be automatically coded20% solely by their occupation where art103(1)(6) applies. A commercial property rent is not the housing/land exemption merely because its bank narrative says “rent”. [Code art103(1)(1),(5),(6),(9),(10),(12),(13),(16),(17)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-**Food and entertainment table**
+Other express art103 exemptions include the listed publications/digital books and associated rights/editing (advertising/erotic exclusions), qualifying agricultural-cooperative services subject to the75% condition, the listed passenger-vehicle tariffs, certain agricultural machinery, qualifying production/service assets contributed to capital, renewable-generation construction, authorised waste machinery and listed forestry work. Capital-contribution relief under103(1)(29) requires the Government procedure and has a three-year disposal/use restriction, a clawback and no deduction of that clawback. The exact procedure is not supplied here. Do not confuse an **exempt car purchase** with a universal ban on VAT on every vehicle expense. Customs/re-import/temporary-admission, humanitarian/diplomatic and other specialist art103 exemptions require their own evidence. [Code art103](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| LINELLA, NR 1, METRO MD | Default BLOCK | Personal provisioning |
-| RESTAURANT, CAFENEA, BAR | Default BLOCK | Entertainment blocked |
+Exemption **with credit** under art104 includes proved exports and listed international-transport services, the residential utilities, the listed network-energy imports, specified Government-listed assistance projects, defined free-zone/port/airport movements and qualifying light-industry processing. Internal zone supplies can instead be non-objects under art95(2)(a). Transport/balancing-energy exclusions and directions of movement matter; neither foreign payment nor a zone address establishes the exemption. Implementing lists/proof for these specialist routes remain unconfirmed below. [Code arts95(2),104](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-### 3.6 SaaS — non-resident (reverse charge)
+### Calculate eligible input VAT, not a bank-derived estimate
 
-**SaaS table**
+Under art102(1), an ordinary registered payer deducts VAT paid/payable to VAT-registered suppliers on purchases for taxable business supplies. Goods imports require the import tax payment and customs proof; imported-service credit is based on the **calculated** service VAT for the qualifying business use. Keep output and credit separately even when equal. An unregistered service importer does not acquire the registered-payer credit merely by paying reverse charge. [Code arts101(1),102(1),(10),115](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-| Pattern | Box | Notes |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, ADOBE, META | 7/8/13 | Reverse charge at 20% |
-| SLACK, ZOOM, NOTION, AWS, ANTHROPIC, OPENAI | 7/8/13 | Same |
+1. Attribute directly: taxable business input is eligible; input exclusively for exempt-without-credit supplies is cost/expense. For shared supplies, apply art102(3)–(4), rather than blocking the entire business.
+2. Shared-input monthly prorata is relevant taxable supplies excluding VAT/total taxable plus exempt-without-credit supplies, excluding advances from both. Apply the statutory two-decimal rounding and keep the calculation. Use annual figures for the definitive prorata in the final period and adjust the prior deductions. The less-than0.05 exempt-share rule allows full shared-input deduction; the annual test can recover shared VAT previously expensed. It does not turn exclusively exempt/private inputs into taxable business inputs. The precise fraction-versus-percentage representation for non-exact rounding is left unconfirmed below; both examples use exact ratios. [Art102(2)–(4)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+3. For mixed taxable/exempt building construction, the separate project-estimated taxable-commercial-space cost/total cost coefficient, rounded to two decimals, replaces a sales-ratio shortcut. Recalculate for changed estimates quarterly in the first period after the quarter; changed use has its separate timing. Keep each project separate. [Art102(4^1)–(4^3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+4. Arts102(5)–(7) distinguish the named non-objects, a taxable-to-exempt change and the reverse change. Adjust remaining stock by previously deducted/expensed VAT and depreciable assets by the VAT attributable to carrying value, excluding revaluation; use the statutory change/use period, not a blanket five-year adjustment borrowed from another country. [Code](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+5. Private/nonbusiness purchases, theft, excess waste/perishability and unamortised scrapped assets follow102(8); documented exceptional destruction follows102(8^1). Food-donation excess follows102(8^2). Entertainment unconnected with the business is blocked under102(9), subject to its24(19),(19^3) exceptions; direct inputs of an entertainment business qualify under its own rule. Fuel is not taxed at0% by default. For upkeep/operation/repair of cars used by occupation minor groups112/121, art102(17) permits only one car per such person; check business use and proof as well. [Code art102](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+6. Hold a fiscal invoice, the relevant paid-tax property/customs document, or the narrowly qualifying connected business-card fiscal receipts. Art102(14) requires the actual supplier to be the invoice issuer. For the listed services/utilities/petroleum/specified goods, a fiscal invoice issued by the10th inclusive of the next month permits deduction in the supply month under102(12). A different invoice received late follows102(13): deduct in the actual receipt period without amending earlier periods merely for late receipt. Retain actual issue and receipt dates. [Code art102(10)–(15)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-### 3.7 Professional services
+### Adjustments, credits and refunds
 
-**Professional services table**
+Documented price changes, returns and later discounts adjust the taxable value under art98. Supplier adjustment invoices show minus/plus under117^1(12). A statutory bad debt permits seller output adjustment beginning in the recognised bad-debt period; later recovery restores taxation. A purchaser's corresponding unpaid bad-debt credit is removed under116(3). Ordinary overdue status alone is not proof of statutory bad debt. [Code arts98,116,117^1](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-| Pattern | Treatment | Box |
-| --- | --- | --- |
-| NOTAR, NOTARY | Domestic 20% | 10 |
-| AUDITOR, CONTABIL | Domestic 20% | 10 |
-| AVOCAT, LAWYER | Domestic 20% | 10 |
+Ordinary excess input carries forward under101(2). A cash refund is conditional:101(3) has the listed bread/dairy producer cap,101(5) the exempt-with-credit supply cap,101(5^1) the energy simplification cap,101(6) the leasing cap;101^1 covers qualifying capital expenditure with exclusions and an in-use production-building route. Art101^6 concerns qualifying e-Factura/connected-register transactions from1January2023 and Government limits;101^8 covers its listed renewable-storage tariffs. The ordinary statutory refund routes generally state45days, or60days where the taxpayer has filed disagreement with the audit act, but the Government evidence/application rules must also be satisfied. Use a refund decision first against public-budget debt, then permitted future liabilities or the taxpayer's own bank/payment account; do not assign the refund to creditors. An unregistered qualifying22-plus-passenger vehicle investor has a distinct101^3 route. Do not fill box24 merely because a credit exists. The detailed Government procedures and 2026 refund programmes are not confirmed in this draft. [Code arts101–101^8](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-### 3.8 Payroll and exclusions
+## Deadlines and filing
 
-**Payroll and exclusions table**
+### Tax points and actual deadlines
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SALARIU, SALARY | EXCLUDE | Wages |
-| DIVIDEND | EXCLUDE | Out of scope |
-| INTERN, TRANSFER INTERN | EXCLUDE | Internal |
-| ATM, NUMERAR | TIER 2 — ask | Default exclude |
+The ordinary period is a calendar month. File the official declaration electronically and pay by the25th of the following month, not month end. Prepare purchase/sales registers by that same25th. The special nonresident consumer-electronic period is quarterly, as stated above. Formal suspension and cancellation need their statutory treatment; do not assume a silent cessation cancels registration. [Code arts114,115,118,113](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-## Section 4 — Worked examples
+Art108 starts with delivery/service performance, but applies earlier invoice/payment rules, including advances. Goods transport normally starts the tax point, export uses removal from Moldova, and real-property supply uses registration of ownership. Regular utilities/rent use the earlier contractual delivery or regular payment; leasing uses contractual payment dates or an earlier advance. Successive-payment works/services follow acceptance/certification or contractual acceptance. Special insolvency/secured-property timing must be applied to its own branch. For imports, art109 sets customs timing for goods and the earlier service import/payment (including advance) for services. For unregistered service importers, pay by the25th after that earlier month; specified property-acquisition payment timing is separately in115(2)(c). [Code arts108–109,115(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-### Example 1 — Non-resident SaaS reverse charge
+Issue fiscal invoices at the statutory tax point unless an express exception applies. Art117(2) specifies supplier/customer identity, fiscal codes, issue/supply dates, description/quantity, unit price excluding VAT, rate, total and tax, plus “Taxare inversă” where required. Export and specified retail/consumer/digital exceptions do not replace the underlying records. E-factura is mandatory for the statutory SFS-list cases and the specified public contracts, principal petroleum, relevant counterparties without fiscal-budget relations and assistance-project transactions, subject to each exception. Art117^1 permits the specified accompanying-note, services/petroleum and business-card e-invoice timing through the10th of the next month; do not turn that invoice timing into a later output-tax point. [Code arts117–117^1](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-**Input line:** `03.04.2026 ; NOTION LABS INC ; DEBIT ; Subscription ; USD 16.00 ; MDL 288`
+### Current VAT12 mapping
 
-**Example 1 table**
+Use Order1164/2012 annex2, consolidated through Order529/2025. The latter applies to reporting periods fromJanuary2026. The ordinary declaration has24boxes; do not reuse the predecessor Guide's invented17-box map. [Instructions](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro), [Order529 point2](https://www.legis.md/cautare/getResults?doc_id=151607&lang=ro).
 
-| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -288 | -288 | 58 | 20% | 13 | 7/8 | N |
-
-### Example 2 — Domestic utility at standard rate
-
-**Input line:** `10.04.2026 ; MOLDTELECOM ; DEBIT ; Internet April ; -450 ; MDL`
-
-**Example 2 table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | MOLDTELECOM | -450 | -375 | -75 | 20% | 10 | N |
-
-### Example 3 — Reduced rate purchase (gas at 8%)
-
-**Input line:** `12.04.2026 ; MOLDOVAGAZ ; DEBIT ; Natural gas ; -1,620 ; MDL`
-
-**Example 3 table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 12.04.2026 | MOLDOVAGAZ | -1,620 | -1,500 | -120 | 8% | 11 | N |
-
-### Example 4 — Export (zero-rated)
-
-**Input line:** `22.04.2026 ; TECHCORP GMBH ; CREDIT ; IT services ; +18,000 ; MDL`
-
-**Example 4 table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | TECHCORP GMBH | +18,000 | +18,000 | 0 | 0% | 5 | Y | "Verify export docs" |
-
-### Example 5 — Entertainment blocked
-
-**Input line:** `15.04.2026 ; RESTAURANT LA PLACINTE ; DEBIT ; Dinner ; -800 ; MDL`
-
-**Example 5 table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | RESTAURANT LA PLACINTE | -800 | -800 | 0 | — | — | Y | "Entertainment: blocked" |
-
-### Example 6 — Import of goods
-
-**Input line:** `25.04.2026 ; VAMA ; DEBIT ; Import TVA ; -12,000 ; MDL`
-
-**Example 6 table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 25.04.2026 | VAMA | -12,000 | -10,000 | -2,000 | 20% | 12 | N |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 20% (Fiscal Code Article 96)
-
-- **Standard rate** — 20%
-
-### 5.2 Reduced rate 8%
-
-- **Reduced rate** — 8% (Bread, dairy, agricultural produce, medicines, natural gas, LPG. Sales to Box 3/4. Purchases to Box 11.)
-
-### 5.3 Zero rate
-
-- **Zero rate** — 0% (Exports, international transport. Box 5.)
-
-### 5.4 Exempt
-
-- **Exempt supplies** — Financial, insurance, medical, educational, residential rental, postal.
-
-### 5.5 Reverse charge (Article 109)
-
-- **Reverse charge** — Non-resident services. Self-assess at 20%. Box 7/8 (output), Box 13 (input).  _(Article 109)_
-
-### 5.6 Import TVA
-
-- **Import TVA** — At customs. Box 12.
-
-### 5.7 Blocked input
-
-- **Blocked input** — Passenger vehicles, entertainment, personal consumption, no valid invoice.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel/vehicles — *Default:* 0%.
-
-- **Fuel/vehicles default** — 0%
-
-### 6.2 Entertainment — *Default:* block.
-
-- **Entertainment default** — block
-
-### 6.3 SaaS entities — *Default:* reverse charge at 20%.
-
-- **SaaS entities default** — reverse charge at 20%
-
-### 6.4 8% vs 20% — *Default:* 20%.
-
-- **8% vs 20% default** — 20%
-
-### 6.5 Owner transfers — *Default:* exclude.
-
-- **Owner transfers default** — exclude
-
-### 6.6 Foreign incoming — *Default:* zero-rated.
-
-- **Foreign incoming default** — zero-rated
-
-### 6.7 Cash withdrawals — *Default:* exclude.
-
-- **Cash withdrawals default** — exclude
-
-### 6.8 Rent — *Default:* no TVA.
-
-- **Rent default** — no TVA
-
-## Section 7 — Excel working paper template
-
-Per `vat-workflow-base` Section 3 with Moldova-specific box codes.
-
-## Section 8 — Moldovan bank statement reading guide
-
-**CSV conventions.** MAIB and Victoriabank use semicolons, DD.MM.YYYY.
-
-**Romanian terms.** Salariu (salary), dobanda (interest), credit/imprumut (loan), numerar (cash), intern (internal), vama (customs), asigurare (insurance), contabil (accountant).
-
-**Foreign currency.** Convert to MDL at National Bank of Moldova rate.
-
-**IBAN prefix.** MD = Moldova.
-
-**Transnistria note.** Transactions with Transnistrian counterparties require special handling — R-MD-3 fires.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 Entity type — *Fallback:* "SRL, SA, or sole trader (II)?"
-
-- **Entity type fallback** — "SRL, SA, or sole trader (II)?"
-
-### 9.2 TVA registration — *Fallback:* "TVA payer?"
-
-- **TVA registration fallback** — "TVA payer?"
-
-### 9.3 IDNO — *Fallback:* "What is your IDNO?"
-
-- **IDNO fallback** — "What is your IDNO?"
-
-### 9.4 Period — *Inference:* statement dates.
-
-- **Period inference** — statement dates
-
-### 9.5 Industry — *Fallback:* "What does the business do?"
-
-- **Industry fallback** — "What does the business do?"
-
-### 9.6 Credit B/F — *Always ask.*
-
-- **Credit B/F** — Always ask.
-
-### 9.7 Transnistria — *Fallback:* "Any transactions with Transnistria?"
-
-- **Transnistria fallback** — "Any transactions with Transnistria?"
-
-## Section 10 — Reference material
-
-### Sources
-
-- **Sources list** — 1. Fiscal Code of Moldova — Title III (TVA) 2. SFS — https://servicii.fisc.md 3. National Bank of Moldova — https://www.bnm.md
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to Malta v2.0 10-section structure.
-
-## End of Moldova VAT (TVA) Skill v2.0
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+| Box | Current content / control | Instruction point |
+|---|---|---|
+|1 /2|Standard domestic taxable supply base / output VAT, including taxable advances and adjustments|3.2–3.3|
+|3 /4|Reduced-rate domestic supply base / output VAT, including taxable advances and adjustments|3.5–3.6|
+|5|Supplies exempt with credit, excluding advances|3.7|
+|6|Supplies exempt without credit, excluding advances, including relevant value adjustments|3.8|
+|7 /8|Imported/procured services and the specified 2026 energy reverse-charge operations / their calculated VAT|3.9–3.10|
+|9 /10|The specified insolvent/secured property, capital-relief clawback and specified non-budget-relations utility base / calculated tax|3.10^2–3.10^3|
+|11|Output VAT corrections, statutory bad-debt and qualifying promotion adjustments|3.11|
+|12|Total supply base =1+3+5+6|3.12|
+|13|Total output VAT =2+4+8+11; **does not include10**|3.13|
+|13.1|Included VAT on advances not followed by supply in that same period; not another additive liability|3.14|
+|14 /15|Ordinary domestic purchase base / **eligible** VAT;14 can also include purchases without credit,15 cannot|3.15–3.16|
+|16 /17|Imports and the listed procured goods/services, including qualifying energy operations / eligible VAT and customs adjustments|3.17–3.18|
+|18|Input corrections including bad debt, definitive annual prorata and construction adjustments|3.19|
+|19|Prior box23 plus prior box24 not requested/accepted for refund, subject to the actual opening reconciliation|3.20|
+|20|Total available deduction =15+17+18+19|3.21|
+|21|Positive ordinary liability =13−20; otherwise blank/zero as the form requires|3.22|
+|22|Separate budget liability equal to10; it is not netted away through13−20|3.23|
+|23|Remaining eligible carryforward =20−13−24 when positive|3.24|
+|24|VAT actually requested for refund under a supported statutory route|3.25|
+
+All table mappings: [Order1164 annex2 points3.1–3.25](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro). The energy additions to7/8/16/17 do not move those operations into the separate9/10/22 property route merely because both are called reverse charge.
+
+Attach TVA FACT (received fiscal invoices) and TVA LIVR (issued fiscal invoices) under points4,5,5^1, including relevant compensated-cost refacturing and excluding the specified “Nonlivrare” redirection documents. The102(12) prior-supply-month invoice can appear in the receipt or deduction-period annex as the instruction permits; retain a reconciliation to avoid double credit. Nonregistered service importers complete7/8/21 without registered-payer credit; the separate property/clawback cases use9/10/22 under point7. [Instructions](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro).
+
+Point8 prevents submission for a future/missing period, failure of the12/13/20 arithmetic checks, missing annex counterparty/date/invoice identity, or invoice numbers not allocated to the issuer. A prepared form is not a filed return: retain successful submission acknowledgement and separate payment evidence. A corrected return follows the original period's valid form and art188's six-year limit and audit restrictions; distinguish a later-period statutory adjustment from correction of a mistaken original entry. [Order1164 annex2 point8](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro), [Code art188](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+### Working paper and predecessor classification controls
+
+Retain the earlier supplier-pattern subjects as **search prompts**, not legal defaults: MAIB/Moldova Agroindbank, Victoriabank, MICB/Moldindconbank, Mobiasbanca and Eximbank; SFS/Vama/CNAS/ASP; Moldovagaz/Moldelectrica, Apa-Canal, Moldtelecom/Orange/Moldcell; Moldasig/Grawe/Donaris; Linella/NR1/Metro/restaurants; Google/Microsoft/Adobe/Meta/Slack/Zoom/Notion/AWS/Anthropic/OpenAI; notaries/auditors/accountants/lawyers; salary/dividend/internal/cash movements. Inspect the actual legal supplier and service. “Bank” does not prove a financial exemption, “government” does not prove every fee has identical VAT treatment, “water/electricity” does not determine residential purpose, “restaurant” does not prove private use, and “SaaS” does not establish the customer's status or supplier's location. The governing tests are arts93–104,111 and102, not the narrative pattern. Brand identity, bank-export layouts and individual counterparty status are not recertified here.
+
+A bank statement is a discovery/reconciliation input. Obtain fiscal invoices, contracts, registers, prior return/credit/refund decisions, customs declarations/tax proof, supplier/customer IDNO and registration dates before concluding the return. Record original and MDL amounts, conversion source/date, supply/advance/invoice/receipt/customs dates, actual legal rate/exemption article, business-use attribution, input evidence, box and adjustment history. Track withheld bank charges, settlements and internal transfers separately. Romanian discovery terms from the predecessor remain useful: salariu, dobândă, credit/împrumut, numerar, intern, vamă, asigurare and contabil. A loan's principal, an ATM withdrawal or a salary payment is not automatically a taxable invoice. [Code arts93–95,102,108–111,118](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+The predecessor's private red-flag settings (MDL100,000 transaction, MDL5,000 tax delta,40% concentration and MDL150,000 absolute net TVA) are not statutory thresholds and must not control tax/refusal. The default domestic country, automatic20%, automatic foreign-receipt exemption, fuel0%, automatic rent exemption and blanket mixed-activity refusal are replaced by documented classification or an unresolved item. Preserve all six old sample transactions in the predecessor archive and destination ledger; none proves its own supplier, use, date or documentation. In particular, MDL288 net imported SaaS yields MDL57.60 at20%, rather than an unexplained58; a proven MDL450 VAT-inclusive taxable telecom invoice splits375/75; a proven MDL1,620 VAT-inclusive8% gas invoice splits1,500/120. A payment labelled MDL12,000 “import TVA” is not evidence of a MDL10,000 customs base and MDL2,000 tax. Classify the foreign IT receipt and dinner only after the legal tests above. These are corrections to legacy fixtures, not additional filing examples or verified client facts.
+
+## Penalties and interest
+
+For legal-person/business categories in art232(a),(c), art260(1) sets reporting-preparation/presentation fines ofMDL500–1,000 per return, capped atMDL10,000 for all returns; the distinct nonbusiness-individual category hasMDL200–400, capped atMDL2,000. Failure to issue a required fiscal invoice within arts117/117^1 timing isMDL3,000–3,600 per invoice, capped atMDL72,000 under260(4). Late/nonregistration as a VAT payer is7%–10% of taxable supply volume excluding art104 supplies under256(7); where this fine is applied,261(5) is not also applied. Do not treat those ranges as a discretionary minimum automatically selected by software. [Code arts232,256(7),260](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+False-data understatement is20%–30% of the understated amount under261(4); genuine self-correction under188 is excepted by261(4^1). Evasion under261(5) is80%–100% of undeclared tax, subject to the non-cumulation just described. Late-payment interest under228 runs from the day after due date through actual payment; its annual formula uses the prior-November BNM base rate rounded up to a whole percent, plus5points, divided by days in the year and rounded to four decimals. Additional-liability self-correction interest is capped at the corresponding tax under228(2^1). The actual published2026 daily rate and the correct application of relief/audit facts remain unconfirmed; do not invent a universal0.1% VAT rate. [Code arts228,261,188](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+## Cross-border points
+
+Determine place before exemption. Art110 distinguishes untransported goods, customer/third-party transport, supplier transport and the special energy-trader/consumption rules. Art111 places real-property-related services at the property, transport along the route/distance, the listed cultural/educational/tangible-property/auxiliary activities where actually performed and tangible-property hire where used/possessed. The listed IP, advertising, consultancy/legal/accounting/marketing/information/IT/personnel/agency services follow the recipient's establishment/residence; communications/broadcast/electronic services also follow their specified recipient rule. The residual rule is the supplier's establishment/residence. Do not import an EU-wide general B2B rule into every Moldova service. [Code arts110–111](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+A nonresident supply whose place is Moldova is an imported service under93(9); apply94(c),109(2),101/102 and115 rather than relying on the merchant label. Conversely, export of services requires a nonresident recipient and a place outside Moldova under93(11), then the applicable104(a) treatment/evidence. A German payer or foreign-currency receipt alone is insufficient. For nonresident automated consumer e-services,111(5) tests residence, payment-account/provider location, IP or country telephone prefix; one condition suffices. Email consultancy and online ordering followed by offline delivery are expressly outside the automated e-services definition in95(1^1), although other place rules can still apply. [Code](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+FromJanuary2026, arts101(1^1)–(1^2),104(b^1),110(4)–(5),111(1)(g),112(4^1) and101^7 establish the specified network-energy rules. For domestic electricity/gas supplies between VAT-registered persons,101^7 requires the buyer's statutory trader status: the relevant licence/operator category, principal resale activity and own use no more than1%. Supplier invoices say “Taxare inversă” without VAT; the buyer records calculated output and input. A supplier charging tax incorrectly creates a lost input right until corrected under101^7(5); an ineligible buyer requires cancellation/reissue under(6). The annual January–November own-use declaration has a Ministry-prescribed procedure still unconfirmed here. Purchases from a foreign energy seller under101(1^1) use the invoice/primary-document date and must not be counted a second time upon subsequent customs import. [Code arts101,101^7](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), [January commencement notes](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro), [Order529](https://www.legis.md/cautare/getResults?doc_id=151607&lang=ro).
+
+DCFTA/customs-origin relief is not by itself an exemption from Moldova import VAT. Use the customs taxable value/rate/exemption and proof for the actual goods. Goods/services involving residents without fiscal relations with Moldova's budget need the applicable implementing-law/customs analysis and e-invoice/return route; blanket “Transnistria out of scope” is insufficient. The ordinary reporting branches are retained above, while the full 2026 transitional regime, DCFTA origin procedure and treaty/project-specific evidence remain unconfirmed below.
+
+## Two worked examples that recompute
+
+### 1. Ordinary registered payer, imported service and customs input
+
+Assume a wholly taxable registered business, in an ordinary2026 month, with supported standard domestic salesMDL100,000, qualifying8% domestic salesMDL50,000 and documented exempt-with-credit exportsMDL20,000. All amounts exclude VAT unless stated. Eligible domestic purchases areMDL30,000+6,000VAT. Customs goods have a confirmed customs VAT baseMDL15,000 and paid taxMDL3,000, with no additional taxable charges; an imported business software service hasMDL2,000 base and400 calculated VAT. Every credit meets102; no9/10 property transaction, advances, corrections or refund request; reconciled prior creditMDL1,000. VAT12 uses the current annex2 map, not the predecessor map. [Code arts96,100–102,104,109; Order1164 points3.2–3.25](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro).
+
+```oa-check
+name: Moldova VAT12 ordinary return with imports
+tolerance: 0.0001
+inputs:
+  standard_sales: 100000
+  reduced_sales: 50000
+  exports: 20000
+  domestic_base: 30000
+  customs_base: 15000
+  import_service_base: 2000
+  opening_credit: 1000
+  box6: 0
+  box9: 0
+  box10: 0
+  box11: 0
+  box18: 0
+  box24: 0
+steps:
+  box1: standard_sales
+  box2: box1 * 0.20
+  box3: reduced_sales
+  box4: box3 * 0.08
+  box5: exports
+  box7: import_service_base
+  box8: box7 * 0.20
+  box12: box1 + box3 + box5 + box6
+  box13: box2 + box4 + box8 + box11
+  box14: domestic_base
+  box15: domestic_base * 0.20
+  box16: customs_base + import_service_base
+  box17: customs_base * 0.20 + box8
+  box19: opening_credit
+  box20: box15 + box17 + box18 + box19
+  box21: max(box13 - box20, 0)
+  box22: box10
+  box23: max(box20 - box13 - box24, 0)
+  total_payment: box21 + box22
+expected:
+  box12: 170000
+  box13: 24400
+  box16: 17000
+  box17: 3400
+  box20: 10400
+  box21: 14000
+  box22: 0
+  box23: 0
+  total_payment: 14000
+```
+
+The service has both400 output and400 eligible input; its credit is not a cash remittance for that transaction. The ordinary return reconciles toMDL14,000 payable, separately from the already-paidMDL3,000 customs tax.
+
+### 2. Mixed activity and the definitive annual adjustment
+
+Assume standard taxable monthly suppliesMDL80,000 and exempt-without-credit suppliesMDL20,000, no advances. Supported direct taxable input VAT isMDL10,000, direct exempt input2,000, private input500 and shared input5,000. Monthly ratio0.80 is exact, so shared credit4,000 and current-period credit14,000; a proved opening credit2,000 offsets the ordinary16,000 output. For the annual adjustment, assume this is the year's entire shared-input pool and later sales bring relevant annual taxable/exempt totals to300,000/100,000. The exact definitive ratio0.75 allows3,750 shared credit, requiring a **250 reduction** of prior credit in the final-period box18; other final-period transactions are not computed here. A4% exempt share is below the statutory boundary; exactly5% is not. Those boundary statements do not extend credit to private or exclusively exempt purchases. [Code102(2)–(4)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), [Order1164 point3.19](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro).
+
+```oa-check
+name: Moldova mixed-input monthly and definitive annual prorata
+tolerance: 0.0001
+inputs:
+  taxable_month: 80000
+  exempt_month: 20000
+  direct_taxable_vat: 10000
+  direct_exempt_vat: 2000
+  private_vat: 500
+  shared_vat: 5000
+  opening_credit: 2000
+  annual_taxable: 300000
+  annual_exempt: 100000
+steps:
+  monthly_ratio: taxable_month / (taxable_month + exempt_month)
+  exempt_share: exempt_month / (taxable_month + exempt_month)
+  shared_credit: shared_vat * monthly_ratio
+  eligible_current: direct_taxable_vat + shared_credit
+  blocked_current: direct_exempt_vat + private_vat + shared_vat - shared_credit
+  output_month: taxable_month * 0.20
+  payable_month: max(output_month - eligible_current - opening_credit, 0)
+  annual_ratio: annual_taxable / (annual_taxable + annual_exempt)
+  annual_shared_credit: shared_vat * annual_ratio
+  final_period_input_adjustment: annual_shared_credit - shared_credit
+expected:
+  monthly_ratio: 0.80
+  exempt_share: 0.20
+  shared_credit: 4000
+  eligible_current: 14000
+  blocked_current: 3500
+  payable_month: 0
+  annual_ratio: 0.75
+  annual_shared_credit: 3750
+  final_period_input_adjustment: -250
+```
+
+## Ask the client first
+
+- What is the legal entity/activity, IDNO, actual VAT registration/effective date, and any cancellation, reorganisation, formal suspension or chapter10^4 status?
+- Which consecutive12month supplies and imported services trigger the relevant dated registration test? Were any obligations already triggered before a threshold change?
+- What is supplied, to whom and where? Obtain contracts, tariff/product evidence, actual customer/supplier establishments and property/use locations, not just a merchant narrative.
+- Which supplies are standard/reduced, exempt with credit, exempt without credit or non-objects? What proves the particular education, medical, justice, finance, residential, export or project condition?
+- Obtain invoices and actual receipt dates, customs declarations and paid-tax evidence, advances and acceptance records, returns/discounts/bad debts, business-card fiscal receipts and the business/private attribution.
+- What is directly taxable/exempt/shared, including construction projects, cars by qualifying user, entertainment, gifts, destruction, changed use and capital-relief disposals?
+- What opening credit, prior refund request/decision, arrears and earlier corrections must reconcile? Supply the filed return, annexes, receipt and payment record.
+- Are there nonresident consumer electronic services, energy-trader licences/own-use conditions, insolvency/security property, cross-Nistru fiscal-status issues, free-zone movements or a claimed customs/DCFTA relief requiring the separate procedure?
+
+## Sources
+
+| Primary source actually read | Scope | Read date |
+|---|---|---|
+|[Fiscal Code current consolidation157050](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|Selected arts93–118 and contained superscript articles;232,256,260–261,228,188. Current TVA scope/base/credit/exemption/place/timing/reporting and penalties; not a claim to have audited the entire Code|2026-10-30|
+|[January consolidation149766](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro)|Arts96,104,112 and retained energy commencement notes. Jan–Feb threshold and pre-May medical-device wording|2026-10-30|
+|[Law12/2026](https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro)|ArtsI–II;1March2026 registration threshold change|2026-10-30|
+|[May consolidation153671](https://www.legis.md/cautare/getResults?doc_id=153671&lang=ro), [Law41/2026](https://www.legis.md/cautare/getResults?doc_id=153667&lang=ro)|Art96 and the Law41 medical-device amendment/1May commencement; remaining tariff-based reduced categories retained|2026-10-30|
+|[Order1164/2012 current consolidation151641](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro)|Full annex2 text: ordinary24boxes, annexes, unregistered routes and critical submission errors. Linked annex1DOCX not retrieved|2026-10-30|
+|[Order529/2025](https://www.legis.md/cautare/getResults?doc_id=151607&lang=ro)|Energy box7/8/16/17 amendments, applicability fromJanuary2026 periods|2026-10-30|
+
+Not yet confirmed: full2026 amendment-by-amendment commencement reconciliation beyond the dated changes above; actual late-registration assessment period and procedural relief; non-exact prorata rounding representation in SFS practice; Government refund application/proof/limits and2026 refund-programme amendments; Government capital-contribution, destruction, assistance-project/free-zone/processing and other specialist exemption procedures; full2026 cross-Nistru transitional law/customs and DCFTA origin procedures; current Ministry energy-trader own-use declaration procedure; current nonresident e-services registration/form/payment implementation; foreign-currency VAT conversion date and supporting BNM rule; actual published2026 daily late-payment rate; current annex1TVA12DOCX/layout and authenticated portal validation/rounding; counterparty-specific status, bank-export conventions, the predecessor IBAN-prefix claim and the legal assumptions of the archived legacy transactions. These gaps remain explicit and this VAT draft does not establish whole-country coverage or independent review.
 
 <!-- openaccountants-cta-block -->
 

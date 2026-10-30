@@ -7421,8 +7421,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "d529bb458b423bba733f752f9310a92cbea0d97baffd8e4e8ac66453a7d40230",
       "original_text": "# Moldova VAT",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-002",
@@ -7430,8 +7435,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "26bcfb5098006c22354d21377e3b78eb3d05f98ae87a19e63af8bd5951700d6b",
       "original_text": "## Section 1 — Quick reference",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-003",
@@ -7439,8 +7449,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "3832f98b5038f09aaf3c3a94c3ce4d31c3f1d2e46e45cecf46652f6f47ec0ba8",
       "original_text": "**Quick reference table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-004",
@@ -7448,8 +7463,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "549a368b49deb1282eb2a86b533efc45d1c0cb11228a5abbf6b092994f41931a",
       "original_text": "| Field | Value |\n| --- | --- |\n| Country | Moldova (Republic of Moldova) |\n| Tax name | TVA (Taxa pe Valoarea Adaugata) |\n| Standard rate | 20% |\n| Reduced rates | 8% (bread, dairy, agricultural produce, medicines, natural gas, LPG) |\n| Zero rate | 0% (exports, international transport) |\n| Return form | Monthly TVA declaration |\n| Filing portal | https://servicii.fisc.md (SFS portal) |\n| Authority | State Fiscal Service (SFS — Serviciul Fiscal de Stat) |\n| Currency | MDL (Moldovan Leu) only |\n| Filing frequency | Monthly |\n| Deadline | Last day of the month following the reporting month |\n| DCFTA with EU | Deep and Comprehensive Free Trade Area — impacts customs treatment |\n| Companion skill | **vat-workflow-base v0.1 or later — MUST be loaded** |\n| Contributor | Open Accounting Skills Registry |\n| Validated by | Pending local practitioner validation |\n| Validation date | April 2026 |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-005",
@@ -7457,8 +7477,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "2b16eaa38918b783bef7f11aead8cf1ac41e84fa78523420c99be3b97f2423e8",
       "original_text": "**Key TVA return boxes**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Current VAT12 mapping",
+        "The base: Calculate eligible input VAT"
+      ],
+      "status": "Invented old boxes replaced by official 24-box map; underlying imported-service/customs topics retained"
     },
     {
       "id": "moldova-vat-OLD-006",
@@ -7466,8 +7489,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "e9d22ae89243ec99aea24ba3fd9abe41607c924c4a9d118b2d4de9048baae6d8",
       "original_text": "| Box | Meaning |\n| --- | --- |\n| 1 | Taxable supplies at 20% — base |\n| 2 | Output TVA at 20% |\n| 3 | Taxable supplies at 8% — base |\n| 4 | Output TVA at 8% |\n| 5 | Zero-rated supplies |\n| 6 | Exempt supplies |\n| 7 | Reverse charge on imported services — base |\n| 8 | Output TVA on reverse charge |\n| 9 | Total output TVA |\n| 10 | Input TVA domestic purchases (20%) |\n| 11 | Input TVA domestic purchases (8%) |\n| 12 | Import TVA (customs) |\n| 13 | Input TVA reverse charge (creditable) |\n| 14 | Total input TVA |\n| 15 | Net payable or credit |\n| 16 | Credit B/F |\n| 17 | Net payable |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Current VAT12 mapping",
+        "The base: Calculate eligible input VAT"
+      ],
+      "status": "Invented old boxes replaced by official 24-box map; underlying imported-service/customs topics retained"
     },
     {
       "id": "moldova-vat-OLD-007",
@@ -7475,8 +7501,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "46bfdad640b74e5fc480b205a5adb268222ff2bc65d073ea0c639d255b92322e",
       "original_text": "**Conservative defaults**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-008",
@@ -7484,8 +7514,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "f0f5b5c867b3a5e3a9b1249c77ca5dea05a4e990c9017ab3751605ca256819ff",
       "original_text": "| Ambiguity | Default |\n| --- | --- |\n| Unknown rate | 20% |\n| Unknown purchase status | Not deductible |\n| Unknown counterparty country | Domestic Moldova |\n| Unknown SaaS billing entity | Reverse charge (Box 7/8/13) |\n| Unknown blocked-input status | Blocked |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-009",
@@ -7493,8 +7527,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "2aef0b539ddca78e2df0b12363f071e720fec014b1619cf57c3ee1b382081f4c",
       "original_text": "**Red flag thresholds**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-010",
@@ -7502,8 +7540,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "cbddf4b8460f23c59dd5b6c6278fba3cf2d7e3976ee2a921d705a1a2e6e05ab0",
       "original_text": "| Threshold | Value |\n| --- | --- |\n| HIGH single-transaction size | MDL 100,000 |\n| HIGH tax-delta | MDL 5,000 |\n| MEDIUM counterparty concentration | >40% |\n| LOW absolute net TVA | MDL 150,000 |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-011",
@@ -7511,8 +7553,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "171b35251354f08179ab37bdf2c7e10117be087db4ca97f9f9420e36ded26b26",
       "original_text": "## Section 2 — Required inputs and refusal catalogue",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Ask the client first"
+      ],
+      "status": "Evidence and refusal topics retained; bank-only filing, stale threshold and blanket mixed/cross-Nistru refusal corrected"
     },
     {
       "id": "moldova-vat-OLD-012",
@@ -7520,8 +7565,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "cfda9a4d3feea7bec7c2ca7f35c9bc07aa4f010dc8508f5ed0c6363cd889d4d1",
       "original_text": "### Required inputs",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Ask the client first"
+      ],
+      "status": "Evidence and refusal topics retained; bank-only filing, stale threshold and blanket mixed/cross-Nistru refusal corrected"
     },
     {
       "id": "moldova-vat-OLD-013",
@@ -7529,8 +7577,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "7a0bbf0610986ab4a3fc0e59ff8fa09026b5a127252abb10a161a775e14a4e6b",
       "original_text": "- **Minimum viable input** — Bank statement. Acceptable from: Moldova Agroindbank (MAIB), Victoriabank, Moldindconbank, Mobiasbanca, Eximbank, or any other. (Minimum viable)\n- **Recommended input** — Invoices (factura fiscala), client IDNO. (Recommended)\n- **Ideal input** — Complete e-invoice register, prior TVA declaration. (Ideal)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Ask the client first"
+      ],
+      "status": "Evidence and refusal topics retained; bank-only filing, stale threshold and blanket mixed/cross-Nistru refusal corrected"
     },
     {
       "id": "moldova-vat-OLD-014",
@@ -7538,8 +7589,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "8d74058ca12a5e7ca06020d4daf0217c8a48009d7ea6865b8b8ad8604790106f",
       "original_text": "### Refusal catalogue",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Ask the client first"
+      ],
+      "status": "Evidence and refusal topics retained; bank-only filing, stale threshold and blanket mixed/cross-Nistru refusal corrected"
     },
     {
       "id": "moldova-vat-OLD-015",
@@ -7547,8 +7601,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "4609ee5d59a6d6b8cdd1245d09bb37ce81f5c260e57efed1f391e9c58042ec39",
       "original_text": "- **R-MD-1 — Non-registered** — Below MDL 1,200,000 and not voluntarily registered. (Message: \"Not TVA registered. Out of scope.\")\n- **R-MD-2 — Partial exemption** — Mixed supplies. (Message: \"Apportionment required.\")\n- **R-MD-3 — Transnistria** — Trigger: entity in Transnistria. (Message: \"Transnistrian entities have separate fiscal administration. Out of scope.\")\n- **R-MD-4 — Income tax** — Not defined trigger in prose beyond message. (Message: \"This skill handles TVA only.\")",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Ask the client first"
+      ],
+      "status": "Evidence and refusal topics retained; bank-only filing, stale threshold and blanket mixed/cross-Nistru refusal corrected"
     },
     {
       "id": "moldova-vat-OLD-016",
@@ -7556,8 +7613,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "7d262732b20feb1947cb3ba6310f41973e664e9231c41ba303554a4369e839e2",
       "original_text": "## Section 3 — Supplier pattern library",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "archived original",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Source/change-log/history retained in archive; duplicated old headings/disclaimer consolidated, no substantive legal topic dropped"
     },
     {
       "id": "moldova-vat-OLD-017",
@@ -7565,8 +7626,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "7d994e3778b1b3ab6eb860313737064bdbf112cf23f35e73a3f563e51ba026e9",
       "original_text": "### 3.1 Moldovan banks (exempt — exclude)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-018",
@@ -7574,8 +7639,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "909dd1a1580c65256e5793c4b525ac108eed00cd4261fdae362665a76d6f8ee7",
       "original_text": "**Moldovan banks table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-019",
@@ -7583,8 +7652,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "0cff43a567fba1d9b25805dfc20a600412ef462ab31d641aaafa1a5a7d50824b",
       "original_text": "| Pattern | Treatment | Notes |\n| --- | --- | --- |\n| MAIB, MOLDOVA AGROINDBANK | EXCLUDE | Financial service, exempt |\n| VICTORIABANK, VICTORIA | EXCLUDE | Same |\n| MOLDINDCONBANK, MICB | EXCLUDE | Same |\n| MOBIASBANCA, EXIMBANK | EXCLUDE | Same |\n| DOBANDA, INTEREST | EXCLUDE | Interest |\n| CREDIT, IMPRUMUT | EXCLUDE | Loan |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-020",
@@ -7592,8 +7665,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "a691d15ba4960a2cd7701e40b6f5237a1665aecc9a61ab839e13b76d56943d86",
       "original_text": "### 3.2 Government (exclude)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-021",
@@ -7601,8 +7678,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "3a3eb5e0a371afc63a41a2f3e0f525491749f291fed8735acd62bc1a8a9bac8c",
       "original_text": "**Government table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-022",
@@ -7610,8 +7691,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "45a02a3a0d29e28851413fa7f304eabf210c2d15af8b7790c5091435f8aed854",
       "original_text": "| Pattern | Treatment | Notes |\n| --- | --- | --- |\n| SFS, SERVICIUL FISCAL | EXCLUDE | Tax payment |\n| VAMA, CUSTOMS | EXCLUDE | Duty (import TVA separate) |\n| CNAS, SOCIAL INSURANCE | EXCLUDE | Social contributions |\n| ASP, GOVERNMENT | EXCLUDE | Government fee |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-023",
@@ -7619,8 +7704,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "67f4588f2464bba98c2264fbf854957ba42b92605b93415f4d16adee763ef46d",
       "original_text": "### 3.3 Utilities",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-024",
@@ -7628,8 +7717,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "b246db40b3a870af0386b3fa31b1812043991790c405bb2fc2305fd8ca3f9d94",
       "original_text": "**Utilities table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-025",
@@ -7637,8 +7730,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "283b90d4b6e3f19c69d178c4862cd1189ce1710ddd4df1c4f74d24b7d171acb8",
       "original_text": "| Pattern | Treatment | Box | Notes |\n| --- | --- | --- | --- |\n| MOLDOVAGAZ, MOLDELECTRICA | Domestic (8% gas / 20% electricity) | 11 or 10 | Gas at reduced rate; electricity at standard |\n| APA-CANAL, REGIA APA | Domestic 20% | 10 | Water |\n| MOLDTELECOM, ORANGE MD, MOLDCELL | Domestic 20% | 10 | Telecoms |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-026",
@@ -7646,8 +7743,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "b4e0360d49633e8643763456b1020e2714b2897c7220a63e55b696db8e8f18a7",
       "original_text": "### 3.4 Insurance (exempt — exclude)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-027",
@@ -7655,8 +7756,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "eb4c6ec7decb7eb3a2288549fc3698920a16c63b8d352d619f55000f31faa53f",
       "original_text": "**Insurance table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-028",
@@ -7664,8 +7769,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "7d96ea8fed43a8907b3c88ec51b9a144462cd79a4912812fdd0d05d69ae3cfda",
       "original_text": "| Pattern | Treatment | Notes |\n| --- | --- | --- |\n| MOLDASIG, GRAWE, DONARIS | EXCLUDE | Exempt |\n| ASIGURARE, INSURANCE | EXCLUDE | Same |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-029",
@@ -7673,8 +7782,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "97fea63693c5b968457af3f177f5a4e30b572587c4ccbad9f8520dc174f9f7e3",
       "original_text": "### 3.5 Food and entertainment (blocked)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-030",
@@ -7682,8 +7795,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "a3eedd6683ab9acc87c8b1ebf790741959e04c2895354a8603529be89b0182d8",
       "original_text": "**Food and entertainment table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-031",
@@ -7691,8 +7808,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "1f221d9d334a43cde9c981d944bf7054c0a615ea5a13e2f395322c4bc58e4a7b",
       "original_text": "| Pattern | Treatment | Notes |\n| --- | --- | --- |\n| LINELLA, NR 1, METRO MD | Default BLOCK | Personal provisioning |\n| RESTAURANT, CAFENEA, BAR | Default BLOCK | Entertainment blocked |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-032",
@@ -7700,8 +7821,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "6f0c0078d2deb13da439c2b2c8a88e0a51ea1c02c67916482dd7c6ca4443711c",
       "original_text": "### 3.6 SaaS — non-resident (reverse charge)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-033",
@@ -7709,8 +7834,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "4a9f77750ee68c6f5c1f03fbee8e41c70d02903f7c48fc05d4134e66004585d6",
       "original_text": "**SaaS table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-034",
@@ -7718,8 +7847,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "38e95f91ad290591cbfa5b7af5d0195cdfdd11d138ca40ebb519e275d3b0ce76",
       "original_text": "| Pattern | Box | Notes |\n| --- | --- | --- |\n| GOOGLE, MICROSOFT, ADOBE, META | 7/8/13 | Reverse charge at 20% |\n| SLACK, ZOOM, NOTION, AWS, ANTHROPIC, OPENAI | 7/8/13 | Same |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-035",
@@ -7727,8 +7860,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "a0187d6ae3ecaa6ffa59b72c50aa9c6cc8f9482baf4e2c97cfd9c3464e5d293a",
       "original_text": "### 3.7 Professional services",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-036",
@@ -7736,8 +7873,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "9b497437ce216878ca5ccdfcb470a279805ded8509ee4538b10de94b0f8290a3",
       "original_text": "**Professional services table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-037",
@@ -7745,8 +7886,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "ab40a244fc3b090bbac818bd361b879bd744b163d4e4fda36522bba64fc993f1",
       "original_text": "| Pattern | Treatment | Box |\n| --- | --- | --- |\n| NOTAR, NOTARY | Domestic 20% | 10 |\n| AUDITOR, CONTABIL | Domestic 20% | 10 |\n| AVOCAT, LAWYER | Domestic 20% | 10 |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-038",
@@ -7754,8 +7899,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "90939eda537813899b7989b0495a06fa2f2c59ca2b1e0fc7dd8e450a31ccfc04",
       "original_text": "### 3.8 Payroll and exclusions",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-039",
@@ -7763,8 +7912,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "22bb2550859a449d7a6472d2d09b41ba889773299b708960473bdc103af992d4",
       "original_text": "**Payroll and exclusions table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-040",
@@ -7772,8 +7925,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "b7999cc9b962e0e3ea33864718e97c003143ac5cd6eebf8d31ec8e8c158cd9fd",
       "original_text": "| Pattern | Treatment | Notes |\n| --- | --- | --- |\n| SALARIU, SALARY | EXCLUDE | Wages |\n| DIVIDEND | EXCLUDE | Out of scope |\n| INTERN, TRANSFER INTERN | EXCLUDE | Internal |\n| ATM, NUMERAR | TIER 2 — ask | Default exclude |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base: Classify the supply before the payment",
+        "The base: Exemptions are transaction-specific",
+        "Deadlines and filing: Working paper and predecessor classification controls"
+      ],
+      "status": "Every supplier pattern retained as a search prompt; unsupported blanket legal treatment corrected"
     },
     {
       "id": "moldova-vat-OLD-041",
@@ -7781,8 +7938,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "ab36911e0c0a78bff8fe1780d77cf7aebbd6c0d1b808387022de0fac77725063",
       "original_text": "## Section 4 — Worked examples",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-042",
@@ -7790,8 +7952,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "f832ff45a33a3cd1c08a4b35ed5113661fb04eb19213cbb2c9ab35e648f9f795",
       "original_text": "### Example 1 — Non-resident SaaS reverse charge",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-043",
@@ -7799,8 +7966,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "ce68412ae287274876db8d5b63735af7b4533dddc6ca2cb391715502d9ff706f",
       "original_text": "**Input line:** `03.04.2026 ; NOTION LABS INC ; DEBIT ; Subscription ; USD 16.00 ; MDL 288`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-044",
@@ -7808,8 +7980,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "5064f3d83d80c582bdb46a4065a85b0700970194e6419beb249f273187fa3728",
       "original_text": "**Example 1 table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-045",
@@ -7817,8 +7994,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "e97c964a4601ec41090fcc8115b86b0d726181b20412c6c04a2d2f27df923214",
       "original_text": "| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 03.04.2026 | NOTION LABS INC | -288 | -288 | 58 | 20% | 13 | 7/8 | N |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-046",
@@ -7826,8 +8008,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "5b25d94f6963530d2c758eb64fa9de2d6af59015f83f6f4beae8d6245d0d6b38",
       "original_text": "### Example 2 — Domestic utility at standard rate",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-047",
@@ -7835,8 +8022,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "32c31b2f4a030add5c2bb5c8f3c9e88c6961b31579d0603fea27615285e7ab26",
       "original_text": "**Input line:** `10.04.2026 ; MOLDTELECOM ; DEBIT ; Internet April ; -450 ; MDL`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-048",
@@ -7844,8 +8036,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "1c021e2e4728695d922c475fb06bb5adac9c14c5bed2b74be72185ac82794bc0",
       "original_text": "**Example 2 table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-049",
@@ -7853,8 +8050,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "21b0b53d17e32416b87c27dc637237744c52e45190efc08159ea3654adf6358f",
       "original_text": "| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 10.04.2026 | MOLDTELECOM | -450 | -375 | -75 | 20% | 10 | N |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-050",
@@ -7862,8 +8064,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "be5971541309465141b25a40a4ff8daca18478b0797c2bf823a4d54cb6df721e",
       "original_text": "### Example 3 — Reduced rate purchase (gas at 8%)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-051",
@@ -7871,8 +8078,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "a78e43e12124cf8d91a0c06ad080c627bf019870fb8a07af67929482e04c4a54",
       "original_text": "**Input line:** `12.04.2026 ; MOLDOVAGAZ ; DEBIT ; Natural gas ; -1,620 ; MDL`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-052",
@@ -7880,8 +8092,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "c3c54d071b4c0bc1977f09d74d15d1b0ecf4a24598b5fedec5ed32bfe8fd18b4",
       "original_text": "**Example 3 table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-053",
@@ -7889,8 +8106,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "61e4d36b0c45dec31496d7a93f33c8da6bfeea85669b0b50113c354b86e80693",
       "original_text": "| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 12.04.2026 | MOLDOVAGAZ | -1,620 | -1,500 | -120 | 8% | 11 | N |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-054",
@@ -7898,8 +8120,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "730276681b35970b101966c232d9109b72829fcb84aae98c7eb8956f5aa285fe",
       "original_text": "### Example 4 — Export (zero-rated)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-055",
@@ -7907,8 +8134,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "d11b3372b47baaacd804298f63b0aee958dddda0774732b47ebbcb3d10e7424e",
       "original_text": "**Input line:** `22.04.2026 ; TECHCORP GMBH ; CREDIT ; IT services ; +18,000 ; MDL`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-056",
@@ -7916,8 +8148,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "e4ebc1529275365d9aec3a8d004a05483294575bf814dccc7ce0a45d519733bd",
       "original_text": "**Example 4 table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-057",
@@ -7925,8 +8162,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "e20772779f32439c49bae9281eeffaaf9f0136f52755107775695a8f2b0f3ba3",
       "original_text": "| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 22.04.2026 | TECHCORP GMBH | +18,000 | +18,000 | 0 | 0% | 5 | Y | \"Verify export docs\" |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-058",
@@ -7934,8 +8176,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "35c0f48232e1d5c2cf46f9d8d5bf3a773662615392356adddc4fb083db2bbb22",
       "original_text": "### Example 5 — Entertainment blocked",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-059",
@@ -7943,8 +8190,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "4dbeea68e62cb526430ce68eaeab759ef88e06b96b2919b43355306ec0daa83f",
       "original_text": "**Input line:** `15.04.2026 ; RESTAURANT LA PLACINTE ; DEBIT ; Dinner ; -800 ; MDL`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-060",
@@ -7952,8 +8204,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "90bfc49705a2c22ce6a595da7f69fe5bdff1ac8130e3c008085dcace236cdb9c",
       "original_text": "**Example 5 table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-061",
@@ -7961,8 +8218,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "5f5efb698bf3a1a9c86538971869eb25e5c99c1dc909e12ff09fd9794b50f301",
       "original_text": "| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 15.04.2026 | RESTAURANT LA PLACINTE | -800 | -800 | 0 | — | — | Y | \"Entertainment: blocked\" |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-062",
@@ -7970,8 +8232,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "52b6fc0bd29e40b21efd74dd0ccc51ed6196898eb54d1c04d09b4aa213c9bc83",
       "original_text": "### Example 6 — Import of goods",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-063",
@@ -7979,8 +8246,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "d93b8b90b97ba234ae9e191977ce0eff4d7aeb4da7118e2c9646e7c81db789d8",
       "original_text": "**Input line:** `25.04.2026 ; VAMA ; DEBIT ; Import TVA ; -12,000 ; MDL`",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-064",
@@ -7988,8 +8260,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "85f9941dbca930a38f48d4c5df95c8f01e1e15a4f3e5f02f40dcb60a6ac02ee8",
       "original_text": "**Example 6 table**",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-065",
@@ -7997,8 +8274,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "bf2a75918ceafb42a42d23c48d99a57309e993ab6195a560cf6e6c9cc9a77af1",
       "original_text": "| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 25.04.2026 | VAMA | -12,000 | -10,000 | -2,000 | 20% | 12 | N |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "archived original",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All six original samples preserved; SaaS arithmetic and customs-payment misreading corrected; actual supplier/use/export proof explicitly unconfirmed"
     },
     {
       "id": "moldova-vat-OLD-066",
@@ -8006,8 +8288,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "14afd73074c87fac39d75626838b9e71c2ebf6d5d2c742ee634800afe9a1c060",
       "original_text": "## Section 5 — Tier 1 classification rules (compressed)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-067",
@@ -8015,8 +8302,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "3c2d598edc3df816cfab276f7933c60067d58c9b318d7ce0fa8bbf3af154a2f0",
       "original_text": "### 5.1 Standard rate 20% (Fiscal Code Article 96)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-068",
@@ -8024,8 +8316,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "bc60ed6abe7b32392918e9c6ee6c2da30b3bff98e6d4f5af767327718651d4f2",
       "original_text": "- **Standard rate** — 20%",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-069",
@@ -8033,8 +8330,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "007176390c0bab6ccbc2d8e42f68b296add7f1c17dd545daece5c9f4928eb7ff",
       "original_text": "### 5.2 Reduced rate 8%",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-070",
@@ -8042,8 +8344,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "55debb63d9896e95f7294760344e94c51eb8594519983b47c3d88bb7fe343efd",
       "original_text": "- **Reduced rate** — 8% (Bread, dairy, agricultural produce, medicines, natural gas, LPG. Sales to Box 3/4. Purchases to Box 11.)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-071",
@@ -8051,8 +8358,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "296177cb9766518a0b0f24a2ffe6b76f6e291a2f2da846813e92b26b34e983e4",
       "original_text": "### 5.3 Zero rate",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-072",
@@ -8060,8 +8372,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "f102fe5fe4abd23541ea1d020f14e0b5de49f25a02672599ea44860364fcd979",
       "original_text": "- **Zero rate** — 0% (Exports, international transport. Box 5.)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-073",
@@ -8069,8 +8386,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "7c32e3534d4d8f0112bc2ba6e54bf9dd7ae79399a6b62e04536feeb3ff9936c0",
       "original_text": "### 5.4 Exempt",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-074",
@@ -8078,8 +8400,13 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "e0beef3b9167ba07b64a315c0419538265651faed935ce65c9f22b8daf30bf5f",
       "original_text": "- **Exempt supplies** — Financial, insurance, medical, educational, residential rental, postal.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ],
+      "status": "Original rate/scope/exemption subjects retained with current legal conditions, dated changes and corrected deadline"
     },
     {
       "id": "moldova-vat-OLD-075",
@@ -8087,8 +8414,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "2fd36babb93ad64bbe48e0f2ed84ea870e8b31084764bf8fbec7e24889b7b313",
       "original_text": "### 5.5 Reverse charge (Article 109)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Current VAT12 mapping",
+        "The base: Calculate eligible input VAT"
+      ],
+      "status": "Invented old boxes replaced by official 24-box map; underlying imported-service/customs topics retained"
     },
     {
       "id": "moldova-vat-OLD-076",
@@ -8096,8 +8426,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "47315e0d3507d126fc1359e7c85a41341a9734ec84d7d0eb4e9d2c7167ed48d7",
       "original_text": "- **Reverse charge** — Non-resident services. Self-assess at 20%. Box 7/8 (output), Box 13 (input).  _(Article 109)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Current VAT12 mapping",
+        "The base: Calculate eligible input VAT"
+      ],
+      "status": "Invented old boxes replaced by official 24-box map; underlying imported-service/customs topics retained"
     },
     {
       "id": "moldova-vat-OLD-077",
@@ -8105,8 +8438,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "2bb753acf0bc85c9744873286df8b3237fc29c4e8ddf715a2aa5256bc70954b6",
       "original_text": "### 5.6 Import TVA",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Current VAT12 mapping",
+        "The base: Calculate eligible input VAT"
+      ],
+      "status": "Invented old boxes replaced by official 24-box map; underlying imported-service/customs topics retained"
     },
     {
       "id": "moldova-vat-OLD-078",
@@ -8114,8 +8450,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "f385c5f8eec19c8a0e557f50ba468d37c98bdb3342840c2029f1731a29e43d4d",
       "original_text": "- **Import TVA** — At customs. Box 12.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Current VAT12 mapping",
+        "The base: Calculate eligible input VAT"
+      ],
+      "status": "Invented old boxes replaced by official 24-box map; underlying imported-service/customs topics retained"
     },
     {
       "id": "moldova-vat-OLD-079",
@@ -8123,8 +8462,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "664beb031714356dfb776f152a619f8511bde2087dc6e3e19cc8eea5fe995bfe",
       "original_text": "### 5.7 Blocked input",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-080",
@@ -8132,8 +8475,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "7106265c653e07e7123baf688b34ffeed37d9631bd5232dbfdc5d82eb5049f9e",
       "original_text": "- **Blocked input** — Passenger vehicles, entertainment, personal consumption, no valid invoice.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-081",
@@ -8141,8 +8488,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "ef7c1f967a21b652000753e7630b3de9194e189d2166cd12830ce533f2faa997",
       "original_text": "## Section 6 — Tier 2 catalogue (compressed)",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-082",
@@ -8150,8 +8501,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "a0226946fc27d5214405716c85749760baaa6df696770843b9f116cccc05e925",
       "original_text": "### 6.1 Fuel/vehicles — *Default:* 0%.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-083",
@@ -8159,8 +8514,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "56ad4c0b30da02a368bcba3ac8358203980298dd5408907ac0f47209a3ea3eb9",
       "original_text": "- **Fuel/vehicles default** — 0%",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-084",
@@ -8168,8 +8527,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "a5778250a89862e8c34dabb805348cfcd87ee7ac0ea689ce30cc2013a0e3e391",
       "original_text": "### 6.2 Entertainment — *Default:* block.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-085",
@@ -8177,8 +8540,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "07d264d5832b2673e22daff21269918ff793f2fa0b0a98ff7714cc52b409f447",
       "original_text": "- **Entertainment default** — block",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-086",
@@ -8186,8 +8553,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "fc117cbfcd3264366b475977cb5a48ab2e2500317f9bd0e2d13f54846f9a55cb",
       "original_text": "### 6.3 SaaS entities — *Default:* reverse charge at 20%.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-087",
@@ -8195,8 +8566,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "5abf79a4e5fd588430421ad49c0d389ec11e84abdb052c3b01ff6a8505747872",
       "original_text": "- **SaaS entities default** — reverse charge at 20%",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-088",
@@ -8204,8 +8579,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "0b03322c3d3787982dfe1a80b58faac78e3a273633a719975dd8663a552cca6a",
       "original_text": "### 6.4 8% vs 20% — *Default:* 20%.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-089",
@@ -8213,8 +8592,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "7e2eb280208d8329dd3a5587b081667d518ad149c761756a2c8dc5f6fba76ee0",
       "original_text": "- **8% vs 20% default** — 20%",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-090",
@@ -8222,8 +8605,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "79dea4a7e9228c355bb788dc760893640aa058dbdeed26ec125ff859857a7248",
       "original_text": "### 6.5 Owner transfers — *Default:* exclude.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-091",
@@ -8231,8 +8618,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "c39bea42f3da7dcda187959d433567108700126442c3c5075473773148cfb774",
       "original_text": "- **Owner transfers default** — exclude",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-092",
@@ -8240,8 +8631,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "65018acd39989cbd008e1912c7f2956d814fde0aacf6ebaee5f16e802b51bf56",
       "original_text": "### 6.6 Foreign incoming — *Default:* zero-rated.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-093",
@@ -8249,8 +8644,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "5c9599a307d68d9fd4c06ebf3b5f9e05dcda9b2e248b585b76f77a9d539bac1c",
       "original_text": "- **Foreign incoming default** — zero-rated",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-094",
@@ -8258,8 +8657,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "a8f00213b25f502ad61f3dfd3e0e0c656154a37ea3a38bc3e40df327da8947d3",
       "original_text": "### 6.7 Cash withdrawals — *Default:* exclude.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-095",
@@ -8267,8 +8670,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "dceaee56a877aee4a90df52bc9e1292a11be6ef86a80d31cac314cf6cc903684",
       "original_text": "- **Cash withdrawals default** — exclude",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-096",
@@ -8276,8 +8683,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "8f39be9411d538d27aced593ae6a1fdde850987a832e53b089183e922215f101",
       "original_text": "### 6.8 Rent — *Default:* no TVA.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-097",
@@ -8285,8 +8696,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "9f921d9263c54347803896a5936e1aa92b648d77f12c3c68d9530ba991345b8a",
       "original_text": "- **Rent default** — no TVA",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "status": "Unsupported tax defaults/refusal/materiality thresholds corrected; private workflow values identified as nonstatutory"
     },
     {
       "id": "moldova-vat-OLD-098",
@@ -8294,8 +8709,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "6f6510b2bb9cbaf0109ca130450d1fad4906b27060ee73f1505215ad053b5904",
       "original_text": "## Section 7 — Excel working paper template",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Working paper/terms retained; bank export conventions, IBAN claim and VAT foreign-currency conversion not recertified as sourced law"
     },
     {
       "id": "moldova-vat-OLD-099",
@@ -8303,8 +8721,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "4822aeb88d74128846e24181178fa38c705c91e83f2b0c0e11a455c2255d7862",
       "original_text": "Per `vat-workflow-base` Section 3 with Moldova-specific box codes.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Working paper/terms retained; bank export conventions, IBAN claim and VAT foreign-currency conversion not recertified as sourced law"
     },
     {
       "id": "moldova-vat-OLD-100",
@@ -8312,8 +8733,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "4b4d86ca5c960fe910047ee8338c11cea4c86f6823564bd957a1ca768f55f8d1",
       "original_text": "## Section 8 — Moldovan bank statement reading guide",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Working paper/terms retained; bank export conventions, IBAN claim and VAT foreign-currency conversion not recertified as sourced law"
     },
     {
       "id": "moldova-vat-OLD-101",
@@ -8321,8 +8745,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "78ae3657eb826c74a636f4e9288f65edebb6a0d5cbf244d84fb77c786f96c8e5",
       "original_text": "**CSV conventions.** MAIB and Victoriabank use semicolons, DD.MM.YYYY.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Working paper/terms retained; bank export conventions, IBAN claim and VAT foreign-currency conversion not recertified as sourced law"
     },
     {
       "id": "moldova-vat-OLD-102",
@@ -8330,8 +8757,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "ab52775b9cb214795d7f6b304d379b62fd129e4ea486bbc5572d6e0c0be81f24",
       "original_text": "**Romanian terms.** Salariu (salary), dobanda (interest), credit/imprumut (loan), numerar (cash), intern (internal), vama (customs), asigurare (insurance), contabil (accountant).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Working paper/terms retained; bank export conventions, IBAN claim and VAT foreign-currency conversion not recertified as sourced law"
     },
     {
       "id": "moldova-vat-OLD-103",
@@ -8339,8 +8769,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "c071fb7f7ca5c049672029bc42538c7bcec94e33f39788fb5e11fb4f82096dbe",
       "original_text": "**Foreign currency.** Convert to MDL at National Bank of Moldova rate.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Working paper/terms retained; bank export conventions, IBAN claim and VAT foreign-currency conversion not recertified as sourced law"
     },
     {
       "id": "moldova-vat-OLD-104",
@@ -8348,8 +8781,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "a1779029049e7704a8351f54bcfdb2d75e96ac10b572af9e723a5fdbcd9a6c03",
       "original_text": "**IBAN prefix.** MD = Moldova.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Working paper/terms retained; bank export conventions, IBAN claim and VAT foreign-currency conversion not recertified as sourced law"
     },
     {
       "id": "moldova-vat-OLD-105",
@@ -8357,8 +8793,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "16882be072920550ed35e0a9e384022131a0f7dc87937fa1428850b256fff011",
       "original_text": "**Transnistria note.** Transactions with Transnistrian counterparties require special handling — R-MD-3 fires.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "Working paper/terms retained; bank export conventions, IBAN claim and VAT foreign-currency conversion not recertified as sourced law"
     },
     {
       "id": "moldova-vat-OLD-106",
@@ -8366,8 +8805,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "e71026b362bf0b31f467ec01f5fccac0387857b557dc4a7660a748d28aed99fb",
       "original_text": "## Section 9 — Onboarding fallback",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-107",
@@ -8375,8 +8817,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "b7cdd0926c7debb47e2bb42e50673c4633a0cc066cdf3f8be1fc52c7108783bc",
       "original_text": "### 9.1 Entity type — *Fallback:* \"SRL, SA, or sole trader (II)?\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-108",
@@ -8384,8 +8829,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "0a514f53dfeee2e843015c8aec0d314b1e9e9b5e06962ed0e0f98ac5dd300b85",
       "original_text": "- **Entity type fallback** — \"SRL, SA, or sole trader (II)?\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-109",
@@ -8393,8 +8841,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "cbd1348174017021e1d68923bd57ebd36a8281a89dd18f5bae230df397f7a803",
       "original_text": "### 9.2 TVA registration — *Fallback:* \"TVA payer?\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-110",
@@ -8402,8 +8853,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "6f4d35bdf3d93357821aadab98a8676b3342897a100beabb5caf973a3ef0c83b",
       "original_text": "- **TVA registration fallback** — \"TVA payer?\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-111",
@@ -8411,8 +8865,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "06529f8075f025a4dc7b3e35dec3088b7af2808f827f1a4560bb30c4570fa966",
       "original_text": "### 9.3 IDNO — *Fallback:* \"What is your IDNO?\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-112",
@@ -8420,8 +8877,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "f7f77b7d8b9ff87950b9691ad70bf361b48d0d11945a477d0f64807674f8f685",
       "original_text": "- **IDNO fallback** — \"What is your IDNO?\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-113",
@@ -8429,8 +8889,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "9615ee986094b71315238c504abafe60adea66354a09090cbeca83a674d985b6",
       "original_text": "### 9.4 Period — *Inference:* statement dates.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-114",
@@ -8438,8 +8901,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "61be96f168ba501755b71d04802cf076e090f75f5a6a5dd49f9d6d866937c26c",
       "original_text": "- **Period inference** — statement dates",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-115",
@@ -8447,8 +8913,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "0d2b17774cb68680680139ef3aafeaf010a3aa078f6f826445dfa0d33db90b38",
       "original_text": "### 9.5 Industry — *Fallback:* \"What does the business do?\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-116",
@@ -8456,8 +8925,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "88bb509e873400bb740c48ce659c51516a9dc5139599e6af0b4bf956964fa75b",
       "original_text": "- **Industry fallback** — \"What does the business do?\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-117",
@@ -8465,8 +8937,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "4dc4e06d4227cb7fb6086a8bb0eb7936ff9b6a9ac6088b9fa2b8cd76fb749432",
       "original_text": "### 9.6 Credit B/F — *Always ask.*",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-118",
@@ -8474,8 +8949,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "70d4343d5c8b319a5d464ebf41486db31d16def334be96292e60833b0f3d7f9f",
       "original_text": "- **Credit B/F** — Always ask.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-119",
@@ -8483,8 +8961,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "a91cb4f372326722736c4de27ae9dc40dda92b3338669f734a1864ddf6c69535",
       "original_text": "### 9.7 Transnistria — *Fallback:* \"Any transactions with Transnistria?\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-120",
@@ -8492,8 +8973,11 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "bba91365b4848383cb8cfa759336fd0ff48dcfcbe7f0c418b8f78671a01e7fa8",
       "original_text": "- **Transnistria fallback** — \"Any transactions with Transnistria?\"",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Ask the client first",
+        "Deadlines and filing"
+      ],
+      "status": "Original onboarding topics retained; filing period depends on statutory tax points rather than statement dates alone"
     },
     {
       "id": "moldova-vat-OLD-121",
@@ -8501,8 +8985,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "2a11e3904eb05e7c71d6c21bec19a38091437e2d073f0dcf9186e304a00897e3",
       "original_text": "## Section 10 — Reference material",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "archived original",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Source/change-log/history retained in archive; duplicated old headings/disclaimer consolidated, no substantive legal topic dropped"
     },
     {
       "id": "moldova-vat-OLD-122",
@@ -8510,8 +8998,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "6a69d38edf943be7408f2984d1170da3d91cbd12ac659142a1174690c133378f",
       "original_text": "### Sources",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "archived original",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Source/change-log/history retained in archive; duplicated old headings/disclaimer consolidated, no substantive legal topic dropped"
     },
     {
       "id": "moldova-vat-OLD-123",
@@ -8519,8 +9011,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "edf1b9bb4d2a73ca8b0ff77ff2468899fb8b2f818212068e68d14aad7e47cb70",
       "original_text": "- **Sources list** — 1. Fiscal Code of Moldova — Title III (TVA) 2. SFS — https://servicii.fisc.md 3. National Bank of Moldova — https://www.bnm.md",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "archived original",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Source/change-log/history retained in archive; duplicated old headings/disclaimer consolidated, no substantive legal topic dropped"
     },
     {
       "id": "moldova-vat-OLD-124",
@@ -8528,8 +9024,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "30070eebe1746469d05ac745e7f3943dbe95a48aa87eee860d6b5e360015724a",
       "original_text": "### Change log",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "archived original",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Source/change-log/history retained in archive; duplicated old headings/disclaimer consolidated, no substantive legal topic dropped"
     },
     {
       "id": "moldova-vat-OLD-125",
@@ -8537,8 +9037,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "72f38b11c44ff93cc0a65da4ae87486c063fcdf53e2a3119c3947f969cfa4057",
       "original_text": "- **v2.0 (April 2026):** Full rewrite to Malta v2.0 10-section structure.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "archived original",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Source/change-log/history retained in archive; duplicated old headings/disclaimer consolidated, no substantive legal topic dropped"
     },
     {
       "id": "moldova-vat-OLD-126",
@@ -8546,8 +9050,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "71e8f1de71a4f049c71b3b2572ae400a9320eefd75907b96d16e9c1f67089326",
       "original_text": "## End of Moldova VAT (TVA) Skill v2.0",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "archived original",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Source/change-log/history retained in archive; duplicated old headings/disclaimer consolidated, no substantive legal topic dropped"
     },
     {
       "id": "moldova-vat-OLD-127",
@@ -8555,8 +9063,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "694d80a0c515e397a6f7fffe8d899d7eff3724673440d179a00c2995d439b15a",
       "original_text": "## Disclaimer",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "archived original",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Source/change-log/history retained in archive; duplicated old headings/disclaimer consolidated, no substantive legal topic dropped"
     },
     {
       "id": "moldova-vat-OLD-128",
@@ -8564,8 +9076,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "d0f85d745adbbb6fa4bb2d9cefdcb70239bcb511f1aca8d3e8d5ec0749150e79",
       "original_text": "This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "archived original",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Source/change-log/history retained in archive; duplicated old headings/disclaimer consolidated, no substantive legal topic dropped"
     },
     {
       "id": "moldova-vat-OLD-129",
@@ -8573,8 +9089,12 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "e6097dc710d0439015cb49bab66f9aeaa3e744a0ac917c019e5a84fc9abd2ddb",
       "original_text": "The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Sources",
+        "archived original",
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Source/change-log/history retained in archive; duplicated old headings/disclaimer consolidated, no substantive legal topic dropped"
     },
     {
       "id": "moldova-vat-OLD-130",
@@ -8582,8 +9102,10 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "original_text": "<!-- openaccountants-cta-block -->",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped CTA text and attribution unchanged"
     },
     {
       "id": "moldova-vat-OLD-131",
@@ -8591,8 +9113,10 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
       "original_text": "---",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped CTA text and attribution unchanged"
     },
     {
       "id": "moldova-vat-OLD-132",
@@ -8600,8 +9124,10 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
       "original_text": "## Talk to a verified accountant",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped CTA text and attribution unchanged"
     },
     {
       "id": "moldova-vat-OLD-133",
@@ -8609,8 +9135,10 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
       "original_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped CTA text and attribution unchanged"
     },
     {
       "id": "moldova-vat-OLD-134",
@@ -8618,8 +9146,10 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
       "original_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped CTA text and attribution unchanged"
     },
     {
       "id": "moldova-vat-OLD-135",
@@ -8627,8 +9157,10 @@
       "original_sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
       "unit_sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
       "original_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Stamped CTA text and attribution unchanged"
     }
   ]
 }
