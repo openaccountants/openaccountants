@@ -1,110 +1,201 @@
 ---
 name: no-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Norway MVA return (MVA-melding) for any client. Trigger on phrases like "prepare MVA return", "Norwegian VAT", "MVA-melding", "merverdiavgift", or any request involving Norway VAT filing. Norway is NOT an EU member but IS in the EEA. There are NO intra-community supplies. All goods from EU are imports. ALWAYS read this skill before touching any Norway MVA work.
+description: "Use this skill for Norwegian VAT (merverdiavgift, MVA) for 2026: registration, rates, deductions and the VAT return (skattemelding for merverdiavgift). It covers the NOK 50,000 registration limit (NOK 140,000 for charities, NOK 3 million for sports tickets), pre-registration, the 25% standard rate and the 15%, 12% and 11.11% reduced rates, exempt and zero-rated supplies, input VAT and the blocked items (entertainment, serving, passenger cars, staff benefits), the NOK 10,000 bank-payment rule, two-monthly and annual periods and their deadlines, imports, remote services bought from abroad, VOEC for low-value goods, corrections, enforcement fines, additional tax and interest. Norway is in the EEA but not the EU: there are no intra-community supplies. Trigger on: MVA, mva-melding, merverdiavgift, Norwegian VAT, VAT return Norway, VOEC, reverse charge Norway, import VAT Norway. Out of scope: no-income-tax, no-corporate-income-tax, no-employer-payroll, no-social-contributions, no-transfer-pricing; VAT compensation for public bodies and property adjustment are flagged only."
+version: 2.1
 jurisdiction: "NO"
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-30
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Norway VAT return: registration to reconciliation
+# Norway: VAT (merverdiavgift) for 2026
 
-Figures are for tax year 2026 and guidance was retrieved on 24 September 2026. This skill is for an ordinary business registered in Norway’s VAT Register. It covers registration, classification control, input-VAT deduction limits, return preparation, payment and evidence. It does not decide a transaction’s place of supply, a zero-rate/exemption provision, partial deduction, joint registration, VAT compensation, VOEC, customs duty or a foreign-business refund.
+This skill covers Norwegian value added tax (merverdiavgift, MVA) for 2026. The law is the VAT Act (merverdiavgiftsloven, lov 2009-06-19-58) and the VAT Regulation (merverdiavgiftsforskriften, FOR-2009-12-15-1540). The Storting sets the rates each year: for 2026 in the decision on VAT (Stortingsvedtak om merverdiavgift for 2026, FOR-2025-12-18-2752). Returns, deadlines and penalties are in the Tax Administration Act (skatteforvaltningsloven) and its regulation; due dates and interest in the Tax Payment Act (skattebetalingsloven). Skatteetaten administers VAT; Norwegian Customs handles imports for businesses not registered. Amounts are in Norwegian kroner (NOK).
 
-## Rates, threshold and annual-period figures
+Norway is part of the EEA but not the EU and not the EU VAT area. There are no intra-community supplies or acquisitions and no EU VAT number checks that change Norwegian treatment. Goods from an EU country are imports like goods from anywhere else.
 
-| Item | Current published figure | Use | Source |
-| --- | --- | --- | --- |
-| Registration threshold | Taxable sales and withdrawals **exceeding** NOK 50,000, excluding VAT, in any 12-month period | Registration is required once the limit has been exceeded, not when it is reached. Only VAT-able turnover counts. | [Registration](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/register-change-delete/) and [VAT Act § 2-1](https://www.skatteetaten.no/rettskilder/type/handboker/merverdiavgiftshandboken/gjeldende/M-2/M-2-1/) |
-| Registration threshold, charitable and non-profit organisations | NOK 140,000 excluding VAT | Use instead of NOK 50,000 only for charitable and non-profit institutions and organisations. | [Registration](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/register-change-delete/) |
-| Registration threshold, tickets to sporting events | NOK 3 million | Applies to sales of the right to attend sporting events; the two top men’s football divisions and the top men’s ice hockey division use the ordinary limit. | [VAT Act § 2-1](https://www.skatteetaten.no/rettskilder/type/handboker/merverdiavgiftshandboken/gjeldende/M-2/M-2-1/) |
-| Normal VAT rate | 25% | Use only after confirming normal-rated Norwegian treatment. | [Rates](https://www.skatteetaten.no/en/rates/value-added-tax/) |
-| Reduced rate: foodstuffs, water and wastewater | 15% | Foodstuffs sold as part of a serving (restaurant/catering) service are charged at 25%, not 15%. Medicines, tobacco, alcoholic drinks and water from waterworks are not foodstuffs (water from waterworks is still 15%, under the separate water and wastewater rate). | [Rates](https://www.skatteetaten.no/en/rates/value-added-tax/) and [VAT Act § 5-2](https://www.skatteetaten.no/rettskilder/type/handboker/merverdiavgiftshandboken/gjeldende/M-5/M-5-2/) |
-| Reduced rate: passenger transport, accommodation and listed admissions | 12% | Passenger transport, accommodation (letting of rooms), public broadcasting, and entry to cinemas, sporting events, amusement parks and activity centres. | [Rates](https://www.skatteetaten.no/en/rates/value-added-tax/) |
-| Cash-payment rule | NOK 10,000 | A cost paid in cash of NOK 10,000 or more gives no deduction for the expense or its input VAT. Instalments of one purchase are added together. | [Cash purchases](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/best-practices-for-daily-operations/expenses/) |
-| Non-registered foreign-service route | quarterly VAT basis **at least** NOK 2,000 | Apply only after the remotely-deliverable-service conditions are met; use the reverse-tax-liability return. Below NOK 2,000 in the quarter there is no reporting and payment obligation. | [Foreign services](https://www.skatteetaten.no/en/rates/vat-rates-for-purchases-of-services-from-abroad-svalbard-and-jan-mayen/) |
-| Ordinary two-month return and payment deadlines | 10 April; 10 June; 31 August; 10 October; 10 December; 10 February | The payment deadline is the same as the filing deadline; check the current calendar where a date falls on a non-working day. | [Statutory deadline guidance (Norwegian)](https://www.skatteetaten.no/rettskilder/type/handboker/skattebetalingshandboken/gjeldende/kapittel-10.-forfall/ID-10-13.001/ID-10-13.005/) |
-| Annual small-enterprise cap | NOK 1 million excluding VAT | Application route only: taxable supplies and withdrawals in the calendar year must not exceed the cap, the business must have been registered for at least 12 months, and prior returns and payments must have been on time. | [Annual route](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/paying-vat/) |
-| Annual filing deadlines | 10 March (approved small enterprises); 10 April (agriculture, forestry, reindeer husbandry, fishing and other primary industry) | Primary industry must file annually whatever its turnover; the NOK 1 million cap does not apply to it. | [Annual route](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/paying-vat/) |
-| Primary-industry other VATable revenue notice | more than NOK 30,000 | A primary-industry business with other VATable revenue of more than NOK 30,000 must tell Skatteetaten. | [Annual route](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/paying-vat/) |
+Read [no-income-tax](no-income-tax.md) and [no-corporate-income-tax](no-corporate-income-tax.md) for income tax, [no-employer-payroll](no-employer-payroll.md) for payroll and [no-transfer-pricing](no-transfer-pricing.md) for related-party pricing. The older file norway-mva is a copy of the previous version of this skill in the older shape; use this skill instead.
 
-Official sources and exact locators are in the evidence ledger. A rate table supplies examples, not a legal classification for every supply.
+## Who this applies to
 
-## The method, step by step
+- **Registration duty.** A business or public body must register in the VAT Register (Merverdiavgiftsregisteret) once its VAT-able supplies and withdrawals have exceeded NOK 50,000 in a period of twelve months. The limit is NOK 140,000 for charitable and non-profit institutions and organisations (merverdiavgiftsloven § 2-1 first paragraph). The twelve months can be any rolling period, not only a calendar year.
+- **Sports tickets.** For selling the right to attend sporting events the limit is NOK 3 million, except for the two top men's football divisions and the top men's ice hockey division, which use the ordinary limit (§ 2-1 second paragraph).
+- **What counts.** Only supplies within the Act count: standard, reduced and zero-rated sales and withdrawals. Supplies exempt from the Act (chapter 3) do not.
+- **Pre-registration.** A business below the limit can pre-register if it has made significant purchases directly linked to later VAT-able sales, or if sales will pass the limit within three weeks of starting (§ 2-4). Significant means at least NOK 250,000 including VAT. It must look clearly likely that turnover will be well above the limit in normal operation, and pre-registration is not possible if the limit will be reached in less than four months from the application (VAT Regulation § 2-4-1).
+- **Foreign businesses.** A business with no place of business or home in Norway registers through a representative. A business resident in an EEA state or the UK does not need a representative where that state exchanges information and helps collect VAT under a treaty with Norway (§ 2-1 sixth paragraph). A foreign seller of low-value goods or remote services to consumers can use the simplified VOEC scheme instead (§ 14-4).
+- **Out of scope here.** Joint registration, VAT compensation for municipalities and other public bodies, the adjustment rules for capital goods and property (chapter 9), VAT on property letting by voluntary registration, petroleum and Svalbard (outside the VAT area). They are flagged, not computed.
 
-1. **Confirm entity, period and authority.** Record the organisation number, VAT registration effective date, settlement period, prior return and the person preparing the return. Access to complete a return is different from authority to submit it. To complete and submit, the person needs the Altinn access package "Value added tax" or "Accountant with signing rights". "Auditor in charge", "Assistant auditor" and "Accountant without signing rights" can complete the return but not submit it. The older Altinn II roles (for example limited signing rights, or a NUF contact person) work only until 31 December 2026; from 1 January 2027 only the correct access package gives access. [VAT return access](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/vat-return/)
-2. **Test registration and retain the transition evidence.** Maintain a rolling 12-month schedule of taxable sales and withdrawals, excluding VAT, and exclude exempt turnover. Registration is required once the total has exceeded NOK 50,000 (NOK 140,000 for a charitable or non-profit organisation). The business cannot charge VAT on invoices until registration has been approved. After registration, the sale that took turnover over the limit must be invoiced with VAT; if that invoice was issued before registration, issue a credit invoice without VAT and a new invoice with VAT rather than adding VAT informally. Late registration makes interest accrue on the VAT that should have been paid for the earlier periods and can lead to additional tax, and the missed returns must be filed as soon as possible. Once registered, the business may claim input VAT on purchases intended for use in the business going back three years, keeping the receipts. Pre-registration is possible before the limit is reached in two cases: documented start-up purchases subject to VAT of at least NOK 250,000, with more than 4 months expected before the limit is reached; the purchases must be intended for use in the enterprise and turnover must be expected to exceed the limit after the four months (Skatteetaten often asks for a budget); if the business does not perform as expected, the VAT refunded must be paid back; or where turnover will reach the limit within 3 weeks. [Registration](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/register-change-delete/) and [registration transition](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/new-as-a-business/new-enk/)
-3. **Classify each sale before applying a rate.** Retain contract/order, invoice, supplier/customer identity and location, description, date, VAT-exclusive amount, and the rule supporting taxable, zero-rated, exempt or outside-scope treatment. Food sold as part of a serving service (restaurant, café, catering) is 25%, not the 15% food rate. Zero-rated supplies count toward registration and are reported; exempt supplies have a different deduction consequence. Do not merge both into a generic zero-percent ledger code. [Rates](https://www.skatteetaten.no/en/rates/value-added-tax/), [VAT Act § 5-2](https://www.skatteetaten.no/rettskilder/type/handboker/merverdiavgiftshandboken/gjeldende/M-5/M-5-2/) and [zero-rating/exemption](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/how-vat-works/difference-between-exemptions-and-exceptions-from-vat?pageid=197)
-4. **Test input VAT line by line.** Record supplier invoice, business use, VAT amount, deduction conclusion and any mixed-use allocation. A registered business generally deducts input VAT paid on business purchases, subject to the actual use and the following statutory bars, which apply even when the cost is wholly for the business:
-   - **No deduction (VAT Act § 8-3)** for input VAT on: serving (restaurant meals, catering) and the hire of function rooms in connection with serving; art and antiques, unless the buyer sells goods of the same kind; food for, and benefits in kind to, the owner, management, employees and pensioners; representation (entertaining business contacts); gifts, and goods and services handed out for advertising, unless the value is insignificant; and building, maintaining, renting and running real property that meets housing or welfare needs, including its furniture and equipment. Building and maintaining a staff canteen, including its loose furniture, remains deductible. Rare exceptions exist (art for use in a museum-type business under § 5-9, gifts of goods exported for use outside the VAT area, and goods for aircraft in foreign traffic or for vessels of at least 15 metres in foreign traffic); refer these.
-   - **No deduction for passenger cars (VAT Act § 8-4)**: input VAT on acquiring, running and maintaining a passenger vehicle is not deductible, except for a car held as stock for sale, a rental car in a professional car-rental business, or a car used to carry passengers for payment in a passenger-transport business. Whether a particular vehicle is a "passenger vehicle" depends on its registration class; if unclear, refer.
-   - **Cash payments**: a cost paid in cash of NOK 10,000 or more gives no deduction for the expense or its input VAT; instalments of one purchase are added together. Retain electronic-payment evidence.
-   Reconcile every claimed line to invoice/import evidence. [Output/input VAT](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/how-vat-works/), [VAT Act § 8-3](https://www.skatteetaten.no/rettskilder/type/handboker/merverdiavgiftshandboken/gjeldende/M-8/M-8-3/), [VAT Act § 8-4](https://www.skatteetaten.no/rettskilder/type/handboker/merverdiavgiftshandboken/gjeldende/M-8/M-8-4/) and [cash purchases](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/best-practices-for-daily-operations/expenses/)
-5. **Treat imports separately.** Norway is not a member of the EU, so EU intra-community rules do not apply: there are no intra-community acquisitions or zero-rated intra-EU supplies, and an EU VAT-number (VIES) check does not change Norwegian treatment. Goods bought from a supplier in an EU country are imports like goods from any other country, with a customs declaration. [Norway not an EU member](https://www.skatteetaten.no/en/rettskilder/type/kunngjoringer/brexit/) A VAT-registered business calculates import VAT itself in the VAT return for all goods it imports, including goods for which it has no deduction right. A business that is not VAT-registered instead pays import VAT to Norwegian Customs or to its shipping agent. Do not calculate import VAT from a purchase invoice alone. Check that declaration information on value, transport costs and insurance matches supplier/forwarder evidence. Use the confirmed customs-declaration base: Skatteetaten’s published method adds statistical value to customs duty and other taxes, then applies the supported VAT rate. The purchase invoice date controls accounting-period posting; Norwegian Customs’ shipping date controls the VAT-return period for import VAT. Report on the import codes: 81 (deductible, high rate), 82 (no deduction, high rate), 83 (deductible, medium rate), 84 (no deduction, medium rate) and 85 (zero rate). Deduction on imports follows the same rules as domestic purchases, including the bars in step 4. [Imported goods](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/foreign/import/calculating-and-reporting-vat-on-goods-imports/)
-6. **Test foreign services before reverse charging.** This is not a goods-import rule. All of these must hold: the buyer is a business or public-sector body with a head office, branch or other fixed place of business in Norway (or a foreign business with a Norwegian VAT representative); the service would be VAT-able if sold in Norway; and the service can be delivered remotely (for example advisory, accounting, electronic services or hire of labour). The scheme does not apply to private individuals, or to non-profit organisations and associations that do not carry on commercial activity. Work that must physically be done in Norway is not in this scheme; the foreign supplier must register. Services between a Norwegian and a foreign office of the same company are not purchases, but an external supplier’s service passed on from a foreign office to the Norwegian office is, unless VAT was calculated abroad and this is documented. Convert the price to NOK using Norwegian Customs’ exchange rate at the time of delivery. A registered buyer reports the self-assessed VAT as output VAT in the ordinary return with no lower threshold. A non-registered buyer uses the reverse-tax-liability VAT return only when that quarter’s VAT basis is **at least NOK 2,000**; retain the quarter calculation and pay/report through that route. A reverse charge does not itself establish input recovery: deduction follows the ordinary rules in step 4. [Services from abroad](https://www.skatteetaten.no/en/rates/vat-rates-for-purchases-of-services-from-abroad-svalbard-and-jan-mayen/)
-7. **Reconcile, file and pay.** Calculate the ordinary net position as **output VAT on sales + self-assessed VAT − eligible input VAT**. Reconcile each element to the rate/classification schedule, invoices, customs declaration or foreign-service workpaper; investigate a negative outcome as a refund position rather than silently netting it away. Registered enterprises submit a return even with no VAT activity. Ordinary reporting is generally every other month, with filing and payment due on 10 April, 10 June, 31 August, 10 October, 10 December and 10 February; use the current Tax Administration calendar if the nominal date is a non-working day. An approved annual small enterprise files and pays by 10 March; primary industry by 10 April. An annual-period enterprise whose turnover exceeds NOK 1 million must apply to return to two-monthly reporting, and a business that leaves the annual route must report every other month for at least the next two years. Submit using the current service or a compatible accounting system only after the authorised submitter check, then pay from the Altinn payment information at the same deadline. A late return triggers enforcement fines, even for a period with no turnover, and interest accrues on late payment from the due date until paid. [Ordinary deadline and payment guidance (Norwegian)](https://www.skatteetaten.no/rettskilder/type/handboker/skattebetalingshandboken/gjeldende/kapittel-10.-forfall/ID-10-13.001/ID-10-13.005/), [return service](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/vat-return/), [payment route](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/paying-vat/) and [enforcement fines](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/register-change-delete/)
-8. **Pay, retain and correct.** Pay using the Altinn payment information at submission. Retain the submitted return, confirmation, KID/payment reference and bank evidence. For an ordinary current return error, preserve the original, calculate the corrected amounts from the reconciled records, then submit a new VAT return for the affected term through the logged-in return service or a compatible accounting system. The most recently submitted return applies; the correction must be submitted within three years of the original filing deadline. For an import declaration error, correct the declaration with the shipping agent or Norwegian Customs before relying on it in the return. Historic general and primary-industry periods before 1 January 2022, and reverse-charge or VAT-compensation periods before 1 January 2023, use the separately documented contact-form routes. [Current ordinary correction method (Norwegian)](https://www.skatteetaten.no/om-skatteetaten/om-oss/serviceerklaring/), [import declaration corrections](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/foreign/import/how-to-correct-errors-in-a-vat-return/) and [historic correction routes](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/vat-return/)
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate | 25% | 2026 | Stortingsvedtak om merverdiavgift 2026 § 2; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2752 |
+| Food (næringsmidler), and water from waterworks and wastewater services | 15% | 2026 | same decision § 3; merverdiavgiftsloven §§ 5-2, 5-12 |
+| Passenger transport, transport of vehicles on ferries, hotel rooms and holiday letting, cinema, broadcasting, museums and exhibitions, amusement parks, sporting events | 12% | 2026 | same decision § 4; merverdiavgiftsloven §§ 5-3 to 5-7, 5-9 to 5-11 |
+| Wild marine resources (§ 5-8) | 11.11% | 2026 | same decision § 5; merverdiavgiftsloven § 5-8 |
+| Registration limit | Over NOK 50,000 in twelve months | 2026 | merverdiavgiftsloven § 2-1 first paragraph; https://lovdata.no/lov/2009-06-19-58/§2-1 |
+| Registration limit, charities and non-profits | NOK 140,000 | 2026 | § 2-1 first paragraph |
+| Registration limit, sports event tickets | NOK 3 million | 2026 | § 2-1 second paragraph |
+| Pre-registration: significant purchases | At least NOK 250,000 including VAT; not if the limit will be reached within four months | 2026 | merverdiavgiftsforskriften § 2-4-1; https://lovdata.no/forskrift/2009-12-15-1540/§2-4-1 |
+| Bank-payment rule for input VAT | No deduction unless paid through a bank or payment provider, or the total payment is under NOK 10,000 | 2026 | merverdiavgiftsloven § 8-8 |
+| Gifts and advertising items of "insignificant value" | NOK 200 or less | 2026 | merverdiavgiftsforskriften § 1-3-6 |
+| Low-value goods (VOEC) | Under NOK 3,000 per item, excluding transport and insurance | 2026 | merverdiavgiftsforskriften § 1-3-8 |
+| Non-registered business buying remote services | VAT due only when purchases in a quarter exceed NOK 2,000 excluding VAT | 2026 | merverdiavgiftsloven § 11-3 first paragraph |
+| Mixed use, small share rules | No deduction if VAT-able sales are normally no more than 5% of total; full deduction if exempt sales are normally no more than 5% | 2026 | merverdiavgiftsloven § 8-2 third and fourth paragraphs |
+| Annual period, low turnover | Calendar year if VAT-able sales and withdrawals are no more than NOK 1 million in the year, with consent | 2026 | skatteforvaltningsforskriften § 8-3-3 |
+| Late-payment interest | 12% from 1 January 2026; 12.25% from 1 July 2026 | 2026 | skattebetalingsloven § 11-1; https://www.skatteetaten.no/satser/forsinkelsesrenter/ |
+| Enforcement fine for a late VAT return | Half a court fee (NOK 672.50) per day, at most 50 court fees (NOK 67,250) | 2026 | Skatteetaten, Enforcement fines; skatteforvaltningsloven § 14-1 |
+| Additional tax | 20% of the tax advantage; aggravated 20% or 40% more | 2026 | skatteforvaltningsloven §§ 14-5, 14-6 |
+
+## The taxable base
+
+**What is taxed.** VAT is charged on supplies of goods and services, on withdrawals for private or non-business use, and on imports (merverdiavgiftsloven §§ 3-1 and 11-1). The registered business charges output VAT on its sales and pays the net amount after deducting input VAT.
+
+**Exempt supplies (chapter 3).** Some supplies are outside the Act: for example health services (§ 3-2), education (§ 3-5), financial services (§ 3-6), letting of real property (§ 3-11) and certain cultural, sports and charitable activity. No output VAT is charged, they do not count towards registration, and input VAT on costs for them is not deductible.
+
+**Zero-rated supplies (chapter 6).** Some supplies are within the Act but carry no output VAT: for example newspapers (§ 6-1), books (§ 6-4), exports of goods (§ 6-21) and services wholly used abroad or remote services to a buyer resident abroad (§ 6-22). They count towards registration, are reported in the return, and input VAT on costs for them is deductible. Do not post exempt and zero-rated sales to the same code.
+
+**Food.** Food is any food or drink meant for people; medicines, tobacco, alcoholic drinks and water from waterworks are not food (§ 5-2). Food sold as part of a serving service (restaurant, café, catering) carries 25%, not 15% (§ 5-2 first paragraph). Water from waterworks has its own 15% rate (§ 5-12).
+
+**Hotels.** Letting of hotel rooms, camping and holiday homes is 12%, and so are conference rooms let by such a business and goods or services included in the room price without a separate charge (§ 5-5).
+
+**Input VAT.** A registered business deducts input VAT on purchases for use in the registered business (§ 8-1). Purchases used partly for other purposes give a deduction only for the share used in the registered business (§ 8-2). Input VAT must be documented with a voucher (§ 15-10 first paragraph). These are blocked even when the cost is wholly for the business (§ 8-3):
+
+- serving (restaurant meals, catering) and hire of function rooms in connection with serving;
+- art and antiques, unless the buyer trades in the same kind of goods or runs a museum-type business;
+- food for, and benefits in kind to, the owner, management, employees and pensioners;
+- entertainment of business contacts (representasjon);
+- gifts and goods or services handed out for advertising, unless the value is insignificant (NOK 200 or less);
+- building, maintaining, renting and running property that meets housing or welfare needs, including furniture and equipment. Building and maintaining a staff canteen, with its loose furniture, stays deductible.
+
+**Passenger cars.** No deduction for input VAT on buying, running and maintaining a passenger vehicle, unless it is stock for sale, a rental car in a professional rental business or used to carry passengers for payment (§ 8-4). A passenger vehicle includes a car registered as a passenger car, a van registered as class 1, motorcycles and mopeds not mainly for goods, camper vans and small buses with up to 17 seats (VAT Regulation § 1-3-1).
+
+**Bank-payment rule.** Input VAT is deductible only if the payment went through a bank or licensed payment provider, unless the total payment is under NOK 10,000. Several payments for the same delivery, service or contract count as one (§ 8-8).
+
+**Purchases before registration.** After registration, a business can deduct input VAT on goods and services bought up to three years before registration, to the extent they are directly linked to its VAT-able sales and were not sold before registration. The claim must be made within three years of registration (§ 8-6). Keep the receipts.
+
+**Imports.** The base is the customs value under the Customs Act plus customs duty and other taxes charged on import (§ 4-11). Skatteetaten describes this as the statistical value on the customs declaration plus the duties and taxes in item 47. A registered business calculates import VAT itself in its VAT return for all goods it imports, including goods it cannot deduct. A business not registered pays import VAT to Norwegian Customs or the forwarder.
+
+## Deadlines and filing
+
+| Period | What | Deadline | Source |
+|---|---|---|---|
+| Ordinary periods | Six two-month periods: Jan-Feb, Mar-Apr, May-Jun, Jul-Aug, Sep-Oct, Nov-Dec | One month and ten days after each period: 10 April, 10 June, 31 August (fixed for May-Jun), 10 October, 10 December, 10 February | skatteforvaltningsforskriften §§ 8-3-1, 8-3-10 first paragraph |
+| Annual period, low turnover | Calendar year, with consent | Two months and ten days after the year: 10 March | §§ 8-3-3, 8-3-10 second paragraph |
+| Primary industries (fishing, forestry, farming and related) | Calendar year | Three months and ten days after the year: 10 April | §§ 8-3-7, 8-3-10 third paragraph |
+| Special return (buyers of remote services not registered; buyers of emission allowances and gold) | Quarters | One month and ten days after the quarter; 31 August for April-June | §§ 8-3-9, 8-3-10 first paragraph |
+| VOEC (simplified scheme) | Quarters | 20 days after the quarter | §§ 8-3-9, 8-3-10 fourth paragraph |
+| Payment | Same as the filing deadline | | skattebetalingsloven § 10-30 |
+| Correction of own return | Up to three years after the filing deadline | | skatteforvaltningsloven § 9-4 |
+
+- **Every period, even with no sales.** A registered business must file a return for every period, even with no VAT-able sales (skatteforvaltningsloven § 8-3 second paragraph). Skatteetaten imposes enforcement fines for missing returns even with no turnover.
+- **Annual period.** Apply so the application reaches Skatteetaten by 1 February to apply from that year. The business must have been registered with ordinary periods for at least 12 months and have kept its filing and payment duties (§§ 8-3-3, 8-3-4). A business that sees turnover will pass NOK 1 million must tell Skatteetaten at once (§ 8-3-6). Skatteetaten can refuse or withdraw the annual period, for at least two years, for late filing or payment or turnover over the limit; turnover at least 25% over the limit, which the business should have foreseen, is a serious breach (§ 8-3-5). A business that goes back to ordinary periods stays there for at least two years (§ 8-3-4).
+- **Shorter periods.** If input VAT regularly exceeds output VAT by at least 25%, Skatteetaten can allow monthly returns; at least 50%, periods down to one week, normally for at least two years (§ 8-3-8). Repeated serious breaches can lead to monthly returns for up to 12 months (§ 8-3-2).
+- **Invoicing at registration.** A business cannot charge VAT on invoices until registered. If an invoice for a sale after the limit was sent before registration, issue a credit note without VAT and a new invoice with VAT. Late registration makes interest run on the VAT that should have been paid (Skatteetaten, register for VAT).
+- **Who can submit.** In Altinn, the access packages "Value added tax" and "Accountant with signing rights" can complete and submit. "Auditor in charge", "Assistant auditor" and "Accountant without signing rights" can complete but not submit. Some older roles work only until 31 December 2026 (Skatteetaten, VAT return).
+- **Import dates.** Post an import by the invoice date in the accounts but report the import VAT in the return for the period of the shipping date registered by Norwegian Customs. Keep the customs declarations; temporary imports with a zero rate go in item 85 of the return (Skatteetaten, imports).
+- **Records.** Sales documents may not be issued before delivery (§ 15-10 third paragraph). Keep accounting records five years (bokføringsloven § 13).
+
+## Penalties and interest
+
+- **Enforcement fine.** Half a court fee per day for a late VAT return, at most 50 court fees. With the 2026 court fee of NOK 1,345 that is NOK 672.50 a day and at most NOK 67,250 (Skatteetaten, enforcement fines; skatteforvaltningsforskriften § 14-1-1; skatteforvaltningsloven § 14-1).
+- **Additional tax.** 20% of the VAT advantage that was or could have been gained from wrong or missing information (skatteforvaltningsloven § 14-5). Aggravated additional tax for intent or gross negligence adds 20% or 40% (§ 14-6).
+- **No additional tax** where a seller failed to charge VAT on ordinary booked sales and shows the buyer had full deduction or VAT compensation; on obvious calculation or typing errors; on a voluntary correction not prompted by a control; or where it would be under NOK 1,000 (§ 14-4).
+- **Late-payment interest.** From the due date to payment: 12% from 1 January 2026, 12.25% from 1 July 2026 (skattebetalingsloven § 11-1). Interest also runs on VAT increased by a change decision or the business's own correction, from the original due date (§ 11-2).
+- **Reopening.** Skatteetaten can change an assessment for five years after the end of the period, ten years with aggravated additional tax (skatteforvaltningsloven § 12-6).
+
+## Cross-border points
+
+- **Goods from abroad, including the EU.** Imports, with a customs declaration. A registered business self-assesses import VAT in its return and deducts it under the ordinary rules. Check that the customs declaration matches the supplier and forwarder documents; ask the forwarder or Customs to correct it if not.
+- **Remote services bought from abroad (reverse charge).** VAT is due on remote services bought from outside Norway when the buyer is resident in Norway and the service would be VAT-able if sold here (§ 3-30). A business or public body buyer calculates and pays the VAT (§ 11-3). A registered buyer reports it in the ordinary return and deducts it under the ordinary rules. A buyer not registered pays only when purchases in a quarter exceed NOK 2,000 excluding VAT, on the special quarterly return. A service a foreign branch buys for use by the Norwegian part of the same entity is also covered (§ 3-30 second paragraph), unless the service is wholly for use that would give a deduction, or foreign VAT was charged and is shown not to be deductible or refundable (§ 3-30 third paragraph).
+- **Services that must be done in Norway** (work on property or goods in Norway, for example) are not remote; the foreign supplier must register through the ordinary rules.
+- **Sales to consumers by foreign sellers (VOEC).** A foreign seller of low-value goods (under NOK 3,000 per item) or remote services to consumers in Norway must register (§ 2-1 third paragraph) and can use the simplified VOEC scheme without reaching the NOK 50,000 limit (§ 14-4). Food, goods needing a special import permit and goods with excise duties are not low-value goods under this rule (§ 3-1 second paragraph). VOEC returns are quarterly, due 20 days after the quarter.
+- **Exports.** Goods exported are zero-rated (§ 6-21). Services wholly used abroad, and remote services to a buyer resident abroad, are zero-rated (§ 6-22). Keep proof of export and of the buyer's residence.
+- **Input VAT on remote services used abroad.** A registered business may deduct input VAT on remote services it uses outside Norway (§ 8-9).
+
+## Worked examples
+
+### Example 1: two-month return for a shop with a café counter
+
+A registered shop sells standard-rated goods of NOK 200,000 and food to take away of NOK 40,000 in January and February 2026, all amounts excluding VAT. Output VAT is NOK 50,000 at 25% and NOK 6,000 at 15%, together NOK 56,000. Deductible input VAT on stock and costs is NOK 18,000. A restaurant lunch with a supplier carried NOK 500 of VAT, which is serving and entertainment and cannot be deducted. Net VAT payable is NOK 38,000, due with the return on 10 April 2026.
+
+```oa-check
+name: NO two-month VAT return, Jan-Feb 2026
+inputs:
+  standard_sales: 200000
+  food_sales: 40000
+  input_vat_deductible: 18000
+  input_vat_blocked: 500
+steps:
+  - output_standard: pct(standard_sales, 25)
+  - output_food: pct(food_sales, 15)
+  - output_total: output_standard + output_food
+  - net_payable: output_total - input_vat_deductible
+expected:
+  output_standard: 50000.00
+  output_food: 6000.00
+  output_total: 56000.00
+  net_payable: 38000.00
+```
+
+### Example 2: crossing the limit and claiming back pre-registration VAT
+
+A sole proprietor's VAT-able sales over the last twelve months are NOK 48,000. A new sale of NOK 5,000 takes the total to NOK 53,000, over the NOK 50,000 limit, so the business must register. Eight months earlier it bought equipment for NOK 40,000 plus NOK 10,000 VAT, paid by bank, for use in the business. In its first return it reports sales of NOK 30,000 at 25%, output VAT NOK 7,500, and deducts the NOK 10,000 on the equipment under § 8-6. The return shows NOK 2,500 to be paid back to the business.
+
+```oa-check
+name: NO registration crossing and pre-registration input VAT (2026)
+inputs:
+  rolling_sales: 48000
+  new_sale: 5000
+  limit: 50000
+  first_period_sales: 30000
+  equipment_vat: 10000
+steps:
+  - rolling_total: rolling_sales + new_sale
+  - over_limit: rolling_total - limit
+  - output_vat: pct(first_period_sales, 25)
+  - net: output_vat - equipment_vat
+expected:
+  rolling_total: 53000.00
+  over_limit: 3000.00
+  output_vat: 7500.00
+  net: -2500.00
+```
 
 ## Ask the client first
 
-- What is the entity’s registration effective date, settlement period, current Altinn access package and named authorised submitter?
-- What is the rolling 12-month taxable-sales total, excluding VAT, and which invoices make it up? Is the entity a charitable or non-profit organisation (NOK 140,000 limit)?
-- For each unusual sale, what was supplied, where, to whom and under which rate/zero/exemption provision? Is any food sold as part of a serving service?
-- Are there imported goods, customs declarations and shipping dates that differ from invoice dates?
-- Are there services bought from abroad, Svalbard or Jan Mayen, and what establishes buyer connection, service type and place of supply?
-- Are there restaurant or catering bills, entertainment of business contacts, gifts or promotional items, staff food or benefits, art, staff housing or holiday property, or passenger-car costs? Their input VAT is barred unless an exception applies.
-- Is any input used for exempt, private or mixed activity, or paid in cash at NOK 10,000 or more?
-- Does the enterprise seek an annual small-enterprise period? Confirm calendar-year taxable supplies and withdrawals are no more than NOK 1 million excluding VAT, at least 12 months’ VAT registration, timely prior returns/payments, the 10 December–1 February application window and actual approval.
-
-## Worked preparation cases
-
-The five cases below are illustrative only. Amounts in equations are assumed NOK amounts and are intentionally shown as bare decimal numerals. They show arithmetic and workflow; they do not decide the rate, deduction or classification of an actual transaction.
-
-### 1. Threshold-crossing invoice
-
-**Facts.** The rolling taxable-sales schedule totals 48000 excluding VAT. A further normal-rated sale is 5000 excluding VAT. Registration follows the threshold crossing.
-
-**Method and result.** The schedule becomes 48000 + 5000 = 53000, which exceeds the limit, so registration is required. After registration, preserve the registration confirmation and issue the credit/replacement invoice sequence if the 5000 invoice was originally issued without VAT. At the published 25% normal rate, output VAT is 5000 × 25 ÷ 100 = 1250 and the replacement invoice total is 5000 + 1250 = 6250. This case assumes the normal-rate classification. [Registration transition](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/new-as-a-business/new-enk/) and [rates](https://www.skatteetaten.no/en/rates/value-added-tax/)
-
-### 2. Import: confirmed customs base and different dates
-
-**Facts.** A VAT-registered business receives a purchase invoice dated 28 February; Norwegian Customs’ shipping date is 3 March. The confirmed customs declaration has statistical value 3000 and customs duty/other taxes 1700; the business has a supported 25% rate and full deduction in this example.
-
-**Method and result.** Post the purchase using the invoice date, but report import VAT in the period containing the 3 March shipping date. The confirmed import base is 3000 + 1700 = 4700; import VAT is 4700 × 25 ÷ 100 = 1175. Report both the self-assessed import output VAT and the supported input side. The customs declaration, not this example, controls the real base and any deduction restriction. [Imported goods](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/foreign/import/calculating-and-reporting-vat-on-goods-imports/)
-
-### 3. Completion access without submission authority
-
-**Facts.** A bookkeeper has the "Accountant without signing rights" access package and can complete the VAT return in Altinn, but cannot submit it.
-
-**Method and result.** Complete and reconcile the draft, but stop before submission. A person with the "Value added tax" or "Accountant with signing rights" access package must submit. Save the access check with the return workpaper. [VAT-return access](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/vat-return/)
-
-### 4. Ordinary-return correction
-
-**Facts.** A submitted ordinary return omitted 1000 of output VAT. Reconciled records support the correction and the original filing deadline was less than three years ago.
-
-**Method and result.** Preserve the submitted return and correction workpaper. Recalculate the affected term and submit a new return through the logged-in service or a compatible accounting system. The latest return applies. Recompute the whole payment/refund position; 1000 is the assumed omitted output amount, not a standalone payment instruction. [Current ordinary correction method (Norwegian)](https://www.skatteetaten.no/om-skatteetaten/om-oss/serviceerklaring/)
-
-### 5. Client lunch and a company passenger car
-
-**Facts.** A registered consultancy pays a restaurant bill for a lunch with a client: 2000 excluding VAT plus 500 VAT at 25%. It also receives a workshop invoice for servicing the managing director’s passenger car, used only for the business. The business does not sell, rent out or carry passengers for payment with cars.
-
-**Method and result.** The restaurant bill is serving and representation, so none of the 500 input VAT is deductible, even though the lunch is for the business. The car servicing is running and maintenance of a passenger vehicle, so its input VAT is not deductible either. Book both costs gross. [VAT Act § 8-3](https://www.skatteetaten.no/rettskilder/type/handboker/merverdiavgiftshandboken/gjeldende/M-8/M-8-3/) and [VAT Act § 8-4](https://www.skatteetaten.no/rettskilder/type/handboker/merverdiavgiftshandboken/gjeldende/M-8/M-8-4/)
-
-## When to refuse or refer
-
-- The return needs a transaction-specific place-of-supply, exemption, zero-rating or partial-deduction conclusion.
-- The matter concerns property adjustments, financial services, joint registration, VAT compensation, VOEC, customs duty or a foreign-business refund.
-- It is unclear whether a vehicle is a passenger vehicle, whether a gift or promotional item is of insignificant value, or whether property serves housing or welfare needs.
-- The business has no authorised Altinn submitter, has an estimated assessment, or needs an historic correction route not available in the live service.
-- Customs/import evidence, foreign-service facts, supplier invoices or VAT-registration status is incomplete.
+- Are you registered for VAT? From what date, and with two-monthly, annual or another period? Who has the Altinn access package to submit?
+- What were your VAT-able sales in the last twelve months (excluding VAT and exempt sales)? Are you a charity or non-profit?
+- What do you sell, and does any of it fall under the 15%, 12% or 11.11% rates, an exemption or a zero rate (exports, books, newspapers)? Do you sell food as part of serving?
+- Do you import goods or buy services from abroad? Do you have the customs declarations?
+- Do your costs include meals, entertainment, gifts, staff benefits, art, housing, or passenger cars? Was anything paid in cash at NOK 10,000 or more?
+- Is any purchase used partly outside the VAT-able business?
 
 ## Sources
 
-The exact captured official pages, locators and claim-level coverage are in `quality-evidence.json` and `sources.json`.
+| Source | URL | Read on |
+|---|---|---|
+| Stortingsvedtak om merverdiavgift for 2026, FOR-2025-12-18-2752 (§§ 1 to 5) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2752 | 2026-10-30 |
+| Merverdiavgiftsloven, lov 2009-06-19-58 (§§ 1-3, 2-1, 2-4, 3-1, 3-30, 4-11, 5-2, 5-5, 5-12, 6-21, 6-22, 8-1 to 8-4, 8-6, 8-8, 8-9, 11-1, 11-3, 14-4, 15-10) | https://lovdata.no/lov/2009-06-19-58 | 2026-10-30 |
+| Merverdiavgiftsforskriften, FOR-2009-12-15-1540 (§§ 1-3-1, 1-3-6, 1-3-8, 2-4-1) | https://lovdata.no/forskrift/2009-12-15-1540 | 2026-10-30 |
+| Skatteforvaltningsloven, lov 2016-05-27-14 (§§ 8-3, 9-4, 12-6, 14-1, 14-4 to 14-6) | https://lovdata.no/lov/2016-05-27-14 | 2026-10-30 |
+| Skatteforvaltningsforskriften, FOR-2016-11-23-1360 (§§ 8-3-1 to 8-3-10, 14-1-1) | https://lovdata.no/forskrift/2016-11-23-1360 | 2026-10-30 |
+| Skattebetalingsloven, lov 2005-06-17-67 (§§ 10-30, 11-1, 11-2) | https://lovdata.no/lov/2005-06-17-67 | 2026-10-30 |
+| Bokføringsloven, lov 2004-11-19-73 (§ 13) | https://lovdata.no/lov/2004-11-19-73/§13 | 2026-10-30 |
+| Skatteetaten, Register, change or delete (VAT) | https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/register-change-delete/ | 2026-10-30 |
+| Skatteetaten, VAT return: view, change and submit | https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/vat-return/ | 2026-10-30 |
+| Skatteetaten, Calculating and reporting VAT on goods imports | https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/foreign/import/calculating-and-reporting-vat-on-goods-imports/ | 2026-10-30 |
+| Skatteetaten, Enforcement fines | https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/ | 2026-10-30 |
+| Skatteetaten, Forsinkelsesrenter | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-10-30 |
+
+Not yet confirmed: the return codes 81 to 84 for imports by rate and deduction (only item 85 was found on the import page today); the exchange rate rule for services bought from abroad (Norwegian Customs' rate at delivery); the contact-form routes for correcting periods before 2022 and 2023; whether a weekend or holiday deadline moves to the next working day for the VAT return; the full lists of exempt and zero-rated supplies (only the sections named are summarised); joint registration, VAT compensation and property adjustment.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 
