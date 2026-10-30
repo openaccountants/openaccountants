@@ -7,8 +7,10 @@
       "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
       "unit_sha256": "359199f9fe2fad760815bf7cbe031f9072d60238591b3495af69867646d21395",
       "original_text": "# Moldova tax pack",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "# Moldova tax pack"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
     },
     {
       "id": "README-OLD-002",
@@ -16,8 +18,10 @@
       "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
       "unit_sha256": "a1f934dc528422714bdcd3ffa26a92d578f869a58a65e8917715cc81b08ba105",
       "original_text": "Accountable owner: Michael. Assigned writer: ChatGPT under [OWNERS.md](../../../OWNERS.md). Eight existing Guides were present before this batch. Two missing core areas now have draft Guides: [transfer pricing](md-transfer-pricing.md) and [cross-border tax](md-cross-border.md). The new Guides are source-cited drafts, not independently reviewed or accountant-attested. Existing material remains unverified and partial; no domain is marked complete.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Owner and writer paragraph"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
     },
     {
       "id": "README-OLD-003",
@@ -25,8 +29,10 @@
       "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
       "unit_sha256": "443796223524b1094e05ed5eb793377f52d0313f1908aec81e5830bcad5aa135",
       "original_text": "## Domains",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Domains table"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
     },
     {
       "id": "README-OLD-004",
@@ -34,8 +40,10 @@
       "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
       "unit_sha256": "c4618ae0a1886b8a6408b7225ee77aca9ae77c94d2295fc30a07494d61b09678",
       "original_text": "| Domain | Existing/new Guides | Status |\n|---|---|---|\n| IT-IND | md-tax-overview, moldova-income-tax, moldova-tax-optimization | partial |\n| IT-CORP | md-corporate-income-tax, md-company-formation | partial |\n| VAT | moldova-vat | partial |\n| SC | moldova-social-contributions | partial |\n| PR | moldova-payroll | partial |\n| TP | md-transfer-pricing | source-cited draft, partial |\n| XB | md-cross-border | source-cited draft, partial |",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Domains table"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
     },
     {
       "id": "README-OLD-005",
@@ -43,8 +51,10 @@
       "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
       "unit_sha256": "f47436ee894db5a232f4ee2532f1e5d8581d3125974eaff0fabf2587f5e2ce20",
       "original_text": "Property, tax reporting, audit/compliance, cross-border residence and treaty applications, withholding, foreign tax relief, exit/mobility, and the interfaces between tax and company formation require dedicated coverage or explicit applicability decisions. Guide presence and source research do not establish comprehensive coverage.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Scope/gaps paragraph; each partial domain and Guide Sources"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
     },
     {
       "id": "README-OLD-006",
@@ -52,8 +62,10 @@
       "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
       "unit_sha256": "81fe2b5f7c9449cf6d2ff4f0ce9c32400740ecec32790aa27007b4b6ee7ba36e",
       "original_text": "## Official starting sources",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Official starting sources; current Code correction; preserved24October research link"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
     },
     {
       "id": "README-OLD-007",
@@ -61,8 +73,10 @@
       "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
       "unit_sha256": "29f1e047f173564f1bd54f659d249a14a8bba84d74cb15bdb681d89abf16f572",
       "original_text": "- Fiscal Code No. 1163/1997, current official text page: https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro\n- SFS transfer-pricing rules, current period filing instructions and notices: https://www.sfs.md/ro/pagina/preturi-de-transfer\n- Ministry of Finance Order 21/2025 amending Order 9/2024: https://www.legis.md/cautare/downloadpdf/147520\n- SFS 2025 transfer-pricing deadline notice (published June 2026): https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025\n- SFS nonresident tax practice: https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/102\n- SFS permanent-establishment criteria: https://www.sfs.md/ro/intrebare-baza-de-date-generalizare/105\n- Ministry of Finance treaty inventory (page reports status at 20 June 2022; verify current status and later protocols): https://mf.gov.md/ro/content/acorduriconven%C8%9Bii-pentru-evitarea-dublei-impuneri-la-situa%C8%9Bia-din-20062022",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Official starting sources; current Code correction; preserved24October research link"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
     },
     {
       "id": "README-OLD-008",
@@ -70,8 +84,10 @@
       "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
       "unit_sha256": "4bd35d755c9baf9f8e81f166812be63f3c9443809ed1418b478a3293b6149b98",
       "original_text": "See [the 24 October 2026 source and gap record](../../../docs/research/2026-10-24-moldova-tp-cross-border.md) for the drafting basis and unresolved points.\n",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Official starting sources; current Code correction; preserved24October research link"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. Nine updated drafts and one inherited planning Guide remain explicitly distinguished."
     },
     {
       "id": "md-company-formation-OLD-001",
@@ -79,8 +95,14 @@
       "original_sha256": "26a3fec5dc6331ad92eac903d054674abf94242ae8b3a0f340e4f5213361e184",
       "unit_sha256": "197cfb274908ca145bffb70641dac9b82afe02609a25561e7f79c0bc50bc0e91",
       "original_text": "# Moldova Company Formation & Entity Choice",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All original entity/capital/authority/timeline/fee/step/annual-compliance subjects retained or corrected; most-common statistic and unverified minimum/fee assumptions not adopted"
     },
     {
       "id": "md-company-formation-OLD-002",
@@ -88,8 +110,14 @@
       "original_sha256": "26a3fec5dc6331ad92eac903d054674abf94242ae8b3a0f340e4f5213361e184",
       "unit_sha256": "a867cf8610e054a877feb31d6bc8d908176c7d604e7d45618c5efda043af315e",
       "original_text": "## Entity types, capital and annual compliance",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All original entity/capital/authority/timeline/fee/step/annual-compliance subjects retained or corrected; most-common statistic and unverified minimum/fee assumptions not adopted"
     },
     {
       "id": "md-company-formation-OLD-003",
@@ -97,8 +125,14 @@
       "original_sha256": "26a3fec5dc6331ad92eac903d054674abf94242ae8b3a0f340e4f5213361e184",
       "unit_sha256": "39ae0ca81056b4eb0d597860bbc6c59c0c3ad4f9e51bc01fef5c7635ec0b5e94",
       "original_text": "The most common Moldovan business vehicle is the limited liability company (SRL). Registration is handled by the Public Services Agency (ASP). Figures below are indicative and should be confirmed against current company-law requirements.",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All original entity/capital/authority/timeline/fee/step/annual-compliance subjects retained or corrected; most-common statistic and unverified minimum/fee assumptions not adopted"
     },
     {
       "id": "md-company-formation-OLD-004",
@@ -106,8 +140,14 @@
       "original_sha256": "26a3fec5dc6331ad92eac903d054674abf94242ae8b3a0f340e4f5213361e184",
       "unit_sha256": "c10713e0580b1847cae9ae6d5ac2e516114110df85e7edd5e93c7e075c429be0",
       "original_text": "- **Most common entity type** — Societate cu Raspundere Limitata (SRL) - limited liability company  _(Law on Limited Liability Companies (Legea privind societatile cu raspundere limitata))_\n- **Joint-stock company** — Societate pe Actiuni (SA) - joint-stock company, for larger/public capital raising  _(Law on Joint Stock Companies (Legea privind societatile pe actiuni))_\n- **Sole trader vehicle** — Intreprinzator Individual (II) - individual entrepreneur  _(Law on Entrepreneurship and Enterprises (Legea cu privire la antreprenoriat si intreprinderi))_\n- **Minimum share capital for an SRL** — No statutory minimum (commonly nominal, e.g. MDL 1) MDL ((approx - confirm; Moldova abolished the former fixed SRL minimum)) MDL  _(Law on Limited Liability Companies (Legea privind societatile cu raspundere limitata))_\n- **Minimum share capital for an SA (joint-stock company)** — MDL 20,000 MDL ((approx - confirm against Law on Joint Stock Companies)) MDL  _(Law on Joint Stock Companies (Legea privind societatile pe actiuni))_\n- **Registration authority** — Public Services Agency (Agentia Servicii Publice / ASP) - State Register of Legal Entities  _(Law on State Registration of Legal Entities and Individual Entrepreneurs)_\n- **Typical incorporation timeline** — Around 1 business day for standard registration; a few days where additional documents are required ((approx - confirm))  _(Law on State Registration of Legal Entities and Individual Entrepreneurs)_\n- **State registration fee** — Nominal state fee (commonly under MDL 1,500 for standard registration) MDL ((approx - confirm current ASP tariff)) MDL  _(Law on State Registration of Legal Entities and Individual Entrepreneurs)_\n- **Core incorporation steps** — Reserve company name, prepare and sign articles of association, register with ASP (State Register), obtain tax/VAT and social-insurance registration, open a bank account  _(Law on State Registration of Legal Entities and Individual Entrepreneurs)_\n- **Core annual compliance** — Annual financial statements filed with the tax service/statistics, annual CIT return by 25 March, monthly VAT and payroll filings  _([Accounting and Financial Reporting Law / Fiscal Code (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/tax-administration](https://taxsummaries.pwc.com/moldova/corporate/tax-administration))_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All original entity/capital/authority/timeline/fee/step/annual-compliance subjects retained or corrected; most-common statistic and unverified minimum/fee assumptions not adopted"
     },
     {
       "id": "md-company-formation-OLD-005",
@@ -115,8 +155,10 @@
       "original_sha256": "26a3fec5dc6331ad92eac903d054674abf94242ae8b3a0f340e4f5213361e184",
       "unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "original_text": "<!-- openaccountants-cta-block -->",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-company-formation-OLD-006",
@@ -124,8 +166,10 @@
       "original_sha256": "26a3fec5dc6331ad92eac903d054674abf94242ae8b3a0f340e4f5213361e184",
       "unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
       "original_text": "---",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-company-formation-OLD-007",
@@ -133,8 +177,10 @@
       "original_sha256": "26a3fec5dc6331ad92eac903d054674abf94242ae8b3a0f340e4f5213361e184",
       "unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
       "original_text": "## Talk to a verified accountant",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-company-formation-OLD-008",
@@ -142,8 +188,10 @@
       "original_sha256": "26a3fec5dc6331ad92eac903d054674abf94242ae8b3a0f340e4f5213361e184",
       "unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
       "original_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-company-formation-OLD-009",
@@ -151,8 +199,10 @@
       "original_sha256": "26a3fec5dc6331ad92eac903d054674abf94242ae8b3a0f340e4f5213361e184",
       "unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
       "original_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-company-formation-OLD-010",
@@ -160,8 +210,10 @@
       "original_sha256": "26a3fec5dc6331ad92eac903d054674abf94242ae8b3a0f340e4f5213361e184",
       "unit_sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
       "original_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-corporate-income-tax-OLD-001",
@@ -620,8 +672,14 @@
       "original_sha256": "09c3c94bdf2aa9d9d7754729ca6c00147692375da3e3a8cf957ea221038fc6ad",
       "unit_sha256": "9e4d62b0ad2bf8811dc13c4c3507b73737ef8810b823cd3733894b23aeee1917",
       "original_text": "# Moldova Tax Overview",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All original currency/authority/scope/headline-rate/period/deadline subjects retained, with statutory population and exception corrections"
     },
     {
       "id": "md-tax-overview-OLD-002",
@@ -629,8 +687,14 @@
       "original_sha256": "09c3c94bdf2aa9d9d7754729ca6c00147692375da3e3a8cf957ea221038fc6ad",
       "unit_sha256": "dea0631bc0bf135a9cb31bc2af68ac4138b4b6927e10e079b044696008356e58",
       "original_text": "## The Moldovan tax system at a glance",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All original currency/authority/scope/headline-rate/period/deadline subjects retained, with statutory population and exception corrections"
     },
     {
       "id": "md-tax-overview-OLD-003",
@@ -638,8 +702,14 @@
       "original_sha256": "09c3c94bdf2aa9d9d7754729ca6c00147692375da3e3a8cf957ea221038fc6ad",
       "unit_sha256": "04d38151ddc4d8903344b91024a18fb010a87265c1b9fce812546d7628da0897",
       "original_text": "- **Tax year (taxable period)** — Calendar year (1 January - 31 December)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/tax-administration)_\n- **National currency** — Moldovan leu (MDL)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal))_\n- **Tax authority** — State Tax Service (Serviciul Fiscal de Stat / Moldovan Tax Administration)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova)_\n- **Basis of taxation for residents** — Residents are taxed on worldwide income; non-residents on Moldova-source income  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/taxes-on-corporate-income)_\n- **Headline personal income tax rate** — 12% percent (flat)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/individual/taxes-on-personal-income)_\n- **Headline corporate income tax rate** — 12% percent  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/taxes-on-corporate-income)_\n- **Does Moldova levy VAT?** — Yes - standard VAT rate is 20% percent  _(Fiscal Code of the Republic of Moldova (Codul Fiscal), VAT Title — https://taxsummaries.pwc.com/moldova/corporate/other-taxes)_\n- **Annual personal income tax return deadline** — 30 April of the year following the reporting year  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/individual/tax-administration)_\n- **Annual corporate income tax return deadline** — By the 25th day of the third month following the tax period (i.e. 25 March)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/tax-administration)_\n- **VAT return frequency and deadline** — Monthly, due by the 25th of the following month  _(Fiscal Code of the Republic of Moldova (Codul Fiscal), VAT Title — https://taxsummaries.pwc.com/moldova/corporate/other-taxes)_",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "status": "All original currency/authority/scope/headline-rate/period/deadline subjects retained, with statutory population and exception corrections"
     },
     {
       "id": "md-tax-overview-OLD-004",
@@ -647,8 +717,10 @@
       "original_sha256": "09c3c94bdf2aa9d9d7754729ca6c00147692375da3e3a8cf957ea221038fc6ad",
       "unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "original_text": "<!-- openaccountants-cta-block -->",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-tax-overview-OLD-005",
@@ -656,8 +728,10 @@
       "original_sha256": "09c3c94bdf2aa9d9d7754729ca6c00147692375da3e3a8cf957ea221038fc6ad",
       "unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
       "original_text": "---",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-tax-overview-OLD-006",
@@ -665,8 +739,10 @@
       "original_sha256": "09c3c94bdf2aa9d9d7754729ca6c00147692375da3e3a8cf957ea221038fc6ad",
       "unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
       "original_text": "## Talk to a verified accountant",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-tax-overview-OLD-007",
@@ -674,8 +750,10 @@
       "original_sha256": "09c3c94bdf2aa9d9d7754729ca6c00147692375da3e3a8cf957ea221038fc6ad",
       "unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
       "original_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-tax-overview-OLD-008",
@@ -683,8 +761,10 @@
       "original_sha256": "09c3c94bdf2aa9d9d7754729ca6c00147692375da3e3a8cf957ea221038fc6ad",
       "unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
       "original_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-tax-overview-OLD-009",
@@ -692,8 +772,10 @@
       "original_sha256": "09c3c94bdf2aa9d9d7754729ca6c00147692375da3e3a8cf957ea221038fc6ad",
       "unit_sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
       "original_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
-      "destination": "PENDING: full-country rewrite and original-topic destination review",
-      "status": "PRESERVED ORIGINAL; no replacement or loss decision yet"
+      "destination": [
+        "UNCHANGED PLATFORM CTA"
+      ],
+      "status": "Exact original stamped tail preserved, including attribution, links and disclaimer; not a new verification claim"
     },
     {
       "id": "md-transfer-pricing-OLD-001",

@@ -1757,6 +1757,94 @@
       "read_date": "2026-10-30",
       "format": "Exact JSON returned by read-only browser DOM observation; linked form/classifier attachments not retrieved",
       "sha256": "7697d64acdd8aefc2fecab0e6c36ee067c9e886a9e50240aacaa36f69ac7c07d"
+    },
+    "FORMATION-LP135-CURRENT-SELECTED": {
+      "article": "FORMATION-LP135-CURRENT-SELECTED",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro",
+      "observed_utc": "2026-10-30T20:11:17.979Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
+      "sha256": "3b3f1f3e2010fc8f1aff15dbeda3176d30c28b5fa467572db0a0e1d8da78b11b"
+    },
+    "FORMATION-LP220-CURRENT-REGISTRATION": {
+      "article": "FORMATION-LP220-CURRENT-REGISTRATION",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro",
+      "observed_utc": "2026-10-30T20:11:48.087Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
+      "sha256": "b282d27bc613045517b1dc58718b25dc1e49d7d14b50c0ffc9544e72e329974e"
+    },
+    "FORMATION-LP220-CURRENT-CONTINUATION": {
+      "article": "FORMATION-LP220-CURRENT-CONTINUATION",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro",
+      "observed_utc": "2026-10-30T20:11:58.700Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
+      "sha256": "1af88f68d3501f347d6690ab05ae321dc5635d1cbb3dab3fda6b0a2d2c5aa836"
+    },
+    "FORMATION-SA-CURRENT-SCOPE-CAPITAL": {
+      "article": "FORMATION-SA-CURRENT-SCOPE-CAPITAL",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=154797&lang=ro",
+      "observed_utc": "2026-10-30T20:12:13.124Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
+      "sha256": "61ae5dccd736658c5b9b641cc9b4932587dd55779345f66e255fcf679fb43b42"
+    },
+    "FORMATION-ASP-CURRENT-TARIFF": {
+      "article": "FORMATION-ASP-CURRENT-TARIFF",
+      "official_url": "https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-1",
+      "observed_utc": "2026-10-30T20:12:53.924Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
+      "sha256": "44860c36940dc6bad61319ebaa4c7eeda8eb9ac4d1de07ffc2907ac74e8b172c"
+    },
+    "OVERVIEW-CODE-CURRENT-SELECTED": {
+      "article": "OVERVIEW-CODE-CURRENT-SELECTED",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T20:13:36.361Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
+      "sha256": "8324bb6335cbb060f935dfb2758d0753923d79ac16e16b2c9d1c34988d0486c8"
+    },
+    "OVERVIEW-CODE-TAX-PERIOD": {
+      "article": "OVERVIEW-CODE-TAX-PERIOD",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "observed_utc": "2026-10-30T20:14:44.382Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
+      "sha256": "3096c7f8ff6171246d574e035d5469bef39c0ed7abc672f6c5bf3b04a657c7b0"
+    },
+    "FORMATION-ACCOUNTING287-CURRENT": {
+      "article": "FORMATION-ACCOUNTING287-CURRENT",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=140124&lang=ro",
+      "observed_utc": "2026-10-30T20:14:17.346Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
+      "sha256": "069026c64d6a798507b743103db44acaacddf093f4733d78d3374f73e0bfcaf9"
+    },
+    "FORMATION-LP135-CURRENT-ACTIVITY": {
+      "article": "FORMATION-LP135-CURRENT-ACTIVITY",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro",
+      "observed_utc": "2026-10-30T20:14:44.382Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
+      "sha256": "0cfbd025d0712d8bbc86edffba500f675f0f5d5195e3454d4491f2246df1579e"
+    },
+    "FORMATION-ACCOUNTING287-CATEGORIES": {
+      "article": "FORMATION-ACCOUNTING287-CATEGORIES",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=140124&lang=ro",
+      "observed_utc": "2026-10-30T20:14:44.382Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
+      "sha256": "47314741a1b23979d4067dc0d69d2e4fa90027c85df8693034fedb60e69273e3"
+    },
+    "OVERVIEW-BNM-CURRENCY": {
+      "article": "OVERVIEW-BNM-CURRENCY",
+      "official_url": "https://bnm.md/en/content/information-regarding-nbm",
+      "observed_utc": "2026-10-30T20:15:40.145Z",
+      "read_date": "2026-10-30",
+      "format": "Exact JSON returned by read-only browser DOM observation; selected legal provisions or explicit agency/BNM section only; not a whole-law or all-services verification",
+      "sha256": "6c130f42c4c40f72f3701becfee3df6aabb6fc1d1a9cd4da9c7b21eb52c47e43"
     }
   }
 }
