@@ -1,0 +1,28 @@
+[
+  {
+    "key": "aeat-2026-interest",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/guia-principales-novedades/otras-cuestiones-interes.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/guia-principales-novedades/otras-cuestiones-interes.html",
+    "status": 200,
+    "sha256": "d068339a6257b1a2142ed258f4ea8f8fb8dc682a21011736f0b2e552fd99c47b",
+    "bytes": 9890,
+    "fetched_utc": "2026-10-27T16:48:14.680345+00:00",
+    "read_on": "2026-10-27",
+    "cache_hash_verified": true,
+    "verified_sha256": "d068339a6257b1a2142ed258f4ea8f8fb8dc682a21011736f0b2e552fd99c47b",
+    "actual_body_read": true
+  },
+  {
+    "key": "lgss-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+    "status": 200,
+    "sha256": "dc5e9572ef75b2aed1f352d73064a3c5ed3b355d19e7580b5263cfeb18f28737",
+    "bytes": 2646449,
+    "fetched_utc": "2026-10-27T16:48:15.715635+00:00",
+    "read_on": "2026-10-27",
+    "cache_hash_verified": true,
+    "verified_sha256": "dc5e9572ef75b2aed1f352d73064a3c5ed3b355d19e7580b5263cfeb18f28737",
+    "actual_body_read": true
+  }
+]

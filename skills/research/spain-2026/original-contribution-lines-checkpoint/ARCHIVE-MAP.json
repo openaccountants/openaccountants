@@ -1,0 +1,488 @@
+{
+  "baseline_head": "8c7dab9d585b1061427c40cb3faf7a88d63476b7",
+  "verified_manifests": [
+    {
+      "role": "scope-delta",
+      "report": "spain-fresh-pack-review-bafc0f62/phase2/F-P1-exact-restoration-review/report.md",
+      "report_sha256": "de8a0a186a03b8f50693d0115f515c493d14afe40bda746ae3b9078c9be4d5f5",
+      "manifest": "spain-fresh-pack-review-bafc0f62/phase2/F-P1-exact-restoration-review/manifest.json",
+      "manifest_sha256": "c4e2c47c121fbdb64ebabf6b83e212d1a0d9b3e396b7edc268626fa9e4d313dc",
+      "members_verified": 3
+    }
+  ],
+  "scope": "Exact historical contribution-line restoration, six original source snapshots and independent exact-insertion review; tax methods and metadata unchanged.",
+  "files": [
+    {
+      "original_path": "spain-original-contribution-lines-private/artifact-manifest.json",
+      "original_sha256": "1323ada3b80e96dd99932c32dcece29c1284091faf35be7fde27813efc33c758",
+      "original_bytes": 5462,
+      "stored_path": "archive/13/1323ada3b80e96dd99932c32dcece29c1284091faf35be7fde27813efc33c758.gz",
+      "stored_bytes": 1244,
+      "stored_sha256": "a3ba2cbe8065a368f3392831a810738863d1ae586c237583610a94d5ebd2d991"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/baselines/es-autonomous-worker.md",
+      "original_sha256": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+      "original_bytes": 34385,
+      "stored_path": "archive/23/23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9.gz",
+      "stored_bytes": 12032,
+      "stored_sha256": "1ff0c167baeecd847c8f16c45d0519346a6feb59d7ce76688c2bedd768bd832b"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/baselines/es-capital-gains.md",
+      "original_sha256": "68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97",
+      "original_bytes": 35655,
+      "stored_path": "archive/68/68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97.gz",
+      "stored_bytes": 12176,
+      "stored_sha256": "530741463b16d523a6fbab425757f5762b692d63e12ab7f006c2160fad5cae68"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/baselines/es-corporate-tax.md",
+      "original_sha256": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+      "original_bytes": 43177,
+      "stored_path": "archive/d8/d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce.gz",
+      "stored_bytes": 14327,
+      "stored_sha256": "934171890bc140f606714a2115da88b688b7f7e47431ee486949eafbc8838876"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/baselines/es-estimated-tax.md",
+      "original_sha256": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+      "original_bytes": 36716,
+      "stored_path": "archive/74/74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2.gz",
+      "stored_bytes": 11474,
+      "stored_sha256": "1c99ea185eb0d0784c7b6a96090594e11ebe5923517bfbf30b247832c20de4c1"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/baselines/es-rental-income.md",
+      "original_sha256": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+      "original_bytes": 38930,
+      "stored_path": "archive/99/99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b.gz",
+      "stored_bytes": 12522,
+      "stored_sha256": "cad4e74e023576660a081c2a6cf39c2276d34bc8b45ca3435fff484ac7e15f7e"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/baselines/spain-payroll.md",
+      "original_sha256": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+      "original_bytes": 51985,
+      "stored_path": "archive/01/01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110.gz",
+      "stored_bytes": 16965,
+      "stored_sha256": "ff52c5155b2aabcef92c6370e2cfd3181521b85af190706b42d85c8adab2269c"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/candidates/es-autonomous-worker.md",
+      "original_sha256": "a5173697d5ddacff55cbfc6d460f7ce8894971c38a459b45babeb6d8d5604e9c",
+      "original_bytes": 34420,
+      "stored_path": "archive/a5/a5173697d5ddacff55cbfc6d460f7ce8894971c38a459b45babeb6d8d5604e9c.gz",
+      "stored_bytes": 12040,
+      "stored_sha256": "c77242693657f5a8115d238bd288a38b054f259dfdf834efe6b99043e388e1f4"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/candidates/es-capital-gains.md",
+      "original_sha256": "82623fa009098ee9a0a1118df20336f8b6afbd5db44fd98c1ee6e01635beafed",
+      "original_bytes": 35690,
+      "stored_path": "archive/82/82623fa009098ee9a0a1118df20336f8b6afbd5db44fd98c1ee6e01635beafed.gz",
+      "stored_bytes": 12188,
+      "stored_sha256": "91613713cb02f36255f40c4ebb95b27217d089a37d48313eed8b754efaf8dead"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/candidates/es-corporate-tax.md",
+      "original_sha256": "5bb35d2d0335947ea96e3db05a731adf9136d7d3d71d74a667a8204f86bbd91e",
+      "original_bytes": 43212,
+      "stored_path": "archive/5b/5bb35d2d0335947ea96e3db05a731adf9136d7d3d71d74a667a8204f86bbd91e.gz",
+      "stored_bytes": 14337,
+      "stored_sha256": "1bbbdf6b0aacf9bec83202b9ed9a4badf1aac7f3de12083e5bea5ac4d46946f9"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/candidates/es-estimated-tax.md",
+      "original_sha256": "e3699309ab94be1df63bd5fbdf3b336f73c7cc446059b455fb083911e59c8854",
+      "original_bytes": 36751,
+      "stored_path": "archive/e3/e3699309ab94be1df63bd5fbdf3b336f73c7cc446059b455fb083911e59c8854.gz",
+      "stored_bytes": 11485,
+      "stored_sha256": "4cb5470ec06f75211eef2792b6e63dde770fc397b7c8359290acf03f0c67a251"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/candidates/es-rental-income.md",
+      "original_sha256": "80f67765e0fd2c3f2fa9eb55d6237d80affc396133b064fd48336047aa298184",
+      "original_bytes": 38965,
+      "stored_path": "archive/80/80f67765e0fd2c3f2fa9eb55d6237d80affc396133b064fd48336047aa298184.gz",
+      "stored_bytes": 12534,
+      "stored_sha256": "152b262365a5289513c004fa0c6f6e5a6d0d5594406d605ddcdcbfe040483609"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/candidates/spain-payroll.md",
+      "original_sha256": "61849c12ccd240448dac1a3dcb2a9c174d2f843426af1f5947889e2a1ae43689",
+      "original_bytes": 52020,
+      "stored_path": "archive/61/61849c12ccd240448dac1a3dcb2a9c174d2f843426af1f5947889e2a1ae43689.gz",
+      "stored_bytes": 16973,
+      "stored_sha256": "99be161a2da3afd3c788bfdf6eea95c5113ad6e07cd8beef33e2708dc4e7319c"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/originals/es-autonomous-worker.md",
+      "original_sha256": "4500ee91a693fbd1fca9fd5b0727a00475a0ddde81c7a2f8af2501b681610bf9",
+      "original_bytes": 41442,
+      "stored_path": "archive/45/4500ee91a693fbd1fca9fd5b0727a00475a0ddde81c7a2f8af2501b681610bf9.gz",
+      "stored_bytes": 13882,
+      "stored_sha256": "18643c9b85bb06e3ceccb2d38518817b1b84d6c175657d41c1644b1016a4dc0d"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/originals/es-capital-gains.md",
+      "original_sha256": "f3a8492c3cf0dfa9cac176b840929284f89143de47ad25d2b63fb6ebc13f5eee",
+      "original_bytes": 31582,
+      "stored_path": "archive/f3/f3a8492c3cf0dfa9cac176b840929284f89143de47ad25d2b63fb6ebc13f5eee.gz",
+      "stored_bytes": 10564,
+      "stored_sha256": "395e0e1789df9bebc7cad1b083a621948e1a596c5c6a63f6bf20dfa214bba0c1"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/originals/es-corporate-tax.md",
+      "original_sha256": "7dfdf2ef12154f4950d22ec78bf63629d81f30eb16f512afc4ce31a63ed0bbfb",
+      "original_bytes": 55329,
+      "stored_path": "archive/7d/7dfdf2ef12154f4950d22ec78bf63629d81f30eb16f512afc4ce31a63ed0bbfb.gz",
+      "stored_bytes": 16638,
+      "stored_sha256": "05c1dc89558ee9ae155f9ce0d5a46cfcf2988f07bee2811e38f44e5e1b1d347d"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/originals/es-estimated-tax.md",
+      "original_sha256": "d6fa931e647bcc63695672abe5d61068c8ec051720fae4bfe7868e4389e59f59",
+      "original_bytes": 49336,
+      "stored_path": "archive/d6/d6fa931e647bcc63695672abe5d61068c8ec051720fae4bfe7868e4389e59f59.gz",
+      "stored_bytes": 15736,
+      "stored_sha256": "7d615f953d728e123775ca42c2a6bec63f784f0487ddf6eb9e78c5b73a39c101"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/originals/es-rental-income.md",
+      "original_sha256": "1433599fe485b27f9db90fda707aff5b9ca8efcbb2fdf4c2cf4bb12458df9dbd",
+      "original_bytes": 57187,
+      "stored_path": "archive/14/1433599fe485b27f9db90fda707aff5b9ca8efcbb2fdf4c2cf4bb12458df9dbd.gz",
+      "stored_bytes": 17469,
+      "stored_sha256": "e50d78f1a38ba24902a8c05f828ae7b4712316339bc413f983e17dcee6148a85"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/originals/spain-payroll.md",
+      "original_sha256": "24fabb7461e169291206d64d86013e30825af6698dd3d12f31b29a6b86ceac5a",
+      "original_bytes": 69522,
+      "stored_path": "archive/24/24fabb7461e169291206d64d86013e30825af6698dd3d12f31b29a6b86ceac5a.gz",
+      "stored_bytes": 21865,
+      "stored_sha256": "8c48ec91b9371f952246ba5fe3bbbd1f1387557846bc450d273c080df89cc8c2"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/report.md",
+      "original_sha256": "b9ae82416429f1c90710c94e572a0448f8f4ac73dfbaa918ed6155eebba84b47",
+      "original_bytes": 686,
+      "stored_path": "archive/b9/b9ae82416429f1c90710c94e572a0448f8f4ac73dfbaa918ed6155eebba84b47.gz",
+      "stored_bytes": 417,
+      "stored_sha256": "8a73218f1cc40cc0956dd2acf39e65cd87431f37d8956fe5cbf3531e5688263a"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-private/restoration-proof.json",
+      "original_sha256": "bf5a89b7599eb58f37cb983fb3284c9f5747f09899bdce96808ccac2c87416ec",
+      "original_bytes": 4410,
+      "stored_path": "archive/bf/bf5a89b7599eb58f37cb983fb3284c9f5747f09899bdce96808ccac2c87416ec.gz",
+      "stored_bytes": 1312,
+      "stored_sha256": "a23154ef853ed4c0c0141617f33b7eafdc62d13ce9afeb4feec0cb3d51206c73"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/approved-review-identities.json",
+      "original_sha256": "ad19f9136e0e7c84472a8ef6cc55c841100fc26b6b5312e68393ef234917213a",
+      "original_bytes": 655,
+      "stored_path": "archive/ad/ad19f9136e0e7c84472a8ef6cc55c841100fc26b6b5312e68393ef234917213a.gz",
+      "stored_bytes": 321,
+      "stored_sha256": "78b56399180dd393882e5d5b6f5c7c213ba1815d1c08475630165b34f89c56b4"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/composition-manifest.json",
+      "original_sha256": "3e26abcffcf2d1c29a41d262f7403ed285784e41f61aef1f453ce2350c0f4482",
+      "original_bytes": 12875,
+      "stored_path": "archive/3e/3e26abcffcf2d1c29a41d262f7403ed285784e41f61aef1f453ce2350c0f4482.gz",
+      "stored_bytes": 2467,
+      "stored_sha256": "7c510f13b3fb00d36eae4209e8a0707d2ee8622d71664fd416e6981dd4bd81ae"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/country-examples.txt",
+      "original_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "original_bytes": 60,
+      "stored_path": "archive/96/96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753.gz",
+      "stored_bytes": 73,
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/schema-output.txt",
+      "original_sha256": "a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f",
+      "original_bytes": 81,
+      "stored_path": "archive/a6/a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f.gz",
+      "stored_bytes": 92,
+      "stored_sha256": "37074c7f0ce427dd3941d03d8814120721af7d96574363999ed5d9452166a3f9"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/README.md",
+      "original_sha256": "6093646998039397e0f8c64d50bb05142845ceabb62205247f4a5c3acf8b4d9a",
+      "original_bytes": 13131,
+      "stored_path": "archive/60/6093646998039397e0f8c64d50bb05142845ceabb62205247f4a5c3acf8b4d9a.gz",
+      "stored_bytes": 5214,
+      "stored_sha256": "a6c9795aa45dcb387fa023f8d04760e26ad7705b921bcce9060a460c36fb80a9"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-autonomous-worker.md",
+      "original_sha256": "a5173697d5ddacff55cbfc6d460f7ce8894971c38a459b45babeb6d8d5604e9c",
+      "original_bytes": 34420,
+      "stored_path": "archive/a5/a5173697d5ddacff55cbfc6d460f7ce8894971c38a459b45babeb6d8d5604e9c.gz",
+      "stored_bytes": 12040,
+      "stored_sha256": "c77242693657f5a8115d238bd288a38b054f259dfdf834efe6b99043e388e1f4"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-beckham.md",
+      "original_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "original_bytes": 23234,
+      "stored_path": "archive/0e/0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325.gz",
+      "stored_bytes": 7981,
+      "stored_sha256": "e72a40dfce215aed4081de8b0a1e0768481bec4cb31cc6205241a80c5def5e16"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-canary-islands-igic.md",
+      "original_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "original_bytes": 33282,
+      "stored_path": "archive/5e/5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25.gz",
+      "stored_bytes": 11732,
+      "stored_sha256": "f414144d35e327adbf84206ab4c7058d90afe71c717dfddc1f5b91e610bd169f"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-capital-gains.md",
+      "original_sha256": "82623fa009098ee9a0a1118df20336f8b6afbd5db44fd98c1ee6e01635beafed",
+      "original_bytes": 35690,
+      "stored_path": "archive/82/82623fa009098ee9a0a1118df20336f8b6afbd5db44fd98c1ee6e01635beafed.gz",
+      "stored_bytes": 12188,
+      "stored_sha256": "91613713cb02f36255f40c4ebb95b27217d089a37d48313eed8b754efaf8dead"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-ceuta-melilla-ipsi.md",
+      "original_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "original_bytes": 50091,
+      "stored_path": "archive/b2/b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d.gz",
+      "stored_bytes": 14041,
+      "stored_sha256": "96f3947bf588cefc82409adbf91ea73709c1956f73186b8827c13712ea8a16df"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-corporate-tax.md",
+      "original_sha256": "5bb35d2d0335947ea96e3db05a731adf9136d7d3d71d74a667a8204f86bbd91e",
+      "original_bytes": 43212,
+      "stored_path": "archive/5b/5bb35d2d0335947ea96e3db05a731adf9136d7d3d71d74a667a8204f86bbd91e.gz",
+      "stored_bytes": 14337,
+      "stored_sha256": "1bbbdf6b0aacf9bec83202b9ed9a4badf1aac7f3de12083e5bea5ac4d46946f9"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-estimated-tax.md",
+      "original_sha256": "e3699309ab94be1df63bd5fbdf3b336f73c7cc446059b455fb083911e59c8854",
+      "original_bytes": 36751,
+      "stored_path": "archive/e3/e3699309ab94be1df63bd5fbdf3b336f73c7cc446059b455fb083911e59c8854.gz",
+      "stored_bytes": 11485,
+      "stored_sha256": "4cb5470ec06f75211eef2792b6e63dde770fc397b7c8359290acf03f0c67a251"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-foral-corporate-tax.md",
+      "original_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "original_bytes": 112395,
+      "stored_path": "archive/00/00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27.gz",
+      "stored_bytes": 31443,
+      "stored_sha256": "c7fffbd1d8d1268c9bbd43978964c94ce3cd31e474ca08f45ecbca5d2c77c73f"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-foral-income-tax.md",
+      "original_sha256": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+      "original_bytes": 265659,
+      "stored_path": "archive/d4/d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19.gz",
+      "stored_bytes": 71013,
+      "stored_sha256": "b732091a4a2e1c06dcd3c5b66de993cc4764cb3463122a3784c7cc98689eed60"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-foral-non-resident-tax.md",
+      "original_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "original_bytes": 67660,
+      "stored_path": "archive/58/588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152.gz",
+      "stored_bytes": 20647,
+      "stored_sha256": "f2359c85e2a1f0a9b5b679f92bb06dacf7393c5384979f596c7f9a1a20cf43ae"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-foral-payroll.md",
+      "original_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "original_bytes": 54518,
+      "stored_path": "archive/4e/4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f.gz",
+      "stored_bytes": 12020,
+      "stored_sha256": "6b4d26cb1e02f8e6c49bec346fa64ab11535d3423f6407dacb4eaf4a6427ebe1"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-income-tax.md",
+      "original_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "original_bytes": 85291,
+      "stored_path": "archive/07/07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564.gz",
+      "stored_bytes": 23364,
+      "stored_sha256": "4f7f4d81ad7576b88cb42f0d4e06fc49b30cbbba30c176b83d672a5ada162a1f"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "original_bytes": 489578,
+      "stored_path": "archive/c7/c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7.gz",
+      "stored_bytes": 137512,
+      "stored_sha256": "b0732bcdcc9586250932eb136f7c19acbbe33c5a9e59dd1e266ac5416573d5e1"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-modelo-111.md",
+      "original_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "original_bytes": 25444,
+      "stored_path": "archive/ca/cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982.gz",
+      "stored_bytes": 8571,
+      "stored_sha256": "e780530457995af64df650884064112133238663e538f87e2de8b74e80895342"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+      "original_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "original_bytes": 33442,
+      "stored_path": "archive/f2/f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4.gz",
+      "stored_bytes": 11505,
+      "stored_sha256": "21cd63693b587b76c6fc3ae6ab9230691ebaa1234bbffe91b8b2f31b47ba3302"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-rental-income.md",
+      "original_sha256": "80f67765e0fd2c3f2fa9eb55d6237d80affc396133b064fd48336047aa298184",
+      "original_bytes": 38965,
+      "stored_path": "archive/80/80f67765e0fd2c3f2fa9eb55d6237d80affc396133b064fd48336047aa298184.gz",
+      "stored_bytes": 12534,
+      "stored_sha256": "152b262365a5289513c004fa0c6f6e5a6d0d5594406d605ddcdcbfe040483609"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-social-contributions.md",
+      "original_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "original_bytes": 68625,
+      "stored_path": "archive/f7/f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1.gz",
+      "stored_bytes": 20877,
+      "stored_sha256": "126c136d50b8d08284bac1cf99cdd3284d1113d56001042beeb2bccd53de72cd"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/es-vat-return.md",
+      "original_sha256": "d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3",
+      "original_bytes": 86372,
+      "stored_path": "archive/d1/d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3.gz",
+      "stored_bytes": 27330,
+      "stored_sha256": "d263a05e1a4415163d908350642f86edfe1d52fbf8547bf94b2bd1e010c7cee1"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/references.md",
+      "original_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "original_bytes": 3537,
+      "stored_path": "archive/f1/f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874.gz",
+      "stored_bytes": 1701,
+      "stored_sha256": "a6162ab0e458c12cf1db34bbf08e1be237e7cfbe9aa972265f44c0382944d4c3"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/spain-bookkeeping.md",
+      "original_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "original_bytes": 73678,
+      "stored_path": "archive/24/2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2.gz",
+      "stored_bytes": 24061,
+      "stored_sha256": "b651f304d582c4151e46148969bc54a48d76c0e1ba57d0fae23d256bb91b9846"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/spain-crypto-tax.md",
+      "original_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "original_bytes": 31385,
+      "stored_path": "archive/f5/f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c.gz",
+      "stored_bytes": 11188,
+      "stored_sha256": "09cdf177cee9cc4e62f91ae686894cd8647b67f942eef4689e8c0e8259405d9e"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/spain-einvoice.md",
+      "original_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "original_bytes": 53944,
+      "stored_path": "archive/8f/8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30.gz",
+      "stored_bytes": 16863,
+      "stored_sha256": "bb0f51dcb1274360dc40cc06458bd42452ae9f765645e5288efafccf8bf96218"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/spain-financial-statements.md",
+      "original_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "original_bytes": 51863,
+      "stored_path": "archive/4b/4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d.gz",
+      "stored_bytes": 16412,
+      "stored_sha256": "0c92c2a075a35e0e908a0eb7b5d0b9eb97a47fc374e8a4e268d8f4a57c173a4e"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/spain-formation.md",
+      "original_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "original_bytes": 11892,
+      "stored_path": "archive/a6/a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787.gz",
+      "stored_bytes": 4807,
+      "stored_sha256": "ad48a4689e885e1a41c705eae2d61a44fa32b85f3949127deebb57fbfedaa0f8"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/spain-payroll.md",
+      "original_sha256": "61849c12ccd240448dac1a3dcb2a9c174d2f843426af1f5947889e2a1ae43689",
+      "original_bytes": 52020,
+      "stored_path": "archive/61/61849c12ccd240448dac1a3dcb2a9c174d2f843426af1f5947889e2a1ae43689.gz",
+      "stored_bytes": 16973,
+      "stored_sha256": "99be161a2da3afd3c788bfdf6eea95c5113ad6e07cd8beef33e2708dc4e7319c"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/spain-tax-optimization.md",
+      "original_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "original_bytes": 20281,
+      "stored_path": "archive/2f/2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89.gz",
+      "stored_bytes": 8036,
+      "stored_sha256": "485be917bf8423c53a84e55e73de6f8d7b5148dbc1cf115364b5420bf9d0c994"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/spain-transfer-pricing.md",
+      "original_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "original_bytes": 31683,
+      "stored_path": "archive/5d/5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d.gz",
+      "stored_bytes": 10415,
+      "stored_sha256": "757603f1f3badb4a1bebdde7d382af49ab607f4d1c208a4e74e1e329c3129f01"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/skills/international/spain/spain-vat-return.md",
+      "original_sha256": "70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2",
+      "original_bytes": 26631,
+      "stored_path": "archive/70/70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2.gz",
+      "stored_bytes": 9603,
+      "stored_sha256": "c0d3d8ac1757b74d57fa2fca2df0c13a13c2f4f51a7bc14d2ee8e69d641ec6ff"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-composition/validation.json",
+      "original_sha256": "f8dfddfee5a8c60bd4c6e6db0f8463ceeae8ebaa30be93948876ab5dc9f11e1b",
+      "original_bytes": 183,
+      "stored_path": "archive/f8/f8dfddfee5a8c60bd4c6e6db0f8463ceeae8ebaa30be93948876ab5dc9f11e1b.gz",
+      "stored_bytes": 148,
+      "stored_sha256": "46ad74e806d64a501eeb0648dc1acdc9b56d2b63d1704223bd23f0fe943bd47f"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/F-P1-exact-restoration-review/checks.json",
+      "original_sha256": "8bb05fbb66743d0110eb0461f516766b8696ce9e2c1f4dda69e415e928f70a8f",
+      "original_bytes": 3842,
+      "stored_path": "archive/8b/8bb05fbb66743d0110eb0461f516766b8696ce9e2c1f4dda69e415e928f70a8f.gz",
+      "stored_bytes": 1246,
+      "stored_sha256": "148db92998c0cf1c8ba7cd4bc7b7ba9bf404e9185bb224f96300369adc5d4a7c"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/F-P1-exact-restoration-review/manifest.json",
+      "original_sha256": "c4e2c47c121fbdb64ebabf6b83e212d1a0d9b3e396b7edc268626fa9e4d313dc",
+      "original_bytes": 858,
+      "stored_path": "archive/c4/c4e2c47c121fbdb64ebabf6b83e212d1a0d9b3e396b7edc268626fa9e4d313dc.gz",
+      "stored_bytes": 373,
+      "stored_sha256": "051649bcbbfa535d976e88253e4bce93246be566d5bd063afc8638f236634cc8"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/F-P1-exact-restoration-review/own-full-diff.patch",
+      "original_sha256": "7f9a5dc9ffcf4b961b4991a851b85cd43ffb331e7a7407278638ada86bba5809",
+      "original_bytes": 4496,
+      "stored_path": "archive/7f/7f9a5dc9ffcf4b961b4991a851b85cd43ffb331e7a7407278638ada86bba5809.gz",
+      "stored_bytes": 1772,
+      "stored_sha256": "40091fb73c13c94f72f7fa6eacaddec61b7ceaa8190f3e41e64d4ba5443a03bd"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/F-P1-exact-restoration-review/report.md",
+      "original_sha256": "de8a0a186a03b8f50693d0115f515c493d14afe40bda746ae3b9078c9be4d5f5",
+      "original_bytes": 1832,
+      "stored_path": "archive/de/de8a0a186a03b8f50693d0115f515c493d14afe40bda746ae3b9078c9be4d5f5.gz",
+      "stored_bytes": 1087,
+      "stored_sha256": "6f9c3fd616a5a2773b3847be445eb0faaadbdd3af55cdd30c6ac98e4715707df"
+    }
+  ]
+}

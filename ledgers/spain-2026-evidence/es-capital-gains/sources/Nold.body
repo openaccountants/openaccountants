@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>     
+	<meta charset="utf-8">  
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Determinación de la base imponible en el IRNR sin establecimiento permanente - Ganancias patrimon...</title><meta name="ObjectId" content="4c634413891df610VgnVCM100000dc381e0aRCRD"/><meta name="tema" content="No residentes"/><meta name="temaId" content="8cb95e59922ec610VgnVCM100000dc381e0aRCRD"/><meta name="subTema" content="Impuesto sobre la Renta de no Residentes: rentas obtenidas sin establecimiento permanente"/><meta name="subTemaId" content="88876aaff991f610VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="No residentes, Impuesto sobre la Renta de no Residentes: sin establecimiento permanente"/>
+<meta name="detalle" content="informacion_paginado"/> 
+</head>
+<body>
+  	<div id="body" data-template-id="0557bf5177bac610VgnVCM100000dc381e0aRCRD" class="s_Sede p_estandar t_informacion paginado">
+  
+	  <header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='8cb95e59922ec610VgnVCM100000dc381e0aRCRD' href='/Sede/no-residentes.html'>No residentes</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='88876aaff991f610VgnVCM100000dc381e0aRCRD' href='/Sede/no-residentes/irnr-sin-establecimiento-permanente.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Impuesto sobre la Renta de no Residentes: rentas obtenidas sin establecimiento permanente</a></li>
+</ol>
+</nav>
+
+<div class="container-text js-container print-p-0 container-print"> 
+			<div class="row mt-3 print-m-0"> 
+				<main class="col-12 col-lg-7 col-print-12 print-p-0" id="acc-main"><h1 id="js-nombre-canal" data-aeat-id="4419bc6411eaf610VgnVCM100000dc381e0aRCRD" class="font-weight-bold mb-3">Determinación de la base imponible en el IRNR sin establecimiento permanente</h1><div><p id="js-descripcion-canal">Modo de determinar la base imponible correspondiente a rendimientos y ganancias patrimoniales y tributación</p></div><a class="focus-only mb-3 d-inline-block w-auto" href="#js-nombre-canal-paginado">Saltar índice de la información</a><!--googleoff: index--><nav class="break-inside-avoid row mb-3 mx-0 pl-0 position-relative overflow-hidden overflow-print-auto border-sm-bottom column-span-all border-print-bottom-0"><button class="d-sm-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indicePaginado"><i class="mr-2 aeat-ico fa-ico-indice-sm ico-size-1" aria-hidden="true" role="presentation"></i>Índice</button><p class="d-none d-sm-flex col-2 text-secondary col-print-12 print-p-0 text-print-body h6-print print-mb-3 d-print-block">Índice:</p><ol id="indicePaginado" class="js-aeat-modal-sm position-relative col m-0 print-pl-4" data-title="Índice" data-header="true" data-footer="true" ><li data-id="6f224413891df610VgnVCM100000dc381e0aRCRD" class="text-primary mb-2"><a href="/Sede/no-residentes/irnr-sin-establecimiento-permanente/determinacion-bi-irnr-sin-establecimiento-permanente.html" title="Base imponible con carácter general">Base imponible con carácter general</a></li><li data-id="8b724413891df610VgnVCM100000dc381e0aRCRD" class="text-primary mb-2"><a href="/Sede/no-residentes/irnr-sin-establecimiento-permanente/determinacion-bi-irnr-sin-establecimiento-permanente/ganancias-patrimoniales-obtenidas-personas-fisicas.html" title="Ganancias patrimoniales obtenidas por personas físicas">Ganancias patrimoniales obtenidas por personas físicas</a></li><li data-id="14b24413891df610VgnVCM100000dc381e0aRCRD" class="text-primary mb-2"><a href="/Sede/no-residentes/irnr-sin-establecimiento-permanente/determinacion-bi-irnr-sin-establecimiento-permanente/ganancias-patrimoniales-obtenidas-sociedades-no-residentes.html" title="Ganancias patrimoniales obtenidas por sociedades no residentes">Ganancias patrimoniales obtenidas por sociedades no residentes</a></li><li data-id="4c634413891df610VgnVCM100000dc381e0aRCRD" class="active text-secondary mb-2">Ganancias patrimoniales procedentes de bienes adquiridos antes del 31 diciembre de 1994</li></ol></nav><!--googleon: index--><h2 id="js-nombre-canal-paginado"  class="font-weight-bold mb-3 column-span-all">Ganancias patrimoniales procedentes de bienes adquiridos antes del 31 diciembre de 1994</h2><p>Sin perjuicio de lo dispuesto en un Convenio para evitar la doble imposici&oacute;n suscrito por Espa&ntilde;a que resulte aplicable, las ganancias patrimoniales obtenidas por personas f&iacute;sicas no residentes obtenidas en territorio espa&ntilde;ol procedentes de bienes o derechos adquiridos antes del 31 de diciembre de 1994 tributan del siguiente modo:</p>
+<p><strong>Ganancias devengadas a partir del 1 de enero de 2015:</strong></p>
+<p>El importe de las ganancias patrimoniales correspondientes a transmisiones de elementos patrimoniales adquiridos con anterioridad al 31 de diciembre de 1994 se determinar&aacute; con arreglo a las siguientes reglas:</p>
+<ul>
+<li>
+<p><strong>Primera</strong>: Calculada la ganancia por diferencia entre los valores de transmisi&oacute;n y adquisici&oacute;n, se distinguir&aacute; la parte de la misma que se haya generado con anterioridad al 20 de enero de 2006. Esa parte se reducir&aacute;, en su caso, de la siguiente manera:</p>
+<ol type="a">
+<li>
+<p>Se calcular&aacute; el n&uacute;mero de a&ntilde;os que medie entre la fecha de adquisici&oacute;n del elemento y el 31 de diciembre de 1996, redondeado por exceso.</p>
+</li>
+<li>
+<p>Se calcular&aacute; el valor de transmisi&oacute;n de todos los elementos patrimoniales a cuya ganancia patrimonial le hubiera resultado de aplicaci&oacute;n este mismo r&eacute;gimen transitorio, transmitidos desde el 1 de enero de 2015 hasta la fecha de transmisi&oacute;n del elemento patrimonial. Cuando <strong>este resultado sea superior a 400.000 euros no se practicar&aacute; reducci&oacute;n alguna. </strong></p>
+</li>
+<li>
+<p>Cuando sea inferior a 400.000 euros la suma del valor de transmisi&oacute;n del elemento patrimonial y la cuant&iacute;a a que se refiere la letra b) anterior, la parte de la ganancia patrimonial generada con anterioridad al 20 de enero de 2006 se reducir&aacute; en el importe resultante de aplicar los siguientes porcentajes por cada a&ntilde;o de permanencia de los se&ntilde;alados en la letra a) anterior que exceda de dos.</p>
+<p>Porcentajes:</p>
+<ul>
+<li>
+<p>11,11%: bienes inmuebles, derechos sobre los mismos o valores de las entidades comprendidas en el art&iacute;culo 108 de la Ley 24/1988, de 28 de julio, del Mercado de Valores, con excepci&oacute;n de las acciones o participaciones representativas del capital social o patrimonio de las Sociedades o Fondos de Inversi&oacute;n Inmobiliaria.</p>
+</li>
+<li>
+<p>25%: acciones admitidas a negociaci&oacute;n, con excepci&oacute;n de las acciones representativas del capital social de Sociedades de Inversi&oacute;n Mobiliaria e Inmobiliaria.</p>
+</li>
+<li>
+<p>14,28% para las restantes ganancias patrimoniales.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Cuando sea superior a 400.000 euros la suma del valor de transmisi&oacute;n del elemento patrimonial y la cuant&iacute;a a que se refiere la letra b) anterior, pero el resultado de lo dispuesto en la letra b) anterior sea inferior a 400.000 euros, se practicar&aacute; la reducci&oacute;n a la parte de la ganancia patrimonial generada con anterioridad al 20 de enero de 2006 que proporcionalmente corresponda a la parte del valor de transmisi&oacute;n que sumado a la cuant&iacute;a de la letra b) anterior no supere 400.000 euros.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Segunda</strong>: En los casos de valores admitidos a negociaci&oacute;n, sobre la ganancia patrimonial se efectuar&aacute; la reducci&oacute;n que proceda de las siguientes:</p>
+<ol type="a">
+<li>
+<p>Si el valor de transmisi&oacute;n fuera igual o superior al que corresponda a los valores, a efectos del Impuesto sobre el Patrimonio del a&ntilde;o 2005, la parte de la ganancia patrimonial que se hubiera generado con anterioridad al 20 de enero de 2006 se reducir&aacute;, en su caso, de acuerdo con lo previsto en la regla primera anterior. A estos efectos, la ganancia patrimonial generada con anterioridad a 20 de enero de 2006 ser&aacute; la parte de la ganancia patrimonial resultante de tomar como valor de transmisi&oacute;n el que corresponda a los valores a efectos del Impuesto sobre el Patrimonio del a&ntilde;o 2005.</p>
+</li>
+<li>
+<p>Si el valor de transmisi&oacute;n fuera inferior al que corresponda a los valores a efectos del Impuesto sobre el Patrimonio del a&ntilde;o 2005, se entender&aacute; que toda la ganancia patrimonial se ha generado con anterioridad al 20 de enero de 2006 y se reducir&aacute;, en su caso, de acuerdo con lo previsto en la regla primera anterior.</p>
+</li>
+</ol>
+</li>
+</ul>
+<div class="border-left border-primary pl-2 border-size-5">
+<p><strong>Ejemplo</strong>:</p>
+<p>Transmisi&oacute;n de un inmueble el 31 de diciembre de 2015 por importe de 300.000 euros, adquirido el 1 de enero de 1991 por importe equivalente a 100.000 euros. El contribuyente <strong>transmiti&oacute; anteriormente, el 1 de febrero de 2015 otro elemento patrimonial </strong>(cuyo valor de transmisi&oacute;n fue de 200.000 euros), <strong>a cuya ganancia se le aplic&oacute; el r&eacute;gimen transitorio.</strong></p>
+<table><caption><strong> Determinaci&oacute;n de la ganancia sometida a tributaci&oacute;n</strong></caption>
+<tbody>
+<tr>
+<th class="texto_izq"><strong>Valor de transmisi&oacute;n (casilla 9): 300.000&euro; </strong></th>
+<td><strong>Fecha de transmisi&oacute;n: 31/12/2015</strong></td>
+</tr>
+<tr>
+<th class="texto_izq"><strong>Valor de adquisici&oacute;n (casilla 10): 100.000&euro;</strong></th>
+<td><strong>Fecha de adquisici&oacute;n: 01/01/1991</strong></td>
+</tr>
+<tr>
+<th class="texto_izq"><strong>Diferencia (casilla 11): 200.000&euro;</strong></th>
+<td>300.000-100.000 = 200.000</td>
+</tr>
+<tr>
+<th class="texto_izq">Ganancia generada hasta 19/01/2006: 120.438,11 &euro;</th>
+<td>
+<ul>
+<li>N&ordm; d&iacute;as transcurridos entre las fechas de compra y de venta: 9.130</li>
+<li>N&ordm; d&iacute;as transcurridos entre las fechas de compra y el 19/01/2006: 5.498</li>
+</ul>
+<p>C&aacute;lculo: (200.000x5.498)/9.130= 120.438,11 &euro;</p>
+</td>
+</tr>
+<tr>
+<th class="texto_izq">Ganancia susceptible de reducci&oacute;n: 80.292,07 &euro;</th>
+<td>
+<ul>
+<li>L&iacute;mite de valores de transmisi&oacute;n: 400.000 &euro;</li>
+<li>Suma acumulada de valores de transmisi&oacute;n de otros bienes transmitidos desde 1 de enero de 2015 hasta la fecha de la actual transmisi&oacute;n: 200.000 &euro;</li>
+<li>Aunque el valor de la transmisi&oacute;n actual es de 300.000 &euro;, como del l&iacute;mite de 400.000 &euro; ya se utilizaron en la anterior transmisi&oacute;n 200.000 &euro;, solo quedan 200.000 &euro; para utilizar en la actual transmisi&oacute;n.</li>
+</ul>
+<p>Es susceptible de reducci&oacute;n la parte de la ganancia generada hasta el 19/01/2006 que corresponda proporcionalmente a un valor de transmisi&oacute;n de 200.000 &euro;.</p>
+<p>C&aacute;lculo: (120.438,11x200.000)/300.000 = 80.292,07</p>
+</td>
+</tr>
+<tr>
+<th class="texto_izq">Reducci&oacute;n: 35.681,79 &euro;</th>
+<td>
+<ul>
+<li>Per&iacute;odo permanencia en el patrimonio anterior a 31/12/1996 (entre fecha de adquisici&oacute;n y 31/12/1996, redondeado por exceso): 6</li>
+<li>N&ordm; a&ntilde;os que exceden de 2: 6-2 = 4</li>
+<li>Porcentaje de reducci&oacute;n: 4x11,11% = 44,44%</li>
+</ul>
+<p>C&aacute;lculo: (80.292,07x44,44)/100= 35.681,79</p>
+</td>
+</tr>
+<tr>
+<th class="texto_izq"><strong>Ganancia </strong>sometida a tributaci&oacute;n <strong> (casilla 12): 164.318,20 &euro;</strong></th>
+<td>C&aacute;lculo: Diferencia-Reducci&oacute;n=200.000-35.681,79 = 164.318,20</td>
+</tr>
+</tbody>
+</table>
+</div><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Sólo la página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todas las páginas del índice</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --><div class="d-print-none border-top border-bottom py-2 d-flex w-100 justify-content-end d-app-none"><button class="btn btn-light-primary text-primary btn-sm d-flex d-app-none align-items-center cursor-pointer js-btn-to-pdf" type="button"><span class="d-none d-xs-block">Generar PDF</span><i class="aeat-ico fa-ico-pdf ico-size-1 ml-xs-2 text-primary" role="presentation" aria-hidden="true"></i></button></div><div class="row mx-0 my-3 my-sm-6 js-paginado-pasos d-print-none"><a rel="prev" class="d-none d-sm-flex col-12 col-sm text-left px-4 py-3 mb-3 mb-sm-0 justify-content-start align-items-center bg-light-blue" href="/Sede/no-residentes/irnr-sin-establecimiento-permanente/determinacion-bi-irnr-sin-establecimiento-permanente/ganancias-patrimoniales-obtenidas-sociedades-no-residentes.html" role="button"><i class="aeat-ico fa-ico-arrow-left mr-3 ico-size-3" aria-hidden="true" role="presentation"></i><span><span class="h2 d-block">Anterior</span><span>Ganancias patrimoniales obtenidas por sociedades no residentes</span></span></a></div></main><aside class="col-12 col-lg-5 col-print-12 print-p-0"></aside></div>
+		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-02-06">06/febrero/2026</time></p></div></div></div></footer><!--googleon: index-->
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

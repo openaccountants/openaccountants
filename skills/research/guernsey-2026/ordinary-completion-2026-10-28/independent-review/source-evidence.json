@@ -1,0 +1,204 @@
+{
+  "review_date": "2026-10-28",
+  "saved_primary_corpus": [
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/social-insurance-current.pdf",
+      "sha256": "8cabb7551562cb29723cd9c2b86b75b88b49bd5770461a7ebfc8a7fedf9ed619",
+      "bytes": 2378130
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/social-insurance-current.txt",
+      "sha256": "d73d1e98f7a35e18fa9502e4a07cace0c8331f8fbf8ab6f7a34eaea874611ea0",
+      "bytes": 592530
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/contributions-current.pdf",
+      "sha256": "d08ec62707c5d3be07a2813db977848f06b80b858d848f00530991c4d5917c2e",
+      "bytes": 662100
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/contributions-current.txt",
+      "sha256": "817e14f076b683f08d94a1f14c2a6243609393e1136f3b6a05ddfab3a18f3706",
+      "bytes": 205081
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/classification-current.pdf",
+      "sha256": "876f35b99060eaf392c8c83aefc70fdf86b21ec8962a554a14fdda20694a8d45",
+      "bytes": 211493
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/classification-current.txt",
+      "sha256": "69fd06f1183bffe9d972356a2151c7e8e79a0d38a8103f2e3000365da1ed780e",
+      "bytes": 55186
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/contribution-rates-2026.pdf",
+      "sha256": "3d70881c982c635b44df314501ce3cfcbd30c0793240ef9df89dc5d6232b1a9d",
+      "bytes": 127830
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/contribution-rates-2026.txt",
+      "sha256": "4d196bd422183b3db275ccf2bbe7daadcaa74255831705610eefc5158248b109",
+      "bytes": 10548
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/circular-13-2020.pdf",
+      "sha256": "f5a204e9f78365c54d9d8d34d824c0e881c2f23ac5955f551b8e7e6570c07dab",
+      "bytes": 530831
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/circular-13-2020.txt",
+      "sha256": "acc72feafd2dace66bc37d234ad1c623330b207aa9778a46af3dfa795f34e95c",
+      "bytes": 2654
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/tax-surcharges-2005.pdf",
+      "sha256": "692e56f188c81f9789d3a11c041b77f9b4122ae4c86bd9c9383470273967fd5a",
+      "bytes": 208409
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/tax-surcharges-2005.txt",
+      "sha256": "3af6ad2b6e36a6cadccf568ed867eb8fca24214b1383ae205ffcb02be03af7ab",
+      "bytes": 6006
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/document-duty-current.pdf",
+      "sha256": "70226d8b5108435f54d04e799a6d5c6076d42dbd5b8570e8fc09ad07049374bd",
+      "bytes": 204717
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/document-duty-current.txt",
+      "sha256": "b862880589c33c5d89e5e49dea604b1cd10b9ca00038b44120985caa5fe61222",
+      "bytes": 57089
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/document-duty-indirect-current.pdf",
+      "sha256": "e7bbec8349bf6f1664cf1bc21c03a95aa9af0762accfdbab4157009ec21bda9a",
+      "bytes": 244786
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/document-duty-indirect-current.txt",
+      "sha256": "ec44ca5c62a5daaa4aaa36082ac3821c055b0e11b9f128744a1540da21c8dfc1",
+      "bytes": 75431
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/duty-rates-current.pdf",
+      "sha256": "73cc2c092d4e3bf515e5eeb67efd26fdec81a35da7f116e514f569db343e413b",
+      "bytes": 136044
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/duty-rates-current.txt",
+      "sha256": "ca73993392cb877ed0a97df4dd3bce422fb515126db9b987d5d70e72b094e299",
+      "bytes": 15516
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/duty-indirect-rates-current.pdf",
+      "sha256": "f6cb3f874a021f1c84e610c817a9f416acd4d9b04e22d7da3a3fafa3b3857a39",
+      "bytes": 125428
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/duty-indirect-rates-current.txt",
+      "sha256": "a84294769943ee424c5d767b6eb3582aefb2a1759ea321356bb972cda0e920b3",
+      "bytes": 13432
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/duty-indirect-fees-2026.pdf",
+      "sha256": "224e1affe1356fb27baa8f1495f52b3b8ead6b005a1dbfc18066f55bcc4f8f5a",
+      "bytes": 421563
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/duty-indirect-fees-2026.txt",
+      "sha256": "57574c45d75f0a2b2b65bff8d824e02d3cfe819b626d3b261c7ebd53c1e9fcf7",
+      "bytes": 2795
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/973b1d1bd6ab3d37.pdf",
+      "sha256": "29f22fdc6ed75c15256a4784dfdd4e6a8505420fcd08cdbab5e772117d2459e8",
+      "bytes": 387402
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/973b1d1bd6ab3d37.txt",
+      "sha256": "e20e9ea5dcf8325dfc2362492c855a87da2acdb41dda84a52751d797c04c2e6a",
+      "bytes": 64661
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/income-tax-current.pdf",
+      "sha256": "2eb6844c4cfda7d0c1d1b04828d830694ab04e5bb31d73ccac6a6bdc64f141d5",
+      "bytes": 6852323
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/income-tax-current.txt",
+      "sha256": "1c1438c2b0ed5ba52042d61a13191e603401f1cb04505786ea8b010bd3cc0b47",
+      "bytes": 1572341
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/gst-faq-current.txt",
+      "sha256": "df8994a1485f8f0f6454f613026463351f8beba09a561785e97634f5a83ae643",
+      "bytes": 19347
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/why-duty-current.txt",
+      "sha256": "68968b7dc92005c059fbe7b98cfce901a8f631470a988bf1815c67cd46b78ed3",
+      "bytes": 5121
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/customs-territory-current.txt",
+      "sha256": "c8366102faa3fb8c96b374a628c0ada8afed7016fbaed4ab2c90925019faad95",
+      "bytes": 4011
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/claiming-vat-current.txt",
+      "sha256": "6f4ce31c70950388aeb0f66ce996cc5174baa677105b734f8333400549695097",
+      "bytes": 4468
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/duties-current.txt",
+      "sha256": "b2c987d65a20e1b6c75c6d32a013c5f4ea2066c783d6ae51f405b7f07876b9e0",
+      "bytes": 3728
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/import-export-current.txt",
+      "sha256": "d172f82677b138c14d3d7c8c4b79b3f6a93f806e1b749ed381e937589245c715",
+      "bytes": 5753
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/income-tax-sections/173.txt",
+      "sha256": "2375123dbc0065bd98bed4253efc68383e535c38db0c2b08fc4e7f540ff187ca",
+      "bytes": 9317
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/income-tax-sections/176.txt",
+      "sha256": "d75a24c999c11f680b1715ac1789297bfefcf7f5417928374b9c69394a4e4368",
+      "bytes": 6847
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/income-tax-sections/199.txt",
+      "sha256": "746ba5852ded24a8f8d0ab408caa9e7a20e7e7349498b77fce71e50d51a8302e",
+      "bytes": 15183
+    },
+    {
+      "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/income-tax-sections/148.txt",
+      "sha256": "9ecbddf2ae478c8194bc8c29d71806ee84faf085b54e0810adad22ed35a0e565",
+      "bytes": 4612
+    }
+  ],
+  "fresh_checks": [
+    {
+      "url": "https://www.gov.uk/guidance/vat-guide-notice-700",
+      "scope": "4.7.3, successful web read, no VAT in Channel Islands and separate import/export treatment"
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/vat-place-of-supply-goods/vatposg2300",
+      "scope": "complete territorial explanation, successful web read"
+    },
+    {
+      "url": "https://gov.gg/taxpackagefaqs",
+      "scope": "successful normal browser read; Tax Reform Package accordion confirms new GST and Q1 2029 target"
+    },
+    {
+      "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268646",
+      "scope": "web inaccessible; normal browser direct-PDF blank accessibility state; substantive legal review uses saved official PDF/text and receipts"
+    }
+  ],
+  "conclusion": "No new unsupported tax calculation found within stated gates. Exact residual issues retained. Saved-source review is not a certification of every possible later amendment."
+}

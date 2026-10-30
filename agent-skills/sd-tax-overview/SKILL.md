@@ -20,7 +20,12 @@ metadata:
 > **Currency note:** All figures are in Sudanese Pounds (SDG — ج.س). Sudan has undergone multiple currency redenominations; verify current SDG values before filing.
 > **YMYL — verify before relying.** Sudan's tax legislation has been subject to amendments and the political situation (post-2021 military takeover, ongoing conflict since April 2023) has disrupted tax administration. Where this skill says "verify current value," re-confirm against the Sudan Taxation Chamber (tax.gov.sd), PwC Worldwide Tax Summaries, or a qualified Sudan accountant.
 
-----|-------|
+---
+
+## Section 1 — Quick reference
+
+| Field | Value |
+|-------|-------|
 | Country | Republic of Sudan (جمهورية السودان) — note: separate from South Sudan (Republic of South Sudan) since 2011 |
 | Capital | Khartoum (الخرطوم) |
 | Official language | Arabic; English common in business |

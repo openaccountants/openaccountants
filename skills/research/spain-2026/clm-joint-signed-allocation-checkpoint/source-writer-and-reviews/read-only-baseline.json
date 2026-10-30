@@ -1,0 +1,17 @@
+[
+  {
+    "name": "es-irpf-deductions.md",
+    "bytes": 465133,
+    "sha256": "db144091ffd7f9b5b414f47733f7bfa51b864e82bb583f765cf5ab4972203be3"
+  },
+  {
+    "name": "es-income-tax.md",
+    "bytes": 84808,
+    "sha256": "1d9320f9ed602e68fc30865b2b4cf1b1091564e6f765c40fd5fe5175907caab1"
+  },
+  {
+    "name": "README.md",
+    "bytes": 8348,
+    "sha256": "66ae1eb7cf60b1b871a670306d7ee444d449cc1cfcc5959201e8c9a4a63657a9"
+  }
+]

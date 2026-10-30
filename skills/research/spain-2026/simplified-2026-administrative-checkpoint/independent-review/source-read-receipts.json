@@ -1,0 +1,19 @@
+{
+  "fresh_network_receipts": "fresh-sources/receipts.json",
+  "read_scope": {
+    "aeat-april-1-effects": "Complete actual note, IRPF2025paragraph3 filing validity; distinct2026IRPF/IVA limits; updated1October2026",
+    "aeat-irpf-eligibility": "Complete actual eligibility text and aggregation gates; updated13October2026",
+    "aeat-simplified-eligibility": "Complete actual eligibility text, entity/activity/threshold/annualisation, linkedIRPF, first-quarter/startup election",
+    "aeat-april-9-sii-redeme": "Complete actual note; separate SII/REDEME scope only",
+    "liva-current": "122 and DT13, exact operative text and repeal notes",
+    "lirpf-current": "31 and DT32, exact operative text and repeal notes",
+    "riva-current": "33/34/36, election minimum/coordination/subjective scope/exclusion timing",
+    "leta-rirpf-current": "32\u201336, thresholds, filing act, minimum, startup incompatibility and IVA/IGIC coordination",
+    "module-order-2026": "3 and5\u20136, activity/order limits and first-quarter/startup elections",
+    "rdl-16-2025": "12/14.4/15 and commencement/publication, no current force asserted",
+    "rdl-2-2026": "8.1/10.4/11 and commencement/publication, no current force asserted",
+    "rdl-16-2025-repeal": "Actual repeal resolution27January/publication28January",
+    "rdl-2-2026-repeal": "Actual repeal resolution26February/publication28February"
+  },
+  "raw_difference": "RDL2rawscriptcachequeryrnd99\u2192566 only; legal-body identity independently compared; no legalchange"
+}

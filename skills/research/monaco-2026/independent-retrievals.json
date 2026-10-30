@@ -1,0 +1,390 @@
+{
+  "independent_review_date": "2026-10-25",
+  "sources": [
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11242-PGP.html/identifiant=BOI-IR-PAS-10-10-20-20230706",
+      "status": 200,
+      "file": "8fd08ba30342bd",
+      "bytes": 80922,
+      "sha256": "389fb2c1c4ae1d96edf40b20f6ef81b07ffbc6e8e2d8059e86305c6c5f629a29"
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602",
+      "status": 200,
+      "file": "87b55f46db32e6",
+      "bytes": 109181,
+      "sha256": "fa26f2bf5e915784cdebeee1ffc9db473e9ca9b72af074292a7c272590c612b5"
+    },
+    {
+      "url": "https://legimonaco.mc/code/code-commerce/",
+      "status": 200,
+      "file": "7590dd4c68d292",
+      "bytes": 1054641,
+      "sha256": "202f0cf39bd92c510560ef68d571503eac69f1ebf7ad4ebeeca3508f8ee75c72"
+    },
+    {
+      "url": "https://legimonaco.mc/code/code-penal/",
+      "status": 200,
+      "file": "8b17a085eab64c",
+      "bytes": 1240215,
+      "sha256": "7d7478cd9d92a94ac367723a14d980d73a50c9cda44cc6d883d4d2804086cfc6"
+    },
+    {
+      "url": "https://legimonaco.mc/code/code-taxes-chiffre-affaires",
+      "status": 200,
+      "file": "d0f062426e56ad",
+      "bytes": 1946822,
+      "sha256": "84cb297d852e7a484ba516bd78414a3edc5da924195b38c818901ec6f6d5bce9"
+    },
+    {
+      "url": "https://legimonaco.mc/projet/1.129",
+      "status": 200,
+      "file": "1b1a3d312c9436",
+      "bytes": 409540,
+      "sha256": "56bf015c5644473490708ceeeb416a3b48830bf18362dd5d4e118f10d512dd05"
+    },
+    {
+      "url": "https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/",
+      "status": 200,
+      "file": "f5e020ddcb9c8a",
+      "bytes": 75130,
+      "sha256": "8dfdc11b889409a14c0082bdd311c42878634546dee2b057b162f9c7f366f49a"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1958/04-24-58-150/",
+      "status": 200,
+      "file": "db44bb0c513ac9",
+      "bytes": 27211,
+      "sha256": "b850be6c5e3b1beca5819db371c7b2ba9174f338f1a1b89b5e6b4dee7b98e1f9"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1977/01-21-77-21@1977.02.12",
+      "status": 200,
+      "file": "850d247199e4f7",
+      "bytes": 21729,
+      "sha256": "b9a29fe8e6b549f2fb46ec03fcf401374fbbf1792e1b72ff2342f6a2ec1c3b2c"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1991/12-20-91-688/",
+      "status": 200,
+      "file": "0045fcc64c0ead",
+      "bytes": 138245,
+      "sha256": "30d55201f25343f5c7346baf0709e825f1d5182f34f160ede2fc3fa6281afa35"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1991/12-20-91-688@2025.06.14",
+      "status": 200,
+      "file": "b56b05bb6274fc",
+      "bytes": 136240,
+      "sha256": "77b6f4c1de57ccabf30d709fe6256ad62a318f9aff3b22d60e8fb7fa75ceecee"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2019/01-14-2019-37/",
+      "status": 200,
+      "file": "2eccb50bbedbd2",
+      "bytes": 32431,
+      "sha256": "3da3cbf95dc36f4271da1b3454137e7438d748cfafe9325a588977d0d3d23cb9"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2019/12-20-2019-1088/",
+      "status": 200,
+      "file": "4479f2ae01da23",
+      "bytes": 27601,
+      "sha256": "e3fa67551c6e61e45803657262e85c94fdf00f89c45b93aa8d9f082921209df5"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2023/12-07-2023-727/",
+      "status": 200,
+      "file": "c7290eb6ba157e",
+      "bytes": 41387,
+      "sha256": "2f435851514b756788b18ba212cb18daf50727e1e0143727cfd6b4d3a1f14c73"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-584/",
+      "status": 200,
+      "file": "d9351d9d98b23c",
+      "bytes": 23437,
+      "sha256": "7cf1c8fbd9816b5540d43b72ec02a7dd7d9ad37a047f8e8c58490a010ae6d063"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-585/",
+      "status": 200,
+      "file": "f0f79d6898bd72",
+      "bytes": 22138,
+      "sha256": "605a8767786757cc5a24088a33ca38710acf3e82417afc6e37d8c1748dfe838d"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-586/",
+      "status": 200,
+      "file": "5e5209e574c840",
+      "bytes": 21984,
+      "sha256": "d780cff821593cde0663fc0c1e454f655069f8966d71f49182b669f2807f060e"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-589/",
+      "status": 200,
+      "file": "57b9a075dd8b1d",
+      "bytes": 20736,
+      "sha256": "db1dd22ebade66c75999fc11228b60837d9e4f3761027ee3add21e3f100d6e70"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2026/07-02-2026-366/",
+      "status": 200,
+      "file": "9dba2eb0f8fb17",
+      "bytes": 21727,
+      "sha256": "27b5bce8ad9033acbc702e983a7ee4d54880a523b3740ef4a2bde4c28a411ee9"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/autre-texte-reglementaire/2025/12-19-2025u13@2026.01.01",
+      "status": 200,
+      "file": "91f5013a20b04d",
+      "bytes": 21395,
+      "sha256": "1186a180924ef5811ab42f0191d261647d9bf73343896b7286aa850e88d586ee"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/autre-texte-reglementaire/2026/05-26-2026-8/",
+      "status": 200,
+      "file": "e6dffa3823f09a",
+      "bytes": 19756,
+      "sha256": "36c40c51ef418d0dba111f7661eeb9e670a9e3243f1e8720912247514c85b089"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/loi/1947/06-27-455/",
+      "status": 200,
+      "file": "c2329df9994535",
+      "bytes": 135885,
+      "sha256": "a5c029b2c0290dfa249fbbb00267383ae3a49a9d19b947b97d3bddc9d1d519e3"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/loi/1957/07-17-629/",
+      "status": 200,
+      "file": "e51df327422c2c",
+      "bytes": 41582,
+      "sha256": "e33a19758c46b3c624a03c552fb0fd5a8ea7dfb0ca999d6e7ba355a35b1049e3"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/loi/1958/01-11-638/",
+      "status": 200,
+      "file": "14a72235dbde35",
+      "bytes": 42010,
+      "sha256": "8acd6cb52b0afb68993a25c3510aa64436ed34dc0bc8565cd31ed127cf9b1ac6"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/loi/1958/01-17-644/",
+      "status": 200,
+      "file": "1c66cadc6238c9",
+      "bytes": 63244,
+      "sha256": "35c2e724b70b68b25592036ddfa99015ad77aec786a33ae447c5d37e751f949b"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/loi/1963/03-16-739/",
+      "status": 200,
+      "file": "a5d2bd079c67ef",
+      "bytes": 53647,
+      "sha256": "1fbddf921b6763c6d8ee7812e33de53541c58468f31db527f48ae5e1f5ade649"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/loi/1991/07-26-1.144/",
+      "status": 200,
+      "file": "a4e43443f63776",
+      "bytes": 73366,
+      "sha256": "e34025bf1581d037a959967c9228dfd35d1f5001bc6ec99c404216b75e0a51bb"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/loi/2016/12-19-1.445/",
+      "status": 200,
+      "file": "efa507cdf8c532",
+      "bytes": 24285,
+      "sha256": "e7165a00b1be584ed6ea20c4629ca12386e4d0418bca0e82bc21b8b809f645ae"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/loi/2025/04-08-1.573",
+      "status": 200,
+      "file": "1ef2d3e8b4a5ed",
+      "bytes": 202104,
+      "sha256": "ce4b5fad144ad6384d07b76865a018ef3f4a2c3738a2d1d17bcbf119ad654697"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/loi/2026/10-09-1.596/",
+      "status": 200,
+      "file": "09b4941a0db2d9",
+      "bytes": 149445,
+      "sha256": "ea694453b6dde4f3d02b2edb76b915dcd8332a35c2ba623af83e45993e6b0598"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/ordonnance/1958/05-30-1.812/",
+      "status": 200,
+      "file": "6ab027b09df9f2",
+      "bytes": 63110,
+      "sha256": "d763322819d854a03cd8660f08bf65d08141b519db236f1bcdb5abb4b9d84e28"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152",
+      "status": 200,
+      "file": "6c0c03230ff60e",
+      "bytes": 159183,
+      "sha256": "2442f44f49176570c5b543ccfdb029fd2b3c6cc01dff97933f28b0f3fd704eb4"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/",
+      "status": 200,
+      "file": "a02aa11c0a0e14",
+      "bytes": 26639,
+      "sha256": "b30f2134e1942ca9887b7dc42f48c78c335a75138a053e0b67b2bd22a24c2ce3"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/ordonnance/1991/10-17-10.324",
+      "status": 200,
+      "file": "25ad470f8b4f84",
+      "bytes": 21997,
+      "sha256": "37f1732247b874766d3273d3acf43fc0e4626b9319c677145f58882d68bdd3fe"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/ordonnance/2006/01-26-373/",
+      "status": 200,
+      "file": "93c7296da89c3f",
+      "bytes": 25977,
+      "sha256": "ce97378ecbf12814eba2273ec986980f36b97aa9390dfe3c3bd589468f56955f"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/ordonnance/2016/12-20-6.208/",
+      "status": 200,
+      "file": "e8f02451c09b2c",
+      "bytes": 234033,
+      "sha256": "a6fc1024d47464e1fd4fa65a23684cacc24c763dc108ea747cfe2cdcd95f96ed"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/ordonnance/2017/12-14-6.713/",
+      "status": 200,
+      "file": "d8f5a4f3971ceb",
+      "bytes": 50548,
+      "sha256": "c51667acb09c30fd0da1f5dff50b78264769910583d417e81cbd9101124a7c47"
+    },
+    {
+      "url": "https://legimonaco.mc/tnc/ordonnance/2025/11-11-11.574/",
+      "status": 200,
+      "file": "9073f9ad70e782",
+      "bytes": 20939,
+      "sha256": "a8fbfc11ead12769e8321e1f177a4defaf16aa3aa26d877190e6c6307a82185c"
+    },
+    {
+      "url": "https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf",
+      "status": 200,
+      "file": "f012f20b1e2663",
+      "bytes": 2256628,
+      "sha256": "83a38905c9576ede75bddd38138b26e7c083221a93675338cd7833781153cefd"
+    },
+    {
+      "url": "https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+      "status": 200,
+      "file": "c83d411fe40104",
+      "bytes": 1468694,
+      "sha256": "68c460fc4636e341ff3bcdc49b3d6d5c4498e1be6fca9f0266e7bad6bd7085ea"
+    },
+    {
+      "url": "https://www.banque-france.fr/system/files/2023-10/Banque%20de%20France%20-%20D%C3%A9cision%20du%20Gouverneur%20du%208%20juillet%202005.pdf",
+      "status": 200,
+      "file": "bacfbd01da3fae",
+      "bytes": 64130,
+      "sha256": "7901ae1bac2e371f22b4b70ff90131394c1db329983fa8bb5586e4411019fda7"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations",
+      "status": 200,
+      "file": "08902ba7bcde16",
+      "bytes": 77247,
+      "sha256": "b1a0f899a08d3ae8faaf691bd3866e7be5d4cd6e1dcf7cb319a54b841a63218f"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/detachement-a-l-etranger",
+      "status": 200,
+      "file": "df1cb9ce95aa53",
+      "bytes": 72119,
+      "sha256": "12f5b08a6ae3952dced6af3b42a4cf1f393a637a4937405d962215382b37a02e"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/modalites-declaratives",
+      "status": 200,
+      "file": "620b144fd7e577",
+      "bytes": 74987,
+      "sha256": "8cf61b9876b7a31f8a69927483d44e3afcd018124df695fb433aa774bd55925c"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-de-gens-de-maison/cotisations",
+      "status": 200,
+      "file": "9b6ceda255528e",
+      "bytes": 73348,
+      "sha256": "613cee3d806c46d18dd91375b0d2d95adf3d2636bb4ebbed369fc92cc1a125a8"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/cotisations",
+      "status": 200,
+      "file": "33f9187973f18f",
+      "bytes": 90962,
+      "sha256": "075230fd6987444613056c686ccd11f534705a718ca8fb92131b8c79937ec640"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/content/download/2232/12460?version=17",
+      "status": 200,
+      "file": "ea7f202728a488",
+      "bytes": 122385,
+      "sha256": "e925d438127146fd298056de3468398847d99dbb6016b98b5249823810c4b449"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/content/download/2726/file/DSM_notice_explicative_detaillee.pdf",
+      "status": 200,
+      "file": "55e9f5fa12a526",
+      "bytes": 275101,
+      "sha256": "0b67e52087c5a2e2e07a6b6844c6cac6edb17db5a3bbfc93394a3aa8a3e4e34b"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf",
+      "status": 200,
+      "file": "486acfc1acd26a",
+      "bytes": 944001,
+      "sha256": "765aded39155dd365ce5bf0520fc687c68e15e92a223aa37344fa7a2171f13ad"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+      "status": 200,
+      "file": "9b1113d3df2ce9",
+      "bytes": 914791,
+      "sha256": "deb6d290c5abeb4065e42bf5b0520800c49559e01ac3f15c7fd45cfff867a2f9"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/comment-declarer-les-administrateurs-salaries",
+      "status": 200,
+      "file": "f32b99902492a2",
+      "bytes": 14802,
+      "sha256": "07e3d91089c1f889199d626137b0a0901d796156f396c30da96f415f84987587"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/montant-des-cotisations-et-choix-de-la-classe",
+      "status": 200,
+      "file": "14e86a54e50318",
+      "bytes": 14418,
+      "sha256": "549bdd20cc3aeeeb42bf4b24a160d314d1512a564effb39dd636bb921b8e3836"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/specificites-cmrc",
+      "status": 200,
+      "file": "01b9673fcda94a",
+      "bytes": 20959,
+      "sha256": "3ef3c130ebb69b0dc40ab5c9bfe04185664db3162cf4e18fcd8cc680776b8485"
+    },
+    {
+      "url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/specificites-de-l-assurance-chomage",
+      "status": 200,
+      "file": "7206e7cb5aad98",
+      "bytes": 19248,
+      "sha256": "80d207b2de45d1a7b9bc4605c0ebe98cdee04d18a214dc7cfa41388826f06830"
+    },
+    {
+      "url": "https://www.cleiss.fr/pdf/conv_monaco.pdf",
+      "status": 200,
+      "file": "87f2510210355a",
+      "bytes": 853406,
+      "sha256": "58d4679346f271c11aab5ceaa68e51dd47597da3ea47b56807c96fd61971849f"
+    }
+  ]
+}

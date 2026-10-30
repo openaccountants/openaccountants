@@ -1,0 +1,112 @@
+[
+  {
+    "path": "22-guide-44-examples.txt",
+    "sha256": "27ae462e85424ca753ffe7661b0a465ced1d10e89a653119997c9e3a8dac0ee5",
+    "bytes": 60
+  },
+  {
+    "path": "accepted-21-current-pins-root-check.json",
+    "sha256": "75eba6ac212e2ef64ce6226167d4b5a51f3627a78e944e5cf563ba4f2fc4724d",
+    "bytes": 14404
+  },
+  {
+    "path": "candidate-final-129-unit.txt",
+    "sha256": "dceee389a29fd7a939c0a502db510eef8a5fc629cb36d570632f80e0ede66376",
+    "bytes": 99
+  },
+  {
+    "path": "candidate-final-44-examples.txt",
+    "sha256": "27ae462e85424ca753ffe7661b0a465ced1d10e89a653119997c9e3a8dac0ee5",
+    "bytes": 60
+  },
+  {
+    "path": "candidate-final-coverage.json",
+    "sha256": "336a3f46c7b5f1ab0d75c0514f944dc8a850589d8a0bf4d63e6375c242e4a847",
+    "bytes": 120023
+  },
+  {
+    "path": "candidate-final-guide-pins.json",
+    "sha256": "388300d99820437092c8d8e1ad01f79d72c73e6903613f02c8a22ba2568cf20b",
+    "bytes": 2692
+  },
+  {
+    "path": "candidate-final-schema.txt",
+    "sha256": "a543109610a952bf717d5d0a248a7c3b504e2db2b19051df9e9112e4c352ab94",
+    "bytes": 198
+  },
+  {
+    "path": "candidate-final-strict-audit.json",
+    "sha256": "7c1cba0b80ab9074c05989ea2dcf1a18ba2191dee50b633e3c93e426c71c3b17",
+    "bytes": 8337
+  },
+  {
+    "path": "candidate-final-strict-audit.txt",
+    "sha256": "d7d74508aecf7e91852accd239a769fecac74876d0089106616e9dc71c6986e9",
+    "bytes": 82
+  },
+  {
+    "path": "candidate-final-validation.json",
+    "sha256": "67951c2b7e74e7dbe4006ea22f497caacfe6f08d42725ea8e9084d3a731c82f9",
+    "bytes": 910
+  },
+  {
+    "path": "deductions-oldmap-NC-wording-closure.json",
+    "sha256": "7d64fea89b8df94536dc51545167016bda519c12db1137dbec0b720d033984e2",
+    "bytes": 287
+  },
+  {
+    "path": "deductions-oldmap-origin-check.json",
+    "sha256": "124efbf628330d6f9dba8d1bbfecb900a25dc55bd6d9619666800af85d986f37",
+    "bytes": 579
+  },
+  {
+    "path": "deductions-oldmap-root-semantic-spots.json",
+    "sha256": "7524f13b52b6ae5aa1174b7721d65c06f2e4a31cfd5ab675997fbaf785e1374e",
+    "bytes": 22430
+  },
+  {
+    "path": "final-poststage-129-unit.txt",
+    "sha256": "f81dbfe91e9f1d605086f0f51e54f727dd9ad0267dfaf7d3b1cb960fc9791971",
+    "bytes": 100
+  },
+  {
+    "path": "initial-tip-comparison-before-main-merge.txt",
+    "sha256": "7c1cba0b80ab9074c05989ea2dcf1a18ba2191dee50b633e3c93e426c71c3b17",
+    "bytes": 8337
+  },
+  {
+    "path": "interim-checkpoint.json",
+    "sha256": "15ad9ed7ab7d856da7a2892162df3528e22daa20b101c878c3000857f8294895",
+    "bytes": 3451
+  },
+  {
+    "path": "main-merge-checkpoint.json",
+    "sha256": "08c7cb6769f12d5a11f55ca0b7d64547ee545e0bda1679d3250c8dd388a43fcf",
+    "bytes": 568
+  },
+  {
+    "path": "post-main-merge-129-unit.txt",
+    "sha256": "b9e098851d6af75cd6544e54dd81b113f4e6f7be1f1176edcc63fdec82f04e22",
+    "bytes": 99
+  },
+  {
+    "path": "prior-regional-read-locators-CLM-CYL-VAL.json",
+    "sha256": "26f1f31a8ec75eb5a0f417d3a8d6e8615a75ee6d5ab3ac167538fe8583707b8f",
+    "bytes": 5143
+  },
+  {
+    "path": "protected-since-published-checkpoint.json",
+    "sha256": "c22394c2faf2eff57830b8133a13d65f1d2badd7c509bf6b2856f147fc0b5747",
+    "bytes": 12289
+  },
+  {
+    "path": "protection-disposition.json",
+    "sha256": "269f557bee8872ed5444792675d33cee06654a6eeeda896baa3c2979443acf09",
+    "bytes": 825
+  },
+  {
+    "path": "unit-suite-129.txt",
+    "sha256": "96b24c95f2d9afa0b75e27cd3ef6d8d51dad3f0e8614aa5df8d6b91928835e2e",
+    "bytes": 27
+  }
+]

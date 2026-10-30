@@ -1,14 +1,15 @@
 ---
 name: bulgaria-payroll
 description: "Bulgarian payroll for employees for tax year 2026, in euro. Covers the monthly gross-to-net: employee and employer social contributions on the insurable income (floor and ceiling), health insurance, the 10% wage tax withheld on gross pay less the employee's own contributions, the annual recalculation by 31 January, and filing of Declarations 1 and 6 and payment by the 25th of the next month. Uses the 2026 minimum wage (EUR 620.20) and the two ceilings for 2026 (EUR 2,111.64 to 31 July, EUR 2,300 from 1 August). Lev amounts are shown in euro at BGN 1.95583. Trigger phrases: Bulgaria payroll, gross to net Bulgaria, заплата, данък по чл. 42 ЗДДФЛ, Декларация образец 1, Декларация образец 6, осигуровки работодател. Out of scope: self-employed contributions and fund-by-fund detail (bulgaria-social-contributions), the annual income tax return (bulgaria-income-tax), posted workers and treaties (bg-cross-border)."
-jurisdiction: BG
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.2
-verified_by: pending
+jurisdiction: BG
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Bulgaria payroll (2026)
@@ -202,3 +203,23 @@ expected:
 | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 | https://lex.bg/bg/laws/ldoc/2123675140 | 2026-10-24 |
 
 Not yet confirmed: the amending ДВ issues of Ordinance N-13 were not read on dv.parliament.bg (the consolidated text used is a secondary consolidation; arts. 4(1)(1)(a), 4(3)(1), 4(3)(5) and 9(5) read the same in the original 2020 text); the NRA's own 2026 payroll guidance (nra.bg served a human check, so it was not read); the statutory late-payment interest rate after the euro changeover; the minimum wage for 2027 (no decree had been published when this was read).
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

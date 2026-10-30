@@ -1,0 +1,218 @@
+{
+  "reviewed_candidate": "102a7bb82945633466c93002ba755e2b9c173cc7",
+  "compared_to": "115f7229aeab749a673e806cf8a98391d59ccd3c",
+  "date": "2026-10-28",
+  "decision": "accepted, accurately scoped partial country draft; no open material findings",
+  "findings_closed": [
+    "individual legacy surcharge-status contradiction",
+    "corporate legacy surcharge-status contradiction",
+    "review-status administrative closure",
+    "narrow domestic 2026 VAT/GST not_applicable finding"
+  ],
+  "new_legal_or_calculation_changes": false,
+  "files": [
+    {
+      "path": "skills/international/guernsey/README.md",
+      "git_blob": "d1ca400a9b78a778f55cc047e9818e073433d7e8",
+      "sha256": "dc296059ca3917578b3166b2a864f7322c76dda56ca054dbaea9a3d03471cd45",
+      "worktree_matches_candidate": true,
+      "changed": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+      "git_blob": "aa46c2cd79757da8b67c4dbf2c77a5e9c87137e3",
+      "sha256": "f181d56e7efa895f16a6508785764c1a5ff7fa5f927729f06087a686320177c4",
+      "worktree_matches_candidate": true,
+      "changed": false,
+      "main_control_count": 2,
+      "controls_byte_exact": true,
+      "cta_byte_exact": true,
+      "protected_fields_exact": true,
+      "version_date_year_tier_unchanged": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "git_blob": "3bef025f6ed1fae667c21a3f3b317ff36d3da9d6",
+      "sha256": "163ad7d2b693b3287e9a208f58c59a9ad4b481acf3048fee7f3e604f5def1007",
+      "worktree_matches_candidate": true,
+      "changed": false,
+      "main_control_count": 2,
+      "controls_byte_exact": true,
+      "cta_byte_exact": true,
+      "protected_fields_exact": true,
+      "version_date_year_tier_unchanged": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "git_blob": "0e21bd46e38bd0efbd984b71972b732675d32745",
+      "sha256": "7c1921f96c8c6f631a27abdd709d278aaffe9419ecd0a0b51c5c1446c1937c35",
+      "worktree_matches_candidate": true,
+      "changed": true,
+      "main_control_count": 2,
+      "controls_byte_exact": true,
+      "cta_byte_exact": true,
+      "protected_fields_exact": true,
+      "version_date_year_tier_unchanged": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "git_blob": "2a6b924df70e418175f4baeab1e0ef970692846a",
+      "sha256": "1e95f0db588efe760c34b8a99c130bb5d50fea83ff6faf8917a499c369be90df",
+      "worktree_matches_candidate": true,
+      "changed": true,
+      "main_control_count": 2,
+      "controls_byte_exact": true,
+      "cta_byte_exact": true,
+      "protected_fields_exact": true,
+      "version_date_year_tier_unchanged": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "git_blob": "5a724073eed8a74dcd9afe2887bd767580d5df79",
+      "sha256": "809b3cf140a1f72ae7af449beb34c0a5abe95a2552fb281c97f53473585f3bf1",
+      "worktree_matches_candidate": true,
+      "changed": true,
+      "main_control_count": 2,
+      "controls_byte_exact": true,
+      "cta_byte_exact": true,
+      "protected_fields_exact": true,
+      "version_date_year_tier_unchanged": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "git_blob": "9884608683c9e42f485678a1e433e96fee16d3d8",
+      "sha256": "abf3472550f155ee3ff8576be89704bd4e0706b2d2c0e2ad6959bde66b6e38c9",
+      "worktree_matches_candidate": true,
+      "changed": true,
+      "main_control_count": 2,
+      "controls_byte_exact": true,
+      "cta_byte_exact": true,
+      "protected_fields_exact": true,
+      "version_date_year_tier_unchanged": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "git_blob": "37863b3c5355ddb35c705d99e8b36e3a7ad22a72",
+      "sha256": "1542cd9b3b69f8fd9270971d1398579313b4b7c23bc80ddc43910262021826a4",
+      "worktree_matches_candidate": true,
+      "changed": true,
+      "main_control_count": 2,
+      "controls_byte_exact": true,
+      "cta_byte_exact": true,
+      "protected_fields_exact": true,
+      "version_date_year_tier_unchanged": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-secondary-pensions.md",
+      "git_blob": "3832501d5aac7e8149c1ff5d0f9e89963eff2187",
+      "sha256": "757f38c5ba60ff5f8fcae3536fb930a1cdd5f0ce66c680f0b70e8111a65db8a2",
+      "worktree_matches_candidate": true,
+      "changed": false,
+      "main_control_count": 2,
+      "controls_byte_exact": true,
+      "cta_byte_exact": true,
+      "protected_fields_exact": true,
+      "version_date_year_tier_unchanged": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "git_blob": "8f597861c2a14ef927dbc29ec743ab369aa2a411",
+      "sha256": "6c3eb3a1de4d228d06a39ded80ba5bf987b94ee299533ba145963bc3124fc3ce",
+      "worktree_matches_candidate": true,
+      "changed": true,
+      "main_control_count": 2,
+      "controls_byte_exact": true,
+      "cta_byte_exact": true,
+      "protected_fields_exact": true,
+      "version_date_year_tier_unchanged": true
+    }
+  ],
+  "review_copies": [
+    {
+      "original": "ordinary-final-report.md",
+      "copy": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md",
+      "sha256": "867899a8a342d00ae938f6d92ada5f1ad9d8f367a592cd22dd93935cdc64c357",
+      "byte_exact": true
+    },
+    {
+      "original": "ordinary-final-integrity.json",
+      "copy": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/integrity.json",
+      "sha256": "6600c74ceb1b00508f155adaa998331cfdb453f7919026206ab2e6b22af3cc72",
+      "byte_exact": true
+    },
+    {
+      "original": "ordinary-final-source-evidence.json",
+      "copy": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/source-evidence.json",
+      "sha256": "9e7cea5a4bd6749e7160e31f1c49ddb723bd1499c272a5b788dd51b262eba293",
+      "byte_exact": true
+    }
+  ],
+  "original_controls_archive_byte_exact": true,
+  "supplementary_files": [
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/benefit-period-controls.md",
+      "unchanged": true,
+      "controls": 2,
+      "sha256": "3947bf1a2de58ba26e65ef65f4aaf7fd021d649f3a46e60f1a4726bc7d980de9"
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/contribution-controls.md",
+      "unchanged": true,
+      "controls": 4,
+      "sha256": "66fc5f4b5fb9e9d65b67c6f72475a797875acc4eb2102671c9db1f99dce154e6"
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/enforcement-controls.md",
+      "unchanged": true,
+      "controls": 2,
+      "sha256": "0abb84ed0084475a2006cb3f4b2bc34a057a99fcfc4463d5548fb64d9db1b4ac"
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/property-controls.md",
+      "unchanged": true,
+      "controls": 2,
+      "sha256": "bab01dbbf88dee176f98819ad8a5beedbf24aadab6380cd9d5a8e83347a4e559"
+    },
+    {
+      "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/relief-controls.md",
+      "unchanged": true,
+      "controls": 2,
+      "sha256": "8e949cab53bd844a73b937a8a526c4b0c7e0233f4c51013cfa30273f3c0fb852"
+    }
+  ],
+  "readme_applicable": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "readme_not_applicable": {
+    "VAT": "No domestic general VAT/GST in 2026; current HMRC territorial guidance and Guernsey tax-package evidence are cited below. Customs/excise and foreign VAT obligations remain separate."
+  },
+  "readme_partial_domains": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "earlier_review_history_byte_exact": true,
+  "lost_content_restored_this_continuation": 0,
+  "historical_lost_content_restored": 2,
+  "control_counts": {
+    "main": 18,
+    "original_archived": 32,
+    "new_supplementary": 12,
+    "previously_recomputed_total": 62,
+    "previous_failures": 0
+  },
+  "validation_record": {
+    "path": "skills/research/guernsey-2026/ordinary-completion-2026-10-28/validation.json",
+    "scope": "Historical writer validation of115f7229; records89blocks including archive duplicates,9Guide schema0warnings,129tests with initialinfraerrors. Not substituted for this final diff check; parent will update final publication record."
+  },
+  "permitted_follow_on": "Copy closure and append/update research manifest/validation without altering any of these ten pinned Guide/README blobs; then planned single country push and final-head CI. No merge or professional attestation is approved.",
+  "verification_note": "First local integrity attempt used a delimiter split that incorrectly cut a source URL containing three hyphens; corrected to line-anchored frontmatter delimiters. No Guide parse defect or modification was involved."
+}

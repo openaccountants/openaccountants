@@ -1,0 +1,485 @@
+{
+  "count": 80,
+  "checks": [
+    {
+      "name": "ERD2026gross",
+      "actual": "23000",
+      "expected": "23000",
+      "pass": true
+    },
+    {
+      "name": "ERDbalance",
+      "actual": "15000",
+      "expected": "15000",
+      "pass": true
+    },
+    {
+      "name": "micro181band",
+      "actual": "1810000/73",
+      "expected": "1810000/73",
+      "pass": true
+    },
+    {
+      "name": "micro181excess",
+      "actual": "6950000/73",
+      "expected": "6950000/73",
+      "pass": true
+    },
+    {
+      "name": "micro181tax",
+      "actual": "24704.11",
+      "expected": "24704.11",
+      "pass": true
+    },
+    {
+      "name": "fullmicro120k",
+      "actual": "24200",
+      "expected": "24200",
+      "pass": true
+    },
+    {
+      "name": "shortbandnotfull",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "micro30kbasebelowband",
+      "actual": "5700",
+      "expected": "5700",
+      "pass": true
+    },
+    {
+      "name": "micro2025",
+      "actual": "25900",
+      "expected": "25900",
+      "pass": true
+    },
+    {
+      "name": "micro2027",
+      "actual": "22500",
+      "expected": "22500",
+      "pass": true
+    },
+    {
+      "name": "ERD2025",
+      "actual": "24000",
+      "expected": "24000",
+      "pass": true
+    },
+    {
+      "name": "ERD2026",
+      "actual": "23000",
+      "expected": "23000",
+      "pass": true
+    },
+    {
+      "name": "ERD2027",
+      "actual": "22000",
+      "expected": "22000",
+      "pass": true
+    },
+    {
+      "name": "ERD2028",
+      "actual": "21000",
+      "expected": "21000",
+      "pass": true
+    },
+    {
+      "name": "ERD2029",
+      "actual": "20000",
+      "expected": "20000",
+      "pass": true
+    },
+    {
+      "name": "newfirstpositive",
+      "actual": "15000",
+      "expected": "15000",
+      "pass": true
+    },
+    {
+      "name": "ordinary25",
+      "actual": "25000",
+      "expected": "25000",
+      "pass": true
+    },
+    {
+      "name": "inst5over7-19",
+      "actual": "13",
+      "expected": "13",
+      "pass": true
+    },
+    {
+      "name": "inst19over20-19",
+      "actual": "19",
+      "expected": "19",
+      "pass": true
+    },
+    {
+      "name": "inst5over7-21",
+      "actual": "15",
+      "expected": "15",
+      "pass": true
+    },
+    {
+      "name": "inst19over20-21",
+      "actual": "20",
+      "expected": "20",
+      "pass": true
+    },
+    {
+      "name": "inst5over7-23",
+      "actual": "16",
+      "expected": "16",
+      "pass": true
+    },
+    {
+      "name": "inst19over20-23",
+      "actual": "22",
+      "expected": "22",
+      "pass": true
+    },
+    {
+      "name": "inst5over7-25",
+      "actual": "17",
+      "expected": "17",
+      "pass": true
+    },
+    {
+      "name": "inst19over20-25",
+      "actual": "24",
+      "expected": "24",
+      "pass": true
+    },
+    {
+      "name": "inst5over7-30",
+      "actual": "21",
+      "expected": "21",
+      "pass": true
+    },
+    {
+      "name": "inst19over20-30",
+      "actual": "29",
+      "expected": "29",
+      "pass": true
+    },
+    {
+      "name": "sixmillionstrict",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "sixmillionplus",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "tenmillioninclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "lasttax18aftercredits",
+      "actual": "3960",
+      "expected": "3960",
+      "pass": true
+    },
+    {
+      "name": "lastnotnetbalance",
+      "actual": "2700",
+      "expected": "2700",
+      "pass": true
+    },
+    {
+      "name": "finance30percent",
+      "actual": "1500000",
+      "expected": "1500000",
+      "pass": true
+    },
+    {
+      "name": "financefloor",
+      "actual": "1000000",
+      "expected": "1000000",
+      "pass": true
+    },
+    {
+      "name": "finance181floor",
+      "actual": "36200000/73",
+      "expected": "36200000/73",
+      "pass": true
+    },
+    {
+      "name": "financeexcesscarry",
+      "actual": "300000",
+      "expected": "300000",
+      "pass": true
+    },
+    {
+      "name": "loss70ref",
+      "actual": "7000000",
+      "expected": "7000000",
+      "pass": true
+    },
+    {
+      "name": "large20m50",
+      "actual": "5000000",
+      "expected": "5000000",
+      "pass": true
+    },
+    {
+      "name": "large60m25",
+      "actual": "2500000",
+      "expected": "2500000",
+      "pass": true
+    },
+    {
+      "name": "lossfloor",
+      "actual": "1000000",
+      "expected": "1000000",
+      "pass": true
+    },
+    {
+      "name": "lossactualbasecap",
+      "actual": "800000",
+      "expected": "800000",
+      "pass": true
+    },
+    {
+      "name": "capital20funds",
+      "actual": "20000",
+      "expected": "20000",
+      "pass": true
+    },
+    {
+      "name": "capital23funds",
+      "actual": "23000",
+      "expected": "23000",
+      "pass": true
+    },
+    {
+      "name": "capital265funds",
+      "actual": "26500",
+      "expected": "26500",
+      "pass": true
+    },
+    {
+      "name": "capital30funds",
+      "actual": "30000",
+      "expected": "30000",
+      "pass": true
+    },
+    {
+      "name": "capital20basecap",
+      "actual": "20000",
+      "expected": "20000",
+      "pass": true
+    },
+    {
+      "name": "capital25microcap",
+      "actual": "25000",
+      "expected": "25000",
+      "pass": true
+    },
+    {
+      "name": "level10",
+      "actual": "30000",
+      "expected": "30000",
+      "pass": true
+    },
+    {
+      "name": "levelfullcap",
+      "actual": "1000000",
+      "expected": "1000000",
+      "pass": true
+    },
+    {
+      "name": "levelbreachtaxuplift",
+      "actual": "2415",
+      "expected": "2415",
+      "pass": true
+    },
+    {
+      "name": "participation95",
+      "actual": "95000",
+      "expected": "95000",
+      "pass": true
+    },
+    {
+      "name": "participationtaxable5",
+      "actual": "5000",
+      "expected": "5000",
+      "pass": true
+    },
+    {
+      "name": "participationforeignactualcap",
+      "actual": "12000",
+      "expected": "12000",
+      "pass": true
+    },
+    {
+      "name": "foreignspanishcap",
+      "actual": "25000",
+      "expected": "25000",
+      "pass": true
+    },
+    {
+      "name": "charityrepeatedcap",
+      "actual": "7500",
+      "expected": "7500",
+      "pass": true
+    },
+    {
+      "name": "charityordinary",
+      "actual": "4000",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "RDIexcess",
+      "actual": "33400",
+      "expected": "33400",
+      "pass": true
+    },
+    {
+      "name": "tech12",
+      "actual": "6000",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "filmfirstplus",
+      "actual": "550000",
+      "expected": "550000",
+      "pass": true
+    },
+    {
+      "name": "minimumbonifbelowfloor",
+      "actual": "13000",
+      "expected": "13000",
+      "pass": true
+    },
+    {
+      "name": "minimumothercreditfloor",
+      "actual": "15000",
+      "expected": "15000",
+      "pass": true
+    },
+    {
+      "name": "coopfloor",
+      "actual": "12000",
+      "expected": "12000",
+      "pass": true
+    },
+    {
+      "name": "ceutanew2staff",
+      "actual": "120000",
+      "expected": "120000",
+      "pass": true
+    },
+    {
+      "name": "ceutafirst2period",
+      "actual": "240000",
+      "expected": "240000",
+      "pass": true
+    },
+    {
+      "name": "ceutaold",
+      "actual": "100000",
+      "expected": "100000",
+      "pass": true
+    },
+    {
+      "name": "ceuta60gross",
+      "actual": "15000",
+      "expected": "15000",
+      "pass": true
+    },
+    {
+      "name": "ceutaold50gross",
+      "actual": "12500",
+      "expected": "12500",
+      "pass": true
+    },
+    {
+      "name": "ZEC4",
+      "actual": "40000",
+      "expected": "40000",
+      "pass": true
+    },
+    {
+      "name": "ZECextra2jobs",
+      "actual": "2800000",
+      "expected": "2800000",
+      "pass": true
+    },
+    {
+      "name": "publiclate0months",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "publiclate11months",
+      "actual": "1200",
+      "expected": "1200",
+      "pass": true
+    },
+    {
+      "name": "lateafter12",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "late25reduction",
+      "actual": "1125",
+      "expected": "1125",
+      "pass": true
+    },
+    {
+      "name": "penalty50",
+      "actual": "5000",
+      "expected": "5000",
+      "pass": true
+    },
+    {
+      "name": "nilvoluntary200half",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "repairfullinverse",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "casebytes",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "oldURLsequence",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "CTAexact",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "namedattributionexact",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    }
+  ]
+}

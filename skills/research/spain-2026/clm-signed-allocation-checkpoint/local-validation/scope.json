@@ -1,0 +1,6 @@
+{
+  "scope": "Whole country existing executable example suite, changed Guide strict local sync, full repository source/generated frontmatter validation with --no-index-check, and git diff --check. Not a fresh full-pack legal review or generated index freshness check.",
+  "index_note": "Generated index was left untouched. An earlier help invocation of validate-guides.py actually ran its default validation and failed only on inherited stale index counts; explicit --no-index-check validation then passed.",
+  "content_revision_note": "0 is a local validation marker, not a platform content revision.",
+  "country_ready": false
+}

@@ -1,0 +1,6099 @@
+{
+  "guide_sha256": "5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9",
+  "ledger_sha256": "52ed9a4aa3a520368e898cf3ad39d14444cee3fde015a8f54a245248bd4f9772",
+  "checks": 1218,
+  "failures": [],
+  "results": [
+    {
+      "name": "Guide unchanged from supplied frozen body",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Guide exact pinned identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_216_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_216_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_296_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_296_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_216_order_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_216_order_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_216_calendar2026_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_216_calendar2026_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_original216_order2015_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_original216_order2015_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "araba_2025_adapt_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "araba_2025_adapt_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_deadlines_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_deadlines_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_irnr_0_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_irnr_0_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_irnr_1_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_irnr_1_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "basque_agreement_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "basque_agreement_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_agreement_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_agreement_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_irnr_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_irnr_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "araba_irnr_reg_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "araba_irnr_reg_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_no_imputation_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_no_imputation_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "araba_calendar2026_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "araba_calendar2026_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_296_current_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_296_current_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_296_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_296_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_210_order_current_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_210_order_current_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "araba_irnr_current_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "araba_irnr_current_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_irnr_reg_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_irnr_reg_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "state_irnr_current_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "state_irnr_current_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_state_irnr_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_state_irnr_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_s90_order2026_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_s90_order2026_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_rent2026_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_rent2026_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_sale2026_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_sale2026_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_216_order47_2024_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_216_order47_2024_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_210_html raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_210_html reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "02_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "02_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "03_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "03_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "04_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "04_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "10_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "10_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "11_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "11_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "12_pdf raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "12_pdf reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_cit_current raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "bizkaia_cit_current reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "alava_cit_current raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "alava_cit_current reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_cit_current raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "gipuzkoa_cit_current reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_cit_current raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "navarra_cit_current reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Bizkaia_DF153_2022_DF1 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Bizkaia_DF153_2022_DF1 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Bizkaia_NF2_2005_arts26_28_196_203 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Bizkaia_NF2_2005_arts26_28_196_203 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "lava_NF6_2005_arts26_28_195 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "lava_NF6_2005_arts26_28_195 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Gipuzkoa_NF2_2005_arts26_28_195 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Gipuzkoa_NF2_2005_arts26_28_195 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Navarra_LF13_2000_arts50_52_68_77 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Navarra_LF13_2000_arts50_52_68_77 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "coef_bizkaia_2026 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "coef_bizkaia_2026 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "coef_araba_2026 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "coef_araba_2026 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "coef_gipuzkoa_2026 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "coef_gipuzkoa_2026 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "coef_gipuzkoa_correction raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "coef_gipuzkoa_correction reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "budget_bizkaia_2026 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "budget_bizkaia_2026 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "budget_gipuzkoa_2026 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "budget_gipuzkoa_2026 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_bizkaia_2026 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_bizkaia_2026 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "budget_araba_2026 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "budget_araba_2026 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_navarra_2026 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_navarra_2026 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_araba_nfgt raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_araba_nfgt reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_bizkaia_nfgt raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_bizkaia_nfgt reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_gipuzkoa_nfgt raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_gipuzkoa_nfgt reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_navarra_general raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "interest_navarra_general reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "LIRPF raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "LIRPF reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "LIRPF2026 raw byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "LIRPF2026 reader byte identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "A210calendar exact original-language native interval",
+      "pass_": true,
+      "detail": "436–464"
+    },
+    {
+      "name": "A211 exact original-language native interval",
+      "pass_": true,
+      "detail": "617–619"
+    },
+    {
+      "name": "A211216calendar exact original-language native interval",
+      "pass_": true,
+      "detail": "466–489"
+    },
+    {
+      "name": "A296calendar exact original-language native interval",
+      "pass_": true,
+      "detail": "501–524"
+    },
+    {
+      "name": "AC_index exact original-language native interval",
+      "pass_": true,
+      "detail": "4102–4128"
+    },
+    {
+      "name": "AC_rate exact original-language native interval",
+      "pass_": true,
+      "detail": "6416–6422"
+    },
+    {
+      "name": "AC_residence exact original-language native interval",
+      "pass_": true,
+      "detail": "684–689"
+    },
+    {
+      "name": "AC_size exact original-language native interval",
+      "pass_": true,
+      "detail": "799–817"
+    },
+    {
+      "name": "AC_surcharge exact original-language native interval",
+      "pass_": true,
+      "detail": "6501–6519"
+    },
+    {
+      "name": "AP_div1500 exact original-language native interval",
+      "pass_": true,
+      "detail": "892–906"
+    },
+    {
+      "name": "AP_gaincost exact original-language native interval",
+      "pass_": true,
+      "detail": "3400–3412"
+    },
+    {
+      "name": "AP_gaindep exact original-language native interval",
+      "pass_": true,
+      "detail": "3404–3412"
+    },
+    {
+      "name": "AP_gainsale exact original-language native interval",
+      "pass_": true,
+      "detail": "3419–3421"
+    },
+    {
+      "name": "AP_gainyears exact original-language native interval",
+      "pass_": true,
+      "detail": "3408–3417"
+    },
+    {
+      "name": "AP_insurance exact original-language native interval",
+      "pass_": true,
+      "detail": "2433–2439"
+    },
+    {
+      "name": "AP_marketfloor exact original-language native interval",
+      "pass_": true,
+      "detail": "3423–3424"
+    },
+    {
+      "name": "AP_reference70 exact original-language native interval",
+      "pass_": true,
+      "detail": "2404–2420"
+    },
+    {
+      "name": "AP_rent exact original-language native interval",
+      "pass_": true,
+      "detail": "2396–2409"
+    },
+    {
+      "name": "AP_rent20 exact original-language native interval",
+      "pass_": true,
+      "detail": "2466–2477"
+    },
+    {
+      "name": "AP_rent70 exact original-language native interval",
+      "pass_": true,
+      "detail": "2441–2464"
+    },
+    {
+      "name": "AP_rentfinance exact original-language native interval",
+      "pass_": true,
+      "detail": "2425–2436"
+    },
+    {
+      "name": "AP_rentnonnegative exact original-language native interval",
+      "pass_": true,
+      "detail": "2438–2439"
+    },
+    {
+      "name": "AP_rural exact original-language native interval",
+      "pass_": true,
+      "detail": "2396–2409"
+    },
+    {
+      "name": "AP_wagecost exact original-language native interval",
+      "pass_": true,
+      "detail": "1763–1771"
+    },
+    {
+      "name": "AR_costs exact original-language native interval",
+      "pass_": true,
+      "detail": "1774–1825"
+    },
+    {
+      "name": "AR_dep exact original-language native interval",
+      "pass_": true,
+      "detail": "1837–1852"
+    },
+    {
+      "name": "AR_movables exact original-language native interval",
+      "pass_": true,
+      "detail": "1845–1852"
+    },
+    {
+      "name": "AR_usufruct exact original-language native interval",
+      "pass_": true,
+      "detail": "1856–1865"
+    },
+    {
+      "name": "AT2027boundary exact original-language native interval",
+      "pass_": true,
+      "detail": "12371–12374"
+    },
+    {
+      "name": "ATcollection exact original-language native interval",
+      "pass_": true,
+      "detail": "788–802"
+    },
+    {
+      "name": "ATinterest exact original-language native interval",
+      "pass_": true,
+      "detail": "699–707"
+    },
+    {
+      "name": "ATlate exact original-language native interval",
+      "pass_": true,
+      "detail": "729–754"
+    },
+    {
+      "name": "ATlater exact original-language native interval",
+      "pass_": true,
+      "detail": "7005–7010"
+    },
+    {
+      "name": "ATpenalty exact original-language native interval",
+      "pass_": true,
+      "detail": "6973–6994"
+    },
+    {
+      "name": "ATwithheld exact original-language native interval",
+      "pass_": true,
+      "detail": "6981–6994"
+    },
+    {
+      "name": "A_CITcontext exact original-language native interval",
+      "pass_": true,
+      "detail": "124–126"
+    },
+    {
+      "name": "A_EEA exact original-language native interval",
+      "pass_": true,
+      "detail": "1553–1557"
+    },
+    {
+      "name": "A_EUcost exact original-language native interval",
+      "pass_": true,
+      "detail": "1530–1557"
+    },
+    {
+      "name": "A_PE exact original-language native interval",
+      "pass_": true,
+      "detail": "464–475"
+    },
+    {
+      "name": "A_PEaccounts exact original-language native interval",
+      "pass_": true,
+      "detail": "1463–1469"
+    },
+    {
+      "name": "A_PEbase exact original-language native interval",
+      "pass_": true,
+      "detail": "1013–1015"
+    },
+    {
+      "name": "A_PEcapital exact original-language native interval",
+      "pass_": true,
+      "detail": "1056–1063"
+    },
+    {
+      "name": "A_PEcharges exact original-language native interval",
+      "pass_": true,
+      "detail": "1017–1044"
+    },
+    {
+      "name": "A_PEcredits exact original-language native interval",
+      "pass_": true,
+      "detail": "1403–1416"
+    },
+    {
+      "name": "A_PEexcluded exact original-language native interval",
+      "pass_": true,
+      "detail": "1065–1067"
+    },
+    {
+      "name": "A_PEincome exact original-language native interval",
+      "pass_": true,
+      "detail": "973–979"
+    },
+    {
+      "name": "A_PEloss exact original-language native interval",
+      "pass_": true,
+      "detail": "1082–1084"
+    },
+    {
+      "name": "A_PErate exact original-language native interval",
+      "pass_": true,
+      "detail": "1371–1378"
+    },
+    {
+      "name": "A_PEreturn exact original-language native interval",
+      "pass_": true,
+      "detail": "1452–1459"
+    },
+    {
+      "name": "A_PEsize exact original-language native interval",
+      "pass_": true,
+      "detail": "1069–1084"
+    },
+    {
+      "name": "A_PEworldwide exact original-language native interval",
+      "pass_": true,
+      "detail": "927–930"
+    },
+    {
+      "name": "A_PITcontext exact original-language native interval",
+      "pass_": true,
+      "detail": "65–70"
+    },
+    {
+      "name": "A_PITexception exact original-language native interval",
+      "pass_": true,
+      "detail": "108–109"
+    },
+    {
+      "name": "A_accrual exact original-language native interval",
+      "pass_": true,
+      "detail": "1659–1665"
+    },
+    {
+      "name": "A_activitycost exact original-language native interval",
+      "pass_": true,
+      "detail": "1497–1502"
+    },
+    {
+      "name": "A_buyer exact original-language native interval",
+      "pass_": true,
+      "detail": "1618–1626"
+    },
+    {
+      "name": "A_capitalrate exact original-language native interval",
+      "pass_": true,
+      "detail": "1600–1611"
+    },
+    {
+      "name": "A_credit exact original-language native interval",
+      "pass_": true,
+      "detail": "1647–1654"
+    },
+    {
+      "name": "A_diplomatic exact original-language native interval",
+      "pass_": true,
+      "detail": "1590–1595"
+    },
+    {
+      "name": "A_divexempt exact original-language native interval",
+      "pass_": true,
+      "detail": "644–649"
+    },
+    {
+      "name": "A_gain exact original-language native interval",
+      "pass_": true,
+      "detail": "1508–1526"
+    },
+    {
+      "name": "A_gross exact original-language native interval",
+      "pass_": true,
+      "detail": "1490–1495"
+    },
+    {
+      "name": "A_imputationDeleted exact original-language native interval",
+      "pass_": true,
+      "detail": "574–574"
+    },
+    {
+      "name": "A_interestexempt exact original-language native interval",
+      "pass_": true,
+      "detail": "651–668"
+    },
+    {
+      "name": "A_nofile exact original-language native interval",
+      "pass_": true,
+      "detail": "1686–1693"
+    },
+    {
+      "name": "A_ownlaw exact original-language native interval",
+      "pass_": true,
+      "detail": "192–194"
+    },
+    {
+      "name": "A_pension exact original-language native interval",
+      "pass_": true,
+      "detail": "1570–1587"
+    },
+    {
+      "name": "A_provinceShare exact original-language native interval",
+      "pass_": true,
+      "detail": "612–625"
+    },
+    {
+      "name": "A_rate exact original-language native interval",
+      "pass_": true,
+      "detail": "1564–1568"
+    },
+    {
+      "name": "A_remitexempt exact original-language native interval",
+      "pass_": true,
+      "detail": "1392–1401"
+    },
+    {
+      "name": "A_remittance exact original-language native interval",
+      "pass_": true,
+      "detail": "1380–1390"
+    },
+    {
+      "name": "A_seasonal exact original-language native interval",
+      "pass_": true,
+      "detail": "1613–1616"
+    },
+    {
+      "name": "A_separate exact original-language native interval",
+      "pass_": true,
+      "detail": "932–940"
+    },
+    {
+      "name": "A_taxpayer exact original-language native interval",
+      "pass_": true,
+      "detail": "209–212"
+    },
+    {
+      "name": "A_withhold exact original-language native interval",
+      "pass_": true,
+      "detail": "1759–1772"
+    },
+    {
+      "name": "B210quarter exact original-language native interval",
+      "pass_": true,
+      "detail": "115–121"
+    },
+    {
+      "name": "B210refund exact original-language native interval",
+      "pass_": true,
+      "detail": "121–128"
+    },
+    {
+      "name": "B210windows exact original-language native interval",
+      "pass_": true,
+      "detail": "109–115"
+    },
+    {
+      "name": "B211 exact original-language native interval",
+      "pass_": true,
+      "detail": "721–723"
+    },
+    {
+      "name": "B216 exact original-language native interval",
+      "pass_": true,
+      "detail": "2364–2384"
+    },
+    {
+      "name": "B296 exact original-language native interval",
+      "pass_": true,
+      "detail": "111–150"
+    },
+    {
+      "name": "BC_index exact original-language native interval",
+      "pass_": true,
+      "detail": "3946–3965"
+    },
+    {
+      "name": "BC_rate exact original-language native interval",
+      "pass_": true,
+      "detail": "6161–6167"
+    },
+    {
+      "name": "BC_residence exact original-language native interval",
+      "pass_": true,
+      "detail": "669–673"
+    },
+    {
+      "name": "BC_size exact original-language native interval",
+      "pass_": true,
+      "detail": "787–805"
+    },
+    {
+      "name": "BC_surcharge exact original-language native interval",
+      "pass_": true,
+      "detail": "6247–6263"
+    },
+    {
+      "name": "BJanuary exact original-language native interval",
+      "pass_": true,
+      "detail": "1164–1174"
+    },
+    {
+      "name": "BJanuaryEffect exact original-language native interval",
+      "pass_": true,
+      "detail": "1192–1197"
+    },
+    {
+      "name": "BP_div1500 exact original-language native interval",
+      "pass_": true,
+      "detail": "851–864"
+    },
+    {
+      "name": "BP_gaincost exact original-language native interval",
+      "pass_": true,
+      "detail": "3088–3102"
+    },
+    {
+      "name": "BP_gaindep exact original-language native interval",
+      "pass_": true,
+      "detail": "3092–3102"
+    },
+    {
+      "name": "BP_gainsale exact original-language native interval",
+      "pass_": true,
+      "detail": "3109–3111"
+    },
+    {
+      "name": "BP_gainyears exact original-language native interval",
+      "pass_": true,
+      "detail": "3097–3107"
+    },
+    {
+      "name": "BP_insurance exact original-language native interval",
+      "pass_": true,
+      "detail": "2182–2187"
+    },
+    {
+      "name": "BP_marketfloor exact original-language native interval",
+      "pass_": true,
+      "detail": "3113–3114"
+    },
+    {
+      "name": "BP_reference70 exact original-language native interval",
+      "pass_": true,
+      "detail": "2212–2239"
+    },
+    {
+      "name": "BP_rent exact original-language native interval",
+      "pass_": true,
+      "detail": "2167–2187"
+    },
+    {
+      "name": "BP_rent20 exact original-language native interval",
+      "pass_": true,
+      "detail": "2151–2162"
+    },
+    {
+      "name": "BP_rent70 exact original-language native interval",
+      "pass_": true,
+      "detail": "2189–2207"
+    },
+    {
+      "name": "BP_rentfinance exact original-language native interval",
+      "pass_": true,
+      "detail": "2174–2184"
+    },
+    {
+      "name": "BP_rentnonnegative exact original-language native interval",
+      "pass_": true,
+      "detail": "2164–2165"
+    },
+    {
+      "name": "BP_wagecost exact original-language native interval",
+      "pass_": true,
+      "detail": "1560–1568"
+    },
+    {
+      "name": "BR_costs exact original-language native interval",
+      "pass_": true,
+      "detail": "1847–1893"
+    },
+    {
+      "name": "BR_dep exact original-language native interval",
+      "pass_": true,
+      "detail": "1905–1920"
+    },
+    {
+      "name": "BR_movables exact original-language native interval",
+      "pass_": true,
+      "detail": "1913–1920"
+    },
+    {
+      "name": "BR_usufruct exact original-language native interval",
+      "pass_": true,
+      "detail": "1924–1935"
+    },
+    {
+      "name": "BT400 exact original-language native interval",
+      "pass_": true,
+      "detail": "7203–7213"
+    },
+    {
+      "name": "BT400norequest exact original-language native interval",
+      "pass_": true,
+      "detail": "7215–7227"
+    },
+    {
+      "name": "BTcollection exact original-language native interval",
+      "pass_": true,
+      "detail": "739–764"
+    },
+    {
+      "name": "BTdecl5 exact original-language native interval",
+      "pass_": true,
+      "detail": "727–735"
+    },
+    {
+      "name": "BTdeclhalf exact original-language native interval",
+      "pass_": true,
+      "detail": "732–735"
+    },
+    {
+      "name": "BTlateinterest exact original-language native interval",
+      "pass_": true,
+      "detail": "694–698"
+    },
+    {
+      "name": "BTpenalty exact original-language native interval",
+      "pass_": true,
+      "detail": "6997–6998"
+    },
+    {
+      "name": "B_CITcontext exact original-language native interval",
+      "pass_": true,
+      "detail": "114–118"
+    },
+    {
+      "name": "B_EEA exact original-language native interval",
+      "pass_": true,
+      "detail": "1617–1621"
+    },
+    {
+      "name": "B_EUcost exact original-language native interval",
+      "pass_": true,
+      "detail": "1594–1615"
+    },
+    {
+      "name": "B_PE exact original-language native interval",
+      "pass_": true,
+      "detail": "489–494"
+    },
+    {
+      "name": "B_PEaccounts exact original-language native interval",
+      "pass_": true,
+      "detail": "1530–1536"
+    },
+    {
+      "name": "B_PEbase exact original-language native interval",
+      "pass_": true,
+      "detail": "1072–1074"
+    },
+    {
+      "name": "B_PEcapital exact original-language native interval",
+      "pass_": true,
+      "detail": "1120–1122"
+    },
+    {
+      "name": "B_PEcharges exact original-language native interval",
+      "pass_": true,
+      "detail": "1076–1103"
+    },
+    {
+      "name": "B_PEcredits exact original-language native interval",
+      "pass_": true,
+      "detail": "1468–1480"
+    },
+    {
+      "name": "B_PEexcluded exact original-language native interval",
+      "pass_": true,
+      "detail": "1124–1125"
+    },
+    {
+      "name": "B_PEincome exact original-language native interval",
+      "pass_": true,
+      "detail": "1027–1033"
+    },
+    {
+      "name": "B_PEloss exact original-language native interval",
+      "pass_": true,
+      "detail": "1143–1144"
+    },
+    {
+      "name": "B_PErate exact original-language native interval",
+      "pass_": true,
+      "detail": "1432–1438"
+    },
+    {
+      "name": "B_PEreturn exact original-language native interval",
+      "pass_": true,
+      "detail": "1519–1526"
+    },
+    {
+      "name": "B_PEsize exact original-language native interval",
+      "pass_": true,
+      "detail": "1127–1141"
+    },
+    {
+      "name": "B_PEworldwide exact original-language native interval",
+      "pass_": true,
+      "detail": "978–981"
+    },
+    {
+      "name": "B_PITcontext exact original-language native interval",
+      "pass_": true,
+      "detail": "48–62"
+    },
+    {
+      "name": "B_PITexception exact original-language native interval",
+      "pass_": true,
+      "detail": "106–108"
+    },
+    {
+      "name": "B_accrual exact original-language native interval",
+      "pass_": true,
+      "detail": "1724–1729"
+    },
+    {
+      "name": "B_activitycost exact original-language native interval",
+      "pass_": true,
+      "detail": "1559–1564"
+    },
+    {
+      "name": "B_buyer exact original-language native interval",
+      "pass_": true,
+      "detail": "1679–1687"
+    },
+    {
+      "name": "B_capitalrate exact original-language native interval",
+      "pass_": true,
+      "detail": "1663–1672"
+    },
+    {
+      "name": "B_credit exact original-language native interval",
+      "pass_": true,
+      "detail": "1711–1718"
+    },
+    {
+      "name": "B_diplomatic exact original-language native interval",
+      "pass_": true,
+      "detail": "1650–1655"
+    },
+    {
+      "name": "B_divexempt exact original-language native interval",
+      "pass_": true,
+      "detail": "673–678"
+    },
+    {
+      "name": "B_edition exact original-language native interval",
+      "pass_": true,
+      "detail": "1–1"
+    },
+    {
+      "name": "B_gain exact original-language native interval",
+      "pass_": true,
+      "detail": "1570–1581"
+    },
+    {
+      "name": "B_gross exact original-language native interval",
+      "pass_": true,
+      "detail": "1553–1557"
+    },
+    {
+      "name": "B_imputationDeleted exact original-language native interval",
+      "pass_": true,
+      "detail": "598–598"
+    },
+    {
+      "name": "B_interestexempt exact original-language native interval",
+      "pass_": true,
+      "detail": "680–699"
+    },
+    {
+      "name": "B_nofile exact original-language native interval",
+      "pass_": true,
+      "detail": "1749–1755"
+    },
+    {
+      "name": "B_ownlaw exact original-language native interval",
+      "pass_": true,
+      "detail": "212–214"
+    },
+    {
+      "name": "B_pension exact original-language native interval",
+      "pass_": true,
+      "detail": "1638–1648"
+    },
+    {
+      "name": "B_provinceShare exact original-language native interval",
+      "pass_": true,
+      "detail": "642–654"
+    },
+    {
+      "name": "B_rate exact original-language native interval",
+      "pass_": true,
+      "detail": "1628–1633"
+    },
+    {
+      "name": "B_remitexempt exact original-language native interval",
+      "pass_": true,
+      "detail": "1457–1466"
+    },
+    {
+      "name": "B_remittance exact original-language native interval",
+      "pass_": true,
+      "detail": "1440–1451"
+    },
+    {
+      "name": "B_seasonal exact original-language native interval",
+      "pass_": true,
+      "detail": "1674–1677"
+    },
+    {
+      "name": "B_separate exact original-language native interval",
+      "pass_": true,
+      "detail": "983–990"
+    },
+    {
+      "name": "B_taxpayer exact original-language native interval",
+      "pass_": true,
+      "detail": "229–232"
+    },
+    {
+      "name": "B_withhold exact original-language native interval",
+      "pass_": true,
+      "detail": "1814–1826"
+    },
+    {
+      "name": "Bbudget exact original-language native interval",
+      "pass_": true,
+      "detail": "1898–1909"
+    },
+    {
+      "name": "BcalApril exact original-language native interval",
+      "pass_": true,
+      "detail": "260–260"
+    },
+    {
+      "name": "BcalFebruary exact original-language native interval",
+      "pass_": true,
+      "detail": "209–209"
+    },
+    {
+      "name": "BcalJuly exact original-language native interval",
+      "pass_": true,
+      "detail": "311–311"
+    },
+    {
+      "name": "BcalOctober exact original-language native interval",
+      "pass_": true,
+      "detail": "345–345"
+    },
+    {
+      "name": "Bnoimpute exact original-language native interval",
+      "pass_": true,
+      "detail": "106–108"
+    },
+    {
+      "name": "BrentExample exact original-language native interval",
+      "pass_": true,
+      "detail": "110–113"
+    },
+    {
+      "name": "BsaleExample exact original-language native interval",
+      "pass_": true,
+      "detail": "115–118"
+    },
+    {
+      "name": "CE75 exact original-language native interval",
+      "pass_": true,
+      "detail": "1101–1105"
+    },
+    {
+      "name": "CEPE exact original-language native interval",
+      "pass_": true,
+      "detail": "1484–1484"
+    },
+    {
+      "name": "CEannualise exact original-language native interval",
+      "pass_": true,
+      "detail": "1109–1109"
+    },
+    {
+      "name": "CEconnections exact original-language native interval",
+      "pass_": true,
+      "detail": "1542–1546"
+    },
+    {
+      "name": "CEdate exact original-language native interval",
+      "pass_": true,
+      "detail": "1494–1494"
+    },
+    {
+      "name": "CElaw exact original-language native interval",
+      "pass_": true,
+      "detail": "1474–1482"
+    },
+    {
+      "name": "CEpension exact original-language native interval",
+      "pass_": true,
+      "detail": "1526–1526"
+    },
+    {
+      "name": "CEproperty exact original-language native interval",
+      "pass_": true,
+      "detail": "1542–1542"
+    },
+    {
+      "name": "CEpublic exact original-language native interval",
+      "pass_": true,
+      "detail": "1532–1532"
+    },
+    {
+      "name": "CErepresent exact original-language native interval",
+      "pass_": true,
+      "detail": "1566–1570"
+    },
+    {
+      "name": "CEround exact original-language native interval",
+      "pass_": true,
+      "detail": "1151–1153"
+    },
+    {
+      "name": "CEservices exact original-language native interval",
+      "pass_": true,
+      "detail": "1518–1520"
+    },
+    {
+      "name": "CEshared exact original-language native interval",
+      "pass_": true,
+      "detail": "1564–1570"
+    },
+    {
+      "name": "CEstartup exact original-language native interval",
+      "pass_": true,
+      "detail": "1113–1115"
+    },
+    {
+      "name": "CEthreshold exact original-language native interval",
+      "pass_": true,
+      "detail": "1147–1151"
+    },
+    {
+      "name": "CEwithhold exact original-language native interval",
+      "pass_": true,
+      "detail": "1604–1606"
+    },
+    {
+      "name": "CEwork exact original-language native interval",
+      "pass_": true,
+      "detail": "1522–1524"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1983 exact original-language native interval",
+      "pass_": true,
+      "detail": "129–129"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1984 exact original-language native interval",
+      "pass_": true,
+      "detail": "130–130"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1985 exact original-language native interval",
+      "pass_": true,
+      "detail": "131–131"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1986 exact original-language native interval",
+      "pass_": true,
+      "detail": "132–132"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1987 exact original-language native interval",
+      "pass_": true,
+      "detail": "133–133"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1988 exact original-language native interval",
+      "pass_": true,
+      "detail": "134–134"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1989 exact original-language native interval",
+      "pass_": true,
+      "detail": "135–135"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1990 exact original-language native interval",
+      "pass_": true,
+      "detail": "136–136"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1991 exact original-language native interval",
+      "pass_": true,
+      "detail": "137–137"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1992 exact original-language native interval",
+      "pass_": true,
+      "detail": "138–138"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1993 exact original-language native interval",
+      "pass_": true,
+      "detail": "139–139"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1994 exact original-language native interval",
+      "pass_": true,
+      "detail": "140–140"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1995 exact original-language native interval",
+      "pass_": true,
+      "detail": "141–141"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1996 exact original-language native interval",
+      "pass_": true,
+      "detail": "142–142"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1997 exact original-language native interval",
+      "pass_": true,
+      "detail": "143–143"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1998 exact original-language native interval",
+      "pass_": true,
+      "detail": "144–144"
+    },
+    {
+      "name": "CIT_coef_araba_2026_1999 exact original-language native interval",
+      "pass_": true,
+      "detail": "145–145"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2000 exact original-language native interval",
+      "pass_": true,
+      "detail": "146–146"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2001 exact original-language native interval",
+      "pass_": true,
+      "detail": "147–147"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2002 exact original-language native interval",
+      "pass_": true,
+      "detail": "148–148"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2003 exact original-language native interval",
+      "pass_": true,
+      "detail": "149–149"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2004 exact original-language native interval",
+      "pass_": true,
+      "detail": "150–150"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2005 exact original-language native interval",
+      "pass_": true,
+      "detail": "151–151"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2006 exact original-language native interval",
+      "pass_": true,
+      "detail": "152–152"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2007 exact original-language native interval",
+      "pass_": true,
+      "detail": "153–153"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2008 exact original-language native interval",
+      "pass_": true,
+      "detail": "154–154"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2009 exact original-language native interval",
+      "pass_": true,
+      "detail": "155–155"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2010 exact original-language native interval",
+      "pass_": true,
+      "detail": "156–156"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2011 exact original-language native interval",
+      "pass_": true,
+      "detail": "157–157"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2012 exact original-language native interval",
+      "pass_": true,
+      "detail": "158–158"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2013 exact original-language native interval",
+      "pass_": true,
+      "detail": "159–159"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2014 exact original-language native interval",
+      "pass_": true,
+      "detail": "160–160"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2015 exact original-language native interval",
+      "pass_": true,
+      "detail": "161–161"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2016 exact original-language native interval",
+      "pass_": true,
+      "detail": "162–162"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2017 exact original-language native interval",
+      "pass_": true,
+      "detail": "163–163"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2018 exact original-language native interval",
+      "pass_": true,
+      "detail": "164–164"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2019 exact original-language native interval",
+      "pass_": true,
+      "detail": "165–165"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2020 exact original-language native interval",
+      "pass_": true,
+      "detail": "166–166"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2021 exact original-language native interval",
+      "pass_": true,
+      "detail": "167–167"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2022 exact original-language native interval",
+      "pass_": true,
+      "detail": "168–168"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2023 exact original-language native interval",
+      "pass_": true,
+      "detail": "169–169"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2024 exact original-language native interval",
+      "pass_": true,
+      "detail": "170–170"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2025 exact original-language native interval",
+      "pass_": true,
+      "detail": "171–171"
+    },
+    {
+      "name": "CIT_coef_araba_2026_2026 exact original-language native interval",
+      "pass_": true,
+      "detail": "172–172"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1983 exact original-language native interval",
+      "pass_": true,
+      "detail": "127–127"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1984 exact original-language native interval",
+      "pass_": true,
+      "detail": "128–128"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1985 exact original-language native interval",
+      "pass_": true,
+      "detail": "129–129"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1986 exact original-language native interval",
+      "pass_": true,
+      "detail": "130–130"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1987 exact original-language native interval",
+      "pass_": true,
+      "detail": "131–131"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1988 exact original-language native interval",
+      "pass_": true,
+      "detail": "132–132"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1989 exact original-language native interval",
+      "pass_": true,
+      "detail": "133–133"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1990 exact original-language native interval",
+      "pass_": true,
+      "detail": "134–134"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1991 exact original-language native interval",
+      "pass_": true,
+      "detail": "135–135"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1992 exact original-language native interval",
+      "pass_": true,
+      "detail": "136–136"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1993 exact original-language native interval",
+      "pass_": true,
+      "detail": "137–137"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1994 exact original-language native interval",
+      "pass_": true,
+      "detail": "138–138"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1995 exact original-language native interval",
+      "pass_": true,
+      "detail": "139–139"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1996 exact original-language native interval",
+      "pass_": true,
+      "detail": "140–140"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1997 exact original-language native interval",
+      "pass_": true,
+      "detail": "141–141"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1998 exact original-language native interval",
+      "pass_": true,
+      "detail": "142–142"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1999 exact original-language native interval",
+      "pass_": true,
+      "detail": "143–143"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2000 exact original-language native interval",
+      "pass_": true,
+      "detail": "144–144"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2001 exact original-language native interval",
+      "pass_": true,
+      "detail": "145–145"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2002 exact original-language native interval",
+      "pass_": true,
+      "detail": "146–146"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2003 exact original-language native interval",
+      "pass_": true,
+      "detail": "147–147"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2004 exact original-language native interval",
+      "pass_": true,
+      "detail": "148–148"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2005 exact original-language native interval",
+      "pass_": true,
+      "detail": "149–149"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2006 exact original-language native interval",
+      "pass_": true,
+      "detail": "150–150"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2007 exact original-language native interval",
+      "pass_": true,
+      "detail": "151–151"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2008 exact original-language native interval",
+      "pass_": true,
+      "detail": "152–152"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2009 exact original-language native interval",
+      "pass_": true,
+      "detail": "153–153"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2010 exact original-language native interval",
+      "pass_": true,
+      "detail": "154–154"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2011 exact original-language native interval",
+      "pass_": true,
+      "detail": "155–155"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2012 exact original-language native interval",
+      "pass_": true,
+      "detail": "156–156"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2013 exact original-language native interval",
+      "pass_": true,
+      "detail": "157–157"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2014 exact original-language native interval",
+      "pass_": true,
+      "detail": "158–158"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2015 exact original-language native interval",
+      "pass_": true,
+      "detail": "159–159"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2016 exact original-language native interval",
+      "pass_": true,
+      "detail": "160–160"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2017 exact original-language native interval",
+      "pass_": true,
+      "detail": "161–161"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2018 exact original-language native interval",
+      "pass_": true,
+      "detail": "162–162"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2019 exact original-language native interval",
+      "pass_": true,
+      "detail": "163–163"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2020 exact original-language native interval",
+      "pass_": true,
+      "detail": "169–169"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2021 exact original-language native interval",
+      "pass_": true,
+      "detail": "170–170"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2022 exact original-language native interval",
+      "pass_": true,
+      "detail": "171–171"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2023 exact original-language native interval",
+      "pass_": true,
+      "detail": "172–172"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2024 exact original-language native interval",
+      "pass_": true,
+      "detail": "181–181"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2025 exact original-language native interval",
+      "pass_": true,
+      "detail": "182–182"
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2026 exact original-language native interval",
+      "pass_": true,
+      "detail": "183–183"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1983 exact original-language native interval",
+      "pass_": true,
+      "detail": "1790–1790"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1984 exact original-language native interval",
+      "pass_": true,
+      "detail": "1791–1791"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1985 exact original-language native interval",
+      "pass_": true,
+      "detail": "1792–1792"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1986 exact original-language native interval",
+      "pass_": true,
+      "detail": "1793–1793"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1987 exact original-language native interval",
+      "pass_": true,
+      "detail": "1794–1794"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1988 exact original-language native interval",
+      "pass_": true,
+      "detail": "1795–1795"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1989 exact original-language native interval",
+      "pass_": true,
+      "detail": "1796–1796"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1990 exact original-language native interval",
+      "pass_": true,
+      "detail": "1797–1797"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1991 exact original-language native interval",
+      "pass_": true,
+      "detail": "1798–1798"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1992 exact original-language native interval",
+      "pass_": true,
+      "detail": "1799–1799"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1993 exact original-language native interval",
+      "pass_": true,
+      "detail": "1800–1800"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1994 exact original-language native interval",
+      "pass_": true,
+      "detail": "1801–1801"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1995 exact original-language native interval",
+      "pass_": true,
+      "detail": "1802–1802"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1996 exact original-language native interval",
+      "pass_": true,
+      "detail": "1803–1803"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1997 exact original-language native interval",
+      "pass_": true,
+      "detail": "1804–1804"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1998 exact original-language native interval",
+      "pass_": true,
+      "detail": "1805–1805"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1999 exact original-language native interval",
+      "pass_": true,
+      "detail": "1806–1806"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2000 exact original-language native interval",
+      "pass_": true,
+      "detail": "1807–1807"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2001 exact original-language native interval",
+      "pass_": true,
+      "detail": "1808–1808"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2002 exact original-language native interval",
+      "pass_": true,
+      "detail": "1809–1809"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2003 exact original-language native interval",
+      "pass_": true,
+      "detail": "1810–1810"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2004 exact original-language native interval",
+      "pass_": true,
+      "detail": "1811–1811"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2005 exact original-language native interval",
+      "pass_": true,
+      "detail": "1812–1812"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2006 exact original-language native interval",
+      "pass_": true,
+      "detail": "1813–1813"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2007 exact original-language native interval",
+      "pass_": true,
+      "detail": "1819–1819"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2008 exact original-language native interval",
+      "pass_": true,
+      "detail": "1820–1820"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2009 exact original-language native interval",
+      "pass_": true,
+      "detail": "1821–1821"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2010 exact original-language native interval",
+      "pass_": true,
+      "detail": "1822–1822"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2011 exact original-language native interval",
+      "pass_": true,
+      "detail": "1823–1823"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2012 exact original-language native interval",
+      "pass_": true,
+      "detail": "1833–1833"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2013 exact original-language native interval",
+      "pass_": true,
+      "detail": "1834–1834"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2014 exact original-language native interval",
+      "pass_": true,
+      "detail": "1835–1835"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2015 exact original-language native interval",
+      "pass_": true,
+      "detail": "1836–1836"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2016 exact original-language native interval",
+      "pass_": true,
+      "detail": "1837–1837"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2017 exact original-language native interval",
+      "pass_": true,
+      "detail": "1838–1838"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2018 exact original-language native interval",
+      "pass_": true,
+      "detail": "1839–1839"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2019 exact original-language native interval",
+      "pass_": true,
+      "detail": "1840–1840"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2020 exact original-language native interval",
+      "pass_": true,
+      "detail": "1841–1841"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2021 exact original-language native interval",
+      "pass_": true,
+      "detail": "1842–1842"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2022 exact original-language native interval",
+      "pass_": true,
+      "detail": "1843–1843"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2023 exact original-language native interval",
+      "pass_": true,
+      "detail": "1844–1844"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2024 exact original-language native interval",
+      "pass_": true,
+      "detail": "1845–1845"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2025 exact original-language native interval",
+      "pass_": true,
+      "detail": "1846–1846"
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2026 exact original-language native interval",
+      "pass_": true,
+      "detail": "1847–1847"
+    },
+    {
+      "name": "CN75 exact original-language native interval",
+      "pass_": true,
+      "detail": "1234–1238"
+    },
+    {
+      "name": "CNPElaw exact original-language native interval",
+      "pass_": true,
+      "detail": "1652–1654"
+    },
+    {
+      "name": "CNannualise exact original-language native interval",
+      "pass_": true,
+      "detail": "1272–1272"
+    },
+    {
+      "name": "CNconnections exact original-language native interval",
+      "pass_": true,
+      "detail": "1722–1726"
+    },
+    {
+      "name": "CNdate exact original-language native interval",
+      "pass_": true,
+      "detail": "1674–1674"
+    },
+    {
+      "name": "CNlaw exact original-language native interval",
+      "pass_": true,
+      "detail": "1654–1658"
+    },
+    {
+      "name": "CNpension exact original-language native interval",
+      "pass_": true,
+      "detail": "1710–1710"
+    },
+    {
+      "name": "CNproperty exact original-language native interval",
+      "pass_": true,
+      "detail": "1722–1722"
+    },
+    {
+      "name": "CNpublic exact original-language native interval",
+      "pass_": true,
+      "detail": "1716–1716"
+    },
+    {
+      "name": "CNrepresent exact original-language native interval",
+      "pass_": true,
+      "detail": "1746–1750"
+    },
+    {
+      "name": "CNround exact original-language native interval",
+      "pass_": true,
+      "detail": "1266–1268"
+    },
+    {
+      "name": "CNservices exact original-language native interval",
+      "pass_": true,
+      "detail": "1700–1702"
+    },
+    {
+      "name": "CNshared exact original-language native interval",
+      "pass_": true,
+      "detail": "1744–1750"
+    },
+    {
+      "name": "CNthreshold exact original-language native interval",
+      "pass_": true,
+      "detail": "1262–1266"
+    },
+    {
+      "name": "CNwithhold exact original-language native interval",
+      "pass_": true,
+      "detail": "1778–1780"
+    },
+    {
+      "name": "CNwork exact original-language native interval",
+      "pass_": true,
+      "detail": "1704–1706"
+    },
+    {
+      "name": "G210quarter exact original-language native interval",
+      "pass_": true,
+      "detail": "804–808"
+    },
+    {
+      "name": "G210refund exact original-language native interval",
+      "pass_": true,
+      "detail": "810–812"
+    },
+    {
+      "name": "G210windows exact original-language native interval",
+      "pass_": true,
+      "detail": "798–798"
+    },
+    {
+      "name": "G211 exact original-language native interval",
+      "pass_": true,
+      "detail": "872–874"
+    },
+    {
+      "name": "G216 exact original-language native interval",
+      "pass_": true,
+      "detail": "786–790"
+    },
+    {
+      "name": "G296 exact original-language native interval",
+      "pass_": true,
+      "detail": "776–776"
+    },
+    {
+      "name": "GC_index exact original-language native interval",
+      "pass_": true,
+      "detail": "5693–5724"
+    },
+    {
+      "name": "GC_rate exact original-language native interval",
+      "pass_": true,
+      "detail": "8545–8553"
+    },
+    {
+      "name": "GC_residence exact original-language native interval",
+      "pass_": true,
+      "detail": "1183–1188"
+    },
+    {
+      "name": "GC_size exact original-language native interval",
+      "pass_": true,
+      "detail": "1368–1387"
+    },
+    {
+      "name": "GC_surcharge exact original-language native interval",
+      "pass_": true,
+      "detail": "8675–8692"
+    },
+    {
+      "name": "GP_div1500 exact original-language native interval",
+      "pass_": true,
+      "detail": "1561–1580"
+    },
+    {
+      "name": "GP_gaincost exact original-language native interval",
+      "pass_": true,
+      "detail": "4999–5012"
+    },
+    {
+      "name": "GP_gaindep exact original-language native interval",
+      "pass_": true,
+      "detail": "5003–5012"
+    },
+    {
+      "name": "GP_gainsale exact original-language native interval",
+      "pass_": true,
+      "detail": "5037–5042"
+    },
+    {
+      "name": "GP_gainyears exact original-language native interval",
+      "pass_": true,
+      "detail": "5007–5017"
+    },
+    {
+      "name": "GP_insurance exact original-language native interval",
+      "pass_": true,
+      "detail": "3633–3638"
+    },
+    {
+      "name": "GP_marketfloor exact original-language native interval",
+      "pass_": true,
+      "detail": "5044–5046"
+    },
+    {
+      "name": "GP_reference70 exact original-language native interval",
+      "pass_": true,
+      "detail": "3665–3680"
+    },
+    {
+      "name": "GP_rent exact original-language native interval",
+      "pass_": true,
+      "detail": "3618–3638"
+    },
+    {
+      "name": "GP_rent20 exact original-language native interval",
+      "pass_": true,
+      "detail": "3601–3613"
+    },
+    {
+      "name": "GP_rent70 exact original-language native interval",
+      "pass_": true,
+      "detail": "3640–3663"
+    },
+    {
+      "name": "GP_rentfinance exact original-language native interval",
+      "pass_": true,
+      "detail": "3625–3635"
+    },
+    {
+      "name": "GP_rentnonnegative exact original-language native interval",
+      "pass_": true,
+      "detail": "3615–3616"
+    },
+    {
+      "name": "GP_wagecost exact original-language native interval",
+      "pass_": true,
+      "detail": "2825–2834"
+    },
+    {
+      "name": "GR_costs exact original-language native interval",
+      "pass_": true,
+      "detail": "3212–3276"
+    },
+    {
+      "name": "GR_dep exact original-language native interval",
+      "pass_": true,
+      "detail": "3304–3320"
+    },
+    {
+      "name": "GR_movables exact original-language native interval",
+      "pass_": true,
+      "detail": "3312–3320"
+    },
+    {
+      "name": "GR_usufruct exact original-language native interval",
+      "pass_": true,
+      "detail": "3328–3336"
+    },
+    {
+      "name": "GTcollection exact original-language native interval",
+      "pass_": true,
+      "detail": "1571–1587"
+    },
+    {
+      "name": "GTinterest exact original-language native interval",
+      "pass_": true,
+      "detail": "1461–1468"
+    },
+    {
+      "name": "GTlate exact original-language native interval",
+      "pass_": true,
+      "detail": "1508–1523"
+    },
+    {
+      "name": "GTpenalty exact original-language native interval",
+      "pass_": true,
+      "detail": "9451–9467"
+    },
+    {
+      "name": "GTwithheld exact original-language native interval",
+      "pass_": true,
+      "detail": "9464–9475"
+    },
+    {
+      "name": "G_CITcontext exact original-language native interval",
+      "pass_": true,
+      "detail": "1780–1788"
+    },
+    {
+      "name": "G_CITtiming exact original-language native interval",
+      "pass_": true,
+      "detail": "1848–1854"
+    },
+    {
+      "name": "G_EEA exact original-language native interval",
+      "pass_": true,
+      "detail": "2061–2065"
+    },
+    {
+      "name": "G_EUcost exact original-language native interval",
+      "pass_": true,
+      "detail": "2029–2059"
+    },
+    {
+      "name": "G_PE exact original-language native interval",
+      "pass_": true,
+      "detail": "666–672"
+    },
+    {
+      "name": "G_PEaccounts exact original-language native interval",
+      "pass_": true,
+      "detail": "1944–1950"
+    },
+    {
+      "name": "G_PEbase exact original-language native interval",
+      "pass_": true,
+      "detail": "1372–1374"
+    },
+    {
+      "name": "G_PEcapital exact original-language native interval",
+      "pass_": true,
+      "detail": "1425–1427"
+    },
+    {
+      "name": "G_PEcharges exact original-language native interval",
+      "pass_": true,
+      "detail": "1376–1407"
+    },
+    {
+      "name": "G_PEcredits exact original-language native interval",
+      "pass_": true,
+      "detail": "1863–1881"
+    },
+    {
+      "name": "G_PEexcluded exact original-language native interval",
+      "pass_": true,
+      "detail": "1429–1431"
+    },
+    {
+      "name": "G_PEincome exact original-language native interval",
+      "pass_": true,
+      "detail": "1329–1336"
+    },
+    {
+      "name": "G_PEloss exact original-language native interval",
+      "pass_": true,
+      "detail": "1451–1454"
+    },
+    {
+      "name": "G_PErate exact original-language native interval",
+      "pass_": true,
+      "detail": "1829–1836"
+    },
+    {
+      "name": "G_PEreturn exact original-language native interval",
+      "pass_": true,
+      "detail": "1933–1940"
+    },
+    {
+      "name": "G_PEsize exact original-language native interval",
+      "pass_": true,
+      "detail": "1433–1454"
+    },
+    {
+      "name": "G_PEworldwide exact original-language native interval",
+      "pass_": true,
+      "detail": "1279–1282"
+    },
+    {
+      "name": "G_PITcontext exact original-language native interval",
+      "pass_": true,
+      "detail": "1720–1730"
+    },
+    {
+      "name": "G_PITexception exact original-language native interval",
+      "pass_": true,
+      "detail": "1777–1779"
+    },
+    {
+      "name": "G_accrual exact original-language native interval",
+      "pass_": true,
+      "detail": "2188–2194"
+    },
+    {
+      "name": "G_activitycost exact original-language native interval",
+      "pass_": true,
+      "detail": "1996–2002"
+    },
+    {
+      "name": "G_buyer exact original-language native interval",
+      "pass_": true,
+      "detail": "2139–2147"
+    },
+    {
+      "name": "G_capitalrate exact original-language native interval",
+      "pass_": true,
+      "detail": "2123–2132"
+    },
+    {
+      "name": "G_credit exact original-language native interval",
+      "pass_": true,
+      "detail": "2174–2182"
+    },
+    {
+      "name": "G_diplomatic exact original-language native interval",
+      "pass_": true,
+      "detail": "2107–2114"
+    },
+    {
+      "name": "G_divexempt exact original-language native interval",
+      "pass_": true,
+      "detail": "880–906"
+    },
+    {
+      "name": "G_gain exact original-language native interval",
+      "pass_": true,
+      "detail": "2008–2027"
+    },
+    {
+      "name": "G_gross exact original-language native interval",
+      "pass_": true,
+      "detail": "1986–1994"
+    },
+    {
+      "name": "G_imputationDeleted exact original-language native interval",
+      "pass_": true,
+      "detail": "791–791"
+    },
+    {
+      "name": "G_interestexempt exact original-language native interval",
+      "pass_": true,
+      "detail": "908–927"
+    },
+    {
+      "name": "G_nofile exact original-language native interval",
+      "pass_": true,
+      "detail": "2233–2240"
+    },
+    {
+      "name": "G_ownlaw exact original-language native interval",
+      "pass_": true,
+      "detail": "346–348"
+    },
+    {
+      "name": "G_pension exact original-language native interval",
+      "pass_": true,
+      "detail": "2079–2094"
+    },
+    {
+      "name": "G_provinceShare exact original-language native interval",
+      "pass_": true,
+      "detail": "846–859"
+    },
+    {
+      "name": "G_rate exact original-language native interval",
+      "pass_": true,
+      "detail": "2072–2077"
+    },
+    {
+      "name": "G_remitexempt exact original-language native interval",
+      "pass_": true,
+      "detail": "1850–1861"
+    },
+    {
+      "name": "G_remittance exact original-language native interval",
+      "pass_": true,
+      "detail": "1838–1848"
+    },
+    {
+      "name": "G_seasonal exact original-language native interval",
+      "pass_": true,
+      "detail": "2134–2137"
+    },
+    {
+      "name": "G_separate exact original-language native interval",
+      "pass_": true,
+      "detail": "1284–1292"
+    },
+    {
+      "name": "G_taxpayer exact original-language native interval",
+      "pass_": true,
+      "detail": "366–369"
+    },
+    {
+      "name": "G_withhold exact original-language native interval",
+      "pass_": true,
+      "detail": "2309–2318"
+    },
+    {
+      "name": "Gbudget exact original-language native interval",
+      "pass_": true,
+      "detail": "5–12"
+    },
+    {
+      "name": "Gcorrection exact original-language native interval",
+      "pass_": true,
+      "detail": "11–61"
+    },
+    {
+      "name": "N210quarter exact original-language native interval",
+      "pass_": true,
+      "detail": "276–278"
+    },
+    {
+      "name": "N210refund exact original-language native interval",
+      "pass_": true,
+      "detail": "282–282"
+    },
+    {
+      "name": "N210windows exact original-language native interval",
+      "pass_": true,
+      "detail": "270–274"
+    },
+    {
+      "name": "N210zero exact original-language native interval",
+      "pass_": true,
+      "detail": "280–280"
+    },
+    {
+      "name": "N211 exact original-language native interval",
+      "pass_": true,
+      "detail": "293–293"
+    },
+    {
+      "name": "N216 exact original-language native interval",
+      "pass_": true,
+      "detail": "227–229"
+    },
+    {
+      "name": "N296 exact original-language native interval",
+      "pass_": true,
+      "detail": "259–261"
+    },
+    {
+      "name": "NC_PE exact original-language native interval",
+      "pass_": true,
+      "detail": "6878–6882"
+    },
+    {
+      "name": "NC_micro19 exact original-language native interval",
+      "pass_": true,
+      "detail": "3508–3510"
+    },
+    {
+      "name": "NC_rate exact original-language native interval",
+      "pass_": true,
+      "detail": "3494–3502"
+    },
+    {
+      "name": "NC_small23 exact original-language native interval",
+      "pass_": true,
+      "detail": "3506–3508"
+    },
+    {
+      "name": "NTinterest exact original-language native interval",
+      "pass_": true,
+      "detail": "2682–2684"
+    },
+    {
+      "name": "NTlate exact original-language native interval",
+      "pass_": true,
+      "detail": "2766–2774"
+    },
+    {
+      "name": "NTlater exact original-language native interval",
+      "pass_": true,
+      "detail": "3916–3916"
+    },
+    {
+      "name": "NTpenalty exact original-language native interval",
+      "pass_": true,
+      "detail": "3914–3918"
+    },
+    {
+      "name": "NTreduction exact original-language native interval",
+      "pass_": true,
+      "detail": "3736–3740"
+    },
+    {
+      "name": "NTwithheld exact original-language native interval",
+      "pass_": true,
+      "detail": "3986–3988"
+    },
+    {
+      "name": "Navarra_continuation exact original-language native interval",
+      "pass_": true,
+      "detail": "135–136"
+    },
+    {
+      "name": "Ninterest2026 exact original-language native interval",
+      "pass_": true,
+      "detail": "45–58"
+    },
+    {
+      "name": "PIT_coef_araba_2026_1994 exact original-language native interval",
+      "pass_": true,
+      "detail": "73–73"
+    },
+    {
+      "name": "PIT_coef_araba_2026_1995 exact original-language native interval",
+      "pass_": true,
+      "detail": "74–74"
+    },
+    {
+      "name": "PIT_coef_araba_2026_1996 exact original-language native interval",
+      "pass_": true,
+      "detail": "75–75"
+    },
+    {
+      "name": "PIT_coef_araba_2026_1997 exact original-language native interval",
+      "pass_": true,
+      "detail": "76–76"
+    },
+    {
+      "name": "PIT_coef_araba_2026_1998 exact original-language native interval",
+      "pass_": true,
+      "detail": "77–77"
+    },
+    {
+      "name": "PIT_coef_araba_2026_1999 exact original-language native interval",
+      "pass_": true,
+      "detail": "78–78"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2000 exact original-language native interval",
+      "pass_": true,
+      "detail": "79–79"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2001 exact original-language native interval",
+      "pass_": true,
+      "detail": "80–80"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2002 exact original-language native interval",
+      "pass_": true,
+      "detail": "81–81"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2003 exact original-language native interval",
+      "pass_": true,
+      "detail": "82–82"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2004 exact original-language native interval",
+      "pass_": true,
+      "detail": "83–83"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2005 exact original-language native interval",
+      "pass_": true,
+      "detail": "84–84"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2006 exact original-language native interval",
+      "pass_": true,
+      "detail": "85–85"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2007 exact original-language native interval",
+      "pass_": true,
+      "detail": "86–86"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2008 exact original-language native interval",
+      "pass_": true,
+      "detail": "87–87"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2009 exact original-language native interval",
+      "pass_": true,
+      "detail": "88–88"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2010 exact original-language native interval",
+      "pass_": true,
+      "detail": "89–89"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2011 exact original-language native interval",
+      "pass_": true,
+      "detail": "90–90"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2012 exact original-language native interval",
+      "pass_": true,
+      "detail": "91–91"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2013 exact original-language native interval",
+      "pass_": true,
+      "detail": "92–92"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2014 exact original-language native interval",
+      "pass_": true,
+      "detail": "93–93"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2015 exact original-language native interval",
+      "pass_": true,
+      "detail": "94–94"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2016 exact original-language native interval",
+      "pass_": true,
+      "detail": "95–95"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2017 exact original-language native interval",
+      "pass_": true,
+      "detail": "96–96"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2018 exact original-language native interval",
+      "pass_": true,
+      "detail": "97–97"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2019 exact original-language native interval",
+      "pass_": true,
+      "detail": "98–98"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2020 exact original-language native interval",
+      "pass_": true,
+      "detail": "99–99"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2021 exact original-language native interval",
+      "pass_": true,
+      "detail": "100–100"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2022 exact original-language native interval",
+      "pass_": true,
+      "detail": "101–101"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2023 exact original-language native interval",
+      "pass_": true,
+      "detail": "102–102"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2024 exact original-language native interval",
+      "pass_": true,
+      "detail": "103–103"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2025 exact original-language native interval",
+      "pass_": true,
+      "detail": "104–104"
+    },
+    {
+      "name": "PIT_coef_araba_2026_2026 exact original-language native interval",
+      "pass_": true,
+      "detail": "105–105"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1994 exact original-language native interval",
+      "pass_": true,
+      "detail": "71–71"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1995 exact original-language native interval",
+      "pass_": true,
+      "detail": "72–72"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1996 exact original-language native interval",
+      "pass_": true,
+      "detail": "73–73"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1997 exact original-language native interval",
+      "pass_": true,
+      "detail": "74–74"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1998 exact original-language native interval",
+      "pass_": true,
+      "detail": "75–75"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1999 exact original-language native interval",
+      "pass_": true,
+      "detail": "76–76"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2000 exact original-language native interval",
+      "pass_": true,
+      "detail": "77–77"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2001 exact original-language native interval",
+      "pass_": true,
+      "detail": "78–78"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2002 exact original-language native interval",
+      "pass_": true,
+      "detail": "79–79"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2003 exact original-language native interval",
+      "pass_": true,
+      "detail": "80–80"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2004 exact original-language native interval",
+      "pass_": true,
+      "detail": "81–81"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2005 exact original-language native interval",
+      "pass_": true,
+      "detail": "82–82"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2006 exact original-language native interval",
+      "pass_": true,
+      "detail": "83–83"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2007 exact original-language native interval",
+      "pass_": true,
+      "detail": "84–84"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2008 exact original-language native interval",
+      "pass_": true,
+      "detail": "85–85"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2009 exact original-language native interval",
+      "pass_": true,
+      "detail": "86–86"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2010 exact original-language native interval",
+      "pass_": true,
+      "detail": "87–87"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2011 exact original-language native interval",
+      "pass_": true,
+      "detail": "88–88"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2012 exact original-language native interval",
+      "pass_": true,
+      "detail": "89–89"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2013 exact original-language native interval",
+      "pass_": true,
+      "detail": "90–90"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2014 exact original-language native interval",
+      "pass_": true,
+      "detail": "91–91"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2015 exact original-language native interval",
+      "pass_": true,
+      "detail": "92–92"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2016 exact original-language native interval",
+      "pass_": true,
+      "detail": "93–93"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2017 exact original-language native interval",
+      "pass_": true,
+      "detail": "94–94"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2018 exact original-language native interval",
+      "pass_": true,
+      "detail": "95–95"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2019 exact original-language native interval",
+      "pass_": true,
+      "detail": "96–96"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2020 exact original-language native interval",
+      "pass_": true,
+      "detail": "97–97"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2021 exact original-language native interval",
+      "pass_": true,
+      "detail": "98–98"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2022 exact original-language native interval",
+      "pass_": true,
+      "detail": "99–99"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2023 exact original-language native interval",
+      "pass_": true,
+      "detail": "100–100"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2024 exact original-language native interval",
+      "pass_": true,
+      "detail": "101–101"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2025 exact original-language native interval",
+      "pass_": true,
+      "detail": "102–102"
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2026 exact original-language native interval",
+      "pass_": true,
+      "detail": "103–103"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1994 exact original-language native interval",
+      "pass_": true,
+      "detail": "1730–1730"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1995 exact original-language native interval",
+      "pass_": true,
+      "detail": "1736–1736"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1996 exact original-language native interval",
+      "pass_": true,
+      "detail": "1737–1737"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1997 exact original-language native interval",
+      "pass_": true,
+      "detail": "1738–1738"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1998 exact original-language native interval",
+      "pass_": true,
+      "detail": "1739–1739"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1999 exact original-language native interval",
+      "pass_": true,
+      "detail": "1740–1740"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2000 exact original-language native interval",
+      "pass_": true,
+      "detail": "1750–1750"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2001 exact original-language native interval",
+      "pass_": true,
+      "detail": "1751–1751"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2002 exact original-language native interval",
+      "pass_": true,
+      "detail": "1752–1752"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2003 exact original-language native interval",
+      "pass_": true,
+      "detail": "1753–1753"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2004 exact original-language native interval",
+      "pass_": true,
+      "detail": "1754–1754"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2005 exact original-language native interval",
+      "pass_": true,
+      "detail": "1755–1755"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2006 exact original-language native interval",
+      "pass_": true,
+      "detail": "1756–1756"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2007 exact original-language native interval",
+      "pass_": true,
+      "detail": "1757–1757"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2008 exact original-language native interval",
+      "pass_": true,
+      "detail": "1758–1758"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2009 exact original-language native interval",
+      "pass_": true,
+      "detail": "1759–1759"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2010 exact original-language native interval",
+      "pass_": true,
+      "detail": "1760–1760"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2011 exact original-language native interval",
+      "pass_": true,
+      "detail": "1761–1761"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2012 exact original-language native interval",
+      "pass_": true,
+      "detail": "1762–1762"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2013 exact original-language native interval",
+      "pass_": true,
+      "detail": "1763–1763"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2014 exact original-language native interval",
+      "pass_": true,
+      "detail": "1764–1764"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2015 exact original-language native interval",
+      "pass_": true,
+      "detail": "1765–1765"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2016 exact original-language native interval",
+      "pass_": true,
+      "detail": "1766–1766"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2017 exact original-language native interval",
+      "pass_": true,
+      "detail": "1767–1767"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2018 exact original-language native interval",
+      "pass_": true,
+      "detail": "1768–1768"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2019 exact original-language native interval",
+      "pass_": true,
+      "detail": "1769–1769"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2020 exact original-language native interval",
+      "pass_": true,
+      "detail": "1770–1770"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2021 exact original-language native interval",
+      "pass_": true,
+      "detail": "1771–1771"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2022 exact original-language native interval",
+      "pass_": true,
+      "detail": "1772–1772"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2023 exact original-language native interval",
+      "pass_": true,
+      "detail": "1773–1773"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2024 exact original-language native interval",
+      "pass_": true,
+      "detail": "1774–1774"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2025 exact original-language native interval",
+      "pass_": true,
+      "detail": "1775–1775"
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2026 exact original-language native interval",
+      "pass_": true,
+      "detail": "1776–1776"
+    },
+    {
+      "name": "StateImpute exact original-language native interval",
+      "pass_": true,
+      "detail": "1730–1730"
+    },
+    {
+      "name": "StateOwnuse exact original-language native interval",
+      "pass_": true,
+      "detail": "6196–6198"
+    },
+    {
+      "name": "StateOwnuseDA55 exact original-language native interval",
+      "pass_": true,
+      "detail": "10810–10814"
+    },
+    {
+      "name": "StateOwnuseGeneral exact original-language native interval",
+      "pass_": true,
+      "detail": "6194–6194"
+    },
+    {
+      "name": "StatePEoverrides exact original-language native interval",
+      "pass_": true,
+      "detail": "1386–1396"
+    },
+    {
+      "name": "StateRates exact original-language native interval",
+      "pass_": true,
+      "detail": "1783–1785"
+    },
+    {
+      "name": "StateRemit exact original-language native interval",
+      "pass_": true,
+      "detail": "1572–1574"
+    },
+    {
+      "name": "legal2026 exact original-language native interval",
+      "pass_": true,
+      "detail": "110–116"
+    },
+    {
+      "name": "current row 1 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 2 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 3 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 4 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 5 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 6 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 7 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 8 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 9 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 10 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 11 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 12 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 13 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 14 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 15 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 16 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 17 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 18 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 19 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 20 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 21 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 22 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 23 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 24 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 25 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 26 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 27 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 28 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 29 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 30 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 31 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 32 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 33 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 34 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 35 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 36 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 37 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 38 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 39 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 40 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 41 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 42 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 43 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 44 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 45 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 46 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 47 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 48 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 49 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 50 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 51 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 52 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 53 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 54 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 55 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 56 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 57 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 58 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 59 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 60 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 61 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 62 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 63 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 64 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 65 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 66 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 67 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 68 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 69 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 70 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 71 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 72 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 73 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 74 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 75 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 76 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 77 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 78 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 79 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 80 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 81 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 82 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 83 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 84 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 85 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 86 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 87 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 88 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 89 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 90 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 91 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 92 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 93 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 94 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 95 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 96 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 97 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 98 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 99 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 100 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 101 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 102 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 103 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 104 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 105 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 106 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 107 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 108 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 109 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 110 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 111 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 112 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 113 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 114 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 115 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 116 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 117 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 118 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 119 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 120 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 121 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 122 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 123 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 124 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 125 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 126 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 127 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 128 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 129 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 130 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 131 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 132 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 133 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 134 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 135 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 136 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 137 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 138 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 139 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 140 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 141 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 142 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 143 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 144 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 145 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 146 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 147 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 148 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 149 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 150 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 151 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 152 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 153 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 154 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 155 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 156 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 157 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 158 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 159 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 160 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 161 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 162 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 163 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 164 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 165 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 166 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 167 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 168 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 169 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 170 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 171 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 172 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 173 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 174 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 175 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 176 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 177 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 178 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 179 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 180 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 181 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 182 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 183 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 184 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 185 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 186 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 187 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 188 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 189 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 190 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 191 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 192 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 193 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 194 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 195 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 196 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 197 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 198 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 199 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 200 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 201 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 202 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 203 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 204 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 205 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 206 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 207 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 208 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 209 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 210 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 211 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 212 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 213 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 214 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 215 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 216 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 217 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 218 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 219 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 220 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 221 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 222 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 223 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 224 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 225 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 226 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 227 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 228 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 229 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 230 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 231 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 232 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 233 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 234 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 235 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 236 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 237 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 238 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 239 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 240 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 241 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 242 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 243 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 244 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 245 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 246 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 247 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 248 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 249 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 250 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 251 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 252 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 253 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 254 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 255 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 256 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 257 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 258 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 259 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 260 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 261 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 262 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 263 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 264 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 265 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 266 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 267 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 268 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 269 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 270 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 271 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 272 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 273 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 274 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 275 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 276 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 277 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 278 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 279 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 280 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 281 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 282 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 283 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 284 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 285 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 286 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 287 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 288 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 289 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 290 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 291 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 292 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 293 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 294 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 295 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 296 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 297 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 298 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 299 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 300 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 301 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 302 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 303 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 304 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 305 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 306 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 307 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 308 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 309 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 310 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 311 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 312 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 313 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 314 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 315 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 316 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 317 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 318 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 319 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 320 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 321 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 322 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 323 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 324 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 325 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 326 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 327 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 328 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 329 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 330 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 331 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 332 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 333 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 334 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 335 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 336 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 337 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 338 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 339 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 340 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 341 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 342 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 343 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 344 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 345 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 346 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 347 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 348 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 349 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 350 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 351 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 352 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 353 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 354 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 355 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 356 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 357 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 358 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 359 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 360 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 361 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 362 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 363 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 364 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 365 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 366 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 367 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 368 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 369 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 370 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 371 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 372 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 373 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 374 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 375 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 376 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 377 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 378 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 379 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 380 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 381 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 382 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 383 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 384 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 385 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 386 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 387 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 388 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 389 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 390 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 391 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 392 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 393 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 394 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 395 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 396 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 397 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 398 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 399 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 400 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 401 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 402 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 403 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 404 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 405 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 406 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 407 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 408 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 409 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 410 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 411 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 412 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 413 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 414 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 415 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 416 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 417 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 418 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 419 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 420 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 421 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 422 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 423 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 424 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 425 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 426 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 427 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 428 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 429 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 430 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 431 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 432 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 433 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 434 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 435 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 436 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 437 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 438 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 439 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 440 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 441 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 442 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 443 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 444 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 445 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 446 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 447 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 448 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 449 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 450 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 451 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 452 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 453 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 454 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 455 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 456 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 457 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 458 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 459 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 460 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 461 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 462 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 463 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 464 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 465 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 466 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 467 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 468 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 469 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 470 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 471 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 472 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 473 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 474 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 475 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 476 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 477 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 478 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 479 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 480 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 481 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 482 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 483 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 484 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 485 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 486 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 487 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 488 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 489 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 490 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 491 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 492 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 493 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 494 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 495 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 496 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 497 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 498 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 499 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 500 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 501 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 502 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 503 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 504 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 505 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 506 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 507 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 508 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 509 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 510 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 511 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 512 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 513 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 514 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 515 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 516 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 517 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 518 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 519 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 520 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 521 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 522 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 523 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 524 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "current row 525 exact Guide wording",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "all current units have a row",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "all frozen original units mapped",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "all first-branch units mapped",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "all old-topic destinations explicit",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "own three-province PIT33+CIT44 vectors",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "B211 operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "A211 operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "G211 operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "BJanuary operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "BJanuaryEffect operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "A296calendar operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "N210zero operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "G210windows operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "ATlate operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "BTcollection operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "StateOwnuseGeneral operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "StateOwnuseDA55 operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "NC_small23 operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "NC_micro19 operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "B_PITexception operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "A_PITexception operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "G_PITexception operative distinguishing conditions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "2027 future scale not operative2026 quote",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "G210 sale quote excludes obsolete own-use filing paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "residential rent",
+      "pass_": true,
+      "detail": "1330.00"
+    },
+    {
+      "name": "employment net",
+      "pass_": true,
+      "detail": "3572.00"
+    },
+    {
+      "name": "employment refund",
+      "pass_": true,
+      "detail": "228"
+    },
+    {
+      "name": "dividend",
+      "pass_": true,
+      "detail": "855.00"
+    },
+    {
+      "name": "Navarra imputation",
+      "pass_": true,
+      "detail": "209.00000"
+    },
+    {
+      "name": "sale indexed basis",
+      "pass_": true,
+      "detail": "253547.000"
+    },
+    {
+      "name": "sale gain",
+      "pass_": true,
+      "detail": "144953"
+    },
+    {
+      "name": "sale final tax",
+      "pass_": true,
+      "detail": "27541.07"
+    },
+    {
+      "name": "sale net balance",
+      "pass_": true,
+      "detail": "15541.07"
+    },
+    {
+      "name": "local remittance",
+      "pass_": true,
+      "detail": "2000.00"
+    },
+    {
+      "name": "State remittance",
+      "pass_": true,
+      "detail": "1900.00"
+    },
+    {
+      "name": "PE no imported resident surcharge",
+      "pass_": true,
+      "detail": "45600.00"
+    },
+    {
+      "name": "PE final result",
+      "pass_": true,
+      "detail": "19960.00"
+    },
+    {
+      "name": "PE60percent",
+      "pass_": true,
+      "detail": "11976.0"
+    },
+    {
+      "name": "PE40percent",
+      "pass_": true,
+      "detail": "7984.0"
+    },
+    {
+      "name": "withholding",
+      "pass_": true,
+      "detail": "1140.00"
+    },
+    {
+      "name": "withholding60",
+      "pass_": true,
+      "detail": "684.0"
+    },
+    {
+      "name": "withholding40",
+      "pass_": true,
+      "detail": "456.0"
+    },
+    {
+      "name": "interest full year",
+      "pass_": true,
+      "detail": "406.250000"
+    },
+    {
+      "name": "interest73days",
+      "pass_": true,
+      "detail": "81.250000"
+    },
+    {
+      "name": "1994ordinary",
+      "pass_": true,
+      "detail": "203000.000"
+    },
+    {
+      "name": "1994Dec31",
+      "pass_": true,
+      "detail": "215600.000"
+    },
+    {
+      "name": "original two oa examples",
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "scope": "Writer integrity and finite source/arithmetic controls; not independent review, accountant attestation or whole-country completion."
+}

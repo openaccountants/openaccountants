@@ -1,0 +1,16 @@
+{
+  "slug": "es-corporate-tax",
+  "guide_sha256": "73e392759eea7cd61d4b5135348005c954bc1699af8c4b45cc21a26e09647d69",
+  "ledger_sha256": "2ef605ee2445b536d38f4fccccb788c526425ef6520395643d4caf6e53f7eb45",
+  "rows": 309,
+  "old_units": 510,
+  "writer": "Root Codex; independent reviewer is different agent",
+  "actual_quoted_anchors": 141,
+  "source_pairs": 10,
+  "writer_integrity_controls": 479,
+  "oa_blocks": 2,
+  "old_topic_mapping": "510 actual main/frozen PR units, no fuzzy guesses; precise corrections and non-restated form-coordinate/specialist boundaries explicit",
+  "guide_change": "Bounded art15.k old-topic restoration; full inverse/same cases/byline/CTA/URLs pass",
+  "review_state": "PREPARED; independent review required",
+  "evidence_root": "ledgers/spain-2026-evidence/es-corporate-tax"
+}

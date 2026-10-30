@@ -7,12 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-return-assembly"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-10-27"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Ireland: assembling the 2026 individual tax return (Form 11 and Form 12), v1.1
+# Ireland: assembling the 2026 individual tax return (Form 11 and Form 12), v1.2
 
 Built by Michael Cutajar and the OpenAccountants team. Source-cited draft: not reviewed by an accountant.
 
@@ -90,6 +90,13 @@ Checks before the paper goes to review: the trading turnover agrees with the VAT
 | CGT return for 2026 disposals | 31 October 2027 | same |
 
 Most people filing Form 11 must do so through ROS ([Revenue: do you need to submit a tax return?](https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/need-to-submit-a-tax-return.aspx)). Keep the ROS acknowledgement.
+
+How filing and paying on ROS works ([Revenue, Guide to Completing 2025 Pay and File Self-Assessment Returns, pages 7 to 8 and 10](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf); the 2026 guide is not yet published):
+
+- **Registering.** A taxpayer filing their own return registers for ROS in three steps: apply for a ROS Access Number (RAN), apply for a digital certificate using the RAN, then download and save the certificate with a login password.
+- **Agents.** An agent files through ROS under its TAIN and must have the client linked on the TAIN Services page. Linking a new client can take 2 to 3 working days, so do it before the deadline week.
+- **Paying.** ROS takes payment by ROS Debit Instruction, online banking, or debit or credit card. The return can be filed early with a payment date chosen up to the filing date.
+- **Attachments.** Do not send supporting documents with the return unless Revenue asks. Keep them for six years for an assurance check or audit.
 
 ## Penalties and interest
 
@@ -202,10 +209,11 @@ expected:
 | Revenue, eBrief 034/26 (ROS extension to 18 November 2026) | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-23 |
 | Revenue, guidelines for charging interest on late payment | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-23 |
 | Revenue, Earned Income Credit | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx | 2026-10-23 |
+| Revenue, Guide to Completing 2025 Pay and File Self-Assessment Returns (ROS registration, payment methods, six-year retention) | https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf | 2026-10-27 |
 | Taxes Consolidation Act 1997, section 601 as enacted (exemption against the higher-rate gains first, subsection (3)) | https://www.irishstatutebook.ie/eli/1997/act/39/section/601/enacted/en/html | 2026-10-23 |
 | Department of Social Protection, SW14 (January 2026): Class S from EUR 5,000 | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-23 |
 
-Not yet confirmed: the ROS pay and file extension date for 2026 returns (due in 2027), which Revenue has not announced; whether the Finance (No. 2) Act 2026 is enacted with the 31% CGT rate unchanged.
+Not yet confirmed: the ROS pay and file extension date for 2026 returns (due in 2027), which Revenue has not announced; whether the Finance (No. 2) Act 2026 is enacted with the 31% CGT rate unchanged; the earlier version's rule that credits above the year's liability are refunded only where they are PAYE or professional services withholding tax backed by the employment detail summary or Form F45 or F50 certificates, which no saved Revenue source or section of the Taxes Consolidation Act 1997 checked here states in those terms.
 
 > Contributed by Michael Cutajar.
 
@@ -229,4 +237,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
