@@ -26,7 +26,7 @@ Calendar income year. Authority: Skatteetaten (skatteetaten.no); statutes on lov
 | SC, social contributions | no-social-contributions | sourced from the law |
 | PR, payroll withholding | no-employer-payroll | checked against the law |
 | TP, transfer pricing | no-transfer-pricing | checked against the law |
-| XB, cross-border | no-individual-residence, norway-to-switzerland-wealth-tax-exit (tax year 2025) | checked against the law (no-individual-residence) |
+| XB, cross-border | no-individual-residence, norway-to-switzerland-wealth-tax-exit | checked against the law |
 
 Also in the pack: no-tax-overview and no-company-formation (both tax year 2025).
 
