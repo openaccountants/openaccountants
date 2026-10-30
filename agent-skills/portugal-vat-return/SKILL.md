@@ -7,12 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/portugal-vat-return"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-10-27"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Portugal VAT (IVA): rates, thresholds, returns and penalties, tax year 2026 v2.1
+# Portugal VAT (IVA): rates, thresholds, returns and penalties, tax year 2026 v2.2
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Portugal.
 
@@ -55,7 +55,15 @@ metadata:
 - **Where a supply takes place inside Portugal matters.** Supplies treated as made in the Azores or Madeira take the regional rates (art. 18(3)).
 - **Exempt supplies.** Art. 9 lists the exemptions without deduction (for example health, education, most financial services and letting of property). A business with mixed supplies apportions input VAT.
 - **Customer pays the VAT (autoliquidação).** The Portuguese business customer self-assesses VAT on: services bought from suppliers not established in Portugal under the general rule (art. 2(1)(e)); construction work, including renovation, repair, maintenance and demolition, done under contract or subcontract for a customer with a right to deduct (art. 2(1)(j)); from 1 July 2026 (or 1 January 2026 by joint option) also for a customer with only exempt operations when it buys item 2.42 construction or renovation works (art. 2(1)(j) as amended by DL 97/2026); Annex E goods such as scrap (art. 2(1)(i)); emission rights (art. 2(1)(l)); and cork, wood, pine cones and pine nuts in shell (art. 2(1)(m)).
-- **Input VAT.** Deductible on goods and services bought for taxable operations with a valid invoice (art. 19-20). Not deductible (art. 21(1)): buying, leasing, using or repairing passenger cars, pleasure boats, aircraft and motorcycles; fuel for ordinary vehicles, except that 50% of the VAT on diesel, LPG, natural gas and biofuels is deductible; business travel and tolls; accommodation, food, drink, tobacco and reception costs. Exceptions are in art. 21(2).
+- **Input VAT.** Deductible on goods and services bought for taxable operations with a valid invoice (art. 19-20). Not deductible (art. 21(1)): buying, leasing, using or repairing passenger cars, pleasure boats, aircraft and motorcycles; fuel for ordinary vehicles, except that 50% of the VAT on diesel, LPG, natural gas and biofuels is deductible; business travel and tolls; accommodation, food, drink, tobacco and reception costs. Exceptions are in art. 21(2), among them:
+  - **Electric and plug-in hybrid cars.** VAT on buying, making, importing, leasing or converting a light passenger or mixed car that is electric or plug-in hybrid is deductible where its acquisition cost does not exceed the limit in the ordinance under CIRC art. 34(1)(e) (art. 21(2)(f)). VAT on electricity used in electric or plug-in hybrid cars is deductible (art. 21(2)(h)).
+  - **LPG and natural gas (GNV) cars.** 50% of the VAT on the same costs, within the same cost limit (art. 21(2)(g)).
+  - **Fuel for heavy and working vehicles.** VAT on diesel, petrol, LPG, natural gas and biofuels is fully deductible for heavy passenger vehicles, farm tractors, goods vehicles over 3,500 kg and the other vehicles listed in art. 21(1)(b).
+  - **Events.** Travel, accommodation, food and drink (not tobacco) bought for the direct needs of participants when organising congresses, fairs, exhibitions, seminars, conferences and similar: 50% deductible (art. 21(2)(d)). Travel, accommodation, food and drink for attending such events, under contracts made directly with the organiser: 25% deductible (art. 21(2)(e)). Both need the contract made directly with the provider or organiser and proof that the cost contributes to taxable operations.
+  - **Goods sold or let as the business, staff canteens, and costs recharged to a third party** (art. 21(2)(a) to (c)).
+- **Gifts and samples.** Giving away business goods on which VAT was deducted is a taxable supply (art. 3(3)(f)). Not when the gift has a unit value of EUR 50 or less and all such gifts in the year total no more than five per thousand of the previous calendar year's turnover, nor for samples (art. 3(7)). A new business uses its expected turnover (art. 3(8)).
+- **Capital goods (bens do ativo imobilizado).** Where a business deducts by a percentage (pro rata), the deduction on movable capital goods is reviewed in the year use starts and each of the next 4 years, and on immovable property in the year of occupation and each of the next 19 years, whenever the definitive percentage moves by 5 percentage points or more from the year of acquisition; each year's adjustment is one fifth or one twentieth of the difference (art. 24(1) to (3)). Goods with a unit value below EUR 2,500, or with a useful life under five years, are not adjusted (art. 24(7)). A sale during the period triggers a one-off adjustment for the remaining years (art. 24(5)). Adjustments go in the return for the last period of the year (art. 24(8)).
+- **Letting business premises with VAT.** Letting of property is exempt (art. 9(29)), but a landlord letting urban buildings or units to taxable persons that use them wholly or mainly for activities with a right to deduct may waive the exemption and charge VAT (art. 12(4)), on the terms of the special legislation (art. 12(6)). The same waiver exists for sales of such property and building land (art. 12(5)).
 - **Credits.** An excess of deductible VAT is carried forward to later periods (art. 22(4)). Refunds are covered under Deadlines and filing.
 
 **Classifying transactions.** Plain sorting rules, each tied to the article above.
@@ -171,6 +179,9 @@ expected:
 | CIVA art. 2 (taxable persons, self-assessment) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva2.aspx | 2026-10-23 |
 | CIVA art. 18 (rates) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx | 2026-10-23 |
 | CIVA Lists I and II | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/c-iva-listas.aspx | 2026-10-23 |
+| CIVA art. 3 (supplies of goods, gifts and samples) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva3.aspx | 2026-10-27 |
+| CIVA art. 12 (waiver of exemption, letting) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva12.aspx | 2026-10-27 |
+| CIVA art. 24 (capital goods adjustments) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva24.aspx | 2026-10-27 |
 | CIVA art. 19 and 21 (deduction and exclusions) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva21.aspx | 2026-10-23 |
 | CIVA art. 22 (credits and refunds) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva22.aspx | 2026-10-23 |
 | CIVA art. 27 (payment deadlines) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva27.aspx | 2026-10-23 |
@@ -188,7 +199,7 @@ expected:
 | LGT art. 57 (deadlines) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt57.aspx | 2026-10-23 |
 | RGIT art. 29, 114 and 116 (fines) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit114.aspx | 2026-10-23 |
 
-Not yet confirmed: the 2026 late-interest rate (secondary sources give 7.221% under IGCP Aviso 18/2026/2, but the Diário da República page did not render and no official copy was read) and whether it runs by day or by month; whether the Azores 2026 regional budget changed the Azores rates (the Azores budget was not read); whether the supply that takes turnover past the 25% margin is itself taxed or only later supplies; that the AT calendar shows 21 September 2026 and 22 February 2027 (the move follows from CPPT art. 20(1); the AT calendar itself was not read); the deadline for reporting invoice data to AT (left to portugal-einvoice); the return-form changes made by Portaria 298/2026/1 (published 16 July 2026, mostly for periods from 1 July 2027) are not described here.
+Not yet confirmed: the box (campo) numbers of the periodic return (earlier versions listed fields 1 to 41, for example 1/2 standard-rate sales and VAT, 7 exempt with deduction, 16/17 self-assessed services, 21 to 23 deductible VAT on capital goods, stock and other, 40/41 payable or credit; the 2026 form instructions were not read and Portaria 298/2026/1 changes the form); the car cost limit in the ordinance under CIRC art. 34(1)(e), which decides art. 21(2)(f) and (g) (not read); the 2026 late-interest rate (secondary sources give 7.221% under IGCP Aviso 18/2026/2, but the Diário da República page did not render and no official copy was read) and whether it runs by day or by month; whether the Azores 2026 regional budget changed the Azores rates (the Azores budget was not read); whether the supply that takes turnover past the 25% margin is itself taxed or only later supplies; that the AT calendar shows 21 September 2026 and 22 February 2027 (the move follows from CPPT art. 20(1); the AT calendar itself was not read); the deadline for reporting invoice data to AT (left to portugal-einvoice); the return-form changes made by Portaria 298/2026/1 (published 16 July 2026, mostly for periods from 1 July 2027) are not described here.
 
 > Contributed by Michael Cutajar.
 
@@ -212,4 +223,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

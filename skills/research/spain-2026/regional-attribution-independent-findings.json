@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "verdict": "PASS bounded positive-income attributable-tax delta",
+  "actionable_findings": [],
+  "guide_sha256": "a68b6eb27a849eb86105799f5744717d29c2296814d9f8bdb2c647fb56cdf8b1",
+  "guide_bytes": 462410,
+  "I03": "PARTIAL",
+  "country": "PARTIAL",
+  "ordinary_open_boundaries": [
+    "N>G signed-income/loss allocation",
+    "wage/thalidomide shared employment expenses and reductions",
+    "new Balearic3sexties combined versus regional-only average rate"
+  ],
+  "empirical_scope": "writer's15public2025OPENobservations reviewed; not independently replayed or treated as2026campaign",
+  "attestation": false
+}

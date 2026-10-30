@@ -1,0 +1,218 @@
+[
+  {
+    "artifact": "sources/aeat-both-eleven-233-31-live.json",
+    "case": "aeat-both-eleven-233-31-live",
+    "values": {
+      "calculadoraTipo": "3",
+      "inputEjercicio0": "2026",
+      "inputPorcP0": "51",
+      "ejercicioA0": "2023",
+      "ejercicioB10": "",
+      "ejercicioB20": "",
+      "inputJ0": "40",
+      "inputK0": "21.000",
+      "inputL0": "50",
+      "Afectacion0": "61"
+    },
+    "checked": [
+      "radioMIinmueble0",
+      "radioEjercicioA0",
+      "radioUsoBienSiNoDD0",
+      "radioSi0"
+    ],
+    "actual_output": "233,31\t233,31",
+    "sha256": "5db370acb6207ff302f28d8b54edd936db82ee770017aaa2246089cb5b615b95"
+  },
+  {
+    "artifact": "sources/aeat-delayed10pointzero-live.json",
+    "case": "aeat-delayed10pointzero-live",
+    "values": {
+      "calculadoraTipo": "3",
+      "inputEjercicio0": "2026",
+      "inputPorcP0": "50",
+      "ejercicioA0": "",
+      "ejercicioB10": "2026",
+      "ejercicioB20": "",
+      "inputJ0": "40",
+      "inputK0": "21.000",
+      "inputL0": "100",
+      "Afectacion0": ""
+    },
+    "checked": [
+      "radioMIinmueble0",
+      "radioEjercicioB0",
+      "radioUsoBienSiNoDD0",
+      "radioNo0"
+    ],
+    "actual_output": "0\t0",
+    "sha256": "878c234c31704610a1b8144c906e8599f9f8b8f70147ca60ebad34be165993a9"
+  },
+  {
+    "artifact": "sources/aeat-delayed420-live.json",
+    "case": "aeat-delayed420-live",
+    "values": {
+      "calculadoraTipo": "3",
+      "inputEjercicio0": "2026",
+      "inputPorcP0": "60",
+      "ejercicioA0": "",
+      "ejercicioB10": "2026",
+      "ejercicioB20": "",
+      "inputJ0": "40",
+      "inputK0": "21.000",
+      "inputL0": "100",
+      "Afectacion0": ""
+    },
+    "checked": [
+      "radioMIinmueble0",
+      "radioEjercicioB0",
+      "radioUsoBienSiNoDD0",
+      "radioNo0"
+    ],
+    "actual_output": "420\t420",
+    "sha256": "f544c374bc8dfbb0c73f8bd62ace43853dc47a0e7f4f785781386055339c1bf5"
+  },
+  {
+    "artifact": "sources/aeat-joint-462-live.json",
+    "case": "aeat-joint-462-live",
+    "values": {
+      "calculadoraTipo": "3",
+      "inputEjercicio0": "2026",
+      "inputPorcP0": "60",
+      "ejercicioA0": "2023",
+      "ejercicioB10": "",
+      "ejercicioB20": "",
+      "inputJ0": "40",
+      "inputK0": "21.000",
+      "inputL0": "50",
+      "Afectacion0": "70"
+    },
+    "checked": [
+      "radioMIinmueble0",
+      "radioEjercicioA0",
+      "radioUsoBienSiNoDD0",
+      "radioSi0"
+    ],
+    "actual_output": "462\t462",
+    "sha256": "eb7baf98314baac48263454e0c139feb0ff657cea84fa596e4903fa363a7029d"
+  },
+  {
+    "artifact": "sources/aeat-joint-minus462-live.json",
+    "case": "aeat-joint-minus462-live",
+    "values": {
+      "calculadoraTipo": "3",
+      "inputEjercicio0": "2026",
+      "inputPorcP0": "40",
+      "ejercicioA0": "2023",
+      "ejercicioB10": "",
+      "ejercicioB20": "",
+      "inputJ0": "60",
+      "inputK0": "21.000",
+      "inputL0": "70",
+      "Afectacion0": "50"
+    },
+    "checked": [
+      "radioMIinmueble0",
+      "radioEjercicioA0",
+      "radioUsoBienSiNoDD0",
+      "radioSi0"
+    ],
+    "actual_output": "-462\t-462",
+    "sha256": "182d81e3d00fb785d6ef20e1991b093159b1b993acf264f34a74b67191940401"
+  },
+  {
+    "artifact": "sources/aeat-joint-opposite42-live.json",
+    "case": "aeat-joint-opposite42-live",
+    "values": {
+      "calculadoraTipo": "3",
+      "inputEjercicio0": "2026",
+      "inputPorcP0": "60",
+      "ejercicioA0": "2023",
+      "ejercicioB10": "",
+      "ejercicioB20": "",
+      "inputJ0": "40",
+      "inputK0": "21.000",
+      "inputL0": "70",
+      "Afectacion0": "50"
+    },
+    "checked": [
+      "radioMIinmueble0",
+      "radioEjercicioA0",
+      "radioUsoBienSiNoDD0",
+      "radioSi0"
+    ],
+    "actual_output": "42\t42",
+    "sha256": "2acac502ee05724aa52631256054eb4a68ba07078011432167b3efd1ba0ff708"
+  },
+  {
+    "artifact": "sources/aeat-one-gate210-live.json",
+    "case": "aeat-one-gate210-live",
+    "values": {
+      "calculadoraTipo": "3",
+      "inputEjercicio0": "2026",
+      "inputPorcP0": "60",
+      "ejercicioA0": "2023",
+      "ejercicioB10": "",
+      "ejercicioB20": "",
+      "inputJ0": "40",
+      "inputK0": "21.000",
+      "inputL0": "50",
+      "Afectacion0": "60"
+    },
+    "checked": [
+      "radioMIinmueble0",
+      "radioEjercicioA0",
+      "radioUsoBienSiNoDD0",
+      "radioSi0"
+    ],
+    "actual_output": "210\t210",
+    "sha256": "ab304fff8901d874cbea49f441e215a3a3ebb8b254b26e2b4b455e08625fc262"
+  },
+  {
+    "artifact": "sources/aeat-separate-gates-zero-live.json",
+    "case": "aeat-separate-gates-zero-live",
+    "values": {
+      "calculadoraTipo": "3",
+      "inputEjercicio0": "2026",
+      "inputPorcP0": "90",
+      "ejercicioA0": "2023",
+      "ejercicioB10": "",
+      "ejercicioB20": "",
+      "inputJ0": "80",
+      "inputK0": "21.000",
+      "inputL0": "80",
+      "Afectacion0": "90"
+    },
+    "checked": [
+      "radioMIinmueble0",
+      "radioEjercicioA0",
+      "radioUsoBienSiNoDD0",
+      "radioSi0"
+    ],
+    "actual_output": "0\t0",
+    "sha256": "ba48bd7db23de4b51548e30da1d713fe5c7a54725d46f3fd462b65b29c52153f"
+  },
+  {
+    "artifact": "sources/aeat-use-only-anomaly525-live.json",
+    "case": "aeat-use-only-anomaly525-live",
+    "values": {
+      "calculadoraTipo": "3",
+      "inputEjercicio0": "2026",
+      "inputPorcP0": "40",
+      "ejercicioA0": "2023",
+      "ejercicioB10": "",
+      "ejercicioB20": "",
+      "inputJ0": "40",
+      "inputK0": "21.000",
+      "inputL0": "50",
+      "Afectacion0": "75"
+    },
+    "checked": [
+      "radioMIinmueble0",
+      "radioEjercicioA0",
+      "radioUsoBienSiNoDD0",
+      "radioSi0"
+    ],
+    "actual_output": "525\t525",
+    "sha256": "0f6783380c37f9001860a84ec68fe5f52adc563387759b2cd34c1e6c863ef8cb"
+  }
+]

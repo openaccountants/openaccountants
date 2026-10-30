@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2068,
+ "count": 2115,
  "jurisdictions": [
   "AD",
   "AE",
@@ -320,7 +320,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ad-income-tax",
@@ -329,7 +329,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "ad-non-resident-income-tax",
+   "jurisdiction": "AD",
+   "path": "skills/international/andorra/ad-non-resident-income-tax.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ad-payroll-social",
@@ -338,7 +347,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ad-tax-overview",
@@ -348,6 +357,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
+  },
+  {
+   "name": "ad-transfer-pricing",
+   "jurisdiction": "AD",
+   "path": "skills/international/andorra/ad-transfer-pricing.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "administrative-obligations-for-employers-in-the-netherlands",
@@ -662,7 +680,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "am-corporate-income-tax",
@@ -671,7 +689,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "am-cross-border",
+   "jurisdiction": "AM",
+   "path": "skills/international/armenia/am-cross-border.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "am-tax-overview",
@@ -680,7 +707,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "am-transfer-pricing",
+   "jurisdiction": "AM",
+   "path": "skills/international/armenia/am-transfer-pricing.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "amazon-seller-integration",
@@ -695,8 +731,8 @@
    "name": "amending-an-individual-income-tax-return-in-australia",
    "jurisdiction": "AU",
    "path": "skills/international/australia/amending-an-individual-income-tax-return-in-australia.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": null
   },
@@ -716,7 +752,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ao-company-formation",
@@ -878,7 +914,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "armenia-payroll",
@@ -887,7 +923,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "armenia-social-contributions",
@@ -896,7 +932,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "armenia-tax-optimization",
@@ -905,7 +941,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "armenia-vat",
@@ -914,7 +950,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "asia-pacific-corridors",
@@ -1037,8 +1073,8 @@
    "name": "au-capital-gains-2",
    "jurisdiction": "AU",
    "path": "skills/international/australia/au-capital-gains-2.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": null
   },
@@ -1064,8 +1100,8 @@
    "name": "au-crypto-tax-2",
    "jurisdiction": "AU",
    "path": "skills/international/australia/au-crypto-tax-2.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": null
   },
@@ -1154,8 +1190,8 @@
    "name": "au-gst-bas",
    "jurisdiction": "AU",
    "path": "skills/international/australia/au-gst-bas.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": 2025
   },
@@ -1217,8 +1253,8 @@
    "name": "au-nonresident-cgt-2",
    "jurisdiction": "AU",
    "path": "skills/international/australia/au-nonresident-cgt-2.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": null
   },
@@ -1253,8 +1289,8 @@
    "name": "au-payg-instalments-2",
    "jurisdiction": "AU",
    "path": "skills/international/australia/au-payg-instalments-2.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": null
   },
@@ -1307,8 +1343,8 @@
    "name": "au-rental-property-2",
    "jurisdiction": "AU",
    "path": "skills/international/australia/au-rental-property-2.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": null
   },
@@ -1334,8 +1370,8 @@
    "name": "au-sole-trader-schedule",
    "jurisdiction": "AU",
    "path": "skills/international/australia/au-sole-trader-schedule.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": 2025
   },
@@ -1352,8 +1388,8 @@
    "name": "au-super-guarantee",
    "jurisdiction": "AU",
    "path": "skills/international/australia/au-super-guarantee.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": 2026
   },
@@ -1370,8 +1406,8 @@
    "name": "au-tax-residency-2",
    "jurisdiction": "AU",
    "path": "skills/international/australia/au-tax-residency-2.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": null
   },
@@ -1433,8 +1469,8 @@
    "name": "australia-financial-statements-2",
    "jurisdiction": "AU",
    "path": "skills/international/australia/australia-financial-statements-2.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": null
   },
@@ -1451,8 +1487,8 @@
    "name": "australia-formation-2",
    "jurisdiction": "AU",
    "path": "skills/international/australia/australia-formation-2.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": null
   },
@@ -1487,8 +1523,8 @@
    "name": "australia-tax-optimization-2",
    "jurisdiction": "AU",
    "path": "skills/international/australia/australia-tax-optimization-2.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": null
   },
@@ -1496,8 +1532,8 @@
    "name": "australia-transfer-pricing",
    "jurisdiction": "AU",
    "path": "skills/international/australia/australia-transfer-pricing.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ryan Duguid",
    "reviewed_by": null,
    "tax_year": 2025
   },
@@ -2201,7 +2237,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "bg-cross-border",
@@ -2813,7 +2849,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "bulgaria-payroll",
@@ -2822,7 +2858,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "bulgaria-social-contributions",
@@ -2831,7 +2867,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "bulgaria-tax-optimization",
@@ -2849,7 +2885,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "bvi-tax",
@@ -4001,7 +4037,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "croatia-payroll",
@@ -4010,7 +4046,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "croatia-social-contributions",
@@ -4019,7 +4055,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "croatia-tax-optimization",
@@ -4037,7 +4073,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "cross-border-invoicing-compliance",
@@ -4616,11 +4652,29 @@
    "tax_year": 2026
   },
   {
+   "name": "de-payroll-benefits",
+   "jurisdiction": "DE",
+   "path": "skills/international/germany/de-payroll-benefits.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "de-rental-income",
    "jurisdiction": "DE",
    "path": "skills/international/germany/de-rental-income.md",
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": "Michael Cutajar and the OpenAccountants team",
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "de-self-employed-income-tax",
+   "jurisdiction": "DE",
+   "path": "skills/international/germany/de-self-employed-income-tax.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
   },
@@ -5153,7 +5207,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "ee-cross-border",
+   "jurisdiction": "EE",
+   "path": "skills/international/estonia/ee-cross-border.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ee-tax-overview",
@@ -5163,6 +5226,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
+  },
+  {
+   "name": "ee-transfer-pricing",
+   "jurisdiction": "EE",
+   "path": "skills/international/estonia/ee-transfer-pricing.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "eg-ae-dtt-corridor",
@@ -5441,13 +5513,31 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "es-canary-islands-igic",
+   "jurisdiction": "ES",
+   "path": "skills/international/spain/es-canary-islands-igic.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "es-capital-gains",
    "jurisdiction": "ES",
    "path": "skills/international/spain/es-capital-gains.md",
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "es-ceuta-melilla-ipsi",
+   "jurisdiction": "ES",
+   "path": "skills/international/spain/es-ceuta-melilla-ipsi.md",
+   "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
@@ -5471,6 +5561,42 @@
    "tax_year": 2026
   },
   {
+   "name": "es-foral-corporate-tax",
+   "jurisdiction": "ES",
+   "path": "skills/international/spain/es-foral-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "es-foral-income-tax",
+   "jurisdiction": "ES",
+   "path": "skills/international/spain/es-foral-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "es-foral-non-resident-tax",
+   "jurisdiction": "ES",
+   "path": "skills/international/spain/es-foral-non-resident-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "es-foral-payroll",
+   "jurisdiction": "ES",
+   "path": "skills/international/spain/es-foral-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "es-income-tax",
    "jurisdiction": "ES",
    "path": "skills/international/spain/es-income-tax.md",
@@ -5486,7 +5612,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "es-modelo-111",
@@ -5495,7 +5621,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "es-non-resident-income-tax-irnr-and",
@@ -5549,7 +5675,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "estonia-social-contributions",
@@ -5558,7 +5684,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "estonia-tax-optimization",
@@ -5759,13 +5885,31 @@
    "tax_year": 2025
   },
   {
+   "name": "fi-annual-real-estate-tax",
+   "jurisdiction": "FI",
+   "path": "skills/international/finland/fi-annual-real-estate-tax.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "fi-company-formation",
    "jurisdiction": "FI",
    "path": "skills/international/finland/fi-company-formation.md",
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "fi-corporate-cross-border-tax",
+   "jurisdiction": "FI",
+   "path": "skills/international/finland/fi-corporate-cross-border-tax.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "fi-corporate-income-tax",
@@ -5774,7 +5918,25 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "fi-country-by-country-reporting",
+   "jurisdiction": "FI",
+   "path": "skills/international/finland/fi-country-by-country-reporting.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "fi-employer-payroll",
+   "jurisdiction": "FI",
+   "path": "skills/international/finland/fi-employer-payroll.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "fi-income-tax",
@@ -5783,7 +5945,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "fi-individual-cross-border-residence",
+   "jurisdiction": "FI",
+   "path": "skills/international/finland/fi-individual-cross-border-residence.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "fi-prepayments",
@@ -5795,13 +5966,31 @@
    "tax_year": 2026
   },
   {
+   "name": "fi-property-transfer-tax",
+   "jurisdiction": "FI",
+   "path": "skills/international/finland/fi-property-transfer-tax.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "fi-tax-overview",
    "jurisdiction": "FI",
    "path": "skills/international/finland/fi-tax-overview.md",
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "fi-transfer-pricing",
+   "jurisdiction": "FI",
+   "path": "skills/international/finland/fi-transfer-pricing.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "fi-yel-social",
@@ -6569,11 +6758,38 @@
    "tax_year": 2026
   },
   {
+   "name": "gg-company-accounts-and-reporting",
+   "jurisdiction": "GG",
+   "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "gg-company-formation",
+   "jurisdiction": "GG",
+   "path": "skills/international/guernsey/gg-company-formation.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "gg-corporate-tax-substance",
    "jurisdiction": "GG",
    "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
    "trust_label": "Accountant-authored",
    "authored_by": "Ryan Duguid",
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "gg-gst-transition",
+   "jurisdiction": "GG",
+   "path": "skills/international/guernsey/gg-gst-transition.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
   },
@@ -6592,6 +6808,42 @@
    "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
    "trust_label": "Accountant-authored",
    "authored_by": "Ryan Duguid",
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "gg-property-document-duty",
+   "jurisdiction": "GG",
+   "path": "skills/international/guernsey/gg-property-document-duty.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "gg-secondary-pensions",
+   "jurisdiction": "GG",
+   "path": "skills/international/guernsey/gg-secondary-pensions.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "gg-transfer-pricing-and-connected-transactions",
+   "jurisdiction": "GG",
+   "path": "skills/international/guernsey/gg-transfer-pricing-and-connected-transactions.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "gg-uk-treaty-employment-and-relief",
+   "jurisdiction": "GG",
+   "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
   },
@@ -7367,7 +7619,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "hr-cross-border",
+   "jurisdiction": "HR",
+   "path": "skills/international/croatia/hr-cross-border.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "hr-tax-overview",
@@ -7736,7 +7997,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ie-cgt",
@@ -9287,13 +9548,40 @@
    "tax_year": 2025
   },
   {
+   "name": "ks-corporate-income-tax",
+   "jurisdiction": "US-KS",
+   "path": "skills/us-states/ks/ks-corporate-income-tax.md",
+   "trust_label": "Accountant-authored",
+   "authored_by": "Jeff Watts",
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "ks-cross-border",
+   "jurisdiction": "US-KS",
+   "path": "skills/us-states/ks/ks-cross-border.md",
+   "trust_label": "Accountant-authored",
+   "authored_by": "Jeff Watts",
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ks-income-tax",
    "jurisdiction": "US-KS",
    "path": "skills/us-states/ks/ks-income-tax.md",
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "ks-payroll",
+   "jurisdiction": "US-KS",
+   "path": "skills/us-states/ks/ks-payroll.md",
+   "trust_label": "Accountant-authored",
+   "authored_by": "Jeff Watts",
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ks-sales-tax",
@@ -9302,7 +9590,25 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "ks-social-contributions",
+   "jurisdiction": "US-KS",
+   "path": "skills/us-states/ks/ks-social-contributions.md",
+   "trust_label": "Accountant-authored",
+   "authored_by": "Jeff Watts",
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "ks-transfer-pricing",
+   "jurisdiction": "US-KS",
+   "path": "skills/us-states/ks/ks-transfer-pricing.md",
+   "trust_label": "Accountant-authored",
+   "authored_by": "Jeff Watts",
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "kuwait-tax",
@@ -9626,7 +9932,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "latvia-payroll",
@@ -9635,7 +9941,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "latvia-social-contributions",
@@ -9644,7 +9950,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "latvia-tax-optimization",
@@ -9662,7 +9968,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "lb-company-formation",
@@ -9869,7 +10175,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "lithuania-vat-return",
@@ -9878,7 +10184,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "lr-company-formation",
@@ -10004,7 +10310,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "lt-cross-border",
+   "jurisdiction": "LT",
+   "path": "skills/international/lithuania/lt-cross-border.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "lt-payroll-social",
@@ -10013,7 +10328,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "lt-tax-overview",
@@ -10023,6 +10338,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
+  },
+  {
+   "name": "lt-transfer-pricing",
+   "jurisdiction": "LT",
+   "path": "skills/international/lithuania/lt-transfer-pricing.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "lu-corporate-tax",
@@ -10112,7 +10436,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "lv-cross-border",
+   "jurisdiction": "LV",
+   "path": "skills/international/latvia/lv-cross-border.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "lv-tax-overview",
@@ -10122,6 +10455,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
+  },
+  {
+   "name": "lv-transfer-pricing",
+   "jurisdiction": "LV",
+   "path": "skills/international/latvia/lv-transfer-pricing.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ly-company-formation",
@@ -10346,7 +10688,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "malta-financial-statements",
@@ -10364,7 +10706,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "malta-income-tax",
@@ -10397,10 +10739,10 @@
    "name": "malta-tax-optimization",
    "jurisdiction": "MT",
    "path": "skills/international/malta/malta-tax-optimization.md",
-   "trust_label": "Checked by Michael Cutajar, CPA (Malta)",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
-   "reviewed_by": "Michael Cutajar, CPA (Malta)",
-   "tax_year": 2025
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "malta-transfer-pricing",
@@ -10472,7 +10814,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mc-corporate-income-tax",
@@ -10481,7 +10823,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "mc-cross-border",
+   "jurisdiction": "MC",
+   "path": "skills/international/monaco/mc-cross-border.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "mc-income-tax",
@@ -10490,7 +10841,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mc-payroll-social",
@@ -10499,7 +10850,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mc-tax-overview",
@@ -10508,7 +10859,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "mc-transfer-pricing",
+   "jurisdiction": "MC",
+   "path": "skills/international/monaco/mc-transfer-pricing.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "md-company-formation",
@@ -11165,7 +11525,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mongolia-vat",
@@ -11465,6 +11825,15 @@
    "tax_year": 2026
   },
   {
+   "name": "mt-global-residence-programme",
+   "jurisdiction": "MT",
+   "path": "skills/international/malta/mt-global-residence-programme.md",
+   "trust_label": "Accountant-authored",
+   "authored_by": "Michael Spiteri Staines",
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "mt-holding-company-participation-exemption",
    "jurisdiction": "MT",
    "path": "skills/international/malta/mt-holding-company-participation-exemption.md",
@@ -11492,11 +11861,29 @@
    "tax_year": 2026
   },
   {
+   "name": "mt-nomad-residence-permit",
+   "jurisdiction": "MT",
+   "path": "skills/international/malta/mt-nomad-residence-permit.md",
+   "trust_label": "Accountant-authored",
+   "authored_by": "Michael Spiteri Staines",
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "mt-non-dom",
    "jurisdiction": "MT",
    "path": "skills/international/malta/mt-non-dom.md",
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": "Michael Cutajar and the OpenAccountants team",
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "mt-permanent-residence-programme",
+   "jurisdiction": "MT",
+   "path": "skills/international/malta/mt-permanent-residence-programme.md",
+   "trust_label": "Accountant-authored",
+   "authored_by": "Michael Spiteri Staines",
    "reviewed_by": null,
    "tax_year": 2026
   },
@@ -14117,7 +14504,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "qa-corporate-income-tax",
@@ -14126,7 +14513,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "qa-cross-border-tax",
+   "jurisdiction": "QA",
+   "path": "skills/international/qatar/qa-cross-border-tax.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "qa-payroll-social",
@@ -14135,7 +14531,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "qa-tax-overview",
@@ -14144,7 +14540,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "qa-transfer-pricing",
+   "jurisdiction": "QA",
+   "path": "skills/international/qatar/qa-transfer-pricing.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "qa-vat-gst",
@@ -14153,7 +14558,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "qatar-tax",
@@ -14162,7 +14567,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "qc-corporate-tax-co17",
@@ -14834,8 +15239,8 @@
    "name": "sd-vat-gst",
    "jurisdiction": "SD",
    "path": "skills/international/sudan/sd-vat-gst.md",
-   "trust_label": null,
-   "authored_by": null,
+   "trust_label": "Accountant-authored",
+   "authored_by": "Ahmed Hassan",
    "reviewed_by": null,
    "tax_year": 2025
   },
@@ -15143,7 +15548,16 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "si-cross-border",
+   "jurisdiction": "SI",
+   "path": "skills/international/slovenia/si-cross-border.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "si-tax-overview",
@@ -15153,6 +15567,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
+  },
+  {
+   "name": "si-transfer-pricing",
+   "jurisdiction": "SI",
+   "path": "skills/international/slovenia/si-transfer-pricing.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "simplified-business-operator-registration-under-vat-act",
@@ -15251,7 +15674,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "sk-cross-border",
@@ -15278,7 +15701,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "sk-pst",
@@ -15368,7 +15791,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "slovakia-vat-registration-4-7-7a",
@@ -15395,7 +15818,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "slovenia-payroll",
@@ -15404,7 +15827,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "slovenia-social-contributions",
@@ -15413,7 +15836,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "slovenia-tax-optimization",
@@ -15431,7 +15854,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "sm-company-formation",
@@ -15620,7 +16043,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "spain-einvoice",
@@ -15674,7 +16097,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "spain-vat-return",
@@ -15683,7 +16106,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "sr-company-formation",
@@ -17184,7 +17607,7 @@
    "jurisdiction": "GB",
    "path": "skills/international/uk/uk-payments-on-account.md",
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
-   "authored_by": null,
+   "authored_by": "Michael Cutajar and the OpenAccountants team",
    "reviewed_by": null,
    "tax_year": 2026
   },

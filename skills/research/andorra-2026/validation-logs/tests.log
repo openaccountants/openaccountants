@@ -1,0 +1,215 @@
+........................................................F........EE.EE...EEE.....................................................
+======================================================================
+ERROR: test_invalid_content_revision_fails (test_sync_integrity.GitBackedIntegrityTests.test_invalid_content_revision_fails)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp7ntwv410/skills/foundation/synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp7ntwv410'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/tests/test_sync_integrity.py", line 401, in test_invalid_content_revision_fails
+    findings, _ = sync_integrity.run_integrity_check(
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", provenance
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/synthetic-guide.md'
+
+======================================================================
+ERROR: test_matching_blob_provenance_allows_forward_render (test_sync_integrity.GitBackedIntegrityTests.test_matching_blob_provenance_allows_forward_render)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp8kyoain9/skills/foundation/synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp8kyoain9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/tests/test_sync_integrity.py", line 306, in test_matching_blob_provenance_allows_forward_render
+    findings, count = sync_integrity.run_integrity_check(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", provenance
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/synthetic-guide.md'
+
+======================================================================
+ERROR: test_missing_provenance_fails_closed (test_sync_integrity.GitBackedIntegrityTests.test_missing_provenance_fails_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp3dguuade/skills/foundation/synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp3dguuade'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/tests/test_sync_integrity.py", line 361, in test_missing_provenance_fails_closed
+    findings, _ = sync_integrity.run_integrity_check(
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", {}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/synthetic-guide.md'
+
+======================================================================
+ERROR: test_new_guide_requires_null_blob_and_valid_revision (test_sync_integrity.GitBackedIntegrityTests.test_new_guide_requires_null_blob_and_valid_revision)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp3qraif3b/skills/foundation/new-synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp3qraif3b'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/tests/test_sync_integrity.py", line 382, in test_new_guide_requires_null_blob_and_valid_revision
+    findings, count = sync_integrity.run_integrity_check(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", provenance
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/new-synthetic-guide.md'
+
+======================================================================
+ERROR: test_source_rename_fails_strict_main_audit (test_sync_integrity.GitBackedIntegrityTests.test_source_rename_fails_strict_main_audit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmpcuaj6hii/skills/foundation/renamed-synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmpcuaj6hii'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/tests/test_sync_integrity.py", line 597, in test_source_rename_fails_strict_main_audit
+    findings, count = sync_integrity.run_integrity_check(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo,
+        ^^^^^^^^^^
+    ...<3 lines>...
+        strict_metadata=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/renamed-synthetic-guide.md'
+
+======================================================================
+ERROR: test_stale_blob_provenance_fails_closed (test_sync_integrity.GitBackedIntegrityTests.test_stale_blob_provenance_fails_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp4k7rudmj/skills/foundation/synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp4k7rudmj'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/tests/test_sync_integrity.py", line 324, in test_stale_blob_provenance_fails_closed
+    findings, _ = sync_integrity.run_integrity_check(
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", provenance
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/synthetic-guide.md'
+
+======================================================================
+ERROR: test_sync_preflight_rejects_malformed_yaml_before_publication (test_sync_integrity.GitBackedIntegrityTests.test_sync_preflight_rejects_malformed_yaml_before_publication)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmpepg9etr7/skills/foundation/synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmpepg9etr7'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/tests/test_sync_integrity.py", line 345, in test_sync_preflight_rejects_malformed_yaml_before_publication
+    findings, count = sync_integrity.run_integrity_check(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", provenance
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/synthetic-guide.md'
+
+======================================================================
+FAIL: test_human_commit_without_file_attributes_reaches_platform (test_ingest_workflow.IngestWorkflowTests.test_human_commit_without_file_attributes_reaches_platform)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/andorra-continuation/country/tests/test_ingest_workflow.py", line 64, in test_human_commit_without_file_attributes_reaches_platform
+    self.assertEqual(result.returncode, 0, result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : CAPTURED_BODY={"headSha":"head","paths":["skills/example.md","skills/new.md","skills/renamed.md"],"authors":[{"name":"Contributor","email":"person@example.test","login":"contributor"},{"name":"Sync","email":"sync@openaccountants.com","login":null}]}
+/bin/bash: line 57: RUNNER_TEMP: unbound variable
+
+
+----------------------------------------------------------------------
+Ran 129 tests in 7.358s
+
+FAILED (failures=1, errors=7)

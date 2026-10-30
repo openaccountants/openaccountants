@@ -1,263 +1,186 @@
 ---
 name: ie-prsi-class-s
-description: Use this skill whenever asked about Irish PRSI Class S contributions for self-employed individuals. Trigger on phrases like "PRSI self-employed", "Class S contributions", "how much PRSI do I pay", "PRSI calculation Ireland", "self-employed social insurance Ireland", "PRSI threshold", or any question about PRSI obligations for a self-employed client in Ireland. This skill covers Class S rates, minimum contribution, income threshold, payment schedule, interaction with income tax, and edge cases. ALWAYS read this skill before touching any Irish PRSI Class S work.
-version: 2.0
+description: "Irish PRSI Class S for the self-employed, tax year 2026, under the Social Welfare Consolidation Act 2005 as revised to 1 October 2026. Covers who pays (sole traders, partners, proprietary directors with 50% or more, people living on rent or investment income, councillors), the 4.2% rate to 30 September 2026 and 4.35% from 1 October 2026, the blended 4.2375% rate for 2026 self-assessed income and 4.125% for 2025 income, the EUR 5,000 income floor, the EUR 650 minimum, the EUR 310 no-return flat rate, payment through Form 11 and preliminary tax, directors under PAYE, the benefits Class S covers, voluntary contributions, and the late filing surcharge and 0.0219% daily interest. Trigger on 'Class S', 'PRSI self-employed', 'PRSI on rental income', 'director PRSI', 'how much PRSI do I pay'. Out of scope: employee PRSI (ie-payroll), USC (ie-usc), Class K and cross-border cases (ie-prsi-cross-border), income tax on the Form 11 (ie-income-tax-form11)."
+version: 2.1
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Ireland PRSI Class S for the self-employed
 
-This skill covers Pay Related Social Insurance (PRSI) at Class S in Ireland: who pays it, on what income, at which rate, and how it is paid through self-assessment or payroll. Figures are for tax year 2026. The Irish tax year is the calendar year. The Class S rate changed on 1 October 2026, so the rate you use depends on HOW the person pays (self-assessment or payroll) and WHICH year's income you are working on. The tables below say which rate applies to whom.
+Pay Related Social Insurance (PRSI) at Class S is the social insurance contribution of self-employed people in Ireland. The Department of Social Protection (DSP) owns the contribution; Revenue collects it with income tax and USC through self-assessment, or through payroll for proprietary directors. The contribution year is the calendar year. Section numbers are the Social Welfare Consolidation Act 2005 (SWCA) unless another act is named. The Law Reform Commission revised text read for this skill is updated to 1 October 2026 and already prints the 4.35% rate.
 
-## Section 1: Quick reference
+See also: `ie-payroll` (employee and employer PRSI, Class A), `ie-usc` (Universal Social Charge), `ie-prsi-cross-border` (Class K, A1 certificates, EU and bilateral rules), `ie-income-tax-form11` (the Form 11 return), `ie-preliminary-tax` (preliminary tax rules in depth).
 
-### Department of Social Protection, PRSI Class S Rates page (last updated 20 January 2026)
+## Who this applies to
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ |
-| Rate for 2026 self-employed income returned through Revenue self-assessment (the "blended" rate) | 4.2375% | "for 2026 income the rate will be 4.2375% or min payment of €650" |
-| Minimum annual Class S contribution | EUR 650 | "the minimum annual contribution for Class S is €650" |
-| Rate for 2025 self-employed income returned through self-assessment (the 2025 Form 11 filed in 2026). NOT the 2026 rate. | 4.125% | "a blended or proportionate rate of 4.125% or a minimum payment of €650 will apply on their self-employed 2025 annual income" |
+- **Self-employed contributors.** Every person aged over 16 and under pensionable age (66) who has reckonable income or reckonable emoluments is a self-employed contributor, whether or not they are also an employee (s.20(1)(a)(i)). A person born on or after 1 January 1958 who has reached 66 but is under 70 and has not been awarded the State Pension (Contributory) stays in Class S (s.20(1)(a)(ii)). Revenue: the change applied from 1 January 2024 and does not reach someone already getting the State Pension (Contributory) or born before 1 January 1958 ([Revenue, do you need to pay PRSI](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)).
+- **Who that covers in practice.** Sole traders, farmers, professionals, contractors and sub-contractors, partners; people whose only income is investments, rents or maintenance payments; employees who are also self-employed (Class S on top of their employee class); councillors on their local authority pay ([DSP SW74 leaflet](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)). A spouse or civil partner who takes part in the business is a Class S payer ([DSP Operational Guidelines](https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/); Sch. 1 Pt. 3 para. 1(ii)).
+- **Proprietary directors.** From 1 July 2013 a director who owns or controls 50% or more of the shares, directly or indirectly (for example through a holding company), is self-employed and pays Class S. Below 50%, DSP decides case by case under the Code of Practice on determining employment status ([DSP, PRSI and family employment](https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/)). A Class S director pays through PAYE (s.21(1)(c), s.23(3)); if the directorship is the only self-employed income, the director does not register as self-employed ([SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf); [SW74](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)). The director must check that the right PRSI was deducted and paid over ([DSP Operational Guidelines](https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/)).
+- **Excepted, so no Class S** (Sch. 1 Pt. 3):
+  - a prescribed relative who helps in the business but is not a partner, spouse or civil partner (para. 1). DSP lists son, daughter, parent, brother or sister; confirm doubtful cases with DSP Scope Section ([SW74](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf));
+  - a person on pre-retirement allowance (para. 2);
+  - a person whose total reckonable income, emoluments and earnings, before capital allowances, is below EUR 5,000 (para. 3; S.I. 312 of 1996 art. 92);
+  - an employee or occupational pensioner whose other income has no reckonable emoluments and no trade, profession or partnership income (para. 4). That income may be Class K: see `ie-prsi-cross-border`;
+  - a person in the employments in arts. 81 to 84 of S.I. 312 of 1996 (para. 5). Modified-rate public servants (Classes B, C, D) with self-employed income pay Class K on it instead ([SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf));
+  - a person not resident or not ordinarily resident whose income has no trade, profession or partnership income (para. 6). DSP applies this to non-resident directors and non-residents with only unearned income ([SW74](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)).
+- **Share fishers** classed as self-employed may add an optional Class P contribution on top of Class S. This skill does not compute Class P ([DSP Operational Guidelines](https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/)).
 
-### Department of Social Protection, SW14 PRSI Contribution Rates and User Guide, January 2026
+## Rates, bands and thresholds
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf |
-| Class S period rate, 1 January to 30 September 2026 | 4.2% | "pay Class S PRSI at the rate of 4.2% until 30 September 2026 (4.35% from 1 October 2026)" |
-| Class S period rate, from 1 October 2026 | 4.35% | "pay Class S PRSI at the rate of 4.2% until 30 September 2026 (4.35% from 1 October 2026)" |
-| Annual income at which Class S starts (this amount or more) | EUR 5,000 | "Self-employed contributors with annual income of €5,000 or over pay Class S PRSI" |
-| Voluntary contribution for a person who last paid compulsory PRSI at Class S (flat amount per contribution year) | EUR 650 | "There is a flat rate of €650 for persons who last paid PRSI at Class S" |
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Class S rate on reckonable income or emoluments, 1 January to 30 September 2026 | 4.2% | 2026 | SWCA s.21(1)(a), (c); SW (Misc. Provisions) Act 2024 s.3(2), Table items 9-10, col. 5: https://www.irishstatutebook.ie/pdf/2024/en.act.2024.0024.pdf |
+| Class S rate from 1 October 2026 | 4.35% | 2026 | SWCA s.21(1)(a), (c) as revised: https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html ; 2024 Act s.3(3), col. 6 |
+| Class S rate, 1 January to 30 September 2025 / from 1 October 2025 | 4.1% / 4.2% | 2025 | 2024 Act s.3(1), (2), cols. 4-5: https://www.irishstatutebook.ie/pdf/2024/en.act.2024.0024.pdf |
+| Enacted future steps: from 1 October 2027 / from 1 October 2028 | 4.5% / 4.7% | 2027-2028 | 2024 Act s.3(4), (5), cols. 7-8: https://www.irishstatutebook.ie/pdf/2024/en.act.2024.0024.pdf |
+| Blended rate for 2026 self-assessed income: ((4.2 x 9) + (4.35 x 3)) / 12 | 4.2375% | 2026 | SWCA s.38BA (2024 Act s.9); DSP: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ |
+| Blended rate for 2025 self-assessed income: ((4.1 x 9) + (4.2 x 3)) / 12 | 4.125% | 2025 | SWCA s.38BA; DSP: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ ; Revenue TDM 38-01-04J para. 10.2: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-38/38-01-04J.pdf |
+| Minimum annual contribution (reckonable income, emoluments, or both together) | EUR 650 | 2026 | SWCA s.21(1)(a), (c), (f); 2024 Act s.5: https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html |
+| Income floor: below this, no Class S (total before capital allowances) | under EUR 5,000 | 2026 | SWCA Sch. 1 Pt. 3 para. 3; S.I. 312 of 1996 art. 92 as amended by S.I. 684 of 2010 art. 6: https://www.irishstatutebook.ie/eli/2010/si/684/made/en/print |
+| Flat contribution where Revenue says no return is needed | EUR 310 | 2026 | SWCA s.21(1)(b): https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html |
+| Contribution linked to childcare services relief (TCA s.216C) | EUR 650 | 2026 | SWCA s.21(1)(ea): https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html |
+| Voluntary contribution, last paid at Class S | EUR 650 a year | 2026 | SWCA s.26(1) (2024 Act s.6); SW14: https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf |
+| Payroll subclasses for Class S directors: S0 weekly pay up to EUR 500, S1 over EUR 500 | same rate for both: 4.2%, then 4.35% from 1 Oct 2026 | 2026 | DSP: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ |
+| Proprietary director shareholding for Class S | 50% or more | 2026 | DSP: https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ |
+| Upper earnings limit | none (the rate applies to all reckonable income) | 2026 | SWCA s.21(1)(a): https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html |
+| Preliminary tax: lowest of 90% of current year, 100% of previous year, 105% of pre-preceding year (direct debit only) | 90% / 100% / 105% | 2026 | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx |
+| Late filing surcharge: within two months / after two months | 5% capped at EUR 12,695 / 10% capped at EUR 63,485 | 2026 | TCA s.1084; https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx |
+| Interest on late income tax, which includes Class S (s.23(4)) | 0.0219% a day | 2026 | TCA s.1080; https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf |
 
-**Which rate applies to whom (2026):**
+**Why there is a blended rate.** When a Class S rate changes during a contribution year, s.38BA sets one rate for the year: (A x C + B x D) / 12, where A and B are the two rates and C and D the months (including part months) each applied. The rate rose on 1 October in both 2025 and 2026, so C is 9 and D is 3. The DSP page prints the results: 4.125% for 2025 income and 4.2375% for 2026 income. Revenue applies the same method on the return: its manual for the 2025 ROS Form 11 sets "PRSI rate of 4.125% on all classes, Form 11" (TDM 38-01-04J para. 10.2), and the 2024 manual set the 2024 blend of 4.025% (TDM 38-01-04I). Revenue's public page "Do you need to pay PRSI?" prints only the two period rates; on a Form 11 use the blended rate.
 
-| Who | Income | Rate to use |
-| --- | --- | --- |
-| Self-employed person who returns PRSI through Revenue self-assessment (Form 11) | 2026 income (Form 11 for 2026, filed in 2027) | The blended 2026 rate in the Class S Rates table above, or the minimum, whichever is greater. Do not apply the two period rates separately. |
-| Same person | 2025 income (Form 11 for 2025, due in 2026) | The 2025 blended rate in the Class S Rates table above, or the minimum, whichever is greater. |
-| Self-employed company director whose PRSI is collected under PAYE | Pay in each week of 2026 | The period rate for the week. SW14 prints Class S as weekly pay bands with one rate per period ("Up to €500 S0 All 4.20% ... More than €500 S1 All 4.20%" to 30 September 2026; both subclasses 4.35% from 1 October 2026) and says "Self-employed company directors pay their PRSI under the PAYE system". The blended rate is printed only "For those returning PRSI through the Revenue self-assessed system". The director must check the deduction: DSP says it is "the responsibility of each company director to ensure that the correct amount of PRSI has been deducted and remitted to the Revenue Commissioners" ([DSP Operational Guidelines](https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/)). |
-| Anyone estimating 2026 preliminary tax on the current-year option | 2026 income | The 2026 blended rate, because preliminary tax is an estimate of the 2026 self-assessed liability. |
+**Directors under PAYE use the period rate.** Section 38BA does not apply to emoluments taxed under PAYE (TCA Part 42 Chapter 4; s.38BA(2)). A Class S director's payroll deducts 4.2% on pay to 30 September 2026 and 4.35% after.
 
-| Field | Value |
-| --- | --- |
-| Country | Ireland |
-| Authority | Department of Social Protection (DSP) sets the class and rate; Revenue collects Class S through self-assessment or PAYE |
-| Primary legislation | Social Welfare Consolidation Act 2005, as amended, Chapter 3 of Part II (self-employed contributors) and Part III of the First Schedule (excluded persons); Social Welfare (Consolidated Contributions and Insurability) Regulations 1996, S.I. 312 of 1996, Chapter 2 of Part II ([DSP Operational Guidelines](https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/)) |
-| Upper earnings limit | None. SW14 charges Class S "on all reckonable income". |
-| Payment method | Self-assessment (Form 11) with income tax and USC; PAYE for self-employed company directors |
-| Currency | EUR only |
+## The taxable base
 
-## Section 2: Who pays Class S, and who does not
+- **Reckonable income** is the aggregate income from all sources for the contribution year, as estimated under the Income Tax Acts, after capital allowances. It leaves out reckonable earnings and reckonable emoluments, which carry their own charge (s.2(1)). Revenue: "Your PRSI is calculated on your gross income once any capital allowances have been deducted" ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)).
+- **Income that is exempt from income tax still counts.** Reckonable income is computed without regard to TCA ss.140, 195, 216C, 216F, 231, 232 and 233 (s.2(1)). Income exempt under, for example, the artists' exemption (s.195) is still subject to Class S.
+- **No joint assessment.** The TCA Part 44 Chapter 1 joint assessment rules are disregarded (s.2(1)), so each spouse or civil partner's Class S is worked out on their own income. Where joint assessment applies for income tax, the contributions are collected from the assessable spouse or nominated civil partner, but the amount owed by each is unchanged (s.23(5), (5A)).
+- **What DSP lists as included:** benefit in kind; trade or profession income; interest, annuities and foreign investment income; Irish rent; income taxed at source such as bank interest and maintenance payments; share dividends and ARF dividends; certain taxable employment income such as a director's ([SW74](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)). Revenue adds rental income and legally enforceable maintenance payments ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)).
+- **What DSP lists as excluded:** capital allowances; social welfare payments; SOLAS training payments and HSE Mobility Allowance taxed under PAYE; pensions taxed under PAYE; income continuance payments taxed under PAYE; redundancy and termination payments taxed under PAYE; early AVC withdrawals taxed under PAYE; retirement lump sums above the EUR 200,000 lifetime tax-free limit; certain early encashments of private pensions by public servants who were once self-employed; gains on certain foreign life policies and offshore funds; certain chargeable excesses on a Benefit Crystallisation Event ([SW74](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)).
+- **The floor is a cliff, not an allowance.** Below EUR 5,000 of total income (before capital allowances) there is no Class S. At EUR 5,000 or more, Class S is due on all reckonable income, with the EUR 650 minimum. At exactly EUR 5,000 the minimum applies.
+- **The minimum.** The charge is the greater of the rate times income and EUR 650 (s.21(1)(a)). A director who has both reckonable income and reckonable emoluments pays only one EUR 650 minimum, not two (s.21(1)(f)).
+- **Tax credits do not reduce Class S.** Class S on reckonable income is charged as if it were income tax, but the Income Tax Acts' provisions granting an allowance, deduction or relief do not apply to it (s.23(4)).
+- **No pro-rating.** The floor and the minimum are annual. The law read has no rule to reduce them for a person who starts or stops mid-year.
+- **Benefits it buys.** Class S counts for these schemes only: State Pension (Contributory), Bereaved Partner's (Contributory) Pension, Guardian's Payment (Contributory), Invalidity Pension, Maternity, Adoptive, Paternity and Parent's Benefit, Carer's Benefit, Treatment Benefit, Jobseeker's Benefit (Self-Employed) and bereavement grant (s.21(1)(e)). DSP's list adds Benefit Payment for 65 Year Olds and Partial Capacity Benefit ([DSP Class S rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/)).
+- **Full payment or nothing.** A full year of contributions (one for each week) is credited only when the full amount due is paid. A part payment earns no contributions for that year (s.21(1)(d); [DSP Operational Guidelines](https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/)). This matters most for the State Pension.
+- **Voluntary contributions.** A person who leaves compulsory insurance (for example income falls under EUR 5,000) and is under 66, or 66 to 70 without a State Pension (Contributory) award, may pay voluntary contributions: EUR 650 a year for someone last at Class S. Apply within 60 months from the end of the contribution year in which a contribution was last paid or credited ([SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf)). They keep cover only for the pensions the person had when last paying compulsory PRSI ([SW74](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)).
 
-### DSP leaflet, A Guide to PRSI for the Self-Employed (January 2025)
+## Deadlines and filing
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf |
-| Who pays | (no figure) | "People whose only income is from investments, rents or maintenance payments" |
-| Employees with self-employment | (no figure) | "Employees who are also self-employed pay Class S PRSI in addition to their PRSI contribution as an employee" |
-| Employees with only unearned other income | (no figure) | "People insured as employees whose only other income is unearned such as share dividend payments or rent. They may be liable for PRSI contributions at Class K on this income" |
+- **Registration.** Self-employed people register with Revenue for income tax and PRSI (eRegistration or Form TR1). Anyone whose taxable non-PAYE income exceeds EUR 5,000, or gross non-PAYE income exceeds EUR 30,000, must register for self-assessment ([Revenue, who should register](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx)). This is a separate test from the Class S floor (EUR 5,000 or over, before capital allowances).
+- **One sum with income tax.** Class S on reckonable income is assessed, charged and paid as if it were income tax, in one aggregated sum with the income tax for the same year (s.23(4)). It goes on the Form 11 and is paid with income tax and USC.
+- **Preliminary tax.** Preliminary tax is the estimate of income tax, PRSI and USC for the year, due by 31 October of that year. It must be at least the lowest of 90% of this year's tax, 100% of last year's, or 105% of the year before last (direct debit only; not if that year's tax was nil). In the first year of self-assessment, the 100% option is normally nil ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)).
+- **Return and balance.** By 31 October 2026: pay 2026 preliminary tax, file the 2025 Form 11 and pay the 2025 balance. If the person both pays and files through ROS, the date is Wednesday 18 November 2026; if only one is done through ROS, it stays 31 October ([Revenue pay and file](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx); [eBrief 034/26](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx)). The 2026 Form 11 (Class S at 4.2375%) is due by 31 October 2027.
+- **Which rate on which return.** The 2025 Form 11 filed in 2026 uses 4.125%. The 2026 Form 11 and the current-year option for 2026 preliminary tax use 4.2375%. Never apply the two period rates separately on an annual return.
+- **Directors under PAYE.** The company deducts Class S on each payment and reports it on the payroll submission on or before pay day; see `ie-payroll` for submission and payment dates.
+- **No-return cases.** A person with income of EUR 5,000 or more whom Revenue has excused from making returns pays EUR 310 for the year direct to DSP (s.21(1)(b); [DSP Operational Guidelines](https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/)).
 
-This leaflet is dated January 2025 and prints 2025 rates. Use it only for WHO pays and WHAT income counts, never for a rate. The rates are in the Section 1 tables.
+## Penalties and interest
 
-1. **Who pays.** Self-employed people pay Class S if their annual income is at or above the threshold in the SW14 table above (EUR 5,000 or over, not "more than"). The leaflet lists farmers, professionals, contractors and sub-contractors, people in business on their own or in partnership, people whose ONLY income is investments, rents or maintenance payments, employees who are ALSO self-employed (Class S in addition to their employee class), and councillors on their local authority emoluments ([DSP leaflet](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)).
-2. **Who does not pay Class S** ([DSP leaflet](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)):
-   - prescribed relatives (son, daughter, parent, brother or sister) who help in the business but are not partners (spouses and civil partners are not excluded relatives: the [DSP Operational Guidelines](https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/) list "spouses or civil partners of self-employed contributors who participate in the business" as Class S payers);
-   - people whose total income from self-employment (earned and unearned) and employment is below the threshold;
-   - people Revenue classes as non-resident who hold solely unearned income, and non-resident directors of Irish companies;
-   - employees whose ONLY other income is unearned (dividends, rent): they may pay Class K on it, not Class S;
-   - people under pensionable age with an occupational pension whose only other income is unearned: Class K, not Class S;
-   - public servants paying PRSI at Class B, C or D (modified rate contributors, for example civil and public servants recruited before 6 April 1995) who are also self-employed: Class K on that income ([DSP Operational Guidelines](https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/); [SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf)).
-3. **Age.** Class S is paid from age 16 up to pension age, currently 66. A person born on or after 1 January 1958 who is aged 66 to 70 and has NOT been awarded the State Pension (Contributory) still pays ([SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf)). Revenue says the change applies from 1 January 2024 and does not apply to a person already getting the State Pension (Contributory), or who was 66 by 1 January 2024 (born before 1 January 1958) ([Revenue PRSI page](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)). So turning 66 does NOT end Class S for everyone.
+Because Class S is charged as part of the income tax sum, the Income Tax Acts' collection, surcharge and interest rules apply to it (s.23(4)).
 
-### DSP, PRSI and Family Employment (last updated 15 April 2025)
+| Event | Consequence | Source |
+|---|---|---|
+| Form 11 filed within two months after the due date | Surcharge of 5% of the tax due, capped at EUR 12,695 | TCA s.1084; [Revenue pay and file](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx) |
+| Form 11 filed more than two months late | Surcharge of 10%, capped at EUR 63,485 | same |
+| LPT obligations not met | 10% surcharge on the final liability, even if income tax is paid and filed on time | same |
+| Late payment | Interest of 0.0219% for each day or part of a day | TCA s.1080; [Revenue interest guidelines](https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf) |
+| Preliminary tax below the lowest of the three tests | Interest charged | [Revenue preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx) |
+| Class S not paid in full | No contributions credited for the year until the full amount is paid | s.21(1)(d) |
+| Director's Class S under-deducted by the company | Collected as PAYE the employer should have remitted; payroll interest and penalties apply (see `ie-payroll`) | s.23(3) |
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ |
-| Proprietary director shareholding at which Class S applies (this share or more, directly or indirectly) | 50% | "proprietary directors who own or control 50% or more of the shareholding of a company, either directly or indirectly e.g., through a holding company, are classified as self-employed" |
+## Cross-border points
 
-4. **Company directors.** Since 1 July 2013 a proprietary director who owns or controls the share in the table above OR MORE, directly or indirectly (for example through a holding company), is self-employed and pays Class S. Below that share, DSP decides case by case; it is NOT automatically Class A and NOT automatically Class S ([DSP family employment page](https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/)). A self-employed company director pays PRSI under the PAYE system, not through a separate Class S registration, where the directorship is the only self-employed income ([SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf); [DSP leaflet](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)).
+- **Non-residents.** A person not resident or not ordinarily resident whose income has no trade, profession or partnership income is excepted (Sch. 1 Pt. 3 para. 6). A non-resident with an Irish trade is not excepted by that paragraph; the EU and bilateral rules below still decide which country insures them.
+- **Which country insures.** For work in more than one EU or EEA state, the UK or Switzerland, or a country with a bilateral agreement, which country's social insurance applies follows EU Regulation 883/2004, the A1 certificate or the agreement. Use `ie-prsi-cross-border`; do not apply Class S until that question is settled.
+- **Foreign income.** Foreign investment income, including foreign property income, is part of the Class S base for a person who is in Class S ([SW74](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)).
 
-## Section 3: What income counts
+## Worked examples
 
-5. **Income included.** Class S is paid on total income: benefit in kind, trade or profession income, interest, annuities and foreign investment income, Irish rent, income taxed at source (bank interest, maintenance payments), share dividends and ARF dividends, and certain taxable employment income such as a company director's ([DSP leaflet](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)). Revenue: "Your PRSI is calculated on your gross income once any capital allowances have been deducted", and you must also pay PRSI on rental income or legally enforceable maintenance payments ([Revenue PRSI page](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)).
-6. **Income excluded.** Capital allowances; social welfare payments; pensions taxed under PAYE; redundancy and termination payments taxed under PAYE; SOLAS training payments and HSE Mobility Allowance taxed under PAYE; income continuance payments taxed under PAYE; early AVC withdrawals taxed under PAYE; certain retirement lump sums above the lifetime tax-free limit; certain foreign life policy and offshore fund gains; and certain chargeable excesses on a Benefit Crystallisation Event ([DSP leaflet](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)).
-7. **No cap.** There is no upper earnings limit: SW14 charges Class S on all reckonable income.
+### Example 1: sole trader, 2026 income, Form 11
 
-## The method, step by step
+Aoife, aged 45, is a sole trader. Her 2026 trading profit is EUR 84,000, she claims EUR 6,000 of capital allowances, and she has EUR 2,000 of Irish rental profit (rent less allowable expenses, as computed for income tax). Reckonable income is 84,000 - 6,000 + 2,000 = EUR 80,000. That is above the EUR 5,000 floor. For 2026 income on a Form 11 the rate is the blended rate: ((4.2 x 9) + (4.35 x 3)) / 12 = 4.2375%. Class S is 80,000 x 4.2375% = EUR 3,390.00, which is above the EUR 650 minimum. It is paid with her income tax and USC: preliminary tax by 31 October 2026, and the 2026 balance with the 2026 Form 11 by 31 October 2027.
 
-1. **Fix the income year and the payment route.** Ask whether you are working on 2026 income or 2025 income, and whether PRSI is returned through Form 11 self-assessment or deducted under PAYE as a self-employed director. This decides the rate (see "Which rate applies to whom" in Section 1, [DSP Class S Rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/)).
-2. **Check the class.** Confirm the person is self-employed, or a proprietary director at or above the shareholding in the family employment table, or has only investment, rent or maintenance income. If the person is an employee whose only other income is unearned, or a modified-rate public servant, stop: that is Class K, not this skill ([DSP leaflet](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)).
-3. **Check age.** Under 16: no Class S. 66 to 70: Class S still applies if born on or after 1 January 1958 and not awarded the State Pension (Contributory) ([SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf); [Revenue PRSI page](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)).
-4. **Work out reckonable income.** Gross income after capital allowances, including the income types listed in Section 3 and leaving out the excluded items ([Revenue PRSI page](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx); [DSP leaflet](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)).
-5. **Apply the annual test.** If annual income is below the SW14 threshold, no Class S is due (consider a voluntary contribution, Section 6). If it is at or above the threshold, Class S is due on ALL of it, not on the excess ([SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf)).
-6. **Compute.** Self-assessed: Class S = the greater of (reckonable income x the blended rate for that income year) and the minimum in the Class S Rates table ([DSP Class S Rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/)). Payroll-collected director: the employer deducts at the period rate for each week (SW14 table).
-7. **Pay with the self-assessment.** Class S is paid to Revenue with income tax and USC: preliminary tax for the year by 31 October of that year, and the Form 11 return and balance for the previous year by the same date ([Revenue pay and file](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx); [Revenue preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)). See Section 5 for the ROS extension.
+```oa-check
+name: Sole trader, 2026 reckonable income EUR 80,000, blended rate
+inputs:
+  trading_profit: 84000
+  capital_allowances: 6000
+  irish_rental_profit: 2000
+steps:
+  - reckonable: trading_profit - capital_allowances + irish_rental_profit
+  - rate_2026: (4.2 * 9 + 4.35 * 3) / 12
+  - by_rate: reckonable * rate_2026 / 100
+  - class_s: max(by_rate, 650)
+expected:
+  reckonable: 80000
+  rate_2026: 4.2375
+  class_s: 3390.00
+```
 
-~~~
-Self-assessed Class S for an income year:
-  if reckonable_income < annual threshold      -> Class S = 0
-  else Class S = max(reckonable_income x blended_rate_for_that_year, minimum)
-Use the 2026 blended rate for 2026 income and the 2025 blended rate for 2025 income.
-Never apply the two period rates of one year separately on a Form 11.
-~~~
+### Example 2: first-year trader on the minimum, 2025 return filed late
 
-## Section 4: Worked examples (hypothetical amounts)
+Ciarán started trading in 2025. His 2025 reckonable income is EUR 14,000. This is his first self-assessment year, so no 2025 preliminary tax was due (100% of a nil prior year). The 2025 rate is the blended 4.125%: 14,000 x 4.125% = EUR 577.50, below the minimum, so Class S is EUR 650. He files the 2025 Form 11 on paper and pays on 30 November 2026, 30 days after 31 October (the ROS date of 18 November does not apply). The return is within two months of the due date, so the surcharge is 5%. On the Class S part alone: surcharge 650 x 5% = EUR 32.50, and interest 650 x 0.0219% x 30 = EUR 4.27. The same surcharge and interest also apply to any income tax and USC in the same return. Once the full EUR 650 is paid, his 2025 contributions are credited.
 
-All incomes below are hypothetical, chosen to show the method. Rates and the minimum come from the Section 1 tables.
-
-| Case | Hypothetical facts | Result |
-| --- | --- | --- |
-| A, ordinary, 2026 | Sole trader, aged 45, reckonable 2026 income EUR 80,000, Form 11 | EUR 80,000 x 4.2375% = EUR 3,390.00. This is above the minimum, so EUR 3,390.00 is due. [DSP Class S Rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/) |
-| B, minimum, 2026 | Self-employed, 2026 reckonable income EUR 12,000, Form 11 | EUR 12,000 x 4.2375% = EUR 508.50. That is below the minimum, so EUR 650 is due. [DSP Class S Rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/) |
-| C, below threshold | Self-employed, total annual income EUR 4,800, no employment | Below the annual threshold: no Class S. Consider whether a voluntary contribution makes sense. [SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf) |
-| D, 2025 income filed in 2026 | Sole trader, 2025 reckonable income EUR 50,000, 2025 Form 11 | EUR 50,000 x 4.125% = EUR 2,062.50, using the 2025 blended rate, not the 2026 rate. [DSP Class S Rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/) |
-
-## Section 5: Payment schedule and registration
-
-### Revenue, Who should register for Income Tax self-assessment?
-
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx |
-| Taxable non-PAYE income above which you MUST register for self-assessment | EUR 5,000 | "your taxable non-PAYE income exceeds €5,000 or your gross non-PAYE income exceeds €30,000" |
-| Gross non-PAYE income above which you MUST register (either test is enough) | EUR 30,000 | "your taxable non-PAYE income exceeds €5,000 or your gross non-PAYE income exceeds €30,000" |
-
-The registration test (more than the amounts above, either test) is a different rule from the Class S income test (EUR 5,000 or over). Same digits, two rules. Self-employed people register using eRegistration or Form TR1 parts A and B ([Revenue registration page](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx)). A person whose only self-employed income is a company directorship does not register as self-employed, because tax and PRSI are collected under PAYE ([DSP leaflet](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)).
-
-### Revenue, What is preliminary tax?
-
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx |
-| Preliminary tax safe harbour, current year | 90% | "90% of the tax due for that tax year" |
-| Preliminary tax safe harbour, previous year | 100% | "100% of the tax due for the immediately previous tax year" |
-| Preliminary tax safe harbour, pre-preceding year, direct debit only, not if that year's tax was nil | 105% | "105% of the tax due for the tax year preceding the immediately previous tax year" |
-
-Preliminary tax is the estimate of income tax, PRSI and USC for the year. It must equal or exceed the LOWEST of the three options in the table above, and it is due by 31 October of the tax year ([Revenue preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)).
-
-| Event | Deadline | Source |
-| --- | --- | --- |
-| 2026 preliminary tax (income tax, PRSI and USC) | 31 October 2026 | [Revenue preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx) |
-| 2025 Form 11 return and 2025 balance | 31 October 2026 | [Revenue pay and file](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx) |
-| ROS extension, only if BOTH paying and filing through ROS (2025 return, 2025 balance, 2026 preliminary tax) | Wednesday 18 November 2026 | [Revenue eBrief No. 034/26](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx) |
-| 2026 Form 11 return and 2026 balance (Class S at the 2026 blended rate) | 31 October 2027; any 2027 ROS extension is not yet announced | [Revenue pay and file](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx) |
-
-If only one of paying or filing is done through ROS, the extension does not apply and the date stays 31 October 2026 ([Revenue eBrief No. 034/26](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx)).
-
-### DSP, Operational Guidelines: PRSI for the Self-Employed (last updated 6 January 2026)
-
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/ |
-| Share of the year's income tax and PRSI charged that must be paid before the year's 52 Class S contributions are awarded | 100% | "When the full amount (100%) of income tax and PRSI charged has been paid, an annual complement of 52 Class S contributions are awarded. Where less than the full amount due has been paid, no contributions are awarded." |
-| Flat-rate Class S contribution paid direct to DSP by a person with income of EUR 5,000 or more whom Revenue excused from making returns (No Net Liability case) | EUR 310 | "Persons whose annual income is €5,000 or more, who have been deemed to have no tax liability by the Revenue Commissioners and who are subsequently excused from making annual returns by the Inspector of Taxes, are required to pay a flat rate of €310 direct to this department" |
-
-A part payment earns no contributions for the year: DSP awards the 52 Class S contributions only when the full amount in the table above has been paid ([DSP Operational Guidelines](https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/)).
-
-## Section 6: Voluntary contributions and benefits
-
-- **Voluntary contributions.** A person no longer covered by compulsory PRSI (for example they stopped self-employment, or income fell below the threshold), who is under pension age, or aged 66 to 70 without an award of the State Pension (Contributory), may opt to pay voluntary contributions if they meet the conditions. For a person who last paid at Class S it is the flat amount in the SW14 table above. Apply within 60 months from the end of the contribution year in which a contribution was last paid or credited ([SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf)). Voluntary contributions cover only the pensions the person was covered for when last paying compulsory PRSI ([DSP leaflet](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)). Confirm the contribution record with DSP before advising.
-- **Benefits Class S covers** ([DSP Class S Rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/)): Adoptive Benefit, Benefit Payment for 65 Year Olds, Carer's Benefit, Guardian's Payment (Contributory), Invalidity Pension, Jobseeker's Benefit for the Self-Employed, Maternity Benefit, Parent's Benefit, Partial Capacity Benefit, Paternity Benefit, State Pension (Contributory), Treatment Benefit, and Bereaved Partner's (Contributory) Pension. The leaflet adds: "Class S PRSI does not provide cover for any other schemes or benefits" ([DSP leaflet](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf)).
-- **Share fishermen and fisherwomen** classed as self-employed may pay an optional Class P contribution on top of Class S ([SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf)). This skill does not compute Class P.
-
-## Section 7: Interaction with USC and income tax
-
-- PRSI, USC and income tax are three separate charges. Revenue collects all three together through preliminary tax and the Form 11 balance ([Revenue preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)).
-- The pages read for this skill do not say whether Class S is deductible in computing taxable income, or whether income tax credits reduce PRSI. Do not state either as fact; ask the accountant.
-
-## Section 8: Edge case registry
-
-### EC1: income exactly at the threshold
-Situation: total annual income equals the SW14 threshold. Resolution: Class S applies, because the test is "or over". The calculated amount is below the minimum, so the minimum in the Class S Rates table is due.
-
-### EC2: income just below the threshold
-Situation: total annual income is below the SW14 threshold. Resolution: no Class S. Consider a voluntary contribution (Section 6).
-
-### EC3: mid-year start
-Situation: self-employment started in July 2026. Resolution: the pages state an ANNUAL income test and do not mention pro-rating. Apply the test to the income for the year as the page words it, and flag the point to the accountant.
-
-### EC4: proprietary director paid salary only
-Situation: director owns or controls the Class S shareholding in the family employment table or more. Resolution: Class S, not Class A, collected under PAYE by the company at the period rate for each week. Below that share, DSP decides case by case: refer.
-
-### EC5: client turning 66 in 2026
-Situation: client reaches 66 during 2026. Resolution: if born on or after 1 January 1958 and not awarded the State Pension (Contributory), Class S continues to age 70. If they are awarded the State Pension (Contributory), refer for the treatment of the rest of the year; the pages read do not set out a part-year rule for Class S.
-
-### EC6: rental income only
-Situation: client has rental income and no trade or employment. Resolution: people whose only income is rents pay Class S, subject to the annual test. If the client is ALSO an employee and the rent is the only other income, it is Class K, not Class S.
-
-### EC7: which rate for which year
-Situation: client asks which rate applies. Resolution: 2025 Form 11 uses the 2025 blended rate; 2026 Form 11 uses the 2026 blended rate. Do not apply the period rates separately on an annual return.
+```oa-check
+name: First-year trader, 2025 income EUR 14,000, minimum applies, filed and paid 30 days late
+inputs:
+  reckonable: 14000
+  days_late: 30
+steps:
+  - rate_2025: (4.1 * 9 + 4.2 * 3) / 12
+  - by_rate: reckonable * rate_2025 / 100
+  - class_s: max(by_rate, 650)
+  - surcharge: class_s * 5 / 100
+  - interest: round(class_s * 0.0219 / 100 * days_late, 2)
+expected:
+  rate_2025: 4.125
+  by_rate: 577.50
+  class_s: 650.00
+  surcharge: 32.50
+  interest: 4.27
+```
 
 ## Ask the client first
 
-- Which year's income are we working on, 2025 or 2026, and is PRSI paid through Form 11 or deducted under PAYE as a company director?
-- What is your date of birth, and have you been awarded the State Pension (Contributory)?
-- Are you also an employee? If so, is your other income from a trade or profession (Class S), or only rent, dividends or other unearned income (likely Class K)?
-- If you are a company director, what share of the company do you own or control, directly or through another company?
-- What is your gross self-employed and other income for the year, and what capital allowances do you claim?
-- Are you a public servant paying a modified PRSI class, or a share fisherman or fisherwoman?
-- Has the full income tax and PRSI bill for the year been paid, or only part of it?
-
-## When to refuse or refer
-
-- **Cross-border.** The client works or lives in another EU or EEA state, or in a country with a social security agreement with Ireland. Which state collects social insurance is outside this skill: refer.
-- **Director below the Class S shareholding.** Classification is case by case: refer to DSP Scope Section or the accountant.
-- **Class K cases.** Employees whose only other income is unearned, occupational pensioners under pension age with only unearned other income, modified-rate public servants, public office holders: refer.
-- **Aged 66 to 70 with a pension award during the year**, or any doubt about State Pension (Contributory) status: refer.
-- **Told by Revenue no return is needed** but income is at or above the threshold: a flat-rate contribution is paid direct to DSP (amount in the Operational Guidelines table, Section 5). Confirm with DSP: refer.
-- **Class P** for share fishermen and fisherwomen: refer.
-- **Tax year not known:** stop. Do not compute PRSI.
-
-### Reviewer escalation templates
-
-~~~
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Qualified practitioner must confirm before advising client.
-~~~
-
-~~~
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside Guide scope]
-Action Required: Do not advise. Refer to qualified practitioner. Document gap.
-~~~
+1. Which year's income are we working on (2025 return or 2026), and is PRSI paid through Form 11 or deducted through payroll as a director?
+2. Your date of birth, and have you been awarded the State Pension (Contributory)?
+3. If you are a director: what share of the company do you own or control, directly or through another company?
+4. Are you also an employee or a modified-rate public servant, and is your other income from a trade or profession, or only rent, dividends or other unearned income?
+5. Total income for the year before capital allowances, and the capital allowances claimed.
+6. Are you resident in Ireland, and do you work in any other country?
 
 ## Sources
 
-- DSP, PRSI Class S Rates: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/
-- DSP, SW14 PRSI Contribution Rates and User Guide, January 2026: https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf
-- DSP, A Guide to PRSI for the Self-Employed, January 2025: https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf
-- DSP, PRSI and Family Employment: https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/
-- DSP, Operational Guidelines: PRSI for the Self-Employed (last updated 6 January 2026): https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/
-- Revenue, Do you need to pay PRSI?: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx
-- Revenue, Who should register for Income Tax self-assessment?: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx
-- Revenue, What is preliminary tax?: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx
-- Revenue, Pay and file system: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx
-- Revenue, eBrief No. 034/26: https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx
+| Source | URL | Read on |
+|---|---|---|
+| Social Welfare Consolidation Act 2005, revised to 1 October 2026: s.2(1) reckonable income, s.20, s.21, s.23, s.26, s.38BA, Sch. 1 Pt. 3 | https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html | 2026-10-24 |
+| Social Welfare (Miscellaneous Provisions) Act 2024 (No. 24 of 2024), s.3 and Table, s.5, s.6, s.9 (new s.38BA) | https://www.irishstatutebook.ie/pdf/2024/en.act.2024.0024.pdf | 2026-10-24 |
+| Social Welfare and Automatic Enrolment Retirement Savings System (Amendment) Act 2025 (No. 19 of 2025), the Budget 2026 social welfare act: no change to Class S | https://www.irishstatutebook.ie/eli/2025/act/19/enacted/en/html | 2026-10-24 |
+| S.I. No. 684 of 2010, art. 6 (EUR 5,000 floor in art. 92 of S.I. 312 of 1996) | https://www.irishstatutebook.ie/eli/2010/si/684/made/en/print | 2026-10-24 |
+| DSP, PRSI Class S rates (updated 20 January 2026) | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ | 2026-10-24 |
+| DSP, SW14 PRSI Contribution Rates and User Guide, January 2026 | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-24 |
+| DSP, SW74 A Guide to PRSI for the Self-Employed, January 2025 (used for who pays and what counts, not for rates) | https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf | 2026-10-24 |
+| DSP, Operational Guidelines: PRSI for the Self-Employed (updated 6 January 2026) | https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/ | 2026-10-24 |
+| DSP, PRSI and family employment (updated 15 April 2025) | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ | 2026-10-24 |
+| Revenue, do you need to pay PRSI? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx | 2026-10-24 |
+| Revenue, who should register for income tax self-assessment? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx | 2026-10-24 |
+| Revenue, what is preliminary tax? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-24 |
+| Revenue, pay and file (deadlines, late filing surcharge) | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-24 |
+| Revenue, eBrief No. 034/26 (ROS extension to 18 November 2026) | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-24 |
+| Revenue, TDM 38-01-04J, Income tax return form 2025, ROS Form 11, para. 10.2 (Form 11 PRSI rate 4.125% for 2025) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-38/38-01-04J.pdf | 2026-10-24 |
+| Revenue, Guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
 
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CTA, AITI, or equivalent licensed practitioner in Ireland) before filing or acting upon.
-
-The most up-to-date version of this skill is maintained on the OpenAccountants website. Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+Not yet confirmed: (1) whether Class S is deductible in computing taxable income for income tax (no source read says so either way); (2) whether pension contribution relief reduces reckonable income; (3) how the EUR 650 minimum is collected for a director whose only Class S is through PAYE and whose pay gives less than EUR 650; (4) the part-year treatment for someone awarded the State Pension (Contributory) between 66 and 70 during the year; (5) how a mid-year start or finish is treated beyond the annual floor and minimum (the law read has no pro-rating rule); (6) the full list of "prescribed relatives" in art. 94 of S.I. 312 of 1996 (taken from the DSP leaflet, not the regulation); (7) whether interest also runs on the late filing surcharge; (8) the text of arts. 81 to 84 of S.I. 312 of 1996 (para. 5 exceptions), not read; (9) the Social Welfare Bill for Budget 2027 was not enacted on 24 October 2026 and was not read.
 
 <!-- openaccountants-cta-block -->
 

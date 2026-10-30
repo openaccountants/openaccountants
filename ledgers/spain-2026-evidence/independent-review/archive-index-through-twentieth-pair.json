@@ -1,0 +1,1035 @@
+{
+  "scope": "Exact accepted independent evidence for20pairs/tranches1\u201316 and native-LFerratum. No foralPIT/deductions verdict yet. Current review continues privately. Historical manifests unchanged.",
+  "checks": [
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "tranche1-report.md",
+      "expected": "5666fa99914e304e3bf7182611aa869eabfd74398a1d41a38bff5576355353d2",
+      "actual": "5666fa99914e304e3bf7182611aa869eabfd74398a1d41a38bff5576355353d2",
+      "pass": true
+    },
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "tranche1-result.json",
+      "expected": "ff5e6978641c7942145f1defabe27bee9e1b40e3c8d09ba700bb74d5d56970f5",
+      "actual": "ff5e6978641c7942145f1defabe27bee9e1b40e3c8d09ba700bb74d5d56970f5",
+      "pass": true
+    },
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "tranche1-read-ledger.json",
+      "expected": "f1cd7bf5092e40f78db5ffbc0a8fb77280a802370dc19cf864ef276bc068b350",
+      "actual": "f1cd7bf5092e40f78db5ffbc0a8fb77280a802370dc19cf864ef276bc068b350",
+      "pass": true
+    },
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "tranche1-controls.py",
+      "expected": "67b4039e239e0891c7d84245dee8180b5e68ce62710a1fa5c440645a98731538",
+      "actual": "67b4039e239e0891c7d84245dee8180b5e68ce62710a1fa5c440645a98731538",
+      "pass": true
+    },
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "tranche1-controls.json",
+      "expected": "7ac37d868cca868397330a6c3770935d817be47c63f332c5531f9e0a82113af0",
+      "actual": "7ac37d868cca868397330a6c3770935d817be47c63f332c5531f9e0a82113af0",
+      "pass": true
+    },
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "beckham-controls.json",
+      "expected": "f6debc2918692d56bb9c5e829e7cce168f2f1fc905a6ef5896eb1971aa589729",
+      "actual": "f6debc2918692d56bb9c5e829e7cce168f2f1fc905a6ef5896eb1971aa589729",
+      "pass": true
+    },
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "S-L01-independent-closure.json",
+      "expected": "32c9bb13520d94a9e8fef2f92a17266114ab23ecf5aea0f98bf1afc549fdd7f5",
+      "actual": "32c9bb13520d94a9e8fef2f92a17266114ab23ecf5aea0f98bf1afc549fdd7f5",
+      "pass": true
+    },
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "tranche1-protection.json",
+      "expected": "f7f50789628f2e3468401c43e7674408e4a27517d9cb999ce8fb98a08cea3e0c",
+      "actual": "f7f50789628f2e3468401c43e7674408e4a27517d9cb999ce8fb98a08cea3e0c",
+      "pass": true
+    },
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "tranche1-source-identities-rehashed.json",
+      "expected": "69dd60e9c4db7b413e9bc9f1eebc3330b20c0f6aa9196b84d184077252653019",
+      "actual": "69dd60e9c4db7b413e9bc9f1eebc3330b20c0f6aa9196b84d184077252653019",
+      "pass": true
+    },
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "tranche1-successor-presence.json",
+      "expected": "67d2a38630483fdaeb7903c22880102d9e795595ce0827e50e0f7e7aca03e5e2",
+      "actual": "67d2a38630483fdaeb7903c22880102d9e795595ce0827e50e0f7e7aca03e5e2",
+      "pass": true
+    },
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "all-four-quote-presence.json",
+      "expected": "df167833d0324a76f23aa8f14b2837a4a81982f4cf27c366ca71976edddc7ac4",
+      "actual": "df167833d0324a76f23aa8f14b2837a4a81982f4cf27c366ca71976edddc7ac4",
+      "pass": true
+    },
+    {
+      "manifest": "tranche1-manifest.json",
+      "artifact": "initial-three-ledger-quote-check.json",
+      "expected": "6467772cc0525dbaf5de0a26d6e4b72b4a2f0fa9264deac3014be8d545556aa1",
+      "actual": "6467772cc0525dbaf5de0a26d6e4b72b4a2f0fa9264deac3014be8d545556aa1",
+      "pass": true
+    },
+    {
+      "manifest": "tranche2-manifest.json",
+      "artifact": "tranche2-report.md",
+      "expected": "fac20a3daae03c3b61277228c2b39e707d02d398b4e9392b57b61fbeec118d0e",
+      "actual": "fac20a3daae03c3b61277228c2b39e707d02d398b4e9392b57b61fbeec118d0e",
+      "pass": true
+    },
+    {
+      "manifest": "tranche2-manifest.json",
+      "artifact": "tranche2-result.json",
+      "expected": "303e6d76700ec2e97a518d225371ba8513bfb345862280d4c29fa7b698ffd84b",
+      "actual": "303e6d76700ec2e97a518d225371ba8513bfb345862280d4c29fa7b698ffd84b",
+      "pass": true
+    },
+    {
+      "manifest": "tranche2-manifest.json",
+      "artifact": "tranche2-read-ledger.json",
+      "expected": "f5d5fdf9abadf36d9b2f2f0f053de23e2b497cb3b72293e606cbeaadb2462504",
+      "actual": "f5d5fdf9abadf36d9b2f2f0f053de23e2b497cb3b72293e606cbeaadb2462504",
+      "pass": true
+    },
+    {
+      "manifest": "tranche2-manifest.json",
+      "artifact": "tranche2-source-check.json",
+      "expected": "a5c557aced1bbc0ab73070c2d466e69976295b8b5195420e163ddfcb4cb3012a",
+      "actual": "a5c557aced1bbc0ab73070c2d466e69976295b8b5195420e163ddfcb4cb3012a",
+      "pass": true
+    },
+    {
+      "manifest": "tranche2-manifest.json",
+      "artifact": "tranche2-controls.py",
+      "expected": "eadd6e6a2f6687d25457a1594619494b43534752dc7eedd0c6506b792868fc77",
+      "actual": "eadd6e6a2f6687d25457a1594619494b43534752dc7eedd0c6506b792868fc77",
+      "pass": true
+    },
+    {
+      "manifest": "tranche2-manifest.json",
+      "artifact": "tranche2-controls.json",
+      "expected": "02c850372990b3967004ee1088f4c9b801303843b4b34b69fb8b2d59e52456e3",
+      "actual": "02c850372990b3967004ee1088f4c9b801303843b4b34b69fb8b2d59e52456e3",
+      "pass": true
+    },
+    {
+      "manifest": "tranche2-manifest.json",
+      "artifact": "tranche2-control-harness-erratum.json",
+      "expected": "4a0714dc2ec3ab77aec319b58fc7a62c5930a0ea8d077fc11e6354e7ab56d0ea",
+      "actual": "4a0714dc2ec3ab77aec319b58fc7a62c5930a0ea8d077fc11e6354e7ab56d0ea",
+      "pass": true
+    },
+    {
+      "manifest": "tranche2-manifest.json",
+      "artifact": "tranche2-protection.json",
+      "expected": "1c60086df89e1f9593b76f4798fb6ea7ff18700cd05b6bd9ff596bff08240ab9",
+      "actual": "1c60086df89e1f9593b76f4798fb6ea7ff18700cd05b6bd9ff596bff08240ab9",
+      "pass": true
+    },
+    {
+      "manifest": "tranche2-manifest.json",
+      "artifact": "IRNR-restoration-independent-operations.json",
+      "expected": "d7f230690304a27922f079b7118ee88924b4fc0fd461b374559d9f13aca01b46",
+      "actual": "d7f230690304a27922f079b7118ee88924b4fc0fd461b374559d9f13aca01b46",
+      "pass": true
+    },
+    {
+      "manifest": "tranche3-manifest.json",
+      "artifact": "tranche3-report.md",
+      "expected": "b3256a7fd11b11076b89ac9e4c217016d7f3e32419bf016e7542c899f77ed1bf",
+      "actual": "b3256a7fd11b11076b89ac9e4c217016d7f3e32419bf016e7542c899f77ed1bf",
+      "pass": true
+    },
+    {
+      "manifest": "tranche3-manifest.json",
+      "artifact": "tranche3-result.json",
+      "expected": "fae3a8c693e1c3a2666b9d96674f5d74d7eb01052779f2e283dbd846fabc7264",
+      "actual": "fae3a8c693e1c3a2666b9d96674f5d74d7eb01052779f2e283dbd846fabc7264",
+      "pass": true
+    },
+    {
+      "manifest": "tranche3-manifest.json",
+      "artifact": "tranche3-read-ledger.json",
+      "expected": "2e005152439e795e4d7216c364b7b1bbc89e8bf648585bd0a3cd753d7c387c49",
+      "actual": "2e005152439e795e4d7216c364b7b1bbc89e8bf648585bd0a3cd753d7c387c49",
+      "pass": true
+    },
+    {
+      "manifest": "tranche3-manifest.json",
+      "artifact": "tranche3-source-check.json",
+      "expected": "cc8676788a50e1b8de57aa0e362c5476d5f4f6931b10487a4f7fce21d3426755",
+      "actual": "cc8676788a50e1b8de57aa0e362c5476d5f4f6931b10487a4f7fce21d3426755",
+      "pass": true
+    },
+    {
+      "manifest": "tranche3-manifest.json",
+      "artifact": "tranche3-controls.py",
+      "expected": "a53be0d58d39989ef51161e0d4f1dfb1cc6962427341b094d83034509edc8796",
+      "actual": "a53be0d58d39989ef51161e0d4f1dfb1cc6962427341b094d83034509edc8796",
+      "pass": true
+    },
+    {
+      "manifest": "tranche3-manifest.json",
+      "artifact": "tranche3-controls.json",
+      "expected": "60e793117d3656bf050fb30622f6f33f082afa0569845fc0a3585c79edbd6100",
+      "actual": "60e793117d3656bf050fb30622f6f33f082afa0569845fc0a3585c79edbd6100",
+      "pass": true
+    },
+    {
+      "manifest": "tranche3-manifest.json",
+      "artifact": "tranche3-protection.json",
+      "expected": "3172114fb4e8600d9f07c7de5fb2bc9bdabbfe31c4393556cd47636cf9bbc02a",
+      "actual": "3172114fb4e8600d9f07c7de5fb2bc9bdabbfe31c4393556cd47636cf9bbc02a",
+      "pass": true
+    },
+    {
+      "manifest": "tranche3-manifest.json",
+      "artifact": "tranche3-coverage-remainder.json",
+      "expected": "1474f0ce206850dddc03a5d3eed0f202469078cb29193e04fc527bc6c5f32e06",
+      "actual": "1474f0ce206850dddc03a5d3eed0f202469078cb29193e04fc527bc6c5f32e06",
+      "pass": true
+    },
+    {
+      "manifest": "tranche4-manifest.json",
+      "artifact": "tranche4-controls.json",
+      "expected": "1776c10d99282f6420d2fb92c6fa54877bccf3a3262960575cf596013bdb7a64",
+      "actual": "1776c10d99282f6420d2fb92c6fa54877bccf3a3262960575cf596013bdb7a64",
+      "pass": true
+    },
+    {
+      "manifest": "tranche4-manifest.json",
+      "artifact": "tranche4-controls.py",
+      "expected": "f12dbe8ab5111b71256ba44dd2d0667d2b1b6fda49c6aca3689dfac764f3a2bb",
+      "actual": "f12dbe8ab5111b71256ba44dd2d0667d2b1b6fda49c6aca3689dfac764f3a2bb",
+      "pass": true
+    },
+    {
+      "manifest": "tranche4-manifest.json",
+      "artifact": "tranche4-protection.json",
+      "expected": "ff91a26f556e03b277cb5ea2d71be7d1833ce1efefd30de8286444d18ff31046",
+      "actual": "ff91a26f556e03b277cb5ea2d71be7d1833ce1efefd30de8286444d18ff31046",
+      "pass": true
+    },
+    {
+      "manifest": "tranche4-manifest.json",
+      "artifact": "tranche4-read-ledger.json",
+      "expected": "ee39a4e1289ba76cd9eec86f3ced44a0f573a0898c6aa6c3a96cab27c2a54866",
+      "actual": "ee39a4e1289ba76cd9eec86f3ced44a0f573a0898c6aa6c3a96cab27c2a54866",
+      "pass": true
+    },
+    {
+      "manifest": "tranche4-manifest.json",
+      "artifact": "tranche4-report.md",
+      "expected": "6392646ad4af0d15202079d735df7507efeed50439373da42362203828d2ace8",
+      "actual": "6392646ad4af0d15202079d735df7507efeed50439373da42362203828d2ace8",
+      "pass": true
+    },
+    {
+      "manifest": "tranche4-manifest.json",
+      "artifact": "tranche4-result.json",
+      "expected": "583bbe1c8c34cc602d3b3671d8161547a0aef8568444840d21556bfed7a48dad",
+      "actual": "583bbe1c8c34cc602d3b3671d8161547a0aef8568444840d21556bfed7a48dad",
+      "pass": true
+    },
+    {
+      "manifest": "tranche4-manifest.json",
+      "artifact": "tranche4-source-check.json",
+      "expected": "18e9540a14ff17ed1cb0dd5f74db749664acc78bcf124959047505b5a6aa8eee",
+      "actual": "18e9540a14ff17ed1cb0dd5f74db749664acc78bcf124959047505b5a6aa8eee",
+      "pass": true
+    },
+    {
+      "manifest": "tranche5-manifest.json",
+      "artifact": "tranche5-controls.json",
+      "expected": "142a0f18b68c4514a821f8d2ea96dc3f2088effcf7dfffbb4e9f810c2592cd92",
+      "actual": "142a0f18b68c4514a821f8d2ea96dc3f2088effcf7dfffbb4e9f810c2592cd92",
+      "pass": true
+    },
+    {
+      "manifest": "tranche5-manifest.json",
+      "artifact": "tranche5-controls.py",
+      "expected": "f055013c3a75042ae1d272b66cea7b0712ec1f3ae28909ca7227e2e2b2bdaa65",
+      "actual": "f055013c3a75042ae1d272b66cea7b0712ec1f3ae28909ca7227e2e2b2bdaa65",
+      "pass": true
+    },
+    {
+      "manifest": "tranche5-manifest.json",
+      "artifact": "tranche5-initial-ledger.md",
+      "expected": "caa48a2b9027db1e9cf02f9cef6021f2d8aa2cf0ce9a57964978c96eb96c46e9",
+      "actual": "caa48a2b9027db1e9cf02f9cef6021f2d8aa2cf0ce9a57964978c96eb96c46e9",
+      "pass": true
+    },
+    {
+      "manifest": "tranche5-manifest.json",
+      "artifact": "tranche5-initial-old-topics.json",
+      "expected": "a2d4eecf89f09e3bffef800d1fa8c1ea0cb8d3d942219cf656d2a541d8a46db9",
+      "actual": "a2d4eecf89f09e3bffef800d1fa8c1ea0cb8d3d942219cf656d2a541d8a46db9",
+      "pass": true
+    },
+    {
+      "manifest": "tranche5-manifest.json",
+      "artifact": "tranche5-initial-read-quotes.json",
+      "expected": "d51c5d05de40c5da7c4afc51ac0dd6449cf300e1b51740edca9c3c40a09a7e61",
+      "actual": "d51c5d05de40c5da7c4afc51ac0dd6449cf300e1b51740edca9c3c40a09a7e61",
+      "pass": true
+    },
+    {
+      "manifest": "tranche5-manifest.json",
+      "artifact": "tranche5-protection.json",
+      "expected": "0afc7c2bf82ee25da2fb262f7444dc7770febc34fb2ca0b298d82ab9af5da790",
+      "actual": "0afc7c2bf82ee25da2fb262f7444dc7770febc34fb2ca0b298d82ab9af5da790",
+      "pass": true
+    },
+    {
+      "manifest": "tranche5-manifest.json",
+      "artifact": "tranche5-read-ledger.json",
+      "expected": "8157debf04c793b140f484b44eba1b2501824a15311153deb525f9c2544d2e4d",
+      "actual": "8157debf04c793b140f484b44eba1b2501824a15311153deb525f9c2544d2e4d",
+      "pass": true
+    },
+    {
+      "manifest": "tranche5-manifest.json",
+      "artifact": "tranche5-report.md",
+      "expected": "35d8366f95a549e26c95614a34131b7fe5c1bf2eb724366998b23437ac6c04b9",
+      "actual": "35d8366f95a549e26c95614a34131b7fe5c1bf2eb724366998b23437ac6c04b9",
+      "pass": true
+    },
+    {
+      "manifest": "tranche5-manifest.json",
+      "artifact": "tranche5-result.json",
+      "expected": "bfe779f017b3def83916c3d43242a2a2444b7c8e9d0d71d02af5e24fac668252",
+      "actual": "bfe779f017b3def83916c3d43242a2a2444b7c8e9d0d71d02af5e24fac668252",
+      "pass": true
+    },
+    {
+      "manifest": "tranche5-manifest.json",
+      "artifact": "tranche5-source-check.json",
+      "expected": "98dc089d09166b701d8547574b6d1af8584c4be4cf627b7b6de977befc6575b6",
+      "actual": "98dc089d09166b701d8547574b6d1af8584c4be4cf627b7b6de977befc6575b6",
+      "pass": true
+    },
+    {
+      "manifest": "tranche5-manifest.json",
+      "artifact": "tranche5-successor-presence.json",
+      "expected": "ddfa5a70f2f4b8d1f3429b214b66e96dfffceed6bf0eb4bcbf08e54401c11f64",
+      "actual": "ddfa5a70f2f4b8d1f3429b214b66e96dfffceed6bf0eb4bcbf08e54401c11f64",
+      "pass": true
+    },
+    {
+      "manifest": "tranche6-manifest.json",
+      "artifact": "tranche6-controls.json",
+      "expected": "68833417c8309d3f6ee97e110ddda702dba162b3aa6d6ac0427f22564ef3c70f",
+      "actual": "68833417c8309d3f6ee97e110ddda702dba162b3aa6d6ac0427f22564ef3c70f",
+      "pass": true
+    },
+    {
+      "manifest": "tranche6-manifest.json",
+      "artifact": "tranche6-controls.py",
+      "expected": "3ad225c385175b07921dd4fe4a70712c05666003cf708c27d78f0315fd70d5eb",
+      "actual": "3ad225c385175b07921dd4fe4a70712c05666003cf708c27d78f0315fd70d5eb",
+      "pass": true
+    },
+    {
+      "manifest": "tranche6-manifest.json",
+      "artifact": "tranche6-initial-ledger.md",
+      "expected": "45f1c53cd55793b7a1e3d2604dd71ae146229ff4ac85ea23c4a8d5c1a15346fd",
+      "actual": "45f1c53cd55793b7a1e3d2604dd71ae146229ff4ac85ea23c4a8d5c1a15346fd",
+      "pass": true
+    },
+    {
+      "manifest": "tranche6-manifest.json",
+      "artifact": "tranche6-initial-old-topics.json",
+      "expected": "5a619543dba591152dea9ba94ff282580bc0f575cb55b104c4b317dae746d2c5",
+      "actual": "5a619543dba591152dea9ba94ff282580bc0f575cb55b104c4b317dae746d2c5",
+      "pass": true
+    },
+    {
+      "manifest": "tranche6-manifest.json",
+      "artifact": "tranche6-initial-read-quotes.json",
+      "expected": "223de89537ccbf4617a0bdc89d2f226a499d49e62e449848d2eb960d10993bc6",
+      "actual": "223de89537ccbf4617a0bdc89d2f226a499d49e62e449848d2eb960d10993bc6",
+      "pass": true
+    },
+    {
+      "manifest": "tranche6-manifest.json",
+      "artifact": "tranche6-protection.json",
+      "expected": "e9ddfaaf70e57572b06259c201373bd67f2ab5c45f3134da5324f1f91b7dde8b",
+      "actual": "e9ddfaaf70e57572b06259c201373bd67f2ab5c45f3134da5324f1f91b7dde8b",
+      "pass": true
+    },
+    {
+      "manifest": "tranche6-manifest.json",
+      "artifact": "tranche6-read-ledger.json",
+      "expected": "5c4da71dc76c6550b05cb00a8a236b916e46ae08e624f4cd44a9912546a91219",
+      "actual": "5c4da71dc76c6550b05cb00a8a236b916e46ae08e624f4cd44a9912546a91219",
+      "pass": true
+    },
+    {
+      "manifest": "tranche6-manifest.json",
+      "artifact": "tranche6-report.md",
+      "expected": "b549b46379782b99f1e0a50dbf721e3e763b3f19bc3fc0b2aa43d148e1ccf730",
+      "actual": "b549b46379782b99f1e0a50dbf721e3e763b3f19bc3fc0b2aa43d148e1ccf730",
+      "pass": true
+    },
+    {
+      "manifest": "tranche6-manifest.json",
+      "artifact": "tranche6-result.json",
+      "expected": "ebcff5b5850d3e9f5c616c2f2fda625ec2dad4044471206d8261b0df0b22dce6",
+      "actual": "ebcff5b5850d3e9f5c616c2f2fda625ec2dad4044471206d8261b0df0b22dce6",
+      "pass": true
+    },
+    {
+      "manifest": "tranche6-manifest.json",
+      "artifact": "tranche6-source-check.json",
+      "expected": "c708926ddba161d375ebc6ec1890ffc20d25efc6fc201cd33606c36929f7ec5c",
+      "actual": "c708926ddba161d375ebc6ec1890ffc20d25efc6fc201cd33606c36929f7ec5c",
+      "pass": true
+    },
+    {
+      "manifest": "tranche6-manifest.json",
+      "artifact": "tranche6-successor-presence.json",
+      "expected": "d2faea2c46d6cab235519fd0513592a768030d8d2d976a0979eacbd8eeee81ac",
+      "actual": "d2faea2c46d6cab235519fd0513592a768030d8d2d976a0979eacbd8eeee81ac",
+      "pass": true
+    },
+    {
+      "manifest": "tranche7-manifest.json",
+      "artifact": "tranche7-controls.json",
+      "expected": "3e9138d15e63d1aa43052ad0059e459160b11056ade97fed0cf7e381c8bd33ae",
+      "actual": "3e9138d15e63d1aa43052ad0059e459160b11056ade97fed0cf7e381c8bd33ae",
+      "pass": true
+    },
+    {
+      "manifest": "tranche7-manifest.json",
+      "artifact": "tranche7-controls.py",
+      "expected": "97beb913e510f97e3fe0add717128389911713a114de26c9fecd01807ca8ed96",
+      "actual": "97beb913e510f97e3fe0add717128389911713a114de26c9fecd01807ca8ed96",
+      "pass": true
+    },
+    {
+      "manifest": "tranche7-manifest.json",
+      "artifact": "tranche7-initial-ledger.md",
+      "expected": "8f9c3a82713ad18d933a0750b45aab5985b09183475213321c7c8980b79a081c",
+      "actual": "8f9c3a82713ad18d933a0750b45aab5985b09183475213321c7c8980b79a081c",
+      "pass": true
+    },
+    {
+      "manifest": "tranche7-manifest.json",
+      "artifact": "tranche7-initial-rows.json",
+      "expected": "8a52ab1cd367a433a964ab44392e7490d09a2e0d5ec56ef0f9079227ca9a73bd",
+      "actual": "8a52ab1cd367a433a964ab44392e7490d09a2e0d5ec56ef0f9079227ca9a73bd",
+      "pass": true
+    },
+    {
+      "manifest": "tranche7-manifest.json",
+      "artifact": "tranche7-protection.json",
+      "expected": "60cb06679565cdc905a3b201c2c1def32fe113fc6bfc06415a8463f8e5d7839f",
+      "actual": "60cb06679565cdc905a3b201c2c1def32fe113fc6bfc06415a8463f8e5d7839f",
+      "pass": true
+    },
+    {
+      "manifest": "tranche7-manifest.json",
+      "artifact": "tranche7-read-ledger.json",
+      "expected": "06d01a361e51242979f36e8d217179efb43b0ffaf922775b9daa1b388ab1a745",
+      "actual": "06d01a361e51242979f36e8d217179efb43b0ffaf922775b9daa1b388ab1a745",
+      "pass": true
+    },
+    {
+      "manifest": "tranche7-manifest.json",
+      "artifact": "tranche7-report.md",
+      "expected": "b60783bbf09f27d43be1f89e0f26f864f2d95004e240d370f33fc10795ad9d8c",
+      "actual": "b60783bbf09f27d43be1f89e0f26f864f2d95004e240d370f33fc10795ad9d8c",
+      "pass": true
+    },
+    {
+      "manifest": "tranche7-manifest.json",
+      "artifact": "tranche7-result.json",
+      "expected": "8c22815ce48cb680bffe58c86a0564ecb44d9211db733221c8c08d5852c5d27b",
+      "actual": "8c22815ce48cb680bffe58c86a0564ecb44d9211db733221c8c08d5852c5d27b",
+      "pass": true
+    },
+    {
+      "manifest": "tranche7-manifest.json",
+      "artifact": "tranche7-source-check.json",
+      "expected": "a9f83bb8e286b717270da8bdda8ca8c9deb596357238ec365596e25e0ee6a1ab",
+      "actual": "a9f83bb8e286b717270da8bdda8ca8c9deb596357238ec365596e25e0ee6a1ab",
+      "pass": true
+    },
+    {
+      "manifest": "tranche8-manifest.json",
+      "artifact": "tranche8-controls.json",
+      "expected": "e4e64609514803fcc055d9696a5977c091ef7ebb98d1fa72f64dcda97172d216",
+      "actual": "e4e64609514803fcc055d9696a5977c091ef7ebb98d1fa72f64dcda97172d216",
+      "pass": true
+    },
+    {
+      "manifest": "tranche8-manifest.json",
+      "artifact": "tranche8-controls.py",
+      "expected": "f8d5c990fab2f309f1b91d4aff99a4ddf0e133b999af98e3520af574c5722b9c",
+      "actual": "f8d5c990fab2f309f1b91d4aff99a4ddf0e133b999af98e3520af574c5722b9c",
+      "pass": true
+    },
+    {
+      "manifest": "tranche8-manifest.json",
+      "artifact": "tranche8-initial-ledger.md",
+      "expected": "4ec45fe0d20e05e12750616e05553a0110d99171a09104f8895037d7e498b4dd",
+      "actual": "4ec45fe0d20e05e12750616e05553a0110d99171a09104f8895037d7e498b4dd",
+      "pass": true
+    },
+    {
+      "manifest": "tranche8-manifest.json",
+      "artifact": "tranche8-initial-rows.json",
+      "expected": "7be5ebbcef71bc70f49c21e29aa367ec906d43a60ad5ef619d7813716c1efe44",
+      "actual": "7be5ebbcef71bc70f49c21e29aa367ec906d43a60ad5ef619d7813716c1efe44",
+      "pass": true
+    },
+    {
+      "manifest": "tranche8-manifest.json",
+      "artifact": "tranche8-protection.json",
+      "expected": "f49c5e728a011ea4833dfd19d07adf1e824577cc2ddafa78b34882b6e8474e58",
+      "actual": "f49c5e728a011ea4833dfd19d07adf1e824577cc2ddafa78b34882b6e8474e58",
+      "pass": true
+    },
+    {
+      "manifest": "tranche8-manifest.json",
+      "artifact": "tranche8-read-ledger.json",
+      "expected": "6847d02f5be55de8b06f84f8b7bb02353ba455da0e2c8056fea4792bfb7445ef",
+      "actual": "6847d02f5be55de8b06f84f8b7bb02353ba455da0e2c8056fea4792bfb7445ef",
+      "pass": true
+    },
+    {
+      "manifest": "tranche8-manifest.json",
+      "artifact": "tranche8-report.md",
+      "expected": "74b8bae2d7e3f797d51d92c881fc80e36d35c11600bad380882c7d1a5219baf4",
+      "actual": "74b8bae2d7e3f797d51d92c881fc80e36d35c11600bad380882c7d1a5219baf4",
+      "pass": true
+    },
+    {
+      "manifest": "tranche8-manifest.json",
+      "artifact": "tranche8-result.json",
+      "expected": "53af753a0e9391bdfc0c2dd9ead25ab02b99737f70a5f5c6b98602cd4a1a4589",
+      "actual": "53af753a0e9391bdfc0c2dd9ead25ab02b99737f70a5f5c6b98602cd4a1a4589",
+      "pass": true
+    },
+    {
+      "manifest": "tranche8-manifest.json",
+      "artifact": "tranche8-source-check.json",
+      "expected": "19786f25e6b97ac8a5ff0cf1406afdbfa3d0efed8e783a41cc799574e98d64b8",
+      "actual": "19786f25e6b97ac8a5ff0cf1406afdbfa3d0efed8e783a41cc799574e98d64b8",
+      "pass": true
+    },
+    {
+      "manifest": "tranche8-manifest.json",
+      "artifact": "tranche8-successor-delta.json",
+      "expected": "186dcab800de4fb99618b3021ba2c747e44833c9804d26d6e40007cf6cbcb829",
+      "actual": "186dcab800de4fb99618b3021ba2c747e44833c9804d26d6e40007cf6cbcb829",
+      "pass": true
+    },
+    {
+      "manifest": "tranche8-manifest.json",
+      "artifact": "tranche8-successor-presence.json",
+      "expected": "644c2458bf8dadfb4221157500903a3b5cf08f81389cc79328517a03a2c3569e",
+      "actual": "644c2458bf8dadfb4221157500903a3b5cf08f81389cc79328517a03a2c3569e",
+      "pass": true
+    },
+    {
+      "manifest": "tranche9-manifest.json",
+      "artifact": "tranche9-B2026-primary-response.json",
+      "expected": "09a1ff9e25cada7c42e1aa76ffcb729459e7ce2d593c6453298e3db666889a77",
+      "actual": "09a1ff9e25cada7c42e1aa76ffcb729459e7ce2d593c6453298e3db666889a77",
+      "pass": true
+    },
+    {
+      "manifest": "tranche9-manifest.json",
+      "artifact": "tranche9-controls.json",
+      "expected": "ea9e94a3dc8ae117e2ce3984085416b3f83076fbc86a45033c452824450786cf",
+      "actual": "ea9e94a3dc8ae117e2ce3984085416b3f83076fbc86a45033c452824450786cf",
+      "pass": true
+    },
+    {
+      "manifest": "tranche9-manifest.json",
+      "artifact": "tranche9-controls.py",
+      "expected": "6c3d7847794e9834ebd1c3e0d1cec60a173d75083a1c426a41faf4bf7e1341b7",
+      "actual": "6c3d7847794e9834ebd1c3e0d1cec60a173d75083a1c426a41faf4bf7e1341b7",
+      "pass": true
+    },
+    {
+      "manifest": "tranche9-manifest.json",
+      "artifact": "tranche9-harness-erratum.json",
+      "expected": "311e78eea7ce07a87bcd8e0dfb03929427310311c4038a9690feb71fbb251ddd",
+      "actual": "311e78eea7ce07a87bcd8e0dfb03929427310311c4038a9690feb71fbb251ddd",
+      "pass": true
+    },
+    {
+      "manifest": "tranche9-manifest.json",
+      "artifact": "tranche9-initial-ledger.md",
+      "expected": "4ab02c9e6177ea9096b5e7f92e3bc3cf60841e88649797f243c973894e9eb080",
+      "actual": "4ab02c9e6177ea9096b5e7f92e3bc3cf60841e88649797f243c973894e9eb080",
+      "pass": true
+    },
+    {
+      "manifest": "tranche9-manifest.json",
+      "artifact": "tranche9-initial-rows.json",
+      "expected": "a4db206ef514eff700f9616e79d988ca41ec27d494c695fd298ede92c5506f10",
+      "actual": "a4db206ef514eff700f9616e79d988ca41ec27d494c695fd298ede92c5506f10",
+      "pass": true
+    },
+    {
+      "manifest": "tranche9-manifest.json",
+      "artifact": "tranche9-protection.json",
+      "expected": "06e03be02c112d805900486a4cbb874c7e950ce800fc424531e1cfbbd0f11729",
+      "actual": "06e03be02c112d805900486a4cbb874c7e950ce800fc424531e1cfbbd0f11729",
+      "pass": true
+    },
+    {
+      "manifest": "tranche9-manifest.json",
+      "artifact": "tranche9-read-ledger.json",
+      "expected": "184a5ff9eafe5a1a4c963bbb81ca3fe2db85419384389dcfe3b04411746fba1d",
+      "actual": "184a5ff9eafe5a1a4c963bbb81ca3fe2db85419384389dcfe3b04411746fba1d",
+      "pass": true
+    },
+    {
+      "manifest": "tranche9-manifest.json",
+      "artifact": "tranche9-report.md",
+      "expected": "e351fa46d61ddccff6edc7889b9eac26ac382ae00c50fa5c695c2334e46369e2",
+      "actual": "e351fa46d61ddccff6edc7889b9eac26ac382ae00c50fa5c695c2334e46369e2",
+      "pass": true
+    },
+    {
+      "manifest": "tranche9-manifest.json",
+      "artifact": "tranche9-result.json",
+      "expected": "156261001f71cbb959121fc0c02f7ed67ad87581f810375e203294470c77422b",
+      "actual": "156261001f71cbb959121fc0c02f7ed67ad87581f810375e203294470c77422b",
+      "pass": true
+    },
+    {
+      "manifest": "tranche9-manifest.json",
+      "artifact": "tranche9-source-check.json",
+      "expected": "83a0fd7dbf97dbf94c764d5f995cd23f9c8db78aa000a495b95c89cf4fa87bc8",
+      "actual": "83a0fd7dbf97dbf94c764d5f995cd23f9c8db78aa000a495b95c89cf4fa87bc8",
+      "pass": true
+    },
+    {
+      "manifest": "tranche10-manifest.json",
+      "artifact": "tranche10-controls.json",
+      "expected": "f46afb581ee62e854f0bd7f037acfc912726f0ac3f8928acd588f01327f6e5d9",
+      "actual": "f46afb581ee62e854f0bd7f037acfc912726f0ac3f8928acd588f01327f6e5d9",
+      "pass": true
+    },
+    {
+      "manifest": "tranche10-manifest.json",
+      "artifact": "tranche10-examples.txt",
+      "expected": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "actual": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "pass": true
+    },
+    {
+      "manifest": "tranche10-manifest.json",
+      "artifact": "tranche10-independent-controls.py",
+      "expected": "ca199abd77691602a9ca3fed0ab15b7d9f2ab9b8eb78f6e991945322b4d9e18d",
+      "actual": "ca199abd77691602a9ca3fed0ab15b7d9f2ab9b8eb78f6e991945322b4d9e18d",
+      "pass": true
+    },
+    {
+      "manifest": "tranche10-manifest.json",
+      "artifact": "tranche10-integrity.json",
+      "expected": "637da30f343237a1fddc6b11cc75e0442ae1e2fa4754b2f2b982c0b9620cafa7",
+      "actual": "637da30f343237a1fddc6b11cc75e0442ae1e2fa4754b2f2b982c0b9620cafa7",
+      "pass": true
+    },
+    {
+      "manifest": "tranche10-manifest.json",
+      "artifact": "tranche10-read-ledger.json",
+      "expected": "25bd9e1cdf4d88d76095ee5eca3c577bea1fa46c137de1cf96a5347b7c4c69c3",
+      "actual": "25bd9e1cdf4d88d76095ee5eca3c577bea1fa46c137de1cf96a5347b7c4c69c3",
+      "pass": true
+    },
+    {
+      "manifest": "tranche10-manifest.json",
+      "artifact": "tranche10-repair.diff",
+      "expected": "86b0018a826f3c3b1d2de44ee4d5e37deb8ccbc1ecb1ee491047672df664db66",
+      "actual": "86b0018a826f3c3b1d2de44ee4d5e37deb8ccbc1ecb1ee491047672df664db66",
+      "pass": true
+    },
+    {
+      "manifest": "tranche10-manifest.json",
+      "artifact": "tranche10-report.md",
+      "expected": "2d0b2df8b896f1da91671fdf434a9737ce3d6c3ce76b2e46a71f70840dcc7721",
+      "actual": "2d0b2df8b896f1da91671fdf434a9737ce3d6c3ce76b2e46a71f70840dcc7721",
+      "pass": true
+    },
+    {
+      "manifest": "tranche11-manifest.json",
+      "artifact": "tranche11-controls.json",
+      "expected": "81d58c09f2b4440a03e8e2138cc5d3a4163d38c324515b359a07fcdc6e19bedc",
+      "actual": "81d58c09f2b4440a03e8e2138cc5d3a4163d38c324515b359a07fcdc6e19bedc",
+      "pass": true
+    },
+    {
+      "manifest": "tranche11-manifest.json",
+      "artifact": "tranche11-examples.txt",
+      "expected": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "actual": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "pass": true
+    },
+    {
+      "manifest": "tranche11-manifest.json",
+      "artifact": "tranche11-independent-controls.py",
+      "expected": "aa623827c41051c69e47fc788299724ad8d3eb943ce734adfbc59d41e6aa28a2",
+      "actual": "aa623827c41051c69e47fc788299724ad8d3eb943ce734adfbc59d41e6aa28a2",
+      "pass": true
+    },
+    {
+      "manifest": "tranche11-manifest.json",
+      "artifact": "tranche11-initial-integrity.json",
+      "expected": "efe58ca04447b520f42a30c553bb868499ab504ef1cf39660650cfadb23f3f29",
+      "actual": "efe58ca04447b520f42a30c553bb868499ab504ef1cf39660650cfadb23f3f29",
+      "pass": true
+    },
+    {
+      "manifest": "tranche11-manifest.json",
+      "artifact": "tranche11-read-ledger.json",
+      "expected": "b466f5eed9c9a35978298da0d877b7641152915fd4e65d8cfc6382f6c46c7d3b",
+      "actual": "b466f5eed9c9a35978298da0d877b7641152915fd4e65d8cfc6382f6c46c7d3b",
+      "pass": true
+    },
+    {
+      "manifest": "tranche11-manifest.json",
+      "artifact": "tranche11-report.md",
+      "expected": "301b0d8bc9e5e7b960edc8105e19fdaf9e37a6fb7598bd0072ce2a79b6c128a5",
+      "actual": "301b0d8bc9e5e7b960edc8105e19fdaf9e37a6fb7598bd0072ce2a79b6c128a5",
+      "pass": true
+    },
+    {
+      "manifest": "tranche12-manifest.json",
+      "artifact": "tranche12-controls.json",
+      "expected": "029edbcfec61263e84411f29e1f56bb0a9df129bda13c158afcfbfa5a0cf0b59",
+      "actual": "029edbcfec61263e84411f29e1f56bb0a9df129bda13c158afcfbfa5a0cf0b59",
+      "pass": true
+    },
+    {
+      "manifest": "tranche12-manifest.json",
+      "artifact": "tranche12-examples.txt",
+      "expected": "6f2707f75acbabb75ad90768efc2ac14f60af5a6b9a500d7474f2fbec83499ff",
+      "actual": "6f2707f75acbabb75ad90768efc2ac14f60af5a6b9a500d7474f2fbec83499ff",
+      "pass": true
+    },
+    {
+      "manifest": "tranche12-manifest.json",
+      "artifact": "tranche12-final-identity.json",
+      "expected": "0231b3952f8cd3934bd0a7200f9c53321d36938044e14ba43a9e99574780c2a8",
+      "actual": "0231b3952f8cd3934bd0a7200f9c53321d36938044e14ba43a9e99574780c2a8",
+      "pass": true
+    },
+    {
+      "manifest": "tranche12-manifest.json",
+      "artifact": "tranche12-independent-controls.py",
+      "expected": "e6ba39d7c01a487eaea91a36469dc91cff9324b83e647e57da030e510964cfbf",
+      "actual": "e6ba39d7c01a487eaea91a36469dc91cff9324b83e647e57da030e510964cfbf",
+      "pass": true
+    },
+    {
+      "manifest": "tranche12-manifest.json",
+      "artifact": "tranche12-initial-integrity.json",
+      "expected": "ef1e0dc7263e8c10a396d016837608ab3a864ecf77c8b1a251e46dd7bcc059cd",
+      "actual": "ef1e0dc7263e8c10a396d016837608ab3a864ecf77c8b1a251e46dd7bcc059cd",
+      "pass": true
+    },
+    {
+      "manifest": "tranche12-manifest.json",
+      "artifact": "tranche12-read-ledger.json",
+      "expected": "608b1c7f38304696f08097170c1a2e022cabe7e69ed0ab28e386d0fd69cb3293",
+      "actual": "608b1c7f38304696f08097170c1a2e022cabe7e69ed0ab28e386d0fd69cb3293",
+      "pass": true
+    },
+    {
+      "manifest": "tranche12-manifest.json",
+      "artifact": "tranche12-report.md",
+      "expected": "0a581060515ff9d5d625ae8ffd751b309b3423ebdd9c5f599775e31f028d8c13",
+      "actual": "0a581060515ff9d5d625ae8ffd751b309b3423ebdd9c5f599775e31f028d8c13",
+      "pass": true
+    },
+    {
+      "manifest": "tranche12-manifest.json",
+      "artifact": "tranche12-successor-integrity.json",
+      "expected": "812e636cdbca1a02ef1c899b4f277500d62dc31db2b2d4ee250f4c9ba8006dda",
+      "actual": "812e636cdbca1a02ef1c899b4f277500d62dc31db2b2d4ee250f4c9ba8006dda",
+      "pass": true
+    },
+    {
+      "manifest": "tranche13-manifest.json",
+      "artifact": "tranche13-report.md",
+      "expected": "67831a28f498d2a0f2fd2b4e78386cfa8765108b4da0d015721aa2ff45031a56",
+      "actual": "67831a28f498d2a0f2fd2b4e78386cfa8765108b4da0d015721aa2ff45031a56",
+      "pass": true
+    },
+    {
+      "manifest": "tranche13-manifest.json",
+      "artifact": "tranche13-integrity.json",
+      "expected": "b323365adb8bead8a2777e3ad0b95abd0d48eb8e550a2481c0658fd10ef51b9b",
+      "actual": "b323365adb8bead8a2777e3ad0b95abd0d48eb8e550a2481c0658fd10ef51b9b",
+      "pass": true
+    },
+    {
+      "manifest": "tranche13-manifest.json",
+      "artifact": "tranche13-read-ledger.json",
+      "expected": "556198f10a4096730942e0a019cf40bd82cb1d38fc65842311103d6fc535921a",
+      "actual": "556198f10a4096730942e0a019cf40bd82cb1d38fc65842311103d6fc535921a",
+      "pass": true
+    },
+    {
+      "manifest": "tranche13-manifest.json",
+      "artifact": "tranche13-controls.json",
+      "expected": "15aa167265eae979e458cce357031ce745546f35e2ecf5378eb04a82640cb4d7",
+      "actual": "15aa167265eae979e458cce357031ce745546f35e2ecf5378eb04a82640cb4d7",
+      "pass": true
+    },
+    {
+      "manifest": "tranche13-manifest.json",
+      "artifact": "tranche13-controls.py",
+      "expected": "c95867b8f4bd25ad670bba3eab2c558cded5271d52cdf0ee4fd60da3e85541a4",
+      "actual": "c95867b8f4bd25ad670bba3eab2c558cded5271d52cdf0ee4fd60da3e85541a4",
+      "pass": true
+    },
+    {
+      "manifest": "tranche13-manifest.json",
+      "artifact": "tranche13-examples.txt",
+      "expected": "8462a54404640b88268f6ea6a6c28da25fbe9de52a9947c6bb3a0fed138ebe4d",
+      "actual": "8462a54404640b88268f6ea6a6c28da25fbe9de52a9947c6bb3a0fed138ebe4d",
+      "pass": true
+    },
+    {
+      "manifest": "tranche13-manifest.json",
+      "artifact": "tranche13-native-LF-finding.json",
+      "expected": "be0f435621c60a0596bd8cd43e66b25563ce9eae64360c08f5a1289496a0df0e",
+      "actual": "be0f435621c60a0596bd8cd43e66b25563ce9eae64360c08f5a1289496a0df0e",
+      "pass": true
+    },
+    {
+      "manifest": "tranche14-manifest.json",
+      "artifact": "tranche14-report.md",
+      "expected": "01887a51f1e254eb29babb1a38bde80b32f9e15fb48a0a13878f1dae3c811e7f",
+      "actual": "01887a51f1e254eb29babb1a38bde80b32f9e15fb48a0a13878f1dae3c811e7f",
+      "pass": true
+    },
+    {
+      "manifest": "tranche14-manifest.json",
+      "artifact": "tranche14-final-integrity.json",
+      "expected": "5c0d3405678a5d5f0fdac145a1498f5f502226a569dc706c94b3dabf2ceb7b7f",
+      "actual": "5c0d3405678a5d5f0fdac145a1498f5f502226a569dc706c94b3dabf2ceb7b7f",
+      "pass": true
+    },
+    {
+      "manifest": "tranche14-manifest.json",
+      "artifact": "tranche14-read-ledger.json",
+      "expected": "d256a937cbb29364fd0262360be50a8c6018bc03ba1408f3de7c365ef21409c4",
+      "actual": "d256a937cbb29364fd0262360be50a8c6018bc03ba1408f3de7c365ef21409c4",
+      "pass": true
+    },
+    {
+      "manifest": "tranche14-manifest.json",
+      "artifact": "tranche14-source-identities.json",
+      "expected": "2312b09897463bf5528f3ce873a3072ed5421d2df85411c8303782c92256c3b7",
+      "actual": "2312b09897463bf5528f3ce873a3072ed5421d2df85411c8303782c92256c3b7",
+      "pass": true
+    },
+    {
+      "manifest": "tranche14-manifest.json",
+      "artifact": "tranche14-controls.json",
+      "expected": "6bb15faa9d1b1c50fd92b9ff307af7ac047f9911ead96afa84aed04f38171c63",
+      "actual": "6bb15faa9d1b1c50fd92b9ff307af7ac047f9911ead96afa84aed04f38171c63",
+      "pass": true
+    },
+    {
+      "manifest": "tranche14-manifest.json",
+      "artifact": "tranche14-controls.py",
+      "expected": "ac85c69ba022fcbec45470decf4789b7ea85324087656cf9b8db4b9ff7ec4898",
+      "actual": "ac85c69ba022fcbec45470decf4789b7ea85324087656cf9b8db4b9ff7ec4898",
+      "pass": true
+    },
+    {
+      "manifest": "tranche14-manifest.json",
+      "artifact": "tranche14-examples.txt",
+      "expected": "50fb7cc5050d01b87502a8144b2d20aea48fdd4a71dfe2fe838d41cccdeee0aa",
+      "actual": "50fb7cc5050d01b87502a8144b2d20aea48fdd4a71dfe2fe838d41cccdeee0aa",
+      "pass": true
+    },
+    {
+      "manifest": "tranche14-manifest.json",
+      "artifact": "tranche14-initial-integrity.json",
+      "expected": "28add02494e0e9da950b00b9e56637aad6d0b80156af909da5337c5e29560a89",
+      "actual": "28add02494e0e9da950b00b9e56637aad6d0b80156af909da5337c5e29560a89",
+      "pass": true
+    },
+    {
+      "manifest": "tranche15-manifest.json",
+      "artifact": "tranche15-report.md",
+      "expected": "7f274337a67126777c709bb1f733ac5ef6ea405e93cf1f5942b68439a4d9dbbd",
+      "actual": "7f274337a67126777c709bb1f733ac5ef6ea405e93cf1f5942b68439a4d9dbbd",
+      "pass": true
+    },
+    {
+      "manifest": "tranche15-manifest.json",
+      "artifact": "tranche15-final-integrity.json",
+      "expected": "526797910ee9b12b4c58a34f7539928ee880d8880950c55fcab1d44d3d7aeafc",
+      "actual": "526797910ee9b12b4c58a34f7539928ee880d8880950c55fcab1d44d3d7aeafc",
+      "pass": true
+    },
+    {
+      "manifest": "tranche15-manifest.json",
+      "artifact": "tranche15-read-ledger.json",
+      "expected": "274d8f92a0fb9428b099b9b44283c35c71cb0e9188f60a52d81439d657a0c8c8",
+      "actual": "274d8f92a0fb9428b099b9b44283c35c71cb0e9188f60a52d81439d657a0c8c8",
+      "pass": true
+    },
+    {
+      "manifest": "tranche15-manifest.json",
+      "artifact": "tranche15-source-identities.json",
+      "expected": "cae8a4d6129451a16b8b095c3a83716dce15cf9319749407895f0c836e5f0640",
+      "actual": "cae8a4d6129451a16b8b095c3a83716dce15cf9319749407895f0c836e5f0640",
+      "pass": true
+    },
+    {
+      "manifest": "tranche15-manifest.json",
+      "artifact": "tranche15-controls.json",
+      "expected": "2a10b36c0a602342ecb633d1bc0e847031b643e43d66b895f488be7db078d873",
+      "actual": "2a10b36c0a602342ecb633d1bc0e847031b643e43d66b895f488be7db078d873",
+      "pass": true
+    },
+    {
+      "manifest": "tranche15-manifest.json",
+      "artifact": "tranche15-controls.py",
+      "expected": "f4647cfe6744b957d1cb7e6842f68c610f3f730107f6fca5fa0cafa1bd25be4f",
+      "actual": "f4647cfe6744b957d1cb7e6842f68c610f3f730107f6fca5fa0cafa1bd25be4f",
+      "pass": true
+    },
+    {
+      "manifest": "tranche15-manifest.json",
+      "artifact": "tranche15-examples.txt",
+      "expected": "2b2d2f05ee094a1451299deac0bf10591aa14ec0f834c47fb74051c9b763fa25",
+      "actual": "2b2d2f05ee094a1451299deac0bf10591aa14ec0f834c47fb74051c9b763fa25",
+      "pass": true
+    },
+    {
+      "manifest": "tranche15-manifest.json",
+      "artifact": "S-L24-finding.json",
+      "expected": "bd34b5cc4bfda9b0e8de0765f5611a3695d634d87fdddca641989d538fb9e435",
+      "actual": "bd34b5cc4bfda9b0e8de0765f5611a3695d634d87fdddca641989d538fb9e435",
+      "pass": true
+    },
+    {
+      "manifest": "tranche16-manifest.json",
+      "artifact": "tranche16-report.md",
+      "expected": "9890bfe36b8ce232075eafaa0e8cfec9f0be3ed0a252909e3fa05a73e6d273a1",
+      "actual": "9890bfe36b8ce232075eafaa0e8cfec9f0be3ed0a252909e3fa05a73e6d273a1",
+      "pass": true
+    },
+    {
+      "manifest": "tranche16-manifest.json",
+      "artifact": "tranche16-final-integrity.json",
+      "expected": "df2732af38606f4a5eed3eb3c5f2d901eee0dad18f5b1885fe1cf7153d17c84e",
+      "actual": "df2732af38606f4a5eed3eb3c5f2d901eee0dad18f5b1885fe1cf7153d17c84e",
+      "pass": true
+    },
+    {
+      "manifest": "tranche16-manifest.json",
+      "artifact": "tranche16-read-ledger.json",
+      "expected": "cf9427e988d25658ecec9f850071d288739b77101fe6350edc6a179eef90a9ca",
+      "actual": "cf9427e988d25658ecec9f850071d288739b77101fe6350edc6a179eef90a9ca",
+      "pass": true
+    },
+    {
+      "manifest": "tranche16-manifest.json",
+      "artifact": "tranche16-source-identities.json",
+      "expected": "1e5ec9492963168b8f307da63e4af8a568d64fa519e729c7e8a7f5871aa69f90",
+      "actual": "1e5ec9492963168b8f307da63e4af8a568d64fa519e729c7e8a7f5871aa69f90",
+      "pass": true
+    },
+    {
+      "manifest": "tranche16-manifest.json",
+      "artifact": "tranche16-controls.json",
+      "expected": "27c2faf78f88928102120c24590726d8d93f984cb8056c9d87bf848d02a89cbf",
+      "actual": "27c2faf78f88928102120c24590726d8d93f984cb8056c9d87bf848d02a89cbf",
+      "pass": true
+    },
+    {
+      "manifest": "tranche16-manifest.json",
+      "artifact": "tranche16-controls.py",
+      "expected": "d4d6cf95c15f153d0eb85b7eaede82398b69d16e0fb2ae94cf143b47dce1a72a",
+      "actual": "d4d6cf95c15f153d0eb85b7eaede82398b69d16e0fb2ae94cf143b47dce1a72a",
+      "pass": true
+    },
+    {
+      "manifest": "tranche16-manifest.json",
+      "artifact": "tranche16-examples.txt",
+      "expected": "6ea6c71e03e0336478d6ae18b0711dbec7bbdb5de68f9387039e6015f0d5af74",
+      "actual": "6ea6c71e03e0336478d6ae18b0711dbec7bbdb5de68f9387039e6015f0d5af74",
+      "pass": true
+    },
+    {
+      "manifest": "tranche16-manifest.json",
+      "artifact": "tranche16-quote-reuse-map.json",
+      "expected": "9243c21dc9bface70da872ef00163d164b0f8c574e25c57ad59a7c310152d27b",
+      "actual": "9243c21dc9bface70da872ef00163d164b0f8c574e25c57ad59a7c310152d27b",
+      "pass": true
+    },
+    {
+      "manifest": "tranche16-manifest.json",
+      "artifact": "tranche16-harness-erratum.json",
+      "expected": "bacfe87a495cb64359fdaaf815728f2393152711382f6f787eae90c5f2d59feb",
+      "actual": "bacfe87a495cb64359fdaaf815728f2393152711382f6f787eae90c5f2d59feb",
+      "pass": true
+    },
+    {
+      "manifest": "native-LF-erratum-manifest.json",
+      "artifact": "native-LF-erratum-report.md",
+      "expected": "4bce6e2a8c2c5b71f63ddf62d67444ca9a03cedbb6b4746a4cfc9fcddee70065",
+      "actual": "4bce6e2a8c2c5b71f63ddf62d67444ca9a03cedbb6b4746a4cfc9fcddee70065",
+      "pass": true
+    },
+    {
+      "manifest": "native-LF-erratum-manifest.json",
+      "artifact": "native-LF-successor-bindings.json",
+      "expected": "097f17e71beff3be57f08fa520784c0b1f76a06a98adaffb3d6fc02e8910ca0e",
+      "actual": "097f17e71beff3be57f08fa520784c0b1f76a06a98adaffb3d6fc02e8910ca0e",
+      "pass": true
+    },
+    {
+      "manifest": "native-LF-erratum-manifest.json",
+      "artifact": "native-LF-final-audit.json",
+      "expected": "f59241118497a1357aad9e176c7d7d5380d9333d83b5fc70fe883cc286aa7c5a",
+      "actual": "f59241118497a1357aad9e176c7d7d5380d9333d83b5fc70fe883cc286aa7c5a",
+      "pass": true
+    },
+    {
+      "manifest": "native-LF-erratum-manifest.json",
+      "artifact": "native-LF-audit-groupA-current.json",
+      "expected": "9d04a519993ebe4e5736402f54da1590d3f92ebd19804054013834cd407c5e83",
+      "actual": "9d04a519993ebe4e5736402f54da1590d3f92ebd19804054013834cd407c5e83",
+      "pass": true
+    },
+    {
+      "manifest": "native-LF-erratum-manifest.json",
+      "artifact": "native-LF-audit-groupB-schema.json",
+      "expected": "8254fd22be6af85340c02ca7c1a91cbdaddb554df6727261896efefb54f84ad3",
+      "actual": "8254fd22be6af85340c02ca7c1a91cbdaddb554df6727261896efefb54f84ad3",
+      "pass": true
+    }
+  ],
+  "mismatches": []
+}

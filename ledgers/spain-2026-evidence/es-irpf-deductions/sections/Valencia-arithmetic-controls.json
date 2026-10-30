@@ -1,0 +1,845 @@
+{
+  "role": "writer supplementary controls, not independent review",
+  "guide_sha256": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+  "count": 91,
+  "all_pass": true,
+  "controls": [
+    {
+      "name": "FI:26999",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "FI:27000",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "FI:28500",
+      "actual": "0.5",
+      "expected": "0.5",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "FI:30000",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "FI:30001",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "FJ:43999",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "FJ:44000",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "FJ:45500",
+      "actual": "0.5",
+      "expected": "0.5",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "FJ:47000",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "FJ:47001",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "SI:30999",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "SI:31000",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "SI:33000",
+      "actual": "0.5",
+      "expected": "0.5",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "SI:35000",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "SI:35001",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "SJ:53999",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "SJ:54000",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "SJ:56000",
+      "actual": "0.5",
+      "expected": "0.5",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "SJ:58000",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "SJ:58001",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "HI:53999",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "Vac/Vad/Vae"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "HI:54000",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "Vac/Vad/Vae"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "HI:57000",
+      "actual": "0.5",
+      "expected": "0.5",
+      "source_keys": [
+        "Vac/Vad/Vae"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "HI:60000",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "Vac/Vad/Vae"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "HI:60001",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "Vac/Vad/Vae"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "HJ:71999",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "Vac/Vad/Vae"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "HJ:72000",
+      "actual": "1",
+      "expected": "1",
+      "source_keys": [
+        "Vac/Vad/Vae"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "HJ:75000",
+      "actual": "0.5",
+      "expected": "0.5",
+      "source_keys": [
+        "Vac/Vad/Vae"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "HJ:78000",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "Vac/Vad/Vae"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "HJ:78001",
+      "actual": "0",
+      "expected": "0",
+      "source_keys": [
+        "Vac/Vad/Vae"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "birth second amount not conditional on foster183days",
+      "actual": "750",
+      "expected": "750",
+      "source_keys": [
+        "Va"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "foster predecessor exactly183 not >183",
+      "actual": "False",
+      "expected": "False",
+      "source_keys": [
+        "Va"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "foster predecessor184 qualifies ordering",
+      "actual": "True",
+      "expected": "True",
+      "source_keys": [
+        "Va"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "birth600 half phase shared two",
+      "actual": "150.0",
+      "expected": "150",
+      "source_keys": [
+        "Va",
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "nursery297 half phase shared two",
+      "actual": "74.25",
+      "expected": "74.25",
+      "source_keys": [
+        "Ve",
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "reconciliation third birthday31March10months",
+      "actual": "38333/100",
+      "expected": "38333/100",
+      "source_keys": [
+        "Vf",
+        "VRecon"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "reconciliation fifth birthday31March2months",
+      "actual": "7667/100",
+      "expected": "7667/100",
+      "source_keys": [
+        "Vf",
+        "VRecon"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "reconciliation two children global500 not perchild500",
+      "actual": "500",
+      "expected": "500",
+      "source_keys": [
+        "Vf",
+        "VReconGlobal"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "carer mixed1child1ascendant cap",
+      "actual": "990",
+      "expected": "990",
+      "source_keys": [
+        "Vi",
+        "VCarer"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "carer mixed2children1ascendant cap",
+      "actual": "1430",
+      "expected": "1430",
+      "source_keys": [
+        "Vi",
+        "VCarer"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "carer agencyexample",
+      "actual": "1270.71",
+      "expected": "1270.71",
+      "source_keys": [
+        "VCarer"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "carer halfphase1430",
+      "actual": "715.0",
+      "expected": "715",
+      "source_keys": [
+        "Vi",
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "carer joint not doubled",
+      "actual": "1430",
+      "expected": "1430",
+      "source_keys": [
+        "VCarer"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "carer two employers shared990",
+      "actual": "495",
+      "expected": "495",
+      "source_keys": [
+        "VCarer"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "ascendant exactly75 not over75",
+      "actual": "False",
+      "expected": "False",
+      "source_keys": [
+        "Vh"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "ascendant8000 allowed notabove",
+      "actual": "True",
+      "expected": "True",
+      "source_keys": [
+        "Vh"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "ascendant1800return allowed notabove",
+      "actual": "False",
+      "expected": "False",
+      "source_keys": [
+        "Vh"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "two descendant30000aggregate allowed",
+      "actual": "True",
+      "expected": "True",
+      "source_keys": [
+        "Vt"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "two descendant credit after othercredits",
+      "actual": "165.0",
+      "expected": "165",
+      "source_keys": [
+        "Vt"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "rural one descendant addition",
+      "actual": "462",
+      "expected": "462",
+      "source_keys": [
+        "Vaa"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "rural three descendant addition",
+      "actual": "594",
+      "expected": "594",
+      "source_keys": [
+        "Vaa"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "rural two claimants additiononly shared",
+      "actual": "396",
+      "expected": "396",
+      "source_keys": [
+        "Vaa"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "landlord derivedmax",
+      "actual": "165.00",
+      "expected": "165",
+      "source_keys": [
+        "Vj"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "firsthome payment excludesinterest",
+      "actual": "500.00",
+      "expected": "500",
+      "source_keys": [
+        "Vk"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "reference >50 employment move exact50 fails",
+      "actual": "False",
+      "expected": "False",
+      "source_keys": [
+        "Vñ"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "otherhome <50 restriction exact50 notinside",
+      "actual": "False",
+      "expected": "False",
+      "source_keys": [
+        "Vn"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "renewable maxhome",
+      "actual": "3520.0",
+      "expected": "3520",
+      "source_keys": [
+        "Vo"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "renewable secondhome",
+      "actual": "1760.0",
+      "expected": "1760",
+      "source_keys": [
+        "Vo"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "priorloan partialyear comparison",
+      "actual": "300",
+      "expected": "300",
+      "source_keys": [
+        "Vu"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "interestcredit100cap halfphase",
+      "actual": "50.0",
+      "expected": "50",
+      "source_keys": [
+        "Vu",
+        "VGate"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "works ordinarybase5500x20",
+      "actual": "1100.0",
+      "expected": "1100",
+      "source_keys": [
+        "Vw"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "works disabled5500x50",
+      "actual": "2750.0",
+      "expected": "2750",
+      "source_keys": [
+        "Vw"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "culture cap165x21",
+      "actual": "34.65",
+      "expected": "34.65",
+      "source_keys": [
+        "Vx"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "culture exact50000 ineligible",
+      "actual": "False",
+      "expected": "False",
+      "source_keys": [
+        "Vx"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "vehicle enhanced 500",
+      "actual": "550.0",
+      "expected": "550",
+      "source_keys": [
+        "Vy",
+        "VVehicles"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "vehicle enhanced 700",
+      "actual": "770.0",
+      "expected": "770",
+      "source_keys": [
+        "Vy",
+        "VVehicles"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "vehicle enhanced 1400",
+      "actual": "1540.0",
+      "expected": "1540",
+      "source_keys": [
+        "Vy",
+        "VVehicles"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "vehicle enhanced 600",
+      "actual": "660.0",
+      "expected": "660",
+      "source_keys": [
+        "Vy",
+        "VVehicles"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "vehicle enhanced 450",
+      "actual": "495.0",
+      "expected": "495",
+      "source_keys": [
+        "Vy",
+        "VVehicles"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "vehicle twoactualbuyers joint",
+      "actual": "308.0",
+      "expected": "308",
+      "source_keys": [
+        "VVehicles"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "vehicle competingaid ceilingfirst",
+      "actual": "134.0",
+      "expected": "134",
+      "source_keys": [
+        "VVehicles"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "vehicle competingaid actualcostfirst",
+      "actual": "140.0",
+      "expected": "140",
+      "source_keys": [
+        "VVehicles"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "ordinarygift400 first250",
+      "actual": "87.50",
+      "expected": "87.50",
+      "source_keys": [
+        "Vp",
+        "Vq",
+        "Vr"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "COVIDgift400 first150 distinct",
+      "actual": "92.50",
+      "expected": "92.50",
+      "source_keys": [
+        "VCovid"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "gift sharedbase30percent",
+      "actual": "6000.0",
+      "expected": "6000",
+      "source_keys": [
+        "VWealth",
+        "VGiftCap"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "usufruct full year cadastral100k",
+      "actual": "4000.00",
+      "expected": "4000",
+      "source_keys": [
+        "Vs"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "investment ordinary6600 cap",
+      "actual": "6600",
+      "expected": "6600",
+      "source_keys": [
+        "Vz"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "investment enhanced15000 cap",
+      "actual": "15000",
+      "expected": "15000",
+      "source_keys": [
+        "Vz"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "health halfcap not halfrate",
+      "actual": "60.0",
+      "expected": "60",
+      "source_keys": [
+        "Vac"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "health halfcap binding",
+      "actual": "75.0",
+      "expected": "75",
+      "source_keys": [
+        "Vac"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "health equalcarebase two taxpayers",
+      "actual": "100",
+      "expected": "100",
+      "source_keys": [
+        "Vac"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "sport age65 ordinarily30 not over65",
+      "actual": "0.3",
+      "expected": "0.3",
+      "source_keys": [
+        "Vad"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "sport age75 over65 butnot over75",
+      "actual": "0.5",
+      "expected": "0.5",
+      "source_keys": [
+        "Vad"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "sport age76 enhanced100",
+      "actual": "150",
+      "expected": "150",
+      "source_keys": [
+        "Vad"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "music eligiblecost not30percent",
+      "actual": "100",
+      "expected": "100",
+      "source_keys": [
+        "Vae"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "legacyworks BI24000 phasedbase",
+      "actual": "2250.0",
+      "expected": "2250",
+      "source_keys": [
+        "VWorks",
+        "VOldWorks"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "legacyworks cumulativehomebase",
+      "actual": "1000",
+      "expected": "1000",
+      "source_keys": [
+        "VWorks"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "DANAexpiry2024/4",
+      "actual": "2028",
+      "expected": "2028",
+      "source_keys": [
+        "VDana"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "DANAexpiry2025/4",
+      "actual": "2029",
+      "expected": "2029",
+      "source_keys": [
+        "VDana"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "DANAexpiry2024/3",
+      "actual": "2027",
+      "expected": "2027",
+      "source_keys": [
+        "VDana"
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "DANAexpiry2025/3",
+      "actual": "2028",
+      "expected": "2028",
+      "source_keys": [
+        "VDana"
+      ],
+      "pass_check": true
+    }
+  ]
+}

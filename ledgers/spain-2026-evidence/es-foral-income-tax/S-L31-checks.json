@@ -1,0 +1,21 @@
+{
+  "row": 1315,
+  "two_actual_selected_reads": true,
+  "noncontinuous_scope_explicit": true,
+  "other_rows_exact": 2676,
+  "guide_sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+  "raw_sha256": "1b1d5a0d6614b8b43edb911edefe1065ad55ee7e132707e6ecf20bfe57d7680c",
+  "reader_sha256": "ae30b9c6c954cae3e355afd1912bd420b2295bcbc3a9f0faac50436d436b1424",
+  "parts": [
+    {
+      "LF_start": 843,
+      "LF_end": 878,
+      "literal_match": true
+    },
+    {
+      "LF_start": 1942,
+      "LF_end": 1978,
+      "literal_match": true
+    }
+  ]
+}

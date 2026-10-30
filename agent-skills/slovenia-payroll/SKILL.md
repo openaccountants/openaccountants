@@ -1,511 +1,197 @@
 ---
 name: slovenia-payroll
-description: "Use this skill whenever asked about Slovenia payroll processing for employed persons. Trigger on phrases like \"Slovenia payroll\", \"Slovenian payroll\", \"akontacija dohodnine\", \"dohodnina withholding\", \"REK-O\", \"REK obrazec\", \"prispevki ZPIZ\", \"social contributions Slovenia\", \"ZZZS contributions\", \"long-term care contribution Slovenia\", \"ZDOsk\", \"splošna olajšava\", \"minimalna plača\", \"minimum wage Slovenia\", \"bruto plača\", \"neto plača\", \"net salary Slovenia\", \"gross to net Slovenia\", \"employer SSC Slovenia\", \"FURS payroll\", \"eDavki\", \"salary calculation Slovenia\", or any question about computing employee pay, withholding income tax, or social security contributions for Slovenia-based employees. This skill covers progressive PIT withholding (akontacija dohodnine), employee and employer social security contributions (ZPIZ pension, ZZZS health, unemployment, parental, injury-at-work), the new long-term care contribution (ZDOsk-1, from 1 July 2025), the flat compulsory health contribution, m"
+description: "Slovenian payroll for employees for tax year 2026. Covers the monthly gross-to-net: employee contributions of 22.1% plus 1% long-term care, employer contributions of 16.1% plus 1% long-term care, the flat compulsory health contribution (EUR 39.36 a month from 1 March 2026), the minimum contribution base (60% of the average wage, EUR 1,521.62) against the 2026 minimum wage of EUR 1,481.88, withholding on the monthly scale with the 2026 general allowance (EUR 462.66 a month plus the low-income taper), the REK-O return filed on the pay date, and fines and late interest. Trigger phrases: Slovenia payroll, gross to net Slovenia, bruto neto plača, akontacija dohodnine, REK-O, REK-1, minimalna plača 2026, najnižja osnova za prispevke, OZP, prispevek za dolgotrajno oskrbo. Out of scope: the self-employed (s.p.) and contribution bases in depth (slovenia-social-contributions), the annual return (slovenia-income-tax), residence and treaties (si-cross-border)."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/slovenia-payroll"
   jurisdiction: "SI"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-10-24"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Slovenia Payroll
+# Slovenia payroll (2026)
 
-## Slovenia Payroll Skill v0.1
+> **Source-cited draft.** Drafted from the Social Security Contributions Act (ZPSV), the Pension and Disability Insurance Act (ZPIZ-2), the Health Care and Health Insurance Act (ZZVZZ), the Long-Term Care Act (ZDOsk-1), the Personal Income Tax Act (ZDoh-2) and the Tax Procedure Act (ZDavP-2), as consolidated on pisrs.si, with figures from the Financial Administration (FURS), the Health Insurance Institute (ZZZS) and gov.si, read on 2026-10-24. No accountant has reviewed it. Do not run a payroll from it without review by a qualified Slovenian professional.
 
-> **Tier 2 — research-verified, NOT yet accountant-verified.** Several figures rely on Big-4 (PwC/KPMG) and aggregator summaries rather than FURS primary documents. Items marked **[RESEARCH GAP — reviewer to confirm]** require a licensed Slovenian accountant (davčni svetovalec / pooblaščeni računovodja) to confirm against FURS/ZPIZ/ZZZS primary sources before reliance. Research confidence: **medium**.
+Tax year: the calendar year. Authority: the Financial Administration (Finančna uprava, FURS) collects withholding tax and contributions through eDavki. The ZZZS runs health and long-term care insurance; the ZPIZ runs pensions. Currency: euro. For the self-employed and the contribution bases in depth, see `slovenia-social-contributions`. For the annual assessment and all allowances, see `slovenia-income-tax`.
+
+## Who this applies to
+
+- **Employers** that pay wages to anyone in an employment relationship in Slovenia: companies, sole proprietors (s.p.) with staff, branches of foreign companies. They calculate, withhold and pay the employee's contributions and tax, and pay their own contributions (ZDavP-2 art. 352(2) and (3); ZPSV art. 6).
+- **Employees** insured under ZPIZ-2 art. 14 and ZZVZZ art. 15(1)(1), whatever their nationality.
+- **Main employer and secondary employer.** The employer from whom the employee earns most of their employment income is the main employer and withholds on the monthly scale with allowances. Any other employer withholds a flat 25% with no allowances (ZDoh-2 art. 127(2), (3) and (6)).
+- **Not covered here:** contract work (podjemna pogodba, 25% withholding under ZDoh-2 art. 127(10)), student work, directors who are also shareholders (insured on a 90% minimum base, see `slovenia-social-contributions`), pensioners who work, and the special rules for companies employing disabled staff.
 
-## Section 1 -- Quick Reference
+## Rates, bands and thresholds
 
-**Section 1 Quick Reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Slovenia (Republic of Slovenia / Republika Slovenija) |
-| Currency | EUR only |
-| Standard pay frequency | Monthly (most common); paid by the agreed pay date |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Income tax | Progressive personal income tax (dohodnina), 5 brackets 16% / 26% / 33% / 39% / 50% [PwC] |
-| Tax withholding system | Monthly advance withholding at source (akontacija dohodnine) by employer [FURS] |
-| Tax authority | Financial Administration of the Republic of Slovenia (FURS / Finančna uprava RS) |
-| Social security administrators | ZPIZ (pension/disability); ZZZS (health + long-term care); contributions collected via FURS [PwC] |
-| Filing portal | eDavki (edavki.durs.si) |
-| Primary payroll return | REK-O (Obračun davčnih odtegljajev), filed on the day of payment [FURS] |
-| Key legislation | ZDoh-2 (PIT); ZPIZ-2 (pension/disability); ZZVZZ (health); ZDOsk-1 (long-term care, LTC contribution from 1 Jul 2025); ZPSV (social-security contributions) |
-| Validated by | Pending -- requires sign-off by a licensed Slovenian accountant |
-| Skill version | 0.1 |
-
-## Section 2 -- Income Tax Withholding (Akontacija Dohodnine)
-
-The employer withholds personal income tax (dohodnina) monthly at source as an advance (akontacija) on employment income, applying the monthly portion of the general allowance (splošna olajšava) and any registered personal reliefs. The advance is computed on the FURS monthly schedule and reconciled annually by FURS [FURS — dohodnina, dohodek iz zaposlitve].
-
-### Progressive PIT Rate Table (2025)
-
-**Progressive PIT Rate Table (2025)**  _(PwC Worldwide Tax Summaries / FURS dohodninska lestvica 2025)_
-
-| Bracket | Taxable Base (EUR) | Marginal Rate | Cumulative Tax at Lower Bound (EUR) |
-| --- | --- | --- | --- |
-| 1 | 0 -- 9,210.26 | 16% | 0 |
-| 2 | 9,210.26 -- 27,089 | 26% | 1,473.64 |
-| 3 | 27,089 -- 54,178 | 33% | 6,122.11 |
-| 4 | 54,178 -- 78,016.32 | 39% | 15,061.48 |
-| 5 | over 78,016.32 | 50% | 24,358.43 |
-
-**Cumulative-tax self-check (recomputed):**
-- B1 top: 9,210.26 x 16% = 1,473.64 ✓
-- B2 top: 1,473.64 + (27,089 − 9,210.26) x 26% = 1,473.64 + 4,648.47 = 6,122.11 ✓
-- B3 top: 6,122.11 + (54,178 − 27,089) x 33% = 6,122.11 + 8,939.37 = 15,061.48 ✓
-- B4 top: 15,061.48 + (78,016.32 − 54,178) x 39% = 15,061.48 + 9,296.94 = 24,358.42 (≈ 24,358.43, rounding) ✓
-
-### Progressive PIT Rate Table (2026, indexed)
-
-**Progressive PIT Rate Table (2026, indexed)**  _(Orbitax (Slovenia Personal Income Tax Brackets and Relief for 2026))_
-
-| Bracket | Taxable Base (EUR) | Marginal Rate |
-| --- | --- | --- |
-| 1 | 0 -- 9,721.43 | 16% |
-| 2 | 9,721.43 -- 28,592.44 | 26% |
-| 3 | 28,592.44 -- 57,184.88 | 33% |
-| 4 | 57,184.88 -- 82,346.23 | 39% |
-| 5 | over 82,346.23 | 50% |
-
-### General Allowance (Splošna Olajšava)
-
-**General Allowance table**  _(PwC Slovenia Deductions)_
-
-| Item | Value (EUR) | Source |
-| --- | --- | --- |
-| Base general allowance (annual) | 5,000 | PwC Slovenia Deductions |
-| Additional low-earner linear allowance | **[RESEARCH GAP — reviewer to confirm]** — for low earners an additional linear allowance applies; the 2025 threshold/formula reported around income up to EUR 16,832 with formula `19,736.99 − 1.17259 x annual income` is **unverified against the FURS primary document** | WebSearch (FURS olajšave 2025) — NOT verified |
-
-> Do **not** assume a higher EUR 5,260 base figure; it was not confirmed and is likely a different year. Use EUR 5,000 base unless a reviewer confirms otherwise against FURS.
-
-### Withholding Method
-
-- **Withholding method** — For monthly withholding the employer applies the FURS monthly schedule: take the monthly gross, deduct employee social contributions, deduct 1/12 of the applicable annual general allowance (and any registered reliefs), and apply the progressive scale (annualised or via the FURS monthly table). The 0% band does not exist in Slovenia — the lowest bracket is 16%; the tax-free effect comes from the general allowance, not a zero-rate band. FURS issues an annual informative income-tax calculation (informativni izračun dohodnine) reconciling withheld advances against final liability.  _([FURS])_
-
-### Out of Scope (schedular income)
-
-- **Capital income schedular treatment** — Capital income (interest, dividends, capital gains, rental) is taxed schedularly at a flat 25% (capital gains rate reduces with holding period), outside the progressive wage scale. Do not run capital income through the payroll progressive brackets.  _([PwC])_
-
-## Section 3 -- Social Security -- Employee Deductions
-
-Employee social security contributions are deducted from gross employment income (bruto plača). Employee contributions on employment income are **uncapped** (no ceiling); the 3.5x-average-wage maximum base applies to self-employed only (see Section 5 / Section 11) [KPMG Flash Alert 2025-133; ZPIZ-2].
-
-### Employee Contribution Rates (2025)
-
-**Employee Contribution Rates (2025)**  _(PwC Worldwide Tax Summaries — Slovenia Other taxes; long-term care row per KPMG Flash Alert 2025-133 / ZDOsk-1)_
-
-| Contribution | Administrator | Rate | Notes |
-| --- | --- | --- | --- |
-| Pension and disability insurance | ZPIZ | 15.50% | gross employment income |
-| Compulsory health insurance | ZZZS | 6.36% | gross employment income |
-| Unemployment insurance | — | 0.14% | gross employment income |
-| Parental protection insurance | — | 0.10% | gross employment income |
-| **Subtotal (before LTC)** |  | **22.10%** | applies to payrolls before 1 Jul 2025 |
-| Long-term care (LTC) contribution | ZZZS (ZDOsk-1) | 1.00% | **NEW from 1 July 2025** |
-| **TOTAL (from 1 Jul 2025, incl. LTC)** |  | **23.10%** | applies to payrolls from 1 Jul 2025 |
-
-**Employee total self-check (recomputed):** 15.50 + 6.36 + 0.14 + 0.10 = 22.10 ✓; + 1.00 LTC = 23.10 ✓
-
-> **Date split is mandatory.** Payrolls dated before 1 July 2025 use 22.10%; payrolls dated on/after 1 July 2025 use 23.10% (the extra 1% is the LTC contribution) [KPMG Flash Alert 2025-133; ZDOsk-1].
-
-### Separate Flat Compulsory Health Contribution (CHC / OZZ replacement)
-
-**Separate Flat Compulsory Health Contribution table**  _(PwC; WebSearch summary)_
-
-| Period (2025) | Monthly amount (EUR) | Source |
-| --- | --- | --- |
-| January -- February 2025 | 35.00 | PwC; WebSearch summary |
-| 1 March 2025 -- end 2025 | 37.17 | PwC; WebSearch summary |
-
-A separate flat per-capita Compulsory Health Contribution is deducted from insured individuals (not a percentage of wage).
-
-> **[RESEARCH GAP — reviewer to confirm]** The CHC amounts and **who remits it** (employer-deducted vs. employee self-pay) come from a secondary search summary and should be verified against ZZZS. The worked examples below show it as a separate deduction line and flag it.
-
-## Section 4 -- Social Security -- Employer Contributions
-
-Employer social security contributions are paid on top of gross employment income. Source: PwC Worldwide Tax Summaries; long-term care row per KPMG Flash Alert 2025-133 / ZDOsk-1.
-
-### Employer Contribution Rates (2025)
-
-**Employer Contribution Rates (2025)**  _(PwC Worldwide Tax Summaries; long-term care row per KPMG Flash Alert 2025-133 / ZDOsk-1)_
-
-| Contribution | Administrator | Rate | Notes |
-| --- | --- | --- | --- |
-| Pension and disability insurance | ZPIZ | 8.85% | gross employment income |
-| Compulsory health insurance | ZZZS | 6.56% | gross employment income |
-| Injury at work / occupational disease | — | 0.53% | employer only |
-| Unemployment insurance | — | 0.06% | gross employment income |
-| Parental protection insurance | — | 0.10% | gross employment income |
-| **Subtotal (before LTC)** |  | **16.10%** | applies to payrolls before 1 Jul 2025 |
-| Long-term care (LTC) contribution | ZZZS (ZDOsk-1) | 1.00% | **NEW from 1 July 2025** |
-| **TOTAL (from 1 Jul 2025, incl. LTC)** |  | **17.10%** | applies to payrolls from 1 Jul 2025 |
-
-**Employer total self-check (recomputed):** 8.85 + 6.56 + 0.53 + 0.06 + 0.10 = 16.10 ✓; + 1.00 LTC = 17.10 ✓
-
-**Combined contribution wedge (from 1 Jul 2025):** employee 23.10% + employer 17.10% = 40.20% of gross [PwC + KPMG].
-
-## Section 5 -- Minimum Wage and Contribution Bases
-
-### National Minimum Wage (Minimalna Plača), Gross Monthly
-
-**National Minimum Wage table**  _(WageIndicator / SeeNews; RRA Koroška)_
-
-| Year | Gross Monthly (EUR) | Source |
-| --- | --- | --- |
-| 2025 | 1,277.72 | WageIndicator / SeeNews |
-| 2026 | 1,481.88 | RRA Koroška (+15.99%) |
-
-### Reference Wages and Bases
-
-**Reference Wages and Bases table**  _(WebSearch summary; ZPIZ-2)_
-
-| Item | Value (EUR) | Notes | Source |
-| --- | --- | --- | --- |
-| Average monthly gross salary (contribution-base anchor) | 2,536.03 (2025) | used mainly for self-employed base calc | WebSearch summary **[RESEARCH GAP — reviewer to confirm]** |
-| Minimum contribution base (≈60% of avg gross wage) | 1,521.62 (2025) | primarily self-employed | WebSearch summary; ZPIZ-2 **[RESEARCH GAP — reviewer to confirm]** |
-| Maximum contribution base (3.5x avg wage) | 8,876.11 (2025) | **self-employed only**; employee wage contributions are uncapped | WebSearch summary; ZPIZ-2 **[RESEARCH GAP — reviewer to confirm]** |
-
-> Working-time, overtime premia, and statutory leave entitlements are governed by the Employment Relationships Act (ZDR-1) and applicable collective agreements (kolektivne pogodbe). Specific overtime multipliers and leave-day counts were **not** captured at figure level in this research. **[RESEARCH GAP — reviewer to confirm]** the applicable overtime rate, weekly hours cap, and minimum annual leave under ZDR-1 / the relevant collective agreement before relying on them.
-
-## Section 6 -- Conservative Defaults
-
-**Conservative Defaults table**  _([KPMG Flash Alert 2025-133; PwC])_
-
-| Assumption | Conservative default |
-| --- | --- |
-| Employee social contribution rate | Use **23.10%** for payrolls from 1 July 2025 onward (incl. 1% LTC); **22.10%** before that date [KPMG] |
-| Employer social contribution rate | Use **17.10%** for payrolls from 1 July 2025 onward (incl. 1% LTC); **16.10%** before that date [KPMG] |
-| Employee contribution ceiling | Treat employee contributions as **uncapped** on gross wage (no ceiling for employees); the 3.5x cap applies to self-employed only [KPMG; ZPIZ-2] |
-| General allowance | Apply **EUR 5,000** base general allowance plus the low-earner additional allowance where the employee qualifies; do **not** assume EUR 5,260 [PwC] |
-| Date split | If the pay date is unknown but the period spans 1 July 2025, **ask** rather than guess; the LTC 1%+1% only applies from that date |
-| CHC flat contribution | Treat the EUR 37.17/month (from 1 Mar 2025) as a separate deduction line and flag remittance responsibility as unconfirmed |
-| PIT brackets | Use 2025 brackets for 2025 pay dates; 2026 indexed brackets for 2026 pay dates |
-
-## Section 7 -- Required Inputs + Refusal Catalogue
-
-### Required Inputs
-
-- **Required inputs before computing a payslip** — Before computing any Slovenia payslip, you MUST have: 1. Gross monthly salary (bruto plača) in EUR; 2. Pay date (determines 2025 vs 2026 brackets AND pre/post 1 July 2025 LTC rate); 3. Tax residency (resident vs non-resident — affects allowance entitlement); 4. General allowance eligibility (is the employee a low earner qualifying for the additional linear allowance?); 5. Registered personal reliefs (dependants, disability, etc., as registered with FURS); 6. Whether the flat CHC is employer-deducted for this employee.
-
-### Refusal Catalogue — refuse or flag, do not guess
-
-**Refusal Catalogue table**
-
-| Situation | Action |
-| --- | --- |
-| No pay date given | REFUSE to pick a contribution rate — ask whether the pay date is before or from 1 July 2025 |
-| Pay date in 2026 but only 2025 brackets requested | Use 2026 indexed brackets; flag the switch |
-| Employee claims a EUR 5,260 general allowance | Decline; use EUR 5,000 unless reviewer confirms |
-| Request to cap employee contributions at EUR 8,876.11 | Decline — that cap is self-employed only; employee contributions are uncapped |
-| Request to apply a 0% tax band | Decline — Slovenia's lowest band is 16%; the relief is the general allowance, not a 0% bracket |
-| Capital/dividend/rental income mixed into the wage base | Separate it — that is schedular 25% income, not progressive wage income |
-| Exact statutory penalty figure requested | State that fine bands are in ZDavP-2 / ZPSV and were not captured at figure level — flag as research gap |
-
-## Section 8 -- Transaction / Payment Pattern Library
-
-Deterministic classification of Slovenian bank-statement narratives. Match on the Slovenian (and common English) keywords.
-
-### Salary Credits (employee receiving pay)
-
-**Salary Credits table**
-
-| Bank narrative pattern (SI) | Classification |
-| --- | --- |
-| PLAČA, NETO PLAČA, IZPLAČILO PLAČE | Net salary payment |
-| AKONTACIJA PLAČE | Salary advance |
-| REGRES, REGRES ZA LETNI DOPUST | Holiday allowance (regres) — see leave note |
-| POVRAČILO STROŠKOV, PREVOZ, MALICA | Expense reimbursement (transport / meal allowance) — generally not wage income |
-| BOŽIČNICA, 13. PLAČA | Christmas / 13th-month bonus (taxable) |
-
-### Employer Debits (employer paying obligations)
-
-**Employer Debits table**
-
-| Bank narrative pattern (SI) | Classification |
-| --- | --- |
-| FURS, DOHODNINA, AKONTACIJA DOHODNINE | Withheld income tax remittance to FURS |
-| PRISPEVKI, ZPIZ, PRISPEVEK PIZ | Pension/disability contribution (ZPIZ) |
-| ZZZS, PRISPEVEK ZA ZDRAVSTVO | Health insurance contribution (ZZZS) |
-| DOLGOTRAJNA OSKRBA, ZDOsk, LTC | Long-term care contribution (from 1 Jul 2025) |
-| PRISPEVEK ZA ZAPOSLOVANJE | Unemployment insurance contribution |
-| STARŠEVSKO VARSTVO | Parental protection contribution |
-| OBVEZNI ZDRAVSTVENI PRISPEVEK, OZZ, CHC | Flat compulsory health contribution |
-| NETO PLAČE, IZPLAČILO PLAČ | Net wages disbursement to employees |
-| eDavki, REK-O | Payroll return filing / linked payment reference |
-
-## Section 9 -- Worked Examples
-
-> All examples assume a **resident, single** employee with only the **EUR 5,000 base** general allowance (no additional low-earner allowance modelled — see the research gap in Section 2), monthly pay, and the FURS schedule approximated by annualising the monthly taxable base. Figures are recomputed end-to-end and reconcile to the cent. They are **estimates** for illustration; a reviewer must confirm the exact FURS monthly-schedule treatment and the additional allowance.
-
-Convention used in every example:
-- `monthly general allowance = 5,000 / 12 = 416.67`
-- `monthly PIT base = gross − employee SSC − 416.67`
-- `annual PIT base = monthly PIT base x 12`, taxed on the bracket table, then `÷ 12` for the month
-- CHC shown separately at EUR 37.17/month (from 1 Mar 2025) where applicable
-
-### Example 1 — EUR 2,000 gross, pay date in/after July 2025 (LTC applies)
-
-Bank line: `IZPLAČILO PLAČE — EUR 1,323.21` (before CHC)
-
-**Example 1 worked table**
-
-| Step | Amount (EUR) |
-| --- | --- |
-| Gross monthly | 2,000.00 |
-| Employee SSC @ 23.10% | 462.00 |
-| — pension 15.50% / health 6.36% / unemp 0.14% / parental 0.10% / LTC 1.00% | 310.00 / 127.20 / 2.80 / 2.00 / 20.00 |
-| Less monthly general allowance | (416.67) |
-| Monthly PIT base | 1,121.33 |
-| Annual PIT base (x12) | 13,455.96 |
-| Annual PIT (B2: 1,473.64 + (13,455.96 − 9,210.26) x 26%) | 2,577.52 |
-| Monthly PIT (÷12) | 214.79 |
-| **Net before CHC** (2,000 − 462.00 − 214.79) | **1,323.21** |
-| Less flat CHC | (37.17) |
-| **Net after CHC** | **1,286.04** |
-| Employer SSC @ 17.10% | 342.00 |
-| **Total employer cost** (2,000 + 342.00) | **2,342.00** |
-
-### Example 2 — Minimum wage, EUR 1,277.72 gross, pay date from July 2025
-
-**Example 2 worked table**
-
-| Step | Amount (EUR) |
-| --- | --- |
-| Gross monthly | 1,277.72 |
-| Employee SSC @ 23.10% | 295.15 |
-| Less monthly general allowance | (416.67) |
-| Monthly PIT base | 565.90 |
-| Annual PIT base (x12) | 6,790.80 |
-| Annual PIT (B1: 6,790.80 x 16%) | 1,086.53 |
-| Monthly PIT (÷12) | 90.54 |
-| **Net before CHC** | **892.03** |
-| Less flat CHC | (37.17) |
-| **Net after CHC** | **854.86** |
-| Employer SSC @ 17.10% | 218.49 |
-| **Total employer cost** | **1,496.21** |
-
-### Example 3 — EUR 3,500 gross, pay date from July 2025 (crosses into 33% band annually)
-
-**Example 3 worked table**
-
-| Step | Amount (EUR) |
-| --- | --- |
-| Gross monthly | 3,500.00 |
-| Employee SSC @ 23.10% | 808.50 |
-| Less monthly general allowance | (416.67) |
-| Monthly PIT base | 2,274.83 |
-| Annual PIT base (x12) | 27,297.96 |
-| Annual PIT (B3: 6,122.11 + (27,297.96 − 27,089) x 33%) | 6,191.07 |
-| Monthly PIT (÷12) | 515.92 |
-| **Net before CHC** | **2,175.58** |
-| Less flat CHC | (37.17) |
-| **Net after CHC** | **2,138.41** |
-| Employer SSC @ 17.10% | 598.50 |
-| **Total employer cost** | **4,098.50** |
-
-### Example 4 — EUR 6,500 gross, pay date from July 2025 (into 39% band annually)
-
-**Example 4 worked table**
-
-| Step | Amount (EUR) |
-| --- | --- |
-| Gross monthly | 6,500.00 |
-| Employee SSC @ 23.10% | 1,501.50 |
-| Less monthly general allowance | (416.67) |
-| Monthly PIT base | 4,581.83 |
-| Annual PIT base (x12) | 54,981.96 |
-| Annual PIT (B4: 15,061.48 + (54,981.96 − 54,178) x 39%) | 15,375.02 |
-| Monthly PIT (÷12) | 1,281.25 |
-| **Net before CHC** | **3,717.25** |
-| Less flat CHC | (37.17) |
-| **Net after CHC** | **3,680.08** |
-| Employer SSC @ 17.10% | 1,111.50 |
-| **Total employer cost** | **7,611.50** |
-
-### Example 5 — EUR 2,000 gross, pay date Jan-Feb 2025 (PRE-LTC; date-split demonstration)
-
-Demonstrates the mandatory date split: pre-1-July rates 22.10% / 16.10% and CHC EUR 35.00.
-
-**Example 5 worked table**
-
-| Step | Amount (EUR) |
-| --- | --- |
-| Gross monthly | 2,000.00 |
-| Employee SSC @ 22.10% | 442.00 |
-| Less monthly general allowance | (416.67) |
-| Monthly PIT base | 1,141.33 |
-| Annual PIT base (x12) | 13,695.96 |
-| Annual PIT (B2: 1,473.64 + (13,695.96 − 9,210.26) x 26%) | 2,639.92 |
-| Monthly PIT (÷12) | 219.99 |
-| **Net before CHC** | **1,338.01** |
-| Less flat CHC (Jan-Feb 2025) | (35.00) |
-| **Net after CHC** | **1,303.01** |
-| Employer SSC @ 16.10% | 322.00 |
-| **Total employer cost** | **2,322.00** |
-
-> Compare Examples 1 and 5: the same EUR 2,000 gross yields a different net and employer cost solely because of the 1 July 2025 LTC contribution. Always confirm the pay date.
-
-## Section 10 -- Tier 1 Rules (Deterministic)
-
-- **Tier 1 deterministic rules** — These rules are mechanical and should be applied without reviewer judgement. 1. Apply the 2025 PIT brackets (Section 2) for 2025 pay dates; the 2026 indexed brackets for 2026 pay dates [PwC; Orbitax]. 2. Employee social contributions = 22.10% before 1 Jul 2025, 23.10% from 1 Jul 2025 (incl. 1% LTC) [PwC; KPMG]. 3. Employer social contributions = 16.10% before 1 Jul 2025, 17.10% from 1 Jul 2025 (incl. 1% LTC) [PwC; KPMG]. 4. Compute the PIT base as gross minus employee social contributions minus the monthly portion of the general allowance and registered reliefs [FURS]. 5. Slovenia has no 0% tax band — the lowest marginal rate is 16%; relief comes from the general allowance [PwC]. 6. Employee wage contributions are uncapped — never apply the EUR 8,876.11 (3.5x) cap to an employee [KPMG; ZPIZ-2]. 7. Capital income (dividends/interest/gains/rental) is flat 25% schedular, never run through the progressive wage scale [PwC]. 8. File REK-O electronically via eDavki on the day of payment of employment income; remit tax and contributions on/around the pay date [FURS]. 9. Minimum gross monthly wage: EUR 1,277.72 (2025), EUR 1,481.88 (2026) — never compute a regular full-time gross below this [WageIndicator; RRA Koroška]. 10. The flat CHC is EUR 35.00/month (Jan-Feb 2025) then EUR 37.17/month (from 1 Mar 2025), a per-capita amount, not a percentage [PwC].  _([PwC; KPMG; FURS; Orbitax; WageIndicator; RRA Koroška])_
-
-## Section 11 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-**Tier 2 Catalogue table**
-
-| Item | Why it needs judgement |
-| --- | --- |
-| Additional low-earner general allowance | Formula/threshold unverified against FURS; affects net pay materially [RESEARCH GAP] |
-| Exact FURS monthly withholding schedule | This skill annualises the monthly base as an approximation; the official FURS monthly table may differ at the margins |
-| Self-employed contribution bases | Min base EUR 1,521.62 (60%), max base EUR 8,876.11 (3.5x), avg wage EUR 2,536.03 — sourced from search summaries / ZPIZ-2 [RESEARCH GAP] |
-| CHC remittance responsibility | Whether employer deducts and remits the flat CHC, or the individual self-pays [RESEARCH GAP] |
-| Penalty / fine bands | ZDavP-2 / ZPSV figures not captured at statutory amount level [RESEARCH GAP] |
-| Overtime, leave, regres (holiday allowance) treatment | Governed by ZDR-1 + collective agreements; not captured at figure level [RESEARCH GAP] |
-| Non-resident treatment | Allowance entitlement and treaty relief for non-residents not modelled here |
-| Corporate income tax interaction | 19% standard, with reported temporary increase to 22% for 2025-2028 (verify) — out of payroll scope but flagged [RESEARCH GAP] |
-
-## Section 12 -- Excel Working Paper Template
-
-**Excel Working Paper Template table**
-
-| Col | Header | Formula / Source |
-| --- | --- | --- |
-| A | Employee | input |
-| B | Pay date | input (drives bracket year + LTC split) |
-| C | Gross monthly (bruto plača) | input |
-| D | Employee SSC rate | `=IF(B>=DATE(2025,7,1),0.231,0.221)` |
-| E | Employee SSC | `=C*D` |
-| F | Monthly general allowance | `=5000/12` (plus additional allowance if qualifying) |
-| G | Monthly PIT base | `=C-E-F` |
-| H | Annual PIT base | `=G*12` |
-| I | Annual PIT | bracket lookup on H (2025/2026 table) |
-| J | Monthly PIT | `=I/12` |
-| K | Flat CHC | `=IF(B<DATE(2025,3,1),35,37.17)` (confirm remittance) |
-| L | Net pay | `=C-E-J-K` |
-| M | Employer SSC rate | `=IF(B>=DATE(2025,7,1),0.171,0.161)` |
-| N | Employer SSC | `=C*M` |
-| O | Total employer cost | `=C+N` |
-
-Add a validation cell asserting `D + M = combined wedge` and a check that the `E` component rows sum to `C*D`.
-
-## Section 13 -- Bank Statement / Terminology Reading Guide
-
-**Terminology Reading Guide table**
-
-| Slovenian | English |
-| --- | --- |
-| bruto plača | gross salary |
-| neto plača | net salary |
-| dohodnina | personal income tax |
-| akontacija dohodnine | advance income tax withholding |
-| prispevki za socialno varnost | social security contributions |
-| splošna olajšava | general (tax) allowance |
-| olajšava za vzdrževane družinske člane | allowance for dependent family members |
-| minimalna plača | minimum wage |
-| regres (za letni dopust) | (annual leave) holiday allowance |
-| malica / prevoz | meal allowance / transport reimbursement |
-| dolgotrajna oskrba | long-term care |
-| obvezni zdravstveni prispevek (OZZ) | compulsory health contribution (flat CHC) |
-| obračun plač | payroll calculation |
-| plačilna lista / plačilni list | payslip |
-
-## Section 14 -- Onboarding Fallback
-
-- **Onboarding fallback order** — If you do not have enough information to compute a payslip, gather these in order and do not guess: 1. Pay date — before or from 1 July 2025? Which calendar year? (sets contribution rate + bracket table); 2. Gross monthly salary (bruto plača) in EUR; 3. Tax residency and general allowance eligibility (incl. low-earner additional allowance); 4. Registered personal reliefs (dependants etc.); 5. CHC handling for this employee. If any of items 1-3 are missing, STOP and ask. Never default a contribution rate without a pay date (the 1 July 2025 LTC split makes this load-bearing).
-
-## Section 15 -- Reference Material
-
-### Rates and Thresholds (with provenance)
-
-**Rates and Thresholds table**
-
-| Item | Value | Source |
-| --- | --- | --- |
-| PIT brackets 2025 | 16% / 26% / 33% / 39% / 50% (thresholds in Section 2) | PwC; FURS dohodninska lestvica 2025 |
-| PIT brackets 2026 (indexed) | 16% / 26% / 33% / 39% / 50% (thresholds in Section 2) | Orbitax |
-| Employee SSC | 22.10% (pre 1 Jul 2025) / 23.10% (from 1 Jul 2025) | PwC; KPMG Flash Alert 2025-133 |
-| Employer SSC | 16.10% (pre 1 Jul 2025) / 17.10% (from 1 Jul 2025) | PwC; KPMG Flash Alert 2025-133 |
-| LTC contribution (ZDOsk-1) | 1% employee + 1% employer (from 1 Jul 2025); self-employed 2%; pensioners 1% of net pension | KPMG Flash Alert 2025-133; ZDOsk-1 |
-| Flat CHC | EUR 35.00/mo (Jan-Feb 2025); EUR 37.17/mo (from 1 Mar 2025) | PwC; WebSearch **[RESEARCH GAP — reviewer to confirm]** |
-| General allowance (base) | EUR 5,000/yr | PwC Deductions |
-| Minimum wage gross | EUR 1,277.72/mo (2025); EUR 1,481.88/mo (2026) | WageIndicator/SeeNews; RRA Koroška |
-| Capital income flat rate | 25% (schedular) | PwC |
-| VAT standard rate (context) | 22% | Tax rate summaries |
-| Corporate income tax (context) | 19% (reported temporary 22% for 2025-2028 — verify) | Tax rate summaries **[RESEARCH GAP — reviewer to confirm]** |
-| Self-employed min/max base (context) | EUR 1,521.62 / EUR 8,876.11; avg wage EUR 2,536.03 | WebSearch; ZPIZ-2 **[RESEARCH GAP — reviewer to confirm]** |
-
-### Forms
-
-**Forms table**
-
-| Form | Purpose | Deadline | Source |
-| --- | --- | --- | --- |
-| REK-O (Obračun davčnih odtegljajev) | Consolidated monthly employer withholding return reporting withheld PIT and all social contributions per employee; replaced REK-1/REK-1a/REK-2/PNiPD/REK-1f from 1 Jan 2023 (REK-1b retained for social-insurance benefits) | Filed electronically via eDavki on the **day of payment** of employment income; tax + contributions due on/around the pay date | FURS REK obrazci; Navodila za izpolnjevanje REK-O |
-| Informativni izračun dohodnine (annual PIT assessment) | FURS-issued informative annual calculation reconciling withheld advance tax against final liability | FURS issues by 31 May (first batch) / 31 Oct of following year | FURS Letna odmera dohodnine |
-
-### Penalties
-
-**Penalties table**
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Late/non-filing of REK-O; late payment | Fines for legal entities for failure to calculate, report and pay payroll withholding tax and contributions; default interest accrues on late payments. Specific fine bands are set in ZDavP-2 / ZPSV. | General (ZDavP-2) — **[RESEARCH GAP — reviewer to confirm]** exact fine bands not located at figure level |
-
-### Sources
-
-- PwC Worldwide Tax Summaries — Slovenia, Individual: [Other taxes](https://taxsummaries.pwc.com/slovenia/individual/other-taxes), [Taxes on personal income](https://taxsummaries.pwc.com/slovenia/individual/taxes-on-personal-income), [Deductions](https://taxsummaries.pwc.com/slovenia/individual/deductions)
-- KPMG — [Slovenia: New Contributions under the Long-Term Care Act (GMS Flash Alert 2025-133)](https://kpmg.com/xx/en/our-insights/gms-flash-alert/flash-alert-2025-133.html)
-- FURS — [REK obrazci](https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/dohodnina/rek_obrazci/); Navodila za izpolnjevanje REK-O (velja od 1.1.2023); Dohodninska lestvica 2025 (Lestvica_za_leto_2025.docx); [Splošna olajšava 2025 tool](https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/dohodnina/dohodnina_dohodek_iz_zaposlitve/2024_2025)
-- Orbitax — [Slovenia Personal Income Tax Brackets and Relief for 2026](https://orbitax.com/news/country/article/Slovenia-Personal-Income-Tax-B-60703)
-- WageIndicator — [Minimum Wage Updated in Slovenia from 01 January 2025](https://wageindicator.org/work/minimum-wage/updates/2025/minimum-wage-updated-in-slovenia-from-01-january-2025-february-5-2025/)
-- RRA Koroška — [Minimum wage in Slovenia 2026](https://rra-koroska.si/en/updates/news/minimum-wage-in-the-republic-of-slovenia-in-2026); [Social security contributions for self-employed 2026](https://rra-koroska.si/en/updates/news/social-security-contributions-for-self-employed-persons-in-2026)
-
-> **Caveat (research confidence: medium).** The FURS 2025 bracket schedule is published as a binary .docx (Lestvica_za_leto_2025.docx) not parsed in this session; a reviewer should open that DOCX and the FURS splošna olajšava 2025 tool to confirm the exact 2025 thresholds (PwC-sourced here) and the general-allowance figure (EUR 5,000 base confirmed; EUR 5,260 NOT confirmed). The PwC "other taxes" table lists pre-LTC rates (22.10%/16.10%); the 1%+1% LTC contribution (KPMG 2025-133, ZDOsk-1) took effect 1 July 2025 — any payroll engine must apply a date split. CHC amounts and remittance, the employee "uncapped" treatment, self-employed base figures, the average-wage anchor, and penalty bands all require reviewer confirmation as flagged above.
-
-## Section 16 -- Test Suite
-
-Numbered self-checks an agent (or reviewer) can run against this skill. Expected values recomputed in this skill.
-
-- **Employee SSC components sum (pre-LTC)** — 15.50 + 6.36 + 0.14 + 0.10 = 22.10%
-- **Employee SSC with LTC (from 1 Jul 2025)** — 22.10 + 1.00 = 23.10%
-- **Employer SSC components sum (pre-LTC)** — 8.85 + 6.56 + 0.53 + 0.06 + 0.10 = 16.10%
-- **Employer SSC with LTC (from 1 Jul 2025)** — 16.10 + 1.00 = 17.10%
-- **Bracket 2 cumulative tax** — 9,210.26 x 16% = 1,473.64
-- **Bracket 3 cumulative tax** — 1,473.64 + (27,089 − 9,210.26) x 26% = 6,122.11
-- **Bracket 4 cumulative tax** — 6,122.11 + (54,178 − 27,089) x 33% = 15,061.48
-- **Bracket 5 cumulative tax** — 15,061.48 + (78,016.32 − 54,178) x 39% = 24,358.42 (≈ 24,358.43 rounding)
-- **Example 1 net before CHC (EUR 2,000, from Jul 2025)** — 2,000 − 462.00 − 214.79 = 1,323.21
-- **Example 1 total employer cost** — 2,000 + (2,000 x 17.10%) = 2,000 + 342.00 = 2,342.00
-- **Example 2 minimum-wage net before CHC** — 1,277.72 − 295.15 − 90.54 = 892.03
-- **Example 3 mid-earner monthly PIT** — annual base 27,297.96 → (6,122.11 + (27,297.96 − 27,089) x 33%)/12 = 515.92
-- **Example 4 higher-earner monthly PIT** — annual base 54,981.96 → (15,061.48 + (54,981.96 − 54,178) x 39%)/12 = 1,281.25
-- **Date-split check (Example 5)** — same EUR 2,000 gross at 22.10%/16.10% gives net before CHC 1,338.01 and employer cost 2,322.00 — differs from Example 1, confirming the LTC split matters
-- **Ceiling sanity** — every bracket upper bound ≥ its lower bound; self-employed max base (8,876.11) ≥ min base (1,521.62)
-- **No-0%-band check** — lowest marginal rate is 16%, not 0%
-
-## PROHIBITIONS
-
-- NEVER pick a contribution rate without knowing the pay date — the 1 July 2025 LTC split changes employee 22.10%→23.10% and employer 16.10%→17.10%
-- NEVER apply a 0% tax band — Slovenia's lowest marginal rate is 16%; relief comes from the general allowance
-- NEVER cap employee social contributions at EUR 8,876.11 — that 3.5x cap is self-employed only; employee wage contributions are uncapped
-- NEVER assume a EUR 5,260 general allowance — use EUR 5,000 base unless a reviewer confirms otherwise against FURS
-- NEVER run capital income (dividends/interest/gains/rental) through the progressive wage scale — it is flat 25% schedular
-- NEVER compute a regular full-time gross below the minimum wage (EUR 1,277.72 in 2025, EUR 1,481.88 in 2026)
-- NEVER omit the flat CHC deduction or assume its remittance responsibility — flag it as unconfirmed
-- NEVER miss the REK-O obligation — it is filed via eDavki on the day of payment of employment income
-- NEVER state a penalty figure as definitive — ZDavP-2 / ZPSV bands were not captured at figure level here
-- NEVER present payroll computations as definitive — always label them as estimated and direct the user to a licensed Slovenian accountant
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed accountant or tax adviser in Slovenia) before implementation.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Pension and disability, employee / employer | 15.50% / 8.85% | 2026 | ZPSV art. 8, [pisrs.si](https://pisrs.si/pregledPredpisa?id=ZAKO984) |
+| Health (illness and injury outside work), employee / employer | 6.36% / 6.56% | 2026 | ZPSV art. 11(1) |
+| Injury at work and occupational disease, employer | 0.53% | 2026 | ZPSV art. 12(1) |
+| Parental care, employee / employer | 0.10% / 0.10% | 2026 | ZPSV art. 13 |
+| Employment (unemployment), employee / employer | 0.14% / 0.06% | 2026 | ZPSV art. 14 |
+| Total ZPSV contributions, employee / employer | 22.10% / 16.10% | 2026 | ZPSV arts. 8, 11 to 14 |
+| Long-term care (dolgotrajna oskrba), employee / employer | 1% / 1%, for pay for periods from 1 July 2025 | 2026 | ZDOsk-1 arts. 55, 56(1) and 137, [pisrs.si](https://pisrs.si/pregledPredpisa?id=ZAKO8819); ZZZS table, [zzzs.si](https://zavezanec.zzzs.si/fileadmin/user_upload/dokumenti/zavezanec/do/preglednica_zavarovanci__do_furs__v2.pdf) |
+| All percentage contributions, employee / employer | 23.10% / 17.10% | 2026 | sum of the rows above |
+| Compulsory health contribution (obvezni zdravstveni prispevek, OZP), employee | EUR 39.36 a month from 1 March 2026 (EUR 37.17 in January and February 2026) | 2026 | ZZVZZ art. 48; Uradni list RS 16/26 as cited by FURS, [fu.gov.si](https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_10_2026.xlsx) |
+| Average monthly gross wage for 2025 | EUR 2,536.03 | 2026 | FURS contribution tables, [fu.gov.si](https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/prispevki_za_socialno_varnost/osnove_za_placilo_ter_zneski_prispevkov_za_socialno_varnost/) |
+| Minimum monthly contribution base (60% of the last known average wage) | EUR 1,521.62 (EUR 1,436.95 while the 2024 average was the last known) | 2026 | ZPIZ-2 art. 144(4), [pisrs.si](https://pisrs.si/pregledPredpisa?id=ZAKO6280); FURS tables |
+| Maximum contribution base for employees | none | 2026 | ZPIZ-2 art. 144(1); ZPSV art. 3 |
+| Minimum wage (gross, full time) | EUR 1,481.88 a month for work from 1 January 2026 | 2026 | Ministry of Labour, [gov.si](https://www.gov.si/novice/2026-01-28-dolocen-znesek-minimalne-place-za-2026/) |
+| Monthly withholding scale (main employer) | 16% to EUR 810.12; EUR 129.62 + 26% to 2,382.70; EUR 538.49 + 33% to 4,765.41; EUR 1,324.78 + 39% to 6,862.19; EUR 2,142.53 + 50% above | 2026 | ZDoh-2 arts. 122 and 127(2); FURS 2026 scale, [fu.gov.si](https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx) |
+| General allowance in monthly withholding | EUR 462.66; if monthly gross is up to EUR 1,480.51, add 1,736.03 minus 1.17259 times monthly gross | 2026 | ZDoh-2 arts. 111 and 127(3); FURS 2026 scale |
+| Annual general allowance (for the year-end assessment) | EUR 5,551.93; extra taper if total income is up to EUR 17,766.18 | 2026 | ZDoh-2 art. 111; FURS 2026 scale |
+| Monthly dependant allowance, first / second / third child | EUR 249.65 / 271.40 / 452.67 | 2026 | ZDoh-2 art. 114; FURS 2026 scale |
+| Secondary employer withholding | 25%, no allowances | 2026 | ZDoh-2 art. 127(6) |
+| Late payment interest | 10.15% a year from 1 January 2026; 10.40% from 1 July 2026 | 2026 | ZDavP-2 art. 96; ZPOMZO-1 art. 2; [Uradni list RS 2/2026](https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2026-01-0011); [Uradni list RS 1124/2026](https://pisrs.si/api/uradni-list/objava/u20261124.pdf) |
+
+## The taxable base
+
+**Contribution base.** Contributions are due on gross pay, wage compensation and all other pay from employment, including benefits in kind and work-related reimbursements, except where the law exempts them (ZPSV art. 3(1) and (3); ZPIZ-2 art. 144(1)). Reimbursements, jubilee awards, severance on retirement and similar items bear contributions only on the part that is taxed. Holiday pay (regres) bears contributions only on the part above 100% of the last known average monthly wage (ZPIZ-2 art. 144(2)). There is no upper limit for employees.
+
+**The minimum base.** If a month's pay is below 60% of the last known average annual wage (EUR 1,521.62), contributions are still due on EUR 1,521.62 (ZPIZ-2 art. 144(4)). The employee pays their share only on the pay actually earned. The employer pays the employee's share on the difference, as well as its own share on the whole minimum base (ZPIZ-2 art. 152(2); ZZVZZ art. 50). FURS says all contributions are due on the difference, reported as base type P02 on the REK-O (FURS note on REK corrections, 21 December 2023). The long-term care contribution follows the same base and is also due on the difference (ZDOsk-1 art. 56(4); ZZZS table). A full-time employee on the 2026 minimum wage (EUR 1,481.88) is below the minimum base, so the employer pays on the EUR 39.74 difference.
+
+**Long-term care.** Since pay for July 2025, the employee and the employer each pay 1% on the health contribution base (ZDOsk-1 arts. 56(1), (4) and 137). An employee whose employer does not pay Slovenian health contributions pays 2% alone (art. 56(2)).
+
+**Compulsory health contribution (OZP).** A flat amount per calendar month, whatever the number of insured days. The main employer withholds it from the first payment for the month (ZZVZZ art. 48). It does not depend on pay.
+
+**Tax base for withholding.** Gross employment income less the contributions the employee must pay (ZDoh-2 art. 41(1)), less one twelfth of the allowances the employee is entitled to (art. 127(3)). Deduct the employee's 22.1%, the 1% long-term care contribution and the OZP. All three are compulsory social security contributions the employee must pay: ZPSV art. 1 defines contributions for compulsory health insurance as social security contributions, ZZVZZ art. 48 levies the OZP as a health insurance contribution paid by the insured person, and ZDOsk-1 arts. 51(2) and 56.a(1) treat long-term care insurance as social insurance and its contribution as a compulsory social security contribution. The REK-O lists the OZP (field A072a) among the employee's social security contributions, whose total (A075) is taken into account in computing the withholding (Pravilnik, Uradni list RS 4/2025, Annex 1; FURS REK-O instructions, 10th edition, October 2026, point 5.4). Then apply the monthly scale.
+
+**General allowance.** EUR 462.66 a month, which is one twelfth of the EUR 5,551.93 annual allowance. If the month's gross employment income is up to EUR 1,480.51, the allowance rises by 1,736.03 minus 1.17259 times that gross. At EUR 1,480.51 and above the extra is nil. The employee can ask the employer to apply only the EUR 462.66 (FURS 2026 scale). Dependant allowances apply only if the employee tells the main employer in writing (ZDavP-2 art. 287). The allowance for employees under 29 and the other personal allowances are in `slovenia-income-tax`.
+
+**Annual assessment.** Monthly withholding is an advance. FURS issues the informative calculation for the year and squares it up. See `slovenia-income-tax`.
+
+## Deadlines and filing
+
+| Obligation | Deadline | Source |
+|---|---|---|
+| File the withholding return REK-O (obračun davčnega odtegljaja), with the contributions calculated in it | no later than the day the pay is paid | ZDavP-2 arts. 284(1), 352(2) and (3), 353(2) |
+| Pay the withheld tax and the contributions | no later than 5 days after the pay is paid | ZDavP-2 arts. 283(1) and 353(2) |
+| Give the employee the data from the REK-O (pay slip data) | the same deadline as the REK-O | ZDavP-2 arts. 284(2) and 353(2) |
+| Register the employee for health insurance; the same registration covers long-term care | under the health insurance rules | ZDOsk-1 art. 54(6) |
+
+The REK-O has applied to payments from 1 January 2023. It replaced the REK-1, which is now used only to correct payments made up to 31 December 2022 (FURS note of 21 December 2023). The form's content is set by the Pravilnik o obračunu davčnih odtegljajev (Uradni list RS 4/2025). Contributions are calculated at the rates in force on the day the obligation arises (ZDavP-2 art. 352(6)).
+
+## Penalties and interest
+
+- **REK-O not filed, filed late or filed wrongly.** Fine EUR 1,200 to 15,000 for a company, EUR 3,200 to 30,000 for a medium or large company, EUR 800 to 10,000 for an s.p. employer (ZDavP-2 art. 397(1) point 2). The responsible person of a company is fined EUR 600 to 4,000, or EUR 800 to 4,000 in a medium or large company (art. 397(3)).
+- **No fine on a proper correction.** An employer that files or corrects the return under the self-report and correction rules (ZDavP-2 arts. 53, 54, 54.a, 55 or 57) is not fined under art. 397(1) point 2 (art. 399).
+- **Late payment.** Tax and contributions paid late carry late interest at the statutory rate: 10.15% a year from 1 January 2026 and 10.40% from 1 July 2026 (ZDavP-2 art. 96(1); ZPOMZO-1 art. 2; Uradni list RS 2/2026 and 1124/2026). ZPSV art. 15 applies ZDavP-2 to contributions.
+- **OZP and long-term care.** Neither can be written off, deferred or paid in instalments on request (ZZVZZ art. 48; ZDOsk-1 art. 56(8)).
+
+## Cross-border points
+
+- **Which country's contributions.** In the EU, EEA and Switzerland, Regulation (EC) 883/2004 decides which country insures the worker. A worker posted from Slovenia keeps paying Slovenian contributions on the pay for equal work in Slovenia, unless a treaty says otherwise (ZPSV art. 3(2)). ZZZS issues the A1 certificate.
+- **Workers coming to Slovenia.** Compulsory contributions paid to a comparable foreign scheme reduce the Slovenian tax base, if the worker was not resident in Slovenia just before starting the job and already paid into that scheme (ZDoh-2 art. 41(2)).
+- **Non-resident employees.** The allowances are for residents. An EU or EEA resident with at least 90% of taxable income from Slovenia can claim them in a return (ZDoh-2 art. 116). Residence rules and treaty relief are in `si-cross-border`.
+- **Second job.** Only the main employer applies the scale and allowances. A secondary employer withholds 25% (ZDoh-2 art. 127(6)).
+
+## Worked examples
+
+### Example 1: standard employee, October 2026
+
+A company pays a resident employee EUR 2,500 gross for October 2026. It is the main employer. The employee claims no dependants.
+
+Employee contributions at 22.1%: EUR 552.50. Long-term care at 1%: EUR 25.00. OZP: EUR 39.36. Gross is above EUR 1,480.51, so the allowance is EUR 462.66. Tax base: 2,500 - 552.50 - 25.00 - 39.36 - 462.66 = EUR 1,420.48. Tax: 129.62 + 26% of (1,420.48 - 810.12) = EUR 288.31. Net pay: EUR 1,594.83. Employer contributions: 16.1% = EUR 402.50, plus long-term care 1% = EUR 25.00. Cost to the employer: EUR 2,927.50. The REK-O is due on the pay date and the payment within 5 days of it.
+
+```oa-check
+name: Slovenia employee, EUR 2,500 gross, October 2026, main employer
+inputs:
+  gross: 2500
+  ozp: 39.36
+  allowance: 462.66
+steps:
+  - ee_contrib: round(gross * 0.221, 2)
+  - ee_ltc: round(gross * 0.01, 2)
+  - tax_base: gross - ee_contrib - ee_ltc - ozp - allowance
+  - tax: round(129.62 + (tax_base - 810.12) * 0.26, 2)
+  - net: gross - ee_contrib - ee_ltc - ozp - tax
+  - er_contrib: round(gross * 0.161, 2)
+  - er_ltc: round(gross * 0.01, 2)
+  - employer_cost: gross + er_contrib + er_ltc
+expected:
+  ee_contrib: 552.50
+  tax_base: 1420.48
+  tax: 288.31
+  net: 1594.83
+  er_contrib: 402.50
+  employer_cost: 2927.50
+```
+
+### Example 2: minimum wage, below the minimum contribution base
+
+A company pays a full-time resident employee the 2026 minimum wage of EUR 1,481.88 for October 2026. The minimum contribution base is EUR 1,521.62, so the gap is EUR 39.74.
+
+The employee pays 22.1% and 1% only on the wage: EUR 327.50 and EUR 14.82, plus the OZP of EUR 39.36. The monthly allowance taper gives 1,736.03 - 1.17259 x 1,481.88, which is below zero, so the allowance is the flat EUR 462.66. Tax base: 1,481.88 - 327.50 - 14.82 - 39.36 - 462.66 = EUR 637.54. Tax at 16%: EUR 102.01. Net pay: EUR 998.19.
+
+The employer pays its 16.1% and 1% on the whole minimum base: EUR 244.98 and EUR 15.22. It also pays the employee's 23.1% on the EUR 39.74 gap: EUR 9.18. Cost to the employer: EUR 1,751.26.
+
+```oa-check
+name: Slovenia minimum wage EUR 1,481.88, October 2026, minimum base EUR 1,521.62
+inputs:
+  gross: 1481.88
+  min_base: 1521.62
+  ozp: 39.36
+steps:
+  - allowance: 462.66 + max(1736.03 - 1.17259 * gross, 0)
+  - ee_contrib: round(gross * 0.221, 2)
+  - ee_ltc: round(gross * 0.01, 2)
+  - tax_base: gross - ee_contrib - ee_ltc - ozp - allowance
+  - tax: round(tax_base * 0.16, 2)
+  - net: gross - ee_contrib - ee_ltc - ozp - tax
+  - gap: max(min_base - gross, 0)
+  - er_on_gap: round(gap * 0.231, 2)
+  - er_contrib: round(min_base * 0.161, 2)
+  - er_ltc: round(min_base * 0.01, 2)
+  - employer_cost: gross + er_contrib + er_ltc + er_on_gap
+expected:
+  allowance: 462.66
+  ee_contrib: 327.50
+  tax_base: 637.54
+  tax: 102.01
+  net: 998.19
+  er_on_gap: 9.18
+  er_contrib: 244.98
+  employer_cost: 1751.26
+```
+
+## Ask the client first
+
+1. Is this the employee's main employer? If not, withholding is 25% with no allowances.
+2. Is the job full time, and which month does each payment relate to? The minimum base and the OZP work by month, and the OZP changed on 1 March 2026.
+3. Has the employee given written notice of dependants, or asked for only the flat EUR 462.66 allowance?
+4. Is the employee resident in Slovenia, and are they insured here or abroad (A1 certificate)?
+5. What else is paid with the wage: holiday pay, bonuses, benefits in kind, reimbursements above the tax-free limits?
+6. Is the employee under 29, over 70, or disabled? Each changes the allowances (see `slovenia-income-tax`).
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Social Security Contributions Act (ZPSV), consolidated NPB 14: arts. 1, 3, 6, 8, 11 to 16 | https://pisrs.si/pregledPredpisa?id=ZAKO984 | 2026-10-24 |
+| Pension and Disability Insurance Act (ZPIZ-2), consolidated NPB 27 to Uradni list RS 90/25: arts. 14, 144, 152 | https://pisrs.si/pregledPredpisa?id=ZAKO6280 | 2026-10-24 |
+| Health Care and Health Insurance Act (ZZVZZ), consolidated NPB 42: arts. 48, 50 | https://pisrs.si/pregledPredpisa?id=ZAKO213 | 2026-10-24 |
+| Long-Term Care Act (ZDOsk-1), consolidated NPB 2: arts. 51, 54, 55, 56, 56.a, 137 | https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-24 |
+| Personal Income Tax Act (ZDoh-2): arts. 41, 111, 114, 116, 122, 127 | https://pisrs.si/pregledPredpisa?id=ZAKO4697 | 2026-10-24 |
+| Tax Procedure Act (ZDavP-2), consolidated to Uradni list RS 100/25: arts. 96, 283, 284, 287, 352, 353, 397, 399 | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-24 |
+| Act on the Prescribed Default Interest Rate (ZPOMZO-1): art. 2 | https://pisrs.si/pregledPredpisa?id=ZAKO3695 | 2026-10-24 |
+| Minister of Finance, default interest rate from 1 January 2026, Uradni list RS 2/2026 | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2026-01-0011 | 2026-10-24 |
+| Minister of Finance, default interest rate from 1 July 2026, Uradni list RS 1124/2026 | https://pisrs.si/api/uradni-list/objava/u20261124.pdf | 2026-10-24 |
+| FURS, REK-O form and filing instructions, 10th edition, October 2026: points 5.3 to 5.5 | https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/dohodnina/rek_obrazci/ | 2026-10-24 |
+| Pravilnik o obračunu davčnih odtegljajev, Uradni list RS 4/2025, Annex 1 (REK-O fields) | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-0139 | 2026-10-24 |
+| FURS, 2026 tax scale and allowances (notice of 15 December 2025) | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx | 2026-10-24 |
+| FURS, contribution bases and amounts 2026 (self-employed tables for January, February, March and October 2026: average wage, 60% base, OZP) | https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/prispevki_za_socialno_varnost/osnove_za_placilo_ter_zneski_prispevkov_za_socialno_varnost/ | 2026-10-24 |
+| FURS, REK forms page and the note on correcting REK forms for the difference to the minimum base (21 December 2023) | https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/dohodnina/rek_obrazci/ | 2026-10-24 |
+| ZZZS, long-term care contribution table for insured persons supervised by FURS | https://zavezanec.zzzs.si/fileadmin/user_upload/dokumenti/zavezanec/do/preglednica_zavarovanci__do_furs__v2.pdf | 2026-10-24 |
+| Ministry of Labour, minimum wage for 2026 (28 January 2026) | https://www.gov.si/novice/2026-01-28-dolocen-znesek-minimalne-place-za-2026/ | 2026-10-24 |
+
+Not yet confirmed: the Uradni list RS 16/26 order setting the OZP at EUR 39.36 was not read (the figure is from the FURS 2026 tables, which cite it); the minimum wage decision in the Uradni list was not read (the figure is from the ministry's notice); the exact payment date from which employers moved from EUR 1,436.95 to EUR 1,521.62 as the minimum base (FURS applies the 2025 average from the February 2026 self-employed contributions); who bears the employee's 0.24% parental care and employment share on the gap to the minimum base (ZPIZ-2 and ZZVZZ put the pension and health shares on the employer; the employment and parental care acts were not read); the deadline for registering a new employee for insurance; the 2026 version of the REK-O field list with the long-term care fields.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 
@@ -527,4 +213,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `slovenia-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/slovenia-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `slovenia-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/slovenia-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

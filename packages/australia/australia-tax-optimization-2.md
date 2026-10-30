@@ -3,7 +3,9 @@ name: australia-tax-optimization-2
 description: "Australian tax planning for 2026–27: compare deductions, structures, losses, capital expenditure and superannuation using dated legislation."
 jurisdiction: AU
 last_updated: 2026-09-08
+authored_by: Ryan Duguid
 review_status: pending_review
+trust_label: Accountant-authored
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

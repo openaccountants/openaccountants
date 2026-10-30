@@ -1,0 +1,827 @@
+[
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-aragon-social.html",
+    "bytes": 9828,
+    "sha256": "8361201e0f2a6568ec3ed067f9dad332813f3ff7c6ee167872f2b301a1c8e252"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-aragon-social.txt",
+    "bytes": 2095,
+    "sha256": "acc6d6fa63ea4d4efd6a29b492e20b1bf16b1fdaa1627cf229d401c9150291db"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-asturias-obtencion-ayudas-subvenciones-otorgadas-enfermos.html",
+    "bytes": 9076,
+    "sha256": "ac0bfc19be56624e4af0c1233aa8ee7993f6a27fe07b089cbdded19821448d63"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-asturias-obtencion-ayudas-subvenciones-otorgadas-enfermos.txt",
+    "bytes": 1662,
+    "sha256": "7d410784c9e8d78d7c7cf2652304cee25bd84127e215528a34de89317a1245c7"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-balearic-subvenciones-ayudas-declaracion-zona-afectada-emergencia.html",
+    "bytes": 9287,
+    "sha256": "4c3cefd5733f2d544ea4eacc0d6a30473a1ffc160bbe32485f42ef5e39e40684"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-balearic-subvenciones-ayudas-declaracion-zona-afectada-emergencia.txt",
+    "bytes": 1892,
+    "sha256": "98f06494b3f8c2eadb565af39a0b63dd34eb5bbb4d3315e1690a066a78e4a90f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-canarias-move.html",
+    "bytes": 12339,
+    "sha256": "95e3bea3912bf0082bc47bd6fadf951460bf2914d33de233d8972cfa699e28af"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-canarias-move.txt",
+    "bytes": 3833,
+    "sha256": "a00dcdc7d04b913859d86fa85b4df4b889b94bcc44995811b5fc58d832c45543"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-cantabria-gastos-traslado-residencia-municipio-afectado-despoblamiento.html",
+    "bytes": 13127,
+    "sha256": "f2cc250213495496886b465d6b40a7bafce346e2ba381d825ba0f3d3d2392171"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-cantabria-gastos-traslado-residencia-municipio-afectado-despoblamiento.txt",
+    "bytes": 4226,
+    "sha256": "c10bac0473ca177ee06589ab5913ad004384f0ae88adce10f5db4e47b2061d39"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-clm-traslado-vivienda-habitual.html",
+    "bytes": 15771,
+    "sha256": "96c77e0f675dbdce592b365bb85be18de189795e7871de26905998b4bb634fce"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-clm-traslado-vivienda-habitual.txt",
+    "bytes": 6273,
+    "sha256": "74cf9cf3c91a76dcd4c9c4e935c3e6c30b28fe6e2a6a4129a10546ede403dff7"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-extremadura-obtencion-ayudas-subvenciones-personas-enfermedad-amiotrofica.html",
+    "bytes": 9140,
+    "sha256": "32afb31aa3cc42614b7b97f40efc4ea97023539e77206b9077ad7315c82e2462"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-extremadura-obtencion-ayudas-subvenciones-personas-enfermedad-amiotrofica.txt",
+    "bytes": 1701,
+    "sha256": "d6d2b944f0a05f88031cc8cdbf0dd08f0975233e4462c5721ab6c9fca5c131da"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-galicia-ayudas-recibidas-personas-afectadas-talidomida-1985.html",
+    "bytes": 9675,
+    "sha256": "1a9ff8636a851acdb2330da3a2c6a55b122093be5960722a2fb05572a959e9ed"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-galicia-ayudas-recibidas-personas-afectadas-talidomida-1985.txt",
+    "bytes": 2071,
+    "sha256": "61e46ffff740cc36eb6c5a4945bb293bfc62f58f7c436c1a4d01ffafc42e04ff"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-galicia-ayudas-subvenciones-recibidas-deportistas-alto-nivel.html",
+    "bytes": 9892,
+    "sha256": "3d5cb0f446ee83cf8a39cef5223d81b95ba15e564bc6ffde8690941e8601ecff"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-galicia-ayudas-subvenciones-recibidas-deportistas-alto-nivel.txt",
+    "bytes": 2209,
+    "sha256": "3f80d691e13f000900830da11b688e87838f48daaede8ca8079a8d92b01eb825"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-galicia-ayudas-subvenciones-recibidas-personas-diagnostico-ela.html",
+    "bytes": 9098,
+    "sha256": "f7ebf88838b1b9de63343d80a928d77dc88b858563f98f9661d021b9161fb543"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-galicia-ayudas-subvenciones-recibidas-personas-diagnostico-ela.txt",
+    "bytes": 1667,
+    "sha256": "f93698fc04b4c8d8511ae50448b4ded5dc3b5fe8607aade96d02a7af89f06592"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-galicia-subvenciones-ayudas-obtenidas-x-danos-forestales.html",
+    "bytes": 9395,
+    "sha256": "aa562a8f81f07e95049f866e4d38bdbc56fc74d6230647b7a86a466dff444389"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-galicia-subvenciones-ayudas-obtenidas-x-danos-forestales.txt",
+    "bytes": 1940,
+    "sha256": "85a402bfe90cd3d129e4b45999cfa4b765b836b5aa15a85f2a9aadfcc22f887a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-aragon.html",
+    "bytes": 15182,
+    "sha256": "fc1e4e729f09688d76205177510dd71eb38242d8f66c7f5924e22ad73b698f26"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-aragon.txt",
+    "bytes": 2271,
+    "sha256": "f003e872ca7b5e19ad7e9191fde23d1ae28952db71754944558a893a91547365"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-asturias.html",
+    "bytes": 18910,
+    "sha256": "03c1d50236967d83876011b5a806a8faaec07f281faaffe11e95703927aae2b3"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-asturias.txt",
+    "bytes": 3097,
+    "sha256": "fb4c11eb49993ec2969feecf5d0f024de0d13790bd0d2756d2beacee2d464a08"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-balearic.html",
+    "bytes": 17875,
+    "sha256": "90c2d3126e0e8cd518a67f1ddd81fd9ca601679249d2438d964731df53c5085a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-balearic.txt",
+    "bytes": 3181,
+    "sha256": "0d01c2a32cb5cbd21b5756b404d5a4770920f2c2164dcccf5821968f29d6404e"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-canarias.html",
+    "bytes": 18921,
+    "sha256": "e044a8a68a40f623e3302f3c2bf81063b685ab6b33c33da63f4e061f60f1110d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-canarias.txt",
+    "bytes": 2889,
+    "sha256": "446df428779552115a6c3505f76fbdedda06259f00bd876aaa2deb9a1ee9ba62"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-cantabria.html",
+    "bytes": 16095,
+    "sha256": "1c99e1f0006c2861d0ffb542adb4ca5b093976e42b1230fbf86ad4449eb9375e"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-cantabria.txt",
+    "bytes": 2554,
+    "sha256": "77919bfa538bd5cd5d259acc77a0372ebae1e97799f7b7b6676ba6e9c0395814"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-clm.html",
+    "bytes": 18691,
+    "sha256": "57ad32cdcd5750dab6d117cbc705b6e8a6cdbc3612baf136fe9e7cf45c638e4c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-clm.txt",
+    "bytes": 3098,
+    "sha256": "e2177f37b19fe1c89b268d1019375fa4b1d32cbe8b3b2690a617d3ad28836fbf"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-extremadura.html",
+    "bytes": 15287,
+    "sha256": "102ff731841317ce5fcc82846779d57c262671360f1beedac6449cafd1bf951a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-extremadura.txt",
+    "bytes": 2319,
+    "sha256": "76ffd9fbf74b01937144cfaf3c68874a856cca1ce6df9491c04bb6cc3725884c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-galicia.html",
+    "bytes": 18023,
+    "sha256": "48ae63ba69a5bbab99458ac0efc874b1d7936e66a105804e109fa1727e4c6555"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-galicia.txt",
+    "bytes": 3178,
+    "sha256": "54f3ef1a8b9a042216cf82c9159b2ce396bbce3c9ba4613ed3cc63dd7ce89ff5"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-valencia.html",
+    "bytes": 25164,
+    "sha256": "1b5c016e48f651ea45c432fd85a7a26da145e5cd56a2b6e9340771aac97f5ef8"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-index-valencia.txt",
+    "bytes": 5395,
+    "sha256": "244f302321fcc32eca44ec04459a559ff6055ed80a0c405644d1e333fdae3f7e"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-informa-thalidomide.html",
+    "bytes": 20249,
+    "sha256": "5c18c4620a6f98965ce1f39cabc88e7fd166e2ecaf92905c9488d4b7c0cf7384"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-informa-thalidomide.txt",
+    "bytes": 5569,
+    "sha256": "4ec62af0e39fdf959def51a7146df72b2855cf84a57d7e1ba91efa73e0fb595d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-presentation-all.html",
+    "bytes": 549107,
+    "sha256": "5e09e56696aadb15301244a9914ca0219ae923f8cfaf62e1a1b6978fc1e72df9"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-presentation-all.txt",
+    "bytes": 116153,
+    "sha256": "44ff03f94c25135878b15163cfa7ea8a0a0f69aed4bb2b607f49264c482eac7d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-valencia-ayudas-publicas-erte-reduccion-jornada-covid.html",
+    "bytes": 9683,
+    "sha256": "380f22ef7a0b8b1b8c2951cbf0c0f5a6019b2c4dd8c54078968cf69156d4dc3a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aeat-valencia-ayudas-publicas-erte-reduccion-jornada-covid.txt",
+    "bytes": 2174,
+    "sha256": "f078378b59d18e1c459262c5f7654ef5aca22f9a993dc7d282089dc8e1085a17"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aragon--a1.txt",
+    "bytes": 3529,
+    "sha256": "abcdf365997c4a388cc7bc48ce35d76d733069dc65e093cc518bd6864a453481"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aragon--a11013.txt",
+    "bytes": 1813,
+    "sha256": "6fb84f8fa8a9d45ab07917aaa5b58facb31d527d34b0ba0597fb1225b3f44583"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aragon-articles.txt",
+    "bytes": 1813,
+    "sha256": "6fb84f8fa8a9d45ab07917aaa5b58facb31d527d34b0ba0597fb1225b3f44583"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aragon-authority.html",
+    "bytes": 723426,
+    "sha256": "73981ba8e710d17c78e147d4bf0ecf004e1245d12f5baef2f3a31a891c47ef78"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aragon-authority.txt",
+    "bytes": 26828,
+    "sha256": "477a713351b2644dded2a64f295d59d58712739a62ed633dc7979c5379783dc9"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aragon.html",
+    "bytes": 509921,
+    "sha256": "f765a6d65433d8f6700cdcf0c3795ebdee76726c0bff4211922727c2a8a7c581"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/aragon.txt",
+    "bytes": 261849,
+    "sha256": "a38f49bb3b6259d0e2e8909d57d51fcfa395f6c6a10390640a1b9ea3bc567648"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/asturias--a1-18.txt",
+    "bytes": 1294,
+    "sha256": "260cb07502651cb2c82453554f70ecbd0d594b95c05e80001ecbc4aa8c1ec1da"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/asturias--a2-2.txt",
+    "bytes": 600,
+    "sha256": "013981a72269858505ec5d6e95d92efd5a7b0934a97f522e6d4ec45a2945ac21"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/asturias--a2.txt",
+    "bytes": 1963,
+    "sha256": "874c6ebd9bad9530649c76d16ff35bafc9a2b334d2eac391ff84a6455a84302f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/asturias-articles.txt",
+    "bytes": 1294,
+    "sha256": "260cb07502651cb2c82453554f70ecbd0d594b95c05e80001ecbc4aa8c1ec1da"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/asturias.html",
+    "bytes": 448677,
+    "sha256": "b8a6ff718177fcf29c8b75638f536c505cb97fdec72ca82551d16a3019ed8d60"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/asturias.txt",
+    "bytes": 188005,
+    "sha256": "ca401a4a44bb30979c72aff6daebe4d0ce2a04702a252a6a955f5dd828fdcffc"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/atc-irpf.html",
+    "bytes": 199595,
+    "sha256": "316cd2eb407dae8a43ee9764a62ff575f8ad41ce6454eaa6a4832ba86f7a7610"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/atc-irpf.txt",
+    "bytes": 48617,
+    "sha256": "fa4ca5729f1240087f841fe86d2b0093d2cecd97890931eaf15baf38a3a86bf1"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/atib2026-thalidomide.html",
+    "bytes": 39171,
+    "sha256": "2580dc3fae7616d0d43e55d4bd85ed487c393e74147c88682d6da333e58056e5"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/atib2026-thalidomide.txt",
+    "bytes": 13713,
+    "sha256": "756649b0776dc0bcd73969a038c368137a2701be1e6f60a9c17abc3c043e57bb"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/balearic--a1.txt",
+    "bytes": 2250,
+    "sha256": "130512c301f2d1a197278603830438d7ffe7e87e89e9517e3591e17c291bc4ce"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/balearic--a2.txt",
+    "bytes": 1395,
+    "sha256": "859e9f20eb5f7eb1dadd6b5968de415d1184e2494e9a9055018d8f7e0c116d59"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/balearic--a3-12.txt",
+    "bytes": 1135,
+    "sha256": "14736d9880ad9d0493854596aa04f1c8ae461af5f247e2e805d5bc0ca18941d5"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/balearic--a3-15.txt",
+    "bytes": 2001,
+    "sha256": "b8d035105d02914f1d87b75cfba7b70e533d24f343266bc1289dd04676a87b96"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/balearic--a3-17.txt",
+    "bytes": 854,
+    "sha256": "a1e261494d475f0b6041b7103f1192a08ee2e3c5082d3f8d39807ffa78ab94d9"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/balearic-articles.txt",
+    "bytes": 3990,
+    "sha256": "f7bc684bb88806761bfdec7ffd90f0286ae669055b65fa4c6c2464f8276a4578"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/balearic.html",
+    "bytes": 718564,
+    "sha256": "55d31e44b6e50fabadf0b7bde188c1a9b7b3e790f306fdd70278614bf0cf8a89"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/balearic.txt",
+    "bytes": 303235,
+    "sha256": "f23e065a2573c6cf76a80089b57aa0aee4f5aef72e6038809e0dae5fdd53a527"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/canarias--a1-7.txt",
+    "bytes": 1752,
+    "sha256": "2ab0c6ed8d67603bf643c5d291e8456149e2f86b59d04e1e309c2221cd4d5499"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/canarias--a1-8.txt",
+    "bytes": 3408,
+    "sha256": "bcea0164cab541fe4606ef0bf4dbc3954db9f641e96173f41bc06d6aa01b59f5"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/canarias--a18bis.txt",
+    "bytes": 3604,
+    "sha256": "8e32ae3cd5363f7999bc57ab16118e42b49447fe1cd20ce97c7bf1e8bf73baf2"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/canarias--a18ter.txt",
+    "bytes": 737,
+    "sha256": "38c26d519c3c922a9e89006e879458f5d0281ceee5f7f3d6fb2d5ec2c477c1d1"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/canarias--a8.txt",
+    "bytes": 3222,
+    "sha256": "c6f4a5fb0a2c9ea82c8b5e3a1d46d8f96f8cd93cac0ad3287cb8ae7d2a7c9ba0"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/canarias-articles.txt",
+    "bytes": 3222,
+    "sha256": "c6f4a5fb0a2c9ea82c8b5e3a1d46d8f96f8cd93cac0ad3287cb8ae7d2a7c9ba0"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/canarias.html",
+    "bytes": 463402,
+    "sha256": "126dd2f4e3d3c548eb94950eb3e666a7a3e3eaaa16751d8d2866490595a6747d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/canarias.txt",
+    "bytes": 260049,
+    "sha256": "decc0a60742398c9a58845eef9376781cbe8b31b42649c67c170fccc52db7c6a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/cantabria--a1.txt",
+    "bytes": 3022,
+    "sha256": "bc57bffa391dcc03baea4d96ad8c59159c290ef1bc98a5dac359c5f68a2d924a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/cantabria--a2.txt",
+    "bytes": 53608,
+    "sha256": "ce8b821ff8229b8958f571179f9d1bb107c4500a4c5ea16c9c9dda7d530f70d4"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/cantabria-articles.txt",
+    "bytes": 53608,
+    "sha256": "ce8b821ff8229b8958f571179f9d1bb107c4500a4c5ea16c9c9dda7d530f70d4"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/cantabria-attribution-excerpts.txt",
+    "bytes": 3530,
+    "sha256": "cb5f92e24fe3d8b3d08ad1769cd5ca473c44e7b72a639e10af09000e2ab9f578"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/cantabria.html",
+    "bytes": 350447,
+    "sha256": "7a4a822e6af9ba53dab92271c97830fcc73d87970f6df437304f9b550ac5d1f4"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/cantabria.txt",
+    "bytes": 183933,
+    "sha256": "8ef166546f29909c5e50310632b1a1f32a45c8f6bacb4a448433c6841cc7bd76"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/catalan-base--a6.txt",
+    "bytes": 1661,
+    "sha256": "fa878f9deb11d0729c602bdb287eebb74ccacbe336ccfbfc43b9564160678c70"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/catalan-base.html",
+    "bytes": 479872,
+    "sha256": "6eb4e59b8b262a7aa360fe41c19681e5b7d57690eb4369a95061ef8fae021efc"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/catalan-base.txt",
+    "bytes": 253727,
+    "sha256": "c6a411cbfb40dbabbb0fd08556bb7a46cbcdd42ca90f101374e1442333e6fdc8"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/catalan-correction-oct2.html",
+    "bytes": 26253,
+    "sha256": "9a5d2f1c4909f4ea0ea50a798abb82cbc0106eeb4ed2da6cd080a028cecc8580"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/catalan-correction-oct2.txt",
+    "bytes": 10686,
+    "sha256": "5838e9f78fce897482a9603e091d39b1705d657645bda5b112f0415302930029"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/catalan-correction-oct27.html",
+    "bytes": 16902,
+    "sha256": "12ae0ea106ac5fdded2068318c1a1b1b62f4ed9d423a8ca04e024491b2a60eae"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/catalan-correction-oct27.txt",
+    "bytes": 3570,
+    "sha256": "ae45764a9aaf57fbd2a93b9399200b4ae7fe956744a781099739be4fd91811aa"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/catalan2026.pdf",
+    "bytes": 4600310,
+    "sha256": "569eb43a1bc5478c761ddaaf5879f820eee6fd88aa3d15f84ad7713b0c1d5793"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/catalan2026.txt",
+    "bytes": 615713,
+    "sha256": "aeea2e7e5e0ca483412f4e0b2e9ac04566a07991536a87bd2141f946a2e7192a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/clm--a1-6.txt",
+    "bytes": 2297,
+    "sha256": "6bc1b52dd943d0454b55118078d533b9f9c85e681ab083c59335c12659166546"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/clm--a1.txt",
+    "bytes": 800,
+    "sha256": "d4e298f2b97db6c15ad681a9a8de42a85768a5941243970cf835c45912e9d45c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/clm--a13bis.txt",
+    "bytes": 1457,
+    "sha256": "79f89b0b555ad09e106d99543065c048e150db62e906f037396353fb22aeff69"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/clm-articles.txt",
+    "bytes": 2297,
+    "sha256": "6bc1b52dd943d0454b55118078d533b9f9c85e681ab083c59335c12659166546"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/clm.html",
+    "bytes": 379179,
+    "sha256": "4ef28a74c5d33f0bfabc39cc09ccfbeb64c2cf388151d2710dfc5f4555c2b1f4"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/clm.txt",
+    "bytes": 172941,
+    "sha256": "28abcb9f80065771699df6ddd14b771a42c792fe45c5530afdea46629cdf7904"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/extremadura--a1-20.txt",
+    "bytes": 1764,
+    "sha256": "280b5ea7cc9b9d2059a90968ba94e51b2de3430b8d5ef31ee9ef95e4818d964c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/extremadura--a1.txt",
+    "bytes": 2327,
+    "sha256": "a717341f7122724dd4bb755661fffd09fd273a4ed5f82a9ee313b47272f68d4f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/extremadura-articles.txt",
+    "bytes": 1764,
+    "sha256": "280b5ea7cc9b9d2059a90968ba94e51b2de3430b8d5ef31ee9ef95e4818d964c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/extremadura.html",
+    "bytes": 558040,
+    "sha256": "42b21763fbb7a38e1e947160f5094c3ba17809e0e7ce2d04f2cb4b6e4309859f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/extremadura.txt",
+    "bytes": 247956,
+    "sha256": "d1ce0b75c298053ff9d1d7f2c28d7b8d4fda655c022264c9a678320d54687c0f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/extremadura2026-authority.html",
+    "bytes": 134775,
+    "sha256": "64912e1fee425243bc41fb9f6d559d748c93787b65795d1f44f5f197f7ba4a0b"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/extremadura2026-authority.txt",
+    "bytes": 58972,
+    "sha256": "e190f16f73aa5a4b180f039d6914b42245b8fed9a9c62af6d2140f320b2df3a4"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/galicia--a4-2.txt",
+    "bytes": 3235,
+    "sha256": "1ce0a99b6589302b61d272fa883462f3399d964a23a1e97844756f4a99b25ab7"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/galicia--a4.txt",
+    "bytes": 2302,
+    "sha256": "dff3e74aa0811ada3481abf3cb1bc86c0ddbb0892f9061b1e35b5621967d77bc"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/galicia--a5.txt",
+    "bytes": 62400,
+    "sha256": "e85f904c7e9e28b0a26650e1024f87884a8d2a43e2bdefc8945f2a30a8960199"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/galicia-articles.txt",
+    "bytes": 62400,
+    "sha256": "e85f904c7e9e28b0a26650e1024f87884a8d2a43e2bdefc8945f2a30a8960199"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/galicia-attribution-excerpts.txt",
+    "bytes": 5368,
+    "sha256": "ce97e5982e8d070ae382c20989ba48bf4abecd85db159d61e74d844c2e46ba5d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/galicia.html",
+    "bytes": 675743,
+    "sha256": "9e5ecc75f496f646fb72760077673b39481e57959305fa89d31a9b7929ea0a0c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/galicia.txt",
+    "bytes": 319667,
+    "sha256": "89c09b5f3ea09816b7a7048b30f196e26bf3e643fb70b045f46404e6c61c7a7c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a19.txt",
+    "bytes": 2643,
+    "sha256": "f6f7e779e0c3309aead749e86a111c89e716a41f86098437474ecfa60ff60556"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a20.txt",
+    "bytes": 3759,
+    "sha256": "487ff4a131f241fa9b2ce1dcc39ffa059aadf0757e85ba8126cc53edf8cd018a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a48.txt",
+    "bytes": 2206,
+    "sha256": "1c06052d2b810443ce882685a4815f48b8ab28864e9ce505f4107b28a5ab959b"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a49.txt",
+    "bytes": 2737,
+    "sha256": "e031b3aabd4b05683a1ee4a638585e139127497c05f8beae353c379df125116b"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a50.txt",
+    "bytes": 2149,
+    "sha256": "d0f4cfda34da46a2808f57af509e00e733002d6fc874e68394386e5537df6d42"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a51.txt",
+    "bytes": 13312,
+    "sha256": "3dfaa7098fe2e6129f3198940abdaa0a5194670dce78aeca80d3476725d31119"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a55.txt",
+    "bytes": 499,
+    "sha256": "0effb1bccf7a0f5a086b52219c08ba7a3bd3e9005aec1d0b44bfacce5b497383"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a56.txt",
+    "bytes": 2081,
+    "sha256": "1ed53909876c9cfa12afb6695c91aaaa2fe4dae480e142a756efb7acdf7cc9af"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a62.txt",
+    "bytes": 348,
+    "sha256": "7b0df26496f32c4e4af8d7f5bddedbb60f2d7da366d9be6355498a969130f2aa"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a63.txt",
+    "bytes": 4501,
+    "sha256": "f634e9f3993b5e00778f5ae4774fc61d8e99088e7432f70ad3b6e2b265c4c712"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a66.txt",
+    "bytes": 5020,
+    "sha256": "e3c632342449e076b2540dadc4036346a543b3da0fee4ddb1ca033ae68f6a4f3"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a73.txt",
+    "bytes": 366,
+    "sha256": "310f92316af8ff79db355541846fe338e14c8bb4bdc572de1f1b805728445399"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a74.txt",
+    "bytes": 3187,
+    "sha256": "fab8d84c728d92d6f1cb859849e2b53b7aa224161e13ed56aa578ced9f44993c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a76.txt",
+    "bytes": 3850,
+    "sha256": "d5b0eb09c61c5d33d4ccfd0561d9d188bfee4eab4bb7b863d142f28d83285381"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a77.txt",
+    "bytes": 2375,
+    "sha256": "45e5be2bd8702588225db6803fcaa78a603b170ca2bc1a0df51adbd4d4fb5c74"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf--a84.txt",
+    "bytes": 5010,
+    "sha256": "0b43b0ad88e67ede4dc17d1765ecd94fde55330a8614d3a9ae2185fbff9193b1"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf-articles.txt",
+    "bytes": 20788,
+    "sha256": "c7ad8c4c3fdd621e7c1588cba030060e586d1dac182035503041ff97c3472d72"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf.html",
+    "bytes": 2028806,
+    "sha256": "2ca8b30e1e772cbffe995bc2a0f880a2dc91d03a19d88ed8a86178de1b0b8052"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/lirpf.txt",
+    "bytes": 900280,
+    "sha256": "c5bfe98433c9a74cfe075edc7b046eca3afa0c9428fca20a9cc4fd2a63796490"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_10_18-obtencion-ayudas-subvenciones-otorgadas-ela.html",
+    "bytes": 8998,
+    "sha256": "40c16a924cb17fb88269a02bbc445d6d0bf06a7ce667db3e638deb11b3f9c9c1"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_10_18-obtencion-ayudas-subvenciones-otorgadas-ela.txt",
+    "bytes": 1552,
+    "sha256": "31022762f1d1098dcf606cd694997ae80a51804c7bb4544d10282baf1896827a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_11_17_por-ayudas-subvenciones-recibidas-deportistas.html",
+    "bytes": 9438,
+    "sha256": "3058f72090e5e3d5ee363eede1d731ba80b8fcd3bafd3f6ef0ad1528e792d2de"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_11_17_por-ayudas-subvenciones-recibidas-deportistas.txt",
+    "bytes": 1871,
+    "sha256": "e7a757ada1c5a4846a0c823821481e2340cd100ccd665c10fe0948778a9f308c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_11_22-subvenciones-incendios.html",
+    "bytes": 9604,
+    "sha256": "7ffe5a0723bef4acdf4f636380ead0cf900a360cb4e52df6914febefc53d143d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_11_22-subvenciones-incendios.txt",
+    "bytes": 2094,
+    "sha256": "598f31416c58b59f877fdf0130a0e81e1e796d8da84b1f8d838c453f9f38671d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_11_23-ayudas-subvenciones-recibidas-personas-fenotipos.html",
+    "bytes": 8990,
+    "sha256": "1b08a412cb2956fac75a7a41dc2e74cc9d377ec4dd4ffb0a7dbcbe27579b8d31"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_11_23-ayudas-subvenciones-recibidas-personas-fenotipos.txt",
+    "bytes": 1538,
+    "sha256": "93619964f9992ed69d3c02a38f1ef3f517cf40b2e3ed12fe847c14a94b06260a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_11_25-ayudas-recibidas-personas-afectadas-1985.html",
+    "bytes": 9231,
+    "sha256": "230c6f33f3a2f7c02a13b9b2e5fda177734d3e1635de76b248297476c1697da0"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_11_25-ayudas-recibidas-personas-afectadas-1985.txt",
+    "bytes": 1769,
+    "sha256": "a85574ce09b903231f64be54fd40f18f896a3dcbd4957633c3aefaf7bb58924a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_15_27-ayudas-decreto-ley-32020.html",
+    "bytes": 9085,
+    "sha256": "c04e6b071dde65e486521a2260f25d8fcf65e52298c142269b652017fbc7d267"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_15_27-ayudas-decreto-ley-32020.txt",
+    "bytes": 1645,
+    "sha256": "23a5c4e283b4844d33670020fb339d3fdb0f47e46ed6ff51c63dffa3f32407e4"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_2_12-arrendamiento-vivienda-social.html",
+    "bytes": 9265,
+    "sha256": "3c2913b6ad8fd5fec882bc068c426793c2aeacb617397061040e782823accef8"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_2_12-arrendamiento-vivienda-social.txt",
+    "bytes": 1735,
+    "sha256": "56f9abe3ed29c4c6dc37eda1ff025a8d30a6b2710044336861b44ebc1517ab01"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_3_21-obtencion-ayudas-subvenciones-otorgadas-enfermos.html",
+    "bytes": 9034,
+    "sha256": "7bd5f3a05f6fe7e71555c021d8e984955277075f7279d1cba1f014b3ed45d186"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_3_21-obtencion-ayudas-subvenciones-otorgadas-enfermos.txt",
+    "bytes": 1589,
+    "sha256": "5c6695f085b3d44bf05e180ed8e603ae7ea92e16e445ecf48b856efeb4991bc9"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_4_19-determinadas-subvenciones-declaracion-zona-afectada.html",
+    "bytes": 9268,
+    "sha256": "126f59ea0ce20685ffcaa3070fe031ff90d9bb894c26bc1b86835c1458a8bc14"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_4_19-determinadas-subvenciones-declaracion-zona-afectada.txt",
+    "bytes": 1810,
+    "sha256": "f8cacf7650b1060a4c0ebbf773f5651e865dcdb85fe22bebed59af994c13eb4d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_5_5-trasladar-residencia-habitual.html",
+    "bytes": 10903,
+    "sha256": "b56daa1c3dc4f2a5680d695018507ae80b4f6b47814cc8774916f14024351658"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_5_5-trasladar-residencia-habitual.txt",
+    "bytes": 3117,
+    "sha256": "557aeedce7bdb747d091e1684626d04279559169da4330ea34039df9ae6d2edd"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_6_14-gastos-ocasionados-trasladar-residencia.html",
+    "bytes": 10725,
+    "sha256": "b5bab45c2f86c0c54cbecb3d735e03e8ffe847196fce86c71d5c2c62ed4835f6"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_6_14-gastos-ocasionados-trasladar-residencia.txt",
+    "bytes": 2794,
+    "sha256": "0381e6ad9af63f153513c30dd7cc9561be70f173d0635974f931530cf7c8bca8"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_7_16-traslado-vivienda-habitual.html",
+    "bytes": 12475,
+    "sha256": "747cc03018b58a9450eb63f386160f31eab1f47a11b8d717594d129ebfba4bee"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/presentation-10_7_16-traslado-vivienda-habitual.txt",
+    "bytes": 4048,
+    "sha256": "ef94998a73e3f9f9f30cc1f792afe6e4003372992f02ba2a1f8bd550b36f7d27"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/valencia--a2-2.txt",
+    "bytes": 3144,
+    "sha256": "83f65be5ff45f23a37383cac137a152a8427e93d87aa27878894750bf8be1f61"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/valencia--a2.txt",
+    "bytes": 6994,
+    "sha256": "7e1c7e02f6ec8bb395a9739cd4d6f6d6f357a6e8a019e0b7c49068f6de952312"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/valencia--a4.txt",
+    "bytes": 85339,
+    "sha256": "cee22d83c541267b8d65c6352485b33b1a35f061e45ffb5d10d86997478732ab"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/valencia--da.txt",
+    "bytes": 3588,
+    "sha256": "7db756a147281e347dfffe8c21b461fc89f51907494484e3033276d9056e959f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/valencia-articles.txt",
+    "bytes": 85339,
+    "sha256": "cee22d83c541267b8d65c6352485b33b1a35f061e45ffb5d10d86997478732ab"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/valencia-attribution-excerpts.txt",
+    "bytes": 2356,
+    "sha256": "fe2e3628d3dab95ddad11c83270316ad9e7a5abf0441c51e1ea938cbbd9ac84e"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/valencia.html",
+    "bytes": 789701,
+    "sha256": "2655362a9007d84c176080ff40bc272fcc8a1b03500f7cdad124a366aaaf594e"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-attributable-tax-completion/sources/valencia.txt",
+    "bytes": 274557,
+    "sha256": "aace91f62486f10b7d427f176a5834486966fd54585d719f1318a1400751798e"
+  }
+]

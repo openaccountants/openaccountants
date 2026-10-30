@@ -7,10 +7,20 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `gg-corporate-tax-substance.md`
-4. `gg-individual-income-tax.md`
-5. `gg-payroll-social-insurance.md`
-6. `payroll-workflow-base.md`
+3. `README.md`
+4. `gg-company-accounts-and-reporting.md`
+5. `gg-company-formation.md`
+6. `gg-corporate-tax-substance.md`
+7. `gg-gst-transition.md`
+8. `gg-individual-income-tax.md`
+9. `gg-payroll-social-insurance.md`
+10. `gg-property-document-duty.md`
+11. `gg-secondary-pensions.md`
+12. `gg-transfer-pricing-and-connected-transactions.md`
+13. `gg-uk-treaty-employment-and-relief.md`
+14. `payroll-workflow-base.md`
+15. `company-formation-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

@@ -1,0 +1,535 @@
+
+
+
+
+    
+	
+	
+	
+    
+    
+	
+	Lexnavarra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[ID:estructura]]
+
+
+    (ir al contenido)
+
+
+    
+[[ID:cabecera]]
+
+
+        
+navarra.es
+
+ 
+
+Castellano  | Euskara   | Français  | English 
+
+ 
+
+
+[[ID:frmSearch]]
+
+
+
+buscador
+
+
+[[ID:cadena]]
+
+
+[[ID:c]]
+
+
+
+
+
+[[ID:primerNivel]]
+
+
+
+Navarra
+
+
+Trámites
+
+
+Temas
+
+
+Gobierno
+
+
+Actualidad
+
+
+
+
+
+
+[[ID:contenido_modificado]]
+
+
+
+
+
+
+
+[[ID:migas]]
+
+
+Navarra :
+
+
+
+Lexnavarra
+
+ : Legislación
+
+
+
+
+
+
+
+LEXNAVARRA
+
+
+
+
+
+Versión para imprimir
+
+
+
+
+
+ORDEN FORAL 183/2009, DE 10 DE NOVIEMBRE, DEL CONSEJERO DE ECONOMÍA Y HACIENDA, POR LA QUE SE APRUEBA EL MODELO 296 “IMPUESTO SOBRE LA RENTA DE NO RESIDENTES. NO RESIDENTES SIN ESTABLECIMIENTO PERMANENTE. DECLARACIÓN ANUAL DE RETENCIONES E INGRESOS A CUENTA”
+
+
+
+BON N.º 147 - 30/11/2009
+
+
+
+Preámbulo
+
+Artículo 1. Aprobación del modelo 296 .
+
+Artículo 2. Formas de presentación del modelo 296 .
+
+Artículo 3. Obligados a presentar el modelo 296.
+
+Artículo 4. Contenido del modelo 296 .
+
+Artículo 5. Plazo de presentación del modelo 296 .
+
+Artículo 6. Identificación de los soportes directamente legibles por ordenador del modelo 296, y forma de presentación de los mismos.
+
+Artículo 6. bis. Condiciones generales para la presentación telemática por Internet de las declaraciones correspondientes al modelo 296 .
+
+Artículo 6. ter. Procedimiento para la presentación telemática por Internet de las declaraciones correspondientes al modelo 296 .
+
+Artículo 7. Documentación.
+
+Artículo 8. Documentación en el caso de entidades autorizadas para la gestión colectiva de derechos de la propiedad intelectual.
+
+Artículo 9. Documentación en el caso de comercialización transfronteriza de acciones o participaciones de instituciones de inversión colectiva españolas.
+
+Artículo 10. Reglas aplicables al suministro informativo en el modelo 296, en el supuesto de que existan varios perceptores titulares del mismo elemento patrimonial, bien o derecho de que provengan las rentas objeto del modelo.
+
+Disposición Adicional Única. Información relativa a cuentas de no residentes.
+
+Disposición Derogatoria Única. Derogación normativa.
+
+Disposición Final Única. Entrada en vigor.
+
+  ANEXO I. IMPUESTO DE LA RENTA SOBRE NO RESIDENTES 
+ANEXO I
+
+  ANEXO II. DISEÑOS FÍSICOS Y LÓGICOS PARA LA PRESENTACIÓN DEL MODELO 296 EN SOPORTE DIRECTAMENTE LEGIBLE POR ORDENADOR 
+ANEXO II
+
+
+
+
+Preámbulo
+
+El artículo 28.1  del Convenio Económico entre el Estado y la Comunidad Foral de Navarra indica que en la exacción del Impuesto sobre la Renta de no Residentes, la Comunidad Foral aplicará normas sustantivas y formales del mismo contenido que las establecidas en cada momento por el Estado. No obstante, la Administración de la Comunidad Foral podrá aprobar los modelos de declaración e ingreso, que contendrán, al menos, los mismos datos que los del territorio común, y señalar plazos de ingreso para cada período de liquidación, que no diferirán sustancialmente de los establecidos por la Administración del Estado.
+
+El artículo 31  del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado por el Real Decreto Legislativo 5/2004, de 5 de marzo, regula la obligación genérica de retener e ingresar a cuenta respecto de las rentas sujetas al Impuesto sobre la Renta de no Residentes obtenidas por contribuyentes del citado Impuesto sin mediación de establecimiento permanente, determinándose en los apartados 2 y 4, el importe de esta retención que será, en general, una cuantía equivalente a la cuota del Impuesto. Asimismo, el apartado 1 del citado artículo y el apartado 1 del artículo 53  del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes constituyen el marco normativo en cuanto a los sujetos obligados a retener respecto de las rentas a que se refiere la presente orden foral.
+
+Las normas reglamentarias del régimen de pagos a cuenta del Impuesto sobre la Renta de no Residentes correspondientes a rentas obtenidas sin establecimiento permanente se regulan en la sección 2.ª del Capítulo III  del Reglamento del Impuesto sobre la Renta de no Residentes, aprobado por Real Decreto 1776/2004, de 30 de julio.
+
+Los artículos 31.5  del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes y 15   del Reglamento de dicho Impuesto, establecen que el retenedor o el obligado a ingresar a cuenta deberá presentar declaración de las cantidades retenidas y de los ingresos a cuenta efectuados e ingresar su importe en el Tesoro, o declaración negativa cuando no hubiera procedido la práctica de éstos. Asimismo deberá presentar una declaración anual de las retenciones e ingresos a cuenta efectuados.
+
+La Orden Foral 26/2000, de 15 de febrero, aprobó los modelos 296, en pesetas y en euros, del resumen anual de retenciones e ingresos a cuenta efectuados en relación con rentas sujetas al Impuesto sobre la Renta de no Residentes obtenidas por contribuyentes de dicho impuesto sin establecimiento permanente.
+
+Con posterioridad, la Orden Foral 429/2004, de 23 de diciembre, modificó la mencionada Orden Foral 26/2000, con la finalidad de adaptar el modelo 296 a la obligación de suministro de información adicional a la Administración tributaria respecto de las operaciones de préstamo de valores a que se refiere el apartado tercero de la disposición adicional decimoctava  de la Ley 62/2003, de 30 de diciembre, de medidas fiscales, administrativas y del orden social.
+
+Por otro lado, el plazo de presentación del modelo 296, entre otros modelos de carácter informativo, fue modificado por el Decreto Foral 126/2005, de 10 de octubre, que estableció como tal el período comprendido entre el 1 y el 31 de enero de cada año, con referencia a las operaciones que correspondan al año inmediato anterior.
+
+Mediante la aprobación de esta orden foral se refunde la normativa relativa al modelo 296. Además se favorece el intercambio de información con otros países y el control recíproco de los contribuyentes no residentes ampliando los campos de datos referentes a los identificativos y domicilio de los perceptores (registros) relacionados en el modelo 296.
+
+En este sentido, por razones operativas y de control se han excluido de la regulación contenida en la presente orden foral ciertas rentas sujetas al Impuesto sobre la Renta de no Residentes y al sistema de retención e ingreso a cuenta, obtenidas por contribuyentes de dicho impuesto sin establecimiento permanente. Por una parte, las rentas derivadas de transmisiones o reembolsos de acciones y participaciones representativas del capital o patrimonio de instituciones de inversión colectiva, respecto de las cuales, y con la finalidad de facilitar a los obligados tributarios el cumplimiento unificado de las obligaciones de información, se ha regulado de manera específica, y con independencia de la condición del socio o partícipe, el suministro de toda la información con trascendencia tributaria relativa a dichas acciones y participaciones, que se facilitará en el modelo 187.
+
+Por otra parte, se excluye la retención o ingreso a cuenta que deben efectuar los adquirentes de bienes inmuebles a no residentes sin establecimiento permanente, previsto en el apartado 2 del artículo 25  del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, y desarrollado en el artículo 14  del Reglamento del Impuesto, que por sus propias características, se diferencia del sistema de retención e ingreso a cuenta establecido en el artículo 31  del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes. En consecuencia, la retención o ingreso a cuenta se realizará, como hasta ahora, mediante el modelo 211.
+
+La disposición adicional séptima  de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria autoriza al Consejero de Economía y Hacienda para regular mediante orden foral los supuestos y condiciones en los que contribuyentes y entidades pueden presentar por medios electrónicos, informáticos y telemáticos, declaraciones, comunicaciones, declaraciones-liquidaciones, autoliquidaciones o cualesquiera otros documentos exigidos por la normativa tributaria.
+
+En consecuencia,
+
+ordeno:
+
+
+Artículo 1. Aprobación del modelo 296 .
+
+Se aprueba el modelo 296 ‘Impuesto sobre la Renta de no Residentes. No residentes sin establecimiento permanente. Declaración anual de retenciones e ingresos a cuenta.
+
+
+Artículo 2. Formas de presentación del modelo 296 .
+
+El modelo 296 se presentará:
+
+1. Por vía electrónica a través de Internet, con arreglo a las condiciones generales y el procedimiento contenidos en los artículos 6 bis y 6 ter.
+
+2. Cuando la declaración contenga 12.000 registros o más, mediante soporte directamente legible por ordenador, conforme a lo establecido en el artículo 6, según los diseños de los registros establecidos en el Anexo II.
+
+
+Artículo 3. Obligados a presentar el modelo 296.
+
+Uno. Están obligados a presentar a la Hacienda Tributaria de Navarra la declaración anual 296, en el caso de que las retenciones o ingresos a cuenta correspondan a Navarra, de acuerdo con lo establecido en el Convenio Económico entre el Estado y la Comunidad Foral, los sujetos obligados a retener o a efectuar ingreso a cuenta a los que se refiere el artículo 11  del Reglamento del Impuesto sobre la Renta de no Residentes, salvo los sujetos obligados a retener o ingresar a cuenta en las transmisiones o reembolsos de acciones o participaciones representativas del capital o patrimonio de las instituciones de inversión colectiva, que efectuarán una declaración anual específica.
+
+Dos. Conforme establece el apartado 2 del artículo 15  del Reglamento del Impuesto sobre la Renta de no Residentes, están también obligados a presentar la declaración anual las entidades domiciliadas, residentes o representadas en España, que paguen por cuenta ajena rentas sujetas a retención o ingreso a cuenta o que sean depositarias o gestionen el cobro de las rentas de valores.
+
+
+Artículo 4. Contenido del modelo 296 .
+
+1. Conforme establece el artículo 15.2 del Reglamento del Impuesto sobre la Renta de no Residentes, el modelo 296 contiene una relación nominativa de perceptores que, con carácter general, serán los contribuyentes por el Impuesto sobre la Renta de no Residentes que obtienen rentas en territorio español sin mediación de establecimiento permanente, sujetas a retención.
+
+2. Tratándose de declarantes que sean obligados a retener o a ingresar a cuenta dicha relación contendrá los datos de los perceptores de rentas sujetas al Impuesto, satisfechas o abonadas por ellos, respecto de las que han efectuado retenciones o ingresos a cuenta o respecto de aquellas sobre las que no procede practicar retención o ingreso a cuenta, pero sí existe obligación de presentar declaración negativa de retenciones.
+
+3. No se incluirá en el resumen anual a los perceptores de rentas excluidas de la obligación de presentar declaración negativa de retenciones, que obtengan las siguientes rentas:
+
+a) Las rentas a que se refiere el artículo 14.1.a) del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, excepto los rendimientos del trabajo en especie mencionados del artículo 42.3  de la Ley 35/2006, de 28 de noviembre, que regula el Impuesto sobre la Renta de las Personas Físicas.
+
+b) Las rentas derivadas de valores emitidos en España por personas físicas o entidades no residentes sin mediación de establecimiento permanente, cualquiera que sea el lugar de residencia de las instituciones financieras que actúen como agentes de pago o medien en la emisión o transmisión de los valores.
+
+c) Los rendimientos de las cuentas de no residentes que se satisfagan a contribuyentes de este Impuesto, salvo que el pago se realice a un establecimiento permanente situado en territorio español, por el Banco de España o por las entidades registradas a que se refiere la normativa de transacciones económicas con el exterior.
+
+d) Los intereses de la Deuda del Estado y de las Comunidades Autónomas en Anotaciones, sujetos a un procedimiento especial de pago de los mismos o de devolución de retenciones.
+
+e) Las rentas exceptuadas de la obligación de retener y de ingresar a cuenta enumeradas en el artículo 10.3 del Reglamento del Impuesto sobre la Renta de no Residentes.
+
+f) Las rentas a que se refiere el artículo 149.1.c) de la Ley Foral 24/1996, de 30 de diciembre, del Impuesto sobre Sociedades.
+
+4. Tratándose de declarantes que sean entidades domiciliadas, residentes o representadas en España que paguen por cuenta ajena rentas sujetas a retención o ingreso a cuenta o que sean depositarias o gestionen el cobro de las rentas de valores, que formen parte de la cadena de pago de dichas rentas, harán constar los datos del anterior pagador y, como perceptor, al siguiente mediador en la cadena. Si la cadena finalizase en España, el último mediador informará, como perceptor, de los datos del contribuyente que obtiene la renta.
+
+5. En el caso de que en el pago de esos rendimientos se haya utilizado el procedimiento especial de ajuste de retenciones previsto en la Orden de 13 de abril de 2000, por la que se establece el procedimiento para hacer efectiva la práctica de retención al tipo que corresponda en cada caso, o la exclusión de retención, sobre los intereses y dividendos obtenidos sin mediación de establecimiento permanente por contribuyentes del Impuesto sobre la Renta de no Residentes derivados de la emisión de valores negociables, a excepción de los intereses derivados de determinados valores de la Deuda Pública, la entidad depositaria interviniente en dicho procedimiento, al suministrar información en su modelo 296, hará constar en el campo "Perceptor" los datos del contribuyente que obtiene la renta.
+
+6. Los anexos al registro de tipo 2, "Valores negociables. Relación de pago a contribuyentes" y "Valores negociables. Relación de certificados de pago", se utilizarán por mediadores en España que realicen los pagos de rentas de valores a intermediarios en el extranjero cuando soliciten la devolución de retenciones para los contribuyentes mediante el modelo de autoliquidación 210. Estos anexos se suministrarán con posterioridad a la presentación de los modelos 210, en el plazo previsto en el artículo 5.
+
+Cuando la solicitud de devolución de retenciones se realice por contribuyentes o sus representantes, los mediadores en España que realicen los pagos de rentas de valores a intermediarios en el extranjero podrán incluir en los anexos los registros de estos contribuyentes cuyos modelos 210 se hayan presentado.
+
+
+Artículo 5. Plazo de presentación del modelo 296 .
+
+El plazo de presentación del modelo 296, incluyendo, en su caso, el “Anexo de desglose de retenciones e ingresos a cuenta ingresados en el Estado, en las Diputaciones Forales del País Vasco y en la Comunidad Foral de Navarra”, será el comprendido entre el 1 de enero y el 5 de febrero del año siguiente al que corresponde la declaración anual.
+
+No obstante, los anexos al registro de tipo 2, registro de perceptor, de los diseños de registro del modelo 296, denominados “Valores negociables. Relación de pago a contribuyentes” y “Valores negociables. Relación de certificados de pago”, se presentarán durante el mes natural siguiente a la fecha de presentación del modelo 210.
+
+
+Artículo 6. Identificación de los soportes directamente legibles por ordenador del modelo 296, y forma de presentación de los mismos.
+
+Uno. Tratándose de presentación individual en soporte directamente legible por ordenador, el declarante presentará los siguientes documentos:
+
+1. Los dos ejemplares, para la Administración y para el interesado, de la hoja-resumen del modelo 296, debidamente firmados, indicando en los espacios correspondientes la identidad del firmante así como los restantes datos que en la citada hoja-resumen se solicitan.
+
+Una vez sellado por la oficina receptora, el declarante retirará el “ejemplar para el interesado” de la hoja resumen del modelo 296 presentado, que servirá como justificante de la entrega.
+
+2. El soporte directamente legible por ordenador deberá tener una etiqueta adherida en el exterior en la que se harán constar los datos que se especifican a continuación y, necesariamente, por el mismo orden:
+
+a) Ejercicio.
+
+b) Modelo de presentación 296.
+
+c) Número de identificación fiscal (NIF) del declarante.
+
+d) Apellidos y nombre, o razón social, del declarante.
+
+e) Apellidos y nombre de la persona con quien relacionarse.
+
+f) Número de teléfono y extensión de dicha persona.
+
+g) Número total de registros.
+
+Para hacer constar los referidos datos bastará consignar cada uno de ellos precedido de la letra que le corresponda según la relación anterior.
+
+En el supuesto de que el archivo conste de más de un soporte directamente legible por ordenador, todos llevarán su etiqueta numerada secuencialmente: l/n, 2/n, etc., siendo “n” el número total de soportes. En la etiqueta del segundo y sucesivos volúmenes sólo será necesario consignar los datos indicados en las letras a), b), c) y d) anteriores.
+
+Dos. Tratándose de presentación colectiva en soporte directamente legible por ordenador, la persona o entidad presentadora entregará los siguientes documentos:
+
+1. Los dos ejemplares, para la Administración y para el interesado, de la hoja-resumen correspondiente al presentador, modelo 296, cada uno de los cuales deberá estar debidamente firmado y en los que se habrá hecho constar los datos de identificación de la persona o entidad que actúe como presentadora, los relativos al número total de declarantes y al número total de perceptores relacionados, así como el ejercicio y la casilla indicativa del tipo de presentación en los espacios correspondientes.
+
+Una vez sellado por la oficina receptora, el presentador retirará el “ejemplar para el interesado” de la hoja-resumen, que servirá como justificante de la entrega.
+
+2. Los dos ejemplares, para la Administración y para el interesado, de las hojas-resumen del modelo 296 correspondientes a todos y cada uno de los obligados tributarios declarantes debidamente firmados y cumplimentados.
+
+Cada uno de los ejemplares deberá llevar cumplimentados los datos de identificación de dichos declarantes.
+
+Una vez sellados por la oficina receptora, el presentador retirará los “ejemplares para el interesado” de las hojas-resumen correspondientes a los declarantes. No obstante, si el número de hojas-resumen presentadas así lo aconseja y con el objeto de agilizar la recogida de documentos, la retirada por el presentador de los ejemplares sellados podrá realizarse con posterioridad a la presentación, lo que le será oportunamente comunicado.
+
+3. El soporte directamente legible por ordenador deberá tener una etiqueta adherida en el exterior en la que se harán constar los datos del presentador que se especifican a continuación y, necesariamente, en este orden:
+
+a) Ejercicio.
+
+b) Modelo de presentación 296.
+
+c) Número de identificación fiscal (NIF) del presentador.
+
+d) Apellidos y nombre, o razón social, del presentador.
+
+e) Apellidos y nombre de la persona con quien relacionarse.
+
+f) Teléfono y extensión de dicha persona.
+
+g) Número total de registros de todo el archivo.
+
+h) Número total de declarantes presentados.
+
+i) Número total de perceptores relacionados.
+
+Para hacer constar los referidos datos bastará consignar cada uno de ellos precedido de la letra que le corresponda según la relación anterior.
+
+En caso de que la presentación conste de más de un soporte directamente legible por ordenador, todos llevarán su etiqueta numerada secuencialmente l/n, 2/n, etc., siendo “n” el número total de soportes. En la etiqueta del segundo y sucesivos volúmenes sólo será necesario consignar los datos indicados en las letras a), b), c) y d) anteriores.
+
+Tres. Todas las recepciones de soportes legibles por ordenador serán provisionales, a resultas de su proceso y comprobación. Cuando no se ajusten al diseño y demás especificaciones establecidas en la presente orden foral, o cuando no resulte posible el acceso a la información contenida en los mismos, se requerirá al declarante para que en el plazo de diez días hábiles subsane los defectos de que adolezca el soporte informático presentado, transcurridos los cuales y de persistir las anomalías que impidan a la Administración tributaria el acceso a los datos exigibles, se tendrá por no presentada la declaración a todos los efectos, circunstancia ésta que se pondrá en conocimiento del obligado tributario de forma motivada.
+
+Cuatro. Por razones de seguridad, los soportes legibles directamente por ordenador no se devolverán, salvo que se solicite expresamente, en cuyo caso se procederá al borrado y entrega de los mismos u otros similares.
+
+
+Artículo 6. bis. Condiciones generales para la presentación telemática por Internet de las declaraciones correspondientes al modelo 296 .
+
+1. La presentación telemática de las declaraciones correspondientes al modelo 296 estará sujeta a las siguientes condiciones:
+
+a) El declarante deberá disponer de Número de Identificación Fiscal (NIF).
+
+b) El declarante deberá disponer de un certificado electrónico reconocido por la Hacienda Tributaria de Navarra, en los términos establecidos en el Decreto Foral 50/2006, de 17 de julio, por el que se regula el uso de medios electrónicos, informáticos y telemáticos (EIT) en el ámbito de la Hacienda Tributaria de Navarra.
+
+Los prestadores de servicios de certificación y los certificados electrónicos autorizados se encuentran relacionados en el apartado correspondiente, al que se accede a través de la dirección de Internet http://www.hacienda.navarra.es.
+
+c) Si el presentador es una persona o entidad autorizada para presentar declaraciones en representación de terceras personas, de conformidad con lo dispuesto en la Orden Foral 130/2009, de 29 de junio, por la que se aprueba el Acuerdo de colaboración externa para realizar en representación de terceras personas la presentación por vía telemática de declaraciones, comunicaciones y otros documentos tributarios y la tramitación telemática del pago de deudas tributarias, deberá disponer del certificado electrónico reconocido por la Hacienda Tributaria de Navarra, al que se refiere la letra b) anterior.
+
+d) Para efectuar la presentación telemática a través de Internet del modelo 296, el declarante o en su caso el presentador autorizado, deberán utilizar el formulario web disponible en el portal de Navarra, el cual permitirá completar la relación de perceptores rellenando los datos individualmente o bien mediante la importación de un fichero con el formato descrito en la ayuda incluida en el formulario web.
+
+e) Los declarantes deberán tener en cuenta las normas técnicas que se requieren para poder efectuar la citada presentación telemática y que se encuentran publicadas en la página web de la Hacienda Tributaria de Navarra, en la dirección de Internet http://www.hacienda.navarra.es.
+
+2. En aquellos casos en que se detecten anomalías de tipo formal en la transmisión telemática de declaraciones, dicha circunstancia se pondrá en conocimiento del declarante por el propio sistema mediante los correspondientes mensajes de error, para que proceda a su subsanación.
+
+
+Artículo 6. ter. Procedimiento para la presentación telemática por Internet de las declaraciones correspondientes al modelo 296 .
+
+El procedimiento para la presentación telemática por Internet, desde el formulario web, de las declaraciones será el siguiente:
+
+1.º Acceder al servicio de trámites con Hacienda, desde el Portal de Navarra.
+
+2.º Seleccionar el modelo de la declaración a realizar, cumplimentando todos los datos necesarios para poder presentar la declaración.
+
+3.º Una vez cumplimentada la declaración, utilizar la opción de enviar. El sistema validará la declaración cuando ésta sea correcta. Cuando se detecten errores se comunicarán a través del formulario y no se permitirá presentar la declaración hasta que sean corregidos. Una vez que la declaración sea correcta, el sistema comunicará el número asignado a la declaración presentada, y la posibilidad de imprimirla para obtener un justificante de la misma.
+
+
+Artículo 7. Documentación.
+
+1. Los obligados a la presentación de la declaración anual conservarán a disposición de la Administración Tributaria, durante el período de prescripción a que se refiere el artículo 55  de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria, la documentación que justifique las retenciones practicadas.
+
+2. A estos efectos, cuando no se practique la retención por aplicación de las exenciones de la normativa interna española, por razón de la residencia del contribuyente, se justificará con un certificado de residencia, expedido por las autoridades fiscales del país de residencia.
+
+Cuando no se practique la retención por aplicación de las exenciones de un Convenio para evitar la doble imposición suscrito por España o se practique con los límites de imposición fijados en el mismo, se justificará con un certificado de residencia fiscal expedido por la autoridad fiscal correspondiente, en el que deberá constar expresamente que el contribuyente es residente en el sentido definido en el Convenio. No obstante, cuando se practique la retención aplicando un límite de imposición fijado en un Convenio desarrollado mediante una Orden en la que se establezca la utilización de un formulario específico, se justificará con el mismo en lugar del certificado.
+
+Los certificados de residencia a que se refieren los párrafos anteriores tendrán un plazo de validez de un año a partir de la fecha de su expedición.
+
+Cuando no se practique retención por haberse efectuado el pago del Impuesto, se acreditará mediante la declaración del Impuesto correspondiente a dicha renta presentada por el contribuyente o su representante.
+
+3. Lo previsto en los apartados anteriores se entenderá sin perjuicio de lo dispuesto en los artículos 8 y 9.
+
+
+Artículo 8. Documentación en el caso de entidades autorizadas para la gestión colectiva de derechos de la propiedad intelectual.
+
+Las entidades residentes en España autorizadas para ejercer la gestión colectiva de derechos de la propiedad intelectual, en relación con los pagos de derechos gestionados que liquidan a otras entidades de gestión colectiva de derechos de naturaleza similar residentes en otros países, con las que hayan suscrito contratos de representación, recíproca o unilateral, podrán justificar la retención practicada aplicando el límite de imposición, o la exención, fijado en el Convenio para evitar la doble imposición suscrito con el país de residencia de la entidad extranjera, respecto de los rendimientos comprendidos en esas liquidaciones, mediante los siguientes documentos:
+
+a) Certificado emitido por la entidad de gestión colectiva extranjera, referido a cada liquidación, que contenga la relación de perceptores residentes, en el sentido del Convenio, del mismo país del que es residente la entidad extranjera, el importe íntegro de los derechos correspondientes a cada uno de ellos y la suma de esos importes.
+
+b) Certificado de residencia fiscal de la entidad extranjera expedido por las autoridades fiscales de su país. Este certificado tendrá una validez de un año a partir de su fecha de expedición.
+
+Lo previsto en los párrafos anteriores de este artículo se entenderá sin perjuicio de lo dispuesto en las Ordenes de desarrollo de los Convenios para evitar la doble imposición que estén vigentes en el momento del devengo, en las que se establezca, en el procedimiento de reducción, la utilización de un formulario específico o la aportación de un certificado de residencia fiscal.
+
+La entidad de gestión colectiva de derechos de la propiedad intelectual residente en España estará obligada a conservar esta documentación, a disposición de la Administración tributaria, durante el plazo de prescripción a que se refiere el artículo 55  de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria.
+
+A los exclusivos efectos de la cumplimentación de la declaración anual de retenciones, modelo 296, por la entidad de gestión colectiva de derechos residente en España y, por lo que se refiere al colectivo integrado en la relación antes citada, en lugar de hacer constar el detalle por cada uno de los incluidos en la relación, se agruparán en un único apartado o registro de perceptor, consignando como tal a la entidad de gestión colectiva extranjera.
+
+El procedimiento especial de acreditación regulado en este artículo, se entenderá sin perjuicio de la facultad de la Administración tributaria de exigir, en su caso, a cualquier beneficiario que perciba rendimientos comprendidos en estos pagos efectuados por entidades de gestión colectiva, la justificación de su derecho a la aplicación del Convenio mediante un certificado de residencia fiscal, expedido por las autoridades fiscales del país de residencia, donde conste que es residente en el sentido del Convenio.
+
+
+Artículo 9. Documentación en el caso de comercialización transfronteriza de acciones o participaciones de instituciones de inversión colectiva españolas.
+
+En los casos de contratos de comercialización transfronteriza de acciones o participaciones de instituciones de inversión colectiva españolas, mediante cuentas globales a nombre de las entidades comercializadoras, a que se refiere la disposición adicional única del Reglamento del Impuesto sobre la Renta de no Residentes, se establece el siguiente procedimiento de acreditación de la residencia a efectos de la práctica de retenciones o ingresos a cuenta sobre los beneficios distribuidos por las instituciones de inversión colectiva españolas a contribuyentes del Impuesto sobre la Renta de no Residentes sin establecimiento permanente:
+
+a) Cuando la entidad comercializadora extranjera sea residente en un país con el que España haya suscrito un Convenio para evitar la doble imposición con cláusula de intercambio de información en el que se fije un límite de imposición inferior al previsto en el artículo 25  del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, deberá emitir y entregar a la sociedad gestora o a la sociedad de inversión un certificado, por cada institución de inversión colectiva o, en su caso, por cada compartimento o clase de participaciones o serie de acciones de la misma, con ocasión de la percepción de beneficios distribuidos por la institución de inversión colectiva, que contenga:
+
+1. Lugar y fecha en que se emite el certificado.
+
+2. Denominación de la entidad comercializadora y dirección completa en su país de residencia. Asimismo, deberá incluirse el número de identificación fiscal atribuido por la Administración tributaria española a la entidad comercializadora residente en un país con el que España haya suscrito un Convenio para evitar la doble imposición con cláusula de intercambio de información, excepto en el supuesto de que, conforme a lo dispuesto en la letra c) del apartado 3 de la disposición adicional única del Reglamento del Impuesto sobre la Renta de no residentes, no esté obligada a presentar las relaciones individualizadas a que se refiere dicho precepto .
+
+3. Identificación y cargo de la persona que suscriba el certificado, que deberá tener poder suficiente para ello.
+
+4. Denominación de la institución de inversión colectiva, Número de Identificación Fiscal atribuido por la Administración tributaria española y domicilio fiscal.
+
+5. En su caso, denominación del compartimento y de la clase de las participaciones o de la serie de las acciones.
+
+6. Código ISIN de las participaciones o acciones de la institución de inversión colectiva o, en su caso, del compartimento o de la clase o serie de las mismas.
+
+7. En su caso, denominación de la entidad gestora, Número de Identificación Fiscal atribuido por la Administración tributaria española y domicilio fiscal.
+
+8. Fecha de distribución de los beneficios.
+
+9. El número de perceptores residentes, en el sentido del Convenio, del mismo país que la comercializadora y el importe total de los beneficios percibidos.
+
+10. El número del resto de perceptores y el importe total de los beneficios percibidos.
+
+Las sociedades gestoras o las sociedades de inversión, residentes en España, podrán justificar la retención o el ingreso a cuenta practicado aplicando el límite de imposición fijado en el Convenio sobre los beneficios distribuidos que correspondan, exclusivamente, a los perceptores residentes, en el sentido del Convenio, en el mismo país que la comercializadora, y la retención o ingreso a cuenta aplicando el tipo de gravamen del artículo 25 del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes sobre los beneficios distribuidos al resto de perceptores, mediante el certificado antes mencionado. Además, la entidad comercializadora extranjera deberá remitir a las sociedades gestoras o a las sociedades de inversión un certificado de residencia fiscal de la misma expedido por las autoridades fiscales de su país que tendrá una validez de tres años a partir de su fecha de expedición.
+
+b) Cuando la entidad comercializadora extranjera sea residente en un país o territorio diferente a los incluidos en la letra a) anterior, deberá emitir y entregar a la sociedad gestora o a la sociedad de inversión un certificado, por cada institución de inversión colectiva o, en su caso, por cada compartimento o clase de participaciones o serie de acciones de la misma, con ocasión de la percepción de beneficios distribuidos por la institución de inversión colectiva, que contenga:
+
+1. Lugar y fecha en que se emite el certificado.
+
+2. Denominación de la entidad comercializadora, Número de Identificación Fiscal atribuido por la Administración tributaria española y dirección completa en su país de residencia.
+
+3. Identificación y cargo de la persona que suscriba el certificado, que deberá tener poder suficiente para ello.
+
+4. Denominación de la institución de inversión colectiva, Número de Identificación Fiscal atribuido por la Administración tributaria española y domicilio fiscal.
+
+5. En su caso, denominación del compartimento y de la clase de las participaciones o serie de las acciones.
+
+6. Código ISIN de las participaciones o acciones de la institución de inversión colectiva o, en su caso, del compartimento o de la clase o serie de las mismas.
+
+7. En su caso, denominación de la entidad gestora, Número de Identificación Fiscal atribuido por la Administración tributaria española y domicilio fiscal.
+
+8. Fecha de distribución de los beneficios.
+
+9. El número de perceptores y el importe total de los beneficios percibidos.
+
+Las sociedades gestoras o las sociedades de inversión, residentes en España, podrán justificar la retención o el ingreso a cuenta practicado aplicando el tipo de gravamen del artículo 25  del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes sobre los beneficios distribuidos, mediante el certificado antes mencionado. Además, la entidad comercializadora extranjera deberá remitir a las sociedades gestoras o a las sociedades de inversión un certificado de residencia fiscal de la misma expedido por las autoridades fiscales de su país que tendrá una validez de tres años a partir de su fecha de expedición.
+
+c) La entidad comercializadora extranjera podrá emitir y entregar a la sociedad gestora o a la sociedad de inversión los certificados a los que se refieren las letras a) y b) anteriores relativos a un mismo mes natural en los 10 días primeros del mes natural siguiente. En estos casos, la entidad comercializadora extranjera podrá emitir un único certificado, haciendo constar su carácter mensual, que recoja los datos a que se refieren dichas letras, correspondientes al mes natural, ordenados por la fecha de distribución de beneficios.
+
+La forma de remisión recogida en el párrafo anterior se entenderá sin perjuicio de la obligación de la entidad comercializadora de comunicar a la sociedad gestora o a la sociedad de inversión, con ocasión de la percepción de beneficios distribuidos por la institución de inversión colectiva, la información necesaria para la correcta práctica de la retención o ingreso a cuenta.
+
+d) La entidad gestora residente en España o, en su caso, la sociedad de inversión estará obligada a conservar la documentación prevista en este número a disposición de la Administración tributaria, durante el plazo de prescripción a que se refiere el artículo 55  de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria.
+
+e) La entidad gestora o la sociedad de inversión, a los efectos de la cumplimentación de la declaración anual de retenciones, modelo 296, agrupará, por cada percepción de beneficios, la información referida al colectivo de perceptores integrados en el certificado emitido por la comercializadora, en su caso, en dos apartados o registros de perceptor, uno comprensivo de los contribuyentes que han soportado un tipo de retención inferior al tipo de gravamen del artículo 25 del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes y otro referido al resto de contribuyentes. La entidad gestora o la sociedad de inversión consignará en ambos casos como perceptor a la entidad comercializadora extranjera. El resto de información del modelo relativa a los perceptores se entenderá referida a la comercializadora extranjera.
+
+f) El procedimiento especial de acreditación regulado en este artículo se entenderá sin perjuicio de la facultad de la Administración tributaria de exigir, en su caso, a cualquier contribuyente la justificación de su derecho a la aplicación del Convenio.
+
+g) No obstante lo previsto en las letras anteriores de este artículo, con independencia del país o territorio de residencia de la entidad comercializadora, y aunque no coincida con el de residencia del perceptor, el obligado a retener o a ingresar a cuenta podrá aplicar lo dispuesto en el apartado 2 del artículo 7  para justificar la práctica de retenciones o ingresos a cuenta a un tipo de imposición fijado en un Convenio para evitar la doble imposición que sea aplicable, inferior al tipo de gravamen interno. En este caso, deberán cumplirse los siguientes requisitos:
+
+1. El obligado a retener o a ingresar a cuenta deberá disponer de los correspondientes certificados de residencia fiscal de los perceptores y conservarlos, en los términos de los apartados 1 y 2 del artículo 7.
+
+2. En los certificados a que se refieren las letras a) y b) de este artículo, se desagregará la información relativa a estos perceptores, indicando:
+
+1.º Tipo de persona: física (F) o entidad (J).
+
+2.º Apellidos y nombre, o denominación.
+
+3.º Número de identificación fiscal español, si el contribuyente dispone de él.
+
+4.º Número de identificación fiscal asignado al contribuyente en el territorio o país de residencia, si dispone de él.
+
+5.º País o territorio de residencia, ajustado a las claves de países y territorios recogidas en el Anexo III de la Orden Foral 208/2008, de 24 de noviembre, del Consejero de Economía y Hacienda, por la que se aprueba el modelo 196.
+
+6.º Importe de los beneficios percibidos.
+
+3. A los efectos de la cumplimentación de la declaración anual de retenciones, modelo 296, la entidad gestora o la sociedad de inversión no agrupará la información referida a estos perceptores, sino que figurarán en campos o registros individuales a nombre de los perceptores.
+
+
+Artículo 10. Reglas aplicables al suministro informativo en el modelo 296, en el supuesto de que existan varios perceptores titulares del mismo elemento patrimonial, bien o derecho de que provengan las rentas objeto del modelo.
+
+Exclusivamente a los efectos del suministro informativo del modelo 296, en aquellos supuestos en que existan varios titulares del mismo elemento patrimonial, bien o derecho de que provengan las rentas objeto del modelo, los obligados tributarios deberán realizar el citado suministro informativo individualizando los datos económicos correspondientes a cada uno de los cotitulares del mismo elemento patrimonial, bien o derecho. Esta individualización se realizará de acuerdo con la proporción de participación de cada uno de los cotitulares del mismo elemento patrimonial, bien o derecho que conste de manera fehaciente al obligado tributario. En defecto de constancia fehaciente, la proporción de participación se deberá atribuir a cada uno de los cotitulares, a los citados efectos informativos, por partes iguales.
+
+
+Disposición Adicional Única. Información relativa a cuentas de no residentes.
+
+No obstante la excepción a la obligación de presentar la declaración anual, modelo 296, establecida en el artículo 4  de esta orden foral, el Banco de España o las entidades registradas a que se refiere la normativa de transacciones económicas con el exterior vendrán obligadas a proporcionar a la Administración tributaria la información relativa a cuentas de no residentes que se determine.
+
+
+Disposición Derogatoria Única. Derogación normativa.
+
+A partir de la entrada en vigor de esta orden foral, queda derogada la Orden Foral 26/2000, de 15 de febrero, del Consejero de Economía y Hacienda, por la que se aprueban los modelos 296, en pesetas y en euros, del resumen anual de retenciones e ingresos a cuenta efectuados en relación con rentas sujetas al Impuesto sobre la Renta de no Residentes obtenidas por contribuyentes de dicho Impuesto sin establecimiento permanente, así como ciertas disposiciones referentes a las cuentas de no residentes.
+
+
+Disposición Final Única. Entrada en vigor.
+
+Esta orden foral entrará en vigor el día siguiente al de su publicación en el Boletín Oficial de Navarra, y será de aplicación, por primera vez, para efectuar la declaración anual de las retenciones e ingresos a cuenta correspondientes al año 2009.
+
+ANEXO I. IMPUESTO DE LA RENTA SOBRE NO RESIDENTES 
+
+
+ANEXO I
+
+
+
+
+
+ANEXO II. DISEÑOS FÍSICOS Y LÓGICOS PARA LA PRESENTACIÓN DEL MODELO 296 EN SOPORTE DIRECTAMENTE LEGIBLE POR ORDENADOR 
+
+
+ANEXO II
+
+Vínculo a objeto
+
+
+
+
+
+
+
+[[ID:pie]]
+
+
+
+
+
+
+
+
+Contacte con nosotros |
+Accesibilidad |
+Aviso legal |
+
+
+
+
+
+
+

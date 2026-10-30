@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253627",
+    "file": "work/sources/document-duty-current.pdf",
+    "bytes": 204717,
+    "sha256": "70226d8b5108435f54d04e799a6d5c6076d42dbd5b8570e8fc09ad07049374bd",
+    "read_utc": "2026-10-28T00:00:55.699561+00:00",
+    "mechanism": "normal browser printable-link downloadMedia",
+    "read_scope": "ss1\u20138,10 and targeted definitions; not all service/criminal procedure provisions"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253628",
+    "file": "work/sources/document-duty-indirect-current.pdf",
+    "bytes": 244786,
+    "sha256": "e7bbec8349bf6f1664cf1bc21c03a95aa9af0762accfdbab4157009ec21bda9a",
+    "read_utc": "2026-10-28T00:00:55.700125+00:00",
+    "mechanism": "normal browser printable-link downloadMedia",
+    "read_scope": "ss1\u20137,9,11 and targeted s18 definitions; no blanket full-law read"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263098",
+    "file": "work/sources/duty-rates-current.pdf",
+    "bytes": 136044,
+    "sha256": "73cc2c092d4e3bf515e5eeb67efd26fdec81a35da7f116e514f569db343e413b",
+    "read_utc": "2026-10-28T00:00:55.700503+00:00",
+    "mechanism": "normal browser printable-link downloadMedia",
+    "read_scope": "Complete operative sections; source-note errors cross-checked with adopted2025amendments"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263097",
+    "file": "work/sources/duty-indirect-rates-current.pdf",
+    "bytes": 125428,
+    "sha256": "f6cb3f874a021f1c84e610c817a9f416acd4d9b04e22d7da3a3fafa3b3857a39",
+    "read_utc": "2026-10-28T00:00:55.700814+00:00",
+    "mechanism": "normal browser printable-link downloadMedia",
+    "read_scope": "Complete operative sections; source-note errors cross-checked with adopted2025amendments"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265347",
+    "file": "work/sources/duty-indirect-fees-2026.pdf",
+    "bytes": 421563,
+    "sha256": "224e1affe1356fb27baa8f1495f52b3b8ead6b005a1dbfc18066f55bcc4f8f5a",
+    "read_utc": "2026-10-28T00:00:55.701383+00:00",
+    "mechanism": "normal browser printable-link downloadMedia",
+    "read_scope": "Complete instrument; p2amounts/commencement visually checked"
+  }
+]

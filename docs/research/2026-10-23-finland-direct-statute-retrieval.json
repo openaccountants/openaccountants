@@ -1,0 +1,458 @@
+{
+  "read_on": "2026-10-23",
+  "retrieval_method": "Direct official HTML; Finnish statute-body text reconstructed from embedded public server-rendered records. Section headings, numeric children and table-cell boundaries preserved. Raw and extracted hashes recorded; full texts held locally, not copied into this repository.",
+  "checks": [
+    "Act 1140/2025: all five scale rows and numeric cells independently matched to Vero table.",
+    "Section segmentation uses heading element IDs; inline cross-references are not treated as boundaries.",
+    "Current, historical and not-yet-effective wording distinguished for the listed sections."
+  ],
+  "statutes": [
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/1992/1535",
+      "read_on": "2026-10-23",
+      "http_status": 200,
+      "raw_sha256": "87a57597f28c902298162861d5a578604a8d13a0132c0780d1e8db72b6721ef3",
+      "extracted_text_sha256": "3c23e667c9591913803103cb3ab6829a586c97b523378bde5ceb5bf2bcd26926",
+      "characters": 449639,
+      "section_headings": 250,
+      "extraction": "Direct official HTML public server-rendered records; Finnish statute-body child text, structural section headings, numeric child values and table cells retained.",
+      "sections_read": [
+        {
+          "section": "9",
+          "heading_id": "part_2__chp_1__sec_9",
+          "section_text_sha256": "7aabaecb0303ff0faf7ff852914755b83dd78ac1810e31142335c3f5eb410153"
+        },
+        {
+          "section": "11",
+          "heading_id": "part_2__chp_1__sec_11",
+          "section_text_sha256": "c9290c0ddca100d3f70959dce8a1fdb126baf44c425460ac3476608a522eb77f"
+        },
+        {
+          "section": "30a",
+          "heading_id": "part_3__chp_1__sec_30a",
+          "section_text_sha256": "da6beb4a2f36c297bd91c06cca0f5fdfe22037bf26531066cf824621b73f04e5"
+        },
+        {
+          "section": "38",
+          "heading_id": "part_3__chp_2__sec_38",
+          "section_text_sha256": "2dcc3fc15ea6cc8c4ae2050ffbc5db38ac62b63b8c7d6805c312c1f9616d8001"
+        },
+        {
+          "section": "41",
+          "heading_id": "part_3__chp_2__sec_41",
+          "section_text_sha256": "a7c628f162647e3971dfea23dc43f3d936014634a7da8785ff23cb1e355ae4ca"
+        },
+        {
+          "section": "96",
+          "heading_id": "part_3__chp_5__sec_96",
+          "section_text_sha256": "f0525ac280242a6e1323dedbe72c2a0fe7e2d381340ccab9cbbc74cb9f6ef78d"
+        },
+        {
+          "section": "119",
+          "heading_id": "part_5__sec_119",
+          "section_text_sha256": "1ae511c2222162da7af028887808374bae0ecf7b32c57a03e87363f48040680e"
+        },
+        {
+          "section": "122",
+          "heading_id": "part_5__sec_122",
+          "section_text_sha256": "81f178bc507c2abc80d1f908b950494dc426e845363e38938cd3beb8d8d0645e"
+        },
+        {
+          "section": "124",
+          "heading_id": "part_6__chp_1__sec_124",
+          "section_text_sha256": "65dcae9438d848ce2a47ad2026bf0c2f7ee39700e3a08a450c1ecf169d5d5e12"
+        }
+      ],
+      "scope": "Listed sections only, with their commencement/future-wording notes. For YEL, the review-transition provisions displayed for Acts 1157/2022 and 1400/2025 were also read. Retrieval of an entire statute is not a full legal review."
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/1995/1558",
+      "read_on": "2026-10-23",
+      "http_status": 200,
+      "raw_sha256": "421e367b3e4a6a3688b41e240df9a69c4c561b0e9d54430c3e63d99fbee701ef",
+      "extracted_text_sha256": "68db59f59e158cd7895bd410ce9245d59d6003517b04b4d30bbd05d3ab2b1e88",
+      "characters": 212563,
+      "section_headings": 157,
+      "extraction": "Direct official HTML public server-rendered records; Finnish statute-body child text, structural section headings, numeric child values and table cells retained.",
+      "sections_read": [
+        {
+          "section": "14a",
+          "heading_id": "chp_2__sec_14a",
+          "section_text_sha256": "c0883e3868cc3fc1d46cc2c13c1a6adf30372f4c0a983e16c1ba213e5688660f"
+        },
+        {
+          "section": "14b",
+          "heading_id": "chp_2__sec_14b",
+          "section_text_sha256": "c9234961d951820f1b5637b3d4ae647aa1b3b5d3b2d7a64adaa5e6e0e0f33497"
+        },
+        {
+          "section": "14c",
+          "heading_id": "chp_2__sec_14c",
+          "section_text_sha256": "faf0a68557776fccac589b3ba8b5921f11c10118da640d3f75c1ba0cdf61aa91"
+        },
+        {
+          "section": "14d",
+          "heading_id": "chp_2__sec_14d",
+          "section_text_sha256": "b8d8cfcdbeeebb040204e3c85e8cb1853709a4a54a4163f5783519afcd422461"
+        },
+        {
+          "section": "14e",
+          "heading_id": "chp_2__sec_14e",
+          "section_text_sha256": "f4317e3851c0b9cc49c60aa819719e18d8140ccf3d819c933ae5338be7254ddb"
+        },
+        {
+          "section": "31",
+          "heading_id": "chp_4__sec_31",
+          "section_text_sha256": "79d333cee548c8999374b59c08716f80f2e443616f7252eee0c799ffcc521ffc"
+        },
+        {
+          "section": "32",
+          "heading_id": "chp_4__sec_32",
+          "section_text_sha256": "4bcac7064607bbd9b2f143f55b4a1ebb435e74ec2ae7b1b41d12e8e2f39a9264"
+        },
+        {
+          "section": "32a",
+          "heading_id": "chp_4__sec_32a",
+          "section_text_sha256": "dc1473e08f39fa2208ce409b8eb4e4adcde61be638736809f963cea1cf325dda"
+        },
+        {
+          "section": "33",
+          "heading_id": "chp_4__sec_33",
+          "section_text_sha256": "3d6d24c6017e01535886dd053044f8b471f4ba612a15628a2c75258a4144e5dc"
+        }
+      ],
+      "scope": "Listed sections only, with their commencement/future-wording notes. For YEL, the review-transition provisions displayed for Acts 1157/2022 and 1400/2025 were also read. Retrieval of an entire statute is not a full legal review."
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/1996/931",
+      "read_on": "2026-10-23",
+      "http_status": 200,
+      "raw_sha256": "a97b6dda15eca5adfdbd19e6a1c373e9d052e98c5a1500a3780b8e30ea3777ac",
+      "extracted_text_sha256": "04afcc5ef28d57804b9d1fff1c315758c8542070112c14b858d1c68a1d01ae13",
+      "characters": 82536,
+      "section_headings": 87,
+      "extraction": "Direct official HTML public server-rendered records; Finnish statute-body child text, structural section headings, numeric child values and table cells retained.",
+      "sections_read": [
+        {
+          "section": "4",
+          "heading_id": "chp_2__sec_4",
+          "section_text_sha256": "21f7cd563ea69dacf38df730ba1ac617dc6dcfc9900de6fb1e63f28af15286dc"
+        },
+        {
+          "section": "6",
+          "heading_id": "chp_2__sec_6",
+          "section_text_sha256": "b346931bcc3669f97667a00134f821ff5afe3f4e8905b18f3424975725a470c8"
+        },
+        {
+          "section": "7",
+          "heading_id": "chp_2__sec_7",
+          "section_text_sha256": "e80ca3622d6a14cc6a71945afdaf936d3e94181066989e72b642a5f10d9527d5"
+        },
+        {
+          "section": "15",
+          "heading_id": "chp_3__sec_15",
+          "section_text_sha256": "4af2ea1e707f0e0bde743e8c50935b4bc0985288f29244422440d8864fb3c2e4"
+        },
+        {
+          "section": "20",
+          "heading_id": "chp_3__sec_20",
+          "section_text_sha256": "22be65a84e7624be7938c4ec0ce705d19be5d2a92d9308f46d2e38bc3fb8ad48"
+        },
+        {
+          "section": "21",
+          "heading_id": "chp_3__sec_21",
+          "section_text_sha256": "567d2e4bcf45ccf1dec08e63bdee6ea6dca3144662839480c9dc5383eb6a44ac"
+        }
+      ],
+      "scope": "Listed sections only, with their commencement/future-wording notes. For YEL, the review-transition provisions displayed for Acts 1157/2022 and 1400/2025 were also read. Retrieval of an entire statute is not a full legal review."
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/1996/1118",
+      "read_on": "2026-10-23",
+      "http_status": 200,
+      "raw_sha256": "24b763b41ec89e2c6a1cd14b349904002201f3e8c7c3aaa6922007ddf208f6db",
+      "extracted_text_sha256": "ebc1f6f0dc1a2ecd8e0ac490fb59710463cfab05e65e1c4e39519cfcb59b42cb",
+      "characters": 53439,
+      "section_headings": 57,
+      "extraction": "Direct official HTML public server-rendered records; Finnish statute-body child text, structural section headings, numeric child values and table cells retained.",
+      "sections_read": [
+        {
+          "section": "9",
+          "heading_id": "chp_2__sec_9",
+          "section_text_sha256": "5b32c05b3eb6ff5852d8b899f8ca1e7e376206dff3f8dc2138539c91b03d16c0"
+        },
+        {
+          "section": "11",
+          "heading_id": "chp_2__sec_11",
+          "section_text_sha256": "d105aa4ea44eab4125426ea7c389dfa44cf56cdf25631a19359971af14d3eb0b"
+        },
+        {
+          "section": "13",
+          "heading_id": "chp_2__sec_13",
+          "section_text_sha256": "2b2933d3747a10ba6f84ba261c6d27f10ebe29e380993d3c9d19cb721f87201f"
+        }
+      ],
+      "scope": "Listed sections only, with their commencement/future-wording notes. For YEL, the review-transition provisions displayed for Acts 1157/2022 and 1400/2025 were also read. Retrieval of an entire statute is not a full legal review."
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/1968/360",
+      "read_on": "2026-10-23",
+      "http_status": 200,
+      "raw_sha256": "202f4eb076f86e2aa380e56c89d9251ccce36a591794b2423892cc9647455690",
+      "extracted_text_sha256": "7b56ccf77aa9e6b74551dcaf029679e045cb68a3d20a09a91469dcfaf9dd2dc1",
+      "characters": 203574,
+      "section_headings": 112,
+      "extraction": "Direct official HTML public server-rendered records; Finnish statute-body child text, structural section headings, numeric child values and table cells retained.",
+      "sections_read": [
+        {
+          "section": "7",
+          "heading_id": "part_2__chp_2__sec_7",
+          "section_text_sha256": "45803bf182eaf6cfc1ac5cefc678ed8fa86628b1534351de24321c3fa9b89486"
+        },
+        {
+          "section": "8",
+          "heading_id": "part_2__chp_2__sec_8",
+          "section_text_sha256": "d96c12b6b085f6d9c3fbb236f7374c99f27ebe7c57e38f8fee151bdce7c50eb7"
+        },
+        {
+          "section": "16",
+          "heading_id": "part_2__chp_2__sec_16",
+          "section_text_sha256": "f5f81344a44fcf5e66205a201062bd8a9a190a3c71081c4afb575d0793e3369d"
+        }
+      ],
+      "scope": "Listed sections only, with their commencement/future-wording notes. For YEL, the review-transition provisions displayed for Acts 1157/2022 and 1400/2025 were also read. Retrieval of an entire statute is not a full legal review."
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/2025/1140",
+      "read_on": "2026-10-23",
+      "http_status": 200,
+      "raw_sha256": "9c16c1d0ba5a1e3566cc4796cab46c562c1716cf68632325765f805944fdd666",
+      "extracted_text_sha256": "1b4fad73ec4be0aa6c633f4855b5584d7170cc88c1b918e7bc4df0b6b8031645",
+      "characters": 733,
+      "section_headings": 2,
+      "extraction": "Direct official HTML public server-rendered records; Finnish statute-body child text, structural section headings, numeric child values and table cells retained.",
+      "sections_read": [
+        {
+          "section": "1",
+          "heading_id": "sec_1",
+          "section_text_sha256": "dcb477912416ef6d2d5d9035aee34acd7e9eb0e0f57381151a2846c2e7ce6748"
+        },
+        {
+          "section": "2",
+          "heading_id": "sec_2",
+          "section_text_sha256": "5841fc21fc9ee412929727a8ff29fe3d3ed2c73eddefc58bca36845aa1d716ca"
+        }
+      ],
+      "scope": "Listed sections only, with their commencement/future-wording notes. For YEL, the review-transition provisions displayed for Acts 1157/2022 and 1400/2025 were also read. Retrieval of an entire statute is not a full legal review."
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/1993/1501",
+      "read_on": "2026-10-23",
+      "http_status": 200,
+      "raw_sha256": "b73740e3184108d6cf2aec4710146894892c4abff830d22dca807bde683173a7",
+      "extracted_text_sha256": "15d3314c0f21657527d7cdf9cc9e2c7e4ec22402c9a551a90abd5f8b8b13b642",
+      "characters": 493849,
+      "section_headings": 504,
+      "extraction": "Direct official HTML public server-rendered records; Finnish statute-body child text, structural section headings, numeric child values and table cells retained.",
+      "sections_read": [
+        {
+          "section": "3",
+          "heading_id": "part_1__chp_2__sec_3",
+          "section_text_sha256": "de8d58c1104fc615af8ba596b80f0b78b6301cb81fa4c717bf1d9e2cb429476a"
+        },
+        {
+          "section": "3",
+          "heading_id": "part_1__chp_2__sec_3_2",
+          "section_text_sha256": "4acce009d8d9a758cce607c20e69b1b82d59cce13d060c44d5459cd6d4a9db10"
+        },
+        {
+          "section": "84",
+          "heading_id": "part_1__chp_8__sec_84",
+          "section_text_sha256": "e56489e3f00fd9826733ae757bc5783bd1cdefe03033a59bc1d70e1e4f5849cb"
+        },
+        {
+          "section": "85",
+          "heading_id": "part_1__chp_8__sec_85",
+          "section_text_sha256": "808901d18fdcf1adb83adee42b53f0550cd4252efb19fd7441493e51d162b4da"
+        },
+        {
+          "section": "85a",
+          "heading_id": "part_1__chp_8__sec_85a",
+          "section_text_sha256": "dd29811258e3e9798015a774e63df8f7d46a1224d14ae773d4a946e4fb7c299c"
+        },
+        {
+          "section": "85a",
+          "heading_id": "part_1__chp_8__sec_85a_2",
+          "section_text_sha256": "8044afd3927c702c0334885f15683f62b0be8282340d0d214f8737179718747b"
+        },
+        {
+          "section": "85a",
+          "heading_id": "part_1__chp_8__sec_85a_3",
+          "section_text_sha256": "fc4b97470fb0ba6b8e36c7ebe0ed6336ff2266c5bd917153b5b9daad9111e749"
+        },
+        {
+          "section": "102",
+          "heading_id": "part_1__chp_10__sec_102",
+          "section_text_sha256": "d08af1c37bee7516bc182a37c837719350596462cc2145aa8ba0d7e987635634"
+        },
+        {
+          "section": "114",
+          "heading_id": "part_1__chp_10__sec_114",
+          "section_text_sha256": "b8ba8079a515af7473e56d851605509e01d26cd62d4c8eba1b78fe9cefc1adfd"
+        },
+        {
+          "section": "9",
+          "heading_id": "part_1__chp_2__sec_9",
+          "section_text_sha256": "75e62b2e386610297fc3e36dfdb8c31331e2eb4f6964c262de288136265186d2",
+          "additional_read_on": "2026-10-23",
+          "scope": "Review-fix check of purchaser liability and Finnish service place of supply."
+        },
+        {
+          "section": "65",
+          "heading_id": "part_1__chp_5__sec_65",
+          "section_text_sha256": "4f1e528ff1646ad9f685a01d07f0c7d80edfe0f520bafca306ed3df3c985cc76",
+          "additional_read_on": "2026-10-23",
+          "scope": "Review-fix check of purchaser liability and Finnish service place of supply."
+        },
+        {
+          "section": "67",
+          "heading_id": "part_1__chp_5__sec_67",
+          "section_text_sha256": "3d0285a2b47475caa965cffb387e44e4420be5816a34bcce9e7a31587d175a95",
+          "additional_read_on": "2026-10-23",
+          "scope": "Review-fix check of purchaser liability and Finnish service place of supply."
+        }
+      ],
+      "scope": "Listed sections only, with their commencement/future-wording notes. For YEL, the review-transition provisions displayed for Acts 1157/2022 and 1400/2025 were also read. Retrieval of an entire statute is not a full legal review."
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/2006/1272",
+      "read_on": "2026-10-23",
+      "http_status": 200,
+      "raw_sha256": "94eee4d66513765ca00a418b916abfd1d698142fcd1208853638cecb1f7d5a86",
+      "extracted_text_sha256": "5e2955235512362c0be5a343bb3f73dff29c39fbd46ed3b515eb67839a626263",
+      "characters": 201545,
+      "section_headings": 186,
+      "extraction": "Direct official HTML public server-rendered records; Finnish statute-body child text, structural section headings, numeric child values and table cells retained.",
+      "sections_read": [
+        {
+          "section": "4",
+          "heading_id": "part_1__chp_2__sec_4",
+          "section_text_sha256": "f8f9de1edc70de7fa1e1e5245e216f17db568344bc9c28d586f8d5c77ae2bce9"
+        },
+        {
+          "section": "89",
+          "heading_id": "part_2__chp_6__sec_89",
+          "section_text_sha256": "089068323bfb4bf371ace6890801681708e647ce1191c339b1e3965223eaa588"
+        },
+        {
+          "section": "109",
+          "heading_id": "part_3__chp_9__sec_109",
+          "section_text_sha256": "ec917d7b7392bbe984f76ee958003301960caf3ca1a17c36278f2e9824c0bf67"
+        },
+        {
+          "section": "112",
+          "heading_id": "part_3__chp_9__sec_112",
+          "section_text_sha256": "2b2fef224e03a8fb44262c7bea91f59d5f19a89a3e4fc225d414321e1c921770"
+        },
+        {
+          "section": "112a",
+          "heading_id": "part_3__chp_9__sec_112a",
+          "section_text_sha256": "774ff2cc6f53348bc46db785f10fc13d889c7b3a457ae99089e557f851628b1c"
+        },
+        {
+          "section": "114",
+          "heading_id": "part_3__chp_9__sec_114",
+          "section_text_sha256": "a658214833ef7d11a5c68f63e44c8b1d811c3878b61908bc055817035031c4ab"
+        },
+        {
+          "section": "115",
+          "heading_id": "part_3__chp_9__sec_115",
+          "section_text_sha256": "6b775c5452810f871cabc7146e49579f23f1b0ec1769a54038ce125e33dcf17a"
+        },
+        {
+          "section": "122",
+          "heading_id": "part_3__chp_9__sec_122",
+          "section_text_sha256": "54822897c6b51bed5d97f9dce319ac18f251fe35c486b3410b82af60d9c0ba47"
+        },
+        {
+          "section": "143",
+          "heading_id": "part_3__chp_12__sec_143",
+          "section_text_sha256": "8682035ed0936009278c4a57679cc81d7391c2e2fe5573acb518d5e026a0d8c0"
+        }
+      ],
+      "scope": "Listed sections only, with their commencement/future-wording notes. For YEL, the review-transition provisions displayed for Acts 1157/2022 and 1400/2025 were also read. Retrieval of an entire statute is not a full legal review."
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/2006/624",
+      "read_on": "2026-10-23",
+      "http_status": 200,
+      "raw_sha256": "d9ccc8d1fd721a4db2fd29ea6d33a498e4161028eedac84d8f30758a97c593d0",
+      "extracted_text_sha256": "9f8f8bd33ad2055c6a7648aee02ca4f5db955628a9d6ffcc705d410567271024",
+      "characters": 387317,
+      "section_headings": 387,
+      "extraction": "Direct official HTML public server-rendered records; Finnish statute-body child text, structural section headings, numeric child values and table cells retained.",
+      "sections_read": [
+        {
+          "heading_id": "part_1__chp_1__sec_2",
+          "section_text_sha256": "f7b0df67c1aacdbb845bc5628c61ec7827206346404d6b91d56f9d4fedd433ce"
+        },
+        {
+          "heading_id": "part_1__chp_1__sec_3",
+          "section_text_sha256": "5eb661f5e4c71a9ea4e46cba37f6ca4d8453f2329bb024db759b6bbf281a3b7c"
+        },
+        {
+          "heading_id": "part_1__chp_2__sec_8",
+          "section_text_sha256": "350bc97317fdda0f4d7de75b4f749aecf731c28d41bc08e2f7765d78ff702d22"
+        },
+        {
+          "heading_id": "part_1__chp_2__sec_9",
+          "section_text_sha256": "5b8a28cbd2ea2db37b0b5dccdcf7d2e507d754e005da827f021372a65cae0a64"
+        },
+        {
+          "heading_id": "part_2__chp_5__sec_3",
+          "section_text_sha256": "d005eb874e0f97573137b8882901f93ee1832dc6dc10a5cf382f956c3b67786d"
+        },
+        {
+          "heading_id": "part_2__chp_6__sec_8",
+          "section_text_sha256": "540723fbda3158b881cb5ffbbd32b608a1387e90105a11d97afa33816c842757"
+        },
+        {
+          "heading_id": "part_2__chp_6__sec_10",
+          "section_text_sha256": "096f661ab2ce3457c279323d5df677ce75b6a3577ee1319e96ef55a220e5a327"
+        },
+        {
+          "heading_id": "part_2__chp_6__sec_19",
+          "section_text_sha256": "8ed57179ebaee9b6888f7492553e2ecea19937c5f44ddb600854fad07c5c614f"
+        },
+        {
+          "heading_id": "part_2__chp_8__sec_10",
+          "section_text_sha256": "1a961fd0d879a1ab48dfeb2410312a2c56035b148a8daa237dfb09ddec5a3ee0"
+        }
+      ],
+      "scope": "Only listed company/audit provisions read; whole-page retrieval is not a complete statutory or amendment audit."
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/2015/1141",
+      "read_on": "2026-10-23",
+      "http_status": 200,
+      "raw_sha256": "3a6d48b3051da7547fcbca5dd1946a1ee9c36d816f7f9ae46b8e2337391be90e",
+      "extracted_text_sha256": "6c1b33eea20c55ac7adfa16a09e9976225808b1ad455e45977d811b3f4da4c91",
+      "characters": 146301,
+      "section_headings": 110,
+      "extraction": "Direct official HTML public server-rendered records; Finnish statute-body child text, structural section headings, numeric child values and table cells retained.",
+      "sections_read": [
+        {
+          "heading_id": "chp_2__sec_2",
+          "section_text_sha256": "35f9ef9c92325e4abc35d733203deee15398d19e43c0e54304397509ce65f713"
+        }
+      ],
+      "scope": "Only listed company/audit provisions read; whole-page retrieval is not a complete statutory or amendment audit."
+    }
+  ],
+  "additional_source": {
+    "url": "https://www.finlex.fi/api/media/statute/896509/mainPdf/main.pdf?timestamp=2025-12-11T05%3A12%3A12.000Z",
+    "title": "Act 1143/2025 amending the Transfer Tax Act",
+    "read_on": "2026-10-23",
+    "retrieval": "Official two-page PDF read with web tool, including contract-date commencement. The guessed consolidated route /fi/lainsaadanto/2025/1143 returned 404; it is not cited as a working source."
+  }
+}

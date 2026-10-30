@@ -1,14 +1,15 @@
 ---
 name: lt-corporate-income-tax
 description: "Use this skill for Lithuanian corporate income tax (pelno mokestis) in tax year 2026. It covers the 17% standard rate, the 0% and 7% rates for entities with income up to EUR 300,000 and the related-entity test that removes them, the taxable profit computation, non-deductible items, representation costs, tax depreciation and immediate write-off, losses carried forward with the 70% cap, the 30% EBITDA interest limit with its EUR 3,000,000 floor, the 4:1 controlled debt rule for interest paid to controlling lenders, passenger car cost caps, the investment project relief, advance payments, the annual return due by the 15th day of the 6th month, fines and late payment interest. Trigger on: Lithuanian corporate tax, pelno mokestis, UAB profit tax, 7% small company rate Lithuania, investicinis projektas, avansinis pelno mokestis. Out of scope: withholding and non-residents (lt-cross-border), transfer pricing (lt-transfer-pricing), payroll (lt-payroll-social), VAT (lithuania-vat-return), personal income tax (lithuania-pit)."
-jurisdiction: LT
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.1
-verified_by: pending
+jurisdiction: LT
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Lithuania: corporate income tax (2026) v0.1
@@ -261,3 +262,23 @@ expected:
 | VMI, late payment interest, answer KM2633 (0.027% a day from 1 August 2026) | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- | 2026-10-24 |
 
 Not yet confirmed: the late payment interest rate after 31 October 2026 (it is reset each quarter); any administrative fine for filing the annual or advance return late (Code of Administrative Offences, not read); the VMI form codes for the annual and advance returns; the text of Government Resolution No. 1575 itself (the 4:1 rule is taken from the VMI commentary, not from the resolution); whether interest is charged when past tax is recomputed under art. 18(13) or 46-1(5); the list of non-taxable income in art. 12 and the R&D extra deduction in art. 17-1 (not read for this skill); group loss transfers under art. 56-1; and the PMĮ version in force from 1 January 2027.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

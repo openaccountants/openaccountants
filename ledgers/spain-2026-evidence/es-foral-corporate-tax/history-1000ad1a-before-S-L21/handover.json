@@ -1,0 +1,27 @@
+[
+  {
+    "path": "ledgers/es-foral-corporate-tax.md",
+    "sha256": "1000ad1a29fa2fa76d8a5bd96255c312f827b6f68a6c3b3d363be3134030d51f",
+    "bytes": 1309917
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-corporate-tax/rows.json",
+    "sha256": "204de05ff9b73d69e21076ca402453da66917bcb1a6ea2bab750ea3dd176c978",
+    "bytes": 1572396
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-corporate-tax/source-read-receipts.json",
+    "sha256": "18fc77503ddb9e28ae24bd144af560dd6dd060a7bee77480740e0e122fd93856",
+    "bytes": 249901
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-corporate-tax/writer-status.md",
+    "sha256": "aa8a28817975868d516fc9ad19a0757042820d63b257a25546f3b2665f37c9c1",
+    "bytes": 1460
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-corporate-tax/example-check.txt",
+    "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+    "bytes": 58
+  }
+]

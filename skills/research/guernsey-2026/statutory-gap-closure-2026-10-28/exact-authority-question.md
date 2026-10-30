@@ -1,0 +1,9 @@
+# Exact current domestic TP authority question
+
+Internal research question only. No message has been sent.
+
+For the2026year, identify any operative Guernsey law/regulations or publishedRevenueguidance imposing a general arm’s-length profit-adjustment rule or TP-specific master-file/local-file obligation beyond IncomeTaxLaw7,65,67,108 and the ordinary record rules made under75P. If such a regime applies, identify its taxpayer/connection scope, thresholds, approved pricing/adjustment method, documentation/filing timing and penalties. Alternatively, provide current authority confirming the continuing scope of Guernsey’s express2020statement that it had no specificTPlegislation.
+
+Why this precise question remains: the primary2020OECDbestpractices paragraph3 expressly records Guernsey’s then-position. The17March2025dispute-resolution profile confirms no formal/informal bilateralAPAprogramme, not absence of all TPlegislation/documentation. CurrentLaw67/108 and current2006+2012records instruments establish actual powers and ordinaryrecords duties, but do not by themselves prove a universal TP-specific filing exemption. C42 is an approved associated-flow practice, not a general pricing code. No UK/OECD750m or other threshold is imported.
+
+Primary references: https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 ; https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267992 ; https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266947 ; https://gov.gg/CHttpHandler.ashx?id=191876&p=0 ; https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/beps-action-14-peer-review-best-practices-guernsey-2020.pdf ; https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/guernsey-dispute-resolution-profile.pdf . Read28October2026; no2026absence claim made.

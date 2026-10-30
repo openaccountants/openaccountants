@@ -9,7 +9,7 @@
 Rules:
 
 - Do not claim all countries. About 195 sovereign states exist; the catalogue does not carry all of them and never will claim to. (`tests/test_copy_rules.py` fails on the phrase.)
-- Do not collapse the two quality states. Most skills are source-cited drafts; each file states its `tier` in frontmatter (see [QUALITY-TIERS.md](QUALITY-TIERS.md)), and the website shows the reviewing accountant's name on reviewed ones.
+- Do not collapse the two quality tiers. Most skills are tier 2 (checked against the law, or sourced from the law), with no accountant sign-off; each file states its `tier` in frontmatter (see [QUALITY-TIERS.md](QUALITY-TIERS.md)), and the website shows the reviewing accountant's name on reviewed ones.
 - Quote one population per page. A count of skills, of jurisdictions and of reviewed skills each come from the same report run; do not mix a repository figure with a platform figure in one sentence.
 - Change the rounded claim only when a measured figure crosses a floor, then update every surface that quotes it in one pull request.
 

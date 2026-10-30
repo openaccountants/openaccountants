@@ -1,14 +1,15 @@
 ---
 name: bulgaria-vat-return
 description: "Bulgarian VAT (ДДС) for tax year 2026 under the Value Added Tax Act (ZDDS) as amended from 1 January 2026, in euro. Covers who must register; the 20%, 9% and 0% rates and what is at 9% in 2026; the new EUR 51,130 calendar-year registration threshold, the 7-day application and the registration date; the domestic and EU small enterprise schemes; input VAT and blocked credit; the monthly return (справка-декларация), ledgers and VIES declaration by the 14th; payment and refunds; distance sales and OSS; reverse charge; invoicing deadlines; the SAF-T timetable; deregistration; and penalties. Lev amounts in the law are shown in euro at BGN 1.95583. Trigger phrases: Bulgarian VAT, ДДС, ЗДДС, VAT return Bulgaria, регистрация по ЗДДС, VIES декларация, Bulgaria OSS. Out of scope: corporate tax (bg-corporate-income-tax), individuals' income tax (bulgaria-income-tax), payroll (bulgaria-payroll), treaties and withholding (bg-cross-border)."
-jurisdiction: BG
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 2.1
-verified_by: pending
+jurisdiction: BG
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Bulgaria VAT (2026)
@@ -187,3 +188,23 @@ expected:
 | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 | https://lex.bg/bg/laws/ldoc/2123675140 | 2026-10-23 |
 
 Not yet confirmed: the ZDDS Implementing Regulations (ППЗДДС) and the NRA's 2026 return and VIES form layouts were not read, so this skill gives no box numbers; the statutory late-payment interest rate after the euro changeover (set outside the interest law).
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

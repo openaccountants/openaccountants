@@ -1,0 +1,320 @@
+---
+name: gg-corporate-tax-substance
+description: >
+  Prepare calendar-year 2026 corporate tax classification and compliance working papers. This draft does not calculate Pillar Two, regulated-sector special rules, exemption applications or every company-law obligation. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
+jurisdiction: GG
+category: international
+tax_year: 2026
+tier: 2
+last_updated: 2026-10-23
+version: "0.9"
+verified_by: pending
+sources:
+  - url: "https://gov.gg/RStax-rates-and-allowances"
+    title: "2026 changes: definition of a distribution"
+    as_of: "2026-10-22"
+  - url: "https://gov.gg/CHttpHandler.ashx?id=141223&p=0"
+    title: "Income Tax (Substance Requirements) (Implementation) Regulations 2021, regulations 1, 3–10, 13–27, 30, 37–40"
+    as_of: "2026-10-22"
+  - url: "https://gov.gg/economicsubstance"
+    title: "Revenue Service economic substance, current implementation and guidance links"
+    as_of: "2026-10-22"
+  - url: "https://gov.gg/RevenueService/Companies"
+    title: "Company guidance"
+    as_of: "2026-10-22"
+  - url: "https://gov.gg/CHttpHandler.ashx?id=118096&p=0"
+    title: "Form 707 non-resident status 02/26"
+    as_of: "2026-10-22"
+  - url: "https://gov.gg/CHttpHandler.ashx?id=183549&p=0"
+    title: "Form 706 foreign-company registration 08/21"
+    as_of: "2026-10-22"
+  - url: "https://gov.gg/taxpenalties"
+    title: "Penalty FAQ, current figures with stale introductory deadline"
+    as_of: "2026-10-22"
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+---
+
+# Guernsey corporate tax, distributions and substance v0.9
+
+> **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
+
+## Who this applies to
+
+Prepare calendar-year 2026 corporate tax classification and compliance working papers. This draft does not calculate Pillar Two, regulated-sector special rules, exemption applications or every company-law obligation.
+
+Sources were accessed on 22 October 2026. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
+
+### Territorial and entity scope
+
+The company guidance uses Guernsey for income-tax purposes to include **Alderney and Herm**. Do not import the different island lists used for social insurance or pensions. It also explains that the tax definition of company includes incorporated and unincorporated bodies other than partnerships; clubs/associations and foundations therefore need corporate-tax analysis. [Company guidance, introduction, clubs and foundations](https://gov.gg/RevenueService/Companies).
+
+A club's member receipts are treated differently from non-member income, with **rental income expressly excepted** from the member-income treatment. Guernsey property income is in the higher-rate category. Keep membership and income-source evidence rather than treating a non-profit label as a blanket exemption. [Company guidance, clubs and associations](https://gov.gg/RevenueService/Companies).
+
+### Residence: evidence and application, not a form-based shortcut
+
+The current non-tax-resident request form is **Form 707 (02/26)**. It asks for central management/control location, directors' residence, board-meeting location and a foreign residence certificate or authority confirmation. If that evidence is delayed, it asks for the notification/application sent to the foreign authority. It also asks about the foreign highest company rate, the rate applicable to this company, and any treaty tie-break position. A low tax bill or foreign incorporation alone is not the complete evidence requested. [Form 707, sections 1–3](https://gov.gg/CHttpHandler.ashx?id=118096&p=0).
+
+The form says acceptance produces a letter detailing future responsibilities. It separately screens Guernsey-source income, a Guernsey PE, local staff, resident beneficial members, participator loans and international reporting. It expressly retains ETI returns where staff exercise functions in Guernsey. Keep that acceptance letter and each continuing-obligation assessment. **The domestic statutory residence/exclusion test is not fully established by this form; obtain it before deciding residence.** For the UK corridor, also consult the [treaty Guide](gg-uk-treaty-employment-and-relief.md). [Form 707, introduction and sections 4–5](https://gov.gg/CHttpHandler.ashx?id=118096&p=0).
+
+## Rates, bands and thresholds
+
+Revenue Service publishes standard 0%, intermediate 10% and higher 20% rates. The intermediate categories include specified financial/fiduciary, custody, fund administration, investment, compliance and aviation-registry activities. Higher-rate categories include regulated trading, hydrocarbon/gas supply, large retail above the stated £500,000 taxable-profit threshold, Guernsey property income/development and specified cannabis/controlled-drug business. Classify the income stream, not merely the entity's name. [Company guidance, income tax rates](https://gov.gg/RevenueService/Companies).
+
+The published tax-reform programme describes changes from 2027, including prescribed professional services. Do not backdate them to 2026 or assume a policy announcement alone establishes the final enacted scope. [Reform timetable](https://gov.gg/taxreform).
+
+The intermediate list expressly includes banking, domestic insurance, fiduciary business, insurance intermediaries/managers, controlled-investment administration, custody, individual-client investment management, investment-exchange operation, compliance-related activities and aviation-registry income. Match the actual activity and statutory category; do not place all financial income at 10%. [Company guidance, rates](https://gov.gg/RevenueService/Companies).
+
+The retail wording is **taxable profit more than £500,000**, not turnover of £500,000. The guidance alone does not resolve aggregation or the precise charging base at the threshold, so this draft does not invent an excess-only calculation or an exemption at the boundary. Property development, land exploitation and rent also need their own classification. [Company guidance, rates](https://gov.gg/RevenueService/Companies).
+
+## The base and computation
+
+1. Confirm the company's residence, accounting period, legal form, ownership and activities.
+2. Build a transaction-supported bridge from accounting profit to each taxable income stream. Record source and deduction decisions separately.
+3. Apply the established rate to each stream; isolate regulated or special categories for review.
+4. Compute distributions and qualifying-loan liabilities separately from company profit tax.
+5. Reconcile the return and certified accounts to payments and the bookkeeping ledger.
+
+**Rate illustration:** established ordinary taxable income £100,000 at 0% produces £0 corporate income tax; separately established Guernsey rental taxable income £20,000 at 20% produces £4,000. This does not waive returns, distribution tax, substance obligations or minimum-tax review. Do not use this split if a rule requires the company's wider profit base to be taxed at another rate.
+
+## Deadlines, registration and filing
+
+The **2025 company return is due 30 November 2026**. Annual online filing and accountant-certified accounts are required; audit exemption does not itself remove tax certification. Use the correct return certificate and retain the qualification/authority of the certifying accountant. [Company guidance](https://gov.gg/RevenueService/Companies).
+
+### Registration and first return
+
+Guernsey-formed companies have their tax reference created from Registry information. Foreign-incorporated companies must register with Revenue Service; the presently linked **Form 706 (08/21)** is also used for branches and PEs. It instructs registration by **14 July following the first calendar year requiring a return**; its example is a 2025 return requiring registration by 14 July 2026. Its date is old despite current linkage, so retain the form version and confirm case-specific requirements before reliance. Guernsey-incorporated companies do not complete that foreign-company form. [Company guidance](https://gov.gg/RevenueService/Companies); [Form 706, opening instructions](https://gov.gg/CHttpHandler.ashx?id=183549&p=0).
+
+The ordinary first return covers the incorporation calendar year. The guidance allows the company to confirm in writing that its first accounting year ends in the following year of charge, subject to a maximum **18 months**. Do not omit the first return merely because accounts have not yet been prepared. [Company guidance, company tax return](https://gov.gg/RevenueService/Companies).
+
+### Accounts and return certificates
+
+The guidance lists ICAEW, ICAS, Chartered Accountants Ireland and ACCA membership, or an equivalent qualification approved by the Director, for accounts certification. Audit exemption does not remove this tax requirement. An authorised corporate service provider can submit the return; that authority does not itself establish accounts-certification competence. [Company guidance, company tax return](https://gov.gg/RevenueService/Companies).
+
+Select certificate 1, 2 or 3 from the actual return and facts. Certificate 1 is the residual category. The webpage describes dormant/no-income circumstances for certificate 2 and conditions concerning employees, beneficial members, regulated income, participator loans and section 62AB requests for certificate 3. Its prose/example conditions are not a sufficient replacement for the current certificate wording; this draft does not turn them into an automated eligibility rule. Retain the completed certificate and evidence. [Company guidance, certificate type](https://gov.gg/RevenueService/Companies).
+
+## Penalties and interest
+
+The Revenue Service penalty page states an initial corporate late-return penalty of **£300**, then **£50 per day**. It says no daily penalties are charged if the return is submitted within **30 days of the initial penalty being imposed**; if later, daily penalties run from the initial penalty date. This is not a 30-day extension of the filing deadline. The page's introductory deadline relates to 2023 returns and is stale for current filing dates; use the company page's **30 November 2026** deadline for the **2025** return. [Penalty FAQ, calculation](https://gov.gg/taxpenalties); [company page](https://gov.gg/RevenueService/Companies).
+
+An appeal must be submitted within **30 days of the Order imposing the penalty**. The FAQ says appeal does not suspend penalties: submit the return or evidence of prior submission to stop further daily charges. Retain the final online submission number and confirmation. Late filing, non-filing and inaccurate-return matters require their own analysis; payment surcharges and a complete statutory penalty opinion remain unverified. The personal-allowance £50 restriction on the same webpage is not a corporate exemption. [Penalty FAQ, evidence, appeal and suspension](https://gov.gg/taxpenalties).
+
+## Substance and cross-border distributions
+
+Screen the relevant activities and document direction/management, people, premises, expenditure and local core income-generating activities. Pure equity holding and high-risk IP require their own tests. [Economic substance guidance](https://gov.gg/economicsubstance).
+
+### Statutory substance scope
+
+Revenue Service currently links the **2021 Implementation Regulations** as the consolidation of the original rules and partnership amendments. Regulation 40 commenced them on **30 June 2021**, and regulation 38 revoked the listed 2018–2020 instruments. Read the 2021 text rather than combining the old instruments as though all remained independently operative. This source establishes the provisions below; a full search for subsequent amendments remains outstanding. [Regulations 38–40](https://gov.gg/CHttpHandler.ashx?id=141223&p=0); [official source index](https://gov.gg/economicsubstance).
+
+Regulation 1 includes resident companies and the specified exempt companies that would otherwise be resident. It excludes foundations and equivalent foreign bodies, and excludes collective investment vehicles **unless self-managed**. A self-managed collective investment vehicle is treated as carrying on fund management and receiving income from it. Thus tax exemption or a fund label alone is not a substance exemption. The foundation exclusion is specific to these regulations; it does not remove the corporate-tax treatment described above. [Regulation 1](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 3 identifies income from banking, insurance, fund management, financing/leasing, headquarters, shipping and distribution/service centres, with separate IP and pure-equity holding categories. Classification requires the defined activity and income facts. [Regulation 3](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+### Ordinary relevant activities: evidence for each accounting period
+
+Regulation 4 requires the activity to be directed/managed locally, local core income-generating activity, appropriately qualified people, operating expenditure and physical presence proportionate to the activity. It gives no universal minimum headcount or expenditure safe harbour. Evidence must support each applicable accounting period. [Regulation 4(1)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For direction and management, the governing board must meet in Guernsey sufficiently often for the decisions required; a quorum must be **physically present**. Strategic decisions must be taken at those meetings and recorded in minutes; the board collectively needs the expertise to decide; relevant minutes and records must be kept in Guernsey. A local registered office or a signed resolution alone does not establish all these tests. [Regulation 4(2)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Local outsourcing can satisfy the CIGA requirement only where the activity is performed **in Guernsey** and the body demonstrates adequate supervision. Retain the service agreement, actual work locations, responsible personnel, deliverables and supervision records. An offshore outsourced function is not converted into local CIGA merely by a Guernsey invoice. [Regulation 4(3)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The activity map below develops regulation 8; specialist IP rules and a complete subsequent-amendment review remain open.
+
+### Activity classification and the work that produces the income
+
+Apply the **regulation 37 definition first**, then map the actual functions to regulation 8. The list of core income-generating activities is inclusive; it is not a checklist that can replace the actual business facts. The local-performance and supervision conditions above continue to apply. [Regulations 4, 8 and 37](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+| Relevant activity | Core functions identified in regulation 8 | Suggested evidence to retain |
+|---|---|---|
+| Banking | Raising funds; managing credit/currency/interest risks; hedging; customer loans/credit/financial services; regulatory capital and reporting | Decision records, risk/treasury records and regulatory filings |
+| Insurance | Predicting/calculating risk; insurance/reinsurance; client services | Underwriting, pricing, reinsurance and service records |
+| Fund management | Holding/selling investment decisions; risk/reserve calculations; currency/interest and hedging decisions; regulatory/investor reports | Investment committee decisions, portfolio/risk work and reports |
+| Financing/leasing | Funding terms; identifying/acquiring leased assets; financing/lease terms and duration; monitoring/revising agreements; risk management | Credit approvals, executed terms, asset records and monitoring |
+| Headquarters | Relevant management decisions; expenditure on behalf of group members; coordination of group activities | Authority matrix, management decisions and expenditure/coordination records |
+| Shipping | Crew management; hauling/maintenance; delivery tracking; goods-order/delivery decisions; voyage organisation/oversight | Crew, vessel, delivery and voyage-management evidence |
+| Distribution/service centre | Transport/storage; inventory; orders; consulting/administrative services | Goods flows, stock/order systems and actual service deliverables |
+
+Legal functions: [regulation 8(a)–(g)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The evidence column is a working-paper recommendation, not a prescribed form or guaranteed proof of compliance. Record who performed each material function, where, when, with what authority and under whose supervision. A provider invoice proves a payment; it does not by itself prove where the underlying function occurred.
+
+### Do not overextend the category names
+
+- **Financing/leasing** requires provision of credit facilities for consideration, including interest. It includes the specified separately charged instalment arrangements and treats an assignee of customer credit as providing the facility. Its financial-leasing limb excludes land/interests in land; banking, insurance and fund-management activities are excluded from this category. Do not classify every asset rental as financing/leasing.
+- **Distribution/service centre** is a sole/main business involving the specified purchases from non-resident group members for resale, or services to non-resident group members. Ordinary services to unrelated customers do not satisfy that group condition merely because the company calls itself a service centre. The definition excludes the other listed relevant activities.
+- **Headquarters** concerns senior management, material-risk assumption/control or substantive risk advice for non-resident group members. Check the exclusions for the other named relevant activities and IP holding. Merely calling a registered office a headquarters does not decide classification.
+- **Intra-group** uses the financial-consolidation relationship specified in regulation 37, including the hypothetical publicly traded-equity test. Do not substitute the UK treaty's ownership percentages or assume common directors alone settle this definition.
+
+All four boundaries: [regulation 37](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). Banking, insurance and fund management also use licensing and statutory cross-references. The 2021 document cites older sector statutes; confirm amendments or replacement-law mappings before applying those licence definitions to a 2026 entity.
+
+### IP requires an additional analysis
+
+Regulation 8(h) identifies research/development for patent-type assets and marketing, branding and distribution for marketing intangibles. Its exceptional alternative functions include the stated strategic decisions, risk management and underlying exploitation activity, but that exception is unavailable to high-risk IP bodies. Do not treat board-level risk discussion as a universal substitute for local development or marketing functions. [Regulation 8(h)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The specific IP and high-risk requirements follow; full enforcement calculations and subsequent amendments remain to be reconciled before accepting an IP case.
+
+### IP governance and high-risk classification
+
+Regulation 5 applies its own substance requirements to IP bodies: local direction/management and CIGA, with proportionate qualified people, expenditure and physical presence, demonstrated for each applicable accounting period. Its board test requires sufficiently frequent Guernsey meetings, a physically present quorum, locally made and minuted strategic decisions, collective expertise and local records. Periodic decisions of non-resident board members are not counted for the meeting-frequency test. Outsourced CIGA must be performed in Guernsey under adequate supervision. [Regulation 5](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For a company, apply the **cumulative** high-risk definition in regulation 37. The body must hold IP that it did not create; have acquired it either from an intra-group person **or** in consideration of funding research/development by another person outside Guernsey; **and** license it to non-resident intra-group persons or otherwise earn income from it through their activities. Retain the creation history, acquisition/funding agreements, group relationship, licence terms and actual income-generating arrangements. Partnership application also needs regulation 2 and is outside this corporate classification. [Regulation 37, high risk IP body](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+**Classification boundaries:** assuming all other definition conditions are established, purchased group IP licensed to a non-resident group company meets the stated high-risk limbs. Purchase from an unrelated seller does not by itself establish the acquisition limb: check the alternative overseas-R&D funding route. A sale to an unrelated customer does not by itself rule out high-risk status either, because income can result from non-resident group activities facilitating the sale. These are applications of the definition, not findings about an unidentified client's facts. [Regulation 37](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+### Rebuttal evidence and the return
+
+Regulation 17 presumes that a high-risk IP body does **not** meet the substance requirements, even when relevant CIGA occurs in Guernsey. The body must provide evidence satisfying the Director that the presumption is rebutted. A local office, board minutes or a service-provider invoice alone is not the complete evidential case. [Regulation 17(1)–(2)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Build the evidence file around each statutory item:
+
+- Current **and historical** high control over the IP's development, exploitation, maintenance, enhancement and protection, exercised by adequate qualified full-time employees permanently resident and working in Guernsey.
+- Detailed business plans explaining the commercial rationale for holding the IP in Guernsey.
+- Employee experience, contract type, qualifications and duration of employment.
+- Evidence that the body's decisions take place within Guernsey.
+- Any additional information required by the Director.
+
+These are regulation 17(2)'s evidence categories, not an automatic approval checklist. The ordinary outsourcing permission does not erase the high-risk employee/control evidence requirement. [Regulations 5(3) and 17(2)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For each applicable regulation 9 return, regulation 17(3) requires either a declaration that regulation **5(1)(b)** is met, with sufficient rebuttal evidence included or accompanying it, **or** a declaration that the body cannot rebut the presumption and that 5(1)(b) is not met. Do not reduce this to an unsupported compliance tick. The provision refers to company periods beginning after **31 December 2018**, with the separate partnership commencement cross-reference; it is not a new universal filing deadline. [Regulation 17(3)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 10 requires the Director to disclose high-risk IP information to a competent authority under the applicable approved international agreement or international tax measure for spontaneous exchange, **whether or not substance requirements are met**. Successful rebuttal therefore does not remove that exchange provision. Regulation 17(4) also modifies enforcement: regulation 14's third-default-period references become second-period references and regulation 15's fourth-period references become third-period references. The company penalty and appeal provisions are mapped below, subject to their stated gaps; do not use the ordinary corporate late-return penalty example below as a substance penalty calculation. [Regulations 10 and 17(4)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+### Substance default notices, penalties and appeals
+
+The following maps the **2021 text**, whose subsequent-amendment review remains open. Regulations 13–15 operate following the regulation 9 return and the Director's opinion that applicable substance requirements were not met. Their monetary figures are **ceilings**, not automatic invoices. Keep the notice and the accounting-period history; do not count isolated failures across non-consecutive periods as one continuous escalation. [Regulations 13–15](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+| Statutory stage for a company | Ordinary body | High-risk IP body | Penalty ceiling in the cited provision |
+|---|---|---|---|
+| Regulation 13 | First accounting period of default, as defined in 13(4) | Same first-period provision | £10,000 |
+| Regulation 14 | Third consecutive accounting period of default | Second consecutive accounting period of default | £50,000 |
+| Regulation 15 | Fourth and subsequent consecutive accounting periods of default | Third and subsequent consecutive accounting periods of default | £100,000 for the relevant period |
+
+Sources: [regulations 13(1)/(4), 14(1)/(4), 15(1)/(4)/(5), with high-risk substitutions in 17(4)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The ordinary text labels regulation 14 as the **third**, not second, default period. This table does not invent an ordinary second-period amount or declare that period penalty-free. Reconcile that treatment and any later amendments before calculating a client's exposure. The first-period definition in 13(4) also needs the actual preceding-period scope/compliance facts; it is not simply the first notice received.
+
+For companies registered under the stated Guernsey or Alderney company laws, regulations 13 and 14 permit a Registrar notice for striking-off purposes if the Director decides there is no realistic possibility of compliance. At the regulation 15 stage the stated Registrar notice is mandatory. **A notice to the Registrar is not itself completed dissolution**; the applicable company-law procedure must also be checked. Each stage also provides for information exchange under the specified international agreement/measure framework. [Regulations 13(1), 14(1) and 15(1)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+The penalty notice must state the grounds, identify the applicable and unmet substance requirements, explain the sanctions and set out applicable appeal rights. It can also require further documents/information. Build the response around those identified failures and retain proof of submission. [Regulations 13(2)–(3), 14(2)–(3) and 15(2)–(3)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 16's **£150,000 enhanced penalty** concerns specified non-registered partnerships' subsequent default periods, not companies. Regulation 18 separately imports section 193 penalties for missing/false information, in addition to substance penalties. The current section 193 amounts and machinery have not been established here; neither the table nor the ordinary late-return example is a total exposure estimate. [Regulations 16 and 18](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For a penalty under these regulations, regulation 19 provides an appeal to the Tribunal (now the **Guernsey Revenue Service Tribunal**; the 2021 text uses its former name, **Guernsey Tax Tribunal**) by written notice **to the Director**, stating grounds, within **30 days beginning on the date of the notice imposing the penalty**. Do not substitute receipt date or the accounting-period end. Late admission requires the Tribunal to be satisfied that exceptional circumstances prevented timely notice; it is not an automatic extension. [Regulation 19(1)–(2)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The name changed on 1 January 2022. [Tribunal guidance, page 4, footnote 1](https://gov.gg/CHttpHandler.ashx?id=122165&p=0).
+
+The sole stated grounds are that the body is outside regulation 3's substance scope, complies with its applicable requirements, or is not subject to the penalty under the regulations. Regulation 19(4) permits confirmation or annulment; it does not state a general power to reduce a penalty because it is unaffordable. Sections 76 and 79 are excluded, while sections 77, 78, 78A and 80 apply through the stated cross-reference. Full procedural rules, onward appeal and any effect on collection require those current provisions; this draft does not assume that filing an appeal suspends enforcement. [Regulation 19(3)–(7)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+**Boundary applications:** for established consecutive third-period defaults, an ordinary company reaches regulation 14's £50,000 ceiling while a high-risk IP company reaches regulation 15's £100,000 ceiling. Neither is necessarily charged the maximum. A company outside the specified Guernsey/Alderney registration categories is not shown by this text alone to receive the same Registrar notice, even if its substance penalty applies. A missed appeal deadline requires the exceptional-circumstances application rather than an invented fresh 30-day period. [Regulations 14, 15, 17 and 19](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+### Responding to a substance inspection
+
+Regulation 20 permits entry to business premises and inspection for the specified regulation 9 purposes during normal business hours or another reasonable time. There are **three alternative entry routes**: occupier consent; at least **seven days’ written notice** specifying when entry/inspection will take place; or Bailiff approval under regulation 21 with regulation 22 notice. Seven days is therefore not a universal minimum where another route applies. For approved entry, notice goes to the occupier if present, otherwise someone apparently in charge, otherwise a prominent place at the premises. [Regulations 20–22](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+The regulation 20 inspection power excludes parts used **solely as a dwelling**, legally privileged items within the stated statutory definition, and documents concerning conduct of a tax appeal. Items held to further a criminal purpose are excluded from the privilege protection. Do not assume that an entire mixed home/business property is exempt, or that every accountant-client record is legally privileged. Identify the actual protected material and obtain advice on contested scope. [Regulation 20(3), including its statutory privilege cross-reference](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For entry approved by the Bailiff, regulation 23 permits reasonable assistance requirements directed at the specified investigated person, tax adviser, relevant workers and persons concerned with document systems or storage **who are present on the premises**. This particular power does not itself establish a duty for an absent adviser or remote worker. This expressly reaches electronically accessible records. The Director must give the person written information that contravening the assistance requirement is an offence. Do not transpose this particular assistance power to all consent/notice inspections without checking the applicable authority. [Regulation 23](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 24 permits copies/extracts, removal at a reasonable time and retention for a reasonable period, preservation measures, explanations and enquiries about missing documents. Electronic records can be required in a portable, visible/legible form or a form readily convertible to it. The owner can request a **receipt** for removed records and, if reasonably needed for an immediate purpose while the Director retains the original, a **free copy**. Loss/damage before return attracts compensation for reasonable replacement/repair costs. This is not a promise of compensation for every claimed business loss. [Regulation 24](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+**Suggested response record:** log the authority and entry route, notice/approval, scope, staff involved, documents requested/provided/removed, any privilege issue, receipt/copy requests and follow-up dates. Preserve originals and electronic records. These are working-paper recommendations, not an additional statutory form or an invented retention period.
+
+Regulation 25 makes obstruction or non-compliance without reasonable excuse an offence, with its fine linked to the current uniform scale. Regulation 26 separately imports falsification and related provisions of the Income Tax Law. Regulation 27 can make directors and other specified officers personally liable where the offence is proved to involve their consent, connivance or neglect; office-holding alone is not that proof. Current fine-scale amounts and the full incorporated provisions remain unverified here, so do not estimate criminal exposure from the civil penalty table. [Regulations 25–27](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+### Pure-equity holdings and periods without income
+
+The regulation 37 definition is narrower than ownership of any investment portfolio. It requires the specified legal-person status, a primary function of acquiring/holding shares or equitable interests, **no commercial activity**, and one of three control routes: majority voting rights; membership plus the right to appoint/remove a majority of the governing board; or membership plus an agreement giving sole control of a majority of votes. A minority portfolio is not automatically in this definition. [Regulation 37, pure equity holding body](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For a qualifying pure-equity holding body, regulation 6 requires compliance with applicable company/partnership legislation and adequate people and physical presence in Guernsey proportionate to holding/managing the interests. Do not impose the entire ordinary regulation 4 test as though it were identical, or infer that reduced requirements mean no requirements. [Regulation 6](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 7 removes the requirements in **regulations 4–6** for a period with **no income from the relevant business/activity**. It does not use a zero-taxable-profit or loss test and does not repeal regulation 9 reporting. For example, activity receipts fully offset by expenses are not established to be 'no income' merely because the profit is nil. Preserve the income analysis and respond to required reporting notices. [Regulations 7 and 9](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 9 distinguishes reporting commencement for companies from partnerships and permits Director notices to set form, timing and electronic submission requirements. This corporate Guide does not apply a single company start date to all partnerships or infer a universal standalone substance-return deadline. [Regulation 9](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The official page also records withdrawal of temporary COVID-19 guidance for accounting periods commencing on or after **1 November 2022**; do not apply that historic relief to ordinary 2026 periods. [Official guidance index](https://gov.gg/economicsubstance).
+
+### A verified residence amendment, with the remaining gap explicit
+
+Regulation 30 replaced section 4(1)(a) with a test covering control in Guernsey **or** central management and control in Guernsey in the year of charge, and changed 'incorporated' to 'registered' in section 4(1)(b). This is direct evidence of that amendment, not the complete current section 4 or its non-residence exclusions. Reconcile the full provision and later amendments before giving a residence conclusion. [Regulation 30](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+A distribution from income taxed below 20% to a Guernsey-resident beneficial member requires a separate tax/reporting calculation. Keep evidence of non-residence before treating a payment to a non-resident member as outside the stated distribution charge. Loans are not automatically exempt alternatives. [Company distributions and qualifying loans](https://gov.gg/RevenueService/Companies).
+
+### Distribution and loan reporting
+
+The company guidance requires the company to deduct/pay the distribution tax and make a quarterly distribution-reporter return identifying recipient, date, amount and tax. Non-resident beneficial-member treatment requires evidence of non-residence before payment without deduction. Qualifying loans use the same reporter; repayment within **six years** permits a claim for the tax attributable to the repaid part. This is not an automatic accounting reversal. Exact distribution/loan tax computations, statutory scope and payment deadlines still need verification. [Company guidance, distributions and qualifying loans](https://gov.gg/RevenueService/Companies).
+
+### Loan direction matters for 2026 repayments
+
+The 2026 changes page states that repayments of loans **to shareholders** are treated as dividends, excluding repayment of commercial loans by trading companies. This concerns a company repaying its borrowing from a shareholder; it is distinct from the preceding qualifying-loan case where the company lent money and receives a repayment. Do not apply the six-year tax-repayment claim to both directions. Record lender, borrower, original advance, repayment recipient, trading status and evidence supporting any commercial-loan exclusion. The guidance does not establish the complete amended statutory definition, connected-person scope or transition rules; obtain those before calculating a charge or accepting an exclusion. [Revenue Service, 2026 changes, definition of a distribution](https://gov.gg/RStax-rates-and-allowances).
+
+### Reporting and exit are separate screens
+
+Form 707 asks about CbCR, Pillar Two, FATCA, CRS and CARF. These questions do not establish that every applicant is subject to each regime, nor that a non-resident acceptance cancels them. Determine each regime's scope separately. Likewise, the company page's migration procedure requires a Revenue Service no-objection letter for the Registrar; it does not establish that migration has no tax cost. [Form 707, section 5](https://gov.gg/CHttpHandler.ashx?id=118096&p=0); [company guidance, migration](https://gov.gg/RevenueService/Companies).
+
+## Two worked examples that recompute
+
+**Established mixed income.** Assume review has established separate ordinary taxable income £100,000, intermediate-category income £30,000 and Guernsey rental taxable income £20,000, with no overriding wider-base or minimum-tax rule. At 0%, 10% and 20%, ordinary company tax is **£7,000**. The example does not establish deductions, stream classification, loss offsets or Pillar Two treatment. [Company rates](https://gov.gg/RevenueService/Companies).
+
+```oa-check
+name: Guernsey established corporate income streams
+inputs:
+  standard_income: 100000
+  intermediate_income: 30000
+  rental_income: 20000
+steps:
+  - standard_tax: standard_income * 0
+  - intermediate_tax: intermediate_income * 0.10
+  - rental_tax: rental_income * 0.20
+  - total_tax: standard_tax + intermediate_tax + rental_tax
+expected:
+  standard_tax: 0
+  intermediate_tax: 3000
+  rental_tax: 4000
+  total_tax: 7000
+```
+
+**Daily-penalty catch-up.** Assume no successful appeal/reduction and a corporate return submitted after the 30-day concession period, with **35 chargeable days established from the Order and submission dates**. The guidance calculation is £300 + 35 × £50 = **£2,050**, not merely five daily penalties. A return qualifying for the within-30-day concession would retain the £300 initial penalty without daily penalties. This example does not decide inclusive date counting or the Order's validity. [Penalty FAQ](https://gov.gg/taxpenalties).
+
+```oa-check
+name: Guernsey corporate daily penalty after concession period
+inputs:
+  initial_penalty: 300
+  daily_rate: 50
+  established_chargeable_days: 35
+steps:
+  - daily_penalty: daily_rate * established_chargeable_days
+  - total_penalty: initial_penalty + daily_penalty
+expected:
+  daily_penalty: 1750
+  total_penalty: 2050
+```
+
+## Ask the client first
+
+- Where is the company incorporated, managed and controlled, and what residence evidence exists?
+- What are the incorporation date, accounting period and first-return arrangements?
+- Which income streams, property interests and regulated activities exist?
+- Who are the beneficial members, and what distributions/loans have been made?
+- What local staff, relevant substance activities and group-reporting obligations exist?
+- What returns, certificates, payments and penalty orders have already been issued or submitted?
+
+## Review exclusions
+
+This is not a company-incorporation checklist, document-duty calculation, treaty-rate opinion or Pillar Two determination. Complete the entity-specific registration, ownership, audit, accounts and sector requirements separately before the country is marked covered.
+
+## Self-checks and output
+
+- Retain the relevant source version, the applicable period and the facts establishing scope.
+- Reconcile every input to the client's records; keep estimates separate from actual amounts.
+- Recompute the example and boundary cases before applying the method.
+- Record exclusions and unresolved points explicitly. Do not convert a missing source into an exemption.
+- Deliver a calculation, evidence list, filing calendar and reviewer questions. Record the exact revision reviewed.
+
+## Sources
+
+Read on 22 October 2026: [company guidance](https://gov.gg/RevenueService/Companies), [non-resident Form 707](https://gov.gg/CHttpHandler.ashx?id=118096&p=0), [foreign registration Form 706](https://gov.gg/CHttpHandler.ashx?id=183549&p=0) and [penalty FAQ](https://gov.gg/taxpenalties). Also read the [2021 substance regulations](https://gov.gg/CHttpHandler.ashx?id=141223&p=0) and [current substance index](https://gov.gg/economicsubstance); the [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Source versions and limitations are recorded in the research file. Independent source review, domestic residence law, detailed deductions/losses, distribution computation, minimum tax and publication checks remain open.
+
+## Disclaimer
+
+General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to an accountant
+
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).

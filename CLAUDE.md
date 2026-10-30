@@ -2,7 +2,7 @@
 
 ## For AI agents landing here
 
-- This repo is a library of open-source **AI skills** (tax rules your AI follows): plain-markdown tax rules for 190+ jurisdictions that any AI agent can read. Each skill is in one of two states, **Accountant-reviewed** (`tier: 1`, a named licensed accountant signed off) or **Source-cited draft** (`tier: 2`). See `docs/QUALITY-TIERS.md`.
+- This repo is a library of open-source **AI skills** (tax rules your AI follows): plain-markdown tax rules for 190+ jurisdictions that any AI agent can read. Each skill is in one of two tiers, **Accountant-reviewed** (`tier: 1`, a named licensed accountant signed off) or `tier: 2`, called **Checked against the law** when built to the standard in `docs/skill-template.md` and independently reviewed before merge, or **Sourced from the law** for older skills not yet rebuilt; no accountant has signed off a tier-2 skill. See `docs/QUALITY-TIERS.md`.
 - The goal and the milestone are in `GOAL.md`; who owns each jurisdiction is in `OWNERS.md`. If you are here to work, start with the open `[XX] Complete the pack` issues described there.
 - The full machine-readable skill inventory is `index.json` at the repo root — read it first to find what exists.
 - Load Skills from `packages/<jurisdiction>/` (e.g. `packages/malta/`, `packages/us-ca/`) — each file is self-contained markdown.
@@ -22,17 +22,21 @@ This is a mixed-licence repository: **software** is AGPL-3.0-only, and the **ski
 - `scripts/` — Maintenance scripts (frontmatter cleanup, index regeneration via `build-index.py`, package builds, validation).
 - `LICENSING.md` — which licence applies to which files (start here).
 - `LICENSE` / `LICENSES/AGPL-3.0-only.txt` — AGPL-3.0-only, for the software.
-- `LICENSES/LicenseRef-OA-Guide-License-1.0.txt` — OA Guide License (source-available) for the skills.
+- `LICENSES/LicenseRef-OA-Guide-License-2.0.txt` — Open Accountants Skills License v2.0 (source-available) for the skills; v1.0 still governs earlier releases.
 - `REUSE.toml` — machine-readable per-path licence mapping.
 - `COMMERCIAL-LICENSING.md` — commercial alternative for both tracks.
 
+## How to write a skill
+
+**Read [docs/skill-template.md](docs/skill-template.md) first. Its opening section, "How to write a skill: the standard", is the one standard for every writer, human or AI.** In short: primary sources only (never Big Four or blogs), every figure cited to its article with a read date, nothing unconfirmed in the skill, the deep-tax shape with two recomputing examples, the current tax year, and one independent review before merge.
+
 ## Skill file conventions
 
-Every skill is a single Markdown file with YAML frontmatter. **The canonical frontmatter spec — required keys (`name`, `description`, `jurisdiction`, `category`, `tax_year`, `tier`, `last_updated`), optional keys (`tax_year_notes`, `verified_by`, `reviewed_by`, `depends_on`, `version`), formats, and the category vocabulary — is [docs/skill-template.md](docs/skill-template.md).** Do not restate or improvise variants; CI enforces the spec via `scripts/validate-guides.py`. Tier labels: `1` = accountant-reviewed, `2` = source-cited draft.
+Every skill is a single Markdown file with YAML frontmatter. **The canonical frontmatter spec — required keys (`name`, `description`, `jurisdiction`, `category`, `tax_year`, `tier`, `last_updated`), optional keys (`tax_year_notes`, `verified_by`, `reviewed_by`, `depends_on`, `version`), formats, and the category vocabulary — is [docs/skill-template.md](docs/skill-template.md).** Do not restate or improvise variants; CI enforces the spec via `scripts/validate-guides.py`. Tier labels: `1` = accountant-reviewed, `2` = checked against the law (built to the standard) or sourced from the law (older skills).
 
 After the frontmatter, a tax skill follows the deep-tax shape in `docs/skill-template.md`, in this order: who this applies to; rates, bands and thresholds (a table with an official source URL per figure); the base; deadlines and filing; penalties and interest; cross-border points; two worked examples that recompute (each in an `oa-check` block); ask the client first; sources with read dates. US skills add a Circular 230 §10.37 disclosure. Accounting-pack skills (bookkeeping, e-invoicing, financial statements, tax optimisation) keep the general template.
 
-Every published skill ends with the `<!-- openaccountants-cta-block -->` marker followed by a "Talk to an accountant" CTA. The marker makes the stamp idempotent; bulk re-stamps skip files that already have it.
+The `<!-- openaccountants-cta-block -->` marker and its "Talk to an accountant" CTA are stamped by the platform. Do not add, edit or remove them by hand; `## Sources` is the last section you write.
 
 ## AUDIT FLASH POINT convention
 
@@ -52,4 +56,4 @@ Transparency about AI involvement is expressed in README content and public post
 
 ## When in doubt
 
-Read the existing files in the same jurisdiction before writing new ones. Tax skills follow the deep-tax shape above. Match the pattern of well-developed packs (Malta, US-CA, Germany, UK) when filling in thinner jurisdictions, and check the pack README for which domains apply.
+Read the existing files in the same jurisdiction before writing new ones. Tax skills follow the deep-tax shape above. Match a complete pack built to the standard (for example Slovakia, Croatia or Estonia) when filling in thinner jurisdictions, and check the pack README for which domains apply.

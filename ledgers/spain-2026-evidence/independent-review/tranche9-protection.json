@@ -1,0 +1,30 @@
+{
+  "guide_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+  "guide_bytes": 54518,
+  "full_guide_byte_exact_to_frozen": true,
+  "allmetadata_and2oa_exact": true,
+  "CTA_and_byline": "Neither present in current/frozen companion; no removal claimed.",
+  "prior_main": "Noactualpublishedmain; earliestbranch comparator explicitly labelled.",
+  "S-L10_three_quote_only_full_inverse": true,
+  "source_quote_delta": [
+    {
+      "row": 108,
+      "before_quote": "122.030,01 190.410,00 2 5",
+      "after_quote": "0,00 25.410,00 9 12",
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.pdf.reader.txt"
+    },
+    {
+      "row": 109,
+      "before_quote": "122.030,01 190.410,00 2 5",
+      "after_quote": "0,00 25.410,00 9 12",
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.pdf.reader.txt"
+    },
+    {
+      "row": 110,
+      "before_quote": "122.030,01 190.410,00 2 5",
+      "after_quote": "0,00 25.410,00 9 12",
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.pdf.reader.txt"
+    }
+  ],
+  "initial_snapshot_erratum": "tranche9-initial-ledger.md/rows.json were captured after writer repaired4ab02c9e, not the180914b2predecessor. Actual predecessor used and rehashed from history-180914b2-S-L10. Names are retained, not retrospective pre-repair evidence."
+}
