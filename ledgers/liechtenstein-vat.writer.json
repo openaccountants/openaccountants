@@ -1,7 +1,7 @@
 {
   "status": "WRITER LEDGER; FULL INDEPENDENT COUNTRY REVIEW PENDING",
   "guide": "skills/international/liechtenstein/liechtenstein-vat.md",
-  "guide_sha256": "83ed049ad9c373473494f2767b0bd5f373552db647a6ce66107fa276321740e8",
+  "guide_sha256": "98ae4b745216e9a9992f48395c51cefab7a1b76e33a906c41c811a5040a41bd2",
   "rules": [
     {
       "id": "LI-VAT-001",
@@ -327,7 +327,7 @@
     },
     {
       "id": "LI-VAT-024",
-      "rule_or_figure": "Acquisitiontaxregisteredforeignsupplieranddomestic8(1)servicegates;notallforeigndebits",
+      "rule_or_figure": "Acquisition tax: foreign supplier NOT REGISTERED and domestic8(1)service gates; not all foreign debits",
       "Guide_section": "The base",
       "act_article_or_official_section": "MWSTG45(1)(a)",
       "official_url": "https://www.gesetze.li/konso/pdf/2009330000",
@@ -1048,42 +1048,42 @@
       "old_text": "---\nname: liechtenstein-vat\ndescription: >\n  Prepare 2026 Liechtenstein VAT workpapers for ordinary registered businesses.\n  Use for MWST registration, eMWST, rate selection, domestic sales, qualifying\n  service acquisition tax, input deductions, period reconciliation and corrections.\n  Establish the responsible authority, actual supply and evidence before using a\n  return field. This Guide replaces the earlier blanket Swiss-filing instruction\n  and merchant-name defaults with Liechtenstein law and authority instructions.\n  It does not decide all cross-border supplies, platform sales, margin or net-tax\n  methods, property, groups, sector exemptions or complex partial recovery. Bank\n  statements alone do not establish VAT treatment. The source-cited draft remains\n  subject to named local accountant review.\nversion: 2.2\njurisdiction: LI\ntax_year: 2026\nlast_updated: 2026-10-24\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\ncategory: international\n---",
       "old_sha256": "e763ec7da114d8923c1d649a7dbf48e0e21a6967fd5b79f3af2dbb7cd6ec6467",
       "exact_retained": false,
-      "destination": "Frontmatter retained; version 2.2 to 2.3 and last_updated to 2026-10-30 only; protected keys checked byte-for-byte."
+      "destination": "Frontmatter retained; version 2.2 to 2.4 and last_updated to 2026-10-30 only; protected keys checked byte-for-byte."
     },
     {
       "id": "OLD-002",
       "old_text": "# Liechtenstein VAT preparation v2.2",
       "old_sha256": "73af8a6399d47bb1b9f66270bd10dcb2aeb256e530d826819ae13170eb9939e0",
       "exact_retained": false,
-      "destination": "Heading version updated to v2.3 in step with frontmatter."
+      "destination": "Heading version updated to v2.4 in step with frontmatter."
     },
     {
       "id": "OLD-003",
       "old_text": "Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.",
       "old_sha256": "8e7c827e86c5cc5b9c1043e1196153b994c25a6491ecc03df91b3f07ed5970df",
-      "exact_retained": true,
-      "destination": "currentGuide line27"
+      "exact_retained": false,
+      "destination": "Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open."
     },
     {
       "id": "OLD-004",
       "old_text": "## Who this applies to",
       "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
       "exact_retained": true,
-      "destination": "currentGuide line31"
+      "destination": "Current Guide line29"
     },
     {
       "id": "OLD-005",
       "old_text": "Use this 2026 source-cited draft for an ordinary business whose VAT affairs belong to the Liechtenstein Tax Administration. The country has its own [VAT Act, consolidated 1 January 2026][law]. Swiss ESTV practice applies by analogy with local deviations; it is not a replacement for Liechtenstein law, authority allocation or filing access. [Official practice-publications page][practice]",
       "old_sha256": "cb8fbd40cf20d874b796e1c5b380242963aeb97f2f0d9d2f9b874d752ce36244",
       "exact_retained": true,
-      "destination": "currentGuide line33"
+      "destination": "Current Guide line31"
     },
     {
       "id": "OLD-006",
       "old_text": "The earlier Guide's merchant-name classification, unknown-country/rate defaults and universal Swiss-portal instruction are superseded. Their history remains in Git. An invoice, contract, supply/location evidence, registration decision, deduction record and actual reporting period are required; a bank statement or the customer's name cannot establish taxable supply, export or recovery.",
       "old_sha256": "f548833a7a5c0318097dcc674b1c74aa88f2a6fb8eaeffddd59fe501d79e68c1",
       "exact_retained": true,
-      "destination": "currentGuide line35"
+      "destination": "Current Guide line33"
     },
     {
       "id": "OLD-007",
@@ -1097,63 +1097,63 @@
       "old_text": "| Item | Rule or 2026 figure | Primary source |",
       "old_sha256": "fd86256e97209018be3f390a22a2954b36f5bfacd6f591ef47a9c773e7746e8c",
       "exact_retained": true,
-      "destination": "currentGuide line39"
+      "destination": "Current Guide line37"
     },
     {
       "id": "OLD-009",
       "old_text": "|---|---|---|",
       "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
       "exact_retained": true,
-      "destination": "currentGuide line40"
+      "destination": "Current Guide line38"
     },
     {
       "id": "OLD-010",
       "old_text": "| Normal rate | 8.1% | MWSTG article 25(1); [rate page][rates] |",
       "old_sha256": "7a948a30fca8c8f0c43381485124d1265bbbdadbd9a3083f1f391a52cc36cbfd",
       "exact_retained": true,
-      "destination": "currentGuide line41"
+      "destination": "Current Guide line39"
     },
     {
       "id": "OLD-011",
       "old_text": "| Reduced rate | 2.6% for statutory categories | Article 25(2); [rate page][rates] |",
       "old_sha256": "093c54ed3473a4d0a861d22fca8482ef1935b826eee2500471d10b09e1bd432b",
       "exact_retained": true,
-      "destination": "currentGuide line42"
+      "destination": "Current Guide line40"
     },
     {
       "id": "OLD-012",
       "old_text": "| Accommodation | 3.8% for qualifying accommodation, including breakfast | Article 25(4) |",
       "old_sha256": "07db6300cda87654c32ab3e58b9001345c9f603e08f1bab2bc4fbaffaf724ae3",
       "exact_retained": true,
-      "destination": "currentGuide line43"
+      "destination": "Current Guide line41"
     },
     {
       "id": "OLD-013",
       "old_text": "| Ordinary small-business exemption | Annual worldwide relevant turnover **less than CHF 100,000**, excluding article 21(2) exempt supplies | Articles 10(2)(a), 10(2a) |",
       "old_sha256": "7b1b37de1f08d5ea400e86c66a34ae8c268f89277e21b03378d77a9ed8395714",
       "exact_retained": true,
-      "destination": "currentGuide line44"
+      "destination": "Current Guide line42"
     },
     {
       "id": "OLD-014",
       "old_text": "| Specified nonprofit bodies | Separate **less than CHF 250,000** test | Article 10(2)(c), not every business |",
       "old_sha256": "74a2bd168a03387b60c55a0ffccc78f49bf27b94081570eaf42b5c08b7521e72",
       "exact_retained": true,
-      "destination": "currentGuide line45"
+      "destination": "Current Guide line43"
     },
     {
       "id": "OLD-015",
       "old_text": "| Registered domestic taxpayer: acquisition tax | Assess each qualifying acquisition; no CHF 10,000 exemption | Article 45(2)(a) |",
       "old_sha256": "50b5a90062aaf11e4d8cdf13d69688b77065f8579ac6906a78aa28a0cafd8667",
       "exact_retained": true,
-      "destination": "currentGuide line46"
+      "destination": "Current Guide line44"
     },
     {
       "id": "OLD-016",
       "old_text": "| Recipient not already liable under article 10 | Acquisition-tax screen for qualifying acquisitions **over CHF 10,000** in the calendar year | Articles 45(2)(b), 47(2), 53(3) |",
       "old_sha256": "826e696c39a9fca3b29f716b285a3ce44d09116c004261c7f74e2fb182bb3d42",
       "exact_retained": true,
-      "destination": "currentGuide line47"
+      "destination": "Current Guide line45"
     },
     {
       "id": "OLD-017",
@@ -1167,7 +1167,7 @@
       "old_text": "For a foreign enterprise established outside Liechtenstein/Switzerland, the authority says an existing Swiss VAT registration or taxable Swiss supplies put collection with the Swiss ESTV; additional Liechtenstein sales are accounted for there. Check the actual registration/authority allocation before choosing a portal. A Liechtenstein-administered taxpayer uses [eMWST][portal], mandatory since January 2025 for registration, returns, corrections and communications; old lilog accounts/authorisations are not sufficient. Retain current access and representation evidence. [Registration guidance][registration]; [eMWST instructions][portal]",
       "old_sha256": "e21013c14e9107b8d79157348b0499932f6e3c3fb0904d18966e76c4db4eb3f1",
       "exact_retained": true,
-      "destination": "currentGuide line117"
+      "destination": "Current Guide line115"
     },
     {
       "id": "OLD-019",
@@ -1181,14 +1181,14 @@
       "old_text": "For every line retain seller and recipient, registration details, supply type and date, goods movement or receiving establishment, net/gross currency amount, tax shown, invoice and credit note, and documented business/deductible use. Separate taxable sales, exempt-without-deduction supplies, evidenced exempt-with-deduction supplies, acquisition tax, import tax and non-supply movements.",
       "old_sha256": "cac69e3a1520c298bea3513ff782690e7e942eb9db2555da3d1720a35dbb02e2",
       "exact_retained": true,
-      "destination": "currentGuide line60"
+      "destination": "Current Guide line58"
     },
     {
       "id": "OLD-021",
       "old_text": "1. **Find the supply and place.** Articles 7–8 control goods and services. Article 8(1) normally looks to the receiving business/establishment; special rules cover property/accommodation, restaurant, transport and other services. A foreign hotel or an EU customer's name does not establish domestic acquisition tax or export. Preserve the applicable rule and evidence.\n2. **Choose the category and rate.** Article 25(3) applies the normal rate to restaurant services. Qualifying takeaway/delivery food needs the stated organisational separation to use the reduced rate. Do not split a dine-in bill's food to 2.6% merely because groceries can be reduced. Alcohol is outside the reduced food category. The supply date/period, rather than invoice/payment date alone, controls a rate transition. [Rate page][rates]; [MWSTG, article 25][law]\n3. **Test exemption/option separately.** Articles 21–23 distinguish excluded supplies, options and exempt supplies. No generic bank, government, SaaS, restaurant or internal-transfer label decides the legal treatment. Exports need goods-movement and statutory evidence; services to a foreign customer require their own place rule.\n4. **Assess acquisition tax only when its gates hold.** For an ordinary article 8(1) service, establish domestic place, a foreign supplier not entered in the relevant register, and no article 45a exclusion. Article 45 contains other acquisition categories too; article 46 applies the ordinary base/rates. Registration of the recipient and the CHF 10,000 test differ as shown above. Telecom/electronic consumer supplies and emission rights need separate screens. Under article 48, the tax point depends on payment or, for an article-10 taxpayer using agreed consideration, receipt of the invoice. Do not classify every foreign debit as an import of services. [Articles 45–48][law]\n5. **Determine input entitlement.** Articles 28–30 require the qualifying business purpose and exclude inputs for exempt supplies without an option, with specified exceptions. Preserve article 28(3) payment proof, invoice/import-assessment evidence and the use allocation. Article 30 corrects mixed use; article 31 addresses later loss of entitlement. Acquisition output and input can both be reportable even when the net is zero. No universal entertainment half-deduction, vehicle percentage or automatic zero-net recovery is supplied here. [Articles 26, 28–31][law]\n6. Reconcile the supported bases/tax to the actual eMWST return fields and method. Under effective accounting, article 36 combines domestic/acquisition tax and the stated deferred-import tax with eligible input credits. The ordinary effective method must not be mixed with approved net-tax or flat-rate methods. Net-tax rates are not customer invoice rates. [Articles 36–38][law]",
       "old_sha256": "508a090a9254aaf2dab4861743428865e4f289a1373713c3498565d0991bf265",
       "exact_retained": true,
-      "destination": "currentGuide line62"
+      "destination": "Current Guide line60"
     },
     {
       "id": "OLD-022",
@@ -1216,42 +1216,42 @@
       "old_text": "Amounts are hypothetical unless expressly identified otherwise. A passing calculation establishes neither classification nor permission to file.",
       "old_sha256": "9a3273d97539d452941e4aa618be0c32cf386f10c4536259a8b0342d0eafcf6c",
       "exact_retained": true,
-      "destination": "currentGuide line121"
+      "destination": "Current Guide line119"
     },
     {
       "id": "OLD-026",
       "old_text": "### VAT-inclusive ordinary domestic invoice",
       "old_sha256": "9aa2b4c57af9426b405291255e61b39f5fa65bcfa9d930bfa2404bcbbbe68a42",
       "exact_retained": true,
-      "destination": "currentGuide line123"
+      "destination": "Current Guide line121"
     },
     {
       "id": "OLD-027",
       "old_text": "Assume an established domestic standard-rate taxable supply for CHF 10,810 gross. The customer country/name alone is not that evidence.",
       "old_sha256": "b814cb84dac0382a5439378bc26fccf5ade1c96729c3f5827687b708224bbf30",
       "exact_retained": true,
-      "destination": "currentGuide line125"
+      "destination": "Current Guide line123"
     },
     {
       "id": "OLD-028",
       "old_text": "```oa-check\nname: Liechtenstein assumed standard VAT inclusive invoice\ninputs:\n  established_gross_price: 10810\n  established_rate: 0.081\nsteps:\n  net_price: established_gross_price / (1 + established_rate)\n  output_vat: established_gross_price - net_price\nexpected:\n  net_price: 10000\n  output_vat: 810\n```",
       "old_sha256": "558587033a7602caee0e8c086a7ddf73aeadac82ac8c37d46343633b1abb8a46",
       "exact_retained": true,
-      "destination": "currentGuide line127"
+      "destination": "Current Guide line125"
     },
     {
       "id": "OLD-029",
       "old_text": "### Qualifying reduced goods and accommodation",
       "old_sha256": "c6e569ad2952e0918c2666f7cde72198f2fa68ad48e70f6322bc36868560991c",
       "exact_retained": true,
-      "destination": "currentGuide line82"
+      "destination": "Current Guide line80"
     },
     {
       "id": "OLD-030",
       "old_text": "Assume separately classified domestic supplies: CHF 1,000 net qualifying reduced-rate goods and CHF 200 net qualifying accommodation. A restaurant meal is not included in the reduced goods assumption.",
       "old_sha256": "c40dc91375cf64e8a5a70bacacbe3cd614c2e74470b78d71d3db7e925ba6245e",
       "exact_retained": true,
-      "destination": "currentGuide line84"
+      "destination": "Current Guide line82"
     },
     {
       "id": "OLD-031",
@@ -1265,14 +1265,14 @@
       "old_text": "### Acquisition tax with supported partial input entitlement",
       "old_sha256": "ccc39784c2a6170a77d42f4b19fb38f8a4b3a91e54af39e2c5c60300ffbfe2cd",
       "exact_retained": true,
-      "destination": "currentGuide line88"
+      "destination": "Current Guide line86"
     },
     {
       "id": "OLD-033",
       "old_text": "Assume an article-10 registered recipient, an established domestic article 8(1) service from a qualifying unregistered foreign supplier, no article 45a exclusion, a CHF 1,000 net base and documented 70% input entitlement under the effective method. Assess CHF 81 acquisition tax, with CHF 56.70 deductible and CHF 24.30 remaining. The supplier brand does not establish these gates.",
       "old_sha256": "5bf344ebebf01c5ce003adf39f4aa519252379db6d8d75326610539c7764595a",
       "exact_retained": true,
-      "destination": "currentGuide line90"
+      "destination": "Current Guide line88"
     },
     {
       "id": "OLD-034",
@@ -1286,14 +1286,14 @@
       "old_text": "### Invoice food versus restaurant classification",
       "old_sha256": "ba1ebb4bed45b7e49d8db5eb039a0ffb9abaec961ff98e47eeec0dcf3f3d805d",
       "exact_retained": true,
-      "destination": "currentGuide line94"
+      "destination": "Current Guide line92"
     },
     {
       "id": "OLD-036",
       "old_text": "The same CHF 500 net food value gives CHF 13 at 2.6% only on established qualifying goods/takeaway facts, versus CHF 40.50 for a normal-rate restaurant service. The CHF 27.50 difference is a classification control, not an election for the cheaper result.",
       "old_sha256": "d9e1030c8c2293126722d5c4ecfcf36fbb4651b6ddbe195e37a82d93678464db",
       "exact_retained": true,
-      "destination": "currentGuide line96"
+      "destination": "Current Guide line94"
     },
     {
       "id": "OLD-037",
@@ -1342,35 +1342,35 @@
       "old_text": "[law]: https://www.gesetze.li/konso/pdf/2009330000\n[portal]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/e-mwst\n[registration]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/wer-ist-mwst-steuerpflichtig\n[rates]: https://www.llv.li/de/unternehmen/steuern-abgaben-versicherung/mehrwertsteuer/mwst-steuersaetze\n[practice]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/publikationen-zur-mehrwertsteuerpraxis\n[changes]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/aenderungen-ab-01012025",
       "old_sha256": "3ee50c203f30117dc7f2a1e51572e1daa20e677450825fe3c67d990be2ab6844",
       "exact_retained": true,
-      "destination": "currentGuide line181"
+      "destination": "Current Guide line178"
     },
     {
       "id": "OLD-044",
       "old_text": "<!-- openaccountants-cta-block -->",
       "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "exact_retained": true,
-      "destination": "currentGuide line188"
+      "destination": "Current Guide line185"
     },
     {
       "id": "OLD-045",
       "old_text": "---",
       "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
       "exact_retained": true,
-      "destination": "currentGuide line1"
+      "destination": "Current Guide line1"
     },
     {
       "id": "OLD-046",
       "old_text": "## Talk to an accountant",
       "old_sha256": "2c053967fa7ab3e0318ae212a61d5f13965c474e336848bbc77f5976214e2dd9",
       "exact_retained": true,
-      "destination": "currentGuide line192"
+      "destination": "Current Guide line189"
     },
     {
       "id": "OLD-047",
       "old_text": "Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).",
       "old_sha256": "24f7c27dd7f52c15f0a5a162ce9ed615250f525c513ffb87020f75112cb00ae0",
       "exact_retained": true,
-      "destination": "currentGuide line194"
+      "destination": "Current Guide line191"
     }
   ],
   "explicit_successor_map": {

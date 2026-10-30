@@ -1,7 +1,7 @@
 {
   "status": "WRITER LEDGER; FULL INDEPENDENT COUNTRY REVIEW PENDING",
   "guide": "skills/international/liechtenstein/li-corporate-income-tax.md",
-  "guide_sha256": "689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b7aa52ec",
+  "guide_sha256": "162b15efd16bd5d93de4b377786934b2bc78a5810919166daf70451cc4854d28",
   "rules": [
     {
       "id": "LI-CORP-001",
@@ -992,6 +992,58 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
     },
     {
+      "id": "LI-CORP-077",
+      "rule_or_figure": "Corporate return mandatory authority-provided electronic program and electronic submission",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteV42a(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "zu erstellen und elektronisch einzureichen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-CORP-078",
+      "rule_or_figure": "Corporate passcode supplied with information letter",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteV42a(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "zusammen mit dem Informationsschreiben zur Einreichung der Steuererklärung einen Passcode.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-CORP-079",
+      "rule_or_figure": "Corporate41(2) attachments accompany return electronically",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteV42a(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "Die erforderlichen Beilagen nach Art. 41 Abs. 2 sind zusammen mit der Steuererklärung elektronisch einzureichen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-CORP-080",
+      "rule_or_figure": "42a first applies to2024 returns, current2026 method included",
+      "Guide_section": "Sources / commencement",
+      "act_article_or_official_section": "SteV note75;LGBl2024/501",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "findet erstmals auf Steuererklärungen für das Steuerjahr 2024 Anwendung.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
       "id": "LI-CORP-W01",
       "rule_or_figure": "No invented startup minimum exemption or unverified2027 filing calendar; historical2012 leaflet is not current deadline proof.",
       "classification": "AUTHOR WORKFLOW OR EXPRESS LIMIT",
@@ -1037,7 +1089,7 @@
       "old_sha256": "68b557df52db7a84eaa2e7d8352b12fa88290c7037cd4a9e738fbece51881ad8",
       "old_section": "Frontmatter/heading",
       "exact_retained": false,
-      "destination": "Frontmatter/heading version0.2 to0.3 and read date30October; protected platform fields/CTA unchanged"
+      "destination": "Frontmatter/heading version0.2 to0.4 and read date30October; protected platform fields/CTA unchanged"
     },
     {
       "id": "OLD-002",
@@ -1045,15 +1097,15 @@
       "old_sha256": "9c41071a71b6417b73a0ce754b4c8e8263215913920f9bd0df71fcf8b35a40c4",
       "old_section": "Frontmatter/heading",
       "exact_retained": false,
-      "destination": "Frontmatter/heading version0.2 to0.3 and read date30October; protected platform fields/CTA unchanged"
+      "destination": "Frontmatter/heading version0.2 to0.4 and read date30October; protected platform fields/CTA unchanged"
     },
     {
       "id": "OLD-003",
       "old_text": "Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.",
       "old_sha256": "8e7c827e86c5cc5b9c1043e1196153b994c25a6491ecc03df91b3f07ed5970df",
       "old_section": "Frontmatter/heading",
-      "exact_retained": true,
-      "destination": "Current Guide line27"
+      "exact_retained": false,
+      "destination": "Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open."
     },
     {
       "id": "OLD-004",
@@ -1061,7 +1113,7 @@
       "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
       "old_section": "Who this applies to",
       "exact_retained": true,
-      "destination": "Current Guide line31"
+      "destination": "Current Guide line29"
     },
     {
       "id": "OLD-005",
@@ -1069,7 +1121,7 @@
       "old_sha256": "8193d1e3a5036dce032e28e7973128208fec3ba4b19587bb5cca3cee6f34f135",
       "old_section": "Who this applies to",
       "exact_retained": true,
-      "destination": "Current Guide line33"
+      "destination": "Current Guide line31"
     },
     {
       "id": "OLD-006",
@@ -1085,7 +1137,7 @@
       "old_sha256": "2d92d720779cb15cdaaf27850eed1f91122bae0407fc5f6e56e2891e4862bf0f",
       "old_section": "Rates and controlling limits",
       "exact_retained": true,
-      "destination": "Current Guide line37"
+      "destination": "Current Guide line35"
     },
     {
       "id": "OLD-008",
@@ -1093,7 +1145,7 @@
       "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
       "old_section": "Rates and controlling limits",
       "exact_retained": true,
-      "destination": "Current Guide line38"
+      "destination": "Current Guide line36"
     },
     {
       "id": "OLD-009",
@@ -1101,7 +1153,7 @@
       "old_sha256": "74fb2c9d851e61bf82e9360c4601f5f5702b9f21d6916fc156d31656e54d3385",
       "old_section": "Rates and controlling limits",
       "exact_retained": true,
-      "destination": "Current Guide line39"
+      "destination": "Current Guide line37"
     },
     {
       "id": "OLD-010",
@@ -1109,7 +1161,7 @@
       "old_sha256": "b249d277b11c75451a10cc17ad95aa0d42ced30748e1901e581e6ad6288ab78f",
       "old_section": "Rates and controlling limits",
       "exact_retained": true,
-      "destination": "Current Guide line40"
+      "destination": "Current Guide line38"
     },
     {
       "id": "OLD-011",
@@ -1117,7 +1169,7 @@
       "old_sha256": "4e7eafda9d0455c650a89d6622758dc8e2b5414cf31e11b26c8e880ff4f949f1",
       "old_section": "Rates and controlling limits",
       "exact_retained": true,
-      "destination": "Current Guide line41"
+      "destination": "Current Guide line39"
     },
     {
       "id": "OLD-012",
@@ -1125,7 +1177,7 @@
       "old_sha256": "fc8a4b6cb0568f2186d529734d1346b93351513e7ed8594044049afdb76824c2",
       "old_section": "Rates and controlling limits",
       "exact_retained": true,
-      "destination": "Current Guide line42"
+      "destination": "Current Guide line40"
     },
     {
       "id": "OLD-013",
@@ -1133,7 +1185,7 @@
       "old_sha256": "bb0e696772aa9348aebdb3afc5abc029d1fa516cebebef375875454875e2d3a4",
       "old_section": "Rates and controlling limits",
       "exact_retained": true,
-      "destination": "Current Guide line43"
+      "destination": "Current Guide line41"
     },
     {
       "id": "OLD-014",
@@ -1141,7 +1193,7 @@
       "old_sha256": "0fb0ba085284e7c0e605529de2f68d6d81de6fae5526d173a9a7f03e706cf7e9",
       "old_section": "Rates and controlling limits",
       "exact_retained": true,
-      "destination": "Current Guide line44"
+      "destination": "Current Guide line42"
     },
     {
       "id": "OLD-015",
@@ -1149,7 +1201,7 @@
       "old_sha256": "5ee233b663624c36c18cc95208f7ec30f095cda3f35b11cf24e0c623661b97d2",
       "old_section": "Rates and controlling limits",
       "exact_retained": true,
-      "destination": "Current Guide line46"
+      "destination": "Current Guide line44"
     },
     {
       "id": "OLD-016",
@@ -1165,7 +1217,7 @@
       "old_sha256": "d58f4051fda3193a6dab96a93d1e19f08f1515cdbb85f668fb38ab101d400215",
       "old_section": "Build the tax base",
       "exact_retained": true,
-      "destination": "Current Guide line50"
+      "destination": "Current Guide line48"
     },
     {
       "id": "OLD-018",
@@ -1181,7 +1233,7 @@
       "old_sha256": "cf81e2023283f79b53fb9ccf3465265abc6d705559df1eeed3633901c87e488d",
       "old_section": "Equity deduction: establish modified equity first",
       "exact_retained": true,
-      "destination": "Current Guide line54"
+      "destination": "Current Guide line52"
     },
     {
       "id": "OLD-020",
@@ -1189,7 +1241,7 @@
       "old_sha256": "848419a13ddaaf7bc77583e470176481ed9dab5d856b451b79e9e6b58278983f",
       "old_section": "Equity deduction: establish modified equity first",
       "exact_retained": true,
-      "destination": "Current Guide line56"
+      "destination": "Current Guide line54"
     },
     {
       "id": "OLD-021",
@@ -1197,7 +1249,7 @@
       "old_sha256": "6d7f02da270270dcf786664304b80b5cf32ade0c9d49b5c1b9264765e569c6a9",
       "old_section": "Equity deduction: establish modified equity first",
       "exact_retained": true,
-      "destination": "Current Guide line58"
+      "destination": "Current Guide line56"
     },
     {
       "id": "OLD-022",
@@ -1205,7 +1257,7 @@
       "old_sha256": "8a146638c21bebe750506b6298195b66086c305fd6b94aef93ee07443b2716ca",
       "old_section": "Loss register and sequence",
       "exact_retained": true,
-      "destination": "Current Guide line83"
+      "destination": "Current Guide line81"
     },
     {
       "id": "OLD-023",
@@ -1213,7 +1265,7 @@
       "old_sha256": "1fbdd392f0f8d97009e782b12f03875638ad6735ffed60529a039d1621eaa1c9",
       "old_section": "Loss register and sequence",
       "exact_retained": true,
-      "destination": "Current Guide line85"
+      "destination": "Current Guide line83"
     },
     {
       "id": "OLD-024",
@@ -1277,7 +1329,7 @@
       "old_sha256": "60384c8c6bd9ea1ea2c7fa07e8bb33bff00374e1a4852fe0b96d650a840efd21",
       "old_section": "Worked controls",
       "exact_retained": true,
-      "destination": "Current Guide line175"
+      "destination": "Current Guide line176"
     },
     {
       "id": "OLD-032",
@@ -1285,7 +1337,7 @@
       "old_sha256": "13a7468f5a2816bad54a6935cb560d7f23b0feb46184321a51ff6a65333bf952",
       "old_section": "Worked controls",
       "exact_retained": true,
-      "destination": "Current Guide line177"
+      "destination": "Current Guide line178"
     },
     {
       "id": "OLD-033",
@@ -1293,7 +1345,7 @@
       "old_sha256": "5f099aee42a7e23d56d83a64b7bf7f1a02733b99a769cd7906c6b43839a67c28",
       "old_section": "Worked controls",
       "exact_retained": true,
-      "destination": "Current Guide line179"
+      "destination": "Current Guide line180"
     },
     {
       "id": "OLD-034",
@@ -1357,7 +1409,7 @@
       "old_sha256": "11a124eb309fb3db8334448d8519d5c455c453b81dde938602f6178cbb342aa9",
       "old_section": "Ask and refer",
       "exact_retained": true,
-      "destination": "Current Guide line197"
+      "destination": "Current Guide line198"
     },
     {
       "id": "OLD-042",
@@ -1365,7 +1417,7 @@
       "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
       "old_section": "Sources",
       "exact_retained": true,
-      "destination": "Current Guide line199"
+      "destination": "Current Guide line200"
     },
     {
       "id": "OLD-043",
@@ -1381,7 +1433,7 @@
       "old_sha256": "6d846ea8ffe459b44f15611160755cb46625fb680e03ecba76c83ef080c64f6f",
       "old_section": "Sources",
       "exact_retained": true,
-      "destination": "Current Guide line203"
+      "destination": "Current Guide line204"
     },
     {
       "id": "OLD-045",
@@ -1389,7 +1441,7 @@
       "old_sha256": "dc3f348a28f21417b804fb1393977b303867f6c364d31a74a0c2f0e82ba5f75b",
       "old_section": "Sources",
       "exact_retained": true,
-      "destination": "Current Guide line211"
+      "destination": "Current Guide line214"
     },
     {
       "id": "OLD-046",
@@ -1397,7 +1449,7 @@
       "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "old_section": "Sources",
       "exact_retained": true,
-      "destination": "Current Guide line217"
+      "destination": "Current Guide line220"
     },
     {
       "id": "OLD-047",
@@ -1413,7 +1465,7 @@
       "old_sha256": "2c053967fa7ab3e0318ae212a61d5f13965c474e336848bbc77f5976214e2dd9",
       "old_section": "Talk to an accountant",
       "exact_retained": true,
-      "destination": "Current Guide line221"
+      "destination": "Current Guide line224"
     },
     {
       "id": "OLD-049",
@@ -1421,7 +1473,7 @@
       "old_sha256": "24f7c27dd7f52c15f0a5a162ce9ed615250f525c513ffb87020f75112cb00ae0",
       "old_section": "Talk to an accountant",
       "exact_retained": true,
-      "destination": "Current Guide line223"
+      "destination": "Current Guide line226"
     }
   ],
   "explicit_successor_map": {

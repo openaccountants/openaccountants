@@ -1,7 +1,7 @@
 # Figure ledger: li-corporate-income-tax
 
 WRITER LEDGER, not independent review. Current Tax Act/Ordinance refetched30October2026 and matched saved original PDFs. Sources in sibling payroll/TP evidence are immutable members of the country freeze. The amendment is an original enacted Act. Historical authority summary and2012 leaflet are retained only for their expressly stated historical scope.
-Current Guide SHA256: `689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b7aa52ec`.
+Current Guide SHA256: `162b15efd16bd5d93de4b377786934b2bc78a5810919166daf70451cc4854d28`.
 
 | ID | Rule/figure and Guide section | Act/article | Official URL | Short exact German quote | Read date |
 |---|---|---|---|---|---|
@@ -81,6 +81,10 @@ Current Guide SHA256: `689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b
 | LI-CORP-074 | Ordinary30day payment; special due events and departure exception separate; Deadlines and filing | SteG113–114 | https://www.gesetze.li/konso/pdf/2010340000 | innert 30 Tagen nach Fälligkeit entrichtet werden. | 2026-10-30 |
 | LI-CORP-075 | Late interest4% and applicable due/delivery/payment facts; Rates, bands and thresholds / Penalties and interest | SteV45;SteG114 | https://www.gesetze.li/konso/pdf/2010437000 | Der Verzugszins beträgt 4 %. | 2026-10-30 |
 | LI-CORP-076 | Procedural fine after reminder, intent/negligence, max1000/serious-repeat10000; Penalties and interest | SteG135 | https://www.gesetze.li/konso/pdf/2010340000 | Busse bis zu 1 000 Franken bestraft, in schweren Fällen oder im Wiederholungsfall bis zu 10 000 Franken. | 2026-10-30 |
+| LI-CORP-077 | Corporate return mandatory authority-provided electronic program and electronic submission; Deadlines and filing | SteV42a(1) | https://www.gesetze.li/konso/pdf/2010437000 | zu erstellen und elektronisch einzureichen. | 2026-10-30 |
+| LI-CORP-078 | Corporate passcode supplied with information letter; Deadlines and filing | SteV42a(2) | https://www.gesetze.li/konso/pdf/2010437000 | zusammen mit dem Informationsschreiben zur Einreichung der Steuererklärung einen Passcode. | 2026-10-30 |
+| LI-CORP-079 | Corporate41(2) attachments accompany return electronically; Deadlines and filing | SteV42a(3) | https://www.gesetze.li/konso/pdf/2010437000 | Die erforderlichen Beilagen nach Art. 41 Abs. 2 sind zusammen mit der Steuererklärung elektronisch einzureichen. | 2026-10-30 |
+| LI-CORP-080 | 42a first applies to2024 returns, current2026 method included; Sources / commencement | SteV note75;LGBl2024/501 | https://www.gesetze.li/konso/pdf/2010437000 | findet erstmals auf Steuererklärungen für das Steuerjahr 2024 Anwendung. | 2026-10-30 |
 | LI-CORP-W01 | No invented startup minimum exemption or unverified2027 filing calendar; historical2012 leaflet is not current deadline proof. | AUTHOR WORKFLOW OR EXPRESS LIMIT | Governing rows above | No extra statutory figure | 2026-10-30 |
 | LI-CORP-W02 | Actual classification, average tax values, liquidity data, purpose, tax notices and anti-abuse evidence required before computation. | AUTHOR WORKFLOW OR EXPRESS LIMIT | Governing rows above | No extra statutory figure | 2026-10-30 |
 | LI-CORP-W03 | PVS/GloBE/group/restructuring, disputed foreign facts, exact interest duration, live filing and named local attestation remain uncompleted. | AUTHOR WORKFLOW OR EXPRESS LIMIT | Governing rows above | No extra statutory figure | 2026-10-30 |
@@ -92,29 +96,29 @@ Current Guide SHA256: `689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b
 
 | Old unit | Topic beginning | Destination |
 |---|---|---|
-| OLD-001 | --- name: li-corporate-income-tax description: >   Prepare 2026 Liechtenstein corporate profit-tax workpapers  | Frontmatter/heading version0.2 to0.3 and read date30October; protected platform fields/CTA unchanged |
-| OLD-002 | # Liechtenstein corporate income tax v0.2 | Frontmatter/heading version0.2 to0.3 and read date30October; protected platform fields/CTA unchanged |
-| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | Current Guide line27 |
-| OLD-004 | ## Who this applies to | Current Guide line31 |
-| OLD-005 | Use this 2026 source-cited draft for an ordinary legal entity after establishing its classification. SteG arti | Current Guide line33 |
+| OLD-001 | --- name: li-corporate-income-tax description: >   Prepare 2026 Liechtenstein corporate profit-tax workpapers  | Frontmatter/heading version0.2 to0.4 and read date30October; protected platform fields/CTA unchanged |
+| OLD-002 | # Liechtenstein corporate income tax v0.2 | Frontmatter/heading version0.2 to0.4 and read date30October; protected platform fields/CTA unchanged |
+| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open. |
+| OLD-004 | ## Who this applies to | Current Guide line29 |
+| OLD-005 | Use this 2026 source-cited draft for an ordinary legal entity after establishing its classification. SteG arti | Current Guide line31 |
 | OLD-006 | ## Rates and controlling limits | Rates, bands and thresholds |
-| OLD-007 | / Item / Current rule / Source / | Current Guide line37 |
-| OLD-008 | /---/---/---/ | Current Guide line38 |
-| OLD-009 | / Ordinary profit tax / 12.5% of taxable net income / SteG article 61; [authority summary][authority] / | Current Guide line39 |
-| OLD-010 | / Minimum tax where applicable / CHF 1,800, creditable against profit tax, not added to it / SteG article 62(1 | Current Guide line40 |
-| OLD-011 | / Commercial-business minimum-tax exception / Exclusive qualifying commercial-business purpose and average bal | Current Guide line41 |
-| OLD-012 | / Ordinary brought-forward loss use / At most 70% of positive taxable net income / SteG article 57(1); excepti | Current Guide line42 |
-| OLD-013 | / Equity deduction reference rate / 4% Sollertrag in SteG article 5 for 2026 / SteG articles 5 and 54; [Act 20 | Current Guide line43 |
-| OLD-014 | / Late-payment interest / 4% under current SteV article 45, applied to the correct liability/payment period /  | Current Guide line44 |
-| OLD-015 | Do not apply a CHF 1,800 minimum to every entity without classification: article 62 distinguishes specified so | Current Guide line46 |
+| OLD-007 | / Item / Current rule / Source / | Current Guide line35 |
+| OLD-008 | /---/---/---/ | Current Guide line36 |
+| OLD-009 | / Ordinary profit tax / 12.5% of taxable net income / SteG article 61; [authority summary][authority] / | Current Guide line37 |
+| OLD-010 | / Minimum tax where applicable / CHF 1,800, creditable against profit tax, not added to it / SteG article 62(1 | Current Guide line38 |
+| OLD-011 | / Commercial-business minimum-tax exception / Exclusive qualifying commercial-business purpose and average bal | Current Guide line39 |
+| OLD-012 | / Ordinary brought-forward loss use / At most 70% of positive taxable net income / SteG article 57(1); excepti | Current Guide line40 |
+| OLD-013 | / Equity deduction reference rate / 4% Sollertrag in SteG article 5 for 2026 / SteG articles 5 and 54; [Act 20 | Current Guide line41 |
+| OLD-014 | / Late-payment interest / 4% under current SteV article 45, applied to the correct liability/payment period /  | Current Guide line42 |
+| OLD-015 | Do not apply a CHF 1,800 minimum to every entity without classification: article 62 distinguishes specified so | Current Guide line44 |
 | OLD-016 | ## Build the tax base | The base; ordinary article48 screens now added without asserting actual foreign facts |
-| OLD-017 | Start from the relevant PGR financial statements. SteG article 47 requires taxable net income, not gross recei | Current Guide line50 |
+| OLD-017 | Start from the relevant PGR financial statements. SteG article 47 requires taxable net income, not gross recei | Current Guide line48 |
 | OLD-018 | Article 48 contains exemptions and anti-abuse conditions; do not treat every participation receipt, disposal,  | The base; ordinary article48 screens now added without asserting actual foreign facts |
-| OLD-019 | ## Equity deduction: establish modified equity first | Current Guide line54 |
-| OLD-020 | SteG article 54 uses **modified equity**, not simply closing book equity. Its calculation deducts own shares,  | Current Guide line56 |
-| OLD-021 | The deduction cannot create or increase a current loss. Negative modified equity gives zero deduction. Article | Current Guide line58 |
-| OLD-022 | ## Loss register and sequence | Current Guide line83 |
-| OLD-023 | After the relevant current-income adjustments, reconcile the opening assessed loss balance, current loss, amou | Current Guide line85 |
+| OLD-019 | ## Equity deduction: establish modified equity first | Current Guide line52 |
+| OLD-020 | SteG article 54 uses **modified equity**, not simply closing book equity. Its calculation deducts own shares,  | Current Guide line54 |
+| OLD-021 | The deduction cannot create or increase a current loss. Negative modified equity gives zero deduction. Article | Current Guide line56 |
+| OLD-022 | ## Loss register and sequence | Current Guide line81 |
+| OLD-023 | After the relevant current-income adjustments, reconcile the opening assessed loss balance, current loss, amou | Current Guide line83 |
 | OLD-024 | ## Filing, payment and control | Deadlines and filing; old item5 moved to Penalties and interest |
 | OLD-025 | 1. Retain incorporation/management, legal-form/status, accounting-period and ownership records; the PGR accoun | Deadlines and filing; old item5 moved to Penalties and interest |
 | OLD-026 | ## Worked controls | The base / Retained predecessor controls; exact4blocks annex and current minimum example |
@@ -122,9 +126,9 @@ Current Guide SHA256: `689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b
 | OLD-028 | ### Assumed book-to-tax, equity and loss bridge | The base / Retained predecessor controls; exact4blocks annex and current minimum example |
 | OLD-029 | Assume CHF 100,000 book profit before tax, CHF 5,000 established addbacks, CHF 500,000 fully reconciled modifi | The base / Retained predecessor controls; exact4blocks annex and current minimum example |
 | OLD-030 | ```oa-check name: Liechtenstein assumed corporate equity and loss bridge inputs:   book_profit_before_tax: 100 | Exact original-controls annex; substantive case retained in current Guide |
-| OLD-031 | ### Minimum tax is not added to ordinary tax | Current Guide line175 |
-| OLD-032 | Assume CHF 10,000 final taxable profit and no minimum-tax exemption. Ordinary tax CHF 1,250 is below the appli | Current Guide line177 |
-| OLD-033 | ```oa-check name: Liechtenstein assumed applicable minimum tax comparison inputs:   established_taxable_profit | Current Guide line179 |
+| OLD-031 | ### Minimum tax is not added to ordinary tax | Current Guide line176 |
+| OLD-032 | Assume CHF 10,000 final taxable profit and no minimum-tax exemption. Ordinary tax CHF 1,250 is below the appli | Current Guide line178 |
+| OLD-033 | ```oa-check name: Liechtenstein assumed applicable minimum tax comparison inputs:   established_taxable_profit | Current Guide line180 |
 | OLD-034 | ### Equity deduction cannot generate a current loss | The base / Retained predecessor controls; exact4blocks annex and current minimum example |
 | OLD-035 | Assume CHF 10,000 positive profit before equity deduction, CHF 500,000 reconciled modified equity, no other re | The base / Retained predecessor controls; exact4blocks annex and current minimum example |
 | OLD-036 | ```oa-check name: Liechtenstein assumed equity deduction no new loss inputs:   established_profit_before_equit | Exact original-controls annex; substantive case retained in current Guide |
@@ -132,15 +136,15 @@ Current Guide SHA256: `689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b
 | OLD-038 | Assume three complete relevant years with qualifying balance-sheet totals CHF 400,000, CHF 500,000 and CHF 600 | The base / Retained predecessor controls; exact4blocks annex and current minimum example |
 | OLD-039 | ```oa-check name: Liechtenstein assumed three year minimum tax balance screen inputs:   first_balance: 400000  | Exact original-controls annex; substantive case retained in current Guide |
 | OLD-040 | ## Ask and refer | Ask the client first, retained verbatim |
-| OLD-041 | Obtain actual management, legal form/exemption/PVS status, full period and income source; all accounts/equity  | Current Guide line197 |
-| OLD-042 | ## Sources | Current Guide line199 |
+| OLD-041 | Obtain actual management, legal form/exemption/PVS status, full period and income source; all accounts/equity  | Current Guide line198 |
+| OLD-042 | ## Sources | Current Guide line200 |
 | OLD-043 | Read 24 October 2026: | Sources retains historical24October reads and adds actual30October selected statutory reads |
-| OLD-044 | - [Tax Act, consolidated 1 July 2026][law], selected articles 5, 44–47, 49, 54, 57, 61–63a, 94, 113–114, 127 a | Current Guide line203 |
-| OLD-045 | [law]: https://www.gesetze.li/konso/pdf/2010340000 [ordinance]: https://www.gesetze.li/konso/pdf/2010437000 [a | Current Guide line211 |
-| OLD-046 | <!-- openaccountants-cta-block --> | Current Guide line217 |
+| OLD-044 | - [Tax Act, consolidated 1 July 2026][law], selected articles 5, 44–47, 49, 54, 57, 61–63a, 94, 113–114, 127 a | Current Guide line204 |
+| OLD-045 | [law]: https://www.gesetze.li/konso/pdf/2010340000 [ordinance]: https://www.gesetze.li/konso/pdf/2010437000 [a | Current Guide line214 |
+| OLD-046 | <!-- openaccountants-cta-block --> | Current Guide line220 |
 | OLD-047 | --- | Current Guide line1 |
-| OLD-048 | ## Talk to an accountant | Current Guide line221 |
-| OLD-049 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com). | Current Guide line223 |
+| OLD-048 | ## Talk to an accountant | Current Guide line224 |
+| OLD-049 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com). | Current Guide line226 |
 
 Full predecessor text and each unit hash are retained in the JSON companion and exact predecessor file. All four original executable cases remain in the annex; their substantive figures remain in current prose.
 

@@ -1,7 +1,7 @@
 # Figure ledger: liechtenstein-vat
 
 WRITER LEDGER, not independent review. Statutory and selected actual browser reads on 30 October 2026; no private account/login/filing.
-Guide SHA256 `83ed049ad9c373473494f2767b0bd5f373552db647a6ce66107fa276321740e8`. Browser excerpts are selected exact accessibility text with joined layout whitespace, not rawHTML/wholepage; review includes expanding the registration accordion. Official PDFs and text are preserved.
+Guide SHA256 `98ae4b745216e9a9992f48395c51cefab7a1b76e33a906c41c811a5040a41bd2`. Browser excerpts are selected exact accessibility text with joined layout whitespace, not rawHTML/wholepage; review includes expanding the registration accordion. Official PDFs and text are preserved.
 
 | ID | Rule/figure and Guide section | Act/article | Official URL | Short exact German quote | Read date |
 |---|---|---|---|---|---|
@@ -28,7 +28,7 @@ Guide SHA256 `83ed049ad9c373473494f2767b0bd5f373552db647a6ce66107fa276321740e8`.
 | LI-VAT-021 | Restaurantnormalrate;takeaway/deliveryorganizationalclassification;alcoholexcludedreducedfood; The base | MWSTG25(2)-(3) | https://www.gesetze.li/konso/pdf/2009330000 | abgegeben werden, gilt der Normalsatz. Als gastgewerbliche Leistung gilt | 2026-10-30 |
 | LI-VAT-022 | Takeawayreducedonlywithsuitableorganisationaldistinction; The base | MWSTG25(3) | https://www.gesetze.li/konso/pdf/2009330000 | sofern geeignete organisatorische Massnahmen zur Abgrenzung dieser Leis | 2026-10-30 |
 | LI-VAT-023 | Exemptionwithoutdeduction/option/exempt-with-deductionseparate; The base | MWSTG21–23 | https://www.gesetze.li/konso/pdf/2009330000 | Von der Steuer ausgenommene Leistungen | 2026-10-30 |
-| LI-VAT-024 | Acquisitiontaxregisteredforeignsupplieranddomestic8(1)servicegates;notallforeigndebits; The base | MWSTG45(1)(a) | https://www.gesetze.li/konso/pdf/2009330000 | Dienstleistungen, deren Ort sich nach Art. 8 Abs. 1 im Inland befindet | 2026-10-30 |
+| LI-VAT-024 | Acquisition tax: foreign supplier NOT REGISTERED and domestic8(1)service gates; not all foreign debits; The base | MWSTG45(1)(a) | https://www.gesetze.li/konso/pdf/2009330000 | Dienstleistungen, deren Ort sich nach Art. 8 Abs. 1 im Inland befindet | 2026-10-30 |
 | LI-VAT-025 | Article10taxpayeracquisitionwithout10000threshold; Rates, bands and thresholds / The base | MWSTG45(2)(a) | https://www.gesetze.li/konso/pdf/2009330000 | a) nach Art. 10 steuerpflichtig ist; oder | 2026-10-30 |
 | LI-VAT-026 | OtherrecipientsannualqualifyingacquisitionsSTRICTLYOVER10000; Rates, bands and thresholds / The base | MWSTG45(2)(b) | https://www.gesetze.li/konso/pdf/2009330000 | b) im Kalenderjahr solche Leistungen für mehr als 10 000 Franken bezieht.95 | 2026-10-30 |
 | LI-VAT-027 | Acquisitiontelecom/electronicconsumerandotherproperty/energy/emissioncategoriesseparate; The base | MWSTG45(1) | https://www.gesetze.li/konso/pdf/2009330000 | Ausnahme von Telekommunikations- oder elektronischen Dienstleis | 2026-10-30 |
@@ -87,53 +87,53 @@ Guide SHA256 `83ed049ad9c373473494f2767b0bd5f373552db647a6ce66107fa276321740e8`.
 
 | Old unit | Topic beginning | Destination |
 |---|---|---|
-| OLD-001 | --- name: liechtenstein-vat description: >   Prepare 2026 Liechtenstein VAT workpapers for ordinary registered | Frontmatter retained; version 2.2 to 2.3 and last_updated to 2026-10-30 only; protected keys checked byte-for-byte. |
-| OLD-002 | # Liechtenstein VAT preparation v2.2 | Heading version updated to v2.3 in step with frontmatter. |
-| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | currentGuide line27 |
-| OLD-004 | ## Who this applies to | currentGuide line31 |
-| OLD-005 | Use this 2026 source-cited draft for an ordinary business whose VAT affairs belong to the Liechtenstein Tax Ad | currentGuide line33 |
-| OLD-006 | The earlier Guide's merchant-name classification, unknown-country/rate defaults and universal Swiss-portal ins | currentGuide line35 |
+| OLD-001 | --- name: liechtenstein-vat description: >   Prepare 2026 Liechtenstein VAT workpapers for ordinary registered | Frontmatter retained; version 2.2 to 2.4 and last_updated to 2026-10-30 only; protected keys checked byte-for-byte. |
+| OLD-002 | # Liechtenstein VAT preparation v2.2 | Heading version updated to v2.4 in step with frontmatter. |
+| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open. |
+| OLD-004 | ## Who this applies to | Current Guide line29 |
+| OLD-005 | Use this 2026 source-cited draft for an ordinary business whose VAT affairs belong to the Liechtenstein Tax Ad | Current Guide line31 |
+| OLD-006 | The earlier Guide's merchant-name classification, unknown-country/rate defaults and universal Swiss-portal ins | Current Guide line33 |
 | OLD-007 | ## Rates, threshold and authority screen | Rates, bands and thresholds; authority allocation moved intact to Cross-border points. |
-| OLD-008 | / Item / Rule or 2026 figure / Primary source / | currentGuide line39 |
-| OLD-009 | /---/---/---/ | currentGuide line40 |
-| OLD-010 | / Normal rate / 8.1% / MWSTG article 25(1); [rate page][rates] / | currentGuide line41 |
-| OLD-011 | / Reduced rate / 2.6% for statutory categories / Article 25(2); [rate page][rates] / | currentGuide line42 |
-| OLD-012 | / Accommodation / 3.8% for qualifying accommodation, including breakfast / Article 25(4) / | currentGuide line43 |
-| OLD-013 | / Ordinary small-business exemption / Annual worldwide relevant turnover **less than CHF 100,000**, excluding  | currentGuide line44 |
-| OLD-014 | / Specified nonprofit bodies / Separate **less than CHF 250,000** test / Article 10(2)(c), not every business  | currentGuide line45 |
-| OLD-015 | / Registered domestic taxpayer: acquisition tax / Assess each qualifying acquisition; no CHF 10,000 exemption  | currentGuide line46 |
-| OLD-016 | / Recipient not already liable under article 10 / Acquisition-tax screen for qualifying acquisitions **over CH | currentGuide line47 |
+| OLD-008 | / Item / Rule or 2026 figure / Primary source / | Current Guide line37 |
+| OLD-009 | /---/---/---/ | Current Guide line38 |
+| OLD-010 | / Normal rate / 8.1% / MWSTG article 25(1); [rate page][rates] / | Current Guide line39 |
+| OLD-011 | / Reduced rate / 2.6% for statutory categories / Article 25(2); [rate page][rates] / | Current Guide line40 |
+| OLD-012 | / Accommodation / 3.8% for qualifying accommodation, including breakfast / Article 25(4) / | Current Guide line41 |
+| OLD-013 | / Ordinary small-business exemption / Annual worldwide relevant turnover **less than CHF 100,000**, excluding  | Current Guide line42 |
+| OLD-014 | / Specified nonprofit bodies / Separate **less than CHF 250,000** test / Article 10(2)(c), not every business  | Current Guide line43 |
+| OLD-015 | / Registered domestic taxpayer: acquisition tax / Assess each qualifying acquisition; no CHF 10,000 exemption  | Current Guide line44 |
+| OLD-016 | / Recipient not already liable under article 10 / Acquisition-tax screen for qualifying acquisitions **over CH | Current Guide line45 |
 | OLD-017 | These tests do not alone establish liability: review the foreign-supplier, domestic/foreign-only and exempt-ac | Rates, bands and thresholds retains this full article10/14 paragraph and adds actual article10(2)/(2a) supply-mix gates. |
-| OLD-018 | For a foreign enterprise established outside Liechtenstein/Switzerland, the authority says an existing Swiss V | currentGuide line117 |
+| OLD-018 | For a foreign enterprise established outside Liechtenstein/Switzerland, the authority says an existing Swiss V | Current Guide line115 |
 | OLD-019 | ## Build the transaction workpaper | The base retains all six transaction steps, followed by new input-allocation/use-change method. |
-| OLD-020 | For every line retain seller and recipient, registration details, supply type and date, goods movement or rece | currentGuide line60 |
-| OLD-021 | 1. **Find the supply and place.** Articles 7–8 control goods and services. Article 8(1) normally looks to the  | currentGuide line62 |
+| OLD-020 | For every line retain seller and recipient, registration details, supply type and date, goods movement or rece | Current Guide line58 |
+| OLD-021 | 1. **Find the supply and place.** Articles 7–8 control goods and services. Article 8(1) normally looks to the  | Current Guide line60 |
 | OLD-022 | ## Periods, filing, payment and correction | Deadlines and filing retains periods, registration, returns, payment and correction; old sanctions moved to Penalties and interest. |
 | OLD-023 | - Article 35 provides quarterly periods, half-years for the net-tax method, and application routes for monthly | Deadlines and filing retains all four bullets and adds the actual acquisition-only eMWST process. The old77/86 sanctions bullet is retained in Penalties and interest, supplemented by2026 rates and thresholds. |
 | OLD-024 | ## Worked controls | Original four cases retained in current narrative and exact executable annex; gross case also remains executable in Two worked examples that recompute. |
-| OLD-025 | Amounts are hypothetical unless expressly identified otherwise. A passing calculation establishes neither clas | currentGuide line121 |
-| OLD-026 | ### VAT-inclusive ordinary domestic invoice | currentGuide line123 |
-| OLD-027 | Assume an established domestic standard-rate taxable supply for CHF 10,810 gross. The customer country/name al | currentGuide line125 |
-| OLD-028 | ```oa-check name: Liechtenstein assumed standard VAT inclusive invoice inputs:   established_gross_price: 1081 | currentGuide line127 |
-| OLD-029 | ### Qualifying reduced goods and accommodation | currentGuide line82 |
-| OLD-030 | Assume separately classified domestic supplies: CHF 1,000 net qualifying reduced-rate goods and CHF 200 net qu | currentGuide line84 |
+| OLD-025 | Amounts are hypothetical unless expressly identified otherwise. A passing calculation establishes neither clas | Current Guide line119 |
+| OLD-026 | ### VAT-inclusive ordinary domestic invoice | Current Guide line121 |
+| OLD-027 | Assume an established domestic standard-rate taxable supply for CHF 10,810 gross. The customer country/name al | Current Guide line123 |
+| OLD-028 | ```oa-check name: Liechtenstein assumed standard VAT inclusive invoice inputs:   established_gross_price: 1081 | Current Guide line125 |
+| OLD-029 | ### Qualifying reduced goods and accommodation | Current Guide line80 |
+| OLD-030 | Assume separately classified domestic supplies: CHF 1,000 net qualifying reduced-rate goods and CHF 200 net qu | Current Guide line82 |
 | OLD-031 | ```oa-check name: Liechtenstein assumed reduced goods and accommodation rates inputs:   established_reduced_ne | Originalannex exact;all4substantivecasesremaincurrent,originalgrosscasecurrentexecutable |
-| OLD-032 | ### Acquisition tax with supported partial input entitlement | currentGuide line88 |
-| OLD-033 | Assume an article-10 registered recipient, an established domestic article 8(1) service from a qualifying unre | currentGuide line90 |
+| OLD-032 | ### Acquisition tax with supported partial input entitlement | Current Guide line86 |
+| OLD-033 | Assume an article-10 registered recipient, an established domestic article 8(1) service from a qualifying unre | Current Guide line88 |
 | OLD-034 | ```oa-check name: Liechtenstein assumed acquisition tax with partial input entitlement inputs:   established_s | Originalannex exact;all4substantivecasesremaincurrent,originalgrosscasecurrentexecutable |
-| OLD-035 | ### Invoice food versus restaurant classification | currentGuide line94 |
-| OLD-036 | The same CHF 500 net food value gives CHF 13 at 2.6% only on established qualifying goods/takeaway facts, vers | currentGuide line96 |
+| OLD-035 | ### Invoice food versus restaurant classification | Current Guide line92 |
+| OLD-036 | The same CHF 500 net food value gives CHF 13 at 2.6% only on established qualifying goods/takeaway facts, vers | Current Guide line94 |
 | OLD-037 | ```oa-check name: Liechtenstein assumed food supply classification comparison inputs:   established_net_price: | Originalannex exact;all4substantivecasesremaincurrent,originalgrosscasecurrentexecutable |
 | OLD-038 | ## Ask and refer | Ask the client first replaces the heading only. |
 | OLD-039 | Obtain the registration/authority decision, approved method/period, portal representation, invoices, contracts | Ask the client first retains every requested fact and referral; interest route now supplied under Penalties and interest, with exact day-count and actual filing still explicitly unresolved. |
 | OLD-040 | ## Sources and read limits | Sources replaces the heading only. |
 | OLD-041 | Read 24 October 2026: | Sources distinguishes historical24October reads from statutory and selected browser30October reads. |
 | OLD-042 | - [Liechtenstein MWSTG, consolidated 1 January 2026][law]: selected articles 3, 7–8, 10–14, 25–31, 35–38, 45–4 | Sources retains every original law/admin URL, preserves historical read/transport limitations, and separately lists30October ordinance/amendment and selected browser observations. |
-| OLD-043 | [law]: https://www.gesetze.li/konso/pdf/2009330000 [portal]: https://www.llv.li/de/landesverwaltung/steuerverw | currentGuide line181 |
-| OLD-044 | <!-- openaccountants-cta-block --> | currentGuide line188 |
-| OLD-045 | --- | currentGuide line1 |
-| OLD-046 | ## Talk to an accountant | currentGuide line192 |
-| OLD-047 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com). | currentGuide line194 |
+| OLD-043 | [law]: https://www.gesetze.li/konso/pdf/2009330000 [portal]: https://www.llv.li/de/landesverwaltung/steuerverw | Current Guide line178 |
+| OLD-044 | <!-- openaccountants-cta-block --> | Current Guide line185 |
+| OLD-045 | --- | Current Guide line1 |
+| OLD-046 | ## Talk to an accountant | Current Guide line189 |
+| OLD-047 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com). | Current Guide line191 |
 
 ## Explicit successor map
 

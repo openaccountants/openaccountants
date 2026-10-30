@@ -1,7 +1,7 @@
 # Figure and scope ledger: li-tax-overview
 
 WRITER LEDGER, not independent review. Every original topic is mapped below. Original full text/unit hashes are retained in JSON and the predecessor file. Source excerpts are explicitly labelled; no private filing or professional attestation asserted.
-Current Guide SHA256: `cceeca6ee4cdb2ba6f5164da3836efebf72430b4f6046b8b059acd31449e4219`.
+Current Guide SHA256: `62eeb9200e1cf20bb32cc52aa20402126a48bb66ddae74178b2f972e8e86e83a`.
 
 | ID | Rule/figure and section | Act/article | Official URL or repository evidence | Exact original-language quote or workflow classification | Read date |
 |---|---|---|---|---|---|
@@ -23,7 +23,7 @@ Current Guide SHA256: `cceeca6ee4cdb2ba6f5164da3836efebf72430b4f6046b8b059acd314
 |---|---|---|
 | OLD-001 | --- name: li-tax-overview description: >   Route 2026 Liechtenstein tax questions to the applicable source Gui | Metadata/title version0.2 to0.3 and date30October; protected fields and CTA unchanged |
 | OLD-002 | # Liechtenstein tax overview v0.2 | Metadata/title version0.2 to0.3 and date30October; protected fields and CTA unchanged |
-| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | Current Guide line27 |
+| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open. |
 | OLD-004 | ## Start with the question | Current Guide line29 |
 | OLD-005 | This is a router for the 2026 source-cited country draft, not a standalone tax calculation. Establish legal pe | Current Guide line31 |
 | OLD-006 | / Work / Read first / Key boundary / | Current Guide line33 |

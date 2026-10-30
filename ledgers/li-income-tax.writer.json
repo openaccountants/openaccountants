@@ -1,7 +1,7 @@
 {
   "status": "WRITER LEDGER; FULL INDEPENDENT COUNTRY REVIEW PENDING",
   "guide": "skills/international/liechtenstein/li-income-tax.md",
-  "guide_sha256": "4d669a8f4f9f845f17081898fe64d1abf85c9c8b5fe7d331b6445068576aa775",
+  "guide_sha256": "43dbf99f43e4763b7d8e1efc962160f82bc562cdc5a8fbf591cb47ec90f4e96f",
   "rules": [
     {
       "id": "LI-IND-001",
@@ -1559,8 +1559,8 @@
       "old_text": "Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.",
       "old_sha256": "8e7c827e86c5cc5b9c1043e1196153b994c25a6491ecc03df91b3f07ed5970df",
       "old_section": "Metadata",
-      "exact_retained": true,
-      "destination": "Current Guide line27"
+      "exact_retained": false,
+      "destination": "Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open."
     },
     {
       "id": "OLD-004",
@@ -1568,7 +1568,7 @@
       "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
       "old_section": "Who this applies to",
       "exact_retained": true,
-      "destination": "Current Guide line31"
+      "destination": "Current Guide line29"
     },
     {
       "id": "OLD-005",
@@ -1576,7 +1576,7 @@
       "old_sha256": "20e92b58b43398fc7e4bf335c7e0af1fcb6f1ef7d737d7d0c30f9a1ae6e6f4ff",
       "old_section": "Who this applies to",
       "exact_retained": true,
-      "destination": "Current Guide line33"
+      "destination": "Current Guide line31"
     },
     {
       "id": "OLD-006",
@@ -1608,7 +1608,7 @@
       "old_sha256": "df9b1c3a7afe14d511624f95dff5c38fbcd80f24e74e23ffa891419b0d7d61b0",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line37"
+      "destination": "Current Guide line35"
     },
     {
       "id": "OLD-010",
@@ -1616,7 +1616,7 @@
       "old_sha256": "edee51e4d929ec7f1f7734c5acf1bd60a472c7e01ecce89e8dae50636792670f",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line39"
+      "destination": "Current Guide line37"
     },
     {
       "id": "OLD-011",
@@ -1624,7 +1624,7 @@
       "old_sha256": "7ee0720b6449d4bd3bb970672129e0c0aa68e756981f20dc82479be9e163149e",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line41"
+      "destination": "Current Guide line39"
     },
     {
       "id": "OLD-012",
@@ -1632,7 +1632,7 @@
       "old_sha256": "da0d2939417bd1f8f9b73f8ea5658a09eef3562eb292f83e7401a414143a9775",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line42"
+      "destination": "Current Guide line40"
     },
     {
       "id": "OLD-013",
@@ -1640,7 +1640,7 @@
       "old_sha256": "a22e40a3ff4133c435d450d8081e94edadb225c9f5a5e97dcde3d2c21058ebcc",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line43"
+      "destination": "Current Guide line41"
     },
     {
       "id": "OLD-014",
@@ -1648,7 +1648,7 @@
       "old_sha256": "e2d48b62afba93d4d12b88724930e54ae29a4b17290adceee5a0d21fa1255b2d",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line44"
+      "destination": "Current Guide line42"
     },
     {
       "id": "OLD-015",
@@ -1656,7 +1656,7 @@
       "old_sha256": "13fbc1520776a59d707c9a3af4ff15df6fbe6dbe8601292cf29d293f40981321",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line45"
+      "destination": "Current Guide line43"
     },
     {
       "id": "OLD-016",
@@ -1664,7 +1664,7 @@
       "old_sha256": "9d0e38c9218709a89dc6f0c74912988b570e74d3ed8b2365a6ac135a48634cd5",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line46"
+      "destination": "Current Guide line44"
     },
     {
       "id": "OLD-017",
@@ -1672,7 +1672,7 @@
       "old_sha256": "fef61fdf46b9be3c0a57957f75e802391fe7baa459fef3a21149255d415acada",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line47"
+      "destination": "Current Guide line45"
     },
     {
       "id": "OLD-018",
@@ -1680,7 +1680,7 @@
       "old_sha256": "1915d73e17514fdac7bc12f51f32a10ac723b8a5ecb75005e572cb298f8f1420",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line48"
+      "destination": "Current Guide line46"
     },
     {
       "id": "OLD-019",
@@ -1688,7 +1688,7 @@
       "old_sha256": "353800c53ba1f2107243d339166d4414f957f2c32d017f829186119143aa28fb",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line49"
+      "destination": "Current Guide line47"
     },
     {
       "id": "OLD-020",
@@ -1696,7 +1696,7 @@
       "old_sha256": "93e4da4fc4ae643896819443ad3fbf4e59293d627a16172a690c16cbc94b8d51",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line51"
+      "destination": "Current Guide line49"
     },
     {
       "id": "OLD-021",
@@ -1704,7 +1704,7 @@
       "old_sha256": "4842d338272bf12b70e79e404653f8ef9452a9ff89c9e087508d10fabd144316",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line53"
+      "destination": "Current Guide line51"
     },
     {
       "id": "OLD-022",
@@ -1712,7 +1712,7 @@
       "old_sha256": "0f2b789fe52435e884ee1d8a9ac7fbff2b43ba01b17a0fb4d23c7fa433741d35",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line55"
+      "destination": "Current Guide line53"
     },
     {
       "id": "OLD-023",
@@ -1720,7 +1720,7 @@
       "old_sha256": "6e0c3f3e2c7e5f102fc4335bc017008e155cab8e3d5c0dc86e303a7c7d58a7c2",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line57"
+      "destination": "Current Guide line55"
     },
     {
       "id": "OLD-024",
@@ -1728,7 +1728,7 @@
       "old_sha256": "4199ba454d6d3ae83657120c2bb6bd674eefc0dd7d3cd4cc844171dc6725135b",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line58"
+      "destination": "Current Guide line56"
     },
     {
       "id": "OLD-025",
@@ -1736,7 +1736,7 @@
       "old_sha256": "b70a1324756b5968d89c25c005a489282afac11d579d12bb0b08b75b6c99486a",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line59"
+      "destination": "Current Guide line57"
     },
     {
       "id": "OLD-026",
@@ -1744,7 +1744,7 @@
       "old_sha256": "1890d4d163622456aa1d0f82724a754e66250ba1b24d656fee3bc538716396dc",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line60"
+      "destination": "Current Guide line58"
     },
     {
       "id": "OLD-027",
@@ -1752,7 +1752,7 @@
       "old_sha256": "18d4342798261407f2cda94671778f037c889d4a28e846ea91b07491050053f1",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line61"
+      "destination": "Current Guide line59"
     },
     {
       "id": "OLD-028",
@@ -1760,7 +1760,7 @@
       "old_sha256": "0f74b6b2ca7791c9b6e054350e07cd1489928e0cb2b55c292dbe9332e2d8a8b4",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line62"
+      "destination": "Current Guide line60"
     },
     {
       "id": "OLD-029",
@@ -1768,7 +1768,7 @@
       "old_sha256": "cec802fe9215bff65acbf5af35ba9535284eba40c1035acb14e99a0a38652b19",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line63"
+      "destination": "Current Guide line61"
     },
     {
       "id": "OLD-030",
@@ -1776,7 +1776,7 @@
       "old_sha256": "447137e4c0b74e06df9035f8d372a7e5d7bc5e0e922b0a0ca3359e2089bb5067",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line64"
+      "destination": "Current Guide line62"
     },
     {
       "id": "OLD-031",
@@ -1784,7 +1784,7 @@
       "old_sha256": "393a64d920146e5fc3342943c00ca45350cf1b95b5ac6566f392cbd8d0f152d3",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line65"
+      "destination": "Current Guide line63"
     },
     {
       "id": "OLD-032",
@@ -1792,7 +1792,7 @@
       "old_sha256": "15a09d3ca782c4d235777b208409cf11d0625bd50f52d86a82a59f5dbc68609f",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line66"
+      "destination": "Current Guide line64"
     },
     {
       "id": "OLD-033",
@@ -1800,7 +1800,7 @@
       "old_sha256": "68bb62b343c5b30b542bf597821fab73cd96f3f0cb8ee49917f3e1bd6dd12409",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line67"
+      "destination": "Current Guide line65"
     },
     {
       "id": "OLD-034",
@@ -1808,7 +1808,7 @@
       "old_sha256": "e1ab7fccf7ba83a4fb08e9d7f89238d1b0ed59a776df2f21c3950501def1783d",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line69"
+      "destination": "Current Guide line67"
     },
     {
       "id": "OLD-035",
@@ -1816,7 +1816,7 @@
       "old_sha256": "6e0c3f3e2c7e5f102fc4335bc017008e155cab8e3d5c0dc86e303a7c7d58a7c2",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line57"
+      "destination": "Current Guide line55"
     },
     {
       "id": "OLD-036",
@@ -1824,7 +1824,7 @@
       "old_sha256": "4199ba454d6d3ae83657120c2bb6bd674eefc0dd7d3cd4cc844171dc6725135b",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line58"
+      "destination": "Current Guide line56"
     },
     {
       "id": "OLD-037",
@@ -1832,7 +1832,7 @@
       "old_sha256": "7e3578e00b444a855149fb67a360f9efadc4492cb07f08ea1726fd22eecdba54",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line73"
+      "destination": "Current Guide line71"
     },
     {
       "id": "OLD-038",
@@ -1840,7 +1840,7 @@
       "old_sha256": "a99bfa125bafb3144d0134804ae174872ac4e25da7f74fe2759602eeb4f1e348",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line74"
+      "destination": "Current Guide line72"
     },
     {
       "id": "OLD-039",
@@ -1848,7 +1848,7 @@
       "old_sha256": "4954e688ca0f0c943df4764898eb7592543c52ce4cba121304d7846b78f47869",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line75"
+      "destination": "Current Guide line73"
     },
     {
       "id": "OLD-040",
@@ -1856,7 +1856,7 @@
       "old_sha256": "808cb55a9a86b041e7b98724910b0b2481ab8d8224dfb9c725682762c17a6c1b",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line76"
+      "destination": "Current Guide line74"
     },
     {
       "id": "OLD-041",
@@ -1864,7 +1864,7 @@
       "old_sha256": "a423ed5b0273980ccb4970636ec49a10aab83abad03fe0bf7f379ff4888df72c",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line77"
+      "destination": "Current Guide line75"
     },
     {
       "id": "OLD-042",
@@ -1872,7 +1872,7 @@
       "old_sha256": "58da7b0002ecae6d4f47a71e58203d3d0edc37332d2495a8388c60eaebe7108f",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line78"
+      "destination": "Current Guide line76"
     },
     {
       "id": "OLD-043",
@@ -1880,7 +1880,7 @@
       "old_sha256": "e35743cd449f53858907c3be678c89c84ff46db18f3e56298a1713f3606eee31",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line79"
+      "destination": "Current Guide line77"
     },
     {
       "id": "OLD-044",
@@ -1888,7 +1888,7 @@
       "old_sha256": "c977439e5b7d8f5c08a45327e64fdebed599d017f267239cf46128b09220538f",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line80"
+      "destination": "Current Guide line78"
     },
     {
       "id": "OLD-045",
@@ -1896,7 +1896,7 @@
       "old_sha256": "2460583b2c2577277379c958e30b8ba707fcfb55f37ddd8004ac67e3c368c4fa",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line81"
+      "destination": "Current Guide line79"
     },
     {
       "id": "OLD-046",
@@ -1904,7 +1904,7 @@
       "old_sha256": "af4ad243002c98b6ded06cb37513348eb92167c90ab199e6b054e33027debf52",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line83"
+      "destination": "Current Guide line81"
     },
     {
       "id": "OLD-047",
@@ -1912,7 +1912,7 @@
       "old_sha256": "ba8d89203b0f560ac0b7bf9163aa96f3ee2fa3bb44c2dff2eeba2724cecd4824",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line85"
+      "destination": "Current Guide line83"
     },
     {
       "id": "OLD-048",
@@ -1920,7 +1920,7 @@
       "old_sha256": "4199ba454d6d3ae83657120c2bb6bd674eefc0dd7d3cd4cc844171dc6725135b",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line58"
+      "destination": "Current Guide line56"
     },
     {
       "id": "OLD-049",
@@ -1928,7 +1928,7 @@
       "old_sha256": "b91dfb4992fbc4bb761f118d8307dd42166dfff8d0da679ed9d367f2af8f661e",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line87"
+      "destination": "Current Guide line85"
     },
     {
       "id": "OLD-050",
@@ -1936,7 +1936,7 @@
       "old_sha256": "837fffae0dab6cff9fe4aa1ffeb9251874f5418793aaac714cecd071fb3f5bb3",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line88"
+      "destination": "Current Guide line86"
     },
     {
       "id": "OLD-051",
@@ -1944,7 +1944,7 @@
       "old_sha256": "e733381182d5d15800e07502604afc295d9059eea3694f43d0ac6595777d4ec9",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line89"
+      "destination": "Current Guide line87"
     },
     {
       "id": "OLD-052",
@@ -1952,7 +1952,7 @@
       "old_sha256": "d331e555b9d1a4c08efc8da32e0e440d6cf4c186f5320097f458f83923f8732f",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line90"
+      "destination": "Current Guide line88"
     },
     {
       "id": "OLD-053",
@@ -1960,7 +1960,7 @@
       "old_sha256": "6cf7f8a52672d6acbec3a6dacca27e31eb81aebca73d2c18db6355a9cc049dcf",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line91"
+      "destination": "Current Guide line89"
     },
     {
       "id": "OLD-054",
@@ -1968,7 +1968,7 @@
       "old_sha256": "83445313c247ee4711f8c9add79fbdeba894acb7da009c3ac9900f6958df2c8a",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line92"
+      "destination": "Current Guide line90"
     },
     {
       "id": "OLD-055",
@@ -1976,7 +1976,7 @@
       "old_sha256": "80b456b3d035cacda46ff2a7e235b88322ad3a8b0c255dfc40c44cc884904b48",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line93"
+      "destination": "Current Guide line91"
     },
     {
       "id": "OLD-056",
@@ -1984,7 +1984,7 @@
       "old_sha256": "a9380e5c552fb44f5306654027f56a125958dc19feac66342788eac58162be18",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line94"
+      "destination": "Current Guide line92"
     },
     {
       "id": "OLD-057",
@@ -1992,7 +1992,7 @@
       "old_sha256": "004435a6739dffd45e2108cfbc440325a69e469e26a747a3901988fb00f0efea",
       "old_section": "2026 state formulas",
       "exact_retained": true,
-      "destination": "Current Guide line95"
+      "destination": "Current Guide line93"
     },
     {
       "id": "OLD-058",
@@ -2008,7 +2008,7 @@
       "old_sha256": "6c2a6b267901da3e0176236d8ee7d260e2d82d0dc5e18dc93c661b1eb580f2c2",
       "old_section": "Municipality, business losses and payroll credits",
       "exact_retained": true,
-      "destination": "Current Guide line160"
+      "destination": "Current Guide line158"
     },
     {
       "id": "OLD-060",
@@ -2016,7 +2016,7 @@
       "old_sha256": "53219ebca15e66977fdb2a2b2aa63c59f508828828f6a02bf25f83f8fc69d393",
       "old_section": "Municipality, business losses and payroll credits",
       "exact_retained": true,
-      "destination": "Current Guide line162"
+      "destination": "Current Guide line160"
     },
     {
       "id": "OLD-061",
@@ -2024,7 +2024,7 @@
       "old_sha256": "dc21c5bf1cc6affd4ab151c934240299f9404f36cf942a244a69033d5a14d777",
       "old_section": "Municipality, business losses and payroll credits",
       "exact_retained": true,
-      "destination": "Current Guide line164"
+      "destination": "Current Guide line162"
     },
     {
       "id": "OLD-062",
@@ -2032,7 +2032,7 @@
       "old_sha256": "e66bfc25906f3c879055c3639068f793ab0bf5fde6f8f143e2c84feb60821406",
       "old_section": "Municipality, business losses and payroll credits",
       "exact_retained": true,
-      "destination": "Current Guide line166"
+      "destination": "Current Guide line164"
     },
     {
       "id": "OLD-063",
@@ -2048,7 +2048,7 @@
       "old_sha256": "7f6f0584cc8c2789176b3d1aa7958d3a080967a9559261cefbdaf4d1fbd2b76b",
       "old_section": "Municipality, business losses and payroll credits",
       "exact_retained": true,
-      "destination": "Current Guide line171"
+      "destination": "Current Guide line169"
     },
     {
       "id": "OLD-065",
@@ -2064,7 +2064,7 @@
       "old_sha256": "b3e344771193d72e8131a474e49f8948eac7ee84b8f338c807ebaaae0c8d6ec9",
       "old_section": "Filing, payment and sanctions",
       "exact_retained": true,
-      "destination": "Current Guide line186"
+      "destination": "Current Guide line184"
     },
     {
       "id": "OLD-067",
@@ -2096,7 +2096,7 @@
       "old_sha256": "20a6585438324192acd6036b34b7c31f432ee322fdf048966e474b846a7528bf",
       "old_section": "Worked controls",
       "exact_retained": true,
-      "destination": "Current Guide line202"
+      "destination": "Current Guide line200"
     },
     {
       "id": "OLD-071",
@@ -2104,7 +2104,7 @@
       "old_sha256": "6f01d58431c4b4c67d2e79ffacb3508448388764b90e9d0e91339f2f18cb9fbc",
       "old_section": "Worked controls",
       "exact_retained": true,
-      "destination": "Current Guide line204"
+      "destination": "Current Guide line202"
     },
     {
       "id": "OLD-072",
@@ -2112,7 +2112,7 @@
       "old_sha256": "a0ff61915355f5ae87a015cf701041cc30cdfd669a93b92bf5c3c287cba6f510",
       "old_section": "Worked controls",
       "exact_retained": true,
-      "destination": "Current Guide line206"
+      "destination": "Current Guide line204"
     },
     {
       "id": "OLD-073",
@@ -2224,7 +2224,7 @@
       "old_sha256": "78ab222e21e1ba0ae881dfba6f0b5e6a3e184916c738adba13a7e0aae8971f0c",
       "old_section": "Ask and refer",
       "exact_retained": true,
-      "destination": "Current Guide line285"
+      "destination": "Current Guide line283"
     },
     {
       "id": "OLD-087",
@@ -2232,7 +2232,7 @@
       "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
       "old_section": "Sources",
       "exact_retained": true,
-      "destination": "Current Guide line287"
+      "destination": "Current Guide line285"
     },
     {
       "id": "OLD-088",
@@ -2248,7 +2248,7 @@
       "old_sha256": "1b829c564472f1d009c4a872321c0c2683a8ba29901cc5cdce3d5bbd9631e51a",
       "old_section": "Sources",
       "exact_retained": true,
-      "destination": "Current Guide line291"
+      "destination": "Current Guide line289"
     },
     {
       "id": "OLD-090",
@@ -2256,7 +2256,7 @@
       "old_sha256": "57e042bbf470812682efeef9d5959fa7262dfabba4dca697df1771874a2215ce",
       "old_section": "Sources",
       "exact_retained": true,
-      "destination": "Current Guide line299"
+      "destination": "Current Guide line297"
     },
     {
       "id": "OLD-091",
@@ -2264,7 +2264,7 @@
       "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "old_section": "Sources",
       "exact_retained": true,
-      "destination": "Current Guide line303"
+      "destination": "Current Guide line301"
     },
     {
       "id": "OLD-092",
@@ -2280,7 +2280,7 @@
       "old_sha256": "2c053967fa7ab3e0318ae212a61d5f13965c474e336848bbc77f5976214e2dd9",
       "old_section": "Talk to an accountant",
       "exact_retained": true,
-      "destination": "Current Guide line307"
+      "destination": "Current Guide line305"
     },
     {
       "id": "OLD-094",
@@ -2288,7 +2288,7 @@
       "old_sha256": "24f7c27dd7f52c15f0a5a162ce9ed615250f525c513ffb87020f75112cb00ae0",
       "old_section": "Talk to an accountant",
       "exact_retained": true,
-      "destination": "Current Guide line309"
+      "destination": "Current Guide line307"
     }
   ],
   "explicit_successor_map": {

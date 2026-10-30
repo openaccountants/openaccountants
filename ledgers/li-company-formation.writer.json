@@ -1,7 +1,7 @@
 {
   "status": "WRITER LEDGER; FULL INDEPENDENT COUNTRY REVIEW PENDING",
   "guide": "skills/international/liechtenstein/li-company-formation.md",
-  "guide_sha256": "d03528182c8b1505f20de300c466cd616c3ca2d65e928f0998ec235dae295aab",
+  "guide_sha256": "57e40ab3e2c0224955cc23c50b2989040022b7816ac486f5a15564e67f1422a3",
   "rules": [
     {
       "id": "LI-FORM-001",
@@ -649,8 +649,8 @@
       "old_text": "Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.",
       "old_sha256": "8e7c827e86c5cc5b9c1043e1196153b994c25a6491ecc03df91b3f07ed5970df",
       "old_section": "Metadata",
-      "exact_retained": true,
-      "destination": "Current Guide line27"
+      "exact_retained": false,
+      "destination": "Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open."
     },
     {
       "id": "OLD-004",

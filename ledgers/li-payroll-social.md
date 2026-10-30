@@ -2,7 +2,7 @@
 
 WRITER LEDGER; NOT INDEPENDENTLY REVIEWED; COUNTRY PARTIAL
 
-Guide SHA256 `882888edacfe0b8a4a7543e52201a8e0602b1873a3d25e63499d6a3b9456730c`. Read date30October2026. Every original2026paragraph/table/control is mapped below; older2025 approximate topics have explicit dispositions. No independent PASS is claimed.
+Guide SHA256 `06fcdc4b097df6416d284f4200fbdcd4e09f8cca62530df54da5229f8fbef1bf`. Read date30October2026. Every original2026paragraph/table/control is mapped below; older2025 approximate topics have explicit dispositions. No independent PASS is claimed.
 
 Whitespace/linewrapping and PDF discretionary hyphens only; web-reader line prefixes removed. Quotes are original German, not translated. Observations are fetched tool text where direct HTTP blocked, explicitly not rawPDF/HTML.
 
@@ -183,65 +183,65 @@ Whitespace/linewrapping and PDF discretionary hyphens only; web-reader line pref
 |---|---|---|
 | OLD-001 | --- name: li-payroll-social description: >   Prepare 2026 Liechtenstein payroll and contribution wor | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
 | OLD-002 | # Liechtenstein payroll and social contributions v0.2 | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
-| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack revi | current Guide line 28 |
-| OLD-004 | ## Who this applies to | current Guide line 32 |
-| OLD-005 | Use this 2026 source-cited draft for ordinary employees subject to Liechtenstein payroll and insuran | current Guide line 34 |
+| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack revi | Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open. |
+| OLD-004 | ## Who this applies to | Current Guide line30 |
+| OLD-005 | Use this 2026 source-cited draft for ordinary employees subject to Liechtenstein payroll and insuran | Current Guide line32 |
 | OLD-006 | ## Rates and bases | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
-| OLD-007 | The [AHV-IV-FAK bulletin effective 1 January 2026][contributions], sections 5–6, gives these percent | current Guide line 38 |
-| OLD-008 | / Contribution / Employee / Employer / | current Guide line 40 |
-| OLD-009 | /---/---:/---:/ | current Guide line 41 |
-| OLD-010 | / AHV / 4.025% / 4.225% / | current Guide line 42 |
-| OLD-011 | / IV / 0.675% / 0.675% / | current Guide line 43 |
-| OLD-012 | / FAK / 0.200% / 1.900% / | current Guide line 44 |
-| OLD-013 | / Administration, VK / none / 0.585% / | current Guide line 45 |
-| OLD-014 | / Total above, excluding ALV / 4.900% / 7.385% / | current Guide line 46 |
-| OLD-015 | / ALV / 0.500% / 0.500% / | current Guide line 47 |
-| OLD-016 | ALV is capped at CHF 126,000 yearly **per employment**. For part-year employment, the bulletin uses  | current Guide line 49 |
-| OLD-017 | For working persons, contributions start on 1 January of the year they turn 18. The bulletin separat | current Guide line 51 |
-| OLD-018 | ## Wage withholding is a separate calculation | current Guide line 135 |
-| OLD-019 | Source withholding applies to resident employment/replacement income too. Do not classify a resident | current Guide line 137 |
-| OLD-020 | The bulletin's **maximum ordinary withholding schedule** uses expected annual gross remuneration, an | current Guide line 139 |
-| OLD-021 | / Expected annual gross CHF / Single maximum / Expected annual gross CHF / Married maximum / | current Guide line 141 |
-| OLD-022 | /---/---:/---/---:/ | current Guide line 142 |
-| OLD-023 | / Up to 40,000 / 4% / Up to 80,000 / 4% / | current Guide line 143 |
-| OLD-024 | / 40,000–60,000 / 5% / 80,000–140,000 / 5% / | current Guide line 144 |
-| OLD-025 | / 60,000–80,000 / 7% / 140,000–200,000 / 7% / | current Guide line 145 |
-| OLD-026 | / 80,000–120,000 / 9% / 200,000–250,000 / 9% / | current Guide line 146 |
-| OLD-027 | / 120,000–160,000 / 11% / 250,000–350,000 / 11% / | current Guide line 147 |
-| OLD-028 | / 160,000–200,000 / 13% / 350,000–450,000 / 13% / | current Guide line 148 |
-| OLD-029 | / 200,000–300,000 / 15% / 450,000–600,000 / 15% / | current Guide line 149 |
-| OLD-030 | / 300,000–500,000 / 17% / 600,000–1,000,000 / 17% / | current Guide line 150 |
-| OLD-031 | / Above 500,000 / 19% / Above 1,000,000 / 19% / | current Guide line 151 |
-| OLD-032 | The current bulletin exempts qualifying resident pupils, apprentices and students from wage withhold | current Guide line 153 |
-| OLD-033 | For foreign residents, inspect the January 2026 treaty annex and the actual treaty, residence, workd | current Guide line 199 |
+| OLD-007 | The [AHV-IV-FAK bulletin effective 1 January 2026][contributions], sections 5–6, gives these percent | Current Guide line36 |
+| OLD-008 | / Contribution / Employee / Employer / | Current Guide line38 |
+| OLD-009 | /---/---:/---:/ | Current Guide line39 |
+| OLD-010 | / AHV / 4.025% / 4.225% / | Current Guide line40 |
+| OLD-011 | / IV / 0.675% / 0.675% / | Current Guide line41 |
+| OLD-012 | / FAK / 0.200% / 1.900% / | Current Guide line42 |
+| OLD-013 | / Administration, VK / none / 0.585% / | Current Guide line43 |
+| OLD-014 | / Total above, excluding ALV / 4.900% / 7.385% / | Current Guide line44 |
+| OLD-015 | / ALV / 0.500% / 0.500% / | Current Guide line45 |
+| OLD-016 | ALV is capped at CHF 126,000 yearly **per employment**. For part-year employment, the bulletin uses  | Current Guide line47 |
+| OLD-017 | For working persons, contributions start on 1 January of the year they turn 18. The bulletin separat | Current Guide line49 |
+| OLD-018 | ## Wage withholding is a separate calculation | Current Guide line133 |
+| OLD-019 | Source withholding applies to resident employment/replacement income too. Do not classify a resident | Current Guide line135 |
+| OLD-020 | The bulletin's **maximum ordinary withholding schedule** uses expected annual gross remuneration, an | Current Guide line137 |
+| OLD-021 | / Expected annual gross CHF / Single maximum / Expected annual gross CHF / Married maximum / | Current Guide line139 |
+| OLD-022 | /---/---:/---/---:/ | Current Guide line140 |
+| OLD-023 | / Up to 40,000 / 4% / Up to 80,000 / 4% / | Current Guide line141 |
+| OLD-024 | / 40,000–60,000 / 5% / 80,000–140,000 / 5% / | Current Guide line142 |
+| OLD-025 | / 60,000–80,000 / 7% / 140,000–200,000 / 7% / | Current Guide line143 |
+| OLD-026 | / 80,000–120,000 / 9% / 200,000–250,000 / 9% / | Current Guide line144 |
+| OLD-027 | / 120,000–160,000 / 11% / 250,000–350,000 / 11% / | Current Guide line145 |
+| OLD-028 | / 160,000–200,000 / 13% / 350,000–450,000 / 13% / | Current Guide line146 |
+| OLD-029 | / 200,000–300,000 / 15% / 450,000–600,000 / 15% / | Current Guide line147 |
+| OLD-030 | / 300,000–500,000 / 17% / 600,000–1,000,000 / 17% / | Current Guide line148 |
+| OLD-031 | / Above 500,000 / 19% / Above 1,000,000 / 19% / | Current Guide line149 |
+| OLD-032 | The current bulletin exempts qualifying resident pupils, apprentices and students from wage withhold | Current Guide line151 |
+| OLD-033 | For foreign residents, inspect the January 2026 treaty annex and the actual treaty, residence, workd | Current Guide line197 |
 | OLD-034 | ## Preparation and filing method | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
 | OLD-035 | 1. Retain contracts, residence/treaty evidence, birth date, employment dates, work countries, status | Deadlines and filing: predecessor steps1–5 retained; old step6 source/calendar gap replaced by AHVV30/34/35/23 methods in steps6–7, with unresolved contribution interest expressly retained in Penalties and interest. |
 | OLD-036 | ## Other employer costs and sanctions | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
-| OLD-037 | The [health authority's 2026 contribution page][health] sets the monthly employer health-care amount | current Guide line 157 |
-| OLD-038 | SteG article 27 makes the payer liable for underwithholding and requires corrected certification; ar | current Guide line 191 |
+| OLD-037 | The [health authority's 2026 contribution page][health] sets the monthly employer health-care amount | Current Guide line155 |
+| OLD-038 | SteG article 27 makes the payer liable for underwithholding and requires corrected certification; ar | Current Guide line189 |
 | OLD-039 | ## Worked controls | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
-| OLD-040 | These are assumed ordinary covered adult employees; rates and bases must apply before the arithmetic | current Guide line 205 |
-| OLD-041 | ### Full-year employee contributions | current Guide line 207 |
-| OLD-042 | ```oa-check name: Liechtenstein 2026 assumed employee contribution split inputs:   established_annua | retained-original-controls.md, exact old block/prose; substantive case remains in current Guide |
-| OLD-043 | ### Full-year employer contributions with ALV cap | current Guide line 228 |
-| OLD-044 | Assume CHF 150,000 established annual wage, all subject to AHV/IV/FAK/VK, and full-year ALV coverage | current Guide line 230 |
-| OLD-045 | ```oa-check name: Liechtenstein 2026 assumed employer contribution and ALV ceiling inputs:   establi | retained-original-controls.md, exact old block/prose; substantive case remains in current Guide |
-| OLD-046 | ### Part-year ALV cap | current Guide line 167 |
-| OLD-047 | This reproduces the institution's section 6 example: 15 April–28 December gives 254 contribution day | current Guide line 169 |
+| OLD-040 | These are assumed ordinary covered adult employees; rates and bases must apply before the arithmetic | Current Guide line203 |
+| OLD-041 | ### Full-year employee contributions | Current Guide line205 |
+| OLD-042 | ```oa-check name: Liechtenstein 2026 assumed employee contribution split inputs:   established_annua | Current Guide line207 |
+| OLD-043 | ### Full-year employer contributions with ALV cap | Current Guide line226 |
+| OLD-044 | Assume CHF 150,000 established annual wage, all subject to AHV/IV/FAK/VK, and full-year ALV coverage | Current Guide line228 |
+| OLD-045 | ```oa-check name: Liechtenstein 2026 assumed employer contribution and ALV ceiling inputs:   establi | Current Guide line230 |
+| OLD-046 | ### Part-year ALV cap | Current Guide line165 |
+| OLD-047 | This reproduces the institution's section 6 example: 15 April–28 December gives 254 contribution day | Current Guide line167 |
 | OLD-048 | ```oa-check name: Liechtenstein bulletin part year ALV example inputs:   established_contribution_da | retained-original-controls.md, exact old block/prose; substantive case remains in current Guide |
-| OLD-049 | ### Assumed established wage-withholding instruction | current Guide line 173 |
-| OLD-050 | Assume a single resident employee with CHF 90,000 expected full-year gross, no special category/trea | current Guide line 175 |
+| OLD-049 | ### Assumed established wage-withholding instruction | Current Guide line171 |
+| OLD-050 | Assume a single resident employee with CHF 90,000 expected full-year gross, no special category/trea | Current Guide line173 |
 | OLD-051 | ```oa-check name: Liechtenstein assumed confirmed ordinary wage withholding inputs:   established_cu | retained-original-controls.md, exact old block/prose; substantive case remains in current Guide |
 | OLD-052 | ## Ask before preparing and refer when unresolved | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
-| OLD-053 | Establish coverage, contribution dates/wages, residence and treaty status, public/private employment | current Guide line 253 |
-| OLD-054 | ## Sources | current Guide line 255 |
+| OLD-053 | Establish coverage, contribution dates/wages, residence and treaty status, public/private employment | Current Guide line251 |
+| OLD-054 | ## Sources | Current Guide line253 |
 | OLD-055 | Read 24 October 2026, within the sections identified above: | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
-| OLD-056 | - [AHV-IV-FAK 2026 contribution bulletin][contributions], especially 1–6, 7–14. Direct PDF text and  | current Guide line 259 |
-| OLD-057 | [contributions]: https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB | current Guide line 290 |
-| OLD-058 | <!-- openaccountants-cta-block --> | current Guide line 296 |
-| OLD-059 | --- | current Guide line 1 |
-| OLD-060 | ## Talk to an accountant | current Guide line 300 |
-| OLD-061 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountan | current Guide line 302 |
+| OLD-056 | - [AHV-IV-FAK 2026 contribution bulletin][contributions], especially 1–6, 7–14. Direct PDF text and  | Current Guide line257 |
+| OLD-057 | [contributions]: https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB | Current Guide line288 |
+| OLD-058 | <!-- openaccountants-cta-block --> | Current Guide line294 |
+| OLD-059 | --- | Current Guide line1 |
+| OLD-060 | ## Talk to an accountant | Current Guide line298 |
+| OLD-061 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountan | Current Guide line300 |
 
 ## Earlier pre-refresh2025 topics
 

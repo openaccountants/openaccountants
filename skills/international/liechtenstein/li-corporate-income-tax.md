@@ -19,14 +19,12 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.3
+version: 0.4
 ---
 
-# Liechtenstein corporate income tax v0.3
+# Liechtenstein corporate income tax v0.4
 
-Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
-
-The 30 October ordinary equity/liquidity and exemption additions are writer drafts awaiting fresh independent whole-pack review. The historical review is not extended to these changes.
+Historical source/editorial evidence is in the [24 October review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md), confined to its exact predecessor and scope. The [current country review register](../../../ledgers/li-pack-review-evidence/README.md) identifies the 30 October review, repairs and exact-file verification. Named Liechtenstein accountant review remains open.
 
 ## Who this applies to
 
@@ -97,8 +95,11 @@ The [exact original-control annex](../../../ledgers/li-corporate-income-tax-evid
 
 1. Retain incorporation/management, legal-form/status, accounting-period and ownership records; the PGR accounts and trial balance; the detailed adjustment, equity and loss workpapers; income-category/treaty evidence; and the actual filing/payment notices.
 2. SteG article 94 requires a complete, truthful, signed return even without a personal form/notice. SteV article 41 identifies attachments: detailed accounts with comparatives, required auditor/review report, beneficial-owner/related-party loan accounts, provisions/accruals register, profit-allocation resolution and signed completeness confirmation. Its attachment language/currency permissions are not a general waiver of the return's requirements.
-3. Check the current allocated filing deadline. The still-linked March 2012 provisional-tax leaflet gives 1 July as the normal following-year filing date, but is historical administrative evidence; this draft has not verified the 2027 calendar for 2026 income. SteV article 42 permits a reasoned written six-month extension under its request deadline and provisional-payment condition, with a further exceptional route. It is not automatic and does not itself postpone tax payment.
-4. Under SteG article 127 and SteV article 47, reconcile provisional tax based on the submitted return, estimate or last final assessment with the final assessment. The provisional amount is credited; excess is refunded and a shortfall collected. SteG articles 113–114 distinguish legal due date, ordinary 30-day payment period and exceptions. Preserve actual notice/delivery dates before computing interest; the 2012 leaflet's specific calendar is not proof of the current assigned dates.
+3. Check the current allocated filing deadline. The still-linked March 2012 provisional-tax leaflet gives 1 July as the normal following-year filing date, but is historical administrative evidence; this draft has not verified the 2027 calendar for 2026 income. SteV article 42 permits a reasoned written six-month filing extension. Submit the request no later than 30 days after the general maturity date under SteG 113(3); the provisional bill must be paid. A further exceptional request must precede the first extension’s expiry and satisfy its exceptional-justification condition. Keep the actual general-maturity notice and decision. This is not an automatic tax-payment extension.
+
+4. SteV article 42a requires the return to be prepared with the electronic program provided on the tax authority website and submitted electronically. The information letter supplies a passcode; the required article 41(2) attachments accompany the return electronically. Preserve the actual correct-year return/access, transmission receipt and attachments. No authenticated filing was performed. [SteV article 42a][ordinance]
+
+5. Under SteG article 127 and SteV article 47, reconcile provisional tax based on the submitted return, estimate or last final assessment with the final assessment. The provisional amount is credited; excess is refunded and a shortfall collected. SteG articles 113–114 distinguish legal due date, ordinary 30-day payment period and exceptions. Preserve actual notice/delivery dates before computing interest; the 2012 leaflet's specific calendar is not proof of the current assigned dates.
 
 ## Penalties and interest
 
@@ -108,7 +109,7 @@ Late-payment interest is 4% under SteV article45 for the applicable period. Reta
 
 ## Cross-border points
 
-Separate unlimited liability, domestic-source limited liability and treaty/PE allocation before computing. The article 63a source-tax example in The base is a payment-specific rule; it is not a universal withholding result. Use the [cross-border Guide](li-cross-border.md) for the distinct foreign-credit, claim and exit workpapers, and the [TP Guide](li-transfer-pricing.md) for article63/124a corresponding adjustments. Each retains its actual treaty, domestic-tax mapping, foreign-finality and procedure limits. Ordinary participation exemption screens above do not complete those processes. [SteG articles44,48,51,63–63a][law]
+Separate unlimited liability, domestic-source limited liability and treaty/PE allocation before computing. The article 63a source-tax example in The base is a payment-specific rule; it is not a universal withholding result. Use the [cross-border Guide](li-cross-border.md) for the distinct foreign-credit, claim and exit workpapers, and the [TP Guide](li-transfer-pricing.md) for article 63/124a corresponding adjustments. Each retains its actual treaty, domestic-tax mapping, foreign-finality and procedure limits. Ordinary participation exemption screens above do not complete those processes. [SteG articles44,48,51,63–63a][law]
 
 ## Two worked examples that recompute
 
@@ -207,6 +208,8 @@ Historical selected reads on 24 October 2026:
 - [March 2012 provisional collection leaflet][provisional], retained as historical explanation, not renewed confirmation of every present deadline.
 
 The current Tax Act and Ordinance were refetched on 30 October 2026 and matched the saved consolidations. Selected passages used by the ledger include corporate articles5,44,46–49,54,57–58,61–63a,94,113–114,127,135 and SteV4,18,21,32–32a,41–42,45,47, read that day. The ordinary methods above use those passages. Administrative summary/2012 leaflet dates are not renewed, and this is not a complete special-regime/amendment audit.
+
+SteV42 and42a were read 30 October 2026 following independent review. Article42a first applies to 2024 returns under the consolidation’s note75.
 
 [law]: https://www.gesetze.li/konso/pdf/2010340000
 [ordinance]: https://www.gesetze.li/konso/pdf/2010437000

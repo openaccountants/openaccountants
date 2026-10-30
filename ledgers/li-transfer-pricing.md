@@ -1,7 +1,7 @@
 # Figure ledger: li-transfer-pricing
 
 WRITER LEDGER, not an independent review. Read date30October2026.
-Current Guide SHA256`963195bbcb4533061b868a960e16f9abf00cf696c3422da21ece5cb811c5ea18`. All current rule/figure groups below bind actual fetched official text. Web-reader observations are tool-rendered extracts, not rawHTML/PDF. PGR scope is explicitlylimited to1064/applicationnotes; fullrawPDF identity is in JSON.
+Current Guide SHA256`53b7d3ddc9f5447f72f857580bca92ee66588841bcf34fd18edb63d2973b9c4c`. All current rule/figure groups below bind actual fetched official text. Web-reader observations are tool-rendered extracts, not rawHTML/PDF. PGR scope is explicitlylimited to1064/applicationnotes; fullrawPDF identity is in JSON.
 
 | ID | Rule/figure and Guide section | Act/article | Official URL | Short exact original German quote | Read date |
 |---|---|---|---|---|---|
@@ -79,6 +79,11 @@ Current Guide SHA256`963195bbcb4533061b868a960e16f9abf00cf696c3422da21ece5cb811c
 | LI-TP-072 | CbCaggravatedparticipationotherfilingbreach500000max; Penalties and interest | CbCAct21a | https://www.gesetze.li/konso/pdf/2016502000 | Von der Steuerverwaltung wird mit Busse bis zu 500 000 Franken | 2026-10-30 |
 | LI-TP-073 | CbCordinaryadministrativeobjection30daysservicewrittenwithreliefandfacts; Penalties and interest | CbCAct18 | https://www.gesetze.li/konso/pdf/2016502000 | kann innert 30 Tagen ab Zustellung schriftlich Einsprache erhoben werden. | 2026-10-30 |
 | LI-TP-074 | CbCpenaltyappeals/penalty-orderobjection14daysseparateroutes; Penalties and interest | CbCAct23 | https://www.gesetze.li/konso/pdf/2016502000 | kann binnen 14 Tagen ab Zustellung Beschwerde bei der | 2026-10-30 |
+| LI-TP-075 | Foreign corresponding-adjustment application: full facts, original/foreign pricing evidence, reasonable challenge proof and final foreign assessment; Cross-border points | SteV36d(1) | https://www.gesetze.li/konso/pdf/2010437000 | die rechtskräftige ausländische Steuerveranlagung. | 2026-10-30 |
+| LI-TP-076 | Foreign application refusal: original defensible legal basis, arm-length foreign correction and reasonable foreign measures; Cross-border points | SteV36d(2) | https://www.gesetze.li/konso/pdf/2010437000 | sich der ursprünglich angesetzte Verrechnungspreis nicht auf eine vertretbare Rechtsansicht im Sinne von Art. 49 SteG stützt; | 2026-10-30 |
+| LI-TP-077 | Domestic application requires36d(1)(a)–(b) and has stated36d(2)(a) refusal gate; Cross-border points | SteV36d(3) | https://www.gesetze.li/konso/pdf/2010437000 | hat die Informationen und Unterlagen nach Abs. 1 Bst. a und b zu enthalten; | 2026-10-30 |
+| LI-TP-078 | Both requests within3calendar months after finality of increased-profit taxpayer assessment; distinct from124a90days; Cross-border points / Deadlines and filing | SteV36d(4) | https://www.gesetze.li/konso/pdf/2010437000 | innert drei Monaten nach Rechtskraft der Veranlagung des Steuerpflichtigen | 2026-10-30 |
+| LI-TP-079 | 36d first applies to2025 assessments, current2026 method included; Sources / commencement | SteV note60;LGBl2025/169 | https://www.gesetze.li/konso/pdf/2010437000 | Er findet erstmals auf Veranlagungen des Steuerjahres 2025 Anwendung. | 2026-10-30 |
 | LI-TP-W01 | Transactionregisterbyrelatedparty/PE/category/year/grossflowandcurrency;no artificialnetting | AUTHOR WORKFLOW/EXPRESS LIMIT; not a new legal threshold | Governing rows above | Not an additional statutory figure | 2026-10-30 |
 | LI-TP-W02 | Methodselectionfunctionalriskassetanalysis,comparabilityandsupportedbase | AUTHOR WORKFLOW/EXPRESS LIMIT; not a new legal threshold | Governing rows above | Not an additional statutory figure | 2026-10-30 |
 | LI-TP-W03 | Accountingreconciliationandannualevidencecontrol | AUTHOR WORKFLOW/EXPRESS LIMIT; not a new legal threshold | Governing rows above | Not an additional statutory figure | 2026-10-30 |
@@ -93,55 +98,55 @@ Current Guide SHA256`963195bbcb4533061b868a960e16f9abf00cf696c3422da21ece5cb811c
 | Old unit | Full topic beginning | Destination |
 |---|---|---|
 | OLD-001 | --- name: li-transfer-pricing description: >   Prepare 2026 Liechtenstein related-party and permanen | Description/date/version update; existing TP and pricing scope retained and ordinary CbC workflow added, foreign/schema/APA limits explicit. |
-| OLD-002 | # Liechtenstein transfer pricing v0.2 | Current H1 v0.3; monotonic version. |
-| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack revi | current Guide line24 |
-| OLD-004 | ## Who this applies to | current Guide line28 |
-| OLD-005 | SteG article 49 requires related-party and PE dealings to use conditions that independent parties wo | current Guide line30 |
-| OLD-006 | ## Related persons and transaction record | current Guide line46 |
-| OLD-007 | SteV article 31a includes direct/indirect participation or beneficial interests in either direction, | current Guide line48 |
-| OLD-008 | Create a transaction register by party/PE, country, relationship, category, year, amount, currency,  | current Guide line50 |
+| OLD-002 | # Liechtenstein transfer pricing v0.2 | Current H1 v0.4; monotonic version. |
+| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack revi | Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open. |
+| OLD-004 | ## Who this applies to | Current Guide line26 |
+| OLD-005 | SteG article 49 requires related-party and PE dealings to use conditions that independent parties wo | Current Guide line28 |
+| OLD-006 | ## Related persons and transaction record | Current Guide line44 |
+| OLD-007 | SteV article 31a includes direct/indirect participation or beneficial interests in either direction, | Current Guide line46 |
+| OLD-008 | Create a transaction register by party/PE, country, relationship, category, year, amount, currency,  | Current Guide line48 |
 | OLD-009 | ## Choose the documentation route | Rates, bands and thresholds; all original route gates retained. |
-| OLD-010 | All thresholds below are from current SteV article 31b. “More than” and “exceeds” are strict; an equ | current Guide line34 |
-| OLD-011 | / Route / Entry gate / Cross-border transaction threshold and content / | current Guide line36 |
-| OLD-012 | /---/---/---/ | current Guide line37 |
-| OLD-013 | / Article 31b(2)–(3) / Part of a group with consolidated turnover **more than CHF 900 million** / OE | current Guide line38 |
-| OLD-014 | / Article 31b(4)–(5) / Outside the above group route but exceeding **all** size criteria referenced  | current Guide line39 |
-| OLD-015 | / Article 31b(8) / Transactions/relationships not captured by paragraphs 2–5 and 7 / Suitable eviden | current Guide line40 |
-| OLD-016 | The PGR article 1064(2) criteria currently state CHF 32.4 million balance sheet, CHF 64.8 million ne | current Guide line42 |
+| OLD-010 | All thresholds below are from current SteV article 31b. “More than” and “exceeds” are strict; an equ | Current Guide line32 |
+| OLD-011 | / Route / Entry gate / Cross-border transaction threshold and content / | Current Guide line34 |
+| OLD-012 | /---/---/---/ | Current Guide line35 |
+| OLD-013 | / Article 31b(2)–(3) / Part of a group with consolidated turnover **more than CHF 900 million** / OE | Current Guide line36 |
+| OLD-014 | / Article 31b(4)–(5) / Outside the above group route but exceeding **all** size criteria referenced  | Current Guide line37 |
+| OLD-015 | / Article 31b(8) / Transactions/relationships not captured by paragraphs 2–5 and 7 / Suitable eviden | Current Guide line38 |
+| OLD-016 | The PGR article 1064(2) criteria currently state CHF 32.4 million balance sheet, CHF 64.8 million ne | Current Guide line40 |
 | OLD-017 | For the formal files under paragraphs 2–5, paragraph 6 requires submission **within 60 days of reque | Deadlines and filing retains60days/German-English; former CbC gap replaced by separate statutory/reporting workflow with explicit technical/foreign limits. |
-| OLD-018 | ## Method and workpaper | current Guide line52 |
-| OLD-019 | Article 31b(1) applies the current OECD TP Guidelines and requires the most suitable method for the  | current Guide line54 |
+| OLD-018 | ## Method and workpaper | Current Guide line50 |
+| OLD-019 | Article 31b(1) applies the current OECD TP Guidelines and requires the most suitable method for the  | Current Guide line52 |
 | OLD-020 | 1. Delineate what the parties actually did and identify comparable circumstances, tested transaction | The base / Method and workpaper retains steps1–4 and evidence duties; step5 now routes to supplied ordinary CbC workflow rather than unresolved blanket CbCR referral. |
 | OLD-021 | ## Requests, disputes and sanctions | Penalties and interest (SteG135 retained); Cross-border points retains and expands original63/124a referral. |
-| OLD-022 | SteG article 135 provides fines for intentional/negligent noncompliance after a reminder, with the s | current Guide line95 |
-| OLD-023 | SteG article 63 addresses treaty/reciprocity relief and specified corresponding adjustments. Article | current Guide line103 |
+| OLD-022 | SteG article 135 provides fines for intentional/negligent noncompliance after a reminder, with the s | Current Guide line93 |
+| OLD-023 | SteG article 63 addresses treaty/reciprocity relief and specified corresponding adjustments. Article | Current Guide line101 |
 | OLD-024 | ## Worked controls | Two worked examples that recompute; all3original blocks preserved in annex. |
-| OLD-025 | ### Same-party goods aggregation in the assumed Master/Local route | current Guide line109 |
-| OLD-026 | Assume the group route, qualifying relationship and cross-border goods purchases from one party in o | current Guide line111 |
-| OLD-027 | ```oa-check name: Liechtenstein assumed group route goods threshold inputs:   first_goods_purchase:  | current Guide line113 |
-| OLD-028 | ### Separate-size route category aggregation | current Guide line79 |
-| OLD-029 | Assume the separate-size route and relationship conditions are established, with two cross-border se | current Guide line81 |
+| OLD-025 | ### Same-party goods aggregation in the assumed Master/Local route | Current Guide line113 |
+| OLD-026 | Assume the group route, qualifying relationship and cross-border goods purchases from one party in o | Current Guide line115 |
+| OLD-027 | ```oa-check name: Liechtenstein assumed group route goods threshold inputs:   first_goods_purchase:  | Current Guide line117 |
+| OLD-028 | ### Separate-size route category aggregation | Current Guide line77 |
+| OLD-029 | Assume the separate-size route and relationship conditions are established, with two cross-border se | Current Guide line79 |
 | OLD-030 | ```oa-check name: Liechtenstein assumed separate size route service category inputs:   first_categor | retained-original-controls.md, original control/prose exact; full substantive separate-size case in The base |
-| OLD-031 | ### Gross cost-plus is not margin on sales | current Guide line127 |
-| OLD-032 | Assume an independently supported gross cost-plus method, CHF 100,000 eligible cost and 8% markup so | current Guide line129 |
-| OLD-033 | ```oa-check name: Liechtenstein assumed gross cost plus denominator control inputs:   established_co | current Guide line131 |
+| OLD-031 | ### Gross cost-plus is not margin on sales | Current Guide line131 |
+| OLD-032 | Assume an independently supported gross cost-plus method, CHF 100,000 eligible cost and 8% markup so | Current Guide line133 |
+| OLD-033 | ```oa-check name: Liechtenstein assumed gross cost plus denominator control inputs:   established_co | Current Guide line135 |
 | OLD-034 | ## Ask and refer | Ask the client first, canonical label. |
 | OLD-035 | Obtain the full group/benefit/relationship chart, turnover and consolidation evidence, both years' c | Ask the client first preserves all pricing/size/PE/client evidence; CbC referral now limited to actualforeign/currency/systemic-failure/publictransparency cases after supplying ordinary workflow. |
-| OLD-036 | ## Sources | current Guide line150 |
+| OLD-036 | ## Sources | Current Guide line154 |
 | OLD-037 | Read 24 October 2026, from direct official consolidated PDF text: | Sources: current30October reads differentiated from retained24October review scope. |
 | OLD-038 | - [SteG, current 1 July 2026 consolidation][law], selected articles 49, 63, 124a and 135. The adjust | Sources+Cross-border points: ordinary statutory63/124a finality method supplied; case-specificforeign/treaty limits retained. |
-| OLD-039 | [law]: https://www.gesetze.li/konso/pdf/2010340000 [ordinance]: https://www.gesetze.li/konso/pdf/201 | current Guide line168 |
-| OLD-040 | <!-- openaccountants-cta-block --> | current Guide line172 |
-| OLD-041 | --- | current Guide line1 |
-| OLD-042 | ## Talk to an accountant | current Guide line176 |
-| OLD-043 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountan | current Guide line178 |
+| OLD-039 | [law]: https://www.gesetze.li/konso/pdf/2010340000 [ordinance]: https://www.gesetze.li/konso/pdf/201 | Current Guide line174 |
+| OLD-040 | <!-- openaccountants-cta-block --> | Current Guide line178 |
+| OLD-041 | --- | Current Guide line1 |
+| OLD-042 | ## Talk to an accountant | Current Guide line182 |
+| OLD-043 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountan | Current Guide line184 |
 
 ## Explicit successor scope
 
 | Predecessor | Successor |
 |---|---|
 | old scope noCbC method | Separate CbC workflow now supplies ordinary statutory/reporting/exchange procedure; live schema/currency/systemicfailure/publictransparency gaps retained |
-| old adjustmentfinalitygap | Cross-border points suppliesactual63(2)/(3)gatesand124a90days/10years;case-specifictreaty/foreignfactsremain |
+| old adjustmentfinalitygap | Cross-border points supplies63(2)/(3),SteV36d application/3-month trigger and distinct124a90day/10year reopening gates;case-specifictreaty/foreignfactsremain |
 | original 3examples | 2blocksremaincurrent;all3blocksretainedexactinannex,includingseparate-size140000/125000/15000case;substantivecasecurrent |
 
 ## Remaining gates

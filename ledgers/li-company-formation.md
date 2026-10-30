@@ -1,7 +1,7 @@
 # Figure and scope ledger: li-company-formation
 
 WRITER LEDGER, not independent review. Every original topic is mapped below. Original full text/unit hashes are retained in JSON and the predecessor file. Source excerpts are explicitly labelled; no private filing or professional attestation asserted.
-Current Guide SHA256: `d03528182c8b1505f20de300c466cd616c3ca2d65e928f0998ec235dae295aab`.
+Current Guide SHA256: `57e40ab3e2c0224955cc23c50b2989040022b7816ac486f5a15564e67f1422a3`.
 
 | ID | Rule/figure and section | Act/article | Official URL or repository evidence | Exact original-language quote or workflow classification | Read date |
 |---|---|---|---|---|---|
@@ -63,7 +63,7 @@ Current Guide SHA256: `d03528182c8b1505f20de300c466cd616c3ca2d65e928f0998ec235da
 |---|---|---|
 | OLD-001 | --- name: li-company-formation description: >   Prepare a 2026 Liechtenstein entity-formation workpaper, centr | Metadata/title version0.2 to0.3 and date30October; protected fields and CTA unchanged |
 | OLD-002 | # Liechtenstein company formation and entity screening v0.2 | Metadata/title version0.2 to0.3 and date30October; protected fields and CTA unchanged |
-| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | Current Guide line27 |
+| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open. |
 | OLD-004 | ## Scope and first decision | Current Guide line29 |
 | OLD-005 | This source-cited 2026 draft prepares the ordinary GmbH route and flags selected other legal forms. The [PGR c | Current Guide line31 |
 | OLD-006 | Retain business/purpose and regulated-activity facts, founders/beneficiaries, ownership/control, intended coun | Current Guide line33 |

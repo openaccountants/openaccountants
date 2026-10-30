@@ -1,6 +1,6 @@
 {
   "status": "WRITER CHECKS ONLY; INDEPENDENT WHOLE-PACK REVIEW PENDING",
-  "guide_sha256": "963195bbcb4533061b868a960e16f9abf00cf696c3422da21ece5cb811c5ea18",
+  "guide_sha256": "53b7d3ddc9f5447f72f857580bca92ee66588841bcf34fd18edb63d2973b9c4c",
   "controls": [
     {
       "name": "Formalgroupstrictly900millionboundary",

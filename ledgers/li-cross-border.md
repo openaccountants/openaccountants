@@ -1,7 +1,7 @@
 # Figure ledger: li-cross-border
 
 WRITER LEDGER, no new independent review. Read date30October2026 for statutory sources; historical administrative/index access remains24October.
-Current Guide SHA256`98c5ed4b05ce03aa2435c4313ac425216af3fff1c9c9a344463fb702192608dd`. Source observations are original official extracted text; layout whitespace/discretionary line-break hyphens alone are normalized for quote binding.
+Current Guide SHA256`6014f5d17ef19ea938aa1dc198735e66716d9415ac3394449273f6b3420af447`. Source observations are original official extracted text; layout whitespace/discretionary line-break hyphens alone are normalized for quote binding.
 
 | ID | Rule/figure and Guide section | Act/article | Official URL | Short exact German quote | Read date |
 |---|---|---|---|---|---|
@@ -81,58 +81,58 @@ Current Guide SHA256`98c5ed4b05ce03aa2435c4313ac425216af3fff1c9c9a344463fb702192
 
 | Old unit | Topic beginning | Destination |
 |---|---|---|
-| OLD-001 | --- name: li-cross-border description: >   Prepare 2026 Liechtenstein cross-border tax workpapers for individu | Frontmatter retained; version0.3 to0.4 and last_updated to2026-10-30 only; protected identity/CTA checks pass. |
+| OLD-001 | --- name: li-cross-border description: >   Prepare 2026 Liechtenstein cross-border tax workpapers for individu | Frontmatter retained; version0.3 to0.5 and last_updated to2026-10-30 only; protected identity/CTA checks pass. |
 | OLD-002 | # Liechtenstein cross-border tax preparation v0.3 | Heading version advanced to v0.4 in step with frontmatter. |
-| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | current Guide line24 |
+| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open. |
 | OLD-004 | ## Scope and order of work | Who this applies to; original scope and sequence retained. |
-| OLD-005 | This 2026 source-cited draft prepares the domestic-law and relief workpaper. Determine person/entity, residenc | current Guide line30 |
-| OLD-006 | ## Residence and PE screens | current Guide line32 |
-| OLD-007 | / Question / Domestic rule to investigate / Evidence / | current Guide line34 |
-| OLD-008 | /---/---/---/ | current Guide line35 |
-| OLD-009 | / Individual domicile / Article 2(1)(b): place of stay with intention of permanent remaining / Homes, occupanc | current Guide line36 |
-| OLD-010 | / Habitual abode / Article 2(1)(c): nontemporary stay; a connected stay **over six months** counts from its be | current Guide line37 |
-| OLD-011 | / Individual liability dates / Articles 6–7: domicile/habitual-abode resident gate, domestic wealth/income for | current Guide line38 |
-| OLD-012 | / Legal-entity residence / Article 44: domestic seat **or** actual management; article 2 defines management ce | current Guide line39 |
-| OLD-013 | / Domestic PE / Article 2(1)(a): fixed place and listed examples; construction/installation **exceeding six mo | current Guide line40 |
-| OLD-014 | These are domestic screens, not a treaty residence tie-breaker or treaty PE conclusion. A treaty can alter the | current Guide line42 |
+| OLD-005 | This 2026 source-cited draft prepares the domestic-law and relief workpaper. Determine person/entity, residenc | Current Guide line28 |
+| OLD-006 | ## Residence and PE screens | Current Guide line30 |
+| OLD-007 | / Question / Domestic rule to investigate / Evidence / | Current Guide line32 |
+| OLD-008 | /---/---/---/ | Current Guide line33 |
+| OLD-009 | / Individual domicile / Article 2(1)(b): place of stay with intention of permanent remaining / Homes, occupanc | Current Guide line34 |
+| OLD-010 | / Habitual abode / Article 2(1)(c): nontemporary stay; a connected stay **over six months** counts from its be | Current Guide line35 |
+| OLD-011 | / Individual liability dates / Articles 6–7: domicile/habitual-abode resident gate, domestic wealth/income for | Current Guide line36 |
+| OLD-012 | / Legal-entity residence / Article 44: domestic seat **or** actual management; article 2 defines management ce | Current Guide line37 |
+| OLD-013 | / Domestic PE / Article 2(1)(a): fixed place and listed examples; construction/installation **exceeding six mo | Current Guide line38 |
+| OLD-014 | These are domestic screens, not a treaty residence tie-breaker or treaty PE conclusion. A treaty can alter the | Current Guide line40 |
 | OLD-015 | ## Nonresident category before rate | The base / Nonresident category before rate; original categories retained, ordinary methods added. |
-| OLD-016 | Article 6(4)–(5) identifies domestic property/PE wealth and income categories, employment/replacement income,  | current Guide line62 |
-| OLD-017 | Article 23 separates: | current Guide line64 |
-| OLD-018 | - Certain property/business/deemed-yield categories: simplified assessment at the statutory 4% plus the specif | current Guide line66 |
+| OLD-016 | Article 6(4)–(5) identifies domestic property/PE wealth and income categories, employment/replacement income,  | Current Guide line60 |
+| OLD-017 | Article 23 separates: | Current Guide line62 |
+| OLD-018 | - Certain property/business/deemed-yield categories: simplified assessment at the statutory 4% plus the specif | Current Guide line64 |
 | OLD-019 | This Guide does not compute those specialised nonresident assessments or the annual Finance Act surcharge in a | The base now supplies the ordinary assessments and2026 article23(5)(b)150% surcharge from the enacted Finance Act. Actual municipality, specialised/mixed assessments and treaty facts remain unresolved. |
-| OLD-020 | ## Source withholding and treaty relief | current Guide line130 |
-| OLD-021 | Residents' wages also have withholding. Use [payroll](li-payroll-social.md) for the current ordinary wage sche | current Guide line132 |
-| OLD-022 | For an individual article-24 payment, article 26 provides authority confirmation on application where the trea | current Guide line134 |
-| OLD-023 | For a concrete treaty, retain its signed text, protocols, entry into force/application dates, covered person/t | current Guide line136 |
+| OLD-020 | ## Source withholding and treaty relief | Current Guide line128 |
+| OLD-021 | Residents' wages also have withholding. Use [payroll](li-payroll-social.md) for the current ordinary wage sche | Current Guide line130 |
+| OLD-022 | For an individual article-24 payment, article 26 provides authority confirmation on application where the trea | Current Guide line132 |
+| OLD-023 | For a concrete treaty, retain its signed text, protocols, entry into force/application dates, covered person/t | Current Guide line134 |
 | OLD-024 | ## Foreign relief: exemption is different from a credit | The base / Foreign relief; individual and business credit methods kept distinct. |
-| OLD-025 | SteG article 22 distinguishes treaty/reciprocity exemption (with the stated progression cross-reference) from  | current Guide line79 |
-| OLD-026 | For the nonbusiness individual credit route, SteV articles 18a–18c require the treaty/reciprocity and domestic | current Guide line81 |
-| OLD-027 | Credit is application-only, no earlier than the end of the relevant income year, with a three-year claim expir | current Guide line116 |
-| OLD-028 | ## Corporate exit and corresponding adjustments | current Guide line138 |
-| OLD-029 | SteG article 51 treats exclusion/restriction of domestic taxing rights over asset disposal/use as an arm's-len | current Guide line140 |
-| OLD-030 | SteG article 63 separately addresses treaty/reciprocity relief and specified corresponding TP adjustments. For | current Guide line142 |
+| OLD-025 | SteG article 22 distinguishes treaty/reciprocity exemption (with the stated progression cross-reference) from  | Current Guide line77 |
+| OLD-026 | For the nonbusiness individual credit route, SteV articles 18a–18c require the treaty/reciprocity and domestic | Current Guide line79 |
+| OLD-027 | Credit is application-only, no earlier than the end of the relevant income year, with a three-year claim expir | Current Guide line114 |
+| OLD-028 | ## Corporate exit and corresponding adjustments | Current Guide line136 |
+| OLD-029 | SteG article 51 treats exclusion/restriction of domestic taxing rights over asset disposal/use as an arm's-len | Current Guide line138 |
+| OLD-030 | SteG article 63 separately addresses treaty/reciprocity relief and specified corresponding TP adjustments. For | Current Guide line140 |
 | OLD-031 | ## Filing, payments and sanctions | Deadlines and filing plus Penalties and interest split the former combined heading. |
 | OLD-032 | Maintain a separate calendar for the domestic return, source remittance, foreign-credit application, treaty-re | Deadlines and filing retains all separate calendars, no-personal-form duty and deferral distinctions; Penalties and interest retains article135 post-reminder scope and adds statutory interest. Actual treaty forms/current calendars/live execution remain open. |
 | OLD-033 | ## Worked controls | Original3cases retained as narrative and exact executable annex;2new credit examples compute actual ceilings rather than assuming one. |
-| OLD-034 | ### Assumed eligible nonbusiness foreign-credit ceiling | current Guide line94 |
-| OLD-035 | Assume a resident individual with all article 18a eligibility gates, no excluded/special category, exhausted s | current Guide line96 |
+| OLD-034 | ### Assumed eligible nonbusiness foreign-credit ceiling | Current Guide line92 |
+| OLD-035 | Assume a resident individual with all article 18a eligibility gates, no excluded/special category, exhausted s | Current Guide line94 |
 | OLD-036 | ```oa-check name: Liechtenstein assumed eligible foreign tax credit ceiling inputs:   established_qualifying_f | retained-original-controls.md exact; full substantive case remains under The base / Retained predecessor workpapers |
-| OLD-037 | ### Specified nonresident individual board payment | current Guide line100 |
-| OLD-038 | Assume a CHF 10,000 gross payment within article 24(2)(b), no treaty reduction/authority exemption and no othe | current Guide line102 |
+| OLD-037 | ### Specified nonresident individual board payment | Current Guide line98 |
+| OLD-038 | Assume a CHF 10,000 gross payment within article 24(2)(b), no treaty reduction/authority exemption and no othe | Current Guide line100 |
 | OLD-039 | ```oa-check name: Liechtenstein assumed specified nonresident board withholding inputs:   established_gross_bo | retained-original-controls.md exact; full substantive case remains under The base / Retained predecessor workpapers |
-| OLD-040 | ### Corporate asset exit workpaper | current Guide line106 |
-| OLD-041 | Assume article 51 applies to one asset with CHF 100,000 established arm's-length value and CHF 60,000 tax carr | current Guide line108 |
+| OLD-040 | ### Corporate asset exit workpaper | Current Guide line104 |
+| OLD-041 | Assume article 51 applies to one asset with CHF 100,000 established arm's-length value and CHF 60,000 tax carr | Current Guide line106 |
 | OLD-042 | ```oa-check name: Liechtenstein assumed corporate asset exit uplift inputs:   established_arm_length_value: 10 | retained-original-controls.md exact; full substantive case remains under The base / Retained predecessor workpapers |
 | OLD-043 | ## Ask and refer | Ask the client first replaces heading only. |
-| OLD-044 | Collect dated homes/stays, treaty residence, all workdays and employment/public-service facts, entity seat/man | current Guide line202 |
+| OLD-044 | Collect dated homes/stays, treaty residence, all workdays and employment/public-service facts, entity seat/man | Current Guide line202 |
 | OLD-045 | ## Sources and scope | Sources replaces heading only. |
 | OLD-046 | Read 24 October 2026: | Sources distinguishes original24October reads from current30October statutory reads. |
 | OLD-047 | - [SteG, 1 July 2026 consolidation][law], selected articles 2, 6–7, 22–29, 44–46, 51, 61, 63, 63a, 94, 113–114 | Sources retains all original URLs/read scope. SteV36a–36c were subsequently read30October and the precise individual-business domestic-tax mapping remains open; FinanceAct2026 source added. |
-| OLD-048 | [law]: https://www.gesetze.li/konso/pdf/2010340000 [ordinance]: https://www.gesetze.li/konso/pdf/2010437000 [w | current Guide line219 |
-| OLD-049 | <!-- openaccountants-cta-block --> | current Guide line224 |
-| OLD-050 | --- | current Guide line1 |
-| OLD-051 | ## Talk to an accountant | current Guide line228 |
-| OLD-052 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com). | current Guide line230 |
+| OLD-048 | [law]: https://www.gesetze.li/konso/pdf/2010340000 [ordinance]: https://www.gesetze.li/konso/pdf/2010437000 [w | Current Guide line219 |
+| OLD-049 | <!-- openaccountants-cta-block --> | Current Guide line224 |
+| OLD-050 | --- | Current Guide line1 |
+| OLD-051 | ## Talk to an accountant | Current Guide line228 |
+| OLD-052 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com). | Current Guide line230 |
 
 ## Explicit successor map
 

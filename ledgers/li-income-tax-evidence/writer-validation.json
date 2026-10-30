@@ -1,6 +1,6 @@
 {
   "status": "WRITER VALIDATION ONLY; FULL INDEPENDENT PACK REVIEW PENDING",
-  "as_of_utc": "2026-10-30T11:50:41.569591+00:00",
+  "as_of_utc": "2026-10-30T12:14:19.478631+00:00",
   "changed_schema": "PASS8Guides0warnings",
   "full_schema": "PASS --no-index-check; inherited warnings781/5/5",
   "examples": {
@@ -21,7 +21,7 @@
     "individual_income": 36,
     "formation": 19
   },
-  "ledger_groups": 663,
+  "ledger_groups": 672,
   "all_eight_ledgers_ready": true,
   "quote_binding_failures": 0,
   "source_table_checks": {

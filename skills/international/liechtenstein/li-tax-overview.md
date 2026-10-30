@@ -24,7 +24,7 @@ version: 0.3
 
 # Liechtenstein tax overview v0.3
 
-Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
+Historical source/editorial evidence is in the [24 October review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md), confined to its exact predecessor and scope. The [current country review register](../../../ledgers/li-pack-review-evidence/README.md) identifies the 30 October review, repairs and exact-file verification. Named Liechtenstein accountant review remains open.
 
 ## Start with the question
 

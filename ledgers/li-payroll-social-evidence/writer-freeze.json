@@ -1,6 +1,6 @@
 {
-  "status": "FULL EIGHT-GUIDE COUNTRY CANDIDATE; INDEPENDENT REVIEW/PUBLICATION PENDING",
-  "generated_at": "2026-10-30T11:50:41.569591+00:00",
+  "status": "FULL REPAIRED EIGHT-GUIDE CANDIDATE; INDEPENDENT REPAIR VERIFICATION/PUBLICATION PENDING",
+  "generated_at": "2026-10-30T12:14:19.478631+00:00",
   "files": [
     {
       "path": "docs/research/2026-10-24-liechtenstein-pack-review.md",
@@ -33,19 +33,24 @@
       "bytes": 215
     },
     {
-      "path": "ledgers/li-company-formation-evidence/writer-method-checks.json",
+      "path": "ledgers/li-company-formation-evidence/writer-method-checks-89507147.json",
       "sha256": "2fe2e5d47d790cbddef3113cc3a0208004af888d09ab9fd0e9e0c9de8ca03f73",
       "bytes": 5150
     },
     {
+      "path": "ledgers/li-company-formation-evidence/writer-method-checks.json",
+      "sha256": "dabac6e60c33921cec99efc84691238e2221d044dbba4f23004f416bf719a2bf",
+      "bytes": 5150
+    },
+    {
       "path": "ledgers/li-company-formation.md",
-      "sha256": "461f3db0dc00d3c2d80c382878702fd6f5e7a1ff3e3c44106303178e692145fa",
-      "bytes": 18523
+      "sha256": "19e463933a6fb3597f08ff3e292178a1ad757386f3c04123dc7058af72d350b1",
+      "bytes": 18677
     },
     {
       "path": "ledgers/li-company-formation.writer.json",
-      "sha256": "f67ef22c2ae5d37752fafe823333013afadb52570a09989e95b4ae2c3147014f",
-      "bytes": 58031
+      "sha256": "3b307b209029eaef8395e02d2855a2679dbee4a7a85ae8230e94ddb1ee0bc3f2",
+      "bytes": 58186
     },
     {
       "path": "ledgers/li-corporate-income-tax-evidence/predecessor-guide.md",
@@ -73,8 +78,13 @@
       "bytes": 433
     },
     {
-      "path": "ledgers/li-corporate-income-tax-evidence/writer-method-checks.json",
+      "path": "ledgers/li-corporate-income-tax-evidence/writer-method-checks-89507147.json",
       "sha256": "3c46cbadacdc6e7dc6df2c8a08f81f4913142276548d7a2e1c2f1f4a1e976a28",
+      "bytes": 7550
+    },
+    {
+      "path": "ledgers/li-corporate-income-tax-evidence/writer-method-checks.json",
+      "sha256": "f7456ffefe57237adec590c8b4f97aa4cc81703967937d4075437c03873487d9",
       "bytes": 7550
     },
     {
@@ -84,13 +94,13 @@
     },
     {
       "path": "ledgers/li-corporate-income-tax.md",
-      "sha256": "622e8f72e19758c62b60b79801a1fbd6c877f3aaef550959790b45dd15fc95e3",
-      "bytes": 29013
+      "sha256": "ed8a6a4078efe00f9b1a5a46f5021d120da58d50fabe112f0f50efa8329fe884",
+      "bytes": 30228
     },
     {
       "path": "ledgers/li-corporate-income-tax.writer.json",
-      "sha256": "ee94175c5c32a7112dc57c44aa0eca75b59824aa725715031c183e9f236b72d7",
-      "bytes": 89338
+      "sha256": "9a4ee92156e372d0f2771df4e56dd5282e9515ad41e39950be9ec52fbb7f37eb",
+      "bytes": 92554
     },
     {
       "path": "ledgers/li-cross-border-evidence/predecessor-guide.md",
@@ -113,19 +123,24 @@
       "bytes": 99668
     },
     {
-      "path": "ledgers/li-cross-border-evidence/writer-method-checks.json",
+      "path": "ledgers/li-cross-border-evidence/writer-method-checks-89507147.json",
       "sha256": "d3820388b4abac1be71dd5068f61190fd10d0656235dd78422616eb7ec6d6b96",
       "bytes": 4559
     },
     {
+      "path": "ledgers/li-cross-border-evidence/writer-method-checks.json",
+      "sha256": "5e4f011cc993e620caff96242b014a4080eedd5a853ded0a4421bb9d1fe35d95",
+      "bytes": 4559
+    },
+    {
       "path": "ledgers/li-cross-border.md",
-      "sha256": "7333941203ada1eb13fda3941e29679951d08eb1c7f01b33063bed9baceaf494",
-      "bytes": 26372
+      "sha256": "31dc59d0ed444b1e7b5961b10f43ade628a020ae01556db4cc0854c2f73c87b1",
+      "bytes": 26525
     },
     {
       "path": "ledgers/li-cross-border.writer.json",
-      "sha256": "36821e0be620a0d5c304a25bd95a271f49a22de5d80dc5395a426334913abc5e",
-      "bytes": 78342
+      "sha256": "8c9054627117959d40bf027f30d3276b8ed8a6af142c4bcd5b4019ea46de6122",
+      "bytes": 78496
     },
     {
       "path": "ledgers/li-income-tax-evidence/etax-selected-web-excerpt.json",
@@ -143,24 +158,119 @@
       "bytes": 3201
     },
     {
-      "path": "ledgers/li-income-tax-evidence/writer-method-checks.json",
+      "path": "ledgers/li-income-tax-evidence/writer-method-checks-89507147.json",
       "sha256": "5c67f2f00372425ce91dfb6c08e2cccbb8085e7c91adef5cdda92c2ddca7468f",
       "bytes": 8742
     },
     {
+      "path": "ledgers/li-income-tax-evidence/writer-method-checks.json",
+      "sha256": "5527e151200bd45ebe10ec637d939b412ce3979833a836487f268b566bc88bca",
+      "bytes": 8742
+    },
+    {
       "path": "ledgers/li-income-tax-evidence/writer-validation.json",
-      "sha256": "9a077ada51fac7e50ba91b99159ab526af3db94838c5aa38bf69f427ef8a7351",
+      "sha256": "8e917f5ca6468f1ac608547808cd8ee0e6c69ef247fa8de86d7e7b696516a394",
       "bytes": 1133
     },
     {
       "path": "ledgers/li-income-tax.md",
-      "sha256": "f187956bd5d4f71ce4f4a0e56cd7d4261d82ede79f8557decf777c1497c19977",
-      "bytes": 42557
+      "sha256": "6107a661720be7b95bcc35d8c39404bc6a1a9ebfe40073cca743f32d49081e8e",
+      "bytes": 42711
     },
     {
       "path": "ledgers/li-income-tax.writer.json",
-      "sha256": "7079ba327bf0f487ea306e6d4490ae3400cb08305b8e26ecb8f6beb97971dad7",
-      "bytes": 133704
+      "sha256": "fd996fccdd36f9261251e78eda0c14024427ed195799339c8e614e885763e87e",
+      "bytes": 133859
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/arithmetic-review.json",
+      "sha256": "e3e8e2944b2b23364ed72a59b0b6895de21371560fa68788ae12a87a746bbaaa",
+      "bytes": 30131
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/build_review.py",
+      "sha256": "691aed13724c4df248953b59ecfba0fb0f36fa8684a42015c86fe2eee35eafad",
+      "bytes": 30281
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/eight-guide-schema.json",
+      "sha256": "5df9586a545fc0b391ed0da98768f9556e72e9acd875bb5560d261f66db5d65a",
+      "bytes": 560
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/freeze-after.json",
+      "sha256": "d887ad3d557234b9a4b844fdbfbbdd1157e3825b669be93391540cd36b0660d4",
+      "bytes": 27567
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/freeze-before.json",
+      "sha256": "f4f40739c7406eb398b058d108daafaa4bf925c40a7cbef75fd516cf0a607b88",
+      "bytes": 27523
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/full-pack-review.json",
+      "sha256": "30773803797f996a62f6a7f44806a6aabb774574afc96949b3f4b8f3e3ec9861",
+      "bytes": 1229979
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/full-pack-review.md",
+      "sha256": "7c91bc9d4083b03e17ccdfb8fa8f2536c512f59a2e8ada5376f0529c313a9f1c",
+      "bytes": 236647
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/independent_checks.py",
+      "sha256": "8688001630cb885ea09aa9dc72a58bf93b68a0196d468a7054143dc3fa4234ac",
+      "bytes": 6336
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/outlines.json",
+      "sha256": "64f62878e9bedc8360ec56a43afe3a54405fd52c52f818d3b2ee940ec6f33ef9",
+      "bytes": 4093
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/predecessor-controls.json",
+      "sha256": "3cbbb60ad42cc82ce122eb7ef877783aea66a312fc6805e6afeb754908f74a38",
+      "bytes": 6716
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/predecessor-maps-checkpoint.json",
+      "sha256": "2394f2649bbe917012b000b205b54be352267d5cd9decc41414ffd86afbfdfbe",
+      "bytes": 5441
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/repository-examples.log",
+      "sha256": "2e1166a97b9894eb6b91785e2c32f7562d4c56d9dd421c86071a3f383c34ba70",
+      "bytes": 60
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/repository-validation.log",
+      "sha256": "66a081d72c7b21d1cff475b6060ae4405d90441bbf5eb1fec0437abfc67c6303",
+      "bytes": 373
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/row-identity-checkpoint.json",
+      "sha256": "0826ab8d846b6dc1128cab3e131ceecea433421ba071d47fd6a0cb346540aad3",
+      "bytes": 665126
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-89507147/table-review.json",
+      "sha256": "90fb01cc59950f5e1e3354aa86bbdd104868487a391e29e0b2064b477a235c48",
+      "bytes": 8875
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-repairs/additional-source-groups.json",
+      "sha256": "070401079e424527c556a830d03ac5f78ec40a122d59832d01e0153825d6fa04",
+      "bytes": 6865
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/2026-10-30-repairs/repair-application.json",
+      "sha256": "45401c20785a73ed560ddc7c31c1b84ec15a5f79535f446dc0cbe3f226a2e20e",
+      "bytes": 1148
+    },
+    {
+      "path": "ledgers/li-pack-review-evidence/README.md",
+      "sha256": "b1b3eb986b85cd06a58d03a2a4394fd72d47833bd9ab44bb685e4b58dddc075f",
+      "bytes": 1081
     },
     {
       "path": "ledgers/li-payroll-social-evidence/predecessor-guide.md",
@@ -293,6 +403,11 @@
       "bytes": 14088
     },
     {
+      "path": "ledgers/li-payroll-social-evidence/writer-freeze-89507147.json",
+      "sha256": "ddb44df2f194a603c14fd2fb44c9e110a1bd99cc4474b43b68968a0482597db7",
+      "bytes": 20723
+    },
+    {
       "path": "ledgers/li-payroll-social-evidence/writer-freeze-8c046006.json",
       "sha256": "8ce2a748fa58713ad341a4aef1f690c7021c4e99f11cc5484174f72b8100c098",
       "bytes": 16227
@@ -319,18 +434,18 @@
     },
     {
       "path": "ledgers/li-payroll-social-evidence/writer-method-checks.json",
-      "sha256": "2bc386381c20536ee2ba12b227d8f5437d6c718c679ec1bdc2739c23e82c71e2",
+      "sha256": "4cacdd8c5f4b3ef485c4ab0175354d246e8f3c34bf9add2af81f07ba6b293bd9",
       "bytes": 7427
     },
     {
       "path": "ledgers/li-payroll-social.md",
-      "sha256": "7cc695a0324b4ce535af82b7e50fee3949604646a9e5d1270151300d7dbfd736",
-      "bytes": 67388
+      "sha256": "3e31d1d4dc9545dd3ac47de25f65478c40770db52c1b4a9be63d1396fd77274c",
+      "bytes": 67346
     },
     {
       "path": "ledgers/li-payroll-social.writer.json",
-      "sha256": "55d56801c6ee4364cf4093987b5df2e28dba4438c742d4109e1bf558fee9961f",
-      "bytes": 184775
+      "sha256": "d17d16a28310d52c42cb9cd1c6742c96ffa2a6d16586e77d5b800d4f0c0626d1",
+      "bytes": 184734
     },
     {
       "path": "ledgers/li-tax-overview-evidence/predecessor-guide.md",
@@ -339,13 +454,13 @@
     },
     {
       "path": "ledgers/li-tax-overview.md",
-      "sha256": "864b7120186575ef811ffd3c207cf0a1485c338b44b476b88f2ba0780b726df2",
-      "bytes": 6828
+      "sha256": "9f668c2a578000defddc75b885f491a76d7692b13362924e5100b0e0ccc19dfd",
+      "bytes": 6982
     },
     {
       "path": "ledgers/li-tax-overview.writer.json",
-      "sha256": "74b9ea95f42148ac7a47a6fa80d884916d5eaa3793079d28025033c0807c8e47",
-      "bytes": 16063
+      "sha256": "c971023100c3f0c5087b8370bdbce3763a7a23a79eaa1ab199521a995a88b578",
+      "bytes": 16218
     },
     {
       "path": "ledgers/li-transfer-pricing-evidence/predecessor-guide.md",
@@ -403,19 +518,24 @@
       "bytes": 11602
     },
     {
-      "path": "ledgers/li-transfer-pricing-evidence/writer-method-checks.json",
+      "path": "ledgers/li-transfer-pricing-evidence/writer-method-checks-89507147.json",
       "sha256": "bf61f40a71f138393fa40de28e1cf921a7d5256370a3e261e1222b3361c628d1",
       "bytes": 4793
     },
     {
+      "path": "ledgers/li-transfer-pricing-evidence/writer-method-checks.json",
+      "sha256": "1676fa62eb82ae05d8a121f95516e3bca4f90168b2ef1a028c53799c3bcbefaf",
+      "bytes": 4793
+    },
+    {
       "path": "ledgers/li-transfer-pricing.md",
-      "sha256": "789f14ab527912eeb960346d726532df0e37e4c6be7ad27e01df8a5d9bba56f8",
-      "bytes": 27405
+      "sha256": "141859226cdd75ead7911b00fad0bcfdfa321477302d611926001d6a3fe0d135",
+      "bytes": 29143
     },
     {
       "path": "ledgers/li-transfer-pricing.writer.json",
-      "sha256": "a6c89d89546d9d854a0fd4061bb4748d24da488e62a07fac19aacf7dfd1be5b0",
-      "bytes": 82201
+      "sha256": "44492d13d3ced8faba58d02c538c381d5d83e536ab9d6c1dfd6b2e90bac7d8fd",
+      "bytes": 86440
     },
     {
       "path": "ledgers/liechtenstein-vat-evidence/predecessor-guide.md",
@@ -473,8 +593,13 @@
       "bytes": 1276
     },
     {
-      "path": "ledgers/liechtenstein-vat-evidence/writer-method-checks.json",
+      "path": "ledgers/liechtenstein-vat-evidence/writer-method-checks-89507147.json",
       "sha256": "893e6258b204b36705da23fa1ff01133b7480e4d50c8ab9a97106ecf07c9095a",
+      "bytes": 6535
+    },
+    {
+      "path": "ledgers/liechtenstein-vat-evidence/writer-method-checks.json",
+      "sha256": "7b91f579c8829ef2ca34ae0d48f697f255718fc9c15d896fb653c5e644685c95",
       "bytes": 6535
     },
     {
@@ -484,58 +609,58 @@
     },
     {
       "path": "ledgers/liechtenstein-vat.md",
-      "sha256": "700973c2e0684304bbc53af447059375c4a4b2c34f7dcdd996553cc29a1816c9",
-      "bytes": 28438
+      "sha256": "0035e9d722d2cfc2c72e041e6faaf2d981cc9cf9e9dadfc0c681f8d269c68945",
+      "bytes": 28639
     },
     {
       "path": "ledgers/liechtenstein-vat.writer.json",
-      "sha256": "dfb569ce7218106f735c0da0cc6feabfc6bf425eebbcd6980562fda582a0fe3d",
-      "bytes": 88906
+      "sha256": "cf69b7ca5c9da492683815412696d4bbfa823a791976c2cc3046df76d0bb281d",
+      "bytes": 89108
     },
     {
       "path": "skills/international/liechtenstein/README.md",
-      "sha256": "24689b25828c966d2a5c22e927c38e75fd8be7d28f8ca07e2f2107c3deb58e7b",
-      "bytes": 12192
+      "sha256": "4764f6a5a0cdd2bb008d67b3f999efc5fa208f934b9f8933672c7eb88b04ed73",
+      "bytes": 12527
     },
     {
       "path": "skills/international/liechtenstein/li-company-formation.md",
-      "sha256": "d03528182c8b1505f20de300c466cd616c3ca2d65e928f0998ec235dae295aab",
-      "bytes": 14497
+      "sha256": "57e40ab3e2c0224955cc23c50b2989040022b7816ac486f5a15564e67f1422a3",
+      "bytes": 14623
     },
     {
       "path": "skills/international/liechtenstein/li-corporate-income-tax.md",
-      "sha256": "689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b7aa52ec",
-      "bytes": 22922
+      "sha256": "162b15efd16bd5d93de4b377786934b2bc78a5810919166daf70451cc4854d28",
+      "bytes": 23645
     },
     {
       "path": "skills/international/liechtenstein/li-cross-border.md",
-      "sha256": "98c5ed4b05ce03aa2435c4313ac425216af3fff1c9c9a344463fb702192608dd",
-      "bytes": 23918
+      "sha256": "6014f5d17ef19ea938aa1dc198735e66716d9415ac3394449273f6b3420af447",
+      "bytes": 24177
     },
     {
       "path": "skills/international/liechtenstein/li-income-tax.md",
-      "sha256": "4d669a8f4f9f845f17081898fe64d1abf85c9c8b5fe7d331b6445068576aa775",
-      "bytes": 28578
+      "sha256": "43dbf99f43e4763b7d8e1efc962160f82bc562cdc5a8fbf591cb47ec90f4e96f",
+      "bytes": 28509
     },
     {
       "path": "skills/international/liechtenstein/li-payroll-social.md",
-      "sha256": "882888edacfe0b8a4a7543e52201a8e0602b1873a3d25e63499d6a3b9456730c",
-      "bytes": 33604
+      "sha256": "06fcdc4b097df6416d284f4200fbdcd4e09f8cca62530df54da5229f8fbef1bf",
+      "bytes": 33515
     },
     {
       "path": "skills/international/liechtenstein/li-tax-overview.md",
-      "sha256": "cceeca6ee4cdb2ba6f5164da3836efebf72430b4f6046b8b059acd31449e4219",
-      "bytes": 4604
+      "sha256": "62eeb9200e1cf20bb32cc52aa20402126a48bb66ddae74178b2f972e8e86e83a",
+      "bytes": 4730
     },
     {
       "path": "skills/international/liechtenstein/li-transfer-pricing.md",
-      "sha256": "963195bbcb4533061b868a960e16f9abf00cf696c3422da21ece5cb811c5ea18",
-      "bytes": 19517
+      "sha256": "53b7d3ddc9f5447f72f857580bca92ee66588841bcf34fd18edb63d2973b9c4c",
+      "bytes": 21101
     },
     {
       "path": "skills/international/liechtenstein/liechtenstein-vat.md",
-      "sha256": "83ed049ad9c373473494f2767b0bd5f373552db647a6ce66107fa276321740e8",
-      "bytes": 22421
+      "sha256": "98ae4b745216e9a9992f48395c51cefab7a1b76e33a906c41c811a5040a41bd2",
+      "bytes": 22708
     }
   ]
 }

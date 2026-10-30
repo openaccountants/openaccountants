@@ -16,14 +16,12 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-30
-version: 0.4
+version: 0.5
 ---
 
-# Liechtenstein cross-border tax preparation v0.4
+# Liechtenstein cross-border tax preparation v0.5
 
-Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
-
-The 30 October 2026 nonresident and foreign-credit additions are writer drafts awaiting fresh independent whole-pack review; the 24 October review is not extended by this edit.
+Historical source/editorial evidence is in the [24 October review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md), confined to its exact predecessor and scope. The [current country review register](../../../ledgers/li-pack-review-evidence/README.md) identifies the 30 October review, repairs and exact-file verification. Named Liechtenstein accountant review remains open.
 
 ## Who this applies to
 
@@ -140,6 +138,8 @@ For a concrete treaty, retain its signed text, protocols, entry into force/appli
 SteG article 51 treats exclusion/restriction of domestic taxing rights over asset disposal/use as an arm's-length disposal/use event. The stated foreign-PE transfer/departure/seat-transfer deferral runs interest-free until actual realisation only with secured enforcement and annual proof. Subsequent value reductions have their own cap and no-foreign-duplication evidence. This is not an automatic tax-free move or a universal EU instalment election. Reconcile market/book values, deduction/loss interactions, retained domestic rights and the actual security/evidence before assessing tax or deferral. [SteG, article 51][law]
 
 SteG article 63 separately addresses treaty/reciprocity relief and specified corresponding TP adjustments. For final assessments, article 124a's qualifying foreign-adjustment route has a 90-day period after foreign finality and an outer ten-year period after the relevant tax year. Establish the exact qualifying rule and dates; this is not a general reopening right for any foreign notice. Refer treaty disputes/MAP, valuations and contested claims. [SteG, articles 63 and 124a][law]
+
+For ordinary corresponding-adjustment application requirements and deadlines, follow the [TP Guide’s application procedure](li-transfer-pricing.md). Article124a supplies the separate final-assessment reopening rule and does not replace that application procedure. [SteG63 and124a][law]; [SteV36d][ordinance]
 
 ## Two worked examples that recompute
 

@@ -25,9 +25,7 @@ version: 0.3
 
 # Liechtenstein payroll and social contributions v0.3
 
-Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
-
-The 30 October 2026 ordinary contribution and procedural additions are **writer drafts awaiting a new independent whole-pack review**. The 24 October review applies only to its pinned predecessor and stated scope.
+Historical source/editorial evidence is in the [24 October review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md), confined to its exact predecessor and scope. The [current country review register](../../../ledgers/li-pack-review-evidence/README.md) identifies the 30 October review, repairs and exact-file verification. Named Liechtenstein accountant review remains open.
 
 ## Who this applies to
 

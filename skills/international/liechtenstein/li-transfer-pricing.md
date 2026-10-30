@@ -16,14 +16,12 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-30
-version: 0.3
+version: 0.4
 ---
 
-# Liechtenstein transfer pricing v0.3
+# Liechtenstein transfer pricing v0.4
 
-Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
-
-The 30 October 2026 reporting and procedure additions are writer drafts awaiting fresh independent whole-pack review; the 24 October review is not extended by this edit.
+Historical source/editorial evidence is in the [24 October review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md), confined to its exact predecessor and scope. The [current country review register](../../../ledgers/li-pack-review-evidence/README.md) identifies the 30 October review, repairs and exact-file verification. Named Liechtenstein accountant review remains open.
 
 ## Who this applies to
 
@@ -94,7 +92,7 @@ A resident reporting entity registers unprompted **by the last day of its first 
 
 SteG article 135 provides fines for intentional/negligent noncompliance after a reminder, with the stated ordinary and serious/repeat maxima. It is not a specific automatic TP file fine. Incorrect profit, tax evasion and procedural noncompliance have different legal bases. Do not calculate a penalty or treat 60 days as extended without an actual authority decision. [SteG, articles 49 and 135][law]
 
-CbC sanctions have their **own** legal basis. Under article 20, the filing-duty maximum is CHF 250,000 for intentional breach and CHF 100,000 for negligence. The intentional registration-duty maximum is CHF 20,000; the negligent registration-duty maximum is CHF 10,000. Article 21 permits up to CHF 500,000 for serious, repeated or systematic filing breaches, while article 21 a separately covers the stated aggravated participation in another's filing breach. These are statutory ceilings subject to the actual offence/procedure, not a fee automatically added to the tax bill. [CbC Act articles 20–21 a][cbc-law]
+CbC sanctions have their **own** legal basis. Under article 20, the filing-duty maximum is CHF 250,000 for intentional breach and CHF 100,000 for negligence. The intentional registration-duty maximum is CHF 20,000; the negligent registration-duty maximum is CHF 10,000. Article 21 permits up to CHF 500,000 for serious, repeated or systematic filing breaches, while article 21a separately covers the stated aggravated participation in another's filing breach. These are statutory ceilings subject to the actual offence/procedure, not a fee automatically added to the tax bill. [CbC Act articles 20–21a][cbc-law]
 
 For ordinary administrative orders under the CbC procedure section, article 18 provides a written objection within 30 days of service, stating relief and supporting facts. Criminal-administrative routes differ: article 23 gives 14 days for its stated appeals and an objection to a penalty order. Identify the decision type before selecting a route; a 30-day administrative objection must not be used to extend a 14-day penalty-order remedy. [CbC Act articles 18 and 22–23][cbc-law]
 
@@ -103,6 +101,12 @@ For ordinary administrative orders under the CbC procedure section, article 18 p
 SteG article 63 addresses treaty/reciprocity relief and specified corresponding adjustments. Articles 124a and the actual foreign finality/treaty facts need separate review before seeking a change to a final assessment. This draft does not promise double-tax relief, an APA, a MAP result or an accepted transfer-price range.
 
 For a non-treaty foreign TP correction, SteG article 63(2) requires an application and proof both that the taxpayer could assume its original price complied with article 49 and that the foreign correction itself satisfies arm's length and was appropriately challenged abroad. Article 63(3) supplies a distinct application route for the recipient of a domestic related-party upward correction, with its original-price reliance gate. Article 124a changes a final assessment only for its article 63(2) situation: apply within 90 days of foreign-assessment finality and no later than 10 years after the relevant tax year ends. Keep the foreign final decision, challenge record, pricing evidence and service/finality dates; no universal corresponding adjustment or reopening right is promised. Actual treaty/MAP and foreign counterpart decisions remain separate. [SteG articles 63 and 124a][law]
+
+### Corresponding-adjustment application and finality clocks
+
+SteV article 36d supplies the procedure for article 63 applications. For a foreign article 63(2) correction, submit the complete facts, the original pricing/arm’s-length documentation, the foreign authority’s pricing/correction documentation, proof that all reasonable foreign challenge measures were taken, and the final foreign assessment. The stated rejection gates concern the original price’s defensible article 49 legal basis, whether the foreign correction is arm’s length, and whether reasonable foreign measures were taken. A domestic article 63(3) application instead needs 36d(1)(a)–(b)’s facts/original-price material and has its stated36d(2)(a) rejection gate. [SteV article 36d(1)–(3)][ordinance]
+
+Both applications are due **within three months after finality of the assessment of the taxpayer whose taxable profit was increased by the TP correction**. Retain that taxpayer’s actual finality evidence; do not substitute the applicant’s own assessment date. If a final Liechtenstein assessment also requires reopening under SteG 124a for a foreign article 63(2) correction, meet its separate 90-day foreign-finality and 10-year outer limits as well. Three calendar months and 90 days are distinct periods. Actual finality/service/holiday questions remain case-specific. [SteV article 36d(4)][ordinance]; [SteG article124a][law]
 
 ## Two worked examples that recompute
 
@@ -164,6 +168,8 @@ Not yet confirmed: contested size/period/currency interactions; actual transacti
 [cbc-authority]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/internationaler-informationsaustausch/cbcreporting
 [cbc-upload]: https://formulare.llv.li/formserver_CBC/start.do?generalid=STV_CBC_MM
 [cbc-technical]: https://www.llv.li/serviceportal2/amtsstellen/steuerverwaltung/int_cbc_xml_zusatzspezifikation.pdf
+
+SteV 36d was read 30 October 2026 following independent review; its application requirements and separate three-month deadline are supplied above. The consolidation notes first apply36d to 2025 assessments.
 
 [law]: https://www.gesetze.li/konso/pdf/2010340000
 [ordinance]: https://www.gesetze.li/konso/pdf/2010437000

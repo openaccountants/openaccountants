@@ -137,13 +137,13 @@
   ],
   "preservation": {
     "li-company-formation": {
-      "guide_sha256": "d03528182c8b1505f20de300c466cd616c3ca2d65e928f0998ec235dae295aab",
+      "guide_sha256": "57e40ab3e2c0224955cc23c50b2989040022b7816ac486f5a15564e67f1422a3",
       "old_calculation_blocks_retained_exact": 2,
       "protected_metadata_CTA_unchanged": true,
       "relative_markdown_links_exist": true
     },
     "li-tax-overview": {
-      "guide_sha256": "cceeca6ee4cdb2ba6f5164da3836efebf72430b4f6046b8b059acd31449e4219",
+      "guide_sha256": "62eeb9200e1cf20bb32cc52aa20402126a48bb66ddae74178b2f972e8e86e83a",
       "old_calculation_blocks_retained_exact": 0,
       "protected_metadata_CTA_unchanged": true,
       "relative_markdown_links_exist": true

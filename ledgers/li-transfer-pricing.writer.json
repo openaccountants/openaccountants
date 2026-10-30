@@ -1,7 +1,7 @@
 {
   "status": "WRITER LEDGER; NEW FULL-PACK INDEPENDENT REVIEW PENDING",
   "guide": "skills/international/liechtenstein/li-transfer-pricing.md",
-  "guide_sha256": "963195bbcb4533061b868a960e16f9abf00cf696c3422da21ece5cb811c5ea18",
+  "guide_sha256": "53b7d3ddc9f5447f72f857580bca92ee66588841bcf34fd18edb63d2973b9c4c",
   "rules": [
     {
       "id": "LI-TP-001",
@@ -966,6 +966,71 @@
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
     },
     {
+      "id": "LI-TP-075",
+      "rule_or_figure": "Foreign corresponding-adjustment application: full facts, original/foreign pricing evidence, reasonable challenge proof and final foreign assessment",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteV36d(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "die rechtskräftige ausländische Steuerveranlagung.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-TP-076",
+      "rule_or_figure": "Foreign application refusal: original defensible legal basis, arm-length foreign correction and reasonable foreign measures",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteV36d(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "sich der ursprünglich angesetzte Verrechnungspreis nicht auf eine vertretbare Rechtsansicht im Sinne von Art. 49 SteG stützt;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-TP-077",
+      "rule_or_figure": "Domestic application requires36d(1)(a)–(b) and has stated36d(2)(a) refusal gate",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteV36d(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "hat die Informationen und Unterlagen nach Abs. 1 Bst. a und b zu enthalten;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-TP-078",
+      "rule_or_figure": "Both requests within3calendar months after finality of increased-profit taxpayer assessment; distinct from124a90days",
+      "Guide_section": "Cross-border points / Deadlines and filing",
+      "act_article_or_official_section": "SteV36d(4)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "innert drei Monaten nach Rechtskraft der Veranlagung des Steuerpflichtigen",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-TP-079",
+      "rule_or_figure": "36d first applies to2025 assessments, current2026 method included",
+      "Guide_section": "Sources / commencement",
+      "act_article_or_official_section": "SteV note60;LGBl2025/169",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "Er findet erstmals auf Veranlagungen des Steuerjahres 2025 Anwendung.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
       "id": "LI-TP-W01",
       "rule_or_figure": "Transactionregisterbyrelatedparty/PE/category/year/grossflowandcurrency;no artificialnetting",
       "classification": "AUTHOR WORKFLOW/EXPRESS LIMIT; not a new legal threshold",
@@ -1037,49 +1102,49 @@
       "old_text": "# Liechtenstein transfer pricing v0.2",
       "old_sha256": "613c423a2656750cd5bd4c3e275165c62724c395313555c3417c7c0849398af3",
       "exact_retained": false,
-      "destination": "Current H1 v0.3; monotonic version."
+      "destination": "Current H1 v0.4; monotonic version."
     },
     {
       "id": "OLD-003",
       "old_text": "Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.",
       "old_sha256": "8e7c827e86c5cc5b9c1043e1196153b994c25a6491ecc03df91b3f07ed5970df",
-      "exact_retained": true,
-      "destination": "current Guide line24"
+      "exact_retained": false,
+      "destination": "Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open."
     },
     {
       "id": "OLD-004",
       "old_text": "## Who this applies to",
       "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
       "exact_retained": true,
-      "destination": "current Guide line28"
+      "destination": "Current Guide line26"
     },
     {
       "id": "OLD-005",
       "old_text": "SteG article 49 requires related-party and PE dealings to use conditions that independent parties would agree in comparable circumstances, and documentation for material transactions. SteV article 31b implements the methods and evidence routes. These are Liechtenstein rules; no Swiss documentation exemption is imported. This source-cited draft supplies preparation, not an accepted benchmark or complete TP coverage. [Tax Act][law]; [Tax Ordinance][ordinance]",
       "old_sha256": "46f21e65a7e2d7a78811a06547fca3acfe1830d956a4ca9700b1743d0cbf16bc",
       "exact_retained": true,
-      "destination": "current Guide line30"
+      "destination": "Current Guide line28"
     },
     {
       "id": "OLD-006",
       "old_text": "## Related persons and transaction record",
       "old_sha256": "82fa82e3005b2d1a35ef8a91cb265869527ed058bf56104623c1620471f5fdbf",
       "exact_retained": true,
-      "destination": "current Guide line46"
+      "destination": "Current Guide line44"
     },
     {
       "id": "OLD-007",
       "old_text": "SteV article 31a includes direct/indirect participation or beneficial interests in either direction, organs, close personal relationships (including family/friendship), their stated connections and connected participations. Its reach is broader than one percentage test. Article 31b(7)'s at-least-25% participation/benefit condition applies to the formal-documentation duty under paragraphs 2–6 for the relationships in article 31a(a) and (c); it does not erase the residual evidence duty in paragraph 8. Retain the exact relationship and direct/indirect chain, not only an ownership percentage. [SteV, articles 31a–31b][ordinance]",
       "old_sha256": "22ed1177d6be3ed8f68531cd5535fabaab5390ebafc067a93b0c3554441703d9",
       "exact_retained": true,
-      "destination": "current Guide line48"
+      "destination": "Current Guide line46"
     },
     {
       "id": "OLD-008",
       "old_text": "Create a transaction register by party/PE, country, relationship, category, year, amount, currency, contract, invoicing, actual conduct and accounting line. Record functions, risks, assets, personnel/control, value chain and any PE allocation. Reconcile gross flows before testing thresholds; do not net opposite payments or unrelated categories to manufacture a smaller amount. The treatment of an unusual aggregation/currency/period case still needs specific confirmation.",
       "old_sha256": "1bc3bfec606f3451d888b4b34822c207f2f9e21a9f5d519a38aea2374ba6ab63",
       "exact_retained": true,
-      "destination": "current Guide line50"
+      "destination": "Current Guide line48"
     },
     {
       "id": "OLD-009",
@@ -1093,49 +1158,49 @@
       "old_text": "All thresholds below are from current SteV article 31b. “More than” and “exceeds” are strict; an equal amount does not itself cross that particular threshold. This does not exempt the transaction from arm's-length pricing or paragraph 8 evidence.",
       "old_sha256": "3533c91c303c605ba7692930eff8e029af1af762e58d13b15e8d847151e5f893",
       "exact_retained": true,
-      "destination": "current Guide line34"
+      "destination": "Current Guide line32"
     },
     {
       "id": "OLD-011",
       "old_text": "| Route | Entry gate | Cross-border transaction threshold and content |",
       "old_sha256": "7f8dbab92882ae60243becdc46d76c90f62057fe1b201aed3e649d34414a963a",
       "exact_retained": true,
-      "destination": "current Guide line36"
+      "destination": "Current Guide line34"
     },
     {
       "id": "OLD-012",
       "old_text": "|---|---|---|",
       "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
       "exact_retained": true,
-      "destination": "current Guide line37"
+      "destination": "Current Guide line35"
     },
     {
       "id": "OLD-013",
       "old_text": "| Article 31b(2)–(3) | Part of a group with consolidated turnover **more than CHF 900 million** | OECD Master File and Local File; goods purchases/sales **over CHF 1 million** per connected party/PE/year, or other expenses/income **over CHF 250,000** per expense/income category, party/PE/year |",
       "old_sha256": "5fa22ab5802cff6a9f9eab7d17be46427dd9cb2e60edc0f305321024512f93b6",
       "exact_retained": true,
-      "destination": "current Guide line38"
+      "destination": "Current Guide line36"
     },
     {
       "id": "OLD-014",
       "old_text": "| Article 31b(4)–(5) | Outside the above group route but exceeding **all** size criteria referenced in PGR article 1064(2) | Specified company/business/structure description, relationship register, functions/risks/assets, reasoned method selection and pricing/arm's-length analyses; goods **over CHF 500,000**, other expenses/income **over CHF 125,000**, on the stated party/category/year bases |",
       "old_sha256": "d0b5a888705cfc07108a0fde82dd26d4f9b5056d0e1da8534d5ce53cd124d9a7",
       "exact_retained": true,
-      "destination": "current Guide line39"
+      "destination": "Current Guide line37"
     },
     {
       "id": "OLD-015",
       "old_text": "| Article 31b(8) | Transactions/relationships not captured by paragraphs 2–5 and 7 | Suitable evidence of arm's-length compliance on authority request; no blanket small-company or domestic-transaction exemption |",
       "old_sha256": "8140d8d89c572cdbe52085dcb4630a2b61ec2f3cacf4f6c1d7134257103d76b6",
       "exact_retained": true,
-      "destination": "current Guide line40"
+      "destination": "Current Guide line38"
     },
     {
       "id": "OLD-016",
       "old_text": "The PGR article 1064(2) criteria currently state CHF 32.4 million balance sheet, CHF 64.8 million net sales and 250 average employees. PGR company classification ordinarily uses two of three, whereas SteV's formal-documentation cross-reference expressly says **all** criteria. Do not replace the latter with the generic “large company” label. PGR article 1064(4) also has a two-consecutive-balance-date rule and an initial-application rule; article 1064(5) addresses other reporting currencies. Retain both years, initial-application and currency evidence and confirm any contested interaction before deciding a formal-duty exemption. [PGR, article 1064, current 1 September 2026 consolidation][pgr]; [SteV, article 31b(4)][ordinance]",
       "old_sha256": "aa5ce089150bd2a0feb686bc05868156c15d0c01b29109c5a2a69fc3c4fb0f3e",
       "exact_retained": true,
-      "destination": "current Guide line42"
+      "destination": "Current Guide line40"
     },
     {
       "id": "OLD-017",
@@ -1149,14 +1214,14 @@
       "old_text": "## Method and workpaper",
       "old_sha256": "51f2193d6499d1c372deccec62aa301cb6c9d5b873bd16d09fc6129c3c815dfd",
       "exact_retained": true,
-      "destination": "current Guide line52"
+      "destination": "Current Guide line50"
     },
     {
       "id": "OLD-019",
       "old_text": "Article 31b(1) applies the current OECD TP Guidelines and requires the most suitable method for the actual transaction facts. It lists CUP, resale price, cost plus, TNMM and profit split; another method is permitted if the listed methods cannot suitably represent the arm's-length result. Do not select a method merely because a markup is easy to compute. [SteV, article 31b(1)][ordinance]",
       "old_sha256": "7d52c25a6f5af39e20885b1f23dd7c1975ad2e17f17bebe86aac721372960774",
       "exact_retained": true,
-      "destination": "current Guide line54"
+      "destination": "Current Guide line52"
     },
     {
       "id": "OLD-020",
@@ -1177,14 +1242,14 @@
       "old_text": "SteG article 135 provides fines for intentional/negligent noncompliance after a reminder, with the stated ordinary and serious/repeat maxima. It is not a specific automatic TP file fine. Incorrect profit, tax evasion and procedural noncompliance have different legal bases. Do not calculate a penalty or treat 60 days as extended without an actual authority decision. [SteG, articles 49 and 135][law]",
       "old_sha256": "bb077279047e007fa254318f1e32aea7e2d60a5a841981994568f36c157cd572",
       "exact_retained": true,
-      "destination": "current Guide line95"
+      "destination": "Current Guide line93"
     },
     {
       "id": "OLD-023",
       "old_text": "SteG article 63 addresses treaty/reciprocity relief and specified corresponding adjustments. Articles 124a and the actual foreign finality/treaty facts need separate review before seeking a change to a final assessment. This draft does not promise double-tax relief, an APA, a MAP result or an accepted transfer-price range.",
       "old_sha256": "a19cdff30bc78951033f15cc8cf164b19d85e7f660059f4050f62cf5b5749866",
       "exact_retained": true,
-      "destination": "current Guide line103"
+      "destination": "Current Guide line101"
     },
     {
       "id": "OLD-024",
@@ -1198,35 +1263,35 @@
       "old_text": "### Same-party goods aggregation in the assumed Master/Local route",
       "old_sha256": "00c0540df87bf9cd0fe2ab1c66381a9fb59a7b525a757f63078bda576719fc46",
       "exact_retained": true,
-      "destination": "current Guide line109"
+      "destination": "Current Guide line113"
     },
     {
       "id": "OLD-026",
       "old_text": "Assume the group route, qualifying relationship and cross-border goods purchases from one party in one year are established. Two purchases of CHF 600,000 and CHF 500,000 total CHF 1.1 million, over the CHF 1 million threshold. No other party/category is included.",
       "old_sha256": "95200696e5f36ff7fce11251cb3c1edf440050d3a34a743be4a4cbd61f96e4a7",
       "exact_retained": true,
-      "destination": "current Guide line111"
+      "destination": "Current Guide line115"
     },
     {
       "id": "OLD-027",
       "old_text": "```oa-check\nname: Liechtenstein assumed group route goods threshold\ninputs:\n  first_goods_purchase: 600000\n  second_goods_purchase: 500000\n  established_route_threshold: 1000000\nsteps:\n  party_year_purchases: first_goods_purchase + second_goods_purchase\n  excess_over_threshold: party_year_purchases - established_route_threshold\nexpected:\n  party_year_purchases: 1100000\n  excess_over_threshold: 100000\n```",
       "old_sha256": "91b85acf1a480b3f5ba23c82751bd70f6d6e2241ba23fa77b3feeab123443866",
       "exact_retained": true,
-      "destination": "current Guide line113"
+      "destination": "Current Guide line117"
     },
     {
       "id": "OLD-028",
       "old_text": "### Separate-size route category aggregation",
       "old_sha256": "5178253650307942a87b54eb60eb2946797c6387ea7fc5e1a3144bb8495c26b8",
       "exact_retained": true,
-      "destination": "current Guide line79"
+      "destination": "Current Guide line77"
     },
     {
       "id": "OLD-029",
       "old_text": "Assume the separate-size route and relationship conditions are established, with two cross-border service expenses in the same category to one party, CHF 80,000 and CHF 60,000. CHF 140,000 exceeds CHF 125,000 by CHF 15,000. This does not establish the company-size or relationship gates.",
       "old_sha256": "303953659f1c6fa9cffddced830ad9c3f676b4698dce31268c39daa027264362",
       "exact_retained": true,
-      "destination": "current Guide line81"
+      "destination": "Current Guide line79"
     },
     {
       "id": "OLD-030",
@@ -1240,21 +1305,21 @@
       "old_text": "### Gross cost-plus is not margin on sales",
       "old_sha256": "3950bbafe272731737c8a136efc234dca5f7a44ea1a8a0622e522e7c685eb425",
       "exact_retained": true,
-      "destination": "current Guide line127"
+      "destination": "Current Guide line131"
     },
     {
       "id": "OLD-032",
       "old_text": "Assume an independently supported gross cost-plus method, CHF 100,000 eligible cost and 8% markup solely for the case. Gross profit is CHF 8,000, revenue CHF 108,000 and profit/revenue approximately 7.407407%. Neither percentage is a Liechtenstein safe harbour; no TNMM benchmark is inferred.",
       "old_sha256": "5048cf4420f287422cb9dfee68223d08621bee698825124cf24528eff0d7db7e",
       "exact_retained": true,
-      "destination": "current Guide line129"
+      "destination": "Current Guide line133"
     },
     {
       "id": "OLD-033",
       "old_text": "```oa-check\nname: Liechtenstein assumed gross cost plus denominator control\ninputs:\n  established_cost_base: 100000\n  assumed_supported_markup: 0.08\nsteps:\n  gross_profit: established_cost_base * assumed_supported_markup\n  transaction_revenue: established_cost_base + gross_profit\n  profit_as_percent_of_sales: gross_profit / transaction_revenue * 100\nexpected:\n  gross_profit: 8000\n  transaction_revenue: 108000\n  profit_as_percent_of_sales: 7.407407407407407\n```",
       "old_sha256": "c75142c465e71406906a09abfcc0db4e58060497dc62bdc412ffe45287b84f9b",
       "exact_retained": true,
-      "destination": "current Guide line131"
+      "destination": "Current Guide line135"
     },
     {
       "id": "OLD-034",
@@ -1275,7 +1340,7 @@
       "old_text": "## Sources",
       "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
       "exact_retained": true,
-      "destination": "current Guide line150"
+      "destination": "Current Guide line154"
     },
     {
       "id": "OLD-037",
@@ -1296,35 +1361,35 @@
       "old_text": "[law]: https://www.gesetze.li/konso/pdf/2010340000\n[ordinance]: https://www.gesetze.li/konso/pdf/2010437000\n[pgr]: https://www.gesetze.li/konso/pdf/1926004000",
       "old_sha256": "ff654cb40b329abaf9c24b04199fd7b781e99b3dff8a45d01d7b4a2f869af867",
       "exact_retained": true,
-      "destination": "current Guide line168"
+      "destination": "Current Guide line174"
     },
     {
       "id": "OLD-040",
       "old_text": "<!-- openaccountants-cta-block -->",
       "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "exact_retained": true,
-      "destination": "current Guide line172"
+      "destination": "Current Guide line178"
     },
     {
       "id": "OLD-041",
       "old_text": "---",
       "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
       "exact_retained": true,
-      "destination": "current Guide line1"
+      "destination": "Current Guide line1"
     },
     {
       "id": "OLD-042",
       "old_text": "## Talk to an accountant",
       "old_sha256": "2c053967fa7ab3e0318ae212a61d5f13965c474e336848bbc77f5976214e2dd9",
       "exact_retained": true,
-      "destination": "current Guide line176"
+      "destination": "Current Guide line182"
     },
     {
       "id": "OLD-043",
       "old_text": "Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).",
       "old_sha256": "24f7c27dd7f52c15f0a5a162ce9ed615250f525c513ffb87020f75112cb00ae0",
       "exact_retained": true,
-      "destination": "current Guide line178"
+      "destination": "Current Guide line184"
     }
   ],
   "quote_binding_failures": [],
@@ -1335,7 +1400,7 @@
   },
   "explicit_successors": {
     "old scope noCbC method": "Separate CbC workflow now supplies ordinary statutory/reporting/exchange procedure; live schema/currency/systemicfailure/publictransparency gaps retained",
-    "old adjustmentfinalitygap": "Cross-border points suppliesactual63(2)/(3)gatesand124a90days/10years;case-specifictreaty/foreignfactsremain",
+    "old adjustmentfinalitygap": "Cross-border points supplies63(2)/(3),SteV36d application/3-month trigger and distinct124a90day/10year reopening gates;case-specifictreaty/foreignfactsremain",
     "original 3examples": "2blocksremaincurrent;all3blocksretainedexactinannex,includingseparate-size140000/125000/15000case;substantivecasecurrent"
   },
   "remaining": "Contested size/currency/period interactions, actual comparables, specific treaty/APA/MAP and foreign systemic-failure facts; full payload/correction execution and public transparency regime remain explicit. No independent PASS or country-complete claim."

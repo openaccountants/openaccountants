@@ -1,6 +1,6 @@
 {
   "status": "WRITER CHECKS ONLY; FULL INDEPENDENT PACK REVIEW PENDING",
-  "guide_sha256": "83ed049ad9c373473494f2767b0bd5f373552db647a6ce66107fa276321740e8",
+  "guide_sha256": "98ae4b745216e9a9992f48395c51cefab7a1b76e33a906c41c811a5040a41bd2",
   "controls": [
     {
       "name": "Direct eligible plus documented shared-use recovery",

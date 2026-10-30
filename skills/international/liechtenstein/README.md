@@ -1,6 +1,6 @@
 ---
 jurisdiction: LI
-version: 0.6
+version: 0.7
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -13,18 +13,18 @@ covered_by:
   TP: li-transfer-pricing
   XB: li-cross-border
 partial:
-  IT-IND: "2026 statutory tariffs/minimum income, ordinary wealth/debt/rounding, employee expenses, deduction screens and extension method drafted; actual municipal rates, detailed unquoted/actuarial and special/foreign cases, final tax rounding/current assigned calendar and fresh independent review remain open."
-  IT-CORP: "2026 ordinary liquidity/modified-equity computation, participation-exemption screens, minimum and loss methods drafted; actual tax-value/anti-abuse/foreign facts, groups, GloBE and current filing application remain open. Fresh independent review pending."
+  IT-IND: "2026 statutory tariffs/minimum income, ordinary wealth/debt/rounding, employee expenses, deduction screens and extension method drafted; actual municipal rates, detailed unquoted/actuarial and special/foreign cases, final tax rounding/current assigned calendar remain open; review status is in the country review register."
+  IT-CORP: "2026 ordinary liquidity/modified-equity computation, participation-exemption screens, minimum and loss methods drafted; actual tax-value/anti-abuse/foreign facts, groups, GloBE and current filing application remain open. Review status is in the country review register."
   VAT: "2026 registration/authority, acquisition tax, shared-input allocation, ordinary use-change timing and current interest methods drafted; actual supply/allocation, exact day-count, operational fields and independent pack review remain open."
-  SC: "2026 employee, ordinary self-employed rounding/minimum and non-employed category/table methods drafted; actual capital-base reconciliation, mixed-status, exact duration/rounding, continued-work and insurance/interest chain remain open. New methods await independent whole-pack review."
+  SC: "2026 employee, ordinary self-employed rounding/minimum and non-employed category/table methods drafted; actual capital-base reconciliation, mixed-status, exact duration/rounding, continued-work and insurance/interest chain remain open. Review status is in the country review register."
   PR: "2026 resident/nonresident wage withholding, schedule and remittance preparation added; treaty, benefit, exact calendar, full statutory and named local accountant review remain open."
-  TP: "Statutory documentation routes, ordinary CbC reporting/registration/exchange and corresponding-adjustment procedure supplied as writer drafts; contested size/currency/period, benchmarks, actual foreign/systemic-failure/treaty and full payload/correction/public-transparency scope remain open. New methods await independent pack review."
+  TP: "Statutory documentation routes, ordinary CbC reporting/registration/exchange and corresponding-adjustment procedure supplied as writer drafts; contested size/currency/period, benchmarks, actual foreign/systemic-failure/treaty and full payload/correction/public-transparency scope remain open. Review status is in the country review register."
   XB: "Domestic residence/source/PE, ordinary nonresident assessment, 2026 surcharge, distinct individual/business foreign-credit and corporate exit methods drafted; actual treaties, individual-business tax mapping, special cases and operational claims remain open."
 ---
 
 # Liechtenstein tax pack
 
-Accountable owner: Michael. Active writer: this Codex chat (`01a162b7-fe36-7491-8fb0-5702819d9e06`), local branch `codex/liechtenstein-persistent`, continuing existing country [PR #785](https://github.com/openaccountants/openaccountants/pull/785) and [issue #406](https://github.com/openaccountants/openaccountants/issues/406). The branch includes current main at `b0882619b`. Preserve the 24 October exact-scope review; the 30 October writer changes require a new independent whole-pack review. One country update follows completed local work and review.
+Accountable owner: Michael. Active writer: this Codex chat (`01a162b7-fe36-7491-8fb0-5702819d9e06`), local branch `codex/liechtenstein-persistent`, continuing existing country [PR #785](https://github.com/openaccountants/openaccountants/pull/785) and [issue #406](https://github.com/openaccountants/openaccountants/issues/406). The branch includes current main at `b0882619b`. Preserve the 24 October exact-scope review. The 30 October whole-pack review and repair verification are recorded in the [country review register](../../../ledgers/li-pack-review-evidence/README.md). One country update follows completed local work and exact-repair verification.
 
 The tax authority is the Liechtenstein Steuerverwaltung. Use the country's own tax and VAT Acts and its actual authority allocation. Swiss VAT practice applies by analogy with local deviations; it does not send every Liechtenstein taxpayer to the Swiss filing system. The historical source list below was read on 24 October 2026; all eight writer ledgers record their 30 October source reads separately.
 
@@ -53,21 +53,21 @@ The [24 October independent whole-pack review](../../../docs/research/2026-10-24
 | Current ledger | Rule/control groups | Private writer controls |
 |---|---:|---:|
 | [Payroll/social](../../../ledgers/li-payroll-social.md) | 168 | 28 |
-| [Transfer pricing](../../../ledgers/li-transfer-pricing.md) | 82 | 19 |
+| [Transfer pricing](../../../ledgers/li-transfer-pricing.md) | 87 | 19 |
 | [Cross-border](../../../ledgers/li-cross-border.md) | 71 | 17 |
 | [VAT](../../../ledgers/liechtenstein-vat.md) | 77 | 25 |
-| [Corporate income](../../../ledgers/li-corporate-income-tax.md) | 82 | 30 |
+| [Corporate income](../../../ledgers/li-corporate-income-tax.md) | 86 | 30 |
 | [Individual income](../../../ledgers/li-income-tax.md) | 121 | 36 |
 | [Formation](../../../ledgers/li-company-formation.md) | 51 | 19 |
 | [Overview routing/scope](../../../ledgers/li-tax-overview.md) | 11 | Included in formation preservation/link checks |
 
-Each ledger has original-language quotations, act/article references, official URLs/read dates and a complete predecessor-topic destination table. All 32 non-employed contribution-table rows match the official 2026 source. All 174 writer controls pass; all 27 personal-tax tariff rows match the original Act. The 663 ledger groups include legal rules, source/old-topic controls, assumed arithmetic and routing/scope entries; they are not a count of independently verified legal facts. These are writer checks, **not independent review**.
+Each ledger has original-language quotations, act/article references, official URLs/read dates and a complete predecessor-topic destination table. All 32 non-employed contribution-table rows match the official 2026 source. All 174 writer controls pass; all 27 personal-tax tariff rows match the original Act. The 672 ledger groups include legal rules, source/old-topic controls, assumed arithmetic and routing/scope entries; they are not a count of independently verified legal facts. These are writer checks, **not independent review**.
 
 All six tax preparation Guides now have the nine authored sections and exactly two executable examples. Formation keeps two original funding examples; the overview is a calculation-free router. Their original blocks remain unchanged in the [payroll annex](../../../ledgers/li-payroll-social-evidence/retained-original-controls.md), [TP annex](../../../ledgers/li-transfer-pricing-evidence/retained-original-controls.md), [cross-border annex](../../../ledgers/li-cross-border-evidence/retained-original-controls.md), [VAT annex](../../../ledgers/liechtenstein-vat-evidence/retained-original-controls.md), [corporate annex](../../../ledgers/li-corporate-income-tax-evidence/retained-original-controls.md) and [individual annex](../../../ledgers/li-income-tax-evidence/retained-original-controls.md). All substantive predecessor cases remain in the current Guides.
 
 The payroll draft supplies ordinary self-employed/non-employed methods, capital-interest linkage, pension-entry/risk/saving dates and appeal routes. The TP draft supplies CbC reporting-role, revenue, registration/filing, exchange/channel and sanctions methods, plus the ordinary SteG63/124a corresponding adjustment. The cross-border draft adds ordinary nonresident assessment, the enacted 2026 article23(5)(b) surcharge and distinct individual/business credit computations and claim rules. The VAT draft adds direct/shared-use allocation, ordinary permanent/temporary input-use changes, annual tax-period timing, current interest rules and the acquisition-tax-only portal process. The corporate draft builds ordinary excess liquidity and modified equity from documented inputs and supplies the statutory participation-exemption screens. The individual draft adds ordinary wealth/debt/rounding and expense/deduction/extension methods and corrects the personal business-capital reference. Formation supplies current size/assurance/waiver and electronic-disclosure screens; the overview points to country PR #785. Each Guide retains its precise unresolved application questions.
 
-All eight writer ledgers and predecessor-topic destination tables are prepared. Freeze the exact full-country candidate and obtain one fresh independent review of every ledger group, old-topic samples and examples. Fix findings before publication; current partial entries remain in force. Fresh independent whole-pack review is pending. No new content has been pushed to PR #785 at this checkpoint. Every domain remains partial; source preparation and writer controls do not establish comprehensive coverage or accountant attestation.
+All eight writer ledgers and predecessor-topic destination tables are prepared. The independent whole-pack review of the original 663 groups completed with four findings. The writer applied the corresponding-adjustment procedure, corporate electronic-filing/deadline, VAT bibliography and supplier-label repairs, adding nine source groups. Exact-repair verification is tracked in the [review register](../../../ledgers/li-pack-review-evidence/README.md) and is required before publication. Current partial entries remain in force. No new content has been pushed to PR #785 at this checkpoint. Every domain remains partial; source preparation and writer controls do not establish comprehensive coverage or accountant attestation.
 
 ## Official sources
 

@@ -11,7 +11,7 @@ description: >
   methods, property, groups, sector exemptions or complex partial recovery. Bank
   statements alone do not establish VAT treatment. The source-cited draft remains
   subject to named local accountant review.
-version: 2.3
+version: 2.4
 jurisdiction: LI
 tax_year: 2026
 last_updated: 2026-10-30
@@ -22,11 +22,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 ---
 
-# Liechtenstein VAT preparation v2.3
+# Liechtenstein VAT preparation v2.4
 
-Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
-
-The 30 October 2026 allocation/use-change and interest additions are writer drafts awaiting fresh independent whole-pack review. The 24 October review is not extended by this edit.
+Historical source/editorial evidence is in the [24 October review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md), confined to its exact predecessor and scope. The [current country review register](../../../ledgers/li-pack-review-evidence/README.md) identifies the 30 October review, repairs and exact-file verification. Named Liechtenstein accountant review remains open.
 
 ## Who this applies to
 
@@ -166,18 +164,17 @@ Obtain the registration/authority decision, approved method/period, portal repre
 
 ## Sources
 
-The 24 October reviewed scope is retained at its pinned predecessor. Current statutory writer checks were read 30 October 2026; the administrative page entries retain historical 24 October access unless separately recorded.
+The 24 October reviewed scope remains pinned to its predecessor. The selected 30 October statutory and actual browser reads below support the new writer methods; they do not extend the historical independent review.
 
-- [Liechtenstein MWSTG, consolidated 1 January 2026]- [MWSTV, consolidated 1 January 2026][ordinance], selected articles 65–72 and 142–143, and [enacted 2025/548][interest-amendment], effective 1 January 2026, read 30 October 2026 for the ordinary input-correction and interest method.
+- [Liechtenstein MWSTG, consolidated1 January 2026][law]: historical 24 October selected articles3,7–8,10–14,25–31,35–38,45–48,52–54,58–59,66,76–77 and86. The ledger separately records the 30 October ordinary registration/input-use-change/tax-period/payment/refund passages, including32–34 and78. Official PDF/text retrieval is distinguished from web-reader transport; neither is a complete amendment/exemption/treaty audit.
+- [MWSTV, consolidated1 January 2026][ordinance], selected 65–72 and142–143, and [enacted 2025/548][interest-amendment], effective1 January 2026, read 30 October 2026 for the ordinary input-correction and interest method.
+- [Actual eMWST channel][portal], [registration/authority allocation][registration] and [Swiss-practice-by-analogy page][practice]: selected relevant paragraphs read in the normal browser30October2026, with exact selected excerpts retained in the ledger evidence. This does not assert every page, every accordion or private portal field was audited.
+- [Current rate categories][rates] and [2025 changes][changes]: historical 24 October access retained; no fresh whole-page read claimed. The original direct bulk HTML attempt met HTTP 403; successful web/browser observations remain separately identified.
 
-Not yet confirmed: complete special-supply/sector/group/property/renovation/self-manufactured methods; contested successive changes, valuations and allocation evidence; exact interest day-count/application; current authenticated return fields, upload/correction execution and final calendar adjustments. Historical source access and writer checks do not establish comprehensive coverage or accountant attestation.
+Not yet confirmed: complete special-supply/sector/group/property/renovation/self-manufactured methods; contested successive changes, valuations and allocation evidence; exact interest day-count/application; current authenticated return fields, upload/correction execution and final calendar adjustments. Source access and writer checks do not establish comprehensive coverage or accountant attestation.
 
 [ordinance]: https://www.gesetze.li/konso/pdf/2009340000
 [interest-amendment]: https://www.gesetze.li/chrono/pdf/2025548000
-
-[law]: selected articles3,7–8,10–14,25–38,45–48,52–54,58–59,66,76–78 and86. Direct official PDF retrieval/text was available when the web reader failed. This is not a complete amendment, ordinance, exemption or treaty review.
-- [Actual Liechtenstein eMWST channel][portal], [registration/authority allocation][registration], [current rate categories][rates], [practice-publication status][practice] and [2025 changes][changes]. Historical 24 October authority pages were read through the web reader; the direct bulk HTML reader encountered HTTP 403 and is not represented as successful transport evidence.
-
 [law]: https://www.gesetze.li/konso/pdf/2009330000
 [portal]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/e-mwst
 [registration]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/wer-ist-mwst-steuerpflichtig

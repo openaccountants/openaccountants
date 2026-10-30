@@ -1,7 +1,7 @@
 {
   "status": "WRITER LEDGER; NOT INDEPENDENTLY REVIEWED; COUNTRY PARTIAL",
   "guide": "skills/international/liechtenstein/li-payroll-social.md",
-  "guide_sha256": "882888edacfe0b8a4a7543e52201a8e0602b1873a3d25e63499d6a3b9456730c",
+  "guide_sha256": "06fcdc4b097df6416d284f4200fbdcd4e09f8cca62530df54da5229f8fbef1bf",
   "source_read_date": "2026-10-30",
   "normalization": "Whitespace/linewrapping and PDF discretionary hyphens only; web-reader line prefixes removed. Quotes are original German, not translated. Observations are fetched tool text where direct HTTP blocked, explicitly not rawPDF/HTML.",
   "rules": [
@@ -2366,21 +2366,21 @@
       "id": "OLD-003",
       "old_sha256": "8e7c827e86c5cc5b9c1043e1196153b994c25a6491ecc03df91b3f07ed5970df",
       "old_text": "Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.",
-      "destination": "current Guide line 28",
-      "exact_retained": true
+      "destination": "Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open.",
+      "exact_retained": false
     },
     {
       "id": "OLD-004",
       "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
       "old_text": "## Who this applies to",
-      "destination": "current Guide line 32",
+      "destination": "Current Guide line30",
       "exact_retained": true
     },
     {
       "id": "OLD-005",
       "old_sha256": "ae3264ac1ca0fca8480e90851c2304ac2b8222e8fe70c850f03b91902daddf1f",
       "old_text": "Use this 2026 source-cited draft for ordinary employees subject to Liechtenstein payroll and insurance. Confirm coverage separately for each employment and country. The combined Guide supplies scoped PR and SC methods; it does not complete either domain. The earlier Swiss contribution approximations and resident-assessment-only instruction are replaced below, with the prior text retained in Git history.",
-      "destination": "current Guide line 34",
+      "destination": "Current Guide line32",
       "exact_retained": true
     },
     {
@@ -2394,189 +2394,189 @@
       "id": "OLD-007",
       "old_sha256": "a94eedfa7c615187c2f6c9f934fd6a5b1141e35e0205ecaf0524fb74f530de89",
       "old_text": "The [AHV-IV-FAK bulletin effective 1 January 2026][contributions], sections 5–6, gives these percentages of the established contribution wage:",
-      "destination": "current Guide line 38",
+      "destination": "Current Guide line36",
       "exact_retained": true
     },
     {
       "id": "OLD-008",
       "old_sha256": "5b423dcc347225e2f085f536fcdd9f957c949d2c8e0f8901be9ee594485a9cc6",
       "old_text": "| Contribution | Employee | Employer |",
-      "destination": "current Guide line 40",
+      "destination": "Current Guide line38",
       "exact_retained": true
     },
     {
       "id": "OLD-009",
       "old_sha256": "da0d2939417bd1f8f9b73f8ea5658a09eef3562eb292f83e7401a414143a9775",
       "old_text": "|---|---:|---:|",
-      "destination": "current Guide line 41",
+      "destination": "Current Guide line39",
       "exact_retained": true
     },
     {
       "id": "OLD-010",
       "old_sha256": "35dcc1d2908272795252360d02ad2d02d014996eb1fb6b81a9921c20b1213121",
       "old_text": "| AHV | 4.025% | 4.225% |",
-      "destination": "current Guide line 42",
+      "destination": "Current Guide line40",
       "exact_retained": true
     },
     {
       "id": "OLD-011",
       "old_sha256": "2bc8722ea36324c6778cf539535fd397ea4538e8f43baee9b2769270a8072014",
       "old_text": "| IV | 0.675% | 0.675% |",
-      "destination": "current Guide line 43",
+      "destination": "Current Guide line41",
       "exact_retained": true
     },
     {
       "id": "OLD-012",
       "old_sha256": "8dd0b5bd9d52c64d412721aa44413099d92b8f0cec746040104ea8b14f9c1333",
       "old_text": "| FAK | 0.200% | 1.900% |",
-      "destination": "current Guide line 44",
+      "destination": "Current Guide line42",
       "exact_retained": true
     },
     {
       "id": "OLD-013",
       "old_sha256": "15897b6e9291798090cc8af79e47f1e91f449e6156e87e3be55f8e6a7402f44a",
       "old_text": "| Administration, VK | none | 0.585% |",
-      "destination": "current Guide line 45",
+      "destination": "Current Guide line43",
       "exact_retained": true
     },
     {
       "id": "OLD-014",
       "old_sha256": "6a240d27ebeb8ad07ba0e3dbc63fef7f2168ce5f64cffa92e1036aebc7e68f72",
       "old_text": "| Total above, excluding ALV | 4.900% | 7.385% |",
-      "destination": "current Guide line 46",
+      "destination": "Current Guide line44",
       "exact_retained": true
     },
     {
       "id": "OLD-015",
       "old_sha256": "f28076ba0d99961e0cae32369099ec29417e04e14266457629b5d14443481350",
       "old_text": "| ALV | 0.500% | 0.500% |",
-      "destination": "current Guide line 47",
+      "destination": "Current Guide line45",
       "exact_retained": true
     },
     {
       "id": "OLD-016",
       "old_sha256": "2d6ba770c6029405f904f08350e211cd04ab1f3e80d20e9bf35cd94122235d51",
       "old_text": "ALV is capped at CHF 126,000 yearly **per employment**. For part-year employment, the bulletin uses CHF 350 per contribution day with its 30-day-month convention; do not use actual calendar days or an unadjusted annual cap. AHV/IV/FAK/VK and ALV do not necessarily share the same wage ceiling. The employer deducts employee contributions and remits both sides. [Bulletin, sections 5–6][contributions]",
-      "destination": "current Guide line 49",
+      "destination": "Current Guide line47",
       "exact_retained": true
     },
     {
       "id": "OLD-017",
       "old_sha256": "51c744fc8dda4913552eb1b3fa7df1fbcfd76aa7ad05134ce6a8f13fe3b77677",
       "old_text": "For working persons, contributions start on 1 January of the year they turn 18. The bulletin separately addresses apprentices/family members, remuneration in kind, pension age, self-employed persons and non-employed persons. A full-year adult employee example does not settle those cases. [Sections 1–4 and 7–14][contributions]",
-      "destination": "current Guide line 51",
+      "destination": "Current Guide line49",
       "exact_retained": true
     },
     {
       "id": "OLD-018",
       "old_sha256": "1a679f21dbd6402ece49126556898443c80bdda782da34e23fac193cdb090a07",
       "old_text": "## Wage withholding is a separate calculation",
-      "destination": "current Guide line 135",
+      "destination": "Current Guide line133",
       "exact_retained": true
     },
     {
       "id": "OLD-019",
       "old_sha256": "d6ce4ad18a2b8ca0118322be23d2eea089097da16e861ad34065006cdd01a885",
       "old_text": "Source withholding applies to resident employment/replacement income too. Do not classify a resident wage as outside payroll withholding because an annual assessment follows. SteG articles 24–25 and the [February 2026 wage-tax bulletin][wage] govern the category and base. Its base is wage-certificate field 8 less field 6, not take-home pay; remuneration in kind and replacement income require their own treatment.",
-      "destination": "current Guide line 137",
+      "destination": "Current Guide line135",
       "exact_retained": true
     },
     {
       "id": "OLD-020",
       "old_sha256": "2f4887dd35cb3a929987b2361d327643e308b86a7173166321f1377737b25563",
       "old_text": "The bulletin's **maximum ordinary withholding schedule** uses expected annual gross remuneration, annualised for a part-year liability. These are whole-base withholding percentages, not the marginal bands of final individual tax. Obtain family status and any authority instruction before choosing a rate. The table's printed bands meet at their endpoints; confirm the assigned rate for an exact disputed boundary rather than rounding the income into a convenient band. [Section II.1][wage]",
-      "destination": "current Guide line 139",
+      "destination": "Current Guide line137",
       "exact_retained": true
     },
     {
       "id": "OLD-021",
       "old_sha256": "a3248900a67bcc5d2f130669cb6a8829c2288d2350ba61a4bda3a10730d7c697",
       "old_text": "| Expected annual gross CHF | Single maximum | Expected annual gross CHF | Married maximum |",
-      "destination": "current Guide line 141",
+      "destination": "Current Guide line139",
       "exact_retained": true
     },
     {
       "id": "OLD-022",
       "old_sha256": "f97ee50e12f51e51b7195149d4351f60ee06f3af07fc6fae6aad56d5bdcedcfa",
       "old_text": "|---|---:|---|---:|",
-      "destination": "current Guide line 142",
+      "destination": "Current Guide line140",
       "exact_retained": true
     },
     {
       "id": "OLD-023",
       "old_sha256": "4fbfe4475fda596adfebebb08d69dafcc37dd0c4640092fad4ffcaa5e0bdd864",
       "old_text": "| Up to 40,000 | 4% | Up to 80,000 | 4% |",
-      "destination": "current Guide line 143",
+      "destination": "Current Guide line141",
       "exact_retained": true
     },
     {
       "id": "OLD-024",
       "old_sha256": "57782d46fde7f3911ca180b9f8ba9d67006026a463a0f04aa77607ef7c83c1fd",
       "old_text": "| 40,000–60,000 | 5% | 80,000–140,000 | 5% |",
-      "destination": "current Guide line 144",
+      "destination": "Current Guide line142",
       "exact_retained": true
     },
     {
       "id": "OLD-025",
       "old_sha256": "77e0f4eddc87011bb21ff936891bf2cf2e6a280bec82cd2c2c3ecb75f013c21b",
       "old_text": "| 60,000–80,000 | 7% | 140,000–200,000 | 7% |",
-      "destination": "current Guide line 145",
+      "destination": "Current Guide line143",
       "exact_retained": true
     },
     {
       "id": "OLD-026",
       "old_sha256": "6106fade6cb5b68fea2de982994dc79064955d0ba2d54d9e2e1820468adf1fc0",
       "old_text": "| 80,000–120,000 | 9% | 200,000–250,000 | 9% |",
-      "destination": "current Guide line 146",
+      "destination": "Current Guide line144",
       "exact_retained": true
     },
     {
       "id": "OLD-027",
       "old_sha256": "4b19cc92036324a6abbe1f49bdb0ef3ae885e44e186a720708e982b74faf0f0d",
       "old_text": "| 120,000–160,000 | 11% | 250,000–350,000 | 11% |",
-      "destination": "current Guide line 147",
+      "destination": "Current Guide line145",
       "exact_retained": true
     },
     {
       "id": "OLD-028",
       "old_sha256": "86cbc5911aeb005b6d992f264b7bf63c272850913b7ed65c917ac07ff959c023",
       "old_text": "| 160,000–200,000 | 13% | 350,000–450,000 | 13% |",
-      "destination": "current Guide line 148",
+      "destination": "Current Guide line146",
       "exact_retained": true
     },
     {
       "id": "OLD-029",
       "old_sha256": "3517d0fc90325bc44ce1f00823157a97dedd0d703d2cf663694cfeb95cfaa33b",
       "old_text": "| 200,000–300,000 | 15% | 450,000–600,000 | 15% |",
-      "destination": "current Guide line 149",
+      "destination": "Current Guide line147",
       "exact_retained": true
     },
     {
       "id": "OLD-030",
       "old_sha256": "548ea985abf7dde567d06229846e64a881cd6904e590491d0fd12306c3b296a6",
       "old_text": "| 300,000–500,000 | 17% | 600,000–1,000,000 | 17% |",
-      "destination": "current Guide line 150",
+      "destination": "Current Guide line148",
       "exact_retained": true
     },
     {
       "id": "OLD-031",
       "old_sha256": "efb36bc10f1d459bcc332e0ea93da6e82ee06b472f7b50058cb0b37396558951",
       "old_text": "| Above 500,000 | 19% | Above 1,000,000 | 19% |",
-      "destination": "current Guide line 151",
+      "destination": "Current Guide line149",
       "exact_retained": true
     },
     {
       "id": "OLD-032",
       "old_sha256": "89f2f24b03bc583dc4633ad44982a3be19a2895ffa06e7b68e8591b457d059b0",
       "old_text": "The current bulletin exempts qualifying resident pupils, apprentices and students from wage withholding up to CHF 25,200 from tax year 2025, while still requiring wage-list reporting. The still-linked 2019 orientation says CHF 24,000; use the February 2026 bulletin for this figure. Do not treat that exception as a general wage-tax or social-insurance exemption. [Section II.3 and footnote][wage]",
-      "destination": "current Guide line 153",
+      "destination": "Current Guide line151",
       "exact_retained": true
     },
     {
       "id": "OLD-033",
       "old_sha256": "a3b937c9c9f7c21e89ed918d23003f758103de6cdc9af7dfa1c35796c2f50115",
       "old_text": "For foreign residents, inspect the January 2026 treaty annex and the actual treaty, residence, workdays and public/private employment facts. Austrian or Swiss commuter treatment is not determined by a postal address alone. SteG article 26 provides authority confirmation for exemption/reduction and a separate excess-withholding refund route. Specified board/pension payments under article 25(3) have a separate 12% rule; do not apply the ordinary wage table automatically. Treaty analysis and all exceptional payment categories remain open. [SteG, articles 24–26][law]",
-      "destination": "current Guide line 199",
+      "destination": "Current Guide line197",
       "exact_retained": true
     },
     {
@@ -2604,14 +2604,14 @@
       "id": "OLD-037",
       "old_sha256": "5de3b63ef4c50d2d46be5cf2068e856c3b5e507388515558dcfd7bce0bf10093",
       "old_text": "The [health authority's 2026 contribution page][health] sets the monthly employer health-care amount at CHF 180.50 for adults and CHF 90.25 for the stated youth category, reduced for part-time work; age-group changes apply from the following 1 January. Its separately displayed 2027 amounts are not 2026 rates. Daily sickness insurance, accident cover and occupational pensions require applicable eligibility and provider/plan terms. Do not advertise one all-in employer percentage.",
-      "destination": "current Guide line 157",
+      "destination": "Current Guide line155",
       "exact_retained": true
     },
     {
       "id": "OLD-038",
       "old_sha256": "b9fdc0f7cbdd9f7676d2257bf666107151f9807c60565b51e2c7fab7c12b9925",
       "old_text": "SteG article 27 makes the payer liable for underwithholding and requires corrected certification; article 28 addresses interest on a late annual difference. Exact current interest, social penalties, appeals and collection procedures remain to be reconciled. Do not calculate a fine from a statutory maximum or describe withholding as the employee's final assessed tax. [SteG, articles 27–28][law]",
-      "destination": "current Guide line 191",
+      "destination": "Current Guide line189",
       "exact_retained": true
     },
     {
@@ -2625,56 +2625,56 @@
       "id": "OLD-040",
       "old_sha256": "f00c806efec09a36f6611732ae3cf849027e505ebb5f5def440c618a8bb5ea8d",
       "old_text": "These are assumed ordinary covered adult employees; rates and bases must apply before the arithmetic is used. No occupational-pension, accident/sickness premium, health contribution or wage tax is included in the first two controls.",
-      "destination": "current Guide line 205",
+      "destination": "Current Guide line203",
       "exact_retained": true
     },
     {
       "id": "OLD-041",
       "old_sha256": "6fda694f065cde7865f8b73496a28380d816bd46717aaa34f3e00fba334e83d3",
       "old_text": "### Full-year employee contributions",
-      "destination": "current Guide line 207",
+      "destination": "Current Guide line205",
       "exact_retained": true
     },
     {
       "id": "OLD-042",
       "old_sha256": "c6db171d6593c0f651d4b7bc79477f01b9f3d12db09cbc11ee082e9a39fbe45b",
       "old_text": "```oa-check\nname: Liechtenstein 2026 assumed employee contribution split\ninputs:\n  established_annual_wage: 60000\n  employee_ahv_iv_fak: 0.049\n  annual_alv_cap: 126000\n  employee_alv: 0.005\nsteps:\n  ahv_iv_fak_deduction: established_annual_wage * employee_ahv_iv_fak\n  alv_base: min(established_annual_wage, annual_alv_cap)\n  alv_deduction: alv_base * employee_alv\n  specified_employee_deductions: ahv_iv_fak_deduction + alv_deduction\nexpected:\n  ahv_iv_fak_deduction: 2940\n  alv_base: 60000\n  alv_deduction: 300\n  specified_employee_deductions: 3240\n```",
-      "destination": "retained-original-controls.md, exact old block/prose; substantive case remains in current Guide",
+      "destination": "Current Guide line207",
       "exact_retained": true
     },
     {
       "id": "OLD-043",
       "old_sha256": "06abf1a5b1e1cfa7b1be76536e10818ea9d9462990a31106d40eae2fd01f33ad",
       "old_text": "### Full-year employer contributions with ALV cap",
-      "destination": "current Guide line 228",
+      "destination": "Current Guide line226",
       "exact_retained": true
     },
     {
       "id": "OLD-044",
       "old_sha256": "e2942e119b8a915bb92b01cb2036d6904899f36f343ca06e0d11b6ffe12fd65c",
       "old_text": "Assume CHF 150,000 established annual wage, all subject to AHV/IV/FAK/VK, and full-year ALV coverage in this employment.",
-      "destination": "current Guide line 230",
+      "destination": "Current Guide line228",
       "exact_retained": true
     },
     {
       "id": "OLD-045",
       "old_sha256": "aa32295b8cfef619018b21ada4f257fc4518d75257b7b9f7e4b0ad50ff03dcc2",
       "old_text": "```oa-check\nname: Liechtenstein 2026 assumed employer contribution and ALV ceiling\ninputs:\n  established_annual_wage: 150000\n  employer_ahv_iv_fak_vk: 0.07385\n  annual_alv_cap: 126000\n  employer_alv: 0.005\nsteps:\n  ahv_iv_fak_vk_charge: established_annual_wage * employer_ahv_iv_fak_vk\n  alv_base: min(established_annual_wage, annual_alv_cap)\n  alv_charge: alv_base * employer_alv\n  specified_employer_charges: ahv_iv_fak_vk_charge + alv_charge\nexpected:\n  ahv_iv_fak_vk_charge: 11077.50\n  alv_base: 126000\n  alv_charge: 630\n  specified_employer_charges: 11707.50\n```",
-      "destination": "retained-original-controls.md, exact old block/prose; substantive case remains in current Guide",
+      "destination": "Current Guide line230",
       "exact_retained": true
     },
     {
       "id": "OLD-046",
       "old_sha256": "210cb7e819579baeda6f697322d1c894bcd9efd7ead25d7fa2606aaa39e3e61f",
       "old_text": "### Part-year ALV cap",
-      "destination": "current Guide line 167",
+      "destination": "Current Guide line165",
       "exact_retained": true
     },
     {
       "id": "OLD-047",
       "old_sha256": "f614eb27f659495124681c90c496f89445f16fb7c9f497a6f15982cc1fdcd2c1",
       "old_text": "This reproduces the institution's section 6 example: 15 April–28 December gives 254 contribution days under its stated convention and CHF 96,200 pay. The cap is CHF 88,900, giving CHF 889 for both sides combined. This is not 254 ordinary actual-calendar days.",
-      "destination": "current Guide line 169",
+      "destination": "Current Guide line167",
       "exact_retained": true
     },
     {
@@ -2688,14 +2688,14 @@
       "id": "OLD-049",
       "old_sha256": "702deb69eb81892a968ffb7ad88a4ebd75d8727b4aeeb55d7b96c57604427584",
       "old_text": "### Assumed established wage-withholding instruction",
-      "destination": "current Guide line 173",
+      "destination": "Current Guide line171",
       "exact_retained": true
     },
     {
       "id": "OLD-050",
       "old_sha256": "6a8c35de38f7694688604516bc37aae82e204c869bccf549e2219c98fbe59d40",
       "old_text": "Assume a single resident employee with CHF 90,000 expected full-year gross, no special category/treaty or revised authority instruction, and a confirmed 9% withholding rate. CHF 7,500 current gross gives CHF 675 withholding, before other deductions. This does not calculate final individual tax.",
-      "destination": "current Guide line 175",
+      "destination": "Current Guide line173",
       "exact_retained": true
     },
     {
@@ -2716,14 +2716,14 @@
       "id": "OLD-053",
       "old_sha256": "723cc8d0d9883ccf3e6ad91a77fa3958bcc9c56d2f74ec49b9c87877a15d6d69",
       "old_text": "Establish coverage, contribution dates/wages, residence and treaty status, public/private employment, family status and the authority instruction. Ask for the pension/insurance plan, benefit details, current remittance notices and prior corrections. Refer disputed status, multi-country insurance/telework, every treaty entitlement, family/retirement exceptions, specialist benefits and plan pricing. The SC/PR domains, full source chain, live filing and named local accountant review remain open.",
-      "destination": "current Guide line 253",
+      "destination": "Current Guide line251",
       "exact_retained": true
     },
     {
       "id": "OLD-054",
       "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
       "old_text": "## Sources",
-      "destination": "current Guide line 255",
+      "destination": "Current Guide line253",
       "exact_retained": true
     },
     {
@@ -2737,42 +2737,42 @@
       "id": "OLD-056",
       "old_sha256": "8cd34d8dc090e7adbab4dcc8e2b0cb902c84fac03d26db522ea94cfa459ff965",
       "old_text": "- [AHV-IV-FAK 2026 contribution bulletin][contributions], especially 1–6, 7–14. Direct PDF text and the contribution table were inspected.\n- [Current Tax Act, consolidated 1 July 2026][law], selected articles 24–28. Current consolidation is not a complete within-year amendment audit.\n- [Wage-tax bulletin, February 2026, treaty annex January 2026][wage]. The newer training threshold supersedes the conflicting older orientation; treaty annex facts still require transaction-specific legal review.\n- [Authority wage/source-tax page][wage-page].\n- [Employer health-care contributions, 2026 and separately labelled 2027][health].",
-      "destination": "current Guide line 259",
+      "destination": "Current Guide line257",
       "exact_retained": true
     },
     {
       "id": "OLD-057",
       "old_sha256": "5f9b8b9a026bc8e5477d7ddc05361b01d688ac17fc29740a112f49e84e3a3f1a",
       "old_text": "[contributions]: https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf\n[law]: https://www.gesetze.li/konso/pdf/2010340000\n[wage]: https://www.llv.li/servicekonto/steuerverwaltung/quellensteuer-lohnsteuer-unselbstaendige-taetigkeit-und-ersatzeinkuenfte-merkblatt.pdf\n[wage-page]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/lohn-quellensteuer-personalvorsorge/lohn-quellensteuer\n[health]: https://www.llv.li/de/privatpersonen/gesundheit-vorsorge-und-pflege/krankenversicherung/praemien-beitraege",
-      "destination": "current Guide line 290",
+      "destination": "Current Guide line288",
       "exact_retained": true
     },
     {
       "id": "OLD-058",
       "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
       "old_text": "<!-- openaccountants-cta-block -->",
-      "destination": "current Guide line 296",
+      "destination": "Current Guide line294",
       "exact_retained": true
     },
     {
       "id": "OLD-059",
       "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
       "old_text": "---",
-      "destination": "current Guide line 1",
+      "destination": "Current Guide line1",
       "exact_retained": true
     },
     {
       "id": "OLD-060",
       "old_sha256": "2c053967fa7ab3e0318ae212a61d5f13965c474e336848bbc77f5976214e2dd9",
       "old_text": "## Talk to an accountant",
-      "destination": "current Guide line 300",
+      "destination": "Current Guide line298",
       "exact_retained": true
     },
     {
       "id": "OLD-061",
       "old_sha256": "24f7c27dd7f52c15f0a5a162ce9ed615250f525c513ffb87020f75112cb00ae0",
       "old_text": "Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).",
-      "destination": "current Guide line 302",
+      "destination": "Current Guide line300",
       "exact_retained": true
     }
   ],

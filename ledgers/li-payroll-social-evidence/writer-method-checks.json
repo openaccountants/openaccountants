@@ -1,6 +1,6 @@
 {
   "status": "WRITER CHECKS ONLY; NO INDEPENDENT PASS",
-  "guide_sha256": "882888edacfe0b8a4a7543e52201a8e0602b1873a3d25e63499d6a3b9456730c",
+  "guide_sha256": "06fcdc4b097df6416d284f4200fbdcd4e09f8cca62530df54da5229f8fbef1bf",
   "official_table_rows_exactly_compared": 32,
   "arithmetic_controls": [
     {

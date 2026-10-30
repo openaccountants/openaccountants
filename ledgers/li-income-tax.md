@@ -1,7 +1,7 @@
 # Figure ledger: li-income-tax
 
 WRITER LEDGER, not independent review. Sources are original official Act/Ordinance PDFs and an explicitly selected exact web-reader excerpt; no private account or return was accessed. Current source files in sibling evidence directories are members of the country freeze.
-Current Guide SHA256: `4d669a8f4f9f845f17081898fe64d1abf85c9c8b5fe7d331b6445068576aa775`. All27tariff rows are bound individually; annual minima are monthly amounts times12.
+Current Guide SHA256: `43dbf99f43e4763b7d8e1efc962160f82bc562cdc5a8fbf591cb47ec90f4e96f`. All27tariff rows are bound individually; annual minima are monthly amounts times12.
 
 | ID | Rule/figure and section | Act/article | Official URL | Short exact German quote | Read date |
 |---|---|---|---|---|---|
@@ -133,76 +133,76 @@ Current Guide SHA256: `4d669a8f4f9f845f17081898fe64d1abf85c9c8b5fe7d331b64450685
 |---|---|---|
 | OLD-001 | --- name: li-income-tax description: >   Prepare 2026 Liechtenstein individual wealth-and-income tax workpaper | Metadata/title version0.2 to0.3 and date30October; protected platform keys/CTA unchanged |
 | OLD-002 | # Liechtenstein individual income and wealth tax v0.2 | Metadata/title version0.2 to0.3 and date30October; protected platform keys/CTA unchanged |
-| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | Current Guide line27 |
-| OLD-004 | ## Who this applies to | Current Guide line31 |
-| OLD-005 | SteG article 6 makes individuals with domestic domicile or habitual abode subject to unlimited wealth/income t | Current Guide line33 |
+| OLD-003 | Independent source/editorial review evidence and correction status are in the [dated whole-pack review record] | Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open. |
+| OLD-004 | ## Who this applies to | Current Guide line29 |
+| OLD-005 | SteG article 6 makes individuals with domestic domicile or habitual abode subject to unlimited wealth/income t | Current Guide line31 |
 | OLD-006 | ## Establish the tax unit, income and wealth bases | The base preserves five steps and supplies ordinary valuation/debt/deduction methods |
 | OLD-007 | 1. Establish family status, children, residence periods and the applicable assessment route. Article 8 ordinar | The base preserves five steps and supplies ordinary valuation/debt/deduction methods |
 | OLD-008 | ## 2026 state formulas | Rates, bands and thresholds preserves all27tariff lines and7monthly/derived-annual minima; rounding caveat replaced by actual18(1)method |
-| OLD-009 | Before using the tariff, screen the separate **Existenzminimum exemption** in SteG article 15(2)(i). For an un | Current Guide line37 |
-| OLD-010 | SteV article 8 sets these monthly gross minima, with the amended base amounts first applying to tax year 2025  | Current Guide line39 |
-| OLD-011 | / Established category / CHF per month / CHF for a full twelve months / | Current Guide line41 |
-| OLD-012 | /---/---:/---:/ | Current Guide line42 |
-| OLD-013 | / Single / 2,100 / 25,200 / | Current Guide line43 |
-| OLD-014 | / Qualifying single parent / 2,600 / 31,200 / | Current Guide line44 |
-| OLD-015 | / Jointly assessed spouses/registered partners / 3,200 / 38,400 / | Current Guide line45 |
-| OLD-016 | / Separately assessed spouses/registered partners in the same household, or factual cohabiting partners / 1,60 | Current Guide line46 |
-| OLD-017 | / Each child aged up to 5, additional / 300 / 3,600 / | Current Guide line47 |
-| OLD-018 | / Each child aged 6–11, additional / 450 / 5,400 / | Current Guide line48 |
-| OLD-019 | / Each child aged 12 or older, additional / 600 / 7,200 / | Current Guide line49 |
-| OLD-020 | Establish the actual family/child category, article 14 total income including relevant deemed wealth yield, an | Current Guide line51 |
-| OLD-021 | For income not exempt under that screen, the following reproduces article 19(1). Values are CHF taxable income | Current Guide line53 |
-| OLD-022 | ### Ordinary tariff, article 19(1)(a) | Current Guide line55 |
-| OLD-023 | / Taxable income x / State tax / | Current Guide line57 |
-| OLD-024 | /---/---/ | Current Guide line58 |
-| OLD-025 | / Up to 15,855 / 0 / | Current Guide line59 |
-| OLD-026 | / 15,856–21,140 / 1% × x − 159 / | Current Guide line60 |
-| OLD-027 | / 21,141–42,280 / 3% × x − 581 / | Current Guide line61 |
-| OLD-028 | / 42,281–73,990 / 4% × x − 1,004 / | Current Guide line62 |
-| OLD-029 | / 73,991–105,700 / 5% × x − 1,744 / | Current Guide line63 |
-| OLD-030 | / 105,701–137,410 / 6% × x − 2,801 / | Current Guide line64 |
-| OLD-031 | / 137,411–169,120 / 6.5% × x − 3,488 / | Current Guide line65 |
-| OLD-032 | / 169,121–211,400 / 7% × x − 4,334 / | Current Guide line66 |
-| OLD-033 | / 211,401 or more / 8% × x − 6,448 / | Current Guide line67 |
-| OLD-034 | ### Qualifying single parent, article 19(1)(b) | Current Guide line69 |
-| OLD-035 | / Taxable income x / State tax / | Current Guide line57 |
-| OLD-036 | /---/---/ | Current Guide line58 |
-| OLD-037 | / Up to 23,783 / 0 / | Current Guide line73 |
-| OLD-038 | / 23,784–31,710 / 1% × x − 238 / | Current Guide line74 |
-| OLD-039 | / 31,711–63,420 / 3% × x − 872 / | Current Guide line75 |
-| OLD-040 | / 63,421–110,985 / 4% × x − 1,506 / | Current Guide line76 |
-| OLD-041 | / 110,986–158,550 / 5% × x − 2,616 / | Current Guide line77 |
-| OLD-042 | / 158,551–206,115 / 6% × x − 4,202 / | Current Guide line78 |
-| OLD-043 | / 206,116–253,680 / 6.5% × x − 5,232 / | Current Guide line79 |
-| OLD-044 | / 253,681–317,100 / 7% × x − 6,501 / | Current Guide line80 |
-| OLD-045 | / 317,101 or more / 8% × x − 9,672 / | Current Guide line81 |
-| OLD-046 | ### Joint spouses, article 19(1)(c) | Current Guide line83 |
-| OLD-047 | / Combined taxable income x / State tax / | Current Guide line85 |
-| OLD-048 | /---/---/ | Current Guide line58 |
-| OLD-049 | / Up to 31,710 / 0 / | Current Guide line87 |
-| OLD-050 | / 31,711–42,280 / 1% × x − 317 / | Current Guide line88 |
-| OLD-051 | / 42,281–84,560 / 3% × x − 1,163 / | Current Guide line89 |
-| OLD-052 | / 84,561–147,980 / 4% × x − 2,008 / | Current Guide line90 |
-| OLD-053 | / 147,981–211,400 / 5% × x − 3,488 / | Current Guide line91 |
-| OLD-054 | / 211,401–274,820 / 6% × x − 5,602 / | Current Guide line92 |
-| OLD-055 | / 274,821–338,240 / 6.5% × x − 6,976 / | Current Guide line93 |
-| OLD-056 | / 338,241–422,800 / 7% × x − 8,667 / | Current Guide line94 |
-| OLD-057 | / 422,801 or more / 8% × x − 12,895 / | Current Guide line95 |
+| OLD-009 | Before using the tariff, screen the separate **Existenzminimum exemption** in SteG article 15(2)(i). For an un | Current Guide line35 |
+| OLD-010 | SteV article 8 sets these monthly gross minima, with the amended base amounts first applying to tax year 2025  | Current Guide line37 |
+| OLD-011 | / Established category / CHF per month / CHF for a full twelve months / | Current Guide line39 |
+| OLD-012 | /---/---:/---:/ | Current Guide line40 |
+| OLD-013 | / Single / 2,100 / 25,200 / | Current Guide line41 |
+| OLD-014 | / Qualifying single parent / 2,600 / 31,200 / | Current Guide line42 |
+| OLD-015 | / Jointly assessed spouses/registered partners / 3,200 / 38,400 / | Current Guide line43 |
+| OLD-016 | / Separately assessed spouses/registered partners in the same household, or factual cohabiting partners / 1,60 | Current Guide line44 |
+| OLD-017 | / Each child aged up to 5, additional / 300 / 3,600 / | Current Guide line45 |
+| OLD-018 | / Each child aged 6–11, additional / 450 / 5,400 / | Current Guide line46 |
+| OLD-019 | / Each child aged 12 or older, additional / 600 / 7,200 / | Current Guide line47 |
+| OLD-020 | Establish the actual family/child category, article 14 total income including relevant deemed wealth yield, an | Current Guide line49 |
+| OLD-021 | For income not exempt under that screen, the following reproduces article 19(1). Values are CHF taxable income | Current Guide line51 |
+| OLD-022 | ### Ordinary tariff, article 19(1)(a) | Current Guide line53 |
+| OLD-023 | / Taxable income x / State tax / | Current Guide line55 |
+| OLD-024 | /---/---/ | Current Guide line56 |
+| OLD-025 | / Up to 15,855 / 0 / | Current Guide line57 |
+| OLD-026 | / 15,856–21,140 / 1% × x − 159 / | Current Guide line58 |
+| OLD-027 | / 21,141–42,280 / 3% × x − 581 / | Current Guide line59 |
+| OLD-028 | / 42,281–73,990 / 4% × x − 1,004 / | Current Guide line60 |
+| OLD-029 | / 73,991–105,700 / 5% × x − 1,744 / | Current Guide line61 |
+| OLD-030 | / 105,701–137,410 / 6% × x − 2,801 / | Current Guide line62 |
+| OLD-031 | / 137,411–169,120 / 6.5% × x − 3,488 / | Current Guide line63 |
+| OLD-032 | / 169,121–211,400 / 7% × x − 4,334 / | Current Guide line64 |
+| OLD-033 | / 211,401 or more / 8% × x − 6,448 / | Current Guide line65 |
+| OLD-034 | ### Qualifying single parent, article 19(1)(b) | Current Guide line67 |
+| OLD-035 | / Taxable income x / State tax / | Current Guide line55 |
+| OLD-036 | /---/---/ | Current Guide line56 |
+| OLD-037 | / Up to 23,783 / 0 / | Current Guide line71 |
+| OLD-038 | / 23,784–31,710 / 1% × x − 238 / | Current Guide line72 |
+| OLD-039 | / 31,711–63,420 / 3% × x − 872 / | Current Guide line73 |
+| OLD-040 | / 63,421–110,985 / 4% × x − 1,506 / | Current Guide line74 |
+| OLD-041 | / 110,986–158,550 / 5% × x − 2,616 / | Current Guide line75 |
+| OLD-042 | / 158,551–206,115 / 6% × x − 4,202 / | Current Guide line76 |
+| OLD-043 | / 206,116–253,680 / 6.5% × x − 5,232 / | Current Guide line77 |
+| OLD-044 | / 253,681–317,100 / 7% × x − 6,501 / | Current Guide line78 |
+| OLD-045 | / 317,101 or more / 8% × x − 9,672 / | Current Guide line79 |
+| OLD-046 | ### Joint spouses, article 19(1)(c) | Current Guide line81 |
+| OLD-047 | / Combined taxable income x / State tax / | Current Guide line83 |
+| OLD-048 | /---/---/ | Current Guide line56 |
+| OLD-049 | / Up to 31,710 / 0 / | Current Guide line85 |
+| OLD-050 | / 31,711–42,280 / 1% × x − 317 / | Current Guide line86 |
+| OLD-051 | / 42,281–84,560 / 3% × x − 1,163 / | Current Guide line87 |
+| OLD-052 | / 84,561–147,980 / 4% × x − 2,008 / | Current Guide line88 |
+| OLD-053 | / 147,981–211,400 / 5% × x − 3,488 / | Current Guide line89 |
+| OLD-054 | / 211,401–274,820 / 6% × x − 5,602 / | Current Guide line90 |
+| OLD-055 | / 274,821–338,240 / 6.5% × x − 6,976 / | Current Guide line91 |
+| OLD-056 | / 338,241–422,800 / 7% × x − 8,667 / | Current Guide line92 |
+| OLD-057 | / 422,801 or more / 8% × x − 12,895 / | Current Guide line93 |
 | OLD-058 | Source for every threshold/rate/subtraction: [SteG, article 19][law]. Exact rounding/input treatment and speci | Rates, bands and thresholds preserves all27tariff lines and7monthly/derived-annual minima; rounding caveat replaced by actual18(1)method |
-| OLD-059 | ## Municipality, business losses and payroll credits | Current Guide line160 |
-| OLD-060 | Article 75 sets the municipality surcharge as a percentage **of state tax**, fixed annually by the municipalit | Current Guide line162 |
-| OLD-061 | For an ordinary assessment with a verified surcharge m: | Current Guide line164 |
-| OLD-062 | municipality tax = state tax × m     combined tax before credits = state tax + municipality tax | Current Guide line166 |
+| OLD-059 | ## Municipality, business losses and payroll credits | Current Guide line158 |
+| OLD-060 | Article 75 sets the municipality surcharge as a percentage **of state tax**, fixed annually by the municipalit | Current Guide line160 |
+| OLD-061 | For an ordinary assessment with a verified surcharge m: | Current Guide line162 |
+| OLD-062 | municipality tax = state tax × m     combined tax before credits = state tax + municipality tax | Current Guide line164 |
 | OLD-063 | For business losses under article 16(2)(b)(3), assess prior unused loss evidence and the ordinary 70% current- | The base / Municipality; personal16(2)(b)(2) actual54(2)–(6) cross-reference made explicit; every old computation retained |
-| OLD-064 | Resident wages also have payroll withholding; use [li-payroll-social](li-payroll-social.md) for its distinct b | Current Guide line171 |
+| OLD-064 | Resident wages also have payroll withholding; use [li-payroll-social](li-payroll-social.md) for its distinct b | Current Guide line169 |
 | OLD-065 | ## Filing, payment and sanctions | Deadlines and filing retains original no-personal-form/current-calendar caveat and adds39–40/eTax method; old114/135 sanctions moved to Penalties and interest |
-| OLD-066 | Article 94 requires truthful, complete, signed filing even without a personal form/notice. Confirm the municip | Current Guide line186 |
+| OLD-066 | Article 94 requires truthful, complete, signed filing even without a personal form/notice. Confirm the municip | Current Guide line184 |
 | OLD-067 | Article 114 generally requires payment within 30 days of legal maturity, subject to its exceptions; the actual | Deadlines and filing retains original no-personal-form/current-calendar caveat and adds39–40/eTax method; old114/135 sanctions moved to Penalties and interest |
 | OLD-068 | ## Worked controls | All5blocks exact annex; all substantive old cases retained in The base; minimum screen still executable, new employee/wealth bridge second executable |
 | OLD-069 | Amounts, deduction entitlement, wealth values and municipality rates are case assumptions. All examples exclud | All5blocks exact annex; all substantive old cases retained in The base; minimum screen still executable, new employee/wealth bridge second executable |
-| OLD-070 | ### Minimum-income exemption screen | Current Guide line202 |
-| OLD-071 | Assume an unlimited-liability single resident for the full year, no child addition and CHF 24,000 total articl | Current Guide line204 |
-| OLD-072 | ```oa-check name: Liechtenstein assumed full-year single minimum-income screen inputs:   statutory_monthly_gro | Current Guide line206 |
+| OLD-070 | ### Minimum-income exemption screen | Current Guide line200 |
+| OLD-071 | Assume an unlimited-liability single resident for the full year, no child addition and CHF 24,000 total articl | Current Guide line202 |
+| OLD-072 | ```oa-check name: Liechtenstein assumed full-year single minimum-income screen inputs:   statutory_monthly_gro | Current Guide line204 |
 | OLD-073 | ### Ordinary state tax with deemed wealth income | All5blocks exact annex; all substantive old cases retained in The base; minimum screen still executable, new employee/wealth bridge second executable |
 | OLD-074 | Assume a full-year ordinary-tariff resident, CHF 80,000 established income after all relevant adjustments othe | All5blocks exact annex; all substantive old cases retained in The base; minimum screen still executable, new employee/wealth bridge second executable |
 | OLD-075 | ```oa-check name: Liechtenstein assumed ordinary tax with deemed wealth yield inputs:   established_other_taxa | Exact original-controls annex; substantive case current |
@@ -216,15 +216,15 @@ Current Guide SHA256: `4d669a8f4f9f845f17081898fe64d1abf85c9c8b5fe7d331b64450685
 | OLD-083 | Assume CHF 100,000 relevant positive business income, CHF 90,000 established unused prior losses and no defini | All5blocks exact annex; all substantive old cases retained in The base; minimum screen still executable, new employee/wealth bridge second executable |
 | OLD-084 | ```oa-check name: Liechtenstein assumed ordinary individual business loss cap inputs:   established_relevant_p | Exact original-controls annex; substantive case current |
 | OLD-085 | ## Ask and refer | Ask the client first retains original fact list and explicit residual limitations |
-| OLD-086 | Obtain residence/family/election facts, the municipality/year rate, all assets/debts and values, income and be | Current Guide line285 |
-| OLD-087 | ## Sources | Current Guide line287 |
+| OLD-086 | Obtain residence/family/election facts, the municipality/year rate, all assets/debts and values, income and be | Current Guide line283 |
+| OLD-087 | ## Sources | Current Guide line285 |
 | OLD-088 | Read 24 October 2026, selected provisions only: | Sources preserves historical24October limits/URLs and separately records actual30October selected reads |
-| OLD-089 | - [SteG, consolidated 1 July 2026][law], articles 5–8, selected 9–16, 18–19, 24–29, 75, 94, 113–114 and 135. T | Current Guide line291 |
-| OLD-090 | [law]: https://www.gesetze.li/konso/pdf/2010340000 [ordinance]: https://www.gesetze.li/konso/pdf/2010437000 [a | Current Guide line299 |
-| OLD-091 | <!-- openaccountants-cta-block --> | Current Guide line303 |
+| OLD-089 | - [SteG, consolidated 1 July 2026][law], articles 5–8, selected 9–16, 18–19, 24–29, 75, 94, 113–114 and 135. T | Current Guide line289 |
+| OLD-090 | [law]: https://www.gesetze.li/konso/pdf/2010340000 [ordinance]: https://www.gesetze.li/konso/pdf/2010437000 [a | Current Guide line297 |
+| OLD-091 | <!-- openaccountants-cta-block --> | Current Guide line301 |
 | OLD-092 | --- | Current Guide line1 |
-| OLD-093 | ## Talk to an accountant | Current Guide line307 |
-| OLD-094 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com). | Current Guide line309 |
+| OLD-093 | ## Talk to an accountant | Current Guide line305 |
+| OLD-094 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com). | Current Guide line307 |
 
 Full predecessor unit text and hashes are retained in the JSON companion and exact predecessor file.
 
