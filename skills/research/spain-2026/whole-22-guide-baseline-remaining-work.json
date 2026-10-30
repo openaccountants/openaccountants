@@ -1,0 +1,215 @@
+{
+  "source_checkpoint": "bba54325f2f975ced58da68251ca202377677d7f",
+  "whole_country_complete": false,
+  "ordinary_packages": [
+    {
+      "id": "I01",
+      "domain": "IT-IND",
+      "status": "partial",
+      "supplied_or_closed": "Catalan ordinary preserved-home base and CyL separate preserved-home bases now supplied.",
+      "remaining": "Cantabria ordinary-rent income denominator; Canary incorporated home/base and combined preserved/new housing; Murcia 1998\u20132000 original base/cap.",
+      "classification": "ordinary research and computation",
+      "next_finite_action": "Resolve each actual statutory base and denominator separately, then add boundary computations; do not infer gross salary or taxable base from the word rentas.",
+      "primary_basis": "Cantabria DL62/2008 art2; applicable Canary and Murcia provisions identified in current deductions Sources and reservations."
+    },
+    {
+      "id": "I02",
+      "domain": "IT-IND",
+      "status": "partial",
+      "supplied_or_closed": "Valencia birthday-month/reconciliation contribution cap and child-plus-ascendant carer cap/sharing supplied.",
+      "remaining": "La Rioja third-birthday boundary; Balearic under-six overlapping days; Galicia school multi-child/claimant caps and rental excess-base/unused-credit ordering; Canary medical increment and household/disabled assistance contribution overlap.",
+      "classification": "ordinary research and computation",
+      "next_finite_action": "Implement date and claimant allocation in finite branches with same-day birthday, shared-claimant and cap-order tests.",
+      "primary_basis": "La Rioja Law10/2017; current Balearic/Galicia/Canary primary sections linked in deductions Guide."
+    },
+    {
+      "id": "I03",
+      "domain": "IT-IND",
+      "status": "partial",
+      "supplied_or_closed": "Published ordinary credit methods and Catalan thalidomide average-rate method supplied.",
+      "remaining": "Mixed general/savings income, minima and reductions in attributable-tax worksheets for Aragon social housing, CLM and Cantabria work moves, Canary inter-island move, Asturias/Balearic/Extremadura/Galicia/Valencia aid grants and mixed Catalan aid.",
+      "classification": "ordinary research and computation",
+      "next_finite_action": "Derive the actual numerator and denominator for each named credit; compare zero/general-only/savings-only/mixed inputs and minimum spillover.",
+      "primary_basis": "LIRPF quota/minimum rules plus regional credit articles individually listed in current Guide."
+    },
+    {
+      "id": "I04",
+      "domain": "IT-IND",
+      "status": "partial",
+      "supplied_or_closed": "Andalucia assistance-contribution credit independent of fixed-credit income gate; ordinary veterinary windows and payer attribution; CyL within-project cap sharing and separate preserved housing bases; Murcia <=4000 shared expense and invariant-cap cases supplied.",
+      "remaining": "Exact vet anniversary endpoint; CyL above-project-total allocation; Murcia above-4000 shared cap ordering and noninvariant 35000-income overlap; Catalan ordinary/violence same-expense rent and cooperative unused credits, mixed-rate joint legacy-home cap; Cantabria health/home/vacant-rent overlap; La Rioja same-expense childcare/housing; Balearic June/Cantabria May/Valencia July short-period cutovers; Extremadura multi-household vet invoices.",
+      "classification": "ordinary research and computation, with specifically demonstrated Murcia statutory/manual boundary conflict",
+      "next_finite_action": "Keep already closed invariant cases; resolve only listed unequal candidates with primary interpretation and controls.",
+      "primary_basis": "Andalucia Law5/2021 art18; Consulta14/2026; CyL DL1/2013; Murcia DL1/2010; current Guide exact regional article links."
+    },
+    {
+      "id": "I05",
+      "domain": "IT-IND",
+      "status": "partial",
+      "supplied_or_closed": "AEAT simultaneous child-annuity plus exempt-progression worksheet when actual general base absorbs augmented minimum supplied and independently reviewed.",
+      "remaining": "Lower actual general base with savings minimum spillover; detailed cross-basket attribution for three-year Ceuta/Melilla/La Palma extension.",
+      "classification": "current-law interpretation and ordinary computation",
+      "next_finite_action": "Resolve simultaneous enlarged progression base, actual-base minimum allocation and savings remainder; independently reconcile a low-base case before claiming universal method.",
+      "primary_basis": "LIRPF56,63\u201364,74\u201375; AEAT combined worksheet and progression instructions; approved2025Modelo100 fields0521/0522."
+    },
+    {
+      "id": "V01",
+      "domain": "VAT",
+      "status": "partial",
+      "supplied_or_closed": "General/special prorrata and supplied single-variable or fixed-business-use investment adjustments, including delayed commissioning where stated, remain available.",
+      "remaining": "Simultaneous actual business-use fraction U and prorrata P changes: both gates, ordering, baseline period and sign without double count.",
+      "classification": "ordinary research and computation",
+      "next_finite_action": "Use LIVA95.3(3),107 and109 together; construct changes where product differs >10points but neither/both individual conditions differ; do not assume one product gate.",
+      "primary_basis": "LIVA95.3(3),107\u2013110 (fresh actual body). DGT V0386-24 new lead remains outside frozen source checkpoint."
+    },
+    {
+      "id": "V02",
+      "domain": "VAT",
+      "status": "partial",
+      "supplied_or_closed": "Recoverable-VAT net-price threshold and documented acquisition-plus-installation cost assembly supplied.",
+      "remaining": "Partly/nonrecoverable VAT in acquisition value when decisive at exact3005.06 investment-good threshold.",
+      "classification": "ordinary research and computation; no demonstrated impossible authority",
+      "next_finite_action": "Resolve acquisition-value/VAT circular gateway using authority on this actual issue; test equality, one cent above, setup cost and irrecoverable-VAT candidates.",
+      "primary_basis": "LIVA108 fresh actual body; DGT V0055-19 actual component-cost case does not expressly settle nondeductible-VAT gateway."
+    },
+    {
+      "id": "C01",
+      "domain": "IT-CORP",
+      "status": "partial",
+      "supplied_or_closed": "Ordinary State/Basque/Navarra CIT computation and zero/excluded/SME surcharge routes supplied.",
+      "remaining": "Positive Basque extraordinary-profit surcharge: accounting profit excess to taxable-base increase to corresponding gross-quota slice; positive PE applicability separate.",
+      "classification": "ordinary research and computation plus unresolved interpretation, not proven external impossibility",
+      "next_finite_action": "Check current provincial implementing inventories; derive nonzero bridge and independently reconcile general-company tax, base adjustments and quota relief; resolve PE branch separately.",
+      "primary_basis": "Bizkaia NF11/2013 art57bis/DA34, Alava NF37/2013 art56.7/DA31, Gipuzkoa NF2/2014 art56.7/DA29; regulations and IRNR19.1 incorporation scope."
+    },
+    {
+      "id": "S01",
+      "domain": "SC",
+      "status": "partial",
+      "supplied_or_closed": "Full-rate RETA band/base/day/income/regularisation method supplied.",
+      "remaining": "New2026 reduced starting fee statutory monetary authority and reconciled actual MEI assessment.",
+      "classification": "demonstrated current official numerical conflict plus unfinished authority research",
+      "next_finite_action": "Find 2026 authority beyond explicit2023\u20132025 transition, then reconcile published fee/MEI/base before one universal amount.",
+      "primary_basis": "RDL13/2022 DT5; current TGSS Importass says80 plus0.9%MEI, general minimum950.98, total88.64; multiplication yields88.56."
+    },
+    {
+      "id": "S02",
+      "domain": "SC",
+      "status": "partial",
+      "supplied_or_closed": "Non-equality reduced-fee extension routes and separate cessation comparisons supplied.",
+      "remaining": "Exact annual income equals SMI reduced-fee extension regularisation.",
+      "classification": "demonstrated literal primary boundary tension",
+      "next_finite_action": "Obtain equality-specific interpretation/assessment reconciliation, reading art38ter eligibility and recovery together with RD2064 arts44 and46; do not borrow cessation test.",
+      "primary_basis": "Law20/2007 art38ter.2/.6 below/above; RD2064/1995 art44.3(f) equal-or-above, art46.1 above (fresh actual bodies)."
+    },
+    {
+      "id": "X01",
+      "domain": "XB",
+      "status": "closed for supplied ordinary scope",
+      "supplied_or_closed": "New foral IRNR Guide supplies Basque/Navarra governing law, collector, withholding/shared payer, representative centralisation, no-PE/PE bases/rates, property gains, coefficient tables, remittance and actual filing windows.",
+      "remaining": "Positive PE extraordinary-profit surcharge applicability remains expressly unresolved; no universal surcharge inheritance/exemption claimed.",
+      "classification": "separate conditional interpretation branch; general foral-method package closed",
+      "next_finite_action": "Preserve new foral route and exact review chain; resolve positive PE surcharge with C01 if claiming that branch.",
+      "primary_basis": "Independent foral IRNR report,55 official downloads,57core+263addendum controls; sibling delta39 controls; hashes in exact-review-chain.json."
+    },
+    {
+      "id": "S03",
+      "domain": "SC",
+      "status": "baseline gap; narrow delta closed",
+      "supplied_or_closed": "Baseline LGSS31 formula already supplied. Independent narrow delta now supplies2026legal3.25% and computed4.0625%.",
+      "remaining": "None for verified2026 rate; historical/future accrual intervals still require their own rate.",
+      "classification": "available-source implementation, now fixed separately",
+      "next_finite_action": "Carry narrow reviewed hash105161f7... into final integrated manifest; keep interest triggers and principal/surcharge dates separate.",
+      "primary_basis": "LGSS31 fresh cached body and AEAT current manual expressly2026 confirmation; sc-interest-delta/report.md."
+    }
+  ],
+  "not_ordinary_gaps": {
+    "named_specialist_scope": [
+      "Full activity/seasonal modulos and special indirect-tax schemes",
+      "AIEM/product concessions and specialist local housing schemes",
+      "Cooperative/fiscal-group/restructuring/IP-nexus/financed-credit cases outside supplied ordinary methods",
+      "Complex equity awards, transparent entities, taxpayer-specific treaty caps and historic reliefs",
+      "Public CbCR and wealth calculations"
+    ],
+    "future_operational": [
+      "Approved2026income/2027campaign forms, schemas and direct-debit detail",
+      "October CPI outcome for December conditions not yet available27October"
+    ],
+    "client_evidence": [
+      "Collective agreement and occupation/CNAE",
+      "Actual treaty residence and source/service history",
+      "Bank programme agreement, designated municipality/nucleus, eligibility/grant certificate"
+    ],
+    "not_a_missing_ordinary_method": [
+      "PR ordinary withholding computation supplied; exact FOGASA published daily-limit reconstruction need not invalidate all payroll",
+      "TP ordinary relationships/methods/documentation/232/231 supplied; optional professional-shareholder valuation limb not a universal prerequisite"
+    ]
+  },
+  "new_vat_lead": "Parent DGT V0386-24 first-use work is outside pinned source bytes and not marked closed here.",
+  "additional_current_guide_reservations": {
+    "ordinary_conditional_research_not_proven_external": [
+      {
+        "files": [
+          "es-rental-income.md"
+        ],
+        "branches": [
+          "Exact1December2023 contract boundary",
+          "Simultaneous housing/irregular-income reductions",
+          "Corporate-tenant exclusive-use relief where claimed"
+        ],
+        "classification": "Current conditional ordinary rental-law application; retain facts and actual authority, not future form limitation."
+      },
+      {
+        "files": [
+          "es-capital-gains.md",
+          "es-non-resident-income-tax-irnr-and.md"
+        ],
+        "branches": [
+          "Bare-ownership/usufruct main-home exemption",
+          "Exact equality at historical DT9abatement cap",
+          "Detailed former-main-home nonresident reinvestment where claimed"
+        ],
+        "classification": "Current boundary/historical relief research, not blanket absence of ordinary gains or nonresident method. Historic relief is named limited scope; do not claim the boundary checked."
+      },
+      {
+        "files": [
+          "es-irpf-deductions.md"
+        ],
+        "branches": [
+          "Asturias passed-charge/reference implementation and new rehabilitation/old carry interaction",
+          "Balearic renewal-credit net-yield/time attribution",
+          "Extremadura rural-rental rehabilitation vacant-day and multiyear grant allocation",
+          "LaRioja current small-municipality/youth housing combination",
+          "Valencia grandfathered/additional home relief, mobility aid order, DANA/ordinary carry order"
+        ],
+        "classification": "Ordinary conditional regional computation not closed by the earlier eleven-package labels. Add to I01/I03/I04 next-source inventory before removing partial; some actual programme/designation evidence is a separate client fact."
+      },
+      {
+        "files": [
+          "spain-crypto-tax.md"
+        ],
+        "branches": [
+          "Art33.5(e) reacquisition of fungible coin units"
+        ],
+        "classification": "Current asset-specific loss-recognition interpretation; generic fungible disposal/valuation method supplied; do not infer a resolved reacquisition result."
+      }
+    ],
+    "available_source_optional_input": [
+      {
+        "files": [
+          "spain-transfer-pricing.md"
+        ],
+        "branch": "Monetary2026IPREM for optional professional-shareholder alternative",
+        "classification": "Pack SC already cites official2026monthly600 authority. Optional input can be sourced/crosslinked; this does not make the ordinary arm\u2019s-length valuation method absent."
+      }
+    ],
+    "operational_or_fact_evidence_not_generic_missing_law": [
+      "Actual transport implementing scheme, home-account/environmental bank agreement and authorisation records need official instrument and taxpayer participation before claiming that specific credit.",
+      "Historic balance payment request and adoption payment procedure are claim administration. Establish current operative route before claiming it; do not invent substantive zero credit.",
+      "Valuation of in-kind cultural/patronage/farm gifts, full patronage incompatibilities, unusual investment eligibility and scheme-specific permits require named specialist methods/evidence.",
+      "Historical certificate/disability, module-election repeal transitions, old contract novation and worker severance transitions are date/fact-specific rules, not closed by a green ordinary example.",
+      "Specialised fuel box112 conflict and retroactive exactly10kW April boundary remain expressly bounded; neither is evidence that ordinary output/input IVA method is absent.",
+      "Modelo111 obsolete original order versus current RIRPF108/current official calendar is a provenance gap; current August due date has actual superior/current authority and is supplied."
+    ]
+  }
+}

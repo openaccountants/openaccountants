@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=BOIB-i-2026-90195",
+    "status": 200,
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/balearic-corrigendum.html",
+    "bytes": 17511,
+    "sha256": "195c871add1302d762cef31c54adfa7397b39f8a55ab2a0f7d6f21df29a5ea22"
+  },
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-15554&lang=es",
+    "status": 200,
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/rd574-original.html",
+    "bytes": 53880,
+    "sha256": "f71db1dc17b2187790433623eba9f62621b48a7001231883f2c649c6034b5d25"
+  },
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-22208",
+    "status": 200,
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/rd574-annulment.html",
+    "bytes": 19171,
+    "sha256": "3206258faef5e19a1d8a6fdaf8cdd82a6eb081b8f1924805a7a6b1c0c8d97b43"
+  },
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-22211",
+    "status": 200,
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/rd574-correcting-order.html",
+    "bytes": 16564,
+    "sha256": "ee1ca4afb42f35274ec5a5b959868a53b99740bc11aedcc7a535465c7eb370d8"
+  },
+  {
+    "url": "https://atib.es/General/Novedad.aspx?idTexto=16987&idTipoTexto=1&lang=es",
+    "status": 200,
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/atib-enactment.html",
+    "bytes": 39170,
+    "sha256": "5873be5c6a339175ee94c55024cce13e69dc0d35a7ed86034946e0a0f900c985"
+  }
+]

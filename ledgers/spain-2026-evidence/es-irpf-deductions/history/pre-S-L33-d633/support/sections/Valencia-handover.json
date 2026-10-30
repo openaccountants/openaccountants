@@ -1,0 +1,66 @@
+{
+  "role": "writer only",
+  "guide_sha256": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+  "claim_rows": 230,
+  "source_anchor_instances": 673,
+  "unique_native_anchor_ranges": 673,
+  "source_pairs": 17,
+  "arithmetic_controls": 91,
+  "pins": [
+    {
+      "file": "Valencia.md",
+      "sha256": "f18bc688dd44d8adb52c44a748379f317bd6a2332eb85cc165fe622a7d9f5c43",
+      "bytes": 2543126
+    },
+    {
+      "file": "Valencia-claim-rows.json",
+      "sha256": "b3bdc7e3ef027f738d3d2391eb917d11f75d6b0771c9418c9af56d6f608c592c",
+      "bytes": 2584176
+    },
+    {
+      "file": "Valencia-actual-read-quotes.json",
+      "sha256": "a055f18f4826663eaf60d018b16de5a64f4538b7bbbf1d31c5ff5b9d06b00a32",
+      "bytes": 404918
+    },
+    {
+      "file": "Valencia-writer-checks.json",
+      "sha256": "5aedc44e5dc46fb3b7845b295b6ae5bbe72b943c0aa8273ef9486dc8488bb0d8",
+      "bytes": 1001
+    },
+    {
+      "file": "Valencia-source-receipts.json",
+      "sha256": "4fd4813a793f1c6e51e8c6628b720aadde3a4bc8fc86219ff132a1946b96f563",
+      "bytes": 9607
+    },
+    {
+      "file": "Valencia-actual-read-ledger.json",
+      "sha256": "debe3a880e6b6848b0797873d7c84a6bb1f5ad96c569366b01a24e18e6297648",
+      "bytes": 675464
+    },
+    {
+      "file": "Valencia-arithmetic-controls.json",
+      "sha256": "ffbda45d0399e673f0d2037d3c8614b5090c72e0ffacda266e17ff61ad07e378",
+      "bytes": 16410
+    },
+    {
+      "file": "Valencia-writer-status.md",
+      "sha256": "e469f9b5ac8adb8805eb143e3d84e42f084b0fc20e177604c4a28d7757fe0346",
+      "bytes": 1814
+    },
+    {
+      "file": "../build-Valencia-section.py",
+      "sha256": "63513d4753a50e5cadbebac5633f5903559121762e8f117877068e231788db63",
+      "bytes": 5238
+    },
+    {
+      "file": "../Valencia-controls.py",
+      "sha256": "0bf988d0fbd97c90856b1489542da498f39468f04f069ecdb772a6a247dbea5e",
+      "bytes": 5275
+    },
+    {
+      "file": "../Valencia-selected-quotes.json",
+      "sha256": "f6d4fb8e49ef8d19bb94828b22f7ea9feab29e7b7711460cfdfc468450cfc849",
+      "bytes": 407208
+    }
+  ]
+}

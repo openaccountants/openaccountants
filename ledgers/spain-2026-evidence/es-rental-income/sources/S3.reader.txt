@@ -1,0 +1,245 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Cantidades destinadas a la amortización
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 1.
+
+Capítulo 4. Rendimientos del capital inmobiliario
+
+Gastos deducibles
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 1.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Cantidades destinadas a la amortización
+
+Normativa: Arts. 23.1 b) Ley IRPF y 13 h) y 14 Reglamento IRPF 
+
+Tienen la consideración de gastos deducibles las cantidades destinadas a la amortización del inmueble y de los demás bienes cedidos con el mismo, siempre que respondan a su depreciación efectiva.
+
+La amortización es la forma de tener en cuenta la depreciación que sufren los inmuebles generadores de los rendimientos por el uso o transcurso del tiempo.
+
+En cuanto a la forma de cálculo para considerar que la amortización responde a la depreciación efectiva debemos distinguir:
+
+• Bienes inmuebles
+
+Tratándose de bienes inmuebles se considerará que las amortizaciones cumplen el requisito de efectividad cuando, en cada año, no excedan del resultado de aplicar el porcentaje del 3 por 100 sobre el mayor de los siguientes valores:
+
+Coste de adquisición satisfecho, que será:
+
+En el caso de inmuebles adquiridos a título oneroso: el precio de adquisición, incluidos los gastos y tributos inherentes a la adquisición (notaría, registro, IVA no deducible, Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados, gastos de agencia, etc.) sin incluir en el cómputo el valor del suelo, así como el coste de las inversiones y mejoras efectuadas en los bienes adquiridos.
+
+En el caso de inmuebles adquiridos a título gratuito por herencia o donación: el valor del bien adquirido en aplicación de las normas del Impuesto sobre Sucesiones o Donaciones o su valor comprobado en estos gravámenes (excluido del cómputo el valor del suelo), más los gastos y tributos inherentes a la adquisición que corresponda a la construcción y, en su caso, la totalidad de las inversiones y mejoras efectuadas en los bienes adquiridos.
+
+Criterio interpretativo fijado por el Tribunal Supremo (Sala de lo Contencioso-Administrativo) en su Sentencia núm. 1130/2021, de 15 de septiembre ( ROJ : STS 3483/2021).
+
+Valor catastral, excluido el valor del suelo.
+
+Cuando no se conozca el valor del suelo, este se calculará prorrateando el coste de adquisición satisfecho entre los valores catastrales del suelo y de la construcción de cada año reflejado en el correspondiente recibo del Impuesto sobre Bienes Inmuebles (IBI).
+
+Límite de la amortización acumulada de los inmuebles
+
+El límite de la amortización acumulada será el valor de adquisición del inmueble generador de los rendimientos. Por tanto:
+
+En el caso de bienes adquiridos a título oneroso, la amortización acumulada no podrá superar su valor de adquisición conforme al artículo 35 de la Ley del IRPF (excluido del cómputo el valor del suelo).
+
+Conforme al citado artículo 35 de la Ley del IRPF el valor de adquisición estará formado por la suma de:
+
+El importe real por el que dicha adquisición se hubiera efectuado.
+
+El coste de las inversiones y mejoras efectuadas en los bienes adquiridos y los gastos y tributos inherentes a la adquisición, excluidos los intereses, que hubieran sido satisfechos por el adquirente.
+
+En el caso de los inmuebles adquiridos a título lucrativo, el límite de la amortización acumulada, en cómputo global, no podrá superar el valor de adquisición en los términos del artículo 36 de la Ley de IRPF (excluido del cómputo el valor del suelo).
+
+Según el artículo 36 de la Ley del IRPF, en estos casos se tomará por importe real de los valores respectivos aquellos que resulten de la aplicación de las normas del Impuesto sobre Sucesiones y Donaciones, sin que puedan exceder del valor de mercado.
+
+En este sentido, véase al respecto la Resolución del Tribunal Económico-Administrativo Central (TEAC), de 18 de diciembre de 2025, Reclamación número 00/00653/2025, recaída en recurso extraordinario de alzada para la unificación de criterio, según la cual: "Para el cálculo en el Impuesto sobre la Renta de las Personas Físicas de los rendimientos netos del capital inmobiliario, en la determinación del importe de los gastos fiscalmente deducibles por concepto de amortización, en el cómputo global, debe aplicarse como límite de la amortización acumulada el valor de adquisición del inmueble generador de los rendimientos (excluido el valor del suelo), con independencia del límite anual previsto en el artículo 14 del Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por Real Decreto 439/2007, de 30 de marzo". Por tanto, la amortización acumulada no puede superar el valor de adquisición del inmueble generador de los rendimientos, que será el que venga determinado de la aplicación de los artículos 35 y 36 de la Ley del IRPF: el coste de adquisición en los bienes adquiridos a título oneroso, o el valor a efectos del ISD en los bienes adquiridos a título lucrativo. 
+
+Asimismo, téngase en cuenta la doctrina fijada por el Tribunal Supremo en el Fundamento Jurídico Séptimo de su Sentencia núm. 1.502/2025, de 20 de noviembre (Sala de lo Contencioso), recaída en el recurso de casación núm. 7361/2023 (ROJ: STS 5416/2025), conforme a la cual "si el sujeto pasivo no llevó a cabo actividades económicas empresariales o profesionales, pero obtuvo rendimiento del capital inmobiliario por la cesión de un inmueble y calculó la amortización conforme a lo previsto en la Orden Ministerial 27 de marzo de 1998, cuando en un momento posterior proceda a su transmisión, no tendrá que aplicar la amortización máxima del 3% sobre el coste de adquisición satisfecho o el valor catastral y sí podrá aplicar, para determinar el valor de adquisición de inmueble, otra inferior que encaje en el concepto de amortización mínima del artículo 35 de la LIRPF (...)". Por tanto, el contribuyente podrá deducir en concepto de amortización la que resulte de aplicar un % entre el 1 por 100 (mínimo) y el 3 por 100 (máximo). Cuando posteriormente proceda a la transmisión de dicha vivienda, para determinar el importe de la ganancia patrimonial, tendrá que minorar el importe que haya deducido previamente en concepto de amortización del inmueble.
+
+Ejemplo:
+
+Don R.R.R. adquirió por herencia un inmueble cuyo valor atribuido en la liquidación del Impuesto sobre Sucesiones y Donaciones (ISD) y que consta en la escritura pública de adjudicación de herencia fue de 100.000 euros.
+
+Los gastos y tributos inherentes a la adquisición (notaria, registro, ISD) ascienden a 2.000 euros.
+
+El valor catastral del inmueble heredado: 80.000 euros.
+
+El porcentaje que representa el valor del suelo respecto al valor total del inmueble es del 20 por 100.
+
+Una vez heredado, el inmueble se destinó al arrendamiento a terceros.
+
+Calcular la amortización que corresponde a un bien inmueble que se encuentra alquilado y el límite de amortización acumulada deducible.
+
+Solución:
+
+1. Cálculo de la amortización.
+
+Se tomará para el cálculo de la amortización el mayor de los siguientes valores
+
+Coste de adquisición satisfecho: 80% s/(100.000 + 2.000) = 81.600
+
+Valor catastral excluido el valor del suelo: (80% s/ 80.000) = 64.000
+
+El importe de la amortización deducible como gasto para determinar el rendimiento de capital inmobiliario no podrá exceder del resultado de aplicar el porcentaje del 3 por 100 sobre el mayor de los valores anteriores. En este caso será el coste de adquisición satisfecho que incluye el valor atribuido en la liquidación del Impuesto sobre Sucesiones y Donaciones más los gastos y tributos inherentes a la adquisición (excluido del cómputo el valor del suelo).
+
+Por tanto, en este caso el importe de la amortización anual máxima deducible será el 3% s/81.600 euros = 2.448 euros
+
+2. Límite amortización acumulada.
+
+El contribuyente podrá amortizar el inmueble hasta que el importe de la amortización acumulada alcance el valor de adquisición del inmueble que, conforme a lo que establece el artículo 36 de la Ley del IRPF, es el valor del inmueble a efectos del ISD (excluyendo del cómputo el valor del suelo) más tributos y gastos inherentes a la transmisión, esto es, 80% x (100.000 + 2.000) = 81.600 euros.
+
+Recuerde: en el supuesto de que el inmueble no hubiera estado arrendado durante todo el año, la amortización deducible, los intereses y demás gastos de financiación, los gastos en primas de seguros, comunidad, Impuesto sobre Bienes Inmuebles, suministros etc., serán los que correspondan al número de días del año en que el inmueble ha estado arrendado. 
+
+En los períodos en que el inmueble no haya estado arrendado se deberá imputar como renta inmobiliaria la cantidad que resulte de aplicar el 2 por 100 o el 1,1 por 100, según proceda, al valor catastral del inmueble, que proporcionalmente corresponda al número de días comprendidos en dicho período, de acuerdo con lo previsto en el artículo 85 de la Ley del IRPF.
+
+• Bienes de naturaleza mobiliaria cedidos conjuntamente con el inmueble
+
+Serán amortizables siempre que sean susceptibles de utilización por un período de tiempo superior a un año.
+
+Se entenderá que la amortización anual deducible por cada uno de los bienes cedidos cumple el requisito de efectividad, cuando su importe no exceda del resultado de aplicar a sus respectivos costes de adquisición satisfechos los coeficientes de amortización que le corresponda de acuerdo con la tabla de amortizaciones simplificada aprobada por Orden de 27 de marzo de 1998.
+
+Dentro de esta tabla se recoge, entre otros, el siguiente coeficiente máximo de amortización, que para Instalaciones, mobiliario y enseres es el 10 por 100.
+
+• Derechos o facultades de uso o disfrute sobre bienes inmuebles
+
+Serán amortizables siempre que su adquisición haya supuesto un coste para el contribuyente. En estos casos es preciso distinguir:
+
+Si el derecho o facultad tiene plazo de duración determinado, la amortización anual deducible será la que resulte de dividir el coste de adquisición satisfecho entre el número de años de duración del mismo.
+
+Si el derecho o facultad fuese vitalicio, la amortización computable será el resultado de aplicar el coeficiente del 3 por 100 sobre el coste de adquisición satisfecho.
+
+En ambos casos, el importe de las amortizaciones deducibles en el ejercicio no podrá superar la cuantía de los rendimientos íntegros derivados de cada derecho.
+
+Ejemplo:
+
+Don A.S.T adquirió mediante compraventa por un periodo de 10 años el derecho de usufructo sobre un inmueble pagando por ello la cantidad de 100.000 euros. Durante 2025 dicho inmueble ha estado arrendado percibiendo una renta anual 20.000 euros.
+
+Calcular la amortización que corresponde a un bien inmueble que se encuentra alquilado.
+
+Solución:
+
+Amortización
+
+Coste de adquisición /duración del usufructo (100.000 ÷ 10 años) = 10.000
+
+Límite rendimientos íntegros del derecho: Renta anual del alquiler = 20.000
+
+Plena propiedad y usufructo sobre un inmueble: en los casos en que un contribuyente es titular del 50 por 100 de la plena propiedad de un inmueble destinado al arrendamiento y sobre el restante 50 por 100 tiene el usufructo, el gasto por amortización se calculará de forma diferente para la parte del inmueble del que es pleno propietario y la parte del que es usufructuario, atendiendo a las reglas que para cada uno de ellos fueron indicadas con anterioridad.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

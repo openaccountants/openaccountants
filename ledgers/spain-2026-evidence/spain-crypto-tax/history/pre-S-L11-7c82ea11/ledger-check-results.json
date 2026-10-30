@@ -1,0 +1,1202 @@
+[
+  {
+    "name": "frozen Guide",
+    "actual": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+    "expected": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4960",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4965",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4970",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4975",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4980",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5716",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5721",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5726",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5731",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5736",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1319",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 2796",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3160",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "FIFO exact quote 185",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "FIFO exact quote 186",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "FIFO exact quote 183",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "FIFO exact quote 181",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "FIFO exact quote 181",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3306",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3308",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3308",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3314",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3312",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3290",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1857",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3421",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3423",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3425",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Investor exact quote 146",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Investor exact quote 142",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Investor exact quote 144",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Investor exact quote 98",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Investor exact quote 158",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 2647",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3666",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 2115",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1426",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3772",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3795",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3787",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4312",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4314",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4985",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Staking exact quote 185",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Staking exact quote 186",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Staking exact quote 192",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Staking exact quote 192",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Staking exact quote 191",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Staking exact quote 193",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 4372",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 4378",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Investor exact quote 82",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Mining exact quote 187",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Mining exact quote 204",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Mining exact quote 225",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3902",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3904",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3912",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3863",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3861",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3218",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3216",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3220",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3222",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3226",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3228",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3230",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3232",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1909",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1911",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1913",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1915",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1917",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1919",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 7226",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4165",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4167",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4167",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4193",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4197",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4165",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4201",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4167",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4199",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "FAQ721 exact quote 136",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "FAQ721 exact quote 136",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4171",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "AML exact quote 1461",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "O721 exact quote 323",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "O721 exact quote 323",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "O721 exact quote 311",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 3787",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 3787",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 3811",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 3621",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 3819",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2209",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2213",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2235",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2276",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2278",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2280",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8209",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8223",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8229",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8414",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8414",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8414",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8416",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8461",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Interest exact quote 110",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 11758",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 11768",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5941",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5937",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 6981",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 6983",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Wealth exact quote 1354",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Investor exact quote 140",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Investor exact quote 98",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Investor exact quote 158",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4165",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4171",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4177",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT exact quote 4191",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 11758",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "FIFO exact quote 183",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "FIFO exact quote 181",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1909",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "FAQ721 exact quote 136",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Bforal exact quote 3107",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Bforal exact quote 3396",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Bforal exact quote 3409",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Aforal exact quote 3424",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Gforal exact quote 5343",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Gforal exact quote 5378",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Nforal exact quote 3187",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Nforal exact quote 3285",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Nforal exact quote 3303",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L raw",
+    "actual": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "expected": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "pass_check": true
+  },
+  {
+    "name": "L reader",
+    "actual": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "expected": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "pass_check": true
+  },
+  {
+    "name": "R raw",
+    "actual": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "expected": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "pass_check": true
+  },
+  {
+    "name": "R reader",
+    "actual": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "expected": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "pass_check": true
+  },
+  {
+    "name": "LGT raw",
+    "actual": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "expected": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "pass_check": true
+  },
+  {
+    "name": "LGT reader",
+    "actual": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "expected": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT raw",
+    "actual": "331301467bae286138d51c24d2ee01ed9ee22504688d2aec1a89a010647ecad9",
+    "expected": "331301467bae286138d51c24d2ee01ed9ee22504688d2aec1a89a010647ecad9",
+    "pass_check": true
+  },
+  {
+    "name": "RGAT reader",
+    "actual": "b76a655e2d022064ac576895ce82157c07b08c9720fcc78d90aa73f8ff43ca89",
+    "expected": "b76a655e2d022064ac576895ce82157c07b08c9720fcc78d90aa73f8ff43ca89",
+    "pass_check": true
+  },
+  {
+    "name": "Wealth raw",
+    "actual": "fbdf29912cda9d18ebdc18437a360c32e825cf0768f74a6c2afcd9f65a165a74",
+    "expected": "fbdf29912cda9d18ebdc18437a360c32e825cf0768f74a6c2afcd9f65a165a74",
+    "pass_check": true
+  },
+  {
+    "name": "Wealth reader",
+    "actual": "d09ca48c7efabd51d372a878f0fe8a5c39d8182134dee20510bcc0b8f2710ebc",
+    "expected": "d09ca48c7efabd51d372a878f0fe8a5c39d8182134dee20510bcc0b8f2710ebc",
+    "pass_check": true
+  },
+  {
+    "name": "Investor raw",
+    "actual": "c5586c9c05e9abc06d3ad16253aac9b9db43933db9fa8a60e412be09847585d1",
+    "expected": "c5586c9c05e9abc06d3ad16253aac9b9db43933db9fa8a60e412be09847585d1",
+    "pass_check": true
+  },
+  {
+    "name": "Investor reader",
+    "actual": "01aa6fd99f15b0a9890f6bb34b82ede6ac2207c9e8cf2d5ed07e0762329221fa",
+    "expected": "01aa6fd99f15b0a9890f6bb34b82ede6ac2207c9e8cf2d5ed07e0762329221fa",
+    "pass_check": true
+  },
+  {
+    "name": "FAQ721 raw",
+    "actual": "84c76663ae990f6e99b76467e82678edc65ce3ab1ac0ea4482cc0986c62255e4",
+    "expected": "84c76663ae990f6e99b76467e82678edc65ce3ab1ac0ea4482cc0986c62255e4",
+    "pass_check": true
+  },
+  {
+    "name": "FAQ721 reader",
+    "actual": "e1d17de56c42a47322816c69c41140786f8b6f60278d4c842e197723bf2c901a",
+    "expected": "e1d17de56c42a47322816c69c41140786f8b6f60278d4c842e197723bf2c901a",
+    "pass_check": true
+  },
+  {
+    "name": "O721 raw",
+    "actual": "23a61e2b9c0c9395580e91d0f467b3c440e86ad993868897134d1c2bfdae50a4",
+    "expected": "23a61e2b9c0c9395580e91d0f467b3c440e86ad993868897134d1c2bfdae50a4",
+    "pass_check": true
+  },
+  {
+    "name": "O721 reader",
+    "actual": "469472385147372fa6c32b3fafd864f284a25c18dd01b99f07146fa18158f561",
+    "expected": "469472385147372fa6c32b3fafd864f284a25c18dd01b99f07146fa18158f561",
+    "pass_check": true
+  },
+  {
+    "name": "Interest raw",
+    "actual": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe",
+    "expected": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe",
+    "pass_check": true
+  },
+  {
+    "name": "Interest reader",
+    "actual": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+    "expected": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+    "pass_check": true
+  },
+  {
+    "name": "FIFO raw",
+    "actual": "463506a393df18284f664b1694a0e3065d1b9420c7ea8bfa15f0c6d9f07b29ec",
+    "expected": "463506a393df18284f664b1694a0e3065d1b9420c7ea8bfa15f0c6d9f07b29ec",
+    "pass_check": true
+  },
+  {
+    "name": "FIFO reader",
+    "actual": "463506a393df18284f664b1694a0e3065d1b9420c7ea8bfa15f0c6d9f07b29ec",
+    "expected": "463506a393df18284f664b1694a0e3065d1b9420c7ea8bfa15f0c6d9f07b29ec",
+    "pass_check": true
+  },
+  {
+    "name": "Staking raw",
+    "actual": "9fe84c5a0354e779d38793df6f42185a99a09b4436ef915900306101c87bc917",
+    "expected": "9fe84c5a0354e779d38793df6f42185a99a09b4436ef915900306101c87bc917",
+    "pass_check": true
+  },
+  {
+    "name": "Staking reader",
+    "actual": "9fe84c5a0354e779d38793df6f42185a99a09b4436ef915900306101c87bc917",
+    "expected": "9fe84c5a0354e779d38793df6f42185a99a09b4436ef915900306101c87bc917",
+    "pass_check": true
+  },
+  {
+    "name": "Mining raw",
+    "actual": "4a9bc0fb57eef26fbef974dbdfc01185cb3d8a2340e727820872c7e57e05a588",
+    "expected": "4a9bc0fb57eef26fbef974dbdfc01185cb3d8a2340e727820872c7e57e05a588",
+    "pass_check": true
+  },
+  {
+    "name": "Mining reader",
+    "actual": "4a9bc0fb57eef26fbef974dbdfc01185cb3d8a2340e727820872c7e57e05a588",
+    "expected": "4a9bc0fb57eef26fbef974dbdfc01185cb3d8a2340e727820872c7e57e05a588",
+    "pass_check": true
+  },
+  {
+    "name": "AML raw",
+    "actual": "87abb0d13f739c14f505c54c41ee7fbaaeeba5e59b152a9f5801d8fe56376e62",
+    "expected": "87abb0d13f739c14f505c54c41ee7fbaaeeba5e59b152a9f5801d8fe56376e62",
+    "pass_check": true
+  },
+  {
+    "name": "AML reader",
+    "actual": "c111f8360d65bdf833a60244f15f5720284814a02248a0d86edd013b597a461f",
+    "expected": "c111f8360d65bdf833a60244f15f5720284814a02248a0d86edd013b597a461f",
+    "pass_check": true
+  },
+  {
+    "name": "Bforal raw",
+    "actual": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+    "expected": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+    "pass_check": true
+  },
+  {
+    "name": "Bforal reader",
+    "actual": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "expected": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "pass_check": true
+  },
+  {
+    "name": "Aforal raw",
+    "actual": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+    "expected": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+    "pass_check": true
+  },
+  {
+    "name": "Aforal reader",
+    "actual": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "expected": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "pass_check": true
+  },
+  {
+    "name": "Gforal raw",
+    "actual": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+    "expected": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+    "pass_check": true
+  },
+  {
+    "name": "Gforal reader",
+    "actual": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "expected": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "pass_check": true
+  },
+  {
+    "name": "Nforal raw",
+    "actual": "094224bb82fbd13c1a19b3e89c2f68a8e0cd073a4dc78c9bd2c06cf9635eafa0",
+    "expected": "094224bb82fbd13c1a19b3e89c2f68a8e0cd073a4dc78c9bd2c06cf9635eafa0",
+    "pass_check": true
+  },
+  {
+    "name": "Nforal reader",
+    "actual": "46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b",
+    "expected": "46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b",
+    "pass_check": true
+  },
+  {
+    "name": "exact current wording",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "2 original examples",
+    "actual": "2",
+    "expected": "2",
+    "pass_check": true
+  },
+  {
+    "name": "sale basis",
+    "actual": "25150",
+    "expected": "25150",
+    "pass_check": true
+  },
+  {
+    "name": "net proceeds",
+    "actual": "54800",
+    "expected": "54800",
+    "pass_check": true
+  },
+  {
+    "name": "sale gain",
+    "actual": "29650",
+    "expected": "29650",
+    "pass_check": true
+  },
+  {
+    "name": "sale tax",
+    "actual": "12213/2",
+    "expected": "12213/2",
+    "pass_check": true
+  },
+  {
+    "name": "FIFO cost",
+    "actual": "16000",
+    "expected": "16000",
+    "pass_check": true
+  },
+  {
+    "name": "swap value",
+    "actual": "45600",
+    "expected": "45600",
+    "pass_check": true
+  },
+  {
+    "name": "swap gain",
+    "actual": "29600",
+    "expected": "29600",
+    "pass_check": true
+  },
+  {
+    "name": "remaining cost",
+    "actual": "6000",
+    "expected": "6000",
+    "pass_check": true
+  },
+  {
+    "name": "disposal basket",
+    "actual": "-3400",
+    "expected": "-3400",
+    "pass_check": true
+  },
+  {
+    "name": "offset",
+    "actual": "2500",
+    "expected": "2500",
+    "pass_check": true
+  },
+  {
+    "name": "savings base",
+    "actual": "7500",
+    "expected": "7500",
+    "pass_check": true
+  },
+  {
+    "name": "carried",
+    "actual": "900",
+    "expected": "900",
+    "pass_check": true
+  },
+  {
+    "name": "tax basket",
+    "actual": "1455",
+    "expected": "1455",
+    "pass_check": true
+  },
+  {
+    "name": "mixed fee evidenced60%",
+    "actual": "60",
+    "expected": "60",
+    "pass_check": true
+  },
+  {
+    "name": "mixed fee evidenced40%",
+    "actual": "40",
+    "expected": "40",
+    "pass_check": true
+  },
+  {
+    "name": "fee ledger nonduplication",
+    "actual": "4940",
+    "expected": "4940",
+    "pass_check": true
+  },
+  {
+    "name": "received swap basis with own acquisition fee",
+    "actual": "5040",
+    "expected": "5040",
+    "pass_check": true
+  },
+  {
+    "name": "conditional same asset released plus new gain",
+    "actual": "-3500",
+    "expected": "-3500",
+    "pass_check": true
+  },
+  {
+    "name": "exact50k initial exclusion",
+    "actual": "False",
+    "expected": "False",
+    "pass_check": true
+  },
+  {
+    "name": "50001 triggers initial",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "selfcustody excluded",
+    "actual": "50001",
+    "expected": "50001",
+    "pass_check": true
+  },
+  {
+    "name": "exact20k later increase",
+    "actual": "False",
+    "expected": "False",
+    "pass_check": true
+  },
+  {
+    "name": "all old units semantically routed",
+    "actual": "False",
+    "expected": "False",
+    "pass_check": true
+  },
+  {
+    "name": "actual 2 oa",
+    "actual": "0",
+    "expected": "0",
+    "pass_check": true
+  }
+]

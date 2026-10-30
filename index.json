@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-29T10:11:10+00:00",
+ "generated_at": "2026-10-30T10:09:07+00:00",
  "counts": {
-  "guides": 2272,
+  "guides": 2282,
   "jurisdictions": 274,
   "accountant_reviewed": 33
  },
@@ -2440,7 +2440,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-28"
+   "last_updated": "2026-10-29"
   },
   {
    "slug": "ad-non-resident-income-tax",
@@ -7396,7 +7396,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-29"
   },
   {
    "slug": "cyprus-tax-optimization",
@@ -10588,7 +10588,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-28"
+   "last_updated": "2026-10-29"
   },
   {
    "slug": "gg-company-formation",
@@ -10600,7 +10600,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-28"
+   "last_updated": "2026-10-29"
   },
   {
    "slug": "gg-corporate-tax-substance",
@@ -10696,7 +10696,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-28"
+   "last_updated": "2026-10-29"
   },
   {
    "slug": "gw-company-formation",
@@ -16027,18 +16027,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "check-out-mr-moe-lwin-tun-johndoe-john-smith-s-profile-on-linkedin-https-mm-linkedin-com-in-mr-moe-lwin-tun-johndoe-john-smith-2b649b428",
-   "path": "skills/international/myanmar/check-out-mr-moe-lwin-tun-johndoe-john-smith-s-profile-on-linkedin-https-mm-linkedin-com-in-mr-moe-lwin-tun-johndoe-john-smith-2b649b428.md",
-   "name": "check-out-mr-moe-lwin-tun-johndoe-john-smith-s-profile-on-linkedin-https-mm-linkedin-com-in-mr-moe-lwin-tun-johndoe-john-smith-2b649b428",
-   "jurisdiction": "MM",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-08-22"
-  },
-  {
    "slug": "mm-company-formation",
    "path": "skills/international/myanmar/mm-company-formation.md",
    "name": "mm-company-formation",
@@ -20680,7 +20668,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-23"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "es-beckham",
@@ -20691,8 +20679,20 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "es-canary-islands-igic",
+   "path": "skills/international/spain/es-canary-islands-igic.md",
+   "name": "es-canary-islands-igic",
+   "jurisdiction": "ES",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "es-capital-gains",
@@ -20704,7 +20704,19 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-23"
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "es-ceuta-melilla-ipsi",
+   "path": "skills/international/spain/es-ceuta-melilla-ipsi.md",
+   "name": "es-ceuta-melilla-ipsi",
+   "jurisdiction": "ES",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "es-corporate-tax",
@@ -20716,7 +20728,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-23"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "es-estimated-tax",
@@ -20728,7 +20740,55 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-23"
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "es-foral-corporate-tax",
+   "path": "skills/international/spain/es-foral-corporate-tax.md",
+   "name": "es-foral-corporate-tax",
+   "jurisdiction": "ES",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "es-foral-income-tax",
+   "path": "skills/international/spain/es-foral-income-tax.md",
+   "name": "es-foral-income-tax",
+   "jurisdiction": "ES",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "es-foral-non-resident-tax",
+   "path": "skills/international/spain/es-foral-non-resident-tax.md",
+   "name": "es-foral-non-resident-tax",
+   "jurisdiction": "ES",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "es-foral-payroll",
+   "path": "skills/international/spain/es-foral-payroll.md",
+   "name": "es-foral-payroll",
+   "jurisdiction": "ES",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "es-income-tax",
@@ -20740,7 +20800,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "es-irpf-deductions",
@@ -20751,8 +20811,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "es-modelo-111",
@@ -20763,20 +20823,20 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "es-non-resident-income-tax-irnr-and",
    "path": "skills/international/spain/es-non-resident-income-tax-irnr-and.md",
    "name": "es-non-resident-income-tax-irnr-and",
    "jurisdiction": "ES",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-03"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "es-rental-income",
@@ -20788,7 +20848,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-23"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "es-social-contributions",
@@ -20800,19 +20860,19 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "es-vat-return",
    "path": "skills/international/spain/es-vat-return.md",
    "name": "es-vat-return",
    "jurisdiction": "ES",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-22"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "references",
@@ -20847,8 +20907,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "spain-einvoice",
@@ -20896,7 +20956,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-23"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "spain-tax-optimization",
@@ -20919,20 +20979,20 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-27"
   },
   {
    "slug": "spain-vat-return",
    "path": "skills/international/spain/spain-vat-return.md",
    "name": "spain-vat-return",
    "jurisdiction": "ES",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "sri-lanka-betting-gaming-excise",
@@ -25531,6 +25591,30 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "ks-corporate-income-tax",
+   "path": "skills/us-states/ks/ks-corporate-income-tax.md",
+   "name": "ks-corporate-income-tax",
+   "jurisdiction": "US-KS",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-29"
+  },
+  {
+   "slug": "ks-cross-border",
+   "path": "skills/us-states/ks/ks-cross-border.md",
+   "name": "ks-cross-border",
+   "jurisdiction": "US-KS",
+   "category": "cross-border",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-29"
+  },
+  {
    "slug": "ks-income-tax",
    "path": "skills/us-states/ks/ks-income-tax.md",
    "name": "ks-income-tax",
@@ -25539,8 +25623,20 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-29"
+  },
+  {
+   "slug": "ks-payroll",
+   "path": "skills/us-states/ks/ks-payroll.md",
+   "name": "ks-payroll",
+   "jurisdiction": "US-KS",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-29"
   },
   {
    "slug": "ks-sales-tax",
@@ -25551,8 +25647,32 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-29"
+  },
+  {
+   "slug": "ks-social-contributions",
+   "path": "skills/us-states/ks/ks-social-contributions.md",
+   "name": "ks-social-contributions",
+   "jurisdiction": "US-KS",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-29"
+  },
+  {
+   "slug": "ks-transfer-pricing",
+   "path": "skills/us-states/ks/ks-transfer-pricing.md",
+   "name": "ks-transfer-pricing",
+   "jurisdiction": "US-KS",
+   "category": "transfer-pricing",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-29"
   },
   {
    "slug": "ky-income-tax",

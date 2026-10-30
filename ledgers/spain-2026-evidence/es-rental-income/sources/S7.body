@@ -1,0 +1,323 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=8" /><title>
+	DYCTEA
+</title><link rel="stylesheet" type="text/css" href="styles/cssreset-min.css" /><link rel="stylesheet" type="text/css" href="styles/grid_960_16.css" /><link rel="stylesheet" type="text/css" href="styles/grid_960_16_inv.css" /><link rel="stylesheet" type="text/css" href="styles/redmond/jquery-ui-1.8.21.custom.css" /><link rel="stylesheet" type="text/css" href="styles/doctrina.css" /><link rel="stylesheet" type="text/css" href="styles/doctrinaPrint.css" media="print" />
+    <script type="text/javascript" src="scripts/jquery-1.8.1.min.js" ></script>
+    <script type="text/javascript" src="scripts/jquery-ui-1.8.23.min.js" ></script>
+    <script type="text/javascript" src="scripts/jquery-ui.datepicker-es.js" ></script>
+    <script type="text/javascript" src="scripts/doctrina.js" ></script>
+    
+</head>
+<body>
+<div id="header">
+    <div class="container_16">
+    <div class="grid_16">
+        <div id="headerEscudo">
+        <a href="http://www.hacienda.gob.es/" id="lnkLogo">
+            <img src="images/escudo.png" id="imgLogo" alt="Escudo Gobierno de España. Ministerio de Hacienda y Administraciones Públicas." />
+        </a> 
+        </div>
+        <div id="headerTitle">
+        <h1 id="ctl00_Titulo" class="">Doctrina y Criterios de los Tribunales Econ&#243;mico-Administrativos</h1>
+        </div>
+        <div id="headerEscudoTea">
+            <a href='http://www.hacienda.gob.es/es-ES/Areas%20Tematicas/Impuestos/TEAC/Paginas/Tribunal%20Economico-administrativo%20central.aspx' title='Acceso al TEAC'>
+            <img src="images/escudo-Tea.png" id="img1" alt="Escudo Tea. Tribunales económicos y administrativos." />
+            </a>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="clear" ></div>
+<div class="container_16">
+    <form name="aspnetForm" method="post" action="./criterio.aspx?id=00%2f05138%2f2013%2f00%2f0%2f1" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4NDAyODg4MDEPZBYCZg9kFgQCAQ8WAh4JaW5uZXJodG1sBUVEb2N0cmluYSB5IENyaXRlcmlvcyBkZSBsb3MgVHJpYnVuYWxlcyBFY29uJiMyNDM7bWljby1BZG1pbmlzdHJhdGl2b3NkAgIPZBYCAgMPZBYCAgEPDxYCHgdWaXNpYmxlZ2QWEAIBDxYCHgRUZXh0BaUBQ3JpdGVyaW8gPHNwYW4gY2xhc3M9J2NyaXRlcmlvTmVncml0YSc+MTwvc3Bhbj4gZGUgPHNwYW4gY2xhc3M9J2NyaXRlcmlvTmVncml0YSc+MTwvc3Bhbj4gZGUgbGEgcmVzb2x1Y2nDs246IDxzcGFuIGNsYXNzPSdjcml0ZXJpb05lZ3JpdGEnPjAwLzA1MTM4LzIwMTMvMDAvMDA8L3NwYW4+ZAIDDxYCHwIFCERvY3RyaW5hZAIFDxYCHwIFBFRFQUNkAgcPFgIfAgUKMDgvMDkvMjAxNmQCCQ8WAh8CBZIBPHA+SVJQRi4gQXJyZW5kYW1pZW50byBkZSBpbm11ZWJsZSBkZXN0aW5hZG8gYSB2aXZpZW5kYS4mbmJzcDtSZWR1Y2NpJm9hY3V0ZTtuIGVuIGNhc28gZGUgcXVlIGVsIGFycmVuZGF0YXJpbyBzZWEgdW5hIHBlcnNvbmEganVyJmlhY3V0ZTtkaWNhLjwvcD5kAgsPFgIfAgXSEjxkaXYgY2xhc3M9J1dvcmRTZWN0aW9uMSc+PHAgY2xhc3M9J01zb05vcm1hbCcgc3R5bGU9J3RleHQtYWxpZ246IGp1c3RpZnk7IGxpbmUtaGVpZ2h0OiAxOHB0OyB0ZXh0LWluZGVudDogMzAuMDVwdDsgbWFyZ2luLWJvdHRvbTogMHB0OyB0ZXh0LWp1c3RpZnk6IGludGVyLWlkZW9ncmFwaDsnPjxzcGFuIGxhbmc9J0VTLVRSQUQnIHN0eWxlPSdmb250LWZhbWlseTogOyBmb250LXNpemU6IDEycHQ7Jz5SZXN1bHRhIHByb2NlZGVudGUgbGEgYXBsaWNhY2kmb2FjdXRlO24gZGUgbGEgcmVkdWNjaSZvYWN1dGU7biBwcmV2aXN0YSBlbiBlbCBhcGFydGFkbyBzZWd1bmRvIGRlbCBhcnQmaWFjdXRlO2N1bG8gMjMgZGUgbGEgTGV5IDM1LzIwMDYsIGRlIDI4IGRlIG5vdmllbWJyZSwgcmVndWxhZG9yYSBkZWwgSW1wdWVzdG8gc29icmUgbGEgUmVudGEgZGUgbGFzIFBlcnNvbmFzIEYmaWFjdXRlO3NpY2FzLCBzb2JyZSBsb3MgcmVuZGltaWVudG9zIG5ldG9zIGRlcml2YWRvcyBkZWwgYXJyZW5kYW1pZW50byBkZSBiaWVuZXMgaW5tdWVibGVzIGN1YW5kbyBzaWVuZG8gZWwgYXJyZW5kYXRhcmlvIHVuYSBwZXJzb25hIGp1ciZpYWN1dGU7ZGljYSwgcXVlZGUgYWNyZWRpdGFkbyBxdWUgZWwgaW5tdWVibGUgc2UgZGVzdGluYSBhIGxhIHZpdmllbmRhIGRlIGRldGVybWluYWRhcyBwZXJzb25hcyBmJmlhY3V0ZTtzaWNhcy4gPC9zcGFuPjwvcD48cCBjbGFzcz0nTXNvTm9ybWFsJyBzdHlsZT0ndGV4dC1hbGlnbjoganVzdGlmeTsgbGluZS1oZWlnaHQ6IDE4cHQ7IHRleHQtaW5kZW50OiAzMC4wNXB0OyBtYXJnaW4tYm90dG9tOiAwcHQ7IHRleHQtanVzdGlmeTogaW50ZXItaWRlb2dyYXBoOyc+PHNwYW4gbGFuZz0nRVMtVFJBRCcgc3R5bGU9J2ZvbnQtZmFtaWx5OiA7IGZvbnQtc2l6ZTogMTJwdDsnPkVuIGVsIG1pc21vIHNlbnRpZG8gdGFtYmkmZWFjdXRlO24gc2UgcHJvbnVuY2lhbiB0YW50byBlbCBUU0ogZGUgR2FsaWNpYSBlbiBzZW50ZW5jaWEgMzAwLzIwMTUgZGUgZmVjaGEgMyBkZSBqdW5pbyBkZSAyMDE1IChyZWMuIG4mb3JkbTsgMTU1MDAvMjAxNCksIGVsIFRTSiBkZSBDYXRhbHUmbnRpbGRlO2EgZW50cmUgb3RyYXMgZW4gc2VudGVuY2lhcyBkZSAxNyBkZSBqdWxpbyBkZSAyMDEyIChyZWMuIG4mb3JkbTsgNjEyLzIwMDkpIHkgZGUgMjEgZGUgZmVicmVybyBkZSAyMDE0IChyZWMuIG4mb3JkbTsgNzQ0LzIwMTEpIGFzJmlhY3V0ZTsgY29tbyBlbCBUU0ogZGUgTWFkcmlkIGVuIHNlbnRlbmNpYXMgZGUgMTggZGUgYWJyaWwgKHJlYy4gbiZvcmRtOyAxMTIxLzIwMTApIHkgZGUgMjMgZGUgYWJyaWwgZGUgMjAxMyAocmVjLiBuJm9yZG07IDExNTAvMjAxMCkuIDwvc3Bhbj48L3A+PHAgY2xhc3M9J01zb05vcm1hbCcgc3R5bGU9J3RleHQtYWxpZ246IGp1c3RpZnk7IGxpbmUtaGVpZ2h0OiAxOHB0OyB0ZXh0LWluZGVudDogMzUuNDVwdDsgbWFyZ2luLWJvdHRvbTogMHB0OyB0ZXh0LWp1c3RpZnk6IGludGVyLWlkZW9ncmFwaDsnPjxzcGFuIGxhbmc9J0VTLVRSQUQnIHN0eWxlPSdmb250LWZhbWlseTogOyBmb250LXNpemU6IDEycHQ7Jz5Bc2ltaXNtbywmbmJzcDtlbCBwcmVzZW50ZSBjcml0ZXJpbyBlcyBlbCBhZG9wdGFkbywgYWRlbSZhYWN1dGU7cyBkZSBwb3IgZWwmbmJzcDtURUFSIGRlIEFuZGFsdWMmaWFjdXRlO2EgcXVlIGRpY3Qmb2FjdXRlOyBsYSByZXNvbHVjaSZvYWN1dGU7biBjb25jcmV0YSBxdWUgYXF1JmlhY3V0ZTsgc2UgcmVjdXJyZSwgcG9yIGVsIFRFQVIgZGUgTWFkcmlkIGVuIHJlc29sdWNpb25lcyBuJm9yZG07IDI4LzMyNjYvMDkmbmJzcDt5IDI4LzY4NTMvMDkgZGUgMjkgZGUgbWFyem8gMjAxMDwvc3Bhbj48c3BhbiBsYW5nPSdFUy1UUkFEJyBzdHlsZT0nZm9udC1mYW1pbHk6IDsgZm9udC1zaXplOiAxMnB0Oyc+LCBURUFSIGRlIENhdGFsdSZudGlsZGU7YSBlbiByZXNvbHVjaSZvYWN1dGU7biA0My81NDAvMjAxMiBkZSZuYnNwOzMwIGRlIGp1bmlvIGRlIDIwMTUgeSBURUFSIGRlIFZhbGVuY2lhIDQ2LzM0OC8yMDExIGRlJm5ic3A7MzAgZGUgc2VwdGllbWJyZSBkZSAyMDExLjwvc3Bhbj48L3A+PHAgY2xhc3M9J01zb05vcm1hbCcgc3R5bGU9J3RleHQtYWxpZ246IGp1c3RpZnk7IGxpbmUtaGVpZ2h0OiAxOHB0OyB0ZXh0LWluZGVudDogMzAuMDVwdDsgbWFyZ2luLWJvdHRvbTogMHB0OyB0ZXh0LWp1c3RpZnk6IGludGVyLWlkZW9ncmFwaDsnPiZuYnNwOzwvcD48cCBjbGFzcz0nTXNvTm9ybWFsJyBzdHlsZT0ndGV4dC1hbGlnbjoganVzdGlmeTsgbGluZS1oZWlnaHQ6IDE4cHQ7IHRleHQtaW5kZW50OiAzNS40NXB0OyBtYXJnaW4tYm90dG9tOiAwcHQ7IHRleHQtanVzdGlmeTogaW50ZXItaWRlb2dyYXBoOyc+Jm5ic3A7PC9wPjwvZGl2PjxwPiZuYnNwOzwvcD5kAg0PFgIfAgXzAjx1bCBpZD0ncmVmZXJlbmNpYXNOb3JtYXRpdmFzJz48bGkgY2xhc3M9J2VsZW1lbnRvTm9ybWEnPkxleSAzNS8yMDA2IEltcHVlc3RvIHNvYnJlIGxhIFJlbnRhIGRlIGxhcyBQZXJzb25hcyBGw61zaWNhcyBJUlBGICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHVsPjxsaSBjbGFzcz0nZWxlbWVudG9QcmVjZXB0byc+MjMuMjwvbGk+PC91bD48L2xpPjwvdWw+ZAIPDxYCHwIFsgI8dWw+PGxpPkFjcmVkaXRhY2nDs248L2xpPjxsaT5BcnJlbmRhbWllbnRvL2FscXVpbGVyPC9saT48bGk+RmluYWxpZGFkPC9saT48bGk+SW1wdWVzdG8gc29icmUgbGEgUmVudGEgZGUgbGFzIFBlcnNvbmFzIEbDrXNpY2FzIElSUEY8L2xpPjxsaT5Jbm11ZWJsZXM8L2xpPjxsaT5QZXJzb25hIGp1csOtZGljYTwvbGk+PGxpPlBlcnNvbmFsIGVtcGxlYWRvL2FzYWxhcmlhZG88L2xpPjxsaT5SZWR1Y2Npb25lczwvbGk+PGxpPlJlbmRpbWllbnRvcyBkZSBjYXBpdGFsIGlubW9iaWxpYXJpbzwvbGk+PGxpPlZpdmllbmRhczwvbGk+PC91bD5kZBpfjk6R4BKAJeIQn+PSHSyicY8tGZIptjELuYzauoLo" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CE7D2693" />
+</div>
+    <div>
+        <div id="ctl00_pnAyuda">
+	
+        <div class='containerHelp'>
+        <a href='ayuda.aspx' target='_blank' title='Acceso a la ayuda de la aplicación'>
+        Ayuda
+        <img class="sitepopup" alt="Abre nueva ventana" src="images/popup.gif"/>
+        </a>
+        </div>
+        
+</div>
+        
+<div class='containerBack'>
+    <a href='Criterios.aspx?'>Volver</a>
+</div>
+<div class="clear"></div>
+
+<script type="text/javascript">
+    function resizeIframe(iframe) {
+        var newHeight = iframe.contentWindow.document.body.scrollHeight + 30;
+        document.getElementById('divTextoResolucion').style = "height:" + newHeight + "px";
+    }
+</script>
+<div id="ctl00_contentBody_pnCriterio">
+	
+    <div id='criterioBloque'>
+        <div id='criterioDatos'>
+            <div id='criterioDatosTitulo' class='criterioDatosFila'>
+                Criterio <span class='criterioNegrita'>1</span> de <span class='criterioNegrita'>1</span> de la resolución: <span class='criterioNegrita'>00/05138/2013/00/00</span>
+            </div>
+            <div id='criterioDatosCalificacion' class='criterioDatosFila'>
+                Calificación: <span class='criterioNegrita'>Doctrina</span>
+            </div>
+            <div id='criterioDatosUnidad' class='criterioDatosFila'>
+                Unidad resolutoria: <span class='criterioNegrita'>TEAC</span>
+            </div>
+            <div id='criterioDatosFecha' class='criterioDatosFila'>
+                Fecha de la resolución: <span class='criterioNegrita'>08/09/2016</span>
+            </div>
+        </div>
+        <div id='criterioContenido'>
+            <div id='criterioDatosAsunto' class='criterioDatosFila'>
+                <span class='criterioNegrita'>Asunto: </span><br /><p>IRPF. Arrendamiento de inmueble destinado a vivienda.&nbsp;Reducci&oacute;n en caso de que el arrendatario sea una persona jur&iacute;dica.</p>
+            </div>
+            <div id='criterioDatosContenido' class='criterioDatosFila'>
+                <span class='criterioNegrita'>Criterio: </span><br />
+                <div class='WordSection1'><p class='MsoNormal' style='text-align: justify; line-height: 18pt; text-indent: 30.05pt; margin-bottom: 0pt; text-justify: inter-ideograph;'><span lang='ES-TRAD' style='font-family: ; font-size: 12pt;'>Resulta procedente la aplicaci&oacute;n de la reducci&oacute;n prevista en el apartado segundo del art&iacute;culo 23 de la Ley 35/2006, de 28 de noviembre, reguladora del Impuesto sobre la Renta de las Personas F&iacute;sicas, sobre los rendimientos netos derivados del arrendamiento de bienes inmuebles cuando siendo el arrendatario una persona jur&iacute;dica, quede acreditado que el inmueble se destina a la vivienda de determinadas personas f&iacute;sicas. </span></p><p class='MsoNormal' style='text-align: justify; line-height: 18pt; text-indent: 30.05pt; margin-bottom: 0pt; text-justify: inter-ideograph;'><span lang='ES-TRAD' style='font-family: ; font-size: 12pt;'>En el mismo sentido tambi&eacute;n se pronuncian tanto el TSJ de Galicia en sentencia 300/2015 de fecha 3 de junio de 2015 (rec. n&ordm; 15500/2014), el TSJ de Catalu&ntilde;a entre otras en sentencias de 17 de julio de 2012 (rec. n&ordm; 612/2009) y de 21 de febrero de 2014 (rec. n&ordm; 744/2011) as&iacute; como el TSJ de Madrid en sentencias de 18 de abril (rec. n&ordm; 1121/2010) y de 23 de abril de 2013 (rec. n&ordm; 1150/2010). </span></p><p class='MsoNormal' style='text-align: justify; line-height: 18pt; text-indent: 35.45pt; margin-bottom: 0pt; text-justify: inter-ideograph;'><span lang='ES-TRAD' style='font-family: ; font-size: 12pt;'>Asimismo,&nbsp;el presente criterio es el adoptado, adem&aacute;s de por el&nbsp;TEAR de Andaluc&iacute;a que dict&oacute; la resoluci&oacute;n concreta que aqu&iacute; se recurre, por el TEAR de Madrid en resoluciones n&ordm; 28/3266/09&nbsp;y 28/6853/09 de 29 de marzo 2010</span><span lang='ES-TRAD' style='font-family: ; font-size: 12pt;'>, TEAR de Catalu&ntilde;a en resoluci&oacute;n 43/540/2012 de&nbsp;30 de junio de 2015 y TEAR de Valencia 46/348/2011 de&nbsp;30 de septiembre de 2011.</span></p><p class='MsoNormal' style='text-align: justify; line-height: 18pt; text-indent: 30.05pt; margin-bottom: 0pt; text-justify: inter-ideograph;'>&nbsp;</p><p class='MsoNormal' style='text-align: justify; line-height: 18pt; text-indent: 35.45pt; margin-bottom: 0pt; text-justify: inter-ideograph;'>&nbsp;</p></div><p>&nbsp;</p>
+            </div>        
+            <div id='criterioDatosNormas' class='criterioDatosFila'>
+                <span class='criterioNegrita'>Referencias normativas: </span><br />
+                <ul id='referenciasNormativas'><li class='elementoNorma'>Ley 35/2006 Impuesto sobre la Renta de las Personas Físicas IRPF                                                                                                                                                                                                <ul><li class='elementoPrecepto'>23.2</li></ul></li></ul>
+            </div>
+            <div id='criterioDatosConceptos' class='criterioDatosFila'>
+                <span class='criterioNegrita'>Conceptos: </span><br />
+                <ul><li>Acreditación</li><li>Arrendamiento/alquiler</li><li>Finalidad</li><li>Impuesto sobre la Renta de las Personas Físicas IRPF</li><li>Inmuebles</li><li>Persona jurídica</li><li>Personal empleado/asalariado</li><li>Reducciones</li><li>Rendimientos de capital inmobiliario</li><li>Viviendas</li></ul>
+            </div>
+        </div>
+        <div id='criterioDatosResolucion' class='criterioDatosFila'>
+            <span class='criterioNegrita'>Texto de la resolución: </span>
+            <br /><br /><p>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang="ES-TRAD">En la Villa de Madrid, en la fecha arriba se&ntilde;alada, en el recurso extraordinario de alzada para la unificaci&oacute;n de criterio interpuesto por la <b>DIRECTORA DEL DEPARTAMENTO DE GESTI&Oacute;N TRIBUTARIA DE LA AGENCIA ESTATAL DE ADMINISTRACI&Oacute;N TRIBUTARIA</b> con domicilio, a efectos de notificaciones, en C/ Infanta&nbsp; Mercedes, n&uacute;m. 37, 28020-Madrid, contra resoluci&oacute;n del Tribunal Econ&oacute;mico-Administrativo Regional de Andaluc&iacute;a de fecha 18 de enero de 2013 por la que se resuelve, estim&aacute;ndola, la reclamaci&oacute;n econ&oacute;mico-administrativa n&uacute;mero 11/01604/2011.</span></p>
+<h2>
+ ANTECEDENTES DE HECHO</h2>
+<p>
+ <b><span lang="ES-TRAD">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></p>
+<h3>
+ PRIMERO.-</h3>
+<p>
+ <span lang="ES-TRAD">De los antecedentes obrantes en el expediente resultan acreditados los siguientes hechos:</span></p>
+<p>
+ <span lang="ES-TRAD">1.- Poniendo fin a un procedimiento de verificaci&oacute;n de datos, la Administraci&oacute;n de la AEAT de A.... notific&oacute; al obligado tributario liquidaci&oacute;n provisional por el Impuesto sobre la Renta de las Personas F&iacute;sicas del ejercicio 2009, de la que result&oacute; a ingresar un importe de 5.846,42 euros.</span></p>
+<p>
+ <span lang="ES-TRAD">2.- El obligado tributario presenta escrito manifestando su disconformidad con la propuesta de liquidaci&oacute;n, escrito que, habida cuenta que a la fecha de su presentaci&oacute;n ya estaba notificada la liquidaci&oacute;n, es recalificado como recurso de reposici&oacute;n. </span></p>
+<p>
+ <span lang="ES-TRAD">3.- La Administradora de la AEAT de A..... dicta acuerdo desestimatorio del recurso de reposici&oacute;n al considerar que: </span></p>
+<p>
+ <span lang="ES-TRAD">&ldquo;(....) 2. Reducci&oacute;n por arrendamiento de vivienda. Contempla el art. 23 de la Ley 35/2006, reguladora de este Tributo, los gastos deducibles y reducciones de los rendimientos del capital inmobiliario. <i>&ldquo;2. 1&ordm;. En los supuestos de arrendamiento de bienes inmuebles destinados a vivienda, el rendimiento neto calculado con arreglo a lo dispuesto en el apartado anterior, se reducir&aacute; en un 50 por ciento. Trat&aacute;ndose de rendimientos netos positivos, la reducci&oacute;n s&oacute;lo resultar&aacute; aplicable respecto de los rendimientos declarados por el contribuyente&rdquo;. </i>En nuestro caso, alega el contribuyente que se trata de un alquiler de vivienda. En el contrato de arrendamiento fechado 13 de Mayo de 2009, figura como arrendatario&nbsp; XXX Espa&ntilde;a S.A. con CIF... para destinar el inmueble como vivienda habitual de su Director General&nbsp; D.D.&nbsp; y su familia. En este sentido debe entenderse que se trata del arrendamiento de un bien inmueble destinado a vivienda, de acuerdo con lo dispuesto en el art&iacute;culo 2 de la Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos (BOE de 25 de noviembre), <b>cuando el arrendamiento recaiga sobre una edificaci&oacute;n habitable cuyo destino primordial sea satisfacer la necesidad permanente de vivienda del arrendatario</b>. En la medida en que se cumpla el anterior requisito, se aplicar&aacute; la reducci&oacute;n del 50 por 100, que deber&aacute; operar sobre el saldo positivo de los rendimientos netos procedentes del arrendamiento de inmuebles destinados a vivienda. As&iacute;, <b>no resultar&aacute; de aplicaci&oacute;n dicha reducci&oacute;n en el supuesto en el que el bien se arriende a una persona jur&iacute;dica, ya que en este caso, con independencia de la posterior utilizaci&oacute;n de la vivienda por parte de esta &uacute;ltima, no constituye la vivienda del arrendatario</b>, por lo que se debe entender, a los exclusivos efectos de este Impuesto, <b>que se trata de un arrendamiento distinto del de vivienda.</b>&rdquo;</span></p>
+<p>
+ <span lang="ES-TRAD">4.- Contra el acuerdo anterior, el obligado tributario interpuso reclamaci&oacute;n econ&oacute;mico-administrativa ante el Tribunal Econ&oacute;mico-Administrativo Regional de Andaluc&iacute;a (en adelante, TEAR) .</span></p>
+<p>
+ <span lang="ES-TRAD">El TEAR acuerda estimar la reclamaci&oacute;n, razonando en los siguientes t&eacute;rminos:</span></p>
+<p>
+ <span lang="ES-TRAD">&ldquo;SEGUNDO: La liquidaci&oacute;n practicada resulta de modificar el rendimiento de capital inmobiliario por bienes arrendados y ello como consecuencia de suprimir la totalidad de los gastos deducidos y de no admitir la reducci&oacute;n del rendimiento por inmueble destinado a vivienda.</span></p>
+<p>
+ <span lang="ES-TRAD">En cuanto a los gastos deducibles, (...)</span></p>
+<p>
+ <span lang="ES-TRAD">En cuanto a la improcedencia de la reducci&oacute;n por inmueble destinado a vivienda, la raz&oacute;n de su inadmisi&oacute;n es que el arrendatario es una persona jur&iacute;dica por lo que es imposible que el inmueble se destine a satisfacer la necesidad de vivienda, trat&aacute;ndose de arrendamiento distinto a vivienda.</span></p>
+<p>
+ <span lang="ES-TRAD">El art&iacute;culo 23.2.1&ordm; de la Ley 35/2006, de 28 de noviembre, del IRPF, dispone que, en los supuestos de arrendamiento de bienes inmuebles destinados a vivienda, el rendimiento neto se reducir&aacute; en un 50 por ciento. Trat&aacute;ndose de rendimientos netos positivos, la reducci&oacute;n s&oacute;lo resultar&aacute; aplicable respecto de los rendimientos declarados por el contribuyente.</span></p>
+<p>
+ <span lang="ES-TRAD">En el supuesto que nos ocupa consta que el rendimiento declarado de capital inmobiliario corresponde al devengado por el arrendamiento de un inmueble destinado a vivienda.</span></p>
+<p>
+ <span lang="ES-TRAD">El &Oacute;rgano gestor motiva la improcedencia de la reducci&oacute;n pretendida por el contribuyente en el hecho de ser el arrendatario una persona jur&iacute;dica; consideraci&oacute;n que este Tribunal no comparte pues la norma citada establece como &uacute;nico requisito el destino del inmueble arrendado, requisito que, visto el contrato de arrendamiento suscrito en 13 de mayo de 2009 concurre en este caso. Tanto en la manifestaci&oacute;n 4, como en la cl&aacute;usula 1.1 del referido contrato, se expresa que el objeto del arrendamiento se destinar&aacute; a vivienda habitual del director general de la compa&ntilde;&iacute;a y su familia, as&iacute; como que el cambio de uso sin previa autorizaci&oacute;n expresa por escrito del arrendador ser&aacute; causa bastante de resoluci&oacute;n del contrato; quedando prohibido el uso comercial, la cesi&oacute;n, el subarrendamiento. Por lo que consideramos que resulta procedente la reducci&oacute;n del rendimiento neto de capital inmobiliario. </span></p>
+<p>
+ <span lang="ES-TRAD">En consecuencia con lo expuesto, procede anular la liquidaci&oacute;n provisional girada&rdquo;.</span></p>
+<p>
+ <b><span lang="ES-TRAD">&nbsp;</span></b></p>
+<p>
+ <b><span lang="ES-TRAD">&nbsp;</span></b></p>
+<h3>
+ SEGUNDO.-</h3>
+<p>
+ <span lang="ES-TRAD">Frente a la citada resoluci&oacute;n del TEAR, la Directora del Departamento de Gesti&oacute;n Tributaria de la AEAT interpone el presente recurso extraordinario de alzada para la unificaci&oacute;n de criterio, al estimarla gravemente da&ntilde;osa y err&oacute;nea para el inter&eacute;s general, trascendiendo el criterio aplicado al expediente concreto. En s&iacute;ntesis, las razones a juicio de la recurrente por las que proceder&iacute;a la estimaci&oacute;n del presente recurso, ser&iacute;an las que a continuaci&oacute;n se exponen:</span></p>
+<p>
+ <span lang="ES-TRAD">a).- El caso que nos ocupa es el de un sujeto que arrienda un inmueble que por naturaleza es susceptible de ser utilizado como vivienda, si bien el arrendatario no es la persona f&iacute;sica que va a ocupar la vivienda, sino una sociedad mercantil. </span></p>
+<p>
+ <span lang="ES-TRAD">El art&iacute;culo 2 de la Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos, exige para calificar un arrendamiento como de vivienda que el mismo recaiga sobre una edificaci&oacute;n habitable cuyo destino primordial sea satisfacer la necesidad permanente de vivienda del arrendatario. </span></p>
+<p>
+ <span lang="ES-TRAD">Es evidente que este requisito no se cumple, ya que el arrendatario, una sociedad mercantil, no tiene una necesidad permanente de vivienda, por lo que se acaba concluyendo que no estamos ante un contrato de arrendamiento de vivienda y, por lo tanto, que no cabe la aplicaci&oacute;n de la reducci&oacute;n del art&iacute;culo 23.2 de la LIRPF.</span></p>
+<p>
+ <span lang="ES-TRAD">b).- Esta reducci&oacute;n aparece por primera vez en la normativa del impuesto por efecto de la Ley 46/2002, de 18 de diciembre, de reforma parcial del IRPF cuyo art&iacute;culo 11 introduc&iacute;a un nuevo apartado segundo en el por entonces vigente art&iacute;culo 21 de la Ley 40/1998, de 9 de diciembre, con el siguiente tenor literal:</span></p>
+<p>
+ <i><span lang="ES-TRAD">&ldquo;2. En los supuestos de arrendamiento de bienes inmuebles destinados a vivienda, el rendimiento neto calculado con arreglo a lo dispuesto en el apartado anterior se reducir&aacute; en un 50 por 100.&rdquo; </span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;</span></i></p>
+<p>
+ <span lang="ES-TRAD">La finalidad de la reforma era, seg&uacute;n la exposici&oacute;n de motivos de la Ley 46/2002, introducir un incentivo adicional para incrementar la oferta de las viviendas arrendadas y minorar el precio de los alquileres.</span></p>
+<p>
+ <span lang="ES-TRAD">En opini&oacute;n de este Centro Directivo el objetivo &uacute;ltimo de la medida, minorar el precio de los alquileres, es determinante para concluir que el legislador estaba pensando en un arrendatario de la vivienda que es, adem&aacute;s, destinatario directo del servicio.</span></p>
+<p>
+ <span lang="ES-TRAD">As&iacute;, entendemos que la medida se adopta, fundamentalmente, con la finalidad de favorecer el acceso a una necesidad humana b&aacute;sica, como es la vivienda, a un sector de la poblaci&oacute;n que no cuenta con los recursos suficientes para acceder a una vivienda en propiedad y que, adem&aacute;s, se encuentra con importantes dificultades para el acceso a una vivienda en r&eacute;gimen de alquiler, como consecuencia de los altos precios medios que se piden en el mercado.</span></p>
+<p>
+ <span lang="ES-TRAD">En atenci&oacute;n a ello, entendemos que la medida perder&iacute;a parte de su sentido si se admitiese su aplicaci&oacute;n cuando el arrendador es una sociedad mercantil, aunque el destino final del inmueble vaya a ser servir de vivienda a sus empleados, pues en el arrendamiento por parte de una sociedad mercantil influyen condicionantes distintos a los que intervienen cuando el arrendatario es una persona f&iacute;sica.</span></p>
+<p>
+ <span lang="ES-TRAD">En el caso de la persona f&iacute;sica arrendataria el precio a satisfacer al arrendador se constituye en el dato econ&oacute;mico fundamental a la hora de tomar la decisi&oacute;n de contratar. Por el contrario, para una sociedad mercantil ese dato constituye s&oacute;lo una de las magnitudes a considerar. Es decir, para la sociedad mercantil la decisi&oacute;n de arrendar una vivienda para su cesi&oacute;n posterior a un empleado se encuadra dentro de la pol&iacute;tica retributiva de la entidad, en la que influyen diversos condicionantes, econ&oacute;micos, financieros, fiscales...</span></p>
+<p>
+ <span lang="ES-TRAD">Partiendo de una masa salarial concreta la decisi&oacute;n de repartir el total de la misma entre retribuciones dinerarias y en especie depende de todos esos condicionantes, si bien parece claro que el coste real para la sociedad de un arrendamiento de vivienda para sus empleados no coincide con el coste para un arrendatario persona f&iacute;sica: como hemos expresado anteriormente, el coste para la persona f&iacute;sica, en ausencia de beneficios fiscales, coincidir&iacute;a con el precio a satisfacer al arrendador, mientras que en el caso de la sociedad hay que tener en cuenta que parte de ese precio ser&aacute; recuperado por la v&iacute;a de la deducci&oacute;n en su imposici&oacute;n personal sobre beneficios, al ser un coste de personal.</span></p>
+<p>
+ <span lang="ES-TRAD">Desde esta perspectiva, el Departamento no cree que fuese intenci&oacute;n del legislador que con esta medida se produjese una reducci&oacute;n de los precios de los alquileres que pudiera desembocar en un incentivo a las empresas a incorporar esta f&oacute;rmula a sus pol&iacute;ticas retributivas, porque, adem&aacute;s, el efecto podr&iacute;a ser contraproducente: la idea de partida es conseguir la reducci&oacute;n de precios por la v&iacute;a del incremento de la oferta, pero si simult&aacute;neamente se produce un incremento de la demanda podr&iacute;a producirse una neutralizaci&oacute;n, cuando menos parcial, del efecto. </span></p>
+<p>
+ <span lang="ES-TRAD">En conclusi&oacute;n, entendemos que tambi&eacute;n desde el punto de vista de la finalidad de la norma su aplicaci&oacute;n se debe restringir a los caso en que el arrendatario es la persona que va a ocupar el inmueble como vivienda.</span></p>
+<p>
+ <span lang="ES-TRAD">c).- El criterio recurrido entra en abierta contradicci&oacute;n con el que ha sido expresado por la Direcci&oacute;n General de Tributos en las consultas vinculantes n&uacute;meros V0063-11, de 18 de enero de 2011, y V0437-12, de 27 de febrero de 2012. </span></p>
+<p>
+ <span lang="ES-TRAD">Tambi&eacute;n se pone de manifiesto que el criterio recurrido parece ser seguido por el Tribunal Econ&oacute;mico-Administrativo de Madrid en la resoluci&oacute;n de reclamaciones&nbsp; n&ordm; 28/3266/09 y 28/6853/09 de 29 de marzo de 2010.</span></p>
+<p>
+ <span lang="ES-TRAD">Por lo expuesto, finaliza solicitando de este Tribunal Central que unifique criterio en el sentido de declarar que <i>&ldquo;La reducci&oacute;n prevista en el apartado segundo del art&iacute;culo 23 de la Ley 35/2006, del Impuesto sobre la Renta de las Personas F&iacute;sicas, no es de aplicaci&oacute;n cuando el inmueble arrendado no constituye la vivienda del arrendatario.&rdquo;</i></span></p>
+<p>
+ <b><span lang="ES-TRAD">&nbsp;</span></b></p>
+<h2>
+ FUNDAMENTOS DE DERECHO</h2>
+<h3>
+ PRIMERO.-</h3>
+<p>
+ <span lang="ES-TRAD">Concurren los requisitos de competencia y plazo, que son presupuesto para la admisi&oacute;n a tr&aacute;mite del presente recurso, de acuerdo con lo establecido en el art&iacute;culo 242 y de la Ley 58/2003, de 17 de Diciembre, Ley General Tributaria (LGT).</span></p>
+<p>
+ <b><i><span lang="ES-TRAD">&nbsp;</span></i></b></p>
+<h3>
+ SEGUNDO.-</h3>
+<p>
+ <span lang="ES-TRAD">La cuesti&oacute;n controvertida consiste en determinar si el contribuyente por IRPF arrendador de un inmueble susceptible de ser utilizado como vivienda, tiene derecho o no a aplicar la reducci&oacute;n prevista en el apartado segundo del art&iacute;culo 23 de la Ley 35/2006, del Impuesto sobre la Renta de las Personas F&iacute;sicas, cuando siendo el arrendatario una persona jur&iacute;dica, quede acreditado que el inmueble se destina a la vivienda de determinadas personas f&iacute;sicas. </span></p>
+<h3>
+ TERCERO.-</h3>
+<p>
+ <span lang="ES-TRAD"><b>&nbsp;</b></span><span lang="ES-TRAD">El art&iacute;culo 23 de la Ley 35/2006 del Impuesto sobre la Renta de las Personas F&iacute;sicas (en adelante. LIRPF), en la redacci&oacute;n vigente en el ejercicio 2009, establec&iacute;a:</span></p>
+<p>
+ <span lang="ES-TRAD">&ldquo;</span><span lang="ES-TRAD">2. 1&ordm;. En los supuestos de arrendamiento de bienes inmuebles<b> destinados a vivienda</b>, el rendimiento neto calculado con arreglo a lo dispuesto en el apartado anterior, se reducir&aacute; en un 50 por ciento. Trat&aacute;ndose de rendimientos netos positivos, la reducci&oacute;n s&oacute;lo resultar&aacute; aplicable respecto de los rendimientos declarados por el contribuyente&rdquo;.</span><span lang="ES-TRAD"> </span></p>
+<p>
+ <span lang="ES-TRAD">En la redacci&oacute;n hoy vigente, el mencionado precepto en su apartado segundo se expresa en t&eacute;rminos id&eacute;nticos a los efectos aqu&iacute; pretendidos se&ntilde;alando que:</span></p>
+<p>
+ <span lang="ES-TRAD">&ldquo;2. En los supuestos de <b>arrendamiento de bienes inmuebles destinados a vivienda,</b> el rendimiento neto positivo calculado con arreglo a lo dispuesto en el apartado anterior, se reducir&aacute; en un 60 por ciento. Esta reducci&oacute;n s&oacute;lo resultar&aacute; aplicable respecto de los rendimientos declarados por el contribuyente&rdquo;.</span></p>
+<p>
+ <span lang="ES-TRAD">Seg&uacute;n dispone el art&iacute;culo 12.1 de la LGT, las normas tributarias se interpretar&aacute;n con arreglo a lo dispuesto en el apartado 1 del art&iacute;culo 3.&ordm; del C&oacute;digo Civil, es decir, </span><span lang="ES-TRAD">&ldquo;seg&uacute;n el sentido propio de sus palabras, en relaci&oacute;n con el contexto, los antecedentes hist&oacute;ricos y legislativos, y la realidad social del tiempo en que han de ser aplicadas, atendiendo fundamentalmente al esp&iacute;ritu y finalidad de aqu&eacute;llas</span><span lang="ES-TRAD">&rdquo;.</span></p>
+<p>
+ <span lang="ES-TRAD">En aplicaci&oacute;n de los citados criterios, la interpretaci&oacute;n de una norma ha de partir, en primer lugar, del sentido propio de sus palabras y, en consecuencia, desde un punto de vista literal, el precepto anteriormente trascrito de LIRPF otorga al contribuyente, como perceptor de la renta por alquiler de un inmueble, un incentivo fiscal de reducci&oacute;n del rendimiento neto siempre que se cumpla el &uacute;nico requisito especificado relativo al destino dado al objeto del contrato, esto es, &uacute;nicamente en funci&oacute;n del <b>destino a vivienda </b>del inmueble arrendado y accesoriamente, si el rendimiento es positivo, que este haya sido declarado. En el texto de la Ley no se hace referencia alguna a la condici&oacute;n del arrendatario y, por tanto, literalmente, el beneficio se establece independientemente de la misma. Donde la Ley no distingue, no se debe distinguir. </span></p>
+<p>
+ <span lang="ES-TRAD">Tambi&eacute;n ha de tenerse en cuenta la diferencia existente entre los dos apartados de la norma. As&iacute;, mientras el apartado 2&ordm; se exige en el arrendatario una determinada edad para ampliar el importe de la reducci&oacute;n, en este apartado 1&ordm; del punto 2 del art&iacute;culo 23 de cuya aplicaci&oacute;n se trata ahora, no se menciona condici&oacute;n, naturaleza o caracter&iacute;stica alguna, que en su caso, habr&iacute;a de reunir el arrendatario. En consecuencia, exigir que este sea necesariamente una persona f&iacute;sica y no una persona jur&iacute;dica, supondr&iacute;a introducir un nuevo requisito no establecido literalmente en la Ley del Impuesto.</span></p>
+<p>
+ <span lang="ES-TRAD">El cumplimiento del &uacute;nico requisito exigido, esto es, que <b>el inmueble se destine a la vivienda,</b> puede quedar perfectamente acreditado por los hechos y los t&eacute;rminos del contrato de arrendamiento. As&iacute;, en el caso contemplado por la liquidaci&oacute;n provisional anulada por el TEAR, no nos encontramos ante un arrendamiento de inmueble a una sociedad para un destino gen&eacute;rico de utilizaci&oacute;n por &ldquo;sus empleados&rdquo;, sino que desde el primer momento ha quedado plenamente identificada la finalidad del arrendamiento en los t&eacute;rminos expresados en la norma, <u>constando el uso exclusivo de la vivienda para una persona f&iacute;sica determinada</u>, al expresar los t&eacute;rminos del contrato que el objeto del arrendamiento se destinar&aacute; a vivienda habitual<u> </u>del director general de la compa&ntilde;&iacute;a y su familia, as&iacute; como que el cambio de uso sin previa autorizaci&oacute;n expresa por escrito del arrendador ser&aacute; causa bastante de resoluci&oacute;n del contrato, quedando prohibido el uso comercial, la cesi&oacute;n y el subarrendamiento. En suma, se ha cumplido todo lo exigido por la norma con independencia de que el arrendatario sea una sociedad mercantil que abona la renta y de que la persona f&iacute;sica que habita la vivienda sea personal que en ella presta sus servicios.</span></p>
+<h3>
+ CUARTO.-</h3>
+<p>
+ <span lang="ES-TRAD">Estimar que la vivienda debe ser ocupada por el propio arrendatario de acuerdo con lo establecido por la legislaci&oacute;n de arrendamientos urbanos, tal como alega la recurrente al oponerse al criterio del TEAR que anul&oacute; la liquidaci&oacute;n provisional que elimin&oacute; el beneficio fiscal, supondr&iacute;a una alteraci&oacute;n de la interpretaci&oacute;n literal expuesta. </span></p>
+<p>
+ <span lang="ES-TRAD">Aqu&iacute; se plantea la cuesti&oacute;n de si el concepto de arrendamiento de vivienda debe entenderse necesariamente en los t&eacute;rminos que expresa la Ley de Arrendamientos Urbanos, art&iacute;culo 2. Pues bien, a juicio de este Tribunal Central, dicho precepto no pretende definir qu&eacute; se entiende por arrendamiento de vivienda a todos los efectos, sino, por contraposici&oacute;n a los arrendamientos para uso distinto del de vivienda (art&iacute;culo 3 LAU), delimitar el r&eacute;gimen jur&iacute;dico que le es aplicable (art&iacute;culos 1 y 4 LAU), existiendo de hecho supuestos de arrendamientos de viviendas que aun estando excluidos del r&eacute;gimen general previsto para dichos arrendamientos en la LAU (art&iacute;culo 4.2) ser&iacute;an claramente acreedores a la reducci&oacute;n objeto de controversia (art&iacute;culo 23.2 LIRPF). Por ello, el mero recurso al concepto de arrendamiento de vivienda plasmado en la LAU no es suficiente para negar el derecho al incentivo fiscal que el citado art&iacute;culo 23.2 establece en beneficio del arrendador en funci&oacute;n de que el destino dado al inmueble sea el de vivienda, independientemente de que, en casos como &eacute;ste, se contrate como parte arrendataria con la empresa en vez de con los empleados que vayan a ocupar efectivamente la vivienda.&nbsp; </span></p>
+<p>
+ <span lang="ES-TRAD">Adem&aacute;s, de admitir la interpretaci&oacute;n que hace la Oficina Gestora al considerar que no existe &ldquo;arrendamiento de vivienda&rdquo; porque el arrendatario, una sociedad mercantil, no tiene una necesidad permanente de vivienda, se producir&iacute;a una consecuencia inadmisible para la aplicaci&oacute;n sistem&aacute;tica del tributo, por cuanto existir&iacute;an en las normas reguladoras del Impuesto sobre la Renta de las Personas F&iacute;sicas dos conceptos distintos de &ldquo;arrendamiento de vivienda&rdquo;; uno a los efectos de la controvertida reducci&oacute;n y otro a los efectos de las &ldquo;rentas sujetas a retenci&oacute;n o ingreso a cuenta&rdquo; puesto que el art&iacute;culo 75.3.g) del Reglamento del Impuesto except&uacute;a de la obligaci&oacute;n de retener<u> a las personas jur&iacute;dicas</u> que satisfagan rendimientos procedentes de arrendamientos en los siguientes supuestos: &ldquo;</span><span lang="ES-TRAD">1&ordm; Cuando se trate de <u>arrendamiento de vivienda por empresas</u> para sus empleados&rdquo;.</span><span lang="ES-TRAD"> </span></p>
+<p>
+ <span lang="ES-TRAD">Por ello, este Tribunal Central comparte la conclusi&oacute;n alcanzada tanto por el Tribunal Econ&oacute;mico-Administrativo Regional de Andaluc&iacute;a en la resoluci&oacute;n aqu&iacute; recurrida, como por el Tribunal Econ&oacute;mico-Administrativo de Madrid en su resoluci&oacute;n de fecha 29 de marzo de 2010 en la que se se&ntilde;ala que, el mero recurso al concepto de arrendamiento de vivienda plasmado en la Ley de Arrendamientos Urbanos no es suficiente para negar el derecho al incentivo fiscal<b> </b>de la reducci&oacute;n en los casos en los que, sin otra raz&oacute;n que la expuesta, se restringe el &aacute;mbito de aplicaci&oacute;n del concepto de &ldquo;arrendamiento de vivienda&rdquo;.</span></p>
+<p>
+ <span lang="ES-TRAD">Asimismo el presente criterio es el adoptado por el Tribunal Econ&oacute;mico-Administrativo Regional de Catalu&ntilde;a en resoluci&oacute;n 43/540/2012 de fecha 30 de junio de 2015.</span></p>
+<p>
+ <span lang="ES-TRAD">Podemos citar igualmente resoluci&oacute;n del Tribunal Econ&oacute;mico-Administrativo Regional de Valencia 46/348/2011 de fecha 30 de septiembre de 2011.</span></p>
+<h3>
+ QUINTO.-</h3>
+<p>
+ <span lang="ES-TRAD">Por otra parte se alega en el presente recurso que, la resoluci&oacute;n del TEAR resultar&iacute;a contraria a la finalidad de la reforma efectuada por la Ley 46/2002, que pretend&iacute;a introducir un incentivo adicional para incrementar la oferta de las viviendas arrendadas y minorar el precio de los alquileres. </span></p>
+<p>
+ <span lang="ES-TRAD">Para la Directora del Departamento de Gesti&oacute;n Tributaria de la AEAT, el objetivo &uacute;ltimo de la medida, minorar el precio de los alquileres, es determinante para concluir que el legislador estaba pensando en un arrendatario de la vivienda que es, adem&aacute;s, destinatario directo del servicio. Entiende que la medida perder&iacute;a su sentido pues, en el caso de la sociedad hay que tener en cuenta que parte del precio ser&aacute; recuperado por la v&iacute;a de la deducci&oacute;n en su imposici&oacute;n personal sobre beneficios, al ser un coste de personal. Desde esta perspectiva, considera que la intenci&oacute;n del legislador no era que la medida pudiera desembocar en un incentivo a las empresas y porque, adem&aacute;s, el efecto podr&iacute;a ser contraproducente: la idea de partida es conseguir la reducci&oacute;n de precios por la v&iacute;a del incremento de la oferta, pero si simult&aacute;neamente se produce un incremento de la demanda podr&iacute;a producirse una neutralizaci&oacute;n, cuando menos parcial, del efecto.</span></p>
+<p>
+ <span lang="ES-TRAD">Pues bien, continuando con la aplicaci&oacute;n de los principios hermen&eacute;uticos establecidos en el art&iacute;culo 3 del C&oacute;digo Civil al que se remite el art&iacute;culo 12 de la LGT, efectivamente, para aplicar el art&iacute;culo de la LIRPF que regula la reducci&oacute;n controvertida, ha de atenderse al esp&iacute;ritu y finalidad de la norma.</span></p>
+<p>
+ <span lang="ES-TRAD">Si como se indica en&nbsp; la Exposici&oacute;n de Motivos de la Ley 46/2002, de 18 de diciembre, el incentivo adicional de la reducci&oacute;n se introduce para incrementar la oferta de las viviendas arrendadas y minorar el precio de los alquileres, a juicio de este Tribunal Central, el hecho de que el arrendatario sea una persona jur&iacute;dica no s&oacute;lo no desvirtuar&iacute;a la medida sino que, por el contrario, favorece la finalidad pretendida. As&iacute;, es evidente que para el sujeto pasivo beneficiario de la reducci&oacute;n, la condici&oacute;n del arrendatario persona jur&iacute;dica, sociedad o empresa puede ofrecerle mayor confianza y seguridad como garant&iacute;a del cobro de la renta o alquiler, por su mayor infraestructura y solvencia, que la que, en principio, pueda ofrecerle un arrendatario persona f&iacute;sica. Ello supone un incentivo a los propietarios de viviendas para ofertarlas en alquiler. Con el aumento de la oferta disminuye el precio. Sin embargo, eliminar la reducci&oacute;n para el arrendador por el hecho de que el arrendatario sea una persona jur&iacute;dica, disminuir&iacute;a la oferta de viviendas de alquiler en el mercado puesto que el propietario, si pretendiese aplicar el beneficio fiscal de la reducci&oacute;n de los rendimientos netos, s&oacute;lo podr&iacute;a buscar como arrendatarios a las personas f&iacute;sicas que, seg&uacute;n se alega, ser&iacute;an las &uacute;nicas que le permitir&iacute;an la reducci&oacute;n.</span></p>
+<p>
+ <span lang="ES-TRAD">Por otra parte, este Tribunal Central considera que no puede afirmarse que exista una relaci&oacute;n directa entre las pol&iacute;ticas empresariales de distribuci&oacute;n de sus gastos de personal entre retribuciones dinerarias y en especie, y un hipot&eacute;tico aumento de la demanda de viviendas que contrarreste el incentivo del arrendador para la oferta, de forma que termine afectando a los precios de los alquileres. En el Impuesto sobre Sociedades los gastos de personal incluyen los sueldos y salarios propiamente dichos, las cargas sociales afrontadas por la empresa y un conjunto de gastos heterog&eacute;neos con un origen com&uacute;n: el trabajo personal de terceros prestados a la empresa. Los sueldos y salarios representan las remuneraciones, fijas y eventuales, del personal de la empresa, tanto dinerarias como en especie. Sobre las retribuciones en especie la entidad est&aacute; obligada a efectuar un ingreso a cuenta del IRPF del trabajador. Por tanto, desde el punto de vista del beneficio sometido a tributaci&oacute;n, en ambos casos, el coste de las retribuciones, dinerarias y en especie, constituyen gasto deducible para la empresa. </span></p>
+<p>
+ <span lang="ES-TRAD">Cuando la empresa alquila inmuebles destinados a viviendas de sus empleados, la LIRPF establece una forma de valoraci&oacute;n de la retribuci&oacute;n en especie que constituye renta para el trabajador a incluir en su renta general, a diferencia de otros gastos de personal como son los de formaci&oacute;n del mismo que, en determinados per&iacute;odos impositivos no han sido renta para el trabajador pero s&iacute; es gasto de personal deducible para la empresa. As&iacute;, hasta el 31 de diciembre de 2010 estos gastos generaban un deducci&oacute;n en la cuota &iacute;ntegra del IS en concepto de formaci&oacute;n profesional. </span></p>
+<p>
+ <span lang="ES-TRAD">En definitiva, no puede afirmarse que el car&aacute;cter deducible de los gastos de personal en el Impuesto sobre Sociedades incentive a las empresas a contratar arrendamientos de viviendas para sus empleados. Por ello, siempre que se respete el destino dado al inmueble arrendado, destino a vivienda, la condici&oacute;n del arrendatario no afectar&iacute;a al esp&iacute;ritu y finalidad de la norma que establece el beneficio fiscal en el IRPF para el arrendador persona f&iacute;sica.</span></p>
+<p>
+ <span lang="ES-TRAD">Como conclusi&oacute;n, a juicio de este Tribunal Central, siempre que en cada caso concreto haya quedado debidamente acreditado que se trata del arrendamiento de un bien inmueble destinado a vivienda como residencia o morada permanente de una persona f&iacute;sica, se da cumplimiento a la condici&oacute;n legal necesaria para aplicar la reducci&oacute;n pretendida, sin que se exija que la vivienda deba ocuparse por el propio arrendatario o que el beneficio fiscal quede excluido para el supuesto de arrendatarios personas jur&iacute;dicas. </span></p>
+<p>
+ <span lang="ES-TRAD">Finalmente, destaquemos que en el mismo sentido tambi&eacute;n se pronuncian tanto el Tribunal Superior de Justicia de Galicia en sentencia 300/2015 de fecha 3 de junio de 2015 (rec. n&ordm; 15500/2014), el Tribunal Superior de Justicia de Catalu&ntilde;a entre otras en sentencia de 17 de julio de 2012 (rec. n&ordm; 612/2009) y el Tribunal Superior de Justicia de Madrid en sentencias de 18 de abril (rec. n&ordm; 1121/2010) y de 23 de abril de 2013 (rec. n&ordm; 1150/2010). </span></p>
+<p>
+ <span lang="ES-TRAD">Como en particular se razona en la sentencia del Tribunal Superior de Justicia de Catalu&ntilde;a de 21 de febrero de 2014 (Recurso: 744/2011 ): </span></p>
+<p>
+ <i><span lang="ES-TRAD">&quot; La cuesti&oacute;n no es pac&iacute;fica, como lo evidencian las resoluciones que cada parte invoca a su favor, a las que cabe a&ntilde;adir otras m&aacute;s recientes, como la sentencia del Tribunal Superior de Justicia de Madrid, de 14 de julio de 2010, dictada en el recurso n&uacute;m. 862/2008 . Tambi&eacute;n esta Sala se ha pronunciado al respecto en nuestra sentencia n&uacute;m. 553/2011, de 11 de mayo, dictada en el recurso n&uacute;m. 1086/2007 , si bien en ese caso era aplicable art&iacute;culo 21.2 del texto refundido de la Ley del Impuesto sobre la Renta de las Personas F&iacute;sicas aprobado por el Real Decreto Legislativo 3/2004, de 5 de marzo, precedente del art 23.2.1 de la Ley de 2006 aplicable al presente caso. </span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;</span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;El supuesto del que conoc&iacute;amos en dicho recurso es an&aacute;logo al presente, pues la resoluci&oacute;n del TEARC Impugnada, con sustancialmente la misma argumentaci&oacute;n que la aqu&iacute; recurrida, confirm&oacute; la liquidaci&oacute;n que eliminaba la reducci&oacute;n del rendimiento de un inmueble aplicada por el sujeto pasivo que hab&iacute;a formalizado un contrato de arrendamiento de vivienda con, una entidad de nacionalidad italiana, en cuyas cl&aacute;usulas se hac&iacute;a constar expresamente que el destino del inmueble serla exclusivamente satisfacer la necesidad permanente de vivienda para un determinado empleado de la compa&ntilde;&iacute;a y de sus familiares que convivieran bajo su dependencia, sin que pudiera cederse ni subarrendar la vivienda, total o parcialmente, sin la previa autorizaci&oacute;n escrita del arrendador. En dicha sentencia estimamos el recurso, al concluir que el arrendamiento de un inmueble a una persona jur&iacute;dica para destinarlo a la vivienda habitual de uno de sus empleados constitu&iacute;a, en ese caso, el supuesto previsto en el art&iacute;culo 21.2 de la Ley del IRPF y su tributaci&oacute;n permit&iacute;a la reducci&oacute;n del 50% a que el mismo hace referencia. Razonamos en dicha sentencia lo siguiente: </span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;</span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;&quot;(...) desde el primer momento ha quedado plenamente identificada la finalidad del arrendamiento en los t&eacute;rminos expresados en el art&iacute;culo 212 del RDLeg. 3/2004. En este mismo sentido se ha pronunciado esta Sala en otros procedimientos relativos a la exenci&oacute;n del IVA (entre otras, Sentencia n&uacute;m. 719/2009, de fecha 1 de julio de 2009 ), en la que razonamos: &quot;En suma, coincidiendo con lo expuesto, entendemos que cuando, como es el caso, conste en los contratos de arrendamiento que el objeto de los mismos al el alquiler de los pisos que se citen, &quot;para uso exclusivo como vivienda habitual&quot; de las personas f&iacute;sicas que se mencionan expl&iacute;citamente, tal arrendamiento est&eacute; exento del IVA por m&aacute;s que quien figure como arrendatario sea la sociedad mercantil que abona la renta arrendaticia y la persona f&iacute;sica que habita la vivienda sea personal a su servicio, sin perjuicio de las consecuencias tributarias que se deriven de ello (retribuci&oacute;n en especie, etc.), ajenas al caso enjuiciado&quot; </span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;</span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;Asimismo la sentencia del Tribunal Superior de Justicia de Madrid de 2 de junio de 2004 , declara, en un caso, semejante al que ahora nos ocupa, que &quot;la finalidad, del contrato de arrendamiento es &uacute;nica y exclusivamente el do vivienda, con identificaci&oacute;n del inquilino. Esta finalidad es la que el legislador tuvo en consideraci&oacute;n en la configuraci&oacute;n de la exenci&oacute;n, sin que de la redacci&oacute;n del art. 20.1.23 se presuponga o exija otra condici&oacute;n. La no estimaci&oacute;n de la exenci&oacute;n, en los t&eacute;rminos propuestos por la Administraci&oacute;n supone la exigencia de requisitos no previstos por la norma&quot;. </span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;</span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;Los razonamientos del acto impugnado y las alegaciones del escrito de recurso no permiten apartarnos del anterior criterio, plenamente trasladable al presente caso, coherente con el expresado en materia del IVA, y que ahora reiteramos para el presente caso, conforme a los principios de unidad de doctrina, igualdad y seguridad jur&iacute;dica. </span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;</span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;Abundando en lo ya expuesto en dicha sentencia, tal y como viene a admitir el Abogado del Estado en la contestaci&oacute;n a la demanda, el precepto qu&eacute; nos ocupa no exige como requisito de la reducci&oacute;n que el arrendatario sea una persona f&iacute;sica, sino que se trate de un arrendamiento de bien inmueble destinado a vivienda. Sostiene el Abogado del Estado, que pese la interpretaci&oacute;n literal del precepto ha de prevalecer una interpretaci&oacute;n teleol&oacute;gica. Sin embargo, no puede compartirse que una interpretaci&oacute;n finalista de la norma conduzca a lo pretendido. La reducci&oacute;n del rendimiento neto del capital inmobiliario en los supuestos de arrendamiento de bienes inmuebles destinados a vivienda fue introducida en la Ley 40/1998 por la Ley 46/2002, de 18 de diciembre, de reforma parcial del Impuesto sobre la Renta de las Personas F&iacute;sicas y por la que se modifican las Leyes de los Impuestos sobre Sociedades y sobre la Renta de no Residentes, cuya Exposici&oacute;n de Motivos expresa: &quot;En los rendimientos del capital inmobiliario derivados de viviendas en alquiler se mejora y simplifica &eacute;l c&aacute;lculo del rendimiento neto, introduci&eacute;ndose un incentivo adicional para incrementar la oferta de las viviendas arrendadas y minorar el precio de los alquileres&quot;. Queda claro que la voluntad del legislador era la de disminuir el precio de la vivienda de alquiler intentando aumentar el parqu&eacute; de viviendas de alquiler, a base de incentivar a los propietarios de inmuebles a ofertarlas para ese destino, en lugar de mantenerlas vac&iacute;as (para especular con ellas) o de arrendarlas para otros usos (oficinas, etc) generalmente m&aacute;s lucrativos. En supuestos como el presente, en que en el propio contrato de arrendamiento se pacta el destino exclusivo del inmueble a vivienda de D. Luis Francisco , con exclusi&oacute;n de otros usos, previ&eacute;ndose que el incumplimiento de tal obligaci&oacute;n por el arrendatario ser&aacute; causa de resoluci&oacute;n autom&aacute;tica del contrato, es claro que la finalidad perseguida por el legislador al establecer el beneficio fiscal se cumple. </span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;</span></i></p>
+<p>
+ <i><span lang="ES-TRAD">&nbsp;Aunque el Abogado del Estado hace alusi&oacute;n a una interpretaci&oacute;n finalista, de su argumentaci&oacute;n m&aacute;s parece que se refiere a una interpretaci&oacute;n sistem&aacute;tica, al interpretar la norma fiscal a la luz del art&iacute;culo 2 de la LAU . Sin embargo, entendemos que esa interpretaci&oacute;n sistem&aacute;tica no puede prevalecer frente a la literalidad del precepto y su interpretaci&oacute;n teleol&oacute;gica. La LAU, y en particular su articulo 2 , no es fuente del derecho tributario, conforme al articulo 7 de la Ley 58/2003 , y parece l&oacute;gico pensar que si el legislador hubiera querido que el beneficio fiscal se restringiera a los arrendamientos de vivienda sujetos a la LAU, dado que no esta Ley no es fuente del derecho tributario, as&iacute; lo hubiera expresado &quot;.</span></i></p>
+<p>
+ <b><i><span lang="ES-TRAD">&nbsp;</span></i></b></p>
+<p>
+ <span lang="ES-TRAD">Por lo expuesto,</span></p>
+<p>
+ <span lang="ES-TRAD">EL <b>TRIBUNAL ECON&Oacute;MICO-ADMINISTRATIVO CENTRAL</b>, EN SALA, visto el recurso extraordinario de alzada para unificaci&oacute;n de criterio promovido por la <b>DIRECTORA DEL DEPARTAMENTO DE GESTI&Oacute;N TRIBUTARIA DE LA AGENCIA ESTATAL DE ADMINISTRACI&Oacute;N TRIBUTARIA,</b> contra resoluci&oacute;n del Tribunal Econ&oacute;mico-Administrativo de Andaluc&iacute;a de fecha 18 de enero de 2013, ACUERDA: <b>DESESTIMARLO</b></span><b><span lang="ES-TRAD"> </span></b><span lang="ES-TRAD">fijando como criterio que resulta procedente la aplicaci&oacute;n de la reducci&oacute;n prevista en el apartado segundo del art&iacute;culo 23 de la Ley 35/2006, de 28 de noviembre, reguladora del Impuesto sobre la Renta de las Personas F&iacute;sicas, sobre los rendimientos netos derivados del arrendamiento de bienes inmuebles cuando siendo el arrendatario una persona jur&iacute;dica, quede acreditado que el inmueble se destina a la vivienda de determinadas personas f&iacute;sicas. </span></p>
+
+        </div>
+    </div>
+
+
+</div>
+<div class='containerBack'>
+    <a href='Criterios.aspx?'>Volver</a>
+</div>
+
+    </div>
+    </form>
+</div>
+<div class="clear" ></div>
+
+<div id="pie">
+    <div class="container_16">
+        <h2 class="fueraIzq">Ministerio de Hacienda y Administraciones Públicas</h2>
+        <div class="listados">
+            <div id="textos" class="textos">
+	            <ul>
+                <li class="ultimotextos"><a title="Accesibilidad" href="http://www.hacienda.gob.es/es-ES/Paginas/Accesibilidad.aspx">Accesibilidad</a></li>
+            	</ul>
+            </div>
+            <div id="iconosacc" class="iconosacc">
+	            <ul>
+                <li><a title="Abre nueva ventana: Datos abiertos" href="http://www.hacienda.gob.es/es-ES/Datos%20Abiertos/Paginas/Datosabiertos.aspx" target="_blank"><img alt="CSS 3.0 (Abre nueva ventana)" src="images/DatosAbiertos.jpg" /></a></li>
+		        <li><a title="Abre nueva ventana: Validador CSS 3.0 del W3C" href="http://jigsaw.w3.org/css-validator/validator?uri=https%3a%2f%2fserviciostelematicosext.hacienda.gob.es%2fTEAC%2fDYCTEA%2fcriterio.aspx%3fid%3d00%2f05138%2f2013%2f00%2f0%2f1&amp;profile=css3" target="_blank"><img alt="CSS 3.0 (Abre nueva ventana)" src="images/css.gif" /></a></li>
+                <li><a title="Abre nueva ventana: Validador XHTML 1.0 del W3C" href="http://validator.w3.org/check?uri=https%3a%2f%2fserviciostelematicosext.hacienda.gob.es%2fTEAC%2fDYCTEA%2fcriterio.aspx%3fid%3d00%2f05138%2f2013%2f00%2f0%2f1" target="_blank"><img alt="XHTML 1.0 (Abre nueva ventana)" src="images/xhtml.gif" /></a></li>
+                <li><a title="Abre nueva ventana: Las Directrices de Accesibilidad para el Contenido Web 1.0 (WCAG 1.0)." href="http://www.w3.org/WAI/WCAG1AA-Conformance" target="_blank"><img alt="Nivel Doble-A de Conformidad con las Directrices de Accesibilidad para el Contenido Web 1.0 (WCAG 1.0). (Abre nueva ventana)" src="images/aa.gif" /></a></li>
+	            </ul>
+            </div>
+            <div id="textos2" class="textos">
+	            <ul>
+                <li class="ultimotextos">(NIPO: 225-24-144-1)</li>		
+            	</ul>
+            </div>			
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

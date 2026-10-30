@@ -1,0 +1,13 @@
+{
+  "verdict": "BOUNDED PASS exact capital pair",
+  "guide_sha256": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+  "ledger_sha256": "3b52bac6c6b55116bc53a0339c740aa962101dabe52af68f0ed167d43b8c6e9c",
+  "rows_read": 245,
+  "initial_anchors": 154,
+  "added_anchors": 3,
+  "source_pairs_rehashed": 12,
+  "own_controls": 67,
+  "canonical_oa_blocks": 2,
+  "finding": "S-L07 closed evidence-only successor",
+  "report_sha256": "b549b46379782b99f1e0a50dbf721e3e763b3f19bc3fc0b2aa43d148e1ccf730"
+}

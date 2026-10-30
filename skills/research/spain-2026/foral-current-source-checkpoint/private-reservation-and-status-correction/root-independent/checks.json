@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-28T00:05:03.234328+00:00",
+  "scope": "Independent minimal two-file correction review; not a positive surcharge formula or whole-country review",
+  "verified_writer_manifest_entries": 14,
+  "checks": [
+    {
+      "name": "Corporate exact inverse restores all97950originalbytes",
+      "pass": true
+    },
+    {
+      "name": "Corporate only metadata version changes",
+      "pass": true
+    },
+    {
+      "name": "Corporate version and H1 agree",
+      "pass": true
+    },
+    {
+      "name": "Corporate original two whole oa blocks unchanged",
+      "pass": true
+    },
+    {
+      "name": "Corporate all old URL sequence unchanged",
+      "pass": true
+    },
+    {
+      "name": "Corporate all method H2 unchanged",
+      "pass": true
+    },
+    {
+      "name": "Corporate original absent CTA preserved",
+      "pass": true
+    },
+    {
+      "name": "Corporate other nonzero/Alava reservations retained",
+      "pass": true
+    },
+    {
+      "name": "bizkaia-law-operative-excerpts.txt current charging exclusion independently read",
+      "pass": true
+    },
+    {
+      "name": "alava-law-operative-excerpts.txt current charging exclusion independently read",
+      "pass": true
+    },
+    {
+      "name": "gipuzkoa-law-operative-excerpts.txt current charging exclusion independently read",
+      "pass": true
+    },
+    {
+      "name": "README only line14partialITINDchanged",
+      "pass": true
+    },
+    {
+      "name": "README acknowledged actual applied method",
+      "pass": true
+    },
+    {
+      "name": "README new scoped expense method maps to Guide",
+      "pass": true
+    },
+    {
+      "name": "README precise common cost and article20 reservation",
+      "pass": true
+    },
+    {
+      "name": "README preserves Balearic rate reservation",
+      "pass": true
+    },
+    {
+      "name": "README all other reservations retained",
+      "pass": true
+    },
+    {
+      "name": "README URL sequence exact",
+      "pass": true
+    },
+    {
+      "name": "README original absent CTA preserved",
+      "pass": true
+    },
+    {
+      "name": "No attestation introduced",
+      "pass": true
+    },
+    {
+      "name": "es-foral-corporate-tax.md live equals baseline",
+      "pass": true
+    },
+    {
+      "name": "README.md live equals baseline",
+      "pass": true
+    }
+  ],
+  "count": 22,
+  "all_pass": true,
+  "files": {
+    "es-foral-corporate-tax.md": "989b067cc6d2784068544a79e8c161646a510ee220895e185d013b4c94ccb3ff",
+    "README.md": "c58217abf30a3d1254e4b64564d0287df175e5947bcced7264acfbbcfec906e5"
+  }
+}

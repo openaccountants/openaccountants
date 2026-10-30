@@ -1,0 +1,32 @@
+[
+  {
+    "path": "final-country-review.json",
+    "sha256": "2737311e618da2fbb24557c4187b8f0e316d706770fe9a47708c067d7a243518",
+    "bytes": 8362
+  },
+  {
+    "path": "final-country-review-report.md",
+    "sha256": "b74065363b92e44a36cbcd46a5e17d877e9f31ec623d0eeaef5b0448b1c3cea2",
+    "bytes": 2489
+  },
+  {
+    "path": "final-22-pair-pins.json",
+    "sha256": "819d2ad279399e587aee6d4518b24dd62c6322067a3a9e9d9463ed99c23de263",
+    "bytes": 19275
+  },
+  {
+    "path": "final-README-scope-review.json",
+    "sha256": "3abe711b5c82183d491c9edde1b5698843d9bf8ca12d1698d62763744d998012",
+    "bytes": 1572
+  },
+  {
+    "path": "final-README-reviewed-delta.diff",
+    "sha256": "d86d0e0bd01dc3ee4e8980bfc9dcd43b405ff1b3946bed2671cb243d7f56af8c",
+    "bytes": 3537
+  },
+  {
+    "path": "tranche18-manifest.json",
+    "sha256": "4a753439e2081806ce7484f00731cc81c148b16661020e22f8c6d2620d3abcab",
+    "bytes": 3334
+  }
+]

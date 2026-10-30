@@ -1,0 +1,157 @@
+
+
+
+	
+    
+	
+
+: Retenciones
+
+
+
+	
+[[ID:body]]
+
+	
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Descarga de programas de ayuda
+
+
+
+			
+				
+Retenciones
+
+Patrimonio
+
+Sociedades e Impuesto sobre la Renta de No Residentes
+
+Impuesto sobre el Valor Añadido (IVA)
+
+Declaraciones Informativas
+
+Administraciones Públicas
+
+Descarga e Instalación de la Máquina Virtual Java
+
+Manuales técnicos
+
+[[ID:acc-main]]
+
+		
+[[ID:js-nombre-canal]]
+
+Retenciones
+    		           	
+
+Ejercicio 2026
+
+Servicio de Cálculo de Retenciones (del 1 de enero al 09 de septiembre de 2026) 
+
+Servicio de Cálculo de Retenciones (a partir del 10 de septiembre de 2026) 
+
+Cuadro informativo tipos de retención aplicables
+
+Cuadro informativo tipos de retención aplicables (Aplicable desde 1 de enero hasta 09 de septiembre de 2026) (276 KB - pdf)
+
+Cuadro informativo tipos de retención aplicables (Aplicable a partir del 10 de septiembre de 2026)(304 KB - pdf)
+
+Información técnica
+
+Algoritmo de cálculo del tipo de retención a cuenta del IRPF para los rendimientos del trabajo personal IRPF 2026 (Aplicable desde 1 de enero hasta 09 de septiembre de 2026) (1,00 MB - pdf)
+Especificaciones para el desarrollo informático del algoritmo de cálculo de retenciones del trabajo personal IRPF 2026
+
+ Algoritmo de cálculo del tipo de retención a cuenta del IRPF para los rendimientos del trabajo personal IRPF 2026 (Aplicable a partir del 10 de septiembre de 2026) (1,08 MB - pdf)
+Especificaciones para el desarrollo informático del algoritmo de cálculo de retenciones del trabajo personal IRPF 2026
+
+Esquema W3C para el tratamiento de ficheros XML en el Servicio de Cálculo de Retenciones 2026(31,7 KB - Ejecutable)
+
+Documentación adicional esquema W3C (ejemplos y esquema gráfico) (172 KB - zip)
+
+Documentación sobre el uso del Módulo de Cálculo de Retenciones como servicio para 2026(40 KB - pdf)
+
+Ejercicios anteriores
+
+	Ejercicio 2025
+
+	Ejercicio 2024
+
+	Ejercicio 2023
+
+	Ejercicio 2022
+
+	Ejercicio 2021
+
+	Ejercicio 2020
+
+	Ejercicio 2019
+
+	Ejercicio 2018
+
+	Ejercicio 2017
+
+Ayuda
+
+	Ayuda técnica
+
+
+
+   
+		
+	
+		
+		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 11/septiembre/2026
+
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

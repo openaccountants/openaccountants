@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="BOE-A-2004-14532 Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes." />
+    <title>BOE-A-2004-14532 Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/consolidada.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2004-14532" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#date_document" content="2004-07-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#number" content="1776" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3957"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6674"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2004-14532" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#date_document" content="2004-07-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#number" content="1776" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3957"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6674"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2004-08-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/xml"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/cat"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat" property="http://data.europa.eu/eli/ontology#title" content="REIAL DECRET 1776/2004, de 30 de juliol, pel qual s&#039;aprova el Reglament de l&#039;impost sobre la renda de no residents." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat" property="http://data.europa.eu/eli/ontology#date_publication" content="2004-08-16" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/cat"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/glg"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto 1776/2004, do 30 de xullo, polo que se aproba o Regulamento do imposto sobre a renda de non-residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg" property="http://data.europa.eu/eli/ontology#date_publication" content="2004-09-01" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof/glg"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2004-14532" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#date_document" content="2004-07-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#number" content="1776" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3957"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6674"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#version_date" content="2019-10-19" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20191019/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2004-14532" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#date_document" content="2004-07-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#number" content="1776" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3957"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6674"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#version_date" content="2015-07-11" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20150711/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2004-14532" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#date_document" content="2004-07-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#number" content="1776" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3957"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6674"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#version_date" content="2013-12-06" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20131206/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2004-14532" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#date_document" content="2004-07-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#number" content="1776" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3957"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6674"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#version_date" content="2010-12-31" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20101231/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2004-14532" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#date_document" content="2004-07-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#number" content="1776" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3957"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6674"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#version_date" content="2010-06-08" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20100608/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2004-14532" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#date_document" content="2004-07-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#number" content="1776" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3957"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6674"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#version_date" content="2008-11-18" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20081118/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2004-14532" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#date_document" content="2004-07-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#number" content="1776" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3957"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6674"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#version_date" content="2006-12-23" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20061223/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2004-14532" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#date_document" content="2004-07-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#number" content="1776" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3957"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6674"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#version_date" content="2005-11-08" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20051108/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2004-14532" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#date_document" content="2004-07-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#number" content="1776" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3957"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6674"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#version_date" content="2004-08-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/dof"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rd/2004/07/30/1776/con/20040805/spa"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="act.php?lang=es&amp;id=BOE-A-2004-14532&amp;tn=1&amp;p=" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="act.php?lang=ca&amp;id=BOE-A-2004-14532&amp;tn=1&amp;p=" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="act.php?lang=gl&amp;id=BOE-A-2004-14532&amp;tn=1&amp;p=" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="act.php?lang=eu&amp;id=BOE-A-2004-14532&amp;tn=1&amp;p=" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="act.php?lang=va&amp;id=BOE-A-2004-14532&amp;tn=1&amp;p=" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="act.php?lang=en&amp;id=BOE-A-2004-14532&amp;tn=1&amp;p=" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="act.php?lang=fr&amp;id=BOE-A-2004-14532&amp;tn=1&amp;p=" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>
+        <li class="destino">Documento consolidado BOE-A-2004-14532</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<div class="titulo-wrapper">
+  <h2>Legislación consolidada<img class="tooltipimg" src="/imagenes/msg_info.png" alt="(información)"/><span class="tooltiptext">Este texto consolidado es de carácter informativo y no tiene valor jurídico.<br/>La consolidación consiste en integrar en un solo texto, sin valor oficial, las modificaciones, correcciones y derogaciones de carácter expreso que una norma ha tenido desde su origen, con el objetivo de facilitar el acceso al Derecho vigente. Para fines jurídicos, debe consultarse la publicación oficial.</span></h2>
+  <div class="puntoAyuda">
+    <a href="/buscar/ayudas/legislacion_actualizada.php">
+      <span class="pc tablet">Ayuda</span>
+    </a>
+  </div>
+</div>
+<div id="barraSep" class="enlacesDoc">
+  <h3 class="documento-tit">Real Decreto 1776/2004, de 30 de julio, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes.</h3>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl class="conso">
+        <dt>Publicado en:</dt>
+        <dd><abbr title="Boletín Oficial del Estado">«BOE»</abbr> <abbr title="número">núm.</abbr> 188, de 05/08/2004.</dd>
+        <dt>Entrada en vigor:</dt>
+        <dd>06/08/2004</dd>
+        <dt>Departamento:</dt>
+        <dd>Ministerio de Economía y Hacienda</dd>
+        <dt>Referencia:</dt>
+        <dd>
+          <a href="/buscar/doc.php?id=BOE-A-2004-14532">BOE-A-2004-14532</a>
+        </dd>
+        <dt>Permalink ELI:</dt>
+        <dd>
+          <a href="https://www.boe.es/eli/es/rd/2004/07/30/1776/con">https://www.boe.es/eli/es/rd/2004/07/30/1776/con</a>
+        </dd>
+      </dl>
+    </div>
+    <div class="redaccion">
+      <label for="activar-versiones">
+        <span class="etiqDoc">Seleccionar redacción: </span>
+      </label>
+      <div class="dropdown">
+        <input id="activar-versiones" type="checkbox"/>
+        <label class="version-actual" for="activar-versiones" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones">
+          <span>Última actualización publicada el 19/10/2019</span>
+        </label>
+        <ul id="lista-versiones">
+          <li>
+            <a class="version-selected" href="?id=BOE-A-2004-14532&amp;tn=1&amp;p=20191019">Última actualización publicada el 19/10/2019</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2004-14532&amp;tn=1&amp;p=20150711">Modificación publicada el 11/07/2015</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2004-14532&amp;tn=1&amp;p=20131206">Modificación publicada el 06/12/2013</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2004-14532&amp;tn=1&amp;p=20101231">Modificación publicada el 31/12/2010</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2004-14532&amp;tn=1&amp;p=20100608">Modificación publicada el 08/06/2010</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2004-14532&amp;tn=1&amp;p=20081118">Modificación publicada el 18/11/2008</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2004-14532&amp;tn=1&amp;p=20061223">Modificación publicada el 23/12/2006</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2004-14532&amp;tn=1&amp;p=20051108">Modificación publicada el 08/11/2005</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2004-14532&amp;tn=1&amp;p=20040805">Texto inicial publicado el 05/08/2004</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="enlaces-conso">
+      <li class="puntoPDF2">
+        <a target="_blank" title="Abre el PDF en una nueva ventana" href="/buscar/pdf/2004/BOE-A-2004-14532-consolidado.pdf">PDF</a>
+      </li>
+      <li class="puntoEpub">
+        <a target="_blank" href="/buscar/epub/2004/BOE-A-2004-14532-consolidado.epub">ePUB</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="/js/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+<script src="/djrae/_js/jquery.djRAE.js?rnd=583"></script>
+<link   rel="stylesheet" type="text/css" href="/djrae/lib/jquery.djRAE.css" />
+
+<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/djrae/lib/jquery.djRAE_ie8.css" />
+<![endif]-->
+	
+<div id="barra_dj">
+	<form name="frm_search_dj" action="/djrae/execute_service.php" target="_blank" method="GET">
+		<a class="logo-video" title="Ver v&iacute;deo sobre el Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico" href="https://youtu.be/7W_GfHGjVrw" target="_blank"><span class="fuera">Vídeo tutorial sobre Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico de la Real Academia Espa&ntilde;ola</span></a>
+		<a href="https://dpej.rae.es/" title="Ir a la web del Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico (DPEJ)" target="_blank"><div class="icon_dj"><span class="fuera">Ir a la web del Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico (DPEJ)</span>&nbsp;</div></a>
+		<label class="azul_dj" for="caja-busqueda-djrae"><span class="fuera">Introducir t&eacute;rmino a buscar en el </span>
+		<span class="pc tablet">Diccionario Panhisp&aacute;nico del Espa&ntilde;ol <span class="rojo_dj">J</span>ur&iacute;dico</span>
+		</label>
+		<div id="container_dj">
+			<input type="text" name="w" id="caja-busqueda-djrae"/>
+			<div class="lupa_dj">
+				<span class="movil"><input for="caja-busqueda-djrae" type="image" src="/imagenes/home/lupa_16x16.png" title="Buscar en el Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico de la RAE" alt="Buscar en el Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico de la RAE"></span>
+			</div>
+		</div>
+	</form>
+</div>
+
+<script>
+	if(typeof jQuery !== "undefined"){
+
+		jQuery.noConflict();
+
+		var carga = true, djrae_t = "P";
+
+		if(!window.matchMedia){
+			//IE9
+			carga = true;
+		}else if(window.matchMedia("(max-width:669px)").matches){
+			carga = true;
+			djrae_t  = "M";
+		} else if(window.matchMedia("(min-width:670px) and (max-width:1050px)").matches) {
+			carga = true;
+			djrae_t  = "T";
+		}
+
+		if(carga){
+			jQuery("#container_dj").djraeWidget({modo: djrae_t});
+		}
+	}
+</script>
+<div class="pretexto" id="tabs">
+  <ul class="navlist">
+    <li><span class="pc tablet"><a href="#" class="current">Completo</a></span>
+    <span class="movil"><a href="#tabs" class="current">Completo</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2004-14532&amp;p=20191019&amp;tn=0">Solo Texto</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2004-14532&amp;p=20191019&amp;tn=0#tabs">Texto</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2004-14532&amp;p=20191019&amp;tn=2">&Iacute;ndice</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2004-14532&amp;p=20191019&amp;tn=2#tabs">&Iacute;ndice</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2004-14532&amp;p=20191019&amp;tn=6">An&aacute;lisis</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2004-14532&amp;p=20191019&amp;tn=6#tabs">An&aacute;lisis</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2004-14532&amp;p=20191019&amp;tn=3" class="guardar">Recibir alerta <img src="/imagenes/logoMiBOE_azul.png" srcset="/imagenes/logoMiBOE_azul.svg" alt="Mi BOE"/></a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2004-14532&amp;p=20191019&amp;tn=3#tabs" class="guardar"><img src="/imagenes/logoMiBOE_azul.png" srcset="/imagenes/logoMiBOE_azul.svg" alt="Mi BOE"/></a></span></li>
+  </ul>
+</div>
+<div id="textoxslt">
+<h3>Texto consolidado<span class="subtitMostrado">: &laquo;&Uacute;ltima actualizaci&oacute;n, publicada el 19/10/2019&raquo;</span></h3>
+  <div class="marcadores">
+    <label for="activar-marcadores"><span class="etiqDoc">Ir a: </span></label>
+    <div id="selector-marcador"  class="dropdown">
+      <input id="activar-marcadores" type="checkbox">
+      <label class="marcador-actual" for="activar-marcadores" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span>Seleccionar apartado</span></label>
+      <ul id="lista-marcadores">
+        <li><a href="#preambulo">[Pre&aacute;mbulo]</a></li>
+        <li><a href="#aunico">Artículo único</a></li>
+        <li><a href="#daprimera">Disposición adicional primera</a></li>
+        <li><a href="#dasegunda">Disposición adicional segunda</a></li>
+        <li><a href="#ddunica">Disposición derogatoria única</a></li>
+        <li><a href="#dfunica">Disposición final única</a></li>
+        <li><a href="#firma">[Firma]</a></li>
+        <li><a href="#reglamento">REGLAMENTO</a></li>
+        <li><a href="#ci">CAPÍTULO I</a></li>
+        <li><a href="#a1">Artículo 1</a></li>
+        <li><a href="#a2">Artículo 2</a></li>
+        <li><a href="#a3">Artículo 3</a></li>
+        <li><a href="#a4">Artículo 4</a></li>
+        <li><a href="#cii">CAPÍTULO II</a></li>
+        <li><a href="#a5">Artículo 5</a></li>
+        <li><a href="#a6">Artículo 6</a></li>
+        <li><a href="#a7">Artículo 7</a></li>
+        <li><a href="#a7bis">Artículo 7 bis</a></li>
+        <li><a href="#ciii">CAPÍTULO III</a></li>
+        <li><a href="#s1">Sección 1</a></li>
+        <li><a href="#a8">Artículo 8</a></li>
+        <li><a href="#s2">Sección 2</a></li>
+        <li><a href="#a9">Artículo 9</a></li>
+        <li><a href="#a10">Artículo 10</a></li>
+        <li><a href="#a11">Artículo 11</a></li>
+        <li><a href="#a12">Artículo 12</a></li>
+        <li><a href="#a13">Artículo 13</a></li>
+        <li><a href="#a14">Artículo 14</a></li>
+        <li><a href="#a15">Artículo 15</a></li>
+        <li><a href="#a16">Artículo 16</a></li>
+        <li><a href="#a17">Artículo 17</a></li>
+        <li><a href="#s3">Sección 3</a></li>
+        <li><a href="#a18">Artículo 18</a></li>
+        <li><a href="#a19">Artículo 19</a></li>
+        <li><a href="#civ">CAPÍTULO IV</a></li>
+        <li><a href="#a20">Artículo 20</a></li>
+        <li><a href="#cv">CAPÍTULO V</a></li>
+        <li><a href="#a21">Artículo 21</a></li>
+        <li><a href="#a22">Artículo 22</a></li>
+        <li><a href="#a23">Artículo 23</a></li>
+        <li><a href="#a24">Artículo 24</a></li>
+        <li><a href="#da-3">Disposición adicional primera</a></li>
+        <li><a href="#da-4">Disposición adicional segunda</a></li>
+        <li><a href="#da">Disposición adicional tercera</a></li>
+        <li><a href="#dfunica-2">Disposición final única</a></li>
+      </ul>
+    </div>
+  </div>
+          <hr class="bloque"/>
+          <div class="bloque" id="preambulo">
+            <p class="bloque">[Bloque 1: #preambulo]</p>
+
+<p class="parrafo">La disposición adicional cuarta de la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2002-24711" target="_blank" title="Abre nueva ventana">Ley 46/2002, de 18 de diciembre</a>, de reforma parcial del Impuesto sobre la Renta de las Personas Físicas y por la que se modifican las Leyes de los Impuestos sobre Sociedades y sobre la Renta de no Residentes, en la redacción dada por la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-23936#dfdecimoctava" target="_blank" title="Abre nueva ventana">disposición final decimoctava de la Ley 62/2003, de 30 de diciembre</a>, de medidas fiscales, administrativas y del orden social, habilitó al Gobierno para elaborar el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527" target="_blank" title="Abre nueva ventana">texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado por el Real Decreto Legislativo 5/2004, de 5 de marzo</a>.</p>
+<p class="parrafo">En relación con dicho texto refundido, el Consejo de Estado, en sendos dictámenes de 16 de octubre de 2003 y 26 de febrero de 2004, observó que debía procederse a refundir en un único cuerpo normativo todas las disposiciones reglamentarias vigentes, aprovechando la ocasión para realizar únicamente los ajustes relativos a remisiones y nueva numeración de artículos.</p>
+<p class="parrafo">Atendiendo la observación del Alto Órgano Consultivo se elabora este Real Decreto, por el que se aprueba el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de no Residentes</a>, con el fin de contribuir a la necesaria claridad de las normas tributarias y a la seguridad jurídica de la Administración tributaria y, especialmente, de los contribuyentes.</p>
+<h4 class="subseccion">II</h4>
+<p class="parrafo">El <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1999-4802" target="_blank" title="Abre nueva ventana">Real Decreto 326/1999, de 26 de febrero</a>, por el que se aprueba el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de no Residentes</a>, que ahora se deroga, contenía las disposiciones reglamentarias que desarrollaban el régimen de tributación de los contribuyentes no residentes establecido por la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1998-28473" target="_blank" title="Abre nueva ventana">Ley 41/1998, de 9 de diciembre</a>, del Impuesto sobre la Renta de no Residentes y Normas Tributarias.</p>
+<p class="parrafo">La promulgación de la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1998-28473" target="_blank" title="Abre nueva ventana">Ley 41/1998</a> supuso la regulación independiente de la imposición directa de los contribuyentes no residentes en territorio español, que con anterioridad se contenía en la normativa de los Impuestos sobre Sociedades y sobre la Renta de las Personas Físicas, conocida como "obligación real de contribuir".</p>
+<p class="parrafo">Esta integración en la nueva Ley de la normativa aplicable a los contribuyentes no residentes exigió también aprobar una norma reglamentaria independiente y propia bajo la rúbrica del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de no Residentes</a>.</p>
+<p class="parrafo">El <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1999-4802" target="_blank" title="Abre nueva ventana">Real Decreto 326/1999</a>, desde su entrada en vigor, experimentó diversas modificaciones, entre las que cabe destacar las introducidas por las siguientes normas:</p>
+<p class="parrafo">El <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1999-24789" target="_blank" title="Abre nueva ventana">Real Decreto 1968/1999, de 23 de diciembre</a>, que posibilitaba el desarrollo del procedimiento aplicable en ciertos supuestos relativos a la retención, o exoneración de la obligación de practicarla, en rendimientos derivados de la emisión de valores negociables.</p>
+<p class="parrafo">El <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2001-10463" target="_blank" title="Abre nueva ventana">Real Decreto 579/2001, de 1 de junio</a>, introduce modificaciones del Reglamento relativas a la exclusión de la obligación de retener o ingresar a cuenta respecto a los rendimientos del capital mobiliario procedentes de la devolución de la prima de emisión de acciones o participaciones y de la reducción de capital con devolución de aportaciones.</p>
+<p class="parrafo">Finalmente, las modificaciones incorporadas por el <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2003-2097" target="_blank" title="Abre nueva ventana">Real Decreto 116/2003, de 31 de enero</a>, que desarrollaba reglamentariamente las mejoras introducidas por la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2002-24711" target="_blank" title="Abre nueva ventana">Ley 46/2002</a>, norma esta que originó la reforma más sustancial en el texto de la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1998-28473" target="_blank" title="Abre nueva ventana">Ley 41/1998</a> desde que entró en vigor. El <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2003-2097" target="_blank" title="Abre nueva ventana">Real Decreto 116/2003</a> modificó lo relativo a los elementos afectos al establecimiento permanente, a las obligaciones de retención sobre las rentas de trabajo en caso de cambio de residencia y a las entidades en atribución de rentas. Por otra parte, se amplió a cuatro años, siempre que exista reciprocidad, el plazo de devolución de cantidades ingresadas en exceso sobre las resultantes de la aplicación de un Convenio para evitar la doble imposición.</p>
+<h4 class="subseccion">III</h4>
+<p class="parrafo">En el Real Decreto que ahora se aprueba se da nueva numeración a los artículos y a determinados capítulos del Reglamento del Impuesto, adaptándola al orden seguido en el texto refundido de la Ley del Impuesto y se introducen modificaciones técnicas de referencias efectuadas en el texto anterior debido a la reciente aprobación de algunas normas, como la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186" target="_blank" title="Abre nueva ventana">Ley 58/2003, de 17 de diciembre</a>, General Tributaria, o el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-21845" target="_blank" title="Abre nueva ventana">Real Decreto 1496/2003, de 28 de noviembre</a>, por el que se aprueba el Reglamento por el que se regulan las obligaciones de facturación.</p>
+<p class="parrafo">Asimismo, en virtud de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-20331#dasegunda" target="_blank" title="Abre nueva ventana">disposición adicional segunda de la Ley 35/2003, de 4 de noviembre</a>, de Instituciones de Inversión Colectiva, se completa la relación de sujetos obligados a practicar retención o ingreso a cuenta, incluyéndose en el artículo 11 a los representantes designados de acuerdo con lo dispuesto en el apartado 7 del artículo 55 de dicha Ley, que actúen en nombre de las gestoras que operen en régimen de libre prestación de servicios.</p>
+<h4 class="subseccion">IV</h4>
+<p class="parrafo">Este Real Decreto contiene un artículo, dos disposiciones adicionales, una disposición derogatoria y una disposición final.</p>
+<p class="parrafo">En virtud de su artículo único, se aprueba el texto del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de no Residentes</a>.</p>
+<p class="parrafo">En la disposición adicional primera se indica que las referencias que en otras normas se contengan al <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de no Residentes</a>, aprobado por el <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1999-4802" target="_blank" title="Abre nueva ventana">Real Decreto 326/1999</a>, se entenderán realizadas a los preceptos correspondientes del Reglamento del Impuesto aprobado por este Real Decreto.</p>
+<p class="parrafo">En la disposición adicional segunda se reproduce la de igual número del <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1999-4802" target="_blank" title="Abre nueva ventana">Real Decreto 326/1999</a>.</p>
+<p class="parrafo">En la disposición derogatoria única se deroga el <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1999-4802" target="_blank" title="Abre nueva ventana">Real Decreto 326/1999</a>.</p>
+<p class="parrafo">Por último, en la disposición final única se establece la entrada en vigor del Real Decreto.</p>
+<p class="parrafo">El Reglamento que se aprueba está compuesto por 24 artículos, agrupados en cinco capítulos, y una disposición final.</p>
+<p class="parrafo">El capítulo I contiene las disposiciones reglamentarias relativas a la tributación de las rentas obtenidas en España por contribuyentes no residentes mediante establecimiento permanente, que desarrollan la regulación legal que no queda establecida por la remisión general que efectúa la Ley a la normativa del Impuesto sobre Sociedades, con excepción de las disposiciones relativas al régimen de pagos a cuenta del impuesto, que se incluyen en el capítulo III.</p>
+<p class="parrafo">El capítulo II regula los aspectos reglamentarios de la tributación de las rentas obtenidas sin mediación de establecimiento permanente, con excepción de los relativos al régimen de pagos a cuenta, que se desarrollan en el capítulo III. Incluye las normas sobre determinación de la base imponible de actividades o explotaciones económicas realizadas sin establecimiento permanente y la regulación de las obligaciones formales y de declaración de estas rentas.</p>
+<p class="parrafo">El capítulo III contiene las normas reglamentarias del régimen de pagos a cuenta del Impuesto sobre la Renta de no Residentes, regulando en sus tres secciones los correspondientes a rentas obtenidas con y sin mediación de establecimiento permanente y a las entidades en régimen de atribución de rentas, de acuerdo con las características propias de sus formas de tributación.</p>
+<p class="parrafo">El capítulo IV regula los aspectos reglamentarios del Gravamen Especial sobre Bienes Inmuebles de Entidades no Residentes, en materia de obligaciones formales y aplicación de las exenciones.</p>
+<p class="parrafo">El capítulo V desarrolla el régimen opcional para contribuyentes residentes en otros Estados miembros de la Unión Europea. Contiene las disposiciones aplicables estructuradas en tres aspectos: ámbito, contenido y procedimiento de aplicación del régimen.</p>
+<p class="parrafo">Por último, la disposición final única contiene la habilitación al Ministro de Economía y Hacienda para dictar disposiciones de desarrollo de este Reglamento.</p>
+<p class="parrafo">Asimismo, el nuevo Reglamento comienza con un índice de su contenido, cuyo objeto es facilitar la utilización de la norma por sus destinatarios mediante una rápida localización y ubicación sistemática de sus preceptos.</p>
+<p class="parrafo">El desarrollo reglamentario del Impuesto sobre la Renta de no Residentes se efectúa en virtud de las habilitaciones contenidas en el articulado y la disposición final segunda de la Ley, incorporando las previsiones necesarias para la aplicación del régimen tributario de los contribuyentes no residentes en territorio español.</p>
+<p class="parrafo">En su virtud, a propuesta del Ministro de Economía y Hacienda, de acuerdo con el Consejo de Estado y previa deliberación del Consejo de Ministros en su reunión del día 30 de julio de 2004,</p>
+<h4 class="subseccion">D I S P O N G O :</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="aunico">
+            <p class="bloque">[Bloque 2: #aunico]</p>
+
+<h5 class="articulo">Artículo único. Aprobación del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de no Residentes</a>.</h5>
+<p class="parrafo">Se aprueba el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de no Residentes</a>, que se inserta a continuación.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="daprimera">
+            <p class="bloque">[Bloque 3: #daprimera]</p>
+
+<h5 class="articulo">Disposición adicional primera. Remisiones normativas.</h5>
+<p class="parrafo">Las referencias normativas efectuadas en otras disposiciones al <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de no Residentes</a>, aprobado por el <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1999-4802" target="_blank" title="Abre nueva ventana">Real Decreto 326/1999, de 26 de febrero</a>, se entenderán realizadas a los preceptos correspondientes del Reglamento que se aprueba por este Real Decreto.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dasegunda">
+            <p class="bloque">[Bloque 4: #dasegunda]</p>
+
+<h5 class="articulo">Disposición adicional segunda. Atribución de competencias.</h5>
+<p class="parrafo">La atribución de competencias que el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1991-27678" target="_blank" title="Abre nueva ventana">Real Decreto 1629/1991, de 8 de noviembre</a>, por el que se aprueba el Reglamento del Impuesto sobre Sucesiones y Donaciones, u otras normas de igual o inferior rango, hacen específicamente a la Delegación Especial de la Agencia Estatal de Administración Tributaria en Madrid, podrá ser modificada de conformidad con lo dispuesto en el artículo 103, apartado once, 5, de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1990-31180" target="_blank" title="Abre nueva ventana">Ley 31/1990, de 27 de diciembre</a>, y las Órdenes dictadas en su aplicación.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ddunica">
+            <p class="bloque">[Bloque 5: #ddunica]</p>
+
+<h5 class="articulo">Disposición derogatoria única. Derogación normativa.</h5>
+<p class="parrafo">A la entrada en vigor de este Real Decreto quedará derogado el <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1999-4802" target="_blank" title="Abre nueva ventana">Real Decreto 326/1999, de 26 de febrero</a>, por el que se aprueba el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de no Residentes</a>, así como todas aquellas disposiciones que se opongan a lo establecido en este Real Decreto.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfunica">
+            <p class="bloque">[Bloque 6: #dfunica]</p>
+
+<h5 class="articulo">Disposición final única. Entrada en vigor.</h5>
+<p class="parrafo">Este Real Decreto entrará en vigor el día siguiente al de su publicación en el "Boletín Oficial del Estado".</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="firma">
+            <p class="bloque">[Bloque 7: #firma]</p>
+
+<p class="parrafo">Dado en Palma de Mallorca, a 30 de julio de 2004.</p>
+<p class="firma_rey">JUAN CARLOS R.</p>
+<p class="firma_ministro">El Vicepresidente Segundo del Gobierno y Ministro de Economía y Hacienda,</p>
+<p class="firma_ministro">PEDRO SOLBES MIRA</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="reglamento">
+            <p class="bloque">[Bloque 8: #reglamento]</p>
+
+<h4 class="anexo">
+  <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532" target="_blank" title="Abre nueva ventana">REGLAMENTO DEL IMPUESTO SOBRE LA RENTA DE NO RESIDENTES</a>
+</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ci">
+            <p class="bloque">[Bloque 9: #ci]</p>
+
+<h4 class="capitulo_num">CAPÍTULO I</h4>
+<h4 class="capitulo_tit">Rentas obtenidas mediante establecimiento permanente</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1">
+            <p class="bloque">[Bloque 10: #a1]</p>
+
+<h5 class="articulo">Artículo 1. Elementos patrimoniales afectos al establecimiento permanente.</h5>
+<p class="parrafo">Los activos representativos de la participación en fondos propios de una entidad vinculados funcionalmente al desarrollo de la actividad que constituye el objeto del establecimiento permanente sólo se considerarán elementos patrimoniales afectos a éste cuando sea una sucursal registrada en el Registro Mercantil y se cumplan los siguientes requisitos:</p>
+<p class="parrafo_2">a) Que dichos activos se reflejen en los estados contables del establecimiento permanente.</p>
+<p class="parrafo">b) Tratándose de establecimientos permanentes que, de acuerdo con lo establecido en el artículo 67 del texto refundido de la Ley del Impuesto sobre Sociedades, aprobado por <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-4456" target="_blank" title="Abre nueva ventana">Real Decreto Legislativo 4/2004, de 5 de marzo</a>, puedan considerarse sociedades dominantes, que dicho establecimiento permanente disponga, para dirigir y gestionar esas participaciones, de la correspondiente organización de medios materiales y personales.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2">
+            <p class="bloque">[Bloque 11: #a2]</p>
+
+<h5 class="articulo">Artículo 2. Diversidad de establecimientos permanentes.</h5>
+<p class="parrafo">Cuando un contribuyente disponga de diversos centros de actividad en territorio español que, de acuerdo con lo dispuesto en el apartado 1 del artículo 17 de la Ley del Impuesto, constituyan establecimientos permanentes distintos, deberá adoptar para cada uno de ellos una denominación diferenciada.</p>
+<p class="parrafo">Cuando se trate de contribuyentes personas jurídicas, deberán obtener además diferente número de identificación fiscal para cada establecimiento permanente.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3">
+            <p class="bloque">[Bloque 12: #a3]</p>
+
+<h5 class="articulo">Artículo 3. Valoración de los gastos de dirección y generales de administración imputables al establecimiento permanente.</h5>
+<p class="parrafo">1. Los contribuyentes que operen en España mediante establecimiento permanente podrán someter a la Administración tributaria propuestas para la valoración de la parte de los gastos de dirección y generales de administración que corresponda al establecimiento permanente y sea deducible para la determinación de la base imponible del mismo, de acuerdo con lo dispuesto en el párrafo b) del apartado 1 del artículo 18 de la Ley del Impuesto. Estas propuestas deberán fundamentarse en la aplicación de los criterios de imputación establecidos en dicho precepto.</p>
+<p class="parrafo">2. La tramitación y resolución de las solicitudes se efectuarán mediante el procedimiento establecido para las propuestas de deducción de gastos en concepto de apoyo a la gestión prestados entre entidades vinculadas, regulado al efecto en el capítulo VI del título I del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-14600#ti" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre Sociedades, aprobado por Real Decreto 1777/2004, de 30 de julio</a>, con la particularidad mencionada en el apartado siguiente.</p>
+<p class="parrafo">3. En relación con lo dispuesto en el artículo 20.4 del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-7771" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre Sociedades</a>, los contribuyentes, al tiempo de presentar la propuesta, deberán aportar la siguiente documentación:</p>
+<p class="parrafo">a) Descripción de los gastos de dirección y generales de administración incluidos en la propuesta.</p>
+<p class="parrafo">b) Identificación de los gastos que serán imputables al establecimiento permanente y criterios y módulos de reparto aplicados.</p>
+<p class="parrafo">c) Existencia de propuestas estimadas o en curso de tramitación ante Administraciones tributarias de otros Estados.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4">
+            <p class="bloque">[Bloque 13: #a4]</p>
+
+<h5 class="articulo">Artículo 4. Opción para la tributación de determinados establecimientos permanentes.</h5>
+<p class="parrafo">La opción manifestada por los contribuyentes que, de acuerdo con lo previsto en el párrafo b) del apartado 5 del artículo 18 de la Ley del Impuesto, opten por la aplicación del régimen general previsto para los establecimientos permanentes, surtirá efecto durante todo el tiempo que dure la construcción, instalación o el montaje o la actividad que constituya el establecimiento permanente.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="cii">
+            <p class="bloque">[Bloque 14: #cii]</p>
+
+<h4 class="capitulo_num">CAPÍTULO II</h4>
+<h4 class="capitulo_tit">Rentas obtenidas sin mediación de establecimiento permanente</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a5">
+            <p class="bloque">[Bloque 15: #a5]</p>
+
+<h5 class="articulo">Artículo 5. Determinación de la base imponible correspondiente a actividades o explotaciones económicas.</h5>
+<p class="parrafo">1. En los casos de actividades o explotaciones económicas realizadas en España sin mediación de establecimiento permanente, para la determinación de la base imponible serán deducibles de los ingresos íntegros las siguientes partidas:</p>
+<p class="parrafo_2">a) Sueldos, salarios y cargas sociales del personal desplazado a España o contratado en territorio español, empleado directamente en el desarrollo de las actividades o explotaciones económicas, siempre que se justifique o garantice debidamente el ingreso del Impuesto que proceda o de los pagos a cuenta correspondientes a los rendimientos del trabajo satisfechos.</p>
+<p class="parrafo">b) Aprovisionamiento de materiales para su incorporación definitiva a las obras o trabajos realizados en territorio español. Cuando los materiales no hayan sido adquiridos en el territorio español, serán deducibles por el importe declarado a efectos de la liquidación de derechos arancelarios o del Impuesto sobre el Valor Añadido.</p>
+<p class="parrafo">c) Suministros consumidos en territorio español para el desarrollo de las actividades o explotaciones económicas. A estos efectos, sólo tendrán la consideración de suministros los abastecimientos que no tengan la cualidad de almacenables.</p>
+<p class="parrafo_2">2. Las partidas a que hacen referencia los párrafos b) y c) anteriores serán deducibles de los ingresos únicamente cuando las facturas o documentos equivalentes que justifiquen la realidad del gasto hayan sido expedidos con los requisitos formales exigidos por las normas reguladoras de las obligaciones de facturación que incumben a empresarios o profesionales.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a6">
+            <p class="bloque">[Bloque 16: #a6]</p>
+
+<h5 class="articulo">Artículo 6. Obligaciones formales.</h5>
+<p class="parrafo">1. Los contribuyentes que obtengan rentas de las referidas en el artículo 24.2 de la Ley del Impuesto estarán obligados a llevar los siguientes libros registros:</p>
+<p class="parrafo_2">a) Libro registro de ingresos.</p>
+<p class="parrafo">b) Libro registro de gastos.</p>
+<p class="parrafo_2">2. Asimismo, los contribuyentes a que se refiere el apartado anterior deberán conservar, numeradas por orden de fechas, las facturas emitidas de acuerdo a lo previsto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-21845" target="_blank" title="Abre nueva ventana">Real Decreto 1496/2003, de 28 de noviembre</a>, por el que se aprueba el Reglamento por el que se regulan las obligaciones de facturación que incumben a los empresarios y profesionales, y las facturas o justificantes documentales de otro tipo recibidos.</p>
+<p class="parrafo">3. Se autoriza al Ministro de Economía y Hacienda para determinar la forma de llevanza de los libros registros a que se refiere este artículo.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a7">
+            <p class="bloque">[Bloque 17: #a7]</p>
+
+<h5 class="articulo">Artículo 7. Declaración del Impuesto por las rentas obtenidas en España sin mediación de establecimiento permanente.</h5>
+<p class="parrafo">1. Los contribuyentes que obtengan rentas sujetas al Impuesto sin mediación de establecimiento permanente estarán obligados a presentar declaración determinando e ingresando la deuda tributaria correspondiente.</p>
+<p class="parrafo">Los contribuyentes que, por ser residentes en países con los que España tenga suscrito convenio para evitar la doble imposición, se acojan al mismo, determinarán en su declaración la deuda tributaria aplicando directamente los límites de imposición o las exenciones previstos en el respectivo convenio. A tal efecto, deberán adjuntar a la declaración un certificado de residencia expedido por la autoridad fiscal correspondiente, o el pertinente formulario previsto en las órdenes de desarrollo de los convenios.</p>
+<p class="parrafo">2. Podrán también efectuar la declaración e ingreso de la deuda tributaria los responsables solidarios definidos en el artículo 9 de la Ley del Impuesto.</p>
+<p class="parrafo">3. No obstante lo dispuesto en el apartado 1 anterior, los contribuyentes por este Impuesto no estarán obligados a presentar la declaración correspondiente a las rentas respecto de las que se hubiese practicado la retención o efectuado el ingreso a cuenta del Impuesto, salvo en el caso de ganancias patrimoniales derivadas del reembolso de participaciones en fondos de inversión regulados en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-20331" target="_blank" title="Abre nueva ventana">Ley 35/2003, de 4 de noviembre</a>, de instituciones de inversión colectiva, cuando la retención practicada haya resultado inferior a la cuota tributaria calculada conforme a lo previsto en los artículos 24 y 25 de la Ley del Impuesto.</p>
+<p class="parrafo">Tampoco estarán obligados a presentar la declaración respecto de aquellas rentas sujetas a retención o ingreso a cuenta pero exentas en virtud de lo previsto en el artículo 14 de la Ley del Impuesto o en un Convenio de doble imposición que resulte aplicable.</p>
+<p class="parrafo">4. Estarán obligados a presentar declaración del Impuesto, en los términos previstos en los apartados anteriores de este artículo, los contribuyentes que obtengan rentas sujetas al Impuesto exceptuadas de la obligación de retener e ingresar a cuenta de acuerdo con el apartado 3 del artículo 10 de este Reglamento.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica el apartado 3 por el art. 3.2.1 del Real Decreto 960/2013, de 5 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2013-12771" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2013-12771</a>.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a7">
+              <input type="hidden" name="id" value="BOE-A-2004-14532">
+              <input type="hidden" name="b"  value="17">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1720131206" value="20131206" checked="checked"/>
+                  <label for="lab1720131206" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 06/12/2013, en vigor a partir del 01/01/2014.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1720040805" value="20040805"/>
+                  <label for="lab1720040805" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 05/08/2004, en vigor a partir del 06/08/2004.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a7bis">
+            <p class="bloque">[Bloque 18: #a7bis]</p>
+
+<h5 class="articulo">Artículo 7 bis. Borrador de declaración.</h5>
+<p class="parrafo">1. Los contribuyentes podrán solicitar la puesta a disposición de un borrador de declaración en los términos previstos en el artículo 28 bis de la Ley del Impuesto.</p>
+<p class="parrafo">A tales efectos, la Administración tributaria podrá requerir a los contribuyentes la presentación de la información y documentos que resulten necesarios para su elaboración.</p>
+<p class="parrafo">El Ministro de Hacienda y Administraciones Públicas determinará el lugar, plazo, forma y procedimiento de dicho requerimiento.</p>
+<p class="parrafo">2. Cuando el contribuyente considere que el borrador de declaración no refleja su situación tributaria a efectos de este Impuesto, deberá presentar la correspondiente declaración, de acuerdo con lo dispuesto en el artículo 28 del texto refundido de la Ley del Impuesto.</p>
+<p class="parrafo">No obstante, podrá instar la rectificación del borrador cuando advierta que contiene datos erróneos o inexactos.</p>
+<p class="parrafo">El Ministro de Hacienda y Administraciones Públicas determinará el lugar, plazo, forma y procedimiento para realizar dicha rectificación.</p>
+<blockquote>
+  <p class="nota_pie">Se añade por el art. 2.1 del Real Decreto 633/2015, de 10 de julio. <a href="/buscar/doc.php?id=BOE-A-2015-7770" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2015-7770</a>.</p>
+</blockquote>
+
+<p class="pie_unico">Texto a&ntilde;adido, publicado el 11/07/2015, en vigor a partir del 12/07/2015.</p>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ciii">
+            <p class="bloque">[Bloque 19: #ciii]</p>
+
+<h4 class="capitulo_num">CAPÍTULO III</h4>
+<h4 class="capitulo_tit">Pagos a cuenta</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s1">
+            <p class="bloque">[Bloque 20: #s1]</p>
+
+<h4 class="seccion">Sección 1.ª Rentas obtenidas mediante establecimiento permanente</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a8">
+            <p class="bloque">[Bloque 21: #a8]</p>
+
+<h5 class="articulo">Artículo 8. Pagos a cuenta de establecimientos permanentes.</h5>
+<p class="parrafo">1. Las rentas sometidas al Impuesto sobre la Renta de no Residentes que se obtengan por mediación de establecimiento permanente estarán sometidas a retención o ingreso a cuenta, y tales establecimientos permanentes quedarán obligados a efectuar pagos a cuenta o fraccionados, en los mismos supuestos y condiciones que los establecidos en la normativa reguladora del Impuesto sobre Sociedades para los sujetos pasivos por este Impuesto.</p>
+<p class="parrafo">No existirá obligación de retener ni de ingresar a cuenta, además de en los casos que resulten de la aplicación de lo dispuesto en el párrafo anterior, respecto de los intereses y comisiones que constituyan ingreso de un establecimiento permanente de una entidad financiera no residente en territorio español, que desarrolle las actividades propias de las entidades a que se refiere la letra c) del artículo 59 del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-7771" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre Sociedades</a>, cuando sean consecuencia de préstamos realizados por dicho establecimiento permanente, salvo que se trate de las rentas a que se refiere el párrafo segundo del citado párrafo c).</p>
+<p class="parrafo">2. Los establecimientos permanentes estarán obligados a practicar retenciones e ingresos a cuenta en los mismos términos que las entidades residentes en territorio español.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s2">
+            <p class="bloque">[Bloque 22: #s2]</p>
+
+<h4 class="seccion">Sección 2.ª Rentas obtenidas sin mediación de establecimiento permanente</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a9">
+            <p class="bloque">[Bloque 23: #a9]</p>
+
+<h5 class="articulo">Artículo 9. Obligación de practicar retenciones e ingresos a cuenta.</h5>
+<p class="parrafo">1. Deberá practicarse retención del Impuesto sobre la Renta de no Residentes respecto de las rentas sujetas a este Impuesto percibidas por contribuyentes sin establecimiento permanente, en los términos establecidos en el artículo 31 de la Ley del Impuesto.</p>
+<p class="parrafo">2. Deberá practicarse un ingreso a cuenta respecto de las rentas sujetas al Impuesto sobre la Renta de no Residentes correspondiente al perceptor cuando las rentas a que se refiere el apartado anterior sean satisfechas o abonadas en especie.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a10">
+            <p class="bloque">[Bloque 24: #a10]</p>
+
+<h5 class="articulo">Artículo 10. Excepciones a la obligación de retener y de ingresar a cuenta.</h5>
+<p class="parrafo">1. No existirá obligación de practicar retención o ingreso a cuenta en los supuestos a los que se refiere el apartado 4 del artículo 31 de la Ley del Impuesto.</p>
+<p class="parrafo">2. A efectos de la aplicación de lo dispuesto en el apartado 4 del artículo 31 de la Ley del Impuesto, la acreditación del pago del Impuesto o de la procedencia de la exención se efectuará, según el caso:</p>
+<p class="parrafo_2">a) En el supuesto de pago, mediante la declaración del Impuesto correspondiente a las rentas satisfechas, presentada por el contribuyente o su representante.</p>
+<p class="parrafo">b) En el caso de exenciones, mediante los documentos justificativos del cumplimiento de las circunstancias que determinan la procedencia de su aplicación, sin perjuicio de la obligación de declarar prevista en el apartado 5 del artículo 31 de la Ley del Impuesto.</p>
+<p class="parrafo_2">Cuando el obligado a retener o ingresar a cuenta no hubiese practicado retención o ingreso a cuenta por entender acreditadas alguna de las circunstancias anteriores, y con posterioridad se determine la improcedencia de la exención o la inexistencia de pago del Impuesto, serán exigibles a aquél las responsabilidades que le correspondan como retenedor por la retención o el ingreso a cuenta no practicados.</p>
+<p class="parrafo">2 bis. A efectos de lo dispuesto en la letra b) del apartado 4 del artículo 31 de la Ley del Impuesto, existirá obligación de retener o ingresar a cuenta en los supuestos de reducción de capital social con devolución de aportaciones y distribución de la prima de emisión de acciones previstos en el segundo párrafo del artículo 75.3 h) del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de las Personas Físicas</a>, aprobado por el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820" target="_blank" title="Abre nueva ventana">Real Decreto 439/2007</a>.</p>
+<p class="parrafo">3. A efectos de lo dispuesto en el párrafo e) del apartado 4 del artículo 31 de la Ley del Impuesto, no procederá practicar retención o ingreso a cuenta respecto de las siguientes rentas:</p>
+<p class="parrafo_2">a) Las ganancias patrimoniales.</p>
+<p class="parrafo">No obstante lo anterior, sí existirá obligación de practicar retención o ingreso a cuenta respecto de:</p>
+<p class="parrafo_2">1.º Los premios derivados de la participación en juegos, concursos, rifas o combinaciones aleatorias, estén o no vinculados a la oferta, promoción o venta de determinados bienes, productos o servicios.</p>
+<p class="parrafo">2.º La transmisión de bienes inmuebles situados en territorio español a que se refiere el artícu­lo 14 de este Reglamento.</p>
+<p class="parrafo">3.º Las rentas derivadas de transmisiones o reembolsos de acciones o participaciones representativas del capital o patrimonio de instituciones de inversión colectiva, excepto las procedentes de participaciones o acciones en los fondos y sociedades regulados por el artículo 49 del Reglamento de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-20331" target="_blank" title="Abre nueva ventana">Ley 35/2003, de 4 de noviembre</a>, de instituciones de inversión colectiva, aprobado por el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2005-18356" target="_blank" title="Abre nueva ventana">Real Decreto 1309/2005, de 4 de noviembre</a>.</p>
+<p class="parrafo_2">b) Las rentas recogidas en los párrafos b), salvo las obtenidas a través de países o territorios calificados reglamentariamente como paraísos fiscales, c), e), f) y h) del apartado 3 del artículo 73 del <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2004-14467" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 1775/2004, de 30 de julio</a>.</p>
+<p class="parrafo_2">4. Se faculta al Ministro de Economía y Hacienda para establecer el procedimiento para hacer efectiva la práctica de retención, al tipo que corresponda en cada caso, o la exclusión de retención, sobre los rendimientos derivados de la emisión de valores negociables.</p>
+<blockquote>
+  <p class="nota_pie">Se añade el apartado 2 bis por el art. 3.1 del Real Decreto 1788/2010, de 30 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2010-20141" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2010-20141</a>.</p>
+  <p class="nota_pie">Se modifica el párrafo 3º del apartado 3.a) por el art. 2 del Real Decreto 749/2010, de 7 de junio. <a href="/buscar/doc.php?id=BOE-A-2010-9101" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2010-9101</a></p>
+  <p class="nota_pie">Se modifica el apartado 3 por el art. 4.1 del Real Decreto 1576/2006, de 22 de noviembre. <a href="/buscar/doc.php?id=BOE-A-2006-22529" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2006-22529</a></p>
+  <p class="nota_pie">Se modifica el párrafo 3º del apartado 3.a) por la disposición final 3. uno del Real Decreto 1309/2005, de 4 de noviembre. <a href="/buscar/doc.php?id=BOE-A-2005-18356" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2005-18356</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a10">
+              <input type="hidden" name="id" value="BOE-A-2004-14532">
+              <input type="hidden" name="b"  value="24">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2420101231" value="20101231" checked="checked"/>
+                  <label for="lab2420101231" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 31/12/2010, en vigor a partir del 01/01/2011.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2420100608" value="20100608"/>
+                  <label for="lab2420100608" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 08/06/2010, en vigor a partir del 09/06/2010.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2420061223" value="20061223"/>
+                  <label for="lab2420061223" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 23/12/2006, en vigor a partir del 01/01/2007.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2420051108" value="20051108"/>
+                  <label for="lab2420051108" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 08/11/2005, en vigor a partir del 09/11/2005.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2420040805" value="20040805"/>
+                  <label for="lab2420040805" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 05/08/2004, en vigor a partir del 06/08/2004.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a11">
+            <p class="bloque">[Bloque 25: #a11]</p>
+
+<h5 class="articulo">Artículo 11. Sujetos obligados a retener o a efectuar ingreso a cuenta.</h5>
+<p class="parrafo">1. Estarán obligados a retener o a ingresar a cuenta los sujetos a que se refiere el apartado 1 del artículo 31 de la Ley del Impuesto.</p>
+<p class="parrafo">2. En las operaciones sobre activos financieros, en las transmisiones de valores de la Deuda del Estado, en las transmisiones y reembolsos de acciones o participaciones representativas del capital o patrimonio de instituciones de inversión colectiva, incluidas las derivadas de acciones o participaciones comercializadas en España de acuerdo con la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-20331" target="_blank" title="Abre nueva ventana">Ley 35/2003, de 4 de noviembre</a>, de Instituciones de Inversión Colectiva, en régimen de libre prestación de servicios por sociedades gestoras autorizadas en otro Estado miembro de la Unión Europea y en los supuestos de reducción de capital social con devolución de aportaciones y distribución de la prima de emisión de acciones previstos en el apartado 2.bis del artículo 10 de este Reglamento, deberán practicar retención o ingreso a cuenta los sujetos obligados a retener o ingresar a cuenta de acuerdo con lo establecido en el artículo 76.2, párrafos b, c, d y g), del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de las Personas Físicas aprobado por el Real Decreto 439/2007, de 30 de marzo</a>.</p>
+<p class="parrafo">No obstante, en el caso de transmisiones o reembolsos de acciones o participaciones de instituciones de inversión colectiva reguladas en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-20331" target="_blank" title="Abre nueva ventana">Ley 35/2003, de 4 de noviembre</a>, de instituciones de inversión colectiva, efectuadas en el ámbito de la comercialización transfronteriza a que se refiere la disposición adicional única de este Reglamento, la obligación de practicar retención o ingreso a cuenta corresponderá en todo caso a la sociedad gestora de la institución o, en su defecto, a la sociedad de inversión.</p>
+<p class="parrafo">3. En el caso de premios, estará obligado a retener o a ingresar a cuenta la persona o entidad que los satisfaga.</p>
+<p class="parrafo">4. Los sujetos obligados a retener asumirán la obligación de efectuar el ingreso en el Tesoro, sin que el incumplimiento de aquella obligación pueda excusarles de ésta.</p>
+<p class="parrafo">La retención e ingreso correspondiente, cuando la entidad pagadora del rendimiento sea la Administración del Estado, se efectuará de forma directa.</p>
+<blockquote>
+  <p class="nota_pie">Se añade un párrafo al apartado 2 por el art. 3.2.1 del Real Decreto 960/2013, de 5 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2013-12771" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2013-12771</a>.</p>
+  <p class="nota_pie">Se modifica el apartado 2 por el art. 3.2 del Real Decreto 1788/2010, de 30 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2010-20141" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2010-20141</a>.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a11">
+              <input type="hidden" name="id" value="BOE-A-2004-14532">
+              <input type="hidden" name="b"  value="25">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2520131206" value="20131206" checked="checked"/>
+                  <label for="lab2520131206" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 06/12/2013, en vigor a partir del 01/01/2014.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2520101231" value="20101231"/>
+                  <label for="lab2520101231" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 31/12/2010, en vigor a partir del 01/01/2011.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2520040805" value="20040805"/>
+                  <label for="lab2520040805" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 05/08/2004, en vigor a partir del 06/08/2004.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a12">
+            <p class="bloque">[Bloque 26: #a12]</p>
+
+<h5 class="articulo">Artículo 12. Nacimiento de la obligación de retener y de ingresar a cuenta.</h5>
+<p class="parrafo">1. Con carácter general, la obligación de retener e ingresar a cuenta nacerá en el momento del devengo del Impuesto, de acuerdo con lo establecido en el artículo 27 de la Ley del Impuesto.</p>
+<p class="parrafo">2. En los supuestos de rendimientos del capital mobiliario y ganancias patrimoniales se atenderá a lo previsto, respectivamente, en los artículos 92 y 96 del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de las Personas Físicas</a>.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a13">
+            <p class="bloque">[Bloque 27: #a13]</p>
+
+<h5 class="articulo">Artículo 13. Base para el cálculo de la obligación de retener e ingresar a cuenta.</h5>
+<p class="parrafo">1. Con carácter general, la base para el cálculo de la obligación de retener se determinará de acuerdo con lo dispuesto en el apartado 2 del artículo 31 de la Ley del Impuesto.</p>
+<p class="parrafo">A estos efectos, cuando se perciba por una persona física un capital diferido que corresponda total o parcialmente a primas satisfechas con anterioridad a 31 de diciembre de 1994, se aplicará, en su caso, lo establecido en el apartado 5 del artículo 93 del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de las Personas Físicas</a>.</p>
+<p class="parrafo">2. Cuando la retención deba practicarse sobre los premios a que se refiere el artículo 10.3.ª).1.º de este Reglamento, constituirá la base para el cálculo de la misma el importe del premio.</p>
+<p class="parrafo">3. En el caso de transmisiones o reembolsos de acciones o participaciones representativas del capital o patrimonio de instituciones de inversión colectiva, la base de retención será la diferencia entre el valor de transmisión o reembolso y el valor de adquisición de las acciones o participaciones. A estos efectos, se considerará que los valores transmitidos o reembolsados por el contribuyente son aquellos que adquirió en primer lugar.</p>
+<p class="parrafo">A estos efectos, cuando las acciones o participaciones representativas del capital o patrimonio de instituciones de inversión colectiva se hubieran adquirido por personas físicas con anterioridad a 31 de diciembre de 1994, se aplicará, en su caso, lo establecido en el apartado 1 del artículo 97 del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de las Personas Físicas</a>.</p>
+<p class="parrafo">No obstante, cuando se trate de reembolsos de participaciones en fondos de inversión regulados por la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-20331" target="_blank" title="Abre nueva ventana">Ley 35/2003, de 4 de noviembre</a>, de instituciones de inversión colectiva, para las que, por aplicación de lo previsto en el artículo 40.3 de dicha Ley, exista más de un registro de partícipes, efectuados por partícipes que durante el período de tenencia de las participaciones objeto de reembolso hayan sido simultáneamente titulares de participaciones homogéneas registradas en otra entidad, la regla de antigüedad a que se refiere el párrafo anterior se aplicará por la entidad gestora o comercializadora con la que se realice el reembolso respecto de las participaciones que figuren en su correspondiente registro de partícipes.</p>
+<p class="parrafo">Cuando concurra la circunstancia a la que se refiere el párrafo anterior, el partícipe quedará obligado a comunicarlo por escrito o por cualquier otro medio de cuya recepción quede constancia a la entidad obligada a practicar la retención o ingreso a cuenta con la que se efectúe el reembolso y, en tal caso, esta última deberá conservar dicha comunicación a disposición de la Administración tributaria durante todo el período en que tenga registradas a nombre del contribuyente participaciones homogéneas a las reembolsadas y, como mínimo, durante el plazo de prescripción.</p>
+<p class="parrafo">4. Cuando las rentas sean satisfechas o abonadas en especie, la base para el cálculo del ingreso a cuenta se determinará de acuerdo con lo dispuesto en el capítulo III del título VI del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de las Personas Físicas</a>.</p>
+<p class="parrafo">5. Cuando la obligación de retener o ingresar a cuenta tenga su origen en el ajuste secundario derivado de lo previsto en el artículo 16.8 del texto refundido de la Ley del Impuesto sobre Sociedades, aprobado por el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-4456" target="_blank" title="Abre nueva ventana">Real Decreto Legislativo 4/2004, de 5 de marzo</a>, constituirá la base de la misma la diferencia entre el valor convenido y el valor de mercado.</p>
+<blockquote>
+  <p class="nota_pie">Se modifican los apartados 1 y 3 por el art. 2.2 del Real Decreto 633/2015, de 10 de julio. <a href="/buscar/doc.php?id=BOE-A-2015-7770" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2015-7770</a>.</p>
+  <p class="nota_pie">Se modifica el apartado 3 por el art. 3.2.3 del Real Decreto 960/2013, de 5 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2013-12771" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2013-12771</a>.</p>
+  <p class="nota_pie">Se añade el párrafo 5 por el art.2 del Real Decreto 1804/2002, de 3 de noviembre. <a href="/buscar/doc.php?id=BOE-A-2008-18548" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2008-18548</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a13">
+              <input type="hidden" name="id" value="BOE-A-2004-14532">
+              <input type="hidden" name="b"  value="27">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2720150711" value="20150711" checked="checked"/>
+                  <label for="lab2720150711" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 11/07/2015, en vigor a partir del 12/07/2015.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2720131206" value="20131206"/>
+                  <label for="lab2720131206" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 06/12/2013, en vigor a partir del 01/01/2014.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2720081118" value="20081118"/>
+                  <label for="lab2720081118" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 18/11/2008, en vigor a partir del 19/11/2008.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2720040805" value="20040805"/>
+                  <label for="lab2720040805" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 05/08/2004, en vigor a partir del 06/08/2004.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a14">
+            <p class="bloque">[Bloque 28: #a14]</p>
+
+<h5 class="articulo">Artículo 14. Retención o ingreso a cuenta en la adquisición de bienes inmuebles.</h5>
+<p class="parrafo">1. En los supuestos de transmisiones de bienes inmuebles situados en territorio español por contribuyentes del Impuesto sobre la Renta de no Residentes que actúen sin mediación de establecimiento permanente, el adquirente estará obligado a retener e ingresar el 3 por ciento, o a efectuar el ingreso a cuenta correspondiente, de la contraprestación acordada, en concepto de pago a cuenta del Impuesto sobre la Renta de no Residentes correspondiente a aquellos.</p>
+<p class="parrafo">2. El adquirente no tendrá la obligación de retener o de efectuar el ingreso a cuenta en los siguientes casos:</p>
+<p class="parrafo_2">a) Cuando el transmitente acredite su sujeción al Impuesto sobre la Renta de las Personas Físicas o al Impuesto sobre Sociedades mediante certificación expedida por el órgano competente de la Administración tributaria.</p>
+<p class="parrafo">b) En los casos de aportación de bienes inmuebles, en la constitución o aumento de capitales de sociedades residentes en territorio español.</p>
+<p class="parrafo_2">3. El obligado a retener o ingresar a cuenta deberá presentar declaración ante la Delegación o Administración de la Agencia Estatal de Administración Tributaria en cuyo ámbito territorial se encuentre ubicado el inmueble e ingresar el importe de la retención o ingreso a cuenta correspondiente en el Tesoro Público, en el plazo de un mes a partir de la fecha de la transmisión.</p>
+<p class="parrafo">4. El contribuyente no residente en territorio español deberá declarar, e ingresar en su caso, el impuesto definitivo, compensando en la cuota el importe retenido o ingresado a cuenta por el adquirente, en el plazo de tres meses contados a partir del término del plazo establecido para el ingreso de la retención.</p>
+<p class="parrafo">La Administración tributaria procederá, en su caso, previas las comprobaciones que sean necesarias, a la devolución al contribuyente del exceso retenido o ingresado a cuenta.</p>
+<p class="parrafo">5. Si la retención o el ingreso a cuenta referido anteriormente no se hubiesen ingresado, los bienes transmitidos quedarán afectos al pago del importe que resulte menor entre dicha retención o ingreso a cuenta y el impuesto correspondiente, y el registrador de la propiedad así lo hará constar por nota al margen de la inscripción respectiva, señalando la cantidad de que responda la finca. Esta nota se cancelará, en su caso, por caducidad o mediante la presentación de la carta de pago o certificación administrativa que acredite la no sujeción o la prescripción de la deuda.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica por el art. 4.2 del Real Decreto 1576/2006, de 22 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2007-22529" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2007-22529</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a14">
+              <input type="hidden" name="id" value="BOE-A-2004-14532">
+              <input type="hidden" name="b"  value="28">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2820061223" value="20061223" checked="checked"/>
+                  <label for="lab2820061223" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 23/12/2006, en vigor a partir del 01/01/2007.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2820040805" value="20040805"/>
+                  <label for="lab2820040805" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 05/08/2004, en vigor a partir del 06/08/2004.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a15">
+            <p class="bloque">[Bloque 29: #a15]</p>
+
+<h5 class="articulo">Artículo 15. Obligaciones del retenedor y del obligado a ingresar a cuenta.</h5>
+<p class="parrafo">1. El retenedor o el obligado a ingresar a cuenta por el Impuesto sobre la Renta de no Residentes deberá presentar en los primeros veinte días naturales de los meses de abril, julio, octubre y enero, ante el órgano competente de la Administración tributaria, declaración de las cantidades retenidas y de los ingresos a cuenta efectuados que correspondan por el trimestre natural inmediato anterior e ingresar su importe en el Tesoro.</p>
+<p class="parrafo">No obstante, la declaración e ingreso a que se refiere el párrafo anterior se efectuará en los veinte primeros días naturales de cada mes, en relación con las cantidades retenidas y los ingresos a cuenta efectuados que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados en los que concurran las circunstancias a que se refiere el apartado 3.1.º del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a71" target="_blank" title="Abre nueva ventana">artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado por el Real Decreto 1624/1992, de 29 de diciembre</a>.</p>
+<p class="parrafo">Los retenedores y los obligados a ingresar a cuenta presentarán declaración negativa cuando hubiesen satisfecho rentas de las señaladas en el apartado 4 del artículo 31 de la Ley del Impuesto, salvo en los supuestos en los que así lo establezca el Ministro de Hacienda y Administraciones Públicas.</p>
+<p class="parrafo">2. El retenedor y el obligado a ingresar a cuenta deberán presentar en los primeros veinte días naturales del mes de enero una declaración anual de las retenciones e ingresos a cuenta efectuados. En esta declaración, además de sus datos de identificación, deberá constar una relación nominativa de los perceptores de las rentas sujetas al Impuesto satisfechas o abonadas por el retenedor u obligado a ingresar a cuenta, incluyendo aquellos a los que se hubiesen satisfecho rentas respecto de las que no se hubiera practicado retención en virtud de lo establecido en el apartado 4 del artículo 31 de la Ley del Impuesto. La relación de perceptores deberá contener los datos que determine el Ministro de Economía y Hacienda.</p>
+<p class="parrafo">No obstante, en el caso de que esta declaración se presente en soporte directamente legible por ordenador o haya sido generado mediante la utilización, exclusivamente, de los correspondientes módulos de impresión desarrollados, a estos efectos, por la Administración tributaria, el plazo de presentación será el comprendido entre el 1 de enero y el 31 de enero del año siguiente al del que corresponde dicha declaración.</p>
+<p class="parrafo">A las mismas obligaciones establecidas en los párrafos anteriores están sujetas las entidades domiciliadas, residentes o representadas en España, que paguen por cuenta ajena rentas sujetas a retención o ingreso a cuenta o que sean depositarias o gestionen el cobro de las rentas de valores.</p>
+<p class="parrafo">Sin perjuicio de lo establecido en los párrafos anteriores de este apartado, el Ministro de Economía y Hacienda, atendiendo a razones fundadas de carácter técnico, podrá ampliar el plazo correspondiente a las declaraciones que puedan presentarse por vía telemática.</p>
+<p class="parrafo">3. El retenedor u obligado a ingresar a cuenta deberá expedir en favor del contribuyente certificación acreditativa de las retenciones practicadas, o de los ingresos a cuenta efectuados, así como de los restantes datos referentes al contribuyente que deban incluirse en la declaración anual a que se refiere el apartado anterior.</p>
+<p class="parrafo">A las mismas obligaciones establecidas en el párrafo anterior están sujetas las entidades domiciliadas, residentes o representadas en España, que paguen por cuenta ajena rentas sujetas a retención o ingreso a cuenta o que sean depositarias o gestionen el cobro de las rentas de valores.</p>
+<p class="parrafo">4. Los pagadores deberán comunicar a los contribuyentes la retención o el ingreso a cuenta practicados en el momento en que satisfagan las rentas, indicando el porcentaje aplicado.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica el apartado 1 por el art. 3.2.4 del Real Decreto 960/2013, de 5 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2013-12771" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2013-12771</a>.</p>
+  <p class="nota_pie">Se modifica por el art. 4.3 del Real Decreto 1576/2006, de 22 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2006-22529" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2006-22529</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a15">
+              <input type="hidden" name="id" value="BOE-A-2004-14532">
+              <input type="hidden" name="b"  value="29">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2920131206" value="20131206" checked="checked"/>
+                  <label for="lab2920131206" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 06/12/2013, en vigor a partir del 01/01/2014.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2920061223" value="20061223"/>
+                  <label for="lab2920061223" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 23/12/2006, en vigor a partir del 01/01/2007.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab2920040805" value="20040805"/>
+                  <label for="lab2920040805" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 05/08/2004, en vigor a partir del 06/08/2004.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a16">
+            <p class="bloque">[Bloque 30: #a16]</p>
+
+<h5 class="articulo">Artículo 16. Devoluciones.</h5>
+<p class="parrafo">1. Cuando se haya soportado una retención o ingreso a cuenta superior a la cuota del Impuesto, se podrá solicitar a la Administración tributaria la devolución del exceso sobre la citada cuota.</p>
+<p class="parrafo">A tal efecto, se practicará la autoliquidación del Impuesto en el modelo que determine el Ministro de Economía y Hacienda.</p>
+<p class="parrafo">2. Conforme a lo previsto en el artículo 3 de la Ley del Impuesto, la Administración tributaria efectuará estas devoluciones en los términos establecidos en el artículo 105 del texto refundido de la Ley del Impuesto sobre la Renta de las Personas Físicas.</p>
+<p class="parrafo">3. Además de los contribuyentes, podrán presentar declaraciones con solicitud de devolución los responsables solidarios y los sujetos obligados a retener.</p>
+<p class="parrafo">4. Cuando se hubieran ingresado en el Tesoro cantidades, o soportado retenciones a cuenta, en cuantías superiores a las que se deriven de la aplicación de un convenio de doble imposición, se podrá solicitar dicha aplicación y la devolución consiguiente, dentro del plazo de cuatro años, contado desde la fecha del ingreso o del término del período de declaración e ingreso de la retención.</p>
+<p class="parrafo">El Ministro de Economía y Hacienda, en el supuesto de falta de reciprocidad, podrá establecer un plazo distinto.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a17">
+            <p class="bloque">[Bloque 31: #a17]</p>
+
+<h5 class="articulo">Artículo 17. Obligaciones de retención sobre las rentas del trabajo en caso de cambio de residencia.</h5>
+<p class="parrafo">1. Los trabajadores por cuenta ajena que no sean contribuyentes por este Impuesto, pero que vayan a adquirir dicha condición como consecuencia de su desplazamiento al extranjero por su empleador, podrán comunicar a la Administración tributaria dicha circunstancia, mediante el modelo de comunicación que apruebe el Ministro de Economía y Hacienda, quien establecerá la forma, lugar y plazo para su presentación, así como la documentación que deba adjuntarse a dicho modelo.</p>
+<p class="parrafo">2. En la citada comunicación se hará constar la identificación del trabajador y del pagador de los rendimientos del trabajo, la fecha de salida del territorio español, la fecha de comienzo de la prestación del trabajo en el extranjero así como la existencia de datos objetivos en esa relación laboral que hagan previsible que, como consecuencia de la prestación de trabajo en otro país, la permanencia en dicho país sea superior a 183 días durante el año natural en que se produce el desplazamiento o, en su defecto, en el siguiente.</p>
+<p class="parrafo">3. La Administración tributaria, a la vista de la comunicación y documentación presentadas, expedirá al trabajador, si procede, en el plazo máximo de los diez días hábiles siguientes al de presentación de la comunicación, un documento acreditativo en el que conste la fecha a partir de la cual se practicarán las retenciones por este Impuesto.</p>
+<p class="parrafo">4. El trabajador entregará al pagador de los rendimientos de trabajo un ejemplar del documento expedido por la Administración tributaria, al objeto de que este último, a los efectos de la práctica de retenciones, le considere contribuyente del Impuesto sobre la Renta de no Residentes a partir de la fecha que se indique en aquél.</p>
+<p class="parrafo">Los citados documentos acreditativos extenderán sus efectos respecto de la práctica de retenciones conforme al Impuesto sobre la Renta de no Residentes, como máximo, a dos años naturales, el del desplazamiento y el siguiente o, si no cabe computar el del desplazamiento, a los dos inmediatos siguientes.</p>
+<p class="parrafo">5. Este procedimiento podrá ser también utilizado en los supuestos en los que, por aplicación de las reglas de determinación de las rentas obtenidas en territorio español contenidas en el artículo 13 de la Ley del Impuesto, no procediese la práctica de retenciones. En estos supuestos, se tendrá en cuenta a estos trabajadores a los efectos del cumplimiento de las obligaciones establecidas en el apartado 5 del artículo 31 de la Ley del Impuesto.</p>
+<p class="parrafo">6.La obtención del documento acreditativo conforme al procedimiento descrito anteriormente no exonerará al trabajador de acreditar su nueva residencia fiscal ante la Administración tributaria.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s3">
+            <p class="bloque">[Bloque 32: #s3]</p>
+
+<h4 class="seccion">Sección 3.ª Entidades en régimen de atribución de rentas</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a18">
+            <p class="bloque">[Bloque 33: #a18]</p>
+
+<h5 class="articulo">Artículo 18. Obligación de practicar pagos fraccionados.</h5>
+<p class="parrafo">1. Los contribuyentes a que se refiere el apartado 1 del artículo 38 de la Ley del Impuesto estarán obligados a realizar pagos fraccionados a cuenta de la liquidación de este Impuesto, en los mismos términos que los contribuyentes de este Impuesto con establecimiento permanente en España.</p>
+<p class="parrafo">2. En cualquiera de las modalidades de pagos fraccionados que deba realizar la entidad en régimen de atribución de rentas, las cuantías de aquellos serán las correspondientes a la parte de renta atribuible a los miembros no residentes.</p>
+<p class="parrafo">3. A los efectos de lo dispuesto en el apartado 3 del artículo 45 del texto refundido de la Ley del Impuesto sobre Sociedades, la base imponible se calculará de acuerdo con lo dispuesto en el capítulo V de la Ley del Impuesto sobre la Renta de no Residentes.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a19">
+            <p class="bloque">[Bloque 34: #a19]</p>
+
+<h5 class="articulo">Artículo 19. Devolución ante la invocación de un convenio de doble imposición más favorable.</h5>
+<p class="parrafo">Cuando, de acuerdo con lo dispuesto en el apartado 4 del artículo 38 de la Ley del Impuesto, se invoque un convenio de doble imposición, se aplicará lo dispuesto en el artículo 16 de este Reglamento.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="civ">
+            <p class="bloque">[Bloque 35: #civ]</p>
+
+<h4 class="capitulo_num">CAPÍTULO IV</h4>
+<h4 class="capitulo_tit">Gravamen Especial sobre Bienes Inmuebles de Entidades no Residentes</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a20">
+            <p class="bloque">[Bloque 36: #a20]</p>
+
+<h5 class="articulo">Artículo 20. Gravamen Especial sobre Bienes Inmuebles de Entidades no Residentes.</h5>
+<p class="parrafo">1. Las entidades residentes en un país o territorio que tenga la consideración de paraíso fiscal, que sean propietarias o posean en España, por cualquier título, bienes inmuebles o derechos reales de goce o disfrute sobre éstos, estarán sujetas al impuesto mediante un gravamen especial que se devengará a 31 de diciembre de cada año y deberá declararse e ingresarse en el mes de enero siguiente.</p>
+<p class="parrafo">La declaración se presentará por cada inmueble ante la Delegación de la Agencia Estatal de Administración Tributaria en cuyo ámbito territorial se encuentre ubicado el inmueble sobre el que recaiga la propiedad o el derecho real de goce o disfrute. A estos efectos se considerará inmueble aquel que tenga una referencia catastral diferenciada.</p>
+<p class="parrafo">Cuando una entidad, de acuerdo con el párrafo anterior, estuviese obligada a presentar declaración por varios inmuebles ubicados en una misma Delegación de la Agencia Estatal de Administración Tributaria, presentará una única relación en la que se especifiquen de forma separada cada uno de los inmuebles.</p>
+<p class="parrafo">2. A los efectos de lo dispuesto en el párrafo b) del apartado 1 del artículo 42 de la Ley del Impuesto, se considerará que existe una explotación económica diferenciable de la simple tenencia o arrendamiento del inmueble cuando se dé cualquiera de las circunstancias siguientes:</p>
+<p class="parrafo_2">a) Que el valor real del inmueble o inmuebles cuya propiedad o posesión corresponda a la entidad no residente o sobre los que recaigan los derechos reales de goce o disfrute no exceda de cinco veces el valor real de los elementos patrimoniales afectos a una explotación económica. A estos efectos, en los supuestos de inmuebles que sirvan parcialmente al objeto de la explotación, se tomará en cuenta la parte del inmueble que efectivamente se utilice en aquella.</p>
+<p class="parrafo">Cuando, de conformidad con lo dispuesto en el párrafo anterior, no pueda considerarse que existe una explotación económica diferenciable que afecte a la totalidad del inmueble, la base imponible del gravamen especial estará constituida únicamente por la parte del valor catastral o, en su defecto, del valor determinado con arreglo a las disposiciones aplicables a efectos del Impuesto sobre el Patrimonio, que corresponda a la parte del inmueble no utilizado en la explotación económica.</p>
+<p class="parrafo">b) Que el volumen anual de operaciones de la explotación económica sea igual o superior a cuatro veces la base imponible del gravamen especial, calculada de acuerdo con lo establecido en el artículo 41 de la Ley del Impuesto.</p>
+<p class="parrafo">c) Que el volumen anual de operaciones de la explotación económica sea igual o superior a 600.000 euros.</p>
+<p class="parrafo_2">3. El Ministro de Hacienda y Administraciones Públicas establecerá los modelos a utilizar para la declaración del Gravamen Especial sobre Bienes Inmuebles de Entidades no Residentes.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica por el art. 3.1 del Real Decreto 960/2013, de 5 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2013-12771" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2013-12771</a>.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a20">
+              <input type="hidden" name="id" value="BOE-A-2004-14532">
+              <input type="hidden" name="b"  value="36">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab3620131206" value="20131206" checked="checked"/>
+                  <label for="lab3620131206" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 06/12/2013, en vigor a partir del 07/12/2013.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab3620040805" value="20040805"/>
+                  <label for="lab3620040805" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 05/08/2004, en vigor a partir del 06/08/2004.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="cv">
+            <p class="bloque">[Bloque 37: #cv]</p>
+
+<h4 class="capitulo_num">CAPÍTULO V</h4>
+<h4 class="capitulo_tit">Régimen opcional para contribuyentes residentes de otros Estados miembros de la Unión Europea</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a21">
+            <p class="bloque">[Bloque 38: #a21]</p>
+
+<h5 class="articulo">Artículo 21. Ámbito de aplicación.</h5>
+<p class="parrafo">1. Podrán solicitar la aplicación del régimen opcional regulado en este capítulo los contribuyentes por este Impuesto que sean personas físicas residentes en un Estado miembro de la Unión Europea y acrediten que se encuentran en alguna de las siguientes situaciones:</p>
+<p class="parrafo_2">a) Que haya obtenido durante el ejercicio en España por rendimientos del trabajo y por rendimientos de actividades económicas, como mínimo, el 75 por ciento de la totalidad de su renta siempre que tales rentas hayan tributado efectivamente durante el período por el impuesto sobre la Renta de no Residentes.</p>
+<p class="parrafo">b) Que la renta obtenida durante el ejercicio en España haya sido inferior al 90 por ciento del mínimo personal y familiar que le hubiese correspondido de acuerdo con sus circunstancias personales y familiares de haber sido residente en España siempre que dicha renta haya tributado efectivamente durante el período por el Impuesto sobre la Renta de no Residentes y que la renta obtenida fuera de España haya sido asimismo inferior a dicho mínimo.</p>
+<p class="parrafo_2">2. A efectos de lo dispuesto en los apartados anteriores:</p>
+<p class="parrafo_2">a) Para la determinación de la renta total obtenida por el contribuyente en el período impositivo se tomarán en cuenta la totalidad de las rentas obtenidas durante dicho período, con independencia del lugar donde se hubiesen producido y cualquiera que sea la residencia del pagador.</p>
+<p class="parrafo">b) Para la calificación de las rentas se atenderá a lo dispuesto en la normativa reguladora del Impuesto sobre la Renta de las Personas Físicas.</p>
+<p class="parrafo">c) Las rentas se computarán por sus importes netos, determinados de acuerdo con lo dispuesto en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764" target="_blank" title="Abre nueva ventana">Ley 35/2006, de 28 de noviembre</a>, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio. Serán de aplicación, en su caso, las reducciones del artículo 20 y el artículo 32.2.</p>
+<p class="parrafo_2">3. Los contribuyentes por este Impuesto que formen parte de alguna de las modalidades de unidad familiar establecidas en el apartado 1 del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a82" target="_blank" title="Abre nueva ventana">artículo 82 de la Ley 35/2006, de 28 de noviembre</a>, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el patrimonio, podrán solicitar que el régimen opcional regulado en este capítulo les sea aplicado teniendo en cuenta las normas sobre tributación conjunta contenidas en el título IX de la citada Ley, siempre que se cumplan las siguientes condiciones:</p>
+<p class="parrafo_2">a) Que el cónyuge y, en su caso, los restantes miembros de la unidad familiar acrediten su residencia en otro Estado miembro de la Unión Europea.</p>
+<p class="parrafo">b) Que las condiciones establecidas en los párrafos a) y b) del apartado 1 anterior se cumplan considerando la totalidad de las rentas obtenidas por todos los miembros de la unidad familiar.</p>
+<p class="parrafo">c) Que la solicitud sea formulada por todos los miembros de la unidad familiar o, en su caso, por sus representantes legales.</p>
+<p class="parrafo_2">4. A efectos de la aplicación del régimen opcional previsto en este capítulo, el período impositivo coincidirá con el año natural. No obstante, cuando se produzca el fallecimiento del contribuyente en un día distinto del 31 de diciembre, el período impositivo finalizará en la fecha de fallecimiento.</p>
+<p class="parrafo">La determinación de los miembros de la unidad familiar se realizará atendiendo a la situación existente a 31 de diciembre de cada año.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica por el art. 2.3 del Real Decreto 633/2015, de 10 de julio. <a href="/buscar/doc.php?id=BOE-A-2015-7770" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2015-7770</a>.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a21">
+              <input type="hidden" name="id" value="BOE-A-2004-14532">
+              <input type="hidden" name="b"  value="38">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab3820150711" value="20150711" checked="checked"/>
+                  <label for="lab3820150711" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 11/07/2015, en vigor a partir del 12/07/2015.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab3820040805" value="20040805"/>
+                  <label for="lab3820040805" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 05/08/2004, en vigor a partir del 06/08/2004.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a22">
+            <p class="bloque">[Bloque 39: #a22]</p>
+
+<h5 class="articulo">Artículo 22. Contenido del régimen.</h5>
+<p class="parrafo">1. Una vez acreditada su procedencia, la aplicación del régimen opcional se desarrollará de acuerdo con lo dispuesto en este artículo.</p>
+<p class="parrafo">2. La Administración tributaria determinará el importe del Impuesto sobre la Renta de las Personas Físicas correspondiente al período en que el contribuyente haya solicitado la aplicación del régimen opcional.</p>
+<p class="parrafo">El cálculo se llevará a cabo de acuerdo con las siguientes consideraciones:</p>
+<p class="parrafo_2">a) Se tendrá en cuenta la totalidad de las rentas obtenidas por el contribuyente durante el período y las circunstancias personales y familiares que hayan sido debidamente acreditadas.</p>
+<p class="parrafo">b) Será de aplicación lo dispuesto en el artículo 66 del texto refundido de la Ley del Impuesto sobre la Renta de las Personas Físicas.</p>
+<p class="parrafo">c) La Administración tributaria fijará el tipo medio de gravamen resultante, que será el resultado de multiplicar por 100 el siguiente cociente:</p>
+<p class="parrafo">En el numerador, el resultado de minorar la cuota líquida total en el importe de las deducciones que procedan por aplicación de lo dispuesto en el artículo 81 del texto refundido la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764" target="_blank" title="Abre nueva ventana">Ley del Impuesto sobre la Renta de las Personas Físicas</a>.</p>
+<p class="parrafo">En el denominador, la base liquidable.</p>
+<p class="parrafo">El tipo medio de gravamen se expresará con dos decimales.</p>
+<p class="parrafo">d) El tipo medio de gravamen así obtenido se aplicará a la parte de la base liquidable correspondiente a las rentas obtenidas durante el período en territorio español por el contribuyente a quien sea de aplicación el régimen opcional.</p>
+<p class="parrafo_2">3. Si el resultado de efectuar las operaciones descritas en el apartado anterior arroja una cuantía inferior al importe global de las cantidades satisfechas durante el período por el contribuyente en concepto del Impuesto sobre la Renta de no Residentes, incluyendo los pagos a cuenta, por las rentas obtenidas en territorio español, la Administración tributaria procederá, previas las comprobaciones necesarias, a devolver el exceso al mismo, de conformidad con el procedimiento establecido en el artículo siguiente.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a23">
+            <p class="bloque">[Bloque 40: #a23]</p>
+
+<h5 class="articulo">Artículo 23. Procedimiento.</h5>
+<p class="parrafo">1. Los contribuyentes por este Impuesto que cumplan las condiciones establecidas en el artículo 21 de este Reglamento podrán solicitar la aplicación del régimen opcional regulado en este capítulo.</p>
+<p class="parrafo">En los supuestos de fallecimiento del contribuyente, la solicitud podrá ser formulada por los sucesores del causante.</p>
+<p class="parrafo">2. La Administración podrá requerir del contribuyente cuantos documentos justificativos juzgue necesarios para acreditar el cumplimiento de las condiciones que determinan la aplicación del régimen opcional.</p>
+<p class="parrafo">En su caso, requerirá al contribuyente para que, en el plazo de un mes, aporte la documentación necesaria, con indicación de que, si así no lo hiciera, se le tendrá por desistido de su solicitud.</p>
+<p class="parrafo">Cuando la documentación que se aporte para justificar la aplicación del régimen o las circunstancias personales o familiares que deban ser tenidas en cuenta, esté redactada en una lengua no oficial en territorio español, se presentará acompañada de su correspondiente traducción.</p>
+<p class="parrafo">3. Antes de dictar el acuerdo por el que se resuelva la solicitud formulada se pondrá de manifiesto el expediente al contribuyente o, en su caso, a su representante, para que efectúe las alegaciones que estime pertinentes.</p>
+<p class="parrafo">4. La Administración dispondrá de un plazo de seis meses, contados desde que se formule la solicitud, para adoptar la oportuna resolución, siempre que disponga de todos los datos y justificantes necesarios.</p>
+<p class="parrafo">Transcurrido dicho plazo, se podrá entender desestimada la solicitud, a efectos de interponer contra la resolución presunta el correspondiente recurso o reclamación o esperar la resolución expresa.</p>
+<p class="parrafo">En los casos de desestimación por silencio, la resolución expresa posterior se adoptará sin vinculación alguna al sentido del silencio.</p>
+<p class="parrafo">5. La resolución contendrá los cálculos efectuados de acuerdo con lo dispuesto en el artículo anterior. En su caso, la Administración tributaria procederá a devolver el exceso a que se refiere el apartado 3 del artículo 22 de este Reglamento, sin perjuicio de la práctica de las ulteriores liquidaciones, provisionales o definitivas, que procedan.</p>
+<p class="parrafo">La devolución se practicará dentro del plazo establecido en el apartado 4 anterior. Transcurrido dicho plazo sin que se haya ordenado el pago de la devolución por causa no imputable al contribuyente, se aplicará a la cantidad pendiente de devolución el interés de demora a que se refiere el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a26" target="_blank" title="Abre nueva ventana">artículo 26.6 de la Ley 58/2003, de 17 de diciembre</a>, General Tributaria, desde el día siguiente al del término de dicho plazo y hasta la fecha en la que se ordene su pago, sin necesidad de que el contribuyente así lo reclame.</p>
+<p class="parrafo">6. La forma y el procedimiento de pago de las devoluciones a que se refiere este artículo será el establecido para las devoluciones que deban efectuarse en virtud de lo dispuesto en el artículo 16 de este Reglamento.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a24">
+            <p class="bloque">[Bloque 41: #a24]</p>
+
+<h5 class="articulo">Artículo 24. Condición de contribuyentes por este Impuesto.</h5>
+<p class="parrafo">Sin perjuicio de que la opción suponga, en su caso, una tributación efectiva en España calculada en función de las normas del Impuesto sobre la Renta de las Personas Físicas, las personas físicas a las que resulte de aplicación el régimen opcional regulado en este capítulo no perderán, en ningún caso, su condición de contribuyentes por este Impuesto. En consecuencia, estarán sujetas al cumplimiento de todas las obligaciones que al respecto les sean exigibles en virtud de lo dispuesto en la normativa reguladora del Impuesto sobre la Renta de no Residentes.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da-3">
+            <p class="bloque">[Bloque 43: #da-3]</p>
+
+<h5 class="articulo">Disposición adicional primera. Comercialización transfronteriza de acciones o participaciones de instituciones de inversión colectiva españolas.</h5>
+<p class="parrafo">1. Lo establecido en esta disposición adicional resultará de aplicación cuando, conforme a lo dispuesto en el artículo 20 del Reglamento de la Ley 35/2004, de 4 de noviembre, de instituciones de inversión colectiva, aprobado por el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2005-18356" target="_blank" title="Abre nueva ventana">Real Decreto 1309/2005, de 4 de noviembre</a>, las sociedades gestoras o, en su caso, las sociedades de inversión, reguladas en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-20331" target="_blank" title="Abre nueva ventana">Ley 35/2003, de 4 de noviembre</a>, de instituciones de inversión colectiva, registren en cuentas globales a nombre de entidades intermediarias residentes en el extranjero la comercialización transfronteriza por tales entidades de acciones o participaciones de las instituciones de inversión colectiva que aquellas gestionen o, en el caso de sociedades de inversión, de sus propias acciones.</p>
+<p class="parrafo">2. La utilización de cuentas globales por entidades comercializadoras residentes en el extranjero supondrá que la acreditación de la identidad y residencia de los accionistas o partícipes no residentes se realice mediante la remisión, por la entidad comercializadora, de las certificaciones y de las relaciones previstas en el apartado 3, de acuerdo con el procedimiento que determine el Ministro de Economía y Hacienda.</p>
+<p class="parrafo">3. La comercialización transfronteriza de acciones o participaciones de instituciones de inversión colectiva españolas mediante la utilización de cuentas globales a nombre de una entidad comercializadora residente en el extranjero deberá cumplir los siguientes requisitos que, además, habrán de figurar expresamente recogidos en los contratos:</p>
+<p class="parrafo_2">a) No podrán incluirse en la cuenta global participaciones o acciones adquiridas por cuenta de personas o entidades que tengan su residencia fiscal en España o de establecimientos permanentes de no residentes situados en territorio español.</p>
+<p class="parrafo">b) Solo podrán incluirse en la cuenta global acciones o participaciones cuya titularidad real corresponda a clientes de la entidad comercializadora, sin que en el desglose interno de dicha entidad puedan registrarse acciones o participaciones a nombre de otra entidad intermediaria por cuenta de terceros.</p>
+<p class="parrafo">c) La entidad comercializadora vendrá obligada a remitir a la sociedad gestora o, en su defecto, a la sociedad de inversión, con ocasión de la percepción de beneficios distribuidos por la institución o de reembolsos o transmisiones de participaciones o acciones de aquella, las certificaciones acerca de la residencia de sus clientes perceptores o transmitentes que establezca el Ministro de Hacienda y Administraciones Públicas. Asimismo, la entidad comercializadora quedará obligada a remitir a la Administración tributaria española, en nombre de la entidad gestora o de la sociedad de inversión, la relación individualizada de los partícipes o accionistas perceptores o transmitentes, así como una relación anual individualizada de sus clientes con su posición inversora en la institución a la fecha que determine el Ministro de Hacienda y Administraciones Públicas.</p>
+<p class="parrafo">No obstante lo anterior, las comercializadoras residentes en un país con el que España haya suscrito un convenio para evitar la doble imposición con cláusula de intercambio de información no tendrán que incluir en las relaciones individualizadas antes señaladas a los contribuyentes residentes en el mismo país de residencia de la entidad comercializadora, en las siguientes condiciones:</p>
+<p class="parrafo_2">1.º En la relación de perceptores o transmitentes, excluirán a los contribuyentes respecto de las operaciones a las que haya sido de aplicación alguna de las exenciones previstas en el artículo 14 de la Ley del Impuesto, o derivada del convenio para evitar la doble imposición que resulte aplicable.</p>
+<p class="parrafo">2.º En la relación de posición inversora, no excluirán a los contribuyentes que, en el ejercicio al que se refiere la información, hayan obtenido rentas a las que no les sea de aplicación la exención por normativa interna o convenida.</p>
+<p class="parrafo_2">De igual modo, la entidad comercializadora deberá comunicar a la entidad gestora o a la sociedad de inversión el cumplimiento de dichas obligaciones en la forma y plazos que establezca el Ministro de Hacienda y Administraciones Públicas. En el caso de que, por aplicación de las exclusiones antes señaladas, no resulte información a remitir por la entidad comercializadora a la Administración tributaria española, dicha entidad efectuará una comunicación en este sentido a la entidad gestora o sociedad de inversión.</p>
+<p class="parrafo">d) El incumplimiento por la entidad comercializadora de las obligaciones previstas en los párrafos anteriores dará lugar a responsabilidad de la entidad gestora o de la sociedad de inversión ante la Administración tributaria por las retenciones o pagos a cuenta que, en su caso, se hubieran dejado de ingresar como consecuencia de dicho incumplimiento o por la omisión de la información que se hubiera debido remitir a la Administración tributaria. Asimismo, en el contrato de comercialización deberá figurar necesariamente una cláusula que establezca su resolución cuando se produzca el incumplimiento de las obligaciones previstas en esta disposición adicional por parte de la entidad comercializadora. El contrato de comercialización quedará sin efecto a partir del momento en que la sociedad gestora o la sociedad de inversión tengan constancia por cualquier medio de dicho incumplimiento.</p>
+<p class="parrafo_2">4. Los contratos de comercialización a que se refiere el apartado anterior deberán comunicarse por la sociedad gestora de instituciones de inversión colectiva o por la sociedad de inversión, con carácter previo al comienzo de la citada actividad, a la Comisión Nacional del Mercado de Valores.</p>
+<p class="parrafo">5. El Ministro de Economía y Hacienda determinará el contenido que deban tener las certificaciones y relaciones a que se refiere el apartado 3, así como los plazos en que la entidad comercializadora deba remitirlas a la entidad gestora o a la sociedad de inversión, respectivamente, y a la Administración tributaria española en nombre de estas últimas, y, en su caso, determinará los modelos que deban utilizarse.</p>
+<p class="parrafo">6. No obstante lo previsto en el apartado 2, el incumplimiento por la entidad comercializadora de los requisitos establecidos en el apartado 3 determinará que la acreditación de la identidad de los inversores no residentes, así como de su residencia fiscal, se realizará de conformidad con lo dispuesto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527" target="_blank" title="Abre nueva ventana">texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado por el Real Decreto Legislativo 5/2004, de 5 de marzo</a>, y en sus normas de desarrollo.</p>
+<blockquote>
+  <p class="nota_pie">Se numera por el art. 2.4 del Real Decreto 633/2015, de 10 de julio. <a href="/buscar/doc.php?id=BOE-A-2015-7770" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2015-7770</a>.</p>
+  <p class="nota_pie_2">Anteriormente era disposición adicional única.</p>
+</blockquote>
+
+<p class="pie_unico">Texto a&ntilde;adido, publicado el 11/07/2015, en vigor a partir del 12/07/2015.</p>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da-4">
+            <p class="bloque">[Bloque 44: #da-4]</p>
+
+<h5 class="articulo">Disposición adicional segunda. Solicitud de devolución por reinversión en vivienda habitual.</h5>
+<p class="parrafo">1. Podrá solicitarse la devolución total o parcial de la deuda tributaria ingresada correspondiente a la ganancia patrimonial obtenida por un contribuyente residente en un Estado miembro de la Unión Europea o por un contribuyente residente en un Estado miembro del Espacio Económico Europeo con el que exista un efectivo intercambio de información, por la trasmisión de la que ha sido su vivienda habitual en España en las condiciones que se establecen en esta disposición.</p>
+<p class="parrafo">2. El contribuyente no residente en territorio español deberá presentar una solicitud ante la Delegación o Administración de la Agencia Estatal de Administración Tributaria en cuyo ámbito territorial se encuentre ubicado el inmueble, en el plazo de los tres meses siguientes a la fecha de la adquisición de la vivienda habitual.</p>
+<p class="parrafo">3. El contribuyente deberá aportar junto con la solicitud la documentación que acredite que la trasmisión de la vivienda habitual en territorio español, y la posterior adquisición de la nueva vivienda habitual, han tenido lugar.</p>
+<p class="parrafo">La Administración tributaria procederá, en su caso, previas las comprobaciones que sean necesarias, a la devolución al contribuyente del exceso ingresado.</p>
+<p class="parrafo">4. A efectos de aplicar lo señalado en esta disposición se tendrá en cuenta lo establecido en los artículos 41 y 41 bis del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820" target="_blank" title="Abre nueva ventana">Reglamento del Impuesto sobre la Renta de las Personas Físicas</a>.</p>
+<p class="parrafo">5. El Ministro de Hacienda y Administraciones Públicas establecerá el modelo, así como la forma de presentación de dicha solicitud.</p>
+<blockquote>
+  <p class="nota_pie">Se añade por el art. 2.4 del Real Decreto 633/2015, de 10 de julio. <a href="/buscar/doc.php?id=BOE-A-2015-7770" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2015-7770</a>.</p>
+</blockquote>
+
+<p class="pie_unico">Texto a&ntilde;adido, publicado el 11/07/2015, en vigor a partir del 12/07/2015.</p>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da">
+            <p class="bloque">[Bloque 45: #da]</p>
+
+<h5 class="articulo">Disposición adicional tercera. Acreditación de la residencia por fondos de pensiones e instituciones de inversión colectiva a efectos de la aplicación de determinadas exenciones.</h5>
+<p class="parrafo">1. La acreditación de la residencia a efectos de la aplicación de la exención prevista en la letra c) del artículo 14.1 de la Ley del Impuesto podrá realizarse conforme a lo establecido en esta disposición adicional cuando las rentas se obtengan por alguna de las siguientes entidades:</p>
+<p class="parrafo_2">a) Fondos de pensiones equivalentes a los regulados en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2002-24252" target="_blank" title="Abre nueva ventana">texto refundido de la Ley de Regulación de los Planes y Fondos de Pensiones, aprobado por el Real Decreto Legislativo 1/2002, de 29 de noviembre</a>, o por establecimientos permanentes de dichos fondos de pensiones.</p>
+<p class="parrafo">Se considerarán fondos de pensiones equivalentes aquellas instituciones de previsión social que cumplan los requisitos establecidos en la letra k) del apartado 1 del artículo 14 de la Ley del Impuesto.</p>
+<p class="parrafo">En todo caso se considerarán fondos de pensiones equivalentes las instituciones de previsión social reguladas por la <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-82502" target="_blank" title="Abre nueva ventana">Directiva 2016/2341 del Parlamento Europeo y del Consejo</a> de 14 de diciembre de 2016, relativa a las actividades y la supervisión de los fondos de pensiones de empleo.</p>
+<p class="parrafo">b) Instituciones de inversión colectiva reguladas por la <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2009-82165" target="_blank" title="Abre nueva ventana">Directiva 2009/65/CE del Parlamento Europeo y del Consejo, de 13 de julio de 2009</a>, por la que se coordinan las disposiciones legales, reglamentarias y administrativas sobre determinados organismos de inversión colectiva en valores mobiliarios.</p>
+<p class="parrafo">c) Instituciones de inversión colectiva alternativas sometidas a un régimen de autorización, registro o supervisión administrativa y gestionadas por gestoras de fondos de inversión alternativos reguladas por la <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2011-81305" target="_blank" title="Abre nueva ventana">Directiva 2011/61/UE del Parlamento Europeo y del Consejo de 8 de junio de 2011</a> relativa a los gestores de fondos de inversión alternativos y por la que se modifican las Directivas <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2003-81520" target="_blank" title="Abre nueva ventana">2003/41/CE</a> y <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2009-82165" target="_blank" title="Abre nueva ventana">2009/65/CE</a> y los Reglamentos (CE) <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2009-82164" target="_blank" title="Abre nueva ventana">n.º 1060/2009</a> y (UE) <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2010-82314" target="_blank" title="Abre nueva ventana">n.º 1095/2010</a>.</p>
+<p class="parrafo_2">2. Cuando las entidades mencionadas en el apartado 1 de esta disposición adicional no tengan la consideración de entidades en régimen de atribución de rentas, la acreditación de la residencia se realizará de la siguiente forma:</p>
+<p class="parrafo_2">a) Tratándose de un fondo de pensiones distinto de los previstos en el tercer párrafo de la letra a) del apartado 1 de esta disposición adicional, mediante una declaración formulada por su representante en la que se manifieste el cumplimiento de los requisitos legales, con el contenido y ajustada al modelo que establezca la Ministra de Hacienda. Esta declaración tendrá un plazo de validez de un año a partir de la fecha de su expedición.</p>
+<p class="parrafo">Tratándose de un fondo de pensiones de los previstos en el tercer párrafo de la letra a) del apartado 1 de esta disposición adicional, mediante un certificado emitido por la autoridad competente del Estado en el que la institución se encuentre establecida, en el cual, junto a su naturaleza de fondo de pensiones de empleo autorizado o registrado al amparo de la Directiva <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-82502" target="_blank" title="Abre nueva ventana">2016/2341</a>, conste la denominación completa de la institución, su domicilio, el Estado en que está establecida, y la fecha de su autorización o su número de registro administrativo. La autoridad competente será la encargada de la autorización, del registro o de la supervisión de la institución.</p>
+<p class="parrafo">En todo caso se considerará que los fondos de pensiones a que se refiere la letra a) del apartado 1 de esta disposición adicional no son entidades en régimen de atribución de rentas.</p>
+<p class="parrafo">b) Tratándose de una institución de inversión colectiva de las previstas en el apartado 1.b) de esta disposición adicional, mediante certificado emitido por la autoridad competente del Estado miembro de origen de la institución, que tendrá el mismo contenido, salvo en lo referente al motivo de su emisión, que el modelo de certificado de OICVM previsto en el anexo II del <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2010-81246" target="_blank" title="Abre nueva ventana">Reglamento UE n.º 584/2010 de la Comisión, de 1 de julio de 2010</a>, por el que se establecen disposiciones de aplicación de la <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2009-82165" target="_blank" title="Abre nueva ventana">Directiva 2009/65/CE</a>. La autoridad competente será la designada conforme a lo previsto en el artículo 97 de la citada Directiva.</p>
+<p class="parrafo">c) Tratándose de una institución de inversión colectiva de las previstas en el apartado 1.c) de esta disposición adicional, la residencia se acreditará mediante alguno de los medios siguientes:</p>
+<p class="parrafo_2">1.º Certificado emitido por la autoridad competente del Estado en el que la institución se encuentre establecida, en el que conste la denominación completa de la institución, su domicilio, el Estado en que está establecida, su forma jurídica, y, en su caso, la fecha de su autorización o su número de registro administrativo, así como el hecho de estar gestionada por una entidad gestora, o autogestionada, autorizada de acuerdo con la <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2011-81305" target="_blank" title="Abre nueva ventana">Directiva 2011/61/UE</a>, y la denominación y el domicilio de dicha entidad gestora. La autoridad competente será la encargada de la autorización, del registro o de la supervisión de la institución.</p>
+<p class="parrafo">2.º Declaración formulada por los representantes de la institución o de su entidad gestora, en la que conste, además de la información a que se refiere el número 1.º anterior, la denominación social y el domicilio de la entidad depositaria, ajustada al modelo que establezca la Ministra de Hacienda. Esta declaración tendrá un plazo de validez de un año a partir de la fecha de su expedición.</p>
+<p class="parrafo">Los certificados mencionados en el presente apartado tendrán validez indefinida salvo que se produzca alguna modificación en los datos consignados, en cuyo caso se comunicará dicha circunstancia a la entidad encargada de aplicar la exención, y a partir de ese momento dejará de tener validez y será necesario nuevo certificado.</p>
+<p class="parrafo">3. Cuando las entidades comprendidas en las letras b) y c) del apartado 1 de esta disposición adicional establecidas en los Estados a los que se refiere la exención prevista en la letra c) del artículo 14.1 de la Ley del Impuesto, tengan la consideración de entidades en régimen de atribución de rentas, dicha exención se aplicará a sus miembros en los siguientes términos:</p>
+<p class="parrafo">La entidad perceptora de las rentas podrá determinar la residencia de sus miembros conforme a lo dispuesto en los anexos I y II de la <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2011-80479" target="_blank" title="Abre nueva ventana">Directiva 2011/16/UE, del Consejo, de 15 de febrero de 2011</a>, relativa a la cooperación administrativa en el ámbito de la fiscalidad.</p>
+<p class="parrafo">La exención se aplicará en función del porcentaje de participación en la entidad que corresponda a sus miembros con derecho a dicha exención a 31 de diciembre del año anterior a aquel en el que se obtengan las rentas.</p>
+<p class="parrafo">La condición de tratarse de una entidad en régimen de atribución de rentas así como el porcentaje de participación de los miembros a que se refiere el párrafo anterior se acreditará mediante una declaración realizada por el representante de la institución o de su entidad gestora, con el contenido y de acuerdo con el modelo que establezca la Ministra de Hacienda.</p>
+<p class="parrafo">Las entidades comprendidas en este apartado deberán acreditar la residencia en la forma prevista en las letras b) o c) del apartado anterior, según proceda.</p>
+<p class="parrafo">4. La forma de acreditación de la residencia establecida en esta disposición adicional para las entidades y respecto de las rentas exentas a que se refiere el apartado 1 de esta disposición adicional, será de aplicación a efectos de hacer efectiva la exención por las personas o entidades obligadas a retener o, en su caso, ante la Administración tributaria, con independencia de lo dispuesto en las órdenes ministeriales reguladoras de los procedimientos aplicables, resúmenes anuales de retenciones y declaraciones informativas, relativos a dichas rentas.</p>
+<blockquote>
+  <p class="nota_pie">Se añade por el art. único del Real Decreto 595/2019, de 18 de octubre. <a href="/buscar/doc.php?id=BOE-A-2019-15011" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2019-15011</a></p>
+</blockquote>
+
+<p class="pie_unico">Texto a&ntilde;adido, publicado el 19/10/2019, en vigor a partir del 20/10/2019.</p>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfunica-2">
+            <p class="bloque">[Bloque 46: #dfunica-2]</p>
+
+<h5 class="articulo">Disposición final única. Autorización al Ministro de Economía y Hacienda.</h5>
+<p class="parrafo">Se autoriza al Ministro de Economía y Hacienda para dictar las disposiciones necesarias para la aplicación de este Reglamento.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+        </div> <!-- #textoxslt -->
+        <div class="caja redondeada gris info" role="alert">
+          <p>Este documento es de car&aacute;cter informativo y no tiene valor jur&iacute;dico.</p>
+          <p>Ay&uacute;denos a mejorar: puede dirigir sus comentarios y sugerencias a nuestro <a href="/contactar/formulario_completo.php">Servicio de atenci&oacute;n al ciudadano</a></p>
+        </div>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>
