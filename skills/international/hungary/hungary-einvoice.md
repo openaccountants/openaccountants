@@ -80,7 +80,7 @@ Tax year 2026. Law read on 30 October 2026: the VAT Act (Áfa tv., time state 15
 | `InvoiceData` | Root element: `invoiceNumber`, `invoiceIssueDate`, `completenessIndicator`, `invoiceMain` |
 | `invoiceMain` | Contains `invoice` (one invoice or one modifying document) or `batchInvoice` (several modifying documents under one invoice number) |
 | `invoiceReference` | For a modifying document: `originalInvoiceNumber`, `modifyWithoutMaster`, `modificationIndex` |
-| `invoiceHead` | `supplierInfo`, `customerInfo`, `invoiceDetail` |
+| `invoiceHead` | `supplierInfo`, `customerInfo`, `fiscalRepresentativeInfo` (optional), `invoiceDetail` |
 | `invoiceDetail` | Category, delivery date, currency, exchange rate, payment method and date, appearance |
 | `invoiceLines` | Line data: description, quantity, unit, unit price, net amount, VAT rate, VAT amount |
 | `invoiceSummary` | Totals per VAT rate (`summaryByVatRate`) and gross totals |
@@ -113,7 +113,7 @@ The report carries the invoice's content as the Áfa tv. requires it, plus the c
 - for an exemption, a reference to the law or the VAT Directive;
 - margin scheme wording where relevant; the fiscal representative's name, address and tax number.
 
-**Simplified invoices** (176. §) may be issued for advances, for cross-border supplies under 159. § (2) c) and d), for invoices up to the forint value of EUR 100 including VAT (other than intra-EU supplies of goods and distance sales), and by a subjectively exempt business.
+**Simplified invoices** (176. §) may be issued for advances, where a customer who would otherwise get a receipt asks for an invoice (with the data in forints), for cross-border supplies under 159. § (2) c) and d), for invoices up to the forint value of EUR 100 including VAT (other than intra-EU supplies of goods and distance sales), and by a subjectively exempt business.
 
 ### Invoice data fields (schema 3.0)
 
@@ -204,7 +204,7 @@ A modifying or cancelling document must carry its own date, its own serial numbe
 ### Technical User Management
 
 - **Primary user.** The taxpayer's statutory or permanent representative is the primary user on the Online Számla web interface. Only primary users can create technical users; web users cannot use the reporting interface.
-- **Keys.** The primary user generates a signing key (aláírókulcs, for `requestSignature`) and an exchange key (cserekulcs, for decoding the token) for each technical user, on the web interface only. The primary user decides whether a technical user may query invoice data.
+- **Keys.** The primary user generates a signing key (aláírókulcs, "signature key" in NAV's English specification, for `requestSignature`) and an exchange key (cserekulcs, "replacement key" in the English specification, for decoding the token) for each technical user, on the web interface only. The primary user decides whether a technical user may query invoice data.
 - **Separate environments.** Registration, technical users and keys in the test system do not work in production.
 
 ## Section 6 -- Validation Rules
@@ -251,7 +251,7 @@ The rates come from Áfa tv. 82. §. The full lists are in [hu-vat-return](hu-va
 | Standard | 27% | Most goods and services (82. § (1)) |
 | Reduced, Annex 3 | 5% | For example books, certain medicines, pork, poultry, eggs, milk, district heating, internet access, restaurant food, commercial accommodation, certain new homes (82. § (2)) |
 | Reduced, Annex 3/A | 18% | Milk products, flour and cereal bakery products, admission to certain open-air events (82. § (3)) |
-| Zero rate, Annex 3/B | 0% | Daily newspapers; prescription-only medicines from 1 September 2026 (82. § (4)) |
+| Zero rate, Annex 3/B | 0% | Daily newspapers; prescription-only medicines and magistral preparations from 1 September 2026 (82. § (4); Annex 3/B rows 2 and 3 inserted by Act XL of 2026, in force 1 September 2026) |
 | Exempt or out of scope | no VAT | Reported with `vatExemption` (code and reason) or `vatOutOfScope`, not as a 0% rate |
 
 ### Rounding and Tolerances
@@ -304,7 +304,7 @@ Domestic reverse charge lines are reported with `vatDomesticReverseCharge` = tru
 | --- | --- | --- |
 | Failure to issue an invoice, simplified invoice or receipt, or issuing one not for the real consideration | Up to HUF 2,000,000 | Art. 228. § (1) a) |
 | Failure to keep records | Up to HUF 2,000,000 | Art. 228. § (1) b) |
-| Printed invoice or receipt pads not kept | Up to HUF 200,000 (individual) or HUF 500,000 (others) times the number missing | Art. 228. § (3) |
+| Printed invoice or receipt pads not kept | HUF 200,000 (individual) or HUF 500,000 (others) times the number missing, whether or not they were used | Art. 228. § (3) |
 | Tax shortfall found by NAV | 50% of the shortfall; 200% where linked to hidden income or false or destroyed records | Art. 215. § (3)-(4) |
 | Late VAT payment | Late payment interest at the central bank base rate plus 5 percentage points, per day / 365; see [hu-vat-return](hu-vat-return.md) | Art. 209. § (1) |
 
@@ -334,7 +334,7 @@ NAV may use the reported data for checks and audit selection within the limitati
 
 - **Who issues receipts.** A business that does not issue an invoice because the customer paid in full and did not ask for one must issue a receipt (Áfa tv. 165. § (1) b), 166. § (1)). This route is closed for supplies to another taxable person or a legal person, and for consumer supplies of HUF 900,000 or more including VAT (165. § (3)).
 - **e-nyugta.** An e-receipt is issued only electronically, on an e-cash register; it counts as issued when it reaches NAV's receipt store (nyugtatár), where the buyer sees it through an app (Áfa tv. 166. § (1a), 174. § (2)). Data from e-cash registers goes to NAV as they are issued (Annex 11 A)).
-- **Other receipts from 1 September 2026.** Receipts not issued on an online cash register or e-cash register (for example from a computer or a printed pad) are reported on NAV's interface within 3 calendar days of issue, summed per day and per VAT rate (Annex 11 B) point 1; NAV booklet 18).
+- **Other receipts from 1 September 2026.** Receipts not issued on an online cash register or e-cash register (for example from a computer or a printed pad) are reported on NAV's interface within 3 calendar days of issue, summed per day and per VAT rate (Annex 11 B) point 1, in force from 1 September 2026; NAV booklet 18). This does not apply where a cash-register operator is excused by law from using the register in extraordinary circumstances and temporarily issues receipts from a printed pad (Annex 11 B) point 2).
 
 ## Sources
 
@@ -350,7 +350,7 @@ NAV may use the reported data for checks and audit selection within the limitati
 | NAV, Online-Invoice repository README (production and test endpoints) | https://github.com/nav-gov-hu/Online-Invoice | 2026-10-30 |
 | NAV information booklet 18, "A számla, nyugta kibocsátásának alapvető szabályai" (2 March 2026) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/18.-A-szamla-nyugta-kibocsatasanak-alapveto-szabalyai-2026.-03.-02. | 2026-10-30 |
 
-Not yet confirmed: the VAT value limit that applied from 1 July 2018 to 30 June 2020 (the old version said HUF 100,000; it is not in the texts read today); the dates on which NAV stopped accepting schema versions 1.0 and 2.0 (the old version gave 1 April 2021, 1 June 2021 and 15 May 2025, which conflict and were not found in an official source today); whether NAV runs the 15-day call procedure of Art. 221. § before an Art. 229. § fine for missing invoice data; whether invoicing software must still be declared to NAV (the old version said so; the 2026 decree text has no such duty); the forint rounding rules for line and summary VAT beyond NAV's 1% tolerance; Hungary's plans under the EU ViDA package (Directive (EU) 2025/516) for structured e-invoicing or a move away from the current reporting model (EUR-Lex refused the download today, and no Hungarian law read today makes structured e-invoices mandatory); the start date of eÁfa draft returns (the old version said 2024); NAV's current size limit for e-invoices sent through NAV under decree 13/C. § (3).
+Not yet confirmed: the VAT value limit that applied from 1 July 2018 to 30 June 2020 (the old version said HUF 100,000; it is not in the texts read today); the dates on which NAV stopped accepting schema versions 1.0 and 2.0 (the old version gave 1 April 2021, 1 June 2021 and 15 May 2025, which conflict and were not found in an official source today); whether NAV runs the 15-day call procedure of Art. 221. § before an Art. 229. § fine for missing invoice data; whether invoicing software must still be declared to NAV (the old version said so; the 2026 decree text has no such duty); the forint rounding rules for line and summary VAT beyond NAV's 1% tolerance; Hungary's plans under the EU ViDA package (Directive (EU) 2025/516) for structured e-invoicing or a move away from the current reporting model (EUR-Lex refused the download today, and no Hungarian law read today makes structured e-invoices mandatory); the start date of eÁfa draft returns (the old version said 2024); NAV's current size limit for e-invoices sent through NAV under decree 13/C. § (3); the old version's "graduated fines based on delay duration" for late data reports; the old version's rule that archived invoices must be available to NAV within Hungary (or the EU with immediate electronic access); the criminal penalties for VAT fraud under the Criminal Code (Btk.), which the old version mentioned without a section.
 
 ## Disclaimer
 
