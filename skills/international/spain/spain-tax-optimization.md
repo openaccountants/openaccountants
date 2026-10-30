@@ -217,7 +217,7 @@ The maximum base in every band from EUR 4,050 up is EUR 5,101.20 a month. Full t
 
 | Strategy | Detail |
 | --- | --- |
-| Tarifa plana (reduced starting fee) | On first registration, or after two years out of RETA (three if the reduced fee was used before): a reduced fee for common and occupational contingencies for the first 12 full calendar months, with no cessation or training contribution. A further 12 months if expected net income is below the annual minimum wage. Must be requested at registration (Ley 20/2007 art 38 ter). The amount was EUR 80 a month in 2023 to 2025; from 2026 the State Budget Law sets it (RD-ley 13/2022, DT 5). |
+| Tarifa plana (reduced starting fee) | On first registration, or after two years out of RETA (three if the reduced fee was used before): a reduced fee for common and occupational contingencies for the first 12 full calendar months, with no cessation or training contribution. A further 12 months if expected net income is below the annual minimum wage. Must be requested at registration (Ley 20/2007 art 38 ter). The amount was EUR 80 a month in 2023 to 2025, and from 2026 the law leaves it to the State Budget Law (RD-ley 13/2022, DT 5). Social Security's current guide still states EUR 80 a month plus the 0.9% MEI, EUR 88.64 a month in total (TGSS, Importass guide); [es-social-contributions](es-social-contributions.md) uses that published figure. |
 | Income bracket management | A lower base means a lower quota, but also lower benefits. The chosen base is provisional. |
 | Regularización anual | After the year, Social Security regularises the bases and quotas against the net income reported by the tax authority. Underpayments are charged and overpayments refunded (LGSS art 308.1.c). |
 | Cese de actividad (unemployment) | Autónomos pay 0.90% for cessation cover. The benefit lasts from 4 months (12-17 months contributed) to 24 months (48 or more months contributed) (LGSS art 338.1). |
@@ -355,8 +355,8 @@ The examples use a combined marginal rate of 37% as an assumption. The real marg
 | Ordinary quota at the minimum base for income of EUR 1,166.70 to 1,300 a month | EUR 950.98 × 31.50% = EUR 299.56/month |
 | --- | --- |
 | Ordinary quota for 12 months | EUR 3,594.72 |
-| Reduced starting fee | EUR 80/month in 2023 to 2025; the 2026 amount is set by the State Budget Law (not yet confirmed) |
-| **Annual saving** | EUR 3,594.72 minus 12 × the reduced fee. At EUR 80 it would be EUR 2,634.72. |
+| Reduced starting fee, as published by TGSS for 2026 (EUR 80 + MEI) | EUR 88.64/month; 12 × EUR 88.64 = EUR 1,063.68 |
+| **Annual saving** | EUR 3,594.72 − EUR 1,063.68 = **EUR 2,531.04** |
 
 ### Example 7 -- Startup Investment (EUR 20,000 in Nueva Creación)
 
@@ -380,6 +380,7 @@ The examples use a combined marginal rate of 37% as an assumption. The real marg
 | Código Penal, consolidated text, arts 305, 310 | https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444 | 2026-10-30 |
 | Real Decreto Legislativo 8/2015 (LGSS), consolidated text, arts 308, 313, 338 | https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724 | 2026-10-30 |
 | Ley 20/2007 del Estatuto del trabajo autónomo, consolidated text, art 38 ter | https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409 | 2026-10-30 |
+| Tesorería General de la Seguridad Social, Importass guide for self-employed workers (tarifa plana EUR 80 + MEI = EUR 88.64) | https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/trabajo%2Bautonomo/guia | 2026-10-30 |
 | Real Decreto-ley 13/2022, preamble on DT 5 (reduced fee 2023-2025) | https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482 | 2026-10-30 |
 | Orden PJC/297/2026, 2026 contribution rules, arts 18 and 37 | https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296 | 2026-10-30 |
 | Orden HAC/277/2026, IRPF 2025 return models and filing window | https://www.boe.es/buscar/act.php?id=BOE-A-2026-7041 | 2026-10-30 |
@@ -388,7 +389,7 @@ The examples use a combined marginal rate of 37% as an assumption. The real marg
 | AEAT, Modelo 390 filing period | https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-390-iva-declaracion-resumen-anual_/plazos-presentacion.html | 2026-10-30 |
 | AEAT, Renta 2025 campaign page | https://sede.agenciatributaria.gob.es/Sede/Renta.html | 2026-10-30 |
 
-Not yet confirmed: (1) the amount of the reduced starting fee (tarifa plana) for new registrations in 2026; the law leaves it to the State Budget Law, and no 2026 amount was found (es-social-contributions and es-autonomous-worker say the same). (2) No statutory sentence was quoted for the deduction of the autónomo's own RETA contributions; it rests on the pack's es-autonomous-worker skill. (3) The old file's "typical combined rate" column (about 19% to 54%) and its ranking of communities (Madrid lowest; Cataluña, Valencia and Extremadura among the highest) have no single official source and were removed; use the community scales in es-income-tax. (4) The old rule of thumb to incorporate once profits pass about EUR 40,000 to 50,000 has no official source. (5) The old file's "AEAT monitors gaps under 2-3 years" for the reduced fee is not an official statement; only the statutory two-year and three-year rules are given. (6) The 2027 dates for the Renta campaign, Modelo 347 and Modelo 390 are not yet published. (7) The day-count rule for first-year depreciation was not read in the IS regulation.
+Not yet confirmed: (1) the statutory basis for the 2026 reduced starting fee (tarifa plana): the law leaves the amount to the State Budget Law and no 2026 budget provision was found; the EUR 88.64 used here is Social Security's published administrative figure (es-social-contributions takes the same approach). (2) No statutory sentence was quoted for the deduction of the autónomo's own RETA contributions; it rests on the pack's es-autonomous-worker skill. (3) The old file's "typical combined rate" column (about 19% to 54%) and its ranking of communities (Madrid lowest; Cataluña, Valencia and Extremadura among the highest) have no single official source and were removed; use the community scales in es-income-tax. (4) The old rule of thumb to incorporate once profits pass about EUR 40,000 to 50,000 has no official source. (5) The old file's "AEAT monitors gaps under 2-3 years" for the reduced fee is not an official statement; only the statutory two-year and three-year rules are given. (6) The 2027 dates for the Renta campaign, Modelo 347 and Modelo 390 are not yet published. (7) The day-count rule for first-year depreciation was not read in the IS regulation.
 
 ## Disclaimer
 
