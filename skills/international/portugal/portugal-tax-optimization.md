@@ -39,12 +39,12 @@ Todos os valores abaixo foram lidos no texto consolidado publicado pela AT no Po
 - **Despesas gerais familiares**: 35% das faturas com NIF, máx. €250 por sujeito passivo; famílias monoparentais 45%, máx. €335 _(CIRS art. 78.º-B, n.os 1 e 9)_
 - **Saúde**: 15% das despesas, máx. €1.000 por agregado _(CIRS art. 78.º-C, n.º 1)_
 - **Educação e formação**: 30% das despesas, máx. €800 por agregado _(CIRS art. 78.º-D, n.º 1)_
-- **Habitação (renda da habitação própria e permanente)**: 15% das rendas, máx. €900 em 2026 _(CIRS art. 78.º-E, n.os 1 a) e 10; Decreto-Lei 97/2026, art. 15.º, n.º 1)_
-- **Habitação (juros)**: 15%, máx. €296, apenas contratos celebrados até 31 de dezembro de 2011 (até €450 para rendimentos coletáveis baixos) _(CIRS art. 78.º-E, n.os 1 b) e 4)_
+- **Habitação (renda da habitação própria e permanente)**: 15% das rendas, máx. €900 em 2026; limite mais alto para rendimento coletável até €30.000 _(CIRS art. 78.º-E, n.os 1 a), 4 e 10; Decreto-Lei 97/2026, art. 15.º, n.º 1)_
+- **Habitação (juros)**: 15%, máx. €296, apenas contratos celebrados até 31 de dezembro de 2011 (até €450 para rendimentos coletáveis baixos) _(CIRS art. 78.º-E, n.os 1 b) e 5)_
 - **Lares**: 25% dos encargos, máx. €403,75 _(CIRS art. 84.º, n.º 1)_
 - **Pensões de alimentos**: 20% dos montantes fixados por sentença ou acordo homologado _(CIRS art. 83.º-A, n.º 1)_
 - **IVA em faturas**: 15% do IVA (restauração, cabeleireiros, oficinas, veterinários e outros setores da lei), máx. €250 por agregado _(CIRS art. 78.º-F, n.º 1)_
-- **Depreciações**: taxas genéricas da Tabela II do Decreto Regulamentar 25/2009 (ver Secção 4; taxas por confirmar)
+- **Depreciações**: taxas genéricas da Tabela II do Decreto Regulamentar 25/2009: edifícios comerciais e administrativos 2%, industriais 5%, mobiliário 12,5%, computadores 33,33%, programas de computador 33,33%, viaturas ligeiras e mistas 25% (ver Secção 4) _(DR 25/2009, Tabela II, códigos 2015, 2020, 2430, 2240, 2440 e 2375)_
 - **PPR, dedução IRS**: 20% das entregas, máx. €400 (menos de 35 anos), €350 (35 a 50 anos), €300 (mais de 50 anos) _(EBF art. 21.º, n.º 2)_
 - **Juros de depósitos**: taxa liberatória de 28%, ou englobamento por opção _(CIRS art. 71.º, n.os 1 e 9)_
 - **Dividendos (englobamento)**: só 50% incluídos no rendimento _(CIRS art. 40.º-A, n.º 1)_
@@ -125,8 +125,8 @@ Para optimização sob RNH/IFICI ver skill `pt-nhr-ifici`.
 | Despesas gerais familiares | 35% das faturas com NIF (45% em famílias monoparentais) | €250 por sujeito passivo (€335 monoparental) | Art. 78.º-B, n.os 1 e 9 |
 | Saúde | 15% das despesas de saúde | €1.000 por agregado | Art. 78.º-C, n.º 1 |
 | Educação e formação | 30% das despesas | €800 por agregado (mais até €300 para renda de estudante deslocado, máx. €400 de renda) | Art. 78.º-D, n.º 1 |
-| Habitação: renda | 15% das rendas da habitação própria e permanente | €900 em 2026 (o novo limite de €1.000 só se aplica a partir de 2027) | Art. 78.º-E, n.os 1 a) e 10; DL 97/2026, art. 15.º, n.º 1 |
-| Habitação: juros | 15% dos juros, só contratos até 31 de dezembro de 2011 | €296 (€450 para rendimento coletável até ao 1.º escalão) | Art. 78.º-E, n.os 1 b) e 4 |
+| Habitação: renda | 15% das rendas da habitação própria e permanente | €900 em 2026 (o novo limite de €1.000 só se aplica a partir de 2027). Para rendimento coletável até €30.000 o n.º 4 dá um limite mais alto (até ao 1.º escalão, €1.100, aplicado em 2026 na fase de 75% da Lei 36/2024, art. 3.º); prevalece o maior. Cálculo em `pt-irs-employees-investment` | Art. 78.º-E, n.os 1 a), 4 e 10; DL 97/2026, art. 15.º, n.º 1 |
+| Habitação: juros | 15% dos juros, só contratos até 31 de dezembro de 2011 | €296 (€450 para rendimento coletável até ao 1.º escalão, com escala até €30.000) | Art. 78.º-E, n.os 1 b) e 5 |
 | Lares | 25% dos encargos com lares e apoio domiciliário | €403,75 | Art. 84.º, n.º 1 |
 | Pensão de alimentos | 20% dos montantes fixados por sentença ou acordo homologado, se o beneficiário não fizer parte do agregado | Conta para o limite global do art. 78.º, n.º 7 | Art. 83.º-A, n.º 1 |
 | IVA em faturas (e-fatura) | 15% do IVA em restauração e alojamento, cabeleireiros, oficinas auto e moto, veterinários e outros setores; 100% do IVA dos passes de transportes públicos; 30% em ginásios e clubes desportivos; 35% em medicamentos veterinários | €250 por agregado | Art. 78.º-F, n.os 1, 3, 6 e 8 |
@@ -162,19 +162,24 @@ Peça sempre NIF em todas as compras profissionais. A diferença entre €4.587,
 
 **Amortizações: Contabilidade Organizada** _(Decreto Regulamentar 25/2009)_
 
-As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (por setor) ou, na falta delas, as taxas genéricas da Tabela II anexas ao Decreto Regulamentar 25/2009. A cópia da AT lida hoje não reproduz as tabelas ("ver documento original"), por isso as taxas por categoria da versão anterior desta skill (edifícios, mobiliário, equipamento informático, software, viaturas, equipamento básico) passam para "Not yet confirmed". Confirmar na Tabela II do Diário da República antes de usar.
+As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (por setor) ou, na falta delas, as taxas genéricas da Tabela II anexas ao Decreto Regulamentar 25/2009 (art. 5.º). As taxas abaixo foram lidas no texto original publicado no Diário da República (1.ª série, n.º 178, 14 de setembro de 2009). Segundo o histórico de alterações da AT, a única alteração às tabelas foi o código 2250 (Lei 82-D/2014, art. 23.º).
 
-| Categoria de Ativo | Taxa |
+| Categoria de Ativo (código da Tabela II) | Taxa |
 | --- | --- |
-| Edifícios (comerciais e industriais) | Tabela II do DR 25/2009 (por confirmar) |
-| Mobiliário de escritório | Tabela II do DR 25/2009 (por confirmar) |
-| Equipamento informático | Tabela II do DR 25/2009 (por confirmar) |
-| Software | Tabela II do DR 25/2009 (por confirmar) |
-| Viaturas ligeiras de passageiros | Tabela II do DR 25/2009 (por confirmar) |
-| Equipamento básico | Tabela I ou II do DR 25/2009 (por confirmar) |
-| Equipamentos de energia solar, fotovoltaica ou eólica (código 2250) | 8% (Tabela II, redação da Lei 82-D/2014) |
+| Edifícios habitacionais (2010) | 2% |
+| Edifícios comerciais e administrativos (2015) | 2% |
+| Edifícios industriais (2020) | 5% |
+| Edifícios afetos a hotéis, restaurantes, garagens, saúde, ensino e serviços recreativos e culturais (2025) | 5% |
+| Mobiliário (2430) | 12,5% |
+| Computadores (2240) | 33,33% |
+| Programas de computadores (2440) | 33,33% |
+| Aparelhos telemóveis (2251) | 20% |
+| Viaturas automóveis ligeiras e mistas (2375) | 25% |
+| Máquinas não especificadas (2295) | 12,5% |
+| Equipamento básico de um setor | Taxa específica da Tabela I para esse setor; na falta dela, o código da Tabela II do tipo de ativo |
+| Equipamentos de energia solar, fotovoltaica ou eólica (2250) | 8% (redação da Lei 82-D/2014, art. 23.º) |
 
-- **Limite amortização viaturas**: não são aceites as depreciações de viaturas ligeiras de passageiros ou mistas, incluindo elétricas, na parte do custo de aquisição que excede o montante fixado por portaria _(CIRC art. 34.º, n.º 1 e); DR 25/2009, art. 11.º)_. Os montantes da portaria (Portaria 467/2010, com alterações) não foram lidos hoje: ver "Not yet confirmed". As viaturas também pagam tributação autónoma (ver `pt-corporate-tax`).
+- **Limite amortização viaturas**: não são aceites as depreciações de viaturas ligeiras de passageiros ou mistas, incluindo elétricas, na parte do custo de aquisição que excede o montante fixado por portaria _(CIRC art. 34.º, n.º 1 e); DR 25/2009, art. 11.º)_. Para viaturas adquiridas em períodos iniciados a partir de 1 de janeiro de 2015, o montante é: €62.500 para veículos exclusivamente elétricos; €50.000 para híbridos plug-in; €37.500 para veículos a GPL ou gás natural veicular; €25.000 para as restantes _(Portaria 467/2010, art. 1.º, n.º 4, na redação da Lei 82-D/2014, art. 24.º)_. A versão anterior desta skill dava €37.500 para "outras" viaturas: é o limite das viaturas a GPL ou GNV; as viaturas a gasolina ou gasóleo têm €25.000. As viaturas também pagam tributação autónoma (ver `pt-corporate-tax`).
 
 ### Regime Simplificado
 
@@ -243,7 +248,7 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 - **Mínimo**: sem rendimentos, ou com contribuição abaixo de €20,00, a base é fixada para dar €20,00 por mês.
 - **Limite máximo**: a base de incidência mensal tem o limite de 12 × IAS = €6.445,56 (IAS 2026 = €537,13).
 - **Declaração e pagamento**: declaração trimestral até ao fim de janeiro, abril, julho e outubro; pagamento todos os meses entre o dia 10 e o dia 20 do mês seguinte.
-- **Contabilidade organizada**: a base é o lucro tributável do ano anterior (ver `pt-social-contributions`).
+- **Contabilidade organizada**: a base mensal é 1/12 do lucro tributável do ano anterior, com o mínimo de 1,5 × IAS = €805,70, fixada em outubro para o ano civil seguinte; o independente pode pedir o regime trimestral _(Guia Prático da Segurança Social, 2026; ver `pt-social-contributions`)_.
 
 ### Isenções e Reduções
 
@@ -271,7 +276,7 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 
 | Instrumento | Tratamento Fiscal |
 | --- | --- |
-| PPR (Plano Poupança Reforma) | Dedução à coleta de 20% das entregas, com limite por idade (EBF art. 21.º, n.º 2). No reembolso total ou parcial nas condições da lei, a matéria coletável é 2/5 do rendimento, tributado autonomamente a 20%, ou seja 8% efetivos (art. 21.º, n.º 3 b)). Reembolso fora das situações legais: a dedução é devolvida com mais 10% por cada ano decorrido, salvo após 5 anos (art. 21.º, n.º 4), e o rendimento paga 21,5% (art. 21.º, n.º 5) |
+| PPR (Plano Poupança Reforma) | Dedução à coleta de 20% das entregas, com limite por idade (EBF art. 21.º, n.º 2). No reembolso total ou parcial nas condições da lei, a matéria coletável é 2/5 do rendimento, tributado autonomamente a 20%, ou seja 8% efetivos (art. 21.º, n.º 3 b)). Reembolso que não seja por morte nem ocorra numa das situações legais depois de pelo menos 5 anos contados de cada entrega: as deduções são devolvidas à coleta com mais 10% por cada ano ou fração (art. 21.º, n.º 4). Reembolso fora das situações legais: o rendimento paga 21,5% (art. 21.º, n.º 5) |
 | Juros de depósitos | Taxa liberatória de 28% ou opção pelo englobamento (CIRS art. 71.º, n.os 1 e 9). Englobamento compensa se a taxa marginal for inferior a 28% |
 | Dividendos (sociedades portuguesas) | Taxa liberatória de 28%. Se optar pelo englobamento, apenas 50% entram no rendimento (art. 40.º-A, n.º 1): no escalão máximo, 50% × 48% = 24%, antes da taxa de solidariedade |
 | Mais-valias: valores mobiliários | Taxa autónoma de 28% sobre o saldo (art. 72.º, n.º 1 c)); exclusão de 10%, 20% ou 30% do ganho para títulos e fundos detidos mais de 2, 5 ou 8 anos (art. 43.º, n.º 5). Englobamento opcional (art. 72.º, n.º 13); obrigatório para ganhos de ativos detidos menos de 365 dias quando o rendimento coletável, incluindo o ganho, atinge o último escalão (art. 72.º, n.º 14). Menos-valias: Secção 5 |
@@ -285,7 +290,7 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 
 ### Reinvestimento em Habitação Própria Permanente
 
-- **Reinvestimento em Habitação Própria Permanente**: o ganho na venda da habitação própria e permanente é excluído se o valor de realização, deduzido do empréstimo amortizado, for reinvestido noutra habitação própria e permanente (ou terreno e construção, ampliação ou melhoramento) entre os 24 meses anteriores e os 36 meses posteriores à venda, e se a intenção de reinvestir for declarada na declaração do ano da venda _(CIRS art. 10.º, n.º 5)_. Reinvestimento parcial: exclusão proporcional _(art. 10.º, n.º 12)_. Condições sobre a localização (Portugal ou UE/EEE), o uso como domicílio fiscal e a regra de 2026 a 2029 para reinvestimento em habitação arrendada: ver `pt-irs-employees-investment`.
+- **Reinvestimento em Habitação Própria Permanente**: o ganho na venda da habitação própria e permanente é excluído se o valor de realização, deduzido do empréstimo amortizado, for reinvestido noutra habitação própria e permanente (ou terreno e construção, ampliação ou melhoramento) entre os 24 meses anteriores e os 36 meses posteriores à venda, e se a intenção de reinvestir for declarada na declaração do ano da venda _(CIRS art. 10.º, n.º 5, alíneas a) a c))_. O imóvel vendido tem de ter sido a habitação própria e permanente, comprovada pelo domicílio fiscal, nos 12 meses anteriores à venda (ou ao reinvestimento, se anterior) _(art. 10.º, n.º 5 e))_, e o imóvel comprado tem de ser afeto à habitação própria e permanente até 12 meses após o reinvestimento _(art. 10.º, n.º 6 a))_. Reinvestimento parcial: exclusão proporcional _(art. 10.º, n.º 12)_. Condições sobre a localização (Portugal ou UE/EEE), o uso como domicílio fiscal e a regra de 2026 a 2029 para reinvestimento em habitação arrendada: ver `pt-irs-employees-investment`.
 
 ## Secção 10: Linhas Vermelhas (Cláusula Anti-Abuso e Riscos de Inspeção)
 
@@ -383,7 +388,7 @@ expected:
 1. **Separada:** A: 46.566 × 26,472% + (60.000 - 46.566) × 44,60% = €18.318,52. B: 8.342 × 12,50% + (10.000 - 8.342) × 15,70% = €1.303,06. Total €19.621,58.
 2. **Conjunta:** 70.000 / 2 = €35.000. Imposto sobre metade: 29.397 × 20,579% + (35.000 - 29.397) × 34,90% = €8.005,06. Vezes dois: €16.010,12. **A tributação conjunta poupa €3.611,46** neste caso.
 3. **Se o Cônjuge B aufere €0:** conjunta: 60.000 / 2 = €30.000; 29.397 × 20,579% + 603 × 34,90% = €6.260,06; vezes dois €12.520,12. Separada: €18.318,52. **A tributação conjunta poupa €5.798,40.**
-4. Antes de optar, refazer a comparação com as deduções à coleta: na tributação separada cada cônjuge tem os seus limites, e o limite global do art. 78.º, n.º 7, muda com o rendimento coletável.
+4. Antes de optar, refazer a comparação com as deduções à coleta e o mínimo de existência (art. 70.º), que o exemplo não inclui: na tributação separada cada cônjuge tem os seus limites, e o limite global do art. 78.º, n.º 7, muda com o rendimento coletável.
 
 ```oa-check
 name: PT couple 60,000 and 10,000 taxable, joint vs separate, 2026 bands
@@ -445,11 +450,11 @@ expected:
 
 ### Exemplo 4: Reinvestimento em Habitação Própria Permanente
 
-**Venda em 2026 da habitação própria e permanente por €300.000, comprada em 2025 por €200.000 e usada como domicílio fiscal desde a compra. Sem empréstimo. Outro rendimento coletável do vendedor: €30.000. Sem correção monetária (detida menos de 24 meses).**
+**Venda em junho de 2026 da habitação própria e permanente por €300.000, comprada em março de 2025 por €200.000 e usada como domicílio fiscal desde a compra (mais de 12 meses antes da venda, art. 10.º, n.º 5 e)). Sem empréstimo. Outro rendimento coletável do vendedor: €30.000. Sem correção monetária: detida menos de 24 meses (art. 50.º, n.º 1).**
 
 1. Mais-valia €100.000; 50% incluído = €50.000 (art. 43.º, n.º 2 b)). Rendimento coletável passa de €30.000 para €80.000.
 2. IRS sobre €30.000: €6.260,06. IRS sobre €80.000: 46.566 × 26,472% + (80.000 - 46.566) × 44,60% = €27.238,52. Imposto adicional da venda: **€20.978,46**. (Sem taxa de solidariedade: aplica-se só acima de €80.000.)
-3. Reinvestir os €300.000 em nova habitação própria e permanente dentro do prazo e declarar a intenção: **€0 de imposto** sobre a venda (art. 10.º, n.º 5).
+3. Reinvestir os €300.000 em nova habitação própria e permanente dentro do prazo, declarar a intenção e morar nela no prazo de 12 meses: **€0 de imposto** sobre a venda (art. 10.º, n.os 5 e 6).
 4. Reinvestimento parcial de €200.000 (2/3 do valor de realização): exclui-se a parte proporcional (art. 10.º, n.º 12). Fica tributado 1/3 do ganho: 100.000 / 3 × 50% = €16.666,67 incluídos. IRS sobre €46.666,67: 46.566 × 26,472% + 100,67 × 44,60% = €12.371,85; imposto adicional **€6.111,79**.
 
 ```oa-check
@@ -524,7 +529,11 @@ expected:
 | CIRC art. 48, reinvestment of gains | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc48.aspx | 2026-10-30 |
 | CIRC art. 34, car depreciation cap | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc34.aspx | 2026-10-30 |
 | CIRC art. 66, controlled foreign companies | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc66.aspx | 2026-10-30 |
-| Decreto Regulamentar 25/2009 (AT copy; tables not reproduced) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/outros_diplomas/Documents/Dec_Regulamentar25_2009.pdf | 2026-10-30 |
+| Decreto Regulamentar 25/2009 (AT copy with amendment history; tables not reproduced) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/outros_diplomas/Documents/Dec_Regulamentar25_2009.pdf | 2026-10-30 |
+| Decreto Regulamentar 25/2009, original text in the Diário da República (Tabela II rates) | https://files.diariodarepublica.pt/1s/2009/09/17800/0627006285.pdf | 2026-10-30 |
+| Lei 82-D/2014, art. 23 (code 2250, 8%) and art. 24 (Portaria 467/2010 car caps) | https://files.diariodarepublica.pt/1s/2014/12/25202/0032000338.pdf | 2026-10-30 |
+| Portaria 467/2010, art. 1(4), car cost caps (AT consolidated copy) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_467-2010.pdf | 2026-10-30 |
+| CIRS art. 50, inflation correction after 24 months | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs50.aspx | 2026-10-30 |
 | CIVA art. 53, small-business exemption EUR 15,000 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx | 2026-10-30 |
 | CIVA art. 58, end of exemption, 25% margin | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva58.aspx | 2026-10-30 |
 | CIVA art. 18, mainland VAT rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx | 2026-10-30 |
@@ -534,9 +543,9 @@ expected:
 | EBF art. 21, PPR | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf-artigo-21-ordm-.aspx | 2026-10-30 |
 | LGT art. 38, general anti-abuse clause | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt38.aspx | 2026-10-30 |
 | CPPT art. 63, anti-abuse procedure | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cppt/Pages/cppt63.aspx | 2026-10-30 |
-| Segurança Social, Guia Prático, Trabalhadores Independentes (2026: IAS EUR 537.13, 21.4%, 25.2%, 70%/20%, EUR 20 minimum, ceiling EUR 6,445.56, 4 x IAS exemption, 12-month start, payment 10th to 20th, 25% option) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-30 |
+| Segurança Social, Guia Prático, Trabalhadores Independentes (2026: IAS EUR 537.13, 21.4%, 25.2%, 70%/20%, EUR 20 minimum, ceiling EUR 6,445.56, 4 x IAS exemption, organised-accounts base 1/12 of profit with EUR 805.70 minimum, 12-month start, payment 10th to 20th, 25% option) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-30 |
 
-Not yet confirmed: the depreciation rates by asset class in Tabela II of Decreto Regulamentar 25/2009 (the old version gave commercial buildings 2%, industrial buildings 5%, office furniture 12.5%, computer equipment 33.33%, software 33.33%, light passenger cars 25%, basic equipment 10% to 20%; AT's copy read today does not reproduce the tables); the car cost caps of Portaria 467/2010 as amended (the old version gave EUR 62,500 for electric and EUR 37,500 for other cars; not read); the "50% reduction in months 13 to 24" of self-employed contributions (not found in the Guia Prático read today); hiring a spouse as an employee as an alternative to the spouse cover (not reviewed); the donations deduction in the EBF (the old version said "up to 15% of the tax"; not read); the deadline for reporting household composition to AT (the old version said March; not read); the Código do Trabalho rules on false self-employment; the rule-of-thumb that incorporation pays above about EUR 60,000 to 80,000 of profit (no official source; replaced by a method); Azores and Madeira VAT rates are taken from `portugal-vat-return` and were not re-read today; the IRC derrama and autonomous taxation figures are in `pt-corporate-tax` and were not re-read today.
+Not yet confirmed: the "50% reduction in months 13 to 24" of self-employed contributions (not found in the Guia Prático read today); hiring a spouse as an employee as an alternative to the spouse cover (not reviewed); the donations deduction in the EBF (the old version said "up to 15% of the tax"; not read); the deadline for reporting household composition to AT (the old version said March; not read); the Código do Trabalho rules on false self-employment; the rule-of-thumb that incorporation pays above about EUR 60,000 to 80,000 of profit (no official source; replaced by a method); Azores and Madeira VAT rates are taken from `portugal-vat-return` and were not re-read today; the IRC derrama and autonomous taxation figures are in `pt-corporate-tax` and were not re-read today.
 
 ## Aviso Legal
 
