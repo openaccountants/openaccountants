@@ -47,13 +47,15 @@ Rules below apply to annual accounts filed in 2026. Each line names its source; 
 | Small companies | May use the abbreviated scheme (verkort schema / schéma abrégé), annex 4 | WVV art. 3:2; KB WVV art. 3:83 to 3:85 |
 | Micro companies | May use the micro scheme (microschema / schéma micro), built on the abbreviated layout | WVV art. 3:3; KB WVV art. 3:86 to 3:88 |
 | Groups (consolidated accounts) | A parent that controls one or more subsidiaries prepares consolidated accounts and a consolidated management report, unless exempt | WVV art. 3:23, 3:25, 3:26 |
+| Listed groups | Consolidated accounts under EU-adopted IFRS, where the parent's securities are admitted to trading on an EU regulated market at the balance sheet date | EU Regulation 1606/2002, art. 4 |
+| Other groups | Belgian consolidation rules in the KB WVV (art. 3:104 § 1); the board may instead choose EU-adopted IFRS for the consolidated accounts, and that choice cannot be undone | KB WVV art. 3:104 |
 
 - Unlisted small companies and micro companies may also publish in the abbreviated or micro form (WVV art. 3:11).
 - Belgian accounting law differs from IFRS: for example "non-recurring" items are shown inside operating and financial results, revaluations go to a separate equity heading, and development costs and goodwill are written off over at most 10 years where the life cannot be estimated (KB WVV annex 3; art. 3:35, 3:39). See [belgium-bookkeeping](belgium-bookkeeping.md) for the valuation rules.
 
 ## Section 3 -- Size Thresholds
 
-Criteria in force for financial years from 2024 (WVV art. 1:24 and 1:25, amounts set by the Law of 28 March 2024, in force 8 April 2024).
+Criteria in force for financial years starting after 31 December 2023 (WVV art. 1:24 and 1:25, amounts set by art. 147 to 149 of the Law of 28 March 2024, in force 8 April 2024; art. 170 of that law applies them to financial years starting after 31 December 2023).
 
 ### Small company (art. 1:24)
 
@@ -133,8 +135,10 @@ Criteria in force for financial years from 2024 (WVV art. 1:24 and 1:25, amounts
 | 10 | Kapitaalsubsidies (capital grants) | Equity account 15, with deferred tax under item 7 | MAR; KB WVV art. 3:54 |
 | 11 | Oprichtingskosten (formation expenses) | Written off by at least 20% a year if capitalised | KB WVV art. 3:37 |
 | 12 | Goodwill and development costs | At most 10 years where the useful life cannot be estimated; goodwill write-offs never reversed | KB WVV art. 3:39 |
+| 13 | Vakantiegeld and eindejaarspremie (holiday pay, year-end bonus) | Pay, allowances and other social benefits to be paid in a later year for services performed in this year or earlier years are charged to this year, as is the estimated income tax on the result | KB WVV art. 3:11, second paragraph |
+| 14 | Risks and losses known after year-end | All foreseeable risks, possible losses and falls in value of the year or earlier years are taken into account, even if they become known only between the balance sheet date and the date the board draws up the accounts | KB WVV art. 3:11, first paragraph |
 
-Holiday pay, the year-end bonus and foreign currency translation are on the "Not yet confirmed" line: no rule specific to them was read. The investment deduction is a tax item: see [be-corporate-tax](be-corporate-tax.md).
+The method used to translate foreign-currency assets, debts and commitments is stated in the valuation rules in the notes (KB WVV art. 3:12); the translation rules themselves are on the "Not yet confirmed" line. The investment deduction is a tax item: see [be-corporate-tax](be-corporate-tax.md).
 
 ## Section 6 -- Resultatenrekening Format (P&L)
 
@@ -327,7 +331,7 @@ expected:
 
 ### Mandatory appointment of a commissaris (statutory auditor)
 
-- **Who needs one.** The audit chapter (WVV art. 3:72 and following) applies to every company except: general and limited partnerships and EEIGs whose unlimited partners are all natural persons; unlisted small companies (art. 1:24), each company judged separately, unless it belongs to a group that must prepare and publish consolidated accounts; and certain recognised agricultural partnerships (WVV art. 3:72). Listed companies, public-interest entities (art. 1:12, 5°) and credit institutions and insurers are always covered (same article, opening words).
+- **Who needs one.** The audit chapter (WVV art. 3:72 and following) applies to every company except: general and limited partnerships and EEIGs whose unlimited partners are all natural persons; unlisted small companies (art. 1:24), each company judged separately, unless it belongs to a group that must prepare and publish consolidated accounts; and certain recognised agricultural partnerships (WVV art. 3:72). Insurers and credit institutions (art. 3:1 § 3, 1° and 2°), the institutions in art. 1:12, 5° (central securities depositories and their support institutions) and stockbroking firms are always covered (same article, opening words). The small-company exemption in 2° covers unlisted small companies, and small companies that are not public-interest entities under art. 1:12, 2° (securities admitted to a regulated market).
 - **In practice:** a large company (more than one small criterion exceeded, two years running) must appoint a commissaris.
 
 **Large company test for audit** (WVV art. 1:24 § 1)
@@ -368,8 +372,10 @@ expected:
 | NBB, Welke taal | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wanneer-en-hoe-neerleggen/welke-taal | 2026-10-30 |
 | NBB, Andere neer te leggen documenten | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wat-neerleggen/andere-neer-te-leggen-documenten | 2026-10-30 |
 | NBB, Belgische vennootschappen (who files, liquidation) | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wie-moet-neerleggen/belgische-vennootschappen | 2026-10-30 |
+| Law of 28 March 2024 (justice digitalisation and various provisions), art. 147 to 149 (size criteria) and 170 (first financial year) | https://www.ejustice.just.fgov.be/eli/wet/2024/03/28/2024002950/staatsblad | 2026-10-30 |
+| EU Regulation 1606/2002 on international accounting standards, art. 4 | https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32002R1606 | 2026-10-30 |
 
-Not yet confirmed: that listed groups must use IFRS for consolidated accounts and unlisted groups may choose (EU Regulation 1606/2002 and the Belgian consolidation rules were not read); the full item lists of the notes under KB WVV art. 3:82 and 3:85 (only the micro list in art. 3:88 was read in full); provisions for holiday pay and the year-end bonus, and the treatment of foreign-currency items (CBN guidance not read); the works-council threshold of 100 workers (the Law of 20 September 1948 was not read); whether the social balance sheet must be filed by companies with no staff; the 2025 version's statements that a correction can be filed within 2 months and that the accounts may be filed in German in the German-speaking area (the language rule was read only as "the language of the language area").
+Not yet confirmed: the full item lists of the notes under KB WVV art. 3:82 and 3:85 (only the micro list in art. 3:88 was read in full); how foreign-currency items are translated and how unrealised exchange gains and losses are treated in the company accounts (CBN guidance not read); the works-council threshold of 100 workers (the Law of 20 September 1948 was not read); whether the social balance sheet must be filed by companies with no staff; the 2025 version's statements that a correction can be filed within 2 months and that the accounts may be filed in German in the German-speaking area (the language rule was read only as "the language of the language area").
 
 ## Disclaimer
 
