@@ -23,6 +23,7 @@ Ukraine taxes a company on its profit for the year. The profit is the accounting
 - **Simplified-regime payers are out.** Businesses on the single tax (спрощена система, TCU section XIV chapter 1) do not pay corporate income tax (art. 133.5). They still withhold tax on Ukrainian-source payments to non-residents (art. 133.1.4, art. 137.5 "г" and "ґ"). The single tax is in `ua-single-tax`.
 - **Non-profit organisations are out** if they meet art. 133.4 and are entered in the Register of non-profit institutions and organisations (art. 133.4, 133.4.5).
 - **Diia City residents** may choose to pay tax "on special conditions": 9% on distributions and other listed payments instead of tax on annual profit (art. 136.8, 141.9-1). This skill names the regime only; its base rules are not covered here.
+- **Defence City residents** may apply once to have their profit exempt from corporate income tax, from the first day of the next quarter, until 1 January 2036 or the year Ukraine joins the EU if earlier. Conditions: Defence City status, not a Diia City resident, no dividends paid except to the state or wholly state-owned companies, and no breach of the art. 39 and 39-2 reporting duties. The exempt profit must be invested in the listed development purposes (fixed assets, production facilities, technology, IP for state defence contracts) by 31 December of the following year, or tax is due on the unused part. These payers file quarterly (section XX, subsection 10, point 76.1). This skill names the regime only.
 - **Military levy.** The military levy payers listed in TCU section XX, subsection 10, point 16-1 are individuals (art. 162.1) and single-tax payers. A company paying corporate income tax is not on that list, so the levy is not charged on company profit. The levy on salaries and dividends paid to individuals is in `ua-payroll` and `ua-income-tax`.
 
 ## Rates, bands and thresholds
@@ -116,6 +117,8 @@ Ukraine taxes a company on its profit for the year. The profit is the accounting
 | Penalty interest (пеня) on late payment | 120% a year of the National Bank of Ukraine discount rate, for each day late including the day of payment | art. 129.4 |
 | Penalty interest on self-corrected amounts | 100% a year of the NBU discount rate, from the 91st day after the payment deadline | art. 129.1.3, 129.4 |
 
+**Martial law, self-correction.** From 1 August 2023 until martial law ends, a company that self-corrects an understatement under art. 50 pays no art. 50.1 fine and no penalty interest (section XX, subsection 10, point 69.38). The 3% and 5% rows above apply again once martial law ends.
+
 **Martial law.** A company that cannot file or pay on time because of martial law is released from liability, but must meet the obligation within six months after martial law ends or is lifted (section XX, subsection 10, point 69.1). A company that can file and pay on time does not get this relief.
 
 ## Cross-border points
@@ -190,7 +193,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Tax Code of Ukraine (Податковий кодекс України), Law No. 2755-VI, consolidated text with amendments up to Law No. 4967-IX of 3 Sep 2026: arts. 14.1.24, 39.2.1.7, 44.3, 46.2, 49.18, 49.20, 50.1, 57.1, 57.1-1, 103.2-103.4, 120, 123, 124, 125-1, 129, 133, 134.1.1, 136, 137.4, 137.5, 137.9, 138, 140.2, 140.4, 140.5.4, 140.5.9, 141.4, 141.9-1, 141.14; section XX subsection 4 points 4-2, 68, 70, 72, 73; subsection 10 points 16-1, 69.1 | https://zakon.rada.gov.ua/laws/show/2755-17 | 2026-10-30 (zakon.rada.gov.ua timed out from our network, and again by curl and a browser tab at review on 30 Oct 2026; official text read via web.archive.org capture of 12 Oct 2026, https://web.archive.org/web/20261012050950/https://zakon.rada.gov.ua/laws/show/2755-17/print) |
+| Tax Code of Ukraine (Податковий кодекс України), Law No. 2755-VI, consolidated text with amendments up to Law No. 4967-IX of 3 Sep 2026: arts. 14.1.24, 39.2.1.7, 44.3, 46.2, 49.18, 49.20, 50.1, 57.1, 57.1-1, 103.2-103.4, 120, 123, 124, 125-1, 129, 133, 134.1.1, 136, 137.4, 137.5, 137.9, 138, 140.2, 140.4, 140.5.4, 140.5.9, 141.4, 141.9-1, 141.14; section XX subsection 4 points 4-2, 68, 70, 72, 73; subsection 10 points 16-1, 69.1, 69.38, 76.1 | https://zakon.rada.gov.ua/laws/show/2755-17 | 2026-10-30 (zakon.rada.gov.ua timed out from our network, and again by curl and a browser tab at review on 30 Oct 2026; official text read via web.archive.org capture of 12 Oct 2026, https://web.archive.org/web/20261012050950/https://zakon.rada.gov.ua/laws/show/2755-17/print) |
 | State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
 
 Not yet confirmed: the NBU discount rate that drives penalty interest in 2026; treaty withholding rates; the corporate income tax return form and its annexes (Ministry of Finance order not read); the full Diia City special-conditions base; the bank rate for 2027 and later; any amendment after the 12 October 2026 archive capture.
