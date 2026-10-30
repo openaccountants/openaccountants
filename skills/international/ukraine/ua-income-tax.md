@@ -1,7 +1,7 @@
 ---
 name: ua-income-tax
 description: "Ukrainian personal income tax (податок на доходи фізичних осіб, ПДФО) and the 5% military levy for every individual, tax year 2026, under section IV of the Tax Code of Ukraine. Covers residents and non-residents; salary and civil-law fees withheld by tax agents; the tax social benefit; interest, dividends (5% and 9%), investment profit, rent, property and car sales, gifts and inheritance; foreign income and foreign tax credit; sole proprietors on the general system (net profit, deductible expenses, depreciation, quarterly advances); independent professionals; the annual declaration due 1 May, payment by 1 August, the tax discount and refunds; penalties. Trigger on: Ukraine income tax, ПДФО, декларація про майновий стан і доходи, податкова знижка, ФОП загальна система, military levy Ukraine. Out of scope: single tax (ua-single-tax), crypto (ua-crypto-tax), ЄСВ (ua-social-contributions), employer payroll (ua-payroll), residence and treaties (ua-cross-border), companies (ua-corporate-income-tax)."
-version: 0.2
+version: 1.1
 jurisdiction: UA
 tax_year: 2026
 last_updated: 2026-10-30
