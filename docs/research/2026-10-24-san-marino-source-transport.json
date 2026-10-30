@@ -1,0 +1,305 @@
+{
+  "purpose": "HTTP/source-identity observations only. A resolving URL or matching full-file hash does not establish whole-law review, current amendment completeness, taxpayer eligibility or live filing.",
+  "source_checkpoint": "4d6678ca7cc9a0655f28ad9c2bf9d9371f0a193d",
+  "checked_urls": 18,
+  "results": [
+    {
+      "url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0",
+      "referenced_by": [
+        "sm-cross-border.md",
+        "sm-transfer-pricing.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:24.937524+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0",
+      "content_type": "application/pdf",
+      "bytes": 208413,
+      "raw_sha256": "3df5a20303498f924ee45a5cc0a21461eb26a91c5a89ecf13098a7297696d462",
+      "magic": "%PDF-1.4",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538",
+      "referenced_by": [
+        "sm-vat-gst.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:24.939668+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538",
+      "content_type": "application/pdf",
+      "bytes": 238088,
+      "raw_sha256": "9198273eba5a15d18b86be252c8acdea2760176f76456a1632e5ef0638493d2d",
+      "magic": "%PDF-1.4",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33",
+      "referenced_by": [
+        "sm-corporate-income-tax.md",
+        "sm-cross-border.md",
+        "sm-income-tax.md",
+        "sm-payroll-social.md",
+        "sm-tax-overview.md",
+        "sm-transfer-pricing.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:24.939903+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33",
+      "content_type": "application/pdf",
+      "bytes": 198339,
+      "raw_sha256": "5be329c273f1462c7b57a33e81d81050185182a61f76671d39255292f1638881",
+      "magic": "%PDF-1.4",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=e54431a0e32f941616323ba3300c13a32828e853",
+      "referenced_by": [
+        "sm-vat-gst.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:24.943020+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=e54431a0e32f941616323ba3300c13a32828e853",
+      "content_type": "application/pdf",
+      "bytes": 196975,
+      "raw_sha256": "5f66c378c1c86ef06207b32e8b08e1b0b14594b976f80582c4047430cd417743",
+      "magic": "%PDF-1.4",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.consigliograndeegenerale.sm/contents/instance18/files/document/19029leggi_2560.pdf",
+      "referenced_by": [
+        "sm-vat-gst.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:24.943464+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.consigliograndeegenerale.sm/contents/instance18/files/document/19029leggi_2560.pdf",
+      "content_type": "application/pdf",
+      "bytes": 71329,
+      "raw_sha256": "9e520020b95448dbc94d143c1ad929042513b2a556e7c90f6f50f4f55a4cb1a1",
+      "magic": "%PDF-1.4",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html",
+      "referenced_by": [
+        "sm-company-formation.md",
+        "sm-corporate-income-tax.md",
+        "sm-cross-border.md",
+        "sm-income-tax.md",
+        "sm-payroll-social.md",
+        "sm-tax-overview.md",
+        "sm-transfer-pricing.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:24.946361+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html",
+      "content_type": "application/download_zip",
+      "bytes": 2628515,
+      "raw_sha256": "0901777ac682f9d719ef5cd9b75a3409f52da085670c91e36ea79c91165ff86d",
+      "magic": "PK\u0003\u0004\u0014\u0000\u0000\u0000",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.consigliograndeegenerale.sm/on-line/documento17113696.html",
+      "referenced_by": [
+        "sm-company-formation.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:25.353789+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.consigliograndeegenerale.sm/on-line/documento17113696.html",
+      "content_type": "application/download_zip",
+      "bytes": 5740940,
+      "raw_sha256": "07e213846e9f5f88607dbacaef1b93d8860fe91521f8710191725315adab4047",
+      "magic": "PK\u0003\u0004\u0014\u0000\u0000\u0000",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17021434.html",
+      "referenced_by": [
+        "sm-vat-gst.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:25.793113+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17021434.html",
+      "content_type": "application/pdf",
+      "bytes": 34852,
+      "raw_sha256": "f8dea1e7b0130f07102c643d40dee29aad5818915754d4f853148dabbf4e99a6",
+      "magic": "%PDF-1.4",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html",
+      "referenced_by": [
+        "sm-vat-gst.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:25.806247+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html",
+      "content_type": "application/pdf",
+      "bytes": 69694,
+      "raw_sha256": "3552dce9dddfa06c71fe8433f9550a4f601fd7cf879eb611d486cfe89b037752",
+      "magic": "%PDF-1.4",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html",
+      "referenced_by": [
+        "sm-vat-gst.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:25.964131+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html",
+      "content_type": "application/pdf",
+      "bytes": 22983,
+      "raw_sha256": "d6137ce89f82cc985e0c346be611f6b173fcba7e20a4ceb94efd376738df5ab7",
+      "magic": "%PDF-1.4",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17132480.html",
+      "referenced_by": [
+        "sm-company-formation.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:25.998976+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17132480.html",
+      "content_type": "application/pdf",
+      "bytes": 282337,
+      "raw_sha256": "4f032d3ba066d3ec1ab1106030165fc2b1fbba2b0b374ac3aa56136dfaedc444",
+      "magic": "%PDF-1.5",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html",
+      "referenced_by": [
+        "sm-corporate-income-tax.md",
+        "sm-cross-border.md",
+        "sm-income-tax.md",
+        "sm-payroll-social.md",
+        "sm-tax-overview.md",
+        "sm-transfer-pricing.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:26.237264+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html",
+      "content_type": "application/pdf",
+      "bytes": 420785,
+      "raw_sha256": "274ef75aa5da81c8c0e10be9a87bda3246a8eb3867de515ba2aba42a9154ba18",
+      "magic": "%PDF-1.7",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html",
+      "referenced_by": [
+        "sm-vat-gst.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:26.270871+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html",
+      "content_type": "application/pdf",
+      "bytes": 21481,
+      "raw_sha256": "8e3ad9d943239739fe216ad13283469868efc214f34d0393233392e7f6a2e8b9",
+      "magic": "%PDF-1.4",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.finanze.sm/pub2/FinanzeSM/FISCALITA-NAZIONALE.html",
+      "referenced_by": [
+        "sm-vat-gst.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:26.334950+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.finanze.sm/pub2/FinanzeSM/FISCALITA-NAZIONALE.html",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 18699,
+      "raw_sha256": "9853bb7a7145c7544720838f0f34a886c2f90c300a41f8482607f09165a08000",
+      "magic": "<!DOCTYP"
+    },
+    {
+      "url": "https://www.finanze.sm/pub2/dam/jcr%3Ac7b6c29b-5894-4a96-914b-00785958a63a/Circolare%20n.1-2026.pdf",
+      "referenced_by": [
+        "sm-cross-border.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:26.421185+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.finanze.sm/pub2/dam/jcr%3Ac7b6c29b-5894-4a96-914b-00785958a63a/Circolare%20n.1-2026.pdf",
+      "content_type": "application/pdf;charset=UTF-8",
+      "bytes": 275200,
+      "raw_sha256": "23997e3d5a51aa1d645205b90f783379d7b5fff87e24a5ec86b56d1f3c0b5d59",
+      "magic": "%PDF-1.6",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.gazzettaufficiale.it/eli/id/2021/07/15/21A04244/SG",
+      "referenced_by": [
+        "sm-vat-gst.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:26.423670+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.gazzettaufficiale.it/eli/id/2021/07/15/21A04244/SG",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 17273,
+      "raw_sha256": "f888501097fc2d3abd6221580a825f55f6b52e30a41c6f400a42ae0554514b82",
+      "magic": "\n\n\n\n\n\n\n\n"
+    },
+    {
+      "url": "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html",
+      "referenced_by": [
+        "sm-income-tax.md",
+        "sm-payroll-social.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:26.612921+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html",
+      "content_type": "application/pdf",
+      "bytes": 3136289,
+      "raw_sha256": "7b6c1a321a75dd029aa19585b1f8745ac4c43ef0ec1832003634b21df4fc5ad3",
+      "magic": "%PDF-1.4",
+      "same_bytes_as_retained_source": true
+    },
+    {
+      "url": "https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1",
+      "referenced_by": [
+        "sm-income-tax.md",
+        "sm-payroll-social.md"
+      ],
+      "checked_at_utc": "2026-10-24T12:26:26.688981+00:00",
+      "curl_exit": 0,
+      "http_status": 200,
+      "final_url": "https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 11696,
+      "raw_sha256": "4c326af9a22b987f12e5f12424db4237ac16cf21ead9d959558c78b6433bee88",
+      "magic": "<html la"
+    }
+  ],
+  "country_source_sha256_after_correction": {
+    "skills/international/san-marino/README.md": "f06f21f141c5c5130cf2d12184923b18913e556734da4a9afc7d83398f5202d5",
+    "skills/international/san-marino/sm-company-formation.md": "3213f2f7c3bb1bd07637f75cd1fdd5f979dff0a78922f45f9200448e0fc54e25",
+    "skills/international/san-marino/sm-corporate-income-tax.md": "1581fbd03fc673d65d9e272ede646557ff45bf6b46a811ed5d33ad66daa011b8",
+    "skills/international/san-marino/sm-cross-border.md": "4d09329515cad5079999890ad51f1c286bd6b1127ddfd322483a1a66a281593a",
+    "skills/international/san-marino/sm-income-tax.md": "744e4e44d8b55ffcd8162432fd24ee1a3b4165d10226b5391b978225766ecfb6",
+    "skills/international/san-marino/sm-payroll-social.md": "ffb9144b818dffa6743bd9c80e06bfe12e7eb3f924b1d8eb64ab1770e3408afe",
+    "skills/international/san-marino/sm-tax-overview.md": "b26e78811b5197e0da66839e7083b413c93eb5ecb14a8be9a5326ad33121c181",
+    "skills/international/san-marino/sm-transfer-pricing.md": "ef783b5a2be4a92b95d39915bb89e1ba0ca31ddf50f14b1da338728a87db6c7d",
+    "skills/international/san-marino/sm-vat-gst.md": "02f7b3d952ff36c2d2a0a65bc1ae8c5ad1a349a1fe951c65d990f4b46b497154"
+  },
+  "identity_map_limit": "Country byte identities only; original HTTP check times and original source checkpoint remain historical, not refreshed legal or source-transport checks."
+}
