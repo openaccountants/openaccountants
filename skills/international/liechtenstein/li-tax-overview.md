@@ -13,16 +13,16 @@ description: >
   not proof of completeness.
 jurisdiction: LI
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.2
+version: 0.3
 ---
 
-# Liechtenstein tax overview v0.2
+# Liechtenstein tax overview v0.3
 
 Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
 
@@ -44,9 +44,9 @@ The earlier summary's rates/deadlines, Swiss-derived payroll/VAT assumptions and
 
 ## Evidence and unresolved work
 
-The country batch was prepared on `codex/liechtenstein-country-completion` under [issue #406](https://github.com/openaccountants/openaccountants/issues/406). Preserve the original six Guides and research history; the missing TP and XB methods have been added in this batch. This router intentionally has no calculation blocks because it supplies no independent tax formula.
+The original country batch was prepared on `codex/liechtenstein-country-completion` under [issue #406](https://github.com/openaccountants/openaccountants/issues/406). Preserve the original six Guides and research history; the missing TP and XB methods have been added in this batch. This router intentionally has no calculation blocks because it supplies no independent tax formula.
 
-No named local accountant review, complete tax-domain coverage, filing acceptance or production ingestion is asserted. The dated independent review record identifies source scope and correction closure. Complete the remaining source/specialist work in README and named local accountant review. The country batch uses one combined content push to consolidated draft PR #514; verify publication and exact-head CI there.
+No named local accountant review, complete tax-domain coverage, filing acceptance or production ingestion is asserted. The dated independent review record identifies source scope and correction closure. The current continuation uses `codex/liechtenstein-persistent` and existing country [PR#785](https://github.com/openaccountants/openaccountants/pull/785), split from historical consolidated PR#514. Complete the remaining ordinary/source questions in README, freeze the whole country, obtain a fresh independent pack review and fix its findings before one country push. Verify exact published-head checks there. The30October writer ledgers and controls do not extend the24October review or supply accountant attestation.
 
 <!-- openaccountants-cta-block -->
 

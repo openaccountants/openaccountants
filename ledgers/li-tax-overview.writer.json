@@ -1,0 +1,274 @@
+{
+  "status": "WRITER LEDGER; FULL INDEPENDENT COUNTRY REVIEW PENDING",
+  "guide": "skills/international/liechtenstein/li-tax-overview.md",
+  "guide_sha256": "cceeca6ee4cdb2ba6f5164da3836efebf72430b4f6046b8b059acd31449e4219",
+  "rules": [
+    {
+      "id": "LI-ROUTE-001",
+      "rule_or_figure": "Route to existing li-income-tax; precise legal rules and gaps remain in target Guide",
+      "classification": "AUTHOR ROUTING; NO INDEPENDENT LEGAL FIGURE",
+      "repository_evidence": "skills/international/liechtenstein/li-income-tax.md",
+      "evidence_sha256": "4d669a8f4f9f845f17081898fe64d1abf85c9c8b5fe7d331b6445068576aa775",
+      "Guide_section": "Start with the question"
+    },
+    {
+      "id": "LI-ROUTE-002",
+      "rule_or_figure": "Route to existing li-corporate-income-tax; precise legal rules and gaps remain in target Guide",
+      "classification": "AUTHOR ROUTING; NO INDEPENDENT LEGAL FIGURE",
+      "repository_evidence": "skills/international/liechtenstein/li-corporate-income-tax.md",
+      "evidence_sha256": "689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b7aa52ec",
+      "Guide_section": "Start with the question"
+    },
+    {
+      "id": "LI-ROUTE-003",
+      "rule_or_figure": "Route to existing liechtenstein-vat; precise legal rules and gaps remain in target Guide",
+      "classification": "AUTHOR ROUTING; NO INDEPENDENT LEGAL FIGURE",
+      "repository_evidence": "skills/international/liechtenstein/liechtenstein-vat.md",
+      "evidence_sha256": "83ed049ad9c373473494f2767b0bd5f373552db647a6ce66107fa276321740e8",
+      "Guide_section": "Start with the question"
+    },
+    {
+      "id": "LI-ROUTE-004",
+      "rule_or_figure": "Route to existing li-payroll-social; precise legal rules and gaps remain in target Guide",
+      "classification": "AUTHOR ROUTING; NO INDEPENDENT LEGAL FIGURE",
+      "repository_evidence": "skills/international/liechtenstein/li-payroll-social.md",
+      "evidence_sha256": "83b50e55564932011270906e7148752e8a424586bf969c2ef633d3f8cc80a747",
+      "Guide_section": "Start with the question"
+    },
+    {
+      "id": "LI-ROUTE-005",
+      "rule_or_figure": "Route to existing li-transfer-pricing; precise legal rules and gaps remain in target Guide",
+      "classification": "AUTHOR ROUTING; NO INDEPENDENT LEGAL FIGURE",
+      "repository_evidence": "skills/international/liechtenstein/li-transfer-pricing.md",
+      "evidence_sha256": "963195bbcb4533061b868a960e16f9abf00cf696c3422da21ece5cb811c5ea18",
+      "Guide_section": "Start with the question"
+    },
+    {
+      "id": "LI-ROUTE-006",
+      "rule_or_figure": "Route to existing li-cross-border; precise legal rules and gaps remain in target Guide",
+      "classification": "AUTHOR ROUTING; NO INDEPENDENT LEGAL FIGURE",
+      "repository_evidence": "skills/international/liechtenstein/li-cross-border.md",
+      "evidence_sha256": "98c5ed4b05ce03aa2435c4313ac425216af3fff1c9c9a344463fb702192608dd",
+      "Guide_section": "Start with the question"
+    },
+    {
+      "id": "LI-ROUTE-007",
+      "rule_or_figure": "Route to existing li-company-formation; precise legal rules and gaps remain in target Guide",
+      "classification": "AUTHOR ROUTING; NO INDEPENDENT LEGAL FIGURE",
+      "repository_evidence": "skills/international/liechtenstein/li-company-formation.md",
+      "evidence_sha256": "d03528182c8b1505f20de300c466cd616c3ca2d65e928f0998ec235dae295aab",
+      "Guide_section": "Start with the question"
+    },
+    {
+      "id": "LI-ROUTE-008",
+      "rule_or_figure": "All7applicable domains remain partial; no accountant attestation or comprehensive coverage",
+      "classification": "AUTHOR WORKFLOW/REPOSITORY STATUS, NOT A TAX RULE",
+      "repository_evidence": "skills/international/liechtenstein/README.md",
+      "Guide_section": "Evidence and unresolved work"
+    },
+    {
+      "id": "LI-ROUTE-009",
+      "rule_or_figure": "Preserve24October exact-scope review; no extension to30October writer drafts",
+      "classification": "AUTHOR WORKFLOW/REPOSITORY STATUS, NOT A TAX RULE",
+      "repository_evidence": "docs/research/2026-10-24-liechtenstein-pack-review.md",
+      "Guide_section": "Evidence and unresolved work"
+    },
+    {
+      "id": "LI-ROUTE-010",
+      "rule_or_figure": "Original6Guides/history retained; added TP/XB and one current country PR785 split from514",
+      "classification": "AUTHOR WORKFLOW/REPOSITORY STATUS, NOT A TAX RULE",
+      "repository_evidence": "skills/international/liechtenstein/README.md",
+      "Guide_section": "Evidence and unresolved work"
+    },
+    {
+      "id": "LI-ROUTE-011",
+      "rule_or_figure": "No standalone calculations/filing outcome; actual inputs/authority evidence first",
+      "classification": "AUTHOR WORKFLOW/REPOSITORY STATUS, NOT A TAX RULE",
+      "repository_evidence": "skills/international/liechtenstein/li-tax-overview.md",
+      "Guide_section": "Evidence and unresolved work"
+    }
+  ],
+  "old_topic_destinations": [
+    {
+      "id": "OLD-001",
+      "old_text": "---\nname: li-tax-overview\ndescription: >\n  Route 2026 Liechtenstein tax questions to the applicable source Guide and\n  country gap register. Use for individual wealth-and-income tax, corporate profit,\n  VAT, payroll/social contributions, transfer pricing, cross-border and formation\n  intake. Identify the person, entity, country and period before choosing a method.\n  This overview replaces the earlier approximate rate/deadline summary with a\n  routing map; it supplies no standalone liability, treaty entitlement or filing\n  instruction. The linked Guides contain the actual rules, sources, calculations\n  and limits. All remain source-cited drafts with partial domain coverage, pending\n  named Liechtenstein accountant review; presence is\n  not proof of completeness.\njurisdiction: LI\ntax_year: 2026\nlast_updated: 2026-10-24\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\ncategory: international\nversion: 0.2\n---",
+      "old_sha256": "d8599e180997447912de456c6afb6e3fdb682eb5cb296a487622babe8a7ea3f0",
+      "old_section": "Metadata",
+      "exact_retained": false,
+      "destination": "Metadata/title version0.2 to0.3 and date30October; protected fields and CTA unchanged"
+    },
+    {
+      "id": "OLD-002",
+      "old_text": "# Liechtenstein tax overview v0.2",
+      "old_sha256": "80644fd371ffb2e28fef1648d5a7f62040f7b2a8c0830ca39863313e16a3d217",
+      "old_section": "Metadata",
+      "exact_retained": false,
+      "destination": "Metadata/title version0.2 to0.3 and date30October; protected fields and CTA unchanged"
+    },
+    {
+      "id": "OLD-003",
+      "old_text": "Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.",
+      "old_sha256": "8e7c827e86c5cc5b9c1043e1196153b994c25a6491ecc03df91b3f07ed5970df",
+      "old_section": "Metadata",
+      "exact_retained": true,
+      "destination": "Current Guide line27"
+    },
+    {
+      "id": "OLD-004",
+      "old_text": "## Start with the question",
+      "old_sha256": "36c4a8353488f112e9686d00b006e04d38ae4c26b9596f1c9d7b14562b764250",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line29"
+    },
+    {
+      "id": "OLD-005",
+      "old_text": "This is a router for the 2026 source-cited country draft, not a standalone tax calculation. Establish legal person/entity, residence and activity countries, dates, income/supply/payment category, existing registrations, records and the authority decision before selecting a workpaper. The [country README](README.md) declares all seven applicable domains partial.",
+      "old_sha256": "4dde9407015b0859e08aeb796aa1732cfa73a36ea0ea9f189d9aeebc2957c759",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line31"
+    },
+    {
+      "id": "OLD-006",
+      "old_text": "| Work | Read first | Key boundary |",
+      "old_sha256": "dcc51e08f3c22521b180321325801d0d25fd5a9138c035afcce8f47bcc690386",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line33"
+    },
+    {
+      "id": "OLD-007",
+      "old_text": "|---|---|---|",
+      "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line34"
+    },
+    {
+      "id": "OLD-008",
+      "old_text": "| Individual income and wealth | [li-income-tax](li-income-tax.md) | Established taxable income/wealth, family tariff and actual annual municipality rate |",
+      "old_sha256": "a383d0c53088abf541432e00497afd9798eaf118d328802a8c75bcf6a9a9b335",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line35"
+    },
+    {
+      "id": "OLD-009",
+      "old_text": "| Corporate profit | [li-corporate-income-tax](li-corporate-income-tax.md) | Tax adjustments, modified equity, losses and minimum-tax eligibility |",
+      "old_sha256": "da014fa1d48d134321fa8d17b7d3665cdb69186255b5de44a880209159fdebbe",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line36"
+    },
+    {
+      "id": "OLD-010",
+      "old_text": "| VAT | [liechtenstein-vat](liechtenstein-vat.md) | Actual authority/registration, supply evidence, deduction entitlement and method |",
+      "old_sha256": "33e4021c708f5590d8e482892d028ba3a6edc875accee17968330f64900debda",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line37"
+    },
+    {
+      "id": "OLD-011",
+      "old_text": "| Employee withholding and insurance | [li-payroll-social](li-payroll-social.md) | Separate tax/social bases, 2026 Liechtenstein rates and coverage |",
+      "old_sha256": "8b8f4fda0d54107c1c8ce6da71efe6ca1854dc6a357fc7c16e9072a3a3fc86dc",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line38"
+    },
+    {
+      "id": "OLD-012",
+      "old_text": "| Related parties and PEs | [li-transfer-pricing](li-transfer-pricing.md) | Actual relationship, documentation route and supported arm's-length method |",
+      "old_sha256": "fe646ea83a872667794339a4378deb8949856d3b5b0825e887996ece283e6639",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line39"
+    },
+    {
+      "id": "OLD-013",
+      "old_text": "| Migration, foreign income and relief | [li-cross-border](li-cross-border.md) | Domestic liability, actual treaty and claim/deferral procedure |",
+      "old_sha256": "75c704d3743493be6ec494ecb7d1c182f13089548c4dfaec2503a856d84859c6",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line40"
+    },
+    {
+      "id": "OLD-014",
+      "old_text": "| Entity setup | [li-company-formation](li-company-formation.md) | Selected form, contributions, actual register/governance and licensing evidence |",
+      "old_sha256": "d13d8573b8d70636627bc8f8c39584c04b06f6094da097781d073b7b856fc007",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line41"
+    },
+    {
+      "id": "OLD-015",
+      "old_text": "The earlier summary's rates/deadlines, Swiss-derived payroll/VAT assumptions and secondary citations remain in Git history. They are not substitutes for the current topic's source check. The [Liechtenstein Tax Administration](https://www.llv.li/de/landesverwaltung/steuerverwaltung) and the [official legislation collection](https://www.gesetze.li) are source entry points; the exact Acts/sections and read limits are linked in each Guide.",
+      "old_sha256": "3779425d9022ada18f3b184e1b1440a263ed293dc451a7c93a89fc45dea6bd5f",
+      "old_section": "Start with the question",
+      "exact_retained": true,
+      "destination": "Current Guide line43"
+    },
+    {
+      "id": "OLD-016",
+      "old_text": "## Evidence and unresolved work",
+      "old_sha256": "550c34cff23de63a3dedab3bfdb4cd8ee218c1145f205241b0f1400027d51e51",
+      "old_section": "Evidence and unresolved work",
+      "exact_retained": true,
+      "destination": "Current Guide line45"
+    },
+    {
+      "id": "OLD-017",
+      "old_text": "The country batch was prepared on `codex/liechtenstein-country-completion` under [issue #406](https://github.com/openaccountants/openaccountants/issues/406). Preserve the original six Guides and research history; the missing TP and XB methods have been added in this batch. This router intentionally has no calculation blocks because it supplies no independent tax formula.",
+      "old_sha256": "9f7ef4e728d358ccbcddf5b249d57574da6dacee5662dcaf1295424ae672054e",
+      "old_section": "Evidence and unresolved work",
+      "exact_retained": false,
+      "destination": "Preserve original branch/history as historical; replace obsolete consolidated PR514 publication instruction with active branch/country PR785 and fresh independent-review-before-push method."
+    },
+    {
+      "id": "OLD-018",
+      "old_text": "No named local accountant review, complete tax-domain coverage, filing acceptance or production ingestion is asserted. The dated independent review record identifies source scope and correction closure. Complete the remaining source/specialist work in README and named local accountant review. The country batch uses one combined content push to consolidated draft PR #514; verify publication and exact-head CI there.",
+      "old_sha256": "e03f8c8dc0c0d94a0f2ad31af670da35d246151bc4523425c47ac71b7641c47b",
+      "old_section": "Evidence and unresolved work",
+      "exact_retained": false,
+      "destination": "Preserve original branch/history as historical; replace obsolete consolidated PR514 publication instruction with active branch/country PR785 and fresh independent-review-before-push method."
+    },
+    {
+      "id": "OLD-019",
+      "old_text": "<!-- openaccountants-cta-block -->",
+      "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "old_section": "Evidence and unresolved work",
+      "exact_retained": true,
+      "destination": "Current Guide line51"
+    },
+    {
+      "id": "OLD-020",
+      "old_text": "---",
+      "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "old_section": "Evidence and unresolved work",
+      "exact_retained": true,
+      "destination": "Current Guide line1"
+    },
+    {
+      "id": "OLD-021",
+      "old_text": "## Talk to an accountant",
+      "old_sha256": "2c053967fa7ab3e0318ae212a61d5f13965c474e336848bbc77f5976214e2dd9",
+      "old_section": "Talk to an accountant",
+      "exact_retained": true,
+      "destination": "Current Guide line55"
+    },
+    {
+      "id": "OLD-022",
+      "old_text": "Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).",
+      "old_sha256": "24f7c27dd7f52c15f0a5a162ce9ed615250f525c513ffb87020f75112cb00ae0",
+      "old_section": "Talk to an accountant",
+      "exact_retained": true,
+      "destination": "Current Guide line57"
+    }
+  ],
+  "explicit_successor_map": {
+    "Evidence and unresolved work": "Preserve original branch/history as historical; replace obsolete consolidated PR514 publication instruction with active branch/country PR785 and fresh independent-review-before-push method."
+  },
+  "quote_binding_failures": [],
+  "remaining": "Source Guide application gaps, independent full-pack review, exact published-head checks and real operational/attestation status; router itself has no independent tax rules."
+}

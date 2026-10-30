@@ -13,16 +13,16 @@ description: >
   and accountant review remain separate requirements.
 jurisdiction: LI
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 0.2
+version: 0.3
 ---
 
-# Liechtenstein company formation and entity screening v0.2
+# Liechtenstein company formation and entity screening v0.3
 
 Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
 
@@ -54,11 +54,30 @@ For GmbH members, article 391 requires at least CHF 50 per member contribution, 
 5. Obtain contribution evidence, required valuation/authentication, signed corporate/organ documents and current authority forms; reconcile the intended register particulars to all documents. Preserve the actual registration decision and register extract. This draft does not establish present portal acceptance, registry fees, beneficial-owner filing particulars or a guaranteed duration.
 6. Start separate tax, VAT, payroll/insurance and accounts workstreams using the topic Guides. The corporate minimum-tax exception and source/management facts must be tested, rather than assuming every formed entity owes the same minimum tax.
 
+### Management evidence is not a residence shortcut
+
+PGR180a(1)–(2) specifies the qualified management/representation member and licence/equivalence routes;180a(3)–(4) contains express supervised/trade/association exceptions, including the stated foundation caveat. Keep the actual qualification/licence or exemption evidence. Article180b separately bars the specified incapable/convicted representatives, including corresponding EEA exclusions, requires a no-exclusion declaration at registration and addresses later resignation/removal of representation. Its specified conviction exclusion lasts five years from the final judgment. A postal address alone proves none of these conditions. [PGR180a–180b][law]
+
 ## Accounts, review and disclosure
 
 PGR article 1064 provides the size criteria and separate first-application/two-period rules. Article 1058a allows the stated commercial micro-companies to waive a review, with exclusions, a unanimous decision, signed declaration/supporting evidence and continuing rights to demand a review. It is not an automatic exemption because one year's turnover is small. Audit/review, the choice of reviewer and an accounting-period change need their own current classification. [PGR, articles 1058a and 1064][law]
 
-Under article 1122(1), the covered company's approved annual accounts and required report must be filed with the Office of Justice **before expiry of the twelfth month after the balance-sheet date**, subject to an actual granted extension and the provision's scope. A valid review waiver affects the required report, not the underlying disclosure obligation. Tax filing and corporate approvals have separate clocks. The fact sheet corroborates the GmbH reporting route; it is not a complete annual-accounts or sustainability Guide. [PGR, article 1122][law]; [fact sheet, sections 10–11][factsheet]
+### Ordinary size and assurance workpaper
+
+For the article1063 entities, establish the exact legal form, financial year, accounting currency and any special article1057/public-interest/disclosure regime before the ordinary tests below. The current Swiss-franc thresholds in PGR1064 are:
+
+| Size class | Balance sheet | Net turnover | Average employees | Test |
+|---|---:|---:|---:|---|
+| Micro | CHF580,000 | CHF1,160,000 |10 | At least two of three not exceeded |
+| Small | CHF9.2million | CHF18.5million |50 | At least two of three not exceeded |
+| Medium | CHF32.4million | CHF64.8million |250 | At least two small limits exceeded and at least two medium limits not exceeded |
+| Large | Above the medium class under the statutory test | As specified | As specified | At least two medium limits exceeded |
+
+These are current PGR1064(1)–(3) figures, with the monetary amendments first applicable to financial years beginning on/after1January2024, as specified in the consolidation's notes1952–1959. Equality is “not exceeded”; it is not a requirement that all three limits be met. Article1064(4) ordinarily requires the conditions at two consecutive balance-sheet dates, with its first-application rule at the first balance-sheet date. Keep the two-year record or the actual first-application basis. Article1064(5) requires prescribed thresholds for non-CHF accounts, not an invented exchange-rate conversion. [PGR1063–1064 and application notes][law]
+
+Article1058 distinguishes statutory audit from review. Under the ordinary route, a small company outside the stated special-disclosure exception has a review rather than an automatic audit exemption with no assurance. A qualifying **commercial micro-company** can waive that review only through1058a's actual procedure; segmented entities and bearer-share AGs are excluded. Obtain the unanimous governing-body decision, signed management declaration and minutes/current supporting accounts, retain the filing/registration, and adjust the articles where necessary. Members can demand a review later, and the authority can require renewed evidence. Do not infer a waiver from size alone or describe an unsigned intention as a registered waiver. This is an assurance screen, not a full consolidated-accounts/sustainability method. [PGR1058–1058a][law]
+
+Under article 1122(1), the covered company's approved annual accounts and required report must be filed with the Office of Justice **before expiry of the twelfth month after the balance-sheet date**, subject to an actual granted extension and the provision's scope. A valid review waiver affects the required report, not the underlying disclosure obligation. Tax filing and corporate approvals have separate clocks. Article1122(6) requires electronic submission of the paragraph1 documents. Preserve the actual electronic receipt and extension decision; a review waiver does not cancel accounts filing. The fact sheet corroborates the GmbH reporting route; it is not a complete annual-accounts or sustainability Guide. [PGR, article 1122][law]; [fact sheet, sections 10–11][factsheet]
 
 No current authority fee tariff, late-filing penalty amount, full filing form, every board/supervision exception or business-permission procedure has been established by this draft. Preserve any notice and obtain the applicable procedure before filing or quoting an outcome.
 
@@ -109,11 +128,13 @@ Establish purpose/licensing, actual founders/beneficiaries/control, intended res
 
 ## Sources
 
-Read 24 October 2026:
+Historical selected reads24October2026:
 
 - [Current PGR, 1 September 2026 consolidation][law], selected articles 122, 180a, 261, 284, 390–391, 394, 552 section 13, 1058a, 1064 and 1122. Whole PDF retrieval is not whole PGR verification.
 - [Office of Justice GmbH fact sheet, July 2025][factsheet], selected organisation, capital and reporting provisions compared with the current PGR.
 - [Official GmbH registration page][registration], current models/forms entry point; no live application was exercised.
+
+Current PGR refetched30October2026 and matched the saved1September2026 consolidation. Articles180a–180b,1058–1058a,1063–1064 and1122 and the threshold application notes were read for the new workpaper; retained capital/formation passages were reread. The07/2025 fact sheet and current registration entry point were read through the official web reader. No account/login, form submission or current fee determination was performed. Fresh independent whole-pack review is pending.
 
 [law]: https://www.gesetze.li/konso/pdf/1926004000
 [factsheet]: https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-justiz/handelsregister/merkblaetter/007_merkblatt_zur_gmbh.pdf
