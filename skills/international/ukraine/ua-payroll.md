@@ -1,7 +1,7 @@
 ---
 name: ua-payroll
 description: "Ukrainian payroll for employers, tax year 2026: companies and sole proprietors (ФОП) who hire staff under employment or civil-law contracts. Covers the hiring notice before work starts; withholding of 18% personal income tax and the 5% military levy; the tax social benefit for low salaries (UAH 1,664, limit UAH 4,660); the employer's 22% ЄСВ on gross pay, with the UAH 1,902.34 floor, the UAH 172,940 cap and 8.41% for employees with disabilities; gross-to-net; paying with each salary and by the 20th; the combined tax calculation (quarterly for sole proprietors, monthly for companies) and its 2026 deadlines; fines under the Tax Code, the ЄСВ law and the Labour Code; contractors versus employees. Trigger on: Ukraine payroll, зарплата податки, ПДФО з зарплати, військовий збір з зарплати, ЄСВ роботодавця, податковий розрахунок, hiring in Ukraine. Out of scope: own ЄСВ (ua-social-contributions), annual declaration (ua-income-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: UA
 tax_year: 2026
 last_updated: 2026-10-30
@@ -109,12 +109,15 @@ An employer in Ukraine is a tax agent for its staff. From each salary it withhol
 | ЄСВ not paid with the salary | 10% | ЄСВ law art. 25 part 11 point 6 |
 | ЄСВ under-accrued, found later | 10% per period, at most 50% | ЄСВ law art. 25 part 11 point 3 |
 | Penalty interest on ЄСВ | 0.1% a day | ЄСВ law art. 25 part 10 |
-| Worker admitted without a contract, or part-time on paper while working full-time, without ЄСВ and taxes | 10 minimum wages per worker (UAH 86,470 at 2026 rates); 30 (UAH 259,410) if repeated within two years | KZpP art. 265 |
+| Worker admitted without a contract, or part-time or non-fixed-hours on paper while working full-time, without ЄСВ and taxes | 10 minimum wages per worker (UAH 86,470 at 2026 rates); a warning instead for a first breach by a single-tax employer in groups 1 to 3; 30 (UAH 259,410) per worker if repeated within two years | KZpP art. 265 |
 | Wages paid more than a month late, or not in full | 3 minimum wages (UAH 25,941) | KZpP art. 265 |
 | Minimum state pay guarantees not met | 2 minimum wages per worker (UAH 17,294) | KZpP art. 265 |
+| Guarantees for workers called up for military or alternative service not met | 4 minimum wages (UAH 34,588) | KZpP art. 265 |
+| Too many non-fixed-hours contracts, or false time records for them | 3 minimum wages (UAH 25,941) | KZpP art. 265 |
+| Blocking a labour inspection | 3 minimum wages (UAH 25,941); 16 (UAH 138,352) in an inspection for undeclared work | KZpP art. 265 |
 | Other labour law breaches | 1 minimum wage per breach (UAH 8,647); 2 if repeated within a year | KZpP art. 265 |
 
-The labour fines use the minimum wage in force when the breach is found. Paying 50% of a labour fine within 10 banking days settles it (KZpP art. 265). Under martial law, an employer that cannot file or pay on time because of martial law is released from Tax Code liability but must comply within six months after martial law ends (TCU section XX, subsection 10, point 69.1).
+The labour fines use the minimum wage in force when the breach is found. Paying 50% of a labour fine within 10 banking days of receiving the decision settles it (KZpP art. 265). If the employer fixes late or short wages, unmet minimum pay guarantees, unmet guarantees for called-up workers or an "other" breach within the inspector's order deadline, no fine is imposed; the undeclared-worker fine applies even if the breach is fixed (KZpP art. 265). Under martial law, an employer that cannot file or pay on time because of martial law is released from Tax Code liability but must comply within six months after martial law ends (TCU section XX, subsection 10, point 69.1).
 
 ## Cross-border points
 
