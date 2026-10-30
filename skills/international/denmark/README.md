@@ -14,13 +14,13 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | dk-income-tax, dk-capital-gains | source-cited draft |
-| IT-CORP, corporate income tax | dk-corporate-tax | source-cited draft |
-| VAT | denmark-vat-return (2026 deep-tax), dk-vat-return (older duplicate, to be merged) | source-cited draft |
-| SC, social contributions | dk-social-contributions | source-cited draft |
-| PR, payroll withholding | dk-payroll | source-cited draft |
-| TP, transfer pricing | dk-transfer-pricing | source-cited draft |
-| XB, cross-border | dk-cross-border | source-cited draft |
+| IT-IND, individual income tax | dk-income-tax (2026 deep-tax), dk-capital-gains | sourced from the law |
+| IT-CORP, corporate income tax | dk-corporate-tax | checked against the law |
+| VAT | denmark-vat-return (2026 deep-tax), dk-vat-return (older duplicate, to be merged) | sourced from the law |
+| SC, social contributions | dk-social-contributions | checked against the law |
+| PR, payroll withholding | dk-payroll | checked against the law |
+| TP, transfer pricing | dk-transfer-pricing | checked against the law |
+| XB, cross-border | dk-cross-border | checked against the law |
 
 ## Official sources
 
@@ -44,4 +44,10 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 - Momsbekendtgørelsen (BEK nr. 1435 of 29 November 2023, as amended by BEK nr. 518 and 850 of 2025): https://www.retsinformation.dk/eli/lta/2023/1435 (read 2026-10-24)
 - Lov nr. 16 of 14 January 2025 (Opkrævningsloven § 4, stk. 2 provisional-assessment fee DKK 1,400): https://www.retsinformation.dk/eli/lta/2025/16 (read 2026-10-24)
 - Bogføringsloven (lov nr. 700 of 24 May 2022) and BEK nr. 297 of 20 March 2025 (digital bookkeeping from 2026): https://www.retsinformation.dk/eli/lta/2022/700 (read 2026-10-24)
+- Personskatteloven (LBK nr. 1284 of 14 June 2021), § 8 a share income: https://www.retsinformation.dk/eli/lta/2021/1284 (read 2026-10-26)
+- Lov nr. 1691 of 30 December 2024, § 4 (PSL § 8 a band base for 2025 to 2027): https://www.retsinformation.dk/eli/lta/2024/1691 (read 2026-10-26)
+- Lov nr. 562 of 27 May 2025, § 6 (EBL § 9 mixed-use homes from 1 July 2025): https://www.retsinformation.dk/eli/lta/2025/562 (read 2026-10-26)
+- Kursgevinstloven (LBK nr. 1176 of 19 September 2025): https://www.retsinformation.dk/eli/lta/2025/1176 (read 2026-10-26)
+- Ejendomsavancebeskatningsloven (LBK nr. 132 of 25 January 2019): https://www.retsinformation.dk/eli/lta/2019/132 (read 2026-10-26)
+- Aktiesparekontoloven (LBK nr. 281 of 13 March 2025): https://www.retsinformation.dk/eli/lta/2025/281 (read 2026-10-26)
 - Skattestyrelsen: https://skat.dk

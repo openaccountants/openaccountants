@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-10-26T16:56:18.223151+00:00",
+  "commit": "9541fed2a60a14cdf38730fe5bac30a9b6877264",
+  "repository_tests": {
+    "count": 129,
+    "failures": 0,
+    "errors": 0,
+    "result": "PASS",
+    "actual_test_seconds": 9.654,
+    "environment": {
+      "TMPDIR": "/private/tmp",
+      "RUNNER_TEMP": "/private/tmp"
+    },
+    "raw_log": "work/recovered-repository-tests.txt"
+  },
+  "guide_validation": {
+    "changed_guides": 10,
+    "warning_groups": 0,
+    "all_guides": 2252,
+    "all_package_frontmatters": 6122,
+    "all_preexisting_warning_groups": 3
+  },
+  "strict_metadata": {
+    "guides": 10,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "examples": {
+    "blocks": 86,
+    "failures": 0,
+    "missing": 0
+  },
+  "review": "fresh whole-pack independent review running; not cleared",
+  "publication": "No Armenia push/PR"
+}

@@ -1,0 +1,14 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf",
+      "locators": "Articles 17\u201319, printed page 17; Article 1(3) resident taxation reservation remains applicable",
+      "retrieval": "Official PDF retrieved with web; local text cross-checked"
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602",
+      "locators": "Government pensions and Other pensions rows; scope is income beneficially owned by UK residents"
+    }
+  ]
+}

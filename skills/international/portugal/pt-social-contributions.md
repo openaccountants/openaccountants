@@ -238,6 +238,8 @@ Not yet confirmed: Code art. 163(8) says the EUR 20 minimum is updated in line w
 
 > Contributed by Ryan Duguid.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---

@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=2505&p=0",
+    "label": "Keeping, Maintaining and Retaining Records for Income Tax Purposes [663kb]",
+    "name": "record-keeping",
+    "read_utc": "2026-10-27T22:46:34.324311+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=2505&p=0",
+    "bytes": 679705,
+    "sha256": "f891f6bfaa3362e5d5c8104260359979b7c65cfc981a4fe47d0bc11c89651467"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=191686&p=0",
+    "label": "C35 - Distributions - disregarded deemed income [138kb]",
+    "name": "C35",
+    "read_utc": "2026-10-27T22:46:34.324667+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=191686&p=0",
+    "bytes": 142106,
+    "sha256": "0d97c5aa170b88e0ca7ea33a4430de1f5e4f4b4d91ce99a8533d669c51041657"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=193346&p=0",
+    "label": "C37 - Distributions of Income \u2013 The Disregarded Individual Income and Disregarded Deemed Income of Non-Resident Individuals [171kb]",
+    "name": "C37",
+    "read_utc": "2026-10-27T22:46:34.324758+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=193346&p=0",
+    "bytes": 175900,
+    "sha256": "14929ec074078ce4ac63b8f6c0bb8104498a7e254b4b99578d1acce299d4690e"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=191282&p=0",
+    "label": "C44 - Distributions - Treatment for the purposes of the tax cap (section 39D) [142kb]",
+    "name": "C44",
+    "read_utc": "2026-10-27T22:46:34.324835+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=191282&p=0",
+    "bytes": 146301,
+    "sha256": "a63b9ad13b813314fd9a9d243e3eadc55d146ff1e80dbecba2e2dd4b42e77925"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=202425&p=0",
+    "label": "C52 - Corporate residence including arrivals and migrations [101kb]",
+    "name": "C52",
+    "read_utc": "2026-10-27T22:46:34.324905+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=202425&p=0",
+    "bytes": 103602,
+    "sha256": "394683ed883bb1ab80d5cdb93478daeb848facb86c21f4ec8571c55dbcfb1a71"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=174811&p=0",
+    "label": "E29 Non-resident employees and directors [104kb]",
+    "name": "E29",
+    "read_utc": "2026-10-27T22:46:34.905901+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=174811&p=0",
+    "bytes": 106978,
+    "sha256": "21b604f42440f169e783f7e049c4808599dabede6c02fcaac1d7f41045d346bc"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=180898&p=0",
+    "label": "E47 - Preferential rate loans to employees - interaction between benefits in kind and loans to participators legislation [115kb]",
+    "name": "E47",
+    "read_utc": "2026-10-27T22:46:34.906102+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=180898&p=0",
+    "bytes": 118602,
+    "sha256": "fdaab39578b7fc6a07a36560a729c01294e5dc262d70bb8f41d33a4a83bbc0c3"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=185346&p=0",
+    "label": "M24 - Order of set-off of losses [107kb]",
+    "name": "M24",
+    "read_utc": "2026-10-27T22:46:34.911277+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=185346&p=0",
+    "bytes": 110377,
+    "sha256": "b50ea7a3f627ce46c385ecc8d8fd05bf284b93a943741a92b1b781c0eb082348"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=189611&p=0",
+    "label": "M40 - Transactions with settlements \u2013 Interpretation of \"arm's length\u201d (section 65(4)) [102kb]",
+    "name": "M40",
+    "read_utc": "2026-10-27T22:46:34.912226+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=189611&p=0",
+    "bytes": 105374,
+    "sha256": "9a739cd5ddaf7d6191370b8d88bafd29bde6459458b5f9a086c4889e0c84b859"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=191687&p=0",
+    "label": "M41 - Settlements - incidental arrangements between connected persons (section 65(4)) [106kb]",
+    "name": "M41",
+    "read_utc": "2026-10-27T22:46:35.032767+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=191687&p=0",
+    "bytes": 108990,
+    "sha256": "059fdba44518c559a7f1c29463c08626d4978f564e70f5f58e5f2cb7eb856015"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=181119&p=0",
+    "label": "R10 - Business carried on outside Guernsey by individuals who become, or cease to be, resident and principally resident in Guernsey [198kb]",
+    "name": "R10",
+    "read_utc": "2026-10-27T22:46:35.425189+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=181119&p=0",
+    "bytes": 203029,
+    "sha256": "28b9bc4962a75cfc26927142369a6759c28e2f2fc4369a5cb4f847e6122f0a09"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=110271&p=0",
+    "label": "R15 - Pro-rating personal and other allowances in the year of arrival in, and permanent departure from, Guernsey [449kb]",
+    "name": "R15",
+    "read_utc": "2026-10-27T22:46:35.425450+00:00",
+    "http_status": 200,
+    "final_url": "https://gov.gg/CHttpHandler.ashx?id=110271&p=0",
+    "bytes": 460007,
+    "sha256": "698621abc23b72c4eae90807076262dd25e28b91477579e204e1f3c898379b1c"
+  }
+]

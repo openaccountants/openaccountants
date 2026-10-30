@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="BOE-A-2021-19374 Decreto-ley 12/2021, de 30 de septiembre, por el que se adoptan medidas tributarias, organizativas y de gestión como consecuencia de la erupción volcánica en la isla de La Palma." />
+    <title>BOE-A-2021-19374 Decreto-ley 12/2021, de 30 de septiembre, por el que se adoptan medidas tributarias, organizativas y de gestión como consecuencia de la erupción volcánica en la isla de La Palma.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/texto.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2021-19374"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es-cn"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/dl"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2021-19374" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#date_document" content="2021-09-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#number" content="12" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/305"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/329"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/599"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/669"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1232"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3506"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4087"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4114"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4116"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4558"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6803"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6836"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7116"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7162"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es-cn"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/dl"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2021-19374" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#date_document" content="2021-09-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#number" content="12" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/305"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/329"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/599"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/669"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1232"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3506"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4087"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4114"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4116"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4558"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6803"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6836"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7116"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7162"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/dof"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa" property="http://data.europa.eu/eli/ontology#title" content="Decreto-ley 12/2021, de 30 de septiembre, por el que se adoptan medidas tributarias, organizativas y de gestión como consecuencia de la erupción volcánica en la isla de La Palma." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2021-11-25" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/epub"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/html"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/pdf"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/xml"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/epub" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/epub" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/epub" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
+<meta  about="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es-cn/dl/2021/09/30/12/dof/spa"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="doc.php?lang=es&amp;id=BOE-A-2021-19374" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="doc.php?lang=ca&amp;id=BOE-A-2021-19374" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=gl&amp;id=BOE-A-2021-19374" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="doc.php?lang=eu&amp;id=BOE-A-2021-19374" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="doc.php?lang=va&amp;id=BOE-A-2021-19374" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=en&amp;id=BOE-A-2021-19374" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="doc.php?lang=fr&amp;id=BOE-A-2021-19374" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>        <li class="destino">Documento BOE-A-2021-19374</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<h2 class="fuera">Documento BOE-A-2021-19374</h2>
+<div class="enlacesDoc" id="barraSep">
+  <h3 class="documento-tit">Decreto-ley 12/2021, de 30 de septiembre, por el que se adoptan medidas tributarias, organizativas y de gestión como consecuencia de la erupción volcánica en la isla de La Palma.</h3>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl>
+        <dt>Publicado en:</dt>
+        <dd>«<abbr title="Boletín Oficial del Estado">BOE</abbr>» <abbr title="número">núm.</abbr> 282, de 25 de noviembre de 2021, páginas 144142 a 144157 (16 <abbr title="páginas">págs.</abbr>)</dd>
+        <dt>Sección:</dt>
+        <dd>I. Disposiciones generales</dd>
+        <dt>Departamento:</dt>
+        <dd>Comunidad Autónoma de Canarias</dd>
+        <dt>Referencia:</dt>
+        <dd>BOE-A-2021-19374</dd>
+        <dt>Permalink ELI:</dt>
+        <dd>
+          <a href="https://www.boe.es/eli/es-cn/dl/2021/09/30/12" title="Permalink ELI">https://www.boe.es/eli/es-cn/dl/2021/09/30/12</a>
+        </dd>
+      </dl>
+    </div>
+    <ul class="enlaces-doc">
+      <li class="tit-enlaces">Otros formatos:</li>
+      <li class="puntoPDF">
+        <a title="Documento PDF de la publicación original" href="/boe/dias/2021/11/25/pdfs/BOE-A-2021-19374.pdf">PDF</a>
+      </li>
+      <li class="puntoEpub">
+        <a title="Libro electrónico de BOE-A-2021-19374" href="/diario_boe/epub.php?id=BOE-A-2021-19374">EPUB</a>
+      </li>
+      <li class="puntoXML">
+        <a target="_blank" title="Texto y metadatos en formato XML" href="/diario_boe/xml.php?id=BOE-A-2021-19374">XML</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .metadatosDoc -->
+</div>
+<!-- .enlacesDoc -->
+<div class="pretexto">
+  <div class="tabs">
+    <input name="tabs" type="radio" id="tab-texto" class="input" checked="checked"/>
+    <label for="tab-texto" class="label">Texto</label>
+    <div id="DOdocText" class="panel">
+      <h4>TEXTO ORIGINAL</h4>
+      <div id="textoxslt">
+        <p class="parrafo">Sea notorio a todos los ciudadanos y ciudadanas que el Gobierno de Canarias ha aprobado y yo, en nombre del Rey y de acuerdo con lo dispuesto en el artículo 47.1 del Estatuto de Autonomía de Canarias, promulgo y ordeno la publicación del Decreto ley 12/2021, de 30 de septiembre, por el que se adoptan medidas tributarias, organizativas y de gestión como consecuencia de la erupción volcánica en la isla de La Palma, ordenando a la ciudadanía y a las autoridades que lo cumplan y lo hagan cumplir.</p>
+        <p class="centro_redonda">EXPOSICIÓN DE MOTIVOS</p>
+        <p class="centro_redonda">I</p>
+        <p class="parrafo_2">Es la segunda vez que, en un período de tiempo muy corto, nos enfrentamos a una situación de emergencia impensable y que, a pesar de los grandes avances científicos y tecnológicos disponibles, ha sido imposible evitar. La primera fue mundial, la pandemia del COVID-19, y la de ahora, afecta a una parte de nuestro territorio canario, a la isla de La Palma.</p>
+        <p class="parrafo">El domingo 19 de septiembre de 2021, se produjo una erupción volcánica en el municipio de El Paso, activándose inmediatamente el Plan Estatal General de Emergencias de Protección Civil (PLEGEM) en fase de Alerta y Seguimiento Permanente, la Situación de Emergencia Nivel 2 y el semáforo volcánico en nivel rojo, correspondientes al Plan Especial de Protección Civil y Atención de Emergencias por riesgo volcánico de la Comunidad Autónoma de Canarias (PEVOLCA). Asimismo, se activó a la Unidad Militar de Emergencias en El Paso, desplazándose un considerable número de efectivos y vehículos, además de movilizar numerosos medios de las Fuerzas y Cuerpos de Seguridad del Estado.</p>
+        <p class="parrafo">Durante el periodo de activación de los planes mencionados se ha producido la evacuación preventiva de más de 6.000 personas de las poblaciones afectadas, daños en infraestructuras y bienes públicos y privados, principalmente viviendas, así como daños en cultivos y explotaciones agropecuarias, polígonos industriales y otras instalaciones productivas. Asimismo, se han alterado las redes del transporte de personas y mercancías, con el corte de carreteras y la prohibición temporal de la navegación marítima en la zona del oeste de la isla de La Palma, así como la suspensión de actividades escolares en algunos de los municipios afectados y la alteración de la atención sanitaria por desaparición de infraestructura.</p>
+        <p class="parrafo">La trayectoria del volcán ha ido sepultando inexorablemente todo lo que ha encontrado a su paso hasta su llegada al mar; aunque las cifras no son definitivas, las edificaciones arrasadas por la lava se cuantifican en torno a 520 residenciales, 44 agrarias, 23 industriales, 19 de ocio y restauración, 7 de servicios públicos y 8 de otras tipologías, que en ningún caso podrán ser reconstruidas en el lugar donde se ubicaban, y sin perjuicio de otros daños en construcciones que sí pueden ser rehabilitadas o reconstruidas en su ubicación.</p>
+        <p class="parrafo">La gravedad de los daños materiales producidos, especialmente en las viviendas, negocios, industrias y explotaciones agrícolas y ganaderas, así como la incidencia sobre la actividad económica, hacen necesaria la adopción de medidas tributarias extraordinarias, con un triple fin: por un lado, ayudar a evitar las posibles dificultades de liquidez de los contribuyentes palmeros, en detrimento de la recaudación tributaria de la Agencia Tributaria Canaria, por otro lado, facilitar a los afectados la adquisición de nuevos bienes inmuebles, con diversos beneficios fiscales, y, por último, ajustar la tributación efectiva de determinados empresarios a los días sin erupción volcánica.</p>
+        <p class="parrafo">En este sentido, y con carácter excepcional, se adoptan las siguientes medidas:</p>
+        <p class="parrafo_2">En primer lugar, para todos los sujetos pasivos con domicilio fiscal o establecimiento permanente principal en isla de La Palma, se amplía el plazo de presentación de la autoliquidación del Impuesto General Indirecto Canario y del Arbitrio sobre Importaciones y Entrega de Mercancías en las Islas Canarias, correspondiente al tercer trimestre del año 2021, hasta el día 31 de enero de 2022. En el caso de que la obligación de presentación del Impuesto General Indirecto Canario sea mensual, el plazo correspondiente a los meses de septiembre y octubre de 2021, será, respectivamente, el día 31 de diciembre de 2021 y el día 31 de enero de 2022.</p>
+        <p class="parrafo">En segundo lugar, se amplían en seis meses y previa petición, los vencimientos de pago de todas las deudas tributarias que estén fraccionadas o aplazadas a la fecha de entrada en vigor del presente Decreto ley, salvo las relativas a las importaciones de bienes bajo la modalidad de pago diferido, las de los tributos cedidos por el Estado y las superiores a 30.000 euros.</p>
+        <p class="parrafo">En tercer lugar, se articula la posibilidad de solicitar el aplazamiento de deudas tributarias que fueron aplazadas o fraccionadas con anterioridad, y que actualmente están en período ejecutivo, exigiéndose para ello el cumplimiento de una serie de requisitos.</p>
+        <p class="parrafo">En cuarto lugar, se crean nuevos supuestos de aplicación del tipo cero del Impuesto General Indirecto Canario con vigencia entre 2 y 5 años, por las entregas de bienes y prestaciones de servicios tendentes al alojamiento de las personas afectadas por la erupción volcánica, a la sustitución de inmuebles y vehículos destruidos, así como a la recuperación de las actividades ganaderas y agrícolas, extendiéndose, en este último caso, a las importaciones de bienes.</p>
+        <p class="parrafo">En quinto lugar, se atiende a aquellas actividades empresariales desarrolladas en la isla de La Palma, cuya tributación no se vincula con el volumen real de operaciones, y en cuyo cálculo, no se ha tenido en cuenta la merma de ingresos ocasionada por la erupción volcánica; es el caso de los empresarios o profesionales acogidos al régimen simplificado del Impuesto General Indirecto Canario.</p>
+        <p class="parrafo">En sexto lugar, se crea un nuevo tipo de gravamen reducido cero en el Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados, aplicable hasta el 31 de diciembre de 2026, a las transmisiones de inmuebles y vehículos cuyos adquirentes sean titulares de bienes de esta naturaleza destruidos por la lava, ampliándose a los supuestos de constitución o ampliación de préstamos o créditos con garantía hipotecaria y a los actos necesarios para acreditar la titularidad jurídica de los inmuebles.</p>
+        <p class="parrafo">En séptimo lugar, se crea una bonificación en el Impuesto sobre Sucesiones y Donaciones, aplicable hasta el 31 de diciembre de 2026, para las donaciones de edificaciones, terrenos y dinero, siempre que en este último caso se destine a la adquisición o construcción de un inmueble en sustitución de uno destruido.</p>
+        <p class="parrafo">En octavo lugar, se procede a ajustar los importes correspondientes al tercer trimestre del año 2021 de las cuotas fijas de la Tasa fiscal sobre los juegos de suerte, envite o azar, correspondientes a las máquinas o aparatos automáticos, con una reducción proporcional a los 12 días del mes de septiembre con la erupción.</p>
+        <p class="parrafo">Y, por último, se establece una Disposición adicional primera para mantener el derecho a las deducciones autonómicas en el Impuesto sobre la Renta de las Personas Físicas vinculadas con la vivienda habitual, a pesar de haber sido destruida por la lava.</p>
+        <p class="parrafo">Respecto a las cinco primeras medidas, expuestas anteriormente, existe plena competencia de la Comunidad Autónoma de Canarias para adoptarlas en relación a los tributos propios, en el marco del principio de autonomía financiera reconocido en el artículo 171 del Estatuto de Autonomía de Canarias. Y, en el mismo sentido, se reconoce esta competencia respecto a los tributos derivados del Régimen Económico y Fiscal de Canarias, conforme a lo establecido en los artículos 115 y 166.4 del Estatuto de Autonomía de Canarias y en el apartado dos de la disposición adicional décima de la Ley 20/1991, de 7 de junio, de modificación de los aspectos fiscales del Régimen Económico Fiscal de Canarias. Sin embargo, en los tributos cedidos por el Estado, el artículo 56 de la Ley 22/2009, de 18 de diciembre, por la que se regula el sistema de financiación de las Comunidades Autónomas de régimen común y Ciudades con Estatuto de Autonomía y se modifican determinadas normas tributarias, atribuye a las Comunidades Autónomas la competencia para regular los aspectos relativos a la recaudación de tales tributos, con una limitación respecto a los aplazamientos o fraccionamientos de la deuda, al exigir la aplicación expresa de la normativa del Estado; motivo por el que se excluyen a los tributos cedidos de lo dispuesto en los artículos 2 y 3 del Decreto Ley.</p>
+        <p class="parrafo">En cuanto al resto de medidas, las relativas a los tributos cedidos recogidas en sexto, séptimo, octavo, y último lugar, la competencia normativa deriva de lo dispuesto en la Disposición Adicional primera del Estatuto de Autonomía de Canarias y en los artículos 46, 48, 49 y 50 de la Ley 22/2009, en relación con el artículo 17 c) y 19.Dos a), c), d) y e) de la Ley Orgánica 8/1980, de 22 de septiembre, de Financiación de las Comunidades Autónomas, así como el artículo 2 de la Ley 26/2010, de 16 de julio, del régimen de cesión de tributos del Estado a la Comunidad Autónoma de Canarias y de fijación del alcance y condiciones de dicha cesión.</p>
+        <p class="parrafo">Junto a las medidas tributarias, se incluyen otras medidas de organización y gestión administrativa.</p>
+        <p class="parrafo">En primer término, en la medida en que corresponde a distintas consejerías la adopción de las medidas paliativas de los daños producidos, se hace necesaria la constitución de un órgano para el impulso, coordinación y propuesta de las actuaciones que sean precisas para la reparación de los daños causados por el volcán de la isla de La Palma, así como para la reconstrucción y reactivación económica de las zonas afectadas. A estos efectos, se crea la Comisión de coordinación de las medidas de reconstrucción y reactivación de la isla de La Palma, con la composición y funciones que se especifican en el presente Decreto ley.</p>
+        <p class="parrafo">Por otra parte, para dar respuesta a quienes han perdido su casa, sus terrenos o su empleo, se crea bajo la dirección y coordinación de la Viceconsejería de la Presidencia, la Oficina de coordinación económica y de asistencia a los afectados por el volcán de la isla de La Palma, que tendrá encomendada las funciones de información, asistencia y apoyo en la tramitación de los procedimientos de las personas afectadas por la erupción volcánica registrada en la zona de Cumbre Vieja.</p>
+        <p class="parrafo">Esta oficina única de coordinación y atención a la ciudadanía afectada por la erupción volcánica se configura como el centro principal de atención y coordinación de ayudas, asistencia, trámites y asesoría para las personas y entidades afectadas, por lo que en la misma se integrará el personal de las distintas áreas de las instituciones, de empresas y fundaciones públicas. Específicamente, dispondrá de personal dependiente de distintos departamentos del Gobierno de Canarias, así como de otras Administraciones Públicas.</p>
+        <p class="parrafo">El equipo de la Oficina se organizará de tal forma que se puedan coordinar las acciones oportunas en cada materia, tanto para la obtención de las ayudas públicas de emergencia y soluciones habitacionales para las personas afectadas, como para la recuperación social y económica de la isla.</p>
+        <p class="parrafo">Finalmente, se adoptan distintas medidas en materia de contratación, expropiación forzosa, tramitación de los procedimientos administrativos y ayudas, con el objeto de garantizar que las actuaciones que se lleven a cabo para paliar los efectos derivados de la erupción volcánica se puedan ejecutar con la mayor celeridad, como es exigible para atender a la situación extraordinaria derivada de la misma.</p>
+        <p class="parrafo">La Comunidad Autónoma de Canarias tiene plena competencia para adoptar las medidas organizativas y procedimentales que se recogen en el título II de este decreto ley con fundamento en los artículos 104, 106.2, letras a) a c) del Estatuto de Autonomía de Canarias.</p>
+        <p class="parrafo">Por lo que se refiere a la materia de subvenciones, el Estatuto de Autonomía sitúa su título competencial en el ámbito de la competencia sobre fomento. No se trata de un título autónomo, sino que debe situarse en conexión con una de las materias sobre las que la comunidad autónoma tiene reconocida competencia. Así lo establece el artículo 102 del Estatuto de Autonomía que dice: «1. En las materias de su competencia, corresponde a la comunidad autónoma el ejercicio de la actividad de fomento, a cuyos efectos podrá otorgar subvenciones con cargo a fondos propios, regulando o, en su caso, desarrollando los objetivos y requisitos de otorgamiento y gestionando su tramitación y concesión».</p>
+        <p class="parrafo">Las subvenciones no constituyen un título competencial en sí mismo, sino que son un instrumento al servicio de una competencia sustantiva. Y la comunidad autónoma puede en el desarrollo de sus propias competencias sustantivas establecer normas propias de subvenciones de aplicación en las materias sobre las que tiene competencia y siempre que no contradigan la legislación básica estatal en la materia.</p>
+        <p class="centro_redonda">II</p>
+        <p class="parrafo_2">El artículo 46.1 del Estatuto de Autonomía de Canarias dispone que en caso de extraordinaria y urgente necesidad, el Gobierno podrá dictar normas con rango de ley, que recibirán el nombre de decretos-leyes.</p>
+        <p class="parrafo">En virtud de la consolidada jurisprudencia del Tribunal Constitucional (por todas Sentencia 14/2020, de 28 de enero de 2020, FJ 2) es exigible «que el Gobierno haga una definición «explícita y razonada» de la situación concurrente, y segundo, que exista además una «conexión de sentido» entre la situación definida y las medidas que en el decreto-ley se adopten.»</p>
+        <p class="parrafo">Es tal la obviedad de la situación de emergencia, que es imprescindible adoptar medidas para subvenir, en el ámbito fiscal, una situación catastrófica que por si sola justifica la extraordinaria y urgente necesidad de las mismas, como es facilitar el cumplimiento de obligaciones tributarias y aliviar la carga impositiva de las actuaciones tendentes a la reposición de los bienes destruidos por la erupción volcánica en la isla de La Palma.</p>
+        <p class="parrafo">Asimismo esta misma situación justifica la adopción de medidas de índole organizativo y procedimental dirigidas a la coordinación de los distintos Departamentos y Administraciones implicadas y a resolver con prontitud, mediante la agilización de los procedimientos administrativos, la situación de precariedad en la que han quedado las personas afectadas por el volcán.</p>
+        <p class="parrafo">Por tanto, existe plena homogeneidad entre la situación descrita en la exposición de motivos y el contenido de la parte dispositiva; es decir, existe «conexión de sentido» entre la situación definida y las medidas que en el Decreto ley se adoptan.</p>
+        <p class="parrafo">El decreto-ley constituye, por tanto, el instrumento constitucional y estatutariamente previsto a estos efectos, siempre que el fin que justifica la legislación de urgencia sea, tal y como reiteradamente ha exigido nuestro Tribunal Constitucional (sentencias 6/1983, de 4 de febrero, F. 5; 11/2002, de 17 de enero, F. 4, 137/2003, de 3 de julio, F. 3 y 189/2005, de 7 julio, F. 3), subvenir a una situación concreta que por razones difíciles de prever requiere una acción normativa inmediata en un plazo más breve que el establecido por la vía normal o por el procedimiento abreviado o de urgencia para la tramitación parlamentaria de las leyes.</p>
+        <p class="parrafo">Todos los motivos expuestos justifican amplia y razonadamente la extraordinaria y urgente necesidad de que por parte del Gobierno de Canarias se apruebe, conforme al apartado 1 del artículo 46 de la Ley Orgánica 1/2018, de 5 de noviembre, de reforma del Estatuto de Autonomía de Canarias, un decreto-ley como el que nos ocupa.</p>
+        <p class="parrafo">Por otra parte, el contenido normativo proyectado no afecta a los supuestos previstos en el artículo 45 del Estatuto de Autonomía de Canarias, ni a la regulación esencial de los derechos y deberes establecidos en dicho Estatuto y en la Constitución española.</p>
+        <p class="parrafo">No se ha realizado el trámite de participación pública al amparo de lo que establece el artículo 26.11 de la Ley 50/1997, de 27 de noviembre, del Gobierno, de aplicación supletoria por mor de lo dispuesto en la Disposición Final Primera de la Ley Territorial 1/1983, de 14 de abril, del Gobierno y de la Administración Pública de la Comunidad Autónoma de Canarias, que excluye la aplicación de las normas para la tramitación de anteproyectos de ley y normas reglamentarias, a los decretos leyes, a excepción de la elaboración de la memoria prevista en el apartado 3 del citado artículo, con carácter abreviado.</p>
+        <p class="parrafo">En su virtud, en uso de la autorización contenida en el artículo 46 del Estatuto de Autonomía de Canarias, a propuesta del Presidente y de los Consejeros de Hacienda, Presupuestos y Asuntos Europeos y de Administraciones Públicas, Justicia y Seguridad, y previa deliberación del Gobierno en su reunión celebrada el día 30 de septiembre de 2021,</p>
+        <p class="centro_redonda">DISPONGO:</p>
+        <h5 class="titulo_num">TÍTULO I</h5>
+        <h5 class="titulo_tit">Medidas tributarias</h5>
+        <h5 class="capitulo_num">CAPÍTULO I</h5>
+        <h5 class="capitulo_tit">Medidas relativas a la recaudación tributaria</h5>
+        <h5 class="articulo">Artículo 1. Ampliación del plazo de presentación de determinadas autoliquidaciones.</h5>
+        <p class="parrafo">1. Los sujetos pasivos del Impuesto General Indirecto Canario o del Arbitrio sobre Importaciones y Entregas de Mercancías en las Islas Canarias, con domicilio fiscal o establecimiento permanente principal en La Palma, podrán presentar hasta el día 31 de enero de 2022 la autoliquidación correspondiente al tercer período de liquidación trimestral del año 2021.</p>
+        <p class="parrafo">2. Tratándose de sujetos pasivos del Impuesto General Indirecto Canario, con domicilio fiscal o establecimiento permanente principal en La Palma, con obligación de presentación mensual de las autoliquidaciones periódicas, podrán presentar hasta el día 31 de diciembre de 2021 la autoliquidación correspondiente al período de liquidación del mes de septiembre del año 2021; y hasta el día 31 de enero de 2022, la autoliquidación correspondiente al período de liquidación del mes de octubre del año 2021.</p>
+        <p class="parrafo">Lo previsto en este apartado no resulta aplicable a los sujetos pasivos que apliquen el régimen del grupo de entidades.</p>
+        <p class="parrafo">3. A los efectos de lo establecido en este Decreto ley, se entenderá por establecimiento permanente principal el lugar donde esté efectivamente centralizada la gestión administrativa y la dirección de sus negocios en Canarias. Cuando de acuerdo con este criterio no pueda determinarse el mismo, se atenderá al lugar donde radique el mayor valor de sus elementos de inmovilizado material en Canarias.</p>
+        <h5 class="articulo">Artículo 2. Ampliación excepcional de las fechas de vencimiento de pago de las deudas tributarias aplazadas o fraccionadas.</h5>
+        <p class="parrafo">1. Excepcionalmente y respecto a las deudas tributarias aplazadas cuyo plazo de pago no estuviese vencido a fecha 19 de septiembre de 2021, el obligado tributario con domicilio fiscal o establecimiento permanente principal en La Palma podrá solicitar la ampliación en seis meses de la fecha de vencimiento del citado plazo.</p>
+        <p class="parrafo">Igualmente, y en cuanto a las deudas tributarias respecto de las que haya sido concedido su fraccionamiento, el citado obligado tributario podrá solicitar la ampliación en seis meses de la fecha de cada uno de los vencimientos de los plazos pendientes a la fecha de entrada en vigor de este Decreto ley.</p>
+        <p class="parrafo">2. En ningún caso será aplicable lo dispuesto en este artículo a las siguientes deudas tributarias:</p>
+        <p class="parrafo_2">a) Las derivadas de la importación de bienes bajo la modalidad de pago diferido, previsto en el artículo 108.2 del Reglamento de gestión de los tributos derivados del Régimen Económico y Fiscal de Canarias aprobado por Decreto 268/2011, de 4 de agosto.</p>
+        <p class="parrafo">b) Las derivadas de los tributos cedidos por el Estado.</p>
+        <p class="parrafo">c) Aquellas cuya cuantía inicial del importe aplazado o fraccionado fuera superior a 30.000 euros, a excepción de las que siendo superiores a 30.000 euros se hubiera dispensado totalmente al obligado tributario de la constitución de garantía conforme a lo establecido en el artículo 82.2.b) de la Ley 58/2003, de 17 de diciembre, General Tributaria.</p>
+        <p class="parrafo_2">3. La solicitud de ampliación, en el supuesto de aplazamiento, deberá presentarse antes del vencimiento del plazo de pago que consta en el acuerdo por el que se concedió el aplazamiento; tratándose de una deuda tributaria fraccionada, la solicitud deberá presentarse con anterioridad al vencimiento de cualquiera de los plazos concedidos en el acuerdo, teniendo efectos la autorización sobre todos los plazos de pago no vencidos.</p>
+        <p class="parrafo">La presentación de la solicitud supondrá de forma automática la ampliación del vencimiento del plazo o plazos de pago en los términos establecidos en este artículo, sin necesidad de resolución expresa del órgano que dictó el acuerdo de concesión de aplazamiento o fraccionamiento.</p>
+        <p class="parrafo">4. La ampliación de las fechas de los vencimientos de pago a que se refiere el apartado 1 de este artículo, no devengará intereses de demora.</p>
+        <h5 class="articulo">Artículo 3. Aplazamiento excepcional de deudas tributarias que se encuentren en período ejecutivo.</h5>
+        <p class="parrafo">1. Sin que resulte aplicable lo dispuesto en el artículo 65.2.f) de la Ley 58/2003, de 17 de diciembre, General Tributaria, podrá solicitarse, con carácter excepcional, el aplazamiento del pago de deudas tributarias que se encuentren en período ejecutivo a la entrada en vigor del presente Decreto ley, cuando se cumplan, además de los requisitos establecidos en la normativa estatal para la concesión de aplazamiento o fraccionamiento de deudas en período ejecutivo, las siguientes condiciones:</p>
+        <p class="parrafo_2">– Que el obligado tributario tenga domicilio fiscal o establecimiento permanente principal en La Palma</p>
+        <p class="parrafo">– Que la deuda hubiera sido en su día aplazada o fraccionada mediante acuerdo del órgano competente de la Agencia Tributaria Canaria.</p>
+        <p class="parrafo">– Que la cuantía inicial de la deuda aplazada o fraccionada fuera igual o inferior a 30.000 euros; o, siendo superior, que se hubiera dispensado totalmente al obligado tributario de la constitución de garantía conforme a lo establecido en el artículo 82.2.b) de la Ley 58/2003, de 17 de diciembre, General Tributaria.</p>
+        <p class="parrafo">– Que el vencimiento del plazo del aplazamiento incumplido, o el vencimiento de la primera fracción incumplida incluida en el acuerdo de fraccionamiento se produzca con posterioridad al día 19 de septiembre de 2021.</p>
+        <p class="parrafo">– Que no haya sido notificado el acuerdo de enajenación de los bienes embargados.</p>
+        <p class="parrafo">– Que se presente la solicitud de aplazamiento en un plazo de quince días hábiles a contar desde el día siguiente a la entrada en vigor del presente Decreto ley.</p>
+        <p class="parrafo_2">2. Si se cumplen las condiciones establecidas en el apartado 1 anterior, se acordará el aplazamiento del pago de la deuda hasta el día 20 del sexto mes, devengándose los correspondientes intereses de demora.</p>
+        <p class="parrafo">3. Llegado el vencimiento del aplazamiento, la deuda tributaria pendiente de ingreso, en su caso, podrá ser objeto de fraccionamiento en los términos establecidos en la normativa estatal vigente, debiéndose solicitar al órgano competente de la Agencia Tributaria canaria en un plazo de quince días hábiles a contar desde el día siguiente a la fecha de vencimiento del aplazamiento.</p>
+        <p class="parrafo">4. Lo establecido en la presente disposición no podrá ser aplicable a deudas de tributos cedidos por el Estado.</p>
+        <h5 class="capitulo_num">CAPÍTULO II</h5>
+        <h5 class="capitulo_tit">Medidas fiscales relativas a los tributos derivados del Régimen Económico y Fiscal de Canarias</h5>
+        <h5 class="articulo">Artículo 4. Tipo cero del Impuesto General Indirecto Canario aplicable a determinadas operaciones.</h5>
+        <p class="parrafo">Uno. Será aplicable en el Impuesto General Indirecto Canario el tipo cero a las siguientes operaciones:</p>
+        <p class="parrafo_2">1. Las entregas de viviendas radicadas en La Palma, incluidos los garajes y anexos situados en el mismo edificio que se transmitan conjuntamente, que tengan la consideración de primera entrega de una edificación realizada por su promotor, en los términos expresados en el artículo 50.Uno.22.º de la Ley 4/2012, de 25 de junio, de medidas administrativas y fiscales, y a las que no les resulte aplicable el tipo cero previsto en el artículo 58.Uno de la citada Ley 4/2012, siempre y cuando se cumplan los siguientes requisitos:</p>
+        <p class="parrafo_2">– El adquirente debe ser el Estado, la Comunidad Autónoma de Canarias o una entidad local canaria, o un ente integrante del sector público estatal, autonómico o local canario.</p>
+        <p class="parrafo">– Las viviendas deben destinarse a su utilización como alojamiento de las personas que residían en una vivienda destruida como consecuencia de la erupción del volcán.</p>
+        <p class="parrafo_2">2. Las entregas de viviendas radicadas en La Palma, incluidos los garajes y anexos situados en el mismo edificio que se transmitan conjuntamente, que tengan la consideración de primera entrega de una edificación realizada por su promotor, en los términos expresados en el artículo 50.Uno.22.º de la Ley 4/2012, y a las que no les resulte aplicable el tipo cero previsto en el artículo 58.Uno de la citada Ley 4/2012, cuando se cumplan las siguientes condiciones:</p>
+        <p class="parrafo_2">– El adquirente debe ser la persona física propietaria, usufructuaria o nuda propietaria, de una vivienda destruida por la lava cuya existencia y titularidad debe acreditarse por cualquier medio de prueba admitido en derecho.</p>
+        <p class="parrafo">– Solo podrá aplicarse el tipo cero a una vivienda por persona física.</p>
+        <p class="parrafo">– La entrega de la vivienda debe producirse antes del día 31 de diciembre de 2026.</p>
+        <p class="parrafo_2">Con carácter previo o simultáneo a la entrega de la vivienda, el adquirente deberá entregar al sujeto pasivo transmitente una declaración en la que manifieste la concurrencia de los requisitos para la aplicación del tipo cero previsto en este apartado 2. En el caso de que la entrega de la vivienda se formalice en escritura pública, dicha declaración deberá obligatoriamente incorporarse a esta última.</p>
+        <p class="parrafo">En el supuesto de pago anticipado, la declaración a que se refiere el párrafo anterior se deberá presentar con ocasión de la realización del primer pago anticipado.</p>
+        <p class="parrafo">El sujeto pasivo deberá conservar durante el periodo de prescripción, la declaración que no conste en escritura pública.</p>
+        <p class="parrafo_2">3. Las entregas de terrenos situados en La Palma y calificados de solares conforme con la regulación del régimen del suelo y ordenación urbana, y las ejecuciones de obras, con o sin aportación de materiales, consecuencia de contratos directamente formalizados entre el promotor y el contratista que tengan como objeto la construcción de una vivienda en el solar a que se refiere este apartado, cuando se cumplan los siguientes requisitos:</p>
+        <p class="parrafo_2">– El adquirente del solar y el promotor de la vivienda deben ser la misma persona física y esta ser propietaria, usufructuaria o nuda propietaria, de una vivienda destruida por la lava cuya existencia y titularidad debe acreditarse por cualquier medio de prueba admitido en derecho.</p>
+        <p class="parrafo">– La entrega del solar debe producirse antes del día 31 de diciembre de 2026, debiendo acometerse de forma inmediata los permisos administrativos y los proyectos técnicos necesarios para la construcción de la vivienda.</p>
+        <p class="parrafo">– Las obras de construcción deben comenzar en el plazo de un año desde la adquisición del solar, sin sufrir interrupción por causa imputable al sujeto pasivo hasta su terminación, la cual debe tener lugar en cualquier caso dentro del plazo de dos años desde el inicio de las obras.</p>
+        <p class="parrafo">– Solo podrá aplicarse el tipo cero a un solar por persona física.</p>
+        <p class="parrafo_2">Con carácter previo o simultáneo a la entrega del solar y a la ejecución de obra, el adquirente deberá entregar al sujeto pasivo transmitente y al sujeto pasivo constructor, una declaración en la que manifieste la concurrencia de los requisitos para la aplicación del tipo cero previsto en este apartado 3. En el caso de que la entrega del solar se formalice en escritura pública, dicha declaración deberá obligatoriamente incorporarse a esta última.</p>
+        <p class="parrafo">En el supuesto de pago anticipado, la declaración a que se refiere el párrafo anterior se deberá presentar con ocasión de la realización del primer pago anticipado.</p>
+        <p class="parrafo">El sujeto pasivo deberá conservar durante el periodo de prescripción, la declaración que no conste en escritura pública.</p>
+        <p class="parrafo_2">4. Los servicios de arrendamiento de apartamentos o viviendas amueblados situados en La Palma, cuando el arrendador se obligue a la prestación de alguno de los servicios complementarios propios de la industria hotelera, tales como los de restaurante, limpieza, lavado de ropa u otros análogos, cuando se cumplan las siguientes condiciones:</p>
+        <p class="parrafo_2">– El arrendatario debe ser el Estado, la Comunidad Autónoma de Canarias o una entidad local canaria o un ente integrante del sector público estatal, autonómico o local canario.</p>
+        <p class="parrafo">– Los apartamentos o viviendas amuebladas han de ser destinados al uso como residencia de las personas desalojadas como consecuencia de la erupción del volcán.</p>
+        <p class="parrafo_2">Lo previsto en este apartado 4 resulta también aplicable cuando el arrendatario sea una de las personas desalojadas a que se refiere el guión anterior, debiendo entregar al sujeto pasivo arrendador una declaración en la que manifieste la concurrencia de los requisitos para la aplicación del tipo cero.</p>
+        <p class="parrafo">El período de aplicación del tipo cero previsto en este apartado 4 finaliza el día 30 de septiembre de 2022.</p>
+        <p class="parrafo_2">5. Los servicios hoteleros en establecimientos turísticos situados en La Palma, cuando se cumplan las siguientes condiciones:</p>
+        <p class="parrafo_2">– Los usuarios de los servicios sean las personas físicas desalojadas como consecuencia de la erupción del volcán.</p>
+        <p class="parrafo">– La contraprestación de la operación sea abonada por el Estado, la Comunidad Autónoma de Canarias o una entidad local canaria o un ente integrante del sector público estatal, autonómico o local canario.</p>
+        <p class="parrafo_2">El período de aplicación del tipo cero previsto en este apartado 5 finaliza el día 30 de septiembre de 2022.</p>
+        <p class="parrafo_2">6. Las entregas de edificaciones a empresarios o profesionales siempre y cuando se cumplan las siguientes condiciones:</p>
+        <p class="parrafo_2">– El adquirente debe ser un empresario o profesional propietario de una edificación afecta a su actividad económica que ha sido destruida por la lava, cuya existencia y titularidad debe acreditarse por cualquier medio de prueba admitido en derecho.</p>
+        <p class="parrafo">– La edificación que se adquiere debe radicar en La Palma y debe afectarse al desarrollo de una actividad empresarial o profesional idéntica a la ejercida en la edificación destruida.</p>
+        <p class="parrafo">– La entrega debe producirse antes del día 31 de diciembre de 2026.</p>
+        <p class="parrafo_2">Con carácter previo o simultáneo a la entrega de la edificación, el adquirente deberá entregar al sujeto pasivo transmitente una declaración en la que manifieste la concurrencia de los requisitos para la aplicación del tipo cero previsto en este apartado 6. En el caso de que la entrega se formalice en escritura pública, dicha declaración deberá obligatoriamente incorporarse a esta última.</p>
+        <p class="parrafo">En el supuesto de pago anticipado, la declaración a que se refiere el párrafo anterior se deberá presentar con ocasión de la realización del primer pago anticipado.</p>
+        <p class="parrafo">El sujeto pasivo deberá conservar durante el periodo de prescripción, la declaración que no conste en escritura pública.</p>
+        <p class="parrafo">Dos. Será aplicable en el Impuesto General Indirecto Canario el tipo cero a las entregas o importaciones de vehículos distintos de los citados en el artículo 59.Uno de la Ley 4/2012, siempre y cuando se cumplan los siguientes requisitos:</p>
+        <p class="parrafo_2">– El vehículo adquirido o importado debe tener como destino la sustitución de un vehículo destruido por la acción de la lava procedente de la erupción volcánica.</p>
+        <p class="parrafo">– No debe figurar en el momento de su destrucción como dado de baja en el registro de la Dirección General de Tráfico o en el registro administrativo correspondiente, ni estar embargado por una Administración pública.</p>
+        <p class="parrafo">– El adquirente o importador debe ser el titular del vehículo destruido. Se presume como titular quien figure como tal en el registro de la Dirección General de Tráfico o en el registro administrativo correspondiente, salvo prueba en contrario.</p>
+        <p class="parrafo">– El vehículo adquirido o importado debe tener la misma clasificación por criterio de construcción y utilización, que el destruido al que sustituye.</p>
+        <p class="parrafo">– El devengo del Impuesto debe producirse desde la entrada en vigor del presente Decreto ley y el día 31 de diciembre del 2022.</p>
+        <p class="parrafo_2">Con carácter previo o simultáneo a la entrega del vehículo, el adquirente deberá entregar al sujeto pasivo transmitente una declaración en la que manifieste la concurrencia de los requisitos para la aplicación del tipo cero previsto en este apartado Dos.</p>
+        <p class="parrafo">En el supuesto de pago anticipado, la declaración a que se refiere el párrafo anterior se deberá presentar con ocasión de la realización del primer pago anticipado.</p>
+        <p class="parrafo">El sujeto pasivo deberá conservar durante el periodo de prescripción, la declaración efectuada por el adquirente.</p>
+        <p class="parrafo">Tres. Hasta el día 31 de diciembre de 2022, será aplicable en el Impuesto General Indirecto Canario el tipo cero a las entregas o importaciones de los siguientes bienes para ser utilizados en actividades ganaderas y agrícolas desarrolladas en explotaciones situadas en la isla de La Palma:</p>
+        <p class="parrafo_2">a) Semillas, bulbos, esquejes y materiales de origen exclusivamente animal o vegetal susceptibles de originar la reproducción de animales o vegetales; fertilizantes, residuos orgánicos, correctores y enmiendas, herbicidas, plaguicidas de uso fitosanitario o ganadero.</p>
+        <p class="parrafo">b) Maquinaria, utensilios o herramientas.</p>
+        <p class="parrafo">c) Animales destinados a su engorde antes de ser utilizados en el consumo humano o animal y los animales reproductores de los mismos.</p>
+        <p class="parrafo_2">Igualmente tributarán al tipo cero las ejecuciones de obras, con o sin aportación de materiales, que tengan por objeto reparar los daños de las instalaciones agrícolas o ganaderas, como consecuencia de la erupción del volcán, que estén situados en esta isla. Lo previsto en este párrafo también resultará aplicable a la entrega o importación de bienes que, por su naturaleza y función, estén destinados a la reparación de esos daños.</p>
+        <p class="parrafo">Con carácter previo o simultáneo a la entrega de los bienes citados o de la ejecución, el adquirente deberá entregar al sujeto pasivo transmitente o ejecutor una declaración en la que manifieste la concurrencia de los requisitos para la aplicación del tipo cero previsto en este apartado Tres.</p>
+        <p class="parrafo">En el supuesto de pago anticipado, la declaración a que se refiere el párrafo anterior se deberá presentar con ocasión de la realización del primer pago anticipado.</p>
+        <p class="parrafo">El sujeto pasivo deberá conservar durante el periodo de prescripción, la declaración efectuada por el adquirente.</p>
+        <p class="parrafo_2">Cuatro. Con vigencia hasta el día 31 de diciembre de 2022 y sin perjuicio de la exención prevista en el artículo 14.3.11.º de la Ley 20/1991, de 7 de junio, de modificación de los aspectos fiscales del Régimen Económico Fiscal de Canarias, será aplicable en el Impuesto General Indirecto Canario el tipo cero a las importaciones de bienes donados para ser distribuidos a las personas afectadas por la erupción del volcán.</p>
+        <p class="parrafo">También se le aplicará el tipo cero a las importaciones de bienes donados a favor de empresarios o profesionales cuyos establecimientos u oficinas han sido destruidos como consecuencia de la erupción volcánica.</p>
+        <p class="parrafo">Cinco. El incumplimiento de los requisitos exigidos para la aplicación del tipo cero, supondrá para el adquirente del bien o servicio, como beneficiario conforme a lo previsto en el artículo 35.2.k) de la Ley General Tributaria, o para el importador, la obligación de presentar la declaración ocasional a que se refiere el artículo 59.3 de la Ley 20/1991, de 7 de junio, de modificación de los aspectos fiscales del Régimen Económico Fiscal de Canarias, correspondiente al período de liquidación mensual en que se incumplió el requisito, autoliquidando la cuota del Impuesto con los correspondientes intereses de demora.</p>
+        <p class="parrafo">El incumplimiento de alguno de los requisitos exigidos en el momento del devengo del impuesto afectará, en su caso, a los pagos anticipados en los que se ha aplicado el tipo cero, debiendo el sujeto pasivo rectificar la cuota, no resultando de aplicación lo dispuesto en el artículo 20.Dos.3.1.º de la Ley 20/1991, de 7 de junio, de modificación de los aspectos fiscales del Régimen Económico Fiscal de Canarias.</p>
+        <p class="parrafo">Seis. En ningún caso será aplicable el tipo cero a que se refiere este artículo cuando se trate de la entrega de un bien realizada en el desarrollo de su actividad comercial por un sujeto pasivo que tenga la consideración de comerciante minorista, o la entrega de un bien o la prestación de un servicio realizada por un empresario o profesional acogido al régimen especial del pequeño empresario o profesional.</p>
+        <h5 class="articulo">Artículo 5. Reducciones a aplicar al porcentaje de ingreso a cuenta correspondiente al tercer trimestre del año 2021 en el régimen simplificado del Impuesto General Indirecto Canario.</h5>
+        <p class="parrafo">Los sujetos pasivos del Impuesto General Indirecto Canario acogidos al régimen simplificado, con domicilio fiscal o establecimiento permanente principal en la isla de La Palma, que desarrollen actividades empresariales o profesionales en esa isla, incluidas en el anexo II de la Orden de 23 de diciembre de 2019, por la que se fijan los índices, módulos y demás parámetros del régimen simplificado del Impuesto General Indirecto Canario para el año 2020, a los efectos de la determinación del importe del ingreso a cuenta correspondiente al tercer trimestre del año 2021, podrán reducir en un 13% por ciento los porcentajes señalados en el número 3 de las Instrucciones para la aplicación de los índices o módulos en el Impuesto General Indirecto Canario.</p>
+        <h5 class="capitulo_num">CAPÍTULO III</h5>
+        <h5 class="capitulo_tit">Medidas fiscales relativas a los tributos cedidos por el Estado</h5>
+        <h5 class="articulo">Artículo 6. Tipo cero en el Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados.</h5>
+        <p class="parrafo">1. Se aplicará un tipo cero a las operaciones sujetas al Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados, cuyo devengo se produzca antes del día 31 de diciembre de 2026, por los siguientes conceptos:</p>
+        <p class="parrafo_2">a) Por el concepto Actos Jurídicos Documentados, las primeras copias de escrituras públicas que documenten:</p>
+        <p class="parrafo_2">– La transmisión de los bienes inmuebles que, conforme a lo establecido en el presente Decreto ley, tributen a tipo cero en el Impuesto General Indirecto Canario.</p>
+        <p class="parrafo">– La constitución o ampliación de préstamos y créditos con garantía hipotecaria concedidos a las personas, físicas o jurídicas, que hayan perdido bienes inmuebles como consecuencia de la erupción volcánica.</p>
+        <p class="parrafo_2">b) Por el concepto Transmisiones Patrimoniales Onerosas, por las transmisiones de bienes inmuebles y vehículos en las que concurran los mismos requisitos exigidos en el presente Decreto ley, para la aplicación del tipo cero del Impuesto General Indirecto Canario a la entrega de bienes inmuebles y vehículos.</p>
+        <p class="parrafo">Se incluyen en esta letra b), las operaciones previstas en el artículo 7.2.C) del Texto Refundido del Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados aprobado por el Real Decreto Legislativo 1/1993, de 24 de septiembre, que tengan como finalidad suplir el título que acredite la propiedad de los inmuebles destruidos por la erupción volcánica.</p>
+        <p class="parrafo_2">2. El incumplimiento de los requisitos mencionados en el apartado 1 anterior determinará la improcedencia de la aplicación del tipo cero, con ingreso en dicho momento del gravamen que hubiera correspondido y sus correspondientes intereses de demora, comenzando a contarse el plazo de prescripción para determinar la deuda tributaria desde la fecha en que se produzca el incumplimiento de tales requisitos.</p>
+        <h5 class="articulo">Artículo 7. Bonificaciones en el Impuesto sobre Sucesiones y Donaciones.</h5>
+        <p class="parrafo">1. Se bonificará en un 100 por cien la cuota tributaria correspondiente a la donación de una cantidad en metálico, cuyo devengo se produzca antes del día 31 de diciembre de 2026, siempre y cuando concurran las condiciones siguientes:</p>
+        <p class="parrafo_2">a) Que el donatario sea propietario, usufructuario o nudo propietario de un inmueble que haya sido destruido por la acción de la lava, cuya existencia y titularidad debe acreditarse por cualquier medio de prueba admitido en derecho.</p>
+        <p class="parrafo">b) La cantidad en metálico donada debe destinarse a la adquisición o construcción de un inmueble situado en la isla de La Palma, que habrá de tener la misma finalidad que el destruido.</p>
+        <p class="parrafo">c) La adquisición del inmueble debe realizarse en un plazo de dos años a contar desde el devengo del impuesto que grava la donación. Si existiesen sucesivas donaciones para un mismo fin, el plazo comenzará a contarse desde el devengo de la primera donación.</p>
+        <p class="parrafo">En los casos de construcción, deben comenzarse las obras en el indicado plazo de dos años sin sufrir interrupción por causa imputable al sujeto pasivo hasta su terminación, la cual debe tener lugar en cualquier caso dentro del plazo de dos años desde el inicio de las obras.</p>
+        <p class="parrafo">d) El inmueble adquirido o construido debe permanecer en el patrimonio del donatario con la misma finalidad que el destruido por un plazo de al menos cinco años, a contar desde su adquisición o finalización de la construcción.</p>
+        <p class="parrafo">e) La donación debe formalizarse en escritura pública, debiendo constar de forma expresa que el destino de la cantidad en metálico donada tiene como fin la adquisición o construcción por parte del donatario de un inmueble de idéntica finalidad que el inmueble destruido. No obstante, no será necesaria esta formalización cuando el importe donado no sea superior a 1.000 euros.</p>
+        <p class="parrafo_2">2. Se bonificará en un 100 por cien la cuota tributaria correspondiente a la donación de una edificación situada en La Palma, cuyo devengo se produzca antes del día 31 de diciembre de 2026, cuando se cumplan los siguientes requisitos:</p>
+        <p class="parrafo_2">a) Que el donatario sea propietario, usufructuario o nudo propietario de un inmueble que haya sido destruido por la acción de la lava, cuya existencia y titularidad debe acreditarse por cualquier medio de prueba admitido en derecho.</p>
+        <p class="parrafo">b) El inmueble donado debe permanecer en el patrimonio del donatario con la misma finalidad que el destruido por un plazo de al menos cinco años, a contar desde su adquisición.</p>
+        <p class="parrafo_2">3. Se bonificará en un 100 por cien la cuota tributaria correspondiente a la donación de un terreno situado en La Palma y calificado de solar conforme con la regulación del régimen del suelo y ordenación urbana, cuyo devengo se produzca antes del día 31 de diciembre de 2026, siempre y cuando concurran las condiciones siguientes:</p>
+        <p class="parrafo_2">a) Que el donatario sea propietario, usufructuario o nudo propietario de un inmueble que haya sido destruido por la acción de la lava, cuya existencia y titularidad debe acreditarse por cualquier medio de prueba admitido en derecho.</p>
+        <p class="parrafo">b) El solar donado debe destinarse a la construcción de la vivienda del donatario.</p>
+        <p class="parrafo">c) Deben comenzar las obras en el plazo de dos años desde la donación, sin sufrir interrupción por causa imputable al sujeto pasivo hasta su terminación, la cual debe tener lugar en cualquier caso dentro del plazo de dos años desde el inicio de las obras.</p>
+        <p class="parrafo">d) La vivienda construida debe permanecer en el patrimonio del donatario como vivienda un plazo de al menos cinco años, a contar desde la finalización de la construcción.</p>
+        <p class="parrafo">e) La donación debe formalizarse en escritura pública debiendo constar de forma expresa que el destino del solar tiene como fin la construcción por parte del donatario de una vivienda.</p>
+        <p class="parrafo_2">4. El incumplimiento de los requisitos mencionados en los apartados anteriores determinará la improcedencia de la bonificación, con ingreso en dicho momento del gravamen que hubiera correspondido y sus correspondientes intereses de demora, comenzando a contarse el plazo de prescripción para determinar la deuda tributaria desde la fecha en que se produzca el incumplimiento de tales requisitos.</p>
+        <h5 class="articulo">Artículo 8. Cuotas fijas de la Tasa fiscal sobre los juegos de suerte, envite o azar correspondiente a máquinas o aparatos automáticos.</h5>
+        <p class="parrafo">1. En la autoliquidación trimestral de la Tasa fiscal sobre los juegos de suerte, envite o azar correspondiente a máquinas o aparatos automáticos, devengada el día 1 de julio de 2021, cuya ubicación autorizada, en el momento del devengo, se encuentre en la isla de La Palma, serán objeto de declaración e ingreso por parte de los obligados tributarios las siguientes cuotas fijas:</p>
+        <p class="parrafo_2">1. Máquinas tipo «B» o recreativas con premio:</p>
+        <p class="parrafo_2">A) Cuota trimestral: 783,00 euros.</p>
+        <p class="parrafo">B) Cuando se trate de máquinas en las que puedan intervenir dos o más jugadores de forma simultánea y siempre que el juego de cada uno sea independiente del realizado por otros jugadores, serán de aplicación las siguientes cuotas trimestrales:</p>
+        <p class="parrafo_2">a) Máquinas o aparatos de dos jugadores: dos cuotas con arreglo a lo previsto en la letra A) anterior.</p>
+        <p class="parrafo">b) Máquinas o aparatos de tres o más jugadores: 1.392,00 euros, más el resultado de multiplicar por 650,00 el producto del número de jugadores por el precio máximo autorizado para la partida.</p>
+        <p class="parrafo_2">2. Máquinas de tipo «C» o de azar.</p>
+        <p class="parrafo_2">Cuota trimestral: 1.091,25 euros.</p>
+        <p class="parrafo_2">3. En caso de modificación del precio máximo de 20 céntimos de euro autorizado para la partida en máquinas de tipo «B» o recreativas con premio:</p>
+        <p class="parrafo_2">– La cuota tributaria de 783,00 euros de la tasa fiscal sobre juegos de suerte, envite o azar, se incrementará en 19,57 euros por cada 4 céntimos de euro en que el nuevo precio máximo autorizado exceda de 20 céntimos de euro.</p>
+        <p class="parrafo_2">2. Se autoriza a la persona titular de la Consejería competente en materia tributaria a modificar el importe de las cuotas fijas de la Tasa fiscal sobre los juegos de suerte, envite o azar correspondiente a máquinas o aparatos automáticos, devengadas el primer día de cada trimestre natural, para tener en cuenta los períodos de suspensión y restricción de la actividad del juego en cada trimestre como consecuencia de la actividad volcánica de La Palma.</p>
+        <h5 class="titulo_num">TÍTULO II</h5>
+        <h5 class="titulo_tit">Medidas organizativas y de gestión</h5>
+        <h5 class="articulo">Artículo 9. Comisión de coordinación de las medidas de reconstrucción y reactivación de la isla de La Palma.</h5>
+        <p class="parrafo">1. Se crea la Comisión de coordinación de las medidas de reconstrucción y reactivación de la isla de La Palma, adscrita a la Presidencia del Gobierno.</p>
+        <p class="parrafo">2. La Comisión de coordinación de las medidas de reconstrucción y reactivación de la isla de La Palma estará integrada:</p>
+        <p class="parrafo_2">a) Presidencia: La persona titular de la Viceconsejería de La Presidencia.</p>
+        <p class="parrafo">b) Vicepresidencia: La persona titular de la Viceconsejería competente en materia de hacienda, planificación y presupuestos.</p>
+        <p class="parrafo">c) Vocalías: una persona en representación de cada una de las consejerías del Gobierno, designada entre quienes sean titulares de al menos una dirección general, así como las personas que desempeñan las áreas de coordinación económica y social de la Oficina de coordinación económica y de asistencia a los afectados por el volcán de la isla de La Palma.</p>
+        <p class="parrafo">d) Secretaría: la persona designada por la Viceconsejería de la Presidencia de entre el personal funcionario dependiente de la Presidencia del Gobierno, que actuará con voz y sin voto.</p>
+        <p class="parrafo">Podrán asistir a las reuniones de la Comisión las personas que sean convocadas por la Presidencia.</p>
+        <p class="parrafo_2">3. La Comisión de coordinación de las medidas de reconstrucción y reactivación de la isla de La Palma tendrá las siguientes funciones:</p>
+        <p class="parrafo_2">a) La adopción de medidas de coordinación necesarias para la actuación de las distintas Consejerías y organismos dependientes del Gobierno de Canarias, así como para garantizar una adecuada coordinación con la actuación de las restantes Administraciones Públicas.</p>
+        <p class="parrafo">b) El impulso y propuesta de actuaciones y medidas que sean necesarias para la reparación de los daños causados por el volcán de la isla de La Palma, así como para la reconstrucción y reactivación económica de la zona, en el ámbito de competencias de la Comunidad Autónoma de Canarias.</p>
+        <p class="parrafo">c) La supervisión y coordinación de las actuaciones que desarrollen los departamentos y sus organismos públicos dependientes para la reconstrucción y reactivación de la isla de La Palma.</p>
+        <p class="parrafo">d) El análisis e informe del Plan de Reconstrucción y Reactivación económica de la isla de La Palma.</p>
+        <p class="parrafo">e) La evaluación y seguimiento de la ejecución de las medidas y actuaciones adoptadas.</p>
+        <p class="parrafo">f) Las demás que sean necesarias para la coordinación entre las Administraciones implicadas en la reconstrucción y reactivación de la isla de La Palma, así como para la ejecución de las medidas y actuaciones acordadas.</p>
+        <h5 class="articulo">Artículo 10. Oficina de coordinación económica y de asistencia a los afectados por el volcán de la isla de La Palma.</h5>
+        <p class="parrafo">1. Dependiente y bajo la dirección y coordinación de la Viceconsejería de la Presidencia, se crea la Oficina de coordinación económica y de asistencia a los afectados por el volcán de la isla de La Palma, que tendrá encomendada las funciones siguientes:</p>
+        <p class="parrafo_2">a) La coordinación económica, seguimiento y gestión de las actuaciones acordadas por la Comisión de coordinación de las medidas de reconstrucción y reactivación de la isla de La Palma, así como la elaboración del Plan de Reconstrucción y Reactivación económica de la isla de La Palma.</p>
+        <p class="parrafo">b) La coordinación social para prestar tareas de información, asistencia y apoyo en la tramitación de los procedimientos de ayuda a las personas afectadas por la erupción volcánica registrada en la zona de Cumbre Vieja.</p>
+        <p class="parrafo_2">2. La oficina contará con las dos áreas de coordinación siguientes:</p>
+        <p class="parrafo_2">a) Área de coordinación económica, que será desempeñada por la persona titular de la Dirección General de Coordinación y Apoyo a la Vicepresidencia.</p>
+        <p class="parrafo">b) Área de coordinación social, que será desempeñada por la persona que se designe por el Presidente del Gobierno de entre quienes estén adscritos la Dirección General del Gabinete del Presidente.</p>
+        <p class="parrafo_2">3. La oficina tendrá las dependencias necesarias ubicadas en la isla de La Palma para facilitar la información, asistencia y tramitación de los procedimientos más cercana a las personas afectadas por el volcán.</p>
+        <p class="parrafo">4. La oficina estará dotada por el personal y los medios materiales que se establezcan por acuerdo del Gobierno de Canarias, y, en su caso, con los medios personales y materiales que se aporten por la Administración General del Estado, el Cabildo insular de La Palma y los Ayuntamientos afectados por el volcán, de acuerdo con los Convenios de Cooperación que se suscriban con dichas administraciones.</p>
+        <h5 class="articulo">Artículo 11. Medidas de contratación administrativa.</h5>
+        <p class="parrafo">1. Podrán tener la consideración de obras, servicios o suministros de emergencia, previo el correspondiente acuerdo del órgano de contratación, cumpliendo los requisitos del artículo 120 de la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, los contratos de reparación o mantenimiento de infraestructuras, equipamientos o servicios, de obras de reposición de bienes perjudicados y de valoraciones de daños, cualquiera que sea su cuantía.</p>
+        <p class="parrafo">2. Para la tramitación de expedientes de contratación de obras no incluidas en el artículo 236.2 de la Ley 9/2017, de 8 de noviembre, se dispensará del requisito previo de disponibilidad de los terrenos, sin perjuicio de que su ocupación efectiva deba ir precedida de la formalización del acta de ocupación.</p>
+        <h5 class="articulo">Artículo 12. Medidas en materia de expropiación forzosa.</h5>
+        <p class="parrafo">1. Se declara de utilidad pública e interés social la expropiación de bienes inmuebles para destinarlos a la reposición de los bienes destruidos por el volcán de La Palma.</p>
+        <p class="parrafo">2. Se declara urgente la ocupación de los bienes afectados por las expropiaciones a que se refiere el apartado anterior, a los efectos establecidos en el artículo 52 de la Ley de Expropiación Forzosa, de 16 de diciembre de 1954.</p>
+        <h5 class="articulo">Artículo 13. Tramitación de urgencia de los procedimientos.</h5>
+        <p class="parrafo">1. Los procedimientos administrativos, de gestión presupuestaria, de subvenciones y ayudas, encargos a medios propios personificados y demás expedientes de gastos que se tramiten para la reparación de los daños causados por el volcán de la isla de La Palma se tramitarán por urgencia y se despacharán con carácter preferente.</p>
+        <p class="parrafo">2. La tramitación por urgencia prevista en este artículo determinará en exclusiva la reducción a la mitad de los plazos internos para la emisión de informes y dictámenes que sean preceptivos, sin que afecte a los plazos de convocatoria pública, plazos referidos a la presentación de solicitudes y recursos, subsanación de requerimientos o cualesquiera otros plazos que limiten los derechos de terceros o que no puedan reducirse por aplicación de la normativa básica y sin perjuicio de los plazos específicos previstos en esta norma.</p>
+        <h5 class="articulo">Artículo 14. Exceptuación del trámite preceptivo de autorización previa del Gobierno.</h5>
+        <p class="parrafo">1. Los expedientes de gastos, las subvenciones directas a que se refiere el artículo 22.2 c) de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, los préstamos directos y los convenios que suscriba la Administración Pública de la Comunidad Autónoma de Canarias con la Administración General del Estado, el Cabildo Insular de La Palma y los Ayuntamientos afectados por el volcán quedan exceptuados de la autorización previa del Gobierno que en atención a su cuantía se establezca en las leyes anuales de presupuesto.</p>
+        <p class="parrafo">2. De los citados expedientes se dará cuenta al Gobierno trimestralmente.</p>
+        <h5 class="articulo">Artículo 15. Régimen de las ayudas.</h5>
+        <p class="parrafo">Por los distintos departamentos se adoptarán las normas que regirán la concesión de ayudas de carácter excepcional para mitigar los daños producidos por la erupción volcánica iniciada en la zona de Cumbre Vieja de La Palma el día 19 de septiembre de 2021.</p>
+        <p class="parrafo">Las ayudas se otorgarán en régimen de concesión directa en aras del interés público y social derivado de las singulares circunstancias que concurren en una situación de emergencia, y al amparo de lo dispuesto en el artículo 22.2.c) de la Ley 38/2003, de 17 de noviembre, General de Subvenciones.</p>
+        <h5 class="articulo">Disposición adicional primera. Mantenimiento de las deducciones vinculadas con la vivienda habitual destruida por la lava.</h5>
+        <p class="parrafo">No perderán el derecho a las deducciones practicadas de la cuota íntegra autonómica del Impuesto sobre la Renta de las Personas Físicas, previstas en los artículos 14, 14 bis y 14 ter del Texto Refundido de las disposiciones dictadas por la Comunidad Autónoma de Canarias en materia de tributos cedidos aprobado por Decreto legislativo 1/2009, de 21 de abril, por las cantidades satisfechas por estos conceptos a pesar de que las viviendas habituales hayan sido destruidas por la erupción volcánica de La Palma, pudiendo continuar aplicándola por las cantidades que pudieran seguir abonando.</p>
+        <h5 class="articulo">Disposición adicional segunda. Autorización de modificación de plazos.</h5>
+        <p class="parrafo">Se autoriza a la persona titular de la Consejería competente en materia tributaria a modificar los plazos establecidos en el presente Decreto ley.</p>
+        <h5 class="articulo">Disposición adicional tercera. Autorización para la extinción del órgano y unidad previstos en este Decreto ley.</h5>
+        <p class="parrafo">Se autoriza a la Presidencia del Gobierno para disponer por Decreto la supresión del órgano y la oficina previstos en este Decreto ley una vez cumplidos los objetivos que determinaron su creación.</p>
+        <h5 class="articulo">Disposición final única. Entrada en vigor.</h5>
+        <p class="parrafo">El presente Decreto ley entrará en vigor el mismo día de su publicación en el «Boletín Oficial de Canarias».</p>
+        <p class="parrafo_2">Canarias, 30 de septiembre de 2021.–El Presidente del Gobierno, Ángel Víctor Torres Pérez.–El Vicepresidente y Consejero de Hacienda, Presupuestos y Asuntos Europeos, Román Rodríguez Rodríguez.–El Consejero de Administraciones Públicas, Justicia y Seguridad, Julio Manuel Pérez Hernández.</p>
+        <p class="publicado">
+          <em>(Publicado en el «Boletín Oficial de Canarias» número 202, de 1 de octubre de 2021. Convalidado por Resolución de la Presidencia del Parlamento de Canarias, publicada en el «Boletín Oficial de Canarias» número 232, de 11 de noviembre de 2021)</em>
+        </p>
+      </div>
+      <!-- #textoxslt -->
+    </div>
+    <!-- #DOdocText -->
+    <input name="tabs" type="radio" id="tab-analisis" class="input"/>
+    <label for="tab-analisis" class="label">Análisis</label>
+    <div class="panel" id="panelAnalisis">
+      <div id="analisis" class="analisisDoc">
+<h4>ANÁLISIS</h4>
+<ul class="bullet-boe">
+  <li>Rango: Decreto-ley</li>
+  <li>Fecha de disposición: 30/09/2021</li>
+  <li>Fecha de publicación: 25/11/2021</li>
+  <li>Fecha de entrada en vigor: 01/10/2021</li>
+  <li>Publicada en el BOC núm. 202, de 1 de octubre de 2021.</li>
+</ul>
+<h5 id="refpost">Referencias posteriores</h5>
+<div class="fuera">&#13;
+                              <ul>&#13;
+                              <li><a href="#ver-panel-contenido">Ordenado por contenido</a></li>&#13;
+                              <li><a href="#ver-panel-fecha">Ordenado por fecha</a></li>&#13;
+                              </ul>&#13;
+                              </div><div class="refpost-wrapper"><input type="radio" id="refpost-contenido" name="orden-refpost" checked="checked"/><input type="radio" id="refpost-fecha" name="orden-refpost"/><fieldset class="refpost-selector"><legend>Criterio de ordenación: </legend><label for="refpost-contenido" class="etiqueta-visual">&#13;
+                  por contenido&#13;
+           </label><label for="refpost-fecha" class="etiqueta-visual">&#13;
+                  por fecha&#13;
+           </label></fieldset>&#13;
+        <div class="refpost-contenedor">&#13;
+                              &#13;
+            <div id="ver-panel-contenido" class="refpost-panel refpost-panel-contenido">&#13;
+                <p class="fuera">Ordenado por contenido</p>&#13;
+                <ul class="bullet-boe">&#13;
+      <li>SE DEROGA:
+    <ul class="bullet-boe">
+      <li>el art. 4, por Decreto Legislativo 1/2025, de 13 de octubre (Ref. <a href="/buscar/doc.php?id=BOC-j-2025-90249">BOC-j-2025-90249</a>).</li>
+      <li>la disposición adicional 3; SE MODIFICA los arts. 9 y 10 y el anexo; SE AÑADE la disposición adicional 5 y SE SUPRIME lo indicado, por Ley 2/2024, de 29 de mayo (Ref. <a href="/buscar/doc.php?id=BOE-A-2024-15709">BOE-A-2024-15709</a>).</li>
+      <li>la disposición adicional 3, SE MODIFICA los arts. 9 y 10, SE AÑADE anexo y SE SUPRIME la referencia indicada, por Decreto-ley 9/2023, de 18 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2024-4428">BOE-A-2024-4428</a>).</li>
+    </ul>
+  </li>
+  <li>SE MODIFICA:
+    <ul class="bullet-boe">
+      <li>los arts. 4.1 y 7.3, por Decreto-ley 15/2022, de 29 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2023-10788">BOE-A-2023-10788</a>).</li>
+      <li>el art. 4, por Decreto-ley 11/2022, de 29 de septiembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2023-8752">BOE-A-2023-8752</a>).</li>
+      <li>el art. 4, por Ley 7/2022, de 28 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2023-5961">BOE-A-2023-5961</a>).</li>
+      <li>los arts. 4, 6 y 7 y SE AÑADE la disposición adicional 4, por Ley 6/2021, de 28 de diciembre de 2021 (Ref. <a href="/buscar/doc.php?id=BOE-A-2022-2544">BOE-A-2022-2544</a>).</li>
+    </ul>
+  </li>
+  <li>SE PRORROGA:
+    <ul class="bullet-boe">
+      <li>hasta el 31 de diciembre de 2025, la vigencia del art. 4.3, por Decreto-ley 1/2025, de 3 de febrero (Ref. <a href="/buscar/doc.php?id=BOE-A-2025-7592">BOE-A-2025-7592</a>).</li>
+      <li>hasta el 31 de diciembre de 2024, la vigencia del art. 4.3, por Decreto-ley 8/2024, de 30 de septiembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2024-23638">BOE-A-2024-23638</a>).</li>
+      <li>hasta el 30 de septiembre de 2024, la vigencia del art. 4.3, por Decreto-ley 4/2024, de 1 de abril (Ref. <a href="/buscar/doc.php?id=BOE-A-2024-20761">BOE-A-2024-20761</a>).</li>
+      <li>hasta el 31 de marzo de 2024, la vigencia del art. 4.3, por Decreto-ley 6/2023, de 25 de septiembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2023-26336">BOE-A-2023-26336</a>).</li>
+      <li>hasta el 30 de septiembre de 2023, la vigencia del art. 4.3, por Decreto-ley 4/2023, de 25 de mayo (Ref. <a href="/buscar/doc.php?id=BOE-A-2023-16465">BOE-A-2023-16465</a>).</li>
+    </ul>
+  </li>
+  <li>SE PUBLICA  Acuerdo de convalidación, por Resolución de 29 de octubre de 2021 (Ref. <a href="/buscar/doc.php?id=BOC-j-2021-90400">BOC-j-2021-90400</a>).</li>
+&#13;
+                </ul>&#13;
+            </div>&#13;
+                              &#13;
+            <div id="ver-panel-fecha" class="refpost-panel refpost-panel-fecha">&#13;
+                 <p class="fuera">Ordenado por fecha</p>&#13;
+                <ul class="bullet-boe">&#13;
+      <li>SE DEROGA el art. 4, por Decreto Legislativo 1/2025, de 13 de octubre (Ref. <a href="/buscar/doc.php?id=BOC-j-2025-90249">BOC-j-2025-90249</a>).</li>
+  <li>SE PRORROGA:
+    <ul class="bullet-boe">
+      <li>hasta el 31 de diciembre de 2025, la vigencia del art. 4.3, por Decreto-ley 1/2025, de 3 de febrero (Ref. <a href="/buscar/doc.php?id=BOE-A-2025-7592">BOE-A-2025-7592</a>).</li>
+      <li>hasta el 31 de diciembre de 2024, la vigencia del art. 4.3, por Decreto-ley 8/2024, de 30 de septiembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2024-23638">BOE-A-2024-23638</a>).</li>
+    </ul>
+  </li>
+  <li>SE DEROGA la disposición adicional 3; SE MODIFICA los arts. 9 y 10 y el anexo; SE AÑADE la disposición adicional 5 y SE SUPRIME lo indicado, por Ley 2/2024, de 29 de mayo (Ref. <a href="/buscar/doc.php?id=BOE-A-2024-15709">BOE-A-2024-15709</a>).</li>
+  <li>SE PRORROGA, hasta el 30 de septiembre de 2024, la vigencia del art. 4.3, por Decreto-ley 4/2024, de 1 de abril (Ref. <a href="/buscar/doc.php?id=BOE-A-2024-20761">BOE-A-2024-20761</a>).</li>
+  <li>SE DEROGA la disposición adicional 3, SE MODIFICA los arts. 9 y 10, SE AÑADE anexo y SE SUPRIME la referencia indicada, por Decreto-ley 9/2023, de 18 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2024-4428">BOE-A-2024-4428</a>).</li>
+  <li>SE PRORROGA:
+    <ul class="bullet-boe">
+      <li>hasta el 31 de marzo de 2024, la vigencia del art. 4.3, por Decreto-ley 6/2023, de 25 de septiembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2023-26336">BOE-A-2023-26336</a>).</li>
+      <li>hasta el 30 de septiembre de 2023, la vigencia del art. 4.3, por Decreto-ley 4/2023, de 25 de mayo (Ref. <a href="/buscar/doc.php?id=BOE-A-2023-16465">BOE-A-2023-16465</a>).</li>
+    </ul>
+  </li>
+  <li>SE MODIFICA:
+    <ul class="bullet-boe">
+      <li>el art. 4, por Ley 7/2022, de 28 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2023-5961">BOE-A-2023-5961</a>).</li>
+      <li>los arts. 4.1 y 7.3, por Decreto-ley 15/2022, de 29 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2023-10788">BOE-A-2023-10788</a>).</li>
+      <li>el art. 4, por Decreto-ley 11/2022, de 29 de septiembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2023-8752">BOE-A-2023-8752</a>).</li>
+      <li>los arts. 4, 6 y 7 y SE AÑADE la disposición adicional 4, por Ley 6/2021, de 28 de diciembre de 2021 (Ref. <a href="/buscar/doc.php?id=BOE-A-2022-2544">BOE-A-2022-2544</a>).</li>
+    </ul>
+  </li>
+  <li>SE PUBLICA  Acuerdo de convalidación, por Resolución de 29 de octubre de 2021 (Ref. <a href="/buscar/doc.php?id=BOC-j-2021-90400">BOC-j-2021-90400</a>).</li>
+&#13;
+                </ul>&#13;
+            </div>&#13;
+                              &#13;
+        </div>&#13;
+ </div>&#13;
+                              &#13;
+    <h5>Referencias anteriores</h5>
+<ul class="bullet-boe">
+  <li>DE CONFORMIDAD con el Estatuto aprobado por Ley Orgánica 1/2018, de 5 de noviembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2018-15138">BOE-A-2018-15138</a>).</li>
+</ul>
+<h5>Materias</h5>
+<ul class="bullet-boe">
+  <li>Arrendamientos urbanos</li>
+  <li>Asistencia social</li>
+  <li>Canarias</li>
+  <li>Catástrofes</li>
+  <li>Comisiones de Control y Seguimiento</li>
+  <li>Exenciones</li>
+  <li>Impuesto General Indirecto Canario</li>
+  <li>Impuesto sobre Sucesiones y Donaciones</li>
+  <li>Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados</li>
+  <li>Juego</li>
+  <li>Recaudación</li>
+  <li>Suelo</li>
+  <li>Tasas</li>
+  <li>Vehículos de motor</li>
+  <li>Viviendas</li>
+</ul>
+</div>
+    </div>
+  </div>
+</div>
+<p class="linkSubir"><a href="#top">subir</a></p>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10600 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="ltr" dir="ltr" lang="es-ES">
+
+<head>
+    <title>Calcular los ingresos familiares ponderados y su equivalencia en SARA</title>
+    <meta content="initial-scale=1.0, width=device-width" name="viewport"/>
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Color del tema para PWA -->
+    <meta name="theme-color" content="#153963"/>
+
+    <!-- Elegir manifest para PWA -->
+    <script type="text/javascript" src="https://www.navarra.es/o/portal-navarra-theme-3/js/manifestSelector.js" data-param="https://www.navarra.es/o/portal-navarra-theme-3/templates"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, minimum-scale=1" />
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Calcular los ingresos familiares ponderados y su equivalencia en SARA"/>
+<meta property="og:title" content="Calcular los ingresos familiares ponderados y su equivalencia en SARA"/>
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:site_name" content="Navarra.es"/>
+<meta property="og:url" content="http://www.navarra.es/es/tramites/on/-/line/calcular-los-ingresos-familiares-ponderados"/>
+
+<script type="text/javascript" src="https://www.navarra.es/o/portal-navarra-theme-3/js/custom.js?browserId=other&amp;minifierType=js&amp;languageId=es_ES&amp;b=7210&amp;t=1790845986000"></script>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link data-senna-track="permanent" href="/o/frontend-theme-font-awesome-web/css/main.css" rel="stylesheet" type="text/css" />
+<script data-senna-track="permanent" src="/combo?browserId=other&minifierType=js&languageId=es_ES&b=7210&t=1790845914123&/o/frontend-js-jquery-web/jquery/jquery.min.js&/o/frontend-js-jquery-web/jquery/bootstrap.bundle.min.js&/o/frontend-js-jquery-web/jquery/collapsible_search.js&/o/frontend-js-jquery-web/jquery/fm.js&/o/frontend-js-jquery-web/jquery/form.js&/o/frontend-js-jquery-web/jquery/popper.min.js&/o/frontend-js-jquery-web/jquery/side_navigation.js" type="text/javascript"></script>
+
+
+<link href="https://www.navarra.es/o/portal-navarra-theme-3/images/favicon.ico" rel="icon" />
+
+
+
+
+
+	
+
+		
+			
+				<link data-senna-track="temporary" href="https://www.navarra.es/es/tramites/on/-/line/calcular-los-ingresos-familiares-ponderados" rel="canonical" />
+			
+		
+
+	
+
+		
+			
+				<link data-senna-track="temporary" href="https://www.navarra.es/es/tramites/on/-/line/calcular-los-ingresos-familiares-ponderados" hreflang="es-ES" rel="alternate" />
+			
+			
+
+	
+
+		
+			
+				<link data-senna-track="temporary" href="https://www.navarra.es/eu/tramiteak/on/-/line/calcular-los-ingresos-familiares-ponderados" hreflang="eu-ES" rel="alternate" />
+			
+			
+
+	
+
+		
+			
+				<link data-senna-track="temporary" href="https://www.navarra.es/es/tramites/on/-/line/calcular-los-ingresos-familiares-ponderados" hreflang="x-default" rel="alternate" />
+			
+			
+
+	
+
+
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="https://www.navarra.es/o/portal-navarra-theme-3/css/clay.css?browserId=other&amp;themeId=portalnavarrathemev25_WAR_portalnavarratheme3&amp;minifierType=css&amp;languageId=es_ES&amp;b=7210&amp;t=1790845986000" id="liferayAUICSS" rel="stylesheet" type="text/css" />
+
+
+
+<link data-senna-track="temporary" href="/o/frontend-css-web/main.css?browserId=other&amp;themeId=portalnavarrathemev25_WAR_portalnavarratheme3&amp;minifierType=css&amp;languageId=es_ES&amp;b=7210&amp;t=1790845887355" id="liferayPortalCSS" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+		<link data-senna-track="temporary" href="/combo?browserId=other&amp;minifierType=&amp;themeId=portalnavarrathemev25_WAR_portalnavarratheme3&amp;languageId=es_ES&amp;b=7210&amp;com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_o236yDTBzgp3:%2Fcss%2Fmain.css&amp;com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_templateSearch:%2Fcss%2Fmain.css&amp;com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet:%2Fcss%2Fmain.css&amp;com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet:%2Fcss%2Fmain.css&amp;com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet:%2Fcss%2Fmain.css&amp;es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet:%2Fcss%2Fstyles.css&amp;t=1790845986000" id="f7f8108c" rel="stylesheet" type="text/css" />
+
+	
+
+
+
+
+
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	// <![CDATA[
+		var Liferay = Liferay || {};
+
+		Liferay.Browser = {
+			acceptsGzip: function() {
+				return false;
+			},
+
+			
+
+			getMajorVersion: function() {
+				return 0;
+			},
+
+			getRevision: function() {
+				return '';
+			},
+			getVersion: function() {
+				return '';
+			},
+
+			
+
+			isAir: function() {
+				return false;
+			},
+			isChrome: function() {
+				return false;
+			},
+			isEdge: function() {
+				return false;
+			},
+			isFirefox: function() {
+				return false;
+			},
+			isGecko: function() {
+				return false;
+			},
+			isIe: function() {
+				return false;
+			},
+			isIphone: function() {
+				return false;
+			},
+			isLinux: function() {
+				return false;
+			},
+			isMac: function() {
+				return false;
+			},
+			isMobile: function() {
+				return false;
+			},
+			isMozilla: function() {
+				return true;
+			},
+			isOpera: function() {
+				return false;
+			},
+			isRtf: function() {
+				return false;
+			},
+			isSafari: function() {
+				return false;
+			},
+			isSun: function() {
+				return false;
+			},
+			isWebKit: function() {
+				return false;
+			},
+			isWindows: function() {
+				return false;
+			}
+		};
+
+		Liferay.Data = Liferay.Data || {};
+
+		Liferay.Data.ICONS_INLINE_SVG = true;
+
+		Liferay.Data.NAV_SELECTOR = '#navigation';
+
+		Liferay.Data.NAV_SELECTOR_MOBILE = '#navigationCollapse';
+
+		Liferay.Data.isCustomizationView = function() {
+			return false;
+		};
+
+		Liferay.Data.notices = [
+			null
+
+			
+
+			
+		];
+
+		Liferay.PortletKeys = {
+			DOCUMENT_LIBRARY: 'com_liferay_document_library_web_portlet_DLPortlet',
+			DYNAMIC_DATA_MAPPING: 'com_liferay_dynamic_data_mapping_web_portlet_DDMPortlet',
+			ITEM_SELECTOR: 'com_liferay_item_selector_web_portlet_ItemSelectorPortlet'
+		};
+
+		Liferay.PropsValues = {
+			JAVASCRIPT_SINGLE_PAGE_APPLICATION_TIMEOUT: 0,
+			NTLM_AUTH_ENABLED: false,
+			UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE: 20000000000
+		};
+
+		Liferay.ThemeDisplay = {
+
+			
+
+			
+				getLayoutId: function() {
+					return '58656';
+				},
+
+				
+
+				getLayoutRelativeControlPanelURL: function() {
+					return '/es/group/guest/~/control_panel/manage?p_p_id=es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet';
+				},
+
+				getLayoutRelativeURL: function() {
+					return '/es/tramites/on';
+				},
+				getLayoutURL: function() {
+					return 'https://www.navarra.es/es/tramites/on';
+				},
+				getParentLayoutId: function() {
+					return '58647';
+				},
+				isControlPanel: function() {
+					return false;
+				},
+				isPrivateLayout: function() {
+					return 'false';
+				},
+				isVirtualLayout: function() {
+					return false;
+				},
+			
+
+			getBCP47LanguageId: function() {
+				return 'es-ES';
+			},
+			getCanonicalURL: function() {
+
+				
+
+				return 'https\x3a\x2f\x2fwww\x2enavarra\x2ees\x2fes\x2ftramites\x2fon\x2f-\x2fline\x2fcalcular-los-ingresos-familiares-ponderados';
+			},
+			getCDNBaseURL: function() {
+				return 'https://www.navarra.es';
+			},
+			getCDNDynamicResourcesHost: function() {
+				return '';
+			},
+			getCDNHost: function() {
+				return '';
+			},
+			getCompanyGroupId: function() {
+				return '48801';
+			},
+			getCompanyId: function() {
+				return '48155';
+			},
+			getDefaultLanguageId: function() {
+				return 'es_ES';
+			},
+			getDoAsUserIdEncoded: function() {
+				return '';
+			},
+			getLanguageId: function() {
+				return 'es_ES';
+			},
+			getParentGroupId: function() {
+				return '48192';
+			},
+			getPathContext: function() {
+				return '';
+			},
+			getPathImage: function() {
+				return '/image';
+			},
+			getPathJavaScript: function() {
+				return '/o/frontend-js-web';
+			},
+			getPathMain: function() {
+				return '/es/c';
+			},
+			getPathThemeImages: function() {
+				return 'https://www.navarra.es/o/portal-navarra-theme-3/images';
+			},
+			getPathThemeRoot: function() {
+				return '/o/portal-navarra-theme-3';
+			},
+			getPlid: function() {
+				return '5724795';
+			},
+			getPortalURL: function() {
+				return 'https://www.navarra.es';
+			},
+			getScopeGroupId: function() {
+				return '48192';
+			},
+			getScopeGroupIdOrLiveGroupId: function() {
+				return '48192';
+			},
+			getSessionId: function() {
+				return '';
+			},
+			getSiteAdminURL: function() {
+				return 'https://www.navarra.es/group/guest/~/control_panel/manage?p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view';
+			},
+			getSiteGroupId: function() {
+				return '48192';
+			},
+			getURLControlPanel: function() {
+				return '/es/group/control_panel?refererPlid=5724795';
+			},
+			getURLHome: function() {
+				return 'https\x3a\x2f\x2fwww\x2enavarra\x2ees\x2f';
+			},
+			getUserEmailAddress: function() {
+				return '';
+			},
+			getUserId: function() {
+				return '48158';
+			},
+			getUserName: function() {
+				return '';
+			},
+			isAddSessionIdToURL: function() {
+				return false;
+			},
+			isImpersonated: function() {
+				return false;
+			},
+			isSignedIn: function() {
+				return false;
+			},
+			isStateExclusive: function() {
+				return false;
+			},
+			isStateMaximized: function() {
+				return false;
+			},
+			isStatePopUp: function() {
+				return false;
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		Liferay.AUI = {
+
+			
+
+			getAvailableLangPath: function() {
+				return 'available_languages.jsp?browserId=other&themeId=portalnavarrathemev25_WAR_portalnavarratheme3&colorSchemeId=01&minifierType=js&languageId=es_ES&b=7210&t=1792481553366';
+			},
+			getCombine: function() {
+				return true;
+			},
+			getComboPath: function() {
+				return '/combo/?browserId=other&minifierType=&languageId=es_ES&b=7210&t=1790845887776&';
+			},
+			getDateFormat: function() {
+				return '%d/%m/%Y';
+			},
+			getEditorCKEditorPath: function() {
+				return '/o/frontend-editor-ckeditor-web';
+			},
+			getFilter: function() {
+				var filter = 'raw';
+
+				
+					
+						filter = 'min';
+					
+					
+
+				return filter;
+			},
+			getFilterConfig: function() {
+				var instance = this;
+
+				var filterConfig = null;
+
+				if (!instance.getCombine()) {
+					filterConfig = {
+						replaceStr: '.js' + instance.getStaticResourceURLParams(),
+						searchExp: '\\.js$'
+					};
+				}
+
+				return filterConfig;
+			},
+			getJavaScriptRootPath: function() {
+				return '/o/frontend-js-web';
+			},
+			getLangPath: function() {
+				return 'aui_lang.jsp?browserId=other&themeId=portalnavarrathemev25_WAR_portalnavarratheme3&colorSchemeId=01&minifierType=js&languageId=es_ES&b=7210&t=1790845887776';
+			},
+			getPortletRootPath: function() {
+				return '/html/portlet';
+			},
+			getStaticResourceURLParams: function() {
+				return '?browserId=other&minifierType=&languageId=es_ES&b=7210&t=1790845887776';
+			}
+		};
+
+		Liferay.authToken = 'SS7lLmHr';
+
+		
+
+		Liferay.currentURL = '\x2fes\x2ftramites\x2fon\x2f-\x2fline\x2fcalcular-los-ingresos-familiares-ponderados';
+		Liferay.currentURLEncoded = '\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados';
+	// ]]>
+</script>
+
+<script src="/o/js_loader_config?t=1790845914108" type="text/javascript"></script>
+<script data-senna-track="permanent" src="/combo?browserId=other&minifierType=js&languageId=es_ES&b=7210&t=1790845887776&/o/frontend-js-web/loader/config.js&/o/frontend-js-web/loader/loader.js&/o/frontend-js-web/aui/aui/aui.js&/o/frontend-js-web/aui/aui-base-html5-shiv/aui-base-html5-shiv.js&/o/frontend-js-web/liferay/browser_selectors.js&/o/frontend-js-web/liferay/modules.js&/o/frontend-js-web/liferay/aui_sandbox.js&/o/frontend-js-web/misc/svg4everybody.js&/o/frontend-js-web/aui/arraylist-add/arraylist-add.js&/o/frontend-js-web/aui/arraylist-filter/arraylist-filter.js&/o/frontend-js-web/aui/arraylist/arraylist.js&/o/frontend-js-web/aui/array-extras/array-extras.js&/o/frontend-js-web/aui/array-invoke/array-invoke.js&/o/frontend-js-web/aui/attribute-base/attribute-base.js&/o/frontend-js-web/aui/attribute-complex/attribute-complex.js&/o/frontend-js-web/aui/attribute-core/attribute-core.js&/o/frontend-js-web/aui/attribute-observable/attribute-observable.js&/o/frontend-js-web/aui/attribute-extras/attribute-extras.js&/o/frontend-js-web/aui/base-base/base-base.js&/o/frontend-js-web/aui/base-pluginhost/base-pluginhost.js&/o/frontend-js-web/aui/classnamemanager/classnamemanager.js&/o/frontend-js-web/aui/datatype-xml-format/datatype-xml-format.js&/o/frontend-js-web/aui/datatype-xml-parse/datatype-xml-parse.js&/o/frontend-js-web/aui/dom-base/dom-base.js&/o/frontend-js-web/aui/dom-core/dom-core.js&/o/frontend-js-web/aui/dom-screen/dom-screen.js&/o/frontend-js-web/aui/dom-style/dom-style.js&/o/frontend-js-web/aui/event-base/event-base.js&/o/frontend-js-web/aui/event-custom-base/event-custom-base.js&/o/frontend-js-web/aui/event-custom-complex/event-custom-complex.js&/o/frontend-js-web/aui/event-delegate/event-delegate.js&/o/frontend-js-web/aui/event-focus/event-focus.js&/o/frontend-js-web/aui/event-hover/event-hover.js&/o/frontend-js-web/aui/event-key/event-key.js&/o/frontend-js-web/aui/event-mouseenter/event-mouseenter.js&/o/frontend-js-web/aui/event-mousewheel/event-mousewheel.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="/combo?browserId=other&minifierType=js&languageId=es_ES&b=7210&t=1790845887776&/o/frontend-js-web/aui/event-outside/event-outside.js&/o/frontend-js-web/aui/event-resize/event-resize.js&/o/frontend-js-web/aui/event-simulate/event-simulate.js&/o/frontend-js-web/aui/event-synthetic/event-synthetic.js&/o/frontend-js-web/aui/intl/intl.js&/o/frontend-js-web/aui/io-base/io-base.js&/o/frontend-js-web/aui/io-form/io-form.js&/o/frontend-js-web/aui/io-queue/io-queue.js&/o/frontend-js-web/aui/io-upload-iframe/io-upload-iframe.js&/o/frontend-js-web/aui/io-xdr/io-xdr.js&/o/frontend-js-web/aui/json-parse/json-parse.js&/o/frontend-js-web/aui/json-stringify/json-stringify.js&/o/frontend-js-web/aui/node-base/node-base.js&/o/frontend-js-web/aui/node-core/node-core.js&/o/frontend-js-web/aui/node-event-delegate/node-event-delegate.js&/o/frontend-js-web/aui/node-event-simulate/node-event-simulate.js&/o/frontend-js-web/aui/node-focusmanager/node-focusmanager.js&/o/frontend-js-web/aui/node-pluginhost/node-pluginhost.js&/o/frontend-js-web/aui/node-screen/node-screen.js&/o/frontend-js-web/aui/node-style/node-style.js&/o/frontend-js-web/aui/oop/oop.js&/o/frontend-js-web/aui/plugin/plugin.js&/o/frontend-js-web/aui/pluginhost-base/pluginhost-base.js&/o/frontend-js-web/aui/pluginhost-config/pluginhost-config.js&/o/frontend-js-web/aui/querystring-stringify-simple/querystring-stringify-simple.js&/o/frontend-js-web/aui/queue-promote/queue-promote.js&/o/frontend-js-web/aui/selector-css2/selector-css2.js&/o/frontend-js-web/aui/selector-css3/selector-css3.js&/o/frontend-js-web/aui/selector-native/selector-native.js&/o/frontend-js-web/aui/selector/selector.js&/o/frontend-js-web/aui/widget-base/widget-base.js&/o/frontend-js-web/aui/widget-htmlparser/widget-htmlparser.js&/o/frontend-js-web/aui/widget-skin/widget-skin.js&/o/frontend-js-web/aui/widget-uievents/widget-uievents.js&/o/frontend-js-web/aui/yui-throttle/yui-throttle.js&/o/frontend-js-web/aui/aui-base-core/aui-base-core.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="/combo?browserId=other&minifierType=js&languageId=es_ES&b=7210&t=1790845887776&/o/frontend-js-web/aui/aui-base-lang/aui-base-lang.js&/o/frontend-js-web/aui/aui-classnamemanager/aui-classnamemanager.js&/o/frontend-js-web/aui/aui-component/aui-component.js&/o/frontend-js-web/aui/aui-debounce/aui-debounce.js&/o/frontend-js-web/aui/aui-delayed-task-deprecated/aui-delayed-task-deprecated.js&/o/frontend-js-web/aui/aui-event-base/aui-event-base.js&/o/frontend-js-web/aui/aui-event-input/aui-event-input.js&/o/frontend-js-web/aui/aui-form-validator/aui-form-validator.js&/o/frontend-js-web/aui/aui-node-base/aui-node-base.js&/o/frontend-js-web/aui/aui-node-html5/aui-node-html5.js&/o/frontend-js-web/aui/aui-selector/aui-selector.js&/o/frontend-js-web/aui/aui-timer/aui-timer.js&/o/frontend-js-web/liferay/dependency.js&/o/frontend-js-web/liferay/dom_task_runner.js&/o/frontend-js-web/liferay/events.js&/o/frontend-js-web/liferay/language.js&/o/frontend-js-web/liferay/lazy_load.js&/o/frontend-js-web/liferay/liferay.js&/o/frontend-js-web/liferay/util.js&/o/frontend-js-web/liferay/global.bundle.js&/o/frontend-js-web/liferay/portal.js&/o/frontend-js-web/liferay/portlet.js&/o/frontend-js-web/liferay/workflow.js&/o/frontend-js-web/liferay/form.js&/o/frontend-js-web/liferay/form_placeholders.js&/o/frontend-js-web/liferay/icon.js&/o/frontend-js-web/liferay/menu.js&/o/frontend-js-web/liferay/notice.js&/o/frontend-js-web/liferay/poller.js" type="text/javascript"></script>
+
+
+
+
+	
+
+	<script data-senna-track="temporary" src="/o/js_bundle_config?t=1790845932510" type="text/javascript"></script>
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	// <![CDATA[
+		
+			
+				
+		
+
+		
+
+		
+	// ]]>
+</script>
+
+
+
+
+
+	
+		
+
+			
+
+			
+				<script data-senna-track="permanent" id="googleAnalyticsScript" type="text/javascript">
+					(function(i, s, o, g, r, a, m) {
+						i['GoogleAnalyticsObject'] = r;
+
+						i[r] = i[r] || function() {
+							var arrayValue = i[r].q || [];
+
+							i[r].q = arrayValue;
+
+							(i[r].q).push(arguments);
+						};
+
+						i[r].l = 1 * new Date();
+
+						a = s.createElement(o);
+						m = s.getElementsByTagName(o)[0];
+						a.async = 1;
+						a.src = g;
+						m.parentNode.insertBefore(a, m);
+					})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+					
+
+					
+						
+							ga('create', 'UA-47297284-2', 'auto');
+						
+					
+
+					
+
+					
+
+					ga('send', 'pageview');
+
+					
+				</script>
+			
+		
+		
+
+
+
+	
+		
+
+			
+
+			
+				<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//estadisticasweb.navarra.es/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '8']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+<script type="text/javascript">
+(function() {
+    var qtm = document.createElement("script"); qtm.type = "text/javascript"; qtm.async = 1;
+    qtm.src = "https://cdn.quantummetric.com/qscripts/quantum-gobnavarra.js";
+    var d = document.getElementsByTagName("script")[0];
+    !window.QuantumMetricAPI && d.parentNode.insertBefore(qtm, d);
+})();
+</script>
+			
+		
+	
+
+
+
+	
+		
+
+			
+
+			
+				<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J2MRZ4T1BF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J2MRZ4T1BF');
+</script>
+			
+		
+	
+
+
+
+	
+		
+
+			
+
+			
+				<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXWQDTT');</script>
+<!-- End Google Tag Manager -->
+			
+		
+	
+
+
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="https://www.navarra.es/o/portal-navarra-theme-3/css/main.css?browserId=other&amp;themeId=portalnavarrathemev25_WAR_portalnavarratheme3&amp;minifierType=css&amp;languageId=es_ES&amp;b=7210&amp;t=1790845986000" id="liferayThemeCSS" rel="stylesheet" type="text/css" />
+
+
+
+
+	<style data-senna-track="temporary" type="text/css">
+		/*tique 3394314 21/08 */
+.bloque-enlaces-principal .col-item-principal .no-break {
+	text-underline-offset: 25% !important;
+}
+#navbar-collapse-2 {
+     height: 110px !important;    
+     background: #fff;
+     overflow-y: auto;
+     margin-left:0px!important;
+    padding: 20px 0 40px 00px;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0
+}
+
+a, a:hover {
+  color: #c33;
+}
+
+div#ControlMenu .collapse.show {
+  display: inherit !important;
+}
+
+.a2a_menu.a2a_full.a2a_localize .a2a_full_footer a:focus {
+	outline: 2px solid red !important;
+}
+
+.navbar-navarra .nav-pills {
+    padding: 0px 15px 0px 0px !important;
+    margin-left: -60px !important;
+}
+@media (max-width: 768px){
+.navbar-navarra .nav-pills {
+    padding: 0px 0px 0px 0px !important;
+    margin-left: 0px !important;
+   display: block !important;
+}
+
+.navbar-navarra .idioma #portlet_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3{
+
+    padding: 42px 0px 5px 25px !important;
+
+}
+
+.navbar-navarra .btnSearch[aria-expanded="false"] span.material-icons-round {
+    display: block;
+    position: absolute !important;
+    top: -8px !important;
+    margin-left: -12px !important;
+}
+
+.navbar-navarra span.menu-text {
+    margin-left: 32px !important;
+}
+}
+	</style>
+
+
+
+
+
+	<style data-senna-track="temporary" type="text/css">
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_ .portlet-content {
+
+}
+@media print {
+	h1.title{
+		margin-top: 50px!important;
+	}
+	.panel-body {
+		margin-top: 20px!important;
+	}
+	.faldonBorder {
+		margin-top: 30px;
+	}
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_ .portlet-content {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_generalwarning_ .portlet-content {
+
+}
+.iframe-16-9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height:0;
+    overflow: hidden;
+}
+.iframe-16-9  iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_ .portlet-content {
+
+}
+.update-date {
+    padding-bottom: 0px;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3_ .portlet-content {
+background-color: #F3F3F3;
+padding-top: 1%
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_es_navarra_base_pdf_web_portlet_PdfWebPortlet_ .portlet-content {
+
+}
+#portlet_es_navarra_base_pdf_web_portlet_PdfWebPortlet {
+	margin-top: 49px!important;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas_ .portlet-content {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas_ .portlet-content {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas_ .portlet-content {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs_ .portlet-content {
+margin-bottom: 60px
+}
+
+
+
+
+				
+
+			
+
+		
+
+	</style>
+
+
+<link data-senna-track="permanent" href="https://www.navarra.es/combo?browserId=other&minifierType=css&languageId=es_ES&b=7210&t=1790845890097&/o/change-tracking-change-lists-indicator-theme-contributor/change_tracking_change_lists_indicator.css" rel="stylesheet" type = "text/css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	if (window.Analytics) {
+		window._com_liferay_document_library_analytics_isViewFileEntry = false;
+	}
+</script>
+
+<script type="text/javascript">
+// <![CDATA[
+Liferay.on(
+	'ddmFieldBlur', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldBlurred',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					focusDuration: event.focusDuration,
+					formId: event.formId,
+					page: event.page
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFieldFocus', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldFocused',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					formId: event.formId,
+					page: event.page
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormPageShow', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'pageViewed',
+				'Form',
+				{
+					formId: event.formId,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormSubmit', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formSubmitted',
+				'Form',
+				{
+					formId: event.formId
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormView', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formViewed',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+// ]]>
+</script>
+
+    
+	<!--No funcionan si se incluyen en scripts.ftl -->
+	<script type="text/javascript" src="https://www.navarra.es/o/portal-navarra-theme-3/js/lightgallery.min.js"></script>
+    <script type="text/javascript" src="https://www.navarra.es/o/portal-navarra-theme-3/js/lg-pager.min.js"></script>
+	<script type="text/javascript" src="https://www.navarra.es/o/portal-navarra-theme-3/js/froogaloop2.min.js"></script>
+    <script type="text/javascript" src="https://www.navarra.es/o/portal-navarra-theme-3/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://www.navarra.es/o/portal-navarra-theme-3/js/tramites/listado-tramites.js"></script>
+	
+<link rel="stylesheet" type="text/css" media="print" href="https://www.navarra.es/o/portal-navarra-theme-3/css/print.css?browserId=other&amp;themeId=portalnavarrathemev25_WAR_portalnavarratheme3&amp;minifierType=css&amp;languageId=es_ES&amp;b=7210&amp;t=1790845986000">
+    <script>
+        if (checkPrintParameter())
+        {
+            $("<link/>", {
+                rel: "stylesheet",
+                type: "text/css",
+                media: "all",
+                href: "https://www.navarra.es/o/portal-navarra-theme-3/css/print.css?browserId=other&amp;themeId=portalnavarrathemev25_WAR_portalnavarratheme3&amp;minifierType=css&amp;languageId=es_ES&amp;b=7210&amp;t=1790845986000"
+            }).appendTo("head");
+
+            //var script = document.createElement("script");  // create a script DOM node
+            //script.src = "https://unpkg.com/pagedjs/dist/paged.polyfill.js";  // set its src to the provided URL
+            //document.head.appendChild(script);  // add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
+        }
+    </script>
+
+    
+    
+</head>
+
+<body class=" controls-visible default yui3-skin-sam guest-site signed-out public-page site">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<nav class="quick-access-nav" id="ykdj_quickAccessNav">
+		<span class="hide-accessible">Navegación</span>
+
+		<ul>
+			
+				<li><a href="#main-content">Saltar al contenido</a></li>
+			
+
+			
+
+		</ul>
+	</nav>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" id="wrapper">
+
+    <table class="report-container" role="presentation">
+        <thead class="report-header" role="presentation">
+            <tr role="presentation">
+                <td class="report-header-cell" style="height: 20px;text-align: left;border: none !important;margin: 0mm !important;padding: 0mm !important;" role="presentation">
+                    <div class="header-info">
+                        <div class="void" style="display: none">
+                            <section class="add_app">
+                                <div class="message">
+                                    <div class="left">
+                                        <button id="closeInstallBtn" class="close_message">
+                                            <span class="material-icons-round">close</span>
+                                        </button>
+                                        <div class="content">
+                                            <img id="appIcon" >
+                                            <div class="text">
+                                                <p id="installTitle" class="title"></p>
+                                                <p class="description">Descárgate la app</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button id="downloadAppBtn" class="open_app">Abrir</button>
+                                </div>
+                            </section>
+                        </div>
+
+<style>
+
+	.report-content.opacity-class::after{
+	  background-color: rgba(0,0,0,0.35);
+	    content: "";
+	    height: 100%;
+	    /* margin-top: -100px; */
+	    left: 0;
+	    top: 0;
+	    bottom: 0;
+	    position: absolute;
+	    width: 100%;
+	    
+	
+	}
+	
+	.report-footer.opacity-class::after{
+	  background-color: rgba(0,0,0,0.35);
+	    content: "";
+	    height: 100%;
+	    /* margin-top: -100px; */
+	    left: 0;
+	    top: 0;
+	    bottom: 0;
+	    position: absolute;
+	    width: 100%;
+	
+	}
+	
+	.report-footer .image-list img.opacity-class-img{
+	  opacity: 0.1;
+	
+	}
+	
+	.navbar-navarra .navbar-collapse-1{
+		transition: 0s !important;
+	}
+	
+	.navbar-collapse-2{
+		transition: 0s !important;
+	}
+	
+	.container.breadcrumbsContainer.breadcrumbsContainerCustom .breadcrumbs a.opacity-class{
+	    color: #ffffff8f;
+	}
+	.container.breadcrumbsContainer.breadcrumbsContainerCustom .breadcrumbs a .iconVerticalAlign.opacity-class{
+	    color: #ffffff8f;
+	}
+	
+	.navbar-navarra .links-tools-wrapper .navbar-links-wrapper .links-navbar li {
+	    -webkit-transition: all 150ms ease-in;
+	    -moz-transition: all 150ms ease-in !important;
+	    -ms-transition: all 150ms ease-in !important;
+	    -o-transition: all 150ms ease-in !important;
+	    transition: all 150ms ease-in !important;
+	}
+	
+	.navbar-navarra #portlet_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3 {
+	    -webkit-transition: all 300ms ease-out;
+	    -moz-transition: all 300ms ease-out !important;
+	    -ms-transition: all 300ms ease-out !important;
+	    -o-transition: all 300ms ease-out !important;
+	    transition: all 300ms ease-out !important;
+	}
+	
+	.navbar-navarra #portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas .tematicas-item{
+	
+		-webkit-transition: all 300ms ease-out;
+	    -moz-transition: all 300ms ease-out !important;
+	    -ms-transition: all 300ms ease-out !important;
+	    -o-transition: all 300ms ease-out !important;
+	    transition: all 300ms ease-out !important;
+	
+	}
+	
+	.navbar-navarra #portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_main_menu .main-menu-item{
+		-webkit-transition: all 300ms ease-out;
+	    -moz-transition: all 300ms ease-out !important;
+	    -ms-transition: all 300ms ease-out !important;
+	    -o-transition: all 300ms ease-out !important;
+	    transition: all 300ms ease-out !important;
+	
+	}
+	
+	.navbar-navarra #portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu .other-pages-wrapper .other-pages-element{
+	
+		-webkit-transition: all 300ms ease-out;
+	    -moz-transition: all 300ms ease-out !important;
+	    -ms-transition: all 300ms ease-out !important;
+	    -o-transition: all 300ms ease-out !important;
+	    transition: all 300ms ease-out !important;
+	
+	}
+	
+
+</style>
+
+    <nav class="navbar navbar-navarra" role="navigation" aria-label="Navegación principal">
+    <div class="navbar-bg container-fluid"></div>
+
+    <div class="container d-block">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4" style="text-align: left;">
+                <button type="button" class="toggle collapsed botonMenu" id="botonMenu" data-toggle="collapse" data-target="#navbar-collapse-1" aria-label="Menú principal" aria-expanded="false">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                    <span class="menu-text">
+Menú                	</span>
+                </button>
+            </div>
+            <div class="col-xs-4 col-sm-4">
+                <div class="navbar-brand">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-without-title portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+				
+					
+					
+					
+
+						
+
+						<div class="" data-fragments-editor-item-id="29009-4084519" data-fragments-editor-item-type="fragments-editor-mapped-item" >
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="4084517" data-analytics-asset-title="Portal - Logo principal 3.0" data-analytics-asset-type="web-content">
+	
+
+	
+
+<a class="navbar-brand1"
+   href="https://www.navarra.es/es/" title="Navarra.es" aria-label="Navarra.es"
+   
+>
+        <img   class="img-fluid"
+               src="/documents/48192/4084223/logo+identidad+digital+navarra+castellano.svg/e9a81c3f-2f27-851d-df86-9b92203c5288?t=1766042959680"
+               alt="Ir a la página de inicio"
+               title=""
+        />
+</a>
+
+<style>
+    .navbar-navarra .navbar-brand1 img {
+        max-height: 22px;
+    }
+</style>
+</div>
+
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 links-tools-wrapper ">
+                <div class="navbar-links-wrapper hidden-xs hidden-sm">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_  portlet-static portlet-static-end portlet-without-title portlet-navigation " id="p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_">
+		<span id="p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				<div class="links-navbar">
+    
+        <div id="navbar_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt" class="navbar-links">
+            <ul aria-label=Páginas del sitio web" class="nav nav-pills navbar-site" role="menubar">
+
+
+
+
+
+
+                        <li class="lfr-nav-item nav-item navbar-links-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32627039" role="presentation">
+                            <a aria-labelledby="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32627039"  class="nav-link text-truncate" href='https://www.navarra.es/es/mi-carpeta'  role="menuitem">
+                                <span class="text-truncate"> Mi carpeta </span>
+                            </a>
+
+                        </li>
+
+
+
+
+
+                        <li class="lfr-nav-item nav-item navbar-links-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32138617" role="presentation">
+                            <a aria-labelledby="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32138617"  class="nav-link text-truncate" href='https://www.navarra.es/es/atencion-ciudadana'  role="menuitem">
+                                <span class="text-truncate"> Atención ciudadana </span>
+                            </a>
+
+                        </li>
+            </ul>
+        </div>
+
+<script type="text/javascript">
+// <![CDATA[
+AUI().use('liferay-navigation-interaction', function(A) {(function() {var $ = AUI.$;var _ = AUI._;            var navigation = A.one('#navbar_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt');
+
+            Liferay.Data.NAV_INTERACTION_LIST_SELECTOR = '.navbar-site';
+            Liferay.Data.NAV_LIST_SELECTOR = '.navbar-site';
+
+            if (navigation) {
+                navigation.plug(Liferay.NavigationInteraction);
+            }
+})();});
+// ]]>
+</script></div>
+			
+			
+		
+	
+	
+	
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+                </div>
+                <ul class="navbar-tools-wrapper">
+                    <li class="hidden-xs hidden-sm idioma">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_  portlet-static portlet-static-end portlet-without-title portlet-language " id="p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3_">
+		<span id="p_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+    <div class="dropdown dropdown-idioma" tabindex="0">
+                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span>ES</span>
+                        <i class="material-icons-round pull-right" aria-hidden="true" role="presentation">keyboard_arrow_down</i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li class="dropdown-item">
+<a href="/es/c/portal/update_language?p_l_id=5724795&amp;redirect=%2Fes%2Ftramites%2Fon%2F-%2Fline%2Fcalcular-los-ingresos-familiares-ponderados&amp;languageId=eu_ES" lang="eu-ES" >EU</a>                        </li>
+                    </ul>
+    </div>
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+                    </li>
+                    <li class="lupa">
+                        <button type="button" class="btnSearch toggle collapsed " data-toggle="collapse"
+                                data-target="#navbar-collapse-2" aria-expanded="false" aria-label="Buscar">
+                            <span class="material-icons-round">search</span>
+                            <span class="icon-bar top-bar search"></span>
+		                    <span class="icon-bar middle-bar search"></span>
+		                    <span class="icon-bar bottom-bar search"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="navbar-fluid-wrapper container-fluid">
+        <div class="collapse navbar-collapse-1" id="navbar-collapse-1">
+            <!--<div class="hidden-xs white-background">   
+            </div>-->
+            <div class="container-fluid bg-white mobile-tools-wrapper visible-xs visible-sm ">
+                <div class="container">
+                    <div class="col-xs-12">
+                        <div class=" navbar-tools-mobile">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_  portlet-static portlet-static-end portlet-without-title portlet-navigation " id="p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_">
+		<span id="p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				<div class="links-navbar">
+    
+        <div id="navbar_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt" class="navbar-links">
+            <ul aria-label=Páginas del sitio web" class="nav nav-pills navbar-site" role="menubar">
+
+
+
+
+
+
+                        <li class="lfr-nav-item nav-item navbar-links-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32627039" role="presentation">
+                            <a aria-labelledby="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32627039"  class="nav-link text-truncate" href='https://www.navarra.es/es/mi-carpeta'  role="menuitem">
+                                <span class="text-truncate"> Mi carpeta </span>
+                            </a>
+
+                        </li>
+
+
+
+
+
+                        <li class="lfr-nav-item nav-item navbar-links-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32138617" role="presentation">
+                            <a aria-labelledby="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32138617"  class="nav-link text-truncate" href='https://www.navarra.es/es/atencion-ciudadana'  role="menuitem">
+                                <span class="text-truncate"> Atención ciudadana </span>
+                            </a>
+
+                        </li>
+            </ul>
+        </div>
+
+<script type="text/javascript">
+// <![CDATA[
+AUI().use('liferay-navigation-interaction', function(A) {(function() {var $ = AUI.$;var _ = AUI._;            var navigation = A.one('#navbar_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt');
+
+            Liferay.Data.NAV_INTERACTION_LIST_SELECTOR = '.navbar-site';
+            Liferay.Data.NAV_LIST_SELECTOR = '.navbar-site';
+
+            if (navigation) {
+                navigation.plug(Liferay.NavigationInteraction);
+            }
+})();});
+// ]]>
+</script></div>
+			
+			
+		
+	
+	
+	
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+                            <div class="idioma">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_  portlet-static portlet-static-end portlet-without-title portlet-language " id="p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3_">
+		<span id="p_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+    <div class="dropdown dropdown-idioma" tabindex="0">
+                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span>ES</span>
+                        <i class="material-icons-round pull-right" aria-hidden="true" role="presentation">keyboard_arrow_down</i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li class="dropdown-item">
+<a href="/es/c/portal/update_language?p_l_id=5724795&amp;redirect=%2Fes%2Ftramites%2Fon%2F-%2Fline%2Fcalcular-los-ingresos-familiares-ponderados&amp;languageId=eu_ES" lang="eu-ES" >EU</a>                        </li>
+                    </ul>
+    </div>
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		<div class="contenedor-fluido-background" style="position: relative;">
+			<div class="container-fluid background-holder" style="position: absolute;overflow: hidden;margin: 0 auto;position: absolute;height: 100%;pointer-events: none;z-index: -1;">
+						<div class="row h-100" style="width: 100%;">
+							      <div class="col-lg-6 bg-primary" style="height: 100%;background-color: white !important;">
+							      </div>
+							      <div class="col-lg-6 bg-warning" style="height: 100%;background: #EDEDED !important;">
+							      </div>
+						</div>
+			</div>
+            <div class="container">
+                <div class="row row-navarra-header">
+                    <div class="col-lg-9 col-xs-12 col-sm-8 left-column">
+    	                <div class="webs-tematicas four">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_  portlet-static portlet-static-end portlet-with-title portlet-navigation " id="p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas_">
+		<span id="p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+                <div class="autofit-col autofit-col-expand">
+                    <h2 class="portlet-title-text">Servicios por temas</h2>
+                </div>
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				    <ul class="tematicas-lista" role="menu">
+            <li class="tematicas-item">
+                    <a href="https://www.navarra.es/es/hacienda" >Hacienda</a>
+            </li>
+            <li class="tematicas-item">
+                    <a href="https://www.navarra.es/es/empleo" >Empleo</a>
+            </li>
+            <li class="tematicas-item">
+                    <a href="https://www.navarra.es/es/vivienda" >Vivienda</a>
+            </li>
+            <li class="tematicas-item">
+                    <a href="https://www.navarra.es/es/salud" >Salud</a>
+            </li>
+    </ul>
+
+
+<script>
+if($("#portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas .portlet-title-text").length == 0){
+        $("#portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas .tematicas-lista").css("margin-top","53px");
+}
+   
+
+</script>
+			
+			
+		
+	
+	
+	
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+    	                </div>     
+    	                <div class="main-nav-menu">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_  portlet-static portlet-static-end portlet-without-title portlet-navigation " id="p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_main_menu_">
+		<span id="p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_main_menu"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_main_menu">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				        <div class="main-menu-list-wrapper collapsed">
+
+            <ul class="main-menu-column d-none d-sm-block" role="menu">
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/actividad-economica" >Actividad económica</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/agricultura-y-ganaderia" >Agricultura y Ganadería</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/derechos-sociales" >Asuntos sociales</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/consumo" >Consumo</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/cultura" >Cultura</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/deporte" >Deporte</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/educacion" >Educación</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+            </ul>
+             <ul class="main-menu-column mobile-menu-temas d-block d-sm-none" role="menu">
+
+                                <li class="main-menu-item" role="menuitem">
+                                        <a href="https://www.navarra.es/es/actividad-economica" >Actividad económica</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li> 
+               
+
+                                <li class="main-menu-item" role="menuitem">
+                                        <a href="https://www.navarra.es/es/agricultura-y-ganaderia" >Agricultura y Ganadería</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li> 
+               
+
+                                <li class="main-menu-item" role="menuitem">
+                                        <a href="https://www.navarra.es/es/derechos-sociales" >Asuntos sociales</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li> 
+               
+
+                                <li class="main-menu-item" role="menuitem">
+                                        <a href="https://www.navarra.es/es/consumo" >Consumo</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li> 
+               
+
+                                <li class="main-menu-item" role="menuitem">
+                                        <a href="https://www.navarra.es/es/cultura" >Cultura</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li> 
+               
+
+                    <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/deporte" >Deporte</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                            <div class="show-all-link">
+                                <span>    
+Ver todos los temas                                </span>
+                                <i class="material-icons-round pull-down">keyboard_arrow_down</i>
+                            </div> 
+                            
+                             <div class="show-all-link menos" style="display: none;">
+                                <span>    
+                                    Ver menos
+                                </span>
+                                <i class="material-icons-round pull-down">keyboard_arrow_up</i>
+                            </div> 
+
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/educacion" >Educación</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+            </ul>
+            <ul class="main-menu-column d-none d-sm-block" role="menu">
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/empleo" >Empleo</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/hacienda" >Hacienda</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/igualdad-y-violencia-de-genero" >Igualdad y violencia de género</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/justicia" >Justicia</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/juventud" >Juventud</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/medio-ambiente" >Medio ambiente</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/migraciones" >Migraciones</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+            </ul>
+             <ul class="main-menu-column mobile-menu-temas d-block d-sm-none" role="menu">
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/empleo" >Empleo</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/hacienda" >Hacienda</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/igualdad-y-violencia-de-genero" >Igualdad y violencia de género</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/justicia" >Justicia</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/juventud" >Juventud</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/medio-ambiente" >Medio ambiente</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/migraciones" >Migraciones</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+            </ul>
+            <ul class="main-menu-column d-none d-sm-block" role="menu">
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/accion-exterior" >Política exterior</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/salud" >Salud</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/seguridad-y-emergencias" >Seguridad y emergencias</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/territorio-paisaje-y-urbanismo" >Territorio, paisaje y urbanismo</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/transportes" >Transportes</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+                    <li class="main-menu-item" role="menuitem">
+                            <a href="https://www.navarra.es/es/vivienda" >Vivienda</a>
+                            <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                    </li>
+            </ul>
+             <ul class="main-menu-column mobile-menu-temas d-block d-sm-none" role="menu">
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/accion-exterior" >Política exterior</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/salud" >Salud</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/seguridad-y-emergencias" >Seguridad y emergencias</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/territorio-paisaje-y-urbanismo" >Territorio, paisaje y urbanismo</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/transportes" >Transportes</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+                    
+                    
+                                 <li class="main-menu-item ocultas" style="display: none;" role="menuitem">
+                                        <a href="https://www.navarra.es/es/vivienda" >Vivienda</a>
+                                        <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                                </li>  
+                    
+               
+
+            </ul>
+   
+</div>
+
+<script>
+    $(".show-all-link").click(function(){
+        $(".main-menu-item.ocultas").removeAttr("style");
+        $(".show-all-link").hide();
+         $(".show-all-link.menos").removeAttr("style");
+        
+    })
+    
+    $(".show-all-link.menos").click(function(){
+        $(".main-menu-item.ocultas").css("display","none");
+        $(".show-all-link").show();
+         $(".show-all-link.menos").css("display","none");
+        
+    })
+</script>
+			
+			
+		
+	
+	
+	
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+                       </div>       
+                    </div>
+                    <div class="col-lg-3 col-xs-12 col-sm-4 right-column" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_  portlet-static portlet-static-end portlet-without-title portlet-navigation " id="p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu_">
+		<span id="p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				
+    <div class="other-pages-wrapper">
+            <a href="https://www.navarra.es/es/mi-carpeta" target="" class="other-pages-element">
+                <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                <div class="element-title underline-to-right">
+                     Mi carpeta
+                </div>
+                <div class="element-subtitle">
+
+
+
+                    El área personal: las carpetas temáticas y notificaciones electrónicas
+                </div>
+            </a>
+            <a href="https://www.navarra.es/es/tramites" target="" class="other-pages-element">
+                <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                <div class="element-title underline-to-right">
+                     Trámites - Sede electrónica
+                </div>
+                <div class="element-subtitle">
+
+
+
+                    Ayudas, empleo público, impuestos, autorizaciones, certificados...
+                </div>
+            </a>
+            <a href="https://www.navarra.es/es/gobierno-de-navarra" target="" class="other-pages-element">
+                <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                <div class="element-title underline-to-right">
+                     Gobierno de Navarra
+                </div>
+                <div class="element-subtitle">
+
+
+
+                    El equipo de Gobierno, su programa y presupuesto, y los departamentos
+                </div>
+            </a>
+            <a href="https://www.navarra.es/es/sala-de-prensa" target="" class="other-pages-element">
+                <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                <div class="element-title underline-to-right">
+                     Sala de prensa
+                </div>
+                <div class="element-subtitle">
+
+
+
+                    Las noticias del Gobierno y de la Administración, y la agenda informativa
+                </div>
+            </a>
+            <a href="https://www.navarra.es/es/atencion-ciudadana" target="" class="other-pages-element">
+                <i class="material-icons-round pull-right">keyboard_arrow_right</i>
+                <div class="element-title underline-to-right">
+                     Atención ciudadana
+                </div>
+                <div class="element-subtitle">
+
+
+
+                    En las oficinas, correo electrónico, teléfono, chat y redes sociales
+                </div>
+            </a>
+    </div>
+
+<script>
+if($("#portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu .portlet-title-text").length == 0){
+        $("#portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu .other-pages-wrapper").css("margin-top","52px");
+}else{
+$("#portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu .other-pages-wrapper").css("margin-top","0px");
+}
+   
+
+</script>
+			
+			
+		
+	
+	
+	
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+                    
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+		
+    </div>
+</nav>
+
+<script>
+    $( ".botonMenu" ).click(function() {
+        if(!$(".btnSearch").hasClass("collapsed")){
+            $( ".btnSearch" ).click();
+        }
+    });
+	 $( ".btnSearch" ).click(function() {
+        if(!$(".botonMenu").hasClass("collapsed")){
+            $( ".botonMenu" ).click();
+        }
+    });
+    
+	
+    
+    document.querySelector(".botonMenu").addEventListener("click", () => {
+
+
+    if($(".navbar-navarra .navbar-collapse-1").is(":visible")){
+				    $(".report-content").removeClass("opacity-class");
+	                $(".report-footer").removeClass("opacity-class");
+	                $(".report-footer .image-list img").removeClass("opacity-class-img"); 
+
+        		
+
+
+
+
+	 }
+	 
+	 if($(".navbar-navarra .navbar-collapse-1").is(":hidden")){
+	        		$(".report-content").addClass("opacity-class");
+	        		$(".report-footer").addClass("opacity-class");
+	                $(".report-footer .image-list img").addClass("opacity-class-img");
+	
+	 	 }
+	
+	 });
+	 
+	 document.querySelector(".lupa .btnSearch").addEventListener("click", () => {
+
+
+    if($(".navbar-collapse-2").is(":visible")){
+				    $(".report-content").removeClass("opacity-class");
+	                $(".report-footer").removeClass("opacity-class");
+	                $(".report-footer .image-list img").removeClass("opacity-class-img"); 
+	                $(".container.breadcrumbsContainer.breadcrumbsContainerCustom .breadcrumbs a").removeClass("opacity-class");
+        			$(".container.breadcrumbsContainer.breadcrumbsContainerCustom .breadcrumbs a .iconVerticalAlign").removeClass("opacity-class");
+        		
+
+
+
+
+	 }
+	 
+	 if($(".navbar-collapse-2").is(":hidden")){
+	        		$(".report-content").addClass("opacity-class");
+	        		$(".report-footer").addClass("opacity-class");
+	                $(".report-footer .image-list img").addClass("opacity-class-img");
+	                $(".container.breadcrumbsContainer.breadcrumbsContainerCustom .breadcrumbs a").addClass("opacity-class");
+	                $(".container.breadcrumbsContainer.breadcrumbsContainerCustom .breadcrumbs a .iconVerticalAlign").addClass("opacity-class");
+	     
+	                
+	
+	 	 }
+	
+	 });
+	 
+
+	
+</script>
+							 
+                    </div>
+                </td>
+            </tr>
+        </thead>
+        <tbody class="report-content" role="presentation">
+        <tr role="presentation">
+            <td class="report-content-cell" role="presentation">
+                <div class="main">
+<section id="content">
+    
+<div class="share_container hidden-print">
+    <div class="a2a_kit a2a_kit_size_48 a2a_floating_style a2a_navarra_style">
+
+        <a class="custom_printPDF" title="Imprimir" href="#" style="display: none;">
+            <span class="a2a_svg a2a_s__default a2a_s_print" style="background-color:gray; width: 48px; line-height: 48px; height: 48px; background-size: 48px; border-radius: 7px;"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M22.5 19.59V24h-13v-4.41z" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.4"></path><path d="M9.44 21.12H6.38a.8.8 0 0 1-.87-.7v-7.35a.8.8 0 0 1 .88-.7h19.23a.8.8 0 0 1 .88.7v7.35a.8.8 0 0 1-.88.7h-3.06" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.4"></path><path d="M22.5 12.32V8h-13v4.28" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.4"></path></svg></span>
+        </a>
+        <a class="a2a_button_print" title="Imprimir" href="?print=true" style="display: none;"></a>
+        <span class="share_split splitPrint" ></span>
+        <a class="a2a_button_facebook" title="Compartir en Facebook"></a>
+        <span class="share_split"></span>
+        <a class="a2a_button_x" title="Compartir en X"></a>
+        <span class="share_split"></span>
+        <a class="a2a_button_whatsapp only-mobile" title="Compartir por Whatsapp"></a>
+        <span class="share_split only-mobile"></span>
+        <a class="a2a_button_email" title="Compartir por email"></a>
+        <span class="share_split"></span>
+        <a class="a2a_dd" href="https://www.addtoany.com/share" title="Compartir por ..."></a>
+    </div>
+    <script async type="text/javascript" src="https://static.addtoany.com/menu/page.js"></script>
+</div>
+
+<script type="text/javascript">
+    function initAddToAny() {
+        try {
+            var a2a_config = a2a_config || {};
+            a2a_config.callbacks = a2a_config.callbacks || [];
+            // a2a_config.locale = "<%=GetLanguage2Letters()%>";
+            a2a_config.locale = "es_ES";
+
+            if (isMobileNavigation()) {
+                a2a_config.prioritize = ["pinterest", "copy_link", "telegram", "sms", "line", "linkedin"];
+            } else {
+                a2a_config.prioritize = ["pinterest", "copy_link", "linkedin", "pocket", "reddit"];
+            }
+            a2a_config.callbacks.push({
+                share: function (data) {
+                    dataLayer.push({
+                        'event': 'AddToAnyShare',
+                        'socialNetwork': 'AddToAny',
+                        'socialAction': data.service,
+                        'socialTarget': data.url
+                    });
+                }
+            });
+        } catch (e) {
+            console.log(e);
+        }
+    }
+    initAddToAny();
+
+    function showPrintButton()
+    {
+        try {
+            if (!isMobileNavigation()) {
+                $(".a2a_button_print").show();
+                $(".splitPrint").show();
+            }
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
+    function changePrintButton()
+    {
+        try {
+            if (!isMobileNavigation()) {
+                $(".custom_printPDF").show();
+                $(".splitPrint").show();
+                $(".custom_printPDF")[0].href = $('.titulo-contenido-lateral')[0].href;
+            }
+        } catch (e) {
+            console.log(e);
+        }
+
+    }
+    function injectJScript()
+    {
+        $("<script/>", {
+            src: "https://unpkg.com/pagedjs/dist/paged.polyfill.js"
+        }).appendTo("head");
+
+        /*var script = document.createElement('script');
+        script.onload = function () {
+            //do stuff with the script
+        };
+        script.src = something;
+
+        document.head.appendChild(script); //or something of the likes*/
+    }
+
+</script>
+        <div class="collapse navbar-collapse-2" id="navbar-collapse-2">
+            <div class="container">
+                    <form id="portal_searcher_form_cms" action="https://www.navarra.es/es/buscador/-/buscador/filter/0/sort/_score/facet/0/tag/0/date/0/type/0/rpp/10/page/1/q/" class="">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                                <input id="portal_searcher_form_input_cms"
+                                       name="q"
+                                       placeholder="Escribe aquí el servicio que buscas"
+                                       aria-label="Escribe aquí el servicio que buscas"
+                                       class="form-control">
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                                 <button type="submit" class="btn btnBuscar">
+                                    <span class="hidden-xs hidden-sm">
+BUSCAR                                    </span>
+                                    <span class="material-icons-round visible-xs visible-sm">search</span> 
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 avisos-seccion-navarra">
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Tambien hay que tener en cuenta para pintar, si se ha cerrado el aviso -->
+
+
+
+                </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <!--Banda Roja-->
+
+                
+                
+                
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="container content-prensa">
+        <h1 class="hide-accessible">Calcular los ingresos familiares ponderados y su equivalencia en SARA</h1>
+            <nav aria-label="breadcrumbs" id="breadcrumbs">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_  portlet-static portlet-static-end portlet-without-title portlet-breadcrumb " id="p_p_id_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs_">
+		<span id="p_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav aria-label="Ruta de navegación" id="_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs_breadcrumbs-defaultScreen">
+	
+
+		
+
+		
+
+
+
+        <div class="breadcrumbsContainer">
+            <ul class="breadcrumbs">
+                        <li class="back">
+                                    <a href="https://www.navarra.es/es/tramites/buscador">
+                                        <i class="material-icons-round" aria-hidden="true">keyboard_backspace</i>
+                                        Buscador de trámites
+                                    </a>                               
+                        </li>
+            </ul>
+        </div>
+
+	<script>
+		// Detectar si la URL actual contiene los filtros de una búsqueda,
+		// tanto si es del buscador general de Navarra como del buscador de trámites.
+		var currentUrl = window.location.href;
+		if ((currentUrl.search("/-/search") > 0)
+			|| (currentUrl.search("/-/buscartramite") > 0)
+			|| (currentUrl.search("/-/agenda") > 0))
+		{
+			setCookie("searchUrlGdN", currentUrl);
+		}
+		else if ((currentUrl.endsWith("/noticias") > 0)
+			|| (currentUrl.endsWith("/albisteak") > 0)
+			|| (currentUrl.endsWith("/convocatorias-informativas") > 0)
+			|| (currentUrl.endsWith("/prentsa-deialdiak") > 0)
+			|| (currentUrl.endsWith("/tramites/buscador") > 0)
+			|| (currentUrl.endsWith("/tramiteak/bilatzailea") > 0)
+			|| (currentUrl.endsWith("/bibliotecas/directorio") > 0)
+			|| (currentUrl.endsWith("/liburutegiak/liburutegien-helbideak") > 0)
+			|| (currentUrl.endsWith("/bibliotecas/actividades") > 0)
+			|| (currentUrl.endsWith("/bibliotecas/actividades") > 0))
+		{
+			deleteCookie();
+		}
+
+		$(".breadcrumbs a").attr("href", function()
+		{
+			var existParamBack = getURLParameter("back");
+			if (existParamBack != null && existParamBack == "true")
+			{
+				if (document.referrer != null && document.referrer.includes(window.location.hostname))
+				{
+					var previousUrl = document.referrer;
+					var previousLanguage = searchLanguage(previousUrl);
+					var currentLanguage = searchLanguage(window.location.href);
+					if (currentLanguage === previousLanguage)
+					{
+						return previousUrl;
+					}
+					else if (getCookie("searchUrlGdN"))
+					{
+						var searchUrl = getCookie("searchUrlGdN");
+						if (currentLanguage == "/eu")
+						{
+							if (searchUrl.search("/es/noticias") > 0)
+							{
+								searchUrl = searchUrl.replace("/es/noticias", "/eu/albisteak");
+							}
+							else if (searchUrl.search("/es/tramites/buscador") > 0)
+							{
+								searchUrl = searchUrl.replace("/es/tramites/buscador", "/eu/prentsa-deialdiak");
+							}
+							else if (searchUrl.search("/es/convocatorias-informativas") > 0)
+							{
+								searchUrl = searchUrl.replace("/es/convocatorias-informativas", "/eu/prentsa-deialdiak");
+							}
+							else if (searchUrl.search("/es/bibliotecas/directorio") > 0)
+							{
+								searchUrl = searchUrl.replace("/es/bibliotecas/directorio", "/eu/liburutegiak/liburutegien-helbideak");
+							}
+							else if (searchUrl.search("/es/bibliotecas/actividades") > 0)
+							{
+								searchUrl = searchUrl.replace("/es/bibliotecas/actividades", "/eu/bibliotecas/actividades");
+							}
+						}
+						else if (currentLanguage == "/es")
+						{
+							if (searchUrl.search("/eu/albisteak") > 0)
+							{
+								searchUrl = searchUrl.replace("/eu/albisteak", "/es/noticias");
+							}
+							else if (searchUrl.search("/eu/tramiteak/bilatzailea") > 0)
+							{
+								searchUrl = searchUrl.replace("/eu/tramiteak/bilatzailea", "/es/tramites/buscador");
+							}
+							else if (searchUrl.search("/eu/prentsa-deialdiak") > 0)
+							{
+								searchUrl = searchUrl.replace("/eu/prentsa-deialdiak", "/es/convocatorias-informativas");
+							}
+							else if (searchUrl.search("/eu/liburutegiak/liburutegien-helbideak") > 0)
+							{
+								searchUrl = searchUrl.replace("/eu/liburutegiak/liburutegien-helbideak", "/es/bibliotecas/directorio");
+							}
+							else if (searchUrl.search("/eu/bibliotecas/actividades") > 0)
+							{
+								searchUrl = searchUrl.replace("/eu/bibliotecas/actividades", "/es/bibliotecas/actividades");
+							}
+						}
+						return searchUrl;
+					}
+					else
+					{
+						return currentLanguage + $(".breadcrumbs a").attr("href");
+					}
+				}
+			}
+		});
+
+		// Obtener el idioma de la URL.
+		function searchLanguage(url)
+		{
+			if (url.search("/es/") > 0)
+			{
+				return "/es";
+			}
+			else if (url.search("/eu/") > 0)
+			{
+				return "/eu";
+			}
+			return false;
+		}
+
+		function setCookie(name, value)
+		{
+			var d = new Date();
+			d.setTime(d.getTime() + (3600*1000));
+			var expires = "expires=" + d.toUTCString();
+			document.cookie = name + "=" + value + ";" + expires + ";path=/";
+		}
+
+		function getCookie(cname)
+		{
+			var name = cname + "=";
+			var decodeCookie = decodeURIComponent(document.cookie);
+			var ca = decodeCookie.split(";");
+			for (var i = 0; i < ca.length; i++)
+			{
+				var c = ca[i];
+				while (c.charAt(0) == ' ')
+				{
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0)
+				{
+					return c.substring(name.length, c.length);
+				}
+			}
+			return false;
+		}
+
+		function deleteCookie()
+		{
+			document.cookie = "searchUrlGdN=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+		}
+		var languageId=themeDisplay.getLanguageId();
+    
+		if($('.breadcrumbsContainer').length==0){
+		    $('#breadcrumbs').remove();
+		}
+		else{
+			if(languageId=="es_ES"){
+				$('#breadcrumbs').attr("aria-label","Ruta de navegacion");
+		    }
+		    else{
+		    	$('#breadcrumbs').attr("aria-label","Breadcrumbs");
+		    }
+		}
+	</script>
+
+
+	
+</nav>
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+            </nav>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="columns-1" id="main-content" role="main">
+	<div class="portlet-layout row">
+		<div class="col-md-12 portlet-column portlet-column-only" id="column-1">
+			<div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_  portlet-static portlet-static-end portlet-without-title  " id="p_p_id_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_">
+		<span id="p_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+			
+	
+	
+    
+	
+	<div class="container">
+		<div class="guide guide2">
+			<div class="head">
+	       		<div class="row">
+	            	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                    <h1 class="title">Calcular los ingresos familiares ponderados y su equivalencia en SARA</h1>
+						<div class="subTitle"><p>En función del resultado sabrás si puedes comprar o alquilar una vivienda protegida y obtener una subvención por su compra o alquiler</p></div>
+						
+						<div class="row">
+							<p class="col-sm-9 col-xs-12 plazo">
+								En plazo
+							</p>
+							<p class="col-sm-3 col-xs-12 suscribirse">
+								<a href="#" id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseButton">			
+									<i aria-hidden="true" lang="en" class="material-icons-round">share</i>
+									Suscribirse a este trámite
+								</a>
+							</p>
+						</div>
+	                    	                    
+	            	</div>
+	        	</div>
+	   		 </div>	
+			
+			<div class="row pages">				
+				<div class="showEverything col-xs-12 col-sm-9 col-md-9 col-lg-9 pull-left"> 
+					<div class="pull-right">
+						<button type="button" class="showEverythingButton btn btn-link" data-toggle="button" aria-pressed="false" title="close" aria-label="close" autocomplete="off"> Mostrar todo </button> 
+						<i aria-hidden="true" lang="en" class="material-icons-round icon-size-1 icon-color-1 showEverythingArrow">arrow_downward</i> 
+					</div> 
+				</div>
+
+				<div id="allContentGuide2Accordion" class="col-xs-12 col-sm-9 col-md-9 col-lg-9">			
+					
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel-group" id="Informacion">
+	<h2>Información básica</h2>	
+
+		
+
+	
+		<div class="panel">
+			<div class="panel-heading">
+				<h3 class="panel-title collapsed" data-toggle="collapse" data-target="#infoDescripcion" class="custom-text-bold-18-black">
+					Descripción <i aria-hidden="true" lang="en" class="material-icons-round pull-right">keyboard_arrow_down</i>
+				</h3>
+			</div>
+			<div id="infoDescripcion" class="panel-collapse collapse">
+				<div class="panel-body" class="free-text-light-16-black"><p>SARA es un indicador que se utiliza para medir los ingresos familiares ponderados y determinar si una persona puede acceder a una vivienda protegida y&nbsp;a las subvenciones que se conceden por su compra o alquiler.&nbsp;</p>
+
+<p>El nombre oficial de este indicador es Suficiencia Adquisitiva por Renta Adecuada (SARA) y su cuantía se actualiza todos los años.&nbsp;</p>
+
+<p><strong>¿Cómo sé&nbsp;a cuántas SARA equivalen mis ingresos familiares ponderados?</strong></p>
+
+<p>Tienes que realizar un cálculo. En las próximas líneas te explicamos paso a paso cómo hacerlo, pero si lo prefieres, puedes rellenar el formulario del apartado Tramitación y el sistema te lo calcula automáticamente.</p>
+
+<p>El cálculo se realiza de la siguiente forma:&nbsp;</p>
+
+<table class="table">
+	<tbody>
+		<tr>
+			<td 30="" rowspan="2" style="”width:"><strong>nº de veces SARA</strong> =</td>
+			<td style="width: 70%; text-align: center;"><strong>ingreso del año n</strong>&nbsp; x&nbsp; <strong>coeficiente T</strong>&nbsp; x&nbsp; <strong>coeficiente N</strong></td>
+		</tr>
+		<tr>
+			<td style="width: 70%; text-align: center;"><strong>SARA del año n</strong></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><br />
+En primer lugar, debes calcular los ingresos familiares de un año. Para ello, debes sumar las cantidades que aparecen en las casillas 507 y 529 de tu última declaración de la renta. Si la última campaña todavía no ha finalizado en el momento de solicitar la vivienda o subvención, tienes que tomar como referencia la declaración de la campaña anterior.&nbsp;</p>
+
+<ul>
+	<li>La casilla 507 contiene la parte general de la base imponible.&nbsp;</li>
+	<li>La casilla 529 hace referencia a las rentas percibidas pero exentas de tributación. Por ejemplo, las prestaciones de la Seguridad Social, las indemnizaciones por despido, los premios de lotería o las becas de estudio. Si no has percibido rentas exentas, no aparecerá esta casilla en tu declaración y en el formulario deberás poner 0 euros.&nbsp;</li>
+</ul>
+
+<p>La cifra resultante se multiplica por dos variables:&nbsp;</p>
+
+<ul>
+	<li>El coeficiente T, que tiene un valor fijo de 0,94.&nbsp;</li>
+	<li>El coeficiente N, que varía en función del número de integrantes de la unidad familiar.&nbsp;<br />
+	&nbsp;</li>
+</ul>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<tbody>
+		<tr>
+			<td><strong>&nbsp;Nº integrantes unidad familiar</strong></td>
+			<td><strong>&nbsp;Coeficiente N</strong></td>
+		</tr>
+		<tr>
+			<td>&nbsp;1</td>
+			<td>&nbsp;1</td>
+		</tr>
+		<tr>
+			<td>&nbsp;2</td>
+			<td>&nbsp;0,75</td>
+		</tr>
+		<tr>
+			<td>&nbsp;3</td>
+			<td>&nbsp;0,70</td>
+		</tr>
+		<tr>
+			<td>&nbsp;4</td>
+			<td>&nbsp;0,66</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Por cada miembro adicional, el coeficiente N se reduce en 0,04.</li>
+	<li>Forman parte de la unidad familiar los cónyuges e hijos e hijas menores de edad.</li>
+	<li>Se cuentan por dos (es decir, como dos integrantes de la unidad familiar) las siguientes personas:&nbsp;
+	<ul>
+		<li>Mayores&nbsp;de 65 años</li>
+		<li>Víctimas de violencia de género</li>
+		<li>Personas con una discapacidad superior al 33 %&nbsp;</li>
+	</ul>
+	</li>
+	<li>La cifra resultante de la multiplicación se divide por el valor que tenía un SARA en el año para el que se realizan los cálculos. En 2025 (año al que hace referencia la declaración de la última campaña finalizada) un SARA tenía el valor de&nbsp;10.919,71euros.</li>
+</ul>
+
+<p>En el siguiente cuadro puedes consultar las equivalencias SARA para ese año en función de los ingresos familiares ponderados y el número de integrantes de la unidad familiar: <a href="/documents/48192/37043601/Tabla+de+ingresos+SARA+2024.pdf/cbc89b66-8bdc-0432-9575-a5461b9fb16b?t=1769676109921" target="_blank">ver la tabla SARA</a>.</p></div>
+			</div>
+		</div>
+	
+
+	
+
+	
+</div>
+					
+					
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel-group" id="Tramitaciones">
+	<h2>Tramitación</h2>	
+
+	
+		
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 class="panel-title collapsed" data-toggle="collapse" data-target="#tramita0" class="custom-text-bold-18-black">
+						<p> </p> <i class="material-icons-round pull-right">keyboard_arrow_down</i>
+					</h3>
+				</div>
+				<div id="tramita0" class="panel-collapse collapse">
+					<div class="panel-body" class="free-text-light-16-black">
+							
+						<div>
+							
+								<p class="custom-text-medium-16-black">Instrucciones:</p>																								
+								<p><p>Para realizar el cálculo tienes que tener en cuenta los siguientes datos:</p>
+
+<ul>
+	<li>El número de personas que integran tu unidad familiar.</li>
+	<li>Los ingresos que aparecen en tu declaración de la renta de 2025.</li>
+</ul>
+
+<p>Cuando hayas rellenado el formulario, aparecerá como resultado un número. Este número hace referencia a cuántas veces SARA equivalen tus ingresos familiares ponderados.</p>
+
+<p>Si es igual o menor a la cifra establecida para acceder a la vivienda o subvención, podrás optar a ella. Si es mayor, no.</p></p>
+							
+							
+
+
+
+
+							<p></p>
+						</div>	
+						<div class="seeMore box pull-center">
+							
+								<a href="https://administracionelectronica.navarra.es/vivienda.internet/#/censo/menuCalculadoras/calculadoraIFP" target="_blank">
+									Realizar el cálculo
+									 
+								</a> 
+							
+						</div>
+													
+							
+					</div>
+				</div>
+			</div>
+		
+	
+</div>
+					
+					
+					
+						<address>						
+							<strong class="custom-text-bold-18-black">Contacto</strong>
+							<p><strong>Servicio de Vivienda</strong><br />
+C/ Alhóndiga, 1, 1.ª planta<br />
+31002 Pamplona / Iruña<br />
+Teléfono: 848 420 042<br />
+<a href="http://www.navarra.es/es/vivienda/te-atendemos" target="_blank">Envíanos tu consulta</a></p>																
+						</address> 
+					
+				</div>
+
+				
+			</div>
+			
+				<div class="info">
+					<span aria-hidden="true" lang="en" class="material-icons">info</span>
+					<div>
+						
+						
+							<p>Advertencia: el contenido de esta&nbsp;página tiene carácter meramente informativo; las condiciones son las publicadas en la normativa correspondiente.</p>
+						
+					</div>
+				</div>
+			
+		</div>
+ 		
+	</div>
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="https://www.navarra.es/es/tramites/on?p_p_id=es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_javax.portlet.action=suscribirse&amp;p_auth=SS7lLmHr" class="form  " data-fm-namespace="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_" id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_fmSuscribirse" method="post" name="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_fmSuscribirse" >
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				<input  class="field form-control"  id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_formDate"    name="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_formDate"     type="hidden" value="1793146148480"   />
+			
+		
+
+		
+	
+
+
+
+
+
+
+
+
+
+	<div  class="modal fade" id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseModal" tabindex="-1" role="dialog" aria-labelledby="suscribirseModalLabel" aria-hidden="true" style="display:none;">
+		<div class="modal-dialog">        
+			<div class="modal-content">
+		    	<div class="modal-header">		    		
+	       			<p class="modal-title" id="suscribirseModalLabel">Recibir notificaciones</p>
+	       			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      	</div>		      	
+				<div class="modal-body">
+					<p>Introduce tu correo electrónico para recibir una notificación cuando el trámite se actualice</p>
+					<!--validar emails y que coinciden -->
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				<input  class="field form-control"  id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_tramitePrimKey"    name="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_tramitePrimKey"     type="hidden" value=""   />
+			
+		
+
+		
+	
+
+
+
+
+
+
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				<input  class="field form-control"  id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_urlTitle"    name="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_urlTitle"     type="hidden" value=""   />
+			
+		
+
+		
+	
+
+
+
+
+
+
+
+
+
+					
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="form-group input-text-wrapper">
+
+
+
+
+
+	<label class="control-label" for="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail">
+		
+				Correo electrónico
+
+		
+
+		
+			<span class="reference-mark text-warning"  id="qfkd__column1__1"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-asterisk" focusable="false" ><use data-href="https://www.navarra.es/o/portal-navarra-theme-3/images/lexicon/icons.svg#asterisk"></use></svg></span>
+
+			<span class="hide-accessible">Requerido</span>
+			</label>
+		
+
+
+
+
+
+	
+
+		
+
+		
+			
+				<input  class="field form-control"  id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail"    name="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail"     type="text" value=""   />
+			
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	</div>
+
+
+
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="form-group input-text-wrapper">
+
+
+
+
+
+	<label class="control-label" for="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail1">
+		
+				Confirmación correo electrónico
+
+		
+
+		
+			<span class="reference-mark text-warning"  id="jbfs__column1__1"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-asterisk" focusable="false" ><use data-href="https://www.navarra.es/o/portal-navarra-theme-3/images/lexicon/icons.svg#asterisk"></use></svg></span>
+
+			<span class="hide-accessible">Requerido</span>
+			</label>
+		
+
+
+
+
+
+	
+
+		
+
+		
+			
+				<input  class="field form-control"  id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail1"    name="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail1"     type="text" value=""   />
+			
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	</div>
+
+
+
+					
+					<table class="table table-striped">
+<thead>
+<tr>
+<th colspan="2">Informaci&oacute;n sobre protecci&oacute;n de datos de car&aacute;cter personal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Responsable del tratamiento</td>
+<td>Servicio de Comunicaci&oacute;n del Departamento de Presidencia e Igualdad (Gobierno de Navarra). Puedes contactar con nosotros/as en el correo electr&oacute;nico <a href="mailto:protecciondedatosportal@navarra.es" target="_blank">protecciondedatosportal@navarra.es</a></td>
+</tr>
+<tr>
+<td>Finalidad del tratamiento</td>
+<td>El correo electr&oacute;nico que proporciones para la suscripci&oacute;n a un tr&aacute;mite o una b&uacute;squeda servir&aacute; para avisar a ese correo de las novedades de ese tr&aacute;mite o de esa b&uacute;squeda.</td>
+</tr>
+<tr>
+<td>Derechos</td>
+<td>Puedes ejercer tus derechos de protecci&oacute;n de datos establecidos en el Reglamento General de Protecci&oacute;n de Datos (art&iacute;culos 15 a 22). Consulta c&oacute;mo en <a href="https://www.navarra.es/es/aviso-legal/suscripciones-a-tramites" target="_blank">esta p&aacute;gina web</a>.</td>
+</tr>
+<tr>
+<td>M&aacute;s informaci&oacute;n</td>
+<td>Puedes obtener m&aacute;s informaci&oacute;n acerca del tratamiento 'Gesti&oacute;n de las suscripciones a tr&aacute;mites y a b&uacute;squedas en el Cat&aacute;logo de Tr&aacute;mites' en <a href="https://www.navarra.es/es/aviso-legal/suscripciones-a-tramites" target="_blank">esta p&aacute;gina web</a>.</td>
+</tr>
+</tbody>
+</table>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="form-group form-group-inline form-inline input-checkbox-wrapper">
+
+
+
+
+
+	<label class="checkbox-inline" for="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseAcepto">
+		
+
+
+
+
+
+	
+
+		
+
+		<input  class="field"  id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseAcepto" name="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseAcepto"  onClick=""  type="checkbox"    />
+	
+	
+
+
+
+
+	
+			Acepto las condiciones de la pólitica de protección de datos
+
+		
+
+		
+			<span class="reference-mark text-warning"  id="uvlz__column1__1"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-asterisk" focusable="false" ><use data-href="https://www.navarra.es/o/portal-navarra-theme-3/images/lexicon/icons.svg#asterisk"></use></svg></span>
+
+			<span class="hide-accessible">Requerido</span>
+		</label>
+	
+
+
+
+	</div>
+
+
+
+					<!-- Captcha -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="taglib-captcha">
+		<img alt="Texto a identificar" class="captcha" id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_captcha" src="https://www.navarra.es/es/tramites/on?p_p_id=es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_resource_id=captcha&amp;p_p_cacheability=cacheLevelPage&amp;_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_mvcRenderCommandName=detalleTramite&amp;_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_urlTitle=calcular-los-ingresos-familiares-ponderados&amp;t=1793146148482" />
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<span
+			class="refresh lfr-portal-tooltip"
+			
+				title="Refrescar CAPTCHA"
+			
+		>
+			
+				
+					<a href="javascript:;" target="_self" class=" lfr-icon-item taglib-icon" id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_refreshCaptcha" >
+						
+
+
+	
+		<span  id="ored__column1__1"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-reload" focusable="false" ><use data-href="https://www.navarra.es/o/portal-navarra-theme-3/images/lexicon/icons.svg#reload"></use></svg></span>
+	
+	
+
+
+	
+		
+			<span class="taglib-text hide-accessible">Refrescar CAPTCHA</span>
+		
+	
+
+					</a>
+				
+				
+		</span>
+	
+
+
+
+
+		
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="form-group input-text-wrapper">
+
+
+
+
+
+	<label class="control-label" for="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_captchaText">
+		
+				Texto de verificación
+
+		
+
+		
+			<span class="reference-mark text-warning"  id="fehs__column1__1"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-asterisk" focusable="false" ><use data-href="https://www.navarra.es/o/portal-navarra-theme-3/images/lexicon/icons.svg#asterisk"></use></svg></span>
+
+			<span class="hide-accessible">Requerido</span>
+			</label>
+		
+
+
+
+
+
+	
+
+		
+
+		
+			
+				<input  class="field form-control"  id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_captchaText"    name="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_captchaText"     type="text" value=""  size="10"  />
+			
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	</div>
+
+
+
+	</div>
+
+	
+
+
+			
+
+				</div>
+				<div class="modal-footer" style="text-align: right !important">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<button
+			class="btn  btn-primary btn-default"
+
+			
+
+			id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_wrya"
+
+			
+
+			
+
+			type="submit"
+
+			
+			
+		>
+	
+
+
+
+
+
+	<span class="lfr-btn-label">Guardar</span>
+
+
+
+
+
+	
+		</button>
+	
+
+
+
+
+
+
+
+				</div>												
+		  	</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				<input  class="field form-control"  id="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_checkboxNames"    name="_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_checkboxNames"     type="hidden" value="suscribirseAcepto"   />
+			
+		
+
+		
+	
+
+
+
+
+
+
+
+
+
+	
+
+	
+</form>
+
+
+
+
+
+
+<script>
+	$(function () {
+	/*	$(".input-checkbox-wrapper label").append('<a href="/tramites/politica">tramites.visor.modal.suscribirse.politica</a>');*/
+
+		var form = document.querySelector('#_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_fmSuscribirse');
+    	var checkbox = form.querySelector('input[type="checkbox"]');
+		var input = form.querySelector('.form-group input.form-control');
+    	var allowed = false;
+		var att = document.createAttribute("aria-live");
+			att.value = "assertive";
+
+		function toggleButton() {
+      		var submitButton = form.querySelector('button.btn');
+			if (allowed && !input.classList.contains('error-field') && input.classList.contains('success-field')) {
+				submitButton.setAttribute('aria-disabled', 'false');
+			} else {
+				submitButton.setAttribute('aria-disabled', 'true');
+				var alerts = form.querySelectorAll('.form-group .help-block');
+				for (var i=0; i < alerts.length; i++) {
+					alerts[i].setAttributeNode(att);
+				}
+
+			}
+    	}
+		toggleButton();
+		checkbox.addEventListener('change', function() {
+			allowed = checkbox.checked;
+			toggleButton();
+		});
+		input.addEventListener('change', function() {
+			setTimeout(function(){
+				toggleButton();
+			},1000);
+		});
+
+	});
+</script>		
+
+
+<script>
+	function abrirModalSuscribirse(tramitePrimKey,url){
+		$('#_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_urlTitle').val(url);
+		$('#_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_tramitePrimKey').val(tramitePrimKey);
+		$('#_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseModal').modal('show');
+	}
+	
+	function changeClass(elemID) {
+		$("#" + elemID).toggleClass("collap");
+		$("#title_" + elemID).toggleClass("deleteBorder");
+
+		var panel = $("#" + elemID);
+		panel.toggleClass("collap");
+		if (panel[0].style.maxHeight) {
+			panel[0].style.maxHeight = null;
+		} else {
+			panel[0].style.maxHeight = panel[0].scrollHeight + "px";
+		}
+	}
+
+
+	$(function () {
+		$("#_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseButton").click(function(){
+			abrirModalSuscribirse(86987,'/es/tramites/on/-/line/calcular-los-ingresos-familiares-ponderados');
+			return false;
+		});
+
+		$("#fzuh_").click(function(){			
+			warningClose("493355","")
+		});
+		warningShow("493355","");
+
+
+
+		var active = true;
+		$('.showEverythingButton').click(function () {
+			if (active) {
+				active = false;
+				$('#allContentGuide2Accordion .panel-collapse').collapse('show');
+				$(this).text('Ocultar todo');
+			} else {
+				active = true;
+				$('#allContentGuide2Accordion .panel-collapse').collapse('hide');
+				$(this).text('Mostrar todo');
+			}
+		});
+		/*
+		$('.panel-group').on('show.bs.collapse', function () {
+			if (active) $('.panel-group .in').collapse('hide');
+		});*/
+
+	});
+	
+	$(document).ready(function(){
+		var desplegar='false';		
+		if(desplegar == "true"){
+			$('.showEverythingButton').click();			
+		}
+		var desplegarTramitacion='true';		
+		if(desplegarTramitacion == "true"){
+			$('#Tramitaciones .panel-collapse').collapse('show');			
+		}
+		var fecha='Última actualización: 29 de septiembre de 2026';
+		 $("#_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lastUpdateDateText").text(fecha);
+	});
+</script>
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-without-title portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_BwqBaxrACF3D_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_BwqBaxrACF3D"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_BwqBaxrACF3D">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+				
+					
+					
+					
+
+						
+
+						<div class="" data-fragments-editor-item-id="29009-12432599" data-fragments-editor-item-type="fragments-editor-mapped-item" >
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="12432597" data-analytics-asset-title="Fecha y Hora" data-analytics-asset-type="web-content">
+	
+
+	<div class="fechaHora right">
+    <span aria-hidden="true" role="presentation" class="material-icons">access_time</span>
+    <time datetime="miércoles 28 de octubre de 2026 01:09:08">
+        miércoles 28 de octubre de 2026 
+        <span>
+            01:09:08 <abbr title="hora">h</abbr>
+        </span>
+    </time>
+</div>
+
+
+<script>
+    var timeObject = new Date('2026-10-28 01:09:08');
+    var milliseconds= 1000; // 1 second
+    document.addEventListener("DOMContentLoaded", (e) => {
+        var y = setInterval(() => {
+            timeObject = new Date(timeObject.getTime() + milliseconds);
+            minutes = (timeObject.getMinutes()<10?'0':'') + timeObject.getMinutes();
+            seconds = (timeObject.getSeconds()<10?'0':'') + timeObject.getSeconds();
+            document.querySelector('.fechaHora time span').innerHTML = timeObject.getHours() + ':' + minutes + ':' + seconds + ' <abbr title="hora">h</abbr>';
+        }, 1000);
+    });
+</script>
+</div>
+
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-without-title portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_m4B4QMWWulCE_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_m4B4QMWWulCE"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_m4B4QMWWulCE">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+				
+					
+					
+					
+
+						
+
+						<div class="" data-fragments-editor-item-id="29009-41287724" data-fragments-editor-item-type="fragments-editor-mapped-item" >
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="41287722" data-analytics-asset-title="Trámites - Faldón" data-analytics-asset-type="web-content">
+	
+
+	
+<div class="faldonBorder">
+	<div class="faldonHelp">
+		<div>
+					<h2 class="title">Ayuda para tramitar</h2>
+				<ul class="listLinksVertical light16Black">
+						<li>
+							<a href="/es/tramites/dias-inhabiles-para-el-computo-de-plazos" target="_blank">
+								<i aria-hidden="true" lang="en" class="material-icons-round">keyboard_backspace</i>
+								<span>Qué días son inhábiles</span>
+							</a>
+						</li>
+						<li>
+							<a href="/es/tramites/ayuda-para-tramitar-por-internet#marcador1" target="_blank">
+								<i aria-hidden="true" lang="en" class="material-icons-round">keyboard_backspace</i>
+								<span>Cómo obtener las credenciales para tramitar: cl@ve y certificado digital</span>
+							</a>
+						</li>
+						<li>
+							<a href="/es/tramites/ayuda-para-tramitar-por-internet#marcador2" target="_blank">
+								<i aria-hidden="true" lang="en" class="material-icons-round">keyboard_backspace</i>
+								<span>Cómo pagar, consultar las notificaciones, y firmar, adjuntar y comprobar la autenticidad de los documentos</span>
+							</a>
+						</li>
+				</ul>
+		</div>
+
+		<div>
+					<h2 class="title">¿Problemas informáticos? Te atendemos de lunes a jueves, de 8:00 a 17:30 horas; y los viernes y meses de verano (julio-septiembre), de 8:00 a 15:00 horas.</h2>
+				<ul class="listLinksVertical custom-text-bold-14-black">
+						<li>
+							<a href="mailto:soportec@navarra.es" target="_blank">
+								<i aria-hidden="true" lang="en" class="material-icons-round">email</i>
+								<span>soportec@navarra.es</span>
+							</a>
+						</li>
+						<li>
+							<a href="tel:948013555" target="_blank">
+								<i aria-hidden="true" lang="en" class="material-icons-round">local_phone</i>
+								<span>948 013 555</span>
+							</a>
+						</li>
+				</ul>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-without-title portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_032LhhV4F2aP_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_032LhhV4F2aP"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_032LhhV4F2aP">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+				
+					
+					
+					
+
+						
+
+						<div class="" data-fragments-editor-item-id="29009-6500855" data-fragments-editor-item-type="fragments-editor-mapped-item" >
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="6500853" data-analytics-asset-title="Tramites - Detalle - Botón imprimir" data-analytics-asset-type="web-content">
+	
+
+	<p><script type="text/javascript">
+    showPrintButton();
+</script></p>
+</div>
+
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="#" class="hide" id="hrefFm" method="post" name="hrefFm" aria-hidden="true"><span></span><input hidden type="submit"/></form>    </div>
+</section>
+							
+							 
+                    
+                </div>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot class="report-footer" role="presentation">
+            <tr role="presentation">
+                <td class="report-footer-cell" role="presentation">
+                    <div class="footer-info">
+						
+<footer id="footer" role="contentinfo">
+    <div class="container-fluid">
+        <div class="footerPortlets">
+            <div class="container">
+                <div class="row">
+                    <div class="custom-portlet col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_errorReportUrl_  portlet-static portlet-static-end portlet-without-title  " id="p_p_id_errorReportUrl_INSTANCE_footererrorReportUrlv3_">
+		<span id="p_errorReportUrl_INSTANCE_footererrorReportUrlv3"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_errorReportUrl_INSTANCE_footererrorReportUrlv3">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="error-report link-red">
+    <a href=https://www.navarra.es/es/atencion-ciudadana/consultas-y-sugerencias>
+        <span aria-hidden="true" class="material-icons-round icon-size-3">chat_bubble_outline</span>
+        Comunicar un error en la información
+    </a>
+</div>
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+                    </div>
+                    <div class="custom-portlet col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_lastPublicationDatev2_  portlet-static portlet-static-end portlet-without-title  " id="p_p_id_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_">
+		<span id="p_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lastUpdateDateContainer" class="update-date">
+	<span aria-hidden="true" class="material-icons-round icon-size-3 icon-color-9">update</span>
+	<span id="_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lastUpdateDateText">
+	</span>
+	<div id="_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_loaderSpin" class="loader-last-update"></div>
+	<div id="_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lasUpdateDateFromPortlet" class="hidden"></div>
+	<div id="_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_final" class="hidden"></div>
+</div>
+
+<script type="text/javascript">
+// <![CDATA[
+AUI().use('jquery', function(A) {(function() {var $ = AUI.$;var _ = AUI._;
+	const ns = '_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_';
+
+	function fetchLastUpdateDate() {
+		const textEl = document.getElementById(ns + 'lastUpdateDateText');
+		const dateEl = document.getElementById(ns + 'lasUpdateDateFromPortlet');
+		//const loaderEl = document.getElementById(ns + 'loaderSpin');
+
+		//loaderEl.classList.add('loader-spin');
+
+		$.ajax({
+			url: 'https://www.navarra.es/es/tramites/on?p_p_id=lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=%2Fget%2Flast_update_date&p_p_cacheability=cacheLevelPage&_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3__es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_mvcRenderCommandName=detalleTramite&_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3__es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_urlTitle=calcular-los-ingresos-familiares-ponderados',
+			type: 'GET',
+			dataType: 'json',
+			success: function(data) {
+				if (data.success && data.lastUpdateDate) {
+					textEl.innerText = data.lastUpdateString;
+					dateEl.innerText = data.lastUpdateDate;
+					//console.log('Fecha recibida:', data.lastUpdateDate);
+				} else {
+					textEl.innerText = '\u00da\u006c\u0074\u0069\u006d\u0061\u0020\u0061\u0063\u0074\u0075\u0061\u006c\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u003a\u0020\u0031\u0035\u0020\u0064\u0065\u0020\u004a\u0075\u006e\u0069\u006f\u002c\u0020\u0032\u0030\u0031\u0039';
+				}
+			},
+			error: function(xhr, status, error) {
+				textEl.innerText = '\u00da\u006c\u0074\u0069\u006d\u0061\u0020\u0061\u0063\u0074\u0075\u0061\u006c\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u003a\u0020\u0031\u0035\u0020\u0064\u0065\u0020\u004a\u0075\u006e\u0069\u006f\u002c\u0020\u0032\u0030\u0031\u0039';
+			},
+			complete: function() {
+				//loaderEl.classList.remove('loader-spin');
+				//loaderEl.classList.add('loader-last-update');
+			}
+		});
+	}
+
+	$(document).ready(function () {
+		const isExcludeUrl = false;
+		const isTramiteUrl = true;
+		const $lastUpdateStringEL = $('#_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lastUpdateDateText');
+		const $finalEL = $('#_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_final');
+
+		if (isTramiteUrl === true) {
+		    $finalEL.text('Tramite URL');
+			// TODO: implementar fetchTramiteDate();
+		} else if (!isExcludeUrl) {
+		    $finalEL.text('--');
+			fetchLastUpdateDate();
+		} else {
+            if ($lastUpdateEL.length) {
+                $lastUpdateStringEL.text('\u00da\u006c\u0074\u0069\u006d\u0061\u0020\u0061\u0063\u0074\u0075\u0061\u006c\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u003a\u0020\u0031\u0035\u0020\u0064\u0065\u0020\u004a\u0075\u006e\u0069\u006f\u002c\u0020\u0032\u0030\u0031\u0039');
+                $finalEL.text('url no incluida');
+            }
+		}
+	});
+})();});
+// ]]>
+</script>
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-without-title portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+            
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+				
+					
+					
+					
+
+						
+
+						<div class="" data-fragments-editor-item-id="29009-4084279" data-fragments-editor-item-type="fragments-editor-mapped-item" >
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="4084277" data-analytics-asset-title="Pie de Pagina 3.0" data-analytics-asset-type="web-content">
+	
+
+	
+<style>
+
+ .list2 li.list-inline-item.hover:after {
+    content: "-";
+    left: 5px;
+    position: relative;
+}
+.list2 li.list-inline-item.hover:last-child:after {
+    content: "";
+}
+
+</style>
+
+<div class="footer1">
+    <div class="container">
+        <ul class="list-inline image-list">
+            <li class="list-inline-item">
+        <img   class="img-fluid"
+               src="/documents/48192/363819/logo-agenda2030_es_eu.png/a71737ce-9535-746b-40f1-3cce840908e6?t=1781787250360"
+               alt="Logotipo del Gobierno de Navarra y de la agenda 2030. "
+               title=""
+        />
+            </li>
+        </ul>
+
+        <ul class="list-inline list1">
+            <li class="list-inline-item hover">
+                <a href="https://www.navarra.es/es/tramites"
+                   target="_self"
+                   title="Trámites-Sede electrónica"
+                   aria-label="Trámites-Sede electrónica"
+                   class="custom-text-black-14-black underline-to-right">
+                    Trámites-Sede electrónica
+                </a>
+            </li>
+            <li class="list-inline-item hover">
+                <a href="https://www.navarra.es/es/temas"
+                   target="_self"
+                   title="Temas"
+                   aria-label="Temas"
+                   class="custom-text-black-14-black underline-to-right">
+                    Temas
+                </a>
+            </li>
+            <li class="list-inline-item hover">
+                <a href="https://www.navarra.es/es/gobierno-de-navarra"
+                   target="_self"
+                   title="Gobierno de Navarra"
+                   aria-label="Gobierno de Navarra"
+                   class="custom-text-black-14-black underline-to-right">
+                    Gobierno de Navarra
+                </a>
+            </li>
+            <li class="list-inline-item hover">
+                <a href="https://www.navarra.es/es/sala-de-prensa"
+                   target="_self"
+                   title="Sala de Prensa"
+                   aria-label="Sala de Prensa"
+                   class="custom-text-black-14-black underline-to-right">
+                    Sala de Prensa
+                </a>
+            </li>
+        </ul>
+
+        <ul class="list-inline list2">
+            <li class="list-inline-item hover">
+                <a href="/es/declaracion-de-accesibilidad"
+                   target="_self"
+                   title="Accesibilidad"
+                   aria-label="Accesibilidad"
+                   class="custom-text-regular-14-black underline-to-right">
+                    Accesibilidad
+                </a>
+            </li>
+
+            <li class="list-inline-item hover">
+                <a href="https://www.navarra.es/es/proteccion-de-datos"
+                   target="_self"
+                   title="Protección de datos"
+                   aria-label="Protección de datos"
+                   class="custom-text-regular-14-black underline-to-right">
+                    Protección de datos
+                </a>
+            </li>
+
+            <li class="list-inline-item hover">
+                <a href="https://www.navarra.es/es/aviso-legal"
+                   target="_self"
+                   title="Aviso legal"
+                   aria-label="Aviso legal"
+                   class="custom-text-regular-14-black underline-to-right">
+                    Aviso legal
+                </a>
+            </li>
+        </ul>
+
+        <ul class="list-inline list3">
+            <li class="list-inline-item hover">
+                <a href="https://www.facebook.com/GobiernoNavarra"
+                   target="_blank"
+                   title=""
+                   aria-label="facebook">
+        <img   class="img-fluid"
+               src="/documents/48192/4807680/facebook+25x25px.png/2529dfaf-ade3-aef0-0739-9b40764fdee7?t=1597840801000"
+               alt="facebook"
+               title=""
+        />
+                </a>
+            </li>
+            <li class="list-inline-item hover">
+                <a href="https://twitter.com/gob_na"
+                   target="_blank"
+                   title=""
+                   aria-label="twitter">
+        <img   class="img-fluid"
+               src="/documents/48192/4807680/tWITTER+25x25px.png/be9b7640-d328-87d7-d836-043ee6f6d791?t=1690799410702"
+               alt="twitter"
+               title=""
+        />
+                </a>
+            </li>
+            <li class="list-inline-item hover">
+                <a href="https://www.youtube.com/user/GobiernoNavarra"
+                   target="_blank"
+                   title=""
+                   aria-label="youtube">
+        <img   class="img-fluid"
+               src="/documents/48192/4807680/Youtube+25x25px.png/1f5f98a3-236b-386e-6b88-cde54d4c7be4?t=1597840862000"
+               alt="youtube"
+               title=""
+        />
+                </a>
+            </li>
+            <li class="list-inline-item hover">
+                <a href="https://www.instagram.com/accounts/login/?next=/gobierno_navarra/"
+                   target="_blank"
+                   title=""
+                   aria-label="Instagram">
+        <img   class="img-fluid"
+               src="/documents/48192/4807680/Instagram+blanco+25x25px.png/e33a35d1-b6aa-8e61-abf6-ba338c22cae9?t=1597840915000"
+               alt="Instagram"
+               title=""
+        />
+                </a>
+            </li>
+            <li class="list-inline-item hover">
+                <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgobierno-de-navarra-nafarroako-gobernua%2Fmycompany%3FviewAsMember%3Dtrue"
+                   target="_blank"
+                   title=""
+                   aria-label="Linkedin">
+        <img   class="img-fluid"
+               src="/documents/48192/4807680/Linkedin+25x25px.png/0ad23bba-27aa-6ba1-617e-1309dd4db171?t=1597840818000"
+               alt="Linkedin"
+               title=""
+        />
+                </a>
+            </li>
+            <li class="list-inline-item hover">
+                <a href="https://flickr.com/photos/gobiernonavarra/albums"
+                   target="_blank"
+                   title=""
+                   aria-label="Flickr">
+        <img   class="img-fluid"
+               src="/documents/48192/4807680/fLIKR+25X25px.png/8a577265-b0b0-ed1d-0040-22e0d14a3c29?t=1597840894000"
+               alt="Flickr"
+               title=""
+        />
+                </a>
+            </li>
+        </ul>
+    </div>
+        <div class="container-fluid background-color-red list4">
+            <div class="container free-text-regular-14 textMargins">
+                <p><strong>Gobierno de Navarra</strong> Avenida Carlos III 2, Planta Baja 31002 Pamplona / Iruña Tel. +34 948 012 012 - <a href="https://www.navarra.es/es/atencion-ciudadana/consultas-y-sugerencias" target="_blank">navarra@navarra.es</a></p>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>						
+							
+							 
+						
+                        
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+	
+		
+
+			
+
+			
+		
+	
+
+	Liferay.BrowserSelectors.run();
+
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+
+		
+
+		Liferay.currentURL = '\x2fes\x2ftramites\x2fon\x2f-\x2fline\x2fcalcular-los-ingresos-familiares-ponderados';
+		Liferay.currentURLEncoded = '\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados';
+
+	// ]]>
+</script>
+
+
+
+	
+
+	
+
+	<script type="text/javascript">
+		// <![CDATA[
+			
+				/*$('.navbar-navarra .lupa').hide()*/
+
+				var auxUrl = $(location).attr("href");
+if (auxUrl.indexOf("web/guest/")>=0){
+	auxUrl = auxUrl.replace("web/guest/", "");
+	window.location.href=auxUrl;
+}
+
+const idioma = document.documentElement.lang;
+
+	/*20250408 - Solución temporal.
+	Se solicita cambios en los mensajes de  los popup de suscripción a tramites y búsquedas,
+	 al ser época de renta no se puede desplegar por lo que se resuelve 
+	añadiendo este javascript a la página. 
+	Debe realizarse el despliegue correspondiente cuando se pueda
+	*/
+if (idioma === 'es-ES') {
+	$("#suscribirseModalLabel").text("Recibir avisos informativos");
+    $("#_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseModal .modal-body p").replaceWith("<p>Introduce tu correo electrónico para recibir un aviso informativo cuando haya novedades en el trámite. <br/> Los avisos que recibirás son puramente informativos. No sustituyen a las notificaciones ni a las publicaciones oficiales.</p>");
+} else if (idioma === 'eu-ES') {
+	$("#suscribirseModalLabel").text("Informazio-oharrak jasotzea");
+    $("#_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseModal .modal-body p").replaceWith("<p>Idatzi zure helbide elektronikoa informazio-ohar bat jasotzeko, tramitean nobedadeak daudenean. <br/>Sistema honen bidez jasoko dituzun oharrak informatiboak baino ez dira. Ez dituzte ordezkatzen jakinarazpenak, ezta argitalpen ofizialak ere.</p>");
+
+	/*20260415 - Solución temporal.
+	Incidencia en ficha de trámite el mes no sale en euskera.
+	Debido a época de renta y no ser posible desplegar, se introduce el código en el portlet pero se corrige en web con este script
+	*/
+	document.addEventListener('load', 
+		function () {		
+			var meses = {
+				'January'   : 'urtarrila',
+				'February'  : 'otsaila',
+				'March'     : 'martxoa',
+				'April'     : 'apirila',
+				'May'       : 'maiatza',
+				'June'      : 'ekaina',
+				'July'      : 'uztaila',
+				'August'    : 'abuztua',
+				'September' : 'iraila',
+				'October'   : 'urria',
+				'November'  : 'azaroa',
+				'December'  : 'abendua'
+			};
+
+			var elemento = document.getElementById(
+				'_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lastUpdateDateText'
+			);
+			console.log("ELEM: "+elemento.textContent);
+			if (elemento) {
+				Object.keys(meses).forEach(function (mesIngles) {
+					if (elemento.textContent.includes(mesIngles)) {
+						elemento.textContent = elemento.textContent.replace(
+							new RegExp(mesIngles, 'g'),
+							meses[mesIngles]
+						);
+					}
+				});
+			} else {
+				console.warn('No se encontró el elemento de fecha de última actualización.');
+			}
+	},3);	
+}
+/*20260415 - Solución temporal.
+Problema por el cual se esta indexando en la descripción de la ficha de un trámite el texto de protección de datos del pop-up de suscripciones
+Reproducirlo buscando en Firefox contacto beca movilidad Navarra.
+*/
+document.addEventListener('DOMContentLoaded', function () {
+    // ── Meta description desde subTitle 
+    var subTitle = document.querySelector('div.subTitle');
+    if (subTitle) {
+        var texto = subTitle.textContent.trim();
+
+        var metaDescription = document.querySelector('meta[name="description"]');
+
+        if (metaDescription) {
+            metaDescription.setAttribute('content', texto);
+        } else {
+            var meta = document.createElement('meta');
+            meta.setAttribute('name', 'description');
+            meta.setAttribute('content', texto);
+            document.head.appendChild(meta);
+        }
+    }
+
+    // ── Ocultar modal de suscripción a buscadores y agentes IA ───
+    var modal = document.getElementById('_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseModal');
+
+    if (modal) {
+        modal.setAttribute('aria-hidden', 'true');
+       // modal.setAttribute('inert', ''); //Deja de funcionar el pop up de suscripcion
+        modal.setAttribute('data-nosnippet', '');
+    }
+
+});
+			
+		// ]]>
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+		
+
+		
+	
+
+
+<script type="text/javascript">
+// <![CDATA[
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onDestroyPortlet = function() {
+		Liferay.detach('messagePosted', onMessagePosted);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+
+	var onMessagePosted = function(event) {
+		if (window.Analytics) {
+			Analytics.send('posted', 'Comment', {
+				className: event.className,
+				classPK: event.classPK,
+				commentId: event.commentId,
+				text: event.text
+			});
+		}
+	};
+
+	Liferay.on('messagePosted', onMessagePosted);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var onVote = function(event) {
+		if (window.Analytics) {
+			Analytics.send('VOTE', 'Ratings', {
+				className: event.className,
+				classPK: event.classPK,
+				ratingType: event.ratingType,
+				score: event.score
+			});
+		}
+	};
+
+	var onDestroyPortlet = function() {
+		Liferay.detach('ratings:vote', onVote);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('ratings:vote', onVote);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var onShare = function(data) {
+		if (window.Analytics) {
+			Analytics.send('shared', 'SocialBookmarks', {
+				className: data.className,
+				classPK: data.classPK,
+				type: data.type,
+				url: data.url
+			});
+		}
+	};
+
+	var onDestroyPortlet = function() {
+		Liferay.detach('socialBookmarks:share', onShare);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('socialBookmarks:share', onShare);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var pathnameRegexp = /\/documents\/(\d+)\/(\d+)\/(.+?)\/([^&]+)/;
+
+	function handleDownloadClick(event) {
+		if (event.target.nodeName.toLowerCase() === 'a' && window.Analytics) {
+			var anchor = event.target;
+			var match = pathnameRegexp.exec(anchor.pathname);
+
+			var fileEntryId =
+				anchor.dataset.analyticsFileEntryId ||
+				(anchor.parentElement &&
+					anchor.parentElement.dataset.analyticsFileEntryId);
+
+			if (fileEntryId && match) {
+				var getParameterValue = function(parameterName) {
+					var result = null;
+
+					anchor.search
+						.substr(1)
+						.split('&')
+						.forEach(function(item) {
+							var tmp = item.split('=');
+
+							if (tmp[0] === parameterName) {
+								result = decodeURIComponent(tmp[1]);
+							}
+						});
+
+					return result;
+				};
+
+				Analytics.send('documentDownloaded', 'Document', {
+					groupId: match[1],
+					fileEntryId: fileEntryId,
+					preview: !!window._com_liferay_document_library_analytics_isViewFileEntry,
+					title: decodeURIComponent(match[3].replace(/\+/gi, ' ')),
+					version: getParameterValue('version')
+				});
+			}
+		}
+	}
+
+	document.body.addEventListener('click', handleDownloadClick);
+
+	var onDestroyPortlet = function() {
+		document.body.removeEventListener('click', handleDownloadClick);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+	if (Liferay.Data.ICONS_INLINE_SVG) {
+		svg4everybody(
+			{
+				attributeName: 'data-href',
+				polyfill: true,
+				validate: function (src, svg, use) {
+					return !src || !src.startsWith('#');
+				}
+			}
+		);
+	}
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs_',
+			portletId: 'com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_underwarning_band');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_underwarning_band_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_underwarning_band',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_underwarning_band\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_BwqBaxrACF3D');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 2,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_BwqBaxrACF3D_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_BwqBaxrACF3D',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_BwqBaxrACF3D\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d2\x26p_p_col_count\x3d5\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu_',
+			portletId: 'com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_',
+			portletId: 'com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_',
+			portletId: 'com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+		var hasEventAttached = false;
+
+		function attachEvent() {
+			var refreshCaptcha = document.getElementById(
+				'_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_refreshCaptcha'
+			);
+
+			if (refreshCaptcha && !hasEventAttached) {
+				hasEventAttached = true;
+				refreshCaptcha.addEventListener('click', function() {
+					var url = Liferay.Util.addParams(
+						't=' + Date.now(),
+						'https\x3a\x2f\x2fwww\x2enavarra\x2ees\x2fes\x2ftramites\x2fon\x3fp_p_id\x3des_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet\x26p_p_lifecycle\x3d2\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_resource_id\x3dcaptcha\x26p_p_cacheability\x3dcacheLevelPage\x26_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_mvcRenderCommandName\x3ddetalleTramite\x26_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_urlTitle\x3dcalcular-los-ingresos-familiares-ponderados'
+					);
+
+					var captcha = document.getElementById(
+						'_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_captcha'
+					);
+
+					if (captcha) {
+						captcha.setAttribute('src', url);
+					}
+				});
+			}
+		}
+
+		attachEvent();
+
+		Liferay.on('_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_simplecaptcha_attachEvent', attachEvent);
+	
+	
+		Liferay.Portlet.register('es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 1,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_',
+			portletId: 'es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3des_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d1\x26p_p_col_count\x3d5\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados',
+			refreshURLData: {"_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_mvcRenderCommandName":["detalleTramite"],"_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_urlTitle":["calcular-los-ingresos-familiares-ponderados"]}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_generalwarning');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_generalwarning_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_generalwarning',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_generalwarning\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('errorReportUrl_INSTANCE_footererrorReportUrlv3');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_errorReportUrl_INSTANCE_footererrorReportUrlv3_',
+			portletId: 'errorReportUrl_INSTANCE_footererrorReportUrlv3',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3derrorReportUrl_INSTANCE_footererrorReportUrlv3\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_ultradestacado_nav');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_ultradestacado_nav_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_ultradestacado_nav',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_ultradestacado_nav\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_032LhhV4F2aP');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 4,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_032LhhV4F2aP_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_032LhhV4F2aP',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_032LhhV4F2aP\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d4\x26p_p_col_count\x3d5\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3_',
+			portletId: 'com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3_',
+			portletId: 'com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_m4B4QMWWulCE');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 3,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_m4B4QMWWulCE_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_m4B4QMWWulCE',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_m4B4QMWWulCE\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d3\x26p_p_col_count\x3d5\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_main_menu');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_main_menu_',
+			portletId: 'com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_main_menu',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_main_menu\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_',
+			portletId: 'lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dlastPublicationDatev2_INSTANCE_footerlastPublicationDatev3\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas_',
+			portletId: 'com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_o236yDTBzgp3');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_o236yDTBzgp3_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_o236yDTBzgp3',
+			refreshURL: '\x2fes\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d5724795\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_o236yDTBzgp3\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d5\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fes\x252Ftramites\x252Fon\x252F-\x252Fline\x252Fcalcular-los-ingresos-familiares-ponderados',
+			refreshURLData: {}
+		}
+	);
+Liferay.Loader.require('metal-dom/src/all/dom', function(metalDomSrcAllDom) {
+(function(){
+var dom = metalDomSrcAllDom;
+(function() {var $ = AUI.$;var _ = AUI._;
+	var focusInPortletHandler = dom.delegate(
+		document,
+		'focusin',
+		'.portlet',
+		function(event) {
+			dom.addClasses(dom.closest(event.delegateTarget, '.portlet'), 'open');
+		}
+	);
+
+	var focusOutPortletHandler = dom.delegate(
+		document,
+		'focusout',
+		'.portlet',
+		function(event) {
+			dom.removeClasses(dom.closest(event.delegateTarget, '.portlet'), 'open');
+		}
+	);
+})();})();
+});AUI().use('liferay-menu', 'liferay-notice', 'aui-base', 'liferay-session', 'liferay-form', 'liferay-poller', function(A) {(function() {var $ = AUI.$;var _ = AUI._;
+	if (A.UA.mobile) {
+		Liferay.Util.addInputCancel();
+	}
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 1; i < liferayNotices.length; i++) {
+		new Liferay.Notice(liferayNotices[i]);
+	}
+
+	
+})();(function() {var $ = AUI.$;var _ = AUI._;
+			Liferay.Session = new Liferay.SessionBase(
+				{
+					autoExtend: true,
+					redirectOnExpire: true,
+					redirectUrl: 'https\x3a\x2f\x2fwww\x2enavarra\x2ees\x2f',
+					sessionLength: 7190,
+					warningLength: 0
+				}
+			);
+
+			
+		})();(function() {var $ = AUI.$;var _ = AUI._;
+	Liferay.Form.register(
+		{
+			id: '_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_fmSuscribirse'
+
+			
+				, fieldRules: [
+
+					
+
+							
+
+							{
+								body: '',
+								custom: false,
+								errorMessage: '',
+								fieldName: '_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail',
+								validatorName: 'required'
+							}
+
+					
+
+							,
+
+							{
+								body: '',
+								custom: false,
+								errorMessage: '',
+								fieldName: '_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail',
+								validatorName: 'email'
+							}
+
+					
+
+							,
+
+							{
+								body: '',
+								custom: false,
+								errorMessage: '',
+								fieldName: '_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseAcepto',
+								validatorName: 'required'
+							}
+
+					
+
+							,
+
+							{
+								body: '',
+								custom: false,
+								errorMessage: '',
+								fieldName: '_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_captchaText',
+								validatorName: 'required'
+							}
+
+					
+
+							,
+
+							{
+								body: '#_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail',
+								custom: false,
+								errorMessage: '',
+								fieldName: '_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail1',
+								validatorName: 'equalTo'
+							}
+
+					
+
+							,
+
+							{
+								body: '',
+								custom: false,
+								errorMessage: '',
+								fieldName: '_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail1',
+								validatorName: 'required'
+							}
+
+					
+
+							,
+
+							{
+								body: '',
+								custom: false,
+								errorMessage: '',
+								fieldName: '_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail1',
+								validatorName: 'email'
+							}
+
+					
+
+				]
+			
+
+			
+
+			, validateOnBlur: true
+		}
+	);
+
+	var onDestroyPortlet = function(event) {
+		if (event.portletId === 'es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet') {
+			delete Liferay.Form._INSTANCES['_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_fmSuscribirse'];
+		}
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+
+	
+
+	Liferay.fire(
+		'_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_formReady',
+		{
+			formName: '_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_fmSuscribirse'
+		}
+	);
+})();});
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+<script src="https://www.navarra.es/o/portal-navarra-theme-3/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=es_ES&amp;b=7210&amp;t=1790845986000" type="text/javascript"></script>
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+		AUI().use(
+			'aui-base',
+			function(A) {
+				var frameElement = window.frameElement;
+
+				if (frameElement && frameElement.getAttribute('id') === 'simulationDeviceIframe') {
+					A.getBody().addClass('lfr-has-simulation-panel');
+				}
+			}
+		);
+	// ]]>
+</script><script type="text/javascript">
+// <![CDATA[
+Liferay.Loader.require('frontend-js-tooltip-support-web@2.0.4/index', function(frontendJsTooltipSupportWeb204Index) {
+(function(){
+var TooltipSupport = frontendJsTooltipSupportWeb204Index;
+(function() {
+try {
+TooltipSupport.default()
+}
+catch (err) {
+console.error(err);
+}
+})();})();
+});
+// ]]>
+</script>
+<!-- inject:js -->
+	<script type="text/javascript" src="https://www.navarra.es/o/portal-navarra-theme-3/js/lightgalleryButtons.js"></script>
+<!-- endinject -->
+
+<!-- Cargar service-worker para PWA-->
+<script type="text/javascript" src="https://www.navarra.es/o/portal-navarra-theme-3/js/serviceWorkerSelector.js" data-param="https://www.navarra.es/o/portal-navarra-theme-3/js"></script>
+<!-- FIN carga -->
+
+<!-- -->
+<script type="text/javascript" src="https://www.navarra.es/o/portal-navarra-theme-3/js/installApp.js" data-param="https://www.navarra.es/o/portal-navarra-theme-3/templates"></script>
+<!-- FIN instalacion -->
+
+</body>
+
+</html>
+
+		
+	
+

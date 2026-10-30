@@ -1,13 +1,13 @@
 ---
 name: uk-self-employment-sa103
 description: "UK sole trader trading profits on the Self Assessment self-employment pages (SA103S short, SA103F full) for tax year 2026-27, with the 2025-26 figures for returns due by 31 January 2027. Covers who is taxed on trading profits, allowable expenses, the GBP 1,000 trading allowance, cash basis as the default from 2024-25, the tax year basis and the five-year spreading of transition profits, capital allowances (AIA GBP 1 million, 14% main pool from 6 April 2026, 40% first-year allowance), simplified expenses (55p a mile from 2026-27), trade losses and the sideways relief cap, Class 4 NIC, Making Tax Digital for Income Tax from 6 April 2026, filing deadlines, penalties and interest. Trigger: 'sole trader tax', 'SA103', 'allowable expenses', 'trading allowance', 'cash basis', 'basis period reform', 'transition profit', 'MTD for Income Tax'. Out of scope: partnerships (SA104), companies (uk-corporation-tax), NIC detail (uk-national-insurance), payments on account (uk-payments-on-account), Scottish rates (uk-scottish-income-tax)."
-version: 3.3
+version: 3.4
 jurisdiction: GB
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
-last_updated: 2026-10-24
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -67,6 +67,14 @@ Who is out: partnerships, companies, employees taxed through PAYE, and landlords
 **3. Cash basis or accruals.** The cash basis is the default for sole traders from 2024-25 (ITTOIA 2005 s 24A). Income counts when received and expenses when paid. A trader can elect for generally accepted accounting practice instead (s 25C), for example a business with high stock or one that needs accruals accounts for a lender. Excluded trades cannot use the cash basis (s 25B): partnerships with a non-individual partner, LLPs, a trade with a herd basis election, a trade with a claim to average fluctuating profits (farmers and creative artists), a trade that obtained business premises renovation allowance in the previous 7 years, a mineral extraction trade, and a trade that obtained research and development allowances and still owns the asset. Lloyd's underwriters keep their own rules (s 24A(5)). Under the cash basis, equipment bought to keep and use in the business is deducted as a normal expense; cars still go through capital allowances. From 2024-25 the old cash basis turnover limit, the cap on deductible interest and the bar on sideways loss relief are gone (FA 2024 Sch 10 paras 6 to 8).
 
 **4. Allowable expenses.** A deduction is allowed only for an expense incurred wholly and exclusively for the trade (ITTOIA 2005 s 34). For a mixed-use cost, deduct the identifiable business part. Not allowed: private spending, the trader's own drawings and pay, income tax and NIC, fines, most entertaining, and (under accruals) capital expenditure, which gets capital allowances instead.
+- **Entertainment.** No deduction for business entertainment or gifts, including hospitality of any kind (ITTOIA 2005 s 45). Exceptions: entertainment provided for the trader's own employees, unless it is incidental to entertaining others, and entertainment that is itself the trade (s 46). On the 2025-26 SA103F, client entertaining included in box 24 is added back in box 39 (SA103F Notes 2026).
+- **Depreciation and losses on assets** are not allowable; capital allowances replace them (SA103F Notes 2026, box 29, add-back in box 44).
+- **Travel.** Train, bus, air and taxi fares, and hotel room costs and meals on overnight business trips, are allowable (SA103F Notes 2026, box 20).
+- **Loans.** Interest on business loans is allowable (box 25); repayments of the amount borrowed are not.
+- **Legal fees.** Legal costs of buying property and large items of equipment, and costs of settling tax disputes, are disallowable (SA103F Notes 2026, box 28, add-back in box 43).
+- **Own pay and pension.** The trader's own drawings, NIC and pension payments are not staff costs (SA103F Notes 2026, box 19). Pension relief is claimed on the main return, not the SA103.
+- **VAT.** A VAT-registered trader on traditional accounting records income and expenses excluding VAT, unless the VAT is not recoverable. On the cash basis figures normally include VAT: the net VAT paid to HMRC goes in box 30 as an expense and a net repayment goes in box 16. Recoverable VAT is left out of capital allowance computations (SA103F Notes 2026, "Value Added Tax").
+- **SA103F boxes for capital allowances (2025-26 form):** box 49 AIA, box 50 main rate (18% on the 2025-26 form; 14% applies from 6 April 2026), box 51 special rate 6%, box 52.1 zero-emission car allowance (SA103F Notes 2026).
 
 **5. Trading allowance (GBP 1,000).** If gross trading income from all trades is GBP 1,000 or less, it is not taxed (ITTOIA 2005 s 783AE). If it is more, the trader can elect for partial relief: deduct GBP 1,000 instead of actual expenses and capital allowances (s 783AH). Neither allowance can be used in a year with any trading or property income from a company the person or someone connected to them owns or controls, a partnership in which they or a connected person are partners, or their employer or their spouse's or civil partner's employer.
 
@@ -88,7 +96,7 @@ Who is out: partnerships, companies, employees taxed through PAYE, and landlords
 - The s 64 and s 72 deductions against other income (with some other reliefs) are capped at the greater of GBP 50,000 and 25% of adjusted total income (s 24A). The cap does not apply to losses set against profits of the same trade (s 24A(7)(b)).
 - A trader who spends under an average of 10 hours a week on the trade (non-active capacity) can get no more than GBP 25,000 a year of sideways relief for its losses (ss 74A, 74C).
 
-**9. Class 4 NIC.** 6% of profits between GBP 12,570 and GBP 50,270, and 2% above (SSCBA 1992 s 15(3)). Profits of a trade carried on wholly outside the UK are excluded (s 15(1)(c)). A person over State Pension age at the start of the tax year, or not UK resident for income tax in the year, pays no Class 4 (Social Security (Contributions) Regulations 2001 reg 91). Class 2 is no longer payable; voluntary Class 2 is open to those with profits under the small profits threshold. Detail and exceptions: `uk-national-insurance`.
+**9. Class 4 NIC.** 6% of profits between GBP 12,570 and GBP 50,270, and 2% above (SSCBA 1992 s 15(3)). Profits of a trade carried on wholly outside the UK are excluded (s 15(1)(c)). A person over State Pension age at the start of the tax year, or not UK resident for income tax in the year, pays no Class 4 (Social Security (Contributions) Regulations 2001 reg 91). The main rate was 9% for 2023-24 and 6% from 2024-25 (HMRC rates and allowances: National Insurance contributions). Compulsory Class 2 was removed from 6 April 2024 (National Insurance Contributions (Reduction in Rates) Act 2023 s 3, amending SSCBA 1992 s 11). Profits at or above the small profits threshold (GBP 7,105 for 2026-27, GBP 6,845 for 2025-26, GBP 6,725 for 2024-25) give a Class 2 credit treated as paid. Below it, voluntary Class 2 can be paid through Self Assessment at GBP 3.65 a week for 2026-27 (GBP 3.50 for 2025-26, GBP 3.45 for 2024-25) to protect State Pension and contributory benefit entitlement (same source). Detail and exceptions: `uk-national-insurance`.
 
 ## Deadlines and filing
 
@@ -213,6 +221,57 @@ expected:
   total: 18570.74
 ```
 
+### Example 3: Trading allowance against actual expenses
+
+Side income of GBP 4,000 from occasional consulting, with actual expenses of GBP 700. Actual expenses give a profit of GBP 3,300; the trading allowance gives GBP 3,000 (ITTOIA 2005 s 783AH). Elect for the allowance. Turnover is below every MTD threshold.
+
+```oa-check
+name: Trading allowance against actual expenses
+inputs:
+  income: 4000
+  expenses: 700
+steps:
+  - profit_actual: income - expenses
+  - profit_allowance: income - 1000
+expected:
+  profit_actual: 3300
+  profit_allowance: 3000
+```
+
+### Example 4: Home office, flat rate against actual costs
+
+A trader works from home 130 hours a month for 11 months. The flat rate gives 11 x GBP 26 = GBP 286 (GOV.UK simplified expenses). Actual costs: one room of five, with household rent GBP 12,000, utilities GBP 2,400 and broadband GBP 480, gives 1/5 of GBP 14,880 = GBP 2,976. The actual method gives more here; check the room's business use before claiming.
+
+```oa-check
+name: Home office flat rate against actual costs
+inputs:
+  months: 11
+  rent: 12000
+  utilities: 2400
+  broadband: 480
+steps:
+  - flat_rate: months * 26
+  - actual: (rent + utilities + broadband) / 5
+expected:
+  flat_rate: 286
+  actual: 2976
+```
+
+### Example 5: Voluntary Class 2 on low profits (2026-27)
+
+Profit of GBP 4,200 is below the small profits threshold of GBP 7,105. Class 4 is nil (below GBP 12,570) and no Class 2 is due. To keep the year qualifying for State Pension, the trader can pay voluntary Class 2 through Self Assessment: 52 x GBP 3.65 = GBP 189.80.
+
+```oa-check
+name: Voluntary Class 2, 2026-27
+inputs:
+  weeks: 52
+  weekly_rate: 3.65
+steps:
+  - voluntary_class2: weeks * weekly_rate
+expected:
+  voluntary_class2: 189.80
+```
+
 ## Ask the client first
 
 1. What is your accounting year end, and do you still have transition profit being spread from 2023-24?
@@ -252,6 +311,8 @@ expected:
 | HMRC Business Income Manual BIM81320 (tax on transition profits) | https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim81320 | 2026-10-24 |
 | GOV.UK, Capital allowances: business cars | https://www.gov.uk/capital-allowances/business-cars | 2026-10-24 |
 | GOV.UK, Capital allowances: full expensing | https://www.gov.uk/capital-allowances/full-expensing | 2026-10-24 |
+| ITTOIA 2005 ss 45, 46 (business entertainment) | https://www.legislation.gov.uk/ukpga/2005/5/section/45 | 2026-10-27 |
+| NIC (Reduction in Rates) Act 2023 s 3 (Class 2 no longer payable) | https://www.legislation.gov.uk/ukpga/2023/57/section/3 | 2026-10-27 |
 | SSCBA 1992 s 15 (Class 4) | https://www.legislation.gov.uk/ukpga/1992/4/section/15 | 2026-10-24 |
 | TMA 1970 s 8 (return deadlines) | https://www.legislation.gov.uk/ukpga/1970/9/section/8 | 2026-10-24 |
 | TMA 1970 s 59B (balancing payment) | https://www.legislation.gov.uk/ukpga/1970/9/section/59B | 2026-10-24 |

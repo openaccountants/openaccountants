@@ -1,0 +1,348 @@
+{
+  "utc": "2026-10-27T23:35:20.428107Z",
+  "verdict": "BOUNDED PASS",
+  "candidates": {
+    "es-vat-return.md": {
+      "before_sha256": "074290ea1009163b5480d3ff9ba61ef521ff4487bc1673a852d003b069b4397f",
+      "candidate_sha256": "8f52db66f61f71bea82bc9ffced1c93d3007cb2cafbbf87ac35cfbf39eedde96",
+      "candidate_bytes": 76767
+    },
+    "spain-vat-return.md": {
+      "before_sha256": "8a459ee282c66569cca124ef4b589f486ffcf55069ab5d2dff9994740c684f08",
+      "candidate_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "candidate_bytes": 26446
+    },
+    "es-estimated-tax.md": {
+      "before_sha256": "087e86703a885ddaf0c931261085b42a3b82f86e6bad903d46f40cc60ba83f94",
+      "candidate_sha256": "c92992451eb7ec391e9f5763e5871ba7baffb2c99bd749052f582550ba83bf31",
+      "candidate_bytes": 34585
+    },
+    "es-income-tax.md": {
+      "before_sha256": "1d9320f9ed602e68fc30865b2b4cf1b1091564e6f765c40fd5fe5175907caab1",
+      "candidate_sha256": "5ce82b0e54ba2e1ecc3b13216958e2e763c991028cc6908c9f18f4bb7fd78475",
+      "candidate_bytes": 85291
+    },
+    "README.md": {
+      "before_sha256": "18f77758ef5a3beee9a72e8cedc96379e720cdd04e883f1fc3f9718d166f8fa6",
+      "candidate_sha256": "7cb9e544b2776cb5d284afa905cf84f3bfb6f5c2986422e7f85b159d29fae4cb",
+      "candidate_bytes": 8688
+    }
+  },
+  "artifacts": [
+    {
+      "path": "README.md.diff",
+      "bytes": 2389,
+      "sha256": "26d4b955a34e40131a39a010a11867baf63bf2ba9adc6365e2bf9e7768da36c5"
+    },
+    {
+      "path": "all-url-occurrence-ledger.json",
+      "bytes": 46354,
+      "sha256": "0c20c2e6123883c73e47d3746d123a5f3947a0565441563aa522ab98309e6432"
+    },
+    {
+      "path": "controls.json",
+      "bytes": 8200,
+      "sha256": "e35e358bfb12a3ee1df33ceb6222c3692ee8bbb5031fee64403958c789c2f807"
+    },
+    {
+      "path": "es-estimated-tax.md.diff",
+      "bytes": 12243,
+      "sha256": "5275a80573d4c5f0f4e2de1f49c35e71fc6dc359f93acf5df11153f60f575faf"
+    },
+    {
+      "path": "es-income-tax.md.diff",
+      "bytes": 5467,
+      "sha256": "f65b74b2327f2e328b4344a88f8c2979b5f67c555d267522bd5d9615b4293fb8"
+    },
+    {
+      "path": "es-vat-return.md.diff",
+      "bytes": 11518,
+      "sha256": "007d31f23cee6fabe460226470c172cd6198c2dfeb89291f8b36df1eae1a4445"
+    },
+    {
+      "path": "findings-open.json",
+      "bytes": 812,
+      "sha256": "a90b6149b5e4d6faf5df31f634a61e5a99531440e843e4268b15e07e0e749ed1"
+    },
+    {
+      "path": "findings.json",
+      "bytes": 1148,
+      "sha256": "ffddd5c310002be06422743931f29c73711e788ed676009c680ce703b5a0e835"
+    },
+    {
+      "path": "fresh-sources/aeat-april-1-effects-receipt.json",
+      "bytes": 524,
+      "sha256": "6bbde911a44212f02dd3acaa699cd63d95b851dbe1d049a370e75311fe577245"
+    },
+    {
+      "path": "fresh-sources/aeat-april-1-effects.html",
+      "bytes": 8944,
+      "sha256": "b1a9c75ef2093827d41b6a42805bff4927c7a10897df11d259dc735df5b87aac"
+    },
+    {
+      "path": "fresh-sources/aeat-april-9-sii-redeme-receipt.json",
+      "bytes": 525,
+      "sha256": "8fbae02e3c5b830cd722ee50833fb4843d44fa54e18d5ea4d31cd7381aab0afc"
+    },
+    {
+      "path": "fresh-sources/aeat-april-9-sii-redeme.html",
+      "bytes": 6654,
+      "sha256": "195cedcf641c7a4d6a970a77df4cc4b99af35dbface273d8b7486bcb7e17e0a3"
+    },
+    {
+      "path": "fresh-sources/aeat-irpf-eligibility-receipt.json",
+      "bytes": 546,
+      "sha256": "655940cd3b061f3035ebd5c351c0aa08c7b4795a7d0829cd0ef1af9f3184d5e8"
+    },
+    {
+      "path": "fresh-sources/aeat-irpf-eligibility.html",
+      "bytes": 28195,
+      "sha256": "11dc81661c100f19bb60488711d6f4b58865eec3e20879d525c5567ecee80f64"
+    },
+    {
+      "path": "fresh-sources/aeat-simplified-eligibility-receipt.json",
+      "bytes": 562,
+      "sha256": "a29a75de45b8fceee7cd3b8cf8c2597a075b2c688bdfd1fb9321226c6028cc54"
+    },
+    {
+      "path": "fresh-sources/aeat-simplified-eligibility.html",
+      "bytes": 26493,
+      "sha256": "720a9213071f941bf11ccd7172772dff99a5dda0319d21e62b9a781adc9e1db8"
+    },
+    {
+      "path": "fresh-sources/leta-rirpf-current-receipt.json",
+      "bytes": 404,
+      "sha256": "a8c619d071b44b425dd59e39ac15ca753c4d11ac608f0ecc818c8791bdd8e2b4"
+    },
+    {
+      "path": "fresh-sources/leta-rirpf-current.html",
+      "bytes": 1000017,
+      "sha256": "02c057946e8a48912089d42621b65d0944c2ec366a060b6e70620a99a4d4b63f"
+    },
+    {
+      "path": "fresh-sources/lirpf-current-receipt.json",
+      "bytes": 401,
+      "sha256": "e9f074154699766892c53b8748b52dcfdbc2e9503b195ad95f38e1d1d8cdbb62"
+    },
+    {
+      "path": "fresh-sources/lirpf-current.html",
+      "bytes": 2028806,
+      "sha256": "83c676e483981c4968dd1f0743631a822713ef146780db89f65593df232a385f"
+    },
+    {
+      "path": "fresh-sources/liva-current-receipt.json",
+      "bytes": 400,
+      "sha256": "ac1e3b8fa0f39521d39b6f6316ed59869e2484d6654fc7496935436fa1a274c9"
+    },
+    {
+      "path": "fresh-sources/liva-current.html",
+      "bytes": 1769465,
+      "sha256": "d2eeb32b44d5ea21d551c8580da10dce6d0fdd602e1fb6b69aa7ae0d5a6c7996"
+    },
+    {
+      "path": "fresh-sources/module-order-2026-receipt.json",
+      "bytes": 404,
+      "sha256": "19281ec94ebb01729cc0f824ed348c9330790444e6f6cfc6573db3c174af59d7"
+    },
+    {
+      "path": "fresh-sources/module-order-2026.html",
+      "bytes": 442076,
+      "sha256": "23a4fce0cac41f91d7065dcf1e097109a132077f5af4da4e4f87fb2ea9e3b625"
+    },
+    {
+      "path": "fresh-sources/rdl-16-2025-receipt.json",
+      "bytes": 398,
+      "sha256": "365d940d210913df905b3956ac3b34e62cef050c1e96ae49a0c9c982f46d29df"
+    },
+    {
+      "path": "fresh-sources/rdl-16-2025-repeal-receipt.json",
+      "bytes": 410,
+      "sha256": "b34b05871e6009ee9e3faa41b41eeac9ff7f600056f81d59638361c4842e229f"
+    },
+    {
+      "path": "fresh-sources/rdl-16-2025-repeal.html",
+      "bytes": 41707,
+      "sha256": "f85190bfe1c236424a23458d0b1701d691a22fceccb0b3a4be3887eba5d75538"
+    },
+    {
+      "path": "fresh-sources/rdl-16-2025.html",
+      "bytes": 416716,
+      "sha256": "e08a312afdac7d10c582d181868f022e76cc64ac90c1a7a411a6b5f3394feace"
+    },
+    {
+      "path": "fresh-sources/rdl-2-2026-receipt.json",
+      "bytes": 396,
+      "sha256": "f3db979b0236c3b9a965ccf3afccff01845b3824026772fb4d9ed34987691e84"
+    },
+    {
+      "path": "fresh-sources/rdl-2-2026-repeal-receipt.json",
+      "bytes": 409,
+      "sha256": "cb8902379e31e7dc597eb37ace3b49e6ea6a8b670372c9e23282294b4d6ddead"
+    },
+    {
+      "path": "fresh-sources/rdl-2-2026-repeal.html",
+      "bytes": 37233,
+      "sha256": "2df30e4cb7fa07b2baf1e324a9a9e3aa8a6a8afa6a9f0dfcbc3f8dd6c176e761"
+    },
+    {
+      "path": "fresh-sources/rdl-2-2026.html",
+      "bytes": 260662,
+      "sha256": "3305d6098ae1986112a3849791d1bd9fce6c0e9662130d971f287cab53bf3e43"
+    },
+    {
+      "path": "fresh-sources/receipts.json",
+      "bytes": 6093,
+      "sha256": "8212a34c50e3b0eb447600f4a9f9d9b4f1f80dc983606482351c16491095d9bc"
+    },
+    {
+      "path": "fresh-sources/riva-current-receipt.json",
+      "bytes": 400,
+      "sha256": "d5db78778a72fe69d89420359c1b64b91e471ac14168472fb3ef67553bdd0eac"
+    },
+    {
+      "path": "fresh-sources/riva-current.html",
+      "bytes": 1052204,
+      "sha256": "ffdb577dd0dc7f7d9cbc769d29acf84b36b2caa73b9863aad9d9932e4ea53ccd"
+    },
+    {
+      "path": "leta-rirpf-current-coordination.txt",
+      "bytes": 7265,
+      "sha256": "732322fd09cf2936371ffd0288fac2fabeae889328d43b6a93a9027cf87ddd85"
+    },
+    {
+      "path": "leta-rirpf-current-operative.txt",
+      "bytes": 7181,
+      "sha256": "ca5c77e573731f67b0be078cdb784f86ad92a6f9be95472c45d152f5a7d58f3e"
+    },
+    {
+      "path": "lirpf-current-operative.txt",
+      "bytes": 12405,
+      "sha256": "cac4876ab68722c7ebae726d5057122b073235945d5f1b3d3f6a99155a9a1986"
+    },
+    {
+      "path": "liva-current-operative.txt",
+      "bytes": 9198,
+      "sha256": "efff3652cb9e37844816b5c1a04011df123ee4ce66ca4c42e0b817672efbdc77"
+    },
+    {
+      "path": "live-read-only-check.json",
+      "bytes": 801,
+      "sha256": "f63cb7c31e91123feeb3e621e3ee88850da7b1a34451616cc6e68b7796410687"
+    },
+    {
+      "path": "module-order-2026-operative.txt",
+      "bytes": 27720,
+      "sha256": "d6909d3427437a7e8829d2d1e22f162c6a5e0345d8e688fca30e739fa4c16271"
+    },
+    {
+      "path": "oa-run.log",
+      "bytes": 58,
+      "sha256": "4a1a9e5e70a7e517eb701e76c2e765fa6458a068970247f5402d60c68d3bb00a"
+    },
+    {
+      "path": "preservation-controls.json",
+      "bytes": 1696,
+      "sha256": "a9a75d4de2b51d555472bdcc334f356ffddc38185990878ec5b65da54ec42f85"
+    },
+    {
+      "path": "rdl-16-2025-operative.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rdl-2-2026-operative.txt",
+      "bytes": 4172,
+      "sha256": "828d737e453f2f23108079133e719bcd7c4ed0eb01efe7c17d3b3e61de2bded0"
+    },
+    {
+      "path": "report.md",
+      "bytes": 6750,
+      "sha256": "1e3a8e7ed8ffc021a70c29634e7632324b5e90174cc1b353703d692d0ac47063"
+    },
+    {
+      "path": "review-controls.py",
+      "bytes": 8362,
+      "sha256": "65c8ed93e0f643e47d0d1fe61592154a55f3ccca5ed28d13820fa85f5f60e489"
+    },
+    {
+      "path": "reviewed-candidates/README.md",
+      "bytes": 8688,
+      "sha256": "7cb9e544b2776cb5d284afa905cf84f3bfb6f5c2986422e7f85b159d29fae4cb"
+    },
+    {
+      "path": "reviewed-candidates/es-estimated-tax.md",
+      "bytes": 34585,
+      "sha256": "c92992451eb7ec391e9f5763e5871ba7baffb2c99bd749052f582550ba83bf31"
+    },
+    {
+      "path": "reviewed-candidates/es-income-tax.md",
+      "bytes": 85291,
+      "sha256": "5ce82b0e54ba2e1ecc3b13216958e2e763c991028cc6908c9f18f4bb7fd78475"
+    },
+    {
+      "path": "reviewed-candidates/es-vat-return.md",
+      "bytes": 76767,
+      "sha256": "8f52db66f61f71bea82bc9ffced1c93d3007cb2cafbbf87ac35cfbf39eedde96"
+    },
+    {
+      "path": "reviewed-candidates/spain-vat-return.md",
+      "bytes": 26446,
+      "sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977"
+    },
+    {
+      "path": "riva-current-coordination.txt",
+      "bytes": 1590,
+      "sha256": "6d9c58c9b3508cdd95d379d40a98f153c00b5a6768b6f200e78f11f974702422"
+    },
+    {
+      "path": "riva-current-operative.txt",
+      "bytes": 16235,
+      "sha256": "8f2b437833d289bff7d39cb044711d2f7a5db500f6827f0f56c7ce92627f906d"
+    },
+    {
+      "path": "source-read-receipts.json",
+      "bytes": 1518,
+      "sha256": "bd2ed85168183f6f662f68158bbe42882433f9df7935876882434448413e7b24"
+    },
+    {
+      "path": "source-scope-assessment.md",
+      "bytes": 3055,
+      "sha256": "fb3bbf0a7d7d24281b9e3bc9cf691dec2fc42fdba844d5481f9cff7eff8426a1"
+    },
+    {
+      "path": "spain-vat-return.md.diff",
+      "bytes": 6324,
+      "sha256": "c97ed6d9b5932928c7f8a4d06e98d0e094cac3157549f93abcb587f10eb179ef"
+    },
+    {
+      "path": "unit-preservation-ledger.json",
+      "bytes": 280412,
+      "sha256": "5b914d0264ef22f7f89d1003e5beceb50304c62830f21baa7e59beb0ab427a4b"
+    },
+    {
+      "path": "validation-snapshot/skills/international/spain/es-estimated-tax.md",
+      "bytes": 34585,
+      "sha256": "c92992451eb7ec391e9f5763e5871ba7baffb2c99bd749052f582550ba83bf31"
+    },
+    {
+      "path": "validation-snapshot/skills/international/spain/es-income-tax.md",
+      "bytes": 85291,
+      "sha256": "5ce82b0e54ba2e1ecc3b13216958e2e763c991028cc6908c9f18f4bb7fd78475"
+    },
+    {
+      "path": "validation-snapshot/skills/international/spain/es-vat-return.md",
+      "bytes": 76767,
+      "sha256": "8f52db66f61f71bea82bc9ffced1c93d3007cb2cafbbf87ac35cfbf39eedde96"
+    },
+    {
+      "path": "validation-snapshot/skills/international/spain/spain-vat-return.md",
+      "bytes": 26446,
+      "sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977"
+    },
+    {
+      "path": "validation.log",
+      "bytes": 233,
+      "sha256": "fe163278ff1eb2763eea2f187294de83541bfb6821e6bd1ee41d391817d48537"
+    }
+  ]
+}

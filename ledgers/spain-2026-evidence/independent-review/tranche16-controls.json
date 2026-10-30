@@ -1,0 +1,2904 @@
+{
+  "count": 483,
+  "checks": [
+    {
+      "name": "regionrow1cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow1cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow1cell3",
+      "actual": "12500",
+      "expected": "12500",
+      "pass": true
+    },
+    {
+      "name": "regionrow1cell4",
+      "actual": "19/2",
+      "expected": "19/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow2cell1",
+      "actual": "12500",
+      "expected": "12500",
+      "pass": true
+    },
+    {
+      "name": "regionrow2cell2",
+      "actual": "2375/2",
+      "expected": "2375/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow2cell3",
+      "actual": "9500",
+      "expected": "9500",
+      "pass": true
+    },
+    {
+      "name": "regionrow2cell4",
+      "actual": "25/2",
+      "expected": "25/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow3cell1",
+      "actual": "22000",
+      "expected": "22000",
+      "pass": true
+    },
+    {
+      "name": "regionrow3cell2",
+      "actual": "2375",
+      "expected": "2375",
+      "pass": true
+    },
+    {
+      "name": "regionrow3cell3",
+      "actual": "11000",
+      "expected": "11000",
+      "pass": true
+    },
+    {
+      "name": "regionrow3cell4",
+      "actual": "16",
+      "expected": "16",
+      "pass": true
+    },
+    {
+      "name": "regionrow4cell1",
+      "actual": "33000",
+      "expected": "33000",
+      "pass": true
+    },
+    {
+      "name": "regionrow4cell2",
+      "actual": "4135",
+      "expected": "4135",
+      "pass": true
+    },
+    {
+      "name": "regionrow4cell3",
+      "actual": "20000",
+      "expected": "20000",
+      "pass": true
+    },
+    {
+      "name": "regionrow4cell4",
+      "actual": "19",
+      "expected": "19",
+      "pass": true
+    },
+    {
+      "name": "regionrow5cell1",
+      "actual": "53000",
+      "expected": "53000",
+      "pass": true
+    },
+    {
+      "name": "regionrow5cell2",
+      "actual": "7935",
+      "expected": "7935",
+      "pass": true
+    },
+    {
+      "name": "regionrow5cell3",
+      "actual": "37000",
+      "expected": "37000",
+      "pass": true
+    },
+    {
+      "name": "regionrow5cell4",
+      "actual": "43/2",
+      "expected": "43/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow6cell1",
+      "actual": "90000",
+      "expected": "90000",
+      "pass": true
+    },
+    {
+      "name": "regionrow6cell2",
+      "actual": "15890",
+      "expected": "15890",
+      "pass": true
+    },
+    {
+      "name": "regionrow6cell3",
+      "actual": "30000",
+      "expected": "30000",
+      "pass": true
+    },
+    {
+      "name": "regionrow6cell4",
+      "actual": "47/2",
+      "expected": "47/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow7cell1",
+      "actual": "120000",
+      "expected": "120000",
+      "pass": true
+    },
+    {
+      "name": "regionrow7cell2",
+      "actual": "22940",
+      "expected": "22940",
+      "pass": true
+    },
+    {
+      "name": "regionrow7cell3",
+      "actual": "55000",
+      "expected": "55000",
+      "pass": true
+    },
+    {
+      "name": "regionrow7cell4",
+      "actual": "49/2",
+      "expected": "49/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow8cell1",
+      "actual": "175000",
+      "expected": "175000",
+      "pass": true
+    },
+    {
+      "name": "regionrow8cell2",
+      "actual": "36415",
+      "expected": "36415",
+      "pass": true
+    },
+    {
+      "name": "regionrow8cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow8cell4",
+      "actual": "51/2",
+      "expected": "51/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow9cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow9cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow9cell3",
+      "actual": "259707/20",
+      "expected": "259707/20",
+      "pass": true
+    },
+    {
+      "name": "regionrow9cell4",
+      "actual": "9",
+      "expected": "9",
+      "pass": true
+    },
+    {
+      "name": "regionrow10cell1",
+      "actual": "259707/20",
+      "expected": "259707/20",
+      "pass": true
+    },
+    {
+      "name": "regionrow10cell2",
+      "actual": "29217/25",
+      "expected": "29217/25",
+      "pass": true
+    },
+    {
+      "name": "regionrow10cell3",
+      "actual": "32333/4",
+      "expected": "32333/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow10cell4",
+      "actual": "233/20",
+      "expected": "233/20",
+      "pass": true
+    },
+    {
+      "name": "regionrow11cell1",
+      "actual": "105343/5",
+      "expected": "105343/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow11cell2",
+      "actual": "105519/50",
+      "expected": "105519/50",
+      "pass": true
+    },
+    {
+      "name": "regionrow11cell3",
+      "actual": "70657/5",
+      "expected": "70657/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow11cell4",
+      "actual": "149/10",
+      "expected": "149/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow12cell1",
+      "actual": "35200",
+      "expected": "35200",
+      "pass": true
+    },
+    {
+      "name": "regionrow12cell2",
+      "actual": "105399/25",
+      "expected": "105399/25",
+      "pass": true
+    },
+    {
+      "name": "regionrow12cell3",
+      "actual": "24800",
+      "expected": "24800",
+      "pass": true
+    },
+    {
+      "name": "regionrow12cell4",
+      "actual": "92/5",
+      "expected": "92/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow13cell1",
+      "actual": "60000",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "regionrow13cell2",
+      "actual": "219479/25",
+      "expected": "219479/25",
+      "pass": true
+    },
+    {
+      "name": "regionrow13cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow13cell4",
+      "actual": "45/2",
+      "expected": "45/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow14cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow14cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow14cell3",
+      "actual": "13000",
+      "expected": "13000",
+      "pass": true
+    },
+    {
+      "name": "regionrow14cell4",
+      "actual": "19/2",
+      "expected": "19/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow15cell1",
+      "actual": "13000",
+      "expected": "13000",
+      "pass": true
+    },
+    {
+      "name": "regionrow15cell2",
+      "actual": "1235",
+      "expected": "1235",
+      "pass": true
+    },
+    {
+      "name": "regionrow15cell3",
+      "actual": "8100",
+      "expected": "8100",
+      "pass": true
+    },
+    {
+      "name": "regionrow15cell4",
+      "actual": "12",
+      "expected": "12",
+      "pass": true
+    },
+    {
+      "name": "regionrow16cell1",
+      "actual": "21100",
+      "expected": "21100",
+      "pass": true
+    },
+    {
+      "name": "regionrow16cell2",
+      "actual": "2207",
+      "expected": "2207",
+      "pass": true
+    },
+    {
+      "name": "regionrow16cell3",
+      "actual": "14100",
+      "expected": "14100",
+      "pass": true
+    },
+    {
+      "name": "regionrow16cell4",
+      "actual": "15",
+      "expected": "15",
+      "pass": true
+    },
+    {
+      "name": "regionrow17cell1",
+      "actual": "35200",
+      "expected": "35200",
+      "pass": true
+    },
+    {
+      "name": "regionrow17cell2",
+      "actual": "4322",
+      "expected": "4322",
+      "pass": true
+    },
+    {
+      "name": "regionrow17cell3",
+      "actual": "24800",
+      "expected": "24800",
+      "pass": true
+    },
+    {
+      "name": "regionrow17cell4",
+      "actual": "37/2",
+      "expected": "37/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow18cell1",
+      "actual": "60000",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "regionrow18cell2",
+      "actual": "8910",
+      "expected": "8910",
+      "pass": true
+    },
+    {
+      "name": "regionrow18cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow18cell4",
+      "actual": "45/2",
+      "expected": "45/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow19cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow19cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow19cell3",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow19cell4",
+      "actual": "9",
+      "expected": "9",
+      "pass": true
+    },
+    {
+      "name": "regionrow20cell1",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow20cell2",
+      "actual": "2241/2",
+      "expected": "2241/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow20cell3",
+      "actual": "26286/5",
+      "expected": "26286/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow20cell4",
+      "actual": "12",
+      "expected": "12",
+      "pass": true
+    },
+    {
+      "name": "regionrow21cell1",
+      "actual": "88536/5",
+      "expected": "88536/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow21cell2",
+      "actual": "43784/25",
+      "expected": "43784/25",
+      "pass": true
+    },
+    {
+      "name": "regionrow21cell3",
+      "actual": "15300",
+      "expected": "15300",
+      "pass": true
+    },
+    {
+      "name": "regionrow21cell4",
+      "actual": "14",
+      "expected": "14",
+      "pass": true
+    },
+    {
+      "name": "regionrow22cell1",
+      "actual": "165036/5",
+      "expected": "165036/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow22cell2",
+      "actual": "97334/25",
+      "expected": "97334/25",
+      "pass": true
+    },
+    {
+      "name": "regionrow22cell3",
+      "actual": "20400",
+      "expected": "20400",
+      "pass": true
+    },
+    {
+      "name": "regionrow22cell4",
+      "actual": "96/5",
+      "expected": "96/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow23cell1",
+      "actual": "267036/5",
+      "expected": "267036/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow23cell2",
+      "actual": "195254/25",
+      "expected": "195254/25",
+      "pass": true
+    },
+    {
+      "name": "regionrow23cell3",
+      "actual": "82964/5",
+      "expected": "82964/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow23cell4",
+      "actual": "43/2",
+      "expected": "43/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow24cell1",
+      "actual": "70000",
+      "expected": "70000",
+      "pass": true
+    },
+    {
+      "name": "regionrow24cell2",
+      "actual": "568881/50",
+      "expected": "568881/50",
+      "pass": true
+    },
+    {
+      "name": "regionrow24cell3",
+      "actual": "20000",
+      "expected": "20000",
+      "pass": true
+    },
+    {
+      "name": "regionrow24cell4",
+      "actual": "45/2",
+      "expected": "45/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow25cell1",
+      "actual": "90000",
+      "expected": "90000",
+      "pass": true
+    },
+    {
+      "name": "regionrow25cell2",
+      "actual": "793881/50",
+      "expected": "793881/50",
+      "pass": true
+    },
+    {
+      "name": "regionrow25cell3",
+      "actual": "85000",
+      "expected": "85000",
+      "pass": true
+    },
+    {
+      "name": "regionrow25cell4",
+      "actual": "25",
+      "expected": "25",
+      "pass": true
+    },
+    {
+      "name": "regionrow26cell1",
+      "actual": "175000",
+      "expected": "175000",
+      "pass": true
+    },
+    {
+      "name": "regionrow26cell2",
+      "actual": "1856381/50",
+      "expected": "1856381/50",
+      "pass": true
+    },
+    {
+      "name": "regionrow26cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow26cell4",
+      "actual": "26",
+      "expected": "26",
+      "pass": true
+    },
+    {
+      "name": "regionrow27cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow27cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow27cell3",
+      "actual": "13000",
+      "expected": "13000",
+      "pass": true
+    },
+    {
+      "name": "regionrow27cell4",
+      "actual": "17/2",
+      "expected": "17/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow28cell1",
+      "actual": "13000",
+      "expected": "13000",
+      "pass": true
+    },
+    {
+      "name": "regionrow28cell2",
+      "actual": "1105",
+      "expected": "1105",
+      "pass": true
+    },
+    {
+      "name": "regionrow28cell3",
+      "actual": "8000",
+      "expected": "8000",
+      "pass": true
+    },
+    {
+      "name": "regionrow28cell4",
+      "actual": "11",
+      "expected": "11",
+      "pass": true
+    },
+    {
+      "name": "regionrow29cell1",
+      "actual": "21000",
+      "expected": "21000",
+      "pass": true
+    },
+    {
+      "name": "regionrow29cell2",
+      "actual": "1985",
+      "expected": "1985",
+      "pass": true
+    },
+    {
+      "name": "regionrow29cell3",
+      "actual": "14200",
+      "expected": "14200",
+      "pass": true
+    },
+    {
+      "name": "regionrow29cell4",
+      "actual": "29/2",
+      "expected": "29/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow30cell1",
+      "actual": "35200",
+      "expected": "35200",
+      "pass": true
+    },
+    {
+      "name": "regionrow30cell2",
+      "actual": "4044",
+      "expected": "4044",
+      "pass": true
+    },
+    {
+      "name": "regionrow30cell3",
+      "actual": "24800",
+      "expected": "24800",
+      "pass": true
+    },
+    {
+      "name": "regionrow30cell4",
+      "actual": "18",
+      "expected": "18",
+      "pass": true
+    },
+    {
+      "name": "regionrow31cell1",
+      "actual": "60000",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "regionrow31cell2",
+      "actual": "8508",
+      "expected": "8508",
+      "pass": true
+    },
+    {
+      "name": "regionrow31cell3",
+      "actual": "30000",
+      "expected": "30000",
+      "pass": true
+    },
+    {
+      "name": "regionrow31cell4",
+      "actual": "45/2",
+      "expected": "45/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow32cell1",
+      "actual": "90000",
+      "expected": "90000",
+      "pass": true
+    },
+    {
+      "name": "regionrow32cell2",
+      "actual": "15258",
+      "expected": "15258",
+      "pass": true
+    },
+    {
+      "name": "regionrow32cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow32cell4",
+      "actual": "49/2",
+      "expected": "49/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow33cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow33cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow33cell3",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow33cell4",
+      "actual": "8",
+      "expected": "8",
+      "pass": true
+    },
+    {
+      "name": "regionrow34cell1",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow34cell2",
+      "actual": "996",
+      "expected": "996",
+      "pass": true
+    },
+    {
+      "name": "regionrow34cell3",
+      "actual": "7750",
+      "expected": "7750",
+      "pass": true
+    },
+    {
+      "name": "regionrow34cell4",
+      "actual": "53/5",
+      "expected": "53/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow35cell1",
+      "actual": "20200",
+      "expected": "20200",
+      "pass": true
+    },
+    {
+      "name": "regionrow35cell2",
+      "actual": "3635/2",
+      "expected": "3635/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow35cell3",
+      "actual": "15000",
+      "expected": "15000",
+      "pass": true
+    },
+    {
+      "name": "regionrow35cell4",
+      "actual": "68/5",
+      "expected": "68/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow36cell1",
+      "actual": "35200",
+      "expected": "35200",
+      "pass": true
+    },
+    {
+      "name": "regionrow36cell2",
+      "actual": "7715/2",
+      "expected": "7715/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow36cell3",
+      "actual": "4800",
+      "expected": "4800",
+      "pass": true
+    },
+    {
+      "name": "regionrow36cell4",
+      "actual": "89/5",
+      "expected": "89/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow37cell1",
+      "actual": "40000",
+      "expected": "40000",
+      "pass": true
+    },
+    {
+      "name": "regionrow37cell2",
+      "actual": "47119/10",
+      "expected": "47119/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow37cell3",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "regionrow37cell4",
+      "actual": "183/10",
+      "expected": "183/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow38cell1",
+      "actual": "50000",
+      "expected": "50000",
+      "pass": true
+    },
+    {
+      "name": "regionrow38cell2",
+      "actual": "65419/10",
+      "expected": "65419/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow38cell3",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "regionrow38cell4",
+      "actual": "19",
+      "expected": "19",
+      "pass": true
+    },
+    {
+      "name": "regionrow39cell1",
+      "actual": "60000",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "regionrow39cell2",
+      "actual": "84419/10",
+      "expected": "84419/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow39cell3",
+      "actual": "60000",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "regionrow39cell4",
+      "actual": "49/2",
+      "expected": "49/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow40cell1",
+      "actual": "120000",
+      "expected": "120000",
+      "pass": true
+    },
+    {
+      "name": "regionrow40cell2",
+      "actual": "231419/10",
+      "expected": "231419/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow40cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow40cell4",
+      "actual": "27",
+      "expected": "27",
+      "pass": true
+    },
+    {
+      "name": "regionrow41cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow41cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow41cell3",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow41cell4",
+      "actual": "19/2",
+      "expected": "19/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow42cell1",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow42cell2",
+      "actual": "4731/4",
+      "expected": "4731/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow42cell3",
+      "actual": "7750",
+      "expected": "7750",
+      "pass": true
+    },
+    {
+      "name": "regionrow42cell4",
+      "actual": "56/5",
+      "expected": "56/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow43cell1",
+      "actual": "20200",
+      "expected": "20200",
+      "pass": true
+    },
+    {
+      "name": "regionrow43cell2",
+      "actual": "8203/4",
+      "expected": "8203/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow43cell3",
+      "actual": "13800",
+      "expected": "13800",
+      "pass": true
+    },
+    {
+      "name": "regionrow43cell4",
+      "actual": "133/10",
+      "expected": "133/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow44cell1",
+      "actual": "34000",
+      "expected": "34000",
+      "pass": true
+    },
+    {
+      "name": "regionrow44cell2",
+      "actual": "77723/20",
+      "expected": "77723/20",
+      "pass": true
+    },
+    {
+      "name": "regionrow44cell3",
+      "actual": "26000",
+      "expected": "26000",
+      "pass": true
+    },
+    {
+      "name": "regionrow44cell4",
+      "actual": "179/10",
+      "expected": "179/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow45cell1",
+      "actual": "60000",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "regionrow45cell2",
+      "actual": "170803/20",
+      "expected": "170803/20",
+      "pass": true
+    },
+    {
+      "name": "regionrow45cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow45cell4",
+      "actual": "45/2",
+      "expected": "45/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow46cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow46cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow46cell3",
+      "actual": "12000",
+      "expected": "12000",
+      "pass": true
+    },
+    {
+      "name": "regionrow46cell4",
+      "actual": "44/5",
+      "expected": "44/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow47cell1",
+      "actual": "12000",
+      "expected": "12000",
+      "pass": true
+    },
+    {
+      "name": "regionrow47cell2",
+      "actual": "1056",
+      "expected": "1056",
+      "pass": true
+    },
+    {
+      "name": "regionrow47cell3",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "regionrow47cell4",
+      "actual": "117/10",
+      "expected": "117/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow48cell1",
+      "actual": "22000",
+      "expected": "22000",
+      "pass": true
+    },
+    {
+      "name": "regionrow48cell2",
+      "actual": "2226",
+      "expected": "2226",
+      "pass": true
+    },
+    {
+      "name": "regionrow48cell3",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "regionrow48cell4",
+      "actual": "73/5",
+      "expected": "73/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow49cell1",
+      "actual": "32000",
+      "expected": "32000",
+      "pass": true
+    },
+    {
+      "name": "regionrow49cell2",
+      "actual": "3686",
+      "expected": "3686",
+      "pass": true
+    },
+    {
+      "name": "regionrow49cell3",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "regionrow49cell4",
+      "actual": "17",
+      "expected": "17",
+      "pass": true
+    },
+    {
+      "name": "regionrow50cell1",
+      "actual": "42000",
+      "expected": "42000",
+      "pass": true
+    },
+    {
+      "name": "regionrow50cell2",
+      "actual": "5386",
+      "expected": "5386",
+      "pass": true
+    },
+    {
+      "name": "regionrow50cell3",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "regionrow50cell4",
+      "actual": "97/5",
+      "expected": "97/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow51cell1",
+      "actual": "52000",
+      "expected": "52000",
+      "pass": true
+    },
+    {
+      "name": "regionrow51cell2",
+      "actual": "7326",
+      "expected": "7326",
+      "pass": true
+    },
+    {
+      "name": "regionrow51cell3",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "regionrow51cell4",
+      "actual": "219/10",
+      "expected": "219/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow52cell1",
+      "actual": "62000",
+      "expected": "62000",
+      "pass": true
+    },
+    {
+      "name": "regionrow52cell2",
+      "actual": "9516",
+      "expected": "9516",
+      "pass": true
+    },
+    {
+      "name": "regionrow52cell3",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "regionrow52cell4",
+      "actual": "122/5",
+      "expected": "122/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow53cell1",
+      "actual": "72000",
+      "expected": "72000",
+      "pass": true
+    },
+    {
+      "name": "regionrow53cell2",
+      "actual": "11956",
+      "expected": "11956",
+      "pass": true
+    },
+    {
+      "name": "regionrow53cell3",
+      "actual": "28000",
+      "expected": "28000",
+      "pass": true
+    },
+    {
+      "name": "regionrow53cell4",
+      "actual": "261/10",
+      "expected": "261/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow54cell1",
+      "actual": "100000",
+      "expected": "100000",
+      "pass": true
+    },
+    {
+      "name": "regionrow54cell2",
+      "actual": "19264",
+      "expected": "19264",
+      "pass": true
+    },
+    {
+      "name": "regionrow54cell3",
+      "actual": "50000",
+      "expected": "50000",
+      "pass": true
+    },
+    {
+      "name": "regionrow54cell4",
+      "actual": "547/20",
+      "expected": "547/20",
+      "pass": true
+    },
+    {
+      "name": "regionrow55cell1",
+      "actual": "150000",
+      "expected": "150000",
+      "pass": true
+    },
+    {
+      "name": "regionrow55cell2",
+      "actual": "32939",
+      "expected": "32939",
+      "pass": true
+    },
+    {
+      "name": "regionrow55cell3",
+      "actual": "50000",
+      "expected": "50000",
+      "pass": true
+    },
+    {
+      "name": "regionrow55cell4",
+      "actual": "567/20",
+      "expected": "567/20",
+      "pass": true
+    },
+    {
+      "name": "regionrow56cell1",
+      "actual": "200000",
+      "expected": "200000",
+      "pass": true
+    },
+    {
+      "name": "regionrow56cell2",
+      "actual": "47114",
+      "expected": "47114",
+      "pass": true
+    },
+    {
+      "name": "regionrow56cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow56cell4",
+      "actual": "587/20",
+      "expected": "587/20",
+      "pass": true
+    },
+    {
+      "name": "regionrow57cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow57cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow57cell3",
+      "actual": "26145/2",
+      "expected": "26145/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow57cell4",
+      "actual": "19/2",
+      "expected": "19/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow58cell1",
+      "actual": "26145/2",
+      "expected": "26145/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow58cell2",
+      "actual": "124189/100",
+      "expected": "124189/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow58cell3",
+      "actual": "16275/2",
+      "expected": "16275/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow58cell4",
+      "actual": "12",
+      "expected": "12",
+      "pass": true
+    },
+    {
+      "name": "regionrow59cell1",
+      "actual": "21210",
+      "expected": "21210",
+      "pass": true
+    },
+    {
+      "name": "regionrow59cell2",
+      "actual": "221839/100",
+      "expected": "221839/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow59cell3",
+      "actual": "15750",
+      "expected": "15750",
+      "pass": true
+    },
+    {
+      "name": "regionrow59cell4",
+      "actual": "15",
+      "expected": "15",
+      "pass": true
+    },
+    {
+      "name": "regionrow60cell1",
+      "actual": "36960",
+      "expected": "36960",
+      "pass": true
+    },
+    {
+      "name": "regionrow60cell2",
+      "actual": "458089/100",
+      "expected": "458089/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow60cell3",
+      "actual": "15540",
+      "expected": "15540",
+      "pass": true
+    },
+    {
+      "name": "regionrow60cell4",
+      "actual": "37/2",
+      "expected": "37/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow61cell1",
+      "actual": "52500",
+      "expected": "52500",
+      "pass": true
+    },
+    {
+      "name": "regionrow61cell2",
+      "actual": "745579/100",
+      "expected": "745579/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow61cell3",
+      "actual": "7500",
+      "expected": "7500",
+      "pass": true
+    },
+    {
+      "name": "regionrow61cell4",
+      "actual": "41/2",
+      "expected": "41/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow62cell1",
+      "actual": "60000",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "regionrow62cell2",
+      "actual": "899329/100",
+      "expected": "899329/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow62cell3",
+      "actual": "20000",
+      "expected": "20000",
+      "pass": true
+    },
+    {
+      "name": "regionrow62cell4",
+      "actual": "23",
+      "expected": "23",
+      "pass": true
+    },
+    {
+      "name": "regionrow63cell1",
+      "actual": "80000",
+      "expected": "80000",
+      "pass": true
+    },
+    {
+      "name": "regionrow63cell2",
+      "actual": "1359329/100",
+      "expected": "1359329/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow63cell3",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "regionrow63cell4",
+      "actual": "24",
+      "expected": "24",
+      "pass": true
+    },
+    {
+      "name": "regionrow64cell1",
+      "actual": "90000",
+      "expected": "90000",
+      "pass": true
+    },
+    {
+      "name": "regionrow64cell2",
+      "actual": "1599329/100",
+      "expected": "1599329/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow64cell3",
+      "actual": "40000",
+      "expected": "40000",
+      "pass": true
+    },
+    {
+      "name": "regionrow64cell4",
+      "actual": "25",
+      "expected": "25",
+      "pass": true
+    },
+    {
+      "name": "regionrow65cell1",
+      "actual": "130000",
+      "expected": "130000",
+      "pass": true
+    },
+    {
+      "name": "regionrow65cell2",
+      "actual": "2599329/100",
+      "expected": "2599329/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow65cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow65cell4",
+      "actual": "51/2",
+      "expected": "51/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow66cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow66cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow66cell3",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow66cell4",
+      "actual": "19/2",
+      "expected": "19/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow67cell1",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow67cell2",
+      "actual": "4731/4",
+      "expected": "4731/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow67cell3",
+      "actual": "7750",
+      "expected": "7750",
+      "pass": true
+    },
+    {
+      "name": "regionrow67cell4",
+      "actual": "12",
+      "expected": "12",
+      "pass": true
+    },
+    {
+      "name": "regionrow68cell1",
+      "actual": "20200",
+      "expected": "20200",
+      "pass": true
+    },
+    {
+      "name": "regionrow68cell2",
+      "actual": "8451/4",
+      "expected": "8451/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow68cell3",
+      "actual": "15000",
+      "expected": "15000",
+      "pass": true
+    },
+    {
+      "name": "regionrow68cell4",
+      "actual": "15",
+      "expected": "15",
+      "pass": true
+    },
+    {
+      "name": "regionrow69cell1",
+      "actual": "35200",
+      "expected": "35200",
+      "pass": true
+    },
+    {
+      "name": "regionrow69cell2",
+      "actual": "17451/4",
+      "expected": "17451/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow69cell3",
+      "actual": "24800",
+      "expected": "24800",
+      "pass": true
+    },
+    {
+      "name": "regionrow69cell4",
+      "actual": "37/2",
+      "expected": "37/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow70cell1",
+      "actual": "60000",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "regionrow70cell2",
+      "actual": "35803/4",
+      "expected": "35803/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow70cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow70cell4",
+      "actual": "45/2",
+      "expected": "45/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow71cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow71cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow71cell3",
+      "actual": "13748",
+      "expected": "13748",
+      "pass": true
+    },
+    {
+      "name": "regionrow71cell4",
+      "actual": "9",
+      "expected": "9",
+      "pass": true
+    },
+    {
+      "name": "regionrow72cell1",
+      "actual": "13748",
+      "expected": "13748",
+      "pass": true
+    },
+    {
+      "name": "regionrow72cell2",
+      "actual": "30933/25",
+      "expected": "30933/25",
+      "pass": true
+    },
+    {
+      "name": "regionrow72cell3",
+      "actual": "5674",
+      "expected": "5674",
+      "pass": true
+    },
+    {
+      "name": "regionrow72cell4",
+      "actual": "23/2",
+      "expected": "23/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow73cell1",
+      "actual": "19422",
+      "expected": "19422",
+      "pass": true
+    },
+    {
+      "name": "regionrow73cell2",
+      "actual": "188983/100",
+      "expected": "188983/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow73cell3",
+      "actual": "16502",
+      "expected": "16502",
+      "pass": true
+    },
+    {
+      "name": "regionrow73cell4",
+      "actual": "14",
+      "expected": "14",
+      "pass": true
+    },
+    {
+      "name": "regionrow74cell1",
+      "actual": "35924",
+      "expected": "35924",
+      "pass": true
+    },
+    {
+      "name": "regionrow74cell2",
+      "actual": "420011/100",
+      "expected": "420011/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow74cell3",
+      "actual": "21642",
+      "expected": "21642",
+      "pass": true
+    },
+    {
+      "name": "regionrow74cell4",
+      "actual": "37/2",
+      "expected": "37/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow75cell1",
+      "actual": "57566",
+      "expected": "57566",
+      "pass": true
+    },
+    {
+      "name": "regionrow75cell2",
+      "actual": "205097/25",
+      "expected": "205097/25",
+      "pass": true
+    },
+    {
+      "name": "regionrow75cell3",
+      "actual": "35702",
+      "expected": "35702",
+      "pass": true
+    },
+    {
+      "name": "regionrow75cell4",
+      "actual": "47/2",
+      "expected": "47/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow76cell1",
+      "actual": "93268",
+      "expected": "93268",
+      "pass": true
+    },
+    {
+      "name": "regionrow76cell2",
+      "actual": "331877/20",
+      "expected": "331877/20",
+      "pass": true
+    },
+    {
+      "name": "regionrow76cell3",
+      "actual": "30477",
+      "expected": "30477",
+      "pass": true
+    },
+    {
+      "name": "regionrow76cell4",
+      "actual": "25",
+      "expected": "25",
+      "pass": true
+    },
+    {
+      "name": "regionrow77cell1",
+      "actual": "123745",
+      "expected": "123745",
+      "pass": true
+    },
+    {
+      "name": "regionrow77cell2",
+      "actual": "242131/10",
+      "expected": "242131/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow77cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow77cell4",
+      "actual": "26",
+      "expected": "26",
+      "pass": true
+    },
+    {
+      "name": "regionrow78cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow78cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow78cell3",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow78cell4",
+      "actual": "31/4",
+      "expected": "31/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow79cell1",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow79cell2",
+      "actual": "24122/25",
+      "expected": "24122/25",
+      "pass": true
+    },
+    {
+      "name": "regionrow79cell3",
+      "actual": "7750",
+      "expected": "7750",
+      "pass": true
+    },
+    {
+      "name": "regionrow79cell4",
+      "actual": "39/4",
+      "expected": "39/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow80cell1",
+      "actual": "20200",
+      "expected": "20200",
+      "pass": true
+    },
+    {
+      "name": "regionrow80cell2",
+      "actual": "3441/2",
+      "expected": "3441/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow80cell3",
+      "actual": "4000",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "regionrow80cell4",
+      "actual": "16",
+      "expected": "16",
+      "pass": true
+    },
+    {
+      "name": "regionrow81cell1",
+      "actual": "24200",
+      "expected": "24200",
+      "pass": true
+    },
+    {
+      "name": "regionrow81cell2",
+      "actual": "4721/2",
+      "expected": "4721/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow81cell3",
+      "actual": "11000",
+      "expected": "11000",
+      "pass": true
+    },
+    {
+      "name": "regionrow81cell4",
+      "actual": "35/2",
+      "expected": "35/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow82cell1",
+      "actual": "35200",
+      "expected": "35200",
+      "pass": true
+    },
+    {
+      "name": "regionrow82cell2",
+      "actual": "8571/2",
+      "expected": "8571/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow82cell3",
+      "actual": "24800",
+      "expected": "24800",
+      "pass": true
+    },
+    {
+      "name": "regionrow82cell4",
+      "actual": "21",
+      "expected": "21",
+      "pass": true
+    },
+    {
+      "name": "regionrow83cell1",
+      "actual": "60000",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "regionrow83cell2",
+      "actual": "18987/2",
+      "expected": "18987/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow83cell3",
+      "actual": "20200",
+      "expected": "20200",
+      "pass": true
+    },
+    {
+      "name": "regionrow83cell4",
+      "actual": "47/2",
+      "expected": "47/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow84cell1",
+      "actual": "80200",
+      "expected": "80200",
+      "pass": true
+    },
+    {
+      "name": "regionrow84cell2",
+      "actual": "28481/2",
+      "expected": "28481/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow84cell3",
+      "actual": "19000",
+      "expected": "19000",
+      "pass": true
+    },
+    {
+      "name": "regionrow84cell4",
+      "actual": "24",
+      "expected": "24",
+      "pass": true
+    },
+    {
+      "name": "regionrow85cell1",
+      "actual": "99200",
+      "expected": "99200",
+      "pass": true
+    },
+    {
+      "name": "regionrow85cell2",
+      "actual": "37601/2",
+      "expected": "37601/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow85cell3",
+      "actual": "21000",
+      "expected": "21000",
+      "pass": true
+    },
+    {
+      "name": "regionrow85cell4",
+      "actual": "49/2",
+      "expected": "49/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow86cell1",
+      "actual": "120200",
+      "expected": "120200",
+      "pass": true
+    },
+    {
+      "name": "regionrow86cell2",
+      "actual": "47891/2",
+      "expected": "47891/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow86cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow86cell4",
+      "actual": "25",
+      "expected": "25",
+      "pass": true
+    },
+    {
+      "name": "regionrow87cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow87cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow87cell3",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "regionrow87cell4",
+      "actual": "9",
+      "expected": "9",
+      "pass": true
+    },
+    {
+      "name": "regionrow88cell1",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "regionrow88cell2",
+      "actual": "900",
+      "expected": "900",
+      "pass": true
+    },
+    {
+      "name": "regionrow88cell3",
+      "actual": "8000",
+      "expected": "8000",
+      "pass": true
+    },
+    {
+      "name": "regionrow88cell4",
+      "actual": "45/4",
+      "expected": "45/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow89cell1",
+      "actual": "18000",
+      "expected": "18000",
+      "pass": true
+    },
+    {
+      "name": "regionrow89cell2",
+      "actual": "1800",
+      "expected": "1800",
+      "pass": true
+    },
+    {
+      "name": "regionrow89cell3",
+      "actual": "12000",
+      "expected": "12000",
+      "pass": true
+    },
+    {
+      "name": "regionrow89cell4",
+      "actual": "57/4",
+      "expected": "57/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow90cell1",
+      "actual": "30000",
+      "expected": "30000",
+      "pass": true
+    },
+    {
+      "name": "regionrow90cell2",
+      "actual": "3510",
+      "expected": "3510",
+      "pass": true
+    },
+    {
+      "name": "regionrow90cell3",
+      "actual": "18000",
+      "expected": "18000",
+      "pass": true
+    },
+    {
+      "name": "regionrow90cell4",
+      "actual": "35/2",
+      "expected": "35/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow91cell1",
+      "actual": "48000",
+      "expected": "48000",
+      "pass": true
+    },
+    {
+      "name": "regionrow91cell2",
+      "actual": "6660",
+      "expected": "6660",
+      "pass": true
+    },
+    {
+      "name": "regionrow91cell3",
+      "actual": "22000",
+      "expected": "22000",
+      "pass": true
+    },
+    {
+      "name": "regionrow91cell4",
+      "actual": "19",
+      "expected": "19",
+      "pass": true
+    },
+    {
+      "name": "regionrow92cell1",
+      "actual": "70000",
+      "expected": "70000",
+      "pass": true
+    },
+    {
+      "name": "regionrow92cell2",
+      "actual": "10840",
+      "expected": "10840",
+      "pass": true
+    },
+    {
+      "name": "regionrow92cell3",
+      "actual": "20000",
+      "expected": "20000",
+      "pass": true
+    },
+    {
+      "name": "regionrow92cell4",
+      "actual": "87/4",
+      "expected": "87/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow93cell1",
+      "actual": "90000",
+      "expected": "90000",
+      "pass": true
+    },
+    {
+      "name": "regionrow93cell2",
+      "actual": "15190",
+      "expected": "15190",
+      "pass": true
+    },
+    {
+      "name": "regionrow93cell3",
+      "actual": "30000",
+      "expected": "30000",
+      "pass": true
+    },
+    {
+      "name": "regionrow93cell4",
+      "actual": "91/4",
+      "expected": "91/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow94cell1",
+      "actual": "120000",
+      "expected": "120000",
+      "pass": true
+    },
+    {
+      "name": "regionrow94cell2",
+      "actual": "22015",
+      "expected": "22015",
+      "pass": true
+    },
+    {
+      "name": "regionrow94cell3",
+      "actual": "55000",
+      "expected": "55000",
+      "pass": true
+    },
+    {
+      "name": "regionrow94cell4",
+      "actual": "95/4",
+      "expected": "95/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow95cell1",
+      "actual": "175000",
+      "expected": "175000",
+      "pass": true
+    },
+    {
+      "name": "regionrow95cell2",
+      "actual": "70155/2",
+      "expected": "70155/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow95cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow95cell4",
+      "actual": "99/4",
+      "expected": "99/4",
+      "pass": true
+    },
+    {
+      "name": "regionrow96cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow96cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow96cell3",
+      "actual": "668111/50",
+      "expected": "668111/50",
+      "pass": true
+    },
+    {
+      "name": "regionrow96cell4",
+      "actual": "17/2",
+      "expected": "17/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow97cell1",
+      "actual": "668111/50",
+      "expected": "668111/50",
+      "pass": true
+    },
+    {
+      "name": "regionrow97cell2",
+      "actual": "113579/100",
+      "expected": "113579/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow97cell3",
+      "actual": "564241/100",
+      "expected": "564241/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow97cell4",
+      "actual": "107/10",
+      "expected": "107/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow98cell1",
+      "actual": "1900463/100",
+      "expected": "1900463/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow98cell2",
+      "actual": "173953/100",
+      "expected": "173953/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow98cell3",
+      "actual": "328421/20",
+      "expected": "328421/20",
+      "pass": true
+    },
+    {
+      "name": "regionrow98cell4",
+      "actual": "64/5",
+      "expected": "64/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow99cell1",
+      "actual": "885642/25",
+      "expected": "885642/25",
+      "pass": true
+    },
+    {
+      "name": "regionrow99cell2",
+      "actual": "192071/50",
+      "expected": "192071/50",
+      "pass": true
+    },
+    {
+      "name": "regionrow99cell3",
+      "actual": "547368/25",
+      "expected": "547368/25",
+      "pass": true
+    },
+    {
+      "name": "regionrow99cell4",
+      "actual": "87/5",
+      "expected": "87/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow100cell1",
+      "actual": "286602/5",
+      "expected": "286602/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow100cell2",
+      "actual": "76511/10",
+      "expected": "76511/10",
+      "pass": true
+    },
+    {
+      "name": "regionrow100cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow100cell4",
+      "actual": "41/2",
+      "expected": "41/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow101cell1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow101cell2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regionrow101cell3",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow101cell4",
+      "actual": "9",
+      "expected": "9",
+      "pass": true
+    },
+    {
+      "name": "regionrow102cell1",
+      "actual": "12450",
+      "expected": "12450",
+      "pass": true
+    },
+    {
+      "name": "regionrow102cell2",
+      "actual": "2241/2",
+      "expected": "2241/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow102cell3",
+      "actual": "7750",
+      "expected": "7750",
+      "pass": true
+    },
+    {
+      "name": "regionrow102cell4",
+      "actual": "12",
+      "expected": "12",
+      "pass": true
+    },
+    {
+      "name": "regionrow103cell1",
+      "actual": "20200",
+      "expected": "20200",
+      "pass": true
+    },
+    {
+      "name": "regionrow103cell2",
+      "actual": "4101/2",
+      "expected": "4101/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow103cell3",
+      "actual": "15000",
+      "expected": "15000",
+      "pass": true
+    },
+    {
+      "name": "regionrow103cell4",
+      "actual": "14",
+      "expected": "14",
+      "pass": true
+    },
+    {
+      "name": "regionrow104cell1",
+      "actual": "35200",
+      "expected": "35200",
+      "pass": true
+    },
+    {
+      "name": "regionrow104cell2",
+      "actual": "8301/2",
+      "expected": "8301/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow104cell3",
+      "actual": "91036/5",
+      "expected": "91036/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow104cell4",
+      "actual": "37/2",
+      "expected": "37/2",
+      "pass": true
+    },
+    {
+      "name": "regionrow105cell1",
+      "actual": "267036/5",
+      "expected": "267036/5",
+      "pass": true
+    },
+    {
+      "name": "regionrow105cell2",
+      "actual": "751883/100",
+      "expected": "751883/100",
+      "pass": true
+    },
+    {
+      "name": "regionrow105cell3",
+      "actual": "None",
+      "expected": "None",
+      "pass": true
+    },
+    {
+      "name": "regionrow105cell4",
+      "actual": "43/2",
+      "expected": "43/2",
+      "pass": true
+    },
+    {
+      "name": "stateCumulative12450",
+      "actual": "4731/4",
+      "expected": "4731/4",
+      "pass": true
+    },
+    {
+      "name": "stateCumulative20200",
+      "actual": "8451/4",
+      "expected": "8451/4",
+      "pass": true
+    },
+    {
+      "name": "stateCumulative35200",
+      "actual": "17451/4",
+      "expected": "17451/4",
+      "pass": true
+    },
+    {
+      "name": "stateCumulative60000",
+      "actual": "35803/4",
+      "expected": "35803/4",
+      "pass": true
+    },
+    {
+      "name": "stateCumulative300000",
+      "actual": "251803/4",
+      "expected": "251803/4",
+      "pass": true
+    },
+    {
+      "name": "over300kExtraState",
+      "actual": "349803/4",
+      "expected": "349803/4",
+      "pass": true
+    },
+    {
+      "name": "MadridAge65",
+      "actual": "719091/100",
+      "expected": "719091/100",
+      "pass": true
+    },
+    {
+      "name": "MadridAge75",
+      "actual": "869349/100",
+      "expected": "869349/100",
+      "pass": true
+    },
+    {
+      "name": "BalearicAge65",
+      "actual": "7370",
+      "expected": "7370",
+      "pass": true
+    },
+    {
+      "name": "BalearicAge75",
+      "actual": "8910",
+      "expected": "8910",
+      "pass": true
+    },
+    {
+      "name": "CanaryAge75",
+      "actual": "8182",
+      "expected": "8182",
+      "pass": true
+    },
+    {
+      "name": "GaliciaAge75",
+      "actual": "8448",
+      "expected": "8448",
+      "pass": true
+    },
+    {
+      "name": "employmentReference",
+      "actual": "16850",
+      "expected": "16850",
+      "pass": true
+    },
+    {
+      "name": "employmentReduction",
+      "actual": "7611/2",
+      "expected": "7611/2",
+      "pass": true
+    },
+    {
+      "name": "employmentBase",
+      "actual": "22089/2",
+      "expected": "22089/2",
+      "pass": true
+    },
+    {
+      "name": "employeeStateCents",
+      "actual": "521.98",
+      "expected": "521.98",
+      "pass": true
+    },
+    {
+      "name": "employeeMadridCents",
+      "actual": "432.47",
+      "expected": "432.47",
+      "pass": true
+    },
+    {
+      "name": "employeeCredit",
+      "actual": "40969/100",
+      "expected": "40969/100",
+      "pass": true
+    },
+    {
+      "name": "employeeFinal",
+      "actual": "13619/25",
+      "expected": "13619/25",
+      "pass": true
+    },
+    {
+      "name": "employeeRefund",
+      "actual": "1381/25",
+      "expected": "1381/25",
+      "pass": true
+    },
+    {
+      "name": "simplifiedCombinedCap",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "Ceuta10cap",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "CeutaLowerProfit",
+      "actual": "1000",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "ordinaryLowerProfit",
+      "actual": "500",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "professionalState",
+      "actual": "4353.50",
+      "expected": "4353.50",
+      "pass": true
+    },
+    {
+      "name": "professionalMadrid",
+      "actual": "3783.04",
+      "expected": "3783.04",
+      "pass": true
+    },
+    {
+      "name": "basketOffset",
+      "actual": "2500",
+      "expected": "2500",
+      "pass": true
+    },
+    {
+      "name": "lossCarry",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "savingsTax",
+      "actual": "1455",
+      "expected": "1455",
+      "pass": true
+    },
+    {
+      "name": "professionalTotal",
+      "actual": "479577/50",
+      "expected": "479577/50",
+      "pass": true
+    },
+    {
+      "name": "professionalPayable",
+      "actual": "29577/50",
+      "expected": "29577/50",
+      "pass": true
+    },
+    {
+      "name": "7pFullYear",
+      "actual": "6500",
+      "expected": "6500",
+      "pass": true
+    },
+    {
+      "name": "7pFullTaxable",
+      "actual": "32000",
+      "expected": "32000",
+      "pass": true
+    },
+    {
+      "name": "7pShort",
+      "actual": "7600",
+      "expected": "7600",
+      "pass": true
+    },
+    {
+      "name": "7pShortTaxable",
+      "actual": "13800",
+      "expected": "13800",
+      "pass": true
+    },
+    {
+      "name": "wrong365",
+      "actual": "5318.90",
+      "expected": "5318.90",
+      "pass": true
+    },
+    {
+      "name": "7pTwoPayers",
+      "actual": "11100",
+      "expected": "11100",
+      "pass": true
+    },
+    {
+      "name": "7pSharedCap",
+      "actual": "60100",
+      "expected": "60100",
+      "pass": true
+    },
+    {
+      "name": "residualCredit",
+      "actual": "1990",
+      "expected": "1990",
+      "pass": true
+    },
+    {
+      "name": "suppliesHome",
+      "actual": "60",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "name": "pensionE500",
+      "actual": "1250",
+      "expected": "1250",
+      "pass": true
+    },
+    {
+      "name": "pensionE1500",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "pensionOver1500",
+      "actual": "1501",
+      "expected": "1501",
+      "pass": true
+    },
+    {
+      "name": "pensionSalary60kStrict",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "spouse8kFails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "pensionCombinedIncrement",
+      "actual": "8500",
+      "expected": "8500",
+      "pass": true
+    },
+    {
+      "name": "pensionIncome30",
+      "actual": "3000",
+      "expected": "3000",
+      "pass": true
+    },
+    {
+      "name": "annuityProgAugQuota",
+      "actual": "10842/5",
+      "expected": "10842/5",
+      "pass": true
+    },
+    {
+      "name": "annuityProgRate",
+      "actual": "417/50",
+      "expected": "417/50",
+      "pass": true
+    },
+    {
+      "name": "annuityProgHalf",
+      "actual": "9591/5",
+      "expected": "9591/5",
+      "pass": true
+    },
+    {
+      "name": "annuityProgCombined",
+      "actual": "19182/5",
+      "expected": "19182/5",
+      "pass": true
+    },
+    {
+      "name": "annuityEqualFails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "AEATRegionalAverageCorrectRound",
+      "actual": "9.24",
+      "expected": "9.24",
+      "pass": true
+    },
+    {
+      "name": "AEATCitySubtract",
+      "actual": "374299/100",
+      "expected": "374299/100",
+      "pass": true
+    },
+    {
+      "name": "CeutaGeneralRounded",
+      "actual": "4008.79",
+      "expected": "4008.79",
+      "pass": true
+    },
+    {
+      "name": "CeutaSavingsRounded",
+      "actual": "61.24",
+      "expected": "61.24",
+      "pass": true
+    },
+    {
+      "name": "CeutaPublishedAddends",
+      "actual": "203501/50",
+      "expected": "203501/50",
+      "pass": true
+    },
+    {
+      "name": "CeutaSingleEndRoundDifferent",
+      "actual": "4070.03",
+      "expected": "4070.03",
+      "pass": true
+    },
+    {
+      "name": "residence183NotDayLimb",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "day184Yes",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "descendant8000Equality",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "dependent1800Strict",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "50pctCreditSplit",
+      "actual": "50",
+      "expected": "50",
+      "pass": true
+    }
+  ],
+  "scope": "420 source table cell comparisons plus independent selected computations. Published cumulative cents used as enacted; no universal rounding convention or unresolved spillover/cross-basket rule invented."
+}

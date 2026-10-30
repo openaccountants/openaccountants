@@ -1,0 +1,2669 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<meta name="description" content="HOME. Apartados y Secciones destacables del portal web.">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/vendor/jquery.min.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/jquery-1.12.4.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/jquery-ui.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/cookies.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+	var cargarCookiesPOIN = comportamientoAvisoCookiesPOIN(leerCookiePoin("Poin_Cookies"));
+	var dataLayer = [{"content":{"site_name":"portal","page_type":"informacion","page_name":"Trabajadores","language":"es","site_section":"trabajadores"}}];
+</script>
+
+<!-- Google Tag Manager head-->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T6FNSSW');
+</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Script insuit -->
+	<script async type="text/javascript" src="https://paas-segsocial.insuit.net/i4tservice/insuit-app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/favicon.ico">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Seguridad Social: Trabajadores</title>
+
+
+
+<!-- Generics styles -->
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/typicons.min.css" type="text/css">
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/slick.css" type="text/css">
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/slick-theme.css" type="text/css">
+<!-- Custom styles for this example -->
+
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!FN1rKIfT9stuNPuJnkdXlg/sp/mashup:ra:collection?soffset=0&amp;eoffset=6&amp;themeID=ZJ_OAM2H441L0LM10AN11KOFO0044&amp;locale=es&amp;mime-type=text%2Fcss&amp;lm=1781239586000&amp;entry=wp_toolbar_common__0.0%3Ahead_css&amp;entry=wp_theme_portal_edit_85__0.0%3Ahead_css&amp;entry=wp_theme_portal_85__0.0%3Ahead_css&amp;entry=wp_simple_contextmenu_css__0.0%3Ahead_css&amp;entry=wp_status_bar__0.0%3Ahead_css&amp;entry=wp_analytics_aggregator__0.0%3Ahead_css" type="text/css"/><script type="text/javascript">(function(){if (typeof(wpModules) == 'undefined') wpModules = {}; if (typeof(wpModules.state) == 'undefined') wpModules.state = {}; if (typeof(wpModules.state.page) == 'undefined') wpModules.state.page = {};wpModules.state.page._initial=[{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"selection","value":["Z6_21I4H401M8LJC0ARPRHM342G72"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"labelMappings","value":["Z6_21I4H401M00C50AR9GLSVS1083","Z6_21I4H401M8LJC0ARPRHM342G72","Z6_000000000000000000000000A0","Z6_21I4H401M8LJC0ARPRHM342G72"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"path-info","value":["10538","2277"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"expansions","value":["Z6_000000000000000000000000A0","Z6_21I4H401M00C50AR9GLSVS1083"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"locale","value":["es"]}];wpModules.state.page.selectionPath=['Z6_000000000000000000000000A0','Z6_21I4H401M00C50AR9GLSVS1083','Z6_21I4H401M8LJC0ARPRHM342G72'];wpModules.state.page.supportsEditMode=true;wpModules.state.page.supportsToolbar=true;wpModules.state.page.path='/wps/portal/wss';wpModules.state.page.protectedPath='/wps/myportal/wss';wpModules.state.page.publicPath='/wps/portal/wss';})();</script><script type="text/javascript" src="/wps/contenthandler/wss/!ut/p/digest!FN1rKIfT9stuNPuJnkdXlg/mashup/ra:collection?themeID=ZJ_OAM2H441L0LM10AN11KOFO0044&amp;locale=es&amp;mime-type=text%2Fjavascript&amp;lm=1781239586000&amp;entry=wp_client_main__0.0%3Ahead_js&amp;entry=wp_client_ext__0.0%3Ahead_js&amp;entry=wp_client_logging__0.0%3Ahead_js&amp;entry=wp_client_tracing__0.0%3Ahead_js&amp;entry=wp_modules__0.0%3Ahead_js&amp;entry=wp_photon_dom__0.0%3Ahead_js&amp;entry=wp_toolbar_common__0.0%3Ahead_js&amp;entry=wp_state_page__0.0%3Ahead_js&amp;entry=wp_theme_portal_85__0.0%3Ahead_js&amp;entry=wp_theme_utils__0.0%3Ahead_js&amp;entry=wp_toolbar_viewframe_validator__0.0%3Ahead_js&amp;entry=chatbot_contribution__1.0.0%3Ahead_js&amp;entry=wp_analytics_aggregator__0.0%3Ahead_js"></script><link title="assigned" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/styles.css" rel="stylesheet" type="text/css" /><link id="a._B:B14Vr2" rel="alternate" href="https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/10538/2277/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zijQw9TTxMDAx9LXy8nA0cgwKCPHyNTYzczY30w1EVGBg4mwIVWLr7BIcFGxpYGOtHEaPfAAdwNCCk34uQAqAPjIp8nX3T9aMKEksydDPz0vL1IwwNTI0t9COMjMzNgU6IQjUEiyfACvC4Mji1WL8gNzSiysfDIMvEUREA5R3MEg!!/"><script type="text/javascript">(function() {
+	var element = document.getElementById("a._B:B14Vr2");
+	if (element) {
+		wpModules.theme.WindowUtils.baseURL.resolve(element.href);
+	}
+}());</script>
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/styles__POIN--grafito.css" type="text/css">
+
+
+<link id="com.ibm.lotus.NavStateUrl" rel="alternate" href="/wps/portal/wss/internet/Trabajadores/10538/2277/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zijQw9TTxMDAx9LXy8nA0cgwKCPHyNTYzczY30w1EVGBg4mwIVWLr7BIcFGxpYGOtHEaPfAAdwNCCk34uQAqAPjIp8nX3T9aMKEksydDPz0vL1IwwNTI0t9COMjMzNgU6IQjUEiyfACvC4Mji1WL8gNzSiysfDIMvEUREA5R3MEg!!/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2XzIxSTRINDAxTThMSkMwQVJQUkhNMzQyRzcy/" />
+
+
+<link href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+<link rel="Sitemap" type="application/rss+xml" title="Seguridad Social RSS" href="http://www.seg-social.es/sitemap.xml" />
+<link rel="Sitemap" type="application/rss+xml" title="Seguridad Social RSS" href="https://www.seg-social.es/wps/wcm/connect/wss/poin_contenidos/internet/1139/?srv=cmpnt&source=library&cmpntid=601fa53b-f1d2-4180-a5e7-fe0b130e0296&WCM_Page.ResetAll=TRUE&CACHE=NONE&CONTENTCACHE=NONE&CONNECTORCACHE=NONE" />
+<link rel="Sitemap" type="application/rss+xml" title="Seguridad Social RSS" href="https://www.seg-social.es/wps/wcm/connect/wss/poin_contenidos/internet/39715/5300/7855/?srv=cmpnt&source=library&cmpntid=601fa53b-f1d2-4180-a5e7-fe0b130e0296&WCM_Page.ResetAll=TRUE&CACHE=NONE&CONTENTCACHE=NONE&CONNECTORCACHE=NONE" /> 
+<link rel="Sitemap" type="application/rss+xml" title="Seguridad Social RSS" href="https://www.seg-social.es/wps/wcm/connect/wss/poin_contenidos/internet/39715/5300/3827/?srv=cmpnt&source=library&cmpntid=601fa53b-f1d2-4180-a5e7-fe0b130e0296&WCM_Page.ResetAll=TRUE&CACHE=NONE&CONTENTCACHE=NONE&CONNECTORCACHE=NONE" /> 
+<link rel="Sitemap" type="application/rss+xml" title="Seguridad Social RSS" href="https://www.seg-social.es/wps/wcm/connect/wss/poin_contenidos/internet/34975/?srv=cmpnt&source=library&cmpntid=601fa53b-f1d2-4180-a5e7-fe0b130e0296&WCM_Page.ResetAll=TRUE&CACHE=NONE&CONTENTCACHE=NONE&CONNECTORCACHE=NONE" />
+
+<!-- rendering is delegated to the specified href for each locale --><!--START LOCALE LINKS-->
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="F7DFG-EGEHD-DSPWP-HHUW6-WXF3W",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"F7DFG-EGEHD-DSPWP-HHUW6-WXF3W";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="2vq5x23acbmjm2xbhusq-f-4a4384943-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1174360","ak.ai":parseInt("702459",10),"ak.ol":"0","ak.cr":18,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"241b4421","ak.r":46318,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.cport":58340,"ak.gh":"96.16.87.22","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1793146149","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==MYXYmUGuscCBRuTGRowgz9yzbuGycQTKTFgzNnUBWtV9YcFge6UrIF4+JSW5iSuPKwJ/SApi4JPVPuxuaQ+b5zp5gPj/h6469FJR0rPSyBkkZxh/aSmK6TQmM2q1sx6GtlPbHN4O0caX9faJUx4vbsdG6glH2seUYb70Uk8FVbfFPZL0oSVSsOExcD8DM5b1pj3v0acwTabthgnNOqO9cJYuwFAKY+Lj0A1gtZ/JbY4EbJYJXdm34SbQAY69xgoLqjFoVQSVEkHT8nUSTDop2pIn/ib3neDcBwlkMrnkWkcmoGVGqnlIE1ftzhf6ZtBEmVj7ZquTvJBM/UHlQWVQ8YPhFeQnIEJxaqWkoPkfLVAnHqlGTso6EdKZvtYNoFVWD/dmXDrPMtWEGqZDHP1q8ZUcmFQuMwqDDlJCGumn5kc=","ak.pv":"46","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+	
+ <body class="lotusui30dojo nav-by-keyboard locale_es">
+ 	
+
+
+
+
+
+
+<script>
+pintarIframeGAPOIN('GTM-T6FNSSW');
+</script><div id="segsocial">
+		<header class="row-header" id="top">
+			<!-- site toolbar -->
+			<!-- renders the top navigation -->		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+ 
+	
+        
+    
+    
+	
+	
+	
+	
+	    
+         
+    
+
+
+
+  
+	<script> 
+		    window.addEventListener("load",  
+		            $("body").addClass("poin")
+		    ); 
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="cookieContainer" class="hide">
+	
+
+
+<SECTION class="row-banner" >
+<div class="component-container wpthemePrimaryContainer ibmDndColumn" >
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+<div class="row">
+<div id="cookies" class="cookies">		
+<div class="cookies_inner">
+<div class="cookies_text poin-header__content">
+<p class="h4 title poin-header__title">Aviso Cookies</p>
+<p class="text-justify">Este sitio web utiliza cookies para que usted tenga una mejor experiencia de usuario. Las cookies no se utilizan para recoger información de carácter personal. Para más información consulte nuestra&nbsp;<a title="Política de Privacidad y Cookies" href="/wps/portal/wss/internet/PoliticaCookies" data-cke-saved-href="/wps/portal/wss/internet/PoliticaCookies">política de cookies</a>.</p>
+
+<button onclick="AceptarCookies('Ver_2307191408');" class="boton boton-default" tabindex="0">Aceptar todas</button>
+
+<button onclick="RechazarCookies('Ver_2307191408');" type="button" class="boton boton-default" tabindex="0"> Rechazar todas</button>
+
+<button onclick="CerrarCookies();" type="button" class="boton boton-default cookies_close cookies_close--graylight" tabindex="0">
+  <img alt="Cerrar" src="/POINThemeStatic/themes/Portal8.5/css/img/blank.gif">
+</button>
+              
+
+
+                                                                       </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</SECTION>
+</div>
+<script>
+$(document).ready(function(){
+	var wrap =$("#cookies");
+	var heightBarra=Math.round($(".wpToolbarActionBar").outerHeight());
+	$(".cookies").height(wrap.outerHeight());
+	$(window).scroll(function(event) {
+		if ($(this).scrollTop() > heightBarra) {
+			wrap.addClass("fix-cookies");
+		} else{	
+			wrap.removeClass("fix-cookies");
+		} 
+	});
+});
+		
+var valorCookie=leerCookiePoin("Poin_Cookies");
+				
+if(showCookiePoin(valorCookie,'Ver_2307191408')){
+	$("#cookieContainer").removeClass("hide");
+}		
+
+
+				
+</script>
+
+
+<script>
+	var paginaActualEstadistica = 'com.ss.internet.trabajadores';
+</script>
+
+<script src="/POINComponentesJSP/js/cookies.js"></script>
+
+
+	<script >
+		setCookieValueCategoria('');
+		setCookieValueCategoriaN2('');
+		setCookieValueCategoriaN3('');
+	</script>
+
+
+<div class="row-container">
+	<div class="row pl0">
+		<div class="header">
+		    <div class="sr-only">Portal de la Seguridad social</div>
+			<div class="hidden-lg hidden-md hidden-sm main-menu-mobile">
+				<div class="navbar-header">
+					 <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+						<i title="Navegación Móvil" class="fa fa-bars fa-lg" aria-hidden="true"></i>
+					 </button>	
+					 <div class="logo h1">
+						
+							<a title="Ir al Inicio de la página de la Seguridad Social" class="homeICO" href="/wps/portal/wss/internet/Inicio">
+								<img class="logSS" alt="Seguridad Social" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/logo.png">
+							</a>
+						
+					</div>
+					<button class="navbar-toggle pull-right mr0" type="button" data-toggle="collapse" data-target=".search-box-collapse"  onclick="foco();">
+						<i title="Navegación Móvil" class="fa fa-search fa-lg" aria-hidden="true"></i>
+					</button>		
+				</div>
+				<div class="col-xs-12 search-box search-box-collapse collapse" aria-expanded="false" aria-label="buscador móvil" role="search">
+				
+					<form id="search-mm" name="search-mm"  action="/wps/portal/wss/internet/BusquedaES" method="post" class="on">
+						<input type="text" class="query" name="search_query" id="query-mm" onclick="getKeyExternoMobile(event)" maxlength="160" aria-label="Criterio de búsqueda" title="Busqueda" />
+						
+						<input type="submit" class="ico-lens" title="Criterio de búsqueda" onclick="setCookieIcon('query-mm');" value="Buscar" tabindex="-1"/>
+					</form>
+				
+				</div>
+				<div class="navbar-collapse collapse" aria-expanded="false" role="navigation">
+					<ul class="nav navbar-nav first-menu">
+						
+							
+							
+								<li class="first">
+							
+						
+						
+							<a class="homeICO" href="/wps/portal/wss/internet/Inicio" title="Ir al Inicio de la página de la Seguridad Social">
+							<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt=""/> Inicio</a>
+						
+						</li>
+						
+							
+							
+								<li>
+							
+						
+							
+								<a class="conocenosICO" href="/wps/portal/wss/internet/Conocenos" title="Ir a la sección Conócenos">
+										<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="" />Conócenos
+								</a>
+							
+						</li>
+						
+								
+								<li class="parent active">
+							
+							
+						
+							
+								<a  class="trabajadoresICO" href="/wps/portal/wss/internet/Trabajadores" title="Ir a la sección Trabajadores">
+								<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="" />Trabajadores</a>
+							
+						</li>		
+						
+							
+							
+								<li>
+							
+						
+							
+								<a class="pensionistasICO" href="/wps/portal/wss/internet/Pensionistas" title="Ir a la sección Pensionistas">
+								<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="" />Pensionistas</a>
+							
+						</li>
+						
+							
+							
+								<li>
+							
+						
+							
+								<a class="empresariosICO" href="/wps/portal/wss/internet/Empresarios" title="Ir a la sección Empresarios">
+								<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="" />Empresarios</a>
+							
+						</li>
+						
+							
+							
+								<li>
+							
+						
+							
+								<a class="clasespasivasICO" href="/wps/portal/wss/internet/clasespasivas" title="Ir a la sección Clases Pasivas">
+								<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="" />Clases Pasivas</a>
+							
+						</li>
+					    <li>
+							
+								<a href="/wps/portal/wss/internet/SugerenciasQuejas" title="Ir a&nbsp;página de Sugerencias y quejas de la Seguridad Social">Sugerencias y quejas</a>
+							
+						</li>
+						
+						<li>
+							
+								<a  href="/wps/portal/wss/internet/FAQ" title="Ir aBúzon de Consultas de la Seguridad Social">Consultas</a>
+							
+						</li>
+
+						<li class="last lang-selector lang-selector-dropdown"> 
+							<ul class="idiomas">
+								<li class="dropdown open">
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true">Idiomas
+									<i title="Toggle dropdown menu" class="fa fa-caret-down" aria-hidden="true"></i> 
+									<span class="sr-only">Toggle dropdown menu</span>
+									<span class="toggle drop down"></span>
+								</a>
+								<ul class="dropdown-menu pull-right" itemscope itemtype="http://schema.org/ServiceChannel">
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=es' lang="es" hreflang="es"><span itemprop="name">Castellano</span></a></li>
+									<li class="divider"></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=ca' lang="ca" hreflang="ca"><span itemprop="name">Català</span></a></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=gl' lang="gl" hreflang="gl"><span itemprop="name">Galego</span></a></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=eu' lang="eu" hreflang="eu"><span itemprop="name">Euskara</span></a></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=va' lang="ca-valencia" hreflang="ca-valencia"><span itemprop="name">Valencià</span></a></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=en' lang="en" hreflang="en"><span itemprop="name">English</span></a></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=fr' lang="fr" hreflang="fr"><span itemprop="name">Français</span></a></li>
+								</ul>
+								</li>
+							</ul>                                                                                                                         
+						</li>
+						
+						<li class="clear">
+						    
+		                    
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+        
+    
+    
+    
+    
+    
+    
+              
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+  
+                                                                                   
+
+
+
+
+<a class="logo" href="https://www.inclusion.gob.es/" target="_blank" rel="noopener noreferrer" title="Escudo de España junto al logo del Ministerio de Inclusión, Seguridad Social y Migraciones con enlace a su página web">
+	<img class="logSS" src="/wps/wcm/connect/wss/0279b2cf-fbf2-4326-89a5-327dfd4aa5d2/logo_institucional.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_2G50H38209D640QTQ57OVB2000-0279b2cf-fbf2-4326-89a5-327dfd4aa5d2-pxAPh9j" alt="Escudo de España junto al logo del Ministerio de Inclusión, Seguridad Social y Migraciones con enlace a su página web">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+		                    
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- MAIN -->
+			<div class="col-sm-6 col-md-6 col-lg-6 only-lrg logo-u23 pr0">
+				<div class="logo h1">
+
+				    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+        
+    
+    
+    
+    
+    
+    
+              
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+  
+                                                                                   
+
+
+
+
+<a href="https://www.inclusion.gob.es/" target="_blank" rel="noopener noreferrer" title="Escudo de España junto al logo del Ministerio de Inclusión, Seguridad Social y Migraciones con enlace a su página web">
+	<img class="only-lrg" src="/wps/wcm/connect/wss/0279b2cf-fbf2-4326-89a5-327dfd4aa5d2/logo_institucional.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_2G50H38209D640QTQ57OVB2000-0279b2cf-fbf2-4326-89a5-327dfd4aa5d2-pxAPh9j" alt="Escudo de España junto al logo del Ministerio de Inclusión, Seguridad Social y Migraciones con enlace a su página web">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+                    
+                                    
+
+					
+						<a  href="/wps/portal/wss/internet/Inicio"  title="Ir al Inicio de la página de la Seguridad Social">
+						<!-- <span>Internet de la Seguridad Social</span> -->
+						<img class="logInternet" alt="Seguridad Social" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/logo.png"/>
+					</a>
+					
+		
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6 only-lrg alpha omega pull-right">
+				<a href="#content" class="handy-link">Ir a&nbsp;contenido</a>
+				<a href="#search" class="mobile-search only-sml" title="Desplegar campo de búsqueda.">Desplegar campo de búsqueda</a>
+				
+				<div class="top-menu">
+					<!-- Fixed navbar -->
+					<nav class="" aria-label='Enlaces del menú superior' >
+						<ul class="clean first-menu">
+							<li class="first">
+								
+									<a href="/wps/portal/wss/internet/SugerenciasQuejas" title="Ir a&nbsp;página de Sugerencias y quejas de la Seguridad Social">Sugerencias y quejas</a>
+								
+							</li>
+							
+							<li>
+								
+									<a href="/wps/portal/wss/internet/FAQ" title="Ir a&nbsp;Búzon de Consultas de la Seguridad Social">Consultas</a>
+									
+							</li>
+								<li>
+								    <div class="search-box">
+										<button class="top-search" type="button" data-toggle="collapse" data-target=".top-search-collapse" onclick="field()" id="top-search-id" aria-controls="top-search-collapse-id">
+											<i title="tab navigation" class="fa fa-search fa-lg" aria-hidden="true"></i>
+											<span class="sr-only">Busqueda</span>
+										</button>
+									</div>
+								</li>
+								<li class="last lang-selector lang-selector-dropdown">
+									<ul class="">
+										<li class="dropdown">
+										  <a class="dropdown-toggle" href="#" title='Abrir selector de idioma' data-toggle="dropdown" aria-expanded="true">Castellano
+<span class="sr-only">Toggle dropdown menu</span><span class="toggle drop down"></span></a>
+				                          <ul class="dropdown-menu pull-right" id="lang-menu" itemscope itemtype="http://schema.org/ServiceChannel">
+												<li class="first"><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=es' title='Seleccionar idioma&nbsp;Castellano' lang="es" hreflang="es"><span itemprop="name">Castellano</span></a></li>
+												<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=ca' title='Seleccionar idioma&nbsp;Català' lang="ca" hreflang="ca"><span itemprop="name">Català</span></a></li>
+												<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=gl' title='Seleccionar idioma&nbsp;Galego' lang="gl" hreflang="gl"><span itemprop="name">Galego</span></a></li>
+												<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=eu' title='Seleccionar idioma&nbsp;Euskara' lang="eu" hreflang="eu"><span itemprop="name">Euskara</span></a></li>
+												<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=va' title='Seleccionar idioma&nbsp;Valencià' lang="ca-valencia" hreflang="ca-valencia"><span itemprop="name">Valencià</span></a></li>
+												<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=en' title='Seleccionar idioma&nbsp;English' lang="en" hreflang="en"><span itemprop="name">English</span></a></li>
+												<li class="last"><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=fr' title='Seleccionar idioma&nbsp;Français' lang="fr" hreflang="fr"><span itemprop="name">Français</span></a></li>
+										  </ul>
+										</li>
+									</ul>                                                                                                                         
+								</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Buscador relevante -->
+			<div class="col-xs-12 row-container only-lrg"> 
+			    <div class="row">
+						<div class="col-sm-12 col-md-12 col-lg-12 top-search-collapse blockSearch top-search-box collapse" id="top-search-collapse-id" role="region" aria-labelledby="top-search-id" aria-hidden="true" aria-expanded="false" style="height: 2px">             
+								
+								<form role="search" name="formularioBuscador" id="formularioBuscador_field" onsubmit="return formularioBuscador_field();" action="/wps/portal/wss/internet/BusquedaES" title="Introduzca su búsqueda"  class="frmSearch mr15">     
+									<div role="search">
+										<fieldset class="contentSearch">        
+											<legend class="sr-only">Introduzca su búsqueda</legend>       
+											<a class="sr-only" href="#busqueda" target="_self">Acceso directo al buscador</a>
+											<label for="busqueda_field" class="sr-only">Buscador</label>  
+											<input type="search" class="field-search " name="search_query" id="busqueda_field" onclick="getKeyExterno(event, 'formularioBuscador', 'busqueda_field')" maxlength="150"  accesskey="b" autocomplete="off" placeholder="Introduzca su búsqueda" title="Introducir parámetros de búsqueda">												
+		                                     									
+											<label for="btn-busqueda_field" class="sr-only">Click para buscar</label>        
+											<input type="submit" id="btn-busqueda_field" value="Buscar" class="btn-send" title="Buscar" onblur="deleteTooltip()" onfocus="deleteTooltip()" onmouseover="deleteTooltip()" onmouseout="deleteTooltip()" > 
+										</fieldset>
+									</div>   
+								</form>
+														
+							
+							    <a href="/wps/portal/wss/internet/BuscadorAvanzado" id="boton-advanceSearch" role="button" tabindex="0" class="advanceSearch" target="_blank" rel="noopener noreferrer">Buscador avanzado</a>
+							
+							<!-- modo aviso error -->
+							<div class="tooltip_error" data-tooltip="1">
+								El texto a buscar debe tener al menos 3 caracteres
+							</div>
+						</div>
+						</div>
+			</div>
+			
+			<!-- Menú principal -->
+                <div class="col-sm-12 col-md-12 col-lg-12 subheader">
+				<div class="main-menu only-lrg">
+					<nav aria-label="Enlaces del menú principal">
+						<ul class="clean first-menu">
+							
+								
+								
+									<li class="first">
+								
+							
+								
+									<a href="/wps/portal/wss/internet/Inicio" class="homeICO" title="Ir al Inicio de la página de la Seguridad Social">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt= "">Inicio</a>
+								
+							</li>
+							
+								
+								
+									<li class="has-submenu">
+								
+							
+								
+									<a href="/wps/portal/wss/internet/Conocenos" class="conocenosICO" title="Ir a la sección Conócenos">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="">Conócenos</a>
+								
+							</li>
+							
+								
+									<li class="has-submenu parent active">
+								
+								
+							
+								
+									<a href="/wps/portal/wss/internet/Trabajadores" class="trabajadoresICO" title="Ir a la sección Trabajadores">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="">Trabajadores</a>
+								
+							</li>
+							
+								
+								
+									<li class="has-submenu">
+								
+							
+								
+									<a href="/wps/portal/wss/internet/Pensionistas" class="pensionistasICO" title="Ir a la sección Pensionistas">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="">Pensionistas</a>
+								
+							</li>
+							
+								
+								
+									<li class="has-submenu">
+								
+							
+								
+									<a href="/wps/portal/wss/internet/Empresarios" class="empresariosICO" title="Ir a la sección Empresarios">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="">Empresarios</a>
+								
+							</li>
+							
+								
+								
+									<li class="last has-submenu">
+								
+							
+								
+									<a href="/wps/portal/wss/internet/clasespasivas" class="clasespasivasICO" title="Ir a la sección Clases Pasivas">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="">Clases Pasivas</a>
+								
+							</li>
+						</ul>
+					</nav>								
+				</div>					
+			</div>
+			
+			<!--fin Menú Principal -->
+		</div>			
+	</div>
+
+
+</div><!-- end header -->
+		</header>
+		
+		<!--obtiene el ide de la página padre--><!--fin de obtener el ide de la página padre-->
+
+<div class="asa.page" id="asa.page" style="display:none;">
+	<span class="asa.page.id">Z6_21I4H401M8LJC0ARPRHM342G72</span>
+	<span class="asa.page.idpadre">Z6_21I4H401M00C50AR9GLSVS1083</span>
+	
+
+</div>
+
+<main id="content">
+		
+			<div class="wpthemeInner">
+	            <div class="lotusui30" id="wpthemeStatusBarContainer">
+	                <noscript><div class="lotusMessage2" role="alert">
+	                	 <img class="lotusIcon lotusIconMsgError"
+	                    src="icons/blank.gif" alt="" /> <span
+	                    class="lotusAltText">Error:</span> <div
+	                    class="lotusMessageBody"><p>En este navegador se ha inhabilitado
+	                    Javascript. Esta pÃ¡gina necesita Javascript. Modifique los
+	                    valores del navegador para permitir que se ejecute Javascript.
+	                    Consulte la documentaciÃ³n para obtener instrucciones
+	                    especÃ­ficas.</p></div> </div></noscript>
+	            </div>
+	        </div>
+	        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- tag role="button" to Open the Modal valuation survey -->
+<div class="btn-valuation btn-valuation-300" id="btn-valuation" data-toggle="modal" data-target="#Satisfaction_survey" data-keyboard="true" role="button" tabindex="0">
+    <img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/icon_thumbs_up_down.svg" alt="Valore esta página">
+    <div class="box-valuation"><span>Valore este contenido</span></div>                            
+</div>
+
+<!-- The Modal -->
+<div class="modal modal_survey fade" id="Satisfaction_survey">
+    <div class="modal-dialog" style="z-index: 1050;">
+        <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+              <button type="button" class="close ss-u-is-vishidden " data-dismiss="modal">&times;</button>
+                <div class="modal-title">Encuesta de satisfacción</div>
+                
+              </div>
+            <form id="starsform">
+              <!-- Modal body -->
+                <div class="modal-body">
+                
+                    <p>Califique esta página o el trámite relacionado. *</p>
+                    <fieldset><legend class="ss-u-is-vishidden">Valoración con estrellas</legend>
+	                    <div class="clasificacion form-group ">
+	                        <input id="radio1" type="radio" name="estrellas" value="5">
+	                        <label for="radio1"> <!-- ★ ( &#9733; ) ★ -->
+	                            <img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/1x1-00000000.png" class="star-assessment" alt="">
+	                        </label>
+	                        <input id="radio2" type="radio" name="estrellas" value="4">
+	                        <label for="radio2"><img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/1x1-00000000.png" class="star-assessment" alt=""></label>
+	                        <input id="radio3" type="radio" name="estrellas" value="3">
+	                        <label for="radio3"><img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/1x1-00000000.png" class="star-assessment" alt=""></label>
+	                        <input id="radio4" type="radio" name="estrellas" value="2">
+	                        <label for="radio4"><img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/1x1-00000000.png" class="star-assessment" alt=""></label>
+	                        <input id="radio5" type="radio" name="estrellas" value="1">
+	                        <label for="radio5"><img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/1x1-00000000.png" class="star-assessment" alt=""></label>
+	                    
+	                    </div>  
+                    </fieldset>                                   
+                    <p>¿Ha encontrado lo que buscaba o ha conseguido completar el trámite que deseaba realizar? *</p>
+                    <fieldset><legend class="ss-u-is-vishidden">Valoración grado satisfacción</legend>
+	                    <div class="form-group ">
+	                        <div class="radio">
+	                            <input name="opcion" type="radio" value="Sí" id="opcionSi">
+	                            <label id="op1" for="opcionSi">Sí</label>
+	                        </div>
+	                        <div class="radio">
+	                            <input name="opcion" type="radio" value="No" id="opcionNo">
+	                            <label id="op2" for="opcionNo">No</label>
+	                        </div>
+	                        <div class="radio">
+	                            <input name="opcion" type="radio" value="En parte" id="opcionEnparte">
+	                            <label id="op3" for="opcionEnparte" >En parte</label>
+	                        </div>
+	                    
+	                    </div>
+                    </fieldset>
+                    <div class="form-group ">
+                        
+                        <!--  <label for="ayudaramejorar">Si lo desea, ayúdenos a mejorar con su comentario.</label> -->
+                        <!--  <textarea id="ayudaramejorar" name="textoayudaramejorar"></textarea>  -->
+                        
+	                    <p class="texto14">Su valoración será tratada de forma anónima.</p>
+	                    <p class="texto14">* Campos obligatorios</p>
+                    </div>
+                    
+                </div>
+
+              <!-- Modal footer -->
+                <div class="modal-footer">
+                    <input type="button" class="boton boton-secundary" value="Cancelar" data-dismiss="modal">
+                    <input type="submit" class="boton boton-default" id="btnEnviarEncuesta" value="Enviar" disabled>
+                </div>
+              </form>
+              <!-- Esta capa es la que se muestra transparente y que contiene el cuadro de dialogo -->
+                <div id="gratitude-layer">
+                    <div>
+                        <div class="title">Gracias por su participación</div>
+                        <div class="text">Juntos podemos seguir mejorando este Portal</div>
+                        <div class="buttons">
+                        	<form >
+                        		<input type="button" class="boton boton-default" value="Cerrar" id="bye" data-dismiss="modal">
+                        	</form>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+	<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/poinEncuestaValoracion.js"></script>
+
+
+
+
+<!-- required - do not remove -->
+			<div style="display:none" id="portletState">{}</div><section class="aviso-page">
+		<div class='component-container id-Z7_DGVTA4IPLDG706KNH9CT9NQEE2' name='headline' ><div class='component-control id-Z7_21I4H401M8DFA0A7BU455N2055' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+  
+</div>
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div></div></section>	
+<section class="row-page">
+	<div class="row-container ">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12 margen">
+					<div class='component-container id-Z7_E214T2B6RCGH6MU6OFTE151VC3' name='ibmMainContainer' ><div class='component-control id-Z7_21I4H401M0FR50A7CT7QCB20J1' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            <div class="asa.wcm" id="asa.wcm" style="display:none;">
+	<span class="asa.wcm.idAS">dd1181ff-b07f-41f9-8bdd-abffe02fe105</span>
+</div>
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+	
+		
+	
+
+	
+	
+	
+	
+
+
+
+
+
+
+     
+            
+    
+    
+
+
+
+
+
+	 
+	
+
+    
+
+	
+	
+
+
+
+
+
+
+	<div class="">
+		<ul class="breadcrumb pl10" aria-label="Migas de pan">
+			<li class="single">
+            	<a href="/wps/portal/wss/internet/Inicio">Inicio</a>
+      		</li>
+
+
+
+        	<li class="single">
+				<a href="/wps/portal/wss/internet/Trabajadores">Trabajadores</a>
+			</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+            
+    
+    
+
+
+
+
+
+	 
+	
+
+    
+
+	
+	
+
+
+
+
+
+
+
+
+        	<li class="single">
+				<a href="/wps/portal/wss/internet/Trabajadores/TrabajadoresMar">Trabajadores del mar</a>
+			</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+	 
+	
+
+    
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+        	<li class= "last">
+				Protección por cese de actividad
+			</li>
+
+
+
+		</ul>
+	</div>
+	
+    <script>
+        var contenidoPagina = "dd1181ff-b07f-41f9-8bdd-abffe02fe105";
+        var contenidoUrl = "dd1181ff-b07f-41f9-8bdd-abffe02fe105";
+        var contenidoUrl2 = "dd1181ff-b07f-41f9-8bdd-abffe02fe105";
+    </script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+        var updatedDataLayer = {"content":{"subcategory1":"Trabajadores del mar","page_name":"Protecci\u00f3n por cese de actividad [Trabajadores\/Trabajadores del mar]","category":"Trabajadores"}};
+      	dataLayer.push(updatedDataLayer);
+dataLayer.push({"content":{"id":"ba09ce64-2fdb-49fa-b5dc-56fd935b0f9a"}});
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div><div class='component-control id-Z7_21I4H401M8DFA0A7BU455N2057' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            
+<h1 class="col-md-12 mb15 h1 title">Protección por cese de actividad</h1>
+
+
+
+
+
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div><div class='component-control id-Z7_21I4H401M8DFA0A7BU455N20L4' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div><div class='component-control id-Z7_21I4H401M8DFA0A7BU455N20L6' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            
+
+
+<div id="estructura" class="">
+<div class="col-sm-12 col-xs-12 margen text-block">
+
+<ul class="col-md-12 listado-menu triangle bordeOut">
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+<a href="/wps/portal/wss/internet/Trabajadores/TrabajadoresMar/2277/3695e81b-9fb9-4fba-8395-d66a0db33fe9">Medidas aprobadas para la protección de trabajadores autónomos por el Real Decreto-ley 2/2021, de 26 de enero, de refuerzo y consolidación de medidas sociales en defensa del empleo</a>
+</li>
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+<a href="/wps/portal/wss/internet/Trabajadores/TrabajadoresMar/2277/20e66d6a-9c04-42ee-a87d-850755f9cab2">Ceses extraordinarios medidas RD Ley 30/2020</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+<a href="/wps/portal/wss/internet/Trabajadores/TrabajadoresMar/2277/d24c0236-ccec-429b-8dd2-b9d50a21147a">Medidas aprobadas para la protección de trabajadores autónomos por el Real Decreto-ley 11/2021, de 27 de mayo, sobre medidas urgentes para la defensa del empleo, la reactivación económica y la protección de los trabajadores autónomos.</a>
+</li>
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+<a href="/wps/portal/wss/internet/Trabajadores/TrabajadoresMar/2277/944e0e74-c40f-423b-bd19-b5687afa642b">Medidas aprobadas para la protección de trabajadores autónomos por el Real Decreto-ley 18/2021, de 28 de septiembre, de medidas urgentes para la protección del empleo, la recuperación económica y mejora del mercado de trabajo</a>
+</li>
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+<a href="/wps/portal/wss/internet/Trabajadores/TrabajadoresMar/2277/44994ea4-eca4-440f-bbaa-43bace01e442">Real Decreto-Ley 8/2020, de 17 de marzo-COVID-19</a>
+</li>
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+<a href="/wps/portal/wss/internet/Trabajadores/TrabajadoresMar/2277/46cbade9-98d1-4a82-8908-85ed268ee67a">Real Decreto-ley 2/2022, de 22 de febrero</a>
+</li>
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+<a href="/wps/portal/wss/internet/Trabajadores/TrabajadoresMar/2277/00616c0e-17c7-41bc-9a72-4800d0c9160e">Medidas aprobadas por el Real Decreto-ley 11/2022, de 25 de junio</a>
+</li>
+
+
+
+
+
+
+
+</ul>
+</div>
+</div>
+
+
+
+
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div><div class='component-control id-Z7_21I4H401M8DFA0A7BU455N20L5' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            
+
+<script>
+var esPrimero = "";
+</script>
+
+
+<script>
+var esPrimero = "";
+</script>
+
+
+<script>
+var esPrimero = "";
+</script>
+
+
+<script>
+var esPrimero = "";
+</script>
+
+
+
+<div class="panel-group mt10 col-xs-12 pl0 pr0">
+  <div class="panel panel-default">
+
+
+
+
+
+
+   
+
+        
+   
+
+
+
+
+
+
+
+
+<div class="panel-body">
+<div class="text-block mark_content">
+<p class="irdivjust">Puede enlazar a la sección <em><a href="/wps/portal/wss/internet/InformacionUtil/44539/2571" >Trámites y Gestiones </a></em>para ver una versión simplificada</p>
+<h4>¿Qué es la prestación por cese de actividad de los trabajadores autónomos?</h4>
+<p style="text-align: justify; margin-left: 80px;">De&nbsp;acuerdo con el texto refundido de la Ley General de Seguridad Social, los trabajadores autónomos cuentan con un sistema&nbsp;específico de protección por cese de actividad, que es de carácter obligatorio, y tiene por objeto dispensar a los trabajadores autónomos, afiliados a la Seguridad Social y en alta en el Régimen Especial de Trabajadores por Cuenta Propia o Autónomos o en el Régimen Especial de los Trabajadores del Mar, las prestaciones y medidas establecidas en esta ley ante la situación de cese total en la actividad que originó el alta en el régimen especial, no obstante poder y querer ejercer una actividad económica o profesional a título lucrativo.</p>
+<p>El cese de actividad podrá ser definitivo o temporal. </p>
+<p>El cese temporal podrá ser total, que comporta la interrupción de todas las actividades que puedan originar el alta en el régimen especial en el que la persona trabajadora por cuenta propia o autónoma figure encuadrada, en los supuestos regulados en el artículo 331, o parcial, cuando se produzca una reducción de la actividad en los términos previstos en esta ley.</p>
+<p>Esta protección comprende:</p>
+<p>- el abono de una prestación económica mensual por cese de actividad,&nbsp;</p>
+<p>- y la cotización a la Seguridad Social por contingencias comunes, con particularidades en determinados supuestos.</p>
+
+
+
+<p class="irdivjust" style="text-align: justify;"><br /></p>
+<h4>¿Qué requisitos debe cumplir para acceder a la prestación por cese de actividad?</h4>
+<p style="text-align: justify;">Ser trabajador autónomo&nbsp;comprendido en el Régimen Especial de los Trabajadores por Cuenta Propia o Autónomos (RETA), quedando incluidos los trabajadores&nbsp;del Sistema Especial para Trabajadores por Cuenta Propia Agrarios (SETA), que inicien la cotización por cese de actividad&nbsp;a partir del 1 de enero de 2012 y a los trabajadores autónomos económicamente dependientes (TRADE), o bien&nbsp;ser trabajador autónomo&nbsp;incluido en el Régimen Especial de la Seguridad Social de los Trabajadores del Mar, y además deberá:</p>
+<ul>
+  <li style="text-align: justify;">
+    <p>Estar afiliado y en situación de alta en la Seguridad Social.</p>
+  </li>
+  <li style="text-align: justify;">
+    <p>Contar con un período mínimo de cotización por cese de&nbsp;actividad de doce meses comprendidos en los veinticuatro meses inmediatamente anteriores a la situación legal de cese de actividad.</p>
+  </li>
+  <li style="text-align: justify;">
+    <p>Encontrarse en situación legal de cese de actividad, debidamente justificada.</p>
+  </li>
+  <li style="text-align: justify;">
+    <p>Haber solicitado la baja en el REM a causa del cese de actividad, salvo cuando la situación legal de cese de actividad venga determinada por las causas previstas en los epígrafes 4.º y 5.º del artículo 331.1.a) del texto refundido de la Ley General de la Seguridad Social (TRLGSS), y por fuerza mayor temporal prevista en el artículo 331.1.b). del citado texto refundido.</p>
+  </li>
+  <li style="text-align: justify;">
+    <p>Suscribir el compromiso de actividad&nbsp;y acreditar activa disponibilidad para la reincorporación al mercado de trabajo a través de las actividades formativas, de orientación profesional y de promoción de la actividad emprendedora a las que pueda convocarle el servicio público de empleo de la correspondiente comunicad autónoma, o en su caso el Instituto Social de la Marina.&nbsp;</p>
+  </li>
+</ul>
+<ul>
+  <li style="text-align: justify;">
+    <p>En el supuesto de cese definitivo, no haber alcanzado la edad ordinaria de jubilación, salvo que no tuviera acreditado el período de cotización requerido para ello.</p>
+  </li>
+  <li style="text-align: justify;">
+    <p>Hallarse al corriente en el pago de las cuotas a la Seguridad Social.</p>
+  </li>
+  <li style="text-align: justify;">
+    <p>Que no concurra ninguna de las incompatibilidades previstas en el texto refundido de la Ley General de la Seguridad Social.</p>
+  </li>
+  <li style="text-align: justify;">
+    <p>Cuando el trabajador autónomo del mar tenga a uno o más trabajadores a su cargo, será requisito previo al cese de actividad el cumplimiento de las garantías, obligaciones y procedimientos regulados en la legislación laboral.</p>
+  </li>
+  <li style="text-align: justify;">
+    <p>Para causar derecho al cese previsto en el artículo 331.1.a) 4º y 5º, la persona trabajadora autónoma no podrá ejercer otra actividad salvo que se encuentre en situación de pluriactividad, en el momento del hecho causante de la prestación por cese de actividad, en que será compatible con el trabajo por cuenta ajena que se venía desarrollando, siempre y cuando de la suma de la retribución mensual media de los últimos cuatro meses inmediatamente anteriores al nacimiento del derecho y la prestación por cese de actividad, resulte una cantidad media mensual inferior al importe del salario mínimo interprofesional vigente en el momento del nacimiento del derecho, excluida la parte proporcional de las pagas extras.</p>
+  </li>
+</ul>
+<p style="text-align: justify;"><br /></p>
+<h4 style="text-align: justify;">¿Cuáles son las situaciones legales de cese de actividad? Art. 331.1 TRLGSS</h4>
+<p style="text-align: justify;">a) Por la concurrencia de motivos económicos, técnicos, productivos u organizativos determinantes de la inviabilidad de proseguir la actividad económica o profesional.</p>
+<p style="text-align: justify;">Se entenderá que existen motivos económicos, técnicos, productivos u organizativos cuando concurra alguna de las circunstancias siguientes:</p>
+<p style="text-align: justify; margin-left: 40px;">1º&nbsp; &nbsp;Pérdidas derivadas del desarrollo de la actividad en 1 año completo &gt; al 10 % de los ingresos obtenidos en el mismo período, excluido el primer año de inicio de la actividad.&nbsp;</p>
+<p style="text-align: justify; margin-left: 40px;"><span style="color: rgb(68, 76, 79); font-size: inherit;">2º&nbsp; Ejecuciones judiciales o administrativas tendentes al cobro de las deudas reconocidas por los órganos ejecutivos que comporten al menos el 30 % de los ingresos del ejercicio económico inmediatamente anterior.&nbsp;&nbsp;</span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size: inherit; color: rgb(68, 76, 79);">3º&nbsp; &nbsp;</span><span style="font-size: inherit; color: rgb(68, 76, 79);">La declaración judicial de concurso.&nbsp;</span></p>
+<p style="text-align: justify; margin-left: 40px;">4º&nbsp; La reducción del 60 % de la jornada de la totalidad de las personas en situación de alta con obligación de cotizar de la empresa o la suspensión temporal de los contratos de trabajo de al menos el 60 % del número de personas en situación de alta con obligación de cotizar de la empresa.</p>
+<p style="text-align: justify; margin-left: 40px;">Siempre que en los 2 trimestres fiscales previos a la solicitud presentado ante la Administración Tributaria se cumplan con los siguientes parámetros:</p>
+<p style="margin-left: 40px; text-align: justify;"><span>—</span>&nbsp; El nivel de ingresos o ventas sea &lt; al 75 % en los mismos períodos del ejercicio o&nbsp; ejercicios anteriores.</p>
+<p style="margin-left: 40px; text-align: justify;"><span>—</span> Los rendimientos netos del autónomo en esos trimestres sean &lt; al SMI o a la base por la que viniera cotizando, si esta fuera inferior</p>
+<p style="text-align: justify; margin-left: 40px;"><span style="color: rgb(68, 76, 79); font-size: inherit; text-align: justify;">5º&nbsp; &nbsp;En el supuesto de trabajadores autónomos que no tengan trabajadores asalariados, el mantenimiento de deudas exigibles con acreedores cuyo importe sea &gt; al 150 % de los ingresos ordinarios o ventas durante los 2 trimestres fiscales previos a la solicitud.&nbsp;</span></p>
+<p style="text-align: justify; margin-left: 40px;">Siempre que estos ingresos o ventas supongan a su vez una reducción del 75% respecto del registrado en los mismos períodos del ejercicio o ejercicios anteriores.</p>
+<p style="text-align: justify; margin-left: 40px;">Se exigirá que los rendimientos netos mensuales del trabajador autónomo durante los 2 trimestres fiscales previos a la solicitud no &gt; al SMI o a la base por la que viniera cotizando, si esta fuera inferior.</p>
+<p style="text-align: justify; margin-left: 40px;">No se computarán las deudas que por incumplimiento de sus obligaciones con la Seguridad Social o con la Administración Tributaria mantenga.</p>
+<p><br /></p>
+<p style="text-align: justify;">b)&nbsp; &nbsp;Por fuerza mayor, determinante del cese temporal o definitivo de la actividad económica o profesional.</p>
+<p style="text-align: justify;">El cese temporal podrá ser total o parcial.</p>
+<p style="text-align: justify;">En el cese temporal parcial se entiende que existen motivos de fuerza mayor cuando:</p>
+<p style="text-align: justify; margin-left: 40px;">— La interrupción de la actividad de la empresa afecte a un sector o centro de trabajo.</p>
+<p style="text-align: justify; margin-left: 40px;">— Exista una declaración de emergencia adoptada por la autoridad pública competente.</p>
+<p style="text-align: justify; margin-left: 40px;">— Caída de ingresos del 75 % de la actividad de la empresa con relación al mismo período del año anterior y los ingresos mensuales del trabajador autónomo sean &lt; al SMI o el importe de la base por la que viniera cotizando si esta fuera inferior.&nbsp;</p>
+<p style="text-align: justify;">c)&nbsp; Por pérdida de la licencia administrativa, siempre que la misma constituya un requisito para el ejercicio de la actividad económica o profesional y no venga motivada por la comisión de infracciones penales.</p>
+<p style="text-align: justify;">d)&nbsp; &nbsp;Por la violencia de género o la violencia sexual determinante del cese temporal o definitivo de la actividad de la trabajadora autónoma.</p>
+<p style="text-align: justify;">e)&nbsp; Por divorcio o separación matrimonial, mediante resolución judicial, en los supuestos en que el autónomo ejerciera funciones de ayuda familiar en el negocio de su ex cónyuge o de la persona de la que se ha separado.</p>
+
+
+
+<p style="text-align: justify;"><br /></p>
+
+
+
+<h4>¿Dónde debe presentar la solicitud y en qué plazo?</h4>
+<p style="text-align: justify;">La solicitud de prestación por cese de actividad será presentada ante la Mutua con la que el trabajador tenga cubiertas las contingencias profesionales o ante el Instituto Social de la Marina si es la entidad que cubre dichas contingencias profesionales.</p>
+<p style="text-align: justify;">La solicitud se podrá presentar hasta el último día del mes siguiente al que se produjo el cese de actividad. En caso de presentación de la solicitud una vez transcurrido el plazo fijado, y siempre que el trabajador autónomo cumpla con el resto de los requisitos legalmente previstos, se descontarán del período de percepción los días que medien entre la fecha en que debería haber presentado la solicitud y la fecha en que la presentó.</p>
+<p style="text-align: justify;">El órgano gestor se hará cargo de la cuota de Seguridad Social que le corresponda durante el periodo de percepción de la prestación, siempre que se hubiere solicitado en el plazo previsto. En otro caso, el órgano gestor se hará cargo a partir del día primero del mes siguiente al de la solicitud.</p>
+<p style="text-align: justify;">La solicitud deberá ir acompañada de la documentación acreditativa requerida.</p>
+
+
+
+
+<p class="irdivjust" style="text-align: justify;"><br /></p>
+<h4>Duración de la prestación</h4>
+<p class="irdivjust" style="text-align: justify;">Con carácter <span style="color: rgb(51, 51, 51); font-family: 'Arial','sans-serif';">general el período de disfrute de la prestación se calculará en
+función de los períodos cotizados por el trabajador dentro de los 48 meses
+anteriores a la situación legal de cese de actividad, tal y como se muestra en
+la siguiente tabla:</span></p>
+
+<p class="irdivjust"><br /></p>
+<div class="irdivcent">
+  <table class="irtabladatos" style="width: 441px;" summary="Periodo de cotización y duración de la prestación por cese de actividad">
+    <caption></caption>
+    <tbody>
+      <tr>
+        <th style="width: 255px; text-align: center;" scope="col">Meses cotizados</th>
+        <th style="width: 186px; text-align: center;" scope="col">Duración </th>
+      </tr>
+      <tr>
+        <td style="width: 255px; text-align: center;">De 12 a 17 meses</td>
+        <td style="width: 186px; text-align: center;">4&nbsp;meses </td>
+      </tr>
+      <tr>
+        <td style="width: 255px; text-align: center;">De 18 a 23 meses </td>
+        <td style="width: 186px; text-align: center;">6&nbsp;meses</td>
+      </tr>
+      <tr>
+        <td style="width: 255px; text-align: center;">De 24 a 29 mese</td>
+        <td style="width: 186px; text-align: center;">8&nbsp;meses</td>
+      </tr>
+      <tr>
+        <td style="width: 255px; text-align: center;">De 30 a 35 meses</td>
+        <td style="width: 186px; text-align: center;">10&nbsp;meses</td>
+      </tr>
+      <tr>
+        <td style="width: 255px; text-align: center;">De 36 a 42 meses </td>
+        <td style="width: 186px; text-align: center;">12 meses</td>
+      </tr>
+      <tr>
+        <td style="width: 255px; text-align: center;">De 43 a 47 meses</td>
+        <td style="width: 186px; text-align: center;">16 meses</td>
+      </tr>
+      <tr>
+        <td style="width: 255px; text-align: center;">Con 48 meses</td>
+        <td style="width: 186px; text-align: center;">24&nbsp;meses</td>
+      </tr>
+    </tbody>
+  </table>
+</div><br />
+<h4>Cuantía de la prestación</h4>
+<p style="text-align: justify;">La cuantía de la prestación será del 70 % de la base reguladora, calculada según el promedio de las bases por las que el trabajador hubiera cotizado durante los 12 meses anteriores a la situación legal de cese de actividad. Para ceses de los epígrafes 4.º y 5.º del artículo 331.1.a) del TRLGSS y ceses debidos a fuerza mayor temporal parcial se aplicará el 50 % de la base reguladora.</p>
+
+
+
+
+<p style="text-align: justify;">La cuantía máxima será el 175 % del <a href="/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/10721/10957/9932/730" >Indicador Público de Renta de Efectos Múltiples (IPREM)</a>, salvo cuando el trabajador tenga uno o más hijos a su cargo, en cuyo caso la cuantía será respectivamente, del 200 % o del 225 % de dicho indicador.</p>
+<p style="text-align: justify;">La cuantía mínima variará entre el 107 % y el 80 %, dependiendo de si el trabajador autónomo tiene hijos a su cargo, o no.</p>
+<p style="text-align: justify;">No será de aplicación la cuantía mínima a los autónomos que coticen por una base inferior a la mínima.</p>
+<p>No serán de aplicación los topes máximos ni mínimos para ceses de los epígrafes 4.º y 5.º del artículo 331.1.a) del TRLGSS y ceses debidos a fuerza mayor temporal parcial.<span style="font-size: 1.4em;">&nbsp;</span></p>
+<p>A los efectos de la cuantía máxima y mínima de la prestación por cese de actividad se tendrá en cuenta el IPREM mensual, incrementado en una sexta parte, vigente en el momento del nacimiento del derecho.<span style="font-size: 1.4em;">&nbsp;</span></p>
+<p style="text-align: justify;">La Entidad Gestora ingresará las cotizaciones a la Seguridad Social por contingencias comunes que incluirá la incapacidad temporal y se efectuará por los mismos períodos de percepción de la prestación, salvo para ceses de los epígrafes 4.º y 5.º del&nbsp; artículo 331.1.a) del TRLGSS, en que el órgano gestor se hará cargo del 50% de esa cuota, y se la abonará al autónomo, y el otro 50% será a cargo del autónomo, que será el responsable del ingreso de la totalidad de las cotizaciones a la Seguridad Social. Cuando la violencia de género sea determinante del cese temporal o definitivo de la actividad, durante los primeros seis meses no existirá la obligación de cotizar, pero serán considerados como de cotización efectiva a efectos de las prestaciones de Seguridad Social y a partir del séptimo mes se iniciará la cotización.</p>
+
+
+
+<h4 style="text-align: justify;"><br />Gestión de la prestación y nacimiento del derecho</h4>
+<p style="text-align: justify;">La prestación será gestionada por la Mutua con la que el trabajador con la que el trabajador tenga cubiertas las contingencias profesionales o por el Instituto Social de la Marina si es la entidad que cubre dichas contingencias profesionales.</p>
+<p style="text-align: justify;">Si presenta la solicitud en plazo, el trabajador comenzará a disfrutar de la prestación, en los supuestos previstos en el artículo 331.1.a), el día siguiente a aquel en que tenga efectos la baja en el régimen especial al que estuvieran adscritos. </p>
+<p style="text-align: justify;">No obstante, en los supuestos de cese de actividad previsto en el artículo 331.1.a).4.º, dado que no procede la baja en el régimen de Seguridad Social correspondiente, el derecho al percibo nacerá el primer día del mes siguiente a la comunicación a la autoridad laboral de la decisión empresarial de reducción del 60 por ciento de la jornada laboral de todos los trabajadores de la empresa o de la suspensión temporal de los contratos de trabajo del 60 por ciento de la plantilla de la empresa. </p>
+<p style="text-align: justify;">De igual modo, en los supuestos a que se refiere el artículo 331.1.a).5.º, al no proceder tampoco la baja en el régimen especial correspondiente, el derecho al percibió nacerá el primer día del mes siguiente al de la solicitud. </p>
+<p style="text-align: justify;">En los supuestos de suspensión temporal total o parcial de actividad como consecuencia de fuerza mayor previstos en el artículo 331.1.b), el nacimiento del derecho se producirá el día en que quede acreditada la concurrencia de la fuerza mayor a través de los documentos oportunos, no siendo necesaria la baja en el régimen especial correspondiente. </p>
+<p style="text-align: justify;">En el resto de los supuestos regulados en el artículo 331, el nacimiento del derecho se producirá el día primero del mes siguiente a aquel en que tenga efectos la baja como consecuencia del cese en la actividad.</p>
+<p style="text-align: justify;"><br /></p>
+<h4 style="text-align: justify;">Obligaciones del trabajador autónomo</h4>
+<ul>
+  <li style="text-align: justify;">Cotizar por las aportaciones correspondientes a la protección por cese de actividad.</li>
+  <li style="text-align: justify;">Solicitar a la&nbsp;Mutua colaboradora con la Seguridad Social o Entidad Gestora a la que se encuentren adheridos la cobertura de la protección por cese de actividad.&nbsp;</li>
+  <li style="text-align: justify;">Proporcionar&nbsp;la documentación e información necesaria para el reconocimiento, suspensión, extinción o reanudación de la prestación. &nbsp;</li>
+  <li style="text-align: justify;">No trabajar por cuenta ajena o propia durante el disfrute de la prestación, salvo para ceses de los epígrafes 4.º y 5.º del artículo 331.1.a) del TRLGSS y cese debido a fuerza mayor temporal parcial que son compatibles con la actividad que causa el cese, siempre que los rendimientos netos mensuales durante la percepción de la prestación no sean superiores a la cuantía del salario mínimo interprofesional vigente en el momento del nacimiento del derecho excluida la parte proporcional de las pagas extraordinarias, o al importe de la base por la que viniera cotizando, si esta fuera inferior.</li>
+</ul>
+<p style="text-align: justify;">Si en el hecho causante de la prestación por cese de actividad, trabaja por cuenta ajena, será compatible siempre y cuando la suma de la retribución mensual media de los 4 meses anteriores al nacimiento del derecho y la prestación resulte una cantidad media mensual inferior al importe del salario mínimo interprofesional vigente en el momento del nacimiento del derecho, excluida la parte proporcional de las pagas extras.&nbsp; </p>
+<ul>
+  <li style="text-align: justify;">Solicitar la baja en la prestación cuando se produzcan situaciones de suspensión o extinción o se dejen de reunir los requisitos.</li>
+  <li style="text-align: justify;">Suscribir y cumplir las exigencias del compromiso de actividad.</li>
+  <li style="text-align: justify;">Reintegrar las prestaciones indebidamente percibidas.</li>
+  <li style="text-align: justify;">Comparecer a requerimiento del órgano gestor. </li>
+  <li style="text-align: justify;">Estar a disposición del Servicio Público de Empleo de la correspondiente Comunidad Autónoma, o del Instituto Social de la Marina, en su caso, a fin de realizar las actividades formativas, de orientación profesional y de promoción de la actividad emprendedora a las que se les convoque.</li>
+  <li style="text-align: justify;">Participar en acciones específicas de motivación, información, orientación, formación, reconversión o inserción profesional para incrementar su ocupabilidad, que se determinen por el Servicio Público de Empleo de la correspondiente comunidad Autónoma, o por el Instituto Social de la Marina, en su caso.&nbsp;</li>
+</ul>
+<h4><br /></h4>
+<h4>Suspensión y extinción de la prestación</h4>
+<p style="text-align: justify;">La prestación&nbsp;se suspenderá por la imposición de alguna sanción por infracción leve o grave, por cumplir condena de privación de libertad, por trabajar por cuenta propia o ajena por tiempo inferior a 12 meses, salvo en los supuestos de cese de actividad previsto en los epígrafes 4.º y 5.º del artículo 331.1.a), o de cese temporal parcial de la actividad derivado de fuerza mayor, que serán compatible con la actividad que causa el cese, en los términos previstos en el artículo 342.1, y por traslado de residencia al extranjero por un periodo continuado inferior a 12 meses para la búsqueda o realización de trabajo o perfeccionamiento profesional o cooperación internacional, y por la salida ocasional al extranjero por tiempo no superior a 30 días naturales por una sola vez cada año, siempre que, estas dos últimas situaciones, hayan estado previamente comunicadas y autorizadas por el órgano gestor.</p>
+<p style="text-align: justify;">La prestación se extinguirá por agotamiento del plazo de duración de la prestación, por la realización de un trabajo por cuenta ajena o propia durante un tiempo igual o superior a 12 meses, por imposición de sanción, y por las demás causas recogidas en el texto refundido de la Ley General de Seguridad Social.</p>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script>
+var esPrimero = "NO";
+</script>
+
+
+
+<div class="panel-group mt10 col-xs-12 pl0 pr0">
+  <div class="panel panel-default">
+
+
+
+
+
+
+   
+
+        
+   
+
+
+
+
+
+
+
+
+<div class="panel-body">
+<div class="text-block mark_content">
+<p><br /></p>
+
+    
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/POINThemeStatic/themes/Portal8.5/js/poin/vendor/jquery.min.js"></script>
+
+
+		 
+<div class="text-block">
+	<div id="tabla-cc-1" class="table-responsive col-xs-12">
+					
+						<table class="table datos mix table-hover">	 
+						
+						
+						    <caption class="sr-only">En la siguiente tabla podrá descargarse los siguientes Documentos.</caption>	
+							<thead>
+								<tr>
+									<th scope="col">Documentos</th>
+									<th scope="col">Descarga</th>
+									<th scope="col">Fecha</th>
+								</tr>
+							</thead>
+							<tbody>
+							
+																	
+										
+								<tr>
+								
+									
+									<td><a class="visuallyhidden" name="0015042026_solictud Cese Fuerza Mayor">0015042026_solictud Cese Fuerza Mayor</a>
+									Solicitud de cese temporal total de la actividad por fuerza mayor</td>
+									<td class="download">
+										<a href="/descarga/es/0015042026_solictud Cese Fuerza Mayor" onclick="javascript:insertarRegistroArchivos('da3a9690-b8f4-4204-ba87-8ab37ac46662')" target="_blank" rel="noopener noreferrer" title="Descargar documento Solicitud de cese temporal total de la actividad por fuerza mayor. El documento se abrirá en una nueva ventana.">
+										<img class="descarga" src="/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-download.svg" alt="Descargar documento Solicitud de cese temporal total de la actividad por fuerza mayor. El documento se abrirá en una nueva ventana.">
+										<img class="descarga-hover" src="/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-download-hover.svg" alt="Descargar documento Solicitud de cese temporal total de la actividad por fuerza mayor. El documento se abrirá en una nueva ventana.">
+										(PDF,6394 KB)</a> 
+									</td>
+									<td>12/06/2026</td>
+								</tr>
+								
+																	
+										
+								<tr>
+								
+									
+									<td><a class="visuallyhidden" name="01022023declar">01022023declar</a>
+									Declaración jurada CESEACTIVIDAD ISM 4-I</td>
+									<td class="download">
+										<a href="/descarga/es/01022023declar" onclick="javascript:insertarRegistroArchivos('66090dc7-8260-4a7e-8c4f-d4300ea36762')" target="_blank" rel="noopener noreferrer" title="Descargar documento Declaración jurada CESEACTIVIDAD ISM 4-I. El documento se abrirá en una nueva ventana.">
+										<img class="descarga" src="/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-download.svg" alt="Descargar documento Declaración jurada CESEACTIVIDAD ISM 4-I. El documento se abrirá en una nueva ventana.">
+										<img class="descarga-hover" src="/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-download-hover.svg" alt="Descargar documento Declaración jurada CESEACTIVIDAD ISM 4-I. El documento se abrirá en una nueva ventana.">
+										(PDF,325 KB)</a> 
+									</td>
+									<td>30/05/2023</td>
+								</tr>
+								
+																	
+										
+								<tr>
+								
+									
+									<td><a class="visuallyhidden" name="01022023solic">01022023solic</a>
+									Solicitud Cese de Actividad</td>
+									<td class="download">
+										<a href="/descarga/es/01022023solic" onclick="javascript:insertarRegistroArchivos('9a193388-64a7-477c-8dec-2da5f672461c')" target="_blank" rel="noopener noreferrer" title="Descargar documento Solicitud Cese de Actividad. El documento se abrirá en una nueva ventana.">
+										<img class="descarga" src="/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-download.svg" alt="Descargar documento Solicitud Cese de Actividad. El documento se abrirá en una nueva ventana.">
+										<img class="descarga-hover" src="/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-download-hover.svg" alt="Descargar documento Solicitud Cese de Actividad. El documento se abrirá en una nueva ventana.">
+										(PDF,2947 KB)</a> 
+									</td>
+									<td>06/03/2024</td>
+								</tr>
+								
+																	
+										
+								<tr>
+								
+									
+									<td><a class="visuallyhidden" name="01022023">01022023</a>
+									Carpeta informativa - Cese de actividad trabajadores autónomos. ISM</td>
+									<td class="download">
+										<a href="/descarga/es/01022023" onclick="javascript:insertarRegistroArchivos('1ed90b6a-2f54-405b-ac52-b5d62176887a')" target="_blank" rel="noopener noreferrer" title="Descargar documento Carpeta informativa - Cese de actividad trabajadores autónomos. ISM. El documento se abrirá en una nueva ventana.">
+										<img class="descarga" src="/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-download.svg" alt="Descargar documento Carpeta informativa - Cese de actividad trabajadores autónomos. ISM. El documento se abrirá en una nueva ventana.">
+										<img class="descarga-hover" src="/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-download-hover.svg" alt="Descargar documento Carpeta informativa - Cese de actividad trabajadores autónomos. ISM. El documento se abrirá en una nueva ventana.">
+										(PDF,269 KB)</a> 
+									</td>
+									<td>01/02/2023</td>
+								</tr>
+								
+																	
+										
+								<tr>
+								
+									
+									<td><a class="visuallyhidden" name="21052025">21052025</a>
+									Comunicación de salida al extranjero de cese de actividad</td>
+									<td class="download">
+										<a href="/descarga/es/21052025" onclick="javascript:insertarRegistroArchivos('9a71f6eb-db70-4344-bdb1-765b2879cd41')" target="_blank" rel="noopener noreferrer" title="Descargar documento Comunicación de salida al extranjero de cese de actividad. El documento se abrirá en una nueva ventana.">
+										<img class="descarga" src="/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-download.svg" alt="Descargar documento Comunicación de salida al extranjero de cese de actividad. El documento se abrirá en una nueva ventana.">
+										<img class="descarga-hover" src="/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-download-hover.svg" alt="Descargar documento Comunicación de salida al extranjero de cese de actividad. El documento se abrirá en una nueva ventana.">
+										(PDF,501 KB)</a> 
+									</td>
+									<td>21/05/2025</td>
+								</tr>
+								
+							
+							
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+
+        
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script>
+var esPrimero = "NO";
+</script>
+
+
+<script>
+var esPrimero = "NO";
+</script>
+
+
+<script>
+var esPrimero = "NO";
+</script>
+
+
+<script>
+var esPrimero = "NO";
+</script>
+
+
+<script>
+var esPrimero = "NO";
+</script>
+
+
+
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div><div class='component-control id-Z7_21I4H401M8DFA0A7BU455N20D4' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 margen mt20">
+<nav class="panel-rel" role="navigation" aria-labelledby="poin-informacion-relacionada">
+    <div class="panel-rel-head">
+		<h2 role="heading" aria-level="2" class="panel-rel-title BlueSide" id="poin-informacion-relacionada">Información Relacionada
+		</h2>
+    </div>
+<div class="panel-rel-body BlueSide EnlacesBlancos">
+<ul class="col-md-12 " aria-label="Lista de enlaces con información relacionada">
+
+
+
+
+
+
+
+<li class="col-xs-12 col-sm-6 col-md-6">
+
+<a target="_self" href="/wps/portal/wss/internet/HerramientasWeb/4c5c5105-04d1-4dfd-8af4-1e2d5c0c1ae3/10432" >Certificados electrónicos</a> 
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="col-xs-12 col-sm-6 col-md-6">
+
+<a target="_self" href="/wps/portal/wss/internet/InformacionUtil/10531" >Formularios y modelos</a> 
+</li>
+
+
+
+
+
+
+<li class="col-xs-12 col-sm-6 col-md-6">
+
+<a target="_self" href="/wps/portal/wss/internet/InformacionUtil/32078" >Internacional</a> 
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="col-xs-12 col-sm-6 col-md-6">
+
+<a target="_self" href="/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10938/11566/1761" >Tarjeta Sanitaria Europea</a> 
+</li>
+
+
+
+
+
+
+<li class="col-xs-12 col-sm-6 col-md-6">
+
+<a target="_self" href="/wps/portal/wss/internet/InformacionUtil/44539" >Trámites y gestiones</a> 
+</li>
+
+
+
+
+</ul>
+</div>
+<div class="panel-rel">
+    
+  <div class="panel-rel-footer">
+    <a href="https://sede.seg-social.gob.es/" title="Enlace a la sede electrónica"  class="center">
+      <img src="/POINThemeStatic/themes/Portal8.5/css/img/logo-ss-sedeElectronica.svg" alt="Enlace a la sede electrónica" class="col-xs-10 col-sm-6 col-md-4">
+    </a>
+  </div>
+
+</div>
+
+</nav>
+</div>
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div></div></div>
+		</div>
+	</div>
+</section>
+</main>
+		
+		<footer id="pie" class="row-footer">
+			
+<div class="control-subir" id="ontop" style="display: none;  z-index:1000; ">
+	<a href="#top" class="" title="Subir al inicio de la página">
+		<img class="" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-subir.svg" alt="Subir ">
+	</a>
+</div>
+
+<div class="row-container footer-big-bg">
+	<div class="row">
+	
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-submenu bg-primary-alt">
+			<div class="footer-main-links">
+				<nav aria-label="Enlaces del pie de página">
+					<ul class="clean">
+					<li class="first">							
+								<a href="/wps/portal/wss/internet/HerramientasWeb/4c5c5105-04d1-4dfd-8af4-1e2d5c0c1ae3" title="Ir a&nbsp;Cómo identificarme">Cómo identificarme</a>							
+					</li>
+						<li>
+							
+								<a href="/wps/portal/wss/internet/MapaWeb" title="Ir a&nbsp;Mapa Web">Mapa Web</a>
+							
+						</li>
+						
+						<li>
+							
+								<a href="/wps/portal/wss/internet/Glosario" title="Ir a&nbsp;Glosario">Glosario</a>
+							
+						</li>
+						
+						<li>
+							
+								<a href="/wps/portal/wss/internet/Enlaces" title="Ir a&nbsp;Enlaces">Enlaces</a>
+							
+						</li>
+						
+						<li>
+							
+								<a href="/wps/portal/wss/internet/Ayuda" title="Ir a&nbsp;Ayuda">Ayuda</a>
+							
+						</li>
+						
+						<li>
+							
+								<a href="/wps/portal/wss/internet/Accesibilidad" title="Ir a&nbsp;Accesibilidad">Accesibilidad</a>
+							
+						</li>									
+						
+						<li>
+							
+								<a href="/wps/portal/wss/internet/InformacionLinguistica" title="Ir a&nbsp;Información Lingüística">Información Lingüística</a>
+							
+						</li>
+						
+						<li class="last">
+							
+								<a href="/wps/portal/wss/internet/RSS" title="Ir a&nbsp;RSS">RSS</a> <img alt="" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/rss32.gif">
+							
+						</li>
+					</ul>
+				</nav>
+			</div>						
+		</div>
+	</div>
+</div>
+<div class="row-container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="footer-sub-links">
+				<div class="copyright">Copyright © Seguridad Social 2026. Todos los derechos reservados.
+				</div>
+				<div class="legal">
+					<ul class="clean">
+						<li>
+							
+								<a href="/wps/portal/wss/internet/AvisoLegal" title="Ir a&nbsp;Aviso Legal">Aviso Legal</a>
+							
+						</li>
+						<li class="last">
+							
+								<a href="/wps/portal/wss/internet/PoliticaCookies" title="Ir a&nbsp;Política de cookies">Política de cookies</a>	
+							
+						</li>
+					</ul>
+				</div>
+				<div class="validation">
+					
+						<a href="/wps/portal/wss/internet/Accesibilidad" target="_blank" rel="noopener noreferrer" aria-label="Abrir sección de conformidad con los estádares HTML 5.0 Enlace en nueva ventana.">
+						<img alt="Abrir sección de conformidad con los estándares HTML 5.0" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/valid-html5.gif">
+						 </a>
+					
+					
+					<a target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG2AA-Conformance" aria-label="Abrir sección de conformidad con los estándares AA Enlace en nueva ventana.">
+						<img alt="Abrir sección de conformidad con los estádares AA" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/wcag2AA.gif">
+					</a>
+					
+					
+					
+						<a href="/wps/portal/wss/internet/Accesibilidad" target="_blank" rel="noopener noreferrer" aria-label="Abrir sección de conformidad con los estándares CSS Enlace en nueva ventana.">
+						<img alt="Abrir sección de conformidad con los estándares CSS" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/vcss.gif">
+						 </a>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/vendor/mmenu.min.js"></script>
+<script> 
+    window.addEventListener("load",  
+        e => document.querySelectorAll( 'a[href]:not([rel])') 
+            .forEach(a => a.setAttribute( 'rel', 'noopener noreferrer nofollow')) 
+    ); 
+</script>
+<div class="wpthemeClear"></div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/vendor/jquery.min.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/jquery-1.12.4.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/jquery-ui.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/bootstrap.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/slick.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/funciones.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/buscador.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/main.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+var imgURL = 'https://stss.seg-social.es/PoinEstadisticas/ServletEstadisticasPoin';
+var urlFija = 'https://stss.seg-social.es/PoinEstadisticas/ServletEstadisticasPoin';
+var urlChatBot ='https://issa.seg-social.es/';
+
+</script>
+
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poinAggregator.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/poinEstadisticas.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/poinChatBot.js"></script>
+
+
+
+
+</footer><!-- page footer -->
+	</div><!-- end frame -->
+		
+    <!-- This is responsible for bootstrapping the configuration for the javascript framework. 
+        This is located here instead of the head section to improve client performance. -->
+	<div class="wpthemeComplementaryContent" id="wpthemeComplementaryContent" role="region" tabindex="-1" aria-labelledby="wpthemeComplementaryContentText">
+		<span class="wpthemeAltText" id="wpthemeComplementaryContentText" >Complementary Content</span>
+		<script type="text/javascript" src="/wps/contenthandler/wss/!ut/p/digest!J-l_Ix-N-y3ICBsVkJsSOg/mashup/ra:collection?themeID=ZJ_OAM2H441L0LM10AN11KOFO0044&amp;locale=es&amp;mime-type=text%2Fjavascript&amp;lm=1792982033693&amp;entry=wp_portal__0.0%3Aconfig_config_static"></script><script type="text/javascript">i$.merge({"ibmCfg":{"themeConfig":{"themeUniqueName":"ibm.portal.ss.internet.Theme","themeRootURI":"/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5","themeWebAppBaseURI":"/POINThemeDynamic/themes/html/dynamicSpots","themeWebDAVBaseURI":"war:POINThemeStatic/themes/Portal8.5/","modulesWebAppBaseURI":"/wps/themeModules","commonResourcesRootURI":"/wps/contenthandler/wss/!ut/p/digest!J-l_Ix-N-y3ICBsVkJsSOg/dav/fs-type1/common-resources","isRTL":false,"isPageRenderModeCSA":false,"portletOverridePageTitle":"Trabajadores","currentContentNodeOID":"Z6_21I4H401M8LJC0ARPRHM342G72","loadingImage":"css/images/loading.gif","dndSourceDefinitions":[],"categorySources":["system/WebContentCategory.json,label:shelf_socialCategory"],"styleSources":[],"layoutSources":[]},"portalConfig":{"locale":"es","portalURI":"/wps/portal","contentHandlerURI":"/wps/contenthandler/wss/!ut/p/digest!EhSyRnUqyadgCn-9st-Ggg/?locale=es&locale=es-US&locale=ltr","pocURI":"/wps/portal/wss/!ut/p/z0/0wcA1NLTeQ!!/","isVirtualPortal":true,"canImpersonate":false,"themeRootURI":"/POINThemeDynamic/themes/html/dynamicSpots","parentPageID":"Z6_21I4H401M00C50AR9GLSVS1083","currentPageOID":"Z6_21I4H401M8LJC0ARPRHM342G72","canAnonymousUserViewCurrentPage":true,"bootstrapState":"&lt;?xml version=&#034;1.0&#034; encoding=&#034;UTF-8&#034;?&gt;&lt;root xmlns=&#034;http://www.ibm.com/xmlns/prod/websphere/portal/v6.1/portal-state&#034;&gt;&lt;state type=&#034;navigational&#034;&gt;&lt;selection selection-node=&#034;Z6_21I4H401M8LJC0ARPRHM342G72&#034;&gt;&lt;mapping src=&#034;Z6_21I4H401M00C50AR9GLSVS1083&#034; dst=&#034;Z6_21I4H401M8LJC0ARPRHM342G72&#034;/&gt;&lt;mapping src=&#034;Z6_000000000000000000000000A0&#034; dst=&#034;Z6_21I4H401M8LJC0ARPRHM342G72&#034;/&gt;&lt;/selection&gt;&lt;shared-parameters id=&#034;Z6_21I4H401M8LJC0ARPRHM342G72&#034;&gt;&lt;shared-parameter nsuri=&#034;http://www.ibm.com/xmlns/prod/websphere/portal/publicparams&#034; localpart=&#034;path-info&#034;&gt;&lt;value&gt;10538&lt;/value&gt;&lt;value&gt;2277&lt;/value&gt;&lt;/shared-parameter&gt;&lt;/shared-parameters&gt;&lt;expansions&gt;&lt;node id=&#034;Z6_21I4H401M00C50AR9GLSVS1083&#034;/&gt;&lt;node id=&#034;Z6_000000000000000000000000A0&#034;/&gt;&lt;/expansions&gt;&lt;locale&gt;es&lt;/locale&gt;&lt;/state&gt;&lt;/root&gt;","isUserLoggedIn":false,"currentUser":"anonymous portal user","currentUserOID":"","aggregatedStyle":"css/poin/styles.css","isCurrentPageEditable":true,"wcmPageMetadata":{"contentRoot":null,"sharingScope":null},"projectUUID":null},"userName":""},"com_ibm_theme_capabilities":{"simple-contextmenu":"1.1","wp_theme_menus":"0.0","chatbot_contribution":"1.0.0","wp_simple_contextmenu_js":"0.0","wp_toolbar_ghost":"0.0","wp_client_logging":"0.0","wp_state_page":"0.0","wp_toolbar_common":"0.0","wp_theme_portal_edit_85":"0.0","wp_theme_utils":"0.0","poinModule_dynamicContentSpots_85":"0.0","wp_simple_contextmenu_main":"0.0","wp_theme_skin_region":"0.0","wp_portal":"0.0","photon.dom":"1.0","wp_photon_dom":"0.0","wp_custom_page_style":"0.0","highContrast":"1.0","wp_searchbar":"0.0","wp_status_bar":"0.0","wp_client_ext":"0.0","wp_simple_contextmenu_css":"0.0","wp_client_tracing":"0.0","wp_modules":"0.0","modules":"0.1","wp_analytics_aggregator":"0.0","toolbar":"8.5","hasBaseURL":"true","analytics_aggregator":"8.0","wp_state_page_modes":"0.0","wp_theme_portal_85":"0.0","wp_client_main":"0.0","wp_simple_contextmenu_templates":"0.0","wp_high_contrast":"0.0","wp_toolbar_viewframe_validator":"0.0"},"com_ibm_device_class":[]});ibmCfg.portalConfig.bootstrapState=(ibmCfg.portalConfig.bootstrapState||"").replace(/&lt;/gm, '<').replace(/&gt;/gm, '>').replace(/&amp;/gm, '&').replace(/&#039;/gm, "'").replace(/&#034;/gm, '"');</script><script type="text/javascript" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/mashup/ra:collection?themeID=ZJ_OAM2H441L0LM10AN11KOFO0044&amp;locale=es&amp;mime-type=text%2Fjavascript&amp;lm=1781239586000&amp;entry=wp_high_contrast__0.0%3Aconfig_js&amp;entry=wp_state_page_modes__0.0%3Aconfig_js&amp;entry=wp_simple_contextmenu_js__0.0%3Aconfig_js&amp;entry=wp_theme_skin_region__0.0%3Aconfig_js&amp;entry=wp_status_bar__0.0%3Aconfig_js"></script><div id="simpleMenuTemplate" class="wpthemeMenuLeft">
+    <div class="wpthemeMenuBorder">
+        <div class="wpthemeMenuNotchBorder"></div>
+        <!-- define the menu item template inside the "ul" element.  only "css-class", "description", and "title" are handled by the theme's sample javascript. -->
+        <ul class="wpthemeMenuDropDown wpthemeTemplateMenu" role="menu">
+            <li class="${css-class}" role="menuitem" tabindex="-1"><span class="wpthemeMenuText">${title}</span>${badge}</li>
+        </ul>
+    </div>
+    <!-- Template for loading -->
+    <div class="wpthemeMenuLoading wpthemeMenuLoadingText wpthemeTemplateLoading">${loading}</div>
+    <!-- Template for submenu -->
+    <div class="wpthemeAnchorSubmenu wpthemeTemplateSubmenu">
+        <div class="wpthemeMenuBorder wpthemeMenuSubmenu">
+            <ul id="${submenu-id}" class="wpthemeMenuDropDown" role="menu"><li role="menuitem" tabindex="-1"></li></ul>
+        </div>
+    </div>
+</div></div>
+</body>
+</html>

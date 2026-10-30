@@ -1,0 +1,425 @@
+{
+  "count": 70,
+  "checks": [
+    {
+      "name": "savingstax0",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "savingstax6000",
+      "actual": "1140",
+      "expected": "1140",
+      "pass": true
+    },
+    {
+      "name": "savingstax50000",
+      "actual": "10380",
+      "expected": "10380",
+      "pass": true
+    },
+    {
+      "name": "savingstax200000",
+      "actual": "44880",
+      "expected": "44880",
+      "pass": true
+    },
+    {
+      "name": "savingstax300000",
+      "actual": "71880",
+      "expected": "71880",
+      "pass": true
+    },
+    {
+      "name": "savingstax400000",
+      "actual": "101880",
+      "expected": "101880",
+      "pass": true
+    },
+    {
+      "name": "savingstax29650",
+      "actual": "12213/2",
+      "expected": "12213/2",
+      "pass": true
+    },
+    {
+      "name": "savingstax7500",
+      "actual": "1455",
+      "expected": "1455",
+      "pass": true
+    },
+    {
+      "name": "savingstax26000",
+      "actual": "5340",
+      "expected": "5340",
+      "pass": true
+    },
+    {
+      "name": "marginalcent6000",
+      "actual": "21/10000",
+      "expected": "21/10000",
+      "pass": true
+    },
+    {
+      "name": "marginalcent50000",
+      "actual": "23/10000",
+      "expected": "23/10000",
+      "pass": true
+    },
+    {
+      "name": "marginalcent200000",
+      "actual": "27/10000",
+      "expected": "27/10000",
+      "pass": true
+    },
+    {
+      "name": "marginalcent300000",
+      "actual": "3/1000",
+      "expected": "3/1000",
+      "pass": true
+    },
+    {
+      "name": "buyplusfee",
+      "actual": "25150",
+      "expected": "25150",
+      "pass": true
+    },
+    {
+      "name": "netfiat",
+      "actual": "54800",
+      "expected": "54800",
+      "pass": true
+    },
+    {
+      "name": "fiatgain",
+      "actual": "29650",
+      "expected": "29650",
+      "pass": true
+    },
+    {
+      "name": "globalFIFO2secondunits",
+      "actual": "2",
+      "expected": "2",
+      "pass": true
+    },
+    {
+      "name": "FIFOcost",
+      "actual": "16000",
+      "expected": "16000",
+      "pass": true
+    },
+    {
+      "name": "FIFOremaining",
+      "actual": "6000",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "wrongexchangeFIFOseparator",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "swapmax",
+      "actual": "45600",
+      "expected": "45600",
+      "pass": true
+    },
+    {
+      "name": "swapgain",
+      "actual": "29600",
+      "expected": "29600",
+      "pass": true
+    },
+    {
+      "name": "swapinbasis",
+      "actual": "45600",
+      "expected": "45600",
+      "pass": true
+    },
+    {
+      "name": "swapoppositemax",
+      "actual": "45600",
+      "expected": "45600",
+      "pass": true
+    },
+    {
+      "name": "disposalbasket",
+      "actual": "-3400",
+      "expected": "-3400",
+      "pass": true
+    },
+    {
+      "name": "cross25",
+      "actual": "2500",
+      "expected": "2500",
+      "pass": true
+    },
+    {
+      "name": "savingsbase",
+      "actual": "7500",
+      "expected": "7500",
+      "pass": true
+    },
+    {
+      "name": "carriedloss",
+      "actual": "900",
+      "expected": "900",
+      "pass": true
+    },
+    {
+      "name": "smallnegativefullyused",
+      "actual": "1000",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "positivegainsnegativeincome",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "remainingincomeloss",
+      "actual": "1000",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "bothnegativecrossnone",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "mixedweightedout",
+      "actual": "60",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "name": "mixedweightedin",
+      "actual": "40",
+      "expected": "40",
+      "pass": true
+    },
+    {
+      "name": "outgain",
+      "actual": "3940",
+      "expected": "3940",
+      "pass": true
+    },
+    {
+      "name": "incomingbasis",
+      "actual": "5040",
+      "expected": "5040",
+      "pass": true
+    },
+    {
+      "name": "feetokengain",
+      "actual": "40",
+      "expected": "40",
+      "pass": true
+    },
+    {
+      "name": "latersale",
+      "actual": "960",
+      "expected": "960",
+      "pass": true
+    },
+    {
+      "name": "feereconciliation",
+      "actual": "4940",
+      "expected": "4940",
+      "pass": true
+    },
+    {
+      "name": "economicnet",
+      "actual": "4940",
+      "expected": "4940",
+      "pass": true
+    },
+    {
+      "name": "badsubtractoutfrombasis",
+      "actual": "1020",
+      "expected": "1020",
+      "pass": true
+    },
+    {
+      "name": "badbasisoverstatesgain",
+      "actual": "60",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "name": "badomitfeegain",
+      "actual": "4900",
+      "expected": "4900",
+      "pass": true
+    },
+    {
+      "name": "badusehistoricalfee",
+      "actual": "4980",
+      "expected": "4980",
+      "pass": true
+    },
+    {
+      "name": "oldidentityloss",
+      "actual": "-4000",
+      "expected": "-4000",
+      "pass": true
+    },
+    {
+      "name": "newpurchasegain",
+      "actual": "500",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "releasedoldnet",
+      "actual": "-3500",
+      "expected": "-3500",
+      "pass": true
+    },
+    {
+      "name": "blockednotbasisuplift",
+      "actual": "6500",
+      "expected": "6500",
+      "pass": true
+    },
+    {
+      "name": "721exact50k",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "72150001",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "721selfcustodyexcluded",
+      "actual": "50001",
+      "expected": "50001",
+      "pass": true
+    },
+    {
+      "name": "721reportwhole",
+      "actual": "50001",
+      "expected": "50001",
+      "pass": true
+    },
+    {
+      "name": "721notexcess",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "721sameincreaseexact20k",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "721increase20001",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "721latestnotinitial",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "generalcreditlosslimited",
+      "actual": "5000",
+      "expected": "5000",
+      "pass": true
+    },
+    {
+      "name": "creditlossremainder",
+      "actual": "5000",
+      "expected": "5000",
+      "pass": true
+    },
+    {
+      "name": "late0months",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "late11months",
+      "actual": "1200",
+      "expected": "1200",
+      "pass": true
+    },
+    {
+      "name": "lateafter12",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "late25reduction",
+      "actual": "1125",
+      "expected": "1125",
+      "pass": true
+    },
+    {
+      "name": "infofloorcap1",
+      "actual": "300",
+      "expected": "300",
+      "pass": true
+    },
+    {
+      "name": "infofloorcap15",
+      "actual": "300",
+      "expected": "300",
+      "pass": true
+    },
+    {
+      "name": "infofloorcap16",
+      "actual": "320",
+      "expected": "320",
+      "pass": true
+    },
+    {
+      "name": "infofloorcap1001",
+      "actual": "20000",
+      "expected": "20000",
+      "pass": true
+    },
+    {
+      "name": "infohalfminimum",
+      "actual": "150",
+      "expected": "150",
+      "pass": true
+    },
+    {
+      "name": "infohalfmaximum",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "fullfrozenGuideexact",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "publishedGuideexact",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    }
+  ]
+}

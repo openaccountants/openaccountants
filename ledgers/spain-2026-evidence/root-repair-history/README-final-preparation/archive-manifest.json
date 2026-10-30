@@ -1,0 +1,67 @@
+[
+  {
+    "path": "after-final-readme-application.md",
+    "sha256": "ad40e989b534567accbbc4e9238aa90ec5909c6055c6dcc1d85684f8df9d5afd",
+    "bytes": 20851
+  },
+  {
+    "path": "after-status-sync-README.md",
+    "sha256": "c3897df713896b551761f5ab847e87bcd64f531d4ef5e8c256fd577bbcaaf4ff",
+    "bytes": 21565
+  },
+  {
+    "path": "before-README.md",
+    "sha256": "1e2ba252cc0116479cc79fe6a960873f16aceb1af2e308a9e064d5e7812cf9a7",
+    "bytes": 21015
+  },
+  {
+    "path": "before-final-checkpoint-paragraph.md",
+    "sha256": "c3897df713896b551761f5ab847e87bcd64f531d4ef5e8c256fd577bbcaaf4ff",
+    "bytes": 21565
+  },
+  {
+    "path": "before-final-readme-application.md",
+    "sha256": "c3897df713896b551761f5ab847e87bcd64f531d4ef5e8c256fd577bbcaaf4ff",
+    "bytes": 21565
+  },
+  {
+    "path": "candidate-README.md",
+    "sha256": "c3897df713896b551761f5ab847e87bcd64f531d4ef5e8c256fd577bbcaaf4ff",
+    "bytes": 21565
+  },
+  {
+    "path": "candidate-after-final-22-PASS-README.md",
+    "sha256": "ad40e989b534567accbbc4e9238aa90ec5909c6055c6dcc1d85684f8df9d5afd",
+    "bytes": 20851
+  },
+  {
+    "path": "final-checkpoint-paragraph-options-pending.md",
+    "sha256": "77b32e28e8531fe084fbb016e9e68b8e49cf0ac36ecc3a168367b94f0294f630",
+    "bytes": 702
+  },
+  {
+    "path": "final-readme-application-proof.json",
+    "sha256": "8f9df11559ec851174edef83113826026f454ecd47c59134860b5fad4e23d374",
+    "bytes": 655
+  },
+  {
+    "path": "options-before-edit.md",
+    "sha256": "2d0752b40f87ae6b1958beaf11f7dc56b56e48ebc3c35680c1c522fd66a5e723",
+    "bytes": 979
+  },
+  {
+    "path": "prior-historical-paragraph.txt",
+    "sha256": "8b610a6b19943d8c5de54521cfd87125a26dc5bd0f4f04b731c0c96cb4543d8b",
+    "bytes": 2076
+  },
+  {
+    "path": "status-sync-proof.json",
+    "sha256": "f720a13b287c7f665548bb8b801657d8b79d3b1e4b2b899f7ca0ce844ba6c005",
+    "bytes": 454
+  },
+  {
+    "path": "status-sync.diff",
+    "sha256": "c4947e3a46359fd12946e4e4318f09d27c536c691aec0724a41c4252ff3a3a45",
+    "bytes": 6891
+  }
+]

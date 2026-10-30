@@ -1,0 +1,85 @@
+{
+  "as_of": "2026-10-28T10:17:51.127282+00:00",
+  "baseline_head": "2f319d77d7a47c84a0b45b4f4506b3c378d9d4f1",
+  "origin_main": "73f566473aaab8cda1e1a28c0fb8a9c3cd6f7dd0",
+  "before29_hashes": {
+    "README.md": "9c798bf4c748bcdad008212ba0c382eae1a44b358eec3bcd04831118105a461b",
+    "es-autonomous-worker.md": "f66e5c8fa560153a9d359138b172565b12974be378fab14212b243ee7fb8da36",
+    "es-beckham.md": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+    "es-canary-islands-igic.md": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+    "es-capital-gains.md": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+    "es-ceuta-melilla-ipsi.md": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+    "es-corporate-tax.md": "66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4",
+    "es-estimated-tax.md": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+    "es-foral-corporate-tax.md": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+    "es-foral-income-tax.md": "f2bb33b8353a3fb770a1006995b1ae8f106f12c065c09a9c59a75fd46a57a94c",
+    "es-foral-non-resident-tax.md": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+    "es-foral-payroll.md": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+    "es-income-tax.md": "11e11aeccc77080f5c60a444ce01397b77e6ebebfa7e304a884777b8d4e0191f",
+    "es-irpf-deductions.md": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+    "es-modelo-111.md": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+    "es-non-resident-income-tax-irnr-and.md": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+    "es-rental-income.md": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+    "es-social-contributions.md": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+    "es-vat-return.md": "d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3",
+    "references.md": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+    "spain-bookkeeping.md": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+    "spain-crypto-tax.md": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+    "spain-einvoice.md": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+    "spain-financial-statements.md": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+    "spain-formation.md": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+    "spain-payroll.md": "89de80b5558648018020a803fd139685ac92d4908d6f72b1007e84626598d77a",
+    "spain-tax-optimization.md": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+    "spain-transfer-pricing.md": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+    "spain-vat-return.md": "70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2"
+  },
+  "review_identities": [
+    {
+      "role": "minimum-exact",
+      "report": "spain-Alava-minimum-investment-independent-review/report.md",
+      "report_sha256": "fcbceafdd4be43d59cb6892d0a68578929e7aad9e082f1699abe511763dcc980",
+      "manifest": "spain-Alava-minimum-investment-independent-review/artifact-manifest.json",
+      "manifest_sha256": "d1b93fee6833aca561c335344a419c7f59c5363693b8d2d893650b1c7e397500",
+      "members_verified": 9
+    },
+    {
+      "role": "vehicle-exact",
+      "report": "spain-Murcia-vehicle-administrative-independent-review/report.md",
+      "report_sha256": "1f0d517951c81247d7fb07633ea258f8ecdd5633c053ea2c3c18680b951761a6",
+      "manifest": "spain-Murcia-vehicle-administrative-independent-review/manifest.json",
+      "manifest_sha256": "87522a2950356950e789e1bf51bb51ac182a5778dba18abd9830aca12530447e",
+      "members_verified": 6
+    },
+    {
+      "role": "charger-exact",
+      "report": "spain-Murcia-charger-independent-review/report.md",
+      "report_sha256": "2b6d0401fe9ba30da6f70f1872e96aa79f547c1e49b4a1a5d7b8c37f3cc7970f",
+      "manifest": "spain-Murcia-charger-independent-review/artifact-manifest.json",
+      "manifest_sha256": "2a301e95bc28263e86492a680b63b819f30da0d47613ba84f78615a08c5e6a48",
+      "members_verified": 6
+    },
+    {
+      "role": "shares-exact",
+      "report": "spain-foral-share-credit-independent-review/report.md",
+      "report_sha256": "a8ee14f99c6c8eabe0d263b0c6a712965f950dc0bf9cdcf9b158eb627f8355c0",
+      "manifest": "spain-foral-share-credit-independent-review/artifact-manifest.json",
+      "manifest_sha256": "92e8b38274fee886743de2dcfa107d085160cc43ad432686f2d943bc1a78c636",
+      "members_verified": 37
+    },
+    {
+      "role": "care-exact-composition",
+      "report": "spain-Alava-deemed-jobseeker-independent-review/report.md",
+      "report_sha256": "0b6bbcc40ed0a7e6fd16d1c088565b7246f2e8a0bc3c38fe95de9e8e1cadaee4",
+      "manifest": "spain-Alava-deemed-jobseeker-independent-review/artifact-manifest.json",
+      "manifest_sha256": "ab07df19d56cf9762fca8dc518cd312b0e2bdde2f14618d6d2ee9ca376b7fde5",
+      "members_verified": 49
+    }
+  ],
+  "archive": {
+    "original_files": 542,
+    "unique_blobs": 383,
+    "all_roundtrip_hashes_match": true
+  },
+  "country_ready": false,
+  "pushed": false
+}

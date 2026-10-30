@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ad-tax-overview"
   jurisdiction: "AD"
   tax_year: "2025"
-  last_updated: "2026-07-13"
+  last_updated: "2026-10-28"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
@@ -24,9 +24,11 @@ metadata:
 - **Headline corporate income tax rate** — 10% (Impost sobre Societats) %  _(Llei 95/2010 de l'impost sobre societats (IS))_
 - **Does Andorra have a VAT/GST?** — Yes — Impost General Indirecte (IGI), standard rate 4.5%  _(Llei 11/2012 de l'impost general indirecte (IGI))_
 - **Personal income tax (IRPF) filing window** — 1 April to 30 September of the year following the tax year  _(Llei 5/2014 IRPF)_
-- **Corporate income tax (IS) filing deadline** — Within 6 months following the close of the tax year (typically by 31 July for calendar-year filers) ((approx — confirm exact statutory window with Departament de Tributs))  _(Llei 95/2010 IS)_
+- **Corporate income tax (IS) filing window** — The month following the six months after the period ends: July for a 31 December year-end. Earlier filing does not alter payment/refund deadlines. Filing rule checked 23 October 2026; other overview entries remain subject to their stated review limits. [Corporate-tax regulation, Article 45](https://www.portaljuridicandorra.ad/R20231229C).
 - **Wealth, inheritance and gift tax** — Andorra levies no wealth tax, no inheritance tax and no gift tax  _(Andorran tax code (absence of wealth/inheritance statute))_
 - **Communal (local) taxes** — Each of the 7 parishes (comuns) levies local taxes such as the foc i lloc residence tax and business activity taxes ((approx — rates vary by parish; confirm locally))  _(Llei de finances comunals)_
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 
@@ -48,4 +50,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ad-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ad-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ad-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ad-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.

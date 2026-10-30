@@ -1,10 +1,11 @@
 ---
 name: ukraine-vat
-description: Use this skill whenever asked to prepare, review, or advise on a Ukraine VAT (PDV) return or any PDV-related classification. Trigger on phrases like "prepare PDV return", "Ukraine VAT", "podatok na dodanu vartist", "Ukrainian VAT filing", "DPS", "SEA PDV", "tax invoice registration", or any request involving Ukrainian VAT obligations. This skill contains the complete Ukrainian PDV classification rules, rate tables, electronic administration system (SEA PDV) rules, mandatory tax invoice registration, filing deadlines, and deductibility rules required to produce a correct return. ALWAYS read this skill before touching any Ukraine VAT-related work.
+description: "Ukrainian value added tax (podatok na dodanu vartist, PDV) for tax year 2026 under section V of the Tax Code of Ukraine as amended to September 2026. Covers who must register (UAH 1,000,000 in 12 months; single-tax groups 1 to 3 excluded), the 20%, 14%, 7% and 0% rates and what sits at each, exempt and out-of-scope supplies, place of supply, the tax point, input VAT and the 365-day claim window, the pro-rata rule, the electronic administration system (SEA) registration limit, tax invoice registration deadlines and the martial-law penalty scale, invoice blocking, refunds, the reverse charge on services from non-residents, non-resident e-services, the monthly return by the 20th and payment 10 days later, and the martial-law rules. Trigger on: Ukraine VAT, PDV return, register for VAT in Ukraine, tax invoice registration, SEA VAT limit. Out of scope: invoice mechanics in detail (ua-einvoice), single tax (ua-single-tax), corporate income tax (ua-corporate-income-tax), country summary (ua-tax-overview)."
+version: 0.1
 jurisdiction: UA
-tax_year: 2025
-last_updated: 2026-07-13
-review_status: pending_review
+category: international
+tax_year: 2026
+last_updated: 2026-10-30
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -12,723 +13,295 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Ukraine VAT
 
-## Skill Metadata
+Ukraine charges value added tax (podatok na dodanu vartist, PDV) under section V of the Tax Code of Ukraine (TCU), Law No. 2755-VI of 2 December 2010, articles 180 to 211, and under the VAT points of the transitional provisions (section XX, subsection 2). This skill uses the consolidated text that includes amendments up to Law No. 4967-IX of 3 September 2026. The State Tax Service (DPS) runs VAT through the taxpayer's electronic cabinet, the Unified Register of Tax Invoices (YERPN) and the electronic administration system (SEA PDV).
 
-**Skill Metadata**
+Ukraine has been under martial law since 24 February 2022 (Presidential Decree No. 64/2022, approved by Law No. 2102-IX). Several VAT rules below apply only while martial law lasts, and some for six months after it ends. Each one is marked "martial law".
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Ukraine (Ukraina) |
-| Jurisdiction Code | UA |
-| Primary Legislation | Podatkovyi Kodeks Ukrainy (Tax Code of Ukraine, TCU), Law No. 2755-VI of 2 December 2010 |
-| Supporting Legislation | CMU Resolutions on VAT administration; Order of Ministry of Finance on PDV return form; Law on Electronic Administration of VAT |
-| Tax Authority | Derzhavna Podatkova Sluzhba (DPS -- State Tax Service of Ukraine) |
-| Filing Portal | https://cabinet.tax.gov.ua (Electronic Cabinet of Taxpayer) |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate classification, return field assignment, reverse charge, tax invoice registration, SEA PDV mechanics. Tier 2: wartime temporary provisions, agricultural special regime (legacy), partial exemption. Tier 3: group structures, free economic zones, occupied territory transactions. |
+## Who this applies to
 
-## Confidence Tier Definitions
+**Mandatory registration.** A person must register as a VAT payer when the total of its taxable supplies of goods and services in the last 12 calendar months, including supplies made through a local or global computer network, exceeds UAH 1,000,000 excluding VAT. A payer of the single tax in groups 1 to 3 is excluded from this rule (TCU art. 181.1). The registration application is due no later than the 10th of the month after the month in which the threshold is first reached (art. 183.2). The DPS enters the registration within three working days if there is no ground to refuse (art. 183.9).
 
-Every rule in this skill is tagged with a confidence tier:
+**Voluntary registration.** A person below the threshold may register by application (art. 182.1). The application is filed no later than 10 calendar days before the start of the tax period from which the person becomes a payer (art. 183.3).
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified tax adviser must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified tax adviser and document the gap.
+**Other VAT payers** (art. 180.1) include an importer of goods in taxable volumes, the person keeping the books of a joint-activity agreement, a property manager keeping separate VAT records, and a non-resident supplying e-services to individuals (art. 14.1.139 (d)).
 
-## Wartime Provisions Notice [T2]
+**Importers who are not registered** pay VAT at customs clearance without registering (art. 181.2).
 
-**Wartime Provisions Notice**
+**Reverse-charge recipients.** When a non-resident not registered for VAT supplies services whose place of supply is in Ukraine, the recipient is the person liable to charge and pay the VAT, except for e-services under art. 208-1 (art. 180.2). This applies even to a resident business that is not VAT-registered (art. 208.1, 208.4).
 
-| Provision | Impact | Status |
-| --- | --- | --- |
-| Extended filing deadlines | Taxpayers in combat zones may have extended deadlines | Active during martial law |
-| Tax invoice registration grace period | 6 months after martial law ends to register invoices that could not be registered during hostilities | Active |
-| Destroyed/lost goods | Input PDV on goods destroyed due to hostilities is not reversed, but cannot be refunded in cash -- offset only | Active |
-| Free supply to Armed Forces | Supply of goods/services free of charge to the Armed Forces of Ukraine is not treated as a taxable supply | Active |
-| Import exemptions | Certain military goods and humanitarian aid imports are PDV-exempt | Active |
-| Simplified registration | Simplified voluntary registration available for certain entities | Active |
+**Counterparty location.** Ukraine is not an EU member state. There are no intra-community supply or acquisition rules. Goods leaving Ukraine are exports and goods entering are imports (art. 185.1). Transactions with temporarily occupied territories and with the aggressor state carry their own rules and are out of scope here; refer them to an adviser.
 
-**IMPORTANT:** Since 24 February 2022, martial law (voiennyi stan) has been in effect in Ukraine. Temporary legislative provisions affect PDV administration:
+**Not on the return at all:** wages, pensions, grants and subsidies paid in cash (art. 196.1.6); issue and sale of securities and corporate rights (art. 196.1.1); insurance (art. 196.1.3); currency transactions, lotteries and gambling stakes (art. 196.1.4); reorganisations of legal entities (art. 196.1.7).
 
-**Flag for reviewer:** All filings during martial law should be reviewed for applicability of temporary provisions. Provisions may be extended, modified, or terminated by Verkhovna Rada (parliament).
+## Rates, bands and thresholds
 
-**Legislation:** Tax Code of Ukraine, Transitional Provisions; Laws No. 2118-IX, 2120-IX, and subsequent amendments
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| Standard rate (TCU art. 193.1 (a), 194.1.1) | 20% | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Zero rate: exports, international transport, listed supplies (art. 193.1 (b), 195) | 0% | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Reduced rate: medicines and medical devices, cultural performances, museum and zoo visits, hotel accommodation (KVED 55.10), tickets to national and international sports events (art. 193.1 (v)) | 7% | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Reduced rate: agricultural products under UKT ZED codes 1001, 1003, 1005, 1201, 1205, 1206 00 (art. 193.1 (h)) | 14% | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Mandatory registration threshold, taxable supplies in last 12 months, excl. VAT (art. 181.1) | UAH 1,000,000 | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Registration application, mandatory (art. 183.2) | by the 10th of the next month | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Voluntary registration application (art. 183.3) | 10 calendar days before the period starts | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Tax period (art. 202.1) | calendar month | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Return due (art. 49.18.1, 203.1) | 20 calendar days after month end | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Payment due (art. 57.1, 203.2) | 10 calendar days after the return deadline | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Tax invoice registration, permanent rule (art. 201.10): invoices dated 1st to 15th / 16th to month end | last day of same month / 15th of next month | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Tax invoice registration, martial law (sec. XX, subsec. 2, point 89): invoices dated 1st to 15th / 16th to month end | 5th of next month / 18th of next month | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Window to claim input VAT from a registered invoice (art. 198.6) | 365 calendar days from invoice date | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Non-resident e-services return, quarterly (art. 208-1.4, 208-1.8) | within 40 calendar days after the quarter | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Late registration of a tax invoice, permanent scale (art. 120-1.1) | 10% / 20% / 30% / 40% / 50% of the VAT | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Late registration of a tax invoice, martial law scale (point 90) | 2% / 5% / 10% / 15% / 25% of the VAT | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Late or missing return (art. 120.1) | UAH 340; UAH 1,020 if repeated within a year | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Late payment of an agreed liability (art. 124.1) | 5% up to 30 days; 10% over 30 days | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Penalty interest (penia) (art. 129.4) | 120% of the NBU discount rate a year, per day | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Self-correction of an understatement (art. 50.1); waived with penia from 1 August 2023 until martial law ends (sec. XX, subsec. 10, point 69.38) | 3% of the shortfall (5% route in a later return); 0% during martial law | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Desk audit of a refund return (art. 76.3, 200.10) | 30 calendar days after the filing deadline | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Treasury pays an agreed refund (art. 200.13) | within 5 operating days | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Interest on late refunds (art. 200.23) | 120% of the NBU discount rate | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Record retention, primary documents of CIT payers and simplified-system legal entities (art. 44.3.2) | 1,825 days | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Record retention, other documents (art. 44.3.3) | 1,095 days | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
 
-## Step 0: Client Onboarding Questions
+**What sits at 7% (art. 193.1 (v)).** Supply and import of medicines registered in the State Register of Medicines and medical devices registered or conforming to the technical regulations; medicines and devices for authorised clinical trials; import of unregistered medicines under access programmes; theatre, opera, ballet, concert, circus and similar performances and film premieres; showing museum collections, exhibitions and guided tours in museums, zoos and reserves; distribution and showing of films adapted for people with sight or hearing impairments; temporary accommodation in hotels and similar establishments (KVED class 55.10); tickets to sports events of national and international level. Periodicals are not on the 7% list: domestic printed periodicals are exempt (art. 197.1.25).
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+**What sits at 14% (art. 193.1 (h)).** Supply in Ukraine and import of agricultural products under UKT ZED codes 1001 (wheat), 1003 (barley), 1005 (maize), 1201 (soya beans), 1205 (rape seed) and 1206 00 (sunflower seed). The product names are the headings of the Harmonised System that UKT ZED follows; the law lists only the codes. Everything else, including live cattle, pigs, raw milk, sugar beet, flax and processed food, is at 20%. Point 54-1 of subsection 2 still lists the wider 2021 codes (0102, 0103, 0401 raw milk, 1002, 1004, 1204 00, 1207, 1212 91) but only to fix which rate applies to prepayments, returns and price changes that straddle the date the 14% rate started. It does not put those goods at 14% today.
 
-1. **Entity name and EDRPOU code (or RNOCPP for individuals)** [T1] -- EDRPOU is 8-digit code for legal entities; RNOCPP is 10-digit individual tax number
-2. **PDV registration number (IPN -- Individualnyi Podatkovyi Nomer)** [T1] -- 12-digit number assigned upon PDV registration
-3. **Registration type** [T1] -- Mandatory PDV payer, voluntary PDV payer, or non-registered (below threshold)
-4. **Filing period** [T1] -- Monthly (standard for all PDV payers)
-5. **Industry/sector** [T2] -- Impacts specific rates (7%, 14%) and exemption rules
-6. **Does the business make exempt supplies?** [T2] -- If yes, proportional allocation required (Article 199 TCU)
-7. **SEA PDV account balance** [T1] -- Electronic administration system account balance (affects ability to register tax invoices)
-8. **Is the client in a territory affected by hostilities?** [T2] -- Wartime provisions may apply
-9. **PDV credit carried forward from prior period** [T1] -- Vidiemnne znachennia PDV
-10. **Does the client export goods or services?** [T1] -- Zero-rated; refund eligibility
+**What sits at 0% (art. 195).** Export of goods under the export, re-export (processed goods), duty-free and free-zone customs regimes, confirmed by the customs declaration (art. 195.1.1); fuel and supplies for ships and aircraft on international voyages and for spacecraft, and sales by duty-free shops (art. 195.1.2); international carriage of passengers, baggage and cargo under a single international transport document (art. 195.1.3 (a)); work on movable goods imported for that work and re-exported (art. 195.1.3 (b)); servicing aircraft on international flights (art. 195.1.3 (v)). A zero-rated supplier keeps its input VAT.
 
-**If any of items 1-4 are unknown, STOP. Do not classify any transactions until confirmed.**
+**Exempt supplies (art. 197).** Exemption means no output VAT and no input VAT on the related costs (art. 198.5 (b)). The main groups:
 
-## Step 1: Transaction Classification Rules
+| Exempt supply | TCU article |
+|---|---|
+| Baby food and infant goods on the Cabinet list | 197.1.1 |
+| Higher, secondary, vocational and pre-school education by licensed institutions | 197.1.2 |
+| Rehabilitation aids and special-purpose goods for people with disabilities | 197.1.3 |
+| Delivery of pensions, insurance payments and cash aid to the public | 197.1.4 |
+| Medical services by licensed healthcare institutions | 197.1.5 |
+| Childcare, rehabilitation stays, social services, school and hospital meals | 197.1.7 |
+| Urban public transport (not taxis) at regulated fares | 197.1.8 |
+| Religious services and religious items supplied by religious organisations | 197.1.9 |
+| Funeral services and goods of state and municipal services | 197.1.10 |
+| Supply of housing, except the first supply | 197.1.14 |
+| Charitable aid, including free supplies to registered charities | 197.1.15 |
+| Land plots and land shares, except land under buildings | 197.1.21 |
+| Domestic printed periodicals and their distribution | 197.1.25 |
+| Supplies to the National Bank of Ukraine (listed items) | 197.19 |
+| Import of renewable-energy and energy-saving equipment and materials | 197.16 |
 
-### 1a. Determine Transaction Type [T1]
+A tax invoice for an exempt supply carries the note "Bez PDV" with the article that grants the exemption (art. 201.3).
 
-- **Determine transaction type** — Sale (output PDV -- podatkove zoboviazannia) or Purchase (input PDV -- podatkovyi kredyt). Salaries (zarobitna plata), social contributions (YeSV), tax payments, loan repayments, dividends = OUT OF SCOPE (never on PDV return)  _(Tax Code of Ukraine, Article 185 (taxable transactions))_
+## The taxable base
 
-### 1b. Determine Counterparty Location [T1]
+**What is taxed (art. 185.1).** Supplies of goods and services whose place of supply is in Ukraine, including free transfers; imports and exports of goods; and international transport services.
 
-- **Determine counterparty location** — Domestic (Ukraine): Supplier/customer is in Ukraine (government-controlled territory). EU: EU member states (not relevant for intra-community rules as Ukraine is not an EU member, but relevant for place of supply). Foreign: All countries outside Ukraine. Temporarily occupied territories (TOT): Crimea and parts of Donetsk, Luhansk, Zaporizhzhia, Kherson oblasts [T3] -- special rules; escalate. Note: Ukraine is NOT an EU member state. No intra-community supply rules apply. Ukraine is an EU candidate country.  _(TCU Article 185-186 (place of supply))_
+**Tax point (art. 187.1).** The earlier of (a) the date money from the customer reaches the supplier's bank or payment account, and (b) the date goods are shipped (for exports, the date of the customs declaration) or, for services, the date of the document confirming the service. A prepayment therefore creates the liability when it arrives, and a tax invoice is issued on every full or partial supply and on every prepayment received (art. 201.7). For imports the tax point is the date the customs declaration is lodged (art. 187.8).
 
-### 1c. Determine PDV Rate [T1]
+**Base (art. 188.1, 190.1).** The contract value including state taxes and duties, excluding VAT itself. For imports, the contract value but not less than the customs value, plus duty and excise. For services from non-residents, the base under art. 190.2.
 
-**PDV Rate table**
+**Place of supply of goods (art. 186.1).** Where the goods are when supplied; if transported, where transport starts; if installed by or for the seller, where they are installed.
 
-| Rate | Category | Legal Basis |
-| --- | --- | --- |
-| 20% | Standard rate (zagalna stavka) | TCU Article 193.1 |
-| 14% | Reduced rate (for certain agricultural products) | TCU Article 193.1 |
-| 7% | Reduced rate (medicines, medical devices) | TCU Article 193.1 |
-| 0% | Zero-rated (exports, international transport) | TCU Article 195 |
+**Place of supply of services (art. 186).**
 
-- **Standard rate (zagalna stavka)** — 20%  _(TCU Article 193.1)_
-- **Reduced rate (for certain agricultural products)** — 14%  _(TCU Article 193.1)_
-- **Reduced rate (medicines, medical devices)** — 7%  _(TCU Article 193.1)_
-- **Zero-rated (exports, international transport)** — 0%  _(TCU Article 195)_
+| Service | Place of supply | TCU article |
+|---|---|---|
+| General rule | where the supplier is registered | 186.4 |
+| Services on movable property: loading and warehousing, appraisal, transport-related services, repairs and processing | where actually performed | 186.2.1 |
+| Services connected with real estate, including estate agents and construction | where the property is | 186.2.2 |
+| Culture, art, education, science, sport, entertainment, fairs and conferences | where actually performed | 186.2.3 |
+| IP rights and licences, advertising, consulting, engineering, legal, accounting, audit, software development and testing, data processing, IT advice, staff supply, leasing of movables (not vehicles), telecoms, broadcasting, freight forwarding, film and graphics production | where the recipient is registered as a business, or else lives | 186.3 |
+| E-services | where the recipient is located (registration for a business; SIM country, fixed line or other evidence for an individual) | 186.3-1 |
 
-### 1d. Standard Rate (20%) Applies To [T1]
+**Input VAT (art. 198).** VAT charged on goods, services, fixed assets and imports goes into the tax credit of the period (art. 198.1, 198.3). The credit is allowed even if the asset is not yet used in taxable supplies in that period (art. 198.3). The credit must be supported by a tax invoice registered in YERPN or by the customs declaration; without them there is no credit (art. 198.6). Registration by the seller is the buyer's only evidence; the buyer needs no other confirmation (art. 201.10). If the buyer does not claim a registered invoice in its period, it may claim it within 365 calendar days of the invoice date (art. 198.6). An invoice the seller registered late is claimed in the period of registration, but no later than 365 days after the invoice date (art. 198.6). The 365-day count stops while the invoice is blocked under art. 201.16 (art. 198.6).
 
-- **Standard rate application scope** — All goods and services not specifically listed for reduced rates, zero rate, or exemption; Professional services (legal, accounting, consulting, IT); Telecommunications and electronic services; Construction services and materials; Motor vehicles (new and used); Electronics, furniture, clothing; Restaurant and catering services; Real property transactions (excluding residential -- first supply)  _(TCU Article 193.1)_
+**When input VAT is clawed back (art. 198.5).** If goods, services or fixed assets bought with VAT are used in supplies outside the scope of VAT or supplied outside Ukraine, in exempt supplies, for non-business use or transfers within the balance sheet, or in activity that is not the payer's business, the payer must charge output VAT on them. It does so on a consolidated tax invoice dated no later than the last day of the period and registered in YERPN.
 
-### 1e. Reduced Rate -- 7% [T1]
+**No special block for cars or entertainment.** Article 198 sets the business-use test above and contains no separate restriction for passenger cars, fuel or entertainment. Input VAT on a car or a client event follows the same test: if it is used in taxable business supplies the credit stands; if it is used privately or outside the business, art. 198.5 claws it back.
 
-**Reduced Rate -- 7% table**
+**Partly taxable businesses (art. 199).** If purchases are used partly in taxable and partly in non-taxable supplies, the payer takes the full credit and then charges output VAT on a consolidated invoice for the non-taxable share (art. 199.1). The taxable share is taxable supplies of the previous calendar year divided by all supplies (taxable and non-taxable) of that year, both excluding VAT, and it applies for the whole current year (art. 199.2). A new payer, or one that starts non-taxable supplies this year, uses actual figures (art. 199.3). At year end the share is recalculated on the year's actual supplies (art. 199.4) and the adjustment goes in the return for the last period of the year (art. 199.5). There is no de minimis threshold in art. 199.
 
-| Category | Examples | Legal Basis |
-| --- | --- | --- |
-| Medicines | Registered medicinal products on approved list | TCU Art 193.1(1) |
-| Medical devices | Registered medical devices and equipment | TCU Art 193.1(1) |
-| Certain cultural services | Admission to theaters, museums, exhibitions | TCU Art 193.1 |
-| Periodicals (newspapers, magazines) | Print and digital periodicals | TCU Art 193.1 |
-
-- **Medicines** — Registered medicinal products on approved list  _(TCU Art 193.1(1))_
-- **Medical devices** — Registered medical devices and equipment  _(TCU Art 193.1(1))_
-- **Certain cultural services** — Admission to theaters, museums, exhibitions  _(TCU Art 193.1)_
-- **Periodicals (newspapers, magazines)** — Print and digital periodicals  _(TCU Art 193.1)_
-
-### 1f. Reduced Rate -- 14% [T1]
-
-**Reduced Rate -- 14% table**
-
-| Category | Examples | Legal Basis |
-| --- | --- | --- |
-| Certain agricultural products | Soybeans, rapeseed, sunflower seeds, corn, sugar beet, flax, hemp | TCU Art 193.1 |
-| Milk (raw) | Supplied by agricultural producers | TCU Art 193.1 |
-| Livestock (live weight) | Cattle, pigs, poultry -- supplied by agricultural producers | TCU Art 193.1 |
+**Adjustments (art. 192.1).** A later price change, a return of goods or a refunded prepayment adjusts both the seller's liability and the buyer's credit through an adjustment calculation (rozrakhunok koryhuvannia), drawn up like a tax invoice and registered in YERPN. A downward adjustment to an invoice issued to a VAT-registered buyer is registered by the buyer, within 15 calendar days of receiving it (art. 201.10), or 18 days under martial law (point 89).
 
-- **Certain agricultural products** — Soybeans, rapeseed, sunflower seeds, corn, sugar beet, flax, hemp  _(TCU Art 193.1)_
-- **Milk (raw)** — Supplied by agricultural producers  _(TCU Art 193.1)_
-- **Livestock (live weight)** — Cattle, pigs, poultry -- supplied by agricultural producers  _(TCU Art 193.1)_
+**Payable or refundable (art. 200.1 to 200.4).** VAT payable is output VAT less input VAT for the period. If positive, it is paid by the deadline (art. 200.2). If negative, the payer may (a) offset it against earlier VAT debt, (b) claim a cash refund of VAT actually paid to suppliers or the budget, or (c) carry it to the next period's credit (art. 200.4). Options (a) and (b) are capped at the SEA registration limit at the time the return is received (art. 200.4). A payer under sanctions under the Law "On Sanctions" gets no refund while the sanctions last (art. 200.4-1).
 
-**Note:** The 14% rate was introduced in 2021 (replacing the abolished special agricultural regime) and applies to a specific list of agricultural commodities.
-
-### 1g. Zero-Rated Supplies [T1]
-
-- **Zero-rated supplies list** — Export of goods (Article 195.1.1) -- goods must leave Ukraine customs territory, confirmed by customs declaration; International transport of passengers and cargo (Article 195.1.3); Supplies to duty-free shops (Article 195.1.4); Supplies of gold to the National Bank of Ukraine (Article 195.1.5); Toll processing services on goods subsequently exported (Article 195.1.6). Note: Zero-rated suppliers can claim full input PDV refund  _(TCU Article 195)_
-
-### 1h. Exempt Supplies (Without Input PDV Recovery) [T1]
+**Refund process (art. 200.7 to 200.13).** The payer files the return with a refund application and a refund calculation (art. 200.7, 200.8). The DPS runs a desk audit within 30 calendar days after the filing deadline, or after actual filing if late (art. 76.3, 200.10), and may run a documentary audit within 40 calendar days after the filing deadline (art. 200.11). The refund becomes "agreed" in the Register of Refund Applications on the day after the audit term ends with no findings, or automatically where the DPS records nothing by the deadline (art. 200.12). Any tax debt is netted off first (art. 200.12). The Treasury pays an agreed refund within five operating days (art. 200.13). Refunds not paid in time become budget debt that carries interest at 120% of the NBU discount rate (art. 200.23).
 
-**Exempt Supplies table**  _(TCU Article 197)_
+**Electronic administration system, SEA PDV (art. 200-1).** Each payer has an SEA account opened automatically (art. 200-1.2). A payer may register tax invoices and adjustments only up to its registration limit (art. 200-1.3, 201.10):
 
-| Category | Legal Basis |
-| --- | --- |
-| Financial and banking services | Art 197.1.1 |
-| Insurance services | Art 197.1.2 |
-| Education services (licensed institutions) | Art 197.1.7 |
-| Healthcare services (licensed institutions) | Art 197.1.5 |
-| Postal services (Ukrposhta -- universal service) | Art 197.1.3 |
-| Residential rent | Art 197.1.14 |
-| Land transactions (except building land) | Art 197.1.21 |
-| Religious organizations (sales of religious items) | Art 197.1.8 |
-| Precious metals to NBU | Art 197.1.9 |
-| Social housing (first supply) | Art 197.1.14 |
-| Funeral services | Art 197.1.10 |
+Limit = invoices received and registered (including reverse-charge invoices under art. 208.2) + VAT paid on imports + top-ups from the payer's bank account + "overdraft" - invoices issued and registered - refunds claimed - the excess of declared liabilities over registered invoices.
 
-- **Financial and banking services** — Financial and banking services  _(Art 197.1.1)_
-- **Insurance services** — Insurance services  _(Art 197.1.2)_
-- **Education services (licensed institutions)** — Education services (licensed institutions)  _(Art 197.1.7)_
-- **Healthcare services (licensed institutions)** — Healthcare services (licensed institutions)  _(Art 197.1.5)_
-- **Postal services (Ukrposhta -- universal service)** — Postal services (Ukrposhta -- universal service)  _(Art 197.1.3)_
-- **Residential rent** — Residential rent  _(Art 197.1.14)_
-- **Land transactions (except building land)** — Land transactions (except building land)  _(Art 197.1.21)_
-- **Religious organizations (sales of religious items)** — Religious organizations (sales of religious items)  _(Art 197.1.8)_
-- **Precious metals to NBU** — Precious metals to NBU  _(Art 197.1.9)_
-- **Social housing (first supply)** — Social housing (first supply)  _(Art 197.1.14)_
-- **Funeral services** — Funeral services  _(Art 197.1.10)_
+The "overdraft" is the monthly average of VAT the payer declared as payable and paid (or had deferred) over the last 12 months, recalculated each quarter (art. 200-1.3). If the limit is too low to register an invoice, the payer must transfer the shortfall from its bank account to its SEA account (art. 201.10). The figures run from 1 July 2015 (art. 200-1.3).
 
-**Note:** Exempt suppliers CANNOT recover input PDV on related purchases (Article 198.4)
+**Tax invoice (podatkova nakladna) (art. 201).** An electronic document with a qualified electronic signature, drawn up on the tax point and registered in YERPN within the deadline (art. 201.1). Mandatory fields: sequential number; date; names of seller and buyer; tax numbers of both, and the branch number if a branch supplies; description and quantity; price excluding VAT; rate and VAT amount; total including VAT; UKT ZED code for goods or the State Classifier code for services (at least the first four digits, in full for excisable and imported goods); individual tax number; and, for exports, the customs declaration and contract date and number (art. 201.1). Invoices that are not given to the buyer, and invoices for exempt supplies, must still be registered (art. 201.10). A receipt confirming acceptance is sent within the operating day; if none is sent, the invoice counts as registered (art. 201.10). Errors in mandatory fields (other than the UKT ZED code) that do not prevent identifying the transaction are not grounds to reject the invoice (art. 201.10). If the seller fails to register or makes errors, the buyer may attach a complaint against the seller to its return, and the DPS must audit the seller within 90 calendar days (art. 201.10). Detailed invoice and register mechanics are in `ua-einvoice`.
 
-**Legislation:** TCU Article 197
+**Invoice blocking (art. 201.16).** Registration of a tax invoice or adjustment can be suspended in the order and on the grounds set by the Cabinet of Ministers. The suspension receipt goes to both seller and buyer on the same day (art. 201.10). While registration is suspended, the late-registration penalty does not run (art. 120-1.1) and the buyer's 365-day window is interrupted (art. 198.6). Martial law: a separate list of payers with a high level of voluntary compliance is kept; one condition for entry is that no risk decision under art. 201.16 has been taken about the payer (sec. XX, subsec. 10, point 69.41.1 (d)).
 
-## Step 2: PDV Return Structure
+**Agriculture.** The special VAT regime for agricultural producers (art. 209) lost force on 1 January 2017. Agricultural producers now use the general rules for output and input VAT, with the 14% rate only for the six codes listed above.
 
-The PDV return (Podatkova deklaratsiia z PDV) is filed electronically via the taxpayer's electronic cabinet. Monthly filing is mandatory for all PDV payers.
+**Martial-law rules on the base.**
 
-### Section I: Tax Obligations (Output PDV -- Podatkovi Zoboviazannia) [T1]
+- Goods bought in taxable supplies and destroyed or lost through force majeure during martial law, and goods handed to state or municipal ownership or provided for the defence of Ukraine, are not treated as used outside taxable supplies. Art. 198.5 does not apply to them, so no input VAT is clawed back (sec. XX, subsec. 2, point 32-1).
+- A free transfer of goods or services to the Armed Forces, National Guard, Security Service, Foreign Intelligence Service, State Border Guard, Ministry of Internal Affairs, State Emergency Service, State Guard, State Special Communications Service, territorial defence volunteer units, other military formations, the civil-protection authority, or state and municipal healthcare institutions, for defence needs, is not a supply of goods or services. This does not apply where the supply would be zero-rated (point 32-1).
+- Imports of goods belonging to the state through the Ministry of Defence, the Armed Forces and other military formations are exempt while martial law lasts (point 94).
+- Supply in Ukraine of ground unmanned systems in UKT ZED groups 84, 85, 87, 90 and 93 and of listed weapons and ammunition is exempt while martial law lasts (point 99-1).
+- Imports of goods listed in point 9-36 of the Customs Code transitional provisions are exempt while martial law lasts, but no later than 1 January 2029 (point 87-1). Imports of goods on a Cabinet list financed through the Energy Community Secretariat are exempt on the same terms (point 88-1).
+- Imports of goods listed in point 9-24 of the Customs Code transitional provisions are exempt while martial law lasts, but no later than 1 January 2027 (point 92).
 
-**Section I Table**
+**Changes for 2026.**
 
-| Line | Description | Notes |
-| --- | --- | --- |
-| 1 | Supply of goods/services at 20% -- base | Net value |
-| 1.1 | PDV at 20% | = Line 1 x 20% |
-| 2 | Supply of goods/services at 7% -- base | Net value |
-| 2.1 | PDV at 7% | = Line 2 x 7% |
-| 3 | Supply of goods/services at 14% -- base | Net value |
-| 3.1 | PDV at 14% | = Line 3 x 14% |
-| 4 | Export of goods (0%) | Zero-rated base |
-| 5 | Other zero-rated supplies | Other Art 195 supplies |
-| 6 | Exempt supplies (Art 197) | Exempt base (informational) |
-| 7 | Supplies not subject to PDV | Out-of-scope (informational) |
-| 8 | Self-assessed PDV on imported services | Reverse charge output |
-| 8.1 | PDV on imported services | = Line 8 x applicable rate |
-| 9 | Total output PDV | = 1.1 + 2.1 + 3.1 + 8.1 |
+- The exemption for supply and import of vehicles with only electric motors (UKT ZED 8701 24 tractor units, 8703 80 10 10, 8703 80 90 10, 8704 60 00 00) ran "until 1 January 2026" (former point 64). Law No. 4698-IX of 3 December 2025 deleted point 64. From 1 January 2026 these vehicles are taxed at 20%.
+- The exemption for new vehicles running only on compressed or liquefied methane or biogas also ran until 1 January 2026 (point 64-1). From 2026 they are at 20%.
+- The import exemption under point 87-1 was amended by Law No. 4698-IX and now runs to the end of martial law but no later than 1 January 2029.
+- No change to the rates or to the UAH 1,000,000 threshold has been enacted for 2026 or 2027 in the text read.
 
-### Section II: Tax Credit (Input PDV -- Podatkovyi Kredyt) [T1]
+## Deadlines and filing
 
-**Section II Table**
+**Return.** The VAT return is filed for each calendar month within 20 calendar days after the month ends (art. 49.18.1, 203.1). A payer that registers mid-month has a first period running from registration to the end of the first full calendar month (art. 202.1 (a)). The form is set by the Ministry of Finance (art. 201.15 with art. 46). It is filed electronically through the electronic cabinet.
 
-| Line | Description | Notes |
-| --- | --- | --- |
-| 10 | Domestic purchases with PDV -- base | From registered tax invoices |
-| 10.1 | Input PDV on domestic purchases | From tax invoices |
-| 11 | Import of goods -- base | From customs declarations |
-| 11.1 | Import PDV | From customs declarations |
-| 12 | Input PDV on imported services (reverse charge offset) | = Line 8.1 |
-| 13 | Adjustment increase (from calculation of Art 192, 199) | Corrections increasing credit |
-| 14 | Adjustment decrease (from calculation of Art 192, 199) | Corrections decreasing credit |
-| 15 | Credit from prior periods (negative value carried forward) | Vidiemnne znachennia |
-| 16 | Total input PDV | = 10.1 + 11.1 + 12 + 13 - 14 + 15 |
+**Payment.** The liability declared is paid within 10 calendar days after the last day for filing the return (art. 57.1, 203.2). The return is due on the 20th of the month after the reporting month, so payment falls on the 30th of that month; for January returns, due 20 February, it falls on 2 March (1 March in a leap year).
 
-### Section III: Calculation of PDV Payable or Credit [T1]
+**Tax invoices.** Registration deadlines in YERPN:
 
-- **PDV Payable or Credit calculation** — IF Line 9 > Line 16 THEN Line 18 (PDV payable / suma PDV do splaty) = Line 9 - Line 16 Line 19 = 0 Line 20 = 0 ELSE Line 18 = 0 Line 19 (Negative value / vidiemnne znachennia) = Line 16 - Line 9 Line 20.1 (Amount declared for budget refund) = portion of Line 19 requested as refund [T2] Line 20.2 (Carry-forward to next period) = Line 19 - Line 20.1 END  _(TCU Articles 200-200a; Ministry of Finance Order on PDV return form)_
+| Invoice or adjustment | Permanent rule (art. 201.10) | Martial law and six months after (point 89) |
+|---|---|---|
+| Dated 1st to 15th of the month | by the last day of the same month | by the 5th of the next month |
+| Dated 16th to the end of the month | by the 15th of the next month | by the 18th of the next month |
+| Consolidated invoices under art. 198.5 and 199.1 | within 20 calendar days after the month end | not changed by point 89 |
+| Downward adjustment registered by the buyer | within 15 days of receipt | within 18 days of receipt |
 
-## Step 3: Electronic Administration System (SEA PDV)
+**Corrections.** A payer that finds an error in an earlier return files a correcting calculation (utochniuiuchyi rozrakhunok), or may show the corrected figures in any later return (art. 50.1). An understatement is paid with a 3% fine before the correction is filed, or with a 5% fine if corrected in a later return (art. 50.1). Martial law: from 1 August 2023 until martial law ends, a payer that self-corrects an understatement under art. 50 pays no art. 50.1 fine and no penia, whatever period the error is in (sec. XX, subsec. 10, point 69.38; point 69.1 gives the same relief for periods that fall in martial law). VAT payers may not file corrections reducing liabilities or claiming refunds for periods before February 2022 until martial law ends (sec. XX, subsec. 10, point 69.1).
 
-Ukraine operates a unique Electronic Administration System for VAT (Systema Elektronnogo Administruvannia PDV -- SEA PDV). Each PDV payer has a special account (rakhunok v SEA PDV) at the State Treasury.
+**Non-resident e-services.** A non-resident registered under art. 208-1 files a simplified quarterly return through the special portal within 40 calendar days after the quarter, even for a quarter with no supplies (art. 208-1.4, 208-1.8). Its tax point is the last day of the quarter in which it was paid (art. 208-1.5). It claims no input VAT and issues no tax invoices (art. 208-1.7).
 
-### 3a. Overview [T1]
+**Records.** Primary documents, registers and other tax documents of companies paying corporate income tax, and of legal entities on the simplified system, are kept for at least 1,825 days; other documents for at least 1,095 days; documents for transfer pricing and controlled foreign companies (arts. 39, 39-2) for 2,555 days (art. 44.3).
 
-**SEA PDV Overview table**  _(TCU Article 200-1)_
+## Penalties and interest
 
-| Feature | Details |
-| --- | --- |
-| Purpose | Control registration of tax invoices; prevent fraudulent input PDV claims |
-| Account | Each PDV payer has a virtual account in the Treasury |
-| Registration limit | Tax invoices can only be registered if the SEA PDV account has sufficient balance |
-| Balance formula | See 3b below |
+**Late or missing return (art. 120.1).** UAH 340 for each return not filed or filed late; UAH 1,020 for each one if the payer was already fined for the same breach within the year. There is no warning-only first offence in the text.
 
-- **Purpose** — Control registration of tax invoices; prevent fraudulent input PDV claims  _(TCU Article 200-1)_
-- **Account** — Each PDV payer has a virtual account in the Treasury  _(TCU Article 200-1)_
-- **Registration limit** — Tax invoices can only be registered if the SEA PDV account has sufficient balance  _(TCU Article 200-1)_
-- **Balance formula** — See 3b below  _(TCU Article 200-1)_
+**Late tax invoice registration (art. 120-1.1).** A percentage of the VAT on the invoice, by days late. The permanent scale and the martial-law scale (point 90, which applies during martial law and for six months after the month in which it ends, to the point 89 deadlines):
 
-### 3b. SEA PDV Account Balance Formula [T1]
+| Days late | Permanent rule (art. 120-1.1) | Martial law (point 90) |
+|---|---|---|
+| up to 15 | 10% | 2% |
+| 16 to 30 | 20% | 5% |
+| 31 to 60 | 30% | 10% |
+| 61 to 365 | 40% | 15% |
+| 366 or more | 50% | 25% |
 
-- **Registration Limit formula** — Registration Limit (reiestratsiyni limit) = + PDV paid to the SEA account (bank transfers to Treasury) + Input PDV from registered tax invoices received + Import PDV paid at customs + PDV overpayment from prior periods + Adjustment notes received - Output PDV from registered tax invoices issued - PDV declared for budget refund - Adjustment notes issued  _(TCU Article 200-1)_
+No late-registration fine applies to invoices for exempt or zero-rated supplies, consolidated invoices under art. 198.5 (a) to (h) and art. 199, or while registration is suspended under art. 201.16 (art. 120-1.1).
 
-**Key principle:** You CANNOT register a tax invoice (podatkova nakladna) if your SEA PDV account balance is insufficient. If the registration limit is too low, the taxpayer must either:
+**No registration at all (art. 120-1.2).** If the invoice is still not registered 10 calendar days after the payer receives a tax notice-decision, the fine is 50% of the VAT on it. Registering within those 10 days avoids this fine and the art. 120-1.1 fine.
 
-1. Wait for incoming tax invoices from suppliers to increase the balance, or
-2. Transfer funds (top-up) to the SEA PDV account at the Treasury
+**Errors in invoice fields (art. 120-1.3).** UAH 170 when the DPS finds errors on a buyer's complaint, with an order to fix them. If not fixed within 10 days of the order, the fine rises from 10% (up to 15 days) through 20%, 30%, 40%, 50%, 60% and 70% to 100% of the VAT after 181 days.
 
-### 3c. Consequences of Non-Registration [T1]
+**Late payment (art. 124).** A fine on the agreed liability paid late: 5% of the debt repaid if up to 30 days late, 10% if more than 30 days late (art. 124.1). Intentional non-payment: 25% (art. 124.2); repeated within 1,095 days or more than 90 days late: 50% (art. 124.3).
 
-**Consequences of Non-Registration table**  _(TCU Article 201.10)_
+**Penalty interest, penia (art. 129).** 120% a year of the NBU discount rate in force on each day, charged for every calendar day late including the day of payment (art. 129.4). On a liability the payer declared itself, including a self-correction under art. 50, penia starts only after 90 calendar days past the payment deadline (art. 129.1.3), and while martial law lasts a self-correction carries no penia at all (point 69.38). On an underpayment found by audit it runs from the first working day after the original deadline (art. 129.1.2).
 
-| Scenario | Consequence |
-| --- | --- |
-| Tax invoice not registered within 15 days | Buyer cannot claim input PDV |
-| Tax invoice registered late (after 15 days) | Buyer can claim input PDV only after registration, but seller faces a fine |
-| Tax invoice not registered at all | Buyer has NO input PDV right; seller faces fines |
-| Wartime grace period | Tax invoices that could not be registered during hostilities may be registered within 6 months after martial law ends [T2] |
+**Martial-law relief.**
 
-### 3d. Tax Invoice (Podatkova Nakladna) Requirements [T1]
+- A payer that cannot meet a deadline (payment, return, invoice registration) during martial law is released from liability if it meets the obligation within six months after martial law ends (sec. XX, subsec. 10, point 69.1).
+- A payer that missed deadlines because of its direct participation in hostilities is released if it complies within one month after those consequences end (point 69.3).
+- VAT payers must register within those terms the invoices whose deadlines fell in the relief periods and bring their declared credit into line with YERPN data (point 69.1-1).
 
-**Tax Invoice Requirements table**
+## Cross-border points
 
-| Requirement | Details |
-| --- | --- |
-| Format | Electronic only (since 1 January 2017) |
-| Registration | Must be registered in the Unified Register of Tax Invoices (YERPN) within 15 calendar days |
-| Mandatory fields | Supplier and buyer IPN, date, sequential number, description, quantity, unit price, PDV amount, rate |
-| Self-invoice (samoinvois) | Required for reverse charge on imported services (supplier section left blank or shows non-resident) |
-| Correction (rozrakhunok koryguvannia) | Adjustment document for changing registered tax invoices |
-| Blocking | Tax invoices may be automatically blocked by the SMKOR system (monitoring criteria) -- see 3e |
+**Imports of goods.** VAT on imports is assessed and collected by customs on the customs declaration (art. 187.8, 190.1). The payer does not self-assess goods imports on the return. Import VAT on the customs declaration supports the input credit (art. 198.6) and raises the SEA registration limit (art. 200-1.3). A non-registered importer pays at customs without registering (art. 181.2).
 
-### 3e. Tax Invoice Blocking (SMKOR) [T2]
+**Services from non-residents (art. 208).** When a non-resident not registered for VAT supplies services whose place of supply is in Ukraine (for example consulting, software, advertising or licences under art. 186.3), the Ukrainian business recipient charges VAT at 20%, or at 7% for the cultural services in art. 193.1 (v), on the art. 190.2 base (art. 208.2). A VAT-registered recipient draws up a tax invoice for the VAT it charged, registers it in YERPN, includes the VAT in its output for the period (art. 208.3) and, if the service is used in taxable business, claims the same amount as input VAT (art. 198.1 (v), 208.2). The net effect is nil for a fully taxable business. A recipient that is not VAT-registered issues no invoice and pays on a separate calculation form (art. 208.4).
 
-- The automatic monitoring system (SMKOR -- Systema Monitoryngu Kryteriiv Otsinky Ryzykiv) may block registration of tax invoices deemed high-risk
-- Blocking criteria include: new registrants, mismatched volumes, suspicious patterns
-- If blocked, the taxpayer must submit explanations and supporting documents to unblock
-- Unblocking decision by a regional commission within 5 business days
-- If not unblocked, the taxpayer can appeal to court
-- **Flag for reviewer:** Blocking events should be tracked; they can delay input PDV claims for buyers
-- **Legislation:** TCU Article 201.16; CMU Resolution No. 1165
+**Non-resident e-services to individuals (art. 208-1).** A non-resident without a permanent establishment that supplies e-services to individuals, including sole proprietors not registered for VAT, registers under art. 208-1.2, charges 20% and files quarterly as above. A Ukrainian VAT-registered business that buys e-services from a non-resident applies the reverse charge under art. 208. Where the contract does not show the customer is a business, the service is treated as supplied to an individual (art. 186.3-1).
 
-## Step 4: Reverse Charge Mechanics [T1]
+**Services supplied abroad.** A service whose place of supply is outside Ukraine under art. 186.3 (for example software development for a US company) is outside Ukrainian VAT. Input VAT on costs used for it is charged back under art. 198.5 (a), which covers supplies whose place of supply is outside Ukraine.
 
-### 4a. Import of Goods [T1]
+**Exports of goods.** Zero-rated with customs proof (art. 195.1.1); the tax point is the date of the export customs declaration (art. 187.1 (b)). Prepayments for exports and imports do not change the VAT position (art. 187.11). The payer may claim a refund of any negative amount (art. 200.4).
 
-- **Import of goods rules** — PDV on imported physical goods is assessed and collected by Customs (Derzhavna Mytna Sluzhba). Importer pays PDV at the border via customs declaration (mytna deklaratsiia). This import PDV is deductible as input PDV (Line 11.1). Import PDV paid at customs also increases the SEA PDV registration limit. Do NOT self-assess imports of goods on the PDV return -- Customs handles assessment  _(TCU Article 190, 206)_
+**Worked notes on the old edge cases.**
 
-### 4b. Import of Services (Reverse Charge) [T1]
+- Cloud software bought from a US provider (B2B): reverse charge at 20% under art. 208, self-invoice registered in YERPN, same amount claimed as credit.
+- Export of grain to Germany: 0% under art. 195.1.1 with the export declaration; input VAT kept.
+- Medicines sold to a pharmacy, net UAH 500,000: 7% under art. 193.1 (v), VAT UAH 35,000.
+- Sedan bought for management, net UAH 1,000,000, VAT UAH 200,000: credit allowed if used in taxable business; clawed back under art. 198.5 for private or non-business use.
+- Sunflower seed sold to a crusher, net UAH 2,000,000: 14% under art. 193.1 (h) (code 1206 00), VAT UAH 280,000. Wheat (1001) is also 14%.
+- Invoice blocked under art. 201.16: the buyer cannot claim until it is registered; the seller's late fine and the buyer's 365-day window are paused during the suspension.
+- Warehouse goods destroyed by shelling during martial law: no input VAT claw-back (point 32-1).
+- Electronics imported from China, customs value UAH 3,000,000, import VAT UAH 600,000: paid at customs, claimed as credit on the customs declaration, and added to the SEA limit.
+- Free supply of food to the Armed Forces for defence needs: not a supply (point 32-1); no claw-back of the input VAT.
+- Credit note for a price cut: adjustment calculation registered in YERPN, registered by the buyer where it reduces the price paid.
+- Residential housing sold after its first supply: exempt (art. 197.1.14).
+- SEA limit UAH 300,000 against an invoice with VAT UAH 500,000: transfer UAH 200,000 to the SEA account before registering (art. 201.10).
 
-- **Import of services (reverse charge) process** — When a Ukrainian PDV payer receives services from a non-resident with no permanent establishment in Ukraine: 1. Self-assess PDV at the applicable rate (20%, 7%, or 14%) on the service value; 2. Report in Line 8 (base) and Line 8.1 (PDV); 3. Register a self-invoice (podatkova nakladna) in YERPN; 4. Claim input PDV in Line 12 (= Line 8.1); 5. Net effect: zero for fully taxable businesses  _(TCU Article 208)_
+## Worked examples
 
-### 4c. Non-Resident Digital Services [T2]
+**Example 1. Monthly return of a Kyiv LLC, March 2026.** A VAT-registered LLC makes these supplies in March 2026: UAH 1,000,000 of IT services to Ukrainian clients at 20%, UAH 500,000 of sunflower seed (code 1206 00) at 14% and UAH 300,000 of registered medicines at 7%. It buys goods and services for its business from Ukrainian suppliers for UAH 600,000 net at 20%, all on registered tax invoices. It also buys UAH 100,000 of consulting from a Polish firm not registered in Ukraine; the place of supply is Ukraine under art. 186.3, so it charges itself 20% under art. 208.2. Output VAT is UAH 200,000 + UAH 70,000 + UAH 21,000 + UAH 20,000 = UAH 311,000. Input VAT is UAH 120,000 on domestic purchases plus UAH 20,000 on the reverse charge, UAH 140,000. VAT payable is UAH 171,000. The return is due by 20 April 2026 (art. 203.1) and the payment by 30 April 2026 (art. 203.2).
 
-- **Non-resident digital services rules** — Since 1 January 2022, non-resident providers of electronic services (e-services) to Ukrainian individuals (B2C) must register for PDV and charge 20%. Applies to: streaming services, app stores, online advertising, cloud services (B2C). B2B: standard reverse charge by the Ukrainian business applies (not the foreign provider). Flag for reviewer: Determine if the foreign provider is already registered and charging PDV (B2C) or if the Ukrainian business should self-assess (B2B)  _(TCU Article 208-1)_
-
-## Step 5: Deductibility Rules
-
-### 5a. General Deduction Right [T1]
-
-- **General deduction right** — All input PDV on goods and services used for taxable business activities is deductible. Input PDV must be confirmed by a registered tax invoice (podatkova nakladna) in YERPN or customs declaration. If the tax invoice is not registered in YERPN, the buyer CANNOT claim input PDV  _(TCU Article 198)_
-
-### 5b. Non-Deductible Input PDV [T1]
-
-**Non-Deductible Input PDV table**
-
-| Category | Legal Basis | Notes |
-| --- | --- | --- |
-| Passenger vehicles (lehkovyi avtomobil) | Art 198.4 / Art 139.1.6 | Exception: taxi, rental car, emergency services |
-| Goods/services not used in business | Art 198.4 | Personal consumption |
-| Purchases without registered tax invoice | Art 198.6 | No YERPN registration = no credit |
-| Goods/services for exempt activities | Art 198.4 | No input PDV on exempt supplies |
-| Entertainment (if not business-related) | Art 198.4 / Art 139.1.1 | Flag for reviewer [T2] |
-| Goods destroyed/stolen (non-wartime) | Art 198.5 | Must reverse previously claimed input PDV |
-
-- **Passenger vehicles (lehkovyi avtomobil)** — Exception: taxi, rental car, emergency services  _(Art 198.4 / Art 139.1.6)_
-- **Goods/services not used in business** — Personal consumption  _(Art 198.4)_
-- **Purchases without registered tax invoice** — No YERPN registration = no credit  _(Art 198.6)_
-- **Goods/services for exempt activities** — No input PDV on exempt supplies  _(Art 198.4)_
-- **Entertainment (if not business-related)** — Flag for reviewer [T2]  _(Art 198.4 / Art 139.1.1)_
-- **Goods destroyed/stolen (non-wartime)** — Must reverse previously claimed input PDV  _(Art 198.5)_
-
-### 5c. Vehicle Deductibility Rules [T1]
-
-**Vehicle Deductibility Rules table**
-
-| Vehicle Type | Input PDV Deductible | Notes |
-| --- | --- | --- |
-| Private passenger car (lehkovyi avtomobil) | NO | Blocked |
-| Taxi (licensed) | YES | Business use vehicle |
-| Rental car (by rental company) | YES | Business stock |
-| Delivery van (classified as vantazhnyi) | YES | Commercial vehicle |
-| Truck (vantazhnyi avtomobil) | YES | Commercial vehicle |
-| Bus | YES | Commercial vehicle |
-| Ambulance / emergency | YES | Special purpose vehicle |
-| Fuel for blocked vehicle | NO | Follows vehicle classification |
-| Fuel for deductible vehicle | YES | Follows vehicle classification |
-
-### 5d. Proportional Allocation (Article 199) [T2]
-
-- **Proportional allocation formula** — If a business makes both taxable and exempt supplies, input PDV on shared overhead must be proportionally allocated. Formula: `Deductible % = (Taxable + Zero-Rated Supplies) / Total Supplies x 100`. Calculated based on prior year's proportions; adjusted annually (re-calculation in December return). Threshold: if taxable supplies are >= 97% of total, the business may treat all input PDV as deductible (no allocation needed). Flag for reviewer: Proportional allocation must be confirmed by qualified tax adviser  _(TCU Article 199)_
-
-### 5e. Destroyed and Lost Goods [T1]
-
-- **Destroyed and lost goods rule** — If goods for which input PDV was claimed are destroyed or lost, the input PDV must be reversed (charged as output PDV). Exception (wartime): Goods destroyed as a result of hostilities (Russian aggression) are NOT subject to input PDV reversal [T2]. However, wartime-destroyed goods PDV cannot be refunded in cash -- can only offset future liabilities. Flag for reviewer: Documentation of wartime destruction required (military administration confirmation)  _(TCU Article 198.5; Transitional Provisions)_
-
-## Step 6: PDV Refund Mechanism
-
-### 6a. Refund Eligibility [T1]
-
-- **Refund eligibility rule** — When input PDV exceeds output PDV (negative value / vidiemnne znachennia), the excess can be: 1. Carried forward to the next period (Line 20.2), OR 2. Declared for budget refund (Line 20.1). Budget refund is available if the negative value is confirmed by the SEA PDV account balance
-
-### 6b. Refund Process [T1]
-
-**Refund Process table**
-
-| Step | Timeline | Notes |
-| --- | --- | --- |
-| Declaration filed | By filing deadline | Refund amount declared in Line 20.1 |
-| DPS verification | 30 calendar days (standard) / 60 days (audit) | DPS checks YERPN registrations and SEA balance |
-| Refund conclusion | Within 5 days after verification | DPS issues refund conclusion to Treasury |
-| Payment | Within 5 business days after conclusion | Treasury transfers to taxpayer's bank account |
-
-### 6c. Automatic Refund [T1]
-
-- **Automatic refund criteria** — Taxpayers meeting "risk criteria" (positive compliance history) are eligible for automatic refund without desk audit. Criteria: registered for 24+ months, no tax debt, director not under criminal investigation, sufficient operational activity  _(TCU Article 200.19-200.20)_
-
-### 6d. Refund Delays and Issues [T2]
-
-- Refund delays are common in practice, especially during wartime
-- If DPS misses the 30/60-day deadline, the taxpayer is entitled to interest
-- If the refund is rejected, the taxpayer can appeal administratively (within 10 days) or judicially
-- **Flag for reviewer:** Track refund applications and follow up on overdue refunds
-- **Legislation:** TCU Article 200
-
-## Step 7: Key Thresholds
-
-**Key Thresholds table**
-
-| Threshold | Value | Notes |
-| --- | --- | --- |
-| Standard PDV rate | 20% | TCU Art 193.1 |
-| Reduced PDV rate (medicines) | 7% | TCU Art 193.1 |
-| Reduced PDV rate (agriculture) | 14% | TCU Art 193.1 |
-| Mandatory registration | UAH 1,000,000 (last 12 months) | TCU Art 181.1 |
-| Tax invoice registration deadline | 15 calendar days from date of supply | TCU Art 201.10 |
-| Proportional allocation threshold | 97% taxable = no allocation needed | TCU Art 199 |
-| Automatic refund eligibility | 24+ months registered | TCU Art 200.19 |
-| Document retention | 1,095 days (3 years) from filing deadline | TCU Art 44.3 |
-| SEA PDV top-up | No minimum | Voluntary transfer to Treasury |
-
-- **Mandatory registration** — UAH 1,000,000 (last 12 months)  _(TCU Art 181.1)_
-
-## Step 8: Filing Deadlines
-
-**Filing Deadlines table**  _(TCU Article 49, 203)_
-
-| Return | Period | Filing Deadline | Payment Deadline |
-| --- | --- | --- | --- |
-| PDV return (standard) | Monthly | 20th of the following month | 10 calendar days after filing deadline (i.e., 30th) |
-| PDV return (wartime extended) | Monthly | May be extended for taxpayers in combat zones [T2] | Correspondingly extended |
-| Correction return (utochniuiucha) | N/A | Anytime (corrections to prior periods) | Additional PDV + 3% self-assessed penalty |
-
-**Filing method:** Electronic only via the Electronic Cabinet of Taxpayer (Elektronyi Kabinet Platnyaka Podatkiv).
-
-**Legislation:** TCU Article 49, 203
-
-### Late Filing and Payment Penalties [T1]
-
-**Late Filing and Payment Penalties table**  _(TCU Articles 120-1, 126-1, 163)_
-
-| Violation | Penalty |
-| --- | --- |
-| Late filing (first occurrence in year) | Warning (no fine) |
-| Late filing (repeated) | UAH 340 |
-| Late filing (continued, 30+ days late) | UAH 1,020 |
-| Late payment | Penalty interest (penia): 120% of NBU discount rate per annum, calculated daily |
-| Failure to register tax invoice (within 15 days) | 10% of PDV amount on the invoice |
-| Failure to register tax invoice (16-30 days late) | 20% of PDV amount |
-| Failure to register tax invoice (31-60 days late) | 30% of PDV amount |
-| Failure to register tax invoice (61+ days late) | 40% of PDV amount |
-| Non-registration (no invoice issued at all) | 50% of PDV amount |
-
-**Note:** Wartime provisions may suspend certain penalties for taxpayers in territories with active hostilities [T2].
-
-**Legislation:** TCU Articles 120-1, 126-1, 163
-
-## Step 9: Place of Supply Rules
-
-### 9a. Supply of Goods [T1]
-
-**Supply of Goods table**
-
-| Scenario | Place of Supply | Legal Basis |
-| --- | --- | --- |
-| Goods located in Ukraine at time of supply | Ukraine | Art 186.1(a) |
-| Goods dispatched from Ukraine | Ukraine | Art 186.1(a) |
-| Goods imported into Ukraine | Ukraine (at customs) | Art 186.1(c) |
-| Goods exported from Ukraine | Ukraine (zero-rated) | Art 195 |
-
-### 9b. Supply of Services [T1]
-
-**Supply of Services table**  _(TCU Articles 185-186)_
-
-| Scenario | Place of Supply | Legal Basis |
-| --- | --- | --- |
-| B2B (general rule) | Where the recipient is registered | Art 186.4 |
-| B2C (general rule) | Where the supplier is registered | Art 186.4 |
-| Real estate related | Where the property is located | Art 186.2.2(a) |
-| Cultural, artistic, sporting events | Where event takes place | Art 186.2.1(a) |
-| Transport of goods | Where transport occurs (proportionally) | Art 186.2.3 |
-| Restaurant/catering | Where services performed | Art 186.2.2(b) |
-| Electronic services (B2C from non-resident) | Where buyer is located (Ukraine) | Art 208-1 |
-
-## Step 10: Agricultural Sector Special Rules
-
-### 10a. Former Special Regime (Historical Context) [T1]
-
-- **Former special regime historical context** — Until 31 December 2016, agricultural producers could use a special PDV regime where PDV collected was retained by the producer (not remitted to the budget). This regime was abolished from 1 January 2017. The 14% reduced rate was introduced in 2021 as a partial substitute for certain agricultural commodities
-
-### 10b. Current Agricultural Rules [T1]
-
-**Current Agricultural Rules table**  _(TCU Article 193.1; CMU list of 14% goods)_
-
-| Item | Rate | Notes |
-| --- | --- | --- |
-| Soybeans | 14% | On the specified list |
-| Rapeseed (canola) | 14% | On the specified list |
-| Sunflower seeds | 14% | On the specified list |
-| Corn (maize) | 14% | On the specified list |
-| Sugar beet | 14% | On the specified list |
-| Flax, hemp (industrial) | 14% | On the specified list |
-| Raw milk (from farms) | 14% | Agricultural producer supply |
-| Live cattle, pigs, poultry | 14% | Agricultural producer supply |
-| Wheat, barley, rye | 20% | NOT on the 14% list (standard rate) |
-| Processed food products | 20% | Manufacturing, not agriculture |
-| Fresh vegetables (domestic market) | 20% | Standard rate (unlike Israel) |
-| Meat (processed/retail) | 20% | Standard rate |
-
-### 10c. Agricultural Input PDV [T1]
-
-- **Agricultural input PDV rules** — Agricultural producers claim input PDV on standard terms (same as all other businesses). No special retention or separate accounting (unlike the former special regime)  _(TCU Article 198 (general rules apply))_
-
-## Step 11: Edge Case Registry
-
-### EC1 -- Software subscription from US provider (e.g., Google Workspace) [T1]
-
-**Situation:** Ukrainian company pays for cloud services from a US company (B2B), no PDV on invoice.
-**Resolution:** Reverse charge. Self-assess at 20% in Line 8/8.1. Register self-invoice in YERPN. Deduct in Line 12. Net = zero.
-**Legislation:** TCU Article 208
-
-### EC2 -- Export of goods to EU country [T1]
-
-**Situation:** Ukrainian manufacturer exports grain to Germany. Customs declaration obtained.
-**Resolution:** Zero-rated under Article 195.1.1. Report in Line 4. No output PDV. Full input PDV refund available.
-**Legislation:** TCU Article 195.1.1
-
-### EC3 -- Sale of medicines at 7% [T1]
-
-**Situation:** Pharmaceutical distributor sells registered medicines to a pharmacy, net UAH 500,000.
-**Resolution:** Line 2 = UAH 500,000. Line 2.1 = UAH 35,000 (7%).
-**Legislation:** TCU Article 193.1
-
-### EC4 -- Purchase of passenger car [T1]
-
-**Situation:** Company purchases a sedan for management use, net UAH 1,000,000, PDV UAH 200,000.
-**Resolution:** Input PDV of UAH 200,000 is BLOCKED (Article 198.4). Vehicle capitalized at UAH 1,200,000.
-**Legislation:** TCU Article 198.4
-
-### EC5 -- Sale of sunflower seeds at 14% [T1]
-
-**Situation:** Agricultural producer sells sunflower seeds to a processing plant, net UAH 2,000,000.
-**Resolution:** Line 3 = UAH 2,000,000. Line 3.1 = UAH 280,000 (14%).
-**Legislation:** TCU Article 193.1; 14% rate list
-
-### EC6 -- Tax invoice blocked by SMKOR [T2]
-
-**Situation:** Supplier registers a tax invoice, but it is blocked by the monitoring system.
-**Resolution:** Buyer CANNOT claim input PDV until the invoice is unblocked. Supplier must submit explanations and documents to the regional commission. If unblocked, buyer claims input PDV in the period of unblocking. Flag for reviewer: track unblocking process.
-**Legislation:** TCU Article 201.16; CMU Resolution No. 1165
-
-### EC7 -- Goods destroyed by shelling [T2]
-
-**Situation:** Warehouse with goods (input PDV previously claimed) is destroyed by Russian military attack.
-**Resolution:** Input PDV is NOT reversed under wartime provisions. However, the PDV amount cannot be refunded in cash -- it can only offset future liabilities. Documentation required: act of destruction, military administration confirmation. Flag for reviewer: confirm wartime provision applicability.
-**Legislation:** TCU Transitional Provisions; Law No. 2118-IX
-
-### EC8 -- Import of goods from China [T1]
-
-**Situation:** Ukrainian retailer imports electronics from China. Customs declaration shows UAH 3,000,000 value, PDV UAH 600,000.
-**Resolution:** Import PDV paid at customs. Deductible in Line 11.1 = UAH 600,000. Also increases SEA PDV registration limit.
-**Legislation:** TCU Article 190, 206
-
-### EC9 -- Free supply of goods to Armed Forces [T1]
-
-**Situation:** Company donates supplies (food, equipment) to the Armed Forces of Ukraine free of charge.
-**Resolution:** NOT a taxable supply under wartime provisions. No output PDV. Input PDV on the donated goods is NOT reversed. This is a specific wartime exemption.
-**Legislation:** TCU Transitional Provisions; Law No. 2120-IX
-
-### EC10 -- Credit notes (rozrakhunok koryguvannia) [T1]
-
-**Situation:** Supplier issues an adjustment calculation (rozrakhunok koryguvannia) to correct a previous tax invoice.
-**Resolution:** Adjustment must be registered in YERPN. Buyer must confirm acceptance (for decreases). Affects output/input PDV in the period of registration. Both parties adjust their returns accordingly.
-**Legislation:** TCU Article 192
-
-### EC11 -- Services to foreign client (B2B export of services) [T1]
-
-**Situation:** Ukrainian IT company provides software development services to a US client.
-**Resolution:** Place of supply is where the recipient is established (US) per Article 186.4. Supply is outside the scope of Ukrainian PDV. No output PDV charged. Input PDV on related costs is deductible.
-**Legislation:** TCU Article 186.4
-
-### EC12 -- Residential property rental [T1]
-
-**Situation:** Company rents out apartments to tenants for residential use.
-**Resolution:** Exempt under Article 197.1.14. No output PDV. Input PDV on related costs is NOT deductible (Article 198.4).
-**Legislation:** TCU Article 197.1.14
-
-### EC13 -- SEA PDV insufficient balance [T1]
-
-**Situation:** Company needs to register a tax invoice for UAH 500,000 PDV but SEA PDV account shows only UAH 300,000 balance.
-**Resolution:** Cannot register the invoice. Must either wait for incoming registered tax invoices (which increase the balance) or transfer UAH 200,000 to the SEA PDV Treasury account to top up the balance.
-**Legislation:** TCU Article 200-1
-
-## Step 12: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Qualified tax adviser must confirm before filing.
+```oa-check
+name: Ukrainian LLC, March 2026 return with 20%, 14%, 7% and reverse charge
+inputs:
+  sales_20: 1000000
+  sales_14: 500000
+  sales_7: 300000
+  purchases_20: 600000
+  nonresident_services: 100000
+steps:
+  - output_20: sales_20 * 0.20
+  - output_14: sales_14 * 0.14
+  - output_7: sales_7 * 0.07
+  - output_rc: nonresident_services * 0.20
+  - output_total: output_20 + output_14 + output_7 + output_rc
+  - input_domestic: purchases_20 * 0.20
+  - input_rc: nonresident_services * 0.20
+  - input_total: input_domestic + input_rc
+  - payable: output_total - input_total
+expected:
+  output_total: 311000
+  input_total: 140000
+  payable: 171000
 ```
 
-When a [T3] situation is identified, output:
+**Example 2. Late invoice under martial law, and a pro-rata charge.** A VAT payer issues a tax invoice dated 20 February 2026 with VAT of UAH 50,000. Under the martial-law deadline it had to be registered by 18 March 2026 (point 89). It is registered on 7 April 2026, which is 20 days late. The martial-law fine is 5% of the VAT, UAH 2,500 (point 90). Under the permanent art. 120-1.1 scale the same delay would cost 20%, UAH 10,000. The same payer also makes exempt supplies. In 2025 its taxable supplies were UAH 8,000,000 out of UAH 10,000,000 in total, both excluding VAT, so its taxable share for 2026 is 80% (art. 199.2). In March 2026 it claims UAH 30,000 of input VAT on shared overheads. It must charge output VAT on the 20% non-taxable share, UAH 6,000, on a consolidated invoice registered in YERPN (art. 199.1). The share is recalculated on actual 2026 figures in the December 2026 return (art. 199.4, 199.5).
 
+```oa-check
+name: Martial-law late-registration fine and art. 199 pro-rata charge
+inputs:
+  invoice_vat: 50000
+  days_late: 20
+  taxable_2025: 8000000
+  total_2025: 10000000
+  shared_input_vat: 30000
+steps:
+  - fine_martial: invoice_vat * 0.05
+  - fine_permanent: invoice_vat * 0.20
+  - taxable_share: taxable_2025 / total_2025
+  - prorata_liability: shared_input_vat * (1 - taxable_share)
+expected:
+  fine_martial: 2500
+  fine_permanent: 10000
+  taxable_share: 0.8
+  prorata_liability: 6000
 ```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified tax adviser. Document gap.
-```
 
-## Step 13: Test Suite
+## Ask the client first
 
-### Test 1 -- Standard domestic sale at 20%
+1. Is the business VAT-registered, and from what date? If not, what were its taxable supplies in each of the last 12 months, and is it a single-tax payer in group 1, 2 or 3?
+2. What does it sell? Check each line against the 7% list, the six 14% codes, the zero-rated list and the art. 197 exemptions.
+3. Does it buy services or e-services from non-residents, import goods, or export goods or services? Each changes the return and the SEA limit.
+4. What is its current SEA registration limit, and are any of its own or its suppliers' tax invoices blocked under art. 201.16?
+5. Does it make exempt or out-of-scope supplies alongside taxable ones, and what were its 2025 taxable and total supplies?
+6. Has it lost goods to hostilities, donated to the defence forces, or missed deadlines it could not meet because of the war? Keep the supporting documents.
 
-**Input:** Ukrainian company sells IT services to a domestic client, net UAH 1,000,000, PDV UAH 200,000.
-**Expected output:** Line 1 = UAH 1,000,000. Line 1.1 = UAH 200,000. Output PDV reported.
+## Sources
 
-### Test 2 -- Sale of medicines at 7%
+| Source | URL | Read on |
+|---|---|---|
+| Tax Code of Ukraine, Law No. 2755-VI of 2 December 2010, consolidated with amendments to Law No. 4967-IX of 3 September 2026: arts. 14.1.139, 44.3, 49.18, 50.1, 57.1, 76.3, 120, 120-1, 124, 129, 180 to 183, 185 to 188, 190, 192 to 203, 208, 208-1, 209; section XX subsection 2 points 32-1, 54-1, 64-1, 87-1, 88-1, 89, 90, 92, 94, 99-1; subsection 10 points 69.1, 69.1-1, 69.3, 69.38, 69.41 | https://zakon.rada.gov.ua/laws/show/2755-17 | 2026-10-30 (official text via web.archive.org capture of 12 Oct 2026, https://web.archive.org/web/20261012050950/https://zakon.rada.gov.ua/laws/show/2755-17/print; zakon.rada.gov.ua timed out from our network, and again by curl and a browser tab at review on 30 Oct 2026) |
+| Tax Code of Ukraine, consolidated text as of May 2025: former section XX subsection 2 point 64 (electric vehicles) | https://zakon.rada.gov.ua/laws/show/2755-17 | 2026-10-30 (official text via web.archive.org capture of 28 May 2025, https://web.archive.org/web/20250528171622/https://zakon.rada.gov.ua/laws/show/2755-17/print) |
+| State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access; not read) |
 
-**Input:** Pharmaceutical company sells registered medicines, net UAH 300,000, PDV UAH 21,000.
-**Expected output:** Line 2 = UAH 300,000. Line 2.1 = UAH 21,000.
+Not yet confirmed: the VAT return form, its line numbers and its annexes (the Ministry of Finance order was not read; the old skill's line numbers and annex names D1 to D7 are left out); the Cabinet of Ministers procedure for suspending invoice registration (Resolution No. 1165), including the risk criteria and the time the regional commission takes to decide; the content of the goods lists in Customs Code transitional points 9-24 and 9-36 (the old skill called them energy equipment and wind turbines); whether residential letting is exempt (the old skill cited art. 197.1.14, which covers sale of housing, not rent); whether a universal postal service exemption exists (not found in art. 197.1); whether input VAT on goods destroyed by hostilities can be refunded in cash or only offset (point 32-1 says nothing on this); the benefits that come with the high-compliance list in point 69.41; the current martial-law extension decree and its end date; a wartime simplified VAT registration (no provision found); the old automatic-refund criteria such as 24 months of registration (not in the current art. 200); the term for appealing a refused refund; DPS guidance on any of the above.
 
-### Test 3 -- Sale of sunflower seeds at 14%
-
-**Input:** Agricultural producer sells sunflower seeds, net UAH 5,000,000, PDV UAH 700,000.
-**Expected output:** Line 3 = UAH 5,000,000. Line 3.1 = UAH 700,000.
-
-### Test 4 -- Export of goods, zero-rated
-
-**Input:** Ukrainian manufacturer exports machinery to Poland, net UAH 10,000,000. Customs declaration obtained.
-**Expected output:** Line 4 = UAH 10,000,000. No output PDV. Input PDV refundable.
-
-### Test 5 -- Import of services, reverse charge
-
-**Input:** Ukrainian company receives consulting from a UK firm, GBP 20,000 (approx. UAH 1,000,000). No PDV.
-**Expected output:** Line 8 = UAH 1,000,000. Line 8.1 = UAH 200,000 (20%). Line 12 = UAH 200,000. Net = zero.
-
-### Test 6 -- Passenger car purchase, blocked
-
-**Input:** Company purchases sedan, net UAH 1,500,000, PDV UAH 300,000.
-**Expected output:** Input PDV UAH 300,000 BLOCKED. Vehicle capitalized at UAH 1,800,000.
-
-### Test 7 -- Import of goods
-
-**Input:** Ukrainian retailer imports goods from Turkey. Customs value UAH 2,000,000, import PDV UAH 400,000.
-**Expected output:** Line 11.1 = UAH 400,000 (input PDV from customs).
-
-### Test 8 -- Donation to Armed Forces (wartime)
-
-**Input:** Company donates UAH 500,000 worth of food to Armed Forces. Input PDV of UAH 100,000 was claimed.
-**Expected output:** No output PDV (wartime exemption). Input PDV of UAH 100,000 is NOT reversed.
-
-## PROHIBITIONS [T1]
-
-- **Prohibitions list** — NEVER allow input PDV deduction without a registered tax invoice in YERPN; NEVER allow input PDV deduction on passenger vehicles (unless taxi/rental/emergency); NEVER skip reverse charge (self-assessment) for services received from non-residents; NEVER treat Ukraine as an EU member state -- no intra-community supply rules apply; NEVER register a tax invoice when SEA PDV balance is insufficient -- top up first; NEVER confuse zero-rated (Article 195, with input recovery) with exempt (Article 197, without recovery); NEVER register import of goods via reverse charge -- Customs handles PDV on imports; NEVER ignore the 15-day tax invoice registration deadline -- fines are significant; NEVER apply the 14% rate to goods not on the specific agricultural list; NEVER assume wartime provisions apply without confirming the specific provision and documentation [T2]; NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI; NEVER process transactions involving temporarily occupied territories without qualified tax adviser [T3]
-
-## Step 14: Invoice and Documentation Requirements
-
-### 14a. Tax Invoice (Podatkova Nakladna) Detailed Requirements [T1]
-
-**Detailed Requirements table**  _(TCU Article 201; Ministry of Finance Order No. 1307)_
-
-| Requirement | Details |
-| --- | --- |
-| Format | Electronic only (mandatory since 1 January 2017) |
-| Registration | Must be registered in YERPN within 15 calendar days of the tax point |
-| Mandatory fields | Supplier name, EDRPOU/RNOCPP, IPN; buyer name, EDRPOU/RNOCPP, IPN; date of supply; date of issuance; sequential number; description of goods/services; unit of measure; quantity; unit price (excluding PDV); PDV rate; PDV amount; total (including PDV) |
-| Self-invoice | Required for reverse charge (import of services); supplier field shows non-resident details |
-| Copies | Electronic original stored in YERPN; accessible to both parties |
-| Correction | Via rozrakhunok koryguvannia (adjustment calculation); must reference original |
-| Void | Cancelled invoices must still be registered as "cancelled" in YERPN |
-
-### 14b. Adjustment Calculation (Rozrakhunok Koryguvannia) [T1]
-
-**Adjustment Calculation table**
-
-| Feature | Details |
-| --- | --- |
-| Purpose | Adjust a previously registered tax invoice (increase or decrease) |
-| When required | Returns, price changes, errors, partial cancellation |
-| Buyer confirmation | Required for adjustment decreases (buyer must accept in YERPN) |
-| Deadline | Within 15 calendar days of the event triggering adjustment |
-| Effect | Adjusts output PDV (seller) and input PDV (buyer) in the period of registration |
-
-### 14c. Advance Payment Invoicing [T1]
-
-**Advance Payment Invoicing table**  _(TCU Article 187)_
-
-| Event | Tax Point | Invoice Obligation |
-| --- | --- | --- |
-| Advance received (before delivery) | Date of receipt | Tax invoice must be registered within 15 days |
-| Delivery after advance | Date of delivery | Final tax invoice for remaining amount |
-| Full prepayment | Date of receipt | Single tax invoice for full amount |
-
-## Step 15: Record-Keeping and Reporting
-
-### 15a. PDV Registers [T1]
-
-**PDV Registers table**
-
-| Register | Description | Legal Basis |
-| --- | --- | --- |
-| Register of issued tax invoices | All tax invoices issued (including adjustments) | Art 201.11 |
-| Register of received tax invoices | All tax invoices received (including adjustments) | Art 201.11 |
-| YERPN register | Central electronic register maintained by DPS | Art 201.10 |
-| Annexes to PDV return | Detailed tables (D1-D7) submitted with the monthly return | Ministry of Finance Order |
-
-### 15b. PDV Return Annexes [T1]
-
-**PDV Return Annexes table**
-
-| Annex | Content |
-| --- | --- |
-| D1 | Detailed breakdown of tax invoices issued and received (decryption) |
-| D2 | Transactions not subject to PDV or exempt |
-| D3 | Adjustment calculations issued |
-| D4 | Adjustment calculations received |
-| D5 | Decryption of transactions with non-residents |
-| D6 | Summary of PDV refund calculations |
-| D7 | Not currently in use |
-
-### 15c. Document Retention [T1]
-
-**Document Retention table**  _(TCU Article 44.3)_
-
-| Document | Retention Period |
-| --- | --- |
-| Tax invoices (in YERPN) | 1,095 days (3 years) from filing deadline |
-| Customs declarations | 1,095 days |
-| Contracts and agreements | 1,095 days |
-| Bank statements | 1,095 days |
-| Accounting records | 1,095 days (may be longer per accounting law) |
-
-## 2026 Changes
-
-**2026 Changes table**
-
-| Change | Details | Effective |
-| --- | --- | --- |
-| Electric vehicles | PDV exemption on import and sale of electric vehicles expired; standard 20% rate now applies to EVs | 1 January 2026 |
-| Energy equipment import exemption | Extended until 1 January 2029; scope expanded to include wind turbines | Extended |
-| Martial law provisions | Continue in effect as of April 2026; monitor for any changes | Ongoing |
-
-## Contribution Notes
-
-This skill covers Ukrainian PDV as of April 2026. Ukrainian tax law is subject to frequent amendment, particularly during the period of martial law. Wartime provisions are temporary and may be extended, modified, or terminated at any time by the Verkhovna Rada. All rates, thresholds, and wartime provisions should be verified against the most recent legislation and DPS guidance before filing. A qualified Ukrainian tax adviser (podatkovyi konsultant) or auditor must validate all T1 rules before this skill is used in production.
-
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

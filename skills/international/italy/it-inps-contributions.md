@@ -7,8 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
-approved_by: pending
 depends_on:
   - social-contributions-workflow-base
 category: international
@@ -222,6 +220,8 @@ expected:
 Not yet confirmed: how INPS splits a sanzione civile across the 2026 periods before 16 September 2026, when the reference rate was lower (the ECB rate was 2.15% to 16 June and 2.40% from 17 June 2026); the text of L. 207/2024 art. 1(186) and L. 213/2023 art. 1(142) to (155) on Normattiva (both read through INPS documents only, as the article page did not load past its first commi); whether any provision of L. 199/2025 after comma 100 changes self-employed INPS contributions (the February 2026 INPS circulars report none); the rules for amateur sports workers (Quadro RR section III); Reg. (EC) 883/2004 arts. 11 and 13 on which country insures a person working in several states (EUR-Lex blocked scripts); the historic F24 code DPP from the earlier version; the professional fund rates (see `it-inps-artigiani-commercianti`); refunds of excess contributions beyond L. 335/1995 art. 2(30); suspension of contributions for illness or injury; the Quadro RP line number for the deduction in the 2027 form.
 
 > Contributed by OpenAccountants.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

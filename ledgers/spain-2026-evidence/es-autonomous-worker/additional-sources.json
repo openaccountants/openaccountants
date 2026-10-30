@@ -1,0 +1,18 @@
+[
+  {
+    "key": "EU_BOE",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2004-81111",
+    "fetched": "2026-10-28T17:52:47.581961+00:00",
+    "raw_sha256": "601e64cc08d8510bb2c7d9552d69837cd2c346e0e7cb1e9c8ba5de95678713b8",
+    "reader_sha256": "ed8e745e000db1a1cffff9809fd0da477f47a22339d1cf2752f5f2b1d04313c6",
+    "reader_method": "stdlib HTMLParser visible paragraphs; internal whitespace flattened; scripts/styles excluded. Exact quoted reading scopes separately recorded; acquisition is not reading."
+  },
+  {
+    "key": "EU_2026",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-81651",
+    "fetched": "2026-10-28T17:52:47.975583+00:00",
+    "raw_sha256": "95b658c62f1ac6936790a05392ebc0e40342062f2bc6c368f0757a7d3dca421d",
+    "reader_sha256": "940079b493bec6529584b06e3de99c2f670c76b46a4d7eb147206f8db0ad1993",
+    "reader_method": "stdlib HTMLParser visible paragraphs; internal whitespace flattened; scripts/styles excluded. Exact quoted reading scopes separately recorded; acquisition is not reading."
+  }
+]

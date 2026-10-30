@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Cantidades destinadas a la amortización</title><meta name="ObjectId" content="aa70c89071839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='3c18add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100.html'>Manual práctico de Renta 2025. Parte 1.</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='c840c89071839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario.html'>Capítulo 4. Rendimientos del capital inmobiliario</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='aa60c89071839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/gastos-deducibles.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Gastos deducibles</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100.html" class="d-none">Manual práctico de Renta 2025. Parte 1.</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Cantidades destinadas a la amortización</h1><p><strong>Normativa: Arts. 23.1 b) Ley <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> y 13 h) y 14 Reglamento&nbsp;<abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> </strong></p>
+<p>Tienen la consideraci&oacute;n de gastos deducibles las cantidades destinadas a la amortizaci&oacute;n del inmueble y de los dem&aacute;s bienes cedidos con el mismo, siempre que respondan a su depreciaci&oacute;n efectiva.</p>
+<p class="letrita sangrado-izq">La amortizaci&oacute;n es la&nbsp;forma de tener en cuenta la depreciaci&oacute;n que sufren los inmuebles generadores de los rendimientos por el uso o transcurso del tiempo.</p>
+<p>En cuanto a la forma de c&aacute;lculo para considerar que la amortizaci&oacute;n responde a la depreciaci&oacute;n efectiva debemos distinguir:</p>
+<h2>&bull; Bienes inmuebles</h2>
+<p>Trat&aacute;ndose de bienes inmuebles se considerar&aacute; que las amortizaciones cumplen el requisito de efectividad cuando, en cada a&ntilde;o, no excedan del resultado de aplicar el porcentaje del <strong>3 por 100 sobre el mayor de los siguientes valores:</strong></p>
+<ol>
+<li>
+<p><strong>Coste de adquisici&oacute;n satisfecho,</strong> que ser&aacute;:</p>
+<ul>
+<li>
+<p>En el caso de inmuebles adquiridos a<strong> t&iacute;tulo oneroso:</strong> el precio de adquisici&oacute;n, incluidos los gastos y tributos inherentes a la adquisici&oacute;n (notar&iacute;a, registro,&nbsp;<abbr title="Impuesto sobre el Valor A&ntilde;adido">IVA</abbr> no deducible, Impuesto sobre Transmisiones Patrimoniales y Actos Jur&iacute;dicos Documentados, gastos de agencia, etc.) sin incluir en el c&oacute;mputo el valor del suelo, as&iacute; como el coste de las inversiones y mejoras efectuadas en los bienes adquiridos.</p>
+</li>
+<li>
+<p>En el caso de inmuebles adquiridos a <strong>t&iacute;tulo gratuito</strong> por herencia o donaci&oacute;n:&nbsp;el valor del bien adquirido en aplicaci&oacute;n de las normas&nbsp;del Impuesto sobre Sucesiones o Donaciones o su valor comprobado en estos grav&aacute;menes (excluido del c&oacute;mputo el valor del suelo), m&aacute;s los gastos y tributos inherentes a la adquisici&oacute;n que corresponda a la construcci&oacute;n y, en su caso,&nbsp;la totalidad de las inversiones y mejoras efectuadas en los bienes adquiridos.</p>
+<p class="letrita  sangrado-izq">Criterio interpretativo fijado por el Tribunal Supremo (Sala de lo Contencioso-Administrativo) en su Sentencia <abbr title="n&uacute;mero">n&uacute;m.</abbr> 1130/2021, de 15 de septiembre ( <abbr title="Repertorio Oficial de Jurisprudencia">ROJ</abbr> : STS 3483/2021).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Valor catastral,</strong> excluido el valor del suelo.</p>
+<p>Cuando no se conozca el valor del suelo, este se calcular&aacute; prorrateando el coste de adquisici&oacute;n satisfecho entre los valores catastrales del suelo y de la construcci&oacute;n de cada a&ntilde;o reflejado en el correspondiente recibo del Impuesto sobre Bienes Inmuebles (IBI).</p>
+</li>
+</ol>
+<p><em><strong>L&iacute;mite de la amortizaci&oacute;n acumulada de los inmuebles</strong></em></p>
+<p>El l&iacute;mite de la amortizaci&oacute;n acumulada ser&aacute; el valor de adquisici&oacute;n del inmueble generador de los rendimientos. Por tanto:</p>
+<ul>
+<li>
+<p>En el caso de bienes adquiridos <strong>a t&iacute;tulo oneroso</strong>, la amortizaci&oacute;n acumulada no podr&aacute; superar su valor de adquisici&oacute;n conforme al art&iacute;culo 35 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> (excluido del c&oacute;mputo el valor del suelo).</p>
+<p>Conforme al citado art&iacute;culo 35 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> el valor de adquisici&oacute;n estar&aacute; formado por la suma de:</p>
+<ol type="a">
+<li>
+<p>El importe real por el que dicha adquisici&oacute;n se hubiera efectuado.</p>
+</li>
+<li>
+<p>El coste de las inversiones y mejoras efectuadas en los bienes adquiridos y los gastos y tributos inherentes a la adquisici&oacute;n, excluidos los intereses, que hubieran sido satisfechos por el adquirente.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>En el caso de los inmuebles adquiridos<strong> a t&iacute;tulo lucrativo</strong>, el l&iacute;mite de la amortizaci&oacute;n acumulada, en c&oacute;mputo global, no podr&aacute; superar el valor de adquisici&oacute;n en los t&eacute;rminos del art&iacute;culo 36 de la Ley de IRPF&nbsp;(excluido del c&oacute;mputo el valor del suelo).</p>
+<p>Seg&uacute;n el art&iacute;culo 36 de la Ley del IRPF, en estos casos se tomar&aacute; por importe real de los valores respectivos aquellos que resulten de la aplicaci&oacute;n de las normas del Impuesto sobre Sucesiones y Donaciones, sin que puedan exceder del valor de mercado.</p>
+</li>
+</ul>
+<p class="letrita">En este sentido, v&eacute;ase al respecto la Resoluci&oacute;n del Tribunal Econ&oacute;mico-Administrativo Central (TEAC), de 18 de diciembre de 2025, Reclamaci&oacute;n n&uacute;mero 00/00653/2025, reca&iacute;da en recurso extraordinario de alzada para la unificaci&oacute;n de criterio, seg&uacute;n la cual: "Para el c&aacute;lculo en el Impuesto sobre la Renta de las Personas F&iacute;sicas de los rendimientos netos del capital inmobiliario, en la determinaci&oacute;n del importe de los gastos fiscalmente deducibles por concepto de amortizaci&oacute;n, en el c&oacute;mputo global, debe aplicarse como l&iacute;mite de la amortizaci&oacute;n acumulada el valor de adquisici&oacute;n del inmueble generador de los rendimientos (excluido el valor del suelo), con independencia del l&iacute;mite anual previsto en el art&iacute;culo 14 del Reglamento del Impuesto sobre la Renta de las Personas F&iacute;sicas, aprobado por Real Decreto 439/2007, de 30 de marzo". Por tanto, la amortizaci&oacute;n acumulada no puede superar el valor de adquisici&oacute;n del inmueble generador de los rendimientos, que ser&aacute; el que venga determinado de la aplicaci&oacute;n de los art&iacute;culos 35 y 36 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>: el coste de adquisici&oacute;n en los bienes adquiridos a t&iacute;tulo oneroso, o el valor a efectos del <abbr title="Impuesto de Sucesiones y Donaciones">ISD</abbr> en los bienes adquiridos a t&iacute;tulo lucrativo.&nbsp;</p>
+<p class="letrita">Asimismo, t&eacute;ngase en cuenta la doctrina fijada por el Tribunal Supremo en el <span>Fundamento Jur&iacute;dico S&eacute;ptimo</span> de su Sentencia <abbr title="n&uacute;mero">n&uacute;m.</abbr> 1.502/2025, de 20 de noviembre (Sala de lo Contencioso), reca&iacute;da en el recurso de casaci&oacute;n n&uacute;m. 7361/2023 (<abbr title="Repertorio Oficial de Jurisprudencia">ROJ</abbr>: STS 5416/2025), conforme a la cual "si el sujeto pasivo no llev&oacute; a cabo actividades econ&oacute;micas empresariales o profesionales, pero obtuvo rendimiento del capital inmobiliario por la cesi&oacute;n de un inmueble y calcul&oacute; la amortizaci&oacute;n conforme a lo previsto en la Orden Ministerial 27 de marzo de 1998, cuando en un momento posterior proceda a su transmisi&oacute;n, no tendr&aacute; que aplicar la amortizaci&oacute;n m&aacute;xima del 3% sobre el coste de adquisici&oacute;n satisfecho o el valor catastral y s&iacute; podr&aacute; aplicar, para determinar el valor de adquisici&oacute;n de inmueble, otra inferior que encaje en el concepto de amortizaci&oacute;n m&iacute;nima del art&iacute;culo 35 de la LIRPF (...)". Por tanto, el<span> contribuyente podr&aacute; deducir en concepto de amortizaci&oacute;n la que resulte de aplicar un % entre el 1 por 100 (m&iacute;nimo) y el 3 por 100 (m&aacute;ximo). Cuando posteriormente proceda a la transmisi&oacute;n de dicha vivienda, para determinar el importe de la ganancia patrimonial, tendr&aacute; que minorar el importe que haya deducido previamente en concepto de amortizaci&oacute;n del inmueble.</span></p>
+<div class="border-left border-primary pl-2 border-size-5">
+<p><strong>Ejemplo:</strong></p>
+<p>Don R.R.R. adquiri&oacute; por herencia un inmueble cuyo valor atribuido en la liquidaci&oacute;n del Impuesto sobre Sucesiones y Donaciones (ISD) y que consta en la escritura p&uacute;blica de adjudicaci&oacute;n de herencia fue de 100.000 euros.</p>
+<p>Los gastos y tributos inherentes a la adquisici&oacute;n (notaria, registro, ISD) ascienden a 2.000 euros.</p>
+<p>El valor catastral del inmueble heredado: 80.000 euros.</p>
+<p>El porcentaje que representa el valor del suelo respecto al valor total del inmueble es del 20 por 100.</p>
+<p>Una vez heredado, el inmueble se destin&oacute; al arrendamiento a terceros.</p>
+<p>Calcular la amortizaci&oacute;n que corresponde a un bien inmueble que se encuentra alquilado y el l&iacute;mite de amortizaci&oacute;n acumulada deducible.</p>
+<p><strong>Soluci&oacute;n:</strong></p>
+<p><strong>1. C&aacute;lculo de la amortizaci&oacute;n.</strong></p>
+<p>Se tomar&aacute; para el c&aacute;lculo de la amortizaci&oacute;n el mayor de los siguientes valores</p>
+<ul>
+<li>Coste de adquisici&oacute;n satisfecho: 80% s/(100.000 + 2.000)&nbsp;= 81.600</li>
+<li>Valor catastral excluido el valor del suelo: (80% s/ 80.000)&nbsp;= 64.000</li>
+</ul>
+<p>El importe de la amortizaci&oacute;n deducible como gasto para determinar el rendimiento de capital inmobiliario no podr&aacute; exceder del resultado de aplicar el porcentaje del 3 por 100 sobre el mayor de los valores anteriores. En este caso ser&aacute; el coste de adquisici&oacute;n satisfecho que incluye el valor atribuido en la liquidaci&oacute;n del Impuesto sobre Sucesiones y Donaciones m&aacute;s los gastos y tributos inherentes a la adquisici&oacute;n (excluido del c&oacute;mputo&nbsp;el valor del suelo).</p>
+<p>Por tanto, en este caso el importe de la amortizaci&oacute;n anual m&aacute;xima deducible ser&aacute; el 3% s/81.600 euros = 2.448 euros</p>
+<p><strong>2. L&iacute;mite amortizaci&oacute;n acumulada.</strong></p>
+<p>El contribuyente podr&aacute; amortizar el inmueble hasta que el importe de la amortizaci&oacute;n acumulada alcance el valor de adquisici&oacute;n del inmueble que, conforme a lo que establece el art&iacute;culo 36 de la Ley del IRPF, es el valor del inmueble a efectos del <abbr title="Impuesto de Sucesiones y Donaciones">ISD</abbr> (excluyendo del c&oacute;mputo el valor del suelo) m&aacute;s tributos y gastos inherentes a la transmisi&oacute;n, esto es, 80% x (100.000 + 2.000) = 81.600 euros.</p>
+</div>
+<div class="border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p><em><span class="verde"><strong>Recuerde: </strong></span>en el supuesto de que el inmueble no hubiera estado arrendado durante todo el a&ntilde;o, la amortizaci&oacute;n deducible, los intereses y dem&aacute;s gastos de financiaci&oacute;n, los gastos en primas de seguros, comunidad, Impuesto sobre Bienes Inmuebles, suministros etc., ser&aacute;n los que correspondan al n&uacute;mero de d&iacute;as del a&ntilde;o en que el inmueble ha estado arrendado. </em></p>
+<p><em>En los per&iacute;odos en que el inmueble no haya estado arrendado se deber&aacute; imputar como renta inmobiliaria la cantidad que resulte de aplicar el 2 por 100 o el 1,1 por 100, seg&uacute;n proceda, al valor catastral del inmueble, que proporcionalmente corresponda al n&uacute;mero de d&iacute;as comprendidos en dicho per&iacute;odo, de acuerdo con lo previsto en el art&iacute;culo 85 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>.</em></p>
+</div>
+<h2>&bull; Bienes de naturaleza mobiliaria cedidos conjuntamente con el inmueble</h2>
+<p>Ser&aacute;n amortizables siempre que sean susceptibles de utilizaci&oacute;n por un per&iacute;odo de tiempo superior a un a&ntilde;o.</p>
+<p>Se entender&aacute; que la amortizaci&oacute;n anual deducible por cada uno de los bienes cedidos cumple el requisito de efectividad, cuando su importe no exceda del resultado de aplicar a sus respectivos costes de adquisici&oacute;n satisfechos los coeficientes de amortizaci&oacute;n que le corresponda de acuerdo con la <a href="/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c07-rendimientos-actividades-economicas-estimacion-directa/fase-1-determinacion-rendimiento-neto/amortizaciones-dotaciones-ejercicio-fiscalmente-deducibles/especialidades-fiscales-amortizaciones-modalidad-simplificada.html">tabla de amortizaciones simplificada</a>&nbsp;aprobada por Orden de 27 de marzo de 1998.</p>
+<p>Dentro de esta tabla se recoge, entre otros, el siguiente coeficiente m&aacute;ximo de amortizaci&oacute;n,&nbsp;que para&nbsp;<strong>Instalaciones, mobiliario y enseres </strong>es&nbsp;el<strong>&nbsp;10 por 100.</strong></p>
+<h2>&bull; Derechos o facultades de uso o disfrute sobre bienes inmuebles</h2>
+<p>Ser&aacute;n amortizables siempre que su adquisici&oacute;n haya supuesto un coste para el contribuyente. En estos casos es preciso distinguir:</p>
+<ol type="a">
+<li>
+<p><strong>Si el derecho o facultad tiene plazo de duraci&oacute;n determinado,</strong> la amortizaci&oacute;n anual deducible ser&aacute; la que resulte de dividir el coste de adquisici&oacute;n satisfecho entre el n&uacute;mero de a&ntilde;os de duraci&oacute;n del mismo.</p>
+</li>
+<li>
+<p><strong>Si el derecho o facultad fuese vitalicio,</strong> la amortizaci&oacute;n computable ser&aacute; el resultado de aplicar el coeficiente del 3 por 100 sobre el coste de adquisici&oacute;n satisfecho.</p>
+</li>
+</ol>
+<p>En ambos casos, el importe de las amortizaciones deducibles en el ejercicio no podr&aacute; superar la cuant&iacute;a de los rendimientos &iacute;ntegros derivados de cada derecho.</p>
+<div class="border-left border-primary pl-2 border-size-5">
+<p><strong>Ejemplo:</strong></p>
+<p>Don A.S.T adquiri&oacute; mediante compraventa por un periodo de 10 a&ntilde;os el derecho de usufructo sobre un inmueble pagando por ello la cantidad de 100.000 euros. Durante 2025 dicho inmueble ha estado arrendado percibiendo una renta anual 20.000 euros.</p>
+<p>Calcular la amortizaci&oacute;n que corresponde a un bien inmueble que se encuentra alquilado.</p>
+<p><strong>Soluci&oacute;n:</strong></p>
+<p>Amortizaci&oacute;n</p>
+<ul>
+<li>Coste de adquisici&oacute;n /duraci&oacute;n del usufructo (100.000 &divide;&nbsp;10 a&ntilde;os) = 10.000</li>
+<li>L&iacute;mite rendimientos &iacute;ntegros del derecho: Renta anual del alquiler = 20.000</li>
+</ul>
+</div>
+<p class="border border-primary rounded-sm border-size-1 p-3"><span class="verde"><em><strong>Plena propiedad y usufructo sobre un inmueble:</strong></em></span> <em>en los casos en que un contribuyente es titular del 50 por 100 de la plena propiedad de un inmueble destinado al arrendamiento y sobre el restante 50 por 100 tiene el usufructo, el gasto por amortizaci&oacute;n se calcular&aacute; de forma diferente para la parte del inmueble del que es pleno propietario y la parte del que es usufructuario, atendiendo a las reglas que para cada uno de ellos fueron indicadas con anterioridad.</em></p><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-17">17/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

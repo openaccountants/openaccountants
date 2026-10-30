@@ -4,12 +4,14 @@ description: "Use this skill to turn a German self-employed person's year of ban
 version: 2.1
 jurisdiction: DE
 tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
-category: international
+last_updated: 2026-10-24
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
-verified_by: pending
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Germany: income tax for the self-employed, from bank statement to tax, tax year 2026
@@ -258,3 +260,23 @@ In `credit`, the second term is the tax on trade income: here trade income is al
 | BMF booklet "Steuern von A bis Z" (Stand January 2025; church tax 8 or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-23 |
 
 Not yet confirmed: which states charge 8% and which 9% church tax, and their rounding (state church tax rules, not on a federal page); the one-year life for computers rests on a BMF letter of 22 February 2022 as cited in the 2026 EÜR instructions, not on the statute; the EUR 0.30 per km rate for business trips rests on the same instructions; the 2026 main form and Anlage S and G line numbers (ELSTER's 2026 guide is not yet published).
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

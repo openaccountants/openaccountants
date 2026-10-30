@@ -1,0 +1,95 @@
+{
+  "as_of": "2026-10-28T03:55:11.721871+00:00",
+  "baseline_head": "f7fdffa3498674a9a9b9dae42552f135e140dbfe",
+  "origin_main": "73f566473aaab8cda1e1a28c0fb8a9c3cd6f7dd0",
+  "before29_hashes": {
+    "README.md": "2855585c675336e1c62ca7b01961fe8aac65ac8e9b0164206426e10399a432d5",
+    "es-autonomous-worker.md": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+    "es-beckham.md": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+    "es-canary-islands-igic.md": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+    "es-capital-gains.md": "77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b",
+    "es-ceuta-melilla-ipsi.md": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+    "es-corporate-tax.md": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+    "es-estimated-tax.md": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+    "es-foral-corporate-tax.md": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+    "es-foral-income-tax.md": "23052343e3d02652b59b9feb3f1396ee9deaaa2721ddefd34aefb8e6557206e4",
+    "es-foral-non-resident-tax.md": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+    "es-foral-payroll.md": "9868c61bb5c8eeb52912fff9a5b044db697c23a0d43abb6e462896a68844c086",
+    "es-income-tax.md": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+    "es-irpf-deductions.md": "ec29536e88a15780172e35e2b86f6463327fd9d3c7fa3a74c656f82091fb7fbc",
+    "es-modelo-111.md": "a4785209c71ab650b1575554e31046217ee7d6aeba5a4758040b76316c3bc66d",
+    "es-non-resident-income-tax-irnr-and.md": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+    "es-rental-income.md": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+    "es-social-contributions.md": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+    "es-vat-return.md": "3f715c08e437840f258623dfbdb47e49359f58e89d040e899c3f1809c46c837a",
+    "references.md": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+    "spain-bookkeeping.md": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+    "spain-crypto-tax.md": "9533a3e6d989df94227b38aa3d5d0c9878f9ed3896645962ff8bff78991b0368",
+    "spain-einvoice.md": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+    "spain-financial-statements.md": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+    "spain-formation.md": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+    "spain-payroll.md": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+    "spain-tax-optimization.md": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+    "spain-transfer-pricing.md": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+    "spain-vat-return.md": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977"
+  },
+  "review_identities": [
+    {
+      "role": "Q02",
+      "report": "spain-nonmotor-fuel-VAT-independent-review/report.md",
+      "report_sha256": "d73f894b7cb8878760ddeb4fd122753f72c53d111c893ecd6e93835c2ac9e4c1",
+      "manifest": "spain-nonmotor-fuel-VAT-independent-review/artifact-manifest.json",
+      "manifest_sha256": "b370a81e6ea39bfec4d7d3bfdc45257b64a2e8d82ad8bd113242d8f267266713",
+      "members_verified": 47
+    },
+    {
+      "role": "Q03",
+      "report": "spain-electricity-10kw-independent-review/report.md",
+      "report_sha256": "fed6e78c6e32e67c45ca35d56598c83bf5bd6c1256e15b6215be45fa4fb7a056",
+      "manifest": "spain-electricity-10kw-independent-review/artifact-manifest.json",
+      "manifest_sha256": "1c63eb6bf7312dcfc923aa84439c53498f2f22ec883dc6ac8d0631ebd2cfac2a",
+      "members_verified": 38
+    },
+    {
+      "role": "crypto",
+      "report": "spain-ordinary-crypto-independent-review/report.md",
+      "report_sha256": "d0cae84f42104f9afbaf4c8a863b9c8a2eac1f2554549c1ce5efe21b64b2fc8c",
+      "manifest": "spain-ordinary-crypto-independent-review/artifact-manifest.json",
+      "manifest_sha256": "7da3634e22e373ee1f3cffe99ab7063deb89f9e3e94748a77144bfb54f69d24b",
+      "members_verified": 31
+    },
+    {
+      "role": "Q04",
+      "report": "spain-G110-January-extension-independent-review/report.md",
+      "report_sha256": "97074df7daf0bc7bcbcd80820b2c44cf962fbdf2087a369ec5a80645e960864f",
+      "manifest": "spain-G110-January-extension-independent-review/artifact-manifest.json",
+      "manifest_sha256": "d09222d95e1e31949150dc5f4fb38a5a5914375899776760881ae121f4983201",
+      "members_verified": 43
+    },
+    {
+      "role": "State111",
+      "report": "spain-State111-July-bridge-independent-review/report.md",
+      "report_sha256": "274514b4d71eac826f3d34520863e8e4872cf31683bbe9252decdbaa94ae984d",
+      "manifest": "spain-State111-July-bridge-independent-review/artifact-manifest.json",
+      "manifest_sha256": "facee7891bd1b3c60a8254cdd34a372358363873516a84560b7364dbbbe5c826",
+      "members_verified": 13
+    },
+    {
+      "role": "final-composition",
+      "report": "spain-current-method-composition-independent-review/report.md",
+      "report_sha256": "d45dc6527d7430ca6d90776a156ac15a10266c857ab2a710e6ca0244672f1bd3",
+      "manifest": "spain-current-method-composition-independent-review/artifact-manifest.json",
+      "manifest_sha256": "a9b82da012d641e45186e6e6a3e7c98ffb130400d4749cdcda07eac43528e7eb",
+      "members_verified": 126
+    }
+  ],
+  "archive": {
+    "original_files": 567,
+    "unique_blobs": 393,
+    "original_bytes": 58365561,
+    "stored_bytes": 15094559,
+    "all_roundtrips_verified": true
+  },
+  "country_ready": false,
+  "pushed": false
+}

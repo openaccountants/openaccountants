@@ -14,13 +14,13 @@ Calendar tax year. Direct taxes (income tax, corporate income tax, municipal bus
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | luxembourg-income-tax | source-cited draft |
-| IT-CORP, corporate income tax | lu-corporate-tax | source-cited draft |
-| VAT | luxembourg-vat-return | source-cited draft |
-| SC, social contributions | luxembourg-social-contributions | source-cited draft |
-| PR, payroll withholding | luxembourg-payroll | source-cited draft |
-| TP, transfer pricing | lu-transfer-pricing | source-cited draft |
-| XB, cross-border | lu-cross-border | source-cited draft |
+| IT-IND, individual income tax | luxembourg-income-tax | checked against the law |
+| IT-CORP, corporate income tax | lu-corporate-tax | checked against the law |
+| VAT | luxembourg-vat-return | checked against the law |
+| SC, social contributions | luxembourg-social-contributions | checked against the law |
+| PR, payroll withholding | luxembourg-payroll | checked against the law |
+| TP, transfer pricing | lu-transfer-pricing | checked against the law |
+| XB, cross-border | lu-cross-border | checked against the law |
 
 luxembourg-tax-optimization (self-employed versus SARL planning) belongs to the Accounting packs milestone and is not counted here.
 

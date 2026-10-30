@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="BOE-A-2026-18828 Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las comunidades autónomas que han registrado superávits presupuestarios y excesos de financiación pendientes de aplicar de ejercicios anteriores a 2026." />
+    <title>BOE-A-2026-18828 Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las comunidades autónomas que han registrado superávits presupuestarios y excesos de financiación pendientes de aplicar de ejercicios anteriores a 2026.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/texto.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2026-18828"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rdl"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2026-18828" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#date_document" content="2026-09-08" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#number" content="23" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/329"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/420"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/599"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/669"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1757"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1758"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3713"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4107"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5345"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6832"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7162"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/8113"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rdl"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2026-18828" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#date_document" content="2026-09-08" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#number" content="23" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/329"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/420"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/599"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/669"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1757"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1758"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3713"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4107"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5345"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6832"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7162"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/8113"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las comunidades autónomas que han registrado superávits presupuestarios y excesos de financiación pendientes de aplicar de ejercicios anteriores a 2026." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2026-09-09" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/epub"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/xml"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/epub" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/epub" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/epub" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/cat"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat" property="http://data.europa.eu/eli/ontology#title" content="Reial decret llei 23/2026, de 8 de setembre, pel qual s&#039;adopten mesures fiscals i financeres urgents que contribueixin a la reconstrucció econòmica i social de l&#039;illa de La Palma, així com mesures tendents a promoure l&#039;execució d&#039;inversions per part de les comunitats autònomes que han registrat superàvits pressupostaris i excessos de finançament pendents d&#039;aplicar d&#039;exercicis anteriors al 2026." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat" property="http://data.europa.eu/eli/ontology#date_publication" content="2026-09-09" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2026/09/08/23/dof/cat"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="doc.php?lang=es&amp;id=BOE-A-2026-18828" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="doc.php?lang=ca&amp;id=BOE-A-2026-18828" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=gl&amp;id=BOE-A-2026-18828" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="doc.php?lang=eu&amp;id=BOE-A-2026-18828" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="doc.php?lang=va&amp;id=BOE-A-2026-18828" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=en&amp;id=BOE-A-2026-18828" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="doc.php?lang=fr&amp;id=BOE-A-2026-18828" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>        <li class="destino">Documento BOE-A-2026-18828</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<h2 class="fuera">Documento BOE-A-2026-18828</h2>
+<div class="enlacesDoc" id="barraSep">
+  <h3 class="documento-tit">Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las comunidades autónomas que han registrado superávits presupuestarios y excesos de financiación pendientes de aplicar de ejercicios anteriores a 2026.</h3>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl>
+        <dt>Publicado en:</dt>
+        <dd>«<abbr title="Boletín Oficial del Estado">BOE</abbr>» <abbr title="número">núm.</abbr> 223, de 9 de septiembre de 2026, páginas 120410 a 120420 (11 <abbr title="páginas">págs.</abbr>)</dd>
+        <dt>Sección:</dt>
+        <dd>I. Disposiciones generales</dd>
+        <dt>Departamento:</dt>
+        <dd>Jefatura del Estado</dd>
+        <dt>Referencia:</dt>
+        <dd>BOE-A-2026-18828</dd>
+        <dt>Permalink ELI:</dt>
+        <dd>
+          <a href="https://www.boe.es/eli/es/rdl/2026/09/08/23" title="Permalink ELI">https://www.boe.es/eli/es/rdl/2026/09/08/23</a>
+        </dd>
+      </dl>
+    </div>
+    <ul class="enlaces-doc">
+      <li class="tit-enlaces">Otros formatos:</li>
+      <li class="puntoPDF">
+        <a title="Documento PDF de la publicación original" href="/boe/dias/2026/09/09/pdfs/BOE-A-2026-18828.pdf">PDF</a>
+      </li>
+      <li class="puntoEpub">
+        <a title="Libro electrónico de BOE-A-2026-18828" href="/diario_boe/epub.php?id=BOE-A-2026-18828">EPUB</a>
+      </li>
+      <li class="puntoXML">
+        <a target="_blank" title="Texto y metadatos en formato XML" href="/diario_boe/xml.php?id=BOE-A-2026-18828">XML</a>
+      </li>
+    </ul>
+    <ul class="enlaces-doc cooficiales">
+      <li class="tit-enlaces">Lenguas cooficiales:</li>
+      <li class="puntoPDFsup">
+        <a title="Convenio Generalitat de Catalunya" href="/boe_catalan/dias/2026/09/09/pdfs/BOE-A-2026-18828-C.pdf">PDF català</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .metadatosDoc -->
+</div>
+<!-- .enlacesDoc -->
+<div class="pretexto">
+  <div class="tabs">
+    <input name="tabs" type="radio" id="tab-texto" class="input" checked="checked"/>
+    <label for="tab-texto" class="label">Texto</label>
+    <div id="DOdocText" class="panel">
+      <h4>TEXTO ORIGINAL</h4>
+      <div id="textoxslt">
+        <p class="centro_redonda">I</p>
+        <p class="parrafo_2">La persistencia de determinadas situaciones económicas y sociales adversas derivadas de la erupción volcánica que tuvo lugar en Cumbre Vieja entre septiembre y diciembre de 2021, y la finalización de la vigencia extendida de las medidas puestas en marcha para afrontarlas, hace preciso mantener alguna medida que permita seguir haciendo frente a estas situaciones de vulnerabilidad social y económica. A su vez, es necesario habilitar determinadas medidas financieras para promover la actividad inversora por parte de las comunidades autónomas.</p>
+        <p class="parrafo">En primer lugar, en el ámbito del Impuesto sobre la Renta de las Personas Físicas, se amplía al período impositivo 2026 la aplicación de una deducción análoga a la deducción por obtención de rentas en Ceuta y Melilla a los contribuyentes con residencia habitual y efectiva en la isla de La Palma.</p>
+        <p class="parrafo">En segundo lugar, se aprueban otras medidas dirigidas a flexibilizar el marco financiero de las comunidades autónomas con niveles de endeudamiento sobre el Producto Interior Bruto regional inferiores al 12,4 por ciento a cierre de 2025 y con superávits presupuestarios y excesos de financiación pendientes de aplicar, para que puedan financiar inversiones entre 2026 y 2028. Dentro de estas medidas se incluye una habilitación específica a la Comunidad Autónoma de Canarias para destinar 100 millones de euros a financiar ayudas destinadas a personas físicas y entidades afectadas por la erupción volcánica de la isla de La Palma ocurrida en septiembre de 2021, sin que le resulte aplicable a estos efectos lo establecido en el artículo 32 de la Ley Orgánica 2/2012, de 27 de abril, de Estabilidad Presupuestaria y Sostenibilidad Financiera.</p>
+        <p class="parrafo">Igualmente, se posibilita el destino del superávit presupuestario de 2025 de las comunidades autónomas para financiar inversiones financieramente sostenibles en 2026 y 2027.</p>
+        <p class="parrafo">Finalmente, se abre un nuevo plazo para solicitar la suspensión de obligaciones de pago de interés y principal para préstamos y créditos con y sin garantía hipotecaria de determinados deudores de los municipios de El Paso, Los Llanos de Aridane y Tazacorte inscritos en el Registro de personas afectadas por las erupciones volcánicas de la isla de La Palma, aliviando de este modo la situación de familias de agricultores que no pueden trabajar en sus fincas porque aún se encuentran afectadas, y se establece un nuevo régimen regulador de la prestación extraordinaria por cese de actividad a la que podrán acceder cumpliendo determinados requisitos, los trabajadores autónomos cuyas actividades se hayan visto afectadas por los daños ocasionados por la erupción volcánica registrada en la zona de Cumbre Vieja, en la isla de La Palma.</p>
+        <p class="centro_redonda">II</p>
+        <p class="parrafo_2">Así, el artículo 1 da nueva redacción a la disposición adicional quincuagésima séptima de la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio con efectos desde 1 de enero de 2026 para que, también en el período impositivo 2026, la deducción por obtención de rentas en Ceuta y Melilla resulte igualmente aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma.</p>
+        <p class="parrafo">El artículo 2 contiene reglas especiales para el destino de los excesos de financiación y superávits presupuestarios pendientes de aplicar por parte de las comunidades autónomas con deuda sobre el Producto Interior Bruto regional inferior al 12,4 por ciento a cierre de 2025, así como la habilitación a la Comunidad Autónoma de Canarias para que pueda destinar 100 millones de euros a financiar ayudas destinadas a personas físicas y entidades afectadas por la erupción volcánica de la isla de La Palma ocurrida en septiembre de 2021.</p>
+        <p class="parrafo">El artículo 3 establece reglas excepcionales de destino del superávit presupuestario de las comunidades autónomas de 2025.</p>
+        <p class="parrafo">En el artículo 4 se abre un nuevo plazo para solicitar la suspensión de obligaciones de pago de interés y principal para préstamos y créditos con y sin garantía hipotecaria para aquellos deudores de los municipios de El Paso, Los Llanos de Aridane y Tazacorte inscritos en el Registro de personas afectadas por las erupciones volcánicas de la isla de La Palma cuyos ingresos principales provengan de la agricultura y que hubieran solicitado la suspensión de sus obligaciones de pago de intereses y principal para préstamos y créditos con y sin garantía hipotecaria o la prórroga de la misma en virtud de lo dispuesto en la disposición adicional cuarta del Real Decreto-ley 20/2021, de 5 de octubre, por el que se adoptan medidas urgentes de apoyo para la reparación de los daños ocasionados por las erupciones volcánicas y para la reconstrucción económica y social de la isla de La Palma, aliviando de este modo la situación de familias de agricultores que no pueden trabajar en sus fincas porque aún se encuentran afectadas.</p>
+        <p class="parrafo">El artículo 5 establece un nuevo régimen regulador con relación a los requisitos que deben cumplir los trabajadores autónomos para acceder a la prestación extraordinaria por cese de actividad cuando sus actividades se hayan visto afectadas por los daños ocasionados por la erupción volcánica registrada en la zona de Cumbre Vieja, en la isla de La Palma, excluyendo, de una parte, las subvenciones percibidas en el marco del Programa Comunitario de Apoyo a las Producciones Agrarias Canarias (POSEI), a los efectos de determinar los rendimientos netos computables fiscalmente procedentes de la actividad por cuenta propia, así como el total de ingresos computables fiscalmente derivados de dicha actividad, y de otra, habilitando a que los trabajadores autónomos que hubieran iniciado su actividad en 2020 también puedan tener acceso a esta prestación.</p>
+        <p class="parrafo">Finalmente, se incluyen dos disposiciones adicionales y dos disposiciones finales.</p>
+        <p class="parrafo">La disposición adicional primera regula la habilitación al Ministerio competente en materia de asuntos sociales para la realización de los libramientos de créditos y pagos necesarios para la ejecución de los compromisos contenidos en el Acuerdo de la Comisión Mixta del Concierto Económico de 9 de julio de 2026 y la habilitación de los créditos presupuestarios necesarios y suficientes para ello. La disposición adicional segunda establece que las ayudas destinadas a actividades económicas se concederán de conformidad con la normativa de la Unión Europea en materia de ayudas de Estado.</p>
+        <p class="parrafo">La disposición final primera contempla el título competencial que habilita su aprobación y la segunda, la entrada en vigor del real decreto-ley.</p>
+        <p class="centro_redonda">III</p>
+        <p class="parrafo_2">El artículo 86 de la Constitución Española permite al Gobierno dictar decretos-leyes «en caso de extraordinaria y urgente necesidad», siempre que no afecten al ordenamiento de las instituciones básicas del Estado, a los derechos, deberes y libertades de los ciudadanos regulados en el Título I de la Constitución, al régimen de las Comunidades Autónomas ni al Derecho electoral general. Se configura, por tanto, esta norma como un instrumento con unos contornos bien definidos en los que el juicio político de oportunidad y necesidad goza de un amplio margen, siempre que se oriente en alcanzar un resultado concreto ante una situación de urgencia ineludible.</p>
+        <p class="parrafo">Este real decreto-ley no regula ningún aspecto que afecte al ordenamiento de las instituciones básicas del Estado, ni a los derechos y libertades de los ciudadanos regulados en el Título I de la Constitución, al régimen de las Comunidades Autónomas ni al Derecho electoral general.</p>
+        <p class="parrafo">De este modo, no hay afectación al ordenamiento de las instituciones básicas del Estado y al Derecho electoral general, pues se trata de materias ajenas al objeto del real decreto-ley. En cuanto a la afectación al régimen de las comunidades autónomas, el real decreto-ley no afecta a la posición institucional de las mismas, ni delimita de forma directa y positiva las competencias que aquellas tienen atribuidas y, en todo caso, se dicta en el ámbito propio de las competencias exclusivas que el artículo 149.1 de la Constitución Española reconoce al Estado, cabe concluir su no afectación al régimen de las comunidades autónomas.</p>
+        <p class="parrafo">Finalmente, y en relación con la prohibición de afectación a los derechos, deberes y libertades de los ciudadanos regulados en el título I de la Constitución Española, la consolidada doctrina constitucional se resume en la STC 139/2016, de 21 de julio (FJ 6), «1.º) (…) este Tribunal ha rechazado una interpretación extensiva de dicho límite que supondría el vaciamiento de la figura del decreto-ley, haciéndolo “inservible para regular con mayor o menor incidencia cualquier aspecto concerniente a las materias incluidas en el título I de la Constitución; 2.º) La cláusula restrictiva debe ser entendida de modo que no se reduzca a la nada la figura del decreto-ley, de suerte que lo que se prohíbe constitucionalmente es que se regule un régimen general de estos derechos, deberes y libertades o que vaya en contra del contenido o elementos esenciales de algunos de tales derechos” (STC 111/1983, de 2 de diciembre, FJ 8, confirmada por otras posteriores); 3.º) El Tribunal no debe fijarse únicamente en el modo en que se manifiesta el principio de reserva de ley en una determinada materia, sino más bien ha de examinar si ha existido “afectación” por el decreto-ley de un derecho, deber o libertad regulado en el título I CE, lo que exigirá tener en cuenta la configuración constitucional del derecho, deber o libertad afectado en cada caso e incluso su ubicación sistemática en el texto constitucional y la naturaleza y alcance de la concreta regulación de que se trate (…)».</p>
+        <p class="parrafo">En este sentido, la medida tributaria contenida en este real decreto-ley no afecta al deber de todos los españoles de contribuir al sostenimiento de los gastos públicos, previsto el artículo 31.1 de la Constitución Española, pues en atención a su limitado alcance no supondría una «intervención o innovación normativa que, por su entidad cualitativa o cuantitativa, altere sensiblemente la posición del obligado a contribuir según su capacidad económica en el conjunto del sistema tributario» (cfr. STC 73/2017, de 8 de junio [FJ 2]).</p>
+        <p class="parrafo">Igualmente, las medidas relativas a la habilitación a las comunidades autónomas para que puedan destinar sus recursos procedentes de sus superávits presupuestarios o excesos de financiación pendientes de aplicar al cierre de 2025 a realizar inversiones y, específicamente, a la Comunidad Autónoma de Canarias para que pueda destinar 100 millones de euros a la financiación de ayudas destinadas a personas físicas o jurídicas afectadas por la erupción volcánica en la Isla de La Palma, así como la habilitación a las comunidades autónomas que registraron superávit presupuestario en 2025 a ejecutar inversiones financieramente sostenibles se justifican por la necesidad de impulsar inversiones públicas que coadyuven a la promoción económica y social de las comunidades autónomas más saneadas financieramente. Este tipo de medidas han sido habilitadas en ocasiones similares a partir de 2018 en leyes anuales de presupuestos o mediante real decreto-ley.</p>
+        <p class="parrafo">Finalmente, la prestación extraordinaria por cese de actividad y la medida de suspensión de obligaciones de pago de intereses y principal para préstamos y créditos con y sin garantía hipotecaria responden a la necesidad urgente de seguir adoptando medidas de apoyo a las personas cuya capacidad económica se ha visto fuertemente mermada como consecuencia de los daños derivados de la erupción volcánica de la Isla de La Palma.</p>
+        <p class="parrafo">En definitiva, por su objeto, finalidad y por el contexto de urgencia y exigencia temporal en el que se dicta la norma, cabe concluir que se respetan los presupuestos y límites establecidos en el artículo 86 de la Constitución Española.</p>
+        <p class="parrafo">En el presente caso la urgencia viene determinada porque afectan a materias fiscales, de prestaciones económicas y presupuestarias de este ejercicio que han de aprobarse para adecuarlas a la situación financiera actual y la necesidad de promover inversiones financieramente sostenibles.</p>
+        <p class="parrafo">En definitiva, el real decreto-ley representa un instrumento constitucionalmente preciso, en tanto que pertinente y adecuado para la consecución del fin que justifica la legislación de urgencia, que no es otro, tal como reiteradamente ha exigido nuestro Tribunal Constitucional, que subvenir a una situación concreta, dentro de los objetivos gubernamentales, que, por razones difíciles de prever, requiere una acción normativa inmediata en un plazo más breve que el requerido por la vía normal o por el procedimiento de urgencia para la tramitación parlamentaria de las leyes.</p>
+        <p class="parrafo">De todo lo anterior se desprende la necesidad y oportunidad de adoptar las medidas previstas por el presente real decreto-ley.</p>
+        <p class="centro_redonda">IV</p>
+        <p class="parrafo_2">Este real decreto-ley se adecua a los principios de buena regulación establecidos en el artículo 129 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, toda vez que el principio de necesidad ha quedado sobradamente justificado anteriormente con la explicación y concurrencia del presupuesto habilitante exigido por el artículo 86.1 de la Constitución Española para la aprobación por el Gobierno de reales decretos-leyes.</p>
+        <p class="parrafo">En lo que concierne a los principios de seguridad jurídica, proporcionalidad y eficacia, debe destacarse que la modificación se limita estrictamente a abordar de forma puntual, precisa y clara este aspecto, mediante la mejor alternativa posible, la aprobación de un real decreto-ley, dado el rango legal exigible y la urgente necesidad ya referida. De acuerdo con lo antes expuesto, esta norma está justificada por razones de interés general, persigue unos fines claros y determinados y es el instrumento más adecuado para garantizar su consecución. Asimismo, es coherente con el resto del ordenamiento jurídico.</p>
+        <p class="parrafo">En cuanto al principio de transparencia, si bien la norma está exenta de los trámites de consulta pública, audiencia e información pública, tal y como autoriza el artículo 26.11 de la Ley 50/1997, de 27 de noviembre, del Gobierno, se definen claramente sus objetivos, reflejados tanto en su parte expositiva como en la Memoria que lo acompaña. Finalmente, respecto del principio de eficiencia, la norma no genera cargas administrativas para la ciudadanía y permitirá racionalizar la planificación y ejecución de los recursos públicos por parte de las Comunidades Autónomas.</p>
+        <p class="parrafo">Este real decreto-ley se dicta al amparo de lo dispuesto en el artículo 149.1.11.ª, 13.ª, 14.ª y 17.ª de la Constitución Española, que atribuyen al Estado, respectivamente, las competencias exclusivas en materia de bases de la ordenación del crédito, banca y seguros, bases y coordinación de la planificación general de la actividad económica, Hacienda General y Deuda del Estado y sobre legislación básica y régimen económico de la Seguridad Social, sin perjuicio de la ejecución de sus servicios por las Comunidades Autónomas.</p>
+        <p class="parrafo_2">En su virtud, haciendo uso de la autorización contenida en el artículo 86 de la Constitución Española, a propuesta del Ministro de Hacienda y del Ministro de Política Territorial y Memoria Democrática, y previa deliberación del Consejo de Ministros en su reunión del día 8 de septiembre de 2026,</p>
+        <p class="centro_redonda">DISPONGO:</p>
+        <h5 class="articulo">Artículo 1. Modificación de la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio.</h5>
+        <p class="parrafo">Con efectos desde 1 de enero de 2026, se modifica la disposición adicional quincuagésima séptima de la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio, que queda redactada de la siguiente forma:</p>
+        <blockquote class="sangrado">
+      <h5 class="articulo">«Disposición adicional quincuagésima séptima. Deducción por residencia habitual y efectiva en la isla de La Palma durante los períodos impositivos 2022, 2023, 2024, 2025 y 2026.</h5>
+      <p class="parrafo">1. En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma, debiendo entenderse, a estos efectos, que las referencias realizadas a Ceuta y Melilla en dicho artículo, en el artículo 101 de esta ley y en su respectivo desarrollo reglamentario lo son también a la isla de La Palma.</p>
+      <p class="parrafo">2. En el período impositivo 2024, 2025 y 2026, lo dispuesto en el apartado 1 anterior solamente resultará aplicable para determinar el tipo de retención e ingreso a cuenta a practicar sobre los rendimientos a los que resulte de aplicación la citada deducción que hubieran sido satisfechos en 2024 a partir de la entrada en vigor del Real Decreto-ley 4/2024, de 26 de junio, por el que se prorrogan determinadas medidas para afrontar las consecuencias económicas y sociales derivadas de los conflictos en Ucrania y Oriente Próximo y se adoptan medidas urgentes en materia fiscal, energética y social, en 2025, a partir de la entrada en vigor del Real Decreto-ley 13/2025, de 25 de noviembre, por el que se adoptan medidas complementarias urgentes para la recuperación económica y social de la isla de La Palma tras los daños ocasionados por las erupciones volcánicas, y en 2026, a partir de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las comunidades autónomas que han registrado superávits presupuestarios y excesos de financiación pendientes de aplicar de ejercicios anteriores a 2026, o en dichos ejercicios, para determinar el tipo del pago fraccionado correspondiente a las actividades económicas que tengan derecho a la misma cuyo plazo de presentación no se hubiera iniciado en el momento de la entrada en vigor del Real Decreto-ley 4/2024, de 26 de junio, del Real Decreto-ley 13/2025, de 25 de noviembre, o del Real Decreto-ley 23/2026, de 8 de septiembre, según corresponda el pago fraccionado al período impositivo 2024, 2025 o 2026 respectivamente.</p>
+      <p class="parrafo">En particular, para calcular el tipo de retención o ingreso a cuenta aplicable a los rendimientos del trabajo a los que resulte de aplicación el procedimiento general de retención a que se refiere el artículo 82 del Reglamento del Impuesto, que se satisfagan o abonen en 2024, 2025 y 2026 a partir de dichas fechas, respectivamente, se tendrá en cuenta lo dispuesto en el apartado 1 anterior, regularizándose, si procede, el tipo de retención o ingreso a cuenta en los primeros rendimientos del trabajo que se satisfagan o abonen en cada ejercicio a partir de dichas fechas.</p>
+      <p class="parrafo">No obstante, lo dispuesto en el párrafo anterior podrá realizarse, a opción del pagador, en los primeros rendimientos del trabajo que se satisfagan o abonen en 2024 a partir del mes siguiente de la entrada en vigor del Real Decreto-ley 4/2024, de 26 de junio, en 2025 a partir del mes siguiente de la entrada en vigor del Real Decreto-ley 13/2025, de 25 de noviembre, o en 2026 a partir del mes siguiente de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, en cuyo caso el tipo de retención o ingreso a cuenta a practicar sobre los rendimientos del trabajo satisfechos en cada uno de dichos ejercicios con anterioridad a estas fechas se determinará sin tomar en consideración lo dispuesto en el apartado 1 anterior.»</p>
+    </blockquote>
+        <h5 class="articulo">Artículo 2. Reglas especiales para el destino de los excesos de financiación y superávits presupuestarios de las comunidades autónomas a cierre de 2025 y habilitación a la Comunidad Autónoma de Canarias para destinar parte de sus excesos de financiación y superávits presupuestarios a cierre de 2025 a financiar ayudas destinadas a personas físicas y entidades afectadas por la erupción volcánica de la isla de La Palma ocurrida en septiembre de 2021.</h5>
+        <p class="parrafo">1. Aquellas comunidades autónomas que, conforme a los datos del Banco de España, tengan una deuda pública sobre el Producto Interior Bruto regional a cierre de 2025 inferior al 12,4 por ciento, quedarán eximidas de reducir el endeudamiento neto por los excesos de financiación o superávits pendientes de compensar a cierre de 2025 sin que resulte aplicable a estos efectos lo establecido en el artículo 32 de la Ley Orgánica 2/2012, de 27 de abril, de Estabilidad Presupuestaria y Sostenibilidad Financiera, siempre que lo destinen a financiar inversiones en los términos definidos en el apartado tres del artículo siguiente, a ejecutar en los años 2026, 2027 y 2028. A tales efectos, estas comunidades autónomas quedarán eximidas de la obligación de calificar dichas inversiones como financieramente sostenibles, tanto a los efectos de lo dispuesto en el artículo 2 del Real Decreto-ley 15/2025 como de lo previsto en el artículo 3 del presente real decreto-ley.</p>
+        <p class="parrafo">Excepcionalmente, también la Comunidad Autónoma de Canarias podrá destinar 100 millones de euros de sus excesos de financiación o superávits registrados a cierre de 2025 a financiar ayudas destinadas a personas físicas y entidades afectadas por la erupción volcánica de la isla de La Palma ocurrida en septiembre de 2021, y con carácter preferente, a la compensación por kilogramo improductivo de 2024, 2025 y 2026, a las compensaciones por la reconstrucción de infraestructuras agrarias destruidas por la erupción volcánica como cuartos de aperos, cuadras, depósitos de agua, granjas, empaquetados de plátanos, almacenes agrícolas u obras hidráulicas, a la compensación de costes a la reconstrucción de fincas agrícolas y para el sistema de evacuación de CO<sub>2</sub>, sin que tampoco le resulte aplicable a estos efectos lo establecido en el artículo 32 de la Ley Orgánica 2/2012, de 27 de abril,. El gasto que ejecute la Comunidad Autónoma de Canarias en ayudas para paliar daños derivados de la erupción volcánica de la isla de La Palma se imputará en primer lugar hasta el importe total previsto para agotar la habilitación contemplada en el Real Decreto-ley 13/2025, de 25 de noviembre, por el que se adoptan medidas complementarias urgentes para la recuperación económica y social de la isla de La Palma tras los daños ocasionados por las erupciones volcánicas. Superado este importe, el resto de los gastos incurridos por este concepto se aplicará conforme a lo previsto en esta norma, imputándose sucesivamente a los superávits y, en su caso, los excesos financiación disponibles. Una vez realizada la imputación de esas ayudas, las inversiones contempladas en el párrafo primero de este apartado se aplicarán sucesivamente a los superávits y, en su caso, a los excesos de financiación pendientes de compensar.</p>
+        <p class="parrafo">Los importes destinados a inversiones y a ayudas para paliar daños derivados de la erupción volcánica de la isla de La Palma no se tendrán en cuenta a efectos del cumplimiento de la regla de gasto. Para ello, se estará a lo fijado en el último informe previsto en el artículo 17 de la Ley Orgánica 2/2012, de 27 de abril, de Estabilidad Presupuestaria y Sostenibilidad Financiera.</p>
+        <p class="parrafo">2. El gasto de inversión excepcional ejecutado mediante esta habilitación legal tendrá que registrarse contablemente de forma separada, de modo que en la liquidación del presupuesto de cada uno de los ejercicios 2026 a 2029, pueda comprobarse el impacto de este gasto sobre la sostenibilidad a medio plazo de la comunidad autónoma. Si su ejecución implica desequilibrios fiscales temporales no consolidables e incumplimiento del objetivo de estabilidad presupuestaria o deuda pública de alguno de esos ejercicios, podrá valorarse en Comisión Mixta o Comisión Bilateral si el Plan Económico Financiero no tiene que incluir medidas de incremento de ingresos o reducción de gastos durante su vigencia.</p>
+        <p class="parrafo">En cualquier caso, si la comunidad autónoma incurriera en déficit, éste se entenderá financiado hasta el importe del superávit presupuestario o exceso de financiación pendientes de compensar. En este sentido, las autorizaciones de endeudamiento del Estado y las asignaciones que se establezcan con cargo a los mecanismos adicionales de financiación tendrán en cuenta la coordinación del endeudamiento y el déficit establecido en el artículo 15 de la Ley Orgánica 2/2012, de 27 de abril y el resto de la normativa de estabilidad presupuestaria.</p>
+        <p class="parrafo">3. En virtud de su régimen foral, la aplicación a la Comunidad Autónoma del País Vasco y a la Comunidad Foral de Navarra de lo dispuesto en los apartados anteriores se entenderá sin perjuicio de lo dispuesto en las Leyes del Concierto Económico y del Convenio Económico.</p>
+        <h5 class="articulo">Artículo 3. Reglas especiales para el destino del superávit presupuestario de 2025 de las comunidades autónomas a financiar inversiones financieramente sostenibles.</h5>
+        <p class="parrafo">1. Las comunidades autónomas que hubieran obtenido superávit en términos de contabilidad nacional en el ejercicio 2025, según el informe previsto en el artículo 17.4 de la Ley Orgánica 2/2012, de 27 de abril, quedarán eximidas de la aplicación del artículo 32 de dicha ley orgánica y podrán destinar dicho superávit, en los ejercicios 2026 y 2027, a financiar inversiones que sean financieramente sostenibles durante su vida útil, siempre que cumplan simultáneamente los siguientes requisitos:</p>
+        <p class="parrafo_2">a) Que, de acuerdo con el informe previsto en el artículo 17.4 de la Ley Orgánica 2/2012, de 27 de abril, correspondiente al ejercicio en que se aplique la medida, no hayan incurrido en déficit en términos de contabilidad nacional.</p>
+        <p class="parrafo">b) Que el periodo medio de pago a proveedores se haya mantenido dentro de los límites legales de morosidad durante los seis meses anteriores a la aplicación de la medida.</p>
+        <p class="parrafo_2">2. Tendrá la consideración de inversión financieramente sostenible aquella que, en el largo plazo, tenga un impacto positivo, directo y verificable sobre la sostenibilidad de las finanzas públicas y sobre el crecimiento potencial de la economía y que, ejecutándose dentro del ámbito de competencias de la comunidad autónoma o ciudad con Estatuto de Autonomía, cumpla al menos uno de los siguientes criterios:</p>
+        <p class="parrafo_2">a) Tener efectos positivos para el cambio climático.</p>
+        <p class="parrafo">b) Contribuir a la eficiencia energética.</p>
+        <p class="parrafo">c) Evitar gastos recurrentes en ejercicios futuros.</p>
+        <p class="parrafo">d) Generar ahorros en ejercicios futuros.</p>
+        <p class="parrafo_2">En todo caso, tendrá la consideración de inversión financieramente sostenible la inversión en vivienda social y asequible o en vivienda sujeta a cualquier régimen de protección pública permanente.</p>
+        <p class="parrafo">3. La vida útil y el mantenimiento de la inversión no podrán poner en riesgo la estabilidad presupuestaria ni la sostenibilidad financiera de la comunidad autónoma.</p>
+        <p class="parrafo">El superávit no podrá destinarse al mantenimiento de inversiones ni a la adquisición de mobiliario, enseres o equipamiento de reposición.</p>
+        <p class="parrafo">Los gastos objeto de este artículo deberán tener la naturaleza de inversión, tanto en la clasificación económica del presupuesto de la entidad como en términos de contabilidad nacional. Únicamente podrán exceptuarse del cómputo del gasto a efectos del artículo 12 de la Ley Orgánica 2/2012, de 27 de abril aquellos importes que, de no existir esta disposición, hubieran integrado el gasto computable conforme a dicho artículo.</p>
+        <p class="parrafo">No podrán exceptuarse del gasto computable los gastos que, en virtud de otra disposición legal aplicable, ya estuviesen excluidos a efectos del artículo 12 de la Ley Orgánica 2/2012, de 27 de abril.</p>
+        <p class="parrafo">4. El importe total aplicado como inversión financieramente sostenible en los ejercicios 2026 y 2027 no podrá exceder del superávit en términos de contabilidad nacional de la comunidad autónoma en el ejercicio 2025, conforme al informe previsto en el artículo 17.4 de la Ley Orgánica 2/2012, de 27 de abril.</p>
+        <p class="parrafo">5. El inicio del correspondiente expediente de gasto y el reconocimiento de la totalidad de las obligaciones económicas derivadas de la inversión ejecutada deberán realizarse antes de la finalización del ejercicio 2027. No obstante, cuando un proyecto de inversión no pueda ejecutarse íntegramente antes del 31 de diciembre de 2027, la parte restante del gasto autorizado podrá comprometerse y reconocerse en el ejercicio 2028, financiándose con cargo al remanente de tesorería de 2027, con el límite del importe del superávit de 2025 y sin que la comunidad autónoma pueda incurrir en déficit al cierre de dicho ejercicio. En todo caso, los proyectos de inversión deberán haberse iniciado antes del 31 de diciembre de 2027.</p>
+        <p class="parrafo">6. Los expedientes de gasto tramitados al amparo de este artículo estarán sujetos a fiscalización previa, en los términos que establezca la normativa aplicable a cada entidad. No podrán ejecutarse inversiones cuando los informes de fiscalización previa sean desfavorables.</p>
+        <p class="parrafo">El expediente incorporará una memoria económica específica que contendrá la proyección de los efectos presupuestarios y económicos que pudieran derivarse de la inversión a lo largo de su vida útil, así como la evaluación de su sostenibilidad.</p>
+        <p class="parrafo">El órgano interventor de la comunidad autónoma informará sobre la consistencia y el soporte de las proyecciones contenidas en la memoria económica y certificará el cumplimiento de los requisitos para la consideración de la inversión como financieramente sostenible, dando traslado de su informe a la Intervención General de la Administración del Estado.</p>
+        <p class="parrafo">7. El interventor general de la comunidad autónoma remitirá al Ministerio de Hacienda, mediante certificación firmada, la relación detallada de las inversiones ejecutadas cuya exclusión del cómputo del gasto computable se proponga al amparo del apartado ocho de este artículo.</p>
+        <p class="parrafo">La certificación se remitirá antes del 31 de marzo y antes del 31 de julio del año siguiente al de ejecución, a efectos de su consideración en los informes previstos, respectivamente, en los artículos 17.3 y 17.4 de la Ley Orgánica 2/2012, de 27 de abril, e incluirá:</p>
+        <p class="parrafo_2">a) La declaración de que los proyectos se iniciaron antes de la finalización del ejercicio correspondiente y de que, a 31 de diciembre de dicho ejercicio, se encontraban en, al menos, la fase de autorización del gasto.</p>
+        <p class="parrafo">b) La constancia de que existe memoria económica y de que la intervención general ha emitido informe favorable sobre ella, certificando el cumplimiento de los requisitos para su consideración como inversión financieramente sostenible.</p>
+        <p class="parrafo">c) El importe global de las inversiones financieramente sostenibles ejecutadas en el ejercicio que cumplen los requisitos para no computar como gasto a efectos de la regla de gasto.</p>
+        <p class="parrafo_2">Como anexo a la certificación se remitirá el cuestionario normalizado que facilite el Ministerio de Hacienda, con información individualizada por proyecto, cumplimentado conforme a las instrucciones que lo acompañen.</p>
+        <p class="parrafo">8. El importe del gasto realizado en inversiones financieramente sostenibles al amparo de este artículo no se considerará gasto computable a efectos de la aplicación de la regla de gasto, definida en el artículo 12 de la Ley Orgánica 2/2012, de 27 de abril.</p>
+        <h5 class="articulo">Artículo 4. Medidas de suspensión de obligaciones de pago de intereses y principal para préstamos y créditos con y sin garantía hipotecaria.</h5>
+        <p class="parrafo">Aquellos deudores de los municipios de El Paso, Los Llanos de Aridane y Tazacorte inscritos en el Registro de personas afectadas por las erupciones volcánicas de la isla de La Palma cuyos ingresos principales provengan de la agricultura y que hubieran solicitado la suspensión de sus obligaciones de pago de intereses y principal para préstamos y créditos con y sin garantía hipotecaria o la prórroga de la misma en virtud de lo dispuesto en la disposición adicional cuarta del Real Decreto-ley 20/2021, de 5 de octubre, por el que se adoptan medidas urgentes de apoyo para la reparación de los daños ocasionados por las erupciones volcánicas y para la reconstrucción económica y social de la isla de La Palma, podrán solicitar, hasta el 15 de octubre de 2026, una nueva suspensión de seis meses, para el periodo comprendido entre el 1 de octubre de 2026 y el 31 de marzo de 2027, de sus obligaciones de pago derivadas de los contratos de préstamo o crédito con o sin garantía hipotecaria. En todo lo demás, serán de aplicación los artículos 15 a 24 del Real Decreto-ley 20/2021, de 5 de octubre.</p>
+        <h5 class="articulo">Artículo 5. Prestación extraordinaria de cese de actividad para aquellos trabajadores autónomos que vean afectadas sus actividades como consecuencia de los daños ocasionados por la erupción volcánica registrada en la zona de Cumbre Vieja de La Palma.</h5>
+        <p class="parrafo">A efectos del acceso a la prestación extraordinaria por cese de actividad para los trabajadores autónomos cuyas actividades se hayan visto afectadas por los daños ocasionados por la erupción volcánica registrada en la zona de Cumbre Vieja, en la isla de La Palma, regulada en el Real Decreto-ley 18/2021, de 28 de septiembre, de medidas urgentes para la protección del empleo, la recuperación económica y la mejora del mercado de trabajo; en el Real Decreto-ley 11/2022, de 25 de junio, por el que se adoptan y se prorrogan determinadas medidas para responder a las consecuencias económicas y sociales de la guerra en Ucrania, para hacer frente a situaciones de vulnerabilidad social y económica, y para la recuperación económica y social de la isla de La Palma; en el Real Decreto-ley 20/2022, de 27 de diciembre, de medidas de respuesta a las consecuencias económicas y sociales de la Guerra de Ucrania y de apoyo a la reconstrucción de la isla de La Palma y a otras situaciones de vulnerabilidad; en el Real Decreto-ley 5/2023, de 28 de junio, por el que se adoptan y prorrogan determinadas medidas de respuesta a las consecuencias económicas y sociales de la Guerra de Ucrania, de apoyo a la reconstrucción de la isla de La Palma y a otras situaciones de vulnerabilidad; de transposición de Directivas de la Unión Europea en materia de modificaciones estructurales de sociedades mercantiles y conciliación de la vida familiar y la vida profesional de los progenitores y los cuidadores; y de ejecución y cumplimiento del Derecho de la Unión Europea; en el Real Decreto-ley 4/2024, de 26 de junio, por el que se prorrogan determinadas medidas para afrontar las consecuencias económicas y sociales derivadas de los conflictos en Ucrania y Oriente Próximo y se adoptan medidas urgentes en materia fiscal, energética y social; y en el Real Decreto-ley 1/2025, de 28 de enero, por el que se aprueban medidas urgentes en materia económica, de transporte, de Seguridad Social, y para hacer frente a situaciones de vulnerabilidad, serán de aplicación las siguientes reglas:</p>
+        <p class="parrafo_2">a) No se tendrán en cuenta las subvenciones percibidas en el marco del Programa Comunitario de Apoyo a las Producciones Agrarias Canarias (POSEI), a los efectos de determinar los rendimientos netos computables fiscalmente procedentes de la actividad por cuenta propia, así como el total de ingresos computables fiscalmente derivados de dicha actividad,</p>
+        <p class="parrafo">b) En el caso de los trabajadores autónomos que hubieran iniciado su actividad durante el ejercicio 2020, las referencias al ejercicio 2019 efectuadas para calcular la reducción de ingresos exigida a efectos de determinar el total de ingresos fiscalmente computables derivados de la actividad por cuenta propia, se entenderán realizadas al trimestre equivalente del ejercicio 2020.</p>
+        <h5 class="articulo">Disposición adicional primera. Cumplimiento del Acuerdo de la Comisión Mixta del Concierto Económico de 9 de julio de 2026 y concesión de un crédito extraordinario en el Presupuesto de la sección 29 «Ministerio de Derechos Sociales, Consumo y Agenda 2030».</h5>
+        <p class="parrafo">1. Corresponderá al Ministerio de Derechos Sociales, Consumo y Agenda 2030, como departamento competente por razón de la materia, la realización de las actuaciones necesarias para la ejecución del Acuerdo de la Comisión Mixta del Concierto Económico con la Comunidad Autónoma del País Vasco de 9 de julio de 2026, incluida la tramitación de los expedientes de gasto y de los libramientos y pagos que procedan a favor de la Comunidad Autónoma del País Vasco.</p>
+        <p class="parrafo">2. Al igual que mediante el Real Decreto-ley 17/2026, de 23 de junio, de medidas extraordinarias para el fortalecimiento y consolidación del Sistema para la Autonomía y Atención a la Dependencia, se habilitaron créditos para reforzar la financiación de la dependencia, mediante esta disposición se concede un crédito extraordinario por importe de 16.840.943,24 euros en el presupuesto de la sección 29 «Ministerio de Derechos Sociales, Consumo y Agenda 2030», servicio 03 «Secretaría de Estado de Derechos Sociales», programa 000X «Transferencias y libramientos internos», capítulo 4 «Transferencias corrientes», artículo 42 «A la Seguridad Social», concepto 426 «Al IMSERSO, para la ejecución del Acuerdo de la Comisión Mixta del Concierto Económico de 9 de julio de 2026», para atender la financiación complementaria correspondiente al ejercicio 2026 prevista en el referido Acuerdo.</p>
+        <p class="parrafo">El crédito extraordinario se financiará de conformidad con lo establecido en el artículo 59 de la Ley 47/2003, de 26 de noviembre, General Presupuestaria.</p>
+        <p class="parrafo">3. Sin perjuicio del expediente de gasto que tramite la Secretaría de Estado de Derechos Sociales a favor del Instituto de Mayores y Servicios Sociales (IMSERSO), y que se impute al crédito previsto en el apartado anterior, la aprobación de este real decreto-ley constituirá título suficiente para generar crédito, por importe de 16.840.943,24 euros, en la aplicación presupuestaria 3134-451.5 «Para la ejecución del Acuerdo de la Comisión Mixta del Concierto Económico de 9 de julio de 2026».</p>
+        <p class="parrafo">4. Cuando en el ejercicio 2027 no se encuentren disponibles las dotaciones necesarias para ejecutar el Acuerdo de la Comisión Mixta del Concierto Económico de 9 de julio de 2026, corresponderá al Gobierno, a propuesta de la persona titular del Ministerio de Hacienda, autorizar las transferencias de crédito entre secciones presupuestarias necesarias para dotar, en la sección 29 «Ministerio de Derechos Sociales, Consumo y Agenda 2030», los créditos destinados a atender la financiación complementaria provisional correspondiente al ejercicio 2027, por importe de 32.381.095,67 euros, así como el saldo que, en su caso, resulte a favor de la Comunidad Autónoma del País Vasco de la regularización de la financiación complementaria correspondiente al ejercicio 2026, por el importe que se determine de conformidad con el citado Acuerdo.</p>
+        <p class="parrafo">A las transferencias de crédito previstas en este apartado no les resultarán de aplicación las restricciones establecidas en el artículo 52.1 de la Ley 47/2003, de 26 de noviembre, General Presupuestaria.</p>
+        <p class="parrafo">5. Las transferencias previstas en el apartado anterior se efectuarán al servicio, programa y concepto presupuestario que determine el Ministerio de Hacienda, de acuerdo con la estructura presupuestaria vigente en 2027, y tendrán como finalidad exclusiva atender las obligaciones derivadas del referido Acuerdo correspondientes a dicho ejercicio.</p>
+        <p class="parrafo">6. Sin perjuicio del expediente de gasto que tramite la Secretaría de Estado de Derechos Sociales a favor del Instituto de Mayores y Servicios Sociales (IMSERSO), y que se impute al crédito previsto en el apartado anterior, la aprobación por el Consejo de Ministros de las correspondientes transferencias de crédito previstas en el apartado 4 constituirá título suficiente para generar crédito en el presupuesto del IMSERSO en la Aplicación presupuestaria 3134-451.5 «Para la ejecución del Acuerdo de la Comisión Mixta del Concierto Económico de 9 de julio de 2026», por el importe total de las dotaciones efectuadas conforme al apartado 3.1.</p>
+        <h5 class="articulo">Disposición adicional segunda. Normativa de la Unión Europea.</h5>
+        <p class="parrafo">Las ayudas destinadas a actividades económicas se concederán de conformidad con la normativa de la Unión Europea en materia de ayudas de Estado.</p>
+        <h5 class="articulo">Disposición final primera. Títulos competenciales.</h5>
+        <p class="parrafo">Este real decreto-ley se dicta al amparo de lo dispuesto en el artículo 149.1.11.ª, 13.ª, 14.ª y 17.ª de la Constitución Española, que atribuyen al Estado, respectivamente, las competencias exclusivas en materia de bases de la ordenación del crédito, banca y seguros, bases y coordinación de la planificación general de la actividad económica, Hacienda General y Deuda del Estado y sobre legislación básica y régimen económico de la Seguridad Social, sin perjuicio de la ejecución de sus servicios por las Comunidades Autónomas.</p>
+        <h5 class="articulo">Disposición final segunda. Entrada en vigor.</h5>
+        <p class="parrafo">El presente real decreto-ley entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado».</p>
+        <p class="parrafo_2">Dado el 8 de septiembre de 2026.</p>
+        <p class="firma_rey">FELIPE R.</p>
+        <p class="firma_ministro">El Presidente del Gobierno,</p>
+        <p class="firma_ministro">PEDRO SÁNCHEZ PÉREZ-CASTEJÓN</p>
+      </div>
+      <!-- #textoxslt -->
+    </div>
+    <!-- #DOdocText -->
+    <input name="tabs" type="radio" id="tab-analisis" class="input"/>
+    <label for="tab-analisis" class="label">Análisis</label>
+    <div class="panel" id="panelAnalisis">
+      <div id="analisis" class="analisisDoc">
+<h4>ANÁLISIS</h4>
+<ul class="bullet-boe">
+  <li>Rango: Real Decreto-ley</li>
+  <li>Fecha de disposición: 08/09/2026</li>
+  <li>Fecha de publicación: 09/09/2026</li>
+  <li>Fecha de entrada en vigor: 10/09/2026</li>
+</ul>
+<h5 id="refpost">Referencias posteriores</h5>
+<div class="fuera">&#13;
+                              <ul>&#13;
+                              <li><a href="#ver-panel-contenido">Ordenado por contenido</a></li>&#13;
+                              <li><a href="#ver-panel-fecha">Ordenado por fecha</a></li>&#13;
+                              </ul>&#13;
+                              </div><div class="refpost-wrapper"><input type="radio" id="refpost-contenido" name="orden-refpost" checked="checked"/><input type="radio" id="refpost-fecha" name="orden-refpost"/><fieldset class="refpost-selector"><legend>Criterio de ordenación: </legend><label for="refpost-contenido" class="etiqueta-visual">&#13;
+                  por contenido&#13;
+           </label><label for="refpost-fecha" class="etiqueta-visual">&#13;
+                  por fecha&#13;
+           </label></fieldset>&#13;
+        <div class="refpost-contenedor">&#13;
+                              &#13;
+            <div id="ver-panel-contenido" class="refpost-panel refpost-panel-contenido">&#13;
+                <p class="fuera">Ordenado por contenido</p>&#13;
+                <ul class="bullet-boe">&#13;
+      <li>SE PUBLICA  Acuerdo de convalidación, por Resolución de 23 de septiembre de 2026 (Ref. <a href="/buscar/doc.php?id=BOE-A-2026-19845">BOE-A-2026-19845</a>).</li>
+&#13;
+                </ul>&#13;
+            </div>&#13;
+                              &#13;
+            <div id="ver-panel-fecha" class="refpost-panel refpost-panel-fecha">&#13;
+                 <p class="fuera">Ordenado por fecha</p>&#13;
+                <ul class="bullet-boe">&#13;
+      <li>SE PUBLICA  Acuerdo de convalidación, por Resolución de 23 de septiembre de 2026 (Ref. <a href="/buscar/doc.php?id=BOE-A-2026-19845">BOE-A-2026-19845</a>).</li>
+&#13;
+                </ul>&#13;
+            </div>&#13;
+                              &#13;
+        </div>&#13;
+ </div>&#13;
+                              &#13;
+    <h5>Referencias anteriores</h5>
+<ul class="bullet-boe">
+  <li>MODIFICA, con efectos desde el 1 de enero de 2026, la disposición adicional 57 de la Ley 35/2006, de 28 de noviembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2006-20764">BOE-A-2006-20764</a>).</li>
+</ul>
+<h5>Materias</h5>
+<ul class="bullet-boe">
+  <li>Asistencia social</li>
+  <li>Ayudas</li>
+  <li>Canarias</li>
+  <li>Catástrofes</li>
+  <li>Créditos</li>
+  <li>Créditos Extraordinarios y Suplementarios</li>
+  <li>Financiación de las Comunidades Autónomas</li>
+  <li>Impuesto sobre la Renta de las Personas Físicas</li>
+  <li>Instituto de Mayores y Servicios Sociales</li>
+  <li>País Vasco</li>
+  <li>Trabajadores autónomos</li>
+  <li>Viviendas</li>
+</ul>
+</div>
+    </div>
+  </div>
+</div>
+<p class="linkSubir"><a href="#top">subir</a></p>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>

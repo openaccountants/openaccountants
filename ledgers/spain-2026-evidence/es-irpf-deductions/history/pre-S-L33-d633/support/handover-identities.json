@@ -1,0 +1,46 @@
+[
+  {
+    "path": "ledgers/es-irpf-deductions.md",
+    "sha256": "d633dd1d7044ab3ec29efd14fbe5aed88286bbe77ed25678b18eb905417e037e"
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/ledger-summary.json",
+    "sha256": "43da7f48ee401a962669373231e91c7c44edf85be933c4834035db681db66f41"
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/ledger-check-results.json",
+    "sha256": "31ff43b8e57498d03cee46e670b6c6576fbc349d1e89dc3c156216d3dcb91063"
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/old-topics.json",
+    "sha256": "0172cbd33b8ef662cd8243af65831b85f372b60322b6fa798f2ec7bed3d884ac"
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/actual-read-quotes.json",
+    "sha256": "433a6c6adf3d8d1e1346d968de80db216bf139d8b46bafcf39ed75bfcddc8b6a"
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/source-identities.json",
+    "sha256": "d917fd944cad60c7558e45be54469abc672bdcf9cf983d9ae5320d9d2f28c028"
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/source-catalogue-routing.json",
+    "sha256": "9c942aaf3542e9cfa1bd399f954b22968ba92d65cba78019949c58823c5c77ac"
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/section-bindings.json",
+    "sha256": "64ae21c32818fba41c3c13f953b38e9e4ce60bc38557bad7f4d20f041023dc6a"
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/supplementary-numeric-controls.json",
+    "sha256": "a38c003f96a9272b14c0dc597512e80013d0d3470fa25fb95348cf1eed59cf9d"
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/oa-output.txt",
+    "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/writer-status.md",
+    "sha256": "b81a577f7b84c2ae60d4344d9d7f1ecec5ee52d9a470c470de0bafd8d14eaff9"
+  }
+]

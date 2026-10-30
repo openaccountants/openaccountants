@@ -1,0 +1,318 @@
+{
+  "candidate": "32d4e3e8c3121fa37fa7648b5343116dacd08cc4",
+  "baseline": "5254033fda891adceb3c98aec1f508e3b21f85f5",
+  "merge": "43a766a09b91b45392ee0522e5f69d9e2e6306b2",
+  "files": [
+    {
+      "path": "skills/international/andorra/README.md",
+      "original_sha256": "250a2f727e31b68eb8b365bf9083f9fe15c6c7bd75f8dd44cccc8ef1a9c05813",
+      "candidate_sha256": "45860dea956286ea4d9cc987aade8270e68588bc0733ad7a6a0e692b896101fb",
+      "original_archive_byte_exact": true,
+      "main_merge_unchanged": true,
+      "old_bytes": 2528,
+      "new_bytes": 4468,
+      "shrink_percent": -76.74,
+      "protected_fields_unchanged": {
+        "name": true,
+        "depends_on": true,
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "reviewed_by": true,
+        "reviewed_on": true,
+        "verified_by": true
+      },
+      "cta_unchanged": true,
+      "old_control_count": 0,
+      "new_control_count": 0
+    },
+    {
+      "path": "skills/international/andorra/ad-company-formation.md",
+      "original_sha256": "145ece035cc8dd4d3e47628fc331e5ab985f0b46846a252c195474e774ddc0c2",
+      "candidate_sha256": "145ece035cc8dd4d3e47628fc331e5ab985f0b46846a252c195474e774ddc0c2",
+      "original_archive_byte_exact": true,
+      "main_merge_unchanged": true,
+      "old_bytes": 3862,
+      "new_bytes": 3862,
+      "shrink_percent": 0.0,
+      "protected_fields_unchanged": {
+        "name": true,
+        "depends_on": true,
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "reviewed_by": true,
+        "reviewed_on": true,
+        "verified_by": true
+      },
+      "cta_unchanged": true,
+      "old_control_count": 0,
+      "new_control_count": 0
+    },
+    {
+      "path": "skills/international/andorra/ad-corporate-income-tax.md",
+      "original_sha256": "fd442bfecdb48a21732d57091096374572d02b5a5ae3564e15e51b1282419d33",
+      "candidate_sha256": "70c05997d3be1d0dc0e8c8e4c95a5293831555af3e7def3d4f8fb2ced07ed182",
+      "original_archive_byte_exact": true,
+      "main_merge_unchanged": true,
+      "old_bytes": 21380,
+      "new_bytes": 31268,
+      "shrink_percent": -46.25,
+      "protected_fields_unchanged": {
+        "name": true,
+        "depends_on": true,
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "reviewed_by": true,
+        "reviewed_on": true,
+        "verified_by": true
+      },
+      "cta_unchanged": true,
+      "old_control_count": 5,
+      "new_control_count": 2
+    },
+    {
+      "path": "skills/international/andorra/ad-income-tax.md",
+      "original_sha256": "a4ab4b8bc510f9ee41fcad9e1efcdf1df8fe2adfea55513eb5eca8288919213c",
+      "candidate_sha256": "f9950e5e93cf696bb0cc222aac38bdf0f8e2b2b3d1b6358c1f9d00db2ff03f5d",
+      "original_archive_byte_exact": true,
+      "main_merge_unchanged": true,
+      "old_bytes": 52348,
+      "new_bytes": 28040,
+      "shrink_percent": 46.44,
+      "protected_fields_unchanged": {
+        "name": true,
+        "depends_on": true,
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "reviewed_by": true,
+        "reviewed_on": true,
+        "verified_by": true
+      },
+      "cta_unchanged": true,
+      "old_control_count": 0,
+      "new_control_count": 2
+    },
+    {
+      "path": "skills/international/andorra/ad-non-resident-income-tax.md",
+      "original_sha256": "2c5ccde97d3e9541d9aab77106a970e6c35531e539bcf946aaf08665c6abbddd",
+      "candidate_sha256": "ce74d9a54334fbae835feab167078173b17507e231e263d850c3c46cf2964920",
+      "original_archive_byte_exact": true,
+      "main_merge_unchanged": true,
+      "old_bytes": 14773,
+      "new_bytes": 30854,
+      "shrink_percent": -108.85,
+      "protected_fields_unchanged": {
+        "name": true,
+        "depends_on": true,
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "reviewed_by": true,
+        "reviewed_on": true,
+        "verified_by": true
+      },
+      "cta_unchanged": true,
+      "old_control_count": 3,
+      "new_control_count": 2
+    },
+    {
+      "path": "skills/international/andorra/ad-payroll-social.md",
+      "original_sha256": "ca091b7cf301d1f88c09fec59a0e3cad8726b085fadc053babd2ea4fb2499e09",
+      "candidate_sha256": "5dd608ad7c8b1cd7ee97c46beeb4f3805d934aba6c96d849ba7028785736914a",
+      "original_archive_byte_exact": true,
+      "main_merge_unchanged": true,
+      "old_bytes": 41890,
+      "new_bytes": 34244,
+      "shrink_percent": 18.25,
+      "protected_fields_unchanged": {
+        "name": true,
+        "depends_on": true,
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "reviewed_by": true,
+        "reviewed_on": true,
+        "verified_by": true
+      },
+      "cta_unchanged": true,
+      "old_control_count": 0,
+      "new_control_count": 2
+    },
+    {
+      "path": "skills/international/andorra/ad-tax-overview.md",
+      "original_sha256": "d3e4933ac322c78b098dc5eb1566cbb48e877175527c8f4aded3a50ad50e5d0f",
+      "candidate_sha256": "d3e4933ac322c78b098dc5eb1566cbb48e877175527c8f4aded3a50ad50e5d0f",
+      "original_archive_byte_exact": true,
+      "main_merge_unchanged": true,
+      "old_bytes": 3320,
+      "new_bytes": 3320,
+      "shrink_percent": 0.0,
+      "protected_fields_unchanged": {
+        "name": true,
+        "depends_on": true,
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "reviewed_by": true,
+        "reviewed_on": true,
+        "verified_by": true
+      },
+      "cta_unchanged": true,
+      "old_control_count": 0,
+      "new_control_count": 0
+    },
+    {
+      "path": "skills/international/andorra/ad-transfer-pricing.md",
+      "original_sha256": "a3915de6a372aeabb85d98b4aea8b49fed2a550a0eb111b7bbefa3b3fa118065",
+      "candidate_sha256": "b9aaa0c0a4a57dcdb11dfc8a90b258c2ceff4ccb724845d5c9849bf4a422634c",
+      "original_archive_byte_exact": true,
+      "main_merge_unchanged": true,
+      "old_bytes": 14783,
+      "new_bytes": 20381,
+      "shrink_percent": -37.87,
+      "protected_fields_unchanged": {
+        "name": true,
+        "depends_on": true,
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "reviewed_by": true,
+        "reviewed_on": true,
+        "verified_by": true
+      },
+      "cta_unchanged": true,
+      "old_control_count": 2,
+      "new_control_count": 2
+    },
+    {
+      "path": "skills/international/andorra/andorra-igi.md",
+      "original_sha256": "62354fe9b2ea06f3481f5112a1610f15dfd709169be819654f89892c0c320d65",
+      "candidate_sha256": "e8bc8295a2c06f3ac8bc4827b6f4f60c23db5e599b36f872db9da2c0f93e5453",
+      "original_archive_byte_exact": true,
+      "main_merge_unchanged": true,
+      "old_bytes": 18608,
+      "new_bytes": 26384,
+      "shrink_percent": -41.79,
+      "protected_fields_unchanged": {
+        "name": true,
+        "depends_on": true,
+        "authored_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "license": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "reviewed_by": true,
+        "reviewed_on": true,
+        "verified_by": true
+      },
+      "cta_unchanged": true,
+      "old_control_count": 0,
+      "new_control_count": 2
+    }
+  ],
+  "preserved_original_controls": [
+    {
+      "name": "Andorra loss relief settlement floor without credits",
+      "location": "skills/international/andorra/ad-corporate-income-tax.md",
+      "byte_exact_block": true
+    },
+    {
+      "name": "Andorra ordinary permanent expense adjustments",
+      "location": "skills/international/andorra/ad-corporate-income-tax.md",
+      "byte_exact_block": true
+    },
+    {
+      "name": "Andorra separate service and royalty withholding",
+      "location": "skills/international/andorra/ad-non-resident-income-tax.md",
+      "byte_exact_block": true
+    },
+    {
+      "name": "Andorra property gain and withholding settlement",
+      "location": "skills/international/andorra/ad-non-resident-income-tax.md",
+      "byte_exact_block": true
+    },
+    {
+      "name": "Andorra controlled service price reconciliation",
+      "location": "skills/international/andorra/ad-transfer-pricing.md",
+      "byte_exact_block": true
+    },
+    {
+      "name": "Andorra related financing pricing comparison",
+      "location": "skills/international/andorra/ad-transfer-pricing.md",
+      "byte_exact_block": true
+    },
+    {
+      "name": "Andorra ordinary advance and annual balance",
+      "location": "skills/research/andorra-2026/corporate-supplementary-controls.md",
+      "byte_exact_block": true
+    },
+    {
+      "name": "Andorra advance excess reconciliation",
+      "location": "skills/research/andorra-2026/corporate-supplementary-controls.md",
+      "byte_exact_block": true
+    },
+    {
+      "name": "Andorra eligible intangible partial expenditure ratio",
+      "location": "skills/research/andorra-2026/corporate-supplementary-controls.md",
+      "byte_exact_block": true
+    },
+    {
+      "name": "Andorra non-resident rental income base",
+      "location": "skills/research/andorra-2026/nonresident-supplementary-controls.md",
+      "byte_exact_block": true
+    }
+  ],
+  "all_original_oa_checks_preserved": true,
+  "lost_substantive_topic_groups_identified": 1,
+  "pending_restorations": [
+    "Resident movable-capital withholding and elected EUR3000 reduction, original income section5.9"
+  ],
+  "lost_content_restored_by_reviewer": 0,
+  "restoration_note": "Reviewer was instructed not to edit Guides. Writer must restore the identified method; the restoration count must be updated only after checking the actual fixed text."
+}

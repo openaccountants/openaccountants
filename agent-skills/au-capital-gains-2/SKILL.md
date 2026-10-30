@@ -7,6 +7,8 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/au-capital-gains-2"
   jurisdiction: "AU"
   last_updated: "2026-09-08"
+  authored_by: "Ryan Duguid"
+  trust_label: "Accountant-authored"
   review_status: "pending_review"
 ---
 

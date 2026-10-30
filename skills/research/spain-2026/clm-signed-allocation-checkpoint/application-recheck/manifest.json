@@ -1,0 +1,62 @@
+{
+  "scope": "Proposal author checking application only; root-independent/report.md is the distinct independent legal assessment. This is not an independent re-review of the author's own tax method.",
+  "files": [
+    {
+      "path": "README.diff",
+      "sha256": "1351f95ba37953970a7befb3eded8f9f90eb43cc2496024af8773d6531cdb48e",
+      "bytes": 3097
+    },
+    {
+      "path": "applied-Guide.md",
+      "sha256": "db144091ffd7f9b5b414f47733f7bfa51b864e82bb583f765cf5ab4972203be3",
+      "bytes": 465133
+    },
+    {
+      "path": "applied-README.md",
+      "sha256": "66ae1eb7cf60b1b871a670306d7ee444d449cc1cfcc5959201e8c9a4a63657a9",
+      "bytes": 8348
+    },
+    {
+      "path": "proposal-to-applied.diff",
+      "sha256": "ae23952bf7130184481e75d62e5f571f4103b9e8984a44012f80d1223071d04c",
+      "bytes": 20661
+    },
+    {
+      "path": "review.json",
+      "sha256": "b68d68c75e74b5dcadade6e406cf47e1ea6f2a46076edd04bc5bc127f5ef13a2",
+      "bytes": 963590
+    }
+  ],
+  "references": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/proposed-es-irpf-deductions.md",
+      "sha256": "18aab6dc6ba4ffbcdd2dcf673ed9f445a475a998ed085797b86045b7554ef364",
+      "bytes": 464949
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/before-es-irpf-deductions.md",
+      "sha256": "a68b6eb27a849eb86105799f5744717d29c2296814d9f8bdb2c647fb56cdf8b1",
+      "bytes": 462410
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/before-README.md",
+      "sha256": "5a732c693317ea41b9b265a7ac3bf9960656faf2bffcbb8c41fe7e1565327c4a",
+      "bytes": 8220
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/report.md",
+      "sha256": "c5d4bb922adc944d3fbdd705bb1d82b0061d498ed264c91c5972ce825f3d3306",
+      "bytes": 2228
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/applied-freeze.json",
+      "sha256": "48b38d09c9232a84584135b40db0e5bb342320d575481df8e5af729193db24b2",
+      "bytes": 619
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/DOCM-Law1-2026.pdf",
+      "sha256": "91b8c33af6b79496dfcd4bf61a0e1a7d530e9fc1e1200c55c4cce4da423e902b",
+      "bytes": 454855
+    }
+  ]
+}

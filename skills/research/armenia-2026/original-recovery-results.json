@@ -1,0 +1,290 @@
+{
+  "events": [
+    [
+      16,
+      "patch",
+      "applied"
+    ],
+    [
+      19,
+      "patch",
+      "applied"
+    ],
+    [
+      21,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      30,
+      "patch",
+      "applied"
+    ],
+    [
+      31,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      32,
+      "patch",
+      "applied"
+    ],
+    [
+      35,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      45,
+      "patch",
+      "applied"
+    ],
+    [
+      46,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      47,
+      "patch",
+      "applied"
+    ],
+    [
+      49,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      58,
+      "patch",
+      "applied"
+    ],
+    [
+      59,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      60,
+      "patch",
+      "applied"
+    ],
+    [
+      62,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      83,
+      "patch",
+      "applied"
+    ],
+    [
+      85,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      86,
+      "patch",
+      "applied"
+    ],
+    [
+      90,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      113,
+      "patch",
+      "applied"
+    ],
+    [
+      114,
+      "patch",
+      "applied"
+    ],
+    [
+      115,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      117,
+      "patch",
+      "applied"
+    ],
+    [
+      120,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      140,
+      "patch",
+      "applied"
+    ],
+    [
+      141,
+      "patch",
+      "applied"
+    ],
+    [
+      142,
+      "patch",
+      "applied"
+    ],
+    [
+      143,
+      "patch",
+      "applied"
+    ],
+    [
+      144,
+      "patch",
+      "applied"
+    ],
+    [
+      145,
+      "patch",
+      "applied"
+    ],
+    [
+      147,
+      "file-only-python",
+      "applied"
+    ],
+    [
+      148,
+      "patch",
+      "failed",
+      "Context missing /Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/armenia-recovery/original-draft/skills/international/armenia/README.md: The [social/payroll source record](../../../docs/research/2026-10-24-armenia-social-payroll-sources.md) records actual c"
+    ],
+    [
+      150,
+      "patch",
+      "applied"
+    ],
+    [
+      151,
+      "patch",
+      "applied"
+    ],
+    [
+      153,
+      "patch",
+      "applied"
+    ]
+  ],
+  "files": [
+    {
+      "path": "docs/research/2026-10-24-armenia-corporate-sources.md",
+      "expected_sha256": "2a7b0e8d9ff9d51d6909f6e66a5f869f11f5fe989c63cc048c5817b1c78d8c23",
+      "actual_sha256": "2a7b0e8d9ff9d51d6909f6e66a5f869f11f5fe989c63cc048c5817b1c78d8c23",
+      "exact": true
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-cross-border-sources.md",
+      "expected_sha256": "cc59d87daeefc01d34d6d9d67fe30acc3654be20c1f986e23413da25144cfb39",
+      "actual_sha256": "cc59d87daeefc01d34d6d9d67fe30acc3654be20c1f986e23413da25144cfb39",
+      "exact": true
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-formation-planning-sources.md",
+      "expected_sha256": "39e8c249fd1091b295952105831470957b1cef5fb3a327abc2ed3bea9f1a0b1c",
+      "actual_sha256": "39e8c249fd1091b295952105831470957b1cef5fb3a327abc2ed3bea9f1a0b1c",
+      "exact": true
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-individual-sources.md",
+      "expected_sha256": "6082f97ff6cd90f2f6e953541d23eca66e6544a632faf7ea73519873ac8852d5",
+      "actual_sha256": "6082f97ff6cd90f2f6e953541d23eca66e6544a632faf7ea73519873ac8852d5",
+      "exact": true
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-social-payroll-sources.md",
+      "expected_sha256": "2c8f5309815b3018d659e6b1909f7a14f6c3291972f6edfca630479a9a70b19c",
+      "actual_sha256": "2c8f5309815b3018d659e6b1909f7a14f6c3291972f6edfca630479a9a70b19c",
+      "exact": true
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-tp-sources.md",
+      "expected_sha256": "0d3a20bf0c51ff4c8f074fe1542c25bc664df77340a7ca6ee5223fefb38326b5",
+      "actual_sha256": "0d3a20bf0c51ff4c8f074fe1542c25bc664df77340a7ca6ee5223fefb38326b5",
+      "exact": true
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-vat-sources.md",
+      "expected_sha256": "8638ff31697fc2d00b8807e686feaf2031c0d72fb5e15bff277abb1515773020",
+      "actual_sha256": "8638ff31697fc2d00b8807e686feaf2031c0d72fb5e15bff277abb1515773020",
+      "exact": true
+    },
+    {
+      "path": "skills/international/armenia/README.md",
+      "expected_sha256": "6307a05c0d9e3272e4efbb7e46b210941c1a73b5e91f5228b3b9952f0f4f2535",
+      "actual_sha256": "6307a05c0d9e3272e4efbb7e46b210941c1a73b5e91f5228b3b9952f0f4f2535",
+      "exact": true
+    },
+    {
+      "path": "skills/international/armenia/am-company-formation.md",
+      "expected_sha256": "998e136c737c87e8269f1549e407c5a2981e49e3646df9b948630a96f83e14c2",
+      "actual_sha256": "998e136c737c87e8269f1549e407c5a2981e49e3646df9b948630a96f83e14c2",
+      "exact": true
+    },
+    {
+      "path": "skills/international/armenia/am-corporate-income-tax.md",
+      "expected_sha256": "e5841a6dbe12f55c033a65929a29a8d8c34f36227d7d4d119b93ccbfe6a2869b",
+      "actual_sha256": "e5841a6dbe12f55c033a65929a29a8d8c34f36227d7d4d119b93ccbfe6a2869b",
+      "exact": true
+    },
+    {
+      "path": "skills/international/armenia/am-cross-border.md",
+      "expected_sha256": "16c01970bc716ce9d5360ca5d024232051ceb58dd1cdd467c64daf79f9b27f66",
+      "actual_sha256": "16c01970bc716ce9d5360ca5d024232051ceb58dd1cdd467c64daf79f9b27f66",
+      "exact": true
+    },
+    {
+      "path": "skills/international/armenia/am-tax-overview.md",
+      "expected_sha256": "34799cd393893443b3979d78dd5ff440c60277e1eced9834a2f13ded95ca7665",
+      "actual_sha256": "34799cd393893443b3979d78dd5ff440c60277e1eced9834a2f13ded95ca7665",
+      "exact": true
+    },
+    {
+      "path": "skills/international/armenia/am-transfer-pricing.md",
+      "expected_sha256": "605c4755add2857962e7dec0d06a3dd11cc2418ec7c9593bcd135fabff67d91e",
+      "actual_sha256": "605c4755add2857962e7dec0d06a3dd11cc2418ec7c9593bcd135fabff67d91e",
+      "exact": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-income-tax.md",
+      "expected_sha256": "c76ef7ad759855fac5e97d2450ca67e6f3e0696275addbd3570c87c09d57fdd0",
+      "actual_sha256": "c76ef7ad759855fac5e97d2450ca67e6f3e0696275addbd3570c87c09d57fdd0",
+      "exact": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-payroll.md",
+      "expected_sha256": "dbd394bfc4317b453801e1d69f3e7d269e79ac16d7d9aa65e188cd4342c5fa77",
+      "actual_sha256": "dbd394bfc4317b453801e1d69f3e7d269e79ac16d7d9aa65e188cd4342c5fa77",
+      "exact": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-social-contributions.md",
+      "expected_sha256": "75c24297484217d444f9218b17c5616b391371bd651509f3cdd1016876014fae",
+      "actual_sha256": "75c24297484217d444f9218b17c5616b391371bd651509f3cdd1016876014fae",
+      "exact": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-tax-optimization.md",
+      "expected_sha256": "295ef2a9811c043c416e925c1bd1668e046034a34659a58f419b34011a561c20",
+      "actual_sha256": "295ef2a9811c043c416e925c1bd1668e046034a34659a58f419b34011a561c20",
+      "exact": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-vat.md",
+      "expected_sha256": "c134b6b4aed05238464bb86b9125c383277d1063fade91dfebb5a21394db9e95",
+      "actual_sha256": "c134b6b4aed05238464bb86b9125c383277d1063fade91dfebb5a21394db9e95",
+      "exact": true
+    }
+  ]
+}

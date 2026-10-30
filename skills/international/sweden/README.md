@@ -14,13 +14,13 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | se-employee-income-tax, se-income-tax, se-capital-gains, se-closely-held-company-312 | source-cited draft |
-| IT-CORP, corporate income tax | se-corporate-tax | source-cited draft |
-| VAT | se-vat-return, sweden-vat-return | source-cited draft |
-| SC, social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | source-cited draft |
-| PR, payroll withholding | sweden-payroll, se-benefits-and-allowances | source-cited draft |
-| TP, transfer pricing | se-transfer-pricing | source-cited draft |
-| XB, cross-border | se-cross-border | source-cited draft |
+| IT-IND, individual income tax | se-employee-income-tax, se-income-tax, se-capital-gains, se-closely-held-company-312 | sourced from the law |
+| IT-CORP, corporate income tax | se-corporate-tax | checked against the law |
+| VAT | sweden-vat-return (2026 deep-tax), se-vat-return (older duplicate, to be merged) | source-cited draft |
+| SC, social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | checked against the law |
+| PR, payroll withholding | sweden-payroll, se-benefits-and-allowances | checked against the law |
+| TP, transfer pricing | se-transfer-pricing | checked against the law |
+| XB, cross-border | se-cross-border | checked against the law |
 
 ## Official sources
 

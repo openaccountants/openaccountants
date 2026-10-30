@@ -1,0 +1,231 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Tratamiento liquidatorio de las rentas exentas con progresividad en Base Imponible General
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 1.
+
+Capítulo 15. Cálculo del impuesto: determinación de las cuotas íntegras
+
+Especialidades en la determinación de la cuota íntegra estatal y autonómica
+
+Rentas exentas con progresividad
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 1.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Tratamiento liquidatorio de las rentas exentas con progresividad en Base Imponible General
+
+El tratamiento liquidatorio de las rentas exentas con progresividad que, según su naturaleza, formen parte de la base imponible general se estructura en las siguientes fases:
+
+El importe de las rentas exentas con progresividad debe sumarse a la base liquidable general y al importe resultante de dicha suma se le aplicarán la escala de gravamen general y la aprobada por la Comunidad Autónoma que corresponda, en la parte autonómica. Como resultado se obtienen las cuotas parciales 1 y 2.
+
+Al importe del mínimo personal y familiar (siempre que no supere la base liquidable general o, en su caso, la base liquidable general incrementada con las rentas exentas con progresividad) se le aplican, sucesivamente, la escala de gravamen general, obteniéndose de esta forma la cuota parcial 3 y la escala de gravamen autonómica o complementaria obteniéndose la cuota parcial 4.
+
+A partir de las cuatro cuotas parciales obtenidas en las fases anteriores se calculan las siguientes magnitudes:
+
+Cuota resultante 1 = cuota parcial 1 - cuota parcial 3
+
+Cuota resultante 2 = cuota parcial 2 - cuota parcial 4
+
+A partir de las cuotas resultantes 1 y 2 calculadas en la fase anterior, se determina el tipo medio de gravamen, estatal y autonómico. En ambos casos, dicho tipo medio es el resultado de multiplicar por 100 el cociente resultante de dividir las cuotas resultantes 1 y 2 entre la base para la aplicación de la escala de gravamen (suma obtenida en la fase 1ª).
+
+Una vez obtenidos dichos tipos medios, estos se aplicarán exclusivamente sobre la base liquidable general, sin incluir las rentas exentas con progresividad. De esta forma se obtendrá la cuota íntegra estatal y autonómica, respectivamente, correspondientes a la base liquidable general.
+
+Ejemplo
+
+Doña P.C.A., residente en la Comunidad de Castilla y León, ha obtenido en el ejercicio 2025 una base liquidable general de 23.900 euros y una base liquidable del ahorro de 2.800 euros.
+
+El importe del su mínimo personal y familiar asciende a 5.550 euros. Además, ha percibido en Alemania una renta de 2.900 euros que, por aplicación del Convenio entre el Reino de España y la República Federal de Alemania para evitar la doble imposición y prevenir la evasión fiscal en materia de impuestos sobre la renta y sobre el patrimonio y su protocolo, de 3 de febrero de 2011, está declarada en España exenta con progresividad.
+
+Determinar el importe de las cuotas íntegras correspondiente a dicho contribuyente.
+
+Solución:
+
+1. Suma de la base liquidable general y el importe de las rentas exentas con progresividad
+
+23.900 + 2.900 = 26.800
+
+2. Aplicación de las escalas del IRPF al resultado de la suma anterior (26.800)
+
+Escala general del IRPF
+
+Hasta 20.200 = 2.112,75 
+
+Resto: 6.600 al 15% = 990 
+
+Cuota 1 (2.112,75 + 990) = 3.102,75
+
+Escala autonómica del IRPF
+
+Hasta 20.200 = 2.050,50 
+
+Resto: 6.600 al 14% = 924 
+
+Cuota 2 (2.050,50 + 924) = 2.974,50 
+
+3. Aplicación de las escalas de gravamen al importe del mínimo personal y familiar
+
+Escala general del IRPF
+
+5.550 al 9,50% = 527,25
+
+Cuota 3 = 527,25
+
+Escala autonómica del IRPF
+
+Nota: aunque la Comunidad de Castilla y León tiene aprobadas cuantías autonómicas del mínimo personal y familiar, estas coinciden con los importes del mínimo del contribuyente, por descendientes y ascendientes y por discapacidad que fijan los artículos 57, 58, 59 y 60 de la Ley del IRPF.
+
+5.550 al 9% = 499,50 
+
+Cuota 4 = 499,50 
+
+4. Determinación de las diferencias de cuotas:
+
+Cuota resultante 1 (cuota 1 - cuota 3): 3.102,75 - 527,25 = 2.575,50
+
+Cuota resultante 2 (cuota 2 - cuota 4): 2.974,50 - 499,50 = 2.475 
+
+5. Determinación de los tipos medios de gravamen
+
+Tipo medio de gravamen estatal (TME): TME = (2.575,50 ÷26.800) x 100 = 9,61%
+
+Tipo medio de gravamen autonómico (TMA): TMA = (2.475 ÷ 26.800) x 100 = 9,23% 
+
+6. Determinación de las cuotas correspondientes a la base liquidable general (23.900):
+
+Cuota estatal: (23.900 x 9,61%) = 2.296,79
+
+Cuota autonómica: (23.900 x 9,23%) = 2.205,97 
+
+7. Gravamen de la base liquidable del ahorro (2.800)
+
+Gravamen estatal
+
+2.800 x 9,5% = 266
+
+Gravamen autonómico
+
+2.800 x 9,5% = 266
+
+8. Determinación de las cuotas íntegras
+
+Cuota íntegra estatal (2.296,79 +266) = 2.562,79
+
+Cuota íntegra autonómica (2.205,97 + 266) = 2.471,97 
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Compra y venta de monedas virtuales: tributación en el IRPF del inversor</title><meta name="ObjectId" content="b5a2943af4839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='3c18add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100.html'>Manual práctico de Renta 2025. Parte 1.</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='d3ef943af4839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c11-ganancias-perdidas-patrimoniales.html'>Capítulo 11. Ganancias y pérdidas patrimoniales</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='4c92943af4839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c11-ganancias-perdidas-patrimoniales/monedas-virtuales.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Monedas virtuales</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100.html" class="d-none">Manual práctico de Renta 2025. Parte 1.</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Compra y venta de monedas virtuales: tributación en el IRPF del inversor</h1><p>Las personas f&iacute;sicas, contribuyentes del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>, pueden comprar y vender monedas virtuales y cuando dichas operaciones no se realicen en el &aacute;mbito de una actividad econ&oacute;mica pueden dar lugar a una ganancia o p&eacute;rdida patrimonial por la diferencia entre el valor de transmisi&oacute;n y el valor de adquisici&oacute;n.</p>
+<p>En funci&oacute;n del tipo de transacci&oacute;n que se realice se pueden distinguir los siguientes supuestos:</p>
+<h2>a) Cambio de monedas virtuales por moneda de curso legal (moneda fiduciaria)</h2>
+<p><strong>Normativa: Arts. 35, 14 y 46.b) Ley&nbsp;<abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> </strong></p>
+<h3>Concepto</h3>
+<p>De acuerdo con el art&iacute;culo 1.6. de la Ley 10/2010, de 28 de abril, de prevenci&oacute;n del blanqueo de capitales y de la financiaci&oacute;n del terrorismo se entender&aacute; por <em>&ldquo;cambio de moneda virtual por moneda fiduciaria&rdquo;</em> la compra y venta de monedas virtuales mediante la entrega o recepci&oacute;n de euros o cualquier otra moneda extranjera de curso legal o dinero electr&oacute;nico aceptado como medio de pago en el pa&iacute;s en el que haya sido emitido.</p>
+<h3>Ganancia o p&eacute;rdida patrimonial</h3>
+<p>La venta de monedas virtuales a cambio de euros u otras monedas de curso legal, realizada al margen de una actividad econ&oacute;mica, <strong>dar&aacute; lugar a una ganancia o p&eacute;rdida patrimonial</strong> cuyo importe vendr&aacute; determinado por la diferencia entre los respectivos <strong>valores de transmisi&oacute;n y de adquisici&oacute;n</strong>.</p>
+<p>La ganancia o p&eacute;rdida patrimonial deber&aacute; determinarse, para cada operaci&oacute;n de venta de cada tipo de criptomoneda, por la diferencia que exista entre el importe de euros obtenidos en la venta (salvo que sea inferior a su valor normal de mercado en la fecha de la venta, en cuyo caso prevalecer&aacute; este &uacute;ltimo) y su importe de adquisici&oacute;n en euros, determinado, en su caso, aplicando el tipo de cambio a euros de la divisa vigente en la fecha de adquisici&oacute;n de la criptomoneda objeto de la venta, teniendo en cuenta los gastos y tributos que se originan por la realizaci&oacute;n de dichas operaciones, y a los que se refiere el art&iacute;culo 35 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>, siempre que guarden relaci&oacute;n directa con las mismas y sean satisfechos por el contribuyente.</p>
+<h3>Identificaci&oacute;n de las monedas transmitidas</h3>
+<p>Las criptomonedas de un tipo, computables por unidades o fracciones de unidades, tienen su origen en un mismo protocolo inform&aacute;tico y todas las del mismo tipo poseen las mismas caracter&iacute;sticas, siendo iguales entre s&iacute;, lo que confiere a las diferentes unidades o fracciones de unidades de la criptomoneda en cuesti&oacute;n la naturaleza de bienes fungibles y, por tanto, homog&eacute;neos.</p>
+<p>A efectos de determinar la correspondiente ganancia o p&eacute;rdida patrimonial y en la medida en que la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> no establece una regla espec&iacute;fica diferente para identificar, en el caso de monedas virtuales homog&eacute;neas (por ejemplo, el bitcoin), las que se entienden transmitidas, debe considerarse que en caso de efectuarse ventas parciales de monedas virtuales que hubieran sido adquiridas en diferentes momentos y a diferentes valores, las que se transmiten son las adquiridas en primer lugar (<strong>criterio FIFO</strong>).</p>
+<h3>Imputaci&oacute;n temporal de la ganancia o p&eacute;rdida patrimonial</h3>
+<p>De acuerdo con el art&iacute;culo 14 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>, se producir&aacute; en el momento en que se proceda a la entrega de las monedas virtuales por el contribuyente en virtud del contrato de compraventa, con independencia del momento en que se perciba el precio de la venta, debiendo, por tanto, imputarse la ganancia o p&eacute;rdida patrimonial producida al per&iacute;odo impositivo en que se haya realizado dicha entrega.</p>
+<h3>Clase de renta</h3>
+<p>El importe de las ganancias o p&eacute;rdidas patrimoniales que se pongan de manifiesto en las transmisiones de las monedas virtuales a cambio de dinero, constituyen <strong>renta del ahorro</strong> conforme a lo previsto en el art&iacute;culo 46. b) de la Ley del IRPF y se integran y compensan en la base imponible del ahorro en la forma y con los l&iacute;mites establecidos en el art&iacute;culo 49 de la misma Ley.</p>
+<p>Las operaciones de venta de monedas virtuales a cambio de euros realizadas al margen de una actividad econ&oacute;mica deber&aacute;n ser incluidas en la declaraci&oacute;n del IRPF correspondiente al per&iacute;odo impositivo en que dichas operaciones se hayan realizado en el apartado espec&iacute;fico "Ganancias y p&eacute;rdidas patrimoniales derivadas de la transmisi&oacute;n o permuta de monedas virtuales por particulares" de la declaraci&oacute;n.</p>
+<div class="border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p class="verde"><em><strong>Resumen:</strong></em></p>
+<ul>
+<li><em>Ganancia o p&eacute;rdida patrimonial.</em></li>
+<li><em>Importe: diferencia entre valor de transmisi&oacute;n y de adquisici&oacute;n</em></li>
+<li><em>Imputable al ejercicio en que se entrega la moneda en virtud del contrato de compraventa.</em></li>
+<li><em>Renta del ahorro porque procede de la transmisi&oacute;n de un elemento patrimonial</em></li>
+</ul>
+</div>
+<h2>b) Intercambio de una moneda virtual por otra diferente</h2>
+<p><strong>Normativa: Arts. 37.1.h), 14 y 46.b) Ley&nbsp;<abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> </strong></p>
+<h3>Delimitaci&oacute;n</h3>
+<p>El intercambio de una moneda virtual por otra moneda virtual diferente constituye, en la medida en que son bienes diferentes, una permuta, conforme a la definici&oacute;n contenida en el art&iacute;culo 1.538 del C&oacute;digo Civil, que dispone: <em>&ldquo;La permuta es un contrato por el cual cada uno de los contratantes se obliga a dar una cosa para recibir otra&rdquo;</em>.</p>
+<h3>Ganancia o p&eacute;rdida patrimonial</h3>
+<p>Dicho intercambio, cuando se realiza al margen de una actividad econ&oacute;mica, da lugar a una alteraci&oacute;n en la composici&oacute;n del patrimonio, ya que se sustituye una cantidad de una moneda virtual por una cantidad de otra moneda virtual distinta, y con ocasi&oacute;n de esta alteraci&oacute;n se pone de manifiesto una variaci&oacute;n en el valor del patrimonio materializada en el valor de la moneda virtual que se adquiere en relaci&oacute;n con el valor al que se obtuvo la moneda virtual que se entrega a cambio.</p>
+<p>En consecuencia, el intercambio entre monedas virtuales diferentes realizado por un contribuyente al margen de una actividad econ&oacute;mica da lugar a la obtenci&oacute;n de renta que se califica como ganancia o p&eacute;rdida patrimonial.</p>
+<p><strong>Para cuantificar la ganancia o p&eacute;rdida patrimonial</strong> se aplica la norma de valoraci&oacute;n espec&iacute;fica de la permuta prevista en el art&iacute;culo 37.1.h) de la Ley del IRPF conforme a la cual la ganancia o p&eacute;rdida patrimonial se determinar&aacute; por la diferencia entre el valor de adquisici&oacute;n de la moneda virtual que se entrega y <strong>el mayor</strong> de los dos siguientes:</p>
+<ul>
+<li>
+<p>El valor de mercado de la moneda virtual entregada.</p>
+</li>
+<li>
+<p>El valor de mercado del bien o derecho que se recibe a cambio.</p>
+</li>
+</ul>
+<p>A efectos de posteriores transmisiones, el valor de adquisici&oacute;n de las monedas virtuales obtenidas mediante permuta ser&aacute; el valor que haya tenido en cuenta el contribuyente por aplicaci&oacute;n de la regla prevista en el citado art&iacute;culo 37.1.h) como valor de transmisi&oacute;n en dicha permuta.</p>
+<p>En lo que respecta al valor de mercado correspondiente a las monedas virtuales que se permutan, es el que corresponder&iacute;a al precio acordado para su venta entre sujetos independientes en el momento de la permuta.</p>
+<h3>Identificaci&oacute;n de las monedas transmitidas</h3>
+<p>Las criptomonedas de un tipo, computables por unidades o fracciones de unidades, tienen su origen en un mismo protocolo inform&aacute;tico y todas las del mismo tipo poseen las mismas caracter&iacute;sticas, siendo iguales entre s&iacute;, lo que confiere a las diferentes unidades o fracciones de unidades de la criptomoneda en cuesti&oacute;n la naturaleza de bienes homog&eacute;neos.</p>
+<p>A efectos de determinar la correspondiente ganancia o p&eacute;rdida patrimonial y en la medida en que la Ley del&nbsp;<abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>&nbsp;no establece una regla espec&iacute;fica diferente para identificar, en el caso de monedas virtuales homog&eacute;neas (por ejemplo, el bitcoin), las que se entienden transmitidas, debe considerarse que en caso de efectuarse ventas parciales de monedas virtuales que hubieran sido adquiridas en diferentes momentos y a diferentes valores, las que se transmiten son las adquiridas en primer lugar (<strong>criterio FIFO</strong>).</p>
+<h3>Imputaci&oacute;n temporal de la ganancia</h3>
+<p>Esta imputaci&oacute;n se producir&aacute;, de acuerdo con el art&iacute;culo 14 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>, en el momento en que se proceda al intercambio de las monedas virtuales.</p>
+<p>La p&eacute;rdida patrimonial que pueda originarse en un intercambio entre monedas virtuales diferentes debe ser objeto de acreditaci&oacute;n (a solicitud, en su caso, de los &oacute;rganos de gesti&oacute;n e inspecci&oacute;n tributaria) a trav&eacute;s de los medios de prueba generalmente admitidos en Derecho.</p>
+<h3>Clase de renta</h3>
+<p>El importe de las ganancias o p&eacute;rdidas patrimoniales procedentes de las operaciones de permuta entre monedas virtuales diferentes, constituyen <strong>renta del ahorro</strong> conforme a lo previsto en el art&iacute;culo 46. b) de la Ley del IRPF y se integran y compensan en la base imponible del ahorro en la forma y con los l&iacute;mites establecidos en el art&iacute;culo 49 de la misma Ley:</p>
+<p>Las operaciones de intercambio entre monedas virtuales realizadas al margen de una actividad econ&oacute;mica deber&aacute;n ser incluidas en la declaraci&oacute;n del IRPF correspondiente al per&iacute;odo impositivo en que dichas operaciones se hayan realizado, que, en su caso, deba presentar el contribuyente en el apartado "Ganancias y p&eacute;rdidas patrimoniales derivadas de la transmisi&oacute;n o permuta de monedas virtuales por particulares" de la declaraci&oacute;n.</p>
+<div class="border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p class="verde"><em><strong>Resumen:</strong></em></p>
+<ul>
+<li><em>El intercambio entre monedas virtuales diferentes da lugar a ganancia o p&eacute;rdida patrimonial.</em></li>
+<li><em>La alteraci&oacute;n patrimonial se valora con las normas espec&iacute;ficas de las permutas.</em></li>
+<li><em>El valor de mercado de las monedas virtuales que se permutan es el que corresponder&iacute;a al precio acordado para su venta entre sujetos independientes.</em></li>
+<li><em>Las ganancias o p&eacute;rdidas son renta del ahorro</em>.</li>
+</ul>
+</div>
+<h2>c) P&eacute;rdidas patrimoniales. Por no devoluci&oacute;n de las monedas depositadas o por quiebra de la plataforma de compraventa de monedas virtuales</h2>
+<p><strong>Normativa: Arts. 14.2.k) y 45 Ley&nbsp;<abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> </strong></p>
+<p>En estos casos, el importe de un cr&eacute;dito no devuelto a su vencimiento no constituye de forma autom&aacute;tica una p&eacute;rdida patrimonial, al mantener el acreedor su derecho de cr&eacute;dito, debiendo acudir a la regla especial de imputaci&oacute;n temporal prevista en el art&iacute;culo 14.2.k) de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> para estos supuestos de cr&eacute;ditos no cobrados.</p>
+<h3>Imputaci&oacute;n temporal de la p&eacute;rdida</h3>
+<p>Seg&uacute;n el art&iacute;culo 14.2.k) de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>&nbsp;&nbsp;las p&eacute;rdidas patrimoniales derivadas de cr&eacute;ditos vencidos y no cobrados podr&aacute;n imputarse al per&iacute;odo impositivo en que concurra alguna de las siguientes circunstancias:</p>
+<ol>
+<li>
+<p>Que adquiera eficacia una quita establecida en un acuerdo de refinanciaci&oacute;n judicialmente homologable a los que se refiere el art&iacute;culo 71 bis y la disposici&oacute;n adicional cuarta de la Ley 22/2003, de 9 de julio, Concursal, o en un acuerdo extrajudicial de pagos a los cuales se refiere el T&iacute;tulo X de la misma Ley.</p>
+</li>
+<li>
+<p>Que, encontr&aacute;ndose el deudor en situaci&oacute;n de concurso, adquiera eficacia el convenio en el que se acuerde una quita en el importe del cr&eacute;dito conforme a lo dispuesto en el art&iacute;culo 133 de la Ley 22/2003, de 9 de julio, Concursal, en cuyo caso la p&eacute;rdida se computar&aacute; por la cuant&iacute;a de la quita.</p>
+<p>En otro caso, que concluya el procedimiento concursal sin que se hubiera satisfecho el cr&eacute;dito salvo cuando se acuerde la conclusi&oacute;n del concurso por las causas a las que se refieren los apartados 1.&ordm;, 4.&ordm; y 5.&ordm; del art&iacute;culo 176 de la Ley 22/2003, de 9 de julio, Concursal.</p>
+</li>
+<li>
+<p>Que se cumpla el plazo de un a&ntilde;o desde el inicio del procedimiento judicial distinto de los de concurso que tenga por objeto la ejecuci&oacute;n del cr&eacute;dito sin que este haya sido satisfecho.</p>
+</li>
+</ol>
+<p>Cuando el cr&eacute;dito fuera cobrado con posterioridad al c&oacute;mputo de la p&eacute;rdida patrimonial a que se refiere esta letra k), se imputar&aacute; una ganancia patrimonial por el importe cobrado en el per&iacute;odo impositivo en que se produzca dicho cobro</p>
+<h3>Clase de renta</h3>
+<p>Al tratarse de una p&eacute;rdida patrimonial que no se ha puesto de manifiesto con ocasi&oacute;n de transmisiones de elementos patrimoniales, formar&aacute; parte de la <strong>renta general</strong>, debiendo integrarse en la <strong>base imponible general</strong> del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> (art&iacute;culos 45 y 48 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>).</p>
+<div class="border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p class="verde"><strong>Resumen:</strong></p>
+<ul>
+<li><em>En cuanto importe de un cr&eacute;dito no devuelto a su vencimiento no constituye una p&eacute;rdida patrimonial.</em></li>
+<li><em>Se aplica la regla especial de imputaci&oacute;n temporal prevista en el art&iacute;culo 14.2.k) de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> para estos supuestos de cr&eacute;ditos no cobrados.</em></li>
+<li><em>Formar&aacute; parte de la renta general, debiendo integrarse en la base imponible general del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>.</em></li>
+</ul>
+</div><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-17">17/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

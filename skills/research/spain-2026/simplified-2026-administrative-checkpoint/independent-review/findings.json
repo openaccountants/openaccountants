@@ -1,0 +1,27 @@
+[
+  {
+    "id": "F1",
+    "issue": "Unintended license/source-label spacing mutations",
+    "status": "CLOSED: final replacement independently read and verified"
+  },
+  {
+    "id": "F2",
+    "issue": "Implicit renunciation must distinguish first calendar quarter from genuine new activity first required quarter/return; retain three-year and coordination gates",
+    "status": "CLOSED: final replacement independently read and verified"
+  },
+  {
+    "id": "F3",
+    "issue": "Unestablished judicial challenge wording; use legal reconciliation/correction boundary",
+    "status": "CLOSED: final replacement independently read and verified"
+  },
+  {
+    "id": "F4",
+    "issue": "1 April submission-validity sentence belongs to IRPF paragraph3; IVA supported separately by eligibility page/RDL2/RIVA33",
+    "status": "CLOSED: final replacement independently read and verified"
+  },
+  {
+    "id": "F5",
+    "issue": "Established IRPF implicit renunciation requires timely filing, not proof of positive cash payment",
+    "status": "CLOSED: final estimated-tax candidate explicitly identifies timely filing and distinguishes genuine-start route"
+  }
+]

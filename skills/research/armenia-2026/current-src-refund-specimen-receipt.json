@@ -1,0 +1,35 @@
+{
+  "url": "https://www.src.am/storage/menu_contents_2044/dz_harkeriveradardz_certdim_6a29039d5adfd.docx",
+  "final_url": "https://www.src.am/storage/menu_contents_2044/dz_harkeriveradardz_certdim_6a29039d5adfd.docx",
+  "status": 200,
+  "fetched_utc": "2026-10-26T22:21:22.928383+00:00",
+  "bytes": 262971,
+  "sha256": "8eebe43e266dc3c2b8a2a2269715edac007860500df6b561eb516b70d5409417",
+  "headers": {
+    "Date": "Mon, 26 Oct 2026 22:21:22 GMT",
+    "Server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k",
+    "Last-Modified": "Wed, 10 Jun 2026 06:26:37 GMT",
+    "ETag": "\"82560-4033b-653e053680efe\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "262971",
+    "Connection": "close",
+    "Content-Type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+  },
+  "read_scope": "Actual current SRC trilingual specimen, all3renderedpages; sections1–6; no adoptiondate or newGovernmentinstrument inferred.",
+  "rendered_pages": [
+    {
+      "file": "page-1.png",
+      "sha256": "e6141b16348c5be3b52f064c50b8ed01e57fec1b03825a3e5c56ff5977d923d6"
+    },
+    {
+      "file": "page-2.png",
+      "sha256": "d99e39038eaef1dd58b824a4f36c292f39d6aa3f60aca644c647dbc5d5779e98"
+    },
+    {
+      "file": "page-3.png",
+      "sha256": "eb1943eded74094859685fd12b2fac7e15c13089cf8f767b3702812f61d06d37"
+    }
+  ],
+  "discovery_page": "https://www.src.am/am/getMenusContents/2044",
+  "body_retention": "OriginalDOCX,extractedtext,PDFandPNGs remainin persistent work/current-refund; hashesrecordactualfetch/render,not reconstructedhistoricalreceipts."
+}

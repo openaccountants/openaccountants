@@ -1,13 +1,13 @@
 ---
 name: se-income-tax
 description: "Use for Swedish personal income tax for income year 2026 (return filed in 2027), with the full computation for a sole trader (enskild firma, enskild näringsidkare). Covers municipal and regional tax (2026 average 32.38%), state tax of 20% above the SEK 643,000 skiktgräns, the basic deduction (grundavdrag) and the higher amount from 66, the job tax credit (jobbskatteavdrag), the 7% pension contribution and its credit, capital income at 30%, ISK and capital insurance standard income with the SEK 300,000 tax-free amount, ROT and RUT, business income on the NE form (schablonavdrag for egenavgifter, räntefördelning, expansionsfond, depreciation, home office, representation), F-tax instalments, the 2 May deadline (3 May 2027), final tax dates, late-filing fees, tax surcharge and cost interest. Trigger on: Swedish income tax, kommunalskatt, statlig inkomstskatt, grundavdrag, jobbskatteavdrag, NE-bilaga, enskild firma, F-skatt, ISK, rot, rut, kvarskatt. Out of scope: se-employee-income-tax, se-social-contributions, sweden-payroll, se-capital-gains, se-closely-held-company-312, se-corporate-tax, se-cross-border."
-version: 2.1
+version: 2.2
 jurisdiction: SE
-category: international
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -78,15 +78,15 @@ This skill sets out Swedish income tax for an individual for income year 2026 an
 
 **Pension contribution.** 7% of employment and business income, each rounded down to SEK 100, ignoring income above 8.07 income base amounts, nothing if income is below 42.3% of a PBB; the contribution is rounded to the nearest SEK 100 (Lag 1994:1744 3-4 §§). A sole trader gets the credit only if the contribution was paid on time (IL 67 kap. 4 §).
 
-**Business income (NE form).** Book income and costs net of VAT if the business is VAT-registered. Tax payments, VAT payments, owner drawings and deposits, loan principal and transfers between own accounts are not income or costs. Interest received goes to capital, not business. Then:
+**Business income (NE form).** Book income and costs net of VAT if the business is VAT-registered. Tax payments, VAT payments, owner drawings and deposits, loan principal and transfers between own accounts are not income or costs. Interest received goes to capital, not business. Input VAT the business can deduct or get back is not a cost; input VAT it cannot deduct (for example on representation) is a cost (IL 16 kap. 16 §). Then:
 - Schablonavdrag: deduct 25% of the surplus (10% where only the 10.21% rate applies) to cover this year's egenavgifter; it is reversed next year and replaced by the egenavgifter actually charged (IL 16 kap. 29-30 §§). Egenavgifter are then computed on the surplus after this deduction.
-- Equipment: a purchase below SEK 29,600 excluding VAT, or with a life of three years or less, is deducted at once. Items with a natural link are tested on their combined cost (IL 18 kap. 4 §). Others go into the equipment pool (IL 18 kap. 13 §).
+- Equipment: a purchase below SEK 29,600 excluding VAT, or with a life of three years or less, is deducted at once. Items with a natural link are tested on their combined cost (IL 18 kap. 4 §). Others go into the equipment pool (IL 18 kap. 13 §). Goodwill, patents, licences, trademarks and similar rights bought from someone else are treated as equipment and go into the same pool (IL 18 kap. 1 §). A building is depreciated by a yearly percentage of its cost set by its economic life (IL 19 kap. 4-5 §§).
 - Own car: SEK 2.50 per km for business trips in a car that is not a business asset (IL 16 kap. 27 §). A business car is deducted at actual cost.
-- Home office: either a reasonable share of rent and heating for a part of the home fitted out for the business (IL 16 kap. 34 §), or the flat SEK 2,000 or SEK 4,000 if the person worked at least 800 hours at home (IL 16 kap. 35 §). Not both.
+- Home office: either a reasonable share of rent and heating for a part of the home fitted out for the business (IL 16 kap. 34 §), or the flat SEK 2,000 or SEK 4,000 if the person worked at least 800 hours at home (IL 16 kap. 35 §). For a tax year longer or shorter than 12 months, the 800 hours and the flat amount are adjusted in proportion (IL 16 kap. 35 §). Not both.
 - Representation: deductible only if directly linked to the business; meals SEK 0 (IL 16 kap. 2 §).
-- Räntefördelning: a positive capital base allows 8.55% of it to move from business income to capital income (30%). A capital base below minus SEK 500,000 forces 3.55% the other way (IL 33 kap.).
+- Räntefördelning: a positive capital base allows 8.55% of it to move from business income to capital income (30%). A capital base below minus SEK 500,000 forces 3.55% the other way (IL 33 kap.). Example: a capital base of SEK 500,000 gives 500,000 × 8.55% = SEK 42,750 that may move to capital income; on business income of SEK 400,000 the business income becomes SEK 357,250.
 - Periodiseringsfond: a sole trader may set aside up to 30% of the surplus; an allocation made for 2026 must be reversed by income year 2032 at the latest (Skatteverket, belopp och procent 2026).
-- Expansionsfond: an allocation is taxed at 20.6% now and the 20.6% is credited back when it is reversed; the fund must be reversed when the business stops (IL 34 kap. 16 §, 65 kap. 8 §).
+- Expansionsfond: an allocation is taxed at 20.6% now and the 20.6% is credited back when it is reversed; the fund must be reversed when the business stops (IL 34 kap. 16 §, 65 kap. 8 §). Example: an allocation of SEK 200,000 out of business income of SEK 500,000 costs 200,000 × 20.6% = SEK 41,200 now and leaves SEK 300,000 of business income.
 - Losses: a business deficit carries forward to the next year with no time limit, against the same business (IL 40 kap. 2 §).
 - Records: books and vouchers are kept until the end of the seventh year after the year the financial year ended (BFL 7 kap. 2 §).
 
@@ -101,7 +101,7 @@ This skill sets out Swedish income tax for an individual for income year 2026 an
 - Inkomstdeklaration 1 is due 2 May the year after the income year (SFL 32 kap. 1 §). 2 May 2027 is a Sunday, so the return for 2026 is on time on Monday 3 May 2027 (Lag 1930:173 2 §). For the 2025 return Skatteverket used 4 May 2026 for the same reason.
 - Filing is digital in the e-service with BankID or the codes on the paper return, or on paper. A sole trader adds the NE form.
 - An accounting firm can get an extension for its clients. In 2026 the extended date was 15 June (Skatteverket, få skatteåterbäring).
-- F-tax: a sole trader applies to be approved for F-tax (SFL 9 kap.) and pays preliminary tax in equal monthly amounts from February to January, due on the 12th, and on the 17th in January and August (SFL 62 kap. 4 §). A due date on a Saturday, Sunday or public holiday moves to the next weekday (Lag 1930:173 2 §), so the January 2027 instalment for 2026 is due Monday 18 January 2027.
+- F-tax: a sole trader applies to be approved for F-tax (SFL 9 kap.). A client that pays a person who is not approved for F-tax pays employer contributions on the fee; with F-tax approval at the time the fee is agreed or paid, it does not (SAL 2 kap. 5 §). The sole trader pays preliminary tax in equal monthly amounts from February to January, due on the 12th, and on the 17th in January and August (SFL 62 kap. 4 §). A due date on a Saturday, Sunday or public holiday moves to the next weekday (Lag 1930:173 2 §), so the January 2027 instalment for 2026 is due Monday 18 January 2027.
 - Final tax (slutlig skatt): Skatteverket must send the final tax notice to individuals by 15 December of the year after the income year (SFL 56 kap. 10 §). In the 2026 round notices went out 6-10 April for returns approved digitally without changes by 31 March, 8-12 June for returns filed by 4 May, 3-7 August for extended or later returns, and 7-11 December for the rest. Refunds are paid with the notice. Skatteverket has not yet published the 2027 dates.
 - Residual tax (kvarskatt) is due on the first due date after 90 days from the final tax decision (SFL 62 kap. 8-9 §§). In 2026, a notice in June was due 14 September 2026 and one in August on 12 November 2026.
 
@@ -249,9 +249,11 @@ expected:
 | Skatteverket, få skatteåterbäring (2026 notice and refund dates) | https://www.skatteverket.se/privat/deklaration/faskatteaterbaring.4.12815e4f14a62bc048f10101.html | 2026-10-24 |
 | Skatteverket, betala kvarskatt | https://www.skatteverket.se/privat/deklaration/betalakvarskatt.4.12815e4f14a62bc048f106ca.html | 2026-10-24 |
 
-Not yet confirmed: the 2027 notice, refund and extension dates (Skatteverket has published only the 2026 round); the base interest rate in force when 2026 residual tax is charged; the public service fee rate (only the 2026 maximum was read); the regional reduction of egenavgifter (Lag 2001:1170) and the egenavgift waiting-period options, left to se-social-contributions; the NE form line for each income and cost type (R1-R47) and the bank-statement classification library of the old version, which are working practice rather than law and were not re-read on an official page; the church fee rate for a given parish.
+Not yet confirmed: the 2027 notice, refund and extension dates (Skatteverket has published only the 2026 round); the base interest rate in force when 2026 residual tax is charged; the public service fee rate (only the 2026 maximum was read); the regional reduction of egenavgifter (Lag 2001:1170) and the egenavgift waiting-period options, left to se-social-contributions; the NE form line for each income and cost type (R1-R47) and the bank-statement classification library of the old version, which are working practice rather than law and were not re-read on an official page; the church fee rate for a given parish; the 2-5% straight-line rates for buildings in the old version (the law sets the rate by the building's economic life, IL 19 kap. 5 §, and no official page with a 2-5% range was read).
 
 > Contributed by Ryan Duguid.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

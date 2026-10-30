@@ -1,0 +1,70 @@
+{
+  "scope": "Independent boundedI03 delta, countryPARTIAL",
+  "files": [
+    {
+      "file": "all-source-artifact-hashes.json",
+      "bytes": 48095,
+      "sha256": "986543d4888d7a4010c3ba2569f47e041f548ad5ea69c4cd908ed2166f582eb9"
+    },
+    {
+      "file": "findings.json",
+      "bytes": 641,
+      "sha256": "9c69419dd2367baf3fc1b0d5c747f99c4584f52199d647a841e402c372fffb49"
+    },
+    {
+      "file": "fresh-primary-web-opens.json",
+      "bytes": 13481,
+      "sha256": "ea8b9c52986d3710005e0e0d58187691fbc771f55f5762779525eaf9d563cef3"
+    },
+    {
+      "file": "frozen-after.md",
+      "bytes": 462410,
+      "sha256": "a68b6eb27a849eb86105799f5744717d29c2296814d9f8bdb2c647fb56cdf8b1"
+    },
+    {
+      "file": "frozen-before.md",
+      "bytes": 441595,
+      "sha256": "8f0a2db6bf2fabde6391761b8b98738f54980dee2486b27bb59267a7616036dc"
+    },
+    {
+      "file": "independent-arithmetic.json",
+      "bytes": 37106,
+      "sha256": "66d371a3a7433db1b0ea6f2b92651f678f0f07dc7307e5528e3bc608a7e59081"
+    },
+    {
+      "file": "independent-controls.py",
+      "bytes": 9786,
+      "sha256": "55c6ad403669c4b2b79ef0501e2bbb8a69ad5ec7a5a1f70acad974777780ae89"
+    },
+    {
+      "file": "independent-source-tables.json",
+      "bytes": 17109,
+      "sha256": "fc7a87df0a5c62b49cf73f770618e2688b765895c3e61c0f0de79b142cc6f3d3"
+    },
+    {
+      "file": "no-loss-unit-ledger.json",
+      "bytes": 29849,
+      "sha256": "ce91b3779212f4dc33213e039e63f7a4aa77cc3c22c4eaffcfd482d8ba3b8199"
+    },
+    {
+      "file": "preservation-controls.json",
+      "bytes": 672,
+      "sha256": "d133cbaaf1cd7e7b48bc90e9723490cdeeb0d134c5c91dd00e776ebdbc826f80"
+    },
+    {
+      "file": "repo-checks.json",
+      "bytes": 567,
+      "sha256": "9d722ecb32441fecc70652fe8bfb872457d76f1ada4638aedd4bca3a1d5cb6f6"
+    },
+    {
+      "file": "report.md",
+      "bytes": 10210,
+      "sha256": "23a919d0eadd3f48a06df47bcebb00cf3827f3251266f412af06a4400289db32"
+    },
+    {
+      "file": "source-receipts-rehashed.json",
+      "bytes": 39234,
+      "sha256": "6cf2956513be775edcae2e498e2af96556ae6af1aeff3759b147bd117a7ea4f4"
+    }
+  ]
+}
