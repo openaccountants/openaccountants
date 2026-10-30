@@ -49,7 +49,7 @@ The Isle of Man has two company law regimes running side by side: companies unde
 | Income Tax Division, New Manx Vehicles (2006 Act Companies) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/new-manx-vehicles-2006-act-companies/ | 2026-10-30 |
 | Income Tax Division, Economic Substance | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/economic-substance/ | 2026-10-30 |
 
-Not yet confirmed: the Companies Act 2006 text itself (legislation.gov.im was not read for it; the 2006 Act facts come from the Registry's pages); no minimum share capital for a 2006 Act company, no requirement for a company secretary or an AGM, and whether 2006 Act companies file accounts or need an audit (all in the old version; no official source read today states them); which companies count as "excepted" for the lower annual return fee; the Foundations Act 2011 title (named in the old version; the Registry fees page names foundations but not the Act).
+Not yet confirmed: the Companies Act 2006 text itself (legislation.gov.im was not read for it; the 2006 Act facts come from the Registry's pages); no minimum share capital for a 2006 Act company, no requirement for a company secretary or an AGM, and whether 2006 Act companies file accounts or need an audit (all in the old version; no official source read today states them); which companies count as "excepted" for the lower annual return fee; the Foundations Act 2011 title (named in the old version; the Registry fees page names foundations but not the Act); protected cell companies (listed in the old version; no official page on them was read today).
 
 <!-- openaccountants-cta-block -->
 
