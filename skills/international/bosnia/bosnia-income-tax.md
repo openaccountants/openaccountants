@@ -69,7 +69,7 @@ All amounts are in convertible marks (KM, BAM). There are no progressive bands i
 | RS small entrepreneur ceiling | revenue up to 100,000 KM, not VAT-registered, at most 3 workers | 2026 | RS Law art. 21 as replaced by 110/24 |
 | RS small farmer tax | 0 KM up to 12,000 KM revenue; 200 KM up to 25,000; 400 KM up to 50,000 | 2026 | [RS Law art. 27b, added by 112/23](https://poreskaupravars.org/wp-content/uploads/2023/12/Scan26122023.pdf) |
 | RS seasonal and temporary work | 9 KM tax per day of engagement | from 1 Jan 2026 | RS Law art. 52a, added by 114/25 |
-| RS non-resident occasional services | 10% withholding on the gross fee, final | 2026 | RS Law art. 61a, added by 110/24 |
+| RS non-resident occasional services | 10% withholding on the gross fee, final; from 2026 also on such payments to non-resident legal persons | 2026 | RS Law art. 61a, added by 110/24; para. 5 added by 114/25 |
 | Brčko income tax rate | 10% | 2026 | [BD Law art. 10](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/Nesluz--bena%20prec--is--c-ena%20verzija%20Zakona%20o%20porezu%20na%20dohodak%20B.pdf) |
 | Brčko basic personal allowance | 14,400 KM a year (1,200 KM a month) | from 1 Aug 2022 | [BD Law art. 25(1) as amended by 21/22](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/04B21-22%20Zakon%20o%20izmjenama%20i%20dopuni%20Zakona%20o%20porezu%20na%20dohodak.pdf) |
 | Brčko life insurance with savings element | up to 1,800 KM a year added to the allowance | from 1 Aug 2022 | BD Law art. 25(8) as amended by 21/22 |
@@ -109,7 +109,7 @@ All amounts are in convertible marks (KM, BAM). There are no progressive bands i
 
 **Small farmer (arts. 27a to 27v).** A registered farm holder with revenue up to 50,000 KM can opt for a fixed annual tax (table above). Statement by 28 February, decision by 30 April, payment by 30 June.
 
-**Capital, capital gains, author rights, other income.** 13% (art. 4(3)). Exempt income listed in art. 8 now has to be reported too (art. 61b, added by 114/25).
+**Capital, capital gains, author rights, other income.** 13% (art. 4(3)). Interest on savings in banks, savings banks and credit cooperatives, voluntary pension funds and bank accounts is not taxed; from 1 January 2026 this also covers interest on bonds issued by Republika Srpska or its local governments (art. 8, as amended by 114/25). Exempt income listed in art. 8 now has to be reported too (art. 61b, added by 114/25).
 
 ### Brčko District
 
@@ -128,7 +128,7 @@ The base follows the FBiH model: gross salary less employee contributions less t
 | Start of activity, renting or foreign income | notify within 8 days (art. 38) | small entrepreneur option by 31 January or within 30 days of starting (art. 25) | notify within 8 days (art. 39) |
 | Tax due with the annual return | paid in full by the filing deadline (art. 35(6)) | | paid by the filing deadline (art. 37(7)) |
 
-**Who must file an annual return.** In FBiH and Brčko: anyone with income from more than one source, salary from two or more employers, income received directly from abroad, or other income for which the law requires a return. An employee with one employer and no other income does not file. People whose only income was taxed by final withholding (short work, tourist lets, property and rights sales, interest, prizes) do not file (FBiH art. 36(3) to (5); BD art. 38(3) to (5)). An FBiH employee may still file to claim the extra allowances. In RS an employee taxed at source with no other income does not file (art. 60(4)); small-entrepreneur revenue stays out of the annual return (art. 60(2)).
+**Who must file an annual return.** In FBiH and Brčko: anyone with income from more than one source, salary from two or more employers, income received directly from abroad, or other income for which the law requires a return. An employee with one employer and no other income does not file. People whose only income was taxed by final withholding (short work, tourist lets, property and rights sales, interest, prizes) do not file (FBiH art. 36(3) to (5); BD art. 38(3) to (5)). In Brčko, a person who rents out agricultural land and has no other income does not file a return (BD art. 33(9), added by 5/25). An FBiH employee may still file to claim the extra allowances. In RS an employee taxed at source with no other income does not file (art. 60(4)); small-entrepreneur revenue stays out of the annual return (art. 60(2)).
 
 **Refunds.** FBiH: overpaid tax is set against other debts first; any refund is made within 90 days of the filing deadline (art. 35(7) and (8)).
 
@@ -157,7 +157,7 @@ The base follows the FBiH model: gross salary less employee contributions less t
 
 - **Between the entities.** Each jurisdiction taxes its residents on income from the other entity and Brčko too, and credits the tax paid there, capped at its own tax on that income, on certified documents only (FBiH art. 25; RS art. 67; BD art. 26). The FBiH and Brčko rules that treat an employee by the employer's seat (FBiH art. 2(4), BD art. 3(1)(e)) mean salary is normally taxed where the employer sits.
 - **Foreign income.** Residents are taxed on worldwide income with a credit for foreign tax, capped the same way. Treaties for the avoidance of double taxation take priority (FBiH art. 35(5); BD art. 37(6)). An FBiH employee paid directly from abroad self-assesses the monthly advance within five days of receipt (FBiH art. 27(10)); in RS within seven days (RS art. 66).
-- **Non-residents.** FBiH: occasional performers, artists and similar pay 10% withholding on the gross fee, final (art. 30(1)). RS: occasional services by non-residents carry 10% withholding on the gross fee, final, unless a treaty gives less (art. 61a). Losses of a foreign branch are not deductible (FBiH art. 26(3)).
+- **Non-residents.** FBiH: occasional performers, artists and similar pay 10% withholding on the gross fee, final (art. 30(1)). RS: occasional services by non-residents carry 10% withholding on the gross fee, final, unless a treaty gives less (art. 61a). From 1 January 2026 the same withholding applies when the non-resident is a legal person (art. 61a(5), added by 114/25). Losses of a foreign branch are not deductible (FBiH art. 26(3)).
 - **Treaty rates and residence certificates** are not covered here. See [ba-tax-overview](ba-tax-overview.md).
 
 ## Worked examples
@@ -248,7 +248,8 @@ expected:
 | RS Tax Administration, changes to Form 1002 from 1 January 2026 (worked example) | https://poreskaupravars.org/izmjene-u-podnosenju-obrasca-1002-od-01-01-2026-godine-3/ | 2026-10-30 |
 | RS Zakon o poreskom postupku 78/20, arts. 60, 112 to 115 (amended by 37/22, which does not touch these articles) | https://poreskaupravars.org/wp-content/uploads/2026/05/Zakon-o-poreskom-postupku-78-20.pdf | 2026-10-30 |
 | Brčko Zakon o porezu na dohodak, unofficial consolidated text (60/10, 14/17, 24/20) | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/Nesluz--bena%20prec--is--c-ena%20verzija%20Zakona%20o%20porezu%20na%20dohodak%20B.pdf | 2026-10-30 |
-| Brčko amendments 21/22, 45/22 and 5/25 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/04B21-22%20Zakon%20o%20izmjenama%20i%20dopuni%20Zakona%20o%20porezu%20na%20dohodak.pdf | 2026-10-30 |
+| Brčko amendments 21/22 and 45/22 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/04B21-22%20Zakon%20o%20izmjenama%20i%20dopuni%20Zakona%20o%20porezu%20na%20dohodak.pdf | 2026-10-30 |
+| Brčko amendment 5/25 (art. 33(9), agricultural land lessors) | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/06B05-25.%20Zakon%20o%20dopunama%20Zakona%20o%20porezu%20na%20dohodak.pdf | 2026-10-30 |
 | Brčko Zakon o Poreznoj upravi 11/20, arts. 68 and 76 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20Poreznoj%20upravi%20Brc--ko%20Distrikta%20BiH/011B11-20%20Zakon%20%20o%20poreznoj%20upravi%20Brcko%20distrikta%20BiH.pdf | 2026-10-30 |
 
 Not yet confirmed: the wording of RS Law art. 4(1) after 119/21 (the 8% salary rate is taken from the RS Tax Administration's 2026 worked example, not from the article text, which was not on the scanned page); how the RS small-entrepreneur minimum tax is topped up during or after the year; the FBiH capital-gains rules for shares and securities (FMF general opinion 2025 not read); RS capital gains computation and holding-period rules after 2015; the Brčko flat-rate (paušal) amounts and Brčko monthly return form; FBiH accelerated depreciation rules; treaty withholding rates; whether any FBiH Law amendment after 65/13 exists (the Tax Administration's list of 12 October 2026 shows none).

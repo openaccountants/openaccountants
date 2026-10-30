@@ -3,9 +3,10 @@ jurisdiction: BA
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
+  IT-CORP: "ba-corporate-income-tax on main still carries tax year 2025 figures"
   IT-IND: "capital gains on shares and securities (FBiH, RS) and the Brčko flat-rate amounts are not yet sourced"
-  SC: "Brčko District contribution rates and bases are not yet sourced; RS 2026 minimum wage not yet sourced"
-  PR: "Brčko District contributions not yet sourced; FBiH employer levies on net pay (disaster and water fees) not yet sourced"
+  SC: "Brčko District pension and unemployment contribution rates are not yet sourced"
+  PR: "Brčko District pension and unemployment contributions not yet sourced; FBiH employer levies on net pay (disaster and water fees) not yet sourced"
 covered_by: {}
 ---
 
