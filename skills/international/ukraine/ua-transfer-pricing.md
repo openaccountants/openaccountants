@@ -59,7 +59,7 @@ Transactions between a non-resident and its Ukrainian permanent establishment ar
 | Related persons, ownership test (art. 14.1.159) | 25% or more | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
 | Related persons, debt test (art. 14.1.159) | loans above 3.5 times equity (10 times for financial institutions and leasing companies) | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
 | Master file: group consolidated revenue for the prior financial year (art. 39.4.7) | EUR 50,000,000 or more | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
-| Country-by-country report: group consolidated revenue for the prior financial year (art. 39.4.10, 39.4.10-2) | EUR 750,000,000 or more | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Country-by-country report: group consolidated revenue for the prior financial year (art. 39.4.10, 39.4.10-2) | EUR 750,000,000 or more. If the Ukrainian member is not the ultimate parent and the law of the parent's (or its appointed member's) jurisdiction sets a non-euro threshold for the report, that threshold applies instead | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
 | EUR conversion for those two tests (art. 39.4.15) | NBU official UAH/EUR rate, average for the calendar year before the reporting year | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
 | Corporate income tax base rate applied to a transfer pricing adjustment (art. 136.1) | 18% | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 |
 | Subsistence minimum for an able-bodied person at 1 January 2026, the unit for transfer pricing fines (State Budget Law 2026, art. 7) | UAH 3,328 | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 |
@@ -129,6 +129,7 @@ The fines are multiples of the subsistence minimum for an able-bodied person set
 | Still not filed 30 days after the deadline to pay the fine | 5 times (UAH 16,640) a day, capped at 300 times | art. 120.3 |
 | Controlled transactions left out of a filed report | 1% of the undeclared transactions, capped at 300 times for the year | art. 120.4 |
 | Country-by-country report leaves out a group member | 1% of that member's revenue, capped at 1,000 times | art. 120.4 |
+| Corrective controlled transactions report still not filed 30 days after the deadline to pay the art. 120.4 fine | 1 time (UAH 3,328) a day, capped at 300 times | art. 120.4 |
 | Wrong information in the group notice | 50 times (UAH 166,400) | art. 120.5 |
 | Wrong information in the country-by-country report, per member | 200 times (UAH 665,600) | art. 120.5 |
 | Late controlled transactions report | 1 time (UAH 3,328) a day, capped at 300 times | art. 120.6 |
