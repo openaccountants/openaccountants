@@ -2,7 +2,7 @@
 
 WRITER LEDGER; NOT INDEPENDENTLY REVIEWED; COUNTRY PARTIAL
 
-Guide SHA256 `80bc6f271c7b9038070a2cc452fb490fccf1c2bc5e1f42ce16fd25abbdf9d4ca`. Read date30October2026. Every original2026paragraph/table/control is mapped below; older2025 approximate topics have explicit dispositions. No independent PASS is claimed.
+Guide SHA256 `83b50e55564932011270906e7148752e8a424586bf969c2ef633d3f8cc80a747`. Read date30October2026. Every original2026paragraph/table/control is mapped below; older2025 approximate topics have explicit dispositions. No independent PASS is claimed.
 
 Whitespace/linewrapping and PDF discretionary hyphens only; web-reader line prefixes removed. Quotes are original German, not translated. Observations are fetched tool text where direct HTTP blocked, explicitly not rawPDF/HTML.
 
@@ -45,7 +45,7 @@ Whitespace/linewrapping and PDF discretionary hyphens only; web-reader line pref
 | LI-PS-035 | Base deducts business earning expenses; The base / Self-employed and non-employed contributions | AHVG42(2)(a) | https://www.gesetze.li/konso/pdf/1952029000 | die zur Erzielung des rohen Einkommens erforderlichen Gewinnungs | 2026-10-30 |
 | LI-PS-036 | Business depreciation/provisions and bookedlosses; The base / Self-employed and non-employed contributions | AHVG42(2)(b)-(c) | https://www.gesetze.li/konso/pdf/1952029000 | die eingetretenen und verbuchten Geschäftsverluste; | 2026-10-30 |
 | LI-PS-037 | Own article41 contributions/IV not deductible under staffwelfare/publicbenefit limb; The base / Self-employed and non-employed contributions | AHVG42(2)(d) | https://www.gesetze.li/konso/pdf/1952029000 | Ausgenommen hievon sind die aufgrund von | 2026-10-30 |
-| LI-PS-038 | Businesscapital interest governmentrate;not yet confirmed2026numeric; The base / Self-employed and non-employed contributions | AHVG42(2)(e) | https://www.gesetze.li/konso/pdf/1952029000 | der Zins des im Betrieb arbeitenden Kapitals; der anzuwendende Zinssatz wird von der Regierung festgelegt. | 2026-10-30 |
+| LI-PS-038 | Businesscapital interest governmentrate;2026ratechain supplied in successor rows; The base / Self-employed and non-employed contributions | AHVG42(2)(e) | https://www.gesetze.li/konso/pdf/1952029000 | der Zins des im Betrieb arbeitenden Kapitals; der anzuwendende Zinssatz wird von der Regierung festgelegt. | 2026-10-30 |
 | LI-PS-039 | Self-employedincome roundeddown100;AHV8.25%; The base / Self-employed and non-employed contributions | AHVG41(1) | https://www.gesetze.li/konso/pdf/1952029000 | von 8.25 % erhoben, wobei das Einkommen auf die nächsten 100 Franken abgerundet wird. | 2026-10-30 |
 | LI-PS-040 | Below3000 ordinary annualincome statutoryminimum; The base / Self-employed and non-employed contributions | AHVG41(2) | https://www.gesetze.li/konso/pdf/1952029000 | als 3 000 Franken im Jahr, so ist ein fester Beitrag in Höhe des Mindestbei | 2026-10-30 |
 | LI-PS-041 | Self-employedallin12.285%;noemployer/employeesplit;noALV; The base / Self-employed and non-employed contributions | AHV2026 bulletin §§5,13,16 | https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf | Selbstständigerwerbende müssen keine Beiträge an die ALV bezahlen. | 2026-10-30 |
@@ -162,6 +162,18 @@ Whitespace/linewrapping and PDF discretionary hyphens only; web-reader line pref
 | LI-PS-152 | Occupationalaccident/diseasepremiumemployerpaid; The base / Occupational pension and accident premium allocation | UVersG79(1) | https://www.gesetze.li/konso/pdf/1990046000 | und Berufskrankheiten trägt der Arbeitgeber. | 2026-10-30 |
 | LI-PS-153 | Nonoccupationalpremiuminsuredperson,morefavourableagreementreserved; The base / Occupational pension and accident premium allocation | UVersG79(2) | https://www.gesetze.li/konso/pdf/1990046000 | Abweichende Abreden zugunsten des Versicherten bleiben vorbehalten. | 2026-10-30 |
 | LI-PS-154 | Employerowesfullpremium;deductioncurrentorimmediatelyfollowingwageperiod; The base / Occupational pension and accident premium allocation | UVersG79(3) | https://www.gesetze.li/konso/pdf/1990046000 | oder der unmittelbar nachfolgenden Periode stattfinden. | 2026-10-30 |
+| LI-PS-155 | 2026Sollertrag4%; The base / Self-employed and non-employed contributions | SteG5 | https://www.gesetze.li/konso/pdf/2010340000 | gensertrages (Sollertrag) beträgt 4 %. | 2026-10-30 |
+| LI-PS-156 | Taxbusiness-own-capitalreturn usesSollertrag;incorporates12(3)/54(2)–(6); The base / Self-employed and non-employed contributions | SteG16(2)(b)(2) | https://www.gesetze.li/konso/pdf/2010340000 | Kapitals in Höhe des Sollertrags nach Massgabe von Art. 5; Art. 12 | 2026-10-30 |
+| LI-PS-157 | Contributioncapital-interest valuation refers totaxlegislation; The base / Self-employed and non-employed contributions | AHVV16(2) | https://www.gesetze.li/konso/pdf/1982035000 | Bestimmungen der Steuergesetzgebung zu bewerten. | 2026-10-30 |
+| LI-PS-158 | Pensionordinaryannualentrywage14700; The base / Occupational pension | BPVG4(1);FMA current compulsory-membership guidance | https://www.fma-li.li/de/finanzdienstleister/bereich-versicherungen-vorsorgeeinrichtungen/vorsorgeeinrichtungen/laufende-aufsicht | mindestens CHF 14'700.- erzielen | 2026-10-30 |
+| LI-PS-159 | Pensionpart-yearemploymentannualisewageentrytest; The base / Occupational pension | BPVV3(3) | https://www.gesetze.li/konso/pdf/2005288000 | massgebender Jahreslohn der auf das ganze Jahr umgerechnete Lohn. | 2026-10-30 |
+| LI-PS-160 | PensionriskstartJan1after17birthday; The base / Occupational pension | BPVG4(2)(a) | https://www.gesetze.li/konso/pdf/1988012000 | Vollendung des 17. Altersjahres; | 2026-10-30 |
+| LI-PS-161 | PensionretirementsavingstartJan1after19birthday,qualifyingemployment; The base / Occupational pension | BPVG4(2)(b) | https://www.gesetze.li/konso/pdf/1988012000 | für die Altersleistungen mit dem 1. Januar nach Vollendung des 19. | 2026-10-30 |
+| LI-PS-162 | Pensionfixedtermover3months/extensionroute; The base / Occupational pension | BPVG4(2)(b) | https://www.gesetze.li/konso/pdf/1988012000 | Arbeitsverhältnis auf mehr als drei Monate befristet, so gilt es als unbe | 2026-10-30 |
+| LI-PS-163 | FMAFAQconflicting17savingstatement not adopted;statutecontrols; Sources / conflict note | FMA FAQ versus BPVG4(2)(b) | https://www.fma-li.li/de/finanzdienstleister/bereich-versicherungen-vorsorgeeinrichtungen/vorsorgeeinrichtungen/faq | Das Sparen für die Altersrente beginnt am 1. Januar nach Vollendung des 17. Altersjahres | 2026-10-30 |
+| LI-PS-164 | InitialadministrativeVorstellung4weeks; Penalties and interest | AHVG84(1) | https://www.gesetze.li/konso/pdf/1952029000 | Gegen Verfügungen der Anstalt kann binnen vier Wochen das | 2026-10-30 |
+| LI-PS-165 | Initialobjectioncostandfeefree; Penalties and interest | AHVG84(2) | https://www.gesetze.li/konso/pdf/1952029000 | Das Verfahren ist kosten- und gebührenfrei. | 2026-10-30 |
+| LI-PS-166 | FurtherObergerichtappeal4weeksnonextendablefiledthere; Penalties and interest | AHVG86 | https://www.gesetze.li/konso/pdf/1952029000 | Die Berufungsfrist beträgt vier Wochen, sie kann nicht verlängert | 2026-10-30 |
 | LI-PS-C01 | li-payroll-social | ASSUMED CASE INPUTS AND DERIVED ARITHMETIC; governing rates/bases bound above | Governing rows above | Arithmetic requires independent recomputation | 2026-10-30 |
 | LI-PS-C02 | li-payroll-social | ASSUMED CASE INPUTS AND DERIVED ARITHMETIC; governing rates/bases bound above | Governing rows above | Arithmetic requires independent recomputation | 2026-10-30 |
 
@@ -201,18 +213,18 @@ Whitespace/linewrapping and PDF discretionary hyphens only; web-reader line pref
 | OLD-030 | / 300,000–500,000 / 17% / 600,000–1,000,000 / 17% / | current Guide line 150 |
 | OLD-031 | / Above 500,000 / 19% / Above 1,000,000 / 19% / | current Guide line 151 |
 | OLD-032 | The current bulletin exempts qualifying resident pupils, apprentices and students from wage withhold | current Guide line 153 |
-| OLD-033 | For foreign residents, inspect the January 2026 treaty annex and the actual treaty, residence, workd | current Guide line 197 |
+| OLD-033 | For foreign residents, inspect the January 2026 treaty annex and the actual treaty, residence, workd | current Guide line 199 |
 | OLD-034 | ## Preparation and filing method | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
 | OLD-035 | 1. Retain contracts, residence/treaty evidence, birth date, employment dates, work countries, status | Deadlines and filing: predecessor steps1–5 retained; old step6 source/calendar gap replaced by AHVV30/34/35/23 methods in steps6–7, with unresolved contribution interest expressly retained in Penalties and interest. |
 | OLD-036 | ## Other employer costs and sanctions | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
 | OLD-037 | The [health authority's 2026 contribution page][health] sets the monthly employer health-care amount | current Guide line 157 |
 | OLD-038 | SteG article 27 makes the payer liable for underwithholding and requires corrected certification; ar | current Guide line 191 |
 | OLD-039 | ## Worked controls | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
-| OLD-040 | These are assumed ordinary covered adult employees; rates and bases must apply before the arithmetic | current Guide line 203 |
-| OLD-041 | ### Full-year employee contributions | current Guide line 205 |
+| OLD-040 | These are assumed ordinary covered adult employees; rates and bases must apply before the arithmetic | current Guide line 205 |
+| OLD-041 | ### Full-year employee contributions | current Guide line 207 |
 | OLD-042 | ```oa-check name: Liechtenstein 2026 assumed employee contribution split inputs:   established_annua | retained-original-controls.md, exact old block/prose; substantive case remains in current Guide |
-| OLD-043 | ### Full-year employer contributions with ALV cap | current Guide line 226 |
-| OLD-044 | Assume CHF 150,000 established annual wage, all subject to AHV/IV/FAK/VK, and full-year ALV coverage | current Guide line 228 |
+| OLD-043 | ### Full-year employer contributions with ALV cap | current Guide line 228 |
+| OLD-044 | Assume CHF 150,000 established annual wage, all subject to AHV/IV/FAK/VK, and full-year ALV coverage | current Guide line 230 |
 | OLD-045 | ```oa-check name: Liechtenstein 2026 assumed employer contribution and ALV ceiling inputs:   establi | retained-original-controls.md, exact old block/prose; substantive case remains in current Guide |
 | OLD-046 | ### Part-year ALV cap | current Guide line 167 |
 | OLD-047 | This reproduces the institution's section 6 example: 15 April–28 December gives 254 contribution day | current Guide line 169 |
@@ -221,15 +233,15 @@ Whitespace/linewrapping and PDF discretionary hyphens only; web-reader line pref
 | OLD-050 | Assume a single resident employee with CHF 90,000 expected full-year gross, no special category/trea | current Guide line 175 |
 | OLD-051 | ```oa-check name: Liechtenstein assumed confirmed ordinary wage withholding inputs:   established_cu | retained-original-controls.md, exact old block/prose; substantive case remains in current Guide |
 | OLD-052 | ## Ask before preparing and refer when unresolved | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
-| OLD-053 | Establish coverage, contribution dates/wages, residence and treaty status, public/private employment | current Guide line 251 |
-| OLD-054 | ## Sources | current Guide line 253 |
+| OLD-053 | Establish coverage, contribution dates/wages, residence and treaty status, public/private employment | current Guide line 253 |
+| OLD-054 | ## Sources | current Guide line 255 |
 | OLD-055 | Read 24 October 2026, within the sections identified above: | Version/date/H1/description/source-read-date or section-label update to canonical nine-section shape; full preimage retained, no substantive tax topic removed |
-| OLD-056 | - [AHV-IV-FAK 2026 contribution bulletin][contributions], especially 1–6, 7–14. Direct PDF text and  | current Guide line 257 |
-| OLD-057 | [contributions]: https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB | current Guide line 282 |
-| OLD-058 | <!-- openaccountants-cta-block --> | current Guide line 288 |
+| OLD-056 | - [AHV-IV-FAK 2026 contribution bulletin][contributions], especially 1–6, 7–14. Direct PDF text and  | current Guide line 259 |
+| OLD-057 | [contributions]: https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB | current Guide line 290 |
+| OLD-058 | <!-- openaccountants-cta-block --> | current Guide line 296 |
 | OLD-059 | --- | current Guide line 1 |
-| OLD-060 | ## Talk to an accountant | current Guide line 292 |
-| OLD-061 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountan | current Guide line 294 |
+| OLD-060 | ## Talk to an accountant | current Guide line 300 |
+| OLD-061 | Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountan | current Guide line 302 |
 
 ## Earlier pre-refresh2025 topics
 

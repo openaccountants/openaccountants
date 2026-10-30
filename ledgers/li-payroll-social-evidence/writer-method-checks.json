@@ -1,6 +1,6 @@
 {
   "status": "WRITER CHECKS ONLY; NO INDEPENDENT PASS",
-  "guide_sha256": "80bc6f271c7b9038070a2cc452fb490fccf1c2bc5e1f42ce16fd25abbdf9d4ca",
+  "guide_sha256": "83b50e55564932011270906e7148752e8a424586bf969c2ef633d3f8cc80a747",
   "official_table_rows_exactly_compared": 32,
   "arithmetic_controls": [
     {
@@ -177,10 +177,31 @@
       "expected": "889.00",
       "source": "AHV2026bulletin\u00a76",
       "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Verified capital-interest reference4percent",
+      "actual": "4000.00",
+      "expected": "4000",
+      "source": "AHVV16(2);SteG16(2)(b)(2)/5;eligiblecapital100000assumed",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Pensionminimum8percent60000insuredwage",
+      "actual": "4800.00",
+      "expected": "4800",
+      "source": "BPVG7(2);insuredwageandcoverageassumed",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Pensionemployerhalfofminimumretirementcontribution",
+      "actual": "2400",
+      "expected": "2400",
+      "source": "BPVG7(4);ordinarymandatorycaseonly",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
     }
   ],
   "all_four_original_blocks_byte_identical_in_evidence": true,
   "current_executable_blocks": 2,
   "protected_metadata_and_CTA_unchanged": true,
-  "remaining": "Fractional non-employed basis rounding/part-year/cross-status rules and exact self-employed capital-interest/mixed-status chain unconfirmed. These controls do not determine applicability."
+  "remaining": "Fractional non-employed basis rounding/part-year/cross-status rules and actual eligible-capital reconciliation and mixed-status chain unconfirmed. These controls do not determine applicability."
 }
