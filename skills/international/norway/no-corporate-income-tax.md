@@ -1,7 +1,7 @@
 ---
 name: no-corporate-income-tax
 description: "Corporate income tax (skatt på alminnelig inntekt for selskaper) in Norway for income year 2026. Covers who is taxable (AS, ASA and other companies, resident by incorporation or effective management from 2026), the 22% rate and the 25% rate for companies that pay financial-sector tax on wages, the petroleum special tax and resource rent tax rates, the participation exemption (fritaksmetoden) with its 3% rule, the interest limitation rule, depreciation groups, loss carry-forward, group contributions, the 31 May return, advance tax on 15 February and 15 April, withholding tax on dividends, interest and royalties, company exit taxation, and penalties. Trigger phrases: Norway corporate tax, selskapsskatt, skattemelding for AS, fritaksmetoden, rentebegrensning, kildeskatt på utbytte, forskuddsskatt AS, Norwegian company tax return. Out of scope: transfer pricing (no-transfer-pricing), payroll and contributions (no-employer-payroll, no-social-contributions), shareholder tax (no-capital-gains, no-income-tax), VAT (norway-mva, no-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: "NO"
 category: international
 tax_year: 2026
@@ -85,7 +85,7 @@ Norway taxes companies on ordinary income (alminnelig inntekt) at a flat state r
 
 ## Deadlines and filing
 
-- **Return (skattemelding for formues- og inntektsskatt).** Due by the end of May in the year after the income year for companies under sktl. § 2-2 first paragraph _(skatteforvaltningsforskriften § 8-2-3 first paragraph letter a)_. For 2026: 31 May 2027. Partners in a partnership that files a partnership return have the same deadline as the partnership _(§ 8-2-3 third paragraph)_.
+- **Return (skattemelding for formues- og inntektsskatt).** Due by the end of May in the year after the income year for companies under sktl. § 2-2 first paragraph _(skatteforvaltningsforskriften § 8-2-3 first paragraph letter a)_. For 2026: 31 May 2027. A business must file the return electronically _(skatteforvaltningsforskriften § 8-1-2 second paragraph letter a)_. Partners in a partnership that files a partnership return have the same deadline as the partnership _(§ 8-2-3 third paragraph)_.
 - **Who must file.** Anyone with wealth or income taxable in Norway must file, unless the only liability is under the withholding rules in sktl. §§ 10-80, 10-81 or 10-13 _(sktfvl. § 8-2 first paragraph letter a)_.
 - **Auditor signature.** Where the company has an auditor, the signature-required business information and group-contribution information must be signed by the auditor _(skatteforvaltningsforskriften § 8-2-7)_.
 - **Accounting year.** The return covers the previous calendar year's income and wealth at 1 January of the assessment year. A different accounting year is allowed only under an exemption in the Accounting Act § 1-7, and it cannot exceed 12 months _(skatteforvaltningsforskriften § 8-2-2)_.
@@ -191,7 +191,7 @@ expected:
 | Skatteloven §§ 14-6, 14-40, 14-43 | https://lovdata.no/lov/1999-03-26-14/§14-43 | 2026-10-30 |
 | Stortingets skattevedtak 2026 (FOR-2025-12-18-2747, as amended by FOR-2026-06-19-1243) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-10-30 |
 | Skatteforvaltningsloven §§ 8-2, 12-6, 14-1, 14-5, 14-6 | https://lovdata.no/lov/2016-05-27-14/§8-2 | 2026-10-30 |
-| Skatteforvaltningsforskriften §§ 8-2-1, 8-2-2, 8-2-3, 8-2-7, 14-1-1 | https://lovdata.no/forskrift/2016-11-23-1360/§8-2-3 | 2026-10-30 |
+| Skatteforvaltningsforskriften §§ 8-1-2, 8-2-1, 8-2-2, 8-2-3, 8-2-7, 14-1-1 | https://lovdata.no/forskrift/2016-11-23-1360/§8-2-3 | 2026-10-30 |
 | Skattebetalingsloven §§ 10-20, 10-21, 11-1, 11-2 | https://lovdata.no/lov/2005-06-17-67/§10-20 | 2026-10-30 |
 | Skatteetaten, Forskuddsutskrivingen 2026 | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-10-30 |
 | Skatteetaten, Forsinkelsesrenter (2026) | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-10-30 |
