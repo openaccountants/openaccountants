@@ -163,7 +163,7 @@ expected:
 | Italy, Ministerial Decree 21 June 2021 (Gazzetta Ufficiale 168 of 15 July 2021), arts 1-8, 13-16, 20-22 | https://www.gazzettaufficiale.it/eli/gu/2021/07/15/168/sg/pdf | 2026-10-30 |
 | San Marino Finance department, national taxation page | https://www.finanze.sm/pub2/FinanzeSM/FISCALITA-NAZIONALE.html | 2026-10-24 |
 
-Not yet confirmed: whether Decree 108/1997 Table A and B rates and Decree 135/2003 rates were changed by decrees after 2011 other than DD 98/2026; the euro amount of the fixed per-document tax; the 3.5% used-vehicle rate in the earlier version of this skill; the export-refund rates, forms and time limits; import-tax payment due dates; Regulation 28/2026 technical rules for HUB SM.
+Not yet confirmed: whether Decree 108/1997 Table A and B rates and Decree 135/2003 rates were changed by decrees after 2011 other than DD 98/2026; the euro amount of the fixed per-document tax; the 3.5% used-vehicle rate in the earlier version of this skill; the export-refund rates, forms and time limits; import-tax payment due dates; the registration an importer needs before clearing goods (economic-operator code); Regulation 28/2026 technical rules for HUB SM.
 
 [l40]: https://www.consigliograndeegenerale.sm/contents/instance18/files/document/19029leggi_2560.pdf
 [d50]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17021434.html
