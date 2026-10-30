@@ -1,0 +1,66 @@
+{
+  "base": "ad570bbc",
+  "snapshot": "18e8f48a8c073ef72ff5b2e93732a725b94d76d5",
+  "new_urls": [
+    {
+      "url": "https://island.is/stjornartidindi/nr/2771f46a-7402-4e33-87de-16a856e3f81f",
+      "status": 200,
+      "final_url": "https://island.is/stjornartidindi/nr/2771f46a-7402-4e33-87de-16a856e3f81f",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://sedlabanki.is/gagnatorg/vextir",
+      "status": 200,
+      "final_url": "https://sedlabanki.is/gagnatorg/vextir",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/2009152.html",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/skattmat/",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/skattmat/",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/media/2026/rsk_0601_2_2026.is.pdf",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/media/2026/rsk_0601_2_2026.is.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://www.skatturinn.is/media/rsk02/rsk_0201_2026.is.pdf",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/media/rsk02/rsk_0201_2026.is.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf",
+      "content_type": "application/pdf"
+    }
+  ],
+  "checked_at": "2026-10-23",
+  "method": "Direct HTTP GET of newly introduced URLs compared with ad570bbc; read first 256 response bytes. Transport/content-type check only, not operative text verification.",
+  "access_notes": [
+    "The Gazette entry returned 200 directly but 403 in the web reader; HTML reachability does not prove operative Gazette text was read. The official six-page 2026 notice reproduction and current authority text supply the stated benefit rules.",
+    "Innovation Act 152/2009 returned 403 directly but its current operative Articles 3 and 5 were read through the web reader.",
+    "No taxpayer filing, form acceptance, entitlement or legal correctness is established by this audit."
+  ]
+}
