@@ -37,19 +37,21 @@ Ukraine taxes residents on worldwide income and non-residents on Ukrainian-sourc
 - **PIT on dividends.** 5% on dividends paid by a Ukrainian company that pays corporate income tax _(TCU art. 167.5.2)_. 9% (half the 18% rate) on dividends from non-residents, collective investment institutions and companies that do not pay corporate income tax _(TCU art. 167.5.4)_. Other passive income is taxed at 18% _(TCU art. 167.5.1)_.
 - **Military levy (temporary).** Charged until the Verkhovna Rada decides the reform of the Armed Forces is complete _(TCU section XX, subsection 10, point 16-1)_. Rates for 2026 _(point 16-1, sub-point 1.3)_:
   - individuals taxed under PIT: **5%** of the same income that PIT is charged on;
-  - single-tax groups 1, 2 and 4 (entrepreneurs): **10% of the minimum wage** set by law on 1 January, per month;
+  - single-tax groups 1, 2 and 4 (entrepreneurs): **10% of the minimum wage** set by law on 1 January, per month, which is **UAH 864.70 a month** for 2026 (10% of UAH 8,647);
   - single-tax group 3 (except e-residents): **1%** of single-tax income.
   The levy on single-tax payers applies from 1 January 2025 to 31 December of the third calendar year after the year martial law ends _(sub-point 1.1, as amended by Law No. 4835-IX of 7 April 2026)_. Pay of service members is taxed at a separate rate under sub-point 1.3(4), and their money allowance is exempt during martial law _(sub-point 1.7)_.
-- **Annual PIT declaration.** Due by 1 May of the year after the tax year, so **1 May 2027** for 2026 _(TCU art. 49.18.4)_. Tax shown on the declaration is paid by **1 August** of that year _(TCU art. 179.7)_. A resident leaving Ukraine for permanent residence abroad files no later than 60 calendar days before departure _(TCU art. 179.3)_.
+- **Annual PIT declaration.** Due by 1 May of the year after the tax year _(TCU art. 49.18.4)_. For 2026 that day, 1 May 2027, is a Saturday, so the deadline moves to the next operational day _(TCU art. 49.20)_. Tax shown on the declaration is paid by **1 August** of that year _(TCU art. 179.7)_. A resident leaving Ukraine for permanent residence abroad files no later than 60 calendar days before departure _(TCU art. 179.3)_.
 - **Crypto.** Detail: `ua-crypto-tax`.
 
 ### Entrepreneurs on the simplified (single tax) system
 
+- **Minimum wage and subsistence minimum, 2026.** From 1 January 2026 the minimum wage is **UAH 8,647 a month** and the subsistence minimum for able-bodied persons is **UAH 3,328 a month** _(Law No. 4695-IX of 3 December 2025 on the State Budget of Ukraine for 2026, art. 7 and 8)_. The Tax Code ties the single-tax limits and fixed rates and the entrepreneurs' military levy to these 1 January figures.
 - **Groups and income limits.** Each limit is a multiple of the minimum wage set by law on 1 January of the tax year _(TCU art. 291.4)_:
-  - group 1: no employees, retail sales at markets or household services to the public, income up to **167** minimum wages;
-  - group 2: services to single-tax payers or the public, production or sale of goods, restaurants; up to 10 employees; income up to **834** minimum wages;
-  - group 3: entrepreneurs with any number of employees and legal entities, income up to **1,167** minimum wages.
-- **Rates.** Group 1: up to **10%** of the subsistence minimum for able-bodied persons a month; group 2: up to **20%** of the minimum wage a month; both set by the local council _(TCU art. 293.2)_. Group 3 entrepreneurs: **3%** of income if they also pay VAT, **5%** if VAT is included in the single tax _(TCU art. 293.3)_. Group 3 legal entities pay double those rates _(TCU art. 293.5)_. Income over the limit, or from activity outside the group, is taxed at **15%** _(TCU art. 293.4)_.
+  - group 1: no employees, retail sales at markets or household services to the public, income up to **167** minimum wages (**UAH 1,444,049** for 2026);
+  - group 2: services to single-tax payers or the public, production or sale of goods, restaurants; up to 10 employees; income up to **834** minimum wages (**UAH 7,211,598** for 2026);
+  - group 3: entrepreneurs with any number of employees and legal entities, income up to **1,167** minimum wages (**UAH 10,091,049** for 2026);
+  - group 4: agricultural producers (companies with at least 75% agricultural output in the previous year, and family-farm entrepreneurs meeting the art. 291.4(4) conditions).
+- **Rates.** Group 1: up to **10%** of the subsistence minimum for able-bodied persons a month (at most **UAH 332.80** for 2026); group 2: up to **20%** of the minimum wage a month (at most **UAH 1,729.40** for 2026); both set by the local council _(TCU art. 293.1, 293.2)_. Group 3, entrepreneurs and legal entities alike: **3%** of income if they also pay VAT, **5%** if VAT is included in the single tax _(TCU art. 293.3)_. Entrepreneurs in groups 1 to 3 pay **15%** on income over the limit, on income from activity outside their group or outside the simplified system, and on income received by a non-allowed payment method _(TCU art. 293.4)_. Group 3 legal entities pay double the art. 293.3 rate (**6%** or **10%**) on those same kinds of income _(TCU art. 293.5)_.
 - **Tax period.** A calendar year for groups 1, 2 and 4 _(TCU art. 294.1)_. Detail: `ua-single-tax`.
 - **Unified social contribution (ЄСВ).** Set by a separate law, not the Tax Code. Detail: `ua-social-contributions`.
 
@@ -89,10 +91,11 @@ Ukraine taxes residents on worldwide income and non-residents on Ukrainian-sourc
 
 | Source | URL | Read on |
 |---|---|---|
-| Tax Code of Ukraine, Law No. 2755-VI, consolidated text with amendments to Law No. 4967-IX of 03.09.2026: art. 14.1.213, 34.1, 35.1, 41.1.1, 49.18, 57.1, 136, 137.4, 141.4.2, 163, 167, 179.3, 179.7, 181.1, 193.1, 291.4, 293, 294.1; section XX, subsection 4, point 73; subsection 10, point 16-1. zakon.rada.gov.ua refused connections from our network, so the official text was read from the web.archive.org capture of 12 October 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 (capture: https://web.archive.org/web/20261012050950/https://zakon.rada.gov.ua/laws/show/2755-17/print) | 2026-10-30 |
+| Tax Code of Ukraine, Law No. 2755-VI, consolidated text with amendments to Law No. 4967-IX of 03.09.2026: art. 14.1.213, 34.1, 35.1, 41.1.1, 49.18, 49.20, 57.1, 136, 137.4, 141.4.2, 163, 167, 179.3, 179.7, 181.1, 193.1, 291.4, 293, 294.1; section XX, subsection 4, point 73; subsection 10, point 16-1. zakon.rada.gov.ua refused connections from our network, so the official text was read from the web.archive.org capture of 12 October 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 (capture: https://web.archive.org/web/20261012050950/https://zakon.rada.gov.ua/laws/show/2755-17/print) | 2026-10-30 |
+| Law of Ukraine No. 4695-IX of 03.12.2025 "On the State Budget of Ukraine for 2026", art. 7 (subsistence minimum) and art. 8 (minimum wage). zakon.rada.gov.ua refused connections again on 30 October 2026 (curl and a browser tab), so the text was read from the web.archive.org capture of 18 December 2025 | https://zakon.rada.gov.ua/laws/show/4695-20 (capture: https://web.archive.org/web/20251218063046/https://zakon.rada.gov.ua/laws/show/4695-20) | 2026-10-30 |
 | State Tax Service of Ukraine, official site (returned 403 to our reader; named as the filing channel only) | https://tax.gov.ua/ | 2026-10-30 |
 
-Not yet confirmed: the UAH amounts of the minimum wage and the subsistence minimum on 1 January 2026 (set by the State Budget of Ukraine for 2026 law, which we could not open), so the single-tax limits and the group 1, 2 and 4 levy are given as multiples here, not hryvnia; the ЄСВ rate and bases (separate law, not read); the bank CIT rate for 2027 onward; whether the Verkhovna Rada passed tax amendments after 12 October 2026.
+Not yet confirmed: whether the State Budget law for 2026 was amended after December 2025 in a way that changes the 1 January 2026 minimum wage or subsistence minimum (the latest capture we could open is 18 December 2025); the ЄСВ rate and bases (separate law, not read); the bank CIT rate for 2027 onward; whether the Verkhovna Rada passed tax amendments after 12 October 2026.
 
 <!-- openaccountants-cta-block -->
 
