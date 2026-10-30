@@ -8,14 +8,14 @@ description: >
   of personal lump-sum assessment, the separate small-company turnover regime,
   salary-only personal reduction and the difference between company profit tax
   and shareholder income tax. Routes every proposed calculation to the current
-  computational Guide and requires evidence of the actual election, expenses,
+  computational skill and requires evidence of the actual election, expenses,
   ownership, insured status and investment retention. Does not promise a saving,
   a self-employed contribution exemption, loss relief or a foreign treaty result.
   Supporting planning material for licensed professional review.
 version: 0.2
 jurisdiction: MK
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: tax-optimization
@@ -28,7 +28,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ## Scope and required output
 
 This is 2026 supporting planning material, not a replacement for the seven
-computational tax Guides. Compare the taxpayer's eligible routes using the same
+computational tax skills. Compare the taxpayer's eligible routes using the same
 receipts, costs, insurance, distributions and compliance period. State the
 actual UJP decision/election and the assumptions that change the result. Do not
 recommend a route merely from the ordinary 10% headline rate.
@@ -52,7 +52,7 @@ end, or within the statutory 15-day registration/start route: art. 29(3).
 Obtain the current reference and UJP decision before selecting this route.
 
 Actual-income business uses accounting receipts/costs and the art. 21–28 tax
-reconciliation. The [individual Guide](north-macedonia-income-tax.md) supplies
+reconciliation. The [individual skill](north-macedonia-income-tax.md) supplies
 expense limits, depreciation, own compulsory contributions, investment relief
 and the actual business-loss limitation. Lump-sum assessment does not eliminate
 insurance: [Contributions Law arts. 13–16](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf) still apply, including the
@@ -62,7 +62,7 @@ July administrator change and the applicable first-year or established-professio
 
 [Profit Tax Law arts. 31–35](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) has its own eligible small-company regime:
 the annual-revenue exemption/election tests, excluded activities, 1% turnover
-election and required period are in the [corporate Guide](mk-corporate-income-tax.md).
+election and required period are in the [corporate skill](mk-corporate-income-tax.md).
 They are not the individual's art. 29 lump-sum rules. Compare total-revenue tax
 with ordinary profit tax only after verifying eligibility and the election.
 
@@ -87,7 +87,7 @@ approval/carry rule and must not be confused with investment-base relief.
 
 Company reinvested-profit relief instead follows [Profit Tax Law art. 28](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf),
 including its own eligibility, retention and recapture conditions, described in
-the corporate Guide. Do not transfer an individual deduction into a company
+the corporate skill. Do not transfer an individual deduction into a company
 calculation or assume that buying a private-use asset creates relief.
 
 ## Checks before presenting a comparison
@@ -99,7 +99,7 @@ calculation or assume that buying a private-use asset creates relief.
 - Check distributions, actual business costs, asset use and retention; do not
   invent a deduction or loss offset to make a route appear cheaper.
 - Price related-party transactions and genuine remuneration under the
-  [TP Guide](north-macedonia-transfer-pricing.md). A payment label is not evidence
+  [TP skill](north-macedonia-transfer-pricing.md). A payment label is not evidence
   of business substance or deductibility.
 
 ## Ask the client first
@@ -121,15 +121,15 @@ balance has already borne the current profit-tax system.
 
 | Official source | URL | Read on |
 |---|---|---|
-| PIT Law arts. 10–11, 19–30, 55–57 | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24 |
-| Profit Tax Law arts. 28, 31–35, 48 | https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf | 2026-10-24 |
+| PIT Law arts. 10–11, 19–30, 55–57 | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
+| Profit Tax Law arts. 28, 31–35, 48 | https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
 | Mandatory Contributions Law arts. 13–16 | https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf | 2026-10-24 |
-| UJP 2026 salary personal reduction | https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje | 2026-10-24 |
+| UJP 2026 salary personal reduction | https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
 
 Not yet confirmed: the README's standalone departure/deemed-disposal gap
 remains unresolved here. Specific incentive zones, global minimum
 tax and an individual treaty outcome require their own sources. This supporting
-Guide grants no professional attestation or automatic tax-saving conclusion.
+skill grants no professional attestation or automatic tax-saving conclusion.
 
 <!-- openaccountants-cta-block -->
 

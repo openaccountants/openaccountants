@@ -1,9 +1,9 @@
 ---
 name: north-macedonia-payroll
-description: "Use this skill to calculate North Macedonia salary withholding and gross-to-net pay for calendar year 2026. Trigger on payroll, MPIN, salary PIT, employee tax, employer cost, director fees, benefits in kind, contribution cap, personal reduction or denar salary. It covers ordinary employment, separately classified director and service payments, taxable benefits, the 2026 monthly reduction, the July pension/unemployment rate change, monthly filing and payment, employee records and annual PIT reconciliation. Use the social-contributions guide for insured-group classification and special bases, and the cross-border guide for foreign salary and treaty applications. The calculations produce reviewable working papers and do not constitute a licensed accountant’s sign-off."
+description: "Use this skill to calculate North Macedonia salary withholding and gross-to-net pay for calendar year 2026. Trigger on payroll, MPIN, salary PIT, employee tax, employer cost, director fees, benefits in kind, contribution cap, personal reduction or denar salary. It covers ordinary employment, separately classified director and service payments, taxable benefits, the 2026 monthly reduction, the July pension/unemployment rate change, monthly filing and payment, employee records and annual PIT reconciliation. Use the social-contributions skill for insured-group classification and special bases, and the cross-border skill for foreign salary and treaty applications. The calculations produce reviewable working papers and do not constitute a licensed accountant’s sign-off."
 jurisdiction: MK
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -16,11 +16,11 @@ version: 0.3
 
 # North Macedonia payroll withholding v0.3
 
-**Tax year: 2026. Source-cited draft, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
+**Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
 ## Who this applies to
 
-Domestic payers of salary, salary compensation and employer-performance payments calculate salary PIT and insurance per employee/month. [PIT arts. 14-17, 80, 84-85][pit] cover both residents and local employment of nonresidents; art. 16(1)(7) expressly gives the salary base reduction to a nonresident employee of a resident payer. Standalone board/management fees and temporary personal services are income from work but use their own art. 16 base. Insurance follows actual status in the contributions guide, rather than the payment label.
+Domestic payers of salary, salary compensation and employer-performance payments calculate salary PIT and insurance per employee/month. [PIT arts. 14-17, 80, 84-85][pit] cover both residents and local employment of nonresidents; art. 16(1)(7) expressly gives the salary base reduction to a nonresident employee of a resident payer. Standalone board/management fees and temporary personal services are income from work but use their own art. 16 base. Insurance follows actual status in the contributions skill, rather than the payment label.
 
 This is ordinary withholding. Labour-law minimum pay, overtime, leave entitlements and immigration permissions must be established from the employment documents and governing labour rules before this tax calculation. Do not treat a contribution floor as the minimum salary payable.
 
@@ -44,21 +44,21 @@ Art. 25 expressly switches with the **July wage**; do not change a June arrears 
 **Ordinary full-month gross-to-net worksheet:**
 
 1. Establish gross salary, taxable salary compensation and performance payments for the month. Include taxable work benefits and excess reimbursements using their statutory bases; separate noncash benefits from cash available for payout (PIT arts. 15-16).
-2. For the ordinary employee class, use contributory salary subject to the arts. 15-16 floor and ceiling, then compute each fund with the wage-period rates. Ordinary total is 28% in both periods, but the fund split changes. The social-contributions guide handles part-time/absence exceptions, other insured groups and employer-funded extended-service insurance.
+2. For the ordinary employee class, use contributory salary subject to the arts. 15-16 floor and ceiling, then compute each fund with the wage-period rates. Ordinary total is 28% in both periods, but the fund split changes. The social-contributions skill handles part-time/absence exceptions, other insured groups and employer-funded extended-service insurance.
 3. Salary PIT base is gross salary less applicable compulsory insurance less the month's available salary reduction. Do not produce a negative PIT base or cash refund from unused monthly reduction. Apply 10% (PIT arts. 9-11, 16-17; [MPIN rulebook art. 3][contrib-rules]).
 4. Cash salary net is cash gross less employee insurance, salary PIT and authorised nontax deductions. Do not pay out a noncash benefit as salary cash. Employer cost includes contractual gross and any separately employer-borne legal contribution, including designated extended-service pension; do not add the same employee deduction twice.
 5. Reconcile gross, each fund, taxable base, PIT and net to MPIN and bank payment. Keep analytical decimals until applying accepted MPIN rounding. The examples retain two decimals and do not assert a statutory universal rounding convention.
 
 **Benefits and fees:** art. 16 values employer-provided housing at comparable local rent, or the employer's paid rent where rented. Company private vehicle use uses the specific monthly 1% valuation; acquisition-year/lease vehicles follow art. 16(1)(2-v), not a guessed current resale value. Free/discounted employer/related-company equity is market value at acquisition less price paid (art. 16(1)(2-g)); listed securities, vouchers and goods/services follow art. 16's specified market/nominal rules. Keep each benefit in its appropriate insurance and PIT category; a taxable benefit is not automatically cash salary.
 
-For standalone directors' fees and occasional service fees, art. 16(1)(5) uses the receipt's amount and does not give the ordinary salary reduction. Their contribution treatment is established separately; uninsured executive directors/managers have a specific pension/health class. Do not promise that all service contracts have no insurance. A self-employed professional's business receipts instead belong in the income-tax/business guide.
+For standalone directors' fees and occasional service fees, art. 16(1)(5) uses the receipt's amount and does not give the ordinary salary reduction. Their contribution treatment is established separately; uninsured executive directors/managers have a specific pension/health class. Do not promise that all service contracts have no insurance. A self-employed professional's business receipts instead belong in the income-tax/business skill.
 
-**Allowances and losses:** exempt reimbursements require the exact [PIT art. 12][pit] conditions and evidence; an unexplained transfer or label is not an exemption. [UJP hours guidance step 2][hours] calculates gross salary and the personal reduction proportionately to hours worked where the employee works fewer than the full month hours. Use full-month hours and actual worked hours, not a calendar-day fraction. For ordinary part-time and joining/leaving months, apply the employee hours-based floor and ceiling in the social-contributions Guide, with floor top-ups declared separately. Its mixed work/sickness formula separates effective-work insurance from replacement payments. The salary reduction is not duplicated on unrelated income. Reconcile the right actually used across salary/pension payers to the art. 10 annual limit. Business or investment losses do not form an automatic negative item in a salary withholding calculation.
+**Allowances and losses:** exempt reimbursements require the exact [PIT art. 12][pit] conditions and evidence; an unexplained transfer or label is not an exemption. [UJP hours guidance step 2][hours] calculates gross salary and the personal reduction proportionately to hours worked where the employee works fewer than the full month hours. Use full-month hours and actual worked hours, not a calendar-day fraction. For ordinary part-time and joining/leaving months, apply the employee hours-based floor and ceiling in the social-contributions skill, with floor top-ups declared separately. Its mixed work/sickness formula separates effective-work insurance from replacement payments. The salary reduction is not duplicated on unrelated income. Reconcile the right actually used across salary/pension payers to the art. 10 annual limit. Business or investment losses do not form an automatic negative item in a salary withholding calculation.
 
 For a lump-sum self-employed proprietor who also employs staff, distinguish
 UJP's own-proprietor contribution calculation from the employer's continuing
 employee MPIN duty. [UJP's current implementation notice](https://ujp.gov.mk/mk/javnost/soopstenija/pogledni/1284?print=1)
-confirms the split from July 2026. Use the social-contributions Guide for that
+confirms the split from July 2026. Use the social-contributions skill for that
 route; a proprietor's receipt is not an employee salary merely because MPIN is
 used.
 
@@ -74,7 +74,7 @@ Issue the PIT/contribution calculation with each payment (PIT art. 85(10)); the 
 
 ## Penalties and interest
 
-[PIT art. 108][pit] payer failures to calculate/pay or comply with art. 85: micro legal person **EUR 300-1,000**, small **600-2,000**, medium **1,800-6,000**, large **3,000-10,000**, in MKD equivalent. Responsible-person ranges are respectively **EUR 50-250**, **100-500**, **150-500**, **200-500**. [Contributions Law arts. 28-a, 28-b][social] separately sanction incorrect/late MPIN and salary paid without timely contributions; use the offence and remitter-size classification. [Tax Procedure Law art. 123][procedure] charges interest at **0.03% daily** from the day after maturity. The payer guarantees withheld PIT under PIT art. 102.
+[PIT art. 108][pit] payer failures to calculate/pay or comply with art. 85: micro legal person **EUR 300-1,000**, small **600-2,000**, medium **1,800-6,000**, large **3,000-10,000**, in MKD equivalent. Responsible-person ranges are respectively **EUR 50-250**, **100-500**, **150-500**, **200-500**. [Contributions Law arts. 28-a, 28-b][social] separately sanction incorrect/late MPIN and salary paid without timely contributions; use the offence and remitter-size classification. [Tax Procedure Law art. 123][procedure] charges interest at **0.03% daily** from the day after maturity. The payer guarantees withheld PIT under PIT art. 102. UJP can assess tax and contributions for **5 years** from the end of the year in which the event occurred, **10 years** for tax evasion, with an absolute 10-year cut-off (Tax Procedure Law art. 110); collection of assessed amounts lapses **10 years** after the year they fell due (art. 122-a).
 
 ## Cross-border points
 
@@ -152,10 +152,10 @@ expected:
 |---|---|---|
 | UJP September 2026 proprietor/employee MPIN duty distinction | https://ujp.gov.mk/mk/javnost/soopstenija/pogledni/1284?print=1 | 2026-10-24 |
 | UJP, gross salary calculation guidance, steps 2-4 | https://www.ujp.gov.mk/file/pravni_lica/category/643?print=1 | 2026-10-24 |
-| Personal Income Tax Law, consolidated through Gazette 274/2022 | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24 |
+| Personal Income Tax Law, consolidated through Gazette 274/2022 | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
 | Mandatory Social Insurance Contributions Law, through Gazette 148/2026 | https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf | 2026-10-24 |
-| Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24 |
-| UJP, 2026 reduction, publication 23-6493/1 of 17 December 2025, under PIT art. 10(4) | https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje | 2026-10-24 |
+| Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
+| UJP, 2026 reduction, publication 23-6493/1 of 17 December 2025, under PIT art. 10(4) | https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
 | UJP, dated contribution-rate tables | https://www.ujp.gov.mk/en/vodic/category/641?print=1 | 2026-10-24 |
 | UJP, 22 January 2026 contribution-base announcement | https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187 | 2026-10-24 |
 | Contribution calculation/payment rulebook, MPIN structure | https://www.ujp.gov.mk/files/attachment/0000/0198/Pravilnik_za_nacinot_na_presmetka_i_uplata_na_pridonesite_od_zadolzitelno_socijalno_osiguruvanje_od_09.12.2008_godina.pdf | 2026-10-24 |
@@ -169,7 +169,7 @@ expected:
 [bases]: https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187
 [contrib-rules]: https://www.ujp.gov.mk/files/attachment/0000/0198/Pravilnik_za_nacinot_na_presmetka_i_uplata_na_pridonesite_od_zadolzitelno_socijalno_osiguruvanje_od_09.12.2008_godina.pdf
 
-Not yet confirmed: Specialist protected-hours, non-working and benefit-replacement insurance computations outside this ordinary employee scope. The separate first-calendar-year professional issue in the social-contributions Guide concerns self-employed insurance, not employee salary withholding.
+Not yet confirmed: The 2026 statutory minimum wage amount and the Employment Agency registration steps before a new hire starts (labour law, not checked in this review). Specialist protected-hours, non-working and benefit-replacement insurance computations outside this ordinary employee scope. The separate first-calendar-year professional issue in the social-contributions skill concerns self-employed insurance, not employee salary withholding.
 
 <!-- openaccountants-cta-block -->
 

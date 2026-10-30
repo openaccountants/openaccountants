@@ -1,9 +1,9 @@
 ---
 name: north-macedonia-vat
-description: "Use this skill for North Macedonia value added tax, DDV, for calendar year 2026. Trigger on Macedonian VAT registration, DDV-04, input VAT, reverse charge, exports, imported services, foreign supplier representative or VAT deregistration. It covers ordinary taxable persons, the registration turnover test, standard and reduced statutory rates, place of supply, output and input tax, blocked input tax, mixed use, capital-asset corrections, filing periods, payments and refunds. It explains the current post-2024 service-location rules and foreign-person registration distinction. Product classification and special schemes require the specific current decisions. This is a source-cited draft for working-paper preparation, with two recomputing controls and no licensed accountant’s sign-off."
+description: "Use this skill for North Macedonia value added tax, DDV, for calendar year 2026. Trigger on Macedonian VAT registration, DDV-04, input VAT, reverse charge, exports, imported services, foreign supplier representative or VAT deregistration. It covers ordinary taxable persons, the registration turnover test, standard and reduced statutory rates, place of supply, output and input tax, blocked input tax, mixed use, capital-asset corrections, filing periods, payments and refunds. It explains the current post-2024 service-location rules and foreign-person registration distinction. Product classification and special schemes require the specific current decisions. This is a tier 2 skill, checked against the law, for working-paper preparation, with two recomputing controls and no licensed accountant’s sign-off."
 jurisdiction: MK
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -14,13 +14,13 @@ category: international
 
 # North Macedonia VAT v2.1
 
-**Tax year: 2026. Source-cited draft, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
+**Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
 ## Who this applies to
 
 [VAT Law arts. 2 and 9][vat] cover independent economic activity and taxable domestic supplies for consideration; imports are separately taxable. Registered persons calculate output less deductible input tax. Resident small persons below the registration condition do not charge VAT or deduct input tax unless registered voluntarily (art. 51(3)-(4)). The domestic registration threshold is not an import exemption.
 
-Foreign persons without a local seat/branch making taxable local supplies use art. 9-b registration and a representative, except supplies governed by recipient reverse charge under art. 32(4). The foreign-person threshold exception is explicit in art. 9-b(2). This guide covers ordinary business VAT; tourist, margin, investment-gold, state-aid, donor and other special schemes require their specific provisions.
+Foreign persons without a local seat/branch making taxable local supplies use art. 9-b registration and a representative, except supplies governed by recipient reverse charge under art. 32(4). The foreign-person threshold exception is explicit in art. 9-b(2). This skill covers ordinary business VAT; tourist, margin, investment-gold, state-aid, donor and other special schemes require their specific provisions.
 
 ## Rates, bands and thresholds
 
@@ -35,7 +35,12 @@ Foreign persons without a local seat/branch making taxable local supplies use ar
 | Capital-input correction period | 5 years; real estate 10 years | 2026 | [VAT art. 37][vat] |
 | Return/payment | Within 25 days after period-end | 2026 | [VAT arts. 41, 43][vat] |
 | Requested excess-input refund | 30 days after return, subject to taxpayer-caused control delay and debt setoff | 2026 | [VAT art. 45][vat] |
+| Late-filing surcharge | Up to 10% of the tax assessed by law | 2026 | [Tax Procedure Law art. 55][procedure] |
 | Late interest | 0.03% per day | 2026 | [Tax Procedure Law arts. 3, 123, 180][procedure]; VAT art. 44 is expressly inoperative |
+
+**Art. 30(1)-(2) 5% list (summary):** basic foodstuffs; drinking water from public systems and irrigation water; books, e-textbooks, newspapers and periodicals (not mainly advertising); seeds, fertilisers, plant protection, agricultural film and machinery; medicines, including veterinary; menstrual products; computers and their software; solar thermal systems; disability aids for personal use; crude oil for food production; first supply of housing within five years of construction; animal feed and live animals; listed baby products; listed school supplies; pellets, pellet stoves and boilers; heat energy for heating; passenger transport; public cleaning and waste removal; accommodation; and listed repairs and hairdressing by registered craftspeople. **Art. 30-a 10%:** serving food and drink for consumption on the premises and catering (alcoholic drinks excluded), and food products that are not basic foodstuffs.
+
+**Art. 23 exemptions without deduction (summary):** housing supplies other than a first supply within five years, residential lettings, postage stamps and Macedonian Post postal services, banking and financial transactions, insurance and reinsurance, games of chance, specified non-profit cultural, broadcasting, health, social-care, childcare, medical-profession, patient-transport, blood/organ, education and research, funeral services, international passenger transport and road tolls/fees, each on its statutory conditions.
 
 A rate is applied only after mapping the product/service to the statute and operative classification decision. No blanket 5% rate for all food, electricity or residential property is asserted. Historical electricity art. 30-b only applied in its dated 2023 period; crisis rates under art. 30-v require an operative government decision.
 
@@ -71,7 +76,7 @@ For excess input, elect refund on the return or carry forward as an advance. Art
 
 [VAT arts. 59-60][vat] cover late/non-registration, missing returns, incorrect records, defective invoices and failures to retain evidence. Legal-person ranges: micro **EUR 300-1,000**, small **600-2,000**, medium **1,800-6,000**, large **3,000-10,000**, in MKD equivalent. Responsible-person ranges are respectively **EUR 50-250**, **100-500**, **150-500**, **200-500**; sole traders/self-employed **EUR 100-250**, ordinary individuals **EUR 50-250** for the listed offences. UJP can assess absent/inaccurate returns under art. 42.
 
-Use [Tax Procedure Law art. 123][procedure] for **0.03% daily** interest from the day after maturity. The consolidation still prints historical VAT art. 44's 0.05%, but expressly notes that it ceased under Tax Procedure Law art. 180 from 1 April 2006. It is not a current alternative rate.
+A late return can also carry a separate late-filing surcharge of up to **10%** of the tax ([Tax Procedure Law art. 55][procedure]). Use [Tax Procedure Law art. 123][procedure] for **0.03% daily** interest from the day after maturity. The consolidation still prints historical VAT art. 44's 0.05%, but expressly notes that it ceased under Tax Procedure Law art. 180 from 1 April 2006. It is not a current alternative rate.
 
 ## Cross-border points
 
@@ -127,8 +132,8 @@ expected:
 
 | Official source | URL | Read on |
 |---|---|---|
-| VAT Law, consolidated through Gazette 267/2025 | https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf | 2026-10-24 |
-| Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24 |
+| VAT Law, consolidated through Gazette 267/2025 | https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
+| Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
 
 [vat]: https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf
 [procedure]: https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf

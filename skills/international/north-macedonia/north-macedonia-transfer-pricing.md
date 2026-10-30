@@ -1,17 +1,18 @@
 ---
 name: north-macedonia-transfer-pricing
-description: "Use this skill for North Macedonia related-party pricing and documentation for calendar year 2026. Trigger on transfer pricing, arm’s length, related-party transactions, P/TC, master file, local file, shortened report, interest benchmarking or interquartile range. It covers the corporate relationship tests, exclusions from the main pricing/documentation provisions, method selection, comparable transactions, upward profit adjustments, documentation contents, retention and UJP request deadlines. It separately preserves related-party lending, thin-capitalisation, hidden-distribution and sole-trader rules that are not removed by the corporate documentation exemption. It contains two recomputing controls based on explicitly assumed comparables. This source-cited draft awaits a licensed accountant’s review."
+description: "Use this skill for North Macedonia related-party pricing and documentation for calendar year 2026. Trigger on transfer pricing, arm’s length, related-party transactions, P/TC, master file, local file, shortened report, interest benchmarking or interquartile range. It covers the corporate relationship tests, exclusions from the main pricing/documentation provisions, method selection, comparable transactions, upward profit adjustments, documentation contents, retention and UJP request deadlines. It separately preserves related-party lending, thin-capitalisation, hidden-distribution and sole-trader rules that are not removed by the corporate documentation exemption. It contains two recomputing controls based on explicitly assumed comparables. This tier 2 skill, checked against the law, awaits a licensed accountant’s review."
 jurisdiction: MK
 category: transfer-pricing
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-24
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-30
 version: 0.1
 ---
 
 # North Macedonia transfer pricing v0.1
 
-**Tax year: 2026. Source-cited draft, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
+**Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
 ## Who this applies to
 
@@ -69,7 +70,7 @@ The current art. 12-a is a **prepare-and-retain / on-request** regime. Do not us
 
 ## Cross-border points
 
-A cross-border transaction does not by itself establish related status; apply art. 16. Conversely the low-tax relationship test can capture dealings without a shareholding link. Check treaty associated-enterprise, corresponding-adjustment and mutual-agreement articles before seeking bilateral relief; this guide does not grant an automatic foreign corresponding deduction. WHT and VAT apply separately to the same fee/royalty/interest. Preserve the treaty version and application dates using the cross-border guide; an arm's-length result alone does not establish a treaty exemption.
+A cross-border transaction does not by itself establish related status; apply art. 16. Conversely the low-tax relationship test can capture dealings without a shareholding link. Check treaty associated-enterprise, corresponding-adjustment and mutual-agreement articles before seeking bilateral relief; this skill does not grant an automatic foreign corresponding deduction. WHT and VAT apply separately to the same fee/royalty/interest. Preserve the treaty version and application dates using the cross-border skill; an arm's-length result alone does not establish a treaty exemption.
 
 ## Two worked examples that recompute
 
@@ -126,10 +127,10 @@ expected:
 | Official source | URL | Read on |
 |---|---|---|
 | Profit Tax implementing rulebook, art. 4 | https://www.ujp.gov.mk/files/attachment/0000/0990/______________________________________________________________________________________________________________________________________________.pdf | 2026-10-24 |
-| Profit Tax Law, consolidated through Gazette 199/2023 | https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf | 2026-10-24 |
-| Personal Income Tax Law, consolidated through Gazette 274/2022 | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24 |
-| Transfer Pricing Rulebook, Gazette 59/2019 | https://www.ujp.gov.mk/files/attachment/0000/1155/Plavilnik_za_transferni_ceni_59-2019.pdf | 2026-10-24 |
-| Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24 |
+| Profit Tax Law, consolidated through Gazette 199/2023 | https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
+| Personal Income Tax Law, consolidated through Gazette 274/2022 | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
+| Transfer Pricing Rulebook, Gazette 59/2019 | https://www.ujp.gov.mk/files/attachment/0000/1155/Plavilnik_za_transferni_ceni_59-2019.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
+| Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
 | UJP, 25 February 2026 DB/DB-VP filing instructions (2025 returns filed in 2026) | https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1204 | 2026-10-24 |
 
 [profit-rules]: https://www.ujp.gov.mk/files/attachment/0000/0990/______________________________________________________________________________________________________________________________________________.pdf

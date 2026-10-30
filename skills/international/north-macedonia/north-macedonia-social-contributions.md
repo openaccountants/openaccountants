@@ -1,9 +1,9 @@
 ---
 name: north-macedonia-social-contributions
-description: "Use this skill for North Macedonia mandatory insurance contributions for calendar year 2026. Trigger on social security, pension insurance, health contributions, MPIN, minimum contribution base, maximum contribution base, self-employed insurance or director contributions. It separates ordinary employees, uninsured directors, self-employed business people, professional service providers and individual farmers; identifies who bears and remits each contribution; and gives the January-to-June and July-to-December wage-period rates. It covers contribution floors and ceilings, employer extended-service contributions, monthly reporting and payment, record reconciliation and international insurance routing. Salary PIT is calculated in the payroll guide. This source-cited draft is for reviewable calculations and awaits licensed professional sign-off."
+description: "Use this skill for North Macedonia mandatory insurance contributions for calendar year 2026. Trigger on social security, pension insurance, health contributions, MPIN, minimum contribution base, maximum contribution base, self-employed insurance or director contributions. It separates ordinary employees, uninsured directors, self-employed business people, professional service providers and individual farmers; identifies who bears and remits each contribution; and gives the January-to-June and July-to-December wage-period rates. It covers contribution floors and ceilings, employer extended-service contributions, monthly reporting and payment, record reconciliation and international insurance routing. Salary PIT is calculated in the payroll skill. This tier 2 skill, checked against the law, is for reviewable calculations and awaits licensed professional sign-off."
 jurisdiction: MK
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -16,7 +16,7 @@ version: 0.3
 
 # North Macedonia mandatory social contributions v0.3
 
-**Tax year: 2026. Source-cited draft, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
+**Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
 ## Who this applies to
 
@@ -78,7 +78,7 @@ confirms that registered part-time hours do not reduce this group's assessed
 net-income contribution base. Do not apply an employee's hourly salary formula.
 Report sick leave with evidence to the competent UJP unit for its calculation.
 
-Sick-pay/maternity replacement payments, domestic pensioners, non-working health-insured people, trainees and the new seasonal-engagement class have separate arts. 7-14 and 25 categories. Do not apply the ordinary employee bundle to them; their specialist computations are outside this guide's ordinary scope. No deduction, business expense or tax-loss offset reduces the insurance base beyond its own statutory definition. Salary PIT is computed after insurance in the payroll guide.
+Sick-pay/maternity replacement payments, domestic pensioners, non-working health-insured people, trainees and the new seasonal-engagement class have separate arts. 7-14 and 25 categories. Do not apply the ordinary employee bundle to them; their specialist computations are outside this skill's ordinary scope. No deduction, business expense or tax-loss offset reduces the insurance base beyond its own statutory definition. Salary PIT is computed after insurance in the payroll skill.
 
 ## Deadlines and filing
 
@@ -167,9 +167,10 @@ expected:
 | Mandatory Social Insurance Contributions Law, through Gazette 148/2026 | https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf | 2026-10-24 |
 | UJP, dated contribution-rate tables | https://www.ujp.gov.mk/en/vodic/category/641?print=1 | 2026-10-24 |
 | UJP, 22 January 2026 contribution-base announcement | https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187 | 2026-10-24 |
+| State Statistical Office, average gross wage November 2025 (69,141), published 21 January 2026 | https://www.stat.mk/en/stat/population-and-living-conditions/labour-market/average-monthly-gross-wage-paid-per-employee/average-monthly-gross-wage-paid-per-employee-november-2025/ | 2026-10-30 |
 | UJP, 13 July 2026 contributions amendment notice | https://ujp.gov.mk/en/javnost/soopstenija/pogledni/1266?print=1 | 2026-10-24 |
 | Contribution calculation/payment rulebook, MPIN structure | https://www.ujp.gov.mk/files/attachment/0000/0198/Pravilnik_za_nacinot_na_presmetka_i_uplata_na_pridonesite_od_zadolzitelno_socijalno_osiguruvanje_od_09.12.2008_godina.pdf | 2026-10-24 |
-| Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24 |
+| Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
 
 [lump-implementation]: https://ujp.gov.mk/mk/javnost/soopstenija/pogledni/1284?print=1
 [mpin-form]: https://www.ujp.gov.mk/mk/obrasci/opis/81

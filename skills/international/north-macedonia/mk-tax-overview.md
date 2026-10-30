@@ -3,18 +3,18 @@ name: mk-tax-overview
 description: >
   North Macedonia tax routing for calendar year 2026. Use for an initial
   North Macedonia tax overview, choosing the right income-tax, company-tax,
-  payroll, social-insurance, VAT, transfer-pricing or cross-border Guide. Covers
+  payroll, social-insurance, VAT, transfer-pricing or cross-border skill. Covers
   individuals, sole traders, resident companies, local permanent establishments,
   employers and VAT taxpayers. Identifies the primary charging laws, the different
   annual filing routes and the July 2026 contribution-rate change without
   substituting a headline rate for the actual category computation. This is a
-  supporting router to the seven computational Guides, not an additional
-  computational tax domain. Read the linked Guide and its scope and unresolved
-  items before preparing a calculation. Remains a source-cited draft awaiting
+  supporting router to the seven computational skills, not an additional
+  computational tax domain. Read the linked skill and its scope and unresolved
+  items before preparing a calculation. Checked against the law (tier 2) and awaiting
   licensed North Macedonia professional review.
 jurisdiction: MK
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -30,12 +30,12 @@ version: 0.1
 Calendar year **2026**. Use the [pack README](README.md) to identify the
 computational route and remaining core gaps. This supporting overview supplies
 no alternative rate engine. North Macedonia's Public Revenue Office (UJP)
-administers the linked ordinary taxes. A source-cited draft is not an
+administers the linked ordinary taxes. A skill checked against the law is not an
 accountant's attestation.
 
 ## Choose the computation
 
-| Facts or question | Guide | Primary law |
+| Facts or question | Skill | Primary law |
 |---|---|---|
 | Individual residence, salary versus independent fees, business income, rent, investment income or gains | [Individual income tax](north-macedonia-income-tax.md) | [PIT arts. 3–11 and category provisions](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
 | Resident company or foreign enterprise's local PE, accounting-to-tax reconciliation, losses and reinvestment | [Corporate profit tax](mk-corporate-income-tax.md) | [Profit Tax Law arts. 4–19, 28–41](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
@@ -56,11 +56,11 @@ The individual/business **DLD-DB** and personal **DLD-GDP** procedures are
 different. PIT arts. 96–100 require the business balance by 15 March after the
 year, while UJP supplies the individual's annual return by 30 April for
 confirmation/correction by 31 May. Their payment rules differ. Follow the
-[individual Guide](north-macedonia-income-tax.md), including first-year advances.
+[individual skill](north-macedonia-income-tax.md), including first-year advances.
 
 Corporate **DB/DB-VP** follows the annual-account deadline, including the
 electronic-filing route, under Profit Tax Law arts. 35 and 39–41. Use the
-[corporate Guide](mk-corporate-income-tax.md) for the applicable form, annual
+[corporate skill](mk-corporate-income-tax.md) for the applicable form, annual
 balance, advances and exceptions. Do not replace all deadlines with a single
 end-of-February date.
 
@@ -68,7 +68,7 @@ Contributions remain monthly. The ordinary employee total is 28% in both
 2026 periods, but the pension/unemployment split changes with July–December
 wage months under Contributions Law art. 25. Other insured classes have different
 fund coverage. Read the [social](north-macedonia-social-contributions.md) and
-[payroll](north-macedonia-payroll.md) Guides before using a bundled percentage.
+[payroll](north-macedonia-payroll.md) skills before using a bundled percentage.
 
 ## Ask before routing
 
@@ -82,13 +82,13 @@ fund coverage. Read the [social](north-macedonia-social-contributions.md) and
 
 | Official source | URL | Read on |
 |---|---|---|
-| PIT Law, cited articles and category/annual procedures | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24 |
-| Profit Tax Law, cited articles | https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf | 2026-10-24 |
+| PIT Law, cited articles and category/annual procedures | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
+| Profit Tax Law, cited articles | https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
 | Contributions Law through Gazette 148/2026 | https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf | 2026-10-24 |
-| VAT Law through Gazette 267/2025 | https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf | 2026-10-24 |
+| VAT Law through Gazette 267/2025 | https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
 
 Not yet confirmed: this router does not resolve the core gaps identified in the
-README and computational Guides. No minimum-global-tax computation or universal
+README and computational skills. No minimum-global-tax computation or universal
 exemption is asserted. A licensed professional must review the actual facts,
 records and statutory treatment before filing or acting.
 

@@ -9,12 +9,12 @@ description: >
   obligations that must be handed over after incorporation. Distinguishes company
   profit tax from the proprietor's personal income tax and separates registered
   employees from uninsured directors and self-employed people. Routes computations
-  to the current country tax Guides. Does not quote unverified fees, promise an
+  to the current country tax skills. Does not quote unconfirmed fees, promise an
   incorporation turnaround or apply ordinary LLC capital to a specialist simplified
-  or regulated form. Source-cited draft awaiting professional review.
+  or regulated form. Checked against the law (tier 2); awaiting professional review.
 jurisdiction: MK
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -42,14 +42,17 @@ members under [Trade Companies Law art. 167](https://www.sec.gov.mk/Files/Attach
 rule. This is ordinary LLC capital, not a registration fee. The
 [current investment authority guidance](https://investnorthmacedonia.gov.mk/registering-a-company/) corroborates that ordinary route.
 Do not apply it as the capital requirement for every regulated or simplified
-company form.
+company form. A joint-stock company (**AD**) needs at least **EUR 25,000** capital
+when founded simultaneously, or **EUR 50,000** when founded successively through
+a public subscription, unless another law sets a different minimum; each share has
+a nominal value of at least **EUR 1** (Trade Companies Law art. 273).
 
 Prepare the constitution and founding member statement/agreement, owner identity
 or corporate-status evidence, local registered seat, activity, managers and
 representation, and the capital/contribution evidence appropriate to the actual
 form. Trade Companies Law arts. 170–175 address formation, constitutional content
 and contributions. Keep capital promised, capital paid and ownership interests
-separate in the records. This Guide makes no blanket deferred-capital payment
+separate in the records. This skill makes no blanket deferred-capital payment
 promise; establish the operative requirement for the actual chosen route.
 
 ## Registration and operating handover
@@ -59,7 +62,7 @@ system and electronic registration. Retain the registry decision, tax identifier
 constitution, current ownership/manager data and any activity-specific permission.
 The guidance identifies regulated sectors needing separate permits. Do not treat
 a quoted service estimate as a statutory registration deadline or a guarantee.
-This Guide does not state a fee or universal incorporation turnaround.
+This skill does not state a fee or universal incorporation turnaround.
 
 Before the first transaction or engagement, hand over:
 
@@ -76,7 +79,7 @@ Before the first transaction or engagement, hand over:
   [cross-border tax](north-macedonia-cross-border.md), including WHT and treaty paperwork.
 
 Record each regime's registration/form/deadline independently. The current
-computational Guides govern the numbers; an incorporation summary does not
+computational skills govern the numbers; an incorporation summary does not
 replace them or settle their expressly unconfirmed cases.
 
 ## Ask before selecting a form
@@ -92,15 +95,15 @@ replace them or settle their expressly unconfirmed cases.
 
 | Official source | URL | Read on |
 |---|---|---|
-| Securities regulator's Trade Companies Law compilation, ordinary LLC arts. 167, 170–175 | https://www.sec.gov.mk/Files/Attachments/zakon%20za%20trgovski%20drustva%20k.pdf | 2026-10-24 |
+| Securities regulator's Trade Companies Law compilation, ordinary LLC arts. 167, 170–175; AD art. 273 | https://www.sec.gov.mk/Files/Attachments/zakon%20za%20trgovski%20drustva%20k.pdf | 2026-10-30 |
 | Invest North Macedonia, current ordinary registration guidance | https://investnorthmacedonia.gov.mk/registering-a-company/ | 2026-10-24 |
-| PIT Law arts. 19–30, independent-business taxpayer | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24 |
-| Profit Tax Law arts. 4–19, legal-person/PE taxpayer | https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf | 2026-10-24 |
+| PIT Law arts. 19–30, independent-business taxpayer | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
+| Profit Tax Law arts. 4–19, legal-person/PE taxpayer | https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
 
 Not yet confirmed: specialist simplified-company capital/payment conditions,
 current registration fees and regulated-sector requirements are outside this
 ordinary entity-choice scope. Obtain their operative sources for the actual
-application. This Guide supplies no professional attestation or filing approval.
+application. This skill supplies no professional attestation or filing approval.
 
 <!-- openaccountants-cta-block -->
 

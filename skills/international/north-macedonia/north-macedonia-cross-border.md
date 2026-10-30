@@ -1,17 +1,18 @@
 ---
 name: north-macedonia-cross-border
-description: "Use this skill for North Macedonia international income-tax matters for calendar year 2026. Trigger on tax residence, nonresident income, permanent establishment, treaty relief, foreign tax credit, withholding tax, tax residence certificate, moving abroad, liquidation or foreign salary. It distinguishes individuals from foreign legal persons, domestic source taxation from treaty limits, and income-tax relief from VAT and social insurance. It supplies ordinary withholding and gross-up mechanics, certified relief and refund routes, evidence requirements and filing deadlines. Departure and asset-transfer cases require the specifically identified unresolved exit treatment before final advice. This source-cited draft includes two recomputing controls and awaits licensed professional sign-off."
+description: "Use this skill for North Macedonia international income-tax matters for calendar year 2026. Trigger on tax residence, nonresident income, permanent establishment, treaty relief, foreign tax credit, withholding tax, tax residence certificate, moving abroad, liquidation or foreign salary. It distinguishes individuals from foreign legal persons, domestic source taxation from treaty limits, and income-tax relief from VAT and social insurance. It supplies ordinary withholding and gross-up mechanics, certified relief and refund routes, evidence requirements and filing deadlines. Departure and asset-transfer cases require the specifically identified unresolved exit treatment before final advice. This tier 2 skill, checked against the law, includes two recomputing controls and awaits licensed professional sign-off."
 jurisdiction: MK
 category: cross-border
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-24
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-30
 version: 0.2
 ---
 
 # North Macedonia cross-border tax v0.2
 
-**Tax year: 2026. Source-cited draft, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
+**Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
 ## Who this applies to
 
@@ -19,7 +20,7 @@ Individuals: [PIT arts. 5-8][pit] tax residents on worldwide income and nonresid
 
 Companies: [Profit Tax Law arts. 4-6][cit] tax entities established or seated locally on worldwide profits and foreign PEs on local business profits. Distinguish a foreign legal-person gross receipt subject to withholding from profits attributable to its local PE. [Tax Procedure Law art. 2(5)][procedure] gives ratified tax treaties priority over national tax laws. The [UJP treaty register][treaties] records application dates; signature or a treaty's mere presence in an old summary is insufficient.
 
-This guide covers ordinary income-tax coordination, not a universal treaty-rate table. It does not certify migration/deemed-disposal, minimum global top-up tax or a particular treaty's beneficial-ownership/PPT/MLI result.
+This skill covers ordinary income-tax coordination, not a universal treaty-rate table. It does not certify migration/deemed-disposal, minimum global top-up tax or a particular treaty's beneficial-ownership/PPT/MLI result.
 
 ## Rates, bands and thresholds
 
@@ -44,7 +45,7 @@ PE thresholds above are domestic-law tests. Read the actual applicable treaty be
 
 Art. 21(2) expressly excludes remittance of already taxed local PE profit, interest on specified government/central-bank instruments, bank-deposit interest and specified government-security intermediation/consulting income. Document the particular exclusion. Ordinary final WHT equals listed gross receipt × 10%; gross means the amount before withholding (art. 22). A contract promising a net amount needs algebraic gross-up: `gross = net / (1 - applicable_rate)` and `withholding = gross - net`, where the payer bears the tax. Treaty-reduced rates cannot be used without the relief conditions.
 
-**Individuals:** use the relevant PIT category base, not the corporate gross-payment rule. Employment, services, dividends, rent and gains have different deductions in arts. 16, 21, 40, 50, 53, 57 and 60. Nonresident salary from a resident employer uses the express art. 16(1)(7) salary rule. Treaty relief at source follows arts. 81-83; nonresident self-assessed income uses arts. 89 and 89-a. Sale/exchange gains use actual proceeds/acquisition evidence and the specific exemptions; a bank transfer of capital is not automatically taxable income. For securities/fund units, apply the **1 January 2023 acquisition boundary, including predecessor dates, and chronological FIFO** under Gazette 274/2022 transitional arts. 21-22. Use the income-tax guide's distinct domestic art. 85-a/91-a/93(4) annual reporting/assessment route; foreign receipts outside that route still require testing under arts. 87-88.
+**Individuals:** use the relevant PIT category base, not the corporate gross-payment rule. Employment, services, dividends, rent and gains have different deductions in arts. 16, 21, 40, 50, 53, 57 and 60. Nonresident salary from a resident employer uses the express art. 16(1)(7) salary rule. Treaty relief at source follows arts. 81-83; nonresident self-assessed income uses arts. 89 and 89-a. Sale/exchange gains use actual proceeds/acquisition evidence and the specific exemptions; a bank transfer of capital is not automatically taxable income. For securities/fund units, apply the **1 January 2023 acquisition boundary, including predecessor dates, and chronological FIFO** under Gazette 274/2022 transitional arts. 21-22. Use the income-tax skill's distinct domestic art. 85-a/91-a/93(4) annual reporting/assessment route; foreign receipts outside that route still require testing under arts. 87-88.
 
 **Foreign credit:** compute the North Macedonia tax attributable to the foreign income/profit on its domestic-law base, compare with evidenced foreign income/profit tax paid, and allow no more than that domestic limit. Preserve the source income, allocation, exchange rate and foreign-authority proof. A foreign tax above the ceiling is not a local refund; no carryforward of unused credit is asserted. Avoid crediting a refundable foreign withholding amount as finally borne without checking its status (PIT art. 8; Profit Tax Law art. 37).
 
@@ -57,7 +58,7 @@ Art. 21(2) expressly excludes remittance of already taxed local PE profit, inter
 - [Arts. 25-27][cit] preserve the specified conversion/status-change continuity at unchanged carrying values and tax the specified revaluation/capital increases where continuity fails. Liquidation continues the last tax period through closing before residue distribution. A registered merger/division/takeover needs accounts/return through the change date and the continuing entity's opening balance.
 - Before transferring an investment asset, test five-year relief recapture separately: [Profit Tax Law art. 28(3)-(4)][cit] and [PIT art. 28(3)-(4)][pit]. The corporate and individual reliefs are different computations.
 
-These are verified ordinary transaction rules. A separate migration/deemed-disposal charge and its specific procedure remain unconfirmed below; no universal nil exit charge is asserted.
+These ordinary transaction rules are confirmed in the cited law. A separate migration/deemed-disposal charge and its specific procedure remain unconfirmed below; no universal nil exit charge is asserted.
 
 ## Deadlines and filing
 
@@ -71,7 +72,7 @@ These are verified ordinary transaction rules. A separate migration/deemed-dispo
 
 **Payments and reports:** corporate WHT is remitted **at payment** (art. 20). Domestic legal persons, registered individual businesses and local PEs are the specified remitters. File the annual **DD-I by 15 February 2027** for 2026 (art. 24; Profit Rulebook art. 12). Individual payer calculations are electronic before each covered payment, with remittance at payment (PIT arts. 84-85, 92). Nonresident self-assessed receipts follow art. 89 and certified relief under art. 89-a.
 
-**Residents' foreign receipts:** generally e-PDD calculation/evidence by the **10th of next month**, payment by the **15th** (PIT arts. 88, 93). Foreign salary/pension with foreign tax paid instead has the express calculation/evidence deadline **31 March 2027** for 2026 income (art. 88(2)). Convert individual foreign income at National Bank middle rate on the income date (art. 93(2)). Annual individual return is provided by **30 April**, confirmed/corrected by **31 May**, balance paid by **30 June** next year (arts. 96-100). Company/PE DB and final payments follow the corporate guide; foreign tax evidence does not extend those deadlines. Update registrations after a real move or cessation and retain final-period filings and relief records.
+**Residents' foreign receipts:** generally e-PDD calculation/evidence by the **10th of next month**, payment by the **15th** (PIT arts. 88, 93). Foreign salary/pension with foreign tax paid instead has the express calculation/evidence deadline **31 March 2027** for 2026 income (art. 88(2)). Convert individual foreign income at National Bank middle rate on the income date (art. 93(2)). Annual individual return is provided by **30 April**, confirmed/corrected by **31 May**, balance paid by **30 June** next year (arts. 96-100). Company/PE DB and final payments follow the corporate skill; foreign tax evidence does not extend those deadlines. Update registrations after a real move or cessation and retain final-period filings and relief records.
 
 ## Penalties and interest
 
@@ -81,7 +82,7 @@ These are verified ordinary transaction rules. A separate migration/deemed-dispo
 
 For each treaty case, save the actual operative treaty/protocol and application dates from the official register. Identify the income article, residence, PE/business-profit interaction, beneficial owner and anti-abuse conditions. A maximum treaty rate never creates a domestic charge where domestic law exempts the receipt. Check the particular mutual-agreement/corresponding-adjustment provisions for double-tax disputes; no universal MAP deadline is asserted.
 
-VAT foreign-person registration and imported-service reverse charge remain separate (`north-macedonia-vat`). Social cover follows the specific insurance agreement/status (`north-macedonia-social-contributions`), not a tax-treaty residence conclusion. Related-party pricing and withholding require separate tests even on the same payment. Minimum global top-up taxation is outside this ordinary income-tax guide.
+VAT foreign-person registration and imported-service reverse charge remain separate (`north-macedonia-vat`). Social cover follows the specific insurance agreement/status (`north-macedonia-social-contributions`), not a tax-treaty residence conclusion. Related-party pricing and withholding require separate tests even on the same payment. Minimum global top-up taxation is outside this ordinary income-tax skill.
 
 ## Two worked examples that recompute
 
@@ -133,9 +134,9 @@ expected:
 
 | Official source | URL | Read on |
 |---|---|---|
-| Profit Tax Law, consolidated through Gazette 199/2023 | https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf | 2026-10-24 |
-| Personal Income Tax Law, consolidated through Gazette 274/2022 | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24 |
-| Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24 |
+| Profit Tax Law, consolidated through Gazette 199/2023 | https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
+| Personal Income Tax Law, consolidated through Gazette 274/2022 | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
+| Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24; 2026-10-30 (web.archive.org copy, UJP site offline) |
 | Profit Tax implementing rulebook, consolidated through Gazette 6/2020 | https://www.ujp.gov.mk/files/attachment/0000/0990/______________________________________________________________________________________________________________________________________________.pdf | 2026-10-24 |
 | Individual treaty-relief Rulebook, Gazette 271/2019 | https://www.ujp.gov.mk/files/attachment/0000/1219/_____________________________________________________________________________271-19.pdf | 2026-10-24 |
 | Individual residence certificate Rulebook, Gazette 89/2019 | https://www.ujp.gov.mk/files/attachment/0000/1165/_______________________________________________________________________________________________________________89-2019.pdf | 2026-10-24 |
