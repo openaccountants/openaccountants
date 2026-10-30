@@ -29,7 +29,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Headline levers | **IT park 7% of sales revenue**; 4% small-company regime; independent entrepreneur 15% single tax; 6% on dividends; corporate tax on 2023 to 2026 profits deferred until dividends are paid |
 | Standard income tax, individuals and companies | **12%** (Fiscal Code art. 15(a), (b)) |
 | Dividends to resident individuals | **6%** withheld (art. 90^1(3^1)) |
-| VAT registration threshold | over **MDL 1.7 million** in any 12 consecutive months (art. 112(1)) |
+| VAT registration threshold | over **MDL 1.7 million** in any 12 consecutive months from 1 March 2026; MDL 1.5 million before that date (art. 112(1); Law LP12/2026) |
 | Anti-avoidance | IT park 70% eligible-revenue test; 4% regime closed to VAT payers, consultancy firms and owners of more than three small companies |
 
 > **Moldova's headline is the IT park single tax:** 7% of monthly sales revenue, with a floor per employee, replaces income tax on profit and on salaries, employer social contributions, employees' health insurance premiums, local taxes, property tax and the road-use tax (Fiscal Code arts. 370, 372). For an IT business with a large payroll, this is usually the biggest lever.
@@ -40,11 +40,13 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Feature | Detail |
 | --- | --- |
-| Tax | **7% of sales revenue** booked monthly, but at least **30% of the forecast average monthly wage per employee** each month (Fiscal Code arts. 369(1), (2), 370(1), (2)) |
+| Tax | **7% of sales revenue** booked monthly, but at least **30% of the forecast average monthly wage per employee** each month, which is **MDL 5,220** per employee in 2026 (30% of the MDL 17,400 forecast wage, Government Decision 773/2025) (Fiscal Code arts. 369(1), (2), 370(1), (2)) |
 | What it replaces | Income tax on business profit; income tax on salaries; employer social contributions; employees' health insurance premiums; local taxes; property tax; road-use tax for Moldovan-registered vehicles (art. 372(1)) |
 | What it does not replace | Tax withheld under arts. 88(5), 89, 90, 90^1 and 91 (for example 6% on dividends and 12% on payments to non-residents), contributions on non-salary payments to individuals, VAT, excise and other road taxes (art. 372(2)) |
 | Who | Legal entities and individuals registered as entrepreneurs who meet the conditions of the IT parks law (Law 77/2016) (art. 368(1)) |
 | Eligibility test | **70% or more** of sales revenue from activities permitted under art. 8 of Law 77/2016, measured monthly on a cumulative basis; up to 2 months below 70% are allowed if the year as a whole reaches 70% (art. 368(2), (3)) |
+| Permitted activities | Listed by CAEM code in Law 77/2016 art. 8: custom software (62.01), computer games publishing (58.21), other software publishing (58.29), IT consultancy (62.02), computer facilities management (62.03), other IT services (62.09), data processing and hosting (63.11), web portals (63.12), plus narrowly limited computer training, research and development, electronic components, specialised design, film and video post-production and game audio work |
+| How long | Each park runs for a term set by Government decision, at most 20 years (Law 77/2016 art. 9(2)); a resident's contract runs at least 4 years and not past the park's term (art. 7(2)) |
 | Filing and payment | Monthly return and payment by the 25th of the following month (art. 373(1), (2)) |
 | Best for | Software and IT service firms with significant payroll, because the 7% also covers payroll taxes |
 
@@ -55,7 +57,7 @@ IT park residents cannot use the corporate tax deferral to the dividend date (ar
 - **4% small-company regime**: a company not registered for VAT may pay 4% of the income in its financial accounts instead of 12% on profit (Fiscal Code arts. 54^1, 54^2, 54^3). No profit computation; good for low-expense businesses below the VAT threshold.
 - **Who is excluded**: farms, individual entrepreneurs, and companies where more than 60% of last year's sales came from business and management consultancy (CAEM 70.22) (art. 54^1(1)). A company with VAT-exempt supplies without deduction right above MDL 1.7 million uses the standard regime (art. 54^1(3^1)).
 - **Choosing it**: record the choice in the accounting policy by 25 April, or for a new company by the 25th of the month after the quarter of registration (art. 54^1(3)).
-- **When it ends**: from the date the company registers for VAT (art. 54^1(4)). Registration is compulsory once supplies pass MDL 1.7 million in any 12 consecutive months (art. 112(1)).
+- **When it ends**: from the date the company registers for VAT (art. 54^1(4)). Registration is compulsory once supplies pass MDL 1.7 million in any 12 consecutive months (art. 112(1), in force from 1 March 2026; MDL 1.5 million before that date, Law LP12/2026).
 - **Payments**: quarterly by the 25th of the month after the quarter; annual report by 25 March (art. 54^4(2), (3)). No quarterly instalments under art. 84 and no 12% advance on interim dividends (arts. 84(4), 80^1(4)).
 
 ## Section 4 -- Standard System & Extraction (SRL / ÎI)
@@ -105,8 +107,11 @@ The most up-to-date version of this skill is maintained at [openaccountants.com]
 | Source | URL | Read on |
 |---|---|---|
 | Codul fiscal nr. 1163/1997, consolidated to LP235/2026 (in force 30.10.2026): arts. 15, 20 lit. z19), 32, 36, 54^1 to 54^4, 69^6, 69^11, 69^20, 69^25, 80^1, 84, 87, 90^1, 112, 260, 261, 368 to 373 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |
+| Legea nr. 77/2016 cu privire la parcurile pentru tehnologia informației (to LP125/2024): arts. 7(2), 8, 9(2) | https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro | 2026-10-30 |
+| Government Decision 773 of 17 December 2025: forecast average monthly wage for 2026, MDL 17,400 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-30 |
+| Law LP12 of 19 February 2026 amending Fiscal Code art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |
 
-Not yet confirmed: the list of activities permitted in IT parks (Law 77/2016 art. 8) and how long the IT park regime runs (Law 77/2016 not read); the forecast average monthly wage for 2026 that sets the IT park floor; the old "savings of 20% to 50% of the total tax burden" claim for IT park residents (no official source); whether single-client work by an ÎI or independent entrepreneur is reclassified as employment (no Fiscal Code rule found); 2026 salary contribution rates for the salary-vs-dividend comparison (see the sibling skills).
+Not yet confirmed: the end date of the Moldova IT Park's own term (set by Government decision, not read); the date from which the MDL 1.7 million figure in art. 54^1(3^1) applies (the text in force on 30 December 2025 said MDL 1.2 million); the old "savings of 20% to 50% of the total tax burden" claim for IT park residents (no official source); whether single-client work by an ÎI or independent entrepreneur is reclassified as employment (no Fiscal Code rule found); 2026 salary contribution rates for the salary-vs-dividend comparison (see the sibling skills).
 
 <!-- openaccountants-cta-block -->
 
