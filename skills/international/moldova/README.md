@@ -1,7 +1,7 @@
 ---
 jurisdiction: MD
-version: 2.5
-last_updated: 2026-10-30
+version: 2.6
+last_updated: 2026-10-31
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -9,9 +9,9 @@ covered_by:
   XB: md-cross-border
 partial:
   IT-IND: "2026 individual-income, overview and planning drafts supply statutory residence populations, deduction evidence, personal-relief/capital methods and sourced IT-park/SME/distribution/worker comparisons; actual forms, remaining commencement/implementation and taxpayer-specific gaps remain open; whole-country independent review is pending."
-  IT-CORP: "2026 corporate and formation writer drafts supply ordinary deductions, travel/asset methods, SRL registration/contributions, the corrected SA capital screen and annual-accounts duties; company-disposal scope and enacted VEN12 TP-adjustment and fixed-asset-loss row identities are now reconciled; unavailable numeric annexes, remaining approved tax-return/update forms, statutory discrepancy procedures, capped-base and dividend-deferral implementation remain open; whole-country independent review is pending."
+  IT-CORP: "2026 corporate and formation writer drafts supply ordinary deductions, travel/asset methods, SRL registration/contributions, the corrected SA capital screen and annual-accounts duties; company-disposal scope and enacted VEN12 TP-adjustment and fixed-asset-loss row identities are now reconciled; unapplied asset classes and remaining approved tax-return/update forms, statutory discrepancy procedures, capped-base and dividend-deferral implementation remain open; whole-country independent review is pending."
   VAT: "2026 VAT writer draft and figure ledger prepared with the current 24-box VAT12 mapping; commencement, prorata-rounding and ordinary source/procedure gaps remain explicit; whole-country independent review is pending."
-  SC: "2026 social/medical writer draft and ledger include State-insured categories/status procedure, selected 2026 comparisons, the service medical top-up and the specific art.43^17 foreign-worker cumulative conditions; direct tariff annex evidence, ordinary reporting/refund forms, remaining implementation/commencement gaps and whole-country independent review remain open."
+  SC: "2026 social/medical writer draft and ledger include State-insured categories/status procedure, selected 2026 comparisons, the service medical top-up and the specific art.43^17 foreign-worker cumulative conditions; ordinary reporting/refund forms, remaining implementation/commencement gaps and whole-country independent review remain open."
   PR: "2026 payroll writer draft and figure ledger prepared; cumulative withholding, ordinary MDL loan method and directly read current IALS21 column instructions/May amendment are supplied; actual reporting attachments/technical fields, foreign-currency loan and remaining benefit/procedure gaps stay explicit; whole-country independent review is pending."
   TP: "2026 TP writer rewrite and figure ledger prepared: exclusions, methods, files, APA and corresponding-adjustment procedures sourced; enacted VEN12 adjustment rows are linked separately from the TP information form; full current information-form/role codes, retention and specific procedure gaps remain explicit; whole-country independent review is pending."
   XB: "2026 cross-border writer rewrite and figure ledger prepared: residence, withholding, PE profit, foreign credits, mobility, monthly reporting and current salary-information instructions sourced; INR14 citizenship amendment/commencement read, while actual revised attachments, other approved forms and refund/departure procedures remain open; whole-country independent review is pending."
@@ -38,6 +38,8 @@ The corporate draft now supplies selected actual VEN12 period/signature/main-rec
 The social/medical draft now supplies the actual initial-registration population and four continuing conditions for the article-43^17 foreign-worker route, with January/current comparison and the loss-of-eligibility rule. Current law scope, actual registration/electronic-identity documents and the separate EU/Schengen interaction must still be established; neither foreign nationality nor remote work alone proves an insurance exemption. Remaining ordinary gaps and whole-country independent review keep coverage partial.
 
 Actual SIMM, UNIF25 and DAP24 form/instruction binaries are now retained. The corporate draft supplies the current category-A SME row method and identifies the printed retired-category/name mismatch. The individual draft supplies UNIF25 income-tax and DAP24 professional/expense/relief methods, including the DAP24 cross-reference/self-referential-header defects. UNIF25 later/unified-tax sections, portal/rounding implementation, other ordinary gaps and independent country review remain open. The 360,000 personal-exemption threshold is current, correcting the earlier writer description of it as stale.
+
+The actual social tariff, travel destination-rate, asset-life and asset-register/repair annexes are now retained and read to the scopes in [the annex manifest](../../../ledgers/md-country-evidence/downloaded-numeric-annexes.json), on 31 October 2026. The corporate draft supplies destination/currency/category examples, five selected asset-class rows and the actual 29-column register/seven-column repair method. The social draft distinguishes insured-benefit classes and payment clocks directly from annex1. Other asset classes, minimum transport tariffs, later implementation gaps and independent whole-country review remain open; full binary retention is not full-catalogue verification.
 
 ## Domains
 

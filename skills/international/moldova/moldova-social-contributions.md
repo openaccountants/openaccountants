@@ -1,10 +1,10 @@
 ---
 name: moldova-social-contributions
 description: "Compute Moldova social contributions and compulsory medical insurance for 2026. Distinguish ordinary private and public employers, special aviation roles, agricultural relief, IT-park insured income, independent physicians and justice professions, fixed-contribution categories, patents, taxi transitions, day workers and independent service entrepreneurs. Apply the social minimum base and separate part-time contribution floor, and distinguish salary accrual from medical-premium payment timing. Use for CNAS, CNAM, IPC21, fixed social insurance, health premiums, payroll contribution reconciliation, status overlaps, payment deadlines and arrears. This source-cited writer draft preserves predecessor subjects through explicit destinations and gaps, requires whole-country independent review and does not claim comprehensive coverage or accountant attestation."
-version: 0.5
+version: 0.6
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova social contributions and medical insurance, 2026 v0.5
+# Moldova social contributions and medical insurance, 2026 v0.6
 
 ## Who this applies to
 
@@ -30,7 +30,7 @@ Use [payroll](moldova-payroll.md) for wage withholding and net pay and [individu
 
 ## Rates, bands and thresholds
 
-All amounts are MDL. Classify first; the same percentage does not make two categories equivalent. CNAS instructions below are the authority's 2026 operating instructions, Order 31-A of 18 February 2026, with their cited statutory provisions. Direct retention of annex 1's attached tariff document is still open; the law-register link returned 403 during this writer pass.
+All amounts are MDL. Classify first; the same percentage does not make two categories equivalent. CNAS instructions below are the authority's 2026 operating instructions, Order 31-A of 18 February 2026, with their cited statutory provisions. The actual current annex-1 tariff DOCX has now been downloaded, retained and read; its benefit classes and category payment clocks are set out below.
 
 | Category or measure | 2026 rate/amount and limits | Primary authority |
 |---|---|---|
@@ -58,6 +58,20 @@ All amounts are MDL. Classify first; the same percentage does not make two categ
 The medical-budget statute says **2,527**, whereas the Finance Ministry's January 2026 overview says 2,572. The statute controls. For the new service-entrepreneur top-up, Fiscal Code art. 69^26(2) refers to the annual fixed amount granted for timely payment to Law 1593 annex 2 point 1(b). The linked 2026 statutory benchmark is 2,527, not the overview's 2,572. Apply the separate allocation/difference method below; this reference does not reclassify the entrepreneur as an ordinary fixed-premium payer. [Fiscal Code art. 69^26(2)][code]. [Medical budget art. 4][medicalbudget]; [Finance Ministry overview][mfchanges].
 
 ## The base
+
+### What the actual tariff annex covers
+
+The current Law 489 annex 1 directly confirms each tariff category, its payment clock and insured-benefit population. Rows 1.1–1.5 cover the stated ordinary, special-condition, physician, IT-park and agricultural classes; their ordinary monthly deadline is the 25th of the following month. The agricultural 24% row splits into employer 18% and State 6%. Row 1.1 also includes the stated IT-park civil work/service contracts and internationally funded employment subject to its agreement exception; neither employer label alone proves exemption. [Actual annex 1 rows 1.1–1.5][socialtariff].
+
+| Actual annex-1 category | Contribution/payment route | Insured-benefit class in the annex |
+|---|---|---|
+| 1.6: specified individual/farm founders, independent retailers and plant-product purchasers | Annual-budget fixed amount, one twelfth monthly by the following month's 25th; exclude pensioners, persons with disabilities and the stated 1.1–1.5 overlaps | Old-age pension and death grant |
+| 1.6^1: justice professions | Separate annual-budget fixed amount, one twelfth monthly by the following month's 25th; exclude pensioners, persons with disabilities and the stated 1.1–1.6 overlaps | All State social-insurance benefit types |
+| 1.7: patent holders | Annual-budget fixed amount, at least a monthly twelfth for the activity duration, paid when applying/extending; apply its pension/disability and 1.1–1.6^1 overlap exclusions | Old-age pension and death grant |
+| 1.9: covered day workers | The beneficiary pays 6% of daily remuneration by the following month's 25th; apply Law22 and the stated 1.1–1.7 overlap exclusions | Old-age pension and death grant |
+| 1.10: independent service entrepreneurs under Code chapter10^4 | Social component of the monthly single tax, due by the following month's 25th | All State social-insurance benefit types |
+
+These are the annex's insured-benefit classes, not a finding that an individual already satisfies every benefit's qualifying-period, event and application conditions. The annex delegates the fixed amounts to the annual budget; use the separately sourced 2026 amounts above and the category/start/cessation rules below. Do not import the justice-profession benefit class into founder/patent/day-worker categories, or revive the former taxi fixed category after its sourced transition. [Actual annex 1 rows 1.6–1.10][socialtariff]; [2026 social budget art.3][socialbudget]; [CNAS category instructions][instructions].
 
 ### Ordinary social contribution and the minimum
 
@@ -299,13 +313,14 @@ The predecessor's eight payroll/self-employment tests and six bank classificatio
 
 ## Sources
 
-Read 30 October 2026. The retained source bodies, incomplete writer ledger and predecessor destinations are in [the social ledger](../../../ledgers/moldova-social-contributions.md) and country evidence. This is a local writer draft. No whole-country independent review or accountant attestation is claimed. Platform metadata and CTA are preserved.
+Primary-source reads on 30–31 October 2026, with individual dates below. The retained source bodies, incomplete writer ledger and predecessor destinations are in [the social ledger](../../../ledgers/moldova-social-contributions.md) and country evidence. This is a local writer draft. No whole-country independent review or accountant attestation is claimed. Platform metadata and CTA are preserved.
 
 | Primary source | Read scope and limit | Read on |
 |---|---|---|
 | [BNM monetary-policy decision, 6 November 2025, point 1](https://bnm.md/en/node/69226) | Fetched 6.00% short-term base input; calendar-2026 daily percentage derived with Code 228(3), rather than copied from an old rate. | 2026-10-30 |
-| [Law 489/1999, 2 October 2026 consolidation][social] | Selected charging/base/arrears provisions and annexes 2–3 read; annex 1 is an attached DOCX whose direct retrieval returned 403. CNAS 2026 instructions supply the stated tariff/category operating source | 2026-10-30 |
+| [Law 489/1999, 2 October 2026 consolidation][social] | Selected charging/base/arrears provisions and annexes 2–3 read; actual annex 1 is now retained/read separately below. CNAS 2026 instructions supply the operating method | 2026-10-30 |
 | [Law 489, January version][socialjan] | Art. 22 minimum wording checked against the current selected text | 2026-10-30 |
+| [Actual Law489 tariff annex 1][socialtariff] | Complete three-page attachment read and visually inspected; category/base/rate/payment clock and insured-benefit classes confirmed directly, with annual-budget amounts kept separate | 2026-10-31 |
 | [CNAS Order 31-A/2026 instructions][instructions] | Complete 2026 instruction PDF retained and read; 67 initial rule groups, with operating categories, deadlines and transitions | 2026-10-30 |
 | [Law 320/2025 current social budget][socialbudget] and [January version][socialbudgetjan] | Arts. 3–4 are identical after whitespace normalization in the January and 24 September versions; fixed contributions/daily social late charge confirmed for those versions | 2026-10-30 |
 | [Law 1593/2002, 1 July 2026 consolidation][health] | Premium framework, bases, categories, deadlines/status and penalty reference; complete 2026 version comparison remains open | 2026-10-30 |
@@ -318,7 +333,7 @@ Read 30 October 2026. The retained source bodies, incomplete writer ledger and p
 | [HCC 8/2023][healthcourt] | Operative point 2's specific lawyer disability/four-child-parent qualification; no general all-professions exemption | 2026-10-30 |
 | [Finance Ministry 2026 overview][mfchanges] | Corroboration only; the 2,572 medical figure conflicts with the 2,527 statute and is not adopted | 2026-10-30 |
 
-Not yet confirmed: directly retained operative Law 489 annex 1 tariff DOCX and full 2026 amendment/effective-date comparison; all Government benefit/travel/food/training and special-condition implementing procedures; complete current IPC21/IU17/IRM19/CAS18-AN annex/code and liquidation/reorganisation instructions; CNAM director-level application/refund forms, actual initial-registration/electronic-identity application documents and the separate EU/Schengen free-movement/insurance interaction beyond the sourced art. 43^17 cumulative-condition method, and unusual retrospective salary/fixed overlap or refund cases beyond the sourced category/status rules; any taxpayer-specific pre-2026 penalty transition and arrears-account allocation; new service-entrepreneur eligibility/registration, monthly cumulative-band adjustments and medical-allocation rounding, partial-year/status-overlap and correction implementation beyond the sourced annual-difference method; full IT-park eligibility, 7%-turnover/30%-minimum/headcount and entry/exit methods; bilateral social-security agreements/certificates; full benefit-entitlement and labour-law computation. The old 2025 social amount 20,518 and monthly 1,709.84, minimum 5,500, average salary 16,100, net-pay test fixtures, personal allowance 29,700/2,475 and 360,000 gate, major 34,620, spouse/disability-dependent 21,780 and ordinary-dependent 9,900 figures, annual CET18/30-April and three-day foreign-citizen departure-return claims, and other-tax context (corporate/entrepreneur 12%, statutory farming 7%, SME 4%, VAT 20%/8%/6%, old VAT-registration 1.2/1.5/1.7-million thresholds and their asserted dates, and withholding) are archived predecessor subjects pending their own period/source reconciliation or companion Guide. They are not certified current rules here. The earlier defaults of assuming 24%, applying percentage rates to every self-payer, treating every ambiguous bank debit as a settled contribution, and compounding all arrears are replaced by explicit classification, evidence and debt-movement checks. All ordinary gaps keep the domain partial.
+Not yet confirmed: full 2026 amendment/effective-date comparison beyond the current directly retained annex-1 tariff and selected statutory comparisons; all Government benefit/travel/food/training and special-condition implementing procedures; complete current IPC21/IU17/IRM19/CAS18-AN annex/code and liquidation/reorganisation instructions; CNAM director-level application/refund forms, actual initial-registration/electronic-identity application documents and the separate EU/Schengen free-movement/insurance interaction beyond the sourced art. 43^17 cumulative-condition method, and unusual retrospective salary/fixed overlap or refund cases beyond the sourced category/status rules; any taxpayer-specific pre-2026 penalty transition and arrears-account allocation; new service-entrepreneur eligibility/registration, monthly cumulative-band adjustments and medical-allocation rounding, partial-year/status-overlap and correction implementation beyond the sourced annual-difference method; full IT-park eligibility, 7%-turnover/30%-minimum/headcount and entry/exit methods; bilateral social-security agreements/certificates; full benefit-entitlement and labour-law computation. The old 2025 social amount 20,518 and monthly 1,709.84, minimum 5,500, average salary 16,100, net-pay test fixtures, personal allowance 29,700/2,475 and 360,000 gate, major 34,620, spouse/disability-dependent 21,780 and ordinary-dependent 9,900 figures, annual CET18/30-April and three-day foreign-citizen departure-return claims, and other-tax context (corporate/entrepreneur 12%, statutory farming 7%, SME 4%, VAT 20%/8%/6%, old VAT-registration 1.2/1.5/1.7-million thresholds and their asserted dates, and withholding) are archived predecessor subjects pending their own period/source reconciliation or companion Guide. They are not certified current rules here. The earlier defaults of assuming 24%, applying percentage rates to every self-payer, treating every ambiguous bank debit as a settled contribution, and compounding all arrears are replaced by explicit classification, evidence and debt-movement checks. All ordinary gaps keep the domain partial.
 
 [social]: https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro
 [socialjan]: https://www.legis.md/cautare/getResults?doc_id=151170&lang=ro
@@ -338,6 +353,8 @@ Not yet confirmed: directly retained operative Law 489 annex 1 tariff DOCX and f
 [healthframeworkmar]: https://www.legis.md/cautare/getResults?doc_id=151186&lang=ro
 [healthstatus]: https://www.legis.md/cautare/getResults?doc_id=151859&lang=ro
 [healthcourt]: https://constcourt.md/ccdocview.php?docid=825&l=ro&tip=hotariri
+
+[socialtariff]: https://www.legis.md/UserFiles/Image/RO/2025/mo659-661ro/an_1_489md.docx
 
 <!-- openaccountants-cta-block -->
 
