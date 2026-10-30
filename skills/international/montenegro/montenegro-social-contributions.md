@@ -1,10 +1,10 @@
 ---
 name: montenegro-social-contributions
-description: "Prepare Montenegro 2026 social-contribution workpapers for employees, actual-income entrepreneurs, supplementary entrepreneurs, qualifying contract recipients and registered farmers. Determine insured status, gross or statutory base, pension/unemployment allocation, additional service contributions, exemptions, timing and annual refund routing. Includes six executable controls. Use for doprinosi, PIO, dopunska preduzetnička djelatnost, contribution floors, zimnica and annual pension ceilings. Adds the promulgated annual PIO refund procedure and Form 1 mapping. Current cap instrument, collective-agreement floors, special populations, actual submission/IRMS, international coordination and independent review remain open. Source-cited preparation draft; payroll income tax and municipal surtax require separate reconciliation."
+description: "Montenegro compulsory social insurance contributions for 2026 under the Law on Compulsory Social Insurance Contributions as amended by 160/25. Covers who pays (employees, entrepreneurs, employed people with a supplementary business, board members, contract recipients, farmers, clergy, posted and foreign workers), the 2026 rates (pension and disability 10% employee and 0% employer, unemployment 0.5% plus 0.5%, entrepreneurs 1%, Labour Fund 0.2%, additional service 6% to 28%), the bases (gross pay, the 60/100/150% turnover bands on the 2025 average gross of EUR 1,206, farmers 20% and 12%), exclusions such as zimnica up to EUR 844.20, the digital-nomad relief, monthly and quarterly deadlines, the IOPPD report, fines, default interest, and the annual pension ceiling and refund (2025 ceiling EUR 75,453). Salary income tax and municipal surtax are in the payroll skill."
 version: 0.4
 jurisdiction: ME
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -12,113 +12,164 @@ depends_on:
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-sources:
-  - url: "https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0"
-    title: "Ministry contribution-law consolidation through 160/25"
-    as_of: "2026-10-24"
-  - url: "https://wapi.gov.me/download/9c7ab8f6-6971-48cb-9ac0-4d6f87ac48bb?version=1.0"
-    title: "Enacted 160/25 contribution amendment, applying January 2026"
-    as_of: "2026-10-24"
-  - url: "https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0"
-    title: "Ministry payroll calculation instruction through 103/24"
-    as_of: "2026-10-24"
-  - url: "https://www.sluzbenilist.me/propisi/362476/download"
-    title: "107/23 annual pension-contribution refund rule and actual Form 1"
-    as_of: "2026-10-24"
-  - url: "https://www.monstat.org/cg/novosti.php?id=4638"
-    title: "MONSTAT December and full-year 2025 earnings release"
-    as_of: "2026-10-24"
 ---
 
-# Montenegro social-contribution preparation v0.4
+# Montenegro social contributions (doprinosi), 2026
+
+This skill computes Montenegrin compulsory social insurance contributions for 2026. The law is the Law on Compulsory Social Insurance Contributions (Zakon o doprinosima za obavezno socijalno osiguranje, "the Law"), consolidated by the Ministry of Finance through amendment 160/25. Amendment 160/25 applies from 1 January 2026 (160/25 art. 8). Salary income tax and the municipal surtax (prirez) are in the [payroll skill](montenegro-payroll.md); entrepreneurs' income tax is in the [income tax skill](montenegro-income-tax.md).
 
 ## Who this applies to
 
-Build a contribution workpaper after classifying each person's insurance status and income. Employees, principal entrepreneurs, employed persons with supplementary business, directors, contract recipients and farmers have distinct provisions. A second payment does not automatically take the employee treatment or escape contributions because its recipient already has employment. [Articles 4–9, 11, 15, 18][law]
+The Law has two contributions only: pension and disability insurance (PIO) and unemployment insurance (Law art. 2). PIO goes to the Pension and Disability Insurance Fund, unemployment to the Employment Agency (art. 3). The health insurance contribution has been removed from the Law (arts. 6, 10 and 17 deleted). The IOPPD instructions keep the health columns only for periods up to December 2021 (IOPPD rulebook, instructions to columns 10 and 13). Old tables showing about 24% employee and 10% employer contributions, or any health contribution, are out of date.
 
-This source-cited draft replaces the retained 2025 secondary-source summary preserved at Git checkpoint `4692a57a`. The current Ministry consolidation through 160/25 and actual amendment were read. Amendment Article 8 applies the new provisions from 1 January 2026. No named accountant review, actual registration, accepted return, annual cap instrument or collective-agreement floor has been obtained. All seven country domains remain partial. [Law][law]; [amendment][amend]
+PIO is paid by (art. 5(1)):
 
-The September government package also contains a **proposal**, not an enacted instrument verified here, to set Articles 15/16/18 insurance rates to zero. Its Article 5 specifies application from 1 January 2027. The scanned one-page proposal was visually read; neither it nor its government approval is evidence that zero rates apply to 2026 pay. Enacted status, final text and related Labour Fund changes require separate future-period verification. [Proposal Articles 1–5][proposal]
+- employees, people doing temporary and occasional work, and elected or appointed officials paid a salary (items 1 to 3);
+- members of boards of directors and management boards paid a fee (item 4);
+- posted workers, Montenegrin citizens working in Montenegro for foreign or international bodies, Montenegrin citizens employed abroad, and foreign nationals working in Montenegro for foreign or domestic employers, unless a treaty says otherwise (items 5 to 10);
+- people receiving unemployment cash benefit (item 11);
+- entrepreneurs and people carrying on a professional activity as their main occupation (item 12);
+- people paid under a contract for work, author's contract or similar, if not insured on another basis (item 13);
+- clergy and religious officials (item 14), farmers (item 15);
+- from 2026, employed people who also carry on a supplementary business (dopunska preduzetnička djelatnost) (item 16, added by 160/25 art. 2; defined in art. 4(1)(11a)).
 
-## Rates, bases and allocation
+Unemployment contribution is paid only by the groups in art. 7(1): employees and the employee-like groups, and entrepreneurs and professionals in their main occupation (item 9). Board members, contract recipients, farmers, clergy and supplementary entrepreneurs do not appear in art. 7, so they pay PIO only.
 
-| Population/item | Contribution treatment | Source |
-| --- | --- | --- |
-| Ordinary insured employee | Employee PIO 10%; employer PIO 0%; employee unemployment 0.5%; employer unemployment 0.5% | Articles 15(1), 18(1) |
-| Employee Labour Fund charge | Employer 0.2% on gross personal earnings under the payroll instruction; separate from the two insurance contributions listed in the law | Instruction Article 5; law Article 2 |
-| Principal entrepreneur | PIO 10% and unemployment 1%, on the relevant statutory bases | Articles 5(1)(12), 7(1)(9), 9(7), 11(5), 15(2), 18(2) |
-| Supplementary entrepreneur, employed person | PIO 10%, on Article 9(11) base; do not automatically add the principal-entrepreneur unemployment charge | Articles 4(11a), 5(1)(16), 7, 9(11), 15(2) |
-| Qualifying contract recipient not insured on another basis | PIO 10% on taxable independent-activity income, not automatically gross cash | Articles 5(1)(13), 9(8), 15(2) |
-| Additional credited service | Employer/entrepreneur additional PIO: 6%, 9%, 12%, 18%, 28% for the statutory 12-to-14/15/16/18/24 month categories | Articles 8, 16 |
-| Registered qualifying farmer | Article 9 general base 20% of prior-year average gross monthly pay; Article 9a own mandatory base 12%, difference funded from budget | Articles 9(10), 9a, 15(2) |
+An employer also pays an additional PIO contribution for jobs where service counts at an increased rate (art. 8(1)); an entrepreneur pays it on their own increased-rate service (art. 8(2)).
 
-Sources: [law][law]; [instruction][instruction]. Article 2 lists PIO and unemployment; the current text deletes the old health contribution provisions. That does not establish entitlement to health benefits or an exemption from other employment levies. The ordinary 10.5% employee/0.7% employer sum excludes additional service, special levies, income tax and municipal surtax; it is not a universal employer-cost rate. [Articles 2, 6, 10, 15–18][law]; [instruction Articles 4–6][instruction]
+Terms you will see: doprinosi (contributions); PIO, penzijsko i invalidsko osiguranje (pension and disability insurance); osiguranje od nezaposlenosti (unemployment insurance); Fond rada (Labour Fund); doprinos iz osnovice (contribution withheld from the insured person's pay); doprinos na osnovicu (contribution paid by the payer on top); zimnica (winter-supplies payment); IOPPD (monthly report of calculated and paid taxes and contributions).
 
-## Establish the base before multiplying
+## Rates, bands and thresholds
 
-Employee gross earnings encompass salary for work/time, increases, salary compensation and specified other taxable remuneration, including direct work/performance-related payments. Record cash, noncash, reimbursement, arrears and compensation separately; a bank label is insufficient to decide the base. Article 18a has express exclusions and exceptions. [Articles 3a, 9(1), 18a][law]
+| Item | Amount | Tax year | Source |
+|---|---|---|---|
+| PIO, employee and employee-like groups | 10.0% employee, 0% employer | 2026 | [Law art. 15(1)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| PIO, board members, citizens employed abroad, entrepreneurs, contract recipients, farmers, supplementary entrepreneurs | 10.0%, borne by the insured person | 2026 | [Law art. 15(2)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [160/25 art. 4](https://wapi.gov.me/download/9c7ab8f6-6971-48cb-9ac0-4d6f87ac48bb?version=1.0) |
+| PIO, unemployment benefit recipients | 10.0%, paid by the Employment Agency | 2026 | [Law art. 15(3)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| PIO, clergy | 10.0%, paid by the religious community | 2026 | [Law art. 15(4)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Unemployment, employees and employee-like groups | 0.5% employee, 0.5% employer | 2026 | [Law art. 18(1)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Unemployment, entrepreneurs and main-occupation professionals | 1%, borne by the insured person | 2026 | [Law art. 18(2)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Labour Fund (Fond rada), employer | 0.2% of gross pay | 2026 | [Instruction art. 5](https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0); [IOPPD instructions, column 15](https://wapi.gov.me/download/28aa7760-8d39-440d-8874-1ffcc5773095?version=1.0) |
+| Ordinary employee total / employer total | 10.5% / 0.7% of gross pay | 2026 | Sum of the rows above |
+| Additional PIO for increased-rate service (12 months counted as 14 / 15 / 16 / 18 / 24) | 6% / 9% / 12% / 18% / 28%, paid by employer or entrepreneur | 2026 | [Law art. 16](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Entrepreneur and supplementary-entrepreneur monthly base, annual turnover up to EUR 9,000 / up to EUR 15,000 / over EUR 15,000 | 60% / 100% / 150% of prior-year average monthly gross pay (higher base may be elected for PIO) | 2026 | [Law art. 9 items 7 and 11, art. 11 item 5](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [160/25 art. 3](https://wapi.gov.me/download/9c7ab8f6-6971-48cb-9ac0-4d6f87ac48bb?version=1.0) |
+| Average monthly gross pay in 2025 (the "prior-year average" for 2026) | EUR 1,206 | 2026 | [Law art. 4(1)(23)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [MONSTAT release, 30 Jan 2026](https://www.monstat.org/cg/novosti.php?id=4638) |
+| Entrepreneur monthly base at 60% / 100% / 150% | EUR 723.60 / 1,206.00 / 1,809.00 | 2026 | Computed from the two rows above |
+| Farmer base: general / own mandatory | 20% / 12% of prior-year average gross pay (EUR 241.20 / 144.72); the difference is paid from the state budget | 2026 | [Law art. 9 item 10, art. 9a](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Zimnica excluded from contributions | Up to 70% of prior-year average monthly gross pay (EUR 844.20) | 2026 | [Law art. 18a(2)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [160/25 art. 5](https://wapi.gov.me/download/9c7ab8f6-6971-48cb-9ac0-4d6f87ac48bb?version=1.0) |
+| Lowest monthly base, employees | Gross basic salary for the qualification category under the General Collective Agreement | 2026 | [Law arts. 4(1)(21), 9 item 1, 11 item 1](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Highest annual PIO base | EUR 75,453 | 2025 | [Rulebook 134/2025 art. 1](https://www.sluzbenilist.me/propisi/387933/download); [Law art. 14(3)-(4)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Highest annual PIO base | Set each year by Ministry of Finance rulebook; 2026 rulebook not yet published | 2026 | [Law art. 14(3)-(4)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Payment deadline, employer and payer contributions | By the 15th of the month for the previous month | 2026 | [Law art. 21(1), (5)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Request to keep paying during temporary deregistration | Within 5 working days of deregistration | 2026 | [Law art. 20(2)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Refund of PIO above the annual ceiling: claim / payment | Claim by end of the year after the year paid; refund within 30 days of the decision | 2026 | [Law art. 22(3)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [Refund rulebook 107/23 art. 4](https://www.sluzbenilist.me/propisi/362476/download) |
+| Fine, legal-person payer / its responsible person / entrepreneur payer | EUR 2,000-20,000 / 500-1,000 / 1,000-6,000 | 2026 | [Law art. 26](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Fine, individual who self-pays late | EUR 250-2,000 | 2026 | [Law art. 27](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Default interest, 1 January to 17 July 2026 | 0.03% a day | 2026 | [Tax Administration Law art. 95(1), text before 104/26](https://wapi.gov.me/download/2dd530ac-eec4-4d0c-9d8f-0c9e7ebc5b86?version=1.0) |
+| Default interest, 18 July to 31 December 2026 | 5.4% a year | 2026 | [Tax Administration Law art. 95](https://wapi.gov.me/download/8e3ee8d0-f10c-453a-90ad-6439ac07aca2?version=1.0); [Poreska uprava decision, 24 Jul 2026](https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0) |
 
-The lowest monthly contribution base is the **gross basic salary prescribed by the general collective agreement for the relevant qualification category**, under Article 4(21). Article 9(1) applies that minimum to the specified employees. Do not replace it with an assumed net minimum wage gross-up. Obtain the operative agreement, category, working/insurance period and any current amendments before certifying a low-pay or part-period calculation. Labour-law minimum salary compliance is a separate check; no current numerical minimum is certified here. [Articles 4(21), 9(1), 11][law]
+The 0.7% employer total excludes the additional service contribution, the disability-employment levy and Chamber of Economy dues, which the [payroll skill](montenegro-payroll.md) covers.
 
-For principal entrepreneurs paying tax on actual income, Article 9(7) uses realised/estimated annual turnover: through EUR 9,000, 60% of prior-year average monthly gross pay; over 9,000 through 15,000, 100%; over 15,000, 150%. It permits a higher elected base. Article 11(5) supplies the corresponding ordinary unemployment base. Annual lump-sum taxpayers instead follow their legally determined taxable income. Do not confuse turnover, profit and the monthly contribution base. [Articles 4(23), 9(7), 11(5)][law]
+## The base
 
-Article 9(11), added for 2026 supplementary entrepreneurs, uses the same turnover-linked 60/100/150% monthly base structure with higher-base election. Existing employment is part of that status, not an automatic exemption from its PIO. Article 7's principal-entrepreneur category must not be silently extended to the separately defined supplementary status. Mixed-status cases need documented registration/classification. [Articles 4(11a), 5(1)(12) and (16), 7, 9(11), 15(2)][law]; [amendment Articles 1–4][amend]
+### Employees and employee-like groups
 
-For 2026, MONSTAT's full-year 2025 average gross monthly pay is EUR 1,206. The December-only EUR 1,220 and annual average net EUR 1,012 are different populations. Thus the statutory percentages yield 723.60 / 1,206 / 1,809 for the three turnover bands, before a valid higher election. Verify the relevant year and period each time. [Article 4(23)][law]; [MONSTAT release, 30 January 2026][stats]
+The base is gross pay: pay for work and time at work, increased pay, salary compensation and other receipts under law, collective agreement or employment contract on which personal income tax is paid (art. 3a(1)). It includes payments tied directly to work and performance, such as fees for working bodies, groups and teams (art. 3a(2)). The base cannot be lower than the lowest monthly base: the gross basic salary set by the General Collective Agreement for the employee's qualification category (arts. 4(1)(21), 9 item 1, 11 item 1). The same gross base is used for the withheld and the employer contributions (Instruction arts. 4 and 5).
 
-Directors use Article 9(2) remuneration; qualifying contracts use Article 9(8) taxable income. Foreign workers, posted persons, citizens abroad, religious communities and compensation recipients have distinct status/base/payer rules. Article 11's reproduced numbering contains cross-reference tensions between categories and bases; do not resolve exceptional foreign/director cases by copying a mismatched row. Actual insurance legislation, agreement and authority interpretation remain necessary for those cases. [Articles 5, 7, 9, 11–13, 15, 21][law]
+Other bases:
 
-## Exclusions, suspensions and date gates
+- posted workers: the pay they would earn in Montenegro for the same or similar work, not below the lowest base (art. 9 item 3);
+- Montenegrin citizens working in Montenegro for foreign or international bodies: pay actually received, not below the lowest base (art. 9 item 4);
+- Montenegrin citizens employed abroad: set by the ministry for pension insurance, not below the lowest base (art. 9 item 5);
+- board members: the board fee (art. 9 item 2);
+- contract recipients (item 13): taxable income from independent activity under the personal income tax law, not the gross cash paid (art. 9 item 8);
+- unemployment benefit recipients: the benefit (art. 9 item 6);
+- clergy: set by the ministry by post, education and years of service, not below the lowest base (art. 9 item 9);
+- sick pay: the sick-pay compensation (art. 12); maternity and half-time work: the compensation under the social and child protection law (art. 13).
 
-Article 18a addresses listed receipts and noncash benefits. Noncash remuneration replacing unpaid salary is an express exception to the noncash exclusion. Taxability and contribution liability are separate conclusions; an exclusion from this law is not proof of income-tax exemption. Retain the exact type, purpose, valuation, legal basis and supporting documents. [Article 18a][law]
+### Entrepreneurs and supplementary entrepreneurs
 
-From January 2026 the zimnica exclusion refers to **70% of previous-year average monthly gross pay**, replacing the former minimum-wage reference. For 2026 the resulting limit is EUR 844.20. Apply that only to a genuinely qualifying zimnica payment, with prior payments and applicable administration checked; do not relabel ordinary salary or infer exemption for every listed receipt up to that amount. [Article 18a(2)][law]; [amendment Articles 5, 8][amend]; [statistics][stats]
+An entrepreneur taxed on a yearly lump sum uses taxable income set under the income tax law as the base (art. 9 item 7; art. 11 item 5). An entrepreneur taxed on actual income uses a monthly base fixed by realised or estimated annual turnover: up to EUR 9,000, 60% of prior-year average monthly gross pay; up to EUR 15,000, 100%; over EUR 15,000, 150%. For PIO the entrepreneur may elect a higher base (art. 9 item 7). The unemployment base uses the same three bands without the election (art. 11 item 5). For 2026 the bands give EUR 723.60, 1,206.00 and 1,809.00 a month (2025 average gross EUR 1,206, MONSTAT).
 
-Article 18d grants the stated contribution relief to a person with acquired digital-nomad status receiving the described employment/independent-activity income from an employer not registered in Montenegro. Retain immigration status, payer and income evidence; remote work alone is insufficient. Full status procedure and interaction with other coverage/taxes remain open. Article 18c is expired, with Article 31a's historical 2023 limit; do not use it as a new-hire exemption in 2026. [Articles 18c–18d, 31a][law]; [amendment Article 6][amend]
+From 1 January 2026 an employed person running a supplementary business pays PIO at 10% on the same turnover-banded base, with the same right to elect a higher base (art. 9 item 11; 160/25 arts. 3, 4 and 8). That PIO is on top of the PIO on their salary. No unemployment contribution is due on the supplementary business, because art. 7 does not list that group.
 
-Approved employment suspension and legally registered temporary cessation of principal independent activity follow Articles 19–20. The latter permits a request to continue contributions within five working days after temporary deregistration. Informal inactivity or no revenue is not documented cessation. Dispute/court-settlement arrears have Article 29b's rule referring to the rate when payment should have occurred; do not apply the current rate automatically to every historical award. [Articles 19–20, 29b][law]
+### Farmers
 
-## Annual ceiling and refund are a separate workpaper
+A farmer is someone farming as their only or main occupation who is not liable to personal income tax on it (art. 4(1)(18)). The base is 20% of prior-year average monthly gross pay, with an option to pay on a higher base (art. 9 item 10). For a farmer entered in the Register of Farmers, the farmer's own mandatory base is 12% of that average; the state budget pays the difference between the 20% and 12% bases, based on tax-authority data (art. 9a).
 
-Article 14(1) requires PIO calculation/payment across the different income bases. The annual maximum is fixed by the Ministry's yearly instrument; Article 22 provides a post-year refund application and decision. Do not use the old Guide's EUR 68,765 from a prior year, divide an annual amount into an assumed monthly cap, stop unemployment at a PIO maximum or promise an automatic payroll refund. [Articles 14, 22–24][law]
+### Several incomes and the annual ceiling
 
-The operative **2026 maximum has not been retrieved**. The Gazette ceiling record found is explicitly for 2025; do not use it for 2026. Article 22 requires the insured person's post-year application by the end of the following calendar year, with an authority decision. Thus a 2026 claim is a 2027 application; eligibility/amount still require the correct annual maximum and actual paid contributions. No numeric 2026 capped/refund example is certified here. [Articles 14, 22–24][law]; [2025 ceiling record, discovery only][cap2025]
+A person with several insured incomes pays PIO on each of them (art. 14(1)). PIO stops being due only through the annual ceiling: the highest annual PIO base, adjusted each year by the growth of average pay and fixed by a Ministry of Finance rulebook (art. 14(3)-(4)). The ceiling for 2025 is EUR 75,453 (Rulebook 134/2025, in force 28 November 2025). The 2025 rulebook was published on 21 November 2025, so the 2026 figure is expected late in 2026. The ceiling is annual: do not split it into a monthly cap and do not stop payroll withholding when it is reached. The excess is recovered by refund after the year end (see Deadlines). The ceiling applies to PIO only; unemployment and Labour Fund contributions are not refunded under it.
 
-### Annual PIO refund procedure and actual Form 1
+### Exclusions and reliefs
 
-The actual promulgated 107/23 Gazette text and attached **Form 1** were read, including visual inspection of the form. It replaces the 42/12 refund rule. Use this PIO-specific process, not an old general-social-insurance ZPDO template still appearing in official search results. The Ministry reproduction names the form but omits it; the actual Gazette PDF contains both the rule and form. [Refund rule Articles 1–6 and Form 1][refund]
+- Receipts up to the amounts that are free of personal income tax under the income tax law carry no contributions (art. 18a(1)).
+- No contributions on severance pay, solidarity and social aid, zimnica up to 70% of prior-year average monthly gross pay (EUR 844.20 for 2026), separate-living allowance, newborn-child allowance and jubilee awards (art. 18a(2), as amended by 160/25 art. 5; before 2026 the zimnica reference was the minimum wage).
+- No contributions on benefits in kind, gifts or other benefits given to an employee, unless they are given in place of unpaid salary (art. 18a(3)).
+- Montenegrin diplomatic staff abroad: no contributions on the special allowances and cost reimbursements listed in art. 18a(4).
+- No contributions on transfer income and other income of professional and amateur athletes (art. 18b).
+- A person with digital-nomad status under the foreigners law, earning employment or self-employment income from an employer not registered in Montenegro, is exempt (art. 18d, as replaced by 160/25 art. 6). Remote work without that status does not qualify.
+- Art. 18c (the new-hire PIO relief) has expired; it applied up to 31 December 2023 (art. 31a).
 
-Prepare a person/year schedule of every insurance basis, payer, actual payment, reported contribution base/rate, cumulative base and supported annual maximum. Reconcile to payer reports and tax-authority records. The rule bases the post-year refund on paid-contribution data delivered to the tax authority, not an unpaid accrual or a new estimate. For several insurance bases, Article 4 allocates the refund to the basis whose contributions were paid after the annual maximum was reached. Preserve the chronology rather than allocating a refund pro rata across employers or choosing the highest rate automatically. Historical different rates need their actual period/payment rules. [Refund Articles 2, 4][refund]; [law Articles 14, 22][law]
+### Suspension
 
-| Application routing | Competent tax-office location under Article 3 |
-| --- | --- |
-| Employee | Employer's seat |
-| Contractual remuneration, including qualifying royalty/service contracts | Individual's residence |
-| Board/director remuneration | Payer's seat |
-| Independent activity | Tax-registration location |
+Contributions are suspended while an employee's employment is formally suspended under labour law (art. 19). An entrepreneur or main-occupation professional who temporarily deregisters the activity pays nothing for that period, unless they apply to keep paying within five working days of deregistration (art. 20). Having no revenue is not a deregistration.
 
-Source: [refund Article 3][refund]. For mixed statuses/payers in different offices, obtain the authority's competent-office direction; the rule does not justify a universal residence-office shortcut. An eUprava service listing inspected here gives generic residence wording and older agency names, which are not substituted for the rule's category-specific routing or treated as current successful electronic acceptance. [Rule][refund]; [service listing, access comparison only][refund-service]
+### Historic pay and court awards
 
-The actual Form 1 requests the tax authority/regional office, claim year, insured person's name, basis of insurance, recipient/bank account/bank, applicant name/JMB/address and date. Enter the proper insured person and entitlement, not automatically the employer's account. Keep supporting person/year reconciliation, payer/authority contribution evidence, annual maximum and any representation authority with the submission. These are workpaper/evidence requirements; the printed form itself does not list a new universal attachment checklist. No invented mandatory notarisation or fee is added. [Form 1][refund]; [law Article 22][law]
+Contributions on pay awarded by a court decision, court settlement or labour-dispute settlement are calculated and paid when the award is paid, at the rate in force on the day the pay should have been paid (art. 29b).
 
-The regional office decides by a formal decision. Article 4 requires refund **within 30 days of the decision**, not within 30 days of the application. Keep application receipt, any information requests, decision and payment reconciliation. The rule does not prescribe a separate decision-making deadline; current tax-procedure/appeal rules and payment offsets must be verified separately. Do not net an anticipated claim against current remittances. No unemployment/Labour Fund refund follows from this PIO maximum rule. [Refund Articles 1, 4][refund]; [law Articles 22–25][law]
+## Deadlines and filing
 
+| Who | Who calculates and pays | Deadline | Source |
+|---|---|---|---|
+| Employees and employee-like groups, unemployment contributions of art. 7 items 1-8, sick pay and maternity bases, additional PIO for employees | Employer or payer | By the 15th for the previous month | Law art. 21(1) |
+| Board members and contract recipients | Payer of the fee | By the 15th for the previous month | Law art. 21(5) |
+| Montenegrin citizens employed abroad | The insured person | By the 15th of the month after each calendar quarter | Law art. 21(2) |
+| Unemployment benefit recipients | Employment Agency | When the benefit is paid | Law art. 21(3) |
+| Entrepreneurs, professionals, supplementary entrepreneurs, own additional PIO | The insured person | In the same way and at the same time as their personal income tax | Law art. 21(4); 160/25 art. 7 |
+| Clergy | Religious community | By the 15th of the month after each quarter | Law art. 21(6) |
+| Farmers | The farmer, on a tax-authority assessment | Quarterly, by the 15th of the month after each quarter | Law art. 21(8) |
+| Staff of foreign embassies and organisations with immunity, if the payer does not pay | The employee | Within 5 days of receiving the pay | Law art. 21(7) |
 
-## Computation workflow and evidence
+For employees the Ministry's instruction is stricter than the 15th: tax and contributions are paid at the same time as the salary is paid; for pay in kind, by the last working day of the month in which it is received (Instruction art. 7). An employee who receives pay directly from abroad pays the tax and contributions within five days of receipt (Instruction art. 7).
 
-1. Identify person, payer, legal status, work country, insurance periods and all concurrent activities. Check the applicable international agreement/coverage certificate before an exemption. [Articles 4–8][law]
-2. Classify each payment and establish gross earnings or the statutory turnover/average-pay/taxable-income base. Record floor, exclusions, election and additional service evidence. [Articles 3a, 9–13, 18a–18d][law]
-3. Calculate PIO, unemployment and employer Labour Fund separately, maintaining liability by person, period and payer. Keep PIT/surtax in the payroll workpaper. [Articles 15–18][law]; [instruction Articles 3–6][instruction]
-4. Reconcile person totals to contribution control accounts, reports, payments and authority ledger. Preserve adjustments separately from current pay; do not net an unapproved annual refund against remittances. [Articles 21–25][law]
-5. Escalate missing status, period/floor/cap evidence or inconsistent official form references before filing. A source-cited draft is not an accepted submission or professional attestation.
+**IOPPD.** Employers and other payers report tax and contributions on the IOPPD form (IOPPD rulebook arts. 2 and 4). It is filed with the tax authority electronically by the 15th of the month for the previous period (arts. 5 and 7). An amended IOPPD must contain the complete data for every person in that period, not only the changes (art. 6). Self-employed people (except for their own employees), farmers and clergy do not file IOPPD (art. 4). The payroll skill covers the form columns and codes.
+
+**Annual PIO refund.** A person whose PIO was paid on a base above the annual ceiling may claim the excess back (Law art. 22(1)). The claim is made after the year ends, by the end of the following calendar year, to the tax authority, which decides by formal decision (art. 22(2)-(4)). So a 2025 refund is claimed during 2026, and a 2026 refund during 2027. The procedure is in the Ministry of Finance refund rulebook (107/23, which replaced 42/12):
+
+- The refund is based on the contributions paid, as reported to the tax authority by the payer (rulebook art. 2).
+- The claim is made on Form 1 (art. 3(1)). It asks for the regional office, the year, the insured person, the insurance basis (employment, self-employment, contract fee, or other such as board membership), the account to be credited and its bank, and the applicant's name, personal number (JMB), address and date.
+- The competent office is: for employees, the employer's seat; for contract recipients, the person's residence; for board members, the payer's seat; for the self-employed, their place of tax registration (art. 3(2)).
+- The regional office decides by formal decision and pays within 30 days of the decision (art. 4(1)-(2)).
+- With several insurance bases, the refund is made on the basis whose contributions were paid after the ceiling was reached (art. 4(3)). Build a dated schedule of every payment by basis to find it.
+
+## Penalties and interest
+
+Fines (Law arts. 26 and 27):
+
+- A legal person that, as payer, fails to calculate, calculates wrongly, fails to withhold or fails to pay contributions by the 15th (art. 21(1) and (3)-(6)): EUR 2,000 to 20,000. Its responsible person, or the responsible person in a state or local body: EUR 500 to 1,000. An entrepreneur payer: EUR 1,000 to 6,000.
+- An individual who does not pay on time where they pay their own contributions (art. 21(2), (7) and (8): citizens employed abroad, embassy staff, farmers): EUR 250 to 2,000.
+
+Interest, assessment, collection, deadlines and limitation follow the tax procedure law, except that the limitation rule for PIO is not taken from it (Law art. 25). Under the Tax Administration Law, default interest runs daily from the day after the due date. The rate is the ECB main refinancing rate on the first day of the half-year plus three percentage points, set for each half-year and published by the tax authority (Tax Administration Law art. 95(1)-(5)). This half-year method applies from 18 July 2026 (104/26); until 17 July 2026 the rate was 0.03% a day (art. 95(1) before 104/26). For 18 July to 31 December 2026 it is 5.4% a year (Poreska uprava decision of 24 July 2026). No interest is charged on interest (art. 95(7)).
+
+## Cross-border points
+
+- **Posted workers** sent abroad by a Montenegrin employer pay PIO and unemployment, on the pay they would earn in Montenegro, unless they are compulsorily insured in the other state or a treaty provides otherwise (arts. 4(1)(5), 5(1)(5), 7(1)(5), 9 item 3).
+- **Montenegrin citizens employed abroad** by a foreign employer are insured in Montenegro if they are not compulsorily insured abroad, or cannot use those rights outside that state, and were insured or resident in Montenegro just before leaving (art. 4(1)(6)). They pay PIO themselves quarterly (art. 21(2)) and file IOPPD (IOPPD rulebook art. 4(2)).
+- **Foreign nationals** working in Montenegro for foreign employers, or for domestic employers under technical-cooperation agreements, pay unless a treaty provides otherwise or they are insured under another state's rules (art. 5(1)(8) and (10)). Those working for international organisations or foreign embassies pay only if a treaty provides for it (art. 5(1)(9)).
+- **Montenegrin citizens working in Montenegro** for foreign embassies, international organisations or foreign employers pay unless a treaty provides otherwise (art. 5(1)(6)). If an employer with diplomatic immunity does not pay, the employee pays within five days of receiving the pay (art. 21(7)).
+- **Residents receiving pay from abroad** file IOPPD themselves (IOPPD rulebook art. 4(7)) and pay within five days of receipt (Instruction art. 7).
+- **Digital nomads** with status under the foreigners law, paid by an employer not registered in Montenegro, are exempt (art. 18d).
+- Before applying any treaty exemption, obtain the certificate of coverage from the other state's insurer.
 
 ## Worked examples
 
-Hypothetical full-month 2026 EUR preparation cases with established classification, no higher elected base, no relief except where stated and no annual refund applied. Ordinary employee gross is assumed above the applicable verified floor; no particular current numerical floor is asserted. Values are contribution controls, not complete payslips or filings.
+All examples are full calendar months in 2026, in EUR, with the person's status already established, no elected higher base and no annual refund. Example 1 assumes gross pay above the lowest monthly base for the employee's category.
 
-### 1. Ordinary employee and separate employer charges
+### 1. Ordinary employee, gross EUR 2,000
 
-Gross contribution base 2,000; no special service/additional levy. PIO/unemployment deductions 210; employer unemployment/Labour Fund 14. Salary PIT/surtax and other possible employment costs are excluded from this control. [Articles 15, 18][law]; [instruction Articles 4–5][instruction]
+Employee PIO is 10% × 2,000 = 200 and employee unemployment 0.5% × 2,000 = 10, so EUR 210 is withheld (Law arts. 15(1), 18(1)). The employer pays unemployment 0.5% × 2,000 = 10 and Labour Fund 0.2% × 2,000 = 4, so EUR 14 on top (Law art. 18(1); Instruction art. 5). Employer PIO is 0%. Income tax and surtax are in the payroll skill.
 
 ```oa-check
 name: Montenegro ordinary employee contributions
@@ -140,9 +191,9 @@ expected:
   employer_charges: 14
 ```
 
-### 2. Principal actual-income entrepreneur, lower turnover band
+### 2. Entrepreneur on actual income, turnover EUR 8,500
 
-Annual turnover 8,500, principal status and actual-income taxation established. Full-month 60% base uses prior-year average gross 1,206; PIO 72.36 plus unemployment 7.236, rounded separately to cents 7.24, total 79.60. This does not compute business income tax. [Articles 9(7), 11(5), 15(2), 18(2)][law]; [statistics][stats]
+Turnover is in the up-to-EUR-9,000 band, so the monthly base is 60% × 1,206 = 723.60 (Law art. 9 item 7, art. 11 item 5). PIO is 10% × 723.60 = 72.36 (art. 15(2)). Unemployment is 1% × 723.60 = 7.236, rounded to 7.24 (art. 18(2)). The monthly total is EUR 79.60, paid with the entrepreneur's income tax (art. 21(4)).
 
 ```oa-check
 name: Montenegro principal entrepreneur contribution base
@@ -160,9 +211,9 @@ expected:
   total: 79.60
 ```
 
-### 3. Supplementary business alongside employment
+### 3. Supplementary business alongside employment, turnover EUR 16,000
 
-Annual turnover 16,000, Article 5(1)(16) status established. Full-month base 150% × 1,206 = 1,809, PIO 180.90, in addition to the separately calculated employment PIO. No principal-business unemployment charge is added to this supplementary base. Annual refund remains separate. [Articles 5(1)(16), 7, 9(11), 14, 15(2)][law]; [amendment][amend]; [statistics][stats]
+The person is employed (salary PIO EUR 200, as in example 1) and runs a supplementary business with turnover over EUR 15,000. The supplementary base is 150% × 1,206 = 1,809, and PIO on it is 10% × 1,809 = 180.90 (Law art. 9 item 11, art. 15(2); 160/25 arts. 3 and 4). No unemployment contribution is due on the business (art. 7). Total PIO for the month is EUR 380.90. Any excess over the annual ceiling is recovered by refund after the year end.
 
 ```oa-check
 name: Montenegro supplementary entrepreneur pension
@@ -179,9 +230,9 @@ expected:
   combined_pio_before_refund: 380.90
 ```
 
-### 4. Registered farmer own contribution and budget difference
+### 4. Registered farmer
 
-Qualifying farmer registration established. General base 20% and own mandatory base 12% of 1,206 produce total PIO 24.12, own payment 14.472 and budget difference 9.648, rounded here to 14.47 and 9.65. Actual quarterly assessment and authority allocation control payment. [Articles 9(10), 9a, 15(2), 21(8)][law]; [statistics][stats]
+The general base is 20% × 1,206 = 241.20 and the farmer's own base 12% × 1,206 = 144.72 (Law art. 9 item 10, art. 9a(1)). PIO on the general base is 24.12; the farmer pays 10% × 144.72 = 14.472, rounded to 14.47, and the budget pays the difference of 9.65 (art. 9a(2)-(3)). The tax authority assesses it and the farmer pays quarterly (art. 21(8)).
 
 ```oa-check
 name: Montenegro registered farmer contribution allocation
@@ -201,9 +252,9 @@ expected:
   budget_difference: 9.65
 ```
 
-### 5. Established additional service category
+### 5. Employee in a job where 12 months count as 15 months of service
 
-Employee base 2,000 and documented 12-month-to-15-month credited-service category. Additional employer PIO at 9% is 180, on top of ordinary employer unemployment/Labour Fund 14. Employee deductions remain 210. Eligibility and service records are assumptions, not a finding that any specific role qualifies. [Articles 8, 16(2)][law]; [instruction Articles 4–5][instruction]
+Gross pay EUR 2,000. The employer pays additional PIO of 9% × 2,000 = 180 (Law art. 16 item 2), plus the ordinary 0.7% = 14, so EUR 194 on top of gross. The employee's withholding stays at EUR 210.
 
 ```oa-check
 name: Montenegro additional credited service employer charge
@@ -219,9 +270,9 @@ expected:
   specified_employer_charges: 194
 ```
 
-### 6. Qualifying zimnica exclusion limit
+### 6. Zimnica payment of EUR 800
 
-A documented qualifying 2026 zimnica payment is 800, with no prior use of the relevant exclusion. The 70% limit is 844.20, so the whole assumed payment falls within it. This tests the limit only; it does not establish the PIT result, a Labour Fund exclusion or treatment of an excess payment. [Article 18a(2)][law]; [amendment Articles 5, 8][amend]; [statistics][stats]
+The 2026 limit is 70% × 1,206 = 844.20 (Law art. 18a(2); 160/25 art. 5). The whole EUR 800 is free of contributions, with 44.20 of the limit unused. Income tax on it is a separate question for the payroll skill.
 
 ```oa-check
 name: Montenegro 2026 zimnica contribution exclusion ceiling
@@ -238,48 +289,31 @@ expected:
   headroom: 44.20
 ```
 
-## Reporting, payments, corrections and sanctions
+## Ask the client first
 
-Article 21 distinguishes the payer and deadline by population: ordinary employer contributions by the 15th for the previous month; specified foreign-employed citizens and religious-community cases quarterly; principal/supplementary entrepreneurs through the income-tax calculation/payment mechanism; specified board/contract receipts by the payer by the 15th; farmers under quarterly authority assessment. If an immune foreign/diplomatic payer does not pay the specified employee contributions, Article 21(7) gives the employee five days from receipt. Classify before applying a deadline. [Article 21][law]
-
-The employment instruction additionally requires payment with remuneration, and for noncash earnings no later than the month's last working day. Its older OPD1 report references and retained historical calculation table are not proof of current IOPPD/IRMS fields. Do not interpret the contribution law's 15th-day rule as permission to defer payment due with salary. Actual current integrated reporting rules, form codes, portal schema, account references, correction sequence and period-specific transition notices remain to be reconciled in the payroll method. [Instruction Articles 7–10][instruction]
-
-Article 22 requires an annual-cap refund application after year end, by the end of the following calendar year, decided by the tax authority. Preserve paid amounts and decision; no unemployment or Labour Fund refund is inferred from that PIO rule. Article 25 refers unresolved assessment, collection, interest and limitation matters to tax procedure, with its express PIO limitation exception. Exact current interest, appeal/stay and enforcement methods are still open. [Articles 22–25][law]
-
-For Article 26's listed payer failures, statutory fines are EUR 2,000–20,000 for a legal person, 500–1,000 for its responsible person and 1,000–6,000 for an entrepreneur. Article 27 specifies 250–2,000 for its listed individual nonpayment cases. These are offence-specific ranges, not automatic charges for every late return. [Articles 26–27][law]
-
-## Reviewer handoff and remaining evidence
-
-Supply person/status/registration, all work and insurance periods, payer/residence, international coverage evidence, gross receipt classification, applicable floor/elected base, yearly statistics/cap, calculation and payment ledgers, additional-service records, actual form/acknowledgement, amendments and refund decisions. Bank narratives alone do not establish any of these.
-
-Still open: current numerical floor and partial/multiple-employer application; operative 2026 cap, mixed-status competence and current refund submission/offset/remedy implementation; full benefit/exemption valuation and Labour Fund interactions; exceptional Article 11 cross-references; foreign/posted coverage agreements; farmer and supplementary-business assessment/reporting implementation; historical arrears; current IOPPD/IRMS fields, amendments, payment accounts and procedures; all other employment levies; independent country review and named accountant attestation. The payroll and individual Guides have been rebuilt for 2026; their current local-decision, forms/IRMS, specialist and procedural gaps remain open. Reconcile their stated bases and periods with this contribution method rather than treating companion presence as completed implementation.
+1. What is each person's status: employee, board member, contract recipient, entrepreneur in main occupation, employee with a supplementary business, or farmer? This decides the base, the rate and whether unemployment applies.
+2. For entrepreneurs: are you taxed on actual income or on a yearly lump sum, what is your realised or estimated annual turnover, and have you elected a higher base?
+3. For employees: what is the qualification category under the General Collective Agreement, and does any job count service at an increased rate?
+4. Does anyone have income from more than one source, or total insured income above the annual ceiling (EUR 75,453 for 2025)? If so, a refund claim may be due by the end of the following year.
+5. Is anyone posted abroad, employed by a foreign or international employer, paid from abroad, or holding digital-nomad status, and is there a certificate of coverage from another state?
+6. Which payments are not ordinary salary: zimnica, severance, jubilee awards, aid, or benefits in kind, and do any of them replace unpaid salary?
 
 ## Sources
 
-Read on **24 October 2026**. Source labels identify actual operative reading, not a completed taxpayer filing.
+| Source | URL | Read on |
+|---|---|---|
+| Law on Compulsory Social Insurance Contributions, Ministry of Finance consolidation through 160/25 (arts. 1-27, 29b, 31a) | https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0 | 2026-10-30 |
+| Law amending the Contributions Law, Sl. list CG 160/25 of 30 Dec 2025 (arts. 1-8, applies from 1 Jan 2026) | https://wapi.gov.me/download/9c7ab8f6-6971-48cb-9ac0-4d6f87ac48bb?version=1.0 | 2026-10-30 |
+| Instruction on calculating and paying tax and contributions on employment income, through 103/24 (arts. 4, 5, 7) | https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0 | 2026-10-30 |
+| Rulebook on the IOPPD form, consolidated through 124/24 (arts. 2, 4-7 and column instructions) | https://wapi.gov.me/download/28aa7760-8d39-440d-8874-1ffcc5773095?version=1.0 | 2026-10-30 |
+| Rulebook on refund of PIO contributions, Sl. list CG 107/23, with Form 1 (arts. 1-6) | https://www.sluzbenilist.me/propisi/362476/download | 2026-10-30 |
+| Rulebook adjusting the highest annual contribution base for 2025, Sl. list CG 134/2025 (art. 1) | https://www.sluzbenilist.me/propisi/387933/download | 2026-10-30 |
+| MONSTAT, average earnings December and full year 2025, release of 30 Jan 2026 | https://www.monstat.org/cg/novosti.php?id=4638 | 2026-10-30 |
+| Tax Administration Law, consolidated through 104/26 (arts. 95-96) | https://wapi.gov.me/download/8e3ee8d0-f10c-453a-90ad-6439ac07aca2?version=1.0 | 2026-10-30 |
+| Tax Administration Law, Ministry consolidation published March 2026 (before 104/26), art. 95(1) (0.03% a day) | https://wapi.gov.me/download/2dd530ac-eec4-4d0c-9d8f-0c9e7ebc5b86?version=1.0 | 2026-10-30 |
+| Poreska uprava decision on the default interest rate, 18 Jul to 31 Dec 2026 | https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0 | 2026-10-30 |
 
-- [Contribution law][law], Ministry March 2026 DOCX consolidation through 160/25: Articles 1–27 and targeted 29b–33 read; historical transitional rates not applied as 2026 rates.
-- [Enacted amendment][amend], 160/25 Articles 1–8: supplementary business, zimnica, digital-nomad and application gates read.
-- [Payroll instruction][instruction], Ministry April 2026 reproduction through 103/24: Articles 1–10 and historical/reference material read. Old table/report references are disclosed, not certified as current IRMS implementation.
-- [MONSTAT full-year 2025 release][stats], 30 January 2026: prior-year average gross 1,206 distinguished from net and December-only values.
-- [September government proposal][proposal]: one-page scanned text visually inspected, including January 2027 application; enactment/final text not certified.
-- [107/23 refund rule and actual Form 1][refund]: operative Articles 1–6 and form read; form visually inspected. 2026 cap and accepted electronic submission not obtained.
-- [2025 ceiling record][cap2025]: discovery metadata only, not operative 2026 amount or current refund form.
-
-[law]: https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0
-[amend]: https://wapi.gov.me/download/9c7ab8f6-6971-48cb-9ac0-4d6f87ac48bb?version=1.0
-[instruction]: https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0
-[stats]: https://www.monstat.org/cg/novosti.php?id=4638
-[proposal]: https://wapi.gov.me/download/7edeb39c-81cc-4468-bd62-6cfc5a36443c?version=1.0
-[refund]: https://www.sluzbenilist.me/propisi/362476/download
-[refund-service]: https://m.euprava.me/usluge/detalji_usluge?generatedServiceId=245
-[cap2025]: https://www.sluzbenilist.me/propisi/387933
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+Not yet confirmed: the 2026 highest annual PIO base (the Ministry rulebook under Law art. 14(4) was not published by 30 October 2026); the numerical lowest monthly base under the General Collective Agreement and the labour-law minimum wage (the old EUR 670 and EUR 800 net figures came from a secondary source); whether the 70% cap in Law art. 18a(2) limits only zimnica or also the severance and aid items listed before it; the unemployment base for board members and foreign employees, because Law art. 11 items 1 to 4 cross-refer to art. 7 items that do not match; the list of social security agreements and which coverage certificates they require; the September 2026 Government proposal to set PIO, additional PIO and unemployment rates to 0% from 1 January 2027 (proposal only, enactment not confirmed); the eUprava refund-service page (m.euprava.me, service 245), which could not be read on 30 October 2026 because of a certificate error, so the refund route above rests on the 107/23 rulebook alone.
 
 <!-- openaccountants-cta-block -->
 

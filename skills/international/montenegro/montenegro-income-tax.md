@@ -1,10 +1,10 @@
 ---
 name: montenegro-income-tax
-description: "Prepare Montenegro 2026 individual income-tax workpapers by income class: principal and supplementary businesses, occasional independent work, property, capital gains, foreign credits, royalties/sport and residual internet/video-game income. Establish residence/source, reconcile business profit and losses, apply category-specific rates/expenses, allocate withholding and advances, and route annual GPP-FL obligations. Includes nine executable controls. Use for porez na dohodak, preduzetnik, capital disposals and GPP-FL. Current form attachments/IRMS, specialist relief, treaties, valuations and procedures remain open. Employment payroll and insurance have separate companion Guides. Source-cited preparation draft awaiting independent and professional review."
+description: "Montenegro personal income tax (porez na dohodak fizičkih lica) for tax year 2026, from the Personal Income Tax Law as amended by 160/25 (from 1 January 2026) and 70/26 (from 21 May 2026). Covers residence and scope, the monthly salary bands (0, 9 and 15% at EUR 700 and 1,000), the annual bands for a principal independent activity (0, 9 and 15% at EUR 8,400 and 12,000), the flat 15% for supplementary entrepreneurs, occasional work, rent, capital income, capital gains, sport, royalties, other receipts and internet or gaming income, and gambling winnings (progressive to 20 May, 12% from 21 May). Sets out business-profit adjustments, standard expense percentages, losses, reliefs, the municipal surtax, the GPP-FL return due by the end of April, monthly advances, withholding, lump-sum tax, fines and the foreign tax credit. Payroll, social contributions and VAT have their own skills."
 version: 0.3
 jurisdiction: ME
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -12,98 +12,193 @@ depends_on:
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-sources:
-  - url: "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0"
-    title: "PIT consolidation through 160/25"
-    as_of: "2026-10-24"
-  - url: "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0"
-    title: "Enacted 160/25 PIT amendment applying January 2026"
-    as_of: "2026-10-24"
-  - url: "https://www.sluzbenilist.me/propisi/394390/download"
-    title: "Enacted 70/26 PIT amendment, effective May 2026"
-    as_of: "2026-10-24"
-  - url: "https://wapi.gov.me/download/afb50b45-7e83-4dac-b69e-2a1e280d3ffc?version=1.0"
-    title: "Annual GPP-FL return rule through 103/25, actual attachments omitted"
-    as_of: "2026-10-24"
 ---
 
-# Montenegro individual income-tax preparation v0.3
+# Montenegro personal income tax, tax year 2026
+
+This skill computes Montenegro personal income tax for an individual or a sole proprietor (preduzetnik) for 2026. The law is the Personal Income Tax Law (Zakon o porezu na dohodak fizičkih lica, "PIT Law"), consolidated through amendment 160/25, which applies from 1 January 2026 (160/25 art. 21), read with amendment 70/26, which changes the gambling rate from 21 May 2026 (70/26 arts. 1 and 3). The tax is run by the Tax Administration (Poreska uprava). The currency is the euro.
 
 ## Who this applies to
 
-Build a 2026 individual-tax workpaper after establishing residence, source, payer, income category and period. A resident is tested under Article 3's domicile/centre of business and vital interests or more-than-183-days criteria, with its separate posting provision; residence is not determined solely by citizenship, bank location or one immigration document. Residents have worldwide scope; nonresidents have Montenegro-source scope. Actual treaty residence/source/priority needs the relevant treaty and facts. [Articles 2–4, 45][law]
+- **Taxpayers.** Every resident or nonresident individual who earns income from a source named in the law. Where two or more people earn income jointly, each is taxed on his or her share (PIT Law art. 2).
+- **Residents.** An individual is resident if he or she has a domicile or centre of business and vital interests in Montenegro, or stays in Montenegro for more than 183 days in the tax year. An individual sent abroad to work for a Montenegrin resident person or for an international organisation is also resident (art. 3). Citizenship, a bank account or one immigration document does not decide residence.
+- **Scope.** Residents are taxed on income earned in and outside Montenegro; nonresidents only on income earned in Montenegro (art. 4).
+- **Tax period.** The calendar year, except where an activity starts or stops during the year (art. 7). On cessation of an independent activity, tax is computed for the part of the year in which it was carried on (art. 42(1a)).
+- **Income classes.** Personal earnings (salary); independent activity, split into a principal independent activity, supplementary entrepreneurship and occasional independent work; property (rent); capital; capital gains; sport; copyright, related rights, patents, trademarks and independent cultural professionals; other receipts; internet and video games (gaming); and games of chance (art. 12(2)). Total income is the sum of these for the period (art. 12(3)).
+- **Out of the tax.** Members of foreign diplomatic and consular missions and their households who are not Montenegrin citizens, UN technical-assistance officials, honorary consuls on pay from the appointing state, and staff of international organisations who are neither citizens nor domiciled in Montenegro (art. 6).
+- **Other skills.** Monthly salary withholding and the IOPPD report are in the [payroll skill](montenegro-payroll.md); insurance status, contribution bases and the annual pension refund in the [social contributions skill](montenegro-social-contributions.md); VAT in the [VAT skill](montenegro-vat.md); companies (d.o.o., a.d.) in the [corporate income tax skill](me-corporate-income-tax.md).
 
-This source-cited draft replaces the retained 2025 secondary-source summary preserved at Git checkpoint `eb255509`. The consolidation through 160/25 is read with the enacted 70/26 amendment, effective 21 May 2026, which changes gambling tax. The September salary proposal specifies January 2027 application and is not applied to 2026. Full current forms/IRMS, treaty/specialist implementation, procedures and independent/named-accountant review remain open. [Law][law]; [160/25 Article 21][amend]; [70/26 Articles 1–3][may]; [Gazette record][mayrecord]; [salary proposal][proposal]
+## Rates, bands and thresholds
 
-The [payroll Guide](montenegro-payroll.md) owns monthly salary/net/prirez/IOPPD preparation. The [contribution Guide](montenegro-social-contributions.md) owns insurance status, statutory bases, monthly contributions and annual PIO refund. Contributions, local surtax, other levies and VAT are not silently included in the PIT-only examples below. All seven country tax domains remain partial.
+| Item | Amount | Tax year | Source |
+|---|---|---|---|
+| Personal earnings (salary), monthly | 0% up to EUR 700.00; 9% from EUR 700.01 to 1,000.00; 15% above EUR 1,000.00 | 2026 | [PIT Law art. 10(1)(1)][law], as restated by [160/25 art. 3][amend] |
+| Principal independent activity, annual | 0% up to EUR 8,400.00; 9% from EUR 8,400.01 to 12,000.00; 15% above EUR 12,000.00 | 2026 | [PIT Law art. 10(1)(2)][law] |
+| Supplementary entrepreneurship, occasional work, property, capital, capital gains, sport, royalties, other receipts, internet and gaming | 15% of the tax base | 2026 | [PIT Law art. 10(1)(3)][law] |
+| Gambling winnings paid 1 January to 20 May 2026 | 0% up to EUR 50.00; 10% from EUR 50.01 to 1,500.00; 15% above EUR 1,500.00, per winning | 1 Jan to 20 May 2026 | [PIT Law art. 10(1)(4)][law], [160/25 art. 3][amend] |
+| Gambling winnings paid from 21 May 2026 | 12% of each winning | from 21 May 2026 | [70/26 arts. 1 and 3][may]; [Gazette record][mayrecord] |
+| Undeclared income found from the rise in net assets | 80% of the base | 2026 | [PIT Law art. 10a][law] |
+| Occasional independent work, undocumented costs | standard expenses 30% of receipts | 2026 | [PIT Law art. 20(2)][law] |
+| Rent, undocumented costs | standard expenses 30% | 2026 | [PIT Law art. 35(2)][law] |
+| Holiday letting to tourists | standard expenses 50% if tourist tax is paid; 70% under a lease with a travel agency or local tourist organisation with average occupancy of at least 60 days a year | 2026 | [PIT Law art. 35(3)][law] |
+| Depreciable fixed assets | value over EUR 200 and useful life over one year | 2026 | [PIT Law art. 23(2)][law] |
+| Depreciation rates | group I 2.5% (straight line, asset by asset); II 10%; III 15%; IV 20%; V 30% (declining balance on the group) | 2026 | [PIT Law art. 23(3) to (5)][law]; [160/25 art. 7][amend] |
+| Health, humanitarian, social, educational, scientific, religious, cultural, sports and environmental spending | deductible up to 3% of total income | 2026 | [PIT Law art. 24][law] |
+| Representation (entertainment) | deductible up to 1% of total income | 2026 | [PIT Law art. 25][law] |
+| Chamber and association memberships | deductible up to 0.1% of total income, or the amount fixed by law | 2026 | [PIT Law art. 26][law] |
+| Business losses | carried forward, no longer than 5 years | 2026 | [PIT Law art. 33][law] |
+| New business in an underdeveloped municipality | tax cut by 100% for the first 8 years, total relief no more than EUR 200,000; apply within 30 days of registration | 2026 | [PIT Law arts. 32 and 32a][law] |
+| New hire in an underdeveloped municipality | salary tax relief for 4 years from hiring | 2026 | [PIT Law art. 32b][law] |
+| Property acquisition cost that cannot be established | 80% of the sale price | 2026 | [PIT Law art. 37d(5)][law] |
+| Sport income, undocumented costs | standard expenses 30%; amateur athletes 90% | 2026 | [PIT Law art. 37j][law] |
+| Copyright and related income, undocumented costs | 60% fine art; 50% architecture, urban and landscape planning; 30% performers; 30% all other copyright, related rights, patents, trademarks and cultural professionals | 2026 | [PIT Law art. 37lj][law] |
+| Internet income | expenses 15% of receipts | 2026 | [PIT Law art. 37p(1)][law] |
+| Video-game (gaming) income, undocumented costs | standard expenses 20% | 2026 | [PIT Law art. 37p(3)][law] |
+| Lump-sum tax eligibility | prior-year (or planned) turnover below EUR 30,000.01 | 2026 | [PIT Law art. 49(1)][law]; [160/25 art. 14][amend] |
+| Salary from two or more payers, return required | total monthly gross above EUR 700 | 2026 | [PIT Law art. 43(4)(5)][law] |
+| Municipal surtax (prirez) | up to 13% of the tax; up to 15% in the Capital City (Podgorica) and the Old Royal Capital (Cetinje); rate set by each municipality's decision | 2026 | [Local Self-Government Financing Law arts. 8 and 9][local] |
+| Pension and disability contribution (PIO), employees | 10% employee, 0% employer | 2026 | [Contributions Law art. 15][contrib] |
+| Unemployment contribution, employees | 0.5% employee, 0.5% employer | 2026 | [Contributions Law art. 18][contrib] |
+| VAT, standard rate and registration | 21%; registration once turnover in the last 12 months exceeds EUR 30,000 | 2026 | [VAT Law arts. 24, 42 and 55][vat] |
+| Fine, individual (return, payment, foreign salary, rent withholding) | EUR 500 to 2,000 | 2026 | [PIT Law art. 53v][law] |
+| Fine, entrepreneur (return, advances, information return, lump sum, books) | EUR 1,000 to 6,000, plus a possible ban on the activity of 1 to 3 months | 2026 | [PIT Law art. 53a(3) and (4)][law]; [160/25 art. 18][amend] |
+| Fine, legal-person payer | EUR 2,000 to 20,000; responsible person EUR 500 to 1,000 | 2026 | [PIT Law art. 53a(1) and (2)][law] |
 
-## Rates and category boundaries
+Checks: a monthly salary of EUR 1,200 bears PIT of 300 × 9% + 200 × 15% = EUR 57.00. Annual principal-business profit of EUR 8,400 bears no tax; EUR 12,000 bears EUR 324.00. The salary bands are monthly; the business bands are annual. Never apply one to the other.
 
-| Income class | Ordinary PIT treatment | Source |
-| --- | --- | --- |
-| Employment personal earnings | Monthly marginal 0% through EUR 700, 9% next EUR 300, 15% above EUR 1,000; use payroll Guide | Articles 10(1)(1), 14–15, 46 |
-| Principal independent activity | Annual marginal 0% through EUR 8,400, 9% next EUR 3,600, 15% above EUR 12,000 on established taxable profit | Articles 10(1)(2), 16–17 |
-| Supplementary entrepreneurship | 15% on established taxable profit; not the principal-business zero band | Articles 10(1)(3), 12(2)(2), 16–17 |
-| Occasional independent work | 15% on relevant taxable income; undocumented expenses have statutory 30% standard allowance | Articles 10(1)(3), 16(5), 20(2), 48a |
-| Property rental | 15% on qualifying net income; actual documented costs or relevant standard-expense provision | Articles 34–36, 49a |
-| Capital income | 15% on gross, no ordinary expense deduction, subject to specific exclusions | Articles 10(1)(3), 37, 50 |
-| Capital gains | 15% on established gain after applicable same-period capital losses/exemptions | Articles 37a–37h, 50a |
-| Sport, royalties/cultural activity, other receipts, residual internet/video-game income | Ordinary 15% on each category's statutory base; these bases differ | Articles 37i–37r, 50b–50e |
-| Gambling covered by 70/26 | 12% under amended Article 10(1)(4) from 21 May 2026; earlier-period law and winning-event base need separate reconciliation | 70/26 Articles 1–3; law Article 37s |
+## The taxable base
 
-Sources: [PIT law][law]; [May amendment][may]. Do not confuse video-game competition income with gambling or assume every online receipt belongs in the residual internet category. Employment/business/royalty classification takes precedence where applicable under Article 37o. Whole-euro examples use the continuous marginal formula and cents rounding; printed statutory cent boundary expressions and actual electronic rounding remain authority-validation matters.
+### How the base is built
 
-Article 5 excludes specified receipts and Article 5a exempts specified amounts subject to their conditions; Article 6 addresses specified persons. An inherited asset's initial exclusion does not determine its later disposal gain. Article 10a's separate 80% unexplained-income regime is not an ordinary rate for a classified receipt. Do not treat an unidentified bank credit as an exempt gift or as automatically taxable business revenue. [Articles 5–6, 10a, 37d][law]
+Taxable income is total income less recognised expenses, which must be documented unless the law says otherwise (art. 13). A resident's base is the taxable income of the period less a carried-forward loss; a nonresident's base has no loss deduction (art. 8). Each income class has its own base, rate and payment route, so keep a separate schedule per class.
 
-## Principal and supplementary business base
+### Exclusions and exempt amounts
 
-Start from accounts profit under Articles 17–20 and reconcile the tax adjustments. Preserve revenue, allowable expense, private/undocumented expenditure, inventory, accounting/tax depreciation, capped expenses, interest, business losses, relief and credit schedules. The business-base exclusion for dividends/profit shares in Article 19 is not a general exemption for an individual's private capital-income receipts under Article 37. [Articles 16–31, 37][law]
+- **Not income** (art. 5): disability rights payments, child allowance, basic social-protection rights, aid for natural disasters, health-insurance benefits other than salary compensation, inheritances and gifts, organised humanitarian aid, state awards, pensions (except pensions of state and public officials), prize games, insurance of property and life, and receipts of religious officials (point 12, added by [160/25 art. 1][amend]).
+- **Exempt up to set amounts** (art. 5a): for example, death solidarity aid up to EUR 2,000 (raised from 1,500 by [160/25 art. 2][amend]), illness aid up to EUR 1,000, retirement severance up to EUR 1,500, field allowance and separated-living allowance up to EUR 100 a month, student grants up to EUR 300 a month, newborn payment to an employee up to EUR 1,000, amateur athletes' food allowance up to EUR 600 a month, and jubilee awards of EUR 150 to 450.
+- An inherited or gifted property's exclusion at receipt does not make its later sale tax free: the acquisition cost is then the donor's or deceased's cost (art. 37d(3)).
+- An unidentified bank credit is neither an exempt gift nor automatically business revenue. If the tax authority finds undeclared income from the rise in net assets, art. 10a taxes it at 80%.
 
-Article 21 disallows listed nonbusiness/undocumented costs, late tax/contribution interest, excessive nonresident interest, specified nonresident-head-office payments, distributions, fines/penalties and political contributions. Inventory/materials use weighted average or FIFO as specified. A payment or asset purchase is not automatically a current expense. [Articles 21–22][law]
+### Principal independent activity and supplementary entrepreneurship
 
-For PIT depreciable assets the Article 23 value threshold is **over EUR 200**, with life over one year. Do not copy the corporate-tax EUR 300 threshold. Statutory groups I–V carry 2.5/10/15/20/30%; group I individual straight-line, other groups declining-group treatment. Intangible/operating-lease right-of-use accounting amortisation has express provisions. Full current PIT implementing classification, acquisitions/disposals and pool timing remain to be reconciled; the first example assumes an independently established tax-depreciation adjustment. [Article 23][law]
+- **Who.** A principal independent activity is a registered business, a liberal profession (health workers, vets, farmers, lawyers, notaries, auditors, engineers, architects, advisers, consultants, translators, journalists and similar) or professional and intellectual services that are the taxpayer's main activity (art. 16(2) and (3)). Supplementary entrepreneurship is business carried on by an entrepreneur as a supplementary activity under the company law (art. 16(4), added by [160/25 art. 5][amend]). Supplementary entrepreneurship is taxed at a flat 15%: it does not get the 0% and 9% bands.
+- **Base.** Taxable profit is the income-statement profit adjusted under the PIT Law (art. 17). Income and expenses follow the income statement under the accounting law unless the PIT Law says otherwise (arts. 18 and 20(1)). Dividends and profit shares from other legal persons are left out of the business base (art. 19); this does not exempt an individual's private dividends, which are capital income under art. 37.
+- **Not deductible** (art. 21): costs not incurred for the business, costs that cannot be documented, interest for late payment of tax and contributions, interest paid to nonresidents above the usual commercial rate, payments to a nonresident head office, profit distributions to employees or others, fines and penalties, and contributions to political organisations. Income tax and owner drawings are not expenses either.
+- **Inventory.** Materials and goods sold use weighted average cost or FIFO (art. 22).
+- **Depreciation.** Tax depreciation replaces book depreciation on fixed assets over EUR 200 with a life over one year, at the group rates in the table (art. 23). Right-of-use assets under operating leases and intangible assets are depreciated as booked under the accounting rules (art. 23(6) and (7)). Do not use the corporate-tax EUR 300 threshold.
+- **Capped expenses.** Qualifying-purpose spending up to 3% of total income, and only if paid to bodies carrying on those activities and used only for those purposes (art. 24). Representation up to 1%, if business-related, documented and not paid to a related person (art. 25). Memberships up to 0.1%, except a membership fixed by law (art. 26). Do not use the corporate 3.5% cap.
+- **Bad debts.** Deductible only if the debt was earlier included in income, is written off in the books and failed collection is proved; a later recovery goes back into income (art. 27). Reserve funds are not deductible (art. 28).
+- **Related-party interest.** Deductible up to the open-market interest cost and no more than actually paid (art. 30). The difference between arm's length interest and interest actually received is added to the lender's base (art. 31).
+- **Losses.** Business losses carry forward for no more than five years (art. 33). Keep a register by year of origin and use. A business loss is not set against rent, capital income or capital gains, and a capital loss is not carried forward under art. 33.
+- **Mixed-use costs.** Home office, car, phone and internet costs are deductible only for the business part, since private costs are excluded (art. 21(1)) and costs must be documented (arts. 13(2) and 21(2)). The law sets no fixed home-office or car percentage: ask for floor-area or mileage evidence and deduct nothing until it is produced.
+- **VAT-registered taxpayers.** Output VAT is not income and recoverable input VAT is not an expense, because the base follows the income statement (arts. 18 and 20).
 
-Qualifying purpose expenditure under Article 24 is capped at **3% of total income**, with eligible recipient/exclusive-purpose conditions; do not import the corporate 3.5% cap. Representation is capped at 1%, business-related/documented and non-related recipient; memberships ordinarily 0.1%, with a separate legally fixed amount exception. Bad-debt write-offs require prior income inclusion, book write-off and failed-collection evidence; recoveries return to income. Reserves are disallowed. Related interest has market/actually-paid and foregone-interest adjustment rules. [Articles 24–31][law]
+Principal annual business PIT on taxable base B: `0.09 × max(min(B, 12000) − 8400, 0) + 0.15 × max(B − 12000, 0)`.
 
-Business losses may be carried against future profit for no more than five years under Article 33. Keep year, origin, prior use and available balance; do not turn a business loss into a deduction from every rental/capital category or carry a capital loss under that rule. The interaction of mixed businesses/status changes with actual forms remains open. [Articles 8, 33, 37h][law]
+### Occasional independent work
 
-Principal annual business PIT for nonnegative established base B:
+Occasional work outside the taxpayer's main activity, or a work contract (ugovor o djelu) to make or repair something or perform a physical or intellectual task, if not taxed under another heading (art. 16(5)). If costs are not documented, standard expenses are 30% of receipts (art. 20(2)), so the base is 70% of the gross receipt and tax is 15% of that. A legal-person or entrepreneur payer withholds the tax at each payment; income received directly is taxed with the annual return (art. 48a).
 
-`0.09 × max(min(B, 12000) − 8400, 0) + 0.15 × max(B − 12000, 0)`.
+### Classifying bank-statement lines
 
-Supplementary business instead follows 15% on its established base. Employment alongside a supplementary business does not create another principal-business allowance. Occasional independent work is a distinct Article 16(5) route; where undocumented costs qualify under Article 20(2), taxable base is 70% of the gross receipt and PIT is 15% of that base. A legal-person/entrepreneur payer withholds at payment under Article 48a; directly received income follows annual filing. Actual registration, substance and payer evidence determine the route. [Articles 10, 12, 16–20, 48a][law]
+| Line on the statement | Class | Rule |
+|---|---|---|
+| Client payments, fees, platform payouts (Stripe, PayPal, Wise, Upwork) into a registered business | Principal or supplementary business income | Arts. 16 to 18 |
+| ZARADA, PLATA, salary from an employer | Personal earnings, monthly bands | Arts. 10(1)(1), 14 and 15 |
+| ZAKUP, KIRIJA, rent received | Property income, 15% after expenses | Arts. 34 to 36 |
+| KAMATA, interest received | Capital income, 15% of gross (interest on Montenegrin government, central bank or municipal debt securities is not capital income) | Art. 37(1)(1) and (5) |
+| DIVIDENDA, dividend | Capital income, 15% of gross | Art. 37(1)(4) |
+| POVRAĆAJ POREZA, tax refund | Not income | Art. 42(6) |
+| Own-account transfers, loan principal, VAT payments | Neither income nor expense | Arts. 13 and 18 |
+| POREZ, PRIREZ, income tax paid; drawings | Not deductible | Art. 21 |
+| KAZNA, fines and penalties | Not deductible | Art. 21(7) |
+| Laptop, furniture, car over EUR 200 | Fixed asset, depreciate | Art. 23 |
+| DOPRINOSI, PIO, contributions | Track separately in the contribution workpaper | Contributions Law |
 
-## Property, capital and disposal schedules
+### Property income
 
-Rental expenses are documented actual costs or, if not documented, the Article 35 standard allowance of 30%. Qualifying tourist accommodation has distinct 50% and 70% standard-expense conditions: paid tourist tax for the former; the specified agency/local-tourism lease and at least 60 occupied days annually for the latter. Establish the exact route/evidence, rather than electing the largest percentage by label. A legal-person/entrepreneur payer withholds on payment under Article 49a; direct receipts follow annual filing. Tourist accommodation licence holders have Article 43(5)'s return duty even without income. VAT, tourist tax and property taxes remain separate. [Articles 34–36, 43(5), 49a][law]
+Rent from movable and immovable property (art. 34). Expenses are documented actual costs or, if not documented, 30% of rent (art. 35(1) and (2)). For rooms, apartments, houses and flats let to tourists, standard expenses are 50% if tourist tax was paid, or 70% under a lease with a travel agency or local tourist organisation giving average occupancy of at least 60 days a year (art. 35(3)). The route depends on the evidence, not on the larger percentage. Taxable income is rent less expenses in the same period (art. 36). A legal-person or entrepreneur tenant withholds 15% at each payment; rent received directly is taxed with the annual return (art. 49a). A licensed holiday-letting provider files a return even with no income in the year (art. 43(5)). Tourist tax, property tax and VAT are separate.
 
-Capital income under Article 37 includes interest, dividends/profit shares, certain owner private use, specified liquidation excess and preferential shares. No ordinary expense deduction is allowed, and there is a specified public-debt-interest exclusion. Keep corporate/private extraction and employment/owner-share treatment separate; do not tax every asset sale as a gross dividend. Payer withholding under Article 50 is a separate payment obligation. [Articles 37, 50][law]
+### Capital income
 
-For taxable property disposal, reconcile contract sale price, qualifying documented reconstruction/sale costs, authority market-value adjustment, acquisition/inherited/self-built cost and statutory annual cost indexation. Article 37d's fallback of 80% of sale price applies only where acquisition cost cannot be determined under the preceding routes. It is not an elective cost allowance. No live indexation series or valuation is certified here. [Articles 37a–37d][law]
+Interest; the owner's private use of company assets and services; liquidation surplus above invested capital; dividends and profit shares in cash, shares or stakes; and shares that board members and employees receive or buy on preferential terms (art. 37(1) and (2), as amended by [160/25 art. 8][amend], which deleted point 2). No costs are deductible; the base is the gross amount (art. 37(3) and (4)). Interest on debt securities issued by the state, the Central Bank of Montenegro or a municipality is not capital income (art. 37(5)). The payer withholds 15% at payment (art. 50).
 
-Company-interest gains use the specific contract/founding-contribution bases and market-value safeguard in Article 37e. Securities use the documented/nominal-value and FIFO rules in Article 37f. Article 37g has specific home exemption requiring the property to have served as the taxpayer’s **only and main residence**, and separate family/partner transfer exemptions; proof is required. Article 37h allows capital losses against capital gains in the same tax period; no five-year capital carryforward is inferred. Article 43(6a) has a books/tax-balance reporting route for recorded gains, so business and private schedules must not report the same disposal twice. [Articles 37e–37h, 43(6a), 50a][law]
+### Capital gains
 
-## Sport, intellectual property, internet and other receipts
+- **What.** Gains on the sale or transfer of real estate (land, buildings, flats, business units and other structures), stakes in legal persons and shares and other equity securities. A negative difference is a capital loss (art. 37a).
+- **Real estate.** Sale price is the contract price less documented reconstruction and sale costs; the tax authority sets the price if the contract price is below market, and an exchange uses market price (art. 37c). Acquisition cost is the price paid or the price the authority set on acquisition under the real-estate transfer tax law, or construction cost for a self-built property; for a gift or inheritance, the donor's or deceased's cost. It is indexed each year by retail price growth from acquisition to sale, using official statistics. Only if no cost can be established is acquisition cost 80% of the sale price (art. 37d).
+- **Company stakes.** Sale and purchase values are those in the contract; the authority sets the sale value if below market; a stake acquired on founding costs the founding contribution plus increases (art. 37e).
+- **Shares.** Listed shares cost the documented price paid; unlisted shares the documented price, or nominal value if no price is documented. Repeated purchases of the same issuer use FIFO. Bonus shares paid as a dividend cost the value at which they were acquired (art. 37f).
+- **Exempt** (art. 37g): a property that was the taxpayer's only and main residence (domicile); transfers between spouses or life partners linked to marriage, partnership, divorce, its end or inheritance; gifts to first-order heirs.
+- **Losses.** A capital loss is set only against capital gains of the same tax period (art. 37h).
+- **Tax.** 15%, computed annually and paid with the annual return (art. 50a). A gain recorded in business books goes in the tax balance, not a separate return (art. 43(6a)); never report it twice.
 
-Sport income excludes employment salary. Article 37j permits documented actual expenses, or standard expenses of 30% generally and 90% for the qualifying amateur-sport population. Royalties/cultural receipts have Article 37lj's documented-expense route or standard expenses of 60% for specified fine-art rights, 50% for architecture/planning/landscape rights and 30% for the specified remaining categories. A contract's actual rights and recipient status determine the category. [Articles 37i–37m][law]
+### Sport, copyright, other receipts, internet and gaming
 
-Article 37n's other receipts use gross income, with its enumerated populations and exclusions from overlapping categories. Residual internet income has a 15% statutory expense deduction; qualifying video-game competition income has actual documented costs or, if undocumented, 20%. These are expense percentages; the ordinary PIT rate is 15%. Do not subtract both actual and standard expenses or use a residual internet allowance on employment/business income already classified elsewhere. [Articles 37n–37r, 50b–50e][law]
+- **Sport** (arts. 37i to 37k): income of professional and amateur athletes, coaches and sports professionals, transfers and fees, that is not salary. Documented costs, or standard 30%; amateur athletes 90%.
+- **Copyright, related rights, patents, trademarks, cultural professionals** (arts. 37l to 37m): documented costs, or standard 60% for fine art, 50% for architecture, urban and landscape planning, 30% for performers' rights and 30% for everything else.
+- **Other receipts** (art. 37n): awards and payments to people not employed by the payer, officials' pensions under the officials' salary law (point 1a, added by [160/25 art. 9][amend]), receipts above art. 5a limits, pay of board and assembly members not employed by the payer, bankruptcy trustees and lay judges, severance on agreed termination, sales-agency income and all other untaxed income. Taxed on gross (art. 37n(3)).
+- **Internet and video games** (arts. 37o to 37r): income from an activity carried on through the internet, if not taxed under another heading, with a fixed 15% expense; income from video-game competitions and other gaming that is not salary, with documented costs or 20% standard. These percentages are expenses; the tax rate is 15%. Do not use both actual and standard costs, and do not move salary or business income into the internet heading.
 
-## Foreign income, credits and relief
+### Gambling winnings
 
-For an established resident, Article 44 allows a credit for qualifying foreign income tax paid, capped at the Montenegro tax on that foreign income. Retain source/category/year, gross and base, payment proof, treaty entitlement, currency method and credit calculation. Do not credit social contributions, refundable/excess treaty withholding or unproved tax automatically. The actual treaty/protocol/MLI and current certificate procedure require their own reading; no bilateral rate or general unused-credit carryforward is certified here. Avoid claiming the same payment both as a foreign credit and as a domestic advance. [Articles 44–45][law]
+Taxable winnings are each individual winning from lottery games, betting and global jackpots, less the stake for that winning (art. 37s, as replaced by [160/25 art. 10][amend]). Prize games are not income (art. 5(10)). Rates: progressive bands for winnings paid to 20 May 2026; 12% for winnings paid from 21 May 2026 ([70/26][may]). The game organiser withholds at each payment or transfer (art. 50f).
 
-The payroll Guide routes foreign salary's five-day self-payment and annual/multiple-employer obligations. Principal/supplementary business, rental and capital income need their own rate/base before computing the foreign cap; a flat 15% cannot be substituted for the progressive principal-business cap. [Articles 10, 43–46][law]
+### Reliefs
 
-Articles 32–32b contain underdeveloped-area business/employment incentives with registration, sector, application, aid and employment/recapture gates; Article 32c has the historical 2021–2023 scheme. Article 32d addresses research/innovation and acquired digital-nomad status under their separate laws. Do not claim relief from low turnover, remote work or a code appearing on an old form. Full current implementing eligibility/aid/status work is not completed and no incentive is applied in the examples. [Articles 32–32d][law]
+- **Underdeveloped municipalities** (arts. 32 and 32a): a taxpayer who starts an activity there pays no tax for the first eight years from registration, capped at EUR 200,000 in total including other state aid. Not available to someone who closed the same or a similar activity in the previous three years, to recipients of aid for firms in difficulty, or in transport, shipbuilding, steel, trade and hospitality (except primary hospitality establishments). Apply within 30 days of registration; the authority decides; a statement of other state aid goes with each annual return.
+- **New hires there** (art. 32b): a permanent or at least five-year hire of a person registered with the Employment Agency for over three months and living in an underdeveloped municipality frees the salary tax for four years, if headcount rises above the 12-month average. If the employer ends the contract within five years (other than at the employee's request or for serious breach), the tax is repaid within 30 days.
+- **Expired** (art. 32c): the 2021 to 2023 new-hire relief.
+- **Research and innovation; digital nomads** (art. 32d): exemption for beneficiaries of research and innovation incentives, and for income from a foreign employer earned under digital-nomad status, each under its own law.
+
+### What sits on top of PIT
+
+- **Municipal surtax (prirez).** A municipality may levy a surtax on the PIT on salary, independent activity, property and property rights, and capital income, at up to 13% of the tax, or up to 15% in the Capital City and the Old Royal Capital (Local Self-Government Financing Law art. 8). The actual rate is the municipality's own decision (art. 9). It is a tax on the tax, never added to the income rate: at a 13% surtax the top business rate becomes 15% × 1.13 = 16.95%; at 15% it is 17.25%. The law lists only these four bases; capital gains and gambling winnings are not among them.
+- **Social contributions.** Employees pay 10% PIO and 0.5% unemployment; the employer pays 0% PIO and 0.5% unemployment (Contributions Law arts. 15 and 18). The health contribution provisions are deleted (art. 17). The annual PIO ceiling is set each year by Ministry of Finance act (art. 14(3) and (4)). Older secondary guides still show 15% employee pension and 8.5% health; those rates are out of date. Details, bases and the self-employed rules are in the [social contributions skill](montenegro-social-contributions.md).
+- **VAT.** Standard rate 21% (VAT Law art. 24); a business whose turnover in the last 12 months exceeds EUR 30,000 must apply for registration by the 20th of the following month (arts. 42 and 55). A VAT-registered taxpayer cannot pay lump-sum PIT (PIT Law art. 49(12)). See the [VAT skill](montenegro-vat.md).
+
+## Deadlines and filing
+
+- **Annual return.** Form GPP-FL with schedules A, PPG, A1, B, B1, C, D, D1, E, E1, F, G and H ([return rulebook art. 3][return]), filed by the end of April for the previous year (PIT Law art. 43(2)). Tax is self-assessed and paid when the return is filed; advances and withholding on all sources are credited (art. 42(2), (4) and (5)). An overpayment is refunded on request or credited to the next year's advances (art. 42(6)).
+- **Who files** (art. 43(4) to (6)): residents with a principal independent activity (unless on lump-sum tax), supplementary entrepreneurship, or occasional work not taxed by withholding; rent, unless the payer is a legal person or entrepreneur; capital gains; foreign income; salary from two or more payers with total monthly gross above EUR 700; sport; copyright and related income; internet and gaming income. A licensed holiday-letting provider files even with no income. A nonresident files for Montenegrin income on which no withholding is prescribed.
+- **Where and how.** A resident files with the tax office of his or her domicile, a nonresident with that of his or her stay, in person, by post or electronically; the taxpayer or an authorised person signs ([return rulebook arts. 4 and 5][return]; PIT Law art. 43(7)).
+- **Cessation.** A taxpayer who stops an independent activity files within 30 days of deletion from the register (art. 43(2a)).
+- **Late or missing return.** The tax authority files a return on the taxpayer's behalf ex officio (art. 43(6b)).
+- **Two or more employers.** The authority assesses the tax by decision within 30 days of the return, from the return and its own records (art. 43a).
+- **Business advances.** Principal and supplementary business tax is paid in monthly advances of 1/12 of the previous year's tax, by the end of each month for the previous month (art. 48(1) and (2)). A new business files an information return with its estimated income within 15 days of registration (art. 48(4)).
+- **Lump-sum tax** (art. 49): available on request to a principal independent activity with turnover below EUR 30,000.01. Apply by the end of January, or within five days of registration for a new activity; the authority decides within 15 days. Tax is paid monthly at 1/12 by the end of the month for the previous month; seasonal activities of up to six months pay by the 5th of the month for the current month. Turnover books must be kept. Not available for lawyers, notaries, auditors, accountants, health, consulting, design, surveying, enforcement officers and other professional and intellectual activities, hairdressing, billiards and amusement games, wholesale and retail trade, hospitality, hotels, financial intermediation, real estate, or VAT-registered taxpayers; trade or hospitality in a kiosk, trailer or mobile unit may qualify where the taxpayer produces and sells only its own products (art. 49(10) and (11)). The scale is set by Ministry rulebook (art. 49(2)).
+- **Withholding by the payer, at payment:** salary (art. 46), occasional work (art. 48a), rent paid by a legal person or entrepreneur (art. 49a), capital income (art. 50), sport and copyright income earned in Montenegro (arts. 50b(1) and 50c(1)), other receipts (art. 50d). Gambling: the organiser withholds at payment and pays by the 15th of the following month (art. 50f).
+- **Paid with the annual return:** capital gains (art. 50a), internet and gaming income (art. 50e), sport and copyright income earned abroad (arts. 50b(2) and 50c(2)), and occasional work or rent received directly (arts. 48a(2) and 49a(2)).
+- **Self-assessed within five days:** salary from abroad, and salary from a foreign diplomatic mission or international organisation (art. 46(6) and (7)).
+- **Employer reports.** Monthly report of taxes and contributions by the 15th of the month for the previous month (art. 47(3)); annual statement of salary and tax to each employee by 31 January (art. 47(1)); other payers give recipients a statement by 31 January (art. 47(5)).
+- **Records.** Keep identity and residence evidence, income records, accounts and loss registers, asset, valuation and indexation evidence, relief decisions, foreign tax and treaty evidence, payer statements, advance payments, the signed return and payment records.
+
+## Penalties and interest
+
+- **Individual:** EUR 500 to 2,000 for not filing the return by the end of April (or within 30 days of cessation), wrong computation or not paying with the return; for a resident with foreign or diplomatic-mission salary not paying within five days; and for rent withholding failures (art. 53v).
+- **Entrepreneur:** EUR 1,000 to 6,000 for not filing or paying the annual return, not paying advances on time, not filing the information return within 15 days of registration, not paying lump-sum tax on time, or not keeping turnover books; a ban on the activity of one to three months may be added (art. 53a(3) and (4)). For an individual, not keeping turnover books brings a EUR 200 misdemeanour order (art. 53b).
+- **Legal-person payer:** EUR 2,000 to 20,000 for failing to compute, withhold or pay tax on salary, rent, capital, sport, copyright, other receipts or gambling winnings, or to give salary data or the monthly report; the responsible person EUR 500 to 1,000 (art. 53a(1) and (2)).
+- **Interest, appeals, enforcement.** The PIT Law refers these to the tax procedure law (art. 53). Late-payment interest runs from the day after the due date: 0.03% a day until 17 July 2026, then 5.4% a year for 18 July to 31 December 2026 (ECB main refinancing rate plus 3 points, set each half-year) (Tax Administration Law art. 95, as amended by 104/26 arts. 20 and 26; Tax Administration decision of 24 July 2026).
+- A fine follows a specific offence; an arithmetic difference is not by itself a penalty.
+
+## Cross-border points
+
+- **Nonresidents** are taxed only on Montenegrin income (art. 4(2)), with no loss carry-forward (art. 8). They file only for Montenegrin income on which no withholding is prescribed (art. 43(6)).
+- **Foreign tax credit.** A resident who pays income tax abroad gets a credit for it, capped at the Montenegrin tax on that income (art. 44). Compute the cap with the right class rate and base: a principal business uses the progressive bands, not a flat 15%. Do not credit social contributions, refundable treaty excess or unproved tax. The law gives no carry-forward of unused credit.
+- **Treaties** prevail over the PIT Law (art. 45(1)). The Ministry sets the form and procedure for residence certificates (art. 45(2)).
+- **Foreign salary** is self-assessed and paid within five days of receipt (art. 46(7)); a nonresident organisation with a seat or permanent unit in Montenegro withholds like a local employer (art. 46(5)).
+- **Foreign sport and copyright income** is taxed annually with the return (arts. 50b(2) and 50c(2)).
+- **Posted workers.** An individual sent abroad by a Montenegrin resident or for an international organisation remains resident (art. 3(2)).
+- **Digital nomads.** Income from a foreign employer earned under digital-nomad status is exempt under art. 32d.
+- **Payments to nonresidents in a business.** Interest above the usual commercial rate and payments to a nonresident head office are not deductible (art. 21(4) and (5)).
 
 ## Worked examples
 
-Hypothetical 2026 EUR workpapers, established category/residence and evidence as stated, no local surtax/social contributions/VAT/incentive unless specifically included. These are category calculations, not completed GPP-FL boxes or accepted filings.
+All figures are EUR for 2026. Facts are as stated; there is no surtax, social contribution, VAT or relief unless stated.
 
-### 1. Principal business accounts-to-tax and annual settlement
+### 1. Principal business: accounts to tax, and the annual balance
 
-Total revenue 80,000; accounting profit 25,000 already includes all stated expenses. Add private expenditure 1,200 and established accounting-over-tax depreciation 800. Qualifying-purpose spend 3,000 exceeds the 3% cap by 600; representation 1,000 exceeds 1% by 200; ordinary memberships 120 exceed 0.1% by 40. Established unexpired unused business loss is 3,000; paid PIT advances 1,800. No capital/foreign income or other adjustments. [Articles 17–33, 42, 48][law]
+Total revenue 80,000; accounting profit 25,000 after all booked costs. Add back private costs 1,200 and book depreciation above tax depreciation 800. Qualifying-purpose spending 3,000 exceeds the 3% cap (2,400) by 600; representation 1,000 exceeds 1% (800) by 200; memberships 120 exceed 0.1% (80) by 40. Adjusted profit is 27,840. An unused business loss of 3,000 within its five years brings the base to 24,840. PIT is 3,600 × 9% = 324 plus 12,840 × 15% = 1,926, total 2,250. Advances paid 1,800, so 450 is due with the return. [Arts. 17 to 33, 42 and 48][law]
 
 ```oa-check
 name: Montenegro principal business annual profit and settlement
@@ -137,9 +232,9 @@ expected:
   settlement_due: 450
 ```
 
-### 2. Principal versus supplementary business status
+### 2. Principal versus supplementary business
 
-Identical independently established taxable profit 10,000, with no credit/relief. Principal business PIT 144; supplementary business PIT 1,500. These are alternative legal classifications, not a taxpayer's free election between rates. [Articles 10, 12, 16–17][law]
+The same taxable profit of 10,000. As a principal activity, PIT is 1,600 × 9% = 144. As supplementary entrepreneurship, PIT is 15% = 1,500. The class follows the facts and registration; it is not an election. [Arts. 10, 12 and 16][law]
 
 ```oa-check
 name: Montenegro principal versus supplementary income rates
@@ -153,9 +248,9 @@ expected:
   supplementary_pit: 1500
 ```
 
-### 3. Occasional independent receipt with withholding
+### 3. Occasional work paid by a company
 
-Qualifying occasional independent service gross 2,000, no documented expenses, corporate payer. Standard expenses 600, taxable base 1,400, PIT withheld 210. Gross less PIT 1,790 is **before** any separately applicable PIO or other deduction, not a certified net payment. [Articles 16(5), 20(2), 48a][law]
+Gross fee 2,000, no documented costs, paid by a company. Standard expenses 600, base 1,400, PIT withheld 210. The 1,790 left is before any contribution due on the fee. [Arts. 16(5), 20(2) and 48a][law]
 
 ```oa-check
 name: Montenegro occasional independent work withholding
@@ -173,9 +268,9 @@ expected:
   receipt_after_pit_only: 1790
 ```
 
-### 4. Rental standard-expense scenarios
+### 4. Rent with standard expenses
 
-Gross rent 20,000, no documented actual costs. Ordinary 30% route and separately qualifying tourist 50%/70% routes shown as alternative established facts. The 70% case assumes the required agency/local-tourism agreement and at least 60 occupied days; the 50% case assumes tourist tax paid. All other licence/local/VAT and filing obligations are separate. [Articles 35–36, 49a][law]
+Gross rent 20,000, no documented costs. Ordinary letting: base 14,000, PIT 2,100. Tourist letting with tourist tax paid: base 10,000, PIT 1,500. Tourist letting under an agency or local tourist organisation lease with at least 60 days' average occupancy: base 6,000, PIT 900. These are three different sets of facts. [Arts. 35, 36 and 49a][law]
 
 ```oa-check
 name: Montenegro rental standard expense alternatives
@@ -197,9 +292,9 @@ expected:
   qualifying_70_pit: 900
 ```
 
-### 5. Taxable property gain and same-period capital loss
+### 5. Property gain with a same-year capital loss
 
-Nonexempt property sale 150,000, permitted documented reconstruction 7,000 and sale costs 3,000, no authority market-price adjustment. Acquisition cost after independently established statutory indexation is 110,000. A separate allowable same-period capital loss of 5,000 is available. No business-book double reporting or exempt main-home/family transfer. Indexation/valuation and actual expense eligibility remain assumptions. [Articles 37a–37d, 37g–37h, 50a][law]
+Sale of a property that was not the only and main residence for 150,000, with documented reconstruction 7,000 and sale costs 3,000; the price is not below market. Indexed acquisition cost is 110,000. Adjusted sale price 140,000, gain 30,000. A capital loss of 5,000 on shares sold in the same year reduces the taxable gain to 25,000; PIT 3,750, paid with the return. [Arts. 37a to 37d, 37g, 37h and 50a][law]
 
 ```oa-check
 name: Montenegro property gain and current capital loss
@@ -221,9 +316,9 @@ expected:
   pit: 3750
 ```
 
-### 6. Securities FIFO acquisition lots
+### 6. Shares under FIFO
 
-Same issuer: buy 100 units at 10, then 100 at 15; sell 150 at 20. Documented prices, no other cost, exemption, market adjustment or losses. FIFO basis 1,750, gain 1,250, PIT 187.50. Remaining lot is 50 at 15. [Articles 37a, 37f, 50a][law]
+Buy 100 shares at 10, then 100 at 15, of the same issuer; sell 150 at 20. FIFO cost is 100 × 10 + 50 × 15 = 1,750; gain 1,250; PIT 187.50. Fifty shares at 15 remain. [Arts. 37a, 37f and 50a][law]
 
 ```oa-check
 name: Montenegro securities FIFO gain
@@ -252,9 +347,9 @@ expected:
   remaining_second_units: 50
 ```
 
-### 7. Residual internet income versus video-game competition
+### 7. Internet income versus video-game income
 
-Separate qualifying receipts 10,000 each, neither salary nor already taxed under another category. Internet expense allowance 15%; video-game costs undocumented, standard 20%. These are different actual classifications. [Articles 37o–37r, 50e][law]
+Two receipts of 10,000 each, neither salary nor taxed under another heading. Internet income: 15% expenses, base 8,500, PIT 1,275. Video-game competition income with no documented costs: 20% standard, base 8,000, PIT 1,200. [Arts. 37o to 37r and 50e][law]
 
 ```oa-check
 name: Montenegro residual internet and video game bases
@@ -273,9 +368,9 @@ expected:
   game_pit: 1200
 ```
 
-### 8. Capped foreign tax on private dividend income
+### 8. Foreign dividend with a capped credit
 
-Established resident, foreign gross dividend 10,000; qualifying foreign income tax actually paid 2,000, with treaty/refund/credit eligibility independently cleared. Montenegro tax 1,500, credit capped at 1,500, residual PIT zero. The excess 500 is not claimed as an automatic carryforward, refund or offset against another category. No local prirez, domestic advance or other credit is included. [Articles 37, 44–45][law]
+A resident receives a foreign dividend of 10,000 gross and proves 2,000 of foreign income tax paid. Montenegrin tax is 1,500, so the credit is capped at 1,500 and nothing is left to pay. The 500 excess is not carried forward, refunded or set against other income. [Arts. 37, 44 and 45][law]
 
 ```oa-check
 name: Montenegro private foreign dividend credit cap
@@ -294,9 +389,9 @@ expected:
   excess_not_claimed: 500
 ```
 
-### 9. Fine-art royalty and qualifying amateur-sport expenses
+### 9. Fine-art royalty and amateur sport
 
-Separate qualifying receipts: fine-art rights 5,000 with no documented expenses and amateur-sport nonemployment receipt 5,000 with no documented expenses. Standard deductions 60% and 90%, PIT 300 and 75. Neither receipt is employment or another intellectual-property/sport category. Contributions and payer/annual withholding credits remain separate. [Articles 37i–37m, 50b–50c][law]
+Fine-art rights 5,000 with no documented costs: 60% standard, base 2,000, PIT 300. Amateur sport income 5,000 (not salary) with no documented costs: 90% standard, base 500, PIT 75. [Arts. 37i to 37m, 50b and 50c][law]
 
 ```oa-check
 name: Montenegro fine art royalty and amateur sport
@@ -315,51 +410,77 @@ expected:
   sport_pit: 75
 ```
 
-## Annual return, advances and withholding workflow
+### 10. Sole proprietor with municipal surtax
 
-Establish liability category by category before assembling GPP-FL. Keep separate taxable bases, losses, exemptions, gross tax, qualifying foreign credits, paid domestic advances/withholding and settlement. Do not put all gross receipts into the principal-business scale, apply one 15% rate to principal-business profit, or subtract a paid tax twice. Article 42 addresses annual calculation, payment with filing and excess advances by request/refund or next-period credit. Exact current form integration for mixed categories remains open. [Articles 10, 12, 42–45][law]
+Principal-business taxable profit 20,000; the municipality's surtax decision sets 13%. PIT is 324 + 8,000 × 15% = 1,524. Surtax is 13% of the PIT, 198.12. Total 1,722.12. Contributions are computed separately. [PIT Law art. 10(1)(2)][law]; [Local Self-Government Financing Law arts. 8 and 9][local]
 
-The ordinary annual deadline is the end of April for the previous year. Principal actual-income and supplementary business, occasional independent income not withheld, qualifying direct property income, capital gains, foreign income and other Article 43 categories must be assessed against the current legal filing population. Do not copy the older rule's broader rental wording over the law's current legal-person/entrepreneur payer exception. A licensed tourist accommodation provider files even without income. Nonresidents file Montenegro income for which withholding is not prescribed; recorded business-book capital gains have the specified tax-balance route. [Article 43][law]
+```oa-check
+name: Montenegro principal business PIT with municipal surtax
+inputs:
+  taxable_profit: 20000
+  surtax_rate: 0.13
+steps:
+  - pit: max(min(taxable_profit, 12000) - 8400, 0) * 0.09 + max(taxable_profit - 12000, 0) * 0.15
+  - surtax: round(pit * surtax_rate, 2)
+  - total: pit + surtax
+expected:
+  pit: 1524
+  surtax: 198.12
+  total: 1722.12
+```
 
-Cessation of independent activity has a separate period and return within 30 days of deregistration. Multiple-employer salary above the statutory monthly threshold follows taxpayer filing and Article 43a authority assessment; the payroll Guide contains the indicative reconciliation. An employer's statement is not the individual's annual return. [Articles 42(1a), 43(2a), 43a, 47][law]
+### 11. Gambling winning before and after 21 May 2026
 
-Principal/supplementary business advances are monthly, generally 1/12 of prior-year business tax, payable by the end of the current month for the preceding month. New activity uses an informative estimated-income declaration within 15 days of registration. Keep actual prior liability, start/stop periods, paid amounts and changes; no universal reduction for low current receipts is assumed. [Article 48][law]
+A betting winning of 1,500 after deducting the stake. Paid on 10 March 2026, the bands apply: 1,450 × 10% = 145. Paid on 10 June 2026, the flat rate applies: 1,500 × 12% = 180. The organiser withholds and pays by the 15th of the next month. [PIT Law arts. 10(1)(4), 37s and 50f][law]; [70/26 arts. 1 and 3][may]
 
-Lump-sum principal-business taxation needs an application/decision, permitted activity and turnover conditions; Article 49's stated threshold below EUR 30,000.01 is not a VAT threshold or automatic exemption. Listed professional/sector activities and VAT-registered taxpayers are excluded, with specific kiosk/mobile/own-production exceptions. Applications ordinarily by end January or within five days of a new registration; seasonal payment has its separate rule. Full current scale/application/decision is not reconstructed here, and no lump-sum election is assumed. [Article 49][law]
+```oa-check
+name: Montenegro gambling winning before and after the 70/26 change
+inputs:
+  winning: 1500
+steps:
+  - tax_before_21_may: max(min(winning, 1500) - 50, 0) * 0.10 + max(winning - 1500, 0) * 0.15
+  - tax_from_21_may: winning * 0.12
+expected:
+  tax_before_21_may: 145
+  tax_from_21_may: 180
+```
 
-Payer withholding and annual settlement are different: occasional independent work Article 48a, rent Article 49a, capital Article 50, sport/royalties Articles 50b–50c and other receipts Article 50d have their own payer/event rules. Capital gains and residual internet/video-game income follow annual payment under Articles 50a/50e. Domestic gambling uses the amended regime and specific winning/payment events, including its transition; no full gambling method is claimed. Foreign salary has the separate Article 46 five-day payment route and annual reporting. [Articles 46–50f][law]; [70/26][may]
+## Ask the client first
 
-## Actual form evidence and limits
-
-The Ministry's April 2026 annual-return rule reproduces amendments through 103/25. Article 3 names GPP-FL plus A, PPG, A1, B, B1, C, D, D1, E, E1, F, G and H, with instructions. Articles 4–5 cover filing location/method and signature. The actual two-page download **does not include those form attachments**; it ends with a form label/link. It therefore does not establish current boxes or an accepted 2026 submission. [Annual rule Articles 1–5][return]
-
-A different actual government GPP-FL attachment inspected here contains an obsolete flat 9% main calculation and fewer schedules. It is **not used** as current form mapping or current tax law. An online proposed 2025 replacement is likewise not substituted for the promulgated actual form. Supplementary-business schedule updates, full current instructions/attachments and IRMS field validation remain outstanding. No fictional numbered-box mapping is supplied. [Annual rule][return]; [obsolete attachment, comparison only][oldform]
-
-Retain identity/residence/source, all income records, accounts/loss registers, asset/valuation/indexation evidence, status/relief documents, foreign taxes/treaties, payer statements, paid advances, applicable schedules, signed final return/acknowledgement and payment/assessment ledgers. For corrections retain original, changes and accepted authority outcome; exact current correction, interest, appeal/stay and enforcement procedure still needs the applicable tax-procedure law under Article 53. [Articles 42–53][law]
-
-## Sanctions and remaining review
-
-Article 53a contains offence-specific payer/entrepreneur failures and ranges; Article 53v specifies individual return/payment/foreign-salary offences with EUR 500–2,000 range. Do not turn an arithmetic difference into an automatic penalty. Procedure, original due dates, assessments and remedy periods require current evidence. [Articles 53–53v][law]
-
-Remaining: actual current GPP-FL attachments, supplementary-business/new-activity forms and IRMS; full PIT depreciation and status/loss integration; specialist expense/receivable/incentive/lump-sum applications; current valuations/indexation and property/family exclusions; full gambling transition; treaties/residence certificates/credit allocation; local surtax, contribution and other levy interfaces; exact procedure/corrections/refunds; independent full-country review and named accountant attestation. All seven domains remain partial. Nine computations and file presence do not establish comprehensive coverage.
+1. Residence: domicile, centre of vital interests, days in Montenegro in 2026, and any posting abroad or digital-nomad status.
+2. Which income classes: salary (and from how many payers), registered business as main or supplementary activity, occasional contracts, rent (and whether to tourists, with a licence), interest and dividends, sales of property, stakes or shares, sport, royalties, internet or gaming income, gambling winnings.
+3. For a business: accounts, fixed-asset register, unused losses by year, advances paid, VAT registration, lump-sum decision, and any underdeveloped-municipality or other relief decision.
+4. Municipality of activity or residence, and its surtax decision.
+5. Who paid each receipt (legal person, entrepreneur or private individual) and what tax was withheld.
+6. Foreign income and foreign tax paid, with proof and the treaty country.
 
 ## Sources
 
-Read on **24 October 2026**. Actual law reading covers Articles 2–8, 10–37s, 42–50f, 53–53v and targeted historical provisions, with current 160/25/70/26 gates. The annual-rule PDF was retrieved/read and page 1 visually inspected; missing attachments and obsolete alternative form are recorded. No actual taxpayer facts, accepted filing, bilateral treaty clearance or accountant attestation obtained.
+| Source | URL | Read on |
+|---|---|---|
+| Personal Income Tax Law, consolidated through 160/25 (Ministry of Finance publication), arts. 1 to 10a, 12 to 37s, 42 to 53v, 62 | https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0 | 2026-10-30 |
+| Law amending the Personal Income Tax Law, Official Gazette 160/25, arts. 1 to 21 (application from 1 January 2026, art. 21) | https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0 | 2026-10-30 |
+| Law amending the Personal Income Tax Law, Official Gazette 70/26, arts. 1 to 3 (12% gambling rate) | https://www.sluzbenilist.me/propisi/394390/download | 2026-10-30 |
+| Official Gazette record for 70/26: published 20.05.2026, in force 21.05.2026 | https://www.sluzbenilist.me/propisi/394390 | 2026-10-30 |
+| Ministry of Finance, notice on taxation of gambling winnings, 5 January 2026 (bands from 1 January 2026) | https://www.gov.me/clanak/jasna-pravila-oporezivanja-dobitaka-od-igara-na-srecu-zakon-se-primjenjuje-jednako-na-sve | 2026-10-30 |
+| Rulebook on the form and content of the annual PIT return (GPP-FL), through 103/2025, arts. 1 to 5 | https://wapi.gov.me/download/afb50b45-7e83-4dac-b69e-2a1e280d3ffc?version=1.0 | 2026-10-30 |
+| Local Self-Government Financing Law, through 149/2025, arts. 8 and 9 (surtax) | https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0 | 2026-10-30 |
+| Law on Contributions for Mandatory Social Insurance, through 160/2025, arts. 14, 15, 17 and 18 | https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0 | 2026-10-30 |
+| VAT Law, consolidated through 12/26, arts. 24, 42 and 55 | https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0 | 2026-10-30 |
+| Tax Administration Law, Ministry consolidation published March 2026 (before 104/26), art. 95(1) (0.03% a day) | https://wapi.gov.me/download/2dd530ac-eec4-4d0c-9d8f-0c9e7ebc5b86?version=1.0 | 2026-10-30 |
+| Law amending the Tax Administration Law, Official Gazette 104/26, arts. 20 and 26 (ECB + 3 points from 18 July 2026) | https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0 | 2026-10-30 |
+| Tax Administration decision on the default interest rate for 18 July to 31 December 2026 (5.4% a year) | https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0 | 2026-10-30 |
 
 [law]: https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0
 [amend]: https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0
 [may]: https://www.sluzbenilist.me/propisi/394390/download
 [mayrecord]: https://www.sluzbenilist.me/propisi/394390
 [return]: https://wapi.gov.me/download/afb50b45-7e83-4dac-b69e-2a1e280d3ffc?version=1.0
-[oldform]: https://wapi.gov.me/download/6f6af511-ccf7-4fc1-bd5d-82243d9a91cd?version=1.0
-[proposal]: https://wapi.gov.me/download/58f7f48c-33de-4ec0-a1f4-28fd16fc7fb6?version=1.0
+[local]: https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0
+[contrib]: https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0
+[vat]: https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0
 
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+Not yet confirmed: the GPP-FL schedules and their box layout (the rulebook PDF omits the attachments) and the e-filing portal; the PIT-specific rulebook classifying assets into depreciation groups (art. 23(8)); the lump-sum tax scale (art. 49(2)); each municipality's current surtax rate (only the 13% and 15% caps are confirmed); the 2026 PIO annual ceiling (the old EUR 68,765 was a 2024 figure); the treatment of government grants in business income; the dual net minimum wage of EUR 670 and 800 and the employer Labour Fund and Chamber levies (see the payroll skill); the list of underdeveloped municipalities; and a September 2026 Government proposal to change salary taxation from 1 January 2027, not found enacted.
 
 <!-- openaccountants-cta-block -->
 
