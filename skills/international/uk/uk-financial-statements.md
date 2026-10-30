@@ -5,9 +5,9 @@ version: 1.1
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-30
-authored_by: James Power, CIMA
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 source_checked: 2026-10-16
 depends_on:
   - financial-statements-workflow-base
@@ -24,7 +24,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Rates and thresholds
 
-These figures were re-read against the Companies Act 2006 and the regulations on legislation.gov.uk on 30 October 2026. The first version of this skill was written by James Power; this version has changed figures and has not been reviewed by an accountant.
+These figures were re-read against the Companies Act 2006 and the regulations on legislation.gov.uk on 30 October 2026.
 
 ### Financial Statements
 
@@ -70,12 +70,12 @@ These figures were re-read against the Companies Act 2006 and the regulations on
 
 | Entity category | Applicable standard | Key features |
 | --- | --- | --- |
-| Micro-entity | FRS 105 | Highly simplified; no notes beyond statutory minimum; no true and fair override |
-| Small entity | FRS 102 Section 1A | Simplified disclosures; abridged formats permitted |
-| Medium entity | FRS 102 (full) | Full FRS 102 disclosures; some exemptions from filing certain information |
-| Large entity | FRS 102 (full) or UK-adopted IFRS | Full disclosure requirements |
-| Listed / AIM (with IFRS) | UK-adopted IFRS | Mandatory for consolidated accounts of listed groups |
-| Qualifying subsidiary | FRS 101 | IFRS recognition/measurement with reduced disclosures |
+| Micro-entity | FRS 105 | Highly simplified. Where the accounts contain only the micro-entity minimum accounting items, the directors disregard any accounting standard requirement to give more information (CA 2006 s.393(1A)) |
+| Small entity | FRS 102 Section 1A | Simplified disclosures (FRS 102 para 1AC.35 and the rest of Section 1A); abridged formats permitted (SI 2008/409 Sch 1 para 1A) |
+| Medium entity | FRS 102 (full) | Full FRS 102 disclosures. Files full accounts, strategic report and directors' report, with the auditor's report unless exempt (CA 2006 s.445(1), (2)) |
+| Large entity | FRS 102 (full) or UK-adopted IFRS | Full disclosure requirements. Any company may choose IAS individual accounts (CA 2006 s.395(1)) |
+| Parent with securities on a UK regulated market | UK-adopted IFRS | Mandatory for its group accounts (CA 2006 s.403(1)) |
+| Subsidiaries and ultimate parents (individual accounts) | FRS 101 | Recognition and measurement of adopted IFRS with disclosure exemptions ([FRC, FRS 101](https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-101/)) |
 
 - **Periodic Review 2024.** The FRC's amendments to FRS 102 and FRS 105 take effect for accounting periods beginning on or after 1 January 2026, with early application allowed only if all amendments are applied together. The two big changes are a revenue model based on the five-step model in IFRS 15 (in FRS 102 and FRS 105) and an on-balance-sheet lease model for lessees based on IFRS 16 (in FRS 102). A calendar-year company first applies them in its accounts for the year ending 31 December 2026 ([FRC, FRS 102](https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-102/)).
 - **Next FRC change.** Amendments for entities that adapt the balance sheet or profit and loss formats (following IFRS 18) take effect from 1 January 2027 (same page).
@@ -124,92 +124,87 @@ Effective for financial years beginning on or after 6 April 2025 (SI 2024/1303 r
 
 ## Section 5 -- Year-End Adjustments Checklist
 
-**Year-End Adjustments Checklist**  _([FRC, FRS 102](https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-102/))_
+**Year-End Adjustments Checklist**  _([FRS 102, September 2024 edition](https://www.frc.org.uk/documents/7668/FRS_102_September_2024_tmKYWO6.pdf), which includes the Periodic Review 2024 amendments)_
 
 | # | Adjustment | UK-specific notes |
 | --- | --- | --- |
-| 1 | Depreciation | FRS 102 Section 17; useful life basis; annual review of residual value |
+| 1 | Depreciation | FRS 102 Section 17; useful life basis. Review residual value, useful life and method when there is an indication they have changed since the last reporting date, and treat a change as a change in estimate (para 17.19) |
 | 2 | Accruals | Audit/accountancy fees, bonuses, utilities |
 | 3 | Prepayments | Insurance, rent, software licences |
-| 4 | Provisions | FRS 102 Section 21; present obligation, reliable estimate |
+| 4 | Provisions | FRS 102 Section 21: recognise only for an obligation at the reporting date from a past event, where a transfer of economic benefits is probable and the amount can be estimated reliably (para 21.4) |
 | 5 | Bad debt provision | Incurred loss model: impair where there is objective evidence of impairment (FRS 102 Section 11, para 11.21); no expected credit loss model |
-| 6 | Inventory | Lower of cost and estimated selling price less costs to sell |
-| 7 | Deferred tax | FRS 102 Section 29; timing differences approach (not temporary differences) |
-| 8 | Holiday pay accrual | Required under FRS 102: untaken leave at year-end |
+| 6 | Inventory | Lower of cost and estimated selling price less costs to complete and sell (FRS 102 para 13.4) |
+| 7 | Deferred tax | FRS 102 Section 29; recognised on timing differences (para 29.6), not temporary differences |
+| 8 | Holiday pay accrual | Recognise the expected cost of accumulating compensated absences, such as untaken leave carried forward (FRS 102 para 28.6) |
 | 9 | Lease accounting | FRS 102 Section 20: for accounting periods beginning on or after 1 January 2026, lessees follow an on-balance-sheet model based on IFRS 16, with simplifications. The FRC expects this to affect most entities that are lessees under operating leases |
 | 10 | Revenue | FRS 102 Section 23 and FRS 105: for periods beginning on or after 1 January 2026, revenue follows a five-step model based on IFRS 15, with simplifications. Review contracts with customers for timing changes |
-| 11 | R&D costs | Capitalise development costs meeting criteria (Section 18) or expense |
-| 12 | Government grants | Accruals model or performance model (Section 24) |
+| 11 | R&D costs | Development costs meeting the criteria may be capitalised as a policy choice, or expensed (FRS 102 para 18.8H) |
+| 12 | Government grants | Accrual model or performance model (FRS 102 para 24.4) |
 | 13 | Director's loan account | S.455 CTA 2010 tax charge if overdrawn at year-end (see uk-dividends) |
 
 ## Section 6 -- Profit and Loss Account Format
 
-Companies Act 2006 accounts regulations, Schedule 1: Format 1 (vertical, by function) is most common:
+The Small Companies and Groups (Accounts and Directors' Report) Regulations 2008 (SI 2008/409), Schedule 1, Part 1, Section B. A company shows the items in either format. Format 1 (by function) is the most common:
 
 ```
-Turnover
-Cost of sales
-  ─── Gross profit ───
-Distribution costs
-Administrative expenses
-Other operating income
-  ─── Operating profit ───
-Income from shares in group undertakings
-Other interest receivable and similar income
-Interest payable and similar expenses
-  ─── Profit on ordinary activities before taxation ───
-Tax on profit on ordinary activities
-  ─── Profit for the financial year ───
+1. Turnover
+2. Cost of sales
+3. Gross profit or loss
+4. Distribution costs
+5. Administrative expenses
+6. Other operating income
+7. Income from shares in group undertakings
+8. Income from participating interests
+9. Income from other fixed asset investments
+10. Other interest receivable and similar income
+11. Amounts written off investments
+12. Interest payable and similar expenses
+13. Tax on profit or loss
+14. Profit or loss after taxation
+19. Other taxes not shown under the above items
+20. Profit or loss for the financial year
 ```
 
-Format 2 (by nature, alternative):
+Format 2 (by nature):
 
 ```
-Turnover
-Change in stocks of finished goods and WIP
-Own work capitalised
-Other operating income
-Raw materials and consumables
-Staff costs
-Depreciation and other amounts written off assets
-Other operating charges
-  ─── Operating profit ───
-(continue as Format 1)
+1. Turnover
+2. Change in stocks of finished goods and in work in progress
+3. Own work capitalised
+4. Other operating income
+5. (a) Raw materials and consumables (b) Other external charges
+6. Staff costs: (a) wages and salaries (b) social security costs (c) other pension costs
+7. (a) Depreciation and other amounts written off tangible and intangible fixed assets
+   (b) Amounts written off current assets, to the extent that they exceed write-offs which are normal in the undertaking concerned
+8. Other operating expenses
+9 to 22. As Format 1 items 7 to 20
 ```
+
+Operating profit is not a format item; many companies add it as a subtotal.
 
 ## Section 7 -- Balance Sheet Format
 
-Companies Act 2006 accounts regulations, Schedule 1: Format 1 (vertical):
+SI 2008/409, Schedule 1, Part 1, Section B, Format 1 (main headings):
 
 ```
-Fixed assets
-  Intangible assets
-  Tangible assets
-  Investments
-
-Current assets
-  Stocks
-  Debtors
-  Investments
-  Cash at bank and in hand
-
-Creditors: amounts falling due within one year
-  ─── Net current assets ───
-
-Total assets less current liabilities
-
-Creditors: amounts falling due after more than one year
-Provisions for liabilities
-  ─── Net assets ───
-
-Capital and reserves
-  Called up share capital
-  Share premium account
-  Revaluation reserve
-  Other reserves
-  Profit and loss account
-  ─── Shareholders' funds ───
+A. Called up share capital not paid
+B. Fixed assets
+   I. Intangible assets   II. Tangible assets   III. Investments
+C. Current assets
+   I. Stocks   II. Debtors   III. Investments   IV. Cash at bank and in hand
+D. Prepayments and accrued income
+E. Creditors: amounts falling due within one year
+F. Net current assets (liabilities)
+G. Total assets less current liabilities
+H. Creditors: amounts falling due after more than one year
+I. Provisions for liabilities
+J. Accruals and deferred income
+K. Capital and reserves
+   I. Called up share capital   II. Share premium account   III. Revaluation reserve
+   IV. Other reserves   V. Profit and loss account
 ```
+
+Items A, D and J can be shown elsewhere as the notes to the formats allow (for example, prepayments within debtors, accruals within creditors).
 
 ## Section 8 -- Notes to Accounts
 
@@ -259,8 +254,8 @@ Capital and reserves
 | Delay | Penalty |
 | --- | --- |
 | Up to 1 month | £150 |
-| 1–3 months | £375 |
-| 3–6 months | £750 |
+| 1 to 3 months | £375 |
+| 3 to 6 months | £750 |
 | Over 6 months | £1,500 |
 
 - **Public company penalties**: £750, £1,500, £3,000 and £7,500 for the same bands. Any company pays double if it also failed to file on time for the previous financial year.  _([SI 2008/497 reg 4](https://www.legislation.gov.uk/uksi/2008/497/regulation/4))_
@@ -290,7 +285,7 @@ Capital and reserves
 
 ### Auditor qualification
 
-- **Registered Auditor**: must be a Registered Auditor (member of a Recognised Supervisory Body: ICAEW, ICAS, CAI, ACCA).
+- **Registered Auditor**: must be a Registered Auditor (member of a Recognised Supervisory Body: ICAEW, ICAS, CAI, ACCA). The FRC lists these four as the current RSBs for statutory audit ([FRC, Recognition of RSBs and RQBs](https://www.frc.org.uk/library/supervision/professional-bodies-supervision/supervision-of-audit/recognition-of-rsbs-and-rqbs/)).
 
 ## Section 11 -- Companies House: identity verification and the ECCTA filing changes
 
@@ -303,7 +298,7 @@ The Economic Crime and Corporate Transparency Act 2023 (ECCTA) changes how compa
 - **Agents.** Accountants who want to verify clients' identities register as Authorised Corporate Service Providers (ACSPs). Companies House says businesses filing for clients will in future also need to register (same page).
 - **Not yet in force:** identity verification for people who file at Companies House, limited partnerships, corporate directors, corporate members of LLPs and officers of corporate PSCs (same page).
 - **WebFiling sign-in** has used GOV.UK One Login since 13 October 2025 ([filing online](https://www.gov.uk/guidance/filing-your-companies-house-information-online)).
-- Registered email address, appropriate registered office and the lawful purpose statement (in force since 4 March 2024) are covered in uk-formation.
+- Registered email address, appropriate registered office and the lawful purpose statement (in force since 4 March 2024: ECCTA ss.2, 28 and 29, brought into force by [SI 2024/269 reg 2](https://www.legislation.gov.uk/uksi/2024/269/made)) are covered in uk-formation.
 
 **From April 2028 (announced 23 October 2026)** ([Companies House](https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028)):
 
@@ -339,13 +334,22 @@ This skill and its outputs are provided for informational and computational purp
 | SI 2026/427, Charities Acts 1992 and 2011 (Substitution of Sums) Order 2026 | https://www.legislation.gov.uk/uksi/2026/427/made | 2026-10-30 |
 | FRC, FRS 102 page (Periodic Review 2024, small entity directors' remuneration, 2027 amendments) | https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-102/ | 2026-10-30 |
 | FRC, Amendments to FRS 102 and other FRSs: Periodic Review 2024 (summary) | https://www.frc.org.uk/documents/7128/Amendments_to_FRS_102_and_other_FRSs.pdf | 2026-10-30 |
-| Companies House, update to accounts filing from April 2028 (23 October 2026) | https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028 | 2026-10-30 |
+| Companies House, news story "Companies House update to accounts filing from April 2028", published 23 October 2026 | https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028 | 2026-10-30 |
 | Companies House, When you need to verify your identity | https://www.gov.uk/guidance/when-you-need-to-verify-your-identity-for-companies-house | 2026-10-30 |
 | Companies House, Filing your Companies House information online | https://www.gov.uk/guidance/filing-your-companies-house-information-online | 2026-10-30 |
 | Companies House, Filing your Companies House accounts | https://www.gov.uk/government/publications/filing-your-companies-house-accounts | 2026-10-30 |
 | HMRC, Closure of the service to file company accounts and tax return | https://www.gov.uk/guidance/closure-of-the-service-to-file-your-company-accounts-and-tax-return | 2026-10-30 |
+| FRC, FRS 102 (September 2024 edition), paras 1AC.35, 11.21, 13.4, 17.19, 18.8H, 21.4, 24.4, 28.6, 29.6 | https://www.frc.org.uk/documents/7668/FRS_102_September_2024_tmKYWO6.pdf | 2026-10-30 |
+| FRC, FRS 101 Reduced Disclosure Framework | https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-101/ | 2026-10-30 |
+| SI 2008/409 Schedule 1 (formats) | https://www.legislation.gov.uk/uksi/2008/409/schedule/1 | 2026-10-30 |
+| Companies Act 2006 s.393 (true and fair view; micro-entities) | https://www.legislation.gov.uk/ukpga/2006/46/section/393 | 2026-10-30 |
+| Companies Act 2006 s.395 (individual accounts framework) | https://www.legislation.gov.uk/ukpga/2006/46/section/395 | 2026-10-30 |
+| Companies Act 2006 s.403 (group accounts framework) | https://www.legislation.gov.uk/ukpga/2006/46/section/403 | 2026-10-30 |
+| Companies Act 2006 s.445 (filing: medium-sized companies) | https://www.legislation.gov.uk/ukpga/2006/46/section/445 | 2026-10-30 |
+| SI 2024/269 (ECCTA Commencement No. 1) reg 2 | https://www.legislation.gov.uk/uksi/2024/269/made | 2026-10-30 |
+| FRC, Recognition of RSBs and RQBs | https://www.frc.org.uk/library/supervision/professional-bodies-supervision/supervision-of-audit/recognition-of-rsbs-and-rqbs/ | 2026-10-30 |
 
-Not yet confirmed: the exact date in April 2028 for the Companies House changes (the announcement says "from April 2028" and "after 1 April 2028"); the content of the strengthened audit-exemption statement and the limit on shortening periods (regulations not yet read); carried from the previous version and not re-read this time against FRS 102, FRS 105 or SI 2008/409 text: the reporting framework table (including IFRS for listed groups and FRS 101), the year-end checklist items other than leases and revenue, the profit and loss and balance sheet formats, the disclosure table other than related parties and directors' remuneration, and the list of Recognised Supervisory Bodies.
+Not yet confirmed: the exact date in April 2028 for the Companies House changes (the announcement says "from April 2028" and "after 1 April 2028"); the content of the strengthened audit-exemption statement and the limit on shortening periods (regulations not yet read); the disclosure table rows other than related parties and directors' remuneration (carried from the previous version, not re-read against FRS 102 Section 1A, FRS 105 or SI 2008/409); the previous version's statements that FRS 105 has "no true and fair override" and that AIM groups must use IFRS (removed: the Companies Act sets the IFRS requirement only for parents on a UK regulated market, s.403(1); the AIM requirement was not checked).
 
 <!-- openaccountants-cta-block -->
 
