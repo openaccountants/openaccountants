@@ -1,7 +1,7 @@
 ---
 name: md-corporate-income-tax
 description: "Compute Moldova resident-company corporate income tax for 2026, including the ordinary taxable-profit reconciliation and the separate eligible non-VAT SME accounting-income regime. Use for regime and legal-category selection, business expenses, employee benefits, financing, depreciation, losses, foreign-tax credits, instalments, distributions and withholding. Distinguish company tax from shareholder withholding and the dividend-linked payment-deferral option. Establish actual tax-period, VAT, ownership, activity, profit-origin and payment facts before calculating. This source-cited writer draft preserves the earlier Guide subjects, states exact remaining ordinary and specialist gaps, and requires whole-country independent review before publication. It does not claim accountant attestation or comprehensive coverage."
-version: 0.6
+version: 0.7
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-30
@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 ---
 
-# Moldova corporate income tax, 2026 v0.6
+# Moldova corporate income tax, 2026 v0.7
 
 ## Who this applies to
 
@@ -157,6 +157,17 @@ On disposal, determine tax undepreciated value from entry/capitalised cost less 
 | Current-profit dividend advance | Company pays 12% of the current-period profit from which dividends are paid, by the 25th of the following month; credit against its own annual tax; stated SME/IT-park exceptions apply | [Art. 80^1][code] |
 | Withholding remittance/monthly report | By the 25th of the month after the payment; distinguish the annual information return and recipient-information duties | [Art. 92][code] |
 
+### Select the return for the regime and reporting year
+
+| Established taxpayer/regime | Approved return and period rule | Primary source |
+|---|---|---|
+| Ordinary business-income taxation within VEN12’s population | **VEN12**, approved by MF Order 153/2017 and amended by Order 145/2024; use the actual reporting-period rules and the verified row changes below | [MF Order 153/2017][ven12order]; [Order 145/2024][ven12amend] |
+| Eligible chapter-7^1 SME income regime | **SIMM24** under MF Order 143 of **27 November 2024**, published/effective **30 November 2024**, for reporting periods **from 2024**. **2023** is the final SIMM20 reporting period | [MF Order 143/2024, points 1–3][simm24order]; [Code arts. 54^1–54^4][code] |
+
+Order 143 point 4 preserves the form in force on actual submission where the reporting obligation arose before the new order was approved/published. Keep that narrow transition separate from the normal 2026 SME route; do not select SIMM20 because an old catalogue entry or spreadsheet remains available. The SME label also does not establish eligibility: apply the VAT, activity, ownership, election and period rules above before selecting SIMM24. The annual return and quarterly payments remain distinct duties. [MF Order 143 points 2–4][simm24order]; [Code arts. 54^1–54^4][code].
+
+The enacted order approves a separate form and completion instructions as annexes 1–2. Its actual body and transition rules were read, but those approved attachments were not retrieved. This supplies the return choice and reporting-year method, not a certified field map, rounding rule, live filing or replacement for the full instructions. For a chapter-10^1 professional or an individual/farm unified return, establish the legal taxpayer and use the [individual-income Guide’s separate routes](moldova-income-tax.md); do not select a form solely because two regimes share a headline tax rate. [MF Order 143 point 1][simm24order]; [Code arts. 69^1–69^5, 83][code].
+
 **Dividend-linked company-tax deferral for 2023–2026 profit.** Test at the period's final day: at most 249 employees and turnover up to 100 million, or at most 249 employees and assets up to 100 million. The rule excludes the listed individual/farm, free-zone/free-port/free-airport, IT-park, SME-regime and financial/insurance taxpayers. It also excludes the stated section-G businesses above 49 employees and the applicable 50-million turnover/assets test. Exercise the option through the art. 83 return. Tax becomes payable by the 25th after the month dividends are paid, including share distributions. For profit originating in the 2026 tax period, apply the current statute's prorata of gross dividend paid to total pre-tax financial-statement profit for that origin period, rounded as the statute requires, to that period's calculated company tax. Preserve the origin-year profit/tax and all prior distributions. For distributions from earlier origin years, establish the version governing that year's election and calculation before selecting the denominator; this draft does not certify that the current pre-tax denominator applies retrospectively to every earlier year. Article 84(6) excludes this class from ordinary instalments for 2023–2026. Law 41 removed the old blanket sentence rejecting corrected returns aimed at changing the option, and its art. X(2) specifies retrospective-period application. Exact return-line prorata/rounding and corrected-election implementation remain an explicit draft gap; do not invent a calculation or ignore the option. [Arts. 84(6), 87(1^1)][code]; [Law 41 arts. I(2)–(3), X(2)][amend].
 
 **Approved ordinary business return.** MF Order 153/2017 approves VEN12 and its completion instructions as annexes 1–2. The latest consolidation displayed in the official register is amended by Order 145 of 29 November 2024, effective 5 December 2024. The enacting order and actual amending Order 145/2024 were read; the separate consolidated form/instruction attachments were not retrieved, so full row-by-row mapping and the special-regime/deferral fields remain unconfirmed. Do not describe the approval page as verification of every return field or use a superseded pre-2024 instruction. [MF Order 153/2017, consolidation 146095][ven12order]; [Order 145/2024][ven12amend].
@@ -268,11 +279,12 @@ Read 30 October 2026. These are writer primary-source checks; independent whole-
 | [Government Decision 10/2012, current travel regulation][travelreg] and [amending Decision 783/2024][travelamend] | Ordinary travel authorisation, evidence, reimbursement, category, settlement and currency methods; separate destination-rate attachment not retrieved | 2026-10-30 |
 | [Government Decision 704/2019, 2025 consolidation][assetreg] | Per-asset basis/depreciation/repair/disposal methods and read historical-transition provisions; separate register/calculation annex fields not retrieved | 2026-10-30 |
 | [Government Decision 941/2020, 2022 catalogue consolidation][assetcatalogue] | Life selection, minimum/manufacturer/used/unlisted cases and business commencement; attached numerical asset-life table not retrieved | 2026-10-30 |
+| [MF Order 143/2024, enacted approval][simm24order] | SIMM24 approval, final SIMM20 year, 2024 first reporting year, publication commencement and early-obligation exception; separate form/instruction attachments not retrieved | 2026-10-30 |
 | [MF Order 153/2017][ven12order] | VEN12 approval/consolidation and attachment references only; actual form/instruction files not retrieved | 2026-10-30 |
 | [CNAS 2026 instructions][average] | Point 12.1 records the 17,400 forecast salary and Government Decision 773/2025; used only for that sourced input | 2026-10-30 |
 | [Finance Ministry 2026 explanation][changes] | Corroborating new payment/deduction rules, not a substitute for the operative Code; January SME summary is superseded by Law 41 | 2026-10-30 |
 
-Not yet confirmed: all 2026 commencement interactions beyond the selected transitions; current approved return lines and filing/payment implementation; travel annex-2 destination/currency/rate/ceiling values and actual minimum domestic transport tariffs, remaining special personnel/trip cases; current meal-voucher nominal limit/scheme and any employee-benefit cases beyond the sourced transport/food, development and recreation methods; attached numerical asset-life ranges and approved asset-register/repair-form fields, historical-transition/capped-car implementation beyond the cited ordinary methods, and all donation/undocumented-expense circular-base computations; the exact operational prorata rounding and corrected-election process for art. 87(1^1), including the denominator and applicable election rules for distributions from 2023–2025 origin profits; full specialist incentive/free-zone/IT-park/financial/reorganisation/liquidation methods; current treaty-by-treaty rates and procedures. The old unsourced universal treaty ranges of 0%–5% and 0%–10% are not certified rules. Actual facts, authorisations, notices and receipts remain required. The domain stays partial until ordinary gaps and whole-pack review are resolved.
+Not yet confirmed: all 2026 commencement interactions beyond the selected transitions; remaining approved VEN12/SIMM24 attachment fields, full instructions and filing/payment implementation beyond the sourced form-selection and enacted row changes; travel annex-2 destination/currency/rate/ceiling values and actual minimum domestic transport tariffs, remaining special personnel/trip cases; current meal-voucher nominal limit/scheme and any employee-benefit cases beyond the sourced transport/food, development and recreation methods; attached numerical asset-life ranges and approved asset-register/repair-form fields, historical-transition/capped-car implementation beyond the cited ordinary methods, and all donation/undocumented-expense circular-base computations; the exact operational prorata rounding and corrected-election process for art. 87(1^1), including the denominator and applicable election rules for distributions from 2023–2025 origin profits; full specialist incentive/free-zone/IT-park/financial/reorganisation/liquidation methods; current treaty-by-treaty rates and procedures. The old unsourced universal treaty ranges of 0%–5% and 0%–10% are not certified rules. Actual facts, authorisations, notices and receipts remain required. The domain stays partial until ordinary gaps and whole-pack review are resolved.
 
 [code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
 [jan]: https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro
@@ -290,6 +302,7 @@ MF Order 10/2024, points 1–2: enacted fixed-asset loss/donation row classifica
 
 [ven12assetamend]: https://www.legis.md/cautare/getResults?doc_id=141590&lang=ro
 [ven12amend]: https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro
+[simm24order]: https://www.legis.md/cautare/getResults?doc_id=146028&lang=ro
 [ven12order]: https://www.legis.md/cautare/getResults?doc_id=146095&lang=ro
 
 [travelreg]: https://www.legis.md/cautare/getResults?doc_id=145854&lang=ro

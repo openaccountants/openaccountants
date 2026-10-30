@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 2.1
+version: 2.2
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -30,6 +30,8 @@ The three subsequently merged supporting drafts (PRs #1009, #1010 and #1011) are
 The formation draft now maps the actual company application and instructions, BE-1/BE-2 core forms and the current statutory ownership/disclosure/due-diligence interface. Current [Law 308/2017](https://www.legis.md/cautare/getResults?doc_id=155856&lang=ro) and [ASP guidance](https://www.asp.gov.md/ro/servicii/intrebari-frecvente?grup=2718), read 30 October 2026, confirm the beneficial-owner update clock and signer roles. The ordinary company/individual post-formation applications, instructions and BE-3 core are now mapped to actual filing fields, authority and separate deadlines. The individual instructions’ unrelated corporate-administrator sentence and the limited scope of provisional-data form 3-34 are explicitly distinguished. Discrepancy-removal procedure, other entity-specific variants, current national PEP-list screening and other named ordinary/specialist gaps remain explicit. This is writer work; whole-country independent review is still pending.
 
 Formation now distinguishes the actual founder tax-evasion declarations from the wider SRL administrator eligibility/representation rules, supplies the conditional Civil Code release right after delayed registration, and maps the sourced debutant-company and specified geographic registration-fee relief. The enacted free electronic beneficial-owner service clock and the noncommercial name-service qualifier are also reconciled. SME-law, accounting and income-tax populations remain separate. First-year/programme implementation, other named ordinary gaps and independent review remain open.
+
+The corporate and individual drafts now apply the actual enacted return-changeover rules: SIMM24 from reporting 2024, DAP24 from 2024 and UNIF25 from 2025, including each order’s early-obligation exception. Current legal taxpayer/regime and whole-year staffing/VAT conditions control form selection. Full approved attachment fields, completion instructions and filing implementation remain open; identifying the right form does not complete those gaps or the country review.
 
 ## Domains
 
