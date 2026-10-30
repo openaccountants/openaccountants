@@ -1,20 +1,22 @@
 ---
 name: belgium-einvoice
-description: Use this skill whenever asked about e-invoicing in Belgium, Peppol B2B mandate, Mercurius platform for B2G, Hermes platform, EN 16931 Belgium, Peppol BIS Billing 3.0 Belgium, structured electronic invoices, Belgian VAT e-invoicing, Peppol Access Points, or any question about issuing, transmitting, validating, or archiving electronic invoices under Belgian law. Trigger on phrases like "Peppol Belgium", "e-invoicing Belgium 2026", "Mercurius", "Hermes platform", "B2B e-invoice Belgium", "structured invoice Belgium", "Belgian VAT Code invoicing", "Peppol BIS", "UBL Belgium", or "e-facturatie". ALWAYS read this skill before touching any Belgium invoicing compliance work.
-version: 1.0
+description: "Belgian structured e-invoicing for 2026: the B2B obligation in force since 1 January 2026 under VAT Code art. 53 § 2bis (Law of 6 February 2024, amended by the Law of 10 February 2026), the Royal Decree of 8 July 2025 (Peppol BIS in UBL over the Peppol network, rounding, fines), who must send and who must be able to receive, exclusions (art. 44 exempt businesses, flat-rate farmers, businesses not established in Belgium), self-billing, credit notes, the EUR 1,500 / 3,000 / 5,000 fines, the three-month tolerance in early 2026 and the self-billing tolerance to 30 June 2026, B2G invoicing through Mercurius, Peppol BIS Billing 3.0 fields and validation, VAT computed per VAT category, archiving for seven years, and the 120% cost deduction for small businesses. Trigger on: Peppol Belgium, e-invoicing Belgium 2026, e-facturatie, facturation électronique, structured invoice Belgium, Mercurius, Peppol BIS, UBL Belgium, B2B e-invoice fine. Out of scope: VAT rates and returns (belgium-vat-return, be-vat-return), bookkeeping (belgium-bookkeeping)."
+version: 1.1
 jurisdiction: BE
-tax_year: 2025
-last_updated: 2026-07-13
+category: invoicing
+tax_year: 2026
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - einvoice-workflow-base
-category: invoicing
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Belgium Einvoice
+
+Rules below are those in force in 2026. Each line names its source; the full list is in Sources at the end. The laws were read in the Belgisch Staatsblad (ejustice.just.fgov.be) and the administration's e-invoicing site (efactuur.belgium.be / einvoice.belgium.be) on 2026-10-30.
 
 ## Section 1 -- Quick Reference
 
@@ -24,282 +26,337 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | Country | Belgium (Koninkrijk België / Royaume de Belgique) |
 | Currency | EUR |
-| E-invoicing system name | Peppol network (B2B); Mercurius platform (B2G); Hermes bridge (transitional) |
-| Governing body | FPS Finance (Federale Overheidsdienst Financiën / Service Public Fédéral Finances) |
-| Key legislation | Law of 6 February 2024 amending the Belgian VAT Code (Art. 53 §1/1); Royal Decree of 8 July 2025 on structured e-invoicing (technical standards and penalties); EU Directive 2014/55/EU (B2G); Belgian VAT Code Art. 44 (exemptions) |
-| Implementation timeline | B2G via Mercurius since 2015+; B2B mandate 1 Jan 2026; Grace period ended 31 Mar 2026; Full enforcement from 1 Apr 2026; Self-billing tolerance until 30 Jun 2026 |
-| Current status (2026) | Fully enforced -- all Belgian VAT-registered businesses must send and receive Peppol BIS Billing 3.0 invoices for domestic B2B transactions; progressive penalties in effect |
-| Skill version | 1.0 |
+| E-invoicing system | Peppol network (B2B and B2G); Mercurius for invoices to public bodies (B2G) |
+| Authority | FOD Financiën / SPF Finances (tax rules); FOD BOSA is the Belgian Peppol Authority (since 1 January 2016) |
+| B2B legal basis | VAT Code (WBTW) art. 53 § 2bis, inserted by the Law of 6 February 2024 (Staatsblad 20 February 2024), in force 1 January 2026 (art. 6) |
+| Amendments | Law of 10 February 2026, art. 4 (customer that cannot receive; EU norm wording), in force on publication, 20 February 2026 (art. 22) |
+| Format and network rules | Royal Decree of 8 July 2025 (Staatsblad 14 July 2025): KB nr. 1 art. 13ter and 13quater (Peppol BIS in UBL, Peppol network), KB nr. 8 (rounding), KB nr. 44 (fines), in force 1 January 2026 (art. 6) |
+| B2G legal basis | Royal Decree of 9 March 2022 (public procurement): e-invoices required for contracts published after 1 March 2024 |
+| Status in 2026 | In force since 1 January 2026. Fines not applied in the first three months of 2026 to businesses that took timely steps; self-billing tolerance to 30 June 2026 |
+| Tax incentive | 120% deduction of e-invoicing software subscription and advice costs for small companies and the self-employed, taxable periods 2024 to 2027 (WIB 92 art. 64ter) |
 
 ## Section 2 -- Mandate Scope
 
-### Who Must Comply
+### Who must comply
 
-- **B2G compliance requirement** — All suppliers to Belgian contracting authorities must issue structured e-invoices via the Mercurius platform (aligned with Peppol). In effect since the transposition of EU Directive 2014/55/EU. All federal, regional, and local public entities receive through Mercurius.  _(EU Directive 2014/55/EU)_
-- **B2B compliance requirement** — From 1 January 2026, all Belgian enterprises liable to VAT must use structured e-invoices for domestic B2B transactions. A PDF sent by email or paper invoice no longer satisfies the legal invoicing requirement for in-scope transactions.
-- **Suppliers in scope** — All Belgian VAT taxpayers including: Taxable entities established in Belgium; Belgian permanent establishments of foreign entities; Members of Belgian VAT groups; Taxable Belgian entities with special VAT schemes in agriculture
-- **Suppliers excluded** — Foreign entities solely registered for VAT in Belgium (without establishment); Belgian entities conducting only VAT-exempt activities (Art. 44 VAT Code); Bankrupt entities; Entities under the special flat-rate scheme (to be abolished in 2028)  _(Art. 44 VAT Code)_
-- **Customers in scope** — Taxable entities providing their Belgian VAT number for local transactions.
-- **Customers excluded** — VAT-exempt entities and foreign taxpayers with a Belgian VAT number.
-- **B2C treatment** — Remains voluntary. No mandatory e-invoicing obligation for B2C transactions.
+- **Who must send.** A taxable person established in Belgium issues a structured electronic invoice to its customer for supplies of goods and services that are not exempt under art. 44, where the customer must give its Belgian VAT number for that supply (WBTW art. 53 § 2bis, first paragraph). This covers VAT group members using their sub-number.
+- **Excluded senders.** Taxable persons under the flat-rate scheme of art. 56, and bankrupt taxable persons for the activity for which they were declared bankrupt (art. 53 § 2bis, first paragraph). The flat-rate scheme ends at the latest on 1 January 2028 (efactuur.belgium.be, "Voor wie wordt e-facturatie verplicht?").
+- **Businesses that make only art. 44 exempt supplies** need not send and need not be able to receive structured e-invoices (same page).
+- **Not established in Belgium.** A taxable person without an establishment in Belgium is outside the obligation, even if it has a Belgian VAT number, both for sending and for receiving (same page). The Law of 10 February 2026 removed the reference to the VAT number of art. 50 § 1, 3° from art. 53 § 2bis (art. 4, 1°), so the obligation now turns on the customer's VAT number under art. 50 § 1, 1° (or a VAT group sub-number).
+- **Small-business exemption.** Businesses under the small-business exemption (turnover up to EUR 25,000) are covered (efactuur.belgium.be FAQ, question 2). See [belgium-vat-return](belgium-vat-return.md).
+- **Farmers under the special agricultural scheme** are covered at least for receiving B2B invoices (same FAQ).
+- **Customers.** Every Belgian VAT-identified recipient of a structured e-invoice must be able to receive it in the format in which it was issued, itself or through a third party (art. 53 § 2bis, last paragraph of the 2024 text).
+- **Customer that cannot receive.** If the recipient cannot receive a structured e-invoice for technical reasons, the supplier need not issue one, but must still issue an ordinary invoice (art. 53 § 2bis, paragraph added by the Law of 10 February 2026, art. 4, 4°).
+- **B2C.** Invoices to private customers are outside the obligation. A business that works only for private customers must still be able to receive structured e-invoices from its suppliers (efactuur.belgium.be, "Voor wie wordt e-facturatie verplicht?").
+- **Voluntary use.** Anyone may use structured e-invoices where not required, if both parties agree. Registration on Peppol counts as agreement to receive (efactuur.belgium.be FAQ, question 9; summary table on the "Voor wie" page).
 
-### Transaction Scope
+### Transaction scope
 
-- **In scope transactions** — E-invoicing applies to all domestic B2B VAT transactions in Belgium, including: Supplies of goods and services with Belgian place of supply; Supplies under local reverse charge
-- **Not in scope transactions** — Intra-community supplies; Services taxed in another EU country; Transactions exempt under Art. 44 of the Belgian VAT Code  _(Art. 44 of the Belgian VAT Code)_
+- **In scope.** Supplies of goods and services not exempt under art. 44 to a Belgian VAT-registered customer, and invoices for advance payments that make VAT due before the supply (art. 53 § 2bis, first paragraph, 2°).
+- **Credit notes.** Any document that changes and refers specifically to the original invoice counts as a structured e-invoice and is issued in the same format (art. 53 § 2bis, third paragraph).
+- **Out of scope.** Art. 44 exempt supplies; B2C; cross-border and other situations outside the B2B / B2G scope (efactuur.belgium.be summary table). Intra-EU invoicing is planned to follow from 2030 under the EU VAT in the Digital Age package (einvoice.belgium.be).
+- **Invoices issued from 1 January 2026.** Every in-scope invoice drawn up, issued or sent from 1 January 2026 is a structured e-invoice, whether the supply took place before or after that date (efactuur.belgium.be FAQ, question 14).
+- **Registered cash systems.** A structured e-invoice does not replace the receipt from a registered cash system; where the customer is a business, both are issued (same FAQ, question 16).
 
 ### Timeline
 
 **Timeline**
 
-| Date | Milestone |
-| --- | --- |
-| 2015+ | Mercurius platform deployed for B2G e-invoicing |
-| 1 February 2024 | Parliament approves law for mandatory B2B e-invoicing from 2026 |
-| 8 July 2025 | Royal Decree published with technical standards and penalty regime |
-| 1 January 2026 | B2B e-invoicing mandate takes effect; 3-month tolerance period begins |
-| 31 March 2026 | Tolerance period ends; full enforcement begins |
-| 30 June 2026 | Self-billing tolerance period ends |
-| 1 January 2028 | Peppol five-corner e-reporting model anticipated (near real-time VAT e-reporting) |
+| Date | Milestone | Source |
+| --- | --- | --- |
+| 1 January 2016 | FOD BOSA acts as the Belgian Peppol Authority | efactuur.belgium.be, Peppol FAQ, question 8 |
+| 1 January 2024 | 120% cost deduction applies from assessment year 2025 (periods starting from 1 January 2024) | Law of 6 February 2024, art. 6 |
+| 20 February 2024 | Law of 6 February 2024 published | Staatsblad |
+| 1 March 2024 | E-invoicing compulsory for public contracts published after this date | efactuur.belgium.be, "Voor wie" |
+| 1 January 2025 | Investment deduction for digital investments rises to 20% | efactuur.belgium.be, "Fiscale stimulansen" |
+| 14 July 2025 | Royal Decree of 8 July 2025 published | Staatsblad |
+| 1 January 2026 | B2B obligation, KB nr. 1 art. 13ter / 13quater and the KB nr. 44 fine in force | Law of 6 February 2024 art. 6; KB 8 July 2025 art. 6 |
+| 1 January to 31 March 2026 | Tolerance: no fines for businesses that took timely and reasonable steps | einvoice.belgium.be, news item on the tolerance period |
+| 20 February 2026 | Law of 10 February 2026 art. 4 in force (customer unable to receive) | Law of 10 February 2026, art. 22 |
+| 30 June 2026 | End of the self-billing tolerance | efactuur.belgium.be FAQ, question 23 |
+| 1 January 2028 | 120% deduction provision repealed for assessment year 2029 onward | Law of 6 February 2024, art. 6 |
 
 ## Section 3 -- Technical Format
 
-### Standard and Syntax
+### Standard and syntax
 
-**Standard and Syntax**
+**Standard and syntax**
 
-| Component | Value |
-| --- | --- |
-| Semantic standard | EN 16931 (European standard for electronic invoicing) |
-| Default syntax | UBL 2.1 XML (OASIS Universal Business Language) |
-| Business specification | Peppol BIS Billing 3.0 |
-| Self-billing specification | Peppol BIS Self-Billing 3.0.1 (hotfix March 2026) |
-| CIUS | No separate Belgian CIUS beyond Peppol BIS Billing 3.0 |
-| CII syntax | Accepted via Mercurius but rarely used in practice; UBL is the default |
+| Component | Value | Source |
+| --- | --- | --- |
+| Default format | The European e-invoicing norm and its syntaxes under Directive 2014/55/EU, as set out in the Peppol BIS format in the UBL version | KB nr. 1 art. 13ter, first paragraph, 1° |
+| Default network | The Peppol transmission network | KB nr. 1 art. 13ter, first paragraph, 2° |
+| Other format by agreement | Allowed if both parties agree and the format meets the European norm and its syntaxes; it may then be sent by another digital route | KB nr. 1 art. 13ter, second paragraph; WBTW art. 53 § 2bis, second paragraph |
+| Technical means | A business bound by the obligation must have the technical means to issue and receive Peppol BIS invoices over Peppol, even where it agrees another format with a customer | KB nr. 1 art. 13quater |
+| Business specification | Peppol BIS Billing 3.0 (version 3.0.21 read), an application of EN 16931 | docs.peppol.eu; efactuur.belgium.be Peppol FAQ |
+| Attachments | Sent in the same channel, inside the UBL file or by link; allowed types pdf, png, jpg, csv, xlsx, ods (xml by agreement) | efactuur.belgium.be FAQ, questions 19 to 21 |
+| PDF copy | Optional; the customer cannot demand it or refuse the invoice for lack of it | efactuur.belgium.be FAQ, questions 11 and 12 |
 
-### Key Peppol Identifiers
+### Key Peppol identifiers
 
-**Key Peppol Identifiers**
+**Key Peppol identifiers**
 
-| Field | Value |
-| --- | --- |
-| CustomizationID | `urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0` |
-| ProfileID | `urn:fdc:peppol.eu:2017:poacc:billing:01:1.0` |
-| Document type (Invoice) | `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2::Invoice##urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0::2.1` |
-| Document type (Credit Note) | `urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2::CreditNote##urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0::2.1` |
+| Field | Value | Source |
+| --- | --- | --- |
+| CustomizationID (specification identifier) | `urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0` | Peppol BIS Billing 3.0, rule PEPPOL-EN16931-R004 |
+| ProfileID (business process) | `urn:fdc:peppol.eu:2017:poacc:billing:01:1.0` | Peppol BIS Billing 3.0 |
+| Belgian participant identifier | Enterprise number (KBO / BCE) with scheme ID 0208; service providers must register every Belgian business at least under it | efactuur.belgium.be Peppol FAQ, question 4 |
+| Format of 0208 identifier | 10 digits passing a modulo-97 check | Peppol BIS Billing 3.0, rule PEPPOL-COMMON-R043 |
+| Other identifiers (VAT number, GLN, IBAN) | Optional, by agreement between the parties | efactuur.belgium.be Peppol FAQ, question 4 |
 
-### Namespaces
+### Document types
 
-**Namespaces**
-
-| Namespace | URI |
-| --- | --- |
-| UBL Invoice | `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2` |
-| UBL CreditNote | `urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2` |
-| Common Basic Components | `urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2` |
-| Common Aggregate Components | `urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2` |
+- **Invoice type codes** allowed in the billing profile include 380 (commercial invoice). **Credit note type codes** include 381 (Peppol BIS Billing 3.0, rules PEPPOL-EN16931-P0100 and P0101).
+- UBL root elements are `Invoice` and `CreditNote` in the OASIS UBL 2.1 namespaces; a UBL invoice should not carry a UBLVersionID other than 2.1 (Peppol BIS Billing 3.0).
 
 ## Section 4 -- Mandatory Fields
 
-### Peppol BIS Billing 3.0 Required Fields
+### Peppol BIS Billing 3.0 key fields
 
-**Peppol BIS Billing 3.0 Required Fields**
+**Peppol BIS Billing 3.0 key fields**
 
-| Field | UBL Path | Notes |
+| Field | UBL element | Rule |
 | --- | --- | --- |
-| Invoice number | `cbc:ID` | Unique, sequential |
-| Issue date | `cbc:IssueDate` | ISO 8601 |
-| Invoice type code | `cbc:InvoiceTypeCode` | 380 (invoice), 381 (credit note) |
-| Currency code | `cbc:DocumentCurrencyCode` | EUR for domestic |
-| Buyer reference | `cbc:BuyerReference` | Mandatory in Peppol BIS; can be PO number or free text |
-| Supplier name | `cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName` |  |
-| Supplier VAT number | `cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID` | Belgian VAT number format: BE0XXX.XXX.XXX |
-| Supplier address | `cac:AccountingSupplierParty/cac:Party/cac:PostalAddress` | Including country code |
-| Supplier Peppol endpoint | `cac:AccountingSupplierParty/cac:Party/cbc:EndpointID` | With `@schemeID` (e.g., 0208 for Belgian enterprise number) |
-| Buyer name | `cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName` |  |
-| Buyer VAT number | `cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID` | Belgian VAT number |
-| Buyer address | `cac:AccountingCustomerParty/cac:Party/cac:PostalAddress` | Including country code |
-| Buyer Peppol endpoint | `cac:AccountingCustomerParty/cac:Party/cbc:EndpointID` | Must be registered in Peppol SMP |
-| Line item description | `cac:InvoiceLine/cac:Item/cbc:Name` |  |
-| Line quantity | `cac:InvoiceLine/cbc:InvoicedQuantity` | With `@unitCode` (UN/ECE Rec. 20) |
-| Line net amount | `cac:InvoiceLine/cbc:LineExtensionAmount` |  |
-| Line VAT category | `cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory/cbc:ID` | S, Z, E, AE, K, G, O, L, M |
-| Line VAT rate | `cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory/cbc:Percent` |  |
-| Tax subtotals | `cac:TaxTotal/cac:TaxSubtotal` | Per VAT category |
-| Total tax amount | `cac:TaxTotal/cbc:TaxAmount` |  |
-| Payable amount | `cac:LegalMonetaryTotal/cbc:PayableAmount` |  |
-| Payment means | `cac:PaymentMeans/cbc:PaymentMeansCode` | 30 (credit transfer), 58 (SEPA), etc. |
-| Payment account (IBAN) | `cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID` |  |
+| Specification identifier | `cbc:CustomizationID` | Must begin with the Peppol billing 3.0 value (R004) |
+| Business process | `cbc:ProfileID` | Must be provided (R001) and approved (R007) |
+| Invoice number | `cbc:ID` | Required by EN 16931 |
+| Issue date | `cbc:IssueDate` | Required |
+| Invoice type code | `cbc:InvoiceTypeCode` | Must be a code allowed for the profile, for example 380 (P0100) |
+| Currency | `cbc:DocumentCurrencyCode` | Required |
+| Buyer reference or order reference | `cbc:BuyerReference` or `cac:OrderReference/cbc:ID` | One of the two must be given (R003) |
+| Seller electronic address | `cac:AccountingSupplierParty/cac:Party/cbc:EndpointID` with `@schemeID` (0208 for a Belgian enterprise number) | Must be provided (R020) |
+| Buyer electronic address | `cac:AccountingCustomerParty/cac:Party/cbc:EndpointID` | Must be provided (R010) |
+| Seller and buyer name, address, VAT number | `cac:PartyLegalEntity`, `cac:PostalAddress`, `cac:PartyTaxScheme` | Required where EN 16931 requires them |
+| Line quantity and net amount | `cbc:InvoicedQuantity` with `@unitCode`, `cbc:LineExtensionAmount` | Line net = quantity x net price + charges - allowances (R120) |
+| Line VAT category and rate | `cac:Item/cac:ClassifiedTaxCategory` | Category from UNCL5305; rate required except for category O |
+| VAT breakdown | `cac:TaxTotal/cac:TaxSubtotal` | One per VAT category and rate; only one tax total with subtotals (R053) |
+| Totals and amount due | `cac:LegalMonetaryTotal/cbc:PayableAmount` | Totals must add up (BR-CO-15, BR-CO-16) |
+| Payment means | `cac:PaymentMeans/cbc:PaymentMeansCode` | For example 30 credit transfer, 58 SEPA credit transfer, 59 SEPA direct debit |
+| Payee account | `cac:PayeeFinancialAccount/cbc:ID` | IBAN for a transfer |
+| No empty elements | All | R008 |
 
-### Peppol VAT Category Codes (Belgian Relevance)
+The 2025 version said BuyerReference is always mandatory. The rule is a buyer reference **or** an order reference (R003).
 
-**Peppol VAT Category Codes (Belgian Relevance)**
+### Peppol VAT category codes (Belgian use)
 
-| Code | Meaning |
-| --- | --- |
-| S | Standard rate (21%), reduced (12%, 6%) |
-| Z | Zero rated |
-| E | Exempt from VAT |
-| AE | VAT Reverse Charge |
-| K | Intra-community supply |
-| G | Export outside the EU |
-| O | Not subject to VAT |
+**Peppol VAT category codes (UNCL5305 subset)**
+
+| Code | Meaning | Belgian use |
+| --- | --- | --- |
+| S | Standard rate | Any positive Belgian rate (21%, 12%, 6%) |
+| Z | Zero rated goods | Zero-rated supplies |
+| E | Exempt from tax | Exempt supplies |
+| AE | VAT reverse charge | Belgian reverse charge, for example construction work |
+| K | VAT exempt for EEA intra-community supply | Intra-EU supplies (outside the Belgian B2B obligation) |
+| G | Free export item, tax not charged | Exports |
+| O | Services outside scope of tax | Not subject to VAT; VAT amount must be zero |
+| L, M | Canary Islands, Ceuta and Melilla taxes | Not used for Belgian supplies |
+
+The rates themselves are in [belgium-vat-return](belgium-vat-return.md).
 
 ## Section 5 -- Transmission Method
 
-### B2B: Peppol Network
+### B2B: Peppol network
 
-**B2B: Peppol Network**
+**B2B: Peppol network**
 
-| Component | Detail |
-| --- | --- |
-| Network | Peppol eDelivery Network (4-corner model) |
-| Sender Access Point | Certified Peppol Access Point used by the supplier |
-| Receiver Access Point | Certified Peppol Access Point used by the buyer |
-| Endpoint lookup | Peppol SMP (Service Metadata Publisher) directory |
-| Participant ID | Belgian enterprise number (KBO/BCE) with scheme 0208, or VAT number with scheme 9925 |
-| Protocol | Peppol AS4 profile |
-| Authentication | Peppol PKI certificates issued by OpenPeppol CA |
+| Component | Detail | Source |
+| --- | --- | --- |
+| Network | Peppol: an open agreement framework and network, compared to a telecom network; participants must at least receive Peppol BIS | efactuur.belgium.be Peppol FAQ |
+| Service providers (access points) | Certified Peppol service providers connect businesses to the network; a business cannot register directly | Same, questions on service providers and registration |
+| Registration | Through end-user software connected to a service provider; registration under the enterprise number (0208) is contractually required of providers | Same, questions 4 and 5 |
+| Lookup | The Peppol directory shows who can receive; search "0208:" plus the enterprise number; it does not show who can send | Same, question 6 |
+| Peppol-first | Software should send via Peppol whenever the partner is on Peppol; suppliers need not ask customers for a Peppol ID | Same, question 4; efactuur.belgium.be FAQ, question 15 |
+| Customer portals | A customer cannot oblige a supplier to upload invoices to its own portal without the supplier's express agreement | efactuur.belgium.be FAQ, question 18 |
+| Delivery time | Usually minutes to a few hours; Peppol does not guarantee real-time delivery; ask the software supplier after one working day of delay | efactuur.belgium.be Peppol FAQ, question 9 |
+| Authority | FOD BOSA is the Belgian Peppol Authority | Same, question 8 |
 
-### B2G: Mercurius Platform
+### B2G: Mercurius
 
-**B2G: Mercurius Platform**
+**B2G: Mercurius**
 
-| Component | Detail |
-| --- | --- |
-| Platform | Mercurius -- central mailroom for all Belgian public entities |
-| Alignment | Fully integrated into the Peppol ecosystem |
-| Web portal | Manual invoice submission available via Mercurius web portal |
-| Automated submission | Via Peppol Access Point to the Mercurius endpoint |
-| Track and trace | Mercurius portal provides delivery tracking for senders and receivers |
-| Alternative | Hermes platform (transitional bridge for entities not yet able to process structured invoices; converts to PDF) |
+| Component | Detail | Source |
+| --- | --- | --- |
+| Rule | Electronic invoicing compulsory for public contracts published after 1 March 2024, under the Royal Decree of 9 March 2022 | efactuur.belgium.be, "Voor wie" |
+| Threshold | As a rule for contracts from EUR 3,000 excluding VAT; buyers may require it below that; federal buyers have required it below EUR 3,000 since 1 March 2024 | Same, footnote 1 |
+| Contact | Questions on Mercurius go through the Mercurius contact form of FOD BOSA | einvoice.belgium.be |
 
-### Hermes Bridge (Transitional)
+### Hermes
 
-Hermes is a temporary platform that converts structured Peppol e-invoices into human-readable formats (PDF) for recipients not yet technically equipped. Hermes is designed to be phased out as digital maturity increases. It also includes a web portal with tracking features.
+The 2025 version described Hermes, a free government platform that converts structured invoices to PDF for recipients that are not ready. No official page on Hermes was found on 2026-10-30; see the "Not yet confirmed" line.
 
 ## Section 6 -- Validation Rules
 
-### Peppol Validation Layers
+### Peppol validation layers
 
-- **Validation layers** — 1. XML schema validation against UBL 2.1 XSD. 2. EN 16931 business rules (CEN/TC 434 schematrons). 3. Peppol BIS Billing 3.0 rules (OpenPeppol schematrons). 4. Access Point validation (transport-level checks: endpoint existence in SMP, document type support)
+- **Validation layers.** (1) UBL 2.1 schema; (2) EN 16931 business rules (BR- rules); (3) Peppol BIS Billing 3.0 rules (PEPPOL- rules), marked fatal or warning (Peppol BIS Billing 3.0).
+- **Belgian enterprise number** used as an identifier with scheme 0208 must have 10 digits and pass the modulo-97 check (PEPPOL-COMMON-R043, fatal).
 
-### Pre-Submission Checks
+### Pre-submission checks
 
-- **Pre-submission checks** — Validate XML against UBL 2.1 schema and Peppol BIS 3.0 schematron before sending; Verify buyer Peppol endpoint is registered in the SMP directory; Confirm VAT category codes match the correct Belgian VAT treatment; Ensure BuyerReference is populated (mandatory in Peppol BIS); Verify Belgian VAT number format (BE + 10 digits, check digit valid)
+- **Pre-submission checks.** Validate against the UBL schema and the Peppol schematrons; check the customer is on Peppol (directory lookup on 0208); give a buyer reference or order reference; one VAT category per line; one VAT breakdown per category and rate; totals add up; no empty elements; attachments inside the UBL file.
 
-### Common Rejection Reasons
+### Common rejection reasons
 
-**Common Rejection Reasons**
+**Common rejection reasons**
 
-| Reason | Detail |
+| Reason | Rule |
 | --- | --- |
-| Endpoint not found | Buyer is not registered in the Peppol SMP directory |
-| Schema violation | XML does not conform to UBL 2.1 XSD |
-| Business rule failure | Peppol BIS or EN 16931 schematron rule violated |
-| Missing BuyerReference | `cbc:BuyerReference` is empty or absent |
-| Invalid VAT category | Tax category code does not match the VAT rate or transaction type |
-| Invalid VAT number | Belgian VAT number fails format or check-digit validation |
-| Unsupported document type | Document type ID not registered for the receiver in SMP |
-| Duplicate invoice | Invoice number already sent to the same buyer |
+| No buyer reference and no order reference | PEPPOL-EN16931-R003 |
+| Seller or buyer electronic address missing | PEPPOL-EN16931-R020 / R010 |
+| Wrong specification identifier | PEPPOL-EN16931-R004 |
+| Empty XML elements | PEPPOL-EN16931-R008 |
+| Invoice type code not allowed for the profile | PEPPOL-EN16931-P0100 |
+| Belgian enterprise number in wrong format | PEPPOL-COMMON-R043 |
+| Totals do not add up | BR-CO-15, BR-CO-16 |
+| Line net amount does not equal quantity x price | PEPPOL-EN16931-R120 |
+| Customer not registered on Peppol | Not a schema error: the access point cannot deliver; use another method (Section 9) |
 
 ## Section 7 -- Tax Computation Rules
 
-### Belgian VAT Rates (2026)
+### VAT rates
 
-**Belgian VAT Rates (2026)**
+The 2026 Belgian rates (21%, 12%, 6%, 0%) and what they apply to are in [belgium-vat-return](belgium-vat-return.md). The 2025 version's rate table described the 12% rate wrongly and is replaced by that link.
 
-| Rate | Percentage | Application |
-| --- | --- | --- |
-| Standard | 21% | Most goods and services |
-| Reduced (parking) | 12% | Certain social housing, restaurant meals (food portion), margarine, tyres |
-| Reduced | 6% | Basic necessities, water, pharmaceuticals, books, cultural events, renovations (conditions apply), passenger transport |
-| Zero | 0% | Intra-community supplies, exports, newspapers/periodicals (from 2023) |
+### Rounding rules
 
-### Rounding Rules
+- **Per VAT category, not per line.** The VAT breakdown has one entry per combination of VAT category and rate. Its taxable amount is the sum of the line net amounts plus document-level charges less allowances, and its tax amount is that taxable amount times the rate (Peppol BIS Billing 3.0, section 10.4). The invoice total VAT is the sum of the category amounts (section 8.4).
+- **Two decimals.** Line net amounts and all document-level amounts are rounded to two decimals; totals built from already rounded amounts are not rounded again (Peppol BIS Billing 3.0, section 9).
+- **Belgian rounding rule.** KB nr. 8 allows rounding per item, per rate or otherwise for bookkeeping reasons, but not in a structured e-invoice issued in a format meeting the European norm (KB nr. 8 art. 1, third paragraph, as replaced by the KB of 8 July 2025, art. 4).
+- The 2025 version said VAT is calculated and rounded per line. Under the Peppol rules VAT is calculated per category on the summed net amounts.
 
-- **Rounding rules** — VAT calculated per line, rounded to 2 decimal places (EUR cents). Totals are the algebraic sum of rounded line-level amounts. cac:TaxTotal/cbc:TaxAmount must equal the sum of all cac:TaxSubtotal/cbc:TaxAmount values. Peppol BIS enforces rounding tolerance: ±0.01 per tax subtotal.
+### Worked example: VAT per category
 
-### Multi-Rate Invoice Handling
+A supplier invoices two lines at 21%: line 1 net EUR 10.03, line 2 net EUR 10.03. Per category, the taxable amount is 10.03 + 10.03 = 20.06 and the VAT is 20.06 x 21% = 4.2126, rounded to EUR 4.21. Rounding per line would give 2.1063, rounded to 2.11, twice, so EUR 4.22. The e-invoice must show EUR 4.21; a line-by-line figure of EUR 4.22 fails the total checks.
 
-- **Multi-rate invoice handling** — Each VAT rate requires a separate cac:TaxSubtotal element. Each invoice line must reference exactly one cac:ClassifiedTaxCategory. Mixed-rate invoices must not combine rates within a single line.
+```oa-check
+name: Belgium e-invoice VAT per category versus per line
+tolerance: 0.001
+inputs:
+  line_1_net: 10.03
+  line_2_net: 10.03
+  rate_pct: 21
+steps:
+  - category_taxable: line_1_net + line_2_net
+  - category_vat: round(pct(category_taxable, rate_pct), 2)
+  - per_line_vat: round(pct(line_1_net, rate_pct), 2) + round(pct(line_2_net, rate_pct), 2)
+  - difference: per_line_vat - category_vat
+expected:
+  category_taxable: 20.06
+  category_vat: 4.21
+  per_line_vat: 4.22
+  difference: 0.01
+```
 
-### Self-Billing
+### Multi-rate invoice handling
 
-- **Self-billing rule** — Under Peppol BIS Self-Billing 3.0.1, the buyer issues the invoice on behalf of the supplier. The AccountingSupplierParty is still the supplier (the entity providing goods/services), and the AccountingCustomerParty is the buyer who created the document. The InvoiceTypeCode must indicate self-billing (389).
+- **Multi-rate invoices.** Each line carries exactly one VAT category code and, except for category O, a rate; one VAT breakdown is given per distinct category and rate (Peppol BIS Billing 3.0, sections 10.4 and on line VAT information).
+
+### Self-billing
+
+- **Self-billing rule.** The customer may issue the structured e-invoice in the supplier's name only with a prior agreement between both parties and an acceptance procedure for each invoice by the supplier (WBTW art. 53 § 2bis, fourth paragraph; efactuur.belgium.be FAQ, question 10).
+- **Tolerance.** Where software cannot yet send or receive structured self-billing invoices, the administration is lenient until 30 June 2026 if the business shows its software supplier is implementing it; self-billing invoices may meanwhile be issued another way without sanction for either side (efactuur.belgium.be FAQ, question 23).
+- The Peppol self-billing specification and its type code are on the "Not yet confirmed" line.
 
 ## Section 8 -- Archiving Requirements
 
-**Archiving Requirements**  _(Belgian VAT Code Art. 60)_
+**Archiving requirements**
 
-| Requirement | Detail |
-| --- | --- |
-| Retention period | 7 years from the end of the year in which the VAT return was due (Belgian VAT Code Art. 60) |
-| Extended retention | 10 years for immovable property adjustments; 15 years for new buildings |
-| Format | Structured XML (original Peppol BIS format) must be retained; a human-readable rendering should also be stored |
-| Integrity | Tamper-proof audit trail required; no modification to the original XML permitted |
-| Accessibility | Must be available for tax inspection within Belgium or with immediate electronic access if stored elsewhere in the EU |
-| Audit trail | Both sender and receiver must maintain records of transmission, receipt, and processing |
-| Mercurius/Hermes | B2G invoices routed through Mercurius are archived by the platform; businesses should maintain their own copy |
+| Requirement | Detail | Source |
+| --- | --- | --- |
+| Retention period | 7 years: the Law of 18 December 2025 (art. 97) replaced "ten" by "seven" in VAT Code art. 60 § 3 and § 4, for VAT due from 1 January 2023 (art. 101) | Law of 18 December 2025 |
+| What to keep | The structured e-invoice itself, for the full retention period; the archiving rules did not change with the e-invoicing obligation | efactuur.belgium.be FAQ, question 17 |
+| Readability | Readability must be guaranteed for the whole period, usually by a PDF or a secure viewer; a PDF must keep the content unchanged | Same |
+| Use of the readable copy | Needed for tax audits and for courts, banks, insurers and public bodies that ask for an invoice | Same |
+| Bookkeeping link | Invoices are the dated supporting documents for the books; see [belgium-bookkeeping](belgium-bookkeeping.md) | WER art. III.86 (in belgium-bookkeeping) |
+| Capital goods | The VAT revision period for buildings and similar services is 15 years, and 25 years for certain lettings (WBTW art. 48 § 2 as replaced by the Law of 10 February 2026, art. 7); how long the related invoices must be kept is on the "Not yet confirmed" line | Law of 10 February 2026 |
+
+The 2025 version gave a 7-year period counted from the year the return was due, and 10 or 15 years for property. The period is 7 years after the Law of 18 December 2025; the starting point of the count and the property periods are on the "Not yet confirmed" line.
 
 ## Section 9 -- Penalties for Non-Compliance
 
-### E-Invoicing Specific Penalties (Royal Decree, July 2025)
+### E-invoicing fine (KB nr. 44)
 
-**E-Invoicing Specific Penalties (Royal Decree, July 2025)**  _(Royal Decree, July 2025)_
+**Fine for not having the technical means to issue and receive structured e-invoices (KB nr. 44 annex, section 2, I.C)**
 
-| Infringement | Penalty (EUR) |
+| Infringement | Fine (EUR) |
 | --- | --- |
-| First infringement | 1,500 |
-| Second infringement | 3,000 |
-| Third infringement (within 3 months of previous) | 5,000 |
+| First | 1,500 |
+| Second | 3,000 |
+| Each following | 5,000 |
 
-### E-Invoicing Specific Penalties (Royal Decree, July 2025)
+A second or later infringement counts as such only if the administration finds it at least three months after it found the previous infringement that led to a fine (KB of 8 July 2025, art. 5). The fine applies from 1 January 2026 (art. 6).
 
-Penalties are per infringement, not per invoice. A "subsequent" infringement is only classified as new if identified at least 3 months after the previous penalty, giving businesses a remediation window.
+### Tolerance in early 2026
 
-### Existing VAT Penalties (Unchanged)
+- **First three months of 2026.** FOD Financiën did not apply fines for offences under the new obligation in January to March 2026, if the business can show it took timely and reasonable steps to comply. This covered not yet having the technical means to send or receive, and not issuing a structured e-invoice because its own or a third party's system could not yet do so. The invoice still had to be issued another way. Each case is assessed individually, and there is no general postponement (einvoice.belgium.be, "Period of tolerance during the first three months of 2026").
+- **Self-billing.** Lenient treatment to 30 June 2026 (Section 7).
 
-**Existing VAT Penalties (Unchanged)**
+### Supplier or customer not ready
 
-| Violation | Penalty |
-| --- | --- |
-| Late issuance of invoice | Administrative fine under Belgian VAT Code |
-| Incorrect VAT treatment on invoice | Administrative fine + potential VAT reassessment |
-| Failure to archive | Administrative fine |
-| Fraud | Criminal penalties under Belgian VAT Code |
+- **Supplier not ready.** The customer may in principle refuse the invoice. If it accepts an invoice issued another way (PDF or paper), it keeps its right to deduct VAT; an electronic alternative needs the customer's agreement. The supplier risks a fine (efactuur.belgium.be FAQ, question 7).
+- **Customer not ready.** The supplier may use another method; an electronic alternative needs the customer's agreement. The invoice sent that way is legally valid and the supplier meets its invoicing duty; the customer risks a fine. Once the customer is ready, past invoices need not be re-sent (efactuur.belgium.be FAQ, question 8; WBTW art. 53 § 2bis as amended by the Law of 10 February 2026, art. 4, 4°).
 
-### Practical Consequences
+### Other VAT penalties
 
-Inability to send/receive Peppol invoices blocks the legal invoicing flow for domestic B2B; Suppliers who cannot issue structured invoices risk losing business relationships; Buyers who cannot receive structured invoices violate the mandate by accepting non-compliant documents
+Late or missing invoices, wrong VAT and late returns carry the ordinary VAT fines in KB nr. 41 and KB nr. 44. The amounts are in [be-vat-return](be-vat-return.md) and [belgium-vat-return](belgium-vat-return.md).
+
+### Practical consequences
+
+A business that cannot send through Peppol must still invoice by another route and risks the fine above; a business that cannot receive risks the same fine, and its suppliers will send by other means.
 
 ## Section 10 -- Interaction with Tax Skills
 
-### E-Invoice → VAT Return (BTW-aangifte / Déclaration TVA)
+### E-invoice to VAT return (btw-aangifte / déclaration TVA)
 
-Structured e-invoice data is the primary source for VAT return preparation. From 2028, Belgium anticipates a Peppol five-corner e-reporting model enabling near real-time VAT reporting. This aligns with the EU ViDA (VAT in the Digital Age) initiative.
+Structured invoice data feeds the periodic VAT return; the grids and deadlines are in [be-vat-return](be-vat-return.md).
 
-### Automated Bookkeeping
+### Income tax incentives
 
-Peppol BIS invoices in UBL 2.1 XML are machine-readable and can be automatically booked into accounting systems. This enables straight-through processing for accounts payable and accounts receivable.
+- **120% cost deduction.** Costs (other than depreciation) of invoicing packages to draw up, send and receive structured e-invoices are deductible at 120% (WIB 92 art. 64ter, first paragraph, 1°, restored by the Law of 6 February 2024, art. 4). For companies it applies only to small companies (WIB 92 art. 194octies, as amended by art. 5). It runs for taxable periods 2024 to 2027: in force from assessment year 2025 and repealed from assessment year 2029 (art. 6).
+- **What qualifies.** Periodic subscription costs and advice costs specific to preparing for or operating the obligation; the extra price for e-invoicing on an existing subscription qualifies if shown separately on the invoice; depreciation never qualifies (efactuur.belgium.be, "Fiscale stimulansen").
+- **Investment deduction.** The investment deduction for digital investments rose to 20% from 1 January 2025 (same page). See [be-corporate-tax](be-corporate-tax.md) and [be-income-tax](be-income-tax.md).
 
-### Purchase Order Matching
+### Automated bookkeeping
 
-Peppol supports the full procure-to-pay chain. Invoices can reference Peppol order documents (cac:OrderReference), enabling automated 3-way matching (order → receipt → invoice).
+Structured invoices can be booked automatically into the accounting system. Automatic processing is not a legal obligation (efactuur.belgium.be FAQ, question 23). See [belgium-bookkeeping](belgium-bookkeeping.md).
 
-### Cross-Border Interoperability
+### Purchase order matching
 
-Belgium's Peppol-based framework is inherently interoperable with other Peppol-connected countries (Italy, France, Netherlands, Germany, Nordics, etc.). Cross-border invoices between Peppol participants follow the same technical specification.
+The order reference field (`cac:OrderReference`) links the invoice to the purchase order and satisfies rule R003 where no buyer reference is given.
 
-### Corporate Tax (Vennootschapsbelasting / Impôt des sociétés)
+### Cross-border interoperability
 
-Invoice data from Peppol invoices feeds into corporate tax computations. FPS Finance can cross-reference e-invoice data against reported revenue and deduction claims.
+Peppol connects participants in other countries using the same specification. The Belgian obligation covers only domestic B2B; cross-border use needs the customer's agreement, and registration on Peppol counts as agreement (efactuur.belgium.be summary table). EU-wide e-invoicing for intra-EU supplies is planned from 2030 (einvoice.belgium.be).
+
+### Corporate tax (vennootschapsbelasting / impôt des sociétés)
+
+Invoice data supports the accounting profit used in [be-corporate-tax](be-corporate-tax.md). Whether and how FOD Financiën will receive invoice data directly (e-reporting) is on the "Not yet confirmed" line.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Law of 6 February 2024 amending the VAT Code and the Income Tax Code (mandatory e-invoicing), Staatsblad 20 February 2024 | https://www.ejustice.just.fgov.be/eli/wet/2024/02/06/2024001635/staatsblad | 2026-10-30 |
+| Royal Decree of 8 July 2025 amending KB nr. 1, 8 and 44 (structured e-invoices), Staatsblad 14 July 2025 | https://www.ejustice.just.fgov.be/eli/besluit/2025/07/08/2025005169/staatsblad | 2026-10-30 |
+| Law of 10 February 2026 on various VAT provisions (art. 3 to 7, 22), Staatsblad 20 February 2026 | https://www.ejustice.just.fgov.be/eli/wet/2026/02/10/2026001291/staatsblad | 2026-10-30 |
+| Law of 18 December 2025 on various provisions (art. 97 and 101, VAT retention) | https://www.ejustice.just.fgov.be/eli/wet/2025/12/18/2025009647/staatsblad | 2026-10-30 |
+| efactuur.belgium.be, FAQ on the B2B obligation | https://efactuur.belgium.be/nl/FAQ/algemene-vragen-b2b | 2026-10-30 |
+| efactuur.belgium.be, "Voor wie wordt e-facturatie verplicht?" | https://efactuur.belgium.be/nl/article/voor-wie-wordt-e-facturatie-verplicht | 2026-10-30 |
+| efactuur.belgium.be, FAQ on Peppol | https://efactuur.belgium.be/nl/FAQ/algemene-vragen-over-peppol | 2026-10-30 |
+| efactuur.belgium.be, "Fiscale stimulansen voor het invoeren van e-facturering" | https://efactuur.belgium.be/nl/article/fiscale-stimulansen-voor-het-invoeren-van-e-facturatie | 2026-10-30 |
+| einvoice.belgium.be, "Period of tolerance during the first three months of 2026" | https://einvoice.belgium.be/en/news/period-tolerance-during-first-three-months-2026 | 2026-10-30 |
+| einvoice.belgium.be, "Structured electronic invoices between companies are compulsory since 2026" | https://einvoice.belgium.be/en/article/structured-electronic-invoices-between-companies-are-compulsory-2026 | 2026-10-30 |
+| FOD Financiën, E-facturering (points to efactuur.belgium.be) | https://financien.belgium.be/nl/ondernemingen/btw/e-facturatie | 2026-10-30 |
+| OpenPeppol, Peppol BIS Billing 3.0 (version 3.0.21) | https://docs.peppol.eu/poacc/billing/3.0/bis/ | 2026-10-30 |
+
+Not yet confirmed: the consolidated text of VAT Code art. 53 § 2bis and art. 60 (FisconetPlus returned an error page on 2026-10-30, so the rules were read in the amending laws); whether FOD Financiën will introduce e-reporting of invoice data from 1 January 2028 (only third-party reports of a draft were found, no enacted law); the Hermes platform (no official page found); Peppol identifier scheme 9925 for VAT numbers, the AS4 transport profile and the Peppol PKI certificates; the full Peppol document type identifiers for invoice and credit note; the Peppol BIS Self-Billing specification, its version and type code 389; how long invoices for buildings must be kept now that the revision period is 15 or 25 years; the 2025 version's statement that FOD Financiën cross-checks e-invoice data against reported revenue; the 2025 version's list of "Duplicate invoice" and "Unsupported document type" as rejection reasons; the channel Mercurius uses for B2G invoices (the 2025 version said Peppol plus a web portal with track and trace); when the 7-year retention period starts to run; the 2025 version's points that invoices stored outside Belgium must be accessible electronically from within the EU, that Mercurius archives B2G invoices, that CII syntax is accepted through Mercurius, and that Parliament approved the law on 1 February 2024.
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+The most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
 
 <!-- openaccountants-cta-block -->
 
