@@ -51,8 +51,8 @@ Detail lives in the sibling skills. Read [no-social-contributions](no-social-con
 | Personal allowance (personfradrag), class 1 | NOK 114,540 | 2026 | ssv. § 6-3 |
 | Minimum deduction on pay | 46% of pay, at most NOK 95,700 | 2026 | skatteloven § 6-32 first paragraph a; ssv. § 6-1 |
 | Minimum deduction on pensions | 40% of pensions, at most NOK 75,400 (pay and pension together capped at NOK 95,700) | 2026 | skatteloven § 6-32 first paragraph b and d; ssv. § 6-1 |
-| Special deduction, Finnmark and seven Nord-Troms municipalities | NOK 45,000 (not for bracket tax or contribution) | 2026 | skatteloven § 15-5 |
-| Tax credit for pensioners | Up to NOK 39,100; reduced by 19.1% of pension income above NOK 294,200 and 6% above NOK 437,100 | 2026 | ssv. § 6-5 (amended 19 June 2026); skatteloven § 16-1 third paragraph |
+| Special deduction, Finnmark and seven Nord-Troms municipalities | NOK 45,000 (not for bracket tax or contribution; not for a child under 17 at the end of the year) | 2026 | skatteloven § 15-5 |
+| Tax credit for pensioners | Up to NOK 39,100; reduced by 19.1% of pension income above NOK 294,200 and 6% above NOK 437,100 | 2026 | ssv. § 6-5 as amended by FOR-2026-06-19-1243 with effect from 1 January 2026; skatteloven § 16-1 third paragraph; Skatteetaten, Skattefradrag for pensjonsinntekt 2026 |
 | Low-income limitation for pensioners | No tax below NOK 163,750 (single) or NOK 151,350 (each spouse); above that, tax capped at 55% of the excess | 2026 | ssv. § 6-4; skatteloven § 17-1 |
 | Selected-youth work deduction (trial) | NOK 125,000, reduced by 40% of eligible income above NOK 345,000 | 2026 | ssv. § 6-6; skatteloven § 6-86 |
 | Parental childcare deduction | NOK 15,000 for one child, plus NOK 10,000 for each further child | 2026 | ssv. § 6-2 |
@@ -68,7 +68,7 @@ Detail lives in the sibling skills. Read [no-social-contributions](no-social-con
 | Late-payment interest | 12% from 1 January 2026; 12.25% from 1 July 2026 | 2026 | skattebetalingsloven § 11-1; https://www.skatteetaten.no/satser/forsinkelsesrenter/ |
 | Court fee (basis of enforcement fines) | NOK 1,345 | 2026 | Skatteetaten, enforcement fines; https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/ |
 
-The 22% is the sum of maximum rates. A county or municipality may set a lower rate, but the maximum applies unless it does (ssv. § 3-8 second paragraph).
+The 22% is the sum of maximum rates. A county or municipality may set a lower rate, but the maximum applies unless it does (ssv. § 3-8 second paragraph). The municipality that counts, including for the Finnmark and Nord-Troms rate and deduction, is the one where the person lived at the end of 1 January of the income year (skatteloven § 3-1 second paragraph; § 15-5 first paragraph).
 
 ## The taxable base
 
@@ -86,7 +86,7 @@ The personal allowance is cut to whole or started months of residence for a part
 
 Personal income (§ 12-2) is pay and benefits, pensions, work assessment allowance and disability benefit, and calculated personal income from a sole proprietorship. No deduction reduces it: not the personal allowance, not interest, not losses. Bracket tax is charged step by step on total personal income (ssv. § 3-1). For a part-year resident the step limits are cut to whole or started months of residence (ssv. § 3-1 second paragraph).
 
-The national insurance contribution is a percentage of the same personal income. Pay carries 7.6%, business income 10.8%, pensions and people under 17 or over 69 carry 5.1% (folketrygdloven § 23-3; 2026 decision §§ 6 to 8). Childminding in one's own home and fishing businesses that pay product tax carry the middle rate instead of the high rate (§ 23-3 second paragraph no. 2 c and d). Nothing is due up to NOK 99,650 of total personal income, and the total can never exceed 25% of income above NOK 99,650. Apply that limit once across all categories. The full method is in [no-social-contributions](no-social-contributions.md).
+The national insurance contribution is a percentage of the same personal income. Pay carries 7.6%, business income 10.8%, pensions and people under 17 or over 69 carry 5.1% (folketrygdloven § 23-3; 2026 decision §§ 6 to 8). Childminding in one's own home (children under 12 at the end of the year, or with special care needs) and businesses that pay product tax, such as fishing, carry the middle rate instead of the high rate (§ 23-3 second paragraph no. 2 c and d). Nothing is due up to NOK 99,650 of total personal income, and the total can never exceed 25% of income above NOK 99,650. Apply that limit once across all categories. The full method is in [no-social-contributions](no-social-contributions.md).
 
 ### Sole proprietors (enkeltpersonforetak)
 
@@ -102,11 +102,11 @@ Deduct business costs with an invoice, a business purpose and a business-or-priv
 |---|---|
 | Home office in an owned home or housing cooperative unit | Standard deduction NOK 2,240 for 2026, not reduced for part-year use; or actual costs with a supported split. The room must be used for the business. No deduction for rent paid to yourself. |
 | Phone and internet (electronic communication) | Deduct the business costs, then add back private use. The private add-back is at most NOK 4,392 a year (field 6998 in the business specification) and never more than the costs. |
-| Client meals at a restaurant outside the workplace | Deductible only within a ceiling of NOK 592 per person for 2026. Above the ceiling, none of the meal is deductible. Spirits make the whole meal non-deductible. Other entertainment, gifts to business contacts and trips are not deductible. |
+| Client meals | A modest meal for customers or business contacts is deductible only if it relates to the business, takes place in business hours or right next to negotiations or a product demonstration, and is served at the workplace, or at a nearby restaurant if the workplace has no canteen or other reasonable option. At a restaurant outside the workplace the 2026 ceiling is NOK 592 per person; above it, none of the meal is deductible. Spirits make the whole meal non-deductible, and tobacco is never deductible (Skatte-ABC R-13-6.1). Other representation costs are not deductible (skatteloven § 6-21). |
 | Training | Keeping up a qualification already used to earn income can be deductible. Getting a new qualification or degree normally is not. |
 | Fines and additional tax | Not deductible, even when incurred in the business. |
 
-**Vehicles.** A car counts as a business vehicle (yrkesbil) if business driving is at least 6,000 km a year, or more than half its total use; take a three-year view (Skatte-ABC B-5-3.3). Keep a trip log. A car below those tests is a private car even if it is used somewhat in the business; for business driving in a private car under 6,000 km the 2026 rate is NOK 3.50 per km (2026 rates regulation). For a business vehicle, deduct actual costs and depreciation and add back private use. Under the standard car-benefit rule the 2026 benefit is 30% of the list price as new up to NOK 370,300 and 20% of the excess. Use 75% of the list price if the car was more than three years old on 1 January, or if documented business driving exceeds 40,000 km in the year; use 56.25% if both apply (Skatteetaten, bilsatser firmabil). Private use of a car outside the standard rules is valued at NOK 3.40 per km (2026 rates regulation).
+**Vehicles.** A car counts as a business vehicle (yrkesbil) if business driving is at least 6,000 km a year, or more than half its total use; take a three-year view (Skatte-ABC B-5-3.3). Keep a trip log. A car below those tests is a private car even if it is used somewhat in the business; for business driving in a private car under 6,000 km the 2026 rate is NOK 3.50 per km (2026 rates regulation). For a business vehicle, deduct actual costs and depreciation and add back private use. Under the standard car-benefit rule the 2026 benefit is 30% of the list price as new up to NOK 370,300 and 20% of the excess. Use 75% of the list price if the car was more than three years old on 1 January, or if documented business driving exceeds 40,000 km in the year; use 56.25% if both apply (Skatteetaten, bilsatser firmabil). Private use of a car outside the standard rules is valued at NOK 3.40 per km (2026 rates regulation § 5 fifth paragraph). For a class 2 van or a lorry under 7,501 kg the list-price base is reduced by 50%, at most NOK 150,000, before the percentages are applied; where the conditions for individual valuation are met, private use is NOK 3.40 per km instead (2026 rates regulation § 5 sixth paragraph).
 
 **Depreciation.** An asset with a cost of NOK 30,000 or more and a life of at least three years must go into a declining-balance group. An asset under NOK 30,000 or with a life under three years can be expensed or depreciated (§ 14-40). Use tax groups, not book depreciation (§ 14-43):
 
@@ -129,13 +129,13 @@ Groups a to d are pooled; each asset in e to i has its own balance; j is pooled 
 
 **Small businesses.** An owner whose total operating revenue is NOK 50,000 or less need not file the business specification (næringsspesifikasjon), unless an exception applies, for example VAT registration, accounting duty, more than one business or a spouse split. Without the personal income report, personal income equals business income and a negative result cannot be carried forward (skatteforvaltningsforskriften § 8-2-1).
 
-**Losses.** An ordinary business loss reduces other ordinary income. An unused ordinary loss is carried forward. Keep it separate from negative calculated personal income.
+**Losses.** An ordinary business loss reduces other ordinary income. An unused ordinary loss is carried forward; § 14-6 sets no time limit, and older losses are used first. Keep it separate from negative calculated personal income.
 
 ### Credits and limits
 
 - **Pension tax credit (§ 16-1).** A person on a national insurance retirement pension or AFP gets a credit of up to NOK 39,100 against income tax and the contribution. It falls by 19.1% of pension income above NOK 294,200 and by 6% above NOK 437,100. It is cut for graded pension, AFP reduced for earnings and months without pension.
 - **Low-income limitation (§ 17-1).** For a pensioner, no income tax or contribution is due when ordinary income (plus 1.5% of net wealth above NOK 200,000 for a single person, excluding the primary home) is no more than NOK 163,750 (single) or NOK 151,350 (each spouse). Above that, the listed taxes cannot exceed 55% of the excess. A person who qualifies for both the credit and the limitation gets the lower tax (§ 16-1 fourth paragraph).
-- **Selected-youth work deduction (§ 6-86).** A trial from 2026 for 8% of people born 1991 to 2006 who were registered as taxable to Norway on 31 October 2025, drawn at random by Skatteetaten. The deduction is NOK 125,000, reduced by 40% of eligible income (pay, calculated personal income and partner pay) above NOK 345,000, so it reaches zero at NOK 657,500. It cannot exceed the income, cannot create or increase a loss and lasts five income years. It is cut by months for part-year residents. It is not given to anyone on the PAYE scheme or the foreign-worker standard deduction. Being in the age group is not enough; check the person was drawn.
+- **Selected-youth work deduction (§ 6-86).** A trial from 2026 for 8% of people born 1991 to 2006 who were registered as taxable to Norway on 31 October 2025, drawn at random by Skatteetaten. The deduction is NOK 125,000, reduced by 40% of eligible income (pay, calculated personal income and partner pay) above NOK 345,000, so it reaches zero at NOK 657,500. It cannot exceed the income, cannot create or increase a loss and lasts five income years. It is cut by months for part-year residents. It is not given to anyone on the PAYE scheme or the foreign-worker standard deduction. It is a deduction in ordinary income only, so bracket tax and the contribution do not change. Being in the age group is not enough; check the person was drawn.
 
 ### Wealth tax
 
@@ -156,9 +156,9 @@ Net wealth is valued at 1 January of the assessment year. Main valuation rules: 
 | Correcting your own return | Up to three years after the filing deadline | skatteforvaltningsloven § 9-4 second paragraph |
 | Tax office reopening | Five years after the end of the income year; ten years with aggravated additional tax | skatteforvaltningsloven § 12-6 |
 
-The return covers wealth on 1 January of the assessment year and income of the previous calendar year (§ 8-2-2). A sole proprietor files the personal return with the business information and the business specification. Skatteetaten's page for sole proprietors says a deadline on a Saturday or Sunday is met by the next working day. Employees pay through withholding on the tax card; see [no-employer-payroll](no-employer-payroll.md). Self-employed people and people with income that has no withholding pay advance tax. Update the tax card when expected profit changes; Skatteetaten lets you change it online until 15 December. If an instalment is not paid, the later instalments fall due at once (§ 10-20 fourth paragraph).
+The return covers wealth on 1 January of the assessment year and income of the previous calendar year (§ 8-2-2). A sole proprietor files the personal return with the business information and the business specification. This applies even if the business had no activity in the year or was recently closed (Skatteetaten, tax return for sole proprietorships). Skatteetaten's page for sole proprietors says a deadline on a Saturday or Sunday is met by the next working day. Employees pay through withholding on the tax card; see [no-employer-payroll](no-employer-payroll.md). Self-employed people and people with income that has no withholding pay advance tax. Update the tax card when expected profit changes; Skatteetaten lets you change it online until 15 December. If an instalment is not paid, the later instalments fall due at once (§ 10-20 fourth paragraph).
 
-Keep accounting records: the annual accounts, specifications and documentation of entries for five years after the year end; agreements and material correspondence for three years and six months (bokføringsloven § 13).
+Keep accounting records: the annual accounts, specifications and documentation of entries for five years after the year end; agreements and material correspondence for three years and six months (bokføringsloven § 13). Entries kept electronically must stay available electronically for three years and six months after the year end (§ 13 b).
 
 ## Penalties and interest
 
@@ -166,7 +166,7 @@ Keep accounting records: the annual accounts, specifications and documentation o
 - **Additional tax (tilleggsskatt).** 20% of the tax advantage that was or could have been gained from wrong or missing information; 10% where the information was also reported by an employer or other third party (§ 14-5). Aggravated additional tax adds 20% or 40% for intent or gross negligence, so 40% or 60% in total (§ 14-6).
 - **No additional tax** on correct pre-filled information, obvious typing or calculation errors, a voluntary correction not prompted by a control, an amount under NOK 1,000, or after death (§ 14-4). An enforcement fine already paid is deducted from additional tax for failing to file (§ 14-5 fifth paragraph). Additional tax can be appealed within six weeks (Skatteetaten, additional tax).
 - **Late-payment interest.** Charged from the due date until payment (skattebetalingsloven § 11-1). The rate is 12% from 1 January 2026 and 12.25% from 1 July 2026.
-- **Interest on residual tax.** Residual tax carries an interest charge from 1 July of the income year to the first due date, at the rate under § 11-6 reduced by 22%. No charge arises on residual tax paid by 31 May of the assessment year (§ 11-5). Interest also runs on tax increased by a change decision or the taxpayer's own correction (§ 11-2).
+- **Interest on residual tax.** Residual tax carries an interest charge from 1 July of the income year to the first due date, at the rate in § 11-6 second paragraph second sentence (Norges Bank's policy rate on 1 January) reduced by 22%. No charge arises on residual tax paid by 31 May of the assessment year (§ 11-5). Interest also runs on tax increased by a change decision or the taxpayer's own correction (§ 11-2).
 
 ## Cross-border points
 
@@ -261,18 +261,20 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Stortingets skattevedtak for inntektsåret 2026, FOR-2025-12-18-2747, amended 19 June 2026 (§§ 2-1, 2-3, 3-1, 3-2, 3-8, 3-9, 6-1 to 6-6) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-10-30 |
+| Endring i Stortingets skattevedtak 2026, FOR-2026-06-19-1243 (§ 6-5, in force 1 January 2026) | https://lovdata.no/dokument/LTI/forskrift/2026-06-19-1243 | 2026-10-30 |
+| Skatteetaten, Skattefradrag for pensjonsinntekt 2026 | https://www.skatteetaten.no/satser/skattefradrag-for-pensjonsinntekt/?year=2026 | 2026-10-30 |
 | Stortingsvedtak om fastsetting av avgifter mv. til folketrygden for 2026, FOR-2025-12-18-2748 (§§ 6 to 8) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 | 2026-10-30 |
-| Skatteloven, lov 1999-03-26-14 (§§ 2-1, 2-3, 4-10, 4-12, 6-30 to 6-32, 6-51, 6-86, 12-2, 12-10 to 12-13, 14-40 to 14-47, 15-4, 15-5, 16-1, 17-1, 20-1 to 20-3) | https://lovdata.no/lov/1999-03-26-14 | 2026-10-30 |
+| Skatteloven, lov 1999-03-26-14 (§§ 2-1, 2-3, 3-1, 4-10, 4-12, 6-21, 6-30 to 6-32, 6-51, 6-86, 12-2, 12-10 to 12-13, 14-6, 14-40 to 14-47, 15-4, 15-5, 16-1, 17-1, 20-1 to 20-3) | https://lovdata.no/lov/1999-03-26-14 | 2026-10-30 |
 | Folketrygdloven, lov 1997-02-28-19 (§ 23-3) | https://lovdata.no/lov/1997-02-28-19/§23-3 | 2026-10-30 |
 | Skatteforvaltningsloven, lov 2016-05-27-14 (§§ 8-2, 9-4, 12-6, 14-1, 14-4 to 14-6) | https://lovdata.no/lov/2016-05-27-14 | 2026-10-30 |
 | Skatteforvaltningsforskriften, FOR-2016-11-23-1360 (§§ 8-2-1 to 8-2-5, 14-1-1) | https://lovdata.no/forskrift/2016-11-23-1360 | 2026-10-30 |
 | Skattebetalingsloven, lov 2005-06-17-67 (§§ 10-20, 10-21, 11-1, 11-2, 11-5) | https://lovdata.no/lov/2005-06-17-67 | 2026-10-30 |
-| Bokføringsloven, lov 2004-11-19-73 (§ 13) | https://lovdata.no/lov/2004-11-19-73/§13 | 2026-10-30 |
+| Bokføringsloven, lov 2004-11-19-73 (§§ 13, 13 b) | https://lovdata.no/lov/2004-11-19-73/§13 | 2026-10-30 |
 | Skatteetaten, Forskuddsutskrivingen 2026 | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-10-30 |
-| Forskrift om satser mv. til bruk for forskudd og skattefastsetting for 2026, FOR-2025-11-07-2216 (NOK 3.50 and NOK 3.40 per km) | https://lovdata.no/dokument/SF/forskrift/2025-11-07-2216 | 2026-10-30 |
+| Forskrift om satser mv. til bruk for forskudd og skattefastsetting for 2026, FOR-2025-11-07-2216 (§§ 4 and 5: NOK 3.50 and NOK 3.40 per km, van reduction) | https://lovdata.no/dokument/SF/forskrift/2025-11-07-2216 | 2026-10-30 |
 | Skatteetaten, Home office standard deduction 2026 | https://www.skatteetaten.no/en/rates/home-office-standard-deduction/?year=2026 | 2026-10-30 |
 | Skatteetaten, Telefon og internett (ENK) | https://www.skatteetaten.no/bedrift-og-organisasjon/skatt/skattemelding-naringsdrivende/fradrag/eiendeler-utstyr-eiendom/telefon-og-internett/ | 2026-10-30 |
-| Skatteetaten, Skatte-ABC R-13 Representasjon (2026 meal ceiling) | https://www.skatteetaten.no/en/rettskilder/type/handboker/skatte-abc/gjeldende/r-13-representasjon/R-13.008/R-13.009/ | 2026-10-30 |
+| Skatteetaten, Skatte-ABC R-13 Representasjon (R-13-6.1 conditions and 2026 meal ceiling) | https://www.skatteetaten.no/en/rettskilder/type/handboker/skatte-abc/gjeldende/r-13-representasjon/R-13.008/R-13.009/ | 2026-10-30 |
 | Skatteetaten, Skatte-ABC B-5-3.3 Yrkesbil | https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/b-5-bil--fradrag-for-bilkostnader/B-5.007/B-5.010/ | 2026-10-30 |
 | Skatteetaten, Bilsatser firmabil 2026 | https://www.skatteetaten.no/satser/bilsatser---firmabil/ | 2026-10-30 |
 | Skatteetaten, Tax return for sole proprietorships | https://www.skatteetaten.no/en/business-and-organisation/tax-for-businesses/tax-return/sole-proprietorships/ | 2026-10-30 |
@@ -282,7 +284,7 @@ expected:
 | Skatteetaten, Forsinkelsesrenter | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-10-30 |
 | Skatteetaten, Formuesskatt satser 2026 | https://www.skatteetaten.no/satser/formuesskatt/ | 2026-10-30 |
 
-Not yet confirmed: that a sole proprietor using the NOK 3.50 kilometre rate may deduct no other costs of that car, and how an owner chooses between the standard benefit and the per-km valuation for a business vehicle (Skatte-ABC B-7, not read); the maximum shield rate for sole proprietors for 2026 (set after the year ends; § 12-12 third paragraph); the conditions for the home-office standard deduction on the share of the home and rental income (at least 50% of rental value, or rent up to NOK 20,000), which the 2026 page did not state; the van rules (class-two van list-price cut of 50% capped at NOK 150,000) and the 75% cost cap on the car benefit for sole proprietors, both in the previous version of this skill; the rate in skattebetalingsloven § 11-6 used for the residual-tax interest charge in 2026; whether the 19 June 2026 amendments to the pension credit (NOK 39,100, 19.1%) apply to the whole of income year 2026 in Skatteetaten's assessment, as the amended decision reads.
+Not yet confirmed: that a sole proprietor using the NOK 3.50 kilometre rate may deduct no other costs of that car, and how an owner chooses between the standard benefit and the per-km valuation for a business vehicle (Skatte-ABC B-7, not read); the maximum shield rate for sole proprietors for 2026 (set after the year ends; § 12-12 third paragraph); the conditions for the home-office standard deduction on the share of the home and rental income (at least 50% of rental value, or rent up to NOK 20,000), which the 2026 page did not state; the 75% cost cap on the car benefit for sole proprietors and whether the 40,000 km reduction is closed to class 2 vans, both in the previous version of this skill; the split of positive calculated personal income between spouses who both work in a joint business (in the previous version); the rate in skattebetalingsloven § 11-6 used for the residual-tax interest charge in 2026.
 
 > Contributed by Michael Cutajar.
 
