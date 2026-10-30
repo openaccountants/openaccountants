@@ -1,134 +1,116 @@
 ---
 name: sm-vat-gst
 description: >
-  Prepare selected 2026 San Marino monofase import-tax workpapers by actual goods, connected services, origin, importer, transaction date, taxable base and established tariff classification. This is not a generic VAT credit/return model. Distinguishes ordinary 17% import tax, conditional capital-goods relief, export-refund evidence, Italy VAT exchange procedures and the 2026-2028 domestic-invoice transition. Includes three arithmetic controls with explicit eligibility assumptions. Full tariff amendments, complementary/excise duties, exemptions, refund amounts/time limits and current operational import/payment instructions remain partial. Named San Marino accountant review remains open.
+  San Marino indirect tax for 2026. San Marino has no VAT; it charges a single-stage import tax (imposta monofase) on goods and connected services brought into the Republic, under Law 40/1972. Covers who pays, the taxable base, the ordinary 17% rate, the Decree 108/1997 reduced and increased tables (2%, 6%, 10% and 21%), the 1% capital-goods rate and its vehicle, rental and retention rules, used goods, export refunds, the Italy-San Marino electronic invoicing exchange through SDI under the Italian decree of 21 June 2021, and the domestic e-invoicing transition under Delegated Decree 133/2026 (optional from 1 October 2026, required from 1 January 2027, penalties from 2028). Use for San Marino VAT, monofase rate, import tax, trading with Italy, San Marino e-invoice and capital-goods questions.
 jurisdiction: SM
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.2
-sources:
-  - url: "https://www.consigliograndeegenerale.sm/contents/instance18/files/document/19029leggi_2560.pdf"
-    title: "Law 40/1972; import tax original framework"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17021434.html"
-    title: "Decree 50/1993; selected base and documentary rules"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html"
-    title: "Decree 108/1997; original tariff-table framework"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html"
-    title: "DD 183/2011; ordinary 17 percent rate and commencement"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html"
-    title: "Decree 135/2003; capital-goods framework requiring amendment checks"
-    as_of: "2026-10-24"
-  - url: "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=e54431a0e32f941616323ba3300c13a32828e853"
-    title: "Authentic DD 98/2026; selected tariff change from August"
-    as_of: "2026-10-24"
-  - url: "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538"
-    title: "Authentic DD 133/2026; domestic invoice transition"
-    as_of: "2026-10-24"
-  - url: "https://www.gazzettaufficiale.it/eli/id/2021/07/15/21A04244/SG"
-    title: "Italy DM 21 June 2021; VAT exchange framework"
-    as_of: "2026-10-24"
-  - url: "https://www.finanze.sm/pub2/FinanzeSM/FISCALITA-NAZIONALE.html"
-    title: "San Marino Finance; current indirect-tax source map"
-    as_of: "2026-10-24"
+version: 0.3
 ---
 
-# San Marino monofase and VAT interface v0.2
+# San Marino monofase import tax and the VAT interface with Italy v0.3
 
-## Scope and transaction questions
+Tax year: calendar year 2026. Currency EUR. Authority: UO Ufficio Tributario (Tax Office). San Marino has no value added tax. The Finance department lists the single-stage import tax (monofase) and related levies as the domestic indirect-tax system ([Finance department][finance]). The `vat-gst` file name is kept for compatibility.
 
-San Marino's Finance ministry identifies **monofase import tax**, complementary tax and related procedures as the domestic indirect-tax system. For this 2026 preparation, start with actual imports of goods and connected services under Law 40/1972, not a generic domestic output-VAT less input-VAT return. Establish the importer, parties and IDs, goods description and intended use, origin/destination, transport and delivery dates, invoice, consideration, duties and supporting customs documents. A service classification or Italian VAT consequence requires its own rule; not every standalone service is an import-taxable good or automatically tax free. [Finance ministry][finance]; [Law 40/1972, articles 1–5][monolaw]
+## 1. Who this applies to
 
-The Guide's inherited `vat-gst` filename is retained for compatibility. Its subject is monofase and the VAT interface with Italy. It does not establish that a future proposed domestic VAT reform has been enacted or supplies a future VAT start date.
+- **Taxable event.** Import tax is charged on goods and connected services imported into San Marino ([Law 40/1972, arts 1-4][l40]).
+- **Who pays.** The importer. Those on whose behalf the goods are imported and those who physically bring them in are jointly liable ([Law 40/1972, art 5][l40]).
+- **Not taxable.** Money and money claims, securities and stamps, imports by State bodies, contractual discounts in kind and returnable packaging ([Decree 108/1997, art 2][d108]).
+- **Domestic sales** between San Marino operators carry no import tax; from 2027 they need an electronic invoice (section 4).
+- **Trade with Italy** follows the Italian decree of 21 June 2021: Italian VAT rules apply on the Italian side, monofase on the San Marino side.
 
-## Base and rate preparation
+## 2. Rates, bands and thresholds
 
-Law 40/1972 article 3 starts with the total consideration due to the supplier. Decree 50/1993 article 3 adds exigible excise, levies, duties and equivalent charges and has distinct exchange/customs-value rules for extra-community imports and purchases from the Community customs territory. Where price is missing or not the sole consideration, use its normal-value rule. Obtain the applicable current official conversion and customs valuation rather than copying the 1972 payment-day exchange wording alone. [Law 40/1972, article 3][monolaw]; [Decree 50/1993, article 3][base]
+| Item | Amount | Tax year | Source |
+|---|---|---|---|
+| Ordinary import tax rate | 17% of the taxable base, for operations from 1 January 2012 | 2026 | [DD 183/2011, arts 1-2][dd183] |
+| Table A goods (listed basic foods and other items) | 2% | 2026 | [Decree 108/1997, art 1 and Table A][d108] |
+| Table A item 23-ter added: feminine hygiene pads, tampons and cups | 2%, on imports from 1 August 2026 (Table B item 95-bis repealed) | 2026 | [DD 98/2026, arts 1-2][dd98] |
+| Table B goods (listed foods and other items) | 6% | 2026 | [Decree 108/1997, art 1 and Table B][d108] |
+| Table C petroleum products, lower band (agricultural fuel, domestic LPG 10-20 kg, industrial heating oil) | 10% | 2026 | [Decree 108/1997, Table C][d108] |
+| Table C petroleum products, upper band (road diesel, automotive LPG, petrol and other listed fuels) | 21% (raised from 20%) | 2026 | [DD 183/2011, art 1][dd183] |
+| Fixed tax per document (commissions, free samples, newspapers and books, collector coins, listed scrap metal bought in the EU) | 4,000 lire per document (euro amount not stated in the text read) | 2026 | [Decree 108/1997, art 3][d108] |
+| Used goods, art and antiques bought in the EU by a business | Tax on 50% of the base | 2026 | [Decree 108/1997, art 4][d108] |
+| Used vehicles taken from private persons, when registered in San Marino; collector items and coins | Tax on 10% of the base | 2026 | [Decree 108/1997, art 4][d108] |
+| Capital goods directly used in business by licensed operators | 1%, if unit value over 250, or homogeneous purchases with a base over 500 | 2026 | [Decree 135/2003, arts 1-3][d135] |
+| Business cars for mixed use | 7%, one car per licence (plus one per co-holder and per 5 permanent staff, up to 20); not open cars over 2,000 cc or closed cars over 2,000 cc with fewer than 5 seats | 2026 | [Decree 135/2003, art 4][d135] |
+| Goods for rental without driver | 9% motor vehicles, 2% aircraft, 6% boats | 2026 | [Decree 135/2003, art 5][d135] |
+| Building works and installations for new hotel and restaurant projects | 6% (other property is excluded from the capital-goods rates) | 2026 | [Decree 135/2003, art 6][d135] |
+| Capital-goods retention period | 12 months from delivery or registration; 2 years for mixed-use cars | 2026 | [Decree 135/2003, art 7][d135] |
+| Domestic e-invoicing exclusion | Operators with prior-year declared revenue below 100,000 (they can opt in) | 2027 | [DD 133/2026, art 2(2)][dd133] |
+| Domestic e-invoicing penalty | 100 per violation, from 1 January 2028 | 2028 | [DD 133/2026, arts 6, 11(4)][dd133] |
+| Italian supplier's invoice not validated by the San Marino Tax Office | Italian supplier issues a credit note within 30 days after 4 months from issue | 2026 | [Italian DM 21 June 2021, art 3(3)][italy] |
 
-The ordinary import-tax rate is **17%** under DD 183/2011 article 1, effective for operations from 1 January 2012. That decree also increases the specified Table C 20% rate to 21%. Decree 108/1997 supplies the table framework but its original ordinary 16% is superseded, and Law 40's original 7% is not the current ordinary rate. Classification and later amendments govern exceptions; 17% is not a universal rate for every import. [DD 183/2011, articles 1–2][ordinary]; [Decree 108/1997, article 1 and tables][rates]
+## 3. The base
 
-For the full table, obtain the actual current goods description/code and every relevant amendment before selecting a reduced, increased, fixed or exempt treatment. DD 98/2026 adds feminine-hygiene absorbent products, tampons or cups to **Table A number 23-ter** and repeals Table B 95-bis, for imports **from 1 August 2026**. Table A in the retrieved framework is the 2% table. This selected amendment does not verify all table entries or all 2026 classifications. The old broad list of reduced rates without exact primary classification is replaced. [Decree 108/1997, Table A][rates]; [DD 98/2026, articles 1–2][july]
+**Starting point.** The base is the total consideration due to the supplier ([Law 40/1972, art 3][l40]), plus exigible excise duties, levies and equivalent charges. Decree 50/1993 has separate exchange-rate and customs-value rules for imports from outside the EU customs territory and for purchases within it; where the price is missing or not the only consideration, use normal value ([Decree 50/1993, art 3][d50]).
 
-## Liability, relief and export evidence
+**Rate.** Apply 17% unless the goods are listed in Table A, B or C, or a special decree applies ([DD 183/2011, art 1][dd183]; [Decree 108/1997, art 1][d108]). Classify by the exact table entry; the item lists have been amended many times since 1997 (for example DD 98/2026).
 
-Law 40/1972 article 5 puts tax on the importer and makes the persons on whose behalf importation occurs and those materially introducing the goods jointly liable. Identify the actual parties and retain the transport/customs evidence. An invoice addressed to someone else does not alone settle the importer's liability. [Law 40/1972, article 5][monolaw]
+**Capital goods (1%).** Available to licensed economic operators, recognised agricultural cooperatives and registered professionals for material and intangible goods directly used in their activity ([Decree 135/2003, arts 1-3][d135]). Replacement parts qualify if over 5% of the asset's historical cost. Property and installations are excluded, except the 6% hotel and restaurant works ([Decree 135/2003, arts 1, 6][d135]). If the asset is sold before the retention period ends, the seller pays the difference between full import tax and tax already paid within 30 days, unless the buyer is itself entitled to the relief and keeps it for the remaining period, or the Finance secretariat authorises the sale ([Decree 135/2003, art 8][d135]). Mixed-use cars worth 10,000 or less can be sold freely, but no new relieved car for 6 months; rental firms can sell after nine months with notice ([Decree 135/2003, art 7][d135]). Non-profit volunteer associations pay 7% on cars and 1% on other goods with authorisation ([Decree 135/2003, art 9][d135]).
 
-Decree 135/2003 articles 1–3 provide a **conditional 1%** capital-goods route for directly instrumental material/intangible assets and eligible operators. The retrieved text requires unit value over 250 or, for lower unit values, homogeneous purchases with a base over 500, and has separate vehicle/rental/property rules and retention/early-disposal consequences. Business ownership alone does not prove the 1% route. Later amendments, current authorisation, asset use and disposal history must be reconciled before applying it. The old blanket new/used car percentages are not treated as a complete current vehicle method. [Decree 135/2003, articles 1–8][capital]
+**Export refunds.** Monofase is single-stage, so there is no input-tax credit. A San Marino business that exports previously imported goods (to Italy or elsewhere) can claim a refund of the import tax paid, under criteria set by separate administrative measure ([Law 40/1972, arts 9, 14][l40]). Keep the import tax receipt, the link between imported and exported goods (including transformation records), the export invoice and the customs or validation evidence.
 
-Law 40/1972 articles 1,9 and 14 establish the export-refund route for relevant previously imported goods, including the stated transformation case. It is **not an automatic input-VAT credit** against domestic sales. Retain import tax paid, traceability from imported goods/material to exported goods, transformation/stock records, export invoices and actual customs/validation evidence. Articles 9/17 and later implementing rules govern the claim; eligibility does not establish a 100% refund of every cost, current filing form or payment date. Current refund rates, time limits, adjustments and execution remain open. [Law 40/1972, articles 1,9,14–17][monolaw]
+## 4. Deadlines and filing
 
-## Italy trade: use the current exchange framework
+### Italy to San Marino (purchases from Italy)
 
-Italy's DM 21 June 2021 replaced its 24 December 1993 decree from **1 October 2021**. For covered goods trade, electronic invoices through SDI became the general route **1 July 2022**, with the statutory exclusions preserved. Do not reproduce the 1972 paper-copy workflow as the normal current electronic process. Match the actual counterparty ID, movement, invoice and validation result. [Italian DM, articles 1–2 and 22][italy]
+Since 1 October 2021 the Italian decree of 21 June 2021 governs the exchange; since 1 July 2022 invoices for goods traded between Italy and San Marino must be electronic, except for operators not required to e-invoice in Italy ([Italian DM, arts 2, 22][italy]). The Italian supplier sends the e-invoice through SDI with the San Marino buyer's identification; the San Marino Tax Office checks that import tax has been paid and confirms validation, which the Italian supplier sees online ([Italian DM, art 3][italy]). If not validated within four months of issue, the Italian supplier issues a credit note within the following 30 days, without penalties ([Italian DM, art 3(3)][italy]). Paper invoices (where allowed) are issued in three copies and stamped by the Tax Office ([Italian DM, arts 4-5][italy]).
 
-For Italy-to-San Marino covered business goods, article 3 transmits the invoice with the San Marino recipient ID through SDI to the Tax Office. The Office checks import tax and communicates validation. If the invoice has not been validated within four months of issue, the Italian supplier issues the specified variation within the following thirty days. Paper-exempt cases have their distinct article 4 communication route. Do not assume an Italian supplier's invoice alone proves completed San Marino import-tax compliance. [Italian DM, articles 3–5][italy]
+### San Marino to Italy (sales to Italy)
 
-For covered San Marino-to-Italy business goods, article 6 sends the electronic invoice through the Tax Office to SDI. Articles 7–8 distinguish an invoice with Italian VAT, with the specific payment/control route, from an invoice without VAT, for which the Italian recipient accounts under the referenced reverse-charge/integration rules. A domestic monofase rate does not determine the Italian VAT rate or deductibility. Confirm actual validation/payment before treating Italian input VAT as deductible. [Italian DM, articles 6–8][italy]
+The San Marino seller's e-invoice goes through the San Marino Tax Office to SDI ([Italian DM, art 6][italy]). An invoice can carry Italian VAT, collected and paid through the specific route, or be issued without VAT, in which case the Italian business buyer self-accounts for VAT under reverse charge ([Italian DM, arts 7-8][italy]). Sales to private buyers, new means of transport, distance sales, non-commercial bodies and services have their own articles ([Italian DM, arts 13-16, 20][italy]).
 
-Private buyers, new transport, distance sales, noncommercial bodies and services have separate articles 13–16 and 20. Do not extend the business-goods non-taxable or reverse-charge result to every consumer or service transaction. Current Italian implementation, exceptions, territoriality, distance-sale threshold/application and every later amendment are outside this completed method. The decree was read as the primary framework; no SDI transmission or foreign VAT return was performed. [Italian DM, articles 13–16,20–22][italy]
+### Domestic invoices between San Marino operators (DD 133/2026)
 
-## Domestic invoices: dated transition
+| Period | Rule | Source |
+|---|---|---|
+| 1 October to 31 December 2026 | Covered operators can choose to transmit domestic business invoices and credit notes electronically instead of on paper | [DD 133/2026, art 11(1)][dd133] |
+| From 1 January 2027 | Electronic invoices required between economic operators (COE to COE), unless revenue in the prior calendar year was below 100,000; paper-invoice rules also start | [DD 133/2026, arts 2, 11(2)-(3)][dd133] |
+| From 1 January 2028 | The article 6 and 7 penalties apply | [DD 133/2026, art 11(4)][dd133] |
+| State, public administration and public bodies | When the implementing regulation enters into force | [DD 133/2026, art 11][dd133] |
 
-DD 133/2026 is separate from Italy trade. Article 11 makes the following distinctions:
+An operator that exceeded 100,000 or opted in must keep using e-invoices in later years ([DD 133/2026, art 2(3)][dd133]). The invoice is prepared and transmitted by the second month after delivery or shipment (goods), completion (services) or payment (advances), with special rules for continuous supplies ([DD 133/2026, art 3][dd133]). An invoice rejected by HUB SM is treated as not issued ([DD 133/2026, art 4(3)][dd133]). The 100,000 test is an invoice-format rule, not a registration or tax threshold.
 
-| Period/route | Enacted transition |
-|---|---|
-| 1 October–31 December 2026 | Covered operators/delegates can opt to transmit domestic business invoices/variation notes electronically instead of paper |
-| From 1 January 2027 | Electronic issue for the covered domestic COE-to-COE route, subject to the article 2 exclusion; the decree's paper-invoice provisions also begin |
-| From 1 January 2028 | The decree's administrative penalties in articles 6–7 apply |
-| State, public administration and public entities | Application depends on the specified implementing regulation coming into force |
+### Import documents
 
-[DD 133/2026, article 11][invoice]
+Decree 50/1993 articles 4 and 5 set the import document and control routes for purchases from outside and inside the EU ([Decree 50/1993, arts 4-5][d50]). Import tax is not filed on a periodic return.
 
-Article 2(2) excludes operators with previous-calendar-year declared revenues **below 100,000**, while permitting an option. Exactly 100,000 is outside that exclusion and therefore brings the covered obligation for that year. Article 2(3) separately requires continuing electronic use in later years where operators have **exceeded** the amount or exercised the option. The text does not establish the same continuing-use result for exact equality alone; obtain official interpretation before treating a year at exactly 100,000 as permanent entry. This is an invoice-format rule, **not a VAT-registration or import-tax exemption threshold**. The general article 3 timing is by the second month following delivery/shipment for goods, completion for services or payment for advances, with special delayed/continuous-supply rules. An HUB SM rejection means the electronic invoice is not issued under 4(3). The actual 2026 option, technical Regulation 28/2026, certificate, corrections, retention and live workflow still need validation; these statements do not claim a successful filing. [DD 133/2026, articles 2–5 and 8–11][invoice]
+## 5. Penalties and interest
 
-## Documentation, calendar and sanctions gaps
+- **E-invoicing:** 100 per violation for the article 6 failures, and the article 7 recipient self-documentation duty, both from 1 January 2028 ([DD 133/2026, arts 6-7, 11(4)][dd133]).
+- **Early sale of relieved capital goods:** the full-rate tax difference is due within 30 days of the sale ([Decree 135/2003, art 8][d135]).
+- **Italian side:** the Italian supplier's credit note after four months without validation carries no Italian penalties or interest ([Italian DM, art 3(3)][italy]).
 
-Decree 50/1993 articles 4–5 specifies import-document/control routes for extra-community and other Community purchases, but those older texts must be reconciled with current electronic, customs and delegated instructions before execution. This Guide has not completed every import registration, declaration/payment due date, exemption certificate, customs procedure or sanction. Obtain the current Tax Office/Customs instructions and actual portal route before filing or payment. Do not transplant an income-tax deadline or describe monofase as a periodic VAT return. [Decree 50/1993, articles 4–5][base]; [Italian DM, articles 2–5 and 22][italy]
+## 6. Cross-border points
 
-DD 133's 100 administrative charge under article 6 and recipient self-documentation under 7 have their **2028 sanction commencement**, not an immediate October 2026 penalty. Other current import-tax/IGR invoice sanctions are distinct and remain to be reconciled. [DD 133/2026, articles 6–7 and 11(4)][invoice]
+- Italy is San Marino's customs-union partner for goods traffic; the electronic exchange in section 4 replaces the 1993 paper procedure.
+- Imports from other EU States and from outside the EU follow the Decree 50/1993 base and document rules ([Decree 50/1993, arts 3-5][d50]).
+- Re-exports of imported goods give a refund of monofase under Law 40/1972 articles 9 and 14, not a credit.
+- Services bought from abroad: classify first; only services connected with imported goods are within Law 40/1972 ([Law 40/1972, arts 1-5][l40]). Income-tax withholding on payments abroad is in `sm-cross-border`.
 
-## Worked controls
+## 7. Two worked examples that recompute
 
-### Ordinary established import base
+### Example 1: ordinary import plus a Table A item
 
-Assume final ordinary taxable base 12,000 after all consideration, connected costs, exigible duties and valuation adjustments have been independently established, with no reduced/exempt/special classification. Monofase is 2,040. No domestic VAT output/input offset is inferred.
+A shop imports goods with an ordinary taxable base of 10,000 and Table A goods with a base of 2,000. Ordinary tax 1,700; Table A tax 40; total 1,740.
 
 ```oa-check
-name: San Marino ordinary monofase on established import base
-inputs:
-  established_import_base: 12000
-  ordinary_monofase_rate: 0.17
-steps:
-  import_tax: established_import_base * ordinary_monofase_rate
-  base_plus_import_tax: established_import_base + import_tax
-expected:
-  import_tax: 2040
-  base_plus_import_tax: 14040
-```
-
-### Separately established classifications
-
-Assume two separately classified imports: ordinary base 10,000 at 17% and a confirmed current Table A eligible base 2,000 at 2%, with all date/category conditions independently established. Total tax 1,740. This tests the arithmetic, not entitlement to the Table A classification.
-
-```oa-check
-name: San Marino assumed ordinary and Table A import classifications
+name: San Marino 2026 ordinary and Table A import tax
 inputs:
   ordinary_base: 10000
-  confirmed_table_a_base: 2000
+  table_a_base: 2000
   ordinary_rate: 0.17
-  confirmed_table_a_rate: 0.02
+  table_a_rate: 0.02
 steps:
   ordinary_tax: ordinary_base * ordinary_rate
-  table_a_tax: confirmed_table_a_base * confirmed_table_a_rate
+  table_a_tax: table_a_base * table_a_rate
   total_import_tax: ordinary_tax + table_a_tax
 expected:
   ordinary_tax: 1700
@@ -136,53 +118,77 @@ expected:
   total_import_tax: 1740
 ```
 
-### Already established capital-goods relief
+A single ordinary import with a base of 12,000 gives 2,040 of tax (14,040 with tax).
 
-Assume a 50,000 base asset independently confirmed eligible for the current 1% capital-goods route, with operator, use, value and retention conditions established and no special exception. The isolated import tax is 500. There is no automatic early-sale recapture/refund conclusion.
+### Example 2: capital good sold early (edge case)
+
+A licensed manufacturer imports a machine with a base of 50,000 at the 1% capital-goods rate: tax 500. It sells the machine after eight months to a private buyer, inside the 12-month retention period. Within 30 days it must pay the ordinary-rate tax less tax already paid: 8,500 - 500 = 8,000.
 
 ```oa-check
-name: San Marino assumed eligible capital-goods import tax
+name: San Marino 2026 capital-goods import and early-sale top-up
 inputs:
-  established_eligible_asset_base: 50000
-  confirmed_capital_goods_rate: 0.01
+  asset_base: 50000
+  capital_goods_rate: 0.01
+  ordinary_rate: 0.17
 steps:
-  conditional_import_tax: established_eligible_asset_base * confirmed_capital_goods_rate
+  relieved_tax: asset_base * capital_goods_rate
+  full_rate_tax: asset_base * ordinary_rate
+  top_up_on_early_sale: full_rate_tax - relieved_tax
 expected:
-  conditional_import_tax: 500
+  relieved_tax: 500
+  full_rate_tax: 8500
+  top_up_on_early_sale: 8000
 ```
 
-## Limits and referral
+## 8. Ask the client first
 
-VAT/indirect tax remains partial. Complete tariff chains, current exemptions/fixed amounts, capital-goods/vehicle amendments, complementary taxes and excise, customs valuation/clearance, current import calendar, export-refund computation/forms/time limits, Italian special cases and technical/live invoice execution remain open. Resolve the actual transaction-specific gap before execution. No accountant verification or country completeness is claimed. Named San Marino accountant review remains open.
+1. What exactly is imported, from which country, and the tariff description of each item.
+2. Who is the importer, and whether it holds a licence or professional registration (for the 1% route).
+3. Invoice value, freight, duties and other charges, and the currency.
+4. Whether the goods are kept, used in the business, sold on, or re-exported, and when.
+5. For Italian trade: the counterparty's VAT number, whether invoices carry Italian VAT, and the validation status.
+6. Prior-year revenue (for the 2027 e-invoicing obligation) and whether the operator opted in during 2026.
 
 ## Sources
 
-Read 24 October 2026: Law 40/1972 selected scope/base/liability/export provisions; Decree 50/1993 selected base/document provisions; Decree 108/1997 articles 1–4 and selected table framework; all two articles of DD 183/2011; capital-goods Decree 135/2003 articles 1–11, with later-amendment limits retained; full authentic DD 98/2026 and DD 133/2026 including commencement. Italy's DM 21 June 2021 was read in the official Gazette, with detailed checks on the cited ordinary business-goods and commencement provisions. Retrieval is not a complete later-amendment audit or live filing. Earlier secondary wording remains in Git history.
+| Source | URL | Read on |
+|---|---|---|
+| Law 40/1972 (import tax), arts 1-5, 9-17 | https://www.consigliograndeegenerale.sm/contents/instance18/files/document/19029leggi_2560.pdf | 2026-10-30 |
+| Decree 50/1993, arts 3-5 (base, import documents) | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17021434.html | 2026-10-30 |
+| Decree 108/1997, arts 1-4 and Tables A-D | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html | 2026-10-30 |
+| Delegated Decree 183/2011, arts 1-2 (17% rate, Table C 21%) | https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html | 2026-10-30 |
+| Decree 135/2003, arts 1-11 (capital goods) | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html | 2026-10-30 |
+| Delegated Decree 98/2026 of 27 July 2026 (Table A 23-ter) | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=e54431a0e32f941616323ba3300c13a32828e853 | 2026-10-30 |
+| Delegated Decree 133/2026 (domestic e-invoicing), arts 2-11 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538 | 2026-10-30 |
+| Italy, Ministerial Decree 21 June 2021 (Gazzetta Ufficiale 168 of 15 July 2021), arts 1-8, 13-16, 20-22 | https://www.gazzettaufficiale.it/eli/gu/2021/07/15/168/sg/pdf | 2026-10-30 |
+| San Marino Finance department, national taxation page | https://www.finanze.sm/pub2/FinanzeSM/FISCALITA-NAZIONALE.html | 2026-10-24 |
 
-[law]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
-[reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
-[october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
-[iss]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html
-[calculator]: https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1
+Not yet confirmed: whether Decree 108/1997 Table A and B rates and Decree 135/2003 rates were changed by decrees after 2011 other than DD 98/2026; the euro amount of the fixed per-document tax; the 3.5% used-vehicle rate in the earlier version of this skill; the export-refund rates, forms and time limits; import-tax payment due dates; Regulation 28/2026 technical rules for HUB SM.
 
-## Source-review status
-
-See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
+[l40]: https://www.consigliograndeegenerale.sm/contents/instance18/files/document/19029leggi_2560.pdf
+[d50]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17021434.html
+[d108]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html
+[dd183]: https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html
+[d135]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html
+[dd98]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=e54431a0e32f941616323ba3300c13a32828e853
+[dd133]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538
+[italy]: https://www.gazzettaufficiale.it/eli/gu/2021/07/15/168/sg/pdf
+[finance]: https://www.finanze.sm/pub2/FinanzeSM/FISCALITA-NAZIONALE.html
 
 <!-- openaccountants-cta-block -->
 
 ---
 
-## Talk to an accountant
+## Talk to a verified accountant
 
-Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
 
-[monolaw]: https://www.consigliograndeegenerale.sm/contents/instance18/files/document/19029leggi_2560.pdf
-[base]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17021434.html
-[rates]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html
-[ordinary]: https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html
-[capital]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html
-[july]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=e54431a0e32f941616323ba3300c13a32828e853
-[invoice]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538
-[italy]: https://www.gazzettaufficiale.it/eli/id/2021/07/15/21A04244/SG
-[finance]: https://www.finanze.sm/pub2/FinanzeSM/FISCALITA-NAZIONALE.html
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

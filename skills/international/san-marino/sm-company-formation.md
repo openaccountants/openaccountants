@@ -1,93 +1,92 @@
 ---
 name: sm-company-formation
 description: >
-  Prepare a San Marino entity-choice and incorporation evidence file using selected company-law provisions and the actual 2022 capital reform in the official coordinated collection dated November 2024. Distinguishes ordinary SRL/SPA capital, the conditional 9000 SRL alternative, contributions and sole-member liability, public deed/registration and separate activity permissions. Replaces the old universal sixty-day/full-deposit and resident-director assertions. This is a partial 2026 preparation aid: all later company/licensing amendments, beneficial-ownership procedure, current fees, sector permissions and live registration must be checked before execution. Independent source-review scope appears in the dated pack record; no completion or named local accountant verification is claimed.
+  Forming a company in San Marino in 2026 under Law 47/2006 on companies as amended by Law 80/2022: choice between general partnership (società in nome collettivo), SRL and SPA, minimum capital of EUR 25,500 for an SRL and EUR 77,000 for an SPA, the EUR 9,000 SRL paid in full within 60 days, contribution timing (half within 120 days, all within three years), cash deposit or bank guarantee, sole-member rules, the notarial deed and its contents, registration with the Economic Activities Office, legal personality on registration, directors and remote board meetings, beneficial owners and the link to tax residence and the new-company tax incentive. Use for setting up a San Marino SRL or SPA, capital requirements, incorporation steps and director questions. Regulated activities and licences need their own law.
 jurisdiction: SM
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-category: international
-version: 0.2
-sources:
-  - url: "https://www.consigliograndeegenerale.sm/on-line/documento17113696.html"
-    title: "Official coordinated company and business collection; dated November 2024, selected scope only"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17132480.html"
-    title: "Law 80/2022; actual capital and registration amendments"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html"
-    title: "Official IGR archive; residence and tax relief are separate"
-    as_of: "2026-10-24"
+category: formation
+version: 0.3
 ---
 
-# San Marino company formation and entity choice v0.2
+# San Marino company formation and entity choice v0.3
 
-## Scope and source-date limit
+The company-law text used is the official coordinated collection updated to 27 November 2024, read with Law 80/2022. Amendments to company and licensing law made in 2025 and 2026 are not covered (see the end of Sources).
 
-Establish the actual business activity, owners and beneficial owners, proposed managers and work locations, capital/assets, premises and whether the activity is regulated before choosing an entity. The official coordinated company/business collection is dated **27 November 2024**. Its selected Law 47/2006 provisions and the actual Law 80/2022 amendments below replace several old secondary assertions, but **all 2025–2026 company and activity-licensing amendments have not been reconciled**. Obtain that current-law check and notary's conclusion before incorporating; this is a partial preparation method, not a filing-ready 2026 company-law opinion. [Coordinated company/business collection][companies]; [Law 80/2022][amendment]
+## Section 1: Scope
 
-## Entity choice and responsibility
+This skill covers:
 
-The ordinary company-law framework recognises the general partnership (società in nome collettivo), SRL and SPA, with separate provisions for special/regulated companies. Individuals and legal persons can hold capital-company participations. A general partnership carries joint/unlimited partner responsibility under article 4, while capital-company obligations ordinarily belong to the company, subject to special liability rules. Capital companies can have a sole member under article 12. Do not describe every sole-member structure as unconditionally protecting all personal assets. [Law 47/2006, articles 2,4 and 12, in the collection][companies]
+- Choosing between a general partnership, an SRL (società a responsabilità limitata) and an SPA (società per azioni).
+- Capital, contributions and their timing.
+- The incorporation deed, registration and the start of legal personality.
+- Directors, ownership disclosure and the link to tax.
 
-Professional companies have their own article 3 eligibility and activity limits; a company registration does not license an otherwise regulated profession. Sole-trader/economic-activity permissions use a different route and are not completed by the SRL/SPA workpaper. Refer regulated financial, insurance, fiduciary, cooperative, professional and technology structures to their actual current regimes. [Law 47/2006, articles 2–3 and 16, and the separate activity laws in the collection][companies]
+It does not cover: regulated financial, insurance, fiduciary, cooperative, professional-company or technology regimes; activity licences; residence permits; fees.
 
-## Capital: distinguish ordinary and alternative routes
+## Section 2: Entity choice
 
-| Route in the selected company provisions | Capital/evidence rule | Source |
+- **General partnership:** partners are jointly and without limit liable ([Law 47/2006, art 4][companies]). Profit is taxed in the partners' hands ([IGR art 10(3)][igr]).
+- **SRL and SPA (capital companies):** company obligations belong to the company, subject to special liability rules. Individuals and legal persons can hold shares ([Law 47/2006, arts 2, 4][companies]).
+- **Sole member:** a capital company can have one member, at formation or later. Sole-member status must be registered. If the company becomes insolvent, the sole member is liable without limit for debts arising while they held all the shares, where registration of sole-member status was late, or (for a company formed by unilateral act) capital was not paid half within 120 days and in full within three years ([Law 47/2006, art 12, as amended by Law 80/2022][companies]).
+- **Professional companies** have their own eligibility and activity limits ([Law 47/2006, art 3][companies]).
+- Sole traders and professionals register as economic operators under the activity laws, not company law.
+
+## Section 3: Capital and contributions
+
+| Item | Rule | Source |
 |---|---|---|
-| Ordinary SRL | Minimum 25,500 | [Law 47/2006, article 13(1)][companies] |
-| Ordinary SPA | Minimum 77,000 | [Law 47/2006, article 13(1)][companies] |
-| Alternative SRL under 13(1-bis) | Capital can be 9,000, with all contributions within sixty clear days after registration, in cash at a San Marino credit institution subject to the stated unavailability guarantee, or the statutory bank-guarantee alternative | [Law 80/2022, article 4][amendment] |
-| Ordinary article 10 contribution timetable | At least half within 120 clear days after registration; all contributions requested and made within three years | [Law 80/2022, article 2][amendment] |
+| Minimum capital, SRL | 25,500 | [Law 47/2006, art 13(1)][companies] |
+| Minimum capital, SPA | 77,000 | [Law 47/2006, art 13(1)][companies] |
+| Alternative SRL capital | 9,000, all paid within 60 clear days after registration, in cash at a San Marino bank and blocked as security for company debts until liquidation, or by bank guarantee | [Law 47/2006, art 13(1-bis), added by Law 80/2022, art 4][amendment] |
+| Ordinary payment timing | At least half within 120 clear days after registration; all within three years | [Law 47/2006, art 10(3)-(4), as amended by Law 80/2022, art 2][amendment] |
+| Form of cash contributions | Deposit at a San Marino bank, or a bank guarantee to the company valid for at least three years | [Law 47/2006, art 10(8)][companies] |
+| Proof of payment | Directors file a sworn, notarised declaration with the Economic Activities Office within 30 days | [Law 47/2006, art 10(5)][companies] |
+| Contributions in total | Not less than share capital; in cash unless the statutes allow otherwise; in kind needs valuation evidence | [Law 47/2006, art 10(1)-(2), (7)][companies] |
 
-The ordinary timetable is not the alternative 9,000 route's sixty-day timetable. Law 80/2022 also replaces the sole-member article 12(4)(c) wording with half within 120 days and all within three years for a company formed by unilateral act. The old summary's universal half within sixty days, sole-member full payment within sixty days and SPA full deposit before incorporation are not retained as current verified rules. A special sector's capital rules or an actual later amendment can override this ordinary preparation. [Law 80/2022, articles 2–4][amendment]
+Failure to pay contributions on time is a cause of dissolution and liquidation; the court can give directors up to 60 days to regularise ([Law 47/2006, art 10(6)][companies]). If a guarantee is not renewed or replaced by cash 30 days before it expires, the guarantee is enforced ([Law 47/2006, art 10(8)][companies]). Services and personal-use rights are not contributable assets.
 
-Article 10 permits the specified cash deposit or bank guarantee with at least three-year validity; it also governs renewal/encashment, noncash contributions and valuation evidence. Services/personal enjoyment rights are not simply eligible contributed assets. Keep the subscribed amount, each owner's required contribution, actual payment/guarantee, valuation report, dates and register attestation. Under 10(5), the contribution/date declaration is deposited within thirty days at the Economic Activities Office; missing contributions can lead to dissolution/liquidation under 10(6). Obtain the notary's actual calendar and instrument review, rather than computing legal clear days from a generic calendar script. [Law 80/2022, article 2][amendment]
+## Section 4: Incorporation steps
 
-## Incorporation file and permissions
+1. **Owners and managers.** Check each owner, beneficial owner and director against the eligibility and certification rules; collect certificates and translations ([Law 47/2006, definitions and arts 16-17][companies]).
+2. **Seat, object and permissions.** The registered office must be in San Marino ([Law 47/2006, art 8][companies]).
+   Fix a lawful, possible and determined object ([Law 47/2006, art 9][companies]). Some activities or types need special-law authorisation or a Congress of State clearance ([Law 47/2006, art 16][companies]).
+3. **Deed.** A public deed under article 18 with the article 19 particulars: type and name, term, registered office, object, capital, owners and their contributions, governance and representation, first appointments and statutes ([Law 47/2006, arts 18-19][companies]).
+4. **Registration.** The notary files with the Economic Activities Office ([Law 47/2006, arts 6, 20][companies]). The company acquires legal personality on registration; acts done before registration make the persons who did them jointly and without limit liable ([Law 47/2006, art 21][companies]).
+5. **After registration.** Licence for the activity, tax registration, and ISS registration when hiring.
 
-1. Check owners/beneficial owners and managers against the actual eligibility/certification rules. Law 47 definitions and articles 16–17 have unsuitable-person and fiduciary/beneficial-owner conditions; collect the required current certificates and translations, not just an owner's name.
-2. Establish the precise corporate object and whether a special-law authorisation or Congress nulla osta is required. Article 16 makes those approvals conditional on the activity/type; do not state every ordinary company needs one or that none do.
-3. Prepare a public deed under article 18 with the article 19 particulars: type/name, term, registered seat, object, capital, owners/participations/contributions, governance/representation, first appointments and statutes. Establish suitable premises and actual activity permissions separately.
-4. Obtain registration through the notary and Economic Activities Office under articles 6 and 20. Legal personality is acquired on registration under article 21; pre-registration acts can impose joint/unlimited personal liability on the persons identified there. A deed signed is not proof the company is already registered or authorised to trade.
-5. Retain the official register result, subscription/payment/guarantee evidence, actual licence/authorisations, taxpayer and payroll/contribution registrations where applicable, and the ongoing compliance calendar. Do not promise a bank opening, licence or registration completion date from a statutory ordinary-processing period.
+## Section 5: Directors, disclosure and ongoing duties
 
-[Law 47/2006, definitions and articles 6,16–21, in the collection][companies]; [Law 80/2022, articles 1–6][amendment]
+- Directors and their representation powers follow articles 48-52 and the statutes ([Law 47/2006, arts 48-52][companies]). Board meetings can be held remotely under article 50; where the chair is not in San Marino, a San Marino notary acts as secretary ([Law 47/2006, art 50][companies]). The company-law text read sets no general rule that a director must be resident in San Marino.
+- Owners, directors, powers and sole-member status are registered ([Law 47/2006, art 6][companies]); beneficial owners are disclosed under article 17 and the anti-money-laundering rules.
+- Books, accounts and financial statements: articles 72 onward ([Law 47/2006][companies]).
+- **Tax residence** is a separate test: a company is resident if its registered office or effective management is in San Marino for most of the tax period ([IGR art 42(2)][igr]).
+- **New-company incentive:** registration alone does not give the 50% rate cut. The company must opt in and meet the shareholder and hiring conditions of IGR article 73 (9% instead of 18% for 2026). See `sm-corporate-income-tax`.
 
-## Management, ownership disclosure and ongoing duties
+## Section 6: Worked examples
 
-Select eligible directors and actual representation powers under articles 48–52; check the statutes, special sector and licensing law. Article 50 has conditional remote-board rules, including a San Marino public-notary secretary where the president is not present in the territory. Those rules do not establish either a universal resident-director requirement or that an entirely foreign management arrangement has no tax/licensing consequence. The old universal resident-director assertion lacks a verified ordinary-law basis and is removed. Registered office and effective management remain separate IGR residence questions. [Company articles 48–52][companies]; [IGR 42][law]
+### Example 1: two-owner ordinary SRL
 
-Register actual owners, managers/powers and sole-member status under article 6, preserve the specific article 12 insolvency-liability gates and obtain the current beneficial-owner disclosure/AML procedure. Company-register particulars do not themselves complete every beneficial-owner duty. Do not substitute an intermediary/nominee for the actual beneficial-owner evidence. [Company articles 6,12 and 17][companies]; [Law 80/2022, articles 1 and 3][amendment]
-
-The collection includes company books/accounts and financial-statement provisions under articles 72 onward, separate audit/control-organ tests and separate licensing/tax obligations. Their current thresholds, approvals, filing and deposit calendars have not all been verified here. Refer before assigning a universal audit exemption or annual compliance deadline. Use the [corporate IGR Guide](sm-corporate-income-tax.md), [payroll/social Guide](sm-payroll-social.md) and [monofase/invoice Guide](sm-vat-gst.md) for their explicitly partial workpapers. Incorporation alone does not grant a 9% tax rate; actual new-activity relief requires its own option and eligibility. [Company law in the collection][companies]; [IGR 73 and Law 141/2025][law]
-
-## Worked controls
-
-These are arithmetic controls under expressly established routes, not incorporation or capital-payment execution.
-
-### Ordinary SRL capital allocation
-
-Assume the ordinary 25,500 SRL route applies, no later/special rule changes it, and two owners subscribe 60% and 40%. Contributions total 15,300 and 10,200. If both make exactly half, initial amounts are 7,650 and 5,100, total 12,750; the remaining 12,750 still needs the applicable completion timetable and evidence.
+Capital 25,500, owners 60% and 40%. Subscriptions 15,300 and 10,200. Paying half within 120 days: 7,650 and 5,100, total 12,750; the remaining 12,750 within three years.
 
 ```oa-check
-name: San Marino assumed ordinary SRL capital allocation
+name: San Marino ordinary SRL capital split and first half
 inputs:
-  ordinary_srl_subscribed_capital: 25500
+  srl_capital: 25500
   first_owner_fraction: 0.60
   second_owner_fraction: 0.40
-  established_initial_fraction: 0.50
+  initial_fraction: 0.50
 steps:
-  first_owner_subscription: ordinary_srl_subscribed_capital * first_owner_fraction
-  second_owner_subscription: ordinary_srl_subscribed_capital * second_owner_fraction
-  first_owner_initial: first_owner_subscription * established_initial_fraction
-  second_owner_initial: second_owner_subscription * established_initial_fraction
+  first_owner_subscription: srl_capital * first_owner_fraction
+  second_owner_subscription: srl_capital * second_owner_fraction
+  first_owner_initial: first_owner_subscription * initial_fraction
+  second_owner_initial: second_owner_subscription * initial_fraction
   initial_total: first_owner_initial + second_owner_initial
-  remaining_total: ordinary_srl_subscribed_capital - initial_total
+  remaining_total: srl_capital - initial_total
 expected:
   first_owner_subscription: 15300
   second_owner_subscription: 10200
@@ -97,48 +96,59 @@ expected:
   remaining_total: 12750
 ```
 
-### Alternative SRL is not half of 9,000
+### Example 2: 9,000 SRL is paid in full (edge case)
 
-Assume the alternative article 13(1-bis) route is actually confirmed, with capital 9,000. Its full contribution is 9,000, not 4,500 under the ordinary half-capital fraction. Availability/guarantee and sixty-clear-day conditions remain separate evidence gates.
+An SRL using the 9,000 route must pay all 9,000 within 60 clear days. Paying only half (4,500), as on the ordinary route, leaves 4,500 missing.
 
 ```oa-check
-name: San Marino assumed alternative SRL full capital requirement
+name: San Marino 9,000 SRL full payment requirement
 inputs:
   alternative_srl_capital: 9000
-  required_fraction_for_established_alternative: 1
+  required_fraction: 1
 steps:
-  required_full_contribution: alternative_srl_capital * required_fraction_for_established_alternative
-  amount_missing_if_only_half_contributed: required_full_contribution - alternative_srl_capital * 0.50
+  required_contribution: alternative_srl_capital * required_fraction
+  shortfall_if_half_paid: required_contribution - alternative_srl_capital * 0.50
 expected:
-  required_full_contribution: 9000
-  amount_missing_if_only_half_contributed: 4500
+  required_contribution: 9000
+  shortfall_if_half_paid: 4500
 ```
 
-## Limits and referral
+## Section 7: Ask the client first
 
-This supplementary topic remains partial, with a dated statutory baseline. Reconcile all later amendments and current activity classification, premises/licence/sector/foreign-owner permissions, beneficial-owner/AML filings, banking/guarantee acceptance, audit/control thresholds, fees, accounting/deposit calendar and actual register forms with a San Marino professional before execution. No universal director-residence, residence permit, special tax relief or guaranteed processing claim is supplied. Formation presence does not complete any core tax domain.
+1. What will the company do, and is the activity regulated?
+2. Owners and beneficial owners, their nationality and residence, and any similar business in the last twelve months (for the tax incentive).
+3. Proposed directors and where the board will meet.
+4. Capital route (25,500 SRL, 9,000 SRL or SPA) and cash or guarantee.
+5. Premises and hiring plan.
 
 ## Sources
 
-Read 24 October 2026: selected company provisions in the official coordinated business collection dated 27 November 2024, especially definitions and Law 47/2006 articles 2–6,10–21,48–52 and selected later-accounting references. Both no-notes and separate historical-notes PDFs were retrieved; selected article 10/12/13 history was compared, not the full collection. Law 80/2022 original act articles 1–7 and capital changes were read directly against that collection. The official archive's coordinated documents are recognition aids, not a claim of complete current-law authenticity. Complete 2025–2026 amendments, activity-law reforms and live filing were not audited. Earlier secondary assertions remain in Git history. Named San Marino accountant review remains open.
+| Source | URL | Read on |
+|---|---|---|
+| Official coordinated collection on companies and business (Law 47/2006 and related laws), updated to 27 November 2024: arts 2-6, 9-21, 48-52 | https://www.consigliograndeegenerale.sm/on-line/documento17113696.html | 2026-10-30 |
+| Law 80/2022 (amendments to company capital and registration), arts 1-7 | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17132480.html | 2026-10-30 |
+| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 10, 42, 73 | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
 
-[law]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
-[reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
-[october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
-[iss]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html
-[calculator]: https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1
+Not yet confirmed: company and licensing amendments after 27 November 2024; the earlier version's statement that an SPA's capital is deposited in full before incorporation; registration and licence fees; audit and statutory-auditor thresholds; financial-statement filing dates; beneficial-owner register procedure.
 
-## Source-review status
-
-See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
+[companies]: https://www.consigliograndeegenerale.sm/on-line/documento17113696.html
+[amendment]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17132480.html
+[igr]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
 
 <!-- openaccountants-cta-block -->
 
 ---
 
-## Talk to an accountant
+## Talk to a verified accountant
 
-Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
 
-[companies]: https://www.consigliograndeegenerale.sm/on-line/documento17113696.html
-[amendment]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17132480.html
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

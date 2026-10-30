@@ -1,88 +1,117 @@
 ---
 name: sm-corporate-income-tax
 description: >
-  Prepare 2026 San Marino corporate IGR workpapers from the accounting result to the taxable base, documented losses, the temporary 18% rate, conditional new-activity relief and advance/balance reconciliation. Use for resident legal persons and the relevant domestic income of foreign entities. Establish actual management, income category, accounting evidence, loss history, incentive eligibility and prior payments before calculating. This source-cited draft replaces the former approximate 2025 summary. It distinguishes the statutory 17% text from the 2026–2030 override and does not offer a blanket new-company rate, dividend exemption or treaty result. Full incentive, depreciation, restructuring, foreign-credit, technology-sector and filing implementation remain partial, with independent source-review scope documented in the dated pack record; named local accountant review remains open.
+  San Marino corporate income tax (IGR on legal persons) for tax year 2026, under Law 166/2013 Title III as reformed by Law 141/2025 and Delegated Decree 156/2026. Covers company residence by registered office or effective management, the 18% rate for tax years 2026 to 2030 (statutory 17%), the base from accounting profit, expense limits, depreciation under Annex D, the 70% annual cap on loss carryforward, the 50% rate cut for qualifying new companies, the 10% own-capital increase deduction, foreign tax credit, the 35% and 55% advances due 31 August and 30 November, the 31 July return and balance, late interest and late-filing charges. Use for San Marino company tax, SRL or SPA tax, new-company incentive, corporate losses and corporate filing questions. Special sector regimes, reorganisations and insolvency need their own facts.
 jurisdiction: SM
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.3
-sources:
-  - url: "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html"
-    title: "Official coordinated IGR archive; dated 2025 editions, selected corporate and procedure provisions"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html"
-    title: "Law 141/2025; 2026 reform, corporate rate and transitional rules"
-    as_of: "2026-10-24"
-  - url: "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33"
-    title: "Authentic DD 156/2026; October corrections applicable from tax year 2026"
-    as_of: "2026-10-24"
+version: 0.4
 ---
 
-# San Marino corporate income tax v0.3
+# San Marino corporate income tax v0.4
 
-## Who this applies to and period
+Tax year: the company's tax period in 2026 (calendar year for most companies). Currency EUR. Authority: UO Ufficio Tributario (Tax Office).
 
-IGR articles 1 and 42 tax resident legal persons and assimilated entities on relevant worldwide income and nonresidents on the domestic-source categories in article 5. A legal entity is resident if its registered office **or effective management** is in San Marino for most of the tax period. An address or foreign incorporation alone does not determine the outcome. Read [IGR, articles 1–5 and 42–46][law] with [Law 141/2025][reform] and [DD 156/2026][october]. The coordinated archive is an older recognition aid, not a complete 2026 consolidation.
+Law 141/2025 reformed IGR from tax year 2026 ([Law 141/2025, art 54(1)][l141]); Delegated Decree 156/2026 of 12 October 2026 amended it again from tax year 2026 ([DD 156/2026, art 19][dd156]). The official coordinated IGR text (updated to 22 December 2025) includes Law 141/2025 but not DD 156/2026.
 
-## Rates and eligibility gates
+## 1. Who this applies to
 
-| Item | Rule for this preparation | Source |
+- **Resident** legal persons and assimilated entities pay IGR on worldwide income. A legal person is resident if its registered office (sede legale) **or** its place of effective management is in San Marino for most of the tax period ([IGR art 42(1)-(2)][igr]).
+- **Non-resident** legal persons pay IGR on San Marino-source income listed in article 5, including business carried on through a San Marino permanent establishment ([IGR arts 4-5, 42(1)(f)][igr]).
+- Partnerships are transparent: profit is attributed to partners ([IGR art 10(3)][igr]). Sole traders and professionals use `sm-income-tax` (18% separate rate).
+
+Out of scope: special regimes for banks, insurers and financial companies, reorganisations, insolvency (changed by DD 156/2026, arts 13-14) and technology-company regimes.
+
+## 2. Rates, bands and thresholds
+
+| Item | Amount | Tax year | Source |
+|---|---|---|---|
+| Corporate IGR rate, tax years 2026 to 2030 | 18% of taxable income | 2026 | [Law 141/2025, art 54(6)][l141] |
+| Statutory corporate rate (applies again from 2031 unless changed) | 17% | 2026 | [IGR art 43(1); Annex C, art C2][igr] |
+| Loss carryforward | No time limit; use capped at 70% of taxable business income each year | 2026 | [IGR art 46(5)][igr] |
+| New-activity incentive (qualifying new company) | 50% cut in the rate for the first five tax periods: 9% in 2026 | 2026 | [IGR art 73(1)(c), (2)][igr]; [Law 141/2025, art 54(6)][l141] |
+| New-activity licence-fee relief | No first licence fee; no annual licence fee for the next three years | 2026 | [IGR art 73(1)(a)-(b)][igr] |
+| Own-capital (equity) increase deduction | 10% of the year's increase in own capital, net of the year's result; unused amounts lapse | 2026 | [IGR art 74(1)-(3)][igr] |
+| Accelerated depreciation (tangible assets, not buildings) | Up to 20% extra in each of the first two tax periods | 2026 | [IGR Annex D, art D3(3)][igr] |
+| Higher depreciation for intensive use or obsolescence | Up to 50% above the ordinary coefficient, buildings excluded, only after a ruling request to the Tax Office | 2026 | [IGR Annex D, art D3(1)-(2)][igr] |
+| Intangible assets | Up to 20% a year | 2026 | [IGR Annex D, art D4(1)][igr] |
+| First advance | 35% of prior-year IGR (net of foreign tax credits on business income), by 31 August | 2026 | [IGR art 124(2)][igr] |
+| Second advance | 55% of the same basis, by 30 November | 2026 | [IGR art 124(2)][igr] |
+| Return and balance | 31 July following the tax year | 2026 | [IGR arts 93(1), 124(1)][igr] |
+| Late payment interest | Legal rate plus 2 points | 2026 | [IGR art 128(2)][igr] |
+
+## 3. The base
+
+1. **Start from the accounts.** Taxable income is business income determined under Title III from complete accounts and fiscal records, with income and costs in the correct period ([IGR arts 45-48][igr]). An unrecorded receipt is still taxable; a capital asset is depreciated, not expensed when paid.
+2. **Disallowed costs.** Income taxes, related tax penalties and interest, and costs of criminal activity are not deductible; directors' pay is deductible under its payment rule ([IGR art 49][igr]). Article 50 sets ceilings for general costs such as advertising, data processing and entertainment; DD 156/2026 repealed article 50(4-bis)(b) ([IGR art 50][igr]; [DD 156/2026, art 20][dd156]).
+3. **Depreciation and provisions.** Use the Annex D coefficients by asset group, recorded in the depreciable-assets register. Depreciation starts in the first period the asset is used or usable, at the full annual rate regardless of month. New companies can start depreciation in the first period with revenue ([IGR Annex D, arts D1-D3][igr]). Non-capitalised research and advertising costs are deductible in the year or spread over that year and the next three ([IGR Annex D, art D4(4)][igr]).
+4. **Related parties.** Dealings with companies that control, are controlled by or share a controller with the taxpayer are valued at normal value where that increases income ([IGR art 46(4)][igr]). Use `sm-transfer-pricing`.
+5. **Crypto-assets.** Year-end valuation gains and losses on crypto-assets do not count in income, whatever the accounting entry ([IGR art 46(5-bis)][igr]).
+6. **Incentives.** The 10% own-capital deduction uses the year's increase in own capital, excluding the year's result, retained-earnings reserves made under Title IV Chapter I and legally required reserves. If shareholders later reduce capital other than for losses, the benefit is repaid in proportion ([IGR art 74][igr]).
+7. **Losses.** Documented tax losses carry forward without time limit and can absorb at most 70% of the year's taxable business income ([IGR art 46(5)][igr]). Keep a schedule by year of origin.
+8. **Tax.** Apply 18% to the result. Then deduct foreign tax credit (section 6), advances paid and tax withheld on account ([IGR art 124(3)][igr]).
+
+### New-activity incentive conditions
+
+The 50% rate cut applies to a newly formed capital company whose shareholders and beneficial owners have not carried on a similar business in the twelve months before the request, and which hires at least one full-time employee (a full-time director counts) within six months of authorisation to operate and a second within 24 months ([IGR art 73(2)][igr]). The cut runs for the first five tax periods; the company can defer the start to no later than the first period after the one in which the new activity starts ([IGR art 73(1)(c)][igr]). It applies only on the company's option ([IGR art 73(4)][igr]). Losing a condition (including through a share transfer) ends the benefit for the current and later periods ([IGR art 73(2), (5)][igr]). Intangible-asset businesses are also subject to Decree-Law 76/2018 ([IGR art 73(6-bis)][igr]). For 2026 the cut applies to the 18% rate, giving 9%.
+
+## 4. Deadlines and filing
+
+| Obligation | Deadline | Source |
 |---|---|---|
-| Ordinary covered corporate IGR, tax years 2026–2030 | **18% of taxable income**, replacing the 17% in article 43 for those periods | [Law 141/2025, article 54(6)][reform] |
-| Documented corporate prior losses | No time limit on carryforward; ordinary annual use at most **70% of taxable business income** | [IGR 46(5)][law]; [Law 141/2025, article 16][reform] |
-| Qualifying new-activity rate relief | **50% rate reduction**, first five tax periods; actual option/start/eligibility must be established | [IGR 73][law]; [Law 141/2025, article 23][reform] |
-| Selected own-capital deduction | **10% of qualifying own-capital increase**, excluding current-year result and specified reserves; unused annual amounts do not carry forward | [IGR 74][law] |
-| Prior-year advance basis | Prior-year IGR net of the specified foreign credits on business/professional income | [IGR 124(2)][law] |
+| Annual electronic return, transmitted by 24:00 | 31 July following the tax year (31 July 2027 for 2026) | [IGR art 93(1), (4)][igr] |
+| Balance of tax | Same date as the return | [IGR art 124(1)][igr] |
+| First advance (35%) | 31 August of the tax year | [IGR art 124(2)][igr] |
+| Second advance (55%) | 30 November of the tax year | [IGR art 124(2)][igr] |
+| Withholding remittance as payer | By the two-month period after the one in which tax was withheld | [IGR art 125(1)][igr] |
 
-IGR 73 is an incentive for a qualifying new activity. For corporations it requires a newly formed company and the specified no-similar-activity condition for shareholders **and beneficial owners** in the twelve months before the request. One full-time employee, including an eligible full-time employed director, is required within six months of authorisation; an additional employee within twenty-four months. Preserve those employment and ownership conditions. The five-period start can be deferred no later than the first tax period after the new activity begins. Loss of conditions removes relief for the current and later periods. Intangibles and anti-abuse have additional gates. Obtain the actual application/option and current implementing circular; incorporation alone does not grant relief. A confirmed 2026 half-rate is 9%, rather than the retained summary's 8.5%. [IGR 73 and 75(3-bis)][law]; [Law 141/2025, article 23][reform]
+Advances are not due if the activity is suspended or ceased before the due date ([IGR art 124(2)][igr]). Amounts owed can be set off against IGR, import-tax or other Tax Office credits on the taxpayer's fiscal account ([IGR art 126][igr]). Keep the payment receipt until the assessment period ends ([IGR arts 124(1), 127][igr]).
 
-## Build and retain the base
+A return filed within 30 days after 31 July is valid with the late-filing charge; a later return is null and cannot support a refund claim, though tax shown on it can still be collected ([IGR art 93(2)-(3)][igr]).
 
-1. Reconcile the complete accounts and fiscal ledgers. IGR 45–48 require actual business income, costs connected with taxable activity, correct timing and fiscal adjustments. An unrecorded receipt is not excluded merely because it was omitted from a ledger. Do not deduct a capital asset's entire cost solely because cash was paid.
-2. Apply the specific expense rules. IGR 49 excludes income taxes, relevant tax penalties/interest and criminal-activity costs; director remuneration has a payment rule. Article 50 contains separate ceilings and exceptions for general costs, including advertising, data processing and representation. The October decree removes article 50(4-bis)(b). This Guide does not complete every cost, asset, participation or sector classification. [IGR 45–50][law]; [DD 156/2026, article 20][october]
-3. Reconcile tax depreciation, provisions, related-party normal value and exempt income with the underlying asset/transaction evidence. Articles 51–60 and Annex D need their own workpapers; the ordinary tax-rate example does not establish these adjustments. Use the [TP Guide](sm-transfer-pricing.md) for related-party preparation.
-4. Establish the eligible incentive/equity deduction and its own conditions before finalising the base. IGR 74 does not mean 10% of all registered capital is deductible every year; it uses a qualifying **increase**, excludes specified reserves and requires recapture for certain non-loss capital reductions. Ordering/interactions with other incentives and loss utilisation require a separate conclusion.
-5. Reconcile assessed unused losses by origin and use. Apply the ordinary 70% annual cap to the established relevant taxable business base. Preserve the unused balance; an accounting loss alone is not proof of an available tax loss. Apply 18% to the resulting ordinary 2026 base. Foreign credit under IGR 44 and any other established relief are separate from a reduction in the base.
+## 5. Penalties and interest
 
-## Filing, advances, payment and corrections
+| Item | Amount | Source |
+|---|---|---|
+| Late return (art 137(2)(a)) | 400 | [IGR art 139(1)(d), replaced by DD 156/2026, art 16][dd156] |
+| Late return filed within 30 days of the deadline | 200 | [DD 156/2026, art 16][dd156] |
+| Late payment interest | Legal interest rate plus 2 points, from the due date to payment; not charged on penalties | [IGR art 128][igr] |
+| Assessment paid within 60 days of notice | Penalties reduced by 50% | [IGR art 129][igr] |
 
-IGR 83/86–94 require the appropriate electronic declaration and supporting documents. The general statutory declaration deadline is **31 July following the income year**, with transmission by 24:00 and article 93(5)'s holiday/office-closure rule. IGR 124(1) links balance payment to that deadline. Obtain the current forms, attachment circular, office calendar and actual taxpayer/period route; the old approximate 30 June statement is replaced. The 2027 operational calendar has not been tested. [IGR 83,86–94 and 124][law]
+Articles 138 and 139 set separate penalties for non-payment, late payment, failure to withhold and false or omitted returns ([IGR arts 137-139][igr]).
 
-Ordinary economic operators pay a first advance of **35% by 31 August** and second of **55% by 30 November**, using the prior-year IGR basis net of the specified foreign credits. Before applying the advance obligation, test suspension/cessation before the due date. Final tax is reconciled with established advances and creditable withholding. Do not deduct an unproven payment or automatically carry an excess into an unrelated tax account. Articles 126–127 require the actual offset/payment route and receipt. [IGR 124 and 126–127][law]
+## 6. Cross-border points
 
-Article 93-bis permits specified corrections only within its time and no-control-start conditions. Article 93's late-declaration validity wording and article 137's late/omitted classification need case-specific reconciliation; a penalty amount does not prove that a late declaration is valid or preserves a refund.
+- **Foreign tax credit.** Final, non-refundable foreign tax on foreign income included in the base is credited up to the share of net San Marino tax that foreign income bears to total income, computed per State ([IGR art 44][igr]). For income not earned through a foreign permanent establishment, foreign income for this fraction is total income x foreign gross receipts / total receipts ([IGR art 44(8)][igr]).
+- **Permanent establishment.** A construction or installation site is a San Marino permanent establishment only if it lasts more than three months ([IGR art 4][igr]).
+- **Payments abroad.** Withholding on dividends (5% to individuals), interest (13%), professional services (20%) and equipment rentals (10%): see `sm-cross-border`.
+- **International advance agreements** on transfer prices, PE status and entry and exit values: Delegated Decree 116/2026, see `sm-transfer-pricing`.
 
-## Penalties and interest
+## 7. Two worked examples that recompute
 
-IGR 128 charges late interest from the payment deadline to actual payment at **the legal interest rate plus two percentage points**; interest is not charged on penalties. The legal rate applicable to the actual dates has not been established here, so no all-in annual amount is supplied. IGR 138–139 distinguish nonpayment, late payment, nonwithholding and false/omitted returns. The ordinary corporate late-return charge in article 139(1)(d) is 400, reduced to 200 within thirty days, subject to the declaration's correct legal classification. [DD 156/2026, article 16][october] changes that provision and specified personal-income cases; do not use the older consolidated wording alone. Disputes, reductions and the full sanctions chain remain open. [IGR 128 and 137–143][law]
+### Example 1: ordinary company with brought-forward losses
 
-## Worked controls
-
-Amounts and legal eligibility are express assumptions. These controls do not replace an actual asset, incentive or loss determination.
-
-### Ordinary bridge and losses
-
-Assume book profit 100,000, an established nondeductible 2,000 tax-penalty expense, no other adjustments/incentives, and 90,000 documented unused corporate losses. The pre-loss base is 102,000; ordinary loss use is 71,400, leaving 30,600 taxable and 18,600 unused loss. IGR is 5,508.
+Book profit 100,000; a 2,000 tax penalty was expensed and is added back; 90,000 of documented losses are brought forward. Pre-loss taxable income 102,000. Loss use is capped at 70%: 71,400. Taxable income 30,600; IGR at 18% = 5,508. Losses carried forward: 18,600.
 
 ```oa-check
-name: San Marino assumed2026 corporate bridge and loss ceiling
+name: San Marino 2026 corporate bridge with 70% loss cap
 inputs:
   book_profit: 100000
   nondeductible_tax_penalty: 2000
   documented_unused_losses: 90000
   statutory_loss_limit: 0.70
-  covered_2026_rate: 0.18
+  rate_2026: 0.18
 steps:
   pre_loss_taxable_income: book_profit + nondeductible_tax_penalty
   annual_loss_ceiling: pre_loss_taxable_income * statutory_loss_limit
   losses_used: min(documented_unused_losses, annual_loss_ceiling)
   taxable_income_after_losses: pre_loss_taxable_income - losses_used
-  ordinary_igr: taxable_income_after_losses * covered_2026_rate
+  ordinary_igr: taxable_income_after_losses * rate_2026
   losses_remaining: documented_unused_losses - losses_used
 expected:
   pre_loss_taxable_income: 102000
@@ -93,87 +122,71 @@ expected:
   losses_remaining: 18600
 ```
 
-### Already established new-activity entitlement
+### Example 2: qualifying new company, advances in the next year (edge case)
 
-Assume every IGR 73 condition and option has been independently established for this 2026 tax period, with 200,000 taxable income after all base adjustments. The ordinary covered rate 18% is reduced 50%, producing 9% and 18,000 IGR. This is not a claim that any newly incorporated company qualifies.
-
-```oa-check
-name: San Marino assumed qualifying2026 new-activity half-rate
-inputs:
-  established_taxable_income: 200000
-  covered_2026_rate: 0.18
-  established_rate_reduction: 0.50
-steps:
-  ordinary_igr: established_taxable_income * covered_2026_rate
-  conditional_effective_rate: covered_2026_rate * (1 - established_rate_reduction)
-  conditional_igr: established_taxable_income * conditional_effective_rate
-expected:
-  ordinary_igr: 36000
-  conditional_effective_rate: 0.09
-  conditional_igr: 18000
-```
-
-### Advance basis and balance
-
-Assume prior-year IGR 20,000 and 2,000 of the particular foreign credits deducted from the advance basis. Both advances are actually paid; current final IGR is 23,000, with no other payments/credits. Advances are 6,300 and 9,900; balance 6,800. Dates and holiday adjustments require the actual calendar.
+A new company meets every article 73 condition and has opted in. Taxable income 200,000. Ordinary IGR at 18% would be 36,000; with the 50% cut the rate is 9% and IGR is 18,000. In the following year its advances use 18,000 (no foreign credits) as the basis: 6,300 by 31 August and 9,900 by 30 November.
 
 ```oa-check
-name: San Marino assumed ordinary advances and final balance
+name: San Marino 2026 new-company half rate and next-year advances
 inputs:
-  prior_year_igr: 20000
-  specified_prior_foreign_credit: 2000
+  taxable_income: 200000
+  rate_2026: 0.18
+  rate_reduction: 0.50
   first_advance_fraction: 0.35
   second_advance_fraction: 0.55
-  established_current_final_igr: 23000
 steps:
-  advance_basis: prior_year_igr - specified_prior_foreign_credit
-  first_advance: advance_basis * first_advance_fraction
-  second_advance: advance_basis * second_advance_fraction
-  paid_advances: first_advance + second_advance
-  final_balance: established_current_final_igr - paid_advances
+  ordinary_igr: taxable_income * rate_2026
+  reduced_rate: rate_2026 * (1 - rate_reduction)
+  reduced_igr: taxable_income * reduced_rate
+  first_advance_next_year: reduced_igr * first_advance_fraction
+  second_advance_next_year: reduced_igr * second_advance_fraction
 expected:
-  advance_basis: 18000
-  first_advance: 6300
-  second_advance: 9900
-  paid_advances: 16200
-  final_balance: 6800
+  ordinary_igr: 36000
+  reduced_rate: 0.09
+  reduced_igr: 18000
+  first_advance_next_year: 6300
+  second_advance_next_year: 9900
 ```
 
-### Isolated qualifying equity increase
+The same rules give: a qualifying own-capital increase of 100,000 gives a 10,000 deduction that year only; with prior-year IGR of 20,000 less 2,000 foreign business-income credits, advances are 6,300 and 9,900, and a current-year IGR of 23,000 leaves a balance of 6,800.
 
-Assume 100,000 independently established qualifying IGR 74 own-capital increase after removing the current result and excluded reserves, with enough relevant income for current use. The isolated 10% deduction is 10,000. This does not settle ordering against losses or other incentives, or a later capital-reduction recapture.
+## 8. Ask the client first
 
-```oa-check
-name: San Marino assumed isolated qualifying own-capital increase
-inputs:
-  established_qualifying_increase: 100000
-  statutory_deduction_fraction: 0.10
-steps:
-  isolated_current_deduction: established_qualifying_increase * statutory_deduction_fraction
-expected:
-  isolated_current_deduction: 10000
-```
-
-## Ask and refer
-
-Obtain seat/management dates, complete accounts and ledgers, all assets/costs and counterparties, loss history, foreign tax certificates, prior tax/credit basis and actual advance receipts. Obtain the full incentive/ownership/beneficial-owner/employment/option file before any half-rate claim. Refer special corporate exemptions, finance/technology, intellectual property, detailed depreciation/provisions, incentive interactions, foreign PE/credit, restructurings/insolvency, exit and disputes. DD 156 changes insolvency and merger provisions; they are not completed by this ordinary workpaper. IT-CORP remains partial. Named San Marino accountant review remains open.
+1. Registered office and where the board actually meets and decides, with dates.
+2. Full accounts, fiscal ledgers, depreciable-assets register and any related-party dealings.
+3. Loss schedule by year of origin, as shown in earlier returns.
+4. Formation date, new-activity request and option, shareholders' and beneficial owners' prior activity, and hiring dates.
+5. Prior-year IGR, advances paid and withholding suffered.
+6. Foreign income and foreign tax paid, by State, with final assessments.
 
 ## Sources
 
-Read 24 October 2026: official coordinated IGR archive, no-notes edition dated 22 December 2025 and separate with-notes edition dated 12 December 2025; selected articles 1–6,42–50,73–75,83–94,123–139. The two dated editions are not represented as identical or a complete 2026 consolidation. Law 141/2025 articles 16,23,51–56 supplies selected reform/commencement checks. DD 156/2026 was read in full, including its 2026 application rule; its specialist provisions are flagged. All current-year amendments, implementation circulars and live return fields have not been audited. Original approximate statements remain in Git history.
+| Source | URL | Read on |
+|---|---|---|
+| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 4-5, 10, 42-50, 73-74, 93, 124-129, 137-139, Annexes C and D | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
+| Law 141/2025 of 12 November 2025, art 54 (commencement, 18% rate 2026-2030) | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html | 2026-10-30 |
+| Delegated Decree 156/2026 of 12 October 2026, arts 13-14, 16, 19-20 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
 
-[law]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
-[reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
-[october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
+Not yet confirmed: the 2026 legal interest rate; the full Annex D coefficient table by asset group; participation exemption and treatment of dividends received; the current implementing circular for article 73; the 2027 return forms.
 
-## Source-review status
-
-See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
+[igr]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
+[l141]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
+[dd156]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
 
 <!-- openaccountants-cta-block -->
 
 ---
 
-## Talk to an accountant
+## Talk to a verified accountant
 
-Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

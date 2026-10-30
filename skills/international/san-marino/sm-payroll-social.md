@@ -1,269 +1,223 @@
 ---
 name: sm-payroll-social
 description: >
-  Prepare 2026 San Marino wage withholding and selected social-contribution workpapers using current ISS circular 2187/UC/2026 and the reformed IGR. Establish coverage, pensionable and fiscal bases, actual payslip components, anticipated annual income, requested credits and filing/payment evidence first. Distinguishes ISS cash contributions from tax-deductible amounts, employer pension/FONDISS components from total employment cost, and employee from self-employed or separate-management rules. Includes six assumed arithmetic controls and the August 2026 contribution-debt procedures. Full employer-fund rates, cross-border coverage, employee contribution deadlines, special remuneration and live portal execution remain partial. The dated pack record identifies independent source-review scope and limits; named local accountant review remains open.
+  San Marino payroll and social contributions for 2026: employee and employer pension contributions to ISS (Istituto per la Sicurezza Sociale) and the FONDISS supplementary pension under ISS circular 2187/UC/2026, self-employed minimum incomes and rates, separate-management (director) rates, the employee taxable-wage base with the 7% forfait capped at EUR 2,800, IGR withholding on account and the February year-end adjustment, IGR G certification by 15 April, remittance of withheld tax, self-employed contribution balance and advance deadlines, thirteenth-month reporting, and the August 2026 rules on unpaid contributions (Regulation 24/2026 and ISS circular 4295/UC/2026). Use for San Marino payroll, ISS rates, FONDISS, self-employed contributions, employer cost and contribution arrears questions. Cross-border social-security coverage and full employer fund tables need their own facts.
 jurisdiction: SM
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.3
-sources:
-  - url: "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html"
-    title: "ISS revised general 2026 circular 2187/UC/2026; pages 1-10"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html"
-    title: "Official coordinated IGR archive; selected payroll and procedure provisions"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html"
-    title: "Law 141/2025; 2026 reform and commencement"
-    as_of: "2026-10-24"
-  - url: "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33"
-    title: "Authentic DD 156/2026; current wage and credit amendments"
-    as_of: "2026-10-24"
-  - url: "https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1"
-    title: "Official public IGR calculator; synthetic wage checks only"
-    as_of: "2026-10-24"
-  - url: "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=16951b47dbbfd35a095f3ff014ae4d7f1dd77aa7"
-    title: "Authentic Regulation 24/2026; contribution nonpayment procedures"
-    as_of: "2026-10-24"
-  - url: "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49160180.html"
-    title: "ISS circular 4295/UC/2026; current instalment instructions"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/home/documento17136203.html"
-    title: "Law 157/2022 articles 21-22; pension and FONDISS rate progression"
-    as_of: "2026-10-24"
+version: 0.4
 ---
 
-# San Marino payroll and social contributions v0.3
+# San Marino payroll and social contributions v0.4
 
-## Scope and preparation
+Tax year: calendar year 2026. Currency EUR. Authorities: ISS (Istituto per la Sicurezza Sociale, Ufficio Contributi) for contributions; UO Ufficio Tributario for IGR withholding.
 
-For each 2026 payroll, collect the contract and applicable collective agreement, actual coverage and registrations, work/residence locations, gross pay and benefits, pensionable base, fiscal base, cumulative year-to-date pay/withholding, dependency claims, SMaC choice and payment records. Cross-border coverage or a foreign employment relationship needs an actual domestic/treaty social-security conclusion. Do not infer coverage from citizenship or a San Marino company address.
+The 2026 rates come from ISS circular 2187/UC/2026 of 22 April 2026, which cancels and replaces circular 1376/UC/2026 of 2 March 2026 and applies Law 157/2022 (pension reform) for 2026 ([ISS circular 2187/UC/2026, p. 1][iss]).
 
-The current ISS general circular is **2187/UC/2026 of 22 April 2026**. Its first page expressly annuls and replaces circular 1376/UC/2026 of 2 March 2026. This Guide uses the revised circular and the 2026 IGR amendments, replacing the retained approximate 2025 rates. [ISS revised circular, page 1][iss]; [IGR 15,24 and 101][law]; [Law 141/2025][reform]; [DD 156/2026][october]
+## 1. Who this applies to
 
-The actual enacted Law 157/2022 articles 21–22 was also compared: its 2026 employee/employer pension and FONDISS columns match the revised ISS circular. The original law also sets later-year increases; those later rates are not substituted for 2026. [Law 157/2022, articles 21–22][pension-reform]
+- **Employers** in San Marino with employees covered by the San Marino scheme: withhold employee contributions and IGR, pay employer contributions.
+- **Employees**, resident or frontier workers, insured in San Marino.
+- **Self-employed** merchants, artisans, professionals, entrepreneurs, agents, autonomous workers and farmers, each with a minimum income.
+- **Separate management (gestione separata):** directors, presidents, operating members and collaborators of companies.
 
-## Employee and employer components
+Coverage for workers posted to or from another State follows the applicable social-security agreement; establish it before applying these rates. Income tax rates and credits are in `sm-income-tax`.
 
-Apply these only to a covered worker and the relevant contribution base. The ISS and FONDISS columns are distinct; do not count the pension rate again within the stated overall ISS employee rate. [ISS revised circular, pages 1 and 10][iss]
+## 2. Rates, bands and thresholds
 
-| Component | 2026 rate | Scope |
-|---|---:|---|
-| Employee first-pillar pension | 6.90% | Included in the overall employee ISS rate below |
-| Overall employee ISS contributions stated by the circular | 7.80% | Not a breakdown of every component or an automatic tax deduction |
-| Employer first-pillar pension | 17.60% | Pension component, not total employer social cost |
-| Combined first-pillar pension | 24.50% | Employee 6.90% plus employer 17.60% |
-| Employee FONDISS | 2.50% | On applicable pensionable base |
-| Employer FONDISS | 2.50% | For covered employees |
-| Combined FONDISS | 5.00% | Employee plus employer |
+### Employees
 
-If the overall employee ISS 7.8% and employee FONDISS 2.5% both apply to the same established base, those stated cash components total 10.3%. That does **not** mean 10.3% is the deductible amount for IGR. The official public 2026 tax calculator defaults to **9.9%** deductible contributions: pension 6.9%, FONDISS 2.5%, and CIG/unemployment/solidarity 0.5%, and explicitly requires removing absent components. Reconcile actual payslip deductions and their legal deductibility under IGR 15; the difference is not an established universal tax deduction or a classified voluntary charge. [IGR 15][law]; [ISS pages 1/10][iss]; [official calculator][calculator]
+| Item | Amount | Tax year | Source |
+|---|---|---|---|
+| Employee pension fund contribution | 6.90% | 2026 | [ISS circular 2187/UC/2026, p. 1][iss] |
+| Employee contributions in total (including the 6.90% pension) | 7.80% | 2026 | [ISS circular 2187/UC/2026, p. 1][iss] |
+| Employer pension fund contribution | 17.60% | 2026 | [ISS circular 2187/UC/2026, p. 1][iss] |
+| Total pension fund contribution | 24.50% | 2026 | [ISS circular 2187/UC/2026, p. 1][iss] |
+| FONDISS, employee (on the pensionable base) | 2.50% | 2026 | [ISS circular 2187/UC/2026, p. 10][iss] |
+| FONDISS, employer | 2.50% | 2026 | [ISS circular 2187/UC/2026, p. 10][iss] |
+| Employee forfait in the taxable wage | 7% of gross pay, capped at 2,800 | 2026 | [IGR art 24(4)][igr] |
+| Default deductible contributions in the Tax Office calculator | 9.9% (pension 6.9%, FONDISS 2.5%, unemployment and solidarity 0.5%) | 2026 | [Tax Office IGR calculator][calc] |
+| Employer IGR G certification to the Tax Office | By 15 April following the year | 2026 | [IGR art 85(2)][igr] |
+| Remittance of IGR withheld on wages | By the end of the two-month period after the month of withholding or accrual | 2026 | [IGR art 125(1)][igr] |
 
-The two verified employer components above total 20.1%. This is a **subtotal only**. Other employer funds, sector charges, ceilings, exemptions and contractual costs must be established before quoting total employment cost or producing the actual remittance. The prior approximate 27.4% employer total and 16.6% pension figure are not retained as current verified rates.
+### Self-employed and separate management (2026 minimum incomes and rates)
 
-## Fiscal wage base and withholding
+| Category | Minimum income | Pension | Social security | Family allowances |
+|---|---:|---|---|---|
+| Merchants | 30,164.57 | 24% | 2% on declared income up to 50,294.28 | Not liable |
+| Artisans | 30,164.57 | 24% | 2% up to 50,294.28 | 3.60% |
+| Artisans' family helpers | 17,500.00 | 24% | 2% up to 50,294.28 | 3.60% |
+| Professionals (libero professionista) | 30,164.57 | 24% (1) | 2% up to 50,294.28 | Not liable |
+| Entrepreneurs | 30,164.57 | 24% | Not liable | Not liable |
+| Agents and commercial representatives | 30,164.57 | 24% (1) | 2% up to 50,294.28 | Not liable |
+| Autonomous workers (DD 214/2021) | 30,164.57 | 24% (1) | 2% up to 50,294.28 | Not liable |
+| Farmers | 15,000.00 | 11% | 4% on the minimum income | Not liable |
+| Farmers' family helpers | 5,800.00 | 11% | 4% on the minimum income | Not liable |
+| Separate management, ordinary director or president | 30,164.57 | 19% (17% if already in another pension fund and only a director) | Not liable | Not liable |
+| Separate management, operating director or operating member (collaborator) | 30,164.57 | 19% (an ordinary director who becomes operating owes an extra 1% on the self-employed minimum income) | 2% | Not liable |
+| Separate management, project collaborators (CO.CO.PRO.) | Per DD 162/2024 art 2 | 19% | Not liable | Not liable |
+| Separate management, pensioner director, president or member | 30,164.57 | 30.50% solidarity rate, on 20% of income (sole director or president) or 60% of income (operating director or collaborating member) | Not liable | Not liable |
 
-IGR 24–25 requires the actual taxable cash and benefit categories. For ordinary wages, compute the **7% forfait on gross wage, capped at 2,800**, and deduct the eligible compulsory employee contributions under IGR 15. The public program's synthetic 30,000 gross-wage result is 30,000 minus 2,100 forfait minus 2,970 default eligible contributions = **24,930 taxable**. A 50,000 gross-wage case uses the 2,800 cap, not 3,500. Coverage/contribution ceilings and actual benefits can change the workpaper. [IGR 15,24–25][law]; [official calculator][calculator]
+(1) For professionals, agents and autonomous workers only: 2% on income above 50,294.28. Directors registered in another pension fund pay on 30% of the income from the second registration (DD 162/2024, art 1). Source for the whole table: [ISS circular 2187/UC/2026, pp. 4-6][iss].
 
-At payment, the payer operates IGR withholding **on account** for wages and the specified pension payments. IGR 101(4) annualises the anticipated income at the ordinary marginal bands and allows the specified deductions and credits requested/declared by the worker under their responsibility. The SMaC credit can be requested partially; medical/rental credits under 16(7-bis) are excluded from this withholding calculation. Obtain the requested credit amount and avoid automatically assuming maximum eligible SMaC spending. Use the [personal-income Guide](sm-income-tax.md) for bands, family conditions, actual-income SMaC interpolation and the mixed business/wage election. [IGR 16–17 and 101][law]; [DD 156/2026, articles 3–4 and 18][october]
+FONDISS for the self-employed, separate management and farmers is 4% of business or professional income, never on less than the minimum income for the first-pillar scheme ([ISS circular 2187/UC/2026, p. 10][iss]).
 
-IGR 101(5) collects the reconciliation withholding through **February of the following tax period**, including the applicable article 84 multi-employer consolidation option. Article 101(6) separately addresses insufficient cash to withhold. Termination payments and supplementary pension benefits have separate final/on-account routes under 101(3); do not apply the ordinary salary example unchanged. [IGR 84 and 101][law]
+| Self-employed deadline | Date | Source |
+|---|---|---|
+| Contribution and FONDISS balance (self-employed, sole traders) | 31 July each year, from 2026 | [ISS circular 2187/UC/2026, p. 6][iss] |
+| First contribution and FONDISS advance (self-employed, sole traders) | 31 August each year, from 2026 | [ISS circular 2187/UC/2026, p. 6][iss] |
+| Separate management contributions | 31 January of the year after the reference year | [ISS circular 2187/UC/2026, p. 6][iss] |
 
-## Travel, benefits and thirteenth-month reporting
+## 3. The base
 
-DD 156 article 8 replaces IGR 24(3)'s travel rules: public daily allowances use the cited statutory table; the stated other foreign-service allowance base is 75%; unreceipted travel-expense limits distinguish 15 per day for San Marino/Italy from 30 for other foreign destinations. Electronic/traceable payment and any actual circular exceptions matter. A foreign daily allowance cannot be combined with the same-day commuting reimbursement specified by the rule. Classify the employer, destination, payment and reimbursement evidence before deciding exclusion. No complete travel or benefit valuation is supplied here. [DD 156/2026, article 8][october]
+**Contributions.** Apply the employee rates to the pensionable pay of a covered worker. The 7.80% is the employee's total ISS rate and already contains the 6.90% pension; FONDISS 2.50% is on top. So a covered employee pays 7.80% + 2.50% = 10.30% in cash. The employer's pension plus FONDISS is 17.60% + 2.50% = 20.10%; other employer funds and sector charges come on top and must be taken from the employer's ISS statement before quoting total employment cost.
 
-The ISS circular provides specific Christmas/thirteenth-month contribution reporting: a separate payment uses **month 13** and no worked hours/days; a December payment including it uses the relevant December reporting flag. Its collective-agreement examples include dated agreements, so they do not establish a universal current contractual entitlement or amount. Obtain the actual current sector agreement. [ISS revised circular, pages 1–3][iss]
+**Taxable wage.** Taxable wage = gross pay and benefits less compulsory employee contributions deductible under IGR article 15 less the 7% forfait capped at 2,800 ([IGR arts 15, 24(4)][igr]). The Tax Office calculator deducts 9.9%; use the payslip's actual deductible components, not the 10.30% cash figure ([Tax Office IGR calculator][calc]).
 
-## Reporting and payment calendar
+**Travel.** Unreceipted travel costs paid by traceable means are excluded up to 15 a day (San Marino and Italy) or 30 a day (abroad excluding Italy); foreign-service allowances count at 75% ([IGR art 24(3), replaced by DD 156/2026, art 8][dd156]).
 
-Keep tax and social-security obligations separate. IGR 125(1) requires the ordinary withholding payment by the **bimonth following the one in which withholding was made or the monthly employment income accrued**. Record the relevant accrual/withholding dates; do not automatically start the clock only when salary cash is paid. Special financial-payer advances under 125(2) are a different route. This is not an ISS monthly contribution deadline. Article 85 requires IGR G transmission by **15 April** following the income period and the specified employee copy. The worker's return exemption depends on article 84; otherwise the general declaration/balance route is 31 July following the tax year, subject to article 93's holiday/office-closure rule. Obtain the actual current forms, calendar and receipts. [IGR 84–85,93,124–125][law]
+**Withholding on account.** The employer annualises the expected income at the bands, deducts the family credits and the SMaC credit the employee asks for (it can be partial) and withholds on account; medical and rent credits are left to the return ([IGR art 101(4)][igr]; [IGR Annex E, art E3(3)][igr]). The year-end adjustment is collected by February of the following year ([IGR art 101(5)][igr]). Termination payments and supplementary pensions follow their own routes ([IGR art 101(3)][igr]).
 
-This research has not reconciled the complete employee contribution declaration/payment calendar or the live CONTRISS payload. Do not fill that gap with the old phrase typically monthly or treat a correct tax-payment deadline as proof ISS payment is timely. Obtain the current ISS instructions before execution. IGR 131's joint-liability rule has the specific neither-withheld-nor-paid condition; it is not a general conclusion that an employee pays tax twice whenever an employer fails to remit. [IGR 125 and 131][law]
+**Thirteenth month.** A separate Christmas bonus payment is reported to ISS as month 13 with no hours or days worked; a December payslip that includes it uses the December flag ([ISS circular 2187/UC/2026, pp. 1-3][iss]). Entitlement and amount come from the applicable collective agreement.
 
-## Contribution debt: current 2026 procedure
+**Self-employed.** Contributions are on declared income, never below the category minimum, at the rates in section 2. Contributions are fully deductible from business income for IGR ([IGR art 15][igr]).
 
-Keep the actual debt, periods, scheme, taxpayer/COE, collection stage and accepted payment plan in the workpaper. **Regulation 24/2026** governs employee notices, category-specific counts for licence action and collection/instalment coordination. The rules below are distinct from income-tax withholding sanctions and from the ordinary payment due date. [Regulation 24/2026, articles 1–14][debt-regulation]
+## 4. Deadlines and filing
 
-For the employee notice under Law 158/2025 article 8, the Office reviews actual employee-specific contribution positions **bimonthly** and checks three unpaid or incompletely paid eligible months, including nonconsecutive months. ISS and FONDISS counts are checked separately for this notice route. Months without an actual contribution obligation are excluded; the specified good-faith material-error exception needs evidence. Notice goes through the ARPA process; a plan does not make a month fully regularised until the contribution obligation is fully paid. The regulation schedules the communication service from **1 October 2026**, with its particular 31 August initial-state/February–March 2026 transition. That dated legal requirement is not evidence that a particular worker has received a live portal notice. [Regulation 24/2026, articles 2–6][debt-regulation]
+| Obligation | Deadline | Source |
+|---|---|---|
+| Remit IGR withheld from wages | Within the two-month period after the month of withholding or accrual | [IGR art 125(1)][igr] |
+| Transmit IGR G (income and withholding per employee) | 15 April following the year | [IGR art 85(2)][igr] |
+| Year-end withholding adjustment | By February of the following year | [IGR art 101(5)][igr] |
+| Self-employed contribution balance | 31 July | [ISS circular 2187/UC/2026, p. 6][iss] |
+| Self-employed first advance | 31 August | [ISS circular 2187/UC/2026, p. 6][iss] |
+| Separate management contributions | 31 January of the following year | [ISS circular 2187/UC/2026, p. 6][iss] |
+| Self-employed refund requests | Only through the CONTRISS portal, from 1 March 2026 | [ISS circular 2187/UC/2026, pp. 6-9][iss] |
 
-The licence-suspension count under Law 30/2025 article 6 is a separate test. For covered employee/occasional/employee-pensioner arrears entered on the collection roll, the same calendar month counts **once**, whether unpaid to ISS, FONDISS or both, and nonconsecutive months can cross calendar years. The threshold is thirteen such months. For the specified self-employed/agricultural route, **three unpaid contribution deadlines** (first advance, second advance or balance), including nonconsecutive ones, are treated as thirteen months. Do not count each fund twice, treat the employee-notice three-month trigger as suspension, or apply the three-deadline equivalence to every director. Article 7(4) instead uses the principal-debt **above 100,000** route for its specified separate-management categories. Aggregate a physical person's and associated COE roll entries where 7(3) requires it. Article 10 excludes the specified valid BCSM instalment, approved settlement and moratorium positions from the relevant counts/threshold. Obtain current Law 30/2025 and the UAE/collection implementation before deciding suspension, revocation or reactivation in a case. [Regulation 24/2026, articles 7–12][debt-regulation]
+An employee with one employer and no other income does not file a return if the employer transmits IGR G on time ([IGR arts 84-85][igr]).
 
-An ISS Office-agreed contribution repayment plan has a **maximum twelve-month** period to clear the debt, with the relevant penalty and late interest; it is not a taxpayer's automatic unilateral extension. Current **ISS circular 4295/UC/2026 of 19 August** states the penalty as **5%** and the article 44(3) late-interest route, and expressly supersedes circular 2301/UC/2019. Default on even one agreed instalment leads to the stated collection-roll procedure. If no plan can be defined, article 13(3) gives the Office the following four-month collection-roll route. Once amounts are entered on the roll and transmitted to the BCSM collection service, ISS/FONDISS cannot agree a new Office plan or cancel the roll outside the statutory cases. [Regulation 24/2026, articles 13–14][debt-regulation]; [ISS circular 4295/2026][debt-circular]
+## 5. Penalties and interest
 
-Regulation 24 article 15 directs a **proposal** for sanctions reform; it does not itself enact the proposed replacement penalty schedule. Before an actual sanctions/interest calculation, reconcile current article 44 of Law 179/2005 and its amendments, the applicable legal interest rate/dates, good-faith exceptions and collection stage. The earlier 2005 text alone is not treated as a complete current sanctions chain. [Regulation 24/2026, articles 1,13 and 15][debt-regulation]; [ISS circular 4295/2026][debt-circular]
+**Unpaid contributions (Regulation 24/2026 of 7 August 2026).**
 
-## Self-employed and separate management
+- ISS checks each employee's contribution position every two months. If three months (consecutive or not) are unpaid or partly paid, the employee is notified; ISS and FONDISS are checked separately ([Regulation 24/2026, arts 2-4][reg24]). The notification service starts on 1 October 2026, from the arrears position at 31 August 2026 (February-March 2026 bimonth) ([Regulation 24/2026, art 5][reg24]).
+- Licence suspension: for employee arrears on the collection roll, each calendar month counts once whether unpaid to ISS, FONDISS or both; the threshold is thirteen months, consecutive or not. For the self-employed and farmers, three missed contribution deadlines (first advance, second advance or balance) count as thirteen months ([Regulation 24/2026, art 7][reg24]). For the listed separate-management categories the test is roll entries above 100,000 of principal ([Regulation 24/2026, art 7(4)][reg24]). Valid instalment plans, settlements and moratoria are left out of the count ([Regulation 24/2026, art 10][reg24]).
+- Repayment plan with ISS: up to twelve months, with a 5% penalty and late interest under Law 179/2005 article 44(3). Missing even one instalment sends the unpaid amount to the collection roll ([ISS circular 4295/UC/2026 of 19 August 2026][iss4295]; [Regulation 24/2026, art 13][reg24]). If no plan can be agreed, ISS enters the debt on the roll within four months after the legal payment deadline; once on the roll, ISS can no longer agree a plan ([Regulation 24/2026, arts 13-14][reg24]).
 
-Classify the registration before applying an employee rate to a sole trader or director. The revised ISS circular pages 4–6 gives **30,164.57** as the 2026 minimum for the listed merchants, artisans, professionals, entrepreneurs, agents and specified autonomous workers. Artisan family cohelpers use 17,500; agriculture and its family cohelpers use 15,000 and 5,800 respectively. These are category-specific minima, not an individual income-tax allowance. [ISS revised circular, page 4][iss]
+**Withholding.** Late remittance of IGR withheld carries interest at the legal rate plus 2 points ([IGR art 128][igr]). If the employer neither withholds nor pays, the employee is jointly liable ([IGR art 131][igr]). Penalties for failing to withhold or remit are in IGR articles 138-139.
 
-The page 4 pension column gives 24% for the listed ordinary nonagricultural categories. Its footnote (1), applying only to the marked professionals, agents and specified autonomous workers, gives **2% on income above 50,294.28**. Do not extend that excess-income pension treatment to every unmarked category. The **separate social-security column** uses 2% on declared income up to 50,294.28 for the listed covered categories, while entrepreneurs are marked not subject. Artisans have the separate 3.6% family-allowance column. Agriculture uses its separate 11% pension and 4% social-security-on-minimum rules. [ISS revised circular, pages 4–5][iss]
+## 6. Cross-border points
 
-FONDISS for covered self-employed, separate-management and agricultural categories is **4%** of relevant business/professional income, no lower than the first-pillar minimum. Separate-management rates and bases depend on actual ordinary/operational/director/collaborator/pensioner status and other registration: the circular includes 19%, specified 17% and 30.5% cases, additional contributions and reduced income fractions. Do not apply a single director percentage without those facts and the underlying legislation. This Guide does not complete all these interactions. [ISS revised circular, pages 4–6 and 10][iss]
+- Frontier workers employed in San Marino pay San Marino contributions and suffer San Marino IGR withholding on San Marino-source wages ([IGR art 5][igr]); they get the SMaC credit but no family credits as non-residents ([IGR art 16(4), (8-bis)][igr]).
+- Posted workers and multi-State workers: apply the relevant bilateral social-security agreement before choosing the scheme.
+- Payments to non-resident self-employed individuals carry 20% IGR withholding: see `sm-cross-border`.
 
-For the stated separate-management route the circular gives payment by **31 January following the reference year**. For its ordinary self-employed/sole-trader contribution and FONDISS route, from 2026 the **balance deadline is 31 July** and **first advance deadline is 31 August**; it cites Law 158/2025 article 1(17). Other advances, fractions, cessation, special coverage and exemptions need their own current instructions. Refund requests use the circular's CONTRISS route from 1 March 2026; no live claim was submitted. [ISS revised circular, pages 6–9][iss]
+## 7. Two worked examples that recompute
 
-## Worked controls
+### Example 1: monthly employee contributions and employer subtotal
 
-### Covered employee cash components
-
-Assume 3,000 fully pensionable remuneration with no ceiling, exemption or special fund change, and both the stated ISS total and FONDISS applying. The employee components are 234 plus 75 = 309. Employer pension plus FONDISS is 528 plus 75 = 603, excluding every other employer fund/cost. No IGR amount is calculated from the 309 cash total here.
+A covered employee earns 3,000 a month, fully pensionable. Employee: ISS 7.80% = 234, FONDISS 2.50% = 75, total 309. Employer pension 17.60% = 528 plus FONDISS 75 = 603, before other employer funds.
 
 ```oa-check
-name: San Marino covered employee cash components and employer subtotal
+name: San Marino 2026 monthly employee contributions and employer subtotal
 inputs:
-  established_pensionable_pay: 3000
+  pensionable_pay: 3000
   employee_total_iss_rate: 0.078
   employee_fondiss_rate: 0.025
   employer_pension_rate: 0.176
   employer_fondiss_rate: 0.025
 steps:
-  employee_iss: established_pensionable_pay * employee_total_iss_rate
-  employee_fondiss: established_pensionable_pay * employee_fondiss_rate
-  employee_stated_cash_components: employee_iss + employee_fondiss
-  employer_pension: established_pensionable_pay * employer_pension_rate
-  employer_fondiss: established_pensionable_pay * employer_fondiss_rate
+  employee_iss: pensionable_pay * employee_total_iss_rate
+  employee_fondiss: pensionable_pay * employee_fondiss_rate
+  employee_cash_contributions: employee_iss + employee_fondiss
+  employer_pension: pensionable_pay * employer_pension_rate
+  employer_fondiss: pensionable_pay * employer_fondiss_rate
   employer_two_component_subtotal: employer_pension + employer_fondiss
 expected:
   employee_iss: 234
   employee_fondiss: 75
-  employee_stated_cash_components: 309
+  employee_cash_contributions: 309
   employer_pension: 528
   employer_fondiss: 75
   employer_two_component_subtotal: 603
 ```
 
-### Wage forfait ceiling
+The same rules give: gross annual wage 50,000, forfait capped at 2,800, default deductible contributions 4,950, taxable wage 42,250; annual IGR of 1,673.48 (the 30,000 wage case in `sm-income-tax`) spread over thirteen payments is 128.73 each, with a 0.01 adjustment at year end.
 
-Assume gross annual wage 50,000, all default calculator deductible contributions apply on the whole amount, and no other base adjustments. Taxable wage is 42,250. This reproduces the public program's base only, not every deduction on a payslip.
+### Example 2: professional above the pension threshold (edge case)
 
-```oa-check
-name: San Marino annual wage forfait cap and fiscal contribution base
-inputs:
-  annual_gross_wage: 50000
-  established_deductible_contribution_rate: 0.099
-steps:
-  capped_forfait: min(annual_gross_wage * 0.07, 2800)
-  deductible_contributions: annual_gross_wage * established_deductible_contribution_rate
-  taxable_wage: annual_gross_wage - capped_forfait - deductible_contributions
-expected:
-  capped_forfait: 2800
-  deductible_contributions: 4950
-  taxable_wage: 42250
-```
-
-### Anticipated annual tax allocation
-
-Assume the personal Guide's verified synthetic 30,000 gross annual wage case, maximum credit validly requested, no family credits and thirteen equal withholding allocations. Annual IGR 1,673.48 divided by thirteen rounds to 128.73. The final adjustment reconciles actual annual tax with actual amounts withheld; this is not proof every payroll month has identical withholding.
+A professional (footnote 1 category) declares 60,000. Pension: 24% of 50,294.28 = 12,070.63 plus 2% of the 9,705.72 excess = 194.11, total 12,264.74. Social security: 2% of income up to 50,294.28 = 1,005.89. FONDISS: 4% of 60,000 = 2,400. Total 15,670.63.
 
 ```oa-check
-name: San Marino assumed annual withholding allocation and adjustment
+name: San Marino 2026 professional contributions above the 50,294.28 threshold
 inputs:
-  established_annual_igr: 1673.48
-  equal_allocations: 13
+  declared_income: 60000
+  minimum_income: 30164.57
+  threshold: 50294.28
 steps:
-  rounded_allocation: round(established_annual_igr / equal_allocations, 2)
-  total_rounded_allocations: rounded_allocation * equal_allocations
-  final_adjustment: established_annual_igr - total_rounded_allocations
+  contribution_income: max(declared_income, minimum_income)
+  pension: round(min(contribution_income, threshold) * 0.24 + max(contribution_income - threshold, 0) * 0.02, 2)
+  social_security: round(min(contribution_income, threshold) * 0.02, 2)
+  fondiss: contribution_income * 0.04
+  total_contributions: pension + social_security + fondiss
 expected:
-  rounded_allocation: 128.73
-  total_rounded_allocations: 1673.49
-  final_adjustment: -0.01
+  contribution_income: 60000
+  pension: 12264.74
+  social_security: 1005.89
+  fondiss: 2400
+  total_contributions: 15670.63
 ```
 
-### Professional contributions below the threshold
+The same rules give: a professional declaring 40,000 pays pension 9,600, social security 800 and FONDISS 1,600 (12,000); an agreed ISS plan on 12,000 of arrears adds a 600 penalty, 12,600 before interest, or 1,050 a month over twelve months before interest.
 
-Assume a covered professional with established contribution income 40,000, above the applicable minimum, no reduced/other registration and the page 4 pension, social-security and FONDISS rules applying. Pension is 9,600, social security 800, FONDISS 1,600; subtotal 12,000. This is not a total-income-tax calculation.
+## 8. Ask the client first
 
-```oa-check
-name: San Marino assumed covered professional component subtotal
-inputs:
-  established_contribution_income: 40000
-  professional_minimum: 30164.57
-steps:
-  applicable_income: max(established_contribution_income, professional_minimum)
-  pension_component: applicable_income * 0.24
-  social_security_component: min(applicable_income, 50294.28) * 0.02
-  fondiss_component: applicable_income * 0.04
-  stated_component_subtotal: pension_component + social_security_component + fondiss_component
-expected:
-  applicable_income: 40000
-  pension_component: 9600
-  social_security_component: 800
-  fondiss_component: 1600
-  stated_component_subtotal: 12000
-```
-
-### Marked professional pension excess
-
-Assume a professional explicitly within page 5 footnote (1), contribution income 60,000 and no exceptional registration/relief. Isolate the pension component: 24% on 50,294.28 plus 2% on 9,705.72 = 12,264.74 rounded. This does not apply the pension excess rule to an unmarked merchant/entrepreneur or cap FONDISS at this threshold.
-
-```oa-check
-name: San Marino marked professional pension excess-income rule
-inputs:
-  covered_professional_income: 60000
-  footnote_threshold: 50294.28
-steps:
-  ordinary_pension_slice: min(covered_professional_income, footnote_threshold) * 0.24
-  excess_pension_slice: max(covered_professional_income - footnote_threshold, 0) * 0.02
-  isolated_pension_component: round(ordinary_pension_slice + excess_pension_slice, 2)
-expected:
-  ordinary_pension_slice: 12070.6272
-  excess_pension_slice: 194.1144
-  isolated_pension_component: 12264.74
-```
-
-### Agreed-plan principal and stated penalty only
-
-Assume an eligible ISS plan has actually been agreed, contribution principal is 12,000 and the stated 5% penalty applies, with no additional statutory charge. The principal-plus-penalty subtotal is 12,600, or 1,050 for each of twelve equal allocations **before interest**. The legally due interest, actual instalment schedule and any roll-stage change must be added separately; 1,050 is not the final payment quote.
-
-```oa-check
-name: San Marino assumed agreed contribution plan before interest
-inputs:
-  established_contribution_principal: 12000
-  established_plan_penalty_fraction: 0.05
-  assumed_equal_allocations_within_maximum: 12
-steps:
-  stated_plan_penalty: established_contribution_principal * established_plan_penalty_fraction
-  principal_and_penalty_before_interest: established_contribution_principal + stated_plan_penalty
-  equal_allocation_before_interest: principal_and_penalty_before_interest / assumed_equal_allocations_within_maximum
-expected:
-  stated_plan_penalty: 600
-  principal_and_penalty_before_interest: 12600
-  equal_allocation_before_interest: 1050
-```
-
-## Limits and referral
-
-PR and SC remain partial. Full employer-fund tables and cost, contribution-base ceilings/exclusions, current employee deadlines, cross-border coverage/coordination, employment permission, collective agreements, benefits, termination, directors/operational members/pensioners, minimum adjustments, special sectors and portal validation remain open. Refer the identified missing classification or rule before processing. A household-worker circular or category-specific solidarity amount does not establish an all-employer charge. Named San Marino accountant review remains open.
+1. Is the worker an employee, self-employed, director or member, and in which ISS category?
+2. Where the worker lives and works, and any posting or other-State coverage.
+3. Gross pay, benefits, bonuses and the applicable collective agreement (thirteenth month).
+4. The employee's requested family and SMaC credits for withholding.
+5. For the self-employed: declared income for 2025 and 2026, and contributions already paid.
+6. Any unpaid contribution months, roll entries or existing repayment plans.
 
 ## Sources
 
-Read 24 October 2026: revised ISS circular 2187/UC/2026, all ten pages through text/OCR; material pages 1,4,5 and 10 visually compared to the scanned tables and footnotes. The page 4 pension and separate social-security columns were kept distinct. Selected IGR articles 15–17,24–26,84–85,93,101,124–125 and 131; relevant Law 141/2025 reform/commencement and full authentic DD 156/2026. Three public synthetic wage calculations were observed, with no authentication, client data, filing or payment. Law 157/2022 articles 21–22 were read against the current rates. Full authentic Regulation 24/2026, including all fifteen articles and the particular October communication transition, was read. ISS circular 4295/2026 was OCR-read and visually compared. Original legislation for every ISS special case, every 2026 amendment, the complete collection/licensing/sanction chain and live CONTRISS/payroll execution were not audited. The April 2026 care-worker portal circular and November 2020 FONDISS information note were identified as category-specific/datum-limited leads, not a universal current employer procedure. Earlier approximate text remains in Git history.
+| Source | URL | Read on |
+|---|---|---|
+| ISS circular 2187/UC/2026 of 22 April 2026 (2026 rates, minima, deadlines), pp. 1-10 | https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html | 2026-10-30 |
+| ISS circular 4295/UC/2026 of 19 August 2026 (repayment plans) | https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49160180.html | 2026-10-30 |
+| Regulation 24/2026 of 7 August 2026 (unpaid contributions), arts 1-15 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=16951b47dbbfd35a095f3ff014ae4d7f1dd77aa7 | 2026-10-30 |
+| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 5, 15-16, 24, 84-85, 101, 125, 128, 131, Annex E | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
+| Delegated Decree 156/2026 of 12 October 2026, art 8 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
+| Tax Office public 2026 IGR calculator (Law 141/2025) | https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1 | 2026-10-24 |
 
-[law]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
-[reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
-[october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
+Not yet confirmed: employer contributions beyond pension and FONDISS (the earlier version's unemployment 1.9%, health 4.0% and social services fund 1.0%, and its 27.4% employer total); any contribution ceiling for employees; the monthly ISS contribution payment date for employers; the self-employed second advance date; the current sanctions under Law 179/2005 article 44 and the legal interest rate.
+
 [iss]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html
-[calculator]: https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1
-
-## Source-review status
-
-See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
+[iss4295]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49160180.html
+[reg24]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=16951b47dbbfd35a095f3ff014ae4d7f1dd77aa7
+[igr]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
+[dd156]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
+[calc]: https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1
 
 <!-- openaccountants-cta-block -->
 
 ---
 
-## Talk to an accountant
+## Talk to a verified accountant
 
-Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
 
-[debt-regulation]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=16951b47dbbfd35a095f3ff014ae4d7f1dd77aa7
-[debt-circular]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49160180.html
-[pension-reform]: https://www.consigliograndeegenerale.sm/on-line/home/documento17136203.html
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

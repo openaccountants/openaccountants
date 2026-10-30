@@ -1,189 +1,186 @@
 ---
 name: sm-cross-border
 description: >
-  Prepare 2026 San Marino residence, source, permanent-establishment, nonresident withholding and selected corporate foreign-credit workpapers. Use for the domestic-law screen before applying any actual treaty, and for the specific foreign-bank interest and equipment/vehicle-rental cases in the 2026 Finance circular. Establish payer/recipient, country, income character, payment date, operator status and PE before choosing a rate or filing route. Includes the October 2026 identification amendment and separates B2B withholding from covered B2C nonresident self-assessment. No passport, bank location, operator code or general 183-day assumption grants an exemption. Actual treaty entitlement, special residence regimes, personal foreign credit, complete exit/restructuring and operational procedures remain partial, with independent source-review scope documented in the dated pack record; named local accountant review remains open.
+  San Marino cross-border tax for 2026: residence of individuals and companies, San Marino-source income of non-residents, permanent establishment (including the three-month construction test), the October 2026 identification rule for non-residents, final withholding on payments abroad (13% interest, 11% qualifying bonds, 5% dividends to individuals, 20% professional and self-employed services, 3% artistic and sports performers, 10% equipment and vehicle rentals), bank interest rates, the Finance circular 1/2026 on interest paid to foreign banks and rentals paid to foreign operators (B2B withholding and B2C self-assessment at 18% by 31 July 2027), the corporate and personal foreign tax credit, treaty priority and international advance agreements. Use for San Marino withholding tax, non-resident income, payments to Italy or other countries, PE and foreign tax credit questions. Treaty rates need the actual treaty text.
 jurisdiction: SM
-category: international
+category: cross-border
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-24
-version: 0.3
-sources:
-  - url: "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html"
-    title: "Official coordinated IGR; residence, source, withholding, corporate foreign credit and procedure"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html"
-    title: "Law 141/2025; 2026 reform and temporary covered 18% rate"
-    as_of: "2026-10-24"
-  - url: "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33"
-    title: "Authentic DD 156/2026; current source/identification and 2026 application"
-    as_of: "2026-10-24"
-  - url: "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0"
-    title: "Authentic DD 116/2026; international advance-agreement scope"
-    as_of: "2026-10-24"
-  - url: "https://www.finanze.sm/pub2/dam/jcr%3Ac7b6c29b-5894-4a96-914b-00785958a63a/Circolare%20n.1-2026.pdf"
-    title: "Department Finance circular 1/2026; covered nonresident interest/rental B2B and B2C routes"
-    as_of: "2026-10-24"
+last_updated: 2026-10-30
+version: 0.4
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# San Marino cross-border and nonresident tax v0.3
+# San Marino cross-border tax v0.4
 
-## Residence, source and PE first
+Tax year: calendar year 2026. Currency EUR. Authority: UO Ufficio Tributario (Tax Office), Dipartimento Finanze e Bilancio.
 
-IGR 1 taxes relevant resident worldwide income and the listed domestic-source income of nonresidents. Individual residence under 10 has alternative gates: registered residence for most of the tax period, actual stay for most of the period, **or centre of vital interests** in San Marino. Article 2 defines the vital-interest centre using economic, property, social and family interests. The earlier generic registered-address-or 183-day instruction is incomplete. Companies use registered office or effective management for most of the period under 42. Special residence/tax regimes require their own law and approval; this Guide does not determine immigration eligibility. [IGR 1–2,10 and 42][law]
+## 1. Who this applies to
 
-Domestic PE under 4 includes a fixed business place and the listed examples. A construction, assembly/installation or connected supervisory project has the domestic **more-than-three-month** gate. The statute separately addresses certain electronic equipment used for data collection/transmission aimed at sales, habitual contract-concluding persons, independent intermediaries and preparatory/auxiliary exclusions. Mere common control does not itself make one company the other's PE. An actual treaty can change the analysis; no generic six-month project or 183-day employment exemption is supplied. [IGR 4][law]
+- **Resident individuals:** registered residence for most of the tax period, or actually living in San Marino for most of the period, or centre of vital interests in San Marino; taxed on worldwide income ([IGR arts 1-2, 10][igr]).
+- **Resident companies:** registered office or effective management in San Marino for most of the tax period; taxed on worldwide income ([IGR art 42][igr]).
+- **Non-residents:** taxed on the San Marino-source income listed in article 5, by final withholding at payment where articles 102-104 apply and otherwise by return ([IGR art 5][igr]).
+- **Treaties:** the domestic rule applies where it is more favourable than the treaty ([IGR art 9][igr]). Apply a treaty rate only from the treaty text in force.
 
-Under 9, apply the domestic tax provisions where they are more favourable than a tax treaty. For any treaty result, retain the authentic treaty/protocol, entry/application dates, tax/person/income article, beneficial-entitlement facts and the actual claim/withholding evidence. This draft applies no unnamed treaty rate.
+## 2. Rates, bands and thresholds
 
-## Current domestic-source and identification screen
+| Payment by a San Marino payer | Rate | Tax year | Source |
+|---|---|---|---|
+| Capital income (including interest) paid by economic operators, the State and public or private bodies to anyone other than San Marino banks, financial and management companies | 13% final | 2026 | [IGR art 103(1)][igr] |
+| Interest on San Marino bonds and similar debt of 36 months or more, not repaid early | 11% final | 2026 | [IGR art 103(1)][igr] |
+| Bank and financial-company interest: current and deposit accounts | 13% | 2026 | [IGR art 103(2)(a)][igr] |
+| Bank and financial-company: repurchase agreements | 6% | 2026 | [IGR art 103(2)(b)][igr] |
+| Bank and financial-company: certificates of deposit under 18 months / 18 months or more | 6% / 5% | 2026 | [IGR art 103(2)(c)][igr] |
+| Bank and financial-company: bonds issued by authorised entities | 5% | 2026 | [IGR art 103(2)(d)][igr] |
+| Dividends paid by a resident capital company to individuals | 5% final | 2026 | [IGR art 103(6)][igr] |
+| Dividends paid to non-individuals | Nil, if the recipient declares it does not act for an individual | 2026 | [IGR art 103(6)][igr] |
+| Self-employed and assimilated services (article 27) paid to non-residents, including when supplied by a business | 20% final | 2026 | [IGR art 102(1)][igr] |
+| Artistic, cultural or sports services as defined by Tax Office circular; airport and naval services abroad for aviation or shipping operators | 3% final | 2026 | [IGR art 102(2)][igr] |
+| Use of industrial, commercial or scientific equipment and vehicles situated in San Marino, including finance leases, paid to non-residents | 10% final | 2026 | [IGR art 104(5)][igr] |
+| Non-resident B2C recipient (circular 1/2026 route) | 18% on the return for tax years 2026-2030; an Italian recipient applies the treaty rates of 13% (capital income) or 10% (rentals) | 2026 | [Finance circular 1/2026, pp. 2-3][circ1]; [Law 141/2025, art 54(6)][l141] |
+| Construction or installation site as a permanent establishment | Only if it lasts more than three months | 2026 | [IGR art 4][igr] |
 
-IGR 5 lists domestic land/buildings, specified capital income, employment, professional activity, PE business and other source categories. Employment includes payments by resident persons in or outside San Marino; professional source has its own activity/customer/PE terms. Do not decide source solely from where an invoice is issued or workdays counted. [IGR 5][law]; [Law 141/2025,article 2][reform]
+Documented travel, board and lodging reimbursements and costs incurred in the client's name are not subject to the 20% withholding ([IGR art 102(3)][igr]). Withholding on interest paid to resident companies is on account, not final ([IGR art 103(8)][igr]).
 
-The **12 October 2026 DD 156**, applying from tax year 2026, replaces article 5(1)(b)'s capital-income wording and adds 5(4-bis):
+## 3. The base
 
-- Identify the actual payer, regulated-financial status, recipient and instrument before any capital-source exclusion. The specified account/deposit/repo/bond carve-outs and foreign financial-recipient cases are conditional. A foreign-bank lender does not by itself exempt interest paid by an ordinary resident business.
-- Where a nonresident individual/economic operator is not subject to final source withholding, the specified ISS/COE identification route applies. A foreign economic operator can instead designate a local tax representative with joint responsibility for compliance/document retention and a COE request made on its behalf.
-- This tax identification **does not of itself create a PE**. It also does not itself prove a treaty exemption or permission to carry on every activity.
+**Source.** Article 5 lists San Marino-source income: land and buildings in San Marino; capital income paid by the State, residents or San Marino permanent establishments; employment paid by residents; professional work; business through a permanent establishment; and other listed categories ([IGR art 5][igr]).
 
-[DD 156/2026,articles 2 and 19][october]. The older coordinated text and August circular must be read with this later amendment. The actual identification workflow has not been exercised.
+**Capital income carve-outs (from 2026).** Interest and similar income from current accounts, deposits, certificates of deposit, repos and San Marino-issued bonds paid by authorised entities under Law 165/2005 are not San Marino-source. Capital income is also not San Marino-source where the payer is non-resident, or where the payer is a San Marino bank or financial company and the recipient is a foreign bank, a foreign entity doing equivalent reserved activities for its own account, or a foreign collective investment undertaking ([IGR art 5(1)(b), replaced by DD 156/2026, art 2(1)][dd156]). Interest paid by an ordinary San Marino business to a foreign bank is San Marino-source and taxed at 13%.
 
-## Classify each payment before selecting withholding
+**Identification of non-residents.** Non-resident individuals and economic operators not subject to final withholding are identified by an ISS code or an economic-operator code (COE) from ASE-CC. A non-resident operator can instead appoint a San Marino tax representative, jointly liable for compliance and record-keeping, who requests the COE. Identification does not of itself create a permanent establishment ([IGR art 5(4-bis), added by DD 156/2026, art 2(2)][dd156]).
 
-| Selected domestic category | Conditional rate/route | Source |
+**Permanent establishment.** A fixed place of business with the listed examples; a construction, assembly or installation site (with connected supervision) only beyond three months; habitual contract-concluding agents; preparatory and auxiliary activities excluded; common control alone does not create a permanent establishment ([IGR art 4][igr]).
+
+**Foreign-bank interest and foreign rentals (Finance circular 1/2026 of 5 August 2026).**
+
+The circular covers interest paid by San Marino residents (businesses and private persons, not financial operators) to foreign banks, and rent paid to foreign operators for equipment, goods and vehicles under article 104(5) ([Finance circular 1/2026, p. 1][circ1]). Overdraft interest and interest on advances from foreign banks are covered.
+
+1. **B2B.** A San Marino economic operator paying interest to a foreign bank, or rent for equipment or vehicles to a foreign operator without a San Marino permanent establishment, withholds 13% (interest) or 10% (rental) and remits it in the two-month period after payment ([Finance circular 1/2026, pp. 1-2][circ1]). Default interest follows the character of the underlying obligation.
+2. **B2C.** Where the payer is a private resident, the foreign recipient files its own San Marino return for 2026 income by 31 July 2027 and pays the IGR due in one payment by the same date, at 18% unless a treaty applies; there are no advances. The return system is due in April 2027 and an operating manual in early 2027 ([Finance circular 1/2026, pp. 2-3][circ1]).
+3. Income is taxed when paid: a 2026 payment of income accrued in 2025 is taxed in full; income accrued but unpaid because the San Marino debtor is insolvent is not taxed ([Finance circular 1/2026, p. 3][circ1]).
+4. If the payer neither withholds nor remits, the recipient is jointly liable once the payer is entered on the roll. If the payer withheld correctly but did not remit, the foreign bank or operator is not liable ([IGR art 131][igr]; [Finance circular 1/2026, p. 3][circ1]).
+
+## 4. Deadlines and filing
+
+| Obligation | Deadline | Source |
 |---|---|---|
-| Capital income paid by covered ordinary economic operators/public/private entities to a recipient outside the specified domestic regulated exclusions |13% final withholding, with the separate 11% qualifying debt-instrument rule and resident-corporate creditable-treatment exception | [IGR 103(1),(8)][law] |
-| Dividends paid by a resident capital company to an individual |5% final withholding | [IGR 103(6)][law] |
-| Dividend paid to a non-individual | No such withholding only with recipient declaration that it does not act for an individual | [IGR 103(6)][law] |
-| Covered payments for nonresident professional/equivalent services |20%, with the specific 3% artistic/cultural/sport/foreign airport-or-naval route and documented reimbursement exclusions | [IGR 102][law] |
-| Covered nonresident use/rental, including finance lease, of specified equipment/vehicles situated domestically |10% final withholding by a covered payer | [IGR 104(5)][law] |
+| Remit tax withheld | By the end of the two-month period after the month of payment | [IGR art 125(1)][igr] |
+| Financial-institution payers | 50% advance on prior-year withholding by 31 July; balance in the first two months of the following year | [IGR art 125(2)][igr] |
+| Non-resident return (where no final withholding) | 31 July following the tax year | [IGR art 93(1)][igr] |
+| B2C non-resident return and payment for 2026 income (circular 1/2026 route) | 31 July 2027 | [Finance circular 1/2026, p. 3][circ1] |
 
-These are selected classifications, not a universal outbound-payment table. Bank-paid investment income has separate 103(2) rates and source/exemption gates. A charge labelled royalty, service or reimbursement needs its actual legal character; the former corporate summary's universal royalty percentage is not adopted. The special 3% service route requires the actual implementing circular/facts and is not applied in these examples. Actual treaty relief is separate.
+The payer's withholding return frees the recipient from filing for income under final withholding ([IGR art 125(3)][igr]). Keep certificates of tax withheld, stamped by the Tax Office, for the recipient's foreign credit claim ([Finance circular 1/2026][circ1]).
 
-## Specific 2026 foreign-bank interest and rental circular
+## 5. Penalties and interest
 
-[Department Finance circular 1/2026,5 August 2026][circular] covers the specified interest paid by resident nonfinancial persons to foreign banks and specified equipment/vehicle rentals paid to foreign economic operators **without a domestic PE**. It distinguishes:
+Late remittance of withholding carries interest at the legal rate plus 2 points ([IGR art 128][igr]). Failure to withhold, failure to remit and late or omitted returns carry the penalties in articles 138-139 ([IGR arts 138-139][igr]). A late return within 30 days of the deadline costs 200 (400 after), and is null after 30 days for refund purposes ([IGR arts 93, 139(1)(d), replaced by DD 156/2026, art 16][dd156]). Paying an assessment within 60 days halves the penalties ([IGR art 129][igr]).
 
-1. **B2B:** the San Marino economic operator applies the specified 13% interest or 10% rental withholding at payment and remits by the following bimonthly period. Retain its COE/status self-certification and the actual gross base. Interest on specified bank overdrafts/advances is not excluded merely because it involves an account. Late-payment/delay interest follows the category of the underlying obligation rather than automatically being capital income.
-2. **Covered B2C:** a private resident customer is not treated as the B2B withholding operator. The specified foreign recipient files its own annual electronic declaration and pays the covered income tax, ordinarily 18% for 2026–2030 absent applicable treaty treatment. The circular states 31 July 2027 for its 2026 return and single balance payment, with no in-year advances for this stated route. It anticipates system availability by April 2027 and an operational manual in early 2027; these are future instructions, not a portal tested in 2026. Read the later DD 156 identification provision too.
+## 6. Cross-border points
 
-The circular's stated Italian treaty treatment is a source pointer only; this Guide has not independently determined a particular Italian recipient's entitlement. No B2B rate is silently reused as the B2C ordinary assessment rate.
+**Corporate foreign tax credit.** Final, non-refundable foreign tax on foreign income included in the base is credited up to the share of net San Marino tax that the foreign income bears to total income, State by State ([IGR art 44(1)-(3)][igr]). For income not earned through a foreign permanent establishment, foreign income for the fraction is total income x foreign gross receipts / total receipts ([IGR art 44(8)][igr]). No credit if the foreign income was not declared ([IGR art 44(5)][igr]). Foreign tax paid and not recovered can, under the conditions of article 44(7), be deducted in the following period; this is a deduction, not a carried-forward credit ([IGR art 44(7)][igr]).
 
-For these covered receipts, payment timing controls: a 2026 payment of income accrued in 2025 is covered in full absent a transitional rule; an unpaid accrued amount does not itself trigger the circular's cash-basis obligation. Certification of B2B tax withheld/paid, with the authority stamp, and B2C declaration/payment receipts support a later foreign-credit claim; they do not themselves prove that the other State grants a credit. The circular distinguishes failure to withhold/remit from failure to remit after correct withholding under IGR 131. Preserve evidence rather than assuming the recipient is released in every case. [Circular,pages 1–3][circular]; [IGR 11,125 and 131][law]
+**Personal foreign tax credit.** Same limit for individuals; business and self-employed income uses the receipts fraction ([IGR art 18][igr]). See `sm-income-tax`.
 
-## Corporate foreign credit, separate from withholding
+**International advance agreements.** Delegated Decree 116/2026 covers transfer pricing, entry and exit values, treaty PE status and profit attribution, and the application of rules on dividends, interest and royalties paid to or received from non-residents ([DD 116/2026, art 1][dd116]). See `sm-transfer-pricing`.
 
-For a corporate/assimilated taxpayer or covered PE whose total income includes foreign income, IGR 44 requires final/nonrefundable foreign tax and limits credit to the corresponding share of net San Marino tax after fiscal adjustments. Compute separately by State; excluded/undeclared income and omitted/null returns have separate denial rules. Partial foreign-income inclusion also proportionately reduces the eligible foreign tax. [IGR 44][law]
+**Italy.** For the B2C return, circular 1/2026 states that under the Italy-San Marino treaty an Italian recipient applies the treaty rates of 13% on capital income and 10% on rentals instead of 18% ([Finance circular 1/2026, p. 2][circ1]). Confirm the recipient is an Italian treaty resident.
 
-For income **not produced through a foreign PE**,44(8) specifies foreign income for the credit computation as total income multiplied by **foreign gross receipts/total receipts**. Do not substitute the foreign gross receipts themselves as net taxable foreign income. The return/year, final-payment timing through 31 December of the declaration year and the specified later-payment/three-year adjustment provisions need actual documents. Article 44(7)'s following-period deduction for qualifying unrecovered foreign tax is different from a carryforward of a tax credit; do not promise a universal unused-credit carryforward. The [personal-income Guide](sm-income-tax.md) supplies an expressly partial article 18 method for individual foreign-tax relief, distinguishing ordinary income from business/professional receipts; its timing, correction and specialist limits remain open.
+## 7. Two worked examples that recompute
 
-## Exit, rulings, filing and sanctions
+### Example 1: B2B interest to a foreign bank and equipment rental
 
-DD 116/2026 permits an international advance-agreement route covering certain entry/exit values, treaty PE questions, PE profit attribution and specified cross-border receipts/payments. Its existence does not itself determine an exit charge, tax-neutral reorganisation or valuation. Use the [TP Guide](sm-transfer-pricing.md), establish the actual event and obtain the relevant full exit/restructuring chain. DD 156's merger/insolvency changes do not complete those topics. [DD 116,articles 1–6][apa]; [DD 156,articles 13–14][october]
-
-The general IGR return/withholding-declaration deadline is 31 July following the income year, with article 93's office-closure/holiday rule; normal withholding remittance under 125 has a bimonthly clock and a distinct financial-payer route. The specific circular's B2C route above supplies its own stated 2026 income/2027 operational instructions. Retain certified source-tax statements, returns, attachments and payment receipts. Do not equate a declaration exemption, treaty exemption and zero domestic liability. [IGR 83–94,124–127][law]
-
-Late interest under 128 is legal rate plus two points; its actual legal rate/dates are not fixed here. Withholding, nonpayment and declaration penalties are distinct under 138–139. DD 156 changes late-return charges and selected employer-certification treatment. Complete sanctions, late-validity/correction interplay, relief claims and actual portal fields remain open. [IGR 128,131,137–143][law]; [DD 156,articles 16 and 19][october]
-
-## Worked controls
-
-Legal classification and entitlement are explicit assumptions; amounts areEUR.
-
-### Covered B2B foreign-bank interest
-
-Assume a resident ordinary economic-operator payer, a foreign-bank recipient without domestic PE,10,000 interest actually paid in 2026, a covered domestic-source instrument and no treaty relief.13% withholding is 1,300; recipient cash 8,700. This does not apply the domestic-bank source exclusion to an ordinary business payer.
+A San Marino company pays 10,000 of loan interest to a foreign bank (no San Marino permanent establishment) and 12,000 of rent for machinery located in San Marino to a foreign leasing company. Withholding: 1,300 on interest and 1,200 on rent, total 2,500, remitted by the end of the following two-month period.
 
 ```oa-check
-name: San Marino assumed covered2026 B2B foreign-bank interest
+name: San Marino 2026 B2B withholding on foreign-bank interest and equipment rent
 inputs:
-  established_gross_interest_paid: 10000
-  applicable_domestic_withholding_rate: 0.13
+  interest_paid: 10000
+  rent_paid: 12000
+  interest_rate: 0.13
+  rental_rate: 0.10
 steps:
-  withheld_igr: established_gross_interest_paid * applicable_domestic_withholding_rate
-  recipient_cash: established_gross_interest_paid - withheld_igr
+  interest_withholding: interest_paid * interest_rate
+  rental_withholding: rent_paid * rental_rate
+  total_withholding: interest_withholding + rental_withholding
+  bank_receives: interest_paid - interest_withholding
+  lessor_receives: rent_paid - rental_withholding
 expected:
-  withheld_igr: 1300
-  recipient_cash: 8700
+  interest_withholding: 1300
+  rental_withholding: 1200
+  total_withholding: 2500
+  bank_receives: 8700
+  lessor_receives: 10800
 ```
 
-### Covered B2B equipment rental
+If the payer were a private resident, there would be no withholding; the foreign recipient would self-assess 18% on its 2026 return (1,800 on 10,000 of covered income) by 31 July 2027.
 
-Assume a qualifying nonresident owner without domestic PE, covered equipment situated in San Marino,12,000 rent paid by a covered resident operator and no treaty relief.10% withholding is 1,200 and recipient cash 10,800.
+### Example 2: corporate foreign credit, no foreign PE (edge case)
 
-```oa-check
-name: San Marino assumed covered2026 B2B equipment rental
-inputs:
-  established_gross_rent_paid: 12000
-  applicable_domestic_withholding_rate: 0.10
-steps:
-  withheld_igr: established_gross_rent_paid * applicable_domestic_withholding_rate
-  recipient_cash: established_gross_rent_paid - withheld_igr
-expected:
-  withheld_igr: 1200
-  recipient_cash: 10800
-```
-
-### Specific covered B2C route
-
-Assume the circular's nonresident/without-PE B2C route is established,10,000 of the covered gross income is received from a private resident in 2026, the 18% ordinary rate applies and no treaty reduction or other adjustment exists. Self-assessed IGR is 1,800; this is not a customer-operated 13% or 10% withholding.
+A San Marino company has taxable income of 100,000 and net IGR before credits of 18,000. Total gross receipts are 200,000, of which 40,000 come from one foreign State, which charged 5,000 of final tax. Foreign income for the fraction: 100,000 x 40,000 / 200,000 = 20,000. Credit limit 18,000 x 20,000 / 100,000 = 3,600. Credit 3,600; 1,400 is not credited (check article 44(7) for a deduction next year).
 
 ```oa-check
-name: San Marino assumed covered2026 nonresident B2C ordinary assessment
-inputs:
-  established_covered_income_received: 10000
-  applicable_transitional_ordinary_rate: 0.18
-steps:
-  self_assessed_igr: established_covered_income_received * applicable_transitional_ordinary_rate
-expected:
-  self_assessed_igr: 1800
-```
-
-### Non-PE corporate foreign-credit allocation
-
-Assume total taxable income 100,000, net San Marino IGR before foreign credit 18,000, gross total receipts 200,000, relevant-State foreign receipts 40,000 and eligible final foreign tax 5,000. No foreign PE, partial exemption, other State or special adjustment applies. Statutory foreign income allocation 20,000 gives 3,600 domestic limit; credit 3,600 and 1,400 uncredited. Determine separately whether any following-period deduction under 44(7) applies;1,400 is not automatically a carried-forward tax credit.
-
-```oa-check
-name: San Marino assumed nonPE corporate foreign-credit allocation
+name: San Marino 2026 corporate foreign tax credit using the receipts fraction
 inputs:
   total_taxable_income: 100000
-  net_domestic_igr_before_foreign_credit: 18000
-  total_gross_receipts: 200000
-  relevant_state_foreign_gross_receipts: 40000
-  eligible_final_foreign_tax: 5000
+  net_igr_before_credit: 18000
+  total_receipts: 200000
+  foreign_receipts: 40000
+  foreign_tax_paid: 5000
 steps:
-  allocated_foreign_income: total_taxable_income * relevant_state_foreign_gross_receipts / total_gross_receipts
-  domestic_credit_ceiling: net_domestic_igr_before_foreign_credit * allocated_foreign_income / total_taxable_income
-  foreign_tax_credit: min(eligible_final_foreign_tax, domestic_credit_ceiling)
-  foreign_tax_uncredited_in_example: eligible_final_foreign_tax - foreign_tax_credit
+  foreign_income_for_credit: total_taxable_income * foreign_receipts / total_receipts
+  credit_limit: net_igr_before_credit * foreign_income_for_credit / total_taxable_income
+  credit_allowed: min(foreign_tax_paid, credit_limit)
+  foreign_tax_not_credited: foreign_tax_paid - credit_allowed
 expected:
-  allocated_foreign_income: 20000
-  domestic_credit_ceiling: 3600
-  foreign_tax_credit: 3600
-  foreign_tax_uncredited_in_example: 1400
+  foreign_income_for_credit: 20000
+  credit_limit: 3600
+  credit_allowed: 3600
+  foreign_tax_not_credited: 1400
 ```
 
-## Ask and refer
+## 8. Ask the client first
 
-Collect dated homes/stays and vital interests, legal seat/effective management, actual payer/recipient/operator status and regulated licences, PE/project/contract records, income character and payment dates. Obtain authentic treaties/protocols and claim forms, all foreign income/tax/finality evidence, relevant applications, certificates, returns and receipts. Refer every concrete treaty, special residence regime, complex source/PE/remote-work case, personal foreign-credit cases beyond the [partial article 18 method](sm-income-tax.md), exit/entry/merger, foreign-loss and contested withholding/credit claim. Complete XB coverage, within-year amendment/implementation chain, live procedures and named local accountant review remain open. Named San Marino accountant review remains open.
+1. Payer and recipient: residence, whether a business, bank or private person, and any San Marino permanent establishment.
+2. Nature of each payment (interest, dividend, service fee, rent, royalty) and the contract.
+3. Payment dates and amounts in 2026.
+4. Treaty State of the recipient and residence certificate.
+5. For San Marino recipients of foreign income: foreign tax paid, final assessment and receipts split by State.
 
-## Sources and access scope
+## Sources
 
-Read 24 October 2026: coordinated IGR no-notes edition 22 December 2025, selected 1–6,9–11,42–46,83–94,102–104,123–131,137–143; with-notes edition dated 12 December 2025 is separate. Law 141/2025 selected 2/54 and DD 156/2026 all 20 articles. DD 116/2026 all 6 articles. Finance circular 1/2026 is scanned: OCR supplied navigation, pages 1–3 were visually compared for the substantive claims; page 4 is a blank certification form, not filed. It anticipates 2027 procedures, whose existence is not asserted now. These selected reads do not establish the entire amendment chain, all treaties or live filing readiness.
+| Source | URL | Read on |
+|---|---|---|
+| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 1-5, 9-10, 18, 42-44, 93, 102-104, 125, 128-131, 138-139 | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
+| Delegated Decree 156/2026 of 12 October 2026, arts 2, 16, 19 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
+| Law 141/2025 of 12 November 2025, art 54(6) | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html | 2026-10-30 |
+| Finance department circular 1/2026 of 5 August 2026 (articles 5, 103 and 104 IGR), pp. 1-3 | https://www.finanze.sm/pub2/dam/jcr%3Ac7b6c29b-5894-4a96-914b-00785958a63a/Circolare%20n.1-2026.pdf | 2026-10-30 |
+| Delegated Decree 116/2026 (international advance agreements), art 1 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0 | 2026-10-30 |
 
-[law]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
-[reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
-[october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
-[apa]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0
-[circular]: https://www.finanze.sm/pub2/dam/jcr%3Ac7b6c29b-5894-4a96-914b-00785958a63a/Circolare%20n.1-2026.pdf
+Not yet confirmed: a separate withholding rate for royalties (the earlier version's 20% royalty rate; article 102 covers article 27 self-employed income, and whether a given royalty falls in article 27 depends on its character); the list of San Marino tax treaties in force and their rates; the conditions of the article 44(7) deduction; exit taxation of companies.
 
-## Source-review status
-
-See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
+[igr]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
+[l141]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
+[dd156]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
+[dd116]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0
+[circ1]: https://www.finanze.sm/pub2/dam/jcr%3Ac7b6c29b-5894-4a96-914b-00785958a63a/Circolare%20n.1-2026.pdf
 
 <!-- openaccountants-cta-block -->
 
 ---
 
-## Talk to an accountant
+## Talk to a verified accountant
 
-Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

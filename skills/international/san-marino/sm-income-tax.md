@@ -1,126 +1,184 @@
 ---
 name: sm-income-tax
 description: >
-  Prepare 2026 San Marino personal IGR by residence, source and income category, separating ordinary progressive income from business/professional and other separately taxed receipts. Reconcile wage or pension bases, documented deductions, family entitlement, the new SMaC tax credits and foreign-tax evidence before filing. Includes synthetic official-calculator comparisons and arithmetic controls. This source-cited draft replaces the approximate 2025 summary and the old expense-deduction description. Special residence schemes, complete capital/property categories, mixed-income implementation, full relief ordering and live return fields remain partial. Named San Marino accountant review remains open.
+  San Marino personal income tax (IGR, imposta generale sui redditi) for individuals in tax year 2026, under Law 166/2013 as reformed by Law 141/2025 and Delegated Decree 156/2026. Covers residence, worldwide and domestic-source scope, the eight progressive bands from 9% to 35%, the 18% separate rate on business and professional income for 2026 to 2030, the employee 7% forfait capped at EUR 2,800, pension forfaits, rental income, family, medical and rent credits, the SMaC card tax credit for wages, pensions and business income, loss relief, foreign tax credit, payroll withholding, the 31 July return deadline and late-filing charges. Use for San Marino income tax, IGR bands, SMaC credit, resident and frontier employee tax, self-employed tax in San Marino and personal return questions. Special residence regimes and mixed-income ordering need their own facts.
 jurisdiction: SM
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.2
-sources:
-  - url: "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html"
-    title: "Official coordinated IGR archive; selected personal income, tariff and SMaC provisions"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html"
-    title: "Law 141/2025 reform and commencement"
-    as_of: "2026-10-24"
-  - url: "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33"
-    title: "Authentic DD 156/2026; current personal amendments"
-    as_of: "2026-10-24"
-  - url: "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html"
-    title: "ISS revised 2026 contribution circular 2187/UC/2026"
-    as_of: "2026-10-24"
-  - url: "https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1"
-    title: "Official public 2026 IGR calculator; synthetic observations only"
-    as_of: "2026-10-24"
+version: 0.3
 ---
 
-# San Marino personal income tax v0.2
+# San Marino personal income tax v0.3
 
-## Scope, period and questions
+Tax year: calendar year 2026 (1 January to 31 December), return filed in 2027. Currency EUR. Authority: UO Ufficio Tributario (Tax Office), Dipartimento Finanze e Bilancio.
 
-For tax year 2026, establish where the person was registered, physically present and had their centre of vital interests; collect the dates, family facts and each income category. IGR 10 uses registered residence for most of the period, actual stay for most of the period, or the centre of vital interests. The former two-limb address/183-day summary was incomplete. Residents are subject to relevant worldwide income; nonresidents to the domestic-source categories. A treaty outcome needs the actual treaty and facts. [IGR 1,5,9–10][law], read with [DD 156/2026, articles 2 and 19][october]
+Law 141/2025 rewrote the IGR law (Law 166/2013) with effect from tax year 2026; earlier years keep the old rules ([Law 141/2025, art 54(1)-(2)][l141]). Delegated Decree 156/2026 of 12 October 2026 amended the reformed law again from tax year 2026 ([DD 156/2026, art 19][dd156]). The official coordinated IGR text (updated to 22 December 2025) includes Law 141/2025 but not DD 156/2026, so read both.
 
-Use the 2026 reform, not an unmodified 2025 calculation. [Law 141/2025, article 54][reform] applies the new provisions from tax year 2026 while preserving the earlier-period regime. The official coordinated archive has distinct December 2025 editions and does not include all subsequent 2026 amendments.
+## 1. Who this applies to
 
-## Separate the income baskets first
+- **Residents** pay IGR on worldwide income. An individual is resident for the tax year if any one of these holds: (a) registered residence (residenza anagrafica) in San Marino for most of the tax period; (b) actually living in San Marino for most of the tax period; (c) centre of vital interests in San Marino ([IGR art 10(2)][igr]). Article 2 defines the centre of vital interests by economic, property, social and family ties. A plain 183-day count is not the test.
+- **Non-residents** pay IGR only on income produced in San Marino as listed in article 5: San Marino land and buildings, specified capital income, employment paid by resident persons, professional work and business carried on through a San Marino permanent establishment ([IGR arts 1, 5][igr]).
+- Partnerships (società di persone) and professional associations are not taxpayers: their income is attributed to each partner by profit share whether or not distributed ([IGR art 10(3)-(4)][igr]).
+- Where a treaty applies, the domestic rule still applies if it is more favourable ([IGR art 9][igr]). Use `sm-cross-border` for non-resident payments and treaties.
 
-IGR 12 excludes exempt income and income subject to separate taxation or final withholding from the ordinary aggregate. IGR 13(1)(a) puts the covered professional/business income into separate taxation. The temporary rate for that category is **18% in tax years 2026–2030**, replacing 17%; this is not a flat rate for every individual's salary, pension, rental or investment receipt. IGR 17(1-bis) uses the combined business/professional and other relevant income to establish the progressive bands for those other receipts. Obtain the category and timing evidence before adding unlike income. [IGR 12–13 and 17][law]; [Law 141/2025, article 54(6)][reform]
+Out of scope here: corporate IGR (`sm-corporate-income-tax`), payroll mechanics and social contributions (`sm-payroll-social`), special residence regimes.
 
-Foreign dividends, other capital receipts, property gains, arrears, termination payments and special residence regimes need their own category rules. DD 156 updates capital income and foreign residential rents: article 22(2-quater) uses **60% of the relevant foreign residential rent**, not a universal property allowance. This Guide does not complete those separate bases or treaty outcomes. [IGR 13,19–23 and 25][law]; [DD 156/2026, articles 5–9][october]
+## 2. Rates, bands and thresholds
 
-## Ordinary progressive tariff
+| Item | Amount | Tax year | Source |
+|---|---|---|---|
+| Band 1: taxable income up to 10,000 | 9% | 2026 | [IGR Annex C, art C1(1)][igr] |
+| Band 2: 10,000.01 to 18,000 | 13% | 2026 | [IGR Annex C, art C1(1)][igr] |
+| Band 3: 18,000.01 to 28,000 | 17% | 2026 | [IGR Annex C, art C1(1)][igr] |
+| Band 4: 28,000.01 to 38,000 | 21% | 2026 | [IGR Annex C, art C1(1)][igr] |
+| Band 5: 38,000.01 to 50,000 | 25% | 2026 | [IGR Annex C, art C1(1)][igr] |
+| Band 6: 50,000.01 to 65,000 | 28% | 2026 | [IGR Annex C, art C1(1)][igr] |
+| Band 7: 65,000.01 to 80,000 | 31% | 2026 | [IGR Annex C, art C1(1)][igr] |
+| Band 8: over 80,000 | 35% | 2026 | [IGR Annex C, art C1(1)][igr] |
+| Band indexation | Every two years by cost of living, capped at 6 points; first adjustment in tax year 2028, none in 2026 | 2026 | [IGR Annex C, art C1(2)][igr] |
+| Business and self-employed income (separate taxation, art 13(1)(a)) and directors' end-of-mandate pay (13(1)(l)) | 18% for tax years 2026 to 2030 (statutory rate 17%) | 2026 | [Law 141/2025, art 54(6)][l141]; [IGR art 13(2)(a)][igr] |
+| Capital gains (13(1)(b)) and qualifying national-athlete sponsorship (13(1)(o)) | 10% separate | 2026 | [IGR art 13(2)(b)][igr] |
+| Arrears and employment termination payments (13(1)(c)) | 2.5% on the first 5,000, 5% above | 2026 | [IGR art 13(2)(c)][igr] |
+| Agency and collaboration termination payments, specified public-office pay (13(1)(d)-(f)) | 12% separate | 2026 | [IGR art 13(2)(d)][igr] |
+| Optional separate taxation of foreign dividends (13(1)(g)) | 3% of the amount received net of foreign tax | 2026 | [IGR art 13(2)(e), (3)][igr] |
+| Optional separate taxation of foreign bond interest and qualifying insurance income (13(1)(h), (m)) | 10% of the amount received net of foreign tax | 2026 | [IGR art 13(2)(f), (3)][igr] |
+| Optional separate taxation of interest on foreign bank accounts (13(1)(i)) | 13% of the amount received net of foreign tax | 2026 | [IGR art 13(2)(g), (3)][igr] |
+| Optional separate taxation of supplementary pension benefits (13(1)(n)) | 5% | 2026 | [IGR art 13(2)(h)][igr] |
+| Employee forfait deduction | 7% of gross employment income, capped at 2,800 | 2026 | [IGR art 24(4)][igr] |
+| Employee travel costs paid without receipts | Excluded up to 15 a day (San Marino and Italy) or 30 a day (abroad excluding Italy), if paid by traceable means | 2026 | [IGR art 24(3), replaced by DD 156/2026, art 8][dd156] |
+| Pension forfait (marginal slices) | 20% of the first 13,000; 12% of 13,000.01 to 19,500; 9% of 19,500.01 to 26,000; 7% above 26,000 | 2026 | [IGR art 26][igr] |
+| Let San Marino home, rent at or below the controlled rent | Income = 20% of rent (never below the cadastral income) | 2026 | [IGR art 22(2)(a), (3)][igr] |
+| Let San Marino home, rent above the controlled rent | Income = 60% of rent (never below the cadastral income) | 2026 | [IGR art 22(2)(b), (3)][igr] |
+| Let home outside San Marino | Income = 60% of rent | 2026 | [IGR art 22(2-quater), added by DD 156/2026, art 6][dd156] |
+| Let business premises, lessor without bookkeeping duty | Income = rent less 25% (never below the cadastral income) | 2026 | [IGR art 23(3)(a), (4)][igr] |
+| Own business premises used as the seat of activity (art 23(2)) | Cadastral rent still counts: 100% in 2026, 75% in 2027, 50% in 2028, 25% in 2029 | 2026 | [Law 141/2025, art 54(5)][l141] |
+| Family credit: dependent spouse | 250 a year | 2026 | [IGR art 16(1)(a)][igr] |
+| Family credit: each dependent child | 250 a year | 2026 | [IGR art 16(1)(b)][igr] |
+| Family credit: dependent parents and parents-in-law, other cohabiting dependants, relatives owed maintenance | 125 a year each | 2026 | [IGR art 16(1)(c)-(e)][igr] |
+| Family credit uplift | +20% where dependants exceed two, or a dependant is disabled or permanently ill | 2026 | [IGR art 16(7)][igr] |
+| Medical and dental credit | 18% of documented, traceably paid costs up to 1,600 per person (taxpayer and each dependant) | 2026 | [IGR art 16(7-bis)(a)][igr] |
+| Residential rent credit | 15% of 50% of rent (80% of rent if the tenant is under 35), rent counted up to 6,000 | 2026 | [IGR art 16(7-bis)(b)][igr] |
+| SMaC credit, no-documentation portion | Up to 752.40 at taxable income up to 8,360, falling to zero at 16,720 | 2026 | [IGR Annex E, art E3(2) and Table 1][igr] |
+| SMaC credit maximum | 1,900 at taxable income of 42,500 and above, on documented SMaC spend up to 10,000 | 2026 | [IGR Annex E, art E3(2) and Table 1][igr] |
+| SMaC eligible fuel | Fuel counts only up to 1,500 a year | 2026 | [IGR Annex E, art E1(1)(a)][igr] |
+| SMaC home utilities and insurance (residents) | Count up to 1,000 at taxable income up to 15,000, tapering to nil at 50,000 | 2026 | [IGR Annex E, art E1(2)][igr] |
+| Business SMaC credit (separately taxed income) | 18% of spend up to 5,000 (income up to 25,000); cap 900 (25,000 to 50,000); 9% of spend up to 10,000 (over 50,000) | 2026 | [IGR art 17(1-ter)][igr] |
+| Business and self-employed loss carryforward | No time limit; use capped at 70% of taxable business income each year | 2026 | [IGR art 30(4), replaced by DD 156/2026, art 10][dd156] |
+| Return and balance payment deadline | 31 July following the tax year (31 July 2027 for 2026) | 2026 | [IGR arts 93(1), 124(1)][igr] |
+| Employer income certification (IGR G) | Transmitted by 15 April | 2026 | [IGR art 85(2)][igr] |
 
-Apply each rate only to the slice in that band. These are the 2026 ordinary bands, not approximate alternatives. Annex C schedules the first indexed revaluation for **tax year 2028**, then every two years subject to its cost-of-living limit and six-percentage-point cap; no 2026 indexed thresholds are inferred. [IGR Annex C, Table 1][law]; [Law 141/2025, Annex C amendment][reform]
+### SMaC credit table (Annex E, Table 1)
 
-| Taxable-income slice, EUR | Marginal rate |
-|---|---:|
-| First 10,000 | 9% |
-| Above 10,000 through 18,000 | 13% |
-| Above 18,000 through 28,000 | 17% |
-| Above 28,000 through 38,000 | 21% |
-| Above 38,000 through 50,000 | 25% |
-| Above 50,000 through 65,000 | 28% |
-| Above 65,000 through 80,000 | 31% |
-| Above 80,000 | 35% |
+The credit is limited to tax due and can be claimed in part. Between rows, the credit and the spend limit are interpolated on actual taxable income; the credit percentage (credit divided by the spend limit) is rounded down to two decimals ([IGR Annex E, art E3][igr]).
 
-## Establish wage, pension and business bases
-
-For wages, reconcile gross cash and taxable benefits under IGR 24–25, the **7% gross-wage forfait capped at 2,800**, and the legally deductible compulsory contributions under article 15. Do not compute 7% on wages already reduced by contributions. The [official 2026 calculator][calculator] confirmed this ordering in synthetic gross annual wage cases of 11,000, 30,000 and 50,000 on 24 October 2026. Its default contribution deduction is **9.9%**, composed of pension 6.9%, mandatory FONDISS 2.5% and the stated CIG/unemployment/solidarity component 0.5%; its instruction requires removing components absent from the payslip. That tax-base input is not a universal cash social-contribution total. [IGR 15 and 24][law]; [ISS 2026 circular, pages 1 and 10][iss]
-
-Resident pensions use marginal forfait deductions of 20% on the first 13,000, 12% on the next 6,500, 9% on the next 6,500 and 7% above 26,000. Do not apply the top applicable percentage to the whole pension or substitute the salary forfait. [IGR 26][law]
-
-Business/professional bases need actual accounts, inherent costs, timing, asset and loss workpapers. Article 30(4), replaced by DD 156 article 10, limits annual loss use to 70% of relevant taxable business income, with no time limit on carryforward. Do not retain the superseded explicit net-compulsory-contribution phrase as the current statutory wording. Full loss/contribution ordering and special adjustments need a taxpayer-specific conclusion. [IGR 27–30][law]; [DD 156/2026, article 10][october]
-
-IGR 14 and Annexes A/B require the actual eligible documented expenses and payment trail; no duplicate claim. DD 156 changes selected family-care/voluntary-pension conditions in Annex A. Do not apply every personal expense as a deduction or confuse a deduction from income with a credit against tax. [IGR 14–16 and Annex A/B][law]; [DD 156/2026, article 17][october]
-
-## Family credits
-
-For fiscal residents, article 16 provides annual credits of **250 for an eligible dependent spouse**, **250 per eligible dependent child**, and **125 for the specified other dependent relatives**. Apply the actual relationship, dependency, residence/cohabitation and age/study/unemployment conditions; allocate by qualifying months. The article 16(3) income test for the specified non-child relatives refers to the social-pension amount, which is not quantified here. Nonresidents do not receive the family credits. [IGR 16(1)–(4)][law]
-
-Child credit belongs to one parent or 50% each. DD 156 extends the rule to guardians according to the judicial decree; combined claims over 100% are corrected to 50% each. Other relatives have their separate allocation rule. The 20% uplift applies where the number of dependents exceeds two or the stated disability/permanent-illness condition applies. Two eligible children alone do not trigger that uplift. Obtain the other claimant's allocation and any judicial/medical evidence. Medical and residential-rent credits under 16(7-bis) have separate bases/caps and are not completed here. [IGR 16(5)–(8)][law]; [DD 156/2026, article 3][october]
-
-## SMaC credit for ordinary income
-
-The reformed article 16(8-bis) and Annex E provide a **tax credit**, limited to tax due, for qualifying wages, assimilated income and pensions of residents and nonresidents. Article 16(8-ter) extends it to the specified other ordinary income of residents, with explicit category exclusions. It is not a universal income deduction. Special documentation exceptions in 16(8-quater) require their own conditions. [IGR 16 and Annex E][law]; [Law 141/2025][reform]
-
-At taxable income up to **8,360**, the no-SMaC portion is at most **752.40**, limited to tax. It decreases proportionately to zero at **16,720**. The documented SMaC portion increases with actual taxable income, reaching at most **1,900** at **42,500** and above, with a maximum required eligible spend of **10,000**. Above 8,360, the required spend starts at a minimum of 500. Use the actual-income interpolation and the percentage rounded **down to two decimal places** required by E3. The table values below are endpoints, not a fixed credit for every income inside a row. [Annex E3 and Table 1][law]
-
-| Taxable-income endpoint | Total maximum credit | No-SMaC portion | Documented SMaC portion | Required spend |
+| Taxable income up to | Total maximum credit | No-SMaC portion | Documented SMaC portion | SMaC spend limit |
 |---:|---:|---:|---:|---:|
 | 8,360 | 752.40 | 752.40 | 0 | 0 |
-| 10,450 | 925 | 564.30 | 360.70 | 1,125 |
-| 12,540 | 1,000 | 376.20 | 623.80 | 1,750 |
-| 14,630 | 1,075 | 188.10 | 886.90 | 2,375 |
-| 16,720 | 1,150 | 0 | 1,150 | 3,000 |
-| 20,900 | 1,300 | 0 | 1,300 | 4,250 |
-| 25,080 | 1,450 | 0 | 1,450 | 5,500 |
-| 29,260 | 1,600 | 0 | 1,600 | 6,750 |
-| 33,440 | 1,700 | 0 | 1,700 | 8,000 |
-| 37,970 | 1,800 | 0 | 1,800 | 9,250 |
-| 42,500 and above | 1,900 | 0 | 1,900 | 10,000 |
+| 10,450 | 925.00 | 564.30 | 360.70 | 500 to 1,125 |
+| 12,540 | 1,000.00 | 376.20 | 623.80 | 1,750 |
+| 14,630 | 1,075.00 | 188.10 | 886.90 | 2,375 |
+| 16,720 | 1,150.00 | 0 | 1,150.00 | 3,000 |
+| 20,900 | 1,300.00 | 0 | 1,300.00 | 4,250 |
+| 25,080 | 1,450.00 | 0 | 1,450.00 | 5,500 |
+| 29,260 | 1,600.00 | 0 | 1,600.00 | 6,750 |
+| 33,440 | 1,700.00 | 0 | 1,700.00 | 8,000 |
+| 37,970 | 1,800.00 | 0 | 1,800.00 | 9,250 |
+| 42,500 and above | 1,900.00 | 0 | 1,900.00 | 10,000 |
 
-For income between two listed endpoints, preserve the actual calculation, not just the endpoint row. At taxable income 24,930 the official calculator returned maximum credit 1,444.62, required spend 5,455.14 and percentage 26.48%, rather than the 25,080 endpoint's 1,450. At taxable income 9,141 it returned no-SMaC 682.11, documented portion 134.79, required spend 733.55 and total 816.90. First-band minimum-spend and partial-credit rounding should be checked with the official program and actual certificate; these observations do not validate every boundary or rounding combination. [Annex E3][law]; [official public calculator][calculator]
+## 3. The base
 
-Classify the actual purchases under E1 before using spend: eligible fuel has a 1,500 limit; online purchases require a San Marino supplier seat, branch or PE. Utilities and damage insurance have a limited actual-home exception for residents, not a blanket all-invoice entitlement. E2, replaced by DD 156, permits eligible dependent spending and the specified excess spending of cohabiting spouse/nondependent cohabitants, subject to each person's limit and exclusions. The cohabitant definition includes the specified second-degree relatives/affinity and de facto partners. Obtain each person's own spending/limit and avoid duplication. [Annex E1–E3][law]; [DD 156/2026, article 18][october]
+### Separate the baskets first
 
-## Business SMaC and mixed income
+The ordinary progressive base is total income less deductible charges, excluding income taxed separately, income under final withholding and exempt income ([IGR art 12(1)][igr]). Non-residents' base is their article 5 San Marino-source income only ([IGR art 12(2)][igr]). Income of cohabiting minor children (other than their work income) is attributed to the parent ([IGR art 12(3)][igr]).
 
-IGR 17(1-ter) credits qualifying business/professional SMaC spending against the specified separate tax: taxable income up to 25,000 uses 18% of eligible spend capped at 5,000; above 50,000 uses 9% capped at 10,000. Between 25,000 and 50,000 the credit cap is 900 and the prescribed percentage uses the changing spend denominator, rounded down to four decimals; retain a separate calculation rather than extending 18% through the band. DD 156 adds **17(1-quater)**: a person with business/professional and wage/assimilated/pension income elects in the declaration between the article 16(8-bis) credit and article 17(1-ter) credit. Do not claim both automatically. The article 17(1-bis) band-stacking rule is preserved. [IGR 17][law]; [DD 156/2026, article 4][october]
+Article 13 income is taxed separately at the section 2 rates: business and self-employed income (net of article 14 deductible charges and compulsory social contributions), capital gains, arrears and termination payments, and the optional foreign dividend, interest and pension routes. The foreign dividend and foreign interest routes apply only if the taxpayer opts in; foreign capital gains and arrears can be taxed progressively instead, on election ([IGR art 13(1), (5)][igr]).
 
-## Foreign tax, withholding and filing
+Where a person has separately taxed business or self-employed income plus other income, the other income is taxed at the bands that apply after stacking it on top of the business income ([IGR art 17(1-bis)][igr]).
 
-Article 18 requires final, nonrefundable foreign tax on the relevant declared income, with a separate limit for each State. For ordinary nonbusiness income, the ceiling is domestic net tax multiplied by foreign income divided by aggregate income. Business/professional income has the separate foreign-gross-receipts/total-receipts fraction of the relevant net tax after admitted losses. Partially included foreign income requires corresponding foreign-tax proration. Preserve payment/finality evidence and the declaration-year/31 December rule, later-payment timing and three-year correction provisions. An omitted return or undeclared foreign income bars the credit under 18(6); no general unused-credit carryforward is established here. [IGR 18][law]
+### Employment income
 
-Reconcile actual payroll withholding and other creditable payments, distinguishing final withholding. Article 101 annualises anticipated income and permits requested credits; the year-end adjustment is collected through February of the next period. The employer's IGR G certificate has the statutory **15 April** transmission deadline. A single-employer/pension return exemption applies only if article 84's conditions are met. Otherwise the general return and balance deadline is **31 July following the income year**, with the article 93 holiday/office-closure rule. Do not retain the old approximate 30 June deadline. [IGR 84–85,93,101 and 124][law]
+Taxable employment income = gross cash and benefits (articles 24 and 25) less compulsory employee social contributions less the 7% forfait capped at 2,800 ([IGR art 24(4)][igr]). Compute the 7% on gross pay, not on pay already reduced by contributions. The Tax Office's 2026 calculator deducts 9.9% default contributions (pension 6.9%, FONDISS 2.5%, unemployment and solidarity 0.5%) and tells users to remove any component not on the payslip ([Tax Office IGR calculator][calc]). At gross 50,000 the forfait is capped at 2,800 (not 3,500) and taxable wage is 50,000 - 2,800 - 4,950 = 42,250.
 
-Obtain the current forms, attachment circular, actual 2027 calendar and payment receipts. Business advances have a separate statutory route; use the [corporate procedure discussion](sm-corporate-income-tax.md) only after checking the person's actual article 124 scope. Late-return validity under 93/137, correction windows under 93-bis and sanctions need separate case analysis. DD 156 article 16 gives specified exclusive-personal-income late-return charges of 100, reduced to 50 within thirty days, while the ordinary charge is 400/200. Category and legal validity matter; a reduced fine is not proof a late return preserves relief. [IGR 93–94,124,137–139][law]; [DD 156/2026, article 16][october]
+Foreign-service allowances count as income at 75%; allowances for foreign trips count above the public-sector daily maximum; a foreign trip allowance and a same-day commuting reimbursement cannot be combined ([IGR art 24(3), (3-ter), replaced and added by DD 156/2026, art 8][dd156]).
 
-## Worked controls
+### Pensions
 
-### Official synthetic annual wage 30,000
+Resident pensions are reduced by a marginal forfait: 20% of the first 13,000, 12% of the next 6,500, 9% of the next 6,500 and 7% above 26,000 ([IGR art 26][igr]). Apply each percentage only to its slice.
 
-Assume all three default deductible contribution components apply, no benefits/other income/family credits, and enough verified eligible SMaC spend for the maximum credit. The public program returned these figures on 24 October 2026. This is a tax calculation, not a net-pay computation from universal cash contributions. The credit is interpolated between the 20,900 and 25,080 endpoints; full-credit output is kept separate from rounding a partial-spend percentage.
+### Business and self-employed income
+
+Use actual accounts: income, deductible costs, timing, depreciation (Annex D) and related-party normal value ([IGR arts 27-30][igr]). Compulsory social contributions of the self-employed, sole traders and separate-management members are fully deductible from that income ([IGR art 15][igr]). Documented losses carry forward without time limit but can absorb at most 70% of the year's taxable business income ([IGR art 30(4), replaced by DD 156/2026, art 10][dd156]). The 18% separate rate then applies.
+
+### Property
+
+San Marino homes count at their cadastral income; when let, income is 20% or 60% of rent depending on whether the rent is at or above the controlled rent, never less than the cadastral income; homes let to atypical residents count at 100% of rent ([IGR art 22(1)-(3)][igr]). Rent is income of the year the contract covers, whether or not received; a lessor with a documented bad debt can file a corrective return within the assessment period ([IGR art 22(6)][igr]; [DD 156/2026, art 7][dd156]). A let foreign home produces income of 60% of rent ([DD 156/2026, art 6][dd156]). Business premises let by a person without bookkeeping duties produce rent less 25% ([IGR art 23(3)][igr]). For own business premises used as the seat of activity, the cadastral rent is phased out of income: 100% in 2026, 75% in 2027, 50% in 2028, 25% in 2029 ([Law 141/2025, art 54(5)][l141]).
+
+### Deductible charges
+
+Article 14 and Annexes A and B allow listed expenses actually paid and documented for the taxpayer and dependants. DD 156/2026 article 17 changes the Annex A family-care and voluntary-pension conditions ([IGR art 14, Annexes A-B][igr]; [DD 156/2026, art 17][dd156]). A deduction reduces income; a credit reduces tax.
+
+### Family credits
+
+Family credits apply only to fiscal residents and are pro-rated by month ([IGR art 16(4)][igr]). Children count as dependants if minors, or aged up to 26 and in legal study, or permanently unable to work, or registered unemployed and living with the taxpayer ([IGR art 16(2)][igr]). A spouse and the other relatives count only if their own gross income does not exceed the social pension amount (no limit for disabled persons) ([IGR art 16(3)][igr]). The child credit goes to one parent or 50% to each; if claims exceed 100%, each parent gets 50%. The same rule covers guardians named by court decree ([IGR art 16(5), replaced by DD 156/2026, art 3][dd156]). The 20% uplift needs more than two dependants or a disabled dependant; two children alone do not trigger it ([IGR art 16(7)][igr]). If the Tax Office finds a dependant's income over the limit, the credit is lost and the return corrected ([IGR art 16(8)][igr]).
+
+### SMaC credit
+
+The SMaC credit (article 16(8-bis) and Annex E) reduces tax on wages, assimilated income and pensions of residents and non-residents, for purchases made in San Marino with the SMaC card. Residents also get it against other ordinarily taxed income ([IGR art 16(8-bis), (8-ter)][igr]). Excluded spend: fuel over 1,500 a year, utilities and phone, property and casualty insurance, vehicle purchases, and banking and financial services; residents can count home utilities and insurance within the Annex E1(2) cap ([IGR Annex E, art E1(1)-(2)][igr]). Online purchases count only from suppliers with a San Marino seat, branch or permanent establishment ([IGR Annex E, art E1(3)][igr]). Spend by dependants counts, and spend by a cohabiting spouse or non-dependent cohabitants counts above their own limit, up to the taxpayer's limit ([IGR Annex E, art E2][igr]). Resident diplomatic staff at the listed missions and residents with certified 100% disability get the credit without documentation ([IGR art 16(8-quater)][igr]).
+
+For separately taxed business and self-employed income, the SMaC credit comes off the 18% tax instead, at the article 17(1-ter) rates in section 2. Between 25,000 and 50,000 the percentage is 900 divided by (5,000 plus one fifth of income over 25,000), rounded down to four decimals ([IGR art 17(1-ter)][igr]). A person with both business income and wages or pensions elects in the return which SMaC credit to use; both cannot be claimed ([IGR art 17(1-quater), added by DD 156/2026, art 4][dd156]).
+
+### Foreign tax credit
+
+Final, non-refundable foreign tax on foreign income included in the base is credited up to San Marino net tax x (foreign income / total income) ([IGR art 18(1)][igr]). For business or self-employed income the fraction is foreign receipts / total receipts, after admitted losses ([IGR art 18(2)][igr]). Compute per State. An omitted return or undeclared foreign income loses the credit ([IGR art 18(6)][igr]).
+
+## 4. Deadlines and filing
+
+| Obligation | Deadline | Source |
+|---|---|---|
+| Employer and pension payer transmit IGR G income and withholding data | 15 April following the tax year | [IGR art 85(2)][igr] |
+| Year-end withholding adjustment on wages | Collected by February of the following year | [IGR art 101(5)][igr] |
+| Annual return (electronic, by 24:00) | 31 July following the tax year | [IGR art 93(1), (4)][igr] |
+| Balance payment | Same date as the return | [IGR art 124(1)][igr] |
+| Business and self-employed advances | 35% by 31 August and 55% by 30 November, on prior-year tax net of foreign business-income credits; not due if the activity is suspended or ceased before the date | [IGR art 124(2)][igr] |
+
+No return is needed by a person with only wages from one employer or only a pension, if the payer transmits the article 85 certification by the return deadline, or by a person with only exempt income up to the social pension amount or income under final withholding ([IGR art 84(1)][igr]). Payroll withholding is on account: the employer annualises expected income at the bands and applies the family and SMaC credits the employee requests; medical and rent credits are claimed in the return ([IGR art 101][igr]).
+
+A return filed within 30 days after 31 July is valid but carries the late-filing charge. A return filed later is null: it cannot be used to claim a refund of a credit shown in it, but the Tax Office can still collect tax on it ([IGR art 93(2)-(3)][igr]).
+
+## 5. Penalties and interest
+
+| Item | Amount | Source |
+|---|---|---|
+| Late return (art 137(2)(a)), general | 400 | [IGR art 139(1)(d), replaced by DD 156/2026, art 16][dd156] |
+| Late return filed within 30 days of the deadline, general | 200 | [DD 156/2026, art 16][dd156] |
+| Late return covering only wages, pensions, certified San Marino land and buildings or art 104(3) income | 100, or 50 within 30 days | [DD 156/2026, art 16][dd156] |
+| Omitted return (2021 onward) where the payer's certificate was filed and the person had only wages, pensions or certified property income | 100 | [Law 141/2025, art 54(4)][l141] |
+| Late payment interest | Legal interest rate plus 2 points, from the due date to payment; not charged on penalties | [IGR art 128][igr] |
+| Assessment paid within 60 days of notice | Penalties reduced by 50% | [IGR art 129][igr] |
+
+## 6. Cross-border points
+
+- Non-residents are taxed only on article 5 income; they get the SMaC credit on wages and pensions but no family credits ([IGR arts 5, 16(4), 16(8-bis)][igr]).
+- Frontier workers paid by a San Marino employer have San Marino-source employment income ([IGR art 5][igr]); relief in their residence State depends on that State's treaty and credit rules.
+- Payments to non-residents for professional services, capital income and equipment rentals carry withholding: see `sm-cross-border`.
+- Foreign tax on a resident's income: the article 18 credit in section 3.
+
+## 7. Two worked examples that recompute
+
+### Example 1: employee, gross wage 30,000 with SMaC interpolation
+
+A resident employee earns 30,000 gross. All three default contribution components apply (9.9%), there are no benefits, other income or family credits, and the employee has enough SMaC spend for the full credit. Forfait 2,100; contributions 2,970; taxable wage 24,930. Tax: 900 + 1,040 + (24,930 - 18,000) x 17% = 3,118.10. Taxable income of 24,930 falls between the 20,900 and 25,080 rows, so the credit is interpolated: 1,444.62 on a spend limit of 5,455.14 (26.48%). Net IGR 1,673.48. The Tax Office calculator returned the same credit and spend limit for this case.
 
 ```oa-check
-name: San Marino official 2026 synthetic wage and SMaC interpolation
+name: San Marino 2026 employee wage 30,000 with interpolated SMaC credit
 inputs:
   gross_wage: 30000
-  verified_tax_deductible_contribution_rate: 0.099
+  deductible_contribution_rate: 0.099
   lower_income_endpoint: 20900
   upper_income_endpoint: 25080
   lower_credit: 1300
@@ -129,7 +187,7 @@ inputs:
   upper_spend: 5500
 steps:
   wage_forfait: min(gross_wage * 0.07, 2800)
-  deductible_contributions: gross_wage * verified_tax_deductible_contribution_rate
+  deductible_contributions: gross_wage * deductible_contribution_rate
   taxable_wage: gross_wage - wage_forfait - deductible_contributions
   tariff_tax: 10000 * 0.09 + 8000 * 0.13 + (taxable_wage - 18000) * 0.17
   endpoint_fraction: (taxable_wage - lower_income_endpoint) / (upper_income_endpoint - lower_income_endpoint)
@@ -148,52 +206,20 @@ expected:
   annual_igr_after_full_credit: 1673.48
 ```
 
-### Lower ordinary income and nonrefundable credit
+The same rules give: taxable income 85,000, tax before credits 19,340 across all eight bands; taxable wage 8,000, tax 720, and the 752.40 no-SMaC credit capped at 720, so net tax is nil with no refund.
 
-Assume 8,000 eligible ordinary taxable wage income after all base deductions, no other income or credit. Tax is 720; the no-SMaC maximum 752.40 is limited to tax, so there is no negative tax/refund from this credit.
+### Example 2: self-employed professional with the business SMaC credit (edge case)
 
-```oa-check
-name: San Marino low taxable wage credit limited to tax
-inputs:
-  taxable_wage: 8000
-  first_band_rate: 0.09
-  no_smac_credit_cap: 752.40
-steps:
-  tariff_tax: taxable_wage * first_band_rate
-  usable_credit: min(tariff_tax, no_smac_credit_cap)
-  net_igr: tariff_tax - usable_credit
-expected:
-  tariff_tax: 720
-  usable_credit: 720
-  net_igr: 0
-```
-
-### Full tariff at 85,000
-
-Assume ordinary taxable income 85,000 and calculate before credits; this does not establish SMaC or family eligibility.
+A resident professional has taxable professional income of 20,000 (after deductible contributions), no wages, no losses and 5,000 of eligible SMaC spend. Separate tax at the 2026 rate of 18%: 3,600 (the statutory 17% would give 3,400). Income is under 25,000, so the business SMaC credit is 18% of spend up to 5,000: 900. Net 2,700. If this person also had wages, they would have to elect one SMaC credit under article 17(1-quater).
 
 ```oa-check
-name: San Marino all eight ordinary marginal bands
+name: San Marino 2026 self-employed income with business SMaC credit
 inputs:
-  ordinary_taxable_income: 85000
-steps:
-  tariff_tax_before_credits: 10000 * 0.09 + 8000 * 0.13 + 10000 * 0.17 + 10000 * 0.21 + 12000 * 0.25 + 15000 * 0.28 + 15000 * 0.31 + (ordinary_taxable_income - 80000) * 0.35
-expected:
-  tariff_tax_before_credits: 19340
-```
-
-### Exclusive business category
-
-Assume 20,000 established taxable professional/business income, no wages, other receipts, losses or relief; all 5,000 spending is eligible under 17(1-ter). Separate 18% tax is 3,600; credit 900; tax after this credit 2,700. The mixed-income election is outside this example.
-
-```oa-check
-name: San Marino exclusive business income and eligible SMaC credit
-inputs:
-  established_business_taxable_income: 20000
-  covered_separate_rate: 0.18
+  business_taxable_income: 20000
+  separate_rate_2026: 0.18
   eligible_smac_spend: 5000
 steps:
-  separate_igr: established_business_taxable_income * covered_separate_rate
+  separate_igr: business_taxable_income * separate_rate_2026
   eligible_credit: min(separate_igr, min(eligible_smac_spend, 5000) * 0.18)
   net_separate_igr: separate_igr - eligible_credit
 expected:
@@ -202,69 +228,48 @@ expected:
   net_separate_igr: 2700
 ```
 
-### Personal foreign-tax limit
+The same rules give: two resident parents sharing two dependent children 50/50 for the whole year each get 250 (500 x 50%), with no uplift; foreign income of 15,000 within total income of 60,000 and San Marino net tax of 10,000 caps the foreign credit at 2,500.
 
-Assume article 18(1) ordinary nonbusiness income only, one foreign State, total income 60,000 including foreign income 15,000, already established domestic net tax 10,000 and final nonrefundable eligible foreign tax 3,000, with full declaration/timing compliance. The ceiling is 2,500, leaving 500 uncredited; no automatic carryforward is assumed.
+## 8. Ask the client first
 
-```oa-check
-name: San Marino personal nonbusiness foreign tax ceiling
-inputs:
-  established_domestic_net_tax: 10000
-  total_income: 60000
-  included_foreign_income: 15000
-  eligible_final_foreign_tax: 3000
-steps:
-  state_credit_limit: established_domestic_net_tax * included_foreign_income / total_income
-  allowed_foreign_credit: min(eligible_final_foreign_tax, state_credit_limit)
-  uncredited_foreign_tax: eligible_final_foreign_tax - allowed_foreign_credit
-expected:
-  state_credit_limit: 2500
-  allowed_foreign_credit: 2500
-  uncredited_foreign_tax: 500
-```
-
-### Two parents, two eligible children
-
-Assume two fiscal resident parents, two eligible dependent children throughout twelve months, a valid 50/50 choice, enough tax and no disability/permanent-illness or other dependents. The credit is 250 for each parent. Two dependents do not satisfy the more-than-two uplift condition.
-
-```oa-check
-name: San Marino two-child family credit shared without uplift
-inputs:
-  eligible_children: 2
-  annual_credit_per_child: 250
-  qualifying_months: 12
-  months_in_year: 12
-  parent_share: 0.50
-steps:
-  whole_child_credit: eligible_children * annual_credit_per_child * qualifying_months / months_in_year
-  credit_for_each_parent: whole_child_credit * parent_share
-expected:
-  whole_child_credit: 500
-  credit_for_each_parent: 250
-```
-
-## Limits and referral
-
-IT-PIT remains partial: complete capital/property/separate income classifications, special residence, all base adjustments, healthcare/rental relief, family-income thresholds, mixed-income ordering, foreign payment-year corrections, every SMaC boundary and live forms remain open. Record the exact unresolved fact/rule and refer before filing. The arithmetic controls establish assumed calculations, not entitlement or independent review.
+1. Registered residence, where the person actually lived in 2026 and where family and economic interests sit.
+2. Every income type: wages, pensions, business or professional income, property in and outside San Marino, foreign dividends and interest, termination or arrears payments.
+3. Payslips and the employer's IGR G certificate, with the contributions actually deducted.
+4. Dependants: relationship, age, study or unemployment status, their own income, months dependent and the other parent's share.
+5. SMaC card spend by the taxpayer and household, plus medical and rent receipts paid traceably.
+6. Foreign tax paid, with final assessments and payment proof.
 
 ## Sources
 
-Read 24 October 2026: selected IGR articles 1,5,9–18,24–26,30,84–85,93–94,101,124,137–139 and Annex C/E in the official coordinated archive; relevant reform provisions of Law 141/2025; all twenty articles of authentic DD 156/2026. The December 2025 archive editions are dated aids, not a complete 2026 consolidation. ISS circular 2187/UC/2026 pages 1,4,5 and 10 were visually checked; other pages OCR-read. The public tax calculator was exercised with three synthetic wage amounts only, with no authentication, personal data, declaration, filing or payment. Its results are guidance alongside the law and do not validate every fact pattern. Earlier approximate wording remains in Git history. The dated pack record identifies independent source-review scope and limits; named local accountant review remains open.
+| Source | URL | Read on |
+|---|---|---|
+| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 1-18, 22-30, 84-85, 93, 101, 124, 128-129, 139, Annexes C and E | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
+| Law 141/2025 of 12 November 2025, art 54 (commencement, 18% rate 2026-2030, cadastral phase-out, omitted-return charge) | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html | 2026-10-30 |
+| Delegated Decree 156/2026 of 12 October 2026, arts 2-10, 16-20 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
+| ISS circular 2187/UC/2026 of 22 April 2026 (2026 contribution rates) | https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html | 2026-10-30 |
+| Tax Office public 2026 IGR calculator (Law 141/2025) | https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1 | 2026-10-24 |
 
-[law]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
-[reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
-[october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
-[iss]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html
-[calculator]: https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1
+Not yet confirmed: the 2026 social pension amount (dependants' income limit and filing exemption); the 2026 legal interest rate; the controlled-rent (canone calmierato) levels; the 2027 return forms and attachment circular; mixed-income ordering beyond article 17(1-bis) and (1-quater); the special residence regimes.
 
-## Source-review status
-
-See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
+[igr]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
+[l141]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
+[dd156]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
+[calc]: https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1
 
 <!-- openaccountants-cta-block -->
 
 ---
 
-## Talk to an accountant
+## Talk to a verified accountant
 
-Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

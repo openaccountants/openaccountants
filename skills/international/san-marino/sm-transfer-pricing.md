@@ -1,146 +1,152 @@
 ---
 name: sm-transfer-pricing
 description: >
-  Prepare San Marino related-party normal-value and international advance-agreement workpapers for 2026. Use for corporate controlled-company dealings, the separate individual-business related-party rule, supported upward adjustments and conditional corresponding-adjustment preparation. Establish the exact relationship, transaction, market comparability, taxpayer route and agreement scope before using any calculation. Includes the 2026 advance-agreement access and fee tiers, signature-based duration and conditional rollback. It does not import Italian documentation thresholds or promise a benchmark, safe harbour, automatic downward adjustment or accepted application. Actual documentation, decreasing-adjustment circulars, treaty procedure, implementing instructions and full specialist coverage remain open. This is a source-cited draft with independent source-review scope documented in the dated pack record; named local accountant review remains open.
+  San Marino transfer pricing for tax year 2026: the normal-value rule for dealings between a company and companies that control it, are controlled by it or share its controller (IGR article 46(4)), the related-party rule for sole traders and professionals (article 30(4-bis)), the article 6 definition of normal value, the control and significant-influence definitions, downward adjustments only after a definitive foreign arm's-length adjustment or a mutual agreement, and international advance agreements under Delegated Decree 116/2026 (fees of EUR 10,000, 30,000 or 50,000 by group turnover, halved for unilateral agreements and renewals, binding for five tax periods). Use for San Marino intercompany pricing, related-party adjustments, APA application and corresponding adjustment questions. Comparable searches, documentation files and mutual agreement procedures need the actual case.
 jurisdiction: SM
-category: international
+category: transfer-pricing
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-24
-version: 0.3
-sources:
-  - url: "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html"
-    title: "Official coordinated IGR; relationship, normal value, adjustments and procedure"
-    as_of: "2026-10-24"
-  - url: "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0"
-    title: "Authentic DD 116/2026; international advance-agreement access, fees and effect"
-    as_of: "2026-10-24"
-  - url: "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33"
-    title: "Authentic DD 156/2026; 2026 corrective provisions"
-    as_of: "2026-10-24"
-  - url: "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html"
-    title: "Law 141/2025; selected 2026 base/rate and commencement provisions"
-    as_of: "2026-10-24"
+last_updated: 2026-10-30
+version: 0.4
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# San Marino transfer pricing and international advance agreements v0.3
+# San Marino transfer pricing and international advance agreements v0.4
 
-## Scope and relationship
+Tax year: the taxpayer's tax period in 2026. Currency EUR. Authority: UO Ufficio Tributario (Tax Office). The corporate rate on any adjustment for 2026 is 18% ([Law 141/2025, art 54(6)][l141]).
 
-Corporate IGR 46(4) values dealings with companies that directly/indirectly control the taxpayer, are controlled by it, or share its controlling company at **normal value** where this increases income. Individual-business IGR 30(4-bis) instead refers to dealings with related parties. Use the correct person/entity rule; no foreign-company, family or percentage definition is silently substituted. IGR 2(m)–(p) distinguishes groups, control, significant influence and an individual's related parties. Control includes voting and legal/contractual dominant-influence routes; significant influence's 20% voting test has its own no-outsider-majority condition. An individual's related parties include controlled companies and the stated spouse/second-degree family/affinity scope. [IGR 2,6,30 and 46][law]
+## 1. Who this applies to
 
-Normal value under IGR 6 uses the price normally practised for the same or similar goods/services under free competition, at the same marketing stage and relevant time/place, or the nearest available comparator. The authority can use current market lists/tariffs. Securities and property have separate valuation provisions. A group charge, board approval or invoice alone does not establish that value.
+- **Companies.** Income from dealings with companies that directly or indirectly control the taxpayer, are controlled by it, or are controlled by the same company as the taxpayer is valued at normal value where this increases income ([IGR art 46(4)][igr]).
+- **Sole traders and professionals.** Income from dealings with related parties is valued at normal value where this increases income ([IGR art 30(4-bis)][igr]).
+- **Definitions.** Article 2 defines group, control, significant influence and related parties. Control covers voting control and dominant influence by law or contract. Significant influence starts at 20% of voting rights held directly or indirectly. An individual's related parties include companies they control and the listed family members up to the second degree and in-laws ([IGR art 2][igr]).
+- **International advance agreements** are open to the economic operators with an international link listed in DD 116/2026 article 2: foreign control or participation, specified cross-border receipts or payments, a foreign permanent establishment, or a San Marino permanent establishment of a non-resident ([DD 116/2026, art 2][dd116]).
 
-## Workpaper method
+## 2. Rates, bands and thresholds
 
-1. Map legal/beneficial ownership, votes, agreements, management influence, family relationships and PEs. Retain the evidence for the actual statutory relationship.
-2. Inventory each material transaction and account: goods, services, finance, guarantees, intangibles, asset transfers and PE dealings. Reconcile contracts, actual conduct, functions/risks/assets and ledger amounts.
-3. Establish comparability to independent dealings using IGR 6's product/service, market stage, period and location gates. Explain the selected method and adjustments; retain the price/cost/margin source and its limitations. This draft supplies no accepted markup or prescribed documentation exemption.
-4. Reconcile the price difference to the affected tax period, recipient/payer and taxable base. A higher expense and an understated receipt can each need a different directional adjustment. Ordinary 2026 corporate 18% in an isolated example assumes that category, taxable status and no offsetting interaction.
-5. Before a downward adjustment, establish one of the actual statutory routes below. A foreign assessment does not authorise an automatic reduction on a domestic return. No generic annual Master File/Local File deadline or monetary exemption has been established from the passages read; obtain the applicable evidence/request/circular before deciding that no file is required.
+| Item | Amount | Tax year | Source |
+|---|---|---|---|
+| Corporate rate on an upward adjustment | 18% (tax years 2026-2030) | 2026 | [Law 141/2025, art 54(6)][l141] |
+| Sole trader and professional rate on an upward adjustment | 18% separate rate (tax years 2026-2030) | 2026 | [Law 141/2025, art 54(6)][l141] |
+| Significant influence | 20% or more of voting rights, directly or indirectly | 2026 | [IGR art 2][igr] |
+| APA fee, group turnover below 50 million | 10,000 per application or counterparty State | 2026 | [DD 116/2026, art 3(1)(a)][dd116] |
+| APA fee, group turnover 50 million to below 100 million | 30,000 | 2026 | [DD 116/2026, art 3(1)(b)][dd116] |
+| APA fee, group turnover 100 million or more | 50,000 | 2026 | [DD 116/2026, art 3(1)(c)][dd116] |
+| APA fee reductions | Halved for a unilateral agreement; halved for a renewal | 2026 | [DD 116/2026, art 3(2)-(3)][dd116] |
+| APA duration | Five tax periods from the period in which the taxpayer signs | 2026 | [DD 116/2026, art 5(2)][dd116] |
+| Ordinary tax ruling (interpello) reply | Within 60 days of receipt | 2026 | [IGR art 123][igr] |
 
-## Downward and corresponding adjustments
+The fee bands are not documentation or country-by-country reporting thresholds.
 
-IGR 46(4) and 30(4-bis) permit decreases only under the specified competent-authority agreement/MAP route or taxpayer request following a **definitive arm's-length upward adjustment** in a State with an in-force tax treaty permitting adequate information exchange. The request route needs the implementing Ufficio Tributario circular, foreign finality, treaty and transaction evidence. The June 2025 decreasing-adjustment circular has been located through secondary search, but an official-host copy and all procedural deadlines have not yet been reconciled. Do not treat it as read or completed here. Actual MAP and double-relief prevention remain open. [IGR 30(4-bis),46(4)][law]
+## 3. The base
 
-## 2026 international advance agreements
+**Normal value.** Normal value is the price or consideration generally charged for goods and services of the same or similar kind, in free competition, at the same trading stage, at the time and place of the transaction, or the nearest time and place ([IGR art 6(1)][igr]). The Tax Office can refer to price lists and tariffs in use in the market ([IGR art 6(2)][igr]). Property is valued from prior sales and valuations and local market prices; listed securities at the average price of the last month; unlisted shares by net assets ([IGR art 6(3)-(4)][igr]).
 
-[Authentic DD 116/2026][apa] provides unilateral, bilateral and multilateral procedures for the specified international economic operators. Article 2 requires at least one listed international relationship: qualifying foreign control/participation, specified cross-border receipts/payments, foreign PE or domestic PE of a nonresident. Article 1 covers normal-value methods, entry/exit values, treaty PE status/profit allocation and specified cross-border income treatment. It is not blanket approval of an entire group's tax position.
+**Workpaper.**
 
-| Statutory group turnover | Bilateral/multilateral fee per application or counterparty State | Source |
-|---|---:|---|
-| Below EUR 50,000,000 | EUR 10,000 | [DD 116,3(1)(a)][apa] |
-| At least EUR 50,000,000 and below EUR 100,000,000 | EUR 30,000 | [DD 116,3(1)(b)][apa] |
-| At least EUR 100,000,000 | EUR 50,000 | [DD 116,3(1)(c)][apa] |
+1. Map ownership, voting rights, agreements, management influence and family links; keep the evidence for the statutory relationship.
+2. List each transaction: goods, services, financing, guarantees, intangibles, asset transfers and dealings with permanent establishments. Reconcile contracts, actual conduct, functions, risks and assets to the ledger.
+3. Select comparables meeting the article 6 tests (same or similar goods or services, same trading stage, same time and place) and record the method, adjustments and data source.
+4. Adjust the affected period. An understated receipt or an overstated cost each increases income.
 
-These are **application-fee bands**, not transaction-documentation or CbCR thresholds. Article 3 halves the fee for a unilateral agreement and separately halves it for renewal. Their cumulative treatment is not established here. Withdrawal or closure without agreement does not generate a refund. Optional bilateral/multilateral pre-filing is not anonymous; supplied information can be disclosed to involved foreign authorities. [DD 116,1–4][apa]
+**Downward adjustments.** A reduction in income is allowed only (a) under a mutual agreement procedure or competent-authority agreement, or (b) on the taxpayer's request after a definitive arm's-length upward adjustment by a State with an in-force tax treaty allowing adequate exchange of information, in the manner set by Tax Office circular ([IGR arts 30(4-bis), 46(4)][igr]). A foreign assessment does not by itself allow a reduction on the San Marino return.
 
-The agreement takes effect on taxpayer signature and binds for **five tax periods beginning with the signature period**. Conditional retroactivity can reach the request period where the same factual/legal conditions exist, assessment time has not expired and authority controls have not started; the bilateral/multilateral request must specify that intention. It does not create unlimited rollback to earlier years. The authority can still assess other matters. Article 6 delegates implementation/monitoring to a circular; the actual current application and compliance instructions are not verified. The ordinary IGR 123 interpretative-ruling text and its 60-day mechanism must not be treated as automatic acceptance of an advance agreement. [DD 116,5–6][apa]; [IGR 123][law]
+## 4. Deadlines and filing
 
-## Filing, evidence and sanctions
+- Report the adjusted income in the ordinary IGR return, due 31 July after the tax year ([IGR art 93(1)][igr]).
+- **APA application.** Bilateral and multilateral applications state whether retroactive effect is sought. Optional pre-filing cannot be anonymous, and information supplied during the procedure can be disclosed to the foreign authorities involved ([DD 116/2026, arts 1(3), 4][dd116]). Withdrawal or closure without agreement gives no fee refund ([DD 116/2026, art 3][dd116]).
+- **APA effect.** The agreement binds from the period in which the taxpayer signs, for five tax periods ([DD 116/2026, art 5(2)][dd116]). On request it can reach back to earlier periods, as far as the period in which the application was filed, if the same facts and law applied, the article 115 assessment period is still open and no audit has started; bilateral and multilateral applications must ask for this in the application ([DD 116/2026, art 5(3)-(4)][dd116]). The Tax Office can still assess matters outside the agreement. A Tax Office circular sets the implementation and monitoring rules ([DD 116/2026, art 6][dd116]).
+- **Scope of an APA.** Normal-value methods, entry and exit values, treaty permanent-establishment status and profit attribution, and specified cross-border income ([DD 116/2026, art 1][dd116]).
 
-Reconcile relevant TP amounts in the taxpayer's normal electronic IGR declaration and actual attachments. IGR 93 gives the general 31 July following-year deadline and closure-day rule; an APA request has its separate route. IGR 94 and 106 concern supporting information/authority evidence. Preserve each actual request and response clock. This draft has not established every TP document deadline, a penalty-protection election or a filing template. [IGR 83,86–94,106 and 123][law]
+## 5. Penalties and interest
 
-IGR 138–139 sanctions depend on the specific return, record or cooperation failure; no standalone fixed TP fine is asserted. Late-payment interest under 128 uses legal rate plus two points, with actual rate/dates unresolved here. Penalty, dispute and corresponding-adjustment procedures need the actual case and current rules, including [DD 156/2026][october].
+There is no separate transfer-pricing penalty. An upward adjustment on assessment carries the ordinary IGR penalties for the return or record failure ([IGR arts 138-139][igr]) and late interest at the legal rate plus 2 points from the original due date ([IGR art 128][igr]). Paying an assessment within 60 days halves the penalties ([IGR art 129][igr]).
 
-## Worked controls
+## 6. Cross-border points
 
-### Assumed supported price correction
+- Corresponding (downward) adjustments need a treaty partner with adequate information exchange and a definitive foreign adjustment, or a mutual agreement (section 3).
+- APAs cover permanent-establishment status and profit attribution and entry and exit values on migration ([DD 116/2026, art 1][dd116]).
+- Withholding on payments abroad (interest 13%, services 20%, rentals 10%) applies on the price actually paid: see `sm-cross-border`.
 
-Assume a taxable corporate sale recorded at 90,000, independently established normal value 100,000, the required corporate-control relation and no other tax interaction. Upward income adjustment 10,000 gives isolated 2026 corporate IGR 1,800. This does not establish that an authority would accept the comparator.
+## 7. Two worked examples that recompute
+
+### Example 1: underpriced sale to a sister company
+
+A San Marino company sells goods to a company under the same parent for 90,000. Comparable independent sales show a normal value of 100,000. Upward adjustment 10,000; additional 2026 IGR at 18% = 1,800.
 
 ```oa-check
-name: San Marino assumed normal-value corporate sale adjustment
+name: San Marino 2026 normal-value adjustment on a related sale
 inputs:
   recorded_related_sale: 90000
-  independently_supported_normal_value: 100000
-  covered_2026_corporate_rate: 0.18
+  normal_value: 100000
+  corporate_rate_2026: 0.18
 steps:
-  upward_income_adjustment: independently_supported_normal_value - recorded_related_sale
-  isolated_additional_igr: upward_income_adjustment * covered_2026_corporate_rate
+  upward_income_adjustment: normal_value - recorded_related_sale
+  additional_igr: upward_income_adjustment * corporate_rate_2026
 expected:
   upward_income_adjustment: 10000
-  isolated_additional_igr: 1800
+  additional_igr: 1800
 ```
 
-### APA fee tier
+A cost-plus check uses the same base: eligible costs 100,000 with an 8% markup give profit 8,000 and revenue 108,000, a margin on sales of 7.41%. The 8% is the case's comparable result, not a San Marino safe harbour.
 
-Assume independently established statutory group turnover 60 million and two counterparty States, with an accepted classification of one fee per State. The statutory middle-tier fee 30,000 per State gives 60,000 total. A separate first unilateral application in that same turnover tier gives 15,000; this example does not combine a renewal reduction or assert a fee refund.
+### Example 2: APA fees by band and agreement type (edge case)
+
+A group with statutory turnover of 60 million applies for a bilateral APA with two States: 30,000 for each State, 60,000 in total. A different group with turnover of exactly 100 million falls in the top band (100 million or more), so a unilateral APA costs half of 50,000: 25,000.
 
 ```oa-check
-name: San Marino assumed2026 advance-agreement fee tier
+name: San Marino 2026 APA fee bands, bilateral and unilateral
 inputs:
-  established_middle_tier_fee: 30000
+  middle_band_fee: 30000
+  top_band_fee: 50000
   counterparty_states: 2
-  unilateral_fee_fraction: 0.50
+  unilateral_fraction: 0.50
 steps:
-  bilateral_multistate_fees: established_middle_tier_fee * counterparty_states
-  separate_first_unilateral_fee: established_middle_tier_fee * unilateral_fee_fraction
+  bilateral_fees_middle_band: middle_band_fee * counterparty_states
+  unilateral_fee_top_band: top_band_fee * unilateral_fraction
 expected:
-  bilateral_multistate_fees: 60000
-  separate_first_unilateral_fee: 15000
+  bilateral_fees_middle_band: 60000
+  unilateral_fee_top_band: 25000
 ```
 
-### Assumed cost-plus denominator
+## 8. Ask the client first
 
-Assume independent evidence supports a cost-plus method, eligible costs 100,000 and a case-only 8% markup. Profit 8,000 and revenue 108,000 produce a 7.407407% profit/sales ratio. Neither 8% nor that sales margin is a San Marino safe harbour or a benchmark supplied by this Guide.
-
-```oa-check
-name: San Marino assumed cost markup and sales denominator
-inputs:
-  established_eligible_cost: 100000
-  independently_supported_case_markup: 0.08
-steps:
-  gross_profit: established_eligible_cost * independently_supported_case_markup
-  revenue: established_eligible_cost + gross_profit
-  profit_percentage_of_sales: gross_profit / revenue * 100
-expected:
-  gross_profit: 8000
-  revenue: 108000
-  profit_percentage_of_sales: 7.4074074074
-```
-
-## Ask and refer
-
-Obtain entity/control/family diagrams, the complete transaction ledger, contracts and actual conduct, comparable evidence, group revenue definition, prior rulings/agreements and foreign final assessments. Refer intangibles, finance/guarantees, exit/entry values, PE allocation, downward adjustments/MAP, fee interpretation/renewals and changing facts. Actual methods, request/circular deadlines, CbCR and full legal/amendment implementation remain partial. Named San Marino accountant review remains open.
+1. Group chart with voting rights, control agreements and family relationships.
+2. List of related-party transactions in 2026 with contracts and amounts.
+3. Functions, risks and assets of each party, and the pricing method used.
+4. Any foreign tax adjustment on the same transactions, and whether it is final.
+5. Group turnover (for the APA fee) and whether an APA or ruling exists.
 
 ## Sources
 
-Read 24 October 2026: IGR coordinated no-notes edition 22 December 2025, selected 2,6,30,46,83–94,106,123,128,138–139; related with-notes version is dated 12 December 2025. Law 141/2025 selected 12/16/54 for the 2026 base/rate context. DD 116/2026 all six articles; DD 156/2026 full corrective text, including 2026 application. The official archive describes coordinated texts as recognitive; authentic newer acts are separately linked. No comparables database, live APA request, treaty case or full implementing-circular chain was tested.
+| Source | URL | Read on |
+|---|---|---|
+| Law 166/2013 (IGR), official coordinated text updated to 22 December 2025: arts 2, 6, 30, 46, 93, 123, 128-129, 138-139 | https://www.consigliograndeegenerale.sm/on-line/documento17086436.html | 2026-10-30 |
+| Delegated Decree 116/2026 (international advance agreements), arts 1-6 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0 | 2026-10-30 |
+| Law 141/2025 of 12 November 2025, art 54(6) | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html | 2026-10-30 |
 
-[law]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
-[reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
-[october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
-[apa]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0
+Not yet confirmed: whether the unilateral and renewal halvings combine on a unilateral renewal (the decree states both without saying); the Tax Office circular on downward adjustments and its deadlines; the DD 116/2026 implementing circular; any documentation (master file or local file) duty or country-by-country reporting threshold.
 
-## Source-review status
-
-See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
+[igr]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
+[l141]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
+[dd116]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0
 
 <!-- openaccountants-cta-block -->
 
 ---
 
-## Talk to an accountant
+## Talk to a verified accountant
 
-Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
