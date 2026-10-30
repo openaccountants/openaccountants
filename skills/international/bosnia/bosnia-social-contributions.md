@@ -26,7 +26,7 @@ Related skills: the monthly payroll run in [bosnia-payroll](bosnia-payroll.md); 
 
 **RS (Contributions Law 114/17 and amendments).** Employees, entrepreneurs and people in independent professions as their main occupation (art. 3(1)(6) as amended by 110/24), and others listed in the law. Entrepreneurs who are pensioners or carry on the activity as a secondary occupation are covered by art. 6(7) and (8) (110/24). From 2026, people engaged in seasonal and temporary work are covered by a fixed daily amount (art. 6(9), 114/25).
 
-**Brčko District.** Employees and the self-employed in the District are insured under District health and employment laws and an entity pension fund. The rates are not covered here (see Not yet confirmed).
+**Brčko District.** Employees and the self-employed in the District are insured under District health and employment laws and an entity pension fund. Health insurance contributions are set by a decision of the District Assembly and paid to the Brčko Health Insurance Fund: employers for their employees, the self-employed for themselves, farmers for themselves and their families, and others listed in the decision (Assembly decision 01-02-167/09 art. 3). The pension and unemployment rates are not covered here (see Not yet confirmed).
 
 ## Rates, bands and thresholds
 
@@ -47,13 +47,17 @@ Related skills: the monthly payroll run in [bosnia-payroll](bosnia-payroll.md); 
 | FBiH pension contribution for volunteers, and for young cooperative workers under 26 in full-time education | 30 KM a month | from Decision 62/26 | [FBiH Pension Fund decision 62/26](https://ik.imagekit.io/9qcwbg8wl/Odluka_62_26_U6SpxhQfE.pdf) |
 | FBiH pension contribution for students in practical training | 3 KM a month | from Decision 62/26 | FBiH Pension Fund decision 62/26 |
 | RS rates on the base | pension and disability 18.5%, health 10.2%, unemployment 0.6%, child protection 1.7% (total 31%) | 2026 | [RS Contributions Law art. 22(1)](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-doprinosima-SLGL-114_17.pdf), amended by [112/19](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-izmjenama-Zakona-o-doprinosima-SLGL-112_19.pdf) and [119/21](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20doprinosima.pdf) |
-| RS minimum base for employees | the minimum gross wage in force in the month | 2026 | [RS Contributions Law art. 10a, by 49/21](https://poreskaupravars.org/wp-content/uploads/2021/06/Zakon-o-doprinosima-2.pdf) |
-| RS minimum base, entrepreneurs | 70% of the previous year's average gross wage | from 1 Jan 2026 | [RS Contributions Law art. 11(1) as amended by 114/25](https://poreskaupravars.org/wp-content/uploads/2025/12/Doprinosi.pdf) |
+| RS minimum base for employees | the minimum gross wage in force in the month; for 2026 the basic minimum is 1,476.23 KM gross (1,000 KM net), with higher minimums by required education (see bosnia-payroll) | 2026 | [RS Government, Odluka o najnižoj plati za 2026. godinu, Sl. glasnik RS 115/25](https://poreskaupravars.org/wp-content/uploads/2026/01/Zakon.pdf); [RS Contributions Law art. 10a, by 49/21](https://poreskaupravars.org/wp-content/uploads/2021/06/Zakon-o-doprinosima-2.pdf) |
+| RS minimum base, entrepreneurs | 70% of the previous year's average gross wage (the rise to 80% that 110/24 set for 2026 was replaced by 114/25 before it applied) | from 1 Jan 2026 | [RS Contributions Law art. 11(1) as amended by 114/25](https://poreskaupravars.org/wp-content/uploads/2025/12/Doprinosi.pdf) |
 | RS minimum base, independent professions | the previous year's average gross wage | 2026 | RS Contributions Law art. 11(2) |
 | RS minimum base, entrepreneurs who are pensioners or work at it part-time (secondary occupation) | 30% of the previous year's average gross wage | 2026 | RS Contributions Law art. 11(3) as amended by [110/24](https://poreskaupravars.org/wp-content/uploads/2024/12/Scan25122024-1.pdf) |
 | RS average gross wage 2025 | 2,349 KM | 2025 | [RS Statistics Institute](https://www.rzs.rs.ba/) |
 | RS seasonal and temporary work | 16 KM a day of engagement | from 1 Jan 2026 | RS Contributions Law art. 16b, by 114/25 |
-| Late payment interest | FBiH 0.04% a day; RS 0.03% a day | 2026 | [FBiH interest law art. 2](https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf); [RS ZPP art. 60](https://poreskaupravars.org/wp-content/uploads/2026/05/Zakon-o-poreskom-postupku-78-20.pdf) |
+| Brčko health insurance, employees and the self-employed | 12% of gross pay and other income subject to income tax | 2026 (decision of 16 Dec 2009, in force) | [Brčko Assembly decision 01-02-167/09 arts. 4(a), 5(a)](https://skupstinabd.ba/2-registar/ba/Odluke/2009/999.%20odluke%20od%20broja%20100/167.%2018%20redovna%20sj.%20Odluka%20o%20%20osnovici%20i%20stopi%20doprinosa%20za%20zdravstveno%20osiguranje.pdf) |
+| Brčko health insurance, farmers | 5% of 55% of the previous year's average gross wage in the District | 2026 | Brčko decision 01-02-167/09 arts. 4(e), 5(f) |
+| Brčko health insurance, voluntary insurance | 9% of 55% of the previous year's average gross wage in the District | 2026 | Brčko decision 01-02-167/09 arts. 4(d), 5(c) |
+| Brčko health insurance, student and youth cooperative work (injury at work cover) | 2% of the net payment | 2026 | Brčko decision 01-02-167/09 arts. 4(b), 5(b) |
+| Late payment interest | FBiH 0.04% a day; RS 0.03% a day; Brčko 0.03% a day | 2026 | [FBiH interest law art. 2](https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf); [RS ZPP art. 60](https://poreskaupravars.org/wp-content/uploads/2026/05/Zakon-o-poreskom-postupku-78-20.pdf) |
 
 ## The taxable base
 
@@ -67,7 +71,7 @@ Related skills: the monthly payroll run in [bosnia-payroll](bosnia-payroll.md); 
 
 **RS self-employed.** Entrepreneurs pay on at least 70% of the previous year's average gross wage (2,349 KM for 2025, so at least 1,644.30 KM a month for 2026), and independent professions on at least the full average (art. 11).
 
-**Brčko.** The District health insurance law lets the Assembly set, each year, the lowest and highest amounts on which the health contribution is charged (Health Insurance Law art. 76). Rates and those amounts are not covered here.
+**Brčko.** The health contribution for employees and the self-employed is 12% of gross pay and other income subject to income tax (Assembly decision 01-02-167/09 arts. 4(a) and 5(a)). On salary it is calculated and paid on the day the pay is calculated; cooperative contributions by the 15th of the next month; farmers and voluntary contributors pay monthly, quarterly, half-yearly or yearly, in advance (art. 7). The District health insurance law lets the Assembly set the lowest and highest amounts on which the health contribution is charged (Health Insurance Law art. 76); those amounts, and the pension and unemployment rates, are not covered here.
 
 ## Deadlines and filing
 
@@ -181,7 +185,7 @@ expected:
 | FBiH Pravilnik o načinu obračunavanja i uplate doprinosa (consolidated to 48/25), arts. 2, 19, 20, 40b | https://www.pufbih.ba/v1/public/upload/zakoni/7cfcb-pravilnik-o-nacinu-obracunavanja-i-uplate-doprinosa-precisceni-48-25.pdf | 2026-10-30 |
 | FBiH Ministry of Finance, Osnovice za obračun doprinosa određenih obveznika za 2026. godinu (Sl. novine 100/25) | https://www.fmf.gov.ba/Content/Open/102838?n=Osnovice_za_obra%C4%8Dun_doprinosa_odre%C4%91enih_obveznika_za_2026._godinu.docx | 2026-10-30 |
 | FBiH Government, Odluka o iznosu najniže plaće za 2026. godinu | https://fbihvlada.gov.ba/bs/1094-odluka-o-iznosu-najnize-place-za-2026-godinu | 2026-10-30 |
-| FBiH Pension Fund, Odluka o visini doprinosa za PIO za lica osigurana u određenim okolnostima (62/26) | https://ik.imagekit.io/9qcwbg8wl/Odluka_62_26_U6SpxhQfE.pdf | 2026-10-30 |
+| FBiH Pension Fund, Odluka o visini doprinosa za PIO za lica osigurana u određenim okolnostima (62/26), file linked from the FBiH Tax Administration register (pufbih.ba/propisi-zakoni) | https://ik.imagekit.io/9qcwbg8wl/Odluka_62_26_U6SpxhQfE.pdf | 2026-10-30 |
 | FBiH Zakon o visini stope zatezne kamate na javne prihode, art. 2 | https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf | 2026-10-30 |
 | RS Zakon o doprinosima 114/17 (gazette text), arts. 10, 11, 21 to 26 | https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-doprinosima-SLGL-114_17.pdf | 2026-10-30 |
 | RS amendments 112/19 (unemployment 0.6%), 49/21 (art. 10a), 119/21 (health 10.2%) | https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-izmjenama-Zakona-o-doprinosima-SLGL-112_19.pdf | 2026-10-30 |
@@ -189,9 +193,11 @@ expected:
 | RS Tax Administration, Form 1002 from 1 January 2026 | https://poreskaupravars.org/izmjene-u-podnosenju-obrasca-1002-od-01-01-2026-godine-3/ | 2026-10-30 |
 | RS Zakon o poreskom postupku 78/20, arts. 60, 112, 114, 115 | https://poreskaupravars.org/wp-content/uploads/2026/05/Zakon-o-poreskom-postupku-78-20.pdf | 2026-10-30 |
 | RS Statistics Institute, average gross wage 2025 | https://www.rzs.rs.ba/ | 2026-10-30 |
+| RS Government, Odluka o najnižoj plati u Republici Srpskoj za 2026. godinu (Sl. glasnik RS 115/25, item 2725) | https://poreskaupravars.org/wp-content/uploads/2026/01/Zakon.pdf | 2026-10-30 |
+| Brčko Assembly, Odluka o osnovici i stopi doprinosa za zdravstveno osiguranje, 01-02-167/09 (16 Dec 2009), arts. 3 to 7 | https://skupstinabd.ba/2-registar/ba/Odluke/2009/999.%20odluke%20od%20broja%20100/167.%2018%20redovna%20sj.%20Odluka%20o%20%20osnovici%20i%20stopi%20doprinosa%20za%20zdravstveno%20osiguranje.pdf | 2026-10-30 |
 | Brčko Zakon o zdravstvenom osiguranju (consolidated 19/20), art. 76 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20zdravstvenom%20osiguranju%20Brc--ko%20Distrikta%20BiH/precisceni%20tekst%2007B19-20%20Zakon%20o%20zdravstvenom%20osiguranju.pdf | 2026-10-30 |
 
-Not yet confirmed: all Brčko District contribution rates and the 2026 lowest and highest health bases; the RS 2026 minimum gross wage; whether RS entrepreneurs pay all four RS contributions or only some (art. 22(2) exceptions not fully read) and the rates for pensioner and secondary-occupation entrepreneurs; the RS gazette publication of the 2025 average gross wage (2,349 KM is the RS Statistics Institute figure); the FBiH employer fees on net pay for natural disaster protection and water (other laws, not read); the FBiH rule for entrepreneurs who start or stop mid-month; any RS Contributions Law amendment not listed on the RS Tax Administration page.
+Not yet confirmed: the Brčko District pension and unemployment contribution rates (unemployment is set by the Employment Institute board, Employment Law art. 51(2)), the 2026 lowest and highest Brčko health bases, and whether the 2009 Brčko health decision was amended later (a web search found no amendment; the Assembly's decision register could not be searched); whether RS entrepreneurs pay all four RS contributions or only some (art. 22(2) exceptions not fully read) and the rates for pensioner and secondary-occupation entrepreneurs; the RS gazette publication of the 2025 average gross wage (2,349 KM is the RS Statistics Institute figure); the FBiH employer fees on net pay for natural disaster protection and water (other laws, not read); the FBiH rule for entrepreneurs who start or stop mid-month; any RS Contributions Law amendment not listed on the RS Tax Administration page.
 
 <!-- openaccountants-cta-block -->
 
