@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Kansas sales and use tax. Trigg
 version: 2.2
 jurisdiction: US-KS
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-10-29
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -137,6 +137,8 @@ expected:
 | KDOR sales tax rate changes | https://www.ksrevenue.gov/salesratechanges.html | 2026-10-28 |
 
 Not yet confirmed: the maximum combined state and local rate (previously carried as ~11.50%; confirm against the KDOR rate-change page); destination-based sourcing and Kansas's status as a Streamlined Sales Tax member; the economic-nexus gross-receipts threshold (previously carried as $100,000; statute not archived); the current return form IDs (previously carried as ST-1/ST-10) and the Kansas Revenue Portal e-filing route (the KDOR form URLs tried returned 404 pages); the exact interest computation under K.S.A. 79-2968 (the statute ties it to the IRC § 6621 underpayment rate as in effect on 1 September 1996, with adjustments not checked here); the taxability of clothing, SaaS, canned/downloaded software, professional services and sales for resale (previously carried in a transaction-pattern table as taxable/not taxable without archived sources); local sales-tax rates and the current filing-frequency schedule.
+
+> Contributed by Jeff Watts.
 
 <!-- openaccountants-cta-block -->
 

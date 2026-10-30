@@ -10,14 +10,18 @@ description: >
   "KDOR corporate". Corrected 2026-10-28 against archived statute text:
   K.S.A. 79-32,110(c) normal tax 4% + surtax 3% over $50,000 (NOT a 12%
   bracket), no rate reduction for TY2026 per KDOR Notice 25-06.
-jurisdiction: US-KS
-category: state-tax
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-28
 version: 0.2
+jurisdiction: US-KS
+tax_year: 2026
+last_updated: 2026-10-29
+authored_by: Jeff Watts
+review_status: pending_review
+trust_label: Accountant-authored
 depends_on:
   - ks-income-tax
+category: state-tax
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Kansas corporate income tax, tax year 2026
@@ -150,6 +154,8 @@ expected:
 | KDOR Franchise Tax (repealed 2011+; $55 Secretary of State fee) | https://www.ksrevenue.gov/bustaxtypesfranchise.html | 2026-10-28 |
 
 Not yet confirmed: the late-filing addition percentage under the K.S.A. 79-3228 series; the current interest-rate value under K.S.A. 79-2968(b); Kansas taxation of S-corporation shareholders' distributive share (cited in v0.2 as K.S.A. 79-32,139, not archived) and the form nonresident S-shareholders file (K-40 vs K-40PN).
+
+> Contributed by Jeff Watts.
 
 <!-- openaccountants-cta-block -->
 

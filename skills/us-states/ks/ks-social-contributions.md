@@ -9,14 +9,18 @@ description: >
   rate", "Kansas employer contributions", "K.S.A. 79-27", "KW-3 UI".
   Source-cited draft; the 2026 wage base, rate ranges and filing calendar
   are not yet confirmed (dol.ks.gov returned 403 to plain HTTP this run).
-jurisdiction: US-KS
-category: payroll
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-28
 version: 0.1
+jurisdiction: US-KS
+tax_year: 2026
+last_updated: 2026-10-29
+authored_by: Jeff Watts
+review_status: pending_review
+trust_label: Accountant-authored
 depends_on:
   - ks-income-tax
+category: payroll
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Kansas social contributions, tax year 2026
@@ -115,6 +119,8 @@ expected:
 | 26 U.S.C. § 3302 (credit cap 90% of the tax) | https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleC-chap23-sec3302.htm | 2026-10-28 |
 
 Not yet confirmed: the 2026 Kansas UI taxable wage base (recent years were described in v0.1 as in the $15,000 range); the experience-rated contribution schedule and the new-employer rate for the first coverage years; that Kansas imposes no employee UI premium; any suspense or financing surcharge (historically added in years with a federal loan balance); the coverage threshold for registration; aggregation of successors and common-owner groups for experience rating; FUTA credit-reduction status for 2026; the quarterly UI report and payment due dates (v0.1: last day of the month after each quarter); the annual rate notice and its protest window; the annual wage report for experience rating with the Q4 filing; late-report and late-payment penalty and interest percentages and misclassification penalty tiers; Kansas adoption of the federal four-part localization-of-work tests for remote workers; which agency administers Kansas UI (v0.1 said the Labor Services division of KDOR, but KDOR's business page does not show it and the UI program pages are on dol.ks.gov); and the statutory citation (v0.1 cited K.S.A. 79-27 and 79-27-105, whose kslegislature.org page served only a JS shell; the Kansas Employment Security Law in K.S.A. chapter 44 should be checked).
+
+> Contributed by Jeff Watts.
 
 <!-- openaccountants-cta-block -->
 
