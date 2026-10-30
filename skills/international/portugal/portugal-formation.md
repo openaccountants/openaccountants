@@ -46,7 +46,7 @@ Esta skill cobre a escolha da forma jurídica e a constituição de uma sociedad
 - **Certidão permanente (assinatura)**: €25 por 1 ano; €40 por 2; €60 por 3; €70 por 4 anos  _(RERN art. 22.º, n.º 13.4)_
 - **Depósito do capital (Lda, Unipessoal)**: 5 dias úteis, ou declaração de entrega nos cofres da sociedade até ao fim do primeiro exercício económico  _(CSC art. 202.º, n.º 4; IRN, Capital social)_
 - **RCBE (beneficiário efetivo)**: declaração inicial em 30 dias após o registo; atualização em 30 dias após cada alteração; confirmação anual até 31 de dezembro  _(RJRCBE arts. 12.º, 14.º e 15.º)_
-- **Inscrição em IRC**: 90 dias a partir da inscrição no RNPC; a declaração de início de atividade do IVA vale como inscrição se entregue nesse prazo  _(CIRC art. 118.º, n.os 1 e 2)_
+- **Inscrição em IRC**: sociedade sujeita a registo comercial: 15 dias a partir da apresentação a registo na Conservatória; entidade não sujeita a registo comercial: 90 dias a partir da inscrição no RNPC. Quando a declaração de início de atividade do IVA deva ser entregue dentro desse prazo, vale como declaração de inscrição  _(CIRC art. 118.º, n.os 1 e 2)_
 - **Declaração de início de atividade (IVA)**: antes de iniciar a atividade  _(CIVA art. 31.º, n.º 1)_
 - **IES**: até 15 de julho do ano seguinte  _(CIRC art. 121.º, n.º 2)_
 - **IRC (Modelo 22)**: até ao último dia de maio do ano seguinte  _(CIRC art. 120.º, n.º 1)_
@@ -126,7 +126,7 @@ O IRN faz a constituição "num único balcão, num único momento". Permite cri
 
 ### Passos Pós-Registo (Todas as Opções)
 
-- Inscrição em IRC: declaração de inscrição em 90 dias a partir da inscrição no RNPC; se a declaração de início de atividade do IVA for entregue nesse prazo, vale como inscrição (CIRC art. 118.º, n.os 1 e 2).
+- Inscrição em IRC: uma sociedade comercial está sujeita a registo comercial, por isso entrega a declaração de inscrição em 15 dias a partir da apresentação a registo na Conservatória (o prazo de 90 dias a partir da inscrição no RNPC é só para entidades não sujeitas a registo comercial). Quando a declaração de início de atividade do IVA deva ser entregue dentro desse prazo, vale como declaração de inscrição (CIRC art. 118.º, n.os 1 e 2).
 - Declaração de início de atividade para IVA antes de iniciar a atividade (CIVA art. 31.º, n.º 1). Periodicidade e regras: ver `portugal-vat-return`.
 - Caixa postal eletrónica (ou adesão às notificações eletrónicas no Portal das Finanças) comunicada à AT em 30 dias a contar do início de atividade (LGT art. 19.º, n.os 12 e 14).
 - Inscrição na Segurança Social como entidade empregadora quando contratar, e contribuições de gerentes remunerados: ver `pt-social-contributions`.
@@ -182,7 +182,7 @@ Não são admitidas contribuições de indústria (só trabalho) nas Lda e SA (C
 
 | Obrigação | Prazo | Autoridade |
 | --- | --- | --- |
-| Declaração de inscrição em IRC | 90 dias a partir da inscrição no RNPC (CIRC art. 118.º, n.º 1) | Autoridade Tributária |
+| Declaração de inscrição em IRC | 15 dias a partir da apresentação a registo na Conservatória do Registo Comercial; 90 dias a partir da inscrição no RNPC só para entidades não sujeitas a registo comercial (CIRC art. 118.º, n.º 1) | Autoridade Tributária |
 | Declaração de início de atividade (IVA) | Antes de iniciar a atividade (CIVA art. 31.º); na Empresa na Hora sem CC indicado, até 15 dias depois da criação (IRN) | Autoridade Tributária |
 | Declaração de alterações | 15 dias se sujeito a IVA, 30 dias nos restantes casos; dispensada para factos sujeitos a registo comercial (CIRC art. 118.º, n.os 5 e 7) | Autoridade Tributária |
 | Caixa postal eletrónica | 30 dias a contar do início de atividade (LGT art. 19.º, n.º 12) | Autoridade Tributária |
@@ -238,7 +238,7 @@ Os bancos não têm prazo legal. Para não residentes, conte com mais documenta�
 
 ## Secção 9: Erros Comuns e Recusas
 
-- **R-PT-F1**: Dispensar o Contabilista Certificado. "Toda a sociedade comercial tem de ter contabilidade organizada (CIRC art. 123.º, n.º 1), e a constituição pede a indicação de um Contabilista Certificado (IRN). Não é opcional."
+- **R-PT-F1**: Dispensar o Contabilista Certificado. "Toda a sociedade comercial tem de ter contabilidade organizada (CIRC art. 123.º, n.º 1), e a constituição pede a indicação de um Contabilista Certificado (IRN). Só um Contabilista Certificado inscrito na Ordem pode assumir a responsabilidade técnica pela contabilidade de uma entidade com contabilidade organizada e assinar as suas demonstrações financeiras e declarações fiscais (Estatuto da OCC, art. 10.º, n.º 1, alínea b)). Não é opcional."
 - **R-PT-F2**: Não depositar o capital a tempo. "Na Empresa na Hora e na Empresa Online há 5 dias úteis para depositar o capital, salvo depósito no ato ou declaração de entrega nos cofres da sociedade até ao fim do primeiro exercício. Os sócios declaram a entrega sob sua responsabilidade (CSC art. 202.º, n.os 4 e 6)."
 - **R-PT-F3**: Não residente sem representante fiscal. "Os residentes fora da UE/EEE têm de designar um representante fiscal em Portugal, salvo se aderirem às notificações eletrónicas (LGT art. 19.º, n.os 6, 8 e 15). Sem NIF não é possível constituir a sociedade online."  _(https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt19.aspx)_
 - **R-PT-F4**: Sociedade veículo para Golden Visa. "A mera constituição da empresa não confere autorização de residência para investimento. Os requisitos estão na Lei 23/2007 e foram alterados em 2023. Não aconselhe a constituição como via para obtenção de visto sem aconselhamento especializado em imigração."
@@ -259,7 +259,7 @@ Os bancos não têm prazo legal. Para não residentes, conte com mais documenta�
 | Empresa Online | Pagamento em 48 horas; correções em 5 dias seguidos | IRN |
 | Depósito de capital no banco | 5 dias úteis (ou até ao fim do 1.º exercício, se declarado) | IRN; CSC art. 202.º |
 | Declaração de início de atividade | Antes de iniciar a atividade (IVA); 15 dias após a Empresa na Hora se o CC não foi indicado no balcão | CIVA art. 31.º; IRN |
-| Inscrição em IRC | 90 dias a partir da inscrição no RNPC | CIRC art. 118.º |
+| Inscrição em IRC | 15 dias a partir da apresentação a registo comercial | CIRC art. 118.º, n.º 1 |
 | Caixa postal eletrónica | 30 dias a contar do início de atividade | LGT art. 19.º, n.º 12 |
 | Entrega do RCBE | 30 dias após o registo | RJRCBE art. 12.º |
 | **Pronta para operar** | Residentes via Empresa na Hora: a sociedade fica constituída no próprio dia | IRN |
@@ -283,8 +283,9 @@ Os bancos não têm prazo legal. Para não residentes, conte com mais documenta�
 | CIVA art. 31, declaração de início de atividade | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva31.aspx | 2026-10-30 |
 | CIVA art. 41, monthly or quarterly returns (EUR 650,000) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx | 2026-10-30 |
 | LGT art. 19, tax representative and electronic mailbox | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt19.aspx | 2026-10-30 |
+| Estatuto da Ordem dos Contabilistas Certificados (DL 452/99 as amended, OCC consolidated text in force from 1 March 2024), art. 10(1)(b), acts reserved to Contabilistas Certificados | https://www.occ.pt/sites/default/files/public/2024-09/Estatuto_2024.pdf | 2026-10-30 |
 
-Not yet confirmed: whether the IRN's EUR 200 "pedido com marca associada" at Empresa na Hora is charged on top of the EUR 360 or replaces it (the IRN page lists both without saying); the Estatuto da Ordem dos Contabilistas Certificados (Lei 139/2015) article that makes the accounting of companies with organised accounts an act reserved to Contabilistas Certificados (the DRE consolidated text could not be opened today; the skill relies on CIRC art. 123 and the IRN requirement to name a CC); whether a power of attorney (procuração) is accepted instead of personal presence at Empresa na Hora; the Golden Visa (ARI) investment routes and amounts after the 2023 reform (Lei 23/2007 art. 3, not re-read); the old practical estimates, which have no official source: Empresa Online processing in 5 to 10 working days, traditional route in 1 to 3 weeks and EUR 500 to 1,500 for notary and registration, Contabilista Certificado fees of EUR 1,200 to 3,600 a year, "EUR 1,000 or more" of capital in practice, bank account opening in 1 to 5 days (1 to 3 weeks for non-residents), and NIF in 1 to 10 days.
+Not yet confirmed: whether the IRN's EUR 200 "pedido com marca associada" at Empresa na Hora is charged on top of the EUR 360 or replaces it (the IRN page lists both without saying; the RERN has no trade-mark fee); whether a power of attorney (procuração) is accepted instead of personal presence at Empresa na Hora, and for the online and traditional routes (the old file said yes for those two); whether foreign documents need an apostille and a certified translation (the IRN pages ask only for a translation); the old claim that a late capital deposit makes the managers personally liable; the Golden Visa (ARI) investment routes and amounts after the 2023 reform (Lei 23/2007 art. 3, not re-read); the old practical estimates, which have no official source: Empresa Online processing in 5 to 10 working days, traditional route in 1 to 3 weeks and EUR 500 to 1,500 for notary and registration, Contabilista Certificado fees of EUR 1,200 to 3,600 a year, "EUR 1,000 or more" of capital in practice, bank account opening in 1 to 5 days (1 to 3 weeks for non-residents), and NIF in 1 to 10 days.
 
 ## Aviso Legal
 
