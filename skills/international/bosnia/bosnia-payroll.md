@@ -27,7 +27,7 @@ Related skills: annual personal income tax and the rules on residence and other 
 - **Brčko District employers.** The employer withholds the tax advance at each payment (Income Tax Law art. 28). An employee domiciled in an entity who works for a District employer is a District resident for that salary (art. 3(1)(e)).
 - **Foreign employers.** An FBiH resident working in the Federation for a non-resident employer pays contributions himself by the 10th of the next month, or the foreign employer can do it (Contributions Law art. 11(1)(b) and (c)); an employee paid directly from abroad self-assesses the tax advance within five days (Income Tax Law art. 27(10)).
 
-Out of scope: labour-law rules on pay rates, overtime and leave beyond the 2026 FBiH minimum wage.
+Out of scope: labour-law rules on pay rates, overtime and leave beyond the 2026 FBiH and RS minimum wages.
 
 ## Rates, bands and thresholds
 
@@ -50,12 +50,14 @@ Out of scope: labour-law rules on pay rates, overtime and leave beyond the 2026 
 | RS income tax on salary | 8% of gross less allowances (contributions not deducted) | 2026 | [RS Tax Administration notice, February 2026](https://poreskaupravars.org/izmjene-u-podnosenju-obrasca-1002-od-01-01-2026-godine-3/); RS Income Tax Law art. 13 |
 | RS monthly allowance by tax card | 1,000 KM (1/12 of 12,000); +150 KM a month per dependant (1/12 of 1,800) | 2026 | RS Income Tax Law arts. 10(3) and 58(2) |
 | RS tax-free part of salary, jobs needing no qualification or at most 3-year secondary school | 50 KM a month, out of both the tax base and the contribution base | from 1 Jan 2026 | [RS Income Tax Law art. 8(2)(13), by 114/25](https://poreskaupravars.org/wp-content/uploads/2025/12/Dohodak.pdf); Contributions Law art. 21(1) |
+| RS minimum wage | 1,000 KM net (1,476.23 KM gross); jobs needing at least 3-year secondary school 1,050 KM net (1,558.19 gross); 4-year secondary 1,100 KM net (1,672.13 gross); higher education 1,350 KM net (2,081.97 gross); university 1,450 KM net (2,245.90 gross) | pay from 1 Jan 2026 | [RS Government, Odluka o najnižoj plati za 2026. godinu, Sl. glasnik RS 115/25, points I to V](https://poreskaupravars.org/wp-content/uploads/2026/01/Zakon.pdf) |
 | RS minimum contribution base | the minimum gross wage in force in the month | 2026 | [RS Contributions Law art. 10a, by 49/21](https://poreskaupravars.org/wp-content/uploads/2021/06/Zakon-o-doprinosima-2.pdf) |
 | RS canteen or catered meals not taxed | up to 0.75% of the previous year's average net salary a day (2025 average net: 1,528 KM) | 2026 | RS Income Tax Law art. 8(2)(11) as amended by 56/22; [RS Statistics Institute](https://www.rzs.rs.ba/) |
 | RS employer payments into the European voluntary pension fund (EDPF) | not taxed up to 100 KM, reported as payment type 113 on the monthly Form 1002 | 2026 | [RS Tax Administration notice, March 2026](https://poreskaupravars.org/prijavljivanje-uplata-u-dobrovoljni-penzijski-fond-i-neoporezivog-dijela-plate-u-okviru-obrasca-1002/) |
 | RS seasonal and temporary work | tax 9 KM and contributions 16 KM for each day of engagement, paid by the 20th of the next month | from 1 Jan 2026 | RS Income Tax Law art. 52a and Contributions Law arts. 16b and 24(5), by 114/25 |
 | Brčko income tax | 10% after employee contributions and the allowance | 2026 | [BD Income Tax Law arts. 10, 12, 28](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/Nesluz--bena%20prec--is--c-ena%20verzija%20Zakona%20o%20porezu%20na%20dohodak%20B.pdf) |
 | Brčko monthly allowance | 1,200 KM | from 1 Aug 2022 | BD Income Tax Law art. 25(1) as amended by 21/22 |
+| Brčko health insurance contribution | 12% of gross salary | 2026 (decision of 16 Dec 2009, in force) | [Brčko Assembly decision 01-02-167/09 art. 5(a)](https://skupstinabd.ba/2-registar/ba/Odluke/2009/999.%20odluke%20od%20broja%20100/167.%2018%20redovna%20sj.%20Odluka%20o%20%20osnovici%20i%20stopi%20doprinosa%20za%20zdravstveno%20osiguranje.pdf) |
 | Brčko meal allowance not taxed | up to 10 KM per working day | from 1 Jan 2023 | BD Income Tax Law art. 11(2)(c)(6) as amended by 45/22 |
 | Late payment interest | FBiH 0.04% a day; RS 0.03% a day; Brčko 0.03% a day | 2026 | [FBiH interest law art. 2](https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf); [RS ZPP art. 60](https://poreskaupravars.org/wp-content/uploads/2026/05/Zakon-o-poreskom-postupku-78-20.pdf); BD ZPU art. 68 |
 
@@ -84,7 +86,7 @@ The RS Tax Administration's own 2026 example: gross 1,800 KM, tax-free part 50 K
 
 ### Brčko gross to net
 
-Tax base = gross − employee contributions − 1,200 KM allowance (more for dependants and disability, see bosnia-income-tax), at 10% (Income Tax Law arts. 12, 25, 28). The contribution rates for Brčko employees are not covered here (see Not yet confirmed).
+Tax base = gross − employee contributions − 1,200 KM allowance (more for dependants and disability, see bosnia-income-tax), at 10% (Income Tax Law arts. 12, 25, 28). Health insurance contribution: 12% of the gross salary, paid to the Brčko Health Insurance Fund on the day the salary is calculated (Assembly decision on the health insurance contribution base and rate, 01-02-167/09, arts. 4(a), 5(a) and 7(1)). The pension and unemployment contribution rates for Brčko employees are not covered here (see Not yet confirmed).
 
 ## Deadlines and filing
 
@@ -215,11 +217,13 @@ expected:
 | RS Tax Administration, Form 1002 from 1 January 2026 (worked example) | https://poreskaupravars.org/izmjene-u-podnosenju-obrasca-1002-od-01-01-2026-godine-3/ | 2026-10-30 |
 | RS Tax Administration, voluntary pension and the 50 KM part on Form 1002 | https://poreskaupravars.org/prijavljivanje-uplata-u-dobrovoljni-penzijski-fond-i-neoporezivog-dijela-plate-u-okviru-obrasca-1002/ | 2026-10-30 |
 | RS Zakon o poreskom postupku 78/20, arts. 60, 112, 114 | https://poreskaupravars.org/wp-content/uploads/2026/05/Zakon-o-poreskom-postupku-78-20.pdf | 2026-10-30 |
+| RS Government, Odluka o najnižoj plati u Republici Srpskoj za 2026. godinu (Sl. glasnik RS 115/25, item 2725), as published in the gazette issue on the RS Tax Administration site | https://poreskaupravars.org/wp-content/uploads/2026/01/Zakon.pdf | 2026-10-30 |
+| Brčko Assembly, Odluka o osnovici i stopi doprinosa za zdravstveno osiguranje, 01-02-167/09 (16 Dec 2009), arts. 4 to 7 | https://skupstinabd.ba/2-registar/ba/Odluke/2009/999.%20odluke%20od%20broja%20100/167.%2018%20redovna%20sj.%20Odluka%20o%20%20osnovici%20i%20stopi%20doprinosa%20za%20zdravstveno%20osiguranje.pdf | 2026-10-30 |
 | RS Statistics Institute, average salaries 2025 | https://www.rzs.rs.ba/ | 2026-10-30 |
 | Brčko Zakon o porezu na dohodak (consolidated) and amendments 21/22, 45/22 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/Nesluz--bena%20prec--is--c-ena%20verzija%20Zakona%20o%20porezu%20na%20dohodak%20B.pdf | 2026-10-30 |
 | Brčko Zakon o Poreznoj upravi 11/20, arts. 68 and 76 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20Poreznoj%20upravi%20Brc--ko%20Distrikta%20BiH/011B11-20%20Zakon%20%20o%20poreznoj%20upravi%20Brcko%20distrikta%20BiH.pdf | 2026-10-30 |
 
-Not yet confirmed: the RS minimum wage for 2026 (the RS Government decision was not reached); the Brčko contribution rates and base limits (set partly by the District Assembly and the entity pension funds the employee belongs to); the FBiH employer levies charged on net pay under other laws (fees for protection from natural disasters and water fees, shown as 0.5% each in the old version); whether the 0.75% RS meal limit uses the 2025 average net of 1,528 KM as published in the RS gazette; the RS 2026 rulebook on seasonal-work returns; any FBiH Income Tax Law amendment after 65/13 (none on the Tax Administration's list of 12 October 2026).
+Not yet confirmed: which RS minimum wage tier sets the contribution floor for a worker in a higher-qualification job (art. 10a refers to the minimum gross wage); the Brčko pension and unemployment contribution rates (pension follows the entity fund the employee belongs to; unemployment is set by a decision of the Brčko Employment Institute board under Employment Law art. 51(2)), the minimum base for the Brčko health contribution (decision art. 6 points to the entity pension minimum until a Brčko collective agreement is adopted) and whether the 2009 decision was amended later (a web search found no amendment; the Assembly's decision register could not be searched); the FBiH employer levies charged on net pay under other laws (fees for protection from natural disasters and water fees, shown as 0.5% each in the old version); whether the 0.75% RS meal limit uses the 2025 average net of 1,528 KM as published in the RS gazette; the RS 2026 rulebook on seasonal-work returns; any FBiH Income Tax Law amendment after 65/13 (none on the Tax Administration's list of 12 October 2026).
 
 <!-- openaccountants-cta-block -->
 
