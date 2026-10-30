@@ -2,7 +2,7 @@
 
 WRITER LEDGER; NOT INDEPENDENTLY REVIEWED; COUNTRY PARTIAL
 
-Guide SHA256 `83b50e55564932011270906e7148752e8a424586bf969c2ef633d3f8cc80a747`. Read date30October2026. Every original2026paragraph/table/control is mapped below; older2025 approximate topics have explicit dispositions. No independent PASS is claimed.
+Guide SHA256 `882888edacfe0b8a4a7543e52201a8e0602b1873a3d25e63499d6a3b9456730c`. Read date30October2026. Every original2026paragraph/table/control is mapped below; older2025 approximate topics have explicit dispositions. No independent PASS is claimed.
 
 Whitespace/linewrapping and PDF discretionary hyphens only; web-reader line prefixes removed. Quotes are original German, not translated. Observations are fetched tool text where direct HTTP blocked, explicitly not rawPDF/HTML.
 
@@ -174,8 +174,8 @@ Whitespace/linewrapping and PDF discretionary hyphens only; web-reader line pref
 | LI-PS-164 | InitialadministrativeVorstellung4weeks; Penalties and interest | AHVG84(1) | https://www.gesetze.li/konso/pdf/1952029000 | Gegen Verfügungen der Anstalt kann binnen vier Wochen das | 2026-10-30 |
 | LI-PS-165 | Initialobjectioncostandfeefree; Penalties and interest | AHVG84(2) | https://www.gesetze.li/konso/pdf/1952029000 | Das Verfahren ist kosten- und gebührenfrei. | 2026-10-30 |
 | LI-PS-166 | FurtherObergerichtappeal4weeksnonextendablefiledthere; Penalties and interest | AHVG86 | https://www.gesetze.li/konso/pdf/1952029000 | Die Berufungsfrist beträgt vier Wochen, sie kann nicht verlängert | 2026-10-30 |
-| LI-PS-C01 | li-payroll-social | ASSUMED CASE INPUTS AND DERIVED ARITHMETIC; governing rates/bases bound above | Governing rows above | Arithmetic requires independent recomputation | 2026-10-30 |
-| LI-PS-C02 | li-payroll-social | ASSUMED CASE INPUTS AND DERIVED ARITHMETIC; governing rates/bases bound above | Governing rows above | Arithmetic requires independent recomputation | 2026-10-30 |
+| LI-PS-C01 | Liechtenstein 2026 assumed employee contribution split | ASSUMED CASE INPUTS AND DERIVED ARITHMETIC; governing rates/bases bound above | Governing rows above | Arithmetic requires independent recomputation | 2026-10-30 |
+| LI-PS-C02 | Liechtenstein 2026 assumed employer contribution and ALV ceiling | ASSUMED CASE INPUTS AND DERIVED ARITHMETIC; governing rates/bases bound above | Governing rows above | Arithmetic requires independent recomputation | 2026-10-30 |
 
 ## Complete old-topics destination table
 

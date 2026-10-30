@@ -207,7 +207,7 @@ These are assumed ordinary covered adult employees; rates and bases must apply b
 ### Full-year employee contributions
 
 ```oa-check
-name: li-payroll-social
+name: Liechtenstein 2026 assumed employee contribution split
 inputs:
   established_annual_wage: 60000
   employee_ahv_iv_fak: 0.049
@@ -230,7 +230,7 @@ expected:
 Assume CHF 150,000 established annual wage, all subject to AHV/IV/FAK/VK, and full-year ALV coverage in this employment.
 
 ```oa-check
-name: li-payroll-social
+name: Liechtenstein 2026 assumed employer contribution and ALV ceiling
 inputs:
   established_annual_wage: 150000
   employer_ahv_iv_fak_vk: 0.07385

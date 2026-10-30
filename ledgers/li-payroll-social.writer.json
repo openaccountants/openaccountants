@@ -1,7 +1,7 @@
 {
   "status": "WRITER LEDGER; NOT INDEPENDENTLY REVIEWED; COUNTRY PARTIAL",
   "guide": "skills/international/liechtenstein/li-payroll-social.md",
-  "guide_sha256": "83b50e55564932011270906e7148752e8a424586bf969c2ef633d3f8cc80a747",
+  "guide_sha256": "882888edacfe0b8a4a7543e52201a8e0602b1873a3d25e63499d6a3b9456730c",
   "source_read_date": "2026-10-30",
   "normalization": "Whitespace/linewrapping and PDF discretionary hyphens only; web-reader line prefixes removed. Quotes are original German, not translated. Observations are fetched tool text where direct HTTP blocked, explicitly not rawPDF/HTML.",
   "rules": [
@@ -2331,18 +2331,18 @@
     },
     {
       "id": "LI-PS-C01",
-      "rule_or_figure": "li-payroll-social",
+      "rule_or_figure": "Liechtenstein 2026 assumed employee contribution split",
       "Guide_section": "Two worked examples that recompute / retained boundary workpapers",
       "classification": "ASSUMED CASE INPUTS AND DERIVED ARITHMETIC; governing rates/bases bound above",
-      "case_block_sha256": "f99127a10ceb6ea23264503decd185fa17c7fa358d0acf4111efba3da20de665",
+      "case_block_sha256": "c6db171d6593c0f651d4b7bc79477f01b9f3d12db09cbc11ee082e9a39fbe45b",
       "independent_review": "PENDING recomputation/assumptions check"
     },
     {
       "id": "LI-PS-C02",
-      "rule_or_figure": "li-payroll-social",
+      "rule_or_figure": "Liechtenstein 2026 assumed employer contribution and ALV ceiling",
       "Guide_section": "Two worked examples that recompute / retained boundary workpapers",
       "classification": "ASSUMED CASE INPUTS AND DERIVED ARITHMETIC; governing rates/bases bound above",
-      "case_block_sha256": "6593953c8851829dddbb3822038249e1c068306add5ca24aeea32e05be441134",
+      "case_block_sha256": "aa32295b8cfef619018b21ada4f257fc4518d75257b7b9f7e4b0ad50ff03dcc2",
       "independent_review": "PENDING recomputation/assumptions check"
     }
   ],

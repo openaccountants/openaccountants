@@ -1,0 +1,33 @@
+{
+  "status": "WRITER VALIDATION ONLY; FULL INDEPENDENT PACK REVIEW PENDING",
+  "as_of_utc": "2026-10-30T11:50:41.569591+00:00",
+  "changed_schema": "PASS8Guides0warnings",
+  "full_schema": "PASS --no-index-check; inherited warnings781/5/5",
+  "examples": {
+    "executed": 37,
+    "distinct_exact_blocks": 30,
+    "current": 14,
+    "annex": 23,
+    "duplicates": 7,
+    "failures": 0,
+    "missing": 0
+  },
+  "writer_controls": {
+    "payroll_social": 28,
+    "transfer_pricing": 19,
+    "cross_border": 17,
+    "vat": 25,
+    "corporate_income": 30,
+    "individual_income": 36,
+    "formation": 19
+  },
+  "ledger_groups": 663,
+  "all_eight_ledgers_ready": true,
+  "quote_binding_failures": 0,
+  "source_table_checks": {
+    "non_employed": 32,
+    "personal_tariff": 27
+  },
+  "prior_freeze_check": "Initial exact-block uniqueness assertion was37/32 because2payroll case labels differed. Their full inputs/steps/expected values matched the originals. Original labels restored, exact duplicate count now7 and unique blocks30.",
+  "scope": "All7domains remain partial; no accountant attestation/live filing/publication claimed."
+}
