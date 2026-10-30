@@ -1,310 +1,239 @@
 ---
 name: ua-income-tax
-description: "Ukrainian general-system (загальна система) personal income tax for a self-employed sole proprietor (ФОП): net business profit taxed at 18% PIT plus the 5% military levy with documented business expenses deductible under Art. 177."
-version: 1.0
+description: "Ukrainian personal income tax (податок на доходи фізичних осіб, ПДФО) and the 5% military levy for every individual, tax year 2026, under section IV of the Tax Code of Ukraine. Covers residents and non-residents; salary and civil-law fees withheld by tax agents; the tax social benefit; interest, dividends (5% and 9%), investment profit, rent, property and car sales, gifts and inheritance; foreign income and foreign tax credit; sole proprietors on the general system (net profit, deductible expenses, depreciation, quarterly advances); independent professionals; the annual declaration due 1 May, payment by 1 August, the tax discount and refunds; penalties. Trigger on: Ukraine income tax, ПДФО, декларація про майновий стан і доходи, податкова знижка, ФОП загальна система, military levy Ukraine. Out of scope: single tax (ua-single-tax), crypto (ua-crypto-tax), ЄСВ (ua-social-contributions), employer payroll (ua-payroll), residence and treaties (ua-cross-border), companies (ua-corporate-income-tax)."
+version: 0.1
 jurisdiction: UA
 tax_year: 2026
-last_updated: 2026-07-13
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-depends_on:
-  - income-tax-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# UA Income Tax
-
-## Ukraine General-System Personal Income Tax (ПДФО for FOP / Загальна система) — Self-Employed Skill v1.0
-
-This skill covers a Ukrainian sole proprietor (ФОП / фізична особа-підприємець) taxed on the general system — net business profit taxed at 18% personal income tax (ПДФО) plus a 5% military levy (військовий збір), with documented business expenses deductible. This is fundamentally different from the simplified єдиний податок (turnover-based, no expense deduction) — for that, use ua-single-tax. Unified social contribution (ЄСВ) is handled by ua-social-contributions and only referenced here.
-
-## Section 1 — Quick Reference
-
-**Quick Reference Table**
-
-| Field | Value |
-| --- | --- |
-| Country | Ukraine |
-| Regime | Загальна система оподаткування (General taxation system) for ФОП |
-| Tax | ПДФО (personal income tax) + військовий збір (military levy) on net business profit |
-| Taxpayer | ФОП (фізична особа-підприємець) — self-employed sole proprietor, Ukrainian resident |
-| Currency | UAH (₴) |
-| Tax year | Calendar year (1 Jan – 31 Dec) |
-| Primary legislation | Tax Code of Ukraine (Податковий кодекс України) — Art. 177 (FOP general system), Section IV (ПДФО), Art. 16¹ subsection 10 of the Transitional Provisions (military levy) |
-| Tax authority | Державна податкова служба України (ДПС / State Tax Service) |
-| Filing portal | Електронний кабінет платника (cabinet.tax.gov.ua) |
-| Annual return | Декларація про майновий стан і доходи (property status & income declaration) |
-| Filing deadline | By **1 May** of the year following the reporting year (e.g. 2026 income → by 1 May 2027) |
-| Final tax payment | Within **10 calendar days** after the declaration filing deadline |
-| PIT advance payments | By **20 April, 20 July, 20 October** (no Q4 advance — settled in the declaration) |
-| Contributor | Open Accountants Community |
-| Quality tier | Research-verified — pending sign-off by a Ukrainian accountant/auditor |
-| Skill version | 1.0 |
-
-**Wartime note:** Under martial law the military levy rose from 1.5% to **5%** effective **1 Dec 2024** and remains 5% throughout **2026**. It reverts to 1.5% in the year **after** martial law ends — verify the current status with the ДПС before relying on the rate. Figures below are as of **1 January 2026**.
-
-### Rate table (general system, 2026)
-
-**Rate table (general system, 2026)**  _(Art. 177; Tax Code §16¹.10 Transitional Provisions; Art. 181 ПКУ)_
-
-| Component | Rate | Base |
-| --- | --- | --- |
-| ПДФО (personal income tax) | **18%** | Net taxable profit = income − documented allowable expenses |
-| Військовий збір (military levy) | **5%** | Same net profit base; computed under Art. 177 rules (Tax Code §16¹.10 Transitional Provisions) |
-| **Combined income-tax burden** | **23%** | of net profit |
-| ЄСВ (unified social contribution) | 22% of net profit, min 22% of min. wage | See **ua-social-contributions** |
-| VAT (ПДВ) | 20% standard | Mandatory registration if 12-month turnover > ₴1,000,000 — see **ukraine-vat** |
-
-### Key 2026 amounts (as of 1 Jan 2026; verify current values)
-
-**Key 2026 amounts**  _(Art. 177.4.6 ПКУ; Art. 181 ПКУ)_
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Minimum wage (мінімальна зарплата) | ₴8,647 / month | Set 1 Jan 2026 |
-| Living wage, working-age (прожитковий мінімум) | ₴3,328 / month | Set 1 Jan 2026 |
-| ЄСВ minimum | ₴1,902.34 / month (22% × ₴8,647) | See ua-social-contributions |
-| ЄСВ maximum monthly base | 20 × min. wage = ₴172,940 | Cap on the 22% base |
-| Asset threshold for "fixed asset" (ОЗ) | > ₴20,000 and useful life ≥ 1 year | Art. 177.4.6 ПКУ; below = expensed immediately |
-| VAT registration threshold | ₴1,000,000 turnover / 12 months | Art. 181 ПКУ |
-
-### Conservative defaults
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Regime not stated, but expenses are claimed / income exceeds single-tax cap | General system (this skill) |
-| Regime not stated, freelancer with low costs | Likely single tax → route to ua-single-tax and confirm |
-| Expense lacks a supporting document | NOT deductible — exclude and flag |
-| Personal-vs-business split unclear | Treat as non-deductible (personal) unless a documented business apportionment exists |
-| Fixed asset vs immediate expense unclear | If cost > ₴20,000 and life ≥ 1 yr → capitalise & depreciate (straight-line); else expense |
-| Foreign-currency receipt date | NBU rate on the date funds are received (cash basis) |
-| Military levy rate | 5% (martial law in force in 2026) — verify before filing |
-| Whether ЄСВ applies | Assume YES; minimum ₴1,902.34/month even at a loss — confirm in ua-social-contributions |
-
-## Section 2 — Required Inputs and Refusal Catalogue
-
-### Required inputs
-
-- **Required inputs** — Minimum: confirmation the FOP is on the general system; full-year bank statements for all business accounts (UAH and FX); list of business expenses with supporting documents. Recommended: Книга обліку доходів і витрат (income & expense ledger), registration extract (виписка з ЄДР) with КВЕД activity codes, prior-year declaration, ЄСВ payment history, fixed-asset register. Ideal: all primary documents (invoices/акти, видаткові накладні, bank confirmations, FX conversion records at NBU rate), depreciation schedule, evidence of advance payments made.
-
-### Refusal catalogue
-
-- **R-UA-1 — Company / legal entity (ТОВ, ПП)** — This skill is for an individual ФОП on the general system only. A company pays corporate income tax (податок на прибуток підприємств, 18%) under different rules. Escalate / route to a corporate skill.
-- **R-UA-2 — Non-resident** — General-system ФОП taxation here assumes a Ukrainian tax resident. Non-residents have different rules and registration constraints. Escalate.
-- **R-UA-3 — Employment / civil-contract income only** — Salary, gig income paid by an employer/agent under PAYE-style withholding, and ordinary citizen income (not entrepreneurial) are taxed differently (withheld at source or via the personal declaration as non-business income). Out of scope for the FOP business-profit computation. Route to a personal-income skill.
-- **R-UA-4 — Independent professional (особа, яка провадить незалежну професійну діяльність)** — Notaries, lawyers, arbitration managers, etc. (Art. 178 ПКУ) are taxed similarly but under a separate article with their own nuances. Flag — do not silently apply Art. 177.  _(Art. 178 ПКУ)_
-- **R-UA-5 — Single-tax (єдиний податок) payer** — Turnover-based, no expense deduction. Wrong skill → route to ua-single-tax.
-- **R-UA-6 — Excisable / restricted activity questions, gambling, financial intermediation** — May require special licensing/excise treatment beyond ПДФО. Flag for a specialist.
-
-## Section 3 — Transaction Pattern Library
-
-Cash basis: income is recognised when funds are received; an expense is deductible only when paid AND documented AND the related income is received (matching under Art. 177.2/177.4). Ukrainian + English keywords below are indicative — confirm against the underlying document.
-
-### Income patterns (taxable revenue)
-
-**Income patterns (taxable revenue)**
-
-| Bank-statement keyword (UA / EN) | Treatment |
-| --- | --- |
-| "оплата за послуги", "за виконані роботи", "payment for services", "invoice 123" | Business income — include in revenue |
-| "аванс за товар/послуги", "advance / prepayment" | Income on receipt (cash basis) — include |
-| "надходження від клієнта", "from client", PayPal/Wise/Payoneer settlement to FOP account | Business income — convert FX at NBU rate on receipt date |
-| "експортна виручка", "export proceeds", USD/EUR inflow | Foreign business income — include at NBU rate on receipt |
-| "повернення переплати від постачальника" (supplier refund of overpayment) | Reduces the related expense, not income — net off |
-
-### Deductible expense patterns (documented business expenses — Art. 177.4)
-
-**Deductible expense patterns (documented business expenses — Art. 177.4)**  _(Art. 177.4)_
-
-| Bank-statement keyword (UA / EN) | Treatment |
-| --- | --- |
-| "закупівля товару/сировини", "за матеріали", "purchase of goods / raw materials" | Cost of goods/materials — deductible **only against income from their sale** (Art. 177.4.1) |
-| "оренда офісу/приміщення", "rent", "оренда обладнання" | Rent of premises/equipment used in business — deductible |
-| "комунальні послуги" (utilities, business premises) | Deductible to the business-use extent |
-| "зарплата найманим", "ЄСВ за працівників", "wages / payroll / USC on employees" | Wages and the employer ЄСВ on employees — deductible (Art. 177.4.2) |
-| "послуги зв'язку / інтернет", "telecom / internet" | Deductible if business-related |
-| "банківські комісії", "РКО", "bank service fees" | Deductible bank charges |
-| "транспортні / логістика / доставка", "freight / delivery" | Deductible if business-related |
-| "придбання ОЗ" > ₴20,000 (fixed asset purchase) | **Capitalise & depreciate** straight-line (Art. 177.4.6–.7) — NOT a full immediate expense |
-| "ремонт обладнання (поточний)", "current repair" | Current repairs deductible immediately; improvements/modernisation are capitalised |
-| "обов'язкове страхування", "mandatory insurance" of business assets | Deductible (mandatory insurance only) |
-| "сплата єдиного внеску ФОП за себе" (own ЄСВ) | Deductible as a business expense per Art. 177.4 sub-rules (own ЄСВ) — confirm current ДПС position |
-
-### Non-deductible patterns (exclude from expenses)
-
-**Non-deductible patterns (exclude from expenses)**
-
-| Pattern | Why |
-| --- | --- |
-| Expense with **no supporting document** (act/invoice/receipt) | Not deductible — documentation is mandatory (Art. 177.4) |
-| Personal / household spending, family, groceries, personal car for private use | Not business-related |
-| Purchase of land, residential real estate (Art. 177.4.5 exclusions) | Excluded from FOP expenses |
-| ПДФО, military levy, and the FOP's own income tax payments | Taxes on profit are not deductible against profit |
-| Fines, penalties, late-payment interest (penya) | Not deductible |
-| Cost of goods still in inventory / not yet sold | Deductible only in the period the matching income is received |
-| Dividends, gifts, charitable transfers (unless within allowed limits) | Not a business expense |
-
-### Internal transfers / exclusions (not income, not expense)
-
-**Internal transfers / exclusions (not income, not expense)**
-
-| Pattern | Treatment |
-| --- | --- |
-| Transfer between the FOP's own accounts ("переказ між власними рахунками") | Internal — exclude both legs |
-| Withdrawal of own funds for personal use ("на власні потреби", "self-transfer to personal card") | Not an expense — owner drawing; exclude |
-| Loan principal received / repaid ("кредит", "позика", "тіло кредиту") | Financing, not income/expense — exclude principal (interest may be deductible if business) |
-| FX conversion between own accounts | Exclude; record only the UAH value of the underlying receipt |
-| VAT collected/paid (if VAT-registered) | Handled in the VAT return, not in the profit computation — see ukraine-vat |
-
-## Section 4 — Worked Examples
-
-Receives USD 50,000 over the year (NBU rates on each receipt average ≈ ₴41.5 → ₴2,075,000 income). Documented expenses: subcontractor акти ₴400,000, software subscriptions ₴60,000, rent ₴120,000, bank fees ₴15,000, own ЄСВ ₴22,828. Net profit ≈ 2,075,000 − 617,828 = **₴1,457,172**. ПДФО 18% = ₴262,291; military levy 5% = ₴72,859. Combined income tax ≈ **₴335,150** (plus ЄСВ separately). Note: turnover ₴2.075m exceeds ₴1m → check mandatory VAT registration (ukraine-vat).
-
-Buys goods for ₴300,000 in December 2025, sells half in 2025 and half in 2026. Only the cost of goods actually sold in 2025 (₴150,000) is deductible against 2025 income; the remaining ₴150,000 is deductible in 2026 when the matching sale revenue is received (Art. 177.4.1 matching rule).
-
-Income ₴200,000; documented expenses ₴260,000 → negative result. No ПДФО and no military levy on business profit (there is no positive base). ЄСВ is still due at the minimum ₴1,902.34/month (₴22,828.08/year) regardless of the loss (see ua-social-contributions). A negative result does not carry forward as a deduction to the next year for FOPs.
-
-Buys a laptop for ₴45,000 (> ₴20,000, useful life ≥ 1 yr). Not a full immediate expense. Capitalise and depreciate straight-line over its useful life (e.g. 2 years → ₴22,500/year) per Art. 177.4.6–.7. A ₴12,000 phone (< ₴20,000) is expensed immediately as a low-value item (МНМА).
-
-A FOP self-calculates PIT advances from actual H1 results: pays by 20 April (Q1), 20 July (Q2), 20 October (Q3). The military levy and the Q4 portion are settled in the annual declaration. Final reconciliation (top-up) is paid within 10 days after the 1 May filing deadline.
-
-Fuel and maintenance for a car used 70% business / 30% personal: only the business portion is deductible, and only with proper documentation and a defensible apportionment basis. Without documentation → exclude entirely (Tier 2 judgement — see Section 6).
-
-## Section 5 — Tier 1 Rules (clear rules with Tax Code references)
-
-- **Tax object = net profit** — Object of taxation is net taxable income = total income received in cash/in-kind minus documented business expenses.  _(Art. 177.2 ПКУ)_
-- **ПДФО rate** — 18% percent (on net profit)  _(Art. 167.1 ПКУ)_
-- **Military levy rate** — 5% percent (on the same net-profit base; raised to 5% from 1 Dec 2024; reverts to 1.5% after martial law ends)  _(Transitional Provisions §16¹.10)_
-- **Cash basis** — Income is recognised when received; expenses when paid and documented.  _(Art. 177.2, 177.4)_
-- **Documentation mandatory** — Only documented expenses directly related to the business are deductible; the list of allowable expenses is in Art. 177.4 ПКУ.  _(Art. 177.4 ПКУ)_
-- **Cost-of-goods matching** — Cost of goods/materials is deductible in the period the income from selling them is received.  _(Art. 177.4.1)_
-- **Fixed assets** — Items > ₴20,000 with life ≥ 1 year are capitalised and depreciated straight-line over their useful life. Current repairs are expensed; modernisation/improvement is capitalised. Land and residential property are excluded.  _(Art. 177.4.6–.7; Art. 177.4.5)_
-- **Quarterly PIT advances** — Self-calculated from actual income/expense records; due by 20 April, 20 July, 20 October. No separate Q4 advance — Q4 is settled in the declaration.  _(Art. 177.5.1)_
-- **Annual declaration** — "про майновий стан і доходи" filed by 1 May of the following year.  _(Art. 177.5, 49.18.5)_
-- **Final payment** — Within 10 calendar days after the filing deadline.  _(Art. 177.5.1, 57.1)_
-- **ЄСВ separate** — Unified social contribution (22% of net profit, min ₴1,902.34/month) is computed and paid separately — see ua-social-contributions.  _(Law No. 2464-VII)_
-- **VAT registration threshold** — ₴1,000,000 UAH (12-month taxable turnover; mandatory registration once exceeded; voluntary registration possible)  _(Art. 181 ПКУ)_
-
-## Section 6 — Tier 2 Catalogue (reviewer judgement)
-
-Mixed-use assets (car, phone, home office): apportionment between business and personal use requires a defensible basis and documentation. Conservative default = exclude the personal portion; if no basis exists, exclude entirely. Own ЄСВ deductibility: the FOP's own unified social contribution treatment in expenses has shifted with legislative amendments — confirm the current-year ДПС position before deducting. Subcontractor payments to other FOPs/individuals: deductible if documented (акт виконаних робіт), but verify withholding/ЄСВ obligations if the payee is an ordinary individual rather than a registered FOP. Inventory at year-end: the matching rule means unsold-goods cost is carried, not expensed. Requires a stock count and judgement. Currency-conversion timing and rate: which NBU rate (receipt date vs sale date) and treatment of FX gains/losses on business accounts — reviewer to confirm. Depreciation useful lives: the FOP chooses useful life within reason; document and apply consistently. Transition between regimes (single tax ↔ general system mid-year): pro-rating, double-counting risks, and treatment of assets bought under the prior regime — escalate. Whether an item is a "current repair" or a capitalisable "improvement": judgement call affecting timing of the deduction.
-
-## Section 7 — Excel Working Paper Template (ASCII)
-
-UKRAINE FOP — GENERAL SYSTEM — PROFIT & INCOME-TAX WORKING PAPER (TY 2026)
-FOP name: ____________________   ІПН/РНОКПП: ____________   КВЕД: ________
-Regime: General system (Art. 177 ПКУ)   VAT-registered: Y / N
-
-A. INCOME (cash basis)                                            UAH
-  Domestic income received .....................................  __________
-  Foreign income received (NBU rate on receipt) ................  __________
-  Less: customer refunds / returns ............................. (__________)
-  ---------------------------------------------------------------
-  (1) TOTAL INCOME .............................................  __________
-
-B. ALLOWABLE EXPENSES (documented, Art. 177.4)
-  Cost of goods/materials SOLD in period ....................... (__________)
-  Wages + employer ЄСВ on employees ............................ (__________)
-  Rent (premises / equipment) .................................. (__________)
-  Utilities / telecom / internet (business %) ................. (__________)
-  Bank charges ................................................. (__________)
-  Transport / logistics ....................................... (__________)
-  Depreciation (straight-line, ОЗ > ₴20,000) .................. (__________)
-  Low-value items (МНМА ≤ ₴20,000) ............................ (__________)
-  Mandatory insurance of business assets ...................... (__________)
-  Other documented business expenses .......................... (__________)
-  ---------------------------------------------------------------
-  (2) TOTAL ALLOWABLE EXPENSES ................................. (__________)
-
-C. NET TAXABLE PROFIT  = (1) - (2) ............................  __________
-   (if negative: PIT = 0, military levy = 0; ЄСВ still due)
-
-D. INCOME TAX
-  ПДФО         18% × C ........................................  __________
-  Military levy 5% × C ........................................  __________
-  ---------------------------------------------------------------
-  (3) TOTAL INCOME TAX (23% × C) ..............................  __________
-
-E. ADVANCES PAID (20 Apr / 20 Jul / 20 Oct) .................. (__________)
-  (4) BALANCE DUE WITH DECLARATION = (3) - (4) ...............  __________
-      Pay within 10 days after 1 May filing deadline.
-
-F. ЄСВ (separate — see ua-social-contributions)
-  22% × C, min ₴1,902.34/mo, max base ₴172,940/mo .............  __________
-
-Reviewer (Ukrainian accountant/auditor): ____________  Date: ________
-
-## Section 8 — Bank Statement Reading Guide (Ukrainian banks)
-
-Most FOPs bank with PrivatStudio/Privat24 для бізнесу (PrivatBank), Monobank (sole-trader / "ФОП" account), Oschadbank, or Raiffeisen Bank. Export the business-account statement (виписка) for the full year; for FX accounts also export the conversion records.
-
-**Bank statement terminology table**
-
-| Ukrainian term | English | Note |
-| --- | --- | --- |
-| Виписка по рахунку | Account statement | The primary source document |
-| Надходження / Кредит | Credit / money in | Candidate income |
-| Списання / Дебет | Debit / money out | Candidate expense |
-| Призначення платежу | Payment purpose / narrative | Read this to classify |
-| РКО / комісія банку | Account servicing / bank fee | Deductible |
-| Поточний рахунок ФОП | FOP current account | Business account |
-| Валютний рахунок | FX account | Convert at NBU rate on receipt |
-| Переказ на власну картку | Transfer to own card | Owner drawing — exclude |
-| Еквайринг / торговий POS | Acquiring / card-terminal settlement | Sales income (gross of acquiring fee) |
-| Поповнення рахунку готівкою | Cash deposit | Verify source before treating as income |
-
-Monobank ФОП: statement downloadable as CSV/PDF in the app; "Покупки/Перекази" tags are not tax categories — reclassify by narrative. PrivatBank (Privat24 Бізнес): "виписка" with "Призначення платежу" column; acquiring settlements arrive net of fee — gross up the income and book the acquiring fee as an expense. Oschadbank / Raiffeisen: check whether VAT is shown separately on settlements if the FOP is VAT-registered. Always reconcile the bank total to the Книга обліку доходів і витрат (income & expense ledger); cash receipts not in the bank must still be declared.
-
-## Section 9 — Onboarding Fallback (questions to ask)
-
-1. Are you registered as a ФОП on the general system, or on the single tax (єдиний податок)? (If single tax → ua-single-tax.)
-2. What are your КВЕД activity codes?
-3. Are you VAT-registered (платник ПДВ)? Did 12-month turnover exceed ₴1,000,000?
-4. Do you have supporting documents (акти, invoices, receipts) for the expenses you want to deduct?
-5. Do you have employees? (Affects wages/ЄСВ deductions and reporting.)
-6. Did you buy any fixed assets (> ₴20,000) this year? Do you keep a depreciation schedule?
-7. Did you receive foreign-currency income? Do you have NBU conversion records?
-8. Did you make the quarterly PIT advances (20 Apr / 20 Jul / 20 Oct)? How much?
-9. Are you paying your own ЄСВ? (Confirm in ua-social-contributions.)
-10. Any inventory unsold at year-end? (Affects cost-of-goods matching.)
-
-## Section 10 — Reference Material
-
-### Legislation
-
-- **Legislation references** — Tax Code of Ukraine (Податковий кодекс України) — Art. 177 (taxation of FOP income on the general system: object, expenses, advances, declaration), Art. 178 (independent professional activity — out of scope), Section IV / Art. 167.1 (18% PIT rate), Art. 181 (VAT registration threshold), Art. 49.18.5 & 57.1 (filing/payment deadlines), Transitional Provisions §16¹.10 (military levy, 5% under martial law). Law No. 2464-VI "Про збір та облік єдиного внеску…" — ЄСВ (handled in ua-social-contributions). Law No. 4015-IX / No. 4113-IX (2024) — military-levy increase to 5% from 1 Dec 2024 and FOP application rules. State Tax Service: tax.gov.ua / dps.gov.ua; portal cabinet.tax.gov.ua. PwC Worldwide Tax Summaries — Ukraine (Individual).  _(Art. 177, 178, 167.1, 181, 49.18.5, 57.1, Transitional Provisions §16¹.10; Law No. 2464-VI; Law No. 4015-IX / 4113-IX)_
-
-### Short test suite
-
-FOP on general system, income ₴1m, documented expenses ₴300k → net profit ₴700k; ПДФО ₴126k + military levy ₴35k = ₴161k (+ ЄСВ separate). ✔
-Expense with no document → not deductible; exclude. ✔
-Laptop ₴45,000 → capitalise & depreciate, not full expense. ✔
-Loss year → no PIT/military levy on profit; ЄСВ still ₴1,902.34/month. ✔
-Single-tax payer asks to deduct expenses → wrong skill; route to ua-single-tax. ✔
-Turnover ₴1.5m → flag mandatory VAT registration (> ₴1m). ✔
-Transfer to own personal card → owner drawing; exclude, not an expense. ✔
-
-## PROHIBITIONS
-
-NEVER deduct an expense without a supporting document — documentation is mandatory under Art. 177.4.
-NEVER deduct the cost of goods still unsold at year-end — apply the cost-of-goods matching rule.
-NEVER expense a fixed asset (> ₴20,000, life ≥ 1 yr) in full — capitalise and depreciate straight-line.
-NEVER deduct personal/household spending, land, residential property, fines, penalties, or the FOP's own income tax.
-NEVER use the 1.5% military-levy rate for 2026 — it is 5% under martial law (verify current status before filing).
-NEVER omit ЄСВ — it is due (min ₴1,902.34/month) even in a loss year; compute it via ua-social-contributions.
-NEVER apply single-tax (turnover-based) logic here — the general system taxes net profit; route turnover cases to ua-single-tax.
-NEVER treat owner drawings or transfers between the FOP's own accounts as income or expense.
-NEVER present a computed figure as final — every output must be reviewed and signed off by a qualified Ukrainian accountant or auditor before filing.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Ukraine is under martial law and rates, wage-linked amounts (minimum/living wage, ЄСВ), the military-levy rate, and filing rules change frequently — confirm every current figure with the Державна податкова служба (tax.gov.ua / cabinet.tax.gov.ua) before relying on it. This content is research-verified but must be reviewed and signed off by a qualified Ukrainian accountant or auditor before any declaration is filed or any tax is paid.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as Ukrainian tax law changes.
+# Ukraine: personal income tax and military levy (2026)
+
+Ukraine taxes individuals under section IV of the Tax Code of Ukraine (Податковий кодекс України, Law No. 2755-VI of 2 December 2010, "TCU"). The main rate is 18% (art. 167.1). On top of it, every individual taxed under section IV pays a 5% military levy (військовий збір) on the same income (TCU section XX, subsection 10, point 16-1). Most tax is withheld at source by a tax agent: an employer, a bank, a company paying dividends, a business tenant. The individual files an annual declaration only for income nobody withheld on, for foreign income, or to claim a refund. All article numbers below are articles of the Tax Code unless another act is named. Amounts tied to the minimum wage or the subsistence minimum use the 2026 State Budget Law: minimum wage UAH 8,647 a month, subsistence minimum for able-bodied persons UAH 3,328 a month (Law No. 4695-IX, arts. 8 and 7).
+
+## Who this applies to
+
+- **Residents: worldwide income.** A resident is taxed on total monthly and annual taxable income, on Ukrainian-source income taxed at payment, and on foreign income (art. 163.1). Who is resident (home, centre of vital interests, citizenship, the 183-day test) is in `ua-cross-border` (art. 14.1.213).
+- **Non-residents: Ukrainian-source income only** (art. 163.2), taxed at the rates for residents unless this section says otherwise (art. 170.10.1).
+- **Employees and people paid under civil-law contracts.** Salary under an employment contract and fees under a civil-law contract are taxable income (art. 164.2.1, 164.2.2). The payer withholds the tax (art. 168.1.1). The employer's side (withholding, ЄСВ, reports) is in `ua-payroll`.
+- **Investors, landlords, sellers of property, heirs and gift recipients.** Covered below: interest, dividends, investment profit, rent, sales of real estate and cars, gifts and inheritance (art. 164.2, 170, 172 to 174).
+- **Sole proprietors (ФОП) on the general system.** Taxed on net profit at 18% (art. 177.1, 177.2), with the 5% levy. This skill carries the full computation.
+- **Independent professionals** (notaries, advocates, and others registered as self-employed under art. 178.1). Net income, that is income less documented expenses needed for the activity, at 18% (art. 178.2, 178.3).
+- **Out of this skill.** Sole proprietors on the single tax pay the single tax instead of PIT on that income (art. 165.1.36): see `ua-single-tax`. Virtual assets: `ua-crypto-tax`. The unified social contribution (ЄСВ): `ua-social-contributions`. Controlled foreign companies, treaties and leaving Ukraine in depth: `ua-cross-border`. Diia City gig specialists and the agricultural minimum tax liability (art. 170.14) are named here only.
+- **Martial law.** The levy rates and several reliefs below are temporary rules tied to martial law, in force since 24 February 2022.
+
+## Rates, bands and thresholds
+
+There are no bands. Each kind of income has one flat rate.
+
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| PIT main rate: salary, civil-law fees, other income not listed below | 18% | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 (art. 167.1) |
+| Military levy for individuals taxed under section IV | 5% of the income in art. 163 | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 (section XX, subs. 10, point 16-1, sub-point 1.3(1)) |
+| Military levy after martial law | 1.5%, from 1 January of the year after the third calendar year after martial law ends | future | same, sub-point 1.3 |
+| Military levy on pay of service members | 1.5% (sub-point 1.3(4)); their money allowance is exempt while martial law lasts | 2026 | same, sub-points 1.3(4) and 1.7 |
+| Passive income (interest, investment profit, royalties) | 18% | 2026 | art. 167.5.1 |
+| Dividends from a Ukrainian company that pays corporate income tax | 5% | 2026 | art. 167.5.2 |
+| Dividends from non-residents, collective investment institutions and companies that do not pay corporate income tax | 9% (half of 18%) | 2026 | art. 167.5.4 |
+| Sale of one home or qualifying land plot a year, owned more than 3 years | 0% (not taxed) | 2026 | art. 172.1 |
+| Sale of a second property in the year, or a property not in art. 172.1 | 5% | 2026 | art. 172.2, 167.2 |
+| Sale of a third and further property in the year | 18% | 2026 | art. 172.2, 167.1 |
+| Sale of movable property | 5%; one car, motorcycle or moped a year is not taxed | 2026 | art. 173.1, 173.2 |
+| Inheritance or gift from a family member of the 1st or 2nd degree | 0% | 2026 | art. 174.2.1, 174.6 |
+| Inheritance or gift from anyone else | 5% | 2026 | art. 174.2.2, 174.6 |
+| Inheritance or gift from a non-resident, or received by a non-resident | 18% | 2026 | art. 174.2.3 |
+| Tax social benefit (ПСП), basic | UAH 1,664 a month (50% of UAH 3,328) | 2026 | art. 169.1.1; Law 4695-IX art. 7 |
+| ПСП for a parent of two or more children under 18 | 100% of the basic amount (UAH 1,664) per child | 2026 | art. 169.1.2 |
+| ПСП, 150% group (single parent per child, parent of a disabled child, students, Chernobyl categories 1 and 2, others listed) | UAH 2,496 | 2026 | art. 169.1.3 |
+| ПСП, 200% group (categories listed in art. 169.1.4) | UAH 3,328 | 2026 | art. 169.1.4 |
+| ПСП income limit: monthly salary not above | UAH 4,660 (3,328 x 1.4 = 4,659.20, rounded to the nearest UAH 10); times the number of children for the child benefits | 2026 | art. 169.4.1 |
+| Investment profit: sales proceeds a year not above | UAH 4,660 are not taxed | 2026 | art. 170.2.8 "а" |
+| Tax discount: donations to non-profit organisations | up to 4% of total taxable income of the year | 2026 | art. 166.3.2 |
+| Tax discount: rent paid by an internally displaced person | up to 30 minimum wages a year, UAH 259,410 | 2026 | art. 166.3.9 |
+| Tax discount: own life, pension or medical insurance | up to UAH 4,660 for each month the contract ran; 50% of that per insured family member | 2026 | art. 166.3.5 |
+| Fixed asset of a sole proprietor | cost above UAH 20,000 and useful life over 1 year | 2026 | art. 14.1.138, 177.4.6 |
+| Minimum useful life for depreciation | buildings 10 years; machines and equipment 5 years; intangibles at least 2 years | 2026 | art. 177.4.9 |
+| Minimum wage, 1 January 2026 | UAH 8,647 a month | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 8) |
+| Subsistence minimum for able-bodied persons, 1 January 2026 | UAH 3,328 a month | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 7) |
+
+## The taxable base
+
+**What is taxed.** Taxable income includes salary, civil-law fees, royalties, the taxable part of property sales, rent, passive income, winnings and prizes, investment profit, inheritance and gifts, fringe benefits (free housing, goods, services, a loan forgiven) and any other income not exempted by art. 165 (art. 164.2). Income in kind counts (art. 164.3). Income in foreign currency is converted at the National Bank of Ukraine rate in force when it is accrued or received (art. 164.4). Income in kind is grossed up: the base is the ordinary price times K = 100 / (100 - rate), so at 18% the factor is 100 / 82 (art. 164.5).
+
+**Salary.** The base is accrued salary less the tax social benefit where it applies (art. 164.6). The employer withholds 18% PIT and 5% levy from each payment and pays them to the budget with the salary (art. 168.1.1, 168.1.2). Most employees owe nothing more and file no declaration (art. 179.2).
+
+**Tax social benefit (ПСП).** It reduces the monthly salary base, at one employer only, chosen by the employee's written application (art. 169.2.1, 169.2.2). It applies only if the month's salary is not above UAH 4,660 in 2026 (art. 169.4.1). It does not apply to income other than salary, or to business income (art. 169.2.3). Because the 2026 minimum wage is UAH 8,647, a full-time employee on at least the minimum wage never gets it; it matters for part-time salaries.
+
+**Military levy base.** The levy is charged on the income in art. 163, not on the PIT base after the ПСП or the tax discount (sub-point 1.2(1)). Income that is not included in taxable income, or is taxed at 0%, is free of the levy, except single-tax income and two items of art. 170.13-1 (sub-point 1.7). So a tax-free first home sale, a 0% family inheritance or a tax-free car sale bears no levy; a 5% second property sale bears 5% PIT plus 5% levy.
+
+**Interest.** The bank or other payer withholds 18% when it accrues interest, and that is final (art. 170.4.1). Interest on government bonds, and on current accounts that receive only salary, pensions and social payments, is not taxed (art. 165.1.2, 165.1.41).
+
+**Dividends.** The paying company withholds 5% or 9% (art. 170.5.1, 167.5). Foreign dividends are declared and taxed at 9% (art. 170.11.1 "а", 167.5.4).
+
+**Investment profit** (shares, bonds, derivatives, corporate rights). Profit on each asset is the sale price less documented acquisition cost (art. 170.2.2). Gains and losses of the year are netted. A net loss carries forward without time limit against later investment profit (art. 170.2.6). Losses on wash sales within 30 days, on repurchase deals and on sales to related persons are disallowed (art. 170.2.4, 170.2.5). Proceeds of UAH 4,660 or less in the year are not taxed (art. 170.2.8). A licensed broker or bank can act as tax agent, but the individual still declares all trades (art. 170.2.2, 170.2.9). The result is declared once a year.
+
+**Rent.** A business tenant withholds 18% from rent for real estate, on the contract rent but not less than the minimum rent set by the Cabinet of Ministers' method (art. 170.1.2, 170.1.4). If the tenant is a private individual, the landlord pays the tax himself within 40 days after each quarter and declares the year (art. 170.1.5 "а"). Real estate of a non-resident may be let only through a Ukrainian representative (art. 170.1.3).
+
+**Sale of real estate.** One sale a year of a house, flat or part of one (with its land), or of land within the free-transfer norms, is not taxed if owned more than three years; the three-year test does not apply to inherited property (art. 172.1). The second sale in the year, or a sale of property not in art. 172.1, is taxed at 5%. The third and later sales are taxed at 18% (art. 172.2). Income is the contract price, but not less than the assessed value from the state valuation module (art. 172.3). The seller pays the tax before the notary certifies the sale (art. 172.5 "а").
+
+**Sale of movable property.** 5% (art. 173.1). One car, motorcycle or moped a year is not taxed (art. 173.2).
+
+**Gifts and inheritance.** 0% within the family of the 1st and 2nd degree, and for certain heirs such as a person with group I disability (art. 174.2.1). 5% for other heirs (art. 174.2.2). 18% where either side is a non-resident (art. 174.2.3). Gifts between individuals follow the same rules (art. 174.6). A gift from a company or a sole proprietor is a fringe benefit taxed at the general rules (art. 174.6).
+
+**Sole proprietor on the general system (art. 177).**
+- The object is net taxable income: proceeds in money and in kind less documented expenses connected with the business (art. 177.2). VAT of a VAT-registered proprietor is out of both income and expenses (art. 177.3).
+- Deductible: materials and goods directly attributable to the product or service (art. 177.4.1); wages and civil-law fees paid to workers (art. 177.4.2); business taxes and the proprietor's own ЄСВ, but not PIT on business income or VAT (art. 177.4.3); travel, communications, advertising, bank charges, rent, repairs and running costs of business property, transport of goods, and services directly tied to the business (art. 177.4.4).
+- Not deductible: expenses not connected with the business, undocumented expenses, and the cost of buying fixed assets and intangibles, which are depreciated instead (art. 177.4.5).
+- Depreciation is optional, with separate records, straight-line, over a life the proprietor sets but not shorter than the minimum: 10 years for buildings, 5 for machines and equipment (a laptop is in this group), at least 2 for intangibles (art. 177.4.6, 177.4.7, 177.4.9). Current repairs are expensed; improvements are depreciated. Land, residential property and passenger cars are never depreciated (art. 177.4.6). A fixed asset is one costing over UAH 20,000 with a life over a year (art. 14.1.138); cheaper items are expensed when bought.
+- A proprietor must keep a record of income and expenses, on paper or in the Electronic Cabinet (art. 177.10).
+- Income from outside the registered business is taxed under the general rules (art. 177.6). A business paying a proprietor does not withhold if given proof of registration, unless the contract is in fact employment (art. 177.8).
+- A negative result means no PIT and no levy on the business for the year. Art. 177 has no loss carry-forward.
+- Computation order: (1) total proceeds; (2) less documented expenses and depreciation; (3) net income x 18% = PIT; (4) net income x 5% = levy; (5) less PIT advances paid; (6) balance with the declaration.
+
+**Independent professionals.** Net income is income less documented expenses needed for the activity (art. 178.3). Business payers do not withhold if shown the registration certificate (art. 178.5). They keep income and expense records (art. 178.6).
+
+**The tax discount (податкова знижка).** A resident with a tax number can reduce taxable salary (and dividends from 166.3.10 share purchases) by expenses actually paid during the year (art. 166.3, 166.4.1):
+- part of interest on a mortgage for a home (art. 166.3.1, 175);
+- donations to non-profit organisations on the official register, up to 4% of total taxable income (art. 166.3.2);
+- tuition at Ukrainian pre-school, school, vocational and higher education institutions for the taxpayer or a 1st-degree relative (art. 166.3.3);
+- treatment at health institutions for the taxpayer or a 1st-degree relative, except cosmetic and other listed treatments (art. 166.3.4);
+- life, non-state pension and medical insurance with resident insurers, within the monthly limits above (art. 166.3.5);
+- assisted reproduction (up to one third of the year's salary) and state fees for adoption (art. 166.3.6);
+- conversion of a car to biofuel or gas (art. 166.3.7);
+- affordable housing (art. 166.3.8);
+- rent paid by an internally displaced person who has no habitable home outside occupied territory and gets no housing payments, up to UAH 259,410 (art. 166.3.9).
+The discount cannot exceed the year's salary (art. 166.4.2). Documents must back each expense (art. 166.2). An unused right lapses at the end of the following year (art. 166.4.3). The discount refunds PIT only; the levy is charged on income before the discount (sub-point 1.2(1)).
+
+## Deadlines and filing
+
+| What | Deadline (2026 income) | Source |
+|---|---|---|
+| Tax withheld by an employer or other agent | with the payment of the income | art. 168.1.2 |
+| Income in kind or cash from the agent's till | within 3 operational days after the payment | art. 168.1.4 |
+| Income accrued but not paid | within the deadline for a monthly period | art. 168.1.5 |
+| Rent from a private tenant: landlord pays | within 40 days after each quarter | art. 170.1.5 "а" |
+| Tax on a property sale | before the notary certifies the contract | art. 172.5 "а" |
+| Sole proprietor, PIT advances for Q1, Q2, Q3 | by 20 April, 20 July, 20 October 2026; no advance for Q4; no payment if the quarter's result is negative | art. 177.5.1 |
+| Annual declaration (декларація про майновий стан і доходи) | by 1 May of the next year; 1 May 2027 is a Saturday, so Monday 3 May 2027 | art. 49.18.4, 49.20 |
+| Tax shown on an individual's declaration | by 1 August 2027 | art. 179.7 |
+| Declaration claiming only the tax discount | by 31 December 2027 | art. 166.1.2 |
+| Refund after a discount claim | credited within 60 days after the declaration arrives | art. 179.8 |
+| Resident leaving for permanent residence abroad | declaration no later than 60 days before departure | art. 179.3 |
+
+**Who must file.** Anyone with income from a person who is not a tax agent (a non-resident, or a private individual who is not a registered entrepreneur), or with foreign income, must declare it and pay the tax (art. 168.2.1, 168.2.2). Sole proprietors on the general system and independent professionals file every year, showing all their other income too (art. 177.11, 178.4). No declaration is needed if all income came from tax agents, was tax-free or taxed at 0%, or was a property sale or inheritance on which tax was paid at the notary (art. 179.2). Minors fully supported by others, and people in custody, wanted, in captivity or on conscript service at year end, do not file (art. 179.4).
+
+**How.** Through the Electronic Cabinet of the State Tax Service, on the single declaration form with annexes for each kind of income (art. 179.9). A sole proprietor's declaration also shows the quarterly advances (art. 177.5). The final settlement is the year's tax less tax already paid, proved by payment documents (art. 177.5.3).
+
+**Foreign tax documents.** If the taxpayer lacks documents proving foreign income or foreign tax paid, he applies to move the declaration deadline to 31 December (art. 170.11.2).
+
+## Penalties and interest
+
+| Breach | Penalty | Source |
+|---|---|---|
+| Declaration not filed or filed late | UAH 340; UAH 1,020 if fined for the same breach in the past year | art. 120.1 |
+| Agreed tax paid late, up to 30 days | 5% of the debt paid | art. 124.1 |
+| Agreed tax paid late, more than 30 days | 10% of the debt paid | art. 124.1 |
+| Tax assessed by the tax authority (understatement) | 10% of the assessed amount; 25% if intentional | art. 123.1, 123.2 |
+| Tax agent fails to withhold or pay the tax | 10%; 25% if intentional; 50% if repeated within 1,095 days; 75% the third time; the agent also owes the tax | art. 125-1 |
+| Penalty interest (пеня) on late payment | 120% a year of the National Bank of Ukraine discount rate, for each day late | art. 129.4 |
+
+**Martial law.** A taxpayer who cannot file or pay on time because of martial law is released from liability, but must meet the obligation within six months after martial law ends (section XX, subsection 10, point 69.1). A taxpayer who can file and pay on time does not get this relief.
+
+## Cross-border points
+
+- **Non-residents.** Ukrainian-source income is taxed at the resident rates (art. 170.10.1). A Ukrainian company or self-employed person paying a non-resident individual is the tax agent and withholds (art. 170.10.3). The tax discount is for residents only (art. 166.4.1).
+- **Foreign income of residents.** Declared and taxed at 18%, or 9% for foreign dividends (art. 170.11.1). Foreign tax paid is credited only under a treaty ratified by the Verkhovna Rada, and only up to the Ukrainian tax on that income (art. 170.11.2, 170.11.4). Capital taxes, property taxes and indirect taxes are not credited (art. 170.11.3). Detail and residence certificates: `ua-cross-border`.
+- **Controlled foreign companies.** A resident who controls a foreign company declares its profit (art. 170.13). Rules: `ua-cross-border`.
+- **Inheritance and gifts across the border.** 18% where the giver or the heir is a non-resident (art. 174.2.3).
+- **Leaving Ukraine.** File the declaration at least 60 days before departing for permanent residence abroad (art. 179.3).
+- **Foreign entrepreneurs.** Foreigners registered as sole proprietors in Ukraine are residents for art. 177 and file the annual declaration (art. 177.12).
+
+## Worked examples
+
+**Example 1. Employee claims the tax discount.** An employee earns UAH 30,000 a month at one employer, UAH 360,000 for 2026. The employer withholds PIT of UAH 64,800 and levy of UAH 18,000. In 2026 she paid UAH 40,000 university tuition for her son, UAH 10,000 for treatment at a clinic, and gave UAH 20,000 to a registered charity. Donations count only up to 4% of taxable income, UAH 14,400 (art. 166.3.2). Her discount is 40,000 + 10,000 + 14,400 = UAH 64,400, below her salary (art. 166.4.2). She files a declaration with the payment documents by 31 December 2027 and gets back 18% of the discount, UAH 11,592, within 60 days (art. 166.1.2, 179.8). The levy is not refunded.
+
+```oa-check
+name: Employee tax discount refund, 2026
+inputs:
+  monthly_salary: 30000
+  tuition: 40000
+  medical: 10000
+  donation: 20000
+steps:
+  - annual_salary: monthly_salary * 12
+  - pit_withheld: annual_salary * 0.18
+  - levy_withheld: annual_salary * 0.05
+  - donation_cap: annual_salary * 0.04
+  - donation_allowed: min(donation, donation_cap)
+  - discount: min(tuition + medical + donation_allowed, annual_salary)
+  - refund: discount * 0.18
+expected:
+  annual_salary: 360000
+  pit_withheld: 64800
+  levy_withheld: 18000
+  donation_cap: 14400
+  donation_allowed: 14400
+  discount: 64400
+  refund: 11592
+```
+
+**Example 2. General-system sole proprietor with a laptop.** A sole proprietor on the general system receives UAH 2,075,000 in 2026. Documented expenses: subcontractors UAH 400,000, software UAH 60,000, rent UAH 120,000, bank charges UAH 15,000, and her own minimum ЄСВ for 12 months (22% of UAH 8,647 a month). In December 2025 she bought and started using a laptop for UAH 45,000. It costs more than UAH 20,000, so it is a fixed asset: she cannot expense it, and the minimum life for equipment is 5 years, so 2026 depreciation is UAH 9,000 (art. 177.4.5, 177.4.9). Net income is UAH 1,448,171.92. PIT at 18% is UAH 260,670.95 and the levy at 5% is UAH 72,408.60. She paid advances of UAH 190,000 by 20 April, 20 July and 20 October, so she owes UAH 70,670.95 PIT and the whole levy, UAH 143,079.55, with the declaration due 3 May 2027. Her proceeds also pass UAH 1,000,000, so she checks VAT registration in `ukraine-vat`.
+
+```oa-check
+name: General-system FOP net profit with laptop depreciation, 2026
+inputs:
+  proceeds: 2075000
+  subcontractors: 400000
+  software: 60000
+  rent: 120000
+  bank_charges: 15000
+  minimum_wage: 8647
+  laptop_cost: 45000
+  minimum_life_years: 5
+  advances_paid: 190000
+steps:
+  - own_esv: minimum_wage * 0.22 * 12
+  - depreciation: laptop_cost / minimum_life_years
+  - expenses: subcontractors + software + rent + bank_charges + own_esv + depreciation
+  - net_income: proceeds - expenses
+  - pit: round(net_income * 0.18, 2)
+  - levy: round(net_income * 0.05, 2)
+  - pit_balance: pit - advances_paid
+  - due_with_declaration: pit_balance + levy
+expected:
+  own_esv: 22828.08
+  depreciation: 9000
+  expenses: 626828.08
+  net_income: 1448171.92
+  pit: 260670.95
+  levy: 72408.60
+  pit_balance: 70670.95
+  due_with_declaration: 143079.55
+```
+
+## Ask the client first
+
+1. Were you a Ukrainian tax resident in 2026, and did you leave or plan to leave Ukraine for good?
+2. What income did you have, and from whom: employer, civil-law clients, a bank, a broker, tenants, buyers of property, a foreign payer? Was tax withheld on each?
+3. Are you registered as a sole proprietor or independent professional? On the general system or the single tax (`ua-single-tax`)?
+4. For a proprietor: your record of income and expenses, documents for each expense, any purchase over UAH 20,000, and the advances paid.
+5. Did you sell real estate, a car or securities, or receive a gift or inheritance? From whom, and how long had you owned the property?
+6. Did you pay tuition, treatment, insurance, mortgage interest, donations or rent as a displaced person in 2026, and do you have the payment documents?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Tax Code of Ukraine (Податковий кодекс України), Law No. 2755-VI, consolidated text with amendments up to Law No. 4967-IX of 3 Sep 2026: arts. 14.1.138, 14.1.213, 49.18.4, 49.20, 57.1, 69.1 (subs. 10), 120.1, 123, 124.1, 125-1, 129.4, 163 to 179; section XX, subsection 10, point 16-1 | https://zakon.rada.gov.ua/laws/show/2755-17 | 2026-10-30 (zakon.rada.gov.ua timed out from our network; official text read via web.archive.org capture of 12 Oct 2026, https://web.archive.org/web/20261012050950/https://zakon.rada.gov.ua/laws/show/2755-17/print) |
+| Law "On the State Budget of Ukraine for 2026", No. 4695-IX of 3 Dec 2025, arts. 7 and 8 | https://zakon.rada.gov.ua/laws/show/4695-20 | 2026-10-30 (via web.archive.org capture of 4 Jan 2026) |
+| State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
+
+Not yet confirmed: whether a sole proprietor's balance on the annual declaration is due within 10 days after the filing deadline (art. 57.1) or by 1 August (art. 179.7), so pay by the earlier date; whether the 1 August 2027 payment date, a Sunday, moves to the next working day; the taxation of state pensions (art. 167.4 refers to art. 164.2.19, which has been deleted); the full list of 150% and 200% social benefit categories; the National Bank discount rate for penalty interest in 2026; the Cabinet of Ministers minimum rent method; the cost-of-goods matching rule and cash-basis timing for proprietors (in the Ministry of Finance record-keeping order, not read); Diia City gig-specialist rates; any amendment after the 12 October 2026 archive capture.
 
 <!-- openaccountants-cta-block -->
 
