@@ -5,7 +5,7 @@ jurisdiction: UA
 category: international
 tax_year: 2026
 last_updated: 2026-10-30
-version: 0.2
+version: 0.3
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -14,7 +14,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Ukraine Tax Overview
 
-## Ukraine Tax Overview v0.2
+## Ukraine Tax Overview v0.3
 
 This is a map, not a computation skill. Each line gives the 2026 headline figure and its source, and names the skill in this pack that carries the full rules. Where a domain skill and this overview ever differ, the domain skill wins.
 
@@ -77,7 +77,7 @@ Ukraine taxes residents on worldwide income and non-residents on Ukrainian-sourc
 
 | Question | Skill |
 |---|---|
-| A sole proprietor on the general system: PIT and military levy on net profit, the annual declaration | `ua-income-tax` |
+| Any individual: PIT and military levy on salary, investment income, rent, property sales, gifts and inheritance, a general-system sole proprietor's net profit; the annual declaration and the tax discount | `ua-income-tax` |
 | Company profit tax, rates for banks and financial institutions, withholding on payments abroad | `ua-corporate-income-tax` |
 | VAT registration, rates, tax invoices, the monthly return | `ukraine-vat` |
 | The single tax: groups, limits, rates | `ua-single-tax` |
