@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-28",
+  "reviewed_country_head": "3c56de240843533a4758b04579fda491f709418f",
+  "platform_source_main": "f5583c00ca7db2b9e3435fe8b842b55cbc956c01",
+  "purpose": "Restore platform-owned bytes to current main before merge; no tax method, source, figure or executable example changed.",
+  "correction": "Three inherited rewrites added verified_by: pending and replaced the platform CTA. Remove only that added legacy key and restore each original CTA from current main. Authorship, trust_label, licence and all other protected fields remain unchanged.",
+  "independent_review_continuity": "All body bytes before the CTA, except that one frontmatter line, are identical to the exact accepted independent whole-pack review files. All eight other country files are unchanged. Earlier review hashes remain the historical accepted files. No new accountant attestation.",
+  "files": [
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "before_sha256": "7c1921f96c8c6f631a27abdd709d278aaffe9419ecd0a0b51c5c1446c1937c35",
+      "after_sha256": "758f2a939096dc29797b3fb50a6952a6ccbce774864aa19809375c8f43d1124e",
+      "body_before_CTA_identical_except_removing_unpermitted_verified_by_pending": true,
+      "CTA_exact_to_current_main": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "before_sha256": "809b3cf140a1f72ae7af449beb34c0a5abe95a2552fb281c97f53473585f3bf1",
+      "after_sha256": "6fbe7fadc75583fa6112d15c585018628b03e67ba06c7bb4e7fed2aae45f7930",
+      "body_before_CTA_identical_except_removing_unpermitted_verified_by_pending": true,
+      "CTA_exact_to_current_main": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "before_sha256": "9f660785d0ff25d10d5f7f5028fbf2d75f9d63c93331b68af1804801bd067c57",
+      "after_sha256": "2ddecf9d434d71e06afdfdf1d5f729c1f8323e4d808a145ecc3aaa200daea72f",
+      "body_before_CTA_identical_except_removing_unpermitted_verified_by_pending": true,
+      "CTA_exact_to_current_main": true
+    }
+  ],
+  "checks": "6 controls in the three affected files pass; git diff --check passes. GitHub CI must pass at the resulting final commit before merge.",
+  "remaining_partial_domains": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "country_issue_397": "keep open"
+}

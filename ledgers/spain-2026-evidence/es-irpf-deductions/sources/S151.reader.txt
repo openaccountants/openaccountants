@@ -1,0 +1,143 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: 10.2.12. Por arrendamiento de vivienda social (deducción del arrendador)
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+10. Cumplimentación IRPF. Deducciones autonómicas
+
+10.2. Aragón
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+10.2.12. Por arrendamiento de vivienda social (deducción del arrendador)
+
+Cuantía
+
+Cuando el contribuyente haya puesto una, o más viviendas a disposición de la Administración de la Comunidad Autónoma de Aragón, o de alguna de sus entidades a las que se atribuya la gestión del Plan de Vivienda Social de Aragón, podrá aplicarse una deducción del 30% 
+
+Base de la deducción
+
+La base de la deducción será la cuota íntegra autonómica que corresponda a la base liquidable general derivada de los rendimientos netos de capital inmobiliario menos las correspondientes reducciones por arrendamiento de bienes inmuebles destinados a vivienda o la reducción por rendimientos irregulares si existiese.
+
+Cumplimentación
+
+Consignará la suma del rendimiento neto del capital inmobiliario reducido correspondiente a las viviendas cedidas al Plan de Vivienda Social.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 16/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

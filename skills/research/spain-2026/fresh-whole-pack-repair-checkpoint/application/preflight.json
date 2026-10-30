@@ -1,0 +1,156 @@
+{
+  "as_of": "2026-10-28T02:59:21.109019+00:00",
+  "baseline_head": "0f104150c33f13c731e415a2d625dd805980b732",
+  "origin_main": "73f566473aaab8cda1e1a28c0fb8a9c3cd6f7dd0",
+  "before29_hashes": {
+    "README.md": "c58217abf30a3d1254e4b64564d0287df175e5947bcced7264acfbbcfec906e5",
+    "es-autonomous-worker.md": "c25c3364f8167e7bd230d284084e553bc0c7ad28b0d5ead4961d959f142b9d53",
+    "es-beckham.md": "b028e02fff942c0a20c5e649642ab1092bdb8d1b64c552c95eac3a92366d4e2e",
+    "es-canary-islands-igic.md": "1c3bac3828a49766b539a5384d1b0ce0dee0069042eb4211b091597c55fb139a",
+    "es-capital-gains.md": "e4c52276b1edbcb2074e7104f0847dc8137cfabb12cfd7964731593c1e0a3821",
+    "es-ceuta-melilla-ipsi.md": "ce90782df8ee8db68cfe46bbedbb67b03ad65204a770ed6c69a674beb6e123e9",
+    "es-corporate-tax.md": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+    "es-estimated-tax.md": "c92992451eb7ec391e9f5763e5871ba7baffb2c99bd749052f582550ba83bf31",
+    "es-foral-corporate-tax.md": "989b067cc6d2784068544a79e8c161646a510ee220895e185d013b4c94ccb3ff",
+    "es-foral-income-tax.md": "e018cb60cfd56edf69e547e7e254b6b08c5bdd182cbcad3a442a5aa5f8dd6d19",
+    "es-foral-non-resident-tax.md": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+    "es-foral-payroll.md": "9868c61bb5c8eeb52912fff9a5b044db697c23a0d43abb6e462896a68844c086",
+    "es-income-tax.md": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+    "es-irpf-deductions.md": "1c863905ca1a508d5513725a6984a82e210805da57f62067ac0c9a3067a0a290",
+    "es-modelo-111.md": "a4785209c71ab650b1575554e31046217ee7d6aeba5a4758040b76316c3bc66d",
+    "es-non-resident-income-tax-irnr-and.md": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+    "es-rental-income.md": "d19506fcf1f8f7d68bdc58d19099bbb898eec85f6cb5928e04ae82461426bcac",
+    "es-social-contributions.md": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+    "es-vat-return.md": "8f52db66f61f71bea82bc9ffced1c93d3007cb2cafbbf87ac35cfbf39eedde96",
+    "references.md": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+    "spain-bookkeeping.md": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+    "spain-crypto-tax.md": "9533a3e6d989df94227b38aa3d5d0c9878f9ed3896645962ff8bff78991b0368",
+    "spain-einvoice.md": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+    "spain-financial-statements.md": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+    "spain-formation.md": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+    "spain-payroll.md": "7691a3bbb3064e661dbc23842f2538efe0f20e5819807714de6f14acf79968d8",
+    "spain-tax-optimization.md": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+    "spain-transfer-pricing.md": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+    "spain-vat-return.md": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977"
+  },
+  "exact_application": [
+    {
+      "file": "README.md",
+      "baseline_sha256": "c58217abf30a3d1254e4b64564d0287df175e5947bcced7264acfbbcfec906e5",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/README-crypto-reservation/README-candidate.md",
+      "candidate_sha256": "2855585c675336e1c62ca7b01961fe8aac65ac8e9b0164206426e10399a432d5",
+      "candidate_bytes": 12512,
+      "changed": true
+    },
+    {
+      "file": "es-autonomous-worker.md",
+      "baseline_sha256": "c25c3364f8167e7bd230d284084e553bc0c7ad28b0d5ead4961d959f142b9d53",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F01-autonomous-modules/candidate-v1.2.md",
+      "candidate_sha256": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+      "candidate_bytes": 34385,
+      "changed": true
+    },
+    {
+      "file": "es-beckham.md",
+      "baseline_sha256": "b028e02fff942c0a20c5e649642ab1092bdb8d1b64c552c95eac3a92366d4e2e",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F25-Beckham-withholding-gate/candidate-v1.2.md",
+      "candidate_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "candidate_bytes": 23234,
+      "changed": true
+    },
+    {
+      "file": "es-canary-islands-igic.md",
+      "baseline_sha256": "1c3bac3828a49766b539a5384d1b0ce0dee0069042eb4211b091597c55fb139a",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F21-IGIC-disposal-cap/candidate-v0.2.md",
+      "candidate_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "candidate_bytes": 33282,
+      "changed": true
+    },
+    {
+      "file": "es-capital-gains.md",
+      "baseline_sha256": "e4c52276b1edbcb2074e7104f0847dc8137cfabb12cfd7964731593c1e0a3821",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F06-annuity-proceeds-ledger-precision/capital-gains-candidate-v1.2.md",
+      "candidate_sha256": "280b6647efd86651602f4ae99624befc4fd5d5c090d4ee6e575ba50218cd4e6f",
+      "candidate_bytes": 34702,
+      "changed": true
+    },
+    {
+      "file": "es-ceuta-melilla-ipsi.md",
+      "baseline_sha256": "ce90782df8ee8db68cfe46bbedbb67b03ad65204a770ed6c69a674beb6e123e9",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F22-IPSI-used-asset-refund/candidate-v0.2.md",
+      "candidate_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "candidate_bytes": 50091,
+      "changed": true
+    },
+    {
+      "file": "es-estimated-tax.md",
+      "baseline_sha256": "c92992451eb7ec391e9f5763e5871ba7baffb2c99bd749052f582550ba83bf31",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F31-estimated-payment-preservation/estimated-candidate-v2.3.md",
+      "candidate_sha256": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+      "candidate_bytes": 36716,
+      "changed": true
+    },
+    {
+      "file": "es-foral-corporate-tax.md",
+      "baseline_sha256": "989b067cc6d2784068544a79e8c161646a510ee220895e185d013b4c94ccb3ff",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/FC04-corporate-composed/candidate-v0.3.md",
+      "candidate_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "candidate_bytes": 112395,
+      "changed": true
+    },
+    {
+      "file": "es-foral-income-tax.md",
+      "baseline_sha256": "e018cb60cfd56edf69e547e7e254b6b08c5bdd182cbcad3a442a5aa5f8dd6d19",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/RI01-Navarra-entrepreneur-registry/foral-candidate-v0.2.md",
+      "candidate_sha256": "23052343e3d02652b59b9feb3f1396ee9deaaa2721ddefd34aefb8e6557206e4",
+      "candidate_bytes": 241579,
+      "changed": true
+    },
+    {
+      "file": "es-irpf-deductions.md",
+      "baseline_sha256": "1c863905ca1a508d5513725a6984a82e210805da57f62067ac0c9a3067a0a290",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/RG03-RG05-CLM-joint-precision/candidate-v1.6.md",
+      "candidate_sha256": "ec29536e88a15780172e35e2b86f6463327fd9d3c7fa3a74c656f82091fb7fbc",
+      "candidate_bytes": 487121,
+      "changed": true
+    },
+    {
+      "file": "es-rental-income.md",
+      "baseline_sha256": "d19506fcf1f8f7d68bdc58d19099bbb898eec85f6cb5928e04ae82461426bcac",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F28-rental-concurso-clarification/rental-candidate-v1.2.md",
+      "candidate_sha256": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+      "candidate_bytes": 38930,
+      "changed": true
+    },
+    {
+      "file": "es-vat-return.md",
+      "baseline_sha256": "8f52db66f61f71bea82bc9ffced1c93d3007cb2cafbbf87ac35cfbf39eedde96",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F02-VAT-territorial-routing/candidate-v2.4.md",
+      "candidate_sha256": "3f715c08e437840f258623dfbdb47e49359f58e89d040e899c3f1809c46c837a",
+      "candidate_bytes": 77033,
+      "changed": true
+    },
+    {
+      "file": "spain-payroll.md",
+      "baseline_sha256": "7691a3bbb3064e661dbc23842f2538efe0f20e5819807714de6f14acf79968d8",
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F24-payroll-designated-rounding/candidate-v1.2.md",
+      "candidate_sha256": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+      "candidate_bytes": 51985,
+      "changed": true
+    }
+  ],
+  "final_composition_report_sha256": "bea5b239ada4bd747eee174202e47608910bd3c750146b2e73a400265e162a1b",
+  "archive_receipt": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/research/spain-2026/fresh-whole-pack-repair-checkpoint",
+    "original_files": 2279,
+    "unique_blobs": 1754,
+    "original_bytes": 468190081,
+    "stored_blob_bytes": 133425289,
+    "review_manifests_rehashed": 13,
+    "review_members_rehashed": 1430,
+    "all_roundtrip_hashes_verified": true
+  },
+  "provenance_note": "content_revision0 marks this local checkpoint only, not a platform revision.",
+  "country_ready": false,
+  "pushed": false
+}

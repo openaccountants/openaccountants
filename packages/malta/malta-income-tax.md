@@ -4,7 +4,7 @@ description: "Use this skill whenever asked about Malta income tax for self-empl
 version: 2.0
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

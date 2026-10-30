@@ -14,13 +14,13 @@ Calendar tax year. Authority: the General Directorate of Taxes (Drejtoria e Për
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | albania-income-tax | source-cited draft |
-| IT-CORP, corporate income tax | al-corporate-tax | source-cited draft |
-| VAT | albania-vat | source-cited draft |
-| SC, social contributions | albania-social-contributions | source-cited draft |
-| PR, payroll withholding | albania-payroll | source-cited draft |
-| TP, transfer pricing | al-transfer-pricing | source-cited draft |
-| XB, cross-border | al-cross-border | source-cited draft |
+| IT-IND, individual income tax | albania-income-tax | checked against the law |
+| IT-CORP, corporate income tax | al-corporate-tax | checked against the law |
+| VAT | albania-vat | checked against the law |
+| SC, social contributions | albania-social-contributions | checked against the law |
+| PR, payroll withholding | albania-payroll | checked against the law |
+| TP, transfer pricing | al-transfer-pricing | checked against the law |
+| XB, cross-border | al-cross-border | checked against the law |
 
 ## Official sources
 

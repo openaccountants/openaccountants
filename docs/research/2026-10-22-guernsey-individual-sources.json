@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Residence guidance",
+    "url": "https://gov.gg/residency",
+    "as_of": "2026-10-22",
+    "sha256": "299f5ba7499efa7f55eb8764aecf8ac9b1104391c296448faf546af4a2533c88"
+  },
+  {
+    "title": "Income Tax Law section 3 extract",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=167965&p=0",
+    "as_of": "2026-10-22",
+    "sha256": "e1721df7fa41d65a83f1fe5dff56c5ea6b57d9797abaaf7564917cdfa162b398"
+  },
+  {
+    "title": "Rates and allowances including 2026 changes",
+    "url": "https://gov.gg/RStax-rates-and-allowances",
+    "as_of": "2026-10-22",
+    "sha256": "7909a79235e5315bc910c32758ee3b42959620865349ec8328a8f9337950ae15"
+  },
+  {
+    "title": "Withdrawal of allowances, current table and historical examples",
+    "url": "https://gov.gg/wopa",
+    "as_of": "2026-10-22",
+    "sha256": "c7a0e56c2338e7c8d5b94ef9254f1c436e8527f7f6ea20919b0feb712db95cdc"
+  },
+  {
+    "title": "Personal returns and agency guidance",
+    "url": "https://gov.gg/revenue-service/personal-tax-returns",
+    "as_of": "2026-10-22",
+    "sha256": "1cb5e1dbcd62e50eeb3d118086b24c91dc6924eb8fa8103a0bd04c5c94cad926"
+  }
+]

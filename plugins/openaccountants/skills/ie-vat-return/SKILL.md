@@ -1,249 +1,288 @@
 ---
 name: ie-vat-return
-description: "Use this skill whenever asked to prepare, review, or classify transactions for an Irish VAT return (VAT3 form) for a self-employed individual or small business in Ireland. Trigger on phrases like \"prepare VAT return\", \"do the VAT\", \"Irish VAT\", \"VAT3\", \"ROS return\", \"Revenue Online\", or any request involving Ireland VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Ireland only and only standard VAT-registered businesses. VAT groups, Capital Goods Scheme adjustments, and complex property transactions are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Irish VAT work."
+description: "Irish VAT for tax year 2026 under the Value-Added Tax Consolidation Act 2010 (VATCA) as revised to 1 August 2026, including Finance Act 2025. Covers the 23%, 13.5%, 9%, 4.8% and 0% rates, the move of catering, hot take-away food and hairdressing from 13.5% to 9% on 1 July 2026, the EUR 42,500 services and EUR 85,000 goods registration thresholds, the two-monthly VAT3 return and payment by the 19th (23rd on ROS), the annual Return of Trading Details (RTD), the EUR 2,000,000 cash (moneys received) basis, reverse charge on services from abroad, EU goods and RCT construction, VIES statements, blocked input credit and qualifying cars, 0.0274% daily interest and EUR 4,000 fixed and tax-geared penalties. Trigger on 'Irish VAT', 'VAT3', 'ROS VAT return', 'RTD', 'do I need to register for VAT in Ireland', 'Irish reverse charge', 'VIES Ireland'. Out of scope: income tax (ie-income-tax-form11), corporation tax (ie-corporation-tax), payroll (ie-payroll), withholding and treaties (ie-foreign-tax-an"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ie-vat-return"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-10-26"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Irish VAT returns (VAT3 and RTD): 2026 rates, thresholds, cash basis, reverse charge and filing
+# Irish VAT returns (VAT3 and RTD), tax year 2026
 
-## Scope
+> **Source-cited draft.** Drafted from the Value-Added Tax Consolidation Act 2010 as revised by the Law Reform Commission to 1 August 2026 (which includes Finance Act 2025), Finance Act 2025 Part 3, and Revenue's own VAT pages and Tax and Duty Manuals, all read on 2026-10-24. No accountant has reviewed it. Do not file from it without review by a qualified Irish professional.
 
-This skill covers preparing and checking Irish VAT3 returns and the annual VAT Return of Trading Details (RTD) for a VAT-registered sole trader, partnership or company established in Ireland. Figures are for tax year 2026 (calendar 2026, the VAT year most Irish businesses are filing now). A dated section near the end covers 2025 periods, for late or amended returns.
+Authority: the Revenue Commissioners (the Collector-General collects VAT). Returns and payments go through ROS (Revenue Online Service). Currency: euro. Section numbers below are VATCA 2010 unless another act is named. Ireland is in the EU, so EU VAT rules on intra-Community supplies, VIES and the One-Stop Shop apply.
 
-It does not cover: VAT groups, the Capital Goods Scheme, supplies or lettings of property, partial exemption beyond spotting it, margin schemes, the flat-rate farmer scheme, One-Stop Shop returns, or customs. Those are in "When to refuse or refer".
+See also: `ie-income-tax-form11`, `ie-corporation-tax`, `ie-payroll`, `ie-foreign-tax-and-withholding`, `ie-cross-border`, `ie-formation`. A second Irish VAT skill, `ireland-vat-return`, holds an older copy of this content and is due to be merged into this one.
 
-The law is the Value-Added Tax Consolidation Act 2010 (VATCA 2010), as amended each year by a Finance Act. Revenue's own guidance is on [revenue.ie](https://www.revenue.ie/en/vat/index.aspx); Acts are on [irishstatutebook.ie](https://www.irishstatutebook.ie/eli/2025/act/18/enacted/en/html).
+## Who this applies to
 
-## Ask the client first
+- **Businesses established in Ireland** that make taxable supplies of goods or services. Registration is compulsory once annual turnover exceeds the goods or services threshold (s.6(1)(c) and (d)). Below it, a business may elect to register, but only from a current date; an election cannot be backdated (Revenue: elect to register).
+- **The threshold test** is "annual turnover" in the **current calendar year or the previous calendar year** (s.6(1)(c), (d)). Revenue counts, excluding VAT: taxable supplies, supplies of immovable goods, certain financial transactions, and insurance and reinsurance. Leave out occasional disposals of business assets (a van, a building), transfers of goods to a non-EU country with no supply, and exempt cross-border supplies of new means of transport.
+- **Which threshold:** the goods threshold applies only if at least 90% of turnover is from goods, and not from goods taxed at 13.5% or 23% that the person made wholly or mainly from zero-rated materials (s.6(1)(c)(ii)). Everyone else, including those makers, uses the services threshold (s.6(1)(d)).
+- **Connected businesses:** where one person controls others that supply goods of the same class or services of the same nature, the turnover of all of them counts for each (s.6(2)(b)).
+- **No threshold** applies to: a principal contractor that must operate Relevant Contracts Tax (RCT) and receives construction services from a subcontractor (Construction services TDM, para 3.1); a person who must self-account on services received from abroad (s.12), including a VAT-exempt business such as a bank, insurer or bookmaker that receives taxable services from abroad for its business (Revenue: received services); and a business not established in Ireland that supplies taxable goods or services to taxable customers in Ireland, unless it uses the EU VAT SME Scheme (Revenue: VAT thresholds).
+- **Intra-EU acquisitions:** a person whose acquisitions of goods from other EU States (other than new means of transport and excise goods) exceed, or are likely to exceed, EUR 41,000 in any continuous 12 months must register (s.9(2)).
+- **EU VAT SME Scheme** (s.92B, from 1 January 2025): a small business established only in Ireland can use another Member State's exemption, if it stays under that State's threshold and under the EUR 100,000 Union threshold, and registers for the scheme with Revenue.
+- **Out of this skill:** VAT groups (s.15), Capital Goods Scheme and property (Part 8 Chapter 2, Part 7), margin schemes and auction schemes, flat-rate farmers (s.86), sea fishers and horse trainers, One-Stop Shop and Import One-Stop Shop returns (Chapters 6 to 8 of Part 9), customs warehousing. Refer these. Partial exemption is covered only far enough to spot it. Also refer: construction where the RCT status of the contract or a connection between the parties is unclear (check RCT status on ROS first), and any deliberate under-declaration or Revenue audit notice, before a disclosure is made.
 
-- Are you registered for VAT, and from what date? What is your VAT number? If not registered, what did you sell in 2025 and so far in 2026, and is it goods, services or both?
-- Which taxable period is this, and what period does ROS show for you (two-monthly, four-monthly, six-monthly or monthly)?
-- Are you on the invoice basis or authorised by Revenue for the moneys received (cash) basis? Ask for the authorisation letter.
-- What does the business sell, and at which rates? Any restaurant, catering, hot food, hairdressing, hotel, construction, energy or livestock supplies?
-- Did any sale or purchase straddle 1 July 2026 (the hospitality and hairdressing rate change)?
-- Do you make any VAT-exempt sales (for example financial, insurance, medical, education, residential letting)? If yes, how much?
-- Do you buy services or goods from outside Ireland (software subscriptions, advertising, consultants, stock)? Do you import goods, or sell to customers outside Ireland? Do EU customers give you a VAT number?
-- Are you in construction? Are you a principal contractor who must operate Relevant Contracts Tax (RCT), a subcontractor, or both? Are any customers or suppliers connected to you?
-- Do you own or lease a car used for the business? When was it first registered, what are its CO2 emissions, and how much is business use?
-- Is any return or RTD outstanding, and what is the accounting year end (it sets the RTD due date)?
+## Rates, bands and thresholds
 
-## The method, step by step
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate | 23% | 2025 and 2026 | VATCA s.46(1)(a), https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html; Revenue current rates, https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx |
+| Reduced rate (Schedule 3 goods and services: hotel and guesthouse lettings, cinema, theatre and museum admissions, amusement parks, open farms, certain printed matter, certain fuels, building services, repair, cleaning and maintenance, tour guides, short-term hire and more) | 13.5% | 2025 and 2026 | VATCA s.46(1)(c) and Sch. 3; https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/reduced-rate-vat.aspx |
+| Restaurant and catering services (not alcohol, soft drinks or bottled water), hot take-away food, hot tea and coffee, hairdressing (Sch. 3 paras 3(1), 3(3), 13(3)) | 13.5% to 30 June 2026; **9% from 1 July 2026** | 2026 | Finance Act 2025 s.71, https://www.irishstatutebook.ie/eli/2025/act/18/section/71/enacted/en/html; VATCA s.46(1)(cb) |
+| Second reduced rate: periodicals and e-periodicals, sporting facilities (not non-profit), heat pump systems (Sch. 3 paras 7(a), 7A, 12, 12A) | 9% | 2025 and 2026 | VATCA s.46(1)(ca); https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/second-reduced-rate-vat.aspx |
+| Electricity, and gas for heating or lighting | 9%, 1 May 2022 to 31 December 2030 | 2026 | VATCA s.46(1)(caa) (Finance Act 2025 s.69) |
+| Qualifying apartments (supply, and construction until completed) | 9%, 26 November 2025 to 31 December 2030 | 2026 | VATCA s.46(1)(cac), Sch. 3 para 9B |
+| Certain qualifying apartments (supply only), for late or amended 2025 returns | 9%, 8 October 2025 to 25 November 2025 | 2025 | VATCA s.46(1)(cab), Sch. 3 para 9A |
+| Livestock | 4.8% | 2025 and 2026 | VATCA s.46(1)(d) |
+| Zero rate (exports, intra-EU supplies of goods to registered customers, most food, children's clothing and footwear, oral medicines, books, and the other Schedule 2 items) | 0% | 2025 and 2026 | VATCA s.46(1)(b) and Sch. 2 |
+| Flat-rate addition charged by unregistered farmers | 4.5% (5.1% in 2025) | 2026 | Revenue current rates table; Finance Act 2025 s.73 |
+| Services threshold (services, and goods made from zero-rated materials) | EUR 42,500 | 2025 and 2026 | VATCA s.2(1) "services threshold", s.6(1)(d); https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx |
+| Goods threshold (90% or more of turnover from goods) | EUR 85,000 | 2025 and 2026 | VATCA s.2(1) "goods threshold", s.6(1)(c) |
+| Intra-EU acquisitions threshold (continuous 12 months) | EUR 41,000 | 2026 | VATCA s.9(2) |
+| EU-wide distance sales and telecoms, broadcasting and electronic services to consumers | EUR 10,000 | 2026 | VATCA s.35(1); Revenue VAT thresholds |
+| EU VAT SME Scheme Union threshold | EUR 100,000 | 2026 | VATCA s.92B(1) "Union threshold" |
+| Cash (moneys received) basis: turnover limit, any continuous 12 months | EUR 2,000,000 (or 90% of supplies to unregistered customers) | 2026 | VATCA s.80(1); https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/who-can-opt-moneys-received-basis.aspx |
+| Four-monthly returns allowed if annual liability is | EUR 3,001 to EUR 14,400 | 2026 | https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/when-vat-becomes-payable.aspx |
+| Six-monthly returns allowed if annual liability is | EUR 1 to EUR 3,000 | 2026 | same page |
+| VIES goods statement: quarterly allowed if intra-EU goods supplies per quarter (and in each of the last 4 quarters) do not exceed | EUR 50,000 | 2026 | VATCA s.82(1), (5) |
+| Qualifying car: share of VAT deductible | 20%, if business use is at least 60% | 2026 | VATCA s.59(1), (2)(d) |
+| Interest on late VAT | 0.0274% a day or part of a day | 2026 | VATCA s.114(1); https://www.revenue.ie/en/vat/interest-and-penalties/when-is-interest-applied-by-revenue/index.aspx |
+| Fixed penalty (each failure) | EUR 4,000 | 2026 | VATCA s.115(1), (2), (4); https://www.revenue.ie/en/vat/interest-and-penalties/when-are-penalties-payable-to-revenue/fixed-penalties.aspx |
 
-1. **Confirm status and period.** Check the VAT registration, the taxable period on ROS and the basis (invoice or moneys received). If the client is not registered, test the thresholds first; if they are over, stop and deal with registration.
-2. **Collect the evidence.** Sales invoices and credit notes, purchase invoices, customs documents for imports, and the bank statements for the period. A purchase with no valid VAT invoice (or customs receipt) gets no input credit.
-3. **Classify every sale by rate and place of supply.** Irish sales at the standard, reduced, second reduced, livestock or zero rate, exempt sales, EU business sales (no Irish VAT, reported in E1 or ES1 and on VIES), exports and non-EU business services (no Irish VAT). Use the rate in force on the date VAT becomes due, not the payment date.
-4. **Find the reverse-charge and self-accounting items.** Services bought from any supplier outside Ireland, goods bought from other EU countries, construction services received as principal contractor under RCT, construction services between connected persons, and imports under postponed accounting. Put the VAT in T1 and, where deductible, the same amount in T2. Account for received services by the earliest of invoice date, payment date or the 15th of the month after the service; for EU goods, no later than the 15th of the month after arrival.
-5. **Test each purchase for input credit.** It must be used for taxable supplies or qualifying activities, carry a valid invoice, and not be on the blocked list (food, drink, accommodation, entertainment, cars except qualifying cars, petrol). Apportion shared costs; refer if exempt sales are more than incidental.
-6. **Complete the VAT3.** T1 total VAT on sales plus self-accounted VAT; T2 total deductible VAT; T3 or T4 is the difference; then E1, E2, ES1, ES2 and PA1 values. Enter zero, never "nil", on an empty return.
-7. **File and pay on ROS by the 23rd** of the month after the period ends (the 19th for the few who do not file on ROS). File a return even when nothing is due.
-8. **At the year end**, file the final VAT3 and then the RTD by the 23rd of the month after the accounting year ends. An outstanding RTD holds up refunds.
+**Which rate applies to a sale** (s.74, s.80(2)(a)): with an invoice, the rate when the invoice is issued (or should have been issued); without one, the rate at the time of supply, or of any advance payment. On the cash basis, the rate when the goods or services were supplied, not when paid. So a function held and invoiced on 20 June 2026 is at 13.5%; the same function on 10 July 2026 is at 9%. For late or amended 2025 returns, catering, hot take-away food and hairdressing were at 13.5% for the whole of 2025.
 
-What breaks when the order is wrong: classifying purchases before checking the basis puts cash-basis clients' sales in the wrong period; skipping step 4 understates T1 and leaves an unclaimed T2, which is an error even when the net is nil; using the payment date for the rate misplaces sales around 1 July 2026.
+**Items not listed here** (passenger transport, many specific goods): look them up in Revenue's VAT rates database before charging or claiming.
 
-## Registration thresholds for 2025 and 2026 ([Revenue: VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx); [Finance Act 2024, s.78](https://www.irishstatutebook.ie/eli/2024/act/43/section/78/enacted/en/html))
+## The taxable base
 
-Registration is obligatory when annual turnover **exceeds** the threshold. Below it, a business established in Ireland may elect to register.
+**What is taxed.** The amount on which VAT is charged is the total consideration, including all taxes, commissions, costs and charges, but not the VAT itself (s.37). Foreign-currency amounts are converted at the latest Central Bank of Ireland or ECB selling rate when the VAT becomes due, unless Revenue agrees another method (s.37(4)).
 
-| Who | Threshold (2025 and 2026) | Before 1 January 2025 |
-| --- | --- | --- |
-| Services only | €42,500 | €40,000 |
-| Goods taxed at the reduced or standard rate that you made or produced from zero-rated materials | €42,500 | Not captured |
-| Goods, or goods and services where 90% or more of turnover is from goods | €85,000 | €80,000 |
-| Distance sales of goods and cross-border telecoms, broadcasting and electronic services to EU consumers (all EU States together) | €10,000 | Not captured |
-| Acquisitions of goods from other EU Member States | €41,000 | Not captured |
-| Services received from abroad | No threshold | No threshold |
-| Business not established in Ireland supplying taxable goods or services to taxable customers in Ireland | No threshold (unless using the VAT SME Scheme) | Not captured |
+**Two-thirds rule** (s.41; Revenue: two-thirds rule). When a service includes movable goods, compare the VAT-exclusive cost of the goods with the VAT-exclusive total price. If the goods exceed two-thirds, the whole job takes the goods rate; if not, the service rate. Revenue's example: a EUR 300 guitar repair with EUR 220 of materials takes 23% on the whole, EUR 69. The rule does not apply to repair of motor vehicles and agricultural machinery, reverse-charge construction, or construction between connected persons.
 
-- Finance Act 2024 section 78 raised the goods threshold from €80,000 to €85,000 and the services threshold from €40,000 to €42,500 **with effect from 1 January 2025**. Finance Act 2025 did not change these amounts; the same figures apply for 2026.
-- **How turnover is measured:** Revenue says to total, excluding VAT, "in a calendar year" your taxable supplies, supplies of immovable goods, certain financial transactions and insurance services. Leave out occasional disposals of business assets (such as a van), transfers of goods to a non-EU country with no supply, and exempt cross-border supplies of new means of transport.
-- **Services received from abroad have no threshold** ([received services](https://www.revenue.ie/en/vat/vat-on-services/exceptions-general-place-supply-rules-services/received-services/index.aspx)). An unregistered business, or one making only exempt supplies, that buys taxable services from abroad for business may have to register just for that.
-- **Construction:** a principal contractor who must operate RCT and receives construction services from a subcontractor must register and account for VAT whatever its turnover ([construction services manual](https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part11-immovable-goods/construction-services/construction-servcies.pdf)).
-- **Electing to register** cannot be backdated: "You can only elect to register for VAT from a current date" ([Revenue: electing](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/elect-register-vat.aspx)).
-- **EU VAT SME Scheme** (from 1 January 2025) lets a small Irish business use another Member State's exemption threshold, if it is established only in Ireland, stays under that State's threshold and under the Union threshold of €100,000, and registers for the scheme with Revenue ([Revenue: EU VAT SME Scheme](https://www.revenue.ie/en/vat/vat-registration/eu-vat-sme-scheme/index.aspx)).
+**Input credit** (s.59). You deduct VAT on goods and services used for taxable supplies or qualifying activities (for example exports of exempt financial services outside the EU), backed by a valid VAT invoice or customs document, claimed through the VAT3. No credit for costs of exempt or non-business activities; costs used for both are apportioned. Refund claims must be made within 4 years after the end of the taxable period (s.99(4)).
 
-## Rates in force in 2026 ([Revenue: current VAT rates](https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx); [second reduced rate](https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/second-reduced-rate-vat.aspx))
+**Blocked even for a fully taxable business** (s.60(2)(a)):
+- food, drink, accommodation or other personal services for you, your agents or employees, unless part of a taxable supply you make (qualifying conference accommodation is allowed);
+- food, drink, accommodation or entertainment that forms part of an advertising service;
+- entertainment;
+- passenger motor vehicles, except qualifying vehicles, stock-in-trade, and cars used in a car-hire or driving-school business;
+- petrol, unless stock-in-trade (diesel is not on the list);
+- buying or developing immovable goods used for a purpose other than the business (s.60(2)(a)(iia));
+- contract work that consists of handing over goods that are themselves blocked (s.60(2)(a)(vi));
+- goods bought under a margin scheme or auction scheme (s.60(3)).
 
-| Rate | Main supplies (examples only: check each item) | Dates |
-| --- | --- | --- |
-| 23% standard | Most goods and services, for example solicitor and consultancy services, furniture, motor vehicles, tyres, batteries | In force throughout 2025 and 2026 |
-| 13.5% reduced | Hotel and guesthouse lettings, cinema, theatre and museum admissions, amusement parks, open farms, certain printed matter (not books), certain fuels, certain building services, repair, cleaning and maintenance services, short-term hire, tour guides, greyhounds | In force; catering and hairdressing left this rate on 30 June 2026 |
-| 9% second reduced | Periodicals and certain e-periodicals; sporting facilities (not non-profit); electricity; gas for heating or lighting; catering and restaurant supplies (not alcohol, soft drinks or bottled water); hot take-away food and hot tea and coffee; hairdressing; construction of qualifying apartments | Catering, hot food and hairdressing from 1 July 2026; electricity and gas 1 May 2022 to 31 December 2030; qualifying apartments 26 November 2025 to 31 December 2030 |
-| 4.8% livestock | Livestock generally, and horses normally used for food production or farming | In force |
-| 0% zero | Exports; intra-EU supplies of goods to VAT-registered customers; certain food and drink; certain oral and non-oral medicines and sanitary products; certain books, e-books, audiobooks, newspapers and e-newspapers; certain animal feed, fertilisers, seeds and plants; solar panels on private dwellings and schools; clothing and footwear for children under 11 | In force |
-| 4.5% flat-rate addition | Charged by unregistered flat-rate farmers (5.1% in 2025) | From 1 January 2026 |
+**Qualifying cars** (s.59(1), (2)(d); s.62; Revenue manual on partial recovery for cars). 20% of the VAT on buying, hiring, acquiring or importing a car is deductible if the car is used at least 60% for business, and it was first registered from 1 January 2021 with CO2 under 140g/km (or 2009 to 2020 with CO2 under 156g/km). On a lease, 20% of the VAT on each charge. If a bought car is sold, or its business use falls below 60%, within 2 years, the credit is clawed back by the formula in s.62: all of it within the first 182 days, 75% within the next 182, then 50%, then 25%. Example: EUR 4,000 VAT on a qualifying car gives a credit of EUR 800; if the car is sold after 3 months, the whole EUR 800 is paid back in the period of sale. There is no clawback for a hired or leased car. Revenue reviews business use every 6 months. Vans are not passenger cars.
 
-Sources for each line: [standard rate](https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/standard-rate-vat.aspx), [reduced rate](https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/reduced-rate-vat.aspx), [zero rate](https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/zero-rate-vat.aspx), [livestock rate](https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/livestock-rate-vat.aspx), [restaurant and catering](https://www.revenue.ie/en/vat/vat-on-services/restaurant-catering-and-canteen-services/index.aspx), [Finance Act 2025 s.71 (hospitality from 1 July 2026)](https://www.irishstatutebook.ie/eli/2025/act/18/section/71/enacted/en/html), [s.69 (energy to 2030)](https://www.irishstatutebook.ie/eli/2025/act/18/section/69/enacted/en/html), [s.73 (flat-rate addition)](https://www.irishstatutebook.ie/eli/2025/act/18/section/73/enacted/en/html).
+**Cash (moneys received) basis** (s.80). Revenue may authorise it if turnover has not exceeded and is not likely to exceed EUR 2,000,000 in any continuous 12 months, or if at least 90% of turnover is from supplies to unregistered persons (retailers, pubs, restaurants). VAT is then due on money received in the period. It cannot be used for transactions with a connected person, construction services from a subcontractor to a principal contractor, pre-2008 long leases, intra-EU acquisitions or imports (Revenue: who may opt). Money received includes sums lodged to the supplier's account, sums received by an agent (such as a solicitor) on its behalf, Professional Services Withholding Tax and RCT withheld by the customer, sums paid to Revenue under an attachment, and debts settled by set-off (received on the date of the set-off) (Revenue: sums included). Revenue's PSWT example: a EUR 1,230 fee including EUR 230 VAT with EUR 200 PSWT withheld is treated as EUR 1,230 received, with EUR 230 VAT due. Normal invoicing rules still apply. If sales to unregistered persons fall below 90% over four consecutive months, or turnover is likely to pass EUR 2 million, tell Revenue by the end of the following month. If you do not, the authorisation is cancelled from the start of the VAT period in which you should have told Revenue (Revenue: eligibility and cancellation).
 
-- **The hospitality change is dated.** Catering and restaurant supplies (excluding alcohol, soft drinks and bottled water), hot take-away food, hot tea and coffee, and hairdressing were at the reduced rate from 1 September 2023 to 30 June 2026, and are at the second reduced rate from 1 July 2026. Hotel and guesthouse lettings stay at the reduced rate.
-- **Which rate applies to a sale** ([when is VAT due](https://www.revenue.ie/en/vat/accounting-for-vat/when-is-vat-due/index.aspx)): with an invoice, the rate in force when you issue it (or should have issued it); without an invoice, the rate on the date of supply or of any advance payment. On the moneys received basis, use the rate when the goods or services were supplied, not when paid ([cash basis rates](https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/vat-rates-moneys-received-basis.aspx)).
-- **Items not on these lists** (passenger transport, taxis and many specific goods): look them up in Revenue's VAT rates database before charging or claiming. Until confirmed, do not claim input VAT unless a valid VAT invoice shows it.
+**Self-accounted VAT (reverse charge).** The customer, not the supplier, accounts for the VAT in these cases:
+- services received from a supplier established outside Ireland where the place of supply is Ireland (s.12); Revenue's example: EUR 100,000 of German consultancy gives EUR 23,000 in T1 and, if deductible, EUR 23,000 in T2;
+- goods acquired from other EU States (s.3(d), s.75: VAT due on the 15th of the month after the acquisition, or earlier on the supplier's invoice);
+- construction operations supplied by a subcontractor to a principal contractor who must operate RCT, and construction services between connected persons (s.16(3); Construction services TDM);
+- imports under postponed accounting (s.53A).
+A supplier invoicing from Ireland with Irish VAT is a domestic purchase: claim the VAT in T2; there is no reverse charge.
 
-## The VAT3 boxes ([Revenue: completing the VAT3](https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/completing-vat3-return.aspx))
+**Construction under RCT** (Construction services TDM). The subcontractor invoices without VAT, adding "VAT on this supply to be accounted for by the principal contractor". The principal contractor puts the VAT in T1 and, if entitled, the same amount in T2 in the same return. Construction services are generally 13.5%; qualifying apartments and heat pump systems 9%; building materials sold alone and scaffolding 23%. A principal contractor always accounts for VAT on construction services from non-resident subcontractors. A builder working for a private householder charges VAT normally.
 
-| Box | What goes in it |
-| --- | --- |
-| T1 VAT on sales | VAT due on your supplies of goods and services, plus VAT you self-account on intra-EU acquisitions of goods, imports under postponed accounting, and services received from abroad |
-| T2 VAT on purchases | VAT you are entitled to reclaim on costs for your taxable supplies and qualifying activities, including the deductible part of the self-accounted items above and the flat-rate addition |
-| T3 VAT payable | T1 minus T2, when T1 is greater |
-| T4 VAT repayable | T2 minus T1, when T2 is greater |
-| E1 | Value of goods sent to customers in other EU countries |
-| E2 | Value of goods received from suppliers in other EU countries |
-| ES1 | Value of services supplied to customers in other EU countries |
-| ES2 | Value of services received from suppliers in other EU countries |
-| PA1 | Customs value plus customs duty of goods imported under postponed accounting |
+**Conservative defaults when evidence is missing.** Unknown VAT status of a purchase: not deductible. Unknown business-use share: no recovery. Unknown status of an EU customer: treat as a consumer and charge Irish VAT. Unknown whether a transaction is in scope: treat it as in scope. Unknown rate on a sale: standard rate until checked. Flag each default to the client.
 
-- Credit notes issued or received adjust T1 and T2.
-- A period with nothing payable or repayable still needs a return, with zero in T1 to T4. Do not write "nil".
-- Services bought from outside the EU go in T1 and T2 but not in ES2 (ES2 is EU suppliers only).
-
-## Periods, filing and payment for 2026 ([Revenue: when VAT becomes payable](https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/when-vat-becomes-payable.aspx))
-
-| Period type | Who | Condition |
-| --- | --- | --- |
-| Two-monthly (standard) | Everyone unless authorised otherwise | Periods start 1 January, March, May, July, September and November |
-| Four-monthly | Authorised by the Collector-General | Annual VAT liability between €3,001 and €14,400 |
-| Six-monthly | Authorised by the Collector-General | Annual liability between €1 and €3,000 |
-| Monthly | Authorised by Revenue on request | Generally for businesses in a constant repayment position |
-
-- **Deadline:** file and pay by the 19th of the month after the period ends; for ROS filers the time limit is extended to the 23rd. For 2026 two-monthly periods on ROS: January–February by 23 March, March–April by 23 May, May–June by 23 July, July–August by 23 September, September–October by 23 November, November–December by 23 January 2027.
-- **Payment** is made through ROS or myAccount ([how do you pay VAT](https://www.revenue.ie/en/vat/accounting-for-vat/how-do-you-pay-vat/index.aspx)).
-- **Direct debit and an annual return:** Revenue's interest guidance describes traders who pay by monthly direct debit and file one annual VAT return for their accounting year ([interest](https://www.revenue.ie/en/vat/interest-and-penalties/when-is-interest-applied-by-revenue/index.aspx)). This needs Revenue's agreement; check what ROS shows for the client before assuming it.
-- **Repayments** go to a bank account; Revenue may withhold them if returns are outstanding and may offset them against other tax owed ([repayment of VAT](https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/vat-repayment.aspx)).
-
-## The Return of Trading Details (RTD) ([Tax and Duty Manual: VAT RTD](https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part09-obligations-accountable-persons/return/VAT-RTD-S76.pdf))
-
-- **Who:** every VAT-registered person, once a year, from the ROS inbox with the final VAT3 of the year.
-- **When:** the 23rd of the month after the month in which the accounting period (for income tax or corporation tax) ends. Accounting year to 31 August means RTD by 23 September. Businesses exempt from ROS filing have 19 days.
-- **What:** net-of-VAT values for the year, by Irish rate, in four sections: (1) supplies of goods and services, including exempt sales, EU and export sales, and services bought from outside the EU on a self-accounting basis; (2) acquisitions from the EU and imports under postponed accounting (the items in E2, ES2 and PA1); (3) goods and services bought for resale; (4) other deductible goods and services (overheads). Items in section 2 also go in section 3 or 4. No negative figures. EU sales to consumers taxed under the One-Stop Shop are left out.
-- **If it is late:** refund claims under any taxhead are withheld while the previous year's RTD is outstanding, and failure to file an RTD carries a fixed penalty of €4,000 ([fixed penalties](https://www.revenue.ie/en/vat/interest-and-penalties/when-are-penalties-payable-to-revenue/fixed-penalties.aspx)).
-
-## Moneys received (cash) basis ([Revenue: who may opt](https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/who-can-opt-moneys-received-basis.aspx))
-
-- **Eligibility (either test):** turnover that does not exceed, and is not likely to exceed, €2,000,000 in any continuous 12 months; **or** at least 90% of supplies made to customers who are unregistered or cannot claim full VAT deduction (retailers, pubs, restaurants and similar).
-- **Revenue must authorise it.** A new registrant ticks the box on the registration form; a registered business applies in writing with its turnover and the share of sales to unregistered persons ([how to apply](https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/how-apply-moneys-received-basis.aspx)). It takes effect from the start of the period in which Revenue issues approval, or a later date given.
-- **Not allowed for:** transactions with a connected person; construction services from a subcontractor to a principal contractor; certain pre-2008 long leases; intra-EU acquisitions; imports.
-- **What counts as received:** money lodged to your account, money received by an agent (such as a solicitor) on your behalf, Professional Services Withholding Tax and RCT withheld by the customer, set-offs, and payments made under a Revenue attachment ([sums included](https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/sums-included-money-received-basis.aspx)). Revenue's example: a €1,230 fee including €230 VAT, with €200 PSWT withheld, is treated as €1,230 received and the full €230 VAT is due.
-- **Invoices:** normal invoicing rules still apply.
-- **Losing eligibility** ([eligibility and cancellation](https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/vat-moneys-received-basis-eligibility-cancellation.aspx)): if sales to unregistered persons fall below 90% over four consecutive months, or turnover is likely to exceed €2,000,000 in a continuous 12 months, notify Revenue by the end of the following month. If you do not notify, the authorisation is cancelled from the start of the period in which you should have notified.
-
-## Input credit: what you can and cannot reclaim ([Revenue: who can reclaim VAT](https://www.revenue.ie/en/vat/reclaiming-vat/who-can-reclaim-vat.aspx))
-
-- **Conditions:** the cost is used for your taxable supplies or qualifying activities; you hold a valid VAT invoice or relevant customs receipt; the claim is made through the VAT3. No credit for costs of exempt supplies or non-business activities; costs used for both are apportioned.
-- **Time limit:** four years for claiming a repayment.
-- **Blocked even for fully taxable businesses:** food, drink or other personal services for you, agents or employees (unless part of a taxable supply of services); accommodation (except qualifying conference accommodation); food, drink, accommodation or entertainment forming part of the cost of advertising services; entertainment; passenger motor vehicles (except qualifying vehicles, vehicles held as stock-in-trade, and vehicles used in a car-hire or driving-school business, which follow Revenue's separate manual "Recovery of VAT on Motor Vehicles" ([partial recovery manual, introduction](https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part03-taxable-transactions-goods-ica-services/Goods/partial-recovery-of-VAT-on-qualifying-passenger-motor-vehicles.pdf))); petrol (unless stock-in-trade); contract work involving the handing over of goods when those goods are themselves not deductible; goods bought under a margin scheme; property costs used for a non-business purpose.
-- **Qualifying cars** ([Tax and Duty Manual: partial recovery](https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part03-taxable-transactions-goods-ica-services/Goods/partial-recovery-of-VAT-on-qualifying-passenger-motor-vehicles.pdf)): up to 20% of the VAT on buying, hiring, acquiring or importing the car is deductible if the car is used at least 60% for business for 2 years or more, and it was first registered from 1 January 2021 with CO2 under 140g/km (or registered 2009 to 2020 with CO2 under 156g/km). On a lease, 20% of the VAT on each monthly charge. If a car bought is sold within 2 years, part or all of the credit is paid back: all within 6 months, 75% at 6 to 12 months, 50% at 12 to 18 months, 25% at 18 to 24 months. The same scale applies if, within 2 years, business use stops or falls below 60%; the use is reviewed every 6 months. No adjustment for hired or leased cars. Vans are not passenger motor vehicles.
-- **Diesel** is not on the blocked list; petrol is.
-
-## Reverse charge and cross-border ([general place of supply](https://www.revenue.ie/en/vat/vat-on-services/when-is-vat-charged-on-services/general-place-of-supply-rules-for-services.aspx); [received services](https://www.revenue.ie/en/vat/vat-on-services/exceptions-general-place-supply-rules-services/received-services/index.aspx))
-
-- **Services bought from abroad (EU or non-EU) for business:** place of supply is Ireland; you self-account at the Irish rate in T1 and reclaim in T2 if deductible. Give your VAT number to EU suppliers, or you may be charged their VAT. Revenue's example: €100,000 German consultancy at 23% gives €23,000 in T1 and, if deductible, €23,000 in T2.
-- **Read the invoice, not the brand.** A supplier invoicing from Ireland with Irish VAT is a domestic purchase: claim the VAT in T2, no reverse charge. Only a supplier established outside Ireland triggers self-accounting.
-- **Goods bought from other EU countries** ([self-accounting](https://www.revenue.ie/en/vat/goods-and-services-to-and-from-abroad/acquisitions-from-other-eu-member-states/self-accounting-for-vat.aspx)): the supplier zero-rates; you account for Irish VAT in T1, reclaim in T2 if deductible, and put the value in E2. Revenue's example: €5,000 of goods at 23% gives €1,150 in T1 and T2.
-- **Services sold to EU businesses:** no Irish VAT. Get and check the customer's VAT number, put it on the invoice, say the reverse charge applies, report the value in ES1 and on the VIES return ([obligations when supplying abroad](https://www.revenue.ie/en/vat/vat-on-services/when-is-vat-charged-on-services/vat-obligations-of-Irish-traders-supplying-services-to-business-customers-abroad.aspx)). If you misidentify a consumer as a business, you owe the VAT.
-- **Goods sold to EU businesses** ([zero rate on ICS](https://www.revenue.ie/en/vat/goods-and-services-to-and-from-abroad/intracommunity-supplies/supplies-of-goods-to-businesses-in-the-european-union-eu.aspx)): zero-rated only if all five conditions hold: customer registered in another Member State; you keep its VAT number with country prefix; both numbers on the invoice; goods leave Ireland; correct VIES returns filed. Otherwise charge Irish VAT. Value in E1.
-- **Sales to EU consumers:** Irish VAT unless your EU-wide distance sales and electronic services exceed the €10,000 threshold ([VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx)), or you opted for destination taxation or the One-Stop Shop.
-- **Imports** ([postponed accounting manual](https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part07-provisions-relating-to-imports-exports/postponed-accounting.pdf)): goods from outside the EU, including Great Britain, are imports. Under postponed accounting the VAT goes in T1 and T2 and the customs value plus duty in PA1; otherwise VAT is paid at entry and reclaimed in T2 with the customs receipt. Goods moving between Ireland and Northern Ireland stay within the EU VAT regime; services do not.
-
-## Construction: the RCT reverse charge ([construction services manual](https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part11-immovable-goods/construction-services/construction-servcies.pdf))
-
-- **When it applies:** construction services supplied by a subcontractor to a principal contractor where RCT must be operated (public bodies can be principal contractors), and construction services between connected persons.
-- **Subcontractor:** invoices without VAT, showing everything a VAT invoice shows except the rate and amount, with its VAT number and the words "VAT on this supply to be accounted for by the principal contractor". Its T1 is nil for those supplies; it still reclaims its own input VAT in T2.
-- **Principal contractor:** pays the subcontractor without VAT, works out RCT on the VAT-exclusive amount, puts the VAT in T1 for the period of the supply (or of an advance payment), and claims it in T2 in the same return if entitled. Must register whatever its turnover. A principal contractor must always account for VAT on construction services from non-resident subcontractors.
-- **Rate:** the reduced rate generally applies to construction services; the second reduced rate to qualifying apartments (26 November 2025 to 31 December 2030) and heat pump systems; the standard rate to building materials sold alone and to scaffolding ([Revenue: construction services](https://www.revenue.ie/en/vat/vat-on-property-and-construction/construction-fixtures-fittings-solar-panels/construction-services.aspx); heat pumps and scaffolding: [construction services manual](https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part11-immovable-goods/construction-services/construction-servcies.pdf)).
-- **Not reverse charge:** a builder working for a private householder, or for a business that is not its principal contractor for RCT, charges VAT normally.
-- The two-thirds rule does not apply to reverse-charge construction or to services between connected parties.
-- The cash basis cannot be used for subcontractor-to-principal construction supplies.
-
-## Two-thirds rule ([Revenue: two-thirds rule](https://www.revenue.ie/en/vat/vat-on-services/two-thirds-rule/index.aspx))
-
-When a service includes goods, compare the VAT-exclusive **cost** of the goods with the VAT-exclusive total price. If the cost of goods **exceeds** two-thirds of the price, the goods rate applies to the whole job; if it does not exceed two-thirds, the service rate applies. It does not apply to repair and maintenance of motor vehicles and agricultural machinery, reverse-charge construction, or construction between connected parties.
-
-## Boundary and exception table ([Revenue: completing the VAT3](https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/completing-vat3-return.aspx))
+**Boundary table** (Revenue: completing the VAT3):
 
 | Transaction | Treatment | Boxes |
-| --- | --- | --- |
+|---|---|---|
 | Software subscription invoiced from another EU State | Self-account at the Irish rate | T1 and T2; value in ES2 |
 | Software subscription invoiced from outside the EU | Self-account at the Irish rate | T1 and T2; no ES2 |
-| Supplier invoice from an Irish entity showing Irish VAT | Domestic purchase | T2 only |
-| Consultancy sold to a business in another EU State with a valid VAT number | No Irish VAT; VIES | ES1 |
+| Consultancy sold to a business in another EU State with a valid VAT number | No Irish VAT; VIES statement | ES1 |
 | Consultancy sold to a business outside the EU, with proof it is a business | No Irish VAT | Not in T1 |
 | Goods bought from an EU supplier | Self-account | T1 and T2; value in E2 |
-| Goods sold to an EU business meeting all five conditions | Zero rate; VIES | E1 |
+| Goods sold to an EU business meeting all five zero-rate conditions | 0%; VIES statement | E1 |
 | Import from Great Britain under postponed accounting | Self-account | T1 and T2; PA1 |
-| Subcontractor invoice to you as RCT principal | Self-account, usually at the reduced rate | T1 and T2 |
+| Subcontractor invoice to you as RCT principal | Self-account, usually at 13.5% | T1 and T2 |
 | Restaurant meal, client entertainment, hotel stay | Blocked (except qualifying conference accommodation) | None |
-| Petrol | Blocked unless stock-in-trade | None |
-| Qualifying car bought or leased (not stock, car-hire or driving-school use) | Part of the VAT, if all conditions met | T2 (part) |
-| Car held as stock-in-trade, or used in a car-hire or driving-school business | Separate rules in Revenue's manual "Recovery of VAT on Motor Vehicles"; refer if unsure | T2 as that manual allows |
-| Bank charges, loan interest, insurance premiums, wages, PRSI, PAYE, tax payments, transfers between own accounts | No VAT to reclaim; exclude | None |
+| Bank charges, interest, insurance, wages, PRSI, PAYE, tax payments, transfers between own accounts | No VAT; exclude | None |
 | Commercial rent with VAT on the invoice | Domestic purchase | T2 |
 | Residential rent | No VAT; exclude | None |
 
-**Conservative defaults when evidence is missing:** unknown VAT status of a purchase = not deductible; unknown business-use share = no recovery; unknown customer status for an EU sale = consumer, charge Irish VAT; unknown whether a transaction is in scope = in scope; unknown rate on a sale = standard rate until checked. Flag every default to the client.
+## Deadlines and filing
 
-## Penalties and interest ([fixed penalties](https://www.revenue.ie/en/vat/interest-and-penalties/when-are-penalties-payable-to-revenue/fixed-penalties.aspx); [interest](https://www.revenue.ie/en/vat/interest-and-penalties/when-is-interest-applied-by-revenue/index.aspx))
+**Taxable period.** Two months, starting 1 January, 1 March, 1 May, 1 July, 1 September and 1 November (s.2(1)). The Collector-General may authorise longer periods, up to 12 months (s.77): four-monthly if the annual liability is EUR 3,001 to EUR 14,400, six-monthly if EUR 1 to EUR 3,000. Monthly returns are allowed for businesses usually in repayment. Check the period ROS shows for the client.
 
-- **Interest** on late VAT is 0.0274% per day or part of a day, from the due date until paid. It also applies to a refund received in excess of the amount due, from the date received.
-- **Direct debit payers:** if 80% or more of the annual liability was paid, interest runs on the balance from the due date of the year-end return; if less than 80%, it is backdated to six months before the final filing date of the annual return.
-- **Fixed penalties** of €4,000 each include: failure to register; failure to charge and pay over VAT; failure to keep proper records; failure to meet invoicing rules; failure to file a VAT return; failure to file an RTD; failure to file a VIES statement; issuing a VAT invoice when not registered.
-- **Tax-geared penalties** ([tax-geared penalties](https://www.revenue.ie/en/vat/interest-and-penalties/when-are-penalties-payable-to-revenue/tax-penalties.aspx); [Code of Practice](https://www.revenue.ie/en/tax-professionals/documents/code-of-practice-revenue-compliance-interventions.pdf)) apply to deliberately or carelessly incorrect returns or claims, or failure to file, as a percentage of the tax underpaid. For a first qualifying disclosure: careless without significant consequences 20%, reduced to 10% (prompted disclosure) or 3% (unprompted); careless with significant consequences 40%, 20% or 5%; deliberate 100%, 50% or 10%. "Significant consequences" means the default is more than 15% of the liability. Higher rates apply for second and later disclosures. A company secretary may face a separate €1,500 penalty (€3,000 for deliberate behaviour).
+**VAT3 return and payment** (s.76(1)). File and pay within 9 days after the 10th of the month after the period ends, that is by the **19th** (Revenue's 2026 calendar for tax professionals lists the 19th). Revenue extends this to the **23rd** for those who file on ROS (Revenue: when VAT becomes payable); the RTD manual describes the 23rd as the date for those who pay and file on ROS. Interest runs from the date the tax became payable under s.76 (s.114(1)), so this skill counts days late from the 19th. For 2026 two-monthly periods on ROS: January to February by 23 March; March to April by 23 May; May to June by 23 July; July to August by 23 September; September to October by 23 November; November to December by 23 January 2027. File a return even when nothing is due, with zero (never "nil") in T1 to T4.
 
-## Worked cases ([received services](https://www.revenue.ie/en/vat/vat-on-services/exceptions-general-place-supply-rules-services/received-services/index.aspx); [construction services manual](https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part11-immovable-goods/construction-services/construction-servcies.pdf))
+**VAT3 boxes** (Revenue: completing the VAT3):
 
-**Case 1: registration (services).** A web designer, established in Ireland, sells services only. Her 2026 sales reach €43,000 by September. That exceeds the €42,500 services threshold, so she must register. Had she stayed at or under €42,500 she could still elect, but only from a current date.
+| Box | What goes in it |
+|---|---|
+| T1 VAT on sales | VAT on your supplies, plus self-accounted VAT on EU acquisitions, imports under postponed accounting and services received from abroad |
+| T2 VAT on purchases | Deductible VAT on costs, including the deductible part of the self-accounted items and the flat-rate addition |
+| T3 VAT payable | T1 minus T2, when T1 is greater |
+| T4 VAT repayable | T2 minus T1, when T2 is greater |
+| E1 | Value of goods sent to customers in other EU States |
+| E2 | Value of goods received from suppliers in other EU States |
+| ES1 | Value of services supplied to customers in other EU States |
+| ES2 | Value of services received from suppliers in other EU States (not non-EU) |
+| PA1 | Customs value plus customs duty of goods imported under postponed accounting |
 
-**Case 2: restaurant rate change.** A caterer invoices a business event: €2,000 food (net) plus €500 wine. Event and invoice on 20 June 2026: food at 13.5% = €270, wine at 23% = €115. Event and invoice on 10 July 2026: food at 9% = €180, wine at 23% = €115. The date of the invoice (or supply, if none) decides the rate, not the date of payment.
+Credit notes issued or received adjust T1 and T2.
 
-**Case 3: services from abroad.** ABC Ltd, fully taxable, buys €100,000 of consultancy from a German business: T1 includes €23,000, T2 includes €23,000, ES2 includes €100,000. It also pays a US software company €200 a month: self-account 23% = €46 in T1 and €46 in T2 each month, with nothing in ES2.
+**Direct debit and annual returns** (s.77(5), s.114(3)). The Collector-General may let a trader pay an agreed schedule by monthly direct debit and file one return for the accounting period. If the balance due with that return is more than 20% of the year's liability, interest on it runs from 6 months before the return's due date.
 
-**Case 4: EU goods.** A trader buys €5,000 of stock from Germany for resale: T1 €1,150, T2 €1,150, E2 €5,000, net nil. The same value goes in the RTD sections for EU acquisitions and for purchases for resale.
+**Return of Trading Details (RTD)** (Revenue TDM, VAT RTD, updated February 2026). Every registered person files one a year, with the final VAT3 of the year, by the **23rd of the month after the month in which the income tax or corporation tax accounting period ends** (19 days for those exempt from ROS). It shows net-of-VAT values by rate for: (1) supplies, including exempt, EU and export sales and self-accounted services; (2) EU acquisitions and postponed-accounting imports; (3) purchases for resale; (4) other deductible purchases. No negative figures; OSS sales are left out. While the previous year's RTD is outstanding, refunds under any taxhead are withheld.
 
-**Case 5: construction.** Subcontractor B does €600,000 of building work for A Ltd, which must operate RCT. B's invoice shows no VAT. A Ltd accounts for VAT at 13.5% = €81,000 in T1 and claims €81,000 in T2. B puts nothing in T1 for this job and reclaims its own €13,000 input VAT in T2, so B is due a €13,000 repayment in T4.
+**VIES statements.** Goods supplied to registered customers in other EU States: a statement for each month by the 23rd of the following month (s.82(3)); quarterly by the 23rd after the quarter if supplies do not exceed EUR 50,000 in the quarter or any of the previous 4 quarters (s.82(5)). Services where the EU customer pays the VAT: quarterly by the 23rd after the quarter, or monthly by election (s.83(3), (4)). A nil statement is needed for a period with no supplies if one was required for an earlier period.
 
-**Case 6: qualifying car.** A fully taxable business buys a qualifying car (registered 2026, under 140g/km, at least 60% business use) with €4,000 VAT: it may claim 20% = €800. If it sells the car after 3 months, all €800 is paid back in the period of sale.
+**Repayments** go to a bank account. Revenue may withhold them while returns are outstanding and offset them against other tax owed (Revenue: repayment of VAT).
 
-**Case 7: two-thirds rule and late payment.** A guitar repair is quoted at €300 net: materials cost €220 and labour and profit €80. Materials exceed two-thirds of the price, so the goods rate applies to the whole: €300 at 23% = €69. Separately, a business pays €10,000 of VAT, paid 30 days late: daily interest at 0.0274% on €10,000 for 30 days comes to €82.20.
+**Records** must be kept for 6 years from the date of the latest transaction they relate to (s.84(3)), and longer while a Revenue inquiry, a claim or an appeal on the matter is still open (s.84(4)).
 
-## When to refuse or refer
+**Method, in order.** (1) Confirm registration, period and basis. (2) Collect sales invoices, credit notes, purchase invoices, customs documents and bank statements. (3) Classify every sale by rate and place of supply, using the invoice date for the rate. (4) Find every reverse-charge item and put its VAT in T1 and, if deductible, T2. (5) Test each purchase for input credit and remove blocked items. (6) Complete T1 to T4, E1, E2, ES1, ES2 and PA1. (7) File and pay on ROS by the 23rd. (8) At the year end, file the RTD. Skipping step 4 understates T1 and leaves T2 unclaimed: an error even when the net is nil.
 
-- VAT groups: consolidated filing; refer.
-- Capital Goods Scheme adjustments, supplies or lettings of property, option to tax, and developers: refer to a property VAT specialist.
-- Partial exemption where exempt supplies are more than incidental: the apportionment needs agreement with Revenue; refer.
-- Margin schemes (second-hand goods, art, antiques, travel agents): refer.
-- Flat-rate farmers, sea fishers and horse trainers: special rules; refer.
-- One-Stop Shop and Import One-Stop Shop returns, and customs warehousing: out of scope.
-- Construction where it is unclear whether RCT applies to the contract, or whether parties are connected: get the RCT status on ROS or refer before choosing the treatment.
-- Qualifying apartments, heat pumps and other property-linked second-reduced-rate supplies: refer unless the contract is clearly within Revenue's guidance.
-- Any question of deliberate under-declaration, or a Revenue audit notice: refer to a tax adviser before a disclosure.
+## Penalties and interest
 
-## 2025 periods (for late or amended 2025 returns) ([current VAT rates](https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx); [Finance Act 2024, s.78](https://www.irishstatutebook.ie/eli/2024/act/43/section/78/enacted/en/html))
+**Interest** (s.114). Simple interest at **0.0274% for each day or part of a day** from the date the VAT became payable until paid. The same rate applies to a refund that was not properly due, from the date it was paid. On an assessment, Revenue charges interest from the date the original return was due.
 
-- Rates in 2025: 23%, 13.5%, 9%, 4.8% and 0%, as in 2026, except catering, hot take-away food and hairdressing were at 13.5% for all of 2025, and the flat-rate addition was 5.1%.
-- Thresholds in 2025: €42,500 services and €85,000 goods, from 1 January 2025.
-- Qualifying apartments: the supply of certain qualifying apartments was at the second reduced rate from 8 October 2025 to 25 November 2025, and the supply and construction until completed of qualifying apartments from 26 November 2025 ([second reduced rate](https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/second-reduced-rate-vat.aspx)).
-- The 2025 RTD for a 31 December 2025 year end was due on 23 January 2026; if it is still outstanding, refunds are being withheld.
-- Interest on late 2025 VAT runs at 0.0274% per day from the original due date.
+**Fixed penalties of EUR 4,000** (s.115; Revenue: fixed penalties) include: failure to register; failure to charge and pay over VAT; failure to keep proper records; failure to meet invoicing rules; failure to file a VAT return; failure to file an RTD; failure to file a VIES statement; issuing a VAT invoice when not registered. Where a company commits the failure, the secretary is liable to a separate EUR 4,000 (s.115(4)).
 
-## Completion checklist ([Revenue: completing the VAT3](https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/completing-vat3-return.aspx); [records](https://www.revenue.ie/en/vat/vat-records-invoices-credit-notes/vat-records-to-be-kept/how-long-keep-records.aspx))
+**Tax-geared penalties** (s.116), as a share of the VAT underpaid or over-claimed:
 
-- Registration, period and basis confirmed; cash basis authorisation on file if used.
-- Every sale has a rate or a zero, exempt or outside-scope reason, using the right date for the rate (1 July 2026 changes checked).
-- Every foreign purchase checked for self-accounting; T1 and T2 both carry the self-accounted VAT.
-- EU customer VAT numbers checked on VIES; E1 and ES1 match the VIES return; E2, ES2 and PA1 entered.
-- Every T2 amount backed by a valid invoice or customs receipt; blocked items removed; car claims limited and conditions recorded.
-- Construction invoices checked for RCT status; principal-contractor reverse charge in T1 and T2.
-- T3 or T4 equals the difference between T1 and T2; zeros, not "nil", on an empty return.
-- Filed and paid on ROS by the 23rd; RTD diary date set for the 23rd of the month after the year end.
-- Records kept (claim-related records for six years or until the matter is finalised); defaults and open questions listed for the client.
+| Behaviour | No cooperation | Full cooperation | Plus prompted qualifying disclosure | Plus unprompted qualifying disclosure |
+|---|---|---|---|---|
+| Deliberate | 100% | 75% | 50% | 10% |
+| Careless, difference over 15% of the VAT properly payable | 40% | 30% | 20% | 5% |
+| Careless, difference 15% or less | 20% | 15% | 10% | 3% |
+
+A second qualifying disclosure within 5 years raises the reduced rates (s.116(13)). Using an incorrect invoice, VAT number, credit note or record carries EUR 3,000 if careless and EUR 5,000 if deliberate (s.116(8)). A company secretary faces a separate EUR 1,500 penalty, EUR 3,000 for deliberate behaviour (s.116(17)). A qualifying disclosure must be in writing, signed, with a declaration that it is complete, and paid with the tax and the interest. A prompted disclosure is one made after Revenue notifies the date an audit or inquiry will start and before it starts; once an inquiry has started and the person has been contacted, a disclosure no longer qualifies (s.116(1), (15)). An honest error that comes to light and is not fixed without unreasonable delay is treated as deliberate (s.116(9)).
+
+## Cross-border points
+
+- **Services sold to EU businesses.** No Irish VAT. Check the customer's VAT number on VIES, show it on the invoice, state that the reverse charge applies, and report the value in ES1 and on the VIES statement. If you treat a consumer as a business, you owe the VAT (Revenue: supplying services to business customers abroad).
+- **Goods sold to EU businesses** (Revenue: intra-Community supplies). 0% only if all five conditions are met: the customer is registered in another Member State; you hold its VAT number with country prefix; both numbers are on the invoice; the goods leave Ireland; and correct VIES statements are filed. Otherwise charge Irish VAT. Value in E1.
+- **Sales to EU consumers.** Irish VAT applies unless your EU-wide distance sales of goods and telecoms, broadcasting and electronic services exceed EUR 10,000 in the current or previous calendar year (s.35), or you opted for taxation in the customer's State. Above that, the customer's State's VAT applies, usually through the One-Stop Shop (referred).
+- **Services bought from abroad.** Self-account at the Irish rate (s.12). Give your VAT number to EU suppliers so they do not charge their own VAT. Non-EU services go in T1 and T2 but not ES2.
+- **Goods from other EU States.** Self-account in T1, reclaim in T2 if deductible, value in E2. Revenue's example: EUR 5,000 of German stock at 23% gives EUR 1,150 in T1 and T2.
+- **Imports, including from Great Britain** (Postponed accounting TDM). Goods from outside the EU, including Great Britain, are imports. Under postponed accounting the VAT goes in T1 and T2 and the customs value plus duty in PA1; otherwise VAT is paid at entry and reclaimed in T2 with the customs document. Goods moving between Ireland and Northern Ireland stay inside the EU VAT regime; services do not.
+- **Non-established suppliers** making supplies to taxable customers in Ireland register whatever their turnover (Revenue: VAT thresholds), unless the customer self-accounts.
+
+## Worked examples
+
+### Example 1: consultancy company, September to October 2026
+
+Bray Advisory Ltd, registered, on the invoice basis, files two-monthly on ROS. In September and October 2026 it invoices Irish clients EUR 60,000 net at 23%: output VAT EUR 13,800. It invoices EUR 20,000 to a company in Germany that gave a valid VAT number: no Irish VAT, EUR 20,000 in ES1 and on the quarterly VIES statement. It pays a US software company EUR 1,000, with no VAT charged. The supplier is outside Ireland and Bray is a business, so Bray self-accounts at 23%: EUR 230 in T1 and EUR 230 in T2 (not in ES2, as the supplier is outside the EU). Its Irish purchase invoices carry EUR 2,100 of deductible VAT, after removing a client lunch (blocked).
+
+T1 = 13,800 + 230 = EUR 14,030. T2 = 2,100 + 230 = EUR 2,330. T3 = EUR 11,700, due by 19 November 2026 (23 November on ROS). If Bray misses the ROS date and pays on 29 November, interest runs from 19 November, the date the tax became payable (s.76(1), s.114(1)): 11,700 × 0.0274% × 10 days = EUR 32.06.
+
+```oa-check
+name: Bray Advisory Ltd, Sep-Oct 2026 VAT3 with a reverse-charged US service, paid 10 days after 19 November
+inputs:
+  irish_sales: 60000
+  eu_b2b_services: 20000
+  us_software: 1000
+  domestic_input_vat: 2100
+  days_late: 10
+steps:
+  - output_vat: irish_sales * 23 / 100
+  - reverse_charge_vat: us_software * 23 / 100
+  - t1: output_vat + reverse_charge_vat
+  - t2: domestic_input_vat + reverse_charge_vat
+  - t3: t1 - t2
+  - es1: eu_b2b_services
+  - interest: round(t3 * 0.0274 / 100 * days_late, 2)
+expected:
+  output_vat: 13800
+  reverse_charge_vat: 230
+  t1: 14030
+  t2: 2330
+  t3: 11700
+  es1: 20000
+  interest: 32.06
+```
+
+### Example 2: restaurant after the 1 July 2026 rate change, with a careless error
+
+The Harbour Kitchen Ltd runs a restaurant. In July and August 2026 it sells food for EUR 90,000 net and drinks (alcohol and soft drinks) for EUR 30,000 net. From 1 July 2026 the food is at 9% (Finance Act 2025 s.71); alcohol and soft drinks stay at 23%. Correct output VAT: 8,100 + 6,900 = EUR 15,000. Deductible input VAT is EUR 4,000, so the correct T3 is EUR 11,000, due by 19 September 2026 (23 September on ROS).
+
+The till was set up wrongly and put the drinks at 9% too. The return showed EUR 10,800 of output VAT and T3 of EUR 6,800, which was paid on time. The VAT short is 30,000 × (23% − 9%) = EUR 4,200, which is 38% of the EUR 11,000 properly payable: over 15%. Revenue writes to say a compliance intervention will start on a set date. Before that date, on 23 November 2026, the company makes a prompted qualifying disclosure in writing and pays the EUR 4,200 with interest, and then cooperates fully. The careless penalty is 20% of EUR 4,200 = EUR 840 (s.116(7)(b)(I)(B)). Interest runs from 19 September, when the tax became payable (s.114(1)): 65 days to 23 November, so 4,200 × 0.0274% × 65 = EUR 74.80.
+
+```oa-check
+name: Harbour Kitchen Ltd, Jul-Aug 2026, drinks wrongly at 9%, prompted disclosure, interest from 19 September
+inputs:
+  food: 90000
+  drinks: 30000
+  input_vat: 4000
+  days_late: 65
+steps:
+  - food_vat: food * 9 / 100
+  - drinks_vat: drinks * 23 / 100
+  - correct_t3: food_vat + drinks_vat - input_vat
+  - declared_t3: (food + drinks) * 9 / 100 - input_vat
+  - shortfall: correct_t3 - declared_t3
+  - share_of_liability: round(shortfall / correct_t3, 4)
+  - penalty: shortfall * 20 / 100
+  - interest: round(shortfall * 0.0274 / 100 * days_late, 2)
+expected:
+  food_vat: 8100
+  drinks_vat: 6900
+  correct_t3: 11000
+  declared_t3: 6800
+  shortfall: 4200
+  share_of_liability: 0.3818
+  penalty: 840
+  interest: 74.80
+```
+
+## Ask the client first
+
+1. **Registration and turnover.** Are you registered, from what date, and on which period and basis (invoice or Revenue-authorised cash basis)? If not registered: turnover in 2025 and so far in 2026, and is it goods, services or both?
+2. **What you sell.** Any catering, hot food, hairdressing, hotel, construction, energy or livestock supplies, or exempt sales (finance, insurance, medical, education, residential letting)? Did any sale straddle 1 July 2026?
+3. **Who you sell to and where.** Do EU customers give you a VAT number? Do you sell goods abroad or to EU consumers online?
+4. **What you buy from abroad.** Software, advertising, consultants, stock from the EU, imports from Great Britain or elsewhere.
+5. **Construction.** Are you a principal contractor operating RCT, a subcontractor, or both? Are any customers or suppliers connected to you?
+6. **Cars and open returns.** Any business car (first registration date, CO2, business use)? Is any VAT3, VIES statement or RTD outstanding, and when does your accounting year end?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Value-Added Tax Consolidation Act 2010, revised to 1 August 2026 (Law Reform Commission): ss.2, 6, 9, 12, 16, 35, 37, 41, 46, 53A, 59, 60, 62, 74, 75, 76, 77, 80, 82, 83, 84, 92B, 99, 114, 115, 116; Schs. 2 and 3 | https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html | 2026-10-24 |
+| Finance Act 2025, Part 3 (ss.67 to 77), in particular s.68 (threshold tests), s.69 (energy to 2030), s.71 (9% from 1 July 2026), s.73 (flat-rate addition), s.76 (fixed penalties for payment service providers; no change for other traders) | https://www.irishstatutebook.ie/eli/2025/act/18/enacted/en/html | 2026-10-24 |
+| Finance Act 2025, s.71 | https://www.irishstatutebook.ie/eli/2025/act/18/section/71/enacted/en/html | 2026-10-24 |
+| Revenue, current VAT rates (2023 to 2026) | https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx | 2026-10-24 |
+| Revenue, second reduced rate (published 1 July 2026) | https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/second-reduced-rate-vat.aspx | 2026-10-24 |
+| Revenue, reduced rate (published 1 July 2026) | https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/reduced-rate-vat.aspx | 2026-10-24 |
+| Revenue, VAT thresholds (published 6 May 2026) | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx | 2026-10-24 |
+| Revenue, electing to register | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/elect-register-vat.aspx | 2026-10-24 |
+| Revenue, EU VAT SME Scheme | https://www.revenue.ie/en/vat/vat-registration/eu-vat-sme-scheme/index.aspx | 2026-10-24 |
+| Revenue, when VAT becomes payable (19th, 23rd on ROS; period options) | https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/when-vat-becomes-payable.aspx | 2026-10-24 |
+| Revenue, completing the VAT3 (published 28 July 2026) | https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/completing-vat3-return.aspx | 2026-10-24 |
+| Revenue, repayment of VAT | https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/vat-repayment.aspx | 2026-10-24 |
+| Revenue, who may opt for the moneys received basis (published 6 October 2026) | https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/who-can-opt-moneys-received-basis.aspx | 2026-10-24 |
+| Revenue, sums included in the moneys received basis | https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/sums-included-money-received-basis.aspx | 2026-10-24 |
+| Revenue, moneys received basis eligibility and cancellation | https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/vat-moneys-received-basis-eligibility-cancellation.aspx | 2026-10-24 |
+| Revenue, who can reclaim VAT | https://www.revenue.ie/en/vat/reclaiming-vat/who-can-reclaim-vat.aspx | 2026-10-24 |
+| Revenue, two-thirds rule | https://www.revenue.ie/en/vat/vat-on-services/two-thirds-rule/index.aspx | 2026-10-24 |
+| Revenue, received services | https://www.revenue.ie/en/vat/vat-on-services/exceptions-general-place-supply-rules-services/received-services/index.aspx | 2026-10-24 |
+| Revenue, supplying services to business customers abroad | https://www.revenue.ie/en/vat/vat-on-services/when-is-vat-charged-on-services/vat-obligations-of-Irish-traders-supplying-services-to-business-customers-abroad.aspx | 2026-10-24 |
+| Revenue, supplies of goods to businesses in the EU | https://www.revenue.ie/en/vat/goods-and-services-to-and-from-abroad/intracommunity-supplies/supplies-of-goods-to-businesses-in-the-european-union-eu.aspx | 2026-10-24 |
+| Revenue, self-accounting on EU acquisitions | https://www.revenue.ie/en/vat/goods-and-services-to-and-from-abroad/acquisitions-from-other-eu-member-states/self-accounting-for-vat.aspx | 2026-10-24 |
+| Revenue, calendar of key dates for tax professionals, 2026 (VAT3 and RTD on the 19th) | https://www.revenue.ie/en/tax-professionals/calendar/index.aspx | 2026-10-24 |
+| Revenue, interest (published 13 October 2026) | https://www.revenue.ie/en/vat/interest-and-penalties/when-is-interest-applied-by-revenue/index.aspx | 2026-10-24 |
+| Revenue, fixed penalties (published 20 April 2026) | https://www.revenue.ie/en/vat/interest-and-penalties/when-are-penalties-payable-to-revenue/fixed-penalties.aspx | 2026-10-24 |
+| Tax and Duty Manual, VAT Return of Trading Details (updated February 2026) | https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part09-obligations-accountable-persons/return/VAT-RTD-S76.pdf | 2026-10-24 |
+| Tax and Duty Manual, VAT treatment of construction services (reviewed August 2026) | https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part11-immovable-goods/construction-services/construction-servcies.pdf | 2026-10-24 |
+| Tax and Duty Manual, partial recovery of VAT on qualifying passenger motor vehicles (reviewed December 2024) | https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part03-taxable-transactions-goods-ica-services/Goods/partial-recovery-of-VAT-on-qualifying-passenger-motor-vehicles.pdf | 2026-10-24 |
+| Tax and Duty Manual, postponed accounting | https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part07-provisions-relating-to-imports-exports/postponed-accounting.pdf | 2026-10-24 |
+
+Not yet confirmed: whether Revenue, in practice, charges interest only from the 23rd for a ROS filer who pays late (this skill follows s.76(1) and s.114(1) and counts from the 19th); the tax point for services received from abroad (the old version said the earliest of invoice, payment or the 15th of the month after the service; s.74 does not say this and the rule was not found in the law read); the legal basis for the ROS extension to the 23rd (read on Revenue's page only, not in the Taxes Consolidation Act); the monthly-return option for repayment traders (Revenue practice, no figure in s.77); the item-by-item lists of Schedules 2 and 3 beyond the paragraphs named above; the VIES statement threshold set by regulations for annual statements under s.82(4); any VAT changes in Finance Bill 2026 (Budget 2027), not enacted on 2026-10-24 and not read; the EU-goods and RTD treatment of One-Stop Shop sales beyond leaving them out of the RTD.
 
 <!-- openaccountants-cta-block -->
 
@@ -265,4 +304,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

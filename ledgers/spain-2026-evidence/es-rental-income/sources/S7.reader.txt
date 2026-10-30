@@ -1,0 +1,612 @@
+
+
+
+
+[[ID:ctl00_Head1]]
+
+	DYCTEA
+
+    
+    
+    
+    
+    
+
+
+
+[[ID:header]]
+
+    
+    
+        
+[[ID:headerEscudo]]
+
+        
+[[ID:lnkLogo]]
+
+            
+[[ID:imgLogo]]
+
+         
+        
+        
+[[ID:headerTitle]]
+
+        
+[[ID:ctl00_Titulo]]
+
+Doctrina y Criterios de los Tribunales Económico-Administrativos
+
+        
+        
+[[ID:headerEscudoTea]]
+
+            
+            
+[[ID:img1]]
+
+            
+        
+    
+    
+
+
+
+    
+[[ID:aspnetForm]]
+
+
+
+[[ID:__VIEWSTATE]]
+
+
+
+
+
+	
+[[ID:__VIEWSTATEGENERATOR]]
+
+
+    
+        
+[[ID:ctl00_pnAyuda]]
+
+	
+        
+        
+        Ayuda
+        
+        
+        
+        
+
+        
+
+    Volver
+
+
+
+
+
+[[ID:ctl00_contentBody_pnCriterio]]
+
+	
+    
+[[ID:criterioBloque]]
+
+        
+[[ID:criterioDatos]]
+
+            
+[[ID:criterioDatosTitulo]]
+
+                Criterio 1 de 1 de la resolución: 00/05138/2013/00/00
+            
+            
+[[ID:criterioDatosCalificacion]]
+
+                Calificación: Doctrina
+            
+            
+[[ID:criterioDatosUnidad]]
+
+                Unidad resolutoria: TEAC
+            
+            
+[[ID:criterioDatosFecha]]
+
+                Fecha de la resolución: 08/09/2016
+            
+        
+        
+[[ID:criterioContenido]]
+
+            
+[[ID:criterioDatosAsunto]]
+
+                Asunto: 
+
+IRPF. Arrendamiento de inmueble destinado a vivienda. Reducción en caso de que el arrendatario sea una persona jurídica.
+
+            
+            
+[[ID:criterioDatosContenido]]
+
+                Criterio: 
+
+                
+Resulta procedente la aplicación de la reducción prevista en el apartado segundo del artículo 23 de la Ley 35/2006, de 28 de noviembre, reguladora del Impuesto sobre la Renta de las Personas Físicas, sobre los rendimientos netos derivados del arrendamiento de bienes inmuebles cuando siendo el arrendatario una persona jurídica, quede acreditado que el inmueble se destina a la vivienda de determinadas personas físicas. 
+
+En el mismo sentido también se pronuncian tanto el TSJ de Galicia en sentencia 300/2015 de fecha 3 de junio de 2015 (rec. nº 15500/2014), el TSJ de Cataluña entre otras en sentencias de 17 de julio de 2012 (rec. nº 612/2009) y de 21 de febrero de 2014 (rec. nº 744/2011) así como el TSJ de Madrid en sentencias de 18 de abril (rec. nº 1121/2010) y de 23 de abril de 2013 (rec. nº 1150/2010). 
+
+Asimismo, el presente criterio es el adoptado, además de por el TEAR de Andalucía que dictó la resolución concreta que aquí se recurre, por el TEAR de Madrid en resoluciones nº 28/3266/09 y 28/6853/09 de 29 de marzo 2010, TEAR de Cataluña en resolución 43/540/2012 de 30 de junio de 2015 y TEAR de Valencia 46/348/2011 de 30 de septiembre de 2011.
+
+ 
+
+ 
+
+ 
+
+                    
+            
+[[ID:criterioDatosNormas]]
+
+                Referencias normativas: 
+
+                
+[[ID:referenciasNormativas]]
+
+Ley 35/2006 Impuesto sobre la Renta de las Personas Físicas IRPF                                                                                                                                                                                                
+23.2
+
+
+            
+            
+[[ID:criterioDatosConceptos]]
+
+                Conceptos: 
+
+                
+Acreditación
+
+Arrendamiento/alquiler
+
+Finalidad
+
+Impuesto sobre la Renta de las Personas Físicas IRPF
+
+Inmuebles
+
+Persona jurídica
+
+Personal empleado/asalariado
+
+Reducciones
+
+Rendimientos de capital inmobiliario
+
+Viviendas
+
+            
+        
+        
+[[ID:criterioDatosResolucion]]
+
+            Texto de la resolución: 
+
+
+                En la Villa de Madrid, en la fecha arriba señalada, en el recurso extraordinario de alzada para la unificación de criterio interpuesto por la DIRECTORA DEL DEPARTAMENTO DE GESTIÓN TRIBUTARIA DE LA AGENCIA ESTATAL DE ADMINISTRACIÓN TRIBUTARIA con domicilio, a efectos de notificaciones, en C/ Infanta  Mercedes, núm. 37, 28020-Madrid, contra resolución del Tribunal Económico-Administrativo Regional de Andalucía de fecha 18 de enero de 2013 por la que se resuelve, estimándola, la reclamación económico-administrativa número 11/01604/2011.
+
+
+
+ ANTECEDENTES DE HECHO
+
+
+
+             
+
+
+
+ PRIMERO.-
+
+
+
+ De los antecedentes obrantes en el expediente resultan acreditados los siguientes hechos:
+
+
+
+ 1.- Poniendo fin a un procedimiento de verificación de datos, la Administración de la AEAT de A.... notificó al obligado tributario liquidación provisional por el Impuesto sobre la Renta de las Personas Físicas del ejercicio 2009, de la que resultó a ingresar un importe de 5.846,42 euros.
+
+
+
+ 2.- El obligado tributario presenta escrito manifestando su disconformidad con la propuesta de liquidación, escrito que, habida cuenta que a la fecha de su presentación ya estaba notificada la liquidación, es recalificado como recurso de reposición. 
+
+
+
+ 3.- La Administradora de la AEAT de A..... dicta acuerdo desestimatorio del recurso de reposición al considerar que: 
+
+
+
+ “(....) 2. Reducción por arrendamiento de vivienda. Contempla el art. 23 de la Ley 35/2006, reguladora de este Tributo, los gastos deducibles y reducciones de los rendimientos del capital inmobiliario. “2. 1º. En los supuestos de arrendamiento de bienes inmuebles destinados a vivienda, el rendimiento neto calculado con arreglo a lo dispuesto en el apartado anterior, se reducirá en un 50 por ciento. Tratándose de rendimientos netos positivos, la reducción sólo resultará aplicable respecto de los rendimientos declarados por el contribuyente”. En nuestro caso, alega el contribuyente que se trata de un alquiler de vivienda. En el contrato de arrendamiento fechado 13 de Mayo de 2009, figura como arrendatario  XXX España S.A. con CIF... para destinar el inmueble como vivienda habitual de su Director General  D.D.  y su familia. En este sentido debe entenderse que se trata del arrendamiento de un bien inmueble destinado a vivienda, de acuerdo con lo dispuesto en el artículo 2 de la Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos (BOE de 25 de noviembre), cuando el arrendamiento recaiga sobre una edificación habitable cuyo destino primordial sea satisfacer la necesidad permanente de vivienda del arrendatario. En la medida en que se cumpla el anterior requisito, se aplicará la reducción del 50 por 100, que deberá operar sobre el saldo positivo de los rendimientos netos procedentes del arrendamiento de inmuebles destinados a vivienda. Así, no resultará de aplicación dicha reducción en el supuesto en el que el bien se arriende a una persona jurídica, ya que en este caso, con independencia de la posterior utilización de la vivienda por parte de esta última, no constituye la vivienda del arrendatario, por lo que se debe entender, a los exclusivos efectos de este Impuesto, que se trata de un arrendamiento distinto del de vivienda.”
+
+
+
+ 4.- Contra el acuerdo anterior, el obligado tributario interpuso reclamación económico-administrativa ante el Tribunal Económico-Administrativo Regional de Andalucía (en adelante, TEAR) .
+
+
+
+ El TEAR acuerda estimar la reclamación, razonando en los siguientes términos:
+
+
+
+ “SEGUNDO: La liquidación practicada resulta de modificar el rendimiento de capital inmobiliario por bienes arrendados y ello como consecuencia de suprimir la totalidad de los gastos deducidos y de no admitir la reducción del rendimiento por inmueble destinado a vivienda.
+
+
+
+ En cuanto a los gastos deducibles, (...)
+
+
+
+ En cuanto a la improcedencia de la reducción por inmueble destinado a vivienda, la razón de su inadmisión es que el arrendatario es una persona jurídica por lo que es imposible que el inmueble se destine a satisfacer la necesidad de vivienda, tratándose de arrendamiento distinto a vivienda.
+
+
+
+ El artículo 23.2.1º de la Ley 35/2006, de 28 de noviembre, del IRPF, dispone que, en los supuestos de arrendamiento de bienes inmuebles destinados a vivienda, el rendimiento neto se reducirá en un 50 por ciento. Tratándose de rendimientos netos positivos, la reducción sólo resultará aplicable respecto de los rendimientos declarados por el contribuyente.
+
+
+
+ En el supuesto que nos ocupa consta que el rendimiento declarado de capital inmobiliario corresponde al devengado por el arrendamiento de un inmueble destinado a vivienda.
+
+
+
+ El Órgano gestor motiva la improcedencia de la reducción pretendida por el contribuyente en el hecho de ser el arrendatario una persona jurídica; consideración que este Tribunal no comparte pues la norma citada establece como único requisito el destino del inmueble arrendado, requisito que, visto el contrato de arrendamiento suscrito en 13 de mayo de 2009 concurre en este caso. Tanto en la manifestación 4, como en la cláusula 1.1 del referido contrato, se expresa que el objeto del arrendamiento se destinará a vivienda habitual del director general de la compañía y su familia, así como que el cambio de uso sin previa autorización expresa por escrito del arrendador será causa bastante de resolución del contrato; quedando prohibido el uso comercial, la cesión, el subarrendamiento. Por lo que consideramos que resulta procedente la reducción del rendimiento neto de capital inmobiliario. 
+
+
+
+ En consecuencia con lo expuesto, procede anular la liquidación provisional girada”.
+
+
+
+  
+
+
+
+  
+
+
+
+ SEGUNDO.-
+
+
+
+ Frente a la citada resolución del TEAR, la Directora del Departamento de Gestión Tributaria de la AEAT interpone el presente recurso extraordinario de alzada para la unificación de criterio, al estimarla gravemente dañosa y errónea para el interés general, trascendiendo el criterio aplicado al expediente concreto. En síntesis, las razones a juicio de la recurrente por las que procedería la estimación del presente recurso, serían las que a continuación se exponen:
+
+
+
+ a).- El caso que nos ocupa es el de un sujeto que arrienda un inmueble que por naturaleza es susceptible de ser utilizado como vivienda, si bien el arrendatario no es la persona física que va a ocupar la vivienda, sino una sociedad mercantil. 
+
+
+
+ El artículo 2 de la Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos, exige para calificar un arrendamiento como de vivienda que el mismo recaiga sobre una edificación habitable cuyo destino primordial sea satisfacer la necesidad permanente de vivienda del arrendatario. 
+
+
+
+ Es evidente que este requisito no se cumple, ya que el arrendatario, una sociedad mercantil, no tiene una necesidad permanente de vivienda, por lo que se acaba concluyendo que no estamos ante un contrato de arrendamiento de vivienda y, por lo tanto, que no cabe la aplicación de la reducción del artículo 23.2 de la LIRPF.
+
+
+
+ b).- Esta reducción aparece por primera vez en la normativa del impuesto por efecto de la Ley 46/2002, de 18 de diciembre, de reforma parcial del IRPF cuyo artículo 11 introducía un nuevo apartado segundo en el por entonces vigente artículo 21 de la Ley 40/1998, de 9 de diciembre, con el siguiente tenor literal:
+
+
+
+ “2. En los supuestos de arrendamiento de bienes inmuebles destinados a vivienda, el rendimiento neto calculado con arreglo a lo dispuesto en el apartado anterior se reducirá en un 50 por 100.” 
+
+
+
+  
+
+
+
+ La finalidad de la reforma era, según la exposición de motivos de la Ley 46/2002, introducir un incentivo adicional para incrementar la oferta de las viviendas arrendadas y minorar el precio de los alquileres.
+
+
+
+ En opinión de este Centro Directivo el objetivo último de la medida, minorar el precio de los alquileres, es determinante para concluir que el legislador estaba pensando en un arrendatario de la vivienda que es, además, destinatario directo del servicio.
+
+
+
+ Así, entendemos que la medida se adopta, fundamentalmente, con la finalidad de favorecer el acceso a una necesidad humana básica, como es la vivienda, a un sector de la población que no cuenta con los recursos suficientes para acceder a una vivienda en propiedad y que, además, se encuentra con importantes dificultades para el acceso a una vivienda en régimen de alquiler, como consecuencia de los altos precios medios que se piden en el mercado.
+
+
+
+ En atención a ello, entendemos que la medida perdería parte de su sentido si se admitiese su aplicación cuando el arrendador es una sociedad mercantil, aunque el destino final del inmueble vaya a ser servir de vivienda a sus empleados, pues en el arrendamiento por parte de una sociedad mercantil influyen condicionantes distintos a los que intervienen cuando el arrendatario es una persona física.
+
+
+
+ En el caso de la persona física arrendataria el precio a satisfacer al arrendador se constituye en el dato económico fundamental a la hora de tomar la decisión de contratar. Por el contrario, para una sociedad mercantil ese dato constituye sólo una de las magnitudes a considerar. Es decir, para la sociedad mercantil la decisión de arrendar una vivienda para su cesión posterior a un empleado se encuadra dentro de la política retributiva de la entidad, en la que influyen diversos condicionantes, económicos, financieros, fiscales...
+
+
+
+ Partiendo de una masa salarial concreta la decisión de repartir el total de la misma entre retribuciones dinerarias y en especie depende de todos esos condicionantes, si bien parece claro que el coste real para la sociedad de un arrendamiento de vivienda para sus empleados no coincide con el coste para un arrendatario persona física: como hemos expresado anteriormente, el coste para la persona física, en ausencia de beneficios fiscales, coincidiría con el precio a satisfacer al arrendador, mientras que en el caso de la sociedad hay que tener en cuenta que parte de ese precio será recuperado por la vía de la deducción en su imposición personal sobre beneficios, al ser un coste de personal.
+
+
+
+ Desde esta perspectiva, el Departamento no cree que fuese intención del legislador que con esta medida se produjese una reducción de los precios de los alquileres que pudiera desembocar en un incentivo a las empresas a incorporar esta fórmula a sus políticas retributivas, porque, además, el efecto podría ser contraproducente: la idea de partida es conseguir la reducción de precios por la vía del incremento de la oferta, pero si simultáneamente se produce un incremento de la demanda podría producirse una neutralización, cuando menos parcial, del efecto. 
+
+
+
+ En conclusión, entendemos que también desde el punto de vista de la finalidad de la norma su aplicación se debe restringir a los caso en que el arrendatario es la persona que va a ocupar el inmueble como vivienda.
+
+
+
+ c).- El criterio recurrido entra en abierta contradicción con el que ha sido expresado por la Dirección General de Tributos en las consultas vinculantes números V0063-11, de 18 de enero de 2011, y V0437-12, de 27 de febrero de 2012. 
+
+
+
+ También se pone de manifiesto que el criterio recurrido parece ser seguido por el Tribunal Económico-Administrativo de Madrid en la resolución de reclamaciones  nº 28/3266/09 y 28/6853/09 de 29 de marzo de 2010.
+
+
+
+ Por lo expuesto, finaliza solicitando de este Tribunal Central que unifique criterio en el sentido de declarar que “La reducción prevista en el apartado segundo del artículo 23 de la Ley 35/2006, del Impuesto sobre la Renta de las Personas Físicas, no es de aplicación cuando el inmueble arrendado no constituye la vivienda del arrendatario.”
+
+
+
+  
+
+
+
+ FUNDAMENTOS DE DERECHO
+
+
+
+ PRIMERO.-
+
+
+
+ Concurren los requisitos de competencia y plazo, que son presupuesto para la admisión a trámite del presente recurso, de acuerdo con lo establecido en el artículo 242 y de la Ley 58/2003, de 17 de Diciembre, Ley General Tributaria (LGT).
+
+
+
+  
+
+
+
+ SEGUNDO.-
+
+
+
+ La cuestión controvertida consiste en determinar si el contribuyente por IRPF arrendador de un inmueble susceptible de ser utilizado como vivienda, tiene derecho o no a aplicar la reducción prevista en el apartado segundo del artículo 23 de la Ley 35/2006, del Impuesto sobre la Renta de las Personas Físicas, cuando siendo el arrendatario una persona jurídica, quede acreditado que el inmueble se destina a la vivienda de determinadas personas físicas. 
+
+
+
+ TERCERO.-
+
+
+
+  El artículo 23 de la Ley 35/2006 del Impuesto sobre la Renta de las Personas Físicas (en adelante. LIRPF), en la redacción vigente en el ejercicio 2009, establecía:
+
+
+
+ “2. 1º. En los supuestos de arrendamiento de bienes inmuebles destinados a vivienda, el rendimiento neto calculado con arreglo a lo dispuesto en el apartado anterior, se reducirá en un 50 por ciento. Tratándose de rendimientos netos positivos, la reducción sólo resultará aplicable respecto de los rendimientos declarados por el contribuyente”. 
+
+
+
+ En la redacción hoy vigente, el mencionado precepto en su apartado segundo se expresa en términos idénticos a los efectos aquí pretendidos señalando que:
+
+
+
+ “2. En los supuestos de arrendamiento de bienes inmuebles destinados a vivienda, el rendimiento neto positivo calculado con arreglo a lo dispuesto en el apartado anterior, se reducirá en un 60 por ciento. Esta reducción sólo resultará aplicable respecto de los rendimientos declarados por el contribuyente”.
+
+
+
+ Según dispone el artículo 12.1 de la LGT, las normas tributarias se interpretarán con arreglo a lo dispuesto en el apartado 1 del artículo 3.º del Código Civil, es decir, “según el sentido propio de sus palabras, en relación con el contexto, los antecedentes históricos y legislativos, y la realidad social del tiempo en que han de ser aplicadas, atendiendo fundamentalmente al espíritu y finalidad de aquéllas”.
+
+
+
+ En aplicación de los citados criterios, la interpretación de una norma ha de partir, en primer lugar, del sentido propio de sus palabras y, en consecuencia, desde un punto de vista literal, el precepto anteriormente trascrito de LIRPF otorga al contribuyente, como perceptor de la renta por alquiler de un inmueble, un incentivo fiscal de reducción del rendimiento neto siempre que se cumpla el único requisito especificado relativo al destino dado al objeto del contrato, esto es, únicamente en función del destino a vivienda del inmueble arrendado y accesoriamente, si el rendimiento es positivo, que este haya sido declarado. En el texto de la Ley no se hace referencia alguna a la condición del arrendatario y, por tanto, literalmente, el beneficio se establece independientemente de la misma. Donde la Ley no distingue, no se debe distinguir. 
+
+
+
+ También ha de tenerse en cuenta la diferencia existente entre los dos apartados de la norma. Así, mientras el apartado 2º se exige en el arrendatario una determinada edad para ampliar el importe de la reducción, en este apartado 1º del punto 2 del artículo 23 de cuya aplicación se trata ahora, no se menciona condición, naturaleza o característica alguna, que en su caso, habría de reunir el arrendatario. En consecuencia, exigir que este sea necesariamente una persona física y no una persona jurídica, supondría introducir un nuevo requisito no establecido literalmente en la Ley del Impuesto.
+
+
+
+ El cumplimiento del único requisito exigido, esto es, que el inmueble se destine a la vivienda, puede quedar perfectamente acreditado por los hechos y los términos del contrato de arrendamiento. Así, en el caso contemplado por la liquidación provisional anulada por el TEAR, no nos encontramos ante un arrendamiento de inmueble a una sociedad para un destino genérico de utilización por “sus empleados”, sino que desde el primer momento ha quedado plenamente identificada la finalidad del arrendamiento en los términos expresados en la norma, constando el uso exclusivo de la vivienda para una persona física determinada, al expresar los términos del contrato que el objeto del arrendamiento se destinará a vivienda habitual del director general de la compañía y su familia, así como que el cambio de uso sin previa autorización expresa por escrito del arrendador será causa bastante de resolución del contrato, quedando prohibido el uso comercial, la cesión y el subarrendamiento. En suma, se ha cumplido todo lo exigido por la norma con independencia de que el arrendatario sea una sociedad mercantil que abona la renta y de que la persona física que habita la vivienda sea personal que en ella presta sus servicios.
+
+
+
+ CUARTO.-
+
+
+
+ Estimar que la vivienda debe ser ocupada por el propio arrendatario de acuerdo con lo establecido por la legislación de arrendamientos urbanos, tal como alega la recurrente al oponerse al criterio del TEAR que anuló la liquidación provisional que eliminó el beneficio fiscal, supondría una alteración de la interpretación literal expuesta. 
+
+
+
+ Aquí se plantea la cuestión de si el concepto de arrendamiento de vivienda debe entenderse necesariamente en los términos que expresa la Ley de Arrendamientos Urbanos, artículo 2. Pues bien, a juicio de este Tribunal Central, dicho precepto no pretende definir qué se entiende por arrendamiento de vivienda a todos los efectos, sino, por contraposición a los arrendamientos para uso distinto del de vivienda (artículo 3 LAU), delimitar el régimen jurídico que le es aplicable (artículos 1 y 4 LAU), existiendo de hecho supuestos de arrendamientos de viviendas que aun estando excluidos del régimen general previsto para dichos arrendamientos en la LAU (artículo 4.2) serían claramente acreedores a la reducción objeto de controversia (artículo 23.2 LIRPF). Por ello, el mero recurso al concepto de arrendamiento de vivienda plasmado en la LAU no es suficiente para negar el derecho al incentivo fiscal que el citado artículo 23.2 establece en beneficio del arrendador en función de que el destino dado al inmueble sea el de vivienda, independientemente de que, en casos como éste, se contrate como parte arrendataria con la empresa en vez de con los empleados que vayan a ocupar efectivamente la vivienda.  
+
+
+
+ Además, de admitir la interpretación que hace la Oficina Gestora al considerar que no existe “arrendamiento de vivienda” porque el arrendatario, una sociedad mercantil, no tiene una necesidad permanente de vivienda, se produciría una consecuencia inadmisible para la aplicación sistemática del tributo, por cuanto existirían en las normas reguladoras del Impuesto sobre la Renta de las Personas Físicas dos conceptos distintos de “arrendamiento de vivienda”; uno a los efectos de la controvertida reducción y otro a los efectos de las “rentas sujetas a retención o ingreso a cuenta” puesto que el artículo 75.3.g) del Reglamento del Impuesto exceptúa de la obligación de retener a las personas jurídicas que satisfagan rendimientos procedentes de arrendamientos en los siguientes supuestos: “1º Cuando se trate de arrendamiento de vivienda por empresas para sus empleados”. 
+
+
+
+ Por ello, este Tribunal Central comparte la conclusión alcanzada tanto por el Tribunal Económico-Administrativo Regional de Andalucía en la resolución aquí recurrida, como por el Tribunal Económico-Administrativo de Madrid en su resolución de fecha 29 de marzo de 2010 en la que se señala que, el mero recurso al concepto de arrendamiento de vivienda plasmado en la Ley de Arrendamientos Urbanos no es suficiente para negar el derecho al incentivo fiscal de la reducción en los casos en los que, sin otra razón que la expuesta, se restringe el ámbito de aplicación del concepto de “arrendamiento de vivienda”.
+
+
+
+ Asimismo el presente criterio es el adoptado por el Tribunal Económico-Administrativo Regional de Cataluña en resolución 43/540/2012 de fecha 30 de junio de 2015.
+
+
+
+ Podemos citar igualmente resolución del Tribunal Económico-Administrativo Regional de Valencia 46/348/2011 de fecha 30 de septiembre de 2011.
+
+
+
+ QUINTO.-
+
+
+
+ Por otra parte se alega en el presente recurso que, la resolución del TEAR resultaría contraria a la finalidad de la reforma efectuada por la Ley 46/2002, que pretendía introducir un incentivo adicional para incrementar la oferta de las viviendas arrendadas y minorar el precio de los alquileres. 
+
+
+
+ Para la Directora del Departamento de Gestión Tributaria de la AEAT, el objetivo último de la medida, minorar el precio de los alquileres, es determinante para concluir que el legislador estaba pensando en un arrendatario de la vivienda que es, además, destinatario directo del servicio. Entiende que la medida perdería su sentido pues, en el caso de la sociedad hay que tener en cuenta que parte del precio será recuperado por la vía de la deducción en su imposición personal sobre beneficios, al ser un coste de personal. Desde esta perspectiva, considera que la intención del legislador no era que la medida pudiera desembocar en un incentivo a las empresas y porque, además, el efecto podría ser contraproducente: la idea de partida es conseguir la reducción de precios por la vía del incremento de la oferta, pero si simultáneamente se produce un incremento de la demanda podría producirse una neutralización, cuando menos parcial, del efecto.
+
+
+
+ Pues bien, continuando con la aplicación de los principios hermenéuticos establecidos en el artículo 3 del Código Civil al que se remite el artículo 12 de la LGT, efectivamente, para aplicar el artículo de la LIRPF que regula la reducción controvertida, ha de atenderse al espíritu y finalidad de la norma.
+
+
+
+ Si como se indica en  la Exposición de Motivos de la Ley 46/2002, de 18 de diciembre, el incentivo adicional de la reducción se introduce para incrementar la oferta de las viviendas arrendadas y minorar el precio de los alquileres, a juicio de este Tribunal Central, el hecho de que el arrendatario sea una persona jurídica no sólo no desvirtuaría la medida sino que, por el contrario, favorece la finalidad pretendida. Así, es evidente que para el sujeto pasivo beneficiario de la reducción, la condición del arrendatario persona jurídica, sociedad o empresa puede ofrecerle mayor confianza y seguridad como garantía del cobro de la renta o alquiler, por su mayor infraestructura y solvencia, que la que, en principio, pueda ofrecerle un arrendatario persona física. Ello supone un incentivo a los propietarios de viviendas para ofertarlas en alquiler. Con el aumento de la oferta disminuye el precio. Sin embargo, eliminar la reducción para el arrendador por el hecho de que el arrendatario sea una persona jurídica, disminuiría la oferta de viviendas de alquiler en el mercado puesto que el propietario, si pretendiese aplicar el beneficio fiscal de la reducción de los rendimientos netos, sólo podría buscar como arrendatarios a las personas físicas que, según se alega, serían las únicas que le permitirían la reducción.
+
+
+
+ Por otra parte, este Tribunal Central considera que no puede afirmarse que exista una relación directa entre las políticas empresariales de distribución de sus gastos de personal entre retribuciones dinerarias y en especie, y un hipotético aumento de la demanda de viviendas que contrarreste el incentivo del arrendador para la oferta, de forma que termine afectando a los precios de los alquileres. En el Impuesto sobre Sociedades los gastos de personal incluyen los sueldos y salarios propiamente dichos, las cargas sociales afrontadas por la empresa y un conjunto de gastos heterogéneos con un origen común: el trabajo personal de terceros prestados a la empresa. Los sueldos y salarios representan las remuneraciones, fijas y eventuales, del personal de la empresa, tanto dinerarias como en especie. Sobre las retribuciones en especie la entidad está obligada a efectuar un ingreso a cuenta del IRPF del trabajador. Por tanto, desde el punto de vista del beneficio sometido a tributación, en ambos casos, el coste de las retribuciones, dinerarias y en especie, constituyen gasto deducible para la empresa. 
+
+
+
+ Cuando la empresa alquila inmuebles destinados a viviendas de sus empleados, la LIRPF establece una forma de valoración de la retribución en especie que constituye renta para el trabajador a incluir en su renta general, a diferencia de otros gastos de personal como son los de formación del mismo que, en determinados períodos impositivos no han sido renta para el trabajador pero sí es gasto de personal deducible para la empresa. Así, hasta el 31 de diciembre de 2010 estos gastos generaban un deducción en la cuota íntegra del IS en concepto de formación profesional. 
+
+
+
+ En definitiva, no puede afirmarse que el carácter deducible de los gastos de personal en el Impuesto sobre Sociedades incentive a las empresas a contratar arrendamientos de viviendas para sus empleados. Por ello, siempre que se respete el destino dado al inmueble arrendado, destino a vivienda, la condición del arrendatario no afectaría al espíritu y finalidad de la norma que establece el beneficio fiscal en el IRPF para el arrendador persona física.
+
+
+
+ Como conclusión, a juicio de este Tribunal Central, siempre que en cada caso concreto haya quedado debidamente acreditado que se trata del arrendamiento de un bien inmueble destinado a vivienda como residencia o morada permanente de una persona física, se da cumplimiento a la condición legal necesaria para aplicar la reducción pretendida, sin que se exija que la vivienda deba ocuparse por el propio arrendatario o que el beneficio fiscal quede excluido para el supuesto de arrendatarios personas jurídicas. 
+
+
+
+ Finalmente, destaquemos que en el mismo sentido también se pronuncian tanto el Tribunal Superior de Justicia de Galicia en sentencia 300/2015 de fecha 3 de junio de 2015 (rec. nº 15500/2014), el Tribunal Superior de Justicia de Cataluña entre otras en sentencia de 17 de julio de 2012 (rec. nº 612/2009) y el Tribunal Superior de Justicia de Madrid en sentencias de 18 de abril (rec. nº 1121/2010) y de 23 de abril de 2013 (rec. nº 1150/2010). 
+
+
+
+ Como en particular se razona en la sentencia del Tribunal Superior de Justicia de Cataluña de 21 de febrero de 2014 (Recurso: 744/2011 ): 
+
+
+
+ " La cuestión no es pacífica, como lo evidencian las resoluciones que cada parte invoca a su favor, a las que cabe añadir otras más recientes, como la sentencia del Tribunal Superior de Justicia de Madrid, de 14 de julio de 2010, dictada en el recurso núm. 862/2008 . También esta Sala se ha pronunciado al respecto en nuestra sentencia núm. 553/2011, de 11 de mayo, dictada en el recurso núm. 1086/2007 , si bien en ese caso era aplicable artículo 21.2 del texto refundido de la Ley del Impuesto sobre la Renta de las Personas Físicas aprobado por el Real Decreto Legislativo 3/2004, de 5 de marzo, precedente del art 23.2.1 de la Ley de 2006 aplicable al presente caso. 
+
+
+
+  
+
+
+
+  El supuesto del que conocíamos en dicho recurso es análogo al presente, pues la resolución del TEARC Impugnada, con sustancialmente la misma argumentación que la aquí recurrida, confirmó la liquidación que eliminaba la reducción del rendimiento de un inmueble aplicada por el sujeto pasivo que había formalizado un contrato de arrendamiento de vivienda con, una entidad de nacionalidad italiana, en cuyas cláusulas se hacía constar expresamente que el destino del inmueble serla exclusivamente satisfacer la necesidad permanente de vivienda para un determinado empleado de la compañía y de sus familiares que convivieran bajo su dependencia, sin que pudiera cederse ni subarrendar la vivienda, total o parcialmente, sin la previa autorización escrita del arrendador. En dicha sentencia estimamos el recurso, al concluir que el arrendamiento de un inmueble a una persona jurídica para destinarlo a la vivienda habitual de uno de sus empleados constituía, en ese caso, el supuesto previsto en el artículo 21.2 de la Ley del IRPF y su tributación permitía la reducción del 50% a que el mismo hace referencia. Razonamos en dicha sentencia lo siguiente: 
+
+
+
+  
+
+
+
+  "(...) desde el primer momento ha quedado plenamente identificada la finalidad del arrendamiento en los términos expresados en el artículo 212 del RDLeg. 3/2004. En este mismo sentido se ha pronunciado esta Sala en otros procedimientos relativos a la exención del IVA (entre otras, Sentencia núm. 719/2009, de fecha 1 de julio de 2009 ), en la que razonamos: "En suma, coincidiendo con lo expuesto, entendemos que cuando, como es el caso, conste en los contratos de arrendamiento que el objeto de los mismos al el alquiler de los pisos que se citen, "para uso exclusivo como vivienda habitual" de las personas físicas que se mencionan explícitamente, tal arrendamiento esté exento del IVA por más que quien figure como arrendatario sea la sociedad mercantil que abona la renta arrendaticia y la persona física que habita la vivienda sea personal a su servicio, sin perjuicio de las consecuencias tributarias que se deriven de ello (retribución en especie, etc.), ajenas al caso enjuiciado" 
+
+
+
+  
+
+
+
+  Asimismo la sentencia del Tribunal Superior de Justicia de Madrid de 2 de junio de 2004 , declara, en un caso, semejante al que ahora nos ocupa, que "la finalidad, del contrato de arrendamiento es única y exclusivamente el do vivienda, con identificación del inquilino. Esta finalidad es la que el legislador tuvo en consideración en la configuración de la exención, sin que de la redacción del art. 20.1.23 se presuponga o exija otra condición. La no estimación de la exención, en los términos propuestos por la Administración supone la exigencia de requisitos no previstos por la norma". 
+
+
+
+  
+
+
+
+  Los razonamientos del acto impugnado y las alegaciones del escrito de recurso no permiten apartarnos del anterior criterio, plenamente trasladable al presente caso, coherente con el expresado en materia del IVA, y que ahora reiteramos para el presente caso, conforme a los principios de unidad de doctrina, igualdad y seguridad jurídica. 
+
+
+
+  
+
+
+
+  Abundando en lo ya expuesto en dicha sentencia, tal y como viene a admitir el Abogado del Estado en la contestación a la demanda, el precepto qué nos ocupa no exige como requisito de la reducción que el arrendatario sea una persona física, sino que se trate de un arrendamiento de bien inmueble destinado a vivienda. Sostiene el Abogado del Estado, que pese la interpretación literal del precepto ha de prevalecer una interpretación teleológica. Sin embargo, no puede compartirse que una interpretación finalista de la norma conduzca a lo pretendido. La reducción del rendimiento neto del capital inmobiliario en los supuestos de arrendamiento de bienes inmuebles destinados a vivienda fue introducida en la Ley 40/1998 por la Ley 46/2002, de 18 de diciembre, de reforma parcial del Impuesto sobre la Renta de las Personas Físicas y por la que se modifican las Leyes de los Impuestos sobre Sociedades y sobre la Renta de no Residentes, cuya Exposición de Motivos expresa: "En los rendimientos del capital inmobiliario derivados de viviendas en alquiler se mejora y simplifica él cálculo del rendimiento neto, introduciéndose un incentivo adicional para incrementar la oferta de las viviendas arrendadas y minorar el precio de los alquileres". Queda claro que la voluntad del legislador era la de disminuir el precio de la vivienda de alquiler intentando aumentar el parqué de viviendas de alquiler, a base de incentivar a los propietarios de inmuebles a ofertarlas para ese destino, en lugar de mantenerlas vacías (para especular con ellas) o de arrendarlas para otros usos (oficinas, etc) generalmente más lucrativos. En supuestos como el presente, en que en el propio contrato de arrendamiento se pacta el destino exclusivo del inmueble a vivienda de D. Luis Francisco , con exclusión de otros usos, previéndose que el incumplimiento de tal obligación por el arrendatario será causa de resolución automática del contrato, es claro que la finalidad perseguida por el legislador al establecer el beneficio fiscal se cumple. 
+
+
+
+  
+
+
+
+  Aunque el Abogado del Estado hace alusión a una interpretación finalista, de su argumentación más parece que se refiere a una interpretación sistemática, al interpretar la norma fiscal a la luz del artículo 2 de la LAU . Sin embargo, entendemos que esa interpretación sistemática no puede prevalecer frente a la literalidad del precepto y su interpretación teleológica. La LAU, y en particular su articulo 2 , no es fuente del derecho tributario, conforme al articulo 7 de la Ley 58/2003 , y parece lógico pensar que si el legislador hubiera querido que el beneficio fiscal se restringiera a los arrendamientos de vivienda sujetos a la LAU, dado que no esta Ley no es fuente del derecho tributario, así lo hubiera expresado ".
+
+
+
+  
+
+
+
+ Por lo expuesto,
+
+
+
+ EL TRIBUNAL ECONÓMICO-ADMINISTRATIVO CENTRAL, EN SALA, visto el recurso extraordinario de alzada para unificación de criterio promovido por la DIRECTORA DEL DEPARTAMENTO DE GESTIÓN TRIBUTARIA DE LA AGENCIA ESTATAL DE ADMINISTRACIÓN TRIBUTARIA, contra resolución del Tribunal Económico-Administrativo de Andalucía de fecha 18 de enero de 2013, ACUERDA: DESESTIMARLO fijando como criterio que resulta procedente la aplicación de la reducción prevista en el apartado segundo del artículo 23 de la Ley 35/2006, de 28 de noviembre, reguladora del Impuesto sobre la Renta de las Personas Físicas, sobre los rendimientos netos derivados del arrendamiento de bienes inmuebles cuando siendo el arrendatario una persona jurídica, quede acreditado que el inmueble se destina a la vivienda de determinadas personas físicas. 
+
+
+        
+    
+
+
+
+
+    Volver
+
+
+    
+    
+
+
+
+
+[[ID:pie]]
+
+    
+        
+Ministerio de Hacienda y Administraciones Públicas
+
+        
+            
+[[ID:textos]]
+
+	            
+                
+Accesibilidad
+
+            	
+            
+            
+[[ID:iconosacc]]
+
+	            
+
+
+
+
+
+
+
+
+	            
+            
+            
+[[ID:textos2]]
+
+	            
+                
+(NIPO: 225-24-144-1)
+		
+            	
+            			
+        
+    
+
+
+
+

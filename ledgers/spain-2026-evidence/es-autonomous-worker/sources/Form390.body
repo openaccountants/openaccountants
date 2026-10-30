@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="BOE-A-2009-18472 Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." />
+    <title>BOE-A-2009-18472 Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/consolidada.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/act.php?id=BOE-A-2009-18472"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2009-11-20" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#version_date" content="2026-01-26" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20260126/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#version_date" content="2024-10-25" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20241025/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#version_date" content="2023-12-29" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20231229/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#version_date" content="2022-11-22" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20221122/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#version_date" content="2021-06-24" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20210624/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#version_date" content="2019-12-31" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20191231/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#version_date" content="2018-10-31" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20181031/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#version_date" content="2017-05-15" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20170515/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#version_date" content="2016-10-11" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20161011/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#version_date" content="2015-11-18" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20151118/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#version_date" content="2014-12-19" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20141219/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#version_date" content="2012-12-21" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20121221/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#version_date" content="2010-11-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20101130/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2009-18472" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#date_document" content="2009-11-05" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#number" content="eha3111" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4506"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#version_date" content="2009-11-20" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con/20091120/spa"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="act.php?lang=es&amp;id=BOE-A-2009-18472&amp;tn=1&amp;p=" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="act.php?lang=ca&amp;id=BOE-A-2009-18472&amp;tn=1&amp;p=" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="act.php?lang=gl&amp;id=BOE-A-2009-18472&amp;tn=1&amp;p=" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="act.php?lang=eu&amp;id=BOE-A-2009-18472&amp;tn=1&amp;p=" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="act.php?lang=va&amp;id=BOE-A-2009-18472&amp;tn=1&amp;p=" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="act.php?lang=en&amp;id=BOE-A-2009-18472&amp;tn=1&amp;p=" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="act.php?lang=fr&amp;id=BOE-A-2009-18472&amp;tn=1&amp;p=" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>
+        <li class="destino">Documento consolidado BOE-A-2009-18472</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<div class="titulo-wrapper">
+  <h2>Legislación consolidada<img class="tooltipimg" src="/imagenes/msg_info.png" alt="(información)"/><span class="tooltiptext">Este texto consolidado es de carácter informativo y no tiene valor jurídico.<br/>La consolidación consiste en integrar en un solo texto, sin valor oficial, las modificaciones, correcciones y derogaciones de carácter expreso que una norma ha tenido desde su origen, con el objetivo de facilitar el acceso al Derecho vigente. Para fines jurídicos, debe consultarse la publicación oficial.</span></h2>
+  <div class="puntoAyuda">
+    <a href="/buscar/ayudas/legislacion_actualizada.php">
+      <span class="pc tablet">Ayuda</span>
+    </a>
+  </div>
+</div>
+<div id="barraSep" class="enlacesDoc">
+  <h3 class="documento-tit">Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y se modifica el anexo I de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores.</h3>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl class="conso">
+        <dt>Publicado en:</dt>
+        <dd><abbr title="Boletín Oficial del Estado">«BOE»</abbr> <abbr title="número">núm.</abbr> 280, de 20/11/2009.</dd>
+        <dt>Entrada en vigor:</dt>
+        <dd>21/11/2009</dd>
+        <dt>Departamento:</dt>
+        <dd>Ministerio de Economía y Hacienda</dd>
+        <dt>Referencia:</dt>
+        <dd>
+          <a href="/buscar/doc.php?id=BOE-A-2009-18472">BOE-A-2009-18472</a>
+        </dd>
+        <dt>Permalink ELI:</dt>
+        <dd>
+          <a href="https://www.boe.es/eli/es/o/2009/11/05/eha3111/con">https://www.boe.es/eli/es/o/2009/11/05/eha3111/con</a>
+        </dd>
+      </dl>
+    </div>
+    <div class="redaccion">
+      <label for="activar-versiones">
+        <span class="etiqDoc">Seleccionar redacción: </span>
+      </label>
+      <div class="dropdown">
+        <input id="activar-versiones" type="checkbox"/>
+        <label class="version-actual" for="activar-versiones" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones">
+          <span>Última actualización publicada el 26/01/2026</span>
+        </label>
+        <ul id="lista-versiones">
+          <li>
+            <a class="version-selected" href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20260126">Última actualización publicada el 26/01/2026</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20241025">Modificación publicada el 25/10/2024</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20231229">Modificación publicada el 29/12/2023</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20221122">Modificación publicada el 22/11/2022</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20210624">Modificación publicada el 24/06/2021</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20191231">Modificación publicada el 31/12/2019</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20181031">Modificación publicada el 31/10/2018</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20170515">Modificación publicada el 15/05/2017</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20161011">Modificación publicada el 11/10/2016</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20151118">Modificación publicada el 18/11/2015</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20141219">Modificación publicada el 19/12/2014</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20121221">Modificación publicada el 21/12/2012</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20101130">Modificación publicada el 30/11/2010</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2009-18472&amp;tn=1&amp;p=20091120">Texto inicial publicado el 20/11/2009</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="enlaces-conso">
+      <li class="puntoPDF2">
+        <a target="_blank" title="Abre el PDF en una nueva ventana" href="/buscar/pdf/2009/BOE-A-2009-18472-consolidado.pdf">PDF</a>
+      </li>
+      <li class="puntoEpub">
+        <a target="_blank" href="/buscar/epub/2009/BOE-A-2009-18472-consolidado.epub">ePUB</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="/js/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+<script src="/djrae/_js/jquery.djRAE.js?rnd=239"></script>
+<link   rel="stylesheet" type="text/css" href="/djrae/lib/jquery.djRAE.css" />
+
+<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/djrae/lib/jquery.djRAE_ie8.css" />
+<![endif]-->
+	
+<div id="barra_dj">
+	<form name="frm_search_dj" action="/djrae/execute_service.php" target="_blank" method="GET">
+		<a class="logo-video" title="Ver v&iacute;deo sobre el Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico" href="https://youtu.be/7W_GfHGjVrw" target="_blank"><span class="fuera">Vídeo tutorial sobre Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico de la Real Academia Espa&ntilde;ola</span></a>
+		<a href="https://dpej.rae.es/" title="Ir a la web del Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico (DPEJ)" target="_blank"><div class="icon_dj"><span class="fuera">Ir a la web del Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico (DPEJ)</span>&nbsp;</div></a>
+		<label class="azul_dj" for="caja-busqueda-djrae"><span class="fuera">Introducir t&eacute;rmino a buscar en el </span>
+		<span class="pc tablet">Diccionario Panhisp&aacute;nico del Espa&ntilde;ol <span class="rojo_dj">J</span>ur&iacute;dico</span>
+		</label>
+		<div id="container_dj">
+			<input type="text" name="w" id="caja-busqueda-djrae"/>
+			<div class="lupa_dj">
+				<span class="movil"><input for="caja-busqueda-djrae" type="image" src="/imagenes/home/lupa_16x16.png" title="Buscar en el Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico de la RAE" alt="Buscar en el Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico de la RAE"></span>
+			</div>
+		</div>
+	</form>
+</div>
+
+<script>
+	if(typeof jQuery !== "undefined"){
+
+		jQuery.noConflict();
+
+		var carga = true, djrae_t = "P";
+
+		if(!window.matchMedia){
+			//IE9
+			carga = true;
+		}else if(window.matchMedia("(max-width:669px)").matches){
+			carga = true;
+			djrae_t  = "M";
+		} else if(window.matchMedia("(min-width:670px) and (max-width:1050px)").matches) {
+			carga = true;
+			djrae_t  = "T";
+		}
+
+		if(carga){
+			jQuery("#container_dj").djraeWidget({modo: djrae_t});
+		}
+	}
+</script>
+<div class="pretexto" id="tabs">
+  <ul class="navlist">
+    <li><span class="pc tablet"><a href="#" class="current">Completo</a></span>
+    <span class="movil"><a href="#tabs" class="current">Completo</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2009-18472&amp;p=20260126&amp;tn=0">Solo Texto</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2009-18472&amp;p=20260126&amp;tn=0#tabs">Texto</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2009-18472&amp;p=20260126&amp;tn=2">&Iacute;ndice</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2009-18472&amp;p=20260126&amp;tn=2#tabs">&Iacute;ndice</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2009-18472&amp;p=20260126&amp;tn=6">An&aacute;lisis</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2009-18472&amp;p=20260126&amp;tn=6#tabs">An&aacute;lisis</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2009-18472&amp;p=20260126&amp;tn=3" class="guardar">Recibir alerta <img src="/imagenes/logoMiBOE_azul.png" srcset="/imagenes/logoMiBOE_azul.svg" alt="Mi BOE"/></a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2009-18472&amp;p=20260126&amp;tn=3#tabs" class="guardar"><img src="/imagenes/logoMiBOE_azul.png" srcset="/imagenes/logoMiBOE_azul.svg" alt="Mi BOE"/></a></span></li>
+  </ul>
+</div>
+<div id="textoxslt">
+<h3>Texto consolidado<span class="subtitMostrado">: &laquo;&Uacute;ltima actualizaci&oacute;n, publicada el 26/01/2026&raquo;</span></h3>
+  <div class="marcadores">
+    <label for="activar-marcadores"><span class="etiqDoc">Ir a: </span></label>
+    <div id="selector-marcador"  class="dropdown">
+      <input id="activar-marcadores" type="checkbox">
+      <label class="marcador-actual" for="activar-marcadores" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span>Seleccionar apartado</span></label>
+      <ul id="lista-marcadores">
+        <li><a href="#preambulo">[Pre&aacute;mbulo]</a></li>
+        <li><a href="#a1">Artículo 1</a></li>
+        <li><a href="#a2">Artículo 2</a></li>
+        <li><a href="#a3">Artículo 3</a></li>
+        <li><a href="#a4">Artículo 4</a></li>
+        <li><a href="#a5">Artículo 5</a></li>
+        <li><a href="#a6">Artículo 6</a></li>
+        <li><a href="#a7">Artículo 7</a></li>
+        <li><a href="#a8">Artículo 8</a></li>
+        <li><a href="#ddunica">Disposición derogatoria única</a></li>
+        <li><a href="#dfprimera">Disposición final primera</a></li>
+        <li><a href="#dfsegunda">Disposición final segunda</a></li>
+        <li><a href="#firma">[Firma]</a></li>
+        <li><a href="#ani">ANEXO I</a></li>
+        <li><a href="#anii">ANEXO II</a></li>
+        <li><a href="#aniii">ANEXO III</a></li>
+      </ul>
+    </div>
+  </div>
+          <hr class="bloque"/>
+          <div class="bloque" id="preambulo">
+            <p class="bloque">[Bloque 1: #preambulo]</p>
+
+<p class="parrafo">La <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2008-20802" target="_blank" title="Abre nueva ventana">Ley 4/2008, de 23 de diciembre</a>, por la que se suprime el gravamen del Impuesto sobre el Patrimonio, se generaliza el sistema de devolución mensual en el Impuesto sobre el Valor Añadido, y se introducen otras modificaciones en la normativa tributaria, da una nueva redacción al <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a116" target="_blank" title="Abre nueva ventana">artículo 116 de la Ley 37/1992, de 28 de diciembre</a>, del Impuesto sobre el Valor Añadido, estableciendo la posibilidad de que los sujetos pasivos que opten por ello, con independencia de la naturaleza de sus operaciones y del volumen de éstas, y de acuerdo con las condiciones, términos, requisitos y procedimiento establecidos reglamentariamente, puedan solicitar la devolución del saldo a su favor pendiente al final de cada período de liquidación.</p>
+<p class="parrafo">Por su parte, el <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2008-20839" target="_blank" title="Abre nueva ventana">Real Decreto 2126/2008, de 26 de diciembre</a>, modifica el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a30" target="_blank" title="Abre nueva ventana">artículo 30 del Reglamento del Impuesto sobre el Valor Añadido, aprobado por el Real Decreto 1624/1992, de 29 de diciembre</a>, de forma que aquellos sujetos pasivos que opten por ejercitar el derecho a la devolución establecido en los artículos 116 y 163 nonies de la Ley del Impuesto, deben estar inscritos en el registro de devolución mensual regulado en dicho artículo. Asimismo, el citado Real Decreto introduce un nuevo artículo 30 bis en el articulado del Reglamento del Impuesto, de acuerdo con el cual los sujetos pasivos que ejerzan la actividad de transporte de viajeros o de mercancías por carretera y tributen por el régimen simplificado del Impuesto podrán solicitar la devolución de las cuotas soportadas deducibles en la adquisición de medios de transporte afectos a dicha actividad durante los primeros 20 días naturales del mes siguiente a aquél en el cual hayan realizado la adquisición de los medios de transporte y siempre que cumplan determinados requisitos.</p>
+<p class="parrafo">Con la finalidad de hacer posible la solicitud de devolución del saldo a favor de los sujetos pasivos pendiente al final de cada periodo de liquidación y de facilitar y simplificar, en lo posible, el cumplimiento de la obligación de determinar la deuda tributaria que incumbe a los sujetos pasivos del Impuesto, la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2008-20953" target="_blank" title="Abre nueva ventana">Orden EHA/3786/2008, de 29 de diciembre</a>, aprobó un único modelo 303 de autoliquidación del Impuesto sobre el Valor Añadido que sustituía a los modelos 300, 330, 332 y 320, así como, un nuevo modelo 308 para articular un sistema que permitiera solicitar las devoluciones del Impuesto en los supuestos previstos en el artículo 30 bis del Reglamento del Impuesto sobre el Valor Añadido.</p>
+<p class="parrafo">Tras la unificación de los modelos generales de autoliquidación del Impuesto sobre el Valor Añadido en un único modelo 303, considerando que es objetivo fundamental de la Administración tributaria reducir, en la medida de lo posible, las cargas administrativas indirectas que se deriven del cumplimiento de las obligaciones fiscales, resulta aconsejable unificar a su vez los modelos 390 «Declaración-resumen anual del Impuesto sobre el Valor Añadido» y 392 «Grandes Empresas. Declaración-resumen anual del Impuesto sobre el Valor Añadido», en un solo modelo 390 de «Declaración-resumen anual del Impuesto sobre el Valor Añadido», que se pueda utilizar por todos los sujetos pasivos del Impuesto que estén obligados a la presentación de una declaración-resumen anual de acuerdo con lo previsto en el artículo 71.6 del Reglamento del Impuesto.</p>
+<p class="parrafo">Asimismo, la aprobación del modelo 308 de solicitud de devolución del Impuesto sobre el Valor Añadido, y el establecimiento del nuevo registro de devolución mensual, hace necesario que en el nuevo modelo 390 de declaración-resumen anual, se incluyan las referencias correspondientes al registro de devolución mensual y la información sobre las cuotas soportadas deducibles en la adquisición de medios de transporte afectos a la actividad de transporte de viajeros o de mercancías por carretera respecto de las cuales, los sujetos pasivos que ejerzan dicha actividad y tributen en régimen simplificado, hayan solicitado la devolución. Por otra parte, es conveniente reestructurar la información relativa al resultado de las operaciones, consignando de forma separada la concerniente a los sujetos pasivos que tributan en el Régimen especial del grupo de entidades.</p>
+<p class="parrafo">También, se ha considerado oportuno modificar el literal de las casillas B1, B2 del modelo 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores, suprimiendo la denominación «constituida en España» o «constituida en el extranjero», eliminando así la dualidad de significados que tenían dichas casillas y por tanto la confusión que implicaba. Asimismo, se ha modificado el literal de la casilla B3, añadiendo «de Constitución», con la finalidad de aclarar el contenido de dicha casilla. Para realizar dichos cambios, se ha modificado el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-9508#ai" target="_blank" title="Abre nueva ventana">anexo I de la Orden EHA/1274/2007, de 26 de abril</a>, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores.</p>
+<p class="parrafo">El artículo 117 del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984" target="_blank" title="Abre nueva ventana">Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por el Real Decreto 1065/2007, de 27 de julio</a>, habilita, en el ámbito del Estado, al Ministro de Economía y Hacienda para aprobar los modelos de declaración, autoliquidación y comunicación de datos, así como establecer la forma, lugar y plazos de su presentación.</p>
+<p class="parrafo">En su virtud dispongo:</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1">
+            <p class="bloque">[Bloque 2: #a1]</p>
+
+<h5 class="articulo">Artículo 1. Aprobación del modelo 390.</h5>
+<p class="parrafo">1. Se aprueba el modelo 390 “Declaración-resumen anual del Impuesto sobre el Valor Añadido”, que figura como anexo I de la presente orden.</p>
+<p class="parrafo">El número identificativo que habrá de figurar en dicho modelo será un número secuencial cuyos tres primeros dígitos se corresponderán con el código 390.</p>
+<p class="parrafo">2. Este modelo será presentado por los sujetos pasivos del Impuesto obligados a la presentación de autoliquidaciones periódicas, del Impuesto sobre el Valor Añadido, y los sujetos pasivos autorizados a la presentación conjunta de las autoliquidaciones, según lo dispuesto en el artículo 71.7 del Reglamento del Impuesto, aprobado por el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925" target="_blank" title="Abre nueva ventana">Real Decreto 1624/1992, de 29 de diciembre</a>.</p>
+<p class="parrafo">3. No obstante lo anterior, de acuerdo con la habilitación conferida en los apartados 1 y 7 del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a71" target="_blank" title="Abre nueva ventana">artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado por el Real Decreto 1624/1992, de 29 de diciembre</a>, se excluye de la obligación de presentar la Declaración-resumen anual del Impuesto sobre el Valor Añadido a los siguientes sujetos pasivos del Impuesto:</p>
+<p class="parrafo_2">a) Sujetos pasivos del Impuesto obligados a la presentación de autoliquidaciones periódicas, con periodo de liquidación trimestral que tributando solo en territorio común realicen exclusivamente las actividades siguientes:</p>
+<p class="parrafo_2">i) Actividades que tributen en régimen simplificado del Impuesto sobre el Valor Añadido, y/o</p>
+<p class="parrafo">ii) Actividad de arrendamiento de bienes inmuebles urbanos.</p>
+<p class="parrafo_2">La exclusión de la obligación de presentar la Declaración-resumen anual del Impuesto sobre el Valor Añadido prevista en esta letra a) se mantendrá en el caso de que los sujetos pasivos realicen, además, actividades por las que no exista obligación de presentar autoliquidaciones periódicas.</p>
+<p class="parrafo">b) Sujetos pasivos que lleven los libros registro a través de la Sede electrónica de la Agencia Estatal de Administración Tributaria de acuerdo con lo previsto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a62" target="_blank" title="Abre nueva ventana">artículo 62.6 del Reglamento del Impuesto sobre el Valor Añadido, aprobado por el Real Decreto 1624/1992, de 29 de diciembre</a>.</p>
+<p class="parrafo">En ambos supuestos la exoneración de presentar la Declaración-resumen anual del Impuesto sobre el Valor Añadido no procederá en el caso de que no exista obligación de presentar la autoliquidación correspondiente al último periodo de liquidación del ejercicio.</p>
+<p class="parrafo_2">4. Los sujetos pasivos excluidos de la obligación de presentar la Declaración-resumen anual del Impuesto sobre el Valor Añadido deberán cumplimentar el apartado específico reservado a los mismos, requerido a estos efectos en el modelo de autoliquidación del Impuesto correspondiente al último periodo de liquidación del año, en relación, con la información sobre el tipo de actividades económicas a las que se refiere su declaración, en su caso, sobre el porcentaje de prorrata aplicable, sectores diferenciados y porcentajes de tributación a varias Administraciones, así como del detalle del volumen total de operaciones realizadas en el ejercicio.</p>
+<blockquote>
+  <p class="nota_pie">Se modifican los apartados 1 y 3 por el art. 4.1 de la Orden HAC/1148/2018, de 18 de octubre. <a href="/buscar/doc.php?id=BOE-A-2018-14901" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2018-14901</a></p>
+  <p class="nota_pie_2">Téngase en cuenta, para su aplicación, la disposición final única de la citada Orden.</p>
+  <p class="nota_pie">Se modifica por la disposición final 5 de la Orden HFP/417/2017, de 12 de mayo. <a href="/buscar/doc.php?id=BOE-A-2017-5312" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2017-5312</a></p>
+  <p class="nota_pie_2">Esta modificación entra en vigor el 1 de julio de 2017, según establece la disposición final 6 de la citada Orden.</p>
+  <p class="nota_pie">Se modifica por el art. 3 de la Orden HAP/1626/2016, de 6 de octubre. <a href="/buscar/doc.php?id=BOE-A-2016-9315" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2016-9315</a>.</p>
+  <p class="nota_pie_2">Esta modificación será de aplicación, por primera vez, para la presentación de las declaraciones-resúmenes anuales correspondientes a 2016 del modelo 390, según establece la disposición final única de la citada Orden.</p>
+  <p class="nota_pie">Se modifica por el art. 2.1 de la Orden HAP/2373/2014, de 9 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2014-13180" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2014-13180</a>.</p>
+  <p class="nota_pie">Se modifica el apartado 2 por el art. 1.2 de la Orden HAP/2725/2012, de 19 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2012-15380" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-15380</a>.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a1">
+              <input type="hidden" name="id" value="BOE-A-2009-18472">
+              <input type="hidden" name="b"  value="2">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab220181031" value="20181031" checked="checked"/>
+                  <label for="lab220181031" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 31/10/2018, en vigor a partir del 01/11/2018.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab220170515" value="20170515"/>
+                  <label for="lab220170515" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 15/05/2017, en vigor a partir del 01/07/2017.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab220161011" value="20161011"/>
+                  <label for="lab220161011" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 11/10/2016, en vigor a partir del 12/10/2016.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab220141219" value="20141219"/>
+                  <label for="lab220141219" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 19/12/2014, en vigor a partir del 20/12/2014.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab220121221" value="20121221"/>
+                  <label for="lab220121221" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 21/12/2012, en vigor a partir del 22/12/2012.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab220091120" value="20091120"/>
+                  <label for="lab220091120" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 20/11/2009, en vigor a partir del 21/11/2009.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2">
+            <p class="bloque">[Bloque 3: #a2]</p>
+
+<h5 class="articulo">Artículo 2. Formas de presentación.</h5>
+<p class="parrafo">La presentación del modelo 390 se regirá por lo dispuesto en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385" target="_blank" title="Abre nueva ventana">Orden HAP/2194/2013, de 22 de noviembre</a>, por la que se regulan los procedimientos y las condiciones generales para la presentación de determinadas autoliquidaciones, declaraciones informativas, declaraciones censales, comunicaciones y solicitudes de devolución, de naturaleza tributaria.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica, con efectos de 1 de enero de 2023, por el art. 3.1 de la Orden HFP/1124/2022, de 18 de noviembre de 2022. <a href="/buscar/doc.php?id=BOE-A-2022-19290" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2022-19290</a></p>
+  <p class="nota_pie">Se modifica por el art. 1.3 de la Orden HAP/2725/2012, de 19 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2012-15380" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-15380</a>.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a2">
+              <input type="hidden" name="id" value="BOE-A-2009-18472">
+              <input type="hidden" name="b"  value="3">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab320221122" value="20221122" checked="checked"/>
+                  <label for="lab320221122" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 22/11/2022, en vigor a partir del 01/01/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab320121221" value="20121221"/>
+                  <label for="lab320121221" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 21/12/2012, en vigor a partir del 22/12/2012.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab320091120" value="20091120"/>
+                  <label for="lab320091120" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 20/11/2009, en vigor a partir del 21/11/2009.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3">
+            <p class="bloque">[Bloque 4: #a3]</p>
+
+<h5 class="articulo">Artículo 3. Lugar y procedimiento de presentación del modelo 390 en impreso.</h5>
+<p class="parrafo">
+  <strong>(Suprimido)</strong>
+</p>
+<blockquote>
+  <p class="nota_pie">Se suprime, con efectos de 1 de enero de 2023, por el art. 3.2 de la Orden HFP/1124/2022, de 18 de noviembre de 2022. <a href="/buscar/doc.php?id=BOE-A-2022-19290" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2022-19290</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a3">
+              <input type="hidden" name="id" value="BOE-A-2009-18472">
+              <input type="hidden" name="b"  value="4">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab420221122" value="20221122" checked="checked"/>
+                  <label for="lab420221122" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 22/11/2022, en vigor a partir del 01/01/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab420091120" value="20091120"/>
+                  <label for="lab420091120" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 20/11/2009, en vigor a partir del 21/11/2009.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4">
+            <p class="bloque">[Bloque 5: #a4]</p>
+
+<h5 class="articulo">Artículo 4. Opción de presentación de la declaración-resumen anual, modelo 390, obtenido mediante la utilización del servicio de impresión desarrollado a estos efectos por la Agencia Estatal de Administración Tributaria.</h5>
+<p class="parrafo">
+  <strong>(Suprimido)</strong>
+</p>
+<blockquote>
+  <p class="nota_pie">Se suprime, con efectos de 1 de enero de 2023, por el art. 3.2 de la Orden HFP/1124/2022, de 18 de noviembre de 2022. <a href="/buscar/doc.php?id=BOE-A-2022-19290" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2022-19290</a></p>
+  <p class="nota_pie">Se modifica por el art. 1.4 de la Orden HAP/2725/2012, de 19 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2012-15380" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-15380</a>.</p>
+  <p class="nota_pie_2">Su anterior redacción pasa a ser el artículo 6.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a4">
+              <input type="hidden" name="id" value="BOE-A-2009-18472">
+              <input type="hidden" name="b"  value="5">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab520221122" value="20221122" checked="checked"/>
+                  <label for="lab520221122" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 22/11/2022, en vigor a partir del 01/01/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab520121221" value="20121221"/>
+                  <label for="lab520121221" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 21/12/2012, en vigor a partir del 22/12/2012.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab520091120" value="20091120"/>
+                  <label for="lab520091120" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 20/11/2009, en vigor a partir del 21/11/2009.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a5">
+            <p class="bloque">[Bloque 6: #a5]</p>
+
+<h5 class="articulo">Artículo 5. Presentación de la declaración resumen-anual, modelo 390 por mensaje SMS.</h5>
+<p class="parrafo">
+  <strong>(Suprimido)</strong>
+</p>
+<blockquote>
+  <p class="nota_pie">Se suprime, con efectos de 1 de enero de 2023, por el art. 3.2 de la Orden HFP/1124/2022, de 18 de noviembre de 2022. <a href="/buscar/doc.php?id=BOE-A-2022-19290" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2022-19290</a></p>
+  <p class="nota_pie">Se modifica por el art. 1.5 de la Orden HAP/2725/2012, de 19 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2012-15380" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-15380</a>.</p>
+  <p class="nota_pie_2">Su anterior redacción pasa a ser el artículo 7.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a5">
+              <input type="hidden" name="id" value="BOE-A-2009-18472">
+              <input type="hidden" name="b"  value="6">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab620221122" value="20221122" checked="checked"/>
+                  <label for="lab620221122" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 22/11/2022, en vigor a partir del 01/01/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab620121221" value="20121221"/>
+                  <label for="lab620121221" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 21/12/2012, en vigor a partir del 22/12/2012.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab620091120" value="20091120"/>
+                  <label for="lab620091120" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 20/11/2009, en vigor a partir del 21/11/2009.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a6">
+            <p class="bloque">[Bloque 7: #a6]</p>
+
+<h5 class="articulo">Artículo 6. Condiciones generales para la presentación telemática por Internet de la declaración-resumen anual del Impuesto sobre el Valor Añadido, modelo 390.</h5>
+<p class="parrafo">
+  <strong>(Suprimido)</strong>
+</p>
+<blockquote>
+  <p class="nota_pie">Se suprime, con efectos de 1 de enero de 2023, por el art. 3.2 de la Orden HFP/1124/2022, de 18 de noviembre de 2022. <a href="/buscar/doc.php?id=BOE-A-2022-19290" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2022-19290</a></p>
+  <p class="nota_pie">Se renumera por el art. 1.6 de la Orden HAP/2725/2012, de 19 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2012-15380" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-15380</a>.</p>
+  <p class="nota_pie_2">Su anterior numeración era art. 4.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a6">
+              <input type="hidden" name="id" value="BOE-A-2009-18472">
+              <input type="hidden" name="b"  value="7">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab720221122" value="20221122" checked="checked"/>
+                  <label for="lab720221122" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 22/11/2022, en vigor a partir del 01/01/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab720121221" value="20121221"/>
+                  <label for="lab720121221" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 21/12/2012, en vigor a partir del 22/12/2012.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab720091120" value="20091120"/>
+                  <label for="lab720091120" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 20/11/2009, en vigor a partir del 21/11/2009.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a7">
+            <p class="bloque">[Bloque 8: #a7]</p>
+
+<h5 class="articulo">Artículo 7. Procedimiento para la presentación telemática por Internet de la declaración-resumen anual del Impuesto sobre el Valor Añadido, modelo 390.</h5>
+<p class="parrafo">
+  <strong>(Suprimido)</strong>
+</p>
+<blockquote>
+  <p class="nota_pie">Se suprime, con efectos de 1 de enero de 2023, por el art. 3.2 de la Orden HFP/1124/2022, de 18 de noviembre de 2022. <a href="/buscar/doc.php?id=BOE-A-2022-19290" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2022-19290</a></p>
+  <p class="nota_pie">Se añade por el art. 1.6 de la Orden HAP/2725/2012, de 19 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2012-15380" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-15380</a>.</p>
+  <p class="nota_pie_2">Su anterior numeración era art. 5.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a7">
+              <input type="hidden" name="id" value="BOE-A-2009-18472">
+              <input type="hidden" name="b"  value="8">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab820221122" value="20221122" checked="checked"/>
+                  <label for="lab820221122" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 22/11/2022, en vigor a partir del 01/01/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab820121221" value="20121221"/>
+                  <label for="lab820121221" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 21/12/2012, en vigor a partir del 22/12/2012.</label>
+                </p>
+              </fieldset>
+            </form>
+<p class="pie_unico">Texto a&ntilde;adido, publicado el 21/12/2012, en vigor a partir del 22/12/2012.</p>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a8">
+            <p class="bloque">[Bloque 9: #a8]</p>
+
+<h5 class="articulo">Artículo 8. Plazo de presentación del modelo 390.</h5>
+<p class="parrafo">La declaración-resumen anual del Impuesto sobre el Valor Añadido deberá presentarse en los treinta primeros días naturales del mes de enero siguiente al año al que se refiere la declaración, sin perjuicio, de lo establecido en el apartado 4 del artículo 4 de esta Orden.</p>
+<blockquote>
+  <p class="nota_pie">Se añade por el art. 1.6 de la Orden HAP/2725/2012, de 19 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2012-15380" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-15380</a>.</p>
+  <p class="nota_pie_2">Su anterior numeración era art. 6.</p>
+</blockquote>
+
+<p class="pie_unico">Texto a&ntilde;adido, publicado el 21/12/2012, en vigor a partir del 22/12/2012.</p>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ddunica">
+            <p class="bloque">[Bloque 10: #ddunica]</p>
+
+<h5 class="articulo">Disposición derogatoria única. Derogación de modelos de declaración, y de las normas que regulan el lugar, forma y plazo de su presentación, así como las condiciones y procedimiento para su presentación telemática por Internet.</h5>
+<p class="parrafo">Quedan derogadas las siguientes disposiciones:</p>
+<p class="parrafo_2">1. La Orden de 26 de noviembre de 1999 por la que se aprueban los modelos 390 y 392 de declaración-resumen anual del Impuesto sobre el Valor Añadido en euros.</p>
+<p class="parrafo">2. La Orden de 19 de noviembre de 2001 por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido en euros.</p>
+<p class="parrafo">3. En lo relativo al modelo 392, se derogan los artículos Cuarto, Quinto y Sexto de la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2005-16483" target="_blank" title="Abre nueva ventana">Orden EHA/3061/2005, de 3 de octubre</a>, por la que se establecen las condiciones y el procedimiento para la presentación telemática por Internet de las declaraciones correspondientes al modelo 038 y el procedimiento para la presentación telemática por teleproceso de las declaraciones correspondientes al modelo 180, se regula el lugar, plazo y forma de presentación de la declaración-resumen anual correspondiente al modelo 392 y se modifican determinadas normas de presentación de los modelos de declaración 180, 193, 345, 347 y 349, y otras normas tributarias.</p>
+<p class="parrafo">4. Los artículos 1 y 2 de la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2006-19172" target="_blank" title="Abre nueva ventana">Orden EHA/3397/2006, de 26 de octubre</a>, por la que se aprueban los modelos 390 y 392 de declaración resumen anual del Impuesto sobre el Valor Añadido y el modelo 430 de declaración del Impuesto sobre las Primas de Seguros.</p>
+<p class="parrafo">5. El apartado 3 del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-20485#a4" target="_blank" title="Abre nueva ventana">artículo 4 de la Orden EHA/3435/2007, de 23 de noviembre</a>, por la que aprueban los modelos de autoliquidación 117, 123, 124, 126, 128 y 300 y se establecen medidas para la promoción y ampliación de la presentación telemática de determinadas autoliquidaciones, resúmenes anuales y declaraciones informativas de carácter tributario, y lo dispuesto en relación con el modelo 390 en el apartado 5 del artículo 4 de la misma Orden.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfprimera">
+            <p class="bloque">[Bloque 11: #dfprimera]</p>
+
+<h5 class="articulo">Disposición final primera. Modificación del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-9508#ai" target="_blank" title="Abre nueva ventana">anexo I de la Orden EHA/1274/2007, de 26 de abril</a>, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores.</h5>
+<p class="parrafo">Se modifica la denominación de las casillas B1, B2,B3, 631,632 y 633 del modelo 036 de declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores que figura en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-9508#ai" target="_blank" title="Abre nueva ventana">anexo I de la Orden EHA/1274/2007, de 26 de abril</a>, que pasarán a denominarse:</p>
+<p class="parrafo_2">«B1 Persona jurídica o entidad residente en España».</p>
+<p class="parrafo">«B2 Persona jurídica o entidad NO residente en España».</p>
+<p class="parrafo">«B3 Código del país de constitución».</p>
+<p class="parrafo">«631 Actividades art. 18.3 texto refundido Ley IRNR».</p>
+<p class="parrafo">«632 Actividades art. 18.4 texto refundido Ley IRNR».</p>
+<p class="parrafo">«633 Opción por el régimen general, en los términos del artículo 18.4 del texto refundido Ley IRNR».</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfsegunda">
+            <p class="bloque">[Bloque 12: #dfsegunda]</p>
+
+<h5 class="articulo">Disposición final segunda. Entrada en vigor.</h5>
+<p class="parrafo">La presente Orden entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado», y afectará por primera vez a las declaraciones ajustadas al modelo 390 referidas a la información correspondiente al ejercicio 2009.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="firma">
+            <p class="bloque">[Bloque 13: #firma]</p>
+
+<p class="parrafo_2">Madrid, 5 de noviembre de 2009.–La Vicepresidenta Segunda del Gobierno y Ministra de Economía y Hacienda, Elena Salgado Méndez.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ani">
+            <p class="bloque">[Bloque 14: #ani]</p>
+
+<h4 class="anexo">ANEXO I</h4>
+<h4 class="anexo_tit">Modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido</h4>
+<p class="imagen"> </p>
+<p class="imagen">
+  <img src="/datos/imagenes/disp/2026/23/1761_16563944_13.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/23/1761_16563944_13.png" width="728"/>
+</p>
+<p class="imagen">
+  <img src="/datos/imagenes/disp/2026/23/1761_16563944_14.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/23/1761_16563944_14.png" width="728"/>
+</p>
+<p class="imagen">
+  <img src="/datos/imagenes/disp/2026/23/1761_16563944_15.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/23/1761_16563944_15.png" width="728"/>
+</p>
+<p class="imagen">
+  <img src="/datos/imagenes/disp/2026/23/1761_16563944_16.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/23/1761_16563944_16.png" width="728"/>
+</p>
+<p class="imagen">
+  <img src="/datos/imagenes/disp/2026/23/1761_16563944_17.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/23/1761_16563944_17.png" width="728"/>
+</p>
+<p class="imagen">
+  <img src="/datos/imagenes/disp/2026/23/1761_16563944_18.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/23/1761_16563944_18.png" width="728"/>
+</p>
+<p class="imagen">
+  <img src="/datos/imagenes/disp/2026/23/1761_16563944_19.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/23/1761_16563944_19.png" width="728"/>
+</p>
+<p class="imagen">
+  <img src="/datos/imagenes/disp/2026/23/1761_16563944_20.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/23/1761_16563944_20.png" width="728"/>
+</p>
+<p class="imagen">
+  <img src="/datos/imagenes/disp/2026/23/1761_16563944_21.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/23/1761_16563944_21.png" width="728"/>
+</p>
+<blockquote>
+  <p class="nota_pie">Se sustituye por el que figura como anexo IV de la Orden HAC/27/2026, de 22 de enero, según establece su art. 3. <a href="/buscar/doc.php?id=BOE-A-2026-1761" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2026-1761</a></p>
+  <p class="nota_pie_2">Téngase en cuenta que será aplicable por primera vez a la declaración-resumen anual correspondiente al ejercicio 2026, según establece la disposición final única.2 de la citada Orden.</p>
+  <p class="nota_pie">Se sustituye por el que figura como anexo II de la Orden HAC/1167/2024, de 17 de octubre, según establece su art. 2. <a href="/buscar/doc.php?id=BOE-A-2024-21961" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2024-21961</a></p>
+  <p class="nota_pie_2">Téngase en cuenta que será aplicable por primera vez a la declaración-resumen anual, correspondiente al ejercicio 2024, según establece la disposición final única de la citada Orden.</p>
+  <p class="nota_pie">Se sustituye la página 2 del modelo 390 por la que figura en el Anexo IV de la Orden HFP/1397/2023, de 26 de diciembre, según establece su art. 3. <a href="/buscar/doc.php?id=BOE-A-2023-26632" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2023-26632</a></p>
+  <p class="nota_pie_2">Esta modificación se aplicará por primera vez a las declaraciones informativas modelo 390 correspondiente al ejercicio 2023, según establece la disposición final única de la citada Orden.</p>
+  <p class="nota_pie">Se sustituye por el que figura como Anexo III de la Orden HFP/1124/2022, de 18 de noviembre, según establece su art. 3.3. <a href="/buscar/doc.php?id=BOE-A-2022-19290" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2022-19290</a></p>
+  <p class="nota_pie_2">Téngase en cuenta que será aplicable por primera vez a las autoliquidaciones correspondientes a los periodos de liquidación que se inicien a partir del 1 de enero de 2023, según establece la disposición final única de la citada Orden.</p>
+  <p class="nota_pie">Se sustituye por el art. 3 y anexo III de la Orden HAC/646/2021, de 22 de junio. <a href="/buscar/doc.php?id=BOE-A-2021-10509" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2021-10509</a></p>
+  <p class="nota_pie_2">Téngase en cuenta que será aplicable por primera vez a la declaración-resumen anual, correspondiente al ejercicio 2021, según establece la disposición final única de la citada Orden.</p>
+  <p class="nota_pie">Se sustituye por el art. 1 y Anexo de la Orden HAC/1274/2019, de 18 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2019-18750" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2019-18750</a></p>
+  <p class="nota_pie">Se sustituye por el art. 4.2 y el Anexo III de la Orden HAC/1148/2018, de 18 de octubre. <a href="/buscar/doc.php?id=BOE-A-2018-14901" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2018-14901</a></p>
+  <p class="nota_pie_2">Téngase en cuenta, para su aplicación, la disposición final única de la citada Orden.</p>
+  <p class="nota_pie">Se sustituye por el art. 2 y el Anexo de la Orden HAP/2429/2015, de 10 de noviembre. <a href="/buscar/doc.php?id=BOE-A-2015-12436" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2015-12436</a>.</p>
+  <p class="nota_pie">Se sustituye por el art. 2.2 y el Anexo II de la Orden HAP/2373/2014, de 9 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2014-13180" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2014-13180</a>.</p>
+  <p class="nota_pie">Se sustituye por el art. 1.1 y el Anexo I de la Orden HAP/2725/2012, de 19 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2012-15380" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-15380</a>.</p>
+  <p class="nota_pie">Se sustituye por el art. 2 y el Anexo II de la Orden EHA/3061/2010, de 22 de noviembre. <a href="/buscar/doc.php?id=BOE-A-2010-18367" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2010-18367</a>.</p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#ani">
+              <input type="hidden" name="id" value="BOE-A-2009-18472">
+              <input type="hidden" name="b"  value="14">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420260126" value="20260126" checked="checked"/>
+                  <label for="lab1420260126" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 26/01/2026, en vigor a partir del 27/01/2026.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420241025" value="20241025"/>
+                  <label for="lab1420241025" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 25/10/2024, en vigor a partir del 01/11/2024.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420231229" value="20231229"/>
+                  <label for="lab1420231229" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 29/12/2023, en vigor a partir del 01/01/2024.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420221122" value="20221122"/>
+                  <label for="lab1420221122" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 22/11/2022, en vigor a partir del 01/01/2023.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420210624" value="20210624"/>
+                  <label for="lab1420210624" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 24/06/2021, en vigor a partir del 01/07/2021.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420191231" value="20191231"/>
+                  <label for="lab1420191231" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 31/12/2019, en vigor a partir del 01/01/2020.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420181031" value="20181031"/>
+                  <label for="lab1420181031" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 31/10/2018, en vigor a partir del 01/11/2018.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420151118" value="20151118"/>
+                  <label for="lab1420151118" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 18/11/2015, en vigor a partir del 19/11/2015.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420141219" value="20141219"/>
+                  <label for="lab1420141219" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 19/12/2014, en vigor a partir del 20/12/2014.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420121221" value="20121221"/>
+                  <label for="lab1420121221" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 21/12/2012, en vigor a partir del 22/12/2012.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420101130" value="20101130"/>
+                  <label for="lab1420101130" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 30/11/2010, en vigor a partir del 01/12/2010.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1420091120" value="20091120"/>
+                  <label for="lab1420091120" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 20/11/2009, en vigor a partir del 21/11/2009.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="anii">
+            <p class="bloque">[Bloque 15: #anii]</p>
+
+<h4 class="anexo">ANEXO II</h4>
+<h4 class="anexo">(Suprimido)</h4>
+<blockquote>
+  <p class="nota_pie">Se suprime, con efectos de 1 de enero de 2023, por el art. 3.4 de la Orden HFP/1124/2022, de 18 de noviembre de 2022. <a href="/buscar/doc.php?id=BOE-A-2022-19290" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2022-19290</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#anii">
+              <input type="hidden" name="id" value="BOE-A-2009-18472">
+              <input type="hidden" name="b"  value="15">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1520221122" value="20221122" checked="checked"/>
+                  <label for="lab1520221122" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 22/11/2022, en vigor a partir del 01/01/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1520091120" value="20091120"/>
+                  <label for="lab1520091120" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 20/11/2009, en vigor a partir del 21/11/2009.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="aniii">
+            <p class="bloque">[Bloque 16: #aniii]</p>
+
+<h4 class="anexo">ANEXO III</h4>
+<h4 class="anexo">(Suprimido)</h4>
+<blockquote>
+  <p class="nota_pie">Se suprime, con efectos de 1 de enero de 2023, por el art. 3.4 de la Orden HFP/1124/2022, de 18 de noviembre de 2022. <a href="/buscar/doc.php?id=BOE-A-2022-19290" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2022-19290</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#aniii">
+              <input type="hidden" name="id" value="BOE-A-2009-18472">
+              <input type="hidden" name="b"  value="16">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1620221122" value="20221122" checked="checked"/>
+                  <label for="lab1620221122" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 22/11/2022, en vigor a partir del 01/01/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab1620091120" value="20091120"/>
+                  <label for="lab1620091120" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 20/11/2009, en vigor a partir del 21/11/2009.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+        </div> <!-- #textoxslt -->
+        <div class="caja redondeada gris info" role="alert">
+          <p>Este documento es de car&aacute;cter informativo y no tiene valor jur&iacute;dico.</p>
+          <p>Ay&uacute;denos a mejorar: puede dirigir sus comentarios y sugerencias a nuestro <a href="/contactar/formulario_completo.php">Servicio de atenci&oacute;n al ciudadano</a></p>
+        </div>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>

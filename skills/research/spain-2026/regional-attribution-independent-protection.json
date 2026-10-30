@@ -1,0 +1,17 @@
+{
+  "head": "7d3b6309d879387a5580997f14c1fa85b930a7ea",
+  "baseline_sha256": "8f0a2db6bf2fabde6391761b8b98738f54980dee2486b27bb59267a7616036dc",
+  "baseline_bytes": 441595,
+  "final_sha256": "a68b6eb27a849eb86105799f5744717d29c2296814d9f8bdb2c647fb56cdf8b1",
+  "final_bytes": 462410,
+  "only_metadata_change": "version1.1 to1.2",
+  "reconstruction_replacements": 29,
+  "both_oa_byte_identical": true,
+  "full_example_narrative_byte_identical": true,
+  "intake_byte_identical": true,
+  "platform_metadata_preserved": true,
+  "cta_byte_identical": true,
+  "all_original_URL_occurrences_preserved": true,
+  "original_URL_occurrences": 1033,
+  "final_URL_occurrences": 1078
+}

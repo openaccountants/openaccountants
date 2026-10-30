@@ -1,0 +1,266 @@
+{
+  "count": 43,
+  "failures": 0,
+  "controls": [
+    {
+      "id": "es-vat-return.md-frozenhash",
+      "actual": "3c82da241ef656c873de024eba9870837cfd1df85b57915578daa71a9f39bfa4",
+      "expected": "3c82da241ef656c873de024eba9870837cfd1df85b57915578daa71a9f39bfa4",
+      "passed": true
+    },
+    {
+      "id": "es-vat-return.md-frontmatter",
+      "actual": "sha256:0e5bb995ae201bc6df5842bee29b17a37c53bcdee42f9ebb326c7ecbe5e68e86",
+      "expected": "sha256:0e5bb995ae201bc6df5842bee29b17a37c53bcdee42f9ebb326c7ecbe5e68e86",
+      "passed": true
+    },
+    {
+      "id": "es-vat-return.md-H2",
+      "actual": "['## Who this applies to', '## Rates, bands and thresholds', '## The base', '## Deadlines and filing', '## Penalties and interest', '## Cross-border points', '## Two worked examples that recompute', '## Ask the client first', '## Sources', '## Talk to a verified accountant']",
+      "expected": "['## Who this applies to', '## Rates, bands and thresholds', '## The base', '## Deadlines and filing', '## Penalties and interest', '## Cross-border points', '## Two worked examples that recompute', '## Ask the client first', '## Sources', '## Talk to a verified accountant']",
+      "passed": true
+    },
+    {
+      "id": "es-vat-return.md-oa-blocks",
+      "actual": "sha256:ff856be842dae5275cae629461fed2827dd034b89cfa6549c550e20b1f23fad9",
+      "expected": "sha256:ff856be842dae5275cae629461fed2827dd034b89cfa6549c550e20b1f23fad9",
+      "passed": true
+    },
+    {
+      "id": "es-vat-return.md-fullCTA",
+      "actual": "sha256:c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "expected": "sha256:c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "passed": true
+    },
+    {
+      "id": "es-vat-return.md-exact-outside-delta-preservation",
+      "actual": "sha256:3d90335b36ddd0e532441174618bd48d415ae0141cbccf2fc24498ed2c5ce4b2",
+      "expected": "sha256:3d90335b36ddd0e532441174618bd48d415ae0141cbccf2fc24498ed2c5ce4b2",
+      "passed": true
+    },
+    {
+      "id": "es-vat-return.md-example-exit",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "id": "spain-vat-return.md-frozenhash",
+      "actual": "d222dc6f10e8e88722a6c994c9704505b258febc58e51c51b285a2f4dff6edac",
+      "expected": "d222dc6f10e8e88722a6c994c9704505b258febc58e51c51b285a2f4dff6edac",
+      "passed": true
+    },
+    {
+      "id": "spain-vat-return.md-frontmatter",
+      "actual": "sha256:5fcffce44770317a46b4636061aac2a50ff75cd45fd14d92a1ae03147216c13c",
+      "expected": "sha256:5fcffce44770317a46b4636061aac2a50ff75cd45fd14d92a1ae03147216c13c",
+      "passed": true
+    },
+    {
+      "id": "spain-vat-return.md-H2",
+      "actual": "['## Who this applies to', '## Rates, bands and thresholds', '## The base', '## Deadlines and filing', '## Penalties and interest', '## Cross-border points', '## Two worked examples that recompute', '## Ask the client first', '## Sources', '## Talk to a verified accountant']",
+      "expected": "['## Who this applies to', '## Rates, bands and thresholds', '## The base', '## Deadlines and filing', '## Penalties and interest', '## Cross-border points', '## Two worked examples that recompute', '## Ask the client first', '## Sources', '## Talk to a verified accountant']",
+      "passed": true
+    },
+    {
+      "id": "spain-vat-return.md-oa-blocks",
+      "actual": "sha256:012058aec24221405d564fac51b98f28b9678776dbbc2ec9dd2b4a6ec47f0a34",
+      "expected": "sha256:012058aec24221405d564fac51b98f28b9678776dbbc2ec9dd2b4a6ec47f0a34",
+      "passed": true
+    },
+    {
+      "id": "spain-vat-return.md-fullCTA",
+      "actual": "sha256:c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "expected": "sha256:c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "passed": true
+    },
+    {
+      "id": "spain-vat-return.md-exact-outside-delta-preservation",
+      "actual": "sha256:4cc5aa1ff66679a9f74e1d611e5eac528c416c94619c1205775879186fdb915c",
+      "expected": "sha256:4cc5aa1ff66679a9f74e1d611e5eac528c416c94619c1205775879186fdb915c",
+      "passed": true
+    },
+    {
+      "id": "spain-vat-return.md-example-exit",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "id": "building-established-reference-P.75",
+      "actual": "315.00",
+      "expected": "315",
+      "passed": true
+    },
+    {
+      "id": "building-established-reference-P.45",
+      "actual": "-315.00",
+      "expected": "-315",
+      "passed": true
+    },
+    {
+      "id": "building-established-reference-P.70",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "id": "building-established-reference-P.50",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "id": "building-established-reference-P.71",
+      "actual": "231.00",
+      "expected": "231",
+      "passed": true
+    },
+    {
+      "id": "building-established-reference-P.49",
+      "actual": "-231.00",
+      "expected": "-231",
+      "passed": true
+    },
+    {
+      "id": "building-established-reference-P.60",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "id": "building-established-reference-P1",
+      "actual": "840",
+      "expected": "840",
+      "passed": true
+    },
+    {
+      "id": "building-established-reference-P0",
+      "actual": "-1260",
+      "expected": "-1260",
+      "passed": true
+    },
+    {
+      "id": "wrong-old-reference-diagnostic",
+      "actual": "735.00",
+      "expected": "735",
+      "passed": true
+    },
+    {
+      "id": "ordinary-machine-up",
+      "actual": "142.80",
+      "expected": "142.8",
+      "passed": true
+    },
+    {
+      "id": "ordinary-machine-down",
+      "actual": "-168.00",
+      "expected": "-168",
+      "passed": true
+    },
+    {
+      "id": "delayed-building-window",
+      "actual": "[2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035]",
+      "expected": "[2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035]",
+      "passed": true
+    },
+    {
+      "id": "delayed-later-window",
+      "actual": "[2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035]",
+      "expected": "[2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035]",
+      "passed": true
+    },
+    {
+      "id": "sameyear-machine-next4",
+      "actual": "[2027, 2028, 2029, 2030]",
+      "expected": "[2027, 2028, 2029, 2030]",
+      "passed": true
+    },
+    {
+      "id": "delayed-machine-full5",
+      "actual": "[2026, 2027, 2028, 2029, 2030]",
+      "expected": "[2026, 2027, 2028, 2029, 2030]",
+      "passed": true
+    },
+    {
+      "id": "initial-full-candidate-not-approved",
+      "actual": "4200.00",
+      "expected": "4200",
+      "passed": true
+    },
+    {
+      "id": "initial-fraction-candidate-not-approved",
+      "actual": "420",
+      "expected": "420",
+      "passed": true
+    },
+    {
+      "id": "equal-initial-percent-no-otherchange",
+      "actual": "0.0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "id": "112-full-global",
+      "actual": "861.00",
+      "expected": "861",
+      "passed": true
+    },
+    {
+      "id": "112-no-tenpoint-annualgate",
+      "actual": "21.00",
+      "expected": "21",
+      "passed": true
+    },
+    {
+      "id": "113-global-reference",
+      "actual": "1911.00",
+      "expected": "1911",
+      "passed": true
+    },
+    {
+      "id": "113-no-new-window",
+      "actual": "[2028, 2029]",
+      "expected": "[2028, 2029]",
+      "passed": true
+    },
+    {
+      "id": "113-July-start-later-global",
+      "actual": "[2029]",
+      "expected": "[2029]",
+      "passed": true
+    },
+    {
+      "id": "108-threshold-equality-exclusion",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "id": "raw-sources/liva.html",
+      "actual": "ddc2776b9e285496028f4d8ddc8050a8615c10f196faea31e31084eb3f3c3ef8",
+      "expected": "ddc2776b9e285496028f4d8ddc8050a8615c10f196faea31e31084eb3f3c3ef8",
+      "passed": true
+    },
+    {
+      "id": "raw-sources/aeat2026-regularisation.html",
+      "actual": "2fe754ba7bd66dac991b135d07dc5a46e149226691d15466e8e9b4c189647cc9",
+      "expected": "2fe754ba7bd66dac991b135d07dc5a46e149226691d15466e8e9b4c189647cc9",
+      "passed": true
+    },
+    {
+      "id": "raw-sources/aeat2026-procedure.html",
+      "actual": "58d296f4810045343a70778c59cc01cd1221439b50913d8a08b3c99539c553a8",
+      "expected": "58d296f4810045343a70778c59cc01cd1221439b50913d8a08b3c99539c553a8",
+      "passed": true
+    },
+    {
+      "id": "raw-sources/aeat2026-preactivity.html",
+      "actual": "62eafde8f93c32ce5e7c4095f7cfa5690c13145a70e1701e0cd4297ff4a058b6",
+      "expected": "62eafde8f93c32ce5e7c4095f7cfa5690c13145a70e1701e0cd4297ff4a058b6",
+      "passed": true
+    }
+  ],
+  "initial_changed_percentage_amount": null,
+  "simultaneous_changing_U_P_method": null
+}

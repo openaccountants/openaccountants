@@ -1,20 +1,21 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,236 AI skills across 274 jurisdictions in this repository, 33 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,282 AI skills across 274 jurisdictions in this repository, 33 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
 OpenAccountants is a library of Tax skills — tax rules written as plain markdown files ("skills" in technical contexts). Any AI agent that reads markdown can use them. Each skill covers a specific tax task — income tax, VAT, payroll, deductions, crypto, cross-border — for a specific jurisdiction. Every figure cites a primary source (statute, tax-authority guidance, or official rate table).
 
-**Important:** This repo contains source-cited drafts. The accountant-reviewed versions — signed off by named licensed practitioners — are served via the live platform. See quality states below.
+**Important:** Most skills in this repo have no accountant sign-off yet (checked against the law, or sourced from the law). The accountant-reviewed versions — signed off by named licensed practitioners — are served via the live platform. See quality states below.
 
 **Not advice — review required.** These skills are general reference material for AI-assisted workflows, not tax, legal, accounting, or financial advice. They may be incomplete, outdated, or wrong, and are not reviewed for any specific person's facts. Any output you produce from them is a draft for professional review — do not file, pay, amend, or take a tax position based on it without review by a qualified professional in the relevant jurisdiction.
 
 ## Quality states
 
 - **Accountant-reviewed**: a named, licensed practitioner (CPA, CA, EA, Steuerberater, or local equivalent) has reviewed and signed off the skill. Served via the MCP/website.
-- **Source-cited draft**: drafted from primary legislation and official tax-authority publications. Lives in this repo. Awaiting accountant review.
+- **Checked against the law**: built to the standard in docs/skill-template.md; every figure cited to the law and checked against the statute by an independent review before merge. No accountant has signed it off yet.
+- **Sourced from the law**: older skill not yet rebuilt to the standard; every figure cited to an official source. No accountant has signed it off yet.
 
 Always tell users to have AI-generated output reviewed by a qualified professional before filing.
 
@@ -33,7 +34,7 @@ These named practitioners have reviewed skills for their jurisdictions. The acco
 - **Saudi Arabia (SA):** Mehran Habib, 9 skills — [openaccountants.com/network/f9dbab51-2b89-451b-98f2-414b48fb4599](https://www.openaccountants.com/network/f9dbab51-2b89-451b-98f2-414b48fb4599)
 - **United States (US/US-IL):** Amir Pelinkovic CPA (Citrin Cooperman), 16 skills — [openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f](https://www.openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f)
 - **United States (US federal):** Christopher Aryee, CPA — US federal form guides in `packages/us-federal/`, including the OBBBA corrections review (2026)
-- **Germany, Australia**: Source-cited drafts — accountant review in progress.
+- **Germany, Australia**: no accountant sign-off yet (checked against the law, or sourced from the law); accountant review in progress.
 - **Canada (CA):** accountant-reviewed skills are now present; see `reviewed_by` in `index.json`.
 
 ## Fastest way to use skills (don't read GitHub folder pages)
@@ -140,7 +141,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Skill inventory (2236 skills, 274 jurisdictions, 33 accountant-reviewed)
+## Skill inventory (2282 skills, 274 jurisdictions, 33 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -345,8 +346,10 @@ https://www.openaccountants.com
 - ad-company-formation | AD | tier 2 | reviewed_by -
 - ad-corporate-income-tax | AD | tier 2 | reviewed_by -
 - ad-income-tax | AD | tier 2 | reviewed_by -
+- ad-non-resident-income-tax | AD | tier 2 | reviewed_by -
 - ad-payroll-social | AD | tier 2 | reviewed_by -
 - ad-tax-overview | AD | tier 2 | reviewed_by -
+- ad-transfer-pricing | AD | tier 2 | reviewed_by -
 - andorra-igi | AD | tier 2 | reviewed_by -
 - ao-company-formation | AO | tier 2 | reviewed_by -
 - ao-corporate-income-tax | AO | tier 2 | reviewed_by -
@@ -368,7 +371,9 @@ https://www.openaccountants.com
 - references | VN | tier 2 | reviewed_by -
 - am-company-formation | AM | tier 2 | reviewed_by -
 - am-corporate-income-tax | AM | tier 2 | reviewed_by -
+- am-cross-border | AM | tier 2 | reviewed_by -
 - am-tax-overview | AM | tier 2 | reviewed_by -
+- am-transfer-pricing | AM | tier 2 | reviewed_by -
 - armenia-income-tax | AM | tier 2 | reviewed_by -
 - armenia-payroll | AM | tier 2 | reviewed_by -
 - armenia-social-contributions | AM | tier 2 | reviewed_by -
@@ -732,6 +737,7 @@ https://www.openaccountants.com
 - croatia-vat-return | HR | tier 2 | reviewed_by -
 - hr-company-formation | HR | tier 2 | reviewed_by -
 - hr-corporate-income-tax | HR | tier 2 | reviewed_by -
+- hr-cross-border | HR | tier 2 | reviewed_by -
 - hr-tax-overview | HR | tier 2 | reviewed_by -
 - hr-transfer-pricing | HR | tier 2 | reviewed_by -
 - cu-company-formation | CU | tier 2 | reviewed_by -
@@ -858,7 +864,9 @@ https://www.openaccountants.com
 - er-vat-gst | ER | tier 2 | reviewed_by -
 - ee-company-formation | EE | tier 2 | reviewed_by -
 - ee-corporate-income-tax | EE | tier 2 | reviewed_by -
+- ee-cross-border | EE | tier 2 | reviewed_by -
 - ee-tax-overview | EE | tier 2 | reviewed_by -
+- ee-transfer-pricing | EE | tier 2 | reviewed_by -
 - estonia-income-tax | EE | tier 2 | reviewed_by -
 - estonia-payroll | EE | tier 2 | reviewed_by -
 - estonia-social-contributions | EE | tier 2 | reviewed_by -
@@ -891,11 +899,18 @@ https://www.openaccountants.com
 - fj-income-tax | FJ | tier 2 | reviewed_by -
 - fj-payroll-social | FJ | tier 2 | reviewed_by -
 - fj-tax-overview | FJ | tier 2 | reviewed_by -
+- fi-annual-real-estate-tax | FI | tier 2 | reviewed_by -
 - fi-company-formation | FI | tier 2 | reviewed_by -
+- fi-corporate-cross-border-tax | FI | tier 2 | reviewed_by -
 - fi-corporate-income-tax | FI | tier 2 | reviewed_by -
+- fi-country-by-country-reporting | FI | tier 2 | reviewed_by -
+- fi-employer-payroll | FI | tier 2 | reviewed_by -
 - fi-income-tax | FI | tier 2 | reviewed_by -
+- fi-individual-cross-border-residence | FI | tier 2 | reviewed_by -
 - fi-prepayments | FI | tier 2 | reviewed_by -
+- fi-property-transfer-tax | FI | tier 2 | reviewed_by -
 - fi-tax-overview | FI | tier 2 | reviewed_by -
+- fi-transfer-pricing | FI | tier 2 | reviewed_by -
 - fi-yel-social | FI | tier 2 | reviewed_by -
 - finland-vat-return | FI | tier 2 | reviewed_by -
 - fr-business-accounting | FR | tier 2 | reviewed_by -
@@ -949,8 +964,10 @@ https://www.openaccountants.com
 - de-income-tax | DE | tier 2 | reviewed_by -
 - de-non-resident-tax | DE | tier 2 | reviewed_by -
 - de-partners-and-part-year | DE | tier 2 | reviewed_by -
+- de-payroll-benefits | DE | tier 2 | reviewed_by -
 - de-payroll | DE | tier 2 | reviewed_by -
 - de-rental-income | DE | tier 2 | reviewed_by -
+- de-self-employed-income-tax | DE | tier 2 | reviewed_by -
 - de-social-contributions | DE | tier 2 | reviewed_by -
 - de-trade-tax | DE | tier 2 | reviewed_by -
 - de-treaty-withholding-rates | DE | tier 2 | reviewed_by -
@@ -1007,9 +1024,16 @@ https://www.openaccountants.com
 - guatemala-iva | GT | tier 2 | reviewed_by -
 - guatemala-payroll | GT | tier 2 | reviewed_by -
 - guatemala-social-contributions | GT | tier 2 | reviewed_by -
+- gg-company-accounts-and-reporting | GG | tier 2 | reviewed_by -
+- gg-company-formation | GG | tier 2 | reviewed_by -
 - gg-corporate-tax-substance | GG | tier 2 | reviewed_by -
+- gg-gst-transition | GG | tier 2 | reviewed_by -
 - gg-individual-income-tax | GG | tier 2 | reviewed_by -
 - gg-payroll-social-insurance | GG | tier 2 | reviewed_by -
+- gg-property-document-duty | GG | tier 2 | reviewed_by -
+- gg-secondary-pensions | GG | tier 2 | reviewed_by -
+- gg-transfer-pricing-and-connected-transactions | GG | tier 2 | reviewed_by -
+- gg-uk-treaty-employment-and-relief | GG | tier 2 | reviewed_by -
 - gw-company-formation | GW | tier 2 | reviewed_by -
 - gw-corporate-income-tax | GW | tier 2 | reviewed_by -
 - gw-income-tax | GW | tier 2 | reviewed_by -
@@ -1259,7 +1283,9 @@ https://www.openaccountants.com
 - latvia-vat-return | LV | tier 2 | reviewed_by -
 - lv-company-formation | LV | tier 2 | reviewed_by -
 - lv-corporate-income-tax | LV | tier 2 | reviewed_by -
+- lv-cross-border | LV | tier 2 | reviewed_by -
 - lv-tax-overview | LV | tier 2 | reviewed_by -
+- lv-transfer-pricing | LV | tier 2 | reviewed_by -
 - lb-company-formation | LB | tier 2 | reviewed_by -
 - lb-corporate-income-tax | LB | tier 2 | reviewed_by -
 - lb-income-tax | LB | tier 2 | reviewed_by -
@@ -1294,8 +1320,10 @@ https://www.openaccountants.com
 - lithuania-vat-return | LT | tier 2 | reviewed_by -
 - lt-company-formation | LT | tier 2 | reviewed_by -
 - lt-corporate-income-tax | LT | tier 2 | reviewed_by -
+- lt-cross-border | LT | tier 2 | reviewed_by -
 - lt-payroll-social | LT | tier 2 | reviewed_by -
 - lt-tax-overview | LT | tier 2 | reviewed_by -
+- lt-transfer-pricing | LT | tier 2 | reviewed_by -
 - references | LT | tier 2 | reviewed_by -
 - lu-corporate-tax | LU | tier 2 | reviewed_by -
 - lu-cross-border | LU | tier 2 | reviewed_by -
@@ -1350,7 +1378,7 @@ https://www.openaccountants.com
 - malta-income-tax | MT | tier 2 | reviewed_by -
 - malta-payroll | MT | tier 2 | reviewed_by -
 - malta-ssc | MT | tier 2 | reviewed_by -
-- malta-tax-optimization | MT | tier 2 | reviewed_by Michael Cutajar, CPA (Malta)
+- malta-tax-optimization | MT | tier 2 | reviewed_by -
 - malta-transfer-pricing | MT | tier 2 | reviewed_by -
 - malta-vat-return | MT | tier 2 | reviewed_by -
 - moving-to-malta-tax-residence | MT | tier 2 | reviewed_by -
@@ -1361,9 +1389,12 @@ https://www.openaccountants.com
 - mt-estimated-tax | MT | tier 2 | reviewed_by -
 - mt-family-office-setup | MT | tier 2 | reviewed_by -
 - mt-foundations-and-trusts | MT | tier 2 | reviewed_by -
+- mt-global-residence-programme | MT | tier 2 | reviewed_by -
 - mt-holding-company-participation-exemption | MT | tier 2 | reviewed_by -
 - mt-inheritance-and-succession | MT | tier 2 | reviewed_by -
+- mt-nomad-residence-permit | MT | tier 2 | reviewed_by -
 - mt-non-dom | MT | tier 2 | reviewed_by -
+- mt-permanent-residence-programme | MT | tier 2 | reviewed_by -
 - mt-property-transfer-tax-the-sale-immovable | MT | tier 2 | reviewed_by -
 - mt-rental-income | MT | tier 2 | reviewed_by -
 - mt-residence-programmes-for-wealthy-families | MT | tier 2 | reviewed_by -
@@ -1406,9 +1437,11 @@ https://www.openaccountants.com
 - moldova-vat | MD | tier 2 | reviewed_by -
 - mc-company-formation | MC | tier 2 | reviewed_by -
 - mc-corporate-income-tax | MC | tier 2 | reviewed_by -
+- mc-cross-border | MC | tier 2 | reviewed_by -
 - mc-income-tax | MC | tier 2 | reviewed_by -
 - mc-payroll-social | MC | tier 2 | reviewed_by -
 - mc-tax-overview | MC | tier 2 | reviewed_by -
+- mc-transfer-pricing | MC | tier 2 | reviewed_by -
 - monaco-vat | MC | tier 2 | reviewed_by -
 - mn-company-formation | MN | tier 2 | reviewed_by -
 - mn-corporate-income-tax | MN | tier 2 | reviewed_by -
@@ -1445,7 +1478,6 @@ https://www.openaccountants.com
 - mozambique-payroll | MZ | tier 2 | reviewed_by -
 - mozambique-social-contributions | MZ | tier 2 | reviewed_by -
 - mozambique-vat | MZ | tier 2 | reviewed_by -
-- check-out-mr-moe-lwin-tun-johndoe-john-smith-s-profile-on-linkedin-https-mm-linkedin-com-in-mr-moe-lwin-tun-johndoe-john-smith-2b649b428 | MM | tier 2 | reviewed_by -
 - mm-company-formation | MM | tier 2 | reviewed_by -
 - mm-income-tax | MM | tier 2 | reviewed_by -
 - mm-payroll-social | MM | tier 2 | reviewed_by -
@@ -1636,8 +1668,10 @@ https://www.openaccountants.com
 - pr-self-employment-tax-2025 | PR | tier 2 | reviewed_by -
 - qa-company-formation | QA | tier 2 | reviewed_by -
 - qa-corporate-income-tax | QA | tier 2 | reviewed_by -
+- qa-cross-border-tax | QA | tier 2 | reviewed_by -
 - qa-payroll-social | QA | tier 2 | reviewed_by -
 - qa-tax-overview | QA | tier 2 | reviewed_by -
+- qa-transfer-pricing | QA | tier 2 | reviewed_by -
 - qa-vat-gst | QA | tier 2 | reviewed_by -
 - qatar-tax | QA | tier 2 | reviewed_by -
 - cg-company-formation | CG | tier 2 | reviewed_by -
@@ -1784,7 +1818,9 @@ https://www.openaccountants.com
 - slovakia-vat-return | SK | tier 2 | reviewed_by -
 - si-company-formation | SI | tier 2 | reviewed_by -
 - si-corporate-income-tax | SI | tier 2 | reviewed_by -
+- si-cross-border | SI | tier 2 | reviewed_by -
 - si-tax-overview | SI | tier 2 | reviewed_by -
+- si-transfer-pricing | SI | tier 2 | reviewed_by -
 - slovenia-income-tax | SI | tier 2 | reviewed_by -
 - slovenia-payroll | SI | tier 2 | reviewed_by -
 - slovenia-social-contributions | SI | tier 2 | reviewed_by -
@@ -1830,9 +1866,15 @@ https://www.openaccountants.com
 - ss-vat-gst | SS | tier 2 | reviewed_by -
 - es-autonomous-worker | ES | tier 2 | reviewed_by -
 - es-beckham | ES | tier 2 | reviewed_by -
+- es-canary-islands-igic | ES | tier 2 | reviewed_by -
 - es-capital-gains | ES | tier 2 | reviewed_by -
+- es-ceuta-melilla-ipsi | ES | tier 2 | reviewed_by -
 - es-corporate-tax | ES | tier 2 | reviewed_by -
 - es-estimated-tax | ES | tier 2 | reviewed_by -
+- es-foral-corporate-tax | ES | tier 2 | reviewed_by -
+- es-foral-income-tax | ES | tier 2 | reviewed_by -
+- es-foral-non-resident-tax | ES | tier 2 | reviewed_by -
+- es-foral-payroll | ES | tier 2 | reviewed_by -
 - es-income-tax | ES | tier 2 | reviewed_by -
 - es-irpf-deductions | ES | tier 2 | reviewed_by -
 - es-modelo-111 | ES | tier 2 | reviewed_by -
@@ -2233,8 +2275,13 @@ https://www.openaccountants.com
 - in-payroll | US-IN | tier 2 | reviewed_by -
 - in-sales-tax | US-IN | tier 2 | reviewed_by -
 - indiana-sales-tax | US-IN | tier 2 | reviewed_by -
+- ks-corporate-income-tax | US-KS | tier 2 | reviewed_by -
+- ks-cross-border | US-KS | tier 2 | reviewed_by -
 - ks-income-tax | US-KS | tier 2 | reviewed_by -
+- ks-payroll | US-KS | tier 2 | reviewed_by -
 - ks-sales-tax | US-KS | tier 2 | reviewed_by -
+- ks-social-contributions | US-KS | tier 2 | reviewed_by -
+- ks-transfer-pricing | US-KS | tier 2 | reviewed_by -
 - ky-income-tax | US-KY | tier 2 | reviewed_by -
 - ky-payroll | US-KY | tier 2 | reviewed_by -
 - ky-sales-tax | US-KY | tier 2 | reviewed_by -
@@ -2393,7 +2440,7 @@ Every jurisdiction in the catalogue has a **complete, verified, reviewed pack**,
 2. **Verified.** Every figure is tied to an official source that resolves, the two worked examples in every skill recompute, and the pack passes `scripts/validate-guides.py` and CI. A guide being present is not coverage. Source preparation is not coverage.
 3. **Reviewed.** A named accountant has reviewed the pack (`tier: 1` with `reviewed_by` and `reviewed_on`). This is the last step and the slowest: we build and verify first, then bring accountants in per jurisdiction.
 
-There are exactly two quality states: **Accountant-reviewed** (`tier: 1`) and **Source-cited draft** (`tier: 2`). See [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). In prose we say "190+ jurisdictions" ([docs/COVERAGE.md](docs/COVERAGE.md)); the exact figures come from the report below, never from a hand count.
+There are exactly two quality tiers: **Accountant-reviewed** (`tier: 1`) and `tier: 2`, named **Checked against the law** (built to the standard in docs/skill-template.md) or **Sourced from the law** (older skills not yet rebuilt). See [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). In prose we say "190+ jurisdictions" ([docs/COVERAGE.md](docs/COVERAGE.md)); the exact figures come from the report below, never from a hand count.
 
 ## Where we are
 
@@ -2447,14 +2494,15 @@ See [OWNERS.md](OWNERS.md).
 
 # Skill quality states
 
-Every skill in this repository is in exactly one of two states. There is no third.
+Every skill in this repository is in exactly one of two tiers. There is no third. Tier 2 has two names, depending on how the skill was built.
 
 | `tier` | Label | What it means |
 |---|---|---|
 | `1` | **Accountant-reviewed** | A named, licensed accountant (CPA, CA, EA, Steuerberater, expert-comptable, or the local equivalent) has reviewed the whole skill and put their name and credential on it: `reviewed_by` and `reviewed_on` in frontmatter. The reviewer is credited on the skill and at openaccountants.com. |
-| `2` | **Source-cited draft** | Every rate, threshold, form and deadline is drafted from official sources and cited to them. The format matches the reviewed standard. No credentialed accountant has reviewed it. |
+| `2` | **Checked against the law** | Built to the standard in [skill-template.md](skill-template.md) (deep-tax shape, `## Sources` table with read dates, independent review before merge). Every figure is cited to the law and checked against the statute by an independent review before merge. No accountant has signed it off yet. |
+| `2` | **Sourced from the law** | An older skill not yet rebuilt to that standard. Every figure is cited to an official source. No accountant has signed it off yet. |
 
-The stored identifiers do not change: frontmatter uses `tier: 1` or `tier: 2`, and the legacy `verified_by` key keeps its spelling. In prose, say "Accountant-reviewed" and "Source-cited draft" and nothing else.
+The stored identifiers do not change: frontmatter uses `tier: 1` or `tier: 2`, and the legacy `verified_by` key keeps its spelling. In prose, say "Accountant-reviewed" for tier 1, and "Checked against the law" or "Sourced from the law" for tier 2, and nothing else. The retired name "source-cited draft" is not used.
 
 ## Rules
 
@@ -2462,7 +2510,7 @@ The stored identifiers do not change: frontmatter uses `tier: 1` or `tier: 2`, a
 - A reviewer name alone does not make a skill reviewed; `tier` must be `1` as well.
 - An author line (`authored_by`) says who wrote the skill. It is not a review and does not change the state.
 - A substantive edit to a reviewed skill sends it back to `pending_review` until the accountant signs off again.
-- A source-cited draft is a starting point. The reviewer brief in every output says so.
+- A tier-2 skill is a starting point. The reviewer brief in every output says so.
 
 ## Counts
 
@@ -2476,11 +2524,11 @@ ACCOUNTANT-REVIEWED
 Reviewed by: Name, Credential (Malta) · Reviewed on: YYYY-MM-DD
 
 France VAT Return (CA3) v0.1
-SOURCE-CITED DRAFT
-Sources: impots.gouv.fr (read 2026-04-12) · Not yet reviewed by an accountant
+CHECKED AGAINST THE LAW
+Sources: impots.gouv.fr, CGI (read 2026-04-12) · No accountant has signed it off yet
 ```
 
-## How a draft becomes reviewed
+## How a tier-2 skill becomes reviewed
 
 1. A licensed accountant in the jurisdiction picks up the skill.
 2. They check the rates, thresholds, forms and deadlines against current law and recompute the worked examples.
@@ -2491,7 +2539,7 @@ The accountant is credited publicly on the skill and in [VERIFIERS.md](../VERIFI
 
 ## Acceptable sources
 
-A source-cited draft cites official sources only:
+A tier-2 skill cites official sources only:
 
 - The tax authority's own publications, forms and instructions (HMRC, IRS, CRA, ATO, BZSt, DGFiP, AEAT, and so on).
 - Primary legislation and statutory instruments.

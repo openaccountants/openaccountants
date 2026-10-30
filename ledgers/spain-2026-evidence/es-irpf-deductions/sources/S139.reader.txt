@@ -1,0 +1,207 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: 10.15.6. Por conciliación del trabajo con la vida familiar
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+10. Cumplimentación IRPF. Deducciones autonómicas
+
+10.15. Comunitat Valenciana
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+10.15.6. Por conciliación del trabajo con la vida familiar
+
+Cuantía y personas que dan derecho a la deducción
+
+En general: la deducción se podrá aplicar por cada hijo o hija o persona acogida o con delegación de guarda con fines de adopción mayor de tres años y menor de cinco años.
+
+El importe de la deducción será de 460 euros por cada uno de ellos.
+
+En los supuestos de adopción o guarda la deducción se podrá practicar, con independencia de la edad de la persona menor de edad, durante el cuarto y quinto años siguientes a la fecha de la inscripción en el Registro Civil.
+
+En los supuestos de acogimiento familiar la deducción se podrá practicar, con independencia de la edad de la persona menor de edad, durante el cuarto y quinto año siguientes a la fecha de la resolución administrativa mediante la que se formalizó aquel, siempre que esté aún vigente el último día del periodo impositivo.
+
+Contribuyentes fallecidos antes del 1 de junio: la deducción se podrá aplicar por cada hijo o menor acogido en la modalidad de acogimiento permanente, mayor de tres años y menor de cinco años.
+
+El importe de la deducción será de 460 euros por cada uno de ellos.
+
+En los supuestos de adopción la deducción se podrá practicar, con independencia de la edad del menor, durante el cuarto y quinto años siguientes a la fecha de la inscripción en el Registro Civil.
+
+En los supuestos de acogimiento familiar permanente, la deducción se podrá practicar, con independencia de la edad del menor, durante el cuarto y quinto año siguientes a la fecha de la resolución administrativa mediante la que se formalizó aquel, siempre que esté aún vigente el último día del periodo impositivo. En el caso de acogimientos que se vayan a constituir judicialmente, se tomará como referencia inicial para el citado cómputo la de la resolución administrativa mediante la que se formalizaron con carácter provisional.
+
+Requisitos y condiciones
+
+Esta deducción corresponderá exclusivamente a la madre, a la acogedora o a la guardadora.
+
+No obstante, en caso de fallecimiento de la madre, o cuando la guarda y custodia se atribuya de forma exclusiva al padre, éste tendrá derecho a la práctica de la deducción pendiente, siempre que cumpla los demás requisitos.
+
+También tendrá derecho a la práctica de la deducción el acogedor o el guardador en aquellos acogimientos en los que no hubiera acogedora o guardadora.
+
+En caso de progenitores, acogedores o guardadores del mismo sexo si ambos cumplen los requisitos los dos se podrán aplicar la deducción .
+
+Los menores que generen el derecho a la deducción han de dar derecho a la aplicación del mínimo por descendientes.
+
+La madre, la acogedora o la guardadora deberá realizar una actividad por cuenta propia o ajena por la cual esté dada de alta en el régimen correspondiente de la Seguridad Social o mutualidad.
+
+La suma de la base liquidable general y de la base liquidable del ahorro del contribuyente no puede ser superior a 30.000 euros en tributación individual o a 47.000 en tributación conjunta.
+
+Cuando existan varios contribuyentes declarantes con derecho a la aplicación de esta deducción con respecto a una misma persona su importe se prorrateará entre ellos por partes iguales.
+
+Cálculo de la deducción 
+
+La deducción se calculará de forma proporcional al número de meses en que se cumplan de forma simultánea los requisitos anteriores, entendiéndose a tal efecto que:
+
+La determinación de las personas que dan derecho a la deducción se realizará de acuerdo con su situación el último día de cada mes.
+
+El requisito de alta en el régimen correspondiente de la Seguridad Social o mutualidad se cumple los meses en que esta situación se produzca en cualquier día del mes.
+
+La deducción tendrá como límite las cotizaciones y cuotas totales a la Seguridad Social y mutualidades de carácter alternativo devengadas en cada período impositivo. No obstante, en el caso de contribuyentes fallecidos antes del 1 de junio la deducción tendrá como límite para cada hijo o acogido las cotizaciones y cuotas totales a la Seguridad Social y mutualidades de carácter alternativo devengadas en cada período impositivo.
+
+Las cotizaciones a considerar son las devengadas desde el día en que el menor cumpla los tres años y hasta el día anterior al que cumpla los cinco años.
+
+A efectos del cálculo de este límite se computarán las cotizaciones y cuotas por sus importes íntegros, sin tomar en consideración las bonificaciones que pudieran corresponder.
+
+Límite
+
+El importe íntegro de la deducción solo será aplicable a los contribuyentes cuya suma de la base liquidable general y de la base liquidable del ahorro sea inferior a 27.000 euros en tributación individual, o inferior a 44.000 euros, en tributación conjunta.
+
+Cuando la suma de la base liquidable general y de la base liquidable del ahorro esté comprendida entre 27.000 y 30.000 euros en tributación individual, o entre 44.000 y 47.000 euros en tributación conjunta, los importes y límites de deducción serán los siguientes:
+
+En tributación individual, el resultado de multiplicar el importe o límite de deducción por un porcentaje obtenido de la aplicación de la siguiente fórmula: 100 X (1 – el coeficiente resultante de dividir por 3.000 la diferencia entre la suma de la base liquidable general y del ahorro del contribuyente y 27.000).
+
+En tributación conjunta, el resultado de multiplicar el importe o límite de deducción por un porcentaje obtenido de la aplicación de la siguiente fórmula: 100 X (1 – el coeficiente resultante de dividir por 3.000 la diferencia entre la suma de la base liquidable general y del ahorro del contribuyente y 44.000).
+
+Incompatibilidad
+
+Esta deducción es incompatible con la deducción "Por contratar de manera indefinida a personas afiliadas en el Sistema Especial de Empleados de Hogar del Régimen General de la Seguridad Social para el cuidado de personas"
+
+Cumplimentación
+
+Se abrirá una ventana de captura de datos en la que deberá facilitar la información necesaria para calcular el importe de la deducción:
+
+"Cotizaciones a la Seguridad Social o Mutualidad y período en el que realiza una actividad por cuenta propia o ajena". Si las cotizaciones mensuales a la Seguridad Social o mutualidad ya constan a efectos de alguna deducción estatal (familia numerosa, descendientes o ascendientes con discapacidad, etc) y desea trasladarlas a esta deducción, marcará la casilla habilitada con ese fin
+
+Indicará el período en que realiza una actividad por cuenta propia o ajena, marcando los meses del año en los que la realiza la actividad y si la actividad se realiza durante todo el año deberá marcar la casilla habilitada al efecto. Además, consignará el importe de las cotizaciones a la Seguridad Social o mutualidad alternativa en cada mes del ejercicio.
+
+En caso de fallecimiento de la madre o si la guarda y custodia se atribuye en exclusiva al padre, este deberá reflejar la fecha en al que se produce una de esas circunstancias.
+
+Cuando existan varios contribuyentes con derecho a la aplicación de esta deducción, deberá indicar el número de personas con derecho a la misma.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 01/septiembre/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

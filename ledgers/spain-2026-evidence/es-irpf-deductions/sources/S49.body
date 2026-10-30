@@ -1,0 +1,501 @@
+
+
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca" lang="ca">
+<head id="Head1">
+    <base src="/" />
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=9,10,11" /><meta http-equiv="Content-language" content="ca" /><meta name="language" content="ca" /><meta name="keywords" content="atib, ibi, contribucions, tributs, tributos, pagament imposts" /><meta name="description" content="Portal tributari de l&#39;Agència Tributària de les Illes Balears | Portal A.T.I.B." />
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />-->
+    <title>
+	Agència Tributària de les Illes Balears - A.T.I.B. 413
+</title><link rel="icon" type="image/x-icon" href="/App_Themes/Azul/img/favicon.png" /><link rel="stylesheet" href="/design/Css/Azul/blueprint/screen.css" type="text/css" media="screen, projection" />
+    <!--[if lt IE 8]><link rel="stylesheet" href="/design/Css/Azul/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+
+    
+
+    <script type="text/javascript" src="/design/js/jquery-1.11.3.js"></script>
+
+    <script type="text/javascript" src="/design/js/libs.js"></script>
+    <script type="text/javascript" src="/design/js/atib.js"></script>
+    <script type="text/javascript" src="/design/js/general.js"></script>
+    <script type="text/javascript" src="/design/js/functions.js"></script>
+    <script type="text/javascript" src="/design/js/grayscale.js"></script>
+    <script type="text/javascript" src="/design/js/countdown.js?v=3"></script>
+    <script type="text/javascript" src="/design/js/FileSaver.min.js"></script>
+    <script type="text/javascript" src="/App_Themes/Default/js/modalPDF.js"></script>
+
+    <script type="text/javascript" src="/design/js/base64.min.js"></script>
+    
+
+        
+    
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--[if lt IE 8]><link rel="stylesheet" href="/design/Css/Azul/atib_ie.css" type="text/css" media="all" /><![endif]-->
+    <link href="/App_Themes/Default/css/municipios.css" rel="stylesheet" type="text/css" />
+    <!-- hola2 -->
+    <link id="atib" href="/App_Themes/Azul/css/atib.css?v=1" type="text/css" rel="stylesheet" /><link id="modalPDF" href="/App_Themes/Default/css/modalPDF.css" rel="stylesheet" /><link href="/App_Themes/Azul/css/forms.css" type="text/css" rel="stylesheet" /><link href="/App_Themes/Azul/css/normalize.css" type="text/css" rel="stylesheet" /><link href="/App_Themes/Azul/css/grayscale.css" type="text/css" rel="stylesheet" />
+    
+
+    <style type="text/css">
+        .blancinegre {
+            -webkit-filter: grayscale(1) !important;
+            -moz-filter: grayscale(1) !important;
+            -ms-filter: grayscale(1) !important;
+            filter: grayscale(1) !important;
+            filter: gray !important;
+        }
+
+        .atib-bn {
+            color: #000000;
+        }
+
+            .atib-bn h1, .atib-bn h2, .atib-bn h3, .atib-bn h4, .atib-bn h5, .atib-bn h6 {
+                color: #000000;
+            }
+
+            .atib-bn .ph2 {
+                color: #000000;
+            }
+
+            .atib-bn a {
+                color: #000000;
+            }
+
+                .atib-bn a:hover {
+                    color: #000000;
+                }
+
+            .atib-bn #header #menu {
+                background: #424242 url(../img/fondos/footer.png) repeat-x 0 0 !important;
+            }
+
+                .atib-bn #header #menu li a {
+                    position: relative !important;
+                    background: #424242 url(../img/fondos/footer.png) repeat-x 0px 0px !important;
+                    padding: 8px 19px !important;
+                    color: #fff !important;
+                    font-size: 1em !important;
+                }
+
+                .atib-bn #header #menu a.active, #header #menu a:hover {
+                    border-bottom: 3px solid #6F6F6F !important;
+                }
+
+            .atib-bn .gridView th {
+                background: #424242 url(../img/fondos/footer.png) repeat-x 0px 0px !important;
+            }
+
+            .atib-bn .cParte1 {
+                background: #424242 url(/App_Themes/Default/imgs/modelos/modelonegro.png) no-repeat !important;
+                color: #000000 !important;
+                border-bottom: solid 1px #C7C7C7 !important;
+            }
+
+            .atib-bn .cParte2 {
+                background-color: #404040 !important;
+                border-bottom: solid 1px #C7C7C7 !important;
+                border-right: solid 1px #C7C7C7 !important;
+                border-top: solid 1px #C7C7C7 !important;
+                color: #FFFFFF !important;
+            }
+
+            .atib-bn .cParte3 {
+                background-color: #C7C7C7 !important;
+            }
+
+            .atib-bn .roundBox {
+                background: #C7C7C7 !important;
+                color: #000000 !important;
+            }
+
+            .atib-bn .tlApartadoSelec {
+                background-color: #1B1B1B !important;
+                color: #FFFFFF !important;
+            }
+
+            .atib-bn .tipBajo {
+                background: transparent url(/design/tooltip/images/tipTop_atib_bn.png) no-repeat top !important;
+            }
+
+            .atib-bn .tipMidBajo {
+                background: transparent url(/design/tooltip/images/tipMid_atib_bn.png) repeat-y !important;
+                color: #000000;
+            }
+
+            .atib-bn .tipBtmBajo {
+                background: transparent url(/design/tooltip/images/tipBtm_atib_bn.png) no-repeat top !important;
+            }
+
+            .atib-bn .button {
+                background: #00626D url(/App_Themes/Azul/img/fondos/negro.gif) repeat-x 0 1% !important;
+            }
+
+            .atib-bn .alerta {
+                border: #000000 1px solid !important;
+                color: #000000 !important;
+            }
+
+            .atib-bn .errors {
+                color: #000000 !important;
+            }
+
+        .cookies {
+            background-color: #0D5EA0;
+            color: #fff;
+            opacity: 0.8;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding: 10px 40px;
+            box-sizing: border-box;
+        }
+
+            .cookies a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .cookies img {
+                vertical-align: middle;
+            }
+    </style>
+
+   
+    
+    
+</head>
+
+<body id="atibBody" class="atib">
+
+    <form method="post" action="./Novedad.aspx?idTexto=16987&amp;idTipoTexto=1&amp;lang=es" id="formCuerpo">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="v8uDlG1hNgxVq6Xa6c5PO0OJE2HoLWLD+McavYkYD8s3b7hXgmm6bRmKBhN+6De90d2GltI7Y0lMD4WT2Pm9/oFfE0WET8pNpb87jrY06K4=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ACFB96F8" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="3PsoEFDh9lAkGQH4N4tXxV5eHH3enTZCvQjGtuoLPzwMzFwJ9VmeDAohc72xm0w07pOHDo+6cxAdROHcpVoLpiUfHg6PSuh9Fs127zsU3PPAa256QGkJMtQKAVrYkc4n" />
+</div>
+        <div id="cookies" class="cookies">
+            <div style="flex: 1; padding-right: 20px;">
+                
+                <p>Este portal web utiliza exclusivamente cookies propias con finalidad técnica, imprescindibles para garantizar el correcto funcionamiento y la prestación de los servicios electrónicos disponibles, y no recaba ni cede datos de carácter personal de las personas usuarias sin su conocimiento. Asimismo, puede contener enlaces a sitios web de terceros con políticas de privacidad ajenas a la de la ATIB, cuyo acceso se realiza bajo la responsabilidad de la persona usuaria, que podrá decidir libremente si accede a ellos y acepta sus condiciones.</p>
+                <p><a href="https://www.atib.es/General/Mostrar_TextoLargo.aspx?idTexto=5350" target="_blank">Consulte la Política de privacidad (Cookies)</a></p>
+                
+            </div>
+            <div style="flex-shrink: 0; margin-left: 20px;">
+                <input type="submit" name="ctl00$ctl00$bAceptarCookies" value="Aceptar" id="bAceptarCookies" title="Aceptar" class="bAceptar" />
+            </div>
+        </div>
+        <div id="global">
+            <div id="header">
+                
+    
+
+<script type="text/javascript">
+
+    var textoBuscar = 'Buscar...';
+
+	function OnBlurInput(objetoInput) {
+	    objetoInput.value = objetoInput.value == "" ? textoBuscar : objetoInput.value;
+	}
+
+	function OnClickInput(objetoInput) {
+	    objetoInput.value = objetoInput.value == textoBuscar ? "" : objetoInput.value;
+	}
+
+	function Busqueda() {
+	    var iBusqueda = document.getElementById('iBusqueda').value == textoBuscar ? "ATIB" : document.getElementById('iBusqueda').value;
+	    document.location.href = "/buscador/?busqueda="+iBusqueda;
+	}
+
+	$(document).ready( function () {
+            $("#iBusqueda").val();
+            $('#iBusqueda').bind('keypress', function (e) {
+                if (e.keyCode == 13) {
+                    Busqueda();
+                }
+            });
+
+            $('#btnbusqueda').click(function () {
+                Busqueda();
+            });
+        }
+    );
+</script>
+
+<div>
+    <div id="logo" style="float:left;">
+        <a href="/Default.aspx" title="Anar a la pàgina principal">
+            <img id="cabeceraWeb" class="imagenJPG" src="/App_Themes/Azul/img/banners/cabeceraweb.jpg" alt="ATIB" />
+        </a>
+    </div>
+    <div style="float:right;">
+        
+        <div id="opciones" style="padding-top:40px; width:170px;">
+            <div id="idiomas">
+                <a id="cph_header_PageHeader1_lnkCatala" title="CA" class="desactivo" lang="ca" href="https://atib.es/General/Novedad.aspx?idTexto=16987&amp;idTipoTexto=1&amp;lang=ca"><h1>Català</h1></a>
+                
+            </div>
+
+            <div style="clear:left;"></div>
+        </div>
+		
+    </div>
+    <div style="clear:both;"></div>
+</div>
+    
+    
+<ol id="menu" class="clearfix" style="display:flex; justify-content:space-between">
+    <li><a href="../Default.aspx" id="cph_header_PageMenu1_menu_index" class="homeButton" style="font-weight:bold">
+        Inicio</a></li>
+    <li><a href="Mostrar_TextoLargo.aspx?idTexto=5369" id="cph_header_PageMenu1_menu_atib" style="font-weight:bold">Oficinas y servicios</a></li>
+    <li><a href="../TA/Default.aspx" id="cph_header_PageMenu1_menu_ta" class="menu_ta" style="font-weight:bold">
+        Tributos autonómicos</a></li>
+    <li><a href="../TL/Default.aspx" id="cph_header_PageMenu1_menu_tl" class="menu_tl" style="font-weight:bold">
+        Tributos locales - Multas</a></li>
+
+    <li><a href="Contacto.aspx" id="cph_header_PageMenu1_menu_consultas" style="font-weight:bold">
+        Consultas y sugerencias</a></li>
+    <li><a href="Mostrar_TextoLargo.aspx?idTexto=5370" id="cph_header_PageMenu1_menu_contacto" style="font-weight:bold">
+        Contacto</a></li>
+</ol>
+
+    
+        <ul id="cph_header_cph_breadcrumbs_breadcrumbs" class="breadcrumbs">
+            <li><span class="crumb" style="padding-left: 0px">&gt;&gt;</span></li>
+        <li><a title="Novedades y comunicados" href="/General/ListadoNoticias.aspx?idTipoTexto=1">Novedades y comunicados</a><span class="crumb">&gt;&gt;</span></li><li title="Medidas fiscales en la Ley 4/2026, de 11 de junio, de medidas urgentes para acelerar proyectos estratégicos que contribuyan a la transformación económica de las Illes Balears y de otras medidas de simplificación y racionalización administrativas">Medidas fiscales en la Ley 4/2026, de 11 de junio,...</li></ul>
+    
+
+            </div>
+
+            <div id="content">
+                <div id="main">
+                    
+    <script type="text/javascript" src="/maint.js?v=28/10/2026 1:08:23"></script>
+    
+<div class="article">
+		<p class="ph2 articleTitle">
+           <span id="cph_main_cph_main_lblTitulo">Medidas fiscales en la Ley 4/2026, de 11 de junio, de medidas urgentes para acelerar proyectos estratégicos que contribuyan a la transformación económica de las Illes Balears y de otras medidas de simplificación y racionalización administrativas</span>
+        </p>
+		<div class="articleDate"><span id="cph_main_cph_main_lblFecha">Fecha: 13/6/2026</span></div>
+		<p class="articleContent">
+           <span id="cph_main_cph_main_lblTexto"><p align="justify"><br />La&nbsp;<strong><a title="Ley 4/2026, de 11 de junio" href="http://www.atib.es/normas/LPES_s.pdf" target="_blank">Ley 4/2026, de 11 de junio, de medidas urgentes para acelerar proyectos estratégicos que contribuyan a la transformación económica de las Illes Balears y de otras medidas de simplificación y racionalización administrativas</a></strong>&nbsp;establece, con efectos a partir del 14 de junio de 2026, las siguientes medidas tributarias (disposición final sexagésima séptima):<br /><br /><strong>1. IMPUESTO SOBRE LA RENTA DE LAS PERSONAS FÍSICAS&nbsp;</strong>(se modifican los artículos 3 bis.3, 4 quater, 6 ter y 6 quater, y se introduce el artículo 3 sexties del Texto refundido de las disposiciones legales de la Comunidad Autónoma de las Illes Balears en materia de tributos cedidos por el Estado, aprobado por el&nbsp;<a href="https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925" target="_blank">Decreto legislativo 1/2014, de 6 de junio</a>).</p><p></p><p align="justify"><strong>1.1.&nbsp;Corrección de un error material en la deducción por alquiler de vivienda habitual.</strong>&nbsp;</p><p align="justify">Se modifica el artículo 3 bis.3 con la finalidad de de eliminar una referencia innecesaria y equívoca a las familias numerosas de categoría especial en el primer párrafo del precepto, dado que dicha referencia ya figuraba correctamente en el segundo párrafo. De este modo, se clarifica la regulación de la deducción autonómica por alquiler de vivienda habitual aplicable a determinados colectivos, entre ellos menores de 30 años, personas con discapacidad, familias numerosas, familias monoparentales y trabajadores autónomos.</p><p>La deducción continúa permitiendo deducir el 20% de las cantidades satisfechas por el alquiler, con un máximo de 650 euros anuales, siempre que se cumplan los requisitos generales previstos en la norma. Asimismo, se mantienen los incrementos de los límites de renta en un 20% para familias numerosas y monoparentales y en un 30% para familias numerosas de categoría especial.</p><p align="justify"></p><p align="justify"><strong>1.2.&nbsp;Nueva deducción por ayudas percibidas por las personas afectadas por la talidomida en España durante el período 1950-1985.</strong></p><p align="justify"></p><p align="justify">A partir del ejercicio fiscal 2023, los contribuyentes que hayan percibido ayudas públicas destinadas a las personas afectadas por la talidomida en España durante el período 1950-1985 y que deban integrar su importe en la base imponible general del IRPF podrán aplicar una deducción en la cuota íntegra autonómica consistente en el importe resultante de aplicar el tipo medio de gravamen al importe de la ayuda pública integrada en la base liquidable.</p><p align="justify"></p><p align="justify"><strong>1.3.&nbsp;Nueva deducción destinada a fomentar el alquiler asequible y estable</strong>.&nbsp;</p><p align="justify">Se establece una deducción autonómica equivalente al 50% del rendimiento neto obtenido por el arrendador, con un límite máximo de 800 euros anuales por vivienda y de 2.000 euros por contribuyente, en aquellos casos en que se produzca la renovación temporal de contratos de alquiler o la formalización de nuevos contratos antes de que hayan transcurrido seis meses desde la finalización del anterior, siempre que la renta exigida al arrendatario no se incremente o únicamente aumente de acuerdo con el índice legal de actualización de alquileres.</p><p align="justify">Con esta medida se pretende incrementar la oferta de viviendas disponibles en régimen de alquiler, aumentar el número de viviendas incorporadas al programa de alquiler seguro de la Comunidad Autónoma y contribuir a moderar los precios del alquiler. Además, se introducen límites generales de renta para la aplicación de las deducciones reguladas en este artículo, exigiéndose que la base imponible total del contribuyente no supere los 52.800 euros en tributación individual ni los 84.480 euros en tributación conjunta.</p><p align="justify"></p><p align="justify"></p><p align="justify"><strong>1.4.&nbsp;Incremento de las deducciones autonómicas por nacimiento y adopción de hijos.&nbsp;</strong></p><p align="justify">Se modifican los artículos 6 ter y 6 quater del texto refundido con la finalidad de incrementar las cuantías de las deducciones aplicables por nacimientos y adopciones de hijos que den derecho a la aplicación del mínimo por descendientes.</p><p align="justify"></p><p align="justify">Las nuevas cuantías de la deducción pasan a ser las siguientes:</p><p align="justify"></p><p align="justify"></p>- Primer hijo o hija: de 800 a 900 euros.&nbsp;<br />- Segundo hijo o hija: de 1.000 a 1.200 euros.&nbsp;<br />- Tercer hijo o hija: de 1.200 a 1.500 euros.&nbsp;<br /><div>- Cuarto hijo o hija y siguientes: de 1.400 a 1.800 euros.<strong><br /><br /></strong><span class="HwtZe" lang="es"><span class="jCAhz ChMk0b"><span class="ryNqvb"><img alt="" class="imagenJPG" src="http://www.atib.es/App_Themes/Default/imgs/vermas_turquesa.jpg" style="VERTICAL-ALIGN: middle" /><strong>&nbsp;</strong></span></span></span><strong>Información: <a href="https://sede.atib.es/cva/tramites/abono-nacimiento" target="_blank">Deducción autonómica del IRPF por nacimiento (abonos y reintegros)</a>.</strong></div><br /><div><strong></strong></div><div align="justify"><strong>2. IMPUESTO SOBRE TRANSMISIONES PATRIMONIALES Y ACTOS JURÍDICOS DOCUMENTADOS</strong><strong>: Transmisiones patrimoniale onerosas </strong>(se modifica el artículo 10 y se añade el artículo 14 septies al&nbsp;<a href="https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925" target="_blank">Decreto legislativo 1/2014, de 6 de junio</a>).</div><p></p><p align="justify"></p><p align="justify">En el ámbito del impuesto sobre transmisiones patrimoniales onerosas (TPO), la reforma introduce modificaciones dirigidas principalmente a facilitar el acceso a la vivienda habitual y adaptar los beneficios fiscales al incremento de los precios del mercado inmobiliario balear.</p><p align="justify"></p><p align="justify"><strong>2.1.&nbsp;Modificación del tipo reducido aplicable a la adquisición de vivienda habitual por familias numerosas y familias monoparentales.</strong></p><p align="justify">Hasta ahora, la aplicación de este beneficio fiscal estaba condicionada a que el valor de la vivienda no superase determinados límites fijos. Con la reforma, estos límites pasan a vincularse al importe que se determine mediante orden del consejero competente en materia de hacienda, incrementado en un 15%, permitiendo así adaptar automáticamente estos beneficios a la evolución del mercado inmobiliario en cada isla.</p><p align="justify"></p><p align="justify"></p><p align="justify">En estos casos, el tipo reducido del 2% se aplicará sobre los primeros 270.151,20 euros de la base imponible, tributando el exceso al tipo general del 8%. No obstante, para las familias monoparentales de categoría general se mantiene la limitación específica respecto del valor máximo de la vivienda.</p><p align="justify"></p><p align="justify"></p><p align="justify"><strong>2.2. </strong><strong>Bonificación autonómica del 50%&nbsp;</strong><strong>de la cuota tributaria aplicable a las transmisiones onerosas de viviendas calificadas como viviendas de precio limitado (HPL)</strong>, definidas en el artículo 2 de la Ley 3/2024, de 3 de mayo, de medidas urgentes en materia de vivienda. Esta medida tiene por finalidad fomentar el acceso a viviendas asequibles y potenciar el nuevo modelo autonómico de vivienda protegida.<br /><strong><br />3.&nbsp;</strong><strong>IMPUESTO SOBRE TRANSMISIONES PATRIMONIALES Y ACTOS JURÍDICOS DOCUMENTADOS</strong><strong></strong><strong>: Actos jurídicos documentados</strong> (se modifica el artículo 17 y se añaden los artículos 19 quater y 19 quinquies al&nbsp;<a href="https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925" target="_blank">Decreto legislativo 1/2014, de 6 de junio</a>).</p><p align="justify"></p><p align="justify">La reforma extiende diversos beneficios fiscales al ámbito del impuesto sobre actos jurídicos documentados (AJD), especialmente en relación con la adquisición de vivienda nueva.</p><p align="justify"></p><p align="justify"><strong>3.1.&nbsp;Nuevos tipos reducidos aplicables a las primeras copias de escrituras y actas notariales que documenten la adquisición de la primera vivienda habitual.</strong></p><p align="justify"></p><p align="justify">Con carácter general, se establece un tipo reducido del 1% para aquellas adquisiciones en las que el valor de la vivienda no supere los 270.151,20 euros y el adquirente adquiera, en un porcentaje igual o superior al 50%, la plena propiedad o el derecho de uso o disfrute de la vivienda y, además, no sea titular o cotitular en un porcentaje igual o superior al 50% de ningún otro derecho de plena propiedad o de uso o disfrute sobre otra vivienda.</p><p align="justify"></p><p align="justify">Asimismo, se establece un <strong>tipo superreducido del 0,5% para determinados colectivos (jóvenes menores de 36 años, personas con discapacidad, familias numerosas y familias monoparentales)</strong>.&nbsp;En el caso de las familias numerosas y monoparentales, se prevé que el límite máximo del valor de la vivienda no sea superior al resultado de incrementar en un 15% el importe que, en el ámbito territorial correspondiente, establezca la orden a que se refiere la disposición adicional quinta del Decreto Legislativo 1/2014, de 6 de junio.No obstante, en el caso de familias monoparentales de categoría general, el valor de la vivienda no podrá superar los 270.151,20 euros, sin perjuicio del importe que resulte de la aplicación de la citada orden..</p><p align="justify"></p><p align="justify">El tipo del 0,5% se aplicará sobre los primeros 270.151,20 euros, tributando el exceso al tipo general del 1,5%.</p><p align="justify"></p><p align="justify"><strong>3.2.&nbsp;Bonificación autonómica del 100% de la cuota del impuesto sobre actos jurídicos documentados para menores de 30 años y personas con discapacidad igual o superior al 33% que adquieran su primera vivienda habitual.</strong></p><p align="justify"></p><p align="justify">Para beneficiarse de esta bonificación, el adquirente deberá haber tenido su residencia habitual en las Illes Balears durante, al menos, los tres años inmediatamente anteriores a la fecha de adquisición de la vivienda. Asimismo, la vivienda adquirida deberá constituir la primera vivienda respecto de la cual el contribuyente adquiera, en un porcentaje igual o superior al 50%, la plena propiedad, sin que pueda ser titular o cotitular, en este mismo porcentaje, de ningún otro derecho de plena propiedad o de uso y disfrute sobre otra vivienda.</p><p align="justify">Igualmente, la vivienda adquirida deberá alcanzar la condición de vivienda habitual conforme a la definición y requisitos establecidos en cada momento por la normativa reguladora del IRPF.&nbsp;Además, el valor real de la vivienda, o el valor declarado cuando éste sea superior, no podrá exceder de 270.151,20 euros.</p>
+<p align="justify">Por otra parte, la base imponible total del contribuyente en el IRPF correspondiente al último período impositivo cuyo plazo de declaración haya finalizado no podrá superar los 52.800 euros en tributación individual ni los 84.480 euros en tributación conjunta.</p>
+<p align="justify">Finalmente, se exige que el adquirente haya formalizado con una entidad financiera un préstamo con garantía hipotecaria por un importe igual o superior al 60% del valor de tasación de la vivienda.</p><p align="justify">Esta bonificación no exime de la obligación de presentar la correspondiente autoliquidación del impuesto.</p><p align="justify"></p><p align="justify"><strong>3.3.&nbsp;Bonificación autonómica del 50% de la cuota aplicable a las escrituras notariales que documenten la adquisición de viviendas de precio tasado, reguladas en el artículo 1.4 de la Ley 5/2008, de 14 de mayo, así como de viviendas de precio limitado</strong> (HPL)&nbsp;a que se refiere el artículo 2 de la Ley 3/2024, de 3 de mayo, de medidas urgentes en materia de vivienda.&nbsp;sta medida resulta especialmente relevante porque la primera transmisión de este tipo de viviendas está sujeta a IVA y AJD, y no a TPO, permitiendo trasladar también al ámbito del AJD los incentivos fiscales dirigidos a fomentar el acceso a la vivienda asequible.<br /><br /><img alt="" class="imagenJPG" src="http://www.atib.es/App_Themes/Default/imgs/vermas_turquesa.jpg" style="VERTICAL-ALIGN: middle" />&nbsp;<strong>Infomación: <a href="https://sede.atib.es/cva/tributos/transmisiones-patrimoniales" target="_blank" title="Impuesto sobre transmsiones patrimoniales">Impuesto sobre transmsiones patrimoniales y actos jurídicos documentados</a>.</strong></p><p align="justify"></p><p align="justify"></p><p align="justify"><strong><br />NOTA IMPORTANTE: </strong>Se modifica la disposición adicional quinta del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925" target="_blank">Decreto legislativo 1/2014, de 6 de junio</a>.&nbsp;Esta modificación tiene una incidencia relevante en la aplicación de los tipos reducidos, bonificaciones y reducciones previstas en el impuesto sobre transmisiones patrimoniales y actos jurídicos documentados y en el impuesto sobre sucesiones y donaciones.</p><p align="justify"></p><p align="justify">Por una parte, se mantiene la habilitación al consejero competente en materia de hacienda para incrementar el límite general de 270.151,20 euros hasta un máximo del 40%, pudiendo establecer cuantías diferenciadas por islas, municipios o zonas geográficas en función de la evolución del mercado inmobiliario.</p><p align="justify"></p><p align="justify">Por otra parte, con la finalidad de evitar que el incremento del precio de la vivienda reduzca el alcance efectivo de los beneficios fiscales existentes, se fija un nuevo umbral mínimo obligatorio de 331.859,70 euros, equivalente al valor de una vivienda de precio limitado tipo 2 de 90 metros cuadrados útiles y calificación energética A, a 1 de enero de 2026.</p><p align="justify"></p><p align="justify">El <strong>umbral de 331.859,70 euros es aplicable a las viviendas situadas en Mallorca y Menorca</strong>. En el caso de las <strong>viviendas situadas en Ibiza y Formentera, resulta aplicable el umbral de 378.212 euros</strong>, de acuerdo con lo previsto en la&nbsp;<span>&nbsp;</span><a href="http://www.atib.es/normas/Ordllindars_s.pdf" target="_blank" title="Orden umbral valor vivienda ITPAJD e ISD">Orden 5/2026, del consejero de Economía, Hacienda e Innovación. de 16 de marzo</a>, por la que se desarrolla la disposición adicional quinta del Texto refundido de las disposiciones legales de la Comunidad Autónoma de las Illes Balears en materia de tributos cedidos por el Estado, aprobado por el Decreto Legislativo 1/2014, de 6 de junio.</p></span>
+		</p>
+</div>
+
+
+                </div>
+                <div id="rcolumn">
+                    
+    
+    
+
+<div id="banners">
+            
+    <div style="margin:0px 0px 0px 0px;">            
+        <a href="https://sede.atib.es/cva/cita-previa" target="_blank" title="Cita Prèvia" style="text-decoration:none;display:block;">
+            <img src="/App_Themes/Azul/img/banners/es/citaprevia.jpg" id="cph_rcolumn_Banners1_bannerCitaPrevia" class="imagenJPG" alt="Cita prèvia més rapit" width="184" height="65" />
+        </a>        
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="https://sede.atib.es/cva/tributos/impuesto-estancias-turisticas" target="_blank"style="text-decoration:none;" title="Impost sobre estades turístiques">
+            <img src="../App_Themes/Azul/img/banners/ca/turistico.jpg" id="cph_rcolumn_Banners1_banner_turistico" class="imagenJPG" alt="Mantenimiento" width="184" height="82" />
+        </a>
+    </div>
+
+
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="/TL/ServeiMissatges/Solicitud.aspx?idsol=21" style="text-decoration:none;" title="Denuncies Tributaries">
+            <img src="/App_Themes/Azul/img/banners/es/buzon.jpg" id="cph_rcolumn_Banners1_bannerDenuncias" class="imagenJPG" alt="Denuncies" width="190" height="72" />
+        </a>
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="/TL/serveimissatges/previa.aspx" title="Servei de missatges" style="text-decoration:none;">
+            <img src="/App_Themes/Azul/img/banners/es/servicios_sms.jpg" id="cph_rcolumn_Banners1_bannerServicioMensajes" class="imagenJPG" alt="mail/sms" width="180" height="74" />
+        </a>        
+    </div>
+
+
+    
+    <div style="margin:0px 0px 0px 0px;">    
+        <a href="/TL/Notificaciones/" title="Consulta por código de información / identificación de documento" style="text-decoration:none;display:block;">
+            <img src="/App_Themes/Azul/img/banners/es/codigo-cid.jpg" id="cph_rcolumn_Banners1_bannerCID" class="imagenJPG" alt="CID códi de informació" width="190" height="71" />
+        </a>        
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="https://sede.atib.es/cva/faqs" target="_blank" title="Dubtes i Criteris" style="text-decoration:none;">
+            <img src="/App_Themes/Azul/img/banners/es/dudas.png" id="cph_rcolumn_Banners1_banner_dudas" class="imagenJPG" alt="Dubtes" width="185" height="67" />
+        </a>        
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="/TL/Diligencias/Comunicacion/" title="Comunicació i pagament d'embargament de crèdits o salaris" style="text-decoration:none;">
+            <img src="/App_Themes/Azul/img/banners/es/comunicacion_embargo.jpg" id="cph_rcolumn_Banners1_banner_comunicacion" class="imagenJPG" alt="Embargament de crèdits o salaris" width="190" height="85" />
+        </a>        
+    </div>
+                
+    <div style="margin:0px 0px 0px 0px;">            
+        <a href="https://sede.atib.es/cva/tramites/embargos" target="_blank" title="Informació de l´embargament de comptes bancaris" style="text-decoration:none;">
+            <img src="/App_Themes/Azul/img/banners/es/embargo.jpg" id="cph_rcolumn_Banners1_banner_embargos" class="imagenJPG" alt="Informació de l´embargaments" width="190" height="61" />
+        </a>
+    </div>
+    
+    <div style="margin:0px 0px 0px 0px;">    
+        <a href="/TA/modelos/Default.aspx?m=600" style="text-decoration:none;margin:0;" title="Model 600">
+            <img src="/App_Themes/Azul/img/banners/es/modelo600.jpg" id="cph_rcolumn_Banners1_banner_m600" class="imagenJPG" alt="Model 600" />
+        </a>
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="/TA/modelos/Default.aspx?m=621" target="_blank" style="text-decoration:none;margin:0;" title="Model 620">
+            <img src="/App_Themes/Azul/img/banners/es/modelo620.jpg" id="cph_rcolumn_Banners1_banner_m620" class="imagenJPG" alt="Model 620" />
+        </a>
+    </div>
+
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="https://sede.atib.es/cva/tramites/contenido/Subastas" target="_blank" style="text-decoration:none;" title="consulta de Subhastes">
+            <img src="/App_Themes/Azul/img/banners/es/subasta.jpg" id="cph_rcolumn_Banners1_banner_subasta" class="imagenJPG" alt="subhastes" width="190" height="66" />
+        </a>        
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="/TL/PreviaTL.aspx" title="consulta de Subhastes" style="text-decoration:none;display:none;"> 
+            <img src="/App_Themes/Azul/img/banners/es/localesv.jpg" id="cph_rcolumn_Banners1_banner_ivtm" class="imagenJPG" alt="Tributs Locals" width="185" height="78" />
+        </a>       
+    </div>
+
+</div>
+    
+
+                </div>
+                
+    
+    
+
+                <div class="clear"></div>
+            </div>
+
+            <div id="footer">
+                
+    
+<ul style="width:200px; margin-left:75px">
+    <li class="footerTitle">Información ATIB</li>
+    
+    
+    <li><a href="mostrar_textolargo.aspx?idTexto=5361" id="cph_footer_ctl00_A2" target="_blank" rel="noopener noreferrer">
+        Naturaleza, objetivos y funciones</a></li>
+    <li><a href="mostrar_textolargo.aspx?idTexto=5368" id="cph_footer_ctl00_A6" target="_blank" rel="noopener noreferrer">
+        Normativa reguladora</a></li>
+    <li><a href="mostrar_textolargo.aspx?idTexto=5363" id="cph_footer_ctl00_A3" target="_blank" rel="noopener noreferrer">
+        Órganos y estructura</a></li>
+
+
+    <li><a href="../DescargaDocs/CartamarcAtib.pdf" id="cph_footer_ctl00_A8" onclick="alert(&#39;Se va a abrir un archivo PDF&#39;)" target="_blank" rel="noopener noreferrer">
+        Carta marco de servicios</a></li>
+    <li><a href="../DescargaDocs/CARTADRETSATIB_s.pdf" id="cph_footer_ctl00_lnkCartaDerechosContribuyente" onclick="alert(&#39;Se va a abrir un archivo PDF&#39;)" target="_blank" rel="noopener noreferrer">
+        Carta de derechos de los contribuyentes</a></li>
+    <li><a href="mostrar_textolargo.aspx?idTexto=12484" id="cph_footer_ctl00_recursosHumanos" target="_blank" rel="noopener noreferrer">
+        Recursos humanos</a></li>
+</ul>
+
+
+<ul style="width:200px; margin-left:50px">
+    <li class="footerTitle">
+        Utilidades</li>
+    <li><a href="https://sede.atib.es/cva/informacion-general/portal-transparencia/contenidos" id="cph_footer_ctl00_A4" target="_blank" rel="noopener noreferrer">
+        Portal de transparencia</a></li>
+    <li><a href="https://contrataciondelestado.es/wps/portal/plataforma/perfil_contratante/lista_perfiles/!ut/p/z1/hZDLbsJADEW_hUWWjd2EzEB3EwohUavyECnjTZWIIYxKHkqmpOLrO0IsWJTWO9vnXl0bCLZAVXbSRWZ0XWVHkCCJf4h0uhTx2MdotZiiF644G87ebIuwKbNvXeqz2sEaCEjvwgYk53zEeMCsnyR2V48epPD-H0J2jXdKoNXTBQn8yTBN0gVbxxFiPJ89v2weA4w8dgX-8EiAimOd24NtYFHl_qgAatVetap1v1o7PhjTdE8OOtj3vWvfk7uqc_A3_lB3BrY3GDRlcjpPHj73ryaQYjD4AZ_daIM!/dz/d5/L2dBISEvZ0FBIS9nQSEh/" id="cph_footer_ctl00_A24" target="_blank" rel="noopener noreferrer">
+        Perfil del contratante</a></li>
+    <li><a href="../DescargaDocs/manual_identitat_atib.pdf" id="cph_footer_ctl00_A26" onclick="alert(&#39;Se va a abrir un archivo PDF&#39;)" target="_blank" rel="noopener noreferrer">
+        Manual de identidad corporativa</a></li>
+    <li><a href="https://reg.redsara.es/#/login" id="cph_footer_ctl00_A5" target="_blank" rel="noopener noreferrer">
+        Registro electrónico de documentos</a></li>
+    <li><a href="https://sede.atib.es/cva/informacion-general/informacion-aplicacion/contenidos" id="cph_footer_ctl00_A9" target="_blank" rel="noopener noreferrer">
+        Aplicación móvil ATIB (App ATIB)</a></li>
+    
+</ul>
+<ul style="width:220px; margin-left:50px">
+    <li class="footerTitle">
+        Enlaces de interés</li>
+   
+
+    <li><a href="https://sede.atib.es/cva/informacion-general/junta-superior-hacienda/contenidos" id="cph_footer_ctl00_A19" target="_blank" rel="noopener noreferrer">
+        Junta Superior de Hacienda</a></li>    
+    <li><a href="https://sede.atib.es/cva/informacion-general/consejo-asesor-fiscal/contenidos" id="cph_footer_ctl00_A7" target="_blank" rel="noopener noreferrer">
+        Consejo Asesor Fiscal</a></li>
+    
+ 
+    
+     
+    <li><a href="https://sede.agenciatributaria.gob.es/" id="cph_footer_ctl00_A1" target="_blank" rel="noopener noreferrer">
+        Agencia Estatal de Administración Tributaria</a></li>
+    <li><a href="https://www.agenciatributaria.es/AEAT.fisterritorial/InicioF.shtml" id="cph_footer_ctl00_A10" target="_blank" rel="noopener noreferrer">
+        Fiscalidad autonómica y local</a></li>
+    <li><a href="https://sede.atib.es/cva/informacion-general/instituciones-organismos/contenidos" id="cph_footer_ctl00_A25" target="_blank" rel="noopener noreferrer">
+        Instituciones y organismos</a></li>
+</ul>
+<div class="clear">
+</div>
+
+            </div>
+            <div id="footer2">
+                <a href="Mostrar_TextoLargo.aspx?idTexto=5350" id="A1" style="font-size: 1em;">Aviso legal</a>|
+                    <a href="Mostrar_TextoLargo.aspx?idTexto=12771" id="A7" style="font-size: 1em;">Política de privacidad</a>|                 
+                    <a href="Mostrar_TextoLargo.aspx?idTexto=5351" id="A2" style="font-size: 1em;">Accesibilidad</a>|
+                    <a href="#" style="font-size: 1em; cursor: pointer;" id="A3" onclick="javascript:atib.changeTheme('mono');return false;">Versión monocromática</a>&nbsp;|&nbsp;
+                    <a href="#" style="font-size: 1em; cursor: pointer;" id="A4" onclick="javascript:atib.changeTheme('normal');return false;">Versión normal</a>&nbsp;
+                
+                <div id="txtcopyright">
+                    <div><span>&copy; Agència Tributària de les Illes Balears</span></div>
+                    <div>
+                        <a href=" https://www.caib.es/webgoib/es/w/vicepresidencia-primera-y-consejeria-economia-hacienda-e-innovacion" id="conselleria" style="font-size: 1em;" target="_blank">
+                           Consejería de Economía, Hacienda e Innovación
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.caib.es/webgoib/es" id="govern" style="font-size: 1em;" title="Govern de les Illes Balears" target="_blank">Gobierno de las Illes Balears
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+                
+            var time = '1080000';
+            setInterval("mantenerSesion()", time);
+        </script>
+
+
+
+    </form>
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    <script async defer data-domain="atib.es" src="https://analytics.atib.es/js/plausible.js"></script>
+</body>
+</html>

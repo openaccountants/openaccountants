@@ -1,0 +1,291 @@
+[
+  {
+    "id": "es-vat-return.md-baseline-hash",
+    "pass": true
+  },
+  {
+    "id": "es-vat-return.md-candidate-hash",
+    "pass": true
+  },
+  {
+    "id": "es-vat-return.md-all-old-URL-occurrences-in-order",
+    "pass": true,
+    "old_occurrences": 168
+  },
+  {
+    "id": "es-vat-return.md-protected-metadata",
+    "pass": true
+  },
+  {
+    "id": "es-vat-return.md-headings",
+    "pass": true
+  },
+  {
+    "id": "es-vat-return.md-complete-oa-blocks",
+    "pass": true
+  },
+  {
+    "id": "es-vat-return.md-CTA",
+    "pass": true
+  },
+  {
+    "id": "es-vat-return.md-all-original-Sources-table-rows",
+    "pass": true
+  },
+  {
+    "id": "es-vat-return.md-trust-pending",
+    "pass": true
+  },
+  {
+    "id": "spain-vat-return.md-baseline-hash",
+    "pass": true
+  },
+  {
+    "id": "spain-vat-return.md-candidate-hash",
+    "pass": true
+  },
+  {
+    "id": "spain-vat-return.md-all-old-URL-occurrences-in-order",
+    "pass": true,
+    "old_occurrences": 66
+  },
+  {
+    "id": "spain-vat-return.md-protected-metadata",
+    "pass": true
+  },
+  {
+    "id": "spain-vat-return.md-headings",
+    "pass": true
+  },
+  {
+    "id": "spain-vat-return.md-complete-oa-blocks",
+    "pass": true
+  },
+  {
+    "id": "spain-vat-return.md-CTA",
+    "pass": true
+  },
+  {
+    "id": "spain-vat-return.md-all-original-Sources-table-rows",
+    "pass": true
+  },
+  {
+    "id": "spain-vat-return.md-trust-pending",
+    "pass": true
+  },
+  {
+    "id": "es-estimated-tax.md-baseline-hash",
+    "pass": true
+  },
+  {
+    "id": "es-estimated-tax.md-candidate-hash",
+    "pass": true
+  },
+  {
+    "id": "es-estimated-tax.md-all-old-URL-occurrences-in-order",
+    "pass": true,
+    "old_occurrences": 77
+  },
+  {
+    "id": "es-estimated-tax.md-protected-metadata",
+    "pass": true
+  },
+  {
+    "id": "es-estimated-tax.md-headings",
+    "pass": true
+  },
+  {
+    "id": "es-estimated-tax.md-complete-oa-blocks",
+    "pass": true
+  },
+  {
+    "id": "es-estimated-tax.md-CTA",
+    "pass": true
+  },
+  {
+    "id": "es-estimated-tax.md-all-original-Sources-table-rows",
+    "pass": true
+  },
+  {
+    "id": "es-estimated-tax.md-trust-pending",
+    "pass": true
+  },
+  {
+    "id": "es-income-tax.md-baseline-hash",
+    "pass": true
+  },
+  {
+    "id": "es-income-tax.md-candidate-hash",
+    "pass": true
+  },
+  {
+    "id": "es-income-tax.md-all-old-URL-occurrences-in-order",
+    "pass": true,
+    "old_occurrences": 237
+  },
+  {
+    "id": "es-income-tax.md-protected-metadata",
+    "pass": true
+  },
+  {
+    "id": "es-income-tax.md-headings",
+    "pass": true
+  },
+  {
+    "id": "es-income-tax.md-complete-oa-blocks",
+    "pass": true
+  },
+  {
+    "id": "es-income-tax.md-CTA",
+    "pass": true
+  },
+  {
+    "id": "es-income-tax.md-all-original-Sources-table-rows",
+    "pass": true
+  },
+  {
+    "id": "es-income-tax.md-trust-pending",
+    "pass": true
+  },
+  {
+    "id": "README.md-baseline-hash",
+    "pass": true
+  },
+  {
+    "id": "README.md-candidate-hash",
+    "pass": true
+  },
+  {
+    "id": "README.md-all-old-URL-occurrences-in-order",
+    "pass": true,
+    "old_occurrences": 35
+  },
+  {
+    "id": "README-all-status-fields-preserved",
+    "pass": true
+  },
+  {
+    "id": "effective-limit-(Decimal('200000'), Decimal('100000'), Decimal('220000'))",
+    "pass": true
+  },
+  {
+    "id": "effective-limit-(Decimal('250000'), Decimal('125000'), Decimal('250000'))",
+    "pass": true
+  },
+  {
+    "id": "effective-limit-(Decimal('250000.01'), Decimal('100000'), Decimal('220000'))",
+    "pass": true
+  },
+  {
+    "id": "effective-limit-(Decimal('200000'), Decimal('125000.01'), Decimal('220000'))",
+    "pass": true
+  },
+  {
+    "id": "effective-limit-(Decimal('200000'), Decimal('100000'), Decimal('250000.01'))",
+    "pass": true
+  },
+  {
+    "id": "lower-baseline-differs",
+    "pass": true
+  },
+  {
+    "id": "six-month-annualisation",
+    "pass": true
+  },
+  {
+    "id": "qualified-related-aggregation-fails",
+    "pass": true
+  },
+  {
+    "id": "exceptional-february-date-4",
+    "pass": true
+  },
+  {
+    "id": "exceptional-february-date-5",
+    "pass": true
+  },
+  {
+    "id": "exceptional-february-date-15",
+    "pass": true
+  },
+  {
+    "id": "exceptional-february-date-16",
+    "pass": true
+  },
+  {
+    "id": "exceptional-february-date-17",
+    "pass": true
+  },
+  {
+    "id": "actual-source-aeat-april-1-effects",
+    "pass": true
+  },
+  {
+    "id": "actual-source-aeat-simplified-eligibility",
+    "pass": true
+  },
+  {
+    "id": "actual-source-aeat-april-9-sii-redeme",
+    "pass": true
+  },
+  {
+    "id": "actual-source-liva-current",
+    "pass": true
+  },
+  {
+    "id": "actual-source-riva-current",
+    "pass": true
+  },
+  {
+    "id": "actual-source-leta-rirpf-current",
+    "pass": true
+  },
+  {
+    "id": "actual-source-rdl-2-2026",
+    "pass": true
+  },
+  {
+    "id": "actual-source-rdl-16-2025",
+    "pass": true
+  },
+  {
+    "id": "actual-source-rdl-2-2026-repeal",
+    "pass": true
+  },
+  {
+    "id": "actual-source-rdl-16-2025-repeal",
+    "pass": true
+  },
+  {
+    "id": "actual-source-lirpf-current",
+    "pass": true
+  },
+  {
+    "id": "actual-source-aeat-irpf-eligibility",
+    "pass": true
+  },
+  {
+    "id": "actual-source-module-order-2026",
+    "pass": true
+  },
+  {
+    "id": "actual-note-differentiates-IVA-from-IRPF",
+    "pass": true
+  },
+  {
+    "id": "no-invented-pending-case",
+    "pass": true
+  },
+  {
+    "id": "established-and-new-start-distinguished",
+    "pass": true
+  },
+  {
+    "id": "filing-not-collected-tax",
+    "pass": true
+  },
+  {
+    "id": "three-year-and-same-year-exceptions",
+    "pass": true
+  }
+]

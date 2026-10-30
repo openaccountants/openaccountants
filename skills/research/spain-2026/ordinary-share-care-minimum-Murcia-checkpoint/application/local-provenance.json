@@ -1,0 +1,14 @@
+{
+  "skills/international/spain/es-foral-corporate-tax.md": {
+    "expected_repo_blob": "1ed0833945f61eb18509fade979a50be90b3dba5",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-foral-income-tax.md": {
+    "expected_repo_blob": "5672099f8f70580d3b9889c623713d711e0af8a1",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-irpf-deductions.md": {
+    "expected_repo_blob": "4ebd5a719e4660ee163a63cdd57c9f80cc30cafb",
+    "content_revision": 0
+  }
+}

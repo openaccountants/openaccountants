@@ -1,0 +1,68 @@
+{
+  "published_head": "a23757a23537adb396146d8294f3d404b7d9ac53",
+  "main": "73f566473aaab8cda1e1a28c0fb8a9c3cd6f7dd0",
+  "main_reconciliation_head": "4224c911c6c390e686f7fcf47bf5cbfc5cb6f0f3",
+  "all_country_bytes_unchanged_by_merge": true,
+  "files": [
+    {
+      "path": "skills/international/guernsey/README.md",
+      "sha256": "7b705b4481716b9b91a5c09fd423435ef54857b2b0a0b8674933a965b9a0dd56",
+      "bytes": 5729,
+      "control_count": 0
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+      "sha256": "0df58a68012c30596862d44dc45a2ee4d9c89b3b4ea2d6a3642f765c35a51134",
+      "bytes": 19304,
+      "control_count": 1
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "sha256": "e3059c47f1d7f9348e6c05733c8b3f456faabc69eea208b49f159bbf63df6d80",
+      "bytes": 8792,
+      "control_count": 0
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "sha256": "d5770695c00c25682e097228de4cd3d9328be56b892e52ad0cd76643c3995b97",
+      "bytes": 43283,
+      "control_count": 2
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "sha256": "5fb19fe80a8e2c845c829fd05e06aece9267943f9779914ce8003a99baacf7b4",
+      "bytes": 8447,
+      "control_count": 2
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "sha256": "44e2e693cda170b8727f90eaa70c1e7f82c7b741a848296f269296c693b0efb2",
+      "bytes": 29733,
+      "control_count": 5
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "sha256": "73a7d331915d8e8742daa9c1715dcf2414768c4c429f1a7d5115cc4f19dfdfe7",
+      "bytes": 35420,
+      "control_count": 8
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "sha256": "50ae1d10ab7d5f389efc60d2494f84a9236356973583371c2fcdb4d39ec45ce8",
+      "bytes": 15192,
+      "control_count": 3
+    },
+    {
+      "path": "skills/international/guernsey/gg-secondary-pensions.md",
+      "sha256": "ef6b8c3db874f1ee9d2dcad0a00aa1a9a86813f7be93add93a171cdf009d88e7",
+      "bytes": 13739,
+      "control_count": 2
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "sha256": "84129b462daa169bc2c9ee012f0c2235c1709af58b3ba1cb714ab422ca7c4b8c",
+      "bytes": 51467,
+      "control_count": 9
+    }
+  ]
+}

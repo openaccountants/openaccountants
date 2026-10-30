@@ -1,0 +1,346 @@
+
+
+        
+	
+    
+	
+
+: Instrucciones
+
+
+
+	
+[[ID:body]]
+
+		
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Todas las gestiones
+
+Impuestos, tasas y prestaciones patrimoniales
+
+Impuesto sobre la Renta de las Personas Físicas
+
+Modelo 131. IRPF. Empresarios y profesionales en Estimación Objetiva. Pago fraccionado.
+
+
+
+			
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Instrucciones
+
+Impuesto sobre la Renta de las Personas Físicas
+
+Actividades económicas en estimación objetiva
+
+Pago fraccionado - Autoliquidación
+
+Modelo 131
+
+Instrucciones para cumplimentar la autoliquidación
+
+Importante: Todos los importes monetarios solicitados deberán expresarse en euros, consignando la parte decimal, que constará de dos dígitos en todo caso. Los importes introducidos, con carácter general no irán precedidos de signo alguno; no obstante, en las casillas en que así se establezca, se admitirán precedidos del signo menos (“-”).
+
+Todas las menciones que en estas instrucciones se hacen a la Ley y al Reglamento del Impuesto deben entenderse hechas, respectivamente, a la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio (BOE del 29) y al Reglamento del Impuesto sobre la Renta de las Personas Físicas aprobado por el Real Decreto 439/2007, de 30 de marzo (BOE del 31).
+
+El modelo 131 deberá presentarse, según los casos:
+
+De forma electrónica a través de internet:
+
+bien mediante la utilización un sistema de identificación y autenticación basado en certificados electrónicos reconocidos emitidos de acuerdo a las condiciones que se establecen en el Reglamento (UE) n.º 910/2014 del Parlamento Europeo y del Consejo, de 23 de julio de 2014, relativo a la identificación electrónica y los servicios de confianza para las transacciones electrónicas en el mercado interior, y en la Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza, que resulte admisible por la Agencia Estatal de Administración Tributaria según la normativa vigente en cada momento, o
+
+bien mediante el sistema de firma con clave de acceso en un registro previo como usuario Cl@ve Móvil (incluye Cl@vePIN).
+
+En papel impreso generado exclusivamente mediante la utilización del servicio de impresión desarrollado a estos efectos por la Agencia tributaria en su sede electrónica (cuando el obligado tributario no deba presentar la autoliquidación obligatoriamente de forma electrónica).
+
+(1) Declarante
+
+Se consignará el NIF, nombre y apellidos del declarante.
+
+(2) Devengo
+
+Ejercicio: Se consignan las cuatro cifras del año natural al que corresponde el trimestre por el que se efectúa la autoliquidación.
+
+Período: Se hará constar aquí si la autoliquidación corresponde al primer, segundo, tercer o cuarto trimestre, del año natural.
+
+(3) Liquidación
+
+I. Actividades económicas en estimación objetiva distintas de las agrícolas, ganaderas y forestales.
+
+Cumplimentarán este apartado las personas físicas que desarrollen actividades económicas distintas de las agrícolas, ganaderas y forestales, cuyos rendimientos se determinen con arreglo al método de estimación objetiva. Los datos relativos a las actividades agrícolas, ganaderas y forestales en estimación objetiva no se consignarán en este apartado del modelo, sino en el apartado III.
+
+Actividad (epígrafe IAE). Se consignará el epígrafe del Impuesto sobre Actividades Económicas (IAE) correspondiente a cada una de las actividades económicas ejercidas cuyo rendimiento neto se determine en estimación objetiva y que tengan la consideración de actividades independientes a efectos de la aplicación del referido método.
+
+Rendimiento neto de la actividad a efectos del pago fraccionado. Debemos reflejar en estas casillas los rendimientos netos a efectos del pago fraccionado correspondientes a cada una de las actividades económicas ejercidas a las que se refiere este apartado del modelo.
+
+Con carácter general, el rendimiento neto correspondiente a cada actividad se calculará en función de los signos o módulos establecidos para la misma, teniendo en cuenta los “rendimientos anuales por unidad antes de amortización” que dichos signos o módulos tengan asignados, así como las minoraciones por incentivos al empleo y a la inversión y los índices correctores que, en su caso, resulten aplicables. Serán asimismo aplicables a efectos de los pagos fraccionados las reducciones del rendimiento neto establecidas por disposiciones de carácter general para las actividades en estimación objetiva.
+
+A efectos del pago fraccionado, debemos consignar el número de unidades de cada uno de los signos o módulos, así como las minoraciones y los índices correctores aplicables inicialmente en cada período anual, serán los correspondientes a los datos-base de la actividad referidos al día 1 de enero de cada año o al día en que se inicie la actividad, en el supuesto de que ésta no se hubiera ejercido en el año anterior. Si los datos-base de cada signo o módulo no fuesen un número entero, se tomarán con dos cifras decimales.
+
+Cuando algún dato-base no pudiera determinarse el primer día del año, a efectos del pago fraccionado se tomará el que hubiese correspondido en el año anterior.
+
+En el supuesto de actividades de temporada, se tomará, para calcular el rendimiento neto anual a efectos del pago fraccionado, el número de unidades de cada módulo que hubiesen correspondido el año anterior.
+
+Cuando en alguna actividad no pudiera determinarse ninguno de los datos-base a efectos del pago fraccionado, se cumplimentará el apartado II siguiente.
+
+Los incentivos al empleo, así como los índices correctores de actividad se reflejan en el formulario de declaración a partir de la información de datos adicionales que se solicita al introducir el epígrafe del IAE correspondiente a la actividad.
+
+El dato correspondiente al incentivo a la inversión, esto es la amortización anual correspondiente a los elementos afectos a la actividad, debe ser objeto de cálculo previo (no lo realiza el programa), debiendo reflejarse en la casilla correspondiente el dato anual resultante.
+
+Casilla 01. Consignaremos en esta casilla la suma de los rendimientos netos, a efectos del pago fraccionado, correspondientes a todas las actividades declaradas en este apartado.
+
+En el caso de las actividades de temporada, el rendimiento neto a reflejar en la casilla 01 será el correspondiente al trimestre objeto de autoliquidación, que resultará de multiplicar el número de días naturales en que se desarrolla la actividad durante dicho trimestre por el rendimiento diario. A estos efectos, el rendimiento diario resultará de dividir el rendimiento anual previamente obtenido – teniendo en cuenta el número de unidades de cada módulo que hubiesen correspondiendo el año anterior-, por el número de días de ejercicio de la actividad en el año anterior.
+
+Casilla 02. Pago Fraccionado del trimestre. Se traslada a esta casilla la suma total resultante de aplicar a cada una de las actividades declaradas en este apartado, los porcentajes de pagos fraccionados siguientes:
+
+Porcentaje aplicable. Respecto de cada una de las actividades declaradas en este apartado, el porcentaje a aplicar para determinar el importe del pago fraccionado, dependerá del número de personas asalariadas(*) en la fecha de cómputo de los datos-base. Dichos porcentajes son los siguientes:
+
+Número de personas asalariadas en la fecha
+
+unidades módulo personal asalariado
+
+de cómputo de los datos-base(*) 
+0,00
+0,01 a 1
+1,01 o más
+
+Porcentaje aplicable
+el 2 por 100
+el 3 por 100
+el 4 por 100
+
+(*) De acuerdo con la Sentencia del Tribunal Supremo 1667/2023, de 13 de diciembre, el personal asalariado debe computarse en función del número de horas anuales prorrateadas por trabajador fijado en el convenio colectivo correspondiente.
+
+No obstante, el contribuyente podrá aplicar porcentajes superiores a los indicados (no se permiten porcentajes inferiores), de conformidad con lo previsto al respecto en el artículo 110.4 del Reglamento del Impuesto. Dicha opción, así como el porcentaje superior que se desea aplicar, se reflejará en el apartado correspondiente de la pantalla de cumplimentación de datos adicionales que se solicita al introducir el epígrafe del IAE correspondiente a la actividad.
+
+En las actividades que se inicien con posterioridad al día 1 de enero o en las que se cese antes del 31 de diciembre o cuando concurran ambas circunstancias, así como en las actividades de temporada, la determinación del rendimiento neto a efectos del pago fraccionado y del importe que deberá ingresarse cada trimestre por este concepto se efectuará de acuerdo con las instrucciones específicas previstas para estos supuestos en las Órdenes ministeriales por las que se desarrolla para cada ejercicio el método de estimación objetiva del Impuesto sobre la Renta de las Personas Físicas.
+
+Recuerde que, en las actividades de temporada, el ingreso a realizar será el correspondiente al trimestre natural, que resultará de multiplicar el número de días naturales en que se desarrolla la actividad durante dicho trimestre por el rendimiento diario y por el porcentaje correspondiente según el número de unidades del módulo personal asalariado (a estos efectos, el rendimiento diario resultará de dividir el rendimiento anual obtenido por el número de días de ejercicio de la actividad en el año anterior).
+
+II. Actividades económicas en estimación objetiva distintas de las agrícolas, ganaderas y forestales, sin posibilidad de determinar ninguno de los datos-base a efectos del pago fraccionado.
+
+Cumplimentarán este apartado los contribuyentes que desarrollen actividades económicas en estimación objetiva distintas de las agrícolas, ganaderas y forestales, respecto de las cuales no resulte posible determinar ninguno de los datos-base a efectos del pago fraccionado y, por tanto, el importe del mismo no pueda calcularse con arreglo al procedimiento a que se refiere el apartado I anterior.
+
+Casilla 03. En esta casilla debemos reflejar el volumen de ventas o ingresos de las actividades a que se refiere este apartado, correspondientes al trimestre por el que se realiza el pago fraccionado, incluidas las subvenciones corrientes y excluidas las subvenciones de capital y las indemnizaciones.
+
+Casilla 04. Se hará constar en la casilla 04 la cantidad resultante de aplicar el porcentaje del 2 por 100 sobre el importe reflejado en la casilla 03 anterior.
+
+No obstante, el contribuyente puede aplicar porcentajes superiores al indicado, de conformidad con lo previsto al respecto en el artículo 110.4 del Reglamento del Impuesto.
+
+III. Actividades agrícolas, ganaderas y forestales, en estimación objetiva.
+
+Cumplimentarán este apartado los contribuyentes que desarrollen actividades agrícolas, ganaderas o forestales cuyos rendimientos netos se determinen con arreglo al método de estimación objetiva.
+
+No obstante, los titulares de actividades agrícolas y ganaderas no estarán obligados a presentar declaración de pago fraccionado ni a efectuar ingreso alguno por este concepto en relación con las mismas si, en el año natural inmediato anterior, al menos el 70 por 100 de los ingresos procedentes de las explotaciones (sin computar a estos efectos las subvenciones corrientes o de capital ni las indemnizaciones) hubieran sido objeto de retención o de ingreso a cuenta. En el supuesto de inicio de la actividad, se tendrá en cuenta a estos efectos el porcentaje de ingresos que hayan sido objeto de retención o de ingreso a cuenta durante el período trimestral a que se refiere el pago fraccionado.
+
+Del mismo modo, los contribuyentes titulares de actividades forestales no están obligados a presentar declaración de pago fraccionado ni a efectuar ingreso alguno por este concepto en relación con las mismas si, en el año natural inmediato anterior, al menos el 70 por 100 de los ingresos procedentes de dichas actividades (sin computar a estos efectos las subvenciones corrientes o de capital ni las indemnizaciones) hubieran sido objeto de retención o de ingreso a cuenta. En el supuesto de inicio de la actividad, se tendrá en cuenta a estos efectos el porcentaje de ingresos que hayan sido objeto de retención o de ingreso a cuenta durante el período trimestral a que se refiere el pago fraccionado.
+
+Casilla 05. Consignaremos en esta casilla el volumen de ingresos del trimestre por el que se realiza el pago fraccionado, incluidas las subvenciones corrientes y excluidas las subvenciones de capital y las indemnizaciones.
+
+Casilla 06. Se hará constar en la casilla 06 la cantidad resultante de aplicar el porcentaje del 2 por 100 sobre el importe reflejado en la casilla 05 anterior. No obstante, los agricultores jóvenes o asalariados agrarios que cumplan los requisitos establecidos en la disposición adicional sexta de la Ley del Impuesto podrán reducir dicha cantidad en un 25 por 100.
+
+En todo caso, el contribuyente podrá aplicar porcentajes superiores (nunca inferiores) al indicado, de conformidad con lo previsto al respecto en el artículo 110.4 del Reglamento del Impuesto.
+
+ACTIVIDADES ECONONÓMICAS CON DERECHO A DEDUCCIÓN POR RENTAS OBTENIDAS EN CEUTA Y MELILLA. 
+
+Tratándose de actividades con derecho a la deducción por rentas obtenidas en Ceuta o Melilla y, excepcionalmente para el ejercicio 2026 también respecto del 3er y del 4º trimestres de 2026 en la Isla de la Palma, a que se refiere el artículo 68.4 y la D.A. 57ª de la Ley del Impuesto (en la redacción dada a esa D.A. por el Real Decreto-Ley 23/2026, de 8 de septiembre), el porcentaje aplicable para determinar el importe del pago fraccionado se obtendrá multiplicando por 0,4 los porcentajes mencionados en el apartado I, así como, en su caso, los porcentajes a que hacen referencia las casillas 04 del apartado II y 06 del apartado III. En el supuesto de que el contribuyente desarrolle, además, otras actividades económicas que no tengan derecho a dicha deducción, el porcentaje aplicable respecto de estas últimas será el indicado con carácter general.
+
+IV. Total liquidación.
+
+Casilla 07. En esta casilla se reflejará el resultado de sumar los importes consignados en las casillas 02, 04 y 06.
+
+Casilla 08. En su caso, consignaremos en esta casilla la suma de las retenciones e ingresos a cuenta que, habiendo sido practicados sobre las contraprestaciones procedentes de las actividades económicas en estimación objetiva cuyos rendimientos están sujetos a retención o ingreso a cuenta, correspondan al trimestre a que se refiere el pago fraccionado.
+
+Casilla 09. Cuando la cuantía de los rendimientos NETOS (*) de actividades económicas del obligado tributario, obtenidos en el ejercicio anterior al que corresponde el trimestre por el que se efectúa la autoliquidación, haya sido igual o inferior a 12.000 euros, se consignará en esta casilla el siguiente importe, en función de la cuantía de los citados rendimientos:
+
+Cuantía de los rendimientos netos del ejercicio anterior (en euros)
+
+Importe de la minoración (en euros)
+
+Igual o inferior a 9.000
+
+100
+
+Entre 9.000,01 y 10.000
+
+75
+
+Entre 10.000,01 y 11.000
+
+50
+
+Entre 11.000,01 y 12.000
+
+25
+
+(*) Rendimientos netos de actividad previos a la aplicación, en su caso de la reducción por obtención de rendimientos irregulares y resto de reducciones aplicables, en su caso, sobre el rendimiento neto reducido de la actividad (suma de las casillas correspondientes a los rendimientos netos: a) de actividades económicas en estimación directa, b) de actividades económicas (excepto agrícolas ganaderas y forestales) en estimación objetiva, c) de actividades agrícolas, ganaderas y forestales en estimación objetiva y d) rendimiento neto de actividad económica atribuido por entidades en régimen de atribución de rentas) de la declaración de IRPF del ejercicio anterior (casillas 0224, 1479, 1553 y/o 1577, respectivamente del modelo de declaración de IRPF de los ejercicios 2021 a 2026 inclusive.
+
+En el supuesto de que en el ejercicio anterior no se hubiese ejercicio actividad económica alguna, se considerará que la cuantía de los rendimientos netos del ejercicio anterior, son cero.
+
+Es importante recordar que, en el caso de que el contribuyente también esté obligado a presentar el modelo 130, el importe correspondiente a la minoración del pago fraccionado contemplada en el artículo 110.3.c) del Reglamento del Impuesto, calculada conforme se ha señalado en esta casilla, puede distribuirse, si así se decide, entre ambos modelos 130 y 131 siempre que los importes consignados en las casillas 13 del modelo 130 y 09 del modelo 131 no superen en su conjunto, para cada trimestre, el importe de la minoración.
+
+Casilla 10. Se anotará en esta casilla el resultado de efectuar la operación indicada en el formulario (Casilla 07 – Casilla 08 – Casilla 09). Si se obtuviese una cantidad negativa, se hará constar precedida del signo menos (–).
+
+Casilla 11. Si en la casilla 10 anterior se hubiera obtenido una cantidad positiva, se hará constar en la casilla 11 el importe (sin signo) de los resultados negativos que, en su caso, se hubieran obtenido en la casilla 15 de cualquiera de las autoliquidaciones anteriores, modelo 131, del mismo ejercicio y que no hubieran sido deducidos anteriormente, teniendo en cuenta que en ningún caso podrá figurar en la casilla 11 un importe superior a la cantidad positiva consignada en la casilla 10.
+
+Casilla 12. Si en la casilla 10 se hubiera obtenido una cantidad positiva y el contribuyente está realizando pagos por préstamos destinados a la adquisición o rehabilitación de su vivienda habitual por los que vaya a tener derecho a la deducción por inversión en vivienda habitual regulada en la disposición transitoria decimoctava de la Ley del Impuesto, se hará constar, en su caso, en la casilla 12 el importe de la deducción a que se refiere el artículo 110.3.d) del Reglamento del Impuesto; esto es:
+
+Importante: conforme a lo establecido en la disposición transitoria decimoctava de la Ley del IRPF, a partir del 1 de enero de 2013 el derecho a la deducción por inversión en vivienda habitual y, por tanto, a la aplicación de esta deducción en el modelo 131, requerirá, entre otros, el cumplimiento de los siguientes requisitos:
+
+En caso de adquisición de la vivienda habitual, que dicha vivienda se haya adquirido antes del 1 de enero de 2013.
+
+En caso de rehabilitación de la vivienda habitual, que el contribuyente ya haya satisfecho cantidades por tal concepto antes del 1 de enero de 2013.
+
+Si únicamente se hubiese cumplimentado el apartado “I” y/o el apartado “II” de este modelo, dicha deducción está constituida por la suma de los importes resultantes de aplicar el porcentaje del 0,5 por 100 sobre la cantidad consignada en la casilla 01 y el porcentaje del 2 por 100 sobre la cantidad consignada en la casilla 03.
+
+Recuerde que en el caso de las actividades de temporada, el citado porcentaje se calculará sobre el rendimiento neto anual a efectos de pagos fraccionados resultante de aplicar el número de unidades de cada módulo que hubiesen correspondido el año anterior (y no sobre el importe de la casilla 01, que corresponde al rendimiento neto a efectos del pago fraccionado del trimestre objeto de autoliquidación, el cual tiene en cuenta el número de días de ejercicio efectivo de la actividad en el trimestre en cuestión).
+
+Si solamente se hubiese cumplimentado el apartado “III”, la deducción está constituida por el importe resultante de aplicar el porcentaje del 2 por 100 sobre la cantidad consignada en la casilla 05.
+
+En cualquier caso, deberá tenerse en cuenta, también, que el importe consignado en la casilla 12 no podrá ser superior a la diferencia positiva entre las casillas 10 y 11 anteriores, y que la deducción por este concepto tiene como límite máximo la cantidad de 660,14 euros anuales, por lo que en la casilla 12 no podrá figurar en ningún caso un importe superior a dicha cantidad, sin que tampoco pueda superar la citada cantidad (660,14 euros anuales) el sumatorio resultante de los importes consignados en las casillas 12 de los cuatro modelos 131 del mismo ejercicio.
+
+Atención: esta deducción no resultará aplicable si los pagos realizados se destinan a la construcción o ampliación de la vivienda habitual, ni tampoco, de acuerdo con lo dispuesto en el art. 110.3.d), último párrafo Reglamento IRPF, en los siguientes supuestos:
+
+Cuando el contribuyente realice simultáneamente actividades agrícolas, ganaderas o forestales y actividades distintas de éstas.
+
+Cuando el contribuyente también esté obligado a presentar el modelo 130 para declarar el pago fraccionado correspondiente a las actividades económicas en estimación directa que realice, como sucede, entre otros, en el supuesto a que se refiere el segundo párrafo del artículo 35 del Reglamento del Impuesto.
+
+Cuando, además de realizar actividades económicas, el contribuyente perciba rendimientos del trabajo y haya presentado al pagador de los mismos el modelo 145 comunicando la circunstancia de que está realizando pagos por préstamos destinados a la adquisición o rehabilitación de su vivienda habitual.
+
+Tratándose de actividades distintas de las agrícolas, ganaderas o forestales, cuando el conjunto de la suma de rendimientos netos a efectos del pago fraccionado consignada en la casilla 01 y del volumen de ventas o ingresos anuales previsibles correspondiente a las actividades comprendidas en el apartado II de este modelo, sea igual o superior a la cantidad de 33.007,20 euros. A estos efectos, se considerará como volumen de ventas o ingresos anuales previsibles el que resulte de elevar al año el volumen de ventas o ingresos del primer trimestre, excluidas las subvenciones de capital y las indemnizaciones.
+
+En el caso de actividades agrícolas, ganaderas o forestales, cuando el volumen de ingresos anuales previsibles correspondiente a las mismas, sea igual o superior a la cantidad de 33.007,20 euros. A estos efectos, se considerará como volumen de ingresos anuales previsibles el que resulte de elevar al año el volumen de ingresos del primer trimestre, excluidas las subvenciones de capital y las indemnizaciones.
+
+Casilla 13. Se trasladará a esta casilla el resultado de restar al importe de la casilla 10, los importes consignados, en su caso, en las casillas 11 y 12. Si, por ser negativa la casilla 10, se obtuviese una cantidad negativa en la casilla 13, se consignará precedida del signo menos (–). En este caso, en las casillas 10 y 13 deberá figurar el mismo importe con signo menos.
+
+Casilla 14. En el supuesto de autoliquidación complementaria, debemos consignar en esta casilla el resultado a ingresar de las autoliquidaciones, modelo 131, presentadas anteriormente por el mismo ejercicio y período. Si de ninguna de las autoliquidaciones anteriores hubiese resultado cantidad a ingresar (por ejemplo, hubiesen sido “negativas” o con resultado “a deducir” en trimestres siguientes), se consignará el número cero (0) en la casilla 14.
+
+Casilla 15. Se consignará en esta casilla el resultado de restar al importe reflejado en la casilla 13 el importe consignado, en su caso, en la casilla 14. Si, por ser negativa la casilla 13, se obtuviese una cantidad negativa en la casilla 15, se consignará precedida del signo menos (–). En este caso, en las casillas 13 y 15 deberá figurar el mismo importe con signo menos y el resultado negativo de la autoliquidación podrá deducirse en cualquiera de los siguientes pagos fraccionados del mismo ejercicio cuyo importe positivo lo permita y con el límite máximo de dicho importe.
+
+(4) A ingresar
+
+Si la cantidad consignada en la casilla 15 es positiva, en el apartado "Tipo de Declaración" dicho importe se trasladará a la clave "I" del apartado "ingreso.
+
+Debe indicarse también la forma de pago marcando la opción correspondiente:
+
+A ingresar (en efectivo). Esta forma de pago, únicamente es posible si en el momento de cumplimentar el modelo, opta por “Modelo 131. Ejercicio 2025. Formulario para su presentación (predeclaración)”, esto es, mediante papel impreso generado exclusivamente mediante la utilización del servicio de impresión desarrollado a estos efectos por la Agencia tributaria en su sede electrónica, y acudiendo a una oficina bancaria autorizada a efectuar el pago.
+
+Domiciliación bancaria. Si el ingreso se efectúa mediante domiciliación bancaria, deberán cumplimentarse los datos completos de la cuenta de domiciliación (Código IBAN) de la Entidad colaboradora o bien, los de una cuenta abierta en una entidad no colaboradora perteneciente a la Zona Única de Pagos en Euros (Zona SEPA); en este último caso, el pago habrá de realizarse recurriendo a la intermediación en el servicio de una entidad colaboradora en la gestión recaudatoria.
+
+A ingresar. Mediante esta opción, cuando marque la casilla “Realizar pago (obtener NRC)”, se le mostrarán las opciones de pago posibles:
+
+Pago con cargo en cuenta, o
+
+Pago con tarjeta (de crédito o de débito) o bizum.
+
+Novedad 2025:  Desde el ejercicio 2025, también pueden realizarse los ingresos con tarjeta de crédito o débito o mediante transferencias instantáneas efectuadas a través plataformas de comercio electrónico seguro (BIZUM).
+
+Existen también otras formas pago, como el reconocimiento de deuda con solicitud de aplazamiento o compensación, el pago por transferencia, o anotación en cuenta corriente tributaria; que también pueden seleccionarse al elegir la forma de pago.
+
+El procedimiento para efectuar el ingreso de la cantidad resultante de la autoliquidación será el establecido en la Orden HAP/2194/2013, de 22 de noviembre (artículos 4 y 6 a 9), por la que se regulan los procedimientos y las condiciones generales para la presentación de determinadas autoliquidaciones y declaraciones informativas de naturaleza tributaria (BOE del 26). Si la domiciliación se realiza en una cuenta abierta en una entidad no colaboradora de la Zona SEPA, se ajustará a lo dispuesto en el artículo 5 bis de la Orden EHA/1658/2009, de 12 de junio.
+
+(5) A deducir
+
+Si la cantidad consignada en la casilla 15 es negativa (con signo menos) y se trata de una autoliquidación correspondiente a alguno de los trimestres 1º, 2º o 3º, se marcará el espacio reservado al efecto dentro del apartado “A deducir”. En este caso, el importe negativo de la casilla 15 podrá deducirse en cualquiera de los siguientes pagos fraccionados del mismo año cuyo importe positivo lo permita, y el modelo 131 deberá presentarse en cualquier Delegación o Administración de la Agencia Tributaria, pudiendo asimismo enviarse por correo certificado dirigido a la Delegación o Administración de la Agencia Tributaria correspondiente al domicilio fiscal del declarante.
+
+Asimismo, en el apartado "Tipo de Declaración", se marcará la casilla "A deducir".
+
+No obstante, si la cantidad consignada en la casilla 15 es negativa (con signo menos) y se trata de una autoliquidación correspondiente al 4.º trimestre, no se cumplimentará este apartado, sino el apartado "Negativa".
+
+(6) Negativa
+
+Si la cantidad consignada en la casilla 15 es igual a cero o si, siendo negativa (con signo menos), se trata de una la autoliquidación correspondiente al 4.º trimestre, cumplimentaremos el espacio reservado al efecto dentro del apartado “Negativa”. Asimismo, en el apartado “Tipo de declaración”, se marcará la casilla “Resultado cero/sin actividad”.
+
+En este caso, si la presentación se efectúa mediante papel impreso generado exclusivamente mediante el servicio de impresión desarrollado por la Agencia Tributaria, deberá efectuarse, de acuerdo con lo dispuesto en el artículo 4.5 de la Orden HAP/2194/2013, de 22 de noviembre, por la que se regulan los procedimientos y las condiciones generales para la presentación de determinadas autoliquidaciones y declaraciones informativas de naturaleza tributaria, directamente o mediante envío por correo certificado, en la Delegación o Administración de la Agencia Estatal de Administración Tributaria correspondiente al domicilio fiscal del obligado tributario.
+
+En caso de presentación por vía electrónica a través de internet, el procedimiento será el establecido en el artículo 11 de la citada Orden HAP/2194/2013, de 22 de noviembre.
+
+(7) Complementaria
+
+Marcaremos esta casilla cuando esta autoliquidación sea complementaria de otra u otras autoliquidaciones presentadas anteriormente por el mismo concepto y correspondientes al mismo ejercicio y período. En tal supuesto, haremos constar también en este apartado el número identificativo de 13 dígitos de la autoliquidación anterior. De haberse presentado anteriormente más de una autoliquidación, se hará constar el número identificativo de la última de ellas.
+
+Importante: Únicamente procederá la presentación de autoliquidación complementaria cuando ésta tenga por objeto regularizar errores u omisiones de otra autoliquidación anterior que hubieran dado lugar a un resultado a ingresar inferior al debido. Por consiguiente, de la autoliquidación complementaria deberá resultar un importe a ingresar superior al de la autoliquidación anterior.
+
+La rectificación por cualquier otra causa de autoliquidaciones presentadas anteriormente no dará lugar a la presentación de autoliquidaciones complementarias, sino a la presentación ante la Administración tributaria de una solicitud de rectificación de las mismas cuando considere que han perjudicado de cualquier modo sus intereses legítimos o que su presentación ha dado lugar a la realización de ingresos indebidos, de conformidad con lo establecido en los artículos 120.3 y 221.4 de la Ley 58/2003, de 17 de diciembre, General Tributaria (BOE del 18) y siempre que no se haya practicado por la Administración tributaria liquidación definitiva o liquidación provisional por el mismo motivo ni haya transcurrido el plazo de cuatro años a que se refiere el artículo 66 de la citada Ley General Tributaria.
+
+En la autoliquidación complementaria se harán constar por sus cuantías correctas todos los datos a que se refieren las casillas 01 a 13 del apartado "Liquidación" del modelo 131, que sustituirán por completo a los datos consignados en las mismas casillas de la autoliquidación anterior.
+
+Las autoliquidaciones complementarias deberán formularse en el modelo oficial que estuviese vigente en el ejercicio y periodo al que corresponda la autoliquidación anterior.
+
+(8) Firma
+
+Una vez cumplimentado, el modelo 131 deberá ser firmado por el contribuyente o por su representante. La forma de realización de dicha firma dependerá de la opción de presentación elegida por el contribuyente, mediante presentación electrónica; o bien mediante papel impreso generado exclusivamente mediante la utilización del servicio de impresión desarrollado a estos efectos por la Agencia tributaria en su sede electrónica.
+
+(9) Plazo de presentación
+
+El modelo 131 deberá presentarse en los plazos comprendidos entre los días 1 y 20, ambos inclusive, de los meses de abril, julio y octubre, en relación con los pagos fraccionados correspondientes, respectivamente, a los trimestres primero, segundo y tercero de cada año natural.
+
+El plazo para efectuar la presentación del modelo 131 correspondiente al cuarto trimestre es el comprendido entre los días 1 y 30 del mes de enero del año natural inmediato siguiente.
+
+Los vencimientos de plazo que coincidan con un sábado o día inhábil se considerarán trasladados al primer día hábil siguiente.
+
+
+					
+
+			 
+		
+		
+		
+		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 11/septiembre/2026
+
+
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

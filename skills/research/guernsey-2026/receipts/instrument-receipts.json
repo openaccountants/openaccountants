@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267621",
+    "file": "distribution-deductions-2008.pdf",
+    "sha256": "49f72f8b6f344cae55b6142271d165e2b82a93374531f353e1ec10aeb2ad61d7",
+    "retrieved": "2026-10-27T22:51:51.327456+00:00",
+    "method": "official printable-version link via normal browser downloadMedia"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267761",
+    "file": "loan-exemptions-2008.pdf",
+    "sha256": "2cf0cbc92c3cb1b79734ec1cd5b46a40ba816ff796586068fe761d77db4a308d",
+    "retrieved": "2026-10-27T22:51:51.348346+00:00",
+    "method": "official printable-version link via normal browser downloadMedia"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266936",
+    "file": "loan-exemptions-2012.pdf",
+    "sha256": "2f87a516e547af30703d01080d9483add4c4e561a53966ce9effc3849586e4b4",
+    "retrieved": "2026-10-27T22:52:14.406648+00:00",
+    "method": "official printable-version link via normal browser downloadMedia"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266902",
+    "file": "loan-exemptions-2013.pdf",
+    "sha256": "abcc8d6184ca4e90e73b8b0a8fbaf4461b6ef0bdf55c23b5ff55bd6300222ef3",
+    "retrieved": "2026-10-27T22:52:14.425086+00:00",
+    "method": "official printable-version link via normal browser downloadMedia"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998",
+    "file": "companies-current.pdf",
+    "sha256": "97b3cbe6b6bafd1357c2acb123a3744566f170ac88ab52ce82bfa5cc04bc59bd",
+    "retrieved": "2026-10-27T22:55:19.799703+00:00",
+    "method": "official printable link browser download"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267485",
+    "file": "audit-current.pdf",
+    "sha256": "5b85415ca9bb46acfb55a10ee1d579ce78f9acc1cfc9bf8e093552726fec0563",
+    "retrieved": "2026-10-27T22:57:33.715262+00:00",
+    "method": "official printable link browser download"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265841",
+    "file": "audit-2021.pdf",
+    "sha256": "d2460a9c5b9fa2942b7265e4f3f97c2e9246dbf14c935fe9631fce9feb03ef18",
+    "retrieved": "2026-10-27T22:57:33.736574+00:00",
+    "method": "official printable link browser download"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=327585",
+    "file": "rental-transition-2026.pdf",
+    "sha256": "71dc0691e2f7e9169fd56fd78541ce5f19c1df002d189bb66a216d6932543147",
+    "retrieved": "2026-10-27T22:57:33.762673+00:00",
+    "method": "official printable link browser download"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=327675",
+    "file": "pension-penalties-2026.pdf",
+    "sha256": "bc0a515ace5dfddcf6a4f91020078c96a2b53f45cab1731024d6bd62829131f4",
+    "retrieved": "2026-10-27T22:57:33.790742+00:00",
+    "method": "official printable link browser download"
+  }
+]

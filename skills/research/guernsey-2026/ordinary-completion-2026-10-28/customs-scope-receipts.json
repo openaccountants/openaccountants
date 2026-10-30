@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://gov.gg/article/152732/Constitution-position-and-customs-territory",
+    "final_url": "https://gov.gg/article/152732/Constitution-position-and-customs-territory",
+    "status": 200,
+    "file": "customs-territory-current.html",
+    "sha256": "ae5104d50cee01b276f45ee6b0e12efc500381bf97cf4707ca7374bbb7f3fef7",
+    "bytes": 70865,
+    "read_utc": "2026-10-27T23:50:07.869845+00:00"
+  },
+  {
+    "url": "https://gov.gg/article/180597/Duties-and-Duty-Free",
+    "final_url": "https://gov.gg/article/180597/Duties-and-Duty-Free",
+    "status": 200,
+    "file": "duties-current.html",
+    "sha256": "00a3aa78fd500d9b5cc7c8928aee005ebeecd400de0b3e65efae39f26bbfad10",
+    "bytes": 70263,
+    "read_utc": "2026-10-27T23:50:08.053591+00:00"
+  },
+  {
+    "url": "https://gov.gg/importexport",
+    "final_url": "https://gov.gg/importexport",
+    "status": 200,
+    "file": "import-export-current.html",
+    "sha256": "525995287c1f4852f52b28a947622066af9cb48e759b995dcbf6bfc1ea41a150",
+    "bytes": 73512,
+    "read_utc": "2026-10-27T23:50:07.798293+00:00"
+  }
+]

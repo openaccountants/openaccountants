@@ -1,0 +1,9 @@
+{
+  "guide_sha256": "40b24c16565a99479623b8fda382d00467a31e19e91780f1e74dbe58c73f746e",
+  "bytes": 470201,
+  "controls": 28,
+  "all_pass": true,
+  "live_baseline_sha256": "db144091ffd7f9b5b414f47733f7bfa51b864e82bb583f765cf5ab4972203be3",
+  "applied": false,
+  "country_complete": false
+}

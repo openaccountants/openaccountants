@@ -1,0 +1,74 @@
+[
+  {
+    "file": "hmrc-dt-individual-current.pdf",
+    "url": "https://assets.publishing.service.gov.uk/media/637e192f8fa8f56eabf75e5b/Double_Taxation_Treaty_Relief_Form_DT-Individual.pdf",
+    "local_acquired_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/hmrc-dt-individual-current.pdf",
+    "sha256": "a9c147e73a60fd555f4dbb97afa4e3e181936d2dd1b601972ea6219d2cec7050",
+    "bytes": 429805,
+    "actual_read_scope": "13-page10/22form acquired; actual pension/process reads pp1\u20133,5\u20138,C.2p9 and signedPartFp6andNotesPartFp10; other selected non-pension text acquired/read but not used to extend category claims",
+    "read_on": "2026-10-28"
+  },
+  {
+    "file": "pension-relief-uk-current.pdf",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=149847&p=0",
+    "local_acquired_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/pension-relief-uk-current.pdf",
+    "sha256": "d3617fa3d9a4658d9f44a4fc8a3a91466286a1eade1a64b412994c64ac0b7535",
+    "bytes": 232546,
+    "actual_read_scope": "Whole2-pageForm67502/23read; expresspre2020population, not generic2026credit claim",
+    "read_on": "2026-10-28"
+  },
+  {
+    "file": "income-tax-law-new-326135.pdf",
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=326135",
+    "local_acquired_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/income-tax-law-new-326135.pdf",
+    "sha256": "0696c0e76bc3bf66be2a9744f03d113981cb1470266b3993d682d3228024dd26",
+    "bytes": 6851825,
+    "actual_read_scope": "Additional search result; frontmatter/version and5Bread. Stillv.0113/40000, not verified as later operative version. Whole law NOT read; no new law conclusion.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "file": "forms-current-browser-AX.txt",
+    "url": "https://gov.gg/revenue-service/income-tax-forms",
+    "local_acquired_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/forms-current-browser-AX.txt",
+    "sha256": "9baea41b1d6ab23896c7bdbaf9c9492a57124b534c63e5fd38e1c221ae268ac3",
+    "bytes": 21503,
+    "actual_read_scope": "BrowserAX acquiredwhole; actual model read first17500chars, including149847,Form1339and2025forms; a stale2023intro was observed",
+    "read_on": "2026-10-28"
+  },
+  {
+    "file": "dta-current-browser-AX.txt",
+    "url": "https://gov.gg/dta",
+    "local_acquired_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/dta-current-browser-AX.txt",
+    "sha256": "21b79f087ffb18d9f22438ab64a75fa5cc1dc51ad6facec8a3e11b519c69baef",
+    "bytes": 31605,
+    "actual_read_scope": "BrowserAX currentindex read, includingUK2022MOUrow showing16June2022in-force date. DoesnoteraseHMRCstatusconflict or prove case acceptance.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "file": "si-2026-browser-AX.txt",
+    "url": "https://www.guernseylegalresources.gg/statutory-instruments/guernsey-bailiwick/2026/",
+    "local_acquired_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/si-2026-browser-AX.txt",
+    "sha256": "70b3064eeefd045b6aa519459021acf00ad31de51669a599555466c45655dbca",
+    "bytes": 13986,
+    "actual_read_scope": "Wholevisible2026catalogueitems1\u201359read. No new standardcharge instrument located in this catalogue; nolegalabsenceinference.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "file": "standard-charge-search-browser-AX.txt",
+    "url": "https://www.guernseylegalresources.gg/advanced-search/?q=%22Standard+Charge%22&indexType=WholeSite",
+    "local_acquired_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/standard-charge-search-browser-AX.txt",
+    "sha256": "f6cf6d4ac6e5fe3bcd6ec8b95f604e924fc90a10a2ca9d6697cb600b24e0b5df",
+    "bytes": 4540,
+    "actual_read_scope": "Actual visible result list read; located2020amendment and secondLawPDF326135. Doesnotprove2026instrumentabsent.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "file": "company-registration-current-index.pdf",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=118095&p=0",
+    "local_acquired_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/company-registration-current-index.pdf",
+    "sha256": "024eff04533becb7f9c5f74ab91693df1cf047452079d86685fd936f627eb8f4",
+    "bytes": 412740,
+    "actual_read_scope": "CompleteForm70608/21allsections1\u20136andfootersread. Currentformsindexcopy lacks Companies-page183549PEopening/type additions; sameversionlabel; same section6 declarations. Not used to infer an exemption or submission without truthful declaration.",
+    "read_on": "2026-10-28"
+  }
+]

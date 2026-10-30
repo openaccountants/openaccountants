@@ -1,14 +1,15 @@
 ---
 name: ee-cross-border
 description: "Estonian cross-border tax for tax year 2026, from the Income Tax Act (tulumaksuseadus) in force from 1 October 2026 and Estonian Tax and Customs Board guidance. Covers individual residence (home in Estonia or 183 days in 12 months), how non-residents are taxed on Estonian-source income, withholding on payments to non-residents (22% on wages, board fees and rent; 10% on services performed in Estonia, royalties and performers), dividends under the distribution-based 22/78 system with no withholding, permanent establishments, treaty relief and residence certificates, the foreign tax credit, and the exit tax when a company moves assets or residence abroad. Confirms the 2026 rate stayed at 22% and that the 2% security tax on income and profits does not apply. Trigger on: non-resident Estonia, Estonian withholding tax, TSD annex 2, moving to Estonia, leaving Estonia, e-resident company abroad, Estonia exit tax. Out of scope: estonia-income-tax, ee-corporate-income-tax, estonia-payroll, estonia-social-contributions, estonia-vat-return."
-jurisdiction: EE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.2
-verified_by: pending
+jurisdiction: EE
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Estonia cross-border tax: residence, non-residents, withholding, exit (tax year 2026)
@@ -211,3 +212,23 @@ expected:
 Out of scope: treaty withholding rates for individual countries; use the treaty text on the Ministry of Finance list.
 
 Not yet confirmed: the number of the act that cancelled the 24% rate. The Ministry of Finance confirms the cancellation, and the consolidated § 4(1) in force for 2026 still carries the 22% wording from RT I, 30.06.2023, 107; the cancelling act itself was not read.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

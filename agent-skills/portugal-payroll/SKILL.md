@@ -1,407 +1,285 @@
 ---
 name: portugal-payroll
-description: "Utilize esta skill sempre que for solicitado sobre processamento de salários em Portugal, cálculo de vencimentos, retenção na fonte de IRS, contribuições para a Segurança Social (TSU), cálculo do custo total para a entidade patronal, conversões de líquido para bruto ou bruto para líquido, estrutura do recibo de vencimento português, Declaração Mensal de Remunerações (DMR), ou qualquer questão relativa ao cálculo de vencimentos, descontos ou obrigações da entidade patronal em Portugal. Acione perante expressões como \"processamento de salários\", \"retenção na fonte IRS\", \"Segurança Social\", \"TSU\", \"salário líquido\", \"custo entidade patronal\", \"subsídio de férias\", \"subsídio de Natal\", \"salário mínimo\", \"DMR\", \"recibo de vencimento\", \"13.º mês\" ou \"14.º mês\". Trigger also on: \"Portuguese payroll\", \"IRS withholding\", \"retenção na fonte\", \"Segurança Social\", \"TSU\", \"salário líquido\", \"employer cost Portugal\", \"subsídio de férias\", \"subsídio de Natal\", \"13th month Portugal\", \"14th month Portu"
+description: "Portuguese payroll for employees, tax year 2026: monthly IRS withholding under CIRS arts. 98 to 101 and the 2026 tables for the mainland (Despacho 233-A/2026), the Azores (Despacho 1179/2026) and Madeira (Despacho 19/2026), including the 50% cut for November 2026 pay; holiday and Christmas subsidies and twelfths; employee 11% and employer 23.75% Social Security; the 2026 meal allowance limits (EUR 6.15 cash, 70% more on a card); IRS Jovem in withholding; the DMR by the 10th, IRS paid by the 20th, Social Security from the 1st to the 25th; minimum wage; overtime; fines and interest. Trigger on: Portugal payroll, processamento de salários, retenção na fonte, tabelas de retenção 2026, TSU, subsídio de férias, subsídio de Natal, duodécimos, subsídio de refeição, DMR, salário líquido. Out of scope: the self-employed and contributions in depth (pt-social-contributions), the annual IRS return (pt-irs-employees-investment), non-residents (pt-cross-border), NHR and IFICI (pt-nhr-ifici)."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/portugal-payroll"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-10-24"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Portugal Payroll
+# Portugal payroll (tax year 2026) v1.1
 
-## Portugal — Processamento de Salários — Skill v1.1
-
-## Rates and thresholds
-
-> Source-cited draft: not reviewed by an accountant.
-
-### Folha de Pagamento
-
-- **Continente 2026** — €920/mês  _(DL 139/2025)_
-- **Continente 2025** — €870/mês  _(DL anterior)_
-- **Açores 2026** — €966/mês  _(DL regional)_
-- **Madeira 2026** — €980,00  _(Decreto Legislativo Regional n.º 1/2026/M, de 3 de fevereiro de 2026)_
-- **Empregado** — 11% do bruto  _(Código Contributivo)_
-- **Empregador** — 23,75% do bruto  _(Código Contributivo)_
-- **Total** — 34,75%
-- **Teto** — Sem teto — aplica-se ao salário total  _(Código Contributivo)_
-- **FCT (Fundo de Compensação)** — Suspenso de Maio de 2023  _(Lei 70/2013)_
-- **FGCT (Fundo de Garantia)** — Suspenso de Maio de 2023  _(Lei 70/2013)_
-- **Total (FCT/FGCT)** — Suspenso de Maio de 2023
-- **Empregador (gerente sem proteção desemprego)** — 20,30%  _(Código Contributivo)_
-- **Empregado (gerente)** — 9,30%  _(Código Contributivo)_
-- **Em dinheiro** — €6,15/dia (2026)  _(Portaria n.º 51-B/2026/1)_
-- **Cartão refeição** — €10,46/dia (2026)  _(Portaria n.º 51-B/2026/1 (OE anual))_
-- **1.ª hora (dia útil)** — 25%  _(Código do Trabalho)_
-- **Horas seguintes (dia útil)** — 37,5%  _(Código do Trabalho)_
-- **Descanso/feriados** — 50%  _(Código do Trabalho)_
-- **Trabalho noturno (22h-7h)** — 25% mínimo  _(Código do Trabalho)_
-- **Subsídio de férias** — 1 mês de salário (antes do início das férias)  _(Código do Trabalho)_
-- **Subsídio de Natal** — 1 mês de salário (até 15 de dezembro)  _(Código do Trabalho)_
-- **Férias anuais** — 22 dias úteis mínimo  _(Código do Trabalho)_
-- **Licença paternidade** — 28 dias consecutivos obrigatórios (SS)  _(Código do Trabalho)_
-- **DMR (Declaração Mensal)** — Até dia 10 do mês seguinte  _(AT)_
-- **Pagamento SS/IRS** — Segurança Social: entre o dia 1 e o dia 25 do mês seguinte; IRS retido: até dia 20 do mês seguinte  _([AT/ISS](https://www.seg-social.pt/ptss/pssd/documento/cmc1y95ap00dkkl2yk3g4tdla))_
-- **Relatório Único** — Até 15 de abril  _(GEP/MTSSS)_
-
-## Secção 1 — Referência Rápida
-
-**Secção 1 — Referência Rápida**  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1y95ap00dkkl2yk3g4tdla)_
-
-| Campo | Valor |
-| --- | --- |
-| País | Portugal (República Portuguesa) |
-| Moeda | EUR |
-| Periodicidade do processamento | Mensal (14 pagamentos/ano: 12 + subsídio de férias + subsídio de Natal) |
-| Ano fiscal | Ano civil (1 de janeiro — 31 de dezembro) |
-| Legislação principal | Código do IRS (CIRS); Código Contributivo (Lei n.º 110/2009); Código do Trabalho |
-| Autoridade tributária | Autoridade Tributária e Aduaneira (AT) |
-| Autoridade da Segurança Social | Instituto da Segurança Social (ISS) / Direção-Geral da Segurança Social (DGSS) |
-| Taxa Contributiva Social (TSC) — trabalhador | 11% do vencimento bruto |
-| Taxa contributiva — entidade patronal | 23,75% do vencimento bruto |
-| Retenção na fonte | IRS — tabelas mensais publicadas pela AT (CIRS art.º 99.º) |
-| Retribuição Mínima Mensal Garantida (RMMG) | 920 EUR/mês (2026, Continente) |
-| Pagamentos | 14 por ano (12 meses + subsídio de férias + subsídio de Natal) |
-| Entrega da DMR | Mensal, até ao dia 10 do mês seguinte |
-| Pagamento da Segurança Social / IRS | Mensal: Segurança Social entre o dia 1 e o dia 25 do mês seguinte; IRS retido até ao dia 20 do mês seguinte |
-| Versão da skill | 1.1 |
-
-## Secção 2 — Retenção na Fonte de IRS
-
-### Escalões de IRS (2026 — Rendimento Coletável Anual)
-
-**Escalões de IRS (2026 — Rendimento Coletável Anual)**  _(https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx)_
-
-| Escalão | Rendimento Coletável Anual (EUR) | Taxa Marginal |
-| --- | --- | --- |
-| 1.º | Até 8 342 | 12,50% |
-| 2.º | 8 342 — 12 587 | 15,70% |
-| 3.º | 12 587 — 17 838 | 21,20% |
-| 4.º | 17 838 — 23 089 | 24,10% |
-| 5.º | 23 089 — 29 397 | 31,10% |
-| 6.º | 29 397 — 43 090 | 34,90% |
-| 7.º | 43 090 — 46 566 | 43,10% |
-| 8.º | 46 566 — 86 634 | 44,60% |
-| 9.º | Acima de 86 634 | 48,00% |
-
-### Mecanismo de Retenção na Fonte
-
-- **Mecanismo de retenção** — A retenção mensal de IRS utiliza tabelas específicas publicadas anualmente por Despacho (tabelas do Anexo III), nos termos do art.º 99.º do CIRS. Desde 2023, Portugal aplica uma fórmula progressiva marginal na retenção (e não uma taxa fixa por escalão).  _(CIRS art.º 99.º)_
-
-**Tabelas de Retenção**  _(https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf)_
-
-| Tabela | Aplicável a |
-| --- | --- |
-| Tabela I | Não casado sem dependentes ou casado dois titulares |
-| Tabela II | Não casado com um ou mais dependentes |
-| Tabela III | Casado único titular |
-| Tabelas IV-VII | Trabalho dependente — pessoa com deficiência |
-| Tabelas VIII-XI | Pensões (VIII e IX sem deficiência; X e XI com deficiência) |
-
-### Regras-Chave de Retenção (2026)
-
-**Regras-Chave de Retenção (2026)**  _(https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf)_
-
-| Regra | Detalhe |
-| --- | --- |
-| Limiar de não retenção | Até 920 EUR/mês (Tabelas I e II) ou até 991 EUR/mês (Tabela III, casado único titular) = 0% de IRS |
-| Mínimo de existência | 12 880 EUR anuais (14 × 920) — totalmente isento |
-| Dedução por dependente | 42,86 EUR/mês (casado único titular); 21,43 EUR (dois titulares); 34,29 EUR (não casado) |
-| Dedução específica | 8,54 × IAS por ano (ou contribuições efetivas para a Segurança Social, se superiores) |
-| 3 ou mais dependentes | Redução de 1 ponto percentual na taxa marginal mais elevada aplicável |
-
-### Retenção sobre Subsídio de Férias / Subsídio de Natal
-
-- **Retenção sobre subsídios** — Os subsídios de férias e de Natal estão sujeitos a retenção na fonte de IRS à MESMA taxa do vencimento mensal normal, calculada de forma autónoma. A contribuição para a Segurança Social também se aplica à taxa normal de 11%.
-
-> **Nota — Regime IFICI / antigo RNH:** trabalhadores qualificados ao abrigo do regime de Incentivo Fiscal à Investigação Científica e Inovação (IFICI) ou ainda abrangidos por direitos adquiridos do antigo Regime dos Residentes Não Habituais (RNH) estão sujeitos a uma taxa especial de retenção de 20% sobre rendimentos do trabalho dependente elegíveis (Categoria A). Para o mecanismo detalhado de retenção e elegibilidade, consultar a skill **pt-nhr-ifici**.
-
-## Secção 3 — Segurança Social: Descontos do Trabalhador
-
-**Secção 3 — Segurança Social: Descontos do Trabalhador**
-
-| Contribuição | Taxa | Base | Limite máximo |
-| --- | --- | --- | --- |
-| Segurança Social (trabalhador) — TSC | 11% | Remuneração bruta | Sem limite (aplica-se ao vencimento total) |
-
-### O Que Está Sujeito a Contribuições para a Segurança Social
-
-- Vencimento base
-- Diuturnidades
-- Subsídios regulares (subsídio de alimentação acima do limite de isenção, subsídios de turno)
-- Subsídios de férias e de Natal
-- Trabalho suplementar
-- Comissões
-
-### O Que Está Isento de Contribuições para a Segurança Social
-
-- Subsídio de refeição até 6,15 EUR/dia (numerário) ou 10,20 EUR/dia (cartão refeição) — valores de 2026
-- Ajudas de custo e despesas de deslocação (dentro dos limites legais)
-- Distribuição de participação nos lucros
-- Compensações por cessação do contrato (dentro dos limites legais)
-
-### Regras-Chave
-
-- A contribuição do trabalhador de 11% é deduzida na fonte mensalmente
-- Aplica-se a cada um dos 14 pagamentos (incluindo subsídios de férias e de Natal)
-- Não existe limite máximo — aplica-se à totalidade do vencimento
-- As contribuições para a Segurança Social são dedutíveis para efeitos de IRS (consideradas na dedução específica)
-
-## Secção 4 — Segurança Social: Contribuições da Entidade Patronal
-
-**Secção 4 — Segurança Social: Contribuições da Entidade Patronal**
-
-| Contribuição | Taxa | Base |
-| --- | --- | --- |
-| Segurança Social (entidade patronal) | 23,75% | Remuneração bruta |
-| **Taxa total combinada (TSU)** | **34,75%** | Trabalhador 11% + Entidade patronal 23,75% |
-
-### Taxas Especiais para a Entidade Patronal
-
-**Taxas Especiais para a Entidade Patronal**  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1xlxpq00d9kl2y0p3inyft)_
-
-| Situação | Taxa |
-| --- | --- |
-| Membros de órgãos estatutários (gerentes/administradores) com proteção no desemprego | 23,75% (trabalhador 11%) |
-| Membros de órgãos estatutários sem proteção no desemprego | 20,30% (trabalhador 9,30%) |
-| Trabalhadores do serviço doméstico sem proteção no desemprego | 18,90% (trabalhador 9,40%) |
-| Trabalhadores do serviço doméstico com proteção no desemprego | 22,3% (trabalhador 11%) |
-| Incentivo ao primeiro emprego (5 anos) | Redução de 50% na taxa da entidade patronal |
-| Desempregados de longa duração (3 anos) | Redução de 50% na taxa da entidade patronal |
-
-### Fundo de Compensação do Trabalho (FCT)
-
-**Fundo de Compensação do Trabalho (FCT)**  _(https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei_13_2023.pdf)_
-
-| Fundo | Taxa | Finalidade |
-| --- | --- | --- |
-| FCT (Fundo de Compensação do Trabalho) | 0,925% | Garantia de compensação por cessação do contrato |
-| FGCT (Fundo de Garantia de Compensação do Trabalho) | 0,075% | Fundo de garantia mútua |
-| **Total** | **1,00%** | Não exigível: obrigações relativas ao FCT e ao FGCT suspensas (Lei 13/2023) |
-
-- Aplica-se a contratos iniciados após 1 de outubro de 2013
-- Pago mensalmente, até ao dia 20 do mês seguinte
-- Isentos: trabalhadores do serviço doméstico, setor público
-
-## Secção 5 — Salário Mínimo e Trabalho Suplementar
-
-### Retribuição Mínima Mensal Garantida (RMMG)
-
-**Retribuição Mínima Mensal Garantida (RMMG)**  _(https://www.madeira.gov.pt//Portals/25/Documentos/Legislacao/DLR_1_2026_M.pdf)_
-
-| Região | 2026 — Mensal (EUR) |
-| --- | --- |
-| Continente | 920,00 |
-| Açores | 966,00 |
-| Madeira | 980,00 |
-
-- Fixada pelo Decreto-Lei n.º 139/2025 (em vigor a 1 de janeiro de 2026)
-- Ano anterior (2025): 870,00 EUR
-- Custo anual para a entidade patronal por trabalhador ao salário mínimo: ~14 094 EUR (incluindo subsídios + TSU)
-- Trabalhadores ao salário mínimo pagam 0% de IRS (proteção do mínimo de existência)
-- Vencimento líquido mínimo (após 11% Segurança Social): 818,80 EUR/mês
-
-### Período Normal de Trabalho e Trabalho Suplementar
-
-**Período Normal de Trabalho e Trabalho Suplementar**  _(https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei_13_2023.pdf)_
-
-| Parâmetro | Padrão |
-| --- | --- |
-| Período normal de trabalho semanal | 40 horas |
-| Limite diário | 8 horas (extensível a 10 por instrumento de regulamentação coletiva) |
-| Limite anual de trabalho suplementar | 150 horas/ano (200 por convenção coletiva) |
-| Acréscimo da 1.ª hora (dia útil) | 25% |
-| Acréscimo das horas seguintes (dia útil) | 37,5% |
-| Acréscimo em dia de descanso/feriado | 50% |
-| Trabalho suplementar acima de 100 horas anuais | 50% pela primeira hora e 75% por hora subsequente em dia útil; 100% em dia de descanso ou feriado |
-| Subsídio de trabalho noturno (22h-7h) | Mínimo de 25% |
-
-## Secção 6 — Benefícios Obrigatórios
-
-**Secção 6 — Benefícios Obrigatórios**  _(https://files.diariodarepublica.pt/1s/2026/01/02103/0001100011.pdf)_
-
-| Benefício | Detalhe |
-| --- | --- |
-| Férias anuais | 22 dias úteis (mínimo) |
-| Subsídio de férias | Equivalente a um mês de vencimento (pago antes do início das férias ou em junho) |
-| Subsídio de Natal | Equivalente a um mês de vencimento (pago até 15 de dezembro) |
-| Subsídio de refeição (subsídio de alimentação) | Não obrigatório por lei mas largamente generalizado; isento até 6,15 EUR/dia (numerário) ou 10,20 EUR/dia (cartão) |
-| Baixa por doença | Paga pela Segurança Social a partir do 4.º dia (55%-75% do vencimento, conforme duração) |
-| Licença de parentalidade (mãe) | 120 dias a 100% ou 150 dias a 80% (pago pela Segurança Social) |
-| Licença de parentalidade (pai) | 28 dias obrigatórios, seguidos ou em períodos interpolados de no mínimo 7 dias, nos 42 dias seguintes ao nascimento (pago pela Segurança Social) |
-| Faltas por falecimento de familiar | Até 20 dias consecutivos (cônjuge, filho ou enteado); até cinco dias consecutivos (outro parente ou afim no 1.º grau da linha reta); menos para graus mais afastados |
-| Licença por casamento | 15 dias consecutivos |
-| Seguro de acidentes de trabalho | Obrigatório (a entidade patronal deve contratar seguradora) |
-
-### 13.º e 14.º Meses (Subsídios)
-
-**13.º e 14.º Meses (Subsídios)**
-
-| Subsídio | Valor | Prazo | Segurança Social / IRS |
-| --- | --- | --- | --- |
-| Subsídio de Natal | 1 mês de vencimento | Até 15 de dezembro (ou em duodécimos ao longo dos 12 meses) | Sujeito a 11% Segurança Social + IRS |
-| Subsídio de férias | 1 mês de vencimento | Antes do início das férias ou até 30 de junho | Sujeito a 11% Segurança Social + IRS |
-
-O trabalhador pode optar (ou a entidade patronal pode determinar) pelo pagamento em duodécimos (1/12 por mês). Ambos os subsídios são proporcionais ao tempo de trabalho efetivo se o trabalhador iniciar ou cessar funções a meio do ano.
-
-## Secção 7 — Requisitos do Recibo de Vencimento
-
-- **Obrigação de emissão** — A entidade patronal portuguesa DEVE emitir um recibo de vencimento por cada pagamento de salário.
-
-**Elementos obrigatórios do recibo de vencimento**
-
-| Elemento | Obrigatório |
-| --- | --- |
-| Identificação da entidade patronal (nome, NIPC, n.º Segurança Social) | Sim |
-| Identificação do trabalhador (nome, NIF, NISS) | Sim |
-| Período a que respeita (mês/ano) | Sim |
-| Categoria profissional e antiguidade | Sim |
-| Retribuição base (vencimento base) | Sim |
-| Subsídios e suplementos regulares | Sim |
-| Discriminação do trabalho suplementar | Sim |
-| Remuneração bruta total | Sim |
-| Contribuição do trabalhador para a Segurança Social (11%) | Sim |
-| Valor da retenção na fonte de IRS | Sim |
-| Outros descontos (quotizações sindicais, adiantamentos, etc.) | Sim |
-| Subsídio de refeição (dias × valor unitário) | Sim (se aplicável) |
-| Vencimento líquido a pagar | Sim |
-| Data e meio de pagamento | Sim |
-| Subsídio de férias / Natal (quando pago) | Sim |
-
-### Conservação de Registos
-
-- **Prazo de conservação** — A entidade patronal deve conservar os registos de processamento de salários por um período mínimo de 5 anos (legislação laboral geral) e 10 anos para efeitos fiscais.
-
-## Secção 8 — Obrigações Declarativas
-
-**Secção 8 — Obrigações Declarativas**  _(https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei_13_2023.pdf)_
-
-| Obrigação | Periodicidade | Prazo | Entidade |
-| --- | --- | --- | --- |
-| Declaração Mensal de Remunerações (DMR) | Mensal | Até ao dia 10 do mês seguinte | AT + Segurança Social |
-| Pagamento das contribuições para a Segurança Social | Mensal | Entre os dias 1 e 25 do mês seguinte | Segurança Social (DGSS) |
-| Pagamento da retenção na fonte de IRS | Mensal | Até ao dia 20 do mês seguinte | AT |
-| Pagamento FCT/FGCT | Não aplicável | Obrigações suspensas (Lei 13/2023) | Fundos de Compensação |
-| Relatório Único | Anual | Até 15 de abril (via portal) | GEP / MTSSS |
-| Declaração anual de IRS (Modelo 3) | Anual | 1 de abril — 30 de junho (entregue pelo trabalhador) | AT |
-| Declaração de rendimentos pagos a não residentes | Por pagamento | Até ao fim do 2.º mês seguinte ao do pagamento | AT |
-
-### DMR — Detalhes
-
-**DMR — Detalhes**
-
-| Parâmetro | Detalhe |
-| --- | --- |
-| Conteúdo | Por trabalhador: vencimento bruto, contribuições para a Segurança Social, retenção na fonte de IRS |
-| Submissão | Eletrónica através do Portal das Finanças |
-| Validação | Tem de ser validada pelo sistema da Segurança Social para se considerar entregue |
-| Penalidades | Atraso na entrega: coimas de 150 EUR a 3 750 EUR; atraso no pagamento: agravamento de 10% + juros |
-
-### Calendário Anual
-
-**Calendário Anual**
-
-| Mês | Obrigação |
-| --- | --- |
-| Janeiro | DMR de dezembro; pagamento Segurança Social / IRS de dezembro |
-| Fevereiro | Prazo do Modelo 10 (não residentes) |
-| Março | Acerto anual da Segurança Social |
-| Abril | Relatório Único; DMR de março |
-| Junho | Pagamento do subsídio de férias; abertura da entrega de IRS |
-| Novembro | Primeira tranche do subsídio de Natal (se em duodécimos) |
-| Dezembro | Subsídio de Natal até dia 15; fecho anual do processamento de salários |
-
-## Secção 9 — Padrões Comuns de Processamento
-
-### Padrão 1: Vencimento Mensal Padrão (Não Casado, Sem Dependentes, Continente)
-
-```
-Vencimento base:                      EUR 1 800,00
-Subsídio de refeição (22 dias × 7,63): +EUR   167,86 (cartão, isento de SS / IRS)
-Bruto para efeitos de SS / IRS:        EUR 1 800,00
-- Segurança Social trabalhador (11%):  -EUR   198,00
-= Base tributável para IRS:            EUR 1 602,00
-- Retenção na fonte IRS (~14,5%):      -EUR   ~232,00
-= Vencimento líquido:                  EUR 1 370,00
-+ Subsídio de refeição:               +EUR   167,86
-= Total recebido:                      EUR ~1 538,00
-
-Custo para a entidade patronal:
-  Vencimento base:                     EUR 1 800,00
-+ Segurança Social patronal (23,75%): +EUR   427,50
-+ FCT (1%):                           +EUR    18,00
-+ Subsídio de refeição:               +EUR   167,86
-= Custo mensal entidade patronal:      EUR ~2 413,36
-```
-
-### Padrão 2: Trabalhador ao Salário Mínimo (2026)
-
-```
-Vencimento base (RMMG):                EUR   920,00
-- Segurança Social trabalhador (11%):  -EUR   101,20
-- Retenção na fonte IRS:               -EUR     0,00 (isento — mínimo de existência)
-= Vencimento líquido:                  EUR   818,80
-
-Custo anual:
-  14 meses × 920 × 1,2375 (com SS patronal) = EUR 15 939,00
-  + FCT 1% sobre 14 meses = EUR 128,80
-  Custo anual total para a entidade patronal ≈ EUR 16 068
-```
-
-### Padrão 3: Mês do Subsídio de Férias (junho)
-
-Em junho, o trabalhador recebe duplo pagamento:
-- Vencimento normal de junho (sujeito a Segurança Social + IRS à taxa normal)
-- Subsídio de férias = 1 mês de vencimento base (sujeito a Segurança Social + IRS de forma autónoma)
-
-Cada pagamento tem o IRS calculado independentemente utilizando a mesma taxa de retenção.
-
-### Padrão 4: Acerto de Contas na Cessação do Contrato
-
-**Padrão 4: Acerto de Contas na Cessação do Contrato**
-
-| Componente | Cálculo |
-| --- | --- |
-| Vencimento em dívida | Dias trabalhados no mês final / 30 × vencimento |
-| Subsídio de férias proporcional | Meses trabalhados / 12 × vencimento mensal |
-| Subsídio de Natal proporcional | Meses trabalhados / 12 × vencimento mensal |
-| Férias não gozadas (ano corrente) | Proporcional aos 22 dias |
-| Férias não gozadas (transitadas) | Dias completos × valor diário |
-| Compensação por cessação (se aplicável) | Nos termos do Código do Trabalho |
-
-## Secção 10 — Interação com Outras Skills
-
-**Secção 10 — Interação com Outras Skills**
-
-| Skill | Interação |
-| --- | --- |
-| portugal-bookkeeping | Lançamentos contabilísticos do processamento (conta 63x); provisões para subsídios de férias e de Natal |
-| portugal-einvoice | Sem interação direta (faturação eletrónica é B2B; recibos de vencimento são autónomos) |
-| pt-nhr-ifici | Mecânica de retenção na fonte à taxa especial de 20% para trabalhadores qualificados no regime IFICI / direitos adquiridos do antigo RNH |
-| payroll-workflow-base | Fluxo geral de processamento; especificidades portuguesas definidas nesta skill |
-
-### Especificidades do Processamento em Portugal
-
-- **14 pagamentos**: Portugal impõe 14 pagamentos de vencimento por ano. Considerar este facto na conversão de vencimento anual em custo mensal.
-- **Duodécimos**: O trabalhador pode requerer o pagamento dos subsídios de férias e de Natal em 12 prestações mensais iguais (1/12 por mês). A entidade patronal também pode optar por este método.
-- **Regiões autónomas**: Os Açores e a Madeira têm valores de salário mínimo ligeiramente superiores e podem ter tabelas de retenção de IRS diferentes.
-- **Tabelas de retenção de IRS**: Atualizadas anualmente por Despacho da AT (nos termos do art.º 99.º do CIRS). Utilizar sempre as tabelas do ano em curso. As tabelas de 2026 aplicam-se retroativamente a partir de 1 de janeiro de 2026.
-- **Subsídio de refeição**: Benefício amplamente generalizado. A parcela isenta (6,15 EUR em numerário / 10,20 EUR em cartão) NÃO está sujeita a Segurança Social nem a IRS. O excesso ESTÁ sujeito.
-- **Trabalho suplementar**: Sujeito a contribuições para a Segurança Social; a retenção na fonte de IRS é autónoma, à taxa correspondente a 50 % da taxa aplicável à remuneração mensal do mês em que é paga.
-- **Regime IFICI / RNH**: Para trabalhadores abrangidos, a retenção na fonte de IRS é efetuada à taxa especial de 20% — consultar a skill **pt-nhr-ifici**.
-
-## Aviso Legal
-
-Esta skill e os respetivos resultados são disponibilizados apenas para fins informativos e de cálculo, não constituindo aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores não aceitam qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por profissional qualificado antes da entrega ou de qualquer atuação com base nos mesmos.
-
-A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com).
+> **Source-cited draft.** No accountant has reviewed this skill yet. Figures come from the Código do IRS (CIRS) on the Portal das Finanças, the 2026 withholding despachos, the Código dos Regimes Contributivos and the Código do Trabalho in the Diário da República, read on 24 October 2026. It prepares working papers; it is not authority to file or pay.
 
 > Contributed by Ryan Duguid.
+
+Related skills:
+- `pt-social-contributions`: Social Security in depth, the self-employed, members of corporate bodies (MOE), contribution fines and interest.
+- `pt-irs-employees-investment`: the annual IRS return (Modelo 3), the annual bands, the specific deduction, deductions from tax and IRS Jovem on assessment.
+- `pt-cross-border`: residence, non-residents and treaties.
+- `pt-nhr-ifici`: the old non-habitual resident regime and IFICI.
+
+## Who this applies to
+
+Any employer (entidade devedora) that pays employment income (Category A) to an employee. The employer must withhold IRS when it pays or makes pay available (CIRS art. 99(1)(a)), report the pay monthly to the tax authority (art. 119(1)(c)) and declare and pay Social Security for each worker (Código dos Regimes Contributivos, the "Contributions Code", arts. 40 and 43).
+
+**Which withholding table.** The tables depend on where the employee lives:
+- Residents of the mainland: Despacho 233-A/2026 (point 2 of the despacho).
+- Residents of the Azores: Despacho 1179/2026.
+- Residents of Madeira: Despacho 19/2026 of the Regional Secretary of Finance (JORAM II série n.º 13, 20 January 2026, corrected by Declaração de Retificação 10/2026).
+
+**Which tables in which period (2026).**
+
+| Pay made available | Mainland | Azores | Madeira |
+|---|---|---|---|
+| 1 January to 31 October 2026 | Despacho 233-A/2026 in full | Despacho 1179/2026 in full | Despacho 19/2026 in full |
+| 1 to 30 November 2026 | 50% of the Despacho 233-A/2026 amount; full amount if monthly pay is above the upper limit of the second-to-last row (Despacho 12523-A/2026, points 1 to 3) | 50% of the Despacho 1179/2026 amount, same exception (Despacho 12610-A/2026, points 1 to 3) | Despacho 19/2026 in full (no November despacho found; see Not yet confirmed) |
+| From 1 December 2026 | Despacho 233-A/2026 in full (Despacho 12523-A/2026, points 7 and 9) | Despacho 1179/2026 in full (Despacho 12610-A/2026, points 7 and 9) | Despacho 19/2026 in full |
+
+The November cut passes on in advance a cut to the annual IRS rates. Lei 64-B/2026 of 22 October 2026 (from Proposta de Lei 108/XVII/2) only authorises the Government, for 180 days, to amend CIRS art. 68(1) and lower the rates of the first six bands to 12.2%, 15.2%, 20.7%, 23.6%, 30.6% and 34.6% (arts. 2 and 3). The rates change only when the Government publishes the decree-law. None had been published by 24 October 2026, and no despacho replaces the 2026 tables. Until that decree-law, the 2026 bands are those of CIRS art. 68(1) in the wording of Lei 73-A/2025.
+
+Inside each set, the table depends on the employee's situation: Table I (single without dependants, or married with two earners), Table II (single with one or more dependants), Table III (married, one earner), Tables IV to VII (employees with a disability) and Tables VIII to XI (pensions) (Despacho 233-A/2026, point 1). "Married, one earner" applies only when the spouse has no income that is aggregated, or one spouse earns 95% or more of the couple's aggregated income (CIRS art. 99-B(4); despacho point 9). Unmarried partners (união de facto) under CIRS art. 14 use the married tables (despacho point 8). If the employee gives no family details, the employer withholds as if there are no dependants (art. 99-B(3)).
+
+**Special cases.**
+- IFICI holders (EBF art. 58-A): 20% flat withholding on monthly Category A pay (CIRS art. 99(8)). See `pt-nhr-ifici`.
+- Residents paid for work done abroad: no Portuguese withholding when that pay is effectively taxed in the source country by a tax similar to IRS (art. 99(5)).
+- Non-residents: 25% final withholding (art. 71(4)(a)). See Cross-border points.
+- Pay made only of variable amounts: the separate rate table of art. 100 applies, not the monthly tables.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Withholding formula, no dependants | Monthly pay x marginal rate - amount to deduct (parcela a abater); never below zero | 2026 | Despacho 233-A/2026, point 3(b): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf |
+| Withholding formula, with dependants | Monthly pay x marginal rate - amount to deduct - (extra amount per dependant x number of dependants) | 2026 | Despacho 233-A/2026, point 3(a) |
+| Mainland Table I: no withholding | Monthly pay up to EUR 920.00 | 2026 | Despacho 233-A/2026, Table I |
+| Mainland Table III (married, one earner): no withholding | Monthly pay up to EUR 991.00 | 2026 | Despacho 233-A/2026, Table III |
+| Extra deduction per dependant, employment | EUR 21.43 (Table I, married two earners), EUR 34.29 (Table II), EUR 42.86 (Table III) | 2026 | Despacho 233-A/2026, Tables I to III |
+| Dependant with 60% or more disability | Add EUR 84.82 per dependant (single or married one earner), EUR 42.41 (married two earners) | 2026 | Despacho 233-A/2026, point 5(a) |
+| Three or more dependants | Marginal rate cut by 1 percentage point (Tables I to VII) | 2026 | Despacho 233-A/2026, point 5(h) |
+| Azores Table I: no withholding | Monthly pay up to EUR 966.00; first band 8.75% | 2026 | Despacho 1179/2026, as published in AT Circular 3/2026: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Circular-3-2026.pdf |
+| Madeira Table I: no withholding | Monthly pay up to EUR 980.00; first band 8.72%; top row over EUR 21,411: 32.78%, less EUR 1,275.30 | 2026 | Despacho 19/2026 (JORAM), republished by Declaração de Retificação 10/2026: https://at.madeira.gov.pt/ficheiros/IISerie-016-2026-01-23Supl3.pdf |
+| November 2026 pay (mainland and Azores) | Only 50% of the table amount is withheld, except where monthly pay exceeds the upper limit of the second-to-last row | Paid 1 to 30 Nov 2026 | Despacho 12523-A/2026, points 2 and 3: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-12523-a-2026.pdf ; Azores: Despacho 12610-A/2026: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-12610-a-2026.pdf |
+| Overtime pay | Withheld at 50% of the effective rate on that month's regular pay | 2026 | CIRS art. 99-C(8); Despacho 233-A/2026, point 5(f) |
+| Rounding | Amount withheld rounded down to the whole euro | 2026 | CIRS art. 99-E(1): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99e.aspx |
+| Variable-only pay | 0% up to EUR 5,269 a year, rising to 40% over EUR 506,343 | 2026 | CIRS art. 100(1): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs100.aspx |
+| IFICI employees | 20% | 2026 | CIRS art. 99(8): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99.aspx |
+| Social Security, general regime | 34.75%: employer 23.75%, employee 11% | 2026 | Contributions Code art. 53: https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Members of corporate bodies (MOE) with management duties | 34.75%: entity 23.75%, member 11% | 2026 | Contributions Code art. 69(2) |
+| Other MOE | 29.6%: entity 20.3%, member 9.3% | 2026 | Contributions Code art. 69(1) |
+| Domestic workers | 28.3% (employer 18.9%, worker 9.4%) without unemployment cover; 33.3% (22.3% and 11%) with it | 2026 | Contributions Code art. 121(1) and (2) |
+| Meal allowance exempt from IRS and Social Security, cash | Up to EUR 6.15 a day (the public-sector allowance) | From 1 Jan 2026 | CIRS art. 2(3)(b)(2): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs2.aspx ; Portaria 51-B/2026/1, art. 1 and 3: https://files.diariodarepublica.pt/1s/2026/01/02103/0001100011.pdf ; Contributions Code art. 46(2)(l) and (3) |
+| Meal allowance exempt, meal card or vouchers | Up to 70% more than the cash limit: EUR 6.15 x 1.7 = EUR 10.455 a day | From 1 Jan 2026 | CIRS art. 2(3)(b)(2), wording of Lei 45-A/2024 |
+| IRS Jovem exemption | 100% (year 1), 75% (years 2 to 4), 50% (years 5 to 7), 25% (years 8 to 10), capped at 55 x IAS = EUR 29,542.15 a year | 2026 | CIRS art. 12-B(1) and (5): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx |
+| IRS Jovem cap in withholding | 55 x IAS / 14 = EUR 2,110.15 exempt per payment (each of the 14 payments) | 2026 | Despacho 233-A/2026, point 5(g); AT Ofício-Circulado 20274/2025 (monthly limit applied payment by payment): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_20274_2025.pdf |
+| Annual IRS rates, bands 1 to 6 | Lowering to 12.2%, 15.2%, 20.7%, 23.6%, 30.6%, 34.6% is authorised, not yet in force | Authorisation from 23 Oct 2026, 180 days | Lei 64-B/2026, arts. 2 to 4: https://diariodarepublica.pt/dr/detalhe/lei/64-b-2026-1184484177 |
+| IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1, art. 2: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf |
+| Minimum wage, mainland | EUR 920 a month | From 1 Jan 2026 | Decreto-Lei 139/2025, arts. 2 and 3: https://diariodarepublica.pt/dr/detalhe/decreto-lei/139-2025-992879809 |
+| Minimum wage, Azores | EUR 966 a month (national EUR 920 plus 5%) | From 1 Jan 2026 | Decreto Legislativo Regional 8/2002/A, art. 3: https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/8-2002-303252 |
+| Minimum wage, Madeira | EUR 980 a month | From 1 Jan 2026 | Decreto Legislativo Regional 1/2026/M, art. 2 and 4: https://www.madeira.gov.pt//Portals/25/Documentos/Legislacao/DLR_1_2026_M.pdf |
+| Overtime premium, first 100 hours a year | Working day: 25% first hour, 37.5% after; rest day or holiday: 50% | 2026 | Código do Trabalho art. 268(1): https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475 |
+| Overtime premium, over 100 hours a year | Working day: 50% first hour, 75% after; rest day or holiday: 100% | 2026 | Código do Trabalho art. 268(2) |
+| Overtime limit | 175 hours a year (micro and small firms); 150 hours (medium and large) | 2026 | Código do Trabalho art. 228(1) |
+| Night work premium | 25% | 2026 | Código do Trabalho art. 266(1) |
+| Late-payment interest (tax and Social Security debts) | 7.221% a year | From 1 Jan 2026 | IGCP Aviso 18/2026/2: https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 ; LGT art. 44(3); Contributions Code arts. 211 and 212 |
+
+**Mainland Table I in full** (employment income, single without dependants or married with two earners; Despacho 233-A/2026, Table I). R is the monthly pay. The extra amount per dependant is EUR 21.43 on every row.
+
+| Monthly pay up to (EUR) | Marginal rate | Amount to deduct (EUR) |
+|---|---|---|
+| 920.00 | 0% | 0 |
+| 1,042.00 | 12.50% | 12.50% x 2.60 x (1,273.85 - R) |
+| 1,108.00 | 15.70% | 15.70% x 1.35 x (1,554.83 - R) |
+| 1,154.00 | 15.70% | 94.71 |
+| 1,212.00 | 21.20% | 158.18 |
+| 1,819.00 | 24.10% | 193.33 |
+| 2,119.00 | 31.10% | 320.66 |
+| 2,499.00 | 34.90% | 401.19 |
+| 3,305.00 | 38.36% | 487.66 |
+| 5,547.00 | 39.69% | 531.62 |
+| 20,221.00 | 44.95% | 823.40 |
+| Over 20,221.00 | 47.17% | 1,272.31 |
+
+Table II (single with dependants) uses the same rows, with EUR 34.29 per dependant (Despacho 233-A/2026, Table II). Each region has 11 tables. For Tables III to XI, and for the Azores and Madeira, use the despacho for the region where the employee lives; the rows in the rates table above are the zero-withholding limits.
+
+## The taxable base
+
+**What counts as monthly pay for withholding.** Fixed pay plus any other employment income as defined in CIRS art. 2 paid in the month (art. 99-C(2)). Benefits in kind are not withheld on, unless the employee asks (art. 99(1)(a) and 99-C(3)). Pay for periods shorter than a month is added up for the month (art. 99-C(4)).
+
+**Paid separately (autonomous withholding).** The holiday subsidy, the Christmas subsidy, overtime pay and pay for earlier years are always withheld on their own. They are never added to the month's pay to pick the table row (art. 99-C(5)). Apply the table to the subsidy as if it were a month's pay. Overtime gets 50% of the month's effective rate (art. 99-C(8)). Pay for earlier years is divided by the number of months it covers to find the rate, which then applies to the whole amount (art. 99-C(9)). When an employer pays several items in one month, the payslip shows the effective rate for each one separately (Despacho 233-A/2026, point 10; CIRS art. 99(9)).
+
+**The 14 payments.** The Código do Trabalho gives a Christmas subsidy equal to one month's pay, paid by 15 December (art. 263(1)), and a holiday subsidy of base pay plus pay linked to how the work is done, for the minimum holiday (art. 264(2)), paid before the holiday starts unless agreed otherwise in writing (art. 264(3)). The Christmas subsidy is pro rata in the year of hiring, the year of leaving and when the contract is suspended for a reason on the worker's side (art. 263(2)). The minimum holiday is 22 working days (art. 238(1)).
+
+**Twelfths (duodécimos).** Where the subsidies are paid in instalments, withhold in each payment the matching share of the tax worked out on the whole subsidy (CIRS art. 99-C(6)). The Labour Code sets the latest dates; paying the holiday subsidy in another way needs a written agreement (art. 264(3)).
+
+**Meal allowance.** Taxed for IRS only on the part above EUR 6.15 a day in cash, or above EUR 10.455 a day on a meal card or vouchers (CIRS art. 2(3)(b)(2) with Portaria 51-B/2026/1). Social Security follows the same IRS limits (Contributions Code art. 46(2)(l) and (3)). Meals in the employer's canteen are outside the Social Security base (art. 48(f)).
+
+**Social Security base.** Pay as defined in Contributions Code arts. 44 to 48. It includes base pay, holiday pay, and the Christmas and holiday subsidies (art. 46(2)(a), (g), (h)). There is no ceiling for employees under art. 53. The details of what is in and out, and MOE bases, are in `pt-social-contributions`.
+
+**IRS Jovem in withholding.** An employee aged up to 35 who is not a dependant tells the employer the year of earning income they are in (CIRS art. 99-F(5)). The employer works out the withholding rate on all pay, exempt part included, and applies that rate only to the part that is not exempt (art. 99-F(4)). The exempt part taken through withholding is capped at 55 x IAS / 14 = EUR 2,110.15 in each payment, the 14 payments including the holiday and Christmas subsidies (Despacho 233-A/2026, point 5(g)). The tax authority applies this as a monthly limit on each payment: where the exempt share of a payment is higher, only EUR 2,110.15 is treated as exempt (AT Ofício-Circulado 20274/2025, worked cases). Former NHR or IFICI beneficiaries, people under the art. 12-A returnee regime and people with unpaid tax cannot use it (art. 12-B(9)). The final exemption is claimed on the annual return.
+
+**Higher rate by choice.** An employee may ask in writing for a higher whole-number rate (CIRS art. 98(6)). Only the marginal rate changes; the deductions stay (Despacho 233-A/2026, point 5(e)).
+
+**Corrections.** Errors by the employer can be corrected in the next withholdings, within the same year (CIRS art. 98(4)). For November 2026, an employer that did not apply the 50% cut may correct it by the end of December 2026 (Despacho 12523-A/2026, point 8).
+
+## Deadlines and filing
+
+| Obligation | Deadline | Source |
+|---|---|---|
+| Ask the employee for family details | At the start of work, before the first payment | CIRS art. 99(2)(a) |
+| Monthly pay declaration to AT (Declaração Mensal de Remunerações, DMR): pay, withholdings, compulsory contributions and union dues | By the 10th of the month after payment, including exempt or non-taxable employment income | CIRS art. 119(1)(c)(i): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs119.aspx |
+| Corrected DMR | Within 30 days of the fact that changes the amounts | CIRS art. 119(1)(d) |
+| Pay over IRS withheld | By the 20th of the month after it was withheld | CIRS art. 98(3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs98.aspx |
+| Annual statement to each employee (pay, tax withheld, deductions) | By 20 January of the next year | CIRS art. 119(1)(b) |
+| Social Security pay declaration (new model): confirm or correct the figures the system computed | By the 20th of the following month; silence means acceptance | Contributions Code art. 40(7) and (8), wording of Decreto-Lei 127/2025 |
+| Pay employee and employer Social Security | Between the 1st and the 25th of the following month | Contributions Code art. 43, wording of Decreto-Lei 127/2025, in force 1 January 2026 |
+| Move to the new Social Security reporting model | Any time in 2026 on request; compulsory from 1 January 2027 | Decreto-Lei 127/2025, art. 5: https://diariodarepublica.pt/dr/detalhe/decreto-lei/127-2025-967317021 |
+| Payslip | Before or at payment: employer, employee's name, Social Security number, category, base pay and other items, period, deductions, net pay | Código do Trabalho art. 276(3) |
+| Christmas subsidy | By 15 December | Código do Trabalho art. 263(1) |
+| Holiday subsidy | Before the holiday starts, unless agreed otherwise in writing | Código do Trabalho art. 264(3) |
+
+The ISS practical guide on paying contributions gives the same 1st to 25th window for employers; the 10th to 20th window now applies to the self-employed (ISS, Guia Prático, Pagamento de Contribuições, F2.1 and F2.3).
+
+## Penalties and interest
+
+**Tax (IRS withheld).**
+- Withheld tax not paid over: fine of one to two times the tax (RGIT art. 114(1)). If by negligence: 15% to half of the tax (art. 114(2)). The same fines apply to tax that should have been withheld but was not (art. 114(4)).
+- Late or missing DMR: fine of EUR 150 to EUR 3,750 (RGIT art. 117(1)).
+- Withheld tax over EUR 7,500 not paid more than 90 days after the deadline, and not paid within 30 days of notice: crime of breach of trust, up to three years in prison or a fine of up to 360 days (RGIT art. 105(1) and (4)); over EUR 50,000, one to five years (art. 105(5)).
+- Compensatory interest runs day by day from the payment deadline for tax withheld or that should have been withheld (LGT art. 35(1) and (3)), at the legal interest rate (art. 35(10)), which is 4% a year (Portaria 291/2003). The employer owes it on late payment (Despacho 233-A/2026, point 13). An employee who wrongly used the "married, one earner" table owes compensatory interest on the shortfall (CIRS art. 99-F(3)).
+- Late-payment interest: 7.221% a year for 2026 (LGT art. 44(1) and (3); IGCP Aviso 18/2026/2).
+
+**Social Security.** The fine bands (light, serious, very serious, raised by 50% or 100% for companies) are set out in `pt-social-contributions` (Contributions Code art. 233). Not declaring a worker's pay is very serious (art. 40(10)). Not confirming or correcting by the 20th, where the error changes what the worker is owed, is light if put right within 60 days and serious otherwise (art. 40(11)). Late contributions carry interest for each calendar month or part (art. 211), 7.221% for 2026.
+
+**Labour Code.** Not paying the Christmas or holiday subsidy as required is a very serious offence (arts. 263(3) and 264(4)). Not paying the overtime premiums is serious (art. 268(5)). A payslip missing the required details is light (art. 276(4)).
+
+## Cross-border points
+
+- **Non-resident employees** with Portuguese-source pay: 25% final withholding on gross (CIRS art. 71(4)(a)). Monthly pay from a single payer is free of withholding up to the minimum wage, with 25% on the excess, if the employee declares in writing that they have no similar income from other Portuguese payers (art. 71(5) and (6)). See `pt-cross-border`.
+- **Residents working abroad**: no withholding where the pay is effectively taxed abroad (art. 99(5)).
+- **Which region's table**: the employee's residence in the mainland, the Azores or Madeira decides the table (Despacho 233-A/2026, point 2; Despacho 1179/2026, point 2).
+- **Social Security for posted or cross-border workers** (EU Regulation 883/2004, A1 certificates) is not covered here. See `pt-cross-border` and `pt-social-contributions`.
+- **IFICI** newcomers: 20% withholding (art. 99(8)); see `pt-nhr-ifici`.
+
+## Worked examples
+
+### Example 1: mainland employee, single, no dependants, EUR 1,800 a month
+
+An employee lives in Lisbon, is single with no dependants, and earns EUR 1,800 a month in October 2026. She also gets a meal card of EUR 9.00 for 22 working days (EUR 198), inside the EUR 10.455 limit, so it is exempt from IRS and Social Security. Table I, row "up to EUR 1,819": 24.10% less EUR 193.33. Tax is 1,800 x 24.10% = 433.80, less 193.33 = 240.47, rounded down to EUR 240. Social Security: employee 11% = EUR 198; employer 23.75% = EUR 427.50. Net salary is EUR 1,362, plus the EUR 198 meal card. The employer's cost is EUR 2,425.50. In June, her EUR 1,800 holiday subsidy is withheld on its own at the same row, another EUR 240, and is not added to June's pay.
+
+```oa-check
+name: Portugal 2026, mainland Table I, EUR 1,800 a month, single, no dependants
+inputs:
+  pay: 1800
+  meal_days: 22
+  meal_card_daily: 9
+steps:
+  - tax_raw: pay * 0.2410 - 193.33
+  - withholding: floor(tax_raw)
+  - ss_employee: pay * 0.11
+  - ss_employer: pay * 0.2375
+  - meal: meal_days * meal_card_daily
+  - net_salary: pay - ss_employee - withholding
+  - employer_cost: pay + ss_employer + meal
+expected:
+  tax_raw: 240.47
+  withholding: 240
+  ss_employee: 198
+  ss_employer: 427.50
+  meal: 198
+  net_salary: 1362
+  employer_cost: 2425.50
+```
+
+### Example 2: mainland employee in IRS Jovem year 3, EUR 2,400 a month
+
+An employee aged 26, single with no dependants, never under NHR or IFICI, tells his employer he is in his third year of earning income. IRS Jovem exempts 75% in years 2 to 4. He earns EUR 2,400 in October 2026. First the rate on all pay: Table I, row "up to EUR 2,499", 34.90% less EUR 401.19, so 2,400 x 34.90% = 837.60, less 401.19 = 436.41, an effective rate of 18.18375%. The exempt part is 75% of 2,400 = EUR 1,800, under the EUR 2,110.15 monthly cap. Withholding is 18.18375% on the EUR 600 that is not exempt: 109.10, rounded down to EUR 109. IRS Jovem does not change Social Security: employee EUR 264, employer EUR 570. Net pay is EUR 2,027. Had this been paid in November 2026, only 50% of the withholding would apply, because EUR 2,400 is below the second-to-last row limit (Despacho 12523-A/2026); that step is left out of the check.
+
+```oa-check
+name: Portugal 2026, mainland Table I, IRS Jovem year 3, EUR 2,400 a month
+inputs:
+  pay: 2400
+  exempt_share: 0.75
+  ias: 537.13
+steps:
+  - tax_on_all: pay * 0.3490 - 401.19
+  - effective_rate: tax_on_all / pay
+  - monthly_cap: 55 * ias / 14
+  - exempt: min(pay * exempt_share, monthly_cap)
+  - taxable_part: pay - exempt
+  - withholding: floor(taxable_part * effective_rate)
+  - ss_employee: pay * 0.11
+  - ss_employer: pay * 0.2375
+  - net_pay: pay - ss_employee - withholding
+expected:
+  tax_on_all: 436.41
+  effective_rate: 0.18183750
+  monthly_cap: 2110.15
+  exempt: 1800
+  taxable_part: 600
+  withholding: 109
+  ss_employee: 264
+  ss_employer: 570
+  net_pay: 2027
+```
+
+## Ask the client first
+
+1. Where does each employee live: mainland, Azores or Madeira? (Picks the table set and the November rule.)
+2. Marital status, whether the spouse has income, number of dependants and any disability of 60% or more. (Picks Table I, II or III and the deductions.)
+3. Is any employee aged 35 or under and claiming IRS Jovem, and which year of earning income are they in? Any NHR or IFICI status? (Changes the withholding base and rate.)
+4. Are the holiday and Christmas subsidies paid in full or in twelfths, and is there a written agreement? (Changes timing and the per-payment withholding.)
+5. How is the meal allowance paid (cash or card) and how much a day? (Decides the exempt part.)
+6. Is the employer on the new Social Security reporting model yet, and are any workers MOE, domestic workers or non-residents? (Changes deadlines and rates.)
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| CIRS art. 2 (meal allowance limit, wording of Lei 45-A/2024) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs2.aspx | 2026-10-24 |
+| CIRS art. 12-B (IRS Jovem) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx | 2026-10-24 |
+| CIRS art. 71 (non-residents, 25%) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx | 2026-10-24 |
+| CIRS art. 98 (withholding, payment by the 20th) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs98.aspx | 2026-10-24 |
+| CIRS art. 99 (Categories A and H) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99.aspx | 2026-10-24 |
+| CIRS art. 99-B (family situation) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99b.aspx | 2026-10-24 |
+| CIRS art. 99-C (Category A, subsidies, overtime) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99c.aspx | 2026-10-24 |
+| CIRS art. 99-E (rounding) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99e.aspx | 2026-10-24 |
+| CIRS art. 99-F (tables, IRS Jovem in withholding) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99f.aspx | 2026-10-24 |
+| CIRS art. 100 (variable-only pay) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs100.aspx | 2026-10-24 |
+| CIRS art. 101 (other categories) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx | 2026-10-24 |
+| CIRS art. 119 (DMR, annual statement) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs119.aspx | 2026-10-24 |
+| Despacho 233-A/2026 (mainland tables 2026), AT copy of the Diário da República text | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf | 2026-10-24 |
+| Despacho 1179/2026 (Azores tables 2026), AT copy | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-1179-2026.pdf | 2026-10-24 |
+| AT Circular 3/2026 (Azores tables in text form) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Circular-3-2026.pdf | 2026-10-24 |
+| AT Circular 2/2026 (Madeira tables, Despacho 19/2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Circular_2_2026.pdf | 2026-10-24 |
+| JORAM II série n.º 16, 3.º supl., 23 Jan 2026 (Declaração de Retificação 10/2026, Madeira tables) | https://at.madeira.gov.pt/ficheiros/IISerie-016-2026-01-23Supl3.pdf | 2026-10-24 |
+| Despacho 12523-A/2026 (November 2026, mainland) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-12523-a-2026.pdf | 2026-10-24 |
+| Despacho 12610-A/2026 (November 2026, Azores) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-12610-a-2026.pdf | 2026-10-24 |
+| Portaria 51-B/2026/1 (meal allowance EUR 6.15 from 1 Jan 2026) | https://files.diariodarepublica.pt/1s/2026/01/02103/0001100011.pdf | 2026-10-24 |
+| Portaria 480-A/2025/1 (IAS 2026), AT copy | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf | 2026-10-24 |
+| Código dos Regimes Contributivos (Lei 110/2009, consolidated), arts. 40, 43, 46, 48, 53, 69, 121, 211, 233 | https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 | 2026-10-24 |
+| Decreto-Lei 127/2025 (arts. 40 and 43, transition art. 5, in force 1 Jan 2026) | https://diariodarepublica.pt/dr/detalhe/decreto-lei/127-2025-967317021 | 2026-10-24 |
+| ISS, Guia Prático, Pagamento de Contribuições à Segurança Social (deadlines F2, interest 7.221% for 2026) | https://www.seg-social.pt/ptss/pssd/documento/cmc1y95ap00dkkl2yk3g4tdla | 2026-10-24 |
+| IGCP Aviso 18/2026/2 (late interest 7.221%) | https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 | 2026-10-24 |
+| Código do Trabalho (consolidated), arts. 228, 238, 263, 264, 266, 268, 276 | https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475 | 2026-10-24 |
+| Decreto-Lei 139/2025 (mainland minimum wage EUR 920) | https://diariodarepublica.pt/dr/detalhe/decreto-lei/139-2025-992879809 | 2026-10-24 |
+| Decreto Legislativo Regional 8/2002/A, art. 3 (Azores minimum wage: national plus 5%) | https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/8-2002-303252 | 2026-10-24 |
+| Lei 64-B/2026 (authorisation to cut the rates of IRS bands 1 to 6) | https://diariodarepublica.pt/dr/detalhe/lei/64-b-2026-1184484177 | 2026-10-24 |
+| Assembleia da República, Proposta de Lei 108/XVII (stages, publication as Lei 64-B/2026) | https://www.parlamento.pt/ActividadeParlamentar/Paginas/DetalheIniciativa.aspx?BID=377272 | 2026-10-24 |
+| AT Ofício-Circulado 20274/2025 (IRS Jovem withholding, monthly limit) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_20274_2025.pdf | 2026-10-24 |
+| Portaria 291/2003 (legal interest rate 4%) | https://diariodarepublica.pt/dr/detalhe/portaria/291-2003-223663 | 2026-10-24 |
+| Decreto Legislativo Regional 1/2026/M (Madeira minimum wage EUR 980) | https://www.madeira.gov.pt//Portals/25/Documentos/Legislacao/DLR_1_2026_M.pdf | 2026-10-24 |
+| RGIT arts. 105, 114, 117 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit114.aspx | 2026-10-24 |
+| LGT arts. 35 and 44 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt44.aspx | 2026-10-24 |
+
+Not yet confirmed: whether Madeira adopted a November 2026 withholding cut (none found in JORAM or on the AT sites; the mainland and Azores despachos exclude Madeira); the decree-law under Lei 64-B/2026 that will set the new band rates, and whether it applies to 2026 income (Despacho 12523-A/2026 says the cut takes effect from 1 January 2026, but the law itself names no year); the Social Security declaration deadline during 2026 for employers still on the old reporting model (the old art. 40 text was not read); the rounding of the card limit to EUR 10.46 that the old version used; the remaining rows of each table and Tables IV to XI; the FCT and FGCT work compensation funds (the old version said contributions are suspended under Lei 13/2023); the 50% employer contribution cuts for first jobs and long-term unemployed hires; parental leave, sick pay (paid by Social Security from the 4th day at 55% to 75%), bereavement leave, 15 days marriage leave and compulsory work-accident insurance from the old version; record keeping periods (5 years labour, 10 years tax); the Relatório Único deadline (15 April); the annual return of income paid to others under CIRS art. 119(1)(c)(ii) by the end of February, wording of Decreto-Lei 49/2025.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 
@@ -423,4 +301,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
