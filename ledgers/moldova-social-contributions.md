@@ -2,7 +2,7 @@
 
 **Local 2026 writer draft. Whole-country independent review pending. Ordinary source and implementation gaps remain open in the Guide Sources and country README.**
 
-Guide SHA256: `511e40e455754a535e4e59238074227f86bf1fc5d7945f48951f81f57109b68f`. Source quotes are exact after whitespace normalization; full paragraphs, official URLs, source hashes and assumed cases are retained in the JSON. The initial 67-row source checkpoint is preserved separately.
+Guide SHA256: `393ee858ba13b4c4cf8d4a86d52dc84ed8b7224c7942e7191b338f21a4cf8655`. Source quotes are exact after whitespace normalization; full paragraphs, official URLs, source hashes and assumed cases are retained in the JSON. The initial 67-row source checkpoint is preserved separately.
 
 | ID | Rule/figure | Guide section | Act/article and official URL | Short exact original-language quote | Read on |
 |---|---|---|---|---|---|
@@ -156,6 +156,9 @@ Guide SHA256: `511e40e455754a535e4e59238074227f86bf1fc5d7945f48951f81f57109b68f`
 | MD-SC-148 | Penalty category identification | The base / Penalties and interest | [Fiscal Code art. 232](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 232. Persoanele pasibile de răspundere pentru încălcare a legislației Este tras la răspundere pentru încălcare a legislației: a) contribuabilul persoană juridică | 2026-10-30 |
 | MD-SC-149 | Category-dependent declaration fine | The base / Penalties and interest | [Fiscal Code art. 260](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 260. Nerespectarea modului de întocmire, de prezentare a dării de seamă fiscale şi a facturii fiscale (1) Nerespectarea modului de întocmire | 2026-10-30 |
 | MD-SC-150 | Understatement/evasion and self-correction exception | The base / Penalties and interest | [Fiscal Code art. 261](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 261. Încălcarea regulilor de calculare şi de plată a impozitelor, a taxelor, a primelor de asigurare obligatorie de asistenţă medicală şi | 2026-10-30 |
+| MD-SC-151 | Service-entrepreneur calendar/start/cessation period | The base: Independent service entrepreneur: annual medical difference / Deadlines and filing | [Fiscal Code art.69^23](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 6923. Perioada fiscală (1) Prin perioadă fiscală se înțelege anul calendaristic la a cărui încheiere se determină venitul din activitate. (2) | 2026-10-30 |
+| MD-SC-152 | Single tax includes medical/social components and allocates15.4%/53.3% of the tax | The base: Independent service entrepreneur: annual medical difference / Deadlines and filing | [Fiscal Code art.69^25](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 6925. Cota și componența impozitului unic (1) Cota impozitului unic constituie 15% din obiectul impunerii în cazul în care venitul anual | 2026-10-30 |
+| MD-SC-153 | Monthly notice/payment; annual medical difference benchmark and25January/25February deadlines | The base: Independent service entrepreneur: annual medical difference / Deadlines and filing | [Fiscal Code art.69^26](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Articolul 6926. Modul de calculare și achitare (1) Calcularea impozitului unic se efectuează prin aplicarea cotei impozitului asupra venitului obținut din activități | 2026-10-30 |
 
 ## Complete predecessor-topic destination table
 

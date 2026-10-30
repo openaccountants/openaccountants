@@ -3,7 +3,7 @@
   "country": "MD",
   "slug": "moldova-social-contributions",
   "Guide_path": "skills/international/moldova/moldova-social-contributions.md",
-  "Guide_sha256": "511e40e455754a535e4e59238074227f86bf1fc5d7945f48951f81f57109b68f",
+  "Guide_sha256": "393ee858ba13b4c4cf8d4a86d52dc84ed8b7224c7942e7191b338f21a4cf8655",
   "rows": [
     {
       "id": "MD-SC-001",
@@ -2102,6 +2102,48 @@
       "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-261.json",
       "source_text_sha256": "8b151060c2f556a94d723b8e643be1e7888c3df73635efe2a133f51922d18064",
       "source_point_full_text": "Articolul 261. Încălcarea regulilor de calculare şi de plată\n\n                         a impozitelor, a taxelor, a primelor de asigurare\n\n                         obligatorie de asistenţă medicală şi a contribuţiilor\n\n                         de asigurări sociale de stat obligatorii, stabilite în\n\n                         cotă procentuală\n\n(1) - abrogat.\n\n(2) - abrogat.\n\n(3) - abrogat.\n\n(4) Diminuarea impozitelor, a taxelor, a primelor de asigurare obligatorie de asistenţă medicală şi a contribuţiilor de asigurări sociale de stat obligatorii, stabilite în cotă procentuală, prin prezentarea către Serviciul Fiscal de Stat a unei dări de seamă fiscale cu informaţii sau date neveridice se sancţionează cu amendă de la 20% la 30% din suma diminuată.\n\n(41) Prevederile alin.(4) nu se aplică în cazul în care contribuabilul depune de sine stătător darea de seamă corectată în conformitate cu art.188, cu condiţia ca aceasta să nu conţină informaţii şi date neveridice.\n\n(5) Eschivarea de la calculul şi de la plata impozitelor, a taxelor, a primelor de asigurare obligatorie de asistenţă medicală şi a contribuţiilor de asigurări sociale de stat obligatorii, stabilite în cotă procentuală, se sancţionează cu o amendă de la 80% la 100% din suma impozitelor, a taxelor, a primelor de asigurare obligatorie de asistenţă medicală şi a contribuţiilor de asigurări sociale de stat obligatorii nedeclarate, stabilite în cotă procentuală.\n\n(6) Neplata sau plata incompletă a impozitului pe venit în rate se sancţionează cu amendă în cuantum calculat, în modul stabilit la art.228 alin.(3), unei perioade cuprinse între data stabilită pentru plata acestui impozit şi data de prezentare a declaraţiei fiscale. Suma neplătită a impozitului pe venit se determină ca diferenţă dintre impozitul calculat şi plătit de contribuabil şi impozitul pe care acesta era obligat să-l plătească. Impozitul pe venit care urmează a fi plătit reprezintă cea mai mică mărime din impozitul calculat care urma să fie plătit în anul precedent sau 80% din suma definitivă a impozitului din perioada fiscală curentă, scăzându-se trecerile în cont (cu excepţia impozitului plătit în rate). Sancţiunea nu se aplică în cazul în care impozitul pe venit ce urmează a fi plătit este mai mic de 5000 de lei. Amenda nu se aplică contribuabililor menţionaţi la art.228 alin.(5) în ceea ce priveşte obligaţiile fiscale şi perioadele fiscale pentru care nu se aplică (nu se calculează) majorări de întârziere (penalităţi).\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-SC-151",
+      "rule_or_figure": "Service-entrepreneur calendar/start/cessation period",
+      "Guide_section": "The base: Independent service entrepreneur: annual medical difference / Deadlines and filing",
+      "act_article_or_official_section": "Fiscal Code art.69^23",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 6923. Perioada fiscală (1) Prin perioadă fiscală se înțelege anul calendaristic la a cărui încheiere se determină venitul din activitate. (2)",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-69s20-26.json",
+      "source_text_sha256": "b95e0742871f1d7400a81b1034373f1e946757cb12336092359085c54a8c491a",
+      "source_point_full_text": "Articolul 6923. Perioada fiscală\n\n(1) Prin perioadă fiscală se înțelege anul calendaristic la a cărui încheiere se determină venitul din activitate.\n\n(2) Pentru antreprenorii independenți care inițiază activitatea pe parcursul perioadei fiscale, perioada fiscală se consideră perioada de la data înregistrării acestora în Registrul de stat și până la încetarea activității în decursul anului sau până la finele anului calendaristic.\n\n(3) Pentru antreprenorii independenți care încetează activitatea pe parcursul perioadei fiscale, perioada fiscală se consideră de la începutul anului calendaristic și până la data încetării activității în conformitate cu prezentul capitol.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-SC-152",
+      "rule_or_figure": "Single tax includes medical/social components and allocates15.4%/53.3% of the tax",
+      "Guide_section": "The base: Independent service entrepreneur: annual medical difference / Deadlines and filing",
+      "act_article_or_official_section": "Fiscal Code art.69^25",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 6925. Cota și componența impozitului unic (1) Cota impozitului unic constituie 15% din obiectul impunerii în cazul în care venitul anual",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-69s20-26.json",
+      "source_text_sha256": "b95e0742871f1d7400a81b1034373f1e946757cb12336092359085c54a8c491a",
+      "source_point_full_text": "Articolul 6925. Cota și componența impozitului unic\n\n(1) Cota impozitului unic constituie 15% din obiectul impunerii în cazul în care venitul anual al antreprenorului independent nu depășește 1200000 de lei.\n\n(2) În cazul în care venitul anual depășește plafonul prevăzut la alin. (1), pentru partea excedentară a venitului se aplică o cotă a impozitului unic de 35%.\n\n(3) În componența impozitului unic sunt incluse următoarele impozite, taxe și contribuții:\n\na) impozitul pe venitul antreprenorilor independenți care desfășoară activități în domeniul prestării serviciilor;\n\nb) contribuțiile de asigurări sociale de stat obligatorii;\n\nc) primele de asigurare obligatorie de asistență medicală;\n\nd) taxele locale.\n\n(4) Impozitul unic se încasează într-un cont trezorerial de încasări, fiind ulterior repartizate:\n\na) la bugetul local: impozitul pe venitul antreprenorilor independenți care desfășoară activități economice independente în domeniul prestării serviciilor – 26,3% și taxele locale – 5,0%;\n\nb) la bugetul asigurărilor sociale de stat: contribuțiile de asigurări sociale de stat obligatorii datorate de antreprenorii independenți care desfășoară activități economice independente în domeniul prestării serviciilor – 53,3%;\n\nc) la fondurile asigurării obligatorii de asistență medicală: primele de asigurare obligatorie de asistență medicală sub formă de contribuție procentuală din venitul obținut de antreprenorii independenți care desfășoară activități economice independente în domeniul prestării serviciilor – 15,4%.\n\n",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+    },
+    {
+      "id": "MD-SC-153",
+      "rule_or_figure": "Monthly notice/payment; annual medical difference benchmark and25January/25February deadlines",
+      "Guide_section": "The base: Independent service entrepreneur: annual medical difference / Deadlines and filing",
+      "act_article_or_official_section": "Fiscal Code art.69^26",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "Articolul 6926. Modul de calculare și achitare (1) Calcularea impozitului unic se efectuează prin aplicarea cotei impozitului asupra venitului obținut din activități",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-69s20-26.json",
+      "source_text_sha256": "b95e0742871f1d7400a81b1034373f1e946757cb12336092359085c54a8c491a",
+      "source_point_full_text": "Articolul 6926. Modul de calculare și achitare\n\n(1) Calcularea impozitului unic se efectuează prin aplicarea cotei impozitului asupra venitului obținut din activități economice independente în domeniul prestării serviciilor.\n\n(2) Calcularea impozitului unic se efectuează lunar de către Serviciul Fiscal de Stat, prin remiterea avizelor de plată până la data de 10 a lunii următoare lunii de gestiune. Achitarea impozitului unic se efectuează lunar, până la data de 25 a lunii următoare lunii de gestiune. Dacă suma anuală defalcată pentru primele de asigurare obligatorie de asistență medicală nu acoperă valoarea sumei fixe stabilite ca facilitate pentru achitarea în termen prestabilit pentru categoria de plătitori prevăzută la pct. 1 lit. b) din anexa nr. 2 la Legea nr. 1593/2002 cu privire la mărimea, modul și termenele de achitare a primelor de asigurare obligatorie de asistență medicală, diferența se achită de către antreprenorul independent în baza unui aviz de plată emis suplimentar, remis până la data de 25 ianuarie a anului următor celui de gestiune. Achitarea diferenței primelor de asigurare obligatorie de asistență medicală se efectuează până la data de 25 februarie a anului de gestiune în care a fost remis avizul.\n\n(3) Pentru antreprenorii independenți care inițiază sau încetează activitatea pe parcursul perioadei fiscale, calcularea impozitului unic se efectuează prin aplicarea cotei impozitului asupra venitului obținut din activități economice independente în domeniul prestării serviciilor.\n\n \n",
       "quote_matches_source_after_layout_normalization": true,
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
     }
