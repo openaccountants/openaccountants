@@ -1,6 +1,6 @@
 ---
 jurisdiction: "NO"
-version: 0.4
+version: 0.5
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -8,7 +8,6 @@ covered_by:
   XB: no-individual-residence
 partial:
   IT-IND: "no-income-tax covers self-employed (enkeltpersonforetak) income only; employees, pensioners, investment income and wealth tax are not computed, and it is not yet in the deep-tax shape"
-  IT-CORP: "no-corporate-income-tax still carries tax year 2025 figures and is a short summary, not the deep-tax shape"
   SC: "no-social-contributions covers the self-employed rate; employee and employer contributions are in no-employer-payroll, and the skill is not yet in the deep-tax shape"
   VAT: "no-vat-return and norway-mva are duplicates in the older shape with no penalties or cross-border sections"
 ---
@@ -22,12 +21,12 @@ Calendar income year. Authority: Skatteetaten (skatteetaten.no); statutes on lov
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | no-income-tax, no-capital-gains | sourced from the law |
-| IT-CORP, corporate income tax | no-corporate-income-tax (tax year 2025) | sourced from the law |
+| IT-CORP, corporate income tax | no-corporate-income-tax | checked against the law |
 | VAT | no-vat-return, norway-mva (duplicates) | sourced from the law |
 | SC, social contributions | no-social-contributions | sourced from the law |
 | PR, payroll withholding | no-employer-payroll | checked against the law |
 | TP, transfer pricing | no-transfer-pricing | checked against the law |
-| XB, cross-border | no-individual-residence, norway-to-switzerland-wealth-tax-exit (tax year 2025) | checked against the law (no-individual-residence) |
+| XB, cross-border | no-individual-residence, norway-to-switzerland-wealth-tax-exit | checked against the law |
 
 Also in the pack: no-tax-overview and no-company-formation (both tax year 2025).
 
