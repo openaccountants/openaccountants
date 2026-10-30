@@ -36,7 +36,7 @@ Todos os valores foram lidos no Diário da República (texto consolidado ou orig
 - **Média: volume de negócios líquido**: ≤ €50.000.000 _(idem)_
 - **Média: número médio de empregados**: ≤ 250 _(idem)_
 - **Limites até 2025 (exercícios iniciados antes de 1 jan 2026)**: micro €350.000 / €700.000 / 10; pequena €4.000.000 / €8.000.000 / 50; média €20.000.000 / €40.000.000 / 250 _(DL 158/2009, art. 9.º, na redação do DL 98/2015)_
-- **Pequenos grupos (base consolidada)**: ≤ €7.500.000 de balanço / ≤ €15.000.000 de volume de negócios _(DL 158/2009, art. 9.º-B, n.º 1, na redação do DL 126-B/2025)_
+- **Pequenos grupos (base consolidada)**: ≤ €7.500.000 de balanço / ≤ €15.000.000 de volume de negócios / 50 empregados _(DL 158/2009, art. 9.º-B, n.º 1, na redação do DL 126-B/2025; o limite de 50 empregados vem do DL 98/2015 e não mudou)_
 - **Grupos médios**: ≤ €25.000.000 / ≤ €50.000.000 / 250 empregados _(DL 158/2009, art. 9.º-B, n.º 2)_
 - **Teste**: não ultrapassar 2 dos 3 limites; os limites reportam-se ao período anterior; muda-se de categoria a partir do 3.º período quando 2 dos 3 limites são ultrapassados em dois períodos consecutivos _(DL 158/2009, arts. 9.º e 9.º-A)_
 - **Entidades de interesse público**: sempre grandes entidades _(DL 158/2009, art. 9.º, n.º 5)_
@@ -104,7 +104,7 @@ Uma entidade pode sempre aplicar um normativo de nível superior: a microentidad
 | Volume de negócios líquido | ≤ EUR 900 000 | ≤ EUR 10 000 000 | ≤ EUR 50 000 000 | > EUR 50 000 000 |
 | Número médio de empregados | ≤ 10 | ≤ 50 | ≤ 250 | > 250 |
 
-O número de empregados não mudou. Os limites de grupos (art. 9.º-B) passaram a: pequenos grupos ≤ EUR 7 500 000 de balanço e ≤ EUR 15 000 000 de volume de negócios; grupos médios ≤ EUR 25 000 000, ≤ EUR 50 000 000 e 250 empregados, em base consolidada.
+O número de empregados não mudou. Os limites de grupos (art. 9.º-B) passaram a: pequenos grupos ≤ EUR 7 500 000 de balanço, ≤ EUR 15 000 000 de volume de negócios e 50 empregados; grupos médios ≤ EUR 25 000 000, ≤ EUR 50 000 000 e 250 empregados, em base consolidada.
 
 - **Como se aplica o teste** (art. 9.º-A): os limites reportam-se ao período imediatamente anterior. A entidade só deixa a sua categoria a partir do 3.º período, quando em dois períodos consecutivos imediatamente anteriores ultrapassa 2 dos 3 limites. Volta à categoria quando deixa de ultrapassar 2 dos 3 limites nos dois períodos consecutivos imediatamente anteriores.
 - **Exercícios de 2026**: o DL 126-B/2025 aplica-se às demonstrações financeiras de exercícios com início em, ou após, 1 de janeiro de 2026 (art. 3.º). Para as contas de 2026, os novos limites são comparados com os valores dos períodos anteriores, nos termos do art. 9.º-A.
@@ -113,16 +113,16 @@ O número de empregados não mudou. Os limites de grupos (art. 9.º-B) passaram 
 
 ## Secção 4: Demonstrações Financeiras Obrigatórias
 
-**Demonstrações Financeiras Obrigatórias** _(DL 158/2009, art. 11.º)_
+**Demonstrações Financeiras Obrigatórias** _(DL 158/2009, art. 11.º; método direto: NCRF 2, § 14; relatório de gestão: CSC, arts. 65.º e 66.º)_
 
 | Documento | Micro (NC-ME) | Pequena (NCRF-PE) | Média/Grande (NCRF) |
 | --- | --- | --- | --- |
 | Balanço | Obrigatório (pode ser modelo reduzido) | Obrigatório (pode ser modelo reduzido) | Obrigatório |
 | Demonstração dos resultados por naturezas | Obrigatória (pode ser modelo reduzido) | Obrigatória (pode ser modelo reduzido) | Obrigatória (a demonstração por funções é facultativa e adicional) |
 | Demonstração das alterações no capital próprio | Dispensada | Dispensada | Obrigatória |
-| Demonstração dos fluxos de caixa | Dispensada | Dispensada | Obrigatória, pelo método direto |
+| Demonstração dos fluxos de caixa | Dispensada | Dispensada | Obrigatória; os fluxos das atividades operacionais pelo método direto (NCRF 2, § 14) |
 | Anexo | Dispensado se as divulgações do art. 11.º, n.º 4 forem feitas no final do balanço | Obrigatório | Obrigatório |
-| Relatório de gestão | Ver "Not yet confirmed" | Obrigatório (CSC, art. 65.º) | Obrigatório (CSC, art. 65.º) |
+| Relatório de gestão | Dispensado se divulgar no final do balanço a informação sobre quotas ou ações próprias do art. 66.º, n.º 5, al. d) do CSC (CSC, art. 66.º, n.º 6) | Obrigatório (CSC, art. 65.º) | Obrigatório (CSC, art. 65.º) |
 | Certificação legal de contas | Se aplicável (Secção 10) | Se aplicável (Secção 10) | Se aplicável (Secção 10) |
 
 Divulgações no final do balanço de uma microentidade que não apresente anexo (art. 11.º, n.º 4): (a) compromissos financeiros, garantias e ativos e passivos contingentes fora do balanço, incluindo pensões e compromissos com empresas coligadas ou associadas; (b) adiantamentos e créditos concedidos a membros dos órgãos de administração, direção ou supervisão; (c) as informações da alínea d) do n.º 5 do art. 66.º do CSC, quando aplicável.
@@ -325,7 +325,7 @@ As linhas 4 e 8 da coluna "Micro" vêm do art. 11.º, n.º 4 do DL 158/2009. O d
 
 ## Secção 11: Exemplos
 
-**Exemplo 1: microentidade que deixa de ser pequena em 2026.** Uma Lda tem, em 2024 e 2025, balanço de EUR 480 000, volume de negócios de EUR 850 000 e 8 empregados. Com os limites até 2025, ultrapassava 2 dos 3 limites de microentidade (EUR 480 000 > 350 000 e EUR 850 000 > 700 000) e era pequena entidade. Para as contas de 2026, aplicam-se os novos limites: só o balanço ultrapassa o limite (EUR 480 000 > 450 000); o volume de negócios (EUR 850 000 ≤ 900 000) e os empregados (8 ≤ 10) não. Ultrapassa 1 dos 3, logo pode ser microentidade: deve aplicar a NC-ME, salvo opção pela NCRF-PE ou NCRF (art. 9.º-D), e fica dispensada da demonstração das alterações no capital próprio e da demonstração dos fluxos de caixa (art. 11.º, n.º 3). A revisão legal de contas não se aplica: não ultrapassa nenhum dos limites do CSC.
+**Exemplo 1: pequena entidade que passa a microentidade em 2026.** Uma Lda tem, em 2024 e 2025, balanço de EUR 480 000, volume de negócios de EUR 850 000 e 8 empregados. Com os limites até 2025, ultrapassava 2 dos 3 limites de microentidade (EUR 480 000 > 350 000 e EUR 850 000 > 700 000) e era pequena entidade. Para as contas de 2026, aplicam-se os novos limites: só o balanço ultrapassa o limite (EUR 480 000 > 450 000); o volume de negócios (EUR 850 000 ≤ 900 000) e os empregados (8 ≤ 10) não. Ultrapassa 1 dos 3, logo pode ser microentidade: deve aplicar a NC-ME, salvo opção pela NCRF-PE ou NCRF (art. 9.º-D), e fica dispensada da demonstração das alterações no capital próprio e da demonstração dos fluxos de caixa (art. 11.º, n.º 3). A revisão legal de contas não se aplica: não ultrapassa nenhum dos limites do CSC.
 
 **Exemplo 2: Lda que passa a precisar de ROC.** Uma Lda sem conselho fiscal tem, em 2024 e em 2025, balanço de EUR 1 600 000, vendas líquidas e outros proveitos de EUR 2 800 000 e 55 trabalhadores em média. Em cada um dos dois anos ultrapassa 2 dos 3 limites do art. 262.º, n.º 2 (balanço EUR 1 600 000 > 1 500 000 e trabalhadores 55 > 50; as vendas ficam abaixo de EUR 3 000 000). Tem de designar um ROC para a revisão legal. Para efeitos do SNC continua pequena entidade (EUR 1 600 000 ≤ 5 000 000, EUR 2 800 000 ≤ 10 000 000, 55 > 50: ultrapassa só 1 dos 3), o que mostra que os dois testes são independentes.
 
@@ -335,7 +335,8 @@ As linhas 4 e 8 da coluna "Micro" vêm do art. 11.º, n.º 4 do DL 158/2009. O d
 |---|---|---|
 | Decreto-Lei 158/2009 (SNC), consolidated text: arts. 4.º, 9.º, 9.º-A, 9.º-C, 9.º-D, 11.º | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2009-34517175 | 2026-10-30 |
 | Decreto-Lei 126-B/2025, arts. 2.º (new arts. 9.º and 9.º-B limits) and 3.º (applies to periods starting on or after 1 January 2026) | https://files.diariodarepublica.pt/1s/2025/12/23501/0000400005.pdf | 2026-10-30 |
-| Decreto-Lei 98/2015, art. 9.º (limits in force until 2025) | https://files.diariodarepublica.pt/1s/2015/06/10600/0347003493.pdf | 2026-10-30 |
+| Decreto-Lei 98/2015, art. 2.º (art. 9.º limits in force until 2025, art. 9.º-B small-group 50 employees, art. 11.º(1)(d) without "método direto") and art. 5.º (CSC art. 66.º(6), micro entities exempt from the management report) | https://files.diariodarepublica.pt/1s/2015/06/10600/0347003493.pdf | 2026-10-30 |
+| Aviso 8256/2015 (NCRF, DR 2.ª série n.º 146, 29 Jul 2015; copy published by the Comissão de Normalização Contabilística), NCRF 2 § 14: operating cash flows by the direct method | https://www.cnc.min-financas.pt/pdf/SNC/2016/Aviso_8256_2015_29Jul_NCRF_RG.pdf | 2026-10-30 |
 | Código das Sociedades Comerciais, art. 262.º (consolidated, last change 2026-08-26) | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1986-34443975-66858136 | 2026-10-30 |
 | Código das Sociedades Comerciais, arts. 65.º, 70.º, 413.º, 414.º, 446.º, 528.º (consolidated) | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1986-34443975 | 2026-10-30 |
 | Decreto-Lei 8/2007 (IES), consolidated: arts. 2.º and 5.º | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2007-34526275 | 2026-10-30 |
@@ -345,7 +346,7 @@ As linhas 4 e 8 da coluna "Micro" vêm do art. 11.º, n.º 4 do DL 158/2009. O d
 | RGIT art. 26.º, fines doubled for companies | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit26.aspx | 2026-10-30 |
 | Regulamento Emolumentar dos Registos e Notariado (consolidated, searched for the accounts-filing fee) | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2001-34475775 | 2026-10-30 |
 
-Not yet confirmed: the registration fee for the accounts filing (the old version said EUR 80; the RERN text read today does not state it, and a 2007 portaria set EUR 85, so the current amount is open); that the IES must be submitted by a Contabilista Certificado; the consequences of not depositing accounts (no certificates, administrative dissolution); that banks and insurers must use IFRS in their individual accounts (Banco de Portugal and ASF rules not read); that entities preparing consolidated accounts under NCRF and public-interest entities always need a statutory audit; audit-firm rotation rules for public-interest entities; whether micro entities are exempt from the management report (relatório de gestão); the line-by-line content of the official statement models (Portaria 220/2015) and the NCRF, NCRF-PE and NC-ME disclosure detail in Sections 5, 6, 7 and 8; the list of IES annexes (Anexo A, A1 and others); whether the 2027 State Budget changes any of these figures.
+Not yet confirmed: the registration fee for the accounts filing (the old version said EUR 80; the RERN text read today does not state it, and a 2007 portaria set EUR 85, so the current amount is open); that the IES must be submitted by a Contabilista Certificado; the consequences of not depositing accounts (no certificates, administrative dissolution); that banks and insurers must use IFRS in their individual accounts (Banco de Portugal and ASF rules not read); that entities preparing consolidated accounts under NCRF and public-interest entities always need a statutory audit; audit-firm rotation rules for public-interest entities; the line-by-line content of the official statement models (Portaria 220/2015) and the NCRF, NCRF-PE and NC-ME disclosure detail in Sections 5, 6, 7 and 8; the list of IES annexes (Anexo A, A1 and others) and the file format (old version: XML, with PDF annexes for consolidated accounts); whether the 2027 State Budget changes any of these figures.
 
 ## Aviso Legal
 
