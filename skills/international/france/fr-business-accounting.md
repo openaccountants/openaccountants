@@ -1,10 +1,10 @@
 ---
 name: fr-business-accounting
 description: French business accounting, VAT declarations, invoicing, and e-invoicing 2026 reform. Trigger on phrases like "comptabilité française", "expert-comptable", "TVA France", "déclaration CA3", "déclaration CA12", "TVA intracommunautaire", "facturation France", "facture électronique", "e-invoicing France", "Factur-X", "UBL", "CII", "plateforme agréée", "PDP", "PPF", "réforme facturation 2026", "e-reporting", "PEPPOL France", "mentions obligatoires facture", "avoir facture", "numérotation factures", "franchise en base TVA", "autoliquidation TVA", "régime réel simplifié TVA", "régime réel normal TVA", "FEC", "fichier des écritures comptables", "Plan Comptable Général", "PCG", "liasse fiscale", "bilan France", "compte de résultat", "clôture annuelle", "amortissements comptables", "IS France", "impôt sur les sociétés", "taux réduit PME 15%". Covers TVA regimes and rates, e-invoicing/e-reporting reform timeline, mandatory invoice mentions, IS computation, annual closing, and FEC generation.
-version: 1.0
+version: 1.3
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-19
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -15,7 +15,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # France: business accounting, VAT, invoicing and corporation tax
 
-This skill gives the working map for keeping the books of a French business, invoicing, choosing and running the VAT regime, computing corporation tax (impôt sur les sociétés, IS) and closing the year. Figures are for tax year 2026. The corporation tax rates and limits below govern both the financial year closed on 31 December 2025, whose return is filed in May 2026, and a financial year closing during 2026, because the official page states them with no year limit and gives the 2026 filing dates for a year closed on 31 December 2025; the VAT franchise and regime limits are the ones in force during 2026, tested on turnover of 2025 (the basic limit) and of 2026 (the higher limit). The VAT and invoicing rules stated are those in force on 19 October 2026, read on official pages on that date; each page's own date stamp is given where it matters. For the VAT return line by line use `france-vat-return`; for electronic invoicing in depth use `france-einvoice`; for the chart of accounts and depreciation use `france-bookkeeping`; for drawing up and filing the annual accounts use `france-financial-statements`; for the income tax of a sole trader use `fr-income-tax`; for a tax audit under way use `fr-tax-audit`.
+This skill gives the working map for keeping the books of a French business, invoicing, choosing and running the VAT regime, computing corporation tax (impôt sur les sociétés, IS) and closing the year. Figures are for tax year 2026. The corporation tax rates and limits below govern both the financial year closed on 31 December 2025, whose return is filed in May 2026, and a financial year closing during 2026, because the official page states them with no year limit and gives the 2026 filing dates for a year closed on 31 December 2025; the VAT franchise and regime limits are the ones in force during 2026, tested on turnover of 2025 (the basic limit) and of 2026 (the higher limit). The VAT and invoicing rules stated are those in force on 19 October 2026, read on official pages on that date; each page's own date stamp is given where it matters. For the VAT return line by line use `france-vat-return`; for electronic invoicing in depth use `france-einvoice`; for the chart of accounts and depreciation use `france-bookkeeping`; for drawing up and filing the annual accounts use `france-financial-statements`; for the income tax of a sole trader use `fr-income-tax`; for a tax audit under way use `fr-tax-audit`. Selected source conditions, invoice particulars, tax gates and approval rules were checked on 29 October 2026; earlier source and review dates above remain preserved.
+
+> **Based on work by [Romain Simon (@romainsimon)](https://github.com/romainsimon/paperasse)**, licensed under MIT. Adapted for the OpenAccountants format.
 
 ## Section 1: Quick reference
 
@@ -50,9 +52,9 @@ This skill gives the working map for keeping the books of a French business, inv
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/1449-PGP.html |
-| Particular rate in mainland France: medicines meeting the conditions of CGI art. 281 octies, and blood products | 2.1% | "Produits imposables au taux particulier de 2,10 %" |
+| Particular rate in mainland France: medicines meeting CGI art. 281 octies; also labile blood products for human research and in-vitro diagnostic medical devices when prepared from blood or its components | 2.1% | CGI art. 281 octies. Direct-therapeutic whole blood and its derivatives remain subject to the stated CGI art. 261, 4-2° exemption; establish the actual product/use, not a generic blood-product label |
 
-Which supply takes which rate is not settled by these two pages, which deal with certain services and with medicines. As a working summary kept from the earlier version of this skill, to be confirmed against `france-vat-return` before use: the intermediate rate covers restaurant meals, passenger transport and most work on dwellings finished more than two years ago; the reduced rate covers most food, books and energy-efficiency work on dwellings. The earlier version also put press publications at the particular rate; no page read here says so, so check `france-vat-return` before applying it. The earlier version also put "live performances" at the particular rate; the page above does not say so, so do not apply it to a show without checking. Rates in the overseas departments are different and are in `france-vat-return`.
+The rates above are headline rates, not automatic product classifications. The checked companion `france-vat-return` gives the actual conditions for restaurant food and alcohol, passenger transport, qualifying renovation and energy work on dwellings, food exclusions, books, qualifying press and limited first performances. A generic label such as "live performance" does not establish the rate. Overseas rates and specialist eligibility remain in that companion.
 
 ### Franchise en base (no VAT charged, no VAT deducted)
 
@@ -71,11 +73,11 @@ For 2026 the French franchise thresholds are unchanged. The single franchise thr
 | The same activities: current year at or below | EUR 55,000 | "est inférieur ou égal à 55 000 € (seuil majoré de la franchise en base de TVA)" |
 | Lawyers' and authors' other activities: previous year at or below | EUR 35,000 | "est inférieur ou égal à 35 000 € (seuil de la franchise en base de TVA)" |
 | Lawyers' and authors' other activities: current year at or below | EUR 38,500 | "est inférieur ou égal à 38 500 € (seuil majoré" |
-| A French business loses the franchise for its intra-EU trade when its annual turnover inside the EU (not in France) is more than | EUR 100,000 | "dépasse 100 000 €" |
+| EU-wide franchise scheme | EUR 100,000 | For an EU business claiming another Member State’s franchise, test EU-wide turnover in BOTH the preceding and current year, the host-state conditions and the home-state notification/identification process. This does not by itself remove the French franchise from domestic operations. |
 
-How the two limits work, per the same page: a business above the basic limit of the previous year but at or below the higher limit of the current year becomes liable to VAT from 1 January of the following year ("elle est soumise à la TVA dès le 1 er janvier de l’année suivante"); a business that passes the higher limit during the year is liable from the first day of the overrun ("dès le 1 er jour de dépassement"). The higher limit is a cliff for the current year, not a margin. A business in the franchise writes on its invoices "TVA non applicable, art. 293 B du code général des impôts" (Section 4).
+Test the previous calendar year against the basic ceiling: exceeding it removes the ordinary domestic franchise from 1 January of the following year. Separately, exceeding the higher ceiling during the current year removes it from the day of that overrun (CGI art.293 B, II). Retain the dated turnover and actual transaction. The invoice wording is in Section4; foreign purchases can create VAT liabilities even where the business’s own domestic sales remain franchised.
 
-In the first year of activity the turnover is restated to a full year before testing: 'son CA doit être ajusté et calculé au prorata de son temps d'activité (entre la date de démarrage et le dernier jour de l'année) afin d'obtenir un CA sur une année complète'.
+For a new activity, the Service Public annualisation wording expressly tests the following year. CGI293 D, III and the retained DGFiP first-year guidance give conflicting startup-ceiling treatments; `france-vat-return` preserves both sourced readings and conditional calculations. This Guide does not settle that conflict or infer an exact VAT start date from a year-end total.
 
 ### Simplified regime (régime réel simplifié)
 
@@ -90,11 +92,11 @@ In the first year of activity the turnover is restated to a full year before tes
 | ... and | EUR 286,000 | "37 500 € et 286 000 €" |
 | Trade, catering and accommodation: turnover of the current year (N) must not pass | EUR 1,040,000 | "1 040 000 €" |
 | Other services: turnover of N must not pass | EUR 323,000 | "323 000 €" |
-| VAT due for N-1 must be below | EUR 15,000 | "doit être inférieur à 15 000 €" |
+| Previous-year VAT liability: the statutory monthly-return trigger is strictly above | EUR 15,000 | CGI287-3bis; equality alone does not trigger this rule. Test all the other regime conditions separately. |
 
-The page says these turnover limits "sont valables pour l’année 2026 (année N)". Both conditions apply together: turnover inside the band AND VAT due below the VAT limit. The live version of this skill gave older and lower turnover limits for this regime; they are replaced by the table above. The impots.gouv.fr page "Les régimes d'imposition à la TVA" may still print the band it labels as applying from 2025: `france-vat-return` sets out that difference.
+These are the2026 turnover figures. Apply them together with the actual reporting-regime conditions and options. CGI287-3bis requires monthly returns where the previous-year VAT is strictly above EUR15,000; the administrative overview’s “below” wording does not decide equality. CGI287-3ter separately requires monthly returns for the specified intra-EU acquisitions, imports and suspensive-regime exits. The retained older and current indexed turnover texts, activity exceptions and options are explained in `france-vat-return`.
 
-Overrun, per the same page: a business that passes the basic band of year N-1 or the VAT-due limit moves to the régime réel normal from 1 January of the year after the overrun; a business that passes one of the higher ceilings in year N moves to the normal regime retroactively from 1 January of year N, and must file a CA3 for the month (or quarter) of the overrun in the following month.
+Overrun requires the actual statutory/administrative sequence, not just a comparison with the table. The administrative page prints a current-year higher-ceiling move retroactive to1January, while the current implementing text and calendar-year recapitulatory procedure are preserved in `france-vat-return`. Use that companion’s qualified procedure; noncalendar reconciliation remains expressly unresolved there. Do not assume that every turnover or VAT trigger has the same effective date.
 
 ### Returns and payment
 
@@ -104,11 +106,11 @@ Overrun, per the same page: a business that passes the basic band of year N-1 or
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 |
 | Régime réel normal: the CA3 is filed every three months instead of monthly where the VAT payable each year is below | EUR 4,000 | "le montant de la TVA exigible chaque année est inférieur à 4 000 €" |
-| Régime réel simplifié, year ending 31 December: July instalment, share of the VAT due for the previous year | 55% | "l'entreprise doit verser 55 % de la taxe due l'année précédente" |
-| Régime réel simplifié, year ending 31 December: December instalment, share of the VAT due for the previous year | 40% | "l'entreprise doit verser 40 % de la taxe due l'année précédente" |
-| A simplified-regime business whose VAT for the previous year was below this amount pays no instalments | EUR 1,000 | "un montant de TVA inférieur à 1 000 € l'année précédente est dispensée" |
+| Régime réel simplifié, calendar-year July instalment, calculated on the previous-year VAT before VAT on fixed assets | 55% | CGI287-3; apply the actual base, credits and adjustment conditions. |
+| Régime réel simplifié, calendar-year December instalment, on the same statutory base | 40% | CGI287-3; not40% of every amount described as last year’s balance due. |
+| No instalments where the previous-year VAT on that statutory base is below | EUR 1,000 | CGI287-3; fixed-asset VAT is excluded from that comparison. |
 
-Under the simplified regime a business whose financial year ends on 31 December files the annual return CA12 at the latest on the second working day after 1 May for the previous calendar year, and pays the balance with it. A business whose year does not end on 31 December files the CA12 within 3 months of its close, and its instalment months follow the table on the same page. The live version of this skill said the simplified regime pays quarterly advances: that is wrong, it pays two instalments, in July and December, as the table shows. Under the normal regime the CA3 is filed and paid monthly, or quarterly below the limit in the table. The exact day of the month depends on the department, the legal form and the first letters of the name or of the SIREN number; the DGFiP shows it only through a selector (https://www.impots.gouv.fr/le-regime-reel-normal-dates-limites-de-transmission-des-ca3) and in the espace professionnel. Do not state a single day. The page gives the window: 'entre le 15 et le 24 du mois suivant le fait générateur'.
+Under the simplified regime, the calendar-year annual CA12 is due on the second working day after1May and settles the balance. A noncalendar close has a three-month administrative filing rule; the remaining current cessation/recapitulation conflict is preserved in `france-vat-return`, so do not treat the old off-calendar instalment illustration as a fully reconciled method. Calendar-year instalments are July and December. Normal-regime CA3 returns and payments are monthly, or quarterly where annual VAT is strictly below EUR4,000. The account-specific deadline depends on the actual selector and professional account (https://www.impots.gouv.fr/le-regime-reel-normal-dates-limites-de-transmission-des-ca3); the administrative window is15–24of the following month, not one universal filing day.
 
 ### Intra-EU and international operations
 
@@ -116,8 +118,8 @@ Under the simplified regime a business whose financial year ends on 31 December 
 
 | Scenario | Treatment |
 | --- | --- |
-| Service bought from a supplier established in another EU state | The French business customer self-assesses the VAT (autoliquidation) on its own return; see `france-vat-return` for the CA3 lines |
-| Service sold to a business customer established in another EU state | Invoice without French VAT; the customer accounts for the VAT; the invoice carries the mention "Auto-liquidation" (Section 4) |
+| Ordinary service bought from a supplier established in another EU state | First establish the place under the general B2B rule and any special-service exception, the receiving establishment and whether the supplier has a participating French establishment. Where the French customer owes the tax, it self-assesses it; a domestic-sales franchise does not by itself remove that duty. Use `france-vat-return` for the exact conditions and CA3 lines. |
+| Ordinary service sold to a business customer established in another EU state | Apply the general B2B place rule and special-service exceptions first. Where the customer is liable under the destination rule, invoice without French VAT with “Auto-liquidation” and test the DES reporting conditions. A foreign address alone does not establish the treatment. |
 | Service sold to a consumer in another EU state | Place of supply depends on the type of service; electronic, telecom and broadcasting services and distance sales of goods follow the EU distance-selling rules and the OSS. Refer to `france-vat-return` and the EU rules; this skill does not set the threshold |
 | Goods imported from outside the EU | Import VAT self-assessment, see below |
 
@@ -128,7 +130,7 @@ Under the simplified regime a business whose financial year ends on 31 December 
 | Source | https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/210_declarer_payer/tva_a_limportation_-_notice.pdf |
 | Who | Every business identified for VAT in France: "désormais obligatoire pour tout redevable identifié à la TVA en France" |
 | Since | 1 January 2022, when the management and collection of import VAT moved to the DGFiP |
-| How | Import VAT is collected and deducted on the VAT return itself (line A4 of the CA3 for goods other than petroleum products), no longer with the customs declaration; no prior authorisation is needed. The online return is pre-filled with the import bases each month |
+| How | Import VAT is declared on the VAT return (A4 for non-petroleum imports). The return is prefilled with customs bases; check the actual import data. Input deduction is a separate test of eligibility and evidence, not automatic simply because output import VAT is declared. |
 
 ## Section 3: Electronic invoicing reform (réforme de la facturation électronique)
 
@@ -139,11 +141,11 @@ Under the simplified regime a business whose financial year ends on 31 December 
 | Date | Obligation | Who |
 | --- | --- | --- |
 | Source | all rows below | https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation |
-| 1 September 2026 | Receive invoices in electronic form, where the supplier is obliged to issue them that way | All businesses, whatever their size: "toutes les entreprises quelle que soit leur taille" |
+| 1 September2026 | Be able to receive in-scope electronic invoices through a plateforme agréée | French VAT taxable persons, including franchise businesses and taxable persons making only exempt sales; a non-taxable person is not included merely because it is an organisation. |
 | 1 September 2026 | Issue electronic invoices and transmit transaction and payment data (e-reporting) | Large companies (grandes entreprises) and intermediate-size companies (ETI) |
-| 1 September 2027 | Issue electronic invoices and transmit transaction and payment data | Small and medium companies (PME) and micro-enterprises |
+| 1 September2027 | Issue in-scope electronic invoices and transmit the specified transaction/payment data | PME and micro-enterprises within the statutory extension; VAT-group members are excluded from that extension. Use the actual legal-unit size reference. |
 
-The page was modified on 16 January 2026. A business that issues no invoices is still concerned: it must be able to receive electronic invoices from 1 September 2026, and businesses in the franchise en base and micro-entrepreneurs are inside the reform (https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique).
+The original schedule page was modified on16January2026. A taxable person that issues no invoices must still be capable of receiving the electronic invoices addressed to it; franchise businesses and micro-entrepreneurs remain taxable persons (https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique). The size reference is the legal unit identified by SIREN, assessed at1January2025 using the last earlier closed year or, if none, the first later close. This is separate from the current annual-accounts size test.
 
 ### Key concepts
 
@@ -153,11 +155,11 @@ The page was modified on 16 January 2026. A business that issues no invoices is 
 | --- | --- |
 | Source | https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique |
 | Plateforme agréée (PA) | A private company registered by the State as a partner of the administration. Invoices between French businesses must pass through one: "par l’intermédiaire d’un tiers , appelé plateforme agréée". Every business chooses one to issue and receive its invoices and to send its data |
-| E-invoicing | Covers purchases and sales of goods and services between businesses established in France and liable to French VAT, franchise en base included. The data goes to the administration from the electronic invoice, through the platform |
-| E-reporting of transactions | Covers sales and services to persons who are not liable to VAT, such as individuals, and transactions with operators established abroad (exports, intra-EU acquisitions and supplies) |
+| E-invoicing | The actual domestic supplies and advances named in CGI289bis between taxable persons established in France, through an approved platform. Apply the substantive scope and exemptions; being a French business does not make every transaction reportable. |
+| E-reporting of transactions | The specified consumer and international operations within CGI290 and the current scope rules, excluding the stated exemptions. Use `france-einvoice` for transaction-level eligibility; this is not an assertion that every foreign transaction is reportable. |
 | E-reporting of payments | Covers operations whose VAT falls due on receipt of payment, for example services where the business has not opted to pay VAT on the debits and the operation is not reverse-charged |
 
-The live version of this skill listed the accepted formats, a European network as a delivery channel, and a role for the public invoicing portal. Those are not printed on the pages read here; take them, the directory and the platform list from `france-einvoice`.
+The current DGFiP overview expressly names UBL, CII and a mixed format containing structured data and an image. A scanned invoice, ordinary PDF or email alone does not meet that electronic-invoice description. The detailed Factur-X profile, PEPPOL delivery route, directory and public-portal functions remain with `france-einvoice`; they are not inferred merely from those format names.
 
 ### New mandatory invoice mentions
 
@@ -191,7 +193,7 @@ The page below (Vérifié le 11 août 2026) lists these mentions for every invoi
 | Seller's identity | | Company: name, SIREN, registered office address, legal form and amount of share capital. Sole trader: name preceded or followed by "Entrepreneur individuel" or "EI", address, SIREN. A company being registered invoices in its own name with "Siret en cours d'attribution" |
 | Buyer's identity | | Business: its name. Individual: full name and address, unless the individual objects |
 | Purchase order number | | Where the buyer issued one first |
-| VAT identification number of the seller, and of the business client liable to VAT, except on invoices whose total excluding VAT is at or below | EUR 150 | "inférieur ou égal à 150 €" |
+| Small-invoice exception | EUR150 excluding VAT, inclusive | CGI annexeII242nonies A, II permits omission of I2°(supplier VAT identification) and I12°(exemption/legal-reference wording). It does not generally waive customer VAT identification, reverse-charge wording or another independently imposed particular. |
 | Description, quantity, unit price excluding VAT, VAT rate or the exemption relied on | | One line for each product and service |
 | Totals excluding VAT and including VAT | | With any price supplement, and any discount earned at the date of sale |
 | Payment date, and the early-payment discount terms | | With no discount, write "Escompte pour paiement anticipé : néant" |
@@ -210,11 +212,11 @@ The page below (Vérifié le 11 août 2026) lists these mentions for every invoi
 
 ### Credit notes (avoirs)
 
-- **Credit note requirements**: a credit note refers to the invoice it corrects by its number and states why the amount is reduced. This is kept from the earlier version of this skill; the pages read here do not set it out, so check the rule in CGI annexe II art. 242 nonies A before relying on its exact wording.
+- **Credit notes:** for a taxable cancellation or price reduction where the supplier seeks VAT adjustment, BOI-TVA-DED-40-10-20, II-A80 requires reference to the original invoice and the reduction’s net/VAT amounts, with the stated names, addresses and revised totals. For a year-end rebate that cannot identify one invoice, the source permits a reference to the relevant invoices or contract and their period. A “net of tax” rebate has different express conditions. Record the commercial reason as a working control; this Guide does not claim that every credit note has one universal statutory “reason” field. See https://bofip.impots.gouv.fr/bofip/1100-PGP.html and `france-vat-return`.
 
 ### Numbering
 
-- **Invoice numbering**: one unique number per invoice, in a chronological and continuous sequence (page above). A yearly series with a prefix, for example F-2026-001, F-2026-002, is a common way to keep it continuous; the page does not prescribe a format.
+- **Invoice numbering:** use a unique chronological and continuous sequence. F-2026-001 and F-2026-002 are internal format illustrations, not a prescribed statutory format or evidence of common practice. Test any separate series against its actual justification.
 
 ### Retention
 
@@ -224,7 +226,7 @@ The page below (Vérifié le 11 août 2026) lists these mentions for every invoi
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F37169 |
 | A commercial company keeps its accounting documents and supporting documents, invoices included, for at least this period from the close of the financial year | 10 years | "au moins 10 ans à partir de la clôture de l'exercice comptable" |
-| Fine for a company that has not kept its documents | EUR 10,000 | "s'expose à une amende de 10 000 €" |
+| CGI1734: failure to keep or premature destruction of documents within the administration’s communication right, or the stated refusal/obstruction of that right | EUR10,000 | The statutory communication-right conditions apply; this is not an automatic penalty for every commercial-document retention defect. |
 
 **Tax retention period**
 
@@ -248,14 +250,14 @@ The two periods run side by side: keep for the longer one. The earlier version c
 | Reduced rate, on the first slice of profit only | 15% | "un taux réduit fixé à 15 %" |
 | The slice of profit the reduced rate covers; the profit above it is taxed at the standard rate | EUR 42,500 | "la part des bénéfices allant jusqu'à 42 500 €" |
 | Reduced rate, first condition: turnover of the financial year, restated to 12 months where needed, at or below | EUR 10,000,000 | "Chiffre d'affaires inférieur ou égal à 10 000 000 €" |
-| Reduced rate, second condition: share capital fully paid up AND held to at least this share by individuals, or by a company itself held to at least this share by individuals | 75% | "détenu pour au moins 75 % par des personnes physiques" |
+| Reduced rate, capital condition | At least75% | The capital must be fully paid and held continuously to at least75% by individuals, or by a company satisfying the same conditions whose capital is held at least75% by individuals. Apply the statutory fund exceptions and group-turnover rule where relevant. |
 | No quarterly instalments where the corporation tax is below | EUR 3,000 | "Le montant de l'IS est inférieur à 3 000 €" |
 | Surcharge for filing the results return other than electronically, share of the tax | 0.2% | "une majoration de 0,2 % du montant de l'impôt" |
 | Minimum of that surcharge | EUR 60 | "ne peut pas être inférieure à 60 €" |
 
 Both conditions of the reduced rate must be met (AND). The page, checked on 17 February 2026, says the shares the company holds in itself are left out when testing the ownership condition. A company that fails either condition pays the standard rate on all its profit. Newly created companies, and companies in their first period within corporation tax, make no instalments either.
 
-The live version of this skill said that in a short financial year the reduced-rate slice is prorated by days. The page above does not say so; it restates only the turnover to 12 months. Check BOI-IS-LIQ-20-10 before prorating the slice for a short or long year.
+CGI219I-b states the EUR42,500 reduced-rate slice per twelve-month period, and separately restates turnover to twelve months. Keep the actual period length; a full EUR42,500 slice is not automatically available for every short period. The exact day/month convention for a nonstandard close is not computed here; use `fr-corporate-tax` within its stated limits.
 
 ### Social contribution on corporation tax
 
@@ -265,14 +267,14 @@ The live version of this skill said that in a short financial year the reduced-r
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/3492-PGP.html |
 | Rate, applied to the corporation tax (not to the profit) after the abatement | 3.3% | "x 3,3 %" |
-| Annual abatement deducted from the corporation tax before the rate | EUR 763,000 | "diminué d’un abattement annuel de 763 000 €" |
+| Abatement deducted from the relevant corporation-tax base before applying the contribution | EUR763,000 per twelve months | CGI235ter ZC adjusts this amount proportionately for a shorter or longer period. |
 
 **Who is exempt**
 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/3491-PGP.html |
-| Companies whose turnover for the period, restated to 12 months, is below this amount, AND which meet the capital conditions | EUR 7,630,000 | "chiffre d’affaires de moins de 7 630 000 €" |
+| Exemption | Turnover strictly below EUR7,630,000 | Restate turnover to twelve months; for a tax-group parent aggregate member turnover. Company capital must be fully paid and held continuously to at least75% under the stated direct/intermediary and fund conditions. |
 
 A company whose corporation tax is not above the abatement owes no contribution, because the rate applies only to the tax left after the abatement.
 
@@ -287,16 +289,17 @@ A company whose corporation tax is not above the abatement owes no contribution,
 | Charge | Rule | Note |
 | --- | --- | --- |
 | Source | all rows below | https://entreprendre.service-public.gouv.fr/vosdroits/F31973 |
-| Luxury spending (hunting, yachts and similar) | Not deductible | "la chasse de loisirs, la pêche non professionnelle, l'achat ou la location de résidence de plaisance, de yacht et de bateau de plaisance" |
+| Luxury/private leisure spending | Not deductible within the statutory scope | The source separately preserves genuinely professional hunting/fishing activities; do not extend the private-leisure exclusion to those professional operations without checking their conditions. |
 | Personal spending of a shareholder or director paid by the company | Not deductible; risk of "acte anormal de gestion" | "Les dépenses personnelles de l'exploitant individuel, du dirigeant ou d'un associé ne sont pas déductibles" |
 | Corporation tax itself | Not deductible (CGI art. 213, above) | See the art. 213 line above (https://bofip.impots.gouv.fr/bofip/2102-PGP.html) |
 | Directors' remuneration in a company under corporation tax | Deductible only where it corresponds to actual work and is not excessive | "déductibles lorsqu'elles correspondent à un travail effectif et ne sont pas excessives" |
+| Statutory fines and penalties | Not deductible under CGI39-2 | This covers sanctions for breaching legal obligations; it is not a claim that every contractual compensation payment is a statutory fine. https://bofip.impots.gouv.fr/bofip/1683-PGP.html |
 
 Rows are as printed on the page above (Vérifié le 02 juin 2023) and on BOI-BIC-CHG-40-30 for corporation tax.
 
 ### General conditions for deducting a charge
 
-- **Conditions for deducting a charge**: per BOFiP BOI-BIC-CHG-10 (https://bofip.impots.gouv.fr/bofip/3848-PGP.html), a charge must, as a rule, meet all of these: be incurred in the direct interest of the business or belong to its normal management; correspond to an actual charge and be backed by sufficient evidence ("correspondre à une charge effective et être appuyées de justifications suffisantes"); and belong to the charges of the financial year in which it was incurred. It must also not be excluded by a specific provision. The earlier version listed a "decrease of net assets" condition, which is not on that page.
+- **Conditions for deducting a charge:** the general conditions in BOI-BIC-CHG-10 (https://bofip.impots.gouv.fr/bofip/3848-PGP.html) require business interest/normal management, an actual adequately supported charge, the correct financial year and no specific exclusion. The separate decrease-in-net-assets/asset-recognition condition is also stated in the official deduction guidance, rather than discarded because it is absent from one summary page. An asset acquisition is not made immediately deductible merely by calling it an expense.
 
 ### Small equipment taken to expense
 
@@ -307,7 +310,7 @@ Rows are as printed on the page above (Vérifié le 02 juin 2023) and on BOI-BIC
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/2109-PGP.html |
 | Unit value excluding VAT up to which materials and tooling may be deducted at once instead of being capitalised | EUR 500 | "d'une valeur unitaire hors taxes n'excédant pas 500 €" |
 
-This is a tax tolerance, not a general capitalisation threshold. It covers materials and tooling of accounts 2154 and 2155, and the other categories BOFiP names on that page; an item above the limit, or outside those categories, is capitalised if it is an asset. The business may choose to capitalise even below the limit.
+This is an optional tax tolerance, not a universal EUR500 capitalisation rule. The source covers its named tools/equipment categories, excludes transport equipment, aggregates connected components and gives specific current-renewal/initial-or-complete furniture conditions; software is a separate named category. Apply those actual conditions before expensing. An otherwise qualifying item can still be capitalised.
 
 ## Section 6: Annual closing (clôture annuelle), summary
 
@@ -322,7 +325,7 @@ This is a tax tolerance, not a general capitalisation threshold. It covers mater
 7. **Financial statements**: balance sheet (bilan), income statement (compte de résultat), trial balance; notes where required (`france-financial-statements`).
 8. **The accounting entries file (FEC)** for the year, kept ready for an audit (below).
 9. **Liasse fiscale**: tables 2033-A to 2033-G under the simplified regime, tables 2050 to 2059 under the normal regime (https://entreprendre.service-public.gouv.fr/vosdroits/F23575).
-10. **Results return 2065** for corporation tax, or 2031 (2035 for a liberal activity) where the company is taxed under income tax (same page).
+10. **Results return2065** for corporation tax. Income-tax BIC/BNC filing uses the applicable2031/2035 route in `fr-income-tax`; the corporation-tax page alone is not a complete method for every income-tax entity.
 11. **Approval minutes and the filing of the accounts**, with a confidentiality declaration where the company may and wants to use one (https://entreprendre.service-public.gouv.fr/vosdroits/F31214).
 12. **Produce the final documents** (PDFs for signature and filing).
 
@@ -330,7 +333,7 @@ This is a tax tolerance, not a general capitalisation threshold. It covers mater
 
 - **When it is due**: a business that keeps its accounts on a computer meets its duty to present its books by handing over "au début des opérations de contrôle, une copie des fichiers des écritures comptables" (BOI-CF-IOR-60-40-10, https://bofip.impots.gouv.fr/bofip/9026-PGP.html). It is handed over at the start of an audit, not filed each year. It covers corporation tax payers and income tax payers taxed on industrial and commercial, non-commercial or agricultural profits under a real regime.
 - **Format**: either a flat sequential file meeting the criteria of art. A. 47 A-1 of the LPF, or an XML file matching the published XSD; the fields and their order are set out in BOI-CF-IOR-60-40-20 (https://bofip.impots.gouv.fr/bofip/9028-PGP.html). The earlier version stated a fixed column count and a pipe separator; those are not printed on the pages read here, so take the field list and the separator from the BOFiP page and the XSD (https://www.impots.gouv.fr/fichiers-standards-des-ecritures-comptables), and see `france-bookkeeping` for the field list.
-- **Conformity checks before release**: total debits equal total credits; each entry number is balanced; entry numbers run without a gap; dates fall inside the financial year; the document reference is filled for every entry; account numbers follow the PCG roots. These are working checks kept from the earlier version.
+- **Conformity checks before release:** use the chronological, increasing, unbroken entry sequence and line-by-line audit trail required by the actual FEC specification. As additional working controls, reconcile global debits/credits, each entry’s balance, dates, document references and PCG account roots. The original generic “no negative amounts” claim is not adopted as a universal FEC prohibition; apply the actual debit/credit or amount/direction format and its specification in `france-bookkeeping`.
 
 **Penalty for a file not in the required form (CGI art. 1729 D)**
 
@@ -340,7 +343,7 @@ This is a tax tolerance, not a general capitalisation threshold. It covers mater
 | Fine where the accounts are not presented in the required form | EUR 5,000 | "d’une amende égale à 5 000 €" |
 | Or, where the tax is adjusted and the amount is higher, an increase of the tax charged | 10% | "majoration de 10 % des droits" |
 
-The earlier version said a non-compliant file makes the accounts unreliable and shifts the burden of proof under art. L. 192 LPF; that is not on the pages read here. The sanction on the page is the one in the table.
+The FEC sanction above applies under its own statutory conditions. The older automatic chain from a format defect to “unreliable accounts” and a general LPF L192 burden-of-proof reversal is not established here and is not adopted. BOI9026 separately discusses failure-of-control consequences; a format check alone does not prove that procedure applies.
 
 ## Section 7: Shareholder current account (compte courant d'associé, account 455)
 
@@ -353,18 +356,18 @@ High fiscal risk zone, especially for a SASU or an EURL.
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/5505-PGP.html |
 | Highest deductible rate for a 12-month financial year closed between 30 June 2026 and 29 September 2026 | 4.33% | "Entre le 30 juin 2026 et le 30 juillet 2026 4,33 %" |
 
-The ceiling is the yearly average of the effective average rates charged by credit institutions on variable-rate loans to businesses with an initial term of more than two years, published each quarter in the Journal officiel. Interest is deductible only within the limit of that rate ("sont déductibles dans la limite du taux"), tested on the gross rate and the gross amount of the interest. The page's worked examples use older rates; use the table above, not the examples. A year closed on 31 December 2026 needs a rate not yet printed on that page: take it from the page once it is updated. Before any interest is deducted at all, the share capital must be fully paid up: BOI-BIC-CHG-50-50-10 (https://bofip.impots.gouv.fr/bofip/2113-PGP.html) says the condition on paid-up capital of CGI art. 39-1-3° al. 2 'est en principe opposable à l'ensemble des sociétés'. The same page sets which advances the rate limit covers; the detail of the paid-up-capital condition is in BOI-BIC-CHG-50-50-20, not read here.
+The reference is the annual average bank rate for variable-rate business loans with an initial term exceeding two years, not the ECB policy rate. The retained5August2026 BOFiP table prints4.33% for the three stated twelve-month closing-date bands30June–29September2026. It does not establish a31December2026 ceiling. The fully paid capital condition and its specified capital-increase/cooperative exceptions are in BOI-BIC-CHG-50-50-20 (https://bofip.impots.gouv.fr/bofip/2114-PGP.html); the scope overview remains https://bofip.impots.gouv.fr/bofip/2113-PGP.html. Other statutory interest-limitation provisions are separate tests in `fr-corporate-tax`; this dated table is not a complete interest-deduction method for every loan.
 
 **Other current-account checks (working checks)**
 
 | Check | Rule |
 | --- | --- |
-| Expenses before incorporation | Check that the company has formally taken over the acts done for it before registration; the conditions are company law and are not on the pages read here |
-| Home office | A professional share by floor area, with a plan; personal utilities and mortgage capital are not charges of the company |
+| Expenses before incorporation | Identify the acts and proposed company-law takeover. The precise adoption procedure and the old six-month assertion are not confirmed by this Guide; do not assume them from an accounting entry. |
+| Home office | Establish the actual professional use and evidence. The precise floor-area/plan requirement and company reimbursement treatment are not confirmed here; no automatic deduction for a director’s household or mortgage payment is established. |
 | Mixed-use expenses | Only the professional share is a charge |
-| Currency conversion | Record the rate used and where it came from, and use one method consistently |
+| Currency conversion | Record the actual rate, date and source. VAT has its own tax-point/ECB rule; annual-account foreign-currency balances have the separate PCG rules. The old universal per-transaction/monthly-average permission is not established here. |
 
-These checks are kept from the earlier version and are not set out on the pages read here. The earlier version gave a time limit for taking over pre-incorporation acts and a rule on accepted exchange rates; neither is on an allowed page, so both are removed.
+These are working intake checks. They do not supply the unconfirmed company-law/home-office methods. Do not replace the statutory loan reference rate with an ECB rate, or apply one universal currency-conversion method to both VAT and annual accounts.
 
 ## Section 8: Fiscal calendar (key deadlines)
 
@@ -375,11 +378,11 @@ These checks are kept from the earlier version and are not set out on the pages 
 | Each month, on the day shown in the espace professionnel | CA3 under the régime réel normal | https://www.impots.gouv.fr/le-regime-reel-normal-dates-limites-de-transmission-des-ca3 |
 | Each quarter, same rule | CA3 under the régime réel normal where the yearly VAT is below the limit in Section 2 | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 |
 | July and December | Simplified-regime VAT instalments (year ending 31 December) | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 |
-| Second working day after 1 May | CA12 annual VAT return under the simplified regime | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 |
+| Second working day after1May for a calendar-year close; qualified noncalendar route in `france-vat-return` | Annual simplified-regime VAT return | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 |
 | 15 March, 15 June, 15 September, 15 December | Corporation tax instalments, form 2571; which date is the first depends on the closing date | https://entreprendre.service-public.gouv.fr/vosdroits/F23575 |
 | Within 3 months of the close; for a year closed on 31 December, the second working day after 1 May | Results return 2065 with the liasse fiscale; the administration allows a further 15 calendar days for electronic filing, which gave 20 May 2026 for a year closed on 31 December 2025 | https://entreprendre.service-public.gouv.fr/vosdroits/F23575 |
 | 15th day of the 4th month after the close; 15 May for a year closed on 31 December | Corporation tax balance, form 2572 | https://entreprendre.service-public.gouv.fr/vosdroits/F23575 |
-| Within 6 months of the close for an SA and a SARL or EURL; for an SAS or SASU, within the period the partners set | Approval of the accounts | https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Within6months for SA, SARL/EURL and SASU; a multi-shareholder SAS follows its actual statutory period | Approval of accounts; apply the precise deposit-as-approval conditions for qualifying sole-member entities | https://entreprendre.service-public.gouv.fr/vosdroits/F31214; the controlling SASU/EURL statutes and contrary overview are preserved in `france-financial-statements` |
 | Within 1 month of approval, or within 2 months where filed electronically | Filing of the accounts with the registry | https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
 
 The earlier version gave the results return as "3 months plus a 1-month extension". The page gives 3 months, or the second working day after 1 May for a 31 December close, plus 15 calendar days for electronic filing.
@@ -390,14 +393,14 @@ The earlier version gave the results return as "3 months plus a 1-month extensio
 
 | Ambiguity | Default |
 | --- | --- |
-| VAT regime unknown | Do not assume the franchise: test turnover of 2025 and of 2026 against the franchise table in Section 2, and treat the business as liable to VAT until both are shown to be within it |
+| VAT regime unknown | Obtain the required facts and establish franchise, taxable purchases, options and effective dates before deciding the invoice treatment. Do not turn missing evidence into a legal finding that the business owes VAT. |
 | Deductibility of a charge doubtful | Not deductible |
 | Professional share of a mixed-use expense unclear | Treat it as wholly private and flag it for the accountant |
 | Corporation tax rate unclear | The standard rate on all profit; the reduced rate only once both conditions in Section 5 are evidenced |
 | Asset or expense | Capitalise, unless the item falls inside the small-equipment tolerance in Section 5 |
 | Electronic invoicing start date unclear | Prepare to receive from 1 September 2026; for issuing, confirm the company's size class in `france-einvoice` |
 
-The earlier default "franchise en base if turnover permits" is reversed: crossing the higher limit makes VAT due from the day of the overrun, so assuming the franchise risks uncollected VAT.
+These are internal evidence controls, not substitute tax elections or legal presumptions. The franchise and overrun rules apply to the actual facts; missing records alone do not select a VAT regime.
 
 ## Section 10: Key legal references
 
@@ -448,32 +451,69 @@ The earlier default "franchise en base if turnover permits" is reversed: crossin
 - Choosing a plateforme agréée, or the electronic invoicing size class where it is not clear: use `france-einvoice`.
 - Any figure in this skill that the client's own position contradicts, and any short or long financial year when applying the reduced-rate slice: refer.
 
+## Executable checks of the existing computations
+
+**IS fixture.** A stipulated ordinary twelve-month company has EUR 60,000 taxable French profit, EUR 1,000,000 turnover restated to twelve months, fully paid capital continuously at least 75% owned by individuals, and satisfies the reduced-rate gates in Section 5. This check calculates IS before any separate contribution, credit or instalment; it assumes no special regime. Existing CGI219/F23575 parameters give EUR 6,375 on the first EUR 42,500 plus EUR 4,375 on the remainder: EUR 10,750. A company ineligible for the reduced rate would instead owe EUR 15,000 before those separate items.
+
+```oa-check
+name: France business twelve-month eligible reduced IS
+inputs:
+  taxable_profit: 60000
+  reduced_slice: 42500
+steps:
+  reduced_tax: min(taxable_profit, reduced_slice) * 0.15
+  standard_tax: max(0, taxable_profit-reduced_slice) * 0.25
+  corporation_tax: reduced_tax+standard_tax
+  ineligible_standard_tax: taxable_profit * 0.25
+expected:
+  reduced_tax: 6375
+  standard_tax: 4375
+  corporation_tax: 10750
+  ineligible_standard_tax: 15000
+```
+
+**VAT fixture.** A stipulated mainland domestic taxable supply is outside the franchise/exemptions and special-rate categories; the existing CGI278 standard 20% rate applies to EUR 2,000 excluding VAT. Output VAT is EUR 400 and the invoice total is EUR 2,400. This is invoice arithmetic, not a determination of any disputed startup-franchise date, tax point, input-deduction entitlement or net return liability.
+
+```oa-check
+name: France business ordinary standard-rate invoice
+inputs:
+  amount_excluding_vat: 2000
+steps:
+  output_vat: amount_excluding_vat * 0.20
+  invoice_total: amount_excluding_vat+output_vat
+expected:
+  output_vat: 400
+  invoice_total: 2400
+```
+
 ## Sources
 
-- Taux réduits, services (BOI-TVA-LIQ-30-20-100): https://bofip.impots.gouv.fr/bofip/1013-PGP.html
-- Taux particulier (BOI-TVA-LIQ-40-10): https://bofip.impots.gouv.fr/bofip/1449-PGP.html
-- Franchise en base de TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F21746
-- Impôt sur les sociétés, taux, déclaration, paiement (also the simplified VAT regime limits): https://entreprendre.service-public.gouv.fr/vosdroits/F23575
-- Déclarer et payer la TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F23566
-- Dates limites de transmission des CA3: https://www.impots.gouv.fr/le-regime-reel-normal-dates-limites-de-transmission-des-ca3
-- Notice, TVA à l'importation: https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/210_declarer_payer/tva_a_limportation_-_notice.pdf
-- Facturation électronique, start dates: https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation
-- Je découvre la facturation électronique: https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique
-- Mentions obligatoires sur une facture: https://entreprendre.service-public.gouv.fr/vosdroits/F31808
-- Obligations comptables d'une société commerciale: https://entreprendre.service-public.gouv.fr/vosdroits/F37169
-- Délais de conservation des documents: https://entreprendre.service-public.gouv.fr/vosdroits/F10029
-- Dépôt des comptes annuels: https://entreprendre.service-public.gouv.fr/vosdroits/F31214
-- Charges déductibles du résultat fiscal: https://entreprendre.service-public.gouv.fr/vosdroits/F31973
-- Contribution sociale sur l'IS, calcul (BOI-IS-AUT-10-20): https://bofip.impots.gouv.fr/bofip/3492-PGP.html
-- Contribution sociale sur l'IS, exonérations (BOI-IS-AUT-10-10): https://bofip.impots.gouv.fr/bofip/3491-PGP.html
-- Impôts et taxes, art. 213 (BOI-BIC-CHG-40-30): https://bofip.impots.gouv.fr/bofip/2102-PGP.html
-- Conditions générales de déduction (BOI-BIC-CHG-10): https://bofip.impots.gouv.fr/bofip/3848-PGP.html
-- Petits matériels et outillages (BOI-BIC-CHG-20-30-10): https://bofip.impots.gouv.fr/bofip/2109-PGP.html
-- Intérêts des comptes courants, champ (BOI-BIC-CHG-50-50-10): https://bofip.impots.gouv.fr/bofip/2113-PGP.html
-- Intérêts des comptes courants, taux limite (BOI-BIC-CHG-50-50-30): https://bofip.impots.gouv.fr/bofip/5505-PGP.html
-- FEC, remise de la copie (BOI-CF-IOR-60-40-10): https://bofip.impots.gouv.fr/bofip/9026-PGP.html
-- FEC, format (BOI-CF-IOR-60-40-20): https://bofip.impots.gouv.fr/bofip/9028-PGP.html
-- Fichiers standards des écritures comptables: https://www.impots.gouv.fr/fichiers-standards-des-ecritures-comptables
+- Taux réduits, services (BOI-TVA-LIQ-30-20-100): https://bofip.impots.gouv.fr/bofip/1013-PGP.html Historical/navigation URL retained; this URL body has no accepted direct read claim. Replacement CGI278 current quoted standard/reduced-rate source scopes read 2026-10-29.
+- Taux particulier (BOI-TVA-LIQ-40-10): https://bofip.impots.gouv.fr/bofip/1449-PGP.html ; CGI art. 281 octies: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006191656 (both literal selected blood-product scopes reread31October2026 from the retained official readers; original29October acquisition preserved) Selected cited scope read 2026-10-29.
+- Franchise en base de TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F21746 Selected cited scope read 2026-10-29.
+- Impôt sur les sociétés, taux, déclaration, paiement (also the simplified VAT regime limits): https://entreprendre.service-public.gouv.fr/vosdroits/F23575 Selected cited scope read 2026-10-29.
+- Déclarer et payer la TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F23566 Selected cited scope read 2026-10-29.
+- Dates limites de transmission des CA3: https://www.impots.gouv.fr/le-regime-reel-normal-dates-limites-de-transmission-des-ca3 Historical/navigation URL retained; this URL body has no accepted direct read claim. Replacement F23566 current quoted CA3 procedural source read 2026-10-29.
+- Notice, TVA à l'importation: https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/210_declarer_payer/tva_a_limportation_-_notice.pdf Selected cited scope read 2026-10-29.
+- Facturation électronique, start dates: https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation Selected cited scope read 2026-10-29.
+- Je découvre la facturation électronique: https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique Selected cited scope read 2026-10-29.
+- Mentions obligatoires sur une facture: https://entreprendre.service-public.gouv.fr/vosdroits/F31808 Selected cited scope read 2026-10-29.
+- Obligations comptables d'une société commerciale: https://entreprendre.service-public.gouv.fr/vosdroits/F37169 Selected cited scope read 2026-10-29.
+- Délais de conservation des documents: https://entreprendre.service-public.gouv.fr/vosdroits/F10029 Selected cited scope read 2026-10-29.
+- Dépôt des comptes annuels: https://entreprendre.service-public.gouv.fr/vosdroits/F31214 Selected cited scope read 2026-10-29.
+- Charges déductibles du résultat fiscal: https://entreprendre.service-public.gouv.fr/vosdroits/F31973 Selected cited scope read 2026-10-29.
+- Contribution sociale sur l'IS, calcul (BOI-IS-AUT-10-20): https://bofip.impots.gouv.fr/bofip/3492-PGP.html Historical/navigation URL retained; this URL body has no accepted direct read claim. Replacement CGI235terZC current quoted contribution calculation read 2026-10-29.
+- Contribution sociale sur l'IS, exonérations (BOI-IS-AUT-10-10): https://bofip.impots.gouv.fr/bofip/3491-PGP.html Historical/navigation URL retained; this URL body has no accepted direct read claim. Replacement CGI235terZC current quoted exemption conditions read 2026-10-29.
+- Impôts et taxes, art. 213 (BOI-BIC-CHG-40-30): https://bofip.impots.gouv.fr/bofip/2102-PGP.html Selected cited scope read 2026-10-29.
+- Conditions générales de déduction (BOI-BIC-CHG-10): https://bofip.impots.gouv.fr/bofip/3848-PGP.html Selected cited scope read 2026-10-29.
+- Petits matériels et outillages (BOI-BIC-CHG-20-30-10): https://bofip.impots.gouv.fr/bofip/2109-PGP.html Selected cited scope read 2026-10-29.
+- Intérêts des comptes courants, champ (BOI-BIC-CHG-50-50-10): https://bofip.impots.gouv.fr/bofip/2113-PGP.html Historical/navigation URL retained; this URL body has no accepted direct read claim. Replacement CGI39/212 current quoted shareholder-interest conditions read 2026-10-29.
+- Intérêts des comptes courants, taux limite (BOI-BIC-CHG-50-50-30): https://bofip.impots.gouv.fr/bofip/5505-PGP.html Selected cited scope read 2026-10-29.
+- FEC, remise de la copie (BOI-CF-IOR-60-40-10): https://bofip.impots.gouv.fr/bofip/9026-PGP.html Selected cited scope read 2026-10-29.
+- FEC, format (BOI-CF-IOR-60-40-20): https://bofip.impots.gouv.fr/bofip/9028-PGP.html Selected cited scope read 2026-10-29.
+- Fichiers standards des écritures comptables: https://www.impots.gouv.fr/fichiers-standards-des-ecritures-comptables Historical/navigation URL retained; this URL body has no accepted direct read claim. Replacement BOI-CF-IOR-60-40-20 current quoted FEC-format source read 2026-10-29.
+
+Not yet confirmed: the precise startup-franchise source conflict and noncalendar simplified-VAT reconciliation; a universal credit-note reason field; exact nonstandard-period reduced-rate proration convention; pre-incorporation adoption timing; the home-office floor-area/plan and reimbursement method; a universal monthly-average currency permission; an automatic LPF L192 burden reversal from an FEC format defect; the31December2026 shareholder-interest ceiling; and specialist reduced-rate, e-invoice and consolidated/group methods routed to their named companions.
 
 ## Disclaimer
 

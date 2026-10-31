@@ -1,10 +1,10 @@
 ---
 name: france-transfer-pricing
 description: Use this skill whenever asked about France transfer pricing rules, documentation requirements, or prix de transfert compliance. Trigger on phrases like "transfer pricing France", "French TP documentation", "prix de transfert", "master file France", "local file France", "CbCR France", "APA France", "Article L.13 AA", "Form 2257-SD", or any question about intercompany pricing for French entities.
-version: 1.0
+version: 1.3
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-19
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -15,9 +15,9 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# France: transfer pricing (prix de transfert)
+# France: transfer pricing (prix de transfert) v1.3
 
-This skill covers the French transfer pricing duties of a company that deals with related entities abroad: the arm's length rule of article 57 of the Code général des impôts (CGI), the documentation file under article L. 13 AA of the Livre des procédures fiscales (LPF), the yearly declaration on form 2257-SD, the country-by-country report on form 2258-SD, the fines for each, the information request of article L. 13 B LPF, and advance pricing agreements. Figures are for tax year 2026. Transfer pricing figures attach to the accounting year (exercice), not to an income year, and the documentation threshold and the higher minimum fine below apply to accounting years opened on or after 1 January 2024 and are the rules in force on 19 October 2026. The one change this year is on intra-group interest (Section 8) and it applies to accounting years closed on or after 31 December 2025, so to the 2025 calendar-year accounts as well. Every figure below was read on an official page between 19 September and 19 October 2026; each page's own date is given where it matters.
+This skill covers the French transfer pricing duties of a company that deals with related entities abroad: the arm's length rule of article 57 of the Code général des impôts (CGI), the documentation file under article L. 13 AA of the Livre des procédures fiscales (LPF), the yearly declaration on form 2257-SD, the country-by-country report on form 2258-SD, the fines for each, the information request of article L. 13 B LPF, and advance pricing agreements. Figures are for tax year 2026. Transfer pricing figures attach to the accounting year (exercice), not to an income year, and the EUR 150 million documentation threshold and the documented-method presumption apply to accounting years opened on or after 1 January 2024. The raised EUR 50,000 minimum documentation fine is a separate amendment: BOFiP states it from 1 January 2024; article 116 III’s opened-year clause applies to I-1 and II, while the fine amendment is I-2. Do not decide the penalty for an earlier audited year solely from the year-opening test; establish the actual failure and applicable penalty law. The calculation change described here is on intra-group interest (Section 8) and it applies to accounting years closed on or after 31 December 2025, so to the 2025 calendar-year accounts as well. Every figure below was read on an official page between 19 September and 19 October 2026; each page's own date is given where it matters.
 
 ## Section 1: Quick reference
 
@@ -67,7 +67,7 @@ The value EUR 150 million is the pack value `fr.transfer-pricing.documentation.t
 
 ### 2.2 What the file contains
 
-The file has two parts, both following the OECD standard: a master file (fichier principal) giving an overview of the group's activities, its global transfer pricing policy and how profits are allocated worldwide, and a local file (fichier local) giving precise information on the intra-group transactions of the entity producing the documentation. The master file content is set by article L. 13 AA and article R. 13 AA-1 LPF in five categories: organisational structure; the group's business lines; its intangibles; its intercompany financial activities; and its financial and tax position. The local file describes the controlled transactions above the category amount in the table above; a company may add categories or sub-categories below that amount. Amounts come from the company's own statutory accounts, with no netting of income against charges, nor of acquisitions against disposals of assets. Where a company deals with an associated enterprise in a non-cooperative state or territory (ETNC, article 238-0 A CGI), article L. 13 AB LPF adds a further file for each beneficiary of the transfers, including the documents required of a company liable to corporation tax. Source: https://bofip.impots.gouv.fr/bofip/11463-PGP.html
+The file has two parts, both following the OECD standard: a master file (fichier principal) giving an overview of the group's activities, its global transfer pricing policy and how profits are allocated worldwide, and a local file (fichier local) giving precise information on the intra-group transactions of the entity producing the documentation. The master file content is set by article L. 13 AA and article R. 13 AA-1 LPF in five categories: organisational structure; the group's business lines; its intangibles; its intercompany financial activities; and its financial and tax position. The local file describes the controlled transactions above the category amount in the table above; a company may add categories or sub-categories below that amount. Amounts come from the company's own statutory accounts, ordinarily without netting income against charges or acquisitions against disposals of assets. For the local file's defined “Flux sur instruments financiers à terme” category under CoMoFi art. L. 211-1, separately from ordinary financial income/charges, the BOFiP instruction uses the algebraic sum of all received and paid derivative flows, including contractual balancing payments: positive net in products, negative net in charges. It requires the net balance where either gross products or gross charges exceeds EUR 100,000. This narrow reporting exception does not authorize netting ordinary categories or determine derivative valuation. Where a company deals with an associated enterprise in a non-cooperative state or territory (ETNC, article 238-0 A CGI), article L. 13 AB LPF adds a further file for each beneficiary of the transfers, including the documents required of a company liable to corporation tax. Source: https://bofip.impots.gouv.fr/bofip/11463-PGP.html
 
 ### 2.3 Form and timing of the file
 
@@ -107,7 +107,7 @@ The report is due, for accounting years opened from 1 January 2016, from (a) gro
 | Source | all figures below | https://www.impots.gouv.fr/la-declaration-pays-par-pays |
 | Same threshold as printed on the administration's explanatory page | more than EUR 750 million | "un chiffre d'affaires annuel hors taxes consolidé supérieur à 750 millions d'euros" (page modified 24/05/2022) |
 
-The two official pages differ on a group exactly at the threshold: the 2025 form says "supérieur ou égal" (at least), the older explanatory page says "supérieur" (more than). A group at exactly that turnover is referred (see "When to refuse or refer"). Filing: electronically, within twelve months after the close of the group's accounting year, as stated on the 2025 form (https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf). The information is passed to the partner states where the group has at least one entity.
+The two official pages differ at the threshold: the 2025 form says “supérieur ou égal”, while the explanatory page last modified in 2022 says “supérieur”. Current CGI art. 223 quinquies C I-1(c) expressly says at least EUR 750 million, agreeing with the form; exactly EUR 750 million therefore meets the turnover limb, subject to every other condition. For a French entity under a foreign parent, I-2 specifically requires the controlling parent to be in a state or territory outside the current II list and to be a parent that would otherwise owe the report if established in France; then apply the designation/no-other-designated-entity test. Check that current exchange/list status rather than infer it merely from the parent’s foreign address. Filing: electronically, within twelve months after the close of the group's accounting year, as stated on the 2025 form (https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf). The information is passed to the partner states where the group has at least one entity.
 
 ## Section 3: Arm's length standard
 
@@ -128,7 +128,7 @@ Form 2257-SD asks the company to tick, for each type of transaction, the method 
 | Méthode du partage de bénéfice | Profit split method |
 | Autres Méthodes | Other methods |
 
-Source: https://www.impots.gouv.fr/sites/default/files/formulaires/2257-sd/2017/2257-sd_1338.pdf (form 2257-SD, 2017 edition, the latest edition found on impots.gouv.fr).
+Source: https://www.impots.gouv.fr/sites/default/files/formulaires/2257-sd/2017/2257-sd_1338.pdf (retained form 2257-SD, 2017 edition). The quoted method labels are actual form text; this is not a claim that the 2027 filing layout has been independently obtained.
 
 ### 3.3 Choice of method
 
@@ -198,6 +198,46 @@ The share 0.5% is the pack value `fr.transfer-pricing.penalty.share-of-transacti
 
 In example 4 the higher of the two tests is below the minimum in the table above, so the minimum is charged.
 
+The blocks below recompute these two existing BOFiP illustrations. Eligibility for the documentation duty, a valid unanswered notice, the specific undocumented transactions and the adjustment are declared facts. Example 2 reports a maximum exposure, not an automatic 5% charge in every case. The amount actually imposed depends on the breach’s severity and is subject to the statutory floor.
+
+```oa-check
+name: Existing BOFiP TP example 2, unbooked royalty
+inputs:
+  undocumented_royalty: 2000000
+  adjustment: 2000000
+  transaction_rate: 0.005
+  adjustment_rate: 0.05
+  floor: 50000
+steps:
+  - transaction_test: undocumented_royalty * transaction_rate
+  - adjustment_test: adjustment * adjustment_rate
+  - maximum_exposure: max(floor, transaction_test, adjustment_test)
+expected:
+  transaction_test: 10000
+  adjustment_test: 100000
+  maximum_exposure: 100000
+```
+
+```oa-check
+name: Existing BOFiP TP example 4, reduced service price and floor
+inputs:
+  booked_charge: 1000000
+  adjustment: 600000
+  transaction_rate: 0.005
+  adjustment_rate: 0.05
+  floor: 50000
+steps:
+  - corrected_transaction: booked_charge - adjustment
+  - transaction_test: corrected_transaction * transaction_rate
+  - adjustment_test: adjustment * adjustment_rate
+  - fine_at_floor: max(floor, transaction_test, adjustment_test)
+expected:
+  corrected_transaction: 400000
+  transaction_test: 2000
+  adjustment_test: 30000
+  fine_at_floor: 50000
+```
+
 ### 6.2 Form 2257-SD late, missing or wrong (article 1729 B CGI)
 
 | What | Value | Note |
@@ -212,7 +252,7 @@ These four values are the pack values `fr.transfer-pricing.2257.late-filing-fine
 
 ### 6.3 Information request during an audit (article L. 13 B LPF, fine under article 1735 II CGI)
 
-A request under article L. 13 B can be made only during an audit (vérification de comptabilité or examen de comptabilité), only where the administration has gathered evidence giving rise to a presumption that the company made an indirect transfer of profits, and only on four areas listed exhaustively. It concerns "toutes les entreprises, quelle que soit leur forme juridique, imposables en France à l’impôt sur le revenu ou à l’impôt sur les sociétés" (BOI-CF-IOR-60-50, § 50); companies outside L. 13 AA are routed to it by BOI-BIC-BASE-80-10-40 § 40. The answer period is not less than two months, extendable on request up to three months in total. If the company does not answer, or answers insufficiently after a formal notice, the fixed fine below applies for each accounting year covered by the request, even where there is no reassessment, and on top of the penalties on any transfer pricing reassessment.
+A request under article L. 13 B can be made only during an audit (vérification de comptabilité or examen de comptabilité), only where the administration has gathered evidence giving rise to a presumption that the company made an indirect transfer of profits, and only on four areas listed exhaustively. It concerns "toutes les entreprises, quelle que soit leur forme juridique, imposables en France à l’impôt sur le revenu ou à l’impôt sur les sociétés" (BOI-CF-IOR-60-50, § 50); companies outside L. 13 AA are routed to it by BOI-BIC-BASE-80-10-40 § 40. The answer period is not less than two months, extendable on request up to three months in total. If the company does not answer, or answers insufficiently after a formal notice, the fixed fine below applies for each accounting year covered by the request, even where there is no reassessment, and on top of the penalties on any transfer pricing reassessment. The special request also requires the earlier oral/adversarial information stage to have failed to produce the requested intra-group information. Initial requests and any completeness notice must identify the relevant years, precise questions and applicable consequences. Provide a signed substantive response to the verifying service within the valid period, by receipt-confirmed delivery or post, with French translation or other means enabling full French understanding of foreign-language documents. With no response by the valid initial or extended deadline, no additional formal notice is required. A timely but insufficient response instead requires a reasoned formal notice specifying missing answers, the original questions and insufficiency reasons, giving thirty days to complete it; only an insufficient response after that notice is treated as no response for the fine. Any extension request must be written and reasoned, specify its duration and be made during the initial period; a refusal leaves that initial deadline in force. No automatic fine is inferred from a request that fails these statutory/procedural gates.
 
 | What | Value | Note |
 | --- | --- | --- |
@@ -227,7 +267,7 @@ A transfer pricing reassessment under article 57 bears the general surcharges on
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/4911-PGP.html |
 | Deliberate breach (manquement délibéré) | 40% | "la majoration de 40 % pour manquement délibéré prévue par l’article 1729 du CGI" |
-| Abuse of law where the taxpayer is its main beneficiary, fraudulent manoeuvres, or concealment of the price in a contract | 80% | "80 % sur les droits résultant des rappels (1729)" |
+| Abuse of law where principal initiative or principal benefit is established; fraudulent manoeuvres; concealed contractual price | 80%; abuse reduced to 40% otherwise | "80 % sur les droits résultant des rappels (1729)" |
 
 Both are pack values (`fr.penalty.deliberate-breach`, `fr.penalty.fraud`). The surcharge regime and late-payment interest in full are in `fr-tax-audit`.
 
@@ -332,7 +372,7 @@ The Pillar Two test is not the country-by-country test in Section 2.5: it looks 
 6. **Check intra-group interest.** Apply the article 212, I-a rate limit, then the article 212 bis cap (Section 8.1). Source: https://bofip.impots.gouv.fr/bofip/8420-PGP.html
 7. **Build or update the file.** Master file in its five categories and local file for each category above the amount in Section 2.1, in French, in a readable electronic format, reviewed every year, ready on the first day of any audit. Add the L. 13 AB file for any ETNC counterparty. Source: https://bofip.impots.gouv.fr/bofip/11463-PGP.html
 8. **File the yearly forms.** Form 2257-SD within six months after the results return deadline; form 2258-SD within twelve months after the group's year end. Source: https://bofip.impots.gouv.fr/bofip/11462-PGP.html and https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf
-9. **In an audit.** Produce the file at the start; answer a formal notice within thirty days or ask in writing for an extension; answer any L. 13 B request within the period it sets. Measure exposure with the tables in Section 6. Source: https://bofip.impots.gouv.fr/bofip/10389-PGP.html and https://bofip.impots.gouv.fr/bofip/4332-PGP.html
+9. **In an audit.** Produce the file at the start; answer a formal notice within thirty days or ask in writing for an extension; answer any valid L. 13 B request within its period, and distinguish no initial reply from the reasoned thirty-day completeness-notice branch in Section 6.3. Measure exposure with the tables in Section 6. Source: https://bofip.impots.gouv.fr/bofip/10389-PGP.html and https://bofip.impots.gouv.fr/bofip/4332-PGP.html
 10. **Consider certainty.** For a stable, material flow with a treaty partner, weigh a bilateral advance pricing agreement, applied for at least six months before the first year covered (Section 7). Source: https://bofip.impots.gouv.fr/bofip/1053-PGP.html
 
 ## Ask the client first
@@ -346,7 +386,7 @@ The Pillar Two test is not the country-by-country test in Section 2.5: it looks 
 
 ## When to refuse or refer
 
-- A group whose consolidated turnover is exactly at the country-by-country threshold: the 2025 form and the explanatory page word the test differently (Section 2.5). Refer.
+- Country-by-country reporting where the parent, current exchange-list status or alternative reporting designation is not established: obtain those facts before deciding the French entity’s duty. Exactly EUR 750 million meets the current statutory turnover limb; the older explanatory-page wording does not remove it.
 - Pillar Two (global minimum tax, form 2259-SD), under-capitalisation and the group safeguard clause of article 212 bis CGI: not covered. Refer.
 - Building the benchmark (comparables search, interquartile ranges) or valuing intangibles or a business restructuring: this skill states the duties, not the economics. Refer to a transfer pricing specialist.
 - Negotiating an advance pricing agreement, a mutual agreement procedure or an arbitration, or contesting a fine or a reassessment: refer.
@@ -356,21 +396,26 @@ The Pillar Two test is not the country-by-country test in Section 2.5: it looks 
 
 ## Sources
 
-- BOI-BIC-BASE-80-10-40, documentation obligation (version in force from 10/12/2025): https://bofip.impots.gouv.fr/bofip/11463-PGP.html
-- BOI-BIC-BASE-80-10-30, form 2257-SD declaration (version in force from 18/07/2018): https://bofip.impots.gouv.fr/bofip/11462-PGP.html
-- BOI-CF-INF-20-10-40, fines for the documentation and the declaration (version in force from 10/12/2025): https://bofip.impots.gouv.fr/bofip/10389-PGP.html
-- BOI-BIC-BASE-80-10-20, audit policy (version in force from 18/07/2018): https://bofip.impots.gouv.fr/bofip/9389-PGP.html
-- BOI-CF-IOR-60-50, article L. 13 B request (version in force from 10/12/2025): https://bofip.impots.gouv.fr/bofip/4332-PGP.html
-- BOI-SJ-RES-20-10, bilateral advance pricing agreement (version in force from 15/04/2026): https://bofip.impots.gouv.fr/bofip/1053-PGP.html
-- BOI-IS-BASE-35-10, order of the interest limits (version in force from 15/07/2026): https://bofip.impots.gouv.fr/bofip/8420-PGP.html
-- BOI-IS-BASE-35-40-10-20, cap on net financial charges (version of 13/05/2020): https://bofip.impots.gouv.fr/bofip/11787-PGP.html
-- Surcharges, article 1729 CGI: https://bofip.impots.gouv.fr/bofip/4911-PGP.html
-- Late-payment interest, article 1727 CGI: https://bofip.impots.gouv.fr/bofip/1458-PGP.html
-- Form 2258-SD, 2025 edition: https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf
-- La déclaration pays par pays (modified 24/05/2022): https://www.impots.gouv.fr/la-declaration-pays-par-pays
-- Form 2257-SD, 2017 edition: https://www.impots.gouv.fr/sites/default/files/formulaires/2257-sd/2017/2257-sd_1338.pdf
-- Securing a transfer pricing policy (modified 04/07/2022): https://www.impots.gouv.fr/professionnel/questions/ma-societe-situee-en-france-fait-partie-dun-groupe-international-comment
-- Form 2259-SD user guide, Pillar Two (November 2025): https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/210_declarer_payer/impot_mondial_15pc_pilier2/gu-2259-sd---2025-v1.pdf
+- BOI-BIC-BASE-80-10-40, documentation obligation (version in force from 10/12/2025): https://bofip.impots.gouv.fr/bofip/11463-PGP.html Selected cited scope read 2026-10-29.
+- BOI-BIC-BASE-80-10-30, form 2257-SD declaration (version in force from 18/07/2018): https://bofip.impots.gouv.fr/bofip/11462-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-INF-20-10-40, fines for the documentation and the declaration (version in force from 10/12/2025): https://bofip.impots.gouv.fr/bofip/10389-PGP.html Selected cited scope read 2026-10-29.
+- BOI-BIC-BASE-80-10-20, audit policy (version in force from 18/07/2018): https://bofip.impots.gouv.fr/bofip/9389-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-IOR-60-50, article L. 13 B request (version in force from 10/12/2025): https://bofip.impots.gouv.fr/bofip/4332-PGP.html (selected prior-information/response/completeness scopes reread31October2026; local-file derivative-flow scope in BOI-BIC-BASE-80-10-40 also reread then; earlier dates preserved) Selected cited scope read 2026-10-29.
+- BOI-SJ-RES-20-10, bilateral advance pricing agreement (version in force from 15/04/2026): https://bofip.impots.gouv.fr/bofip/1053-PGP.html Selected cited scope read 2026-10-29.
+- BOI-IS-BASE-35-10, order of the interest limits (version in force from 15/07/2026): https://bofip.impots.gouv.fr/bofip/8420-PGP.html Selected cited scope read 2026-10-29.
+- BOI-IS-BASE-35-40-10-20, cap on net financial charges (version of 13/05/2020): https://bofip.impots.gouv.fr/bofip/11787-PGP.html Selected cited scope read 2026-10-29.
+- Surcharges, article 1729 CGI: https://bofip.impots.gouv.fr/bofip/4911-PGP.html Selected cited scope read 2026-10-29.
+- Late-payment interest, article 1727 CGI: https://bofip.impots.gouv.fr/bofip/1458-PGP.html Selected cited scope read 2026-10-29.
+- Form 2258-SD, 2025 edition: https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf Selected cited scope read 2026-10-29.
+- La déclaration pays par pays (modified 24/05/2022): https://www.impots.gouv.fr/la-declaration-pays-par-pays Selected cited scope read 2026-10-29.
+- Form 2257-SD, 2017 edition: https://www.impots.gouv.fr/sites/default/files/formulaires/2257-sd/2017/2257-sd_1338.pdf Selected cited scope read 2026-10-29.
+- Securing a transfer pricing policy (modified 04/07/2022): https://www.impots.gouv.fr/professionnel/questions/ma-societe-situee-en-france-fait-partie-dun-groupe-international-comment Selected cited scope read 2026-10-29.
+- Form 2259-SD user guide, Pillar Two (November 2025): https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/210_declarer_payer/impot_mondial_15pc_pilier2/gu-2259-sd---2025-v1.pdf Selected cited scope read 2026-10-29.
+- Current CGI223quinquiesB/C, selected filing and exact-threshold clauses: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162534/ Selected cited scope read 2026-10-29.
+- Original FinanceLaw2024article116, separate threshold/presumption and fine commencements: https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000048727469 Selected cited scope read 2026-10-29.
+- Current CGI1729 abuse-of-law reduced-rate conditions: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020051904/2026-10-29
+
+Selected-source update, 29 October 2026: actual selected operative clauses and the retained form instructions are pinned in the figure ledger separately from source acquisition and earlier author reads. Article116 was actually read in the official indexed original-language excerpt; a direct full-body request returned403. The full current country-by-country exchange list and every future filing-year form layout have not been reproduced here. The statutory threshold is supplied; exchange/list status and designation still require the actual group facts. A general safe-harbour margin, current unilateral/SME APA procedure, economic benchmark and special thin-capitalisation method are not established merely by the pages cited here.
 
 ## Disclaimer
 
