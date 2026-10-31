@@ -1,8 +1,8 @@
 {
-  "status": "LOCAL2026 WRITER DRAFT; stated implementation/specialist gaps and whole-country review pending",
+  "status": "Source-cited writer draft; bounded independent source review completed31October2026; ordinary gaps remain; no accountant attestation or comprehensive coverage",
   "slug": "md-company-formation",
   "Guide_path": "skills/international/moldova/md-company-formation.md",
-  "Guide_sha256": "b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3",
+  "Guide_sha256": "2568a39d2d062b187ec483263ea78a81cc970f084dd1a322d92b178c5a4ff0e5",
   "rows": [
     {
       "id": "MD-FORM-001",
@@ -3260,7 +3260,7 @@
   ],
   "baseline_old_units": 10,
   "old_bytes": 3855,
-  "new_bytes": 56755,
+  "new_bytes": 57135,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Unverified PwC/secondary-source references replaced by fetched actual primary law/authority sources; original copy remains archived.",
@@ -3279,5 +3279,12 @@
   "independent_review_subtitle_correction_20261031": {
     "evidence": "ledgers/md-country-evidence/formation-subtitle-independent-review-correction.json",
     "status": "Writer fix; independent delta recheck pending"
+  },
+  "bounded_source_review": {
+    "decision": "PASS_FOR_BOUNDED_SOURCE_CITED_DRAFT",
+    "tax_method_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+    "record": "ledgers/md-country-evidence/independent-review/FINAL-DECISION.json",
+    "row_status_note": "Original writer-level PENDING fields are preserved historical observations; completed bounded source review is recorded separately. This does not confer accountant attestation.",
+    "final_status_hash_delta": "PENDING independent recheck"
   }
 }

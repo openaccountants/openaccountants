@@ -2,7 +2,7 @@
 
 **Writer draft; independent whole-country review pending.** This ledger covers statutory rule/method groups and identifies both assumed examples separately. Ordinary implementation gaps remain in the Guide Sources and country README. It is not a complete-coverage or attestation record.
 
-Guide SHA256: `00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643`. Read dates: 30–31 October 2026, individually recorded. Selected official browser bodies are retained as article JSON with original text, observation date and official URL. They are not a complete Fiscal Code download.
+Guide SHA256: `2c774e296d4796eaa223775b232237bad68cb7c06088ffa73f55c82c9709bdcd`. Read dates: 30–31 October 2026, individually recorded. Selected official browser bodies are retained as article JSON with original text, observation date and official URL. They are not a complete Fiscal Code download.
 
 | ID | Rule/figure | Section | Act/article and official URL | Short original-language quote | Read |
 |---|---|---|---|---|---|
@@ -601,3 +601,7 @@ The two current `oa-check` blocks contain assumed accounting inputs and arithmet
 ## Subsequently merged public predecessor
 
 PR #1008 merged after this country draft was written. All 95 incoming pre-CTA units have writer destinations in [the complete subsequent-predecessor table](md-country-evidence/public-pr1008-predecessor-reconciliation.md), with full original text and hashes retained in its JSON. The company50%capital-gain exclusion is corrected against Code14/18/24/37/40/71, and its hypothetical tax difference is recomputed in the separate corporate controls. The incoming deferral example remains evidence, not a verified filing method. Independent review remains pending.
+
+## Bounded source-review status, 31 October 2026
+
+[Independent review record](md-country-evidence/independent-review/FINAL-REVIEW.md). The historical writer checkpoint above is retained. All ordinary gaps remain; this is not accountant attestation or comprehensive country coverage.

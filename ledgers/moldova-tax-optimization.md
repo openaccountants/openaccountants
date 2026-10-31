@@ -2,7 +2,7 @@
 
 **2026writerdraft. Whole-country independent review and stated ordinary/specialist procedure gaps remain open.**
 
-Guide SHA256: `4a5708d1fdcd076aa9c689a306b85be970fba8be846f5e520afe2bc7808b34fa`. JSON retains short exact original-language quotations, full contexts, official URLs/read dates/hashes. Reviewer must verify actual Guide use, every condition, original topic and both computations.
+Guide SHA256: `81a761e584f26f068fe2d47382710e0d14e2d44c55b4ef0a019fce865b67ed3f`. JSON retains short exact original-language quotations, full contexts, official URLs/read dates/hashes. Reviewer must verify actual Guide use, every condition, original topic and both computations.
 
 |ID|Rule/figure|Guide section|Act/article and source|Short exact quote|Read|
 |---|---|---|---|---|---|
@@ -230,3 +230,7 @@ Read31October2026; writer source/field mapping, independent whole-country review
 | MD-PLAN-135 | Actual ITPARK-ORDER106-ENACTED point7_CAEM2: 7. Pe tot parcursul textului ordinului, abrevierea „CAEM” se substituie cu abrevierea „CAEM-2”. | Deadlines and filing: Complete actual IT-park returns | [MFOrder106/2025 ITPARK-ORDER106-ENACTED-20261031; point7_CAEM2](https://www.legis.md/cautare/getResults?doc_id=151376&lang=ro) | 7. Pe tot parcursul textului ordinului, abrevierea „CAEM” se substituie cu abrevierea „CAEM-2”. | 2026-10-31 |
 | MD-PLAN-136 | Actual ITPARK-ORDER106-ENACTED point8_commencement: 8. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, cu excepția pct.1, 3, | Deadlines and filing: Complete actual IT-park returns | [MFOrder106/2025 ITPARK-ORDER106-ENACTED-20261031; point8_commencement](https://www.legis.md/cautare/getResults?doc_id=151376&lang=ro) | 8. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, cu excepția pct.1, 3, 4 și 5 care intră | 2026-10-31 |
 | MD-PLAN-137 | Actual ITPARK-ORDER106-ENACTED order_header: ORDIN Nr. 106 din 10-10-2025 | Deadlines and filing: Complete actual IT-park returns | [MFOrder106/2025 ITPARK-ORDER106-ENACTED-20261031; order_header](https://www.legis.md/cautare/getResults?doc_id=151376&lang=ro) | ORDIN Nr. 106 din 10-10-2025 | 2026-10-31 |
+
+## Bounded source-review status, 31 October 2026
+
+[Independent review record](md-country-evidence/independent-review/FINAL-REVIEW.md). The historical writer checkpoint above is retained. All ordinary gaps remain; this is not accountant attestation or comprehensive country coverage.

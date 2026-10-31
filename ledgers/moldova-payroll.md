@@ -2,7 +2,7 @@
 
 **Local 2026 writer draft. Ordinary gaps remain; no whole-country independent review, accountant attestation or complete-coverage claim.**
 
-Guide SHA256: `0c3b85dd8283b36a8d4316b731e5fdcdf8e4c1fd49a7b4378923fd7b0d392e26`. Short exact original-language quotations are tied to full retained paragraph contexts, official URLs, source hashes and read dates in the JSON. A source row can contain linked statutory conditions; the reviewer must verify the whole retained paragraph and its Guide application, not only the quotation.
+Guide SHA256: `c6537ba21906a12e99ac50293cb4dfdd0b64970a9e38db750d6f2412135d1df2`. Short exact original-language quotations are tied to full retained paragraph contexts, official URLs, source hashes and read dates in the JSON. A source row can contain linked statutory conditions; the reviewer must verify the whole retained paragraph and its Guide application, not only the quotation.
 
 | ID | Rule/figure or exact source-rule opening | Guide section | Act/article and official URL | Short original-language quote | Read |
 |---|---|---|---|---|---|
@@ -1056,3 +1056,7 @@ Read31October2026. Writer methods and source exceptions supplied; independent wh
 ## Subsequently merged repair PR #1027
 
 The full incoming file and all 86 units are preserved in the [repair predecessor table](md-country-evidence/public-merged-repair-predecessor-reconciliation.md). Published review notes cover the smaller incoming file; they do not approve this expanded country pack. Existing source rows, cases and old-topic destinations remain unchanged.
+
+## Bounded source-review status, 31 October 2026
+
+[Independent review record](md-country-evidence/independent-review/FINAL-REVIEW.md). The historical writer checkpoint above is retained. All ordinary gaps remain; this is not accountant attestation or comprehensive country coverage.

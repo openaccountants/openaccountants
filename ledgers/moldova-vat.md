@@ -2,7 +2,7 @@
 
 **Writer draft only. Whole-country independent review and source/procedure gaps remain open.**
 
-Guide SHA256: `da12edadab1f25eb3f97901f3e00bcbc8c4568c6f393120d6ee76ad036005adf`. Exact quotations, full statutory paragraph contexts, original-language text, source hashes, URLs and read dates are retained in the JSON. Review each whole rule and its Guide application; one row can contain linked legal conditions.
+Guide SHA256: `4301b1c7c3267fea647fb733c77db543ee2e2f19b6b1a90d2ebd018ac4f3fa07`. Exact quotations, full statutory paragraph contexts, original-language text, source hashes, URLs and read dates are retained in the JSON. Review each whole rule and its Guide application; one row can contain linked legal conditions.
 
 |ID|Rule/figure or original source-rule opening|Guide section|Act/article and official source|Short exact original-language quote|Read|
 |---|---|---|---|---|---|
@@ -662,3 +662,7 @@ Read31October2026; independent delta recheck pending. The correction audit prese
 | MD-VAT-366 | Current Code266(1): (1) Cererea de compensare ori de restituire a sumelor plătite în plus sau a sumelor care, conform legislaţiei fiscale, urmează a fi restituite poate f | Penalties and interest: Assessment, collection and refund limitation | [Fiscal Code art266(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | (1) Cererea de compensare ori de restituire a sumelor plătite în plus sau a sumelor care, conform legislaţiei fiscale, urmează a fi restituite poate | 2026-10-31 |
 | MD-VAT-367 | Current Code266(2): (2) Serviciul Fiscal de Stat poate repune în termen şi accepta cererea de compensare şi/sau de restituire a sumelor plătite în plus sau a sumelor care | Penalties and interest: Assessment, collection and refund limitation | [Fiscal Code art266(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | (2) Serviciul Fiscal de Stat poate repune în termen şi accepta cererea de compensare şi/sau de restituire a sumelor plătite în plus sau a | 2026-10-31 |
 | MD-VAT-368 | Current Code266(3): (3) Sumele plătite în plus şi sumele care urmează a fi restituite, care nu au fost solicitate în termenul indicat la alin.(1), se anulează în modul st | Penalties and interest: Assessment, collection and refund limitation | [Fiscal Code art266(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | (3) Sumele plătite în plus şi sumele care urmează a fi restituite, care nu au fost solicitate în termenul indicat la alin.(1), se anulează | 2026-10-31 |
+
+## Bounded source-review status, 31 October 2026
+
+[Independent review record](md-country-evidence/independent-review/FINAL-REVIEW.md). The historical writer checkpoint above is retained. All ordinary gaps remain; this is not accountant attestation or comprehensive country coverage.

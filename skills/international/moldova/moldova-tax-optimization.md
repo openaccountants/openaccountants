@@ -1,7 +1,7 @@
 ---
 name: moldova-tax-optimization
-description: "Compare legally available Moldova tax regimes and owner extraction for 2026. Covers actual IT-park status and permitted activities, cumulative seventy-percent eligibility, the monthly sales base and employee minimum, included and separate taxes, annual verification, entry and exit, ordinary income tax, the eligible four-percent SME regime, dividends and employment classification. Use for Moldova tax planning, IT Park seven-percent tax, minimum per employee, non-IT revenue, small-business regime, SRL versus individual entrepreneur, dividend versus salary and a single-client contractor. This source-cited writer draft corrects unsupported savings and blanket prohibitions, preserves predecessor subjects and states remaining form, procedure and case-specific gaps. Independent whole-country review and accountant attestation remain pending."
-version: 0.5
+description: "Compare legally available Moldova tax regimes and owner extraction for 2026. Covers actual IT-park status and permitted activities, cumulative seventy-percent eligibility, the monthly sales base and employee minimum, included and separate taxes, annual verification, entry and exit, ordinary income tax, the eligible four-percent SME regime, dividends and employment classification. Use for Moldova tax planning, IT Park seven-percent tax, minimum per employee, non-IT revenue, small-business regime, SRL versus individual entrepreneur, dividend versus salary and a single-client contractor. This source-cited writer draft corrects unsupported savings and blanket prohibitions, preserves predecessor subjects and states remaining form, procedure and case-specific gaps. A bounded source-review record is linked under Sources; accountant attestation remains pending."
+version: "0.6"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -12,11 +12,11 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova tax planning and regime comparison, 2026 v0.5
+# Moldova tax planning and regime comparison, 2026 v0.6
 
 ## Who this applies to
 
-Use this Guide to compare an ordinary Moldovan business, the eligible non-VAT small-business regime and an actual IT-park resident, and to evaluate company distributions and genuine independent work. Establish legal eligibility before comparing amounts. An SRL, an individual entrepreneur and the new registered independent service entrepreneur are different legal/tax populations; an invoice or a software-related description does not select a regime. This is a source-cited writer draft, with stated implementation gaps and whole-country independent review pending. [Code arts. 13–15, 24(11^1), 54^1–54^4, 88, 368][code]; [Law 77/2016 arts. 2, 7–8][park].
+Use this Guide to compare an ordinary Moldovan business, the eligible non-VAT small-business regime and an actual IT-park resident, and to evaluate company distributions and genuine independent work. Establish legal eligibility before comparing amounts. An SRL, an individual entrepreneur and the new registered independent service entrepreneur are different legal/tax populations; an invoice or a software-related description does not select a regime. This is a source-cited writer draft, with stated implementation gaps and a bounded source-review record linked under Sources. [Code arts. 13–15, 24(11^1), 54^1–54^4, 88, 368][code]; [Law 77/2016 arts. 2, 7–8][park].
 
 Read the connected [corporate](md-corporate-income-tax.md), [individual](moldova-income-tax.md), [payroll](moldova-payroll.md), [social/medical](moldova-social-contributions.md), [VAT](moldova-vat.md), [formation](md-company-formation.md) and [cross-border](md-cross-border.md) methods for the actual taxpayer. Do not present the predecessor's “20–50% savings” range or a universal best entity as a verified result: no fetched primary source establishes those savings for an identified population.
 
@@ -212,7 +212,9 @@ Model the legally available choices using those numbers before presenting a savi
 
 ## Sources
 
-Read 30 October 2026. The planning ledger retains exact short original-language quotations, full contexts, URLs/read dates/hashes and every predecessor-topic destination. Whole-country independent legal/application review and accountant attestation remain pending.
+**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+
+Read 30 October 2026. The planning ledger retains exact short original-language quotations, full contexts, URLs/read dates/hashes and every predecessor-topic destination. The bounded source-review record is linked under Sources; accountant attestation remains pending.
 
 | Primary source | Scope actually read | Read date |
 |---|---|---|

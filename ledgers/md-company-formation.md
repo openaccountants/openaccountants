@@ -2,7 +2,7 @@
 
 **2026 writer draft. Whole-country independent review and stated source/procedure gaps remain open.**
 
-Guide SHA256: `b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3`. JSON retains exact original-language quotations, full context, official URL, read date and source hash. A reviewer must check actual Guide application and every condition, not quote presence alone.
+Guide SHA256: `2568a39d2d062b187ec483263ea78a81cc970f084dd1a322d92b178c5a4ff0e5`. JSON retains exact original-language quotations, full context, official URL, read date and source hash. A reviewer must check actual Guide application and every condition, not quote presence alone.
 
 | ID | Rule/figure or source-rule opening | Guide section | Act/article and official source | Short original-language quote | Read |
 |---|---|---|---|---|---|
@@ -259,3 +259,7 @@ PR #1010 contributes 32 additional pre-CTA units, all mapped in [the complete su
 ## Independent review: BE-1/BE-2 subtitle correction
 
 The retained BE-1 core form explicitly says “constituire de către p.f.”, consistent with its natural-person-founder label. BE-2 identifies the legal-person founder. The former invented subtitle inconsistency is removed; all original row fields are retained in the [correction audit](md-country-evidence/formation-subtitle-independent-review-correction.json). No PEP-annex completeness or professional attestation is claimed. Independent delta recheck pending.
+
+## Bounded source-review status, 31 October 2026
+
+[Independent review record](md-country-evidence/independent-review/FINAL-REVIEW.md). The historical writer checkpoint above is retained. All ordinary gaps remain; this is not accountant attestation or comprehensive country coverage.

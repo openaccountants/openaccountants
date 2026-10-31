@@ -11,7 +11,7 @@ description: >
   foreign supplier payments, royalties, interest, dividends, overseas income,
   construction projects, nonresident property and individual relocation. Current
   forms, treaty-specific applications and identified implementation gaps remain
-  explicit; independent whole-country review is pending.
+  explicit; the bounded source-review record is linked under Sources.
 jurisdiction: MD
 category: cross-border
 tax_year: 2026
@@ -20,14 +20,14 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.8
+version: "0.9"
 ---
 
 # Moldova cross-border income tax, 2026
 
 ## Who this applies to
 
-This Guide covers ordinary resident foreign income and nonresident Moldova-source income: residence, permanent establishments (PEs), gross withholding, property and capital gains, treaty evidence and refunds, foreign-tax credits, and individual arrival/departure. It is a source-cited writer draft. The country pack remains partial pending the identified implementation gaps and independent whole-country review. A named accountant has not attested to this expansion.
+This Guide covers ordinary resident foreign income and nonresident Moldova-source income: residence, permanent establishments (PEs), gross withholding, property and capital gains, treaty evidence and refunds, foreign-tax credits, and individual arrival/departure. It is a source-cited writer draft. The country pack remains partial because of the identified implementation gaps. A named accountant has not attested to this expansion.
 
 Determine **the person, residence, income category, source, PE connection and payer** before choosing a rate. Citizenship, incorporation, an invoice address and the destination bank account do not answer all six questions. Use the Fiscal Code consolidated through the amendment effective 30 October 2026; selected operative articles were read, not every provision of the Code. [Code arts. 4–5, 13–15, 71–79³ and 91](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), read 2026-10-30.
 
@@ -240,7 +240,7 @@ Under paragraph (4), the resident payer or another authorised person files the r
 
 ### Interfaces that need their own test
 
-For employment, connect the actual treaty employment/director/entertainer article to [payroll](moldova-payroll.md) and [social/medical contributions](moldova-social-contributions.md). An income-tax treaty is not evidence of a social-security exemption or a posting certificate; the relevant agreement and insurance facts require their own verification. For goods, property, digital services and foreign suppliers, test VAT place of supply, import/self-assessment and customs separately under [VAT](moldova-vat.md). A withholding exclusion or treaty exemption is not a VAT determination. Domestic legal bases for these separate computations are supplied in those source-cited drafts; their independent review and explicit country gaps remain open.
+For employment, connect the actual treaty employment/director/entertainer article to [payroll](moldova-payroll.md) and [social/medical contributions](moldova-social-contributions.md). An income-tax treaty is not evidence of a social-security exemption or a posting certificate; the relevant agreement and insurance facts require their own verification. For goods, property, digital services and foreign suppliers, test VAT place of supply, import/self-assessment and customs separately under [VAT](moldova-vat.md). A withholding exclusion or treaty exemption is not a VAT determination. Domestic legal bases for these separate computations are supplied in those source-cited drafts; their explicit country gaps remain open and their bounded source-review record is linked under Sources.
 
 Related-party dealings also need the actual controlled-transaction, aggregation, file-request and adjustment analysis in [transfer pricing](md-transfer-pricing.md). Do not treat a treaty reduced rate as proof that an intra-group charge is deductible or arm's length. Entity migration, reorganisations, CFC rules, information-exchange/CbCR status and prospective EU-alignment measures require separate enacted-law/effective-date work; this Guide makes no unverified assertion that they are absent or already applicable.
 
@@ -323,6 +323,8 @@ The predecessor's three decision cases remain: a remote supplier needs service/s
 - Obtain actual payroll/insurance/posting facts, VAT/customs and related-party records, prior filings/payment receipts, current form access and treasury details. Which unclosed ordinary procedure gap below is relevant to the planned filing?
 
 ## Sources
+
+**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 | Source actually read | Provisions used | Read |
 |---|---|---|

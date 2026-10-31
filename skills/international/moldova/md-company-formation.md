@@ -1,6 +1,6 @@
 ---
 name: md-company-formation
-description: "Prepare Moldova company formation and entity choice for 2026 using the current SRL, state-registration, joint-stock and accounting laws. Covers ordinary SRL constitution, founders and statute, subscribed capital and payments, the SA capital screen, ASP application documents and representation, foreign documents, standard and urgent company-registration tariffs, one-stop fiscal records, register changes and annual accounts. Use for incorporation, SRL versus individual entrepreneur, an SA proposal, IDNO, beneficial-owner disclosure, foreign founders, accounting and filing planning. This source-cited writer draft preserves predecessor topics, states current-form and specialist gaps, and requires independent whole-country review. It does not establish every securities, regulated-sector, AML, banking or historical procedure or claim accountant attestation."
+description: "Prepare Moldova company formation and entity choice for 2026 using the current SRL, state-registration, joint-stock and accounting laws. Covers ordinary SRL constitution, founders and statute, subscribed capital and payments, the SA capital screen, ASP application documents and representation, foreign documents, standard and urgent company-registration tariffs, one-stop fiscal records, register changes and annual accounts. Use for incorporation, SRL versus individual entrepreneur, an SA proposal, IDNO, beneficial-owner disclosure, foreign founders, accounting and filing planning. This source-cited writer draft preserves predecessor topics, states current-form and specialist gaps, and has a bounded source-review record linked under Sources. It does not establish every securities, regulated-sector, AML, banking or historical procedure or claim accountant attestation."
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -9,14 +9,14 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 0.6
+version: "0.7"
 ---
 
-# Moldova company formation and entity choice, 2026 v0.6
+# Moldova company formation and entity choice, 2026 v0.7
 
 ## Who this applies to
 
-Use this Guide to prepare an ordinary Moldovan SRL incorporation, compare the individual-entrepreneur registration route and screen an SA proposal. It supplies the current registration and continuing-compliance framework as read on 30 October 2026. It does not certify the full securities-registration procedure, regulated-sector approvals, every foreign-document treaty exemption or historical incorporation rules throughout 2026. Whole-country independent review is pending. [Law 135/2007 arts. 2, 9, 11–16][srl]; [Law 220/2007 arts. 7–14, 28, 35][register]; [Law 1134/1997 arts. 2–4, 38][sa].
+Use this Guide to prepare an ordinary Moldovan SRL incorporation, compare the individual-entrepreneur registration route and screen an SA proposal. It supplies the current registration and continuing-compliance framework as read on 30 October 2026. It does not certify the full securities-registration procedure, regulated-sector approvals, every foreign-document treaty exemption or historical incorporation rules throughout 2026. The bounded source-review record is linked under Sources. [Law 135/2007 arts. 2, 9, 11–16][srl]; [Law 220/2007 arts. 7–14, 28, 35][register]; [Law 1134/1997 arts. 2–4, 38][sa].
 
 An SRL has legal personality and capital divided into participation interests. It is formed on State registration; the company answers with its assets, while members' liability has the exceptions in article 9, including unpaid subscribed contributions. One or more permitted individuals or legal entities can found it. An SA divides capital into shares and has its own company/securities requirements. An individual entrepreneur registers the individual under Law 220 article 28. These legal choices do not themselves prove entitlement to a tax incentive. Do not describe one as universally best, safest or most common without evidence about the proposed business. [Law 135 arts. 2, 9, 11][srl]; [Law 1134 arts. 2–4][sa]; [Law 220 art. 28][register].
 
@@ -230,7 +230,9 @@ Obtain the activities and regulated permissions; founders' legal form, countries
 
 ## Sources
 
-Read 30 October 2026. The formation ledger retains each source context, short original-language quote, read date, hash and predecessor-topic destination. This is a writer draft; independent country review and accountant attestation remain open.
+**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+
+Read 30 October 2026. The formation ledger retains each source context, short original-language quote, read date, hash and predecessor-topic destination. This is a writer draft; the bounded source-review record is linked under Sources and accountant attestation remains open.
 
 | Primary source | Scope actually read | Read date |
 |---|---|---|
@@ -248,7 +250,7 @@ Read 30 October 2026. The formation ledger retains each source context, short or
 | [HG 966/2020, operative October 2026 consolidation][tariff966] | Introductory tariff/relief approvals and funding method; no verification of every attached tariff | 2026-10-30 |
 | [ASP founder conviction declaration][founderconviction] and [administrator/founder declaration][entityfounderconviction] | Each one-page blank form read in full and visually inspected; actual role fields and statement, not a criminal-record certificate | 2026-10-30 |
 
-**Not yet confirmed:** actual discrepancy-notation/removal forms and approved operational procedure; other entity-specific declaration variants beyond the company/individual forms mapped here; full constitution/model; case-specific conviction expiry, rehabilitation and foreign-record recognition beyond the sourced founder declaration and SRL administrator tests; current national PEP-list/foreign-role screening and complete reporting-entity AML operations beyond the sourced ownership, disclosure and due-diligence interface; remaining fee-relief support-instrument/first-year evidence and urgent-track handling, other unquoted service tariffs; bank-specific account-opening/KYC procedure; full SA constitution/securities-registration and sector-capital/permit requirements; detailed BNS/SNC templates, public-interest determination and individual deadline rollover; all 2026 historical formation/amendment transitions and cross-border document treaty exemptions. The old SRL 1 MDL example, SA 20,000 MDL minimum, approximate fee and universal one-day completion were not retained as certified rules. Their subjects remain in the current method or precise gaps and in the archived original. No most-common-entity statistic, comprehensive country coverage or completed independent review is claimed.
+**Not yet confirmed:** actual discrepancy-notation/removal forms and approved operational procedure; other entity-specific declaration variants beyond the company/individual forms mapped here; full constitution/model; case-specific conviction expiry, rehabilitation and foreign-record recognition beyond the sourced founder declaration and SRL administrator tests; current national PEP-list/foreign-role screening and complete reporting-entity AML operations beyond the sourced ownership, disclosure and due-diligence interface; remaining fee-relief support-instrument/first-year evidence and urgent-track handling, other unquoted service tariffs; bank-specific account-opening/KYC procedure; full SA constitution/securities-registration and sector-capital/permit requirements; detailed BNS/SNC templates, public-interest determination and individual deadline rollover; all 2026 historical formation/amendment transitions and cross-border document treaty exemptions. The old SRL 1 MDL example, SA 20,000 MDL minimum, approximate fee and universal one-day completion were not retained as certified rules. Their subjects remain in the current method or precise gaps and in the archived original. No most-common-entity statistic, comprehensive country coverage or accountant attestation is claimed.
 
 Actual ASP individual application (two pages), instructions (three pages), BE-8 first page, individual-registration tariff and name-service tariff/requirements read 30 October 2026. The formation ledger binds their retained texts and PDF hashes. No full PEP-list or portal validation is claimed.
 

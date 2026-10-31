@@ -1,6 +1,6 @@
 ---
 name: md-tax-overview
-description: "Route Moldova tax questions for 2026 to the correct taxpayer, source, base, period and connected Guide. Covers the ordinary individual and legal-person income-tax rates, standard VAT, current resident and nonresident income populations, income-tax and VAT periods, annual income-tax and ordinary VAT deadlines, separate annual accounts and payer reporting, and two assumed computations. Use for Moldova tax overview, personal or corporate tax, worldwide income, tax year, annual return, SFS, MDL, VAT and first-year compliance. This source-cited writer draft corrects blanket scope and deadline assumptions, preserves predecessor subjects and makes remaining specialist and implementation gaps explicit. Independent whole-country review and accountant attestation remain open."
+description: "Route Moldova tax questions for 2026 to the correct taxpayer, source, base, period and connected Guide. Covers the ordinary individual and legal-person income-tax rates, standard VAT, current resident and nonresident income populations, income-tax and VAT periods, annual income-tax and ordinary VAT deadlines, separate annual accounts and payer reporting, and two assumed computations. Use for Moldova tax overview, personal or corporate tax, worldwide income, tax year, annual return, SFS, MDL, VAT and first-year compliance. This source-cited writer draft corrects blanket scope and deadline assumptions, preserves predecessor subjects and makes remaining specialist and implementation gaps explicit. A bounded source-review record is linked under Sources; accountant attestation remains open."
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -9,14 +9,14 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.4
+version: "0.5"
 ---
 
-# Moldova tax overview, 2026 v0.4
+# Moldova tax overview, 2026 v0.5
 
 ## Who this applies to
 
-Use this overview to identify the taxpayer, period, tax base and connected Moldova Guide before calculating an ordinary 2026 liability. Headline rates are not a complete tax computation or proof of eligibility for a special regime. The pack remains a source-cited writer draft with stated gaps and whole-country review pending. [Code arts. 12^1–15, 83, 96, 114–115][code].
+Use this overview to identify the taxpayer, period, tax base and connected Moldova Guide before calculating an ordinary 2026 liability. Headline rates are not a complete tax computation or proof of eligibility for a special regime. The pack remains a source-cited writer draft with stated gaps and a bounded source-review record linked under Sources. [Code arts. 12^1–15, 83, 96, 114–115][code].
 
 The **Serviciul Fiscal de Stat (SFS)** administers taxes and other covered public payments. The national currency is the **Moldovan leu**; examples below show MDL amounts. Accounting and tax-conversion rules still depend on the transaction and applicable provision. [Code art. 129(2)][code]; [BNM national-currency section][bnm]; [Accounting Law art. 7][accounts].
 
@@ -141,6 +141,8 @@ expected:
 Establish legal form and registrations; residence and citizenship where relevant; actual work, management, property and customer locations; income types and source; tax/accounting periods and any entry/exit change; turnover, taxable profit and VAT classification; employees, payments and contributions; deductions, exemptions, special regimes and treaty evidence; earlier returns, accepted corrections, advances, credits and outstanding debt. Use the answers to choose the full connected method before quoting a tax liability or a saving.
 
 ## Sources
+
+**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Primary-source reads on 30–31 October 2026, with individual dates below. The overview ledger binds the rules and both assumed computations to actual official source contexts, hashes and predecessor-topic destinations. This overview does not complete a partial specialist domain or substitute for independent whole-country review.
 

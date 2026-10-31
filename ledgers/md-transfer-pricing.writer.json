@@ -1,8 +1,8 @@
 {
-  "status": "LOCAL2026 WRITER DRAFT; ordinary source/procedure gaps remain; whole-country review pending",
+  "status": "Source-cited writer draft; bounded independent source review completed31October2026; ordinary gaps remain; no accountant attestation or comprehensive coverage",
   "slug": "md-transfer-pricing",
   "Guide_path": "skills/international/moldova/md-transfer-pricing.md",
-  "Guide_sha256": "df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6",
+  "Guide_sha256": "6b12db6690efecc0c88bbb477c1187627ad07e0bafeb4ce45cfe5c8ca3dcc986",
   "rows": [
     {
       "id": "MD-TP-001",
@@ -7251,7 +7251,7 @@
   ],
   "baseline_old_units": 25,
   "old_bytes": 10169,
-  "new_bytes": 57422,
+  "new_bytes": 57766,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Duplicated early headings and120day explanation consolidated into the canonical nine sections.",
@@ -7267,5 +7267,12 @@
     "complete_destination_table": "ledgers/md-country-evidence/public-pr793-predecessor-reconciliation.json",
     "units": 105,
     "status": "WRITER MAPPING ONLY; independentreviewpending"
+  },
+  "bounded_source_review": {
+    "decision": "PASS_FOR_BOUNDED_SOURCE_CITED_DRAFT",
+    "tax_method_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+    "record": "ledgers/md-country-evidence/independent-review/FINAL-DECISION.json",
+    "row_status_note": "Original writer-level PENDING fields are preserved historical observations; completed bounded source review is recorded separately. This does not confer accountant attestation.",
+    "final_status_hash_delta": "PENDING independent recheck"
   }
 }

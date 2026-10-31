@@ -1,8 +1,8 @@
 {
-  "status": "LOCAL2026 WRITER DRAFT; remainingprocedure/form/case-specificgaps andwhole-countryreviewpending",
+  "status": "Source-cited writer draft; bounded independent source review completed31October2026; ordinary gaps remain; no accountant attestation or comprehensive coverage",
   "slug": "moldova-tax-optimization",
   "Guide_path": "skills/international/moldova/moldova-tax-optimization.md",
-  "Guide_sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+  "Guide_sha256": "81a761e584f26f068fe2d47382710e0d14e2d44c55b4ef0a019fce865b67ed3f",
   "rows": [
     {
       "id": "MD-PLAN-001",
@@ -2756,7 +2756,7 @@
   ],
   "baseline_old_units": 30,
   "old_bytes": 5942,
-  "new_bytes": 34598,
+  "new_bytes": 34961,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Unsupported20–50%savingsrange andblanketbestentity/salarysubstitute claims notadopted;fulloriginaltext/hash preserved andactualconditionalcomparison supplied.",
@@ -2771,5 +2771,12 @@
     "complete_destination_table": "ledgers/md-country-evidence/public-supporting-predecessor-reconciliation.json",
     "units": 71,
     "status": "WRITER MAPPING ONLY; full independent review pending"
+  },
+  "bounded_source_review": {
+    "decision": "PASS_FOR_BOUNDED_SOURCE_CITED_DRAFT",
+    "tax_method_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+    "record": "ledgers/md-country-evidence/independent-review/FINAL-DECISION.json",
+    "row_status_note": "Original writer-level PENDING fields are preserved historical observations; completed bounded source review is recorded separately. This does not confer accountant attestation.",
+    "final_status_hash_delta": "PENDING independent recheck"
   }
 }

@@ -187,8 +187,8 @@
     "ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-HG704.json": "1433a613d11137248c8548f2518760adce300491b49ed673d1b43774f1099057"
   },
   "Guide_hashes": {
-    "skills/international/moldova/md-corporate-income-tax.md": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
-    "skills/international/moldova/moldova-social-contributions.md": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2"
+    "skills/international/moldova/md-corporate-income-tax.md": "2c774e296d4796eaa223775b232237bad68cb7c06088ffa73f55c82c9709bdcd",
+    "skills/international/moldova/moldova-social-contributions.md": "cea22473d8ab26f81cf574b618135e5041d7cb682363a6ee437644ae7d03fc68"
   },
   "not_certified": "Otherassetclassifications,allbenefitentitlementconditions,acceleratedfieldimplementation,actualportalacceptance,rounding/tieconventions,fullcountrycoverage"
 }

@@ -2,7 +2,7 @@
 
 **Expanded2026 writer draft. Whole-country review, ordinary source/procedure gaps and accountant attestation remain open.**
 
-Guide SHA256: `3d7695c4d1359bf2705cf303da81cba5ef220b6af7aba12ba949bc306e9a0099`. JSON retains each short exact original-language quote, full context, URL, read date and source hash. Independent review must check the actual Guide application and context, not quote presence alone.
+Guide SHA256: `6c3878625755d8b9bbc8af6c10689f302874cc6840690f7e001bee178622d0ae`. JSON retains each short exact original-language quote, full context, URL, read date and source hash. Independent review must check the actual Guide application and context, not quote presence alone.
 
 |ID|Rule/figure or exact source-rule opening|Guide section|Act/article and official source|Short exact original-language quote|Read|
 |---|---|---|---|---|---|
@@ -397,3 +397,7 @@ Two current recomputing examples retained with hashes. Independent legal-assumpt
 ## Subsequently merged PR #793
 
 All 97 incoming units and the full file are retained in [the complete predecessor table](md-country-evidence/public-pr793-predecessor-reconciliation.md). This does not certify independent review or comprehensive coverage of the expanded draft.
+
+## Bounded source-review status, 31 October 2026
+
+[Independent review record](md-country-evidence/independent-review/FINAL-REVIEW.md). The historical writer checkpoint above is retained. All ordinary gaps remain; this is not accountant attestation or comprehensive country coverage.

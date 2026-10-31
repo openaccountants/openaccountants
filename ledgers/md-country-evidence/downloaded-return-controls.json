@@ -185,8 +185,8 @@
     "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-INSTRUCTIONS-CORE-DOWNLOADED-20261030.json": "16855ea51a23911242640e3d1c6529a6f712b286eea2d5f052c7411382d9f90b"
   },
   "Guide_hashes": {
-    "skills/international/moldova/md-corporate-income-tax.md": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
-    "skills/international/moldova/moldova-income-tax.md": "4246895075dc055df25c1b51741e25ba7b41b31a8a32e97e7eb34842dc874609"
+    "skills/international/moldova/md-corporate-income-tax.md": "2c774e296d4796eaa223775b232237bad68cb7c06088ffa73f55c82c9709bdcd",
+    "skills/international/moldova/moldova-income-tax.md": "fc6132e0cb54db456395ac28183395639697dade634111fbfa10de6925021f9e"
   },
   "read_date": "2026-10-30",
   "not_certified": "Live portal acceptance/field names, half-way rounding/stage,retiredmetal-tradingcategory,remainingUNIFtaxsections,defectiveDAP24reliefheader"

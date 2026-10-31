@@ -1,9 +1,9 @@
 {
-  "status": "LOCAL 2026 WRITER DRAFT; ordinary scope and source gaps retained; independent whole-country review not requested",
+  "status": "Source-cited writer draft; bounded independent source review completed31October2026; ordinary gaps remain; no accountant attestation or comprehensive coverage",
   "country": "MD",
   "slug": "moldova-social-contributions",
   "Guide_path": "skills/international/moldova/moldova-social-contributions.md",
-  "Guide_sha256": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2",
+  "Guide_sha256": "cea22473d8ab26f81cf574b618135e5041d7cb682363a6ee437644ae7d03fc68",
   "rows": [
     {
       "id": "MD-SC-001",
@@ -10977,12 +10977,19 @@
   "baseline_old_units": 155,
   "remaining": "Guide Sources Not yet confirmed and country README remain authoritative; no complete-coverage, accountant-attestation or independent-review claim",
   "source_integrity": "Quotes and retained article/source hashes checked by writer; not independent substantive verification",
-  "new_bytes": 95692,
+  "new_bytes": 96114,
   "subsequently_merged_repairs_20261031": {
     "PR": 1026,
     "main": "3d521d986bb983a2e364fa897668e95b8d38aef0",
     "complete_destination_table": "ledgers/md-country-evidence/public-merged-repair-predecessor-reconciliation.json",
     "units": 79,
     "review_scope": "Original smaller-file review retained; expanded whole-country review pending"
+  },
+  "bounded_source_review": {
+    "decision": "PASS_FOR_BOUNDED_SOURCE_CITED_DRAFT",
+    "tax_method_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+    "record": "ledgers/md-country-evidence/independent-review/FINAL-DECISION.json",
+    "row_status_note": "Original writer-level PENDING fields are preserved historical observations; completed bounded source review is recorded separately. This does not confer accountant attestation.",
+    "final_status_hash_delta": "PENDING independent recheck"
   }
 }

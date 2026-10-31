@@ -1,8 +1,8 @@
 {
-  "status": "2026 CORPORATE WRITER DRAFT; independent whole-country review in progress, focused011/012corrections pending; ordinary gaps remain",
+  "status": "Source-cited writer draft; bounded independent source review completed31October2026; ordinary gaps remain; no accountant attestation or comprehensive coverage",
   "slug": "md-corporate-income-tax",
   "Guide_path": "skills/international/moldova/md-corporate-income-tax.md",
-  "Guide_sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
+  "Guide_sha256": "2c774e296d4796eaa223775b232237bad68cb7c06088ffa73f55c82c9709bdcd",
   "rows": [
     {
       "id": "MD-CORP-001",
@@ -8761,5 +8761,12 @@
     "units": 95,
     "status": "WRITER MAPPING ONLY; current scope correction supplied; independent whole-country review pending"
   },
-  "new_bytes": 101217
+  "new_bytes": 101533,
+  "bounded_source_review": {
+    "decision": "PASS_FOR_BOUNDED_SOURCE_CITED_DRAFT",
+    "tax_method_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+    "record": "ledgers/md-country-evidence/independent-review/FINAL-DECISION.json",
+    "row_status_note": "Original writer-level PENDING fields are preserved historical observations; completed bounded source review is recorded separately. This does not confer accountant attestation.",
+    "final_status_hash_delta": "PENDING independent recheck"
+  }
 }

@@ -2,7 +2,7 @@
 
 **Local 2026 writer draft. Ordinary gaps remain; no whole-country independent review, accountant attestation or complete-coverage claim.**
 
-Guide SHA256: `4246895075dc055df25c1b51741e25ba7b41b31a8a32e97e7eb34842dc874609`. Short exact original-language quotations are tied to full retained paragraph contexts, official URLs, source hashes and read dates in the JSON. A source row can contain linked statutory conditions; the reviewer must verify the whole retained paragraph and its Guide application, not only the quotation.
+Guide SHA256: `fc6132e0cb54db456395ac28183395639697dade634111fbfa10de6925021f9e`. Short exact original-language quotations are tied to full retained paragraph contexts, official URLs, source hashes and read dates in the JSON. A source row can contain linked statutory conditions; the reviewer must verify the whole retained paragraph and its Guide application, not only the quotation.
 
 | ID | Rule/figure or exact source-rule opening | Guide section | Act/article and official URL | Short original-language quote | Read |
 |---|---|---|---|---|---|
@@ -1112,3 +1112,7 @@ Read31October2026; independent delta recheck pending. The correction audit prese
 | ID | Rule/figure | Section | Act/article and official URL | Short original-language quote | Read |
 |---|---|---|---|---|---|
 | MD-IND-651 | Independentretail69^12: annualminimum3000; quarterlyI–III1%ofsales/minimum750, QIVannualreconciliation; SFSnotice25afterquarter/payment25afternoticedeadline; start/cessationminimum250perregisteredmonth; localTreasuryaddressrule | The base: Independent retail activity; Deadlines and filing | [Fiscal Code art.69^12(1)–(3), including(2^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Pentru trimestrele I–III se achită 1% din vânzările efectuate pentru fiecare trimestru, dar nu mai puțin de 750 de lei. | 2026-10-30 |
+
+## Bounded source-review status, 31 October 2026
+
+[Independent review record](md-country-evidence/independent-review/FINAL-REVIEW.md). The historical writer checkpoint above is retained. All ordinary gaps remain; this is not accountant attestation or comprehensive country coverage.

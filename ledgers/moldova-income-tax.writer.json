@@ -1,8 +1,8 @@
 {
-  "status": "2026 INDIVIDUAL WRITER DRAFT; independent whole-country review in progress; focused013/014corrections pending; ordinary gaps remain",
+  "status": "Source-cited writer draft; bounded independent source review completed31October2026; ordinary gaps remain; no accountant attestation or comprehensive coverage",
   "slug": "moldova-income-tax",
   "Guide_path": "skills/international/moldova/moldova-income-tax.md",
-  "Guide_sha256": "4246895075dc055df25c1b51741e25ba7b41b31a8a32e97e7eb34842dc874609",
+  "Guide_sha256": "fc6132e0cb54db456395ac28183395639697dade634111fbfa10de6925021f9e",
   "rows": [
     {
       "id": "MD-IND-001",
@@ -15040,7 +15040,7 @@
   ],
   "baseline_old_units": 192,
   "old_bytes": 46135,
-  "new_bytes": 93377,
+  "new_bytes": 93721,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Duplicated old headings/rate tables/boilerplate consolidated into the canonical nine sections; every original rule/table/bullet has a destination.",
@@ -15062,5 +15062,12 @@
     "evidence": "ledgers/md-country-evidence/vat-it-independent-review-corrections.json",
     "status": "Writer fix; independent recheck pending",
     "new_source_rows": 14
+  },
+  "bounded_source_review": {
+    "decision": "PASS_FOR_BOUNDED_SOURCE_CITED_DRAFT",
+    "tax_method_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+    "record": "ledgers/md-country-evidence/independent-review/FINAL-DECISION.json",
+    "row_status_note": "Original writer-level PENDING fields are preserved historical observations; completed bounded source review is recorded separately. This does not confer accountant attestation.",
+    "final_status_hash_delta": "PENDING independent recheck"
   }
 }

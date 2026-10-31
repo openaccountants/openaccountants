@@ -1,7 +1,7 @@
 ---
 name: moldova-social-contributions
-description: "Compute Moldova social contributions and compulsory medical insurance for 2026. Distinguish ordinary private and public employers, special aviation roles, agricultural relief, IT-park insured income, independent physicians and justice professions, fixed-contribution categories, patents, taxi transitions, day workers and independent service entrepreneurs. Apply the social minimum base and separate part-time contribution floor, and distinguish salary accrual from medical-premium payment timing. Use for CNAS, CNAM, IPC21, fixed social insurance, health premiums, payroll contribution reconciliation, status overlaps, payment deadlines and arrears. This source-cited writer draft preserves predecessor subjects through explicit destinations and gaps, requires whole-country independent review and does not claim comprehensive coverage or accountant attestation."
-version: "0.12"
+description: "Compute Moldova social contributions and compulsory medical insurance for 2026. Distinguish ordinary private and public employers, special aviation roles, agricultural relief, IT-park insured income, independent physicians and justice professions, fixed-contribution categories, patents, taxi transitions, day workers and independent service entrepreneurs. Apply the social minimum base and separate part-time contribution floor, and distinguish salary accrual from medical-premium payment timing. Use for CNAS, CNAM, IPC21, fixed social insurance, health premiums, payroll contribution reconciliation, status overlaps, payment deadlines and arrears. This source-cited writer draft preserves predecessor subjects through explicit destinations and gaps, has a bounded source-review record linked under Sources and does not claim comprehensive coverage or accountant attestation."
+version: "0.13"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -14,11 +14,11 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova social contributions and medical insurance, 2026 v0.12
+# Moldova social contributions and medical insurance, 2026 v0.13
 
 ## Who this applies to
 
-Determine the actual payer category, insured person, remuneration, work period and payment date before calculating Moldova's 2026 social contributions or mandatory medical insurance. These are different systems with different bases and timing. This source-cited writer draft replaces the earlier mixed-year summary. It is not independently reviewed or accountant-attested; the country remains partial. [Law 489/1999 arts. 17–23][social]; [Law 1593/2002][health].
+Determine the actual payer category, insured person, remuneration, work period and payment date before calculating Moldova's 2026 social contributions or mandatory medical insurance. These are different systems with different bases and timing. This source-cited writer draft replaces the earlier mixed-year summary. It has a bounded source-review record linked under Sources and is not accountant-attested; the country remains partial. [Law 489/1999 arts. 17–23][social]; [Law 1593/2002][health].
 
 Social insurance covers the ordinary private and public employer categories, specified special-condition work, IT-park employment, independent family physicians, qualifying agriculture, individual/farm founders, independent retail and plant-product purchasing, justice professions, patents, day workers and the new independent service entrepreneurs. A sole trader, patent holder and independent service entrepreneur are not interchangeable categories. Obtain actual registration and overlapping employment/pension/disability records. Insured benefits also differ by category; payment of a fixed amount does not establish entitlement to every benefit. [Law 489 art. 17 and annex 1; CNAS instructions points 2–3, 10–20][instructions].
 
@@ -423,7 +423,9 @@ The predecessor's eight payroll/self-employment tests and six bank classificatio
 
 ## Sources
 
-Primary-source reads on 30–31 October 2026, with individual dates below. The retained source bodies, incomplete writer ledger and predecessor destinations are in [the social ledger](../../../ledgers/moldova-social-contributions.md) and country evidence. This is a local writer draft. No whole-country independent review or accountant attestation is claimed. Platform metadata and CTA are preserved.
+**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+
+Primary-source reads on 30–31 October 2026, with individual dates below. The retained source bodies, incomplete writer ledger and predecessor destinations are in [the social ledger](../../../ledgers/moldova-social-contributions.md) and country evidence. This is a local writer draft. The bounded source-review record is linked below; no accountant attestation or comprehensive country coverage is claimed. Platform metadata and CTA are preserved.
 
 | Primary source | Read scope and limit | Read on |
 |---|---|---|

@@ -2,7 +2,7 @@
 
 **Local 2026 writer draft. Whole-country independent review pending. Ordinary source and implementation gaps remain open in the Guide Sources and country README.**
 
-Guide SHA256: `0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2`. Source quotes are exact after whitespace normalization; full paragraphs, official URLs, source hashes and assumed cases are retained in the JSON. The initial 67-row source checkpoint is preserved separately.
+Guide SHA256: `cea22473d8ab26f81cf574b618135e5041d7cb682363a6ee437644ae7d03fc68`. Source quotes are exact after whitespace normalization; full paragraphs, official URLs, source hashes and assumed cases are retained in the JSON. The initial 67-row source checkpoint is preserved separately.
 
 | ID | Rule/figure | Guide section | Act/article and official URL | Short exact original-language quote | Read on |
 |---|---|---|---|---|---|
@@ -848,3 +848,7 @@ Full DOC and all3 render pages read31October2026; page3 blank. Underlying regula
 | MD-SC-495 | Printed responsibility declaration and separate personal-data consent fields | Deadlines and filing: CNAM correction application: fields and evidence | [Actual CNAM legal-representative correction application, annex1 declarations field; full operative regulation not verified](https://cnam.md/?wpdocs_dl=7594&wpdocs_nonce=9f81a95c7a) | Accept și consimt că port răspundere privind prezentarea datelor eronate. | 2026-10-31 |
 | MD-SC-496 | Application date, signature and printed stamp field; no universal legal stamp duty inferred | Deadlines and filing: CNAM correction application: fields and evidence | [Actual CNAM legal-representative correction application, annex1 signature field; full operative regulation not verified](https://cnam.md/?wpdocs_dl=7594&wpdocs_nonce=9f81a95c7a) | Data _____________________Semnătura___________________ L.Ș. | 2026-10-31 |
 | MD-SC-497 | Historical printed privacy reference retained as form evidence, not certified current2026 privacy law | Deadlines and filing: CNAM correction application: fields and evidence | [Actual CNAM legal-representative correction application, annex1 privacy-footer field; full operative regulation not verified](https://cnam.md/?wpdocs_dl=7594&wpdocs_nonce=9f81a95c7a) | Legea nr. 133 din 08.07.2011 privind protecţia datelor cu caracter personal. | 2026-10-31 |
+
+## Bounded source-review status, 31 October 2026
+
+[Independent review record](md-country-evidence/independent-review/FINAL-REVIEW.md). The historical writer checkpoint above is retained. All ordinary gaps remain; this is not accountant attestation or comprehensive country coverage.

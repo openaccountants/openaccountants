@@ -1,7 +1,7 @@
 ---
 name: moldova-vat
-description: Use this Guide for Moldova VAT (TVA) registration, output tax, input credits, mixed supplies, imports, exported services, tax points and the monthly VAT12 reconciliation for 2026. It covers ordinary registered businesses and explains separate obligations for unregistered service importers, specified property purchasers, energy traders and nonresident electronic-service suppliers. Trigger on Moldova VAT, TVA Moldova, VAT12, imported SaaS, input deduction or SFS VAT filing. Load alongside vat-workflow-base v0.1 or later. Check the dated registration thresholds, actual supply classification and evidence before calculating. Remaining source and implementation gaps are explicit; the country draft still requires independent pack review.
-version: 2.4
+description: Use this Guide for Moldova VAT (TVA) registration, output tax, input credits, mixed supplies, imports, exported services, tax points and the monthly VAT12 reconciliation for 2026. It covers ordinary registered businesses and explains separate obligations for unregistered service importers, specified property purchasers, energy traders and nonresident electronic-service suppliers. Trigger on Moldova VAT, TVA Moldova, VAT12, imported SaaS, input deduction or SFS VAT filing. Load alongside vat-workflow-base v0.1 or later. Check the dated registration thresholds, actual supply classification and evidence before calculating. Remaining source and implementation gaps are explicit; the country draft has a bounded source-review record linked under Sources.
+version: "2.5"
 jurisdiction: MD
 category: international
 tax_year: 2026
@@ -12,9 +12,9 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova VAT v2.4
+# Moldova VAT v2.5
 
-2026 writer draft, law read 30–31 October 2026. Use alongside `vat-workflow-base` v0.1 or later for document handling. The Moldova law and current return instructions control the tax calculation. This draft has not completed independent whole-country review or accountant attestation.
+2026 writer draft, law read 30–31 October 2026. Use alongside `vat-workflow-base` v0.1 or later for document handling. The Moldova law and current return instructions control the tax calculation. The bounded source-review record is linked under Sources; accountant attestation is not provided.
 
 ## Who this applies to
 
@@ -285,6 +285,8 @@ expected:
 
 ## Sources
 
+**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+
 | Primary source actually read | Scope | Read date |
 |---|---|---|
 | [BNM monetary-policy decision, 6 November 2025, point 1](https://bnm.md/en/node/69226) | Fetched 6.00% short-term base input; calendar-2026 daily percentage derived with Code 228(3), rather than copied from an old rate. | 2026-10-30 |
@@ -299,7 +301,7 @@ expected:
 |---|---|---|
 | [Current Code264–266](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Full assessment, collection and refund-limitation provisions read; clocks, statutory start dates and conditional extensions separated. Historical/Civil Code/Government implementation gaps remain | 2026-10-31 |
 
-Not yet confirmed: full2026 amendment-by-amendment commencement reconciliation beyond the dated changes above; actual late-registration assessment period and procedural relief; non-exact prorata rounding representation in SFS practice; Government refund application/proof/limits and2026 refund-programme amendments; Government capital-contribution, destruction, assistance-project/free-zone/processing and other specialist exemption procedures; full2026 cross-Nistru transitional law/customs and DCFTA origin procedures; current Ministry energy-trader own-use declaration procedure; current nonresident e-services registration/form/payment implementation; foreign-currency VAT conversion date and supporting BNM rule; case-specific late-charge relief/account allocation; current annex1TVA12DOCX/layout and authenticated portal validation/rounding; counterparty-specific status, bank-export conventions, the predecessor IBAN-prefix claim and the legal assumptions of the archived legacy transactions. These gaps remain explicit and this VAT draft does not establish whole-country coverage or independent review.
+Not yet confirmed: full2026 amendment-by-amendment commencement reconciliation beyond the dated changes above; actual late-registration assessment period and procedural relief; non-exact prorata rounding representation in SFS practice; Government refund application/proof/limits and2026 refund-programme amendments; Government capital-contribution, destruction, assistance-project/free-zone/processing and other specialist exemption procedures; full2026 cross-Nistru transitional law/customs and DCFTA origin procedures; current Ministry energy-trader own-use declaration procedure; current nonresident e-services registration/form/payment implementation; foreign-currency VAT conversion date and supporting BNM rule; case-specific late-charge relief/account allocation; current annex1TVA12DOCX/layout and authenticated portal validation/rounding; counterparty-specific status, bank-export conventions, the predecessor IBAN-prefix claim and the legal assumptions of the archived legacy transactions. These gaps remain explicit and this VAT draft does not establish comprehensive country coverage or accountant attestation.
 
 <!-- openaccountants-cta-block -->
 
