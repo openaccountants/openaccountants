@@ -21,10 +21,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.3
+version: 0.4
 ---
 
-# Liechtenstein individual income and wealth tax v0.3
+# Liechtenstein individual income and wealth tax v0.4
 
 ## Who this applies to
 
@@ -119,9 +119,32 @@ SteG article 9 starts with all movable and immovable wealth, and attributes a pa
 | Business assets | Acquisition/production cost less depreciation/value adjustments | [SteG 12(3)][law] |
 | Debt | Actual principal-debtor obligations; only the taxpayer's share of joint debt. Where only part of wealth is domestically taxable, allocate debt by domestic-taxable/total wealth ratio; debt cannot make taxable wealth negative | [SteG 11][law] |
 
-Keep the gross asset schedule, each exemption, date/value proof, total worldwide wealth and debt share/allocation separately. No universal balance-sheet or nominal-value rule replaces the stated classifications. The detailed unquoted-company valuation, foreign asset values and disputed/actuarial rights remain separate workpapers.
+Keep the gross asset schedule, each exemption, date/value proof, total worldwide wealth and debt share/allocation separately. No universal balance-sheet or nominal-value rule replaces the stated classifications. Use the ordinary unquoted-company workpaper below; actual company classifications and values, foreign asset values and disputed/actuarial rights still require their own evidence.
 
 SteG 18(1) rounds wealth **down to CHF 100 before conversion into deemed income**, and income **down to CHF 10**. Apply these at the stated bases, retaining the unrounded reconciliation. This is not permission to round each invoice or to invent a final-tax rounding convention. [SteG 18(1)][law]
+
+### Unquoted company shares: ordinary valuation workpaper
+
+Use SteV 7a and Annex 1 before carrying an unquoted company interest into the wealth schedule. The starting accounts are the last accounts closed before the holder's tax year begins; use consolidated accounts where commercial law requires them. Where the consolidated accounts omit tax-permitted reserves, the ordinance permits corresponding equity and earnings adjustments. The official 2026 helper illustrates valuation at **1 January 2026**, ordinarily using **31 December 2025** accounts for a calendar-year company. [SteV 7a(3), Annex 1][ordinance]; [2026 helper, opening instructions][valuation-helper]
+
+First check the exceptions. If the taxpayer proves the ordinary method does not represent market value, SteV 7a(2)(a) permits a different valuation. An actual transfer between independent parties supplies the purchase price as market value under 7a(2)(b), while the company's economic position has not materially changed. Retain the transaction and valuation evidence. [SteV 7a(2)][ordinance]
+
+For an operating trading, industrial or service company, prepare these separate steps:
+
+| Step | Method | Official source |
+|---|---|---|
+| Substance value S | Reported equity **after profit appropriation**, plus hidden reserves on participations and taxed hidden reserves. Revalue underlying unquoted-company participations under Annex 1 A(1); if that value is below their carrying value, retain the carrying value | [SteV Annex 1 A(3)][ordinance] |
+| Earnings R | Commercial net earnings, adjusted for non-business expenses. Annualise a period shorter or longer than twelve months to twelve months. The authority can adjust results affected by fundamental business changes or exceptional events | [SteV Annex 1 A(2)][ordinance] |
+| Earnings value E | **max(0, (2 × current annualised R + preceding annualised R) × 0.85 ÷ (3 × K))**. The 0.85 factor is the 15% risk deduction. K is **20%** for regulated financial institutions and service providers under FMA supervision, **15%** for other legal persons | [SteV Annex 1 A(2), formula on printed page 34][ordinance] |
+| Operating company value | **(2 × E + S) ÷ 3**, subject to the non-operating-asset adjustments and minimum below | [SteV Annex 1 A(1), formula on printed page 34][ordinance] |
+
+For shareholder receivables and non-business assets within SteG 54, remove their value from S for the operating weighting and remove their capitalised net earnings from the earnings component. Add those asset values back in full afterwards. The minimum is **60% of operating substance value plus 100% of those excluded asset values**. Keep the asset classification, valuation, related net results and the article 54 reconciliation; do not merely remove the asset's income and leave its value weighted inside S as well. [SteV Annex 1 A(1)][ordinance]
+
+Use substance value until a newly formed company has representative results. Holding, finance and property companies, companies in liquidation and inactive companies use substance value under Annex 1 B. **Banks and insurers are not finance companies for that exception**; classify them under the actual rules before choosing a method or K. [SteV Annex 1 A(2), B][ordinance]
+
+Annex 1 C bases the minority deduction on **voting rights**, for value determined under A: below 20% voting rights gives a **20% deduction**; at least 20% but below 50% gives **10%**; at least 50% gives **zero**. Private shareholder agreements do not change that statutory treatment. Establish the holder's economic interest and voting rights separately; do not apply the deduction automatically to an Annex 1 B company or assume unequal capital and voting interests are identical. [SteV Annex 1 C][ordinance]
+
+The official helper is supporting calculation material. Its cells F70/G70 use one ownership percentage to allocate value, and J70 uses that same input for the minority lookup. Its P44/P57 formulas round company value down to CHF 100. Keep those form operations distinct from the statutory valuation and from SteG 18's rounding of the taxpayer's total wealth; they do not establish a final-tax rounding rule. Reconcile unusual share classes, consolidated reserves, actual non-operating assets and representative earnings before using the result. [2026 helper, cells F70:K70, P44, P57][valuation-helper]
 
 ### Ordinary income deductions and exclusions
 
@@ -291,9 +314,11 @@ Obtain residence/family/election facts, the municipality/year rate, all assets/d
 | LGBl. 2024 Nr. 483, amendment of the SteG (4% Sollertrag in article 5 from tax year 2026) | https://www.gesetze.li/chrono/pdf/2024483000 | 2026-10-24 |
 | Steuerverwaltung, eTax electronic return | https://www.llv.li/de/landesverwaltung/steuerverwaltung/etax-elektronische-steuererklaerung | 2026-10-30 |
 | Steuerverwaltung, wealth and income tax (forms, guidance, municipal surcharges) | https://www.llv.li/de/landesverwaltung/steuerverwaltung/steuern-natuerliche-personen/vermoegens--und-erwerbssteuer | 2026-10-31 |
+| Steuerverwaltung, 2026 unquoted-company valuation helper, sheet Bewertung 2026 | https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx | 2026-10-31 |
 
-Not yet confirmed: the 2026 municipal surcharge of each municipality (the authority page lists surcharges up to 2025 only); the filing date for 2026 returns; expenditure (lump-sum) taxation for non-working foreign residents; substitute wealth taxation of trusts and foundations; valuation of unquoted shares and actuarial rights; final rounding of the assessed tax; the exact interest day-count.
+Not yet confirmed: the 2026 municipal surcharge of each municipality (the authority page lists surcharges up to 2025 only); the filing date for 2026 returns; expenditure (lump-sum) taxation for non-working foreign residents; substitute wealth taxation of trusts and foundations; actual unquoted-share valuations outside the ordinary method described here, unequal share-class allocations and actuarial rights; final rounding of the assessed tax; the exact interest day-count.
 
+[valuation-helper]: https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx
 [etax]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/etax-elektronische-steuererklaerung
 [forms]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/steuern-natuerliche-personen/vermoegens--und-erwerbssteuer
 [law]: https://www.gesetze.li/konso/pdf/2010340000

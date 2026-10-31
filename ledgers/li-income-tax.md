@@ -1,7 +1,7 @@
 # Figure ledger: li-income-tax
 
 WRITER LEDGER, not independent review. Sources are original official Act/Ordinance PDFs and an explicitly selected exact web-reader excerpt; no private account or return was accessed. Current source files in sibling evidence directories are members of the country freeze.
-Current Guide SHA256: `43dbf99f43e4763b7d8e1efc962160f82bc562cdc5a8fbf591cb47ec90f4e96f`. All27tariff rows are bound individually; annual minima are monthly amounts times12.
+Current Guide SHA256: `c68edca525d15b86768503ad8cb6b9d77e64bbf7e6a3c4faac839e56bdf849e2`. All27tariff rows are bound individually; annual minima are monthly amounts times12.
 
 | ID | Rule/figure and section | Act/article | Official URL | Short exact German quote | Read date |
 |---|---|---|---|---|---|
@@ -233,3 +233,32 @@ Full predecessor unit text and hashes are retained in the JSON companion and exa
 Actual municipal rates, tax-value/actuarial/unquoted company and deduction facts, specific special/foreign regimes, final tax rounding/current assigned calendar/live forms and fresh independent pack review.
 
 Quotation-binding failures: []. Binding verifies source identity, not independent legal correctness.
+
+
+## 31 October 2026 ordinary unquoted-share valuation addition
+
+Writer addition, independent review pending. The original 121 ledger groups and prior review evidence are preserved. The official 2026 workbook is unchanged; its formulas are supporting evidence, not legislation. Printed ordinance pages 34–36 were visually inspected. Full source contexts and workbook cells are retained in the JSON ledger.
+
+| ID | Rule/figure and section | Act/article | Official URL | Short exact German quote | Read date |
+|---|---|---|---|---|---|
+| LI-IND-VAL01 | Last pre-tax-year closed accounts; mandatory consolidation; permitted reserve adjustments | SteV7a(3) | https://www.gesetze.li/konso/pdf/2010437000 | letzte vor Beginn des Steuerjahres des Inhabers abgeschlossene Jahresrechnung. | 2026-10-31 |
+| LI-IND-VAL02 | Proof of different market value exception | SteV7a(2)(a) | https://www.gesetze.li/konso/pdf/2010437000 | nicht dem Verkehrswert entspricht; | 2026-10-31 |
+| LI-IND-VAL03 | Independent transfer price while economic position not materially changed | SteV7a(2)(b) | https://www.gesetze.li/konso/pdf/2010437000 | solange sich die wirtschaftliche Lage der Gesellschaft nicht wesentlich geändert hat. | 2026-10-31 |
+| LI-IND-VAL04 | Operating trade/industry/service company weighted value (2E+S)/3; formula visually checked | SteVAnnex1A(1) | https://www.gesetze.li/konso/pdf/2010437000 | Personen mit einem Handels-, Industrie- und Dienstleistungsbetrieb | 2026-10-31 |
+| LI-IND-VAL05 | Remove article54 shareholder/nonbusiness values and capitalised earnings, then restore asset values in full | SteVAnnex1A(1) | https://www.gesetze.li/konso/pdf/2010437000 | werden anschliessend die erwähnten Vermögenswerte wiederum zum (betrieblichen) Unternehmenswert hinzugerechnet. | 2026-10-31 |
+| LI-IND-VAL06 | Minimum60% operating substance plus100% shareholder/nonbusiness assets | SteVAnnex1A(1) | https://www.gesetze.li/konso/pdf/2010437000 | mindestens 60 % des (betrieblichen) Substanzwertes zuzüglich 100 % | 2026-10-31 |
+| LI-IND-VAL07 | Current earnings weighted twice, prior once, divided3; formula visually checked | SteVAnnex1A(2) | https://www.gesetze.li/konso/pdf/2010437000 | Der Ertragswert zum Zeitpunkt p wird wie folgt ermittelt: | 2026-10-31 |
+| LI-IND-VAL08 | 15% risk reduction; earnings after nonbusiness expense corrections; negative earnings value0 | SteVAnnex1A(2) | https://www.gesetze.li/konso/pdf/2010437000 | 0.85 = entspricht einem Risikoabschlag von 15 % | 2026-10-31 |
+| LI-IND-VAL09 | Negative earnings value zero | SteVAnnex1A(2) | https://www.gesetze.li/konso/pdf/2010437000 | Ein negativer Ertragswert wird mit Null angesetzt. | 2026-10-31 |
+| LI-IND-VAL10 | Annualise non12month accounts; new companies substance until representative earnings | SteVAnnex1A(2) | https://www.gesetze.li/konso/pdf/2010437000 | auf zwölf Monate umzurechnen. | 2026-10-31 |
+| LI-IND-VAL11 | Authority can adjust exceptional or fundamentally changed results | SteVAnnex1A(2) | https://www.gesetze.li/konso/pdf/2010437000 | um repräsentative Werte zu ermitteln. | 2026-10-31 |
+| LI-IND-VAL12 | 20% capitalisation for FMA supervised regulated financial institutions/services;15% others | SteVAnnex1A(2) | https://www.gesetze.li/konso/pdf/2010437000 | beträgt der Kapitalisierungssatz 20 %. | 2026-10-31 |
+| LI-IND-VAL13 | Substance = after-appropriation equity + participation hidden reserves + taxed hidden reserves; formula visually checked | SteVAnnex1A(3) | https://www.gesetze.li/konso/pdf/2010437000 | ausgewiesenes Eigenkapital gemäss Jahresrechnung (nach Gewinnverwendung) | 2026-10-31 |
+| LI-IND-VAL14 | Lookthrough participation valuation, carrying-value floor | SteVAnnex1A(3) | https://www.gesetze.li/konso/pdf/2010437000 | Liegt der ermittelte Wert unter dem Bilanzwert der Beteiligung, so ist der Bilanzwert massgebend. | 2026-10-31 |
+| LI-IND-VAL15 | Holding,finance,property,liquidating,inactive companies substance method | SteVAnnex1B | https://www.gesetze.li/konso/pdf/2010437000 | gilt der Substanzwert nach Bst. A Ziff. 3 als Unternehmenswert. | 2026-10-31 |
+| LI-IND-VAL16 | Banks/insurers not finance companies under B exception | SteVAnnex1B | https://www.gesetze.li/konso/pdf/2010437000 | insbesondere Banken und Versicherungen, sind keine Finanzgesellschaften. | 2026-10-31 |
+| LI-IND-VAL17 | Voting-right basis; C expressly applies to A value; private agreements disregarded | SteVAnnex1C | https://www.gesetze.li/konso/pdf/2010437000 | Massgabe des Stimmrechtsanteils folgender Pauschalabzug auf dem nach Bst. A ermittelten Unternehmenswert | 2026-10-31 |
+| LI-IND-VAL18 | Below20% votes discount20%;20inclusive–50exclusive discount10%;50inclusive0 | SteVAnnex1C | https://www.gesetze.li/konso/pdf/2010437000 | < 20 % 20 % >= 20 % < 50 % 10 % >= 50 % 0% | 2026-10-31 |
+| LI-IND-VAL19 | Official2026 helper1January2026/31December2025 calendar accounts instructions | Official 2026 helper, Bewertung 2026 cells A1,A3 | https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx | Hilfsformular zur Bewertung von Unternehmensanteilen ohne Kursnotiz (Steuerjahr 2026)  /  Der Unternehmenswert ist auf den 1. Januar des Steuerjahres zu ermitteln. Der Bewertung ist die letzte vor diesem Stichtag abgeschlossene Jahresrechnung zu Grunde zu legen. Beispiel: Für das Steuerjahr 2026 ist der Unternehmenswert zum 1. Januar 2026 zu ermitteln. Schliesst das Geschäftsjahr mit dem Kalenderjahr, so ist die Jahresrechnung per 31. Dezember 2025 massgebend. Sofern ein Geschäftsjahr nicht 12 Monate umfasst, ist das entsprechende Rechnungsergebnis auf 12 Monate umzurechnen. | 2026-10-31 |
+| LI-IND-VAL20 | Helper company rounding100 inP44/P57; not finaltaxrounding authority | Official 2026 helper, Bewertung 2026 cells P44,P57 | https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx | 0  /  0 | 2026-10-31 |
+| LI-IND-VAL21 | Helper F70 feeds economic allocation G70 and voting discount lookup J70; separate legal facts if unequal | Official 2026 helper, Bewertung 2026 cells F69,G70,J70,K70 | https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx | Anteil in %  /  0  /  0.2  /  0 | 2026-10-31 |

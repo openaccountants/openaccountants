@@ -1,6 +1,6 @@
 ---
 jurisdiction: LI
-version: 0.8
+version: 0.9
 last_updated: 2026-10-31
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -35,6 +35,8 @@ Calendar tax year, Swiss franc. The Steuerverwaltung administers individual weal
 Also in the pack: [li-tax-overview](li-tax-overview.md) (router and headline figures) and [li-company-formation](li-company-formation.md) (legal forms, capital, accounts and review).
 
 Out of scope: VAT platform, margin, group and net-tax-rate schemes; expenditure (lump-sum) taxation; trusts and foundations; GloBE top-up tax; the terms of individual tax treaties.
+
+The individual-tax Guide now supplies the ordinary unquoted-company valuation under SteV 7a and Annex 1: weighted earnings/substance, the 60% operating-substance minimum, company-type exceptions and voting-right minority deductions. The official 2026 helper is retained with separate formula observations. This addition awaits independent review; actual asset/company classifications and values, unequal share classes, municipal rates and the other explicit Guide limits remain unresolved. The [prior pack review](../../../ledgers/li-pack-review-evidence/README.md) remains tied to its reviewed snapshot.
 
 ## Official sources
 

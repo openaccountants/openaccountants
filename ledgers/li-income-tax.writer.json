@@ -1,7 +1,7 @@
 {
   "status": "WRITER LEDGER; FULL INDEPENDENT COUNTRY REVIEW PENDING",
   "guide": "skills/international/liechtenstein/li-income-tax.md",
-  "guide_sha256": "43dbf99f43e4763b7d8e1efc962160f82bc562cdc5a8fbf591cb47ec90f4e96f",
+  "guide_sha256": "c68edca525d15b86768503ad8cb6b9d77e64bbf7e6a3c4faac839e56bdf849e2",
   "rules": [
     {
       "id": "LI-IND-001",
@@ -1535,6 +1535,319 @@
       "classification": "ASSUMED INPUTS/DERIVED ARITHMETIC",
       "Guide_section": "Two worked examples that recompute",
       "case_block_sha256": "3a41b5b3705a810c3f144cd188b25fffd2a938a42315055ebed3619066898a8a"
+    },
+    {
+      "id": "LI-IND-VAL01",
+      "rule_or_figure": "Last pre-tax-year closed accounts; mandatory consolidation; permitted reserve adjustments",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteV7a(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "letzte vor Beginn des Steuerjahres des Inhabers abgeschlossene Jahresrechnung.",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 4,
+      "source_context_de": "640.01 Steuerverordnung (SteV) 2. Vermögenssteuer Art. 7 Stellvertretende Entrichtung der Vermögens- oder Erwerbssteuer (Art. 9 Abs. 3 und 4 SteG) 1) Der Antrag auf Entrichtung der Vermögens- oder Erwerbssteuer durch die Stiftung, besondere Vermögenswidmung oder stiftungsähnlich ausgestaltete Anstalt anstelle der Begünstigten ist bei der Steuerverwaltung schriftlich einzureichen. 2) Der Antrag hat folgende Angaben zu enthalten:10 a) bei unwiderruflichen Stiftungen, stiftungsähnlichen Anstalten und besonderen Vermögenswidmungen mit bestimmbaren Begünstigungen: die Wohnorte der Begünstigten sowie deren Begünstigtenanteil; b) bei widerruflichen Stiftungen, stiftungsähnlichen Anstalten und besonderen Vermögenswidmungen: der Name und Wohnort des Errichters. 3) Die stellvertretende Entrichtung nach Abs. 1 erfolgt bis zum Widerruf des Antrages. 4) Die Antragstellung sowie der Widerruf haben jeweils bis zum 31. Dezember des entsprechenden Steuerjahres zu erfolgen.11 Art. 7a12 Bewertung von Wertpapieren ohne Kursnotiz (Art. 12 Abs. 1 Bst. d SteG) 1) Die Bewertung von Wertpapieren ohne Kursnotiz erfolgt vorbehaltlich Abs. 2 anhand des Ertragswertes und des Substanzwertes und richtet sich nach Anhang 1. 2) Eine von Abs. 1 abweichende Bewertung erfolgt, wenn: a) der Steuerpflichtige nachweist, dass die Bewertung nach Abs. 1 nicht dem Verkehrswert entspricht; b) für die Wertpapiere eine Handänderung unter unabhängigen Dritten stattgefunden hat. In diesem Fall gilt der Kaufpreis als Verkehrswert, solange sich die wirtschaftliche Lage der Gesellschaft nicht wesentlich geändert hat. 3) Grundlage für die Bewertung bildet die letzte vor Beginn des Steuerjahres des Inhabers abgeschlossene Jahresrechnung. Falls aufgrund der han4 Fassung: 01.07.2026",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL02",
+      "rule_or_figure": "Proof of different market value exception",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteV7a(2)(a)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "nicht dem Verkehrswert entspricht;",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 4,
+      "source_context_de": "640.01 Steuerverordnung (SteV) 2. Vermögenssteuer Art. 7 Stellvertretende Entrichtung der Vermögens- oder Erwerbssteuer (Art. 9 Abs. 3 und 4 SteG) 1) Der Antrag auf Entrichtung der Vermögens- oder Erwerbssteuer durch die Stiftung, besondere Vermögenswidmung oder stiftungsähnlich ausgestaltete Anstalt anstelle der Begünstigten ist bei der Steuerverwaltung schriftlich einzureichen. 2) Der Antrag hat folgende Angaben zu enthalten:10 a) bei unwiderruflichen Stiftungen, stiftungsähnlichen Anstalten und besonderen Vermögenswidmungen mit bestimmbaren Begünstigungen: die Wohnorte der Begünstigten sowie deren Begünstigtenanteil; b) bei widerruflichen Stiftungen, stiftungsähnlichen Anstalten und besonderen Vermögenswidmungen: der Name und Wohnort des Errichters. 3) Die stellvertretende Entrichtung nach Abs. 1 erfolgt bis zum Widerruf des Antrages. 4) Die Antragstellung sowie der Widerruf haben jeweils bis zum 31. Dezember des entsprechenden Steuerjahres zu erfolgen.11 Art. 7a12 Bewertung von Wertpapieren ohne Kursnotiz (Art. 12 Abs. 1 Bst. d SteG) 1) Die Bewertung von Wertpapieren ohne Kursnotiz erfolgt vorbehaltlich Abs. 2 anhand des Ertragswertes und des Substanzwertes und richtet sich nach Anhang 1. 2) Eine von Abs. 1 abweichende Bewertung erfolgt, wenn: a) der Steuerpflichtige nachweist, dass die Bewertung nach Abs. 1 nicht dem Verkehrswert entspricht; b) für die Wertpapiere eine Handänderung unter unabhängigen Dritten stattgefunden hat. In diesem Fall gilt der Kaufpreis als Verkehrswert, solange sich die wirtschaftliche Lage der Gesellschaft nicht wesentlich geändert hat. 3) Grundlage für die Bewertung bildet die letzte vor Beginn des Steuerjahres des Inhabers abgeschlossene Jahresrechnung. Falls aufgrund der han4 Fassung: 01.07.2026",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL03",
+      "rule_or_figure": "Independent transfer price while economic position not materially changed",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteV7a(2)(b)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "solange sich die wirtschaftliche Lage der Gesellschaft nicht wesentlich geändert hat.",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 4,
+      "source_context_de": "640.01 Steuerverordnung (SteV) 2. Vermögenssteuer Art. 7 Stellvertretende Entrichtung der Vermögens- oder Erwerbssteuer (Art. 9 Abs. 3 und 4 SteG) 1) Der Antrag auf Entrichtung der Vermögens- oder Erwerbssteuer durch die Stiftung, besondere Vermögenswidmung oder stiftungsähnlich ausgestaltete Anstalt anstelle der Begünstigten ist bei der Steuerverwaltung schriftlich einzureichen. 2) Der Antrag hat folgende Angaben zu enthalten:10 a) bei unwiderruflichen Stiftungen, stiftungsähnlichen Anstalten und besonderen Vermögenswidmungen mit bestimmbaren Begünstigungen: die Wohnorte der Begünstigten sowie deren Begünstigtenanteil; b) bei widerruflichen Stiftungen, stiftungsähnlichen Anstalten und besonderen Vermögenswidmungen: der Name und Wohnort des Errichters. 3) Die stellvertretende Entrichtung nach Abs. 1 erfolgt bis zum Widerruf des Antrages. 4) Die Antragstellung sowie der Widerruf haben jeweils bis zum 31. Dezember des entsprechenden Steuerjahres zu erfolgen.11 Art. 7a12 Bewertung von Wertpapieren ohne Kursnotiz (Art. 12 Abs. 1 Bst. d SteG) 1) Die Bewertung von Wertpapieren ohne Kursnotiz erfolgt vorbehaltlich Abs. 2 anhand des Ertragswertes und des Substanzwertes und richtet sich nach Anhang 1. 2) Eine von Abs. 1 abweichende Bewertung erfolgt, wenn: a) der Steuerpflichtige nachweist, dass die Bewertung nach Abs. 1 nicht dem Verkehrswert entspricht; b) für die Wertpapiere eine Handänderung unter unabhängigen Dritten stattgefunden hat. In diesem Fall gilt der Kaufpreis als Verkehrswert, solange sich die wirtschaftliche Lage der Gesellschaft nicht wesentlich geändert hat. 3) Grundlage für die Bewertung bildet die letzte vor Beginn des Steuerjahres des Inhabers abgeschlossene Jahresrechnung. Falls aufgrund der han4 Fassung: 01.07.2026",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL04",
+      "rule_or_figure": "Operating trade/industry/service company weighted value (2E+S)/3; formula visually checked",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1A(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "Personen mit einem Handels-, Industrie- und Dienstleistungsbetrieb",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 34,
+      "source_context_de": "640.01 Steuerverordnung (SteV) Anhang 181 (Art. 7a Abs. 1) Bewertung von Wertpapieren ohne Kursnotiz A. Operativ tätige juristische Personen 1. Unternehmenswert Der Unternehmenswert (= Verkehrswert) für operativ tätige juristische Personen mit einem Handels-, Industrie- und Dienstleistungsbetrieb bestimmt sich wie folgt: U = Unternehmenswert E = Ertragswert S = Substanzwert p = Ende des Geschäftsjahres n n = Geschäftsjahr Verfügt die zu bewertende juristische Person über Forderungen gegenüber Anteilsinhabern und nicht betriebsnotwendige Vermögenswerte im Sinne von Art. 54 SteG, so wird der Substanzwert für die Gewichtung mit dem Ertragswert entsprechend reduziert und der Ertragswert um das kapitalisierte Nettoergebnis aus diesen Vermögenswerten korrigiert. Für die Ermittlung des massgebenden Unternehmenswertes werden anschliessend die erwähnten Vermögenswerte wiederum zum (betrieblichen) Unternehmenswert hinzugerechnet. Der massgebende Unternehmenswert beträgt mindestens 60 % des (betrieblichen) Substanzwertes zuzüglich 100 % der Forderungen gegenüber Anteilsinhabern und der nicht betriebsnotwendigen Vermögenswerte. 2. Ertragswert Der Ertragswert zum Zeitpunkt p wird wie folgt ermittelt: 34 Fassung: 01.07.2026",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL05",
+      "rule_or_figure": "Remove article54 shareholder/nonbusiness values and capitalised earnings, then restore asset values in full",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1A(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "werden anschliessend die erwähnten Vermögenswerte wiederum zum (betrieblichen) Unternehmenswert hinzugerechnet.",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 34,
+      "source_context_de": "640.01 Steuerverordnung (SteV) Anhang 181 (Art. 7a Abs. 1) Bewertung von Wertpapieren ohne Kursnotiz A. Operativ tätige juristische Personen 1. Unternehmenswert Der Unternehmenswert (= Verkehrswert) für operativ tätige juristische Personen mit einem Handels-, Industrie- und Dienstleistungsbetrieb bestimmt sich wie folgt: U = Unternehmenswert E = Ertragswert S = Substanzwert p = Ende des Geschäftsjahres n n = Geschäftsjahr Verfügt die zu bewertende juristische Person über Forderungen gegenüber Anteilsinhabern und nicht betriebsnotwendige Vermögenswerte im Sinne von Art. 54 SteG, so wird der Substanzwert für die Gewichtung mit dem Ertragswert entsprechend reduziert und der Ertragswert um das kapitalisierte Nettoergebnis aus diesen Vermögenswerten korrigiert. Für die Ermittlung des massgebenden Unternehmenswertes werden anschliessend die erwähnten Vermögenswerte wiederum zum (betrieblichen) Unternehmenswert hinzugerechnet. Der massgebende Unternehmenswert beträgt mindestens 60 % des (betrieblichen) Substanzwertes zuzüglich 100 % der Forderungen gegenüber Anteilsinhabern und der nicht betriebsnotwendigen Vermögenswerte. 2. Ertragswert Der Ertragswert zum Zeitpunkt p wird wie folgt ermittelt: 34 Fassung: 01.07.2026",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL06",
+      "rule_or_figure": "Minimum60% operating substance plus100% shareholder/nonbusiness assets",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1A(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "mindestens 60 % des (betrieblichen) Substanzwertes zuzüglich 100 %",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 34,
+      "source_context_de": "640.01 Steuerverordnung (SteV) Anhang 181 (Art. 7a Abs. 1) Bewertung von Wertpapieren ohne Kursnotiz A. Operativ tätige juristische Personen 1. Unternehmenswert Der Unternehmenswert (= Verkehrswert) für operativ tätige juristische Personen mit einem Handels-, Industrie- und Dienstleistungsbetrieb bestimmt sich wie folgt: U = Unternehmenswert E = Ertragswert S = Substanzwert p = Ende des Geschäftsjahres n n = Geschäftsjahr Verfügt die zu bewertende juristische Person über Forderungen gegenüber Anteilsinhabern und nicht betriebsnotwendige Vermögenswerte im Sinne von Art. 54 SteG, so wird der Substanzwert für die Gewichtung mit dem Ertragswert entsprechend reduziert und der Ertragswert um das kapitalisierte Nettoergebnis aus diesen Vermögenswerten korrigiert. Für die Ermittlung des massgebenden Unternehmenswertes werden anschliessend die erwähnten Vermögenswerte wiederum zum (betrieblichen) Unternehmenswert hinzugerechnet. Der massgebende Unternehmenswert beträgt mindestens 60 % des (betrieblichen) Substanzwertes zuzüglich 100 % der Forderungen gegenüber Anteilsinhabern und der nicht betriebsnotwendigen Vermögenswerte. 2. Ertragswert Der Ertragswert zum Zeitpunkt p wird wie folgt ermittelt: 34 Fassung: 01.07.2026",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL07",
+      "rule_or_figure": "Current earnings weighted twice, prior once, divided3; formula visually checked",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1A(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "Der Ertragswert zum Zeitpunkt p wird wie folgt ermittelt:",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 34,
+      "source_context_de": "640.01 Steuerverordnung (SteV) Anhang 181 (Art. 7a Abs. 1) Bewertung von Wertpapieren ohne Kursnotiz A. Operativ tätige juristische Personen 1. Unternehmenswert Der Unternehmenswert (= Verkehrswert) für operativ tätige juristische Personen mit einem Handels-, Industrie- und Dienstleistungsbetrieb bestimmt sich wie folgt: U = Unternehmenswert E = Ertragswert S = Substanzwert p = Ende des Geschäftsjahres n n = Geschäftsjahr Verfügt die zu bewertende juristische Person über Forderungen gegenüber Anteilsinhabern und nicht betriebsnotwendige Vermögenswerte im Sinne von Art. 54 SteG, so wird der Substanzwert für die Gewichtung mit dem Ertragswert entsprechend reduziert und der Ertragswert um das kapitalisierte Nettoergebnis aus diesen Vermögenswerten korrigiert. Für die Ermittlung des massgebenden Unternehmenswertes werden anschliessend die erwähnten Vermögenswerte wiederum zum (betrieblichen) Unternehmenswert hinzugerechnet. Der massgebende Unternehmenswert beträgt mindestens 60 % des (betrieblichen) Substanzwertes zuzüglich 100 % der Forderungen gegenüber Anteilsinhabern und der nicht betriebsnotwendigen Vermögenswerte. 2. Ertragswert Der Ertragswert zum Zeitpunkt p wird wie folgt ermittelt: 34 Fassung: 01.07.2026",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL08",
+      "rule_or_figure": "15% risk reduction; earnings after nonbusiness expense corrections; negative earnings value0",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1A(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "0.85 = entspricht einem Risikoabschlag von 15 %",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 35,
+      "source_context_de": "Steuerverordnung (SteV) 640.01 E = Ertragswert R = Rechnungsergebnis K = Kapitalisierungszinssatz p = Ende des Geschäftsjahres n n = Geschäftsjahr 0.85 = entspricht einem Risikoabschlag von 15 % Das Rechnungsergebnis R entspricht dem handelsrechtlichen Reinertrag unter Berücksichtigung steuerlicher Korrekturen für nicht geschäftsmässig begründete Aufwendungen. Ein negativer Ertragswert wird mit Null angesetzt. Sofern ein Geschäftsjahr nicht zwölf Monate umfasst, ist das entsprechende Rechnungsergebnis auf zwölf Monate umzurechnen. Bei Neugründungen wird bis zum Vorliegen von repräsentativen Ergebnissen der Substanzwert als Unternehmenswert herangezogen. Falls sich die Geschäftstätigkeit grundlegend verändert hat oder ausserordentliche Ereignisse die Rechnungsergebnisse massgeblich beeinflusst haben, kann die Steuerverwaltung die Rechnungsergebnisse entsprechend anpassen, um repräsentative Werte zu ermitteln. Für regulierte Finanzinstitute und Dienstleister, die der Aufsicht der Finanzmarktaufsicht unterstehen, beträgt der Kapitalisierungssatz 20 %. Für alle übrigen juristischen Personen beträgt der Kapitalisierungssatz 15 %. 3. Substanzwert Der Substanzwert zum Zeitpunkt p wird wie folgt ermittelt: S = Substanzwert EK = ausgewiesenes Eigenkapital gemäss Jahresrechnung (nach Gewinnverwendung) SRB = stille Reserven auf Beteiligungen SR = versteuerte stille Reserven p = Ende des Geschäftsjahres n Hält das zu bewertende Unternehmen selbst Anteile an anderen nicht kotierten Unternehmen, so sind diese Anteile ebenfalls nach Ziff. 1 zu bewerten (= SRB). Liegt der ermittelte Wert unter dem Bilanzwert der Beteiligung, so ist der Bilanzwert massgebend. B. Holding-, Finanz- und Immobiliengesellschaften, juristische Personen in Liquidation und nicht operativ tätige juristische Personen Fassung: 01.07.2026 35",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL09",
+      "rule_or_figure": "Negative earnings value zero",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1A(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "Ein negativer Ertragswert wird mit Null angesetzt.",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 35,
+      "source_context_de": "Steuerverordnung (SteV) 640.01 E = Ertragswert R = Rechnungsergebnis K = Kapitalisierungszinssatz p = Ende des Geschäftsjahres n n = Geschäftsjahr 0.85 = entspricht einem Risikoabschlag von 15 % Das Rechnungsergebnis R entspricht dem handelsrechtlichen Reinertrag unter Berücksichtigung steuerlicher Korrekturen für nicht geschäftsmässig begründete Aufwendungen. Ein negativer Ertragswert wird mit Null angesetzt. Sofern ein Geschäftsjahr nicht zwölf Monate umfasst, ist das entsprechende Rechnungsergebnis auf zwölf Monate umzurechnen. Bei Neugründungen wird bis zum Vorliegen von repräsentativen Ergebnissen der Substanzwert als Unternehmenswert herangezogen. Falls sich die Geschäftstätigkeit grundlegend verändert hat oder ausserordentliche Ereignisse die Rechnungsergebnisse massgeblich beeinflusst haben, kann die Steuerverwaltung die Rechnungsergebnisse entsprechend anpassen, um repräsentative Werte zu ermitteln. Für regulierte Finanzinstitute und Dienstleister, die der Aufsicht der Finanzmarktaufsicht unterstehen, beträgt der Kapitalisierungssatz 20 %. Für alle übrigen juristischen Personen beträgt der Kapitalisierungssatz 15 %. 3. Substanzwert Der Substanzwert zum Zeitpunkt p wird wie folgt ermittelt: S = Substanzwert EK = ausgewiesenes Eigenkapital gemäss Jahresrechnung (nach Gewinnverwendung) SRB = stille Reserven auf Beteiligungen SR = versteuerte stille Reserven p = Ende des Geschäftsjahres n Hält das zu bewertende Unternehmen selbst Anteile an anderen nicht kotierten Unternehmen, so sind diese Anteile ebenfalls nach Ziff. 1 zu bewerten (= SRB). Liegt der ermittelte Wert unter dem Bilanzwert der Beteiligung, so ist der Bilanzwert massgebend. B. Holding-, Finanz- und Immobiliengesellschaften, juristische Personen in Liquidation und nicht operativ tätige juristische Personen Fassung: 01.07.2026 35",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL10",
+      "rule_or_figure": "Annualise non12month accounts; new companies substance until representative earnings",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1A(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "auf zwölf Monate umzurechnen.",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 35,
+      "source_context_de": "Steuerverordnung (SteV) 640.01 E = Ertragswert R = Rechnungsergebnis K = Kapitalisierungszinssatz p = Ende des Geschäftsjahres n n = Geschäftsjahr 0.85 = entspricht einem Risikoabschlag von 15 % Das Rechnungsergebnis R entspricht dem handelsrechtlichen Reinertrag unter Berücksichtigung steuerlicher Korrekturen für nicht geschäftsmässig begründete Aufwendungen. Ein negativer Ertragswert wird mit Null angesetzt. Sofern ein Geschäftsjahr nicht zwölf Monate umfasst, ist das entsprechende Rechnungsergebnis auf zwölf Monate umzurechnen. Bei Neugründungen wird bis zum Vorliegen von repräsentativen Ergebnissen der Substanzwert als Unternehmenswert herangezogen. Falls sich die Geschäftstätigkeit grundlegend verändert hat oder ausserordentliche Ereignisse die Rechnungsergebnisse massgeblich beeinflusst haben, kann die Steuerverwaltung die Rechnungsergebnisse entsprechend anpassen, um repräsentative Werte zu ermitteln. Für regulierte Finanzinstitute und Dienstleister, die der Aufsicht der Finanzmarktaufsicht unterstehen, beträgt der Kapitalisierungssatz 20 %. Für alle übrigen juristischen Personen beträgt der Kapitalisierungssatz 15 %. 3. Substanzwert Der Substanzwert zum Zeitpunkt p wird wie folgt ermittelt: S = Substanzwert EK = ausgewiesenes Eigenkapital gemäss Jahresrechnung (nach Gewinnverwendung) SRB = stille Reserven auf Beteiligungen SR = versteuerte stille Reserven p = Ende des Geschäftsjahres n Hält das zu bewertende Unternehmen selbst Anteile an anderen nicht kotierten Unternehmen, so sind diese Anteile ebenfalls nach Ziff. 1 zu bewerten (= SRB). Liegt der ermittelte Wert unter dem Bilanzwert der Beteiligung, so ist der Bilanzwert massgebend. B. Holding-, Finanz- und Immobiliengesellschaften, juristische Personen in Liquidation und nicht operativ tätige juristische Personen Fassung: 01.07.2026 35",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL11",
+      "rule_or_figure": "Authority can adjust exceptional or fundamentally changed results",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1A(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "um repräsentative Werte zu ermitteln.",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 35,
+      "source_context_de": "Steuerverordnung (SteV) 640.01 E = Ertragswert R = Rechnungsergebnis K = Kapitalisierungszinssatz p = Ende des Geschäftsjahres n n = Geschäftsjahr 0.85 = entspricht einem Risikoabschlag von 15 % Das Rechnungsergebnis R entspricht dem handelsrechtlichen Reinertrag unter Berücksichtigung steuerlicher Korrekturen für nicht geschäftsmässig begründete Aufwendungen. Ein negativer Ertragswert wird mit Null angesetzt. Sofern ein Geschäftsjahr nicht zwölf Monate umfasst, ist das entsprechende Rechnungsergebnis auf zwölf Monate umzurechnen. Bei Neugründungen wird bis zum Vorliegen von repräsentativen Ergebnissen der Substanzwert als Unternehmenswert herangezogen. Falls sich die Geschäftstätigkeit grundlegend verändert hat oder ausserordentliche Ereignisse die Rechnungsergebnisse massgeblich beeinflusst haben, kann die Steuerverwaltung die Rechnungsergebnisse entsprechend anpassen, um repräsentative Werte zu ermitteln. Für regulierte Finanzinstitute und Dienstleister, die der Aufsicht der Finanzmarktaufsicht unterstehen, beträgt der Kapitalisierungssatz 20 %. Für alle übrigen juristischen Personen beträgt der Kapitalisierungssatz 15 %. 3. Substanzwert Der Substanzwert zum Zeitpunkt p wird wie folgt ermittelt: S = Substanzwert EK = ausgewiesenes Eigenkapital gemäss Jahresrechnung (nach Gewinnverwendung) SRB = stille Reserven auf Beteiligungen SR = versteuerte stille Reserven p = Ende des Geschäftsjahres n Hält das zu bewertende Unternehmen selbst Anteile an anderen nicht kotierten Unternehmen, so sind diese Anteile ebenfalls nach Ziff. 1 zu bewerten (= SRB). Liegt der ermittelte Wert unter dem Bilanzwert der Beteiligung, so ist der Bilanzwert massgebend. B. Holding-, Finanz- und Immobiliengesellschaften, juristische Personen in Liquidation und nicht operativ tätige juristische Personen Fassung: 01.07.2026 35",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL12",
+      "rule_or_figure": "20% capitalisation for FMA supervised regulated financial institutions/services;15% others",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1A(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "beträgt der Kapitalisierungssatz 20 %.",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 35,
+      "source_context_de": "Steuerverordnung (SteV) 640.01 E = Ertragswert R = Rechnungsergebnis K = Kapitalisierungszinssatz p = Ende des Geschäftsjahres n n = Geschäftsjahr 0.85 = entspricht einem Risikoabschlag von 15 % Das Rechnungsergebnis R entspricht dem handelsrechtlichen Reinertrag unter Berücksichtigung steuerlicher Korrekturen für nicht geschäftsmässig begründete Aufwendungen. Ein negativer Ertragswert wird mit Null angesetzt. Sofern ein Geschäftsjahr nicht zwölf Monate umfasst, ist das entsprechende Rechnungsergebnis auf zwölf Monate umzurechnen. Bei Neugründungen wird bis zum Vorliegen von repräsentativen Ergebnissen der Substanzwert als Unternehmenswert herangezogen. Falls sich die Geschäftstätigkeit grundlegend verändert hat oder ausserordentliche Ereignisse die Rechnungsergebnisse massgeblich beeinflusst haben, kann die Steuerverwaltung die Rechnungsergebnisse entsprechend anpassen, um repräsentative Werte zu ermitteln. Für regulierte Finanzinstitute und Dienstleister, die der Aufsicht der Finanzmarktaufsicht unterstehen, beträgt der Kapitalisierungssatz 20 %. Für alle übrigen juristischen Personen beträgt der Kapitalisierungssatz 15 %. 3. Substanzwert Der Substanzwert zum Zeitpunkt p wird wie folgt ermittelt: S = Substanzwert EK = ausgewiesenes Eigenkapital gemäss Jahresrechnung (nach Gewinnverwendung) SRB = stille Reserven auf Beteiligungen SR = versteuerte stille Reserven p = Ende des Geschäftsjahres n Hält das zu bewertende Unternehmen selbst Anteile an anderen nicht kotierten Unternehmen, so sind diese Anteile ebenfalls nach Ziff. 1 zu bewerten (= SRB). Liegt der ermittelte Wert unter dem Bilanzwert der Beteiligung, so ist der Bilanzwert massgebend. B. Holding-, Finanz- und Immobiliengesellschaften, juristische Personen in Liquidation und nicht operativ tätige juristische Personen Fassung: 01.07.2026 35",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL13",
+      "rule_or_figure": "Substance = after-appropriation equity + participation hidden reserves + taxed hidden reserves; formula visually checked",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1A(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "ausgewiesenes Eigenkapital gemäss Jahresrechnung (nach Gewinnverwendung)",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 35,
+      "source_context_de": "Steuerverordnung (SteV) 640.01 E = Ertragswert R = Rechnungsergebnis K = Kapitalisierungszinssatz p = Ende des Geschäftsjahres n n = Geschäftsjahr 0.85 = entspricht einem Risikoabschlag von 15 % Das Rechnungsergebnis R entspricht dem handelsrechtlichen Reinertrag unter Berücksichtigung steuerlicher Korrekturen für nicht geschäftsmässig begründete Aufwendungen. Ein negativer Ertragswert wird mit Null angesetzt. Sofern ein Geschäftsjahr nicht zwölf Monate umfasst, ist das entsprechende Rechnungsergebnis auf zwölf Monate umzurechnen. Bei Neugründungen wird bis zum Vorliegen von repräsentativen Ergebnissen der Substanzwert als Unternehmenswert herangezogen. Falls sich die Geschäftstätigkeit grundlegend verändert hat oder ausserordentliche Ereignisse die Rechnungsergebnisse massgeblich beeinflusst haben, kann die Steuerverwaltung die Rechnungsergebnisse entsprechend anpassen, um repräsentative Werte zu ermitteln. Für regulierte Finanzinstitute und Dienstleister, die der Aufsicht der Finanzmarktaufsicht unterstehen, beträgt der Kapitalisierungssatz 20 %. Für alle übrigen juristischen Personen beträgt der Kapitalisierungssatz 15 %. 3. Substanzwert Der Substanzwert zum Zeitpunkt p wird wie folgt ermittelt: S = Substanzwert EK = ausgewiesenes Eigenkapital gemäss Jahresrechnung (nach Gewinnverwendung) SRB = stille Reserven auf Beteiligungen SR = versteuerte stille Reserven p = Ende des Geschäftsjahres n Hält das zu bewertende Unternehmen selbst Anteile an anderen nicht kotierten Unternehmen, so sind diese Anteile ebenfalls nach Ziff. 1 zu bewerten (= SRB). Liegt der ermittelte Wert unter dem Bilanzwert der Beteiligung, so ist der Bilanzwert massgebend. B. Holding-, Finanz- und Immobiliengesellschaften, juristische Personen in Liquidation und nicht operativ tätige juristische Personen Fassung: 01.07.2026 35",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL14",
+      "rule_or_figure": "Lookthrough participation valuation, carrying-value floor",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1A(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "Liegt der ermittelte Wert unter dem Bilanzwert der Beteiligung, so ist der Bilanzwert massgebend.",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 35,
+      "source_context_de": "Steuerverordnung (SteV) 640.01 E = Ertragswert R = Rechnungsergebnis K = Kapitalisierungszinssatz p = Ende des Geschäftsjahres n n = Geschäftsjahr 0.85 = entspricht einem Risikoabschlag von 15 % Das Rechnungsergebnis R entspricht dem handelsrechtlichen Reinertrag unter Berücksichtigung steuerlicher Korrekturen für nicht geschäftsmässig begründete Aufwendungen. Ein negativer Ertragswert wird mit Null angesetzt. Sofern ein Geschäftsjahr nicht zwölf Monate umfasst, ist das entsprechende Rechnungsergebnis auf zwölf Monate umzurechnen. Bei Neugründungen wird bis zum Vorliegen von repräsentativen Ergebnissen der Substanzwert als Unternehmenswert herangezogen. Falls sich die Geschäftstätigkeit grundlegend verändert hat oder ausserordentliche Ereignisse die Rechnungsergebnisse massgeblich beeinflusst haben, kann die Steuerverwaltung die Rechnungsergebnisse entsprechend anpassen, um repräsentative Werte zu ermitteln. Für regulierte Finanzinstitute und Dienstleister, die der Aufsicht der Finanzmarktaufsicht unterstehen, beträgt der Kapitalisierungssatz 20 %. Für alle übrigen juristischen Personen beträgt der Kapitalisierungssatz 15 %. 3. Substanzwert Der Substanzwert zum Zeitpunkt p wird wie folgt ermittelt: S = Substanzwert EK = ausgewiesenes Eigenkapital gemäss Jahresrechnung (nach Gewinnverwendung) SRB = stille Reserven auf Beteiligungen SR = versteuerte stille Reserven p = Ende des Geschäftsjahres n Hält das zu bewertende Unternehmen selbst Anteile an anderen nicht kotierten Unternehmen, so sind diese Anteile ebenfalls nach Ziff. 1 zu bewerten (= SRB). Liegt der ermittelte Wert unter dem Bilanzwert der Beteiligung, so ist der Bilanzwert massgebend. B. Holding-, Finanz- und Immobiliengesellschaften, juristische Personen in Liquidation und nicht operativ tätige juristische Personen Fassung: 01.07.2026 35",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL15",
+      "rule_or_figure": "Holding,finance,property,liquidating,inactive companies substance method",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1B",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "gilt der Substanzwert nach Bst. A Ziff. 3 als Unternehmenswert.",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 36,
+      "source_context_de": "640.01 Steuerverordnung (SteV) Bei Holding-, Finanz- und Immobiliengesellschaften, juristischen Personen in Liquidation sowie nicht operativ tätigen juristischen Personen gilt der Substanzwert nach Bst. A Ziff. 3 als Unternehmenswert. Finanzinstitute, insbesondere Banken und Versicherungen, sind keine Finanzgesellschaften. C. Vermögensrechtliche Beschränkungen Dem beschränkten Einfluss des Inhabers einer Minderheitsbeteiligung auf die Geschäftsleitung und auf die Beschlüsse der Generalversammlung sowie der eingeschränkten Übertragbarkeit von Gesellschaftsanteilen wird pauschal Rechnung getragen. Privatrechtliche Verträge wie beispielsweise Aktionärbindungsverträge sind steuerlich unbeachtlich. Es wird nach Massgabe des Stimmrechtsanteils folgender Pauschalabzug auf dem nach Bst. A ermittelten Unternehmenswert gewährt: Stimmrechtsanteil Pauschalabzug < 20 % 20 % >= 20 % < 50 % 10 % >= 50 % 0% 36 Fassung: 01.07.2026",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL16",
+      "rule_or_figure": "Banks/insurers not finance companies under B exception",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1B",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "insbesondere Banken und Versicherungen, sind keine Finanzgesellschaften.",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 36,
+      "source_context_de": "640.01 Steuerverordnung (SteV) Bei Holding-, Finanz- und Immobiliengesellschaften, juristischen Personen in Liquidation sowie nicht operativ tätigen juristischen Personen gilt der Substanzwert nach Bst. A Ziff. 3 als Unternehmenswert. Finanzinstitute, insbesondere Banken und Versicherungen, sind keine Finanzgesellschaften. C. Vermögensrechtliche Beschränkungen Dem beschränkten Einfluss des Inhabers einer Minderheitsbeteiligung auf die Geschäftsleitung und auf die Beschlüsse der Generalversammlung sowie der eingeschränkten Übertragbarkeit von Gesellschaftsanteilen wird pauschal Rechnung getragen. Privatrechtliche Verträge wie beispielsweise Aktionärbindungsverträge sind steuerlich unbeachtlich. Es wird nach Massgabe des Stimmrechtsanteils folgender Pauschalabzug auf dem nach Bst. A ermittelten Unternehmenswert gewährt: Stimmrechtsanteil Pauschalabzug < 20 % 20 % >= 20 % < 50 % 10 % >= 50 % 0% 36 Fassung: 01.07.2026",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL17",
+      "rule_or_figure": "Voting-right basis; C expressly applies to A value; private agreements disregarded",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1C",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "Massgabe des Stimmrechtsanteils folgender Pauschalabzug auf dem nach Bst. A ermittelten Unternehmenswert",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 36,
+      "source_context_de": "640.01 Steuerverordnung (SteV) Bei Holding-, Finanz- und Immobiliengesellschaften, juristischen Personen in Liquidation sowie nicht operativ tätigen juristischen Personen gilt der Substanzwert nach Bst. A Ziff. 3 als Unternehmenswert. Finanzinstitute, insbesondere Banken und Versicherungen, sind keine Finanzgesellschaften. C. Vermögensrechtliche Beschränkungen Dem beschränkten Einfluss des Inhabers einer Minderheitsbeteiligung auf die Geschäftsleitung und auf die Beschlüsse der Generalversammlung sowie der eingeschränkten Übertragbarkeit von Gesellschaftsanteilen wird pauschal Rechnung getragen. Privatrechtliche Verträge wie beispielsweise Aktionärbindungsverträge sind steuerlich unbeachtlich. Es wird nach Massgabe des Stimmrechtsanteils folgender Pauschalabzug auf dem nach Bst. A ermittelten Unternehmenswert gewährt: Stimmrechtsanteil Pauschalabzug < 20 % 20 % >= 20 % < 50 % 10 % >= 50 % 0% 36 Fassung: 01.07.2026",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL18",
+      "rule_or_figure": "Below20% votes discount20%;20inclusive–50exclusive discount10%;50inclusive0",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "SteVAnnex1C",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "quote_de": "< 20 % 20 % >= 20 % < 50 % 10 % >= 50 % 0%",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "printed_page": 36,
+      "source_context_de": "640.01 Steuerverordnung (SteV) Bei Holding-, Finanz- und Immobiliengesellschaften, juristischen Personen in Liquidation sowie nicht operativ tätigen juristischen Personen gilt der Substanzwert nach Bst. A Ziff. 3 als Unternehmenswert. Finanzinstitute, insbesondere Banken und Versicherungen, sind keine Finanzgesellschaften. C. Vermögensrechtliche Beschränkungen Dem beschränkten Einfluss des Inhabers einer Minderheitsbeteiligung auf die Geschäftsleitung und auf die Beschlüsse der Generalversammlung sowie der eingeschränkten Übertragbarkeit von Gesellschaftsanteilen wird pauschal Rechnung getragen. Privatrechtliche Verträge wie beispielsweise Aktionärbindungsverträge sind steuerlich unbeachtlich. Es wird nach Massgabe des Stimmrechtsanteils folgender Pauschalabzug auf dem nach Bst. A ermittelten Unternehmenswert gewährt: Stimmrechtsanteil Pauschalabzug < 20 % 20 % >= 20 % < 50 % 10 % >= 50 % 0% 36 Fassung: 01.07.2026",
+      "source_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "id": "LI-IND-VAL19",
+      "rule_or_figure": "Official2026 helper1January2026/31December2025 calendar accounts instructions",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "Official 2026 helper, Bewertung 2026 cells A1,A3",
+      "official_url": "https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx",
+      "quote_de": "Hilfsformular zur Bewertung von Unternehmensanteilen ohne Kursnotiz (Steuerjahr 2026) | Der Unternehmenswert ist auf den 1. Januar des Steuerjahres zu ermitteln. Der Bewertung ist die letzte vor diesem Stichtag abgeschlossene Jahresrechnung zu Grunde zu legen. Beispiel: Für das Steuerjahr 2026 ist der Unternehmenswert zum 1. Januar 2026 zu ermitteln. Schliesst das Geschäftsjahr mit dem Kalenderjahr, so ist die Jahresrechnung per 31. Dezember 2025 massgebend. Sofern ein Geschäftsjahr nicht 12 Monate umfasst, ist das entsprechende Rechnungsergebnis auf 12 Monate umzurechnen.",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx",
+      "source_sha256": "1fe280b5fc8b88908cff0383973a686d6b83395813d47dec92c8e7b0a4f5dedc",
+      "cells": [
+        {
+          "cell": "A1",
+          "value": "Hilfsformular zur Bewertung von Unternehmensanteilen ohne Kursnotiz (Steuerjahr 2026)",
+          "formula": null
+        },
+        {
+          "cell": "A3",
+          "value": "Der Unternehmenswert ist auf den 1. Januar des Steuerjahres zu ermitteln. Der Bewertung ist die letzte vor diesem Stichtag abgeschlossene Jahresrechnung zu Grunde zu legen. Beispiel: Für das Steuerjahr 2026 ist der Unternehmenswert zum 1. Januar 2026 zu ermitteln. Schliesst das Geschäftsjahr mit dem Kalenderjahr, so ist die Jahresrechnung per 31. Dezember 2025 massgebend. Sofern ein Geschäftsjahr nicht 12 Monate umfasst, ist das entsprechende Rechnungsergebnis auf 12 Monate umzurechnen.",
+          "formula": null
+        }
+      ]
+    },
+    {
+      "id": "LI-IND-VAL20",
+      "rule_or_figure": "Helper company rounding100 inP44/P57; not finaltaxrounding authority",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "Official 2026 helper, Bewertung 2026 cells P44,P57",
+      "official_url": "https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx",
+      "quote_de": "0 | 0",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx",
+      "source_sha256": "1fe280b5fc8b88908cff0383973a686d6b83395813d47dec92c8e7b0a4f5dedc",
+      "cells": [
+        {
+          "cell": "P44",
+          "value": "0",
+          "formula": "ROUNDDOWN(P43,-2)"
+        },
+        {
+          "cell": "P57",
+          "value": "0",
+          "formula": "ROUNDDOWN(IF(W56=0,V62,AB27),-2)"
+        }
+      ]
+    },
+    {
+      "id": "LI-IND-VAL21",
+      "rule_or_figure": "Helper F70 feeds economic allocation G70 and voting discount lookup J70; separate legal facts if unequal",
+      "Guide_section": "The base / Unquoted company shares: ordinary valuation workpaper",
+      "act_article": "Official 2026 helper, Bewertung 2026 cells F69,G70,J70,K70",
+      "official_url": "https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx",
+      "quote_de": "Anteil\nin % | 0 | 0.2 | 0",
+      "read_on": "2026-10-31",
+      "source_file": "ledgers/li-income-tax-evidence/valuation-20261031/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx",
+      "source_sha256": "1fe280b5fc8b88908cff0383973a686d6b83395813d47dec92c8e7b0a4f5dedc",
+      "cells": [
+        {
+          "cell": "F69",
+          "value": "Anteil\nin %",
+          "formula": null
+        },
+        {
+          "cell": "G70",
+          "value": "0",
+          "formula": "$P$57*F70"
+        },
+        {
+          "cell": "J70",
+          "value": "0.2",
+          "formula": "LOOKUP(F70,U83:W85)"
+        },
+        {
+          "cell": "K70",
+          "value": "0",
+          "formula": "IF(J70=0%,G70*1)+IF(J70=10%,G70*0.9)+IF(J70=20%,G70*0.8)"
+        }
+      ]
     }
   ],
   "old_topic_destinations": [
@@ -2302,5 +2615,14 @@
     "Sources": "Sources preserves historical24October limits/URLs and separately records actual30October selected reads"
   },
   "quote_binding_failures": [],
-  "remaining": "Actual municipal rates, tax-value/actuarial/unquoted company and deduction facts, specific special/foreign regimes, final tax rounding/current assigned calendar/live forms and fresh independent pack review."
+  "remaining": "Actual municipal rates, tax-value/actuarial/unquoted company and deduction facts, specific special/foreign regimes, final tax rounding/current assigned calendar/live forms and fresh independent pack review.",
+  "valuation_followup": {
+    "status": "WRITER ADDITION; INDEPENDENT REVIEW PENDING",
+    "source_date": "2026-10-31",
+    "base_commit": "b41220632936e5c1a211254030b6acb659f6870a",
+    "added_rule_groups": 21,
+    "preserved_prior_rule_groups": 121,
+    "ordinary_scope": "Annex1 methods supplied; actual valuations, share classes, assumptions, municipal rates and other stated gaps remain",
+    "prior_review": "Existing pinned review remains evidence for its own snapshot; this addition needs delta review."
+  }
 }
