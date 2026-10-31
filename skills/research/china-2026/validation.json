@@ -1,0 +1,28 @@
+{
+  "scope": "Final reviewed eight-Guide China candidate; preserved legacy sources are not newly reviewed",
+  "repository_tests": {
+    "count": 131,
+    "passed": true,
+    "seconds": 7.437
+  },
+  "example_checks": {
+    "files": 8,
+    "blocks": 16,
+    "failures": 0,
+    "missing": 0
+  },
+  "schema": {
+    "files": 8,
+    "errors": 0,
+    "warnings": 0
+  },
+  "strict_sync_integrity": {
+    "source_guides": 8,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "git_diff_check": "pass",
+  "review_verdict": "ACCEPTED_WITHIN_STATED_SOURCE_CITED_DRAFT_SCOPE",
+  "remaining_ordinary_gap": "SC: non-Shanghai/current worker-category schedules; issue504 open"
+}
