@@ -26,7 +26,9 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 
 # Bahrain cross-border tax v0.1
 
-Tax year 2026. Bahrain taxes income through two laws only: the Income Tax Law
+**Draft law.** This skill states the law in force for 2026. A draft corporate income tax law went to the legislature on 29 December 2025. Secondary sources report fiscal years from 1 January 2027, 10% above BHD 200,000 and an expected 5% withholding tax on interest, royalties and services ([KPMG, March 2026](https://kpmg.com/us/en/taxnewsflash/news/2026/03/tnf-bahrain-overview-of-draft-law-introducing-10-percent-corporate-income-tax.html)). We found no confirmation of enactment. Before advising on a period starting in 2027, check its status with the NBR.
+
+Tax year 2026. Under the law in force for 2026, Bahrain taxes income through two laws only: the Income Tax Law
 for hydrocarbon companies (Legislative Decree No. 22 of 1979) and the Domestic
 Minimum Top-up Tax on multinational groups (Decree-Law No. 11 of 2024, in force
 from 1 January 2025). Most cross-border questions in Bahrain therefore have a
@@ -59,7 +61,7 @@ English translation, which it marks "unofficial"; the Arabic text governs.
 
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
-| Withholding tax on dividends, interest, royalties and service fees paid to non-residents | None: neither income tax law has a withholding provision | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 ; https://www.nbr.gov.bh/laws_regulations/dmtt |
+| Withholding tax on dividends, interest, royalties and service fees paid to non-residents | None under the law in force for 2026: neither income tax law has a withholding provision | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 ; https://www.nbr.gov.bh/laws_regulations/dmtt |
 | Hydrocarbon income tax, residents and non-residents alike | 46% | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 |
 | DMTT Minimum Rate | 15% | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | DMTT Revenue Test | EUR 750 million or more in 2 of the 4 preceding Fiscal Years | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
@@ -72,8 +74,8 @@ English translation, which it marks "unofficial"; the Arabic text governs.
 
 ## The taxable base
 
-**Withholding tax.** Bahrain has no withholding tax on payments to
-non-residents. The Income Tax Law has 13 articles and none provides for
+**Withholding tax.** Under the law in force for 2026, Bahrain has no
+withholding tax on payments to non-residents. The Income Tax Law has 13 articles and none provides for
 withholding (Legislative Decree No. 22 of 1979, arts. 1-13). The DMTT Law and
 Executive Regulations tax the Bahrain profits of in-scope groups through the
 Filing Constituent Entity and contain no withholding obligation (DMTT Law
@@ -131,7 +133,7 @@ deregistration while any amount or obligation is outstanding (ER art. 63(C)).
 
 | Obligation | Deadline | Where | Source |
 |---|---|---|---|
-| Withholding tax return or payment | None: no withholding tax | n/a | Income Tax Law arts. 1-13; DMTT Law |
+| Withholding tax return or payment | None for 2026: no withholding tax in force | n/a | Income Tax Law arts. 1-13; DMTT Law |
 | Certificate of residence | No fixed deadline. The timeframe depends on how complete the request is | Foreign Tax Relations Directorate, NBR, by mail, e-fax or email to FTR@nbr.gov.bh, in Arabic or English | NBR COR page |
 | MAP request | Within the time limit in the treaty; 3 years where the treaty sets none | NBR competent authority, Competent.Authority@nbr.gov.bh | NBR MAP Guidance |
 | DMTT registration by the Filing Constituent Entity, incl. for a Bahrain permanent establishment | 120 days from the first day of the Transition Year | NBR | ER art. 62(A) |
@@ -149,7 +151,7 @@ if the foreign authority asks, evidence of withholding tax paid (NBR COR page).
 
 ## Penalties and interest
 
-There is no withholding tax, so there are no withholding penalties.
+No withholding tax is in force for 2026, so there are no withholding penalties.
 
 For a non-resident group member with a Bahrain permanent establishment in scope
 of the DMTT, the DMTT fines apply: failing to register on time or registering
@@ -161,8 +163,8 @@ part of 30 days (Income Tax Law art. 8).
 
 ## Cross-border points
 
-- **Treaty rates for payments out of Bahrain.** A non-resident does not need a
-  treaty to reduce Bahrain withholding, because there is none. A treaty matters
+- **Treaty rates for payments out of Bahrain.** For 2026 a non-resident does not need a
+  treaty to reduce Bahrain withholding, because none is in force. See the draft law note above for later periods. A treaty matters
   to a non-resident in Bahrain mainly for the permanent establishment definition
   and for MAP.
 - **Treaty rates for payments into Bahrain.** A Bahrain resident claims the
@@ -272,7 +274,7 @@ expected:
 | NBR, Tax Treaties Network | https://www.nbr.gov.bh/FTR/bahrain_tax_treaties_network | 2026-10-29 |
 | NBR, Guidance on Mutual Agreement Procedure, version 1.1 | https://www.nbr.gov.bh/publications/view/Bahrains_Mutual_Agreement_Procedure_MAP_Guidance | 2026-10-29 |
 
-Not yet confirmed: an NBR or Ministry statement in terms that Bahrain has no
+Not yet confirmed: whether the draft corporate income tax law has been enacted, and its final terms; whether controlled foreign company tax is allocated as ER art. 29(C) is described above; an NBR or Ministry statement in terms that Bahrain has no
 withholding tax (the rule above rests on reading both income tax laws in full,
 which contain none); any fee for a certificate of residence and the time the
 NBR takes to issue one; whether any Ministerial decision under ER art. 4(A)(3)
