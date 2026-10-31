@@ -9,9 +9,9 @@ Each package contains:
 
 US state packages (packages/us-[code]/) additionally include:
 4. us-tax-workflow-base.md — US-specific workflow foundation
-5. All federal skills from skills/federal/
+5. All federal skills from skills/us/federal/
 6. Core US orchestrator files
-7. State-specific skills from skills/us-states/[code]/
+7. State-specific skills from skills/us/states/[code]/
 
 Usage:
     python3 scripts/build-packages.py           # rebuild all packages
@@ -40,6 +40,7 @@ import shutil
 import sys
 
 from frontmatter_yaml import FrontmatterError, load_frontmatter
+from repo_layout import country_dirs
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILLS_DIR = os.path.join(REPO_ROOT, "skills")
@@ -497,7 +498,9 @@ def find_country_skills(country_dir):
     if not os.path.isdir(country_dir):
         return skills
 
-    for root, _dirs, files in os.walk(country_dir):
+    for root, dirs, files in os.walk(country_dir):
+        if os.path.basename(country_dir) == "us":
+            dirs[:] = []  # federal/ and states/ have their own packages
         for f in sorted(files):
             if not f.endswith('.md') or f.startswith('.'):
                 continue
@@ -521,7 +524,7 @@ def _load_registry_dir_to_code():
     out = {}
     for row in rows:
         d = row.get("dir") or ""
-        if d.startswith("skills/international/") and row.get("code"):
+        if d.startswith("skills/") and not d.startswith("skills/us/") and row.get("code"):
             out[d.rsplit("/", 1)[-1]] = row["code"]
     return out
 
@@ -592,7 +595,7 @@ def build_package(country_dir_name, country_dir):
 
     # Copy EU VAT base if EU member
     if code in EU_MEMBERS:
-        eu_vat = os.path.join(SKILLS_DIR, "international", "eu", "eu-vat-base.md")
+        eu_vat = os.path.join(SKILLS_DIR, "eu", "eu-vat-base.md")
         if os.path.exists(eu_vat):
             shutil.copy2(eu_vat, os.path.join(pkg_dir, "eu-vat-directive.md"))
             copied_files.append("eu-vat-directive.md")
@@ -737,7 +740,7 @@ These {state_name} tax skills need your eye. Every rate, threshold, and form ref
 
 We'll update the skill and credit you publicly as the verified reviewer at [openaccountants.com](https://www.openaccountants.com).
 
-Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/us-states/{state_code}/` or `skills/federal/`, and submit a PR.
+Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/us/states/{state_code}/` or `skills/us/federal/`, and submit a PR.
 
 **Your name goes on the skill either way.**
 
@@ -768,7 +771,7 @@ def build_us_state_package(state_code):
         copied_files.append("us-tax-workflow-base.md")
 
     # 2. All federal skills
-    federal_dir = os.path.join(SKILLS_DIR, "federal")
+    federal_dir = os.path.join(SKILLS_DIR, "us", "federal")
     if os.path.isdir(federal_dir):
         for f in sorted(os.listdir(federal_dir)):
             if f.endswith(".md"):
@@ -797,7 +800,7 @@ def build_us_state_package(state_code):
             copied_files.append(f)
 
     # 5. State-specific skill files (everything except README.md)
-    state_dir = os.path.join(SKILLS_DIR, "us-states", state_code)
+    state_dir = os.path.join(SKILLS_DIR, "us", "states", state_code)
     state_skill_count = 0
     if os.path.isdir(state_dir):
         for f in sorted(os.listdir(state_dir)):
@@ -847,7 +850,7 @@ CA_PROVINCE_NAMES = {
     "sk": "Saskatchewan", "yt": "Yukon",
 }
 
-# Source directory name under skills/international/canada/ for each province
+# Source directory name under skills/canada/ for each province
 CA_PROVINCE_DIRS = {
     "ab": "alberta", "bc": "british-columbia", "mb": "manitoba",
     "nb": "new-brunswick", "nl": "newfoundland", "ns": "nova-scotia",
@@ -907,7 +910,7 @@ These {province_name} tax skills need your eye. Every rate, threshold, and form 
 
 We'll update the skill and credit you publicly as the verified reviewer at [openaccountants.com](https://www.openaccountants.com).
 
-Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/international/canada/{CA_PROVINCE_DIRS.get(province_code, province_code)}/`, and submit a PR.
+Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/canada/{CA_PROVINCE_DIRS.get(province_code, province_code)}/`, and submit a PR.
 
 **Your name goes on the skill either way.**
 
@@ -942,8 +945,8 @@ def build_canada_province_package(province_code):
         fh.write(build_intake("Canada", "CPA", "CA"))
     copied_files.append("intake.md")
 
-    # 3. Federal Canadian skills (top-level .md files in skills/international/canada/)
-    canada_root = os.path.join(SKILLS_DIR, "international", "canada")
+    # 3. Federal Canadian skills (top-level .md files in skills/canada/)
+    canada_root = os.path.join(SKILLS_DIR, "canada")
     if os.path.isdir(canada_root):
         for f in sorted(os.listdir(canada_root)):
             full = os.path.join(canada_root, f)
@@ -1088,11 +1091,9 @@ def main():
     # ---- International packages ----
     intl_results = []
     if not us_only:
-        intl_dir = os.path.join(SKILLS_DIR, "international")
-        for country_dir_name in sorted(os.listdir(intl_dir)):
-            country_dir = os.path.join(intl_dir, country_dir_name)
-            if not os.path.isdir(country_dir):
-                continue
+        for country_path in country_dirs():
+            country_dir_name = country_path.name
+            country_dir = str(country_path)
             if country_dir_name == "eu":
                 continue  # EU is a regional layer, not a jurisdiction
             if country_dir_name == "canada":

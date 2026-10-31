@@ -16,7 +16,7 @@
 
 ## Find your country
 
-**[Browse all countries](skills/international/)**, by region, with the skills, the tax year and the owner for each. United States: [federal](skills/federal/) and [states](skills/us-states/).
+**[Browse all countries](skills/)**, by region, with the skills, the tax year and the owner for each. United States: [federal](skills/us/federal/) and [states](skills/us/states/).
 
 ---
 

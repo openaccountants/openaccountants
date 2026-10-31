@@ -39,7 +39,7 @@ Skills are added and changed only through pull requests to this repository.
 
 
 1. Fork this repo
-2. Create your skill in the appropriate **source** directory (`skills/federal/`, `skills/us-states/[code]/`, `skills/international/[country]/`, etc.)
+2. Create your skill in the appropriate **source** directory (`skills/us/federal/`, `skills/us/states/[code]/`, `skills/[country]/`, etc.)
 3. Follow the [skill template](docs/skill-template.md)
 4. Do **not** run any generator scripts — `index.json`, `llms-full.txt` and `packages/` rebuild in the scheduled platform sync after the source change is ingested
 5. Open a PR with a description of what tax forms/schedules the skill covers
@@ -54,7 +54,7 @@ Skills are added and changed only through pull requests to this repository.
 
 Every skill in `skills/` that should appear on [openaccountants.com](https://www.openaccountants.com) must either:
 
-1. Live in a **recognized country folder** (`skills/international/<country>/`, `skills/federal/`, `skills/us-states/<code>/`), **or**
+1. Live in a **recognized country folder** (`skills/<country>/`, `skills/us/federal/`, `skills/us/states/<code>/`), **or**
 2. Include **`jurisdiction:` in YAML frontmatter** (e.g. `MT`, `GB`, `US`, `US-CA`, `GLOBAL`, `INTL`)
 
 Skill changes made on openaccountants.com land here through the scheduled sync, committed under the responsible accountant's name. A merged pull request must be ingested and verified in the platform before the next outbound export. The ingestion workflow notifies the platform when configured; a maintainer handles failed notifications and backfills. The exporter must fail closed if its stored Git blob does not match the current source guide. Frontmatter uses `reviewed_by` + `review_status` (the legacy `verified_by` key is being retired automatically). Want your platform edits credited to your GitHub account? Set your GitHub username in your accountant profile on openaccountants.com.
@@ -67,7 +67,7 @@ Full details: [docs/WEBSITE-SYNC.md](docs/WEBSITE-SYNC.md)
 
 One-line summary: YAML frontmatter (`name`, `description`, `jurisdiction`, `category`, `tax_year`, `tier`, `last_updated`, plus optional keys), then, for a tax skill, the deep-tax shape: who it applies to, rates and thresholds with sources, the base, deadlines, penalties, cross-border points, two worked examples that recompute, the questions to ask the client, and sources with read dates.
 
-All domain skills for a country live in the same directory (e.g., `skills/international/germany/` contains tax, bookkeeping, payroll, formation, financial statements, transfer pricing, tax optimization, and e-invoicing). The build script detects them by filename suffix and bundles the appropriate workflow base automatically.
+All domain skills for a country live in the same directory (e.g., `skills/germany/` contains tax, bookkeeping, payroll, formation, financial statements, transfer pricing, tax optimization, and e-invoicing). The build script detects them by filename suffix and bundles the appropriate workflow base automatically.
 
 ## Quality standards
 
@@ -94,9 +94,9 @@ All domain skills for a country live in the same directory (e.g., `skills/intern
 
 | You're writing… | Put it here | Example |
 |-----------------|-------------|---------|
-| Country-specific (Malta crypto, UK VAT, Germany payroll) | `skills/international/[country]/` | `skills/international/malta/mt-crypto-tax.md` |
-| US federal | `skills/federal/` | `skills/federal/us-crypto-tax.md` |
-| US state | `skills/us-states/[code]/` | `skills/us-states/ny/ny-income-tax.md` |
+| Country-specific (Malta crypto, UK VAT, Germany payroll) | `skills/[country]/` | `skills/malta/mt-crypto-tax.md` |
+| US federal | `skills/us/federal/` | `skills/us/federal/us-crypto-tax.md` |
+| US state | `skills/us/states/[code]/` | `skills/us/states/ny/ny-income-tax.md` |
 | Global / cross-border (not one country) | `skills/cross-border/` + `jurisdiction:` in frontmatter | `skills/cross-border/oecd-model-treaty-defaults.md` with `jurisdiction: INTL` |
 | Industry vertical (developer, e-commerce) | `skills/verticals/` + `jurisdiction: GLOBAL` | `skills/verticals/freelance-developer.md` |
 | Platform integration (Stripe, Xero) | `skills/integrations/` + `jurisdiction: GLOBAL` | `skills/integrations/stripe-integration.md` |
@@ -108,9 +108,9 @@ All domain skills for a country live in the same directory (e.g., `skills/intern
 
 | What you're editing | Source directory |
 |---------------------|-----------------|
-| US federal skills | `skills/federal/` |
-| US state skills | `skills/us-states/[two-letter code]/` |
-| International country skills (all domains) | `skills/international/[country-slug]/` |
+| US federal skills | `skills/us/federal/` |
+| US state skills | `skills/us/states/[two-letter code]/` |
+| International country skills (all domains) | `skills/[country-slug]/` |
 | Foundation workflow bases | `skills/foundation/` (usually MCP/packages only, not website sync) |
 | Cross-border / treaty corridor rules | `skills/cross-border/` (subdirectory `treaty-corridors/` for WHT rates) |
 | Industry vertical skills | `skills/verticals/` |

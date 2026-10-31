@@ -22,7 +22,7 @@ WORDS = ji.load_jurisdiction_words()
 
 
 def guide(slug, code="NL", **extra):
-    return {"slug": slug, "path": f"skills/international/x/{slug}.md", "jurisdiction": code, "category": "", **extra}
+    return {"slug": slug, "path": f"skills/x/{slug}.md", "jurisdiction": code, "category": "", **extra}
 
 
 def check(guides, added=(), deleted=(), covered_by=None):

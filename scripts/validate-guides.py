@@ -54,6 +54,7 @@ import subprocess
 import sys
 
 import job_identity
+import repo_layout
 import skill_checks
 from frontmatter_yaml import FrontmatterError, load_frontmatter
 
@@ -97,7 +98,7 @@ JURISDICTION_OPTIONAL_DIRS = {
     "skills/cross-border/treaty-corridors",
     "skills/intelligence",
     "skills/templates",
-    "skills/international/eu",
+    "skills/eu",
 }
 
 
@@ -201,27 +202,42 @@ def changed_files_vs_main():
     import subprocess
     try:
         out = subprocess.run(
-            ["git", "diff", "--name-only", "origin/main...HEAD"],
+            ["git", "diff", "--name-only", "--no-renames", "--diff-filter=d", "origin/main...HEAD"],
             cwd=REPO_ROOT, capture_output=True, text=True, check=True,
         ).stdout
-        return [l.strip() for l in out.splitlines() if l.strip()]
+        status = subprocess.run(
+            ["git", "diff", "--name-status", "-M100%", "origin/main...HEAD"],
+            cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+        ).stdout
+        moved = repo_layout.pure_moves(status)
+        return [l.strip() for l in out.splitlines() if l.strip() and l.strip() not in moved]
     except Exception as e:  # pragma: no cover
         print(f"WARN: could not compute changed files ({e}); validating everything")
         return None
 
 
 def added_and_deleted_vs_main():
-    """(added paths, deleted paths) vs origin/main. A rename is one of each."""
+    """(added paths, deleted paths) vs origin/main. A rename to a new filename is
+    one of each; a move that keeps the filename keeps the slug and is neither."""
     try:
         out = subprocess.run(
-            ["git", "diff", "--name-status", "--no-renames", "origin/main...HEAD"],
+            ["git", "diff", "--name-status", "-M90%", "origin/main...HEAD"],
             cwd=REPO_ROOT, capture_output=True, text=True, check=True,
         ).stdout
     except Exception as e:  # pragma: no cover
         print(f"WARN: could not compute added files ({e}); skipping the one-job-one-skill check")
         return set(), set()
-    rows = [line.split("\t", 1) for line in out.splitlines() if "\t" in line]
-    return {p for s, p in rows if s == "A"}, {p for s, p in rows if s == "D"}
+    added, deleted = set(), set()
+    for line in out.splitlines():
+        fields = line.split("\t")
+        if fields[0] == "A":
+            added.add(fields[1])
+        elif fields[0] == "D":
+            deleted.add(fields[1])
+        elif fields[0].startswith("R") and os.path.basename(fields[1]) != os.path.basename(fields[2]):
+            deleted.add(fields[1])
+            added.add(fields[2])
+    return added, deleted
 
 
 def job_conflicts(cov, guides, added, deleted, readme_for, words):

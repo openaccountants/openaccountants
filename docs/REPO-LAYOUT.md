@@ -12,9 +12,10 @@ One page on how this repo is organized, what is generated vs hand-maintained, an
 
 ```
 skills/                    # SOURCE — edit tax content here
-  federal/                 #   US federal source skills
-  us-states/<code>/        #   US state source skills (ny/, ca/, ...)
-  international/<country>/ #   country skills, all domains in one folder
+  <country>/               #   one folder per country, all domains together (eu/ is the EU layer)
+  canada/<province>/       #   provincial skills sit inside canada/
+  us/                      #   us/federal/, us/states/<code>/ and national files
+  COUNTRIES.md             #   GENERATED directory of country packs
   cross-border/            #   treaty + multi-jurisdiction rules (treaty-corridors/ for WHT)
   foundation/              #   workflow bases bundled into packages by the build
   verticals/               #   industry-specific skills (jurisdiction: GLOBAL)
@@ -34,6 +35,7 @@ packages/                  # GENERATED per-jurisdiction bundles — do not edit 
                            #   reviewed by Christopher Aryee, CPA). Never regenerated.
 
 agent-skills/              # GENERATED Agent Skills format (one folder per skill, SKILL.md) + install.sh
+evidence/                  # Source records, not skills: ledgers/ and research/ (not read by any build)
 calculators/               # Open decision checks (rules.json + one pure function + tests)
 workflows/                 # Guided 6-phase advisor workflows (cross-border intake, UK CGT, ...)
 mcp/                       # Python MCP server source (openaccountants-mcp on PyPI)
@@ -77,10 +79,10 @@ If you need a machine-readable listing, read `index.json` or run `python3 script
 
 ## Which file do I edit?
 
-- **Fix a rate or rule for a country (Malta VAT, Germany payroll, ...):** `skills/international/<country>/`.
-- **Fix a US state skill:** `skills/us-states/<code>/`.
-- **Fix a US federal form guide or federal rates JSON:** `packages/us-federal/` directly. Do NOT look for a source in `skills/federal/` for these; the us-federal package is the source.
-- **Add a US federal source skill (non-form-guide):** `skills/federal/`.
+- **Fix a rate or rule for a country (Malta VAT, Germany payroll, ...):** `skills/<country>/`.
+- **Fix a US state skill:** `skills/us/states/<code>/`.
+- **Fix a US federal form guide or federal rates JSON:** `packages/us-federal/` directly. Do NOT look for a source in `skills/us/federal/` for these; the us-federal package is the source.
+- **Add a US federal source skill (non-form-guide):** `skills/us/federal/`.
 - **Cross-border / treaty rules:** `skills/cross-border/`.
 - **A guided workflow:** `workflows/`.
 - **A calculator:** `calculators/<name>/`.
