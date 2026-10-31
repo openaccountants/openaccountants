@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Morocco's auto-entrepreneur reg
 jurisdiction: MA
 tax_year: 2025
 last_updated: 2026-10-31
-version: 0.2
+version: 0.3
 authored_by: Mr Moe Lwin Tun
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
