@@ -1,0 +1,221 @@
+{
+  "status": "WRITER CONTROLS ONLY; FULL INDEPENDENT PACK REVIEW PENDING",
+  "guide_sha256": "689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b7aa52ec",
+  "controls": [
+    {
+      "name": "Third-party short liabilities weighted160%",
+      "actual": "480000.0",
+      "expected": "480000",
+      "basis": "SteV32a(2)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Ordinary positive liquidity balance",
+      "actual": "220000.0",
+      "expected": "220000",
+      "basis": "SteV32a(2); qualifying categories assumed",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Turnover25% cash allowance",
+      "actual": "300000.00",
+      "expected": "300000",
+      "basis": "SteV32a(3)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Cash excess above allowance",
+      "actual": "100000.00",
+      "expected": "100000",
+      "basis": "SteV32a(3)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Under10m lower of two values",
+      "actual": "100000.00",
+      "expected": "100000",
+      "basis": "SteV32a(3)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Resolved distribution reduces presumed excess",
+      "actual": "70000.00",
+      "expected": "70000",
+      "basis": "SteV32a(4); distribution assumed",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Turnover exactly10m is not below10m",
+      "actual": "False",
+      "expected": "False",
+      "basis": "SteV32a(3); ordinary other test separate",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Turnover just below10m passes amount screen",
+      "actual": "True",
+      "expected": "True",
+      "basis": "SteV32a(3); classification separate",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Remaining asset pool6% deduction",
+      "actual": "60000.00",
+      "expected": "60000",
+      "basis": "SteG54(2)(d); excluded categories already removed",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Modified equity after all ordinary base deductions",
+      "actual": "520000.00",
+      "expected": "520000",
+      "basis": "SteG54; no movements or special adjustment assumed",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Four-percent equity amount",
+      "actual": "20800.0000",
+      "expected": "20800",
+      "basis": "SteG5/54",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Profit after equity deduction",
+      "actual": "84200.0000",
+      "expected": "84200",
+      "basis": "Case book-to-tax bridge",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Seventy-percent loss ceiling",
+      "actual": "58940.00000",
+      "expected": "58940",
+      "basis": "SteG57(1)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Taxable profit after allowed loss",
+      "actual": "25260.00000",
+      "expected": "25260",
+      "basis": "Case arithmetic",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Ordinary tax and applicable minimum",
+      "actual": "3157.50000000",
+      "expected": "3157.50",
+      "basis": "SteG61\u201362; minimum applies",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Closing assessed loss register",
+      "actual": "1060.00000",
+      "expected": "1060",
+      "basis": "SteG57(1)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "No current-loss creation from equity deduction",
+      "actual": "10000",
+      "expected": "10000",
+      "basis": "SteG54(1)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Negative modified equity gives zero amount",
+      "actual": "0.00",
+      "expected": "0",
+      "basis": "SteG54(2)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Minimum is maximum not ordinary plus minimum",
+      "actual": "1800",
+      "expected": "1800",
+      "basis": "SteG62(1)\u2013(2)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Exact500000 three-year average passes numerical screen",
+      "actual": "True",
+      "expected": "True",
+      "basis": "SteG62(3); exclusive purpose separate",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Above500000 average fails numerical screen",
+      "actual": "False",
+      "expected": "False",
+      "basis": "SteG62(3)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Exactly25% enters hybrid/large-holding numerical branch",
+      "actual": "True",
+      "expected": "True",
+      "basis": "SteG48(3)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Below25% uses small-holding numerical branch",
+      "actual": "True",
+      "expected": "True",
+      "basis": "SteG48(3)(b)(2)(aa)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Exactly50% passive does not exceed50%",
+      "actual": "False",
+      "expected": "False",
+      "basis": "SteG48(3)(b)(1); persistence/activity separate",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Above50% passive passes only numerical gate",
+      "actual": "True",
+      "expected": "True",
+      "basis": "SteG48(3)(b)(1)",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Half nominal domestic rate",
+      "actual": "0.0625",
+      "expected": "0.0625",
+      "basis": "SteG48(3)(b)(2)(aa); derived6.25%",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Exactly6.25% not below half domestic",
+      "actual": "False",
+      "expected": "False",
+      "basis": "Small-holding rate screen only",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Below6.25% passes small-holding low-rate screen",
+      "actual": "True",
+      "expected": "True",
+      "basis": "All other48 conditions and evidence separate",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Large-holding effective comparison at exact50% fails less-than test",
+      "actual": "False",
+      "expected": "False",
+      "basis": "Comparable domestic burden1000 assumed, foreign500 assumed",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Large-holding foreign499 below half domestic1000",
+      "actual": "True",
+      "expected": "True",
+      "basis": "Comparable burden and all other gates assumed",
+      "status": "WRITER CHECK; INDEPENDENT RECOMPUTATION PENDING"
+    }
+  ],
+  "all_four_original_blocks_exact": true,
+  "original_minimum_block_current_exact": true,
+  "nine_sections_two_current_examples": true,
+  "protected_metadata_CTA_unchanged": true,
+  "remaining": "Actual averaging/classification/anti-abuse/foreign burden evidence; all special-regime and live-procedure scope remains as stated in Guide."
+}
