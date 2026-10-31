@@ -1,0 +1,238 @@
+{
+  "baseline_head": "dce27934c2f2105469f3aecf2f6539682fb76232",
+  "source_G88_manifest_sha256": "0ce5bdbb29d160f0c171b66fded29c92db928560d1df87023d2284eb711f8fce",
+  "files": [
+    {
+      "file": "README.md",
+      "baseline_sha256": "6093646998039397e0f8c64d50bb05142845ceabb62205247f4a5c3acf8b4d9a",
+      "candidate_sha256": "9c798bf4c748bcdad008212ba0c382eae1a44b358eec3bcd04831118105a461b",
+      "candidate_bytes": 14379,
+      "changed": true,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foreign-work-G88-current-reviewed-composition/candidate-README.md"
+    },
+    {
+      "file": "es-autonomous-worker.md",
+      "baseline_sha256": "f66e5c8fa560153a9d359138b172565b12974be378fab14212b243ee7fb8da36",
+      "candidate_sha256": "f66e5c8fa560153a9d359138b172565b12974be378fab14212b243ee7fb8da36",
+      "candidate_bytes": 34420,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-autonomous-worker.md"
+    },
+    {
+      "file": "es-beckham.md",
+      "baseline_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "candidate_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "candidate_bytes": 23234,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-beckham.md"
+    },
+    {
+      "file": "es-canary-islands-igic.md",
+      "baseline_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "candidate_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "candidate_bytes": 33282,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-canary-islands-igic.md"
+    },
+    {
+      "file": "es-capital-gains.md",
+      "baseline_sha256": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+      "candidate_sha256": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+      "candidate_bytes": 35690,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-capital-gains.md"
+    },
+    {
+      "file": "es-ceuta-melilla-ipsi.md",
+      "baseline_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "candidate_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "candidate_bytes": 50091,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-ceuta-melilla-ipsi.md"
+    },
+    {
+      "file": "es-corporate-tax.md",
+      "baseline_sha256": "66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4",
+      "candidate_sha256": "66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4",
+      "candidate_bytes": 43212,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-corporate-tax.md"
+    },
+    {
+      "file": "es-estimated-tax.md",
+      "baseline_sha256": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+      "candidate_sha256": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+      "candidate_bytes": 36751,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-estimated-tax.md"
+    },
+    {
+      "file": "es-foral-corporate-tax.md",
+      "baseline_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "candidate_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "candidate_bytes": 112395,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-foral-corporate-tax.md"
+    },
+    {
+      "file": "es-foral-income-tax.md",
+      "baseline_sha256": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+      "candidate_sha256": "f2bb33b8353a3fb770a1006995b1ae8f106f12c065c09a9c59a75fd46a57a94c",
+      "candidate_bytes": 289337,
+      "changed": true,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foreign-work-G88-current-reviewed-composition/candidate-es-foral-income-tax.md"
+    },
+    {
+      "file": "es-foral-non-resident-tax.md",
+      "baseline_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "candidate_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "candidate_bytes": 67660,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-foral-non-resident-tax.md"
+    },
+    {
+      "file": "es-foral-payroll.md",
+      "baseline_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "candidate_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "candidate_bytes": 54518,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-foral-payroll.md"
+    },
+    {
+      "file": "es-income-tax.md",
+      "baseline_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "candidate_sha256": "11e11aeccc77080f5c60a444ce01397b77e6ebebfa7e304a884777b8d4e0191f",
+      "candidate_bytes": 95592,
+      "changed": true,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foreign-work-G88-current-reviewed-composition/candidate-es-income-tax.md"
+    },
+    {
+      "file": "es-irpf-deductions.md",
+      "baseline_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "candidate_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "candidate_bytes": 489578,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-irpf-deductions.md"
+    },
+    {
+      "file": "es-modelo-111.md",
+      "baseline_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "candidate_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "candidate_bytes": 25444,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-modelo-111.md"
+    },
+    {
+      "file": "es-non-resident-income-tax-irnr-and.md",
+      "baseline_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "candidate_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "candidate_bytes": 33442,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-non-resident-income-tax-irnr-and.md"
+    },
+    {
+      "file": "es-rental-income.md",
+      "baseline_sha256": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+      "candidate_sha256": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+      "candidate_bytes": 38965,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-rental-income.md"
+    },
+    {
+      "file": "es-social-contributions.md",
+      "baseline_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "candidate_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "candidate_bytes": 68625,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-social-contributions.md"
+    },
+    {
+      "file": "es-vat-return.md",
+      "baseline_sha256": "d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3",
+      "candidate_sha256": "d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3",
+      "candidate_bytes": 86372,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-vat-return.md"
+    },
+    {
+      "file": "references.md",
+      "baseline_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "candidate_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "candidate_bytes": 3537,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/references.md"
+    },
+    {
+      "file": "spain-bookkeeping.md",
+      "baseline_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "candidate_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "candidate_bytes": 73678,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-bookkeeping.md"
+    },
+    {
+      "file": "spain-crypto-tax.md",
+      "baseline_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "candidate_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "candidate_bytes": 31385,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-crypto-tax.md"
+    },
+    {
+      "file": "spain-einvoice.md",
+      "baseline_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "candidate_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "candidate_bytes": 53944,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-einvoice.md"
+    },
+    {
+      "file": "spain-financial-statements.md",
+      "baseline_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "candidate_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "candidate_bytes": 51863,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-financial-statements.md"
+    },
+    {
+      "file": "spain-formation.md",
+      "baseline_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "candidate_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "candidate_bytes": 11892,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-formation.md"
+    },
+    {
+      "file": "spain-payroll.md",
+      "baseline_sha256": "89de80b5558648018020a803fd139685ac92d4908d6f72b1007e84626598d77a",
+      "candidate_sha256": "89de80b5558648018020a803fd139685ac92d4908d6f72b1007e84626598d77a",
+      "candidate_bytes": 52020,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-payroll.md"
+    },
+    {
+      "file": "spain-tax-optimization.md",
+      "baseline_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "candidate_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "candidate_bytes": 20281,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-tax-optimization.md"
+    },
+    {
+      "file": "spain-transfer-pricing.md",
+      "baseline_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "candidate_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "candidate_bytes": 31683,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-transfer-pricing.md"
+    },
+    {
+      "file": "spain-vat-return.md",
+      "baseline_sha256": "70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2",
+      "candidate_sha256": "70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2",
+      "candidate_bytes": 26631,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-vat-return.md"
+    }
+  ]
+}

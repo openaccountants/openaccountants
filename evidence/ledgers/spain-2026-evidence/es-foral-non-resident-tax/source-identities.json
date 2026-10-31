@@ -1,0 +1,572 @@
+[
+  {
+    "key": "gipuzkoa_216_html",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/216",
+    "raw": "sources/gipuzkoa_216_html.body",
+    "raw_sha256": "2568bda9d44a65ca19cac3f18ecce5345f0d37fea24ad3fd345d88c7798b6785",
+    "reader": "sources/gipuzkoa_216_html.reader.txt",
+    "reader_sha256": "de9b586dad594dd99de60e32acb22e02e08ea8dcfaddd0effebd9f7f7a9be86b",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "gipuzkoa_296_html",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/296",
+    "raw": "sources/gipuzkoa_296_html.body",
+    "raw_sha256": "ea20a660513c08d55a5ef44e88844b2c3d65855860b3af7e2066b95302efeb32",
+    "reader": "sources/gipuzkoa_296_html.reader.txt",
+    "reader_sha256": "91535dd581af20b7168fe710bd9a697fb06d9a19b61bc7cbe6818823aae3cfbb",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "navarra_216_order_html",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=27622",
+    "raw": "sources/navarra_216_order_html.body",
+    "raw_sha256": "4b66037ae2d22cd4102a6d10c9d359019f13b418eea010f7589388ceef870ab2",
+    "reader": "sources/navarra_216_order_html.reader.txt",
+    "reader_sha256": "602edf811f0698d4aa069af58b9c00e30cec76c4fd9f2e81befb5503263104fc",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "bizkaia_216_calendar2026_html",
+    "url": "https://www.bizkaia.eus/ogasuna/egutegia/egutegia_anual.asp?Age_Codigo=07%2F10%2F2026&Modelos=301&Tem_Codigo=5346&id=0",
+    "raw": "sources/bizkaia_216_calendar2026_html.body",
+    "raw_sha256": "f188f28522cd177f24b780d988929f1c51486466b40952ba0737ab2fd110ef69",
+    "reader": "sources/bizkaia_216_calendar2026_html.reader.txt",
+    "reader_sha256": "5883a0692c739a67402f85579f34078e5311848998a10f2c424bf277a3dae6d0",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "bizkaia_original216_order2015_pdf",
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2015/08/20150805a148.pdf",
+    "raw": "sources/bizkaia_original216_order2015_pdf.body",
+    "raw_sha256": "31e5e141ab9e2c5cf11ccde3d0109bb75ece709ce16c6ff7b9abd7f952eb4d98",
+    "reader": "sources/bizkaia_original216_order2015_pdf.reader.txt",
+    "reader_sha256": "8a2e77ec798d44e8edb2fd057530454f32d61271f717d0c407d08735b6b7022c",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "araba_2025_adapt_pdf",
+    "url": "https://www.araba.eus/botha/Boletines/2025/147/2025_147_03920_C.pdf",
+    "raw": "sources/araba_2025_adapt_pdf.body",
+    "raw_sha256": "6e9de21219d98facdc37799b650a61cbd5aa312c8c7155aca0f239f64f0da658",
+    "reader": "sources/araba_2025_adapt_pdf.reader.txt",
+    "reader_sha256": "f68fdef0ae5427085124fd47ccfe08802b09960d53dc5b04cef9a3dd7e79a02b",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "bizkaia_deadlines_html",
+    "url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900006999",
+    "raw": "sources/bizkaia_deadlines_html.body",
+    "raw_sha256": "4cc34192e67caccc3dc2ee9dfe0977eb0a4fe0c9ccbbd1893297bce7b47a467e",
+    "reader": "sources/bizkaia_deadlines_html.reader.txt",
+    "reader_sha256": "75c342795d5adbc2a1500f4071d946675910c24d5ca30c8202888fcb89019862",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "gipuzkoa_irnr_0_pdf",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/4.3863475E7/NF%2016-2014%20(2026).pdf/c063bd52-a8c3-f949-c95a-692cfb8515d9",
+    "raw": "sources/gipuzkoa_irnr_0_pdf.body",
+    "raw_sha256": "255e93b1db52147322eb5a168d965047d511fd22343bd33fa30170c75694432d",
+    "reader": "sources/gipuzkoa_irnr_0_pdf.reader.txt",
+    "reader_sha256": "783a2ff80e73ebc6283ed662f9a48de4ca0de667f7fec332f1ada68c13836246",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "gipuzkoa_irnr_1_pdf",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/null/DF%2011-2016%20(2026-0)/0988d0d9-65e5-f1f1-e6af-c452b324b425",
+    "raw": "sources/gipuzkoa_irnr_1_pdf.body",
+    "raw_sha256": "bb3521e2400a576ebe932b72915bfe677551d5b4ed68f4066dddecdd2521e186",
+    "reader": "sources/gipuzkoa_irnr_1_pdf.reader.txt",
+    "reader_sha256": "33e9dfe2e24d27832de7cafeec9bb361719f0738c82f9903f156cc84fffc5c01",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "basque_agreement_html",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+    "raw": "sources/basque_agreement_html.body",
+    "raw_sha256": "4ec159da60a7f04cfed44803f7126c7f75ca2bed4cc22cf879a34873300088ad",
+    "reader": "sources/basque_agreement_html.reader.txt",
+    "reader_sha256": "3680f6d7ccb1b6d00bcdd893c8b54c23f6e7b3d99d6883045de4204264d50201",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "navarra_agreement_html",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+    "raw": "sources/navarra_agreement_html.body",
+    "raw_sha256": "ce6b48e278ba58046748bf1f6ac0d608007dd2b81e75ee4b0dfd7152eac467aa",
+    "reader": "sources/navarra_agreement_html.reader.txt",
+    "reader_sha256": "39898c8ae5860f3678c70bcfacbb39f9559ffea6b23cd570eca97551417d5818",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "bizkaia_irnr_pdf",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_12_2013.pdf/f4546f62-db4b-682d-60af-aab88f7da8b1?t=1768552029655",
+    "raw": "sources/bizkaia_irnr_pdf.body",
+    "raw_sha256": "b68aba30a5e3a43151466d52d8b4b1d21c84afbc9679dae0f9ee6e7ffe1c13e1",
+    "reader": "sources/bizkaia_irnr_pdf.reader.txt",
+    "reader_sha256": "9516608dbc3f30df99a2ef1462d4f4ae5c9e503083edcfd84ff6ae1e52d482cf",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "araba_irnr_reg_pdf",
+    "url": "https://web.araba.eus/documents/1247685/1248435/REGLAMENTO_IMPUESTO%2BRENTA%2BNO%2BRESIDENTES-CAS.pdf/a0f641a9-5e81-d57a-3592-a9fa54e8cafb?t=1675163281435",
+    "raw": "sources/araba_irnr_reg_pdf.body",
+    "raw_sha256": "53ea99e6073fe811c6c959b75845cd132ec2f2945f1708098972e352647f7e9d",
+    "reader": "sources/araba_irnr_reg_pdf.reader.txt",
+    "reader_sha256": "189a7df3ab9aef50532947ac0484fc2ac192c2205792302657c833cc1d6fa10d",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "bizkaia_no_imputation_html",
+    "url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900007013",
+    "raw": "sources/bizkaia_no_imputation_html.body",
+    "raw_sha256": "a71521e40f98f5f74946e318d89087f919c7015fa1a32999dcef033c8a042ab8",
+    "reader": "sources/bizkaia_no_imputation_html.reader.txt",
+    "reader_sha256": "79026b9854c07ac1b2d24df342526e1447d64e12ad7522d1cd66570cd14574e8",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "araba_calendar2026_pdf",
+    "url": "https://web.araba.eus/documents/d/araba/b_plazos-de-presentacion_2026_es-pdf",
+    "raw": "sources/araba_calendar2026_pdf.body",
+    "raw_sha256": "1272c7071d5f661afd0a0f36e565cac448e80088010bd1631c59c0caa86607ae",
+    "reader": "sources/araba_calendar2026_pdf.reader.txt",
+    "reader_sha256": "7685a43daa14bff2c3dd33051884a01764df24485a63acd5300487f9b20fe13c",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "navarra_296_current_html",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=29912",
+    "raw": "sources/navarra_296_current_html.body",
+    "raw_sha256": "dde2f5d258f1d680fdad9c60a87cce1a3029519f4353e3a9cc16133f65adff78",
+    "reader": "sources/navarra_296_current_html.reader.txt",
+    "reader_sha256": "a33a1d7f4178f7110869deeb1d42499e66a7b49ec22fc9ef269a7f7b499da013",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "bizkaia_296_pdf",
+    "url": "https://www.bizkaia.eus/fitxategiak/05/ogasuna/ereduak/Argitaratu/296BilInst.pdf",
+    "raw": "sources/bizkaia_296_pdf.body",
+    "raw_sha256": "84959226429e074b8361be2b736683dbd8c484c009c6a72650bf42eda7c2f4e2",
+    "reader": "sources/bizkaia_296_pdf.reader.txt",
+    "reader_sha256": "81ef7a31f836011cdd7e3f862e32b9adc8b82504b2770c7517415e10cdc777fe",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "navarra_210_order_current_html",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=32255",
+    "raw": "sources/navarra_210_order_current_html.body",
+    "raw_sha256": "cdfec3bbc6072421cf07187fefd495f7f5c13ecbd6e69d17893b8a82034b5341",
+    "reader": "sources/navarra_210_order_current_html.reader.txt",
+    "reader_sha256": "a72bb2ff2ea03303d5868ff5ab88317233a5026da7af46e0469b404f02d88cc8",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "araba_irnr_current_pdf",
+    "url": "https://web.araba.eus/documents/d/araba/indice_nf-del-ir-de-no-residentes-cas-pdf",
+    "raw": "sources/araba_irnr_current_pdf.body",
+    "raw_sha256": "ef422d5fa1c3c9d14c83aa3d74134e3a60094caa803099e031893280b9dda4fe",
+    "reader": "sources/araba_irnr_current_pdf.reader.txt",
+    "reader_sha256": "3c85c539f3744b1c23654d5e3b0db98d123f8e805466bb04cab0f9ad2286cc09",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "bizkaia_irnr_reg_pdf",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_48_2014.pdf/c32bf7ea-7f29-d8bd-4ab0-b84145ec79ea?t=1764668111698",
+    "raw": "sources/bizkaia_irnr_reg_pdf.body",
+    "raw_sha256": "7002f867ba3be145e2a066e5a019ff0b3bade2367a62871d370986b55d417285",
+    "reader": "sources/bizkaia_irnr_reg_pdf.reader.txt",
+    "reader_sha256": "96f609d8a9d95aacc1e213a66e045326299056b83090d14b646053f1b47cca7c",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "state_irnr_current_html",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "sources/state_irnr_current_html.body",
+    "raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "reader": "sources/state_irnr_current_html.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "navarra_state_irnr_html",
+    "url": "https://www.navarra.es/es/web/normativa-hacienda/-/texto-refundido-de-la-ley-del-impuesto-sobre-la-renta-de-no-residentes-rdl-5/2004-de-5-de-marzo-",
+    "raw": "sources/navarra_state_irnr_html.body",
+    "raw_sha256": "02b828a31c350028e4453f89b702817bf20cb5d46a83c7835207712b821cd3bd",
+    "reader": "sources/navarra_state_irnr_html.reader.txt",
+    "reader_sha256": "2714fb058aaee30261b75fa6099f084d1fc79df9f0ec992aec2178ff64b732fe",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "navarra_s90_order2026_html",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=58604",
+    "raw": "sources/navarra_s90_order2026_html.body",
+    "raw_sha256": "f978d0caeb981d6b6702ce8398fce3e6c251b3b288cba68430e7cfe243d308cb",
+    "reader": "sources/navarra_s90_order2026_html.reader.txt",
+    "reader_sha256": "ace700705fccfe20fc086c63677f3f8130c5f1196154d409097d9cd81474e8f5",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "bizkaia_rent2026_html",
+    "url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900007012",
+    "raw": "sources/bizkaia_rent2026_html.body",
+    "raw_sha256": "f999ee89f2274106dff38fddba923e045d187fdce655d634ed28f7a7e0805764",
+    "reader": "sources/bizkaia_rent2026_html.reader.txt",
+    "reader_sha256": "c30baaf77641444aec2b5f56be93e0cee341fab6a6476eaeb1d48663d9ceca35",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "bizkaia_sale2026_html",
+    "url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900007014",
+    "raw": "sources/bizkaia_sale2026_html.body",
+    "raw_sha256": "2ce22f86118c87a0c019408062695b2ddffbca687ac8a80c6333ccd9a1d6b9aa",
+    "reader": "sources/bizkaia_sale2026_html.reader.txt",
+    "reader_sha256": "9e33f4562cb3f53430c761532a3c3f39e21fd95d3b9196b60d31fa1717b0603e",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "bizkaia_216_order47_2024_pdf",
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2024/02/02/I-172_cas.pdf?hash=65533dee254e1c0878722ab033798fcd",
+    "raw": "sources/bizkaia_216_order47_2024_pdf.body",
+    "raw_sha256": "48420534f009df7f4a1e0a7e1a042a2edbed5e0b3f4252750c55049a076d8fa1",
+    "reader": "sources/bizkaia_216_order47_2024_pdf.reader.txt",
+    "reader_sha256": "12b1791c2cd2c60ba45afc14be8ae9fa129969d437b5f4ca589099c07e7e83c0",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "gipuzkoa_210_html",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/210",
+    "raw": "sources/gipuzkoa_210_html.body",
+    "raw_sha256": "1fc34ea0559958774c01dff5c9706984a2e33ca9e87cc3736891b244dbe3dd15",
+    "reader": "sources/gipuzkoa_210_html.reader.txt",
+    "reader_sha256": "e14176358ae2519ff333fe564d48f42f4d6eadbbe5172289ee8a08c16f729486",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "02_pdf",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068",
+    "raw": "sources/02_pdf.body",
+    "raw_sha256": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+    "reader": "sources/02_pdf.reader.txt",
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "03_pdf",
+    "url": "https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf",
+    "raw": "sources/03_pdf.body",
+    "raw_sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+    "reader": "sources/03_pdf.reader.txt",
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "04_pdf",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0759126E7/NF%203-2014%20(2026-0).pdf/8ab5c95c-3f89-8fdf-5cb8-01950e3983cc",
+    "raw": "sources/04_pdf.body",
+    "raw_sha256": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+    "reader": "sources/04_pdf.reader.txt",
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "10_pdf",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf",
+    "raw": "sources/10_pdf.body",
+    "raw_sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "reader": "sources/10_pdf.reader.txt",
+    "reader_sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "11_pdf",
+    "url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf",
+    "raw": "sources/11_pdf.body",
+    "raw_sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "reader": "sources/11_pdf.reader.txt",
+    "reader_sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "12_pdf",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd",
+    "raw": "sources/12_pdf.body",
+    "raw_sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "reader": "sources/12_pdf.reader.txt",
+    "reader_sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "bizkaia_cit_current",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887",
+    "raw": "sources/bizkaia_cit_current.body",
+    "raw_sha256": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe",
+    "reader": "sources/bizkaia_cit_current.reader.txt",
+    "reader_sha256": "91e5080d005596bc8c298c5d363ea97862c18ba4b0d9d666717b71c54cc2107b",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "alava_cit_current",
+    "url": "https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf",
+    "raw": "sources/alava_cit_current.body",
+    "raw_sha256": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6",
+    "reader": "sources/alava_cit_current.reader.txt",
+    "reader_sha256": "e61444ddd2684a608480d56fb00bb87fc676af155affdc75e4ec67abb4e03916",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "gipuzkoa_cit_current",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54",
+    "raw": "sources/gipuzkoa_cit_current.body",
+    "raw_sha256": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44",
+    "reader": "sources/gipuzkoa_cit_current.reader.txt",
+    "reader_sha256": "9d5ce8241e91bd452b43b65cb2e102a7535730a466227627db6d2b1e2cbe12de",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "navarra_cit_current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356",
+    "raw": "sources/navarra_cit_current.body",
+    "raw_sha256": "a210d0c36a5a593eaf02e5a96be03b6c511a4461a83684027bccf48be734702c",
+    "reader": "sources/navarra_cit_current.reader.txt",
+    "reader_sha256": "00c733ee479c48f6f7072ce6a4705c50a93182849852d651249ecac92e86017f",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Bizkaia_DF153_2022_DF1",
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2022/12/23/I-1160_cas.pdf?hash=7616a7ccaecc78b9aafa548934f8043a",
+    "raw": "sources/Bizkaia_DF153_2022_DF1.body",
+    "raw_sha256": "828b901d565ae28f6ae68281ce174c92a9e569f75ee9a8c61b5fde0aad8a3f1e",
+    "reader": "sources/Bizkaia_DF153_2022_DF1.reader.txt",
+    "reader_sha256": "92829f16d97665dad4622724c2f9eb71f42b39321d6f1c82cc349bc048b5b6fa",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Bizkaia_NF2_2005_arts26_28_196_203",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca",
+    "raw": "sources/Bizkaia_NF2_2005_arts26_28_196_203.body",
+    "raw_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "reader": "sources/Bizkaia_NF2_2005_arts26_28_196_203.reader.txt",
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "lava_NF6_2005_arts26_28_195",
+    "url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf",
+    "raw": "sources/lava_NF6_2005_arts26_28_195.body",
+    "raw_sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "reader": "sources/lava_NF6_2005_arts26_28_195.reader.txt",
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Gipuzkoa_NF2_2005_arts26_28_195",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20%282026%29.pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2",
+    "raw": "sources/Gipuzkoa_NF2_2005_arts26_28_195.body",
+    "raw_sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "reader": "sources/Gipuzkoa_NF2_2005_arts26_28_195.reader.txt",
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Navarra_LF13_2000_arts50_52_68_77",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494",
+    "raw": "sources/Navarra_LF13_2000_arts50_52_68_77.body",
+    "raw_sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+    "reader": "sources/Navarra_LF13_2000_arts50_52_68_77.reader.txt",
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "coef_bizkaia_2026",
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2025/12/15/I-1336_cas.pdf?hash=7bb6a27105d5d87568e6537aa6283dc3",
+    "raw": "sources/coef_bizkaia_2026.body",
+    "raw_sha256": "cb84bdbe860c94111cce1a958eb09112c47fef71551239cc4b89cf96b46be19f",
+    "reader": "sources/coef_bizkaia_2026.reader.txt",
+    "reader_sha256": "db04bd25bebe7dc21f9b63b3dd39afe093f87f4c3a8dfddcce14019038085888",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "coef_araba_2026",
+    "url": "https://www.araba.eus/botha/Boletines/2025/146/2025_146_03735_C.pdf",
+    "raw": "sources/coef_araba_2026.body",
+    "raw_sha256": "01e9092201d32771eb72b97179ed24e2d68f3fa59f063d95803d8dbc9bf2c4bc",
+    "reader": "sources/coef_araba_2026.reader.txt",
+    "reader_sha256": "bdd46b8682293e3d49aa281177b1d2d4bd27a2265660b157dbdc94852f69ad1a",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "coef_gipuzkoa_2026",
+    "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2025/12/30/c2508991.pdf",
+    "raw": "sources/coef_gipuzkoa_2026.body",
+    "raw_sha256": "a7c2dbcc59d33d9b0fae17ee8ef29bfe0811c7e7f39a3383a932dc4e5add7012",
+    "reader": "sources/coef_gipuzkoa_2026.reader.txt",
+    "reader_sha256": "0a77808b0582f38980bfa00bfde896b2e9a1228ad81e61a1c9bd6a063aae717a",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "coef_gipuzkoa_correction",
+    "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/02/26/c2600871.pdf",
+    "raw": "sources/coef_gipuzkoa_correction.body",
+    "raw_sha256": "4634dfa5a05de7773729dc0c542ae2af7b88c30f660e7c493a088b7bf885dcc1",
+    "reader": "sources/coef_gipuzkoa_correction.reader.txt",
+    "reader_sha256": "b52dda37c3c29452493c51c947aaa86498c55043ae67d438ac758952b8edad4f",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "budget_bizkaia_2026",
+    "url": "https://www.bizkaia.eus/fitxategiak/05/ogasuna/presupuestos/pdf/2019/1767078506510_NF%20Pptos%202026%20castellano_cas_cas.pdf",
+    "raw": "sources/budget_bizkaia_2026.body",
+    "raw_sha256": "9ffd58e6257b6bf9d28b0cdc43f016fc0bb3565fd0abf329f949b1fecb0c0b13",
+    "reader": "sources/budget_bizkaia_2026.reader.txt",
+    "reader_sha256": "c6223802467a6b537745c328e06bc1837987658e6cf3ee000b1135c40a1d5f0f",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "budget_gipuzkoa_2026",
+    "url": "https://www7.gipuzkoa.net/presupuestos/2026/Ppto2026/pdfs/0/Disposiciones.pdf",
+    "raw": "sources/budget_gipuzkoa_2026.body",
+    "raw_sha256": "0608f0fca1a0750cf2197ccda0ea62494b2deb0d96cea1355d7002e353f75378",
+    "reader": "sources/budget_gipuzkoa_2026.reader.txt",
+    "reader_sha256": "12c30512b3990198780a13f5c2d47dba8090d69ac5685a7f1a65e6717eb658a3",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "interest_bizkaia_2026",
+    "url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900005626",
+    "raw": "sources/interest_bizkaia_2026.body",
+    "raw_sha256": "c3f4dbd677f591e3cec5a5edfdc30372f2c66cc6182ea1bfbc1894af9acb146e",
+    "reader": "sources/interest_bizkaia_2026.reader.txt",
+    "reader_sha256": "e0b29dd0933bbcff10e1ac10b4b1d69b8adf6be7ff9aa121542e63364a6db71b",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "budget_araba_2026",
+    "url": "https://www.araba.eus/Presupuestos/2026/TOM-2026_PTO-50-02.html",
+    "raw": "sources/budget_araba_2026.body",
+    "raw_sha256": "ad259982a43d5dbb06c2d60dfa8342e9f17bc83846a189a6ba849945f2557449",
+    "reader": "sources/budget_araba_2026.reader.txt",
+    "reader_sha256": "4400ac32157963fa38c07d9ff7a5590f774f47ba03db4b3f0e7a3c76f59ec26c",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "interest_navarra_2026",
+    "url": "https://www.navarra.es/documents/48192/22803508/2026%2BMedidas%2Bespec%C3%ADficas%2BPV%2By%2BPE%2B.pdf/6ad8e0f0-bae5-04dc-5a85-0edcd6405be1?t=1766477534217",
+    "raw": "sources/interest_navarra_2026.body",
+    "raw_sha256": "5d8778b4d6cee1050b9576d9d6fc0acae5a43d7f621726e58b7b81190006f41d",
+    "reader": "sources/interest_navarra_2026.reader.txt",
+    "reader_sha256": "4c08bfaf9ca56a070e1772e3eac60a23efa51b0492239485e465f0c87be0b1b5",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "interest_araba_nfgt",
+    "url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf",
+    "raw": "sources/interest_araba_nfgt.body",
+    "raw_sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "reader": "sources/interest_araba_nfgt.reader.txt",
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "interest_bizkaia_nfgt",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca",
+    "raw": "sources/interest_bizkaia_nfgt.body",
+    "raw_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "reader": "sources/interest_bizkaia_nfgt.reader.txt",
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "interest_gipuzkoa_nfgt",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20(2026).pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2",
+    "raw": "sources/interest_gipuzkoa_nfgt.body",
+    "raw_sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "reader": "sources/interest_gipuzkoa_nfgt.reader.txt",
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "interest_navarra_general",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494",
+    "raw": "sources/interest_navarra_general.body",
+    "raw_sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+    "reader": "sources/interest_navarra_general.reader.txt",
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "acquired": "Retained actual source receipt; copied 2026-10-28, not newly fetched",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "LIRPF",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "sources/LIRPF.body",
+    "raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "reader": "sources/LIRPF.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "acquired": "Exact previously fetched28Oct receipt; copied by root28Oct",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "LIRPF2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20261002&tn=1#a85",
+    "raw": "sources/LIRPF2026.body",
+    "raw_sha256": "7d4665be9e7406f39630f684b76461bc38bb70b354a82d2c11591c1c5c8678be",
+    "reader": "sources/LIRPF2026.reader.txt",
+    "reader_sha256": "22fdeb4fb5a16a54ae734bbaefbf16e633a5bb43f147b677c842551ca56f71cc",
+    "acquired": "2026-10-28",
+    "read_scope": "Operative 2026 art85 only; whole acquisition not reading"
+  }
+]

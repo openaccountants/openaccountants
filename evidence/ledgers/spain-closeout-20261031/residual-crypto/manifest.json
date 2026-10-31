@@ -1,0 +1,11 @@
+{
+  "reviewed_on": "2026-10-31",
+  "verdict": "A2_AND_A3_REMAIN_OPEN",
+  "country_issue391_close": false,
+  "files": {
+    "report.md": "59817f836c2261ea7c58ff7ff3108b814bff13674972d609751404b31731c24f",
+    "source-checks.json": "2b8457849432ed431c1f3438d26a64f22ce8c72773fac7c2bd5d47c3909a5d67",
+    "verdict.json": "86bf170ec504adbe0d1d83448a5f94dc3c2b2affc3fd35814455abbfd07c0422"
+  },
+  "local_analysis_only_not_publicly_mirrored": "N-current-derived-reader.txt; underlying official raw source identity is recorded."
+}

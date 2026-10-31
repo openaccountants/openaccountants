@@ -14,7 +14,7 @@ import re
 import unittest
 
 
-GUIDES = Path(__file__).resolve().parents[1] / "skills/international/australia"
+GUIDES = Path(__file__).resolve().parents[1] / "skills/australia"
 
 
 class AustralianGuideRegressionTests(unittest.TestCase):

@@ -1,0 +1,199 @@
+Browser tab: 1, Title: "Consultas de la D.G. Tributos: Buscador", URL: "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V1604-18".
+0 AXWebArea Consultas de la D.G. Tributos: Buscador, URL: petete.tributos.hacienda.gob.es/consultas/?num_consulta=V1604-18
+	1 container page
+		2 container header_content
+			3 image Description: Logo Ministerio de Hacienda y Funci�n P�blica, Help: Logo Ministerio de Hacienda y Función Pública
+			4 container
+				5 text SECRETARÍA DE ESTADO DE HACIENDA
+				6 text DIRECCIÓN GENERAL DE TRIBUTOS
+				7 text Doctrina Tributaria - Consultas Tributarias 1997-2026
+		8 heading BUSCADOR, Value: 1
+			9 text BUSCADOR
+		10 container knosys_form
+			11 heading Formulario de consulta, Value: 2
+				12 text Formulario de consulta
+			13 link Description: Ayuda general del buscador, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/ayudaTributos.html
+			14 container search
+				15 container Mostrar
+					16 text Mostrar
+					17 container
+						18 checkbox (settable, integer) Description: Consultas generales, Value: 0, ID: generales
+						19 text (actualizada a 30/09/2026)
+					20 container
+						21 checkbox (settable, integer) Description: Consultas vinculantes, Value: 1, ID: vinculantes
+						22 text (actualizada a 30/09/2026)
+				23 container Filtro de búsqueda
+					24 text Filtro de búsqueda
+					25 container
+						26 link Description: Ayuda del buscador para número de consulta, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/numConsulta.html
+						27 text  Nº de consulta *
+						28 text field (settable) Ayuda del buscador para número de consulta Nº de consulta *, Value: V1604-18, ID: VLCMP_1
+						29 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_1, Secondary Actions: Expand
+							30 menu
+								31 (selected) Y
+								32 O
+								33 NO
+					34 container
+						35 text Fecha salida desde
+						36 text field (settable) Fecha salida desde, ID: dateIni_2
+						37 button Description: Seleccionar fecha de inicio, ID: btnDateIni_2
+						38 text Hasta
+						39 text field (disabled) Hasta, ID: dateEnd_2
+						40 button (disabled) Description: Seleccionar fecha de fin, ID: btnDateEnd_2
+						41 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_2, Secondary Actions: Expand
+							42 menu
+								43 (selected) Y
+								44 O
+								45 NO
+					46 container
+						47 link Description: Ayuda del buscador para normativa, Help: Normativa, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/normativa.html
+						48 text  Normativa
+						49 text field (settable) Ayuda del buscador para normativa Normativa, ID: VLCMP_3
+						50 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_3, Secondary Actions: Expand
+							51 menu
+								52 (selected) Y
+								53 O
+								54 NO
+					55 container
+						56 text Cuestión planteada
+						57 text field (settable) Cuestión planteada, ID: VLCMP_4
+						58 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_4, Secondary Actions: Expand
+							59 menu
+								60 (selected) Y
+								61 O
+								62 NO
+					63 container
+						64 text Descripción de hechos
+						65 text field (settable) Descripción de hechos, ID: VLCMP_5
+						66 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_5, Secondary Actions: Expand
+							67 menu
+								68 (selected) Y
+								69 O
+								70 NO
+					71 container
+						72 text Texto libre
+						73 text field (settable) Texto libre, ID: VLCMP_6
+						74 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_6, Secondary Actions: Expand
+							75 menu
+								76 (selected) Y
+								77 O
+								78 NO
+					79 container
+						80 text Criterio de interés
+						81 text (a partir de 01-01-2022)
+						82 checkbox (settable, integer) Description: Criterio de interés (a partir de 01-01-2022), Value: 0, ID: VLCMP_7
+				83 container Ordenación
+					84 text Ordenación
+					85 container
+						86 text Campo de ordenación
+						87 pop up button (collapsed, settable) Campo de ordenación, Value: Nº de consulta, ID: cmpOrder, Secondary Actions: Expand
+							88 menu
+								89 (selected) Nº de consulta
+								90 Órgano
+								91 Fecha salida
+						92 pop up button (collapsed, settable) Description: Operador, Value: Ascendente, ID: dirOrder, Secondary Actions: Expand
+							93 menu
+								94 (selected) Ascendente
+								95 Descendente
+				96 text *  0006-26 a 4999-26 Números de consulta sin contenido por cambio de procedimiento y numeración para consultas generales
+				97 text *  V1690-26 a V4999-26 Números de consulta sin contenido por cambio de procedimiento y numeración para consultas vinculantes
+				98 container
+					99 button Buscar
+					100 button Borrar
+		111 container tabs
+			112 heading Resultados, Value: 2
+				113 text Resultados
+			114 tab group
+				115 tab (selected, expanded, settable, boolean) Description: Consultas vinculantes (1 resultados), ID: tab-2, Secondary Actions: Collapse, Value: 1
+Consultas vinculantes
+(1 resultados)
+			116 container Description: Consultas vinculantes (1 resultados), ID: tabs-2
+				117 container results2
+					118 container
+						119 text  Página 
+						120 text field (settable) Description: Introduzca un número de página y pulse INTRO, Value: 1, ID: current_page
+						121 text  de 
+						122 text 1
+					123 heading Documentos encontrados, Value: 3
+						124 text Documentos encontrados
+					125 table
+						126 row
+							127 cell
+								128 text Nº de consulta, Descripción de hechos, Cuestión planteada
+						129 row
+							130 cell doc_67474
+								131 heading V1604-18, Value: 4
+									132 text V1604-18
+								133 text El consultante tiene previsto realizar en 2018 ventas parciales de monedas virtuales "bitcoin" que adquirió en diferentes casas de cambio o "exchanges" y en distintas fechas. Las casas de cambio cobran comisiones por las operaciones de adquisición y de venta de dichas monedas virtuales.
+								134 text 1. Si las comisiones de compra y de venta que se satisfacen a las casas de cambio por dichas operaciones pueden tenerse en cuenta para calcular la ganancia o la pérdida patrimonial que se obtenga por las ventas de los "bitcoin". 2. Si, para calcular la ganancia o pérdida patrimonial, la determinación de los "bitcoin" que se vendan y su correspondiente valor de adquisición ha de hacerse de forma independiente por cada casa de cambio en la que se hayan realizado operaciones de adquisición y de venta, o bien hay que tener en cuenta todos los "bitcoin" adquiridos con independencia de la casa de cambio en la que se realicen las operaciones.
+				135 container document2
+					136 container
+						137 text  Documento 1 de 1 
+						138 link Description: Copiar enlace al documento, Value: petete.tributos.hacienda.gob.es/consultas/docLink.vm
+						139 link Description: Imprimir documento, Value: javascript:void(0);
+					140 heading Documento seleccionado, Value: 3
+						141 text Documento seleccionado
+					142 table Documento seleccionado
+						143 row
+							144 cell
+								145 text Nº de consulta
+							146 cell
+								147 text V1604-18
+						148 row
+							149 cell
+								150 text Órgano
+							151 cell
+								152 text SG de Tributación de las Operaciones Financieras
+						153 row
+							154 cell
+								155 text Fecha salida
+							156 cell
+								157 text 11/06/2018
+						158 row
+							159 cell
+								160 text Normativa
+							161 cell
+								162 text Ley 35/2006 Arts. 2, 33-1, 35
+						163 row
+							164 cell
+								165 text Descripción de hechos
+							166 cell
+								167 text El consultante tiene previsto realizar en 2018 ventas parciales de monedas virtuales "bitcoin" que adquirió en diferentes casas de cambio o "exchanges" y en distintas fechas. Las casas de cambio cobran comisiones por las operaciones de adquisición y de venta de dichas monedas virtuales.
+						168 row
+							169 cell
+								170 text Cuestión planteada
+							171 cell
+								172 text 1. Si las comisiones de compra y de venta que se satisfacen a las casas de cambio por dichas operaciones pueden tenerse en cuenta para calcular la ganancia o la pérdida patrimonial que se obtenga por las ventas de los "bitcoin".
+								173 text 2. Si, para calcular la ganancia o pérdida patrimonial, la determinación de los "bitcoin" que se vendan y su correspondiente valor de adquisición ha de hacerse de forma independiente por cada casa de cambio en la que se hayan realizado operaciones de adquisición y de venta, o bien hay que tener en cuenta todos los "bitcoin" adquiridos con independencia de la casa de cambio en la que se realicen las operaciones.
+						174 row
+							175 cell
+								176 text Contestación completa
+							177 cell
+								178 text El artículo 2 de la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas (en adelante LIRPF) dispone que: “Constituye el objeto de este Impuesto la renta del contribuyente, entendida como la totalidad de sus rendimientos, ganancias y pérdidas patrimoniales y las imputaciones de renta que se establezcan por la ley, con independencia del lugar donde se hubiesen producido y cualquiera que sea la residencia del pagador.”
+								179 text El apartado 1 del artículo 33 de la misma Ley establece que: “Son ganancias y pérdidas patrimoniales las variaciones en el valor del patrimonio del contribuyente que se pongan de manifiesto con ocasión de cualquier alteración en la composición de aquél, salvo que por esta Ley se califiquen como rendimientos.”
+								180 text Partiendo de la premisa de que las adquisiciones y las ventas de las monedas virtuales “bitcoin” no se realicen por el consultante en el ámbito de una actividad económica, dichas ventas darán lugar a ganancias o pérdidas patrimoniales, de acuerdo con el artículo 33.1 de la LIRPF, cuyo importe será, según el artículo 34 de la misma Ley, la diferencia entre los respectivos valores de transmisión y de adquisición, valores que en el caso de adquisiciones y transmisiones a título oneroso vienen definidos en el artículo 35 de la LIRPF, que dispone:
+								181 text “1. El valor de adquisición estará formado por la suma de:
+								182 text a) El importe real por el que dicha adquisición se hubiera efectuado.
+								183 text b) El coste de las inversiones y mejoras efectuadas en los bienes adquiridos y los gastos y tributos inherentes a la adquisición, excluidos los intereses, que hubieran sido satisfechos por el adquirente.
+								184 text (…)
+								185 text 2. El valor de transmisión será el importe real por el que la enajenación se hubiese efectuado. De este valor se deducirán los gastos y tributos a que se refiere la letra b) del apartado 1 en cuanto resulten satisfechos por el transmitente.
+								186 text Por importe real del valor de enajenación se tomará el efectivamente satisfecho, siempre que no resulte inferior al normal de mercado, en cuyo caso prevalecerá éste.”
+								187 text Respecto de la primera cuestión planteada, en referencia concreta a los gastos que se citan en el escrito de consulta, comisiones que cobran las casas de cambio o “exchanges” por las adquisiciones y por las ventas de “bitcoin” que efectúe el consultante con tales “exchanges”, si los citados gastos se originan por la realización de dichas operaciones, guardando, por tanto, relación directa con las mismas y son satisfechos por el consultante, serán computables para determinar los respectivos valores de adquisición y de transmisión en la forma prevista en el artículo 35. 1 y 2 anteriormente transcrito.
+								188 text Por lo que se refiere a la segunda cuestión planteada, esto es, la determinación de los “bitcoin” que son objeto de transmisión a efectos del Impuesto sobre la Renta de las Personas Físicas en una venta parcial, cuando han existido adquisiciones realizadas en distintos momentos y a diferentes valores, y con diferentes casas de cambio, se señala lo siguiente:
+								189 text Los “bitcoin”, computables por unidades o fracciones de unidades, tienen su origen en un mismo protocolo específico y poseen todos ellos las mismas características, siendo iguales entre sí, lo que confiere a las diferentes unidades o fracciones de unidades de “bitcoin” la naturaleza de bienes homogéneos.
+								190 text Cuando existen valores o bienes homogéneos la LIRPF establece en determinados preceptos el criterio por el que deben determinarse los valores o los bienes que son objeto de una transmisión o disposición, considerando que los transmitidos o dispuestos son los adquiridos en primer lugar. Así se prevé en el artículo 37.2 en relación con la transmisión de valores representativos de la participación en fondos propios de sociedades o entidades y de instituciones de inversión colectiva y en el artículo 54.5 sobre disposición de bienes o derechos aportados a patrimonios protegidos de personas con discapacidad.
+								191 text Habida cuenta que la LIRPF no establece una regla específica diferente para identificar, en el caso de monedas virtuales homogéneas, las que se entienden transmitidas a efectos de determinar la correspondiente ganancia o pérdida patrimonial, cabe entender, de acuerdo el criterio anteriormente señalado, que en el caso de efectuarse ventas parciales de monedas virtuales “bitcoin” que hubieran sido adquiridas en diferentes momentos, debe considerarse que los “bitcoin” que se transmiten son los adquiridos en primer lugar.
+								192 text Finalmente, el hecho de que los “bitcoin” se adquieran y transmitan en diferentes casas de cambio o “exchanges” no constituye una circunstancia que altere la homogeneidad de las referidas monedas virtuales, por lo que para determinar la antigüedad y el correspondiente valor de adquisición de los “bitcoin” que se consideran vendidos conforme al criterio señalado en el párrafo anterior, habrán de tenerse en cuenta todos los “bitcoin” adquiridos sin distinguir en función de las diferentes casas de cambio en las que se hubieran realizado las operaciones.
+								193 text Lo que comunico a Vd. con efectos vinculantes, conforme a lo dispuesto en el apartado 1 del artículo 89 de la Ley 58/2003, de 17 de diciembre, General Tributaria.
+		101 container footer_content
+			102 container
+				103 text Doctrina Tributaria - Consultas Tributarias
+				104 link Description: Accesibilidad, Value: petete.tributos.hacienda.gob.es/consultas/accesibilidad.vm
+				105 text  | 
+				106 link Description: Aviso Legal, Value: petete.tributos.hacienda.gob.es/consultas/avisoLegal.vm
+			107 container
+				108 link Description: HTML5 válido, Value: validator.w3.org/check?uri=referer
+				109 link Description: CSS válido, Value: jigsaw.w3.org/css-validator/check/referer
+				110 link Description: WCAG 2.1 (Level AA), Value: achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA
+
+The focused UI element is 0 AXWebArea Consultas de la D.G. Tributos: Buscador, URL: petete.tributos.hacienda.gob.es/consultas/?num_consulta=V1604-18

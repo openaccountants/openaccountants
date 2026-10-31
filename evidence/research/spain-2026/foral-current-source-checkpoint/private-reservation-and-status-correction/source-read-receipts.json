@@ -1,0 +1,69 @@
+{
+  "read_on": "2026-10-28",
+  "inputs": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/foral-surcharge-current-completion/sources/bizkaia-law.pdf",
+      "bytes": 1322692,
+      "sha256": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe",
+      "read_scope": "B57bis named rates and medium exclusion; actual body read in preceding phase"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/foral-surcharge-current-completion/sources/alava-law.pdf",
+      "bytes": 1609894,
+      "sha256": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6",
+      "read_scope": "A56.7 named rates and medium exclusion; actual body read in preceding phase"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/foral-surcharge-current-completion/sources/gipuzkoa-law.pdf",
+      "bytes": 2587573,
+      "sha256": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44",
+      "read_scope": "G56.7 named rates and medium exclusion; actual body read in preceding phase"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/proposed-v1.5.md",
+      "bytes": 476835,
+      "sha256": "1c863905ca1a508d5513725a6984a82e210805da57f62067ac0c9a3067a0a290",
+      "read_scope": "Entire actual root-reviewed expense-method candidate read for bounded status mapping"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/root-independent/checks.json",
+      "bytes": 7945,
+      "sha256": "c95625ea3c473e86ffc97b4fe2c9fcd90728a0cb4b1d536ef12096553012b28d",
+      "read_scope": "Actual root independent37-control record"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/rirpf-fresh.html-a11.txt",
+      "bytes": 2286,
+      "sha256": "a843adfe05b5b03d5f2d0945b97aeb21475032a3976f5a6b4857bf6993c0de3d",
+      "read_scope": "Entire current11read; exclusive increase attribution"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/lirpf-fresh.html-a19.txt",
+      "bytes": 2375,
+      "sha256": "7fb33809ee2734655de5673695633fd765a00bb7d16f4565f99a10da2f92410e",
+      "read_scope": "Current19expense gates"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/lirpf-fresh.html-a20.txt",
+      "bytes": 3106,
+      "sha256": "0400cce5130af0977ae7d6af23df4a5ffcc6b14289ba743533acd24212f9cf4d",
+      "read_scope": "Current20category reduction and explicit open allocation"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/root-independent/AEAT-2025-expenses.txt",
+      "bytes": 14903,
+      "sha256": "4d7315279bd899d6cbe260d902381e491de703f56a532f0ff799ee13cf0e9071",
+      "read_scope": "Actual authority ceilings/body used by reviewed method"
+    }
+  ],
+  "fresh_web_reads": [
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a11",
+      "scope": "Current11(2)actual web text separately opened/found; no new whole-law review claimed"
+    },
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a19",
+      "scope": "Current19(2)(f)/20actual web passages separately opened/found"
+    }
+  ]
+}

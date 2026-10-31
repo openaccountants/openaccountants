@@ -1,0 +1,12 @@
+	Coeficiente máximo anual %	Periodo máximo años
+Edificaciones para oficinas, usos comerciales y/o de servicios y viviendas	4	38
+Edificaciones para uso industrial	5	30
+Instalaciones	15	10
+Maquinaria	15	10
+Mobiliario	15	10
+Equipos para procesos de información	25	6
+Elementos de transporte (autobuses, autocamiones, furgonetas, etc.)	20	8
+Elementos de transporte interno	15	10
+Moldes, modelos, troqueles y matrices	33	5
+Útiles y herramientas	Depreciación real
+Otro inmovilizado material	10	15

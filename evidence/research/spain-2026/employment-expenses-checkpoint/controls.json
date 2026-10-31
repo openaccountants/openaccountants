@@ -1,0 +1,186 @@
+{
+  "time": "2026-10-27T23:59:18.558210+00:00",
+  "verified_arithmetic_controls": [
+    {
+      "name": "salary plus established aid less salary contributions",
+      "actual": "409500",
+      "expected": "409500",
+      "pass": true,
+      "source": "LIRPF19(1)/(2)(a)"
+    },
+    {
+      "name": "category ordinary expense and eligible disability expense",
+      "actual": "404000",
+      "expected": "404000",
+      "pass": true,
+      "source": "LIRPF19(2)(f); RIRPF11(2); eligible wages exceed even all common expenses"
+    },
+    {
+      "name": "article20 pre-f measure above ceiling",
+      "actual": "False",
+      "expected": "False",
+      "pass": true,
+      "source": "LIRPF20"
+    },
+    {
+      "name": "category20 measure20000 does not become18000 for test",
+      "actual": "False",
+      "expected": "False",
+      "pass": true,
+      "source": "LIRPF20 final-but-one paragraph"
+    },
+    {
+      "name": "ordinary expense once per joint family",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true,
+      "source": "LIRPF84(2), AEAT2025 section a"
+    },
+    {
+      "name": "joint mobility nominal once",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true,
+      "source": "AEAT2025 section b; does not multiply per eligible member"
+    },
+    {
+      "name": "combined disability mobility nominal",
+      "actual": "5500",
+      "expected": "5500",
+      "pass": true,
+      "source": "LIRPF19(2)(f)"
+    },
+    {
+      "name": "eligible-income union ceiling",
+      "actual": "1800",
+      "expected": "1800",
+      "pass": true,
+      "source": "AEAT2025 section d actual example:34%throughyear;Januaryjobended;registeredunemployment;Decemberjobcausesmove;6000unemploymentbenefit;1000+800already-neteligibleincome"
+    },
+    {
+      "name": "both increases capped by eligible-income union",
+      "actual": "1800",
+      "expected": "1800",
+      "pass": true,
+      "source": "AEAT2025 section d"
+    },
+    {
+      "name": "unemploymentbenefit6000does not enlarge1800ceiling",
+      "actual": "1800",
+      "expected": "1800",
+      "pass": true,
+      "source": "RIRPF11(2), AEAT2025 section d"
+    },
+    {
+      "name": "permitted joint-enhancement split",
+      "actual": "1800",
+      "expected": "1800",
+      "pass": true,
+      "source": "AEAT2025 example note2"
+    },
+    {
+      "name": "mobility at second year without qualifying wages",
+      "actual": "0",
+      "expected": "0",
+      "pass": true,
+      "source": "AEAT2025 section b income cap"
+    },
+    {
+      "name": "disabled aid beneficiary without active employment has no active enhancement",
+      "actual": "0",
+      "expected": "0",
+      "pass": true,
+      "source": "LIRPF19(2)(f), active employment gate, AEAT2025 section c"
+    },
+    {
+      "name": "fixed disability increase limited to1000eligibleperiodincome",
+      "actual": "1000",
+      "expected": "1000",
+      "pass": true,
+      "source": "AEAT2025 TEAC22April2025 RG00-01351-2024 discussion; amount not prorated"
+    },
+    {
+      "name": "article20lowerband",
+      "actual": "7302",
+      "expected": "7302",
+      "pass": true,
+      "source": "LIRPF20(a) at14852 pre-f measure, othernonwork income<=6500"
+    },
+    {
+      "name": "article20middleband16000",
+      "actual": "5293.00",
+      "expected": "5293",
+      "pass": true,
+      "source": "LIRPF20(b)"
+    },
+    {
+      "name": "article20upperband18000",
+      "actual": "1992.1528",
+      "expected": "1992.1528",
+      "pass": true,
+      "source": "LIRPF20(c), before later monetary presentation rounding"
+    },
+    {
+      "name": "article20 strict earnings cutoff",
+      "actual": "False",
+      "expected": "False",
+      "pass": true,
+      "source": "LIRPF20 introductory sentence"
+    },
+    {
+      "name": "article20 other income6500 allowed",
+      "actual": "True",
+      "expected": "True",
+      "pass": true,
+      "source": "LIRPF20 introductory sentence"
+    },
+    {
+      "name": "article20 other income6500.01 excluded",
+      "actual": "False",
+      "expected": "False",
+      "pass": true,
+      "source": "LIRPF20 introductory sentence"
+    },
+    {
+      "name": "RD574 award sanity33points noanalogousoffset",
+      "actual": "396000",
+      "expected": "396000",
+      "pass": true,
+      "source": "RD574/2023art3; award assumed already established; no registry gate inferred"
+    },
+    {
+      "name": "joint highest degree only among qualifying active disabled workers",
+      "actual": "34",
+      "expected": "34",
+      "pass": true,
+      "source": "AEAT2025sectionc joint active-worker rule"
+    },
+    {
+      "name": "inactive80percentrelative does not raise active34percentordinaryincrease",
+      "actual": "3500",
+      "expected": "3500",
+      "pass": true,
+      "source": "AEAT2025sectionc; assumes no assistance/reducedmobility specialgate"
+    }
+  ],
+  "count": 23,
+  "diagnostics_not_legal_answers": [
+    {
+      "question": "Balearic singular rate",
+      "aid_in_BL": 10000,
+      "hypothetical_state_rate": 12.5,
+      "hypothetical_regional_rate": 15,
+      "regional_only_result": "1500.00",
+      "combined_result": "2750.00",
+      "result_selected": false
+    },
+    {
+      "question": "ordinary2000andarticle20sharedwageaidallocation",
+      "category_net_known": 404000,
+      "eligible_job_enhancement_assigned_to_aid": "0",
+      "ordinary_expense_assigned_to_aid": "unproved",
+      "aid_numerator": "396000 minus legally attributable ordinary expense; exact share not selected",
+      "regional_credit_computed": false
+    }
+  ]
+}

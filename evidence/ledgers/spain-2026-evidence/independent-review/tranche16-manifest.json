@@ -1,0 +1,40 @@
+{
+  "artifacts": [
+    {
+      "path": "tranche16-report.md",
+      "sha256": "9890bfe36b8ce232075eafaa0e8cfec9f0be3ed0a252909e3fa05a73e6d273a1"
+    },
+    {
+      "path": "tranche16-final-integrity.json",
+      "sha256": "df2732af38606f4a5eed3eb3c5f2d901eee0dad18f5b1885fe1cf7153d17c84e"
+    },
+    {
+      "path": "tranche16-read-ledger.json",
+      "sha256": "cf9427e988d25658ecec9f850071d288739b77101fe6350edc6a179eef90a9ca"
+    },
+    {
+      "path": "tranche16-source-identities.json",
+      "sha256": "1e5ec9492963168b8f307da63e4af8a568d64fa519e729c7e8a7f5871aa69f90"
+    },
+    {
+      "path": "tranche16-controls.json",
+      "sha256": "27c2faf78f88928102120c24590726d8d93f984cb8056c9d87bf848d02a89cbf"
+    },
+    {
+      "path": "tranche16-controls.py",
+      "sha256": "d4d6cf95c15f153d0eb85b7eaede82398b69d16e0fb2ae94cf143b47dce1a72a"
+    },
+    {
+      "path": "tranche16-examples.txt",
+      "sha256": "6ea6c71e03e0336478d6ae18b0711dbec7bbdb5de68f9387039e6015f0d5af74"
+    },
+    {
+      "path": "tranche16-quote-reuse-map.json",
+      "sha256": "9243c21dc9bface70da872ef00163d164b0f8c574e25c57ad59a7c310152d27b"
+    },
+    {
+      "path": "tranche16-harness-erratum.json",
+      "sha256": "bacfe87a495cb64359fdaaf815728f2393152711382f6f787eae90c5f2d59feb"
+    }
+  ]
+}

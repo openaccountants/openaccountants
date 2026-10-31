@@ -1,0 +1,30 @@
+{
+  "slug": "es-foral-non-resident-tax",
+  "guide_sha256": "3a0cff999160125d566a79080763c9318d7667847eb82d20a18e9cbd17a798c2",
+  "ledger_sha256": "6785241879f7d5e321e5909429887f939b8ddf52cacf7ee2e2e08d096a62a29a",
+  "rows": 533,
+  "old_units": 282,
+  "earliest_branch_units": 280,
+  "quote_anchors": 530,
+  "writer_checks": 1226,
+  "writer_check_failures": 0,
+  "original_oa_blocks": 2,
+  "source_pairs": 57,
+  "actual_read_scope": "Root read currentGuide435LF and actual first-branch inverse; selected original-language native clauses plus all own PIT/CIT coefficient rows. Only these scopes read, not entire acquired source bodies.",
+  "independent_status": "READY_FOR_INDEPENDENT_REVIEW; no PASS claimed",
+  "scope_limits": [
+    "Labelled IRNR own19 scope interpretation is not a binding universal surcharge exemption.",
+    "Prior2026 partial boundary and five ordinary country gaps remain.",
+    "Collector/formal-rules handoff does not import State deadlines into Navarra.",
+    "2026 State imputation uses operative85 edition2October and current2026DA55, not future2027aggregate scale.",
+    "Gipuzkoa current24.5/31.2 retained24.6reference: prospective EU/EEAexpense withholding basis expressly unconfirmed; finalexpensecomputation retained,3800/228example scopedB/A."
+  ],
+  "recipe": [
+    "python3 ledgers/spain-2026-evidence/es-foral-non-resident-tax/prepare-quotes.py",
+    "python3 ledgers/spain-2026-evidence/es-foral-non-resident-tax/build-ledger.py",
+    "python3 ledgers/spain-2026-evidence/es-foral-non-resident-tax/writer-checks.py"
+  ],
+  "S-L22": "Source-only correction; predecessor7f396111 preserved.",
+  "S_L23": "Two own-rental source keys corrected; Guide unchanged, predecessor retained.",
+  "S-L24": "Boundedv0.3correctsGwithholding cross-reference assertion; B/Acase retained, Gfinalexpenses unchanged, Gprospectivebasis expresslyunsettled. Predecessor52ed9a4a retained."
+}

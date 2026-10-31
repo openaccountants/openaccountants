@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "spain-crypto-tax",
+    "final_ledger": "7c4f1c0ce0aa36b631ad3799efa6fdf19e55114d236cd0bdec05f3c554f9ee1e",
+    "changes": [
+      {
+        "anchor": 131,
+        "before": [
+          3107,
+          3115
+        ],
+        "after": [
+          3059,
+          3067
+        ]
+      },
+      {
+        "anchor": 132,
+        "before": [
+          3396,
+          3407
+        ],
+        "after": [
+          3344,
+          3354
+        ]
+      },
+      {
+        "anchor": 133,
+        "before": [
+          3409,
+          3418
+        ],
+        "after": [
+          3356,
+          3365
+        ]
+      },
+      {
+        "anchor": 134,
+        "before": [
+          3424,
+          3430
+        ],
+        "after": [
+          3367,
+          3373
+        ]
+      },
+      {
+        "anchor": 135,
+        "before": [
+          5343,
+          5344
+        ],
+        "after": [
+          5259,
+          5260
+        ]
+      },
+      {
+        "anchor": 136,
+        "before": [
+          5378,
+          5382
+        ],
+        "after": [
+          5293,
+          5297
+        ]
+      }
+    ],
+    "all_quote_bodies_byte_exact_unchanged": true,
+    "native_spans_pass": true,
+    "formfeed_display_separation": [
+      132
+    ]
+  },
+  {
+    "slug": "es-social-contributions",
+    "final_ledger": "b97e69d8101a113a8e10fc1ef960d6e30b5e6ccc3ad1f12a378c2142b7298791",
+    "changes": [
+      {
+        "anchor": 19,
+        "before": [
+          468,
+          480
+        ],
+        "after": [
+          460,
+          472
+        ]
+      }
+    ],
+    "all_quote_bodies_byte_exact_unchanged": true,
+    "native_spans_pass": true,
+    "formfeed_display_separation": []
+  },
+  {
+    "slug": "es-estimated-tax",
+    "final_ledger": "b44ae8932a0048419050c8fb67e30674ecf578cdb9a0deaf0c84a0dc73ea0bf1",
+    "changes": [
+      {
+        "anchor": 56,
+        "before": [
+          354,
+          354
+        ],
+        "after": [
+          349,
+          349
+        ]
+      },
+      {
+        "anchor": 57,
+        "before": [
+          383,
+          383
+        ],
+        "after": [
+          378,
+          378
+        ]
+      },
+      {
+        "anchor": 58,
+        "before": [
+          384,
+          384
+        ],
+        "after": [
+          379,
+          379
+        ]
+      },
+      {
+        "anchor": 59,
+        "before": [
+          387,
+          387
+        ],
+        "after": [
+          382,
+          382
+        ]
+      }
+    ],
+    "all_quote_bodies_byte_exact_unchanged": true,
+    "native_spans_pass": true,
+    "formfeed_display_separation": []
+  }
+]

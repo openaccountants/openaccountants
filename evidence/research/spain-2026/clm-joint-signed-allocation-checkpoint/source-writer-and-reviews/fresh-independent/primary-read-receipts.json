@@ -1,0 +1,370 @@
+[
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a11.txt",
+    "sha256": "74ef74f30369b95d21df86ae5ed5a3606af7ebd35ea1be70bd56d9a96171ac22",
+    "bytes": 3073,
+    "read_scope": "Full actual operative article 11, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a19.txt",
+    "sha256": "a7e30abc2286ff91b9cc05bd9989383805ad030d2b845e9082fb7e1d77e0414a",
+    "bytes": 2300,
+    "read_scope": "Full actual operative article 19, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a20.txt",
+    "sha256": "72f4feaa6c8dcac9162e9b0e7a3e75aa82d89aeb512b51ecc096289ae8b3fccb",
+    "bytes": 2896,
+    "read_scope": "Full actual operative article 20, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a28.txt",
+    "sha256": "68b3b23b4aba0e17894e7cb20262857a809d2bf2d9e05fba62911ad43504efe7",
+    "bytes": 1678,
+    "read_scope": "Full actual operative article 28, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a45.txt",
+    "sha256": "3c848667e8739198f66b51a0b551f4349e2e9b8d9ef03bee39e08000f2d7c59a",
+    "bytes": 446,
+    "read_scope": "Full actual operative article 45, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a46.txt",
+    "sha256": "3676dc5f25f5ed97d54ea0ed270d3ae9625a3d6f7ada21ffee8363634aa7afd7",
+    "bytes": 2002,
+    "read_scope": "Full actual operative article 46, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a48.txt",
+    "sha256": "c961043176ea8dbb525a80b4f64e6fb97f2f3816607f8802e0dab6abdb268b36",
+    "bytes": 1793,
+    "read_scope": "Full actual operative article 48, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a50.txt",
+    "sha256": "5d05ba5d3ed77680c2e337d4ebeb9dd2445e483a323a1d850b0108616288d7d2",
+    "bytes": 1738,
+    "read_scope": "Full actual operative article 50, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a56.txt",
+    "sha256": "a401f3c75eff2c139c7c8eb3b2b70ea44cc499433845d1f1a02fad7958f13923",
+    "bytes": 1741,
+    "read_scope": "Full actual operative article 56, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a57.txt",
+    "sha256": "b48f2de3e2d5c840cd270022189ffc893f344af3e31aa7d07d51f0324d71ab5e",
+    "bytes": 1461,
+    "read_scope": "Full actual operative article 57, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a61.txt",
+    "sha256": "06d489e692c12cbe23163cc9cdc52e9f93ef88cdc984372a3c3a7b518bdcdaaa",
+    "bytes": 3170,
+    "read_scope": "Full actual operative article 61, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a74.txt",
+    "sha256": "01219f8035455b6d8d6ca7d875112a709d06bb80a06107ce3a46d1b29e7f9874",
+    "bytes": 2548,
+    "read_scope": "Full actual operative article 74, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a76.txt",
+    "sha256": "bc7f9fed703655ec86c0d4315bddcdd579ea226afd6b4beece65bfca5565fd2b",
+    "bytes": 2669,
+    "read_scope": "Full actual operative article 76, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a77.txt",
+    "sha256": "90b8c3705d1e1a03aef5de52063b85ff1a0da146e7ff5864663c60bc51ec93af",
+    "bytes": 1811,
+    "read_scope": "Full actual operative article 77, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a82.txt",
+    "sha256": "c99b8c58d1d91bdec383601276c01015153d6a35ead97b7ce2d70b250acd4b3c",
+    "bytes": 946,
+    "read_scope": "Full actual operative article 82, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current-a84.txt",
+    "sha256": "2d18e87e219873c5d427a608ed2920e305eb6d0c079c972eaf11987eb659a24c",
+    "bytes": 4586,
+    "read_scope": "Full actual operative article 84, including amendment/history labels; underlying current HTML rehashed.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-clm-current-a1-6.txt",
+    "sha256": "991b031e33de4068d11d1ca652fb9c3967bab29d3a7c3a2263815399e57116e8",
+    "bytes": 2219,
+    "read_scope": "Full actual12quater including all eligibility/entitled-member/repayment provisions; older BOE consolidation vintage kept explicit.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-clm-current-a13bis.txt",
+    "sha256": "df647db836a7f37f87234627a99d3f3797a78e6107e38097db5de2d7eaafedba",
+    "bytes": 686,
+    "read_scope": "Full CLM regional scale and amendment history.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/enacted-12quater-DF9-Dosbis.txt",
+    "sha256": "33efdf582fc8d130a834b2962ff617ee9f6d60f900192d1f1e5d52aa7772039c",
+    "bytes": 2207,
+    "read_scope": "Whole enacted12quater1(a)-(d)/2.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-aeat-clm-2025.txt",
+    "sha256": "453d6f19deda10a5693e38a8bb64c674ceb7bb841e7b88f67df86ae778322603",
+    "bytes": 4370,
+    "read_scope": "Full actual2025 move-credit guidance, including unique combined joint limit and eligibility.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/DOCM-operative-physical-pages.txt",
+    "sha256": "3eea18181dd7ed6e3f70b2c9ee87f2bf1beb0ebaae3ecec2349c1fdfe170c42f",
+    "bytes": 24456,
+    "read_scope": "Full operative article18 pages15\u201319 and DF6page24.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/DOCM-Law1-2026.pdf",
+    "sha256": "91b8c33af6b79496dfcd4bf61a0e1a7d530e9fc1e1200c55c4cce4da423e902b",
+    "bytes": 454855,
+    "read_scope": "Actual24-page retained PDF rehashed; text operative15\u201319/24 read and their six actual rendered PNGs visually inspected. Not a fresh independent raw download.",
+    "kind": "actual retained primary body read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-lirpf-current.html",
+    "sha256": "2ed2a6d4602889b5e529af3e6dd2c841074a7f3a898793283bad51d6fdd2ac40",
+    "bytes": 2028806,
+    "read_scope": "Raw underlying source independently rehashed; actual operative read scopes above. Live BOE and AEAT successful opens in separate receipt. No claim entire national/CLM Act read.",
+    "kind": "underlying raw source verification",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-clm-current.html",
+    "sha256": "828dda85a211c5ad1b26f3d1470f2583527a7763b73558f3c96c361c0c526cac",
+    "bytes": 379179,
+    "read_scope": "Raw underlying source independently rehashed; actual operative read scopes above. Live BOE and AEAT successful opens in separate receipt. No claim entire national/CLM Act read.",
+    "kind": "underlying raw source verification",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-clm-law2-2021.html",
+    "sha256": "ce1ad532d70d003648ce386392ee97617eb0e6dabe6fdc283e202542a9c460d1",
+    "bytes": 338404,
+    "read_scope": "Raw underlying source independently rehashed; actual operative read scopes above. Live BOE and AEAT successful opens in separate receipt. No claim entire national/CLM Act read.",
+    "kind": "underlying raw source verification",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-clm-law1-2026.html",
+    "sha256": "bb8446891b9e1d78c56bebcd81ca37099804917a320cd14a2343f00c6e0ea7b5",
+    "bytes": 130927,
+    "read_scope": "Raw underlying source independently rehashed; actual operative read scopes above. Live BOE and AEAT successful opens in separate receipt. No claim entire national/CLM Act read.",
+    "kind": "underlying raw source verification",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/fresh-aeat-clm-2025.html",
+    "sha256": "26ce6211b5540c92659ffb6afd5b056c323fbc85490e9e9d0dd67a9c65c512a7",
+    "bytes": 12409,
+    "read_scope": "Raw underlying source independently rehashed; actual operative read scopes above. Live BOE and AEAT successful opens in separate receipt. No claim entire national/CLM Act read.",
+    "kind": "underlying raw source verification",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/DOCM-page-15.png",
+    "sha256": "f7a0900c1689603c60b39210f8dcf78224bad1ca420126b22719486456d4a616",
+    "bytes": 163762,
+    "read_scope": "Actual rendered page visually inspected.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/DOCM-page-16.png",
+    "sha256": "062ceb4c489a8cb17c4b6fc2c706154f5daa137ec3266e81adc0a00457e0a9c5",
+    "bytes": 203391,
+    "read_scope": "Actual rendered page visually inspected.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/DOCM-page-17.png",
+    "sha256": "442944b5838d13cd6c31fcb8faee0e2d34cdc026198b70e1c27ae56280cfc137",
+    "bytes": 205459,
+    "read_scope": "Actual rendered page visually inspected.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/DOCM-page-18.png",
+    "sha256": "4f872343aad687b880177712bb617281569583c7abda7eda5170caebf4d4b086",
+    "bytes": 216827,
+    "read_scope": "Actual rendered page visually inspected.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/DOCM-page-19.png",
+    "sha256": "74392ce0a79d3991932040a8841005972b4beb0ee68bbcd18b0c8c9837bd94ca",
+    "bytes": 177401,
+    "read_scope": "Actual rendered page visually inspected.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/regional-clm-joint-signed-legalbridge/sources/DOCM-page-24.png",
+    "sha256": "929fe096d127f1e9a6c13df74d44e6cd0b11becb295a73c68a946dfcb86fb70f",
+    "bytes": 45161,
+    "read_scope": "Actual rendered page visually inspected.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J1-joint-summary.png",
+    "sha256": "24f82b7edf61a7abfa6d3e1a0a6ccfe48379a7311f77aa285683b3c2d5836622",
+    "bytes": 130124,
+    "read_scope": "Actual saved fictional official2025UI screenshot visually inspected; this reviewer did not operate tab.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J2-both-eligible-input.png",
+    "sha256": "5d9c3129286e2ac71978d1360a33ea2ff62fd49b6202f7048319d83580ccb43a",
+    "bytes": 99581,
+    "read_scope": "Actual saved fictional official2025UI screenshot visually inspected; this reviewer did not operate tab.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J3-joint-summary.png",
+    "sha256": "1aefc65777e8e82d40192ce254d9cd697cc23a13df0a8cc162749f19e63e99b9",
+    "bytes": 130279,
+    "read_scope": "Actual saved fictional official2025UI screenshot visually inspected; this reviewer did not operate tab.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J1-repeat-tax-summary.png",
+    "sha256": "5a8826a188fdb703fe4fb0b0bdfd425de35a57c630fe371cb44bcf6a1b67f320",
+    "bytes": 136387,
+    "read_scope": "Actual saved fictional official2025UI screenshot visually inspected; this reviewer did not operate tab.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J1-joint-quota-components.png",
+    "sha256": "8949874de6713c744b8ec087b7c757d7fea9cb4cfb645438971f8f6a2fff8dec",
+    "bytes": 135729,
+    "read_scope": "Actual saved fictional official2025UI screenshot visually inspected; this reviewer did not operate tab.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J2-joint-summary.png",
+    "sha256": "3ca2e2445cdc743f93fa1fdf1f61dd0bb68da32cc0f1eeceec9ba3d77f6a2644",
+    "bytes": 130206,
+    "read_scope": "Actual saved fictional official2025UI screenshot visually inspected; this reviewer did not operate tab.",
+    "kind": "visual read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J1-joint-summary.ax.txt",
+    "sha256": "0bdb4d063797e3d051a72a31539828e9f4b108beebea9eb63ebe4aba5eacb745",
+    "bytes": 20558,
+    "read_scope": "Actual relevant column labels, amounts/ANEXOB and spouse-checkbox passages read; source receipt/observations not substituted for AX.",
+    "kind": "actual UI evidence read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J1-repeat-summary.ax.txt",
+    "sha256": "27e721213b57c1f49a49a05772baea21ec661aacc1a2aeb084388f57888eb09f",
+    "bytes": 20558,
+    "read_scope": "Actual relevant column labels, amounts/ANEXOB and spouse-checkbox passages read; source receipt/observations not substituted for AX.",
+    "kind": "actual UI evidence read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J1-joint-quota-components.ax.txt",
+    "sha256": "0902b457418915e54de5ec46bac520e6263a21202d6c337c490f94c4fdfa9732",
+    "bytes": 40825,
+    "read_scope": "Actual relevant column labels, amounts/ANEXOB and spouse-checkbox passages read; source receipt/observations not substituted for AX.",
+    "kind": "actual UI evidence read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J1-repeat-spouse-not-entitled.ax.txt",
+    "sha256": "1afa27dff95c722bfbfde759a281c13bb73e5ffca75c1901eb4fdde8e22a255f",
+    "bytes": 32165,
+    "read_scope": "Actual relevant column labels, amounts/ANEXOB and spouse-checkbox passages read; source receipt/observations not substituted for AX.",
+    "kind": "actual UI evidence read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J2-both-eligible-input.ax.txt",
+    "sha256": "4ad7391d4eece7dfeb420b0817b764eeffc5d43fa2d9b64f8fff12dbb176e3fe",
+    "bytes": 32378,
+    "read_scope": "Actual relevant column labels, amounts/ANEXOB and spouse-checkbox passages read; source receipt/observations not substituted for AX.",
+    "kind": "actual UI evidence read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J2-joint-summary.ax.txt",
+    "sha256": "b0c0fb3ca3e878686c6c5943f7e3b6194450def0dd8e002337bc43a6131bb10d",
+    "bytes": 20560,
+    "read_scope": "Actual relevant column labels, amounts/ANEXOB and spouse-checkbox passages read; source receipt/observations not substituted for AX.",
+    "kind": "actual UI evidence read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  },
+  {
+    "path": "spain/review/clm-joint-signed-allocation/J3-joint-summary.ax.txt",
+    "sha256": "69e0afee7487850dc1d7451e7267f0c8bb92436e4c7d2a465ff104acafb9f30a",
+    "bytes": 20558,
+    "read_scope": "Actual relevant column labels, amounts/ANEXOB and spouse-checkbox passages read; source receipt/observations not substituted for AX.",
+    "kind": "actual UI evidence read",
+    "recorded_utc": "2026-10-27T23:05:51.431884+00:00"
+  }
+]

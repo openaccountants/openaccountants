@@ -1,0 +1,465 @@
+{
+  "head": "78741df60895885723c292a3f35b10037ef749cb",
+  "manifest_sha256": "f9de854cf1e3a54f76ab5c4ddc5867315bc5b355253d22008b3cba900b3f20b0",
+  "inputs": [
+    {
+      "path": "skills/faroe-islands/README.md",
+      "actual_sha256": "79f1f8b7ba53041114c043a66ca8077a6377428fa7c039a1ce95c96634bcdbc1",
+      "match": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-company-registration-reporting.md",
+      "actual_sha256": "44ea09cb6e595851a53b15eff1e669a23dcecbdc197172ee4766a6dc69d0aa4c",
+      "match": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-corporate-income-tax.md",
+      "actual_sha256": "1880cd5c921ee277138affa032ed515dd2ab716dd79ac548bc69d517244fe7b6",
+      "match": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-country-by-country-reporting.md",
+      "actual_sha256": "ea919bf9bb1dd028a9038f36ccc8cdedacb6defc74cec09f71584c81956c5781",
+      "match": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-cross-border-payments.md",
+      "actual_sha256": "de99a886c6acd6bdc5b7baaf593525a7a479e65604b912891fa8db1205a67034",
+      "match": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-individual-income-tax.md",
+      "actual_sha256": "be9621c6eb725831ec00485f35558e4844bc5f73d5136c2545c5f63f8ef3ddcc",
+      "match": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-contributions.md",
+      "actual_sha256": "5dda39a3f9387b5ad4c917aa7642afbf0ed6120fab6f34605fc19f11dbff53bd",
+      "match": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-levy.md",
+      "actual_sha256": "afebe512c71fc26d9be8c3d098528176a1c18bf04aa10184b522eba065af57ad",
+      "match": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-transfer-pricing.md",
+      "actual_sha256": "891489655c55042b3013b9a79f7824abd50f30b2d885042321727cef593d790f",
+      "match": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-vat.md",
+      "actual_sha256": "6ee5c6b1a04d647b83c19d970bbed242d71526fad01851e37211f6f8c3fe850b",
+      "match": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/fo-payroll-levy.md",
+      "actual_sha256": "dedc57c987434499c04e304a35f1939002185bd3071b91c3b97fcd91e0eaebd8",
+      "match": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/fo-payroll-levy.rows.json",
+      "actual_sha256": "cfe10c02ac4fc48aed4e107c51e867d1af3de76da6ae7099da1fa87d675773e1",
+      "match": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/formation-delta-ledger.md",
+      "actual_sha256": "b321dc3a7ae0bde9a3a5ced6b142181bf241e7746c045bad2e3e9c0c07cd8e0e",
+      "match": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/preservation.json",
+      "actual_sha256": "7c02df52bff1cf3d6fe3a218cca67afbc30cf110b1c6e9d2de482ddc3dcbac02",
+      "match": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources.json",
+      "actual_sha256": "b0c10f47d56463e8790c18361526a88bd10a6f6a95300797bfd3de1030427f6c",
+      "match": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/additional-sources.json",
+      "actual_sha256": "12dc182ae086daa6a9f0f9dca0be05c8e103c0fa04c35fe9bf92225222b74afb",
+      "match": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/citation-expansions.json",
+      "actual_sha256": "a2d1ff14fd05397515c3c9db29d78b2b8ef28ca4e0d75411b603ac98cdbd8f20",
+      "match": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/research-findings.md",
+      "actual_sha256": "4bb43fafa66906c88c08a7df3cfa5dfdcf30301cb06d8d10974e6dbb754a4249",
+      "match": true
+    }
+  ],
+  "levy_rows": 43,
+  "quote_checks": [
+    {
+      "id": "PL-001",
+      "act_article": "Payroll Levy Act193/1993 §1(1)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-002",
+      "act_article": "Payroll Levy Act193/1993 §1(2)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-003",
+      "act_article": "Payroll Levy Act193/1993 §§1–5",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-004",
+      "act_article": "Payroll Levy Act193/1993 §4(1)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-005",
+      "act_article": "Payroll Levy Act193/1993 §4(2)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-006",
+      "act_article": "Payroll Levy Act193/1993 §6(1)–(3)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-007",
+      "act_article": "Payroll Levy Act193/1993 §6(7)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-008",
+      "act_article": "Payroll Levy Act193/1993 §7(6)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-009",
+      "act_article": "Payroll Levy Act193/1993 §5(1)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-010",
+      "act_article": "Payroll Levy Act193/1993 §5(2)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-011",
+      "act_article": "Payroll Levy Act193/1993 §5(3)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-012",
+      "act_article": "Payroll Levy Act193/1993 §5(4)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-013",
+      "act_article": "Payroll Levy Act193/1993 §§6(3),7(1)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-014",
+      "act_article": "Payroll Levy Act193/1993 §§2,3(1)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-015",
+      "act_article": "Payroll Levy Act193/1993 §3(2)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-016",
+      "act_article": "Payroll Levy Act193/1993 §6(2)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-017",
+      "act_article": "Payroll Levy Act193/1993 §6(4)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-018",
+      "act_article": "Payroll Levy Act193/1993 §6(6)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-019",
+      "act_article": "Payroll Levy Act193/1993 §§9–10",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-020",
+      "act_article": "Payroll Levy Act193/1993 §7(1)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-021",
+      "act_article": "Payroll Levy Act193/1993 §7(2)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-022",
+      "act_article": "Payroll Levy Act193/1993 §7(3)–(6)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-023",
+      "act_article": "Payroll Levy Act193/1993 §6(5)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-024",
+      "act_article": "Payroll Levy Act193/1993 §8",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-025",
+      "act_article": "Payroll Levy Act193/1993 §11(1)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-026",
+      "act_article": "Payroll Levy Act193/1993 §11(2)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-027",
+      "act_article": "Payroll Levy Act193/1993 §11(3)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-028",
+      "act_article": "Payroll Levy Act193/1993 §12",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-029",
+      "act_article": "Payroll Levy Act193/1993 §18",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-030",
+      "act_article": "Payroll Levy Act193/1993 §3(3)",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-031",
+      "act_article": "Payroll Levy Act193/1993 Title/commencement",
+      "source_file": "sources/payroll-levy.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-032",
+      "act_article": "TAKS business payment agreement guidance",
+      "source_file": "sources/payment-agreements.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-033",
+      "act_article": "TAKS business payment agreement guidance",
+      "source_file": "sources/payment-agreements.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-034",
+      "act_article": "TAKS business payment agreement guidance",
+      "source_file": "sources/payment-agreements.reader.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-035",
+      "act_article": "TAKS V01 guidance Section1",
+      "source_file": "sources/registration-guidance.web-extract.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-036",
+      "act_article": "TAKS V01 guidance Section2",
+      "source_file": "sources/registration-guidance.web-extract.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-037",
+      "act_article": "TAKS V01 guidance Section3",
+      "source_file": "sources/registration-guidance.web-extract.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-038",
+      "act_article": "TAKS V01 guidance Signature",
+      "source_file": "sources/registration-guidance.web-extract.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-039",
+      "act_article": "TAKS V01 section4",
+      "source_file": "sources/V01.web-extract.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-040",
+      "act_article": "TAKS V01 section5",
+      "source_file": "sources/V01.web-extract.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-041",
+      "act_article": "TAKS V01 section8",
+      "source_file": "sources/V01.web-extract.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-042",
+      "act_article": "TAKS V01 section9",
+      "source_file": "sources/V01.web-extract.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    },
+    {
+      "id": "PL-043",
+      "act_article": "TAKS V01 page2",
+      "source_file": "sources/V01.web-extract.txt",
+      "quote_in_source": true,
+      "semantic_review": "PASS; see review.md for bounded statutory/guidance reading"
+    }
+  ],
+  "formation_rows": 4,
+  "nonblank_units_checked": 1520,
+  "citation_table_lines": 213,
+  "historical_files_byte_exact": 310,
+  "old_topic_samples": [
+    {
+      "guide": "skills/faroe-islands/fo-company-registration-reporting.md",
+      "old_line": 30,
+      "destination": "skills/faroe-islands/fo-company-registration-reporting.md:30",
+      "text": "> **Checked against the law.** This Guide prepares working papers for review. It has no professional attestation and does not authorise a filing, incorporation or payment.",
+      "status": "preserved"
+    },
+    {
+      "guide": "skills/faroe-islands/fo-corporate-income-tax.md",
+      "old_line": 30,
+      "destination": "skills/faroe-islands/fo-corporate-income-tax.md:30",
+      "text": "This Guide prepares ordinary and separate capital-income tax working papers for Faroese P/F and Sp/F companies. Faroese registration brings companies with limited-liability participants within Tax Act §1(1)(8); §1(2) also covers relevant foreign-registered entities whose effective management is in the Faroes. Treaty residence requires separate analysis. [Tax Act][tax]",
+      "status": "preserved"
+    },
+    {
+      "guide": "skills/faroe-islands/fo-country-by-country-reporting.md",
+      "old_line": 31,
+      "destination": "skills/faroe-islands/fo-country-by-country-reporting.md:31",
+      "text": "Tax Act §§118b–g govern country-by-country reporting (CbCR). A multinational group operates through constituent entities in more than one tax jurisdiction. The perimeter includes qualifying permanent establishments and entities excluded from consolidation solely for size or materiality. Determine the ultimate parent using the consolidation/control definition, not the group's preferred reporting company. [§118b][law]",
+      "status": "preserved"
+    },
+    {
+      "guide": "skills/faroe-islands/fo-cross-border-payments.md",
+      "old_line": 31,
+      "destination": "skills/faroe-islands/fo-cross-border-payments.md:31",
+      "text": "> **Checked against the law.** Professional review is pending. This Guide prepares working papers for income year 2026 from the cited provisions read on 25 October 2026, with ordinary foreign-tax credit, branch attribution, corporate-loan interest and bounded later-disposal methods checked on 28 October.",
+      "status": "preserved"
+    },
+    {
+      "guide": "skills/faroe-islands/fo-individual-income-tax.md",
+      "old_line": 31,
+      "destination": "skills/faroe-islands/fo-individual-income-tax.md:31",
+      "text": "> **Checked against the law.** This Guide prepares income-year 2026 working papers. Selected current law and authority tables were read on 25 October 2026, with the church-tax, spouse and bounded part-year methods checked on 28 October; professional review is pending.",
+      "status": "preserved"
+    },
+    {
+      "guide": "skills/faroe-islands/fo-payroll-contributions.md",
+      "old_line": 31,
+      "destination": "skills/faroe-islands/fo-payroll-contributions.md:31",
+      "text": "> **Checked against the law.** Income year 2026; selected current statutes and authority guidance read 25 October 2026; benefit, dated pension and contribution provisions re-read 28 October 2026. This Guide prepares payroll working papers, with professional review pending.",
+      "status": "preserved"
+    },
+    {
+      "guide": "skills/faroe-islands/fo-transfer-pricing.md",
+      "old_line": 30,
+      "destination": "skills/faroe-islands/fo-transfer-pricing.md:30",
+      "text": "Under Tax Act §37a, covered relationships include foreign control, control of legal persons, common-group entities and foreign/Faroese permanent establishments. Control generally requires **more than 50%** of capital or votes; indirect holdings, related persons and joint-control agreements matter. Denmark and Greenland count as foreign jurisdictions. Section 118a separately requires controlled-transaction disclosure, including domestic relationships. Test both provisions rather than assuming identical wording. [Current Tax Act, §§37a and 118a][law]",
+      "status": "preserved"
+    },
+    {
+      "guide": "skills/faroe-islands/fo-vat.md",
+      "old_line": 63,
+      "destination": "skills/faroe-islands/fo-vat.md:63",
+      "text": "| Specified foreign supplier services | More than DKK 50,000 annual sales; §28(2)(7)–(13), used in the Faroes, with paragraph 3 exceptions | [§28(1)–(3)][law] |",
+      "status": "preserved"
+    }
+  ],
+  "lost_content_restored": 0,
+  "old_rules_removed": 0,
+  "expanded_reference_link_count": 236
+}

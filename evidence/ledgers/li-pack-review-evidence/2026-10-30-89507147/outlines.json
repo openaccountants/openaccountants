@@ -1,0 +1,132 @@
+[
+  {
+    "path": "skills/international/liechtenstein/li-income-tax.md",
+    "sha256": "4d669a8f4f9f845f17081898fe64d1abf85c9c8b5fe7d331b6445068576aa775",
+    "authored_h2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ],
+    "controls": 2
+  },
+  {
+    "path": "skills/international/liechtenstein/liechtenstein-vat.md",
+    "sha256": "83ed049ad9c373473494f2767b0bd5f373552db647a6ce66107fa276321740e8",
+    "authored_h2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ],
+    "controls": 2
+  },
+  {
+    "path": "skills/international/liechtenstein/li-cross-border.md",
+    "sha256": "98c5ed4b05ce03aa2435c4313ac425216af3fff1c9c9a344463fb702192608dd",
+    "authored_h2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ],
+    "controls": 2
+  },
+  {
+    "path": "skills/international/liechtenstein/li-tax-overview.md",
+    "sha256": "cceeca6ee4cdb2ba6f5164da3836efebf72430b4f6046b8b059acd31449e4219",
+    "authored_h2": [
+      "## Start with the question",
+      "## Evidence and unresolved work"
+    ],
+    "controls": 0
+  },
+  {
+    "path": "skills/international/liechtenstein/README.md",
+    "sha256": "24689b25828c966d2a5c22e927c38e75fd8be7d28f8ca07e2f2107c3deb58e7b",
+    "authored_h2": [
+      "## Domains and existing work",
+      "## Source preparation and next action",
+      "## 30 October local writer checkpoint",
+      "## Official sources"
+    ],
+    "controls": 0
+  },
+  {
+    "path": "skills/international/liechtenstein/li-payroll-social.md",
+    "sha256": "882888edacfe0b8a4a7543e52201a8e0602b1873a3d25e63499d6a3b9456730c",
+    "authored_h2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ],
+    "controls": 2
+  },
+  {
+    "path": "skills/international/liechtenstein/li-transfer-pricing.md",
+    "sha256": "963195bbcb4533061b868a960e16f9abf00cf696c3422da21ece5cb811c5ea18",
+    "authored_h2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ],
+    "controls": 2
+  },
+  {
+    "path": "skills/international/liechtenstein/li-corporate-income-tax.md",
+    "sha256": "689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b7aa52ec",
+    "authored_h2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ],
+    "controls": 2
+  },
+  {
+    "path": "skills/international/liechtenstein/li-company-formation.md",
+    "sha256": "d03528182c8b1505f20de300c466cd616c3ca2d65e928f0998ec235dae295aab",
+    "authored_h2": [
+      "## Scope and first decision",
+      "## Capital is not a fee or tax",
+      "## Ordinary GmbH preparation method",
+      "## Accounts, review and disclosure",
+      "## Worked controls",
+      "## Ask and refer",
+      "## Sources"
+    ],
+    "controls": 2
+  }
+]

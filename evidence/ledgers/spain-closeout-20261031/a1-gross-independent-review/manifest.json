@@ -1,0 +1,20 @@
+{
+  "reviewed_on": "2026-10-31",
+  "verdict": "PASS_BOUNDED_OWN_HISTORICAL_CONTEXT_GROSS_METHOD",
+  "A1_method_gap_closed_if_applied": true,
+  "open_findings": [],
+  "resolved_findings": [
+    "F-A1R-01",
+    "F-A1R-02"
+  ],
+  "original_net_proposal_rejection_preserved": true,
+  "candidate_guide_sha256": "2f228730516db2b97f0f700cb46d08395dc84e41347b8a60162e384881b66e5b",
+  "candidate_ledger_sha256": "e9597ad12395a722f888cd9b927209c98342ab2d394c62a60736eb29214f9c0e",
+  "files": {
+    "independent-checks.json": "449792de6ed208cebbf6801cef68eb7dba9b3208802d086e9a4cb192995dbd24",
+    "independent-controls.json": "8627ccaf93b000ff3d96b4e3899a98c6692696b350f50975449715001b20a8bb",
+    "report.md": "c2cd999ecb5c22bed7fab1e52986d68b364ced54cd26e9d23d4e30a828b1b015",
+    "source-read-checks.json": "4119dcc0b0c6e56b2bd1a2728ea5c179cd0a53c162f04d65e82d902177c50edc",
+    "verify.py": "dfeef2118119e3afaeff6b91f77da9cbd7756b23277f4c818c80547710a7349a"
+  }
+}

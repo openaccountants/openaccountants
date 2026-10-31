@@ -1,0 +1,265 @@
+
+
+    IPREM | Vivienda
+
+  Pasar al contenido principal
+
+[[ID:page-wrapper]]
+
+[[ID:page]]
+
+[[ID:header]]
+
+                    Ir a la página de inicio del Gobierno de Castilla-La Mancha
+
+[[ID:navbar-main]]
+
+[[ID:CollapsingNavbar]]
+
+[[ID:block-vivienda-main-menu]]
+
+[[ID:block-vivienda-main-menu-menu]]
+
+Navegación principal
+
+                          Inicio
+
+                          Vivienda protegida
+
+                          Vivienda protegida | Información general 
+
+                          Formas de acceso y precios
+
+                          Promoción / Calificación
+
+                          Parque público
+
+                          Comisiones de vivienda
+
+                          Programa vivienda asequible
+
+                          Estrategia de Cooperativas de CLM
+
+                          Ayudas
+
+                          Todas las ayudas y subvenciones
+
+                          Ayudas al alquiler de vivienda
+
+                          Ayudas a la rehabilitación y accesibilidad
+
+                          Ayudas para la compra de vivienda
+
+                          Fianzas
+
+                          Depósito de fianzas | Información general
+
+                          Régimen general
+
+                          Régimen especial de concierto
+
+                          Edificación y calidad
+
+                          Informe de Evaluación del Edificio
+
+                          Libro del edificio
+
+                          Control de calidad de la edificación
+
+                          Registros
+
+                          Agentes Gestores de la Rehabilitación
+
+                          Registro IEE Castilla-La Mancha
+
+                          Registro de Demandantes de Vivienda
+
+                          Servicios
+
+                          Cita previa
+
+                          Financiación ayudas rehabilitación
+
+                          SIMRE: visor para la rehabilitación energética
+
+                          Oficinas de intermediación hipotecaria
+
+[[ID:block-formularioexpuestoglobal-searchsearch-page]]
+
+[[ID:views-exposed-form-global-search-search-page]]
+
+    Esto es la legend de keyword
+                    
+[[ID:edit-keyword]]
+
+[[ID:edit-actions]]
+
+[[ID:edit-submit-global-search]]
+
+[[ID:main-wrapper]]
+
+[[ID:main]]
+
+[[ID:block-vivienda-breadcrumbs]]
+
+          Inicio
+
+          IPREM
+
+[[ID:content]]
+
+[[ID:main-content]]
+
+[[ID:block-vivienda-content]]
+
+IPREM
+
+¿Qué es el IPREM y para qué sirve?
+
+Cuantías
+
+[[ID:b0e8801c-af01-4633-aea9-b1fbaca363ea]]
+
+¿Qué es el IPREM y para qué sirve?
+
+El IPREM es el Indicador Público de Renta de Efectos Múltiples, que es el índice de referencia en España para calcular el umbral de ingresos.
+
+Sirve para medir el nivel de renta para determinar la cuantía de determinadas prestaciones o para acceder a determinados beneficios, prestaciones o servicios públicos.
+
+[[ID:3e9398f5-ecc4-429a-9949-18fafc16d752]]
+
+Cuantías
+
+Año
+
+IPREM Mensual
+
+IPREM Mensual 
+
+(12 pagas)
+
+IPREM Anual 
+
+(14 pagas)
+
+			2026
+			600,00 €
+			7.200,00 €
+			8.400,00 €
+
+			2025
+			600,00 €
+			7.200,00 €
+			8.400,00 €
+
+			2024
+			600,00 €
+			7.200,00 €
+			8.400,00 €
+
+			2023
+			600,00 €
+			7.200,00 €
+			8.400,00 €
+
+			2022
+			579,02 €
+			6.948,24 €
+			8.106,28 €
+
+			2021
+			564,90 €
+			6.778,80 €
+			7.908,60 €
+
+			2020
+			537,84 €
+			6.454,03 €
+			7.519,59 €
+
+			2019
+			537,84 €
+			6.454,03 €
+			7.519,59 €
+
+			2018
+			537,84 €
+			6.454,03 €
+			7.519,59 €
+
+			2017
+			537,84 €
+			6.454,03 €
+			7.519,59 €
+
+			2016
+			532,51 €
+			6.390,13 €
+			7.455,14 €
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+[[ID:block-vivienda-footer]]
+
+[[ID:block-vivienda-footer-menu]]
+
+Menú del pie
+
+                Directorio
+
+                Normativa
+
+                Preguntas frecuentes
+
+      Consejería de Fomento. Dirección General de Vivienda
+
+[[ID:block-vivienda-informaciondelainstitucion]]
+
+[[ID:block-vivienda-informaciondelainstitucion-menu]]
+
+Información de la institución
+
+                Paseo Cristo de la Vega, s/n - 45071 Toledo
+
+                dgvivienda.fomento@jccm.es
+
+                925286872
+
+    Ir a la página de inicio del Gobierno de Castilla-La Mancha
+
+[[ID:clip0_506_1135]]
+
+[[ID:block-vivienda-redessocialesjccm]]
+
+[[ID:block-vivienda-redessocialesjccm-menu]]
+
+Redes sociales JCCM
+
+                Facebook
+
+                Twitter
+
+[[ID:block-vivienda-menulegal]]
+
+[[ID:block-vivienda-menulegal-menu]]
+
+Menú legal
+
+                Protección de datos
+
+                Aviso legal
+
+                Mapa del sitio
+
+                Accesiblidad
+
+[[ID:enlace_aenor]]
+

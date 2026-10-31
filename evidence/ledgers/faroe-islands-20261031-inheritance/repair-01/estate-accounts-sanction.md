@@ -1,0 +1,9 @@
+# ET-029: neighbouring accounts-sanction rule
+
+If an estate omits the income statement and opening/closing balance sheets required by §103, its return is invalid, with consequences for assessment and appeal rights. The tax authority can set a deadline for the accounts and return and impose **DKK 100 per day from that deadline's expiry until the material arrives**. This is a discretionary enforcement power after an authority-set deadline, separate from the §14 opening-statement daily fine and the §104 late-return sanctions. [Tax Act §103(1), (3)][tax]
+
+Tax Act§103(1),(3), read31October2026. [Official source](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt). Existing source reader retained byte-exact; fresh official read in tax-103-fresh-web.txt.
+
+> § 103. 1) Øll tey, ið hava skyldu at føra bókhald, eins og deyðsbúgv, feløg, felagsskapir, stovnar v.m. skulu lata fylgja við sjálvuppgávuni rakstrarroknskap og fíggjarstøðu í byrjan og enda rakstrarársins, sum nærri ásett í § 103 a. Landsstýrismaðurin í skattamálum kann eftir tilmæli frá TAKS við kunngerð áseta nærri krøv til ta skattligu uppgerðina og tað skattliga roknskapargrundarlagið.
+> 
+> Stk. 3. Um nú skattgjaldari, sum sambært tí, ið frammanfyri er ásett, hevur skyldu at lata inn rakstrarroknskap og fíggjarstøðu, ikki ger hetta, tá verður sjálvuppgáva hansara mett ógild, og hann verður at ganga undir tað, ið av hesum stendst viðvíkjandi skattseting og rætti til kæru. Líkningarvaldið hevur umframt heimild til at seta freist, nær ið roknskapurin og sjálvuppgávan skal verða innsend og heimild at leggja við 100 kr. í dagsekt frá tí degi, at freistin er úti, og til tilfarið kemur inn. Sektin fellur til landskassan, og viðvíkjandi feløgum kann sektin verða løgd á stjórnar- og ella nevndarlimir.

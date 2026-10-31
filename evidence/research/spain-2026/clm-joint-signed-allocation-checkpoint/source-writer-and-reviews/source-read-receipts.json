@@ -1,0 +1,65 @@
+[
+  {
+    "file": "sources/fresh-lirpf-current.html",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "bytes": 2028806,
+    "sha256": "2ed2a6d4602889b5e529af3e6dd2c841074a7f3a898793283bad51d6fdd2ac40",
+    "actual_read_scope": "Actual full current body retained; operative11,19,20,28,45,46,48,50,56,57,61,74,76,77,82,84 individually extracted and read. Header last update7October2026. Income ownership, current professional loss integration, joint3400 reduction ordering, basic5550 once, regional general/savings/minimum ordering.",
+    "inference_limit": "74(2) displayed average rate precision does not establish CLM signed member attribution rounding.",
+    "recorded_utc": "2026-10-27T23:02:40.850619+00:00"
+  },
+  {
+    "file": "sources/fresh-clm-current.html",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+    "bytes": 379179,
+    "sha256": "828dda85a211c5ad1b26f3d1470f2583527a7763b73558f3c96c361c0c526cac",
+    "actual_read_scope": "Actual12quater and13bis read. Strict BL eligibility gates,500 per entitled mover, selected income of entitled members, work/activity quota ceiling and CLM scale.",
+    "inference_limit": "BOE header last update31January2023/update pending. Not relied on as a complete2026 consolidation; enacted2021 and actual2026 amendment checked.",
+    "recorded_utc": "2026-10-27T23:02:40.850619+00:00"
+  },
+  {
+    "file": "sources/fresh-clm-law2-2021.html",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-11513",
+    "bytes": 338404,
+    "sha256": "ce1ad532d70d003648ce386392ee97617eb0e6dabe6fdc283e202542a9c460d1",
+    "actual_read_scope": "Actual DF9.Dosbis enacts12quater. Joint eligible-member wording checked in full.",
+    "inference_limit": "No detailed intermediate signed-joint cent-rounding sequence supplied.",
+    "recorded_utc": "2026-10-27T23:02:40.850619+00:00"
+  },
+  {
+    "file": "sources/fresh-clm-law1-2026.html",
+    "url": "https://docm.jccm.es/portaldocm/verArchivoHtml.do?ruta=2026%2F03%2F30%2Fhtml%2F2026_2465.html&tipo=rutaDocm",
+    "bytes": 130927,
+    "sha256": "bb8446891b9e1d78c56bebcd81ca37099804917a320cd14a2343f00c6e0ea7b5",
+    "actual_read_scope": "All eleven art18 modifications plus DF6 read; no modification to12quater or13bis. HTML itself labels signed PDF authentic.",
+    "inference_limit": "Corroborated by actual signed PDF operative pages, not HTML alone.",
+    "recorded_utc": "2026-10-27T23:02:40.850619+00:00"
+  },
+  {
+    "file": "sources/DOCM-Law1-2026.pdf",
+    "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+    "bytes": 454855,
+    "sha256": "91b8c33af6b79496dfcd4bf61a0e1a7d530e9fc1e1200c55c4cce4da423e902b",
+    "actual_read_scope": "Actual24-page signed PDF retained from previous primary archive and rehashed; independently rendered/visually read physical15\u201319 and24, containing all art18 modifications and DF6.",
+    "inference_limit": "No claim every page visually inspected. No change to12quater or13bis in actual operative amendment.",
+    "recorded_utc": "2026-10-27T23:02:40.850619+00:00"
+  },
+  {
+    "file": "sources/fresh-aeat-clm-2025.html",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_7-castilla-mancha/10_7_16-traslado-vivienda-habitual.html",
+    "bytes": 12409,
+    "sha256": "26ce6211b5540c92659ffb6afd5b056c323fbc85490e9e9d0dd67a9c65c512a7",
+    "actual_read_scope": "Full actual2025 help body read; updated16April2026. Entitled-member income and unique joint limit on total1000 if both spouses qualify.",
+    "inference_limit": "2025 campaign guidance; not a2026 simulator result and not proof of a signed allocation rounding sequence.",
+    "recorded_utc": "2026-10-27T23:02:40.850619+00:00"
+  },
+  {
+    "file": "sources/diccionarioXSD_2025.properties",
+    "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Disenyo_registro/DR_100_199/diccionarioXSD_2025.properties",
+    "bytes": 425375,
+    "sha256": "67409ad3027f2548d90bd64ea5eeff7fa344ace87377a048527d2c7de92fe93b",
+    "actual_read_scope": "Actual public dictionary fetched200 via genuine AEAT Designs>Modelos>100-199 route. Full text searched for CLM move/rounding; result and input amounts typed P102, general quotaCIGAUT/533, regional totalCINTAUT/546 and averageTMA535 identified.",
+    "inference_limit": "Schema/dictionary amount precision is not a calculation algorithm. No authoritative both-entitled intermediate rounding rule located. Direct public web open had decode error, raw body200 retained.",
+    "recorded_utc": "2026-10-27T23:02:40.850619+00:00"
+  }
+]

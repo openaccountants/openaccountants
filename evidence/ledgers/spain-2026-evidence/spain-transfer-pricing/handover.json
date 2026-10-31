@@ -1,0 +1,18 @@
+{
+  "spain-transfer-pricing.md": {
+    "sha256": "8fcbf7ccd6a8b44922db500eac09386b2ce65de894c9cf8aa6d902831d8231d4",
+    "bytes": 143850
+  },
+  "rows.json": {
+    "sha256": "6785985768b02f80a264be90c260c871932a4c31f9abd516ca2fad102843abf8",
+    "bytes": 155627
+  },
+  "source-read-receipts.json": {
+    "sha256": "1ba3a0d811eb675b94a049c6cc71851b0117ee28ae0acf147978fde162e1f935",
+    "bytes": 30366
+  },
+  "writer-status.md": {
+    "sha256": "3ef4d9e364cfc6569f777983d295de2ef9b57baa933c717d5c1bdbb3d5438bf1",
+    "bytes": 1550
+  }
+}

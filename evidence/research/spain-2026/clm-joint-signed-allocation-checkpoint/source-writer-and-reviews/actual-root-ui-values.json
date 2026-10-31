@@ -1,0 +1,38 @@
+[
+  {
+    "BIGRALH": "12000.00",
+    "BLGRAL": "8600.00",
+    "CINTAUT": "384.75",
+    "ANEXOB": "289.75",
+    "CLIQAUT": "95.00",
+    "case": "J1",
+    "actual_saved_source": "root-ui-copies/J1-joint-summary.ax.txt",
+    "source_sha256": "0bdb4d063797e3d051a72a31539828e9f4b108beebea9eb63ebe4aba5eacb745",
+    "not_my_browser_observation": true,
+    "not_2026_filing_software": true
+  },
+  {
+    "BIGRALH": "12000.00",
+    "BLGRAL": "8600.00",
+    "CINTAUT": "384.75",
+    "ANEXOB": "265.61",
+    "CLIQAUT": "119.14",
+    "case": "J2",
+    "actual_saved_source": "root-ui-copies/J2-joint-summary.ax.txt",
+    "source_sha256": "b0c0fb3ca3e878686c6c5943f7e3b6194450def0dd8e002337bc43a6131bb10d",
+    "not_my_browser_observation": true,
+    "not_2026_filing_software": true
+  },
+  {
+    "BIGRALH": "13000.00",
+    "BLGRAL": "9600.00",
+    "CINTAUT": "479.75",
+    "ANEXOB": "325.55",
+    "CLIQAUT": "154.20",
+    "case": "J3",
+    "actual_saved_source": "root-ui-copies/J3-joint-summary.ax.txt",
+    "source_sha256": "69e0afee7487850dc1d7451e7267f0c8bb92436e4c7d2a465ff104acafb9f30a",
+    "not_my_browser_observation": true,
+    "not_2026_filing_software": true
+  }
+]

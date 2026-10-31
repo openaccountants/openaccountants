@@ -1,0 +1,151 @@
+{
+  "commit": "8a3ac55c83def25a74fc39f3d184afb87c543603",
+  "result": "NEEDS_FIXES",
+  "scope": "Bounded PIT pausal/schedule publication; no accountant attestation or comprehensive country coverage.",
+  "findings": [
+    {
+      "id": "ME-R01",
+      "severity": "P2",
+      "kind": "tax_rule",
+      "guide_lines": [
+        145
+      ],
+      "ledger_ids": [
+        "ME-PIT-083"
+      ],
+      "claim": "Stake deduction applied to lottery, betting and global jackpot alike.",
+      "source": "PIT Law37s(2)(1)-(3);160/25art10",
+      "source_file": "sources/pit-law-through160-2025.txt",
+      "required_fix": "Restrict stake deduction to lottery/betting; global jackpot uses total accumulated prize as defined in37s(2)(3).",
+      "inherited": true
+    },
+    {
+      "id": "ME-R02",
+      "severity": "P2",
+      "kind": "missing_eligibility_gate",
+      "guide_lines": [
+        150
+      ],
+      "ledger_ids": [
+        "ME-PIT-085"
+      ],
+      "claim": "New-hire relief gives conditions without former founder/related-employer employment exclusion.",
+      "source": "PIT Law32b(3)",
+      "source_file": "sources/pit-law-through160-2025.txt",
+      "required_fix": "Include exclusion for someone previously employed by a founder or related employer, regardless of break in employment.",
+      "inherited": true
+    },
+    {
+      "id": "ME-R03",
+      "severity": "P2",
+      "kind": "unsupported_credit_basket",
+      "guide_lines": [
+        228,
+        234,
+        252
+      ],
+      "ledger_ids": [
+        "ME-PIT-138",
+        "ME-PIT-142",
+        "ME-PIT-150",
+        "ME-PIT-164"
+      ],
+      "claim": "Universal source/category cap and prohibition on using credit against another income source.",
+      "source": "PIT Law44(1)-(2),45;GPP-FLpp24-26",
+      "source_file": "sources/pit-law-through160-2025.txt",
+      "required_fix": "Anchor foreign credit to relevant foreign country and treaty; do not invent category baskets. Specify separate foreign countries and no treaty variation forCTRL19. Preserve original appendix verbatim with separate qualifying note restricting its prohibition to single-dividend facts.",
+      "control": "ME-CTRL-19",
+      "arithmetic": "1570 versus possible1710 pooled domestic tax; country facts change the result by140",
+      "inherited": false
+    },
+    {
+      "id": "ME-R04",
+      "severity": "P2",
+      "kind": "ordinary_return_gap",
+      "guide_lines": [
+        232,
+        351
+      ],
+      "ledger_ids": [
+        "ME-PIT-141"
+      ],
+      "claim": "Settlement crosswalk contains foreign-salary tax but no route for crediting its Montenegro five-day self-payments.",
+      "source": "PIT Law42(4),46(7);GPP-FLmainpp3-6",
+      "source_file": "sources/annual-return-amendment103-2025.txt",
+      "required_fix": "State statutory credit for Montenegro advances and explicitly retain unresolved printed/live field for prior Montenegro payments on foreign salary in Guide and README. Do not invent portal field or require tax twice.",
+      "inherited": false
+    },
+    {
+      "id": "ME-R05",
+      "severity": "P2",
+      "kind": "ledger_bindings",
+      "guide_lines": [],
+      "ledger_ids": [
+        "ME-PIT-001",
+        "ME-PIT-013",
+        "ME-PIT-061",
+        "ME-PIT-062",
+        "ME-PIT-063",
+        "ME-PIT-083",
+        "ME-PIT-090",
+        "ME-PIT-098",
+        "ME-PIT-157",
+        "ME-PIT-161",
+        "ME-PIT-163",
+        "ME-PIT-165",
+        "ME-PIT-166",
+        "ME-PIT-167"
+      ],
+      "claim": "Cross-act same-number selectors add unrelated articles; lettered ranges and operative rate/commencement mappings omitted.",
+      "source": "Current retained primary sources",
+      "required_fix": "Repair explicit article mappings listed in ledger-dispositions. Retain Gazette publication/commencement record for21May date. CorrectCTRL21/22source-ledger IDs.",
+      "inherited": false
+    },
+    {
+      "id": "ME-R06",
+      "severity": "P2",
+      "kind": "provenance",
+      "guide_lines": [],
+      "ledger_ids": [
+        "ME-PIT-124",
+        "ME-PIT-147"
+      ],
+      "claim": "Administration-law.pdf is actually Word; notice extraction unmanifested and context hash unreproducible.",
+      "source": "File signatures/ZIPXML;source manifest;notice originalHTML",
+      "required_fix": "Name/declare administration original DOCX preserving bytes. Parse operative notice text excluding scripts/JSON-LD, addTXT to manifest, quote operative deadline/paper words and hash full identified context reproducibly.",
+      "inherited": false
+    },
+    {
+      "id": "ME-R07",
+      "severity": "P2",
+      "kind": "overbroad_payer_duty",
+      "guide_lines": [
+        174
+      ],
+      "ledger_ids": [
+        "ME-PIT-102"
+      ],
+      "claim": "Other payers31January duty stated for all other income.",
+      "source": "PIT Law47(5):ostalim ličnim primanjima iz člana14",
+      "source_file": "sources/pit-law-through160-2025.txt",
+      "required_fix": "Specify payers of other personal earnings underarticle14.",
+      "inherited": true
+    },
+    {
+      "id": "ME-R08",
+      "severity": "P2",
+      "kind": "scope_ambiguity",
+      "guide_lines": [
+        112
+      ],
+      "ledger_ids": [
+        "ME-PIT-065"
+      ],
+      "claim": "All VAT payments called neither income nor expense.",
+      "source": "Guide94 own distinction between output VAT/recoverable input VAT;PIT18/20accounting base",
+      "source_file": "sources/pit-law-through160-2025.txt",
+      "required_fix": "Constrain line to output VAT remittances/recoverable input VAT; nonrecoverable VAT follows relevant expense or asset treatment.",
+      "inherited": true
+    }
+  ]
+}
