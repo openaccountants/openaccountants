@@ -18,7 +18,7 @@ Tax years in this pack: 10 on 2026.
 |---|---|---|
 | IT-IND, individual income tax | nz-capital-gains (2026), nz-income-tax-ir3 (2026) | sourced from the law |
 | IT-CORP, corporate income tax | (missing) | |
-| VAT, indirect tax | new-zealand-gst (2026), nz-gst-return (2026) | sourced from the law |
+| VAT, indirect tax | nz-gst-return (2026) | sourced from the law |
 | SC, social contributions | (missing) | |
 | PR, payroll withholding | (missing) | |
 | TP, transfer pricing | (missing) | |

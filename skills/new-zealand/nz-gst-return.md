@@ -1,10 +1,10 @@
 ---
 name: nz-gst-return
-description: Use this skill whenever asked about New Zealand GST returns for self-employed individuals. Trigger on phrases like "GST return", "GST101A", "GST rate NZ", "input tax", "output tax", "zero-rated", "GST registration", "taxable supply", "IRD GST", "myIR GST", or any question about GST filing for sole traders in New Zealand. Covers the 15% standard rate, zero-rated and exempt supplies, $60K registration threshold, invoice and payments basis, and GST101A return preparation. ALWAYS read this skill before touching any NZ GST work.
-version: 2.0
+description: Use this skill whenever asked about New Zealand GST returns, or to prepare, review, or classify transactions for a New Zealand GST return (GST101A form), for a self-employed individual or small business. Trigger on phrases like "prepare GST return", "do the GST", "fill in GST101A", "create the return", "New Zealand GST", "NZ GST", "GST return", "GST101A", "GST rate NZ", "input tax", "output tax", "zero-rated", "GST registration", "taxable supply", "IRD GST", "myIR GST", or any question about GST filing for sole traders in New Zealand. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. Covers the 15% standard rate, zero-rated and exempt supplies, $60K registration threshold, invoice and payments basis, and GST101A return preparation. ALWAYS read this skill before touching any NZ GST work.
+version: 2.1
 jurisdiction: NZ
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -17,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # New Zealand GST: registration, rate, invoices, filing, input tax and adjustments (2026-27)
 
-Figures are for tax year 2026, meaning the New Zealand 2026-27 income year from 1 April 2026 to 31 March 2027 (which IRD calls the 2027 income year). GST itself has no tax year. It runs by taxable period, and the rules below apply to every period until the law changes. A short dated section near the end covers returns still being filed for 2025-26. Sources are Inland Revenue (IRD) web pages read on 25 September 2026, the IR375 GST guide (March 2026 edition) and IRD interpretation statement IS 25/21 (8 October 2025). All amounts are New Zealand dollars.
+Figures are for tax year 2026, meaning the New Zealand 2026-27 income year from 1 April 2026 to 31 March 2027 (which IRD calls the 2027 income year). GST itself has no tax year. It runs by taxable period, and the rules below apply to every period until the law changes. A short dated section near the end covers returns still being filed for 2025-26. Sources are Inland Revenue (IRD) web pages read on 31 October 2026, the IR375 GST guide (March 2026 edition) and IRD interpretation statement IS 25/21 (8 October 2025). All amounts are New Zealand dollars.
 
 ## Scope and who this is for
 
@@ -284,6 +284,16 @@ A registered plumber on the payments basis buys tools for $920 including GST, an
 - $920 goes in Box 11. Box 12 picks up the $120.
 - Unpaid at period end: on the payments basis it waits until paid. On the invoice basis it is claimed now.
 
+```oa-check
+name: Tools purchase, GST inside the price
+inputs:
+  price: 920
+steps:
+  - gst: price * 3 / 23
+expected:
+  gst: 120.00
+```
+
 ### Case 3: zero-rated services to an overseas client ([Zero-rated supplies](https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies))
 
 An Auckland consultant invoices a Sydney company $8,500 for advice. The company has no New Zealand presence and its staff were in Australia throughout.
@@ -309,6 +319,17 @@ A registered builder claimed 70% of the GST on a van. He sells it for $23,000 in
 - Final adjustment: 3/23 x $23,000 x (1 minus 0.7) = $900, a credit adjustment in Box 13.
 - The full $23,000 sale goes in Box 5.
 
+```oa-check
+name: Sale of a partly-claimed van
+inputs:
+  sale: 23000
+  taxable_use: 0.7
+steps:
+  - credit: sale * 3 / 23 * (1 - taxable_use)
+expected:
+  credit: 900.00
+```
+
 ### Case 6: annual entertainment adjustment ([Other GST debit adjustments](https://www.ird.govt.nz/gst/gst-adjustments/other-gst-debit-adjustments))
 
 A company spent $2,300 including GST on business client dinners during 2026-27, all claimed in Box 11 as incurred. The dinners are 50% deductible for income tax.
@@ -328,6 +349,20 @@ An invoice-basis trader returned GST on a $1,150 sale. The customer is now insol
   - On the 7th day after the due date, 4% of $4,040 = $161.60 is added.
   - Interest runs from the day after the due date.
   - No monthly penalty follows, because GST is excluded.
+
+```oa-check
+name: Late GST payment penalties
+inputs:
+  gst: 4000
+steps:
+  - first: gst * 0.01
+  - second: (gst + first) * 0.04
+  - total: first + second
+expected:
+  first: 40.00
+  second: 161.60
+  total: 201.60
+```
 
 ## Returns being filed now for 2025-26 ([Filing GST](https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/filing-gst); [Late filing penalties](https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties))
 
@@ -375,6 +410,43 @@ Periods ending on or before 31 March 2026 use the same rate (15%), the same $60,
 - [ ] Boxes 5 to 15 complete, GST101A or GST103 as appropriate, amounts GST-inclusive.
 - [ ] Filed and paid by the due date, moved to the next working day if needed.
 - [ ] Records kept for 7 years.
+
+## Sources
+
+| Source | URL | Read |
+| --- | --- | --- |
+| What GST is | https://www.ird.govt.nz/gst/what-gst-is | 2026-10-31 |
+| Charging GST | https://www.ird.govt.nz/gst/charging-gst | 2026-10-31 |
+| Registering for GST | https://www.ird.govt.nz/gst/registering-for-gst | 2026-10-31 |
+| IR375 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf | 2026-10-31 |
+| IS 25/21 | https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/interpretation-statements/2025/is-25-21.pdf?modified=20251023203446 | 2026-10-31 |
+| Registering voluntarily | https://www.ird.govt.nz/gst/registering-for-gst/registering-for-gst-voluntarily | 2026-10-31 |
+| When to cancel | https://www.ird.govt.nz/gst/gst-cancellation/when-to-cancel-your-gst-registration | 2026-10-31 |
+| How taxable supply information works | https://www.ird.govt.nz/gst/tax-invoices-for-gst/how-taxable-supply-information-for-gst-works | 2026-10-31 |
+| Taxable supply information for GST | https://www.ird.govt.nz/gst/tax-invoices-for-gst | 2026-10-31 |
+| Which accounting basis and filing frequency | https://www.ird.govt.nz/gst/registering-for-gst/which-gst-accounting-basis-and-filing-frequency-should-i-use | 2026-10-31 |
+| Changing your accounting basis | https://www.ird.govt.nz/gst/changing-your-filing-frequency-or-accounting-basis/changing-your-gst-accounting-basis | 2026-10-31 |
+| Special supplies | https://www.ird.govt.nz/gst/charging-gst/special-supplies | 2026-10-31 |
+| Claiming GST | https://www.ird.govt.nz/gst/claiming-gst | 2026-10-31 |
+| Change-in-use adjustments | https://www.ird.govt.nz/gst/gst-adjustments/change-in-use-adjustments-for-gst | 2026-10-31 |
+| GST for drivers, deliverers and accommodation owners | https://www.ird.govt.nz/sharing-economy/sellers-of-listed-services/gst-for-listed-services | 2026-10-31 |
+| Flat-rate credit scheme | https://www.ird.govt.nz/sharing-economy/listing-intermediary-rules/flat-rate-credit-scheme | 2026-10-31 |
+| Short-stay accommodation | https://www.ird.govt.nz/sharing-economy/sellers-of-listed-services/short-stay-accommodation | 2026-10-31 |
+| Supplying remote services | https://www.ird.govt.nz/gst/gst-for-overseas-businesses/supplying-remote-services-into-new-zealand | 2026-10-31 |
+| Low value imported goods | https://www.ird.govt.nz/gst/gst-for-overseas-businesses/supplying-low-value-imported-goods | 2026-10-31 |
+| Late filing penalties | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties | 2026-10-31 |
+| Late payment penalties | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-payment-penalties | 2026-10-31 |
+| Interest | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments | 2026-10-31 |
+| Zero-rated supplies | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies | 2026-10-31 |
+| Exempt supplies | https://www.ird.govt.nz/gst/charging-gst/exempt-supplies | 2026-10-31 |
+| Other GST credit adjustments | https://www.ird.govt.nz/gst/gst-adjustments/other-gst-credit-adjustments | 2026-10-31 |
+| Calculating GST | https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/calculating-your-gst | 2026-10-31 |
+| Other GST debit adjustments | https://www.ird.govt.nz/gst/gst-adjustments/other-gst-debit-adjustments | 2026-10-31 |
+| Filing GST | https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/filing-gst | 2026-10-31 |
+| Paying GST | https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/paying-gst | 2026-10-31 |
+| File your GST return | https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/filing-gst/file-your-gst-return | 2026-10-31 |
+
+Not yet confirmed: which box takes a secondhand goods credit (IRD's pages read do not name it); turnover at exactly $60,000 and a change-of-use adjustment of exactly $1,000, where IRD's documents word the test differently.
 
 <!-- openaccountants-cta-block -->
 
