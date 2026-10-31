@@ -1,11 +1,12 @@
 ---
 name: belarus-transfer-pricing
-description: Test Belarus controlled transactions and prepare 2026 arm's-length pricing working papers under Chapter 11 of the General Tax Code. Use for related parties, offshore counterparties, real estate, shares, loans, strategic goods, electronic-invoice disclosure, economic justification and transfer-pricing documentation. The skill distinguishes transaction classes and thresholds, explains aggregation, comparable-price and profitability ranges, statutory method priority, upward adjustments and the 2026 quarterly CUP timing. It includes ordinary record and filing procedures, penalties, and two independently recomputable illustrations using expressly hypothetical comparables. It does not turn an OECD practice into a Belarus obligation or assume that transaction thresholds excuse invoice disclosure. Advance pricing agreements and multinational group reporting require separate verification. Tier 2 source-cited draft pending licensed accountant review.
+description: Test Belarus controlled transactions and prepare 2026 arm's-length pricing working papers under Chapter 11 of the General Tax Code. Use for related parties, offshore counterparties, real estate, shares, loans, strategic goods, electronic-invoice disclosure, economic justification and transfer-pricing documentation. The skill distinguishes transaction classes and thresholds, explains aggregation, comparable-price and profitability ranges, statutory method priority, upward adjustments and the 2026 quarterly CUP timing. It includes ordinary record and filing procedures, penalties, and two independently recomputable illustrations using expressly hypothetical comparables. It does not turn an OECD practice into a Belarus obligation or assume that transaction thresholds excuse invoice disclosure. Advance pricing agreements and multinational group reporting require separate verification. Tier 2, checked against the law.
 jurisdiction: BY
 category: transfer-pricing
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-24
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-30
 version: 0.1
 ---
 
@@ -69,7 +70,7 @@ Documentation/economic justification must include payer and counterparty identit
 
 Late-payment interest under General Tax Code art. 55 is computed separately for each period of constant unpaid tax and National Bank refinancing rate: `unpaid tax × overdue calendar days × annual rate / 360 / 100`. Count from the day after the due date through payment; interest reflected in the audit decision on audit-assessed tax is capped at that assessed tax amount; apply art. 55(3) exclusions and art. 55(4)'s four-decimal interest-rate precision. Use the rate actually in force in each period, not a single assumed 2026 rate. [General Code art. 55](https://pravo.by/document/?guid=3871&p0=hk0200166).
 
-For a business/agent return, Administrative Code art. 14.2(1)-(2) sets up to 1 basic unit for no more than 3 working days late; otherwise 2 basic units plus 0.5 per complete month, capped at 10. Repetition within a year invokes art. 14.2(4), 3 per complete or incomplete month, capped at 20. Under art. 14.4(1), business tax underpayment carries 40% of unpaid tax, minimum 2 basic units for an entrepreneur or 10 for a company, subject to the statutory notes, including timely voluntary correction/payment. Do not apply these amounts automatically to an ordinary individual or to a withholding default. [Administrative Code arts. 14.2 and 14.4](https://pravo.by/document/?guid=3871&p0=hk2100091).
+For a business/agent return, Administrative Code art. 14.2(1)-(2) sets up to 1 basic unit for no more than 3 working days late; otherwise 2 basic units plus 0.5 per complete month, capped at 10. Repetition within a year invokes art. 14.2(4), 3 per complete or incomplete month, capped at 20. Under art. 14.4(1), business tax underpayment carries 40% of unpaid tax, minimum 2 basic units for an entrepreneur or 10 for a company, subject to the statutory notes, including timely voluntary correction/payment. Do not apply these amounts automatically to an ordinary individual or to a withholding default. [Administrative Code arts. 14.2 and 14.4](https://pravo.by/document/?guid=3871&p0=hk2100091). The basic unit is BYN 45 from 1 January 2026 ([Council Resolution 651 of 20 November 2025](https://pravo.by/document/?guid=12551&p0=C22500651)).
 
 No standalone TP percentage penalty is inferred here. Inaccurate tax returns, withholding and failure to supply requested information require classification under the applicable Administrative Code provision; formal-documentation timing does not create immunity from additional tax or interest. [General Code arts. 55, 79, 97](https://pravo.by/document/?guid=3871&p0=hk0200166); [Administrative Code ch. 14](https://pravo.by/document/?guid=3871&p0=hk2100091).
 
@@ -102,7 +103,7 @@ expected:
 
 ### 2. Loan principal threshold and interest shortfall
 
-A covered related-party loan of BYN 500,000 is newly advanced and outstanding for the example's full interest year. It passes the principal threshold even though interest is small. A verified single comparable under art. 92(6), rather than a statutory benchmark, establishes 4%; actual interest is 1%. Taxable interest adjustment is 15,000 and extra ordinary profit tax is 3,000. In practice use the contract's day-count, payment and recognition terms; the full-year fraction here is stipulated.
+A covered related-party loan of BYN 500,000 is newly advanced and outstanding for the example's full interest year. It passes the principal threshold even though interest is small. A documented single comparable under art. 92(6), rather than a statutory benchmark, establishes 4%; actual interest is 1%. Taxable interest adjustment is 15,000 and extra ordinary profit tax is 3,000. In practice use the contract's day-count, payment and recognition terms; the full-year fraction here is stipulated.
 
 ```oa-check
 name: BY 2026 related loan principal and CUP interest
@@ -141,7 +142,8 @@ expected:
 | MNS related-loan/control questions | https://nalog.gov.by/organizations/transfer_pricing/questions/ | 2026-10-24 |
 | MNS economic justification contents | https://nalog.gov.by/organizations/transfer_pricing/justification/ | 2026-10-24 |
 | MNS price documentation contents | https://nalog.gov.by/organizations/transfer_pricing/documentation/ | 2026-10-24 |
+| Council Resolution 651 of 20 November 2025, paras. 1, 3, official PDF, basic unit BYN 45 from 1 January 2026 | https://pravo.by/document/?guid=12551&p0=C22500651 | 2026-10-31 |
 
-Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. This is a source-cited draft, awaiting a licensed Belarusian accountant.
+Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. Checked against the law (tier 2); no licensed Belarusian accountant has signed it off.
 
 Not yet confirmed: APA application fees/procedure and any separate multinational master-file/CbCR obligations have not been established by this review and are not asserted to be absent. They are specialist exclusions; ordinary controlled transactions, methods, adjustment timing and documentation are covered.

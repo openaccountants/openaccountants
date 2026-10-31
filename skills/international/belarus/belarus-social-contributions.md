@@ -1,10 +1,10 @@
 ---
 name: belarus-social-contributions
-description: Compute Belarus mandatory FSZN pension and social contributions and occupational-accident insurance for 2026. Use for employer on-costs, the employee pension deduction, contribution ceilings and minimum bases, reduced employer classes, individual entrepreneurs and professional-income taxpayers. The skill distinguishes contribution bases from personal-income-tax bases, provides the statutory entrepreneur low-income test, pension exemptions and app allocation, and sets out ordinary payment and social-account reporting procedures. It includes two recomputing examples and sources for the 2026 reporting changes. The January and February director occupational-insurance base remains a named historical-verification gap, so the domain is partial. HTP and other presidential concession schemes require their specific legislation. This is a source-cited draft awaiting licensed Belarusian professional review.
+description: Compute Belarus mandatory FSZN pension and social contributions and occupational-accident insurance for 2026. Use for employer on-costs, the employee pension deduction, contribution ceilings and minimum bases, reduced employer classes, individual entrepreneurs and professional-income taxpayers. The skill distinguishes contribution bases from personal-income-tax bases, provides the statutory entrepreneur low-income test, pension exemptions and app allocation, and sets out ordinary payment and social-account reporting procedures. It includes two recomputing examples and sources for the 2026 reporting changes. The January and February director occupational-insurance base remains a named historical-verification gap, so the domain is partial. HTP and other presidential concession schemes require their specific legislation. Tier 2, checked against the law.
 version: 0.2
 jurisdiction: BY
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -33,6 +33,7 @@ Occupational-accident insurance is paid separately to Belgosstrakh for the perso
 | Independent entrepreneur/notary/advocate | 29% pension + 6% social = 35% | 2026 | [Art. 5](https://pravo.by/document/?guid=3871&p0=H12100118) |
 | Ordinary monthly FSZN maximum base | 5 times national average wage for preceding month | 2026 | [Art. 4(1)](https://pravo.by/document/?guid=3871&p0=H12100118) |
 | Ordinary employee minimum base | Monthly statutory/indexed minimum wage, prorated for part-time/partial month; stated exceptions apply | 2026 | [Art. 9(1)-(2)](https://pravo.by/document/?guid=3871&p0=H12100118) |
+| Monthly minimum wage | BYN 858 from 1 January 2026; use any later indexed amount the law requires for the month | 2026 | [Council Resolution 612 of 6 November 2025, paras. 1, 4](https://pravo.by/document/?guid=12551&p0=C22500612) |
 | Entrepreneur low-income threshold | 12 times December minimum wage; if income does not exceed it, minimum contributions are based on actual statutory income | 2026 | [Art. 9(3)](https://pravo.by/document/?guid=3871&p0=H12100118) |
 | Independent annual maximum | Contributions on 60 times national average wage for December of preceding year | 2026 | [Art. 4(1)](https://pravo.by/document/?guid=3871&p0=H12100118) |
 | Professional-income social component | 60% of paid professional-income tax; pension recipient relieved of this component | 2026 | [Art. 16-1](https://pravo.by/document/?guid=3871&p0=H12100118) |
@@ -80,7 +81,7 @@ The 2026 Belgosstrakh annual report is due 25 January 2027. Use the insurer's pr
 
 ## Penalties and interest
 
-FSZN arrears incur daily interest including payment day, at 1/360 of the National Bank refinancing rate **on the date of payment**, under Law art. 10(2). This differs from General Tax Code art. 55's period-by-period tax-interest rule. Reconcile arrears, benefit offsets and special exceptions before charging interest. Administrative Code art. 12.15 imposes 2-20 basic units on the described responsible persons for unpaid contributions for individuals exceeding 20 basic units, with the note's pay-day exception. [Law art. 10](https://pravo.by/document/?guid=3871&p0=H12100118); [Administrative Code art. 12.15](https://pravo.by/document/?guid=3871&p0=hk2100091).
+FSZN arrears incur daily interest including payment day, at 1/360 of the National Bank refinancing rate **on the date of payment**, under Law art. 10(2). This differs from General Tax Code art. 55's period-by-period tax-interest rule. Reconcile arrears, benefit offsets and special exceptions before charging interest. Administrative Code art. 12.15 imposes 2-20 basic units on the described responsible persons for unpaid contributions for individuals exceeding 20 basic units, with the note's pay-day exception. [Law art. 10](https://pravo.by/document/?guid=3871&p0=H12100118); [Administrative Code art. 12.15](https://pravo.by/document/?guid=3871&p0=hk2100091). The basic unit is BYN 45 from 1 January 2026 ([Council Resolution 651 of 20 November 2025](https://pravo.by/document/?guid=12551&p0=C22500651)).
 
 Accident insurance late-registration fine is 2 basic units; late/inaccurate reporting attracts the separate 2/10-basic-unit rules, including repeated late filing within the stated five-year period. Late premium interest is 1/360 of the refinancing rate for each overdue day including payment. [Decree 108 Regulation paras. 196-197](https://pravo.by/document/?guid=3871&p0=P32500108). Concealed wages have the additional 35%/minimum-base assessment under Law art. 5-1, rather than the ordinary ceiling calculation. [Law arts. 4(1-1), 5-1](https://pravo.by/document/?guid=3871&p0=H12100118).
 
@@ -92,7 +93,7 @@ Law art. 2 gives applicable international agreements priority. Obtain coverage c
 
 ### 1. Ordinary employee, no ceiling or minimum adjustment
 
-Covered remuneration is BYN 3,000 and verified statutory limits do not change it. Employer pension is 840 and social insurance 180, total FSZN 1,020. Employee pension withheld is 30. A confirmed unadjusted 0.6% accident tariff gives 18. Employer contributions are 1,038; gross payroll cost is 4,038. PIT is separate.
+Covered remuneration is BYN 3,000 and the statutory limits do not change it. Employer pension is 840 and social insurance 180, total FSZN 1,020. Employee pension withheld is 30. A confirmed unadjusted 0.6% accident tariff gives 18. Employer contributions are 1,038; gross payroll cost is 4,038. PIT is separate.
 
 ```oa-check
 name: BY 2026 ordinary employer contribution cost
@@ -151,8 +152,10 @@ expected:
 | Administrative Code, art. 12.15 | https://pravo.by/document/?guid=3871&p0=hk2100091 | 2026-10-24 |
 | Tax Code Special Part, arts. 381-3, 381-6 | https://pravo.by/document/?guid=3871&p0=hk0900071 | 2026-10-24 |
 | MNS professional-income July minimum | https://nalog.gov.by/actual/npd_45/ | 2026-10-24 |
+| Council Resolution 612 of 6 November 2025, paras. 1, 4, official PDF, monthly minimum wage BYN 858 from 1 January 2026 | https://pravo.by/document/?guid=12551&p0=C22500612 | 2026-10-31 |
+| Council Resolution 651 of 20 November 2025, paras. 1, 3, official PDF, basic unit BYN 45 from 1 January 2026 | https://pravo.by/document/?guid=12551&p0=C22500651 | 2026-10-31 |
 
-Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. This is a source-cited draft, awaiting a licensed Belarusian accountant.
+Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. Checked against the law (tier 2); no licensed Belarusian accountant has signed it off.
 
 Not yet confirmed: January-February 2026 occupational-insurance director minimum-base rules and the exact time-proration implementation of the March director floor have not been verified from the historical/current implementing text. These are an SC partial gap. Published monthly wage inputs must be supplied for the actual contribution period; future December data are not invented.
 

@@ -1,9 +1,9 @@
 ---
 name: by-corporate-income-tax
-description: Compute 2026 Belarus profit tax for ordinary resident companies, separately liable branches and foreign permanent establishments. Trigger on Belarus corporate tax, nalog na pribyl, taxable profit, the 25000000 base threshold, loss carry-forward, controlled indebtedness, deductible costs and quarterly profit-tax returns. This skill reconciles the accounting result to the statutory base, distinguishes the whole-base increased rate from a marginal band, explains loss and foreign-tax-credit limitations, and screens simplified-system eligibility. It includes annual and quarterly compliance, interest and administrative sanctions and two recomputing examples. Transfer pricing and nonresident gross-basis withholding are handled by the linked country skills. Special investment-zone and sector regimes require their own verified calculation; this is a source-cited draft pending licensed professional review.
+description: Compute 2026 Belarus profit tax for ordinary resident companies, separately liable branches and foreign permanent establishments. Trigger on Belarus corporate tax, nalog na pribyl, taxable profit, the 25000000 base threshold, loss carry-forward, controlled indebtedness, deductible costs and quarterly profit-tax returns. This skill reconciles the accounting result to the statutory base, distinguishes the whole-base increased rate from a marginal band, explains loss and foreign-tax-credit limitations, and screens simplified-system eligibility. It includes annual and quarterly compliance, interest and administrative sanctions and two recomputing examples. Transfer pricing and nonresident gross-basis withholding are handled by the linked country skills. Special investment-zone and sector regimes require their own calculation. Tier 2, checked against the law.
 jurisdiction: BY
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -64,7 +64,7 @@ File the MNS profit-tax declaration for Belarus organisations or the foreign-org
 
 Late-payment interest under General Tax Code art. 55 is computed separately for each period of constant unpaid tax and National Bank refinancing rate: `unpaid tax × overdue calendar days × annual rate / 360 / 100`. Count from the day after the due date through payment; interest reflected in the audit decision on audit-assessed tax is capped at that assessed tax amount; apply art. 55(3) exclusions and art. 55(4)'s four-decimal interest-rate precision. Use the rate actually in force in each period, not a single assumed 2026 rate. [General Code art. 55](https://pravo.by/document/?guid=3871&p0=hk0200166).
 
-For a business/agent return, Administrative Code art. 14.2(1)-(2) sets up to 1 basic unit for no more than 3 working days late; otherwise 2 basic units plus 0.5 per complete month, capped at 10. Repetition within a year invokes art. 14.2(4), 3 per complete or incomplete month, capped at 20. Under art. 14.4(1), business tax underpayment carries 40% of unpaid tax, minimum 2 basic units for an entrepreneur or 10 for a company, subject to the statutory notes, including timely voluntary correction/payment. Do not apply these amounts automatically to an ordinary individual or to a withholding default. [Administrative Code arts. 14.2 and 14.4](https://pravo.by/document/?guid=3871&p0=hk2100091).
+For a business/agent return, Administrative Code art. 14.2(1)-(2) sets up to 1 basic unit for no more than 3 working days late; otherwise 2 basic units plus 0.5 per complete month, capped at 10. Repetition within a year invokes art. 14.2(4), 3 per complete or incomplete month, capped at 20. Under art. 14.4(1), business tax underpayment carries 40% of unpaid tax, minimum 2 basic units for an entrepreneur or 10 for a company, subject to the statutory notes, including timely voluntary correction/payment. Do not apply these amounts automatically to an ordinary individual or to a withholding default. [Administrative Code arts. 14.2 and 14.4](https://pravo.by/document/?guid=3871&p0=hk2100091). The basic unit is BYN 45 from 1 January 2026 ([Council Resolution 651 of 20 November 2025](https://pravo.by/document/?guid=12551&p0=C22500651)).
 
 The rate and minimum for withholding defaults come from Administrative Code art. 14.5 instead. A TP adjustment is additional profit tax; it is not an automatic separate percentage fine. Determine voluntary-correction and audit status before assessing sanctions. [Administrative Code arts. 14.4-14.5](https://pravo.by/document/?guid=3871&p0=hk2100091).
 
@@ -129,8 +129,9 @@ expected:
 | Administrative Code, arts. 14.2, 14.4-14.5 | https://pravo.by/document/?guid=3871&p0=hk2100091 | 2026-10-24 |
 | MNS profit-tax 2026 amendment and commencement commentary | https://nalog.gov.by/clarifications/comments/33570/ | 2026-10-24 |
 | MNS simplified-system 2026/2027 transition commentary | https://nalog.gov.by/clarifications/comments/33838/ | 2026-10-24 |
+| Council Resolution 651 of 20 November 2025, paras. 1, 3, official PDF, basic unit BYN 45 from 1 January 2026 | https://pravo.by/document/?guid=12551&p0=C22500651 | 2026-10-31 |
 
-Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. This is a source-cited draft, awaiting a licensed Belarusian accountant.
+Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. Checked against the law (tier 2); no licensed Belarusian accountant has signed it off.
 
 Not yet confirmed: None within the stated ordinary scope. The special regimes named out of scope are not computed.
 

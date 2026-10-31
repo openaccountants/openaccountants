@@ -1,10 +1,10 @@
 ---
 name: belarus-payroll
-description: Prepare 2026 Belarus payroll working papers for ordinary employees and covered civil-contract recipients, including resident and nonresident income-tax-agent duties. Trigger on Belarus salary, gross to net, podokhodny nalog, PIT withholding, child and standard deductions, FSZN employee pension, employer contributions, quarterly tax-agent declarations and income information reports. The skill distinguishes resident annual high-income assessment from the specific foreign-person withholding rule, and prevents subtracting the employee pension contribution twice or deducting it from the PIT base without authority. It provides filing and payment procedures, statutory penalties and two recomputing examples. Read the social-contributions skill for contribution classes and ceilings and the individual-income skill for annual assessment; this is a source-cited draft with the director historical-insurance gap retained.
+description: Prepare 2026 Belarus payroll working papers for ordinary employees and covered civil-contract recipients, including resident and nonresident income-tax-agent duties. Trigger on Belarus salary, gross to net, podokhodny nalog, PIT withholding, child and standard deductions, FSZN employee pension, employer contributions, quarterly tax-agent declarations and income information reports. The skill distinguishes resident annual high-income assessment from the specific foreign-person withholding rule, and prevents subtracting the employee pension contribution twice or deducting it from the PIT base without authority. It provides filing and payment procedures, statutory penalties and two recomputing examples. Read the social-contributions skill for contribution classes and ceilings and the individual-income skill for annual assessment; tier 2, checked against the law, with the director historical-insurance gap retained.
 version: 0.2
 jurisdiction: BY
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -20,7 +20,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Ordinary 2026 payroll for Belarus tax agents under Special Code art. 216, including Belarus organisations/entrepreneurs and covered foreign PEs. Determine employee versus covered civil contractor, main employment place, residence and any special regime before calculating. The individual taxpayer's annual high-income declaration is separate from the employer's quarterly tax-agent declaration. [Code arts. 195-199, 207, 214-216-1](https://pravo.by/document/?guid=3871&p0=hk0900071).
 
-FSZN covers employees, covered civil contractors and founder-managers under Law 118-Z; Belgosstrakh civil-contract coverage depends on the specified workplace conditions. HTP, special presidential concessions, severance/benefit schemes and cross-border coverage exemptions require their own verified treatment. [Law arts. 1-5](https://pravo.by/document/?guid=3871&p0=H12100118); [Decree 108 Regulation para. 193](https://pravo.by/document/?guid=3871&p0=P32500108).
+FSZN covers employees, covered civil contractors and founder-managers under Law 118-Z; Belgosstrakh civil-contract coverage depends on the specified workplace conditions. HTP, special presidential concessions, severance/benefit schemes and cross-border coverage exemptions require their own treatment. [Law arts. 1-5](https://pravo.by/document/?guid=3871&p0=H12100118); [Decree 108 Regulation para. 193](https://pravo.by/document/?guid=3871&p0=P32500108).
 
 ## Rates, bands and thresholds
 
@@ -34,6 +34,7 @@ FSZN covers employees, covered civil contractors and founder-managers under Law 
 | Ordinary employee pension | 1% of covered FSZN base | 2026 | [Law 118-Z art. 5(1)](https://pravo.by/document/?guid=3871&p0=H12100118) |
 | Ordinary employer FSZN | 28% pension plus 6% social = 34% | 2026 | [Law art. 5](https://pravo.by/document/?guid=3871&p0=H12100118) |
 | Ordinary FSZN maximum base | 5 times preceding month's national average wage | Monthly, 2026 | [Law art. 4(1)](https://pravo.by/document/?guid=3871&p0=H12100118) |
+| Monthly minimum wage | BYN 858 from 1 January 2026; use any later indexed amount the law requires for the month | 2026 | [Council Resolution 612 of 6 November 2025, paras. 1, 4](https://pravo.by/document/?guid=12551&p0=C22500612) |
 | Accident insurance baseline | 0.6% nonbudget employer, before insurer adjustments | 2026 | [Decree 108 Regulation para. 194](https://pravo.by/document/?guid=3871&p0=P32500108) |
 | Main-job non-work gifts/material assistance exemption | BYN 3,910 per source/year; other-source qualifying gifts BYN 259 | 2026 | [Code art. 208(23)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
 | Qualifying main-job insurance benefits exemption | BYN 6,695 per source/year | 2026 | [Art. 208(24)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
@@ -74,7 +75,7 @@ The 2026 Belgosstrakh annual report is due 25 January 2027. Use the insurer's pr
 
 Agent PIT interest follows General Code art. 55, including the special start at the first day of the following month for ordinary agent PIT remittance delay and the stated audit/transaction exceptions. The generic day-after-due-date rule must not be applied indiscriminately to this withholding liability. [General Code art. 55(2),(4)](https://pravo.by/document/?guid=3871&p0=hk0200166).
 
-Administrative Code art. 14.5 sets a lower fixed-range fine where both the amount and relative-size tests are satisfied (no more than 4 basic units for an entrepreneur or 10 for a company, and no more than 5% of withheld/remitted tax). Exceeding either invokes 40% of the amount due, minimum 2 basic units for an entrepreneur or 10 for a company. Apply the article's correction and nonpayment exclusions; intentional/responsible-person cases have separate rules. Late agent returns use art. 14.2. [Administrative Code arts. 14.2, 14.5](https://pravo.by/document/?guid=3871&p0=hk2100091).
+Administrative Code art. 14.5 sets a lower fixed-range fine where both the amount and relative-size tests are satisfied (no more than 4 basic units for an entrepreneur or 10 for a company, and no more than 5% of withheld/remitted tax). Exceeding either invokes 40% of the amount due, minimum 2 basic units for an entrepreneur or 10 for a company. Apply the article's correction and nonpayment exclusions; intentional/responsible-person cases have separate rules. Late agent returns use art. 14.2. [Administrative Code arts. 14.2, 14.5](https://pravo.by/document/?guid=3871&p0=hk2100091). The basic unit is BYN 45 from 1 January 2026 ([Council Resolution 651 of 20 November 2025](https://pravo.by/document/?guid=12551&p0=C22500651)).
 
 FSZN interest uses 1/360 of the refinancing rate at payment under Law art. 10; accident penalties use Decree 108 paras. 196-197. An official finding of unlawful PIT non-withholding/non-remittance triggers the separate 26% PIT treatment in art. 214(7.2), as well as the applicable procedural/penalty analysis. [Law art. 10](https://pravo.by/document/?guid=3871&p0=H12100118); [Decree 108](https://pravo.by/document/?guid=3871&p0=P32500108); [Tax Code art. 214(7.2)](https://pravo.by/document/?guid=3871&p0=hk0900071).
 
@@ -106,7 +107,7 @@ expected:
 
 ### 2. Main-job employee with two qualifying children
 
-Gross and taxable monthly remuneration are BYN 1,200, within the basic-deduction limit. Two qualifying children attract 120 each. The PIT base is 1,200 - 216 - 240 = 744; PIT is 96.72. Employee pension is 12 on the social base, not on the PIT base. Net pay is 1,091.28. Verified social limits do not change the 1,200 covered base.
+Gross and taxable monthly remuneration are BYN 1,200, within the basic-deduction limit. Two qualifying children attract 120 each. The PIT base is 1,200 - 216 - 240 = 744; PIT is 96.72. Employee pension is 12 on the social base, not on the PIT base. Net pay is 1,091.28. The statutory social limits do not change the 1,200 covered base.
 
 ```oa-check
 name: BY 2026 payroll standard and enhanced child deductions
@@ -145,12 +146,14 @@ expected:
 | Decree 108, approved Regulation paras. 192-197 | https://pravo.by/document/?guid=3871&p0=P32500108 | 2026-10-24 |
 | Council Resolution 1462, contribution-payment Regulation | https://pravo.by/document/?guid=3871&p0=C20601462 | 2026-10-24 |
 | Ministry Resolution 143, Form 4-Fund official PDF p. 1 | https://pravo.by/document/?guid=12551&p0=W22544374p | 2026-10-24 |
-| Council Resolution 742, official PDF pp. 27-34 | https://pravo.by/document/?guid=12551&p0=C22500742 | 2026-10-24 |
+| Council Resolution 742, official PDF pp. 27-35 | https://pravo.by/document/?guid=12551&p0=C22500742 | 2026-10-24 |
 | Administrative Code, arts. 14.2, 14.5 | https://pravo.by/document/?guid=3871&p0=hk2100091 | 2026-10-24 |
+| Council Resolution 612 of 6 November 2025, paras. 1, 4, official PDF, monthly minimum wage BYN 858 from 1 January 2026 | https://pravo.by/document/?guid=12551&p0=C22500612 | 2026-10-31 |
+| Council Resolution 651 of 20 November 2025, paras. 1, 3, official PDF, basic unit BYN 45 from 1 January 2026 | https://pravo.by/document/?guid=12551&p0=C22500651 | 2026-10-31 |
 
-Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. This is a source-cited draft, awaiting a licensed Belarusian accountant.
+Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. Checked against the law (tier 2); no licensed Belarusian accountant has signed it off.
 
-Not yet confirmed: The January-February director accident-insurance base, exact March director-floor proration, and predecessor engagement-notification rules for 1-7 January 2026 remain unverified. PR is partial for those ordinary cases; do not substitute the later rules for earlier dates.
+Not yet confirmed: The migration-law minimum salary for foreign employees carried in the old payroll file (five minimum wages from 1 November 2025) is a labour/migration condition, not a tax computation, and was not checked against its act. The January-February director accident-insurance base, exact March director-floor proration, and predecessor engagement-notification rules for 1-7 January 2026 remain unverified. PR is partial for those ordinary cases; do not substitute the later rules for earlier dates.
 
 <!-- openaccountants-cta-block -->
 

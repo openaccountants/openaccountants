@@ -1,10 +1,10 @@
 ---
 name: belarus-vat
-description: Compute ordinary Belarus value-added tax for the 2026 calendar year for domestic organisations and foreign permanent establishments, with specific routing for individual entrepreneurs and simplified taxpayers. Trigger on Belarus NDS, VAT registration, place of supply, reverse charge, input tax, electronic invoices, exports, monthly or quarterly VAT returns and import VAT. The skill sets out the standard, reduced and telecom rates, distinguishes exemptions from zero-rated turnover, explains signed electronic-invoice evidence and mixed-use credit allocation, and provides filing, payment, refund and correction rules with two recomputing examples. Foreign digital-consumer and distance-selling registrations and specialist sector schemes require their separate statutory procedures. Use alongside the corporate and cross-border skills; this is a tier 2 source-cited draft pending a Belarusian accountant.
+description: Compute ordinary Belarus value-added tax for the 2026 calendar year for domestic organisations and foreign permanent establishments, with specific routing for individual entrepreneurs and simplified taxpayers. Trigger on Belarus NDS, VAT registration, place of supply, reverse charge, input tax, electronic invoices, exports, monthly or quarterly VAT returns and import VAT. The skill sets out the standard, reduced and telecom rates, distinguishes exemptions from zero-rated turnover, explains signed electronic-invoice evidence and mixed-use credit allocation, and provides filing, payment, refund and correction rules with two recomputing examples. Foreign digital-consumer and distance-selling registrations and specialist sector schemes require their separate statutory procedures. Use alongside the corporate and cross-border skills; tier 2, checked against the law.
 version: 2.1
 jurisdiction: BY
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -66,7 +66,7 @@ Use MNS electronic returns and the electronic-invoice portal. Retain sales, purc
 
 Late-payment interest under General Tax Code art. 55 is computed separately for each period of constant unpaid tax and National Bank refinancing rate: `unpaid tax × overdue calendar days × annual rate / 360 / 100`. Count from the day after the due date through payment; interest reflected in the audit decision on audit-assessed tax is capped at that assessed tax amount; apply art. 55(3) exclusions and art. 55(4)'s four-decimal interest-rate precision. Use the rate actually in force in each period, not a single assumed 2026 rate. [General Code art. 55](https://pravo.by/document/?guid=3871&p0=hk0200166).
 
-For a business/agent return, Administrative Code art. 14.2(1)-(2) sets up to 1 basic unit for no more than 3 working days late; otherwise 2 basic units plus 0.5 per complete month, capped at 10. Repetition within a year invokes art. 14.2(4), 3 per complete or incomplete month, capped at 20. Under art. 14.4(1), business tax underpayment carries 40% of unpaid tax, minimum 2 basic units for an entrepreneur or 10 for a company, subject to the statutory notes, including timely voluntary correction/payment. Do not apply these amounts automatically to an ordinary individual or to a withholding default. [Administrative Code arts. 14.2 and 14.4](https://pravo.by/document/?guid=3871&p0=hk2100091).
+For a business/agent return, Administrative Code art. 14.2(1)-(2) sets up to 1 basic unit for no more than 3 working days late; otherwise 2 basic units plus 0.5 per complete month, capped at 10. Repetition within a year invokes art. 14.2(4), 3 per complete or incomplete month, capped at 20. Under art. 14.4(1), business tax underpayment carries 40% of unpaid tax, minimum 2 basic units for an entrepreneur or 10 for a company, subject to the statutory notes, including timely voluntary correction/payment. Do not apply these amounts automatically to an ordinary individual or to a withholding default. [Administrative Code arts. 14.2 and 14.4](https://pravo.by/document/?guid=3871&p0=hk2100091). The basic unit is BYN 45 from 1 January 2026 ([Council Resolution 651 of 20 November 2025](https://pravo.by/document/?guid=12551&p0=C22500651)).
 
 Foreign purchaser-agent defaults require Administrative Code art. 14.5 analysis. Apply the specific electronic-service foreign-payer grace provisions only to the taxpayers described in the notes to arts. 14.2/14.4; they are not a domestic VAT grace period. [Administrative Code arts. 14.2, 14.4-14.5](https://pravo.by/document/?guid=3871&p0=hk2100091).
 
@@ -134,8 +134,9 @@ expected:
 | EAEU Customs Code, treaty of 11 April 2017, arts. 135, 136(1),(9), official PDF physical pp. 340-350 (clause 9 on printed p. 347) | https://docs.eaeunion.org/documents/236/2895/ | 2026-10-24 |
 | EAEU Treaty of 29 May 2014, Annex 18 paras. 13-20; official treaty PDF linked from MNS | https://nalog.gov.by/eec/ | 2026-10-24 |
 | Administrative Code, arts. 14.2, 14.4-14.5 | https://pravo.by/document/?guid=3871&p0=hk2100091 | 2026-10-24 |
+| Council Resolution 651 of 20 November 2025, paras. 1, 3, official PDF, basic unit BYN 45 from 1 January 2026 | https://pravo.by/document/?guid=12551&p0=C22500651 | 2026-10-31 |
 
-Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. This is a source-cited draft, awaiting a licensed Belarusian accountant.
+Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. Checked against the law (tier 2); no licensed Belarusian accountant has signed it off.
 
 Not yet confirmed: Foreign digital-consumer, marketplace, tax-free retail and special sector workflows are outside this ordinary domestic/EAEU-import scope; no absence of tax or registration is inferred. Ordinary input credit, mixed allocation, filing and EAEU-import procedure are supplied.
 

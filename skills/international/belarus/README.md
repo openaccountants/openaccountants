@@ -18,25 +18,25 @@ partial:
 
 # Belarus: 2026 tax pack
 
-Belarus uses BYN and the calendar tax year. MNS administers tax; FSZN and Belgosstrakh have separate contribution systems and deadlines. The seven computational guides below were checked for 2026 on 24 October 2026. All remain source-cited drafts awaiting a licensed Belarusian accountant. Independent AI review does not supply professional sign-off.
+Belarus uses BYN and the calendar tax year. MNS administers tax; FSZN and Belgosstrakh have separate contribution systems and deadlines. The seven tax skills below cover 2026. They were checked against the law (written 24 October 2026, independently reviewed 31 October 2026); no licensed Belarusian accountant has signed them off.
 
 ## Domains
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND | [Individual/business income](belarus-income-tax.md) | source-cited draft |
-| IT-CORP | [Corporate profit/simplified system](by-corporate-income-tax.md) | source-cited draft |
-| VAT | [VAT](belarus-vat.md) | source-cited draft |
-| SC | [Social contributions](belarus-social-contributions.md) | source-cited draft; partial scope above |
-| PR | [Payroll](belarus-payroll.md) | source-cited draft; partial scope above |
-| TP | [Transfer pricing](belarus-transfer-pricing.md) | source-cited draft |
-| XB | [Cross-border](belarus-cross-border-tax.md) | source-cited draft; partial scope above |
+| IT-IND | [Individual/business income](belarus-income-tax.md) | checked against the law |
+| IT-CORP | [Corporate profit/simplified system](by-corporate-income-tax.md) | checked against the law |
+| VAT | [VAT](belarus-vat.md) | checked against the law |
+| SC | [Social contributions](belarus-social-contributions.md) | checked against the law, partial |
+| PR | [Payroll](belarus-payroll.md) | checked against the law, partial |
+| TP | [Transfer pricing](belarus-transfer-pricing.md) | checked against the law |
+| XB | [Cross-border](belarus-cross-border-tax.md) | checked against the law, partial |
 
 January single-tax and private-rent schedules, the July professional-income minimum, the March accident-insurance reform and the January reporting cutover have separate dated treatment. Future unpublished monthly wage inputs must be supplied for the actual calculation period.
 
 Specialist exclusions: HTP and other presidential concessions, crypto, craft/agro-tourism taxes, non-entrepreneur single-tax activity schedules, foreign digital/marketplace and special VAT schemes, APA/MAP and multinational group reporting, and exhaustive treaty-rate matrices. These are not assertions of exemption or absence of obligations.
 
-The three retained supporting guides (`by-tax-overview`, `by-company-formation`, `belarus-tax-optimization`) are unchanged 2025 materials. They are not 2026 calculation evidence. The [research record](../../research/belarus-2026/research.md) lists contradictions for a separate follow-up, source access and exact review limits.
+The three supporting skills (`by-tax-overview`, `by-company-formation`, `belarus-tax-optimization`) still carry 2025 figures and are refreshed separately. Do not use them for 2026 calculations. The [research record](../../research/belarus-2026/research.md) lists contradictions for a separate follow-up, source access and exact review limits.
 
 ## Official sources
 
@@ -44,9 +44,10 @@ The three retained supporting guides (`by-tax-overview`, `by-company-formation`,
 |---|---|---|
 | [General Tax Code](https://pravo.by/document/?guid=3871&p0=hk0200166) | 2026-10-24 | residence, registration, procedure, interest and TP |
 | [Special Tax Code](https://pravo.by/document/?guid=3871&p0=hk0900071) | 2026-10-24 | PIT, CIT, VAT, withholding, offshore and regimes |
-| [MNS](https://nalog.gov.by/) | 2026-10-24 | specific 2026 clarifications linked in guides |
+| [MNS](https://nalog.gov.by/) | 2026-10-24 | specific 2026 clarifications linked in the skills |
 | [FSZN Law 118-Z](https://pravo.by/document/?guid=3871&p0=H12100118) | 2026-10-24 | contributions |
 | [Decree 108](https://pravo.by/document/?guid=3871&p0=P32500108) / [Resolution 1462](https://pravo.by/document/?guid=3871&p0=C20601462) | 2026-10-24 | accident insurance |
 | [Administrative Code](https://pravo.by/document/?guid=3871&p0=hk2100091) | 2026-10-24 | cited sanctions |
+| [Council Resolutions 612 and 651](https://pravo.by/document/?guid=12551&p0=C22500612) | 2026-10-31 | 2026 minimum wage BYN 858 and basic unit BYN 45 |
 
-Exact article/commencement evidence and read dates appear in each guide's Sources. No source date means a full-law or professional review beyond the listed scope.
+Exact article and commencement evidence, with read dates, is in each skill's Sources table.
