@@ -1,7 +1,7 @@
 ---
 name: uk-student-loan-repayment
 description: Use this skill whenever asked about UK Student Loan repayment for self-employed individuals. Trigger on phrases like "student loan repayment", "Plan 1", "Plan 2", "Plan 4", "Plan 5", "Plan 5 student loan", "Postgraduate loan repayment", "postgraduate loan", "April 2026 student loan threshold", "student loan self-employed", "student loan Self Assessment", "SLC repayment", "student loan deduction", or any question about student loan obligations for a self-employed client. Also trigger when classifying bank statement transactions showing SLC repayments via SA, PAYE student loan deductions, or direct SLC payments. This skill covers Plan 1-5 and Postgraduate Loan thresholds across three tax years (2024-25, 2025-26, 2026-27), self-employed SA calculation, multiple plan interaction, bank statement classification patterns, overseas earnings, write-off periods, and edge cases. ALWAYS read this skill before touching any UK student loan repayment work.
-version: 2.3
+version: 2.4
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-31
@@ -220,9 +220,9 @@ Assume trading profits of **£42,000** in each of the three years (held constant
 
 | Component | Threshold | Income above | Rate | Repayment |
 | --- | --- | --- | --- | --- |
-| Plan 2 | £27,295 | £14,705 | 9% | £1,323.45 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025 (tax year 2026) (read 2026-10-31) |
-| PGL | £21,000 | £21,000 | 6% | £1,260.00 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025 (tax year 2026) (read 2026-10-31) |
-| **Total via SA** |  |  |  | **£2,583.45** Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025 (tax year 2026) (read 2026-10-31) |
+| Plan 2 | £27,295 | £14,705 | 9% | £1,323.45 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025 (tax year 2024-25) (read 2026-10-31) |
+| PGL | £21,000 | £21,000 | 6% | £1,260.00 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025 (tax year 2024-25) (read 2026-10-31) |
+| **Total via SA** |  |  |  | **£2,583.45** Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025 (tax year 2024-25) (read 2026-10-31) |
 
 ### Year 2 -- 2025-26
 
@@ -230,9 +230,9 @@ Assume trading profits of **£42,000** in each of the three years (held constant
 
 | Component | Threshold | Income above | Rate | Repayment |
 | --- | --- | --- | --- | --- |
-| Plan 2 | £28,470 | £13,530 | 9% | £1,217.70 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2026) (read 2026-10-31) |
-| PGL | £21,000 | £21,000 | 6% | £1,260.00 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025 (tax year 2026) (read 2026-10-31) |
-| **Total via SA** |  |  |  | **£2,477.70** Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2026) (read 2026-10-31) |
+| Plan 2 | £28,470 | £13,530 | 9% | £1,217.70 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2025-26) (read 2026-10-31) |
+| PGL | £21,000 | £21,000 | 6% | £1,260.00 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2025-26) (read 2026-10-31) |
+| **Total via SA** |  |  |  | **£2,477.70** Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2025-26) (read 2026-10-31) |
 
 Change from 2024-25: **down £105.75** (Plan 2 threshold rose by £1,175 -> £1,175 x 9% = £105.75 less on Plan 2; PGL threshold unchanged).
 
@@ -243,7 +243,7 @@ Plan 2 threshold: **£29,385**. PGL threshold: **£21,000** (unchanged).
 | Component | Threshold | Income above | Rate | Repayment |
 | --- | --- | --- | --- | --- |
 | Plan 2 | £29,385 | £12,615 | 9% | £1,135.35 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 (tax year 2026) (read 2026-10-31) |
-| PGL | £21,000 | £21,000 | 6% | £1,260.00 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025 (tax year 2026) (read 2026-10-31) |
+| PGL | £21,000 | £21,000 | 6% | £1,260.00 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 (tax year 2026) (read 2026-10-31) |
 | **Total via SA** |  |  |  | **£2,395.35** Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 (tax year 2026) (read 2026-10-31) |
 
 Change from 2025-26: **down £82.35** (Plan 2 threshold rose by £915 -> £915 x 9% = £82.35 less on Plan 2; PGL threshold unchanged).
@@ -282,9 +282,9 @@ Change from 2025-26: **down £82.35** (Plan 2 threshold rose by £915 -> £915 x
 
 | Combination (2025-26 figures) | Calculation |
 | --- | --- |
-| Plan 2 + Postgraduate Loan | 9% above £28,470 AND 6% above £21,000 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2026) (read 2026-10-31) |
-| Plan 1 + Postgraduate Loan | 9% above £26,065 AND 6% above £21,000 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2026) (read 2026-10-31) |
-| Plan 1 + Plan 2 | One 9% charge above £26,065 (the lower threshold). SLC splits it between the loans Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2026) (read 2026-10-31) |
+| Plan 2 + Postgraduate Loan | 9% above £28,470 AND 6% above £21,000 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2025-26) (read 2026-10-31) |
+| Plan 1 + Postgraduate Loan | 9% above £26,065 AND 6% above £21,000 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2025-26) (read 2026-10-31) |
+| Plan 1 + Plan 2 | One 9% charge above £26,065 (the lower threshold). SLC splits it between the loans Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2025-26) (read 2026-10-31) |
 
 - **Maximum combined rate**: 15% (9% + 6%) where the income is above both the undergraduate plan threshold and the Postgraduate Loan threshold.
 
