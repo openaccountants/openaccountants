@@ -1,10 +1,10 @@
 ---
 name: it-impatriati
 description: "Italy's tax regimes for people who move to Italy, tax year 2026. Covers the impatriati regime for workers who moved from 2024 (D.Lgs. 209/2023 art. 5: 50% of qualifying income taxed, 40% with a minor child, EUR 600,000 yearly cap, three years abroad or six or seven with the same employer or group, high qualification, four-year stay and recapture with interest), the old regime for moves up to 31 December 2023 (D.Lgs. 147/2015 art. 16: 30% or 10% taxed, five-year extensions), how to claim it through the employer or the return, and pointers to the art. 24-bis flat tax (EUR 300,000 for moves from 2026) and the 7% pensioners' option (art. 24-ter). Trigger on: impatriati, regime impatriati, rientro cervelli, moving to Italy tax break, Italy inbound worker, Italy flat tax 300,000, Italy non-dom. Out of scope: residence tests and leaving Italy (it-cross-border), IRPEF computation (it-irpef-employees, it-income-tax), payroll (italy-payroll)."
-version: 1.1
+version: 1.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -48,16 +48,16 @@ There is no southern-regions bonus in the new regime. The 10% share for the Sout
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | New regime: share of qualifying income that is taxed | 50% | 2026 | D.Lgs. 209/2023 art. 5 comma 1, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30 |
-| New regime: yearly cap on income that gets the reduced share | EUR 600,000 | 2026 | D.Lgs. 209/2023 art. 5 comma 1 (same URL) |
-| New regime: taxed share with a minor child (moved with one, or one born or adopted during the regime) | 40% | 2026 | D.Lgs. 209/2023 art. 5 comma 4 (same URL) |
-| New regime: years abroad needed, new employer / same employer or group / same group and worked in Italy before | 3 / 6 / 7 tax periods | 2026 | D.Lgs. 209/2023 art. 5 comma 1(b) (same URL) |
-| New regime: length | Year of the move and the next 4 | 2026 | D.Lgs. 209/2023 art. 5 comma 3 (same URL) |
-| New regime: minimum stay before recapture | 4 years | 2026 | D.Lgs. 209/2023 art. 5 comma 3 (same URL) |
-| New regime: 2024 movers who owned their main home by 31 Dec 2023 (bought in the 12 months before the move) | 3 extra periods at 50% taxed | 2026 | D.Lgs. 209/2023 art. 5 comma 10 (same URL) |
+| New regime: yearly cap on income that gets the reduced share | EUR 600,000 | 2026 | D.Lgs. 209/2023 art. 5 comma 1 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30 |
+| New regime: taxed share with a minor child (moved with one, or one born or adopted during the regime) | 40% | 2026 | D.Lgs. 209/2023 art. 5 comma 4 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30 |
+| New regime: years abroad needed, new employer / same employer or group / same group and worked in Italy before | 3 / 6 / 7 tax periods | 2026 | D.Lgs. 209/2023 art. 5 comma 1(b) https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30 |
+| New regime: length | Year of the move and the next 4 | 2026 | D.Lgs. 209/2023 art. 5 comma 3 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30 |
+| New regime: minimum stay before recapture | 4 years | 2026 | D.Lgs. 209/2023 art. 5 comma 3 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30 |
+| New regime: 2024 movers who owned their main home by 31 Dec 2023 (bought in the 12 months before the move) | 3 extra periods at 50% taxed | 2026 | D.Lgs. 209/2023 art. 5 comma 10 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30 |
 | Old regime: taxed share, first five years | 30% | 2026 | D.Lgs. 147/2015 art. 16 comma 1, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;147~art16!vig=2023-12-28 |
-| Old regime: taxed share for moves to Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sardegna, Sicilia | 10% | 2026 | D.Lgs. 147/2015 art. 16 comma 5-bis (same URL) |
-| Old regime: five extra years with a minor or dependent child, or a home bought in Italy | 50% taxed | 2026 | D.Lgs. 147/2015 art. 16 comma 3-bis (same URL) |
-| Old regime: five extra years with three or more minor or dependent children | 10% taxed | 2026 | D.Lgs. 147/2015 art. 16 comma 3-bis (same URL) |
+| Old regime: taxed share for moves to Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sardegna, Sicilia | 10% | 2026 | D.Lgs. 147/2015 art. 16 comma 5-bis https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;147~art16!vig=2023-12-28 |
+| Old regime: five extra years with a minor or dependent child, or a home bought in Italy | 50% taxed | 2026 | D.Lgs. 147/2015 art. 16 comma 3-bis https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;147~art16!vig=2023-12-28 |
+| Old regime: five extra years with three or more minor or dependent children | 10% taxed | 2026 | D.Lgs. 147/2015 art. 16 comma 3-bis https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;147~art16!vig=2023-12-28 |
 | Old regime: price of the extension for pre-2020 movers (one child or a home / three children and a home) | 10% / 5% of the prior year's qualifying income | 2026 | D.L. 34/2019 art. 5 comma 2-bis, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-04-30;34~art5!vig=2023-12-28 |
 | Flat tax on foreign income, moves from 1 January 2026 | EUR 300,000 a year; EUR 50,000 per family member | 2026 | TUIR art. 24-bis comma 2, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24bis!vig=2026-06-30; L. 199/2025 art. 1 commi 25-26, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 |
 | Flat tax, moves after D.L. 113/2024 came into force and before 2026 | EUR 200,000 a year; EUR 25,000 per family member | 2026 | TUIR art. 24-bis as in force on 30 June 2025, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24bis!vig=2025-06-30 |
@@ -181,8 +181,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| D.Lgs. 209/2023 art. 5 (in force on 30 June 2026) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30 | 2026-10-24 |
-| D.Lgs. 147/2015 art. 16 (in force on 28 December 2023) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;147~art16!vig=2023-12-28 | 2026-10-24 |
+| D.Lgs. 209/2023 art. 5 (in force on 30 June 2026) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30 | 2026-10-31 |
+| D.Lgs. 147/2015 art. 16 (in force on 28 December 2023) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;147~art16!vig=2023-12-28 | 2026-10-31 |
 | D.L. 34/2019 art. 5 (in force on 28 December 2023) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-04-30;34~art5!vig=2023-12-28 | 2026-10-24 |
 | TUIR art. 24-bis (in force on 30 June 2026; also read as at 30 June 2025 and 1 January 2024) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24bis!vig=2026-06-30 | 2026-10-24 |
 | TUIR art. 24-ter (in force on 30 June 2026) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24ter!vig=2026-06-30 | 2026-10-24 |

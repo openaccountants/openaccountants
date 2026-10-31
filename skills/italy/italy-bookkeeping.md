@@ -1,10 +1,10 @@
 ---
 name: italy-bookkeeping
 description: Use this skill whenever asked about bookkeeping, chart of accounts, Piano dei Conti, financial statements, P&L format, balance sheet layout, bank reconciliation, expense classification, asset capitalisation, or day-to-day accounting for an Italian entity. Trigger on phrases like "piano dei conti", "chart of accounts Italy", "bilancio", "conto economico", "stato patrimoniale", "OIC principles", "Codice Civile accounting", "regime forfettario bookkeeping", "capitalise or expense Italy", "ammortamento", "depreciation Italy", "bank reconciliation Italy", "microimpresa", "bilancio abbreviato", "bookkeeping Italy", or any question about recording transactions, classifying expenses, or preparing accounts under Italian law. ALWAYS read this skill before touching any bookkeeping work for Italy.
-version: 1.0
+version: 1.1
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -28,14 +28,14 @@ Companion to `it-income-tax`, `italy-vat-return` and `italy-einvoice`.
 
 **Quick Reference table**
 
-| Field | Value |
-| --- | --- |
-| Country | Italy (Repubblica Italiana) |
-| Currency | EUR |
-| Financial year | Calendar year for individuals; companies may choose another 12-month period |
-| Accounting standards | OIC principles for non-listed entities; IFRS for listed entities |
-| Standard chart of accounts | None mandated |
-| Record retention | Ten years from the last entry (Civil Code art. 2220), and until the year's tax assessments are final (D.P.R. 600/1973 art. 22). Section 11 |
+| Field | Value | Source |
+| --- | --- |---|
+| Country | Italy (Repubblica Italiana) | same |
+| Currency | EUR | same |
+| Financial year | Calendar year for individuals; companies may choose another 12-month period | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art76!vig=2026-06-30 and https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art7!vig=2026-06-30 |
+| Accounting standards | OIC principles for non-listed entities; IFRS for listed entities |  |
+| Standard chart of accounts | None mandated |  |
+| Record retention | Ten years from the last entry (Civil Code art. 2220), and until the year's tax assessments are final (D.P.R. 600/1973 art. 22). Section 11 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2220!vig=2026-06-30 |
 
 ## Section 2: Recommended Chart of Accounts (Piano dei Conti)
 
@@ -135,17 +135,17 @@ OpenAccountants' own suggestion, not an official chart; checked against Civil Co
 
 **IRES rate**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |
-| IRES, standard rate | 24% | "con l'aliquota del 24 per cento" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |  |
+| IRES, standard rate | 24% | "con l'aliquota del 24 per cento" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |
 
 **IRAP ordinary rate**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
-| IRAP, ordinary rate (regions may vary it; some sectors pay more) | 3.9% | "l’aliquota del 3,9 per cento" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |  |
+| IRAP, ordinary rate (regions may vary it; some sectors pay more) | 3.9% | "l’aliquota del 3,9 per cento" | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
 
 **Tax chart of accounts**
 
@@ -174,20 +174,20 @@ OpenAccountants' own suggestion, not an official chart; checked against Civil Co
 
 **Forfettario**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |
-| Prior-year revenue or fees, annualised, not above | EUR 85,000 | "non superiori a 85.000 euro" |
-| Substitute tax | 15% | "nella misura del 15%" |
-| Start-up rate, first five years, if conditions met | 5% | "ridotta al 5% per i primi cinque anni" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |  |
+| Prior-year revenue or fees, annualised, not above | EUR 85,000 | "non superiori a 85.000 euro" | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |
+| Substitute tax | 15% | "nella misura del 15%" | same |
+| Start-up rate, first five years, if conditions met | 5% | "ridotta al 5% per i primi cinque anni" | same |
 
 **Simplified accounts limits**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig= |
-| Revenue in a full year, service businesses, not above | EUR 500,000 | "non abbiano superato l'ammontare di 500.000 euro per le imprese aventi per oggetto prestazioni di servizi" |
-| Revenue in a full year, other businesses, not above | EUR 800,000 | "ovvero di 800.000 euro per le imprese aventi per oggetto altre attività" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig= |  |
+| Revenue in a full year, service businesses, not above | EUR 500,000 | "non abbiano superato l'ammontare di 500.000 euro per le imprese aventi per oggetto prestazioni di servizi" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig= |
+| Revenue in a full year, other businesses, not above | EUR 800,000 | "ovvero di 800.000 euro per le imprese aventi per oggetto altre attività" | same |
 
 - **Semplificata is decided on last year's revenue received** (for a business leaving ordinary accounts, on that year's accrued revenue). Sole traders and partnerships (D.P.R. 600/1973 art. 13 letters c and d) within the limit keep simplified books the next year. Mixed businesses use the limit of the main activity; without separate records they count as "other activities" (art. 18(1)). It rolls over while the limits are not exceeded (art. 18(7)); a new business may use it in year one if expected annualised revenue is within the limit (art. 18(9)).
 - **Companies always keep ordinary accounts**: art. 18 covers only letters c and d.
@@ -198,45 +198,45 @@ Business income (reddito d'impresa). Professionals follow TUIR art. 54 to 54-oct
 
 **TUIR art. 102**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art102!vig=2026-06-30 |
-| Telephone equipment and services, deductible share | 80% | "sono deducibili nella misura dell' 80 per cento" |
-| Asset unit cost deductible in full in year one | EUR 516.46 | "non è superiore a 516,46 euro" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art102!vig=2026-06-30 |  |
+| Telephone equipment and services, deductible share | 80% | "sono deducibili nella misura dell' 80 per cento" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art102!vig=2026-06-30 |
+| Asset unit cost deductible in full in year one | EUR 516.46 | "non è superiore a 516,46 euro" | same |
 
 **TUIR art. 109(5)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art109!vig=2026-06-30 |
-| Hotel services and food and drink, deductible share (not employees' business trips under art. 95(3)) | 75% | "sono deducibili nella misura del 75 per cento" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art109!vig=2026-06-30 |  |
+| Hotel services and food and drink, deductible share (not employees' business trips under art. 95(3)) | 75% | "sono deducibili nella misura del 75 per cento" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art109!vig=2026-06-30 |
 
 **TUIR art. 108(2), entertainment cap as a share of revenue**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art108!vig=2026-06-30 |
-| Revenue up to 10 million euro | 1.5% | "all'1,5 per cento dei ricavi e altri proventi fino a euro 10 milioni" |
-| Part over 10 and up to 50 million euro | 0.6% | "allo 0,6 per cento dei ricavi e altri proventi per la parte eccedente" |
-| Part over 50 million euro | 0.4% | "allo 0,4 per cento dei ricavi e altri proventi per la parte eccedente euro 50 milioni" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art108!vig=2026-06-30 |  |
+| Revenue up to 10 million euro | 1.5% | "all'1,5 per cento dei ricavi e altri proventi fino a euro 10 milioni" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art108!vig=2026-06-30 |
+| Part over 10 and up to 50 million euro | 0.6% | "allo 0,6 per cento dei ricavi e altri proventi per la parte eccedente" | same |
+| Part over 50 million euro | 0.4% | "allo 0,4 per cento dei ricavi e altri proventi per la parte eccedente euro 50 milioni" | same |
 
 **TUIR art. 164, cars**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 |
-| Cars not used exclusively as business assets | 20% | "nella misura del 20 per cento relativamente alle autovetture" |
-| Agents and commercial representatives | 80% | "Tale percentuale è elevata all'80 per cento" |
-| Cars given to employees for mixed use for most of the tax period | 70% | "nella misura del 70 per cento per i veicoli dati in uso promiscuo ai dipendenti per la maggior parte del periodo d'imposta" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 |  |
+| Cars not used exclusively as business assets | 20% | "nella misura del 20 per cento relativamente alle autovetture" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 |
+| Agents and commercial representatives | 80% | "Tale percentuale è elevata all'80 per cento" | same |
+| Cars given to employees for mixed use for most of the tax period | 70% | "nella misura del 70 per cento per i veicoli dati in uso promiscuo ai dipendenti per la maggior parte del periodo d'imposta" | same |
 
 The share applies only to the part of the purchase cost, lease or hire charge within the limits in art. 164, which the statute still prints in lire. Professionals working alone may deduct costs for one vehicle only.
 
 **TUIR art. 96, interest**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art96!vig=2026-06-30 |
-| Net interest deductible up to this share of the risultato operativo lordo | 30% | "il 30 per cento del risultato operativo lordo della gestione caratteristica" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art96!vig=2026-06-30 |  |
+| Net interest deductible up to this share of the risultato operativo lordo | 30% | "il 30 per cento del risultato operativo lordo della gestione caratteristica" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art96!vig=2026-06-30 |
 
 **Expense classification table**
 
@@ -266,10 +266,10 @@ The share applies only to the part of the purchase cost, lease or hire charge wi
 
 **TUIR art. 54-quinquies**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30 |
-| Professional: asset unit cost deductible in full | EUR 516.40 | "il cui costo unitario non sia superiore a euro 516,40" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30 |  |
+| Professional: asset unit cost deductible in full | EUR 516.40 | "il cui costo unitario non sia superiore a euro 516,40" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30 |
 
 ### Depreciation Rates (DM 31 December 1988: Coefficienti di Ammortamento)
 
@@ -348,21 +348,21 @@ The first year the raised limits apply is not settled: D.Lgs. 125/2024 art. 17 n
 
 **Art. 2435-ter (micro)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= |
-| Total assets | EUR 220,000 | "220.000 euro" |
-| Revenue | EUR 440,000 | "440.000 euro" |
-| Average employees | 5 | "5 unità" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= |  |
+| Total assets | EUR 220,000 | "220.000 euro" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= |
+| Revenue | EUR 440,000 | "440.000 euro" | same |
+| Average employees | 5 | "5 unità" | same |
 
 **Art. 2435-bis (abbreviated)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= |
-| Total assets | EUR 5,500,000 | "5.500.000 euro" |
-| Revenue | EUR 11,000,000 | "11.000.000 euro" |
-| Average employees | 50 | "50 unità" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= |  |
+| Total assets | EUR 5,500,000 | "5.500.000 euro" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= |
+| Revenue | EUR 11,000,000 | "11.000.000 euro" | same |
+| Average employees | 50 | "50 unità" | same |
 
 **Size thresholds table**
 
@@ -446,11 +446,26 @@ The first year the raised limits apply is not settled: D.Lgs. 125/2024 art. 17 n
 
 ## Sources
 
-- Civil Code (art. 2214 to 2220, 2424, 2425, 2435-bis, 2435-ter): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2220!vig=2026-06-30
-- D.P.R. 600/1973 (art. 14 to 22): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art22!vig=2026-06-30
-- D.P.R. 633/1972 (art. 23, 25, 39): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art39!vig=2026-06-30
-- TUIR (art. 54-quinquies, 66, 77, 96, 102, 108, 109, 164): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art66!vig=2026-06-30
-- Agenzia, forfettario: https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-
+- Civil Code (art. 2214 to 2220, 2424, 2425, 2435-bis, 2435-ter): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2220!vig=2026-06-30 (read 2026-10-31)
+- D.P.R. 600/1973 (art. 14 to 22): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art22!vig=2026-06-30 (read 2026-10-31)
+- D.P.R. 633/1972 (art. 23, 25, 39): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art39!vig=2026-06-30 (read 2026-10-31)
+- TUIR (art. 54-quinquies, 66, 77, 96, 102, 108, 109, 164): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art66!vig=2026-06-30 (read 2026-10-31)
+- Agenzia, forfettario: https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- (read 2026-10-31)
+- TUIR art. 76: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art76!vig=2026-06-30 (read 2026-10-31)
+- TUIR art. 7: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art7!vig=2026-06-30 (read 2026-10-31)
+- TUIR art. 77: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= (read 2026-10-31)
+- IRAP 2026 instructions: https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 (read 2026-10-31)
+- D.P.R. 600/1973 art. 18: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig= (read 2026-10-31)
+- TUIR art. 102: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art102!vig=2026-06-30 (read 2026-10-31)
+- TUIR art. 109: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art109!vig=2026-06-30 (read 2026-10-31)
+- TUIR art. 108: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art108!vig=2026-06-30 (read 2026-10-31)
+- TUIR art. 164: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 (read 2026-10-31)
+- TUIR art. 96: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art96!vig=2026-06-30 (read 2026-10-31)
+- TUIR art. 54-quinquies: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30 (read 2026-10-31)
+- Civil Code art. 2435-ter: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= (read 2026-10-31)
+- Civil Code art. 2435-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= (read 2026-10-31)
+
+Not yet confirmed: that OIC principles apply to non-listed entities; that no chart of accounts is mandated.
 
 ## Disclaimer
 

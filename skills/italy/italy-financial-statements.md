@@ -1,10 +1,10 @@
 ---
 name: italy-financial-statements
 description: Use this skill when preparing, reviewing, or advising on annual financial statements (bilancio d'esercizio) for an Italian company. Trigger on phrases like "bilancio", "deposito bilancio", "Camera di Commercio", "Registro delle Imprese", "XBRL Italy", "codice civile 2423", "bilancio abbreviato", "micro imprese", "OIC", "revisione legale", "collegio sindacale", "nota integrativa", or any question about preparing and filing statutory accounts under Italian civil code. Covers OIC standards, size thresholds, required statements, formats, notes, filing deadlines, and audit requirements.
-version: 1.0
+version: 1.1
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -22,19 +22,19 @@ How an Italian company prepares, approves and files its annual financial stateme
 
 ## Section 1: Quick Reference
 
-| Field | Value |
-| --- | --- |
-| Country | Italy (Repubblica Italiana) |
-| Currency | EUR |
-| Filing authority | Registro delle Imprese (via Camera di Commercio) |
-| Primary legislation | Codice Civile, Articles 2423 to 2435-ter; for S.r.l. also Articles 2477 and 2478-bis |
-| Supporting legislation | D.Lgs. 127/1991 (consolidated); D.Lgs. 39/2010 (audit); D.Lgs. 139/2015 (EU transposition, years from 1 January 2016); D.Lgs. 38/2005 (IFRS); D.Lgs. 125/2024 (raised size limits) |
-| Accounting standards | OIC (Organismo Italiano di Contabilità): Italian GAAP. OIC standards are not published on an official host this Guide may cite |
-| Financial year | Usually calendar year (January to December) |
-| Approval deadline | By the date in the bylaws, not more than 120 days from year-end; up to 180 days if the bylaws allow it and the case qualifies (art. 2364). For an S.r.l., art. 2478-bis sets the same limits for presenting the accounts to the members |
-| Filing deadline | Within 30 days of approval (art. 2435; art. 2478-bis) |
-| Filing fee | Not stated on an allowed host. The legacy amounts were removed; ask the Camera di Commercio |
-| Digital filing | Electronic processable format (XBRL) required by D.L. 223/2006 art. 37(21-bis); taxonomy version set by the business register, not an allowed host |
+| Field | Value | Source |
+| --- | --- |---|
+| Country | Italy (Repubblica Italiana) | same |
+| Currency | EUR | same |
+| Filing authority | Registro delle Imprese (via Camera di Commercio) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig= |
+| Primary legislation | Codice Civile, Articles 2423 to 2435-ter; for S.r.l. also Articles 2477 and 2478-bis | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= |
+| Supporting legislation | D.Lgs. 127/1991 (consolidated); D.Lgs. 39/2010 (audit); D.Lgs. 139/2015 (EU transposition, years from 1 January 2016); D.Lgs. 38/2005 (IFRS); D.Lgs. 125/2024 (raised size limits) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art16!vig= and https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-18;139~art12 |
+| Accounting standards | OIC (Organismo Italiano di Contabilità): Italian GAAP. OIC standards are not published on an official host this Guide may cite |  |
+| Financial year | Usually calendar year (January to December) |  |
+| Approval deadline | By the date in the bylaws, not more than 120 days from year-end; up to 180 days if the bylaws allow it and the case qualifies (art. 2364). For an S.r.l., art. 2478-bis sets the same limits for presenting the accounts to the members | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2364!vig= |
+| Filing deadline | Within 30 days of approval (art. 2435; art. 2478-bis) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig= |
+| Filing fee | Not stated on an allowed host. The legacy amounts were removed; ask the Camera di Commercio | same |
+| Digital filing | Electronic processable format (XBRL) required by D.L. 223/2006 art. 37(21-bis); taxonomy version set by the business register, not an allowed host | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig= |
 
 ## Section 2: Reporting Framework
 
@@ -55,31 +55,31 @@ The Civil Code in force prints the limits below. A company qualifies if, in its 
 
 **Art. 2435-ter (micro)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= |
-| Total assets (totale dell'attivo) | EUR 220,000 | "220.000 euro" |
-| Revenue (ricavi delle vendite e delle prestazioni) | EUR 440,000 | "440.000 euro" |
-| Average employees | 5 | "5 unità" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= |  |
+| Total assets (totale dell'attivo) | EUR 220,000 | "220.000 euro" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= |
+| Revenue (ricavi delle vendite e delle prestazioni) | EUR 440,000 | "440.000 euro" | same |
+| Average employees | 5 | "5 unità" | same |
 
 **Art. 2435-bis (abbreviated)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= |
-| Total assets | EUR 5,500,000 | "5.500.000 euro" |
-| Revenue | EUR 11,000,000 | "11.000.000 euro" |
-| Average employees | 50 | "50 unità" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= |  |
+| Total assets | EUR 5,500,000 | "5.500.000 euro" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= |
+| Revenue | EUR 11,000,000 | "11.000.000 euro" | same |
+| Average employees | 50 | "50 unità" | same |
 
 **Limits before D.Lgs. 125/2024 (use these if the raised limits do not yet apply to the company's year)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art16!vig= |
-| Abbreviated, total assets, replaced | EUR 4,400,000 | Art. 16(1)(a): "4.400.000" replaced by "5.500.000" |
-| Abbreviated, revenue, replaced | EUR 8,800,000 | "8.800.000" replaced by "11.000.000" |
-| Micro, total assets, replaced | EUR 175,000 | Art. 16(1)(b): "175.000" replaced by "220.000" |
-| Micro, revenue, replaced | EUR 350,000 | "350.000" replaced by "440.000" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art16!vig= |  |
+| Abbreviated, total assets, replaced | EUR 4,400,000 | Art. 16(1)(a): "4.400.000" replaced by "5.500.000" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art16!vig= |
+| Abbreviated, revenue, replaced | EUR 8,800,000 | "8.800.000" replaced by "11.000.000" | same |
+| Micro, total assets, replaced | EUR 175,000 | Art. 16(1)(b): "175.000" replaced by "220.000" | same |
+| Micro, revenue, replaced | EUR 350,000 | "350.000" replaced by "440.000" | same |
 
 **Section 3: Size Thresholds**  _(Art. 2435-ter; Art. 2435-bis Codice Civile)_
 
@@ -130,17 +130,17 @@ The OIC numbers are legacy content. OIC standards are published by the Organismo
 
 **IRES rate**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |
-| IRES standard rate (TUIR art. 77) | 24% | "con l'aliquota del 24 per cento" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |  |
+| IRES standard rate (TUIR art. 77) | 24% | "con l'aliquota del 24 per cento" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |
 
 **IRAP rate**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
-| IRAP ordinary rate | 3.9% | "aliquota del 3,9 per cento" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |  |
+| IRAP ordinary rate | 3.9% | "aliquota del 3,9 per cento" | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
 
 For the tax computations behind these rates, see `it-irap`. Art. 2424-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2424bis!vig= and art. 2426: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2426!vig=
 
@@ -265,11 +265,11 @@ Before the meeting, the directors give the draft accounts and their report to th
 
 **Late filing penalty (art. 2630)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2630!vig= |
-| Administrative fine, lower end | EUR 103 | "da 103 euro a 1.032 euro" |
-| Administrative fine, upper end | EUR 1,032 | "da 103 euro a 1.032 euro" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2630!vig= |  |
+| Administrative fine, lower end | EUR 103 | "da 103 euro a 1.032 euro" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2630!vig= |
+| Administrative fine, upper end | EUR 1,032 | "da 103 euro a 1.032 euro" | same |
 
 The fine is set for each person who was obliged to file because of their office. The whole range is reduced to one third if the filing is made within thirty days after the deadline, and increased by one third where the accounts (bilanci) are not filed.
 
@@ -295,12 +295,12 @@ Art. 2364: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:19
 
 **Mandatory audit thresholds**  _(Art. 2477 CC)_
 
-| Criterion | Threshold | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2477!vig= |
-| Totale attivo (Total assets) | EUR 4 million | "4 milioni di euro" |
-| Ricavi (Revenue) | EUR 4 million | "4 milioni di euro" |
-| Dipendenti medi (Average employees) | 20 | "20 unità" |
+| Criterion | Threshold | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2477!vig= |  |
+| Totale attivo (Total assets) | EUR 4 million | "4 milioni di euro" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2477!vig= |
+| Ricavi (Revenue) | EUR 4 million | "4 milioni di euro" | same |
+| Dipendenti medi (Average employees) | 20 | "20 unità" | same |
 
 - **Obligation cessation rule**: the obligation ends when none of the limits is exceeded for three consecutive years.
 - These are not the art. 2435-bis limits. An S.r.l. can use the abbreviated form and still have to appoint a control body or auditor.
@@ -347,11 +347,20 @@ Art. 2364: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:19
 ## Sources
 
 - Civil Code arts. 2364, 2396-novies, 2424, 2424-bis, 2425, 2426, 2427, 2429, 2435, 2435-bis, 2435-ter, 2409-bis, 2477, 2478-bis, 2630 on Normattiva (links above)
-- D.Lgs. 125/2024 arts. 16 and 17: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art16!vig=
-- D.Lgs. 38/2005 art. 4: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-02-28;38~art4!vig=
-- D.L. 223/2006 art. 37: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig=
-- TUIR art. 77: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig=
-- IRAP 2026 instructions: https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414
+- D.Lgs. 125/2024 arts. 16 and 17: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art16!vig= (read 2026-10-31)
+- D.Lgs. 38/2005 art. 4: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-02-28;38~art4!vig= (read 2026-10-31)
+- D.L. 223/2006 art. 37: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig= (read 2026-10-31)
+- TUIR art. 77: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= (read 2026-10-31)
+- IRAP 2026 instructions: https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 (read 2026-10-31)
+- Civil Code art. 2435-ter: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= (read 2026-10-31)
+- D.Lgs. 139/2015 art. 12: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-18;139~art12 (read 2026-10-31)
+- Civil Code art. 2364: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2364!vig= (read 2026-10-31)
+- Civil Code art. 2435: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig= (read 2026-10-31)
+- Civil Code art. 2435-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= (read 2026-10-31)
+- Civil Code art. 2630: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2630!vig= (read 2026-10-31)
+- Civil Code art. 2477: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2477!vig= (read 2026-10-31)
+
+Not yet confirmed: OIC standards and the claim about where they are published; that the financial year is usually the calendar year (no official page says so).
 
 ## Disclaimer
 
