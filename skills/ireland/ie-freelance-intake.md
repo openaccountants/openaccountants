@@ -1,9 +1,10 @@
 ---
 name: ie-freelance-intake
-description: ALWAYS USE THIS SKILL when a user asks for help preparing an Irish tax return AND mentions freelancing, self-employment, sole trader, LTD, contractor, or PSC in Ireland. Trigger on phrases like "Ireland tax return", "Form 11 Ireland", "Form 12 Ireland", "Irish sole trader", "Irish LTD CT1", "ROS Revenue Online Service", "self-assessment Ireland", "preliminary tax Ireland", "PRSI Class S", "USC Ireland", "Irish VAT registration", "Pillar Two QDMTT Ireland", or any similar phrasing where the user is an Irish tax resident self-employed individual, sole trader, partner, or small LTD director-shareholder. This is the REQUIRED entry point for the Irish freelance / SME workflow — every downstream skill in the stack (ie-income-tax-form11, ie-preliminary-tax, ie-prsi-class-s, ie-usc, ie-vat-return, ie-corporation-tax, ie-paye, ie-payroll, ie-cgt, ie-cat, ie-formation, ie-return-assembly) depends on this skill running first. Uses ask_user_input_v0-style structured questions. Irish tax residents only (full-year residents under Section 819 TCA 1997, plus the 280-day combined test). ALWAYS read this skill first when starting an Irish freelance / SME tax workflow.
+description: ALWAYS USE THIS SKILL when a user asks for help preparing an Irish tax return AND mentions freelancing, self-employment, sole trader, LTD, contractor, or PSC in Ireland. Trigger on phrases like "Ireland tax return", "Form 11 Ireland", "Form 12 Ireland", "Irish sole trader", "Irish LTD CT1", "ROS Revenue Online Service", "self-assessment Ireland", "preliminary tax Ireland", "PRSI Class S", "USC Ireland", "Irish VAT registration", "Pillar Two QDMTT Ireland", or any similar phrasing where the user is an Irish tax resident self-employed individual, sole trader, partner, or small LTD director-shareholder. This is the REQUIRED entry point for the Irish freelance / SME workflow , every downstream skill in the stack (ie-income-tax-form11, ie-preliminary-tax, ie-prsi-class-s, ie-usc, ie-vat-return, ie-corporation-tax, ie-paye, ie-payroll, ie-cgt, ie-cat, ie-formation, ie-return-assembly) depends on this skill running first. Uses ask_user_input_v0-style structured questions. Irish tax residents only (full-year residents under Section 819 TCA 1997, plus the 280-day combined test). ALWAYS read this skill first when starting an Irish freelance / SME tax workflow.
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-31
+version: 1.0
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -15,13 +16,24 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 This skill is the first step for an Irish-resident self-employed person, sole trader, partner, or director-shareholder of a small private company limited by shares (LTD), including a one-person service company. It asks the questions that decide which Irish return applies and which other skills to load, then hands a structured intake package to `ie-return-assembly`. Figures are for tax year 2026. The Irish tax year is the calendar year, 1 January to 31 December. In October and November 2026 most self-employed clients are doing two things at once: filing the 2025 Form 11 and paying 2026 preliminary tax. Ask which year the client means. This skill holds only the few figures that decide routing. Rates, bands and credits live in the sibling skills named below, so they are not repeated here.
 
-## What this file is
+## Scope
 
 The intake orchestrator for Irish-resident self-employed individuals, sole traders, partners, and small LTD director-shareholders, including personal service companies. Every downstream Irish Guide depends on this skill producing a structured intake package first.
 
 Job: (1) confirm the taxpayer is Irish tax resident, (2) capture domicile, which decides whether the remittance basis is possible, and ordinary residence, which `ie-non-dom` needs for other rules, (3) classify the regime (sole trader or partnership: Form 11 income tax, PRSI Class S and USC; LTD: Corporation Tax for the company plus the director's own return), (4) list the downstream skills to run, (5) hand off to `ie-return-assembly`. Outputs are addressed to a qualified Irish tax professional (for example a Chartered Tax Adviser of the Irish Tax Institute, an ACA, ACCA or CPA, or an AITI-qualified agent registered on ROS). That professional signs off. This skill is not the preparer of record.
 
 Live sibling skills this skill routes to (all confirmed live in the catalog on 2 October 2026): `ie-income-tax-form11`, `ie-usc`, `ie-prsi-class-s`, `ie-preliminary-tax`, `ie-vat-return`, `ie-corporation-tax`, `ie-payroll`, `ie-cgt`, `ie-cat`, `ie-non-dom`, `ie-formation`, `ie-return-assembly`.
+
+## Ask the client first
+
+These answers change the outcome. Ask them before anything else.
+
+- How many days were you in Ireland in the tax year, and in the year before? Did you arrive in or leave Ireland during the year?
+- Where were you born and where is your permanent home? Have you been tax resident in Ireland for each of the last three tax years?
+- Do you trade in your own name, in a partnership, or through a company? If a company, what share do you own or control, including through a holding company?
+- Which tax year are we working on: the 2025 return being filed now, the 2026 year, or both?
+- What was your turnover excluding VAT in the calendar year, and how much of it was goods and how much services?
+- Do you have employees, pay subcontractors in construction, forestry or meat processing, or work mainly for one client?
 
 ## Section 1: Quick reference, the routing figures
 
@@ -32,30 +44,30 @@ Only the figures that decide routing are here. Each table is one official page.
 | Item | Value | Note (verbatim from the page) |
 | --- | --- | --- |
 | Source | all figures below | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx |
-| Must register for self-assessment if TAXABLE non-PAYE income is more than | EUR 5,000 | "You must register for self-assessment if: your taxable non-PAYE income exceeds €5,000 or your gross non-PAYE income exceeds €30,000." |
-| OR must register if GROSS non-PAYE income is more than | EUR 30,000 | "your gross non-PAYE income exceeds €30,000. Note To declare non-PAYE income that does not exceed the above amounts, please submit a Form 12 online using myAccount" |
+| Must register for self-assessment if TAXABLE non-PAYE income is more than | EUR 5,000 | "You must register for self-assessment if: your taxable non-PAYE income exceeds €5,000 or your gross non-PAYE income exceeds €30,000." Source: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx |
+| OR must register if GROSS non-PAYE income is more than | EUR 30,000 | "your gross non-PAYE income exceeds €30,000. Note To declare non-PAYE income that does not exceed the above amounts, please submit a Form 12 online using myAccount" Source: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx |
 
 The two tests are joined by OR: crossing either one means the person must register for self-assessment. Both say "exceeds", so income exactly at a limit does not trigger that test. Below both limits, a PAYE worker declares the non-PAYE income on Form 12 instead. The same page also says a person "should" register if they are self-employed, or if their only or main income is rental, investment, foreign income (including foreign pensions), maintenance, PAYE-exempt fees, or profits from share options or share incentives ([Revenue, register for self-assessment](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx)). So the page says a self-employed person "should" register, and the "must" limits in the table catch anyone whose non-PAYE income passes either of them. A self-employed client below both limits: flag for the reviewer rather than assume Form 12. Route every self-assessed client to `ie-income-tax-form11`.
 
-### Revenue, What are the VAT thresholds? (published 6 May 2026)
+### Revenue, What are the VAT thresholds? (published 27 October 2026)
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx |
-| Threshold, persons supplying services only | EUR 42,500 | "€42,500 , in the case of persons supplying services only." |
-| Threshold, goods at the reduced or standard rate that the person manufactured or produced from zero-rated materials (same amount as services) | EUR 42,500 | "€42,500 , for persons supplying goods liable at the reduced or standard rates which they have manufactured or produced from zero rated materials." |
-| Threshold, persons supplying goods | EUR 85,000 | "€85,000 , for persons supplying goods. €10,000 , for taxable persons making mail-order or intra-Community distance sales" |
-| Threshold, goods and services together where goods are at least the share of turnover in the next row (other than the zero-rated-materials goods above) | EUR 85,000 | "€85,000 , for persons supplying both goods and services where 90% or more of the turnover is from the supplies of goods" |
-| Share of turnover from goods needed for the goods threshold to apply to a mixed business | 90% | "90% or more of the turnover is from the supplies of goods, other than goods referred to above." |
-| Threshold, mail-order or intra-Community distance sales of goods and cross-border TBE services into the State, counted across all EU Member States | EUR 10,000 | "€10,000 , for taxable persons making mail-order or intra-Community distance sales of goods and cross-border Telecommunications, Broadcasting and Electronic (TBE) services into the State." |
-| Threshold, acquisitions from other EU Member States | EUR 41,000 | "€41,000 , for persons making acquisitions from other EU Member States." |
+| Item | Value | Note (verbatim from the page) | Official source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx |
+| Threshold, persons supplying services only | EUR 42,500 | "€42,500 in the case of persons supplying services only." | same |
+| Threshold, goods at the reduced or standard rate that the person manufactured or produced from zero-rated materials (same amount as services) | EUR 42,500 | "€42,500 for persons supplying goods liable at the reduced or standard rates which they have manufactured or produced from zero rated materials." | same |
+| Threshold, persons supplying goods | EUR 85,000 | "€85,000 for persons supplying goods." | same |
+| Threshold, goods and services together where goods are at least the share of turnover in the next row (other than the zero-rated-materials goods above) | EUR 85,000 | "€85,000 for persons supplying both goods and services where 90% or more of the turnover is from the supplies of goods" | same |
+| Share of turnover from goods needed for the goods threshold to apply to a mixed business | 90% | "90% or more of the turnover is from the supplies of goods other than goods referred to above." | same |
+| Threshold, mail-order or intra-Community distance sales of goods and cross-border TBE services into the State, counted across all EU Member States | EUR 10,000 | "€10,000 for taxable persons making mail-order or intra-Community distance sales of goods and cross-border Telecommunications, Broadcasting and Electronic (TBE) services into the State." | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/elect-register-vat.aspx |
+| Threshold, acquisitions from other EU Member States | EUR 41,000 | "€41,000 for persons making acquisitions from other European Union (EU) Member States." | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/elect-register-vat.aspx |
 
 How to read the VAT table:
 
-- Registration is obligatory when annual turnover "exceeds" the threshold. Below it, the person "may elect to register for VAT" ([Revenue, VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx)).
-- Turnover is the total value, excluding VAT, of the listed supplies "in a calendar year". It is not a rolling 12 months. Occasional disposals of business assets such as buildings, vehicles or machines are excluded from the count ([Revenue, VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx)).
+- Registration is obligatory when annual turnover "exceeds" the threshold. Below it, the person "may elect to register for VAT" ([Revenue, VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx)).
+- Turnover is the total value, excluding VAT, of the listed supplies "in a calendar year". It is not a rolling 12 months. Occasional disposals of business assets such as buildings, vehicles or machines are excluded from the count ([Revenue, VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx)).
 - A mixed business uses the goods threshold only if goods are 90% or more of turnover (the share in the table above). Otherwise the services threshold applies.
-- A person not established in Ireland who supplies taxable goods or services to taxable customers in Ireland must register "irrespective of the level of turnover, unless they avail of the VAT SME Scheme" ([Revenue, VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx)). This skill refuses non-residents anyway (Section 8).
+- A person not established in Ireland who supplies taxable goods or services to taxable customers in Ireland must register "irrespective of the level of turnover, unless they avail of the VAT SME Scheme" ([Revenue, non-established businesses](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/option-to-tax-lettings.aspx)). This skill refuses non-residents anyway (Section 8).
 - A new business that has not yet made taxable supplies must register to reclaim VAT on its start-up costs ([Revenue, Who should register for VAT?](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx)).
 - A person carrying out only exempt or non-taxable activities may not register, except in certain situations such as acquiring goods from other Member States or receiving services from abroad ([Revenue, Who should register for VAT?](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx)).
 
@@ -63,61 +75,61 @@ Route every VAT question, including rates, VAT3 returns and the reverse charge, 
 
 ### Department of Social Protection, SW14 PRSI Contribution Rates and User Guide, January 2026
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf |
-| Self-employed contributors pay Class S if annual income is this amount or more | EUR 5,000 | "Self-employed contributors with annual income of €5,000 or over pay Class S PRSI" |
+| Item | Value | Note (verbatim from the page) | Official source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx |
+| Self-employed contributors pay Class S if annual income is this amount or more | EUR 5,000 | "Self-employed contributors with annual income of €5,000 or over pay Class S PRSI" | same |
 
 The Class S test says "or over": income of exactly the amount in the table is caught. That is a different direction from the self-assessment test above, which says "exceeds". The two tests share a number but are different rules. Route the Class S rate and minimum contribution to `ie-prsi-class-s`.
 
 ### Department of Social Protection, PRSI and Family Employment
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ |
-| Shareholding at or above which a proprietary director is classified as self-employed for PRSI (directly or indirectly) | 50% | "From 1 July 2013 proprietary directors who own or control 50% or more of the shareholding of a company, either directly or indirectly e.g., through a holding company, are classified as self-employed and liable to pay PRSI at Class S." |
+| Item | Value | Note (verbatim from the page) | Official source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx |
+| Shareholding at or above which a proprietary director is classified as self-employed for PRSI (directly or indirectly) | 50% | "From 1 July 2013 proprietary directors who own or control 50% or more of the shareholding of a company, either directly or indirectly e.g., through a holding company, are classified as self-employed and liable to pay PRSI at Class S." | same |
 
 A director who owns or controls 50% or more (the share in the table above), counting shares held through a holding company, is classified as self-employed and pays Class S. A director below that share is not classified by this rule: refer the classification to `ie-prsi-class-s` and the reviewer.
 
 ### Revenue, Tax and Duty Manual Part 42-04-13, PAYE Taxpayers and Self-Assessment
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-04-13.pdf |
-| Share of a company's share capital above which a director (controlling it directly or indirectly) is a proprietary director and a chargeable person who files Form 11 | 15% | "A proprietary director is a director who can control, either directly or indirectly, more than 15% of the share capital of a company. All proprietary directors are ‘chargeable persons’ and must be set up on Revenue’s record for the issue of a self-assessment return." |
+| Item | Value | Note (verbatim from the page) | Official source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-04-13.pdf | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx |
+| Share of a company's share capital above which a director (controlling it directly or indirectly) is a proprietary director and a chargeable person who files Form 11 | 15% | "A proprietary director is a director who can control, either directly or indirectly, more than 15% of the share capital of a company. All proprietary directors are ‘chargeable persons’ and must be set up on Revenue’s record for the issue of a self-assessment return." | same |
 
 This is the income tax test for which directors must file Form 11. It is a different rule from the PRSI Class S shareholding test in the table above: see Section 4.5. A director above the share in this table is a proprietary director and a chargeable person; route the director's own return to `ie-income-tax-form11`. A director at or below it is a non-proprietary director, for whom Revenue lists Form 12.
 
 ### Revenue, What is preliminary tax?
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx |
-| Option 1: share of the tax due for the CURRENT tax year | 90% | "90% of the tax due for that tax year" |
-| Option 2: share of the tax due for the immediately PREVIOUS tax year | 100% | "100% of the tax due for the immediately previous tax year" |
-| Option 3: share of the tax due for the PRE-PRECEDING year, only when paying by direct debit, and not if that year's tax was nil | 105% | "105% of the tax due for the tax year preceding the immediately previous tax year" |
-| Due date | 31 October of the tax year in question | "You must pay this by 31 October of the tax year in question." |
+| Item | Value | Note (verbatim from the page) | Official source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx |
+| Option 1: share of the tax due for the CURRENT tax year | 90% | "90% of the tax due for that tax year" | same |
+| Option 2: share of the tax due for the immediately PREVIOUS tax year | 100% | "100% of the tax due for the immediately previous tax year" | same |
+| Option 3: share of the tax due for the PRE-PRECEDING year, only when paying by direct debit, and not if that year's tax was nil | 105% | "105% of the tax due for the tax year preceding the immediately previous tax year" | same |
+| Due date | 31 October of the tax year in question | "You must pay this by 31 October of the tax year in question." | same |
 
 Preliminary tax covers Income Tax, PRSI and USC. It "must be equal to, or more than, the lowest amount" of the three options. The third option "only applies where you pay by direct debit" and "does not apply if the tax due for the pre-preceding year was nil". In the first year in self-assessment the client can choose either the previous-year option (usually nil, so generally nothing to pay) or the current-year option ([Revenue, preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)). Route the calculation to `ie-preliminary-tax`.
 
 ### Revenue eBrief No. 034/26, Pay and File Extension Date 2026
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
-| Extended date for the 2025 Form 11 balance and 2026 preliminary tax, ONLY if the 2025 Form 11 is filed AND the payment is made through ROS | 18 November 2026 | "the due date is extended to Wednesday 18 November 2026." |
-| Date where the client does not both file and pay through ROS | 31 October 2026 | "the required date to submit both returns and payments is no later than 31 October 2026." |
+| Item | Value | Note (verbatim from the page) | Official source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx |
+| Extended date for the 2025 Form 11 balance and 2026 preliminary tax, ONLY if the 2025 Form 11 is filed AND the payment is made through ROS | 18 November 2026 | "the due date is extended to Wednesday 18 November 2026." | same |
+| Date where the client does not both file and pay through ROS | 31 October 2026 | "the required date to submit both returns and payments is no later than 31 October 2026." | same |
 
 By 31 October in a tax year the client must pay preliminary tax for that year, file the self-assessment return for the previous year, and pay any balance for the previous year ([Revenue, pay and file](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx)). A late return carries a surcharge. Route surcharge and interest questions to `ie-income-tax-form11` and `ie-preliminary-tax`.
 
 ### Revenue, When and how do you pay and file CGT?
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx |
-| Pay date, disposals 1 January to 30 November (initial period) | 15 December of the same year | "1 January and 30 November (the initial period), you must pay CGT by 15 December of the same year" |
-| Pay date, disposals 1 December to 31 December (later period) | 31 January of the next year | "1 December and 31 December (the later period), you must pay CGT by 31 January of the next year." |
-| CGT return | by 31 October of the following year | "You must file your CGT return on or before 31 October of the year that follows the date of disposal." |
+| Item | Value | Note (verbatim from the page) | Official source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx |
+| Pay date, disposals 1 January to 30 November (initial period) | 15 December of the same year | "1 January and 30 November (the initial period), you must pay CGT by 15 December of the same year" | same |
+| Pay date, disposals 1 December to 31 December (later period) | 31 January of the next year | "1 December and 31 December (the later period), you must pay CGT by 31 January of the next year." | same |
+| CGT return | by 31 October of the following year | "You must file your CGT Return on, or before, 31 October of the year that follows the date of disposal." | same |
 
 CGT is paid on its own dates, not with the Income Tax balance ([Revenue, pay and file](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx)). A self-assessed client reports gains in the CGT panel of Form 11; a person who does not need to make an Income Tax return can use Form CG1 ([Revenue, forms to complete](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/forms-to-complete.aspx)). Route to `ie-cgt`.
 
@@ -200,7 +212,7 @@ Some are inferred from documents; the rest are gap-filled. All are needed before
 4. **Self-assessment and the return.** A self-employed person files Form 11 on ROS and makes the self-assessment in its panel, covering Income Tax, PRSI and USC ([Revenue, forms to complete](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/forms-to-complete.aspx)). A PAYE worker with side income applies the two tests in the self-assessment table in Section 1 ([Revenue, register for self-assessment](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx)). Route `ie-income-tax-form11` and `ie-usc`.
 5. **PRSI Class S.** Apply the Class S income test in the SW14 table and the director shareholding test in the PRSI and Family Employment table ([DSP, SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf); [DSP, PRSI and Family Employment](https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/)). Route `ie-prsi-class-s`.
 6. **Preliminary tax and dates.** Record which of the three preliminary tax options in the Section 1 table the client can use, whether they pay by direct debit, and whether this is their first year in self-assessment ([Revenue, preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)). Record whether they will both file and pay through ROS, which decides the date in the eBrief table ([Revenue eBrief No. 034/26](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx)). Route `ie-preliminary-tax`.
-7. **VAT.** Pick the threshold row in the VAT table that fits the business, compare it with turnover for the calendar year, and set the registration flag ([Revenue, VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx)). Route `ie-vat-return` if registered, obliged to register, or electing.
+7. **VAT.** Pick the threshold row in the VAT table that fits the business, compare it with turnover for the calendar year, and set the registration flag ([Revenue, VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx)). Route `ie-vat-return` if registered, obliged to register, or electing.
 8. **Company.** For an LTD, route the company to `ie-corporation-tax` and the director to `ie-income-tax-form11` where the director controls more than the share in the TDM table; a director at or below it is a non-proprietary director, for whom Revenue lists Form 12; flag for the reviewer. Revenue describes Form 12 as the return "for employees, pensioners and non-proprietary directors" ([Revenue, pay and file CGT, forms list](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx)).
 9. **RCT.** If the client pays subcontractors in construction, forestry or meat processing, they are a principal contractor and "must register with Revenue" for RCT, with all RCT transactions through ROS ([Revenue, RCT for principal contractors](https://www.revenue.ie/en/self-assessment-and-self-employment/rct/rct-principal-contractors.aspx)). Flag it for the reviewer.
 10. **Capital events and employees.** Disposal → `ie-cgt` (record the disposal date, which decides the payment date in the CGT table). Gift or inheritance → `ie-cat`. Employees → `ie-payroll`.
@@ -233,7 +245,7 @@ Some are inferred from documents; the rest are gap-filled. All are needed before
 
 ### 4.4 VAT registration gate
 
-Use the VAT table in Section 1. Registration is obligatory once calendar-year turnover exceeds the threshold for the business's supply type. Elective registration below the threshold is allowed and can make sense to recover input VAT; a business that has not yet started supplying must register to reclaim VAT on start-up costs ([Revenue, VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx); [Revenue, Who should register for VAT?](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx)). Rates, returns and cross-border rules: `ie-vat-return`.
+Use the VAT table in Section 1. Registration is obligatory once calendar-year turnover exceeds the threshold for the business's supply type. Elective registration below the threshold is allowed and can make sense to recover input VAT; a business that has not yet started supplying must register to reclaim VAT on start-up costs ([Revenue, VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx); [Revenue, Who should register for VAT?](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx)). Rates, returns and cross-border rules: `ie-vat-return`.
 
 ### 4.5 PRSI Class S gate
 
@@ -263,17 +275,6 @@ Gift or inheritance received → route `ie-cat`. Capture the relationship to the
 
 The Form 11 return and self-assessment are made through ROS ([Revenue, forms to complete](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/forms-to-complete.aspx)). RCT compliance, filing and payment is conducted online through ROS ([Revenue, RCT](https://www.revenue.ie/en/self-assessment-and-self-employment/rct/index.aspx)). The 18 November extension applies only when the client both files and pays through ROS ([Revenue eBrief No. 034/26](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx)). If the client has no working ROS access, flag it in `open_flags`: without it they cannot use the extended date.
 
-## Ask the client first
-
-These answers change the outcome. Ask them before anything else.
-
-- How many days were you in Ireland in the tax year, and in the year before? Did you arrive in or leave Ireland during the year?
-- Where were you born and where is your permanent home? Have you been tax resident in Ireland for each of the last three tax years?
-- Do you trade in your own name, in a partnership, or through a company? If a company, what share do you own or control, including through a holding company?
-- Which tax year are we working on: the 2025 return being filed now, the 2026 year, or both?
-- What was your turnover excluding VAT in the calendar year, and how much of it was goods and how much services?
-- Do you have employees, pay subcontractors in construction, forestry or meat processing, or work mainly for one client?
-
 ## Section 5: Questions to ask the user
 
 Use `ask_user_input_v0`. Batch where independent.
@@ -288,25 +289,25 @@ Use `ask_user_input_v0`. Batch where independent.
 
 **Routing table**
 
-| Answer | Action |
-| --- | --- |
-| Q1 183 days, or 280-day test met | continue |
-| Q1 arrived or left during the year | **REFER**: split-year treatment is for employment income only |
-| Q1 not resident | **REFUSE** |
-| Q1 not sure | ask for day counts; do not assume residence |
-| Q2 Irish-domiciled | worldwide income basis; continue |
-| Q2 foreign domicile, resident each of last three years | record ordinarily resident = yes; flag `remittance_basis_review`; route `ie-non-dom`; reviewer confirms |
-| Q2 foreign domicile, not resident all three years, or not sure | flag `remittance_basis_review`; route `ie-non-dom`; reviewer confirms |
-| Q3 sole trader or partnership | route `ie-income-tax-form11` + `ie-prsi-class-s` + `ie-usc` + `ie-preliminary-tax` |
-| Q3 LTD single director-shareholder | route `ie-corporation-tax` + `ie-income-tax-form11` (director); flag `employment_status_review`; director's own return: Form 11 if more than 15% of share capital |
-| Q3 LTD several directors, DAC or CLG | route `ie-corporation-tax`; if more than 50 employees **REFUSE** |
-| Q3 not sure | route `ie-formation` first |
-| Q4 below the threshold for the supply type | registration optional; flag below-threshold |
-| Q4 above services but below goods threshold, and services only or goods less than the share | registration obligatory; route `ie-vat-return` |
-| Q4 above services but below goods threshold, and goods only or goods at or above the share | registration optional unless the goods are made from zero-rated materials; flag for review |
-| Q4 above the goods threshold | registration obligatory; route `ie-vat-return` |
-| Q5 RCT | flag RCT; ask whether principal contractor or subcontractor |
-| Q5 financial services or funds | **REFUSE** |
+| Answer | Action | Official source |
+| --- | --- | --- |
+| Q1 183 days, or 280-day test met | continue | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
+| Q1 arrived or left during the year | **REFER**: split-year treatment is for employment income only | same |
+| Q1 not resident | **REFUSE** | same |
+| Q1 not sure | ask for day counts; do not assume residence | same |
+| Q2 Irish-domiciled | worldwide income basis; continue | same |
+| Q2 foreign domicile, resident each of last three years | record ordinarily resident = yes; flag `remittance_basis_review`; route `ie-non-dom`; reviewer confirms | same |
+| Q2 foreign domicile, not resident all three years, or not sure | flag `remittance_basis_review`; route `ie-non-dom`; reviewer confirms | same |
+| Q3 sole trader or partnership | route `ie-income-tax-form11` + `ie-prsi-class-s` + `ie-usc` + `ie-preliminary-tax` | same |
+| Q3 LTD single director-shareholder | route `ie-corporation-tax` + `ie-income-tax-form11` (director); flag `employment_status_review`; director's own return: Form 11 if more than 15% of share capital | same |
+| Q3 LTD several directors, DAC or CLG | route `ie-corporation-tax`; if more than 50 employees **REFUSE** | same |
+| Q3 not sure | route `ie-formation` first | same |
+| Q4 below the threshold for the supply type | registration optional; flag below-threshold | same |
+| Q4 above services but below goods threshold, and services only or goods less than the share | registration obligatory; route `ie-vat-return` | same |
+| Q4 above services but below goods threshold, and goods only or goods at or above the share | registration optional unless the goods are made from zero-rated materials; flag for review | same |
+| Q4 above the goods threshold | registration obligatory; route `ie-vat-return` | same |
+| Q5 RCT | flag RCT; ask whether principal contractor or subcontractor | same |
+| Q5 financial services or funds | **REFUSE** | same |
 
 ### 5.2 Secondary batched questions
 
@@ -317,15 +318,15 @@ Use `ask_user_input_v0`. Batch where independent.
 
 **Routing table**
 
-| Answer | Action |
-| --- | --- |
-| Q6 jointly assessed | partner's PPSN required; `ie-income-tax-form11` applies joint bands and credits |
-| Q6 separately assessed or single treatment | flag for reviewer; each spouse's position checked in `ie-income-tax-form11` |
-| Q7 one or more employees | route `ie-payroll` |
-| Q7 more than 20 | flag (larger payroll; confirm scope) |
-| Q8 not registered and Q4 above threshold | flag **VAT registration overdue**; reviewer registers through ROS |
-| Q8 cancelled | flag for reviewer (final VAT3 and annual return) |
-| Q9 not paid, part paid or first year | flag `preliminary_tax_open`; route `ie-preliminary-tax` |
+| Answer | Action | Official source |
+| --- | --- | --- |
+| Q6 jointly assessed | partner's PPSN required; `ie-income-tax-form11` applies joint bands and credits | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
+| Q6 separately assessed or single treatment | flag for reviewer; each spouse's position checked in `ie-income-tax-form11` | same |
+| Q7 one or more employees | route `ie-payroll` | same |
+| Q7 more than 20 | flag (larger payroll; confirm scope) | same |
+| Q8 not registered and Q4 above threshold | flag **VAT registration overdue**; reviewer registers through ROS | same |
+| Q8 cancelled | flag for reviewer (final VAT3 and annual return) | same |
+| Q9 not paid, part paid or first year | flag `preliminary_tax_open`; route `ie-preliminary-tax` | same |
 
 ### 5.3 Capital events question
 
@@ -333,12 +334,12 @@ Use `ask_user_input_v0`. Batch where independent.
 
 **Routing table**
 
-| Answer | Action |
-| --- | --- |
-| Q10 disposal | route `ie-cgt`; capture the disposal date (1 January to 30 November, or December) |
-| Q10 gift or inheritance | route `ie-cat`; capture relationship to the giver and the valuation date |
-| Q10 both | route both |
-| Q10 neither | skip |
+| Answer | Action | Official source |
+| --- | --- | --- |
+| Q10 disposal | route `ie-cgt`; capture the disposal date (1 January to 30 November, or December) | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
+| Q10 gift or inheritance | route `ie-cat`; capture relationship to the giver and the valuation date | same |
+| Q10 both | route both | same |
+| Q10 neither | skip | same |
 
 ### 5.4 Foreign income question
 
@@ -494,21 +495,60 @@ When uncertain, prefer the stricter compliance outcome and flag it. All defaults
 
 **Conservative defaults table**
 
-| Ambiguity | Conservative default |
-| --- | --- |
-| Residence borderline, no day count for the preceding year | Do not assume residence; ask for day counts; refuse if still unproven |
-| Domicile unclear | Assume foreign domicile is possible; flag `remittance_basis_review`; tax foreign income as arising until the reviewer decides |
-| Ordinary residence unclear | Record as unclear; it does not decide the remittance basis; `ie-non-dom` and the reviewer decide |
-| Turnover close to the VAT threshold for the supply type | Treat as above; flag registration |
-| Goods share of a mixed business close to the share in the VAT table | Treat as below the share; apply the services threshold |
-| Director shareholding close to the Class S share, or held through a holding company | Count indirect holdings; treat as Class S; flag for review |
-| Contractor working mainly for one client | Flag `employment_status_review` with the five Karshan questions |
-| Sole trader or partnership unclear (shared trade) | Assume partnership; flag the partnership return, Form 1 (Firms) |
-| Preliminary tax base unclear | Flag for `ie-preliminary-tax`; do not use the pre-preceding-year option unless direct debit is confirmed and that year's tax was not nil |
-| CGT disposal date unclear | Ask; the payment date depends on whether it fell in December |
-| Self-employed income close to the Class S amount | Treat as at or over (the test is "or over"); flag Class S |
-| Foreign income, treaty position unclear | Tax as arising with no credit; reviewer claims any credit |
-| ROS access unknown | Assume not active; use the 31 October 2026 date |
+| Ambiguity | Conservative default | Official source |
+| --- | --- | --- |
+| Residence borderline, no day count for the preceding year | Do not assume residence; ask for day counts; refuse if still unproven | https://www.revenue.ie/en/starting-a-business/starting-a-business/registering.aspx |
+| Domicile unclear | Assume foreign domicile is possible; flag `remittance_basis_review`; tax foreign income as arising until the reviewer decides | same |
+| Ordinary residence unclear | Record as unclear; it does not decide the remittance basis; `ie-non-dom` and the reviewer decide | same |
+| Turnover close to the VAT threshold for the supply type | Treat as above; flag registration | same |
+| Goods share of a mixed business close to the share in the VAT table | Treat as below the share; apply the services threshold | same |
+| Director shareholding close to the Class S share, or held through a holding company | Count indirect holdings; treat as Class S; flag for review | same |
+| Contractor working mainly for one client | Flag `employment_status_review` with the five Karshan questions | same |
+| Sole trader or partnership unclear (shared trade) | Assume partnership; flag the partnership return, Form 1 (Firms) | same |
+| Preliminary tax base unclear | Flag for `ie-preliminary-tax`; do not use the pre-preceding-year option unless direct debit is confirmed and that year's tax was not nil | same |
+| CGT disposal date unclear | Ask; the payment date depends on whether it fell in December | same |
+| Self-employed income close to the Class S amount | Treat as at or over (the test is "or over"); flag Class S | same |
+| Foreign income, treaty position unclear | Tax as arising with no credit; reviewer claims any credit | same |
+| ROS access unknown | Assume not active; use the 31 October 2026 date | same |
+
+## Worked cases
+
+### Case 1: PAYE worker with a side income
+
+Gross non-PAYE income is EUR 28,000 and expenses are EUR 22,000. Gross is under EUR 30,000, but taxable income of EUR 6,000 exceeds EUR 5,000, so the person must register for self-assessment.
+
+```oa-check
+name: Self-assessment test, gross EUR 28,000, expenses EUR 22,000
+inputs:
+  gross: 28000
+  expenses: 22000
+steps:
+  - taxable: gross - expenses
+  - over_taxable_limit: max(taxable - 5000, 0)
+  - over_gross_limit: max(gross - 30000, 0)
+expected:
+  over_taxable_limit: 1000.00
+  over_gross_limit: 0.00
+```
+
+### Case 2: Which VAT threshold applies to a mixed business
+
+Goods of EUR 80,000 with services of EUR 5,000 are 94.12% goods, so the EUR 85,000 threshold applies and turnover of EUR 85,000 does not exceed it: registration is optional. With services of EUR 12,000 the goods share is 86.96%, below 90%, so the goods threshold does not apply and turnover of EUR 92,000 is above every threshold in the table: registration is obligatory.
+
+```oa-check
+name: Goods share of turnover, two service levels
+tolerance: 0.01
+inputs:
+  goods: 80000
+steps:
+  - share_low_services: goods / (goods + 5000) * 100
+  - share_high_services: goods / (goods + 12000) * 100
+  - headroom_low: 85000 - (goods + 5000)
+expected:
+  share_low_services: 94.12
+  share_high_services: 86.96
+  headroom_low: 0.00
+```
 
 ## When to refuse or refer
 
@@ -601,26 +641,32 @@ The legacy Guide cited sections of the 1997 Taxes Consolidation Act, the Value-A
 
 ## Sources
 
-- Revenue, Who should register for Income Tax self-assessment?: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx
-- Revenue, What forms do you need to complete?: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/forms-to-complete.aspx
-- Revenue, Pay and file system: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx
-- Revenue, What is preliminary tax?: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx
-- Revenue, eBrief No. 034/26: https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx
-- Revenue, What are the VAT thresholds?: https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx
-- Revenue, Who should register for VAT?: https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx
-- Revenue, How to know if you are resident for tax purposes: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx
-- Revenue, How to know if you are ordinarily resident for tax purposes: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx
-- Revenue, What is domicile and the domicile levy?: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/domicile-domicile-levy.aspx
-- Revenue, Tax and Duty Manual Part 05-01-21: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21.pdf
-- Revenue, Tax and Duty Manual Part 42-04-13: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-04-13.pdf
-- Revenue, Moving to or from Ireland during the tax year: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/moving-to-from-ireland.aspx
-- Revenue, Split-year treatment in your year of arrival: https://www.revenue.ie/en/life-events-and-personal-circumstances/moving-to-or-from-ireland/moving-or-returning-to-ireland/split-year-treatment-in-your-year-of-arrival.aspx
-- Revenue, Registering your business: https://www.revenue.ie/en/starting-a-business/starting-a-business/registering.aspx
-- Revenue, Relevant Contracts Tax: https://www.revenue.ie/en/self-assessment-and-self-employment/rct/index.aspx
-- Revenue, RCT for principal contractors: https://www.revenue.ie/en/self-assessment-and-self-employment/rct/rct-principal-contractors.aspx
-- Revenue, When and how do you pay and file CGT?: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx
-- DSP, SW14 PRSI Contribution Rates and User Guide, January 2026: https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf
-- DSP, PRSI and Family Employment: https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/
+| Source | URL | Read on |
+| --- | --- | --- |
+| Revenue, Who should register for Income Tax self-assessment? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx | 2026-10-31 |
+| Revenue, What forms do you need to complete? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/forms-to-complete.aspx | 2026-10-31 |
+| Revenue, Pay and file system | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-31 |
+| Revenue, What is preliminary tax? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-31 |
+| Revenue, eBrief No. 034/26 | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-31 |
+| Revenue, What are the VAT thresholds? | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx | 2026-10-31 |
+| Revenue, Who should register for VAT? | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx | 2026-10-31 |
+| Revenue, How to know if you are resident for tax purposes | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx | 2026-10-31 |
+| Revenue, How to know if you are ordinarily resident for tax purposes | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx | 2026-10-31 |
+| Revenue, What is domicile and the domicile levy? | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/domicile-domicile-levy.aspx | 2026-10-31 |
+| Revenue, Tax and Duty Manual Part 05-01-21 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21.pdf | 2026-10-31 |
+| Revenue, Tax and Duty Manual Part 42-04-13 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-04-13.pdf | 2026-10-31 |
+| Revenue, Moving to or from Ireland during the tax year | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/moving-to-from-ireland.aspx | 2026-10-31 |
+| Revenue, Split-year treatment in your year of arrival | https://www.revenue.ie/en/life-events-and-personal-circumstances/moving-to-or-from-ireland/moving-or-returning-to-ireland/split-year-treatment-in-your-year-of-arrival.aspx | 2026-10-31 |
+| Revenue, Registering your business | https://www.revenue.ie/en/starting-a-business/starting-a-business/registering.aspx | 2026-10-31 |
+| Revenue, Relevant Contracts Tax | https://www.revenue.ie/en/self-assessment-and-self-employment/rct/index.aspx | 2026-10-31 |
+| Revenue, RCT for principal contractors | https://www.revenue.ie/en/self-assessment-and-self-employment/rct/rct-principal-contractors.aspx | 2026-10-31 |
+| Revenue, When and how do you pay and file CGT? | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx | 2026-10-31 |
+| DSP, SW14 PRSI Contribution Rates and User Guide, January 2026 | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-31 |
+| DSP, PRSI and Family Employment | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ | 2026-10-31 |
+| Revenue, Other VAT thresholds | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/elect-register-vat.aspx | 2026-10-31 |
+| Revenue, Non-established businesses | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/option-to-tax-lettings.aspx | 2026-10-31 |
+
+Not yet confirmed: nothing in the routing tables; rates and computations belong to the sibling skills named above and are not restated here.
 
 ## Disclaimer
 

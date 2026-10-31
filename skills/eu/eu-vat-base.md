@@ -3,8 +3,8 @@ name: eu-vat-base
 description: "Load this skill as a shared reference whenever working on VAT for any EU member state in tax year 2026. Contains the common rules from Council Directive 2006/112/EC (consolidated to 14 April 2025) and Implementing Regulation 282/2011 that apply across all 27 EU member states -- intra-community supplies and acquisitions, reverse charge mechanics, place of supply rules, the EUR 10,000 distance selling threshold, OSS and IOSS, the SME scheme (EUR 85,000 national cap, EUR 100,000 Union cap), the reduced-rate framework, the 2026 rate table and the ViDA timetable (2025, 2027, 2028, 2029, 2030, 2035). Always load the country-specific VAT skill alongside this one. Do NOT use this skill alone -- it must be combined with the relevant country skill (e.g. ie-vat-return, germany-vat-return) which overrides anything country-specific. Article-by-article companion: eu-vat-directive."
 jurisdiction: EU
 tax_year: 2026
-last_updated: 2026-10-30
-version: 2.1
+last_updated: 2026-10-31
+version: 2.2
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -13,22 +13,33 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # EU VAT Base
 
-## Skill Metadata
+## Scope
 
 **Skill Metadata**
 
-| Field | Value |
-| --- | --- |
-| Scope | All 27 EU Member States |
-| Primary Legislation | Council Directive 2006/112/EC of 28 November 2006 (consolidated version of 14 April 2025, the latest consolidation; no later amendment applies before 2027) |
-| Supporting Legislation | Directive (EU) 2022/542 (reduced rates reform); Directive (EU) 2020/285 (SME scheme, applies from 1 January 2025); Implementing Regulation 282/2011 (consolidated 14 April 2025); ViDA package: Directive (EU) 2025/516, Regulation (EU) 2025/517, Implementing Regulation (EU) 2025/518; Directive (EU) 2025/1539 (import VAT, from 1 July 2028); Directive 2008/9/EC (refunds) |
-| Source | EUR-Lex: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 |
-| Contributor | Open Accounting Skills Registry |
-| Version | 2.1 |
-| Rates Current As Of | 30 October 2026 (TEDB, with 2026 mid-year changes dated) |
-| Status | awaiting-validation |
-| Format | Q1 Step Format |
-| Note | This skill contains ONLY rules common to all EU member states. Country-specific rules (form boxes, national rates, filing deadlines, small business thresholds) are in the country skill. The country skill overrides this one where there is any conflict. |
+| Field | Value | Official source |
+| --- | --- | --- |
+| Scope | All 27 EU Member States | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 |
+| Primary Legislation | Council Directive 2006/112/EC of 28 November 2006 (consolidated version of 14 April 2025, the latest consolidation; no later amendment applies before 2027) | same |
+| Supporting Legislation | Directive (EU) 2022/542 (reduced rates reform); Directive (EU) 2020/285 (SME scheme, applies from 1 January 2025); Implementing Regulation 282/2011 (consolidated 14 April 2025); ViDA package: Directive (EU) 2025/516, Regulation (EU) 2025/517, Implementing Regulation (EU) 2025/518; Directive (EU) 2025/1539 (import VAT, from 1 July 2028); Directive 2008/9/EC (refunds) | same |
+| Source | EUR-Lex: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 | same |
+| Contributor | Open Accounting Skills Registry | same |
+| Version | 2.2 | same |
+| Rates Current As Of | 30 October 2026 (TEDB, with 2026 mid-year changes dated) | same |
+| Status | awaiting-validation | same |
+| Format | Q1 Step Format | same |
+| Note | This skill contains ONLY rules common to all EU member states. Country-specific rules (form boxes, national rates, filing deadlines, small business thresholds) are in the country skill. The country skill overrides this one where there is any conflict. | same |
+
+## Ask the client first
+
+- Which member state is the supplier established in, and which is the customer in?
+- Is the customer a business with a valid VAT number or a consumer?
+- Is the supply goods or services, and where do the goods start and end their journey?
+- What was the turnover in the member state, and across the Union, in the current and last calendar year?
+
+## The method, step by step
+
+Load the country skill first; it overrides this skill where they conflict. Then work through the steps below in order.
 
 ## Confidence Tier Definitions
 
@@ -95,50 +106,50 @@ Before proceeding to Step 1, confirm:
 
 **Rate Structure Rules Table**
 
-| Rule | Detail | Article |
-| --- | --- | --- |
-| Standard rate minimum | Cannot be lower than 15%; the same rate for goods and services | Articles 96, 97 |
-| Reduced rates | Maximum two reduced rates, neither below 5%, only for goods and services in Annex III, in a maximum of 24 Annex III points | Article 98(1) |
-| Super-reduced rate and zero rate | In addition, one rate below 5% and one exemption with deduction of input VAT ("zero rate"), for a maximum of seven Annex III points, chosen from points (1) to (6) and (10c) (food, water, medicines, medical equipment and aids for health care or disability, passenger transport, books and press, and solar panels on or near homes and public buildings) or from items covered by Article 105a(1) | Article 98(2) |
-| Acquired rights below 5% or zero | Rates below 5% and zero rates that a member state applied on 1 January 2021 may continue; rates below 12% (including below 5% and zero) on items outside Annex III may continue until 1 January 2032 at the latest | Article 105a(1), (2) |
-| Parking rate | Minimum 12% -- reduced rates of at least 12% that a member state applied on 1 January 2021 to items outside Annex III may continue | Article 105a(3) |
-| Fossil fuels and pesticides | Reduced rates and zero rates on fossil fuels, peat and firewood end by 1 January 2030; on chemical pesticides and chemical fertilisers by 1 January 2032 | Article 105a(4) |
-| Electronically supplied services | No reduced rate except for items in Annex III points (6), (7), (8) and (13) (e-books and e-press, broadcasting, admission including live-streamed events) | Article 98(3) |
-| Rate on acquisitions and imports | Same rate as a domestic supply of like goods in that member state | Article 94 |
+| Rule | Detail | Article | Official source |
+| --- | --- | --- | --- |
+| Standard rate minimum | Cannot be lower than 15%; the same rate for goods and services | Articles 96, 97 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 |
+| Reduced rates | Maximum two reduced rates, neither below 5%, only for goods and services in Annex III, in a maximum of 24 Annex III points | Article 98(1) | same |
+| Super-reduced rate and zero rate | In addition, one rate below 5% and one exemption with deduction of input VAT ("zero rate"), for a maximum of seven Annex III points, chosen from points (1) to (6) and (10c) (food, water, medicines, medical equipment and aids for health care or disability, passenger transport, books and press, and solar panels on or near homes and public buildings) or from items covered by Article 105a(1) | Article 98(2) | same |
+| Acquired rights below 5% or zero | Rates below 5% and zero rates that a member state applied on 1 January 2021 may continue; rates below 12% (including below 5% and zero) on items outside Annex III may continue until 1 January 2032 at the latest | Article 105a(1), (2) | same |
+| Parking rate | Minimum 12% -- reduced rates of at least 12% that a member state applied on 1 January 2021 to items outside Annex III may continue | Article 105a(3) | same |
+| Fossil fuels and pesticides | Reduced rates and zero rates on fossil fuels, peat and firewood end by 1 January 2030; on chemical pesticides and chemical fertilisers by 1 January 2032 | Article 105a(4) | same |
+| Electronically supplied services | No reduced rate except for items in Annex III points (6), (7), (8) and (13) (e-books and e-press, broadcasting, admission including live-streamed events) | Article 98(3) | same |
+| Rate on acquisitions and imports | Same rate as a domestic supply of like goods in that member state | Article 94 | same |
 
 ### 2.2 2026 Rate Table -- All EU Member States
 
 **2026 Rate Table -- All EU Member States** (main rates for the mainland; source: European Commission Taxes in Europe Database (TEDB) web service, situation on 30 October 2026, compared with 1 January 2026)
 
-| Country | Code | Standard | Reduced 1 | Reduced 2 | Super-Reduced (below 5%) | Parking (12% or more) |
-| --- | --- | --- | --- | --- | --- | --- |
-| Austria | AT | 20% | 10% | 13% | 4.9% (foodstuffs, from 1 July 2026) | -- |
-| Belgium | BE | 21% | 6% | 12% | -- | 12% |
-| Bulgaria | BG | 20% | 9% | -- | -- | -- |
-| Croatia | HR | 25% | 5% | 13% | -- | -- |
-| Cyprus | CY | 19% | 5% | 9% | 3% | -- |
-| Czech Republic | CZ | 21% | 12% | -- | -- | -- |
-| Denmark | DK | 25% | -- | -- | -- | -- |
-| Estonia | EE | 24% | 9% | 13% | -- | -- |
-| Finland | FI | 25.5% | 10% | 13.5% | -- | -- |
-| France | FR | 20% | 5.5% | 10% | 2.1% | -- |
-| Germany | DE | 19% | 7% | -- | -- | -- |
-| Greece | GR | 24% | 6% | 13% | 4% (narrow: renovation work for persons with disabilities) | 13% |
-| Hungary | HU | 27% | 5% | 18% | -- | -- |
-| Ireland | IE | 23% | 9% | 13.5% | 4.8% (livestock) | -- |
-| Italy | IT | 22% | 5% | 10% | 4% | -- |
-| Latvia | LV | 21% | 5% | 12% | -- | -- |
-| Lithuania | LT | 21% | 5% | 12% | -- | -- |
-| Luxembourg | LU | 17% | 8% | -- | 3% | 14% |
-| Malta | MT | 18% | 5% | 7% | -- | 12% |
-| Netherlands | NL | 21% | 9% | -- | -- | -- |
-| Poland | PL | 23% | 5% | 8% | -- | -- |
-| Portugal | PT | 23% | 6% | 13% | -- | 13% |
-| Romania | RO | 21% | 11% | -- | -- | -- |
-| Slovakia | SK | 23% | 5% | 19% | -- | -- |
-| Slovenia | SI | 22% | 5% | 9.5% | -- | -- |
-| Spain | ES | 21% | 10% | -- | 4% | -- |
-| Sweden | SE | 25% | 6% | 12% | -- | -- |
+| Country | Code | Standard | Reduced 1 | Reduced 2 | Super-Reduced (below 5%) | Parking (12% or more) | Official source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Austria | AT | 20% | 10% | 13% | 4.9% (foodstuffs, from 1 July 2026) | -- | https://ec.europa.eu/taxation_customs/tedb/ |
+| Belgium | BE | 21% | 6% | 12% | -- | 12% | same |
+| Bulgaria | BG | 20% | 9% | -- | -- | -- | same |
+| Croatia | HR | 25% | 5% | 13% | -- | -- | same |
+| Cyprus | CY | 19% | 5% | 9% | 3% | -- | same |
+| Czech Republic | CZ | 21% | 12% | -- | -- | -- | same |
+| Denmark | DK | 25% | -- | -- | -- | -- | same |
+| Estonia | EE | 24% | 9% | 13% | -- | -- | same |
+| Finland | FI | 25.5% | 10% | 13.5% | -- | -- | same |
+| France | FR | 20% | 5.5% | 10% | 2.1% | -- | same |
+| Germany | DE | 19% | 7% | -- | -- | -- | same |
+| Greece | GR | 24% | 6% | 13% | 4% (narrow: renovation work for persons with disabilities) | 13% | same |
+| Hungary | HU | 27% | 5% | 18% | -- | -- | same |
+| Ireland | IE | 23% | 9% | 13.5% | 4.8% (livestock) | -- | same |
+| Italy | IT | 22% | 5% | 10% | 4% | -- | same |
+| Latvia | LV | 21% | 5% | 12% | -- | -- | same |
+| Lithuania | LT | 21% | 5% | 12% | -- | -- | same |
+| Luxembourg | LU | 17% | 8% | -- | 3% | 14% | same |
+| Malta | MT | 18% | 5% | 7% | -- | 12% | same |
+| Netherlands | NL | 21% | 9% | -- | -- | -- | same |
+| Poland | PL | 23% | 5% | 8% | -- | -- | same |
+| Portugal | PT | 23% | 6% | 13% | -- | 13% | same |
+| Romania | RO | 21% | 11% | -- | -- | -- | same |
+| Slovakia | SK | 23% | 5% | 19% | -- | -- | same |
+| Slovenia | SI | 22% | 5% | 9.5% | -- | -- | same |
+| Spain | ES | 21% | 10% | -- | 4% | -- | same |
+| Sweden | SE | 25% | 6% | 12% | -- | -- | same |
 
 **Zero rates.** Every member state exempts intra-community supplies of goods (Article 138) and exports (Article 146) with the right to deduct input VAT, which works like a 0% rate. Domestic zero rates under Article 98(2) and 105a are national and listed in TEDB per product: check the country skill.
 
@@ -246,23 +257,23 @@ Before proceeding to Step 1, confirm:
 
 **Goods**
 
-| Scenario | Place of Supply | Article |
-| --- | --- | --- |
-| Goods not dispatched/transported | Where goods are located at time of supply | Article 31 |
-| Goods dispatched/transported by or for the supplier or customer | Where dispatch/transport begins | Article 32 |
-| Intra-community acquisition | Where transport ends | Article 40 |
-| Intra-community distance sales (B2C) | Where transport ends (customer's member state), unless the EUR 10,000 rule in Article 59c applies | Articles 33(a), 59c |
-| Distance sales of imported goods (B2C) | Where transport ends; or the member state of import if declared under IOSS | Article 33(b), (c) |
-| Chain transactions | Transport ascribed to one supply only | Article 36a |
+| Scenario | Place of Supply | Article | Official source |
+| --- | --- | --- | --- |
+| Goods not dispatched/transported | Where goods are located at time of supply | Article 31 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 |
+| Goods dispatched/transported by or for the supplier or customer | Where dispatch/transport begins | Article 32 | same |
+| Intra-community acquisition | Where transport ends | Article 40 | same |
+| Intra-community distance sales (B2C) | Where transport ends (customer's member state), unless the EUR 10,000 rule in Article 59c applies | Articles 33(a), 59c | same |
+| Distance sales of imported goods (B2C) | Where transport ends; or the member state of import if declared under IOSS | Article 33(b), (c) | same |
+| Chain transactions | Transport ascribed to one supply only | Article 36a | same |
 
 ### 5.2 Services -- General Rules
 
 **Services -- General Rules**
 
-| Scenario | Place of Supply | Article |
-| --- | --- | --- |
-| B2B services (general rule) | Where customer is established | Article 44 |
-| B2C services (general rule) | Where supplier is established | Article 45 |
+| Scenario | Place of Supply | Article | Official source |
+| --- | --- | --- | --- |
+| B2B services (general rule) | Where customer is established | Article 44 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 |
+| B2C services (general rule) | Where supplier is established | Article 45 | same |
 
 ### 5.3 Services -- Exceptions to Articles 44 and 45 [T2]
 
@@ -270,20 +281,20 @@ These services are taxed where performed or where the customer lives, not under 
 
 **Services -- Exceptions**
 
-| Service Type | Place of Supply | Directive Article |
-| --- | --- | --- |
-| Services related to immovable property (including hotel accommodation, estate agents, architects) | Where property is located | Article 47 |
-| Passenger transport | Where the transport takes place, in proportion to distances covered | Article 48 |
-| B2C transport of goods (not intra-community) | Where the transport takes place, by distance | Article 49 |
-| B2C intra-community transport of goods | Place of departure | Article 50 |
-| Admission to cultural, sports, educational and similar events (B2B) | Where event takes place; not if attendance is virtual | Article 53 |
-| Cultural, sports, educational and similar activities (B2C) | Where they take place; if streamed or virtual, where the customer lives (from 1 January 2025) | Article 54(1) |
-| B2C ancillary transport services and work on movable goods | Where physically carried out | Article 54(2) |
-| Restaurant / catering services | Where physically carried out | Article 55 |
-| Catering on board ships, aircraft, trains in the EU | Point of departure | Article 57 |
-| Short-term hire of transport (up to 30 days; vessels up to 90 days) | Where vehicle put at disposal | Article 56(1), (3) |
-| Long-term hire of transport (B2C) | Where the customer lives | Article 56(2) |
-| Telecoms, broadcasting and electronically supplied services (B2C) | Where the customer lives | Article 58 |
+| Service Type | Place of Supply | Directive Article | Official source |
+| --- | --- | --- | --- |
+| Services related to immovable property (including hotel accommodation, estate agents, architects) | Where property is located | Article 47 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 |
+| Passenger transport | Where the transport takes place, in proportion to distances covered | Article 48 | same |
+| B2C transport of goods (not intra-community) | Where the transport takes place, by distance | Article 49 | same |
+| B2C intra-community transport of goods | Place of departure | Article 50 | same |
+| Admission to cultural, sports, educational and similar events (B2B) | Where event takes place; not if attendance is virtual | Article 53 | same |
+| Cultural, sports, educational and similar activities (B2C) | Where they take place; if streamed or virtual, where the customer lives (from 1 January 2025) | Article 54(1) | same |
+| B2C ancillary transport services and work on movable goods | Where physically carried out | Article 54(2) | same |
+| Restaurant / catering services | Where physically carried out | Article 55 | same |
+| Catering on board ships, aircraft, trains in the EU | Point of departure | Article 57 | same |
+| Short-term hire of transport (up to 30 days; vessels up to 90 days) | Where vehicle put at disposal | Article 56(1), (3) | same |
+| Long-term hire of transport (B2C) | Where the customer lives | Article 56(2) | same |
+| Telecoms, broadcasting and electronically supplied services (B2C) | Where the customer lives | Article 58 | same |
 
 [T2] For any of these exception categories, flag for reviewer to confirm correct place of supply treatment.
 
@@ -342,18 +353,57 @@ Required for all exempt intra-community supplies of goods, B2B reverse-charge se
 
 None of the ViDA changes below, other than the 2025 e-invoicing options, applies in tax year 2026. Use this to plan.
 
-| Applies from | What changes | Source |
-| --- | --- | --- |
-| 14 April 2025 | Member states may require domestic e-invoices without EU authorisation, and without the buyer's consent | Directive 2025/516, Article 1(2), (3) and Article 6(1) |
-| 1 January 2027 | Cash accounting rules reworded (Article 66); the EUR 10,000 Article 59c threshold counts only goods sent from the supplier's own member state; the non-Union OSS can be used by a non-EU supplier of B2C services that is also VAT-registered in a member state; OSS covers B2C supplies of gas, electricity, heat and cooling by non-established suppliers until 30 June 2028 (Article 369aa) | Directive 2025/516, Article 2 and Article 6(2) |
-| 1 July 2028 | Platforms deemed suppliers of short-term accommodation rental (up to 30 nights) and road passenger transport (member states may delay to 1 January 2030); mandatory reverse charge for non-established suppliers where the customer is VAT-identified (new Article 194); OSS extended to domestic B2C supplies of goods by non-established suppliers and to energy supplies (new Article 369b), and a new OSS for transfers of own goods; invoice deadline extended to Article 194 supplies; no new call-off stock movements after 30 June 2028 | Directive 2025/516, Article 3 and Article 6(3) (call-off stock: Article 2); Implementing Regulation 2025/518 |
-| 1 July 2028 | Supplier or deemed supplier, not the customer, liable for import VAT on distance sales of imported goods up to EUR 150 not declared under IOSS; a supplier established in a third country with no mutual-assistance agreement must appoint a tax representative unless the import is exempt under IOSS | Directive 2025/1539, Articles 1 and 2 (new Article 201) |
-| 1 July 2029 | Call-off stock register and call-off recapitulative statement removed (Article 17a ends 30 June 2029) | Directive 2025/516, Article 4 and Article 2 |
-| 1 July 2030 | Electronic invoices in the European standard (EN 16931) become the default; intra-EU B2B invoices within 10 days of the chargeable event; digital reporting of each intra-EU B2B transaction replaces the recapitulative statement (supplier reports when the invoice is issued, buyer within 5 days of receipt); recipient's consent no longer needed for standard e-invoices | Directive 2025/516, Article 5 and Article 6(5) |
-| 1 July 2032 | Last stage of the administrative cooperation changes | Regulation 2025/517, Article 6 |
-| 1 January 2035 | Member states that had a domestic real-time reporting system before 1 January 2024 must align it with the EU standard | Directive 2025/516, Article 6(5), second subparagraph |
+| Applies from | What changes | Source | Official source |
+| --- | --- | --- | --- |
+| 14 April 2025 | Member states may require domestic e-invoices without EU authorisation, and without the buyer's consent | Directive 2025/516, Article 1(2), (3) and Article 6(1) | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 |
+| 1 January 2027 | Cash accounting rules reworded (Article 66); the EUR 10,000 Article 59c threshold counts only goods sent from the supplier's own member state; the non-Union OSS can be used by a non-EU supplier of B2C services that is also VAT-registered in a member state; OSS covers B2C supplies of gas, electricity, heat and cooling by non-established suppliers until 30 June 2028 (Article 369aa) | Directive 2025/516, Article 2 and Article 6(2) | same |
+| 1 July 2028 | Platforms deemed suppliers of short-term accommodation rental (up to 30 nights) and road passenger transport (member states may delay to 1 January 2030); mandatory reverse charge for non-established suppliers where the customer is VAT-identified (new Article 194); OSS extended to domestic B2C supplies of goods by non-established suppliers and to energy supplies (new Article 369b), and a new OSS for transfers of own goods; invoice deadline extended to Article 194 supplies; no new call-off stock movements after 30 June 2028 | Directive 2025/516, Article 3 and Article 6(3) (call-off stock: Article 2); Implementing Regulation 2025/518 | same |
+| 1 July 2028 | Supplier or deemed supplier, not the customer, liable for import VAT on distance sales of imported goods up to EUR 150 not declared under IOSS; a supplier established in a third country with no mutual-assistance agreement must appoint a tax representative unless the import is exempt under IOSS | Directive 2025/1539, Articles 1 and 2 (new Article 201) | same |
+| 1 July 2029 | Call-off stock register and call-off recapitulative statement removed (Article 17a ends 30 June 2029) | Directive 2025/516, Article 4 and Article 2 | same |
+| 1 July 2030 | Electronic invoices in the European standard (EN 16931) become the default; intra-EU B2B invoices within 10 days of the chargeable event; digital reporting of each intra-EU B2B transaction replaces the recapitulative statement (supplier reports when the invoice is issued, buyer within 5 days of receipt); recipient's consent no longer needed for standard e-invoices | Directive 2025/516, Article 5 and Article 6(5) | same |
+| 1 July 2032 | Last stage of the administrative cooperation changes | Regulation 2025/517, Article 6 | same |
+| 1 January 2035 | Member states that had a domestic real-time reporting system before 1 January 2024 must align it with the EU standard | Directive 2025/516, Article 6(5), second subparagraph | same |
 
-## PROHIBITIONS
+## Worked cases
+
+### Case 1: Intra-community acquisition
+
+A German business buys goods of EUR 10,000 from a French supplier, with a valid VAT number and transport to Germany. The supplier invoices at 0% under Article 138. The buyer self-assesses at the German 19% rate and deducts the same amount if the goods serve taxed supplies.
+
+```oa-check
+name: Acquisition of EUR 10,000 at 19%, full deduction
+inputs:
+  net: 10000
+steps:
+  - output_vat: net * 0.19
+  - input_vat: output_vat
+  - net_payable: output_vat - input_vat
+expected:
+  output_vat: 1900.00
+  net_payable: 0.00
+```
+
+### Case 2: Should the seller charge home or destination VAT
+
+An Irish seller, established only in Ireland, makes EUR 12,000 of B2C distance sales of goods into Germany. That exceeds EUR 10,000 (Article 59c), so sales from the crossing onwards bear German 19%, not Irish 23%, declared through OSS or a German registration. On a further EUR 1,000 sale the VAT changes as below.
+
+```oa-check
+name: VAT on a further EUR 1,000 sale, home against destination rate
+inputs:
+  sale: 1000
+  total: 12000
+steps:
+  - over_threshold: max(total - 10000, 0)
+  - home_vat: sale * 0.23
+  - destination_vat: sale * 0.19
+  - difference: home_vat - destination_vat
+expected:
+  over_threshold: 2000.00
+  destination_vat: 190.00
+  difference: 40.00
+```
+
+## When to refuse or refer
 
 - **Prohibitions**: - NEVER zero-rate an intra-community supply without a valid customer VAT number verified on VIES and without including it on the recapitulative statement - NEVER zero-rate goods without proof that they left the member state - NEVER apply reverse charge to services consumed locally in another EU country (hotel, restaurant, taxi) - NEVER apply reverse charge to physical goods imports -- import VAT is handled via Customs (unless a national postponed accounting scheme applies) - NEVER use this skill alone -- always load the country skill alongside it - NEVER override the country skill with this base skill -- the country skill takes precedence on all national specifics - NEVER present EU-wide rules as applying without exception -- national derogations exist and are significant - NEVER apply ViDA rules that start after 2026 to 2026 transactions
 
@@ -361,49 +411,49 @@ None of the ViDA changes below, other than the 2025 e-invoicing options, applies
 
 **Edge Case Registry**
 
-| # | Scenario | Correct Treatment | Common Mistake |
-| --- | --- | --- | --- |
-| 1 | EU business buys SaaS from US company | Reverse charge: self-assess output VAT + claim as input VAT | Treating as out-of-scope (no VAT entry) |
-| 2 | Employee hotel stay in another EU country | Local VAT charged by hotel; NOT reverse charge | Applying reverse charge on the VAT return |
-| 3 | Physical goods imported from China | Import VAT via Customs; recover on VAT return | Applying reverse charge instead of import VAT |
-| 4 | B2B sale of goods to EU customer without valid VAT number | Charge local VAT at the domestic rate for those goods; do NOT zero-rate | Zero-rating without VIES validation |
-| 5 | B2C distance sales under EUR 10,000, supplier established in one member state | Apply supplier's own country VAT rate | Applying customer's country rate below threshold |
-| 6 | B2C distance sales above EUR 10,000 | Apply customer's country VAT rate (OSS or local registration) | Continuing to apply supplier's country rate |
-| 7 | Chain transaction (A sells to B, B sells to C, goods go direct A to C) | Only one leg qualifies as intra-community supply (Article 36a: by default the supply to the intermediary who transports); other is domestic | Treating both legs as intra-community |
-| 8 | Business attends a conference online, organiser in another member state | General B2B rule (Article 44): reverse charge; Article 53 does not apply to virtual attendance | Paying the organiser's local VAT |
-| 9 | Business established in two member states sells online B2C below EUR 10,000 | The threshold is not available (Article 59c(1)(a)); destination VAT from the first sale | Applying the home rate |
-| 10 | Small business uses the SME exemption in another member state | Needs Union turnover up to EUR 100,000, prior notification and an "EX" number | Assuming the home exemption covers all of the EU |
+| # | Scenario | Correct Treatment | Common Mistake | Official source |
+| --- | --- | --- | --- | --- |
+| 1 | EU business buys SaaS from US company | Reverse charge: self-assess output VAT + claim as input VAT | Treating as out-of-scope (no VAT entry) | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 |
+| 2 | Employee hotel stay in another EU country | Local VAT charged by hotel; NOT reverse charge | Applying reverse charge on the VAT return | same |
+| 3 | Physical goods imported from China | Import VAT via Customs; recover on VAT return | Applying reverse charge instead of import VAT | same |
+| 4 | B2B sale of goods to EU customer without valid VAT number | Charge local VAT at the domestic rate for those goods; do NOT zero-rate | Zero-rating without VIES validation | same |
+| 5 | B2C distance sales under EUR 10,000, supplier established in one member state | Apply supplier's own country VAT rate | Applying customer's country rate below threshold | same |
+| 6 | B2C distance sales above EUR 10,000 | Apply customer's country VAT rate (OSS or local registration) | Continuing to apply supplier's country rate | same |
+| 7 | Chain transaction (A sells to B, B sells to C, goods go direct A to C) | Only one leg qualifies as intra-community supply (Article 36a: by default the supply to the intermediary who transports); other is domestic | Treating both legs as intra-community | same |
+| 8 | Business attends a conference online, organiser in another member state | General B2B rule (Article 44): reverse charge; Article 53 does not apply to virtual attendance | Paying the organiser's local VAT | same |
+| 9 | Business established in two member states sells online B2C below EUR 10,000 | The threshold is not available (Article 59c(1)(a)); destination VAT from the first sale | Applying the home rate | same |
+| 10 | Small business uses the SME exemption in another member state | Needs Union turnover up to EUR 100,000, prior notification and an "EX" number | Assuming the home exemption covers all of the EU | same |
 
 ## Test Suite
 
 **Test Suite**
 
-| # | Input | Expected Output | Step |
-| --- | --- | --- | --- |
-| T1 | Irish VAT-registered business buys consulting from German VAT-registered firm | Reverse charge: Irish business self-assesses Irish VAT (23%) as output and input | Step 4.1 |
-| T2 | French business buys standard-rated goods from German business, goods shipped DE to FR | ICA in France; French business self-assesses French VAT (20%) as output and input | Step 3.2 |
-| T3 | Malta business buys AWS subscription (US supplier) | Reverse charge: Malta business self-assesses 18% output + input VAT | Step 4.4 |
-| T4 | Spanish business employee stays in Amsterdam hotel | Dutch VAT charged by hotel at the 9% accommodation rate (TEDB); no reverse charge; expense on books unless reclaimed under Directive 2008/9/EC | Step 3.6 |
-| T5 | Polish e-commerce seller, established only in Poland, EUR 15,000 B2C sales of goods shipped to other EU countries in 2026 | Threshold exceeded: destination rates from the sale that crossed EUR 10,000; use OSS or register in each destination country | Step 6.1 |
-| T6 | Slovak business supplies standard-rated goods to Czech business, invalid VAT number on VIES | Do NOT zero-rate; charge Slovak standard rate (23%) | Step 1.2 |
-| T7 | Romanian business, standard rate question | 21% standard rate (increased from 19% on 1 August 2025) | Step 2.2 |
-| T8 | Swedish grocer, sale of food on 15 May 2026 | 6% (food moved from 12% to 6% on 1 April 2026) | Step 2.2 |
-| T9 | German business sells goods to a French customer and issues the invoice on 20 November 2026 for goods shipped on 3 October 2026 | Late: the invoice was due by 15 November 2026 (Article 222); VAT on the supply became chargeable on 15 November (Article 67) | Step 1.3 |
+| # | Input | Expected Output | Step | Official source |
+| --- | --- | --- | --- | --- |
+| T1 | Irish VAT-registered business buys consulting from German VAT-registered firm | Reverse charge: Irish business self-assesses Irish VAT (23%) as output and input | Step 4.1 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 |
+| T2 | French business buys standard-rated goods from German business, goods shipped DE to FR | ICA in France; French business self-assesses French VAT (20%) as output and input | Step 3.2 | same |
+| T3 | Malta business buys AWS subscription (US supplier) | Reverse charge: Malta business self-assesses 18% output + input VAT | Step 4.4 | same |
+| T4 | Spanish business employee stays in Amsterdam hotel | Dutch VAT charged by hotel at the 9% accommodation rate (TEDB); no reverse charge; expense on books unless reclaimed under Directive 2008/9/EC | Step 3.6 | same |
+| T5 | Polish e-commerce seller, established only in Poland, EUR 15,000 B2C sales of goods shipped to other EU countries in 2026 | Threshold exceeded: destination rates from the sale that crossed EUR 10,000; use OSS or register in each destination country | Step 6.1 | same |
+| T6 | Slovak business supplies standard-rated goods to Czech business, invalid VAT number on VIES | Do NOT zero-rate; charge Slovak standard rate (23%) | Step 1.2 | same |
+| T7 | Romanian business, standard rate question | 21% standard rate (increased from 19% on 1 August 2025) | Step 2.2 | same |
+| T8 | Swedish grocer, sale of food on 15 May 2026 | 6% (food moved from 12% to 6% on 1 April 2026) | Step 2.2 | same |
+| T9 | German business sells goods to a French customer and issues the invoice on 20 November 2026 for goods shipped on 3 October 2026 | Late: the invoice was due by 15 November 2026 (Article 222); VAT on the supply became chargeable on 15 November (Article 67) | Step 1.3 | same |
 
 ## Contribution Notes
 
 **Contribution Notes**
 
-| Area | Status |
-| --- | --- |
-| Core Directive rules | T1 -- sourced from the EUR-Lex consolidated text of 14 April 2025 |
-| 2026 rate table | T1 -- read from the Commission TEDB web service on 30 October 2026 (situation on 1 January and 30 October 2026); Ireland 4.8% from Revenue |
-| OSS / IOSS detail | T2 -- core return periods covered; detailed country implementation in country skills |
-| ViDA timetable | T1 -- from Directive 2025/516 Article 6 and the amending regulations |
-| Intrastat thresholds | T3 -- not covered; varies by country; add to country skills |
-| SAF-T / e-invoicing mandates | T3 -- national mandates not covered; varies significantly by country |
-| VAT groups | T3 -- not covered; varies by country (Article 11 option) |
-| Capital goods adjustment period | T3 -- varies by country; covered in country skills |
+| Area | Status | Official source |
+| --- | --- | --- |
+| Core Directive rules | T1 -- sourced from the EUR-Lex consolidated text of 14 April 2025 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 |
+| 2026 rate table | T1 -- read from the Commission TEDB web service on 30 October 2026 (situation on 1 January and 30 October 2026); Ireland 4.8% from Revenue | same |
+| OSS / IOSS detail | T2 -- core return periods covered; detailed country implementation in country skills | same |
+| ViDA timetable | T1 -- from Directive 2025/516 Article 6 and the amending regulations | same |
+| Intrastat thresholds | T3 -- not covered; varies by country; add to country skills | same |
+| SAF-T / e-invoicing mandates | T3 -- national mandates not covered; varies significantly by country | same |
+| VAT groups | T3 -- not covered; varies by country (Article 11 option) | same |
+| Capital goods adjustment period | T3 -- varies by country; covered in country skills | same |
 
 **Practitioner review required for:** rate table accuracy (verify against EC TEDB and the country skill), any T2 rules before advising clients.
 

@@ -3,7 +3,8 @@ name: ie-formation
 description: "Use this skill whenever asked about forming, incorporating, or registering a business in Ireland. Trigger on phrases like \"Ireland company formation\", \"CRO registration\", \"LTD Ireland\", \"DAC Ireland\", \"sole trader Ireland\", \"Form A1 Ireland\", \"PPS number business\", \"incorporate Ireland\", \"CORE portal\", \"register business Ireland\", \"RBO Ireland\", \"TR1 Ireland\", \"TR2 Ireland\", \"Companies Act 2014\", \"CLG Ireland\", \"PLC Ireland\", or any question about choosing or registering an Irish entity. Covers entity comparison (Sole Trader, Partnership, LP, LLP, LTD / CLS, DAC, CLG, PLC), CRO online portal (CORE) registration steps, Revenue TR1 / TR2 tax registration, sector-specific licensing (Central Bank, CCPC, DPC), RBO beneficial ownership filing, PPS number requirements for directors and shareholders, and tax treatment by entity type including the 12.5% trading CT rate and PRSI Class S. Out of scope: immigration / employment permits for non-EEA founders, bank account opening procedures (high-level only), full corporate governance and shareholders' agreement drafting, deep sector-specific regulatory licensing beyond signposting, listing on Euronext Dublin / ISEQ, and Irish Collective Asset-management Vehicles (ICAV). ALWAYS read this skill before advising on Irish entity formation."
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-31
+version: 1.0
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -56,16 +57,16 @@ What this skill does not cover, with where to go instead:
 
 ## Choosing the vehicle
 
-| Vehicle | Separate legal person? | Owner's liability | Tax on profits | Main uses |
-| --- | --- | --- | --- | --- |
-| Sole trader | No | Unlimited | Income tax, USC and PRSI on profits, via Form 11 | One owner, low risk, profits mostly drawn |
-| Partnership (Partnership Act 1890) | No | Unlimited, joint and several | Each partner taxed on their share; the partnership registers on TR1 | Two or more people in business together, professional firms |
-| Limited partnership (Limited Partnerships Act 1907) | No | General partner unlimited; limited partners up to their contribution | As a partnership | Mostly investment structures (refer) |
-| LTD: private company limited by shares (Part 2, Companies Act 2014) | Yes | Limited to unpaid share capital | Corporation Tax; owners taxed when paid salary or dividends | The default company for owner-managed businesses |
-| DAC: designated activity company (Part 16) | Yes | Limited (by shares, or by guarantee with a share capital) | Corporation Tax | Where an objects clause is needed: joint ventures, special purpose vehicles, some regulated firms |
-| CLG: company limited by guarantee (Part 18) | Yes | Limited to the guarantee | Corporation Tax unless an exemption (such as charitable status) applies | Non-profits, clubs, charities, owners' management companies |
-| PLC: public limited company (Part 17) | Yes | Limited to unpaid share capital | Corporation Tax | Offering shares to the public, listing |
-| Unlimited company (Part 20) | Yes | Unlimited | Corporation Tax | Specialist uses (refer) |
+| Vehicle | Separate legal person? | Owner's liability | Tax on profits | Main uses | Official source |
+| --- | --- | --- | --- | --- | --- |
+| Sole trader | No | Unlimited | Income tax, USC and PRSI on profits, via Form 11 | One owner, low risk, profits mostly drawn | https://www.revenue.ie/en/starting-a-business/index.aspx |
+| Partnership (Partnership Act 1890) | No | Unlimited, joint and several | Each partner taxed on their share; the partnership registers on TR1 | Two or more people in business together, professional firms | same |
+| Limited partnership (Limited Partnerships Act 1907) | No | General partner unlimited; limited partners up to their contribution | As a partnership | Mostly investment structures (refer) | same |
+| LTD: private company limited by shares (Part 2, Companies Act 2014) | Yes | Limited to unpaid share capital | Corporation Tax; owners taxed when paid salary or dividends | The default company for owner-managed businesses | same |
+| DAC: designated activity company (Part 16) | Yes | Limited (by shares, or by guarantee with a share capital) | Corporation Tax | Where an objects clause is needed: joint ventures, special purpose vehicles, some regulated firms | same |
+| CLG: company limited by guarantee (Part 18) | Yes | Limited to the guarantee | Corporation Tax unless an exemption (such as charitable status) applies | Non-profits, clubs, charities, owners' management companies | same |
+| PLC: public limited company (Part 17) | Yes | Limited to unpaid share capital | Corporation Tax | Offering shares to the public, listing | same |
+| Unlimited company (Part 20) | Yes | Unlimited | Corporation Tax | Specialist uses (refer) | same |
 
 ### Decision rules
 
@@ -138,79 +139,79 @@ A Tax Reference Number is not issued automatically on incorporation. You must re
 
 ### Corporation Tax rates ([Revenue: basis of charge](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx))
 
-| Item | 2026 | Condition |
-| --- | --- | --- |
-| Trading income | 12.5% | Profits of a trade carried on by the company |
-| Non-trading income and excepted trades | 25% | Rental and investment income; income of an "excepted trade" as defined in the Taxes Consolidation Act |
-| Accounting period | at most 12 months | A longer set of accounts is split into two CT periods |
+| Item | 2026 | Condition | Official source |
+| --- | --- | --- | --- |
+| Trading income | 12.5% | Profits of a trade carried on by the company | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx |
+| Non-trading income and excepted trades | 25% | Rental and investment income; income of an "excepted trade" as defined in the Taxes Consolidation Act | same |
+| Accounting period | at most 12 months | A longer set of accounts is split into two CT periods | same |
 
 ### Income tax bands and credits for 2026 ([Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx))
 
-| Item | 2026 | 2025 |
-| --- | --- | --- |
-| Standard rate band, single person without qualifying children | €44,000 @ 20%, balance @ 40% | €44,000 @ 20%, balance @ 40% |
-| Single Person tax credit | €2,000 | €2,000 |
-| Employee (PAYE) tax credit | €2,000 | €2,000 |
-| Earned Income Tax Credit (maximum) | €2,000 | €2,000 |
+| Item | 2026 | 2025 | Official source |
+| --- | --- | --- | --- |
+| Standard rate band, single person without qualifying children | €44,000 @ 20%, balance @ 40% | €44,000 @ 20%, balance @ 40% | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx |
+| Single Person tax credit | €2,000 | €2,000 | same |
+| Employee (PAYE) tax credit | €2,000 | €2,000 | same |
+| Earned Income Tax Credit (maximum) | €2,000 | €2,000 | same |
 
 The Earned Income Credit is for self-employed earned income and for pay earned by proprietary directors, who cannot get the Employee Tax Credit on that pay. It is the lower of €2,000 or 20% of qualifying earned income, and where someone has both kinds of income the two credits together cannot exceed the Employee Tax Credit maximum ([Revenue: Earned Income Credit](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx)).
 
 ### Universal Social Charge for 2026 ([Revenue: USC rates](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx))
 
-| Band | 2026 rate |
-| --- | --- |
-| First €12,012 | 0.5% |
-| Next €16,688 | 2% |
-| Next €41,344 | 3% |
-| Balance | 8% |
+| Band | 2026 rate | Official source |
+| --- | --- | --- |
+| First €12,012 | 0.5% | https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx |
+| Next €16,688 | 2% | same |
+| Next €41,344 | 3% | same |
+| Balance | 8% | same |
 
 A USC surcharge of 3% applies if non-PAYE income is more than €100,000 a year, so self-employed income above that level bears 11% ([Revenue: other rates of USC](https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx)). Reduced USC rates for some people are not covered here.
 
 PRSI: self-employed people pay Class S PRSI and most employees Class A; the class for a director who owns the company depends on the shareholding (**check** with the Department of Social Protection). Rates have been rising each October; take the rate in force (**check**).
 
-### VAT registration thresholds ([Revenue: VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx))
+### VAT registration thresholds ([Revenue: VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx))
 
 Registration is obligatory when annual turnover (calendar year, excluding VAT) exceeds the threshold. Below the threshold a business may elect to register.
 
-| Supplies | Threshold |
-| --- | --- |
-| Services only | €42,500 |
-| Goods at the reduced or standard rate that the business made from zero-rated materials | €42,500 |
-| Goods and services, where 90% or more of turnover is from goods (other than the above) | €85,000 |
-| Goods | €85,000 |
-| Distance sales of goods and cross-border telecoms, broadcasting and electronic services to other EU consumers (EU-wide total; supplier established only in Ireland) | €10,000 |
-| Acquisitions of goods from other EU Member States | €41,000 |
+| Supplies | Threshold | Official source |
+| --- | --- | --- |
+| Services only | €42,500 | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx |
+| Goods at the reduced or standard rate that the business made from zero-rated materials | €42,500 | same |
+| Goods and services, where 90% or more of turnover is from goods (other than the above) | €85,000 | same |
+| Goods | €85,000 | same |
+| Distance sales of goods and cross-border telecoms, broadcasting and electronic services to other EU consumers (EU-wide total; supplier established only in Ireland) | €10,000 | same |
+| Acquisitions of goods from other EU Member States | €41,000 | same |
 
 A business not established in Ireland that supplies taxable goods or services to taxable customers in Ireland must register whatever its turnover, unless it uses the VAT SME Scheme. Occasional disposals of business assets are left out of annual turnover. Details and returns: ie-vat-return.
 
 ### Company law figures (Companies Act 2014)
 
-| Rule | Figure | Section |
-| --- | --- | --- |
-| Bond instead of an EEA-resident director | €25,000 | [s.137](https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html) |
-| PLC authorised minimum share capital | €25,000 | [s.1000](https://www.irishstatutebook.ie/eli/2014/act/38/section/1000/enacted/en/html) |
-| PLC shares paid up at allotment | at least one-quarter of nominal value plus all premium | [s.1026](https://www.irishstatutebook.ie/eli/2014/act/38/section/1026/enacted/en/html) |
-| RBO fine on indictment | up to €500,000 | [S.I. No. 110 of 2019, reg. 28](https://www.irishstatutebook.ie/eli/2019/si/110/made/en/print) |
-| CRO incorporation, business name and late annual return fees | **check** on the CRO site | CRO fee regulations |
+| Rule | Figure | Section | Official source |
+| --- | --- | --- | --- |
+| Bond instead of an EEA-resident director | €25,000 | [s.137](https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html) | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx |
+| PLC authorised minimum share capital | €25,000 | [s.1000](https://www.irishstatutebook.ie/eli/2014/act/38/section/1000/enacted/en/html) | same |
+| PLC shares paid up at allotment | at least one-quarter of nominal value plus all premium | [s.1026](https://www.irishstatutebook.ie/eli/2014/act/38/section/1026/enacted/en/html) | same |
+| RBO fine on indictment | up to €500,000 | [S.I. No. 110 of 2019, reg. 28](https://www.irishstatutebook.ie/eli/2019/si/110/made/en/print) | same |
+| CRO incorporation, business name and late annual return fees | **check** on the CRO site | CRO fee regulations | same |
 
 ## Boundaries and exceptions
 
-| Situation | Rule | What to do |
-| --- | --- | --- |
-| Sole director wants to be secretary too | Not allowed where the company has only one director (s.129(6)) | Appoint a second person as secretary, or a second director who can also be secretary |
-| No director lives in the EEA | [s.137](https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html) applies unless a bond or a s.140 certificate is in force | Bond (€25,000), a s.140 certificate backed by a Revenue statement, or appoint a genuine EEA-resident director. Never a nominee with no real role |
-| UK-resident director only | The UK is not an EEA state | Same as above |
-| Wants an objects clause | An LTD has unlimited capacity (s.38) | Form a DAC |
-| DAC, CLG or PLC with one director | At least two directors required | Appoint a second director |
-| More than 149 members in an LTD or DAC | Registration above the limit is void (s.17(7)) | Leave out employee members when counting; otherwise a PLC or other form |
-| Trading under a name other than the true name | Business name must be registered within one month of adopting it | File RBN1 / RBN1A / RBN1B with the CRO |
-| Company with no Irish-resident directors | Cannot use eRegistration unless through an agent | Agent registers on ROS, or paper TR2 / TR2 (FT) |
-| Company pays only its directors | Must still register as an employer and operate PAYE | Register before the first payment |
-| Turnover exactly at a VAT threshold | Obligation arises only when turnover exceeds the threshold | Monitor the calendar-year total; may elect to register earlier |
-| Non-established business selling to Irish taxable customers | No threshold | Register for VAT from the first supply, unless in the VAT SME Scheme |
-| CLG wanting charity tax exemption | Incorporation does not give charitable status | Register with the Charities Regulator, then apply to Revenue |
-| Incorporated in Ireland but run from abroad | Resident here from incorporation (on or after 1 January 2015) unless a treaty says otherwise | Do not structure around residence; refer if a treaty tie-breaker is relied on |
-| Company formed with no activity in the State | The s.24 declaration must state that a purpose is carrying on an activity in the State | Refer |
+| Situation | Rule | What to do | Official source |
+| --- | --- | --- | --- |
+| Sole director wants to be secretary too | Not allowed where the company has only one director (s.129(6)) | Appoint a second person as secretary, or a second director who can also be secretary | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx |
+| No director lives in the EEA | [s.137](https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html) applies unless a bond or a s.140 certificate is in force | Bond (€25,000), a s.140 certificate backed by a Revenue statement, or appoint a genuine EEA-resident director. Never a nominee with no real role | same |
+| UK-resident director only | The UK is not an EEA state | Same as above | same |
+| Wants an objects clause | An LTD has unlimited capacity (s.38) | Form a DAC | same |
+| DAC, CLG or PLC with one director | At least two directors required | Appoint a second director | same |
+| More than 149 members in an LTD or DAC | Registration above the limit is void (s.17(7)) | Leave out employee members when counting; otherwise a PLC or other form | same |
+| Trading under a name other than the true name | Business name must be registered within one month of adopting it | File RBN1 / RBN1A / RBN1B with the CRO | same |
+| Company with no Irish-resident directors | Cannot use eRegistration unless through an agent | Agent registers on ROS, or paper TR2 / TR2 (FT) | same |
+| Company pays only its directors | Must still register as an employer and operate PAYE | Register before the first payment | same |
+| Turnover exactly at a VAT threshold | Obligation arises only when turnover exceeds the threshold | Monitor the calendar-year total; may elect to register earlier | same |
+| Non-established business selling to Irish taxable customers | No threshold | Register for VAT from the first supply, unless in the VAT SME Scheme | same |
+| CLG wanting charity tax exemption | Incorporation does not give charitable status | Register with the Charities Regulator, then apply to Revenue | same |
+| Incorporated in Ireland but run from abroad | Resident here from incorporation (on or after 1 January 2015) unless a treaty says otherwise | Do not structure around residence; refer if a treaty tie-breaker is relied on | same |
+| Company formed with no activity in the State | The s.24 declaration must state that a purpose is carrying on an activity in the State | Refer | same |
 
 ## Worked cases
 
@@ -232,7 +233,7 @@ USC 2026 ([Revenue: USC rates](https://www.revenue.ie/en/jobs-and-pensions/usc/s
 - Balance €24,956 (€95,000 less €70,044) at 8% = €1,996.48
 - Total USC **€3,630.62**. Her non-PAYE income is not more than €100,000, so no 3% surcharge.
 
-Class S PRSI is due on top at the rate in force (**check**). VAT: her services turnover will exceed €42,500, so she must register for VAT ([Revenue: VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx)). Registration: eRegistration on ROS for Income Tax and VAT; a business name only if she trades under a name other than her own.
+Class S PRSI is due on top at the rate in force (**check**). VAT: her services turnover will exceed €42,500, so she must register for VAT ([Revenue: VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx)). Registration: eRegistration on ROS for Income Tax and VAT; a business name only if she trades under a name other than her own.
 
 ### Case 2: Aoife through an LTD, 2026 ([Revenue: basis of charge](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx))
 
@@ -259,7 +260,35 @@ Two US-resident founders want an Irish LTD to sell software into the EU. Neither
 
 ### Case 5: services business under the VAT threshold
 
-A new consultancy expects services turnover of €40,000 in 2026. Registration is not obligatory because turnover does not exceed €42,500, but it may elect to register (for example to recover VAT on start-up costs, or because its customers are VAT-registered businesses). Once turnover exceeds €42,500 it must register ([Revenue: VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx)). The timing and mechanics are in ie-vat-return.
+A new consultancy expects services turnover of €40,000 in 2026. Registration is not obligatory because turnover does not exceed €42,500, but it may elect to register (for example to recover VAT on start-up costs, or because its customers are VAT-registered businesses). Once turnover exceeds €42,500 it must register ([Revenue: VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx)). The timing and mechanics are in ie-vat-return.
+
+### Recomputed checks for the first two cases
+
+```oa-check
+name: Aoife, sole trader, profit EUR 95,000 (2026)
+inputs:
+  profit: 95000
+steps:
+  - gross: min(profit, 44000) * 0.20 + (profit - 44000) * 0.40
+  - income_tax: gross - 4000
+  - usc: 12012 * 0.005 + 16688 * 0.02 + 41344 * 0.03 + (profit - 70044) * 0.08
+expected:
+  income_tax: 25200.00
+  usc: 3630.62
+```
+
+```oa-check
+name: Same business through a company, taxable profit EUR 35,000, salary EUR 60,000
+inputs:
+  profit: 35000
+  salary: 60000
+steps:
+  - corporation_tax: profit * 0.125
+  - salary_gross_tax: 44000 * 0.20 + (salary - 44000) * 0.40
+expected:
+  corporation_tax: 4375.00
+  salary_gross_tax: 15200.00
+```
 
 ## When to refuse or refer
 
@@ -309,6 +338,51 @@ A new consultancy expects services turnover of €40,000 in 2026. Registration i
 - [ ] VAT threshold tested on the correct category; non-established rule considered.
 - [ ] First annual return date, CT1 date, preliminary tax, payroll and VAT dates in the diary.
 - [ ] Companion Skills consulted where needed: ie-corporation-tax and ie-vat-return.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Registration of Business Names Act 1963 | https://www.irishstatutebook.ie/eli/1963/act/30/enacted/en/print | 2026-10-31 |
+| beneficial ownership regulations (S.I. No. 110 of 2019) | https://www.irishstatutebook.ie/eli/2019/si/110/made/en/print | 2026-10-31 |
+| revenue.ie | https://www.revenue.ie/en/starting-a-business/index.aspx | 2026-10-31 |
+| Revenue: basis of charge | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx | 2026-10-31 |
+| s.17 | https://www.irishstatutebook.ie/eli/2014/act/38/section/17/enacted/en/html | 2026-10-31 |
+| s.38 | https://www.irishstatutebook.ie/eli/2014/act/38/section/38/enacted/en/html | 2026-10-31 |
+| s.128 | https://www.irishstatutebook.ie/eli/2014/act/38/section/128/enacted/en/html | 2026-10-31 |
+| s.985 | https://www.irishstatutebook.ie/eli/2014/act/38/section/985/enacted/en/html | 2026-10-31 |
+| s.1194 | https://www.irishstatutebook.ie/eli/2014/act/38/section/1194/enacted/en/html | 2026-10-31 |
+| s.1088 | https://www.irishstatutebook.ie/eli/2014/act/38/section/1088/enacted/en/html | 2026-10-31 |
+| s.129 | https://www.irishstatutebook.ie/eli/2014/act/38/section/129/enacted/en/html | 2026-10-31 |
+| s.1112 | https://www.irishstatutebook.ie/eli/2014/act/38/section/1112/enacted/en/html | 2026-10-31 |
+| s.19 | https://www.irishstatutebook.ie/eli/2014/act/38/section/19/enacted/en/html | 2026-10-31 |
+| s.21 | https://www.irishstatutebook.ie/eli/2014/act/38/section/21/enacted/en/html | 2026-10-31 |
+| s.24 | https://www.irishstatutebook.ie/eli/2014/act/38/section/24/enacted/en/html | 2026-10-31 |
+| s.175 | https://www.irishstatutebook.ie/eli/2014/act/38/section/175/enacted/en/html | 2026-10-31 |
+| s.1000 | https://www.irishstatutebook.ie/eli/2014/act/38/section/1000/enacted/en/html | 2026-10-31 |
+| s.1026 | https://www.irishstatutebook.ie/eli/2014/act/38/section/1026/enacted/en/html | 2026-10-31 |
+| s.137 | https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html | 2026-10-31 |
+| s.140 | https://www.irishstatutebook.ie/eli/2014/act/38/section/140/enacted/en/html | 2026-10-31 |
+| Revenue: registering for tax | https://www.revenue.ie/en/starting-a-business/registering-for-tax/index.aspx | 2026-10-31 |
+| Revenue | https://www.revenue.ie/en/starting-a-business/registering-for-tax/how-to-register-for-tax-as-a-sole-trader.aspx | 2026-10-31 |
+| Revenue | https://www.revenue.ie/en/starting-a-business/registering-for-tax/how-to-register-for-tax-as-a-trust-or-partnership.aspx | 2026-10-31 |
+| Revenue | https://www.revenue.ie/en/starting-a-business/registering-for-tax/how-to-register-for-tax-as-a-new-company.aspx | 2026-10-31 |
+| Revenue: eRegistration | https://www.revenue.ie/en/starting-a-business/registering-for-tax/eregistration.aspx | 2026-10-31 |
+| Revenue: registration of employers | https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/registration-of-employers-for-paye-purposes/index.aspx | 2026-10-31 |
+| Revenue: company residency rules | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/company-residency-rules.aspx | 2026-10-31 |
+| Revenue: tax rates, bands and reliefs | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx | 2026-10-31 |
+| Revenue: Earned Income Credit | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx | 2026-10-31 |
+| Revenue: USC rates | https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx | 2026-10-31 |
+| Revenue: other rates of USC | https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx | 2026-10-31 |
+| Revenue: VAT thresholds | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx | 2026-10-31 |
+| Revenue: surcharge on undistributed income | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/close-companies/surcharge.aspx | 2026-10-31 |
+| s.345 | https://www.irishstatutebook.ie/eli/2014/act/38/section/345/enacted/en/html | 2026-10-31 |
+| s.343 | https://www.irishstatutebook.ie/eli/2014/act/38/section/343/enacted/en/html | 2026-10-31 |
+| s.349 | https://www.irishstatutebook.ie/eli/2014/act/38/section/349/enacted/en/html | 2026-10-31 |
+| Revenue: payment and filing | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx | 2026-10-31 |
+| Revenue: filing your tax return | https://www.revenue.ie/en/self-assessment-and-self-employment/filing-your-tax-return/index.aspx | 2026-10-31 |
+
+Not yet confirmed: CRO and RBO filing fees and processing times, which this skill still sends the reader to check on those sites; the current Class S PRSI rate, which belongs to the PRSI skill.
 
 <!-- openaccountants-cta-block -->
 
