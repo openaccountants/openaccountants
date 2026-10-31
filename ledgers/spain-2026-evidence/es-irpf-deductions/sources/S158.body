@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: En particular, análisis de los gastos del artículo 19.2.f) de la Ley del IRPF</title><meta name="ObjectId" content="e000c89071839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='3c18add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100.html'>Manual práctico de Renta 2025. Parte 1.</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='ac7ec89071839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c03-rendimientos-trabajo.html'>C03 Rendimientos trabajo</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='e59fc89071839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c03-rendimientos-trabajo/rendimiento-neto-trabajo-integrar-base-imponible.html'>Rendimiento neto del trabajo a integrar en la base imponible</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='c6ffc89071839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c03-rendimientos-trabajo/rendimiento-neto-trabajo-integrar-base-imponible/fase-2-determinacion-rendimiento-neto.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Fase 2ª: Determinación del rendimiento neto</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100.html" class="d-none">Manual práctico de Renta 2025. Parte 1.</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">En particular, análisis de los gastos del artículo 19.2.f) de la Ley del IRPF</h1><p><strong>Normativa: &nbsp;Art&iacute;culo 19.2.f) Ley&nbsp;<abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> </strong></p>
+<p class="border border-primary rounded-sm border-size-1 p-3"><em><span class="verde"><strong>Atenci&oacute;n:</strong></span> los gastos deducibles del art&iacute;culo 19.2.f) de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> se aplican por unidad familiar en el supuesto de tributaci&oacute;n conjunta.</em></p>
+<p>Bajo este concepto se incluyen las siguientes cantidades deducibles como gastos:</p>
+<h2>a. Por obtenci&oacute;n de rendimientos</h2>
+<p><strong>2.000 euros anuales</strong>, con car&aacute;cter general, para todos los contribuyentes que obtengan rendimientos de trabajo.</p>
+<h2>b. Incremento por movilidad geogr&aacute;fica</h2>
+<ul class="page-break-after--always_pdf">
+<li>
+<p>La cuant&iacute;a anterior <strong>se incrementar&aacute; 2.000 euros anuales adicionales</strong> cuando se trate de contribuyentes en quienes concurran los requisitos que a continuaci&oacute;n se enumeran:</p>
+<ol>
+<li>
+<p>Que se trate de desempleados inscritos en la oficina de empleo.</p>
+</li>
+<li>
+<p>Que acepten un puesto de trabajo situado en un municipio distinto al de su residencia habitual.</p>
+</li>
+<li>
+<p>Que el nuevo puesto de trabajo exija el traslado de su residencia habitual a un nuevo municipio.</p>
+</li>
+</ol>
+<div class=" border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p class="letrita">T&eacute;ngase en cuenta que, <span>con car&aacute;cter general, la aplicaci&oacute;n del incremento por movilidad geogr&aacute;fica queda condicionada a que efectivamente se haya producido el cambio de residencia del contribuyente a un nuevo municipio, distinto al de su residencia habitual, sin que este municipio tenga que ser, necesariamente, aquel en que est&eacute; situado el puesto de trabajo que se acepta. Eso s&iacute;, el nuevo puesto de trabajo debe exigir el cambio de residencia.</span></p>
+<p class="letrita ">Se requiere la existencia de una relaci&oacute;n de causalidad entre el cambio de residencia y la aceptaci&oacute;n del puesto de trabajo. A estos efectos, el transcurso de un per&iacute;odo de tiempo prolongado entre ambos momentos puede ser un indicio, entre otros factores a considerar, de que no existe dicha relaci&oacute;n de causalidad.</p>
+<p class="letrita">El art&iacute;culo 19.2.f) de la Ley del IRPF no contiene, para la aplicaci&oacute;n del incremento por movilidad geogr&aacute;fica, ning&uacute;n requisito de car&aacute;cter temporal, ni en cuanto a la permanencia en el puesto de trabajo que se acepta ni en cuanto a la permanencia en el municipio al que traslada su residencia con motivo de la aceptaci&oacute;n del puesto de trabajo. <span>Tampoco limita la norma su aplicaci&oacute;n a la duraci&oacute;n del contrato de trabajo.</span></p>
+<p class="letrita">En el caso del incremento del gasto deducible por movilidad geogr&aacute;fica, al aplicarse el mismo en el ejercicio en el que se produzca el cambio de residencia y en el siguiente, el l&iacute;mite debe calcularse individualmente en cada uno de los dos ejercicios y vendr&aacute; determinado por el rendimiento &iacute;ntegro del trabajo que ha generado dichos gastos en cada uno de ellos, <span>una vez aplicadas, en su caso</span>, la reducci&oacute;n del 30 por 100 sobre rendimientos &iacute;ntegros generados en m&aacute;s de dos a&ntilde;os o que sean notoriamente irregulares correspondiente a ese rendimiento <span>y la reducci&oacute;n por rendimientos de actividades art&iacute;sticas obtenidos de manera excepcional,</span> y minorado su importe, en cada per&iacute;odo impositivo, tanto por el resto de gastos deducibles vinculados exclusivamente a tal rendimiento, como por la parte proporcional de los restantes gastos deducibles que corresponda a la duraci&oacute;n del contrato de trabajo aceptado. De no obtenerse rendimiento del trabajo alguno en el segundo ejercicio del trabajo que motiv&oacute; el cambio de residencia, la cantidad a computar del gasto deducible en dicho ejercicio ser&aacute; cero.</p>
+</div>
+</li>
+<li>
+<p>El importe de 2.000 euros anuales adicionales <strong>se aplicar&aacute; en el periodo impositivo en el que se produzca el cambio de residencia y en el siguiente</strong>.</p>
+<p>Si en tributaci&oacute;n conjunta hay m&aacute;s de un contribuyente con derecho a aplicar el gasto deducible por ese concepto, el importe total que podr&aacute; ser objeto de deducci&oacute;n ser&aacute; de 2.000 euros, con el l&iacute;mite de los rendimientos netos del trabajo derivados de los puestos de trabajo aceptados por todos los contribuyentes que tengan derecho a la aplicaci&oacute;n de ese gasto.</p>
+</li>
+</ul>
+<div class="letrita ">
+<p><strong>Movilidad geogr&aacute;fica en el caso de funcionarios de carrera: requisito de inscripci&oacute;n en la oficina de empleo</strong></p>
+<p>En el caso de desempleados que acceden a un puesto como funcionarios de carrera, el requisito de inscripci&oacute;n en la oficina de empleo, deber&aacute; cumplirse en el siguiente momento en funci&oacute;n de si ha de realizar cursos o pr&aacute;cticas durante el per&iacute;odo de que se trate y si requiere un desplazamiento durante ese periodo que determine un cambio de residencia.</p>
+<p>Se distinguen dos casos:</p>
+<ol>
+<li>Que el proceso selectivo correspondiente <strong>no</strong> exija per&iacute;odos de cursos o de pr&aacute;cticas: basta con que el interesado figure inscrito en la oficina de empleo antes del momento de la toma de posesi&oacute;n como funcionario en su destino.</li>
+<li>Que el proceso selectivo correspondiente exija per&iacute;odos de cursos o de pr&aacute;cticas: el requisito tendr&aacute; que cumplirse con anterioridad al inicio del per&iacute;odo de cursos o de pr&aacute;cticas que corresponda.</li>
+</ol>
+<p>Haya periodos de cursos o de pr&aacute;cticas o no los haya, el acceso a la condici&oacute;n de funcionario p&uacute;blico se produce s&oacute;lo una vez, y por ello, el beneficio s&oacute;lo podr&aacute; aplicarse con motivo de un traslado de domicilio, nunca de dos.</p>
+<p>V&eacute;ase a este respecto la Resoluci&oacute;n del TEAC de 30 de enero de 2025, Reclamaci&oacute;n n&uacute;mero 00-09334-2023, reca&iacute;da en recurso extraordinario de alzada en unificaci&oacute;n de criterio.</p>
+</div>
+<h2>c. Incremento para trabajadores activos con discapacidad</h2>
+<p class="&quot;margen-inf margen-inf">Trat&aacute;ndose de personas con discapacidad que obtengan rendimientos del trabajo como trabajadores activos, la cuant&iacute;a general se incrementar&aacute; en las cantidades que se se&ntilde;alan en el cuadro siguiente:</p>
+<p class="letrita sangrado-izq">La condici&oacute;n de <a href="/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c14-adecuacion-impuesto-circunstancias-personales/minimo-discapacidad/acreditacion-discapacidad-necesidad-ayuda.html">persona con discapacidad y su acreditaci&oacute;n</a>&nbsp;se comenta en el Cap&iacute;tulo 14.</p>
+<table class="letrita" summary="cantidades a incrementar en la cuant&iacute;a general, en el caso de personas con discapacidad que obtengan rendimientos del trabajo como trabajadores activos">
+<thead>
+<tr>
+<th>Grado de discapacidad</th>
+<th>Cuant&iacute;a (euros)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Igual o superior al 33 por 100 e inferior al 65 por 100</td>
+<td class="texto_cen">3.500</td>
+</tr>
+<tr>
+<td>Igual o superior al 65 por 100 o que acrediten necesitar ayuda de terceras personas o movilidad reducida, aunque no alcancen el 65 por 100 de discapacidad</td>
+<td class="texto_cen">7.750</td>
+</tr>
+</tbody>
+</table>
+<p class="margen-sup">Para la aplicaci&oacute;n de estos gastos deducibles en concepto de trabajador activo con discapacidad se requiere que concurran simult&aacute;neamente, durante cualquier d&iacute;a del per&iacute;odo impositivo, las siguientes circunstancias:</p>
+<p><strong>1. Ser trabajador en activo.</strong></p>
+<p>Por la expresi&oacute;n "trabajador en activo" recogida en el art&iacute;culo 19.2.f) de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> debe entenderse la de aquel que percibe rendimientos de trabajo como consecuencia de la prestaci&oacute;n efectiva de sus servicios retribuidos, por cuenta ajena y dentro del &aacute;mbito de organizaci&oacute;n y direcci&oacute;n de otra persona, f&iacute;sica o jur&iacute;dica, denominada empleador o empresario.</p>
+<p class="letrita sangrado-izq"><strong>Precisiones:</strong></p>
+<p class="letrita sangrado-izq">No puede entenderse como trabajador activo a un contribuyente en situaci&oacute;n legal de desempleo, que desarrolle una actividad econ&oacute;mica, que est&eacute; prejubilado,<span> un administrador de una sociedad a la que no presta servicios en el marco de una relaci&oacute;n laboral, o que percibe una pensi&oacute;n por incapacidad permanente total que no desempe&ntilde;a ning&uacute;n trabajo por cuenta ajena,</span> etc.</p>
+<p class="letrita sangrado-izq">Se equiparan las personas que perciben una prestaci&oacute;n por incapacidad laboral transitoria con los trabajadores activos. Sentencia del Tribunal Supremo <abbr title="n&uacute;mero">n&uacute;m.</abbr> 1381/2020, de 22 de octubre (<abbr title="Repertorio Oficial de Jurisprudencia">ROJ</abbr> : STS 3518/2020).</p>
+<p class="letrita sangrado-izq ">De igual modo, no es exigible la habitualidad en la prestaci&oacute;n laboral para la calificaci&oacute;n de "trabajador activo", bastando, que la persona con el grado de discapacidad reconocido sea, durante un solo d&iacute;a del periodo impositivo, perceptor de rentas del trabajo por la prestaci&oacute;n efectiva de servicios (que pueden ser a tiempo parcial) retribuidos, por cuenta ajena (de car&aacute;cter fijo o temporal), dentro del &aacute;mbito de organizaci&oacute;n y direcci&oacute;n de otra persona (f&iacute;sica o jur&iacute;dica). Sentencia del Tribunal Supremo n&uacute;m. 1356/2020, de 20 de octubre (<abbr title="Repertorio Oficial de Jurisprudencia">ROJ</abbr> : STS 3265/2020).</p>
+<p><strong>2. Tener el grado de discapacidad exigido</strong>, que deber&aacute; acreditarse conforme a lo previsto en el art&iacute;culo 72 del Reglamento del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>.</p>
+<div class="&quot;margen-izq">
+<p>A estos efectos en&nbsp;el <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> tienen la consideraci&oacute;n de persona con discapacidad aquellos contribuyentes con un grado de discapacidad igual o superior al 33 por ciento.</p>
+<p>En cuanto a la acreditaci&oacute;n del grado de discapacidad deber&aacute; efectuarse mediante certificado o resoluci&oacute;n expedido por el Instituto de Migraciones y Servicios Sociales o el &oacute;rgano competente de las Comunidades Aut&oacute;nomas.</p>
+<p>No obstante, se considerar&aacute; acreditado un grado de discapacidad igual o superior al 33 por ciento en el caso de los pensionistas de la Seguridad Social que tengan reconocida una pensi&oacute;n de incapacidad permanente total, absoluta o gran invalidez y en el caso de los pensionistas de clases pasivas que tengan reconocida una pensi&oacute;n de jubilaci&oacute;n o retiro por incapacidad permanente para el servicio o inutilidad.</p>
+<p>Igualmente, se considerar&aacute; acreditado un grado de discapacidad igual o superior al 65 por ciento, cuando se trate de personas cuya incapacidad sea declarada judicialmente, aunque no alcance dicho grado.</p>
+<div class="letrita  sangrado-izq">
+<p><strong>Precisi&oacute;n: discapacidad a lo largo del per&iacute;odo impositivo (despu&eacute;s del inicio del mismo y antes de la fecha del devengo)</strong></p>
+<p>El TEAC, en su resoluci&oacute;n de 22 de abril de 2025, Reclamaci&oacute;n n&uacute;mero 00-01351-2024, reca&iacute;da en recurso extraordinario de alzada para la unificaci&oacute;n de criterio ha fijado como criterio interpretativo, para aquellos supuestos en los que el reconocimiento de la discapacidad se produzca a lo largo del per&iacute;odo impositivo, que no procede prorratear el importe de los gastos deducibles a que se refiere el art. 19.2.f) de la Ley del IRPF sino que estos se aplicar&aacute;n de forma &iacute;ntegra hasta el l&iacute;mite del rendimiento del trabajo al que van asociados (rendimientos del trabajo obtenidos desde que tiene reconocido el grado de discapacidad).</p>
+</div>
+<p class="border border-primary rounded-sm border-size-1 p-3"><em><span class="verde"><strong>Importante:</strong> </span>t&eacute;ngase en cuenta que, a partir del 3 de septiembre de 2021, fecha de entrada en vigor de la Ley 8/2021, de 2 de junio, que reforma la legislaci&oacute;n civil y procesal para el apoyo a las personas con discapacidad en el ejercicio de su capacidad jur&iacute;dica, las referencias realizadas a la incapacitaci&oacute;n judicial, se extienden a las resoluciones judiciales en las que se establece la curatela representativa de las personas con discapacidad.</em></p>
+</div>
+<p><strong>En el supuesto de tributaci&oacute;n conjunta</strong> de unidades familiares en las que existan varios trabajadores activos que tengan la consideraci&oacute;n de persona con discapacidad, el importe total del gasto deducible por ese concepto ser&aacute; la <strong>cuant&iacute;a que corresponda al contribuyente con mayor grado de discapacidad</strong>, con el l&iacute;mite de la suma de los rendimientos netos del trabajo correspondientes a los per&iacute;odos en que los contribuyentes, con derecho a aplicar este concepto de gasto, sean trabajadores en activo y con discapacidad.</p>
+<h2 class="margen-sup">d. L&iacute;mite de los gastos deducibles en concepto de otros gastos distintos</h2>
+<p>Los gastos deducibles en concepto de otros gastos distintos tendr&aacute;n como l&iacute;mite el rendimiento &iacute;ntegro del trabajo que ha generado dichos gastos, una vez aplicadas en su caso las reducciones del art&iacute;culo 18, <span>y en su caso la reducci&oacute;n por rendimientos de actividades art&iacute;sticas obtenidos de manera excepcional regulada en la disposici&oacute;n adicional sexag&eacute;sima </span> de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>,&nbsp;correspondientes a ese rendimiento, y minorado en el resto de gastos deducibles establecidos en el art&iacute;culo 19 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> que corresponden, exclusiva o proporcionalmente, a esos rendimientos.</p>
+<p>A efectos de la aplicaci&oacute;n de este l&iacute;mite, cuando el contribuyente obtenga en el mismo per&iacute;odo impositivo rendimientos derivados de un trabajo que permita computar un mayor gasto deducible en el concepto de movilidad geogr&aacute;fica y en el de trabajador activo con discapacidad, y otros rendimientos del trabajo, el incremento del gasto deducible se atribuir&aacute; exclusivamente a los rendimientos &iacute;ntegros del trabajo se&ntilde;alados en primer lugar.</p>
+<p class="letrita sangrado-izq">En consecuencia, el l&iacute;mite de los gastos incrementados regulados en los p&aacute;rrafos segundo y tercero de la letra f) del art&iacute;culo 19.2) de la Ley de <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> es el rendimiento &iacute;ntegro vinculado a ellos, una vez aplicadas en su caso las reducciones del art&iacute;culo 18 <span>y, en su caso, la reducci&oacute;n por rendimientos de actividades art&iacute;sticas obtenidos de manera excepcional regulada en la disposici&oacute;n adicional sexag&eacute;sima</span> de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>, menos los gastos deducibles vinculados exclusivamente al rendimiento obtenido y la parte proporcional de los restantes que corresponda a la duraci&oacute;n del contrato de trabajo aceptado o del n&uacute;mero de d&iacute;as en los que concurran las circunstancias de trabajador en activo y con discapacidad.</p>
+<p class="letrita sangrado-izq">En el caso de que, en tributaci&oacute;n individual o conjunta, coincidan el incremento de gasto deducible por movilidad geogr&aacute;fica y por trabajador activo con discapacidad, los rendimientos que limitan la cuant&iacute;a a deducir por ambos conceptos es la resultante de la suma de los rendimientos que generan el derecho a deducir por uno o ambos conceptos.</p>
+<div class="border-left border-primary pl-2 border-size-5">
+<p class="margen-sup"><strong>Ejemplo:</strong></p>
+<p>Don J.F.T con una discapacidad reconocida del 34 por 100 durante <span>2025</span> estuvo trabajando el mes de enero en una empresa obteniendo unos rendimientos netos de 1.000 euros. Posteriormente, estuvo desempleado hasta el mes diciembre en el que acept&oacute; un puesto de trabajo que le exigi&oacute; cambiar su residencia a otro municipio y por el que obtuvo unos rendimientos netos de 800 euros. Durante el tiempo que estuvo desempleado estuvo inscrito en la oficina de empleo y cobr&oacute; 6.000 euros.</p>
+<p>Determinar los gastos deducibles en concepto de incremento por movilidad geogr&aacute;fica y por trabajador activo con discapacidad.</p>
+<p><strong>Soluci&oacute;n</strong></p>
+<p>Importe total de los gastos deducibles por ambos conceptos (2.000 + 3.500) = 5.500</p>
+<p class="margen-izq">Por movilidad geogr&aacute;fica: 2.000</p>
+<p class="margen-izq">Por trabajador activo con discapacidad: 3.500</p>
+<p><span id="(5)">L&iacute;mite de los gastos incrementados (1.000 + 800) <a href="#(1)"><sup><strong>(1)</strong></sup></a> = 1.800</span></p>
+<p><span id="(6)">Importe a deducir <a href="#(2)"><sup><strong>(2)</strong></sup></a>&nbsp;= 1.800</span></p>
+<div class="letrita">
+<p><strong>Notas al ejemplo:</strong></p>
+<p class=" id=" 1="&quot;"><sup><strong>(1) </strong></sup>Los rendimientos netos totales correspondientes a movilidad geogr&aacute;fica y trabajador activo con discapacidad: 1.000 euros del mes de enero y 800 euros por el puesto de trabajo que le ha exigido trasladar su residencia habitual. <a href="#(5)" class="azul"><sup><strong>(Volver)</strong></sup></a></p>
+<p class="id=" 2="&quot;"><sup><strong>(2) </strong></sup>El contribuyente podr&aacute; deducir 1.800 euros optando bien por deducir 1.800 euros por trabajador activo con discapacidad y no deducir nada por movilidad geogr&aacute;fica, o bien por deducir 800 euros por movilidad geogr&aacute;fica y 1.000 euros&nbsp;por trabajador activo con discapacidad. <a href="#(6)" class="azul"><sup><strong>(Volver)</strong></sup></a></p>
+</div>
+</div><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-17">17/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

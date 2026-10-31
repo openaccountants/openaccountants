@@ -1,16 +1,16 @@
 ---
 name: latvia-income-tax
 description: "Latvian personal income tax (IIN) for tax year 2026, for resident employees, self-employed people, pensioners and people with capital income. Covers the 25.5% and 33% bands with the threshold tied to the EUR 105,300 maximum social insurance base, the 3% surcharge above EUR 200,000, the fixed EUR 550 monthly non-taxable minimum, EUR 250 monthly dependant relief, the EUR 12,000 pensioner minimum, eligible expenses, capital income at 25.5%, business income and losses, the annual return (1 March to 1 June, or 1 April to 1 July), payment dates, penalties and 0.05% a day late interest. Trigger on: Latvia income tax, gada ienākumu deklarācija, neapliekamais minimums, Latvian capital gains tax, self-employed Latvia. Out of scope: payroll withholding (latvia-payroll), social contributions (latvia-social-contributions), non-residents (lv-cross-border), company tax (lv-corporate-income-tax), microenterprise planning (latvia-tax-optimization)."
-jurisdiction: LV
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.3
-verified_by: pending
+jurisdiction: LV
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -216,3 +216,23 @@ expected:
 likumi.lv and vid.gov.lv refused connections from our network on 23 and 24 October 2026. All texts were read from Internet Archive (web.archive.org) copies made in 2026: the PIT Law captured 1 September 2026, the law On State Social Insurance 3 October 2026, the LTF 18 September 2026, the Administrative Liability Law 10 August 2026, the VID rates page 12 October 2026 and the VID annual return page 9 September 2026.
 
 Not yet confirmed: a VID worked example of the surcharge base (the skill follows the PIT Law text of s. 15.1(2), s. 10(1) and s. 3(2); VID's rates page says only "total income"); the 2026 microenterprise tax rate and threshold (Microenterprise Tax Law not read); the Cabinet regulation on eligible expenses (not read); the disability and politically repressed person relief amounts set by Cabinet regulation (not read); amendments to the PIT Law adopted after 1 September 2026.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

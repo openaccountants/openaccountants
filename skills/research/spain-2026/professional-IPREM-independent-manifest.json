@@ -1,0 +1,147 @@
+{
+  "frozen_utc": "2026-10-27T19:59:32.011856+00:00",
+  "verdict": "PASS for finite full-calendar-year 2026 statutory construction and copy delta",
+  "guide_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+  "artifacts": [
+    {
+      "path": "Budget-current-personally-read-extract.txt",
+      "bytes": 1089,
+      "sha256": "09bd1dcb920a29a28bfa621db685ff5f4fdaaf16756c9a6645c483d42c9198ce"
+    },
+    {
+      "path": "Budget-current.html",
+      "bytes": 2870265,
+      "sha256": "b8a30f031e36252be334a18670b65c46e3d8082de84f8f78edf5f9afc5f3a110"
+    },
+    {
+      "path": "Budget-current.txt",
+      "bytes": 1837779,
+      "sha256": "8bc863ace49ad07d026c833f9d631d4be9e9c2fdc725a1cf033456deefe112c0"
+    },
+    {
+      "path": "LIS-current-personally-read-extract.txt",
+      "bytes": 10590,
+      "sha256": "06c3e6ead50e15ae0403a1fe68599d2a1b0724a7c2c8c4e48d1b597aef2836c0"
+    },
+    {
+      "path": "LIS-current.html",
+      "bytes": 1477792,
+      "sha256": "5405e802c325cc1815bdfd1a48ddfe5da7ca8d6d652c25db0d0e52fac9e783db"
+    },
+    {
+      "path": "LIS-current.txt",
+      "bytes": 815373,
+      "sha256": "0fc17afee2be49070e69d8936e82cf2516c42bc4f6833a83fcfb5ce43cd2459f"
+    },
+    {
+      "path": "LIS-original-personally-read-extract.txt",
+      "bytes": 1777,
+      "sha256": "fc59e7f47d7c638bb1a7492fe74c29f345490dfca34f81574062e437eae179ca"
+    },
+    {
+      "path": "LIS-original.html",
+      "bytes": 1163889,
+      "sha256": "125af8cb5bd576a6e28a4b9da65c58fdcc414b4ec745a3f5a4cca2a0a9ed4570"
+    },
+    {
+      "path": "LIS-original.txt",
+      "bytes": 664201,
+      "sha256": "1c27e99d0227f6b9bd6574f3aca9c83791a13cb01971a0ac2124f2fce032c186"
+    },
+    {
+      "path": "RDL3-2004-personally-read-extract.txt",
+      "bytes": 2069,
+      "sha256": "bd5a61f323946897093bc120f606a56b1c64231fcb7a89824d21abd4771140e8"
+    },
+    {
+      "path": "RDL3-2004.html",
+      "bytes": 110758,
+      "sha256": "eb9653eb9fc3251a2f96be14fccce77da7a9eada1cf7afb5ed3db9cb5c494575"
+    },
+    {
+      "path": "RDL3-2004.txt",
+      "bytes": 53530,
+      "sha256": "4e134bbdc81204bbf6d9d6017d1a4c4898970134d19b737f1665dce343ef22d3"
+    },
+    {
+      "path": "SEPE-2026-personally-read-extract.txt",
+      "bytes": 3587,
+      "sha256": "49c0cc6aadda714fa80db6729af84747a417f455621d76180e37bed4d7f9d582"
+    },
+    {
+      "path": "SEPE-2026.html",
+      "bytes": 90837,
+      "sha256": "e03e479f71686c5fab1885e5b4554ef987e30393efa2b277c9d51af72c1556eb"
+    },
+    {
+      "path": "SEPE-2026.txt",
+      "bytes": 39958,
+      "sha256": "e1c99d64d6929f021adcad575425866438077dee9601e1911a6ac6618099fcc2"
+    },
+    {
+      "path": "before-reviewed.md",
+      "bytes": 27971,
+      "sha256": "c3d09ddbacadeb67e7ac394d7d0fcf58bcb71504576b3ce88aaf1b379b971f40"
+    },
+    {
+      "path": "check.py",
+      "bytes": 10274,
+      "sha256": "3af310da1253560a5bc576924003ea653a399d6a7362f82f6140919a859f108b"
+    },
+    {
+      "path": "controls.json",
+      "bytes": 9715,
+      "sha256": "15c3b508c23bd62efa1f5fe26696be2237d7eecc37a9d3ae3e8e74210bb02b76"
+    },
+    {
+      "path": "examples-before.txt",
+      "bytes": 58,
+      "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
+    },
+    {
+      "path": "examples-final.txt",
+      "bytes": 58,
+      "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
+    },
+    {
+      "path": "fetch.py",
+      "bytes": 1350,
+      "sha256": "6a75994396a07639f984f3ab8f9ec01af2887063db3a18be1fe78d3fed51ba12"
+    },
+    {
+      "path": "final-reviewed.md",
+      "bytes": 31683,
+      "sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d"
+    },
+    {
+      "path": "freeze.py",
+      "bytes": 2266,
+      "sha256": "587a31d0a7130ceb10ae6c691d10e9657daf5b2bc97d98d571883bcbbe8077ac"
+    },
+    {
+      "path": "fresh-source-receipts.json",
+      "bytes": 1800,
+      "sha256": "b71328fd311cd0b1337d43a50bee0cab948f8c817782947b43d02acaef22e6e8"
+    },
+    {
+      "path": "no-loss.json",
+      "bytes": 1169,
+      "sha256": "53fbe3d48d5c0f0512fba011394e6ad19bafcdde69575b4c96e8003e7baa87f1"
+    },
+    {
+      "path": "report.md",
+      "bytes": 9094,
+      "sha256": "80ad27535ee39f8b4523ceee68f3b24b5c1edbfd992a9547b58a83ab7acc6ab6"
+    },
+    {
+      "path": "source-read-receipts.json",
+      "bytes": 2845,
+      "sha256": "ee43fa778efacdda508729b490a21a4a35bc0c5bc83539beeaf8e5e4ce69dcae"
+    },
+    {
+      "path": "surgical.diff",
+      "bytes": 9987,
+      "sha256": "8aa455ccc4dc85964258fd61b07be8fd2294172438febb50fa407e3ce27863cf"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Company guidance",
+    "url": "https://gov.gg/RevenueService/Companies",
+    "as_of": "2026-10-22",
+    "sha256": "928344632411ada1aae721f6e8935cc16c61b99b1948c429dc8a023d75e4ee1f"
+  },
+  {
+    "title": "Form 707 non-resident status 02/26",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=118096&p=0",
+    "as_of": "2026-10-22",
+    "sha256": "fc964c7acc63559aa84a8c95a5c91743126400c13a845ac3ff4a31b3cbb7b8b9"
+  },
+  {
+    "title": "Form 706 foreign-company registration 08/21",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=183549&p=0",
+    "as_of": "2026-10-22",
+    "sha256": "6082f50679984062db0479e00ae58b535c67bce6bc129879987cacb58804665b"
+  },
+  {
+    "title": "Penalty FAQ, current figures with stale introductory deadline",
+    "url": "https://gov.gg/taxpenalties",
+    "as_of": "2026-10-22",
+    "sha256": "f4f9c04e665770a41ca4db017c4c8d12bac954c0e6127c58120b07283576bcd6"
+  },
+  {
+    "title": "2021 substance regulations",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=141223&p=0",
+    "as_of": "2026-10-22",
+    "sha256": "de94050dbfd349be5712f8bdd119cdfc1811f861d8c6c37a38734b8717e4b6d2",
+    "locators": "Regulations 1, 3\u201310, 13\u201327, 30, 37 (activity, high-risk IP and holding definitions), 38\u201340"
+  },
+  {
+    "title": "Official substance index",
+    "url": "https://gov.gg/economicsubstance",
+    "as_of": "2026-10-22",
+    "sha256": "1584654ad03b0a0f91b19b7c3df744008754130c0cfcd17cbd33826780abe112"
+  }
+]

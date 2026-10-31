@@ -1,0 +1,408 @@
+{
+  "scope": "Independent arithmetic and separating statutory gates. Full factual eligibility, genuine independent pricing, treaty and exceptional dated repeal consequences remain separately established; no equality-at400k rule invented.",
+  "count": 67,
+  "checks": [
+    {
+      "name": "savings total boundary 6000",
+      "actual": "1140",
+      "expected": "1140",
+      "passed": true
+    },
+    {
+      "name": "savings total boundary 50000",
+      "actual": "10380",
+      "expected": "10380",
+      "passed": true
+    },
+    {
+      "name": "savings total boundary 200000",
+      "actual": "44880",
+      "expected": "44880",
+      "passed": true
+    },
+    {
+      "name": "savings total boundary 300000",
+      "actual": "71880",
+      "expected": "71880",
+      "passed": true
+    },
+    {
+      "name": "savings total boundary 400000",
+      "actual": "101880",
+      "expected": "101880",
+      "passed": true
+    },
+    {
+      "name": "case1 transfer net costs",
+      "actual": "19900",
+      "expected": "19900",
+      "passed": true
+    },
+    {
+      "name": "case1 acquisition costs",
+      "actual": "10050",
+      "expected": "10050",
+      "passed": true
+    },
+    {
+      "name": "case1 gain",
+      "actual": "9850",
+      "expected": "9850",
+      "passed": true
+    },
+    {
+      "name": "case1 tax",
+      "actual": "3897/2",
+      "expected": "3897/2",
+      "passed": true
+    },
+    {
+      "name": "case2 admitted loss",
+      "actual": "8000",
+      "expected": "8000",
+      "passed": true
+    },
+    {
+      "name": "case2 crosspool25percent",
+      "actual": "2500",
+      "expected": "2500",
+      "passed": true
+    },
+    {
+      "name": "case2 admitted carry",
+      "actual": "5500",
+      "expected": "5500",
+      "passed": true
+    },
+    {
+      "name": "case2 separate deferred loss",
+      "actual": "2000",
+      "expected": "2000",
+      "passed": true
+    },
+    {
+      "name": "case2 savingsbase",
+      "actual": "7500",
+      "expected": "7500",
+      "passed": true
+    },
+    {
+      "name": "case2 savings tax",
+      "actual": "1455",
+      "expected": "1455",
+      "passed": true
+    },
+    {
+      "name": "incremental annual bracket not restarted",
+      "actual": "4531/2",
+      "expected": "4531/2",
+      "passed": true
+    },
+    {
+      "name": "incremental differs standalone first bands",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "unlisted capitalisation division20percent",
+      "actual": "15000",
+      "expected": "15000",
+      "passed": true
+    },
+    {
+      "name": "unlisted independentprice absent floor",
+      "actual": "10000",
+      "expected": "10000",
+      "passed": true
+    },
+    {
+      "name": "unlisted proved independentprice route",
+      "actual": "2000",
+      "expected": "2000",
+      "passed": true
+    },
+    {
+      "name": "unlisted higheractual price",
+      "actual": "13000",
+      "expected": "13000",
+      "passed": true
+    },
+    {
+      "name": "listed higher agreedprice reference",
+      "actual": "12000",
+      "expected": "12000",
+      "passed": true
+    },
+    {
+      "name": "listed higher quotation reference",
+      "actual": "13000",
+      "expected": "13000",
+      "passed": true
+    },
+    {
+      "name": "bonus shares preserve total basis",
+      "actual": "50.0",
+      "expected": "50",
+      "passed": true
+    },
+    {
+      "name": "FIFO old100basis100 then50basis120",
+      "actual": "16000",
+      "expected": "16000",
+      "passed": true
+    },
+    {
+      "name": "DT29 untaxed oldrights reduce basis",
+      "actual": "8000",
+      "expected": "8000",
+      "passed": true
+    },
+    {
+      "name": "DT29 oldrights adjusted gain",
+      "actual": "7000",
+      "expected": "7000",
+      "passed": true
+    },
+    {
+      "name": "DT29 alreadytaxed rights not doubled",
+      "actual": "5000",
+      "expected": "5000",
+      "passed": true
+    },
+    {
+      "name": "home loan-net reinvestment denominator",
+      "actual": "200000",
+      "expected": "200000",
+      "passed": true
+    },
+    {
+      "name": "home partial qualified reinvestment gain",
+      "actual": "45000",
+      "expected": "45000",
+      "passed": true
+    },
+    {
+      "name": "home overfunding cannot exceed gain",
+      "actual": "90000",
+      "expected": "90000",
+      "passed": true
+    },
+    {
+      "name": "annuity overfunding eligible amount",
+      "actual": "30000",
+      "expected": "30000",
+      "passed": true
+    },
+    {
+      "name": "annuity overfunding exemption cap",
+      "actual": "10000",
+      "expected": "10000",
+      "passed": true
+    },
+    {
+      "name": "annuity half proceeds reinvestment",
+      "actual": "5000",
+      "expected": "5000",
+      "passed": true
+    },
+    {
+      "name": "annuity cumulative residual cap",
+      "actual": "10000",
+      "expected": "10000",
+      "passed": true
+    },
+    {
+      "name": "annuity residual partial exemption",
+      "actual": "10000/3",
+      "expected": "10000/3",
+      "passed": true
+    },
+    {
+      "name": "annuity exhausted cap leaves zero",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "annuity5percent decline equality",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "annuity5.01percent decline fails",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "death refund year 1",
+      "actual": "190000",
+      "expected": "190000",
+      "passed": true
+    },
+    {
+      "name": "death refund year 2",
+      "actual": "180000",
+      "expected": "180000",
+      "passed": true
+    },
+    {
+      "name": "death refund year 3",
+      "actual": "170000",
+      "expected": "170000",
+      "passed": true
+    },
+    {
+      "name": "death refund year 4",
+      "actual": "160000",
+      "expected": "160000",
+      "passed": true
+    },
+    {
+      "name": "death refund year 5",
+      "actual": "150000",
+      "expected": "150000",
+      "passed": true
+    },
+    {
+      "name": "death refund year 6",
+      "actual": "140000",
+      "expected": "140000",
+      "passed": true
+    },
+    {
+      "name": "death refund year 7",
+      "actual": "130000",
+      "expected": "130000",
+      "passed": true
+    },
+    {
+      "name": "death refund year 8",
+      "actual": "120000",
+      "expected": "120000",
+      "passed": true
+    },
+    {
+      "name": "death refund year 9",
+      "actual": "110000",
+      "expected": "110000",
+      "passed": true
+    },
+    {
+      "name": "death refund year 10",
+      "actual": "100000",
+      "expected": "100000",
+      "passed": true
+    },
+    {
+      "name": "death guarantee10years equality",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "2019 transition beforeApril1",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "2019 April1 not excluded by before clause",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "current dated relocation sale aftercommencement",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "age-relocation qualifying example gain fully exempt",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "2012 acquisition firstday eligible numerical date",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "2012 daybefore outside",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "2012 finalday inclusive",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "2012 halfgain then halfreinvestment",
+      "actual": "25000",
+      "expected": "25000",
+      "passed": true
+    },
+    {
+      "name": "IRNR exempt halfgain doesnot halve3percent consideration",
+      "actual": "9000",
+      "expected": "9000",
+      "passed": true
+    },
+    {
+      "name": "IRNR ordinary gain19percent not24",
+      "actual": "9500",
+      "expected": "9500",
+      "passed": true
+    },
+    {
+      "name": "DT9 remaining transfercap capacity",
+      "actual": "50000",
+      "expected": "50000",
+      "passed": true
+    },
+    {
+      "name": "DT9 eligible fraction of100ktransfer",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "DT9 pre2006gain80k partwithin cap",
+      "actual": "40000",
+      "expected": "40000",
+      "passed": true
+    },
+    {
+      "name": "DT9 listed wealth2005value substitution",
+      "actual": "2000",
+      "expected": "2000",
+      "passed": true
+    },
+    {
+      "name": "DT9 below2005value allpositive gain",
+      "actual": "1000",
+      "expected": "1000",
+      "passed": true
+    },
+    {
+      "name": "DT9 ordinary two inclusive dates",
+      "actual": "5863",
+      "expected": "5863",
+      "passed": true
+    },
+    {
+      "name": "Ceuta conditional60percent attributable taxcredit",
+      "actual": "600",
+      "expected": "600",
+      "passed": true
+    }
+  ]
+}

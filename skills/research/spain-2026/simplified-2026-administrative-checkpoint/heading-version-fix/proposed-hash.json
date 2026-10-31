@@ -1,0 +1,6 @@
+{
+  "before_sha256": "5ce82b0e54ba2e1ecc3b13216958e2e763c991028cc6908c9f18f4bb7fd78475",
+  "after_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+  "bytes": 85291,
+  "only_change": "H1 version suffix v2.1\u2192v2.2; metadata/body version coherence"
+}

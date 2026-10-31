@@ -66,7 +66,7 @@ class SkillFileTests(unittest.TestCase):
         text = "intro\n<!-- oa-skills-stats:start -->\nold\n<!-- oa-skills-stats:end -->\nrest"
         out = build.stamp_readme(text, built, ["MT", "NL"], reviewed=1)
         self.assertIn("**3 skills** across **2 jurisdictions**", out)
-        self.assertIn("1 are accountant-reviewed (a named accountant in `metadata.reviewed_by`); the other 2 are source-cited drafts.", out)
+        self.assertIn("1 are accountant-reviewed (a named accountant in `metadata.reviewed_by`); the other 2 are tier 2 (checked against the law, or sourced from the law).", out)
         self.assertTrue(out.startswith("intro\n") and out.endswith("\nrest"))
         # Without the tier count, a named reviewer is the fallback signal.
         self.assertIn("1 are accountant-reviewed", build.stamp_readme(text, built, ["MT"]))

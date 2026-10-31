@@ -1,0 +1,31 @@
+{
+  "exit_code": 0,
+  "generated_on": "2026-10-27",
+  "andorra": {
+    "code": "AD",
+    "name": "Andorra",
+    "region": "europe",
+    "owner": "michael",
+    "dir": "skills/international/andorra",
+    "skills": 8,
+    "reviewed": 0,
+    "stale": 0,
+    "present": [
+      "IT-CORP",
+      "VAT",
+      "SC",
+      "PR",
+      "TP",
+      "XB"
+    ],
+    "missing": [
+      "IT-IND"
+    ],
+    "not_applicable": {},
+    "partial": {
+      "IT-IND": "The exact 2026 annual dependent-income minimum-wage benchmark after July's wage change remains unconfirmed; the general family-relief method is supplied."
+    },
+    "has_readme": true,
+    "complete": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "spain-vat-return",
+  "path": "skills/international/spain/spain-vat-return.md",
+  "bytes": 27254,
+  "sha256": "fc5e40827c1db1e66d28abd42fbb8c6cc80377e1201290736e007836009c1638",
+  "prior_main_exists": true,
+  "prior_main_sha256": "44556c993974a48c3c16197339f1b6db0cfcaa6e271fb1b98a0d841c039bdc70",
+  "H2": [
+    "## Who this applies to",
+    "## Rates, bands and thresholds",
+    "## The base",
+    "## Deadlines and filing",
+    "## Penalties and interest",
+    "## Cross-border points",
+    "## Two worked examples that recompute",
+    "## Ask the client first",
+    "## Sources",
+    "## Talk to a verified accountant"
+  ],
+  "root_scope_repair": "OA/output/europe-closeout-2026-10-27/spain-ledger-fixes/VAT-scope"
+}

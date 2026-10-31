@@ -1,0 +1,212 @@
+[
+  {
+    "key": "S0",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "raw": "sources/S0.body",
+    "raw_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "reader": "sources/S0.reader.txt",
+    "reader_sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S1",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+    "raw": "sources/S1.body",
+    "raw_sha256": "55986df8beea61cfafd9537944305802ab9c80f2bf3e395a9110db0a2aa96d63",
+    "reader": "sources/S1.reader.txt",
+    "reader_sha256": "f91ba3359f81d1db24bc78e9ab9d787336b1f0e785c2d9b75f72df17597d566a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "sources/S2.body",
+    "raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "reader": "sources/S2.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S3",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815",
+    "raw": "sources/S3.body",
+    "raw_sha256": "b2ec22b4eb690f68199db144af66e7b24faf20df4b3ceb32b061bd73e41b659a",
+    "reader": "sources/S3.reader.txt",
+    "reader_sha256": "66b76dcf43a9f4d648e1e221ab4f56a565afb46c0bb02b13001ae4075c4935fd",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S4",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296",
+    "raw": "sources/S4.body",
+    "raw_sha256": "a9f19b8abb0f9c040560add3ef051eb4572a60c3d4d0d73376fa3fbabe188922",
+    "reader": "sources/S4.reader.txt",
+    "reader_sha256": "75948258f479f6cc20ab64385638fbbd6c70f6a58b2e5c1ae3edc5e570faeb3e",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S5",
+    "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/Algoritmo%20Retenciones-2026_10sept.pdf",
+    "raw": "sources/S5.body",
+    "raw_sha256": "b1a120d93bf541deb35ccbfd55f08f771eecc01a762148491e5c9e2cf0be27d3",
+    "reader": "sources/S5.reader.txt",
+    "reader_sha256": "010ad348e608cf99bd1b301d3393d99ef627b7ea7c50a9a27339c4dea35e258a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S6",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+    "raw": "sources/S6.body",
+    "raw_sha256": "b176ce1d661d50006165169d3a89b2d749708336dcca3342c0d2026b159ebcf6",
+    "reader": "sources/S6.reader.txt",
+    "reader_sha256": "3f825893305ca218b48c738874b9051cee9a81baf8fe968db907f553ad8fdfcb",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S7",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1",
+    "raw": "sources/S7.body",
+    "raw_sha256": "a7761001d8d12dd8d5ae35f5e1e0f0996052a8542c33ab5e13a6ee408cf190f8",
+    "reader": "sources/S7.reader.txt",
+    "reader_sha256": "29a288f3e09e6d65049d81466c2e864baecddc40af40d118534220f0ea07bb65",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S8",
+    "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es",
+    "raw": "sources/S8.body",
+    "raw_sha256": "23b6450f031ce22487562b4afb1641c8cfd980f98bd889f6588665c4f0ae4a3c",
+    "reader": "sources/S8.reader.txt",
+    "reader_sha256": "d1a02358076a4c50bc1f67cc5d49ea3e0c86648a59224459a69c4a9226ca8db8",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S9",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872",
+    "raw": "sources/S9.body",
+    "raw_sha256": "0776a96693f8726c29d598d7ce2d217dfd37c42ac9b3ec85ceb9018589bd1cc8",
+    "reader": "sources/S9.reader.txt",
+    "reader_sha256": "48430b2658f88d84d4e3e85d7d5210617f76763a9dd2dce593f0c4b54facf6bb",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S10",
+    "url": "https://www.mites.gob.es/fogasa/faqs.html?q=%2F",
+    "raw": "sources/S10.body",
+    "raw_sha256": "46d6b73e83820d0ed7b8a6886bd2d19c85f48d8524937f159c08186e8cbb7bfb",
+    "reader": "sources/S10.reader.txt",
+    "reader_sha256": "aeba21eb40e1e92a5e0a1d07a4d988e0a86d53e82c0ac9e9e6f83531bbffc558",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S11",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-912",
+    "raw": "sources/S11.body",
+    "raw_sha256": "468154736edec869fdc02b8f455b490f7d211d053688d4828899e9b2c04f0b9d",
+    "reader": "sources/S11.reader.txt",
+    "reader_sha256": "eb885080cf90a70f5887884263c2510ce02c1b9f73b9c5dacef5a564acf790fb",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S12",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-11836",
+    "raw": "sources/S12.body",
+    "raw_sha256": "807fa277f7925f360d9c11d946f8489cabd106b4e845c98394c90c34c55d2f80",
+    "reader": "sources/S12.reader.txt",
+    "reader_sha256": "a1ff264c0a194330a9f77f7053bb0dbf87ef83799427263473d3a57d0711e63c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S13",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "raw": "sources/S13.body",
+    "raw_sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "reader": "sources/S13.reader.txt",
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S14",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/Retenciones.shtml",
+    "raw": "sources/S14.body",
+    "raw_sha256": "55ed2331c535c47cd555a29a603fe5753e62f541bc8b23f1e78ad70e4e16da69",
+    "reader": "sources/S14.reader.txt",
+    "reader_sha256": "1ce99078ee689f98004fd6b3ed4cc8c7e65d0a48d83ededd52b270bb931ace40",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S15",
+    "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/ALGORITMO_2026.pdf",
+    "raw": "sources/S15.body",
+    "raw_sha256": "a15b7fee871d1a4387d4ad0be3cd21930cd357a5ecd3372dc4fbed3f3181bca9",
+    "reader": "sources/S15.reader.txt",
+    "reader_sha256": "0afc2d9a08d1d8d219cd2af9c84cd86183c0c68de35bed44c6683461842b6c9c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "SC_S0",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+    "raw": "sources/SC_S0.body",
+    "raw_sha256": "55986df8beea61cfafd9537944305802ab9c80f2bf3e395a9110db0a2aa96d63",
+    "reader": "sources/SC_S0.reader.txt",
+    "reader_sha256": "f91ba3359f81d1db24bc78e9ab9d787336b1f0e785c2d9b75f72df17597d566a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "SC_S1",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296",
+    "raw": "sources/SC_S1.body",
+    "raw_sha256": "a9f19b8abb0f9c040560add3ef051eb4572a60c3d4d0d73376fa3fbabe188922",
+    "reader": "sources/SC_S1.reader.txt",
+    "reader_sha256": "75948258f479f6cc20ab64385638fbbd6c70f6a58b2e5c1ae3edc5e570faeb3e",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "SC_S14",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815",
+    "raw": "sources/SC_S14.body",
+    "raw_sha256": "b2ec22b4eb690f68199db144af66e7b24faf20df4b3ceb32b061bd73e41b659a",
+    "reader": "sources/SC_S14.reader.txt",
+    "reader_sha256": "66b76dcf43a9f4d648e1e221ab4f56a565afb46c0bb02b13001ae4075c4935fd",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "SC_S25",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-11836",
+    "raw": "sources/SC_S25.body",
+    "raw_sha256": "807fa277f7925f360d9c11d946f8489cabd106b4e845c98394c90c34c55d2f80",
+    "reader": "sources/SC_S25.reader.txt",
+    "reader_sha256": "a1ff264c0a194330a9f77f7053bb0dbf87ef83799427263473d3a57d0711e63c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "SC_A_EU_BOE",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2004-81111",
+    "raw": "sources/SC_A_EU_BOE.body",
+    "raw_sha256": "601e64cc08d8510bb2c7d9552d69837cd2c346e0e7cb1e9c8ba5de95678713b8",
+    "reader": "sources/SC_A_EU_BOE.reader.txt",
+    "reader_sha256": "ed8e745e000db1a1cffff9809fd0da477f47a22339d1cf2752f5f2b1d04313c6",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  }
+]

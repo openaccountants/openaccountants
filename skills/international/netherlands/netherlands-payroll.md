@@ -1,203 +1,175 @@
 ---
 name: netherlands-payroll
-description: Use this skill whenever asked about Dutch payroll, loonheffing, wage tax, social security contributions, or employer obligations in the Netherlands. Trigger on phrases like "loonheffing", "loonbelasting", "Dutch payroll", "Netherlands payroll", "volksverzekeringen", "AOW premie", "WW premie", "WAO", "WIA", "Aof", "Awf", "ZVW", "Zvw bijdrage", "zorgverzekeringswet", "vakantiegeld", "holiday allowance", "loonaangifte", "30% ruling", "werkgeversheffing", "minimumloon", "minimum wage Netherlands", "payslip Netherlands", "loonstrook", "social insurance Netherlands", or any question about running payroll in the Netherlands. ALWAYS read this skill before processing any Dutch payroll work.
-version: 1.0
+description: "Running Dutch payroll for tax year 2026: wage tax and national insurance withheld through the loonheffingen (Wet LB 1964), white and green tables, special-remuneration tables, the 2026 combined bands (35.75%, 37.56%, 49.50%) and the AOW-age bands, the payroll tax credits applied by one employer, the 52% anonymous rate, employer premiums (AWf, Aof, Wko, Whk, Ufo) and the Zvw levy on the EUR 79,409 cap, the director's customary wage of EUR 58,000, minimum wage, holiday pay and the transition payment, the monthly and four-weekly loonaangifte calendar, corrections, the EUR 83 and 3% penalties, payslips and the annual statement. Trigger phrases: loonheffing, loonaangifte, Dutch payroll, loonstrook, witte tabel, groene tabel, bijzondere beloningen, anoniementarief, minimumloon, vakantiegeld, nulaangifte, betaalverzuimboete. Out of scope: WKR detail (nl-payroll-tax), premium detail and self-employed (nl-social-contributions), company car (nl-company-car), expat scheme (netherlands-30-percent-ruling), cross-border (nl-cross-border)."
+version: 1.2
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-09-28
+last_updated: 2026-10-27
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - payroll-workflow-base
-category: payroll
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Netherlands payroll: calculate, reconcile and file for 2026
+# Netherlands: running payroll (loonheffingen) 2026
 
-## Scope and period
+## Who this applies to
 
-Tax year: 2026.
+Every employer who pays wages to an employee and is a withholding agent (inhoudingsplichtige) under the Wet op de loonbelasting 1964 (Wet LB). That covers Dutch companies and foreign employers with a Dutch permanent establishment or that register voluntarily. The employer withholds wage tax and national insurance together, pays employer premiums for the employee insurances and the Zvw, files one loonaangifte per period, and pays it.
 
-Use this method for Dutch employer payroll for calendar 2026. Establish Dutch wage-tax withholding and social-insurance coverage separately before calculating. Residence, where work is performed, the employer's establishment, treaty allocation and an A1/certificate of coverage can change the result. This ordinary payroll method does not settle cross-border allocation, employment-status disputes, agency chains, seafarers, special public-sector schemes or benefit-payment combinations. Send those facts to the relevant specialist before using the domestic calculation. [Handbook chapters 1, 18 and 20](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
+Use the Handboek Loonheffingen 2026 (version March 2026) with the rates appendix, edition 4 of 25 June 2026. Edition 4 corrects two figures from earlier editions: the general credit base runs "up to and including" EUR 29,736, and the employment credit ends at EUR 132,920 (not EUR 132,290). For a 2025 correction, use the 2025 tables.
 
-Use the **March 2026 Handboek Loonheffingen together with the fourth edition of the 2026 rates appendix, dated 25 June 2026**. The later appendix and mileage policy update supersede the handbook's old mileage amount. For a 2025 correction, use the 2025 rules and tables; the date on which you prepare the correction does not turn it into 2026 wages. Keep genuine later wage payments distinct from corrections of earlier returns. Recheck publications before the next payroll and before crossing into 2027; do not put budget proposals into a 2026 payroll. [Rates appendix](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) · [Handbook chapters 9 and 14](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
+Out of this skill: the work-cost scheme (WKR) in detail, see nl-payroll-tax; premium rules in depth and the self-employed, see nl-social-contributions; private use of a company car, see nl-company-car; the expat scheme, see netherlands-30-percent-ruling; who is insured where and treaty allocation, see nl-cross-border. Annual income tax for the employee: nl-income-tax.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| Band 1, under AOW age: wage tax 8.10% + AOW 17.90% + Anw 0.10% + Wlz 9.65% | 35.75% up to EUR 38,883 | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf |
+| Band 2 | 37.56% from EUR 38,883 to EUR 78,426 | 2026 | same |
+| Band 3 | 49.50% above EUR 78,426 | 2026 | same |
+| Band 1, AOW age, born 1946 or later (no AOW premium) | 17.85% up to EUR 38,883 | 2026 | same |
+| Band 1, born 1945 or earlier | 17.85% up to EUR 41,123 | 2026 | same |
+| General credit (algemene heffingskorting), under AOW age | EUR 3,115; reduces 6.398% above EUR 29,736; nil at EUR 78,426 | 2026 | same |
+| General credit, AOW age | EUR 1,556; reduces 3.195% | 2026 | same |
+| Employment credit (arbeidskorting), under AOW age | max EUR 5,685 (reached at EUR 45,592); reduces 6.510% above EUR 45,592; nil at EUR 132,920 | 2026 | same |
+| Employment credit, AOW age | max EUR 2,840; reduces 3.250% | 2026 | same |
+| Elderly credit (ouderenkorting) | EUR 2,067; reduces above EUR 46,002; nil at EUR 59,782 | 2026 | same |
+| Anonymous rate (no name, address or BSN given) | 52%, no credits | 2026 | https://wetten.overheid.nl/BWBR0002471/2026-01-01 (art. 26b) |
+| AWf (unemployment fund), low / high | 2.74% / 7.74% | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf |
+| Aof (disability fund), small employer / medium and large | 6.27% / 7.63% | 2026 | same |
+| Wko surcharge (childcare) | 0.50% | 2026 | same |
+| Whk (return-to-work fund) | rate on the employer's own notice | 2026 | same (sector table 10) |
+| Ufo (government employers only) | 0.68% | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf |
+| Employer Zvw levy / withheld Zvw contribution | 6.10% / 4.85% | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf |
+| Maximum premium and contribution wage | EUR 79,409 a year; EUR 6,617.41 a month; EUR 6,108.38 per four weeks | 2026 | same (table 11) |
+| Small employer (2024 premium wage sum) | up to and including EUR 1,082,500; medium up to EUR 4,330,000 | 2026 | same (table 9) |
+| Customary wage, substantial-interest director | at least EUR 58,000 | 2026 | same (table 12) |
+| WKR free space / final levy | 2.00% up to EUR 400,000 of fiscal wage, 1.18% above; 80% on the excess | 2026 | same (table 13) |
+| Tax-free travel allowance | EUR 0.25 per km (from 1 January 2026, approved ahead of the Tax Plan 2027) | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte |
+| Home-working allowance / meal value / relocation | EUR 2.45 a day / EUR 4.05 a meal / EUR 7,750 | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf |
+| Expat scheme salary norm / under-30 master's / cap | more than EUR 48,013 / more than EUR 36,497 / WNT cap EUR 262,000 | 2026 | same (tables 12, 13) |
+| Minimum wage, age 21 and over | EUR 14.71 an hour from 1 Jan; EUR 14.99 from 1 Jul | 2026 | https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026 |
+| Holiday allowance (vakantiebijslag) | at least 8% of gross annual wage | 2026 | https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld |
+| Transition payment cap | EUR 102,000, or one gross annual salary if higher | 2026 | https://www.rijksoverheid.nl/vraag-en-antwoord/ontslag/hoe-hoog-is-de-transitievergoeding-als-ik-word-ontslagen |
+
+## The taxable base
+
+1. **Wage.** Everything the employee gets from the employment: cash, benefits in kind, allowances. Employer Zvw levy is an employer cost; it is not wage and is not deducted from net pay. The wage-tax base, the premium base (employee insurances) and the Zvw base usually match but are recorded separately. Pension contributions follow the actual scheme; there is no standard percentage.
+2. **Which table.** White tables for current employment. Green tables for income from former employment (pensions, many benefits). A one-off payment for current work stays white. Choose the period (day, week, four weeks, month, quarter), the age column (under or over AOW age), and whether the employee asked for the payroll tax credits. An employee asks for the credits with one employer or payer at a time.
+3. **Special remuneration.** Bonuses, a once-a-year holiday allowance and similar payments use the special-remuneration table (white or green). The rate depends on the employee's annual wage, normally the previous year's wage; for a new starter, estimate the full current year. Holiday pay paid monthly joins the monthly wage.
+4. **Do not shortcut the tables.** The bands and credits above are annual. The withholding for a period comes from the official period table or the software that implements it. A net-pay agreement needs a gross-up in the software. The annual figures are for checks and the employee's own return.
+5. **Anonymous rate.** If the employee does not give name, address, place of residence or BSN, withhold 52% with no credits (Wet LB art. 26b). If the BSN is missing for reasons outside both parties' control (for example a municipal delay), the handbook allows normal withholding; record the reason.
+6. **Employer premiums.** AWf low applies to a written indefinite contract that is not on-call, to young workers under 21 with at most 48 paid hours in four weeks (52 in a month), and to BBL trainees. Otherwise AWf high. Revise to high if the contract ends within two months of starting, or if paid hours exceed contracted hours by more than 30% in the year (this test does not apply where contracted hours average more than 30 a week). Aof low for small employers; size uses the 2024 premium wage sum. Even a small employer always pays the high Aof (7.63%) on UWV benefits it passes on to the employee (WW, ZW, WAO/WIA, paid through a werkgeversbetaling or as own-risk bearer), on WAZO benefits (such as pregnancy and maternity benefit), on Toeslagenwet supplements, and on old-scheme wachtgeld. Report these in the Aof uitkering boxes (Handboek §7.5). Whk is on the employer's notice. Premiums and the Zvw run on the capped base with cumulative period calculation (VCR, Handboek ch. 6). At each wage payment: (1) take the cumulative wage from 1 January; (2) take the cumulative maximum for all pay periods so far (EUR 6,617.41 a month, EUR 6,108.38 per four weeks, EUR 79,409 for the year); (3) take the lower of the two; (4) subtract the cumulative base already charged at earlier payments; (5) charge premiums on the difference; (6) round to 2 decimals. A period with no wage adds no room. So when wages vary month to month, unused room from a low month is used later in the year, and the annual cap is not a fresh allowance every month. The employer may recover up to half of the WGA part of Whk from net pay, never the ZW part.
+7. **Benefits and the WKR.** Each benefit is either taxed as wage, exempt under a targeted exemption, valued at nil, or designated as final-levy wage under the WKR. The free space is 2.00% of fiscal wage up to EUR 400,000 and 1.18% above; the excess is taxed at 80% with the employer. The designation may not depart more than 30% from what is customary; up to EUR 2,400 per employee per year is accepted as customary. Detail and the settlement: nl-payroll-tax.
+8. **Director-shareholder.** A working shareholder with a substantial interest takes a customary wage: the highest of the most comparable employment, the highest-paid other employee, and EUR 58,000 (Wet LB art. 12a). If the customary wage for all work is EUR 5,000 or less, no fictitious wage is added. Insurance and Zvw status are determined separately.
+9. **Travel and mileage top-up.** EUR 0.25 per km applies back to 1 January 2026. If you paid EUR 0.23 or less, you may pay the EUR 0.02 difference tax-free with a later wage. If you taxed the excess over EUR 0.23 as wage, correct the earlier returns. If you paid 80% final levy on it, offset that levy in a later return.
+10. **Employment-law inputs.** Pay at least the hourly minimum wage for the age band (youth rates for ages 15 to 20). Holiday allowance at least 8%; a CAO may remove it only if the wage is at least 108% of minimum wage. The transition payment is one third of a monthly salary per full year of service plus a pro rata part, capped as in the table.
+11. **Sickness pay and statutory leave.** A sick employee keeps 70% of wage for 104 weeks, and for the first 52 weeks at least the statutory minimum wage; the wage counted is capped at the daily maximum premium wage (BW Book 7 art. 629(1)). Statutory leave is at least four times the agreed weekly working time per year (art. 634(1)). That statutory minimum expires six months after the end of the year in which it was earned, unless the employee could not reasonably take it (art. 640a).
+
+## Deadlines and filing
+
+- **Registration.** Register as employer before the first wage payment; the Belastingdienst assigns a loonheffingennummer and the return period (month or four weeks).
+- **Return and payment** are due on the same day. Monthly 2026: one month after the period, for example September due 31 October 2026, December due 31 January 2027. Four-weekly: period 10 (7 September to 4 October) due 4 November 2026; period 13 due 31 January 2027. Use the official calendar. Payment must be received by the due date.
+- **Nil returns.** A nihilaangifte when there were no employees in the period; a nulaangifte when there were employees but no wage was paid (for example an unpaid director). Keep filing until the Belastingdienst confirms deregistration.
+- **Filing route.** Payroll software or an intermediary, or Mijn Belastingdienst Zakelijk for a small payroll. A rejected message is not a filed return.
+- **Corrections.** Before the deadline, send the complete return again. After the deadline, correct in a later return; prior-year and specific cases use a separate correction. If you find the error yourself and a separate correction is needed, send it within 8 weeks of discovery.
+- **Objection.** Disagreeing with the law as applied (not an error) is by objection within 6 weeks after payment.
+- **Employee documents.** A payslip at the first payment and whenever it changes. An annual statement (jaaropgaaf) after the year end, reconciled to the final returns.
+- **WKR final levy** is settled in the second return period of the next year (February 2027 for monthly filers).
+
+## Penalties and interest
+
+- **Late filing.** Grace period of 7 calendar days after the due date. Later or not at all: EUR 83. An incorrect or incomplete return can also attract EUR 83. Repeated or exceptional cases: up to EUR 6,709.
+- **Late payment.** Grace period of 7 calendar days. Within it, no penalty if the previous return was paid on time and in full; otherwise 3%, minimum EUR 50, maximum EUR 6,709. After it: 3% of the late amount, minimum EUR 50, maximum EUR 6,709. Unpaid amounts found later are assessed (naheffingsaanslag) with the same 3% penalty.
+- **Corrections** that lead to extra payment normally count as late payment too.
+- **Interest.** On a negative correction, if the refund takes longer than 8 weeks, interest runs from 8 weeks after the correction is received.
+- **Director liability.** Directors can be personally liable for unpaid wage tax; report an inability to pay promptly (Invorderingswet 1990).
+
+## Cross-border points
+
+- **Withholding versus insurance.** Decide separately whether Dutch wage tax applies (domestic law and the treaty) and whether the employee is insured for Dutch social security (EU Regulation 883/2004 or a bilateral agreement; an A1 or certificate of coverage). A worker can owe Dutch wage tax and be insured abroad, or the other way round. Use the table column that matches the tax and insurance position.
+- **Foreign employers** without a permanent establishment can register voluntarily to run Dutch payroll.
+- **Expat scheme (30% ruling).** Up to 30% tax-free in 2026 if the Belastingdienst has decided and the salary norm is met; detail and the fall to 27% from 2027 in netherlands-30-percent-ruling.
+- **Residence, treaties and the 183-day test:** nl-cross-border.
+
+## Worked examples
+
+**Example 1. Annual check of wage tax for a full-year employee.** An employee under AOW age earns EUR 48,000 in 2026 from one employer, asked for the credits there, and has no other income. Band 1 is 38,883 at 35.75%; band 2 is the remaining 9,117 at 37.56%. The general credit falls by 6.398% of the wage above 29,736. The employment credit falls by 6.510% of the wage above 45,592. Over the year the period tables should withhold close to this total; small differences come from period rounding.
+
+```oa-check
+name: Employee EUR 48,000, under AOW age, credits with this employer (2026)
+inputs:
+  wage: 48000
+steps:
+  - band1: min(wage, 38883) * 0.3575
+  - band2: max(min(wage, 78426) - 38883, 0) * 0.3756
+  - band3: max(wage - 78426, 0) * 0.495
+  - gross: band1 + band2 + band3
+  - ahk: max(3115 - max(wage - 29736, 0) * 0.06398, 0)
+  - ak: max(5685 - max(wage - 45592, 0) * 0.0651, 0)
+  - withheld: max(gross - ahk - ak, 0)
+expected:
+  gross: 17325.02
+  ahk: 1946.47
+  ak: 5528.24
+  withheld: 9850.31
+```
+
+**Example 2. Employer premiums on a wage above the monthly cap.** A small employer pays EUR 7,000 a month, every month, on a written indefinite contract (AWf low). The employer's Whk notice says 1.5% (an assumed figure for the example). The premium base is capped at EUR 6,617.41 a month. Because every month is over the cap, cumulative calculation gives the same base each month. Zvw uses the same cap.
+
+```oa-check
+name: Small employer, EUR 7,000 monthly wage, capped premiums (2026)
+inputs:
+  wage: 7000
+  cap: 6617.41
+  whk: 1.5
+steps:
+  - base: min(wage, cap)
+  - awf: base * 0.0274
+  - aof: base * 0.0627
+  - wko: base * 0.005
+  - whk_amt: base * whk / 100
+  - zvw: base * 0.061
+  - total: awf + aof + wko + whk_amt + zvw
+expected:
+  base: 6617.41
+  awf: 181.32
+  aof: 414.91
+  wko: 33.09
+  whk_amt: 99.26
+  zvw: 403.66
+  total: 1132.24
+```
 
 ## Ask the client first
 
-Record these inputs for each legal employer and each employee; a company-wide gross salary total is insufficient:
+1. Is the employer registered, which return period does it have, and what does its current Whk notice say? Is it small, medium or large for Aof?
+2. For each employee: identity and BSN, date of birth (AOW age, youth minimum wage), country of residence and where they work.
+3. The contract: indefinite or fixed, on-call or not, contracted hours. This decides AWf low or high.
+4. Has the employee asked for the payroll tax credits with this employer, and do they have another job or a benefit?
+5. Is anyone a director with a substantial interest, an expat with a 30% decision, or working partly abroad?
+6. What benefits and allowances are paid (car, travel, home working, meals, gifts), and which are designated under the WKR?
 
-- Employer registration and loonheffingennummer/subnumber; assigned return period and payment reference; sector and current Whk notice; Aof size classification; any self-insurance or public-sector status; payroll provider and pension/CAO arrangements.
-- Verified identity, BSN or documented pending-BSN circumstances, legal name, date of birth, actual residence and work countries, starting/leaving dates and income-relationship number (IKV). Obtain the dated, signed payroll-data statement and request for loonheffingskorting.
-- Written contract, indefinite/fixed term, on-call status, contracted and paid hours, BBL documents, changes and previous payroll cumulative balances. Check any young-worker AWf exception by the actual period's paid hours.
-- Basic cash salary, overtime, bonuses, holiday pay, sickness and leave, benefits in kind, company car, employee contributions, pension deductions, reimbursements, expense evidence and WKR designation. Identify separately cash paid and taxable noncash items.
-- Tax/insurance position, table country group, AOW status, credit election, special-remuneration annual wage, expat decision and remaining term, DGA status, garnishments and any net-pay agreement.
+## Sources
 
-Reconcile the employee list to HR, payroll and the previous return. Ask for missing documents and calculate only the components supported by them. Do not invent a Whk percentage, a pension percentage, net pay, or eligibility for a low premium. If low-AWf documentation is missing, assess the high-rate rule and statutory exceptions explicitly; do not relabel every worker as temporary. [Handbook chapters 2–4, 7–9, 11 and 29](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
+| Source | URL | Read on |
+|---|---|---|
+| Belastingdienst, rates appendix loonheffingen 2026, edition 4 (25 June 2026) | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf | 2026-10-27 |
+| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), ch. 6, 7 (incl. §7.5), 9, 13, 14 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-27 |
+| Belastingdienst, period codes and filing and payment dates 2026 | https://download.belastingdienst.nl/belastingdienst/docs/tijdvakcodes-aangiftedatums-betaaldatums-lh2101t62fd.pdf | 2026-10-27 |
+| Wet op de loonbelasting 1964, art. 12a, 20a, 22, 26b | https://wetten.overheid.nl/BWBR0002471/2026-01-01 | 2026-10-27 |
+| Belastingdienst, mileage allowance EUR 0.25 (news of 25 June 2026) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte | 2026-10-27 |
+| Rijksoverheid, minimum wage 2026 | https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026 | 2026-10-27 |
+| Rijksoverheid, holiday allowance | https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld | 2026-10-27 |
+| Burgerlijk Wetboek Book 7, art. 629, 634, 640a | https://wetten.overheid.nl/BWBR0005290/2026-01-01 | 2026-10-27 |
+| Rijksoverheid, transition payment | https://www.rijksoverheid.nl/vraag-en-antwoord/ontslag/hoe-hoog-is-de-transitievergoeding-als-ik-word-ontslagen | 2026-10-27 |
 
-### Missing identity information
-
-Missing required identity/address/BSN information can trigger the **52% anonymous rate**, without payroll tax credits; insurance/Zvw ceilings are then not applied in the usual way. However, where the employer can demonstrate that the missing BSN is outside both employer and employee control, such as municipal processing delay, the authority permits omission of the anonymous rate. Document the reason, registration efforts and other required identity checks; seek the authority's agreement if uncertain. Use the employee number in the return while the BSN is pending. Do not invent a BSN. Once valid details arrive, assess current-year wage-tax corrections and the separate cumulative insurance/Zvw treatment under chapter 6 rather than reversing every prior premium automatically. [Handbook §§2.3, 2.6 and 6.5](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-## The method, step by step
-
-### Establish wages and the correct period
-
-Determine the moment the wage is enjoyed and the relevant wage period, which is not always the return period. Identify money wages, taxable noncash benefits and permitted deductions, then record the wage-tax, social-insurance and Zvw bases separately. Usually they align, but exceptions and coverage differences matter. Pension treatment follows the actual qualifying pension arrangement; there is no universal employee pension percentage. A net-pay agreement needs a gross-up calculation using payroll software and its iteration, not subtraction from an assumed gross amount. [Handbook chapters 4–6 and §§9.4, 11.2](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-### Select the withholding table
-
-1. Select **white tables for current-employment wages and equivalent payments**; select **green tables for former-employment income and equivalent payments**, such as pensions and many termination payments. A payment being one-off does not make it green. Salary during the ordinary statutory sickness-pay period normally remains white; prolonged inactivity or special benefit combinations require the handbook's separate rules.
-2. Select the year, wage period, residence category, age/AOW column, tax and national-insurance coverage, and whether the employee has requested the payroll tax credit. The employee should have that credit applied by only one employer/benefit payer at a time.
-3. Apply the official period table or its official calculation specification implemented by the payroll software. Keep the table version, selected row/column or software calculation trace and the recorded employment credit. Do not compute monthly withholding by multiplying the entire salary by the first annual bracket.
-4. For an annual bonus, annual holiday payment or other qualifying special remuneration, use the appropriate **white or green special-remuneration table**, based on the nature of the wage. Establish its annual-wage input under §9.3.6: normally the previous calendar year's wage; annualise a partial previous year; for a new starter estimate the current full year's wage, including foreseeable incidental payments. Include the credit-adjustment percentage where applicable. Holiday pay paid each month normally joins that month's ordinary wage instead.
-
-[Official table selector](https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/hulpmiddel-loonbelastingtabellen) · [Handbook §§9.3 and 24.1](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-### Annual rate reference — not a monthly net-pay calculator
-
-For a fully Dutch tax- and nationally insured person below AOW age throughout the relevant calculation, the 2026 combined annual bands are:
-
-| Annual wage band | Combined rate |
-|---|---:|
-| Up to and including €38,883 | 35.75%  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| Above €38,883 through €78,426 | 37.56%  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| Above €78,426 | 49.50%  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-
-The first band comprises wage tax **8.10%**, AOW **17.90%**, Anw **0.10%** and Wlz **9.65%**. For someone already at AOW age, AOW premium drops out and the first combined rate is **17.85%**. The first-band ceiling for someone born in 1945 or earlier is **€41,123**; use the correct AOW table and transition calculation rather than assuming one ceiling fits everyone. [Appendix table 1](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf).
-
-The under-AOW general credit's maximum is **€3,115**, with reduction above **€29,736** and exhaustion at **€78,426**. The employment credit reaches a maximum **€5,685**, begins reducing above **€45,592** and is fully reduced at **€132,920**. The elderly credit's maximum is **€2,067**, reducing above **€46,002** and exhausted at **€59,782**. These are annual reference figures: do not subtract annual maxima from a month's withholding, apply every credit to every worker, or add the credit again after using a table that already includes it. Table 2 contains age-specific amounts and the full build-up/reduction formulas. [Appendix table 2](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf).
-
-### Calculate employer insurance and Zvw separately
-
-Confirm the employee is insured for each component. Use the employer's actual decisions and the applicable **voortschrijdend cumulatief rekenen (VCR)** method: determine the cumulative capped base through the current wage period, subtract the base already used, then apply the relevant component rate to that period's base increase. Multiple IKVs, starts/leavers, changes of category and benefit payments may require allocation under chapters 5–8. An annual ceiling is not a fresh allowance every month.
-
-| 2026 component | Rate / parameter | Application |
-|---|---:|---|
-| AWf low | 2.74% | Written indefinite employment that is not on-call, or a qualifying exception  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| AWf high | 7.74% | Other insured employment unless an exception applies  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| Aof low | 6.27% | Small-employer ordinary insured wages  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| Aof high | 7.63% | Medium/large employer ordinary wages and specified benefit payments even at small employers  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| Wko surcharge | 0.50% | On the combined Aof base; record separately  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| Whk | Employer's notice/decision | Use actual WGA and ZW components; no national average substitute |
-| Ufo | 0.68% | Relevant government employment; not an extra levy on ordinary private-employer AWf payroll  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| Employer Zvw levy | 6.10% | Generally current-employment wages where employer levy applies  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| Withheld Zvw contribution | 4.85% | Relevant pensions/benefits and non-employee-insured DGAs or opting-in workers; deducted from net wage  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-
-The normal maximum annual premium/contribution wage is **€79,409**; the published monthly maximum is **€6,617.41** and four-week maximum **€6,108.38**. Use the published period amounts and VCR; do not reconstruct them by an arbitrary rounding convention. Anonymous-rate situations are an exception. [Appendix tables 9, 11 and 12](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) · [Handbook chapters 6–8](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-**Employer Zvw is the employer's cost and is not taxable employee wage.** Do not add it to the employee's wage-tax base or deduct it from ordinary employee net pay. A DGA's treatment depends on employee-insurance status; the title alone does not determine the Zvw branch. Employer insurance premiums are normally employer costs, but the employer may recover up to **50% of the WGA component** from net pay; it cannot recover the ZW component this way. [Handbook §§7.6.9 and 8.2](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-For 2026 employer size uses the **2024 premium wage sum**. Small is **up to and including €1,082,500**; medium ends at **€4,330,000**. The low Aof rate therefore includes the exact small-employer boundary. Whk treatment differs by size; use the notice. Start-ups and business transfers have special classification rules. [Appendix table 9](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) · [Handbook §§7.5–7.6](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-### AWf exceptions and retrospective review
-
-Keep the written indefinite/non-on-call contract evidence. Low-rate exceptions include qualifying BBL agreements, young workers who are under age twenty-one at the start of the return period with at most **48 paid hours in a four-week period or 52 in a month**, and specified benefit payments. Check the BBL documentation and agency-clause exclusion; use the handbook's benefit rubrics for benefit payments.
-
-Review low premiums if employment ends no later than two months after starting, and at year-end if paid hours exceed contracted hours by **more than 30%**. For the overtime test, first check whether average contracted hours across the relevant low-rate contracts exceed thirty hours weekly; if they do, that revision test does not apply. Exactly thirty hours is not that exception. The calculations cover the relevant contracts over the year, not just one month's overtime. Qualifying BBL/young-worker exception contracts have their own exclusions from revision; business transfers and successive contracts require the detailed method. Record a decision and correct affected periods where required. [Handbook §§7.2–7.3](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-## Benefits and the work-cost scheme (WKR)
-
-For every reimbursement, provision or benefit, record its date, recipient/group, purpose, value including relevant VAT, supporting evidence, employee contribution and treatment:
-
-1. Is it wage at all, or an intermediary employer expense? Document that distinction.
-2. Does a targeted exemption or nil valuation apply? Satisfy the actual conditions; a work connection alone is insufficient. Targeted exemptions also require designation as final-levy wage; the authority presumes this designation where the benefit is no greater than the exemption norm. Keep that designation distinct from a nil valuation.
-3. Otherwise decide, no later than provision/payment, whether to designate permissible customary benefits as final-levy wage or tax them to the employee. Some items, including ordinary private use of a company car, cannot simply be put into free space. Do not retrospectively redesignate wages just because unused space is discovered; genuine administrative errors are different.
-4. Calculate annual free space from the relevant actual fiscal payroll: **2.00% through €400,000 plus 1.18% above it**. Combine the same employer's subnumbers. If former-employment wages exceed **10%** of total fiscal wages, exclude those former-employment wages from the free-space base; the handbook also excludes artists'/professional athletes' fees. A midyear employer does not annualise actual wages. [Handbook chapter 10](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-5. Compare designated nonexempt final-levy wages with free space. Employer final levy is **80% of the excess**, with no further employee-insurance/Zvw charge on that final-levy amount. Unused space does not carry forward. [Handbook chapter 10](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-6. Reconcile and report the final levy by the **second return period of the next calendar year**: for a monthly employer's 2026 WKR, the February 2027 return. If withholding obligations end during the year, settle in the last applicable return. A qualifying group election changes the combined base and responsible filer; check its conditions and do not give each group member a separate first-band allowance inside one combined calculation.
-
-[Handbook chapter 10 and §4.2](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf) · [WKR overview](https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/werkkostenregeling).
-
-### Customary-use test
-
-The designation must not depart by more than **30%** from what is customary in comparable circumstances. The authority treats a total of **€2,400 per person per year**, applied reasonably, as customary; this is not a per-event allowance or a hard ceiling banning larger customary benefits. Do not use it to replace minimum wages or justify an unusual conversion of salary. Above it, substantiate the nature, value, comparators and who bears the tax. Splitting one benefit into transactions does not resolve the annual assessment. [Handbook §4.2](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-### Common reimbursements — verify conditions
-
-| Item | 2026 payroll treatment |
-|---|---|
-| Qualifying own-transport business/commuting travel | Targeted exemption up to €0.25 per kilometre; retain distance and journey evidence. Distinguish actual public-transport reimbursement and employer-provided transport.  [Source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte) |
-| Qualifying home-working day | Up to €2.45 per day. Do not combine its exemption with exempt travel to a fixed workplace on the same day, including actual use of employer-provided transport. A separate business trip can qualify alongside home working. Check the fixed-allowance method separately.  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| Workplace meal without more-than-incidental business character | Norm value €4.05 per meal, less qualifying employee contribution; assess employee wage or WKR designation. A genuinely business meal may instead qualify for exemption.  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| Business relocation | Actual moving household-goods costs plus up to €7,750 for other qualifying relocation costs, subject to the business-purpose conditions.  [Source](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) |
-| Necessary computers, tools, telephone/internet | Apply the necessity criterion; when no longer needed, require return or payment of residual value. A cafeteria arrangement does not qualify under this exemption. Do not exempt merely a loosely estimated business-use proportion. |
-| Training / professional knowledge | Assess the specific employment-related targeted exemption, purpose and evidence; not every course qualifies. |
-| Workplace refreshments/facilities/clothing | Check the exact workplace and nil-valuation conditions; cash reimbursement is not automatically equivalent to providing an item. |
-| Gifts, party or bicycle | Classify the actual arrangement and location. A bicycle given outright, a loaned company bicycle and a workplace event do not share one universal treatment. |
-
-[Appendix tables 12–13](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) · [Handbook chapters 22–23](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-**Mileage transition:** the higher €0.25 amount applies retroactively from January 2026 under the approved policy decision anticipating legislation in the Tax Plan 2027. For an amount previously paid at €0.23 or less, an eligible top-up can be paid with a later salary. If the extra amount was already taxed as employee wages, correct the affected returns. If it was designated as WKR wage and final levy already paid, the official update permits settlement in a following return. Apply its separate rules for netting and cafeteria arrangements. This is an approved current administrative treatment, not a reason to apply every proposed 2027 measure early. [Official mileage update](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte).
-
-## Directors and expatriates
-
-For a working substantial-interest shareholder, assess customary wage against the highest of the most comparable employment, the highest-paid employee in the relevant employer/connected company, and the **€58,000** 2026 statutory benchmark. A lower supported comparable wage can justify a different outcome; part-time work does not itself authorise automatic proportionate reduction. Document duties, hours, comparators and any agreed position. If the combined customary annual wage for all work for the body and connected bodies is no more than five thousand euros, article 12a has a separate small-work exception: actual wage paid remains taxable, but an unpaid fictitious wage need not be added under that exception. Refer startup and loss-related exceptions for their specific conditions; they are not automatic permission to reduce salary. Determine employee-insurance and Zvw status separately; there is no separate generic 'DGA monthly tax table'. [Handbook §18.1](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf) · [Wet LB, article 12a](https://wetten.overheid.nl/BWBR0002471).
-
-For an incoming employee under the expat scheme, obtain the decision, recruitment/residence history, expertise basis, salary excluding the allowance, start/end dates, previous Dutch presence and any employer change. A tax-free allowance is **up to 30% in 2026**, not automatic for every foreign employee. Ordinary expertise requires taxable annual salary **more than €48,013**, or **more than €36,497** for a qualifying under-thirty master's graduate; check research/medical-training exceptions and prorating. The maximum duration is five years, subject to reductions. The annual WNT base cap is **€262,000**, producing a maximum **€78,600** allowance before applicable time apportionment. Do not stack the forfait with the same actual extraterritorial costs; record the permitted annual choice. The 2027 percentage and salary transitions depend on when the employee first used the scheme; route those to the specific expat method and recheck current law. [Handbook §19.4](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf) · [Appendix tables 12–13](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf).
-
-## Minimum pay, leave and employment inputs
-
-Payroll tax calculation does not establish the employment-law entitlement. Obtain the applicable CAO, contract, hours and leave records first.
-
-- **Minimum wage:** age twenty-one and over: **€14.71 per hour from January 2026**, **€14.99 from July 2026**. Use the exact youth/BBL category for younger workers. There is no universal statutory monthly minimum independent of hours; include the relevant worked, paid-leave and paid-sickness hours. Recheck pay when age or half-year changes. [Official 2026 minimum wages](https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026).
-- **Overtime and additional annual payments:** determine entitlement from the CAO/contract and minimum-wage rules. Do not invent a customary overtime multiplier, pension deduction or thirteenth-month entitlement. Ordinary working-time limits are twelve hours per shift and sixty in a week, with averages of fifty-five over four weeks and forty-eight over sixteen weeks. The four-week rule has permitted collective variations; young/pregnant workers, night work and certain occupations need separate limits and rest checks. [Working-time rules](https://www.rijksoverheid.nl/vraag-en-antwoord/werktijden/wettelijke-regels-werktijden-en-rusttijden) · [Holiday-pay and overtime basis](https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld).
-- **Holiday allowance:** normally at least **8%** of qualifying gross earnings, including overtime; exclusions and CAO/high-earner agreements affect the basis/entitlement. Profit and year-end distributions do not automatically enter its statutory base. Accrue the actual entitlement and pay at least annually under the agreed schedule; do not assume May is a universal deadline. [Holiday pay](https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld).
-- **Holiday hours:** annual statutory entitlement is four times weekly working hours, proportionate where applicable. Track statutory and additional contractual leave separately. Statutory leave normally expires six months after the accrual year, but inability to take it and longer agreed periods can change the outcome; additional leave normally has a five-year limitation. Do not erase balances without checking those conditions. Settle remaining holiday entitlement when employment ends. [Entitlement](https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/nulurencontract-en-vakantiedagen-en-vakantiegeld) · [Taking and settling leave](https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-kan-ik-mijn-vakantiedagen-opnemen).
-- **Sickness:** ordinary employer wage continuation is normally up to two years. The first year has at least **70%** of the relevant wage with the minimum-wage floor; the second normally has **70%** without that floor. Check the applicable statutory cap, contract/CAO supplementation, shorter special categories and any extension. Pregnancy-related illness and organ donation have different treatment; a fixed-term contract ending during sickness normally transfers the case to UWV rather than requiring the former employer to continue normal wages indefinitely. Maintain reintegration records and use the correct wage/benefit codes. [Amount](https://www.rijksoverheid.nl/vraag-en-antwoord/ziekteverzuim-van-het-werk/hoeveel-loon-krijg-ik-doorbetaald-als-ik-ziek-ben) · [Duration and contract end](https://www.rijksoverheid.nl/vraag-en-antwoord/ziekteverzuim-van-het-werk/wordt-mijn-loon-doorbetaald-als-ik-ziek-word) · [Handbook §§9.3.2 and 9.6](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-- **Maternity:** ordinarily at least sixteen weeks combined pregnancy/birth leave, starting within the permitted four-to-six-week window before the day after the due date. UWV benefit is based on **100%** of daily wage up to maximum daily wage; the employer usually applies for and passes through the benefit. Multiple births, hospitalisation and other special circumstances change duration. Reconcile the UWV decision, employer supplement and payroll rubrics. [Duration](https://www.rijksoverheid.nl/vraag-en-antwoord/zwangerschap-en-geboorte/zwangerschapsverlof-en-bevallingsverlof-berekenen) · [Application and benefit](https://www.rijksoverheid.nl/vraag-en-antwoord/zwangerschap-en-geboorte/aanvragen-zwangerschapsverlof-en-zwangerschapsuitkering).
-- **Partner leave:** one normal working week at full employer pay, taken within four weeks of birth; after that, up to five additional weeks within six months, with UWV benefit of up to **70%** of capped daily wage. Check the decision and contractual top-ups; do not assume every amount is ordinary salary. [Partner leave](https://www.rijksoverheid.nl/themas/werk/geboorteverlof-en-partnerverlof/geboorteverlof-voor-partners).
-- **Termination:** check eligibility before calculating a transition payment. Employer dismissal/nonrenewal generally qualifies, but resignation, culpability, age and other exceptions matter. The normal method uses one-third of the defined monthly salary for each full year, plus the official proportional remainder calculation. The 2026 ceiling is **€102,000**, or one annual gross salary if higher. Refer disputed eligibility, settlement agreements and the salary-component definition for legal review. [Eligibility](https://www.rijksoverheid.nl/vraag-en-antwoord/ontslag/heb-ik-recht-op-een-vergoeding-als-ik-word-ontslagen) · [Calculation](https://www.rijksoverheid.nl/vraag-en-antwoord/ontslag/hoe-hoog-is-de-transitievergoeding-als-ik-word-ontslagen).
-
-## Submit, pay and correct
-
-Prepare the collective return and employee records from reconciled payroll. Validate BSN/IKV, dates, contract indicators, insurance flags, paid hours, wage bases and the collective sums. Separate tax withholding from employer premiums, final levies and authorised reductions. Maintain a payroll journal reconciling gross cash pay, noncash tax adjustments, employer expense, employee net pay and liabilities to Belastingdienst, pension providers and employees. Payroll tax treatment of benefits does not settle their separate VAT treatment.
-
-Use the assigned monthly/four-week period and **official calendar**, not a generic month-end formula. For example, September 2026 monthly payroll is due **31 October 2026**; four-week period ten ends **4 October 2026** and is due **4 November 2026**. December and four-week period thirteen are due **31 January 2027**. Read the calendar and the employer's filing letter together. Payment must be received by the deadline; the handbook instructs earlier receipt if that date falls on a weekend or public holiday. Use the current payment details and correct period reference shown by the authority. [2026 return calendar](https://download.belastingdienst.nl/belastingdienst/docs/tijdvakcodes-aangiftedatums-betaaldatums-lh2101t62fd.pdf) · [Handbook §13.4](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-With at most ten employees, the authority's Mijn Belastingdienst Zakelijk software can be used; larger payrolls require suitable commercial software/Digipoort or an intermediary. Check current login/certificate arrangements. Keep the submission, acceptance/error messages and payment-bank evidence. A rejected technical/logical message is not a completed filing. Do not stop filing because no cash salary was paid: distinguish **nihilaangifte** when there are no employees from **nulaangifte** when employees remain but no wages are paid. Continue until the authority confirms deregistration ends the obligation. [Filing guidance](https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/loonaangifte-aangifte-loonheffingen) · [Handbook chapter 13](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-For an error before the deadline, resend the complete return; a supplementary return is an alternative only where the filing software supports it. The authority’s online software uses a complete replacement. After the deadline, normally send the correction with the next or following return; prior-year and other specified situations use the separate correction route in chapter 14. A self-discovered error requiring a standalone correction must be corrected within eight weeks of discovery; follow a specific official correction instruction deadline where issued. For corrections after the deadline, include the complete collective totals and the complete records for affected employees; include all employee records where the authority’s software requires them. Recompute affected cumulative payroll, give corrected employee documents and reconcile the correction payment/refund; do not wait several years because a historical correction facility exists. Disagreement with a correctly computed amount is a different route: preserve the **six-week objection deadline after payment**. An assessment/penalty has its own decision and appeal instructions. [Correction versus objection](https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/hoe-maak-ik-bezwaar-tegen-mijn-aangifte-loonheffingen) · [Handbook chapter 14](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-Late filing and late payment are separate defaults. Ordinary late filing beyond the seven-calendar-day leniency period can attract **€83**; ordinary payment default is **3%**, minimum **€50**, maximum **€6,709**. For payment within the grace period, the previous return's timely/full payment matters. Exceptional repeated defaults or deliberate/grossly negligent conduct can attract other penalties; a grace period does not change the legal deadline. Escalate inability to pay and potential director liability promptly, including the separate inability-to-pay notification requirement. [Handbook §§13.5–13.6](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-Give a payslip at the first payment and whenever payment changes; electronic delivery needs consent and an accessible savable statement. Include gross-pay components, deductions, contracted hours, contract indicators, pay period, applicable hourly minimum and employer/employee names. After year-end issue the jaaropgaaf with annual taxable wage, withheld wage tax/national insurance, employment credit, BSN, withheld Zvw, employer Zvw and employee-insurance totals. This method does not invent a universal February deadline. Reconcile the annual statement to final/corrected returns. Complete pension-provider reporting under the actual scheme and assess third-party-payments reporting separately. For a withholding employer, qualifying payments to nonemployees must be reported before February of the following year; check the specific exceptions for volunteers, invoices showing payable VAT, non-natural persons and opting-in payments. There is no blanket monetary reporting threshold. [Handbook §1.3 and chapters 12 and 15](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-## Worked and decision checks
-
-These examples are hypothetical, use stated 2026 conditions and illustrate final rounding to cents. They do not replace payroll software's statutory table, cumulative-base or intermediate-rounding rules.
-
-**A — Ordinary private employer cost.** Assume one full month's insured wage of **€4,000**, a qualifying low-AWf contract, small-employer low Aof, identical SV/Zvw bases, no cap adjustment, and an actual assumed Whk decision of **1.50%**. AWf is **€109.60**, Aof **€250.80**, Wko **€20.00**, Whk **€60.00**, and employer Zvw **€244.00**. The five contributions total **€684.40**; salary plus these contributions is **€4,684.40**, before pension, holiday accrual and other employment costs. Ufo is absent. Zvw is not added to taxable wages. Employee withholding and net pay remain dependent on the correct table and employee data. [Rates](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) · [Handbook chapters 7–8](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-**B — Contract difference.** On the same hypothetical **€4,000** base, if high AWf genuinely applies, that premium is **€309.60** rather than **€109.60**: an additional **€200.00**. Do not infer this difference for a temporary worker who qualifies for the young-worker or BBL exception. [Rates](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) · [Handbook §7.2](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-**C — WKR.** Assume actual eligible fiscal payroll **€800,000**, no excluded former-employment wages, no group election, and **€16,000** of correctly valued/designated customary benefits consuming free space. Free space is **€12,720**; excess **€3,280**; employer final levy **€2,624**. A staff party, meal or bicycle must first pass its own classification: these assumptions cannot substitute for that analysis. [Appendix table 13](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) · [Handbook chapter 10](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-**D — Holiday allowance.** Assume **€48,000** of earnings all eligible for an **8%** allowance and no agreed exception. The gross allowance is **€3,840**. A single annual payment connected with current employment uses the white special-remuneration method, not the green table merely because it is annual. Its net amount cannot be obtained by deducting one guessed flat rate. [Holiday pay](https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld) · [Handbook §9.3.6](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-**E — Mileage top-up.** Assume **1,000** eligible 2026 kilometres already reimbursed at **€0.23** each. The permitted **€0.02** top-up is **€20.00**, subject to the evidence and appropriate route. If the difference was previously taxed as wages, use corrections rather than paying a second identical benefit. [Mileage update](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte).
-
-**F — Expat salary boundary.** Assume a valid decision, full-year eligibility and total agreed remuneration inclusive of the allowance of **€72,000**. A **30%** allowance is **€21,600** and taxable salary **€50,400**, above the ordinary salary floor. Still check the decision and all conditions. Taxable salary exactly **€48,013** does not satisfy the ordinary 'more than' test. [Handbook §19.4](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-**G — AWf boundary.** An ordinary qualifying contract averaging exactly thirty hours weekly, with paid annual hours exceeding contracted hours by exactly **30%**, does not trigger the 'more than' overtime revision rule. Above **30%**, evaluate revision because the more-than-thirty-hour exception is unavailable. Check the separate early-termination and statutory-exception rules too. [Handbook §7.2.3](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-**H — Missing BSN.** Other identity requirements are satisfied but municipal processing prevents a BSN despite timely application. Investigate/document the outside-control concession before applying anonymous withholding. Mere failure to ask for a BSN does not establish that concession. [Handbook §§2.3 and 2.6](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-**I — WKR reasonableness.** A customary designated annual benefit above **€2,400** is not automatically forbidden; obtain comparable evidence. Several payments below that amount do not each receive a separate per-event safe amount. [Handbook §4.2](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-**J — Aof boundary and benefits.** An ordinary employer's 2024 premium wage sum exactly **€1,082,500** is within the small category. Ordinary wages may use low Aof, but a qualifying UWV/WAZO benefit through that employer still uses its prescribed high-Aof branch. [Appendix table 9](https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf) · [Handbook §7.5](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf).
-
-## Deliverable and final controls
-
-Produce a dated payroll workpaper stating the entity, period, employee scope, source/table versions, actual inputs, exclusions and unresolved questions; employee-by-employee gross-to-net trace; component bases and premiums; WKR register/reconciliation; payroll journal; return and payment calendar; and evidence of acceptance/payment. Flag differences from the prior run and quantify corrections. Route international coverage, uncertain employment status, disputed dismissal, DGA comparators, expat transitions and complex benefit combinations to the appropriate specialist before presenting a filing amount as settled. Preserve the source decision and calculation behind every changed figure.
-
-## When to refuse or refer
-
-- Do not give a final filing amount when identity, coverage, contracts, cumulative wages, the applicable table or employer premium decisions are missing. Request those inputs first.
-- Refer cross-border allocation and A1 disputes, employment-status disputes, agency chains, special public-sector schemes, disputed dismissal, uncertain DGA comparators and expat transitions.
-- For complex benefit combinations, use the handbook’s specific wage and insurance rubrics before applying this ordinary-payroll method.
+Not yet confirmed: the old version's employment-law points were not re-read today and are left out until checked (maternity and partner leave and their UWV benefits, working-time limits, payslip content list, third-party payments reporting); the exact customary-wage exceptions for start-ups and loss-making companies; the overtime revision method for multiple contracts and business transfers; the employee-count limit for filing in Mijn Belastingdienst Zakelijk; director-liability reporting deadlines in the Invorderingswet 1990.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,0 +1,661 @@
+
+
+     
+	  
+    
+	
+
+Agencia Tributaria: Instrucciones - Modelo 202. Instrucciones 2025 y siguientes
+ 
+
+
+  	
+[[ID:body]]
+
+  
+	  
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	
+
+Inicio
+
+Todas las gestiones
+
+Impuestos, tasas y prestaciones patrimoniales
+
+Impuesto sobre Sociedades
+
+Modelo 202. IS. Impuesto sobre Sociedades e Impuesto sobre la Renta de no Residentes (establecimientos permanentes y entidades en régimen de atribución de rentas constituidas en el extranjero con presencia en territorio español). Pago Fraccionado.
+
+
+
+
+ 
+			 
+				
+[[ID:acc-main]]
+
+[[ID:js-nombre-canal]]
+
+Instrucciones
+Saltar índice de la informaciónÍndice
+Índice:
+
+[[ID:indicePaginado]]
+
+Modelo 202. Instrucciones 2025 y siguientes
+
+Instrucciones para períodos impositivos iniciados en 2023 y 2024
+
+Instrucciones para períodos impositivos iniciados en 2018 a 2022
+
+[[ID:js-nombre-canal-paginado]]
+
+Modelo 202. Instrucciones 2025 y siguientes
+
+MODELO 202
+
+PAGO FRACCIONADO
+
+IMPUESTO SOBRE SOCIEDADES
+
+IMPUESTO SOBRE LA RENTA DE NO RESIDENTES (ESTABLECIMIENTOS PERMANENTES Y ENTIDADES
+EN RÉGIMEN DE ATRIBUCIÓN DE RENTAS CONSTITUIDAS EN EL EXTRANJERO CON PRESENCIA EN TERRITORIO ESPAÑOL)
+
+INSTRUCCIONES
+
+PERÍODO 2025 Y SIGUIENTES
+
+La presentación del modelo 202 se realizará exclusivamente por vía telemática.
+
+A tener en cuenta: la normativa sobre tipo impositivo del Impuesto sobre Sociedades se ha visto modificada por la Ley 7/2024, de 20 de diciembre (art. 29 y Disposición Transitoria 44º de la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades).  Pueden consultarse los tipos impositivos aplicables en el apartado de “Qué es la base imponible y cómo se determina en el Impuesto sobre Sociedades”, sub apartado “Tipo impositivo” del área de Impuesto sobre Sociedades de la sede electrónica de la AEAT.
+
+1) IDENTIFICACIÓN
+
+Se consignarán los datos identificativos del declarante: NIF y apellidos y nombre o razón social.
+
+Las entidades que tributen conjuntamente al Estado y a las Diputaciones Forales del País Vasco y/o Comunidad Foral de Navarra, a las que sea aplicable la correspondiente normativa foral del Impuesto sobre Sociedades según lo dispuesto en el Concierto Económico con la Comunidad Autónoma del País Vasco o en el Convenio Económico entre el Estado y la Comunidad Foral de Navarra, marcarán también la casilla que les corresponda de las que se relacionan en la parte inferior de este apartado y cumplimentarán el modelo de declaración con los datos que sean compatibles con su respectiva normativa foral para poder ingresar en Territorio Común la parte que corresponda del pago fraccionado foral. Estas entidades consignarán en sus declaraciones los campos de identificación, devengo, base del pago fraccionado (clave 01, clave 16 o clave 19), volumen de operaciones en Territorio Común (%) (clave 29) y la cantidad a ingresar (clave 03 o clave 34).
+
+2) DEVENGO
+
+Ejercicio: Se consignarán en esta casilla los cuatro dígitos del año en el que corresponde efectuar el pago fraccionado.
+
+Período: Se consignará en esta casilla, según el mes en que corresponda realizar el pago fraccionado, la siguiente clave: 1/P para el pago a efectuar en los veinte primeros días naturales del mes de abril, 2/P para el correspondiente al mismo período del mes de octubre y 3/P para el correspondiente al mismo período del mes de diciembre.
+
+Los contribuyentes sometidos a normativa de territorio foral de Navarra marcarán 2P como clave período. Los contribuyentes sometidos a normativa de territorio foral de Guipúzcoa, Vizcaya o Álava, marcarán 0A como clave período.
+
+Fecha de inicio del período impositivo: Se consignará en esta casilla la fecha de inicio del período impositivo con seis dígitos DD/MM/AA (D = día, M = mes, A = año).
+
+C.N.A.E. actividad principal: Se consignará el código de cuatro cifras relativo a la Clasificación Nacional de Actividades Económicas (CNAE-2025) que corresponda a la actividad con mayor volumen de operaciones.
+
+3) DATOS ADICIONALES
+
+Los datos declarados en este apartado se vinculan con los campos a cumplimentar en el apartado 4 Liquidación. En caso de modificación posterior verifique el contenido de dicho apartado.
+
+Entidad que aplica el régimen de la Ley 49/2002, de 23 de diciembre: Marcarán esta clave las entidades que se acojan al régimen especial previsto en la Ley 49/2002, de 23 de diciembre, donde se regula el Régimen Fiscal de las Entidades sin Fines Lucrativos y de los incentivos fiscales al mecenazgo.
+
+Entidad que aplica el régimen de la Ley 11/2009, de 26 de octubre: Marcarán esta clave las entidades que se acojan al régimen especial previsto en la Ley 11/2009, de 26 de octubre, por la que se regulan las Sociedades Anónimas Cotizadas de Inversión en el Mercado Inmobiliario.
+
+En caso de que la entidad pueda aplicar a determinadas rentas el tipo impositivo general de gravamen deberá marcar también la clave “Otras entidades con posibilidad de aplicar más de un tipo impositivo”.
+
+Entidad de capital-riesgo que aplica el régimen fiscal especial del art. 50 LIS: Marcarán esta clave las entidades de capital-riesgo reguladas en la Ley 22/2014, de 12 de noviembre, exceptuadas de la obligación de efectuar el pago fraccionado mínimo aplicable a las grandes empresas.
+
+Entidad que aplica el régimen de las entidades navieras en función del tonelaje: Marcarán esta clave las entidades que se acojan al régimen especial de las entidades navieras en función del tonelaje, previsto en el capítulo XVI del título VII de la Ley 27/2014, de 28 de noviembre, del Impuesto sobre Sociedades (en adelante LIS).
+
+En caso de entidades que apliquen de forma simultánea el Régimen General y el Régimen especial de entidades navieras en función del tonelaje, debe tenerse en cuenta que los tipos impositivos que incluyen la letra N en su nomenclatura hacen referencia a los tipos impositivos aplicables a la base imponible que tributa según el régimen especial, y que en caso de pagos fraccionados deben cumplir los requisitos previstos en el art. 116 Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades. En estos casos marcarán la clave “Otras entidades con posibilidad de aplicar más de un tipo impositivo” e incluirán en la clave “Tipo de gravamen del Impuesto sobre Sociedades del ejercicio en curso” para la actividad de la entidad que tributa en régimen especial el porcentaje aplicable seguido de la letra N de acuerdo con los tipos de gravamen vigentes que se relacionan en el desplegable para la cumplimentación de esta casilla.
+
+Entidad que cumpla los requisitos para la aplicación de los incentivos de empresa de reducida dimensión (art. 101 LIS) y aplique el tipo de gravamen específico previsto para estas entidades:  Marcarán esta clave las entidades que cumplan los requisitos del artículo 101 de la LIS. En caso de entidades que tengan un importe neto de la cifra de negocios inferior en el periodo impositivo anterior inferior a 1 millón de euros, deberán marcar también la clave “Entidad con importe neto de la cifra de negocios del periodo impositivo inmediato anterior inferior a 1 millón de euros”. Pueden consultarse los tipos impositivos aplicables en el apartado de “Qué es la base imponible y cómo se determina en el Impuesto sobre Sociedades”, sub apartado “Tipo impositivo” del área de Impuesto sobre Sociedades de la sede electrónica de la AEAT.
+
+Importe neto de la cifra de negocios de los doce meses anteriores a la fecha de inicio del periodo impositivo es superior a 6.000.000 euros: Marcarán esta casilla, las entidades que en los doce meses inmediatamente anteriores a la fecha en que se inicie el período impositivo, hayan tenido una cifra de negocios superior a 6.000.000. De esta manera, vendrán obligadas a calcular el pago fraccionado de acuerdo con lo previsto en el artículo 40.3 de la LIS.
+
+Cooperativa fiscalmente protegida: Marcarán esta clave las entidades que tengan la consideración de fiscalmente protegidas, de acuerdo con lo establecido en la Ley 20/1990, de 19 de diciembre, sobre Régimen Fiscal de las Cooperativas.
+
+Marque esta casilla si concurre ALGUNA de las siguientes circunstancias:
+
+Entidad que aplica la Reserva para inversiones en Canarias o tenga derecho a la bonificación del art. 26 Ley 19/1994:
+
+Marcarán esta casilla, a efectos de tener en cuenta la reducción de la base imponible o de la cantidad a ingresar previstas respectivamente en el apartado 1 y apartado 2 de la disposición adicional quinta de la LIS, las entidades que apliquen reserva para inversiones o que tengan derecho a la bonificación del art. 26 de la Ley 20/1994. A estos efectos, se cumplimentarán también las casillas correspondientes del apartado 5, "Información adicional".
+
+Entidad que aplica el régimen ZEC:
+
+Marcarán esta casilla, a efectos de determinar la cantidad mínima a ingresar prevista en la letra a) del apartado 1 de la disposición adicional decimocuarta de la LIS y con la finalidad de no computar aquella parte del resultado positivo que se corresponda con el porcentaje señalado en el artículo 44.4 de la Ley 19/1994 (salvo que proceda aplicar lo previsto en el articulo 44.6 b) de la Ley 19/1994), las entidades que apliquen el régimen de la Zona Especial Canaria. A estos efectos, se cumplimentará también la casilla correspondiente del apartado 5, "Información adicional".
+
+Los contribuyentes que tengan sucursales de la Zona Especial Canaria de entidades con residencia fiscal en España que formen parte de un grupo fiscal que aplique el régimen de consolidación fiscal, han de declarar separadamente la parte de base imponible atribuible a la sucursal de la Zona Especial Canaria. Cada una de estas entidades debe presentar el pago a cuenta de este impuesto en su modelo 202 correspondiente, todo ello, sin perjuicio del modelo 222 que deberá presentar la entidad dominante por la parte de la base imponible que no tributa al tipo especial y respecto de la que va a aplicar régimen especial de consolidación fiscal.
+
+Entidad que aplica la bonificación de Ceuta y Melilla art. 33 LIS:
+
+Marcarán esta casilla, a efectos de determinar la cantidad mínima a ingresar prevista en la letra a) del apartado 1 de la disposición adicional decimocuarta de la LIS y con la finalidad de minorar del mismo el 60 por ciento de aquella parte del resultado positivo que se corresponda con rentas que tengan derecho a la bonificación prevista en el artículo 33 de la LIS. A estos efectos, se cumplimentará también la casilla correspondiente del apartado 5, "Información adicional". (Para los pagos fraccionados correspondientes a períodos impositivos iniciados en 2026, cuyo plazo de presentación se inicie desde la entrada en vigor del Real Decreto-ley 22/2026, de 1 de septiembre, el porcentaje de minoración del 50 por ciento previsto en el apartado cuarto de la disposición adicional quinta de la LIS, se eleva al 60 por ciento)
+
+Entidad con resultados positivos por operaciones de aumento de capital o fondos propios por compensación de créditos que no se integran en la base imponible por aplicación del artículo 17.2 LIS:
+
+Marcarán esta casilla las entidades que hayan tenido resultados positivos por operaciones de aumento de capital o fondos propios por compensación de créditos que no se integren en la base imponible por aplicación del artículo 17.2 de la LIS, con la finalidad de excluir dichas cantidades de la cantidad mínima a ingresar prevista en la disposición adicional decimocuarta de la LIS. A estos efectos, se cumplimentará también la casilla correspondiente del apartado 5, "Información adicional".
+
+Entidad parcialmente exenta que aplica el régimen fiscal especial Cap. XIV Tít. VII LIS:
+
+Marcarán esta casilla, las entidades parcialmente exentas a las que resulte de aplicación el régimen fiscal especial establecido en el capítulo XIV del título VII de la LIS, a efectos de determinar la cantidad mínima a ingresar prevista en la disposición adicional decimocuarta de la LIS, ya que en estos casos se tomará como resultado positivo el correspondiente exclusivamente a las rentas no exentas. A estos efectos, se cumplimentará también la casilla correspondiente del apartado 5, "Información adicional".
+
+Entidad que aplica la bonificación del artículo 34 LIS:
+
+Marcarán esta casilla, las entidades que apliquen la bonificación por prestación de servicios públicos locales prevista en el artículo 34 de la LIS, a efectos de determinar la cantidad mínima a ingresar prevista en la disposición adicional decimocuarta de la LIS, ya que en estos casos se tomará como resultado positivo el correspondiente exclusivamente a las rentas no bonificadas. A estos efectos, se cumplimentará también la casilla correspondiente del apartado 5, "Información adicional".
+
+Entidad con importe neto de la cifra de negocios del período impositivo inmediato anterior inferior a 1 millón de euros:
+
+Marcarán esta clave las entidades con importe neto de la cifra de negocios inferior a 1 millón de euros en el período impositivo inmediato anterior.
+
+Otras entidades con posibilidad de aplicar dos tipos impositivos:
+
+Marcarán esta clave las entidades no incluidas en las claves anteriores con posibilidad de aplicar más de un tipo de gravamen.
+
+Tipo de gravamen del Impuesto sobre Sociedades del ejercicio en curso:
+
+Se consignará el tipo o tipos impositivos aplicables en la declaración del Impuesto sobre Sociedades En el desplegable para la cumplimentación de esta casilla se relacionan los tipos impositivos vigentes.
+
+Cuando se consigne más de un tipo de gravamen, el orden de los tipos de gravamen relacionados en esta casilla se mantendrá también en el apartado 4 “Liquidación” del modelo, en la relación de tramos correspondientes a los porcentajes aplicables a cada una de las partes de la base imponible del pago fraccionado. Así. el primero de los tipos relacionados en esta casilla se corresponderá con los datos de la base a tipo 1 (casillas 20 a 22), el segundo de los tipos con los datos de la base a tipo 2 (casillas 23 a 25) y así sucesivamente.
+
+Téngase en cuenta que la normativa sobre pagos fraccionados prevé la aplicación de cocientes sobre los tipos de gravamen, así como redondeos por exceso o por defecto que en determinados supuestos reducen los tipos que se trasladarán al apartado 4 de “Liquidación”. En caso de que los porcentajes resultantes sean iguales se agruparán en el apartado de "Liquidación" los datos de base imponible y porcentaje en una sola fila.
+
+Importe neto de la cifra de negocios en los doce meses anteriores a la fecha de inicio del período impositivo:
+
+Marcarán esta clave, en su tramo correspondiente, las entidades con importe neto de la cifra de negocios igual o superior a 10 millones de euros en los doce meses anteriores a la fecha de inicio del período impositivo.
+
+4) LIQUIDACIÓN
+
+CONTRIBUYENTES DEL IMPUESTO SOBRE SOCIEDADES
+
+Los CONTRIBUYENTES del Impuesto sobre Sociedades calcularán el pago fraccionado tal como se expone a continuación:
+
+Se consignará la modalidad de liquidación del pago fraccionado, ya sea mediante la aplicación de lo dispuesto en el artículo 40.2 LIS, o bien, en el artículo 40.3 LIS.
+
+A) CÁLCULO DEL PAGO FRACCIONADO: MODALIDAD ARTÍCULO 40.2 LIS
+
+CLAVE [01]. CÁLCULO DE LA BASE DEL PAGO FRACCIONADO.
+
+En el caso de entidades que tributen exclusivamente al Estado, se tomará como base del pago fraccionado la cuota íntegra del último período impositivo cuyo plazo reglamentario de declaración estuviese vencido el día 1 del mes que corresponda, de los indicados en el punto anterior, minorado en las deducciones y bonificaciones así como en las retenciones e ingresos a cuenta correspondientes a aquél, siempre que dicho período impositivo haya sido de duración anual.
+
+En el caso de que la duración del último período impositivo base hubiera sido inferior al año, habrán de considerarse los períodos impositivos inmediatamente anteriores hasta abarcar un período mínimo de 365 días. En este supuesto, la base del pago fraccionado se determinará mediante la suma algebraica de las cuotas de los períodos impositivos considerados.
+
+Si el período abarcado por los períodos impositivos computados excediese del mínimo de 365 días, se tomará, a efectos de la mencionada suma algebraica, como cuota del período impositivo más remoto, el siguiente porcentaje de la cuota del período impositivo:
+
+Las agrupaciones de interés económico españolas y las uniones temporales de empresas inscritas en el Registro especial del Ministerio de Economía y Hacienda, tomarán como base del pago fraccionado la cuota íntegra correspondiente a la parte de base imponible que corresponda a los socios no residentes, minorada en los conceptos mencionados en la letra a) anterior que, en proporción directa a su porcentaje de participación, corresponda a los citados socios.
+
+Las entidades citadas en el párrafo anterior, por lo tanto, no resultan obligadas a efectuar pagos fraccionados cuando el porcentaje de participación en las mismas corresponda, en su totalidad, a socios o miembros residentes en territorio español.
+
+En los supuestos de fusión, la base de los pagos fraccionados correspondientes al primer período impositivo una vez realizada la operación, se determinará mediante la suma algebraica de las bases que hubieren resultado en las sociedades transmitentes de no haberse llevado a cabo la misma.
+
+En otro caso, cuando no hubiera período impositivo base o éste sea el primero desde la realización de la operación y de duración inferior al año, se computarán los datos de los períodos impositivos inmediatos anteriores de las sociedades transmitentes.
+
+En una operación de absorción y una vez realizada la misma, la base de los pagos fraccionados de la sociedad adquirente correspondientes al período impositivo en que aquélla se realizó, se incrementará en las bases del pago fraccionado de las sociedades transmitentes que hubieren resultado de no haberse llevado a cabo dicha operación. En otro caso y, en tanto en cuanto el período impositivo base no abarque un período mínimo de 365 días de la sociedad, una vez realizada tal operación, se computarán igualmente los datos de los períodos impositivos inmediatos anteriores de las sociedades transmitentes.
+
+En el supuesto de entidades que deban tributar conjuntamente al Estado y a las Diputaciones Forales del País Vasco y/o a la Comunidad Foral de Navarra, para determinar la base de los pagos fraccionados que deben ingresar, en su caso, en cada una de dichas Administraciones, se aplicará la proporción que, respecto del total, represente el volumen de operaciones realizadas en cada territorio determinado en función de la proporción del volumen de operaciones realizado en cada territorio determinada en la última declaración-liquidación del Impuesto.
+
+CLAVE [02]. RESULTADO DE LA DECLARACIÓN ANTERIOR (EXCLUSIVAMENTE SI ÉSTA ES COMPLEMENTARIA).
+
+Si esta declaración fuera complementaria de otra presentada con anterioridad por el mismo concepto y período, se hará constar en esta casilla el importe del pago fraccionado ingresado previamente. En este supuesto, en el apartado 6 Complementaria, se deberá hacer constar el código electrónico asignado a dicha declaración.
+
+CLAVE [03]. A INGRESAR.
+
+Será el resultado de aplicar el porcentaje del 18% a la cantidad calculada como base del pago fraccionado (clave [01]) en cada uno de los períodos de abril, octubre o diciembre.
+
+En el supuesto de ser esta declaración complementaria de otra anterior (ver apartado 6 de estas instrucciones), del importe calculado según lo expresado en el párrafo anterior deberá restarse el importe del pago fraccionado que se ingresó en su momento (clave [02]).
+
+La cantidad a ingresar deberá expresarse con dos decimales. Para ello, si se precisa, se redondeará por exceso o por defecto al céntimo más próximo. En el caso de que la última cifra de la cantidad obtenida como resultado de aplicar el porcentaje a la base del pago fraccionado sea exactamente la mitad de un céntimo, el redondeo se efectuará a la cifra superior.
+
+B) CÁLCULO DEL PAGO FRACCIONADO: MODALIDAD ARTÍCULO 40.3 LIS
+
+Este sistema tiene carácter opcional, salvo las excepciones que se comentan a continuación, siendo de aplicación a aquellos contribuyentes que voluntariamente decidan aplicarlo. Para ello deberán ejercer la opción en la correspondiente declaración censal durante el mes de febrero del año natural a partir del cual deba surtir efectos, siempre que el período impositivo a que se refiera la citada opción coincida con el año natural. En caso contrario, el ejercicio de la opción deberá realizarse en la correspondiente declaración censal, durante el plazo de dos meses a contar desde el inicio de dicho período impositivo o dentro del plazo comprendido entre el inicio de dicho período impositivo y la finalización del plazo para efectuar el primer pago fraccionado correspondiente al referido período impositivo cuando este último plazo fuera inferior a dos meses.
+
+Realizada la opción, el contribuyente quedará vinculado a esta modalidad de pago fraccionado respecto de los pagos correspondientes al mismo período impositivo y siguientes, en tanto no se renuncie a su aplicación a través de la correspondiente declaración censal que deberá ejercitarse en los mismos plazos establecidos en el párrafo anterior.
+
+No obstante lo anterior, en todo caso, resultan obligados a realizar los pagos fraccionados por este sistema los contribuyentes cuya cifra de negocios de los doce meses anteriores a la fecha de inicio del período impositivo sea superior a 6.000.000 de euros, así como los contribuyentes que se hayan acogido al régimen fiscal especial establecido en el capítulo XVI del título VII de la LIS (régimen de tributación de las entidades navieras en función del tonelaje).
+
+Estos últimos contribuyentes deben tener en cuenta que la aplicación de la modalidad establecida en el artículo 40.3 de la LIS se realizará sobre la base imponible calculada conforme a las reglas establecidas en el artículo 114 de la citada Ley y aplicando el porcentaje a que se refiere el artículo 115 del mismo texto legal, sin computar deducción alguna sobre la parte de cuota derivada de la parte de base imponible determinada según lo dispuesto en el artículo 116.
+
+Las agrupaciones de interés económico españolas y las uniones temporales de empresas inscritas en el Registro especial del Ministerio de Economía y Hacienda no estarán obligadas a realizar pagos fraccionados respecto de la parte de base imponible que corresponda a los socios residentes en territorio español, ni dicha base imponible formará parte de la base del pago fraccionado. Por lo tanto, las entidades citadas no resultan obligadas a efectuar pagos fraccionados cuando el porcentaje de participación en las mismas corresponda, en su totalidad, a socios o miembros residentes en territorio español.
+
+En el caso de los contribuyentes que tributen conjuntamente al Estado y a las Diputaciones Forales del País Vasco y/o a la Comunidad Foral de Navarra, la base del pago fraccionado será la parte proporcional que corresponda a cada una de dichas Administraciones, teniendo en cuenta el volumen de operaciones realizadas en cada territorio determinado según el volumen de operaciones realizado en cada territorio según la última declaración-liquidación del Impuesto.
+
+CÁLCULO DE LA BASE DEL PAGO FRACCIONADO.
+
+Los contribuyentes que hayan optado por efectuar el pago fraccionado acogiéndose a lo dispuesto en el apartado 3 del artículo 40 de la LIS, tomarán como base del pago fraccionado la parte de la base imponible del período de los tres (correspondiente al 1/P), nueve (correspondiente al 2/P) u once primeros meses (correspondiente al 3/P) de cada año natural, determinada según las normas de la Ley del Impuesto sobre Sociedades teniendo en cuenta, en su caso, los límites para la compensación de bases imponibles negativas de ejercicios anteriores.
+
+Los contribuyentes cuyo período impositivo no coincida con el año natural realizarán el pago fraccionado sobre la parte de la base imponible correspondiente a los días transcurridos desde el inicio del período impositivo hasta el día anterior al inicio de cada uno de los períodos de ingreso del pago fraccionado de los meses de abril, octubre y diciembre, según proceda. En estos supuestos, el pago fraccionado será a cuenta de la liquidación correspondiente al período impositivo que esté en curso el día anterior al inicio de cada uno de los citados períodos de pago.
+
+CLAVE [04]. RESULTADO CONTABLE (DESPUÉS DEL IS).
+
+Se consignará en la clave [04] el resultado de la cuenta de pérdidas y ganancias después del Impuesto sobre Sociedades.
+
+CLAVES [05] Y [06]. CORRECCIÓN POR IMPUESTO SOBRE SOCIEDADES.
+
+Se consignará en la clave [05] el importe correspondiente a los aumentos al resultado de la cuenta de Pérdidas y Ganancias por Impuesto sobre beneficios y en la clave [06] el correspondiente a las disminuciones.
+
+CLAVE [67]. CORRECCIÓN POR IMPUESTO COMPLEMENTARIO.
+
+Se consignará en la clave [67] el importe correspondiente a los aumentos al resultado de la cuenta de Pérdidas y Ganancias por el Impuesto Complementario regulado en la Ley 7/2024, de 20 de diciembre.
+
+CLAVE [37]. Reversión DEL 30% DEL IMPORTE DE LOS GASTOS DE AMORTIZ. CONTABLE (ART. 7 LEY 16/2012).
+
+Se consignará en la clave [37] el importe correspondiente a las disminuciones por la reversión de los ajustes que durante los períodos impositivos iniciados en 2013 y 2014, efectuaron las entidades que no tienen la consideración de reducida dimensión y que como consecuencia de lo previsto en el artículo 7 de la Ley 16/2012, de 27 de diciembre, tuvieron que dotar un aumento al resultado de la cuenta de pérdidas y ganancias.
+
+CLAVES [07] Y [08]. RESTO CORRECCIONES AL RESULTADO CONTABLE, EXCEPTO COMP. BI NEGATIVA EJ. ANT.
+
+Se consignará en la clave [07] el importe correspondiente al total de aumentos al resultado de la cuenta de Pérdidas y Ganancias excepto la corrección por impuesto sobre Sociedades y por Impuesto Complementario y el ajuste por la limitación a las amortizaciones fiscalmente deducibles, y en la clave [08] el correspondiente a las disminuciones.
+
+CLAVES [38] Y [39]. TOTAL CORRECCIONES AL RESULTADO CONTABLE.
+
+Son importes calculados:
+
+clave 38 = clave 05 + clave 67 + clave 07
+
+clave 39 = clave 06 + clave 37 + clave 08
+
+CLAVE [13]. BASE IMPONIBLE PREVIA
+
+Es un importe calculado: clave 13 = clave 04 + clave 38 - clave 39.
+
+CLAVE [44]. REMANENTE RESERVA DE CAPITALIZACIÓN NO APLICADA POR INSUFICIENCIA DE BASE.
+
+Únicamente consignarán esta casilla los contribuyentes cuyo tipo de gravamen se corresponda con el previsto en el apartado 1 o 6 del artículo 29 de la Ley del Impuesto sobre Sociedades, cuando se den los requisitos previstos en el apartado 1 del artículo 25 de la LIS, y siempre que no se haya podido reducir la totalidad del porcentaje correspondiente del incremento de fondos propios en la declaración del Impuesto sobre Sociedades (modelo 200), pudiendo aplicar de esta manera, el remanente pendiente por insuficiencia de cuota de cantidades correspondientes a años anteriores.
+
+En este sentido, la reducción en la base imponible de un determinado período impositivo relativa a la reserva de capitalización, se corresponde con el porcentaje del incremento de los fondos propios que permite la normativa vigente, para cuya determinación resulta imprescindible que se haya producido el cierre del ejercicio. Esto significa que la aplicación de la reserva de capitalización no puede tenerse en cuenta en la determinación de la base imponible aplicable a los pagos fraccionados, dado que el período impositivo no habrá concluido y no habrá tenido lugar el cierre del ejercicio, no se habrá podido determinar el posible incremento de fondos propios que determinaría la reducción de la base imponible. Ello solo se podrá determinar en la declaración del correspondiente período impositivo que, de acuerdo con el artículo 124.1 de la LIS, se presentará en el plazo de los 25 días naturales siguientes a los 6 meses posteriores a la conclusión del período impositivo.
+
+En consecuencia, en los pagos fraccionados no podrá figurar una reducción por este concepto (reserva de capitalización) en la parte de la base imponible a partir de la cual se determinan tales pagos fraccionados. Por el contrario, sí podrá figurar una reducción por la reserva de capitalización, pero correspondiente a las cantidades pendientes de aplicación de la reducción de años anteriores, que es lo que figurará en esta casilla, en concepto de remanente de reserva de capitalización no aplicada por insuficiencia de base.
+
+CLAVE [14]. COMPENSACIÓN DE BASES IMPONIBLES NEGATIVAS DE PERÍODOS ANTERIORES.
+
+Se consignará el importe de las bases negativas de períodos anteriores que son objeto de compensación a efectos de esta declaración. Toma el valor cero si la casilla 13 – casilla 44 es negativa o cero, excepto si hubiera indicado algún importe en la casilla parte integrada en la base imponible por operaciones de quita o espera.
+
+La compensación de bases imponibles negativas de períodos anteriores está limitada al 70% de la base imponible previa a la aplicación de la reserva de capitalización establecida en el artículo 25 de la LIS y a su compensación.
+
+No obstante, y tal y como establece la disposición adicional decimoquinta de la LIS, para los contribuyentes cuyo importe neto de la cifra de negocios sea al menos de 20 millones de euros durante los 12 meses anteriores a la fecha en que se inicie el período impositivo, los límites establecidos en artículo 11.12, en el primer párrafo del artículo 26.1, en la letra e) del artículo 62.1 y en las letras d) y e) del artículo 67, de esta Ley se sustituirán por los siguientes:
+
+El 50 por ciento, cuando en los referidos 12 meses el importe neto de la cifra de negocios sea al menos de 20 millones de euros pero inferior a 60 millones de euros.
+
+El 25 por ciento, cuando en los referidos 12 meses el importe neto de la cifra de negocios sea al menos de 60 millones de euros.
+
+En todo caso, se podrán compensar en el período impositivo bases imponibles negativas hasta el importe de 1 millón de euros.
+
+La limitación a la compensación de bases imponibles negativas indicada en el párrafo anterior no resultará de aplicación en el importe de las rentas correspondientes a quitas y esperas consecuencia de un acuerdo con los acreedores del contribuyente. Las bases imponibles negativas que sean objeto de compensación con dichas rentas no se tendrán en consideración respecto del importe de 1 millón de euros a que se refiere el párrafo anterior.
+
+CLAVES [45] Y [46]. RESERVA DE NIVELACIÓN (art 105 LIS) (sólo entidades que cumplan los requisitos del art. 101 LIS y apliquen tipo gravamen art. 29.1, 1er párrafo LIS).
+
+La reserva de nivelación se trata de un incentivo fiscal aplicable a las entidades de reducida dimensión (aquellas cuyo importe de la cifra de negocios habida en el período impositivo inmediato anterior sea inferior a 10 millones de euros). En este sentido, en las correcciones al resultado contable no está incluida la cantidad correspondiente a la reserva de nivelación. Tras las correcciones al resultado contable, se obtiene una base imponible previa, sobre la que se aplicaría la compensación de bases imponibles negativas), y se obtiene la base imponible, sobre la que, en su caso, se aplicaría la reserva de nivelación, que ha de tenerse en cuenta a efectos de los pagos fraccionados, tal y como señala el apartado 5 del artículo 105 de la LIS y la cual puede minorar o adicionar esa base imponible. Así y siempre que se cumplan los requisitos previstos en el artículo 105, se podrá minorar la base imponible positiva (siempre que no supere el importe de 1 millón de euros) en hasta el 10 por ciento de su importe. En caso de minorar la base imponible, deberá de dotarse una reserva con cargo a los resultados positivos del ejercicio por el importe de dicha minoración. Así el importe de minoración, se deberá de incluir en la clave [46].
+
+Estas cantidades, se adicionarán a la base imponible de los períodos impositivos que concluyan en los 5 años inmediatos y sucesivos a la finalización del período impositivo en que se realice dicha minoración, si el contribuyente tiene una base imponible negativa y hasta el importe de la misma. El importe de adición, se deberá de incluir en la clave [45].
+
+RESULTADO PREVIO.
+
+B1 CASO GENERAL (ENTIDADES CON PORCENTAJE ÚNICO).
+
+CLAVES [16], [17] Y [18].
+
+Su importe vendrá calculado automáticamente en función de los datos consignados en la declaración.
+
+Así, por ejemplo:
+
+Clave [16] = clave [13] – clave [44] - clave [14] + clave [45] – clave [46], sin poder ser negativa.
+
+Clave [17] = 19⁄20 x tipo de gravamen indicado en la casilla de tipo de gravamen todo ello redondeado por exceso, siempre que la cifra de negocios de la entidad en los doce meses anteriores a la fecha en que se inicie el periodo impositivo sea al menos de 10 millones de euros.
+
+Clave [17] = 5⁄7 × tipo de gravamen indicado en la casilla de tipo de gravamen todo ello redondeado por defecto a la unidad anterior, siempre que la cifra de negocios de la entidad en los doce meses anteriores a la fecha en que se inicie el periodo impositivo sea menor de 10 millones de euros.
+
+Caso especial: En el supuesto de entidades navieras que aplican únicamente el régimen especial en función del tonelaje se tendrán en cuenta los porcentajes específicos de estas entidades i marca la clave “Entidad que aplica el régimen de las entidades navieras en función del tonelaje” y no marca la clave “otras entidades con posibilidad de aplicar más de un tipo impositivo”, la casilla 17 tendrá el mismo valor que los tipos de gravamen del Impuesto sobre Sociedades consignados.
+
+CLAVE [47]. DOTACIONES DEL ART. 11.12 DE LA LIS (DA 7ª LEY 20/1990) (SÓLO COOPERATIVAS).
+
+La dotación prevista en el apartado 12 del artículo 11 de la Ley del Impuesto sobre Sociedades (que regula su integración en la base imponible de acuerdo con lo establecido en la LIS, con el límite del 70% de la base imponible positiva previa a su integración, a la aplicación de la reserva de capitalización establecida en el artículo 25 y a la compensación de bases imponibles negativas), se referirá a la cuota íntegra positiva sin tener en cuenta su integración ni la compensación de cuotas negativas. De tal forma que para las sociedades cooperativas, se aplicará con posterioridad a aplicar el tipo de gravamen, siendo necesario que se convierta el importe de la misma a cuota, en función del tipo de gravamen que corresponda.
+
+Las sociedades cooperativas que apliquen este límite llevarán a cabo el ajuste positivo o negativo que proceda del mismo en esta clave y no practicarán por este motivo ninguna corrección al resultado contable con carácter previo a la determinación de la base imponible.
+
+Téngase en cuenta que en lo relativo a límites aplicables a estas dotaciones por deterioro de créditos, es de aplicación la disposición adicional séptima de la Ley 20/1990.
+
+CLAVE [40]. COMPENSACIÓN DE CUOTAS NEGATIVAS DE PERÍODOS ANTERIORES (SÓLO COOPERATIVAS).
+
+Las cooperativas que no sean fiscalmente protegidas cumplimentarán en esta casilla las cuotas negativas a compensar de períodos anteriores.
+
+La compensación de cuotas negativas de períodos anteriores está limitada al 70% de la cuota íntegra previa a su compensación.
+
+No obstante, y tal y como establece la disposición adicional octava de la Ley 20/1990, de 19 de diciembre, sobre Régimen Fiscal de las Cooperativas, en el caso de cooperativas cuyo importe neto de la cifra de negocios sea al menos de 20 millones de euros durante los 12 meses anteriores a la fecha en que se inicie el período impositivo, el límite establecido en el apartado 1 del artículo 24 de esta Ley se sustituirá por el siguiente:
+
+El 50 por ciento, cuando en los referidos 12 meses el importe neto de la cifra de negocios sea al menos de 20 millones de euros pero inferior a 60 millones de euros.
+
+El 25 por ciento, cuando en los referidos 12 meses el importe neto de la cifra de negocios sea al menos de 60 millones de euros.
+
+La limitación a la compensación de cuotas negativas no resultará de aplicación en el importe de las rentas correspondientes a quitas y esperas consecuencia de un acuerdo con los acreedores no vinculados con el contribuyente.
+
+En todo caso, serán compensables en el período impositivo cuotas íntegras por el importe que resulte de multiplicar 1 millón de euros al tipo medio de gravamen de la entidad.
+
+CLAVES [48] Y [49]. RESERVA DE NIVELACIÓN (art 105 LIS) CONVERTIDO EN CUOTAS (sólo entidades que cumplan los requisitos del art. 101 LIS y apliquen tipo gravamen específico para estas entidades).
+
+La reserva de nivelación, se trata de un incentivo fiscal aplicable a las entidades de reducida dimensión, (aquellas cuyo importe de la cifra de negocios habida en el período impositivo inmediato anterior sea inferior a 10 millones de euros). En este sentido, en las correcciones al resultado contable no está incluida la cantidad correspondiente a la reserva de nivelación. Tras las correcciones al resultado contable, se obtiene una base imponible previa, sobre la que se aplicaría la compensación de bases imponibles negativas), y se obtiene la base imponible, sobre la que, en su caso, se aplicaría la reserva de nivelación, que ha de tenerse en cuenta a efectos de los pagos fraccionados, tal y como señala el apartado 5 del artículo 105 de la LIS y la cual puede minorar o adicionar esa base imponible.
+
+Así y siempre que se cumplan los requisitos previstos en el artículo 105, se podrá minorar la base imponible positiva (siempre que no supere el importe de 1 millón de euros) en hasta el 10 por ciento de su importe. En caso de minorar la base imponible, deberá de dotarse una reserva con cargo a los resultados positivos del ejercicio por el importe de dicha minoración. El importe de minoración, convertido en cuotas mediante la aplicación del tipo de gravamen que en su caso corresponda, se deberá de incluir en la clave [49].
+
+Estas cantidades, se adicionarán a la base imponible de los períodos impositivos que concluyan en los 5 años inmediatos y sucesivos a la finalización del período impositivo en que se realice dicha minoración, si el contribuyente tiene una base imponible negativa y hasta el importe de la misma. El importe de adición, convertido en cuotas mediante la aplicación del tipo de gravamen que en su caso corresponda, se deberá de incluir en la clave [48].
+
+CLAVE [18]
+
+La clave [18] será = [(clave [16] x clave [17]) /100] + clave [47] – clave [40] + clave [48] – clave [49]
+
+B2 CASOS ESPECÍFICOS (EMPRESAS CON MÁS DE UN PORCENTAJE)
+
+CLAVES [20], [23], [61] Y [64].
+
+En la clave [20] “Base a tipo 1” se consignará el importe de la base del pago fraccionado a la que sea de aplicación el primero de los tipos de gravamen consignados en la clave “Tipo de gravamen del Impuesto sobre Sociedades del ejercicio en curso”.
+
+En la clave [23] “Base a tipo 2” se consignará el importe de la base del pago fraccionado a la que sea de aplicación el segundo de los tipos de gravamen consignados en la clave “Tipo de gravamen del Impuesto sobre Sociedades del ejercicio en curso”.
+
+En la clave [61] “Base a tipo 3” se consignará el importe de la base del pago fraccionado a la que sea de aplicación, en su caso, el tercero de los tipos de gravamen consignados en la clave “Tipo de gravamen del Impuesto sobre Sociedades del ejercicio en curso”.
+
+En la clave [64] “Base a tipo 4” se consignará el importe de la base del pago fraccionado a la que sea de aplicación, en su caso, el cuarto de los tipos de gravamen consignados en la clave “tipo de gravamen del Impuesto sobre Sociedades del ejercicio en curso”.
+
+Téngase en cuenta que la normativa sobre pagos fraccionados prevé la aplicación de cocientes sobre los tipos de gravamen, así como redondeos por exceso o por defecto que en determinados supuestos reducen los tipos que se trasladarán al apartado 4 de “Liquidación”. En caso de que los porcentajes resultantes sean iguales se agruparán en el apartado de "Liquidación" los datos de base imponible y porcentaje en una sola fila.
+
+En el supuesto de entidades navieras que aplican el régimen especial en función del tonelaje cuya base imponible se determina en parte conforme al método de estimación objetiva y en parte aplicando el régimen general del impuesto (actividades no incluidas en régimen especial) la relación de tramos correspondientes a los porcentajes aplicables a cada una de las partes de la base imponible del pago fraccionado seguirá también el orden de los tipos de gravamen que se hubieran relacionado en la casilla “tipo de gravamen del impuesto sobre Sociedades del ejercicio en curso”
+
+La clave [19] será = clave [20] + clave [23] + clave [61] + clave [64]
+
+CLAVES [19], [21], [22], [24], [25], [62], [63], [65] Y [66].
+
+Su importe vendrá calculado automáticamente en función de los datos consignados en la declaración.
+
+Así, por ejemplo:
+
+La clave [19] será igual a clave [13] - clave [44] - clave [14] + clave [45] - clave [46], sin poder ser negativa.
+
+El cálculo de las claves [21], [22], [24], [25], [62], [63], [65] y [66] dependerá del importe de la cifra de negocios de la entidad en los doce meses anteriores a la fecha en que se inicie el periodo impositivo;
+
+La clave [21] = 19⁄20 × tipo de gravamen indicado en la casilla de tipo de gravamen todo ello redondeado por exceso, siempre que la cifra de negocios de la entidad en los doce meses anteriores a la fecha en que se inicie el periodo impositivo sea al menos de 10 millones de euros.
+
+La clave [21] = 5⁄7 × tipo de gravamen indicado en la casilla de tipo de gravamen todo ello redondeado por defecto a la unidad anterior, siempre que la cifra de negocios de la entidad en los doce meses anteriores a la fecha en que se inicie el periodo impositivo sea menor de 10 millones de euros.
+
+Caso especial: En el supuesto de entidades navieras que aplican únicamente el régimen especial de entidades navieras en función del tonelaje se tendrán en cuenta los tipos específicos de estas entidades, poniendo atención en lo que se dispone en el art. 116 LIS.
+
+La clave [22] será = (clave [20] × clave [21])⁄100
+
+La clave [24] = 19⁄20 ×tipo de gravamen indicado en la casilla de tipo de gravamen todo ello redondeado por exceso, siempre que la cifra de negocios de la entidad en los doce meses anteriores a la fecha en que se inicie el periodo impositivo sea al menos de 10 millones de euros.
+
+La clave [24] = 5⁄7 × tipo de gravamen indicado en la casilla de tipo de gravamen todo ello redondeado por defecto a la unidad anterior, siempre que la cifra de negocios de la entidad en los doce meses anteriores a la fecha en que se inicie el periodo impositivo sea menor de 10 millones de euros.
+
+Caso especial: En el supuesto de entidades navieras que aplican únicamente el régimen especial de entidades navieras en función del tonelaje se tendrán en cuenta los tipos específicos de estas entidades, poniendo atención en lo que se dispone en el art. 116 LIS.
+
+La clave [25] = (clave [23] × clave [24]) / 100.
+
+La clave [62] = 19/20 x tipo de gravamen indicado en la casilla de tipo de gravamen todo ello redondeado por exceso, siempre que la cifra de negocios de la entidad en los doce meses anteriores a la fecha en que se inicie el periodo impositivo sea al menos de 10 millones de euros.
+
+La clave [62] = 5/7 x tipo de gravamen indicado en la casilla de tipo de gravamen todo ello redondeado por defecto a la unidad anterior, siempre que la cifra de negocios de la entidad en los doce meses anteriores a la fecha en que se inicie el periodo impositivo sea menor de 10 millones de euros.
+
+Caso especial: En el supuesto de entidades navieras que aplican el régimen especial en función del tonelaje se tendrán en cuenta los porcentajes específicos de estas entidades.
+
+La clave [63] = (clave [61] x clave [62]) / 100.
+
+La clave [65] = 19/20 x tipo de gravamen indicado en la casilla de tipo de gravamen todo ello redondeado por exceso, siempre que la cifra de negocios de la entidad en los doce meses anteriores a la fecha en que se inicie el periodo impositivo sea al menos de 10 millones de euros.
+
+La clave [65] = 5/7 x tipo de gravamen indicado en la casilla de tipo de gravamen todo ello redondeado por defecto a la unidad anterior, siempre que la cifra de negocios de la entidad en los doce meses anteriores a la fecha en que se inicie el periodo impositivo sea menor de 10 millones de euros.
+
+Caso especial: En el supuesto de entidades navieras que aplican el régimen especial en función del tonelaje se tendrán en cuenta los porcentajes específicos de estas entidades.
+
+La clave [66] = (clave [64] x clave [65]) / 100.
+
+CLAVE [50]. DOTACIONES DEL ART. 11.12 DE LA LIS (DA 7ª LEY 20/1990) (SÓLO COOPERATIVAS).
+
+La dotación prevista en el apartado 12 del artículo 11 de la Ley del Impuesto sobre Sociedades, se referirá a la cuota íntegra positiva sin tener en cuenta su integración ni la compensación de cuotas negativas. De tal forma que, para las sociedades cooperativas, se aplicará con posterioridad a aplicar el tipo de gravamen, siendo necesario que se convierta el importe de la misma a cuota, en función del tipo de gravamen que corresponda.
+
+Las sociedades cooperativas que apliquen este límite llevarán a cabo el ajuste positivo o negativo que proceda del mismo en esta clave y no practicarán por este motivo ninguna corrección al resultado contable con carácter previo a la determinación de la base imponible.
+
+Téngase en cuenta que en lo relativo a límites aplicables a estas dotaciones por deterioro de créditos, es de aplicación la disposición adicional séptima de la Ley 20/1990.
+
+CLAVE [42]. COMPENSACIÓN DE CUOTAS NEGATIVAS DE PERÍODOS ANTERIORES (SÓLO COOPERATIVAS).
+
+Las cooperativas fiscalmente protegidas cumplimentarán en esta casilla las cuotas negativas a compensar de períodos anteriores.
+
+La compensación de cuotas negativas de períodos anteriores está limitada al 70 por ciento de la cuota íntegra previa a su compensación.
+
+No obstante, y tal y como establece la disposición adicional octava de la Ley 20/1990, de 19 de diciembre, sobre Régimen Fiscal de las Cooperativas, en el caso de cooperativas cuyo importe neto de la cifra de negocios sea al menos de 20 millones de euros durante los 12 meses anteriores a la fecha en que se inicie el período impositivo, el límite establecido en el apartado 1 del artículo 24 de esta Ley se sustituirá por el siguiente:
+
+El 50 por ciento, cuando en los referidos 12 meses el importe neto de la cifra de negocios sea al menos de 20 millones de euros pero inferior a 60 millones de euros.
+
+El 25 por ciento, cuando en los referidos 12 meses el importe neto de la cifra de negocios sea al menos de 60 millones de euros.
+
+La limitación a la compensación de cuotas negativas no resultará de aplicación en el importe de las rentas correspondientes a quitas y esperas consecuencia de un acuerdo con los acreedores no vinculados con el contribuyente.
+
+En todo caso, serán compensables en el período impositivo cuotas íntegras por el importe que resulte de multiplicar 1 millón de euros al tipo medio de gravamen de la entidad. 
+
+CLAVES [51] Y [52]. RESERVA DE NIVELACIÓN (art 105 LIS) (sólo entidades que cumplan los requisitos del art. 101 LIS y apliquen tipo gravamen específico para estas entidades).
+
+La reserva de nivelación, se trata de un incentivo fiscal aplicable a las entidades de reducida dimensión, (aquellas cuyo importe de la cifra de negocios habida en el período impositivo inmediato anterior sea inferior a 10 millones de euros). En este sentido, en las correcciones al resultado contable no está incluida la cantidad correspondiente a la reserva de nivelación. Tras las correcciones al resultado contable, se obtiene una base imponible previa, sobre la que se aplicaría la compensación de bases imponibles negativas), y se obtiene la base imponible, sobre la que, en su caso, se aplicaría la reserva de nivelación, que ha de tenerse en cuenta a efectos de los pagos fraccionados, tal y como señala el apartado 5 del artículo 105 de la LIS y la cual puede minorar o adicionar esa base imponible. Así y siempre que se cumplan los requisitos previstos en el artículo 105, se podrá minorar la base imponible positiva (siempre que no supere el importe de 1 millón de euros) en hasta el 10 por ciento de su importe. En caso de minorar la base imponible, deberá de dotarse una reserva con cargo a los resultados positivos del ejercicio por el importe de dicha minoración. Así el importe de minoración, se deberá de incluir en la clave [52].
+
+Estas cantidades, se adicionarán a la base imponible de los períodos impositivos que concluyan en los 5 años inmediatos y sucesivos a la finalización del período impositivo en que se realice dicha minoración, si el contribuyente tiene una base imponible negativa y hasta el importe de la misma. El importe de adición, se deberá de incluir en la clave [51].
+
+Estas claves serán utilizadas por las sociedades cooperativas que, en su caso, cumplan los requisitos para aplicar este incentivo fiscal.
+
+CLAVE [26]
+
+La clave [26] = clave [22] + clave [25] + clave [63] + clave [66] + clave [50] – clave [42] + clave [51] - clave [52] .
+
+CÁLCULO DEL RESULTADO Y DE LA CANTIDAD A INGRESAR.
+
+CLAVE [27]. BONIFICACIONES CORRESPONDIENTES AL PERIODO COMPUTADO (TOTAL).
+
+Se consignará el importe total de las bonificaciones del capítulo III del título VI de la LIS y otras bonificaciones que le fueren de aplicación al contribuyente en el período correspondiente.
+
+CLAVE [28]. RETENCIONES E INGRESOS A CUENTA PRACTICADOS SOBRE LOS INGRESOS DEL PERÍODO COMPUTADO (TOTAL).
+
+Se consignará el importe total de las retenciones e ingresos a cuenta practicados al contribuyente sobre los ingresos del período computado.
+
+CLAVE [29]. VOLUMEN DE OPERACIONES EN TERRITORIO COMÚN (%).
+
+Se consignará la cifra del porcentaje que corresponda a la tributación del Estado según la proporción del volumen de operaciones efectuadas en Territorio Común determinada en la última declaración-liquidación del impuesto.
+
+CLAVE [30]. PAGOS FRACCIONADOS DE PERÍODOS ANTERIORES EN TERRITORIO COMÚN (TOTAL).
+
+Se consignará el importe total de los pagos fraccionados efectuados con anterioridad en territorio común correspondientes al mismo período impositivo.
+
+CLAVE [31]. RESULTADO DE LA DECLARACIÓN ANTERIOR (EXCLUSIVAMENTE SI ÉSTA ES COMPLEMENTARIA).
+
+Si esta declaración fuera complementaria de otra presentada con anterioridad por el mismo concepto y período, se hará constar en esta casilla el importe del pago fraccionado ingresado previamente. En este supuesto, en el apartado 6 "Complementaria", se deberá hacer constar el código electrónico asignado a dicha declaración
+
+CLAVE [32]. RESULTADO.
+
+Es un importe calculado.
+
+Clave [32] = ( [clave [18] (o clave [26]) – clave [27] - clave [28] ] × clave [29]/100 ) – clave [30] – clave [31].
+
+CLAVE [33]. MÍNIMO A INGRESAR (SÓLO PARA EMPRESAS CON CN IGUAL O SUPERIOR A 10 MILLONES €)
+
+De acuerdo con la disposición adicional decimocuarta de la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades, en la redacción dada por el artículo 71 de la Ley 6/2018, de 3 de julio, de Presupuestos Generales del Estado para el año 2018 y el artículo 4 de la Ley 8/2018, de 5 de noviembre, la cantidad a ingresar no podrá ser inferior, en ningún caso, al 23% ( 25% para contribuyentes a los que resulte de aplicación el tipo de gravamen previsto en el primer párrafo del apartado 6 del artículo 29 de esta Ley) del resultado positivo de la cuenta de pérdidas y ganancias del ejercicio de los 3, 9 u 11 primeros meses de cada año natural o, para contribuyentes cuyo período impositivo no coincida con el año natural, del ejercicio transcurrido desde el inicio del período impositivo hasta el día anterior al inicio de cada período de ingreso del pago fraccionado, determinado de acuerdo con el Código de Comercio y demás normativa contable de desarrollo, minorado exclusivamente en los pagos fraccionados realizados con anterioridad, correspondientes al mismo período impositivo.
+
+De este resultado positivo quedará excluido el importe del mismo que se corresponda con rentas derivadas de operaciones de quita o espera consecuencia de un acuerdo de acreedores del contribuyente, incluyéndose en dicho resultado aquella parte de su importe que se integre en la base imponible del período impositivo.
+
+También quedará excluido el importe del resultado positivo consecuencia de operaciones de aumento de capital o fondos propios por compensación de créditos que no se integre en la base imponible por aplicación del artículo 17.2 de la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades.
+
+En el caso de entidades parcialmente exentas a las que resulte de aplicación el régimen fiscal especial establecido en el capítulo XIV del título VII de la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades, se tomará como resultado positivo el correspondiente exclusivamente a rentas no exentas. En el caso de entidades a las que resulte de aplicación la bonificación establecida en el artículo 34 de la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades, se tomará como resultado positivo el correspondiente exclusivamente a rentas no bonificadas.
+
+En el caso de entidades que aplican la Reserva para inversiones en Canarias, quedará excluido del mencionado resultado positivo, el importe de la reserva para inversiones en Canarias que prevea realizarse de acuerdo con lo establecido en el apartado 1 disposición adicional quinta de la LIS.
+En el caso de entidades con derecho a la bonificación prevista en el artículo 26 de la Ley 19/1994, quedará excluido del mencionado resultado positivo, el 50% de la cuota íntegra correspondiente a los rendimientos que tengan derecho a dicha bonificación.
+
+Si se trata de entidades que aplican la bonificación prevista en el artículo 33 LIS en el que se regula la Bonificación por rentas obtenidas en Ceuta y Melilla, quedará excluido del mencionado resultado positivo, el 60 por ciento de aquella parte del resultado positivo que se corresponda con rentas que tengan derecho a la misma. (Para los pagos fraccionados correspondientes a períodos impositivos iniciados en 2026, cuyo plazo de presentación se inicie desde la entrada en vigor del Real Decreto-ley 22/2026, de 1 de septiembre, el porcentaje de minoración del 50 por ciento previsto en el apartado cuarto de la disposición adicional quinta de la LIS, se eleva al 60 por ciento) 
+
+Si se trata de entidades que aplican el Régimen fiscal de la Zona Especial Canaria regulado en el Título V de la Ley 19/1994, no se computará a efectos del pago fraccionado mínimo, la parte de la base imponible de la entidad de la Zona Especial Canaria que, a efectos de la aplicación del tipo especial de gravamen, se derive de las operaciones realizadas material y efectivamente en el ámbito geográfico de la Zona Especial Canaria, que resulte de aplicar el porcentaje señalado en el artículo 44 Ley 19/1994, salvo que proceda aplicar lo dispuesto en la letra b) del apartado 6 de dicho artículo, en cuyo caso el resultado positivo a computar se minorará en el importe que resulte de aplicar lo dispuesto en esa letra.
+
+Este mínimo a ingresar, no resultará de aplicación a las entidades a las que se refieren los apartados 3, 4 y 5 del artículo 29 de la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades, ni a las referidas en la Ley 11/2009, de 26 de octubre, por la que se regulan las Sociedades Anónimas Cotizadas de Inversión en el Mercado Inmobiliario, ni a las entidades de capital-riesgo reguladas en la Ley 22/2014, de 12 de noviembre.
+
+Tampoco resultará de aplicación el mínimo a ingresar a las entidades navieras en régimen especial en función del tonelaje. No obstante, para aquellas entidades cuya base imponible se determina en parte conforme al método de estimación objetiva y en parte aplicando el régimen general del impuesto (actividades no incluidas en régimen especial) el declarante deberá incluir en la casilla 33 (mínimo a ingresar) el importe que, en su caso, corresponda para las actividades incluidas en régimen general, ya que estas actividades no están excluidas del pago fraccionado mínimo. Este dato debe consignarse directamente por el contribuyente, calculándose de acuerdo con lo previsto por la disposición adicional decimocuarta de la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades.
+
+CLAVE [34]. CANTIDAD A INGRESAR
+
+Clave [34] = La mayor de las claves [32] o [33].
+
+CONTRIBUYENTES POR EL IMPUESTO SOBRE LA RENTA DE NO RESIDENTES
+
+Los contribuyentes por el Impuesto sobre la Renta de no Residentes que obtengan rentas mediante establecimiento permanente calcularán los pagos fraccionados en los mismos términos que los contribuyentes del Impuesto sobre Sociedades, pero teniendo en cuenta las peculiaridades derivadas de su condición de contribuyentes por el citado Impuesto sobre la Renta de no Residentes (artículo 23.1 del texto refundido de la LIRNR).
+
+Las entidades en régimen de atribución de rentas constituidas en el extranjero con presencia en territorio español deberán efectuar pagos fraccionados en los mismos términos que los contribuyentes de este Impuesto con establecimiento permanente en España, por la cuantía que corresponda a la parte de renta atribuible a los miembros no residentes. Cuando se realice el pago fraccionado en la modalidad del artículo 40.3 de la LIS, la base imponible se calculará de acuerdo con lo dispuesto en el capítulo V de la Ley del Impuesto sobre la Renta de no Residentes (artículo 18 del Real Decreto 1776/2004, de 30 de julio).
+
+5) INFORMACIÓN ADICIONAL
+
+Los contribuyentes cuyo importe neto de la cifra de negocios, en los doce meses anteriores a la fecha en que se inicien los períodos impositivos, sea al menos diez millones de euros estarán obligados a presentar el anexo de comunicación de datos adicionales a la declaración. A estos efectos marcarán la clave “Comunicación de datos adicionales a la declaración” indicando el número de referencia de sociedades (NRS) correspondiente a dicha comunicación.
+
+Importe excluido por operaciones de quita o espera: A efectos del pago fraccionado mínimo que se calcula a partir del resultado positivo de la cuenta de pérdidas y ganancias del ejercicio de los 3, 9 u 11 primeros meses determinado de acuerdo con el Código de Comercio y demás normativa contable de desarrollo, se cumplimentará en esta clave el importe del resultado positivo que se corresponda con rentas derivadas de operaciones de quita o espera consecuencia de un acuerdo de acreedores del contribuyente.
+
+Parte integrada en la base imponible por operaciones de quita o espera: A efectos del pago fraccionado mínimo que se calcula a partir del resultado positivo de la cuenta de pérdidas y ganancias del ejercicio de los 3, 9 u 11 primeros meses determinado de acuerdo con el Código de Comercio y demás normativa contable de desarrollo, se cumplimentará en esta clave el importe de la parte integrada en la base imponible por operaciones de quita o espera consecuencia de un acuerdo de acreedores del contribuyente.
+
+Parte integrada en la base imponible a nivel de cuota por operaciones de quita o espera (sólo cooperativas): A efectos de determinar los límites de compensación de cuotas negativas de períodos anteriores, las cooperativas incluirán además en esta clave el importe de la parte integrada en la base imponible a nivel de cuota por operaciones de quita o espera consecuencia de un acuerdo de acreedores del contribuyente.
+
+Rentas de reversión de deterioros que se integran en la base imponible: De acuerdo con el criterio que se contiene en la consulta de la Dirección General de Tributos V0155-17, debe entenderse que la reversión del deterioro regulada en el apartado 3 de la disposición transitoria decimosexta de la LIS se produce el último día del periodo impositivo, por lo que, con carácter general, no deberá tenerse en cuenta, a efectos del cálculo de los pagos fraccionados por la modalidad prevista en el apartado 3 del artículo 40 de la LIS.
+
+Importe correspondiente a la reserva para inversiones en Canarias: A efectos del pago fraccionado mínimo que se calcula a partir del resultado positivo de la cuenta de pérdidas y ganancias del ejercicio de los 3, 9 u 11 primeros meses determinado de acuerdo con el Código de Comercio y demás normativa contable de desarrollo, se cumplimentará en esta clave el importe de la reserva para inversiones en Canarias que prevea realizarse.
+
+Importe correspondiente a la bonificación prevista en el art. 26 de la Ley 19/1994: A efectos del pago fraccionado mínimo que se calcula a partir del resultado positivo de la cuenta de pérdidas y ganancias del ejercicio de los 3, 9 u 11 primeros meses determinado de acuerdo con el Código de Comercio y demás normativa contable de desarrollo, se cumplimentará en esta clave el importe de la bonificación prevista en el art. 26 de la Ley 19/1994. Dicho importe será del 50% de la cuota íntegra correspondiente a los rendimientos a los que se refiere esta disposición.
+
+Importe no computable por aplicación del régimen fiscal de la ZEC: A efectos del pago fraccionado mínimo que se calcula a partir del resultado positivo de la cuenta de pérdidas y ganancias del ejercicio de los 3, 9 u 11 primeros meses determinado de acuerdo con el Código de Comercio y demás normativa contable de desarrollo, las entidades que apliquen el régimen fiscal de la Zona Especial Canaria, regulado en el Título V de la Ley 19/1994, cumplimentarán en esta clave la minoración de la parte del resultado positivo que se corresponda con el porcentaje señalado en el artículo 44.4 de la Ley 19/1994, salvo que proceda aplicar lo dispuesto en el artículo 44.6 b) de la Ley 19/1994, en cuyo caso la minoración aplicable a incluir en esta clave será el importe que resulte de aplicar lo dispuesto en esa letra.
+
+Importe de la minoración correspondiente a las rentas que tengan derecho a la bonificación prevista en el art. 33 LIS: A efectos del pago fraccionado mínimo que se calcula a partir del resultado positivo de la cuenta de pérdidas y ganancias del ejercicio de los 3, 9 u 11 primeros meses determinado de acuerdo con el Código de Comercio y demás normativa contable de desarrollo, se cumplimentará en esta clave el 60 por ciento de la parte del resultado positivo que se corresponda con rentas que tengan derecho a la bonificación por rentas obtenidas en Ceuta o Melilla prevista en el artículo 33 de la Ley del Impuesto sobre Sociedades.
+
+(Para los pagos fraccionados correspondientes a períodos impositivos iniciados en 2026, cuyo plazo de presentación se inicie desde la entrada en vigor del Real Decreto-ley 22/2026, de 1 de septiembre, el porcentaje de minoración del 50 por ciento previsto en el apartado cuarto de la disposición adicional quinta de la LIS, se eleva al 60 por ciento)
+
+Importe excluido por operaciones de aumento de capital o fondos propios por compensación de créditos que no se integren en la base imponible por aplicación del art. 17.2 LIS: A efectos del pago fraccionado mínimo que se calcula a partir del resultado positivo de la cuenta de pérdidas y ganancias del ejercicio de los 3, 9 u 11 primeros meses determinado de acuerdo con el Código de Comercio y demás normativa contable de desarrollo, se cumplimentará en esta clave el importe del resultado positivo consecuencia de operaciones de aumento de capital o fondos propios por compensación de créditos que no se integren en la base imponible por aplicación del artículo 17.2 de la Ley del Impuesto sobre Sociedades.
+
+Importe renta exenta de las entidades que aplican el régimen fiscal especial del Capítulo XIV del Título VII LIS: A efectos del pago fraccionado mínimo que se calcula a partir del resultado positivo de la cuenta de pérdidas y ganancias del ejercicio de los 3, 9 u 11 primeros meses determinado de acuerdo con el Código de Comercio y demás normativa contable de desarrollo, las entidades parcialmente exentas a las que resulte de aplicación el régimen fiscal especial establecido en el capítulo XIV del título VII de la Ley del Impuesto sobre Sociedades cumplimentarán en esta clave el importe de la renta exenta.
+
+Importe de la bonificación prevista en el art. 34 LIS: A efectos del pago fraccionado mínimo que se calcula a partir del resultado positivo de la cuenta de pérdidas y ganancias del ejercicio de los 3, 9 u 11 primeros meses determinado de acuerdo con el Código de Comercio y demás normativa contable de desarrollo, se cumplimentará en esta clave el importe de las rentas bonificadas por prestación de servicios públicos locales establecida en el artículo 34 de la Ley del Impuesto sobre Sociedades.
+
+6) DECLARACIÓN COMPLEMENTARIA
+
+Si esta declaración fuera complementaria de otra presentada con anterioridad por el mismo concepto y período, se deberá hacer constar el código electrónico de dicha declaración anterior. En este supuesto, en las claves [02] ó [31], según el caso, se hará constar el importe del pago fraccionado ingresado por la declaración presentada con anterioridad.
+
+7) NEGATIVA
+
+Se marcará esta casilla en caso de que no deba efectuarse ingreso alguno en concepto de pago fraccionado en el período correspondiente.
+
+8) INGRESO
+
+En caso de declaración a ingresar se consignará la forma de pago. En el supuesto de que éste se realice mediante adeudo en cuenta, deberá cumplimentar debidamente el Código Internacional de Cuenta Bancaria (IBAN) correspondiente.
+
+Como novedad, se han añadido dos medios de pago mediante tarjeta de crédito en condiciones de comercio electrónico seguro y mediante transferencias instantáneas efectuadas a través plataformas de comercio electrónico seguro.
+
+No obstante, los contribuyentes del Impuesto sobre Sociedades que se encuentren acogidos al sistema de cuenta corriente tributaria efectuarán los pagos fraccionados de acuerdo con lo previsto en la Sección 6ª del Capítulo II del Título IV del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por el Real Decreto 1065/2007, de 27 de julio.
+
+PLAZO DE PRESENTACIÓN
+
+El pago fraccionado deberá efectuarse durante los primeros veinte días naturales de los meses de abril (1/P), octubre (2/P) y diciembre (3/P) de cada año natural. Los vencimientos de plazo que coincidan con un sábado o día inhábil se entenderán trasladados al primer día hábil inmediato siguiente.
+
+La presentación del modelo 202 será obligatoria para aquellos contribuyentes cuyo importe neto de la cifra de negocios de los doce meses anteriores a la fecha de inicio del período impositivo superior a 6.000.000 de euros, incluso en los supuestos en que, de acuerdo con lo previsto en las normas reguladoras de los pagos fraccionados a cuenta del Impuesto sobre Sociedades o del Impuesto sobre la Renta de no Residentes, no deba efectuarse ingreso alguno en concepto de pago fraccionado de los citados impuestos en el período correspondiente.
+
+Para el resto de entidades, en los supuestos en que, de acuerdo con las normas reguladoras de los pagos fraccionados a cuenta del Impuesto sobre Sociedades o del Impuesto sobre la Renta de los No Residentes, no deba efectuarse ingreso alguno en concepto de pago fraccionado de los citados impuestos en el período correspondiente, no será obligatoria la presentación del modelo 202.
+
+En ningún caso estarán obligadas a la presentación del modelo las agrupaciones de interés económico españolas y uniones temporales de empresas acogidas al régimen especial del capítulo II del título VII de la Ley del Impuesto sobre Sociedades, en las que el porcentaje de participación en las mismas, en su totalidad, corresponda a socios o miembros residentes en territorio español.
+
+Tampoco estarán obligadas a efectuar el referido pago fraccionado ni a presentar la correspondiente declaración, las entidades que, de acuerdo con los artículos 29.4 y 5 de dicha Ley, tributen al tipo del 1% y al 0%.
+
+Todos los importes deben expresarse en euros, debiendo consignarse la parte entera seguida de dos decimales.
+
+ANEXO II (PARTE 2)
+
+COMUNICACIÓN DE DATOS ADICIONALES A LA DECLARACIÓN.
+
+Estarán obligados a la presentación de este anexo los declarantes que hayan tenido un importe neto de la cifra de negocios, en los doce meses anteriores a la fecha en que se inicien los períodos impositivos de al menos diez millones de euros.
+
+Para efectuar dicha comunicación se ha habilitado un formulario en el modelo 202 que permitirá al declarante comunicar los datos adicionales solicitados, al que se accederá desde el propio formulario de pagos fraccionados. Los pasos a realizar serán los siguientes:
+
+El presentador inicia el trámite de presentación y abre el formulario del modelo 202.
+
+En este caso el modelo 202, en el apartado 5 (Información adicional), incorpora una casilla para marcar mediante una X que se quieren comunicar los datos adicionales solicitados. De esta forma se habilita un botón para abrir el formulario, que se rellena, firma y envía. Como resultado, se cierra la ventana con el formulario y se incorpora en el modelo 202 el NRS (Número de referencia de sociedades) correspondiente al anexo presentado.
+
+El presentador completa el modelo 202, lo firma y envía obteniendo el justificante de presentación.
+
+DETALLE CORRECCIONES AL RESULTADO CONTABLE, EXCLUIDA CORRECCIÓN POR IMPUESTO SOBRE SOCIEDADES Y POR IMPUESTO COMPLEMENTARIO (3)
+
+Se consignará el importe de las correcciones al resultado de la cuenta de pérdidas y ganancias detallado en las casillas relacionadas en este apartado. En la casilla “Otras correcciones al resultado contable” se agruparán las correcciones restantes no incluidas en las casillas anteriores.
+
+El total de correcciones netas (excluidas correcciones por Impuesto sobre Sociedades y por art. 7 Ley 16/2012) deberá ser igual al sumatorio de las anteriores correcciones (total aumentos – total disminuciones), así como a la diferencia entre las claves [07] Y [08] de la autoliquidación 202.
+
+LIMITACIÓN EN LA DEDUCIBILIDAD DE GASTOS FINANCIEROS (4)
+
+Se consignarán los datos solicitados a efectos de calcular el importe de los gastos financieros netos deducibles, limitado al 30 por ciento del beneficio operativo del ejercicio o 1 millón de euros si el importe anterior resulta inferior a esta cuantía. En la clave k se consignará el límite total a la deducción de gastos financieros netos, en todo caso, 1 millón de euros si el límite a la deducción de gastos financieros netos consignado en la letra i) más la adición del límite consignado en la letra j), es inferior a 1 millón. Si el período impositivo de la entidad tuviera una duración inferior al año, el importe de esta limitación será el resultado de multiplicar 1 millón de euros por la proporción existente entre la duración del período impositivo respecto del año.
+
+En función del importe de los gastos financieros netos del período impositivo (GFN) y de los límites resultantes se tendrán en cuenta los siguientes supuestos:
+
+Si GFN (h + m + n) > (i), e i) > 1.000.000; k) = i) + j)
+
+Si GFN (h + m + n) > (i), e i) ≤ 1.000.000; k) = la mayor de [(i) + j)] o 1.000.000
+
+Si GFN (h + m + n) ≤ (i), e i) > 1.000.000; k) = i)
+
+Si GFN (h + m + n) ≤ (i), e i) ≤ 1.000.000; k) = 1.000.000
+
+INFORMACIÓN ADICIONAL (5)
+
+Se cumplimentará este apartado en los supuestos de insuficiencia de base imponible para compensar bases imponibles negativas pendientes de períodos anteriores.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Sólo la página actual
+
+[[ID:pdf-Todo]]
+Todas las páginas del índice
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+ContinuarGenerar PDFSiguienteInstrucciones para períodos impositivos iniciados en 2023 y 2024
+		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 07/septiembre/2026
+
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

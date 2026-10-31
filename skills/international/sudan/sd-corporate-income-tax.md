@@ -22,6 +22,32 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 > **Currency note:** All monetary figures are in Sudanese Pounds (SDG — ج.س). Sudan has undergone multiple currency redenominations; verify current SDG values before filing.
 > **YMYL — verify before relying.** Sudan's tax legislation has been subject to amendments, and the political situation (post-2021 military takeover, ongoing conflict since April 2023) has disrupted tax administration. Where this skill says "verify current value," re-confirm against the Sudan Taxation Chamber (tax.gov.sd), PwC Worldwide Tax Summaries, or a qualified Sudan accountant before filing.
 
+---
+
+## Section 1 — Scope statement
+
+This skill covers:
+
+- Business Profits Tax (BPT) rates and sector differentiation for resident companies
+- Taxable income determination (accounting profit -> taxable profit adjustments)
+- Allowable and disallowed deductions (Income Tax Act 1986, Art 18)
+- Loss carryforward rules
+- Withholding tax obligations on outbound payments (dividends, interest, royalties, services)
+- Free Zones Act 2001 and investment incentive regime (Investment Incentive Law 2021)
+- Petroleum production sharing agreement (PSA) regime — special tax treatment
+- Filing requirements and self-assessment
+
+This skill does NOT cover:
+
+- Personal income tax for individuals — see `sd-income-tax`
+- VAT — see `sd-vat-gst`
+- Payroll and social insurance — see `sd-payroll-social`
+- Company formation and registration — see `sd-company-formation`
+- Capital gains tax — separate schedule under Income Tax Act 1986
+- Zakat — separate religious obligation under Zakat Act 2001
+
+---
+
 ## Section 2 — Filing requirements
 
 | Item | Rule | Source |

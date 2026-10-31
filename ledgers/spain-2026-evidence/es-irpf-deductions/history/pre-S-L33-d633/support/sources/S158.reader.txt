@@ -1,0 +1,262 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: En particular, análisis de los gastos del artículo 19.2.f) de la Ley del IRPF
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 1.
+
+C03 Rendimientos trabajo
+
+Rendimiento neto del trabajo a integrar en la base imponible
+
+Fase 2ª: Determinación del rendimiento neto
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 1.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+En particular, análisis de los gastos del artículo 19.2.f) de la Ley del IRPF
+
+Normativa:  Artículo 19.2.f) Ley IRPF 
+
+Atención: los gastos deducibles del artículo 19.2.f) de la Ley del IRPF se aplican por unidad familiar en el supuesto de tributación conjunta.
+
+Bajo este concepto se incluyen las siguientes cantidades deducibles como gastos:
+
+a. Por obtención de rendimientos
+
+2.000 euros anuales, con carácter general, para todos los contribuyentes que obtengan rendimientos de trabajo.
+
+b. Incremento por movilidad geográfica
+
+La cuantía anterior se incrementará 2.000 euros anuales adicionales cuando se trate de contribuyentes en quienes concurran los requisitos que a continuación se enumeran:
+
+Que se trate de desempleados inscritos en la oficina de empleo.
+
+Que acepten un puesto de trabajo situado en un municipio distinto al de su residencia habitual.
+
+Que el nuevo puesto de trabajo exija el traslado de su residencia habitual a un nuevo municipio.
+
+Téngase en cuenta que, con carácter general, la aplicación del incremento por movilidad geográfica queda condicionada a que efectivamente se haya producido el cambio de residencia del contribuyente a un nuevo municipio, distinto al de su residencia habitual, sin que este municipio tenga que ser, necesariamente, aquel en que esté situado el puesto de trabajo que se acepta. Eso sí, el nuevo puesto de trabajo debe exigir el cambio de residencia.
+
+Se requiere la existencia de una relación de causalidad entre el cambio de residencia y la aceptación del puesto de trabajo. A estos efectos, el transcurso de un período de tiempo prolongado entre ambos momentos puede ser un indicio, entre otros factores a considerar, de que no existe dicha relación de causalidad.
+
+El artículo 19.2.f) de la Ley del IRPF no contiene, para la aplicación del incremento por movilidad geográfica, ningún requisito de carácter temporal, ni en cuanto a la permanencia en el puesto de trabajo que se acepta ni en cuanto a la permanencia en el municipio al que traslada su residencia con motivo de la aceptación del puesto de trabajo. Tampoco limita la norma su aplicación a la duración del contrato de trabajo.
+
+En el caso del incremento del gasto deducible por movilidad geográfica, al aplicarse el mismo en el ejercicio en el que se produzca el cambio de residencia y en el siguiente, el límite debe calcularse individualmente en cada uno de los dos ejercicios y vendrá determinado por el rendimiento íntegro del trabajo que ha generado dichos gastos en cada uno de ellos, una vez aplicadas, en su caso, la reducción del 30 por 100 sobre rendimientos íntegros generados en más de dos años o que sean notoriamente irregulares correspondiente a ese rendimiento y la reducción por rendimientos de actividades artísticas obtenidos de manera excepcional, y minorado su importe, en cada período impositivo, tanto por el resto de gastos deducibles vinculados exclusivamente a tal rendimiento, como por la parte proporcional de los restantes gastos deducibles que corresponda a la duración del contrato de trabajo aceptado. De no obtenerse rendimiento del trabajo alguno en el segundo ejercicio del trabajo que motivó el cambio de residencia, la cantidad a computar del gasto deducible en dicho ejercicio será cero.
+
+El importe de 2.000 euros anuales adicionales se aplicará en el periodo impositivo en el que se produzca el cambio de residencia y en el siguiente.
+
+Si en tributación conjunta hay más de un contribuyente con derecho a aplicar el gasto deducible por ese concepto, el importe total que podrá ser objeto de deducción será de 2.000 euros, con el límite de los rendimientos netos del trabajo derivados de los puestos de trabajo aceptados por todos los contribuyentes que tengan derecho a la aplicación de ese gasto.
+
+Movilidad geográfica en el caso de funcionarios de carrera: requisito de inscripción en la oficina de empleo
+
+En el caso de desempleados que acceden a un puesto como funcionarios de carrera, el requisito de inscripción en la oficina de empleo, deberá cumplirse en el siguiente momento en función de si ha de realizar cursos o prácticas durante el período de que se trate y si requiere un desplazamiento durante ese periodo que determine un cambio de residencia.
+
+Se distinguen dos casos:
+
+Que el proceso selectivo correspondiente no exija períodos de cursos o de prácticas: basta con que el interesado figure inscrito en la oficina de empleo antes del momento de la toma de posesión como funcionario en su destino.
+
+Que el proceso selectivo correspondiente exija períodos de cursos o de prácticas: el requisito tendrá que cumplirse con anterioridad al inicio del período de cursos o de prácticas que corresponda.
+
+Haya periodos de cursos o de prácticas o no los haya, el acceso a la condición de funcionario público se produce sólo una vez, y por ello, el beneficio sólo podrá aplicarse con motivo de un traslado de domicilio, nunca de dos.
+
+Véase a este respecto la Resolución del TEAC de 30 de enero de 2025, Reclamación número 00-09334-2023, recaída en recurso extraordinario de alzada en unificación de criterio.
+
+c. Incremento para trabajadores activos con discapacidad
+
+Tratándose de personas con discapacidad que obtengan rendimientos del trabajo como trabajadores activos, la cuantía general se incrementará en las cantidades que se señalan en el cuadro siguiente:
+
+La condición de persona con discapacidad y su acreditación se comenta en el Capítulo 14.
+
+Grado de discapacidad
+Cuantía (euros)
+
+Igual o superior al 33 por 100 e inferior al 65 por 100
+3.500
+
+Igual o superior al 65 por 100 o que acrediten necesitar ayuda de terceras personas o movilidad reducida, aunque no alcancen el 65 por 100 de discapacidad
+7.750
+
+Para la aplicación de estos gastos deducibles en concepto de trabajador activo con discapacidad se requiere que concurran simultáneamente, durante cualquier día del período impositivo, las siguientes circunstancias:
+
+1. Ser trabajador en activo.
+
+Por la expresión "trabajador en activo" recogida en el artículo 19.2.f) de la Ley del IRPF debe entenderse la de aquel que percibe rendimientos de trabajo como consecuencia de la prestación efectiva de sus servicios retribuidos, por cuenta ajena y dentro del ámbito de organización y dirección de otra persona, física o jurídica, denominada empleador o empresario.
+
+Precisiones:
+
+No puede entenderse como trabajador activo a un contribuyente en situación legal de desempleo, que desarrolle una actividad económica, que esté prejubilado, un administrador de una sociedad a la que no presta servicios en el marco de una relación laboral, o que percibe una pensión por incapacidad permanente total que no desempeña ningún trabajo por cuenta ajena, etc.
+
+Se equiparan las personas que perciben una prestación por incapacidad laboral transitoria con los trabajadores activos. Sentencia del Tribunal Supremo núm. 1381/2020, de 22 de octubre (ROJ : STS 3518/2020).
+
+De igual modo, no es exigible la habitualidad en la prestación laboral para la calificación de "trabajador activo", bastando, que la persona con el grado de discapacidad reconocido sea, durante un solo día del periodo impositivo, perceptor de rentas del trabajo por la prestación efectiva de servicios (que pueden ser a tiempo parcial) retribuidos, por cuenta ajena (de carácter fijo o temporal), dentro del ámbito de organización y dirección de otra persona (física o jurídica). Sentencia del Tribunal Supremo núm. 1356/2020, de 20 de octubre (ROJ : STS 3265/2020).
+
+2. Tener el grado de discapacidad exigido, que deberá acreditarse conforme a lo previsto en el artículo 72 del Reglamento del IRPF.
+
+A estos efectos en el IRPF tienen la consideración de persona con discapacidad aquellos contribuyentes con un grado de discapacidad igual o superior al 33 por ciento.
+
+En cuanto a la acreditación del grado de discapacidad deberá efectuarse mediante certificado o resolución expedido por el Instituto de Migraciones y Servicios Sociales o el órgano competente de las Comunidades Autónomas.
+
+No obstante, se considerará acreditado un grado de discapacidad igual o superior al 33 por ciento en el caso de los pensionistas de la Seguridad Social que tengan reconocida una pensión de incapacidad permanente total, absoluta o gran invalidez y en el caso de los pensionistas de clases pasivas que tengan reconocida una pensión de jubilación o retiro por incapacidad permanente para el servicio o inutilidad.
+
+Igualmente, se considerará acreditado un grado de discapacidad igual o superior al 65 por ciento, cuando se trate de personas cuya incapacidad sea declarada judicialmente, aunque no alcance dicho grado.
+
+Precisión: discapacidad a lo largo del período impositivo (después del inicio del mismo y antes de la fecha del devengo)
+
+El TEAC, en su resolución de 22 de abril de 2025, Reclamación número 00-01351-2024, recaída en recurso extraordinario de alzada para la unificación de criterio ha fijado como criterio interpretativo, para aquellos supuestos en los que el reconocimiento de la discapacidad se produzca a lo largo del período impositivo, que no procede prorratear el importe de los gastos deducibles a que se refiere el art. 19.2.f) de la Ley del IRPF sino que estos se aplicarán de forma íntegra hasta el límite del rendimiento del trabajo al que van asociados (rendimientos del trabajo obtenidos desde que tiene reconocido el grado de discapacidad).
+
+Importante: téngase en cuenta que, a partir del 3 de septiembre de 2021, fecha de entrada en vigor de la Ley 8/2021, de 2 de junio, que reforma la legislación civil y procesal para el apoyo a las personas con discapacidad en el ejercicio de su capacidad jurídica, las referencias realizadas a la incapacitación judicial, se extienden a las resoluciones judiciales en las que se establece la curatela representativa de las personas con discapacidad.
+
+En el supuesto de tributación conjunta de unidades familiares en las que existan varios trabajadores activos que tengan la consideración de persona con discapacidad, el importe total del gasto deducible por ese concepto será la cuantía que corresponda al contribuyente con mayor grado de discapacidad, con el límite de la suma de los rendimientos netos del trabajo correspondientes a los períodos en que los contribuyentes, con derecho a aplicar este concepto de gasto, sean trabajadores en activo y con discapacidad.
+
+d. Límite de los gastos deducibles en concepto de otros gastos distintos
+
+Los gastos deducibles en concepto de otros gastos distintos tendrán como límite el rendimiento íntegro del trabajo que ha generado dichos gastos, una vez aplicadas en su caso las reducciones del artículo 18, y en su caso la reducción por rendimientos de actividades artísticas obtenidos de manera excepcional regulada en la disposición adicional sexagésima  de la Ley del IRPF, correspondientes a ese rendimiento, y minorado en el resto de gastos deducibles establecidos en el artículo 19 de la Ley del IRPF que corresponden, exclusiva o proporcionalmente, a esos rendimientos.
+
+A efectos de la aplicación de este límite, cuando el contribuyente obtenga en el mismo período impositivo rendimientos derivados de un trabajo que permita computar un mayor gasto deducible en el concepto de movilidad geográfica y en el de trabajador activo con discapacidad, y otros rendimientos del trabajo, el incremento del gasto deducible se atribuirá exclusivamente a los rendimientos íntegros del trabajo señalados en primer lugar.
+
+En consecuencia, el límite de los gastos incrementados regulados en los párrafos segundo y tercero de la letra f) del artículo 19.2) de la Ley de IRPF es el rendimiento íntegro vinculado a ellos, una vez aplicadas en su caso las reducciones del artículo 18 y, en su caso, la reducción por rendimientos de actividades artísticas obtenidos de manera excepcional regulada en la disposición adicional sexagésima de la Ley del IRPF, menos los gastos deducibles vinculados exclusivamente al rendimiento obtenido y la parte proporcional de los restantes que corresponda a la duración del contrato de trabajo aceptado o del número de días en los que concurran las circunstancias de trabajador en activo y con discapacidad.
+
+En el caso de que, en tributación individual o conjunta, coincidan el incremento de gasto deducible por movilidad geográfica y por trabajador activo con discapacidad, los rendimientos que limitan la cuantía a deducir por ambos conceptos es la resultante de la suma de los rendimientos que generan el derecho a deducir por uno o ambos conceptos.
+
+Ejemplo:
+
+Don J.F.T con una discapacidad reconocida del 34 por 100 durante 2025 estuvo trabajando el mes de enero en una empresa obteniendo unos rendimientos netos de 1.000 euros. Posteriormente, estuvo desempleado hasta el mes diciembre en el que aceptó un puesto de trabajo que le exigió cambiar su residencia a otro municipio y por el que obtuvo unos rendimientos netos de 800 euros. Durante el tiempo que estuvo desempleado estuvo inscrito en la oficina de empleo y cobró 6.000 euros.
+
+Determinar los gastos deducibles en concepto de incremento por movilidad geográfica y por trabajador activo con discapacidad.
+
+Solución
+
+Importe total de los gastos deducibles por ambos conceptos (2.000 + 3.500) = 5.500
+
+Por movilidad geográfica: 2.000
+
+Por trabajador activo con discapacidad: 3.500
+
+[[ID:(5)]]
+Límite de los gastos incrementados (1.000 + 800) (1) = 1.800
+
+[[ID:(6)]]
+Importe a deducir (2) = 1.800
+
+Notas al ejemplo:
+
+(1) Los rendimientos netos totales correspondientes a movilidad geográfica y trabajador activo con discapacidad: 1.000 euros del mes de enero y 800 euros por el puesto de trabajo que le ha exigido trasladar su residencia habitual. (Volver)
+
+(2) El contribuyente podrá deducir 1.800 euros optando bien por deducir 1.800 euros por trabajador activo con discapacidad y no deducir nada por movilidad geográfica, o bien por deducir 800 euros por movilidad geográfica y 1.000 euros por trabajador activo con discapacidad. (Volver)
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

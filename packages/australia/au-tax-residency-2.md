@@ -3,7 +3,9 @@ name: au-tax-residency-2
 description: Apply Australia's four individual tax residency tests and assess treaty, temporary residence and departure CGT consequences.
 jurisdiction: AU
 last_updated: 2026-09-08
+authored_by: Ryan Duguid
 review_status: pending_review
+trust_label: Accountant-authored
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

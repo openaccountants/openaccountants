@@ -1,0 +1,28 @@
+{
+  "generated_on": "2026-10-26",
+  "armenia": {
+    "code": "AM",
+    "name": "Armenia",
+    "region": "europe",
+    "owner": "michael",
+    "dir": "skills/international/armenia",
+    "skills": 10,
+    "reviewed": 0,
+    "stale": 0,
+    "present": [
+      "IT-IND",
+      "IT-CORP",
+      "VAT",
+      "SC",
+      "PR",
+      "TP",
+      "XB"
+    ],
+    "missing": [],
+    "not_applicable": {},
+    "partial": {},
+    "has_readme": true,
+    "complete": true
+  },
+  "professional_attestation": false
+}

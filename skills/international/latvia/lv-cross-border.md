@@ -1,14 +1,15 @@
 ---
 name: lv-cross-border
 description: "Hub skill for crossing the Latvian border in tax year 2026. Covers tax residence for individuals (declared home, or 183 days in any 12-month period, Law On Taxes and Fees section 14) and companies (incorporated under Latvian law); permanent establishment, including services over 30 days in any 6 months; Latvian-source income of non-residents; corporate income tax withholding on payments to non-residents (20% on management and consulting fees, 3% on real estate sales, 5% on real estate rent, 20% on all payments to low-tax or no-tax jurisdictions); treaty relief and the non-resident's net-basis refund report; foreign tax credit; the exit charge when assets leave Latvian taxing rights. Trigger on: moving to Latvia, leaving Latvia, non-resident, nerezidents, withholding tax Latvia, management fee withholding, low-tax jurisdiction, residence certificate, permanent establishment, exit tax. Out of scope: personal income tax detail (latvia-income-tax), corporate income tax (lv-corporate-income-tax), social contributions (latvia-social-contributions), payroll (latvia-payroll), VAT (latvia-vat-return)."
-jurisdiction: LV
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.1
-verified_by: pending
+jurisdiction: LV
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Latvia: cross-border tax for people and companies (2026) v0.1
@@ -240,3 +241,23 @@ expected:
 likumi.lv (the official legal acts portal of the publisher Latvijas Vēstnesis) and vid.gov.lv refused connections from our network on 23 and 24 October 2026 (direct requests and a browser both timed out). The texts were read from Internet Archive (web.archive.org) copies of the likumi.lv pages: the CIT Law captured on 4 October 2026, the LTF on 18 September 2026, the PIT Law on 1 September 2026, and the Administrative Liability Law (version from 1 January 2026) on 13 October 2025.
 
 Not yet confirmed: the Cabinet of Ministers regulation on applying treaty relief and the residence certificate forms (Regulation No. 178 of 30 April 2001 is the one named in VID material; not read); the Cabinet list of low-tax and no-tax jurisdictions in force in 2026 (not read); whether Latvia gives the ATAD article 5(2) exit-tax instalments anywhere outside the CIT Law and LTF section 24 (none found in those texts); the 2026 maximum social insurance contribution base that sets the 33% band and the later declaration window (set under the law On State Social Insurance, not read); the Cabinet rules on reporting payments to non-residents under CIT Law section 16(2); amendments to the PIT Law adopted after 1 September 2026; individual treaty rates and tie-breakers.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

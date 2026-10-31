@@ -1,0 +1,21 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.guernseyregistry.com/companyformation",
+      "sha256": "791e40676706443d8b3bde87b787adef3cb9ef0255e6f572da5e1a73e090bec0"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/newcompanyinfo",
+      "sha256": "588a40413f41396536d14dd8fdcb29e2832223200897013c8c26e93b0f59c22d"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/companyfees",
+      "sha256": "796d82d45ed32444f780c0dbf129390a6b1585c3bcb151135e61ad73209660d4"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0",
+      "sha256": "8daafd0c328492f9d7b2f86c56b7fddb34c91ca5d607dcbeec6977a64bb9a699"
+    }
+  ]
+}

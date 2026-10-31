@@ -1,10 +1,10 @@
 ---
 name: es-corporate-tax
-description: Use this skill whenever asked about Spanish corporate income tax (Impuesto sobre Sociedades, IS), Modelo 200, Modelo 202 (pagos fraccionados), corporate tax rates in Spain, SL tax obligations, company formation tax, deducciones empresariales, bases imponibles negativas (BINs), reserva de capitalizacion, reserva de nivelacion, or foral corporate tax. Trigger on phrases like "Impuesto de Sociedades", "Modelo 200", "Modelo 202", "IS Spain", "corporate tax Spain", "tipo gravamen sociedades", "SL taxes", "nueva creacion", "empresa reducida dimension", "microempresa fiscal", "BINs", "compensacion perdidas sociedad", "pago fraccionado empresa", "ZEC Canarias", "bonificacion Ceuta Melilla sociedades", "I+D deduccion sociedades", "donativos sociedad", "resultado contable", or any question about computing or filing corporate income tax in Spain. ALWAYS read this skill before touching any Spanish corporate tax work.
-version: 1.0
+description: Use this Guide to compute Spanish common-territory corporate income tax for a period beginning in 2026. It covers residence, accounting-to-tax adjustments, microcompany and small-company rates, depreciation, finance costs, participation income, capitalisation and levelling reserves, carried-forward losses, credits, the domestic minimum tax, annual Modelo 200 and Modelo 202 instalments. Trigger phrases include Impuesto sobre Sociedades, IS, SL taxes, empresa de reducida dimensión, bases imponibles negativas, reserva de capitalización, reserva de nivelación, pagos fraccionados and corporate exit tax. Obtain the exact period, territory, entity status, aggregated turnover and accounts before computing. The September 2026 Ceuta and Melilla amendments have specific effective-date tests. Foral taxes, consolidation, reorganisations and specialist incentive claims require their own verified analysis.
+version: 1.3
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-09-23
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -16,511 +16,241 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Corporate income tax in Spain (Impuesto sobre Sociedades)
+# Corporate income tax in Spain v1.3
 
-How a Spanish company works out and files its corporate income tax: who is liable, the rate for a period beginning in 2026, the taxable base built from accounting profit, the reserves, loss relief, amortisation, the participation exemption, the minimum tax, withholding, the instalments on modelo 202 and the annual return on modelo 200. Figures are for tax year 2026. The rates for a period beginning in 2026 come from the consolidated text of Ley 27/2014, whose disposición transitoria 44 sets them year by year. Two Agencia Tributaria pages used here carry an earlier year in their title: the table of rates in force sits in the Manual práctico de Sociedades 2025 and prints the 2025 rates, so it is used only for the micro company turnover test, and the modelo 202 instructions are headed "2025 y siguientes", so they apply to 2026 as well.
-
-## Spain Corporate Income Tax (Impuesto sobre Sociedades) Guide v1.0
+Compute Spanish corporate tax for a period beginning in 2026 from the accounts, then test the company's rate, reliefs and minimum tax. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 
 > **Based on work by Nambu89 (Impuestify)** and **Pau March (larenta)**, licensed under MIT. Adapted for the OpenAccountants format. The two source links were on a code hosting site, which is not an official source, so the links are not reproduced here.
 
-## Section 1: Quick Reference
-
-| Field | Value |
-| --- | --- |
-| Country | Spain (Estado Español) |
-| Tax | Impuesto sobre Sociedades (IS) |
-| Currency | EUR only |
-| Who is liable | Legal persons resident in Spain, except civil-law partnerships with no commercial object, plus the funds and entities listed in art. 7 of Ley 27/2014. See Section 2 |
-| Fiscal year | The company's own accounting period, which may differ from the calendar year and may not exceed twelve months |
-| Primary legislation | Ley 27/2014 (LIS), as amended by Ley 7/2024 |
-| Base | Accounting profit under the Código de Comercio, corrected by the rules of Ley 27/2014 (art. 10.3) |
-| Tax authority | Agencia Tributaria for common territory; the Haciendas Forales for Álava, Bizkaia, Gipuzkoa and Navarra |
-| Filing form | Modelo 200 (annual) |
-| Instalments | Modelo 202 (pagos fraccionados) |
-| Filing deadline | The 25 calendar days following the 6 months after the end of the period, so 25 July for a calendar year |
-| Modelo 202 deadlines | The first 20 calendar days of April, October and December |
-| Rates | See the rate tables in Section 2 |
-
-## Section 2: Tax Rates (Tipos de Gravamen) 2026
-
-Who is liable: art. 7 of Ley 27/2014 makes every legal person resident in Spain a taxpayer, apart from civil-law partnerships with no commercial object, and adds investment funds, temporary business unions, venture capital funds, pension funds, mortgage market regulation funds, securitisation funds and similar vehicles. A company is resident if it was incorporated under Spanish law, has its registered office in Spain, or has its effective place of management in Spain. Art. 8.1 sets that test.
-
-### Common Territory (Territorio Común): Ley 7/2024
-
-The rates in the body of art. 29.1 are the final ones. They do not apply yet. For a period beginning in 2026 the rates are the ones in disposición transitoria 44.2, in the first table below.
-
-**Rates for a period beginning in 2026**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| General rate | 25% | Art. 29.1: "El tipo general de gravamen para los contribuyentes de este Impuesto será el 25 por ciento" |
-| Micro company, part of the base in the band below | 19% | DT 44.2.a: "Por la parte de base imponible comprendida entre 0 y 50.000 euros, al tipo del 19 por ciento" |
-| Micro company, rest of the base | 21% | DT 44.2.a: "Por la parte de base imponible restante, al tipo del 21 por ciento" |
-| Band of the base that takes the lower micro rate | EUR 50,000 | Art. 29.1: "Por la parte de base imponible comprendida entre 0 y 50.000 euros" |
-| Small company meeting art. 101 | 23% | DT 44.2.b: "Las entidades que cumplan las previsiones previstas en el artículo 101 de esta ley tributarán al 23 %" |
-| Newly created company, first period with a positive base and the next one | 15% | Art. 29.1: "tributarán, en el primer período impositivo en que la base imponible resulte positiva y en el siguiente, al tipo del 15 por ciento" |
-| Credit institutions, and hydrocarbon exploration and extraction | 30% | Art. 29.6: "Tributarán al tipo del 30 por ciento las entidades de crédito" |
-| Entities under the regime of Ley 49/2002 | 10% | Art. 29.3: "Tributarán al 10 por ciento las entidades a las que sea de aplicación el régimen fiscal establecido en la Ley 49/2002" |
-
-The staging is settled for 2026 on this page. Disposición transitoria 44 was added by Ley 7/2024 and the consolidated text carries no note leaving it without effect. The band is scaled down where the period is shorter than a year, in proportion to its days over 365. The micro rates, the small company rate and the new company rate are all shut out where the company is a patrimonial entity within art. 5.2. A newly created company takes the new company rate in its first period with a positive base and the one after, unless another rate in the same article is lower for it. Art. 29.1 says so in those terms, so compare the new company row with the micro row and take the lower.
-
-**Which company counts as a micro company**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-sociedades-2025/capitulo-06-liquidacion-is-determinacion-tributaria/cuota-integra-casilla-00562/tipo-gravamen/tipos-gravamen-vigentes.html |
-| Net turnover of the immediately preceding period below which the micro rates apply | EUR 1,000,000 | The rate table on this page states the test as "INCN < 1.000.000" |
-
-The statute itself writes this figure in words, as one million euros. The turnover is measured across the whole group where the company belongs to one, under art. 101.2 and 101.3. A small company under art. 101 is one whose net turnover in the immediately preceding period was below ten million euros, again measured group wide, and again shut out for a patrimonial entity. Those two turnover figures are written in words in the statute.
-
-### ERD Transitional Calendar (Ley 7/2024)
-
-**Rate for a small company, period by period**
-
-| Period begins in | Rate | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| 2025 | 24% | DT 44.1.b: "tributarán al 24 %, salvo que deban tributar a un tipo diferente del general" |
-| 2026 | 23% | DT 44.2.b: "Las entidades que cumplan las previsiones previstas en el artículo 101 de esta ley tributarán al 23 %" |
-| 2027 | 22% | DT 44.3: "las entidades que cumplan las previsiones previstas en el artículo 101 de esta ley tributarán al 22 %" |
-| 2028 | 21% | DT 44.4: "las entidades que cumplan las previsiones previstas en el artículo 101 de esta ley tributarán al 21 %" |
-| 2029 and later | 20% | Art. 29.1: "las entidades que cumplan las previsiones previstas en el artículo 101 de esta ley tributarán al tipo del 20 por ciento" |
+> **General reference only.** Produce a computation, reconciliation and filing checklist for a qualified reviewer. Obtain missing facts rather than substituting a territory, entity type, accounting treatment or turnover.
 
-**Micro company rates, period by period**
+## Who this applies to
 
-| Period begins in | Rate on the first band | Rate on the rest | Note |
-| --- | --- | --- | --- |
-| Source | all figures below | see the note column | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| 2025 | 21% | 22% | DT 44.1.a: "al tipo del 21 por ciento" and "al tipo del 22 por ciento" |
-| 2026 | 19% | 21% | DT 44.2.a: "al tipo del 19 por ciento" and "al tipo del 21 por ciento" |
-| 2027 and later | 17% | 20% | Art. 29.1: "al tipo del 17 por ciento" and "al tipo del 20 por ciento" |
-
-### Foral Territories
-
-Álava, Bizkaia, Gipuzkoa and Navarra each charge their own corporate tax under their own norma foral or ley foral, with their own rates, their own reliefs and their own forms. A company taxed under one of those regimes is outside this Guide. The old rate table here has been removed because none of those rates was proved on an official page in this pass. Read the rules on the territory's own site: https://www.bizkaia.eus and https://www.araba.eus and https://www.gipuzkoa.eus and https://www.navarra.es
-
-### Special Regimes
-
-**Special regimes**
-
-| Regime | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Protected cooperatives, on cooperative results | The general rates less three percentage points, with the result capped at 20% | Art. 29.2: "minorar en tres puntos porcentuales los tipos de gravamen previstos en el apartado anterior, siempre que el tipo resultante no supere el 20 por ciento" |
-| Credit cooperatives and rural savings banks, on extra cooperative results | 30% | Art. 29.2: "excepto por lo que se refiere a los resultados extracooperativos, que tributarán al tipo del 30 por ciento" |
-| Collective investment vehicles within art. 29.4 | 1% | Art. 29.4: "Tributarán al tipo del 1 por ciento" |
-| Income earned in Ceuta or Melilla | A bonificación of the share of the gross tax: see the table in Section 4.5 | Art. 33 |
-
-The Zona Especial Canaria rate is in Section 7. The Canary Islands also have a reserve for investment (Reserva para Inversiones en Canarias) under art. 27 of Ley 19/1994, which reduces the base; it is not covered here. See https://www.gobiernodecanarias.org
-
-## Section 3: Liquidation Pipeline (Modelo 200)
-
-The computation follows this order.
-
-~~~
-1. Resultado contable (accounting profit under the Codigo de Comercio)
-   + Ajustes positivos (non-deductible expenses, amortisation differences)
-   - Ajustes negativos (exempt income, timing differences)
-   = Base imponible previa
-   - Reserva de capitalizacion (art. 25, Section 4.1, capped on the base imponible previa)
-   - Compensacion de bases imponibles negativas (art. 26, Section 4.2, limited on the base imponible previa)
-   - Reserva para Inversiones en Canarias where it applies
-   = Base imponible (it cannot go below zero)
-   - Reserva de nivelacion (art. 105, small companies only, Section 4.3)
-   x Tipo de gravamen (the rate tables in Section 2)
-   = Cuota integra
-   - Deducciones (research and development, innovation, donations, employment, film)
-   - Bonificaciones (Ceuta and Melilla, cooperatives)
-   = Cuota liquida, subject to the minimum in Section 4.6
-   - Retenciones e ingresos a cuenta (Section 5)
-   - Pagos fraccionados already paid on modelo 202
-   = Resultado de la liquidacion (to pay or to refund)
-~~~
-
-Art. 10.3 is the rule that makes this work: in direct assessment the base is the accounting profit determined under the Código de Comercio, corrected by the rules of the tax law. Everything in the pipeline above between the accounting profit and the base is one of those corrections. See https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328
-
-## Section 4: Key Computations
-
-### 4.1 Reserva de Capitalización (Art. 25 LIS)
-
-**Capitalisation reserve**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Reduction of the base, as a share of the increase in own funds | 20% | Art. 25.1: "tendrán derecho a una reducción en la base imponible del 20 por ciento del importe del incremento de sus fondos propios" |
-| Reduction where the average headcount rose by at least 2% and not more than 5% | 23% | Art. 25.1: "del 23 por ciento del importe del incremento de los fondos propios, siempre que la plantilla media total del contribuyente" |
-| Headcount increase band for the 23% rate | at least 2% and not more than 5% | Art. 25.1: "en un mínimo de un 2 por ciento sin superar un 5 por ciento" |
-| Reduction where the headcount increase is between 5% and 10% | 26.5% | Art. 25.1: "el contribuyente tendrá derecho a una reducción en la base imponible del 26,5 por ciento" |
-| Reduction where the headcount increase is above 10% | 30% | Art. 25.1: "Cuando el referido incremento resulte superior a un 10 por ciento, la reducción a la que tendrá derecho el contribuyente será del 30 por ciento" |
-| Cap, as a share of the positive base before this reduction and before loss relief | 20% | Art. 25.1.i: "El 20 por ciento de la base imponible positiva del período impositivo previa a esta reducción" |
-| Cap where net turnover in the preceding twelve months was below one million euros | 25% | Art. 25.1.ii: "El 25 por ciento de la base imponible positiva del período impositivo previa a esta reducción" |
-
-The reduction is open only to a company that is taxed at a rate within art. 29.1 or art. 29.6. Art. 25.1 opens with that condition, so a body under art. 29.2, art. 29.3, art. 29.4, art. 29.5 or art. 29.7 does not get it. The bands are the law's own wording and they overlap at one point. An increase of exactly the figure that closes the lower band also sits inside the band above it, because the lower band is written as not going beyond that figure and the band above is written as running from it. No official page resolves the overlap. Where a headcount increase lands exactly there, take the lower reduction and put the question to the accountant rather than choosing the higher one. The increase in own funds must be held for three years, an undistributable reserve of the same amount must be booked and held for the same three years, and the headcount increase must also be held for three years. Amounts that do not fit in the base carry forward two years. Contributions by members, capital increases by set off of debts, legal and statutory reserves and the reserves booked for the levelling reserve and for the Canary investment reserve do not count as an increase in own funds.
-
-### 4.2 Compensación de Bases Imponibles Negativas (BINs): Art. 26 LIS
-
-**Loss relief limits**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| General limit, as a share of the base before the capitalisation reserve and before the losses | 70% | Art. 26.1: "podrán ser compensadas con las rentas positivas de los períodos impositivos siguientes con el límite del 70 por ciento" |
-| Limit where net turnover in the previous twelve months was at least twenty million euros and below sixty million euros | 50% | DA 15.1: "El 50 por ciento, cuando en los referidos 12 meses el importe neto de la cifra de negocios sea al menos de 20 millones de euros" |
-| Limit where net turnover in the previous twelve months was at least sixty million euros | 25% | DA 15.1: "El 25 por ciento, cuando en los referidos 12 meses el importe neto de la cifra de negocios sea al menos de 60 millones de euros" |
-| Cap on the credits for international double taxation, for the same large companies, as a share of the gross tax | 50% | DA 15.2: "no podrá exceder conjuntamente del 50 por ciento de la cuota íntegra del contribuyente" |
-
-Losses have no expiry date. Whatever the percentage limit, losses can always be used up to one million euros in the period, which the statute writes in words; that floor is scaled down for a period shorter than a year. The limit does not apply to income from a creditors' agreement, nor in the period in which the company is wound up, unless the winding up is part of a restructuring under the special regime of Chapter VII of Title VII, nor, for the first three periods with a positive base, to a newly created company within art. 29.1. The tax office may check a loss for ten years from the end of the filing period for the return that declared it. Losses cannot be used at all where the company changed hands after the loss year in the circumstances art. 26.4 lists, which turn on the buyer's earlier stake, on the company having stopped trading, on a changed line of business, on a patrimonial entity and on removal from the register of entities.
-
-### 4.3 Reserva de Nivelación (Art. 105 LIS): ERD Only
-
-**Levelling reserve**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Reduction of the positive base | 10% | Art. 105.1: "podrán minorar su base imponible positiva hasta el 10 por ciento de su importe" |
-
-Open only to a company that meets art. 101 in the period and applies the rate in the first paragraph of art. 29.1. For a period beginning in 2026 that company's rate comes from disposición transitoria 44.2.b, which is written as a speciality of art. 29.1, and no page says in terms whether the art. 105.1 condition is then met. The Agencia Tributaria still carries the levelling reserve boxes on the modelo 202 form for periods beginning in 2025 and later, under the same art. 29.1 wording. Do not rule the reserve out on the wording alone: put it to the accountant. The reduction may not exceed one million euros, which the statute writes in words, scaled down for a short period. The amount is added back to the base of the periods ending in the following five years, against a negative base as it arises, and whatever is left is added back at the end of that time. A reserve of the same amount must be booked out of the year's profit and left undistributable until the add back happens. The same amounts cannot fund both this reserve and the capitalisation reserve, nor the Canary investment reserve (art. 105.5). The reduction is taken into account when working out an instalment under art. 40.3 (art. 105.4).
-
-### 4.4 Deducciones en Cuota
-
-**Deductions against the gross tax**
-
-| Deduction | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Research and development, on the qualifying spend | 25% | Art. 35.1.c: "El 25 por ciento de los gastos efectuados en el período impositivo por este concepto" |
-| Research and development, on the excess over the average of the two preceding years | 42% | Art. 35.1.c: "el 42 por ciento sobre el exceso respecto de ésta" |
-| Extra deduction for qualified researchers working only on research and development | 17% | Art. 35.1.c: "se practicará una deducción adicional del 17 por ciento del importe de los gastos de personal" |
-| Investment in assets used only for research and development, buildings and land excluded | 8% | Art. 35.1.c: "El 8 por ciento de las inversiones en elementos de inmovilizado material e intangible" |
-| Technological innovation, on the qualifying spend | 12% | Art. 35.2.c: "El 12 por ciento de los gastos efectuados en el período impositivo por este concepto" |
-| Increase in the average headcount of workers with a disability of at least 33% and under 65%, per person and year | EUR 9,000 | Art. 38.1: "Será deducible de la cuota íntegra la cantidad de 9.000 euros por cada persona/año de incremento del promedio de plantilla" |
-| Increase in the average headcount of workers with a disability of 65% or more, per person and year | EUR 12,000 | Art. 38.2: "Será deducible de la cuota íntegra la cantidad de 12.000 euros por cada persona/año de incremento del promedio de plantilla" |
-| Spanish film and audiovisual production, on the first million of the base | 30% | Art. 36.1.a: "Del 30 por ciento respecto del primer millón de base de la deducción" |
-| Spanish film and audiovisual production, on the excess | 25% | Art. 36.1.b: "Del 25 por ciento sobre el exceso de dicho importe" |
-| Joint cap on the deductions of this chapter, on the gross tax less the international double taxation credits and the bonificaciones | 25% | Art. 39.1: "no podrán exceder conjuntamente del 25 por ciento de la cuota íntegra minorada en las deducciones para evitar la doble imposición internacional y las bonificaciones" |
-| Raised cap, where the art. 35 and art. 36 deductions of the period exceed the share in the row below | 50% | Art. 39.1: "el limite se elevará al 50 por ciento cuando el importe de las deducciones previstas en los artículos 35 y 36" |
-| Share of the gross tax the art. 35 and art. 36 deductions must exceed for the raised cap | 10% | Art. 39.1: "exceda del 10 por ciento de la cuota íntegra, minorada en las deducciones para evitar la doble imposición internacional y las bonificaciones" |
-| Discount where a company takes the research and innovation deduction outside the cap and asks for it in cash | 20% | Art. 39.2: "aplicarse con un descuento del 20 por ciento de su importe" |
-
-The film deduction is capped at twenty million euros, and at ten million euros for each episode of a series; both figures are written in words in the statute. Unused deductions carry forward fifteen years, and eighteen years for the research and innovation deduction.
+[Ley 27/2014 (LIS), arts. 7–8](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a7) taxes resident legal persons, apart from civil-law partnerships without a commercial object, and the funds and other vehicles expressly listed in art. 7. A resident is taxed on worldwide income. Residence follows **any** of incorporation under Spanish law, Spanish registered office, or effective management in Spain; effective management means direction and control of the whole activity. Incorporation alone can therefore retain Spanish residence after management moves.
 
-**Donations under Ley 49/2002**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2002-25039 |
-| Deduction on the base of the donation | 40% | Art. 20.1: "el 40 % de la base de la deducción determinada según lo dispuesto en el artículo 18" |
-| Deduction to the same body, where donations were made to it in each of the two preceding periods and neither this period's nor last period's amount was below the amount of the period before it | 50% | Art. 20.1: "el porcentaje de deducción aplicable a la base de la deducción en favor de esa misma entidad será el 50 %" |
-| Cap on the base of the deduction, as a share of the taxable base of the period | 15% | Art. 20.2: "La base de esta deducción no podrá exceder del 15 % de la base imponible del período impositivo" |
+This Guide computes the common-territory regime. The [foral corporate Guide](es-foral-corporate-tax.md) supplies the separate four territorial ordinary methods and law/collection allocation, with its precise unresolved branches identified. Establish whether common or Basque/Navarre foral tax rules apply before using the rates. The fiscal period follows the entity's accounting year, cannot exceed **12 months**, and closes on extinction, transfer of residence abroad and the other transformations in [LIS art. 27](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a27). The period's **start year**, not the year the return is filed, determines the staged 2026 rates.
 
-Amounts above the cap carry forward ten years.
+For a patrimonial entity, test assets under [LIS art. 5.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a5), including its valuation and excluded-security rules; it is not enough to label a company a holding company. Patrimonial status excludes the ordinary micro, reduced-dimension and newly created rates in art. 29.1. Fully exempt and partially exempt bodies follow art. 9 and the filing exceptions below. Non-residents and Spanish permanent establishments require the IRNR rules as well.
 
-### 4.5 Bonificación Ceuta y Melilla (Art. 33 LIS)
+## Rates, bands and thresholds
 
-**Ceuta and Melilla**
+Unless stated otherwise, these apply to **periods beginning in 2026**. Check the statutory exclusions before selecting a row.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Bonificación on the part of the gross tax matching income earned in Ceuta or Melilla | 60% | Art. 33.1: "Tendrá una bonificación del 60 por ciento, la parte de cuota íntegra que corresponda a las rentas obtenidas en Ceuta o Melilla" |
-| Income presumed to be earned there, per full-time employee working there | EUR 60,000 | Art. 33.3: "hasta un importe de 60.000 euros por persona empleada con contrato laboral y a jornada completa" |
-| Ceiling on that presumption | EUR 1,200,000 | Art. 33.3: "1.200.000 euros. En el supuesto de que se obtengan rentas superiores al citado importe" |
-| Per employee figure for the first two periods after a fixed place of business is set up there | EUR 120,000 | Art. 33.3: "hasta un importe de 120.000 euros por persona empleada con contrato laboral y a jornada completa" |
-| Ceiling for those first two periods | EUR 2,400,000 | Art. 33.3: "2.400.000 euros. En el supuesto de que se obtengan rentas superiores al citado importe" |
+| Item | Amount or test | Tax year | Official source |
+|---|---|---|---|
+| Ordinary corporate rate | 25% | 2026 | [LIS art. 29.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) |
+| Microcompany turnover test | Immediately preceding period's net turnover below EUR 1 million; annualisation and aggregation apply | 2026 | [LIS DT 44.2.a; arts. 101.2–101.3](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#dt-6) |
+| Microcompany rate | 19% on the first EUR 50,000 of taxable base; 21% on the excess | 2026 | [LIS DT 44.2.a](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#dt-6) |
+| Short-period microcompany first band | EUR 50,000 × period days / 365, capped at the base | 2026 | [LIS DT 44.2.a](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#dt-6) |
+| Reduced-dimension entity (ERD) | 23%, subject to another applicable special rate; art. 101 ordinarily requires prior-period net turnover below EUR 10 million | 2026 | [LIS DT 44.2.b; art. 101](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#dt-6) |
+| Qualifying newly created economic activity | 15% in the first positive-base period and the next, unless a lower rate applies | 2026 | [LIS art. 29.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) |
+| Credit institutions and specified hydrocarbon activity | 30%; the article distinguishes activities outside that special rate | 2026 | [LIS art. 29.6](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) |
+| Qualifying Ley 49/2002 bodies / qualifying investment vehicles / pension funds | Respectively 10% / 1% / 0%; each has its own eligibility conditions | 2026 | [LIS arts. 29.3–29.5](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) |
+| Protected cooperatives' cooperative results | Applicable art. 29.1 rates less 3 percentage points, capped at 20%; separate rules govern credit cooperatives and extra-cooperative results | 2026 | [LIS art. 29.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) |
+| Credit cooperatives and rural savings banks | Applicable art. 29.1 rates for cooperative results; **30% for extra-cooperative results** | 2026 | [LIS art. 29.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) |
+| General loss-offset percentage | 70% of the positive base before capitalisation reserve and loss relief | 2026 | [LIS art. 26.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a26) |
+| Large-company loss-offset percentages | 50% for preceding-12-month turnover at least EUR 20m but below EUR 60m; 25% from EUR 60m | 2026 | [LIS DA 15.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#dadecimoquinta) |
+| Minimum ordinary loss capacity | EUR 1m, proportionately reduced for a short period, subject to available positive base and eligible losses | 2026 | [LIS arts. 26.1–26.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a26) |
+| Net finance-cost limit | 30% of statutory operating profit; at least EUR 1m current-period net costs deductible, prorated for a short period | 2026 | [LIS arts. 16.1, 16.4](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a16) |
+| Capitalisation reserve | Generally 20% of qualifying own-funds increase; enhanced headcount bands and base caps below | 2026 | [LIS art. 25](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a25) |
+| Levelling reserve | Up to 10% of positive base, maximum EUR 1m, prorated for a short period | 2026 | [LIS art. 105.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a105) |
+| Domestic minimum tax trigger | Preceding-12-month turnover at least EUR 20m, or tax consolidation regardless of turnover | 2026 | [LIS art. 30 bis.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a3-3) |
+| Domestic minimum percentages | Generally 15%; qualifying new companies 10%; specified art. 29.6 entities 18%; cooperatives 60% of their gross tax | 2026 | [LIS art. 30 bis.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a3-3) |
+| Reduced-rate domestic minimum formula | Multiply the applicable micro scale or ERD rate by 15/25 and round upward; this is a minimum-tax test, not the ordinary tax rate | 2026 | [LIS art. 30 bis.1 and DT 44.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a3-3) |
+| General corporate withholding | 19%; image-right income 24%; taxable special lottery prizes 20% | 2026 | [LIS art. 128.6](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a128) |
 
-The bonificación covers a company with its tax domicile in those territories, a Spanish company operating there through a branch or establishment, and a non-resident company operating there through a permanent establishment. The income must come from an activity that closes a commercial cycle there. Above the presumed amounts the company has to show that closing of a cycle. This Guide does not state a combined rate for Ceuta or Melilla income, because no official page prints one.
+For the ordinary ERD/micro tests, aggregate group turnover under art. 101.3 and annualise a short prior period or activity under art. 101.2. Exactly EUR 1m is outside the micro threshold. Art. 101.4 can preserve ERD incentives for **three following periods** after the EUR 10m threshold is reached where its historical conditions hold. A new entity is not automatically a qualifying new business: transferred related-party activity, the specified activity previously conducted by a majority individual owner, group membership and patrimonial status can disqualify it (art. 29.1).
 
-### 4.6 Tributación Mínima (Art. 30 bis LIS)
+**Other start years.** Do not apply 2026 rates to a period beginning in 2025 and ending in 2026. DT 44 gives micro rates **21%/22% in 2025**, then **19%/21% in 2026**, before the art. 29.1 **17%/20%** scale from 2027. The ERD transition is **24%, 23%, 22%, 21%** for starts in **2025, 2026, 2027, 2028**, then **20%**. The EUR 50,000 band is prorated for a short period. These are the statute's dated transitions, not predictions ([DT 44](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#dt-6)).
 
-**Minimum tax**
+## The base
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Floor under the net tax, as a share of the taxable base | 15% | Art. 30 bis.1: "la cuota líquida no podrá ser inferior al resultado de aplicar el 15 por ciento a la base imponible" |
-| Floor for a newly created company taxed at the new company rate | 10% | Art. 30 bis.1: "el porcentaje señalado en el mismo será el 10 por ciento en las entidades de nueva creación" |
-| Floor for a credit institution or a hydrocarbon company within art. 29.6 | 18% | Art. 30 bis.1: "y el 18 por ciento si se trata de entidades que tributen al tipo de gravamen previsto" |
-| Floor for a cooperative, as a share of its gross tax | 60% | Art. 30 bis.1: "la cuota líquida mínima no podrá ser inferior al resultado de aplicar el 60 por ciento a la cuota íntegra" |
+### 1. Reconcile the accounts to tax
 
-The rule bites on a company whose net turnover was at least twenty million euros in the twelve months before the period started, which the statute writes in words, and on any company in a tax consolidation group whatever its turnover. It does not apply to companies taxed under art. 29.3, art. 29.4 or art. 29.5, nor to a listed property investment company under Ley 11/2009. For a micro company the floor is the scale multiplied by fifteen twenty-fifths, rounded up; for a small company within art. 101 it is that company's rate multiplied by fifteen twenty-fifths, rounded up. The scale and the rate to use are the ones for a period beginning in 2026 in the tables in Section 2, because disposición transitoria 44.2 states its rates as specialities of art. 29.1 and the rates printed in the body of that article are the final ones. No official page says how far that rounding up goes, to a whole percentage point or to a decimal, and the two give different answers. Put it to the accountant. The base used for the floor is adjusted for the levelling reserve and reduced by the Canary investment reserve, and a Zona Especial Canaria entity leaves the part of its base taxed at the special rate out of the calculation.
+Start from accounting profit determined under the Commercial Code and applicable accounting rules, then make the adjustments required by tax law ([LIS art. 10.3](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a10)). Keep a schedule by item, accounting amount, tax amount, difference, timing reversal and article. Account for the accrual and booking requirements in [art. 11](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a11); an unpaid invoice is not automatically outside the period.
 
-### 4.7 Amortización (Art. 12 LIS)
+Add back own-funds remuneration, including the specified group participating-loan interest; corporate and complementary tax expenses; criminal/administrative penalties and the statutory late/enforcement surcharges; gambling losses; and other disallowances in [art. 15](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a15). Add back equity-interest impairment within the categories in art. 15.k, testing its incorporated art. 21 holding/foreign-tax conditions. Donations are not an ordinary expense deduction, although a separate tax credit is available when its own conditions hold. Client/supplier entertainment is capped at **1% of period net turnover**; customary staff, promotion and income-correlated expenses are not automatically donations. Do not equate every director payment with a prohibited distribution; art. 15.e expressly addresses employment/senior-management remuneration. Test related-party pricing under art. 18 and special group-acquisition finance restrictions under art. 15.h.
 
-Amortisation is deductible where it reflects the real fall in value. The straight line table in art. 12.1.a is the safe harbour: an amount within the maximum coefficient and the maximum number of years is accepted without further proof. The other accepted methods are a constant percentage on the written down value, the sum of the digits method, an amortisation plan agreed with the tax office, and any amount the company can justify.
+Bad-debt impairment follows [art. 13.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a13): for example, **six months** overdue, insolvency proceedings or the specified judicial/arbitration circumstances. Public-authority, related-party and general portfolio provisions have exclusions. Qualifying ERDs have the separate **1%** collective debtor allowance with exclusions and roll-forward mechanics in [art. 104](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a104). Do not deduct both an individual impairment and a collective allowance on the same included debt.
 
-**Straight line table, selected rows**
+For finance costs, calculate the statutory net costs and operating-profit measure, not an unadjusted accounts EBITDA. Art. 16 excludes specified non-deductible/hybrid items and income outside the tax base from its measure. Carry disallowed net costs forward without a fixed expiry; unused percentage capacity can augment limits in the following **five years**. Apply acquisition-debt limits and the credit/insurance and qualifying extinction exceptions separately (art. 16).
 
-| Type of asset | Maximum coefficient | Maximum years | Note |
-| --- | --- | --- | --- |
-| Source | all figures below | see the note column | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| General civil works | 2% | 100 | Art. 12.1.a: "Obra civil general 2% 100" |
-| Industrial buildings | 3% | 68 | Art. 12.1.a: "Edificios industriales 3% 68" |
-| Commercial, administrative, service and residential buildings | 2% | 100 | Art. 12.1.a: "Edificios comerciales, administrativos, de servicios y viviendas 2% 100" |
-| Other installations | 10% | 20 | Art. 12.1.a: "Resto instalaciones 10% 20" |
-| Machinery | 12% | 18 | Art. 12.1.a: "Maquinaria 12% 18" |
-| External transport equipment | 16% | 14 | Art. 12.1.a: "Elementos de transporte externo 16% 14" |
-| Lorries | 20% | 10 | Art. 12.1.a: "Autocamiones 20% 10" |
-| Furniture | 10% | 20 | Art. 12.1.a: "Mobiliario 10% 20" |
-| Data processing equipment | 25% | 8 | Art. 12.1.a: "Equipos para procesos de información 25% 8" |
-| Computer systems and programs | 33% | 6 | Art. 12.1.a: "Sistemas y programas informáticos. 33% 6" |
-| Other assets | 10% | 20 | Art. 12.1.a: "Otros elementos 10% 20" |
+### 2. Compute depreciation and investment differences
 
-**Free and accelerated amortisation**
+[LIS art. 12](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a12) accepts effective depreciation using its linear table, permitted declining-balance or sum-of-digits methods, an approved plan, or justified actual depreciation. Building/furniture restrictions apply to the alternative methods. Retain the asset's cost, start-of-use date, useful life, method, accounting charge, tax charge and closing tax basis.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Unit value of a new tangible asset that can be written off at once | EUR 300 | Art. 12.3.e: "cuyo valor unitario no exceda de 300 euros" |
-| Ceiling on that write off for the period | EUR 25,000 | Art. 12.3.e: "hasta el límite de 25.000 euros referido al período impositivo" |
-| Investment a small company may write off freely, per unit of increase in the average headcount | EUR 120,000 | Art. 102.1: "la que resulte de multiplicar la cifra de 120.000 euros por el referido incremento" |
-| Bad debt provision a small company may deduct, as a share of the debtors at the end of the period | 1% | Art. 104.1: "hasta el límite del 1 por ciento sobre los deudores existentes a la conclusión del período impositivo" |
+| Selected linear asset class | Maximum annual coefficient / maximum years | Tax year | Source |
+|---|---|---|---|
+| General civil works / commercial, administrative, service and residential buildings | 2% / 100 years | 2026 | [LIS art. 12.1.a](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a12) |
+| Industrial buildings | 3% / 68 years | 2026 | [Same article](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a12) |
+| Other installations / furniture / other assets | 10% / 20 years | 2026 | [Same article](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a12) |
+| Machinery | 12% / 18 years | 2026 | [Same article](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a12) |
+| External transport equipment | 16% / 14 years | 2026 | [Same article](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a12) |
+| Lorries | 20% / 10 years | 2026 | [Same article](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a12) |
+| Data-processing equipment | 25% / 8 years | 2026 | [Same article](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a12) |
+| Computer systems and software | 33% / 6 years | 2026 | [Same article](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a12) |
 
-An intangible asset is written off over its useful life. Where that life cannot be estimated reliably, and for goodwill, the yearly maximum is a twentieth of the amount, which the statute writes in words. A small company within art. 101 may also amortise new tangible assets, new investment property and intangible assets at the maximum straight line coefficient multiplied by two (art. 103.1). The free amortisation tied to headcount needs the average headcount to rise in the 24 months after the asset starts being used, against the average of the previous 12 months, and to stay up for another 24 months.
+Intangibles follow reliable useful life; where it cannot be reliably estimated, and for goodwill, the annual tax ceiling is **one twentieth**, equivalent to **5%**. New tangible assets costing no more than **EUR 300 each** can be freely depreciated within a **EUR 25,000** period cap, prorated for a short period (arts. 12.2–12.3.e). Qualifying ERDs can use accelerated depreciation for the new assets in [art. 103](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a103). The separate employment-linked free-depreciation limit is **EUR 120,000 per qualifying average-headcount increase**, with the acquisition, **24-month increase and further 24-month maintenance** tests in [art. 102](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a102). Keep the eligibility schedule; do not claim it merely because one employee joined.
 
-### 4.8 Exención por participación (Art. 21 LIS)
+### 3. Apply participation and foreign-income treatment
 
-**Participation exemption**
+[LIS art. 21](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a21) requires at least a **5%** direct/indirect holding and the relevant **one-year** holding test. A dividend can complete that year through subsequent holding; a disposal must satisfy the relevant condition on the disposal date. Foreign subsidiaries also require the statutory analogous tax test, generally a nominal **10%**, with the applicable treaty/information-exchange rule. Check indirect holdings, deductible payer distributions, patrimonial entities, reorganisations and loss restrictions before concluding an exemption.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Minimum direct or indirect holding in the capital or own funds of the other company | 5% | Art. 21.1.a: "Que el porcentaje de participación, directa o indirecta, en el capital o en los fondos propios de la entidad sea, al menos, del 5 por ciento" |
-| Cut applied to the exempt amount for management expenses | 5% | Art. 21.10: "se reducirá, a efectos de la aplicación de dicha exención, en un 5 por ciento en concepto de gastos de gestión" |
+Art. 21.10 reduces qualifying exempt dividends and gains by **5% for management costs**, giving a derived **95% exempt amount** in the ordinary case. This arithmetic is allowed; the statute need not print the derived result. The art. 21.11 exception concerns dividends, not a universal full exemption for all small companies: it requires prior turnover below **EUR 40m**, the non-patrimonial and prior group/holding restrictions, a wholly owned subsidiary incorporated after **1 January 2021**, and receipt within the specified **three following years**. Record each condition separately.
 
-Dividends and gains on selling a holding are exempt where the holding reaches the percentage in the table and has been held without a break for the year before the dividend falls due, or is held afterwards for long enough to complete that year. A non-resident subsidiary must also have borne a foreign tax of a like nature at a nominal rate of at least ten per cent, which the statute writes in words. The exempt amount is then cut by the percentage in the second row of the table. Art. 21.11 switches that cut off for a company whose net turnover in the immediately preceding period was below forty million euros, written in words in the statute, where the further conditions in that paragraph are met. This Guide does not state a net exempt percentage, because the statute does not print one.
+Qualifying foreign permanent-establishment positive income follows [art. 22](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a22); ordinary foreign PE losses are not imported into the Spanish base, while cessation has its own netting rules. For taxable foreign income, test the credit for actual foreign tax against the corresponding Spanish tax under [arts. 31–32](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a31). Large companies within DA 15 have a separate **50% gross-tax cap** on the listed international double-tax credits. Do not combine an exemption and credit on the same income without a statutory basis.
 
-## Section 5: Modelo 202: Pagos Fraccionados
+### 4. Apply reserves and eligible losses in order
 
-### Two Modalities
+First establish the positive base and statutory reference amounts before the relevant reductions. Apply capitalisation reserve, then eligible loss offset, then any qualifying levelling-reserve movement. Keep the actual before-reserve reference base for the loss cap; it is not the reduced base after capitalisation (arts. 25–26, 30 and 105).
 
-**Instalment percentage under the art. 40.2 method**
+**Capitalisation reserve, art. 25.** For taxpayers at art. 29.1 or 29.6 rates, compute the qualifying increase in own funds from closing funds excluding the current result minus opening funds excluding the preceding result, then remove the statutory non-qualifying movements, including member contributions, debt capitalisations, specified restructuring/own-share movements, legal reserves, levelling/Canary reserves and the other art. 25.2 exclusions. Generally reduce by **20%** of that increase. The enhanced rates are **23%** where average headcount rises at least **2% without exceeding 5%**, **26.5%** where it is between **5% and 10%**, and **30%** above **10%**. The literal article overlaps at exactly **5%**. AEAT’s [2025 corporate manual, for periods beginning from 2025](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-sociedades-2025/principales-novedades-impuesto-sobre-sociedades-2025/reserva-capitalizacion.html), resolves its administrative table as **23% for ≥2% and <5%, 26.5% for ≥5% and ≤10%, and 30% above 10%**. Retain both the statutory wording and that published administrative interpretation; the manual is not a legislative correction. At an exact 5% claim, record this interpretation and the underlying headcount evidence rather than describing the statute as unambiguous.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Percentage applied to the base, which is the gross tax of the last return whose filing period had ended, less that period's deductions, bonificaciones and amounts withheld | 18% | Art. 40.2: "La cuantía del pago fraccionado previsto en este apartado será el resultado de aplicar a la base el porcentaje del 18 por ciento" |
+Cap the reduction at **20%** of the positive statutory reference base, or **25%** where preceding-12-month net turnover is below **EUR 1m**. Hold the own-funds increase and separately identified unavailable reserve for **three years**, subject to statutory exceptions; hold enhanced headcount for the same period. Unused qualifying reduction carries into periods ending in the following **two years** subject to the cap. A breach triggers tax and interest under arts. 25.4 and 125.3. Source: [LIS art. 25](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a25).
 
-**When the art. 40.3 method is compulsory**
+**Losses, art. 26 and DA 15.** Carry eligible assessed/self-assessed losses forward without a fixed expiry. For an ordinary full-year period, offset the lower of available eligible losses, the remaining positive base and the greater of **EUR 1m** or the relevant **70%/50%/25%** reference-base amount. Prorate the EUR 1m amount for a short period. New-activity first-positive-period rules, qualifying creditor write-offs and extinction alter the percentage restriction; read the exact art. 26 exception, including restructuring exclusions. Acquisition anti-trafficking restrictions in art. 26.4 can deny losses entirely. The **ten-year** loss-checking period does not remove the taxpayer's later duty to substantiate a claimed loss with the specified return/accounts and deposit evidence (art. 26.5).
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html |
-| Net turnover of the twelve months before the period starts above which the art. 40.3 method is compulsory | EUR 6,000,000 | Instructions: "Importe neto de la cifra de negocios de los doce meses anteriores a la fecha de inicio del periodo impositivo es superior a 6.000.000 euros" |
+**Levelling reserve, art. 105.** For qualifying art. 101 entities applying the required art. 29.1 rate, reduce a positive base by up to **10%**, within the **EUR 1m** short-period-adjusted ceiling. The [AEAT instructions for 2025 and following periods](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html) expressly retain this computation for qualifying reduced-dimension entities. Book the unavailable reserve from profits as art. 105.3 requires. Add the reduction back against negative bases in periods ending within the following **five years**, and add any remainder in the period at that deadline. The same funds cannot support the levelling, capitalisation and Canary investment reserves simultaneously. Include the movement in art. 40.3 instalments. Breach requires the attributable gross tax increased by **5%**, plus interest (art. 105.6).
 
-Under art. 40.2, the default, the base is the gross tax of the last period whose filing period had closed on the first day of the payment window, less the deductions, the bonificaciones and the amounts already withheld for that period, and the percentage in the table is applied to it.
+### 5. Compute gross tax, credits and the minimum
 
-Under art. 40.3 the base is the actual taxable base of the first 3, 9 or 11 months of the calendar year, worked out under the ordinary rules. The percentage is five sevenths of the company's rate, rounded down, where net turnover in the previous twelve months was under ten million euros, and nineteen twentieths of the rate, rounded up, where it was at least ten million euros. The law writes those fractions and those turnover figures in words. This Guide does not print the resulting percentage for any rate, because the official pages do not print it either: work it out from the company's own rate. The art. 40.3 method is optional for a company below the turnover in the table, chosen on a censal return in February, and binding until it is withdrawn the same way. It is compulsory above that turnover, and then modelo 202 must be filed even when nothing is due.
+Apply the selected rate or micro bands to the resulting base. Negative tax is not generated by applying the ordinary rate to a loss. Art. 30 defines gross and net tax; apply the Chapter II/III double-tax credits and bonificaciones before Chapter IV credits, subject to their distinct caps.
 
-### Calendar
+| Credit | Basic amount and limits | Tax year | Official source |
+|---|---|---|---|
+| Research and development | 25% of qualifying spend up to the preceding-two-year average and 42% of the excess; additional 17% for qualifying exclusive researchers; 8% for qualifying exclusive investment excluding land/buildings | 2026 | [LIS art. 35.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a35) |
+| Technological innovation | 12% of qualifying spend | 2026 | [LIS art. 35.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a35) |
+| Additional average disabled-worker employment | EUR 9,000 per person-year for disability at least 33% but below 65%; EUR 12,000 from 65% | 2026 | [LIS art. 38](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a38) |
+| Spanish film/series production, specialist qualification required | 30% on the first EUR 1m credit base and 25% above; EUR 20m credit ceiling, EUR 10m per series episode; territory, certification, aid-intensity and other conditions apply | 2026 | [LIS art. 36.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a36) |
+| Ordinary Chapter IV credit cap | 25% of gross tax after international double-tax credits and bonificaciones; 50% when current art. 35/36 credits exceed 10% of that reference amount | 2026 | [LIS art. 39.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a39) |
+| Qualifying donations | 40%, or 50% for the qualifying repeated-donation history; credit base capped at 15% of period taxable base | 2026 | [Ley 49/2002 art. 20](https://www.boe.es/buscar/act.php?id=BOE-A-2002-25039#a20) |
 
-**Calendar**
+R&D/innovation bases exclude the relevant grants and require project-level qualifying costs and the territorial/activity conditions in art. 35. A software maintenance expense is not automatically R&D. Ordinary Chapter IV unused credits carry **15 years**, art. 35 credits **18 years** (art. 39.1). The optional art. 39.2 R&D/innovation route discounts the credit by **20%** and requires its waiting period, staffing, reinvestment, evidence and monetary caps; do not claim an uncapped cash refund from the headline percentage. Donations' unused credit and excess credit base have **ten-year** carryforwards under Ley 49/2002 art. 20. Obtain the qualifying beneficiary and donation evidence before claiming.
 
-| Period | Deadline |
-| --- | --- |
-| 1/P | The first 20 calendar days of April |
-| 2/P | The first 20 calendar days of October |
-| 3/P | The first 20 calendar days of December |
+Apply the domestic minimum only after testing its trigger and exclusions. It does not apply to art. 29.3–29.5 entities or the specified SOCIMI regime. The minimum base has its own levelling and Canary adjustments, and excludes the eligible ZEC part. Under [art. 30 bis.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a3-3), apply the permitted bonificaciones, art. 38 bis and international double-tax credits first. If they take the amount below the nominal floor, that lower amount becomes the statutory minimum. Otherwise remaining credits cannot reduce tax below the minimum, subject to the express Canary exceptions. Carry unused credits under their own rules. **Do not simply take the greater of 15% of base and tax after every credit**: the statutory ordering and exceptions matter.
 
-Art. 40.1 sets those three windows: see https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 A company taxed under Navarra's rules marks 2P as the period key, and one taxed under Gipuzkoa, Bizkaia or Álava marks 0A.
+Finally deduct actual eligible withholding, payments on account and instalments under [LIS art. 41](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a41). An excess is refundable; the liability floor does not prevent repayment of overpaid instalments.
 
-### Pago Fraccionado Mínimo (DA 14ª LIS)
+### 6. Preserve the territorial incentive tests
 
-**Minimum instalment for large companies**
+**Ceuta and Melilla.** For periods beginning from **1 January 2026** that **had not ended by 3 September 2026**, [RDL 22/2026 art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-18429#a3) raises the qualifying art. 33 bonificación to **60%**. An earlier-ended 2026 short period retains the prior **50%** rule. The qualifying activity normally closes a commercial cycle in the territory; isolated movements do not suffice, and the article has express real-estate, wholesale, shipping/fishing and extended-operation rules.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html |
-| Floor under the amount payable, as a share of the positive profit and loss result for the 3, 9 or 11 months | 23% | Instructions: "la cantidad a ingresar no podrá ser inferior, en ningún caso, al 23%" |
-| Floor for a credit institution or hydrocarbon company within art. 29.6 | 25% | Instructions: "25% para contribuyentes a los que resulte de aplicación el tipo de gravamen previsto en el primer párrafo del apartado 6 del artículo 29" |
+Under the new art. 33.3 presumption, a fixed place of business supports **EUR 60,000 per full-time employee**, capped at **EUR 1.2m** at group level; the first **two periods beginning after its establishment** use **EUR 120,000** and **EUR 2.4m**. Prove the completed commercial cycle for relief on the excess. Before the amendment applies, the corresponding presumption is **EUR 50,000 per employee**, capped at **EUR 400,000**; do not backdate the new ceilings ([prior art. 33](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328&p=20260321&tn=1#a33)).
 
-The floor applies only under the art. 40.3 method, and only to a company whose net turnover in the twelve months before the period started was at least ten million euros, which the statute writes in words. The decree that first introduced this floor was annulled by the Constitutional Court in 2020, with the effects set out in the sixth ground of that judgment. Parliament had already amended the provision twice by Act, both times in 2018. Why the floor survives the judgment is not stated on any official page read for this Guide. What those pages do show is that the provision still stands in the consolidated law and that the Agencia Tributaria still sets the floor out in the modelo 202 instructions for periods beginning in 2025 and later. A company filing for a period beginning in 2026 applies the floor on that footing, and the figures here come from the Agencia Tributaria page rather than from the statute for that reason. Put the point to the accountant. The result used is the accounting one for the period, reduced only by the instalments already paid for the same period. Companies within art. 29.3, art. 29.4 and art. 29.5, listed property investment companies and venture capital entities are outside it.
+**ZEC and Canary incentives.** Keep them separate from ordinary micro/ERD computations. [Ley 19/1994 arts. 31, 43–44](https://www.boe.es/buscar/act.php?id=BOE-A-1994-15794#a31) requires registration and qualifying activity/residence/substance; its special rate is **4%** only on the eligible base. Investment in the first **two years** is ordinarily at least **EUR 100,000** in Gran Canaria/Tenerife or **EUR 50,000** in the listed other islands; qualifying employment is normally at least **five/three jobs**, created within **six months**, with maintenance conditions and statutory exceptions. The eligible base is the smaller of the territorial coefficient result and the employment cap: **EUR 1.8m**, plus **EUR 500,000** for each qualifying extra job within the stated **50-job** band, subject to the **30% net-turnover ceiling on the tax reduction**. Excess base is not automatically taxed at 4%, and listed-jurisdiction operations do not qualify. A specific ZEC computation requires the full coefficient, investment and staffing schedules. The distinct Canary investment reserve under art. 27 and specialised sector incentives are outside the ordinary examples.
 
-### Retenciones e ingresos a cuenta (Art. 128 LIS)
+## Deadlines and filing
 
-**Withholding rates**
+| Obligation | Rule | Official source |
+|---|---|---|
+| Annual corporate return and payment | Modelo 200 for ordinary taxpayers; 25 calendar days following the six months after period end. A calendar-year 2026 period is returned in 2027 under this rule | [LIS arts. 124–125](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a124) |
+| Form not yet approved when the statutory window opens | Art. 124.1 provides a 25-day window after the form rule enters into force, with an option to use the ordinary window under the preceding period's formal rules | [LIS art. 124.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a124) |
+| Modelo 202 instalments | First 20 calendar days of April, October and December; non-working-day extensions apply | [LIS art. 40.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a40); [AEAT instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html) |
+| Corporate withholding obligations | Pay over required withholding, submit prescribed returns/annual summary and give the payee a certificate | [LIS art. 128](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a128) |
+| Related-party disclosures | Test Modelo 232 separately from documentation and corporate tax; use the [transfer-pricing Guide](spain-transfer-pricing.md) | [Orden HFP/816/2017 arts. 2–5](https://www.boe.es/buscar/doc.php?id=BOE-A-2017-10042) |
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| General withholding on income subject to this tax | 19% | Art. 128.6.a: "Con carácter general, el 19 por ciento" |
-| Income from licensing image rights | 24% | Art. 128.6.b: "el 24 por ciento" |
-| Lottery and betting prizes that are taxed under the special charge | 20% | Art. 128.6.c: "el 20 por ciento" |
+A dormant, loss-making or nil-tax company is not exempt from the annual return merely for that reason. Fully exempt art. 9.1 bodies do not file. An art. 9.3 partially exempt entity avoids filing only if **all** conditions hold: total annual income no more than **EUR 75,000**, non-exempt income no more than **EUR 2,000**, and all non-exempt income subject to withholding. Other art. 9.2–9.4 bodies declare exempt and non-exempt income as art. 124.3 requires. Consolidation requires its group return and separate regime; this Guide does not assemble Modelo 220.
 
-Whoever pays income subject to this tax withholds and pays it over, and files a return for the amounts withheld plus an annual summary, even when nothing was withheld. Rent of urban property in Ceuta or Melilla paid to a company based or operating there takes the general rate divided by two. There is no withholding on dividends inside a tax consolidation group, on dividends that qualify for the exemption in art. 21.1, or on the other income listed in art. 128.4. Amounts withheld are deducted from the tax on modelo 200.
+**Modelo 202 method.** Under art. 40.2, take **18%** of the last period's gross tax whose declaration deadline had ended when the instalment window opened, less that period's applicable credits, bonificaciones and withholding. Apply the short-prior-period aggregation rule where needed. This is not 18% of current turnover or of the last return's balance payable after instalments.
 
-## Section 6: Non-Deductible Expenses (Gastos No Deducibles)
+Under art. 40.3, compute the current cumulative base for **3, 9 or 11 months** for a calendar-year taxpayer, then apply **floor(5/7 × annual rate expressed as a percentage)** below **EUR 10m** preceding-12-month turnover. From **EUR 10m**, DA 14 instead uses **ceil(19/20 × that rate)**. Apply separate relevant bands/rates for a multi-rate taxpayer, then eligible bonificaciones, withholding and prior current-period instalments according to the form. The method is compulsory where the relevant turnover **exceeds EUR 6m**; other taxpayers can elect through the census return in February for a calendar period, with the separate short/non-calendar-period election rules in art. 40.3. Exactly EUR 6m does not itself trigger that compulsory-method limb. Source: [LIS art. 40, DA 14](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a40); [AEAT instructions, sections B1/B2](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html).
 
-**Non-deductible expenses and the interest limit**
+For taxpayers within DA 14, also test the minimum instalment: generally **23%** of adjusted positive accounting profit for the cumulative period, **25%** for the specified art. 29.6 entities, less previous instalments only as that minimum calculation allows. Statutory exceptions and adjustments include qualifying debt write-offs/capitalisations, exempt or bonified income and Canary/ZEC items. For qualifying Ceuta/Melilla income, the normal DA 5.4 exclusion is **50%**, increased to **60%** for 2026-start periods' payment windows beginning from **3 September 2026**, under the new **DA 20** inserted by RDL 22/2026 art. 3. This instalment timing test is distinct from the annual art. 33 test above.
 
-| Expense | Article | Treatment |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Payments that are a return on own funds, including participating loans inside a group | Art. 15.a | Never deductible |
-| The charge for this tax and for the complementary tax in the accounts | Art. 15.b | Never deductible, and the credit side is not income |
-| Criminal and administrative fines and penalties, enforcement period surcharges, and the surcharge for filing late without a demand | Art. 15.c | Never deductible |
-| Gambling losses | Art. 15.d | Never deductible |
-| Donations and gratuitous payments | Art. 15.e | Not deductible, except client and supplier entertainment, customary staff costs, sales promotion and costs correlated with income |
-| Client and supplier entertainment | Art. 15.e | Deductible up to 1% of the net turnover of the period: "serán deducibles con el límite del 1 por ciento del importe neto de la cifra de negocios del período impositivo" |
-| Expenses of acts contrary to the legal order | Art. 15.f | Never deductible |
-| Service charges from, or paid through, persons in a listed tax haven | Art. 15.g | Not deductible unless the company proves the transaction was really carried out |
-| Impairment of holdings in the capital or own funds of other entities, in the cases listed | Art. 15.k | Never deductible |
-| Net financial expense | Art. 16.1 | Deductible up to 30% of the operating profit of the year: "Los gastos financieros netos serán deducibles con el límite del 30 por ciento del beneficio operativo del ejercicio" |
+Modelo 202 is electronically filed even if nil when turnover exceeds **EUR 6m**. Other taxpayers generally do not file a nil instalment where the instructions' conditions hold; art. 29.4–29.5 entities and the specified all-resident-member AIE/UTE cases have exemptions. Do not assume that every incorporated entity must submit a nil Modelo 202. Annual 2026 return schemas, boxes and the 2027 filing calendar must be confirmed from their own publication; 2025-return forms are not relabelled as 2026 forms.
 
-**Floor under the interest limit**
+## Penalties and interest
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html |
-| Net financial expense that is deductible whatever the operating profit limit | EUR 1,000,000 | The modelo 202 instructions set the floor out in the instalment calculation: "Si GFN (h + m + n) > (i), e i) > 1.000.000; k) = i) + j)" |
+| Event | Statutory amount or consequence | Tax year | Official source |
+|---|---|---|---|
+| Voluntary late tax return with amount due and no prior request, within the first 12 months | 1% plus 1% for each complete month late; no art. 27 penalty or pre-filing interest for that period | 2026 | [LGT art. 27.2](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27) |
+| That return after 12 months | 15% surcharge plus interest from the day after the 12-month period until filing | 2026 | [LGT art. 27.2](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27) |
+| Timely payment conditions satisfied | 25% reduction of the art. 27 surcharge, subject to all art. 27.5 requirements | 2026 | [LGT art. 27.5](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27) |
+| Executive collection | 5% before enforcement-order notification; 10% when debt and reduced surcharge are paid within the specified enforcement window; otherwise 20% and applicable interest | 2026 | [LGT art. 28](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28) |
+| Culpable underpayment, after classification | Minor 50%; serious 50–100%; very serious 100–150% of the statutory unpaid-tax base | 2026 | [LGT art. 191](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a191) |
+| Late ordinary return without economic loss | EUR 200; halved without a prior request, subject to the article's rules | 2026 | [LGT arts. 198.1–198.2](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a198) |
+| Default interest | Apply the rate in force for each delay segment. AEAT records 4.0625% for 2026 under the continued budget until a replacement budget rate takes effect | 2026 | [LGT art. 26](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a26); [AEAT interest rule](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html) |
 
-The statute writes that floor in words, as one million euros. It is scaled down for a period shorter than a year. Disallowed interest carries forward with no time limit.
+Determine whether there was a prior request, unpaid tax, a self-correction or an information-return offence before choosing a row. Late disclosure and TP documentation offences have their own regimes. Art. 191 classifications turn on concealment, false documents, accounting incidence, withheld amounts and fraudulent means; the maximum is not an automatic sanction for every mistake. Apply any eligible conformity/payment reductions under [LGT art. 188](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a188). A reserve or credit clawback also follows its specific tax-and-interest provision. Do not deduct non-deductible sanctions in the next corporate computation.
 
-## Section 7: ZEC Canarias (Zona Especial Canaria)
+## Cross-border points
 
-Treat this section as a pointer. A Zona Especial Canaria entity is registered in a special register and taxed under Ley 19/1994, and a real case needs that law and the Canary government's own guidance: https://www.gobiernodecanarias.org
+Resident-company worldwide income remains in scope even if the payer or bank is overseas (LIS art. 7.2). Apply the participation, foreign PE and foreign-tax-credit tests above to the actual income and country. Market-value pricing applies under art. 18 to both domestic and international related parties. Resident corporate withholding under art. 128 is not a universal rate for payments to foreign recipients; identify the non-resident domestic rule, treaty and exemption separately. Certain qualifying dividends and intra-tax-consolidation payments are exempt from withholding under art. 128.4; eligible Ceuta/Melilla urban rents halve the general 19% rate under art. 128.6.a.
 
-**Zona Especial Canaria**
+[LIS art. 19.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a19) includes market value less tax value of assets when a resident entity transfers residence abroad, except assets remaining attached to its Spanish permanent establishment. A qualifying EU/EEA destination with the required recovery-assistance arrangement permits an election for **five equal annual payments** in the final-period tax return; the first falls in its voluntary payment window and the remaining four carry interest. Test guarantees and the acceleration events in the article, including qualifying onward transfers, disposals, insolvency/liquidation and non-payment. Temporary transfers for the specified financing, security, prudential-capital or liquidity purposes have a return-within-**one-year** exception. A management move does not by itself prove cessation of Spanish residence under art. 8. Obtain the legal and treaty residence analysis before treating any move as triggering or avoiding the charge.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-1994-15794 |
-| Special rate on the part of the base from operations really carried out in the zone | 4% | Art. 43: "El tipo de gravamen especial aplicable será del 4%" |
-| Ceiling on the base under the job creation rule, for an entity meeting the minimum job creation | EUR 1,800,000 | Art. 44.6.b: "1.800.000 euros, para aquellas entidades de la Zona Especial Canaria que cumplan el requisito de creación mínima de empleo" |
-| Added to that base for each job above the minimum, up to 50 jobs | EUR 500,000 | Art. 44.6.b: "500.000 euros adicionales por cada puesto de trabajo que exceda del mínimo señalado, hasta alcanzar 50 puestos de trabajo" |
-| Ceiling on the resulting cut in the gross tax, as a share of the entity's net turnover | 30% | Art. 44.6.b: "no podrá ser superior al 30 por ciento del importe neto de la cifra de negocios de la entidad de la Zona Especial Canaria" |
-| Minimum investment in the first two years, Gran Canaria and Tenerife | EUR 100,000 | Art. 31.2.d: "En las islas de Gran Canaria y Tenerife, 100.000 euros" |
-| Minimum investment in the first two years, the other islands | EUR 50,000 | Art. 31.2.d: "En las islas de El Hierro, Fuerteventura, La Gomera, Lanzarote y La Palma, 50.000 euros" |
+Foral allocation, permanent-establishment attribution, treaty limitation/anti-abuse, fiscal consolidation, hybrid mismatches, controlled foreign companies, reorganisations and the separate complementary minimum tax require their own fact-specific analysis. They are not resolved by inserting an assumed treaty rate in this ordinary computation.
 
-The special rate reaches only the smaller of two amounts: the share of the base fixed by the coefficient in art. 44.4, and the amount worked out under the job creation rule in the table. The minimum job creation is five jobs in Gran Canaria and Tenerife and three in El Hierro, Fuerteventura, La Gomera, Lanzarote and La Palma, created within six months of registration and kept as the average headcount for as long as the regime is used. The part of the base above the ceiling is taxed at the ordinary rate for the company. The special rate does not reach operations carried out with persons resident in non-cooperative jurisdictions.
+## Two worked examples that recompute
 
-## Section 8: Worked Example: Standard SL
+### Example 1: ordinary reduced-dimension company
 
-The worked example that stood here used invented amounts and an effective rate worked out from them. No official page prints those numbers, so they have been removed. What follows is the same case as an order of operations. Take a Madrid SL on a calendar year, net turnover in 2025 below the micro company figure in Section 2, an accounting profit, some non-deductible expenses, an increase in own funds, carried forward losses and one employee with a disability of at least the lower grade in Section 4.4.
+Assume a common-territory trading SL has a full calendar-year 2026 period, prior-year aggregated turnover EUR 2m, is not newly created or patrimonial, and is outside tax consolidation and the minimum-tax trigger. Its agreed taxable base is EUR 100,000 after all account adjustments; it claims no reserves, losses or credits. Under DT 44.2.b its tax is **EUR 23,000**. With EUR 1,000 eligible withholding and EUR 7,000 instalments, art. 41 leaves **EUR 15,000 payable**. These are hypothetical client facts, not figures claimed to be printed in the statute.
 
-1. Start from the accounting profit for 2026 under the Código de Comercio.
-2. Add the non-deductible expenses from Section 6 as positive adjustments, and take off any negative adjustments, including the amortisation difference where the tax coefficient in Section 4.7 differs from the accounting charge.
-3. Take the capitalisation reserve off the result, at the percentage in Section 4.1 of the increase in own funds, within the cap in that same table.
-4. Take off carried forward losses, within the limit in Section 4.2 for the company's turnover and never below the floor in that section. The result is the taxable base and it cannot be negative.
-5. Apply the micro company rates in Section 2: the lower rate on the band shown there, the higher rate on the rest. That gives the gross tax.
-6. Take off the deduction for the rise in the average headcount of workers with a disability, at the amount in Section 4.4, within the joint cap in that table. That gives the net tax.
-7. Take off the amounts withheld and the instalments paid on modelo 202. What is left is the balance to pay or to refund.
+```oa-check
+name: Ordinary Spanish ERD company for a 2026-start period
+inputs:
+  taxable_base: 100000
+  applicable_rate: 0.23
+  eligible_withholding: 1000
+  instalments_paid: 7000
+steps:
+  gross_tax: taxable_base * applicable_rate
+  balance_payable: gross_tax - eligible_withholding - instalments_paid
+expected:
+  gross_tax: 23000
+  balance_payable: 15000
+```
 
-This company is below the turnover in Section 4.6, so the minimum tax does not bite. Do not state an effective rate: no official page prints one.
+### Example 2: short-period microcompany band
 
-## Section 9: Filing Obligations
+Assume an established, eligible common-territory microcompany has a **181-day period beginning in 2026**, preceding-period aggregated turnover below EUR 1m, and EUR 120,000 taxable base after all adjustments. It is not newly created, patrimonial or in a special/group regime, and has no credits, reserves or prepayments. DT 44.2.a prorates the lower band: EUR 50,000 × 181/365 = **EUR 24,794.520547…**. Tax that part at 19% and the remaining **EUR 95,205.479452…** at 21%, giving **EUR 24,704.11** rounded to cents. Keeping a full EUR 50,000 lower band would understate tax. Retain calculation precision until the final monetary rounding.
 
-**Filing obligations**
-
-| Form | Who must file | Deadline |
-| --- | --- | --- |
-| Modelo 200 | Every taxpayer of this tax, except the fully exempt bodies in art. 9.1 | The 25 calendar days following the 6 months after the end of the period |
-| Modelo 202 | A company whose art. 40.2 base is positive, and every company above the turnover in Section 5, which files even when nothing is due; entities within art. 29.4 and art. 29.5 make no instalment and file nothing | The first 20 calendar days of April, October and December |
-| Modelo 220 | Tax consolidation groups | The same window as modelo 200 for the parent |
-| Modelo 232 | Related party transactions above the thresholds below, and, whatever the amount, a taxpayer with operations or holdings in a listed tax haven or claiming the intangibles reduction | The month following the ten months after the end of the period |
-
-The modelo 200 deadline is in art. 124.1 of Ley 27/2014: see https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 Where the form for the period has not been approved when that window opens, the return is due within 25 calendar days of the rule approving it. The modelo 232 deadline is in art. 4 of Orden HFP/816/2017: see https://www.boe.es/buscar/act.php?id=BOE-A-2017-10042
-
-**Modelo 232 thresholds**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2017-10042 |
-| All transactions with the same related party in the period, at market value | EUR 250,000 | Art. 2.1.a: "Operaciones realizadas con la misma persona o entidad vinculada siempre que el importe de la contraprestación del conjunto de operaciones en el período impositivo supere los 250.000 euros" |
-| Specific transactions, each type counted separately | EUR 100,000 | Art. 2.1.b: "Operaciones específicas, siempre que el importe conjunto de cada una de este tipo de operaciones en el período impositivo supere los 100.000 euros" |
-| Transactions of the same type valued by the same method, as a share of turnover, whatever the amount of the other thresholds | 50% | Art. 2.3: "siempre que el importe del conjunto de dichas operaciones en el período impositivo sea superior al 50% de la cifra de negocios de la entidad" |
-
-### Exempt from filing Modelo 200:
-
-- Bodies fully exempt under art. 9.1 of Ley 27/2014: the State, the autonomous communities, local authorities and the bodies listed with them.
-- Partially exempt entities under art. 9.3 need not file where all three of the following hold together, under art. 124.3.
-
-**Partially exempt entities: when no return is due**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Total income for the year not above | EUR 75,000 | Art. 124.3.a: "Que sus ingresos totales no superen 75.000 euros anuales" |
-| Non-exempt income not above | EUR 2,000 | Art. 124.3.b: "Que los ingresos correspondientes a rentas no exentas no superen 2.000 euros anuales" |
-
-The third condition is that all the non-exempt income was subject to withholding. Entities under art. 9.2, art. 9.3 and art. 9.4 otherwise declare all their income, exempt and non-exempt alike.
-
-## Section 10: Conservative Defaults
-
-**Conservative Defaults table**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown territory | Common territory |
-| Unknown turnover | The general rate in Section 2 |
-| Unknown entity type | SL (standard) |
-| Unknown period | The period beginning in 2026 |
-| Unknown carried forward losses | None, so no loss relief |
-| Tax amortisation unknown | The same as the accounting charge, so no adjustment |
-| Unknown whether newly created | Not newly created, which is the higher rate |
-| Small company status unknown | Not a small company, which is the higher rate |
-| Unknown whether patrimonial | Ask: a patrimonial entity is shut out of the micro, small company and new company rates |
-
-## The method, step by step
-
-1. Fix the period and the territory. Check the accounting period in the articles of association, and check whether the company is taxed under common territory rules or under Álava, Bizkaia, Gipuzkoa or Navarra. Art. 27 of Ley 27/2014 sets the period and art. 7 sets who is liable: https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328
-2. Work out which rate row applies. Test the previous period's net turnover, group wide, against the micro company figure in Section 2 and then against the small company figure; test whether the company is a patrimonial entity under art. 5.2; test whether it is in its first or second period with a positive base. Then read the rate off the 2026 row of the tables in Section 2, not off the body of art. 29.1: https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328
-3. Build the base from the accounts. Start from the accounting profit under art. 10.3, add the non-deductible expenses in Section 6, apply the amortisation rules in Section 4.7 and the participation exemption in Section 4.8, then the capitalisation reserve and loss relief, both measured on the base imponible previa, and the levelling reserve on the base imponible that results: https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328
-4. Work out the gross tax, take the deductions and bonificaciones in Section 4.4 and Section 4.5, then test the result against the minimum tax in Section 4.6 if the company is above that turnover or in a group: https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328
-5. Deduct the amounts withheld and the instalments already paid on modelo 202, then file modelo 200 within the deadline in Section 9: https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328
-6. Set up the next year's instalments. Decide or confirm the modelo 202 method, remembering that the art. 40.3 method is compulsory above the turnover in Section 5 and that the option is exercised on a censal return in February: https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html
-7. Check the reporting forms. File modelo 232 where a related party threshold in Section 9 is crossed: https://www.boe.es/buscar/act.php?id=BOE-A-2017-10042
+```oa-check
+name: Spanish microcompany with a 181 day 2026-start period
+inputs:
+  taxable_base: 120000
+  full_year_band: 50000
+  period_days: 181
+  statutory_denominator: 365
+  lower_rate: 0.19
+  upper_rate: 0.21
+steps:
+  short_period_band: min(taxable_base, full_year_band * period_days / statutory_denominator)
+  upper_band_base: max(0, taxable_base - short_period_band)
+  tax: round(short_period_band * lower_rate + upper_band_base * upper_rate, 2)
+expected:
+  short_period_band: 24794.5205479452
+  upper_band_base: 95205.4794520548
+  tax: 24704.11
+```
 
 ## Ask the client first
 
-- What is the exact start and end date of the accounting period, and is this the company's first period, or its first period with a positive base?
-- What was the net turnover of the immediately preceding period, and of every company in the same group under art. 42 of the Código de Comercio?
-- Is the company a patrimonial entity, that is, is more than half its assets made up of securities or of assets not used in a business?
-- Are there carried forward losses, and from which periods, and has the tax office already checked them?
-- Did own funds rise during the period, and did the average headcount rise, and by how much against the previous period?
-- Is any income earned in Ceuta, Melilla or the Zona Especial Canaria, or is the company registered in any special regime?
-- Which modelo 202 method has the company been using, and was a censal option ever filed?
-
-## When to refuse or refer
-
-- A company taxed under Álava, Bizkaia, Gipuzkoa or Navarra. Their corporate tax is a different law with different rates and forms.
-- Tax consolidation groups, mergers and demergers under the special restructuring regime, and the international fiscal transparency rules.
-- Transfer pricing valuation. This Guide gives only the modelo 232 reporting thresholds, not the pricing method or the documentation content.
-- The Canary Islands regimes, including the investment reserve and the Zona Especial Canaria beyond the pointer in Section 7.
-- Any case that turns on a tax treaty, on a permanent establishment, or on the complementary tax for large groups.
-- The global minimum tax for multinational groups, which is a separate law.
-- Sector regimes: banking, hydrocarbons, shipping tonnage, listed property investment companies, cooperatives beyond the rate row in Section 2.
-
-## PROHIBITIONS
-
-- NEVER apply the micro company rates to a company whose previous period turnover reached the turnover figure in Section 2, and never to a patrimonial entity.
-- NEVER apply the new company rate beyond the first period with a positive base and the one after it.
-- NEVER compensate losses beyond the percentage limit for the company's turnover band in Section 4.2.
-- NEVER exceed the joint cap on deductions in Section 4.4.
-- NEVER forget the minimum tax for a company above the turnover in Section 4.6 or inside a consolidation group.
-- NEVER apply the Zona Especial Canaria rate without checking the job creation condition and the base ceiling in Section 7.
-- NEVER deduct fines, penalties or a return on own funds.
-- NEVER apply the final rates in the body of art. 29.1 to a period beginning in 2026. Use the transitional rows in Section 2.
-- NEVER apply common territory rates to a company taxed in a foral territory.
-- NEVER confuse the personal income tax with this tax. They are separate regimes.
+1. What are the exact accounting-period dates, incorporation/residence facts and common/foral territory, and did any move, cessation or transformation occur?
+2. What are prior-period and preceding-12-month turnovers, the full control/ownership group, business activity, patrimonial tests and any newly created or special-regime status?
+3. What accounts, tax reconciliations, asset schedules, finance costs, participation income, foreign taxes and related-party dealings support the base?
+4. What losses, tax credits and reserve balances exist, with their source years, prior checks, ownership changes, eligible equity movements and headcount evidence?
+5. Which instalment method/elections apply, what withholding and instalments were actually paid, and has AEAT issued any request or assessment?
+6. Are there Ceuta/Melilla or Canary/ZEC activities, group returns or specialist reliefs, and what dates, substance, employment and investment evidence support them?
 
 ## Sources
 
-- Ley 27/2014, del Impuesto sobre Sociedades, consolidated text: https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328
-- Ley 19/1994, Régimen Económico y Fiscal de Canarias, consolidated text: https://www.boe.es/buscar/act.php?id=BOE-A-1994-15794
-- Ley 49/2002, régimen fiscal de las entidades sin fines lucrativos, consolidated text: https://www.boe.es/buscar/act.php?id=BOE-A-2002-25039
-- Orden HFP/816/2017, modelo 232, consolidated text: https://www.boe.es/buscar/act.php?id=BOE-A-2017-10042
-- Agencia Tributaria, table of corporate tax rates in force: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-sociedades-2025/capitulo-06-liquidacion-is-determinacion-tributaria/cuota-integra-casilla-00562/tipo-gravamen/tipos-gravamen-vigentes.html
-- Agencia Tributaria, modelo 202 instructions for 2025 and later periods: https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html
+[LIS art. 29.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) and the [AEAT capitalisation-reserve table](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-sociedades-2025/principales-novedades-impuesto-sobre-sociedades-2025/reserva-capitalizacion.html) reread **2026-10-27** for the credit-cooperative rate and the exact 5% administrative interpretation.
 
-## Disclaimer
+| Official source | Provisions and use | Read on |
+|---|---|---|
+| [Ley 27/2014, current consolidated text](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328) | Arts. 5, 7–16, 18–22, 25–33, 35–41, 101–105, 124–128; DA 14–15; DT 44: scope, base, reliefs, rates, filings and exit charge | 2026-10-25 |
+| [Ley 27/2014, BOE revision published 21 March 2026](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328&p=20260321&tn=1) | Prior art. 33 for periods outside the September amendment's temporal scope | 2026-10-25 |
+| [RDL 22/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-18429) | Art. 3 and final entry-into-force rule: 2026 Ceuta/Melilla annual and instalment transitions, including new DA 20 | 2026-10-25 |
+| [AEAT Modelo 202 instructions for 2025 and following periods](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html) | Current instalment methods, levelling reserve, nil filing and September 2026 update; the title expressly includes following periods | 2026-10-25 |
+| [Ley 49/2002](https://www.boe.es/buscar/act.php?id=BOE-A-2002-25039) | Art. 20: corporate donation credit, repetition test, base cap and carryforward | 2026-10-25 |
+| [Ley 19/1994](https://www.boe.es/buscar/act.php?id=BOE-A-1994-15794) | Arts. 31, 43–44: ZEC eligibility and rate/base limits; art. 27 routes the separate Canary reserve | 2026-10-25 |
+| [Orden HFP/816/2017](https://www.boe.es/buscar/doc.php?id=BOE-A-2017-10042) | Arts. 2–5: Modelo 232 obligations, separate from the annual tax return | 2026-10-25 |
+| [Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Arts. 26–28, 188, 191, 198: interest, late/enforcement surcharges and penalties | 2026-10-25 |
+| [AEAT interest calculation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html) | Explicit 2026 continued-budget interest rate; the underlying annual return is for 2025 | 2026-10-25 |
 
-This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as an asesor fiscal or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date version of this Guide is maintained at openaccountants.com. Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+Not yet confirmed: the specific foral surcharge/minimum and procedure questions recorded in [foral corporate Sources](es-foral-corporate-tax.md#sources); a legislative or binding resolution settling the art. 25 literal 5% overlap beyond AEAT’s now-cited administrative table; the final 2026 annual-return schema/calendar to be published for filing in 2027; full specialist-regime claims outside the ordinary computation. The reduced-rate minimum-tax rounding must be checked against the filing instructions applicable to the actual return. Independent whole-pack review is pending.
 
 > Contributed by OpenAccountants.
 

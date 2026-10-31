@@ -1,10 +1,10 @@
 ---
 name: luxembourg-payroll
 description: "Luxembourg payroll for employees for tax year 2026: monthly wage withholding (retenue d'impôt sur les salaires) from the electronic tax card using the ACD monthly scale built on the art. 118 LIR scale (23 bands, 0% to 42%) for tax classes 1, 1a and 2; the employment fund surcharge (7%, or 9% above EUR 150,000 in classes 1 and 1a and EUR 300,000 in class 2); the CIS, CI-CO2 and CISSM credits paid through payroll; CCSS contributions (pension 8.5% + 8.5%, sickness, dependency 1.4% after a quarter-SSM abatement, accident 0.65%, Mutualité des employeurs classes, occupational health); the 1 January and 1 June 2026 parameter sets; withholding and CCSS deadlines and penalties. Trigger on: Luxembourg payroll, gross to net Luxembourg, fiche de retenue, RTS, retenue d'impôt salaires, CCSS cotisations 2026, MDE classe, salaire social minimum 2026. Out of scope: luxembourg-income-tax, luxembourg-social-contributions, lu-cross-border, lu-corporate-tax."
-version: 0.2
+version: 0.3
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Luxembourg payroll: wage withholding and CCSS contributions (2026)
+# Luxembourg payroll: wage withholding and CCSS contributions (2026) v0.3
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not rely on it to run a payroll, file or pay without review by a qualified professional in Luxembourg.
 
@@ -56,6 +56,7 @@ This skill covers what the employer computes and pays each month. For the employ
 | CIM (single-parent credit, class 1a by art. 119 no. 2 b, on request, paid through payroll) | EUR 3,504 a year below adjusted taxable income of EUR 60,000; 3,504 - (income - 60,000) x 0.0612 up to EUR 105,000; EUR 750 above; reduced by 50% of allowances the child receives above EUR 2,712 a year (family benefits and orphan pensions excluded) | 2026 | LIR art. 154ter |
 | CISSM (minimum wage credit) | EUR 81 a month on monthly gross EUR 1,800 to 3,000; 81 / 600 x (3,600 - gross) from 3,000 to 3,600; nil from 3,600 | 2026 | LIR art. 139quater |
 | Pension | 8.50% employee, 8.50% employer | 2026 | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf |
+| Pension, State share | The State pays one third of pension contributions (art. 239 CSS); the global rate is 25.5% for 2026 to 2032 (art. 238 CSS), so the State pays 8.50% on top. Not an employer cost | 2026 | https://legilux.public.lu/eli/etat/leg/code/securite_sociale/20260101 |
 | Sickness, benefits in kind | 2.80% employee, 2.80% employer | 2026 | same URL |
 | Sickness, cash benefit surcharge | 0.25% employee, 0.25% employer (only insured persons entitled to cash sickness benefit) | 2026 | same URL |
 | Dependency insurance | 1.40%, employee only, on pay less a quarter of the SSM; no minimum or ceiling | 2026 | same URL |
@@ -103,6 +104,7 @@ Non-periodic pay up to EUR 3,000 a year in total is left out of the gross that s
 |---|---|---|
 | Employer registration with the CCSS | Within 8 days of the first employee starting | Guichet.lu, déclaration d'entrée |
 | Declaration of entry (each new employee) | Within 8 days of the start | Guichet.lu, déclaration d'entrée |
+| Declaration of exit (each leaver) | Within 8 days of the end of the contract; the exit date is the last day of the working relationship or of the legal notice period | CCSS, engager du personnel |
 | Monthly pay and hours declaration to the CCSS | Each month, for the previous month | CCSS, rémunération |
 | CCSS account statement | Issued two months after the month charged (March contributions on the May statement); pay within 10 days of issue | CCSS, facturation |
 | Withholding declaration and payment (MyGuichet.lu) | Monthly withholding of EUR 750 or more: by the 10th of the next month. EUR 75 to 750: quarterly, by the 10th after the quarter. Under EUR 75: yearly, by 10 January | Guichet.lu, retenue d'impôt |
@@ -111,6 +113,7 @@ Non-periodic pay up to EUR 3,000 a year in total is left out of the gross that s
 ## Penalties and interest
 
 - **Late CCSS payment:** default interest of 0.6% per full calendar month, from the first day of the month after the due date. Parts of a month are ignored (CCSS, facturation).
+- **Unpaid CCSS statements:** after 4 unpaid monthly statements, the CCSS starts forced recovery (CCSS, facturation).
 - **Late declaration of entry:** past the 30-day tolerance, a fine of EUR 50 per month late, up to EUR 2,500 (Guichet.lu).
 - **Late withholding declaration:** the tax office can add a supplement of up to 10% of the tax and set a periodic penalty (astreinte) against the taxpayer or the person liable for the tax (ACD, prélèvements supplémentaires).
 - **Late payment of tax:** interest of 0.6% per month at the full rate (ACD, prélèvements supplémentaires).
@@ -233,14 +236,18 @@ expected:
 | CCSS, avis aux employeurs, minima et maximum cotisables au 01.06.2026 (14 August 2026; dependency abatement EUR 692.83) | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf | 2026-10-23 |
 | CCSS, paramètres sociaux (rates 2014 to 2026; SSM, minimum and ceiling from 1 June 2026) | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-23 |
 | CCSS, facturation (statement, 10 days, 0.6% interest) | https://ccss.public.lu/fr/employeurs/secteur-prive/facturation.html | 2026-10-23 |
+| CCSS, engager du personnel (declaration of exit within 8 days) | https://ccss.public.lu/fr/employeurs/secteur-prive/engager-personnel.html | 2026-10-27 |
+| Code de la sécurité sociale, arts. 238 and 239 (pension financing, State share) | https://legilux.public.lu/eli/etat/leg/code/securite_sociale/20260101 | 2026-10-27 |
 | CCSS, rémunération (monthly declaration of pay and hours) | https://ccss.public.lu/fr/employeurs/secteur-prive/remuneration.html | 2026-10-23 |
 | Guichet.lu, retenue d'impôt sur les salaires | https://guichet.public.lu/fr/entreprises/ressources-humaines/remuneration/fiche-retenue-impot/retenue-impot.html | 2026-10-23 |
 | Guichet.lu, extrait de compte salaire ou pension | https://guichet.public.lu/fr/entreprises/ressources-humaines/remuneration/fiche-retenue-impot/extrait-compte-salaire-pension.html | 2026-10-23 |
 | Guichet.lu, déclaration d'entrée | https://guichet.public.lu/fr/entreprises/ressources-humaines/securite-sociale/declaration-entree.html | 2026-10-23 |
 
-Not yet confirmed: whether the 0.6% monthly late-payment interest on the ACD page applies to late withholding payments in the same way as to assessed tax (the page speaks of tax due on an assessment).
+Not yet confirmed: the monthly social minimum wage for skilled workers (qualifié, SSM plus 20%) from 1 January and 1 June 2026; the CCSS notices and parameters page publish only the unskilled SSM, and no official 2026 figure for the skilled rate was found. Also whether the 0.6% monthly late-payment interest on the ACD page applies to late withholding payments in the same way as to assessed tax (the page speaks of tax due on an assessment).
 
 > Contributed by Ryan Duguid.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

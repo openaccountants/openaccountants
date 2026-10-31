@@ -21,6 +21,25 @@ metadata:
 > "first R1.25m" assumption will overstate the exemption, sometimes by a very large
 > amount.
 
+---
+
+## Section 1 — Scope
+
+This file covers the s 10(1)(o)(ii) exemption for a South African **tax resident** who
+renders services outside the Republic as an **employee** (holder of an office or
+employment).
+
+Covered: the day tests, the apportionment formula, the annual cap, the twelve month
+window, day counting, IRP5 coding, ITR12 containers.
+
+**Not covered:** s 10(1)(o)(i), the separate and **uncapped** exemption for officers and
+crew of ships — a different container and a different test. Independent contractors, who
+are not employees and cannot use this section. Tax residency itself (see
+`za-tax-residency`). Foreign tax credits under s 6*quat*. Double tax agreement relief,
+which is a separate and sometimes better route.
+
+---
+
 ## Section 2 — Three quantities, three different jobs
 
 Almost every error in this area is a confusion between these three. They are not

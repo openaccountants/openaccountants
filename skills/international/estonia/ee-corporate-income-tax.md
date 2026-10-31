@@ -1,14 +1,14 @@
 ---
 name: ee-corporate-income-tax
 description: "Estonian corporate income tax for tax year 2026 under the Income Tax Act (tulumaksuseadus) consolidated text in force from 1 October 2026. Estonia taxes a company only when it distributes profit: 22% of the gross amount, charged as 22/78 of the net payment. Covers dividends, capital reductions, share buybacks and liquidation, deemed distributions (fringe benefits, gifts and donations, entertainment, non-business expenses, loans to shareholders), the participation exemption, the 2025 abolition of the 14/86 rate and the 7% withholding when 14/86-taxed dividends are passed on to individuals, the 18% quarterly advance tax for banks, exceeding borrowing costs, the cancelled 2026 rise to 24% and security tax, the monthly TSD return, interest and fines. Trigger on 'Estonia corporate tax', 'OÜ dividend tax', '22/78', 'distributed profit tax Estonia', 'TSD dividend', 'Estonian fringe benefit tax'. Out of scope: withholding on payments to non-residents and permanent establishments (ee-cross-border), transfer pricing (ee-transfer-pricing), individuals (estonia-income-tax), social tax (estonia-social-contributions), payroll (estonia-payroll), VAT (estonia-vat-return)."
-jurisdiction: EE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.1
-verified_by: pending
+jurisdiction: EE
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -218,3 +218,23 @@ expected:
 | Government of Estonia, 2026 state budget approved | https://valitsus.ee/en/news/government-approved-2026-state-budget | 2026-10-23 |
 
 Not yet confirmed: which TSD annex carries dividends and capital reductions (only annex 6 was read, in the wording of Regulation No. 24 of 22.06.2020); how a company that received both 14/86-taxed and other dividends traces which of them a 2026 payment comes from; the social tax base on fringe benefits (in `estonia-social-contributions`).
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
