@@ -1,10 +1,10 @@
 ---
 name: ie-vat-return
 description: "Irish VAT for tax year 2026 under the Value-Added Tax Consolidation Act 2010 (VATCA) as revised to 1 August 2026, including Finance Act 2025. Covers the 23%, 13.5%, 9%, 4.8% and 0% rates, the move of catering, hot take-away food and hairdressing from 13.5% to 9% on 1 July 2026, the EUR 42,500 services and EUR 85,000 goods registration thresholds, the two-monthly VAT3 return and payment by the 19th (23rd on ROS), the annual Return of Trading Details (RTD), the EUR 2,000,000 cash (moneys received) basis, reverse charge on services from abroad, EU goods and RCT construction, VIES statements, blocked input credit and qualifying cars, 0.0274% daily interest and EUR 4,000 fixed and tax-geared penalties. Trigger on 'Irish VAT', 'VAT3', 'ROS VAT return', 'RTD', 'do I need to register for VAT in Ireland', 'Irish reverse charge', 'VIES Ireland'. Out of scope: income tax (ie-income-tax-form11), corporation tax (ie-corporation-tax), payroll (ie-payroll), withholding and treaties (ie-foreign-tax-and-withholding), residence (ie-cross-border); VAT groups, property, Capital Goods Scheme, margin schemes and OSS are referred."
-version: 2.2
+version: 2.3
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -162,6 +162,23 @@ Credit notes issued or received adjust T1 and T2.
 - Filed and paid on ROS by the 23rd; RTD diary date set for the 23rd of the month after the year end.
 - Records kept for 6 years or until the matter is finalised; defaults and open questions listed for the client.
 
+### How to file the VAT3 on ROS and pay, step by step
+
+**What you need first:** ROS access for the business or its agent, your VAT number, the taxable period ROS shows, the sales and purchase records for the period, customs documents for any postponed accounting, and the amount you will pay with the return.
+
+1. **Check the period and date.** Two-monthly by default, or the four-monthly, six-monthly or monthly period the Collector-General authorised. File and pay by the 19th of the month after the period, or the 23rd on ROS ([Revenue: when VAT becomes payable](https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/when-vat-becomes-payable.aspx), read 2026-10-31).
+2. **Work out the boxes:** T1, T2, then T3 or T4, then E1, E2, ES1, ES2 and PA1, as in the table above. With nothing payable or repayable, enter zero at T1 to T4; never write "nil" ([Revenue: completing the VAT3](https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/completing-vat3-return.aspx), read 2026-10-31).
+3. **Open the form on ROS.** Log in, then use "Complete a Form On-Line" under "File A Return", and choose the VAT3 and its period. That is the ROS path Revenue prints for a VIES return; the VAT3 is on the same ROS list of returns ([VIES Traders Manual, Appendix 1](https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/vat-information-exchange-system-VIES/vies-traders-manual.pdf), read 2026-10-31).
+4. **Enter the payment and submit.** ROS takes payment by ROS Debit Instruction. Debit or credit card works only for customers of Revenue's Personal and Business Divisions, by Visa or Mastercard, and Revenue no longer accepts commercial credit or debit cards. myAccount is also a payment channel ([Agent's Guide to the Collector-General, October 2026](https://www.revenue.ie/en/tax-professionals/tdm/collection/agents-guide/agents-guide-to-collector-general.pdf), read 2026-10-31; [Revenue: how do you pay VAT](https://www.revenue.ie/en/vat/accounting-for-vat/how-do-you-pay-vat/index.aspx), read 2026-10-31). Use "Sign & Submit" with your password; ROS then issues an acknowledgement ([VIES Traders Manual, Appendix 1](https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/vat-information-exchange-system-VIES/vies-traders-manual.pdf), read 2026-10-31).
+5. **File VIES and diary the RTD.** E1 and ES1 must match the VIES statement. The RTD is due by the 23rd of the month after the accounting period ends, as set out above.
+6. **If T4 shows a repayment,** it goes to a bank account. Revenue may hold it while returns are outstanding and offset it against tax owed ([Revenue: repayment of VAT](https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/vat-repayment.aspx), read 2026-10-31). Electronic repayments go to the bank account you nominated ([Agent's Guide to the Collector-General](https://www.revenue.ie/en/tax-professionals/tdm/collection/agents-guide/agents-guide-to-collector-general.pdf), read 2026-10-31).
+7. **To correct a filed VAT3:**
+   - Net underpayment under EUR 6,000, for a two-monthly, quarterly or half-yearly filer self-correcting: put it as an adjustment on the next corresponding VAT3 following the one with the error. No notice to Revenue and no interest ([Code of Practice for Revenue Compliance Interventions](https://www.revenue.ie/en/tax-professionals/documents/code-of-practice-revenue-compliance-interventions.pdf), read 2026-10-31).
+   - Otherwise, wait up to 3 working days for the VAT3 to process, proceed as if filing a new VAT3, and click "Additional" to list the periods you can amend ([ROS help: amending a return](https://www.revenue.ie/en/online-services/services/ros/ros-help/something-is-not-working/issues-completing-and-submitting-returns/unable-to-amend-a-return.aspx), read 2026-10-31).
+   - A **supplementary** return adds a liability to the original, and the two together give the right position. An **amended** return replaces the original, for a liability calculated wrongly ([Agent's Guide to the Collector-General](https://www.revenue.ie/en/tax-professionals/tdm/collection/agents-guide/agents-guide-to-collector-general.pdf), read 2026-10-31).
+
+**Stop and get a professional when:** the error is deliberate or Revenue has opened an intervention; the client is in a VAT group; or the return involves property, the Capital Goods Scheme, margin schemes or OSS, which this skill refers.
+
 ## Penalties and interest
 
 **Interest** (s.114). Simple interest at **0.0274% for each day or part of a day** from the date the VAT became payable until paid. The same rate applies to a refund that was not properly due, from the date it was paid. On an assessment, Revenue charges interest from the date the original return was due. Illustration: EUR 10,000 of VAT paid 30 days late carries 10,000 × 0.0274% × 30 = EUR 82.20.
@@ -255,6 +272,32 @@ expected:
   interest: 74.80
 ```
 
+### Example 3: which should I use, invoice basis or moneys received basis?
+
+An Irish consultancy with EUR 600,000 of annual turnover sells to businesses at 23%. In a two-month period it invoices EUR 50,000 net and is paid EUR 30,000 net of that in the period. Turnover is under EUR 2,000,000, so it can ask Revenue to authorise the moneys received basis ([Revenue: who may opt](https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/who-can-opt-moneys-received-basis.aspx), read 2026-10-31).
+
+- Invoice basis: T1 sales VAT is 50,000 x 23% = EUR 11,500.
+- Moneys received basis: T1 sales VAT is 30,000 x 23% = EUR 6,900.
+- The deciding figure is net sales unpaid at the period end. Here EUR 20,000 unpaid defers EUR 4,600 to the period the money arrives. It is timing only, not a saving.
+- If customers pay at the point of sale, as in a shop or restaurant, nothing is unpaid and the basis changes nothing.
+- It is not available if turnover is over EUR 2,000,000 and under 90% of supplies go to customers who cannot claim full deduction. It also cannot cover connected-person sales or the other excluded items listed under the cash basis above.
+
+```oa-check
+name: Invoice basis against moneys received basis, two-month period
+inputs:
+  invoiced: 50000
+  received: 30000
+  rate: 0.23
+steps:
+  - t1_invoice: invoiced * rate
+  - t1_cash: received * rate
+  - deferred: t1_invoice - t1_cash
+expected:
+  t1_invoice: 11500
+  t1_cash: 6900
+  deferred: 4600
+```
+
 ## Ask the client first
 
 1. **Registration and turnover.** Are you registered, from what date, and what is your VAT number? Which period does ROS show (two-monthly, four-monthly, six-monthly or monthly), and which basis (invoice, or Revenue-authorised cash basis: ask for the authorisation letter)? If not registered: turnover in 2025 and so far in 2026, and is it goods, services or both?
@@ -313,8 +356,17 @@ expected:
 | Tax and Duty Manual, VAT treatment of construction services (reviewed August 2026) | https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part11-immovable-goods/construction-services/construction-servcies.pdf | 2026-10-24 |
 | Tax and Duty Manual, partial recovery of VAT on qualifying passenger motor vehicles (reviewed December 2024) | https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part03-taxable-transactions-goods-ica-services/Goods/partial-recovery-of-VAT-on-qualifying-passenger-motor-vehicles.pdf | 2026-10-24 |
 | Tax and Duty Manual, postponed accounting | https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part07-provisions-relating-to-imports-exports/postponed-accounting.pdf | 2026-10-24 |
+| Revenue, when VAT becomes payable | https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/when-vat-becomes-payable.aspx | 2026-10-31 |
+| Revenue, completing the VAT3 (published 28 July 2026) | https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/completing-vat3-return.aspx | 2026-10-31 |
+| Revenue, how do you pay VAT | https://www.revenue.ie/en/vat/accounting-for-vat/how-do-you-pay-vat/index.aspx | 2026-10-31 |
+| Tax and Duty Manual, Agent's Guide to the Collector-General's Division (updated October 2026) | https://www.revenue.ie/en/tax-professionals/tdm/collection/agents-guide/agents-guide-to-collector-general.pdf | 2026-10-31 |
+| Tax and Duty Manual, VIES Traders Manual, Appendix 1 (ROS screens) | https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/vat-information-exchange-system-VIES/vies-traders-manual.pdf | 2026-10-31 |
+| Revenue, ROS help, unable to amend a return | https://www.revenue.ie/en/online-services/services/ros/ros-help/something-is-not-working/issues-completing-and-submitting-returns/unable-to-amend-a-return.aspx | 2026-10-31 |
+| Revenue, Code of Practice for Revenue Compliance Interventions (self-correction under EUR 6,000) | https://www.revenue.ie/en/tax-professionals/documents/code-of-practice-revenue-compliance-interventions.pdf | 2026-10-31 |
+| Revenue, repayment of VAT | https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/vat-repayment.aspx | 2026-10-31 |
+| Revenue, who may opt for the moneys received basis | https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/who-can-opt-moneys-received-basis.aspx | 2026-10-31 |
 
-Not yet confirmed: whether Revenue, in practice, charges interest only from the 23rd for a ROS filer who pays late (this skill follows s.76(1) and s.114(1) and counts from the 19th); the tax point for services received from abroad (the old version said the earliest of invoice, payment or the 15th of the month after the service; s.74 does not say this and the rule was not found in the law read); the legal basis for the ROS extension to the 23rd (read on Revenue's page only, not in the Taxes Consolidation Act); the monthly-return option for repayment traders (Revenue practice, no figure in s.77); the item-by-item lists of Schedules 2 and 3 beyond the paragraphs named above; the VIES statement threshold set by regulations for annual statements under s.82(4); any VAT changes in Finance Bill 2026 (Budget 2027), not enacted on 2026-10-24 and not read; the EU-goods and RTD treatment of One-Stop Shop sales beyond leaving them out of the RTD.
+Not yet confirmed: whether Revenue, in practice, charges interest only from the 23rd for a ROS filer who pays late (this skill follows s.76(1) and s.114(1) and counts from the 19th); the tax point for services received from abroad (the old version said the earliest of invoice, payment or the 15th of the month after the service; s.74 does not say this and the rule was not found in the law read); the legal basis for the ROS extension to the 23rd (read on Revenue's page only, not in the Taxes Consolidation Act); the monthly-return option for repayment traders (Revenue practice, no figure in s.77); the item-by-item lists of Schedules 2 and 3 beyond the paragraphs named above; the VIES statement threshold set by regulations for annual statements under s.82(4); any VAT changes in Finance Bill 2026 (Budget 2027), not enacted on 2026-10-24 and not read; the EU-goods and RTD treatment of One-Stop Shop sales beyond leaving them out of the RTD. How-to: Revenue publishes no step-by-step VAT3 screen guide that could be opened; step 3 and the Sign & Submit wording come from the VIES appendix, so the exact VAT3 screen labels are not confirmed. Revenue's "ways to make an online payment" page returned 404. Example 3 compares T1 only; whether T2 timing changes on the moneys received basis was not read.
 
 <!-- openaccountants-cta-block -->
 
