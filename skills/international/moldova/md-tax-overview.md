@@ -1,54 +1,167 @@
 ---
 name: md-tax-overview
-description: "Tax overview for the Republic of Moldova for tax year 2026: one page on how the system works under the Fiscal Code (Codul fiscal nr. 1163/1997) and who runs it (the State Tax Service, SFS). Covers the calendar tax year; the Moldovan leu; residence for companies and individuals; the flat 12% income tax for individuals and companies and the personal exemption; the 4% small-company regime and the IT park 7% single tax; dividends (6% withheld from resident individuals and non-residents) and the 12% withholding on other payments abroad; VAT at 20% with an MDL 1.7 million registration threshold and monthly returns; and the main deadlines (company return 25 March, individual return 30 April, VAT by the 25th). Trigger phrases: Moldova tax system, Moldova taxes overview, taxes in Moldova, impozite Moldova, SFS Moldova. Out of scope: the detail in the domain skills linked below."
-version: 0.1
+description: "Route Moldova tax questions for 2026 to the correct taxpayer, source, base, period and connected Guide. Covers the ordinary individual and legal-person income-tax rates, standard VAT, current resident and nonresident income populations, income-tax and VAT periods, annual income-tax and ordinary VAT deadlines, separate annual accounts and payer reporting, and two assumed computations. Use for Moldova tax overview, personal or corporate tax, worldwide income, tax year, annual return, SFS, MDL, VAT and first-year compliance. This source-cited writer draft corrects blanket scope and deadline assumptions, preserves predecessor subjects and makes remaining specialist and implementation gaps explicit. A bounded source-review record is linked under Sources; accountant attestation remains open."
 jurisdiction: MD
-category: international
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: international
+version: "0.5"
 ---
 
-# Moldova Tax Overview
+# Moldova tax overview, 2026 v0.5
 
-## The Moldovan tax system at a glance
+## Who this applies to
 
-Moldova's national taxes are set out in one Fiscal Code (Codul fiscal nr. 1163/1997) and collected by the State Tax Service. Income tax is flat at 12% for both individuals and companies, with special regimes for small companies and IT park residents. Figures below are from the consolidated Fiscal Code on legis.md as amended to Law LP235 of 2 October 2026 (in force 30 October 2026).
+Use this overview to identify the taxpayer, period, tax base and connected Moldova Guide before calculating an ordinary 2026 liability. Headline rates are not a complete tax computation or proof of eligibility for a special regime. The pack remains a source-cited writer draft with stated gaps and a bounded source-review record linked under Sources. [Code arts. 12^1–15, 83, 96, 114–115][code].
 
-- **Tax year (taxable period)**: the calendar year. A new company's first period runs from registration to 31 December _(Fiscal Code art. 12^1(1), (2))_
-- **National currency**: Moldovan leu (MDL); Fiscal Code amounts are stated in lei _(Fiscal Code, e.g. art. 112(1))_
-- **Tax authority**: State Tax Service (Serviciul Fiscal de Stat, SFS) _(Fiscal Code arts. 83(4), 92(1))_
-- **Residence, companies**: a legal entity is resident if its activity is organised or managed in Moldova, or if Moldova is its main place of business _(Fiscal Code art. 5 pct. 5 lit. b))_. Detail: [md-corporate-income-tax](md-corporate-income-tax.md).
-- **Residence, individuals**: a person with a permanent home in Moldova, or present at least 183 days in the tax year _(Fiscal Code art. 5 pct. 5 lit. a))_. Detail: [moldova-income-tax](moldova-income-tax.md).
-- **Basis of taxation**: residents in business are taxed on income from Moldova and abroad; non-residents are taxed on Moldovan-source income listed in art. 71 _(Fiscal Code arts. 13(1)(a), 14(1)(a), 71)_
-- **Headline personal income tax rate**: 12%, flat _(Fiscal Code art. 15(a))_
-- **Personal exemption**: MDL 29,700 a year for a resident with annual taxable income under MDL 360,000 _(Fiscal Code art. 33(1))_. Detail: [moldova-income-tax](moldova-income-tax.md).
-- **Headline corporate income tax rate**: 12% of taxable income; 7% for peasant (farmer) households _(Fiscal Code art. 15(b), (c))_
-- **Small companies not registered for VAT**: may pay 4% of accounting income instead _(Fiscal Code arts. 54^1, 54^3)_
-- **IT park residents**: a single tax of 7% of sales revenue, at least 30% of the forecast average monthly wage per employee each month (MDL 5,220 in 2026, on a forecast wage of MDL 17,400), replacing income tax on profit and on salaries, employer social contributions, employees' health insurance premiums, local taxes, property tax and the road-use tax _(Fiscal Code arts. 370, 372(1); Government Decision 773/2025)_. Detail: [moldova-tax-optimization](moldova-tax-optimization.md).
-- **Dividends**: 6% withheld from dividends paid to resident individuals and to non-residents; dividends between Moldovan companies are not taxed _(Fiscal Code arts. 90^1(3^1), 91(1), 20 lit. z19))_
-- **Other payments to non-residents**: 12% withholding on Moldovan-source income such as services, interest and royalties; a treaty rate applies where it is lower _(Fiscal Code arts. 91(1), 79^3(1))_
-- **Does Moldova levy VAT?**: Yes. Standard rate 20%; reduced 8% on items such as bread and dairy _(Fiscal Code art. 96 lit. a), b))_. Detail: [moldova-vat](moldova-vat.md).
-- **VAT registration**: required once supplies exceed MDL 1.7 million in any 12 consecutive months, from 1 March 2026; the threshold was MDL 1.5 million before that date _(Fiscal Code art. 112(1); Law LP12/2026)_
-- **Social and health contributions**: see [moldova-social-contributions](moldova-social-contributions.md) and [moldova-payroll](moldova-payroll.md)
-- **Annual personal income tax return deadline**: 30 April of the year after the tax year _(Fiscal Code art. 83(4)(b))_
-- **Annual corporate income tax return deadline**: the 25th day of the third month after the tax year, so 25 March 2027 for 2026; tax is paid by the same date _(Fiscal Code arts. 83(4)(a), 87(1))_
-- **Corporate tax instalments**: 25 March, 25 June, 25 September and 25 December _(Fiscal Code art. 84(1))_
-- **VAT return frequency and deadline**: monthly (the VAT tax period is a calendar month), due by the 25th of the following month _(Fiscal Code arts. 114(1), 115(1))_
-- **Tax withheld at source**: paid by the 25th of the month after payment _(Fiscal Code art. 92(1))_
+The **Serviciul Fiscal de Stat (SFS)** administers taxes and other covered public payments. The national currency is the **Moldovan leu**; examples below show MDL amounts. Accounting and tax-conversion rules still depend on the transaction and applicable provision. [Code art. 129(2)][code]; [BNM national-currency section][bnm]; [Accounting Law art. 7][accounts].
+
+## Rates, bands and thresholds
+
+| Ordinary headline | Rate or period | Primary source |
+|---|---|---|
+| Individual/individual-entrepreneur and listed professional income tax | **12% of annual taxable income**, with the actual taxpayer/base/regime classification | [Code art. 15(a)][code] |
+| Legal-person income tax | **12% of taxable income**, subject to actual special/exempt regimes | [Code art. 15(b)][code] |
+| Standard VAT | **20%** of the taxable value; reduced rates and exemptions require their own conditions | [Code art. 96(a)–(b)][code] |
+| Ordinary income-tax period | Calendar year; first-year, liquidation, reorganisation, IT-park and permitted non-calendar-period rules are separate | [Code art. 12^1][code] |
+| Ordinary VAT period | Calendar month; article 94(d)'s specified electronic-services category has a quarterly period | [Code art. 114(1)–(1^1)][code] |
+
+These figures do not replace the [individual](moldova-income-tax.md), [corporate](md-corporate-income-tax.md), [VAT](moldova-vat.md), [payroll](moldova-payroll.md) or [social/medical](moldova-social-contributions.md) calculations. Classification comes before applying a percentage. A business's legal form does not by itself select the small-business, independent-service, IT-park or other special regime. [Code arts. 13–15, 83, 96][code].
+
+### Other headlines require their actual scope
+
+| Topic | Headline and qualifying boundary | Full method |
+|---|---|---|
+| Peasant-farm income tax | **7%** belongs to the statutory farmer-household category, not every agricultural company | [Code art. 15(c)][code]; [individual](moldova-income-tax.md) / [corporate](md-corporate-income-tax.md) |
+| Standard personal exemption | **29,700 MDL** annually for the qualifying resident individual with the article-33 annual taxable-income measure **strictly below 360,000**; the statutory exclusions/inclusions and increased-relief categories still apply | [Code art. 33][code]; [individual](moldova-income-tax.md) |
+| Eligible non-VAT SME | **4%** of the defined accounting-income base; actual supply mix, consultancy, ownership, election and dates control | [Code arts. 54^1–54^4][code]; [corporate](md-corporate-income-tax.md) |
+| Actual IT-park resident | Greater of **7% of monthly sales** and the counted-employee minimum; **5,220 MDL per counted employee** in 2026 from **30% × 17,400**. Only the specified taxes/payments are included | [Code arts. 369–372][code]; [enacted forecast][wage]; [planning](moldova-tax-optimization.md) |
+| Ordinary dividends | **6%** for resident-individual/nonresident recipients, with the specified **15%** historic-profit/capital exceptions. Resident-company receipts have article 20(z^19)’s separate treatment and historic exception | [Code arts. 20(z^19), 90^1, 91][code]; [corporate](md-corporate-income-tax.md) / [cross-border](md-cross-border.md) |
+| Other nonresident-source payments | **12%** only for the actual covered category, with statutory exclusions and evidenced treaty treatment | [Code arts. 71, 79^3, 91][code]; [cross-border](md-cross-border.md) |
+| VAT registration | The ordinary statutory test moves from **1.5 million** to **1.7 million MDL on 1 March 2026**; exclude/include supplies as article 112 requires. This is distinct from the SME threshold’s 27 March amendment | [Code art. 112][code]; [Law 12/2026][vatamend]; [VAT](moldova-vat.md) |
+
+For residence, Code article 5(5) distinguishes an individual’s permanent domicile or **at least 183 days** in the fiscal year from a company’s organisation/management or principal-place-of-activity test. Establish the actual facts and any treaty instead of applying an individual day count to every entity. The income-object populations below are a separate question. [Code art. 5(5)][code]; [individual](moldova-income-tax.md) / [cross-border](md-cross-border.md).
+
+## The base
+
+Do not apply a blanket “every resident is taxed on all worldwide income” rule. Articles 13–14 distinguish:
+
+- Resident businesses, listed professional/service activities and legal persons, whose covered business object includes domestic and foreign sources, subject to the actual deductions/exemptions.
+- Resident Moldovan citizens outside business, whose domestic/work-in-Moldova object and foreign investment/financial income are addressed separately.
+- Resident foreign citizens and stateless individuals working in Moldova, whose listed work/source object excludes foreign investment/financial income under the cited paragraph.
+- Nonresident individuals outside Moldovan business, whose covered Moldova-source income follows chapter 11; entities, permanent establishments, payer withholding and treaties require the [cross-border method](md-cross-border.md).
+
+Those distinctions are statutory populations, not proof that an individual is resident or that a receipt is exempt. Establish legal residence, citizenship where relevant, actual activity, source, income type, permanent establishment, timing and special/final-withholding regime. [Code arts. 13–14][code]; [cross-border Guide](md-cross-border.md).
+
+For income tax, determine taxable income after the deductions/exemptions legally available to the taxpayer. Do not tax all cash received as profit, deduct an employer's social expense from employee cash, or treat loan principal as salary. For VAT, classify the transaction and tax point, rate/exemption and legally deductible input; output VAT is not automatically the amount payable. Use the connected Guides' retained rules and unresolved limits. [Code arts. 12(4), (11)–(13), 14–15, 19, 101–102][code].
+
+## Deadlines and filing
+
+| Ordinary obligation | Deadline and scope | Primary source |
+|---|---|---|
+| Individual income-tax return where required | **30 April** following the tax year; actual filing obligation and departure/special routes must first be established | [Code art. 83(2), (4)(b), (7)–(8)][code] |
+| Legal-person/resident organisational-form/PE income-tax return | **25th of the third month** following the fiscal period; ordinary calendar-year case is **25 March** | [Code art. 83(4)(a)][code] |
+| Qualifying non-VAT individual entrepreneur/peasant farm | Specified unified report by **25 March**, with annual average employees not exceeding **five** and all statutory conditions | [Code art. 83(11)][code] |
+| Income-tax payment | Ordinarily by the statutory return deadline; a filing extension does not automatically extend payment | [Code art. 87(1)][code] |
+| Ordinary VAT return/payment | By the **25th after the period** for covered taxpayers; preserve imported-service, reverse-charge and electronic-services distinctions | [Code art. 115][code] |
+| Payroll withholding and annual payer information | Separate monthly/annual obligations and approved forms in the [payroll Guide](moldova-payroll.md) | [Code art. 92][code] |
+| Annual accounts | Separate accounting obligation, reporting body and category-specific deadline in the [formation Guide](md-company-formation.md) | [Accounting Law arts. 31–33][accounts] |
+
+For a new business, the income-tax period runs from registration to the calendar-year end under article 12^1(2); do not automatically assume twelve months of relief or a complete prior calendar year. Eligible non-calendar reporters apply the statutory notification and transition rules. For tax deadlines, article 129(8) supplies the stated non-working-day rollover and electronic end-of-day rule; it does not settle every separate company-law deadline. Retain the current form, submitted version, acceptance receipt, liability period and actual payment allocation. [Code arts. 12^1, 129(8)][code].
+
+### UNIF25 local-tax and property reporting interface
+
+For an actually eligible UNIF25 individual entrepreneur/farm, the approved form includes local-tax/property tables6–7. This is a reporting map, not evidence that every listed tax applies or that a single national rate can be used. Obtain the current taxing law, local decision where required, taxable object, period, cadastral/accounting evidence and any specific relief before entering an amount. The separate [individual-income method](moldova-income-tax.md) establishes the UNIF25 taxpayer and reporting year. [SFSOrder300/2025](https://www.legis.md/cautare/getResults?doc_id=148910&lang=ro); [actual form](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx), [instructions121–136](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx).
+
+| Table7 row | Declared object/base distinction in the instructions |
+|---|---|
+| 1, territorial improvement | Average employees plus individual-enterprise founders; farms additionally include their members. Use the applicable local rate and current eligibility. |
+| 2–4, auction/lottery, advertising placement, local symbols | The specified sales/ticket/service/product value bases; the advertising-placement instruction has named media exclusions. Do not apply those monetary bases to a sign's surface area. |
+| 5–6, commercial/service units and markets | Applicable units/objects for row5; market land/building area in m² for row6. |
+| 7–9, lodging, spa and passenger transport | Stated lodging-service sales, recreation/treatment-ticket sales, or each qualifying transport unit, respectively. |
+| 10–11, parking and advertising devices | Parking area or advertising-face area in m², respectively, with the relevant local rate. |
+| 12–13, water and registered-vehicle road tax | Water extraction/use volume in m³ under its statutory schedule; road tax per vehicle/technical characteristics under its separate schedule and timing. Neither is made a discretionary local rate merely by this table's heading. |
+| 14(a)–(c), land | Separate the listed agricultural/water-object, nonagricultural unevaluated and pasture/hayfield cases; retain hectares, grading where applicable and the statutory/local basis. |
+| 15(a)–(b), immovable property | Separate cadastral estimated value from accounting-value taxation; identify the applicable object/rate, relief and any actual local unmaintained/unworked-property decision. |
+
+For each applicable row, keep the base, calculated tax, authorised relief and payable amount separately; payable is calculated tax less relief. Instructions122–136 call that last field column6, while the actual table7 prints it as **7**, with formula4−5. Use the field name/formula and retain the discrepancy; portal acceptance has not been tested. [Actual table7](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx); [instructions122–136](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx).
+
+For subdivisions outside the base locality, table6 records each object's locality in2. Money goes in3–14,16,18,20–22; land areas in15,17,19 are **hectares**, not amounts to add into tax. Column23 sums only those money columns for the locality. Reconcile the corresponding tax categories to table7, while keeping road-tax row13 separate because table6 has no dedicated road-tax column. Do not force all15 table7 rows into a fictitious one-to-one column map. Current taxpayer-specific rates, applicability, relief, deadlines and the noted portal inconsistencies remain open beyond this sourced reporting interface. [Actual table6](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx); [instruction121](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx).
+
+
+## Penalties and interest
+
+Use the actual tax, principal, due date, payment/change dates and statutory exception. The connected tax Guides supply the ordinary 2026 tax/medical late-charge calculation and separate social charge with their sources. A filing receipt does not discharge an unpaid tax, and an income-tax rate is not an interest rate. Filing errors, understatement, corrections and relief have different provisions; this overview does not invent a single penalty for all non-compliance. [Code arts. 87, 129(6)–(9), 188, 228, 260–261][code]; [corporate](md-corporate-income-tax.md) and [social/medical](moldova-social-contributions.md) Guides.
+
+## Cross-border points
+
+Check the actual taxpayer population and source before using domestic rates. Determine withholding, permanent establishment, foreign-tax credit and treaty evidence in the [cross-border Guide](md-cross-border.md); evaluate related-party dealings in [transfer pricing](md-transfer-pricing.md). An overseas payer, foreign bank transfer, residence certificate or foreign tax paid alone does not establish the complete treatment. Treaty-specific rates, relief procedures and special-regime eligibility remain subject to the pack's explicit source/applicability gaps. [Code arts. 13–14, 71–79^3, 82][code].
+
+## Two worked examples that recompute
+
+### 1. Ordinary company with an established taxable base
+
+Assume an ordinary resident company has 100,000 MDL of taxable income after all established adjustments, no exemption/special regime, no foreign credit and no advance payments. The 12% charge is 12,000 MDL. This is a computation on the assumed taxable base, not a conclusion that turnover or bank receipts equal profit. [Code arts. 12(4), 14(1)(a), 15(b)][code].
+
+```oa-check
+name: Moldova 2026 overview ordinary corporate income-tax charge
+inputs:
+  established_taxable_income: 100000
+  ordinary_rate: 0.12
+steps:
+  income_tax: established_taxable_income * ordinary_rate
+expected:
+  income_tax: 12000
+```
+
+### 2. Ordinary standard-rated VAT with established deductible input
+
+Assume an ordinary registered taxpayer has 100,000 MDL of standard-rated domestic taxable value in the month and 8,000 MDL of legally deductible input VAT in that period. There are no exemptions, mixed-use/prorata issues, earlier balances or other adjustments. Output VAT is 20,000 MDL and the current net amount is 12,000 MDL. The assumed input entitlement must be established under the actual conditions before using the subtraction. [Code arts. 96(a), 101(1), 102][code].
+
+```oa-check
+name: Moldova 2026 overview ordinary output less established input VAT
+inputs:
+  taxable_sales: 100000
+  standard_rate: 0.20
+  established_deductible_input: 8000
+steps:
+  output_vat: taxable_sales * standard_rate
+  net_vat: output_vat - established_deductible_input
+expected:
+  output_vat: 20000
+  net_vat: 12000
+```
+
+## Ask the client first
+
+Establish legal form and registrations; residence and citizenship where relevant; actual work, management, property and customer locations; income types and source; tax/accounting periods and any entry/exit change; turnover, taxable profit and VAT classification; employees, payments and contributions; deductions, exemptions, special regimes and treaty evidence; earlier returns, accepted corrections, advances, credits and outstanding debt. Use the answers to choose the full connected method before quoting a tax liability or a saving.
 
 ## Sources
 
-| Source | URL | Read on |
-|---|---|---|
-| Codul fiscal nr. 1163/1997, consolidated to LP235/2026 (in force 30.10.2026): arts. 5 pct. 5, 12^1, 13, 14, 15, 20 lit. z19), 33, 54^1, 54^3, 71, 79^3, 83, 84, 87, 90^1, 91, 92, 96, 112, 114, 115, 370, 372 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |
-| Law LP12 of 19 February 2026 amending art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |
-| Government Decision 773 of 17 December 2025: forecast average monthly wage for 2026, MDL 17,400 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-30 |
+**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
-Not yet confirmed: social insurance and health insurance contribution rates for 2026 (set in the annual social insurance budget law and Law 1593/2002, not read here; see the sibling skills); treaty withholding rates; changes in force from 2027 shown on legis.md.
+Primary-source reads on 30–31 October 2026, with individual dates below. The overview ledger binds the rules and both assumed computations to actual official source contexts, hashes and predecessor-topic destinations. This overview does not complete a partial specialist domain or substitute for independent whole-country review.
+
+| Primary source | Scope actually read | Read date |
+|---|---|---|
+| [UNIF25 actual full form](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx), [complete instructions](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx) and [current Code interfaces](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Remaining formpages3–4/instructions36–136 read and visually checked; selected supporting/payment/property methods applied, with source inconsistencies and implementation limits explicit. Earlier core observation preserved | 2026-10-31 |
+| [Current Fiscal Code, consolidation 157050][code] | Selected taxpayer/object/rate, actual income-tax-period, filing, VAT and administration provisions; further computation/penalty contexts retained in the connected Guide ledgers | 2026-10-30 |
+| [Accounting Law 287/2017, operative consolidation][accounts] | Selected accounting currency, category, period and accounts presentation/audit provisions, distinct from tax returns | 2026-10-30 |
+| [BNM national-currency section][bnm] | Official identification of the Moldovan leu; not a general tax conversion procedure | 2026-10-30 |
+
+**Not yet confirmed:** the connected domains' remaining approved-form/annex, commencement and ordinary implementation gaps; the tax-planning Guide's remaining procedure/form and taxpayer-specific comparison questions; treaty-specific and specialist industry/transaction procedures not established by this overview. The old blanket resident-worldwide-income statement and unqualified calendar-year/monthly-deadline shortcuts are replaced by the cited population, period and exception rules. No accountant attestation, comprehensive country coverage or completed whole-country independent review is claimed.
+
+Additional headline source contexts (Code 5, 15, 20, 33, 54^1–54^4, 90^1, 91 and 112, Law 12/2026 and enacted Government Decision 773/2025) were read 30 October 2026 and retained in the overview/core ledgers. A headline does not replace the connected computation or satisfy remaining country gaps.
+
+[wage]: https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro
+[vatamend]: https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro
+[code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
+[accounts]: https://www.legis.md/cautare/getResults?doc_id=140124&lang=ro
+[bnm]: https://bnm.md/en/content/information-regarding-nbm
 
 <!-- openaccountants-cta-block -->
 
