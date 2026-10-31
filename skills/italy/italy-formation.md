@@ -295,6 +295,8 @@ expected:
 - D.P.R. 633/1972 art. 35: https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art35!vig=2026-06-30 (read 2026-10-31)
 - Agenzia, form AA7/10: https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/aa7_10/schedainfo-aa7_10 (read 2026-10-31)
 
+Not yet confirmed: the 1 to 3 week formation time (a legacy estimate; no official page states a duration).
+
 ## Disclaimer
 
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute legal, tax, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional before acting upon.

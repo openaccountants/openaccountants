@@ -20,7 +20,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Which books an Italian business or professional keeps, registers, retention, cash versus accrual, chart of accounts and Civil Code layouts. Figures are for tax year 2026; Italy's tax year is the calendar year. Statutes were read on Normattiva as in force on 30 June 2026 (the new TUIR, D.Lgs. 117/2026, applies only from 1 January 2027). One source is dated another year: the IRAP rate is from the Agenzia's 2026 IRAP instructions, for 2025. The depreciation decree (D.M. 31 December 1988) was not read, so no rates are printed.
 
-## Italy Bookkeeping Guide v1.0
+## Italy Bookkeeping Guide v1.1
 
 Companion to `it-income-tax`, `italy-vat-return` and `italy-einvoice`.
 
