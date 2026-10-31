@@ -1,10 +1,10 @@
 ---
 name: azerbaijan-vat
-description: 'Use this Guide for 2026 Azerbaijan VAT working papers for ordinary domestic VAT taxpayers, importers, exporters and recipients of non-resident services. It covers compulsory and voluntary registration, the rolling and single-contract thresholds, 2026 POS turnover weighting, tax points, input credit and mixed-use allocation, monthly returns, reverse charge, cancellation and retained inventory. Trigger on Azerbaijan VAT, EDV, VAT deposit account, non-resident services, input VAT, mixed taxable and exempt supplies and VAT registration. It covers the separate registration and filing process for foreign B2C electronic sellers. Specialist agricultural margin, leasing and other special schemes need separate source checks. This is a source-cited draft.'
+description: 'Use this skill for 2026 Azerbaijan VAT working papers for ordinary domestic VAT taxpayers, importers, exporters and recipients of non-resident services. It covers compulsory and voluntary registration, the rolling and single-contract thresholds, 2026 POS turnover weighting, tax points, input credit and mixed-use allocation, monthly returns, reverse charge, cancellation and retained inventory. Trigger on Azerbaijan VAT, EDV, VAT deposit account, non-resident services, input VAT, mixed taxable and exempt supplies and VAT registration. It covers the separate registration and filing process for foreign B2C electronic sellers. Specialist agricultural margin, leasing and other special schemes need separate source checks. Checked against the law (tier 2); no accountant has signed it off.'
 version: 2.1
 jurisdiction: AZ
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -14,7 +14,7 @@ category: international
 
 # Azerbaijan Value Added Tax v2.1
 
-> **Source-cited draft.** Tax year 2026, read on 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No professional attestation is claimed.
+> **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 
 ## Who this applies to
 
@@ -43,7 +43,7 @@ Determine supply, place, time, VAT base and rate before aggregating a return. Ar
 
 Under art. 166, the ordinary tax point is payment. Advance receipts are taxable when paid; instalments are separate transactions to their extent. Set-off, barter, gratuitous supplies, expired debt and other statutory cases have their own tax points. Cash-register operations follow the receipt rule in art. 166.1.1-1. Do not replace this system with a universal invoice-date or delivery-date rule. Apply art. 163 adjustments when price, cancellation or return facts change.
 
-Separate standard-rate, zero-rate, exempt and outside-scope supplies. Zero-rated transactions remain taxable and permit eligible input credit (art. 175.7); exempt transactions do not generally permit input credit (art. 175.6). Art. 164 gives specific exemptions; for example qualifying producers' own agricultural product sales are exempt from 1 January 2014 for thirteen years (art. 164.1.18). A financial-service exemption must be tested against the current definition and the 25 December 2026 leasing changes; this Guide does not extend it to every bank or leasing invoice.
+Separate standard-rate, zero-rate, exempt and outside-scope supplies. Zero-rated transactions remain taxable and permit eligible input credit (art. 175.7); exempt transactions do not generally permit input credit (art. 175.6). Art. 164 gives specific exemptions; for example qualifying producers' own agricultural product sales are exempt from 1 January 2014 for thirteen years (art. 164.1.18). Financial services for this purpose include insurance and reinsurance and the related agent and broker services (art. 13.2.14.7). Other art. 164 exemptions include paid education services (art. 164.1.13) and metro passenger transport (art. 164.1.12). Goods and services for the official use of accredited international organisations and foreign diplomatic and consular missions, and for the personal use of their non-citizen diplomatic and administrative staff and families, are zero-rated (art. 165.1.1). Test a financial-service exemption under art. 164.1.2 against its current definition; this skill does not extend it to every bank or leasing invoice. Law 413-VIIQD of 26 May 2026 changes the leasing exemptions from 25 December 2026, the date the Tax Code's commencement notes give for it (it enters into force with the Law on Financial Lease, 412-VIIQ). From that date "leasing" (lizinq) becomes "financial lease" (maliyyə icarəsi) in arts. 164.1.2, 164.1.2-1 and 164.1.25; art. 164.1.34-1 loses its "without transfer of ownership" condition and covers renting farm machinery to agricultural producers; and art. 164.1.50 drops "or leasing" from the exemption for aircraft and engines rented from non-residents without an Azerbaijan PE (Law 413-VIIQD arts. 2.8.1-2.8.4, 26). Use the current wording for operations up to 24 December 2026 and the amended wording from 25 December 2026.
 
 For domestic input credit, obtain a valid electronic invoice and evidence that the VAT-exclusive value was paid from the purchaser's bank/payment account to the supplier's account and VAT was paid to the VAT deposit account, subject to art. 175's express exceptions. Credit the corresponding paid part of instalments. Cash-register receipts alone, non-compliant invoices and sham-transaction documents do not establish credit (arts. 175.9, 175.11). The VAT-deposit payment is due within one working day of paying the net consideration under art. 175.1.3, with the art. 177.5 exception. Import documents evidencing paid import VAT support credit under art. 175.10.
 
@@ -134,12 +134,13 @@ expected:
 
 | Source and provisions read | Official URL | Read on |
 |---|---|---|
-| Tax Code, arts. 33.8-1, 57–59, 153–179 and commencement annotations | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-24 |
-| Cabinet Decision 387, current consolidated electronic-seller procedure, paras. 1–7 | https://frameworks.e-qanun.az/55/f_55514.html | 2026-10-24 |
-| Law 297-VIIQD, arts. 18.1 and 19.6, commencement and POS transition | https://frameworks.e-qanun.az/61/f_61117.html | 2026-10-24 |
-| STS 2026 amendment FAQ, POS transitional provision art. 18.1 | https://www.taxes.gov.az/uploads/2026/faq/FAQ2026.pdf | 2026-10-24 |
+| Tax Code, arts. 33.8-1, 57–59, 153–179 and commencement annotations | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-31 |
+| Cabinet Decision 387, current consolidated electronic-seller procedure, paras. 1–7 | https://frameworks.e-qanun.az/55/f_55514.html | 2026-10-31 |
+| Law 297-VIIQD, arts. 18.1 and 19.6, commencement and POS transition | https://frameworks.e-qanun.az/61/f_61117.html | 2026-10-31 |
+| Law 413-VIIQD of 26 May 2026, arts. 2.8.1-2.8.4 and 26 (leasing exemptions from 25 December 2026) | https://frameworks.e-qanun.az/62/f_62107.html | 2026-10-31 |
+| STS 2026 amendment FAQ, POS transitional provision art. 18.1 | https://www.taxes.gov.az/uploads/2026/faq/FAQ2026.pdf | 2026-10-31 |
 
-Not yet confirmed: The 25 December 2026 leasing amendments. Specialist agricultural margin/election calculations are outside scope.
+Not yet confirmed: a general block on input VAT for passenger cars or entertainment (the old version of this skill stated one from a secondary source; it was not found in art. 175); which contracts the Law on Financial Lease (412-VIIQ) treats as a financial lease, which decides what falls within the amended exemptions from 25 December 2026. Specialist agricultural margin/election calculations are outside scope.
 
 <!-- openaccountants-cta-block -->
 

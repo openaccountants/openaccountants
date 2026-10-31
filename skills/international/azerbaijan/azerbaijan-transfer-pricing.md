@@ -1,17 +1,18 @@
 ---
 name: azerbaijan-transfer-pricing
-description: 'Use this Guide for 2026 Azerbaijan transfer-pricing working papers for residents and non-resident permanent establishments conducting controlled cross-border transactions. It covers related-party and preferential-jurisdiction scope, commodity and counterparty-concentration cases, statement thresholds, method selection, comparability, current interquartile adjustments, documentation, authority requests and advance method agreements. Trigger on Azerbaijan transfer pricing, controlled transactions, arm length, CUP, cost plus, master file, local file, TP statement and CbCR screening. The complete CbCR parent, surrogate and secondary-filing workflow is not implemented. Use the cross-border Guide for withholding, treaties, foreign-tax credit and CFCs. This is a source-cited draft awaiting professional review.'
+description: 'Use this skill for 2026 Azerbaijan transfer-pricing working papers for residents and non-resident permanent establishments conducting controlled cross-border transactions. It covers related-party and preferential-jurisdiction scope, commodity and counterparty-concentration cases, statement thresholds, method selection, comparability, current interquartile adjustments, documentation, authority requests and advance method agreements. Trigger on Azerbaijan transfer pricing, controlled transactions, arm length, CUP, cost plus, master file, local file, TP statement and CbCR screening. The complete CbCR parent, surrogate and secondary-filing workflow is not implemented. Use the cross-border skill for withholding, treaties, foreign-tax credit and CFCs. Checked against the law (tier 2); no accountant has signed it off.'
 jurisdiction: AZ
 category: transfer-pricing
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 version: 0.1
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
 
 # Azerbaijan Transfer Pricing v0.1
 
-> **Source-cited draft.** Tax year 2026, read on 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No professional attestation is claimed.
+> **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 
 ## Who this applies to
 
@@ -69,7 +70,7 @@ Art. 57.4 applies the 6,000 sanction for late/incorrect controlled-transaction s
 
 ## Cross-border points
 
-TP Rules 12 provides information/correspondence for double taxation and refers unresolved cross-border disagreement to the applicable treaty mutual-agreement procedure. There is no automatic corresponding foreign adjustment. Confirm treaty text, eligibility and the applicable MAP deadline for the actual counterparty country. Foreign loans also require the separate art. 110 interest limitations. Preferential-jurisdiction payment tax and CFC inclusion are separate from TP; use the cross-border Guide.
+TP Rules 12 provides information/correspondence for double taxation and refers unresolved cross-border disagreement to the applicable treaty mutual-agreement procedure. There is no automatic corresponding foreign adjustment. Confirm treaty text, eligibility and the applicable MAP deadline for the actual counterparty country. Foreign loans also require the separate art. 110 interest limitations. Preferential-jurisdiction payment tax and CFC inclusion are separate from TP; use the cross-border skill.
 
 ## Two worked examples that recompute
 
@@ -136,8 +137,8 @@ expected:
 
 | Source and provisions read | Official URL | Read on |
 |---|---|---|
-| Tax Code, arts. 14-1, 16, 18, 57–59, 105, 149 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-24 |
-| TP Rules, current registered text, paras. 1–12 and Appendix Example 1 | https://frameworks.e-qanun.az/35/f_35074.html | 2026-10-24 |
-| STS current CbCR implementing-rule summary | https://www.taxes.gov.az/az/page/cbcr-auto-info-exchange | 2026-10-24 |
+| Tax Code, arts. 14-1, 16, 18, 57–59, 105, 149 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-31 |
+| TP Rules, current registered text, paras. 1–12 and Appendix Example 1 | https://frameworks.e-qanun.az/35/f_35074.html | 2026-10-31 |
+| STS current CbCR implementing-rule summary | https://www.taxes.gov.az/az/page/cbcr-auto-info-exchange | 2026-10-31 |
 
 Not yet confirmed: Complete CbCR parent/surrogate/local-filing exceptions and exchange-failure triggers. No filing exemption is inferred from that gap.

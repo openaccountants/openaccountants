@@ -1,10 +1,10 @@
 ---
 name: azerbaijan-income-tax
-description: 'Use this Guide for 2026 Azerbaijan individual income tax working papers for residents, non-residents, employees and individual entrepreneurs. It covers ordinary business profit, annual non-business income, final dividend, interest and rental taxation, the general simplified turnover alternative, micro and listed-service exemptions, business losses, advances and the temporary social-payment credit. Trigger on Azerbaijan personal tax, entrepreneur tax, simplified tax, software developer exemption, rent, dividends, foreign income and annual income return. Use the payroll Guide for monthly salaries and the contributions Guide for insurance. Property-transfer and fixed-receipt computations are expressly incomplete. This is a source-cited draft awaiting professional review.'
+description: 'Use this skill for 2026 Azerbaijan individual income tax working papers for residents, non-residents, employees and individual entrepreneurs. It covers ordinary business profit, annual non-business income, final dividend, interest and rental taxation, the general simplified turnover alternative, micro and listed-service exemptions, business losses, advances and the temporary social-payment credit. Trigger on Azerbaijan personal tax, entrepreneur tax, simplified tax, software developer exemption, rent, dividends, foreign income and annual income return. Use the payroll skill for monthly salaries and the contributions skill for insurance. Property-transfer and fixed-receipt computations are expressly incomplete. Checked against the law (tier 2); no accountant has signed it off.'
 version: 0.2
 jurisdiction: AZ
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -16,13 +16,13 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Azerbaijan Individual Income Tax v0.2
 
-> **Source-cited draft.** Tax year 2026, read on 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No professional attestation is claimed.
+> **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 
 ## Who this applies to
 
-Resident and non-resident individuals under [Tax Code art. 13.2.5–13.2.6, 95–100](https://e-qanun.az/frameworks/46/f_46948.html). Residents include individuals physically present for more than 182 days in the calendar year and persons in Azerbaijan state service abroad. If presence in neither country exceeds 182 days, apply permanent home, centre of vital interests, habitual abode and citizenship in that order. Residence brings worldwide income into scope; non-residents are taxed on Azerbaijan-source income. The departure-year rule is in the cross-border Guide.
+Resident and non-resident individuals under [Tax Code art. 13.2.5–13.2.6, 95–100](https://e-qanun.az/frameworks/46/f_46948.html). Residents include individuals physically present for more than 182 days in the calendar year and persons in Azerbaijan state service abroad. If presence in neither country exceeds 182 days, apply permanent home, centre of vital interests, habitual abode and citizenship in that order. Residence brings worldwide income into scope; non-residents are taxed on Azerbaijan-source income. The departure-year rule is in the cross-border skill.
 
-Classify employment, entrepreneurial profit and non-business income separately. A registered entrepreneur is not automatically a simplified taxpayer. For salary, use azerbaijan-payroll; for contributions, use azerbaijan-social-contributions. This Guide also covers ordinary investments, rent, business losses and the general simplified turnover alternative. Specialist fixed-receipt trades and the full land/building transfer computation remain outside its implemented calculations.
+Classify employment, entrepreneurial profit and non-business income separately. A registered entrepreneur is not automatically a simplified taxpayer. For salary, use azerbaijan-payroll; for contributions, use azerbaijan-social-contributions. This skill also covers ordinary investments, rent, business losses and the general simplified turnover alternative. Specialist fixed-receipt trades and the full land/building transfer computation remain outside its implemented calculations.
 
 ## Rates, bands and thresholds
 
@@ -34,6 +34,7 @@ All figures are AZN unless stated otherwise. These are 2026 figures.
 | Annual non-business income, unless a specific final tax applies | 14% | 2026 | [Tax Code art. 101.2](https://e-qanun.az/frameworks/46/f_46948.html) |
 | Standard monthly salary | 14% up to 2,500; 350 + 25% above 2,500 | 2026 | [Tax Code art. 101.1](https://e-qanun.az/frameworks/46/f_46948.html) |
 | Private non-oil/non-gas monthly salary | 3% up to 2,500; 75 + 10% over 2,500 through 8,000; 625 + 14% above 8,000 | 1 Jan–31 Dec 2026 | [Tax Code art. 101.1-1.1](https://e-qanun.az/frameworks/46/f_46948.html) |
+| Later private non-oil monthly salary schedule | 2027: 5% up to 2,500; 125 + 10% over 2,500 through 8,000; 675 + 14% above 8,000. From 2028: 7%; 175 + 10%; 725 + 14% | 1 Jan 2027 / from 1 Jan 2028 | [Tax Code art. 101.1-1.2–101.1-1.3](https://e-qanun.az/frameworks/46/f_46948.html) |
 | Primary employment exemption | 200/month if monthly income is at most 2,500; 2,400 annually if annual income is at most 30,000 | 2026 | [Tax Code art. 102.1.6](https://e-qanun.az/frameworks/46/f_46948.html) |
 | Resident-company dividend; dividend from non-resident enterprise to individual | 5%, subject to specific exemptions | 2026 | [Tax Code art. 122.1, 101.2](https://e-qanun.az/frameworks/46/f_46948.html) |
 | Azerbaijan-source interest | 10%, subject to exemptions | 2026 | [Tax Code art. 123.1](https://e-qanun.az/frameworks/46/f_46948.html) |
@@ -47,7 +48,7 @@ All figures are AZN unless stated otherwise. These are 2026 figures.
 ## The base
 
 1. Assemble worldwide income for a resident, or Azerbaijan-source income for a non-resident. Identify income taxed finally under arts. 122–124 and 150.1.9–150.1.10 and remove it from aggregate income under art. 100. Do not apply the annual 14% tax again to such income.
-2. For entrepreneurial income, use documented business revenue less expenses incurred to earn it, compulsory business payments and tax depreciation. Apply arts. 108–119 and the corporate Guide for capital purchases, non-deductible personal expenditure, interest restrictions and depreciation. Micros can choose cash or accrual accounting; other business sizes use accrual under art. 130.4. A business loss cannot reduce salary or rent.
+2. For entrepreneurial income, use documented business revenue less expenses incurred to earn it, compulsory business payments and tax depreciation. Apply arts. 108–119 and the corporate skill for capital purchases, non-deductible personal expenditure, interest restrictions and depreciation. Deduct only costs connected with earning business income and documented as the law requires (art. 108.1); for a home, car or phone also used privately, deduct only the evidenced business share. Micros can choose cash or accrual accounting; other business sizes use accrual under art. 130.4. A business loss cannot reduce salary or rent.
 3. For the general micro exemption, establish micro status using Cabinet Decision 556: employee band 1–10 and annual income at most 200,000, with the higher size result controlling. Then test the separate average-employment and contribution-debt requirements in art. 102.1.30. Annual average employment is the sum of monthly headcounts divided by 12. Exclude sham transactions. Allocate expenses between taxable and exempt income under art. 108.2, so the exemption reduces net qualifying profit proportionately; it does not permit a full deduction of the costs attributable to exempt income.
 4. The separate art. 102.1.30-1 list covers software development, design/decorating, translation, advertising, research, science/education/culture/sports services, legal/audit/accounting/financial advice, journalism, market research, valuation, delivery/courier excluding motor freight, tour guiding and service exports. Test the 45,000 gross limit. If other activities exist, listed activities must supply at least 50% of total annual revenue. If an employee becomes an entrepreneur and supplies the same services wholly or partly to the former employer within one year of starting the business, this exemption is unavailable (art. 102.9).
 5. Compute tax on net taxable business income at 20%, after qualifying brought-forward business losses. Apply the art. 152.3 credit, then subtract advances. Do not carry a business loss beyond its statutory life or use losses incurred before entering the profit-tax regime, subject to art. 121.3.
@@ -58,7 +59,7 @@ For the simplified regime, test art. 218.5 exclusions before calculating 2% of g
 
 ## Deadlines and filing
 
-Register as an entrepreneur before starting activity; register other unwithheld/foreign income no later than the date the right to receive it arises ([Tax Code art. 33.4](https://e-qanun.az/frameworks/46/f_46948.html)). File the annual Gəlir vergisinin bəyannaməsi and settle the balance by 31 March following the tax year, hence 31 March 2027 for 2026 ([Tax Code art. 149.1–149.2, 152.1](https://e-qanun.az/frameworks/46/f_46948.html)). File electronically through the State Tax Service's Internet Tax Office, retaining income and deduction records under art. 71.4.
+Register as an entrepreneur before starting activity; register other unwithheld/foreign income no later than the date the right to receive it arises ([Tax Code art. 33.4](https://e-qanun.az/frameworks/46/f_46948.html)). The annual return is required from individual entrepreneurs, individuals with income that is not (or cannot be) taxed at source, residents with income from abroad including royalties, and non-residents with Azerbaijan-source income not taxed at source (art. 149.1.3–149.1.4). File the annual Gəlir vergisinin bəyannaməsi and settle the balance by 31 March following the tax year, hence 31 March 2027 for 2026 ([Tax Code art. 149.1–149.2, 152.1](https://e-qanun.az/frameworks/46/f_46948.html)). File electronically through the State Tax Service's Internet Tax Office, retaining income and deduction records under art. 71.4.
 
 Business advances are due within 15 days after each quarter. The ordinary methods are one quarter of prior-year tax, or current-quarter gross taxable revenue times the prior-year tax/gross-revenue coefficient; notify the method by 15 April. The cumulative-profit method and 75% minimum in art. 151.5 concern new/no-prior-activity-or-profit taxpayers, not every entrepreneur. Credit advances at annual settlement ([Tax Code art. 151](https://e-qanun.az/frameworks/46/f_46948.html)).
 
@@ -66,11 +67,11 @@ Simplified taxpayers file and pay quarterly by the following month's 20th. The a
 
 ## Penalties and interest
 
-Under [Tax Code art. 57.1](https://e-qanun.az/frameworks/46/f_46948.html), failure without grounds to submit a required return for a period with taxable or exempt operations or tax objects attracts AZN 40. Under [Tax Code art. 58.1](https://e-qanun.az/frameworks/46/f_46948.html), an understated or evaded tax amount attracts a 50% financial sanction, excluding additional tax assessed by a desk audit; the horizontal-monitoring case in art. 58.1-1 uses 25%. Under [Tax Code art. 59.1–59.2](https://e-qanun.az/frameworks/46/f_46948.html), late tax or advance payments bear 0.1% per overdue day, for at most one year. For additional tax identified by field audit or horizontal monitoring, interest starts on the assessment date under art. 59.2. Apply the facts and procedural exceptions before assessing a sanction.
+Under [Tax Code art. 57.1](https://e-qanun.az/frameworks/46/f_46948.html), failure without grounds to submit a required return for a period with taxable or exempt operations or tax objects attracts AZN 40. Failing to apply for tax registration within the art. 33.4 period attracts AZN 200, and failing to report the place of activity or a change in registration details attracts AZN 40 (art. 58.2). Under [Tax Code art. 58.1](https://e-qanun.az/frameworks/46/f_46948.html), an understated or evaded tax amount attracts a 50% financial sanction, excluding additional tax assessed by a desk audit; the horizontal-monitoring case in art. 58.1-1 uses 25%. Under [Tax Code art. 59.1–59.2](https://e-qanun.az/frameworks/46/f_46948.html), late tax or advance payments bear 0.1% per overdue day, for at most one year. For additional tax identified by field audit or horizontal monitoring, interest starts on the assessment date under art. 59.2. Apply the facts and procedural exceptions before assessing a sanction.
 
 ## Cross-border points
 
-Use the cross-border Guide for domestic source tests, treaties, foreign-tax credit and CFCs. Under [Tax Code art. 127](https://e-qanun.az/frameworks/46/f_46948.html), foreign income/profit tax paid on foreign-source income is creditable only up to the Azerbaijan tax on that income. Foreign income must still be identified and reported where required by art. 149.1.4. Do not treat a transfer from abroad as proof of either income or exemption. For non-resident employment, art. 102.1.2 requires a non-resident employer payment with no Azerbaijan PE payment or connection; check the exact facts and applicable treaty.
+Use the cross-border skill for domestic source tests, treaties, foreign-tax credit and CFCs. Under [Tax Code art. 127](https://e-qanun.az/frameworks/46/f_46948.html), foreign income/profit tax paid on foreign-source income is creditable only up to the Azerbaijan tax on that income. Foreign income must still be identified and reported where required by art. 149.1.4. Do not treat a transfer from abroad as proof of either income or exemption. For non-resident employment, art. 102.1.2 requires a non-resident employer payment with no Azerbaijan PE payment or connection; check the exact facts and applicable treaty.
 
 ## Two worked examples that recompute
 
@@ -129,10 +130,10 @@ expected:
 
 | Source and provisions read | Official URL | Read on |
 |---|---|---|
-| Tax Code, arts. 13, 33, 57–59, 95–102, 108–130, 149–152, 218–221 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-24 |
-| Cabinet Decision 556, size table and notes | https://e-qanun.az/framework/41048 | 2026-10-24 |
+| Tax Code, arts. 13, 33, 57–59, 95–102, 108–130, 149–152, 218–221 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-31 |
+| Cabinet Decision 556, size table and notes | https://e-qanun.az/framework/41048 | 2026-10-31 |
 
-Not yet confirmed: Complete geographic land/building disposal calculation and fixed-receipt individual trades; specialized bank-deposit exemptions beyond the monthly allowance. These are not calculated here.
+Not yet confirmed: a three-month extension of the annual return deadline (cited by the old version of this skill from a secondary source; not found in art. 149); complete geographic land/building disposal calculation and fixed-receipt individual trades; specialized bank-deposit exemptions beyond the monthly allowance. These are not calculated here.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,10 +1,10 @@
 ---
 name: azerbaijan-social-contributions
-description: 'Use this Guide for 2026 Azerbaijan compulsory social, medical and unemployment contribution working papers. It covers employee and employer schedules, private non-oil employer classification, the social band above AZN 8000, the medical band at AZN 2500, ordinary entrepreneur floors and ceilings, civil-contract providers, professional and fixed social categories, payment dates and quarterly reporting. Trigger on Azerbaijan social contributions, DSMF, SSPF, medical insurance, unemployment insurance, entrepreneur social tax and payroll deductions. Use the payroll Guide for income tax and net pay. Technology-park elections and foreign-worker exclusions require eligibility evidence. Subsidy claims and informal-worker medical assessments are outside implemented scope. This is a source-cited draft.'
+description: 'Use this skill for 2026 Azerbaijan compulsory social, medical and unemployment contribution working papers. It covers employee and employer schedules, private non-oil employer classification, the social band above AZN 8000, the medical band at AZN 2500, ordinary entrepreneur floors and ceilings, civil-contract providers, professional and fixed social categories, payment dates and quarterly reporting. Trigger on Azerbaijan social contributions, DSMF, SSPF, medical insurance, unemployment insurance, entrepreneur social tax and payroll deductions. Use the payroll skill for income tax and net pay. Technology-park elections and foreign-worker exclusions require eligibility evidence. Subsidy claims and informal-worker medical assessments are outside implemented scope. Checked against the law (tier 2); no accountant has signed it off.'
 version: 0.2
 jurisdiction: AZ
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -16,11 +16,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Azerbaijan Social, Medical and Unemployment Contributions v0.2
 
-> **Source-cited draft.** Tax year 2026, read on 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No professional attestation is claimed.
+> **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 
 ## Who this applies to
 
-Employers, employees, entrepreneurs and the non-employment categories expressly covered by the Social Insurance, Unemployment Insurance and Medical Insurance laws. These are separate charges with different bases. Income-tax residence or an income-tax exemption does not establish exemption from contributions. This Guide calculates ordinary payroll, ordinary entrepreneurs, civil-contract service providers and statutory professional categories. Pension/benefit entitlement is outside scope.
+Employers, employees, entrepreneurs and the non-employment categories expressly covered by the Social Insurance, Unemployment Insurance and Medical Insurance laws. These are separate charges with different bases. Income-tax residence or an income-tax exemption does not establish exemption from contributions. This skill calculates ordinary payroll, ordinary entrepreneurs, civil-contract service providers and statutory professional categories. Pension/benefit entitlement is outside scope.
 
 Classify the employer under [Cabinet Decision 56, paragraphs 2.1–2.2](https://www.taxes.gov.az/az/post/321), not the employee's job title. SOCAR group and specified PSA/pipeline contractors/operators are oil/gas employers. An existing subcontractor crosses the criterion if prior-year receipts from the specified parties exceed 50% of total receipts; the new-subcontractor cumulative test can remove preferential status from the following month for the rest of the year. The non-state definition excludes public entities, budget-funded bodies and entities at least 51% directly or indirectly state-owned. Retain customer, turnover and ownership evidence.
 
@@ -77,7 +77,7 @@ Do not transfer the additional-insurance-charge rule for informal workers in Med
 
 Social Law art. 12 includes foreigners/stateless persons receiving Azerbaijan-source remuneration, with specified PSA and technology-park exclusions. The technology-park foreign-worker exclusion runs from 1 January 2023 for ten years and requires the exact activity/employer/contractor chain in art. 12. Income-tax treaty relief does not by itself remove social, unemployment or medical charges. Medical Law art. 15-2 defines covered persons and exceptions for foreign nationals; test the employment/registered/civil-contract category rather than presuming all foreigners exempt. Obtain the employment facts and any applicable social-security agreement before departing from domestic contributions.
 
-Social Law art. 14-1 subsidises eligible paid contributions for specified liberated-territory and Nakhchivan activities. A subsidy is a subsequent reimbursement under the statutory process, not permission to omit payroll assessment or payment. Subsidy eligibility and claim calculations are outside this ordinary contribution computation.
+Social Law art. 14-1 subsidises eligible paid contributions for specified liberated-territory and Nakhchivan activities. For non-state employers resident in the liberated territories (art. 14-1.1, with the listed sector exclusions), the state reimburses this share of the employer social insurance paid under arts. 14.3–14.4: 100% to 31 December 2025, 80% from 1 January 2026 to 31 December 2028, 60% in 2029–2030 and 40% in 2031–2032; entrepreneurs' own art. 14.5.1 and fixed art. 14.5.1-1 contributions there are reimbursed in full. For qualifying non-state Nakhchivan producers (excluding oil and gas), the employer share is 100% in 2026–2028, 80% in 2029–2031, 60% in 2032–2033 and 40% in 2034–2035 (art. 14-1.1-1). This is not a general private-sector subsidy: the old version of this skill applied the liberated-territory schedule to every private employer, which the law does not support. A subsidy is a subsequent reimbursement under the statutory process, not permission to omit payroll assessment or payment. Claim calculations are outside this ordinary contribution computation.
 
 ## Two worked examples that recompute
 
@@ -135,14 +135,14 @@ expected:
 
 | Source and provisions read | Official URL | Read on |
 |---|---|---|
-| Social Insurance Law, arts. 9-1–15 | https://frameworks.e-qanun.az/3/f_3813.html | 2026-10-24 |
-| Medical Insurance Law, arts. 15-2, 15-10–15-11, 15-24 | https://frameworks.e-qanun.az/0/f_80.html | 2026-10-24 |
-| Unemployment Insurance Law, arts. 3, 6–10 | https://frameworks.e-qanun.az/36/f_36310.html | 2026-10-24 |
-| Tax Code, arts. 57–59 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-24 |
-| Cabinet Decision 56, employer-sector criteria | https://www.taxes.gov.az/az/post/321 | 2026-10-24 |
-| Ministry, 2026 social indicators | https://sosial.gov.az/az/faydali/sosial-odenisler | 2026-10-24 |
+| Social Insurance Law, arts. 9-1–15 | https://frameworks.e-qanun.az/3/f_3813.html | 2026-10-31 |
+| Medical Insurance Law, arts. 15-2, 15-10–15-11, 15-24 | https://frameworks.e-qanun.az/0/f_80.html | 2026-10-31 |
+| Unemployment Insurance Law, arts. 3, 6–10 | https://frameworks.e-qanun.az/36/f_36310.html | 2026-10-31 |
+| Tax Code, arts. 57–59 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-31 |
+| Cabinet Decision 56, employer-sector criteria | https://www.taxes.gov.az/az/post/321 | 2026-10-31 |
+| Ministry, 2026 social indicators | https://sosial.gov.az/az/faydali/sosial-odenisler | 2026-10-31 |
 
-Not yet confirmed: Informal-worker medical-category commencement and implementing amount; territorial contribution-subsidy claims. These are excluded from computations, not assumed zero.
+Not yet confirmed: Informal-worker medical-category commencement and implementing amount; the claim procedure for territorial contribution subsidies (art. 14-1.2 leaves it to an implementing body); a social-insurance exemption for foreign diplomatic staff (stated by the old version of this skill from a secondary source; Social Law art. 12 names only the PSA and technology-park exclusions). These are excluded from computations, not assumed zero.
 
 <!-- openaccountants-cta-block -->
 

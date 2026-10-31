@@ -1,9 +1,9 @@
 ---
 name: az-tax-overview
-description: 'Use this overview to route 2026 Azerbaijan tax questions to the dedicated individual income, corporate profit, VAT, payroll, social-contribution, transfer-pricing and cross-border Guides. It identifies ordinary starting rates, taxpayer types, reporting cycles and the need to separate tax bases and registrations. Trigger on Azerbaijan tax overview, tax system, company tax, entrepreneur tax, salary taxes, VAT, foreign payments and which Azerbaijan Guide applies. It does not replace the detailed computation or cover all special schemes. Read the pack README and relevant Guide for explicit missing calculations. This is a source-cited draft with no named professional attestation.'
+description: 'Use this overview to route 2026 Azerbaijan tax questions to the dedicated individual income, corporate profit, VAT, payroll, social-contribution, transfer-pricing and cross-border skills. It identifies ordinary starting rates, taxpayer types, reporting cycles and the need to separate tax bases and registrations. Trigger on Azerbaijan tax overview, tax system, company tax, entrepreneur tax, salary taxes, VAT, foreign payments and which Azerbaijan skill applies. It does not replace the detailed computation or cover all special schemes. Read the pack README and relevant skill for explicit missing calculations. Checked against the law (tier 2); no accountant has signed it off.'
 jurisdiction: AZ
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -14,11 +14,11 @@ category: international
 
 # Azerbaijan Tax Overview v0.1
 
-> **Source-cited draft.** Tax year 2026, read on 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No professional attestation is claimed.
+> **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 
 ## Who this applies to
 
-A routing overview for 2026 Azerbaijan tax working papers. Use it to select the detailed Guide, not to finish a return. The State Tax Service administers the Tax Code; separate statutes govern social, medical and unemployment insurance. Individuals, enterprises and non-resident PEs require different residence, source and computation tests under Tax Code arts. 13, 19, 95–105. The pack README declares the incomplete groups and calculations.
+A routing overview for 2026 Azerbaijan tax working papers. Use it to select the detailed skill, not to finish a return. The State Tax Service administers the Tax Code; separate statutes govern social, medical and unemployment insurance. Individuals, enterprises and non-resident PEs require different residence, source and computation tests under Tax Code arts. 13, 19, 95–105. The pack README declares the incomplete groups and calculations.
 
 ## Rates, bands and thresholds
 
@@ -37,11 +37,11 @@ A routing overview for 2026 Azerbaijan tax working papers. Use it to select the 
 
 Use azerbaijan-income-tax for individuals, including business profit, passive income and ordinary simplified tax. Use az-corporate-income-tax for enterprises and PE profit. Use azerbaijan-payroll for employment PIT/net pay and azerbaijan-social-contributions for distinct employee/employer and self-employed insurance bases. Use azerbaijan-vat for domestic supplies, imports, exports, input credit and reverse charge. Use azerbaijan-transfer-pricing for controlled transactions and azerbaijan-cross-border for source, residence, PE, treaties, foreign-tax credit and CFC screening.
 
-The 2025 private non-oil salary holiday is not the 2026 schedule. The 2026 medical and employer-social bands also differ from the old payroll prose. Low turnover does not by itself establish simplified-tax eligibility; art. 218 contains exclusions and tests. A tax exemption does not by itself exempt social/medical payments or VAT. The detailed Guides provide the computational conditions and dates. No accounting-pack formation/optimisation claim overrides the reverified tax Guides; those two files remain a separate milestone with recorded conflicts.
+The 2025 private non-oil salary holiday is not the 2026 schedule. The 2026 medical and employer-social bands also differ from the old payroll prose. Low turnover does not by itself establish simplified-tax eligibility; art. 218 contains exclusions and tests. A tax exemption does not by itself exempt social/medical payments or VAT. The detailed skills provide the computational conditions and dates. No accounting-pack formation/optimisation claim overrides the reverified tax skills; those two files remain a separate milestone with recorded conflicts.
 
 ## Deadlines and filing
 
-Ordinary annual income/profit returns and settlement are due by 31 March following the tax year (arts. 149.2, 152.1). Advances are due within 15 days after each quarter under art. 151. VAT returns/payments are monthly by the following month's 20th under arts. 177–178. Payroll PIT is monthly by the next month's 20th, but the unified wage report is quarterly by the following month's 20th under art. 150.3. Contributions have their own monthly payment dates, generally the following month's 15th under the insurance statutes. Non-wage withholding has different quarterly dates; use the cross-border Guide. File through the State Tax Service's electronic services and check event-triggered returns/registration in the detailed Guide.
+Ordinary annual income/profit returns and settlement are due by 31 March following the tax year (arts. 149.2, 152.1). Advances are due within 15 days after each quarter under art. 151. VAT returns/payments are monthly by the following month's 20th under arts. 177–178. Payroll PIT is monthly by the next month's 20th, but the unified wage report is quarterly by the following month's 20th under art. 150.3. Contributions have their own monthly payment dates, generally the following month's 15th under the insurance statutes. Non-wage withholding has different quarterly dates; use the cross-border skill. File through the State Tax Service's electronic services and check event-triggered returns/registration in the detailed skill.
 
 ## Penalties and interest
 
@@ -49,13 +49,13 @@ Under [Tax Code art. 57.1](https://e-qanun.az/frameworks/46/f_46948.html), failu
 
 ## Cross-border points
 
-Residents and non-residents do not share the same income scope. Check residence, domestic source, PE and the actual treaty before calculating a tax. VAT reverse charge and contribution coverage are separate. The cross-border Guide expressly leaves certain CFC, preferential-jurisdiction and exit-asset calculations incomplete; no general tax-free relocation conclusion is supported.
+Residents and non-residents do not share the same income scope. Check residence, domestic source, PE and the actual treaty before calculating a tax. VAT reverse charge and contribution coverage are separate. The cross-border skill expressly leaves certain CFC, preferential-jurisdiction and exit-asset calculations incomplete; no general tax-free relocation conclusion is supported.
 
 ## Two worked examples that recompute
 
 ### Route to ordinary company profit tax
 
-Assume an ordinary enterprise with 300,000 taxable revenue and 200,000 fully deductible costs, no relief, depreciation, losses or credits. Tax is (300,000−200,000) × 20% = 20,000. Continue in the corporate Guide for the complete reconciliation (arts. 104, 105).
+Assume an ordinary enterprise with 300,000 taxable revenue and 200,000 fully deductible costs, no relief, depreciation, losses or credits. Tax is (300,000−200,000) × 20% = 20,000. Continue in the corporate skill for the complete reconciliation (arts. 104, 105).
 
 ```oa-check
 name: AZ overview ordinary company 2026
@@ -72,7 +72,7 @@ expected:
 
 ### Route a VAT-inclusive receipt
 
-An ordinary fully standard-rated receipt of 1,180 includes VAT. VAT-exclusive value is 1,000 and VAT is 180. Continue in the VAT Guide for tax point, input credit and return treatment; do not multiply the inclusive price directly by 18% (arts. 161, 173).
+An ordinary fully standard-rated receipt of 1,180 includes VAT. VAT-exclusive value is 1,000 and VAT is 180. Continue in the VAT skill for tax point, input credit and return treatment; do not multiply the inclusive price directly by 18% (arts. 161, 173).
 
 ```oa-check
 name: AZ overview VAT-inclusive receipt 2026
@@ -92,16 +92,16 @@ expected:
 - What year/event dates, residence and source facts apply?
 - What activities, customer mix, gross amounts, costs and registration/election documents exist?
 - Are there employees, foreign counterparties, related parties or ownership changes?
-- Which detailed Guide applies, and does its stated gap block this calculation?
+- Which detailed skill applies, and does its stated gap block this calculation?
 
 ## Sources
 
 | Source and provisions read | Official URL | Read on |
 |---|---|---|
-| Tax Code, arts. 13–19, 57–59, 95–105, 125, 149–152, 161, 173, 177–178, 218–220 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-24 |
-| Social Insurance Law, art. 14.6 | https://frameworks.e-qanun.az/3/f_3813.html | 2026-10-24 |
-| Medical Insurance Law, art. 15-11 | https://frameworks.e-qanun.az/0/f_80.html | 2026-10-24 |
-| Unemployment Insurance Law, art. 10.3 | https://frameworks.e-qanun.az/36/f_36310.html | 2026-10-24 |
+| Tax Code, arts. 13–19, 57–59, 95–105, 125, 149–152, 161, 173, 177–178, 218–220 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-31 |
+| Social Insurance Law, art. 14.6 | https://frameworks.e-qanun.az/3/f_3813.html | 2026-10-31 |
+| Medical Insurance Law, art. 15-11 | https://frameworks.e-qanun.az/0/f_80.html | 2026-10-31 |
+| Unemployment Insurance Law, art. 10.3 | https://frameworks.e-qanun.az/36/f_36310.html | 2026-10-31 |
 
 Not yet confirmed: See the domain-specific Not yet confirmed lines and pack partial flags; this overview does not close those gaps.
 

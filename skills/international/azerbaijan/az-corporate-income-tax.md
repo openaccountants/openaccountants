@@ -1,9 +1,9 @@
 ---
 name: az-corporate-income-tax
-description: 'Use this Guide for 2026 Azerbaijan corporate profit tax working papers for resident enterprises, permanent establishments and commercial income of non-profit organisations. It covers residence, ordinary taxable profit, documented business deductions, depreciation and repairs, losses, micro relief, the general simplified turnover alternative, catering turnover taxation, advances and annual settlement. Trigger on Azerbaijan corporate income tax, profit tax, company losses, tax depreciation, micro company, quarterly advances, simplified tax and PE remittance. Cross-border, CFC and treaty matters also require the dedicated cross-border Guide. Sector, territorial and investment incentives require separate eligibility analysis. This is a source-cited draft awaiting professional review.'
+description: 'Use this skill for 2026 Azerbaijan corporate profit tax working papers for resident enterprises, permanent establishments and commercial income of non-profit organisations. It covers residence, ordinary taxable profit, documented business deductions, depreciation and repairs, losses, micro relief, the general simplified turnover alternative, catering turnover taxation, advances and annual settlement. Trigger on Azerbaijan corporate income tax, profit tax, company losses, tax depreciation, micro company, quarterly advances, simplified tax and PE remittance. Cross-border, CFC and treaty matters also require the dedicated cross-border skill. Sector, territorial and investment incentives require separate eligibility analysis. Checked against the law (tier 2); no accountant has signed it off.'
 jurisdiction: AZ
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -14,13 +14,13 @@ category: international
 
 # Azerbaijan Corporate Income Tax v0.1
 
-> **Source-cited draft.** Tax year 2026, read on 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No professional attestation is claimed.
+> **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 
 ## Who this applies to
 
 Resident enterprises, non-resident enterprises with Azerbaijan permanent establishments (PEs), and non-commercial organisations earning business income under [Tax Code art. 103–104](https://e-qanun.az/frameworks/46/f_46948.html). A legal person established under Azerbaijan law or with its place of management in Azerbaijan is resident. Management means the place where necessary commercial decisions and daily practical management occur, not merely the registered location of its supervisory body ([Tax Code art. 13.2.5.3](https://e-qanun.az/frameworks/46/f_46948.html)). Residents include foreign-source income; PE taxation uses attributable Azerbaijan-source profit.
 
-First check whether the activity falls within a statutory PSA/pipeline or special economic-zone regime, a specific exemption or the simplified-tax alternative. This Guide implements ordinary corporate profit tax and the general small-business alternative. Investment, park, sector and territorial incentives require their own eligibility documents. Tax residence, withholding and CFC calculations also require the cross-border Guide.
+First check whether the activity falls within a statutory PSA/pipeline or special economic-zone regime, a specific exemption or the simplified-tax alternative. This skill implements ordinary corporate profit tax and the general small-business alternative. Investment, park, sector and territorial incentives require their own eligibility documents. Tax residence, withholding and CFC calculations also require the cross-border skill.
 
 ## Rates, bands and thresholds
 
@@ -77,7 +77,7 @@ Under [Tax Code art. 57.1](https://e-qanun.az/frameworks/46/f_46948.html), failu
 
 ## Cross-border points
 
-PE net profits remitted to the non-resident attract 5% in addition to profit tax (art. 126). Classify non-PE source payments under arts. 122–125; ordinary service withholding is not a replacement for PE profit tax where a PE exists. Screen controlled transactions under art. 14-1 and CFCs under art. 14-2. Treaty relief requires the relevant treaty and administrative procedure; a foreign invoice or shareholder address proves neither. The cross-border Guide covers these steps, including foreign-tax credit and the facts needed for cessation/departure.
+PE net profits remitted to the non-resident attract 5% in addition to profit tax (art. 126). Classify non-PE source payments under arts. 122–125; ordinary service withholding is not a replacement for PE profit tax where a PE exists. Screen controlled transactions under art. 14-1 and CFCs under art. 14-2. Treaty relief requires the relevant treaty and administrative procedure; a foreign invoice or shareholder address proves neither. The cross-border skill covers these steps, including foreign-tax credit and the facts needed for cessation/departure.
 
 ## Two worked examples that recompute
 
@@ -135,10 +135,10 @@ expected:
 
 | Source and provisions read | Official URL | Read on |
 |---|---|---|
-| Tax Code, arts. 13, 33–34, 57–59, 103–130, 149–152, 218–221 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-24 |
-| Cabinet Decision 492, paras. 1.2–4.4, expense limits and conditions | https://nk.gov.az/uploads/doc/docs/674d98557ed68.pdf | 2026-10-24 |
-| Cabinet Decision 14, domestic norms, foreign country/city Appendix 1 and 2026 amendments | https://frameworks.e-qanun.az/13/f_13154.html | 2026-10-24 |
-| Cabinet Decision 556, size criteria | https://e-qanun.az/framework/41048 | 2026-10-24 |
+| Tax Code, arts. 13, 33–34, 57–59, 103–130, 149–152, 218–221 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-31 |
+| Cabinet Decision 492, paras. 1.2–4.4, expense limits and conditions | https://nk.gov.az/uploads/doc/docs/674d98557ed68.pdf | 2026-10-31 |
+| Cabinet Decision 14, domestic norms, foreign country/city Appendix 1 and 2026 amendments | https://frameworks.e-qanun.az/13/f_13154.html | 2026-10-31 |
+| Cabinet Decision 556, size criteria | https://e-qanun.az/framework/41048 | 2026-10-31 |
 
 Not yet confirmed: None within the stated ordinary-regime scope. Horizontal-monitoring straight-line depreciation and special incentive computations are outside scope; foreign travel uses the actual official country/city row, not a generic rate.
 

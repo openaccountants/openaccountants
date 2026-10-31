@@ -1,21 +1,22 @@
 ---
 name: azerbaijan-cross-border
-description: 'Use this Guide for 2026 Azerbaijan cross-border income and corporate tax working papers. It covers residence, domestic source and permanent-establishment tests, ordinary non-resident withholding, PE profit remittances, net-fee gross-up, foreign-tax credit, treaty administration, departure reporting and CFC screening. Trigger on Azerbaijan non-resident tax, withholding, treaty, tax residence, PE, foreign income, remittance tax, DTA forms, CFC and leaving Azerbaijan. The complete CFC inclusion, preferential-jurisdiction payment interactions and migration asset computations remain incomplete. VAT and contributions require their dedicated Guides. This is a source-cited draft awaiting a qualified professional review, without professional attestation.'
+description: 'Use this skill for 2026 Azerbaijan cross-border income and corporate tax working papers. It covers residence, domestic source and permanent-establishment tests, ordinary non-resident withholding, PE profit remittances, net-fee gross-up, foreign-tax credit, treaty administration, departure reporting and CFC screening. Trigger on Azerbaijan non-resident tax, withholding, treaty, tax residence, PE, foreign income, remittance tax, DTA forms, CFC and leaving Azerbaijan. The complete CFC inclusion, preferential-jurisdiction payment interactions and migration asset computations remain incomplete. VAT and contributions require their dedicated skills. Checked against the law (tier 2); no accountant has signed it off.'
 jurisdiction: AZ
 category: cross-border
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 version: 0.1
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
 
 # Azerbaijan Cross-border Tax, Treaties and Non-residents v0.1
 
-> **Source-cited draft.** Tax year 2026, read on 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No professional attestation is claimed.
+> **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 
 ## Who this applies to
 
-Individuals moving into/out of Azerbaijan, resident enterprises with foreign income or subsidiaries, non-residents earning Azerbaijan-source income, permanent establishments (PEs) and payers withholding tax on cross-border payments. This Guide implements domestic residence/source/PE screening, ordinary non-resident withholding, foreign-tax credit and treaty-administration steps for 2026. It identifies CFC and departure obligations; the full CFC inclusion and departure-asset computation remains incomplete.
+Individuals moving into/out of Azerbaijan, resident enterprises with foreign income or subsidiaries, non-residents earning Azerbaijan-source income, permanent establishments (PEs) and payers withholding tax on cross-border payments. This skill implements domestic residence/source/PE screening, ordinary non-resident withholding, foreign-tax credit and treaty-administration steps for 2026. It identifies CFC and departure obligations; the full CFC inclusion and departure-asset computation remains incomplete.
 
 Under [Tax Code art. 13.2.5](https://e-qanun.az/frameworks/46/f_46948.html), an individual is resident if physically present more than 182 days in the calendar year, or in specified Azerbaijan state service abroad. If presence in neither state exceeds 182 days, apply permanent home, centre of vital interests, habitual abode and citizenship in that order. An entity is resident if established under Azerbaijan law or its place of practical management/commercial decision-making is in Azerbaijan. The actual treaty supplies any relevant dual-residence rule.
 
@@ -47,6 +48,8 @@ For a PE, calculate attributable revenue less allowed expenses under arts. 104.2
 
 For non-PE income, art. 125.1 applies gross withholding without expense deductions at the applicable rate. Remove VAT/excise from the statutory gross base where required by art. 105.2 and classify the payment. Dividends, interest, royalties, insurance, transport and salary have specific rates. Salary follows art. 101 rather than the general service rate. Art. 124's residential rent to an individual has the specific 10% rule; ordinary commercial rent/royalty remains 14%. For a contract promising the non-resident a net amount N with payer-borne tax at rate r, gross taxable consideration is N/(1−r); tax is gross × r. A net-fee promise must be evidenced, not assumed.
 
+From 25 December 2026, Law 413-VIIQD (arts. 2.5, 2.6 and 26) amends two withholding rules. Art. 123.1 drops its carve-out for PEs of individuals carrying on financial leasing, and its 10% rate expressly names loan interest under a financial lease paid to a non-resident without an Azerbaijan PE. Art. 125.5, which relieves payments by civil-aviation companies for aircraft and engines taken from non-residents without a PE, drops the words "or leasing (except financial leasing)" and then covers rent only. Payments up to 24 December 2026 use the current wording.
+
 For art. 125.1.4 transport, distinguish an Azerbaijan/foreign international route from foreign-to-foreign or transit carriage expressly excluded in that paragraph. For art. 125-1, screen the actual official preferential-jurisdiction list under art. 128.3, recipient and payment account, including indirect payments. Do not substitute a commercial tax-haven list or assume treaty relief settles this separate payment charge. The complete payment-list exclusions and interactions remain outside the implemented calculation here.
 
 For foreign-tax credit, compute Azerbaijan tax on the same foreign-source income under its domestic category, identify income/profit tax actually paid abroad, and credit the lower of those amounts under art. 127. Do not credit foreign VAT, social payments or a tax on unrelated income. DTA Rules section 4 governs the DTA-02 application and supporting foreign tax/income evidence. Under paragraph 4.2-2, attach the foreign-credit consent letter to the resident's income/profit-tax return. An excess foreign tax is not a negative Azerbaijan tax.
@@ -73,7 +76,7 @@ The payer remains liable for unwithheld/unremitted tax, interest and sanctions u
 
 ## Cross-border points
 
-Run VAT place-of-supply and reverse charge separately under arts. 168–169, and contribution eligibility separately under the insurance laws. Income-tax treaty relief does not settle either charge. A business move can change management residence, PE, payroll, CFC control and VAT registration at different times. Retain an event-by-event timeline with asset transfers, distributions, staff, premises and management decisions. This Guide cannot substantiate a universal absence of migration/exit tax or implement the full CFC attribution for an arbitrary ownership chain.
+Run VAT place-of-supply and reverse charge separately under arts. 168–169, and contribution eligibility separately under the insurance laws. Income-tax treaty relief does not settle either charge. A business move can change management residence, PE, payroll, CFC control and VAT registration at different times. Retain an event-by-event timeline with asset transfers, distributions, staff, premises and management decisions. This skill cannot substantiate a universal absence of migration/exit tax or implement the full CFC attribution for an arbitrary ownership chain.
 
 ## Two worked examples that recompute
 
@@ -130,8 +133,9 @@ expected:
 
 | Source and provisions read | Official URL | Read on |
 |---|---|---|
-| Tax Code, arts. 2, 13–19, 34, 57–59, 76-1, 95–105, 122–128, 149–152, 159, 166 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-24 |
-| DTA administration Rules, sections 3–8 | https://www.taxes.gov.az/az/page/ikiqat-vergitutmanin-aradan-qaldirilmasi-haqqinda-beynelxalq-muqavilelerin-inzibatciligi-qaydalari | 2026-10-24 |
-| STS official treaty register, effective/application dates and MLI text links | https://taxes.gov.az/az/page/ikiqat-vergitutmanin-aradan-qaldirilmasina-dair-beynelxalq-sazisler | 2026-10-24 |
+| Tax Code, arts. 2, 13–19, 34, 57–59, 76-1, 95–105, 122–128, 149–152, 159, 166 | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-31 |
+| Law 413-VIIQD of 26 May 2026, arts. 2.5, 2.6 and 26 | https://frameworks.e-qanun.az/62/f_62107.html | 2026-10-31 |
+| DTA administration Rules, sections 3–8 | https://www.taxes.gov.az/az/page/ikiqat-vergitutmanin-aradan-qaldirilmasi-haqqinda-beynelxalq-muqavilelerin-inzibatciligi-qaydalari | 2026-10-31 |
+| STS official treaty register, effective/application dates and MLI text links | https://taxes.gov.az/az/page/ikiqat-vergitutmanin-aradan-qaldirilmasina-dair-beynelxalq-sazisler | 2026-10-31 |
 
-Not yet confirmed: Full CFC inclusion/ownership-chain calculation and implementing statement; preferential-jurisdiction payment exclusions/interactions and current official list; migration/exit asset valuation and the 25 December 2026 financial-leasing transition. No zero-tax result is inferred.
+Not yet confirmed: Full CFC inclusion/ownership-chain calculation and implementing statement; preferential-jurisdiction payment exclusions/interactions and current official list; migration/exit asset valuation; which contracts the Law on Financial Lease (412-VIIQ) treats as a financial lease from 25 December 2026. No zero-tax result is inferred.
