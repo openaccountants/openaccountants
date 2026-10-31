@@ -4,6 +4,7 @@ description: Use this skill whenever asked to prepare, review, or classify trans
 jurisdiction: NL
 category: international
 tax_year: 2026
+version: 1.0
 last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
