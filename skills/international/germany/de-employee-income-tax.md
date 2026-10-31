@@ -1,10 +1,10 @@
 ---
 name: de-employee-income-tax
 description: "Use this skill for the annual German income tax return of an employee resident in Germany (Einkommensteuererklärung with Anlage N), tax year 2026, filed in 2027. Covers when an employee must file (§ 46 EStG: tax classes III/V or IV with factor, side income or wage replacement benefits over EUR 410, several employers) and when filing is voluntary (four years), the 2026 tariff, Arbeitnehmer-Pauschbetrag, Werbungskosten (commuting allowance at EUR 0.38 from the first km, home office day allowance, work equipment, training, union dues), Vorsorgeaufwendungen, Kinderfreibetrag against Kindergeld, Ehegattensplitting, single parent relief, household services (§ 35a), extraordinary burdens, solidarity surcharge, church tax, deadlines, late-filing surcharge and interest. Trigger on: Steuererklärung Arbeitnehmer, Anlage N, Werbungskosten, Pendlerpauschale, Homeoffice-Pauschale, Lohnsteuer Erstattung, tax refund Germany employee, Steuerklasse III V Pflichtveranlagung, Splittingtarif. Out of scope: payroll withholding (de-payroll, germany-payroll), self-employed income (de-income-tax), capital income (de-capital-gains), rent (de-rental-income), non-resident individuals (de-non-resident-tax)."
-version: 0.1
+version: 0.4
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-29
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
@@ -47,7 +47,7 @@ Where wage tax was withheld, the tax office assesses only in the listed cases. T
 | One-time payments | Wage tax on a bonus computed without wages from earlier jobs in the year (code S) (no. 5a) |
 | Marriage ended and remarried | In the same year (no. 6) |
 
-In every other case filing is voluntary: an application for assessment, made by filing a return (§ 46(2) no. 8 EStG). The usual reason is a refund.
+If no statutory mandatory-assessment case applies under § 46(2) EStG, filing is voluntary: an application for assessment, made by filing a return (§ 46(2) no. 8 EStG). The usual reason is a refund.
 
 ## Rates, bands and thresholds
 
@@ -113,7 +113,7 @@ Work down this ladder. Each spouse computes their own employment income; the res
 9. **Plus solidarity surcharge and church tax.**
 10. **Less wage tax, surcharge and church tax withheld** (certificate lines 4 to 7). The difference is the refund or extra payment.
 
-**Losses.** A loss from another income type (for example rental) reduces employment income in the same year. A remaining loss can be carried back one year or forward without time limit under § 10d EStG; that mechanism is not set out here.
+**Losses.** A loss from another income type (for example rental) reduces employment income in the same year. A remaining loss can be carried back, subject to the statutory cap, first to the immediately preceding year and any remainder to the second preceding year or forward without time limit under § 10d EStG; that mechanism is not set out here.
 
 ## Deadlines and filing
 
@@ -135,9 +135,9 @@ Work down this ladder. Each spouse computes their own employment income; the res
 ## Cross-border points
 
 - **Foreign pay of a resident.** Pay exempt in Germany under a tax treaty is still declared (Anlage N-AUS) and raises the rate on the rest (§ 32b EStG). Foreign tax credits under § 34c EStG are not covered here.
-- **Moving in or out in 2026.** Months of limited liability and German-exempt foreign income are handled under § 2(7) and § 32b EStG; the pack has no method yet. For shares and departure rules see leaving-germany-exit-tax.
+- **Moving in or out in 2026.** Use `de-partners-and-part-year` for the residence-period base, German-source income of the other period and progression computation under § 2(7) and § 32b EStG, within that Guide's stated conditions and source limits. For shares and departure rules see leaving-germany-exit-tax.
 - **Spouse living abroad.** An EU/EEA national may get joint assessment with a spouse resident in the EU/EEA under § 1a EStG; filing is then mandatory (§ 46(2) no. 7 EStG). Not covered further.
-- **Non-residents with German pay** (§ 1(3) election, § 46(2) no. 9 EStG): use de-non-resident-tax. Swiss cross-border commuters: refuse here. The commuter case belongs in germany-to-switzerland-cross-border-tax, which does not yet have its commuter part.
+- **Non-residents with German pay** (§ 1(3) election, § 46(2) no. 9 EStG): use de-non-resident-tax. For Swiss cross-border commuters, use `germany-to-switzerland-cross-border-tax`: its commuter-status tests and German assessment method are supplied, with the stated home-office, working-day denominator, implementing-text and currency-conversion reservations.
 
 ## Worked examples
 
@@ -187,7 +187,7 @@ expected:
 
 ### Example 2: married couple, classes III and V, one child, splitting
 
-Jonas earns EUR 72,000 (class III, 15 km on 200 days, so commuting is EUR 1,140 and the EUR 1,230 lump sum is higher). Mia earns EUR 18,000 (class V) and pays EUR 200 union dues; she has no other job costs. One child, Kindergeld EUR 3,108 for the year. Both in statutory health insurance at a 2.9% additional rate, both work outside Saxony (so care is 1.8% each), no church. Because one spouse was in class V, they must file (§ 46(2) no. 3a EStG). Wage tax withheld on both certificates together: EUR 9,414 (invented case; worked out with the § 39b(2) EStG formula for these facts: class III EUR 7,564, class V EUR 1,850 at the 14% minimum; a payroll run can differ by a few euros).
+Jonas earns EUR 72,000 (class III, 15 km on 200 days, so commuting is EUR 1,140 and the EUR 1,230 lump sum is higher). Mia earns EUR 18,000 (class V) and pays EUR 200 union dues; she has no other job costs. One child, Kindergeld EUR 3,108 for the year. Both in statutory health insurance at a 2.9% additional rate, both work outside Saxony (so care is 1.8% each), no church. Because one spouse was in class V, they must file (§ 46(2) no. 3a EStG). Wage tax withheld on both certificates together: EUR 9,414 (stipulated fictional certificate amounts: EUR 7,564 for Jonas and EUR 1,850 for Mia). These are inputs to the annual reconciliation, not a claim that the stated 2026 PAP assumptions generate those withholding amounts.
 
 - Jonas: 72,000 − 1,230 = EUR 70,770. Mia: 18,000 − 1,230 − 200 = EUR 16,570 (union dues on top of the lump sum, new for 2026). Total EUR 87,340.
 - Pension, employee shares: 6,696 + 1,674 = EUR 8,370.
