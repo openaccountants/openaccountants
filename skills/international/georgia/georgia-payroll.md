@@ -56,6 +56,12 @@ An employer in Georgia withholds 20% income tax from each salary payment and pay
 
 The Law sets no ceiling on the employee's or employer's 2% (art. 3(6)(a)-(b)). Only the state contribution stops at GEL 60,000.
 
+**Employee outside the scheme.** For an employee who was 60 (men) or 55 (women) before the Law came into force and has not joined voluntarily (Law on Funded Pension art. 3(2)-(3)), or who left under the age-40 opt-out (art. 22), drop steps 2, 5 and 6: income tax is 20% of gross and net pay is 80% of gross. The employer pays no pension contribution.
+
+**Net to gross.** Where only a net figure is agreed, gross = net / 0.784 for an employee in the scheme and net / 0.80 for one outside it. Both follow from the order above.
+
+**No other payroll tax.** The national taxes are income tax, profit tax, VAT, excise and import duty, and the only local tax is property tax (Tax Code art. 6(5)-(6)). None is charged on the payroll, so the employer's statutory cost on top of gross pay is the 2% pension contribution alone. The company car tax in art. 101(2^1) is income tax on the employee's benefit, which the employer pays as tax agent (art. 101(2^2)).
+
 **Not salary.** Business travel reimbursed within Ministry of Finance limits, reimbursed entertainment expenses, employer transport to work where public transport cannot reasonably be used, employer and state pension contributions, compulsory insurance premiums paid by the employer, and accommodation or food that the job requires and that is not part of the agreed pay (art. 101(3)).
 
 **Company car.** An employee's personal use of the employer's car is taxed as a fixed amount of tax a year by engine size (table above). The reporting period is the calendar year and the employer pays it by the 15th of the month after the reporting month (art. 101(2^1)-(2^2)). Personal use of an electric car is not taxed (art. 101(2^3)).
@@ -168,17 +174,18 @@ expected:
 ## Ask the client first
 
 1. Is this the country of Georgia (GEL), not the US state?
-2. For each person: employee or a contractor for services? Is the contractor a registered individual entrepreneur, VAT-registered, or on micro, small or fixed tax status?
-3. Monthly gross pay, and any benefits: car, accommodation, insurance, loans, reimbursed expenses?
-4. Is each employee a Georgian citizen or a holder of a permanent residence permit? Date of birth (60/55 and 40+ rules), and has anyone opted out?
-5. Is the employer a small business, a farm, a Free Industrial Zone enterprise, or a non-resident without a permanent establishment?
-6. Has every employee been entered in the Register of Hired Employees?
+2. On what date is salary paid each month? Income tax is due on the pay day (Tax Code art. 154(3)(a)).
+3. For each person: employee or a contractor for services? Is the contractor a registered individual entrepreneur, VAT-registered, or on micro, small or fixed tax status?
+4. Monthly gross pay (or only the agreed net), and any benefits: car, accommodation, insurance, loans, reimbursed expenses?
+5. Is each employee a Georgian citizen or a holder of a permanent residence permit? Date of birth (60/55 and 40+ rules), and has anyone opted out?
+6. Is the employer a small business, a farm, a Free Industrial Zone enterprise, or a non-resident without a permanent establishment?
+7. Has every employee been entered in the Register of Hired Employees?
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Tax Code of Georgia, English, consolidated publication 247 (to the law of 15 October 2026): arts. 81, 82, 94, 101, 134, 153, 154, 272, 274, 275, 288^4, 288^5 | https://matsne.gov.ge/en/document/view/1043717?publication=247 | 2026-10-31 |
+| Tax Code of Georgia, English, consolidated publication 247 (to the law of 15 October 2026): arts. 6, 81, 82, 94, 101, 134, 153, 154, 272, 274, 275, 288^4, 288^5 | https://matsne.gov.ge/en/document/view/1043717?publication=247 | 2026-10-31 |
 | Tax Code of Georgia, Georgian text, publication 247 (cross-check of arts. 81, 82, 94, 153, 272, 274) | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
 | Law of Georgia on Funded Pension No 3303, Georgian, consolidated to the law of 16 September 2026: arts. 1, 2, 3, 21, 22, 23, 34^1, 37^2-37^4, 39 | https://matsne.gov.ge/ka/document/view/4280127?publication=13 | 2026-10-31 |
 | Law of Georgia on Funded Pension, English, consolidated to 26 June 2025 (translation of the same articles) | https://matsne.gov.ge/en/document/view/4280127?publication=12 | 2026-10-31 |
