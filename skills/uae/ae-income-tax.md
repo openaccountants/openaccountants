@@ -1,9 +1,10 @@
 ---
 name: ae-income-tax
-description: "Source-cited draft: personal income tax for United Arab Emirates (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Source-cited draft: personal income tax for United Arab Emirates (tax year 2026): rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+version: 1.1
 jurisdiction: AE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -23,7 +24,7 @@ This skill answers three questions about individuals (natural persons) for tax y
 
 It is written for anyone answering an individual's question: an employee, a freelancer or sole establishment owner, a property investor, a newcomer or leaver, or a non-resident with UAE income.
 
-**Companion Skills.** Company Corporate Tax (free zones, deductions, losses, transfer pricing, top-up tax) is in the **ae-corporate-tax** skill. VAT registration and VAT on supplies are in the **uae-vat** skill, and VAT return preparation is in the **ae-vat-return** skill. This skill only points to those rules. It does not repeat them.
+**Companion Skills.** Company Corporate Tax (free zones, deductions, losses, transfer pricing, top-up tax) is in the **ae-corporate-tax** skill. VAT registration, VAT on supplies and VAT return preparation are in the **uae-vat** skill. This skill only points to those rules. It does not repeat them.
 
 **Not covered:** Emirate-level fees and charges, customs duty, excise tax, social security and pension contributions, and the tax a person may still owe to another country (for example, because of citizenship or because they have not broken residence there). For those, refer.
 
@@ -171,6 +172,37 @@ Amounts below are illustrations, not official figures, unless the case says it f
 
 **Case 6: long-stay tourist (follows FTA Example 14).** Sulaiman, a non-GCC national, spends 100 days of 2024 in the UAE on tourist visas, in hotels, with no job or business there. He is not resident: he has no Residence Permit, no permanent home and no employment or business, and he is under 183 days.
 
+```oa-check
+name: Freelance consultant, Case 2 (2026)
+inputs:
+  taxable_income: 900000
+  band: 375000
+  rate: 0.09
+steps:
+  - tax: (taxable_income - band) * rate
+expected:
+  tax: 47250.00
+```
+
+```oa-check
+name: Wage plus two businesses, Case 3
+inputs:
+  design: 1600000
+  phones: 1200000
+  overseas: 800000
+  expenses: 1800000
+  band: 375000
+  rate: 0.09
+steps:
+  - turnover: design + phones + overseas
+  - taxable_income: turnover - expenses
+  - tax: (taxable_income - band) * rate
+expected:
+  turnover: 3600000.00
+  taxable_income: 1800000.00
+  tax: 128250.00
+```
+
 ## When to refuse or refer
 
 - **Anyone asking what "income tax rate" applies to their UAE salary:** answer that there is none. Do not invent a rate. If they ask about tax elsewhere (their home country, or a country they work in), refer them to that country's rules or adviser. ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
@@ -222,13 +254,37 @@ Registering for VAT does not register a person for Corporate Tax, and the VAT tu
 - [ ] If residence matters, the right residence test is identified (centre of life, 183 days or 90 days with conditions), days are counted with part-days included, and the certificate type and period are chosen.
 - [ ] Other-country tax exposure is flagged for referral. The UAE answer does not settle it.
 
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Corporate Tax Law, consolidated | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-10-31, opened, spot-checked only: 9% rate on Art. 3 |
+| Cabinet Decision No. 49 of 2023 | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-10-31, opened, spot-checked only: AED 1,000,000 test, Art. 2 |
+| CTGTNP1: Taxation of natural persons | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf | 2026-10-31, link opened, not re-read |
+| Natural Person bulletin | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Natural%20Person-English.pdf | 2026-10-31, link opened, not re-read |
+| Cabinet Decision No. 116 of 2022 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf | 2026-10-31, opened, spot-checked only: AED 375,000 band |
+| CTGRNP1 | https://tax.gov.ae/Datafolder/Files/Guides/CT/CT%20Registration%20of%20Natural%20Persons%20-%2029%2012%202023.pdf | 2026-10-31, opened, spot-checked only: nil return |
+| Ministerial Decision No. 73 of 2023 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf | 2026-10-31, opened, spot-checked only: AED 3,000,000, Art. 2 |
+| Ministerial Decision No. 27 of 2023 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2027%20of%202023%20-%20for%20publishing.pdf | 2026-10-31, link opened, not re-read |
+| FTA Decision No. 3 of 2024, Article 5 | https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf | 2026-10-31, link opened, not re-read |
+| Ministerial Decision No. 131 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf | 2026-10-31, opened, spot-checked only: end date 31 December 2029 |
+| Cabinet Decision No. 85 of 2022 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%2085%20of%202022%20-%20For%20publishing.pdf | 2026-10-31, opened, spot-checked only: 183-day test, Art. 4 |
+| Ministerial Decision No. 84 of 2025 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf | 2026-10-31, opened, spot-checked only: AED 50,000,000 audit test |
+| Tax Resident and TRC Guide, TPGTR1 | https://tax.gov.ae/Datafolder/Files/Guides/VAT/VAT%20Guides/Tax-Resident-and-TRC--18-10-2024.pdf | 2026-10-31, link opened, not re-read |
+| Cabinet Decision No. 65 of 2020 and amendments | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2065%20of%202020%20on%20FTA%20Services%20Fees%20and%20its%20amendments%20-%20for%20publishing%20%2003%2012%202025.docx.pdf | 2026-10-31, opened, spot-checked only: fees AED 50 and 250 |
+| Ministerial Decision No. 247 of 2023 | https://mof.gov.ae/wp-content/uploads/2023/10/Ministerial-Decision-No247-of-2023-on-the-Issuance-of-Tax-Residency-Certificate-for-the-Purposes-of-International-Agreements.pdf | 2026-10-31, link opened, not re-read |
+| CTP006 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf | 2026-10-31, link opened, not re-read |
+| Cabinet Decision No. 75 of 2023 and amendments | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf | 2026-10-31, opened, spot-checked only: AED 10,000 and 20,000 penalties |
+
+Not yet confirmed: every figure not named in the Read on column was not re-read on 2026-10-31, and the date of its earlier reading is not recorded.
+
 <!-- openaccountants-cta-block -->
 
 ---
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network, accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
