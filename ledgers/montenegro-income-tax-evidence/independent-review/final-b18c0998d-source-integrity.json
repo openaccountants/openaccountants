@@ -1,0 +1,229 @@
+{
+  "commit": "b18c0998da08c65eeb459d22d24dbce6f0ef146a",
+  "sources": [
+    {
+      "file": "pit-law-through160-2025.pdf",
+      "sha256": "8707ed33811dc0bb68037602015d255b01f9cf8557d0795c0531095ce25a4dcf",
+      "bytes": 333668,
+      "format": "pdf",
+      "manifest_pass": true
+    },
+    {
+      "file": "pit-law-through160-2025.txt",
+      "sha256": "e9b03d1a36cd6e951d3b03c1260cede52cab0e1f1b8e138343fdcd2dd588c26e",
+      "bytes": 87615,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "pit-amendment160-2025.pdf",
+      "sha256": "8b6e5ebd4fc57c1ce06b0dc11f99711106c712a48b0c4782d47bee84751ea353",
+      "bytes": 144769,
+      "format": "pdf",
+      "manifest_pass": true
+    },
+    {
+      "file": "pit-amendment160-2025.txt",
+      "sha256": "cac1d78ae7c308c48b0a7ba16fd4f5c9c798735dd0e6abdf01fb02e47f0f7e3f",
+      "bytes": 12671,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "pit-amendment70-2026-record.html",
+      "sha256": "ee2a0a1b9a9ba1234396411f5528dd89c278eead50f57ccd2e0993b093092331",
+      "bytes": 264275,
+      "format": "html",
+      "manifest_pass": true
+    },
+    {
+      "file": "pit-amendment70-2026-record.txt",
+      "sha256": "a5b00f80e72b830e10d56416667acbc497110b5ee00348828f98e35708690fa9",
+      "bytes": 2464,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "pit-amendment70-2026.pdf",
+      "sha256": "29d66a55c3de2dc38bb65e653d594938613d06a616d5249f25ce2fddcbf5ea6a",
+      "bytes": 92491,
+      "format": "pdf",
+      "manifest_pass": true
+    },
+    {
+      "file": "pit-amendment70-2026.txt",
+      "sha256": "28f1334a4cae8ca398d43aaa12155e0087796a4b8bc0cf23152276c54dfa3c5e",
+      "bytes": 1985,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "pausal-rule-through118-2024.pdf",
+      "sha256": "ef163bda3745817b5e10802816ae50a351698ada5cfb1e602c08220be2be2a22",
+      "bytes": 60775,
+      "format": "pdf",
+      "manifest_pass": true
+    },
+    {
+      "file": "pausal-rule-through118-2024.txt",
+      "sha256": "30b630761e905453e51238edae757e87cd99bb078513f0bcd8fa9c4c9d9109cf",
+      "bytes": 14571,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "annual-return-amendment103-2025.pdf",
+      "sha256": "819bd44fe67918b4e83f5dbffddf7b243b2bad0fb542ef20cc3594334c477a2a",
+      "bytes": 660899,
+      "format": "pdf",
+      "manifest_pass": true
+    },
+    {
+      "file": "annual-return-amendment103-2025.txt",
+      "sha256": "87f163682aedcf2d9fd4ea4a5612c030f4968c887cb04d62ff4478c436df9e6e",
+      "bytes": 86574,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "annual-return-rule-through103-2025.pdf",
+      "sha256": "0283420a1f9c9e7b7f87b6184487a525c873470a3af4b866840faf4ee6bfc3dc",
+      "bytes": 19888,
+      "format": "pdf",
+      "manifest_pass": true
+    },
+    {
+      "file": "annual-return-rule-through103-2025.txt",
+      "sha256": "766e09ffd5402b55a778c0214c0a3d17a0015a59f931cb42d00a253772f0169d",
+      "bytes": 3341,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "contribution-law-through160-2025.docx",
+      "sha256": "a8ef9ee08c70490169c6bdcce7e984019afa37e4421131a52ab2aba8ef9a4e03",
+      "bytes": 26153,
+      "format": "docx",
+      "manifest_pass": true
+    },
+    {
+      "file": "contribution-law-through160-2025.txt",
+      "sha256": "a07942f0a049028852790a8718f819eb25a0fe5675ebc5847d022f079464fa6b",
+      "bytes": 31243,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "local-financing-law-through149-2025.pdf",
+      "sha256": "3dab54d86310625a1217cdd3149ad9cab42662bc0ec3c986844f78c3d29b70fb",
+      "bytes": 71311,
+      "format": "pdf",
+      "manifest_pass": true
+    },
+    {
+      "file": "local-financing-law-through149-2025.txt",
+      "sha256": "0a64ca377efdab64a6a3f469e961f5e79dd9822cef29e1f2d03ecde60ca08e0d",
+      "bytes": 43158,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "vat-law-through12-2026.pdf",
+      "sha256": "148d12b7b1f3437d1944840c50d9dc413c5c1502101a900c809b806953137a09",
+      "bytes": 411337,
+      "format": "pdf",
+      "manifest_pass": true
+    },
+    {
+      "file": "vat-law-through12-2026.txt",
+      "sha256": "5343b7d4a2c39c8cea98aa89f86d125e6cd7542dbccd28ad422fef4515d22262",
+      "bytes": 134538,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "administration-law-pre104-2026.docx",
+      "sha256": "cec34ce039466010c4bb9efe727282a7065433b123afb6ad443bac49f60b173a",
+      "bytes": 68663,
+      "format": "docx",
+      "manifest_pass": true
+    },
+    {
+      "file": "administration-law-pre104-2026.txt",
+      "sha256": "216edd36b71095943ec532383607267d43738cfdc297868e330438c94572779d",
+      "bytes": 124155,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "administration-amendment104-2026.pdf",
+      "sha256": "321e9ee4fe8d6ad3f036bb274a826eac40500bf6857e337fbe483212f530f136",
+      "bytes": 241669,
+      "format": "pdf",
+      "manifest_pass": true
+    },
+    {
+      "file": "administration-amendment104-2026.txt",
+      "sha256": "d0b2073d78f3cb72f746de9bbbf346b5a2b2660d3d71a6278eafed0a6ddf3d2d",
+      "bytes": 74076,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "interest-decision-20260724.pdf",
+      "sha256": "d21388aca1a63d5bbf901e3bce545ae244ecae187ffdc0269cef7c14000502ac",
+      "bytes": 180894,
+      "format": "pdf",
+      "manifest_pass": true
+    },
+    {
+      "file": "interest-decision-20260724.txt",
+      "sha256": "a1c3646c7d908afa5b88c8958eb3a415b0763bf863b7b9590ccd4ca930f1bd00",
+      "bytes": 1245,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "seasonal-tax-informator-2026.pdf",
+      "sha256": "c1bb28e069e60d00dc34121ed66e563728e3a36585bbaa3381b463731e18e1b0",
+      "bytes": 1118187,
+      "format": "pdf",
+      "manifest_pass": true
+    },
+    {
+      "file": "seasonal-tax-informator-2026.txt",
+      "sha256": "5502cc86c7481dab5b69f2e5aeea0aa46e108c5b13ab2a857d8b397efea49635",
+      "bytes": 34865,
+      "format": "txt",
+      "manifest_pass": true
+    },
+    {
+      "file": "pausal-deadline-notice2026.html",
+      "sha256": "a0f8434cde8255f5095765e038f87c5fd31ddd5f0bd078ecf28be97fdb688bbc",
+      "bytes": 541067,
+      "format": "html",
+      "manifest_pass": true
+    },
+    {
+      "file": "pausal-deadline-notice2026.txt",
+      "sha256": "193230411dfc296b1df91f9a50d3bfe739c3bcbcc0a8a900fc497c5c66365beb",
+      "bytes": 2378,
+      "format": "txt",
+      "manifest_pass": true
+    }
+  ],
+  "all_original_bytes_preserved": true,
+  "renamed_administration_docx_bytes_preserved": true,
+  "both_docx_xml_extracts_match": true,
+  "html_visible_text": [
+    {
+      "file": "pausal-deadline-notice2026",
+      "independent_visible_text_matches": true
+    },
+    {
+      "file": "pit-amendment70-2026-record",
+      "independent_visible_text_matches": true
+    }
+  ],
+  "exact_context_offsets_and_hashes_pass": true
+}

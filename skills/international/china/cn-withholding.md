@@ -2,452 +2,198 @@
 name: cn-withholding
 description: 当用户咨询、计算、审核或申报中国预提所得税（源泉扣缴）相关事项时，必须始终先阅读本技能文档。触发关键词包括："中国预提所得税"、"非居民企业税收"、"10% 股息预提税"、"特许权使用费预提税"、"代扣代缴"、"源泉扣缴"、"中国DTA税收协定"、"非居民企业所得税"、"间接转让"、"698号文"、"7号公告"、"受益所有人"、"协定优惠"、"China WHT"、"China withholding tax"、"non-resident enterprise tax"、"China dividend WHT 10%"、"China DTA tax treaty"、"PRC withholding tax"、"China royalty withholding"、"China interest withholding"、"China indirect transfer"、"SAT Bulletin 9"、"SAT Bulletin 35"。本技能涵盖《中华人民共和国企业所得税法》第三章及第五章项下非居民企业（无机构场所）取得的中国境内来源所得的源泉扣缴（股息 10%、利息 10%、特许权使用费 10%、财产转让 10%、租金 10%），并涵盖《中华人民共和国个人所得税法》第九条项下扣缴义务人对工资薪金、劳务报酬、稿酬、特许权使用费、利息股息红利的代扣代缴义务，以及境外服务进口情形下境内购买方作为增值税扣缴义务人的代扣代缴义务（财税〔2016〕36号文附件1第六条）。同时涵盖税收协定（DTA）适用、受益所有人判定（《国家税务总局公告2018年第9号》）、协定优惠"自行判定、事后管理"程序（《国家税务总局公告2019年第35号》），以及非居民企业间接转让中国境内财产的征税规则（《国家税务总局公告2015年第7号》及国税函〔2009〕698号文）。不适用于：居民企业之间股息免税、合伙企业税收处理、特别纳税调整（转让定价）、CRS信息交换、外汇管制实务（SAFE）。**任何中国预提所得税相关工作动手之前，必须始终阅读本技能。**
 jurisdiction: CN
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-29
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+version: 1.1
+category: international
 ---
 
-# CN Withholding
+# China withholding: payroll, individual fees, non-resident enterprises and imported services
 
-## 中国 — 代扣代缴与预提所得税 — 技能 v1.0
+## Who this applies to
 
-## 一、快速参考
+Mainland China payers withholding individual income tax (IIT), enterprise income tax (EIT) from specified Chinese-source non-resident income, or VAT from an overseas seller. These are three separate liabilities: a treaty EIT exemption does not automatically exempt VAT, and a foreign company is not an individual. Establish the recipient, tax residence, income character, source and connection to a China establishment before selecting a rule ([IIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html) arts. 9–13; [EIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) arts. 3,19,37–40; [2026 VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) art. 15).
 
-**快速参考表**
+This 2026 Guide replaces the old 2025 tables and unsafe defaults. Unknown residence, a service/royalty distinction, place of consumption or treaty entitlement is a question to resolve with records, not permission to declare an invented classification. Ordinary resident enterprise dividends, partnership transparency, TP margins, CRS, SAFE remittance mechanics and foreign-country taxation need their own rules. Use `cn-iit`, `cn-corporate-tax`, `cn-vat`, `cn-transfer-pricing` and `cn-cross-border` at those boundaries.
 
-| 项目 | 内容 |
-| --- | --- |
-| 国家 | 中华人民共和国（不含港澳台地区） |
-| 涵盖税种 | 非居民企业预提所得税（源泉扣缴）、个人所得税扣缴、增值税扣缴（境外服务进口） |
-| 货币 | 人民币（CNY，¥） — 外币所得按照扣缴义务发生之日的人民币汇率中间价折算 |
-| 纳税年度 | 公历年度（1月1日 – 12月31日） |
-| 当前税年 | 2025 |
-| 主管机关 | 国家税务总局（State Taxation Administration, STA / SAT）及各地税务局 |
-| 申报与缴纳系统 | 电子税务局（https://etax.chinatax.gov.cn）；非居民企业境内代扣代缴申报系统 |
-| 扣缴申报期限 | 扣缴义务发生之日起 **7 日内** 向所在地主管税务机关申报缴纳 |
-| 现行法律依据（企业） | 《中华人民共和国企业所得税法》（2007年通过，2018年修订）第三、四、五章；《企业所得税法实施条例》（国务院令第512号）第91条、第104条 |
-| 现行法律依据（个人） | 《中华人民共和国个人所得税法》（2018年修订）第九条扣缴义务；《个人所得税法实施条例》（国务院令第707号） |
-| 现行法律依据（增值税扣缴） | 《财政部 国家税务总局 关于全面推开营业税改征增值税试点的通知》（财税〔2016〕36号）附件1第六条 |
-| 协定适用程序 | "自行判定、申报享受、相关资料留存备查" — 《国家税务总局公告2019年第35号》 |
-| 受益所有人判定 | 《国家税务总局公告2018年第9号》（七项不利因素 + 安全港规则） |
-| 间接转让 | 《国家税务总局公告2015年第7号》；国税函〔2009〕698号文（已部分废止） |
-| 验证人 | 待定 — 须由具备中国注册税务师（CTA）或具备执业经验的注册会计师（CPA）签署 |
-| 技能版本 | 1.0 |
+## Rates, bands and thresholds
 
-### 快速查阅：所得类型 → 预提所得税率（非居民企业，无机构场所）
+All figures are CNY unless an example expressly assumes a currency conversion.
 
-**所得类型→预提税率表**
-
-| 所得类型 | 法定税率 | 常见协定优惠税率 | 是否最终税负 |
-| --- | --- | --- | --- |
-| 股息红利 | 10% | 香港 5%（≥25%持股）、新加坡 5%（≥25%持股）、荷兰 5%（≥25%持股）、英国 5%（≥25%持股）、其他多数协定 5%/10% | **最终** |
-| 利息 | 10% | 香港 7%、新加坡 7%/10%、英国 0%（政府/银行间）/10%、部分协定 0% | **最终** |
-| 特许权使用费 | 10% | 香港 7%、新加坡 6%/10%、英国 10%、美国 10% | **最终** |
-| 财产转让所得（股权/不动产） | 10% | 多数协定不予减免（除非满足"主要价值不来自不动产"条款） | **最终** |
-| 租金（不动产/动产） | 10% | 部分协定 7% / 10% | **最终** |
-| 担保费 | 10% | 按利息条款处理 | **最终** |
-
-### 快速查阅：个人所得（境内单位作为扣缴义务人）
-
-**个人所得扣缴表**
-
-| 所得类型 | 预扣预缴方式 | 是否并入综合所得汇算 |
+| Income / test | Domestic rule | Official provision |
 | --- | --- | --- |
-| 工资薪金 | 累计预扣预缴法（3%–45%七级超额累进） | 是 — 居民个人次年3月1日至6月30日汇算清缴 |
-| 劳务报酬 | 单次≤4000元减800；>4000减20%费用；余额按20%/30%/40%三级累进预扣（见第四节） | 是 — 居民个人并入综合所得 |
-| 稿酬所得 | 减除费用后按 **20% × 70% = 14%** 预扣 | 是 — 居民个人并入综合所得 |
-| 特许权使用费（个人） | 减除费用后按 20% 预扣 | 是 — 居民个人并入综合所得 |
-| 利息、股息、红利所得 | 20%（一般） | 否 — 分类所得，不并入综合所得 |
-| 上市公司股息（个人持有） | 持有期 ≤1月：全额20%；1月–1年：50%×20%=10%；>1年：暂免（财税〔2015〕101号） | 否 |
-| 财产转让所得（个人） | 20% | 否 |
-| 偶然所得 | 20% | 否 |
+| Specified Chinese-source non-resident enterprise income, no relevant China establishment connection |Statutory 20%, reduced to 10% under Regulations art. 91; treaty claim separately tested | [EIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) arts. 3(3),4,27(5); [EIT Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html) art. 91 |
+| Dividends, interest, rent, royalties in that scope |Gross income base, subject to the actual rule, exemptions and treaty; no assumed service-cost deduction | [EIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) art. 19; [STA 2017 No.37](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html) §3 |
+| Property transfer |Gain: income less net property value; actual records and special indirect-transfer rules | [EIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) art. 19; [STA 2017 No.37](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html) §3; [STA 2015 No.7](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n1465977/201502/c1676726/content.html) |
+| Resident salary monthly basic reduction |5000 per month in cumulative payroll calculation, with eligible additional/special deductions and any applicable special collection measures | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 6; `cn-iit` |
+| Resident labour/author/royalty fees |Per receipt: up to 4000, deduct 800; above 4000, deduct 20%. Author's income amount then×70% | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 8 |
+| Resident labour-fee withholding |20% to 20000;30%/quick deduction 2000 above 20000 to 50000;40%/7000 above 50000 | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 8/attached table 2 |
+| Resident author/royalty withholding |20% of the respective income amount; author's fee is **not** a universal 14% of gross | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 8 |
+| Individual interest/dividend/bonus classified income |20%, subject to specifically verified exemptions/reliefs | [IIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html) art. 3; [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 10 |
+| Public-market listed-share dividends: holding≤1 month |Full base×20% | [Caishui 2015 No.101](https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html) §1 |
+| Holding>1 month and≤1 year |50% base×20%=10% effective | [Caishui 2015 No.101](https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html) §1 |
+| Holding>1 year |Temporary exemption, within the notice's actual scope | [Caishui 2015 No.101](https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html) §1 |
+| Ordinary qualifying imported royalty/service consumed in China |6% VAT category for the stated example; classification/territoriality and collection method must be confirmed | [2026 VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) arts. 3–4,10,15; [2026 VAT Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html) art. 4 |
 
-## 一、快速参考
+| Cumulative resident salary taxable base |Rate|Quick deduction|Official source|
+| --- | --- | --- | --- |
+| Up to 36000 |3%|0|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
+| Over 36000 to 144000 |10%|2520|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
+| Over 144000 to 300000 |20%|16920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
+| Over 300000 to 420000 |25%|31920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
+| Over 420000 to 660000 |30%|52920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
+| Over 660000 to 960000 |35%|85920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
+| Over 960000 |45%|181920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
 
-- **源泉扣缴关键规则** — 对非居民企业取得本法第三条第三款规定的所得应缴纳的所得税，实行源泉扣缴，以支付人为扣缴义务人。扣缴义务人每次代扣的税款，应当自代扣之日起七日内缴入国库，并向所在地的税务机关报送扣缴企业所得税报告表。  _(《企业所得税法》第37条 / 第38条 / 第39条)_
-- **境外单位或个人境内应税行为增值税扣缴规则** — 中华人民共和国境外的单位或者个人在境内发生应税行为，在境内未设有经营机构的，以购买方为增值税扣缴义务人。扣缴税款按照服务对应税率（6%/9%/13%）计算，可同时申报作为购买方的进项税额抵扣（受一般纳税人资格、专用凭证等限制）。  _(财税〔2016〕36号附件1第六条)_
+The individual wage table is cumulative annual withholding, not a monthly non-resident table. Non-resident wages deduct 5000 monthly and use the separate monthly table; non-resident labour/author/royalty income uses the corresponding income amount and that table. The foreign workday allocation,90/183-day or treaty conditions and annual residence change are addressed in `cn-iit`; do not blindly apply cumulative resident deductions ([STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 9).
 
-## 二、必备输入与拒绝清单
+## The base
 
-### 2.1 计算与申报前必备输入
+### Non-resident enterprise income
 
-**必备输入清单**
+Determine Chinese source under EIT Regulations art. 7: dividends depend on the distributing enterprise's location; interest/rent/royalties on the payer/burden rules; immovable property on location; equity transfer on the invested enterprise's location. Service and establishment profits are not automatically royalties taxable on gross receipts. Establishments and effective connection follow EIT Law art. 3; use `cn-corporate-tax` for an actual establishment's net-profit assessment.
 
-| 输入项 | 重要性 |
-| --- | --- |
-| 支付人（扣缴义务人）名称、统一社会信用代码、所在地主管税务机关 | 决定申报地、申报系统接口 |
-| 收款人（纳税人）法定名称、税收居民身份、所在国 / 地区 | 决定法定税率与是否可享受税收协定 |
-| 收款人税收居民身份证明（TRC，Certificate of Residence） | 享受协定优惠的法定前提 |
-| 所得性质（股息 / 利息 / 特许权使用费 / 财产转让 / 租金 / 服务 / 工资 / 劳务） | 决定适用税率档次与协定条款 |
-| 合同金额、币种、人民币折算汇率（中间价） | 决定计税基础（含税额还原） |
-| 含税 / 不含税约定（合同条款） | 决定是否需要做"税款还原"（毛额化） |
-| 支付时间 / 入账时间（孰早） | 决定扣缴义务发生时点与 7 日申报期限起算日 |
-| 是否构成机构、场所或常设机构（PE） | 若构成 PE，则按 25% 居民企业税率核定征收，而非源泉扣缴 10% |
-| 受益所有人证明文件（董事会决议、持股结构、实际经营场所、雇员数、商业实质等） | 享受协定优惠时须留存备查 |
-| 间接转让情形：被转让境外公司股权架构、中国境内财产占比、商业目的证明 | 决定是否适用 7 号公告穿透征税 |
-| 增值税扣缴情形：服务类型、是否完全在境外发生、购买方一般纳税人/小规模纳税人身份 | 决定增值税扣缴税率与进项抵扣资格 |
+For a taxable payment, identify its gross tax base, legal payee and withholding obligor. If the Chinese payer bears the recipient's EIT, gross up the recipient's EIT-exclusive income to the tax-inclusive EIT base under [STA 2017 No.37](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html) §6. Keep VAT **out** of the VAT-exclusive consideration; the contractual promise determines which taxes the payer bears. Do not divide by(1−VAT rate) as though VAT were an income tax. For instalment property transfers, apply the notice's permitted recovery of the investment cost before computing/withholding the gain (§7).
 
-### 2.2 拒绝清单
+Translate foreign-currency amounts under the actual withholding-obligation rule and applicable central parity; an example's 7.20 is only an assumed input. Retain the contract, conversion date/rate, invoices, payment/accrual records, property cost and prior instalments ([STA 2017 No.37](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html) §§3–7).
 
-**拒绝清单表**
+### Resident individual payments
 
-| 编号 | 情形 | 拒绝理由 |
+For wages, cumulative taxable base=cumulative salary less exempt income,5000×eligible months and the person's actual allowable social/housing, additional and other deductions. Cumulative tax=base×rate−quick deduction−applicable tax relief; current withholding subtracts prior withholding. A negative current balance is not immediately refunded through this formula; reconcile through the prescribed annual route ([STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 6). Actual eligible deductions and newer special withholding measures remain governed by `cn-iit`, including platform-worker rules; ordinary non-platform labour-fee treatment is not universal.
+
+For labour fees, use the per-receipt expense reduction and progressive withholding table above. For author's fees, apply the expense reduction, then 70%, then 20%; a 10000fee gives 5600 income amount and 1120 withheld, not 1400. Royalties use the expense reduction then 20%. These resident comprehensive categories enter the annual calculation; withholding is not necessarily final tax ([STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) arts. 8,11; [IIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html) art. 11). Define a receipt correctly: one-off income is per occurrence; continuing receipts for one project are grouped within the month (art. 11).
+
+For listed-share dividends under No.101, the company **does not temporarily withhold** for an individual's holdings of 1 year or less at distribution. Upon later sale, the securities registration/settlement and custody chain calculates and collects the actual holding-period tax and passes it to the listed company. This corrects the former “withhold 20% then automatically refund” instruction. Shares held more than 1 year receive the specified exemption; restricted shares, employee-equity programmes and other shareholder types require their own scope analysis ([Caishui 2015 No.101](https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html) §§1–3).
+
+### Imported services and intangibles
+
+Under the 2026 VAT Law, first establish a taxable transaction in China and its actual category. If an overseas unit/individual makes a taxable transaction in China, the domestic buyer withholds **unless a domestic agent is entrusted to file/pay under the statutory rule**. A service consumed on site abroad can fall outside the China-consumption rule; uncertainty is not proof that it was partly consumed in China ([2026 VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) arts. 3–4,15; [2026 VAT Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html) art. 4).
+
+VAT base excludes VAT. With VAT-inclusive consideration, divide by(1+applicable rate); with a price expressly exclusive of VAT, multiply that base by the rate. A general taxpayer's input claim on paid withholding VAT requires the legal payment voucher and other supporting contract/payment/foreign document conditions, and eligible taxable use; see `cn-vat`. Do not claim it merely because the payer remitted a tax ([2026 VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) arts. 17,21–22; [2026 VAT Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html) art. 11).
+
+The import VAT described here is excluded from the urban maintenance/construction tax base. Education and local education surcharge use the same excluded base. The old example's 7%+3%+2% addition on imported royalty/service VAT is therefore removed, rather than treated as a Chinese city-rate assumption ([MOF/STA 2021 No.28](https://fgk.chinatax.gov.cn/zcfgk/c102416/c5194989/content.html) §§1–3).
+
+## Deadlines and filing
+
+| Liability / information | Rule | Official provision |
 | --- | --- | --- |
-| R-CN-WHT-1 | 居民企业之间的股息分配 | 符合条件的居民企业之间股息免税（《企业所得税法》第26条），不属于源泉扣缴范畴；超出本技能范围。 |
-| R-CN-WHT-2 | 合伙企业（境内 LP / GP）跨境分配 | 合伙企业的税收处理（穿透 vs 主体）适用财税〔2008〕159号文及后续文件，规则复杂且与外汇管制交叉；超出本技能范围。 |
-| R-CN-WHT-3 | 特别纳税调整（转让定价、CFC、GAAR） | 适用《特别纳税调查调整及相互协商程序管理办法》（国家税务总局公告2017年第6号）；须由具备转让定价专业资质的执业人员处理。 |
-| R-CN-WHT-4 | CRS / FATCA / 金融账户涉税信息交换 | 属于税收情报交换领域，须由具备国际税务情报合规经验的执业人员处理。 |
-| R-CN-WHT-5 | 外汇管制实务（SAFE 跨境支付登记、税务备案表） | 涉及《国家税务总局 国家外汇管理局 关于服务贸易等项目对外支付税务备案有关问题的公告》（2013年第40号）；本技能仅覆盖税务申报，不替代 SAFE 登记。 |
-| R-CN-WHT-6 | 无法取得收款人税收居民身份证明（TRC）的协定优惠申请 | 拒绝适用协定优惠 → 按法定 10% 缴纳；后续可在三年内申请退税。 |
-| R-CN-WHT-7 | 收款人构成中国境内机构、场所或常设机构（PE） | 不适用源泉扣缴 10%，应按 25% 居民企业税率核定征收；须由具备企业所得税核定征收经验的执业人员处理。 |
-| R-CN-WHT-8 | 港澳台地区税收安排的特殊条款（CEPA、台胞、澳门安排） | 涉及《内地和香港特别行政区关于对所得避免双重征税和防止偷漏税的安排》及后续议定书；条款复杂，应单独评估。 |
-| R-CN-WHT-9 | 间接转让中国境内财产无法提供完整境外架构信息 | 拒绝判断是否符合 7 号公告"合理商业目的"标准 → 默认保守认定为应税。 |
-| R-CN-WHT-10 | 数字服务、跨境电商、境外平台经济等新型业态 | 现行规则尚不明确，部分情形参照特许权使用费、部分参照服务费；须由具备国际数字税专业知识的执业人员评估。 |
-| R-CN-WHT-11 | 合同跨年（义务发生时点跨越 2025/2026 年度），且涉及 BEPS Pillar Two 全球最低税 GloBE 影响 | Pillar Two 在中国的本地化立法（IIR/UTPR）尚未出台，应单独评估。 |
-| R-CN-WHT-12 | 私募基金、QFLP / QDLP 跨境分配 | 涉及外资基金管理人备案与外汇专项额度，规则复杂；超出本技能范围。 |
+| Non-resident enterprise withholding |Declare/remit within 7 days of the withholding obligation; dividend obligation is actual payment; other payments apply the payment/due-and-payable rule | [STA 2017 No.37](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html) §7; [EIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) arts. 37,40 |
+| EIT withholding report |Submit current withholding enterprise-income-tax report and actual supporting data | [STA 2017 No.37](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html) §8 |
+| Designated agent for construction and service income |The tax authority can designate the payer of project or service fees as withholding agent for a non-resident enterprise's EIT on construction and labour-service income in China | [EIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) art. 38 |
+| Non-resident recipient where withholding failed |Recipient has a separate filing/payment duty; the notice governs filing before/after an authority order | [STA 2017 No.37](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html) §§9–10 |
+| IIT payroll/fee withholding |Remit and file within 15 days after the following month's start, subject to lawful filing-calendar adjustments | [IIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html) art. 14 |
+| IIT resident comprehensive reconciliation |If required,1 March–30 June following income year; distinguish withheld tax from final liability | [IIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html) art. 11; `cn-iit` |
+| IIT salary information |Provide annual income/tax information within 2 months after year end; supply required interim information when requested | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 13 |
+| Treaty documents | Self-assessment/claim plus retained evidence; the ordinary retention period is 10 years under the linked collection rules | [Treaty measures 2019 No. 35 Arts. 3,7–9,11](https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml); [Tax Collection Detailed Rules Art. 29](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html) |
+| VAT withholding |Same tax periods as the statutory taxpayer rule; use the competent authority's assigned period/calendar, not the EIT 7 day rule | [2026 VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) arts. 30–31 |
 
-## 三、非居民企业预提所得税（10% / 协定优惠）
+Do not apply one “payment date” to every levy. EIT dividend payment, accrued/due non-dividend income, IIT receipt and VAT tax point/filing periods require their actual provisions. Complete the treaty information report and current domestic form where required; no future screen/box identifier is invented. Keep all-recipient/full-income IIT information and the actual recipient's identification ([IIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html) art. 10; [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) arts. 2–5).
 
-### 3.1 法律依据
+## Penalties and interest
 
-- **企业所得税法第3条第3款** — 非居民企业在中国境内未设立机构、场所的，或者虽设立机构、场所但取得的所得与其所设机构、场所没有实际联系的，应当就其来源于中国境内的所得缴纳企业所得税。  _(《中华人民共和国企业所得税法》第3条第3款)_
-- **减按10%税率征收** — 对该等所得减按 10% 税率征收。  _(第4条第2款 + 第27条第5款 + 国务院规定)_
-- **源泉扣缴（第37条）** — 对非居民企业取得本法第三条第三款规定的所得应缴纳的所得税，实行源泉扣缴，以支付人为扣缴义务人。  _(《企业所得税法》第37条)_
-- **工程作业和劳务所得扣缴（第38条）** — 对非居民企业在中国境内取得工程作业和劳务所得，税务机关可以指定工程价款或者劳务费的支付人为扣缴义务人。  _(《企业所得税法》第38条)_
-- **扣缴义务人未依法扣缴（第39条）** — 依照本法第三十七条、第三十八条规定应当扣缴的所得税，扣缴义务人未依法扣缴或者无法履行扣缴义务的，由纳税人在所得发生地缴纳。  _(《企业所得税法》第39条)_
-- **非居民企业第27条第（五）项所得预提税率** — 10%  _(《企业所得税法实施条例》（国务院令第512号）第91条)_
-- **来源地判定与应纳税所得额计算（毛额征税）** — 第103–104条：来源地判定、应纳税所得额计算（毛额征税）。  _(《企业所得税法实施条例》第103–104条)_
+Tax Collection Administration Law art. 69 distinguishes **failure to withhold**: the authority recovers tax from the taxpayer and can fine the withholding agent **50%–3times** the unwithheld amount. Art.68 addresses tax that remains unpaid/unremitted after the ordered period and permits **50%–5times**; concealment/fraud has its own art. 63 conditions. Art.32 provides the **daily 0.05%** late surcharge for the statutory overdue situations; do not assert that every failure to withhold automatically has identical surcharge mechanics. Reporting failures are separately addressed in arts. 60/62 ([Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html)).
 
-### 3.2 法定税率（2025年）
+If a taxpayer discovers an overpayment within **3 years** of the date the tax was settled and paid, it can claim the refund plus bank deposit interest for the same period; the authority refunds immediately after verifying the claim [Tax Collection Administration Law art. 51](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html). Overpayment and treaty-refund applications otherwise follow their actual legal procedure; a future refund is not a justification for knowingly applying the wrong classification. TP adjustments use the separate special-adjustment interest rules in `cn-transfer-pricing`, not this ordinary late-charge table.
 
-**法定税率表**
+## Cross-border points
 
-| 所得类型 | 应纳税所得额计算 | 法定预提税率 |
+Treaty entitlement is **self-assessed, claimed and supported by retained evidence**, subject to later authority checks. Collect the actual treaty version/protocol, residence proof, payment/ownership/holding-period records, contracts and beneficial-ownership/substance facts. A registration certificate or a Hong Kong address alone is not tax-residence proof. Missing treaty information does not itself convert an unknown payment into a royalty ([STA 2019 No.35 treaty-claim measures](https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml) arts. 3–8,11).
+
+For dividends/interest/royalties, beneficial ownership considers ownership and control of the income/right and the actual facts. The adverse onward-payment factor includes an obligation or established practice to pass **50% or more within 12 months** to a third jurisdiction. Other factors concern substantial business activity, taxation and linked financing/licensing; specified dividend safe cases and look-through rules require their full conditions. Do not turn any single adverse factor into an automatic conclusion ([STA 2018 No.9 beneficial-owner rules](https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194781/content.html) §§1–4,8).
+
+For indirect transfers, No.7 applies where a non-resident's arrangement lacks reasonable commercial purpose and avoids EIT on China taxable property. Analyse the actual asset/income/substance/holding/tax facts and listed exceptions; uncertainty is not a universal instruction to tax through the holding company. Report/withhold under the actual current procedure. No.37 §17's repeals mean the old 698circular is not a substitute for current procedural rules ([STA 2015 No.7](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n1465977/201502/c1676726/content.html); [STA 2017 No.37](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html)).
+
+The former Hong Kong, Singapore, US, UK, Japan, Germany, Netherlands, France, South Korea, Australia, Canada, Luxembourg and Ireland treaty-rate examples are retained as **named treaty determinations requiring their exact current instrument**; no unsourced consolidated rate table is carried forward. Hong Kong taxation of foreign dividends is not presumed zero, and China withholding is not asserted to be the recipient's final worldwide burden. Social-security treaties and currency-control/bank requirements are separate from income-tax treaties.
+
+## Two worked examples that recompute
+
+**Example 1: corrected foreign software-royalty gross-up.** Retain the former USD 1000000 scenario with an expressly assumed 7.20CNY/USD, so the foreign recipient is promised net 7200000 after Chinese EIT. Assume a genuine taxable royalty, no relevant China establishment or treaty relief, domestic 10% EIT,6% VAT, no entrusted domestic VAT agent, all Chinese taxes borne by the payer and no other levies. EIT/VAT-exclusive royalty base=7200000/(1−10%)=8000000; EIT=800000; VAT=480000; recipient gets 7200000 and payer cash outflow=8480000. Imported-service/intangible VAT creates no urban/education/local education surcharge base. If input VAT is actually deductible, economic royalty cost is 8000000, not the full cash total. This replaces the old internally inconsistent VAT gross-up and unsupported surcharge calculation ([STA 2017 No.37](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html) §6; [2026 VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) arts. 10,15,17; [MOF/STA 2021 No.28](https://fgk.chinatax.gov.cn/zcfgk/c102416/c5194989/content.html)).
+
+```oa-check
+name: China2026 foreign royalty, payer bears EIT and VAT
+inputs:
+  usd_net: 1000000
+  assumed_cny_per_usd: 7.20
+  eit_rate: 0.10
+  vat_rate: 0.06
+steps:
+  cny_net: usd_net * assumed_cny_per_usd
+  vat_exclusive_eit_gross_base: cny_net / (1 - eit_rate)
+  eit_withheld: vat_exclusive_eit_gross_base * eit_rate
+  vat_withheld: vat_exclusive_eit_gross_base * vat_rate
+  payer_cash: cny_net + eit_withheld + vat_withheld
+expected:
+  cny_net: 7200000
+  vat_exclusive_eit_gross_base: 8000000
+  eit_withheld: 800000
+  vat_withheld: 480000
+  payer_cash: 8480000
+```
+
+**Example 2: preserved cumulative wage scenario with actual deduction assumptions.** Assume 2026 January–May salary 150000, cumulative basic deduction 25000, actual allowable social/housing 15000 and actual eligible additional deductions 10000. The 10000 is an assumed verified aggregate, not the old unsupported 1000/month child/parent standard. Cumulative base 100000; tax 100000×10%−2520=7480; already withheld 4140, current withholding 3340 ([STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 6/table 1).
+
+```oa-check
+name: China2026 May cumulative resident wage withholding
+inputs:
+  cumulative_salary: 150000
+  basic_deduction: 25000
+  actual_social_housing: 15000
+  actual_additional_deductions: 10000
+  already_withheld: 4140
+steps:
+  cumulative_base: cumulative_salary - basic_deduction - actual_social_housing - actual_additional_deductions
+  cumulative_tax: cumulative_base * 0.10 - 2520
+  current_withholding: cumulative_tax - already_withheld
+expected:
+  cumulative_base: 100000
+  cumulative_tax: 7480
+  current_withholding: 3340
+```
+
+### Other original scenarios retained with their boundaries
+
+**Hong Kong parent dividend.** The former 100000000 dividend,100% ownership and residence-certificate scenario remains a treaty-verification task. **If** the actual current instrument, beneficial ownership, holding period and other conditions independently establish 5%, withholding arithmetic is 5000000 and China net 95000000. At domestic 10%, it is 10000000 and 90000000. This conditional comparison does not verify the current Hong Kong treaty entitlement; no approximate HKD 102 million conversion or Hong Kong exemption/final 5% worldwide burden is asserted.
+
+**Listed-share 5000dividend.** Retain the former acquisition 1 April 2025/distribution 15 June 2025/sale 20 June 2025 scenario: the holding is over 1 month and within 1 year, so the eligible No.101 tax is 5000×50%×20%=500. At distribution the company temporarily does **not** withhold; collection follows the sale, not a refund of a blanket 1000. With sale 10 May 2026 after a holding above 1 year, the specified temporary exemption gives zero. The case's 2025dates are historical facts, not a change of the 2026 Guide's scope ([Caishui 2015 No.101](https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html)).
+
+## Ask the client first
+
+- Who legally receives the payment: individual/company, tax residence, beneficial owner and actual establishment? Obtain actual evidence before classifying.
+- What does the contract buy, where is the activity/consumption/property, and who bears EIT/VAT? Is the price net or VAT-inclusive? What are the payment/accrual and invoice dates?
+- Which currency/conversion rule and central-parity date apply? Do property cost and prior instalments support the gain?
+- Which treaty/protocol, shareholding/holding period and residence documents support a claim? Was the information report completed and evidence retained?
+- For payroll, what are cumulative wages, eligible months, exemptions, actual deductions, prior withholding and the person's residence status? Is a special platform/other withholding measure applicable?
+- Is the seller represented by an entrusted domestic VAT agent? Are payment vouchers and input-deduction/use conditions satisfied?
+- Is this an original return, omission, authority notice, refund or indirect-transfer investigation? Obtain all dated records and notices.
+
+## Sources
+
+| Source | Official URL | Read on |
 | --- | --- | --- |
-| 股息、红利等权益性投资收益 | 收入全额 | 10% |
-| 利息 | 收入全额 | 10% |
-| 租金 | 收入全额 | 10% |
-| 特许权使用费 | 收入全额 | 10% |
-| 转让财产所得 — 不动产 | 转让收入 − 财产净值 | 10% |
-| 转让财产所得 — 股权 | 股权转让收入 − 股权成本 | 10% |
-| 担保费 | 收入全额（按利息处理） | 10% |
-| 其他所得 | 比照执行 | 10% |
-
-- **毛额征税原则** — 股息、利息、租金、特许权使用费按收入全额计算应纳税所得额，不得扣除任何成本费用（实施条例第19条）。仅财产转让所得允许扣除"财产净值"（即计税基础）。  _(实施条例第19条)_
-
-### 3.3 来源地判定（实施条例第7条）
-
-- **股息来源地** — 分配股息的企业所在地。  _(实施条例第7条)_
-- **利息来源地** — 负担、支付的企业或机构、场所所在地，或者负担、支付的个人的住所地。  _(实施条例第7条)_
-- **租金来源地** — 负担、支付的企业或机构、场所所在地，或者负担、支付的个人的住所地。  _(实施条例第7条)_
-- **特许权使用费来源地** — 负担、支付的企业或机构、场所所在地，或者负担、支付的个人的住所地。  _(实施条例第7条)_
-- **不动产转让所得来源地** — 不动产所在地。  _(实施条例第7条)_
-- **股权转让所得来源地** — 被投资企业所在地。  _(实施条例第7条)_
-
-### 3.4 协定优惠常见税率（2025年）
-
-**协定优惠税率表**
-
-| 缔约方 | 股息（一般 / 直接持股 ≥25%） | 利息 | 特许权使用费 |
-| --- | --- | --- | --- |
-| 香港（CEPA-Type 安排） | 10% / **5%** | **7%** | **7%**（一般）/ 5%（工业、商业、科学设备） |
-| 新加坡 | 10% / **5%** | 7% / **10%** | **6%**（工业、商业、科学设备使用费）/ 10%（一般） |
-| 荷兰 | 10% / **5%** | **10%** / 0%（政府） | 6% / 10% |
-| 英国 | 15% / **5%** | 0%（政府/银行间）/ 10% | 6% / 10% |
-| 德国 | 15% / **5%**（≥25%且 ≥ EUR 80,000） | 10% | 6% / 10% |
-| 法国 | 10% / **5%** | 10% | 6% / 10% |
-| 美国 | 10% | 10% | 7% / 10% |
-| 日本 | 10% | 10% | 10% |
-| 韩国 | 10% / **5%**（≥25%） | 10% | 10% |
-| 澳大利亚 | 15% | 10% | 10% |
-| 加拿大 | 15% / 10%（≥10%） | 10% | 10% |
-| 卢森堡 | 10% / **5%**（≥25%） | 10% | 6% / 10% |
-| 爱尔兰 | 10% / **5%**（≥25%） | 10% | 6% / 10% |
-
-- **协定与国内法孰低适用原则** — 协定优惠税率高于国内法 10% 时，按国内法 10% 执行（不存在"协定加重"的情形）。  _(《国家税务总局公告2010年第75号》)_
-
-### 3.5 享受协定优惠的程序（公告2019年第35号）
-
-自 2020 年 1 月 1 日起，非居民纳税人享受协定待遇采取"自行判定、申报享受、相关资料留存备查"方式：
-
-1. **自行判定** — 纳税人自行判定其符合享受协定待遇的条件，并在源泉扣缴或申报缴税时享受协定待遇；
-2. **申报享受** — 通过填报《非居民纳税人享受协定待遇信息报告表》主动披露；
-3. **资料留存备查** — 五项核心资料须由纳税人留存备查（不再事前审批）：
-   - 由协定缔约对方税务主管当局开具的税收居民身份证明（TRC）；
-   - 与取得相关所得有关的合同、协议、董事会或股东会决议、支付凭证等权属证明资料；
-   - 享受股息、利息、特许权使用费条款待遇的，需提供受益所有人身份相关资料；
-   - 享受协定优惠的其他证明资料；
-   - 纳税人认为能够证明其符合享受协定待遇条件的其他资料。
-
-> **重要警示。** 税务机关有权在事后管理中要求提供留存备查资料；如不能在规定期限内提供或提供的资料不足以证明享受协定待遇，税务机关将追缴税款及滞纳金，并可能加收罚款。
-
-## 四、个人所得税扣缴（工资 / 劳务 / 稿酬 / 特许权使用费）
-
-### 4.1 法律依据
-
-- **扣缴义务人定义（第9条）** — 个人所得税以所得人为纳税人，以支付所得的单位或者个人为扣缴义务人。  _(《中华人民共和国个人所得税法》第9条)_
-- **综合所得预扣预缴（第11条）** — 居民个人取得综合所得，按年计算个人所得税；有扣缴义务人的，由扣缴义务人按月或者按次预扣预缴税款。  _(《个人所得税法》第11条)_
-- **分类所得按月按次计算（第12条）** — 纳税人取得经营所得、利息股息红利、财产租赁、财产转让和偶然所得，按月或者按次计算个人所得税。  _(《个人所得税法》第12条)_
-- **扣缴申报管理办法** — 《国家税务总局关于发布〈个人所得税扣缴申报管理办法（试行）〉的公告》  _(公告2018年第61号)_
-
-### 4.2 工资薪金 — 累计预扣预缴法
-
-- **累计预扣预缴法计算公式** — 本期应预扣预缴税额 = (累计预扣预缴应纳税所得额 × 预扣率 − 速算扣除数) − 累计减免税额 − 累计已预扣预缴税额 累计预扣预缴应纳税所得额 = 累计收入 − 累计免税收入 − 累计减除费用（5000 元 × 月数）− 累计专项扣除（三险一金）− 累计专项附加扣除 − 累计其他扣除
-
-**居民个人工资薪金预扣率表（年度综合所得税率表）**
-
-| 级数 | 累计预扣预缴应纳税所得额（元） | 预扣率 | 速算扣除数 |
-| --- | --- | --- | --- |
-| 1 | 不超过 36,000 | 3% | 0 |
-| 2 | 36,000 – 144,000 | 10% | 2,520 |
-| 3 | 144,000 – 300,000 | 20% | 16,920 |
-| 4 | 300,000 – 420,000 | 25% | 31,920 |
-| 5 | 420,000 – 660,000 | 30% | 52,920 |
-| 6 | 660,000 – 960,000 | 35% | 85,920 |
-| 7 | 超过 960,000 | 45% | 181,920 |
-
-### 4.3 劳务报酬 — 单次预扣（居民个人）
-
-- **劳务报酬应纳税所得额计算** — 每次收入 ≤ 4,000 元：应纳税所得额 = 收入 − 800 每次收入 > 4,000 元：应纳税所得额 = 收入 × (1 − 20%)
-
-**预扣率表（劳务报酬所得，居民个人预扣预缴）**
-
-| 级数 | 预扣预缴应纳税所得额（元） | 预扣率 | 速算扣除数 |
-| --- | --- | --- | --- |
-| 1 | 不超过 20,000 | 20% | 0 |
-| 2 | 20,000 – 50,000 | 30% | 2,000 |
-| 3 | 超过 50,000 | 40% | 7,000 |
-
-### 4.4 稿酬所得 — 居民个人
-
-- **稿酬所得计算公式** — 每次收入 ≤ 4,000 元：应纳税所得额 = (收入 − 800) × 70% 每次收入 > 4,000 元：应纳税所得额 = 收入 × (1 − 20%) × 70% 预扣预缴税额 = 应纳税所得额 × 20% 实际税负 = 14%（毛额）。
-
-### 4.5 特许权使用费 — 居民个人
-
-- **特许权使用费计算公式** — 每次收入 ≤ 4,000 元：应纳税所得额 = 收入 − 800 每次收入 > 4,000 元：应纳税所得额 = 收入 × (1 − 20%) 预扣预缴税额 = 应纳税所得额 × 20%
-
-### 4.6 利息、股息、红利所得
-
-- **一般税率** — 20%  _(按次代扣代缴，分类所得，不并入综合所得)_
-- **上市公司股息红利差别化征税** — 持有期 ≤ 1 个月：全额计入应纳税所得额，税率 20%（实际税负 20%）；持有期 1 个月 – 1 年：减按 50% 计入，税率 20%（实际税负 10%）；持有期超过 1 年：暂免征收个人所得税（实际税负 0%）；由上市公司在派发股息时统一按 20% 全额扣缴，待持有期满足条件后，由证券登记结算公司根据持有期向投资者退还差额（自动退税机制）。  _(财政部 税务总局 公告2015年第101号)_
-- **新三板股息差别化政策** — 新三板挂牌公司股息红利适用相同的差别化政策。  _(财政部 税务总局 公告2019年第78号)_
-
-### 4.7 非居民个人
-
-- **非居民个人应纳税所得额及税率适用** — 非居民个人（一个纳税年度内在中国境内累计居住不满 183 天）的工资薪金、劳务报酬、稿酬、特许权使用费： 应纳税所得额 = 每月（每次）收入 − 5,000 元（仅工资薪金每月扣减；其他所得按 4.3/4.4/4.5 公式） 按月（按次）适用工资薪金税率表（非按累计法），不并入综合所得，不办理汇算清缴
-
-## 五、增值税扣缴（境外服务进口）
-
-### 5.1 法律依据
-
-- **境外单位或个人境内应税行为扣缴规则** — 中华人民共和国境外（以下称境外）的单位或者个人在境内发生应税行为，在境内未设有经营机构的，以购买方为增值税扣缴义务人。财政部和国家税务总局另有规定的除外。  _(财税〔2016〕36号附件1《营业税改征增值税试点实施办法》第六条)_
-- **扣缴义务人代扣代缴增值税应纳税额计算公式** — 应扣缴税额 = 购买方支付的价款 ÷ (1 + 税率) × 税率  _(附件1第十二条)_
-
-### 5.2 适用税率（2025年）
-
-**适用增值税税率表**
-
-| 应税服务类型 | 增值税税率 |
-| --- | --- |
-| 现代服务、生活服务、金融服务、研发和技术服务、信息技术服务、文化创意服务、物流辅助服务、鉴证咨询服务、广播影视服务、商务辅助服务等 | **6%** |
-| 不动产租赁、销售不动产、转让土地使用权、建筑服务、交通运输服务、邮政服务、基础电信服务 | **9%** |
-| 销售或者进口货物、提供加工修理修配劳务、有形动产租赁服务 | **13%** |
-
-### 5.3 进项抵扣
-
-- **完税凭证进项抵扣规则** — 支付方（一般纳税人）凭完税凭证（境外单位增值税扣缴税款表）作为进项抵扣凭证，完税凭证抵扣额 = 已扣缴增值税额。小规模纳税人不得抵扣。  _(财税〔2016〕36号附件1第二十六条第（五）项)_
-
-### 5.4 同时扣缴企业所得税与增值税
-
-境内购买方支付境外服务费时，常同时承担：
-
-1. 企业所得税源泉扣缴（如服务费被认定为特许权使用费或被视同来源于境内的所得）—— 10% 或协定优惠；
-2. 增值税扣缴 —— 6% / 9% / 13%；
-3. 附加税费（城建税 7% / 5% / 1%、教育费附加 3%、地方教育附加 2%）—— 以代扣的增值税为基数。
-
-> **税款还原（毛额化）。** 如合同约定"不含税净额"由境内方承担全部税负，须做税款还原：
-> - 含增值税价 = 净额 ÷ (1 − 10% × (1 − 6%) − 6%)（特许权使用费 6% 增值税情形，简化示例）
-> - 实务中应根据合同条款逐项还原，并保留完整计算底稿。
-
-## 六、税收协定与受益所有人判定
-
-### 6.1 受益所有人 — 公告2018年第9号
-
-- **受益所有人判定说明** — 申请享受股息、利息、特许权使用费条款的协定优惠时，申请人（收款人）须为该项所得的"受益所有人"。判定标准（公告2018年第9号）： 七项不利因素： 1. 申请人有义务在收到所得的 12 个月内将所得的 50% 以上支付给第三国（地区）居民； 2. 申请人从事的经营活动不构成实质性经营活动（包括但不限于实质性的制造、经销、管理等活动）； 3. 缔约对方国家（地区）对有关所得不征税或免税，或征税但实际税率极低； 4. 在利息据以产生和支付的贷款合同之外，存在债权人与第三人之间在数额、利率和签订时间等方面相近的其他贷款或存款合同； 5. 在特许权使用费据以产生和支付的版权、专利、技术等使用权转让合同之外，存在申请人与第三人之间在有关版权、专利、技术等的使用权或所有权方面的转让合同； 6. 对于股息以外的所得，申请人未承担相应风险； 7. 协定缔约对方国家（地区）对有关所得不征税或免税，或征税但实际税率极低。 安全港规则（公告2018年第9号第四条）：在以下情形下，无须按上述七项不利因素判定，直接认定为受益所有人： - 缔约对方政府； - 缔约对方居民且在缔约对方上市的公司； - 缔约对方居民个人； - 申请人被(1)–(3)所述人员直接或间接持有 100% 股份，且符合"持股链上每一层均为缔约对方居民"的条件。  _(《国家税务总局公告2018年第9号》)_
-
-### 6.2 间接转让 — 公告2015年第7号
-
-- **间接转让穿透征税规则** — 非居民企业间接转让中国境内财产（含中国居民企业股权、中国境内不动产、中国境内机构场所财产），若不具有合理商业目的，应按 7 号公告穿透重新定性为直接转让中国应税财产，征收 10% 预提所得税。 合理商业目的判定（七项综合因素）： 1. 境外企业股权主要价值是否直接或间接来自于中国应税财产； 2. 境外企业资产是否主要由直接或间接在中国境内的投资构成，或其取得的收入是否主要直接或间接来源于中国境内； 3. 境外企业及直接或间接持有中国应税财产的下属企业实际履行的功能及承担的风险是否能够证实企业架构具有经济实质； 4. 境外企业股东、业务模式及相关组织架构的存续时间； 5. 间接转让中国应税财产交易在境外应缴纳所得税情况； 6. 股权转让方间接投资、间接转让中国应税财产交易与直接投资、直接转让中国应税财产交易的可替代性； 7. 间接转让中国应税财产所得在中国可适用的税收协定或安排情况，以及其他相关因素。 安全港（公告2015年第7号第五条）：在以下情形下，不适用一般反避税规则： - 在公开市场买入并卖出同一上市境外企业股权取得的间接转让中国应税财产所得； - 适用税收协定可免税情形（在转让方为缔约对方居民且符合协定条款时）； - 集团内重组同时满足：(a) 转让前后股权架构均为 100% 控股；(b) 间接转让所得在境外不发生应纳所得税减少；(c) 受让方支付对价仅为本企业或与其具有 100% 控股关系的企业的股权。  _(《国家税务总局公告2015年第7号》)_
-
-## 七、计算示例
-
-### 7.1 非居民企业股息 — 协定优惠（香港 → 内地子公司）
-
-中国境内甲公司向其香港母公司 HK Parent Co. 分派股息人民币 100,000,000 元。HK Parent Co. 持有甲公司 100% 股权，符合内地香港税收安排第十条第二款第（一）项受益所有人条件，并持有香港税务局开具的居民身份证明书。
-
-- 法定税率：10%
-- 协定税率（内地香港安排）：5%（受益所有人直接持有派息公司 25% 以上股权）
-- 应扣缴企业所得税：100,000,000 × 5% = 5,000,000 元
-- 甲公司应在股息支付日起 7 日内向所在地主管税务机关申报缴纳，并填报《扣缴企业所得税报告表》及《非居民纳税人享受协定待遇信息报告表》，留存 TRC 等备查资料。
-- 税后净汇款：95,000,000 元（约 HKD 102,000,000，按当日中间价折算）。
-- HK Parent Co. 在香港层面，根据香港税法对源自境外的股息一般不予征税（属地征税原则），实际最终税负 = 5%。
-
-### 7.2 非居民企业特许权使用费 — 含税还原（境外软件授权费）
-
-中国境内乙公司向美国 US Licensor 支付软件授权费，合同约定净额 USD 1,000,000，所有中国税费由乙公司承担。汇率 1 USD = 7.20 CNY。
-
-步骤 1 — 增值税扣缴（毛额化）：
-
-- 净额：USD 1,000,000 × 7.20 = ¥ 7,200,000
-- 含增值税价 = 7,200,000 ÷ (1 − 6%) = ¥ 7,659,574.47
-- 增值税扣缴 = 7,659,574.47 × 6% / (1 + 6%) = ¥ 433,560.07
-- 不含增值税价 = 7,659,574.47 − 433,560.07 = ¥ 7,226,014.40
-
-步骤 2 — 企业所得税扣缴（特许权使用费）：
-
-- 应纳税所得额 = 不含增值税价 = ¥ 7,226,014.40
-- 法定税率 10%（中美协定特许权使用费税率亦为 10%，无优惠）
-- 应扣缴企业所得税 = 7,226,014.40 × 10% = ¥ 722,601.44
-
-步骤 3 — 附加税费（城建税 7%、教育费附加 3%、地方教育附加 2%，假设乙公司在市区）：
-
-- 附加税费 = 增值税扣缴 × (7% + 3% + 2%) = 433,560.07 × 12% = ¥ 52,027.21
-
-步骤 4 — 实际汇出 US Licensor：
-
-- USD 1,000,000（净额，全额）
-
-乙公司账面成本：
-
-- USD 1,000,000 × 7.20 = ¥ 7,200,000（特许权使用费成本）
-- + 增值税扣缴 433,560.07（可作为进项抵扣，如乙公司为一般纳税人，凭完税凭证抵扣）
-- + 企业所得税扣缴 722,601.44（计入特许权使用费成本，不抵扣）
-- + 附加税费 52,027.21（计入税金及附加）
-- 总现金流出 = ¥ 7,200,000 + 433,560.07 + 722,601.44 + 52,027.21 = ¥ 8,408,188.72
-
-### 7.3 居民个人 — 工资薪金累计预扣（5 月薪资）
-
-张某 2025 年 1–5 月累计应税收入 150,000 元（每月 30,000 元），累计专项扣除（三险一金）15,000 元，累计专项附加扣除 10,000 元（子女教育 1,000/月 × 5 + 赡养老人 1,000/月 × 5），累计减除费用 25,000 元（5,000 × 5）。已预扣预缴 4,140 元（1–4 月累计）。
-
-- 累计应纳税所得额 = 150,000 − 25,000 − 15,000 − 10,000 = 100,000 元
-- 适用预扣率（落在 36,000–144,000 区间）：10%，速算扣除数 2,520
-- 累计应预扣预缴税额 = 100,000 × 10% − 2,520 = 7,480 元
-- 本月（5 月）应预扣预缴税额 = 7,480 − 4,140 = 3,340 元
-
-### 7.4 上市公司股息 — 个人持股差别化征税
-
-李某于 2025 年 4 月 1 日买入 A 股上市公司股票 10,000 股，2025 年 6 月 15 日该公司派发现金股息每股 0.50 元，合计 5,000 元。
-
-情形 A — 李某于 2025 年 6 月 20 日卖出股票（持有期 < 3 个月，但 > 1 个月）：
-
-- 派息日上市公司按 20% 全额扣缴：5,000 × 20% = 1,000 元（暂扣）；
-- 卖出日后，中证登根据持有期判定（4/1 – 6/20 = 80 天，落在 "1 个月 – 1 年" 区间），实际税负 10%；
-- 应纳税额 = 5,000 × 50% × 20% = 500 元；
-- 中证登退还差额 500 元至李某证券账户。
-
-情形 B — 李某于 2026 年 5 月 10 日卖出（持有期 > 1 年）：
-
-- 派息日上市公司按 20% 全额扣缴：1,000 元（暂扣）；
-- 持有期 4/1/2025 – 5/10/2026 = 405 天 > 365 天，暂免征收；
-- 中证登退还全部 1,000 元至李某账户。
-
-## 八、申报与缴纳
-
-### 8.1 扣缴义务发生时点（《企业所得税法》第37条 / 实施条例第105条）
-
-- **扣缴义务发生时点判定** — 非居民企业取得来源于中国境内的所得，扣缴义务发生时点为实际支付或者到期应支付之日（孰早）： - 实际支付 = 现金、转账、票据交付、抵销等使收款人取得经济利益的行为； - 到期应支付 = 支付人按照权责发生制原则应当计入相关成本、费用的应付未付款项； - 支付人会计上已确认应付（计入成本费用）但尚未实际支付的，仍然构成扣缴义务发生时点。  _(《企业所得税法》第37条 / 实施条例第105条)_
-
-### 8.2 申报与缴纳期限（《企业所得税法》第37条）
-
-- **申报与缴纳期限规则** — 扣缴义务人每次代扣的税款，应当自代扣之日起 7 日内缴入国库；同时向所在地的税务机关报送： - 《中华人民共和国扣缴企业所得税报告表》； - 《非居民纳税人享受协定待遇信息报告表》（如适用协定优惠）； - 合同、发票、付款凭证、TRC、董事会决议等支持性资料（部分留存备查，部分申报随附）。  _(《企业所得税法》第37条)_
-
-### 8.3 个人所得税扣缴申报（公告2018年第61号）
-
-- **个人所得税扣缴申报规则** — 扣缴义务人应当在次月 15 日内向主管税务机关办理扣缴申报，缴纳已扣税款；通过自然人电子税务局（扣缴端）报送《个人所得税扣缴申报表》及《专项附加扣除信息表》（如适用）；全员全额扣缴申报：对支付所得的全部个人（无论是否达到纳税标准）均应进行申报。  _(公告2018年第61号)_
-
-### 8.4 增值税扣缴申报
-
-- **增值税扣缴申报规则** — 在向境外单位或个人支付款项之日为扣缴义务发生时间（财税〔2016〕36号附件1第四十五条第（五）项）；增值税及附加税费按月申报，次月 15 日前申报缴纳；通过电子税务局填报《代扣代缴税款报告表》。  _(财税〔2016〕36号附件1第四十五条第（五）项)_
-
-### 8.5 不履行扣缴义务的法律后果
-
-- **未依法扣缴或无法履行扣缴义务** — 由纳税人在所得发生地缴纳；纳税人未缴纳的，税务机关可以从该纳税人在中国境内其他收入项目的支付人应付的款项中追缴。  _(《企业所得税法》第39条)_
-- **应扣未扣** — 由税务机关向纳税人追缴税款，对扣缴义务人处应扣未扣税款 50% 以上 3 倍以下的罚款。  _(《税收征收管理法》第69条)_
-- **滞纳金** — 从滞纳税款之日起，按日加收万分之五（约年化 18.25%）的滞纳金；针对扣缴义务人按法律规定，纳税人补缴的，应由纳税人承担滞纳金。  _(《税收征收管理法》第32条)_
-- **协定优惠资料不齐全后果** — 税务机关追缴税款 + 滞纳金。  _(公告2019年第35号)_
-
-### 8.6 退税机制（《国家税务总局公告2018年第9号》及配套）
-
-- **退税机制说明** — 非居民纳税人因扣缴义务人未享受协定优惠而多缴税款，可在法定期限内（一般为缴纳税款之日起三年内，《税收征收管理法》第51条）申请退税；申请退税须提交： - 《非居民纳税人享受协定待遇信息报告表》； - TRC（缔约对方税务主管当局开具）； - 受益所有人证明文件； - 完税凭证原件； - 退税申请书。  _(《国家税务总局公告2018年第9号》；《税收征收管理法》第51条)_
-
-## 九、保守默认值
-
-**保守默认值表**
-
-| 歧义情形 | 保守默认值 |
-| --- | --- |
-| 收款人税收居民身份不明 | 按非居民企业处理 → 适用法定 10% 预提税率 |
-| 受益所有人身份不明 / 文件不齐全 | **不享受协定优惠** → 按法定 10% 缴纳；后续可申请退税 |
-| 所得性质分类不明（特许权使用费 vs 服务费） | 按 **特许权使用费**（10%）处理，避免争议；如确属服务费且未构成 PE，可在事后申请退税 |
-| 合同未明确净额 / 含税额 | 按合同金额作为**含税额**处理；如事后证明为净额，可补征（避免扣缴义务人垫付） |
-| 关联交易转让定价合理性存疑 | 不在本技能范围；建议引入转让定价专业人员 |
-| 间接转让"合理商业目的"判定不明确 | 默认按 7 号公告穿透征税 → 应税；如纳税人不同意，应主动报告税务机关并申请预先确认 |
-| 上市公司持有期跨月 / 跨年 | 派息日按 20% 全额扣缴；持有期判定由证券登记结算公司统一处理 |
-| 增值税扣缴 vs 跨境劳务"完全在境外发生"判定不明 | 默认按"部分在境内发生" → 须扣缴增值税；如纳税人有充分证据，可在事后申请退税 |
-| 汇率折算日 | 以**扣缴义务发生当日**的人民币汇率中间价（未公布的取最近一日）；不得使用银行牌价或离岸汇率 |
-| 协定优惠条款多项可选 | 选择**对纳税人最有利**的条款，但须有完整证明文件；文件不齐全时退回适用法定 10% |
-| 跨年度合同（2025/2026 BEPS Pillar Two）影响不明 | 按 2025 年现行规则处理；Pillar Two 实施细则出台后再补充评估 |
-| 港澳台居民身份证明文件 | 须为**缔约对方税务主管当局**开具（香港税务局、澳门财政局、台湾财政部）；其他证明（公司注册证书、住址证明）不可替代 |
-
-核心原则：有疑必扣 → 多扣可退，少扣必罚。退税虽然程序繁琐但有法定路径；事后向已支付的境外收款人追讨补扣税款则几乎不可能，最终由扣缴义务人自掏腰包。
-
-## 十、参考资料
-
-**主要法律法规（2025 年现行有效）：**
-
-- 《中华人民共和国企业所得税法》（2007 年 3 月 16 日第十届全国人民代表大会第五次会议通过，2018 年 12 月 29 日第十三届全国人民代表大会常务委员会第七次会议修正）—— 第 3、4、19、27、37、38、39 条。
-- 《中华人民共和国企业所得税法实施条例》（国务院令第 512 号，2019 年第 714 号修正）—— 第 7、19、91、103、104、105、106 条。
-- 《中华人民共和国个人所得税法》（2018 年 8 月 31 日第十三届全国人民代表大会常务委员会第五次会议修正）—— 第 1、2、3、6、9、10、11、12 条。
-- 《中华人民共和国个人所得税法实施条例》（国务院令第 707 号）—— 第 6、8、25 条。
-- 《中华人民共和国税收征收管理法》（2015 年修正）—— 第 32、51、69 条。
-
-**主要部门规章与规范性文件：**
-
-- 《财政部 国家税务总局 关于全面推开营业税改征增值税试点的通知》（财税〔2016〕36 号）—— 附件 1 第六条、第十二条、第二十六条、第四十五条。
-- 《财政部 税务总局 关于上市公司股息红利差别化个人所得税政策有关问题的通知》（财税〔2015〕101 号）。
-- 《国家税务总局关于发布〈非居民纳税人享受税收协定待遇管理办法〉的公告》（国家税务总局公告 2019 年第 35 号）。
-- 《国家税务总局关于税收协定中"受益所有人"有关问题的公告》（国家税务总局公告 2018 年第 9 号）。
-- 《国家税务总局关于非居民企业间接转让财产企业所得税若干问题的公告》（国家税务总局公告 2015 年第 7 号）。
-- 《国家税务总局 关于非居民企业所得税源泉扣缴有关问题的公告》（国家税务总局公告 2017 年第 37 号）。
-- 《国家税务总局关于发布〈个人所得税扣缴申报管理办法（试行）〉的公告》（国家税务总局公告 2018 年第 61 号）。
-- 《国家税务总局 国家外汇管理局 关于服务贸易等项目对外支付税务备案有关问题的公告》（2013 年第 40 号，经 2021 年第 19 号修订）。
-- 《国家税务总局关于发布〈一般反避税管理办法（试行）〉的公告》（国家税务总局公告 2014 年第 32 号）。
-- 《国家税务总局关于〈中华人民共和国政府和新加坡共和国政府关于对所得避免双重征税和防止偷漏税的协定〉及议定书有关条文解释和执行问题的通知》（国税发〔2010〕75 号）。
-
-**税收协定网络（截至 2025 年）：** 中国已与 110 多个国家或地区签署避免双重征税协定（DTA）或安排，包括与香港、澳门、台湾签订的内地与港澳台地区税收安排。所有有效协定文本及议定书可在国家税务总局官方网站（https://www.chinatax.gov.cn）的"税收法律法规 → 国际税收 → 税收协定"栏目查询。
-
-**官方门户：**
-
-- 国家税务总局电子税务局 —— https://etax.chinatax.gov.cn
-- 国家税务总局官网 —— https://www.chinatax.gov.cn
-- 自然人电子税务局（扣缴端） —— https://its.jszxbs.cn/（个人所得税扣缴申报）
-- 非居民税务事项申请 —— 通过电子税务局"非居民"入口办理
-
-## 十一、交叉引用
-
-- 中国企业所得税居民企业征收 → 见 `cn-corporate-income-tax.md`（待建）。
-- 中国增值税申报（一般纳税人、销售方角度）→ 见 `cn-vat-return.md`（待建）。
-- 中国个人所得税综合所得汇算清缴 → 见 `cn-iit.md`（待建）。
-- 中港跨境税务架构 → 见 `cn-hk-cross-border.md`（待建）。
-- 中国客户身份核实与尽职调查 → 见 `intake.md`。
-- 国际税收基础（来源地原则、PE 判定、协定解释）→ 见 `foundation.md`。
-
-## 结尾声明
-
-技能版本 1.0。税年 2025。须由具备中国注册税务师（CTA）或具备执业经验的注册会计师（CPA）签署后方可正式使用。BEPS Pillar Two 在中国的本地化立法（IIR/UTPR）尚未出台 —— 在国家税务总局发布相关实施细则前，不应基于本技能对 2026 年及以后期间作出最终结论。
+| EIT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html | 2026-10-29 |
+| EIT Regulations | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html | 2026-10-29 |
+| IIT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html | 2026-10-29 |
+| STA 2018 No.61 withholding measures | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html | 2026-10-29 |
+| STA 2017 No.37 | https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html | 2026-10-29 |
+| Treaty measures 2019 No. 35 Arts. 3,7–9,11 | https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml | 2026-10-29 |
+| STA 2018 No.9 beneficial-owner rules | https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194781/content.html | 2026-10-29 |
+| Caishui 2015 No.101 | https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html | 2026-10-29 |
+| STA 2015 No.7 | https://www.chinatax.gov.cn/chinatax/n810341/n810765/n1465977/201502/c1676726/content.html | 2026-10-29 |
+| MOF/STA 2021 No.28 | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5194989/content.html | 2026-10-29 |
+| Tax Collection Administration Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-10-29 |
+| 2026 VAT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html | 2026-10-29 |
+| 2026 VAT Implementation Regulations | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html | 2026-10-29 |
+
+| Additional operative source | https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml | 2026-10-29 |
+| Additional operative source | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html | 2026-10-29 |
+
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
+
+**Not yet confirmed:** the exact current Hong Kong/Singapore/US/UK/Japan/Germany treaty rates and protocol/MLI holding-period conditions; Hong Kong/other destination-country taxation; indirect-transfer safe-harbour application to a particular restructuring; special equity/restricted-share treatment; general currency-control/remittance procedures; cross-period gross-up complications where the actual tax-bearing contract differs; Pillar Two effects; case-specific treaty-refund limitation periods and future electronic-form coordinates. These do not authorise the former blanket “when unsure, call it a royalty” or “withhold 20% then refund” defaults. Additional original topics retained as explicit unconfirmed/referral limits: Netherlands, France, South Korea, Australia, Canada, Luxembourg and Ireland treaty rates/conditions; guarantee-fee classification; digital services/cross-border ecommerce; private funds/QFLP/QDLP; FATCA referrals.
 
 <!-- openaccountants-cta-block -->
 

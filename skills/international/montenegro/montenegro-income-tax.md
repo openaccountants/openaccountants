@@ -1,10 +1,10 @@
 ---
 name: montenegro-income-tax
 description: "Montenegro personal income tax (porez na dohodak fizičkih lica) for tax year 2026, from the Personal Income Tax Law as amended by 160/25 (from 1 January 2026) and 70/26 (from 21 May 2026). Covers residence and scope, the monthly salary bands (0, 9 and 15% at EUR 700 and 1,000), the annual bands for a principal independent activity (0, 9 and 15% at EUR 8,400 and 12,000), the flat 15% for supplementary entrepreneurs, occasional work, rent, capital income, capital gains, sport, royalties, other receipts and internet or gaming income, and gambling winnings (progressive to 20 May, 12% from 21 May). Sets out business-profit adjustments, standard expense percentages, losses, reliefs, the municipal surtax, the GPP-FL return due by the end of April, monthly advances, withholding, lump-sum tax, fines and the foreign tax credit. Payroll, social contributions and VAT have their own skills."
-version: 0.3
+version: 0.4
 jurisdiction: ME
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -109,7 +109,7 @@ Occasional work outside the taxpayer's main activity, or a work contract (ugovor
 | KAMATA, interest received | Capital income, 15% of gross (interest on Montenegrin government, central bank or municipal debt securities is not capital income) | Art. 37(1)(1) and (5) |
 | DIVIDENDA, dividend | Capital income, 15% of gross | Art. 37(1)(4) |
 | POVRAĆAJ POREZA, tax refund | Not income | Art. 42(6) |
-| Own-account transfers, loan principal, VAT payments | Neither income nor expense | Arts. 13 and 18 |
+| Own-account transfers and loan principal; output VAT remittances and recoverable input VAT | Neither income nor expense; check nonrecoverable VAT with the underlying expense or asset in the accounts-to-tax workpaper | Arts. 13, 18, 20 and 23 |
 | POREZ, PRIREZ, income tax paid; drawings | Not deductible | Art. 21 |
 | KAZNA, fines and penalties | Not deductible | Art. 21(7) |
 | Laptop, furniture, car over EUR 200 | Fixed asset, depreciate | Art. 23 |
@@ -142,12 +142,12 @@ Interest; the owner's private use of company assets and services; liquidation su
 
 ### Gambling winnings
 
-Taxable winnings are each individual winning from lottery games, betting and global jackpots, less the stake for that winning (art. 37s, as replaced by [160/25 art. 10][amend]). Prize games are not income (art. 5(10)). Rates: progressive bands for winnings paid to 20 May 2026; 12% for winnings paid from 21 May 2026 ([70/26][may]). The game organiser withholds at each payment or transfer (art. 50f).
+Taxable winnings from lottery games and betting are each winning less its corresponding stake (art. 37s(2)(1) and (2)); a global jackpot uses the total accumulated prize defined in art. 37s(2)(3), without importing that stake deduction. These definitions were replaced by [160/25 art. 10][amend]. Prize games are not income (art. 5(10)). Rates: progressive bands for winnings paid to 20 May 2026; 12% for winnings paid from 21 May 2026 ([70/26][may]). The game organiser withholds at each payment or transfer (art. 50f).
 
 ### Reliefs
 
 - **Underdeveloped municipalities** (arts. 32 and 32a): a taxpayer who starts an activity there pays no tax for the first eight years from registration, capped at EUR 200,000 in total including other state aid. Not available to someone who closed the same or a similar activity in the previous three years, to recipients of aid for firms in difficulty, or in transport, shipbuilding, steel, trade and hospitality (except primary hospitality establishments). Apply within 30 days of registration; the authority decides; a statement of other state aid goes with each annual return.
-- **New hires there** (art. 32b): a permanent or at least five-year hire of a person registered with the Employment Agency for over three months and living in an underdeveloped municipality frees the salary tax for four years, if headcount rises above the 12-month average. If the employer ends the contract within five years (other than at the employee's request or for serious breach), the tax is repaid within 30 days.
+- **New hires there** (art. 32b): a permanent or at least five-year hire of a person registered with the Employment Agency for over three months and living in an underdeveloped municipality frees the salary tax for four years, if headcount rises above the 12-month average. If the employer ends the contract within five years (other than at the employee's request or for serious breach), the tax is repaid within 30 days. A person previously employed by the founder or a related person of the new employer is excluded, whether or not there was a break in employment (art. 32b(3)).
 - **Expired** (art. 32c): the 2021 to 2023 new-hire relief.
 - **Research and innovation; digital nomads** (art. 32d): exemption for beneficiaries of research and innovation incentives, and for income from a foreign employer earned under digital-nomad status, each under its own law.
 
@@ -167,11 +167,73 @@ Taxable winnings are each individual winning from lottery games, betting and glo
 - **Two or more employers.** The authority assesses the tax by decision within 30 days of the return, from the return and its own records (art. 43a).
 - **Business advances.** Principal and supplementary business tax is paid in monthly advances of 1/12 of the previous year's tax, by the end of each month for the previous month (art. 48(1) and (2)). A new business files an information return with its estimated income within 15 days of registration (art. 48(4)).
 - **Lump-sum tax** (art. 49): available on request to a principal independent activity with turnover below EUR 30,000.01. Apply by the end of January, or within five days of registration for a new activity; the authority decides within 15 days. Tax is paid monthly at 1/12 by the end of the month for the previous month; seasonal activities of up to six months pay by the 5th of the month for the current month. Turnover books must be kept. Not available for lawyers, notaries, auditors, accountants, health, consulting, design, surveying, enforcement officers and other professional and intellectual activities, hairdressing, billiards and amusement games, wholesale and retail trade, hospitality, hotels, financial intermediation, real estate, or VAT-registered taxpayers; the authority can approve lump-sum tax for trade or hospitality in a kiosk, trailer or mobile unit only where the taxpayer produces and sells only its own products (art. 49(10) and (11)). If circumstances justify it, the authority orders a change of method by decision (art. 49(7)). The scale is set by Ministry rulebook (art. 49(2)).
+
 - **Withholding by the payer, at payment:** salary (art. 46), occasional work (art. 48a), rent paid by a legal person or entrepreneur (art. 49a), capital income (art. 50), sport and copyright income earned in Montenegro (arts. 50b(1) and 50c(1)), other receipts (art. 50d). Gambling: the organiser withholds at payment and pays by the 15th of the following month (art. 50f).
 - **Paid with the annual return:** capital gains (art. 50a), internet and gaming income (art. 50e), sport and copyright income earned abroad (arts. 50b(2) and 50c(2)), and occasional work or rent received directly (arts. 48a(2) and 49a(2)).
 - **Self-assessed within five days:** salary from abroad, and salary from a foreign diplomatic mission or international organisation (art. 46(6) and (7)).
-- **Employer reports.** Monthly report of taxes and contributions by the 15th of the month for the previous month (art. 47(3)); annual statement of salary and tax to each employee by 31 January (art. 47(1)); other payers give recipients a statement by 31 January (art. 47(5)).
+- **Employer reports.** Monthly report of taxes and contributions by the 15th of the month for the previous month (art. 47(3)); annual statement of salary and tax to each employee by 31 January (art. 47(1)); payers of other personal earnings under article 14 give recipients a statement by 31 January (art. 47(5)).
 - **Records.** Keep identity and residence evidence, income records, accounts and loss registers, asset, valuation and indexation evidence, relief decisions, foreign tax and treaty evidence, payer statements, advance payments, the signed return and payment records.
+
+### Lump-sum scale, application and turnover book
+
+First apply the principal-activity, profession, VAT and own-product gates in article 49 above. A turnover of exactly EUR 30,000 is within the statutory test of less than EUR 30,000.01; a turnover of EUR 30,000.01 is not. A group name in the rulebook does not override a statutory exclusion. For example, the rulebook's group-I list includes barbers, while the statute excludes hairdressing. Do not infer eligibility from the group list alone. The authority fixes the liability by decision. [PIT Law art. 49][law]; [Pausal Rulebook arts. 2 to 5][pausal].
+
+The four activity groups recognise costs of I: 50%, II: 40%, III: 35%, IV: 30%. The rulebook's examples include beekeepers in I, tailors and plumbers in II, vehicle mechanics in III, and bakers in IV. Match the actual activity to the full article 3 list and obtain the decision; do not choose the largest cost percentage. Within each group the turnover ceilings are EUR 7,500, 15,000, 22,500 and 30,000. The following are the **annual scale amounts**, using the subgroup ceiling, not a calculation of costs against arbitrary actual receipts. [Pausal Rulebook arts. 3 to 5][pausal].
+
+| Group / recognised costs | Turnover ceiling EUR | Scale taxable income EUR | Annual PIT EUR | Annual PIT + contributions EUR | Official source |
+|---|---:|---:|---:|---:|---|
+| I / 50% | 7,500.00 | 3,750.00 | 0.00 | 412.50 | [Pausal Rulebook art. 5][pausal] |
+| I / 50% | 15,000.00 | 7,500.00 | 0.00 | 825.00 | [Pausal Rulebook art. 5][pausal] |
+| I / 50% | 22,500.00 | 11,250.00 | 256.50 | 1,494.00 | [Pausal Rulebook art. 5][pausal] |
+| I / 50% | 30,000.00 | 15,000.00 | 774.00 | 2,424.00 | [Pausal Rulebook art. 5][pausal] |
+| II / 40% | 7,500.00 | 4,500.00 | 0.00 | 495.00 | [Pausal Rulebook art. 5][pausal] |
+| II / 40% | 15,000.00 | 9,000.00 | 54.00 | 1,044.00 | [Pausal Rulebook art. 5][pausal] |
+| II / 40% | 22,500.00 | 13,500.00 | 549.00 | 2,034.00 | [Pausal Rulebook art. 5][pausal] |
+| II / 40% | 30,000.00 | 18,000.00 | 1,224.00 | 3,204.00 | [Pausal Rulebook art. 5][pausal] |
+| III / 35% | 7,500.00 | 4,875.00 | 0.00 | 536.25 | [Pausal Rulebook art. 5][pausal] |
+| III / 35% | 15,000.00 | 9,750.00 | 121.50 | 1,194.00 | [Pausal Rulebook art. 5][pausal] |
+| III / 35% | 22,500.00 | 14,625.00 | 717.75 | 2,326.50 | [Pausal Rulebook art. 5][pausal] |
+| III / 35% | 30,000.00 | 19,500.00 | 1,449.00 | 3,594.00 | [Pausal Rulebook art. 5][pausal] |
+| IV / 30% | 7,500.00 | 5,250.00 | 0.00 | 577.50 | [Pausal Rulebook art. 5][pausal] |
+| IV / 30% | 15,000.00 | 10,500.00 | 189.00 | 1,344.00 | [Pausal Rulebook art. 5][pausal] |
+| IV / 30% | 22,500.00 | 15,750.00 | 886.50 | 2,619.00 | [Pausal Rulebook art. 5][pausal] |
+| IV / 30% | 30,000.00 | 21,000.00 | 1,674.00 | 3,984.00 | [Pausal Rulebook art. 5][pausal] |
+
+Column 5 of the official scale is PIT alone. Column 6 is PIT **plus mandatory social contributions**, shown as `taxable income × 11% + PIT`. For an ordinary insured principal entrepreneur this reconciles to 10% PIO plus 1% unemployment on the pausal taxable-income base (Contributions Law arts. 9(7), 11(5), 15(2) and 18(2)). Do not treat the combined column as PIT or add those contributions a second time. Municipal surtax is separate and uses the relevant municipal decision. [Pausal Rulebook art. 5][pausal]; [Contributions Law][contrib]; [2026 seasonal informator, pausal section][seasonal].
+
+For a full-year group-II third-subgroup decision, annual PIT is EUR 549 and contributions EUR 1,485, total EUR 2,034; the corresponding monthly amounts are EUR 45.75, 123.75 and 169.50. The ordinary PIT payment is one twelfth by the end of the current month for the previous month; the special payment date for a seasonal principal activity of no more than six months is the fifth of the current month. Use the authority's actual period and decision for a seasonal or partial-year liability, rather than assuming the full annual table or a rounding method. [PIT Law art. 49(3), (6) and (8)][law]; [Pausal Rulebook art. 5][pausal].
+
+**ZPO application.** The printed application records taxpayer identity and addresses, business details, bank accounts, year, activity and manner of working, owned/rented premises and area, owned/rented equipment, employee count, prior-year product and service receipts and their sum (7.1 + 7.2 = 7.3), planned product and service receipts and their sum (8.1 + 8.2 = 8.3), applicant details and signature/date, and lodging details. Section 11 is completed by the authority. The ordinary deadlines remain end January or five days after a new registration. For **2026 only**, the Tax Administration treated applications through **27 February 2026** as timely and required paper ZPO during the IRMS rollout. Its later 2026 seasonal informator describes electronic ZPOG/ZPOS applications in IRMS's collection module. Preserve this chronology; the printed form's diskette/email fields are not evidence that those channels operate today. [Pausal Rulebook art. 7 and ZPO attachment][pausal]; [Tax Administration notice, 5 February 2026][pausalnotice]; [2026 seasonal informator][seasonal].
+
+**KPP turnover book.** Record name, place, activity/group and tax ID; then each transaction's serial number, chronological posting date, product receipts, service receipts and their total (columns 3 + 4 = 5). Article 6 requires the record to use turnover registered through the electronic collection device and allows the book itself to be electronic. Reconcile the product/service totals to the application and decision records. [Pausal Rulebook art. 6 and KPP attachment][pausal].
+
+### GPP-FL: promulgated schedules and the calculation crosswalk
+
+The Gazette download for amendment **103/2025, article 3**, contains the actual GPP-FL and all thirteen attachments, unlike the short consolidated rulebook. The crosswalk below describes those printed fields. Determine **2026** liability and the filing population under the later PIT Law first; the 2025 form does not override the 160/25 or 70/26 amendments. This crosswalk is not confirmation of every live IRMS field or acceptance rule. [103/2025 arts. 1 to 3 and attachments][gppforms]; [PIT Law arts. 10, 43, 44 and 48a][law]; [160/25][amend]; [70/26][may].
+
+On the cover select original/amended and resident/nonresident, state the year, taxpayer ID/name and personal details, residence/contact address, business registration/activity/headcount, bank accounts, relevant attachments and notes. The taxpayer or authorised representative signs; authority receipt and processing fields are separate. [GPP-FL cover and general instructions][gppforms].
+
+| Attachment | Workpaper and printed destination | Official source |
+|---|---|---|
+| A: independent-activity profit/loss | Start with accounting profit (1), add book depreciation (2) and nonallowable expenses (4), deduct tax depreciation (3) and dividends/profit shares included in the business accounts (5). Positive adjusted profit is row 6; deduct permitted PPG losses (7) to obtain row 8. Row 9 separates the taxable bands and feeds main 1.1; the annual principal-activity tax goes to main 1.2. A new business loss belongs to A10, not a PIT credit. | [103/25 art. 3, A and instructions][gppforms]; [PIT Law arts. 17 to 33][law] |
+| PPG: business losses | List unused losses by origin in the previous five years. PPG1 takes A6; PPG3 uses no more than the available profit and transfers to A7. Keep capital losses out of this register. | [103/25 art. 3, PPG][gppforms]; [PIT Law arts. 33 and 37h][law] |
+| A1: social contributions | Record turnover (1), contribution base (1a), PIO charge/exemption (2.1/2.2), unemployment charge/exemption (2.3/2.4), and advances by component (3.1/3.2). Compare each net component with its own advances; overpayments are 4.1/4.2 and debts 5.1/5.2. Contributions are separate from main PIT advances and foreign tax credit. | [103/25 art. 3, A1][gppforms]; [Contributions Law arts. 9, 11, 15, 18][contrib] |
+| B: property income | Classify rent and apply documented costs or the qualifying standard route, not both. B4 is the base for main 3.1; B5 is withholding supported by B1 for main 5.4. Record each property's details; the instructions require extra B sheets if there are more than six properties, with income/cost amounts only on the first. The current statutory filing exception for a legal-person/entrepreneur payer still applies. | [103/25 art. 3, B][gppforms]; [PIT Law arts. 35, 36, 43 and 49a][law] |
+| B1: rent payer certificate | Payer and recipient identities; gross rent, tax base and advance in rows 1, 2 and 3. The payer signs. The advance supports B5; do not duplicate the rent or infer a new annual filing obligation from the certificate. | [103/25 art. 3, B1][gppforms]; [PIT Law art. 43(4)(2)][law] |
+| C: capital gains/losses | Identify the asset and buyer, sale price, property reconstruction/sale costs and acquisition basis, then separate gains and losses. C9 is the positive same-year balance, or zero, for main 3.2. Keep the statutory valuation, indexation, FIFO and exemption checks above; a gain in business books goes through the tax balance rather than being duplicated here. | [103/25 art. 3, C][gppforms]; [PIT Law arts. 37a to 37h and 43(6a)][law] |
+| D: sport | Classify the sport receipt, total income (2), documented or qualifying standard costs (3/4), selected deduction (5), and base (6) for main 3.3. D7 is the advance supported by D1 for main 5.5. | [103/25 art. 3, D][gppforms]; [PIT Law arts. 37i to 37k][law] |
+| D1: sport payer certificate | Payer/recipient identities, gross receipt (1), base (2) and advance (3), signed by the payer. Carry only the advance to D7. | [103/25 art. 3, D1][gppforms] |
+| E: copyright and related receipts | Classify copyright, related rights, patent/trademark or cultural professional income; total at E2; documented or applicable standard costs at E3/4; selected costs at E5; base at E6 for main 3.4. E7 is the E1 advance for main 5.6. The printed instructions reserve their 50% architecture route for constructed objects and exclude sketches/plans; preserve the statutory category analysis rather than automatically assigning 50% to every architectural invoice. | [103/25 art. 3, E][gppforms]; [PIT Law art. 37lj][law] |
+| E1: copyright payer certificate | Payer/recipient identities, gross receipt (1), base (2), advance (3) and payer signature. The advance supports E7. | [103/25 art. 3, E1][gppforms] |
+| F: foreign income | Separate source categories and countries, showing income and foreign tax in distinct columns. F10 is foreign salary for main 2.1; F11 is occasional-work income and F12 the other listed foreign categories for main 3.5. F13 records foreign tax paid, F14 the corresponding Montenegrin tax and F15 the lower eligible credit for main 5.7, subject to the statutory foreign-country cap and the separate allocation workpaper. Do not duplicate the same foreign receipt in F and a domestic schedule. | [103/25 art. 3, F][gppforms]; [PIT Law art. 44][law] |
+| G: two or more salary payers | Record payer names/IDs, annual gross earnings and annual tax by payer and totals, with OPD-2 statements. The trigger is combined monthly gross above EUR 700 in at least one month. The authority determines the additional tax by decision; do not route these domestic wages through the foreign-salary field. | [103/25 art. 3, G][gppforms]; [PIT Law arts. 43(4)(5) and 43a][law] |
+| H: direct occasional work, internet and gaming | H3 less documented or 30% standard costs in H4 gives H5. H6 less the 15% internet deduction in H7 gives H8. H9 less documented or 20% gaming costs in H10 gives H11. H12 = H5 + H8 + H11 feeds main 3.6. Use occasional-work H only for receipts not subject to payer withholding under article 48a; registered business and salary keep their own class. | [103/25 art. 3, H][gppforms]; [PIT Law arts. 16, 20, 37o to 37r and 48a][law] |
+
+**Main settlement.** The printed form separately calculates principal-business PIT (1.2) and foreign-salary PIT (2.2). Foreign salary uses the monthly salary bands on each month's receipts, not the annual business scale. The bases in main 3.1 to 3.6 sum to 3.7; the printed 15% row 3.8 produces 3.9. Main 4.1 sums 1.2 + 2.2 + 3.9. Main 5.1 to 5.7 record paid business PIT advances, approved underdeveloped-municipality and research/innovation relief, B/D/E withholding and the allowed F credit; total at 5.8. Do not enter a contribution payment as a PIT advance. A positive 4.1 minus 5.8 goes to 6.1 (due); the reverse positive difference to 6.2 (overpaid). Split an overpayment between refund requested (6.3) and next-period credit (6.4) without claiming it twice. [GPP-FL main calculation and instructions, F instructions][gppforms]; [PIT Law arts. 42 and 44][law].
+
+**Foreign-tax evidence.** F's instructions require a certificate from the competent authority abroad showing the source, amount of income and tax paid, in the source-country language and Montenegrin with a court-certified translation. Preserve the proof and apply treaty priority and the article 44 cap; the printed aggregate credit field does not authorise unused credit from one foreign country to erase tax on another country's income. Article 44 states the cap by foreign country; a mandatory separate category basket within the same country is not established here. Also retain the Montenegro tax already paid within five days on foreign salary under article 46(7): article 42(4) credits advances, but main 5.1 is labelled business advances and F15 is foreign tax. The live return field for those Montenegro salary advances is unresolved; the printed crosswalk must not cause the same salary tax to be paid twice. [F instructions][gppforms]; [PIT Law arts. 44 and 45][law].
+
+**Printed-instruction conflicts.** The A instructions tell the reader once to put a loss in row 9, whereas the actual form and its later instruction use row 10. A1's instruction for total contributions says `2.1 + 2.2`, even though 2.2 is a PIO exemption and unemployment has separate rows. F's prose for row 11 points to row 2 column 6 (tax), while the printed form points to row 2 column 5 (income). F's discussion of the domestic-tax cap also refers to row 13 where the actual cap is row 14. A general note says occasional work is not entered in GPP-FL, but the same promulgated amendment supplies H for nonwithheld occasional receipts; H's following-page prose also contradicts the statutory payer-withholding duty. Preserve these discrepancies in the workpaper, follow the current statute for liability, and do not present an invented portal correction as verified. [103/25 art. 3, main notes and A/A1/F/H instructions][gppforms]; [PIT Law arts. 43 and 48a][law]. The unresolved 2026 mappings and rounding are listed under Sources.
 
 ## Penalties and interest
 
@@ -184,7 +246,7 @@ Taxable winnings are each individual winning from lottery games, betting and glo
 ## Cross-border points
 
 - **Nonresidents** are taxed only on Montenegrin income (art. 4(2)), with no loss carry-forward (art. 8). They file only for Montenegrin income on which no withholding is prescribed (art. 43(6)).
-- **Foreign tax credit.** A resident who pays income tax abroad gets a credit for it, capped at the Montenegrin tax on that income (art. 44). Compute the cap with the right class rate and base: a principal business uses the progressive bands, not a flat 15%. Do not credit social contributions, refundable treaty excess or unproved tax. The law gives no carry-forward of unused credit.
+- **Foreign tax credit.** A resident who pays income tax abroad gets a credit for it, capped at the Montenegrin tax on the income earned in that foreign country (art. 44). Maintain a workpaper per foreign country and compute the corresponding domestic tax with the right class rates and bases: a principal business uses the progressive bands, not a flat 15%. Do not credit social contributions, refundable treaty excess or unproved tax. The law gives no carry-forward of unused credit.
 - **Treaties** prevail over the PIT Law (art. 45(1)). The Ministry sets the form and procedure for residence certificates (art. 45(2)).
 - **Foreign salary** is self-assessed and paid within five days of receipt (art. 46(7)); a nonresident organisation with a seat or permanent unit in Montenegro withholds like a local employer (art. 46(5)).
 - **Foreign sport and copyright income** is taxed annually with the return (arts. 50b(2) and 50c(2)).
@@ -389,6 +451,8 @@ expected:
   excess_not_claimed: 500
 ```
 
+**Reviewer qualification of the preceding preserved dividend example:** its stated facts contain only this foreign dividend. The EUR 500 is not claimed in that case. The original phrase about other income does not establish a mandatory category basket within one foreign country; apply the country cap in [PIT Law art. 44][law] and retain any unresolved same-country allocation question.
+
 ### 9. Fine-art royalty and amateur sport
 
 Fine-art rights 5,000 with no documented costs: 60% standard, base 2,000, PIT 300. Amateur sport income 5,000 (not salary) with no documented costs: 90% standard, base 500, PIT 75. [Arts. 37i to 37m, 50b and 50c][law]
@@ -445,6 +509,8 @@ expected:
   tax_from_21_may: 180
 ```
 
+The [additional controls](../../../ledgers/montenegro-income-tax-evidence/additional-controls.md) recompute the complete pausal table and the new form crosswalk.
+
 ## Ask the client first
 
 1. Residence: domicile, centre of vital interests, days in Montenegro in 2026, and any posting abroad or digital-nomad status.
@@ -458,18 +524,23 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Personal Income Tax Law, consolidated through 160/25 (Ministry of Finance publication), arts. 1 to 10a, 12 to 37s, 42 to 53v, 62 | https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0 | 2026-10-30 |
-| Law amending the Personal Income Tax Law, Official Gazette 160/25, arts. 1 to 21 (application from 1 January 2026, art. 21) | https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0 | 2026-10-30 |
-| Law amending the Personal Income Tax Law, Official Gazette 70/26, arts. 1 to 3 (12% gambling rate) | https://www.sluzbenilist.me/propisi/394390/download | 2026-10-30 |
-| Official Gazette record for 70/26: published 20.05.2026, in force 21.05.2026 | https://www.sluzbenilist.me/propisi/394390 | 2026-10-30 |
+| Personal Income Tax Law, consolidated through 160/25 (Ministry of Finance publication), arts. 1 to 10a, 12 to 37s, 42 to 53v, 62 | https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0 | 2026-10-31 |
+| Law amending the Personal Income Tax Law, Official Gazette 160/25, arts. 1 to 21 (application from 1 January 2026, art. 21) | https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0 | 2026-10-31 |
+| Law amending the Personal Income Tax Law, Official Gazette 70/26, arts. 1 to 3 (12% gambling rate) | https://www.sluzbenilist.me/propisi/394390/download | 2026-10-31 |
+| Official Gazette record for 70/26: published 20.05.2026, in force 21.05.2026 | https://www.sluzbenilist.me/propisi/394390 | 2026-10-31 |
 | Ministry of Finance, notice on taxation of gambling winnings, 5 January 2026 (bands from 1 January 2026) | https://www.gov.me/clanak/jasna-pravila-oporezivanja-dobitaka-od-igara-na-srecu-zakon-se-primjenjuje-jednako-na-sve | 2026-10-30 |
-| Rulebook on the form and content of the annual PIT return (GPP-FL), through 103/2025, arts. 1 to 5 | https://wapi.gov.me/download/afb50b45-7e83-4dac-b69e-2a1e280d3ffc?version=1.0 | 2026-10-30 |
-| Local Self-Government Financing Law, through 149/2025, arts. 8 and 9 (surtax) | https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0 | 2026-10-30 |
-| Law on Contributions for Mandatory Social Insurance, through 160/2025, arts. 14, 15, 17 and 18 | https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0 | 2026-10-30 |
-| VAT Law, consolidated through 12/26, arts. 24, 42 and 55 | https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0 | 2026-10-30 |
-| Tax Administration Law, Ministry consolidation published March 2026 (before 104/26), art. 95(1) (0.03% a day) | https://wapi.gov.me/download/2dd530ac-eec4-4d0c-9d8f-0c9e7ebc5b86?version=1.0 | 2026-10-30 |
-| Law amending the Tax Administration Law, Official Gazette 104/26, arts. 20 and 26 (ECB + 3 points from 18 July 2026) | https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0 | 2026-10-30 |
-| Tax Administration decision on the default interest rate for 18 July to 31 December 2026 (5.4% a year) | https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0 | 2026-10-30 |
+| Rulebook on the form and content of the annual PIT return (GPP-FL), through 103/2025, arts. 1 to 5 | https://wapi.gov.me/download/afb50b45-7e83-4dac-b69e-2a1e280d3ffc?version=1.0 | 2026-10-31 |
+| Local Self-Government Financing Law, through 149/2025, arts. 8 and 9 (surtax) | https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0 | 2026-10-31 |
+| Law on Contributions for Mandatory Social Insurance, through 160/2025, arts. 14, 15, 17 and 18 | https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0 | 2026-10-31 |
+| VAT Law, consolidated through 12/26, arts. 24, 42 and 55 | https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0 | 2026-10-31 |
+| Tax Administration Law, Ministry consolidation published March 2026 (before 104/26), art. 95(1) (0.03% a day) | https://wapi.gov.me/download/2dd530ac-eec4-4d0c-9d8f-0c9e7ebc5b86?version=1.0 | 2026-10-31 |
+| Law amending the Tax Administration Law, Official Gazette 104/26, arts. 20 and 26 (ECB + 3 points from 18 July 2026) | https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0 | 2026-10-31 |
+| Tax Administration decision on the default interest rate for 18 July to 31 December 2026 (5.4% a year) | https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0 | 2026-10-31 |
+
+| Pausal Rulebook, consolidated through 118/2024, arts. 2 to 7, scale, KPP and ZPO (Ministry publication 1 April 2026) | https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0 | 2026-10-31 |
+| GPP-FL amendment, Gazette 103/2025, arts. 1 to 4 and all printed schedules/instructions | https://www.sluzbenilist.me/propisi/385024/download | 2026-10-31 |
+| Tax Administration, 2026 seasonal-business informator (IRMS, applications, pausal and separate surtax) | https://wapi.gov.me/download/16a44be5-b5f1-431e-952a-9251f90dfdc4?version=1.0 | 2026-10-31 |
+| Tax Administration notice, 5 February 2026, annual pausal request accepted through 27 February 2026 on paper ZPO | https://www.gov.me/clanak/rok-za-podnosenje-zahtjeva-za-pausalno-oporezivanje-produzen-do-27-februara-2026-godine | 2026-10-31 |
 
 [law]: https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0
 [amend]: https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0
@@ -480,7 +551,12 @@ expected:
 [contrib]: https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0
 [vat]: https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0
 
-Not yet confirmed: the GPP-FL schedules and their box layout (the rulebook PDF omits the attachments) and the e-filing portal; the PIT-specific rulebook classifying assets into depreciation groups (art. 23(8)); the lump-sum tax scale (art. 49(2)); each municipality's current surtax rate (only the 13% and 15% caps are confirmed); the 2026 PIO annual ceiling (the old EUR 68,765 was a 2024 figure); the treatment of government grants in business income; the dual net minimum wage of EUR 670 and 800 and the employer Labour Fund and Chamber levies (see the payroll skill); the list of underdeveloped municipalities; and a September 2026 Government proposal to change salary taxation from 1 January 2027, not found enacted.
+[pausal]: https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0
+[gppforms]: https://www.sluzbenilist.me/propisi/385024/download
+[seasonal]: https://wapi.gov.me/download/16a44be5-b5f1-431e-952a-9251f90dfdc4?version=1.0
+[pausalnotice]: https://www.gov.me/clanak/rok-za-podnosenje-zahtjeva-za-pausalno-oporezivanje-produzen-do-27-februara-2026-godine
+
+Not yet confirmed: live IRMS GPP-FL fields/acceptance rules and a 2026 return mapping for supplementary entrepreneurship, Montenegro advances already paid on foreign salary, country-level foreign-credit allocations, or foreign gambling after the mid-year rate change (the printed 2025 main calculation uses 15% for its pooled foreign-income line); corrected portal instructions for the documented A/A1/F/H contradictions and any same-country category-allocation rule for foreign credits; partial-year band proration and rounding (A's example rounds 8,400/365 to 23.01 before multiplying by 302, giving 6,949.02 rather than 6,950.14 at full precision); the PIT-specific rulebook classifying assets into depreciation groups (art. 23(8)); each municipality's current surtax rate (only the 13% and 15% caps are confirmed); the 2026 PIO annual ceiling (the old EUR 68,765 was a 2024 figure); the treatment of government grants in business income; the dual net minimum wage of EUR 670 and 800 and the employer Labour Fund and Chamber levies (see the payroll skill); the list of underdeveloped municipalities; and a September 2026 Government proposal to change salary taxation from 1 January 2027, not found enacted. The pausal scale and promulgated printed schedules are now retained, so their former source-access gaps are closed; the remaining ordinary return-mapping gaps keep IT-IND partial.
 
 <!-- openaccountants-cta-block -->
 

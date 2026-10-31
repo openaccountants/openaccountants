@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   XB: me-cross-border
 partial:
-  IT-IND: "lump-sum (pausal) tax amounts for small entrepreneurs (art. 49 scale) and the GPP-FL schedule layout not yet confirmed"
+  IT-IND: "2026 GPP-FL mapping for supplementary entrepreneurship, Montenegro foreign-salary advances, country-level foreign-credit allocation and mid-year foreign gambling, live portal handling of printed A/A1/F/H conflicts, and partial-year band proration/rounding remain unconfirmed; pausal scale and promulgated printed schedules now sourced"
 ---
 
 # Montenegro: tax pack
@@ -16,7 +16,7 @@ Calendar tax year. Authority: the Tax Administration (Poreska uprava), with retu
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | montenegro-income-tax (2026: residence, salary and business bands, supplementary and occasional work, rent with 30/50/70% standard costs, capital income and gains at 15%, sport, royalties, internet and gaming, gambling before and after 21 May 2026, losses, foreign tax credit, advances, GPP-FL by end of April, lump-sum eligibility, fines, interest) | checked against the law |
+| IT-IND, individual income tax | montenegro-income-tax (2026: residence, salary and business bands, supplementary and occasional work, rent with 30/50/70% standard costs, capital income and gains at 15%, sport, royalties, internet and gaming, gambling before and after 21 May 2026, losses, foreign tax credit, advances, GPP-FL by end of April, lump-sum eligibility and all 16 scale amounts, KPP/ZPO, all 13 printed GPP-FL schedules with unresolved 2026 mappings, fines, interest) | checked against the law |
 | IT-CORP, corporate income tax | me-corporate-income-tax (2026: 9/12/15% bands, base and capped costs, depreciation groups, capital gains, five-year losses, incentives, group relief, return and payment within three months, fines, interest) | checked against the law |
 | VAT | montenegro-vat (2026: 21/15/7/0% with the art. 24a lists, EUR 30,000 registration, monthly return and payment by the 15th, building land from 1 April 2026, reverse charge, imports, deduction and refunds, fines, interest) | checked against the law |
 | SC, social contributions | montenegro-social-contributions (2026: PIO 10% employee and 0% employer, unemployment 0.5% + 0.5%, Labour Fund 0.2%, entrepreneur bases at 60/100/150% of the average wage, farmers, additional service, annual PIO ceiling and refund, IOPPD by the 15th, fines, interest) | checked against the law |
@@ -35,3 +35,10 @@ Also in the pack: montenegro-tax-optimization, me-tax-overview and me-company-fo
 - Law on Compulsory Social Insurance Contributions, Ministry publication through 160/25: https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0 (read 2026-10-30)
 - Law amending the Tax Administration Law, Official Gazette 104/26 (interest from 18 July 2026): https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0 (read 2026-10-30)
 - Tax Administration decision on the interest rate for 18 July to 31 December 2026: https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0 (read 2026-10-30)
+
+## 31 October source follow-up
+
+The PIT Guide now includes the original pausal scale, application and turnover book, and the promulgated 103/2025 GPP-FL attachments. IT-IND stays partial for the ordinary form-mapping and partial-year questions named above. This update does not re-attest the other nine Guides or convert prior AI source reviews into accountant attestation. The [figure ledger and complete predecessor destinations](../../../ledgers/montenegro-income-tax.md) retain the source and preservation chain.
+
+- Pausal rule, arts. 2 to 7: https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0 (read 2026-10-31).
+- GPP-FL amendment 103/2025 with all schedules: https://www.sluzbenilist.me/propisi/385024/download (read 2026-10-31).

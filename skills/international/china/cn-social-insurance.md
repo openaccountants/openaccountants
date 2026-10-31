@@ -2,451 +2,174 @@
 name: cn-social-insurance
 description: 处理中国大陆员工社会保险与住房公积金（五险一金）相关工作时必读本技能。涉及"中国社保"、"五险一金"、"养老保险"、"医疗保险"、"失业保险"、"生育保险"、"工伤保险"、"住房公积金"、"社保基数"、"缴费比例"、"社保申报"、"公积金缴存"、"社保税务征收"、"金税四期"、"外籍员工社保"、"延迟退休"等中文表述时触发；同时在英文场景下出现 "China social insurance"、"five insurances and one fund"、"Chinese pension"、"housing fund"、"China shebao gongjijin"、"China payroll statutory deductions"、"PRC social security"、"China provident fund" 等表述时也应触发。本技能为编排器（orchestrator），按月编制中国员工五险一金的缴费基数、单位与个人缴费金额、申报与缴纳节奏，并给出与个人所得税专项扣除的衔接口径。涵盖《社会保险法》《住房公积金管理条例》及各省/直辖市/计划单列市实施细则的通用框架；具体比例与基数上下限以"参保地"最新文件为准。
 jurisdiction: CN
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-29
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+version: 1.1
+category: international
 ---
 
-# CN Social Insurance
+# China social insurance and housing provident fund: 2026 national method and dated local calculations
 
-## 中国 — 社会保险与住房公积金（五险一金）— 技能 v1.0
+## Who this applies to
 
-> **范围说明：** 本技能是中国大陆按月计提与缴纳"五险一金"的端到端编排器。本技能不重复定义个人所得税税率表 —— 个税口径在 `china-pit` 中规定，本技能在工资税前扣除环节将"个人承担的五险一金"作为"专项扣除"对接至 `china-pit`。本技能给出**全国通用框架**，但中国五险一金的**缴费比例、基数上下限、调整时点**均由"参保地"市级（直辖市/地级市/计划单列市）人力资源和社会保障局、医保局、住房公积金管理中心分别规定，**差异极大**。任何具体数值必须以"当月、当地、最新公告"为准。
->
-> **税收年度说明：** 中国社保与公积金按**自然月**缴纳；社保缴费基数大多于**每年7月**（部分地区1月）调整，参考上一年度当地"全口径城镇单位就业人员平均工资"；公积金缴存基数大多于**每年7月**调整。本技能所称"2025年"指**2025自然年**，涉及上海2024年度社平工资口径调整后的2024.7—2025.6缴费期间。
->
-> **2025年重大政策提示：** 国务院**渐进式延迟法定退休年龄**方案自 **2025年1月1日**起实施 ——
-> - 男职工：60岁 → 逐步延至 **63岁**；
-> - 女干部（原55岁）：→ 逐步延至 **58岁**；
-> - 女工人（原50岁）：→ 逐步延至 **55岁**；
-> - 同时**最低缴费年限**自2030年起由15年逐步提高至20年。
->
-> 上述变化影响养老缴费规划，但**不直接改变月度缴费比例**。本技能后续示例仍按月度比例编制。
+Mainland China employers and employees calculating the five social insurances and housing provident fund (五险一金). Employee pension and medical insurance are jointly funded; employers fund work injury and maternity, and unemployment follows the statutory employer/employee rules. Flexible workers and self-employed people without employees have separate participation routes. Do not apply an employer payroll table to them automatically ([Social Insurance Law (2018 amended text)](https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html), arts. 10,12,23,33–34,44,53).
 
-## 一、快速参考（缴费比例表）
+This is a **national framework with verified Shanghai illustrations**, not one national rate table. Contribution locality, scheme, worker category and contribution month determine the actual schedule. **Never use Shanghai as a provisional default for Beijing, Shenzhen, Guangzhou, Hangzhou, Chengdu or another locality.** Obtain each applicable local authority notice before computing. The earlier six-city overview is preserved as a list of required local determinations below, not as current rates without proof.
 
-**快速参考缴费比例表（上海口径）**
+The housing fund is separate from social insurance. The consolidated regulation was amended in 2026, effective **20 September 2026**. It retains separate payroll-based contribution and remittance rules; do not use a social-insurance floor or monthly tax deadline for the housing fund ([Housing Provident Fund Regulations, 2026 amended text](https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html), amendment commencement; arts. 16–20).
 
-| 险种 / 项 | 单位缴费比例 | 个人缴费比例 | 缴费基数 | 个税专项扣除？ |
-| --- | --- | --- | --- | --- |
-| **基本养老保险**（企业职工） | **16%** | **8%** | 上月工资总额，受当地基数上下限约束 | 是 — 个人 8% 计入"专项扣除" |
-| **基本医疗保险**（含原生育保险） | **9.5%**（上海；含生育 0.5%-1%） | **2%** | 同上 | 是 — 个人 2% 计入"专项扣除" |
-| **失业保险** | **0.5%** | **0.5%** | 同上 | 是 — 个人 0.5% 计入"专项扣除" |
-| **工伤保险** | **0.16% — 1.52%**（按八大行业风险类别浮动） | **0%** | 同上 | — |
-| **住房公积金** | **5% — 12%**（同比例）；上海一般 7% | **5% — 12%**（同比例）；上海一般 7% | 公积金缴存基数（与社保基数口径相近但不完全一致） | 是 — 个人部分计入"专项扣除" |
+## Rates, bands and thresholds
 
-**记忆口诀（沪口径）：单位约 26%+公积金 7%；个人约 10.5%+公积金 7%。**
-
-> **保守默认：** 当无法立即查到参保地的最新比例时，按上海口径先行试算并在交付件中**显著标注"暂按沪口径，参保地实际比例待核"**，同时在 ToDo 中列出"取数源 = 参保地人社局 / 公积金中心当月公告"。
-
-**地区差异速览（仅示例）**
-
-| 城市 | 养老（单/个） | 医疗（单/个） | 失业（单/个） | 公积金（单/个，常见区间） |
-| --- | --- | --- | --- | --- |
-| 上海 | 16% / 8% | 9.5% / 2% | 0.5% / 0.5% | 7% / 7%（5%-7%） |
-| 北京 | 16% / 8% | 9.8% / 2% | 0.5% / 0.5% | 12% / 12%（5%-12%） |
-| 深圳 | 14% / 8%（户籍） | 5.2%-6.7% / 2% | 0.7% / 0.3% | 5%-12% / 5%-12% |
-| 广州 | 14% / 8% | 5.5%-6.3% / 2% | 0.32% / 0.2% | 5%-12% / 5%-12% |
-| 杭州 | 16% / 8% | 9.9% / 2% | 0.5% / 0.5% | 8%-12% / 8%-12% |
-| 成都 | 16% / 8% | 6.5% / 2% | 0.6% / 0.4% | 5%-12% / 5%-12% |
-
-## 二、必备输入与拒绝清单
-
-### 2.1 编制一份中国月度工资单所需输入
-
-**编制一份中国月度工资单所需输入**
-
-| 输入项 | 来源 | 备注 |
+| Item | Verified figure / period | Official provision |
 | --- | --- | --- |
-| 单位**社会保险登记证号** / 统一社会信用代码 | 营业执照 + 社保登记 | 现已并入统一社会信用代码 |
-| 单位**住房公积金缴存登记编号** | 公积金中心 | 与社保编号分立 |
-| **参保地**（市级行政区） | 单位用工地 | 决定比例、基数、调整时点；不是员工户籍地 |
-| 员工**身份证号** | HR 档案 | 社保系统的关键标识 |
-| 员工**户籍类型**（本市城镇 / 本市农村 / 外省城镇 / 外省农村 / 港澳台 / 外籍） | HR 档案 | 部分险种比例随户籍差异（尤其深圳） |
-| 员工**社保参保号** / 公积金账号 | 入职时新参保或转入 |  |
-| **上一年度月平均工资**（按工资总额口径） | 工资台账 | 用以确定本年度缴费基数 |
-| **当地社保缴费基数上下限** | 参保地人社局公告 | 每年7月（部分1月）调整 |
-| **当地公积金缴存基数上下限** | 参保地公积金中心公告 | 一般每年7月调整 |
-| **当地各险种比例** | 参保地人社局、医保局、公积金中心公告 | 必须按月核对 |
-| **工伤行业风险类别** | 单位营业执照行业 + 人社局核定 | 八大类，由 0.16% 到 1.52% |
-| 员工是否享有**专项附加扣除** | 员工自申报 | 与本技能无直接关系，转至 `china-pit` |
-| 是否签订有**社保互免协定**（外籍员工） | HR 入职审查 | 见第九节 |
+| Shanghai employer pension / employee pension |16% /8%; locality-specific application | [Shanghai employer-rate guidance](https://rsj.sh.gov.cn/tdjjf_17554/20250120/t0035_1430072.html); [Shanghai employee-rate guidance](https://rsj.sh.gov.cn/tdjjf_17554/20200828/t0035_1393484.html) |
+| Shanghai employer medical including maternity / employee medical |9% /2%;2026-03-01 to 2027-02-28. Employer 9%=8.5% basic including maternity+0.5% local addition | [Shanghai medical notice 2026 No.2](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/sbf/202603/t479836.html) items 1,3 |
+| Earlier 2026 medical period |9% /2% for January–February under prior policy covering 2025-03 to 2026-02 | [Shanghai 2025 policy explanation](https://ybj.sh.gov.cn/zcjd/20250225/6ad4b3deb233457298f65fbc287a125e.html) |
+| Shanghai unemployment employer / employee |0.5% /0.5% | [Shanghai employer-rate guidance](https://rsj.sh.gov.cn/tdjjf_17554/20250120/t0035_1430072.html); [Shanghai employee-rate guidance](https://rsj.sh.gov.cn/tdjjf_17554/20200828/t0035_1393484.html) |
+| Shanghai work injury |Employer base rate 0.2%–1.9%; employee 0. Use the employer's notified risk class/floating rate | [Shanghai employer-rate guidance](https://rsj.sh.gov.cn/tdjjf_17554/20250120/t0035_1430072.html); [Shanghai employee-rate guidance](https://rsj.sh.gov.cn/tdjjf_17554/20200828/t0035_1393484.html); [Social Insurance Law (2018 amended text)](https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html) arts. 33–34 |
+| Shanghai social-insurance base, January–June 2026 |Floor 7460/month; ceiling 37302/month, from the 2025-07-01 schedule | [Shanghai 2025 base notice](https://tyjr.sh.gov.cn/shtyjrswj/tzgg/20250919/557388ff0c4c4492ad11a3ae8863fb67.html) |
+| Shanghai social-insurance base, from 2026-07-01 |Floor 7546/month; ceiling 37731/month; prior-year full-calibre average 12577/month | [Shanghai 2026 base notice](https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202609/t481435.html); [Shanghai base Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202608/t481376.html) |
+| Shanghai ordinary housing fund,2026 fund year from 1 July |Employer and employee **each 5%–7%**, integer percentage; base 2740–37731/month | [Shanghai housing-fund notice 2026 No.3](https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435) parts 1–2 |
+| Shanghai supplementary housing fund |Each 1%–5%, integer percentage, voluntary scheme participation | [Shanghai housing-fund notice 2026 No.3](https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435) part 2 |
+| Shanghai housing fund at 7% |Published combined monthly minimum 384,maximum 5282; use official amount table and scheme rounding | [Shanghai housing-fund notice 2026 No.3](https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435) part 4/table 1 |
+| Shanghai flexible-worker housing fund |Total 10%–24%; separate participation/base rules; not an employer 7%+employee 7% default | [Shanghai housing-fund notice 2026 No.3](https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435) part 5 |
+| Employer social-insurance registration |Within 30 days of establishment; employment registration within 30 days of hiring | [Social Insurance Law (2018 amended text)](https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html) arts. 57–58 |
+| Housing-fund employment registration / termination transfer or sealing |Within 30 days of hiring / termination | [Housing Provident Fund Regulations, 2026 amended text](https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html) art. 15 |
+| Housing-fund payroll remittance |Within 5 days after monthly wage payment, not a universal next-month 15th | [Housing Provident Fund Regulations, 2026 amended text](https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html) art. 19 |
 
-### 2.2 拒绝清单 — 不在本技能范围
+The Shanghai industry base range is not an instruction to select the lowest rate. The old 0.16%–1.52% injury range and 9.5% employer medical example are not used as current rates. Ordinary housing-fund 5%–7% and supplementary 1%–5% are separate; the old statement that Shanghai ordinary rates can be 12% is not carried forward. Other cities'5%–12% ranges require their actual current notices.
 
-**拒绝清单 — 不在本技能范围**
+## The base
 
-| 情形 | 处理 |
-| --- | --- |
-| 灵活就业人员 / 个体工商户业主自缴社保 | 不在本技能范围；按当地"灵活就业人员社保"口径单独处理 |
-| 城乡居民养老 / 城乡居民医保（非企业职工） | 不在本技能范围 |
-| 退休返聘人员 | 提示复核 — 多数地区不再缴纳养老、失业、生育；工伤需按"特定人员单险参保"处理（部分地区可，部分不可） |
-| 实习生 / 大学生兼职 | 提示复核 — 多数地区不构成劳动关系，不缴五险，但需购买商业意外险 |
-| 派遣 / 外包用工的社保归属 | 转至专业人士 — 视用工方与派遣机构的协议而定 |
-| 跨省异地用工 | 提示复核 — 原则上"用工地"参保；总分公司分别参保 |
-| 一次性补缴历史社保 | 转至专业人士 — 各地政策差异极大，2025年补缴口径全面收紧 |
-| 企业年金 / 职业年金 | 不在本技能范围 — 单独处理，且涉及个税递延优惠 |
-| 商业补充医疗 / 雇主责任险 | 不在本技能范围 |
-| 跨境派遣（海外员工派回中国 / 中国员工外派） | 转至专业人士 — 需结合个税居民身份、税收协定、社保互免协定综合判断 |
+1. **Identify the actual schemes and locality.** Record social-insurance registration and housing-fund account separately, worker identity and category, employment start/end dates, any secondment and any agreement exemption. The five insurances are statutory schemes; housing-fund accounts have separate administration ([Social Insurance Law (2018 amended text)](https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html) arts. 2,57–60; [Housing Provident Fund Regulations, 2026 amended text](https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html) arts. 2,15).
+2. **Establish the correct wage measure.** Shanghai's 2026 declaration uses the employee's prior natural-year average monthly wage. If employed for less than the full prior year, divide by actual working months. A 2026 new hire uses the full month's wage in the starting month. An employee with assessed grade 1–4 work disability receiving an allowance uses that allowance. Apply the statutory wage-total composition; do not use net pay ([Shanghai annual declaration notice 2026 No.1](https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html) part 3).
+3. **Apply each scheme's own floor and ceiling.** From July 2026 the Shanghai social base is `min(max(relevant_wage,7546),37731)`. Its housing fund instead uses the fund's 2740–37731 bounds and its own new-hire/new-transfer rules. Housing contributions for a newly employed worker start in the second month, while a transferred employee contributes from the new unit's wage-payment date. The July annual adjustment uses 2025 wages; the fund notice provides alternative actual-paid averages for specified new entrants. Do not presume that equal ceilings mean equal floors or identical new-hire timing ([Shanghai base Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202608/t481376.html); [Shanghai housing-fund notice 2026 No.3](https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435) part 1; [Housing Provident Fund Regulations, 2026 amended text](https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html) arts. 16–17).
+4. **Compute separately by payer and scheme.** For the verified Shanghai employee illustration, employer pension=`social_base×16%`, employee pension=`social_base×8%`; medical=`×9%` and `×2%`; unemployment=`×0.5%` each. Injury is employer-only at its actual assigned rate. Apply the chosen lawful housing percentage separately to the fund base. Reconcile the assessment's rounding and all six scheme lines before paying ([Shanghai employer-rate guidance](https://rsj.sh.gov.cn/tdjjf_17554/20250120/t0035_1430072.html); [Shanghai employee-rate guidance](https://rsj.sh.gov.cn/tdjjf_17554/20200828/t0035_1393484.html); [Shanghai medical notice 2026 No.2](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/sbf/202603/t479836.html); [Shanghai housing-fund notice 2026 No.3](https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435)).
+5. **Keep employer cost and employee deductions apart.** Employee deduction=employee social contributions+employee housing contributions. Employer payroll cost=gross wages+employer social contributions+employer housing contributions. Use `cn-iit` for the actual cumulative salary withholding; do not use the old illustrative 1290 yuan as a universal monthly IIT amount. The employee's allowable social/housing contributions are a separate IIT deduction determination under that Guide; do not net employer contributions against employee taxable pay.
+6. **Reconcile and retain evidence.** Tie the registered wage, scheme base, current local notice, employer's injury-rate assessment, employee withholding, authority assessment and bank payment. Base adjustments can create back-payments; use the actual local catch-up notice rather than inventing a nationwide automatic grace period ([Shanghai annual declaration notice 2026 No.1](https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html) part 5; [Social Insurance Law (2018 amended text)](https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html) art. 60).
 
-## 三、养老保险（基本养老 — 企业职工）
+### Benefits, retirement and non-payroll decisions retained from the earlier Guide
 
-### 3.1 法律依据
+- **Pension accounts and entitlement:** employer/employee allocations are governed by Social Insurance Law art. 12. In 2026 the statutory minimum contribution period is 15 years; from 2030 it rises by 6 months per year to 20 years under the retirement decision. Starting 2025 the retirement ages rise gradually: men 60→63; the former 55 female group→58; the former 50 female group→55. Use the birth-date schedule and actual worker category, not the final target age as every person's current retirement age. Arrears/lump-sum eligibility and pension-benefit amounts need their applicable scheme rules ([Social Insurance Law (2018 amended text)](https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html) arts. 12,16; [2024 retirement-age decision and implementing measures](https://www.hmo.gov.cn/2026/08/21/ARTI6kpLUW6qilBUClmQ6bio260821.shtml) arts. 1–3).
+- **Medical and maternity:** employee medical participation, medical benefits, employer-funded maternity and maternity medical allowance/benefit rights remain in arts. 23,28–30,53–56. Maternity allowance follows the employer's prior-year average wage under art. 56. The old 98-day plus local 60/80-day examples, an automatic divisor 30, specific local leave supplements, and current medical personal-account allocation percentages are **not computed here without their current separate authority rules**. They do not change the verified payroll contribution rates.
+- **Unemployment:** statutory eligibility includes at least 1 year contributions, involuntary unemployment and registration/job-seeking. Statutory duration bands reach at most 24 months; benefit standards follow local rules. Do not assume that every city pays 70%–90% of its minimum wage ([Social Insurance Law (2018 amended text)](https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html) arts. 45–47).
+- **Work injury:** employer-only funding and the authority's risk-based classification are separate from injury recognition, work-capacity assessment, medical/leave/disability/death awards. Those benefit calculations remain referrals rather than assumptions derived from the payroll contribution rate ([Social Insurance Law (2018 amended text)](https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html) arts. 33–42).
+- **Housing-fund accounts:** registration, transfer/sealing, employee ownership and permitted withdrawals remain separate topics. Current 2026 art. 24 lists rent, purchase/construction/renovation/major repair of own housing, loan repayment, decoration, property charges, retirement, specified disability/termination, settlement abroad and other approved housing consumption. Withdrawal eligibility, loan limits and local implementation are not computed by this contribution Guide ([Housing Provident Fund Regulations, 2026 amended text](https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html) arts. 3,15,24–27).
+- **Self-employed and flexible workers:** the national pension/medical participation routes are retained. Shanghai's current flexible-worker medical rate is 10% under the medical notice. Other flexible-worker pension rates, worker-category eligibility and regional benefit amounts require their own current source; do not substitute the employer/employee split ([Social Insurance Law (2018 amended text)](https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html) arts. 10,23; [Shanghai medical notice 2026 No.2](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/sbf/202603/t479836.html) item 2).
 
-- **养老保险法律依据** — 《中华人民共和国社会保险法》（2010年通过，2018年修订）第二章；《国务院关于建立统一的企业职工基本养老保险制度的决定》（国发〔1997〕26号）；《国务院关于印发实施渐进式延迟法定退休年龄办法的通知》（自 2025.1.1 起施行）；各省/市《企业职工基本养老保险条例 / 实施办法》。  _(《中华人民共和国社会保险法》（2010年通过，2018年修订）第二章)_
+## Deadlines and filing
 
-### 3.2 缴费比例
-
-**养老保险缴费比例**
-
-| 缴费主体 | 比例 | 备注 |
+| Task | Rule and period | Official provision |
 | --- | --- | --- |
-| **单位** | **16%** | 全国统一（自 2019.5.1 起由 20% 降至 16%）；部分地区曾有更低过渡 |
-| **个人** | **8%** | 全国统一 |
+| Shanghai social insurance |Published normal payment timing is by the 15th **of the relevant month**; automatic deduction normally 10th–15th, subject to the actual published collection calendar | [Shanghai payment guidance](https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202301/t465801.html) |
+| Shanghai 2026 annual wage declaration |1 May–25 June 2026 for the social-insurance year July 2026–June 2027; employee signature, employer seal and retained evidence | [Shanghai annual declaration notice 2026 No.1](https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html) parts 1,5 |
+| Shanghai housing-fund annual adjustment |New 2026 fund base from 1 July, with notification to the employee within 1 month of monthly-amount determination | [Shanghai housing-fund notice 2026 No.3](https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435) part 1 |
+| Housing-fund monthly remittance |Within 5 days of wage payment; hardship reduction/deferral needs the prescribed employee representation/authority approval | [Housing Provident Fund Regulations, 2026 amended text](https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html) arts. 19–20 |
+| IIT payroll withholding and annual reconciliation |Use the distinct dates and actual liability in `cn-iit`; social/housing payment dates do not determine IIT dates | `cn-iit` |
 
-- **个人账户与统筹划分** — 个人 8% 全额计入个人账户；单位 16% 计入统筹基金。
+Do not turn Shanghai's guidance into a nationwide next-month 15th rule. Check the actual month and official holiday/collection-calendar adjustments. Shanghai's 2026 annual declaration can be made through the electronic tax bureau, social-fee management client or competent tax service hall; current screen names are in the cited notice ([Shanghai annual declaration notice 2026 No.1](https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html) part 4).
 
-### 3.3 缴费基数
+## Penalties and interest
 
-- **养老保险缴费基数规则** — 基数 = 员工上一年度月平均工资（工资总额口径，含基本、奖金、津贴、补贴、加班费）；下限 = 上一年度当地社平工资 × 60%；上限 = 上一年度当地社平工资 × 300%；上海 2024.7—2025.6 期间：下限约 ¥7,310/月，上限约 ¥36,549/月（仅示例）；新参保员工：以入职月工资为初始基数；基数确定后一年不变，下次7月调整。
+Social Insurance Law art. 86 requires an order to pay/make good arrears and a **daily 0.05%** late charge from the overdue date. If payment still is not made within the ordered time, the further fine is **1–3times** the arrears. This is not a discretionary universal interest estimate ([Social Insurance Law (2018 amended text)](https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html)).
 
-### 3.4 计算
+Housing-fund sanctions changed during 2026. Under the consolidated text effective 20 September 2026, art. 39 addresses failure to register/open accounts: an order to rectify, then **50000–300000 yuan** if still not done. Art.40 addresses late/short contributions: an order to pay and possible court enforcement if unpaid; do not copy the social-insurance 0.05% charge into it. Historical violations before the amendment need the then-applicable text and transitional analysis; the current amounts are not retroactively asserted ([Housing Provident Fund Regulations, 2026 amended text](https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html), amendment commencement,arts. 39–40).
 
-- **养老保险计算公式** — 养老（单位）= 缴费基数 × 16% 养老（个人）= 缴费基数 × 8%   （从工资中代扣）
+## Cross-border points
 
-### 3.5 待遇与缴费年限
+The 2024-revised foreign-worker measures cover lawfully employed foreign nationals, including relevant employment/residence documentation and foreign permanent residents. Local employers and inward secondment host units must arrange the five insurances and pay the prescribed contributions. Registration is within 30 days after the employment-document formalities. On departure before pension age, the individual account can be retained and contribution periods accumulate on return; written termination can permit payment of the individual-account balance. A bilateral/multilateral social-security agreement changes participation only within its actual scope and documentary conditions. Do not assume a passport exempts all five schemes ([Foreign-worker social-insurance measures,2024 revision](https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202509/t20250908_4194428.html) arts. 2–5,9).
 
-- **待遇与缴费年限** — 最低缴费年限：达到法定退休年龄时，累计缴费年限 ≥ 15年（2030年起逐步提至20年）方可按月领取基本养老金；不足年限：可一次性补缴（部分地区已停止）或转为城乡居民养老；待遇 = 基础养老金 + 个人账户养老金 + 过渡性养老金（视参保历史）。
+Housing-fund participation for foreign nationals and for Hong Kong/Macao/Taiwan residents is a separate local/category determination, not an automatic consequence of foreign-worker social insurance. The former Guide's general waiver and city examples remain unconfirmed pending those specific rules. Cross-border social-security certificates, validity periods, renewals and covered branches require the actual agreement; no exhaustive treaty-country list or fixed maximum assignment period is asserted here.
 
-## 四、医疗保险（含生育合并后）
+## Two worked examples that recompute
 
-### 4.1 法律依据
+**Example 1: corrected Shanghai 30000 yuan employee.** Assume an established employee with prior-year average monthly wage and current monthly gross pay both 30000, a July–December 2026 contribution month, ordinary housing-fund rate 7% each, employer injury assessment 0.2%, no supplementary fund, and no category exemption. Both actual bases are 30000. Employee social contributions 3150 plus housing 2100 give 5250 deductions and 24750 before IIT. Employer social contributions 7710 plus housing 2100 give 9810 contributions; total payroll cost 39810. The old 9.5% medical and 0.16% injury assumptions are replaced by the cited current rates; IIT is computed separately, not fixed at 1290.
 
-- **医疗保险法律依据** — 《社会保险法》第三章（基本医疗保险）、第六章（生育保险）；《国务院办公厅关于全面推进生育保险和职工基本医疗保险合并实施的意见》（国办发〔2019〕10号）—— 自 2019.12 起，生育保险并入医疗保险统一征收，但生育待遇独立保留；《关于建立健全职工基本医疗保险门诊共济保障机制的指导意见》（国办发〔2021〕14号）。  _(《社会保险法》第三章、第六章；国办发〔2019〕10号；国办发〔2021〕14号)_
+```oa-check
+name: Shanghai July2026 established employee, separate payer totals
+inputs:
+  social_base: 30000
+  housing_base: 30000
+  gross_pay: 30000
+steps:
+  employee_social: social_base * (0.08 + 0.02 + 0.005)
+  employee_housing: housing_base * 0.07
+  employee_total: employee_social + employee_housing
+  pay_before_iit: gross_pay - employee_total
+  employer_social: social_base * (0.16 + 0.09 + 0.005 + 0.002)
+  employer_housing: housing_base * 0.07
+  employer_total: employer_social + employer_housing
+  payroll_cost: gross_pay + employer_total
+expected:
+  employee_social: 3150
+  employee_total: 5250
+  pay_before_iit: 24750
+  employer_social: 7710
+  employer_total: 9810
+  payroll_cost: 39810
+```
 
-### 4.2 缴费比例（含合并后的生育保险）
+**Example 2: distinct social/housing floors.** Assume an established employee with prior-year average and gross 6000, the same month/category/rates as example 1 and no exemption. Social base=max(6000,7546)=7546; housing base=max(6000,2740)=6000. Round each social-insurance line to cents for this illustration and reconcile actual assessment rounding. Employee social:603.68+150.92+37.73=792.33; housing 420; total 1212.33. Employer social:1207.36+679.14+37.73+15.09=1939.32; housing 420; total 2359.32; employer payroll cost 8359.32. Do not apply 7546 as the housing-fund floor.
 
-**医疗保险缴费比例（含合并后的生育保险）**
+```oa-check
+name: Shanghai July2026 distinct contribution floors
+inputs:
+  prior_average: 6000
+  gross_pay: 6000
+steps:
+  social_base: min(max(prior_average, 7546), 37731)
+  housing_base: min(max(prior_average, 2740), 37731)
+  employee_social: round(social_base * 0.08, 2) + round(social_base * 0.02, 2) + round(social_base * 0.005, 2)
+  employee_total: employee_social + housing_base * 0.07
+  employer_social: round(social_base * 0.16, 2) + round(social_base * 0.09, 2) + round(social_base * 0.005, 2) + round(social_base * 0.002, 2)
+  employer_total: employer_social + housing_base * 0.07
+  payroll_cost: gross_pay + employer_total
+expected:
+  social_base: 7546
+  housing_base: 6000
+  employee_social: 792.33
+  employee_total: 1212.33
+  employer_social: 1939.32
+  employer_total: 2359.32
+  payroll_cost: 8359.32
+```
 
-| 缴费主体 | 比例（示例：上海 2024.7—2025.6） | 备注 |
+## Ask the client first
+
+- Which city, contribution month, registered schemes and worker category apply? Provide the current local notices and employer's actual injury assessment.
+- Is the worker established, a first-time new hire or transferred from another unit? What are the start, payroll and termination dates?
+- What was the prior-year wage total and actual working months? Which bonuses/allowances form part of wages? Do we have an approved wage-base declaration?
+- Which ordinary and supplementary housing percentages were actually registered? Are housing and social bases different?
+- Is there lawful foreign employment/secondment, a Hong Kong/Macao/Taiwan category or a valid agreement certificate? Which branches and periods does it cover?
+- Are we correcting a prior period, making a current payment, resolving arrears or computing benefits/retirement? Provide notices and the authority's deadlines.
+- Are employee social/housing deductions already included in the cumulative IIT working paper? Reconcile them once, using `cn-iit`.
+
+## Sources
+
+| Source | Official URL | Read on |
 | --- | --- | --- |
-| **单位** | **9.5%** | 含原生育保险 0.5%-1%；北京 9.8%、深圳 5.2%-6.7% |
-| **个人** | **2%** | 全国普遍 2%；个人不缴生育保险 |
-| **大病医疗补充**（部分地区） | 单位 1% 或固定金额 | 上海无单独大病项；北京另缴大病 |
-
-### 4.3 缴费基数
-
-- **医疗保险缴费基数** — 同养老保险基数（口径一致 — 上下限同步）。
-
-### 4.4 计算
-
-- **医疗保险计算公式** — 医疗（单位）= 缴费基数 × 9.5% 医疗（个人）= 缴费基数 × 2%   （从工资中代扣）
-
-### 4.5 个人账户与统筹
-
-- **个人账户与统筹规则** — 在职职工个人缴费 2% 全额计入个人账户；单位缴费部分按规定比例划入个人账户（2021年门诊共济改革后划入比例下调，大部分划入统筹）；个人账户用于支付门诊、定点药店购药、家庭共济等。
-
-### 4.6 生育保险（合并后）
-
-- **生育保险规则（合并后）** — 单位缴费已含生育保险（无单独项目），个人不缴；生育津贴：女职工产假期间，按单位上年度月平均工资 ÷ 30 × 产假天数发放（由生育保险基金支付）；产假天数：国家规定 98 天 + 各地延长生育假（上海 60 天、北京 60 天、广东 80 天等）；产前检查费、生育医疗费由医保统筹支付。
-
-## 五、失业保险
-
-### 5.1 法律依据
-
-- **失业保险法律依据** — 《社会保险法》第四章；《失业保险条例》（国务院令第258号）；自 2017 年起，多省阶段性降低费率；自 2023.5—2025.4 阶段性降费政策延续（综合费率维持 1%）。  _(《社会保险法》第四章；《失业保险条例》（国务院令第258号）)_
-
-### 5.2 缴费比例
-
-**失业保险缴费比例**
-
-| 缴费主体 | 比例（示例：上海） | 备注 |
-| --- | --- | --- |
-| **单位** | **0.5%** | 多数地区 0.5%；深圳 0.7% |
-| **个人** | **0.5%** | 多数地区 0.5%；深圳 0.3% |
-
-### 5.3 缴费基数
-
-- **失业保险缴费基数** — 同养老保险基数。
-
-### 5.4 计算
-
-- **失业保险计算公式** — 失业（单位）= 缴费基数 × 0.5% 失业（个人）= 缴费基数 × 0.5%   （从工资中代扣）
-
-### 5.5 待遇
-
-- **失业保险待遇** — 累计缴费 ≥ 1年、非因本人意愿中断就业、已办理失业登记并求职 —— 可领取失业金；领取期限按缴费年限分档（最长 24 个月）；失业金月标准 = 当地最低工资标准 × 70%-90%（各地不同）。
-
-## 六、工伤保险
-
-### 6.1 法律依据
-
-- **工伤保险法律依据** — 《社会保险法》第五章；《工伤保险条例》（国务院令第586号，2010 修订）；《关于工伤保险费率问题的通知》（人社部发〔2015〕71号）—— 八大行业风险类别。  _(《社会保险法》第五章；国务院令第586号；人社部发〔2015〕71号)_
-
-### 6.2 缴费比例 — 八大行业风险类别
-
-**工伤保险八大行业风险类别费率**
-
-| 行业风险类别 | 基准费率 | 行业举例 |
-| --- | --- | --- |
-| **一类**（风险较小） | **0.2%**（部分地区降至 0.16%） | 金融、IT、咨询、零售、教育、公共管理 |
-| **二类** | **0.4%** | 房地产、租赁商务服务 |
-| **三类** | **0.7%** | 农副食品加工、纺织、电气机械 |
-| **四类** | **0.9%** | 通用设备制造、金属制品、汽车制造 |
-| **五类** | **1.1%** | 燃气、化学原料、医药制造 |
-| **六类** | **1.3%** | 黑色金属冶炼、煤炭洗选 |
-| **七类** | **1.6%** | 石油天然气开采、煤炭采选 |
-| **八类**（风险极大） | **1.9%**（部分地区 1.52%） | 有色金属采选、煤矿井下作业、烟花爆竹 |
-
-- **浮动机制** — > **浮动机制：** 根据单位上年度工伤发生率、工伤保险费使用情况，可在基准费率上下浮动 50%、20% 或维持基准。
-
-### 6.3 计算
-
-- **工伤保险计算公式** — 工伤（单位）= 缴费基数 × 行业基准费率（× 浮动系数） 工伤（个人）= 0
-
-### 6.4 待遇
-
-- **工伤保险待遇** — 工伤医疗费、停工留薪期工资、一次性伤残补助金、伤残津贴、工亡补助金等；工伤认定由参保地人力资源和社会保障行政部门作出；劳动能力鉴定由劳动能力鉴定委员会作出。
-
-## 七、住房公积金
-
-### 7.1 法律依据
-
-- **住房公积金法律依据** — 《住房公积金管理条例》（国务院令第350号，2002 颁布，2019 修订）；各市《住房公积金管理办法 / 实施细则》。  _(《住房公积金管理条例》（国务院令第350号，2002 颁布，2019 修订）)_
-
-### 7.2 缴费比例
-
-**住房公积金缴费比例**
-
-| 缴费主体 | 比例 | 备注 |
-| --- | --- | --- |
-| **单位** | **5% — 12%**（单位在区间内自选） | 单位与个人**比例必须一致** |
-| **个人** | **5% — 12%**（与单位同比例） | 从工资中代扣 |
-
-- **补充公积金说明** — 上海常见 7% / 7%；北京、杭州常见 12% / 12%；单位可另设补充公积金（1%-5%），常见于国企、外企；个人比例上限合并补充后通常不超过24%。
-
-### 7.3 缴存基数
-
-- **住房公积金缴存基数** — 基数 = 员工上一年度月平均工资（口径与社保相近但不完全一致 —— 公积金口径以"工资总额"为主，但部分地区在外籍员工、跨省工资上有差异）；下限 = 当地最低工资标准；上限 = 上年度当地职工月平均工资 × 3；上海 2024.7—2025.6 上限约 ¥36,549/月（与社保口径同步，但不绝对一致）；每年 7月1日调整。
-
-### 7.4 计算
-
-- **住房公积金计算公式** — 公积金（单位）= 缴存基数 × 单位比例 公积金（个人）= 缴存基数 × 个人比例   （从工资中代扣） 合计存入员工公积金账户 = 单位部分 + 个人部分 > **关键**：公积金全额计入员工个人公积金账户，归员工所有，可用于购房贷款、租房提取、还贷提取、销户提取。
-
-### 7.5 缴存与封存
-
-- **缴存与封存规则** — 新员工：入职次月起缴存；离职：单位办理"封存"或"转移"；跨地区流动：公积金可全国转移接续。
-
-## 八、缴费基数（上下限、各地差异）
-
-### 8.1 通用原则
-
-- **缴费基数通用原则** — 缴费基数 = 员工上一年度月平均工资  （工资总额口径） 若 > 上限  → 取 上限 若 < 下限  → 取 下限 新入职员工：以入职首月工资为初始基数；次年7月按全年口径重定
-
-### 8.2 上下限来源
-
-- **上下限来源规则** — 社保上限 = 上一年度当地全口径城镇单位就业人员平均工资 × 300%；社保下限 = 上一年度当地全口径城镇单位就业人员平均工资 × 60%；公积金上下限由当地住房公积金管理委员会单独公告，口径与社保接近但不绝对相同。
-
-### 8.3 调整时点
-
-**调整时点**
-
-| 城市 | 社保基数调整月 | 公积金基数调整月 |
-| --- | --- | --- |
-| 上海 | 每年 7月 | 每年 7月 |
-| 北京 | 每年 7月 | 每年 7月 |
-| 深圳 | 每年 1月（部分险种）/ 7月 | 每年 7月 |
-| 广州 | 每年 7月 | 每年 7月 |
-| 杭州 | 每年 1月 | 每年 7月 |
-
-### 8.4 五险一金基数是否同步？
-
-- **五险一金基数同步性说明** — 多数城市社保基数与公积金基数同步（口径相同、上下限相同）；部分城市分立（深圳、苏州等地公积金口径单独公告）；单位不得通过工资拆分（如"工资 + 报销"）规避缴费基数 —— 2019.1.1 起社保由税务部门统一征收，金税四期已实现工资数据与社保基数交叉比对。
-
-### 8.5 常见低报风险
-
-**常见低报风险**
-
-| 低报情形 | 监管反应 |
-| --- | --- |
-| 一律按最低基数缴 | 税务/社保稽核后**追补 + 滞纳金（日万分之五）+ 1-3 倍罚款** |
-| 工资拆为"工资 + 报销" | 报销部分计入工资总额，需补缴 |
-| 实习生 / 非全日制 / 劳务关系误判 | 重新认定为劳动关系后，**追溯参保** |
-| 跨省用工归属错配 | 用工地稽核认定补缴 |
-
-## 九、外籍员工社保
-
-### 9.1 法律依据
-
-- **外籍员工社保法律依据** — 《在中国境内就业的外国人参加社会保险暂行办法》（人社部令第16号，自 2011.10.15 施行）；双边/多边社会保险协定（截至2025年，中国已与德国、韩国、丹麦、芬兰、加拿大、瑞士、荷兰、西班牙、卢森堡、日本、塞尔维亚、法国 等 12+ 国签署）。  _(人社部令第16号，2011.10.15 施行)_
-
-### 9.2 原则
-
-- **外籍员工参保原则** — 在中国境内就业的外国人（持工作许可与居留许可）原则上应参加 基本养老、基本医疗、失业、工伤、生育 五险；比例与基数与中国公民相同；离境时可申请退还个人账户余额或保留待遇。
-
-### 9.3 实务差异
-
-- **外籍员工社保实务差异** — 上海长期以来执行宽松，事实上对外籍员工社保未强制；2025年起执法逐步收紧；北京、深圳、广州总体按规定强制参保；实际操作前必须核对参保地最新口径。
-
-### 9.4 社保协定豁免
-
-**社保协定豁免表**
-
-| 协定国 | 可豁免险种 | 豁免期限 |
-| --- | --- | --- |
-| 德国 | 养老、失业 | 派遣期内（通常 ≤ 48 个月，可延长） |
-| 韩国 | 养老、失业 | 派遣期内 |
-| 日本 | 养老 | 派遣期内 |
-| 加拿大 | 养老 | 派遣期内 |
-| 荷兰、西班牙、卢森堡、瑞士、芬兰、丹麦、塞尔维亚、法国 | 视协定条款（多为养老） | 派遣期内 |
-
-> **豁免凭证：** 来华前由派出国主管机构出具"参保证明"（如德国 A1 / Z 表），由用人单位在中国社保经办机构办理"免缴登记"。
-
-### 9.5 公积金
-
-- **外籍员工公积金规则** — 《住房公积金管理条例》未将外籍员工纳入强制范围；上海、北京等地允许外籍员工自愿缴存公积金；深圳等地外籍员工不允许缴存。
-
-### 9.6 港澳台员工
-
-- **港澳台员工参保规则** — 自 2020.1.1 起（人社部令第41号废止 2005 年第26号令），港澳台居民在内地（大陆）就业应当依法参加社会保险；与外籍员工口径基本一致；但港澳台不适用社保协定豁免（无双边协定，因属"一国")。  _(人社部令第41号废止 2005 年第26号令，自 2020.1.1 起)_
-
-## 十、计算示例（上海某软件工程师月薪 3 万元）
-
-**场景：** 软件工程师，户籍上海，2025 年 3 月在某上海互联网公司任职，月工资总额 **¥30,000**（含基本工资、绩效、加班费）。单位为一类风险行业（IT）。
-
-**假设输入（必须以当地最新公告核实）：**
-
-- 缴费基数 = ¥30,000/月（在上海上下限 ¥7,310 — ¥36,549 区间内，按工资总额计）
-- 养老：单位 16% / 个人 8%
-- 医疗：单位 9.5% / 个人 2%
-- 失业：单位 0.5% / 个人 0.5%
-- 工伤：单位 0.16%（一类）
-- 公积金：单位 7% / 个人 7%
-
-### 10.1 单位与个人缴费明细
-
-**单位与个人缴费明细**
-
-| 项目 | 单位（元/月） | 个人（元/月） |
-| --- | --- | --- |
-| 养老（16% / 8%） | 4,800.00 | 2,400.00 |
-| 医疗（9.5% / 2%） | 2,850.00 | 600.00 |
-| 失业（0.5% / 0.5%） | 150.00 | 150.00 |
-| 工伤（0.16% / —） | 48.00 | 0.00 |
-| 住房公积金（7% / 7%） | 2,100.00 | 2,100.00 |
-| **合计** | **9,948.00** | **5,250.00** |
-
-### 10.2 个税专项扣除衔接（详见 `china-pit`）
-
-- **个税专项扣除衔接公式** — 工资总额                            30,000.00 减：个人五险一金（专项扣除）        (5,250.00) 减：起征点（5,000/月）              (5,000.00) 减：专项附加扣除（假设 1,500，由 china-pit 处理） (1,500.00) 应纳税所得额（月度累计预扣口径需另算） = 18,250.00 > 月度累计预扣预缴的实际算法见 `china-pit`，本技能只输出"个人五险一金 = ¥5,250"作为专项扣除项。
-
-### 10.3 工资条（示例）
-
-**工资条（示例）— 员工侧**
-
-| 项目 | 金额（元） |
-| --- | --- |
-| 工资总额 | 30,000.00 |
-| − 养老（个人） | (2,400.00) |
-| − 医疗（个人） | (600.00) |
-| − 失业（个人） | (150.00) |
-| − 公积金（个人） | (2,100.00) |
-| − 个人所得税预扣（详见 china-pit） | (约 1,290.00) *示意* |
-| **税后实发** | **约 23,460.00** |
-
-**单位成本（并列）**
-
-| 单位成本（并列） | 金额（元） |
-| --- | --- |
-| 工资总额 | 30,000.00 |
-| + 养老（单位） | 4,800.00 |
-| + 医疗（单位） | 2,850.00 |
-| + 失业（单位） | 150.00 |
-| + 工伤（单位） | 48.00 |
-| + 公积金（单位） | 2,100.00 |
-| **单位总成本** | **39,948.00** |
-
-### 10.4 本月需缴款汇总
-
-**本月需缴款汇总**
-
-| 缴款对象 | 金额（元） | 缴款期限 |
-| --- | --- | --- |
-| 税务部门（社保费）— 养老/医疗/失业/工伤 单位+个人 | 8,748.00 | **次月 15 日前**（上海口径） |
-| 上海公积金中心 — 单位 + 个人 | 4,200.00 | **次月 15 日前**（上海口径） |
-| 税务部门（个人所得税预扣） | 约 1,290.00 | **次月 15 日前** → `china-pit` |
-
-## 十一、申报与缴纳
-
-### 11.1 月度节奏
-
-**月度节奏**
-
-| 事项 | 缴款对象 | 期限 | 渠道 |
-| --- | --- | --- | --- |
-| **社保费申报缴费**（养老、医疗、失业、工伤；含个人 + 单位部分） | 主管税务机关（**自 2019.1.1 起社保由税务部门统一征收**） | **次月 15 日前**（部分地区 5-25 日不等） | 当地**电子税务局** / 社保经办系统 |
-| **住房公积金汇缴** | 当地住房公积金管理中心 | **次月 15 日前**（部分地区 5 日或当月内） | 当地**住房公积金网厅** + 银行批扣 |
-| **个税专项扣除联动** | — | 与个税申报同步 | 通过 `china-pit` 编排 |
-
-### 11.2 年度节奏
-
-**年度节奏**
-
-| 事项 | 期限 | 备注 |
-| --- | --- | --- |
-| **社保缴费基数申报**（年度核定） | **每年 6—7 月**（上海口径） | 单位申报员工上一年度月平均工资，作为本年度缴费基数 |
-| **公积金缴存基数调整** | **每年 6—7 月** | 单位申报员工上一年度月平均工资 |
-| **工伤行业基准费率浮动核定** | 通常年初 | 由人社部门按工伤发生率核定下浮 / 上浮 |
-| **年度个税汇算清缴** | **次年 3.1—6.30** | 详见 `china-pit` |
-
-### 11.3 罚则
-
-**罚则表**
-
-| 违规 | 后果 |
-| --- | --- |
-| 未按时申报社保 | 每日**万分之五**滞纳金 + 1-3 倍罚款（《社会保险法》第86条） |
-| 未按时缴纳社保 | 同上 + 列入失信名单 + 影响投标资质 |
-| 少缴 / 漏缴公积金 | 责令限期补缴；逾期可申请法院强制执行（《住房公积金管理条例》第37条） |
-| 未办理工伤认定缴费 | 工伤事故发生后由单位承担全部工伤待遇 |
-| 拒不参保（外籍员工） | 责令整改 + 罚款；金税四期+人社联网核查后追溯 |
-
-## 十二、参考资料
-
-**参考资料**
-
-| 资料 | 出处 |
-| --- | --- |
-| 《中华人民共和国社会保险法》（2010 通过，2018 修订） | 全国人大 |
-| 《社会保险费征缴暂行条例》（国务院令第259号） | 国务院 |
-| 《工伤保险条例》（国务院令第586号，2010 修订） | 国务院 |
-| 《失业保险条例》（国务院令第258号） | 国务院 |
-| 《住房公积金管理条例》（国务院令第350号，2019 修订） | 国务院 |
-| 《国务院关于建立统一的企业职工基本养老保险制度的决定》（国发〔1997〕26号） | 国务院 |
-| 《国务院办公厅关于全面推进生育保险和职工基本医疗保险合并实施的意见》（国办发〔2019〕10号） | 国务院办公厅 |
-| 《关于建立健全职工基本医疗保险门诊共济保障机制的指导意见》（国办发〔2021〕14号） | 国务院办公厅 |
-| 《国务院关于印发实施渐进式延迟法定退休年龄办法的通知》（2025.1.1 施行） | 国务院 |
-| 《在中国境内就业的外国人参加社会保险暂行办法》（人社部令第16号，2011.10.15 施行） | 人社部 |
-| 《关于工伤保险费率问题的通知》（人社部发〔2015〕71号） | 人社部 |
-| 国家社会保险公共服务平台 | https://si.12333.gov.cn |
-| 国家医疗保障局 | https://www.nhsa.gov.cn |
-| 住房和城乡建设部住房公积金监管司 | https://www.mohurd.gov.cn |
-| 上海市人力资源和社会保障局 | https://rsj.sh.gov.cn |
-| 上海市公积金管理中心 | https://www.shgjj.com |
-| 北京市人力资源和社会保障局 | https://rsj.beijing.gov.cn |
-| 深圳市人力资源和社会保障局 | https://hrss.sz.gov.cn |
-| 国家税务总局（社保费征收） | https://www.chinatax.gov.cn |
-| 配套技能 — 中国个人所得税（综合所得、专项扣除、汇算清缴） | `china-pit` |
-| 配套技能 — 中国增值税（小规模 / 一般纳税人） | `china-vat` |
-| 基础技能 — 全球工作流基线 | `foundation` |
-
-## 文件说明
-
-*OpenAccountants — 面向 AI 的开源会计技能集*
-*本文件不构成法律意见或税务咨询。所有工资单、社保申报、公积金汇缴在出具或缴款前，必须经具有中国大陆人力资源 / 税务 / 社保 专业资质的人员复核。各地实际比例、基数上下限、调整时点必须以"参保地"最新公告为准。*
+| Social Insurance Law (2018 amended text) | https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html | 2026-10-29 |
+| Housing Provident Fund Regulations, 2026 amended text | https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html | 2026-10-29 |
+| Shanghai employer-rate guidance | https://rsj.sh.gov.cn/tdjjf_17554/20250120/t0035_1430072.html | 2026-10-29 |
+| Shanghai employee-rate guidance | https://rsj.sh.gov.cn/tdjjf_17554/20200828/t0035_1393484.html | 2026-10-29 |
+| Shanghai 2025 policy explanation | https://ybj.sh.gov.cn/zcjd/20250225/6ad4b3deb233457298f65fbc287a125e.html | 2026-10-29 |
+| Shanghai medical notice 2026 No.2 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/sbf/202603/t479836.html | 2026-10-29 |
+| Shanghai 2025 base notice | https://tyjr.sh.gov.cn/shtyjrswj/tzgg/20250919/557388ff0c4c4492ad11a3ae8863fb67.html | 2026-10-29 |
+| Shanghai 2026 base notice | https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202609/t481435.html | 2026-10-29 |
+| Shanghai base Q&A | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202608/t481376.html | 2026-10-29 |
+| Shanghai housing-fund notice 2026 No.3 | https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435 | 2026-10-29 |
+| Shanghai annual declaration notice 2026 No.1 | https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html | 2026-10-29 |
+| Shanghai payment guidance | https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202301/t465801.html | 2026-10-29 |
+| 2024 retirement-age decision and implementing measures | https://www.hmo.gov.cn/2026/08/21/ARTI6kpLUW6qilBUClmQ6bio260821.shtml | 2026-10-29 |
+| Foreign-worker social-insurance measures,2024 revision | https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202509/t20250908_4194428.html | 2026-10-29 |
+
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
+
+**Not yet confirmed:** current city/category tables for Beijing, Shenzhen, Guangzhou, Hangzhou and Chengdu; pre-July 2026 Shanghai housing-fund bounds; non-Shanghai collection calendars and rounding; the previous blanket 5%–12% housing range; city-specific medical-account allocations and supplementary medical fees; precise maternity leave days/local supplements/divisor; local unemployment-benefit percentages; current flexible-worker pension rates and non-Shanghai voluntary-fund rules; foreign/Hong Kong/Macao/Taiwan housing-fund participation; branch-specific social-security agreements/certificates; pre 20 September 2026 housing-fund violation transitions; retirement-benefit and lump-sum eligibility computations. The earlier illustrative tax 1290 yuan is not verified as a current payroll result. These named limits replace unsupported defaults; they do not authorise estimating with another city's table. Additional original topics retained as explicit unconfirmed/referral limits: resident rural/urban schemes; retiree rehires; intern/student work; dispatch/outsourcing; cross-province employer registration; enterprise/occupational annuities; commercial supplementary medical/employer-liability insurance; the former eight work-injury industry classes, industry examples and floating coefficients.
 
 <!-- openaccountants-cta-block -->
 

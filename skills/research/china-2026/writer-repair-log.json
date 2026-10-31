@@ -1,0 +1,483 @@
+{
+  "initial_review": "independent-review-initial.json",
+  "repairs": [
+    {
+      "slug": "cn-corporate-tax",
+      "old": "- Sole proprietorships and partnerships are **not** CIT taxpayers (Law Art. 1). Their owners fall under individual income tax.",
+      "new": "- Sole proprietorships and partnerships are **not** CIT taxpayers (Law Art. 1). A partnership treats each partner as the taxpayer: natural-person partners pay IIT; legal-person and other-organisation partners pay CIT ([Caishui 2008 No. 159 §2](https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203416/content.html)). Determine the actual partner type before selecting the tax route.",
+      "occurrences": 1,
+      "why": "Partnership entity exclusion does not turn every partner into an individual taxpayer",
+      "source_ids": [
+        "CIT-partner159"
+      ]
+    },
+    {
+      "slug": "cn-corporate-tax",
+      "old": "- The final test is the annual settlement. A new company registered as a VAT general taxpayer may claim the relief before its first annual settlement if headcount is 300 or fewer and total assets are 5000万元 or less at the end of the month before filing (Art. 5).",
+      "new": "- The final test is the annual settlement. For CIT prepayments, a newly established company must also test cumulative taxable income together with headcount and assets under STA announcement 2023 No. 6 Art. 4. The last-month headcount/assets shortcut for a newly registered VAT general taxpayer in 2023 No. 12 Art. 5 applies to that announcement's Art. 2 six-taxes/two-fees relief, not its Art. 3 CIT relief.",
+      "occurrences": 1,
+      "why": "Separate CIT three-test prepayments from the six-taxes/two-fees shortcut",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-corporate-tax",
+      "old": "**IC and machine-tool enterprises.** The 120% rate applies only to enterprises on the lists that NDRC, MIIT, MOF and STA compile (2023 No. 44 Art. 2-3). Check the list for the year.",
+      "new": "**IC and machine-tool enterprises.** The 120% extra deduction / 220% amortisation requires the applicable category conditions in [2023 No. 44 Arts. 2–3](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html). Specified IC production/design and industrial-machine-tool enterprises use list management. IC equipment, materials, packaging and testing enterprises instead satisfy Art. 2(3)'s referenced qualification conditions; Art. 5 provides a verification mechanism for categories not managed by lists. Check the actual category, current qualification rules and, where applicable, the year's list.",
+      "occurrences": 1,
+      "why": "Do not turn category-specific list management into an exclusive all-enterprise list condition",
+      "source_ids": [
+        "2836bf1f3f4ae9fd"
+      ]
+    },
+    {
+      "slug": "cn-corporate-tax",
+      "old": "| Listed IC and machine-tool enterprises |",
+      "new": "| Qualifying IC and machine-tool enterprises under the applicable category conditions |",
+      "occurrences": 1,
+      "why": "Restore non-list qualification route",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-corporate-tax",
+      "old": "Is it on the IC or machine-tool enterprise list?",
+      "new": "Which IC or machine-tool category does it claim, and what qualification or required list evidence supports it?",
+      "occurrences": 1,
+      "why": "Match intake to list/non-list routes",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-corporate-tax",
+      "old": "9. **Withholding on non-residents.** On each payment of China-source income to a non-resident without an establishment, the payer withholds at 10% unless a treaty gives a lower rate. The payer pays the tax over within seven days of withholding ([CIT Law Art. 37, 40](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Art. 91](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html)).",
+      "new": "9. **Withholding on non-residents.** Establish the actual recipient, income category, Chinese source and establishment/effective-connection facts. For income within CIT Law Art. 3(3), apply the relevant base, domestic reduced rate, exemption or substantiated treaty relief. Pay over applicable withholding within seven days. If the nature or source is unresolved, stop the computation and obtain the facts; do not impose 10% merely because a payment crosses the border ([CIT Law Arts. 3,19,27,37–40](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Arts. 7,91](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html); `cn-withholding`).",
+      "occurrences": 1,
+      "why": "Replace guessed cross-border rate with actual statutory scope",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-corporate-tax",
+      "old": "- [ ] Non-resident payments: 10% withheld (or treaty rate documented and referred) and paid within seven days.",
+      "new": "- [ ] Non-resident payments: category, Chinese source and establishment connection established; applicable base/rate or evidenced exemption/treaty claim recorded; actual withholding and seven-day payment checked.",
+      "occurrences": 1,
+      "why": "Correct blanket checklist rate",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-corporate-tax",
+      "old": "- **Conservative default.** If a cross-border payment's nature is unclear, withhold at 10% and refer.",
+      "new": "- **Unresolved payment.** Obtain the contract, transaction/source facts and recipient establishment information before computing. Refer the unresolved classification; no automatic 10% applies merely because its nature is unclear (Law Arts. 3,19,37; Regulations Art. 7).",
+      "occurrences": 1,
+      "why": "Remove invented uncertain-payment default",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-corporate-tax",
+      "old": "- An overpayment can be refunded or set against later tax.",
+      "new": "- An overpayment identified at annual settlement is refunded. Under STA announcement 2021 No. 34 Art. 2, it is not carried over to offset next year's CIT; this is separate from the in-year prepayment adjustment described above.",
+      "occurrences": 1,
+      "why": "Annual settlement overpayment follows refund rule",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-iit",
+      "old": "An owner who does have comprehensive income takes these deductions there, not twice",
+      "new": "A taxpayer with both comprehensive and business income can declare the CNY 60,000 basic expense deduction, special deductions, special additional deductions and other lawful deductions against either comprehensive or business income, without duplicate claims ([2025 reconciliation measures, Order No. 57 Art. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202502/t475327.html))",
+      "occurrences": 1,
+      "why": "Restore the current choice of deduction basket",
+      "source_ids": [
+        "6102a4b0edb542f1"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "- **Evidence.** A foreign tax receipt or record for the tax year is required. Without it no credit is given. If the receipt arrives later, the credit can be claimed back to the year of the income, up to five years.",
+      "new": "- **Evidence.** Obtain the foreign authority tax-year payment certificate, tax-payment document or tax record. If the taxpayer genuinely cannot provide that credential, 2020 No. 3 §10 permits both (1) the foreign return or tax notice confirming the tax payable and (2) corresponding bank payment evidence. A credit needs the prescribed proof, not necessarily one receipt format. Where foreign income was already declared without a credit, later production of qualifying credentials can support a claim back to that income year, with a retrospective limit of five years (§10).",
+      "occurrences": 1,
+      "why": "Preserve the statutory alternative foreign-tax evidence",
+      "source_ids": [
+        "4df181f65ba88456"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "- **Income type unclear.** Categories that are hard to define are decided by the STA (Implementing Regulations Art. 6). Until the category is confirmed, as a working default use the treatment that gives the higher tax and flag it for review; do not use the business income table to lower the tax.",
+      "new": "- **Income type unclear.** The STA determines categories that are hard to define (Implementing Regulations Art. 6). Obtain the contract, actual activities, payer and income facts and refer the classification before computing. Do not choose a category merely because it produces higher tax.",
+      "occurrences": 1,
+      "why": "No invented higher-tax classification default",
+      "source_ids": [
+        "6578413203601ac4"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "- **Residence not established.** Without day counts, do not apply the annual table or special deductions. Default to non-resident treatment and ask for entry and exit records.",
+      "new": "- **Residence not established.** Obtain domicile facts and full entry/exit records and apply IIT Law Art. 1 and Implementing Regulations Arts. 2,4 before selecting resident or non-resident computation. Missing day counts do not establish non-residence; do not guess a tax table or deduction entitlement.",
+      "occurrences": 1,
+      "why": "Missing facts do not prove non-residence",
+      "source_ids": [
+        "e056819faab82b3e",
+        "6578413203601ac4"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "foreign tax receipts on file",
+      "new": "qualifying foreign-tax evidence on file (including the permitted §10 substitute)",
+      "occurrences": 1,
+      "why": "Evidence wording consistency",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-iit",
+      "old": "Declare foreign income (B form) with foreign tax receipts",
+      "new": "Declare foreign income (B form) with qualifying foreign-tax evidence",
+      "occurrences": 1,
+      "why": "Evidence wording consistency",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-iit",
+      "old": "with the foreign tax receipts and the foreign tax year end",
+      "new": "with the foreign tax credentials or permitted substitute evidence and the foreign tax year end",
+      "occurrences": 1,
+      "why": "Evidence wording consistency",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-vat",
+      "old": "- Rate unknown, or sales at different rates not accounted for separately: use the higher rate. The law applies the highest rate when sales are not separately accounted for (Law Art. 12).",
+      "new": "- Rate unknown: establish the transaction category and applicable law before computing. Separately, where known sales at different rates have not been accounted for separately, apply the highest rate under VAT Law Art. 12. Missing classification facts alone are not that statutory trigger.",
+      "occurrences": 1,
+      "why": "Separate unknown classification from statutory multi-rate non-separation",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-vat",
+      "old": "- Export papers missing, or the refund claim not filed in time: treat the sale as domestic. Late or missing claims are taxed as domestic sales (Reg. Art. 48).",
+      "new": "- Export evidence missing or initial refund claim window missed: establish whether the transaction is refundable, exempt-only or domestically taxable under the applicable export provisions. [MOF/STA announcement 2026 No. 11 §9(1)(4)](https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-02/02/content_a761ec677dbb47bda83ce41928d9ff1f.shtml) allows qualifying later claims within the specified 36-month period; its §6 includes exempt-only cases. Missing papers or a missed initial window alone do not prove domestic taxation. Apply VAT Regulations Art. 48 with the actual category, event and deadline facts.",
+      "occurrences": 1,
+      "why": "Preserve later-claim and exempt-only alternatives",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-vat",
+      "old": "Check that it has not been added to the August 2026 repeal list (STA announcement 2026 No. 18) before relying on it.",
+      "new": "The complete 144-entry attachment to [STA announcement 2026 No. 18](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zhsszc/202608/P020260824532587315016.xls) was read on 29 October 2026; it does not list 2019 No. 45. That list check does not waive the actual voucher and taxable-use requirements.",
+      "occurrences": 1,
+      "why": "Close the explicit repeal-list research question with the complete official attachment",
+      "source_ids": [
+        "VAT18-attachment"
+      ]
+    },
+    {
+      "slug": "cn-stamp-tax",
+      "old": "| Sale of goods by a company to an individual | The rate table excludes only sale contracts \"signed by individuals\". The individual's side is outside the item. The company's side is taxed in practice, so confirm with the local bureau | Rate table note on sale contracts |",
+      "new": "| Sale of movable goods by a company to an individual, including an individual-business operator | The whole contract is outside the movable-goods sale-contract item; neither signatory pays under that item | [Stamp Tax Law rate-table exclusion; Tianjin 22 October 2026 Q&A](https://tianjin.chinatax.gov.cn/11200000000/0300/030005/20261022165546067.shtml); [Guangdong Q5–6](https://guangdong.chinatax.gov.cn/gdsw/gzsw_dmtxc/2023-08/15/content_83244a0e156a43209abc9bfdd7a9c81f.shtml) |",
+      "occurrences": 1,
+      "why": "Correct company-side assertion and retain individual-business scope",
+      "source_ids": [
+        "Stamp-personal-TJ",
+        "Stamp-personal-GD"
+      ]
+    },
+    {
+      "slug": "cn-transfer-pricing",
+      "old": "appointment of a majority of directors/senior managers",
+      "new": "appointment of half or more of directors/senior managers under the full appointment and concurrent-role alternatives",
+      "occurrences": 1,
+      "why": "Include equality in appointment relationship test",
+      "source_ids": [
+        "TP42"
+      ]
+    },
+    {
+      "slug": "cn-transfer-pricing",
+      "old": "ordinary historical related transactions above 40 million",
+      "new": "ordinary historical related transactions of at least 40 million",
+      "occurrences": 1,
+      "why": "APA ordinary threshold includes equality",
+      "source_ids": [
+        "TP64"
+      ]
+    },
+    {
+      "slug": "cn-transfer-pricing",
+      "old": "“Exceeds” means **strictly greater than**, not equal to.",
+      "new": "Where a test says “exceeds”, it means **strictly greater than**. This does not change the appointment test's “half or more” or the ordinary APA test's “at least 40 million”, which include equality.",
+      "occurrences": 1,
+      "why": "Avoid blanket strictness across different statutory words",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-withholding",
+      "old": "No.37 §13's repeals",
+      "new": "No.37 §17's repeals",
+      "occurrences": 1,
+      "why": "Correct repeal section citation",
+      "source_ids": [
+        "WHT37"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "Business income works the same way.",
+      "new": "For business income, multiply the Chinese tax on combined Chinese and foreign business taxable income by that country's business taxable income divided by combined business taxable income. The comprehensive-income fraction uses income amounts, while the business-income fraction uses taxable income (2020 No. 3 §3(1)–(2)).",
+      "occurrences": 1,
+      "why": "Preserve the distinct comprehensive and business foreign-credit fraction bases",
+      "source_ids": [
+        "4df181f65ba88456"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "an owner with no comprehensive income also deducts sixty thousand yuan and the personal deductions (Art. 15).",
+      "new": "an owner with no comprehensive income also deducts sixty thousand yuan and the personal deductions (Art. 15). Where the taxpayer has both income categories, Order No. 57 Art. 10 permits the personal deductions in either category without duplication; see the method below.",
+      "occurrences": 1,
+      "why": "Make the mixed-income election visible beside the business rate table",
+      "source_ids": [
+        "6102a4b0edb542f1"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "paid by a foreign entity or individual, unless",
+      "new": "paid by a foreign entity or individual, subject to filing with the competent tax authority (备案) under Implementing Regulations Art. 4, unless",
+      "occurrences": 1,
+      "why": "Keep the filing condition beside the six-year exemption",
+      "source_ids": [
+        "6578413203601ac4"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "A trip of exactly 30 days does not break it |",
+      "new": "A trip of exactly 30 days does not break it. The foreign-source/foreign-paid concession also requires competent-authority filing under Regulations Art. 4 |",
+      "occurrences": 1,
+      "why": "Retain the concession filing condition in the boundary table",
+      "source_ids": [
+        "6578413203601ac4"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "their 2026 foreign income paid from abroad would be exempt.",
+      "new": "their 2026 foreign-source income paid from abroad would qualify for the concession subject to the competent-authority filing condition (Regulations Art. 4).",
+      "occurrences": 1,
+      "why": "Preserve the filing/source conditions in the six-year example",
+      "source_ids": [
+        "6578413203601ac4"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "| Scrap sellers invoiced by recycling companies (\"reverse invoicing\") |",
+      "new": "| Scrap sellers using the qualifying 三流合一反向开票 (three-flows-in-one reverse-invoicing) mechanism |",
+      "occurrences": 1,
+      "why": "Retain the defined reverse-invoice scope",
+      "source_ids": [
+        "cdc046ed90ea2815"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "Putting property into an offshore trust, and income received through one, are taxable income under Law Art. 2. Refer",
+      "new": "The defined property transfers, continuing income and other tax events follow 2026 No. 21. Under §4, income already declared and taxed under that rule is not taxed again on actual distribution. Refer the actual settlor, property, control and event facts",
+      "occurrences": 1,
+      "why": "Preserve the trust event definitions and no-double-tax rule",
+      "source_ids": [
+        "0b9f2795249d7578"
+      ]
+    },
+    {
+      "slug": "cn-iit",
+      "old": "- **Offshore trusts** (2026 No. 21 and the STA's matching procedural announcement): transfers into a trust and distributions are now taxable. Refer.",
+      "new": "- **Offshore trusts:** determine the defined settlor/property/control and tax event under 2026 No. 21; income already taxed under §4 is not taxed again on actual distribution. Refer the detailed trust computation and procedure; do not classify every distribution as a new taxable event.",
+      "occurrences": 1,
+      "why": "Correct the repeated blanket trust-distribution statement",
+      "source_ids": [
+        "0b9f2795249d7578"
+      ]
+    },
+    {
+      "slug": "cn-corporate-tax",
+      "old": "**R&D commissioned overseas.** 80% of the actual cost counts as the commissioning company's overseas R&D cost. That amount qualifies only up to two-thirds of the company's eligible domestic R&D cost (Caishui 2018 No. 64).",
+      "new": "**R&D commissioned overseas.** Under [Caishui 2018 No. 64 §§1–3,6](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html), 80% of the actual cost counts as the commissioning company's overseas R&D cost, eligible only up to two-thirds of eligible domestic R&D cost. R&D commissioned to overseas individuals is excluded. Apply the written contract, science-and-technology department registration and retained expenditure/project evidence requirements before claiming.",
+      "occurrences": 1,
+      "why": "Keep overseas-individual exclusion and contract registration/evidence gate",
+      "source_ids": [
+        "1013b79c285b7d8b"
+      ]
+    },
+    {
+      "slug": "cn-corporate-tax",
+      "old": "100% (or 120% if listed) used.",
+      "new": "100% (or 120% if the applicable category qualification/list conditions are met) used.",
+      "occurrences": 1,
+      "why": "Correct dependent R&D checklist condition",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-corporate-tax",
+      "old": "- **Mechanics.** The payer is the withholding agent. It withholds on each payment, or on the date payment falls due, and pays the tax to the treasury within seven days, filing a withholding report (Law Art. 37, 40). If the payer does not withhold, the non-resident must pay where the income arises (Law Art. 39).",
+      "new": "- **Mechanics.** For applicable non-resident EIT withholding, the payer withholds on actual payment or when the payment obligation arises, except dividends/distributions: the withholding obligation arises on actual payment under [STA 2017 No. 37 §7](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html). Pay over and report within seven days. If the payer does not withhold, the non-resident follows its statutory payment duty (Law Arts. 37,39–40).",
+      "occurrences": 1,
+      "why": "Keep the actual-dividend-payment exception",
+      "source_ids": [
+        "WHT37"
+      ]
+    },
+    {
+      "slug": "cn-vat",
+      "old": "It can deduct the 6,000 as input with the tax payment certificate, provided it also holds the written contract, proof of payment and the foreign party's statement or invoice.",
+      "new": "Assume the buyer is a general VAT taxpayer and the service is used for eligible taxable transactions, with no input-credit exclusion. It can then deduct the 6,000 with the tax payment certificate, written contract, proof of payment and foreign party's statement or invoice. A small-scale buyer does not obtain input credit merely by remitting the withholding VAT (VAT Law Arts. 8–9,14,16,22; Regulations Arts. 11–12).",
+      "occurrences": 1,
+      "why": "Keep general-taxpayer and eligible-use conditions beside the imported-service example",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-transfer-pricing",
+      "old": ") art. 122).",
+      "new": ") art. 121).",
+      "occurrences": 1,
+      "why": "Correct special-interest non-deductibility article",
+      "source_ids": [
+        "43cd7c8e22186be0"
+      ]
+    },
+    {
+      "slug": "cn-transfer-pricing",
+      "old": "MAP does not itself suspend investigation, adjustment or collection.",
+      "new": "Establish the procedural effect of the actual MAP request and authority notice before changing investigation, adjustment or payment handling. Suspension of those processes is not established by this Guide; obtain the operative procedure rather than treating an application as a payment deferral.",
+      "occurrences": 1,
+      "why": "Retain the MAP procedure topic as an explicit unconfirmed determination",
+      "source_ids": [
+        "TP6"
+      ]
+    },
+    {
+      "slug": "cn-withholding",
+      "old": "| Treaty documents |Self-assessment/claim plus retained evidence; treaty measures'10 year retention applies | [STA 2019 No.35 treaty-claim measures](https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml) arts. 3,7–9 |",
+      "new": "| Treaty documents | Self-assessment/claim plus retained evidence; the ordinary retention period is 10 years under the linked collection rules | [Treaty measures 2019 No. 35 Arts. 3,7–9,11](https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml); [Tax Collection Detailed Rules Art. 29](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html) |",
+      "occurrences": 1,
+      "why": "Cite the actual treaty-document retention and ten-year provisions",
+      "source_ids": [
+        "Treaty35",
+        "f4fd2737d35dbad1"
+      ]
+    },
+    {
+      "slug": "cn-withholding",
+      "old": ") arts. 3–8).",
+      "new": ") arts. 3–8,11).",
+      "occurrences": 1,
+      "why": "Add retention pinpoint to treaty workflow",
+      "source_ids": [
+        "Treaty35"
+      ]
+    },
+    {
+      "slug": "cn-social-insurance",
+      "old": "**Not yet confirmed:** current city/category tables for Beijing, Shenzhen, Guangzhou, Hangzhou and Chengdu; pre-July 2026 Shanghai housing-fund bounds; non-Shanghai collection calendars and rounding; the previous blanket 5%–12% housing range; city-specific medical-account allocations and supplementary medical fees; precise maternity leave days/local supplements/divisor; local unemployment-benefit percentages; current flexible-worker pension rates and non-Shanghai voluntary-fund rules; foreign/Hong Kong/Macao/Taiwan housing-fund participation; branch-specific social-security agreements/certificates; pre 20 September 2026 housing-fund violation transitions; retirement-benefit and lump-sum eligibility computations. The earlier illustrative tax 1290 yuan is not verified as a current payroll result. These named limits replace unsupported defaults; they do not authorise estimating with another city's table.",
+      "new": "**Not yet confirmed:** current city/category tables for Beijing, Shenzhen, Guangzhou, Hangzhou and Chengdu; pre-July 2026 Shanghai housing-fund bounds; non-Shanghai collection calendars and rounding; the previous blanket 5%–12% housing range; city-specific medical-account allocations and supplementary medical fees; precise maternity leave days/local supplements/divisor; local unemployment-benefit percentages; current flexible-worker pension rates and non-Shanghai voluntary-fund rules; foreign/Hong Kong/Macao/Taiwan housing-fund participation; branch-specific social-security agreements/certificates; pre 20 September 2026 housing-fund violation transitions; retirement-benefit and lump-sum eligibility computations. The earlier illustrative tax 1290 yuan is not verified as a current payroll result. These named limits replace unsupported defaults; they do not authorise estimating with another city's table. Additional original topics retained as explicit unconfirmed/referral limits: resident rural/urban schemes; retiree rehires; intern/student work; dispatch/outsourcing; cross-province employer registration; enterprise/occupational annuities; commercial supplementary medical/employer-liability insurance; the former eight work-injury industry classes, industry examples and floating coefficients.",
+      "occurrences": 1,
+      "why": "Restore the named old topics without reintroducing unsupported figures",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-withholding",
+      "old": "**Not yet confirmed:** the exact current Hong Kong/Singapore/US/UK/Japan/Germany treaty rates and protocol/MLI holding-period conditions; Hong Kong/other destination-country taxation; indirect-transfer safe-harbour application to a particular restructuring; special equity/restricted-share treatment; general currency-control/remittance procedures; cross-period gross-up complications where the actual tax-bearing contract differs; Pillar Two effects; case-specific treaty-refund limitation periods and future electronic-form coordinates. These do not authorise the former blanket “when unsure, call it a royalty” or “withhold 20% then refund” defaults.",
+      "new": "**Not yet confirmed:** the exact current Hong Kong/Singapore/US/UK/Japan/Germany treaty rates and protocol/MLI holding-period conditions; Hong Kong/other destination-country taxation; indirect-transfer safe-harbour application to a particular restructuring; special equity/restricted-share treatment; general currency-control/remittance procedures; cross-period gross-up complications where the actual tax-bearing contract differs; Pillar Two effects; case-specific treaty-refund limitation periods and future electronic-form coordinates. These do not authorise the former blanket “when unsure, call it a royalty” or “withhold 20% then refund” defaults. Additional original topics retained as explicit unconfirmed/referral limits: Netherlands, France, South Korea, Australia, Canada, Luxembourg and Ireland treaty rates/conditions; guarantee-fee classification; digital services/cross-border ecommerce; private funds/QFLP/QDLP; FATCA referrals.",
+      "occurrences": 1,
+      "why": "Restore the named old topics without reintroducing unsupported figures",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-withholding",
+      "old": "The former Hong Kong, Singapore, US, UK, Japan and Germany treaty-rate examples",
+      "new": "The former Hong Kong, Singapore, US, UK, Japan, Germany, Netherlands, France, South Korea, Australia, Canada, Luxembourg and Ireland treaty-rate examples",
+      "occurrences": 1,
+      "why": "Name every former country row in the treaty boundary",
+      "source_ids": []
+    },
+    {
+      "slug": "cn-vat",
+      "old": "[Law Art. 11; No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html)",
+      "new": "[VAT Law Art. 11](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [2026 No. 10 §3(3)(6)](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html)",
+      "why": "Bounded F19 residual: direct No10 URL beside reduction and thresholds"
+    },
+    {
+      "slug": "cn-vat",
+      "old": "[Law Art. 23; No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html)",
+      "new": "[VAT Law Art. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [2026 No. 10 §1(1)–(2)](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html)",
+      "why": "Bounded F19 residual: direct No10 URL beside reduction and thresholds"
+    }
+  ],
+  "initial_findings": 19,
+  "affected_rows": [
+    "CN-CNCORPORATETAX-01",
+    "CN-CNCORPORATETAX-02",
+    "CN-CNCORPORATETAX-03",
+    "CN-CNCORPORATETAX-04",
+    "CN-CNCORPORATETAX-05",
+    "CN-CNCORPORATETAX-06",
+    "CN-CNCORPORATETAX-09",
+    "CN-CNCORPORATETAX-11",
+    "CN-CNCORPORATETAX-12",
+    "CN-CNCORPORATETAX-14",
+    "CN-CNCORPORATETAX-17",
+    "CN-CNCORPORATETAX-19",
+    "CN-CNIIT-02",
+    "CN-CNIIT-03",
+    "CN-CNIIT-04",
+    "CN-CNIIT-05",
+    "CN-CNIIT-06",
+    "CN-CNIIT-07",
+    "CN-CNIIT-08",
+    "CN-CNIIT-09",
+    "CN-CNIIT-10",
+    "CN-CNIIT-11",
+    "CN-CNSTAMPTAX-02",
+    "CN-CNSTAMPTAX-05",
+    "CN-CNSTAMPTAX-10",
+    "CN-CNVAT-02",
+    "CN-CNVAT-05",
+    "CN-CNVAT-06",
+    "CN-CNVAT-08",
+    "CN-CNVAT-13",
+    "CN-TP-02",
+    "CN-TP-22",
+    "CN-TP-26",
+    "CN-TP-27",
+    "CN-WH-14",
+    "CN-WH-16"
+  ],
+  "restored_named_original_topic_groups": 19,
+  "restored_topics": {
+    "cn-social-insurance": [
+      "resident rural/urban schemes",
+      "retiree rehires",
+      "intern/student work",
+      "dispatch/outsourcing",
+      "cross-province employer registration",
+      "enterprise/occupational annuities",
+      "commercial supplementary medical/employer-liability insurance",
+      "eight work-injury industry classes, industry examples and floating coefficients"
+    ],
+    "cn-withholding": [
+      "Netherlands treaty row",
+      "France treaty row",
+      "South Korea treaty row",
+      "Australia treaty row",
+      "Canada treaty row",
+      "Luxembourg treaty row",
+      "Ireland treaty row",
+      "guarantee-fee classification",
+      "digital services/cross-border ecommerce",
+      "private funds/QFLP/QDLP",
+      "FATCA referral"
+    ]
+  },
+  "presentation": "Official URLs and operative references added beside core table figures; human-readable source labels; required general-reference disclaimer. No calculation values changed.",
+  "bounded_residuals_fixed": [
+    "F19: split2combinedLaw/No10links"
+  ]
+}
