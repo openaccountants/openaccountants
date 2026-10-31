@@ -247,7 +247,7 @@ These are simplified penalty rules for estimation purposes. Always flag as T2 an
 
 ### Australia
 
-- **Failure to lodge on time**: one penalty unit per 28-day period or part period, capped at 5 units before the applicable multiplier. At AUD 364 per unit for infringements on or after 1 July 2026, the base cap is AUD 1,820. Individuals and small withholders can still meet the income or current GST turnover tests for a higher multiplier. Verify the penalty unit for the infringement date and apply the alternative tests and special rules in [au-lodgment-deadlines-penalties](../international/australia/au-lodgment-deadlines-penalties.md#section-6---failure-to-lodge-on-time-penalty). [TAA 1953 (Cth) sch 1 s 286-80](https://www.ato.gov.au/law/view/document?docid=PAC/19530001/SCH1-286-80). _(Australia)_
+- **Failure to lodge on time**: one penalty unit per 28-day period or part period, capped at 5 units before the applicable multiplier. At AUD 364 per unit for infringements on or after 1 July 2026, the base cap is AUD 1,820. Individuals and small withholders can still meet the income or current GST turnover tests for a higher multiplier. Verify the penalty unit for the infringement date and apply the alternative tests and special rules in [au-lodgment-deadlines-penalties](../australia/au-lodgment-deadlines-penalties.md#section-6---failure-to-lodge-on-time-penalty). [TAA 1953 (Cth) sch 1 s 286-80](https://www.ato.gov.au/law/view/document?docid=PAC/19530001/SCH1-286-80). _(Australia)_
 - **General interest charge (GIC)** — Base rate + 7 percentage points, compounded daily.  _(Australia)_
 
 ### Canada
