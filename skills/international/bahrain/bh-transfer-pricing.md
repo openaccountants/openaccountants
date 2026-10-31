@@ -25,7 +25,9 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 
 # Bahrain transfer pricing v0.1
 
-Tax year 2026. Bahrain has no general corporate income tax and no general
+**Draft law.** This skill states the law in force for 2026. A draft corporate income tax law went to the legislature on 29 December 2025. Secondary sources report fiscal years from 1 January 2027 and transfer pricing rules for residents above BHD 1 million ([KPMG, March 2026](https://kpmg.com/us/en/taxnewsflash/news/2026/03/tnf-bahrain-overview-of-draft-law-introducing-10-percent-corporate-income-tax.html)). We found no confirmation of enactment. Before advising on a period starting in 2027, check its status with the NBR.
+
+Tax year 2026. Under the law in force for 2026, Bahrain has no general corporate income tax and no general
 transfer pricing law. Transfer pricing rules exist in three places only, set out
 below. Every rule here comes from the law or the National Bureau for Revenue
 (NBR) guidance listed under Sources. The DMTT Law, its Executive Regulations and
@@ -70,7 +72,7 @@ allows only "reasonable" costs and expenses (art. 4(a)-(b)), and where the
 taxpayer's accounting method "does not fairly reflect the taxpayer's income" the
 computation is made by a method that does (art. 7).
 
-**Who is outside.** If a company is not in the hydrocarbon sector and belongs to
+**Who is outside for 2026.** If a company is not in the hydrocarbon sector and belongs to
 no group that meets the EUR 750 million DMTT Revenue Test, Bahrain law sets no
 arm's length rule and no transfer pricing documentation for it. It still has a
 CbCR notification duty if its group is an MNE Group with consolidated revenue
@@ -353,7 +355,7 @@ expected:
 | NBR, Guidance on Mutual Agreement Procedure, version 1.1 | https://www.nbr.gov.bh/publications/view/Bahrains_Mutual_Agreement_Procedure_MAP_Guidance | 2026-10-29 |
 | Legislative Decree No. 22 of 1979, Income Tax Law, arts. 1, 2, 4, 7, 8, 9, 12 (LLOC English) | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
 
-Not yet confirmed: whether the NBR accepts unilateral or bilateral APA requests
+Not yet confirmed: whether the draft corporate income tax law has been enacted, and its final terms; whether the NBR accepts unilateral or bilateral APA requests
 (no published procedure); the deadline the NBR sets when it requests a local
 file or master file (set case by case under DMTT Law art. 25(B)); whether the
 NBR has prescribed a form or language for the local file and master file under

@@ -2,6 +2,7 @@
 jurisdiction: BH
 covered_by:
   TP: bh-transfer-pricing
+  XB: bh-cross-border-tax
 ---
 
 # Bahrain: tax pack
@@ -26,7 +27,7 @@ professional's sign-off.
 | VAT | [bahrain-vat](bahrain-vat.md) | sourced from the law, tax year 2025 |
 | SC and PR, social contributions and payroll | [bh-payroll-social](bh-payroll-social.md) | sourced from the law, tax year 2025 |
 | TP, transfer pricing | [bh-transfer-pricing](bh-transfer-pricing.md) | checked against the law, tax year 2026: DMTT arm's length rule and local/master file, CbCR, hydrocarbon tax; Bahrain has no general TP regime |
-| XB, cross-border | bh-cross-border-tax | in a separate PR |
+| XB, cross-border | [bh-cross-border-tax](bh-cross-border-tax.md) | checked against the law, tax year 2026 |
 
 [Company formation](bh-company-formation.md) is an entity-choice skill, tax
 year 2025.
