@@ -160,6 +160,8 @@ Other small-scale rules:
 | Toll-road e-invoice (通行费), or e-invoice (ordinary invoice) marked 通行费 | VAT shown on it | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |
 | Bridge and lock toll invoices | Amount ÷ (1 + 5%) × 5% | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |
 
+A taxpayer confirms the use of a digital e-invoice or other voucher through its tax digital account (税务数字账户) or the VAT invoice platform before claiming it ([Shanghai Tax Bureau explanation](https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html), Q12).
+
 Apart from the vouchers above, an ordinary invoice (普通发票) gives no input credit (Reg. Art. 12).
 
 **Farm products (No. 10, from 2026-01-01).** If a special invoice or customs certificate is obtained from a general taxpayer, deduct the VAT shown. If a special invoice is obtained from a small-scale taxpayer taxed at 3%, compute input as the invoice amount × 9% deduction rate. With a farm-product sales or purchase invoice, compute input as the purchase price × 9%. The 9% rate also applies to exempt farm products bought from farmers' cooperatives.
@@ -305,7 +307,7 @@ Refuse to:
 | 10 or 15 days | As set by the tax office | Within 15 days from the 1st of the next month | Prepay within 5 days after each period ends |
 | Per transaction | Taxpayers without regular taxable sales | If sales reach the threshold, file by 30 June of the following year | None |
 
-The tax office sets each taxpayer's period according to the amount of tax. If the last day falls on a public holiday, the deadline moves to the day after the holiday, and three or more consecutive holidays inside the period extend it by the number of holidays ([Implementation Rules of the Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html), Art. 109). Check the tax office's filing calendar for the month. Returns are due even when no tax is payable, or while an exemption applies ([Implementation Rules of the Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html), Art. 32: "纳税人在纳税期内没有应纳税款的，也应当按照规定办理纳税申报").
+The tax office sets each taxpayer's period according to the amount of tax. Law Art. 30 removed the old 1-day, 3-day and 5-day periods ([Shanghai Tax Bureau Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202603/t479704.html), Q2: "删除了“1日、3日、5日”三个短期计税期间"). If the last day falls on a public holiday, the deadline moves to the day after the holiday, and three or more consecutive holidays inside the period extend it by the number of holidays ([Implementation Rules of the Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html), Art. 109). Check the tax office's filing calendar for the month. Returns are due even when no tax is payable, or while an exemption applies ([Implementation Rules of the Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html), Art. 32: "纳税人在纳税期内没有应纳税款的，也应当按照规定办理纳税申报").
 
 **Where to file (Law Art. 29).** Taxpayers with a fixed place of business file where the business is registered or where they reside. Branches in a different county file separately, unless consolidated filing is approved. Taxpayers without a fixed place file where the sale takes place. Natural persons selling or leasing real estate, transferring natural resource rights, or providing construction file where the property or work is. Import VAT is collected by customs.
 
@@ -451,13 +453,14 @@ Sources: [VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t47469
 | scope notes, MOF/STA announcement 2026 No. 9 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479282.html | 2026-10-29 |
 | STA announcement 2026 No. 4 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479286.html | 2026-10-31 |
 | STA announcement 2019 No. 45 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202001/t451787.html | 2026-10-31 |
-| STA: nationwide digital e-invoice | https://www.chinatax.gov.cn/chinatax/n810219/n810780/c5236090/content.html | 2026-10-29 |
-| Shanghai Tax Bureau explanation | https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html | 2026-10-29 |
+| STA: nationwide digital e-invoice | https://www.chinatax.gov.cn/chinatax/n810219/n810780/c5236090/content.html | 2026-10-31 |
+| Shanghai Tax Bureau explanation | https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html | 2026-10-31 |
 | MOF/STA announcement 2026 No. 2 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202601/t479001.html | 2026-10-29 |
 | MOF/STA announcement 2026 No. 11 on export VAT and consumption tax | https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-02/02/content_a761ec677dbb47bda83ce41928d9ff1f.shtml | 2026-10-31 |
 | STA announcement 2026 No. 6 on return forms | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479295.html | 2026-10-29 |
 | Tax Collection Administration Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-10-29 |
 | Implementation Rules of the Tax Collection Administration Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html | 2026-10-31 |
+| Shanghai Tax Bureau Q&A on old and new VAT law | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202603/t479704.html | 2026-10-31 |
 | Shanghai Tax Bureau announcement 2026 No. 1 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202606/t480523.html | 2026-10-29 |
 
 | Additional operative source | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/P020260202532248327615.pdf | 2026-10-31 |
