@@ -1,9 +1,10 @@
 ---
 name: netherlands-owner-occupied-home-tax-scheme
 description: The Dutch owner-occupied home scheme
+version: 0.1
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-01
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -11,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Netherlands — Owner-Occupied Home Tax Scheme
+# Netherlands: Owner-Occupied Home Tax Scheme
 
 Use this method for Dutch income-tax classification of a private main home, qualifying home debt and legacy home-saving products in 2026. Establish the applicable year before calculating: a return filed during 2026 may concern 2025. Use the separate [2025 home instructions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere) for that return; the figures below are 2026 figures. This is a calculation and evidence workflow, not authority to file or change a mortgage contract.
 
@@ -39,12 +40,12 @@ For temporary absence, current article 3.111(7) excludes from “third parties,�
 
 | 2026 WOZ value | Annual ordinary benefit |
 | --- | --- |
-| Up to €12,500 | Nil |
-| Above €12,500 through €25,000 | 0.10% of value |
-| Above €25,000 through €50,000 | 0.20% of value |
-| Above €50,000 through €75,000 | 0.25% of value |
-| Above €75,000 through €1,350,000 | 0.35% of value |
-| Above €1,350,000 | €4,725 plus 2.35% of the excess |
+| Up to €12,500 | Nil Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
+| Above €12,500 through €25,000 | 0.10% of value Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
+| Above €25,000 through €50,000 | 0.20% of value Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
+| Above €50,000 through €75,000 | 0.25% of value Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
+| Above €75,000 through €1,350,000 | 0.35% of value Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
+| Above €1,350,000 | €4,725 plus 2.35% of the excess Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
 | Source | [2026 annual table and article 3.112](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere) |
 
 The vacant sale/future-home exceptions have no deemed benefit. The temporary-assignment exception uses 0.55% through €1,350,000 and, above that, €7,425 plus 2.35% of the excess. Do not apply that higher schedule to every absence. [Article 3.112(4)–(5)](https://wetten.overheid.nl/BWBR0011353).
@@ -95,13 +96,42 @@ There is no free election to put qualifying home debt into Box 3. Deliberately c
 
 Deliver a property-period schedule, debt-tranche reconciliation, source/year register, home-income calculation, partner allocation and unresolved-input list. Keep supporting documents and client approval; the guide itself does not authorize submission.
 
+## Checked examples
+
+```oa-check
+name: Eigenwoningforfait, WOZ value EUR 400,000 (2026)
+inputs:
+  woz: 400000
+steps:
+  - forfait: pct(woz, 0.35)
+expected:
+  forfait: 1400
+```
+
+```oa-check
+name: Eigenwoningforfait, WOZ value EUR 1,500,000 (2026)
+inputs:
+  woz: 1500000
+steps:
+  - forfait: 4725 + pct(woz - 1350000, 2.35)
+expected:
+  forfait: 8250
+```
+
+## Sources
+
+- https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere (read 2026-10-31)
+- https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere (read 2026-10-31)
+
+Not yet confirmed: nothing outstanding from this pass.
+
 <!-- openaccountants-cta-block -->
 
 ---
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network: accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).

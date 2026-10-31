@@ -1,10 +1,10 @@
 ---
 name: nl-deductions
 description: "Dutch personal deductions (aftrekposten) a resident individual claims in the 2026 income tax return (aangifte inkomstenbelasting). Covers mortgage interest (hypotheekrenteaftrek), the eigenwoningforfait and the Wet Hillen deduction; the tariefsaanpassing that caps relief in the top band at 37.56%; partner alimony; specific care costs (specifieke zorgkosten) with the increase and the threshold; gifts (giftenaftrek: ordinary gifts with the 1%/EUR 60 floor and 10% ceiling, periodic gifts, the cultural uplift); weekend costs for severely disabled persons; the end of the study-cost deduction; the 2026 tax credits as pointers; who files and the 1 May deadline. Tax year 2026, with 2025 figures for returns still open. Trigger phrases: aftrekposten, hypotheekrenteaftrek, tariefsaanpassing, zorgkosten aftrek, giftenaftrek, ANBI, periodieke gift, partneralimentatie, studiekosten, persoonsgebonden aftrek. Out of scope: entrepreneur deductions (nl-zzp-deductions), rates and credits in full (nl-income-tax, nl-income-tax-special-groups), non-residents (nl-cross-border), objections (nl-tax-objection)."
-version: 1.2
+version: 1.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -35,36 +35,36 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 |---|---|---|---|
 | Box 1 bands below AOW age | 8.10% income tax to EUR 38,883 (plus national insurance premiums, combined rate in nl-income-tax); 37.56% to EUR 78,426; 49.50% above | 2026 | Wet IB art. 2.10(1), https://wetten.overheid.nl/BWBR0011353/2026-01-01 ; full detail in nl-income-tax |
 | Tariefsaanpassing: income threshold | income from work and home before deductions more than EUR 78,426 (2025: EUR 76,817) | 2026 | Wet IB art. 2.10(2); https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/afbouw-tarief-aftrekposten-bij-hoog-inkomen |
-| Tariefsaanpassing: percentage | 11.94% (2025: 12.02%), so top-band relief is at most 37.56% (2025: 37.48%) | 2026 | Wet IB art. 2.10(2); same Belastingdienst page |
-| Eigenwoningforfait (WOZ value) | nil to EUR 12,500; 0.10% to EUR 25,000; 0.20% to EUR 50,000; 0.25% to EUR 75,000; 0.35% to EUR 1,350,000; above: EUR 4,725 plus 2.35% of the excess | 2026 | Wet IB art. 3.112(1) |
+| Tariefsaanpassing: percentage | 11.94% (2025: 12.02%), so top-band relief is at most 37.56% (2025: 37.48%) | 2026 | Wet IB art. 2.10(2); same Belastingdienst page Source: https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/afbouw-tarief-aftrekposten-bij-hoog-inkomen (tax year 2026) (read 2026-10-31) |
+| Eigenwoningforfait (WOZ value) | nil to EUR 12,500; 0.10% to EUR 25,000; 0.20% to EUR 50,000; 0.25% to EUR 75,000; 0.35% to EUR 1,350,000; above: EUR 4,725 plus 2.35% of the excess | 2026 | Wet IB art. 3.112(1) Source: https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/hoe-werkt-eigenwoningforfait (tax year 2026) (read 2026-10-31) |
 | Eigenwoningforfait 2025, top bands | 0.35% to EUR 1,330,000; above: EUR 4,655 plus 2.35% | 2025 | https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/hoe-werkt-eigenwoningforfait |
 | Wet Hillen share of (forfait minus home costs) | 71.867% (2025: 76.667%); ends 1 January 2041 | 2026 | Wet IB art. 3.123a(2); https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigenwoningforfait/geen_of_een_kleine_eigenwoningschuld/geen_of_een_kleine_eigenwoningschuld |
 | New mortgage debt (from 2013): repayment | at least annuity (or linear), fully repaid within 360 months | 2026 | Wet IB art. 3.119a and 3.119c |
 | Interest deduction period | at most 360 months; for debt existing before 1 January 2001 counted from that date | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere |
-| Restschuld after a sale between 29 October 2012 and 31 December 2017 | interest deductible for 15 years | 2026 | Wet IB art. 3.120a; same chapter |
+| Restschuld after a sale between 29 October 2012 and 31 December 2017 | interest deductible for 15 years | 2026 | Wet IB art. 3.120a; same chapter Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere (tax year 2026) (read 2026-10-31) |
 | Care costs: increase (verhoging) | 40% of costs b to h; 113% at AOW age at 1 January; only if drempelinkomen (joint with a whole-year partner) not more than EUR 41,123 (2025: EUR 40,502) | 2026 | Wet IB art. 6.19 with art. 2.10a(1) |
-| Care costs: threshold, no whole-year partner | EUR 166 up to EUR 9,680; 1.65% up to EUR 51,411; above: 1.65% of EUR 51,411 (EUR 848) plus 5.75% of the excess | 2026 | Wet IB art. 6.20(1) |
-| Care costs: threshold, whole-year partner | first band up to EUR 19,360 with EUR 332; other bands the same | 2026 | Wet IB art. 6.20(2) |
+| Care costs: threshold, no whole-year partner | EUR 166 up to EUR 9,680; 1.65% up to EUR 51,411; above: 1.65% of EUR 51,411 (EUR 848) plus 5.75% of the excess | 2026 | Wet IB art. 6.20(1) Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/relatie_familie_en_gezondheid/gezondheid/aftrek_zorgkosten/hoe_berekent_u_uw_aftrek/drempelbedrag_berekenen/drempelbedrag-2026 (tax year 2026) (read 2026-10-31) |
+| Care costs: threshold, whole-year partner | first band up to EUR 19,360 with EUR 332; other bands the same | 2026 | Wet IB art. 6.20(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/relatie_familie_en_gezondheid/gezondheid/aftrek_zorgkosten/hoe_berekent_u_uw_aftrek/drempelbedrag_berekenen/drempelbedrag-2026 (tax year 2026) (read 2026-10-31) |
 | Care costs: threshold 2025 | EUR 164 up to EUR 9,534; 1.65% up to EUR 50,635; EUR 835 plus 5.75% above (partners: EUR 328 up to EUR 19,068) | 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/relatie_familie_en_gezondheid/gezondheid/aftrek_zorgkosten/hoe_berekent_u_uw_aftrek/drempelbedrag_berekenen/drempelbedrag-2025 |
 | Care costs: travel by car (treatment and sick visits) | EUR 0.23 per km plus parking, ferry and toll, in the law as it stands; the Belastingplan 2027 bill raises it to EUR 0.25 back to 1 January 2026, and the Belastingdienst already uses EUR 0.25 | 2026 | Wet IB art. 6.17(6); Kamerstuk 37022 nr. 2, art. I part H and art. LXIII(1)(a) |
 | Care costs: cannot walk 100 metres | flat EUR 925 a year | 2026 | Wet IB art. 6.17(7) |
 | Care costs: extra clothing and bedding | flat EUR 330, or EUR 825 if extra spend is at least EUR 660 above normal | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_specifieke_zorgkosten |
 | Care costs: extra household help counts above | 0% of verzamelinkomen up to EUR 39,701; 1% to EUR 59,549; 2% to EUR 79,387; 3% above | 2026 | Wet IB art. 6.17(3) |
-| Tegemoetkoming specifieke zorgkosten | paid only if more than EUR 18 | 2026 | Fiscale informatie 2026 ch. 17.5 (care chapter above) |
+| Tegemoetkoming specifieke zorgkosten | paid only if more than EUR 18 | 2026 | Fiscale informatie 2026 ch. 17.5 (care chapter above) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_specifieke_zorgkosten (tax year 2026) (read 2026-10-31) |
 | Ordinary gifts: floor | the higher of EUR 60 and 1% of drempelinkomen | 2026 | Wet IB art. 6.39(1) |
 | Ordinary gifts: ceiling | 10% of drempelinkomen, raised by the cultural uplift | 2026 | Wet IB art. 6.39(1), 6.39a(3) |
 | Gifts in kind needing a valuation | above EUR 10,000 a year (whole-year partners EUR 20,000) | 2026 | Wet IB art. 6.38(2),(5) and 6.39(2),(4) |
-| Periodic gifts: cap | EUR 1,500,000 a year in total (partners together) | 2026 | Wet IB art. 6.38(4),(5) |
-| Cultural ANBI uplift | 25% of the gift, at most EUR 1,250 (partners together) | 2026 | Wet IB art. 6.39a |
+| Periodic gifts: cap | EUR 1,500,000 a year in total (partners together) | 2026 | Wet IB art. 6.38(4),(5) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_giften (tax year 2026) (read 2026-10-31) |
+| Cultural ANBI uplift | 25% of the gift, at most EUR 1,250 (partners together) | 2026 | Wet IB art. 6.39a Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_giften (tax year 2026) (read 2026-10-31) |
 | Volunteer car costs waived | EUR 0.23 per km in the law as it stands; the Belastingplan 2027 bill raises it to EUR 0.25 back to 1 January 2026 | 2026 | Wet IB art. 6.36(2); Kamerstuk 37022 nr. 2, art. I part I |
 | Weekend costs, disabled person 21 or older | EUR 13 a day; EUR 0.23 per km by car (the Belastingdienst chapter says EUR 0.25); half each if both partners claim for the same person | 2026 | Uitvoeringsregeling IB 2001 art. 40, text in force from 17 January 2026, https://wetten.overheid.nl/BWBR0012031/2026-01-17 |
-| General tax credit (algemene heffingskorting) | EUR 3,115, less 6.398% of verzamelinkomen above EUR 29,736 | 2026 | Wet IB art. 8.10(2) |
+| General tax credit (algemene heffingskorting) | EUR 3,115, less 6.398% of verzamelinkomen above EUR 29,736 | 2026 | Wet IB art. 8.10(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen (tax year 2026) (read 2026-10-31) |
 | Labour credit (arbeidskorting) | at most EUR 5,685, less 6.51% of work income above EUR 45,592 | 2026 | Wet IB art. 8.11 |
-| IACK | 11.45% of work income above EUR 6,239, at most EUR 3,032 | 2026 | Wet IB art. 8.14a(2) |
+| IACK | 11.45% of work income above EUR 6,239, at most EUR 3,032 | 2026 | Wet IB art. 8.14a(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen (tax year 2026) (read 2026-10-31) |
 | Elderly / single elderly / young disabled credit | EUR 2,067 (less 15% above EUR 46,002) / EUR 540 / EUR 923 | 2026 | Wet IB art. 8.17, 8.18, 8.16a |
 | Green investment credit | 0.1% of the exempt green investments | 2026 | Wet IB art. 8.19(2) |
 | Box 3 tax-free allowance | EUR 59,357 per person (2025: EUR 57,684) | 2026 | Wet IB art. 5.5; https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/heffingsvrij-vermogen |
-| Green investments exempt in box 3 | EUR 26,715 (partners EUR 53,430) | 2026 | Wet IB art. 5.13(1) |
+| Green investments exempt in box 3 | EUR 26,715 (partners EUR 53,430) | 2026 | Wet IB art. 5.13(1) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen (tax year 2026) (read 2026-10-31) |
 | Late-filing penalty (verzuimboete) | EUR 469 (Belastingdienst standard amount); statutory maximum EUR 6,709, used for repeat lateness | 2026 | AWR art. 67a(1) (maximum); https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wat-gebeurt-er-als-ik-geen-aangifte-doe-of-te-laat-of-onvolledig |
 
 ## The taxable base
@@ -217,19 +217,19 @@ expected:
 | Wet inkomstenbelasting 2001, art. 6.17 change history (pending bill 37022 listed) | https://wetten.overheid.nl/BWBR0011353/2026-02-21/0/Hoofdstuk6/Afdeling6.5/Artikel6.17/informatie | 2026-10-24 |
 | Belastingplan 2027 bill, Kamerstuk 37022 nr. 2 (art. I parts H and I, art. II part G, art. LXIII) | https://zoek.officielebekendmakingen.nl/kst-37022-2.html | 2026-10-24 |
 | Algemene wet inzake rijksbelastingen, art. 67a | https://wetten.overheid.nl/BWBR0002320/2026-01-01 | 2026-10-24 |
-| Belastingdienst, tariefsaanpassing aftrekposten | https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/afbouw-tarief-aftrekposten-bij-hoog-inkomen | 2026-10-24 |
-| Belastingdienst, eigenwoningforfait 2026 and 2025 | https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/hoe-werkt-eigenwoningforfait | 2026-10-24 |
+| Belastingdienst, tariefsaanpassing aftrekposten | https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/afbouw-tarief-aftrekposten-bij-hoog-inkomen | 2026-10-31 |
+| Belastingdienst, eigenwoningforfait 2026 and 2025 | https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/hoe-werkt-eigenwoningforfait | 2026-10-31 |
 | Belastingdienst, Wet Hillen | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigenwoningforfait/geen_of_een_kleine_eigenwoningschuld/geen_of_een_kleine_eigenwoningschuld | 2026-10-24 |
-| Fiscale informatie 2026 ch. 10, own home and restschuld | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere | 2026-10-24 |
-| Fiscale informatie 2026 ch. 16, gifts | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_giften | 2026-10-24 |
-| Fiscale informatie 2026 ch. 17, specific care costs | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_specifieke_zorgkosten | 2026-10-24 |
-| Belastingdienst, care-cost threshold 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/relatie_familie_en_gezondheid/gezondheid/aftrek_zorgkosten/hoe_berekent_u_uw_aftrek/drempelbedrag_berekenen/drempelbedrag-2026 | 2026-10-24 |
+| Fiscale informatie 2026 ch. 10, own home and restschuld | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere | 2026-10-31 |
+| Fiscale informatie 2026 ch. 16, gifts | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_giften | 2026-10-31 |
+| Fiscale informatie 2026 ch. 17, specific care costs | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_specifieke_zorgkosten | 2026-10-31 |
+| Belastingdienst, care-cost threshold 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/relatie_familie_en_gezondheid/gezondheid/aftrek_zorgkosten/hoe_berekent_u_uw_aftrek/drempelbedrag_berekenen/drempelbedrag-2026 | 2026-10-31 |
 | Belastingdienst, care-cost threshold 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/relatie_familie_en_gezondheid/gezondheid/aftrek_zorgkosten/hoe_berekent_u_uw_aftrek/drempelbedrag_berekenen/drempelbedrag-2025 | 2026-10-24 |
 | Fiscale informatie 2025 ch. 17, care costs (2025 increase limit) | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/aftrek_specifieke_zorgkosten | 2026-10-24 |
 | Fiscale informatie 2026 ch. 18, study costs | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_studiekosten | 2026-10-24 |
 | Fiscale informatie 2026 ch. 19, partner alimony | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_betaalde_partneralimentatie | 2026-10-24 |
 | Fiscale informatie 2026 ch. 20, weekend costs for severely disabled persons | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_voor_tijdelijk_verblijf_thuis | 2026-10-24 |
-| Fiscale informatie 2026 ch. 21, tax credits | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen | 2026-10-24 |
+| Fiscale informatie 2026 ch. 21, tax credits | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen | 2026-10-31 |
 | Belastingdienst, box 3 tax-free allowance | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/heffingsvrij-vermogen | 2026-10-24 |
 | Belastingdienst, late or missing return | https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wat-gebeurt-er-als-ik-geen-aangifte-doe-of-te-laat-of-onvolledig | 2026-10-24 |
 

@@ -1,10 +1,10 @@
 ---
 name: nl-income-tax
 description: "Dutch personal income tax (inkomstenbelasting) for a resident individual, tax year 2026, with 2025 figures for returns still open. Covers the three boxes: box 1 bands (8.10% tax plus 27.65% national insurance in the first band, 37.56%, 49.50%) and the AOW-age rates; the tariefsaanpassing; the algemene heffingskorting and arbeidskorting with their phase-outs; the inkomensafhankelijke combinatiekorting and ouderenkorting; box 2 at 24.5% and 31%; box 3 for 2026 under the bridging law, the Hoge Raad rulings and the tegenbewijsregeling (actual return); fiscal-partner allocation; the 1 May return, extensions, voorlopige aanslag, belastingrente and penalties. Trigger phrases: aangifte inkomstenbelasting, box 1 tarief, heffingskortingen, arbeidskorting, box 3 werkelijk rendement, tegenbewijsregeling, voorlopige aanslag, belastingrente. Out of scope: entrepreneur reliefs (nl-zzp-deductions), personal and home deductions (nl-deductions), AOW-age detail (nl-income-tax-special-groups), box 2 detail (nl-box2-substantial-interest), expat scheme (nl-30-percent-ruling), payroll (nl-payroll-tax), non-residents (nl-cross-border)."
-version: 2.1
+version: 2.2
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -32,30 +32,30 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 |---|---|---|---|
 | Box 1, below AOW age: first band | to EUR 38,883: 35.75% (8.10% income tax plus 27.65% national insurance: AOW 17.90%, Anw 0.10%, Wlz 9.65%) | 2026 | Wet IB art. 2.10(1), https://wetten.overheid.nl/BWBR0011353/2026-02-21 ; Wfsv art. 10-11, https://wetten.overheid.nl/BWBR0017745/2026-01-01 ; contribution rates: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen |
 | Box 1: second band | above EUR 38,883 to EUR 78,426: 37.56% | 2026 | Wet IB art. 2.10(1) |
-| Box 1: third band | above EUR 78,426: 49.50% | 2026 | Wet IB art. 2.10(1) |
+| Box 1: third band | above EUR 78,426: 49.50% | 2026 | Wet IB art. 2.10(1) Source: https://zoek.officielebekendmakingen.nl/kst-37022-2.html (tax year 2026) (read 2026-10-31) |
 | Box 1, AOW age all year, born on or after 1 January 1946 | first band to EUR 38,883 at 17.85%; then 37.56% and 49.50% | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 |
 | Box 1, born before 1 January 1946 | first band to EUR 41,123 at 17.85% (8.10% tax); 37.56% to EUR 78,426; 49.50% above | 2026 | Wet IB art. 2.10a(1); same Belastingdienst page |
 | Box 1, AOW age reached during 2026 | first band rate by month reached: January 17.85% rising to December 34.26% | 2026 | same Belastingdienst page; Wfsv art. 10(2) |
 | Tariefsaanpassing | extra 11.94% of the lower of (a) the deductions listed in art. 2.10(3) and (b) box 1 income plus those deductions above EUR 78,426; their value is capped at 37.56% | 2026 | Wet IB art. 2.10(2),(3) |
-| Algemene heffingskorting (general credit), below AOW age | EUR 3,115, less 6.398% of verzamelinkomen above EUR 29,736; nil from EUR 78,426 | 2026 | Wet IB art. 8.10(2) |
+| Algemene heffingskorting (general credit), below AOW age | EUR 3,115, less 6.398% of verzamelinkomen above EUR 29,736; nil from EUR 78,426 | 2026 | Wet IB art. 8.10(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen (tax year 2026) (read 2026-10-31) |
 | Algemene heffingskorting, AOW age all year | EUR 1,556, less 3.195% of verzamelinkomen above EUR 29,736; nil from EUR 78,426 | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen ; Wet IB art. 8.3-8.4 |
 | Arbeidskorting (labour credit), below AOW age | 8.324% of labour income (max EUR 996); plus 31.009% above EUR 11,965 (total max EUR 5,300, reached at EUR 25,845); plus 1.950% above EUR 25,845 (total max EUR 5,685, reached at EUR 45,592); less 6.51% above EUR 45,592; nil from EUR 132,920 | 2026 | Wet IB art. 8.11(2) |
-| Arbeidskorting, AOW age all year | 4.156% to EUR 11,965; EUR 498 + 15.483% to EUR 25,845; EUR 2,647 + 0.974% to EUR 45,592; EUR 2,840 less 3.250% above EUR 45,592; nil from EUR 132,920 | 2026 | Belastingdienst heffingskortingen 2026 (above) |
-| Arbeidskorting floor | if labour income is not above EUR 45,592: at least the labour credit the employer applied in payroll, up to EUR 5,685 | 2026 | Wet IB art. 8.11(2), last sentence |
-| Inkomensafhankelijke combinatiekorting | 11.45% of labour income above EUR 6,239, max EUR 3,032; a child under 12 at the start of the year in the household for at least six months; no partner, or the lower labour income of the two | 2026 | Wet IB art. 8.14a |
-| Ouderenkorting; alleenstaande ouderenkorting | EUR 2,067 less 15% of verzamelinkomen above EUR 46,002; EUR 540 | 2026 | Wet IB art. 8.17, 8.18 |
+| Arbeidskorting, AOW age all year | 4.156% to EUR 11,965; EUR 498 + 15.483% to EUR 25,845; EUR 2,647 + 0.974% to EUR 45,592; EUR 2,840 less 3.250% above EUR 45,592; nil from EUR 132,920 | 2026 | Belastingdienst heffingskortingen 2026 (above) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen (tax year 2026) (read 2026-10-31) |
+| Arbeidskorting floor | if labour income is not above EUR 45,592: at least the labour credit the employer applied in payroll, up to EUR 5,685 | 2026 | Wet IB art. 8.11(2), last sentence Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen (tax year 2026) (read 2026-10-31) |
+| Inkomensafhankelijke combinatiekorting | 11.45% of labour income above EUR 6,239, max EUR 3,032; a child under 12 at the start of the year in the household for at least six months; no partner, or the lower labour income of the two | 2026 | Wet IB art. 8.14a Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen (tax year 2026) (read 2026-10-31) |
+| Ouderenkorting; alleenstaande ouderenkorting | EUR 2,067 less 15% of verzamelinkomen above EUR 46,002; EUR 540 | 2026 | Wet IB art. 8.17, 8.18 Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen (tax year 2026) (read 2026-10-31) |
 | Box 2 (aanmerkelijk belang) | 24.5% to EUR 68,843; 31% above | 2026 | Wet IB art. 2.12 |
-| Box 3 rate | 36% | 2026 | Wet IB art. 2.13 |
+| Box 3 rate | 36% | 2026 | Wet IB art. 2.13 Source: https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 (tax year 2026) (read 2026-10-31) |
 | Box 3 deemed return: other assets | 6.00%, fixed at the start of the year | 2026 | Wet IB art. 5.2(2), 10.6ter(3); https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 |
-| Box 3 deemed return: bank balances and debts | provisional 1.28% (bank) and 2.70% (debts), used in the 2026 voorlopige aanslag; the final figures are set by ministerial regulation after the year ends, back to 1 January 2026 | 2026 | Wet IB art. 10.6ter(2),(4); same Belastingdienst page |
-| Box 3 tax-free allowance (heffingvrij vermogen) | EUR 59,357 per person (EUR 118,714 for whole-year fiscal partners) | 2026 | Wet IB art. 5.5, 5.2(5) |
+| Box 3 deemed return: bank balances and debts | provisional 1.28% (bank) and 2.70% (debts), used in the 2026 voorlopige aanslag; the final figures are set by ministerial regulation after the year ends, back to 1 January 2026 | 2026 | Wet IB art. 10.6ter(2),(4); same Belastingdienst page Source: https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 (tax year 2026) (read 2026-10-31) |
+| Box 3 tax-free allowance (heffingvrij vermogen) | EUR 59,357 per person (EUR 118,714 for whole-year fiscal partners) | 2026 | Wet IB art. 5.5, 5.2(5) Source: https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 (tax year 2026) (read 2026-10-31) |
 | Box 3 debt threshold | first EUR 3,800 of debts not counted (EUR 7,600 for whole-year partners) | 2026 | Wet IB art. 5.3(3)(f) |
 | Box 3 actual return (tegenbewijsregeling) | if the actual return is lower than the deemed benefit, the actual return is taxed, never below nil | 2026 | Wet IB art. 5.25-5.30 |
 | Bijdrage Zvw (income-related health contribution) on profit and other income without payroll | 4.85% up to EUR 79,409 of contribution income | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet |
 | Belastingrente | 5% a year from 1 January 2026 (6.5% in 2025) | 2026 | AWR art. 30f, 30fc, 30hb; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente |
 | Verzuimboete, late income tax return | EUR 469 (Belastingdienst standard amount); statutory maximum EUR 6,709, used for repeat failure | 2026 | AWR art. 67a(1) (maximum); https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete |
 | Vergrijpboete | up to 100% of the tax not levied; up to 300% where it concerns box 3 income. Belastingdienst standard: 25% for gross negligence, 50% for intent, 150% for box 3 income | 2026 | AWR art. 67d(1),(5), 67e(1),(6); https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete |
-| 2025, box 1 below AOW age | 35.82% to EUR 38,441 (8.17% tax); 37.48% to EUR 76,817; 49.50% above | 2025 | Belastingdienst box 1 page (above) |
+| 2025, box 1 below AOW age | 35.82% to EUR 38,441 (8.17% tax); 37.48% to EUR 76,817; 49.50% above | 2025 | Belastingdienst box 1 page (above) Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 (tax year 2026) (read 2026-10-31) |
 | 2025, general credit | EUR 3,068 less 6.337% above EUR 28,406; nil from EUR 76,817 (AOW age: EUR 1,536 less 3.170%) | 2025 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/heffingskortingen |
 | 2025, labour credit | 8.053% to EUR 12,169; EUR 980 + 30.030% to EUR 26,288; EUR 5,220 + 2.258% to EUR 43,071; EUR 5,599 less 6.510% above; nil from EUR 129,078 | 2025 | same 2025 page |
 | 2025, box 3 | bank 1.37%, other assets 5.88%, debts 2.70%; allowance EUR 57,684 (partners EUR 115,368) | 2025 | Wet IB art. 5.2 as changed by Stcrt. 2026, 3708; https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2025 |
@@ -173,11 +173,11 @@ expected:
 | Wet inkomstenbelasting 2001, version 1 January 2026 (art. 5.2 before the retroactive 2025 change in Stcrt. 2026, 3708) | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-10-24 |
 | Wet financiering sociale verzekeringen, art. 9-12 | https://wetten.overheid.nl/BWBR0017745/2026-01-01 | 2026-10-24 |
 | Algemene wet inzake rijksbelastingen (art. 4, 9, 13, 15, 30f, 30fa, 30fc, 30hb, 67a, 67c, 67d, 67e) | https://wetten.overheid.nl/BWBR0002320/ | 2026-10-24 |
-| Belastingdienst, box 1 rates 2026 and 2025, AOW-age month table | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 | 2026-10-24 |
-| Fiscale informatie 2026 ch. 21, tax credits | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen | 2026-10-24 |
+| Belastingdienst, box 1 rates 2026 and 2025, AOW-age month table | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 | 2026-10-31 |
+| Fiscale informatie 2026 ch. 21, tax credits | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen | 2026-10-31 |
 | Fiscale informatie 2025, tax credits | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/heffingskortingen | 2026-10-24 |
 | Fiscale informatie 2026 ch. 28, bijdrage Zvw | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet | 2026-10-24 |
-| Belastingdienst, box 3 on the 2026 voorlopige aanslag | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 | 2026-10-24 |
+| Belastingdienst, box 3 on the 2026 voorlopige aanslag | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 | 2026-10-31 |
 | Belastingdienst, box 3 for 2025 | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2025 | 2026-10-24 |
 | Belastingdienst, actual return in the 2025 return | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/werkelijk-rendement-belastingaangifte | 2026-10-24 |
 | Hoge Raad 24 December 2021, ECLI:NL:HR:2021:1963 | https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:HR:2021:1963 | 2026-10-24 |
@@ -189,7 +189,7 @@ expected:
 | Belastingdienst, belastingrente percentages | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-10-24 |
 | Belastingdienst, penalties (verzuimboete, vergrijpboete, betaalverzuimboete) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete | 2026-10-24 |
 | Belastingdienst, late or missing return | https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wat-gebeurt-er-als-ik-geen-aangifte-doe-of-te-laat-of-onvolledig | 2026-10-24 |
-| Belastingplan 2027 bill, Kamerstuk 37022 nr. 2 (art. I, art. LXIII) | https://zoek.officielebekendmakingen.nl/kst-37022-2.html | 2026-10-24 |
+| Belastingplan 2027 bill, Kamerstuk 37022 nr. 2 (art. I, art. LXIII) | https://zoek.officielebekendmakingen.nl/kst-37022-2.html | 2026-10-31 |
 
 Pending law: the Belastingplan 2027 bill (Kamerstuk 37022, sent to the Tweede Kamer on 29 September 2026, not enacted on 24 October 2026) would apply some changes back to 1 January 2026 (art. LXIII(1)(a)): the car rate in Wet IB art. 3.15(6), 3.17(1)(b), 6.17(6) and 6.36(2) from EUR 0.23 to EUR 0.25 per km, an amendment to art. 3.76(3) (the starter's increase of the zelfstandigenaftrek) and the classic-car age rule in art. 3.20(5). See `nl-zzp-deductions` and `nl-deductions`. Its new box 1 table (first band 8.58% to EUR 39,247, second band 38.16%) and the higher labour credit take effect from 2027, not 2026.
 
