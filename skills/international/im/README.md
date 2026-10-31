@@ -1,6 +1,6 @@
 ---
 jurisdiction: IM
-version: 0.5
+version: 0.6
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -13,7 +13,7 @@ covered_by:
 partial:
   IT-IND: "Residents and non-residents on 2026/27; self-employed trading profit computation and pension contribution limits are not covered."
   IT-CORP: "Rebuilt for 2026/27 (rates, loans to participators, pay and file, penalties); loss relief, capital allowances, group relief, the company residence test and the Domestic Top-up Tax computation are not covered."
-  VAT: "isle-of-man-vat (sibling isle-of-man directory) is still on tax year 2025."
+  VAT: "isle-of-man-vat (sibling isle-of-man directory) rebuilt for 2026 from the Value Added Tax Act 1996 and Customs and Immigration notices; the return and payment due date is not yet confirmed from an Island source."
   SC: "im-payroll-social is still on tax year 2025; the 2026/27 National Insurance figures are in PN 227/26."
   PR: "im-payroll-social is still on tax year 2025."
   TP: "Only the UK treaty Article 9 corridor; country-by-country reporting, domestic related-party rules outside the Income Tax Act 1970 and other treaties are not covered."
@@ -31,7 +31,7 @@ The Isle of Man tax year runs from 6 April to 5 April. The authority is the Inco
 | IT-IND, individual income tax (residents) | [im-income-tax](im-income-tax.md) | checked against the law |
 | IT-IND / XB, non-resident individuals | [im-non-resident-income-tax](im-non-resident-income-tax.md) | checked against the law |
 | IT-CORP, corporate income tax | [im-corporate-income-tax](im-corporate-income-tax.md) | checked against the law (2026/27) |
-| VAT | [isle-of-man-vat](../isle-of-man/isle-of-man-vat.md) | sourced from the law (tax year 2025) |
+| VAT | [isle-of-man-vat](../isle-of-man/isle-of-man-vat.md) | checked against the law (2026) |
 | SC and PR, National Insurance and payroll | [im-payroll-social](im-payroll-social.md) | sourced from the law (tax year 2025) |
 | TP, related parties (UK treaty) | [im-related-party-uk-treaty](im-related-party-uk-treaty.md) | checked against the law |
 | Formation | [im-company-formation](im-company-formation.md) | sourced from the law (tax year 2025) |
