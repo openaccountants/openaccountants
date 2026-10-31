@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 2.6
+version: 2.7
 last_updated: 2026-10-31
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -37,9 +37,11 @@ The corporate draft now supplies selected actual VEN12 period/signature/main-rec
 
 The social/medical draft now supplies the actual initial-registration population and four continuing conditions for the article-43^17 foreign-worker route, with January/current comparison and the loss-of-eligibility rule. Current law scope, actual registration/electronic-identity documents and the separate EU/Schengen interaction must still be established; neither foreign nationality nor remote work alone proves an insurance exemption. Remaining ordinary gaps and whole-country independent review keep coverage partial.
 
-Actual SIMM, UNIF25 and DAP24 form/instruction binaries are now retained. The corporate draft supplies the current category-A SME row method and identifies the printed retired-category/name mismatch. The individual draft supplies UNIF25 income-tax and DAP24 professional/expense/relief methods, including the DAP24 cross-reference/self-referential-header defects. UNIF25 later/unified-tax sections, portal/rounding implementation, other ordinary gaps and independent country review remain open. The 360,000 personal-exemption threshold is current, correcting the earlier writer description of it as stale.
+Actual SIMM, UNIF25 and DAP24 form/instruction binaries are now retained. The corporate draft supplies the current category-A SME row method and identifies the printed retired-category/name mismatch. The individual draft supplies UNIF25 income-tax and DAP24 professional/expense/relief methods, including the DAP24 cross-reference/self-referential-header defects. UNIF25 later/supporting tables have since been read and applied to the scopes below; portal/rounding implementation, other ordinary gaps and independent country review remain open. The 360,000 personal-exemption threshold is current, correcting the earlier writer description of it as stale.
 
 The actual social tariff, travel destination-rate, asset-life and asset-register/repair annexes are now retained and read to the scopes in [the annex manifest](../../../ledgers/md-country-evidence/downloaded-numeric-annexes.json), on 31 October 2026. The corporate draft supplies destination/currency/category examples, five selected asset-class rows and the actual 29-column register/seven-column repair method. The social draft distinguishes insured-benefit classes and payment clocks directly from annex1. Other asset classes, minimum transport tariffs, later implementation gaps and independent whole-country review remain open; full binary retention is not full-catalogue verification.
+
+The remaining UNIF25 annexes are now read in full to instruction136 and formpage4, with the unchanged binaries and [full-read observations](../../../ledgers/md-country-evidence/unif25-remaining-attachment-read.json) retained. Individual, payroll, cross-border and overview drafts now map supporting schedules, annual resident/nonresident payment information and local/property reporting fields. Current Code15(a¹) overrides the stale day-worker relief sentence; the form's legacy social header does not replace monthly declarations. Actual annex/column/year inconsistencies, classifiers, local rates and portal implementation remain explicit. This is writer work, with no independent country-review or completeness claim.
 
 ## Domains
 

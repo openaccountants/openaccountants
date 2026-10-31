@@ -15,12 +15,12 @@ description: >
 jurisdiction: MD
 category: cross-border
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.4
+version: 0.5
 ---
 
 # Moldova cross-border income tax, 2026
@@ -170,6 +170,13 @@ For covered salary, use the [payroll Guide's current IALS21 annual method](moldo
 
 Article 92(4)'s recipient-information duty expressly excludes art. 91(1) payments; it is not a universal **1 March** certificate deadline for every nonresident. Tax-paid certificates follow art. 79^3(5). Keep those separate from the SFS annual payer report and preserve the statutory unified-report exception in art. 92(8). [Code arts. 79^3(5), 92(3)–(5), (8)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
+### UNIF25 annual nonresident information and foreign-credit schedule
+
+For the actually eligible non-VAT individual entrepreneur/farm under Code92(8), the annual information route is UNIF25 by25March rather than automatically the ordinary annual form. Monthly withholding/payment obligations remain separate under92(1)–(2). Actual UNIF25 table4 records non-salary nonresident payments: sequence1; recipient fiscal identifier2; entity/person name3; **JUR/FIZ** type4; **country name5**; address/domicile6; income-source code7; gross payment8; tax withheld9. Its country-name heading is not the amended INR14 citizenship-code field. The complete approved instructions have no separate table4 completion section; accepted identifiers/classifier/portal treatment require their own confirmation. [Code92(1)–(3),(8)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [actual UNIF25 form table4](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx); [full instructions](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx).
+
+For that taxpayer's own qualifying foreign income, instruction annex10 is a separate credit working paper. Record each country, foreign tax paid16011, income16012, associated expense16013 and net foreign income16014. Its ratio to total taxable income16015 allocates main-return tax150 through16016–16018; allowed1601 is the lesser of actual foreign tax and the allocated Moldova ceiling, transferred in total to main160. Apply current Code82's evidence, taxable-income scope and period requirements. For assumed qualifying net foreign income50,000 within total taxable income200,000, main150 of24,000 and foreign tax8,000, the ratio is25%, ceiling6,000 and credit6,000. A zero/negative denominator, loss-country interaction or foreign-currency timing is not resolved by this positive-input example. [Instructions109–118](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx); [Code82](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+
 ## Penalties and interest
 
 **Calendar-2026 ordinary tax late charge.** Code art. 228(3) and the BNM decision of 6 November 2025, point 1, supply the calculation: the retained **6.00%** short-term policy rate, rounded up to a whole percent, plus **5 percentage points**, divided by **365 days**, gives **0.0301% per delayed day** after rounding the daily percentage to four decimal places. The decimal multiplier is **0.000301**. Apply it to the established outstanding principal for each chargeable day; split changes in principal and calendar year. This calculation concerns debts governed by art. 228 and does not replace a separate statutory regime's rate or establish case-specific relief. [Code art. 228(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [BNM decision, point 1](https://bnm.md/en/node/69226).
@@ -292,6 +299,7 @@ The predecessor's three decision cases remain: a remote supplier needs service/s
 
 | Source actually read | Provisions used | Read |
 |---|---|---|
+| [UNIF25 actual full form](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx), [complete instructions](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx) and [current Code interfaces](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Remaining formpages3–4/instructions36–136 read and visually checked; selected supporting/payment/property methods applied, with source inconsistencies and implementation limits explicit. Earlier core observation preserved | 2026-10-31 |
 | [BNM monetary-policy decision, 6 November 2025, point 1](https://bnm.md/en/node/69226) | Fetched 6.00% short-term base input; calendar-2026 daily percentage derived with Code 228(3), rather than copied from an old rate. | 2026-10-30 |
 | [Fiscal Code 1163/1997, consolidation 157050](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Selected operative arts. 4, 5(5),(6),(15),(15¹),(46), 12–15, 19, 21(3), 37, 39–42, 71–78, 79³, 80, 82–83, 87–88, 90–92, 188, 228, 232, 260–261; current heading records amendment effective 30 October 2026. This is not a whole-Code verification | 2026-10-30 |
 | [MF Order 94/2020, consolidation 154168](https://www.legis.md/cautare/getResults?doc_id=154168&lang=ro) | Approved IPC21 annex 2, including salary and nonresident Table 1 entries, treaty-exempt income and payment classifications; amended through Order 56/2026 | 2026-10-30 |

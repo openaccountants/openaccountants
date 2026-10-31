@@ -3,16 +3,16 @@ name: md-tax-overview
 description: "Route Moldova tax questions for 2026 to the correct taxpayer, source, base, period and connected Guide. Covers the ordinary individual and legal-person income-tax rates, standard VAT, current resident and nonresident income populations, income-tax and VAT periods, annual income-tax and ordinary VAT deadlines, separate annual accounts and payer reporting, and two assumed computations. Use for Moldova tax overview, personal or corporate tax, worldwide income, tax year, annual return, SFS, MDL, VAT and first-year compliance. This source-cited writer draft corrects blanket scope and deadline assumptions, preserves predecessor subjects and makes remaining specialist and implementation gaps explicit. Independent whole-country review and accountant attestation remain open."
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.3
+version: 0.4
 ---
 
-# Moldova tax overview, 2026 v0.3
+# Moldova tax overview, 2026 v0.4
 
 ## Who this applies to
 
@@ -73,6 +73,26 @@ For income tax, determine taxable income after the deductions/exemptions legally
 
 For a new business, the income-tax period runs from registration to the calendar-year end under article 12^1(2); do not automatically assume twelve months of relief or a complete prior calendar year. Eligible non-calendar reporters apply the statutory notification and transition rules. For tax deadlines, article 129(8) supplies the stated non-working-day rollover and electronic end-of-day rule; it does not settle every separate company-law deadline. Retain the current form, submitted version, acceptance receipt, liability period and actual payment allocation. [Code arts. 12^1, 129(8)][code].
 
+### UNIF25 local-tax and property reporting interface
+
+For an actually eligible UNIF25 individual entrepreneur/farm, the approved form includes local-tax/property tables6–7. This is a reporting map, not evidence that every listed tax applies or that a single national rate can be used. Obtain the current taxing law, local decision where required, taxable object, period, cadastral/accounting evidence and any specific relief before entering an amount. The separate [individual-income method](moldova-income-tax.md) establishes the UNIF25 taxpayer and reporting year. [SFSOrder300/2025](https://www.legis.md/cautare/getResults?doc_id=148910&lang=ro); [actual form](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx), [instructions121–136](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx).
+
+| Table7 row | Declared object/base distinction in the instructions |
+|---|---|
+| 1, territorial improvement | Average employees plus individual-enterprise founders; farms additionally include their members. Use the applicable local rate and current eligibility. |
+| 2–4, auction/lottery, advertising placement, local symbols | The specified sales/ticket/service/product value bases; the advertising-placement instruction has named media exclusions. Do not apply those monetary bases to a sign's surface area. |
+| 5–6, commercial/service units and markets | Applicable units/objects for row5; market land/building area in m² for row6. |
+| 7–9, lodging, spa and passenger transport | Stated lodging-service sales, recreation/treatment-ticket sales, or each qualifying transport unit, respectively. |
+| 10–11, parking and advertising devices | Parking area or advertising-face area in m², respectively, with the relevant local rate. |
+| 12–13, water and registered-vehicle road tax | Water extraction/use volume in m³ under its statutory schedule; road tax per vehicle/technical characteristics under its separate schedule and timing. Neither is made a discretionary local rate merely by this table's heading. |
+| 14(a)–(c), land | Separate the listed agricultural/water-object, nonagricultural unevaluated and pasture/hayfield cases; retain hectares, grading where applicable and the statutory/local basis. |
+| 15(a)–(b), immovable property | Separate cadastral estimated value from accounting-value taxation; identify the applicable object/rate, relief and any actual local unmaintained/unworked-property decision. |
+
+For each applicable row, keep the base, calculated tax, authorised relief and payable amount separately; payable is calculated tax less relief. Instructions122–136 call that last field column6, while the actual table7 prints it as **7**, with formula4−5. Use the field name/formula and retain the discrepancy; portal acceptance has not been tested. [Actual table7](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx); [instructions122–136](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx).
+
+For subdivisions outside the base locality, table6 records each object's locality in2. Money goes in3–14,16,18,20–22; land areas in15,17,19 are **hectares**, not amounts to add into tax. Column23 sums only those money columns for the locality. Reconcile the corresponding tax categories to table7, while keeping road-tax row13 separate because table6 has no dedicated road-tax column. Do not force all15 table7 rows into a fictitious one-to-one column map. Current taxpayer-specific rates, applicability, relief, deadlines and the noted portal inconsistencies remain open beyond this sourced reporting interface. [Actual table6](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx); [instruction121](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx).
+
+
 ## Penalties and interest
 
 Use the actual tax, principal, due date, payment/change dates and statutory exception. The connected tax Guides supply the ordinary 2026 tax/medical late-charge calculation and separate social charge with their sources. A filing receipt does not discharge an unpaid tax, and an income-tax rate is not an interest rate. Filing errors, understatement, corrections and relief have different provisions; this overview does not invent a single penalty for all non-compliance. [Code arts. 87, 129(6)–(9), 188, 228, 260–261][code]; [corporate](md-corporate-income-tax.md) and [social/medical](moldova-social-contributions.md) Guides.
@@ -122,10 +142,11 @@ Establish legal form and registrations; residence and citizenship where relevant
 
 ## Sources
 
-Read 30 October 2026. The overview ledger binds the rules and both assumed computations to actual official source contexts, hashes and predecessor-topic destinations. This overview does not complete a partial specialist domain or substitute for independent whole-country review.
+Primary-source reads on 30–31 October 2026, with individual dates below. The overview ledger binds the rules and both assumed computations to actual official source contexts, hashes and predecessor-topic destinations. This overview does not complete a partial specialist domain or substitute for independent whole-country review.
 
 | Primary source | Scope actually read | Read date |
 |---|---|---|
+| [UNIF25 actual full form](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx), [complete instructions](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx) and [current Code interfaces](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Remaining formpages3–4/instructions36–136 read and visually checked; selected supporting/payment/property methods applied, with source inconsistencies and implementation limits explicit. Earlier core observation preserved | 2026-10-31 |
 | [Current Fiscal Code, consolidation 157050][code] | Selected taxpayer/object/rate, actual income-tax-period, filing, VAT and administration provisions; further computation/penalty contexts retained in the connected Guide ledgers | 2026-10-30 |
 | [Accounting Law 287/2017, operative consolidation][accounts] | Selected accounting currency, category, period and accounts presentation/audit provisions, distinct from tax returns | 2026-10-30 |
 | [BNM national-currency section][bnm] | Official identification of the Moldovan leu; not a general tax conversion procedure | 2026-10-30 |

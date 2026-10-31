@@ -1,10 +1,10 @@
 ---
 name: moldova-payroll
 description: "Compute Moldova payroll withholding for 2026 using the cumulative income-tax method, documented exemption months and separate social/medical contribution bases. Covers ordinary private and public employers, listed aviation conditions, qualifying agriculture, joiners, leavers, advances, benefits, corrections, IT-park transitions, nonresident source rules and treaty evidence. Use for salary tax, gross to net, CNAS, CNAM, IPC21, IRM19, personal and dependent exemptions, payment timing and payroll reconciliation. This source-cited writer draft corrects the former employee social deduction and exemption assumptions, preserves predecessor topics through explicit destinations, and requires whole-country independent review. Its stated implementation gaps keep the domain partial; it does not claim accountant attestation or comprehensive coverage."
-version: 0.5
+version: 0.6
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova payroll withholding, 2026 v0.5
+# Moldova payroll withholding, 2026 v0.6
 
 ## Who this applies to
 
@@ -159,6 +159,17 @@ In the dependent-information annex, columns 1–4 identify the sequence, employe
 
 **2026 version and special entries.** The preceding 19 September 2024 consolidation and current text agree on the ordinary column mapping above. Amending Order 59/2026 became effective on **8 May 2026**. Its added note limits the specified taxi `TAXI`/`SAL` split around **10,000 MDL per employee per month**, and the associated columns-8–12 restriction, to **1 January–30 June 2026 inclusive**. Do not carry that special annual-report rule into July–December. It also deletes the older day-worker personal-exemption sentence; current annex 2 lists only columns **1, 2, 3, 5, 6, 7 and 16** for covered day-worker remuneration. The prior sentence does not establish a current entitlement contrary to the Code and payroll regulation. Actual attached forms, country-code lists, missing period-prefix values and portal acceptance checks still need separate verification; the directly read column instructions do not certify those files. [Pre-amendment annex 2][ialspre]; [current annex 2][ials]; [Order 59/2026 points 1, 3][ialsamend]; [Code art. 33(1^1)][code]; [regulation point 9][reg].
 
+### Eligible small-business annual reporting through UNIF25
+
+Current Code92(8) replaces the ordinary annual information-return route for the specified non-VAT individual entrepreneur/farm with annual average staffing not above five; the unified report is due25March. It is an exception to annual92(3), **not a repeal of monthly payment/reporting under92(1)–(2)** or the separate recipient-information duty. Use the actual whole-year category and change dates in the [individual-income Guide](moldova-income-tax.md). [Code92(1)–(4),(8)][code]; [SFSOrder300/2025 and actual UNIF25 form][unif25order].
+
+Actual table3 has16 columns: sequence1; recipient fiscal identifier2 and name3; qualifying spouse identifier4; income-source code5 from the monthly report; actual annual payments6, including prior-period salary paid this year; citizenship-country code7; reliefP/M/Sm/N/H in8–12; total relief13; medical premiums withheld14; printed individual-social field15; PIT withheld16. For a Moldovan citizen,7 is blank; with multiple citizenships, the instructions use the citizenship presented in the employment/civil relationship. Use the referenced approved classifier rather than a guessed residence-country code. The dependent annex records the employee identifier and separate N/H dependent identifiers. [Actual form table3 and dependent annex][unif25form]; [instructions119–120][unif25instructions].
+
+Current entitlement controls the relief fields: P and M are alternatives; Sm requires the specific current spouse conditions. The printed social field15 does not create an ordinary employee6% social deduction, and instruction119 supplies no completion paragraph for that field. Preserve the current category-based [social method](moldova-social-contributions.md). For covered day workers, the instructions list fields1,2,3,5,6,7,16; their older following sentence allows personal relief, but **current Code15(a¹) expressly excludes chapter4 exemptions**. Do not apply that stale sentence. MFOrder59/2026 removes the parallel old text from IALS21; it does not establish an amendment to UNIF25. [Current Code15(a¹),33–35][code]; [UNIF25 instructions119–120][unif25instructions]; [MFOrder59/2026point1(d)][ialsamend].
+
+Reconcile table3 payment and withholding totals to the actual monthly records and recipient evidence. UNIF25's supplied annex has tables1,3,4,6,7; there are no separate tables2/5 in that approved binary. Neither those numbering gaps nor the legacy individual-social header prove that monthly CNAS/CNAM declarations have been completed. Actual classifier values, field15/portal validation and inconsistent-source handling beyond these stated current-law rules remain open. [Actual full form][unif25form]; [Code92(2),(8)][code].
+
+
 ## Penalties and interest
 
 **Calendar-2026 ordinary tax late charge.** Code art. 228(3) and the BNM decision of 6 November 2025, point 1, supply the calculation: the retained **6.00%** short-term policy rate, rounded up to a whole percent, plus **5 percentage points**, divided by **365 days**, gives **0.0301% per delayed day** after rounding the daily percentage to four decimal places. The decimal multiplier is **0.000301**. Apply it to the established outstanding principal for each chargeable day; split changes in principal and calendar year. This calculation concerns debts governed by art. 228 and does not replace a separate statutory regime's rate or establish case-specific relief. [Code art. 228(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [BNM decision, point 1](https://bnm.md/en/node/69226).
@@ -264,10 +275,11 @@ The old six narrative examples and twelve test items remain archived with exact 
 
 ## Sources
 
-Read 30 October 2026. [The payroll ledger](../../../ledgers/moldova-payroll.md) contains source bindings, original-topic destinations and assumed-example evidence. This is a local writer draft with ordinary implementation and specialist gaps, not accountant attestation or completed pack review. The original frontmatter attribution and stamped CTA remain unchanged.
+Primary-source reads on 30–31 October 2026, with individual dates below. [The payroll ledger](../../../ledgers/moldova-payroll.md) contains source bindings, original-topic destinations and assumed-example evidence. This is a local writer draft with ordinary implementation and specialist gaps, not accountant attestation or completed pack review. The original frontmatter attribution and stamped CTA remain unchanged.
 
 | Official source | Scope actually read | Read on |
 |---|---|---|
+| [UNIF25 actual full form](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx), [complete instructions](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx) and [current Code interfaces](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Remaining formpages3–4/instructions36–136 read and visually checked; selected supporting/payment/property methods applied, with source inconsistencies and implementation limits explicit. Earlier core observation preserved | 2026-10-31 |
 | [BNM monetary-policy decision, 6 November 2025, point 1](https://bnm.md/en/node/69226) | Fetched 6.00% short-term base input; calendar-2026 daily percentage derived with Code 228(3), rather than copied from an old rate. | 2026-10-30 |
 | [Current Fiscal Code][code] | Selected employment, benefit, exemption, deduction, filing, nonresident/treaty and enforcement provisions cited above | 2026-10-30 |
 | [January Code][jan] | Personal/spouse/dependent and individual-deduction provisions compared to current selected text | 2026-10-30 |
@@ -303,6 +315,10 @@ Not yet confirmed: full 2026 commencement/form-version comparison beyond the sel
 [ials]: https://www.legis.md/cautare/getResults?doc_id=154297&lang=ro
 [ialspre]: https://www.legis.md/cautare/getResults?doc_id=145086&lang=ro
 [ialsamend]: https://www.legis.md/cautare/getResults?doc_id=154274&lang=ro
+
+[unif25order]: https://www.legis.md/cautare/getResults?doc_id=148910&lang=ro
+[unif25form]: https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx
+[unif25instructions]: https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx
 
 <!-- openaccountants-cta-block -->
 
