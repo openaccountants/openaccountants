@@ -22,7 +22,7 @@ This is the hub for the Dutch cross-border (XB) domain. It summarises and links 
 - The expat scheme (30% ruling) in full: [netherlands-30-percent-ruling](netherlands-30-percent-ruling.md) and [nl-30-percent-ruling](nl-30-percent-ruling.md).
 - Resident income tax, boxes and credits: [nl-income-tax](nl-income-tax.md), [nl-deductions](nl-deductions.md).
 - Corporate tax, participation exemption and fiscal unity: [nl-corporate-tax](nl-corporate-tax.md).
-- Payroll withholding for incoming and outgoing employees: [nl-payroll-tax](nl-payroll-tax.md), [netherlands-payroll](netherlands-payroll.md).
+- Payroll withholding for incoming and outgoing employees: [nl-payroll-tax](nl-payroll-tax.md).
 - Transfer pricing: [netherlands-transfer-pricing](netherlands-transfer-pricing.md). Objections: [nl-tax-objection](nl-tax-objection.md).
 
 Tax year: the calendar year. 2026 figures apply to 1 January to 31 December 2026.
